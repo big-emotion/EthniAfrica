@@ -11,13 +11,19 @@
     {
       "spelling": "El Siwi",
       "attestations": [
-        { "countryId": "EGY", "sourceRefs": ["el-siwi-forebears"] }
+        {
+          "countryId": "EGY",
+          "sourceRefs": ["el-siwi-forebears"]
+        }
       ]
     },
     {
       "spelling": "El-Siwi",
       "attestations": [
-        { "countryId": "EGY", "sourceRefs": ["el-siwi-forebears"] }
+        {
+          "countryId": "EGY",
+          "sourceRefs": ["el-siwi-forebears"]
+        }
       ]
     }
   ],
@@ -113,5 +119,101 @@
   "nisbaSubtype": {
     "value": "geographic",
     "sourceRefs": ["siwi-mpi", "el-siwi-forebears"]
+  },
+  "nameHistory": {
+    "summary": "Le nom El Siwi est un nom porté en Égypte, qui a la forme d'un nom d'origine : « celui de Siwa », l'oasis du désert occidental. Aucune source que nous avons lue ne l'explique ; le rapprochement avec l'oasis est notre lecture, et nous le disons plus bas. Sa plus ancienne trace écrite que nous connaissons date de 1889, sous la forme es-Siwi.",
+    "names": [
+      {
+        "nameText": "El Siwi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom porté en Égypte, qui ressemble à un nom d'origine de l'oasis de Siwa ; aucune source ne l'explique.",
+        "periodLabel": "Écrit sous une forme proche dès 1889 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom El Siwi est porté en Égypte, par exemple par le réalisateur Samy El Siwi (1949-2025), que nomme une base de données du cinéma égyptien. On ne sait pas avec certitude ce que veut dire ce nom : les sources que nous avons lues ne l'expliquent pas.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "سامي السيوي — Samy El Siwi",
+                "author": "elCinema",
+                "year": null,
+                "url": "https://elcinema.com/person/1100116/",
+                "tier": "unverified",
+                "source_kind": "discovery",
+                "notes": "Notice d'une base de données du cinéma égyptien, lue le 14 octobre 2026 : « Samy El Siwi », né le 10 août 1949, mort le 9 février 2025, présenté comme auteur et réalisateur égyptien. La notice ne dit rien du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Lecture du projet d'après deux sources"
+            },
+            "statement": "Le nom El Siwi viendrait de l'oasis de Siwa, dans le désert occidental de l'Égypte : il aurait la forme d'un nom d'origine, avec l'article el et la finale -i, comme al-Fassi, « de Fès », au Maroc. C'est la lecture que nous en faisons : aucune source que nous avons lue n'analyse ce nom, et aucune ne dit si ses porteurs viennent de l'oasis.",
+            "hypothesisGroup": "origine du nom El Siwi",
+            "sources": [
+              {
+                "title": "An Acoustically-based Phonology and Morphophonology of Siwi (Berber)",
+                "author": "Max Planck Institute for Evolutionary Anthropology",
+                "year": null,
+                "url": "https://www.eva.mpg.de/linguistics/past-research-resources/documentation-and-description/an-acoustically-based-phonology-and-morphophonology-of-siwi-berber/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page de présentation d'un projet de recherche, lue le 14 octobre 2026 : le siwi, ou « ǝǧlan n-Isiwan », « la langue des Siwis », est la langue berbère la plus orientale, parlée par environ 20 000 personnes dans l'oasis de Siwa, dans l'ouest de l'Égypte ; l'oasis est restée indépendante de l'Égypte jusqu'au XIXe siècle. La page ne traite pas du patronyme."
+              },
+              {
+                "title": "« Si Mohammed! » : Names as Address Forms in Moroccan Arabic, Names, vol. 47, n° 2",
+                "author": "Terrence M. Potter",
+                "year": 1999,
+                "url": "https://ans-names.pitt.edu/ans/article/download/1544/1543/3090",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 158",
+                "notes": "American Name Society, juin 1999, p. 157-172. Lu en texte intégral le 14 octobre 2026. Page 158 : parmi les noms de famille traditionnels marocains, certains viennent de noms de lieux, comme « al-Fassi », « de la ville de Fès », et « as-Soussi ». L'article ne parle pas du nom El Siwi."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1889,
+              "to": 1889,
+              "label": "1889"
+            },
+            "era": "colonial",
+            "statement": "Le nom El Siwi apparaît par écrit sous une forme proche, es-Siwi, dans la bibliographie orientaliste que publie A. Müller pour 1889 : elle cite, parmi les textes arabes imprimés en Égypte en 1307 de l'hégire, un poème médical de Sidi Ibrahim es-Siwi ed-Desouqi. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "formAsWritten": "es-Siwi",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Sidi Ibrahim es-Siwi ed-Desouqi",
+                "role": "porte cette forme dans la bibliographie"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Orientalische Bibliographie, III. Band (für 1889)",
+                "author": "A. Müller (dir.)",
+                "year": 1890,
+                "url": "https://archive.org/details/india.history.resource.89713",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 259, notice 5163",
+                "notes": "Berlin, H. Reuther, 1890. Bibliographie annuelle des travaux sur l'Orient, lue sur l'exemplaire numérisé d'archive.org le 14 octobre 2026. Page 259, section « Aegyptisch-arabische Drucke » (impressions arabes d'Égypte) : la notice 5163, qui porte sur des extraits de Sidi Muhammad el 'Aijāsi el Magribi imprimés en 1307 de l'hégire, ajoute « die medicinische Manzūma (mu'nijat el ma'ānī) des Sidi Ibrāhīm es-Siwi ed-Desūqi »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -100,5 +100,90 @@
       "fieldPath": "countries",
       "reason": "Les sources propres à « Abdel Rahman » n'ont pas confirmé les pays où il est porté ; les recherches par pays n'ont pas livré de registre officiel directement exploitable pour cette fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Abdel Rahman est un nom personnel arabe, « serviteur du Miséricordieux », que l'on écrit aussi Abdelrahman ou Abd al-Rahman. Une forme proche, Abd-el-Rahman, apparaît par écrit en 1696 dans la traduction française d'une chronique du Caire. Les sources consultées ne disent pas comment ce nom personnel est devenu un nom de famille ; nous présentons plus bas ce qu'elles disent de son sens.",
+    "names": [
+      {
+        "nameText": "Abdel Rahman",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel arabe, « serviteur du Miséricordieux ».",
+        "periodLabel": "Écrit Abd-el-Rahman dès 1696 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "statement": "Le nom Abdel Rahman est un nom personnel arabe formé de ʿabd, « serviteur », et d'al-Raḥmān, « le Miséricordieux », un attribut d'Allah : il se traduit « serviteur du Miséricordieux », selon le Dictionary of American Family Names, qui l'écrit Abdelrahman. Les dictionnaires arabes lus vont dans le même sens : ʿabd désigne l'esclave, puis le serviteur de Dieu (Lane), et al-Raḥmān est un nom propre à Dieu (al-Fattinī).",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Abdelrahman",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/abdelrahman?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 14 octobre 2026 ; le site affichait une traduction française de la notice. La notice dit : musulman : du nom personnel arabe ʿAbd al-Raḥmān, « serviteur du miséricordieux » ; le mot « miséricordieux », al-Raḥmān, est un attribut d'Allah. La notice ne donne pas de pays."
+              },
+              {
+                "title": "An Arabic-English Lexicon",
+                "author": "Edward William Lane",
+                "year": 1863,
+                "url": "https://arabiclexicon.hawramani.com/%D8%B9%D8%A8%D8%AF/",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrée « ʿabd »",
+                "notes": "Lexique d'Edward William Lane (Londres, 1863-1893), lu sur la reproduction en ligne du Hawramani Arabic Lexicon le 13 octobre 2026. L'entrée donne à ʿabd le sens de « male slave », puis de serviteur ou d'adorateur de Dieu, et cite l'emploi « ʿabdu llāhi ». La reproduction en ligne n'indique pas les pages du livre."
+              },
+              {
+                "title": "Majmaʿ biḥār al-anwār, racine r-ḥ-m",
+                "author": "Muḥammad al-Fattinī (mort en 1578)",
+                "year": null,
+                "url": "https://arabiclexicon.hawramani.com/%D8%B1%D8%AD%D9%85/",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "article « raḥima »",
+                "notes": "Dictionnaire arabe des termes du hadith, lu le 14 octobre 2026 sur sa reproduction en ligne du Hawramani Arabic Lexicon, qui n'indique pas les pages du livre. L'article dit que al-Raḥmān et al-Raḥīm sont des formes d'intensité, et que al-Raḥmān, la plus forte, est propre à Dieu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1696,
+              "to": 1696,
+              "label": "Safar 1108 de l'hégire (1696)"
+            },
+            "era": "polity",
+            "statement": "Le nom Abdel Rahman apparaît par écrit sous une forme proche, Abd-el-Rahman, dans la traduction française des chroniques d'al-Jabarti : au mois de safar 1108 de l'hégire (1696), Abd-el-Rahman bey est nommé gouverneur de la province de Djirdjah, en Haute-Égypte. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "formAsWritten": "Abd-el-Rahman",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Abd-el-Rahman bey",
+                "role": "gouverneur de la province de Djirdjah"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Merveilles biographiques et historiques, ou Chroniques du cheikh Abd-el-Rahman el Djabarti, tome I",
+                "author": "Abd el-Rahman el-Djabarti ; traduction de Chefik Mansour bey, Abdelaziz Kalil bey, Gabriel Nicolas Kalil bey et Iskender Ammoun effendi",
+                "year": 1888,
+                "url": "https://archive.org/details/merveillesbiogra01jaba",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 66",
+                "notes": "Le Caire, Imprimerie nationale, 1888. Lu le 14 octobre 2026 sur la copie numérisée d'archive.org, aux pages indiquées. Page 66 : « Dans le courant du même mois, Abd-el-Rahman bey fut nommé gouverneur de la province de Djirdjah, où il se rendit immédiatement », au mois de safar de l'année 1108, dont la page donne la date par un chronogramme. Le texte appelle cet homme « bey » et ne donne pas son père."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

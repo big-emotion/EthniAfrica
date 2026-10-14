@@ -123,5 +123,117 @@
         "source_kind": "community"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Gawwada désigne le parler de la ville de Gawwada et des villages voisins, dans le sud-ouest de l'Éthiopie, et les gens qui le parlent ; on s'en est longtemps servi pour presque tous les groupes de langue dullay. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. D'autres noms existent : Ale, que l'on lit chez Erika Harlow avec le nom Gobeze. On ne connaît pas la plus ancienne trace du nom Gawwada. Nous présentons plus bas ce que disent les sources.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Gawwada",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'une ville et de son parler, étendu en Éthiopie à presque tous les groupes de langue dullay.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Gawwada désigne, chez le linguiste Mauro Tosco, le parler de la ville de Gawwada et des villages voisins, dans le sud-ouest de l'Éthiopie. Le village se trouve à environ 1 650 mètres d'altitude, à une quarantaine de kilomètres à l'ouest de Konso.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Grammar of Gawwada",
+                "author": "Mauro Tosco",
+                "year": 2021,
+                "url": "https://www.koeppe.de/titel_a-grammar-of-gawwada",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page de présentation de l'éditeur Rüdiger Köppe, collection Cushitic and Omotic Studies, vol. 8, 2021 ; lue le 13 octobre 2026. La page de présentation décrit le village et l'usage que le livre fait du nom. Le projet n'a pas lu le livre lui-même."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Jusqu'à une période récente"
+            },
+            "era": "modern",
+            "statement": "Le nom Gawwada a servi en Éthiopie, jusqu'à une période récente, pour tous les groupes de langue dullay, sauf les Ts'amakko, qui vivent sur la rive ouest du Weyt'o, selon Mauro Tosco. Il juge ce regroupement sans fondement linguistique, mais il rend compte de la différence entre les agriculteurs des hautes terres et les Ts'amakko, qui sont des éleveurs.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Grammar of Gawwada",
+                "author": "Mauro Tosco",
+                "year": 2021,
+                "url": "https://www.koeppe.de/titel_a-grammar-of-gawwada",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page de présentation de l'éditeur Rüdiger Köppe, collection Cushitic and Omotic Studies, vol. 8, 2021 ; lue le 13 octobre 2026. Le texte écrit « until recently ». Le projet n'a pas lu le livre lui-même."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Gawwada ne veut rien dire pour les locuteurs eux-mêmes, pas plus que les autres noms de ce groupe, dont Dullay, selon Mauro Tosco. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Grammar of Gawwada",
+                "author": "Mauro Tosco",
+                "year": 2021,
+                "url": "https://www.koeppe.de/titel_a-grammar-of-gawwada",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page de présentation de l'éditeur Rüdiger Köppe, collection Cushitic and Omotic Studies, vol. 8, 2021 ; lue le 13 octobre 2026. Le texte écrit que « none of these denominations bears any meaning to the speakers themselves ». Le projet n'a pas lu le livre lui-même."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ale",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom que l'on lit chez Erika Harlow en 2016, avec le nom Gobeze, pour un peuple voisin des Mosiye.",
+        "periodLabel": "En usage en 2016",
+        "accounts": [
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Ale désigne, chez la linguiste Erika Harlow, un peuple voisin des Mosiye, à l'ouest de leur pays ; elle ajoute entre parenthèses le nom Gobeze. Les sources que nous avons lues ne disent pas avec certitude que ce peuple est celui que Mauro Tosco appelle Gawwada : le rapprochement repose sur la fiche du peuple.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Phonology of Mosiye",
+                "author": "Erika Harlow",
+                "year": 2016,
+                "url": "https://twu.arcabc.ca/_flysystem/repo-bin/2017-07/twu_319.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11",
+                "notes": "Mémoire de master, Trinity Western University, décembre 2016 ; lu dans le PDF déposé sur Arca le 13 octobre 2026. Section 1.1 : « The Mosiye are surrounded by their neighbors, the Dirashe (Gidole) to the south, Ale (Gobeze) to the west ». L'autrice ne dit pas comment les Ale se nomment. Page lue sur l'image."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

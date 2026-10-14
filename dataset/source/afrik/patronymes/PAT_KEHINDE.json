@@ -6,7 +6,7 @@
   },
   "id": "PAT_KEHINDE",
   "nameMain": "Kehinde",
-  "nameSystem": "praise_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Kehinde",
@@ -112,6 +112,10 @@
     {
       "fieldPath": "homonyms",
       "reason": "Les recherches « Kehinde homonym etymology » et « Kehinde surname origin other language » n'ont pas établi une graphie identique d'origine distincte."
+    },
+    {
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom de personne yoruba, donné au second né de deux jumeaux. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     }
   ],
   "nameHistory": {

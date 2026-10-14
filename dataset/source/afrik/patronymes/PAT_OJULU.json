@@ -101,5 +101,102 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches sur la graphie exacte « Ojulu » dans les index onomastiques et la section Naming de The Anuak Legacy, ses notes de terrain et les recherches exactes Ojulu/Ojula dans les catalogues anuak n’ont pas établi une seconde origine distincte disposant de sa propre provenance."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ojulu est proche d'Ojula, nom que les Anuak donnent au deuxième enfant d'une famille, fille ou garçon. Les sources lues écrivent Ojula, Ojulo ou Ojuly, jamais Ojulu : le rapprochement est le nôtre. On ne sait pas avec certitude ce que veut dire le nom ni depuis quand on l'écrit.",
+    "names": [
+      {
+        "nameText": "Ojulu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une forme proche d'Ojula, le nom du deuxième enfant chez les Anuak.",
+        "periodLabel": "Écrit Ojulo en 2021",
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Décrit en 2021"
+            },
+            "statement": "Le nom Ojulu est proche d'Ojula, que les Anuak donnent au deuxième enfant, garçon ou fille, selon David Osterlund. Chez les Anuak, le premier nom dit quel enfant est celui qui naît, le second décrit une circonstance de la naissance. Osterlund n'écrit pas Ojulu ; le rapprochement est le nôtre.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Anuak Legacy: Music & Culture",
+                "author": "David C. Osterlund",
+                "year": 2021,
+                "url": "https://mlpp.pressbooks.pub/isbn9781732566125/chapter/social-and-cultural-characteristics-of-the-anuak-tribe/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "chapitre « Social and Cultural Characteristics of the Anuak Tribe », section « Naming »",
+                "notes": "Monographie de David C. Osterlund, University of Northwestern Berntsen Library, 2021, tirée d'un terrain de 1972-1973 ; chapitre lu en ligne le 13 octobre 2026. La section « Naming » dit : « the first born is Omot or Amot, boy or girl; the second born is Ojula or Ajula, boy or girl; the third born is Ochalla or Achalla ». Elle ne donne pas la graphie Ojulu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Publié en 2021"
+            },
+            "statement": "Le nom Ojulu apparaît par écrit sous une forme proche, Ojulo, dans les notes du livre de David Osterlund, publié en 2021 : l'auteur y cite un entretien du 2 août 1972 avec Paul Nyinyoni Ojulo, mené pendant son terrain de 1972-1973 chez les Anuak. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "birth": true,
+            "formAsWritten": "Ojulo",
+            "actors": [
+              {
+                "name": "Paul Nyinyoni Ojulo",
+                "role": "interrogé par l'auteur en 1972"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Anuak Legacy: Music & Culture",
+                "author": "David C. Osterlund",
+                "year": 2021,
+                "url": "https://mlpp.pressbooks.pub/isbn9781732566125/chapter/social-and-cultural-characteristics-of-the-anuak-tribe/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "notes du chapitre « Social and Cultural Characteristics of the Anuak Tribe »",
+                "notes": "Monographie de David C. Osterlund, 2021, chapitre lu en ligne le 13 octobre 2026. Les notes du chapitre citent des entretiens datés de 1972 et 1973, dont « Interview with Paul Nyinyoni Ojulo, August 2, 1972 », et des transcriptions de bandes par la même personne. Elles écrivent Ojulo, et une fois Ojuly ; elles n'écrivent pas Ojulu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ojula",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Décrit en 2021",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Décrit en 2021"
+            },
+            "statement": "Le nom Ojula, que l'on écrit aussi Ajula, est celui du deuxième enfant d'une famille anuak, garçon ou fille, après Omot ou Amot pour le premier et avant Ochalla ou Achalla pour le troisième, selon David Osterlund.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Anuak Legacy: Music & Culture",
+                "author": "David C. Osterlund",
+                "year": 2021,
+                "url": "https://mlpp.pressbooks.pub/isbn9781732566125/chapter/social-and-cultural-characteristics-of-the-anuak-tribe/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "chapitre « Social and Cultural Characteristics of the Anuak Tribe », section « Naming »",
+                "notes": "Monographie de David C. Osterlund, University of Northwestern Berntsen Library, 2021, tirée d'un terrain de 1972-1973 ; chapitre lu en ligne le 13 octobre 2026. La section « Naming » dit : « the first born is Omot or Amot, boy or girl; the second born is Ojula or Ajula, boy or girl; the third born is Ochalla or Achalla ». Elle ne donne pas la graphie Ojulu."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

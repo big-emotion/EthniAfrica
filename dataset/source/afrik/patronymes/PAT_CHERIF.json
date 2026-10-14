@@ -121,5 +121,216 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les mêmes recherches n'ont pas permis de déterminer si « Cherif » désigne un individu, une lignée, un clan, une caste, une classe d'âge ou un établissement dans le contexte précis de la fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Cherif vient d'un titre arabe, chérif, شريف, que l'on écrit aussi Sharif. Selon Daumas, en 1855, on appelle ainsi le « noble d'origine », qui descend du prophète Mohammed par sa fille Fatima et par Ali ; des études de 2015 et de 2021 le glosent plus largement « noble ». Il sert de prénom, d'élément de noms de personnes et de base à des noms de famille comme Cherifi. Les sources lues ne disent pas si les familles qui le portent ont cette ascendance. On ne sait pas avec certitude ce qu'il signifie pour chacune ; nous présentons plus bas les explications relevées.",
+    "names": [
+      {
+        "nameText": "Cherif",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un titre arabe, « noble », devenu prénom et nom de famille ; le titre est écrit dès 1855.",
+        "periodLabel": "Titre écrit dès 1855 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Cherif vient d'un titre arabe : l'étude des prénoms d'Aokas, en Kabylie, le relève comme prénom d'homme entre 1962 et 1970, et l'étude des noms de Touggourt analyse Cherifi comme « de la famille Cherif ». On ne sait pas avec certitude ce qu'il signifie pour chaque famille ; les explications relevées sont présentées séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Étude anthroponymique de la commune d'Aokas de 1962 à 1970",
+                "author": "Lynda Salhi",
+                "year": 2015,
+                "url": "https://bucket.theses-algerie.com/files/repositories-dz/1532970119996190.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 50",
+                "notes": "Mémoire de master en sciences du langage, Université Abderrahmane Mira de Béjaïa, 2014-2015 ; texte intégral lu, pages numérotées de l'imprimé. Il étudie les prénoms inscrits à l'état civil d'Aokas de 1962 à 1970. Page 50 : « Cherif, Cherifa : de la racine arabe [ČRF], dérivé de « Charif » qui signifie « noble », Cherifa prénom féminin de Cherif » ; Cherif figure aussi dans la liste des prénoms masculins relevés. Lu le 14 octobre 2026."
+              },
+              {
+                "title": "Étude étymo-sémantique des patronymes de la région de Touggourt",
+                "author": "Siham Messaoudi",
+                "year": 2021,
+                "url": "https://dspace.univ-ouargla.dz/jspui/bitstream/123456789/32616/1/%25D9%2585%25D8%25B3%25D8%25B9%25D9%2588%25D8%25AF%25D9%258A%2520%25D8%25B3%25D9%2587%25D8%25A7%25D9%2585_compressed.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 36",
+                "notes": "Mémoire de master en sciences du langage, Université Kasdi Merbah Ouargla, 2020-2021, dirigé par Nadjah Henka ; texte intégral lu dans le fichier déposé par l'université (pages numérotées de l'imprimé). L'autrice a choisi 215 noms de famille représentatifs dans le registre de l'état civil de la mairie de Touggourt (p. 3). Page 36 : « CHERIFI : nom simple, masculin singulier, d'origine arabe, de la famille Cherif, de carif « noble, de rang élevé » » ; page 56 : la liste des patronymes recensés porte CHERIFI. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2015,
+              "to": 2021,
+              "label": "Proposée en 2015 et en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Cherif voudrait dire « noble, de rang élevé » : l'étude des noms de Touggourt le donne pour la base de Cherifi, « de la famille Cherif », et l'étude des prénoms d'Aokas le dérive de Charif, « noble ».",
+            "hypothesisGroup": "origine du nom Cherif",
+            "sources": [
+              {
+                "title": "Étude étymo-sémantique des patronymes de la région de Touggourt",
+                "author": "Siham Messaoudi",
+                "year": 2021,
+                "url": "https://dspace.univ-ouargla.dz/jspui/bitstream/123456789/32616/1/%25D9%2585%25D8%25B3%25D8%25B9%25D9%2588%25D8%25AF%25D9%258A%2520%25D8%25B3%25D9%2587%25D8%25A7%25D9%2585_compressed.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 36",
+                "notes": "Mémoire de master en sciences du langage, Université Kasdi Merbah Ouargla, 2020-2021, dirigé par Nadjah Henka ; texte intégral lu dans le fichier déposé par l'université (pages numérotées de l'imprimé). L'autrice a choisi 215 noms de famille représentatifs dans le registre de l'état civil de la mairie de Touggourt (p. 3). Page 36 : « CHERIFI : nom simple, masculin singulier, d'origine arabe, de la famille Cherif, de carif « noble, de rang élevé » » ; page 56 : la liste des patronymes recensés porte CHERIFI. Lu le 14 octobre 2026."
+              },
+              {
+                "title": "Étude anthroponymique de la commune d'Aokas de 1962 à 1970",
+                "author": "Lynda Salhi",
+                "year": 2015,
+                "url": "https://bucket.theses-algerie.com/files/repositories-dz/1532970119996190.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 50",
+                "notes": "Mémoire de master en sciences du langage, Université Abderrahmane Mira de Béjaïa, 2014-2015 ; texte intégral lu, pages numérotées de l'imprimé. Il étudie les prénoms inscrits à l'état civil d'Aokas de 1962 à 1970. Page 50 : « Cherif, Cherifa : de la racine arabe [ČRF], dérivé de « Charif » qui signifie « noble », Cherifa prénom féminin de Cherif » ; Cherif figure aussi dans la liste des prénoms masculins relevés. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1855,
+              "to": 1855,
+              "label": "Proposée en 1855"
+            },
+            "era": "colonial",
+            "statement": "Le nom Cherif serait celui d'un « noble d'origine » : Daumas écrit que l'on appelle chérif, chez les Arabes, tout musulman qui prouve par des titres en règle qu'il descend de Fathma-Zohra, fille du prophète, et de Sidi-Ali-Abi-Thaleb. Les sources lues ne disent pas si les familles qui portent le nom ont cette ascendance.",
+            "hypothesisGroup": "origine du nom Cherif",
+            "sources": [
+              {
+                "title": "Mœurs et coutumes de l'Algérie : Tell, Kabylie, Sahara",
+                "author": "Eugène Daumas",
+                "year": 1855,
+                "url": "https://archive.org/details/mursetcoutumesde00daum",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 23",
+                "notes": "Général E. Daumas, deuxième édition, Paris, Hachette, 1855 ; exemplaire numérisé d'archive.org. L'auteur est un officier français, conseiller d'État et directeur des affaires de l'Algérie : il est cité pour ce qu'il écrit et rapporte. Page 23, chapitre « Constitution de la tribu arabe » : « On appelle noble d'origine (chérif) tout musulman qui peut, au moyen de titres en règle, prouver qu'il descend de Fathma-Zohra, fille du prophète, et de Sidi-Ali-Abi-Thaleb, oncle de ce dernier » ; les Arabes montrent une grande déférence pour les cheurfa, pluriel de chérif, et leur donnent le titre de Sidi. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Description non datée"
+            },
+            "statement": "Le nom Cherif est une transcription de l'arabe شريف, Sharif, surtout employée en Afrique du Nord et de l'Ouest sous influence française, selon Behind the Name.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Cherif — Behind the Name",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/cherif",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site collaboratif de prénoms, page lue en entier : « Alternate transcription of Arabic شريف (see Sharif) chiefly used in French-influenced North and West Africa » ; usage arabe (maghrébin) et ouest-africain ; racine « sharufa ». Contenu communautaire, sans source citée ; la page ne donne pas de sens explicite. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1882,
+              "to": 1882,
+              "label": "Loi du 23 mars 1882"
+            },
+            "era": "colonial",
+            "statement": "Le nom Cherif relève, comme tout nom de famille algérien, de l'état civil que l'administration française impose aux Algériens musulmans par la loi du 23 mars 1882 : chaque famille doit alors porter un nom unique, transmis de génération en génération, là où l'on se nommait par la filiation. Les sources lues ne disent pas quand les familles Cherif ont reçu ce nom.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Qui es-tu ? J'ai été dit. De la destruction de la filiation dans l'État civil d'Algérie ou éléments d'un onomacide sémantique",
+                "author": "Farid Benramdane",
+                "year": 2000,
+                "url": "https://insaniyat.crasc.dz/en/article/qui-es-tu-jai-ete-dit-de-la-destruction-de-la-filiation-dans-letat-civil-dalgerie-ou-elements-dun-onomacide-semantique",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 79-87 (section sur les patronymes algériens)",
+                "notes": "Insaniyat, 4(10), 2000, p. 79-87, lu en ligne en texte intégral ; la version en ligne ne marque pas les pages de l'imprimé. L'auteur écrit que l'état civil algérien est né de la loi du 23 mars 1882, précédée d'une loi de 1873, qui a imposé « l'obligation et la généralisation du patronyme » là où l'on se nommait par la filiation (ism, alam, kunya, laqab, nisba) ; il cite Charles-Robert Ageron sur les commissaires chargés d'établir cet état civil. Lu le 14 octobre 2026."
+              },
+              {
+                "title": "Étude étymo-sémantique des patronymes de la région de Touggourt",
+                "author": "Siham Messaoudi",
+                "year": 2021,
+                "url": "https://dspace.univ-ouargla.dz/jspui/bitstream/123456789/32616/1/%25D9%2585%25D8%25B3%25D8%25B9%25D9%2588%25D8%25AF%25D9%258A%2520%25D8%25B3%25D9%2587%25D8%25A7%25D9%2585_compressed.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18",
+                "notes": "Mémoire de master en sciences du langage, Université Kasdi Merbah Ouargla, 2020-2021, dirigé par Nadjah Henka ; texte intégral lu dans le fichier déposé par l'université (pages numérotées de l'imprimé). L'autrice a choisi 215 noms de famille représentatifs dans le registre de l'état civil de la mairie de Touggourt (p. 3). Page 18 : « la présence coloniale a bouleversé le système dénominatif qui est passé d'une désignation par filiation lignagère à plusieurs éléments à un système patronymique à un seul élément », imposé « après avoir instauré l'état civil des indigènes musulmans en 1882 » ; l'introduction (p. 2) date pourtant l'état civil de 1871, et le projet suit la loi de 1882 que donne Benramdane. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1855,
+              "to": 1855,
+              "label": "Édition de 1855"
+            },
+            "era": "colonial",
+            "statement": "Le nom Cherif apparaît sous une forme proche, chérif, chez le général Daumas, qui explique que l'on appelle ainsi, chez les Arabes d'Algérie, le « noble d'origine ». C'est la plus ancienne trace du mot que le projet connaît ; elle nomme un titre, non un nom de famille, et le titre existait déjà avant elle.",
+            "formAsWritten": "chérif",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Mœurs et coutumes de l'Algérie : Tell, Kabylie, Sahara",
+                "author": "Eugène Daumas",
+                "year": 1855,
+                "url": "https://archive.org/details/mursetcoutumesde00daum",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 23",
+                "notes": "Général E. Daumas, deuxième édition, Paris, Hachette, 1855 ; exemplaire numérisé d'archive.org. L'auteur est un officier français, conseiller d'État et directeur des affaires de l'Algérie : il est cité pour ce qu'il écrit et rapporte. Page 23, lue sur le texte numérisé : le titre est écrit « chérif », au pluriel « cheurfa ». Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Chérif",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La graphie avec accent, notée en 1864 dans le nom d'un chef de famille vénérée.",
+        "periodLabel": "Écrit en 1864",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1864,
+              "to": 1864,
+              "label": "Publié en 1864"
+            },
+            "era": "colonial",
+            "statement": "Le nom Chérif, avec accent, est la forme que le docteur Leclerc écrit dans « Si Ali chérif », chef actuel d'une famille en grande vénération qui dirige l'école de Gheilata, dans le département de Constantine.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Une mission médicale en Kabylie",
+                "author": "Lucien Leclerc",
+                "year": 1864,
+                "url": "https://archive.org/details/unemissionmdica01leclgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 73",
+                "notes": "Docteur L. Leclerc, médecin-major, chargé en 1857, après la soumission de la Grande Kabylie, de soigner les habitants du Djurdjura depuis Fort-Napoléon ; Paris, J.-B. Baillière ; exemplaire numérisé d'archive.org, dont la notice donne 1864. Page 73 : « L'école de Gheilàta était depuis bien longtemps dirigée par une famille en grande vénération dans le pays » ; « Le chef actuel, Si Ali chérif, est un homme intelligent […] il a représenté le département de Constantine au Conseil général ». Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

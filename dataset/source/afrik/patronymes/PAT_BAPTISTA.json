@@ -6,7 +6,7 @@
   },
   "id": "PAT_BAPTISTA",
   "nameMain": "Baptista",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Baptista",
@@ -28,7 +28,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -78,12 +78,181 @@
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un prénom tiré d'un surnom de saint Jean-Baptiste, devenu nom de famille. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
+    },
+    {
       "fieldPath": "transmissionMode",
-      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+      "reason": "Le nom Baptista est d'abord un nom de personne : nous ne documentons pas encore comment il passe d'une génération à l'autre comme nom de famille."
     },
     {
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Baptista à un peuple en Angola. Nous n'avons pas encore consulté de source consacrée à ce nom. Les exemples de noms portugais cités pour les créoles de Guinée-Bissau ne suffisent pas à expliquer leur usage en Angola."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Baptista est un nom de famille d'origine portugaise, porté en Angola, où on l'écrit aussi Batista. Les sources le rattachent au surnom de saint Jean-Baptiste, devenu prénom puis nom de famille. On ne sait pas avec certitude quand ni comment il est arrivé en Angola ; nous présentons plus bas ce que les sources disent.",
+    "names": [
+      {
+        "nameText": "Baptista",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Un nom portugais tiré du mot « baptiste », porté en Angola ; on ne sait pas depuis quand.",
+        "periodLabel": "Écrit au Portugal dès 1811 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Baptista est un nom de famille portugais et espagnol, tiré du prénom Baptista, « baptiste », qui est lui-même un surnom de saint Jean-Baptiste, selon le Dictionary of American Family Names. Le linguiste José Leite de Vasconcelos rattache ce mot au grec baptistês, « celui qui plonge » ou « celui qui baptise ». Ces sources ne disent rien de l'Angola.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Baptista Name Meaning and Baptista Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=baptista",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch et lue en anglais. Elle donne : « Portuguese and Spanish: from the personal name Baptista ‘baptist’, derived from the distinguishing epithet of Saint John the Baptist (see Baptiste). » Elle ajoute une forme américanisée de l'italien Battista.  Lu le 14 octobre 2026."
+              },
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 458",
+                "notes": "José Leite de Vasconcelos, Antroponímia portuguesa, Lisbonne, Imprensa Nacional, 1928, lu sur la copie numérisée d'archive.org. À la page 458, au sujet des prénoms, il écrit que le mot Baptista est d'origine grecque et veut dire « o que faz mergulhar », « o que batiza ». Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "7 septembre 2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Baptista est porté en Angola comme nom de famille : le bulletin de la salle de presse du Saint-Siège du 7 septembre 2018 présente Paulino Domingos Baptista, né à Luanda en 1951, comme ambassadeur d'Angola auprès du Saint-Siège. Le bulletin ne dit rien de l'origine du nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Credential Letters of the Ambassador of Angola to the Holy See",
+                "author": "Salle de presse du Saint-Siège",
+                "year": 2018,
+                "url": "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2018/09/07/180907b.html",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Bulletin du 7 septembre 2018. Il dit que le pape a reçu « H.E. Mr. Paulino Domingos Baptista, ambassador of Angola to the Holy See », et précise qu'il est « born in Luanda on 8 July 1951 ». Il ne dit rien de l'origine du nom. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Proposé en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Baptista pourrait être devenu un nom angolais par le baptême et l'état civil. À l'époque coloniale, les missionnaires donnaient aux Ovimbundu baptisés des noms de saints, et l'état civil remplaçait des noms en umbundu par des noms portugais, selon Severino Canhola Dungue. Il ne cite pas ce nom en particulier.",
+            "sources": [
+              {
+                "title": "O nome: Identidade cultural do povo Ovimbundu",
+                "author": "Severino Canhola Dungue",
+                "year": 2025,
+                "url": "https://www.ajol.info/index.php/academicus/article/download/285659/269148/667445",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 28-30",
+                "notes": "Revue Academicus, vol. 3, n° 1, 2025, p. 23-34, publiée le 7 janvier 2025 ; texte intégral lu sur AJOL. Pages 28 à 30 : à l'époque coloniale, les missionnaires donnaient aux Ovimbundu baptisés des noms de saints à la place de leurs noms, et au registre civil des noms en umbundu étaient remplacés par des noms portugais (exemple donné : « Nangoya – Gomes »), d'après Chimbinda (2009). L'article ne cite pas ce nom. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Proposé en 1928"
+            },
+            "statement": "Le nom Batista fait partie, selon José Leite de Vasconcelos, des noms de famille tirés d'un surnom de saint, comme Xavier ou Evangelista. Ces noms n'étaient d'abord portés que par ceux qui s'appelaient João, Jean, puis ils ont été joints à n'importe quel prénom. Il ne parle pas de l'Angola.",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 140",
+                "notes": "José Leite de Vasconcelos, Antroponímia portuguesa, Lisbonne, Imprensa Nacional, 1928, lu sur la copie numérisée d'archive.org. À la page 140, au chapitre des noms de famille religieux, il cite « Batista (antigamente Bautista, de Baptista) » parmi les noms qui viennent de surnoms de saints (ici saint Jean-Baptiste). Il écrit que ces noms furent d'abord portés par ceux qui s'appelaient João, puis ajoutés à n'importe quel prénom. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1811,
+              "to": 1811,
+              "label": "1811"
+            },
+            "statement": "Le nom Baptista apparaît par écrit au Portugal en 1811, dans les registres de mariage de Monte-Real, près de Leiria, que cite José Leite de Vasconcelos : « Manuel Baptista Bello, filho de João Baptista Bello ». C'est la plus ancienne trace datée de ce nom que le projet connaît ; Baptista y fait partie du nom d'un père et de son fils, et elle ne dit rien de l'Angola.",
+            "formAsWritten": "Baptista",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 132",
+                "notes": "José Leite de Vasconcelos, Antroponímia portuguesa, Lisbonne, Imprensa Nacional, 1928, lu sur la copie numérisée d'archive.org. À la page 132, parmi des exemples de noms repris du père par le fils, il cite le livre des mariages de Monte-Real (Leiria) : « Manuel Baptista Bello, filho de João Baptista Bello, 1811 ». Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Batista",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Une autre écriture du nom Baptista, sans le p.",
+        "periodLabel": "Porté aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Batista est une autre écriture du nom Baptista, qui s'écrivait aussi Bautista, selon José Leite de Vasconcelos. Il ne dit pas si cette écriture est répandue en Angola.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 140 et p. 510",
+                "notes": "José Leite de Vasconcelos, Antroponímia portuguesa, Lisbonne, Imprensa Nacional, 1928, lu sur la copie numérisée d'archive.org. À la page 140, il note « Batista (antigamente Bautista, de Baptista) » ; à la page 510, au sujet des formes populaires des prénoms, il donne « Baptista ou Bàtista : Babtista, Bautista ». Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

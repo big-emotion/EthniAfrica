@@ -6,7 +6,7 @@
   },
   "id": "PAT_BIYA",
   "nameMain": "Biya",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Biya",
@@ -28,7 +28,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [
@@ -94,8 +94,151 @@
       "reason": "la recherche web combinant « Biya », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », qui comprenait le terme « homonyme », et la lecture de « Historical Dictionary of the Republic of Cameroon » et « Origine du nom Biya : l'histoire méconnue révélée par Jean Paul Ntsengue », n'ont pas établi de lignée homonyme d'origine distincte."
     },
     {
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues le disent un nom de personne du Cameroun. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
+    },
+    {
       "fieldPath": "transmissionMode",
       "reason": "La recherche « Biya Bulu surname transmission inheritance clan » et la lecture de « Historical Dictionary of the Republic of Cameroon » et de l'article « Origine du nom Biya » ont trouvé un cas de transmission par homonymie à Paul Biya, mais aucune règle générale permettant de classer le nom comme patrilinéaire, matrilinéaire ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Biya est un nom de personne du Cameroun, surtout connu comme celui du président Paul Biya, du groupe bulu. Une source récente le dit né d'un sobriquet et le dit aussi présent chez les Bassa ; nous n'avons trouvé aucune source qui en fasse un nom de clan. On ne sait pas avec certitude ce qu'il veut dire : nous présentons plus bas la seule explication que nous connaissons.",
+    "names": [
+      {
+        "nameText": "Biya",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne du Cameroun, d'abord un sobriquet selon une source de 2026.",
+        "periodLabel": "Écrit dès 1953 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2010,
+              "to": 2010,
+              "label": "Décrit en 2010"
+            },
+            "era": "modern",
+            "statement": "Le nom Biya est celui de Paul Biya, président du Cameroun, né en 1933 à Mvomeka'a, que le Historical Dictionary of the Republic of Cameroon rattache au clan yezum du groupe bulu. Le dictionnaire rattache le porteur à ce clan, pas le nom : il ne dit pas que Biya est un nom de clan.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Historical Dictionary of the Republic of Cameroon",
+                "author": "Emizet François Kisangani et F. Scott Bobb",
+                "year": 2010,
+                "url": "https://shcas.shnu.edu.cn/_upload/article/files/0e/08/4b0564f84fd9b9a65bde70ec5e4a/67ccaabe-3afc-4fb2-9df9-b7b27b0ebc0a.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 72",
+                "notes": "Quatrième édition, Scarecrow Press, 2010, lue dans le PDF le 13 octobre 2026. Page 72, notice « Biya, Paul » : né le 13 février 1933 à Mvomeka'a, près de Sangmélima ; « from the Yezum clan of the Bulu ethnic group ». La notice rattache le porteur à ce clan ; elle ne parle ni de l'origine ni du sens du nom Biya."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2026,
+              "to": 2026,
+              "label": "Rapporté en 2026"
+            },
+            "era": "modern",
+            "statement": "Le nom Biya existerait aussi chez les Bassa, selon Jean Paul Ntsengue, qui cite un camarade de faculté huissier de justice qui le porte, et qui ajoute que ce n'est pas un nom bulu à l'origine.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Origine du nom Biya : l'histoire méconnue révélée par Jean Paul Ntsengue",
+                "author": "Liliane Ndangue (actucameroun.com)",
+                "year": 2026,
+                "url": "https://actucameroun.com/2026/05/17/origine-du-nom-biya-lhistoire-meconnue-revelee-par-jean-paul-ntsengue/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "page": "article du 17 mai 2026, section « D'où vient le nom Biya ? »",
+                "notes": "Article de presse du 17 mai 2026, lu en entier le 13 octobre 2026. Jean Paul Ntsengue, qui se présente comme biographe du président, y reproduit un extrait de « Paul Biya ou l'incarnation de la rigueur », ouvrage collectif des Publications de l'Université de Yaoundé, Sopecam, 1983. L'extrait résume un récit recueilli à Mvomeka'a auprès du patriarche Raymond Abondo, oncle de Paul Biya. L'ouvrage de 1983 n'a pas été lu. La chaîne est donc : Raymond Abondo, puis l'ouvrage de 1983, puis Ntsengue, puis la presse."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2026,
+              "to": 2026,
+              "label": "Rapporté en 2026"
+            },
+            "era": "modern",
+            "statement": "Le nom Biya viendrait du sobriquet Biya'a, donné à Abondo Mengue, cousin et ami du père de Paul Biya : ses oncles maternels du village d'Essanku, excédés par ses excès, lui disaient « nous sommes rassasiés de toi ». Le père de Paul Biya aurait donné à son fils le nom de cet homonyme, selon un récit du patriarche Raymond Abondo, que Jean Paul Ntsengue reprend en 2026 d'un ouvrage collectif de 1983.",
+            "hypothesisGroup": "origine du nom Biya",
+            "sources": [
+              {
+                "title": "Origine du nom Biya : l'histoire méconnue révélée par Jean Paul Ntsengue",
+                "author": "Liliane Ndangue (actucameroun.com)",
+                "year": 2026,
+                "url": "https://actucameroun.com/2026/05/17/origine-du-nom-biya-lhistoire-meconnue-revelee-par-jean-paul-ntsengue/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "page": "article du 17 mai 2026, section « D'où vient le nom Biya ? »",
+                "notes": "Article de presse du 17 mai 2026, lu en entier le 13 octobre 2026. Jean Paul Ntsengue, qui se présente comme biographe du président, y reproduit un extrait de « Paul Biya ou l'incarnation de la rigueur », ouvrage collectif des Publications de l'Université de Yaoundé, Sopecam, 1983. L'extrait résume un récit recueilli à Mvomeka'a auprès du patriarche Raymond Abondo, oncle de Paul Biya. L'ouvrage de 1983 n'a pas été lu. La chaîne est donc : Raymond Abondo, puis l'ouvrage de 1983, puis Ntsengue, puis la presse."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1953,
+              "to": 1953,
+              "label": "15 mai 1953"
+            },
+            "era": "colonial",
+            "statement": "Le nom Biya apparaît par écrit dans le nom d'un pétitionnaire du Cameroun sous administration française, Jean Biya de Goncourt, dont la pétition au Conseil de tutelle de l'ONU est enregistrée le 15 mai 1953. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "birth": true,
+            "formAsWritten": "Biya",
+            "sources": [
+              {
+                "title": "Petition from Mr. Jean Biya de Goncourt concerning the Cameroons under French Administration",
+                "author": "Organisation des Nations unies, Conseil de tutelle",
+                "year": 1953,
+                "url": "https://digitallibrary.un.org/record/3923030",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "notice du catalogue (titre et date)",
+                "notes": "Pétition T/PET.5/213, datée du 15 mai 1953 (2 pages), lue dans la notice de la bibliothèque numérique de l'ONU le 13 octobre 2026. Seuls le titre, la date et les mots-clés ont été lus, pas le texte de la pétition. Une notice T/PET.5/213/Add.1 la complète le 18 novembre 1953."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Biya'a",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Rapporté en 2026",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2026,
+              "to": 2026,
+              "label": "Rapporté en 2026"
+            },
+            "era": "modern",
+            "statement": "Le nom Biya'a, avec une apostrophe, est la prononciation en bulu de Biya, selon Jean Paul Ntsengue, dans un article de presse de 2026. C'est la plus ancienne trace de cette écriture que le projet connaît ; Ntsengue l'attribue à un ouvrage de 1983 que nous n'avons pas lu.",
+            "birth": true,
+            "formAsWritten": "Biya'a",
+            "sources": [
+              {
+                "title": "Origine du nom Biya : l'histoire méconnue révélée par Jean Paul Ntsengue",
+                "author": "Liliane Ndangue (actucameroun.com)",
+                "year": 2026,
+                "url": "https://actucameroun.com/2026/05/17/origine-du-nom-biya-lhistoire-meconnue-revelee-par-jean-paul-ntsengue/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "page": "article du 17 mai 2026, section « D'où vient le nom Biya ? »",
+                "notes": "Article de presse du 17 mai 2026, lu en entier le 13 octobre 2026. Jean Paul Ntsengue, qui se présente comme biographe du président, y reproduit un extrait de « Paul Biya ou l'incarnation de la rigueur », ouvrage collectif des Publications de l'Université de Yaoundé, Sopecam, 1983. L'extrait résume un récit recueilli à Mvomeka'a auprès du patriarche Raymond Abondo, oncle de Paul Biya. L'ouvrage de 1983 n'a pas été lu. La chaîne est donc : Raymond Abondo, puis l'ouvrage de 1983, puis Ntsengue, puis la presse."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

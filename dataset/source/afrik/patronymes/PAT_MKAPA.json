@@ -84,5 +84,87 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web et bibliographique combinant « Mkapa », « MAKONDE », « surname », « clan », « etymology », « transmission », « alliance » et « obituary », ainsi que la page Forebears dédiée et les travaux ou notices propres au nom cités dans la fiche n'ont pas établi de lignée homonyme d'origine distincte documentable ; la diffusion dans plusieurs pays et les ressemblances graphiques ne suffisent pas à créer un homonyme."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mkapa est un nom de famille tanzanien qui, dans le cas du troisième président du pays, est le nom de sa mère et non celui de son père. Les sources lues le rattachent à une société matrilinéaire du sud de la Tanzanie, mais elles ne disent pas toutes de quel peuple. Elles ne disent pas non plus ce qu'il veut dire : on ne sait pas avec certitude.",
+    "names": [
+      {
+        "nameText": "Mkapa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille tanzanien venu de la mère, dans une société matrilinéaire du sud ; son sens reste inconnu.",
+        "periodLabel": "Écrit dès 2018 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "Dit en 2018, publié en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Mkapa est, dans le cas de Benjamin Mkapa, le nom de sa mère et non celui de son père, selon le ministre Palamagamba Kabudi. Il explique que les enfants des sociétés matrilocales et matrilinéaires du sud de la Tanzanie prennent le nom de leur mère, et il range le président dans ce cas.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Gender Justice in Africa: Summary of the Proceedings of the Conference on Gender and the Judiciary in Sub-Saharan Africa",
+                "author": "Waleed Haider Malik, Clara Lahoud Maghani, Ibrahim Hamis Juma et Mohamed Chande Othman",
+                "year": 2023,
+                "url": "https://documents1.worldbank.org/curated/en/099155101252476786/pdf/IDU1717d6cd0140f1857c13e08e29be286.pdf",
+                "tier": "referenced",
+                "source_kind": "intergovernmental",
+                "page": "p. 168",
+                "notes": "Actes de la conférence d'Arusha, 11 au 13 juin 2018, publiés par la Banque mondiale le 22 décembre 2023. Page 168 imprimée (page 179 du fichier) : discours de clôture du ministre des Affaires constitutionnelles et juridiques de Tanzanie, Palamagamba Kabudi. Il range le troisième président, Benjamin Urue Mkapa, parmi les familles où l'enfant prend le nom de sa mère, dans une société matrilocale et matrilinéaire. Il cite comme peuples du Sud les Mwera, les Makua, les Yao, les Makonde et les Machinga, sans dire duquel relève Mkapa. Propos d'un intervenant, non position de la Banque mondiale. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "Écrit en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Mkapa serait le nom de clan de la mère de Benjamin Mkapa, selon le média tanzanien The Chanzo, qui explique ce choix par la société matrilinéaire des Makua. Le ministre Kabudi, lui, cite plusieurs peuples du Sud sans dire lequel est celui de Mkapa : les deux sources ne se recoupent pas sur le peuple.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "‘He Was a Towering, Multifaceted Personality’: Happy Posthumous 85th Birthday, Benjamin William Mkapa",
+                "author": "Mzee wa Atikali",
+                "year": 2023,
+                "url": "https://thechanzo.com/2023/11/12/he-was-a-towering-multifaceted-personality-happy-posthumous-85th-birthday-benjamin-william-mkapa/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article du média tanzanien The Chanzo, daté du 12 novembre 2023, signé d'un pseudonyme. Il écrit que la tribu de Mkapa était les Makua et que son nom de famille, Mkapa, était le nom de clan de sa mère, en raison du caractère matrilinéaire de la société makua. Relevé dans l'article, non recoupé ailleurs. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Mkapa apparaît par écrit dans les actes d'une conférence tenue à Arusha en juin 2018, dans le discours de clôture du ministre Palamagamba Kabudi, publiés en 2023. C'est la plus ancienne trace de ce nom que le projet connaît ; le nom est bien plus ancien, puisque son porteur est né en 1938.",
+            "formAsWritten": "Mkapa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Gender Justice in Africa: Summary of the Proceedings of the Conference on Gender and the Judiciary in Sub-Saharan Africa",
+                "author": "Waleed Haider Malik, Clara Lahoud Maghani, Ibrahim Hamis Juma et Mohamed Chande Othman",
+                "year": 2023,
+                "url": "https://documents1.worldbank.org/curated/en/099155101252476786/pdf/IDU1717d6cd0140f1857c13e08e29be286.pdf",
+                "tier": "referenced",
+                "source_kind": "intergovernmental",
+                "page": "p. 168",
+                "notes": "Actes de la conférence d'Arusha, 11 au 13 juin 2018, publiés par la Banque mondiale le 22 décembre 2023. Page 168 imprimée (page 179 du fichier) : discours de clôture du ministre des Affaires constitutionnelles et juridiques de Tanzanie, Palamagamba Kabudi. Il range le troisième président, Benjamin Urue Mkapa, parmi les familles où l'enfant prend le nom de sa mère, dans une société matrilocale et matrilinéaire. Il cite comme peuples du Sud les Mwera, les Makua, les Yao, les Makonde et les Machinga, sans dire duquel relève Mkapa. Propos d'un intervenant, non position de la Banque mondiale. Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

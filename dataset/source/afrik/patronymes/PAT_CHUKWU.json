@@ -16,15 +16,6 @@
           "sourceRefs": ["hanks-chukwu"]
         }
       ]
-    },
-    {
-      "spelling": "Chukwuma",
-      "attestations": [
-        {
-          "countryId": "NGA",
-          "sourceRefs": ["afrik-candidate-queue"]
-        }
-      ]
     }
   ],
   "transmissionMode": "other",

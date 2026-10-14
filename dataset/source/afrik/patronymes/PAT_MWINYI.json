@@ -82,5 +82,86 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Mwinyi », « Swahili », « la Tanzanie », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la page Forebears propre au nom consultée directement, n’a établi aucune règle propre à Mwinyi permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mwinyi est porté en Tanzanie, notamment par le deuxième président de l'Union. Il ressemble au titre swahili mwinyi, qui veut dire « possesseur » ou « chef » ; aucune source lue ne dit que le nom de famille en vient, c'est notre lecture. Sa plus ancienne trace écrite que nous connaissons, sous la forme muinyi, date de 1860 et désigne un titre.",
+    "names": [
+      {
+        "nameText": "Mwinyi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom qui ressemble au titre swahili mwinyi, « chef » ; écrit muinyi dès 1860.",
+        "periodLabel": "Écrit muinyi dès 1860 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "À partir de 1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Mwinyi est porté en Tanzanie comme dernier élément du nom d'Ali Hassan Mwinyi, deuxième président de l'Union, né le 5 mai 1925 à Kivule, dans la région de Pwani, et entré en fonction le 5 novembre 1985, selon la présidence. Sa biographie ne dit ni ce que veut dire le nom, ni à quel peuple ou à quel lignage il se rattache.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Wasifu: Mr. Ali Hassan Mwinyi",
+                "author": "Ikulu, présidence de la République unie de Tanzanie",
+                "year": null,
+                "url": "https://www.ikulu.go.tz/administration/profile/3",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Biographie en swahili du site officiel de la présidence, lue le 14 octobre 2026 : « Mheshimiwa Alhaj Ali Hassan Mwinyi alizaliwa Kivule, Mkuranga, mkoa wa Pwani tarehe 5 mei, 1925 » ; il « aliingia madarakani rasmi tarehe 5 Novemba 1985 ». Elle ne dit ni le sens du nom, ni un peuple, ni un lignage."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Lecture du projet d'après un dictionnaire de 1882"
+            },
+            "statement": "Le nom Mwinyi viendrait du titre swahili mwinyi, que Johann Ludwig Krapf écrit muigni et traduit par « possesseur », « chef » ou « cheikh ». Il ajoute que le « muigni mku » passait pour le vrai sultan des Swahili, à Zanzibar et aux alentours. C'est la lecture que nous en faisons : aucune source lue ne dit que ce nom de famille vienne de ce titre.",
+            "hypothesisGroup": "origine du nom Mwinyi",
+            "sources": [
+              {
+                "title": "A Dictionary of the Suahili Language (exemplaire dictionaryofsuah00krap)",
+                "author": "Johann Ludwig Krapf",
+                "year": 1882,
+                "url": "https://archive.org/details/dictionaryofsuah00krap",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 264",
+                "notes": "Londres, Trübner, 1882 ; exemplaire numérisé sur archive.org. Page 264, entrée « Muigni (or muegni) » : « possessor, owner », « a chief or sheikh » ; « Muigni nti, the lord of the country » ; « The muigni mku is esteemed the true Sultan of the Suahili, at least in the island of Zanzibar and the parts adjacent ». Krapf écrit le mot muigni. Lu dans le texte numérisé le 14 octobre 2026. Missionnaire, cité pour les mots qu'il relève."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "Voyage de 1857-1859, récit publié en 1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Mwinyi apparaît par écrit sous une forme proche, muinyi, chez l'explorateur Richard Burton : la plupart des hommes qui guident son expédition « se disent muinyi (maître) », titre d'homme libre, et leur chef s'appelle Muinyi Kidogo. C'est la plus ancienne trace de ce nom que le projet connaît ; elle montre un titre, pas encore un nom de famille. Elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "formAsWritten": "muinyi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Africa: A Picture of Exploration (édition de New York, un volume)",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://archive.org/details/lakeregionsofcen00burt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 109-110",
+                "notes": "Édition de 1860 en un volume ; exemplaire de la bibliothèque de la Brigham Young University, numérisé sur archive.org. Pages 109-110 : parmi les hommes qui guident et défendent l'expédition, « the most part called themselves muinyi (master), the title of an African freeman » ; page 110 : leur chef Kidogo est nommé « Muinyi Kidogo ». Lu dans le texte numérisé le 14 octobre 2026. Voyageur britannique, cité pour les formes qu'il écrit."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

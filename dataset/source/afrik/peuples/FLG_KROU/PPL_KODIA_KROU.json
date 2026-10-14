@@ -87,7 +87,7 @@
         "source_kind": "missionary_database"
       },
       {
-        "title": "Landinfo – Report Cote d'Ivoire: Ethnicity, Ivoirité and Conflict",
+        "title": "Côte d'Ivoire: Ethnicity, Ivoirité and Conflict",
         "url": "https://www.landinfo.no/asset/514/1/514_1.pdf",
         "tier": "referenced",
         "source_kind": "government"
@@ -97,6 +97,90 @@
         "url": "https://www.facebook.com/ethniesdeCI/posts/3360851760603000/",
         "tier": "unverified",
         "source_kind": "community"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kodia désigne un petit peuple de langue krou du sud-ouest de la Côte d'Ivoire, autour de Sassandra, et la langue qu'il parle. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. Maurice Delafosse écrit déjà en 1904 des formes proches, Kwadya et Kouadia, pour des gens du Sassandra. Nous n'avons pas trouvé de source qui explique l'origine du nom Kodia.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Kodia",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "kwp",
+        "namedBy": null,
+        "shortLine": "Le nom sous lequel ce peuple et sa langue figurent dans les listes d'ethnies ivoiriennes, sans origine connue.",
+        "periodLabel": "Formes proches dès 1904 ; Kodia depuis 2006",
+        "accounts": [
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Kodia désigne, chez le chercheur Aka Konin, un des peuples krou de Côte d'Ivoire, qu'il place à Sassandra, dans le sud-ouest du pays, dans un tableau de leur localisation.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "L'art musical chez les Niaboua, un peuple krou du centre-ouest de la Côte d'Ivoire",
+                "author": "Aka Konin",
+                "year": 2012,
+                "url": "https://www.africamuseum.be/sites/default/files/media/docs/research/publications/rmca/online/documents-social-sciences-humanities/niaboua.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 70, annexe 9",
+                "notes": "Musée royal de l'Afrique centrale, Tervuren, 2012. Le PDF imprime deux pages par feuille ; la page est lue sur les numéros du feuillet. Le tableau « Les peuples krou de Côte d'Ivoire et leur localisation » donne pour les Kodia la localité de Sassandra et la situation « Sud-ouest ». Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2006,
+              "to": 2006,
+              "label": "2006"
+            },
+            "era": "modern",
+            "statement": "Le nom Kodia figure parmi les peuples krou de Côte d'Ivoire dans la liste de soixante groupes que le centre norvégien Landinfo publie en 2006.",
+            "aspect": "usage",
+            "formAsWritten": "Kodia",
+            "sources": [
+              {
+                "title": "Côte d'Ivoire: Ethnicity, Ivoirité and Conflict",
+                "author": "Geir Skogseth (Landinfo)",
+                "year": 2006,
+                "url": "https://www.landinfo.no/asset/514/1/514_1.pdf",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 5",
+                "notes": "Rapport du centre norvégien d'information sur les pays d'origine, daté du 2 novembre 2006. Kodia figure dans la liste des groupes krou. La liste de soixante groupes y est reprise d'une liste de 1999 (CNCCI). Elle ne dit pas d'où viennent les noms. Lu le 13 octobre 2026 dans le PDF du centre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "statement": "Le nom Kodia a des formes proches, Kwadya ou Kwadre et Kouadia, chez Maurice Delafosse en 1904. Il écrit que Kwadre est le nom de leur pays, qu'ils vivent sur les deux rives du Sassandra, de Griguiblé à Kouati, dans la région de Boutoubré, et qu'ils seraient issus d'un mélange de Bété et de Bakoué. Les sources que nous avons lues ne disent pas s'il s'agit du même groupe que les Kodia d'aujourd'hui ; nous les rapprochons par la forme du nom et par le Sassandra. C'est la plus ancienne trace d'une forme proche de ce nom que le projet connaît.",
+            "formAsWritten": "Kwadya",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 69",
+                "notes": "Delafosse écrit « Les Kwadya ou Kwadre (nom de leur pays) habitent les deux rives du Sassandra de Griguiblé exclus à Kouati inclus (région de Boutoubré) ». La forme Kouadia figure sur la même page, dans la description des Bété et des Godié. Page vérifiée sur l'image du scan de l'Internet Archive. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

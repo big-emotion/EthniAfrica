@@ -107,5 +107,133 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les recherches « El Sherbini lignée », « El Sherbini clan », « El Sherbini tribe » et « El Sherbini place name » n’ont pas permis de déterminer si cette graphie désigne une lignée, un clan, une caste, une classe d’âge ou un établissement dans le contexte précis de la fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom El Sherbini est un nom d'appartenance arabe : il désigne quelqu'un qui vient de Sherbin, une ville du delta du Nil, en Égypte. On l'écrit aussi Sherbini. Une forme proche, el Cherbini, apparaît en 1727-1728 dans la traduction française d'une chronique du Caire, qui parle aussi d'un lieu appelé Cherbine. Nous présentons plus bas l'explication de son origine que nous connaissons.",
+    "names": [
+      {
+        "nameText": "El Sherbini",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une nisba arabe : « de Sherbin », une ville du delta du Nil.",
+        "periodLabel": "Écrit el Cherbini dès 1727 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "Proposée en 1985"
+            },
+            "era": "modern",
+            "statement": "Le nom El Sherbini viendrait de la ville de Sherbin, dans la province de Dakahlia, en Égypte, selon l'encyclopédie des noms arabes de l'université Sultan Qaboos, qui y voit une nisba, c'est-à-dire un nom d'appartenance à un lieu.",
+            "hypothesisGroup": "origine du nom El Sherbini",
+            "sources": [
+              {
+                "title": "Sultan Qaboos Encyclopedia of Arab Names — شِرْبِيني",
+                "author": "Université Sultan Qaboos",
+                "year": 1985,
+                "url": "https://arabiclexicon.hawramani.com/?p=124078",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrée « شِرْبِيني »",
+                "notes": "Encyclopédie des noms arabes de l'université Sultan Qaboos (1985), lue le 14 octobre 2026 sur sa reproduction en ligne du Hawramani Arabic Lexicon, qui n'indique pas les pages du livre. L'entrée dit : « nisba à Shirbīn, ville de la province de Dakahlia, en Égypte » (« نسبة إلى شِرْبِين : مدينة ومرزك في محافظة الدقهلية بمصر »), c'est-à-dire un nom d'appartenance à ce lieu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1727,
+              "to": 1728,
+              "label": "Mort d'Abou Hamed en 1140 de l'hégire (1727-1728)"
+            },
+            "era": "polity",
+            "statement": "Le nom El Sherbini apparaît par écrit sous une forme proche, el Cherbini, dans la traduction française des chroniques d'al-Jabarti : parmi les maîtres d'Abou Hamed, savant mort à Damiette en 1140 de l'hégire (1727-1728), figure « cheikh Salama el Cherbini ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "formAsWritten": "el Cherbini",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Salama el Cherbini",
+                "role": "cheikh, maître d'Abou Hamed de Damiette"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Merveilles biographiques et historiques, ou Chroniques du cheikh Abd-el-Rahman el Djabarti, tome I",
+                "author": "Abd el-Rahman el-Djabarti ; traduction de Chefik Mansour bey, Abdelaziz Kalil bey, Gabriel Nicolas Kalil bey et Iskender Ammoun effendi",
+                "year": 1888,
+                "url": "https://archive.org/details/merveillesbiogra01jaba",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 204-205",
+                "notes": "Le Caire, Imprimerie nationale, 1888. Lu le 14 octobre 2026 sur la copie numérisée d'archive.org, aux pages indiquées. Page 204 : « En 1140, est mort à Damiette le savant imam […] Abou Hamed ». Page 205, la liste de ses maîtres compte « cheikh Salama el Cherbini ». Le texte ne dit pas pourquoi il porte ce nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1768,
+              "to": 1768,
+              "label": "Mort en 1181 de l'hégire (1768)"
+            },
+            "era": "polity",
+            "statement": "Le nom El Sherbini est lié à un lieu dans la même chronique : le cheikh Abd-el-Wahab, descendant d'un certain Daoud el Cherbini, meurt au Caire le 1er zilkadeh 1181 de l'hégire (1768), et son corps est transporté à Cherbine pour être inhumé près de son aïeul. Le texte ne dit pas si le nom vient de ce lieu.",
+            "aspect": "usage",
+            "actors": [
+              {
+                "name": "Abd-el-Wahab, fils de Zein-el-Dine",
+                "role": "cheikh de la famille de Daoud el Cherbini"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Merveilles biographiques et historiques, ou Chroniques du cheikh Abd-el-Rahman el Djabarti, tome II",
+                "author": "Abd al-Rahman al-Jabarti, traduit par Chefik Mansour bey, Abdulaziz Kalil bey, Gabriel Nicolas Kalil bey et Iskender Ammoun effendi",
+                "year": 1889,
+                "url": "https://archive.org/details/merveillesbiogra02jaba",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 305",
+                "notes": "Le Caire, Imprimerie nationale, 1889. Lu le 14 octobre 2026 sur la copie numérisée d'archive.org, aux pages indiquées. Page 305 : le cheikh Abd-el-Wahab, fils de Zein-el-Dine, descendant de « Abou-el-Mafakher Daoud el Cherbini », « mourut au Caire et son corps, transporté à Cherbine, fut inhumé près de son aïeul », la veille de dimanche, 1er zilkadeh de l'an 1181."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sherbini",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Employé aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "Proposée en 1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Sherbini est la forme sans l'article el de El Sherbini ; l'encyclopédie des noms arabes de l'université Sultan Qaboos, qui l'écrit sans article, y voit une nisba, un nom d'appartenance à la ville de Sherbin.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Sultan Qaboos Encyclopedia of Arab Names — شِرْبِيني",
+                "author": "Université Sultan Qaboos",
+                "year": 1985,
+                "url": "https://arabiclexicon.hawramani.com/?p=124078",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrée « شِرْبِيني »",
+                "notes": "Encyclopédie des noms arabes de l'université Sultan Qaboos (1985), lue le 14 octobre 2026 sur sa reproduction en ligne du Hawramani Arabic Lexicon, qui n'indique pas les pages du livre. L'entrée dit : « nisba à Shirbīn, ville de la province de Dakahlia, en Égypte » (« نسبة إلى شِرْبِين : مدينة ومرزك في محافظة الدقهلية بمصر »), c'est-à-dire un nom d'appartenance à ce lieu."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

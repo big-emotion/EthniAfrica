@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "lineage",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -83,8 +83,73 @@
       "reason": "la recherche web combinant « Kanyinda », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de l'article « Luba-Kasai: A Working Bibliography » et sa bibliographie détaillée, n'ont pas établi de lignée homonyme d'origine distincte ni d'autre homonyme documentable."
     },
     {
+      "fieldPath": "nameSystem",
+      "reason": "Kanyinda est un nom de famille : aucune source consultée n'en fait un nom de clan. Le modèle n'a pas de case pour un nom de famille héréditaire de ce genre : la fiche garde la case des noms de clan, la plus proche, avec la lignée pour unité, sans dire que Kanyinda est un clan."
+    },
+    {
       "fieldPath": "transmissionMode",
       "reason": "la recherche web combinant « Kanyinda », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de l'article « Luba-Kasai: A Working Bibliography » et sa bibliographie détaillée, n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kanyinda est un nom de famille de la République démocratique du Congo, porté par des auteurs qui ont écrit sur les Luba du Kasaï. On ne sait pas avec certitude ce qu'il veut dire ni d'où il vient : les sources lues ne le disent pas.",
+    "names": [
+      {
+        "nameText": "Kanyinda",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille congolais porté par des auteurs sur les Luba du Kasaï ; son sens est inconnu.",
+        "periodLabel": "Écrit dès 1988 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2004,
+              "to": 2004,
+              "label": "Publié en 2004"
+            },
+            "era": "modern",
+            "statement": "Le nom Kanyinda figure en 2004 dans la signature de Valentine Kanyinda Muyumba, auteure d'une bibliographie sur les Luba du Kasaï. Les sources lues ne disent ni d'où vient ce nom ni ce qu'il veut dire.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Luba-Kasai: A Working Bibliography",
+                "author": "Valentine Kanyinda Muyumba",
+                "year": 2004,
+                "url": "https://journals.library.columbia.edu/index.php/ejab/article/download/6983/3723/12682",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Electronic Journal of Africana Bibliography, vol. 9, 2004 ; page de titre et résumé de l'article lus sur le site de la revue. Le nom de l'auteure y est écrit Valentine Kanyinda Muyumba. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1988,
+              "to": 1988,
+              "label": "Article de 1988, cité en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Kanyinda apparaît, écrit Kanyinda Lusanga, dans une note du Groupe d'étude sur le Congo qui cite cet auteur d'après un article de Tshibanza Monji et Tshimanga Mulangala sur le trafic de diamant à Mbuji-Mayi avant 1960, publié en 1988. C'est la plus ancienne trace de ce nom que le projet connaît ; elle est de seconde main, et le projet n'a pas lu l'article de 1988. Le nom est plus ancien que cette date.",
+            "formAsWritten": "Kanyinda Lusanga",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Gouverner le Kasaï : État, coutume, territoire, identité",
+                "author": "Groupe d'étude sur le Congo",
+                "year": 2022,
+                "url": "https://cic.nyu.edu/wp-content/uploads/1662/65/crg_governing_the_kasais_february_2022_fr.pdf",
+                "tier": "referenced",
+                "source_kind": "ngo",
+                "page": "note 11, page 17 du PDF",
+                "notes": "Rapport du Groupe d'étude sur le Congo, février 2022, lu en entier. La note 11 renvoie à Kanyinda Lusanga, « cité dans Tshibanza Monji et Tshimanga Mulangala », Cahiers d'actualité de l'Unikis, 1988, p. 2. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

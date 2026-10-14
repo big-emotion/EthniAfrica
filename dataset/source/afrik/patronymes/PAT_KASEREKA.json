@@ -85,5 +85,123 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web combinant « Kasereka », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de le Dictionnaire kinande-français de Kambale Kavutirwaki et Ngessimo M. Mutaka, n'ont pas établi de lignée homonyme d'origine distincte ni d'autre homonyme documentable."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kasereka est, chez les Nande de la République démocratique du Congo, un nom de personne donné au troisième fils d'une famille. À l'origine, ce n'est ni un nom de clan ni un nom de famille. On ne sait pas avec certitude ce qu'il veut dire : les sources lues ne lui donnent pas de sens.",
+    "names": [
+      {
+        "nameText": "Kasereka",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nnb",
+        "namedBy": null,
+        "shortLine": "Un nom d'enfant nande, donné au troisième fils ; ce n'était pas un nom de famille.",
+        "periodLabel": "Écrit dès 2012 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "Décrit en 2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Kasereka est un nom que les Nande donnent au troisième fils. Le dictionnaire kinande-français le dit équivalent de Kábúyahia, Máte et Kámatê, et il ne lui donne pas de sens.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionnaire kinande-français avec index français-kinande",
+                "author": "Kambale Kavutirwaki et Ngessimo M. Mutaka",
+                "year": 2012,
+                "url": "https://www.africamuseum.be/sites/default/files/media/docs/research/publications/rmca/online/documents-social-sciences-humanities/dictionnaire-kinande-francais.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 125",
+                "notes": "Tervuren, Musée royal de l'Afrique centrale, 2012, lu en ligne. À la page 125, l'entrée Kaseréka le définit comme « nom chronologique nande donné au troisième enfant mâle » ; la page 124 renvoie à lui dans l'entrée Kámatê. Le sens du nom n'y est pas donné. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "Décrit en 2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Kasereka est un nom d'enfant : selon le pasteur Kamate Basolene, cité par le dictionnaire, on le porte enfant, puis on devient Mate une fois adulte ou marié, et Kimate quand on devient grand-père. Les sources lues ne disent pas comment il est devenu un nom de famille.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionnaire kinande-français avec index français-kinande",
+                "author": "Kambale Kavutirwaki et Ngessimo M. Mutaka",
+                "year": 2012,
+                "url": "https://www.africamuseum.be/sites/default/files/media/docs/research/publications/rmca/online/documents-social-sciences-humanities/dictionnaire-kinande-francais.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 124",
+                "notes": "Tervuren, Musée royal de l'Afrique centrale, 2012, lu en ligne. À la page 124, l'entrée Kámatê cite le pasteur Kamate Basolene, du Campus pour Christ de Yaoundé, sur l'usage de Kamate et de Kasereka. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "Dictionnaire de 2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Kasereka apparaît par écrit dans le dictionnaire kinande-français de 2012, à l'entrée Kaseréka et dans le texte de l'entrée Kámatê. C'est la plus ancienne trace de ce nom que le projet connaît ; le dictionnaire décrit un usage nande déjà établi, donc plus ancien que lui.",
+            "formAsWritten": "Kasereka",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionnaire kinande-français avec index français-kinande",
+                "author": "Kambale Kavutirwaki et Ngessimo M. Mutaka",
+                "year": 2012,
+                "url": "https://www.africamuseum.be/sites/default/files/media/docs/research/publications/rmca/online/documents-social-sciences-humanities/dictionnaire-kinande-francais.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 124-125",
+                "notes": "Tervuren, Musée royal de l'Afrique centrale, 2012, lu en ligne. Le texte de l'entrée Kámatê (p. 124) écrit Kasereka sans accent ; l'entrée Kaseréka (p. 125) l'écrit avec l'accent ; l'index français-kinande renvoie de Kasereka à Kaseréka. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kaseréka",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nnb",
+        "namedBy": null,
+        "shortLine": "L'écriture du dictionnaire, avec un accent sur le e ; c'est le même nom.",
+        "periodLabel": "Écrit en 2012",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "Dictionnaire de 2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Kaseréka est l'écriture que donne le dictionnaire kinande-français pour l'entrée de ce nom, avec un accent sur le e qui précède le ka. Le dictionnaire renvoie de la forme sans accent, Kasereka, à cette entrée.",
+            "aspect": "usage",
+            "formAsWritten": "Kaseréka",
+            "sources": [
+              {
+                "title": "Dictionnaire kinande-français avec index français-kinande",
+                "author": "Kambale Kavutirwaki et Ngessimo M. Mutaka",
+                "year": 2012,
+                "url": "https://www.africamuseum.be/sites/default/files/media/docs/research/publications/rmca/online/documents-social-sciences-humanities/dictionnaire-kinande-francais.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 125",
+                "notes": "Tervuren, Musée royal de l'Afrique centrale, 2012, lu en ligne. Entrée Kaseréka, p. 125 ; l'index français-kinande renvoie de Kasereka à Kaseréka. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

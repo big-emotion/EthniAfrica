@@ -100,5 +100,132 @@
       "fieldPath": "countries",
       "reason": "Les sources propres à « Mahmoud » n'ont pas confirmé les pays où il est porté ; les recherches par pays n'ont pas livré de registre officiel directement exploitable pour cette fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mahmoud est un nom personnel arabe, que l'on porte aussi comme nom de famille, surtout en Égypte et au Soudan. Ce n'est pas un nom de clan. Il veut dire « loué, digne de louanges », et c'est l'un des noms du prophète de l'islam. Sa plus ancienne trace écrite que nous connaissons est celle d'un prince que cite le chroniqueur égyptien Djabarti.",
+    "names": [
+      {
+        "nameText": "Mahmoud",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel arabe, « loué », porté aussi comme nom de famille en Égypte ; ce n'est pas un nom de clan.",
+        "periodLabel": "Cité au temps des derniers califes fatimides par Djabarti ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mahmoud est un nom de famille musulman, porté surtout en Égypte et au Soudan, selon le Dictionary of American Family Names, qui le donne comme variante de Mahmud. Le site Behind the Name y voit un nom de famille arabe et persan, formé sur le nom personnel Mahmud. Ce n'est pas un nom de clan.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Mahmoud",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/mahmoud?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 14 octobre 2026 ; le site affiche une traduction française. La notice dit : « Musulman (principalement Égypte et Soudan) : variante de Mahmud. »"
+              },
+              {
+                "title": "Meaning, origin and history of the surname Mahmoud — Behind the Name",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://surnames.behindthename.com/name/mahmoud",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site d'onomastique en ligne, lu le 14 octobre 2026. Entrée mise à jour le 26 mai 2026 : nom de famille « From the given name Mahmud », écrit محمود, d'usage arabe et persan, avec les variantes Mahmud et Mahmoudi."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1860,
+              "to": 2022,
+              "label": "Décrit en 1860 et en 2022"
+            },
+            "statement": "Le nom Mahmoud veut dire « loué, comblé de louanges, digne d'éloges » : c'est un nom d'homme, et l'un des noms du prophète de l'islam, selon le dictionnaire de Kazimirski. Le Dictionary of American Family Names le rattache au mot arabe maḥmūd, « louable », dérivé d'un verbe qui veut dire « louer ».",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionnaire arabe-français, tome 1",
+                "author": "Albert de Biberstein Kazimirski",
+                "year": 1860,
+                "url": "https://archive.org/details/dictionnairearab01bibeuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 489",
+                "notes": "Paris, Maisonneuve, 1860. Lu sur l'exemplaire numérisé d'archive.org le 14 octobre 2026. Page 489 : « Loué, comblé de louanges, digne d'éloges. S'emploie comme n. pr. d'homme, Mahmoud ; entre autres, c'est un des noms de Mahomet »."
+              },
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Mahmud",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/mahmud?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 14 octobre 2026 ; le site affiche une traduction française. La notice dit : « Musulman (principalement le Bangladesh) : d'un nom personnel basé sur l'arabe maḥmūd « louable » (un dérivé de ḥamida « à louer » ; voir également Muhammad). »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1696,
+              "to": 1696,
+              "label": "1696 (1108 de l'hégire)"
+            },
+            "era": "polity",
+            "statement": "Le nom Mahmoud est donné à un enfant né au sultan ottoman en 1108 de l'hégire : le Caire reçoit l'ordre de pavoiser ses rues pour cette naissance, selon la chronique de Djabarti.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Merveilles biographiques et historiques, ou Chroniques du cheikh Abd-el-Rahman el Djabarti, tome I",
+                "author": "Abd el-Rahman el-Djabarti ; traduction de Chefik Mansour bey, Abdelaziz Kalil bey, Gabriel Nicolas Kalil bey et Iskender Ammoun effendi",
+                "year": 1888,
+                "url": "https://archive.org/details/merveillesbiogra01jaba",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 64",
+                "notes": "Le Caire, Imprimerie nationale, 1888. Chronique égyptienne écrite par un lettré du Caire, lue dans la traduction française sur l'exemplaire numérisé d'archive.org le 14 octobre 2026. Page 64 : « Le 13 Rabi Awel 1108 on reçut l'ordre de pavoiser les rues du Caire en l'honneur de la naissance, au Sultan, d'un enfant qui fut nommé Mahmoud. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Au temps des derniers califes fatimides, selon Djabarti"
+            },
+            "era": "polity",
+            "statement": "Le nom Mahmoud apparaît par écrit dans la chronique du Caire de Djabarti, qui le donne à Nour-el-Din Mahmoud ibn Zinki, le prince qui, au temps des derniers califes fatimides, envoie une armée conquérir l'Égypte. C'est la plus ancienne trace de ce nom que le projet connaît ; elle est de seconde main, car Djabarti écrit bien après ces événements, et le nom est plus ancien que sa chronique.",
+            "formAsWritten": "Mahmoud",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Nour-el-Din Mahmoud ibn Zinki",
+                "role": "porte ce nom dans la chronique"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Merveilles biographiques et historiques, ou Chroniques du cheikh Abd-el-Rahman el Djabarti, tome I",
+                "author": "Abd el-Rahman el-Djabarti ; traduction de Chefik Mansour bey, Abdelaziz Kalil bey, Gabriel Nicolas Kalil bey et Iskender Ammoun effendi",
+                "year": 1888,
+                "url": "https://archive.org/details/merveillesbiogra01jaba",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 31",
+                "notes": "Le Caire, Imprimerie nationale, 1888. Chronique égyptienne écrite par un lettré du Caire, lue dans la traduction française sur l'exemplaire numérisé d'archive.org le 14 octobre 2026. Page 31, résumé de l'histoire des rois d'Égypte : « Nour-el-Din Mahmoud ibn Zinki, qui luttait dans ce pays contre eux, envoya Assad-el-Din-Chircawa à la tête d'une armée pour faire la conquête de l'Egypte », au temps des derniers califes fatimides."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

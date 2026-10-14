@@ -6,7 +6,7 @@
   },
   "id": "PAT_DOSSOU",
   "nameMain": "Dossou",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Dossou",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -87,12 +87,103 @@
       "reason": "Les recherches « Dossou homonym etymology » et « Dossou surname origin other language » n'ont pas établi une graphie identique d'origine distincte."
     },
     {
-      "fieldPath": "transmissionMode",
-      "reason": "La page Forebears atteste une distribution du nom, mais ni elle ni les recherches « Dossou family name inheritance » ne décrivent sa règle de transmission."
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom de naissance dahoméen, donné au garçon né après des jumeaux. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
-      "fieldPath": "designatedSocialUnit",
-      "reason": "Les sources consultées ne permettent pas de déterminer si Dossou désigne historiquement un lignage, un clan ou une autre unité sociale."
+      "fieldPath": "transmissionMode",
+      "reason": "La page Forebears atteste une distribution du nom, mais ni elle ni les recherches « Dossou family name inheritance » ne décrivent sa règle de transmission."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Dossou est d'abord un nom de naissance : au Dahomey, on le donne au garçon né après des jumeaux. Sa plus ancienne trace écrite que le projet connaisse est la forme Dosu, notée par Richard Burton dans un récit publié en 1864. Les sources lues ne disent pas depuis quand ce nom passe de père en fils, ni d'où vient le mot lui-même.",
+    "names": [
+      {
+        "nameText": "Dossou",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de naissance fon, donné au garçon né après des jumeaux.",
+        "periodLabel": "Une forme proche écrite dès 1864 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "aspect": "meaning",
+            "statement": "Le nom Dossou, écrit Dosu par les voyageurs britanniques du XIXe siècle, est un nom de naissance : au Dahomey, on le donne au garçon né après des jumeaux, selon Richard Burton (1864) et J. A. Skertchly (1874). On ne sait pas avec certitude d'où vient le mot lui-même : ces deux auteurs n'en disent pas plus.",
+            "sources": [
+              {
+                "title": "A Mission to Gelele, King of Dahome, vol. I",
+                "author": "Richard F. Burton",
+                "year": 1864,
+                "url": "https://archive.org/details/amissiontogelel00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 151",
+                "notes": "Londres, Tinsley Brothers, 1864. Lu en fac-similé. L'auteur est un consul britannique en mission auprès du roi d'Abomey ; il est cité pour les formes qu'il écrit et ce qu'on lui rapporte. Page 151, note de bas de page : « Dosu is the general name of a boy born after twins », à propos de l'hôte des voyageurs à Toli, Antonio Dosu, dit Dosu Yevo. Lu le 14 octobre 2026."
+              },
+              {
+                "title": "Dahomey as it is: being a narrative of eight months' residence in that country",
+                "author": "J. A. Skertchly",
+                "year": 1874,
+                "url": "https://archive.org/details/dahomeyasitisbei00sker",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 518",
+                "notes": "Londres, Chapman and Hall, 1874. Lu en fac-similé. L'auteur est un voyageur britannique qui a vécu huit mois à Abomey ; il est cité pour les formes qu'il écrit et ce qu'on lui rapporte. Page 518, glossaire des mots et titres dahoméens : « Dosu, the name given to the first son born after twins ». Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1708,
+              "to": 1728,
+              "label": "Règne du roi Agaja, 1708-1728 selon Skertchly"
+            },
+            "era": "polity",
+            "statement": "Le nom Dosu figure aussi dans la liste des noms forts du roi Agaja d'Abomey : « Dosu deh Menu », « Dosu coupera tous ses ennemis », selon J. A. Skertchly. L'auteur ne dit pas si ce nom est le même que celui du garçon né après des jumeaux.",
+            "sources": [
+              {
+                "title": "Dahomey as it is: being a narrative of eight months' residence in that country",
+                "author": "J. A. Skertchly",
+                "year": 1874,
+                "url": "https://archive.org/details/dahomeyasitisbei00sker",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 450",
+                "notes": "Londres, Chapman and Hall, 1874. Lu en fac-similé. L'auteur est un voyageur britannique qui a vécu huit mois à Abomey ; il est cité pour les formes qu'il écrit et ce qu'on lui rapporte. Page 450, chapitre sur la constitution dahoméenne, liste des rois : pour « Agajah, 1708-1728 », les noms forts dont « Dosu deh Menu (Dosu will cut down all his enemies) ». Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1864,
+              "to": 1864,
+              "label": "Récit publié en 1864"
+            },
+            "era": "polity",
+            "statement": "Le nom Dossou apparaît sous une forme proche, Dosu, chez Richard Burton. Sur la route d'Abomey, il loge à Toli chez Antonio Dosu, dit Dosu Yevo, « l'homme blanc né après des jumeaux », et note que Dosu est le nom général d'un garçon né après des jumeaux. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un voyageur l'a noté, pas depuis quand des familles le portent.",
+            "formAsWritten": "Dosu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Mission to Gelele, King of Dahome, vol. I",
+                "author": "Richard F. Burton",
+                "year": 1864,
+                "url": "https://archive.org/details/amissiontogelel00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 151",
+                "notes": "Londres, Tinsley Brothers, 1864. Lu en fac-similé. L'auteur est un consul britannique en mission auprès du roi d'Abomey ; il est cité pour les formes qu'il écrit et ce qu'on lui rapporte. Page 151 : « We found lodgings at the house of Antonio Dosu, known as Dosu Yevo, or the \"after-twin white man\" » ; note : « Dosu is the general name of a boy born after twins : he is called Yevo, or white man, from having been educated in a civilised manner at Bahia. » Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

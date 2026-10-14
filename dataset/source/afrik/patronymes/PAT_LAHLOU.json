@@ -104,5 +104,109 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les recherches « Lahlou lignée », « Lahlou clan », « Lahlou tribe » et « Lahlou place name » n’ont pas permis de déterminer si cette graphie désigne une lignée, un clan, une caste, une classe d’âge ou un établissement dans le contexte précis de la fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Lahlou est un nom de famille marocain, qui voudrait dire « le doux ». Une étude de 1964 le range parmi les noms de familles musulmanes de Fès qu'elle dit d'origine juive. On ne sait pas avec certitude comment la famille l'a reçu ; nous présentons plus bas les explications relevées.",
+    "names": [
+      {
+        "nameText": "Lahlou",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille de Fès qui voudrait dire « le doux » ; une étude de 1964 le dit d'origine juive.",
+        "periodLabel": "Écrit dès 1964",
+        "accounts": [
+          {
+            "period": {
+              "from": 1964,
+              "to": 1964,
+              "label": "Décrit en 1964"
+            },
+            "era": "modern",
+            "statement": "Le nom Lahlou veut dire « le doux », selon David Corcos, qui le range en 1964 parmi les noms de familles musulmanes de commerçants de Fès dont les noms sont, écrit-il, nettement juifs ou signes d'une origine juive.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Jews of Morocco under the Marinides (Continued)",
+                "author": "David Corcos",
+                "year": 1964,
+                "url": "https://mellahdefes.fr/resources/Documents/juifs-maroc-sous-Merinides.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 62, note 67",
+                "notes": "The Jewish Quarterly Review, vol. 55, n° 1, juillet 1964, p. 53-81 (University of Pennsylvania Press). Lu le 14 octobre 2026 dans une copie non officielle de l'article, déposée sur un site consacré au mellah de Fès. Page 62 : « Moslem families in Fez with a long-standing tradition of commerce generally bear family names which are either obviously Jewish or which indicate a Jewish origin », dont Lahlou, avec la note 67 : « Lahlou means the sweet. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1964,
+              "to": 1964,
+              "label": "Étude de 1964"
+            },
+            "era": "modern",
+            "statement": "Le nom Lahlou apparaît par écrit dans l'étude de David Corcos sur les juifs du Maroc sous les Mérinides, publiée en 1964 : il y figure parmi les exemples de noms de familles musulmanes de Fès que l'auteur dit d'origine juive. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un chercheur l'a noté, pas depuis quand des familles le portent.",
+            "formAsWritten": "Lahlou",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Jews of Morocco under the Marinides (Continued)",
+                "author": "David Corcos",
+                "year": 1964,
+                "url": "https://mellahdefes.fr/resources/Documents/juifs-maroc-sous-Merinides.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 62",
+                "notes": "The Jewish Quarterly Review, vol. 55, n° 1, juillet 1964, p. 53-81 (University of Pennsylvania Press). Lu le 14 octobre 2026 dans une copie non officielle de l'article, déposée sur un site consacré au mellah de Fès. Page 62 : « Moslem families in Fez with a long-standing tradition of commerce generally bear family names which are either obviously Jewish or which indicate a Jewish origin », dont Lahlou, avec la note 67 : « Lahlou means the sweet. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1964,
+              "to": 1964,
+              "label": "Proposé en 1964"
+            },
+            "era": "modern",
+            "statement": "Le nom Lahlou aurait été donné à ces familles parce que, dit-on, elles vivaient à l'origine à « el-har » (« l'amer »), près du « Fondouq al-yhoudi » (« l'entrepôt du juif »), avant la création du mellah, le quartier juif de l'ancien Fès, selon David Corcos, qui renvoie à Louis Massignon.",
+            "hypothesisGroup": "origine du nom Lahlou",
+            "sources": [
+              {
+                "title": "The Jews of Morocco under the Marinides (Continued)",
+                "author": "David Corcos",
+                "year": 1964,
+                "url": "https://mellahdefes.fr/resources/Documents/juifs-maroc-sous-Merinides.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 62, note 67",
+                "notes": "The Jewish Quarterly Review, vol. 55, n° 1, juillet 1964, p. 53-81 (University of Pennsylvania Press). Lu le 14 octobre 2026 dans une copie non officielle de l'article, déposée sur un site consacré au mellah de Fès. Note 67 : « Lahlou means the sweet. They were apparently so called because originally they were said to have lived in 'el-har' (the bitter), near the 'Fondouq al-yhoudi', (the warehouse of the Jew), where, before the forming of the Mellah, the Jewish quarters of ancient Fez were situated. cf. Massignon, op. cit. p. 151. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2017,
+              "to": 2018,
+              "label": "Proposé en 2017 et en 2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Lahlou viendrait de l'arabe ḥulw, « doux » ou « agréable, charmant », employé surtout en arabe marocain, selon Behind the Name.",
+            "hypothesisGroup": "origine du nom Lahlou",
+            "sources": [
+              {
+                "title": "User-submitted surname Lahlou — Behind the Name",
+                "author": "Behind the Name",
+                "year": 2018,
+                "url": "https://surnames.behindthename.com/name/lahlou/submitted",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice contributive. Lu le 14 octobre 2026; ajoutée le 18 avril 2017, modifiée le 25 septembre 2018 par un contributeur qui signe « HL ». Elle donne le sens « sweet » ou « nice, charming », surtout en arabe marocain, et les formes Lehlou et Lahlouh. Cette notice n'a pas de référence savante : elle est citée pour ce qu'elle dit, jamais seule."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

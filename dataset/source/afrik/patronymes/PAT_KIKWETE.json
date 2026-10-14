@@ -84,5 +84,42 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web combinant « Kikwete », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de la biographie officielle en swahili de Jakaya Mrisho Kikwete et les recherches ciblées « Kikwete Zaramo clan surname origin », n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kikwete est porté en Tanzanie ; la présidence l'écrit dans le nom d'un ancien président. Les sources lues ne disent pas ce qu'il veut dire, de quel peuple ou de quel lignage il vient, ni depuis quand il est écrit : on ne sait pas avec certitude.",
+    "names": [
+      {
+        "nameText": "Kikwete",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom porté en Tanzanie ; son sens, son origine et sa première trace restent inconnus.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kikwete est porté en Tanzanie. La présidence l'écrit dans le nom de Jakaya Mrisho Kikwete, ancien président, né le 7 octobre 1950 à Msoga, dans la région de Pwani. Sa biographie ne dit ni ce que veut dire le nom, ni à quel peuple ou à quel lignage il se rattache.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Wasifu: Dkt Jakaya Mrisho Kikwete",
+                "author": "Ikulu, présidence de la République unie de Tanzanie",
+                "year": null,
+                "url": "https://www.ikulu.go.tz/administration/profile/1",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Biographie en swahili du site officiel de la présidence, relue le 14 octobre 2026 : « Rais Mstaafu Dkt. Jakaya Mrisho Kikwete alizaliwa tarehe 7 Oktoba mwaka 1950 Msoga, mkoa wa Pwani ». Elle ne mentionne ni l'origine du nom, ni son sens, ni un peuple."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

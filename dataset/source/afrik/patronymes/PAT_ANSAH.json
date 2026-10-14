@@ -6,17 +6,20 @@
   },
   "id": "PAT_ANSAH",
   "nameMain": "Ansah",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Ansah",
       "attestations": [
-        { "countryId": "GHA", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "GHA",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -72,8 +75,95 @@
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues le disent un nom de personne akan. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
+    },
+    {
       "fieldPath": "transmissionMode",
-      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+      "reason": "Le nom Ansah est d'abord un nom de personne akan : nous ne documentons pas encore comment il passe d'une génération à l'autre comme nom de famille."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ansah est un nom de personne akan du Ghana, que le livre de Christaller de 1881 écrit Ansã. Les sources lues ne disent pas ce qu'il veut dire : on ne sait pas avec certitude d'où il vient.",
+    "names": [
+      {
+        "nameText": "Ansah",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne akan du Ghana, écrit Ansã dès 1881 ; son sens reste inconnu.",
+        "periodLabel": "Forme proche Ansã dès 1881 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "Liste des fonctionnaires de 1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ansah est porté en 1921 par au moins quatre employés de l'administration de la colonie de la Côte-de-l'Or, dont un commis du Trésor, un employé des douanes, un typographe du chemin de fer et un commis payeur du régiment de la Côte-de-l'Or.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Gold Coast Colony. Blue Book 1921",
+                "author": "Gouvernement de la colonie de la Côte-de-l'Or (Accra)",
+                "year": 1921,
+                "url": "https://archive.org/details/blue-book-gold-coast-1921",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 134",
+                "notes": "Registre annuel de la colonie, avec la liste de ses fonctionnaires ; exemplaire numérisé sur archive.org. Lu le 14 octobre 2026. Page 134, liste alphabétique des fonctionnaires : « Ansah, J. » (commis de 1re classe, Trésor), « Ansah, J. K. » (employé de 1re classe, douanes), « Ansah, J. D. » (typographe, chemin de fer) et « Ansah, W. B. » (commis payeur, régiment de la Côte-de-l'Or). Les noms sont écrits ainsi : famille d'abord, puis initiales."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1726,
+              "to": 1733,
+              "label": "Règne indiqué pour 1726-1733, dans un livre de 1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Ansã, forme proche du nom Ansah, figure dans la liste des rois d'Akwamu que donne Johann Gottlieb Christaller : « Akwanno (Ansã Sasaraku ?) », avec les dates 1726-1733. Le point d'interrogation est le sien.",
+            "aspect": "usage",
+            "formAsWritten": "Ansã",
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 643",
+                "notes": "Bâle, Evangelical Missionary Society, 1881 ; exemplaire numérisé sur archive.org. Lu le 14 octobre 2026. Page 643, n° 27 « Akwamu », « Some of the Kings of Akwam » : « Akwanno (Ansã Sasaraku ?) 1726-33 ». Les dates sont lues sur l'image de la page. Missionnaire de Bâle, cité pour les formes qu'il écrit."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Décrit en 1881"
+            },
+            "statement": "Le nom Ansah apparaît par écrit sous une forme proche, Ansã, dans le dictionnaire de Johann Gottlieb Christaller : la liste des noms de personnes akan la cite sans explication, et l'auteur note que de beaucoup de ces noms le sens premier n'est pas connu. C'est la plus ancienne trace de cette forme que le projet connaît ; on ne sait pas avec certitude ce que le nom veut dire, et il est plus ancien qu'elle.",
+            "formAsWritten": "Ansã",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 667",
+                "notes": "Bâle, Evangelical Missionary Society, 1881 ; exemplaire numérisé sur archive.org. Lu le 14 octobre 2026. Annexe G, « Proper Names of Persons », p. 666-667 : chacun porte d'ordinaire deux noms, dont l'un dit le jour de naissance ; l'auteur note que de beaucoup de ces noms le sens premier n'est pas connu. Page 667 : « Asã. Ansã. Sã. Sabu. » ; le h final de Ansah est absent, comme chez les autres noms de cette liste. Missionnaire de Bâle, cité pour les formes qu'il écrit."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

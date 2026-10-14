@@ -1217,6 +1217,59 @@ export function checkRetiredIdentifiers(datasetRoot: string): ValidationResult {
 }
 
 /**
+ * FR27 – The patronyme ledger drives the same redirects as the people one
+ * (next.config.ts) and the same prune, yet nothing checked it: a retired
+ * dossier left on disk, or a successor that was never written, only surfaced
+ * as a broken redirect or a row the database kept for good.
+ */
+export function checkRetiredPatronymes(datasetRoot: string): ValidationResult {
+  const directory = path.join(datasetRoot, "patronymes");
+  const { entries, error } = loadRetiredIdentifiers(directory);
+  if (error)
+    return { ok: false, errors: [`patronymes/${error}`], warnings: [] };
+
+  const dossiers = new Set(
+    fs.existsSync(directory)
+      ? fs
+          .readdirSync(directory)
+          .filter((file) => /^PAT_[A-Z0-9_]+\.json$/.test(file))
+          .map((file) => path.basename(file, ".json"))
+      : []
+  );
+  const where = `patronymes/${RETIRED_IDENTIFIERS_LEDGER}`;
+  const errors: string[] = [];
+
+  entries.forEach(({ decision, retiredId, successorId }, index) => {
+    if (typeof retiredId !== "string" || !/^PAT_[A-Z0-9_]+$/.test(retiredId)) {
+      errors.push(`${where}[${index}]: retiredId must be a PAT_ identifier`);
+      return;
+    }
+    if (dossiers.has(retiredId)) {
+      errors.push(
+        `${where}: ${retiredId} is retired but its dossier is still on disk`
+      );
+    }
+    if (decision === "withdrawn") return;
+    if (typeof successorId !== "string" || !dossiers.has(successorId)) {
+      errors.push(
+        `${where}: ${retiredId} → ${String(successorId)}, but the successor has no dossier`
+      );
+    }
+  });
+
+  const successors = retiredSuccessors(directory);
+  for (const [retiredId, successorId] of successors) {
+    if (successors.has(successorId)) {
+      errors.push(
+        `${where}: ${retiredId} → ${successorId}, but the successor is itself retired — a redirect must land in one hop`
+      );
+    }
+  }
+
+  return { ok: errors.length === 0, errors, warnings: [] };
+}
+
+/**
  * FR27 – Every people reference the corpus declares resolves to a fiche, or to
  * a retired id whose successor does. Countries, families, relations, name
  * dossiers, migrations, patronyms and onomastic systems all name peoples, and
@@ -2533,7 +2586,9 @@ export function checkSourceIdentity(datasetRoot: string): ValidationResult {
 // wave 10, took its Factbook citation with it.
 // 121 -> 119 the same day: the Yerima and Kirdi fiches, retired after wave 12,
 // took their Factbook citations with them.
-export const RETIRED_CIA_FACTBOOK_URL_CEILING = 119;
+// 119 -> 115 on 2026-10-14: the people fiches of waves 14 to 19 folded or
+// withdrawn that day took four Factbook citations with them.
+export const RETIRED_CIA_FACTBOOK_URL_CEILING = 115;
 
 const LIVE_CIA_FACTBOOK =
   /cia\.gov\/(?:library\/publications\/)?the-world-factbook/i;
@@ -4474,7 +4529,11 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // PPL_MUWALLADEEN.
   // 6285 -> 6249 the same day: the Khainai, Koyra, Yerima and Kirdi fiches of
   // wave 12 were folded or retired with the keys they lacked.
-  peuple: 6249,
+  // 6249 -> 6049 on 2026-10-14: twenty-one people fiches of waves 14 to 19,
+  // folded or withdrawn, left with the model keys they lacked.
+  // 6049 -> 6039 on 2026-10-14: PPL_NABT, folded into PPL_NABDAM, left with
+  // the model keys it lacked.
+  peuple: 6039,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next
@@ -5183,6 +5242,12 @@ async function main() {
   newChecks.push({
     name: "FR27 Retired identifiers",
     result: checkRetiredIdentifiers(datasetRoot),
+  });
+
+  console.log("FR27 – Retired patronymes ledger...");
+  newChecks.push({
+    name: "FR27 Retired patronymes",
+    result: checkRetiredPatronymes(datasetRoot),
   });
 
   console.log("FR27 – People references resolve...");

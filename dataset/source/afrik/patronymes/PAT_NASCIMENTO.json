@@ -86,5 +86,162 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Nascimento à un peuple en Angola. Nous n'avons pas encore consulté de source consacrée à ce nom. Les exemples de noms portugais cités pour les créoles de Guinée-Bissau ne suffisent pas à expliquer leur usage en Angola."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Nascimento est un nom de famille portugais, porté aussi en Angola. Le mot portugais veut dire « naissance » : un linguiste le range parmi les noms religieux, tirés de la naissance du Christ. On ne sait pas avec certitude depuis quand ni comment il est arrivé en Angola.",
+    "names": [
+      {
+        "nameText": "Nascimento",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Un nom de famille portugais religieux, tiré de la naissance du Christ, porté aussi en Angola.",
+        "periodLabel": "Écrit au Portugal dès 1792 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Décrit en 1928"
+            },
+            "statement": "Le nom Nascimento est un nom religieux portugais : José Leite de Vasconcelos le range, avec Natal et Natividade, parmi les noms tirés d'une fête ou d'un moment de la vie du Christ ou de la Vierge, et il le glose « de Cristo ». Le mot portugais nascimento veut dire « naissance ».",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 139-140",
+                "notes": "Traité publié à Lisbonne en 1928 ; exemplaire numérisé sur archive.org. La page citée est celle du livre, imprimée en tête de page. Page 139 : liste des noms religieux du XIXe et du XXe siècle, avec « Nascimento (de Cristo) », « Natal », « Natividade (da Virgem) » ; page 140 : ce sont tantôt des noms de saints, tantôt des invocations de la Vierge et du Christ, ou des allusions à leur vie. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Proposée en 1928"
+            },
+            "statement": "Le nom Nascimento viendrait d'un nom donné à un enfant né le jour ou la nuit de Noël, selon le linguiste José Leite de Vasconcelos. Il cite Salvador do Nascimento, né le jour de Noël, ainsi que Maria et José do Nascimento, nés la nuit de Noël.",
+            "hypothesisGroup": "origine du nom Nascimento",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 141",
+                "notes": "Traité publié à Lisbonne en 1928 ; exemplaire numérisé sur archive.org. La page citée est celle du livre, imprimée en tête de page. Page 141 : liste de noms modernes, sous le titre « Nascimento, ou baptismo » (jour de la naissance ou du baptême), dont Salvador, Maria et José do Nascimento, dont l'auteur dit s'être informé auprès de chaque personne. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Proposée en 1928"
+            },
+            "statement": "Le nom Nascimento serait l'un des noms religieux que prenaient les frères et les religieuses à la place de leur nom de famille, avant de passer dans la vie civile, selon José Leite de Vasconcelos. Il rappelle cet usage des couvents pour expliquer la propagation de ces noms, dont Nascimento est un exemple de sa liste.",
+            "hypothesisGroup": "origine du nom Nascimento",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 139, 147",
+                "notes": "Traité publié à Lisbonne en 1928 ; exemplaire numérisé sur archive.org. La page citée est celle du livre, imprimée en tête de page. Page 139 : les frères et les religieuses échangeaient le nom de famille contre un nom religieux, ce qui a contribué à propager ces noms dans la vie civile ; Nascimento est dans la liste qui suit. Page 147 : Francisco Manuel do Nascimento, nom civil d'un poète des XVIIIe et XIXe siècles, dont la seconde partie est « nome religioso ». Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1978,
+              "to": 1978,
+              "label": "Entretien de 1978"
+            },
+            "era": "modern",
+            "statement": "Le nom Nascimento est porté en Angola : la revue The Black Scholar publie en 1978 un entretien avec le premier ministre de la République populaire d'Angola, Lopo Do Nascimento. On ne sait pas avec certitude depuis quand ni comment ce nom portugais y est arrivé.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "An Interview with Prime Minister Lopo Do Nascimento, of the People's Republic of Angola",
+                "author": "Robert F. Van Lierop",
+                "year": 1978,
+                "url": "https://doi.org/10.1080/00064246.1978.11414027",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 19-25",
+                "notes": "The Black Scholar, vol. 9, n° 10, juillet 1978. Seule la notice du registre Crossref a été lue ; l'article lui-même n'a pas été ouvert. Le titre dit que l'entretien est avec Lopo Do Nascimento, premier ministre de la République populaire d'Angola. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1792,
+              "to": 1796,
+              "label": "1792-1796"
+            },
+            "statement": "Le nom Nascimento apparaît au Portugal dans le nom de l'auteur du Côro das Musas, Nascimento Silveira, publié à Lisbonne en quatre tomes de 1792 à 1796, selon José Leite de Vasconcelos qui cite l'ouvrage. C'est la plus ancienne trace de ce nom que le projet connaît ; elle ne dit rien de son arrivée en Angola.",
+            "formAsWritten": "Nascimento Silveira",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 8",
+                "notes": "Traité publié à Lisbonne en 1928 ; exemplaire numérisé sur archive.org. La page citée est celle du livre, imprimée en tête de page. Page 8 : « o Côro das Musas, de Nascimento Silveira, 4 tomos, Lisboa 1792-1796 », cité comme source de notes généalogiques ; l'ouvrage lui-même n'a pas été ouvert. Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "do Nascimento",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "La forme du nom Nascimento avec « do », qui veut dire « de la », comme dans Maria do Nascimento.",
+        "periodLabel": "Écrit dès 1928 ; porté aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Décrit en 1928"
+            },
+            "statement": "Le nom do Nascimento est le nom Nascimento précédé de do, « de la » : José Leite de Vasconcelos l'écrit ainsi dans Maria do Nascimento, José do Nascimento et Francisco Manuel do Nascimento. C'est la plus ancienne trace de cette forme que le projet connaît.",
+            "formAsWritten": "do Nascimento",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 141, 147",
+                "notes": "Traité publié à Lisbonne en 1928 ; exemplaire numérisé sur archive.org. La page citée est celle du livre, imprimée en tête de page. Page 141 : « Maria do Nascimento, José do Nascimento : nascidos na noite de Natal » ; page 147 : « Francisco Manuel do Nascimento, nome civil de um poeta do sec. XVIII-XIX ». Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

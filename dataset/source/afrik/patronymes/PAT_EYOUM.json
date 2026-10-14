@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "lineage",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -76,8 +76,72 @@
       "reason": "la recherche web combinant « Eyoum », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », qui comprenait le terme « homonyme », et la lecture de « PeupleSawa.com — Profils E », n'ont pas établi de lignée homonyme d'origine distincte."
     },
     {
+      "fieldPath": "nameSystem",
+      "reason": "Eyoum est un nom de famille : aucune source consultée n'en fait un nom de clan. Le modèle n'a pas de case pour un nom de famille héréditaire de ce genre : la fiche garde la case des noms de clan, la plus proche, avec la lignée pour unité, sans dire que Eyoum est un clan."
+    },
+    {
       "fieldPath": "transmissionMode",
       "reason": "la recherche web combinant « Eyoum », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la lecture de « PeupleSawa.com — Profils E » n'ont établi aucune règle propre à Eyoum permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Eyoum est un nom du Cameroun, porté aujourd'hui par des familles qui se disent douala ou sawa. On ne sait pas avec certitude ce qu'il veut dire : les sources lues ne le disent pas. Sa plus ancienne trace écrite connue est une pétition à l'ONU de 1950.",
+    "names": [
+      {
+        "nameText": "Eyoum",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom du Cameroun, porté par des familles qui se disent douala ou sawa.",
+        "periodLabel": "Écrit dès 1950 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2026,
+              "to": 2026,
+              "label": "Profils consultés en 2026"
+            },
+            "era": "modern",
+            "statement": "Le nom Eyoum est porté par plusieurs visiteurs du site PeupleSawa, qui se disent douala, sawa ou d'origine camerounaise ; l'un rattache sa famille à Bona Ekwalla, à Deido, et un autre écrit Eyoum deux fois dans la suite de ses ancêtres. Ces profils ne disent pas ce que veut dire le nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "PeupleSawa.com — Profils E",
+                "author": "PeupleSawa.com (profils déposés par des visiteurs)",
+                "year": null,
+                "url": "https://www.peuplesawa.com/fr/bnprofiles.php?letter=E",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page communautaire de profils, lue le 13 octobre 2026. Plusieurs visiteurs portant Eyoum se disent douala, sawa ou camerounais ; l'un rattache sa famille à Bona Ekwalla, à Deido, et un autre écrit la suite de ses ancêtres sous la forme « Eyoum'a Moukal'Eyoum'a Boumb'a… ». Ces profils sont des auto-déclarations, non datées et non vérifiées."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1950,
+              "to": 1950,
+              "label": "27 février 1950"
+            },
+            "era": "colonial",
+            "statement": "Le nom Eyoum apparaît par écrit dans le titre d'une pétition au Conseil de tutelle de l'ONU, envoyée par Ernest Eyoum pour le Cameroun sous administration française. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "birth": true,
+            "formAsWritten": "Eyoum",
+            "sources": [
+              {
+                "title": "Petition from Mr. Ernest Eyoum concerning the Cameroons under French Administration",
+                "author": "Organisation des Nations unies, Conseil de tutelle",
+                "year": 1950,
+                "url": "https://digitallibrary.un.org/record/3922985",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "notice du catalogue (titre et date)",
+                "notes": "Pétition T/PET.5/48 de 3 pages, datée du 27 février 1950, lue dans la notice de la bibliothèque numérique de l'ONU le 13 octobre 2026. Seuls le titre, la date et les mots-clés ont été lus, pas le texte de la pétition."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

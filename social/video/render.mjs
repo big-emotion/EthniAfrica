@@ -4,7 +4,7 @@
 import { chromium } from "@playwright/test";
 import { spawn, execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
-import { mkdir, readFile, writeFile, access } from "node:fs/promises";
+import { mkdir, readFile, writeFile, access, rm } from "node:fs/promises";
 import { join, resolve } from "node:path";
 import sharp from "sharp";
 import { PAGE_HTML } from "./page.mjs";
@@ -715,7 +715,7 @@ export async function renderFrame(seq, frame, options) {
 
 // The voice file is checked again at export: the words were timed on the
 // audio whose SHA-256 they record, and FFmpeg must read the same length.
-async function checkVoice(voice) {
+export async function checkVoice(voice) {
   const hash = sha256(await readFile(voice.audio));
   if (hash !== voice.sha256)
     throw new Error(
@@ -742,7 +742,7 @@ async function checkVoice(voice) {
 // The voice is muxed as AAC at 48 kHz, cut to the encoded frames and padded
 // with silence to their end, so the video always keeps the schedule's
 // length: the audio never shortens it.
-function audioArgs(voice, from, seconds) {
+export function audioArgs(voice, from, seconds) {
   if (!voice) return { input: [], output: ["-an"] };
   return {
     input: [
@@ -772,6 +772,71 @@ function audioArgs(voice, from, seconds) {
   };
 }
 
+// Pipes frames `from` to `to` (exclusive), drawn by `render(frame)` as PNG,
+// into FFmpeg with the audio arguments of `audioArgs`. Shared by the
+// satellite video and the series video (series-render.mjs).
+export async function encodeFrames(file, { from, to, render, sound }) {
+  const ffmpeg = spawn(
+    "ffmpeg",
+    [
+      "-hide_banner",
+      "-loglevel",
+      "error",
+      "-f",
+      "image2pipe",
+      "-framerate",
+      String(FPS),
+      "-c:v",
+      "png",
+      "-i",
+      "-",
+      ...sound.input,
+      "-c:v",
+      "libx264",
+      "-preset",
+      "slow",
+      "-crf",
+      "16",
+      "-pix_fmt",
+      "yuv420p",
+      "-r",
+      String(FPS),
+      ...sound.output,
+      "-map_metadata",
+      "-1",
+      "-fflags",
+      "+bitexact",
+      "-movflags",
+      "+faststart",
+      "-y",
+      file,
+    ],
+    { stdio: ["pipe", "ignore", "pipe"] }
+  );
+  let stderr = "";
+  ffmpeg.stderr.on("data", (c) => (stderr += c));
+  const done = new Promise((ok, ko) =>
+    ffmpeg.on("close", (code) =>
+      code === 0 ? ok() : ko(new Error(`FFmpeg failed: ${stderr}`))
+    )
+  );
+  try {
+    for (let f = from; f < to; f++) {
+      const png = await render(f);
+      if (!ffmpeg.stdin.write(png))
+        await new Promise((ok) => ffmpeg.stdin.once("drain", ok));
+    }
+  } catch (error) {
+    // A refused frame must not leave a playable excerpt behind.
+    ffmpeg.kill("SIGKILL");
+    await done.catch(() => {});
+    await rm(file, { force: true });
+    throw error;
+  }
+  ffmpeg.stdin.end();
+  await done;
+}
+
 // `range` ({ from, to }, frames) encodes an excerpt, for a short proof.
 export async function encodeVideo(seq, outDir, { assets, range }) {
   const count = frameCount(seq);
@@ -793,57 +858,7 @@ export async function encodeVideo(seq, outDir, { assets, range }) {
     .toString()
     .split("\n")[0];
   try {
-    const ffmpeg = spawn(
-      "ffmpeg",
-      [
-        "-hide_banner",
-        "-loglevel",
-        "error",
-        "-f",
-        "image2pipe",
-        "-framerate",
-        String(FPS),
-        "-c:v",
-        "png",
-        "-i",
-        "-",
-        ...sound.input,
-        "-c:v",
-        "libx264",
-        "-preset",
-        "slow",
-        "-crf",
-        "16",
-        "-pix_fmt",
-        "yuv420p",
-        "-r",
-        String(FPS),
-        ...sound.output,
-        "-map_metadata",
-        "-1",
-        "-fflags",
-        "+bitexact",
-        "-movflags",
-        "+faststart",
-        "-y",
-        file,
-      ],
-      { stdio: ["pipe", "ignore", "pipe"] }
-    );
-    let stderr = "";
-    ffmpeg.stderr.on("data", (c) => (stderr += c));
-    const done = new Promise((ok, ko) =>
-      ffmpeg.on("close", (code) =>
-        code === 0 ? ok() : ko(new Error(`FFmpeg failed: ${stderr}`))
-      )
-    );
-    for (let f = from; f < to; f++) {
-      const png = await renderer.render(f);
-      if (!ffmpeg.stdin.write(png))
-        await new Promise((ok) => ffmpeg.stdin.once("drain", ok));
-    }
-    ffmpeg.stdin.end();
-    await done;
+    await encodeFrames(file, { from, to, render: renderer.render, sound });
   } finally {
     await renderer.close();
   }

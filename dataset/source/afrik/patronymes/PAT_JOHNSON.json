@@ -6,7 +6,7 @@
   },
   "id": "PAT_JOHNSON",
   "nameMain": "Johnson",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Johnson",
@@ -23,12 +23,12 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "lineage",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [
       {
-        "claim": "La base archivistique Virginia Emigrants to Liberia enregistre Francis A. Johnson, née libre, dans un départ du comté d'Amherst en Virginie vers le Liberia en 1854. Cette attestation ne suffit pas à relier toutes les lignées Johnson du Liberia à cette personne.",
+        "claim": "La base archivistique Virginia Emigrants to Liberia enregistre Francis A. Johnson, une fillette de 3 ans au statut « libre » (le registre ne dit pas si elle est née libre), dans un départ du comté d'Amherst en Virginie vers le Liberia en 1854. Cette attestation ne suffit pas à relier toutes les lignées Johnson du Liberia à cette personne.",
         "claimStatus": "established",
         "sourceRefs": ["uva-liberia-johnson-1854"]
       }
@@ -102,8 +102,77 @@
       "reason": "les résultats exacts « Johnson », Virginia Emigrants to Liberia, les archives de l'American Colonization Society et les travaux sur les familles américano-libériennes n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     },
     {
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues le disent un nom de famille tiré d'un prénom, « fils de John ». Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
+    },
+    {
       "fieldPath": "transmissionMode",
       "reason": "les résultats exacts « Johnson », Virginia Emigrants to Liberia, les archives de l'American Colonization Society et les travaux sur les familles américano-libériennes décrivent des familles de lignage mais aussi l'intégration de conjoints, d'enfants placés et de personnes adoptant le nom. Aucune règle univoque patrilinéaire, matrilinéaire, bilatérale ou élective n'a donc pu être établie pour Johnson."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Johnson est un nom de famille anglais et écossais, « fils de John ». Il est écrit au Liberia dès 1854. On ne sait pas avec certitude depuis quand il est porté au Togo : le projet n'y a pas trouvé de trace. Nous présentons plus bas l'explication du nom que nous connaissons.",
+    "names": [
+      {
+        "nameText": "Johnson",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille anglais, « fils de John », écrit au Liberia dès 1854.",
+        "periodLabel": "Écrit au Liberia dès 1854 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "statement": "Le nom Johnson viendrait du prénom anglais et écossais Johan ou Jon (John), suivi de -son, « fils de » : il voudrait dire « fils de John », selon le Dictionary of American Family Names.",
+            "hypothesisGroup": "origine du nom Johnson",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Johnson",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/johnson?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 13 octobre 2026 ; le site affiche une traduction française. La notice dit : nom anglais et écossais, formé sur le prénom Johan ou Jon (John) avec -son, « fils de » ; très courant chez les Afro-Américains."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "modern",
+            "statement": "Le nom Johnson apparaît par écrit au Liberia dans la base Virginia Emigrants to Liberia, à propos de Francis A. Johnson, une fillette de 3 ans partie du comté d'Amherst, en Virginie, vers le Liberia en 1854. C'est la plus ancienne trace de ce nom en Afrique que le projet connaît ; elle dit quand le nom est écrit là-bas, pas depuis quand il existe. Il existait déjà en Angleterre avant elle.",
+            "formAsWritten": "Johnson",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Francis A. Johnson",
+                "role": "émigrante nommée dans le registre"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Virginia Emigrants to Liberia — Francis A. Johnson",
+                "author": "University of Virginia, Virginia Emigrants to Liberia",
+                "year": null,
+                "url": "https://virginians-to-liberia.iath.virginia.edu/agents/3252",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "notice n° 3252",
+                "notes": "Édition numérique de l'University of Virginia fondée sur les archives de l'American Colonization Society, lue le 13 octobre 2026. La notice écrit Francis A. Johnson, de sexe féminin, âgée de 3 ans, de statut « Free », du comté d'Amherst (Virginie), partie de Norfolk vers le Liberia en 1854 sur le Sophia Walker (passage daté du 18 mai 1854)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -709,7 +709,9 @@
         "notes": "Premier récit européen du lac. La forme « Tchad » y est employée d'un bout à l'autre sans jamais être traduite, et aucun échange sur l'origine du nom n'y est rapporté. Volume lu en fac-similé le 9 septembre 2026."
       },
       {
-        "title": "Sigismund Wilhelm Koelle, African Native Literature, or Proverbs, Tales, Fables and Historical Fragments in the Kanuri or Bornu Language, Londres, Church Missionary House, 1854",
+        "title": "African native literature, or Proverbs, tales, fables, and historical fragments in the Kanuri or Bornu language",
+        "author": "Sigismund Wilhelm Koelle",
+        "year": 1854,
         "url": "https://archive.org/details/africannativelit00koel",
         "tier": "referenced",
         "source_kind": "linguistic_reference",

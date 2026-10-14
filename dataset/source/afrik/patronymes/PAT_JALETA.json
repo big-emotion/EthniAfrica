@@ -82,5 +82,88 @@
       "fieldPath": "homonyms",
       "reason": "Jaleta a été recherché comme nom personnel, patronymique et lexème afaan oromo ; aucun homonyme distinct et sourcé n'a été identifié."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Jaleta est un nom personnel éthiopien. Il sert de second nom aux enfants d'un homme qui le porte, sans devenir un nom de famille. On ne sait pas avec certitude ce qu'il veut dire ni depuis quand on l'écrit : la plus ancienne trace que nous connaissons date de 2019.",
+    "names": [
+      {
+        "nameText": "Jaleta",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel éthiopien, porté en second par les enfants d'un Jaleta.",
+        "periodLabel": "Écrit dès 2019 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1996,
+              "to": 1996,
+              "label": "Décrit en 1996"
+            },
+            "era": "modern",
+            "statement": "Le nom Jaleta suit l'usage éthiopien des noms personnels : une personne porte son propre nom suivi de celui de son père, parfois de celui de son grand-père. Chez l'enfant d'un Jaleta, Jaleta est donc le nom du père, et il ne passe pas aux petits-enfants. La notice de l'IFLA compte l'oromo parmi les langues de ces noms.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Names of Persons: National Usages for Entry in Catalogues",
+                "author": "IFLA Universal Bibliographic Control and International MARC Programme",
+                "year": 1996,
+                "url": "https://www.ifla.org/files/assets/cataloguing/pubs/names-of-persons_1996.pdf",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "p. 64-65",
+                "notes": "Quatrième édition, Munich, K. G. Saur, 1996, lue dans le PDF de l'IFLA le 13 octobre 2026. La notice Éthiopie, p. 64-65, fournie par la bibliothèque de l'université d'Addis-Abeba et approuvée par la Bibliothèque et les Archives nationales en octobre 1994, donne pour langues l'amharique, le tigrigna, le guèze et l'oromo (galla). Elle compose le nom d'un nom personnel, suivi du nom personnel du père, parfois de celui du grand-père. Elle note que le Code civil de 1960 prescrit un nom de famille, usage qui ne s'est pas encore répandu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Mai 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Jaleta est écrit en deuxième place dans la signature d'un article sur les Guji-Oromo, « Tadesse Jaleta Jirata ». Si l'on suit l'usage décrit par l'IFLA, Tadesse serait le nom personnel de l'auteur, Jaleta celui de son père et Jirata celui de son grand-père ; l'article ne le dit pas. Les sources lues ne disent pas ce que veut dire Jaleta.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Contesting Images of Womanhood: The Narrative Construction of Gender Relations in Ethiopia",
+                "author": "Tadesse Jaleta Jirata",
+                "year": 2019,
+                "url": "https://asq.africa.ufl.edu/wp-content/uploads/sites/168/v18i3a1.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "African Studies Quarterly 18(3), mai 2019. Lu dans le PDF le 13 octobre 2026. La première page porte le nom de l'auteur, « Tadesse Jaleta Jirata », et son résumé annonce dix mois de terrain chez les Guji-Oromo en 2015. L'article n'explique pas le nom Jaleta."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Mai 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Jaleta apparaît par écrit dans la signature d'un article de l'African Studies Quarterly sur les récits des Guji-Oromo, publié en mai 2019 par un enseignant de l'université de Dilla. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "birth": true,
+            "formAsWritten": "Jaleta",
+            "sources": [
+              {
+                "title": "Contesting Images of Womanhood: The Narrative Construction of Gender Relations in Ethiopia",
+                "author": "Tadesse Jaleta Jirata",
+                "year": 2019,
+                "url": "https://asq.africa.ufl.edu/wp-content/uploads/sites/168/v18i3a1.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "African Studies Quarterly 18(3), mai 2019. Lu dans le PDF le 13 octobre 2026. La première page porte le nom de l'auteur, « Tadesse Jaleta Jirata », et son résumé annonce dix mois de terrain chez les Guji-Oromo en 2015. L'article n'explique pas le nom Jaleta."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -6,17 +6,20 @@
   },
   "id": "PAT_AGYEMANG",
   "nameMain": "Agyemang",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Agyemang",
       "attestations": [
-        { "countryId": "GHA", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "GHA",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -72,8 +75,106 @@
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues le disent un nom de personne akan. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
+    },
+    {
       "fieldPath": "transmissionMode",
-      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+      "reason": "Le nom Agyemang est d'abord un nom de personne akan : nous ne documentons pas encore comment il passe d'une génération à l'autre comme nom de famille."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Agyemang est un nom de personne akan du Ghana. Une forme proche, Agyemaṅ, est écrite en 1881, et la graphie Agyeman est celle d'un roi des Akyem Kotoku dans le même livre. Les sources lues ne disent pas ce qu'il veut dire : on ne sait pas avec certitude d'où il vient.",
+    "names": [
+      {
+        "nameText": "Agyemang",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne akan du Ghana, écrit Agyemaṅ dès 1881 ; son sens reste inconnu.",
+        "periodLabel": "Forme proche Agyemaṅ dès 1881 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "Liste des fonctionnaires de 1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom Agyemang est porté en 1921 par un instituteur de 3e classe du service de l'Éducation de la colonie de la Côte-de-l'Or, selon la liste de ses fonctionnaires. La même liste écrit aussi Agyeman, pour un contrôleur des billets du chemin de fer.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Gold Coast Colony. Blue Book 1921",
+                "author": "Gouvernement de la colonie de la Côte-de-l'Or (Accra)",
+                "year": 1921,
+                "url": "https://archive.org/details/blue-book-gold-coast-1921",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 131",
+                "notes": "Registre annuel de la colonie, avec la liste de ses fonctionnaires ; exemplaire numérisé sur archive.org. Lu le 14 octobre 2026. Page 131, liste alphabétique des fonctionnaires : « Agyemang, W. B. » (instituteur de 3e classe, Éducation) ; en bas de la colonne de gauche, « Agyeman, S. E. » (contrôleur des billets, chemin de fer). Les noms sont écrits ainsi : famille d'abord, puis initiales."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Décrit en 1881"
+            },
+            "statement": "Le nom Agyemang apparaît par écrit sous une forme proche, Agyemaṅ, dans le dictionnaire de Johann Gottlieb Christaller : la liste des noms de personnes akan la cite sans explication, avec un n surmonté d'un point. C'est la plus ancienne trace de cette forme que le projet connaît ; le nom est plus ancien qu'elle.",
+            "formAsWritten": "Agyemaṅ",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 667",
+                "notes": "Bâle, Evangelical Missionary Society, 1881 ; exemplaire numérisé sur archive.org. Lu le 14 octobre 2026. Annexe G, « Proper Names of Persons », p. 666-667 : chacun porte d'ordinaire deux noms, dont l'un dit le jour de naissance ; l'auteur note que de beaucoup de ces noms le sens premier n'est pas connu. Page 667 : « Agyekum. Agyemaṅ. Gyima. ». Le n y porte un point suscrit. Missionnaire de Bâle, cité pour les formes qu'il écrit."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Agyeman",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La graphie sans g final du nom Agyemang, celle d'un roi des Akyem Kotoku au XIXe siècle.",
+        "periodLabel": "Écrit dès 1881",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1860,
+              "to": 1872,
+              "label": "Vers 1860-1872, selon un livre de 1881"
+            },
+            "statement": "Le nom Agyeman est celui d'un roi des Akyem Kotoku, installé à Gyadam : selon Johann Gottlieb Christaller, ses querelles avec le roi de Kyebi font partir en 1860 une partie de son peuple du nord de l'Akyem. La liste de leurs rois donne Agyemane, avec la date 1872.",
+            "aspect": "usage",
+            "formAsWritten": "Agyemane",
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 641",
+                "notes": "Bâle, Evangelical Missionary Society, 1881 ; exemplaire numérisé sur archive.org. Lu le 14 octobre 2026. Page 641, n° 24 « Akyem Kotoka » : « owing to quarrels between their king Agyemaṅ at Gyadam and king Ata at Kyebi », en 1860 ; puis « Kings : a. Agyemane, -1872. Kwabena Fua, -1879. Ata Fua. ». Les chiffres de la liste sont lus sur l'image de la page. Missionnaire de Bâle, cité pour les formes qu'il écrit."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

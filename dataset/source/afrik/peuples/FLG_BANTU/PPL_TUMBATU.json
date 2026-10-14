@@ -106,5 +106,154 @@
         "tier": "unverified"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Tumbatu désigne un peuple de l'île de Tumbatu, au nord-ouest de Zanzibar, et de la côte nord de l'île d'Unguja ; on dit aussi Watumbatu au pluriel en swahili. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. D'autres noms existent : Makhadim, que les Arabes omanais lui donnaient, selon Richard Burton. Les sources n'expliquent pas l'origine du nom Tumbatu ; nous présentons plus bas ce qu'elles disent. Le nom Makhadim est proche de celui des Hadimu, autres habitants anciens de Zanzibar, dont l'histoire est sur la fiche des Hadimu. Pour le nom Shirazi, voir la fiche des Shirazi.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Tumbatu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'une île de Zanzibar et de ses habitants ; une forme proche est citée au XIIIe siècle.",
+        "periodLabel": "Une forme proche est citée au XIIIe siècle ; écrit Watumbatu en 1939",
+        "accounts": [
+          {
+            "period": {
+              "from": 1939,
+              "to": 1939,
+              "label": "1939"
+            },
+            "era": "colonial",
+            "statement": "Le nom Watumbatu désigne, chez Ian Rolleston, un peuple dont le seul pays sûr est l'île de Tumbatu. D'autres vivent le long de la côte nord de l'île de Zanzibar, au nord de la route de Mkokotoni à Kinyasini, jusqu'à Nungwi. Rolleston écrit que les Watumbatu se voient comme un seul groupe, sans chef unique.",
+            "aspect": "usage",
+            "formAsWritten": "Watumbatu",
+            "sources": [
+              {
+                "title": "The Watumbatu of Zanzibar",
+                "author": "Ian H. O. Rolleston",
+                "year": 1939,
+                "url": "https://archive.org/details/tanzania-notes-records_1939-12_8",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 85",
+                "notes": "Tanganyika Notes and Records, n° 8, décembre 1939, publié après la mort de l'auteur (1936) à partir de ses manuscrits. Section I, « The Country of the Tribe » : l'île de Tumbatu est la seule terre habitée uniquement par les Watumbatu. Lu sur la numérisation d'Internet Archive le 13 octobre 2026. Page lue sur l'image."
+              },
+              {
+                "title": "The Watumbatu of Zanzibar",
+                "author": "Ian H. O. Rolleston",
+                "year": 1939,
+                "url": "https://archive.org/details/tanzania-notes-records_1939-12_8",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 94",
+                "notes": "Tanganyika Notes and Records, n° 8, décembre 1939, publié après la mort de l'auteur (1936) à partir de ses manuscrits. Section VI, « Social Organization » : « the Watumbatu consider themselves as a corporate body », sans chef unique. Lu sur la numérisation d'Internet Archive le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Tumbatu désigne, chez Richard Burton, une île du nord-ouest de Zanzibar et les gens qui y vivent. Les sources que nous avons lues n'expliquent pas son origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Zanzibar: City, Island, and Coast, volume I",
+                "author": "Richard F. Burton",
+                "year": 1872,
+                "url": "https://archive.org/details/zanzibarcityisla01burt_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 21",
+                "notes": "Londres, Tinsley Brothers, 1872. L'auteur y aborde l'île et « the people of Tumbatu ». Lu sur la numérisation d'Internet Archive le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1200,
+              "to": 1299,
+              "label": "Début du XIIIe siècle, selon Burton"
+            },
+            "era": "polity",
+            "statement": "Le nom Tumbatu a une forme proche, Tambat, que Richard Burton cite en 1872 d'après le géographe arabe Yakut, du début du XIIIe siècle. Burton écrit que Yakut y mentionne des musulmans et que l'île de « Tambat » a servi de refuge aux habitants de Zanzibar. C'est la plus ancienne trace de ce nom que le projet connaît ; elle est de seconde main, car le projet n'a pas lu Yakut. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Tambat",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Zanzibar: City, Island, and Coast, volume I",
+                "author": "Richard F. Burton",
+                "year": 1872,
+                "url": "https://archive.org/details/zanzibarcityisla01burt_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 25",
+                "notes": "Londres, Tinsley Brothers, 1872. Burton date Yakut du « early 13th century » ; il ne donne pas l'ouvrage de Yakut. Lu sur la numérisation d'Internet Archive le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant le nom, selon une tradition rapportée en 1939"
+            },
+            "statement": "Les Watumbatu disent venir du golfe Persique et avoir fondé sur l'île une ville, Makutani, que gouvernait un chef nommé Yussuf, selon une tradition que rapporte Ian Rolleston. Des Arabes l'auraient détruite ; les survivants auraient ensuite fondé le village de Gomani. Les sources que nous avons lues ne disent pas sous quel nom ce peuple se désignait alors.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The Watumbatu of Zanzibar",
+                "author": "Ian H. O. Rolleston",
+                "year": 1939,
+                "url": "https://archive.org/details/tanzania-notes-records_1939-12_8",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 87",
+                "notes": "Tanganyika Notes and Records, n° 8, décembre 1939, publié après la mort de l'auteur (1936) à partir de ses manuscrits. Section III, « The Origins of the Tribe » : Rolleston la présente comme une tradition, qu'il juge appuyée par la position des ruines. Lu sur la numérisation d'Internet Archive le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Makhadim",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "ara",
+        "namedBy": "les Arabes omanais",
+        "shortLine": "Un nom que les Arabes omanais donnaient aux gens de Tumbatu ; il voudrait dire « serviles ».",
+        "periodLabel": "Écrit en 1872",
+        "accounts": [
+          {
+            "period": {
+              "from": 1872,
+              "to": 1872,
+              "label": "1872"
+            },
+            "era": "polity",
+            "statement": "Le nom Makhadim apparaît sous la forme Makhádim dans le livre de Richard Burton sur Zanzibar, publié en 1872. Burton écrit que les Arabes omanais appellent ainsi les gens de Tumbatu, qu'il traduit par « helots or serviles », c'est-à-dire des serviles. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Makhádim",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Zanzibar: City, Island, and Coast, volume I",
+                "author": "Richard F. Burton",
+                "year": 1872,
+                "url": "https://archive.org/details/zanzibarcityisla01burt_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 21",
+                "notes": "Londres, Tinsley Brothers, 1872. Burton visite l'île pendant son séjour à Zanzibar ; la phrase figure au début de son récit de l'île. Lu sur la numérisation d'Internet Archive le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

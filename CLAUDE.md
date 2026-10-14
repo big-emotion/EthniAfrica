@@ -148,6 +148,14 @@ Tailwind + shadcn/ui + TanStack Query. Colours come from CSS custom-property tok
 mobile 430px · tablet `md` 720px · desktop `xl` 800px. Storybook uses `@storybook/react-vite`
 (not `@storybook/nextjs`); installs need `--legacy-peer-deps`.
 
+**Visible changes are mockups first.** Any change a reader can see (token, layout, component,
+page, state) is made on the site boards before the code: change the boards, get them approved,
+record them in `docs/design/mockups/site/`, implement to them, compare at 430 · 768 · 1440. The
+procedure is `docs/design/mockup-first-workflow.md`; the public canvas is linked from
+`docs/design/mockups/site/README.md`. When the rendered page and an approved board disagree, the
+board wins. A stylesheet changed in `src/styles/` without the boards fails
+`siteMockupCharter.test.ts`.
+
 ## Workflow
 
 - `recette` is the integration branch, `main` the base; both protected — branch and open a PR.

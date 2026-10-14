@@ -98,5 +98,115 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les recherches « Benjelloun lignée », « Benjelloun clan », « Benjelloun tribe » et « Benjelloun place name » n’ont pas permis de déterminer si cette graphie désigne une lignée, un clan, une caste, une classe d’âge ou un établissement dans le contexte précis de la fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Benjelloun est un nom de famille marocain, qui commence par ben, « fils ». Il est cité parmi les noms de familles de villes marocaines qui se transmettent depuis longtemps, et il est porté à Fès au XIXe siècle. On ne sait pas avec certitude ce que veut dire la suite du nom, Jelloun : les sources que nous avons lues ne l'expliquent pas. Sa plus ancienne trace écrite que nous connaissons date d'environ 1820, sous la forme Ben Djelloûn.",
+    "names": [
+      {
+        "nameText": "Benjelloun",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille marocain, « fils de » Jelloun, porté à Fès au XIXe siècle ; le sens de Jelloun est inconnu.",
+        "periodLabel": "Écrit sous une forme proche vers 1820 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "Décrit en 2005"
+            },
+            "era": "modern",
+            "statement": "Le nom Benjelloun est cité parmi des noms de familles de villes marocaines, surtout de celles que les Andalous ont habitées, comme Rabat, Salé, Fès, Tétouan, Chaouen ou Tanger : ces noms se sont transmis de génération en génération, selon Lhoussain Rachid, de l'Institut royal de la culture amazighe.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Tatouage de la Mémoire — Institut royal de la culture amazighe",
+                "author": "Lhoussain Rachid",
+                "year": 2005,
+                "url": "https://biblio.ircam.ma/pmb/uploads/publications/72.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 100",
+                "notes": "Série Traduction n° 7, traduction de Saadia Aït Taleb, IRCAM, 2005. Lu en texte intégral le 14 octobre 2026. Page 100 : « Des noms comme « Benchekroun », « Gessous », « Bennani », « Benjelloun » […] ont été transmis de génération en génération sans le moindre problème », dans les villes, « notamment celles habitées par les Andalous, tels Rabat, Salé, Fès, Tétouan, Chaouen, Tanger »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "Décrit en 1860"
+            },
+            "statement": "Le nom Benjelloun commence par ben, mot arabe qui veut dire « fils » et que l'on prononce ainsi dans la langue de tous les jours, selon le dictionnaire de Kazimirski. On ne sait pas avec certitude ce que veut dire la suite du nom, Jelloun : les sources que nous avons lues ne l'expliquent pas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionnaire arabe-français, tome 1",
+                "author": "Albert de Biberstein Kazimirski",
+                "year": 1860,
+                "url": "https://archive.org/details/dictionnairearab01bibeuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 168-169",
+                "notes": "Paris, Maisonneuve, 1860. Lu sur l'exemplaire numérisé d'archive.org le 14 octobre 2026. Page 168 : « Fils » ; page 169 : « Dans le langage usuel, où les désinences sont négligées, on prononce Ben. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1820,
+              "to": 1865,
+              "label": "1820 et 1865"
+            },
+            "era": "polity",
+            "statement": "Le nom Benjelloun est porté à Fès au XIXe siècle : la chronique de la dynastie alaouite ajoute « Elfèsi », c'est-à-dire « de Fès », au nom de deux hommes appelés ben Djelloûn : Elhâddj Ettâléb ben Djelloûn, qui porte le titre d'amin et qu'elle cite en 1236 de l'hégire, puis Aboû 'Abdallah Habib ben Hachém ben Djelloûn, un négociant dont elle parle en 1282.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Kitâb el-Istiqsâ li-akhbâri doual el-Maghrib el-Aqsâ, quatrième partie : Chronique de la dynastie alaouie du Maroc, tome II (Archives marocaines, vol. X)",
+                "author": "Ahmed ben Khâled Ennâsiri Esslâoui ; traduction d'Eugène Fumey",
+                "year": 1907,
+                "url": "https://archive.org/details/32882019289126-archivesmarocai",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 71-72, 259-260",
+                "notes": "Paris, Ernest Leroux, 1907. Chronique marocaine du XIXe siècle, lue dans la traduction française sur l'exemplaire numérisé d'archive.org le 14 octobre 2026. Pages 71-72 : « Elhâddj Ettâléb ben Djelloûn Elfèsi », puis « Elhâddj Ettâléb ben Djelloûn s'engagea à fournir l'argent » ; le serment est de 1236. Pages 259-260 : en 1282, « le négociant distingué Aboû 'Abdallah Habib ben Hachém ben Djelloûn El-fèsi »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1820,
+              "to": 1820,
+              "label": "Vers 1820, sous le sultan Moulay Slimane"
+            },
+            "era": "polity",
+            "statement": "Le nom Benjelloun apparaît sous la forme Ben Djelloûn dans la chronique de la dynastie alaouite d'Ahmed ben Khâled Ennâsiri Esslâoui, traduite en 1907 : dans une lettre aux habitants de Fès, le sultan Moulay Slimane cite Ben Kîrân, Ben Cheqroûn, Bennîs et Ben Djelloûn comme des personnes qu'un gouverneur aurait pu inviter pour s'en faire aimer. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "formAsWritten": "Ben Djelloûn",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Moulay Slimane",
+                "role": "sultan qui écrit la lettre"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Kitâb el-Istiqsâ li-akhbâri doual el-Maghrib el-Aqsâ, quatrième partie : Chronique de la dynastie alaouie du Maroc, tome II (Archives marocaines, vol. X)",
+                "author": "Ahmed ben Khâled Ennâsiri Esslâoui ; traduction d'Eugène Fumey",
+                "year": 1907,
+                "url": "https://archive.org/details/32882019289126-archivesmarocai",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 60-61",
+                "notes": "Paris, Ernest Leroux, 1907. Chronique marocaine du XIXe siècle, lue dans la traduction française sur l'exemplaire numérisé d'archive.org le 14 octobre 2026. Pages 60-61, lettre du sultan aux habitants de Fès : « s'il avait invité aujourd'hui Ben Kîrân, demain Ben Cheqroûn, et ensuite Bennîs et Ben Djelloûn […], ils l'auraient aimé ». Le sultan est Moûlay Slîmân ; la lettre suit le récit de 1235 et précède le serment de 1236."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

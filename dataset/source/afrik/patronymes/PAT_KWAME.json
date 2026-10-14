@@ -11,13 +11,19 @@
     {
       "spelling": "Kwame",
       "attestations": [
-        { "countryId": "GHA", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "GHA",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     },
     {
       "spelling": "Kwamé",
       "attestations": [
-        { "countryId": "GHA", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "GHA",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -77,5 +83,65 @@
       "fieldPath": "homonyms",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kwame est un nom de personne akan du Ghana : celui du garçon né un samedi. Chaque enfant akan reçoit d'ordinaire un nom qui dit son jour de naissance, et Kwame est celui du samedi. Les sources lues n'en donnent pas d'autre explication.",
+    "names": [
+      {
+        "nameText": "Kwame",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom akan du garçon né un samedi ; une forme proche est écrite dès 1819.",
+        "periodLabel": "Forme proche écrite dès 1819",
+        "accounts": [
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Décrit en 1881"
+            },
+            "statement": "Le nom Kwame est celui d'un homme akan né un samedi, selon Johann Gottlieb Christaller. Il donne aussi la forme Kwamena et range le nom parmi les sept noms de jour : chaque garçon reçoit d'ordinaire le nom du jour de sa naissance.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 271 ; p. 663",
+                "notes": "Bâle, Evangelical Missionary Society, 1881 ; exemplaire numérisé sur archive.org. Page 271, entrée « Kwame », avec la forme Kwamena : nom propre d'un homme né un samedi. Page 663 (annexe D) : chaque garçon reçoit un nom du jour de sa naissance, parmi sept noms dont Kwame. Missionnaire de Bâle, cité pour les formes qu'il écrit. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1819,
+              "to": 1819,
+              "label": "Mission de 1817, récit publié en 1819"
+            },
+            "era": "polity",
+            "statement": "Le nom Kwame apparaît par écrit sous deux formes proches, Quamina et Quama, dans le traité que rapporte Thomas Edward Bowdich. Quamina est dans le nom du roi d'Asante, Quama dans celui du roi de Dwabin. C'est la plus ancienne trace de ce nom que le projet connaît ; le nom est plus ancien qu'elle.",
+            "formAsWritten": "Quamina",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Mission from Cape Coast Castle to Ashantee",
+                "author": "Thomas Edward Bowdich",
+                "year": 1819,
+                "url": "https://archive.org/details/missionfromcapec00bowd",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 126",
+                "notes": "Londres, John Murray, 1819 ; exemplaire numérisé sur archive.org. Page 126, en tête du traité : « with Saï Tootoo Quamina, King of Ashantee and its Dependencies, and Boïtinnee Quama, King of Dwabin and its Dependencies ». Voyageur britannique, cité pour les formes qu'il écrit. Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

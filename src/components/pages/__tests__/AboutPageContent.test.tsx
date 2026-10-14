@@ -2,6 +2,7 @@ import { render, screen, within } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 
 import AboutPageContent from "../AboutPageContent";
+import { getAxisHubRoute } from "@/lib/hubs/axisRoutes";
 import { ACCESS_MODE_LABELS, ACCESS_MODES } from "@/lib/hubs/moduleRegistry";
 import { modulesNamedIn } from "@/test/axisModuleVocabulary";
 import { getLocalizedRoute, getStaticPageRoute } from "@/lib/routing";
@@ -154,6 +155,20 @@ describe("AboutPageContent (REQ-132)", () => {
     const list = within(explore).getByTestId("about-access-mode-list");
     for (const name of Object.values(ACCESS_MODE_LABELS)) {
       expect(within(list).getByText(name)).toBeInTheDocument();
+    }
+  });
+
+  // Measured 2026-10-13: /fr/about read to 86%, then 67% bounce. The page
+  // named the three ways in and linked none of them.
+  // @req REQ-132
+  it("leads each way in to its hub", () => {
+    renderAbout();
+
+    for (const mode of ACCESS_MODES) {
+      const card = screen.getByTestId(`about-access-mode-${mode}`);
+      expect(
+        within(card).getByRole("link", { name: ACCESS_MODE_LABELS[mode] })
+      ).toHaveAttribute("href", getAxisHubRoute("fr", mode));
     }
   });
 

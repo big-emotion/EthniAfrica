@@ -6,23 +6,29 @@
   },
   "id": "PAT_KACI",
   "nameMain": "Kaci",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Kaci",
       "attestations": [
-        { "countryId": "DZA", "sourceRefs": ["kaci-hca-tidjet"] }
+        {
+          "countryId": "DZA",
+          "sourceRefs": ["kaci-hca-tidjet"]
+        }
       ]
     },
     {
       "spelling": "Aït Kaci",
       "attestations": [
-        { "countryId": "DZA", "sourceRefs": ["kaci-hca-tidjet"] }
+        {
+          "countryId": "DZA",
+          "sourceRefs": ["kaci-hca-tidjet"]
+        }
       ]
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -72,6 +78,10 @@
       "reason": "Les catalogues BnF, Persée, OpenEdition et les dépôts universitaires algériens ont été interrogés sans trouver de chronique ou d’archive ancienne consacrée à la formation du nom Kaci."
     },
     {
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom de personne kabyle devenu nom de famille. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
+    },
+    {
       "fieldPath": "transmissionMode",
       "reason": "La formule Aït Kaci désigne un collectif familial, mais le dictionnaire ne décrit pas sa règle de transmission ; les recherches « Aït Kaci filiation » et « famille Kaci transmission » n’ont pas permis de choisir un mode."
     },
@@ -91,5 +101,222 @@
       "fieldPath": "homonyms",
       "reason": "Les dictionnaires et catalogues consultés montrent des valeurs lexicales et graphies voisines, mais aucune seconde lignée d’origine distincte sous l’orthographe exacte Kaci n’a pu être documentée."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kaci est un nom de personne kabyle, d'Algérie, que l'on retrouve dans Aït Kaci, « ceux de Kaci ». Les sources lues ne s'accordent pas sur son origine : il viendrait d'un adjectif arabe qui veut dire « dur », ou serait une altération du nom Qasem. Nous présentons ces explications plus bas.",
+    "names": [
+      {
+        "nameText": "Kaci",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne kabyle ; les sources hésitent entre « dur » et une altération de Qasem.",
+        "periodLabel": "Écrit Kassi dès 1872 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Kaci est un nom de personne kabyle, d'Algérie, devenu nom de famille. Les sources lues ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionnaire des patronymes algériens, tome 2 : At Weɣlis",
+                "author": "Mustapha Tidjet",
+                "year": 2016,
+                "url": "https://www.hcamazighite.dz/docs/document/hca/lexiques/dictionnaireII%20Mustapha%20TIDJET%20%20tome%202.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 120",
+                "notes": "Haut Commissariat à l'Amazighité ; recueil de noms de famille de la région des At Weɣlis, en Kabylie, lu en texte intégral le 14 octobre 2026. L'année 2016 est celle que lui donnent les mémoires de master qui le citent. Page 120 : entrée « Kaci », avec deux explications de son origine que le recueil donne côte à côte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "Proposée en 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Kaci viendrait d'un adjectif arabe qui veut dire « dur, méchant, cruel, atroce », ou d'un sens plus favorable, « le caractère endurci par une vie dure, de celui qui a souffert et qui a acquis une trempe d'acier », selon Mustapha Tidjet, qui cite Beaussier (1958) et Belhamdi (2002).",
+            "hypothesisGroup": "origine du nom Kaci",
+            "sources": [
+              {
+                "title": "Dictionnaire des patronymes algériens, tome 2 : At Weɣlis",
+                "author": "Mustapha Tidjet",
+                "year": 2016,
+                "url": "https://www.hcamazighite.dz/docs/document/hca/lexiques/dictionnaireII%20Mustapha%20TIDJET%20%20tome%202.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 120",
+                "notes": "Haut Commissariat à l'Amazighité ; recueil de noms de famille de la région des At Weɣlis, en Kabylie, lu en texte intégral le 14 octobre 2026. L'année 2016 est celle que lui donnent les mémoires de master qui le citent. Page 120, entrée « Kaci » : « dur, méchant, cruel, atroce », de kässi, adjectif arabe « dur. Endurci, austère, inflexible » (Beaussier, 1958 : 803) ; sens plus favorable, « le caractère endurci par une vie dure, de celui qui a souffert et qui a acquis une trempe d'acier » (Belhamdi, 2002 : 182). Beaussier et Belhamdi sont cités par Tidjet et n'ont pas été lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "Proposée en 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Kaci serait une altération du nom Qasem, selon Beaussier, que cite Mustapha Tidjet : « Kassi est une altération de Qäsem ».",
+            "hypothesisGroup": "origine du nom Kaci",
+            "sources": [
+              {
+                "title": "Dictionnaire des patronymes algériens, tome 2 : At Weɣlis",
+                "author": "Mustapha Tidjet",
+                "year": 2016,
+                "url": "https://www.hcamazighite.dz/docs/document/hca/lexiques/dictionnaireII%20Mustapha%20TIDJET%20%20tome%202.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 120",
+                "notes": "Haut Commissariat à l'Amazighité ; recueil de noms de famille de la région des At Weɣlis, en Kabylie, lu en texte intégral le 14 octobre 2026. L'année 2016 est celle que lui donnent les mémoires de master qui le citent. Page 120, entrée « Kaci » : « mais selon Beaussier (803) « Kassi est une altération de Qäsem » ». Beaussier est cité par Tidjet et n'a pas été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "Décrit en 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Kaci est recensé parmi les noms de famille de la région des At Weɣlis, en Kabylie, dans le dictionnaire de Mustapha Tidjet.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionnaire des patronymes algériens, tome 2 : At Weɣlis",
+                "author": "Mustapha Tidjet",
+                "year": 2016,
+                "url": "https://www.hcamazighite.dz/docs/document/hca/lexiques/dictionnaireII%20Mustapha%20TIDJET%20%20tome%202.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 120",
+                "notes": "Haut Commissariat à l'Amazighité ; recueil de noms de famille de la région des At Weɣlis, en Kabylie, lu en texte intégral le 14 octobre 2026. L'année 2016 est celle que lui donnent les mémoires de master qui le citent. Page 120 : entrée « Kaci », avec ses deux explications."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1872,
+              "to": 1872,
+              "label": "1872"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kaci apparaît par écrit sous une forme proche, Kassi, dans l'ouvrage de Hanoteau et Letourneux sur la Kabylie : « Azib Kassi (l'azib de Kassi) », un hameau de la tribu des Iâzzouzen. C'est la plus ancienne trace de cette forme que le projet connaît ; elle nomme un lieu, non une famille, et le nom est plus ancien qu'elle.",
+            "formAsWritten": "Kassi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "La Kabylie et les coutumes kabyles, tome I",
+                "author": "Adolphe Hanoteau et Aristide Letourneux",
+                "year": 1872,
+                "url": "https://archive.org/details/bub_gb_8jgbAAAAYAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 267",
+                "notes": "Paris, 1872 ; exemplaire numérisé d'archive.org (tome I), lu le 14 octobre 2026. Page 267, « Tribu des Iâzzouzen (les descendants d'Âzzouz) » : parmi les hameaux et villages du groupe de Taguemmount Boulmou, « Azib Kassi (l'azib de Kassi) ». Un azib est une ferme ou un hameau d'élevage. Les auteurs sont un général d'état-major et un magistrat de l'administration française de l'Algérie."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Aït Kaci",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom kabyle qui se comprend « ceux de Kaci » ; écrit Aït Kassi dès 1872, comme village.",
+        "periodLabel": "Écrit Aït Kassi dès 1872 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "Décrit en 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Aït Kaci se comprend « ceux de Kaci » ou « les gens de la famille Kaci », selon Mustapha Tidjet. Il se forme avec Kaci, dont les explications sont présentées à part.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionnaire des patronymes algériens, tome 2 : At Weɣlis",
+                "author": "Mustapha Tidjet",
+                "year": 2016,
+                "url": "https://www.hcamazighite.dz/docs/document/hca/lexiques/dictionnaireII%20Mustapha%20TIDJET%20%20tome%202.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 20",
+                "notes": "Haut Commissariat à l'Amazighité ; recueil de noms de famille de la région des At Weɣlis, en Kabylie, lu en texte intégral le 14 octobre 2026. L'année 2016 est celle que lui donnent les mémoires de master qui le citent. Page 20, entrée « Ait Kaci » : « ceux de Kaci ; les gens de la famille Kaci » ; elle renvoie à l'entrée « Kaci »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1872,
+              "to": 1872,
+              "label": "1872"
+            },
+            "era": "colonial",
+            "statement": "Le nom Aït Kaci apparaît par écrit sous une forme proche, Aït Kassi, dans l'ouvrage de Hanoteau et Letourneux sur la Kabylie : c'est l'un des hameaux et villages du groupe d'Imouthas, dans la tribu des Aït Khalfoun. C'est la plus ancienne trace de cette forme que le projet connaît ; elle nomme un lieu, non une famille, et le nom est plus ancien qu'elle.",
+            "formAsWritten": "Aït Kassi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "La Kabylie et les coutumes kabyles, tome I",
+                "author": "Adolphe Hanoteau et Aristide Letourneux",
+                "year": 1872,
+                "url": "https://archive.org/details/bub_gb_8jgbAAAAYAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 281",
+                "notes": "Paris, 1872 ; exemplaire numérisé d'archive.org (tome I), lu le 14 octobre 2026. Page 281, « Tribu des Aït Khalfoun », tableau de la population : le groupe d'Imouthas compte parmi ses hameaux et villages « Aït Kassi ». Le mot « Aït » est glosé, ailleurs dans l'ouvrage, par « les enfants de ». Les auteurs sont un général d'état-major et un magistrat de l'administration française de l'Algérie."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "At Qasi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une écriture berbère proche du nom Aït Kaci, relevée en 2025 comme nom de famille.",
+        "periodLabel": "Écrit en 2025",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Relevé en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom At Qasi est une écriture berbère proche du nom Aït Kaci. Un mémoire de l'université de Tizi-Ouzou le relève parmi les noms de famille de Tizi-Rached et de Beni-Yanni et l'explique par le nom Kaci ; selon ses informateurs, cette famille est venue de la région de Tamda.",
+            "aspect": "usage",
+            "formAsWritten": "At Qasi",
+            "sources": [
+              {
+                "title": "Analyse morphologique et sémantique des patronymes des localités Tizi-Rached et Beni-Yanni",
+                "author": "Katia Nekmouche et Sylia Ouahioune",
+                "year": 2025,
+                "url": "https://dspace.ummto.dz/handle/ummto/30424",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 39",
+                "notes": "Mémoire de master, Université Mouloud Mammeri de Tizi-Ouzou, 2024-2025 ; lu en texte intégral le 14 octobre 2026. Les autrices s'appuient sur des informateurs de Tizi-Rached et de Beni-Yanni et sur des dictionnaires. Page 39, entrée « At Qasi » : « Ils sont venus de la région Tamda » ; l'explication du dictionnaire est celle de l'entrée « Kaci » (« dur, méchant, cruel, atroce », ou altération de Qäsem). Le mémoire n'écrit pas « Aït Kaci » : le rapprochement est le nôtre."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

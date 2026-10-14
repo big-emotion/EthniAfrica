@@ -104,6 +104,185 @@
         "url": "https://joshuaproject.net/countries/gh",
         "tier": "unverified",
         "source_kind": "missionary_database"
+      },
+      {
+        "title": "Chumburung – Glottolog 5.3, ISO 639-3 ncu",
+        "url": "https://glottolog.org/resource/languoid/id/chum1261",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Nchumuru désigne un peuple guang du centre-est du Ghana, installé de part et d'autre du lac Volta, qui se nomme lui-même Nchumuru. On le connaît aussi sous le nom de Chumburung, qui est celui de sa langue, et sous celui de Kyongborong. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas leurs plus anciennes traces.",
+    "names": [
+      {
+        "nameText": "Nchumuru",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple a demandé de faire connaître ; sa plus ancienne trace connue date de 1932.",
+        "periodLabel": "Écrit dès 1932",
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Nchumuru est celui d'un district du Ghana, Krachi Nchumuru, dans la région d'Oti, qui comptait 79 934 habitants au recensement de 2021, selon les chiffres du service statistique du Ghana.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Krachi Nchumuru District – City Population 2021",
+                "author": "City Population",
+                "year": null,
+                "url": "https://www.citypopulation.de/en/ghana/admin/oti/1508__krachi_nchumuru/",
+                "tier": "referenced",
+                "source_kind": "discovery",
+                "notes": "Page de chiffres de recensement qui reprend ceux du service statistique du Ghana ; lue le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom Nchumuru est celui qu'emploie l'anthropologue D. Paul Lumsden pour un petit groupe de langue guan, installé dans le district de Krachi, dans l'est du district de Gonja et dans la région de Yeji. Il écrit qu'il n'a pas changé le nom du groupe dans ses publications, parce que ses membres lui ont demandé de le faire connaître au monde.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Some Reflections on Restudying the Nchumuru of Krachi District",
+                "author": "D. Paul Lumsden",
+                "year": 1980,
+                "url": "https://pdfproc.lib.msu.edu/?file=/DMC/African%20Journals/pdfs/Institue%20of%20African%20Studies%20Research%20Review/1980v12n1/asrv012001005.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 76, 82",
+                "notes": "Research Review, Institute of African Studies, Université du Ghana, vol. 12, n° 1, 1980. L'auteur est un anthropologue canadien qui étudie ce groupe depuis 1967. Lu dans le PDF des African e-Journals de l'université d'État du Michigan le 13 octobre 2026 ; le numéro de page imprimé a été lu sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1932,
+              "to": 1933,
+              "label": "Rapport sur l'année 1932, publié en 1933"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nchumuru apparaît par écrit dans le rapport que le gouvernement britannique remet à la Société des Nations sur le Togo sous mandat britannique. Il cite l'Owura de Nchumuru et les terres des tribus nchumuru et nawuri, d'environ 900 et 2 600 habitants, que l'on rattache alors au district de Gonja. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Nchumuru",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Report on the Administration of Togoland under British Mandate for the year 1932",
+                "author": "Colonial Office du Royaume-Uni",
+                "year": 1933,
+                "url": "https://archive.org/details/report-togoland-1932",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 6, 10",
+                "notes": "Rapport du gouvernement britannique au Conseil de la Société des Nations (Colonial No. 87/1933). Lu dans la numérisation d'Internet Archive le 13 octobre 2026 ; le numéro de page imprimé a été lu sur l'image."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Chumburung",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de la langue pour les linguistes ; Armitage l'écrit Chumbulu en 1924.",
+        "periodLabel": "Écrit dès 1924",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Chumburung désigne une langue guang du Nord, parlée par environ 69 000 personnes dans le district de Kpandai et dans la ville de Yeji, selon Omniglot. Il la dit aussi connue sous les noms Nchumburung, Kyongborong, Nchimburu et Nchummuru.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Chumburung language and alphabet – Omniglot, 2023",
+                "author": "Simon Ager (Omniglot)",
+                "year": null,
+                "url": "https://www.omniglot.com/writing/chumburung.htm",
+                "tier": "unverified",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1924,
+              "to": 1924,
+              "label": "Publié en 1924, d'après des rapports de 1914"
+            },
+            "era": "colonial",
+            "statement": "Le nom Chumburung apparaît sous une forme proche, Chumbulu, chez Cecil Hamilton Armitage. Il décrit une petite tribu qui serait venue de l'Ashanti et qui doit allégeance au grand chef des Kabanya, ou Gonja, à Kpombe, près de Salaga ; sa place, au sud-est du district de Gonja, permet de la rattacher à ce peuple. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Chumbulu",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Cecil Hamilton Armitage",
+                "role": "ancien chef commissaire des Territoires du Nord, auteur"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Tribal Markings and Marks of Adornment of the Natives of the Northern Territories of the Gold Coast Colony",
+                "author": "Cecil Hamilton Armitage",
+                "year": 1924,
+                "url": "https://archive.org/details/tribalmarkingsma00armi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. viii, 6",
+                "notes": "Londres, Harrison and Sons, 1924. L'auteur est un ancien chef commissaire des Territoires du Nord ; sa préface date de 1922 et il s'appuie sur des rapports de commissaires reçus en 1914. Lu dans la numérisation d'Internet Archive le 13 octobre 2026 ; le numéro de page imprimé a été lu sur l'image."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kyongborong",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un autre nom de la langue chumburung ; sa première trace reste à trouver.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kyongborong figure, avec Nchumburung, Nchimburu et Nchummuru, parmi les autres noms de la langue chumburung, que Omniglot écrit aussi Kyo̱ŋbo̱ro̱ŋ dans l'alphabet de la langue.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Chumburung language and alphabet – Omniglot, 2023",
+                "author": "Simon Ager (Omniglot)",
+                "year": null,
+                "url": "https://www.omniglot.com/writing/chumburung.htm",
+                "tier": "unverified",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          }
+        ]
       }
     ]
   }

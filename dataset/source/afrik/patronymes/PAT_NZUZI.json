@@ -61,7 +61,7 @@
     {
       "sourceKey": "ndoma-1977-kongo-names",
       "title": "Kongo Personal Names Today: a Sketch",
-      "url": "https://ans-names.pitt.edu/ans/article/download/845/844/1692",
+      "url": "https://ans-names.pitt.edu/ans/article/download/845/844",
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Ndoma, Ungina, Names: A Journal of Onomastics, volume 25, numéro 2, 1977, p. 88-98 ; texte intégral lu. Nsimba et Nzuzi, noms de jumeaux et sens des deux mots : p. 89. La liste des noms de naissance renvoie à F. Ngoma, « L'initiation bakongo et sa signification », Bulletin du CEPSI, Élisabethville, n° 66, 1964, p. 46, que nous n'avons pas lu ; le sens des deux mots est celui que l'auteur de l'article donne. L'article décrit les noms de personnes des Kongo du Bas-Congo, sans parler du nom de famille Nzuzi tel qu'il est porté aujourd'hui."
@@ -96,5 +96,110 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Nzuzi », « Kongo », « Congo », « twin name », « surname », « personal names », « onomastics », « etymology », « transmission », « alliance », « caste », « homonym » et « obituary », ainsi que la page Forebears dédiée ; l'étude déjà utilisée pour Nsimba a été écartée afin de ne pas partager une source entre fiches n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Nzuzi est, chez les Kongo de la République démocratique du Congo, un nom que l'on donne à un jumeau ; il va avec le nom Nsimba, qui désigne l'autre. Les sources ne s'accordent pas sur lequel des deux jumeaux porte chaque nom ; nous présentons plus bas ce qu'elles disent, ainsi qu'une explication de son origine.",
+    "names": [
+      {
+        "nameText": "Nzuzi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kon",
+        "namedBy": null,
+        "shortLine": "Un nom kongo de jumeau, écrit dès 1910 ; il irait avec Nsimba, l'autre jumeau.",
+        "periodLabel": "Écrit dès 1910 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1977,
+              "to": 1977,
+              "label": "Décrit en 1977"
+            },
+            "era": "modern",
+            "statement": "Le nom Nzuzi est donné à un jumeau chez les Kongo, quel que soit son sexe : selon Ungina Ndoma, c'est le nom de celui qui naît après Nsimba, que Nsimba « tient » avant qu'il soit « tiré » dehors. Si une femme met des jumeaux au monde plusieurs fois, d'autres noms peuvent s'ajouter à ceux-là.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Kongo Personal Names Today: a Sketch",
+                "author": "Ungina Ndoma",
+                "year": 1977,
+                "url": "https://ans-names.pitt.edu/ans/article/download/845/844",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 89",
+                "notes": "Names: A Journal of Onomastics, vol. 25, n° 2, 1977, p. 88-98. Texte intégral lu. Page 89 : « NSIMBA and NZUZI: names for twins regardless of their sex. [...] The one who comes out first, NSIMBA, holds [...] the other twin who is then drawn out (zuta, zutua - 'to draw'). » L'auteur décrit surtout le sud des Kongo. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1936,
+              "to": 1936,
+              "label": "Décrit en 1936"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nzuzi figure dans le dictionnaire de Laman comme le nom du premier-né de deux jumeaux et, dans certains parlers, du dernier-né ; Laman le donne aussi comme nom propre.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionnaire kikongo-français, avec une étude phonétique décrivant les dialectes les plus importants de la langue dite kikongo",
+                "author": "Karl Edvard Laman",
+                "year": 1936,
+                "url": "https://archive.org/details/dictionnairekikongofrancais",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrées nsimba et nzuzi (classement alphabétique)",
+                "notes": "Bruxelles, Institut royal colonial belge, 1936. Lu dans la numérisation d'Internet Archive, qui ne porte pas le numéro de page imprimé sur ces pages : l'entrée est donc citée par son mot. Entrée nzuzi : « le premier-né de deux jumeaux ; (N, SB) le dernier-né ; ~ ye nsimba, jumeaux » ; entrée Nzuzi : « (N) nom propre, le dernier-né de jumeaux ». Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1910,
+              "to": 1910,
+              "label": "1910"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nzuzi apparaît par écrit dans le dictionnaire kikongo-français du père Butaye, publié en 1910 : il le donne comme le nom du second de deux jumeaux, le premier s'appelant Nsimba. Le même dictionnaire donne aussi nzuzi pour un chat-tigre ; les sources lues ne disent pas si les deux mots ont un lien. C'est la plus ancienne trace sûre de ce nom que le projet connaît ; elle dit quand un missionnaire l'a écrit, pas depuis quand des familles le portent. Le peuple kongo existait déjà avant ce dictionnaire.",
+            "formAsWritten": "Nzuzi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "René Butaye, Dictionnaire kikongo-français, français-kikongo, 1910",
+                "author": "René Butaye",
+                "year": 1910,
+                "url": "https://archive.org/details/dictionnaire-butaye",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 230-231",
+                "notes": "Roulers, Jules De Meester, seconde édition ; la première, autographiée, date de 1901 (avant-propos). Lu dans la numérisation d'archive.org ; l'année 1910 est celle que donne la notice d'archive.org, la page de titre n'en porte pas. L'auteur est un jésuite qui a vécu près de quinze ans au Congo. Pages 230 et 231 : « Nzuzi [...] chat tigre, chat botté » (p. 230) ; « Nzuzi [...] le second des enfants jumeaux, le premier s'appelle nsimba » (p. 231). Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1977,
+              "to": 1977,
+              "label": "Proposée en 1977"
+            },
+            "era": "modern",
+            "statement": "Le nom Nzuzi viendrait du verbe zuta, zutua, « tirer » : le second jumeau est « tiré » dehors après le premier, qui le tient, selon Ungina Ndoma. Cette description porte sur le sud des Kongo.",
+            "hypothesisGroup": "origine du nom Nzuzi",
+            "sources": [
+              {
+                "title": "Kongo Personal Names Today: a Sketch",
+                "author": "Ungina Ndoma",
+                "year": 1977,
+                "url": "https://ans-names.pitt.edu/ans/article/download/845/844",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 89",
+                "notes": "Names: A Journal of Onomastics, vol. 25, n° 2, 1977, p. 88-98. Texte intégral lu. Page 89 : « [...] the other twin who is then drawn out (zuta, zutua - 'to draw'). » La liste des noms de naissance renvoie à F. Ngoma, « L'initiation bakongo et sa signification », Bulletin du CEPSI, n° 66, 1964, p. 46, que nous n'avons pas lu. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

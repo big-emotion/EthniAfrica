@@ -6,7 +6,7 @@
   },
   "id": "PAT_MOBUTU",
   "nameMain": "Mobutu",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Mobutu",
@@ -98,7 +98,7 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "Les sources décrivent Mobutu comme nom personnel choisi par son père, non comme nom de clan ; le modèle ne proposant pas de catégorie générique pour le prénom ou nom individuel, clan_name est conservé comme valeur technique avec cette réserve explicite."
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues le disent un nom de personne choisi par le père de celui qui le porte. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "alliances",
@@ -112,5 +112,110 @@
       "fieldPath": "homonyms",
       "reason": "Les dictionnaires historiques, biographies et recherches exactes n'ont pas établi une seconde origine homonyme du nom Mobutu."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mobutu est un nom de personne congolais, devenu célèbre comme celui du président du Zaïre. Selon un portrait du Monde de 1997, son père l'avait choisi et on le traduit par « Poussière ». Les sources lues ne disent pas si c'est un nom de clan ; nous présentons plus bas ce qu'elles disent.",
+    "names": [
+      {
+        "nameText": "Mobutu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": "son père, selon Le Monde",
+        "shortLine": "Un nom congolais choisi par un père et traduit « Poussière » ; le nom d'un président du Zaïre.",
+        "periodLabel": "Écrit dès 1956 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1997,
+              "to": 1997,
+              "label": "Proposée en 1997"
+            },
+            "era": "modern",
+            "statement": "Le nom Mobutu voudrait dire « Poussière » : son père l'aurait choisi, selon la journaliste Catherine Simon, dans Le Monde.",
+            "hypothesisGroup": "origine du nom Mobutu",
+            "sources": [
+              {
+                "title": "Le crépuscule du maréchal « Poussière »",
+                "author": "Catherine Simon",
+                "year": 1997,
+                "url": "https://www.lemonde.fr/archives/article/1997/05/06/le-crepuscule-du-marechal-poussiere_3757478_1819218.html",
+                "tier": "unverified",
+                "source_kind": "press",
+                "page": "article du 6 mai 1997",
+                "notes": "Portrait publié dans Le Monde le 6 mai 1997, lu en entier. Il dit que le président du Zaïre rejoindra les chefs d'État déchus « sous le nom de Mobutu, « Poussière », choisi par son père », distingue ce nom de son prénom chrétien Joseph-Désiré et du nom qu'il se donne en 1972, Sese Seko Kuku Ngbendu wa za Banga, et rapporte qu'en janvier 1956 le « sergent Mobutu » reçoit une proposition de collaboration à un journal. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1972,
+              "to": 1972,
+              "label": "En 1972, rapporté en 1997"
+            },
+            "era": "modern",
+            "statement": "Le nom Mobutu reste, selon Le Monde en 1997, celui sous lequel le président du Zaïre laissera son souvenir, malgré le nom qu'il s'est donné en 1972, Sese Seko Kuku Ngbendu wa za Banga, lors des lois dites de l'authenticité.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Le crépuscule du maréchal « Poussière »",
+                "author": "Catherine Simon",
+                "year": 1997,
+                "url": "https://www.lemonde.fr/archives/article/1997/05/06/le-crepuscule-du-marechal-poussiere_3757478_1819218.html",
+                "tier": "unverified",
+                "source_kind": "press",
+                "page": "article du 6 mai 1997",
+                "notes": "Portrait publié dans Le Monde le 6 mai 1997, lu en entier. Il dit que le président du Zaïre rejoindra les chefs d'État déchus « sous le nom de Mobutu, « Poussière », choisi par son père », distingue ce nom de son prénom chrétien Joseph-Désiré et du nom qu'il se donne en 1972, Sese Seko Kuku Ngbendu wa za Banga, et rapporte qu'en janvier 1956 le « sergent Mobutu » reçoit une proposition de collaboration à un journal. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "10 septembre 1960"
+            },
+            "era": "modern",
+            "statement": "Le nom Mobutu figure dans un télégramme américain du 10 septembre 1960, qui parle du chef d'état-major congolais Mobutu.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Office of the Historian — Telegram From the Mission at the United Nations to the Department of State, 10 September 1960, FRUS 1958–1960, volume XIV, document 206",
+                "author": "Office of the Historian, U.S. Department of State",
+                "year": null,
+                "url": "https://history.state.gov/historicaldocuments/frus1958-60v14/d206",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "document 206",
+                "notes": "Le télégramme, daté de New York, dit « The Congolese Chief of Staff Mobutu has kept contact with others in Kasavubu's camp ». Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1956,
+              "to": 1956,
+              "label": "Janvier 1956, rapporté en 1997"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mobutu apparaît dans le récit de Catherine Simon pour janvier 1956, quand le patron d'un journal belge propose au « sergent Mobutu » d'écrire des actualités africaines. C'est la plus ancienne trace de ce nom que le projet connaît ; elle est de seconde main, rapportée quarante ans plus tard, et le même portrait dit que le père avait choisi le nom bien avant.",
+            "formAsWritten": "Mobutu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Le crépuscule du maréchal « Poussière »",
+                "author": "Catherine Simon",
+                "year": 1997,
+                "url": "https://www.lemonde.fr/archives/article/1997/05/06/le-crepuscule-du-marechal-poussiere_3757478_1819218.html",
+                "tier": "unverified",
+                "source_kind": "press",
+                "page": "article du 6 mai 1997",
+                "notes": "Portrait publié dans Le Monde le 6 mai 1997, lu en entier. Il dit que le président du Zaïre rejoindra les chefs d'État déchus « sous le nom de Mobutu, « Poussière », choisi par son père », distingue ce nom de son prénom chrétien Joseph-Désiré et du nom qu'il se donne en 1972, Sese Seko Kuku Ngbendu wa za Banga, et rapporte qu'en janvier 1956 le « sergent Mobutu » reçoit une proposition de collaboration à un journal. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -25,8 +25,10 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * day, including those an accent-boundary fix then caught. The 19 left were
  * each read and kept: they state that an origin is unknown or denied, give a spelling's or a group's
  * provenance, describe a Bantu prefix, or are already attributed.
+ * 19 -> 17 on 2026-10-14: two of the nineteen were prose of fiches
+ * folded or withdrawn after waves 14 to 19.
  */
-export const ASSERTIVE_ETYMOLOGY_RATCHET = 19;
+export const ASSERTIVE_ETYMOLOGY_RATCHET = 17;
 
 export interface EtymologyHypothesesResult {
   ok: boolean;

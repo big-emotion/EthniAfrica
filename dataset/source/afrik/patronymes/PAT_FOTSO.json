@@ -11,12 +11,15 @@
     {
       "spelling": "Fotso",
       "attestations": [
-        { "countryId": "CMR", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "CMR",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "lineage",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -72,8 +75,95 @@
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
+      "fieldPath": "nameSystem",
+      "reason": "Fotso est un nom de famille : aucune source consultée n'en fait un nom de clan. Le modèle n'a pas de case pour un nom de famille héréditaire de ce genre : la fiche garde la case des noms de clan, la plus proche, avec la lignée pour unité, sans dire que Fotso est un clan."
+    },
+    {
       "fieldPath": "transmissionMode",
-      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+      "reason": "Nous ne documentons pas encore comment le nom Fotso passe d'une génération à l'autre : aucune source dédiée n'a été consultée à ce jour."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Fotso est un nom du Cameroun, porté par des Bamiléké de l'Ouest. On ne sait pas avec certitude ce qu'il veut dire : les sources lues ne le disent pas. Il est écrit dès 1956 dans les archives de l'ONU.",
+    "names": [
+      {
+        "nameText": "Fotso",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom du Cameroun, porté par des Bamiléké de l'Ouest, écrit dès 1956.",
+        "periodLabel": "Écrit dès 1956 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "Rapporté en 2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Fotso est celui de Victor Fotso, présenté par la presse comme un homme d'affaires bamiléké mort en 2020 et enterré à Bandjoun. L'article ne dit pas ce que veut dire le nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "En Afrique, l'histoire du premier milliardaire à se faire enterrer avec son smartphone",
+                "author": "Albert Savana (Financial Afrik)",
+                "year": 2020,
+                "url": "https://www.financialafrik.com/2020/06/23/en-afrique-lhistoire-du-premier-milliardaire-a-se-faire-enterrer-avec-son-smartphone/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "article du 23 juin 2020",
+                "notes": "Article de presse du 23 juin 2020, lu le 13 octobre 2026. Il présente Victor Fotso, mort le 20 mars en France à 94 ans, comme un homme d'affaires bamiléké inhumé le 20 juin à Bandjoun. Il ne dit rien du sens ni de l'origine du nom Fotso."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1956,
+              "to": 1958,
+              "label": "De 1956 à 1958"
+            },
+            "era": "colonial",
+            "statement": "Le nom Fotso est porté par plusieurs personnes différentes qui écrivent au Conseil de tutelle de l'ONU sur le Cameroun sous administration française, entre octobre 1956 et octobre 1958 : Justin Fotso Wandjie, Jean-Henri, Raphaël, Michel, Benoît et Joseph Fotso.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Communication from Mr. Justin Fotso Wandjie concerning the Cameroons under French Administration",
+                "author": "Organisation des Nations unies, Conseil de tutelle",
+                "year": 1956,
+                "url": "https://digitallibrary.un.org/record/3837734",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "notice du catalogue (titre et date)",
+                "notes": "Communication T/COM.5/L.193 d'une page, datée du 5 octobre 1956, lue dans la notice de la bibliothèque numérique de l'ONU le 13 octobre 2026. Seuls le titre, la date et les mots-clés ont été lus. La même bibliothèque classe, entre janvier 1957 et octobre 1958, cinq pétitions d'autres personnes nommées Fotso sur le Cameroun sous administration française : Jean-Henri, Raphaël, Michel, Benoît et Joseph (titres et dates lus dans les résultats de recherche de la bibliothèque)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1956,
+              "to": 1956,
+              "label": "5 octobre 1956"
+            },
+            "era": "colonial",
+            "statement": "Le nom Fotso apparaît par écrit dans le titre d'une communication au Conseil de tutelle de l'ONU, envoyée par Justin Fotso Wandjie pour le Cameroun sous administration française. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "birth": true,
+            "formAsWritten": "Fotso",
+            "sources": [
+              {
+                "title": "Communication from Mr. Justin Fotso Wandjie concerning the Cameroons under French Administration",
+                "author": "Organisation des Nations unies, Conseil de tutelle",
+                "year": 1956,
+                "url": "https://digitallibrary.un.org/record/3837734",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "notice du catalogue (titre et date)",
+                "notes": "Communication T/COM.5/L.193 d'une page, datée du 5 octobre 1956, lue dans la notice de la bibliothèque numérique de l'ONU le 13 octobre 2026. Seuls le titre, la date et les mots-clés ont été lus. La même bibliothèque classe, entre janvier 1957 et octobre 1958, cinq pétitions d'autres personnes nommées Fotso sur le Cameroun sous administration française : Jean-Henri, Raphaël, Michel, Benoît et Joseph (titres et dates lus dans les résultats de recherche de la bibliothèque)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

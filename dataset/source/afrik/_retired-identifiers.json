@@ -866,5 +866,180 @@
     "successorId": null,
     "reason": "Not a people but a pejorative umbrella term laid over many distinct peoples. Its history is now told on the word fiche WRD_KIRDI, and the peoples it covers keep their own fiches. Withdrawn with no successor: a word fiche is not a people, so the id redirects nowhere. Its prose stays readable in the git history.",
     "decidedOn": "2026-10-12"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_NIABOUA",
+    "successorId": "PPL_NYABWA",
+    "reason": "Same people: Niaboua is the French transcription of Nyabwa (ISO nwb, Côte d'Ivoire), and it names strictly one sub-group that the word is stretched over. The keeper holds the name history and already lists Niaboua, Nyabwa-Nyedebwa, Nyaboa and Kouzié. Nothing new is carried. Not carried: the spellings Niabua and Nybwa, which no source opened gives; the Joshua Project and PeopleGroups pages, and a 98 000 figure against the keeper's own estimate; Zézé-Béké 1989 (needs review), cited for nothing carried. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_MOUSGOUM",
+    "successorId": "PPL_MUSGU",
+    "reason": "Same people: Mousgoum is the French spelling of Musgu (ISO mug, self-name Mulwi, Cameroon and Chad), which the keeper already gives and tells in its name history. Nothing new is carried. Not carried: Mouloui, Mumwi, Musuk and Mousgoun, which no source opened gives; Nigeria as a country, which no source opened places; the Joshua Project Chad page; a Radio Future Africa page (needs review). Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_LALA_SOLI",
+    "successorId": "PPL_SOLI",
+    "reason": "Same people (ISO sby, Zambia): « Lala-Soli » is a classification label, not a name the sources give, and the keeper holds the name history. Folded in: the language code sby, which the keeper had wrong (sis is Siuslaw), with the Glottolog page soli1239 that gives it. Not carried: Bene Soli, Ba-Soli and Chisoli, which no source opened gives; the Siegel 2008 chapter, which would not open; the Britannica Zambia page; the 150 000 estimate. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_SWAKA",
+    "successorId": "PPL_LALA_SWAKA",
+    "reason": "Same people (ISO leb, Zambia): the keeper holds the name history, placed in Chitina's country after Doke 1931, where this fiche put the Swaka at Kabwe without a source. Nothing new is carried. Not carried: the Baswaka spelling (the keeper has Ba-Swaka), the Kabwe location, the 83 000 Joshua Project figure against the keeper's PeopleGroups figure, a Science Publishing Group article (unverified), the Glottolog Lala-Bisa page. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_RUFIJI",
+    "successorId": "PPL_NDENGEREKO",
+    "reason": "Not a people of its own: Rufiji is the regional label for the clans of the river delta (Burton 1860, vol. I, p. 30, « Watu wa Rufiji », « Warufiji »), and « Rufiji-Ruvuma » only a linguistic subgroup (Gonzales). The keeper already gives Warufiji and Rufiji as names, with Burton p. 30, and the Rufiji variety (rui) as a dialect of Ndengereko (ndg). Nothing new is carried. Not carried: Waruiji and Fiji, which no source opened gives; the PeopleGroups page; a Wetlands International page and Indigenous Africa (both need review). Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_LEYA",
+    "successorId": "PPL_TOKALEYA",
+    "reason": "Not a people of its own: the Leya (Baleya) are the named part of the Tokaleya, and the keeper already holds the Leya forms and the Mukuni, Sekute and Musukotwani usage in its name history (Smith and Dale 1920; Sawka and others 2015). Nothing new is carried. Not carried: the Calameo history of the Mukuni dynasty (a community source, unverified); the Joshua Project figure of 21 000 Leya; the language code on this fiche. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_WONNIN",
+    "successorId": "PPL_GODIE",
+    "reason": "Same people (ISO god, Côte d'Ivoire): the keeper holds the name history (Godié, Koyo, Gwèdji). No source opened gives Wonnin as a name of the Godié or as their self-name, and wave 18 dropped it. The home « did you know » anecdote now tells on PPL_GODIE. Nothing new is carried. Not carried: Wonnin; a VoixVoie de Femme page (needs review); Kouassi Lowa 1967, Djagnan 1965 and Kokra 1956, cited for nothing carried. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_LALA_AMBO",
+    "successorId": "PPL_AMBO",
+    "reason": "Same people (ISO leb, Zambia): « Lala-Ambo » is a classification label, and the keeper holds the name history, which opens on Stefaniszyn 1964. Nothing new is carried. Not carried: Kambonsenga and Bena Nyendwa Ambo, which no source opened gives; the Joshua Project Zambia page; the Siegel chapter on the Lala-Lamba and its AfricaBib record, cited for the Lala label only. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_CHUMBURUNG",
+    "successorId": "PPL_NCHUMURU",
+    "reason": "Same people and language (ISO ncu, Ghana): Chumburung is the name of the language, and the keeper already lists Chumburung, Nchummuru and Nchumburu and holds the name history. Folded in: the Glottolog page chum1261 that gives the code ncu. Not carried: Kyongborong, Nchimburu and Nchumburung, which no source opened gives; the dialect and population lines, which rest on Wikipedia and Omniglot; a Northern Ghana Peoples document (needs review). Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_TONGA_ILA",
+    "successorId": "PPL_ILA",
+    "reason": "Not a people but the academic « Ila-Tonga » cluster of two groups, which the fiche itself says. Its code (ilb), region and Ba-ila names are the Ila's, and the keeper holds the name history. Nothing new is carried. Not carried: Ba-Tonga as a self-name, which belongs to the Tonga fiche; Shukulumbwe and Sukulumbwe, where the keeper tells Mashukulumbwe from Livingstone 1857; Smith and Dale 1920, already the keeper's; the eHRAF and Wiktionary pages. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_LUNDA_CHOKWE",
+    "successorId": "PPL_LUNDA",
+    "reason": "Not a people but an Angolan ethno-political category (Country Studies: « the so-called Lunda-Chokwe »); Ruund, Lunda and Chokwe are not mutually intelligible. PPL_LUNDA already carries the category as one of its names, and PPL_CHOKWE holds the Chokwe and the code cjk. Nothing new is carried. Not carried: the 5 500 000 estimate that adds the two; the Britannica Lunda empire page, a Joshua Project Chokwe page and an Africa Federation page, cited for nothing carried. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_GOVA",
+    "successorId": "PPL_MBUKUSHU",
+    "reason": "Same people (ISO mhw): Gova is the name used in Zambia, and the keeper already lists it among its names and holds the name history. Nothing new is carried. Not carried: Bukushu, Bukusu, Humbukushu, Haghuva, Ghuva, Kusso and Mbukuschu, which no source opened gives; the Joshua Project and PeopleGroups pages, Omniglot and Glottolog, cited for nothing carried. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_LALA_UNGA",
+    "successorId": "PPL_UNGA",
+    "reason": "Same people: the Unga of the Bangweulu swamps (same exonyms, same Luapula territory). « Lala-Unga » is only a classification label, and Melland is the one source that links them to the Lala. The keeper holds the name history. Nothing new is carried. Not carried: the label Lala-Unga and the form « Unga of Zambia », which no source opened gives; the Siegel chapter on the Lala-Lamba, cited for the label only; a Daily Nation review of a book on the Unga (unverified press). Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_MANCANHA",
+    "successorId": "PPL_MANKANYA",
+    "reason": "Same people (Bak group; Guinea-Bissau, Senegal, Gambia): the keeper is the better sourced fiche, with the name history and the right language code, knf. The code mcs on this fiche is not the Mankanya language's. The Guinea-Bissau country row now points at the keeper. Nothing new is carried. Not carried: Bulama and Burama, which no source opened gives; the Joshua Project, BeingAfrican and 101 Last Tribes pages; an Ethnologue entry under the wrong code. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_BODI",
+    "successorId": "PPL_MEEN",
+    "reason": "Same people (ISO mym, self-name Me'en, Ethiopia): the Bodi are the pastoral Me'en of the lower Omo, and the keeper tells the name Bodi already (« Bodà » 1896, Turton) and holds the name history. The Nilo-Saharan family list no longer shows the Bodi beside the Me'en. Nothing new is carried. Not carried: the Joshua Project Bodi and Me'en pages, 101 Last Tribes and a tour operator's page on the Ka'el festival. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "withdrawn",
+    "retiredId": "PPL_GBODJIBO",
+    "successorId": null,
+    "reason": "No source attests Gbodjibo as a people. Its code gbb is Kaytetye, an Australian language, as it was for PPL_GBELE. What the fiche describes is the Guébie of Sande 2017, and Godjiboué is a Godié locality already in PPL_GODIE. Withdrawn with no successor; a Guébie fiche, if one is wanted, starts from Sande 2017 rather than from this one. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "withdrawn",
+    "retiredId": "PPL_KPANA",
+    "successorId": null,
+    "reason": "No source opened attests a Kpana people in Sierra Leone. The fiche itself says the name is poorly documented and may be a sub-group or a local variant of a wider Mandé group, and it has no language code. Withdrawn with no successor. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "withdrawn",
+    "retiredId": "PPL_HOBA",
+    "successorId": null,
+    "reason": "Unattested: neither Ekondi 2021 nor the CEFAN page for the Republic of the Congo contains « Hoba ». Its code hbb is Nya Huba, a Chadic language of Nigeria, and an older note puts a Hoba in the DRC and the Central African Republic, which contradicts the fiche's Niari and Bouenza. Withdrawn with no successor. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "withdrawn",
+    "retiredId": "PPL_TSAO",
+    "successorId": null,
+    "reason": "Unattested: no source opened gives a people, a language or an ethnonym « Tsao » or « Batsao », only generic pages on the Congo basin, and the fiche has no language code. If a real group was meant (for instance the Tsaangi of Gabon and Congo-Brazzaville), it needs its own fiche from a source. Withdrawn with no successor. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "withdrawn",
+    "retiredId": "PPL_WANDYA",
+    "successorId": null,
+    "reason": "Unattested: no source opened gives Wandya as a people, and the fiche itself says its language code is to be confirmed and the group poorly documented. It may be the Wanda of Tanzania or a form of Iciwanda, which is a different people. Withdrawn with no successor. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "withdrawn",
+    "retiredId": "PPL_ANTSALOVA",
+    "successorId": null,
+    "reason": "Not a people but a place: Antsalova is a town, a commune and a district of the Melaky region, in western Madagascar. The people who live there are Sakalava, whom PPL_SAKALAVA tells. Withdrawn with no successor. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "kept-distinct",
+    "retiredId": "PPL_MANDE_DU_SUD",
+    "successorId": null,
+    "reason": "Not a duplicate of PPL_MANDE_MACRO. Mandé du Sud is the linguists' grouping of the Dan, Guro, Wan, Mano, Beng, Mwan, Gban and Toura (Dwyer 1989, Vydrin 2009), a branch of the Mandé family, and its search answer says it is a grouping by language, not a people. The operator's ruling on wave 3 keeps it as that: it has no name history of its own, the names stay on the member peoples, and the Côte d'Ivoire census rows still point at it.",
+    "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "renamed",
+    "retiredId": "PPL_KWA",
+    "successorId": "PPL_GWA",
+    "reason": "The fiche describes the Gwa, also called M'bato, a lagoon people of south-east Côte d'Ivoire (Delafosse 1904, p. 11; Koroko 2023, pp. 282-283), not the Kwa language family: its own name history says they must not be confused, and the id collided with FLG_KWA. It takes the people's name: main name Gwa, the exonym list no longer repeats it. Its language code is gwa (Mbato, Glottolog mbat1247), not gwx, which is the Gua of Anum (PPL_ANUM). Its name history is unchanged. The prose of the old fiche stays readable in the git history.",
+    "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "renamed",
+    "retiredId": "PPL_LALA_LAMBA",
+    "successorId": "PPL_LAMBA_ZAMBIA",
+    "reason": "The fiche describes the Lamba of the Copperbelt (Zambia) and the south of Katanga (DRC), who call themselves Lamba (ISO lam). « Lala-Lamba » comes from the title of a 1908 language handbook and names no people of its own, as the fiche's name history says. It takes the people's name, Lamba, with Lala-Lamba kept as a name. The id PPL_LAMBA is already the Lama of Togo (ISO las), so the Bantu Lamba take PPL_LAMBA_ZAMBIA. Its name history is unchanged.",
+    "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_NABT",
+    "successorId": "PPL_NABDAM",
+    "reason": "Same people: the two fiches carry the same exonym lists, the same Nangodi sources (the Mamprusi Facebook post and Akolgo's article) and the same ISO position (no code; a request was rejected in January 2017). Nabdam is the people and the district, Nabt the name of the language. The keeper holds the name history and is now filed with the Gur, as the retired fiche was, where its own text places it. Not carried: the Burkina Faso presence and the 100,000 estimate, which rest on a district profile whose tier is needs_review. The headline stays Nabdam, the name of the district and of the people in the history's sources.",
+    "decidedOn": "2026-10-14"
   }
 ]

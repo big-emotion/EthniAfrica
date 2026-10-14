@@ -1,0 +1,1070 @@
+[
+  {
+    "id": "seq-1",
+    "file": "01.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0016831275720164609,
+    "meanMaxChannelDifference": 0.11293484224965707,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "seq-2",
+    "file": "02.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0049039780521262,
+    "meanMaxChannelDifference": 0.2843539094650206,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "seq-3",
+    "file": "03.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0025363511659807956,
+    "meanMaxChannelDifference": 0.15375102880658437,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "seq-4",
+    "file": "04.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0045274348422496575,
+    "meanMaxChannelDifference": 0.28560219478737997,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "seq-5",
+    "file": "05.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.005890946502057614,
+    "meanMaxChannelDifference": 0.3450871056241427,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "seq-6",
+    "file": "06.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0032674897119341563,
+    "meanMaxChannelDifference": 0.18196433470507545,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "seq-7",
+    "file": "07.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0035349794238683126,
+    "meanMaxChannelDifference": 0.24773936899862825,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "seq-8",
+    "file": "08.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.005775720164609054,
+    "meanMaxChannelDifference": 0.3445493827160494,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "seq-9",
+    "file": "09.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.003300411522633745,
+    "meanMaxChannelDifference": 0.21534979423868314,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "chr-1",
+    "file": "10.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.002255144032921811,
+    "meanMaxChannelDifference": 0.13697805212620026,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "chr-2",
+    "file": "11.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0024972565157750344,
+    "meanMaxChannelDifference": 0.16572770919067215,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "chr-3",
+    "file": "12.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.002546639231824417,
+    "meanMaxChannelDifference": 0.14459739368998628,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "chr-4",
+    "file": "13.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.003721536351165981,
+    "meanMaxChannelDifference": 0.2202496570644719,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "chr-5",
+    "file": "14.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.004446502057613168,
+    "meanMaxChannelDifference": 0.2749814814814815,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "chr-branch",
+    "file": "15.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.003578875171467764,
+    "meanMaxChannelDifference": 0.20926063100137174,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "map-a",
+    "file": "16.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.002816872427983539,
+    "meanMaxChannelDifference": 0.17458847736625516,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "map-b",
+    "file": "17.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.003113854595336077,
+    "meanMaxChannelDifference": 0.19208230452674896,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "map-c",
+    "file": "18.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.003203017832647462,
+    "meanMaxChannelDifference": 0.19543689986282578,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "pair",
+    "file": "19.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0027860082304526747,
+    "meanMaxChannelDifference": 0.1613429355281207,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "stress",
+    "file": "20.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.005694787379972565,
+    "meanMaxChannelDifference": 0.33447256515775037,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "overflow",
+    "file": "21.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.010526748971193416,
+    "meanMaxChannelDifference": 0.5824218106995884,
+    "limits": {
+      "fraction": 0.012,
+      "mean": 0.65
+    }
+  },
+  {
+    "id": "seq-4-parchemin",
+    "file": "22.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.004270233196159122,
+    "meanMaxChannelDifference": 0.22923456790123456,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "chr-3-parchemin",
+    "file": "23.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.002327846364883402,
+    "meanMaxChannelDifference": 0.1224156378600823,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "map-c-parchemin",
+    "file": "24.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.002914951989026063,
+    "meanMaxChannelDifference": 0.15937448559670783,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "seq-9-parchemin",
+    "file": "25.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.002373113854595336,
+    "meanMaxChannelDifference": 0.14791975308641975,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "map-fula",
+    "file": "26.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.004452674897119342,
+    "meanMaxChannelDifference": 0.24764128943758573,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "map-fula-region",
+    "file": "27.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.003972565157750343,
+    "meanMaxChannelDifference": 0.2323511659807956,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "map-fula-parchemin",
+    "file": "28.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0036611796982167354,
+    "meanMaxChannelDifference": 0.1894190672153635,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "map-fula-nombre",
+    "file": "29.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.004689300411522634,
+    "meanMaxChannelDifference": 0.27816529492455416,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "map-fula-nombre-region",
+    "file": "30.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.005050068587105624,
+    "meanMaxChannelDifference": 0.3110562414266118,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "map-fula-part",
+    "file": "31.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.004906721536351166,
+    "meanMaxChannelDifference": 0.28670301783264746,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "atlas-1880",
+    "file": "32.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.005164609053497943,
+    "meanMaxChannelDifference": 0.29367146776406033,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "atlas-1914",
+    "file": "33.png",
+    "identical": false,
+    "ok": false,
+    "changedFraction": 0.007457475994513032,
+    "meanMaxChannelDifference": 0.41803292181069956,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "atlas-independances",
+    "file": "34.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0031659807956104253,
+    "meanMaxChannelDifference": 0.17171947873799726,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "atlas-1500",
+    "file": "35.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0042791495198902605,
+    "meanMaxChannelDifference": 0.23312825788751715,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "atlas-1880-parchemin",
+    "file": "36.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.004799725651577503,
+    "meanMaxChannelDifference": 0.26727091906721534,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "atlas-capacite-45",
+    "file": "37.png",
+    "identical": false,
+    "ok": false,
+    "changedFraction": 0.007187928669410151,
+    "meanMaxChannelDifference": 0.38505212620027435,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "atlas-proto-collisions",
+    "file": "38.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0034993141289437588,
+    "meanMaxChannelDifference": 0.19647325102880658,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-pays-01",
+    "file": "39.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0023415637860082304,
+    "meanMaxChannelDifference": 0.15503772290809328,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-pays-02",
+    "file": "40.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.004649519890260631,
+    "meanMaxChannelDifference": 0.2738525377229081,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-pays-03",
+    "file": "41.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.00436076817558299,
+    "meanMaxChannelDifference": 0.24843415637860083,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-pays-04",
+    "file": "42.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0036282578875171468,
+    "meanMaxChannelDifference": 0.22374074074074074,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-pays-05",
+    "file": "43.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.00507201646090535,
+    "meanMaxChannelDifference": 0.2921522633744856,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-pays-06",
+    "file": "44.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.004746913580246913,
+    "meanMaxChannelDifference": 0.268340877914952,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-pays-07",
+    "file": "45.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.003999314128943759,
+    "meanMaxChannelDifference": 0.2574609053497942,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-nom-recu-01",
+    "file": "46.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0025665294924554186,
+    "meanMaxChannelDifference": 0.1364739368998628,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-nom-recu-02",
+    "file": "47.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0036604938271604937,
+    "meanMaxChannelDifference": 0.19623799725651578,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-nom-recu-03",
+    "file": "48.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.004052126200274349,
+    "meanMaxChannelDifference": 0.21520713305898492,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-nom-recu-04",
+    "file": "49.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0038813443072702332,
+    "meanMaxChannelDifference": 0.20255075445816187,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-nom-recu-05",
+    "file": "50.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.004384087791495199,
+    "meanMaxChannelDifference": 0.23436145404663924,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-nom-recu-06",
+    "file": "51.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.004106995884773663,
+    "meanMaxChannelDifference": 0.21489506172839506,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-nom-recu-07",
+    "file": "52.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0029279835390946503,
+    "meanMaxChannelDifference": 0.15150068587105625,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-nom-recu-08",
+    "file": "53.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0023532235939643345,
+    "meanMaxChannelDifference": 0.14469272976680383,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-nom-famille-01",
+    "file": "54.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0022098765432098763,
+    "meanMaxChannelDifference": 0.14673936899862824,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-nom-famille-02",
+    "file": "55.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.003125514403292181,
+    "meanMaxChannelDifference": 0.1790432098765432,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-nom-famille-03",
+    "file": "56.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.005251028806584362,
+    "meanMaxChannelDifference": 0.2948347050754458,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-nom-famille-04",
+    "file": "57.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.004868998628257888,
+    "meanMaxChannelDifference": 0.2866412894375857,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-nom-famille-05",
+    "file": "58.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.003890946502057613,
+    "meanMaxChannelDifference": 0.2237668038408779,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-nom-famille-06",
+    "file": "59.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0025699588477366255,
+    "meanMaxChannelDifference": 0.15880521262002745,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-nom-famille-07",
+    "file": "60.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0031611796982167354,
+    "meanMaxChannelDifference": 0.21166186556927297,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-mots-01",
+    "file": "61.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0020521262002743484,
+    "meanMaxChannelDifference": 0.12691426611796983,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-mots-02",
+    "file": "62.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0031117969821673527,
+    "meanMaxChannelDifference": 0.17455555555555555,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-mots-03",
+    "file": "63.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0040336076817558296,
+    "meanMaxChannelDifference": 0.24644444444444444,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-mots-04",
+    "file": "64.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.003374485596707819,
+    "meanMaxChannelDifference": 0.19017901234567902,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-mots-05",
+    "file": "65.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0034156378600823044,
+    "meanMaxChannelDifference": 0.18768587105624143,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-mots-06",
+    "file": "66.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.003003429355281207,
+    "meanMaxChannelDifference": 0.17495541838134432,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-mots-07",
+    "file": "67.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.003300411522633745,
+    "meanMaxChannelDifference": 0.2118676268861454,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-frontieres-01",
+    "file": "68.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.002198216735253772,
+    "meanMaxChannelDifference": 0.12114471879286694,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-frontieres-02",
+    "file": "69.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0031406035665294926,
+    "meanMaxChannelDifference": 0.16292455418381344,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-frontieres-03",
+    "file": "70.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.002613854595336077,
+    "meanMaxChannelDifference": 0.13640054869684498,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-frontieres-04",
+    "file": "71.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0029012345679012346,
+    "meanMaxChannelDifference": 0.14826886145404664,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-frontieres-05",
+    "file": "72.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0033271604938271606,
+    "meanMaxChannelDifference": 0.17198902606310013,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-frontieres-06",
+    "file": "73.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0025877914951989026,
+    "meanMaxChannelDifference": 0.14414334705075446,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-frontieres-07",
+    "file": "74.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.00206721536351166,
+    "meanMaxChannelDifference": 0.12756241426611797,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-afrique-tout-01",
+    "file": "75.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0016042524005486969,
+    "meanMaxChannelDifference": 0.11214197530864198,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-afrique-tout-02",
+    "file": "76.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0025281207133058983,
+    "meanMaxChannelDifference": 0.16380109739368998,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-afrique-tout-03",
+    "file": "77.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0027688614540466393,
+    "meanMaxChannelDifference": 0.16136899862825788,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-afrique-tout-04",
+    "file": "78.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.003588477366255144,
+    "meanMaxChannelDifference": 0.22594787379972564,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-afrique-tout-05",
+    "file": "79.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.002954732510288066,
+    "meanMaxChannelDifference": 0.17515157750342936,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-afrique-tout-06",
+    "file": "80.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.002611111111111111,
+    "meanMaxChannelDifference": 0.15696433470507545,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-afrique-tout-07",
+    "file": "81.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0025781893004115227,
+    "meanMaxChannelDifference": 0.18410150891632374,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-villes-01",
+    "file": "82.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0021310013717421123,
+    "meanMaxChannelDifference": 0.11593552812071331,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-villes-02",
+    "file": "83.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.002834705075445816,
+    "meanMaxChannelDifference": 0.15008230452674898,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-villes-03",
+    "file": "84.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.002300411522633745,
+    "meanMaxChannelDifference": 0.11753703703703704,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-villes-04",
+    "file": "85.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0024979423868312757,
+    "meanMaxChannelDifference": 0.1267681755829904,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-villes-05",
+    "file": "86.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0023079561042524004,
+    "meanMaxChannelDifference": 0.1248875171467764,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-villes-06",
+    "file": "87.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.0021385459533607683,
+    "meanMaxChannelDifference": 0.13017626886145406,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-atlas-1880",
+    "file": "88.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.005405349794238683,
+    "meanMaxChannelDifference": 0.30744307270233195,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  },
+  {
+    "id": "serie-atlas-1914-parchemin",
+    "file": "89.png",
+    "identical": false,
+    "ok": true,
+    "changedFraction": 0.007,
+    "meanMaxChannelDifference": 0.38247736625514406,
+    "limits": {
+      "fraction": 0.007,
+      "mean": 0.4
+    }
+  }
+]

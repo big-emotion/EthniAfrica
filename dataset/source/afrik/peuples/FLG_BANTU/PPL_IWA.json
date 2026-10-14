@@ -94,5 +94,127 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Iwa désigne un peuple bantou du nord-est de la Zambie, dans le district d'Isoka, dont le chef est Kafwimbi. On l'écrit aussi Wiwa. On ne sait pas comment ce peuple se nomme lui-même. On ne sait pas avec certitude d'où vient le nom ; un récit en chinamwanga explique la forme Wiwa, que nous présentons plus bas.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Wiwa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une forme écrite dès 1897 sous la forme proche Awa-wiwa ; un récit en chinamwanga en donne l'origine.",
+        "periodLabel": "Écrit dès 1897",
+        "accounts": [
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "Proposée en 1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Wiwa viendrait d'une querelle entre deux chefs, Muchinga et Muwemba, selon H. M. F. Sinkamba. Après l'épisode, le pays de Muchinga, aujourd'hui sous le chef Kafwimbi, serait devenu celui des Wiwa.",
+            "hypothesisGroup": "origine du nom Wiwa",
+            "sources": [
+              {
+                "title": "Imikalile ya Winamwanga",
+                "author": "H. M. F. Sinkamba",
+                "year": 1984,
+                "url": "https://archive.org/details/imikalile-ya-winamwanga",
+                "tier": "referenced",
+                "source_kind": "community",
+                "page": "p. 8, 23",
+                "notes": "Livre en chinamwanga imprimé à Ndola. Lu dans la numérisation d'Internet Archive le 13 octobre 2026 ; les numéros de page imprimés ont été lus sur l'image. Nous ne lisons pas le chinamwanga couramment : nous ne retenons que les deux phrases où le récit dit d'où vient le nom Wiwa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "Publié en 1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wiwa désigne chez Cullen Gouldsbury et Hubert Sheane un peuple voisin des Winamwanga. Ils le disent paisible, grand cultivateur de tabac et autrefois réputé pour ses forgerons ; ils écrivent Awiwa pour les gens.",
+            "formAsWritten": "Awiwa",
+            "sources": [
+              {
+                "title": "The Great Plateau of Northern Rhodesia: Being Some Impressions of the Tanganyika Plateau",
+                "author": "Cullen Gouldsbury et Hubert Sheane",
+                "year": 1911,
+                "url": "https://archive.org/details/greatplateauofno00goul",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 12",
+                "notes": "Londres, 1911. Les auteurs sont deux administrateurs britanniques de la Rhodésie du Nord. Lu dans la numérisation d'Internet Archive le 13 octobre 2026 ; le numéro de page imprimé a été lu sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1897,
+              "to": 1897,
+              "label": "Publié en 1897"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wiwa apparaît sous une forme proche, Awa-wiwa, chez Harry Johnston. Il range les Awa-wiwa dans le groupe nkonde, avec notamment les Awa-nyamwanga. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Awa-wiwa",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Harry Johnston",
+                "role": "commissaire britannique, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "British Central Africa",
+                "author": "Harry H. Johnston",
+                "year": 1897,
+                "url": "https://archive.org/details/britishafrica00johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 390",
+                "notes": "Londres, 1897. Récit du premier commissaire britannique d'Afrique centrale. Lu dans la numérisation d'Internet Archive le 13 octobre 2026 ; le numéro de page imprimé a été lu sur l'image."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Iwa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que le conseil d'Isoka donne à la tribu principale du chef Kafwimbi ; sa première trace reste à trouver.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Iwa est celui que le conseil municipal d'Isoka donne à la tribu principale de la chefferie de Kafwimbi, l'une des tribus du district avec les Namwanga, les Tumbuka, les Nyika, les Mfungwe, les Lambya et les Tambo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "About us – Isoka Town Council",
+                "author": "Isoka Town Council",
+                "year": null,
+                "url": "https://www.isokacouncil.gov.zm/?page_id=2978",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Page de présentation du district, lue le 13 octobre 2026 ; elle n'est pas datée."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

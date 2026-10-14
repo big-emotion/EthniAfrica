@@ -60,11 +60,11 @@
     },
     {
       "sourceKey": "ouargla-bouzid",
-      "title": "Étude lexico-sémantique des patronymes de Touggourt — Université Kasdi Merbah Ouargla",
+      "title": "Étude étymo-sémantique des patronymes de la région de Touggourt",
       "url": "https://dspace.univ-ouargla.dz/jspui/bitstream/123456789/32616/1/%25D9%2585%25D8%25B3%25D8%25B9%25D9%2588%25D8%25AF%25D9%258A%2520%25D8%25B3%25D9%2587%25D8%25A7%25D9%2585_compressed.pdf",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Mémoire universitaire consulté le 2 septembre 2026. Il propose le sens de « père de Zaid » pour Bouzid parmi les noms étudiés à Touggourt. Cette explication ne permet pas de retracer l'histoire d'une famille particulière."
+      "notes": "Mémoire de master de Siham Messaoudi, Université Kasdi Merbah Ouargla, 2020-2021, lu en texte intégral. Page 34 : Bouzid est analysé comme « père de Zaid ». Cette explication ne permet pas de retracer l'histoire d'une famille particulière."
     }
   ],
   "gaps": [
@@ -97,6 +97,10 @@
       "reason": "Les recherches exactes « Bouzid homonym surname », « Bouzid homonyme patronyme » et les variantes graphiques de la fiche n’ont pas établi deux origines distinctes et documentées pour la même forme."
     },
     {
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait une nisba, c'est-à-dire un nom de lieu, de tribu ou de métier : les sources lues y voient un nom de famille formé de bou, « père de », et du nom d'homme Zaid. Le modèle n'a pas de case pour ce genre de nom de famille. Le classement comme nisba reste donc provisoire."
+    },
+    {
       "fieldPath": "transmissionMode",
       "reason": "Les recherches « Bouzid transmission patronyme », « Bouzid filiation » et « Bouzid hereditary surname » n’ont pas établi si, ni comment, cette forme se transmet dans les communautés concernées."
     },
@@ -104,5 +108,132 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les recherches « Bouzid lignée », « Bouzid clan », « Bouzid tribe » et « Bouzid place name » n’ont pas permis de déterminer si cette graphie désigne une lignée, un clan, une caste, une classe d’âge ou un établissement dans le contexte précis de la fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Bouzid est un nom de famille d'Algérie formé de Bou, « père de », et du nom d'homme Zaid : « père de Zaid », selon une étude des noms de Touggourt. Il apparaît par écrit dès 1864 comme nom d'une famille de Kabylie, chez les Matka. On l'écrit aussi Bouzide. Les sources lues ne disent pas si toutes les familles Bouzid ont les mêmes ancêtres ; on ne sait pas avec certitude d'où vient le nom.",
+    "names": [
+      {
+        "nameText": "Bouzid",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom formé de Bou, « père de », et de Zaid ; une famille Bouzid est notée en Kabylie dès 1864.",
+        "periodLabel": "Noté dès 1864 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Proposée en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Bouzid voudrait dire « père de Zaid » : Bou est un préfixe arabe qui veut dire « père de », et Zaid un nom d'homme, selon l'étude des noms de la région de Touggourt de Siham Messaoudi. Cette explication vaut pour les noms étudiés dans cette ville ; elle ne dit pas que toutes les familles Bouzid ont les mêmes ancêtres.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Étude étymo-sémantique des patronymes de la région de Touggourt",
+                "author": "Siham Messaoudi",
+                "year": 2021,
+                "url": "https://dspace.univ-ouargla.dz/jspui/bitstream/123456789/32616/1/%25D9%2585%25D8%25B3%25D8%25B9%25D9%2588%25D8%25AF%25D9%258A%2520%25D8%25B3%25D9%2587%25D8%25A7%25D9%2585_compressed.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 34",
+                "notes": "Mémoire de master en sciences du langage, Université Kasdi Merbah Ouargla, 2020-2021, dirigé par Nadjah Henka ; texte intégral lu dans le fichier déposé par l'université (pages numérotées de l'imprimé). L'autrice a choisi 215 noms de famille représentatifs dans le registre de l'état civil de la mairie de Touggourt (p. 3). Page 34 : « BOUZID : nom composé, masculin singulier, d'origine arabe, « père de Zaid » ; Zaid « il est né, il vient (accroitre « la famille) » en L'islem il est l'un des prophètes ». Page 56 : la liste des patronymes recensés écrit BOUZIDE. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1882,
+              "to": 1882,
+              "label": "Loi du 23 mars 1882"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bouzid relève, comme tout nom de famille algérien, de l'état civil que l'administration française impose aux Algériens musulmans par la loi du 23 mars 1882 : chaque famille doit alors porter un nom unique, transmis de génération en génération, là où l'on se nommait par la filiation. Les sources lues ne disent pas quand les familles Bouzid ont reçu ce nom.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Qui es-tu ? J'ai été dit. De la destruction de la filiation dans l'État civil d'Algérie ou éléments d'un onomacide sémantique",
+                "author": "Farid Benramdane",
+                "year": 2000,
+                "url": "https://insaniyat.crasc.dz/en/article/qui-es-tu-jai-ete-dit-de-la-destruction-de-la-filiation-dans-letat-civil-dalgerie-ou-elements-dun-onomacide-semantique",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 79-87 (section sur les patronymes algériens)",
+                "notes": "Insaniyat, 4(10), 2000, p. 79-87, lu en ligne en texte intégral ; la version en ligne ne marque pas les pages de l'imprimé. L'auteur écrit que l'état civil algérien est né de la loi du 23 mars 1882, précédée d'une loi de 1873, qui a imposé « l'obligation et la généralisation du patronyme » là où l'on se nommait par la filiation (ism, alam, kunya, laqab, nisba) ; il cite Charles-Robert Ageron sur les commissaires chargés d'établir cet état civil. Lu le 14 octobre 2026."
+              },
+              {
+                "title": "Étude étymo-sémantique des patronymes de la région de Touggourt",
+                "author": "Siham Messaoudi",
+                "year": 2021,
+                "url": "https://dspace.univ-ouargla.dz/jspui/bitstream/123456789/32616/1/%25D9%2585%25D8%25B3%25D8%25B9%25D9%2588%25D8%25AF%25D9%258A%2520%25D8%25B3%25D9%2587%25D8%25A7%25D9%2585_compressed.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18",
+                "notes": "Mémoire de master en sciences du langage, Université Kasdi Merbah Ouargla, 2020-2021, dirigé par Nadjah Henka ; texte intégral lu dans le fichier déposé par l'université (pages numérotées de l'imprimé). L'autrice a choisi 215 noms de famille représentatifs dans le registre de l'état civil de la mairie de Touggourt (p. 3). Page 18 : « la présence coloniale a bouleversé le système dénominatif qui est passé d'une désignation par filiation lignagère à plusieurs éléments à un système patronymique à un seul élément », imposé « après avoir instauré l'état civil des indigènes musulmans en 1882 » ; l'introduction (p. 2) date pourtant l'état civil de 1871, et le projet suit la loi de 1882 que donne Benramdane. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1864,
+              "to": 1864,
+              "label": "Publié en 1864"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bouzid apparaît par écrit dans un recueil d'actes kabyles que le docteur Leclerc traduit : un acte de vente passé à Tala Hamou, chez les Matka, compte parmi ses témoins « El hadj Mohammed Amzyân de la famille Bouzid (nits Bouzid) ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle date d'une publication de 1864, ne date pas l'acte et ne dit pas depuis quand la famille le porte.",
+            "formAsWritten": "Bouzid",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Une mission médicale en Kabylie",
+                "author": "Lucien Leclerc",
+                "year": 1864,
+                "url": "https://archive.org/details/unemissionmdica01leclgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 79",
+                "notes": "Docteur L. Leclerc, médecin-major, chargé en 1857, après la soumission de la Grande Kabylie, de soigner les habitants du Djurdjura depuis Fort-Napoléon ; Paris, J.-B. Baillière ; exemplaire numérisé d'archive.org, dont la notice donne 1864. Page 79, lue sur l'image de la page imprimée : acte de vente de Tala Hamou « en présence des assesseurs agréés […] parmi les gens de Tâla hamou, El hadj Mohammed Amzyân de la famille Bouzid (nits Bouzid), Arab ben Ismaïl, el hossein ou Cassi » ; l'acte porte la signature du scribe Mohammed ben Errebi ben Yahya. Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bouzide",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La graphie avec un e final, sous laquelle l'étude de Touggourt liste le nom.",
+        "periodLabel": "Relevé en 2021",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Relevé en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Bouzide est la graphie sous laquelle l'étude des noms de Touggourt de Siham Messaoudi inscrit le nom dans la liste de ses 215 patronymes, alors que son analyse écrit Bouzid.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Étude étymo-sémantique des patronymes de la région de Touggourt",
+                "author": "Siham Messaoudi",
+                "year": 2021,
+                "url": "https://dspace.univ-ouargla.dz/jspui/bitstream/123456789/32616/1/%25D9%2585%25D8%25B3%25D8%25B9%25D9%2588%25D8%25AF%25D9%258A%2520%25D8%25B3%25D9%2587%25D8%25A7%25D9%2585_compressed.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 34",
+                "notes": "Mémoire de master en sciences du langage, Université Kasdi Merbah Ouargla, 2020-2021, dirigé par Nadjah Henka ; texte intégral lu dans le fichier déposé par l'université (pages numérotées de l'imprimé). L'autrice a choisi 215 noms de famille représentatifs dans le registre de l'état civil de la mairie de Touggourt (p. 3). Page 34 : « BOUZID : nom composé, masculin singulier, d'origine arabe, « père de Zaid » ; Zaid « il est né, il vient (accroitre « la famille) » en L'islem il est l'un des prophètes ». Page 56 : la liste des patronymes recensés écrit BOUZIDE. Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

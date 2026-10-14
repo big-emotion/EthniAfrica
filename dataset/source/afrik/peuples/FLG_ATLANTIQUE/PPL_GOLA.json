@@ -175,12 +175,12 @@
             "statement": "Le nom Gola est, selon Sigismund Koelle, celui que leur donnent des peuples voisins comme les Vai : son informateur, lui, nommait sa langue Gura.",
             "sources": [
               {
-                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "title": "Polyglotta Africana, jeu de données Lexibank",
                 "author": "Sigismund Wilhelm Koelle",
                 "year": 1854,
                 "url": "https://github.com/lexibank/polyglottaafricana",
                 "tier": "referenced",
-                "source_kind": "archive",
+                "source_kind": "linguistic_reference",
                 "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Remarque placée sous le parler « Gúra »."
               }
             ]
@@ -249,12 +249,12 @@
             "statement": "Le nom Gura est celui que donne à sa langue l'informateur gola du linguiste Sigismund Koelle. Koelle ajoute que les peuples voisins, comme les Vai, l'appellent Gola. Le linguiste Diedrich Westermann relève cette liste de mots sous le nom Gura en 1921.",
             "sources": [
               {
-                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "title": "Polyglotta Africana, jeu de données Lexibank",
                 "author": "Sigismund Wilhelm Koelle",
                 "year": 1854,
                 "url": "https://github.com/lexibank/polyglottaafricana",
                 "tier": "referenced",
-                "source_kind": "archive",
+                "source_kind": "linguistic_reference",
                 "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Remarque placée sous le parler « Gúra »."
               },
               {

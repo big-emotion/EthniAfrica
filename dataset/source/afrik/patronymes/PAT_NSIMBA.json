@@ -52,7 +52,7 @@
   "sources": [
     {
       "sourceKey": "ndoma-1977-nsimba",
-      "title": "Kongo Personal Names: A Sketch",
+      "title": "Kongo Personal Names Today: a Sketch",
       "url": "https://ans-names.pitt.edu/ans/article/download/845/844",
       "tier": "referenced",
       "source_kind": "academic",
@@ -76,5 +76,164 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web et bibliographique combinant « Nsimba », « Kongo », « Congo », « twin name », « personal names », « etymology », « clan », « transmission », « alliance », « caste », « homonym » et « obituary », ainsi que l'article intégral de Ndoma sur les noms personnels kongo n'ont pas établi de lignée homonyme d'origine distincte documentable ; une diffusion dans plusieurs pays ou une graphie voisine ne suffit pas à créer un homonyme."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Nsimba est, chez les Kongo de la République démocratique du Congo, un nom que l'on donne à un jumeau ; l'étude et les dictionnaires lus le rapprochent du verbe simba, « tenir ». Le nom Nzuzi désigne l'autre jumeau. Les sources ne s'accordent pas sur lequel des deux jumeaux porte chaque nom ; nous présentons plus bas ce qu'elles disent.",
+    "names": [
+      {
+        "nameText": "Nsimba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kon",
+        "namedBy": null,
+        "shortLine": "Un nom kongo de jumeau, écrit dès 1910 ; il serait tiré du verbe « tenir ».",
+        "periodLabel": "Écrit dès 1910 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1977,
+              "to": 1977,
+              "label": "Décrit en 1977"
+            },
+            "era": "modern",
+            "statement": "Le nom Nsimba est donné à un jumeau chez les Kongo, quel que soit son sexe : tous les jumeaux sont appelés ba-Nsimba, « ceux qui se tiennent l'un l'autre », et celui qui sort le premier garde le nom Nsimba, selon Ungina Ndoma. Si une femme met des jumeaux au monde plusieurs fois, d'autres noms peuvent s'ajouter à ceux-là.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Kongo Personal Names Today: a Sketch",
+                "author": "Ungina Ndoma",
+                "year": 1977,
+                "url": "https://ans-names.pitt.edu/ans/article/download/845/844",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 89",
+                "notes": "Names: A Journal of Onomastics, vol. 25, n° 2, 1977, p. 88-98. Texte intégral lu. Page 89 : « NSIMBA and NZUZI: names for twins regardless of their sex. All twins are called ba-NSIMBA, i.e., 'those who hold each other.' The one who comes out first, NSIMBA, holds (i.e., simba - 'to hold') the other twin who is then drawn out (zuta, zutua - 'to draw'). » L'auteur décrit surtout le sud des Kongo. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1936,
+              "to": 1936,
+              "label": "Décrit en 1936"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nsimba figure dans le dictionnaire de Laman comme le mot pour « jumeau » et comme nom propre de personne, d'eau et de montagne. Selon les parlers, le dictionnaire le donne au dernier-né des jumeaux, le premier se nommant Nzuzi, ou au premier-né, le second se nommant Nzuzi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionnaire kikongo-français, avec une étude phonétique décrivant les dialectes les plus importants de la langue dite kikongo",
+                "author": "Karl Edvard Laman",
+                "year": 1936,
+                "url": "https://archive.org/details/dictionnairekikongofrancais",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrées nsimba et nzuzi (classement alphabétique)",
+                "notes": "Bruxelles, Institut royal colonial belge, 1936. Lu dans la numérisation d'Internet Archive, qui ne porte pas le numéro de page imprimé sur ces pages : l'entrée est donc citée par son mot. Entrées nsimba : « jumeau ; le dernier-né des jumeaux ; le premier se nomme nzuzi » et, pour d'autres parlers, « le second se nomme nzuzi » ; « Nsïmba, du préc., nom propre (pers., eau, montagne) » ; et nsimba, « de simba, qui saisit, qui tient ». Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1910,
+              "to": 1910,
+              "label": "1910"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nsimba apparaît par écrit dans le dictionnaire kikongo-français du père Butaye, publié en 1910 : il le donne comme le nom du premier-né de deux jumeaux, le second se nommant Nzuzi, et ajoute que ces enfants n'ont pas d'autre nom de naissance. C'est la plus ancienne trace sûre de ce nom que le projet connaît ; elle dit quand un missionnaire l'a écrit, pas depuis quand des familles le portent. Le peuple kongo existait déjà avant ce dictionnaire.",
+            "formAsWritten": "Nsimba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "René Butaye, Dictionnaire kikongo-français, français-kikongo, 1910",
+                "author": "René Butaye",
+                "year": 1910,
+                "url": "https://archive.org/details/dictionnaire-butaye",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 212",
+                "notes": "Roulers, Jules De Meester, seconde édition ; la première, autographiée, date de 1901 (avant-propos). Lu dans la numérisation d'archive.org ; l'année 1910 est celle que donne la notice d'archive.org, la page de titre n'en porte pas. L'auteur est un jésuite qui a vécu près de quinze ans au Congo. Page 212 : « Nsimba [...] 2) le premier-né des jumeaux, le second se nomme nzuzi ; ces enfants n'ont pas d'autre nom de naissance. » Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1684,
+              "to": 1706,
+              "label": "Vers 1684-1706"
+            },
+            "era": "polity",
+            "statement": "Le nom Nsimba figure dans le nom de la prophétesse kongo Kimpa Vita, que le Historical Dictionary of the Democratic Republic of the Congo intitule « Kimpa Vita Nsimba, Ndona Beatriz (ca. 1684-1706) ». Le dictionnaire ne dit pas dans quel document ce nom est écrit ni ce que Nsimba y désigne ; ce n'est donc pas une trace sûre du même nom.",
+            "formAsWritten": "Nsimba",
+            "sources": [
+              {
+                "title": "Historical Dictionary of the Democratic Republic of the Congo, Third Edition",
+                "author": "Emizet François Kisangani et F. Scott Bobb",
+                "year": 2010,
+                "url": "https://shcas.shnu.edu.cn/_upload/article/files/dc/3d/863da74f4f1dbe922dc9702d9de9/a6f95c07-9183-4c78-a7c4-ec5ea565507a.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 276",
+                "notes": "Scarecrow Press, Lanham, 2010 (collection Historical Dictionaries of Africa, n° 112) ; texte intégral lu. Page 276 : titre de l'entrée « KIMPA VITA NSIMBA, NDONA BEATRIZ (ca. 1684–1706) ». L'entrée ne cite aucun document d'époque pour ce nom. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nsimba figure aussi chez les Baluba que décrit le père Colle : il le met, en 1913, dans la liste des noms de génies que l'on donne aux enfants à la naissance. Il ne dit pas s'il s'agit du même nom que le nom kongo de jumeau.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les Baluba (Congo belge), tome I",
+                "author": "R. P. Colle",
+                "year": 1913,
+                "url": "https://archive.org/details/lesbalubacongobe01coll",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 258",
+                "notes": "Collection de monographies ethnographiques publiée par Cyr. van Overbergh, Bruxelles, Albert Dewit et Institut international de bibliographie, 1913 ; l'auteur est un missionnaire des Pères Blancs et décrit de l'extérieur le pays des Baluba, limité au nord par la Lukuga et au sud et à l'ouest par le Luvwa et le Lualaba (tome I, p. 3). Lu dans la numérisation d'archive.org. Page 258 : la liste des noms donnés aux enfants comprend « Kabila, Kisimba, Seya, Nsimba, Kasongo [...] ». Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1936,
+              "to": 1977,
+              "label": "Proposée en 1936, reprise en 1977"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nsimba viendrait du verbe simba, « tenir » : celui des jumeaux qui naît le premier « tient » l'autre, selon Ungina Ndoma, et le dictionnaire de Laman l'explique déjà comme dérivé de simba, « qui saisit, qui tient ».",
+            "hypothesisGroup": "origine du nom Nsimba",
+            "sources": [
+              {
+                "title": "Dictionnaire kikongo-français, avec une étude phonétique décrivant les dialectes les plus importants de la langue dite kikongo",
+                "author": "Karl Edvard Laman",
+                "year": 1936,
+                "url": "https://archive.org/details/dictionnairekikongofrancais",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrées nsimba et nzuzi (classement alphabétique)",
+                "notes": "Bruxelles, Institut royal colonial belge, 1936. Lu dans la numérisation d'Internet Archive, qui ne porte pas le numéro de page imprimé sur ces pages : l'entrée est donc citée par son mot. Entrées nsimba : « jumeau ; le dernier-né des jumeaux ; le premier se nomme nzuzi » et, pour d'autres parlers, « le second se nomme nzuzi » ; « Nsïmba, du préc., nom propre (pers., eau, montagne) » ; et nsimba, « de simba, qui saisit, qui tient ». Lu le 13 octobre 2026."
+              },
+              {
+                "title": "Kongo Personal Names Today: a Sketch",
+                "author": "Ungina Ndoma",
+                "year": 1977,
+                "url": "https://ans-names.pitt.edu/ans/article/download/845/844",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 89",
+                "notes": "Names: A Journal of Onomastics, vol. 25, n° 2, 1977, p. 88-98. Texte intégral lu. Page 89 : « The one who comes out first, NSIMBA, holds (i.e., simba - 'to hold') the other twin. » Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

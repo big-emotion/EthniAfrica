@@ -82,5 +82,44 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Mukendi », « LUBA », « surname », « clan », « etymology », « transmission », « alliance » et « obituary », ainsi que la page Forebears dédiée n'ont établi aucune règle propre à l'ensemble des emplois de Mukendi permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mukendi est porté en République démocratique du Congo ; la fiche le rattache, sans certitude, aux Luba. Les sources lues ne disent ni ce qu'il veut dire ni d'où il vient : on ne sait pas avec certitude. La plus ancienne trace écrite que le projet connaît date de 1947.",
+    "names": [
+      {
+        "nameText": "Mukendi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom congolais écrit dès 1947 ; on ne sait pas avec certitude d'où il vient.",
+        "periodLabel": "Écrit dès 1947 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1947,
+              "to": 1947,
+              "label": "15 janvier 1947"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mukendi apparaît par écrit, en capitales, dans le Bulletin officiel du Congo belge du 15 janvier 1947, qui range « MUKENDI 2780/A » parmi des sergents-majors de la Force Publique, dans la partie qui publie des médailles. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un bulletin l'a imprimé, pas depuis quand des familles le portent. Le bulletin ne dit rien de l'origine ni du sens du nom.",
+            "formAsWritten": "MUKENDI",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Bulletin officiel du Congo belge, 40e année, n° 1 (15 janvier 1947)",
+                "author": "Gouvernement du Congo belge",
+                "year": 1947,
+                "url": "https://archive.org/details/bulletins-officiels-de-congo-belge-annees-1941-a-1950",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 445",
+                "notes": "Numéro mis en ligne par archive.org (volume « boc 09 » de la série 1941-1950), lu sur l'image de la page. Page 445 : dans une liste qui s'achève par « sergents-majors de la Force Publique », on lit « A, MUKENDI 2780/A, BOLA 4130/B ». Les pages 444 et 446 publient des médailles d'argent et de bronze ; nous n'avons pas établi à quelle médaille ce sous-officier est rattaché. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

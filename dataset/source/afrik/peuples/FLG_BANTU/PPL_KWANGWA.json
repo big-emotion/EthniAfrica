@@ -100,5 +100,172 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kwangwa désigne un peuple de l'est de la plaine de Bulozi, dans la province de l'Ouest de la Zambie, et son parler, que les auteurs rattachent au luyana ou au luyi. On ne sait pas comment ce peuple se nomme lui-même. On ne sait pas avec certitude d'où vient le nom ; une tradition rapportée par George Nyambe Sumbwa l'explique, et nous la présentons plus bas. Le nom Luyi, plus ancien, est traité sur la fiche des Lozi.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Kwangwa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un peuple et un parler de l'est de Bulozi ; Coillard l'écrit ma-Kouengoa en 1887.",
+        "periodLabel": "Écrit dès 1887",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kwangwa est celui d'un dialecte dans la classification de Glottolog 5.3, qui ne lui donne pas de code ISO 639-3.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Kwangwa – Glottolog kwan1275",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/kwan1275",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du dialecte dans Glottolog 5.3, lue le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1979,
+              "to": 1979,
+              "label": "Proposée en 1979"
+            },
+            "era": "modern",
+            "statement": "Le nom Kwangwa viendrait du mot luyana ku-kwanga, qui veut dire échouer, selon George Nyambe Sumbwa. Une tradition raconte que, lors de la dernière guerre de Ngalama contre le prince Mange, ses partisans furent battus si complètement qu'ils échouèrent à suivre leur chef dans sa retraite.",
+            "hypothesisGroup": "origine du nom Kwangwa",
+            "sources": [
+              {
+                "title": "A History of the Luyana of Kalabo to 1906",
+                "author": "George Nyambe Sumbwa",
+                "year": 1979,
+                "url": "https://dspace.unza.zm/handle/123456789/1963",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 174-175",
+                "notes": "Mémoire de master en histoire, Université de Zambie, Lusaka, 1979. Lu dans le PDF numérisé du dépôt de l'université le 13 octobre 2026 ; le numéro de page imprimé a été lu sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bakwangwa désigne chez D. W. Stirke un peuple installé à l'est du Zambèze. Il écrit que les Bakwangwa disent que les Barozi les ont trouvés là et les ont absorbés, et que leur langue, le Sikwangwa, est un dialecte du siluyi.",
+            "formAsWritten": "Bakwangwa",
+            "sources": [
+              {
+                "title": "Barotseland: Eight Years among the Barotse",
+                "author": "D. W. Stirke",
+                "year": 1920,
+                "url": "https://archive.org/details/barotselandeight00stir",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 41",
+                "notes": "Londres, 1920. L'auteur est un commissaire des affaires indigènes de la Rhodésie du Nord ; l'introduction est de Sir Harry Johnston. Lu dans la numérisation d'Internet Archive le 13 octobre 2026 ; le numéro de page imprimé a été lu sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Si-kwangwa, ou Si-kwango, est celui d'un dialecte du luyi parlé à l'est et au nord-est du Zambèze, où les préfixes initiaux tombent, selon Sir Harry Johnston dans son introduction au livre de Stirke.",
+            "formAsWritten": "Si-kwangwa",
+            "actors": [
+              {
+                "name": "Harry Johnston",
+                "role": "auteur de l'introduction"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Barotseland: Eight Years among the Barotse",
+                "author": "D. W. Stirke",
+                "year": 1920,
+                "url": "https://archive.org/details/barotselandeight00stir",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 15",
+                "notes": "Londres, 1920. L'auteur est un commissaire des affaires indigènes de la Rhodésie du Nord ; l'introduction est de Sir Harry Johnston. Lu dans la numérisation d'Internet Archive le 13 octobre 2026 ; le numéro de page imprimé a été lu sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1903,
+              "to": 1903,
+              "label": "Publié en 1903"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kwangwa est écrit ma-Kwangwa chez le missionnaire Adolphe Jalla, qui range ce peuple dans le groupe des ma-Rotsé, et bo-Kwangwa pour son pays, où il place le village de Nanjeko.",
+            "formAsWritten": "ma-Kwangwa",
+            "actors": [
+              {
+                "name": "Adolphe Jalla",
+                "role": "missionnaire, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Pionniers parmi les ma-Rotsé",
+                "author": "Adolphe Jalla",
+                "year": 1903,
+                "url": "https://archive.org/details/pionniersparmile00jall",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 170, 197",
+                "notes": "Paris, 1903. L'auteur est un missionnaire de la Mission de Paris installé à Léalui. Lu dans la numérisation d'Internet Archive le 13 octobre 2026 ; le numéro de page imprimé a été lu sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1887,
+              "label": "Janvier 1887, publié en 1899"
+            },
+            "era": "polity",
+            "statement": "Le nom Kwangwa apparaît sous une forme proche, ma-Kouengoa, chez le missionnaire François Coillard. Il écrit que le roi Sépopa avait installé des serviteurs ma-Totéla au milieu de la tribu des ma-Kouengoa, dont il n'était pas sûr. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "ma-Kouengoa",
+            "birth": true,
+            "actors": [
+              {
+                "name": "François Coillard",
+                "role": "missionnaire, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Sur le Haut-Zambèze : voyages et travaux de mission",
+                "author": "François Coillard",
+                "year": 1899,
+                "url": "https://archive.org/details/surlehautzambeze00coil",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 285",
+                "notes": "Lettres du missionnaire, ici le récit d'un voyage de décembre 1886 à janvier 1887, réunies en volume en 1899. Lu dans la numérisation d'Internet Archive le 13 octobre 2026 ; le numéro de page imprimé a été lu sur l'image."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

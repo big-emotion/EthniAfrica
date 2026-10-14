@@ -6,7 +6,7 @@
   },
   "id": "PAT_SHIKONGO",
   "nameMain": "Shikongo",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Shikongo",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -60,7 +60,7 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "la recherche web et bibliographique combinant « Shikongo », « Ovambo », « Oshiwambo », « Namibia », « surname », « clan », « etymology » et « transmission », ainsi que la consultation directe de « Shikongo Surname Origin, Meaning & Last Name History » n'ont pas établi que la catégorie provisoire « clan_name » décrive Shikongo lui-même ; elle reste un classement de travail et non une origine démontrée."
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient d'abord un nom personnel ambo, devenu nom de famille. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "alliances",

@@ -385,11 +385,6 @@
     "rationale": "La fiche impute le nom aux voisins bambara, qui appellent Bobo-Fing (Bobo Noirs) et Bobo-Oule deux entites distinctes, d'ou une confusion frequente dans les sources populaires, sans auteur colonial."
   },
   {
-    "id": "PPL_BODI",
-    "status": "contested",
-    "rationale": "La fiche dit Bodi « parfois appliqué a l'ensemble du groupe Me'en alors qu'il ne désigne strictement que le sous-groupe pastoral », avec confusion avec les Surma : périmètre discuté."
-  },
-  {
     "id": "PPL_BOLIWA",
     "status": "contested",
     "rationale": "Probleme d'identification savante : « Boliwa n'apparait pas comme terme autonome dans les bases de donnees linguistiques » et le code ISO blv de la source est « une erreur d'attribution »."
@@ -715,11 +710,6 @@
     "rationale": "Le nom est « impose de l'exterieur par les Mossi et les Djerma », d'origine zarma, et les sous-groupes « ne se reconnaissent pas toujours dans ce terme parapluie »."
   },
   {
-    "id": "PPL_GOVA",
-    "status": "contested",
-    "rationale": "Exonymes de voisins : « les Tswana du Botswana appellent ce peuple Mbukushu » et « en Zambie, le terme Gova est utilise », alors que l'endonyme collectif est Hambukushu."
-  },
-  {
     "id": "PPL_GREBO",
     "status": "colonial-legacy",
     "rationale": "Le terme Grebo a ete adopte par les explorateurs europeens et les colons americo-liberiens rencontres a Cape Palmas, et etendu de la sorte a un continuum de plus de vingt-cinq dialectes."
@@ -813,11 +803,6 @@
     "id": "PPL_HOA",
     "status": "contested",
     "rationale": "Le desaccord est academique : le terme HoaN ne couvre qu'un dialecte du continuum Amkoe, et une classification erronee placait le groupe en famille Tuu avant son rattachement au Kx'a en 2010."
-  },
-  {
-    "id": "PPL_HOBA",
-    "status": "contested",
-    "rationale": "Prose mince : la fiche n'invoque qu'une denomination administrative congolaise pour un groupe 'peu documente' et un risque de confusion avec le Nya Huba du Nigeria, sans aucun auteur colonial nomme."
   },
   {
     "id": "PPL_IGBO",
@@ -1085,7 +1070,7 @@
     "rationale": "La fiche pointe une confusion fréquente avec les Jukun, Chamba et Tiv « dans les sources coloniales et postcoloniales » et une orthographe flottante Kuteb/Kutep, sans nom imposé."
   },
   {
-    "id": "PPL_KWA",
+    "id": "PPL_GWA",
     "status": "colonial-legacy",
     "rationale": "La fiche impute la confusion au nom du groupe linguistique Kwa « attribué à l'ensemble de la famille par Gottlob Krause en 1885 », classification d'un savant européen de l'époque coloniale."
   },
@@ -1105,12 +1090,7 @@
     "rationale": "Barakwena et Mbarakwena sont des exonymes pejoratifs donnes par d'autres groupes bantous, et Bushmen est rejete par beaucoup de membres ; la declaration de Penduka (2000) impose Khwe."
   },
   {
-    "id": "PPL_LALA_AMBO",
-    "status": "contested",
-    "rationale": "La fiche vise la confusion avec les Ambo (Ovambo) de Namibie et d'Angola, 'peuples totalement differents', et un label Lala-Ambo issu des classifications linguistiques, sans acteur colonial."
-  },
-  {
-    "id": "PPL_LALA_LAMBA",
+    "id": "PPL_LAMBA_ZAMBIA",
     "status": "reconstructive",
     "rationale": "La fiche dit que Lala-Lamba est 'une denomination relationnelle/ethnohistorique plutot qu'une identite ethnique propre', label savant de zone de contact derriere lequel le peuple se dit Lamba."
   },
@@ -1128,11 +1108,6 @@
     "id": "PPL_LARTEH",
     "status": "contested",
     "rationale": "La fiche pointe une confusion lieu/langue/peuple, l'exonyme Okere donne par les Akan voisins et un desaccord des sources sur la distinction Larteh/Kyerepong."
-  },
-  {
-    "id": "PPL_LEYA",
-    "status": "colonial-legacy",
-    "rationale": "La fiche dit que Toka-Leya 'est apparu sur des cartes coloniales britanniques' par confusion administrative, Toka etant 'une deformation du mot Tonga par un administrateur colonial'."
   },
   {
     "id": "PPL_LINGALA",
@@ -1173,11 +1148,6 @@
     "id": "PPL_LUHYA",
     "status": "contested",
     "rationale": "La fiche dit que l'identite Luhya est 'une construction politique du XXe siecle' recouvrant plus de vingt sous-tribus, chacun s'identifiant d'abord par la sienne avant de se dire Luhya."
-  },
-  {
-    "id": "PPL_LUNDA_CHOKWE",
-    "status": "contested",
-    "rationale": "La fiche conteste une denomination composite dont les trois langues (Ruund, Lunda, Chokwe) ne sont pas mutuellement intelligibles, sans nommer d'acteur colonial."
   },
   {
     "id": "PPL_LUNDA_KAZEMBE",
@@ -1483,11 +1453,6 @@
     "id": "PPL_NGUNI",
     "status": "colonial-legacy",
     "rationale": "Le terme « fut adopté par les linguistes et anthropologues européens au 19e siècle » pour regrouper des peuples distincts, et la fiche le liste comme « terme anglophone et colonial »."
-  },
-  {
-    "id": "PPL_NIABOUA",
-    "status": "contested",
-    "rationale": "Le grief est un probleme de perimetre : Niaboua, transcription francaise du nom que le peuple se donne, designe strictement un sous-groupe mais sert par extension a nommer l'ensemble des Nyabwa."
   },
   {
     "id": "PPL_NILOTIQUE_MACRO",
@@ -1925,11 +1890,6 @@
     "rationale": "La fiche argue d'une confusion avec les Mahou et d'une classification de la langue qui oscille entre le sous-groupe Dan-Toura et un positionnement autonome, l'endonyme prefere restant Wen."
   },
   {
-    "id": "PPL_TSAO",
-    "status": "contested",
-    "rationale": "Prose mince : le grief est que « la dénomination Tsao ne figure pas dans les grandes bases de données linguistiques standards » et la confusion avec les groupes voisins, pas un nom colonial."
-  },
-  {
     "id": "PPL_TSHUWA",
     "status": "contested",
     "rationale": "Sesarwa ou Sarwa, nom donne par les Tswana, est juge pejoratif car il implique une subordination aux Tswana, et Basarwa comme Bushmen sont juges reducteurs ou rejetes."
@@ -1995,11 +1955,6 @@
     "rationale": "« L'identite vezo est percue par ses membres comme un mode de vie (la peche nomade) plutot qu'un groupe ethnique fixe », fluidite qui complique l'identification ethno-demographique."
   },
   {
-    "id": "PPL_WANDYA",
-    "status": "contested",
-    "rationale": "Prose mince : le grief est un peuple « peu documenté » aux « frontières parfois floues » avec Nande, Konjo et Amba dans les classifications, sans nom imposé par un acteur colonial."
-  },
-  {
     "id": "PPL_WANE",
     "status": "contested",
     "rationale": "Prose mince : la fiche signale une confusion de noms (avec les Ngwane) et un peuple tres peu documente, souvent confondu avec les Bakwe, sans imputation a un acteur colonial."
@@ -2023,11 +1978,6 @@
     "id": "PPL_WOLAYTA",
     "status": "colonial-legacy",
     "rationale": "La fiche dit que l'exonyme Wolamo a ete impose par les conquerants du nord lors de l'annexion de 1896 et le classe parmi les appellations coloniales desuetes."
-  },
-  {
-    "id": "PPL_WONNIN",
-    "status": "contested",
-    "rationale": "L'identite godie est contestee : des sources officielles rattachent les Godie aux Dida, ce que les Godie recusent, et Godie derive de Gwedji, surnom donne par les voisins Neyo."
   },
   {
     "id": "PPL_YAKA",

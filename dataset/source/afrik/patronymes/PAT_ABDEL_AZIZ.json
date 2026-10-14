@@ -100,5 +100,117 @@
       "fieldPath": "countries",
       "reason": "Les sources propres à « Abdel Aziz » n'ont pas confirmé les pays où il est porté ; les recherches par pays n'ont pas livré de registre officiel directement exploitable pour cette fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Abdel Aziz est un nom personnel arabe, « serviteur du Puissant », que l'on écrit aussi Abd al-Aziz ou Abdulaziz. Une forme proche, Abd-el-Aziz, apparaît par écrit en 1719 dans la traduction française d'une chronique du Caire, et Abdulaziz figure en 1888 sur la page de titre de cette traduction. Les sources consultées ne disent pas comment ce nom personnel est devenu un nom de famille ; nous présentons plus bas ce qu'elles disent de son sens.",
+    "names": [
+      {
+        "nameText": "Abdel Aziz",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel arabe, « serviteur du Puissant ».",
+        "periodLabel": "Écrit Abd-el-Aziz dès 1719 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Abdel Aziz est un nom personnel arabe formé de ʿabd, « serviteur », et de ʿazīz, « puissant » : il se traduit « serviteur du Puissant », selon le dictionnaire communautaire Behind the Name, qui parle d'un nom personnel et non d'une famille ou d'un clan. Les dictionnaires arabes lus vont dans le même sens : ʿabd désigne l'esclave, puis le serviteur de Dieu (Lane), et al-ʿAzīz est, pour Dieu, celui qui l'emporte et que rien ne vainc (al-Fattinī).",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Abd al-Aziz — Behind the Name",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/abd00al01aziz",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Entrée communautaire lue le 14 octobre 2026. Elle donne la graphie arabe عبد العزيز et dit que le nom veut dire « servant of the powerful », de ʿabd, « servant », et ʿazīz, « powerful ». Elle liste Abdelaziz, Abdul Aziz et Abdulaziz comme variantes, sans citer « Abdel Aziz » en deux mots."
+              },
+              {
+                "title": "An Arabic-English Lexicon",
+                "author": "Edward William Lane",
+                "year": 1863,
+                "url": "https://arabiclexicon.hawramani.com/%D8%B9%D8%A8%D8%AF/",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrée « ʿabd »",
+                "notes": "Lexique d'Edward William Lane (Londres, 1863-1893), lu sur la reproduction en ligne du Hawramani Arabic Lexicon le 13 octobre 2026. L'entrée donne à ʿabd le sens de « male slave », puis de serviteur ou d'adorateur de Dieu, et cite l'emploi « ʿabdu llāhi ». La reproduction en ligne n'indique pas les pages du livre."
+              },
+              {
+                "title": "Majmaʿ biḥār al-anwār, racine ʿ-z-z",
+                "author": "Muḥammad al-Fattinī (mort en 1578)",
+                "year": null,
+                "url": "https://arabiclexicon.hawramani.com/%D8%B9%D8%B2%D8%B2/",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "article « ʿazza »",
+                "notes": "Dictionnaire arabe des termes du hadith, lu le 14 octobre 2026 sur sa reproduction en ligne du Hawramani Arabic Lexicon, qui n'indique pas les pages du livre. L'article dit que al-ʿAzīz, quand il s'agit de Dieu, est le vainqueur, le fort que rien ne vainc."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1719,
+              "to": 1719,
+              "label": "Mort en 1131 de l'hégire (1719)"
+            },
+            "statement": "Le nom Abdel Aziz apparaît par écrit sous une forme proche, Abd-el-Aziz, dans la traduction française des chroniques d'al-Jabarti, à propos d'un prédicateur de Damas mort le 15 zilkadeh 1131 de l'hégire (1719) : il enseigna les doctrines de plusieurs cheikhs, dont Abd-el-Aziz, fils de Mohammed el Zamzami. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "formAsWritten": "Abd-el-Aziz",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Abd-el-Aziz, fils de Mohammed el Zamzami",
+                "role": "cheikh dont un prédicateur de Damas enseigna les doctrines"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Merveilles biographiques et historiques, ou Chroniques du cheikh Abd-el-Rahman el Djabarti, tome I",
+                "author": "Abd el-Rahman el-Djabarti ; traduction de Chefik Mansour bey, Abdelaziz Kalil bey, Gabriel Nicolas Kalil bey et Iskender Ammoun effendi",
+                "year": 1888,
+                "url": "https://archive.org/details/merveillesbiogra01jaba",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 199",
+                "notes": "Le Caire, Imprimerie nationale, 1888. Lu le 14 octobre 2026 sur la copie numérisée d'archive.org, aux pages indiquées. Page 199 : « Le 15 Zilkâdeh 1131 est mort le savant Abou Abdallah Mohammed […] prédicateur de Damas », qui « enseigna les doctrines des cheikhs El Choubramoulsi, Abd-el-Aziz, fils de Mohammed el Zamzami ». Le texte ne dit pas où vivait ce cheikh."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1888,
+              "label": "1888"
+            },
+            "era": "colonial",
+            "statement": "Le nom Abdel Aziz est écrit Abdulaziz sur la page de titre du premier tome de cette traduction, imprimé au Caire en 1888 : Abdulaziz Kalil Bey y figure parmi les quatre traducteurs d'un ouvrage publié sous les auspices du ministère de l'Instruction publique.",
+            "aspect": "usage",
+            "actors": [
+              {
+                "name": "Abdulaziz Kalil Bey",
+                "role": "l'un des quatre traducteurs"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Merveilles biographiques et historiques, ou Chroniques du cheikh Abd-el-Rahman el Djabarti, tome I",
+                "author": "Abd el-Rahman el-Djabarti ; traduction de Chefik Mansour bey, Abdelaziz Kalil bey, Gabriel Nicolas Kalil bey et Iskender Ammoun effendi",
+                "year": 1888,
+                "url": "https://archive.org/details/merveillesbiogra01jaba",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre",
+                "notes": "Le Caire, Imprimerie nationale, 1888. Lu le 14 octobre 2026 sur la copie numérisée d'archive.org, aux pages indiquées. La page de titre porte « Traduites de l'arabe par Chefik Mansour Bey - Abdulaziz Kalil Bey - Gabriel Nicolas Kalil Bey et Iskender Ammoun Effendi », au Caire, Imprimerie nationale, 1888. La page ne dit rien de plus sur ces personnes."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

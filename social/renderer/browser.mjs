@@ -86,9 +86,13 @@ export function inspectCard() {
     // Include direct text around accents and labels, preserving field boundaries.
     return text(copy);
   });
+  // 1.3.0: a series card's alternative text opens with its band, in the design
+  // system's wording (« D'où vient le nom de mon pays ?, n° 1 »).
+  const series = spec.series ? window.EthniCards.seriesOf(spec) : null;
+  const band = series ? `${series.name}, n° ${series.episode}` : "";
   const alt =
     spec.alt ||
-    [spec.imageAlt, mapDescription, ...mapText, ...reading]
+    [band, spec.imageAlt, mapDescription, ...mapText, ...reading]
       .filter(Boolean)
       .join(". ");
   return {

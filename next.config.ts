@@ -80,19 +80,22 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       // A folded family-name fiche: its published addresses land on the
-      // keeper. The patronyme ledger lists every fold.
-      ...retiredPatronymes.flatMap(({ retiredId, successorId }) => [
-        {
-          source: `/fr/atlas/noms/${retiredId}`,
-          destination: `/fr/atlas/noms/${successorId}`,
-          permanent: true,
-        },
-        {
-          source: `/en/atlas/names/${retiredId}`,
-          destination: `/fr/atlas/noms/${successorId}`,
-          permanent: true,
-        },
-      ]),
+      // keeper. The patronyme ledger lists every fold. A withdrawn name has
+      // no keeper to land on, so it is left to answer 404.
+      ...retiredPatronymes
+        .filter(({ successorId }) => typeof successorId === "string")
+        .flatMap(({ retiredId, successorId }) => [
+          {
+            source: `/fr/atlas/noms/${retiredId}`,
+            destination: `/fr/atlas/noms/${successorId}`,
+            permanent: true,
+          },
+          {
+            source: `/en/atlas/names/${retiredId}`,
+            destination: `/fr/atlas/noms/${successorId}`,
+            permanent: true,
+          },
+        ]),
       // The fiche pages redirect a retired people id themselves; the API has
       // no page to do it, and would serve the stale row until a prune and a
       // 404 after. Built from the same ledger, so a merge redirects both.

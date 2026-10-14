@@ -13,7 +13,7 @@
       "attestations": [
         {
           "countryId": "AGO",
-          "sourceRefs": ["massiala-2024-kiala"]
+          "sourceRefs": ["kialanda-2024-kiala"]
         }
       ]
     }
@@ -27,7 +27,7 @@
       {
         "claim": "L'étude cultulinguistique des noms propres bakongo explique que Kiala fait partie des noms indiquant l'ordre des initiés au sein d'une classe d'âge. Cette fonction documente un nom individuel lié au rang initiatique, et non un nom de clan transmis héréditairement.",
         "claimStatus": "established",
-        "sourceRefs": ["massiala-2024-kiala"]
+        "sourceRefs": ["kialanda-2024-kiala"]
       }
     ]
   },
@@ -35,14 +35,14 @@
     {
       "peopleId": "PPL_KONGO",
       "status": "attested",
-      "sourceRefs": ["massiala-2024-kiala"]
+      "sourceRefs": ["kialanda-2024-kiala"]
     }
   ],
   "countries": [
     {
       "countryId": "AGO",
       "status": "attested",
-      "sourceRefs": ["massiala-2024-kiala"]
+      "sourceRefs": ["kialanda-2024-kiala"]
     }
   ],
   "alliances": [],
@@ -51,30 +51,113 @@
   "homonyms": [],
   "sources": [
     {
-      "sourceKey": "massiala-2024-kiala",
+      "sourceKey": "kialanda-2024-kiala",
       "title": "O kikongo e a cultura do povo bakongo: a cultulinguística nos nomes próprios",
       "url": "https://revistas.unilab.edu.br/index.php/njingaesape/article/view/1866",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Article de João Baptista Massiala, consulté sur la revue Njinga & Sepé. Le passage consacré aux anthroponymes bakongo cite explicitement Kiala parmi les noms d'ordre des initiés d'une classe d'âge. La source ne donne pas de décomposition morphologique plus fine."
+      "notes": "Article de Kialunda Sozinho Kialanda, présenté au 1er séminaire international de toponymie et d'anthroponymie de la revue Njinga & Sepé (août 2024). Le résumé et la conclusion citent explicitement Kiala parmi les noms d'ordre des initiés d'une classe d'âge. La source ne donne pas de décomposition morphologique plus fine."
     }
   ],
   "gaps": [
     {
       "fieldPath": "alliances",
-      "reason": "la recherche web combinant « Kiala », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de l'article cultulinguistique de João Baptista Massiala sur les noms propres kikongo et bakongo, n'ont identifié aucune paire d'alliance ou de parenté à plaisanterie reliant ce nom à un autre nom documenté ici."
+      "reason": "la recherche web combinant « Kiala », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de l'article cultulinguistique de Kialunda Sozinho Kialanda sur les noms propres kikongo et bakongo, n'ont identifié aucune paire d'alliance ou de parenté à plaisanterie reliant ce nom à un autre nom documenté ici."
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "la recherche web combinant « Kiala », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de l'article cultulinguistique de João Baptista Massiala sur les noms propres kikongo et bakongo, n'ont établi aucune fonction sociale ou professionnelle héréditaire propre au nom."
+      "reason": "la recherche web combinant « Kiala », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de l'article cultulinguistique de Kialunda Sozinho Kialanda sur les noms propres kikongo et bakongo, n'ont établi aucune fonction sociale ou professionnelle héréditaire propre au nom."
     },
     {
       "fieldPath": "bearers",
-      "reason": "la recherche web combinant « Kiala », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de l'article cultulinguistique de João Baptista Massiala sur les noms propres kikongo et bakongo, n'ont identifié aucun porteur décédé documentable sans ambiguïté. Les personnes vivantes ou de statut vital inconnu seulement attestées par les sources ne sont pas ajoutées."
+      "reason": "la recherche web combinant « Kiala », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de l'article cultulinguistique de Kialunda Sozinho Kialanda sur les noms propres kikongo et bakongo, n'ont identifié aucun porteur décédé documentable sans ambiguïté. Les personnes vivantes ou de statut vital inconnu seulement attestées par les sources ne sont pas ajoutées."
     },
     {
       "fieldPath": "homonyms",
-      "reason": "la recherche web combinant « Kiala », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de l'article cultulinguistique de João Baptista Massiala sur les noms propres kikongo et bakongo, n'ont pas établi de lignée homonyme d'origine distincte ni d'autre homonyme documentable."
+      "reason": "la recherche web combinant « Kiala », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de l'article cultulinguistique de Kialunda Sozinho Kialanda sur les noms propres kikongo et bakongo, n'ont pas établi de lignée homonyme d'origine distincte ni d'autre homonyme documentable."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kiala est un nom de personne kikongo, lié aux Bakongo d'Angola. Il fait partie des noms qui indiquent le rang d'un initié dans une classe d'âge ; ce n'est donc pas un nom de clan. On ne sait pas avec certitude d'où il vient ni quel est son sens exact : les sources lues ne le disent pas.",
+    "names": [
+      {
+        "nameText": "Kiala",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kon",
+        "namedBy": null,
+        "shortLine": "Un nom kikongo qui marque le rang d'un initié dans une classe d'âge.",
+        "periodLabel": "Écrit dès 2024 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Kiala est, selon Manuel Paulo Bengui, l'un des noms qui marquent l'ordre des initiés dans une classe d'âge chez les Bakongo d'Angola, avec Mbala et Lukoki. Il ajoute que la nomination de la fin des rites d'initiation a pu passer au baptême chrétien.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Nomes como símbolos de identificação cultural: um estudo do processo de nomeação entre os Bakongo de Angola",
+                "author": "Manuel Paulo Bengui",
+                "year": 2024,
+                "url": "https://repositorio.ufgd.edu.br/jspui/bitstream/prefix/6118/1/ManuelPauloBengui.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 86",
+                "notes": "Mémoire de master en anthropologie, Universidade Federal da Grande Dourados, 2024. À la page 86, il écrit qu'à la fin des rites de circoncision, des anciens donnent un nouveau nom à l'adolescent, et que « alguns destes nomes que indicam a ordem dos iniciados numa classe de idade, continuam a existir (como Mbala, Kiala, Lukoki) », la nomination pouvant s'être déplacée vers le baptême chrétien. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kiala désigne un rang dans une classe d'âge, et non un clan : il marque l'ordre des initiés, selon Kialunda Sozinho Kialanda. Les sources lues ne donnent ni sens du mot ni origine ; on ne sait pas avec certitude d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "O kikongo e a cultura do povo bakongo: a cultulinguística nos nomes próprios",
+                "author": "Kialunda Sozinho Kialanda",
+                "year": 2024,
+                "url": "https://revistas.unilab.edu.br/index.php/njingaesape/article/view/1866",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 470 et 478",
+                "notes": "Article des Anais des Seminários Internacionais de la revue Njinga & Sepé (1er séminaire international de toponymie et d'anthroponymie, 15 et 16 août 2024), vol. 4, numéro spécial I, p. 470-483, mis en ligne le 15 septembre 2024. Le résumé (p. 470) et la conclusion (p. 478) disent que certains noms indiquent l'ordre des initiés dans une classe d'âge et existent encore, « como Mbala, Kiala, Lukoki ». Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Kiala apparaît par écrit dans une étude sur les noms propres kikongo, présentée à un séminaire en août 2024, qui le cite parmi les noms indiquant l'ordre des initiés d'une classe d'âge. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand on le porte.",
+            "formAsWritten": "Kiala",
+            "birth": true,
+            "sources": [
+              {
+                "title": "O kikongo e a cultura do povo bakongo: a cultulinguística nos nomes próprios",
+                "author": "Kialunda Sozinho Kialanda",
+                "year": 2024,
+                "url": "https://revistas.unilab.edu.br/index.php/njingaesape/article/view/1866",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 470 et 478",
+                "notes": "Article des Anais des Seminários Internacionais de la revue Njinga & Sepé (1er séminaire international de toponymie et d'anthroponymie, 15 et 16 août 2024), vol. 4, numéro spécial I, p. 470-483, mis en ligne le 15 septembre 2024. Le résumé (p. 470) et la conclusion (p. 478) disent que certains noms indiquent l'ordre des initiés dans une classe d'âge et existent encore, « como Mbala, Kiala, Lukoki ». Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

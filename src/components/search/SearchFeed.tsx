@@ -104,8 +104,20 @@ export interface SearchFeedProps {
    * order. When there is one, the page opens on the timeline (REQ-198).
    */
   nameHistories?: readonly SubjectNameHistory[];
-  onResultNavigate?: (type: string, rank: number) => void;
+  /**
+   * A fiche opened from the feed. `surface` names where the reader was
+   * served: a click from the answer or the timeline is not a pick from a
+   * list, and filing both under one name hid whether the page answered in
+   * place. Absent, the caller's own surface applies (the list rows).
+   */
+  onResultNavigate?: (
+    type: string,
+    rank: number,
+    surface?: SearchFeedSurface
+  ) => void;
 }
+
+export type SearchFeedSurface = "answer" | "timeline";
 
 export interface SubjectNameHistory {
   subject: SearchResult;
@@ -622,6 +634,16 @@ export function SearchFeed({
     </>
   );
 
+  const ficheLinkBlock = (surface: SearchFeedSurface) => (
+    <FicheLinkBlock
+      subjects={ficheSubjects}
+      language={language}
+      onNavigate={(subject) =>
+        onResultNavigate?.(subject.type, subjects.indexOf(subject) + 1, surface)
+      }
+    />
+  );
+
   const renderBlock = (id: FeedBlockId): ReactNode => {
     switch (id) {
       case "lenses":
@@ -682,15 +704,7 @@ export function SearchFeed({
           />
         );
       case "fiche-link":
-        return (
-          <FicheLinkBlock
-            subjects={ficheSubjects}
-            language={language}
-            onNavigate={(subject) =>
-              onResultNavigate?.(subject.type, subjects.indexOf(subject) + 1)
-            }
-          />
-        );
+        return ficheLinkBlock("answer");
       case "shorts":
         return needsEmptyShort ? (
           <ShortsBlock
@@ -917,6 +931,12 @@ export function SearchFeed({
                 </section>,
               ]
             : []),
+          // Measured 2026-10-13 at 430 px: without this the timeline held no
+          // link at all, and a reader it served could only leave. The way on
+          // is the same button the answer ends on.
+          <Fragment key="timeline-fiche-link">
+            {ficheLinkBlock("timeline")}
+          </Fragment>,
         ]}
       />
     );

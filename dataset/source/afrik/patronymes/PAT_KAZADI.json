@@ -6,7 +6,7 @@
   },
   "id": "PAT_KAZADI",
   "nameMain": "Kazadi",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Kazadi",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [
@@ -52,7 +52,7 @@
   "sources": [
     {
       "sourceKey": "kapanga-2009-kazadi",
-      "title": "The Writing of the Nation: Expressing Identity through Congolese Literary Texts and Films",
+      "title": "Legitimizing the invented Congolese space: The gaze from within in early Congolese fiction",
       "url": "https://letterkunde.africa/article/view/3462/4236",
       "tier": "referenced",
       "source_kind": "academic",
@@ -70,7 +70,7 @@
   "gaps": [
     {
       "fieldPath": "nameSystem",
-      "reason": "la recherche web combinant « Kazadi », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de l'article de Kasongo M. Kapanga sur l'identité congolaise, la page Forebears Kazadi et des requêtes ciblées dans les travaux d'onomastique luba, n'ont pas établi que la catégorie provisoire « clan_name » décrive ce nom lui-même ; elle reste une hypothèse de classement."
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues le disent à la fois un prénom et un nom de famille luba. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "alliances",
@@ -92,5 +92,65 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web combinant « Kazadi », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de l'article de Kasongo M. Kapanga sur l'identité congolaise, la page Forebears Kazadi et des requêtes ciblées dans les travaux d'onomastique luba, n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kazadi est un nom luba très répandu en République démocratique du Congo, que l'on porte comme prénom et comme nom de famille. On ne sait pas avec certitude ce qu'il veut dire : les sources lues ne lui donnent pas de sens.",
+    "names": [
+      {
+        "nameText": "Kazadi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom luba très répandu au Congo, prénom ou nom de famille ; son sens est inconnu.",
+        "periodLabel": "Écrit dès 2009 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kazadi est à la fois un prénom et un nom de famille, que l'on trouve surtout en République démocratique du Congo, selon Wikipédia.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Kazadi",
+                "author": "Wikipédia (article en anglais)",
+                "year": null,
+                "url": "https://en.wikipedia.org/wiki/Kazadi",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Article lu en entier. Sa première phrase dit que Kazadi est un prénom et un nom de famille, surtout trouvé en République démocratique du Congo ; il liste dix porteurs, dont des Congolais. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2009,
+              "to": 2009,
+              "label": "Publié en 2009"
+            },
+            "era": "modern",
+            "statement": "Le nom Kazadi apparaît par écrit dans un article de Kasongo M. Kapanga, qui le range parmi les noms luba très répandus au Congo, avec Kasongo, Mujinga, Kabongo et Kabamba. C'est la plus ancienne trace de ce nom que le projet connaît ; le nom est plus ancien que cet article.",
+            "formAsWritten": "Kazadi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Legitimizing the invented Congolese space: The gaze from within in early Congolese fiction",
+                "author": "Kasongo M. Kapanga",
+                "year": 2009,
+                "url": "https://letterkunde.africa/article/view/3462/4236",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 34",
+                "notes": "Tydskrif vir Letterkunde 46 (1), 2009, p. 28-39, texte intégral lu. À la page 34, à propos du nom de l'auteur Badibanga, Kapanga écrit que, comme beaucoup de noms luba, tels Kasongo, Kazadi, Mujinga, Kabongo et Kabamba, Badibanga est très répandu au Congo. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

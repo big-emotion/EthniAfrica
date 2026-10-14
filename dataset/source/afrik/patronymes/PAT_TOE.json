@@ -6,7 +6,7 @@
   },
   "id": "PAT_TOE",
   "nameMain": "Toe",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Toe",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -70,11 +70,7 @@
   "gaps": [
     {
       "fieldPath": "nameSystem",
-      "reason": "Le Dictionary of American Family Names qualifie Toe de patronyme issu d'un nom personnel masculin, mais ne dit pas s'il désigne aujourd'hui un clan ou un lignage ; la valeur typologique exigée par le modèle reste non résolue."
-    },
-    {
-      "fieldPath": "designatedSocialUnit",
-      "reason": "L'entrée onomastique Toe et les listes administratives du comté de Grand Kru ont été vérifiées ; aucune ne relie le nom à une unité sociale précise telle qu'un clan ou un lignage."
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom personnel d'homme kru et grebo, devenu nom de famille. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "origin.oralTraditions",

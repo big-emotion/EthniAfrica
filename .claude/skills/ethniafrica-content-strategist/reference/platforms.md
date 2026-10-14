@@ -1,5 +1,11 @@
 # Platform doctrine — what goes where, how often, for whom
 
+**Operator decision, 2026-10-13.** LinkedIn is paused for the social series and
+becomes the professional channel (investors, contributors, long form); X is
+stopped. Episode links go in the Instagram story link sticker; the profile link
+stays fixed. See `docs/editorial/strategy/social-series.md`, which supersedes
+the per-channel sections below where they differ.
+
 **Current-policy precedence, 2026-09-22.** The measurements below are historical
 baselines, not current observations. Use a fresh six-network collection for each
 strategy run. Cadence comes from `docs/productions/README.md` and the dated

@@ -11,7 +11,10 @@
     {
       "spelling": "Mensah",
       "attestations": [
-        { "countryId": "GHA", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "GHA",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -71,5 +74,86 @@
       "fieldPath": "homonyms",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mensah est un nom de personne akan du Ghana. Christaller l'écrit Mensa ou Mansa et le glose par « le troisième enfant » : ce serait donc un nom qui dit le rang de naissance, non le jour. Ce sens vient d'une seule source.",
+    "names": [
+      {
+        "nameText": "Mensah",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom akan que Christaller glose par « le troisième enfant » ; écrit Mânsa dès 1858.",
+        "periodLabel": "Forme proche écrite dès 1858",
+        "accounts": [
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Décrit en 1881"
+            },
+            "statement": "Le nom Mensah est un nom de personne akan que Johann Gottlieb Christaller écrit Mensa ou Mansa. Il le glose par « le troisième enfant » et le range parmi les noms de personne de son annexe G.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 302 ; p. 667",
+                "notes": "Bâle, Evangelical Missionary Society, 1881 ; exemplaire numérisé sur archive.org. Page 302, entrée « Mensa, Mansa » : nom propre d'homme, « = the third child ». Page 667, annexe G (noms de personnes) : « Mensa » figure dans la liste, sans autre explication. Missionnaire de Bâle, cité pour les formes qu'il écrit. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1874,
+              "to": 1874,
+              "label": "Roi en 1874, selon une liste publiée en 1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Mensah est celui du dernier roi d'Asante de la liste que donne Johann Gottlieb Christaller, appelé Mensa Bonsu et daté de 1874.",
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 646",
+                "notes": "Bâle, Evangelical Missionary Society, 1881 ; exemplaire numérisé sur archive.org. Page 646, « A List of Kings of Asante » : « 16. Mensa Bonsu 1874 ». Missionnaire de Bâle, cité pour les formes qu'il écrit. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1858,
+              "label": "Grammaire du ga, 1858"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mensah a une forme proche, Mânsa, que la grammaire du ga du missionnaire de Bâle Johannes Zimmermann donne, avec Mêsa, comme nom du troisième enfant. Il note que ces noms viennent des nombres du twi. C'est la plus ancienne trace de ce nom que le projet connaît ; le nom est plus ancien qu'elle. Les sources lues ne disent pas si Mânsa est le même nom que Mensah ; Christaller, lui, écrit Mensa et Mansa côte à côte.",
+            "formAsWritten": "Mânsa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Grammatical Sketch of the Akra- or Gã-Language",
+                "author": "Johannes Zimmermann",
+                "year": 1858,
+                "url": "https://archive.org/details/agrammaticalske01zimmgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 289 du vocabulaire",
+                "notes": "Stuttgart, imprimé pour la Société missionnaire de Bâle par J. F. Steinkopf, 1858 ; exemplaire numérisé d'archive.org, pagination continue. Page 289, entrée « Tete » : noms des enfants selon leur rang, dont « Mêsa and Mânsa, of the 3. », pris, dit l'auteur, des nombres « otyi », c'est-à-dire twi. Missionnaire de Bâle, cité pour les formes qu'il relève. Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

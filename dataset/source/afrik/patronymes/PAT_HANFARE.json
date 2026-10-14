@@ -95,5 +95,66 @@
       "fieldPath": "homonyms",
       "reason": "Les formes Hanfare et Mohammed Hanfare ont été recherchées dans l'article et les résultats bibliographiques associés ; aucun homonyme distinct et documenté n'a été trouvé."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Hanfare est un nom personnel, porté par des sultans d'Aussa, chez les Afar d'Éthiopie. Il revient dans leurs chaînes de noms sans être le nom de leur clan. Une forme proche, Anfari, apparaît par écrit en 1883. On ne sait pas avec certitude ce qu'il veut dire : les sources lues ne le disent pas.",
+    "names": [
+      {
+        "nameText": "Hanfare",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel afar, porté par des sultans d'Aussa, en Éthiopie.",
+        "periodLabel": "Écrit Anfari dès 1883 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "Décrit en 2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Hanfare revient à des places différentes dans les chaînes de noms des sultans d'Aussa : Mohammed Hanfare « Illalta » (1861-1898), son neveu Mohammed Aydahis Hanfare, puis Alimirah Mohammed Hanfare. Les auteurs nomment Aydahiso comme clan de ces sultans, pas Hanfare, et ne disent pas ce que veut dire Hanfare.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Recalling the history of Sultan Mohammed Hanfare “Illalta”: Was he a democratic Sultan of Aussa in Afar, Ethiopia?",
+                "author": "Berihun Kassa Hailu et Jemal Abebe Jemere",
+                "year": 2017,
+                "url": "https://academicjournals.org/journal/AJHC/article-full-text/54E525066800",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 72-77",
+                "notes": "African Journal of History and Culture 9(9), 31 octobre 2017, DOI 10.5897/AJHC2017.0370. Lu en texte intégral le 13 octobre 2026 ; le texte n'a pas de numéros de page internes. Il cite le sultan Mohammed Hanfare « Illalta » (1861-1898), son neveu Mohammed Aydahis Hanfare (1898-1900) et Alimirah Mohammed Hanfare, fils aîné du premier. Il appelle Aydahiso un nom de clan, de la tribu mudaito (d'après Abir, 1968), et dit que « Illalta » veut dire « rivière qui coule ». Il ne donne ni sens ni origine pour Hanfare."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1883,
+              "to": 1883,
+              "label": "15 mars 1883"
+            },
+            "era": "polity",
+            "statement": "Le nom Hanfare apparaît par écrit sous une forme proche, Anfari, dans le traité d'amitié signé à Hadéle-Gubo entre les autorités italiennes d'Assab et « il sultano Mohamed Anfari », tel que le reproduit en 1890 le recueil Das Staatsarchiv. C'est la plus ancienne trace de ce nom que le projet connaît ; les sources lues ne disent pas si ce sultan est celui que l'article de 2017 appelle Mohammed Hanfare, mais les dates de son règne le laissent penser.",
+            "birth": true,
+            "formAsWritten": "Anfari",
+            "sources": [
+              {
+                "title": "Das Staatsarchiv : Sammlung der officiellen Actenstücke zur Geschichte der Gegenwart, cinquantième volume",
+                "author": "Hans Delbrück (éd.)",
+                "year": 1890,
+                "url": "https://archive.org/details/dasstaatsarchiv22amtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 189, n° 10040",
+                "notes": "Leipzig, Duncker & Humblot, 1890. Lu le 13 octobre 2026 dans le texte océrisé de la numérisation d'archive.org. Sous « Aethiopien », le n° 10040 reproduit en italien le traité d'amitié entre les autorités italiennes d'Assab et « il sultano Mohamed Anfari », signé à Hadéle-Gubo le 15 mars 1883 et scellé à Ankober le 22 mai 1883 au nom du roi du Choa. Le texte est tiré des livres verts italiens de 1889 et 1890. La page exacte est déduite de la pagination des pages voisines du texte océrisé."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

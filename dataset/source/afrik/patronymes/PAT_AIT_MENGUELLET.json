@@ -11,13 +11,19 @@
     {
       "spelling": "Aït Menguellet",
       "attestations": [
-        { "countryId": "DZA", "sourceRefs": ["ait-menguellet-ummto"] }
+        {
+          "countryId": "DZA",
+          "sourceRefs": ["ait-menguellet-ummto"]
+        }
       ]
     },
     {
       "spelling": "Ait Menguellet",
       "attestations": [
-        { "countryId": "DZA", "sourceRefs": ["ait-menguellet-ummto"] }
+        {
+          "countryId": "DZA",
+          "sourceRefs": ["ait-menguellet-ummto"]
+        }
       ]
     }
   ],
@@ -91,5 +97,190 @@
       "fieldPath": "homonyms",
       "reason": "Les dictionnaires, catalogues d’autorité et recherches onomastiques consultés n’ont pas révélé une origine distincte portant exactement la graphie Aït Menguellet."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Aït Menguellet est celui d'une tribu kabyle du Djurdjura, dans la confédération des Zouaoua, ou Igawawen. On l'écrit aussi Ait Menguellet, Ayt Menguellet et, dans les textes français anciens, Aït Menguellat. Il commence par Aït, « les enfants de », comme beaucoup de noms de tribus de Kabylie. On ne sait pas avec certitude d'où vient son second élément, Menguellet : les sources lues n'en disent rien.",
+    "names": [
+      {
+        "nameText": "Aït Menguellet",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'une tribu kabyle du Djurdjura, noté dès 1855 sous une forme proche.",
+        "periodLabel": "Noté dès 1855 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "Décrit en 2008"
+            },
+            "era": "modern",
+            "statement": "Le nom Aït Menguellet désigne une tribu de la grande confédération des Zouaoua, ou Igawawen, dans la chaîne rocheuse du Djurdjura, au cœur de la Kabylie. Le dictionnaire kabyle-français de Jean-Marie Dallet décrit le parler de trois de ses villages, selon Abdallah Nouh.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Le vocabulaire berbère commun au kabyle et au mozabite : étude de lexicologie berbère comparée",
+                "author": "Abdallah Nouh",
+                "year": 2008,
+                "url": "https://dspace.ummto.dz/server/api/core/bitstreams/7a3b6f49-009a-4d2f-bf11-9a1ed9259944/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 40-41",
+                "notes": "Mémoire de magister, Université Mouloud Mammeri de Tizi-Ouzou, 2008 ; texte intégral lu, pages numérotées de l'imprimé. Pages 40-41 : « Il s'agit des Ait Menguellet, situé dans le pays des Igawawen de Djurdjura » ; le dictionnaire de Dallet « est en fait une description du parler des Ayt Menguellet, une tribu de la grande confédération de Zouaoua/Igawawen située dans la chaîne intérieure rocheuse du Djurdjura », et plus particulièrement de trois villages de son territoire. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1872,
+              "to": 1872,
+              "label": "Décrit en 1872"
+            },
+            "era": "colonial",
+            "statement": "Le nom Aït Menguellet commence par Aït, « les enfants de » : Hanoteau et Letourneux traduisent de même « Aït Ahmed » par « les enfants d'Ahmed » et « Aït Si Amara » par « les enfants de Si Amara ». Aucune source lue ne dit ce que veut dire Menguellet ; on ne sait pas avec certitude d'où vient ce second élément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "La Kabylie et les coutumes kabyles, tome I",
+                "author": "Adolphe Hanoteau et Aristide Letourneux",
+                "year": 1872,
+                "url": "https://archive.org/details/bub_gb_8jgbAAAAYAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 247",
+                "notes": "Paris, 1872 ; exemplaire numérisé d'archive.org (tome I), page lue sur l'image de la page imprimée. Page 247, tribu des Aït Yahia, village de Taka : « Aït Si Amara (les enfants de Si Amara) » et « Aït Ahmed (les enfants d'Ahmed) ». Les auteurs ne glosent pas Menguellat. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1855,
+              "to": 1855,
+              "label": "Édition de 1855"
+            },
+            "era": "polity",
+            "statement": "Le nom Aït Menguellet apparaît sous une forme proche, Beni-Menguelat, chez le général Daumas, qui range ces Kabyles, avec les Beni-Ianni, les Beni-Coudrar et les Beni-Ouassif, parmi les tribus qui faisaient sortir de Kabylie la fausse monnaie fabriquée dans d'autres villages. C'est la plus ancienne trace de ce nom que le projet connaît ; elle nomme une tribu, non une famille, et la tribu existait déjà avant elle.",
+            "formAsWritten": "Beni-Menguelat",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Mœurs et coutumes de l'Algérie : Tell, Kabylie, Sahara",
+                "author": "Eugène Daumas",
+                "year": 1855,
+                "url": "https://archive.org/details/mursetcoutumesde00daum",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 183",
+                "notes": "Général E. Daumas, deuxième édition, Paris, Hachette, 1855 ; exemplaire numérisé d'archive.org. L'auteur est un officier français, conseiller d'État et directeur des affaires de l'Algérie : il est cité pour ce qu'il écrit et rapporte. Page 183, chapitre « La société kabyle » : la fausse monnaie est fabriquée à Aït-el-Arba et chez Ali-ou-Harzoun, dont les gens ne sortent pas de leur retraite ; « C'étaient les Beni-Ianni, les Beni-Menguelat, les Beni-Coudrar, les Beni-Ouassif, qui étaient ordinairement chargés de cette mission » (la faire sortir de Kabylie). Le passage décrit la Kabylie avant la conquête de 1857 : le projet ne lui donne pas d'ère, faute de ligne du tableau des périodes coloniales. Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ait Menguellet",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La graphie sans tréma du nom Aït Menguellet.",
+        "periodLabel": "Décrit en 2008",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "Décrit en 2008"
+            },
+            "era": "modern",
+            "statement": "Le nom Ait Menguellet, sans tréma, est la graphie que donne Abdallah Nouh, dans un mémoire de l'université de Tizi-Ouzou, à la tribu dont le parler sert de base au dictionnaire de Dallet.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Le vocabulaire berbère commun au kabyle et au mozabite : étude de lexicologie berbère comparée",
+                "author": "Abdallah Nouh",
+                "year": 2008,
+                "url": "https://dspace.ummto.dz/server/api/core/bitstreams/7a3b6f49-009a-4d2f-bf11-9a1ed9259944/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 40",
+                "notes": "Mémoire de magister, Université Mouloud Mammeri de Tizi-Ouzou, 2008 ; texte intégral lu, pages numérotées de l'imprimé. Page 40 : « Il s'agit des Ait Menguellet, situé dans le pays des Igawawen de Djurdjura ». Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ayt Menguellet",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'écriture berbère du nom Aït Menguellet, employée dans une étude de 2008.",
+        "periodLabel": "Décrit en 2008",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "Décrit en 2008"
+            },
+            "era": "modern",
+            "statement": "Le nom Ayt Menguellet est l'écriture berbère du nom Aït Menguellet : Abdallah Nouh l'emploie quand il parle des habitants de la tribu et de leur parler, « le parler des Ayt Menguellet ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Le vocabulaire berbère commun au kabyle et au mozabite : étude de lexicologie berbère comparée",
+                "author": "Abdallah Nouh",
+                "year": 2008,
+                "url": "https://dspace.ummto.dz/server/api/core/bitstreams/7a3b6f49-009a-4d2f-bf11-9a1ed9259944/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 40",
+                "notes": "Mémoire de magister, Université Mouloud Mammeri de Tizi-Ouzou, 2008 ; texte intégral lu, pages numérotées de l'imprimé. Page 40 : « le parler des Ayt Menguellet, présente dans une certaine mesure le dialecte kabyle ». Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Aït Menguellat",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La graphie des textes français de 1872, qui comptent une confédération de ce nom.",
+        "periodLabel": "Écrit en 1872",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1872,
+              "to": 1872,
+              "label": "Décrit en 1872"
+            },
+            "era": "colonial",
+            "statement": "Le nom Aït Menguellat est la graphie de Hanoteau et Letourneux, qui appellent « confédération des Aït Menguellat » un ensemble de quatre tribus : les Aït Menguellat, les Aït Attaf, les Ak'bil et les Aït bou Yousef.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La Kabylie et les coutumes kabyles, tome I",
+                "author": "Adolphe Hanoteau et Aristide Letourneux",
+                "year": 1872,
+                "url": "https://archive.org/details/bub_gb_8jgbAAAAYAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 243",
+                "notes": "Paris, 1872 ; exemplaire numérisé d'archive.org (tome I), page lue sur l'image de la page imprimée. Page 243, cercle de Fort-Napoléon : « Confédération des Aït Menguellat. Quatre tribus : Aït Menguellat, Aït Âttaf, Ak'bil, Aït bou Yousef », puis le tableau des villages de la tribu des Aït Menguellat. Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

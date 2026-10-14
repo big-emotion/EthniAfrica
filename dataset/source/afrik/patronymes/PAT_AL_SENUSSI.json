@@ -25,6 +25,15 @@
           "sourceRefs": ["afrik-candidate-queue", "treccani-senussi"]
         }
       ]
+    },
+    {
+      "spelling": "Sanusi",
+      "attestations": [
+        {
+          "countryId": "LBY",
+          "sourceRefs": ["evans-pritchard-1949-sanusi"]
+        }
+      ]
     }
   ],
   "transmissionMode": "other",
@@ -74,6 +83,22 @@
       "tier": "referenced",
       "source_kind": "linguistic_reference",
       "notes": "Notice encyclopédique consultée le 2 septembre 2026. Elle définit les Senussi comme descendants de Muhammad ibn Ali al-Sanusi et situe leur histoire en Cyrénaïque ; elle ne couvre pas les homographes éventuels."
+    },
+    {
+      "sourceKey": "evans-pritchard-1949-sanusi",
+      "title": "The Sanusi of Cyrenaica (E. E. Evans-Pritchard, 1949)",
+      "url": "https://archive.org/details/in.ernet.dli.2015.216948",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Oxford, Clarendon Press, 1949. Lu sur une numérisation d'archive.org, copie non officielle, le 14 octobre 2026. Page 11 : le fondateur, un savant algérien, y est nommé « al-Sayyid Muhammad bin 'Ali al-Sanusi al-Khattabi al-Idrisi al-Hasani », et « usually spoken of in Cyrenaica as al-Sanusi al-Kabir, the Grand Sanusi » ; né vers 1787 dans un village près de Mostaganem, d'une famille de chérifs. L'auteur a séjourné en Cyrénaïque pendant la guerre de 1939-1945."
+    },
+    {
+      "sourceKey": "duveyrier-1884-confrerie-senoussi",
+      "title": "La confrérie musulmane de Sidi Mohammed Ben ʿAli Es-Senoûsi (Henri Duveyrier, 1884)",
+      "url": "https://archive.org/details/henri-duveyrier-la-confrerie-musulmane-de-sidi-med-ben-ali-es-senousi",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Paris, Société de géographie, 1884 ; la page de titre porte aussi « 1300 de l'hégire — 1883 de notre ère ». Lu sur une numérisation d'archive.org déposée en 2022, copie non officielle, le 14 octobre 2026 ; la reconnaissance de texte rend mal les caractères arabes, la lecture a porté sur le français. Page 5 : « Sidi Mohammed Ben ʿAli Es-Senoûsi » ; le novateur appelle sa doctrine « tariqa mohammediya », « voie de Mohammed » ; « ce nom de la secte a été changé, du moins dans la pratique, et maintenant c'est tariqat es-senoûsiya, ou voie senoûsienne, qu'on appelle la doctrine »."
     }
   ],
   "gaps": [
@@ -109,5 +134,152 @@
       "fieldPath": "transmissionMode",
       "reason": "Les recherches « Al-Senussi transmission patronyme », « Al-Senussi filiation » et « Al-Senussi hereditary surname » n’ont pas établi si, ni comment, cette forme se transmet dans les communautés concernées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Al-Senussi, qu'on écrit aussi Senussi ou Sanusi, désigne les descendants de Muhammad ibn Ali as-Sanusi, le fondateur de la confrérie Sanusiyya, né vers 1787. On ne sait pas avec certitude d'où vient le nom as-Sanusi lui-même : les sources lues ne l'expliquent pas. Elles décrivent ce que le nom désigne ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Al-Senussi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom des descendants du fondateur de la confrérie Sanusiyya ; écrit Es-Senoûsi dès 1884.",
+        "periodLabel": "Écrit dès 1884 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Al-Senussi, ou Senussi, désigne les descendants de Muhammad ibn Ali as-Sanusi (1787-1859), dit le Grand Senussi, qui fonda en 1837 la confrérie religieuse Sanusiyya. Il vivait à La Mecque, puis en Égypte, puis en Cyrénaïque.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Senussi — Enciclopedia Treccani",
+                "author": "Istituto della Enciclopedia Italiana",
+                "year": null,
+                "url": "https://www.treccani.it/enciclopedia/senussi/",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice encyclopédique en italien, sans date de publication ni auteur, lue le 14 octobre 2026. Elle désigne par Senussi les descendants de Muḥammad ibn ʿAlī as-Sanūsī (1787-1859), dit as-Sanūsī al-Kabīr, « le Grand Senusso », fondateur en 1837 de la confrérie Sanūsiyya, installé ensuite en Égypte puis en Cyrénaïque. Elle ne dit rien de l'origine du nom as-Sanūsī lui-même."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1884,
+              "label": "Avant 1884"
+            },
+            "statement": "On parle alors de tariqa mohammediya, la « voie de Mohammed », pour désigner la doctrine que le fondateur de la confrérie enseignait, selon Henri Duveyrier. Il note que le nom de cette doctrine a ensuite changé, au moins dans la pratique, et qu'on l'appelle désormais tariqat es-senoûsiya, la voie senoûsienne. Il ne dit pas qui a changé ce nom.",
+            "before": true,
+            "formAsWritten": "tariqa mohammediya",
+            "sources": [
+              {
+                "title": "La confrérie musulmane de Sidi Mohammed Ben ʿAli Es-Senoûsi",
+                "author": "Henri Duveyrier",
+                "year": 1884,
+                "url": "https://archive.org/details/henri-duveyrier-la-confrerie-musulmane-de-sidi-med-ben-ali-es-senousi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 5",
+                "notes": "Paris, Société de géographie, 1884 ; la page de titre porte aussi « 1300 de l'hégire — 1883 de notre ère ». Lu sur une numérisation d'archive.org déposée en 2022, copie non officielle, le 14 octobre 2026 ; la reconnaissance de texte rend mal les caractères arabes, la lecture a porté sur le français. Page 5 : « Sidi Mohammed Ben ʿAli Es-Senoûsi » ; le novateur appelle sa doctrine « tariqa mohammediya », « voie de Mohammed » ; « ce nom de la secte a été changé, du moins dans la pratique, et maintenant c'est tariqat es-senoûsiya, ou voie senoûsienne, qu'on appelle la doctrine »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1884,
+              "to": 1884,
+              "label": "1884"
+            },
+            "statement": "Le nom Al-Senussi apparaît par écrit sous une forme proche, Es-Senoûsi, dans l'étude de Henri Duveyrier sur la confrérie, publiée à Paris en 1884 : il l'écrit pour le fondateur, Sidi Mohammed Ben Ali Es-Senoûsi. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a écrit, pas depuis quand le nom est porté.",
+            "formAsWritten": "Es-Senoûsi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "La confrérie musulmane de Sidi Mohammed Ben ʿAli Es-Senoûsi",
+                "author": "Henri Duveyrier",
+                "year": 1884,
+                "url": "https://archive.org/details/henri-duveyrier-la-confrerie-musulmane-de-sidi-med-ben-ali-es-senousi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 5",
+                "notes": "Paris, Société de géographie, 1884 ; la page de titre porte aussi « 1300 de l'hégire — 1883 de notre ère ». Lu sur une numérisation d'archive.org déposée en 2022, copie non officielle, le 14 octobre 2026 ; la reconnaissance de texte rend mal les caractères arabes, la lecture a porté sur le français. Page 5 : « Sidi Mohammed Ben ʿAli Es-Senoûsi » ; le novateur appelle sa doctrine « tariqa mohammediya », « voie de Mohammed » ; « ce nom de la secte a été changé, du moins dans la pratique, et maintenant c'est tariqat es-senoûsiya, ou voie senoûsienne, qu'on appelle la doctrine »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Senussi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'écriture du nom que donne l'encyclopédie Treccani, sans l'article al-.",
+        "periodLabel": "Porté aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Senussi est l'écriture, sans l'article al-, que donne l'encyclopédie Treccani pour les descendants de Muhammad ibn Ali as-Sanusi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Senussi — Enciclopedia Treccani",
+                "author": "Istituto della Enciclopedia Italiana",
+                "year": null,
+                "url": "https://www.treccani.it/enciclopedia/senussi/",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice encyclopédique en italien, sans date de publication ni auteur, lue le 14 octobre 2026. Elle désigne par Senussi les descendants de Muḥammad ibn ʿAlī as-Sanūsī (1787-1859), dit as-Sanūsī al-Kabīr, « le Grand Senusso », fondateur en 1837 de la confrérie Sanūsiyya, installé ensuite en Égypte puis en Cyrénaïque. Elle ne dit rien de l'origine du nom as-Sanūsī lui-même."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sanusi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'écriture anglaise d'Evans-Pritchard en 1949 : al-Sanusi, ou le Grand Sanusi en Cyrénaïque.",
+        "periodLabel": "Écrit en 1949",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1949,
+              "to": 1949,
+              "label": "Écrit en 1949"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sanusi est écrit al-Sanusi par E. E. Evans-Pritchard, qui note qu'on appelle le fondateur de la confrérie al-Sanusi al-Kabir, « le Grand Sanusi », en Cyrénaïque. Il donne son nom complet avec trois autres noms de rattachement : al-Khattabi, al-Idrisi et al-Hasani.",
+            "aspect": "usage",
+            "formAsWritten": "al-Sanusi",
+            "sources": [
+              {
+                "title": "The Sanusi of Cyrenaica",
+                "author": "E. E. Evans-Pritchard",
+                "year": 1949,
+                "url": "https://archive.org/details/in.ernet.dli.2015.216948",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 11",
+                "notes": "Oxford, Clarendon Press, 1949. Lu sur une numérisation d'archive.org, copie non officielle, le 14 octobre 2026. Page 11 : le fondateur, un savant algérien, y est nommé « al-Sayyid Muhammad bin 'Ali al-Sanusi al-Khattabi al-Idrisi al-Hasani », et « usually spoken of in Cyrenaica as al-Sanusi al-Kabir, the Grand Sanusi » ; né vers 1787 dans un village près de Mostaganem, d'une famille de chérifs. L'auteur a séjourné en Cyrénaïque pendant la guerre de 1939-1945."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

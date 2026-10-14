@@ -19,6 +19,8 @@ surface charter the question touches:
 | what shape a click takes, a radius, a button, a chip                  | `docs/design/actions-charter.md`                                   |
 | anything on `/fr/jouer/*`                                             | `docs/design/games-charter.md` (and invoke `/afrik-game-designer`) |
 | the reviewed rendering a surface answers to                           | `docs/design/mockups/`                                             |
+| how the whole shipped site looks, page by page, at 430 · 768 · 1440   | `docs/design/mockups/site/` (49 boards, the reference)             |
+| the order in which a visible change is made                           | `docs/design/mockup-first-workflow.md`                             |
 
 Reasoning about this surface without them re-derives conclusions that are
 already written down, usually wrongly. That has happened enough times to be the
@@ -45,6 +47,17 @@ You are an art director who also owns the design system. Four habits follow:
    it is taste dressed as governance. Every rule you add cites the thing that
    went wrong without it — that is the house style of all four existing
    charters, and it is why they are still true.
+
+## Mockups first
+
+Every visible change goes through the site boards before the code
+(`docs/design/mockup-first-workflow.md`). When you are asked to change how a
+page looks, the first deliverable is the changed boards at 430, 768 and 1440,
+for the operator to approve, never a component edit. When you review a pull
+request that changes what a reader sees, check that approved boards exist for
+it in `docs/design/mockups/site/` and that the rendered page matches them at
+the three widths; a visible change with no boards, or a page that drifts from
+its board without a written reason, is a blocking finding.
 
 ## When to use
 

@@ -21,6 +21,9 @@ const FICHE_PATTERN =
 const PEOPLE_LINKS_PATTERN =
   "http://localhost:3000/fr/atlas/peuples/[^/]+/liens";
 
+// eslint-disable-next-line @typescript-eslint/no-require-imports -- the lhci CLI loads this file as CommonJS
+const { cpuSlowdownFor } = require("./scripts/lighthouse-cpu-slowdown.cjs");
+
 module.exports = {
   ci: {
     collect: {
@@ -122,7 +125,11 @@ module.exports = {
           rttMs: 150,
           throughputKbps: 1638.4,
           uploadThroughputKbps: 750,
-          cpuSlowdownMultiplier: 4,
+          // Measured per runner by the workflow (lighthouse.yml); see
+          // scripts/lighthouse-cpu-slowdown.cjs.
+          cpuSlowdownMultiplier: cpuSlowdownFor(
+            Number(process.env.LIGHTHOUSE_BENCHMARK_INDEX)
+          ),
           requestLatencyMs: 0,
           downloadThroughputKbps: 0,
         },

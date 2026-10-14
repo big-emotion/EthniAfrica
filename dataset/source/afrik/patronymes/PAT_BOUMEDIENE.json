@@ -98,5 +98,172 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les recherches « Boumediene lignée », « Boumediene clan », « Boumediene tribe » et « Boumediene place name » n’ont pas permis de déterminer si cette graphie désigne une lignée, un clan, une caste, une classe d’âge ou un établissement dans le contexte précis de la fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Boumediene est un nom de famille d'Algérie formé de Bou, « père de », et d'un prénom d'homme, Médien. C'est aussi, sous la forme Bou-Médyn, le nom d'un saint de Tlemcen, Abou Médyan, et celui que Mohamed Boukherouba prend en 1957 comme nom de guerre. Les sources lues ne disent pas si les familles Boumediene le portent en l'honneur du saint. On ne sait pas avec certitude d'où vient le nom de famille.",
+    "names": [
+      {
+        "nameText": "Boumediene",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom formé de Bou, « père de », porté aussi par un saint de Tlemcen ; noté dès 1859.",
+        "periodLabel": "Noté dès 1859 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Proposée en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Boumediene serait formé de Bou, un préfixe arabe qui veut dire « père de », et de Médien, un prénom d'homme, selon l'étude des noms de famille de Yakouren, en Kabylie, qui écrit Boumedien.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Analyse morphologique et sémantique des noms de familles de la région de Yakouren, Tizi-Ouzou",
+                "author": "Lamia Ikhlef et Lilia Hadj Ahmed",
+                "year": 2021,
+                "url": "https://dspace.ummto.dz/server/api/core/bitstreams/28e613b9-203f-44ed-bcd8-210ba34f636f/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 26",
+                "notes": "Mémoire de master, Université Mouloud Mammeri de Tizi-Ouzou, département de langue et culture amazighes, 2020-2021, dirigé par Rachida Mohammedi ; texte intégral lu, pages numérotées de l'imprimé. Page 26 : « 13-Boumedien/Bumedyen/ : Anthroponyme d'origine arabe, vient de racine √mdyn, composé de deux unités /Bou/ et /Medien/. C'est : « un prénom d'un homme ». (Selon nous) ». Lu le 14 octobre 2026."
+              },
+              {
+                "title": "Étude étymo-sémantique des patronymes de la région de Touggourt",
+                "author": "Siham Messaoudi",
+                "year": 2021,
+                "url": "https://dspace.univ-ouargla.dz/jspui/bitstream/123456789/32616/1/%25D9%2585%25D8%25B3%25D8%25B9%25D9%2588%25D8%25AF%25D9%258A%2520%25D8%25B3%25D9%2587%25D8%25A7%25D9%2585_compressed.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 33",
+                "notes": "Mémoire de master en sciences du langage, Université Kasdi Merbah Ouargla, 2020-2021, dirigé par Nadjah Henka ; texte intégral lu dans le fichier déposé par l'université (pages numérotées de l'imprimé). L'autrice a choisi 215 noms de famille représentatifs dans le registre de l'état civil de la mairie de Touggourt (p. 3). Page 33, entrée BOUALI : « avec le préfixe arabe (Bou- père de) ». Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1957,
+              "to": 1957,
+              "label": "Nom de guerre pris en 1957"
+            },
+            "era": "colonial",
+            "statement": "Le nom Boumediene est choisi en 1957 comme nom de guerre par Mohamed Boukherouba, qui devient Houari Boumédiène : l'historien Michel Pierre y voit le nom d'un savant et mystique soufi de Tlemcen du XIIe siècle, et une étude de 2021 range « Houari Boumediene » parmi les pseudonymes.",
+            "sources": [
+              {
+                "title": "Algérie : 60 ans d'indépendance (2/6) - Génération Boumédiène (1965-1978)",
+                "author": "Michel Pierre",
+                "year": 2024,
+                "url": "https://www.herodote.net/Generation_Boumediene_1965_1978_-synthese-3387.php",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Herodote.net, page publiée ou mise à jour le 29 août 2024, lue en entier, sans pagination. Elle écrit Boukherouba, « son nom familial », et dit qu'après 1954 il devient en 1957 chef de la wilaya V (Oranie) : « Il prend alors comme nom de guerre celui de Houari Boumédiène, savant et mystique soufi de Tlemcen du XIIe siècle ». Lu le 14 octobre 2026."
+              },
+              {
+                "title": "Étude étymo-sémantique des patronymes de la région de Touggourt",
+                "author": "Siham Messaoudi",
+                "year": 2021,
+                "url": "https://dspace.univ-ouargla.dz/jspui/bitstream/123456789/32616/1/%25D9%2585%25D8%25B3%25D8%25B9%25D9%2588%25D8%25AF%25D9%258A%2520%25D8%25B3%25D9%2587%25D8%25A7%25D9%2585_compressed.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 10",
+                "notes": "Mémoire de master en sciences du langage, Université Kasdi Merbah Ouargla, 2020-2021, dirigé par Nadjah Henka ; texte intégral lu dans le fichier déposé par l'université (pages numérotées de l'imprimé). L'autrice a choisi 215 noms de famille représentatifs dans le registre de l'état civil de la mairie de Touggourt (p. 3). Page 10, parmi les exemples de pseudonymes : « Houari Boumediene pseudonyme de Mohammed Ben Brahim Boulkarouba (2ème président de la république algérienne) ». L'étude écrit le nom familial autrement que la page d'Herodote.net. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1882,
+              "to": 1882,
+              "label": "Loi du 23 mars 1882"
+            },
+            "era": "colonial",
+            "statement": "Le nom Boumediene relève, comme tout nom de famille algérien, de l'état civil que l'administration française impose aux Algériens musulmans par la loi du 23 mars 1882 : chaque famille doit alors porter un nom unique, transmis de génération en génération, là où l'on se nommait par la filiation. Les sources lues ne disent pas quand les familles Boumediene ont reçu ce nom.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Qui es-tu ? J'ai été dit. De la destruction de la filiation dans l'État civil d'Algérie ou éléments d'un onomacide sémantique",
+                "author": "Farid Benramdane",
+                "year": 2000,
+                "url": "https://insaniyat.crasc.dz/en/article/qui-es-tu-jai-ete-dit-de-la-destruction-de-la-filiation-dans-letat-civil-dalgerie-ou-elements-dun-onomacide-semantique",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 79-87 (section sur les patronymes algériens)",
+                "notes": "Insaniyat, 4(10), 2000, p. 79-87, lu en ligne en texte intégral ; la version en ligne ne marque pas les pages de l'imprimé. L'auteur écrit que l'état civil algérien est né de la loi du 23 mars 1882, précédée d'une loi de 1873, qui a imposé « l'obligation et la généralisation du patronyme » là où l'on se nommait par la filiation (ism, alam, kunya, laqab, nisba) ; il cite Charles-Robert Ageron sur les commissaires chargés d'établir cet état civil. Lu le 14 octobre 2026."
+              },
+              {
+                "title": "Étude étymo-sémantique des patronymes de la région de Touggourt",
+                "author": "Siham Messaoudi",
+                "year": 2021,
+                "url": "https://dspace.univ-ouargla.dz/jspui/bitstream/123456789/32616/1/%25D9%2585%25D8%25B3%25D8%25B9%25D9%2588%25D8%25AF%25D9%258A%2520%25D8%25B3%25D9%2587%25D8%25A7%25D9%2585_compressed.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18",
+                "notes": "Mémoire de master en sciences du langage, Université Kasdi Merbah Ouargla, 2020-2021, dirigé par Nadjah Henka ; texte intégral lu dans le fichier déposé par l'université (pages numérotées de l'imprimé). L'autrice a choisi 215 noms de famille représentatifs dans le registre de l'état civil de la mairie de Touggourt (p. 3). Page 18 : « la présence coloniale a bouleversé le système dénominatif qui est passé d'une désignation par filiation lignagère à plusieurs éléments à un système patronymique à un seul élément », imposé « après avoir instauré l'état civil des indigènes musulmans en 1882 » ; l'introduction (p. 2) date pourtant l'état civil de 1871, et le projet suit la loi de 1882 que donne Benramdane. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1859,
+              "to": 1859,
+              "label": "Publié en 1859"
+            },
+            "era": "colonial",
+            "statement": "Le nom Boumediene apparaît sous une forme proche, Bou-Médyn, chez l'abbé Bargès, qui nomme ainsi le saint de Tlemcen, le cheikh Abou-Médyan Schohaïb ben-Hoceyn el-Ansarivi, enterré au village de Hubbed, à une demi-lieue de la ville. C'est la plus ancienne trace de ce nom que le projet connaît ; elle nomme un saint, non une famille, et le nom existait déjà avant elle.",
+            "formAsWritten": "Bou-Médyn",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tlemcen, ancienne capitale du royaume de ce nom : sa topographie, son histoire, description de ses principaux monuments, anecdotes, légendes et récits divers, souvenirs d'un voyage",
+                "author": "Jean Joseph Léandre Bargès",
+                "year": 1859,
+                "url": "https://archive.org/details/tlemcenanciennec00barg",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 260 et p. 274",
+                "notes": "Abbé J. J. L. Bargès, professeur d'hébreu à la Sorbonne, Paris, Duprat et Challamel aîné, 1859 ; exemplaire numérisé d'archive.org. Page 260 (début du chapitre XIII) : « Le village de Hubbed, que les Arabes et les Européens désignent communément sous le nom de Cidi bou-Médyn, est situé à une demi-lieue à l'est de Tlemcen ». Page 274 : « Bou-Médyn, autrement appelé le cheikh Abou-Médyan Schohaïb ben-Hoceyn el-Ansarivi, était né à Cantillana » près de Séville, « suivant la légende arabe ». L'auteur est un voyageur français ; il est cité pour ce qu'il écrit et rapporte. Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Boumedien",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La graphie sans e final, notée dans une étude des noms de Yakouren.",
+        "periodLabel": "Décrit en 2021",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Décrit en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Boumedien est la graphie que l'étude de Yakouren, en Kabylie, donne à Boumediene : elle le transcrit /Bumedyen/ et le range parmi les noms formés avec Bou.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Analyse morphologique et sémantique des noms de familles de la région de Yakouren, Tizi-Ouzou",
+                "author": "Lamia Ikhlef et Lilia Hadj Ahmed",
+                "year": 2021,
+                "url": "https://dspace.ummto.dz/server/api/core/bitstreams/28e613b9-203f-44ed-bcd8-210ba34f636f/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 26",
+                "notes": "Mémoire de master, Université Mouloud Mammeri de Tizi-Ouzou, département de langue et culture amazighes, 2020-2021, dirigé par Rachida Mohammedi ; texte intégral lu, pages numérotées de l'imprimé. Page 26 : « 13-Boumedien/Bumedyen/ : Anthroponyme d'origine arabe, vient de racine √mdyn, composé de deux unités /Bou/ et /Medien/. C'est : « un prénom d'un homme ». (Selon nous) ». Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

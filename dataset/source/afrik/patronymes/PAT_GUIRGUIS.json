@@ -6,7 +6,7 @@
   },
   "id": "PAT_GUIRGUIS",
   "nameMain": "Guirguis",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Guirguis",
@@ -28,7 +28,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -79,11 +79,157 @@
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+      "reason": "Les sources lues disent que Guirguis est un nom personnel, pas comment il se transmet comme nom de famille : le mode reste « other »."
     },
     {
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Guirguis à un peuple en Égypte. Nous n'avons pas encore consulté de source consacrée à ce nom. Un lien avec les Coptes d'Égypte reste à étudier."
+    },
+    {
+      "fieldPath": "nameSystem",
+      "reason": "Le Dictionary of American Family Names fait de Guirguis une variante du nom personnel Girgis, forme arabe de Georges ; aucune source consultée n'en fait un nom de clan. Le modèle n'a pas de case pour un nom personnel devenu nom de famille : la fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Guirguis est un nom personnel chrétien devenu nom de famille en Égypte : c'est la forme arabe du nom Georges, que portent des Coptes. On l'écrit aussi Girgis. Ce n'est pas un nom de clan. Sa plus ancienne trace écrite que nous connaissons date du XIVe siècle, sous la forme Djirdjis.",
+    "names": [
+      {
+        "nameText": "Guirguis",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel copte, forme arabe de Georges, devenu nom de famille en Égypte ; ce n'est pas un nom de clan.",
+        "periodLabel": "Écrit sous une forme proche dès le XIVe siècle ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Décrit en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Guirguis est un nom de famille arabe d'Égypte, variante de Girgis, que portent des chrétiens coptes, selon le Dictionary of American Family Names. Ce n'est pas un nom de clan.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Guirguis",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/guirguis?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 14 octobre 2026 ; le site affiche une traduction française. La notice dit : « Arabe (Égypte) : variante de Girgis. Les porteurs de ce nom de famille sont des chrétiens (Coptes). »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Décrit en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Guirguis vient du nom personnel Girgis, qui est une forme arabe du nom grec Geōrgios, c'est-à-dire Georges, selon le Dictionary of American Family Names.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Girgis",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/girgis?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 14 octobre 2026 ; le site affiche une traduction française. La notice dit : « Arabe (Égypte et Soudan) : à partir du nom personnel Girgis, une forme arabe de Geōrgios (voir George). Les porteurs de ce nom de famille sont des chrétiens (Coptes). Comparez Gerges, Guirguis et Jirjis. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1801,
+              "to": 1801,
+              "label": "1801 (1216 de l'hégire)"
+            },
+            "era": "polity",
+            "statement": "Le nom Guirguis apparaît, sous la forme Djerdjis, dans la chronique du Caire de Djabarti : il y nomme Djerdjis el Djohari parmi les chefs écrivains coptes, que recommande un firman lu en 1216 de l'hégire, vers 1801.",
+            "aspect": "usage",
+            "formAsWritten": "Djerdjis",
+            "actors": [
+              {
+                "name": "Djerdjis el Djohari",
+                "role": "chef écrivain copte nommé dans la chronique"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Merveilles biographiques et historiques, ou Chroniques du cheikh Abd-el-Rahman el Djabarti, tome VII",
+                "author": "Abd el-Rahman el-Djabarti ; traduction de Chefik Mansour bey, Abdelaziz Kalil bey, Gabriel Nicolas Kalil bey et Iskender Ammoun effendi",
+                "year": 1888,
+                "url": "https://archive.org/details/merveillesbiogra07jaba",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 56",
+                "notes": "Le Caire, Imprimerie nationale, 1888. Chronique égyptienne écrite par un lettré du Caire, lue dans la traduction française sur l'exemplaire numérisé d'archive.org le 14 octobre 2026. Page 56, mois de djamad el awal de l'année 1216 de l'hégire : « les chefs écrivains coptes, tels que Djerdjis el Djohari, Wacif et Malati », que recommande un firman lu ce jour-là au Caire, à la fin de l'occupation française."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1300,
+              "to": 1399,
+              "label": "XIVe siècle"
+            },
+            "statement": "Le nom Guirguis apparaît sous une forme proche, Djirdjis, dans le récit de voyage d'Ibn Battûta : le voyageur nomme ainsi le prophète dont il visite le mausolée à Mossoul, que ses traducteurs disent être saint Georges, et un empereur grec, que les traducteurs désignent par « George ». C'est la plus ancienne trace de ce nom que le projet connaît ; le nom est plus ancien que ce récit, et c'est ici un nom personnel, pas un nom de famille.",
+            "formAsWritten": "Djirdjis",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Voyages d'Ibn Batoutah, texte arabe accompagné d'une traduction, tome II",
+                "author": "Ibn Battûta ; traduction de C. Defrémery et B. R. Sanguinetti",
+                "year": 1877,
+                "url": "https://archive.org/details/ldpd_5998008_001",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 136, 427",
+                "notes": "Paris, Imprimerie nationale, deuxième tirage de 1877, d'après la page de titre du tome II. Récit de voyage du XIVe siècle, lu dans la traduction française sur l'exemplaire numérisé d'archive.org le 14 octobre 2026. Page 136, à Mossoul : « le mausolée de Djirdjis, le prophète », avec la note des traducteurs « (Élie, ou saint Georges) ». Page 427, à Constantinople : « l'empereur Djirdjis (George) »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Girgis",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La même forme arabe de Georges, sans le u : une autre écriture de Guirguis.",
+        "periodLabel": "Usage contemporain",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Décrit en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Girgis est le nom personnel arabe dont vient Guirguis : c'est une forme arabe de Geōrgios, c'est-à-dire Georges. Il est porté comme nom de famille en Égypte et au Soudan par des chrétiens coptes, selon le Dictionary of American Family Names.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Girgis",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/girgis?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 14 octobre 2026 ; le site affiche une traduction française. La notice dit : « Arabe (Égypte et Soudan) : à partir du nom personnel Girgis, une forme arabe de Geōrgios (voir George). Les porteurs de ce nom de famille sont des chrétiens (Coptes). Comparez Gerges, Guirguis et Jirjis. »"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

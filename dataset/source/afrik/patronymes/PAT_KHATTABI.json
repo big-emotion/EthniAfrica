@@ -19,12 +19,20 @@
     },
     {
       "spelling": "El Khattabi",
-      "attestations": [{ "countryId": "MAR", "sourceRefs": ["khattabi-tdv"] }]
+      "attestations": [
+        {
+          "countryId": "MAR",
+          "sourceRefs": ["khattabi-tdv"]
+        }
+      ]
     },
     {
       "spelling": "al-Khaṭṭābī",
       "attestations": [
-        { "countryId": "MAR", "sourceRefs": ["khattabi-shinar"] }
+        {
+          "countryId": "MAR",
+          "sourceRefs": ["khattabi-shinar"]
+        }
       ]
     }
   ],
@@ -78,7 +86,7 @@
       "url": "https://www.tifraznarif.net/pdf/livres/Abdelkader%20%26%20Abdelkrim.pdf",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Pessah Shinar, Studies in Islam 1(3), 1964, p. 150-164. Le passage consacré au clan Ait Khaṭṭāb et à la formation de la nisba al-Khaṭṭābī a été vérifié dans le texte ; cette source n’est utilisée pour aucun autre patronyme."
+      "notes": "Pessah Shinar, Asian and African Studies (annuaire de la Société orientale d’Israël) 1, 1965, p. 139-174 ; le passage sur le clan Ait Khaṭṭāb est à la page 161. Le passage consacré au clan Ait Khaṭṭāb et à la formation de la nisba al-Khaṭṭābī a été vérifié dans le texte ; cette source n’est utilisée pour aucun autre patronyme."
     },
     {
       "sourceKey": "khattabi-tdv",
@@ -114,5 +122,179 @@
   "nisbaSubtype": {
     "value": "tribal",
     "sourceRefs": ["khattabi-shinar"]
+  },
+  "nameHistory": {
+    "summary": "Le nom Khattabi est un nom d'appartenance, ou nisba, du Rif marocain, que l'on écrit aussi El Khattabi ou al-Khaṭṭābī. Chez la famille d'Abd el-Krim, il se rattache au clan Ait Khattab, installé à Ajdir. Les sources lues posent aussi la question d'un lien avec le calife Omar ibn al-Khattab ; nous présentons plus bas ce qu'elles disent.",
+    "names": [
+      {
+        "nameText": "Khattabi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom d'appartenance du Rif, tiré du clan Ait Khattab d'Ajdir ; une forme proche est écrite en 1911.",
+        "periodLabel": "Une forme proche écrite en 1911 ; décrit en 1965",
+        "accounts": [
+          {
+            "period": {
+              "from": 1965,
+              "to": 1965,
+              "label": "Décrit en 1965"
+            },
+            "era": "modern",
+            "statement": "Le nom Khattabi désigne, dans la famille d'Abd el-Krim, l'appartenance au clan Ait Khattab, installé à Ajdir, dans le Rif, selon Pessah Shinar. L'origine du nom reste discutée ; les explications sont présentées séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "ʿAbd al-Qādir and ʿAbd al-Krīm",
+                "author": "Pessah Shinar",
+                "year": 1965,
+                "url": "https://www.tifraznarif.net/pdf/livres/Abdelkader%20%26%20Abdelkrim.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 161",
+                "notes": "Pessah Shinar, « 'Abd al-Qādir and 'Abd al-Krīm: Religious Influences on their Thought and Action », Asian and African Studies, annuaire de la Société orientale d'Israël, vol. 1, Jérusalem, 1965, p. 139-174. Lu le 14 octobre 2026 dans un scan non officiel de l'article. Page 161 : « His clan, the Ait Khaṭṭāb (hence his nisba al-Khaṭṭābī), was located at and around Ajdīr, overlooking the Bay of Alhucemas… ». Note 96 : « It is not quite clear whether 'Abd el-Krim ever used this nisba to allege descent from the Caliph 'Umar b. al-Khaṭṭāb ; cf. J. Ladreit de Lacharrière, Le rêve d'Abd el Krim, Paris, 1925, p. 91. » Pages 160-161 : il est « a member of the Banū Wuriāghal », tribu berbère du centre du Rif."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "Notice de 1911"
+            },
+            "statement": "Le nom Khattabi apparaît sous une forme proche, el Khettabi, dans l'Encyclopaedia Britannica de 1911, parmi les noms d'appartenance du fondateur de la confrérie senoussie, né près de Mostaganem, en Algérie. La notice ne dit pas d'où vient ce nom. C'est la plus ancienne trace de ce nom que le projet connaît ; elle date un texte, pas l'arrivée du nom dans le Rif.",
+            "formAsWritten": "el Khettabi",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Mahommed ben Ali es Senussi",
+                "role": "porte ce nom d'appartenance"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Senussi and Senussites, dans Encyclopaedia Britannica, 11e édition, vol. 24",
+                "author": "Encyclopaedia Britannica",
+                "year": 1911,
+                "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Senussi_and_Senussites",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 649",
+                "notes": "Encyclopaedia Britannica, 11e édition, 1911, vol. 24. Article de Frank Richardson Cana. Lu le 14 octobre 2026 sur la transcription de Wikisource, qui conserve la pagination imprimée. Début de l'article, notice du fondateur de la confrérie senoussie : il est appelé « Mahommed ben Ali ben Es Senussi el Khettabi el Hassani el Idrissi el Mehajiri », né près de Mostaganem, en Algérie, entre 1791 et 1803 selon les versions, de descendance rattachée à Fatima, fille de Mahomet ; à La Mecque il rejoint « Mahommed b. Idris el Fassi, the head of the Khadirites, a fraternity of Moroccan origin ». L'article ne dit pas d'où viennent ces noms d'appartenance."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1965,
+              "to": 1965,
+              "label": "Proposé en 1965"
+            },
+            "era": "modern",
+            "statement": "Le nom Khattabi viendrait du clan Ait Khattab, installé à Ajdir, sur la baie d'Alhucemas : c'est de ce clan que vient la nisba al-Khaṭṭābī d'Abd el-Krim, selon Pessah Shinar.",
+            "hypothesisGroup": "origine du nom Khattabi",
+            "sources": [
+              {
+                "title": "ʿAbd al-Qādir and ʿAbd al-Krīm",
+                "author": "Pessah Shinar",
+                "year": 1965,
+                "url": "https://www.tifraznarif.net/pdf/livres/Abdelkader%20%26%20Abdelkrim.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 161",
+                "notes": "Pessah Shinar, « 'Abd al-Qādir and 'Abd al-Krīm: Religious Influences on their Thought and Action », Asian and African Studies, annuaire de la Société orientale d'Israël, vol. 1, Jérusalem, 1965, p. 139-174. Lu le 14 octobre 2026 dans un scan non officiel de l'article. Page 161 : « His clan, the Ait Khaṭṭāb (hence his nisba al-Khaṭṭābī), was located at and around Ajdīr, overlooking the Bay of Alhucemas… ». Note 96 : « It is not quite clear whether 'Abd el-Krim ever used this nisba to allege descent from the Caliph 'Umar b. al-Khaṭṭāb ; cf. J. Ladreit de Lacharrière, Le rêve d'Abd el Krim, Paris, 1925, p. 91. » Pages 160-161 : il est « a member of the Banū Wuriāghal », tribu berbère du centre du Rif."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1965,
+              "to": 1965,
+              "label": "Proposé en 1965"
+            },
+            "era": "modern",
+            "statement": "Le nom Khattabi pourrait aussi renvoyer au calife Omar ibn al-Khattab. Pessah Shinar note qu'on ne sait pas bien si Abd el-Krim s'est servi de ce nom pour se réclamer de lui, et renvoie à Ladreit de Lacharrière (1925).",
+            "hypothesisGroup": "origine du nom Khattabi",
+            "sources": [
+              {
+                "title": "ʿAbd al-Qādir and ʿAbd al-Krīm",
+                "author": "Pessah Shinar",
+                "year": 1965,
+                "url": "https://www.tifraznarif.net/pdf/livres/Abdelkader%20%26%20Abdelkrim.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 161, note 96",
+                "notes": "Pessah Shinar, « 'Abd al-Qādir and 'Abd al-Krīm: Religious Influences on their Thought and Action », Asian and African Studies, annuaire de la Société orientale d'Israël, vol. 1, Jérusalem, 1965, p. 139-174. Lu le 14 octobre 2026 dans un scan non officiel de l'article. Page 161 : « His clan, the Ait Khaṭṭāb (hence his nisba al-Khaṭṭābī), was located at and around Ajdīr, overlooking the Bay of Alhucemas… ». Note 96 : « It is not quite clear whether 'Abd el-Krim ever used this nisba to allege descent from the Caliph 'Umar b. al-Khaṭṭāb ; cf. J. Ladreit de Lacharrière, Le rêve d'Abd el Krim, Paris, 1925, p. 91. » Pages 160-161 : il est « a member of the Banū Wuriāghal », tribu berbère du centre du Rif."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "El Khattabi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1988,
+              "to": 1988,
+              "label": "Décrit en 1988"
+            },
+            "era": "modern",
+            "statement": "Le nom Khattabi est écrit el-Hattâbî dans l'encyclopédie turque de l'islam (TDV), qui range sous ce nom Muhammad ben Abd el-Krim, né à Ajdir, dans le Rif, d'un père chef de la tribu des Uriyagel.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Abdülkerîm el-Hattâbî",
+                "author": "Ercüment Kuran",
+                "year": 1988,
+                "url": "https://islamansiklopedisi.org.tr/abdulkerim-el-hattabi",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "TDV İslâm Ansiklopedisi, édition imprimée de 1988. Lu le 14 octobre 2026. Notice « ABDÜLKERÎM el-HATTÂBÎ » : « Asıl adı Muhammed b. Abdülkerîm'dir », né « Fas'ın Rif bölgesindeki Ecdîr şehrinde », père « Uriyagel (Vuryâgel) kabilesinin şeyhi ». La notice n'explique pas le nom d'appartenance el-Hattâbî."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "al-Khaṭṭābī",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1965,
+              "to": 1965,
+              "label": "Décrit en 1965"
+            },
+            "era": "modern",
+            "statement": "Le nom Khattabi est noté al-Khaṭṭābī, avec l'article al- et des signes sous les lettres, dans la transcription savante que Pessah Shinar emploie en 1965 pour la nisba d'Abd el-Krim.",
+            "aspect": "usage",
+            "formAsWritten": "al-Khaṭṭābī",
+            "sources": [
+              {
+                "title": "ʿAbd al-Qādir and ʿAbd al-Krīm",
+                "author": "Pessah Shinar",
+                "year": 1965,
+                "url": "https://www.tifraznarif.net/pdf/livres/Abdelkader%20%26%20Abdelkrim.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 161",
+                "notes": "Pessah Shinar, « 'Abd al-Qādir and 'Abd al-Krīm: Religious Influences on their Thought and Action », Asian and African Studies, annuaire de la Société orientale d'Israël, vol. 1, Jérusalem, 1965, p. 139-174. Lu le 14 octobre 2026 dans un scan non officiel de l'article. Page 161 : « His clan, the Ait Khaṭṭāb (hence his nisba al-Khaṭṭābī), was located at and around Ajdīr, overlooking the Bay of Alhucemas… ». Note 96 : « It is not quite clear whether 'Abd el-Krim ever used this nisba to allege descent from the Caliph 'Umar b. al-Khaṭṭāb ; cf. J. Ladreit de Lacharrière, Le rêve d'Abd el Krim, Paris, 1925, p. 91. » Pages 160-161 : il est « a member of the Banū Wuriāghal », tribu berbère du centre du Rif."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

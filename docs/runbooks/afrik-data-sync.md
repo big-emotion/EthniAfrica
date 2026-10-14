@@ -87,6 +87,11 @@ All three are applied by a human, never auto-applied. Their current state per pr
 - Upsert-only by default: it upserts source records and relations. Rows the corpus no longer
   declares are reported on every run and deleted only with `--prune --apply`, and never above
   5 % of a table (`ORPHAN_SHARE_CAP`) — see [Retiring a people identifier](#retiring-a-people-identifier).
+  The scan covers the entity tables (`afrik_language_families`, `afrik_peoples`,
+  `afrik_countries`), `afrik_languages`, `afrik_patronymes`, and the two link tables
+  `afrik_people_countries` and `afrik_people_languages`, whose rows are reported as
+  `PPL_X|CODE`. Patronymes are never pruned while a dossier on disk fails to load: its row would
+  look retired.
 - Existing `created_at` values are preserved; successful upserts update `updated_at`.
 - Processed in AFRIK hierarchy order: language families, languages, peoples, countries, then
   people/country relations.
@@ -383,7 +388,7 @@ exactly the failure mode this workflow used to have.
 the last step of the sync job in both `recette-data-sync.yml` and `production-data-sync.yml`:
 
 ```bash
-npx tsx --conditions=react-server scripts/afrik/verifyCorpusInDatabase.ts --target=<recette|production>
+npx tsx --conditions=react-server scripts/afrik/verifyCorpusInDatabase.ts --target=<local|recette|production>
 ```
 
 It needs Node ≥ 22 for the same reason the loader does, and resolves `--target` through the same
@@ -394,11 +399,13 @@ step runs to completion. A load that stops short, or never starts, reports nothi
 served a frozen corpus for days while git advanced, with no red run anywhere. The verifier does
 not depend on the load having run. For each table of the entity backbone — `afrik_language_families`,
 `afrik_languages`, `afrik_peoples`, `afrik_people_languages`, `afrik_countries`,
-`afrik_people_countries`, `afrik_patronymes` — it:
+`afrik_people_countries`, `afrik_patronymes`, and the place and word tables (`afrik_places`,
+`afrik_place_countries`, `afrik_place_peoples`, `afrik_words`) — it:
 
 - compares the row count with what the JSON loaders produce. **Both directions fail.** The sync
   only upserts, so a row git dropped is still served, and an extra row is as much a divergence
-  as a missing one;
+  as a missing one. When the database is over, it reads every key of that table and names each
+  extra one (`KEY: in the database, not in git`), so a prune preview can be checked against it;
 - takes a deterministic sample — keys sorted, every Nth, about 50 per table (per people for the
   two relation tables) — and compares a hash of exactly the columns the loader writes. A
   mismatch names the key and, for a single row, the columns that differ.
@@ -408,12 +415,12 @@ upserts back and fails when the loader starts writing a column the verifier does
 
 ### Reading a red verification
 
-| Line                                                         | Meaning                                                                                                                                                                                   |
-| ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `row count: git holds N, the database has M` with `M > N`    | Rows the corpus no longer declares. For the three entity tables, preview then `--prune --apply` (see [Retiring a people identifier](#retiring-a-people-identifier)); relation rows below. |
-| `row count: … M < N`, or `KEY: absent from the database`     | The load did not deliver: read the loader's error report artifact, fix, re-run the sync.                                                                                                  |
-| `KEY: differs in content, …`                                 | The database serves an older version of that fiche: the load did not reach it or failed on it.                                                                                            |
-| `PPL_X: git holds 2 row(s), the database 3, and they differ` | A relation git no longer declares for a people that still exists. No tool removes it: `--prune` covers only the three entity tables. Delete it by hand, recette first.                    |
+| Line                                                         | Meaning                                                                                                                                                               |
+| ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `row count: git holds N, the database has M` with `M > N`    | Rows the corpus no longer declares; the lines after it name them. Preview then `--prune --apply` (see [Retiring a people identifier](#retiring-a-people-identifier)). |
+| `row count: … M < N`, or `KEY: absent from the database`     | The load did not deliver: read the loader's error report artifact, fix, re-run the sync.                                                                              |
+| `KEY: differs in content, …`                                 | The database serves an older version of that fiche: the load did not reach it or failed on it.                                                                        |
+| `PPL_X: git holds 2 row(s), the database 3, and they differ` | A country or language link git no longer declares for a people that still exists. `--prune` removes it (`PPL_X\|CODE` in its report), recette first.                  |
 
 Never make the check pass by loosening it. A red verification means readers are served something
 git does not hold.
@@ -473,7 +480,11 @@ A merge or rename of a `PPL_*` id is decided in git, in
 absorbs it, every inbound reference is repointed, and the fiche page redirects the old URL to
 the successor's. `next.config.ts` builds the API's redirects from the same ledger:
 `/api/v2/peoples/{retired}` and its sub-routes answer 308 to the successor's. `validateAfrikData.ts` (FR27 Retired identifiers) refuses a ledger whose retired
-ids still have a fiche or whose successors do not. None of that touches a database, and the
+ids still have a fiche or whose successors do not. Family names follow the same rule with
+their own ledger, `dataset/source/afrik/patronymes/_retired-identifiers.json` (FR27 Retired
+patronymes). Languages have no ledger: a derived language exists while a people declares its
+ISO code, and its row becomes an orphan the day the last one stops. None of that touches a
+database, and the
 automated syncs never pass `--prune`, so after the merge lands each target still serves the
 retired rows until a human removes them — in two steps, recette first, then production.
 
@@ -493,6 +504,23 @@ A refusal (`Corpus orphan prune refused`) is a red run on purpose: the orphan sh
 `ORPHAN_SHARE_CAP` and the corpus load is likelier broken than the deletions real. Do not raise
 the cap; find out why the corpus came back short.
 
+The refusal also fires when the corpus is whole but the backlog is old: the automated syncs
+never prune, so retirements pile up release after release until one sync refuses. Check that
+every refused id is in the ledger, and that the ledger is the reason it has no fiche:
+
+```bash
+jq -r '.[] | select(.decision != "kept-distinct") | .retiredId' \
+  dataset/source/afrik/_retired-identifiers.json | sort > retired.txt
+# Paste the refused ids, one per line and sorted, into orphans.txt, then:
+comm -23 orphans.txt retired.txt   # must print nothing
+```
+
+If it prints nothing, the backlog is real and the cap is stopping it, not a broken load. Delete
+those rows by id in `afrik_peoples`, after the relation and migration rows that still name them
+(both restrict), and re-run the sync. That is what unblocked the v5.1.0 sync on 2026-10-13:
+71 merged peoples from waves 4 to 13 were 9.4 % of production's `afrik_peoples`. Run
+`--prune --apply` on every target after each merge wave so the backlog never builds again.
+
 The prune deletes from `afrik_peoples`, and the foreign keys cascade to
 `afrik_people_countries`, `afrik_people_languages`, `afrik_patronyme_peoples` and the
 person↔people link. `afrik_people_relations` and `migration_event_peoples` restrict instead:
@@ -501,12 +529,23 @@ migration was not repointed in git.
 
 ### 2. The rows no foreign key reaches
 
-Six tables key a `TEXT entity_id` to a people with no constraint, so their rows outlive the
-prune: `assertions`, `fiche_revisions`, `quiz_questions`, `flags`, `afrik_media` and
-`oral_narratives`. The public readers join `afrik_peoples`, so nothing stale is served, but
-the rows are dead weight and their counts drift the audits. Build the id list from the ledger
-and run this against the same target, in the SQL editor for recette and through the SSH tunnel
-`deploy-production.yml` uses for production (see `docs/runbooks/production-deploy.md`):
+Several tables key a `TEXT entity_id` to a people with no constraint, so their rows outlive the
+prune. The public readers join `afrik_peoples`, so nothing stale is served. Three of them are
+cleaned here — `quiz_questions` (revoked), `flags` and `afrik_media` — together with
+`oral_narrative_links`, the table that ties an oral narrative to a people (`oral_narratives`
+itself carries no `entity_id`: it hangs off an assertion through `assertion_id`, and that link
+is set to null when the assertion goes).
+
+`assertions` and `fiche_revisions` are kept. An assertion is still referenced without
+`ON DELETE` by the revoked quiz question (`quiz_questions.assertion_id`, migration 036), by
+`name_records` (029) and by `persons` (057), so deleting it fails until those are deleted
+first — and a revoked quiz question is kept on purpose. They are the audit trail of what the
+retired fiche said, and no reader reaches them. `revisions`, `revision_drafts`, `audit_log` and
+`afrik_translations` also key on `entity_id` and are kept for the same reason.
+
+Build the id list from the ledger and run this against the same target, in the SQL editor for
+recette and through the SSH tunnel `deploy-production.yml` uses for production (see
+`docs/runbooks/production-deploy.md`):
 
 A `withdrawn` entry (a retirement with no successor) belongs in this list too: it has no
 redirect, but its rows are just as dead.
@@ -524,17 +563,13 @@ WITH retired(entity_id) AS (VALUES ('PPL_EXAMPLE_A'), ('PPL_EXAMPLE_B'))
   FROM retired r WHERE q.entity_type = 'people' AND q.entity_id = r.entity_id AND q.revoked_at IS NULL
   RETURNING q.id
 )
-, d1 AS (DELETE FROM assertions a       USING retired r WHERE a.entity_type = 'people' AND a.entity_id = r.entity_id RETURNING 1)
-, d2 AS (DELETE FROM fiche_revisions f  USING retired r WHERE f.entity_type = 'people' AND f.entity_id = r.entity_id RETURNING 1)
-, d4 AS (DELETE FROM flags fl           USING retired r WHERE fl.entity_type = 'people' AND fl.entity_id = r.entity_id RETURNING 1)
-, d5 AS (DELETE FROM afrik_media m      USING retired r WHERE m.entity_type = 'people' AND m.entity_id = r.entity_id RETURNING 1)
-, d6 AS (DELETE FROM oral_narratives o  USING retired r WHERE o.entity_type = 'people' AND o.entity_id = r.entity_id RETURNING 1)
+, d1 AS (DELETE FROM flags fl                USING retired r WHERE fl.entity_type = 'people' AND fl.entity_id = r.entity_id RETURNING 1)
+, d2 AS (DELETE FROM afrik_media m           USING retired r WHERE m.entity_type = 'people' AND m.entity_id = r.entity_id RETURNING 1)
+, d3 AS (DELETE FROM oral_narrative_links o  USING retired r WHERE o.entity_type = 'people' AND o.entity_id = r.entity_id RETURNING 1)
 SELECT (SELECT count(*) FROM revoked) AS quiz_revoked,
-       (SELECT count(*) FROM d1) AS assertions,
-       (SELECT count(*) FROM d2) AS fiche_revisions,
-       (SELECT count(*) FROM d4) AS flags,
-       (SELECT count(*) FROM d5) AS afrik_media,
-       (SELECT count(*) FROM d6) AS oral_narratives;
+       (SELECT count(*) FROM d1) AS flags,
+       (SELECT count(*) FROM d2) AS afrik_media,
+       (SELECT count(*) FROM d3) AS oral_narrative_links;
 ```
 
 Quiz questions are revoked rather than deleted because the table is revocable by design and

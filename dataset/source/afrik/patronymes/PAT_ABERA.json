@@ -25,13 +25,7 @@
     "writtenChronicles": [],
     "linguisticReconstructions": []
   },
-  "peoples": [
-    {
-      "peopleId": "PPL_OROMO",
-      "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
-    }
-  ],
+  "peoples": [],
   "countries": [
     {
       "countryId": "ETH",
@@ -63,6 +57,10 @@
   ],
   "gaps": [
     {
+      "fieldPath": "peoples",
+      "reason": "Le lien avec les Oromo ne reposait que sur le relevé de couverture du projet, qui ne cite aucune source. Les sources lues décrivent Abera comme un nom personnel éthiopien, sans le rattacher à un peuple. Le lien est retiré."
+    },
+    {
       "fieldPath": "origin",
       "reason": "Les recherches « Abera Oromo name/etymology », les études de morphosémantique des noms oromo et la page institutionnelle d'Arba Minch University ont été examinées ; aucune source savante consultable n'a analysé Abera comme nom oromo."
     },
@@ -82,5 +80,64 @@
       "fieldPath": "homonyms",
       "reason": "Abera a été recherché comme prénom, élément patronymique et lexème ; aucune entité homonyme distincte et suffisamment sourcée n'a été identifiée."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Abera est un nom personnel éthiopien. Il sert de second nom aux enfants d'un homme qui le porte, sans devenir un nom de famille. On ne sait pas avec certitude ce qu'il veut dire ni quand il est écrit pour la première fois : les sources lues ne le disent pas.",
+    "names": [
+      {
+        "nameText": "Abera",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel éthiopien, porté en second par les enfants d'un Abera.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1996,
+              "to": 1996,
+              "label": "Décrit en 1996"
+            },
+            "era": "modern",
+            "statement": "Le nom Abera est un nom personnel éthiopien. En Éthiopie, une personne porte son propre nom suivi du nom personnel de son père, parfois de celui de son grand-père. Chez l'enfant d'un Abera, Abera est donc le nom du père, et il ne passe pas aux petits-enfants.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Names of Persons: National Usages for Entry in Catalogues",
+                "author": "IFLA Universal Bibliographic Control and International MARC Programme",
+                "year": 1996,
+                "url": "https://www.ifla.org/files/assets/cataloguing/pubs/names-of-persons_1996.pdf",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "p. 64-65",
+                "notes": "Quatrième édition, Munich, K. G. Saur, 1996, lue dans le PDF de l'IFLA le 12 octobre 2026. La notice Éthiopie, p. 64-65, fournie par la bibliothèque de l'université d'Addis-Abeba et approuvée par la Bibliothèque et les Archives nationales en octobre 1994, compose le nom d'un nom personnel, suivi du nom personnel du père, parfois de celui du grand-père. Elle cite Wolde Mariam parmi les noms composés, W. Berhan pour Wolde Berhan parmi les abréviations, et l'abuna Lukas Tewolde parmi les exemples. Elle note que le Code civil de 1960 prescrit un nom de famille, usage qui ne s'est pas encore répandu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Abera ouvre le nom complet d'un universitaire d'Arba Minch, que son université écrit Abera Uncha Utallo, puis appelle « Dr. Abera ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Abera Uncha Utallo — Arba Minch University",
+                "author": "Arba Minch University",
+                "year": null,
+                "url": "https://www.amu.edu.et/en/staff-dges/abera-uncha-utallo-phd",
+                "tier": "official",
+                "source_kind": "academic",
+                "notes": "Page de personnel de l'université d'Arba Minch, lue le 13 octobre 2026. Elle écrit Abera Uncha Utallo, puis « Dr. Abera » dans le corps du texte. Elle ne donne ni le sens du nom ni un peuple."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

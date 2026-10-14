@@ -100,5 +100,115 @@
       "fieldPath": "countries",
       "reason": "La source propre au nom n'a pas confirmé le pays où il est porté ; les recherches « Kebede » avec Ethiopia, Eritrea et les variantes de la fiche n'ont pas livré de registre officiel exploitable."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kebede est un nom personnel éthiopien. Il sert de second nom aux enfants d'un homme qui le porte, sans devenir un nom de famille. Une notice de 1962 de l'ONU est la plus ancienne trace écrite que nous connaissons. Nous présentons plus bas l'explication de son sens que nous connaissons.",
+    "names": [
+      {
+        "nameText": "Kebede",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel éthiopien, porté en second par les enfants d'un Kebede.",
+        "periodLabel": "Écrit dès 1962 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1996,
+              "to": 2022,
+              "label": "Décrit en 1996 et en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Kebede est un nom personnel éthiopien. En Éthiopie, une personne porte son propre nom suivi du nom personnel de son père, parfois de celui de son grand-père. Chez l'enfant d'un Kebede, Kebede est donc le nom du père, et il ne passe pas aux petits-enfants.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Names of Persons: National Usages for Entry in Catalogues",
+                "author": "IFLA Universal Bibliographic Control and International MARC Programme",
+                "year": 1996,
+                "url": "https://www.ifla.org/files/assets/cataloguing/pubs/names-of-persons_1996.pdf",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "p. 64-65",
+                "notes": "Quatrième édition, Munich, K. G. Saur, 1996, lue dans le PDF de l'IFLA le 13 octobre 2026. La notice Éthiopie, p. 64-65, fournie par la bibliothèque de l'université d'Addis-Abeba et approuvée par la Bibliothèque et les Archives nationales en octobre 1994, donne pour langues l'amharique, le tigrigna, le guèze et l'oromo (galla). Elle compose le nom d'un nom personnel, suivi du nom personnel du père, parfois de celui du grand-père. Elle note que le Code civil de 1960 prescrit un nom de famille, usage qui ne s'est pas encore répandu."
+              },
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Kebede",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/kebede?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 13 octobre 2026 ; la page s'affiche en français. La notice dit : nom éthiopien, du nom personnel Kebede, interprété comme « il est lourd » en amharique. Les Éthiopiens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Kebede voudrait dire « il est lourd » en amharique, selon le Dictionary of American Family Names. Le dictionnaire du guèze de Wolf Leslau donne le verbe kabda, « être lourd, être sérieux », et la notice de Behind the Name traduit le nom par « lourd, sérieux ».",
+            "hypothesisGroup": "origine du nom Kebede",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Kebede",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/kebede?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 13 octobre 2026 ; la page s'affiche en français. La notice dit : nom éthiopien, du nom personnel Kebede, interprété comme « il est lourd » en amharique. Les Éthiopiens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              },
+              {
+                "title": "Comparative Dictionary of Geʿez (Classical Ethiopic)",
+                "author": "Wolf Leslau",
+                "year": 1987,
+                "url": "https://archive.org/details/leslau-comparative-dictionary-of-geez-1987",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 272-273",
+                "notes": "Wiesbaden, Otto Harrassowitz, 1987. Lu le 13 octobre 2026 dans une copie non officielle déposée sur Internet Archive par un particulier. Entrée kabda : « be heavy, be a burden, be serious, be severe » ; l'adjectif kabud, « heavy, weighty, honored », et le nom kabad, « heaviness, burden, seriousness ». Leslau ne cite pas le nom Kebede."
+              },
+              {
+                "title": "Meaning, origin and history of the name Kebede — Behind the Name",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/kebede",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice du site Behind the Name, lue le 13 octobre 2026. Elle donne l'usage « amharique » et le sens « heavy, serious »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1962,
+              "to": 1962,
+              "label": "23 avril 1962"
+            },
+            "era": "modern",
+            "statement": "Le nom Kebede apparaît par écrit dans le titre d'un communiqué de presse de l'ONU, « Lt. General Kebede Gebre, Commander-in-Chief of United Nations Force in Congo », où il précède Gebre, qui serait le nom du père selon l'usage éthiopien. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "birth": true,
+            "formAsWritten": "Kebede",
+            "sources": [
+              {
+                "title": "Lt. General Kebede Gebre, Commander-in-Chief of United Nations Force in Congo",
+                "author": "Organisation des Nations unies, Secrétariat",
+                "year": 1962,
+                "url": "https://digitallibrary.un.org/record/3835192",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "notice du catalogue (titre et date)",
+                "notes": "Communiqué de presse BIO/153 du 23 avril 1962, lu dans la notice de la bibliothèque numérique de l'ONU le 13 octobre 2026 ; seuls le titre, la date et les mots-clés ont été lus, pas le texte du communiqué. Une seconde notice, BIO/153/Rev.1, écrit « Kebbede »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

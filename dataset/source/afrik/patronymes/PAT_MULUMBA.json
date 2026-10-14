@@ -82,5 +82,66 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Mulumba », « Luba », « la RDC », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la page Forebears propre au nom consultée directement, n’a établi aucune règle propre à Mulumba permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mulumba est porté en République démocratique du Congo ; la fiche le rattache, sans certitude, aux Luba. En 1913, le père Colle le cite chez les Baluba, entre la Lukuga et le Lualaba, comme un nom que l'on prend en entrant dans une confrérie. On ne sait pas avec certitude d'où il vient ni ce qu'il veut dire.",
+    "names": [
+      {
+        "nameText": "Mulumba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom luba écrit dès 1913, pris à l'entrée d'une confrérie ; son origine reste incertaine.",
+        "periodLabel": "Écrit dès 1913 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mulumba apparaît par écrit dans la monographie du père Colle sur les Baluba, publiée en 1913. Pour initier un nouveau membre de la confrérie du buhabo, le chef lui demande : « Veux-tu le nom Mulumba ? Veux-tu le nom Kileme ? », et Colle précise que ces noms sont propres à la confrérie. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un missionnaire l'a écrit, pas depuis quand des familles le portent. Le peuple luba existait déjà avant ce texte.",
+            "formAsWritten": "Mulumba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les Baluba (Congo belge), tome II",
+                "author": "R. P. Colle",
+                "year": 1913,
+                "url": "https://archive.org/details/lesbalubacongob02coll",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 611",
+                "notes": "Collection de monographies ethnographiques publiée par Cyr. van Overbergh, Bruxelles, Albert Dewit et Institut international de bibliographie, 1913 ; l'auteur est un missionnaire des Pères Blancs et décrit de l'extérieur le pays des Baluba, limité au nord par la Lukuga et au sud et à l'ouest par le Luvwa et le Lualaba (tome I, p. 3). Lu dans la numérisation d'archive.org. Page 611, rubrique « confréries religieuses » : « — Veux-tu le nom Mulumba ? Veux-tu le nom Kileme ? Et le chef de citer les noms propres à la confrérie. » Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mulumba est celui d'une des cinq classes des Bahayo, les membres de cette confrérie : ceux qui le portent ont pour totem l'oiseau kasozo, selon le père Colle. Il écrit que chacun honore son totem et ne mange jamais sa chair. Il ne dit pas si le nom de famille d'aujourd'hui a un lien avec ce nom de confrérie.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les Baluba (Congo belge), tome II",
+                "author": "R. P. Colle",
+                "year": 1913,
+                "url": "https://archive.org/details/lesbalubacongob02coll",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 613",
+                "notes": "Collection de monographies ethnographiques publiée par Cyr. van Overbergh, Bruxelles, Albert Dewit et Institut international de bibliographie, 1913 ; l'auteur est un missionnaire des Pères Blancs et décrit de l'extérieur le pays des Baluba, limité au nord par la Lukuga et au sud et à l'ouest par le Luvwa et le Lualaba (tome I, p. 3). Lu dans la numérisation d'archive.org. Page 613 : « Les Bahayo sont divisés en cinq classes : 1° ceux qui ont le nom Mulumba ; ils ont pour totem l'oiseau kasozo ; 2° ceux qui s'appellent Kileme [...] » Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
