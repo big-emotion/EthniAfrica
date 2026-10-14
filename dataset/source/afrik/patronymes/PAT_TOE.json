@@ -6,7 +6,7 @@
   },
   "id": "PAT_TOE",
   "nameMain": "Toe",
-  "nameSystem": "non_hereditary_patronymic",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Toe",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "individual",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -68,10 +68,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "nameSystem",
-      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom personnel d'homme kru et grebo, devenu nom de famille. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
-    },
     {
       "fieldPath": "origin.oralTraditions",
       "reason": "Les recherches « Toe Kru oral tradition », « Toe Grebo name » et la littérature historique kru de Jeffrey Gunn n'ont livré aucun récit d'origine attribué à un griot ou à un transmetteur identifiable."

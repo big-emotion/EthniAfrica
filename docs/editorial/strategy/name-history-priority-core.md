@@ -452,6 +452,18 @@ script), plus the Maghreb family names typed `nisba` (the nine above and a
 further group, such as Benjelloun, Benkirane and Bennani, to be read one by
 one). The pull request body lists the change set.
 
+**Implemented on 2026-10-14 (ETNI-2011).** The sixth value
+`hereditary_family_name` is in the parser, the model file, the API and the
+OpenAPI enums, migration 107, the glossary and the label dictionary. It
+means a surname that is hereditary and is neither a clan or lineage name, a
+nisba, a praise name, a totemic clan nor a non-hereditary patronymic: a given
+name, a title or a patronymic element that became a family name. A fiche takes
+it only when its own `nameHistory` shows the name borne as a family name, from
+an opened source, and tells no clan. Where it does not, the fiche keeps its
+nearest box and its `nameSystem` gap now says that the box exists but that no
+source read shows the transmission. The unit is `other`, or `lineage` where an
+account shows a family line (Akhannouch, Ben Badis, Eyoum). 28 fiches moved.
+
 # The long tail: wave order
 
 The priority core above is a short list picked by hand. The rest of the corpus

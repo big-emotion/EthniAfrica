@@ -280,6 +280,10 @@ const praiseNameSchema = z
   .object({ ...commonShape, nameSystem: z.literal("praise_name") })
   .strict();
 
+const hereditaryFamilyNameSchema = z
+  .object({ ...commonShape, nameSystem: z.literal("hereditary_family_name") })
+  .strict();
+
 const totemicClanSchema = z
   .object({
     ...commonShape,
@@ -449,6 +453,7 @@ const patronymeDossierUnionSchema = z.discriminatedUnion("nameSystem", [
   nisbaSchema,
   praiseNameSchema,
   totemicClanSchema,
+  hereditaryFamilyNameSchema,
 ]);
 
 // @req REQ-133

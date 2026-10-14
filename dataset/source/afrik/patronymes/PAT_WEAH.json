@@ -6,7 +6,7 @@
   },
   "id": "PAT_WEAH",
   "nameMain": "Weah",
-  "nameSystem": "non_hereditary_patronymic",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Weah",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "individual",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [
@@ -74,10 +74,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "nameSystem",
-      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom de personne masculin des Kru, devenu nom de famille. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
-    },
     {
       "fieldPath": "origin.oralTraditions",
       "reason": "Gunn cite des traditions kru recueillies par James Connelly, mais le passage propre à Weah est une explication historique d'anglicisation et n'attribue aucun récit du nom à un griot identifiable. Les recherches « Weah Kru oral tradition » n'ont pas fourni la transcription requise."

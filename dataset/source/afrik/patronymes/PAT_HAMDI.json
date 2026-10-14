@@ -6,7 +6,7 @@
   },
   "id": "PAT_HAMDI",
   "nameMain": "Hamdi",
-  "nameSystem": "non_hereditary_patronymic",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Hamdi",
@@ -23,7 +23,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "individual",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -108,10 +108,6 @@
     {
       "fieldPath": "countries",
       "reason": "Les sources propres à « Hamdi » n'ont pas confirmé les pays où il est porté ; les recherches par pays n'ont pas livré de registre officiel directement exploitable pour cette fiche."
-    },
-    {
-      "fieldPath": "nameSystem",
-      "reason": "Aucune source consultée n'en fait un nom de clan ni une nisba : les sources lues le disent un nom de famille tiré d'un prénom arabe. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "transmissionMode",

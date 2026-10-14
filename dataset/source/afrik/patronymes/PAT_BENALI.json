@@ -130,7 +130,7 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "Aucune source consultée n'en fait une nisba, c'est-à-dire un nom de lieu, de tribu ou de métier : les sources lues y voient un nom de famille formé de ben, « fils de », et du prénom Ali. Le modèle n'a pas de case pour ce genre de nom de famille. Le classement comme nisba reste donc provisoire."
+      "reason": "Aucune source consultée n'en fait une nisba, c'est-à-dire un nom de lieu, de tribu ou de métier : les sources lues y voient un nom de famille formé de ben, « fils de », et du prénom Ali. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant. Le classement comme nisba reste donc provisoire."
     },
     {
       "fieldPath": "transmissionMode",

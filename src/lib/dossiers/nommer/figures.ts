@@ -478,7 +478,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 173 -> 172 on 2026-10-11: three duplicate family-name fiches of wave 9 folded into their keepers; only Moussa cited a source of its own.
     // 172 -> 171 on 2026-10-12: three duplicate family-name fiches of wave 11 folded into their keepers; only Tesfay cited a source of its own.
     // 171 -> 172 on 2026-10-14: PAT_NSENGIYUMVA, a non-hereditary patronymic, now cites sources of its own (wave 22).
-    value: 172,
+    // 172 -> 171 on 2026-10-14: PAT_TAIWO is now a hereditary family name taken from the father, so its transmission is patrilineal.
+    value: 171,
     method:
       "fiches de nom recherchées dont transmissionMode vaut non_hereditary, au " +
       "même périmètre que le compte ci-dessus",

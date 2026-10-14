@@ -76,7 +76,7 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "Kayembe est un nom de famille : aucune source consultée n'en fait un nom de clan. Le modèle n'a pas de case pour un nom de famille héréditaire de ce genre : la fiche garde la case des noms de clan, la plus proche, avec la lignée pour unité, sans dire que Kayembe est un clan."
+      "reason": "Kayembe est un nom de famille : aucune source consultée n'en fait un nom de clan. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que Kayembe se transmet de parent à enfant. La fiche garde donc la case des noms de clan, la plus proche, avec la lignée pour unité, sans dire que Kayembe est un clan."
     },
     {
       "fieldPath": "transmissionMode",

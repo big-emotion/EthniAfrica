@@ -6,7 +6,7 @@
   },
   "id": "PAT_AKHANNOUCH",
   "nameMain": "Akhannouch",
-  "nameSystem": "clan_name",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Akhannouch",
@@ -85,10 +85,6 @@
     {
       "fieldPath": "homonyms",
       "reason": "Les catalogues d’autorité, répertoires onomastiques et recherches multilingues consultés n’ont pas permis d’identifier deux origines distinctes sous la graphie Akhannouch."
-    },
-    {
-      "fieldPath": "nameSystem",
-      "reason": "Akhannouch est le nom d'une famille, que le site Le360 décrit à partir de son patriarche : aucune source consultée n'en fait un nom de clan. Le modèle n'a pas de case pour un nom de famille héréditaire de ce genre : la fiche garde la case des noms de clan, la plus proche, avec la lignée pour unité, sans dire que Akhannouch est un clan."
     }
   ],
   "nameHistory": {

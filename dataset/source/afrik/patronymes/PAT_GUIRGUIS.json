@@ -6,7 +6,7 @@
   },
   "id": "PAT_GUIRGUIS",
   "nameMain": "Guirguis",
-  "nameSystem": "non_hereditary_patronymic",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Guirguis",
@@ -28,7 +28,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "individual",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -84,10 +84,6 @@
     {
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Guirguis à un peuple en Égypte. Nous n'avons pas encore consulté de source consacrée à ce nom. Un lien avec les Coptes d'Égypte reste à étudier."
-    },
-    {
-      "fieldPath": "nameSystem",
-      "reason": "Le Dictionary of American Family Names fait de Guirguis une variante du nom personnel Girgis, forme arabe de Georges ; aucune source consultée n'en fait un nom de clan. Le modèle n'a pas de case pour un nom personnel devenu nom de famille : la fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     }
   ],
   "nameHistory": {

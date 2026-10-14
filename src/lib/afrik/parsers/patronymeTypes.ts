@@ -8,6 +8,7 @@ export const PATRONYME_NAME_SYSTEMS = [
   "nisba",
   "praise_name",
   "totemic_clan",
+  "hereditary_family_name",
 ] as const;
 
 export type PatronymeNameSystem = (typeof PATRONYME_NAME_SYSTEMS)[number];
@@ -187,9 +188,19 @@ export interface PatronymeTotemicClanDossier extends PatronymeDossierCommon {
   >;
 }
 
+/**
+ * A hereditary surname that is none of the other boxes: a given name, a
+ * title or a patronymic element that became a family name (ETNI-2011,
+ * ruling of 2026-10-14). No subtype-only field.
+ */
+export interface PatronymeHereditaryFamilyNameDossier extends PatronymeDossierCommon {
+  nameSystem: "hereditary_family_name";
+}
+
 export type PatronymeDossier =
   | PatronymeClanNameDossier
   | PatronymeNonHereditaryDossier
   | PatronymeNisbaDossier
   | PatronymePraiseNameDossier
-  | PatronymeTotemicClanDossier;
+  | PatronymeTotemicClanDossier
+  | PatronymeHereditaryFamilyNameDossier;

@@ -150,7 +150,7 @@ describe("fiche errors found by waves 8 and 9", () => {
   it("PAT_RAMGOOLAM is a name that was first a given name", () => {
     const fiche = readFiche("patronymes/PAT_RAMGOOLAM");
 
-    expect(fiche.nameSystem).toBe("non_hereditary_patronymic");
+    expect(fiche.nameSystem).toBe("hereditary_family_name");
     expect(fiche.transmissionMode).toBe("other");
   });
 

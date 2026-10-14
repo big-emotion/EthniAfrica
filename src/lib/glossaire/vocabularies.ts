@@ -226,6 +226,7 @@ export const PATRONYME_VOCABULARY: Record<GlossaryLocale, PatronymeVocabulary> =
         nisba: "Nisba",
         praise_name: "Nom d'éloge (jamu)",
         totemic_clan: "Clan totémique",
+        hereditary_family_name: "Nom de famille héréditaire",
       },
       transmissionMode: {
         patrilineal: "Patrilinéaire",
