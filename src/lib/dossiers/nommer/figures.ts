@@ -81,7 +81,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 702 -> 691 on 2026-10-12: eleven duplicate people fiches of wave 10 folded into their keepers, and the « Swahili (Yémen) » fiche renamed PPL_MUWALLADEEN.
     // 691 -> 687 the same day: the Khainai, Koyra, Yerima and Kirdi fiches folded or retired after wave 12.
     // 687 -> 666 on 2026-10-14: twenty-one people fiches of waves 14 to 19 folded into their keepers or withdrawn (fifteen folded, six withdrawn).
-    // 666 -> 665 on 2026-10-14: PPL_NABT, a duplicate of PPL_NABDAM, folded into it.
+    // 666 -> 665 on 2026-10-14: the Nabt fiche, a duplicate of PPL_NABDAM, folded into it.
     value: 665,
     method: `nombre de fichiers ${PEOPLE_GLOB}`,
     countedOn: COUNTED_ON,
@@ -113,7 +113,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 2883 -> 2832 on 2026-10-12: eleven duplicate people fiches of wave 10 folded into their keepers, and the « Swahili (Yémen) » fiche renamed PPL_MUWALLADEEN.
     // 2832 -> 2818 the same day: the Khainai, Koyra, Yerima and Kirdi fiches folded or retired after wave 12.
     // 2818 -> 2740 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
-    // 2740 -> 2730 on 2026-10-14: PPL_NABT's seven exonyms left with it, and Gwa, Nao and Nyiha were removed from the exonyms of the Gwa, Mao and Nyika fiches (Gwa is the people's own name, Nao a different people, Nyiha the Tanzanian people); the Lamba fiche swapped Lamba for Lala-Lamba.
+    // 2740 -> 2730 on 2026-10-14: the Nabt fiche's seven exonyms left with it, and Gwa, Nao and Nyiha were removed from the exonyms of the Gwa, Mao and Nyika fiches (Gwa is the people's own name, Nao a different people, Nyiha the Tanzanian people); the Lamba fiche swapped Lamba for Lala-Lamba.
     value: 2730,
     method:
       "somme de content.appellations.exonyms.length sur les fiches de peuple",
@@ -143,7 +143,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 689 -> 678 on 2026-10-12: eleven duplicate people fiches of wave 10 folded into their keepers, and the « Swahili (Yémen) » fiche renamed PPL_MUWALLADEEN.
     // 678 -> 675 the same day: the Khainai, Koyra, Yerima and Kirdi fiches folded or retired after wave 12.
     // 675 -> 654 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
-    // 654 -> 653 on 2026-10-14: PPL_NABT's self-name left with it.
+    // 654 -> 653 on 2026-10-14: the Nabt fiche's self-name left with it.
     value: 653,
     method:
       "fiches dont content.appellations.selfAppellation est renseigné et non vide",
@@ -203,7 +203,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 294 -> 291 on 2026-10-11: ten duplicate people fiches of wave 8 folded into their keepers, and the Afizere fiche split from Jarawa.
     // 291 -> 290 on 2026-10-12: eleven duplicate people fiches of wave 10 folded into their keepers, and the « Swahili (Yémen) » fiche renamed PPL_MUWALLADEEN.
     // 290 -> 279 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
-    // 279 -> 278 on 2026-10-14: PPL_NABT, which declared no status, was folded.
+    // 279 -> 278 on 2026-10-14: the Nabt fiche, which declared no status, was folded.
     value: 278,
     method: "fiches sans classificationStatus",
     countedOn: COUNTED_ON,
@@ -226,7 +226,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 211 -> 208 on 2026-10-12: eleven duplicate people fiches of wave 10 folded into their keepers, and the « Swahili (Yémen) » fiche renamed PPL_MUWALLADEEN.
     // 208 -> 207 the same day: the Khainai, Koyra, Yerima and Kirdi fiches folded or retired after wave 12.
     // 207 -> 201 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
-    // 201 -> 200 on 2026-10-14: PPL_NABT, which counted, was folded.
+    // 201 -> 200 on 2026-10-14: the Nabt fiche, which counted, was folded.
     value: 200,
     method: "radical colonial dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
@@ -257,7 +257,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 167 -> 164 on 2026-10-12: eleven duplicate people fiches of wave 10 folded into their keepers, and the « Swahili (Yémen) » fiche renamed PPL_MUWALLADEEN.
     // 164 -> 163 the same day: the Khainai, Koyra, Yerima and Kirdi fiches folded or retired after wave 12.
     // 163 -> 156 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
-    // 156 -> 155 on 2026-10-14: PPL_NABT, which counted, was folded.
+    // 156 -> 155 on 2026-10-14: the Nabt fiche, which counted, was folded.
     value: 155,
     method: "radical administr dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
