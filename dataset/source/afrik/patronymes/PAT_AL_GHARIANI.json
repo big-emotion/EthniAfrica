@@ -60,7 +60,7 @@
     },
     {
       "sourceKey": "westminster-ghiryani",
-      "title": "Tribe and State in Libya: A Study of Tribal Politics — University of Westminster",
+      "title": "Tribe, Islam and State in Libya: Analytical Study of the Roots of the Libyan Tribal Society and Interaction up to the Qaramanli Rule (1711-1835)",
       "url": "https://westminsterresearch.westminster.ac.uk/download/926d7d076329ed28eba6c6893c17630fb1ec633a9e37b4a2ac4ea32394f484ed/19198678/Najem.pdf",
       "tier": "referenced",
       "source_kind": "academic",
@@ -100,5 +100,65 @@
       "fieldPath": "transmissionMode",
       "reason": "Les recherches « Al-Ghariani transmission patronyme », « Al-Ghariani filiation » et « Al-Ghariani hereditary surname » n’ont pas établi si, ni comment, cette forme se transmet dans les communautés concernées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Al-Ghariani est un nom libyen qui a la forme d'un nom d'origine : « de Ghiryan », un lieu de Libye. Il est aussi porté en Tunisie. Les sources lues n'en donnent aucune trace écrite ancienne : on ne sait pas avec certitude depuis quand il est écrit.",
+    "names": [
+      {
+        "nameText": "Al-Ghariani",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom libyen « de Ghiryan » ; aussi porté en Tunisie ; première trace inconnue.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2004,
+              "to": 2004,
+              "label": "Décrit en 2004"
+            },
+            "era": "modern",
+            "statement": "Le nom Al-Ghariani est aussi un nom de famille tunisien, que Faraj Najem écrit al-Ghriyani. Il explique que les Libyens installés en Tunisie y ont donné des noms libyens à des lieux, et que ces noms sont devenus des noms de famille tunisiens.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Tribe, Islam and State in Libya: Analytical Study of the Roots of the Libyan Tribal Society and Interaction up to the Qaramanli Rule (1711-1835)",
+                "author": "Faraj Najem",
+                "year": 2004,
+                "url": "https://westminsterresearch.westminster.ac.uk/download/926d7d076329ed28eba6c6893c17630fb1ec633a9e37b4a2ac4ea32394f484ed/19198678/Najem.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 216",
+                "notes": "Thèse de doctorat, Université de Westminster, 2004, lue le 14 octobre 2026 dans le dépôt WestminsterResearch. Page 216 : « Those Libyan names are household Tunisian until the present day, such as al-Taräbulsi, al-Tarhnni, al-Wirfilli, al-Ghriyani, al-Firjani, al-Rayyäni, al-Ghidämsi, al-Misräti [...] »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2004,
+              "to": 2004,
+              "label": "Proposé en 2004"
+            },
+            "era": "modern",
+            "statement": "Le nom Al-Ghariani viendrait de Ghiryan, un lieu de Libye, selon Faraj Najem, qui écrit Ghiryäni et range ce nom parmi les noms de tribus libyennes tirés d'une ville, d'un pays ou d'un métier. Il ne dit pas si tous les porteurs du nom viennent de Ghiryan.",
+            "hypothesisGroup": "origine du nom Al-Ghariani",
+            "sources": [
+              {
+                "title": "Tribe, Islam and State in Libya: Analytical Study of the Roots of the Libyan Tribal Society and Interaction up to the Qaramanli Rule (1711-1835)",
+                "author": "Faraj Najem",
+                "year": 2004,
+                "url": "https://westminsterresearch.westminster.ac.uk/download/926d7d076329ed28eba6c6893c17630fb1ec633a9e37b4a2ac4ea32394f484ed/19198678/Najem.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 115",
+                "notes": "Thèse de doctorat, Université de Westminster, 2004, lue le 14 octobre 2026 dans le dépôt WestminsterResearch. Page 115 : certaines tribus libyennes tirent leur nom de villes, de pays ou de métiers, par exemple « Misräti (Misräta), Ghiryäni (Ghiryän), Zwäri (Zwära) »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

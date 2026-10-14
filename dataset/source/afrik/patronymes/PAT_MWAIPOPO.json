@@ -84,5 +84,88 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web et bibliographique combinant « Mwaipopo », « Nyakyusa », « la Tanzanie », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la source dédiée « An Account of Intercultural Contact in Nyakyusa Personal Names » et la page Forebears propre au nom, consultées directement, n’a pas établi de lignée homonyme d’origine distincte documentable ; la diffusion dans plusieurs pays ne suffit pas à créer un homonyme."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mwaipopo est un nom nyakyusa, du sud-ouest de la Tanzanie. Il commence par mwa-, « enfant de », qui marque la famille du père, et se lirait « fils d'Ipopo » ; on ne sait pas avec certitude qui était Ipopo, ni ce que ce mot veut dire. Sa plus ancienne trace écrite que nous connaissons date de 1951, connue de seconde main.",
+    "names": [
+      {
+        "nameText": "Mwaipopo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom nyakyusa en mwa-, « fils d'Ipopo » selon un linguiste ; écrit dès 1951.",
+        "periodLabel": "Écrit dès 1951 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "Décrit en 2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Mwaipopo est un nom nyakyusa qui commence par mwa-, « enfant de », signe de la famille du père. Selon Amani Lusekelo, la plupart de ces noms servent de noms de clan ou de famille, et ils se maintiennent aujourd'hui. Il relève Mwaipopo, d'après Simon Charsley (1969), parmi les noms de princes nyakyusa, rattaché à Busokelo, dans le pays selya.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "An Account of Intercultural Contact in Nyakyusa Personal Names",
+                "author": "Amani Lusekelo",
+                "year": 2018,
+                "url": "https://repository.udsm.ac.tz/items/28d7f0af-f499-4042-bf05-c4cf48b861f4",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 47 ; p. 53 ; p. 54 ; p. 64",
+                "notes": "African Study Monographs, vol. 39, n° 2, juin 2018, p. 47-67, lu en texte intégral le 14 octobre 2026 dans la copie du dépôt de l'Université de Kyoto. Page 47, résumé : les noms en mwa- indiquent la descendance de la famille. Page 53 : la plupart des noms en mwa- sont des noms de clan ou de famille. Page 54, liste (6) tirée de Charsley, The Princes of Nyakyusa, 1969, p. 123 : « Mwaipopo » est placé en face de « Busokelo (Selya) », dans une liste de noms de princes dont les mots ont un sens inconnu. Page 64 : ces noms de famille « sont maintenus à ce jour »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "Proposé en 2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Mwaipopo voudrait dire « fils d'Ipopo », selon Amani Lusekelo : mwa- se lit « enfant de » et Ipopo serait un nom de personne. Le même article range pourtant Mwaipopo parmi les noms en mwa- dont le mot reste de sens inconnu, et il ne dit pas qui était Ipopo.",
+            "hypothesisGroup": "origine du nom Mwaipopo",
+            "sources": [
+              {
+                "title": "An Account of Intercultural Contact in Nyakyusa Personal Names",
+                "author": "Amani Lusekelo",
+                "year": 2018,
+                "url": "https://repository.udsm.ac.tz/items/28d7f0af-f499-4042-bf05-c4cf48b861f4",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 53 ; p. 54",
+                "notes": "African Study Monographs, vol. 39, n° 2, juin 2018, p. 47-67, lu en texte intégral le 14 octobre 2026 dans la copie du dépôt de l'Université de Kyoto. Page 53, liste (4) : « Mwaipopo (son of Ipopo) ». Page 54, liste (6) : le même nom figure parmi les noms de princes où certains mots ont un sens inconnu (« Some mwa-names contain words whose meanings are unknown »)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1951,
+              "to": 1951,
+              "label": "1951"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mwaipopo apparaît par écrit dans une liste de noms nyakyusa en mwa- que le linguiste Amani Lusekelo rattache au livre de l'anthropologue Monica Wilson, Good Company, publié en 1951. C'est la plus ancienne trace de ce nom que le projet connaît ; elle est connue de seconde main, car nous n'avons pas pu ouvrir le livre de Wilson. Elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "formAsWritten": "Mwaipopo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "An Account of Intercultural Contact in Nyakyusa Personal Names",
+                "author": "Amani Lusekelo",
+                "year": 2018,
+                "url": "https://repository.udsm.ac.tz/items/28d7f0af-f499-4042-bf05-c4cf48b861f4",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 53 ; p. 64",
+                "notes": "African Study Monographs, vol. 39, n° 2, juin 2018, p. 47-67, lu en texte intégral le 14 octobre 2026 dans la copie du dépôt de l'Université de Kyoto. Page 53 : l'auteur écrit que Monica Hunter Wilson a dressé une liste de noms en mwa- (Wilson, 1951, p. viii) et donne, sous le numéro (4), une liste où figure « Mwaipopo (son of Ipopo) ». Page 64 : il cite Charsley (1969), Schumann (1898) et Wilson (1951) pour des noms en mwa- de chefs, dont Mwaipopo, sans dire lequel de ces trois ouvrages donne ce nom."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -11,7 +11,10 @@
     {
       "spelling": "Chitunda",
       "attestations": [
-        { "countryId": "AGO", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "AGO",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -75,5 +78,88 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Chitunda est un nom de famille d'Angola, celui de Jeremias Chitunda, responsable de l'UNITA. On ne sait pas avec certitude ce que veut dire ce nom ni d'où il vient : aucune source que nous avons lue ne l'explique.",
+    "names": [
+      {
+        "nameText": "Chitunda",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Un nom de famille d'Angola, dont l'origine n'est pas connue.",
+        "periodLabel": "Écrit dès 1975",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine et sens"
+            },
+            "era": "modern",
+            "statement": "Le nom Chitunda est un nom de famille angolais, celui de Jeremias Chitunda, porte-parole de l'UNITA aux Nations unies en 1976. Les sources lues ne disent pas d'où vient ce nom ni ce qu'il veut dire ; on ne sait pas avec certitude d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Telegram USUN New York 155, 17 janvier 1976",
+                "author": "Mission des États-Unis auprès des Nations unies",
+                "year": 1976,
+                "url": "https://archive.org/details/StateDeptcable1976-115720",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 1",
+                "notes": "Télégramme diplomatique du 17 janvier 1976 au département d'État, objet « UNITA press conference at United Nations », déclassifié en 2006 et lu sur la copie d'archive.org. Il écrit en capitales : « UNITA SPOKESMAN CHITUNDA MET UN CORRESPONDENTS JANUARY 16 TO DISCUSS SITUATION IN ANGOLA. » Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1976,
+              "to": 1976,
+              "label": "Janvier 1976"
+            },
+            "era": "modern",
+            "statement": "Le nom Chitunda est celui du porte-parole de l'UNITA qui rencontre les journalistes des Nations unies le 16 janvier 1976, selon un télégramme américain. Ce document écrit le nom en capitales.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Telegram USUN New York 155, 17 janvier 1976",
+                "author": "Mission des États-Unis auprès des Nations unies",
+                "year": 1976,
+                "url": "https://archive.org/details/StateDeptcable1976-115720",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 1",
+                "notes": "Télégramme diplomatique du 17 janvier 1976 au département d'État, objet « UNITA press conference at United Nations », déclassifié en 2006 et lu sur la copie d'archive.org. Il écrit en capitales : « UNITA SPOKESMAN CHITUNDA MET UN CORRESPONDENTS JANUARY 16 TO DISCUSS SITUATION IN ANGOLA. » Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "19 août 1975"
+            },
+            "era": "colonial",
+            "statement": "Le nom Chitunda apparaît dans un télégramme de l'ambassade des États-Unis à Lusaka du 19 août 1975, qui rapporte la conférence de presse de « Jeremiah Chitunda », ministre des Ressources naturelles de l'UNITA dans le gouvernement de transition. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un document l'a écrit, pas depuis quand la famille le porte.",
+            "formAsWritten": "CHITUNDA",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Telegram Lusaka 1564, 19 août 1975",
+                "author": "Ambassade des États-Unis à Lusaka",
+                "year": 1975,
+                "url": "https://archive.org/details/State-Dept-cable-1975-37674",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 3",
+                "notes": "Télégramme diplomatique du 19 août 1975, de l'ambassade des États-Unis à Lusaka au département d'État, déclassifié en 2006 et lu sur la copie d'archive.org. Il écrit en capitales : « UNITA MINISTER OF NATURAL RESOURCES IN DEFUNCT TRANSITIONAL GOVERNMENT, JEREMIAH CHITUNDA, TOLD LUSAKA PRESS CONFERENCE THERE WAS NO HOPE FOR PEACEFUL SOLUTION TO CIVIL WAR. » Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

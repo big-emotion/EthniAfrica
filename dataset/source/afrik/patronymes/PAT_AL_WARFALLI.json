@@ -74,6 +74,14 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Contribution utilisateur consultée le 2 septembre 2026. Elle rattache Al-Warfalli à la confédération Warfalla en Libye ; aucun appareil critique ni document de filiation n’accompagne cette proposition."
+    },
+    {
+      "sourceKey": "cole-mangan-2016-usip-tribes-libya",
+      "title": "Tribe, Security, Justice, and Peace in Libya Today (Peter Cole et Fiona Mangan, 2016)",
+      "url": "https://www.usip.org/sites/default/files/PW118-Tribe-Security-Justice-and-Peace-in-Libya-Today.pdf",
+      "tier": "referenced",
+      "source_kind": "ngo",
+      "notes": "United States Institute of Peace, Peaceworks n° 118, 2016, lu le 14 octobre 2026 dans une copie conservée par la Wayback Machine (le lien d'origine ne répond plus). Page 5 : des clans arabes bédouins et des familles voisines forment une « tribu » en milieu rural, les Warfalla en sont l'exemple. Page 23 : la seule tribu de Bani Walid est celle des Warfalla ; la région s'appelait d'abord Wrfalla, nom d'origine berbère amazighe, et cinquante-deux clans devenus la tribu Warfalla ont pris le nom du territoire où ils vivaient. Les descendants de la tribu sont répandus en Libye et au sud, au Niger et au Tchad."
     }
   ],
   "gaps": [
@@ -109,5 +117,165 @@
       "fieldPath": "transmissionMode",
       "reason": "Les recherches « Al-Warfalli transmission patronyme », « Al-Warfalli filiation » et « Al-Warfalli hereditary surname » n’ont pas établi si, ni comment, cette forme se transmet dans les communautés concernées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Al-Warfalli, qu'on écrit aussi Warfalli, serait un nom qui dit l'appartenance à la tribu libyenne des Warfalla, installée à Bani Walid. Le nom de la tribu viendrait de celui de son territoire, Wrfalla, d'origine berbère. Nous n'avons trouvé aucune étude consacrée au nom de famille lui-même ; les sources sont présentées plus bas.",
+    "names": [
+      {
+        "nameText": "Al-Warfalli",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom qui dirait l'appartenance à la tribu libyenne des Warfalla ; on ne sait pas depuis quand.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "Proposé en 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Al-Warfalli signifierait « le Warfalli » en arabe et dirait qu'une personne appartient à la confédération tribale des Warfalla, dans l'ouest de la Libye, selon un contributeur de Behind the Name. Aucune source ne l'accompagne sur la page ; l'existence de la tribu est confirmée par Peter Cole et Fiona Mangan.",
+            "hypothesisGroup": "origine du nom Al-Warfalli",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the surname Al-Warfalli — Behind the Name",
+                "author": "Contribution d'utilisateur (General9696)",
+                "year": 2024,
+                "url": "https://surnames.behindthename.com/name/al01warfalli/submitted",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page de noms soumis par les utilisateurs, ajoutée le 8 juin 2024 et modifiée le 8 juin 2026, lue le 14 octobre 2026. Elle donne al-Warfalli comme nom de famille arabe maghrébin, « le Warfalli », pour une personne de la confédération tribale Warfalla de l'ouest de la Libye, et liste les autres écritures : al-Werfalli, el-Warfally, al-Warfali, Warfalli, Werfalli, Werfali, Warfali, entre autres. Aucun appareil critique ni source n'accompagne la page.",
+                "page": "page entière"
+              },
+              {
+                "title": "Tribe, Security, Justice, and Peace in Libya Today",
+                "author": "Peter Cole et Fiona Mangan",
+                "year": 2016,
+                "url": "https://www.usip.org/sites/default/files/PW118-Tribe-Security-Justice-and-Peace-in-Libya-Today.pdf",
+                "tier": "referenced",
+                "source_kind": "ngo",
+                "page": "p. 5, 23",
+                "notes": "United States Institute of Peace, Peaceworks n° 118, 2016, lu le 14 octobre 2026 dans une copie conservée par la Wayback Machine (le lien d'origine ne répond plus). Page 5 : des clans arabes bédouins et des familles voisines forment une « tribu » en milieu rural, les Warfalla en sont l'exemple. Page 23 : la seule tribu de Bani Walid est celle des Warfalla ; la région s'appelait d'abord Wrfalla, nom d'origine berbère amazighe, et cinquante-deux clans devenus la tribu Warfalla ont pris le nom du territoire où ils vivaient. Les descendants de la tribu sont répandus en Libye et au sud, au Niger et au Tchad."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Warfalli",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une écriture du nom, sans al-, parmi celles que liste Behind the Name.",
+        "periodLabel": "Porté aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "Écrit en 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Warfalli est l'une des écritures d'al-Warfalli que liste un contributeur de Behind the Name, avec Werfalli, Werfali, Warfali, al-Werfalli et d'autres.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the surname Al-Warfalli — Behind the Name",
+                "author": "Contribution d'utilisateur (General9696)",
+                "year": 2024,
+                "url": "https://surnames.behindthename.com/name/al01warfalli/submitted",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page de noms soumis par les utilisateurs, ajoutée le 8 juin 2024 et modifiée le 8 juin 2026, lue le 14 octobre 2026. Elle donne al-Warfalli comme nom de famille arabe maghrébin, « le Warfalli », pour une personne de la confédération tribale Warfalla de l'ouest de la Libye, et liste les autres écritures : al-Werfalli, el-Warfally, al-Warfali, Warfalli, Werfalli, Werfali, Warfali, entre autres. Aucun appareil critique ni source n'accompagne la page.",
+                "page": "page entière"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Warfalla",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de la tribu de Bani Walid, pris, dit-on, au nom de son territoire Wrfalla.",
+        "periodLabel": "Écrit dès 2016 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "Rapporté en 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Warfalla serait celui du territoire de Bani Walid, appelé d'abord Wrfalla, un nom d'origine berbère amazighe : cinquante-deux clans qui y vivaient auraient pris ce nom pour devenir la tribu Warfalla, selon Peter Cole et Fiona Mangan.",
+            "hypothesisGroup": "origine du nom Warfalla",
+            "sources": [
+              {
+                "title": "Tribe, Security, Justice, and Peace in Libya Today",
+                "author": "Peter Cole et Fiona Mangan",
+                "year": 2016,
+                "url": "https://www.usip.org/sites/default/files/PW118-Tribe-Security-Justice-and-Peace-in-Libya-Today.pdf",
+                "tier": "referenced",
+                "source_kind": "ngo",
+                "page": "p. 23",
+                "notes": "United States Institute of Peace, Peaceworks n° 118, 2016, lu le 14 octobre 2026 dans une copie conservée par la Wayback Machine (le lien d'origine ne répond plus). Page 5 : des clans arabes bédouins et des familles voisines forment une « tribu » en milieu rural, les Warfalla en sont l'exemple. Page 23 : la seule tribu de Bani Walid est celle des Warfalla ; la région s'appelait d'abord Wrfalla, nom d'origine berbère amazighe, et cinquante-deux clans devenus la tribu Warfalla ont pris le nom du territoire où ils vivaient. Les descendants de la tribu sont répandus en Libye et au sud, au Niger et au Tchad."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "Décrit en 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Warfalla désigne la tribu qui vit à Bani Walid, en Libye. Ses descendants sont répandus dans le pays et, au sud, au Niger et au Tchad, selon Peter Cole et Fiona Mangan.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Tribe, Security, Justice, and Peace in Libya Today",
+                "author": "Peter Cole et Fiona Mangan",
+                "year": 2016,
+                "url": "https://www.usip.org/sites/default/files/PW118-Tribe-Security-Justice-and-Peace-in-Libya-Today.pdf",
+                "tier": "referenced",
+                "source_kind": "ngo",
+                "page": "p. 23",
+                "notes": "United States Institute of Peace, Peaceworks n° 118, 2016, lu le 14 octobre 2026 dans une copie conservée par la Wayback Machine (le lien d'origine ne répond plus). Page 5 : des clans arabes bédouins et des familles voisines forment une « tribu » en milieu rural, les Warfalla en sont l'exemple. Page 23 : la seule tribu de Bani Walid est celle des Warfalla ; la région s'appelait d'abord Wrfalla, nom d'origine berbère amazighe, et cinquante-deux clans devenus la tribu Warfalla ont pris le nom du territoire où ils vivaient. Les descendants de la tribu sont répandus en Libye et au sud, au Niger et au Tchad."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Warfalla apparaît par écrit dans le rapport de Peter Cole et Fiona Mangan sur les tribus de Libye, publié en 2016 par l'United States Institute of Peace. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un rapport l'a écrit, pas depuis quand le nom est porté.",
+            "formAsWritten": "Warfalla",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tribe, Security, Justice, and Peace in Libya Today",
+                "author": "Peter Cole et Fiona Mangan",
+                "year": 2016,
+                "url": "https://www.usip.org/sites/default/files/PW118-Tribe-Security-Justice-and-Peace-in-Libya-Today.pdf",
+                "tier": "referenced",
+                "source_kind": "ngo",
+                "page": "p. 23",
+                "notes": "United States Institute of Peace, Peaceworks n° 118, 2016, lu le 14 octobre 2026 dans une copie conservée par la Wayback Machine (le lien d'origine ne répond plus). Page 5 : des clans arabes bédouins et des familles voisines forment une « tribu » en milieu rural, les Warfalla en sont l'exemple. Page 23 : la seule tribu de Bani Walid est celle des Warfalla ; la région s'appelait d'abord Wrfalla, nom d'origine berbère amazighe, et cinquante-deux clans devenus la tribu Warfalla ont pris le nom du territoire où ils vivaient. Les descendants de la tribu sont répandus en Libye et au sud, au Niger et au Tchad."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

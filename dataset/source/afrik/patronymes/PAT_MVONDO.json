@@ -67,7 +67,7 @@
       "url": "https://dicames.online/jspui/bitstream/20.500.12177/5229/1/ENS_20_0540.pdf",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Théorine Emmanuelle Onana, mémoire de DIPES II, département d'histoire, École normale supérieure de Yaoundé I, année 2014-2015, sous la direction d'Eugène Désiré Eloundou ; travail universitaire non publié, lu dans la version numérisée du dépôt de l'université. Pages imprimées : l'ancêtre Onandoa qui franchit la Sanaga sur le dos du serpent mythique, ses fils Onandjana et Onamney, puis Mvondo Menye donné comme « patriarche fondateur des Mvog Mvondo », et le passage où l'auteure déduit que la mère de Mvondo Menye s'appelait Menye (p. 23) ; Mvondo Menye né dans la région de Sa'a (p. 24). Le travail raconte l'histoire d'un clan eton et ne dit pas ce que le mot Mvondo signifie. Il traite les Eton et les Ewondo comme deux groupes distincts et ne donne aucun porteur ewondo du nom."
+      "notes": "Théorine Emmanuelle Onana, mémoire de DIPES II, département d'histoire, École normale supérieure de Yaoundé I, année 2014-2015, sous la direction d'Eugène Désiré Eloundou ; travail universitaire non publié, lu dans la version numérisée du dépôt de l'université. Pages imprimées : l'ancêtre Onandoa qui franchit la Sanaga sur le dos du serpent mythique, ses fils Onandjana et Onamney, puis Mvondo Menye donné comme « patriarche fondateur des Mvog Mvondo », et le passage où l'auteure déduit que la mère de Mvondo Menye s'appelait Menye (p. 22) ; Mvondo Menye né dans la région de Sa'a (p. 23). Le travail raconte l'histoire d'un clan eton et ne dit pas ce que le mot Mvondo signifie. Il traite les Eton et les Ewondo comme deux groupes distincts et ne donne aucun porteur ewondo du nom."
     }
   ],
   "gaps": [
@@ -99,5 +99,153 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Mvondo », « Ewondo », « le Cameroun », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la page Forebears propre au nom consultée directement, n’a établi aucune règle propre à Mvondo permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mvondo est le nom d'un clan eton du centre du Cameroun, les Mvog Mvondo. Une tradition rapportée en 2015 y voit le nom de son ancêtre fondateur, Mvondo Menye. On ne sait pas avec certitude ce que le mot Mvondo veut dire. La plus ancienne trace écrite que le projet connaît est un bulletin scolaire allemand de 1914, où il figure dans « Mvog Mvondo » ; le nom est plus ancien.",
+    "names": [
+      {
+        "nameText": "Mvondo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du clan eton Mvog Mvondo, qui serait celui de son ancêtre fondateur ; son sens reste inconnu.",
+        "periodLabel": "Écrit dès 1914 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1914,
+              "to": 1914,
+              "label": "Année scolaire 1914"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mvondo apparaît par écrit, dans l'expression « Mvog Mvondo », sur un bulletin scolaire de la Deutsche Mittelschule de Yaoundé pour l'année 1914 : l'élève y est dit « aus Mvog Mvondo », c'est-à-dire des Mvog Mvondo. Le bulletin est reproduit dans le mémoire de Théorine Emmanuelle Onana (2015), qui n'en nomme pas la source. C'est la plus ancienne trace de ce nom que le projet connaît ; elle nomme un clan, et le nom est plus ancien qu'elle.",
+            "formAsWritten": "Mvog Mvondo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Monographie historique des Mvog Mvondo des origines à 2014",
+                "author": "Théorine Emmanuelle Onana",
+                "year": 2015,
+                "url": "https://dicames.online/jspui/bitstream/20.500.12177/5229/1/ENS_20_0540.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 67, note 158 ; annexe 2, p. 84",
+                "notes": "Mémoire de DIPES II, École normale supérieure de Yaoundé I, 2014-2015, lu le 14 octobre 2026. Page 67, note 158 : copie d'un diplôme de l'école allemande daté de 1914, obtenu à Yaoundé par un Mvog Mvondo, du nom de Mvondo André. Annexe 2, page 84 : reproduction du bulletin, vue en image : en-tête « Deutsche Mittelschule zu Jaunde », « Zeugnis für … aus Mvog Mvondo », année scolaire 1914, cachet de la Katholische Mission ; la légende de l'image dit « Source : ?????? », sans nommer l'archive. Le prénom de l'élève est écrit à la main et n'est pas déchiffré ici."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "Décrit en 2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Mvondo est, selon le mémoire de Théorine Emmanuelle Onana (2015), celui de l'ancêtre fondateur d'un clan eton, Mvondo Menye. Le mémoire ne dit pas ce que le mot Mvondo veut dire : on ne sait pas avec certitude ce qu'il signifie.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Monographie historique des Mvog Mvondo des origines à 2014",
+                "author": "Théorine Emmanuelle Onana",
+                "year": 2015,
+                "url": "https://dicames.online/jspui/bitstream/20.500.12177/5229/1/ENS_20_0540.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 22",
+                "notes": "Mémoire de DIPES II, département d'histoire, École normale supérieure de Yaoundé I, 2014-2015, travail universitaire non publié, lu le 14 octobre 2026 dans la version numérisée du dépôt de l'université. Page 22 : l'ancêtre Onandoa franchit la Sanaga sur le dos du serpent mythique, ses fils Onandjana et Onamney ; Onandjana a pour enfants Mvondo Menye, « patriarche fondateur des Mvog Mvondo », et d'autres ; l'auteure déduit que la mère de Mvondo Menye s'appelait Menye, les enfants prenant à l'époque le nom de leur mère. Page 23 : Mvondo Menye serait né dans la région de Sa'a. Les récits viennent d'entretiens de terrain, sans que le mémoire dise lequel a donné quel élément. Le mémoire ne dit pas ce que le mot Mvondo signifie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "Rapportée en 2015"
+            },
+            "era": "modern",
+            "hypothesisGroup": "origine-mvondo",
+            "statement": "Le nom Mvondo serait celui de Mvondo Menye, ancêtre fondateur du clan eton des Mvog Mvondo, selon une tradition rapportée par Théorine Emmanuelle Onana en 2015. Cette tradition le rattache à Onandoa, qui aurait franchi la Sanaga sur le dos d'un serpent mythique, puis à son fils Onandjana ; Mvondo Menye serait né dans la région de Sa'a.",
+            "sources": [
+              {
+                "title": "Monographie historique des Mvog Mvondo des origines à 2014",
+                "author": "Théorine Emmanuelle Onana",
+                "year": 2015,
+                "url": "https://dicames.online/jspui/bitstream/20.500.12177/5229/1/ENS_20_0540.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 22-23",
+                "notes": "Mémoire de DIPES II, département d'histoire, École normale supérieure de Yaoundé I, 2014-2015, travail universitaire non publié, lu le 14 octobre 2026 dans la version numérisée du dépôt de l'université. Page 22 : l'ancêtre Onandoa franchit la Sanaga sur le dos du serpent mythique, ses fils Onandjana et Onamney ; Onandjana a pour enfants Mvondo Menye, « patriarche fondateur des Mvog Mvondo », et d'autres ; l'auteure déduit que la mère de Mvondo Menye s'appelait Menye, les enfants prenant à l'époque le nom de leur mère. Page 23 : Mvondo Menye serait né dans la région de Sa'a. Les récits viennent d'entretiens de terrain, sans que le mémoire dise lequel a donné quel élément. Le mémoire ne dit pas ce que le mot Mvondo signifie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "Déduit en 2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Mvondo s'accompagne de Menye dans « Mvondo Menye ». Théorine Emmanuelle Onana en déduit que Menye était le nom de la mère du fondateur, à une époque où, selon la tradition qu'elle rapporte, les enfants prenaient le nom de leur mère ; elle ne cite aucune autre explication.",
+            "sources": [
+              {
+                "title": "Monographie historique des Mvog Mvondo des origines à 2014",
+                "author": "Théorine Emmanuelle Onana",
+                "year": 2015,
+                "url": "https://dicames.online/jspui/bitstream/20.500.12177/5229/1/ENS_20_0540.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 22",
+                "notes": "Mémoire de DIPES II, département d'histoire, École normale supérieure de Yaoundé I, 2014-2015, travail universitaire non publié, lu le 14 octobre 2026 dans la version numérisée du dépôt de l'université. Page 22 : l'ancêtre Onandoa franchit la Sanaga sur le dos du serpent mythique, ses fils Onandjana et Onamney ; Onandjana a pour enfants Mvondo Menye, « patriarche fondateur des Mvog Mvondo », et d'autres ; l'auteure déduit que la mère de Mvondo Menye s'appelait Menye, les enfants prenant à l'époque le nom de leur mère. Page 23 : Mvondo Menye serait né dans la région de Sa'a. Les récits viennent d'entretiens de terrain, sans que le mémoire dise lequel a donné quel élément. Le mémoire ne dit pas ce que le mot Mvondo signifie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "Décrit en 2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Mvondo est celui d'un lignage : selon Théorine Emmanuelle Onana, mvog ou mbog se traduit « lignage de », et l'on entend par Mvog Mvondo les enfants du patriarche fondateur, les enfants de ses enfants, et ainsi de suite. Elle précise que tous les Mvog Mvondo d'aujourd'hui ne descendent pas de ses unions, comme dans beaucoup de lignages.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Monographie historique des Mvog Mvondo des origines à 2014",
+                "author": "Théorine Emmanuelle Onana",
+                "year": 2015,
+                "url": "https://dicames.online/jspui/bitstream/20.500.12177/5229/1/ENS_20_0540.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 40",
+                "notes": "Mémoire de DIPES II, École normale supérieure de Yaoundé I, 2014-2015, lu le 14 octobre 2026. Page 40 : « Le mot Mvog ou Mbog peut se traduire par « lignage de » » ; pour les Mvog Mvondo, il s'agit de Mvondo Menye ; tous les Mvog Mvondo actuels ne sont pas issus de ses unions, comme c'est souvent le cas dans les lignages ; par Mvog Mvondo, on entend les enfants du patriarche fondateur, les enfants de ses enfants, et ainsi de suite."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "Décrit en 2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Mvondo est porté par les Mvog Mvondo, que l'on retrouve dans plusieurs villes du centre du Cameroun, dont Sa'a, Okola et Lobo, d'après la conclusion du mémoire de Théorine Emmanuelle Onana (2015).",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Monographie historique des Mvog Mvondo des origines à 2014",
+                "author": "Théorine Emmanuelle Onana",
+                "year": 2015,
+                "url": "https://dicames.online/jspui/bitstream/20.500.12177/5229/1/ENS_20_0540.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 74",
+                "notes": "Mémoire de DIPES II, École normale supérieure de Yaoundé I, 2014-2015, lu le 14 octobre 2026. Page 74, conclusion : on retrouve les Mvog Mvondo dans plusieurs villes de la région, dont les plus importantes sont Sa'a, Okola et Lobo. Le mémoire traite d'un clan eton."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

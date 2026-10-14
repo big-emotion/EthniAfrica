@@ -6,7 +6,7 @@
   },
   "id": "PAT_HAMDI",
   "nameMain": "Hamdi",
-  "nameSystem": "nisba",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Hamdi",
@@ -23,7 +23,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "other",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -111,15 +111,11 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "Les sources consultées décrivent la graphie « Hamdi » sans établir assez précisément le système dénominatif ; le classement comme nisba reste donc provisoire."
+      "reason": "Aucune source consultée n'en fait un nom de clan ni une nisba : les sources lues le disent un nom de famille tiré d'un prénom arabe. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "transmissionMode",
       "reason": "Les recherches « Hamdi transmission patronyme », « Hamdi filiation » et « Hamdi hereditary surname » n'ont pas établi si, ni comment, cette forme se transmet dans les communautés africaines concernées."
-    },
-    {
-      "fieldPath": "designatedSocialUnit",
-      "reason": "Les mêmes recherches n'ont pas permis de déterminer si « Hamdi » désigne un individu, une lignée, un clan, une caste, une classe d'âge ou un établissement dans le contexte précis de la fiche."
     }
   ],
   "nameHistory": {
