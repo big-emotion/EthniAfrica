@@ -344,7 +344,7 @@ export const TUAREG_ANCHORS = {
   ],
 };
 
-async function readVerified(assets, key) {
+export async function readVerified(assets, key) {
   const download = DOWNLOADS[key];
   const bytes = await readFile(join(assets, download.file));
   const hash = createHash("sha256").update(bytes).digest("hex");

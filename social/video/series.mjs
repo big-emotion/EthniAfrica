@@ -1,5 +1,6 @@
 // Frame-addressed model of the series video: EthniAfrica Cartes
-// 1.4.0-proposition, full screen (series.md, « Vidéo de série »), built on
+// 1.4.0-proposition, full screen (series.md, « Vidéo de série »), with its
+// map cards on satellite imagery since 1.4.1 (series-map.mjs), built on
 // Vidéo carte 0.4.0's chunks, highlight and voice timing. The same cards as
 // the carousel, on the operator's voice; every value is a function of the
 // frame number, with no clock.
@@ -15,6 +16,7 @@ import {
   enter,
   leave,
 } from "./sequence.mjs";
+import { MAP_FRAME, checkSeriesMapCard } from "./series-map.mjs";
 
 // The full-screen bands in frame pixels (series.md and handoff.md,
 // « Renderer integration of 1.4.0 »). The image fills the frame; only text
@@ -35,6 +37,9 @@ export const LAYOUT = {
   signature: [1828, 1884],
   slot: { x: [120, 960], y: [760, 1240] },
   mapSubjectTop: 724,
+  // 1.4.1: a map card's foot may start at 1600; its names stay in their band.
+  mapFoot: MAP_FRAME.foot,
+  mapNames: MAP_FRAME.names,
   maxImageScale: 1.5,
 };
 // Long dates: the largest size that holds on one line in 960 px, else two
@@ -100,6 +105,8 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
       );
     if (!input.demo && /(^|\/)a-trouver-[^/]*$/.test(card.image?.src ?? ""))
       fail(`Card ${card.id} still shows « image à trouver »`);
+    // A map card is drawn on satellite imagery; an atlas card is refused.
+    if (card.type === "map") checkSeriesMapCard(card);
     return structuredClone(card);
   });
   if (cards[0].type !== "opener")
@@ -291,6 +298,22 @@ const BANDS = {
 export function checkSeriesLayout(boxes, { demo = false } = {}) {
   const problems = [];
   const near = 0.5;
+  const names = boxes.filter((b) => b.kind === "map-name");
+  if (names.length > MAP_FRAME.maxNames)
+    problems.push(
+      `${names.length} names on the map: more than six names, ${MAP_FRAME.maxNames} at most`
+    );
+  names.forEach((a, i) =>
+    names.slice(i + 1).forEach((b) => {
+      if (
+        a.x < b.x + b.w &&
+        b.x < a.x + a.w &&
+        a.y < b.y + b.h &&
+        b.y < a.y + a.h
+      )
+        problems.push(`${a.id}: overlaps ${b.id}`);
+    })
+  );
   for (const b of boxes) {
     const [left, right, top, bottom] = [b.x, b.x + b.w, b.y, b.y + b.h];
     const say = (what) => problems.push(`${b.id}: ${what}`);
@@ -306,11 +329,22 @@ export function checkSeriesLayout(boxes, { demo = false } = {}) {
         say(
           `Le sujet de la carte passe sous la tête: it starts at y ${Math.round(top)}, above ${LAYOUT.mapSubjectTop}`
         );
-      if (bottom > LAYOUT.foot[0] + near)
-        say(`the map's subject runs into the foot, below y ${LAYOUT.foot[0]}`);
+      if (bottom > LAYOUT.mapFoot[0] + near)
+        say(
+          `the map's subject runs into the foot, below y ${LAYOUT.mapFoot[0]}`
+        );
+      if (Math.max(b.w, b.h) < MAP_FRAME.minSubject - near)
+        say(
+          `Sujet trop petit pour l'imagerie vérifiée: ${Math.round(Math.max(b.w, b.h))} px, ${MAP_FRAME.minSubject} at least`
+        );
       continue;
     }
-    const band = BANDS[b.kind];
+    const band =
+      b.kind === "map-name"
+        ? LAYOUT.mapNames.y
+        : b.map && BANDS[b.kind] === LAYOUT.foot
+          ? LAYOUT.mapFoot
+          : BANDS[b.kind];
     if (!band) {
       say(`unknown kind ${b.kind}`);
       continue;
