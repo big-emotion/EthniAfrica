@@ -94,5 +94,151 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les sources consultées ne permettent pas de déterminer si Gbaguidi désigne historiquement un lignage, un clan ou une autre unité sociale."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Gbaguidi est le nom de règne des rois de Savalou, un royaume mahi du centre du Bénin ; des familles de Kétou le portent aussi. On ne sait pas avec certitude d'où il vient ; nous présentons plus bas deux explications relevées. Sa plus ancienne trace écrite que le projet connaisse est la forme Baguidi, dans un récit de la conquête du Dahomey publié en 1895.",
+    "names": [
+      {
+        "nameText": "Gbaguidi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de règne des rois de Savalou, aussi un nom de famille à Kétou.",
+        "periodLabel": "Une forme proche écrite dès 1893-1894 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1893,
+              "to": 1894,
+              "label": "Conquête du Dahomey, 1893-1894 ; récit publié en 1895"
+            },
+            "statement": "Le nom Gbaguidi apparaît sous une forme proche, Baguidi, dans un compte rendu du commandant supérieur du Dahomey que cite Édouard Aublet : « Baguidi, chef important des Mahis à Savalou, m'a demandé un drapeau tricolore » pour le jour où il serait débarrassé de la crainte d'une fuite de Béhanzin vers le Nord. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un officier l'a noté, pas depuis quand des familles le portent.",
+            "formAsWritten": "Baguidi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "La guerre au Dahomey, seconde partie : La conquête du Dahomey, 1893-1894, d'après les documents officiels",
+                "author": "Édouard Aublet",
+                "year": 1895,
+                "url": "https://archive.org/details/laguerreaudahom01aublgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 46-47",
+                "notes": "Paris et Nancy, Berger-Levrault, préface datée de décembre 1894 ; lu en fac-similé. L'auteur est un officier français qui cite les rapports officiels de la conquête ; il est cité pour les formes qu'il écrit. Pages 46-47 : « Baguidi, chef important des Mahis à Savalou, m'a demandé un drapeau tricolore pour l'arborer le jour où il serait débarrassé de la préoccupation que lui cause toujours l'éventualité d'une fuite de Behanzin vers le Nord ». La date exacte du rapport n'est pas donnée sur ces pages. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1557,
+              "to": 1618,
+              "label": "Fondation du royaume, 1557 selon la cour de Savalou"
+            },
+            "era": "polity",
+            "before": true,
+            "statement": "Le nom Gbaguidi serait, selon la cour de Savalou, celui du fondateur du royaume, Soha Gbaguidi I, qui aurait régné de 1557 à 1618. Les auteurs jugent la date de 1557 peu sûre et placent la fondation au début du XVIIe siècle.",
+            "sources": [
+              {
+                "title": "Le royaume de Sâ-valou : itinéraire de Soha son fondateur, son organisation et ses rapports avec ses voisins (XVIIe-XIXe siècles)",
+                "author": "Dossa Sébastien Sotindjo, A. Dieudonné Awo et Ayignon Michel Wantchekon",
+                "year": 2019,
+                "url": "https://dspace.uac.bj/bitstreams/0033870f-2fc1-48ed-8cdb-6828002227bc/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 112-113",
+                "notes": "Imo-Irikisi, nouvelle série, vol. 2, no 1 et 2, 2019, Faculté des lettres, langues, arts et communication, Université d'Abomey-Calavi. Lu dans le fichier déposé par l'université. Les auteurs recueillent les traditions de la cour de Savalou et d'autres porteurs de tradition : ils sont cités pour ce qu'ils rapportent. Page 112 : les héritiers du pouvoir font remonter la monarchie à 1557 ; les auteurs proposent plutôt le début du XVIIe siècle. Page 113 : tableau de la cour, Soha Gbaguidi I, 1557-1618. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1557,
+              "to": 1901,
+              "label": "Rois de Savalou, 1557-1901 selon la liste de la cour"
+            },
+            "aspect": "usage",
+            "statement": "Le nom Gbaguidi est porté par huit des onze rois de la liste de la cour de Savalou, de Soha Gbaguidi I à Zondégla Gbaguidi VIII, qui règne de 1878 à 1901. Les trois successeurs de Soha, Adigbli, Ava et Kpoki, ne le portent pas, parce qu'ils ne sont pas ses descendants directs.",
+            "sources": [
+              {
+                "title": "Le royaume de Sâ-valou : itinéraire de Soha son fondateur, son organisation et ses rapports avec ses voisins (XVIIe-XIXe siècles)",
+                "author": "Dossa Sébastien Sotindjo, A. Dieudonné Awo et Ayignon Michel Wantchekon",
+                "year": 2019,
+                "url": "https://dspace.uac.bj/bitstreams/0033870f-2fc1-48ed-8cdb-6828002227bc/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 113-114",
+                "notes": "Imo-Irikisi, nouvelle série, vol. 2, no 1 et 2, 2019, Faculté des lettres, langues, arts et communication, Université d'Abomey-Calavi. Lu dans le fichier déposé par l'université. Les auteurs recueillent les traditions de la cour de Savalou et d'autres porteurs de tradition : ils sont cités pour ce qu'ils rapportent. Tableau 1, « Ordre de succession des rois de Savalou », d'après la cour royale de Savalou (décembre 2016), puis le paragraphe qui suit le tableau (p. 114). Les auteurs jugent la chronologie « fortement discutable ». Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Proposé en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Gbaguidi viendrait d'un surnom, « ɔba guidi-guidi », « roi brutal », que les populations ifè auraient donné à Ahosu Soha après la prise de Tchébélu, Gbaguidi en étant la forme contractée, selon Sotindjo, Awo et Wantchekon.",
+            "hypothesisGroup": "origine du nom Gbaguidi",
+            "sources": [
+              {
+                "title": "Le royaume de Sâ-valou : itinéraire de Soha son fondateur, son organisation et ses rapports avec ses voisins (XVIIe-XIXe siècles)",
+                "author": "Dossa Sébastien Sotindjo, A. Dieudonné Awo et Ayignon Michel Wantchekon",
+                "year": 2019,
+                "url": "https://dspace.uac.bj/bitstreams/0033870f-2fc1-48ed-8cdb-6828002227bc/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 112",
+                "notes": "Imo-Irikisi, nouvelle série, vol. 2, no 1 et 2, 2019, Faculté des lettres, langues, arts et communication, Université d'Abomey-Calavi. Lu dans le fichier déposé par l'université. Les auteurs recueillent les traditions de la cour de Savalou et d'autres porteurs de tradition : ils sont cités pour ce qu'ils rapportent. Page 112 : Ahosu Soha est « surnommé ɔba guidi-guidi (roi brutal) dont la forme contractée a donné Gbaguidi, par les populations Ifè », après l'incendie et la prise de Tchébélu. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Rapporté en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Gbaguidi viendrait de l'installation d'un ancêtre à Kétou, selon les Gbaguidi qui y vivent encore, tels que les rapporte R. Mihami Byll-Cataria. Le fondateur de leur famille y reçut un terrain couvert d'ordures ; l'oracle lui conseilla de l'accepter et d'offrir en sacrifice de l'« aguidi », une pâte de farine de maïs cuite à la vapeur, et le nom de la famille résumerait l'événement. Ahosu Soha pourrait donc avoir porté ce nom depuis Kétou.",
+            "hypothesisGroup": "origine du nom Gbaguidi",
+            "sources": [
+              {
+                "title": "Le royaume de Sâ-valou : itinéraire de Soha son fondateur, son organisation et ses rapports avec ses voisins (XVIIe-XIXe siècles)",
+                "author": "Dossa Sébastien Sotindjo, A. Dieudonné Awo et Ayignon Michel Wantchekon",
+                "year": 2019,
+                "url": "https://dspace.uac.bj/bitstreams/0033870f-2fc1-48ed-8cdb-6828002227bc/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 112, note 22",
+                "notes": "Imo-Irikisi, nouvelle série, vol. 2, no 1 et 2, 2019, Faculté des lettres, langues, arts et communication, Université d'Abomey-Calavi. Lu dans le fichier déposé par l'université. Les auteurs recueillent les traditions de la cour de Savalou et d'autres porteurs de tradition : ils sont cités pour ce qu'ils rapportent. Note 22 de la page 112, qui rapporte R. Mihami Byll-Cataria (article de 2000 non lu par nos soins) : « il n'est pas exclu qu'Ahosu Soha ait porté le nom Gbaguidi depuis ses origines à Kétou ». Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "aspect": "meaning",
+            "statement": "Le nom Gbaguidi est le nom de règne que prennent les rois de Savalou, royaume mahi installé en pays nago, selon Dossa Sébastien Sotindjo, A. Dieudonné Awo et Ayignon Michel Wantchekon. On ne sait pas avec certitude d'où vient le nom ; les explications relevées sont présentées séparément.",
+            "sources": [
+              {
+                "title": "Le royaume de Sâ-valou : itinéraire de Soha son fondateur, son organisation et ses rapports avec ses voisins (XVIIe-XIXe siècles)",
+                "author": "Dossa Sébastien Sotindjo, A. Dieudonné Awo et Ayignon Michel Wantchekon",
+                "year": 2019,
+                "url": "https://dspace.uac.bj/bitstreams/0033870f-2fc1-48ed-8cdb-6828002227bc/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 109",
+                "notes": "Imo-Irikisi, nouvelle série, vol. 2, no 1 et 2, 2019, Faculté des lettres, langues, arts et communication, Université d'Abomey-Calavi. Lu dans le fichier déposé par l'université. Les auteurs recueillent les traditions de la cour de Savalou et d'autres porteurs de tradition : ils sont cités pour ce qu'ils rapportent. Résumé de l'article : la brutalité avec laquelle les habitants de Tchébélu furent chassés « a inspiré l'anthroponyme Gbaguidi qui devient le nom de règne de tous les monarques de cette couronne mahi établie en milieu nago ». Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
