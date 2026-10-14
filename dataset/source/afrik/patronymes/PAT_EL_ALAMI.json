@@ -113,5 +113,81 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les recherches « El Alami lignée », « El Alami clan », « El Alami tribe » et « El Alami place name » n’ont pas permis de déterminer si cette graphie désigne une lignée, un clan, une caste, une classe d’âge ou un établissement dans le contexte précis de la fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom El Alami est un nom de famille marocain, que l'on écrit aussi Alami. Le projet n'en a trouvé qu'une trace récente, de 2004. On ne sait pas avec certitude d'où il vient ni ce qu'il veut dire.",
+    "names": [
+      {
+        "nameText": "El Alami",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille marocain dont le projet n'a trouvé qu'une trace récente, en 2004 ; son sens reste inconnu.",
+        "periodLabel": "Écrit dès 2004",
+        "accounts": [
+          {
+            "period": {
+              "from": 2004,
+              "to": 2004,
+              "label": "Annuaire de 2004"
+            },
+            "era": "modern",
+            "statement": "Le nom El Alami apparaît par écrit dans l'annuaire du monde de la CIA en 2004, où Ahmed El Alami est nommé chef du Parti de l'environnement et du développement, au Maroc. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un annuaire l'a noté, pas depuis quand des familles le portent.",
+            "formAsWritten": "EL ALAMI",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Ahmed El Alami",
+                "role": "nommé comme chef de parti dans l'annuaire"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The World Factbook 2004 — Morocco",
+                "author": "Central Intelligence Agency",
+                "year": 2004,
+                "url": "https://en.wikisource.org/wiki/CIA_World_Fact_Book,_2004/Morocco",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "rubrique « Political parties and leaders »",
+                "notes": "Fiche « Morocco » de l'annuaire de la CIA, version de 2004 (mise à jour au 1er janvier 2003). Lu le 14 octobre 2026 sur la transcription de Wikisource. Rubrique « Political parties and leaders ». Parti de l'environnement et du développement (« Environment and Development Party »), « Ahmed EL ALAMI ». Ce texte nomme des chefs de partis ; il ne dit rien de l'origine des noms."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Alami",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "Décrit en 2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Alami, écrit علمي en arabe, est enregistré par Behind the Name comme une autre forme de El Alami, parmi les noms de famille arabes du Maghreb.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "User-submitted surname Alami — Behind the Name",
+                "author": "Behind the Name",
+                "year": 2017,
+                "url": "https://surnames.behindthename.com/name/alami/submitted",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice contributive. Lu le 14 octobre 2026; ajoutée le 13 juillet 2017, modifiée le 8 août 2017. Elle donne l'écriture arabe علمي, l'usage « Arabic (Maghrebi) » et El Alami comme autre forme ; son explication du sens n'est pas reprise, faute d'une seconde source. Cette notice n'a pas de référence savante : elle est citée pour ce qu'elle dit, jamais seule."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

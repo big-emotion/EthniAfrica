@@ -113,5 +113,172 @@
       "fieldPath": "countries",
       "reason": "La source propre au nom ne confirme pas le ou les pays MAR hérités de la file d’attente. Les recherches exactes « El Andalousi surname » avec ces pays n’ont pas livré de registre officiel exploitable ; l’association reste non vérifiée."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Andalousi est un nom de famille marocain, qui veut dire « l'Andalou », celui qui vient d'Andalousie. On l'écrit aussi Andaloussi. Les sources lues en parlent surtout pour l'Algérie ; on ne sait pas avec certitude depuis quand des familles du Maroc le portent.",
+    "names": [
+      {
+        "nameText": "El Andalousi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille qui veut dire « l'Andalou » ; les sources lues le décrivent surtout pour l'Algérie.",
+        "periodLabel": "Une trace de 1996 pour l'Algérie ; décrit en 2013",
+        "accounts": [
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "Décrit en 2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Andalousi veut dire « l'Andalou » : Ouerdia Yermèche le range en 2013 parmi les noms algériens d'origine géographique, hérités de la présence espagnole. Behind the Name donne le même sens à la graphie Andaloussi, surtout au Maroc.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "L'anthroponymie algérienne : entre rupture et continuité ?",
+                "author": "Ouerdia Yermèche",
+                "year": 2013,
+                "url": "https://ouvrages.crasc.dz/pdfs/2013-nom-propre-maghrebin-fr-yermeche-sadat-ouerdia.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 56",
+                "notes": "Chapitre de l'ouvrage collectif Le nom propre maghrébin de l'homme, Oran, CRASC, 2013. Lu le 14 octobre 2026 dans une copie d'archive du fichier, le serveur d'origine ne répondant plus. Page 56, section 4, « La présence espagnole et turque » : parmi des noms d'origine espagnole, « Ghenouchi ‹ Galicien › ; Chebli ; Gharnati ; Korteby ; Kourdi ; Blanci ; Randi ; Andalousi ‹ l'Andalou › ». Note 33 : citation d'Anna Parzymies (1996, p. 22) sur les noms dérivés d'appellations géographiques, dont « Andalousi ‹ d'Andalousie ›, Qatobi ‹ de Cordoue ›, Balensi ‹ de Valence ›, Qastuli ‹ de Castille › ». Le chapitre parle de l'Algérie, pas du Maroc."
+              },
+              {
+                "title": "User-submitted surname Andaloussi — Behind the Name",
+                "author": "Behind the Name",
+                "year": 2026,
+                "url": "https://surnames.behindthename.com/name/andaloussi/submitted",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice contributive. Lu le 14 octobre 2026; ajoutée le 24 avril 2026, modifiée le 2 juillet 2026. Elle dit que le nom veut dire « Andalusian » en arabe, surtout au Maroc. Cette notice n'a pas de référence savante : elle est citée pour ce qu'elle dit, jamais seule."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1996,
+              "to": 1996,
+              "label": "Décrit en 1996, cité en 2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Andalousi apparaît dans une étude d'Anna Parzymies sur les noms de famille algériens, publiée en 1996 et citée par Ouerdia Yermèche : elle le donne pour un nom « d'Andalousie ». Cette trace parle de l'Algérie, pas du Maroc ; c'est la plus ancienne que le projet connaît.",
+            "formAsWritten": "Andalousi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "L'anthroponymie algérienne : entre rupture et continuité ?",
+                "author": "Ouerdia Yermèche",
+                "year": 2013,
+                "url": "https://ouvrages.crasc.dz/pdfs/2013-nom-propre-maghrebin-fr-yermeche-sadat-ouerdia.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 56, note 33",
+                "notes": "Chapitre de l'ouvrage collectif Le nom propre maghrébin de l'homme, Oran, CRASC, 2013. Lu le 14 octobre 2026 dans une copie d'archive du fichier, le serveur d'origine ne répondant plus. Page 56, section 4, « La présence espagnole et turque » : parmi des noms d'origine espagnole, « Ghenouchi ‹ Galicien › ; Chebli ; Gharnati ; Korteby ; Kourdi ; Blanci ; Randi ; Andalousi ‹ l'Andalou › ». Note 33 : citation d'Anna Parzymies (1996, p. 22) sur les noms dérivés d'appellations géographiques, dont « Andalousi ‹ d'Andalousie ›, Qatobi ‹ de Cordoue ›, Balensi ‹ de Valence ›, Qastuli ‹ de Castille › ». Le chapitre parle de l'Algérie, pas du Maroc."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1996,
+              "to": 1996,
+              "label": "Proposé en 1996"
+            },
+            "era": "modern",
+            "statement": "Le nom Andalousi viendrait de familles andalouses installées en Algérie : Anna Parzymies, citée par Ouerdia Yermèche, le range parmi les noms dérivés d'appellations géographiques, à côté de Qatobi, « de Cordoue », et de Balensi, « de Valence ».",
+            "hypothesisGroup": "origine du nom Andalousi",
+            "sources": [
+              {
+                "title": "L'anthroponymie algérienne : entre rupture et continuité ?",
+                "author": "Ouerdia Yermèche",
+                "year": 2013,
+                "url": "https://ouvrages.crasc.dz/pdfs/2013-nom-propre-maghrebin-fr-yermeche-sadat-ouerdia.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 56, note 33",
+                "notes": "Chapitre de l'ouvrage collectif Le nom propre maghrébin de l'homme, Oran, CRASC, 2013. Lu le 14 octobre 2026 dans une copie d'archive du fichier, le serveur d'origine ne répondant plus. Page 56, section 4, « La présence espagnole et turque » : parmi des noms d'origine espagnole, « Ghenouchi ‹ Galicien › ; Chebli ; Gharnati ; Korteby ; Kourdi ; Blanci ; Randi ; Andalousi ‹ l'Andalou › ». Note 33 : citation d'Anna Parzymies (1996, p. 22) sur les noms dérivés d'appellations géographiques, dont « Andalousi ‹ d'Andalousie ›, Qatobi ‹ de Cordoue ›, Balensi ‹ de Valence ›, Qastuli ‹ de Castille › ». Le chapitre parle de l'Algérie, pas du Maroc."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "Proposé en 2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Andalousi serait un nom espagnol d'origine géographique, laissé par la présence militaire espagnole sur les côtes algériennes, du XVe au XVIIe siècle environ, selon Ouerdia Yermèche.",
+            "hypothesisGroup": "origine du nom Andalousi",
+            "sources": [
+              {
+                "title": "L'anthroponymie algérienne : entre rupture et continuité ?",
+                "author": "Ouerdia Yermèche",
+                "year": 2013,
+                "url": "https://ouvrages.crasc.dz/pdfs/2013-nom-propre-maghrebin-fr-yermeche-sadat-ouerdia.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 56",
+                "notes": "Chapitre de l'ouvrage collectif Le nom propre maghrébin de l'homme, Oran, CRASC, 2013. Lu le 14 octobre 2026 dans une copie d'archive du fichier, le serveur d'origine ne répondant plus. Page 56, section 4, « La présence espagnole et turque » : parmi des noms d'origine espagnole, « Ghenouchi ‹ Galicien › ; Chebli ; Gharnati ; Korteby ; Kourdi ; Blanci ; Randi ; Andalousi ‹ l'Andalou › ». Note 33 : citation d'Anna Parzymies (1996, p. 22) sur les noms dérivés d'appellations géographiques, dont « Andalousi ‹ d'Andalousie ›, Qatobi ‹ de Cordoue ›, Balensi ‹ de Valence ›, Qastuli ‹ de Castille › ». Le chapitre parle de l'Algérie, pas du Maroc."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1964,
+              "to": 1964,
+              "label": "Décrit en 1964"
+            },
+            "era": "modern",
+            "statement": "Le mot « Andalous », proche du nom Andalousi, sert à Fès à des musulmans qui ne descendent pas de juifs convertis pour se dire eux-mêmes, avec les chorfa, descendants du Prophète, selon David Corcos, qui s'appuie sur Roger Le Tourneau (1949).",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Jews of Morocco under the Marinides (Continued)",
+                "author": "David Corcos",
+                "year": 1964,
+                "url": "https://mellahdefes.fr/resources/Documents/juifs-maroc-sous-Merinides.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 61",
+                "notes": "The Jewish Quarterly Review, vol. 55, n° 1, juillet 1964, p. 53-81 (University of Pennsylvania Press). Lu le 14 octobre 2026 dans une copie non officielle de l'article, déposée sur un site consacré au mellah de Fès. Page 61 : les musulmans « not of Jewish origin » appellent les convertis « al Beldiyyin », « in contrast to themselves either Andalusians or 'Chorfa' », avec renvoi à Roger Le Tourneau, Fès avant le Protectorat, Casablanca, 1949, p. 205 et 491. Le texte parle du mot « Andalusians », non du nom de famille."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Andaloussi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2026,
+              "to": 2026,
+              "label": "Décrit en 2026"
+            },
+            "era": "modern",
+            "statement": "Le nom Andaloussi, écrit الأندلسي en arabe, est une graphie que Behind the Name range parmi les noms arabes du Maghreb, surtout marocains, avec le sens « andalou ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "User-submitted surname Andaloussi — Behind the Name",
+                "author": "Behind the Name",
+                "year": 2026,
+                "url": "https://surnames.behindthename.com/name/andaloussi/submitted",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice contributive. Lu le 14 octobre 2026; ajoutée le 24 avril 2026, modifiée le 2 juillet 2026. Elle donne l'écriture arabe الأندلسي, l'usage « Arabic (Maghrebi) » et le sens « Andalusian », surtout au Maroc. Cette notice n'a pas de référence savante : elle est citée pour ce qu'elle dit, jamais seule."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

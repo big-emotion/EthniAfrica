@@ -10,11 +10,21 @@
   "spellings": [
     {
       "spelling": "Mammeri",
-      "attestations": [{ "countryId": "DZA", "sourceRefs": ["mammeri-bnf"] }]
+      "attestations": [
+        {
+          "countryId": "DZA",
+          "sourceRefs": ["mammeri-bnf"]
+        }
+      ]
     },
     {
       "spelling": "Muʿammarī",
-      "attestations": [{ "countryId": "DZA", "sourceRefs": ["mammeri-bnf"] }]
+      "attestations": [
+        {
+          "countryId": "DZA",
+          "sourceRefs": ["mammeri-bnf"]
+        }
+      ]
     }
   ],
   "transmissionMode": "other",
@@ -79,5 +89,241 @@
       "fieldPath": "homonyms",
       "reason": "Les formes Mammeri, Maʿmari et Muʿammarī ont été croisées dans les catalogues d’autorité, sans étude démontrant deux origines indépendantes sous la même graphie."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mammeri est un nom de famille kabyle, d'Algérie. Il est écrit à l'état civil de Tizi-Ouzou dès 1889 ; l'écriture berbère est At Mɛammer. Les sources lues proposent deux explications de son origine, toutes deux tirées d'un mot arabe ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Mammeri",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille kabyle, écrit à l'état civil de Tizi-Ouzou dès 1889 ; deux origines proposées.",
+        "periodLabel": "Écrit dès 1889 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1917,
+              "to": 1989,
+              "label": "1917-1989, selon la notice de la BnF"
+            },
+            "statement": "Le nom Mammeri est celui de Mouloud Mammeri, romancier, anthropologue et dramaturge né à Beni Yenni en 1917, mort en 1989 et spécialiste de la littérature orale berbère, selon la notice d'autorité de la Bibliothèque nationale de France.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Notice de personne : Mammeri, Mouloud (1917-1989)",
+                "author": "Bibliothèque nationale de France",
+                "year": null,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb11914192s",
+                "tier": "official",
+                "source_kind": "repository",
+                "page": "notice",
+                "notes": "Notice d'autorité de la Bibliothèque nationale de France, lue le 14 octobre 2026. Elle donne la forme courante « Mammeri, Mouloud (1917-1989) », le lieu de naissance Beni Yenni (Algérie) et la fonction de spécialiste de la littérature orale berbère."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Mammeri est un nom de famille kabyle, d'Algérie. Les sources lues proposent deux explications de son origine, toutes deux tirées d'un mot arabe ; nous les présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Analyse morphologique et sémantique des patronymes des localités Tizi-Rached et Beni-Yanni",
+                "author": "Katia Nekmouche et Sylia Ouahioune",
+                "year": 2025,
+                "url": "https://dspace.ummto.dz/handle/ummto/30424",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 36",
+                "notes": "Mémoire de master, Université Mouloud Mammeri de Tizi-Ouzou, 2024-2025 ; lu en texte intégral le 14 octobre 2026. Les autrices s'appuient sur des informateurs de Tizi-Rached et de Beni-Yanni et sur des dictionnaires. Page 36, entrée « At Mɛammer » : « Mameri, Mammeri : de mεemmer (ar.) « rempli, plein, rempli » (Beaussier, 1958 : 680), ou « accorder longue vie » (Harzoune, 2006 : 251) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Rapporté en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Mammeri viendrait de l'adjectif arabe mɛemmer, « rempli, plein », selon Mustapha Tidjet, que citent Katia Nekmouche et Sylia Ouahioune ; le même dictionnaire donne ce sens pour le nom voisin Mammer.",
+            "hypothesisGroup": "origine du nom Mammeri",
+            "sources": [
+              {
+                "title": "Analyse morphologique et sémantique des patronymes des localités Tizi-Rached et Beni-Yanni",
+                "author": "Katia Nekmouche et Sylia Ouahioune",
+                "year": 2025,
+                "url": "https://dspace.ummto.dz/handle/ummto/30424",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 36",
+                "notes": "Mémoire de master, Université Mouloud Mammeri de Tizi-Ouzou, 2024-2025 ; lu en texte intégral le 14 octobre 2026. Les autrices s'appuient sur des informateurs de Tizi-Rached et de Beni-Yanni et sur des dictionnaires. Page 36, entrée « At Mɛammer » : « de mεemmer (ar.) « rempli, plein, rempli » (Beaussier, 1958 : 680) ». Les autrices renvoient à Tidjet, tome 1, p. 91, qui n'a pas pu être lu."
+              },
+              {
+                "title": "Dictionnaire des patronymes algériens, tome 2 : At Weɣlis",
+                "author": "Mustapha Tidjet",
+                "year": 2016,
+                "url": "https://www.hcamazighite.dz/docs/document/hca/lexiques/dictionnaireII%20Mustapha%20TIDJET%20%20tome%202.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 61",
+                "notes": "Haut Commissariat à l'Amazighité ; recueil de noms de famille de la région des At Weɣlis, en Kabylie, lu en texte intégral le 14 octobre 2026. L'année 2016 est celle que lui donnent les mémoires de master qui le citent. Page 61, entrée « Benmaamar, Benmamar, Benmammar » : « fils de Mammer », avec mεemmer « rempli, plein, empli » (Beaussier, 1958 : 680). L'entrée porte sur un nom voisin, non sur Mammeri."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Rapporté en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Mammeri viendrait d'un verbe arabe qui veut dire « accorder longue vie », selon Mustapha Tidjet, que citent Katia Nekmouche et Sylia Ouahioune, d'après Harzoune (2006).",
+            "hypothesisGroup": "origine du nom Mammeri",
+            "sources": [
+              {
+                "title": "Analyse morphologique et sémantique des patronymes des localités Tizi-Rached et Beni-Yanni",
+                "author": "Katia Nekmouche et Sylia Ouahioune",
+                "year": 2025,
+                "url": "https://dspace.ummto.dz/handle/ummto/30424",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 36",
+                "notes": "Mémoire de master, Université Mouloud Mammeri de Tizi-Ouzou, 2024-2025 ; lu en texte intégral le 14 octobre 2026. Les autrices s'appuient sur des informateurs de Tizi-Rached et de Beni-Yanni et sur des dictionnaires. Page 36, entrée « At Mɛammer » : « ou « accorder longue vie » (Harzoune, 2006 : 251) ». Harzoune n'a pas été lu."
+              },
+              {
+                "title": "Dictionnaire des patronymes algériens, tome 2 : At Weɣlis",
+                "author": "Mustapha Tidjet",
+                "year": 2016,
+                "url": "https://www.hcamazighite.dz/docs/document/hca/lexiques/dictionnaireII%20Mustapha%20TIDJET%20%20tome%202.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 61",
+                "notes": "Haut Commissariat à l'Amazighité ; recueil de noms de famille de la région des At Weɣlis, en Kabylie, lu en texte intégral le 14 octobre 2026. L'année 2016 est celle que lui donnent les mémoires de master qui le citent. Page 61, entrée « Benmaamar, Benmamar, Benmammar » : « ou « accorder longue vie » (Harzoune, 2006: 251) ». L'entrée porte sur un nom voisin, non sur Mammeri."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1882,
+              "to": 1882,
+              "label": "23 mars 1882"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mammeri appartient aux noms de famille d'état civil que la loi française du 23 mars 1882 a généralisés aux musulmans d'Algérie, selon Kahina Chalal.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Les anthroponymes algériens entre francisation et arabisation : étude historique et sociolinguistique d’un corpus kabyle (état civil de Tizi-Ouzou)",
+                "author": "Kahina Chalal",
+                "year": 2016,
+                "url": "https://dspace.ummto.dz/bitstream/handle/ummto/374/CHALAL%20Kahina%20TM.%20238.pdf?sequence=1&isAllowed=y",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 15",
+                "notes": "Mémoire de magister, Université Mouloud Mammeri de Tizi-Ouzou, 2016 ; lu en texte intégral le 14 octobre 2026. Les pages sont comptées dans le fichier PDF, qui ne porte pas de numéro imprimé. Les noms étudiés sont tirés des registres de naissances de l'état civil de Tizi-Ouzou, de 1889 à 2010. Page 15 : le système des noms de famille « a été généralisé à tous les indigènes musulmans le 23 mars 1882 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1889,
+              "to": 1889,
+              "label": "Registre de 1889"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mammeri apparaît par écrit dans le registre-matrice de 1889 de l'état civil de Tizi-Ouzou, dont Kahina Chalal tire un tableau de 76 noms altérés sur 762. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est porté.",
+            "formAsWritten": "Mammeri",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les anthroponymes algériens entre francisation et arabisation : étude historique et sociolinguistique d’un corpus kabyle (état civil de Tizi-Ouzou)",
+                "author": "Kahina Chalal",
+                "year": 2016,
+                "url": "https://dspace.ummto.dz/bitstream/handle/ummto/374/CHALAL%20Kahina%20TM.%20238.pdf?sequence=1&isAllowed=y",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 51",
+                "notes": "Mémoire de magister, Université Mouloud Mammeri de Tizi-Ouzou, 2016 ; lu en texte intégral le 14 octobre 2026. Les pages sont comptées dans le fichier PDF, qui ne porte pas de numéro imprimé. Les noms étudiés sont tirés des registres de naissances de l'état civil de Tizi-Ouzou, de 1889 à 2010. Page 51 : « Le registre matrice de 1889 contient 762 patronymes […] Le nombre de patronyme altéré est de 76 », présentés en tableau ; « Mammeri » en fait partie."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "At Mɛammer",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'écriture berbère du nom Mammeri, relevée en 2025 comme nom de famille en Kabylie.",
+        "periodLabel": "Écrit en 2025",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Relevé en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom At Mɛammer est l'écriture berbère du nom Mammeri : un mémoire de l'université de Tizi-Ouzou le relève parmi les noms de famille de Tizi-Rached et de Beni-Yanni et le glose « Mameri, Mammeri ».",
+            "aspect": "usage",
+            "formAsWritten": "At Mɛammer",
+            "sources": [
+              {
+                "title": "Analyse morphologique et sémantique des patronymes des localités Tizi-Rached et Beni-Yanni",
+                "author": "Katia Nekmouche et Sylia Ouahioune",
+                "year": 2025,
+                "url": "https://dspace.ummto.dz/handle/ummto/30424",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 36",
+                "notes": "Mémoire de master, Université Mouloud Mammeri de Tizi-Ouzou, 2024-2025 ; lu en texte intégral le 14 octobre 2026. Les autrices s'appuient sur des informateurs de Tizi-Rached et de Beni-Yanni et sur des dictionnaires. Page 36, entrée n° 51 « At Mɛammer » : « Selon le dictionnaire : Mameri : Mameri, Mammeri »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Muʿammarī",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme en lettres arabes translittérées que la BnF donne pour le nom Mammeri.",
+        "periodLabel": "Écrit dans une notice de la BnF",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Notice consultée en 2026"
+            },
+            "statement": "Le nom Muʿammarī est la forme internationale, en translittération de l'arabe, que la Bibliothèque nationale de France donne pour le nom Mammeri dans sa notice de Mouloud Mammeri ; la notice écarte aussi Maʿmarī et At Maʿmmer.",
+            "aspect": "usage",
+            "formAsWritten": "Muʿammarī",
+            "sources": [
+              {
+                "title": "Notice de personne : Mammeri, Mouloud (1917-1989)",
+                "author": "Bibliothèque nationale de France",
+                "year": null,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb11914192s",
+                "tier": "official",
+                "source_kind": "repository",
+                "page": "notice",
+                "notes": "Notice d'autorité de la Bibliothèque nationale de France, lue le 14 octobre 2026. Elle donne la forme courante « Mammeri, Mouloud (1917-1989) », la « forme internationale » Muʿammarī, Mawlūd, et les « forme(s) rejetée(s) » Maʿmarī, Mawlūd, et At Maʿmmer, Elmulud (translittération ISO de la langue berbère)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

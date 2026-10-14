@@ -109,5 +109,144 @@
       "fieldPath": "transmissionMode",
       "reason": "Les recherches « El Fayoumi transmission patronyme », « El Fayoumi filiation » et « El Fayoumi hereditary surname » n’ont pas établi si, ni comment, cette forme se transmet dans les communautés concernées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom El Fayoumi est un nom d'appartenance arabe : il désigne quelqu'un qui vient du Fayoum, une région d'Égypte. On l'écrit aussi Fayoumi. Une forme proche, al-Fayyumi, sert de surnom à Saadia ben Joseph, né en 892, et el Fayoumi apparaît en 1724-1725 dans la traduction française d'une chronique du Caire. Les sources consultées ne disent pas si les familles qui le portent aujourd'hui en descendent.",
+    "names": [
+      {
+        "nameText": "El Fayoumi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une nisba arabe : « du Fayoum », une région d'Égypte.",
+        "periodLabel": "Surnom de Saadia, né en 892 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1905,
+              "to": 1985,
+              "label": "Proposée en 1905, reprise en 1985"
+            },
+            "era": "colonial",
+            "statement": "Le nom El Fayoumi viendrait du Fayoum, selon l'encyclopédie des noms arabes de l'université Sultan Qaboos, qui y voit une nisba, c'est-à-dire un nom d'appartenance à un lieu. La Jewish Encyclopedia dit de même de al-Fayyumi, le surnom de Saadia ben Joseph : il renvoie à son lieu de naissance, le Fayoum.",
+            "hypothesisGroup": "origine du nom El Fayoumi",
+            "sources": [
+              {
+                "title": "Saadia b. Joseph (Sa'id al-Fayyumi), dans The Jewish Encyclopedia",
+                "author": "The Jewish Encyclopedia",
+                "year": 1905,
+                "url": "https://www.jewishencyclopedia.com/articles/12953",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "vol. 10, p. 579",
+                "notes": "Article de la Jewish Encyclopedia (volume 10, New York, 1905), lu le 14 octobre 2026 sur sa reproduction en ligne ; la page 579 est celle où commence l'article d'après la numérisation. Il dit : « born in Dilaẓ, Upper Egypt, 892 ; died at Sura 942 », que l'usage « Al-Fayyumi » renvoie au lieu natal de Saadia, le Fayoum, et qu'il est né à Dilaẓ, un village de cette région."
+              },
+              {
+                "title": "Sultan Qaboos Encyclopedia of Arab Names — فَيُّومي",
+                "author": "Université Sultan Qaboos",
+                "year": 1985,
+                "url": "https://arabiclexicon.hawramani.com/?p=103634",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrée « فَيُّومي »",
+                "notes": "Encyclopédie des noms arabes de l'université Sultan Qaboos (1985), lue le 14 octobre 2026 sur sa reproduction en ligne du Hawramani Arabic Lexicon, qui n'indique pas les pages du livre. L'entrée dit : « nisba au Fayoum » (« نسبة إلى الفيوم »), c'est-à-dire un nom d'appartenance à ce lieu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 892,
+              "to": 942,
+              "label": "Vie de Saadia, 892-942"
+            },
+            "era": "polity",
+            "statement": "Le nom El Fayoumi apparaît par écrit sous une forme proche, al-Fayyumi, comme surnom de Saadia ben Joseph, né en 892 à Dilaẓ, au Fayoum, et mort en 942, selon la Jewish Encyclopedia. L'article ne dit pas quand ce surnom a été écrit pour la première fois : cette trace est de seconde main, et c'est la plus ancienne de ce nom que le projet connaît. Le Fayoum existait déjà avant ce surnom.",
+            "formAsWritten": "al-Fayyumi",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Saadia ben Joseph",
+                "role": "gaon de Soura, que l'on surnomme al-Fayyumi"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Saadia b. Joseph (Sa'id al-Fayyumi), dans The Jewish Encyclopedia",
+                "author": "The Jewish Encyclopedia",
+                "year": 1905,
+                "url": "https://www.jewishencyclopedia.com/articles/12953",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "vol. 10, p. 579",
+                "notes": "Article de la Jewish Encyclopedia (volume 10, New York, 1905), lu le 14 octobre 2026 sur sa reproduction en ligne ; la page 579 est celle où commence l'article d'après la numérisation. Il dit : « born in Dilaẓ, Upper Egypt, 892 ; died at Sura 942 », que l'usage « Al-Fayyumi » renvoie au lieu natal de Saadia, le Fayoum, et qu'il est né à Dilaẓ, un village de cette région."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1724,
+              "to": 1725,
+              "label": "Mort en 1137 de l'hégire (1724-1725)"
+            },
+            "era": "polity",
+            "statement": "Le nom El Fayoumi est écrit el Fayoumi dans la traduction française des chroniques d'al-Jabarti, qui note en 1137 de l'hégire (1724-1725) la mort du cheikh Ibrahim, fils de Moussa el Fayoumi el Maleki, cheikh de la mosquée El Azhar, au Caire.",
+            "aspect": "usage",
+            "formAsWritten": "el Fayoumi",
+            "actors": [
+              {
+                "name": "Ibrahim, fils de Moussa el Fayoumi",
+                "role": "cheikh de la mosquée El Azhar"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Merveilles biographiques et historiques, ou Chroniques du cheikh Abd-el-Rahman el Djabarti, tome I",
+                "author": "Abd al-Rahman al-Jabarti, traduit par Chefik Mansour bey, Abdulaziz Kalil bey, Gabriel Nicolas Kalil bey et Iskender Ammoun effendi",
+                "year": 1888,
+                "url": "https://archive.org/details/merveillesbiogra01jaba",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 202",
+                "notes": "Le Caire, Imprimerie nationale, 1888. Lu le 14 octobre 2026 sur la copie numérisée d'archive.org, aux pages indiquées. Page 202 : « En 1137 est mort le savant imam du Hadith cheikh Ibrahim, fils de Moussa el Fayoumi el Maleki, cheikh de la mosquée de El Azhar. » Le texte ne dit pas pourquoi il porte ce nom."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Fayoumi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Employé aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "Proposée en 1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Fayoumi est la forme sans l'article el de El Fayoumi ; l'encyclopédie des noms arabes de l'université Sultan Qaboos, qui l'écrit sans article, y voit une nisba, un nom d'appartenance au Fayoum.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Sultan Qaboos Encyclopedia of Arab Names — فَيُّومي",
+                "author": "Université Sultan Qaboos",
+                "year": 1985,
+                "url": "https://arabiclexicon.hawramani.com/?p=103634",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrée « فَيُّومي »",
+                "notes": "Encyclopédie des noms arabes de l'université Sultan Qaboos (1985), lue le 14 octobre 2026 sur sa reproduction en ligne du Hawramani Arabic Lexicon, qui n'indique pas les pages du livre. L'entrée dit : « nisba au Fayoum » (« نسبة إلى الفيوم »), c'est-à-dire un nom d'appartenance à ce lieu."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
