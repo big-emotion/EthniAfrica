@@ -1,13 +1,32 @@
 # EthniAfrica Cartes 1.3.0-proposition: the series band, seven carousel models, one series video
 
-**Status: proposed on 13 October 2026, not accepted.** The accepted system stays
-1.2.0-proposition (`../../version.json`). Only the operator accepts a version,
-and the documented path for a visual change is a Claude Design conversation
-(`../../handoff.md`: any change to a token, a font or `bundle.css` is a new
-version). This folder therefore holds two things: the brief for that
-conversation (`claude-design-brief.md`), and a working prototype built on the
-unchanged 1.2.0 engine, so the operator can judge the proposal on rendered
-images before running it.
+**Status: accepted by the operator on 14 October 2026, with series video
+layout B, and integrated.** The authority is now the design system itself:
+`../../version.json`, `../../series.md`, the band in `../../components/bundle.js`
+and `bundle.css`, and the 51 `serie-*` cards of `../../handoff/cards.sample.json`.
+The renderer integrated it the same day (`social/renderer/README.md`).
+
+What stays in this folder, and why:
+
+- `claude-design-brief.md`: the brief the operator gave Claude Design.
+- `previews/`: the prototype's rendered images of 13 October 2026, the record of
+  what the operator judged before the Claude Design step. They are not
+  references; the accepted references are listed in
+  `social/renderer/reference-manifest.json`.
+- `series.mjs` and `series.test.mjs` (`npm run test:social-series-proposal`):
+  the series' production metadata (number, campaign code, closing sentence),
+  checked against the engine's `EthniCards.SERIES`, `BAND_H` and
+  `PANEL_MAX_SERIES`. The models are read from the accepted sample cards, their
+  only source.
+- `video.model.json`: the demonstration voice script of the series 1 model,
+  without the abandoned layout A geometry.
+
+The prototype's band (`series-band.css`, `series-band.js`), preview bench
+(`preview.mjs`), `models/*.cards.json` and `version.json` were removed at
+integration: the accepted engine draws the band, and the model texts were
+identical, card for card, to the accepted sample cards. The sections below are
+the proposal as written on 13 October 2026, kept as a record; where they differ
+from `../../series.md`, the latter rules.
 
 The frame being served is `docs/editorial/strategy/social-series.md`: seven
 series, a fixed question and fixed beats per series, a video every episode, a

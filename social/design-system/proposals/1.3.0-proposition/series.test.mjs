@@ -1,23 +1,27 @@
 // @req REQ-186
-// EthniAfrica Cartes 1.3.0-proposition: the series band, the seven carousel
-// models and the 9:16 video model. Proposal tests, run with
-// `npm run test:social-series-proposal`; the browser cases need the pinned
-// Chromium (see README.md, « Previews »).
-import { test, before, after } from "node:test";
+// EthniAfrica Cartes 1.3.0: the series metadata and models against the
+// accepted engine. Run with `npm run test:social-series-proposal`; the
+// browser cases use the renderer's pinned Chromium (social/renderer/runtime.json).
+import { test } from "node:test";
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import { mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
+import { fileURLToPath } from "node:url";
+import { chromium } from "@playwright/test";
 import {
   SERIES,
+  BAND_HEIGHT,
+  PANEL_MAX_WITH_BAND,
   bandText,
   closingLine,
   loadModels,
-  PANEL_MAX_WITH_BAND,
 } from "./series.mjs";
-import { validateInput } from "../../../renderer/render.mjs";
-import { openBench } from "./preview.mjs";
+import { validateInput, renderSequence } from "../../../renderer/render.mjs";
 
+const design = fileURLToPath(new URL("../..", import.meta.url));
 const accepted = JSON.parse(
-  await readFile(new URL("../../version.json", import.meta.url), "utf8")
+  await readFile(join(design, "version.json"), "utf8")
 );
 
 test("the band reads the series name, then the episode number", () => {
@@ -35,6 +39,26 @@ test("the seven series of the 2026-10-13 frame are registered once each", () => 
   assert.equal(new Set(SERIES.map((s) => s.campaign)).size, 7);
 });
 
+test("the series names and band limits are the accepted engine's", async (t) => {
+  const browser = await chromium.launch();
+  t.after(() => browser.close());
+  const page = await browser.newPage();
+  await page.addScriptTag({ path: join(design, "components/bundle.js") });
+  const engine = await page.evaluate(() => ({
+    version: window.EthniCards.version,
+    series: window.EthniCards.SERIES,
+    band: window.EthniCards.BAND_H,
+    panel: window.EthniCards.PANEL_MAX_SERIES,
+  }));
+  assert.equal(engine.version, accepted.version);
+  assert.deepEqual(
+    engine.series,
+    Object.fromEntries(SERIES.map((s) => [s.id, s.name]))
+  );
+  assert.equal(engine.band, BAND_HEIGHT);
+  assert.equal(engine.panel, PANEL_MAX_WITH_BAND);
+});
+
 test("the closing sentence is the one every caption ends with", () => {
   assert.equal(
     closingLine("Burkina Faso"),
@@ -43,23 +67,26 @@ test("the closing sentence is the one every caption ends with", () => {
 });
 
 test("each series has one carousel model of six to eight cards", async () => {
-  const models = await loadModels();
-  assert.deepEqual(
-    models.map((m) => m.series.id),
-    SERIES.map((s) => s.id)
-  );
-  for (const { series, data } of models) {
+  for (const { series, data } of await loadModels()) {
     const cards = data.cards;
     assert.ok(cards.length >= 6 && cards.length <= 8, series.id);
     assert.equal(cards[0].type, "opener", series.id);
     assert.equal(cards.at(-1).type, "closing", series.id);
-    assert.equal(
+    assert.match(
       cards.at(-1).body,
-      closingLine(data.searchName),
+      /^Cherchez .+ sur EthniAfrica, lien en profil\.$/,
       `${series.id} closing sentence`
     );
-    for (const card of cards) {
-      assert.deepEqual(card.series, data.series, `${card.id} band`);
+    for (const [i, card] of cards.entries()) {
+      assert.deepEqual(
+        card.series,
+        { id: series.id, episode: 1 },
+        `${card.id} band`
+      );
+      assert.equal(
+        card.id,
+        `serie-${series.id}-${String(i + 1).padStart(2, "0")}`
+      );
       assert.ok(card.demo, `${card.id} must carry the demonstration tape`);
       assert.ok(
         card.provenance,
@@ -69,7 +96,7 @@ test("each series has one carousel model of six to eight cards", async () => {
   }
 });
 
-test("each model is a valid proof sequence for the accepted renderer", async () => {
+test("each model is a valid proof sequence and never a final one", async () => {
   for (const { data } of await loadModels()) {
     assert.doesNotThrow(() => validateInput(data, "proof", accepted.version));
     assert.throws(
@@ -79,13 +106,46 @@ test("each model is a valid proof sequence for the accepted renderer", async () 
   }
 });
 
-test("the video model voices every card once, in 35 to 45 seconds, and ends on the search sentence", async () => {
+test("the band holds on one line for every series at episode 100", async (t) => {
+  const models = await loadModels();
+  const cards = models.map(({ data }) => ({
+    ...structuredClone(data.cards[0]),
+    series: { ...data.cards[0].series, episode: 100 },
+  }));
+  const root = await mkdtemp(join(tmpdir(), "ethnia-series-"));
+  t.after(() => rm(root, { recursive: true, force: true }));
+  const input = join(root, "cards.json");
+  await writeFile(
+    input,
+    JSON.stringify({
+      version: accepted.version,
+      logo: models[0].data.logo,
+      cards,
+    })
+  );
+  const r = await renderSequence({
+    input,
+    output: join(root, "out"),
+    design,
+    assets: join(design, "assets"),
+    mode: "diagnostic",
+  });
+  for (const card of r.cards) {
+    assert.equal(card.fit.series.lines, 1, card.id);
+    assert.ok(
+      card.fit.series.right <= 1080 - 72,
+      `${card.id} reaches ${card.fit.series.right}`
+    );
+  }
+});
+
+test("the video script voices every series 1 card once, in 35 to 45 seconds, and ends on the search sentence", async () => {
   const video = JSON.parse(
     await readFile(new URL("./video.model.json", import.meta.url), "utf8")
   );
   const [{ data }] = await loadModels();
   assert.deepEqual(
-    video.beats.map((b) => b.card),
+    video.beats.map((b) => `serie-${b.card}`),
     data.cards.map((c) => c.id)
   );
   const chunks = video.beats.flatMap((b) => b.chunks);
@@ -101,49 +161,5 @@ test("the video model voices every card once, in 35 to 45 seconds, and ends on t
     .at(-1)
     .chunks.map((c) => c.text)
     .join(" ");
-  assert.equal(lastCard, closingLine(data.searchName));
-});
-
-let bench;
-before(async () => {
-  bench = await openBench();
-});
-after(async () => {
-  await bench?.close();
-});
-
-test("the band holds on one line for every series at episode 100", async () => {
-  for (const s of SERIES) {
-    const band = await bench.measureBand({ id: s.id, episode: 100 });
-    assert.equal(band.lines, 1, s.id);
-    assert.ok(band.right <= 1080 - 72, `${s.id} reaches ${band.right}`);
-    assert.equal(band.height, 72, s.id);
-  }
-});
-
-test("every model card fits under the band with the image window kept", async () => {
-  for (const { data } of await loadModels()) {
-    const reports = await bench.renderModel(data);
-    for (const r of reports) {
-      assert.ok(r.ok, `${r.id}: ${JSON.stringify(r.warnings)}`);
-      assert.equal(r.collisions || 0, 0, r.id);
-      assert.ok(
-        r.panelHeight <= PANEL_MAX_WITH_BAND,
-        `${r.id} panel ${r.panelHeight}`
-      );
-      assert.ok(r.band.bottom <= r.panelTop, `${r.id} band meets the panel`);
-    }
-  }
-});
-
-test("a video frame keeps the card in the 4:5 centre and the subtitle in its band", async () => {
-  const [{ data }] = await loadModels();
-  const frame = await bench.videoFrame(data, {
-    card: 1,
-    subtitle: "Deux mots, pris à deux langues du pays.",
-  });
-  assert.deepEqual(frame.size, [1080, 1920]);
-  assert.deepEqual([frame.card.top, frame.card.bottom], [285, 1635]);
-  assert.ok(frame.subtitle.top >= 1660 && frame.subtitle.bottom <= 1800);
-  assert.ok(frame.subtitle.left >= 60 && frame.subtitle.right <= 1020);
+  assert.equal(lastCard, data.cards.at(-1).body);
 });

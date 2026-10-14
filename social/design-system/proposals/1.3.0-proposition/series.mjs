@@ -1,5 +1,7 @@
-// The seven series of docs/editorial/strategy/social-series.md (2026-10-13)
-// and the rules the 1.3.0 proposal adds on top of EthniAfrica Cartes 1.2.0.
+// The seven series of docs/editorial/strategy/social-series.md (2026-10-13),
+// as production metadata around the accepted design system. The band itself
+// is drawn by EthniCards 1.3.0 (components/bundle.js); the tests check that
+// the names and limits here match the engine's.
 import { readFile } from "node:fs/promises";
 
 // Names are printed exactly as the frame publishes them; `campaign` is the
@@ -51,7 +53,7 @@ export const SERIES = [
 
 // The band takes 72 px off the top of the card. Keeping the operator's
 // 450 px image window (ruling of 9 October 2026) leaves 828 px for the panel
-// instead of 900: a model card must fit that, the engine never shrinks text.
+// instead of 900: a series card must fit that, the engine never shrinks text.
 export const BAND_HEIGHT = 72;
 export const IMAGE_WINDOW_MIN = 450;
 export const PANEL_MAX_WITH_BAND = 1350 - BAND_HEIGHT - IMAGE_WINDOW_MIN;
@@ -73,18 +75,21 @@ export function closingLine(searchName) {
   return `Cherchez ${searchName} sur EthniAfrica, lien en profil.`;
 }
 
-const modelUrl = (series) =>
-  new URL(
-    `./models/${String(series.number).padStart(2, "0")}-${series.id}.cards.json`,
-    import.meta.url
-  );
-
+// The accepted sample cards are the one source of the seven models: the
+// prototype's models/*.cards.json had the same text, without the images.
 export async function loadModels() {
-  return Promise.all(
-    SERIES.map(async (series) => ({
-      series,
-      url: modelUrl(series),
-      data: JSON.parse(await readFile(modelUrl(series), "utf8")),
-    }))
+  const sample = JSON.parse(
+    await readFile(
+      new URL("../../handoff/cards.sample.json", import.meta.url),
+      "utf8"
+    )
   );
+  return SERIES.map((series) => ({
+    series,
+    data: {
+      version: sample.version,
+      logo: sample.logo,
+      cards: sample.cards.filter((c) => c.id.startsWith(`serie-${series.id}-`)),
+    },
+  }));
 }
