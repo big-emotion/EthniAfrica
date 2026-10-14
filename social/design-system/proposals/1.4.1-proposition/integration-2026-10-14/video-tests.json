@@ -7,5 +7,14 @@
   "test:social-renderer": "26 of 26 pass on the same browser",
   "test:social-series-proposal": "8 of 8 pass",
   "cards": "cards-1.4.0-vs-1.4.1.json: the 89 sample cards identical pixel for pixel, alternative texts included",
-  "toDoOnThePinnedBrowser": "npm run test:social-video, the map acceptance test with the verified assets, npm run test:social-renderer and the fidelity check"
+  "pinnedBrowser": {
+    "date": "2026-10-14",
+    "browser": "Chromium 153.0.8010.12 driven by Playwright 1.63.0, as pinned in social/renderer/runtime.json, on macOS arm64",
+    "test:social-video": "157 of 157 pass",
+    "series-map.acceptance.test.mjs": "4 of 4 pass with ETHNIAFRICA_VIDEO_ASSETS on the verified assets",
+    "test:social-renderer": "26 of 26 pass",
+    "test:social-series-proposal": "8 of 8 pass",
+    "fidelity": "89 of 89 sample cards pass against the accepted references of design-system-1.3.0-accepted (1.4.1 changes no card)",
+    "check:editorial": "passes: 0 errors, 29 review warnings, all in files that predate this change"
+  }
 }
