@@ -1,5 +1,5 @@
 // Frame-addressed model of the series video: EthniAfrica Cartes
-// 1.3.0-proposition, layout B (series.md, « Vidéo de série »), built on
+// 1.4.0-proposition, full screen (series.md, « Vidéo de série »), built on
 // Vidéo carte 0.4.0's chunks, highlight and voice timing. The same cards as
 // the carousel, on the operator's voice; every value is a function of the
 // frame number, with no clock.
@@ -16,16 +16,35 @@ import {
   leave,
 } from "./sequence.mjs";
 
-// Layout B in frame pixels (series.md). Text sits in the feed's safe zone:
-// x 120 to 960 above y 840, x 120 to 760 below it (TikTok's buttons), from
-// y 270 to 1248; sources, credits and the signature go under 1248.
+// The full-screen bands in frame pixels (series.md and handoff.md,
+// « Renderer integration of 1.4.0 »). The image fills the frame; only text
+// sits on it, every text between x 60 and 1020, in its own band. Nothing is
+// placed after the networks' buttons.
 export const LAYOUT = {
-  band: [270, 342],
-  photo: [342, 902],
-  subtitle: { y: [700, 836], x: [120, 960], maxLineWidth: 840 },
-  head: { y: [902, 1248], x: [120, 760] },
-  safe: { x: [120, 960], y: [270, 1248], buttonsFrom: 840, narrowX: 760 },
+  x: [60, 1020],
+  tape: [178, 226],
+  band: [250, 290],
+  head: [318, 700],
+  ending: [318, 820],
+  clear: [700, 1300],
+  focus: [540, 1000],
+  subtitle: { y: [1316, 1452], centreX: 540, maxLineWidth: 900 },
+  foot: [1652, 1786],
+  // The ending's credit sits centred above its signature.
+  endingCredit: [1652, 1828],
+  signature: [1828, 1884],
+  slot: { x: [120, 960], y: [760, 1240] },
+  mapSubjectTop: 724,
+  maxImageScale: 1.5,
 };
+// Long dates: the largest size that holds on one line in 960 px, else two
+// lines at the smallest, never a third (series.md, « Long dates »).
+export const DATE_STEPS = [
+  [176, 156],
+  [148, 136],
+  [124, 118],
+  [104, 100],
+];
 const CROSS_FADE = 9; // 300 ms
 const ZOOM = 0.04; // 100 → 104 %
 const CLOSING_HOLD = 75; // 2.5 s
@@ -60,8 +79,8 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     fail(
       `The cards are ${deck.version}; the accepted design is ${version.version}`
     );
-  if (version.acceptance?.videoLayout !== "B")
-    fail("The accepted design does not set video layout B");
+  if (version.videoLayout !== "full")
+    fail("The accepted design does not set the full-screen video layout");
 
   const beats = input.beats;
   if (!Array.isArray(beats) || beats.length < 2)
@@ -133,7 +152,7 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
         const text = line.map((r) => r.text).join("");
         if (subtitleLineWidth(text) > LAYOUT.subtitle.maxLineWidth)
           fail(
-            `« ${text} » is wider than 840 px: a series subtitle line holds 840 px`
+            `« ${text} » is wider than 900 px: a series subtitle line holds 900 px`
           );
       }
       return { text, card, lines };
@@ -219,14 +238,22 @@ export function seriesFrameState(seq, frame) {
     if (to === null) return 1; // the ending shows no photograph
     return 1 + (ZOOM * (frame - from)) / (to - from);
   };
-  const layers = [{ card: current, opacity: 1, zoom: zoom(current) }];
+  // `opacity` is the image's, `text` the card's own text (head, foot): the
+  // images cross-fade over the whole change while the heads swap inside it,
+  // out in the first half and in during the second, never both at once
+  // (operator, 14 October 2026).
+  const layers = [{ card: current, opacity: 1, zoom: zoom(current), text: 1 }];
   const next = current + 1;
-  if (next < starts.length && frame > starts[next] - CROSS_FADE)
+  if (next < starts.length && frame > starts[next] - CROSS_FADE) {
+    const p = (frame - (starts[next] - CROSS_FADE)) / CROSS_FADE;
+    layers[0].text = Math.max(0, 1 - 2 * p);
     layers.push({
       card: next,
-      opacity: (frame - (starts[next] - CROSS_FADE)) / CROSS_FADE,
+      opacity: p,
       zoom: zoom(next),
+      text: Math.max(0, 2 * p - 1),
     });
+  }
   const chunk = seq.chunks.find((c) => frame >= c.appear && frame < c.gone);
   const subtitle = chunk
     ? {
@@ -243,32 +270,62 @@ export function seriesFrameState(seq, frame) {
   return { layers, subtitle };
 }
 
-// Problems with the text boxes the browser drew on one frame. `boxes` are
-// { id, kind, x, y, w, h } in frame pixels; kinds "source", "credit",
-// "signature" and "tape" are exempt (under y 1248, or the demo tape).
-const EXEMPT = new Set(["source", "credit", "signature", "tape"]);
-export function checkSeriesLayout(boxes) {
+// Problems with the boxes the browser drew on one frame. `boxes` are
+// { id, kind, x, y, w, h } in frame pixels; an "image" box also carries its
+// `scale` (frame pixels per source pixel, zoom included), and a demonstration
+// only reports an enlarged image, since the library holds web renditions.
+const BANDS = {
+  tape: LAYOUT.tape,
+  band: LAYOUT.band,
+  head: LAYOUT.head,
+  ending: LAYOUT.ending,
+  pill: LAYOUT.ending,
+  subtitle: LAYOUT.subtitle.y,
+  key: LAYOUT.foot,
+  source: LAYOUT.foot,
+  credit: LAYOUT.foot,
+  "ending-credit": LAYOUT.endingCredit,
+  signature: LAYOUT.signature,
+  slot: LAYOUT.slot.y,
+};
+export function checkSeriesLayout(boxes, { demo = false } = {}) {
   const problems = [];
-  const { safe, head, subtitle } = LAYOUT;
   const near = 0.5;
   for (const b of boxes) {
-    if (EXEMPT.has(b.kind)) continue;
     const [left, right, top, bottom] = [b.x, b.x + b.w, b.y, b.y + b.h];
     const say = (what) => problems.push(`${b.id}: ${what}`);
-    if (top < safe.y[0] - near || bottom > safe.y[1] + near)
-      say(`y ${Math.round(top)} to ${Math.round(bottom)} leaves y 270 to 1248`);
-    const maxX = bottom > safe.buttonsFrom + near ? safe.narrowX : safe.x[1];
-    if (left < safe.x[0] - near || right > maxX + near)
+    if (b.kind === "image") {
+      if (b.scale > LAYOUT.maxImageScale + 1e-9 && !demo)
+        say(
+          `Image trop petite pour la vidéo: enlarged ${b.scale.toFixed(2)} times, 1.5 at most`
+        );
+      continue;
+    }
+    if (b.kind === "map-subject") {
+      if (top < LAYOUT.mapSubjectTop - near)
+        say(
+          `Le sujet de la carte passe sous la tête: it starts at y ${Math.round(top)}, above ${LAYOUT.mapSubjectTop}`
+        );
+      if (bottom > LAYOUT.foot[0] + near)
+        say(`the map's subject runs into the foot, below y ${LAYOUT.foot[0]}`);
+      continue;
+    }
+    const band = BANDS[b.kind];
+    if (!band) {
+      say(`unknown kind ${b.kind}`);
+      continue;
+    }
+    const [x0, x1] = b.kind === "slot" ? LAYOUT.slot.x : LAYOUT.x;
+    if (left < x0 - near || right > x1 + near)
       say(
-        `x ${Math.round(left)} to ${Math.round(right)} leaves x 120 to ${maxX}`
+        `x ${Math.round(left)} to ${Math.round(right)} leaves x ${x0} to ${x1}`
       );
-    if (
-      b.kind === "head" &&
-      (top < head.y[0] - near || bottom > head.y[1] + near)
-    )
-      say(`the head of the card runs outside y 902 to 1248`);
-    if (b.kind === "subtitle" && b.w > subtitle.maxLineWidth + near)
-      say(`a subtitle line is ${Math.round(b.w)} px wide, over 840`);
+    if (top < band[0] - near || bottom > band[1] + near)
+      say(
+        `y ${Math.round(top)} to ${Math.round(bottom)} leaves its band, y ${band[0]} to ${band[1]}`
+      );
+    if (b.kind === "subtitle" && b.w > LAYOUT.subtitle.maxLineWidth + near)
+      say(`a subtitle line is ${Math.round(b.w)} px wide, over 900`);
   }
   return problems;
 }

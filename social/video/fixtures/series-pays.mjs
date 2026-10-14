@@ -1,4 +1,4 @@
-// The series 1 demonstration video (Cartes 1.3.0, layout B), built from the
+// The series 1 demonstration video (Cartes 1.4.0, full screen), built from the
 // design's voice script `video.model.json` and timed on a synthetic voice:
 // generated silence whose word times spread each chunk's units over the
 // chunk's scripted duration. No real voice is recorded here; the operator's
@@ -74,7 +74,8 @@ export function seriesDemo(dir, { edit = () => {}, script = (b) => b } = {}) {
     })
   );
   const input = {
-    design: model.design,
+    // The script is 1.3.0's; the layout is the accepted 1.4.0 full screen.
+    design: "EthniAfrica Cartes 1.4.0-proposition, vidéo de série plein écran",
     // The cards' own tape, as on the carousel and the design's boards.
     demo: JSON.parse(readFileSync(CARDS, "utf8")).cards.find(
       (c) => c.id === beats[0].card

@@ -1,7 +1,8 @@
 // @req REQ-186
-// The series video (Cartes 1.3.0, layout B) as a schedule: the cover, the
-// 300 ms cross-fades, every card voiced once, the length and the « série »
-// ending, on the series 1 demonstration script. No browser is needed.
+// The series video (Cartes 1.4.0, full screen) as a schedule: the cover, the
+// 300 ms card changes, every card voiced once, the length and the « série »
+// ending, on the series 1 demonstration script, and the band check of every
+// text box. No browser is needed.
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { mkdtempSync, rmSync } from "node:fs";
@@ -34,7 +35,7 @@ const states = (seq) =>
 test("frame 0 is the cover: the opener alone, with its band, and no subtitle", () => {
   const seq = demo();
   const cover = seriesFrameState(seq, 0);
-  assert.deepEqual(cover.layers, [{ card: 0, opacity: 1, zoom: 1 }]);
+  assert.deepEqual(cover.layers, [{ card: 0, opacity: 1, zoom: 1, text: 1 }]);
   assert.equal(seq.cards[0].type, "opener");
   assert.deepEqual(seq.band, { id: "pays", episode: 1 });
   assert.equal(cover.subtitle, null);
@@ -71,6 +72,13 @@ test("each card change is one 300 ms cross-fade and nothing else moves", () => {
       assert.equal(under.opacity, 1);
       assert.equal(over.card, k + 1);
       assert.ok(Math.abs(over.opacity - (j + 1) / 9) < 1e-9);
+      // The heads swap inside the change (operator, 14 October 2026): the
+      // outgoing text leaves in the first 150 ms, the incoming text enters
+      // in the last 150 ms, while the images cross-fade over all 300 ms.
+      const p = (j + 1) / 9;
+      assert.ok(Math.abs(under.text - Math.max(0, 1 - 2 * p)) < 1e-9);
+      assert.ok(Math.abs(over.text - Math.max(0, 2 * p - 1)) < 1e-9);
+      assert.ok(under.text === 0 || over.text === 0, `frame ${f}`);
     });
     assert.deepEqual(
       all[run.at(-1) + 1].layers.map((l) => [l.card, l.opacity]),
@@ -183,39 +191,86 @@ test("an opener first, a closing card last, and one series for every card", () =
   );
 });
 
-test("a subtitle line estimated wider than 840 px is refused", () => {
-  assert.throws(
-    () =>
-      demo({
-        script: (beats) => {
-          beats[1].chunks[0].text = "MMMM MMMM MMMM MMMM";
-          return beats;
-        },
-      }),
-    /840 px/
+test("a subtitle line may be 900 px wide, as in Vidéo carte 0.4.0", () => {
+  // 872 px: refused by layout B's 840 px column, accepted in full screen.
+  assert.doesNotThrow(() =>
+    demo({
+      script: (beats) => {
+        beats[1].chunks[0].text = "MMMM MMMM MMMM MMMM";
+        return beats;
+      },
+    })
   );
 });
 
-test("the safe zone narrows to x 760 below y 840; sources and credits are exempt", () => {
-  const box = (kind, x, y, w, h) => ({ id: kind, kind, x, y, w, h });
-  assert.deepEqual(checkSeriesLayout([box("ending", 120, 362, 840, 228)]), []);
-  assert.equal(checkSeriesLayout([box("head", 120, 1100, 700, 80)]).length, 1);
-  assert.equal(checkSeriesLayout([box("ending", 100, 400, 800, 80)]).length, 1);
-  assert.equal(checkSeriesLayout([box("band", 120, 250, 500, 34)]).length, 1);
+test("every text sits in its band, between x 60 and 1020", () => {
+  const box = (kind, x, y, w, h, extra) => ({
+    id: kind,
+    kind,
+    x,
+    y,
+    w,
+    h,
+    ...extra,
+  });
+  const ok = [
+    box("tape", 700, 178, 320, 48),
+    box("band", 60, 250, 600, 40),
+    box("head", 60, 318, 960, 382),
+    box("ending", 60, 318, 960, 500),
+    box("pill", 300, 700, 480, 76),
+    box("subtitle", 140, 1316, 800, 68),
+    box("key", 60, 1652, 600, 32),
+    box("source", 60, 1720, 900, 30),
+    box("credit", 60, 1756, 960, 30),
+    box("signature", 60, 1836, 240, 48),
+    box("ending-credit", 90, 1760, 900, 56),
+    box("signature", 400, 1828, 280, 56),
+    box("slot", 120, 760, 840, 480),
+    box("map-subject", 300, 724, 400, 900),
+  ];
+  assert.deepEqual(checkSeriesLayout(ok), []);
+  const one = (b) => checkSeriesLayout([b]);
   assert.match(
-    checkSeriesLayout([box("head", 120, 880, 600, 80)])[0],
-    /902 to 1248/
+    one(box("band", 40, 250, 600, 40)).join(),
+    /x 40 to 640 leaves x 60 to 1020/
   );
   assert.match(
-    checkSeriesLayout([box("subtitle", 110, 700, 860, 68)]).join(),
-    /over 840/
+    one(box("head", 60, 318, 960, 400)).join(),
+    /leaves its band, y 318 to 700/
   );
-  assert.deepEqual(
-    checkSeriesLayout(
-      ["source", "credit", "signature", "tape"].map((k) =>
-        box(k, 0, 1300, 1080, 30)
-      )
-    ),
-    []
+  assert.match(one(box("ending", 60, 318, 960, 520)).join(), /y 318 to 820/);
+  assert.match(one(box("subtitle", 60, 1316, 940, 68)).join(), /over 900/);
+  assert.match(
+    one(box("subtitle", 140, 1300, 800, 68)).join(),
+    /y 1316 to 1452/
   );
+  assert.match(one(box("source", 60, 1600, 900, 30)).join(), /y 1652 to 1786/);
+  assert.match(
+    one(box("signature", 60, 1800, 240, 48)).join(),
+    /y 1828 to 1884/
+  );
+  assert.match(
+    one(box("map-subject", 300, 385, 400, 450)).join(),
+    /Le sujet de la carte passe sous la tête/
+  );
+  assert.match(one(box("unknown", 60, 300, 10, 10)).join(), /unknown kind/);
+});
+
+test("an image enlarged past 1.5 is refused, except in a demonstration", () => {
+  const image = {
+    id: "serie-pays-01",
+    kind: "image",
+    x: 0,
+    y: 0,
+    w: 1080,
+    h: 1920,
+    scale: 3.35,
+  };
+  assert.match(
+    checkSeriesLayout([image]).join(),
+    /Image trop petite pour la vidéo/
+  );
+  assert.deepEqual(checkSeriesLayout([image], { demo: true }), []);
+  assert.deepEqual(checkSeriesLayout([{ ...image, scale: 1.5 }]), []);
 });
