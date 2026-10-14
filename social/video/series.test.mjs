@@ -22,6 +22,7 @@ function demo(options) {
   dirs.push(dir);
   return loadSeriesVideo(seriesDemo(dir, options), { dir });
 }
+// @req REQ-186
 test.after(() =>
   dirs.forEach((d) => rmSync(d, { recursive: true, force: true }))
 );
@@ -32,6 +33,7 @@ const states = (seq) =>
     seriesFrameState(seq, f)
   );
 
+// @req REQ-186
 test("frame 0 is the cover: the opener alone, with its band, and no subtitle", () => {
   const seq = demo();
   const cover = seriesFrameState(seq, 0);
@@ -41,11 +43,13 @@ test("frame 0 is the cover: the opener alone, with its band, and no subtitle", (
   assert.equal(cover.subtitle, null);
 });
 
+// @req REQ-186
 test("the demonstration script lasts 35 to 45 s", () => {
   const seconds = seriesFrameCount(demo()) / FPS;
   assert.ok(seconds >= 35 && seconds <= 45, `${seconds} s`);
 });
 
+// @req REQ-186
 test("each card change is one 300 ms cross-fade and nothing else moves", () => {
   const seq = demo();
   const all = states(seq);
@@ -87,6 +91,7 @@ test("each card change is one 300 ms cross-fade and nothing else moves", () => {
   });
 });
 
+// @req REQ-186
 test("the photograph zooms from 100 to 104 % while its card is on screen", () => {
   const seq = demo();
   const zooms = new Map();
@@ -106,6 +111,7 @@ test("the photograph zooms from 100 to 104 % while its card is on screen", () =>
   }
 });
 
+// @req REQ-186
 test("every card is voiced once, while it is on screen alone", () => {
   const seq = demo();
   const voiced = seq.chunks.map((c) => c.card);
@@ -122,6 +128,7 @@ test("every card is voiced once, while it is on screen alone", () => {
   }
 });
 
+// @req REQ-186
 test("the last two chunks are the search sentence, on the closing card", () => {
   const seq = demo();
   const last = seq.chunks.slice(-2);
@@ -132,12 +139,14 @@ test("the last two chunks are the search sentence, on the closing card", () => {
   assert.ok(last.every((c) => seq.cards[c.card].type === "closing"));
 });
 
+// @req REQ-186
 test("the searched name stays whole on one subtitle line", () => {
   const [search] = demo().chunks.slice(-2);
   const lines = search.lines.map((line) => line.map((r) => r.text).join(""));
   assert.deepEqual(lines, ["Cherchez Burkina\u00a0Faso", "sur EthniAfrica,"]);
 });
 
+// @req REQ-186
 test("the closing card holds until the voice ends plus 0.5 s, 2.5 s at least", () => {
   const seq = demo();
   const closingIn = seq.cardStarts.at(-1);
@@ -148,6 +157,7 @@ test("the closing card holds until the voice ends plus 0.5 s, 2.5 s at least", (
   );
 });
 
+// @req REQ-186
 test("the series ending is refused without pageOnline: true", () => {
   for (const pageOnline of [undefined, false, "true"])
     assert.throws(
@@ -156,6 +166,7 @@ test("the series ending is refused without pageOnline: true", () => {
     );
 });
 
+// @req REQ-186
 test("the closing chunks must say the search sentence for the ending's name", () => {
   assert.throws(
     () => demo({ edit: (input) => (input.ending.search = "Haute-Volta") }),
@@ -163,6 +174,7 @@ test("the closing chunks must say the search sentence for the ending's name", ()
   );
 });
 
+// @req REQ-186
 test("a video outside 35 to 45 s is refused", () => {
   assert.throws(
     () =>
@@ -177,6 +189,7 @@ test("a video outside 35 to 45 s is refused", () => {
   );
 });
 
+// @req REQ-186
 test("an opener first, a closing card last, and one series for every card", () => {
   assert.throws(
     () => demo({ edit: (input) => input.beats.reverse() }),
@@ -191,6 +204,7 @@ test("an opener first, a closing card last, and one series for every card", () =
   );
 });
 
+// @req REQ-186
 test("a subtitle line may be 900 px wide, as in Vidéo carte 0.4.0", () => {
   // 872 px: refused by layout B's 840 px column, accepted in full screen.
   assert.doesNotThrow(() =>
@@ -203,6 +217,7 @@ test("a subtitle line may be 900 px wide, as in Vidéo carte 0.4.0", () => {
   );
 });
 
+// @req REQ-186
 test("every text sits in its band, between x 60 and 1020", () => {
   const box = (kind, x, y, w, h, extra) => ({
     id: kind,
@@ -257,6 +272,7 @@ test("every text sits in its band, between x 60 and 1020", () => {
   assert.match(one(box("unknown", 60, 300, 10, 10)).join(), /unknown kind/);
 });
 
+// @req REQ-186
 test("an image enlarged past 1.5 is refused, except in a demonstration", () => {
   const image = {
     id: "serie-pays-01",

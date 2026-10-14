@@ -20,6 +20,7 @@ import { renderSeriesFrames } from "./series-render.mjs";
 import { seriesDemo } from "./fixtures/series-pays.mjs";
 
 const dir = mkdtempSync(join(tmpdir(), "series-render-"));
+// @req REQ-186
 test.after(() => rmSync(dir, { recursive: true, force: true }));
 const seq = loadSeriesVideo(seriesDemo(dir), { dir });
 
@@ -32,10 +33,12 @@ const keyFrames = [
   seriesFrameCount(seq) - 1,
 ];
 let frames;
+// @req REQ-186
 test.before(async () => {
   frames = await renderSeriesFrames(seq, keyFrames, { diagnose: true });
 });
 
+// @req REQ-186
 test("every text box stays in its band, on every card and the ending", () => {
   const seen = new Set();
   for (const f of frames) {
@@ -49,6 +52,7 @@ test("every text box stays in its band, on every card and the ending", () => {
   assert.equal(seen.size, seq.cards.length);
 });
 
+// @req REQ-186
 test("the image fills the whole frame, and nothing darkens it", () => {
   for (const f of frames) {
     for (const p of f.pictures)
@@ -62,6 +66,7 @@ test("the image fills the whole frame, and nothing darkens it", () => {
   }
 });
 
+// @req REQ-186
 test("the library's web renditions are reported as too small for a final video", () => {
   const images = frames.flatMap((f) =>
     f.boxes.filter((b) => b.kind === "image")
@@ -74,6 +79,7 @@ test("the library's web renditions are reported as too small for a final video",
   );
 });
 
+// @req REQ-186
 test("subtitle lines sit between y 1316 and 1452, centred, at most 900 px wide", () => {
   const lines = frames.flatMap((f) =>
     f.boxes.filter((b) => b.kind === "subtitle")
@@ -89,6 +95,7 @@ test("subtitle lines sit between y 1316 and 1452, centred, at most 900 px wide",
   }
 });
 
+// @req REQ-186
 test("the spoken word is lit whenever a chunk is fully drawn", () => {
   for (const f of frames.filter((f) => f.state.subtitle?.opacity === 1))
     assert.equal(
@@ -98,6 +105,7 @@ test("the spoken word is lit whenever a chunk is fully drawn", () => {
     );
 });
 
+// @req REQ-186
 test("French spacing: a narrow no-break space before ? and :", () => {
   const all = frames.map((f) => f.text).join("\n");
   assert.match(all, /nom\u202f\?/);
@@ -105,11 +113,13 @@ test("French spacing: a narrow no-break space before ? and :", () => {
   assert.doesNotMatch(all, / [?:!;]/);
 });
 
+// @req REQ-186
 test("no frame of a series video says « Faites défiler »", () => {
   for (const f of frames) assert.doesNotMatch(f.text, /Faites défiler/i);
   assert.equal(seq.cards[0].cue, "Faites défiler");
 });
 
+// @req REQ-186
 test("the cover is the opener with its band at y 250 and no subtitle", () => {
   const cover = frames[0];
   assert.deepEqual(
@@ -128,6 +138,7 @@ test("the cover is the opener with its band at y 250 and no subtitle", () => {
   );
 });
 
+// @req REQ-186
 test("a long date sets on one line, at the largest size that fits", () => {
   const card = seq.cards.findIndex((c) => c.id === "serie-pays-04");
   const f = frames.find(
@@ -139,6 +150,7 @@ test("a long date sets on one line, at the largest size that fits", () => {
   assert.match(date.id, /1er\s+mars\s+1919/u);
 });
 
+// @req REQ-186
 test("during a card change, only one card's head shows", () => {
   for (const f of frames.filter((f) => f.state.layers.length === 2)) {
     const heads = f.boxes.filter((b) => b.kind === "head");
@@ -150,6 +162,7 @@ test("during a card change, only one card's head shows", () => {
   }
 });
 
+// @req REQ-186
 test("the ending: block from y 318, centred signature ending on y 1884", () => {
   const end = frames.at(-1);
   const slogan = end.boxes.find((b) => b.kind === "ending");
@@ -184,6 +197,7 @@ function familleVideo(mapDir, card2 = "serie-nom-famille-02") {
   );
 }
 
+// @req REQ-186
 test("a map card fills the frame with its own view, its subject in the clear zone", async () => {
   const mapDir = mkdtempSync(join(tmpdir(), "series-map-"));
   try {
@@ -204,6 +218,7 @@ test("a map card fills the frame with its own view, its subject in the clear zon
   }
 });
 
+// @req REQ-186
 test("a map whose base map is too short for 9:16 is refused", async () => {
   const mapDir = mkdtempSync(join(tmpdir(), "series-map-"));
   try {
