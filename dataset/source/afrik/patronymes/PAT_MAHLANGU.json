@@ -80,5 +80,63 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web combinant « Mahlangu », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de la synthèse historique de South African History Online, une thèse sur les origines ndébélé et des requêtes ciblées sur le nom Mahlangu, n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mahlangu est celui de la famille qui règne sur les Ndébélé du Sud, les Ndzundza, en Afrique du Sud. Selon South African History Online, cette famille s'appelait auparavant Mdungwa et a pris le nom de Mahlangu, celui d'un fils du régent Sindeni, vers le milieu du XVIIIe siècle. On ne sait pas pourquoi la succession a changé.",
+    "names": [
+      {
+        "nameText": "Mahlangu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de la famille royale ndzundza, qui s'appelait Mdungwa avant le XVIIIe siècle.",
+        "periodLabel": "Vers le milieu du XVIIIe siècle ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1740,
+              "label": "Avant le milieu du XVIIIe siècle"
+            },
+            "era": "polity",
+            "before": true,
+            "statement": "On parle alors de Mdungwa pour désigner la famille qui régnait sur les Ndzundza, selon South African History Online.",
+            "sources": [
+              {
+                "title": "The Ndebele in History",
+                "author": "South African History Online",
+                "year": null,
+                "url": "https://sahistory.org.za/article/ndebele-history",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Article de South African History Online, sans numéro de page, lu le 14 octobre 2026. Après la mort de Bongwe, son frère Sindeni est régent ; un changement dans la ligne de succession laisse son fils Mahlangu succéder, pour des raisons inconnues ; « the ruling family, which had previously been known as the Mdungwa, now became the Mahlangu » ; « the last of these events probably took place in the latter part of the mid-eighteenth century »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1740,
+              "to": 1760,
+              "label": "Vers le milieu du XVIIIe siècle, selon un récit publié par South African History Online"
+            },
+            "era": "polity",
+            "statement": "Le nom Mahlangu est celui du fils de Sindeni, qui succède à son père à la tête des Ndzundza ; la famille régnante, auparavant appelée Mdungwa, devient alors la famille Mahlangu. Ce récit est celui de South African History Online ; il dit que les raisons du changement dans la succession sont inconnues.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Ndebele in History",
+                "author": "South African History Online",
+                "year": null,
+                "url": "https://sahistory.org.za/article/ndebele-history",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Article de South African History Online, sans numéro de page, lu le 14 octobre 2026. Après la mort de Bongwe, son frère Sindeni est régent ; un changement dans la ligne de succession laisse son fils Mahlangu succéder, pour des raisons inconnues ; « the ruling family, which had previously been known as the Mdungwa, now became the Mahlangu » ; « the last of these events probably took place in the latter part of the mid-eighteenth century »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
