@@ -104,5 +104,110 @@
       "fieldPath": "homonyms",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Nduwimana est un nom de personne du Burundi. Une dépêche d'agence de 2008 le traduit « Je suis entre les mains de Dieu » et le range parmi les noms qui disent la lassitude de la guerre, sans dire comment il se forme. La plus ancienne trace que le projet connaît est cette dépêche ; le nom est plus ancien. On ne sait pas avec certitude depuis quand il est porté, ni par quelles familles.",
+    "names": [
+      {
+        "nameText": "Nduwimana",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne du Burundi, traduit « Je suis entre les mains de Dieu » ; son origine reste mal connue.",
+        "periodLabel": "Écrit dès 2008 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "Dépêche de mars 2008"
+            },
+            "era": "modern",
+            "statement": "Le nom Nduwimana apparaît par écrit dans une dépêche de l'agence Associated Press datée de Bujumbura en mars 2008 : une Burundaise l'a donné à l'un de ses fils, après un nom qui disait la haine de ses voisins et un autre qui appelait la paix. C'est la plus ancienne trace de ce nom que le projet connaît ; le nom est plus ancien qu'elle.",
+            "formAsWritten": "Nduwimana",
+            "birth": true,
+            "sources": [
+              {
+                "title": "In Burundi, names speak volumes",
+                "author": "Associated Press",
+                "year": 2008,
+                "url": "https://www.tehrantimes.com/news/165386/In-Burundi-names-speak-volumes",
+                "tier": "unverified",
+                "source_kind": "press",
+                "page": "dépêche en ligne, premiers paragraphes",
+                "notes": "Dépêche de l'agence Associated Press datée de Bujumbura, reprise par le Tehran Times le 18 mars 2008. Lue le 14 octobre 2026. Dans les premiers paragraphes, une mère burundaise nomme son premier fils Nzikobanyanka (« I know they hate us »), puis deux fils suivants Tugiramahoro (« Let's have peace ») et Nduwimana (« I'm in God's hands »), des noms qui disent la lassitude de la guerre ; la dépêche ne dit pas comment Nduwimana se décompose. Le linguiste Philippe Ntahombaye y dit que les noms sont individuels et ont chacun un sens propre ; la dépêche note que quelques familles ont adopté l'usage de transmettre le nom du père, une pratique rare. Elle ne dit rien de l'histoire des familles qui portent ce nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "Décrit en 2008"
+            },
+            "era": "modern",
+            "statement": "Le nom Nduwimana se comprend « Je suis entre les mains de Dieu » (« I'm in God's hands » dans la dépêche), selon l'agence Associated Press (2008). La dépêche le range parmi les noms qui disent la lassitude de la longue guerre du Burundi, et ne dit pas comment il se forme.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "In Burundi, names speak volumes",
+                "author": "Associated Press",
+                "year": 2008,
+                "url": "https://www.tehrantimes.com/news/165386/In-Burundi-names-speak-volumes",
+                "tier": "unverified",
+                "source_kind": "press",
+                "page": "dépêche en ligne, premiers paragraphes",
+                "notes": "Dépêche de l'agence Associated Press datée de Bujumbura, reprise par le Tehran Times le 18 mars 2008. Lue le 14 octobre 2026. Dans les premiers paragraphes, une mère burundaise nomme son premier fils Nzikobanyanka (« I know they hate us »), puis deux fils suivants Tugiramahoro (« Let's have peace ») et Nduwimana (« I'm in God's hands »), des noms qui disent la lassitude de la guerre ; la dépêche ne dit pas comment Nduwimana se décompose. Le linguiste Philippe Ntahombaye y dit que les noms sont individuels et ont chacun un sens propre ; la dépêche note que quelques familles ont adopté l'usage de transmettre le nom du père, une pratique rare. Elle ne dit rien de l'histoire des familles qui portent ce nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "Décrit en 2008"
+            },
+            "era": "modern",
+            "statement": "Le nom Nduwimana est un nom individuel : selon le linguiste Philippe Ntahombaye, cité par la dépêche, les noms burundais sont individuels et ont chacun un sens propre. Quelques familles ont pris l'usage de transmettre le nom du père, une pratique encore rare en 2008.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "In Burundi, names speak volumes",
+                "author": "Associated Press",
+                "year": 2008,
+                "url": "https://www.tehrantimes.com/news/165386/In-Burundi-names-speak-volumes",
+                "tier": "unverified",
+                "source_kind": "press",
+                "page": "dépêche en ligne, début de l'article",
+                "notes": "Dépêche de l'agence Associated Press datée de Bujumbura, reprise par le Tehran Times le 18 mars 2008. Lue le 14 octobre 2026. Dans les premiers paragraphes, une mère burundaise nomme son premier fils Nzikobanyanka (« I know they hate us »), puis deux fils suivants Tugiramahoro (« Let's have peace ») et Nduwimana (« I'm in God's hands »), des noms qui disent la lassitude de la guerre ; la dépêche ne dit pas comment Nduwimana se décompose. Le linguiste Philippe Ntahombaye y dit que les noms sont individuels et ont chacun un sens propre ; la dépêche note que quelques familles ont adopté l'usage de transmettre le nom du père, une pratique rare. Elle ne dit rien de l'histoire des familles qui portent ce nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "Décrit en 2005"
+            },
+            "era": "modern",
+            "statement": "Le nom Nduwimana est porté dans un pays où, selon l'anthropologue Léandre Simbananiye, le système ancien veut que chacun ait un nom différent de celui de son père, tandis que le système de noms de famille hérités a été introduit par la colonisation et le christianisme.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les noms de personnes au Burundi : un support du lien social",
+                "author": "Léandre Simbananiye",
+                "year": 2005,
+                "url": "https://www.anthropologie-societes.ant.ulaval.ca/sites/anthropologie-societes.ant.ulaval.ca/files/articles/fichiers/A&S_29-1_167-181.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 171",
+                "notes": "Anthropologie et Sociétés, 29 (1), 2005, p. 167-181. Lu le 14 octobre 2026. Page 171 : au Burundi, le système traditionnel où chacun porte un nom différent de celui de son père cohabite avec le système patronymique introduit par la colonisation et le christianisme. Pages 173-174 : de nombreux noms burundais disent un rapport à Imana, l'Être suprême (Ndayishimiye, Habimana, Bizimana, Manirakiza). L'article ne cite pas ce nom."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -84,5 +84,66 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web et bibliographique combinant « Masanja », « Sukuma », « personal name », « surname », « meaning », « clan », « transmission », « alliance » et « obituary », ainsi que l'article de Peter G. Shigini et la page Forebears dédiée n'ont pas établi de lignée homonyme d'origine distincte documentable ; la diffusion dans plusieurs pays ne suffit pas à créer un homonyme."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Masanja est un nom de personne sukuma, de Tanzanie, que l'on trouve aussi comme nom de famille. Il veut dire « rassemblement » dans une étude de registres d'élèves. Ce n'est pas établi comme un nom de clan. Les sources lues ne disent pas depuis quand il sert de nom de famille.",
+    "names": [
+      {
+        "nameText": "Masanja",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "suk",
+        "namedBy": null,
+        "shortLine": "Un nom de personne sukuma qui veut dire « rassemblement » et sert aussi de nom de famille, en Tanzanie.",
+        "periodLabel": "Écrit dès 2022 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Décrit en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Masanja est un nom sukuma que donnent Amani Lusekelo et Jonace Manyasa avec le sens « rassemblement » (en anglais « gathering »). Il figure deux fois dans la colonne du nom de famille ou de clan des registres d'élèves de villages nyamwezi et sukuma. Les auteurs ne disent pas s'il s'agit d'un clan au sens strict.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "“Doing Gender” in the First-Names of Persons in Nyamwezi and Sukuma",
+                "author": "Amani Lusekelo et Jonace Manyasa",
+                "year": 2022,
+                "url": "https://www.skase.sk/Volumes/JTL51/03.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 42",
+                "notes": "SKASE Journal of Theoretical Linguistics, vol. 19, n° 2, 2022, p. 35-52. Texte intégral lu en ligne ; la page citée est celle imprimée en bas de page. Les auteurs relèvent les noms d'élèves de villages nyamwezi et sukuma, en trois colonnes : prénom, prénom du père, nom de famille ou de clan. Page 42, tableau 2 (filles) : Masanja, « gathering », figure deux fois dans la colonne du nom de famille. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Masanja apparaît par écrit dans une étude d'Amani Lusekelo et Jonace Manyasa sur les noms d'élèves nyamwezi et sukuma, dans la colonne du nom de famille. C'est la plus ancienne trace de ce nom que le projet connaît ; le nom, lui, est plus ancien que cette étude.",
+            "formAsWritten": "Masanja",
+            "birth": true,
+            "sources": [
+              {
+                "title": "“Doing Gender” in the First-Names of Persons in Nyamwezi and Sukuma",
+                "author": "Amani Lusekelo et Jonace Manyasa",
+                "year": 2022,
+                "url": "https://www.skase.sk/Volumes/JTL51/03.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 42",
+                "notes": "SKASE Journal of Theoretical Linguistics, vol. 19, n° 2, 2022, p. 35-52. Texte intégral lu en ligne ; la page citée est celle imprimée en bas de page. Les auteurs relèvent les noms d'élèves de villages nyamwezi et sukuma, en trois colonnes : prénom, prénom du père, nom de famille ou de clan. Page 42, tableau 2 (filles) : Masanja, « gathering », figure deux fois dans la colonne du nom de famille. Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

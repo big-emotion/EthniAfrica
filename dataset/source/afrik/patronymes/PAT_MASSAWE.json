@@ -76,5 +76,167 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Massawe à un peuple en Tanzanie. Nous n'avons pas encore consulté de source consacrée à ce nom. Les fiches consultées sur les peuples de Tanzanie ne détaillent pas les noms de famille."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Massawe est un nom de clan des Chagga du Kilimandjaro, en Tanzanie. Il s'écrit aussi Masawe. Des auteurs le rapprochent d'un mot chagga qui désigne la grêle. Ils disent aussi qu'on le trouve à Rombo comme à Machame, et que son origine reste à établir.",
+    "names": [
+      {
+        "nameText": "Massawe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan chagga du Kilimandjaro, rapproché du mot chagga pour la grêle ; son origine reste à établir.",
+        "periodLabel": "Écrit dès 2020 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "Décrit en 2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Massawe est le nom de clan le plus fréquent dans les registres d'élèves du district de Rombo qu'étudient Amani Lusekelo et Victor Mtenga : 30 fois sur 379 noms, sous la forme Masawe.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Historicity of personal names in Tanzania: the case of the names in the Rombo-Chagga community in Kilimanjaro",
+                "author": "Amani Lusekelo et Victor Mtenga",
+                "year": 2020,
+                "url": "https://www.researchgate.net/publication/342876767_Historicity_of_personal_names_in_Tanzania_the_case_of_the_names_in_the_Rombo-Chagga_community_in_Kilimanjaro",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 107, 109",
+                "notes": "International Journal of Modern Anthropology, vol. 2, n° 13, 2020, p. 100-121, DOI 10.4314/ijma.v2i13.3. Texte intégral lu dans la copie que diffuse l'Association tunisienne d'anthropologie ; la page citée est celle imprimée en tête de page. Page 107, tableau 4 : Masawe, 30, en tête des treize noms de clan les plus fréquents. Page 109 : le nom revient 30 fois, soit 7,91 % des 379 noms. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "Proposé en 2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Massawe viendrait du mot qui veut dire « grêle » en chagga de Rombo, selon Amani Lusekelo et Victor Mtenga. Ils pensent que la grêle a pu être un phénomène courant sur les pentes du Kilimandjaro.",
+            "hypothesisGroup": "origine du nom Massawe",
+            "sources": [
+              {
+                "title": "Historicity of personal names in Tanzania: the case of the names in the Rombo-Chagga community in Kilimanjaro",
+                "author": "Amani Lusekelo et Victor Mtenga",
+                "year": 2020,
+                "url": "https://www.researchgate.net/publication/342876767_Historicity_of_personal_names_in_Tanzania_the_case_of_the_names_in_the_Rombo-Chagga_community_in_Kilimanjaro",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 109",
+                "notes": "International Journal of Modern Anthropology, vol. 2, n° 13, 2020, p. 100-121, DOI 10.4314/ijma.v2i13.3. Texte intégral lu dans la copie que diffuse l'Association tunisienne d'anthropologie ; la page citée est celle imprimée en tête de page. Page 109 : « Massawe or Masawe, which means hailstorm in Rombo-Chagga language » ; les auteurs citent Lusekelo et Muro (2018) sur la grêle. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "Proposé en 2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Massawe, écrit Masaawe quand il sert de nom de maison à un fils aîné, viendrait de la grêle chez les Machame du district de Hai, selon Amani Lusekelo et Loveluck Muro. Ils supposent qu'un enfant ainsi nommé était né pendant une tempête de grêle.",
+            "hypothesisGroup": "origine du nom Massawe",
+            "sources": [
+              {
+                "title": "Naming practices in contemporary Machame-Chagga culture",
+                "author": "Amani Lusekelo et Loveluck P. Muro",
+                "year": 2018,
+                "url": "https://doi.org/10.4314/ijma.v2i11.3",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 69-70, 73",
+                "notes": "International Journal of Modern Anthropology, vol. 2, n° 11, 2018, p. 64-83, DOI 10.4314/ijma.v2i11.3. Texte intégral lu dans la copie que diffuse l'Association tunisienne d'anthropologie ; la page citée est celle imprimée en tête de page. Étude des noms d'élèves du district de Hai, au Kilimandjaro. Page 69 : le fils aîné reçoit le nom de son grand-père paternel, par exemple Masaawe, « hailstorm » ; ils écrivent que Masaawe est « perhaps » né pendant une tempête de grêle. Page 70, tableau : Masaawe, « hailstorm ». Page 73 : le nom de clan Masawe est associé à la grêle. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "Remarque de 2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Massawe est très fréquent à Rombo, mais il paraît d'origine chez les Machame, selon Amani Lusekelo et Victor Mtenga. Pour eux, la question de son origine reste une information historique à déchiffrer.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Historicity of personal names in Tanzania: the case of the names in the Rombo-Chagga community in Kilimanjaro",
+                "author": "Amani Lusekelo et Victor Mtenga",
+                "year": 2020,
+                "url": "https://www.researchgate.net/publication/342876767_Historicity_of_personal_names_in_Tanzania_the_case_of_the_names_in_the_Rombo-Chagga_community_in_Kilimanjaro",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 109",
+                "notes": "International Journal of Modern Anthropology, vol. 2, n° 13, 2020, p. 100-121, DOI 10.4314/ijma.v2i13.3. Texte intégral lu dans la copie que diffuse l'Association tunisienne d'anthropologie ; la page citée est celle imprimée en tête de page. Page 109 : le nom paraît « indigene in Machame-Chagga » et « the origin of the name remains an important piece of historical information to decipher ». Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Massawe apparaît par écrit dans une étude d'Amani Lusekelo et Victor Mtenga sur les noms des élèves du district de Rombo, comme nom de clan. C'est la plus ancienne trace de cette orthographe que le projet connaît ; la forme Masawe est attestée dès 2018.",
+            "formAsWritten": "Massawe",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Historicity of personal names in Tanzania: the case of the names in the Rombo-Chagga community in Kilimanjaro",
+                "author": "Amani Lusekelo et Victor Mtenga",
+                "year": 2020,
+                "url": "https://www.researchgate.net/publication/342876767_Historicity_of_personal_names_in_Tanzania_the_case_of_the_names_in_the_Rombo-Chagga_community_in_Kilimanjaro",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 106",
+                "notes": "International Journal of Modern Anthropology, vol. 2, n° 13, 2020, p. 100-121, DOI 10.4314/ijma.v2i13.3. Texte intégral lu dans la copie que diffuse l'Association tunisienne d'anthropologie ; la page citée est celle imprimée en tête de page. Page 106, tableau 3 : « Anjela / Sebastiani / Massawe », prénom, nom du père, nom de clan. Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Masawe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre orthographe du nom Massawe, avec un seul s, dans les registres d'élèves du Kilimandjaro.",
+        "periodLabel": "Écrit dès 2018 ; porté aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Masawe apparaît par écrit dans une étude d'Amani Lusekelo et Loveluck Muro sur les noms d'élèves du district de Hai : 28 fois sur 421 noms, il est le quatrième nom de clan le plus fréquent des Machame. C'est la plus ancienne trace de ce nom que le projet connaît ; le clan existait avant cette étude.",
+            "formAsWritten": "Masawe",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Naming practices in contemporary Machame-Chagga culture",
+                "author": "Amani Lusekelo et Loveluck P. Muro",
+                "year": 2018,
+                "url": "https://doi.org/10.4314/ijma.v2i11.3",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 72",
+                "notes": "International Journal of Modern Anthropology, vol. 2, n° 11, 2018, p. 64-83, DOI 10.4314/ijma.v2i11.3. Texte intégral lu dans la copie que diffuse l'Association tunisienne d'anthropologie ; la page citée est celle imprimée en tête de page. Étude des noms d'élèves du district de Hai, au Kilimandjaro. Page 72, tableau 2, « Common clan names in Machame-Chagga » : « Masawe », 28, 6,65 %. Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
