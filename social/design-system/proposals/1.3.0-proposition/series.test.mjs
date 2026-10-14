@@ -24,6 +24,7 @@ const accepted = JSON.parse(
   await readFile(join(design, "version.json"), "utf8")
 );
 
+// @req REQ-186
 test("the band reads the series name, then the episode number", () => {
   assert.equal(bandText("pays", 14), "D'où vient le nom de mon pays ? · n° 14");
   assert.equal(bandText("villes", 3), "Ce que les villes racontent · n° 3");
@@ -31,6 +32,7 @@ test("the band reads the series name, then the episode number", () => {
   assert.throws(() => bandText("pays", 0), /episode/);
 });
 
+// @req REQ-186
 test("the seven series of the 2026-10-13 frame are registered once each", () => {
   assert.deepEqual(
     SERIES.map((s) => s.number),
@@ -39,6 +41,7 @@ test("the seven series of the 2026-10-13 frame are registered once each", () => 
   assert.equal(new Set(SERIES.map((s) => s.campaign)).size, 7);
 });
 
+// @req REQ-186
 test("the series names and band limits are the accepted engine's", async (t) => {
   const browser = await chromium.launch();
   t.after(() => browser.close());
@@ -59,6 +62,7 @@ test("the series names and band limits are the accepted engine's", async (t) => 
   assert.equal(engine.panel, PANEL_MAX_WITH_BAND);
 });
 
+// @req REQ-186
 test("the closing sentence is the one every caption ends with", () => {
   assert.equal(
     closingLine("Burkina Faso"),
@@ -66,6 +70,7 @@ test("the closing sentence is the one every caption ends with", () => {
   );
 });
 
+// @req REQ-186
 test("each series has one carousel model of six to eight cards", async () => {
   for (const { series, data } of await loadModels()) {
     const cards = data.cards;
@@ -96,6 +101,7 @@ test("each series has one carousel model of six to eight cards", async () => {
   }
 });
 
+// @req REQ-186
 test("each model is a valid proof sequence and never a final one", async () => {
   for (const { data } of await loadModels()) {
     assert.doesNotThrow(() => validateInput(data, "proof", accepted.version));
@@ -106,6 +112,7 @@ test("each model is a valid proof sequence and never a final one", async () => {
   }
 });
 
+// @req REQ-186
 test("the band holds on one line for every series at episode 100", async (t) => {
   const models = await loadModels();
   const cards = models.map(({ data }) => ({
@@ -139,6 +146,7 @@ test("the band holds on one line for every series at episode 100", async (t) => 
   }
 });
 
+// @req REQ-186
 test("the video script voices every series 1 card once, in 35 to 45 seconds, and ends on the search sentence", async () => {
   const video = JSON.parse(
     await readFile(new URL("./video.model.json", import.meta.url), "utf8")
