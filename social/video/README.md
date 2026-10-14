@@ -129,6 +129,33 @@ The chunks are the sequence's, in the same order; `units` is optional and, when 
 - **Formats.** Requests ask for MP3 at 44.1 kHz, which every plan returns; FFmpeg decodes each to 48 kHz mono PCM and the script writes a WAV. `eleven_multilingual_v2` refuses the `language_code` parameter (only the Turbo and Flash v2.5 models take it), so the French comes from the text.
 - **Key.** `ELEVENLABS_API_KEY`, or the `elevenlabs` MCP server entry of the user-level Claude Code config, as the reel-clip skill's `transcribe.mjs` reads it. Every request is billed; the tests run the pure steps on `fixtures/voice/` and never call the API.
 
+## Vidéo de série (Cartes 1.3.0, mise en page B)
+
+**Withdrawn by the operator on 14 October 2026.** The image must fill the whole frame, with no dark band and no placement fitted to the networks' safe zone: only text over the image. The full-screen layout is commissioned from Claude Design as 1.4.0-proposition ([brief](../design-system/proposals/1.4.0-proposition/claude-design-brief.md)). The schedule, voice, chunks, cross-fades, `pageOnline` and encoding below stay; the layout B geometry and its safe-zone checks will be replaced once 1.4.0 is accepted.
+
+The series video of **EthniAfrica Cartes 1.3.0-proposition** (accepted on 14 October 2026 with layout B, decision 4) is the same cards as the carousel, on the operator's voice: 1080 × 1920, 30 fps, 35 to 45 s. Its geometry is `social/design-system/series.md`, « Vidéo de série »; `handoff/video-board.html` is the visual reference, not the engine. Layout A is not implemented. It needs no imagery: the cards' images are in `social/design-system/assets/`.
+
+```sh
+npm run test:social-video                      # includes series.test.mjs and series.render.test.mjs
+node social/video/fixtures/series-pays.mjs --out DIR
+node social/video/series-render.mjs --sequence DIR/series.sequence.json --out OUT [--frames 0,413] [--diagnose]
+```
+
+A sequence names the cards JSON, one beat per card in order (`{ "card": id, "chunks": [{ "text" }] }`), the `ending` (`{ "search": name, "pageOnline": true }`), the demo tape when the cards carry one, and the voice (`{ "audio", "words" }`, the same words JSON as above; `voice.mjs` makes it from the chunks in video order). `series.mjs` loads and schedules it (`loadSeriesVideo`, `seriesFrameState`, `checkSeriesLayout`), `series-page.mjs` draws a frame, `series-render.mjs` renders frames and encodes with the satellite video's FFmpeg step (`encodeFrames`) in the pinned Chromium. Every value comes from the frame number.
+
+- **Cards through the design system.** The page calls `EthniCards.render(spec, { context: 'video' })` for each card and takes its band, kicker, title or date and name employed, source, credit, signature, closing slogan, sentence and pill from it, so wording, French spacing, inks and fonts are the carousel's, and « Faites défiler » never appears. Only the layout B sizes (title Anton 76/80, opener 100/98, date 124/118, name 64/70, ending) are set by the page, copied from the board.
+- **Schedule.** The 0.4.0 voice rules: a chunk appears 150 ms before its first word and is cut when the next appears; the first fades in, the last holds 200 ms after its last word and fades out; never faster than 17 characters a second. A card is fully in when its first chunk appears; one 300 ms cross-fade brings it in, the new card over the old, nothing slides. The band is drawn once and never moves; the photograph zooms linearly from 100 to 104 % around its focal point while its card is on screen. Frame 0 is the opener, its band and no subtitle. The closing card holds 2.5 s, or until the voice ends plus 0.5 s.
+- **Ending « série ».** The closing card's last two chunks must be « Cherchez [nom] sur EthniAfrica, » and « lien en profil. »; the name's spaces are set unbreakable so it stays on one subtitle line, as on the board. Without `pageOnline: true` the sequence is refused: the ending promises a page.
+- **Refusals before rendering.** An opener first and a closing card last; one series, episode and theme; every card voiced once; a demo card needs the demo tape and a final video refuses « image à trouver »; a subtitle line estimated over 840 px; a length outside 35 to 45 s.
+- **Checked on the drawn page.** On the cover, the last frame and every frame where a chunk is fully drawn, the browser's text boxes (the ink's width, the line boxes' height): x 120 to 960 above y 840 and x 120 to 760 below it, between y 270 and 1248; the head between y 902 and 1248; subtitle lines at most 840 px wide. Sources, credits, the signature and the demo tape are exempt. A frame that fails is refused and the export leaves no video behind. `--diagnose` records the problems in the result and the manifest (`diagnostic: true`, `layoutProblems`) instead, for a proof that shows a defect.
+
+Limits:
+
+- **Open design defect.** On `serie-pays-04` the date « 1er mars 1919 » wraps on two lines of Anton 124/118 in the 640 px head, which then starts at y 858, inside the photograph; the design's own board draws it so. The engine refuses it, so the series 1 demo can only be encoded with `--diagnose` until the operator rules (a smaller size for long dates, or a shorter date display). `series.render.test.mjs` records it as the one expected refusal.
+- **Map cards** show the card's map with its own `view`, top-aligned as on the card; the atlas keys, callouts and insets that the card draws in HTML are not carried over. On `serie-nom-famille-02` the highlighted country sits at the bottom of the window, under the subtitles.
+- **Dated cards with two branches** show the date only; the names are spoken.
+- **Demo voice.** `fixtures/series-pays.mjs` times the design's demonstration script (`video.model.json`) on generated silence, the words spread over each chunk's scripted duration. It is not a voice and its text is not validated content.
+
 ## Area files
 
 A chapter area is `{ "kind": "area", "id", "file", "ink", "labelAt"?, "label"? }`. Its file is GeoJSON, either a Feature with a Polygon or MultiPolygon, or a FeatureCollection of them with the properties at its top level. The properties record where the shape comes from, as the Mega-Chad contour does:
