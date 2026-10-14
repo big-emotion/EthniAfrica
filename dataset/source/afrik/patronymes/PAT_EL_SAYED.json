@@ -113,5 +113,79 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les recherches « El Sayed lignée », « El Sayed clan », « El Sayed tribe » et « El Sayed place name » n’ont pas permis de déterminer si cette graphie désigne une lignée, un clan, une caste, une classe d’âge ou un établissement dans le contexte précis de la fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom El Sayed est le mot arabe sayyid, « maître », précédé de l'article el. C'est un titre de respect donné aux descendants du prophète Muhammad, devenu un nom personnel puis un nom de famille. On l'écrit aussi Al-Sayed. Le titre El Sayed précède des prénoms dans la traduction française d'une chronique du Caire dès 1709. Nous présentons plus bas l'explication de son origine que nous connaissons.",
+    "names": [
+      {
+        "nameText": "El Sayed",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le titre arabe « maître », donné aux descendants du Prophète.",
+        "periodLabel": "Écrit El Sayed dès 1709 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom El Sayed viendrait de l'arabe sayyid, « maître », selon le Dictionary of American Family Names, qui le range comme variante de Sayed avec l'article el, « le ». La notice de Said, vers laquelle il renvoie, en fait un titre de respect donné aux descendants du prophète Muhammad par sa fille Fāṭima, devenu un nom personnel.",
+            "hypothesisGroup": "origine du nom El Sayed",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Elsayed",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/elsayed?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 14 octobre 2026 ; le site affichait une traduction française de la notice. La notice dit : musulman (aussi El-Sayed) : variante de Sayed, « maître », avec l'ajout de el, « le » ; la notice renvoie à Said."
+              },
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Said",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/said?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 14 octobre 2026 ; le site affichait une traduction française de la notice. La notice dit : musulman : d'un nom personnel tiré de l'arabe sayyid, « maître », titre de respect donné aux descendants du prophète Muhammad par sa fille Fāṭima. La notice a une seconde entrée, d'Afrique du Nord et de Syrie, tirée de l'adjectif saʿīd, « heureux », que nous ne retenons pas ici car la notice d'Elsayed renvoie à la première."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1709,
+              "to": 1709,
+              "label": "Mort en 1121 de l'hégire (1709)"
+            },
+            "statement": "Le nom El Sayed apparaît par écrit dans la traduction française des chroniques d'al-Jabarti, comme titre placé devant un prénom : « El Sayed Hassan effendi, chef des nobles » meurt un vendredi 19 radjab 1121 de l'hégire (1709). Son père, son oncle et son grand-père avaient eu avant lui cette dignité. C'est la plus ancienne trace de ce nom que le projet connaît ; elle montre un titre, pas un nom de famille.",
+            "formAsWritten": "El Sayed",
+            "birth": true,
+            "actors": [
+              {
+                "name": "El Sayed Hassan effendi",
+                "role": "chef des nobles"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Merveilles biographiques et historiques, ou Chroniques du cheikh Abd-el-Rahman el Djabarti, tome I",
+                "author": "Abd al-Rahman al-Jabarti, traduit par Chefik Mansour bey, Abdulaziz Kalil bey, Gabriel Nicolas Kalil bey et Iskender Ammoun effendi",
+                "year": 1888,
+                "url": "https://archive.org/details/merveillesbiogra01jaba",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 178",
+                "notes": "Le Caire, Imprimerie nationale, 1888. Lu le 14 octobre 2026 sur la copie numérisée d'archive.org, aux pages indiquées. Page 178 : « Le vendredi 19 Radjab 1121, est mort El Sayed Hassan effendi, chef des nobles. Son père, son oncle et son grand-père avaient, avant lui, été revêtus de cette dignité. » Le texte ne dit pas le lieu."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

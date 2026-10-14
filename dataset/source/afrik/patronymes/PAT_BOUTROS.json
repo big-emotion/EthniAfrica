@@ -6,7 +6,7 @@
   },
   "id": "PAT_BOUTROS",
   "nameMain": "Boutros",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Boutros",
@@ -28,7 +28,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -58,6 +58,10 @@
   ],
   "gaps": [
     {
+      "fieldPath": "nameSystem",
+      "reason": "Le Dictionary of American Family Names fait de Boutros un nom personnel ; aucune source consultée n'en fait un nom de clan. Le modèle n'a pas de case pour un nom personnel devenu nom de famille : la fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
+    },
+    {
       "fieldPath": "origin",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
@@ -85,5 +89,113 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Boutros à un peuple en Égypte. Nous n'avons pas encore consulté de source consacrée à ce nom. Un lien avec les Coptes d'Égypte reste à étudier."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Boutros est un nom personnel arabe, porté surtout en Égypte, au Liban et en Syrie, le plus souvent par des chrétiens, que l'on écrit aussi Botros. Une forme proche, Botros, apparaît par écrit en 1819 dans une lettre du Caire publiée en italien. Nous présentons plus bas l'explication de son origine que nous connaissons.",
+    "names": [
+      {
+        "nameText": "Boutros",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel arabe, venu du grec Petros, surtout chrétien.",
+        "periodLabel": "Écrit Botros dès 1819 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1985,
+              "to": 2022,
+              "label": "Proposée en 1985, reprise en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Boutros viendrait du nom grec Petros, que le français écrit Pierre, selon le Dictionary of American Family Names, qui en fait un nom personnel arabe, Butros, que l'on trouve chez les chrétiens. L'encyclopédie des noms arabes de l'université Sultan Qaboos le dit aussi venu du grec et lui donne le sens de « rocher ».",
+            "hypothesisGroup": "origine du nom Boutros",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Boutros",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/boutros?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 14 octobre 2026 ; le site affichait une traduction française de la notice. La notice dit : arabe, d'Égypte, du Liban et de Syrie : du nom personnel arabe Butros, venu du grec Petros (voir Peter), que l'on trouve chez les chrétiens."
+              },
+              {
+                "title": "Sultan Qaboos Encyclopedia of Arab Names — بُطْرُس",
+                "author": "Université Sultan Qaboos",
+                "year": 1985,
+                "url": "https://arabiclexicon.hawramani.com/?p=115276",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrée « بُطْرُس »",
+                "notes": "Encyclopédie des noms arabes de l'université Sultan Qaboos (1985), lue le 14 octobre 2026 sur sa reproduction en ligne du Hawramani Arabic Lexicon, qui n'indique pas les pages du livre. L'entrée dit : « d'origine grecque, au sens de rocher » (« عن اليونانية بمعنى الصخر »)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1819,
+              "to": 1819,
+              "label": "Lettre du 13 avril 1819"
+            },
+            "era": "polity",
+            "statement": "Le nom Boutros apparaît par écrit sous une forme proche, Botros, dans une lettre du Caire du 13 avril 1819, publiée en italien en 1820 : un missionnaire y dit avoir trouvé à Kennee, en Haute-Égypte, « un Copte très intelligent, Mallem Botros ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "formAsWritten": "Botros",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Mallem Botros",
+                "role": "Copte de Kennee rencontré par un missionnaire"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Secondo rapporto della Società Biblica di Malta, dal 1mo d'ottobre 1818 fin al 31 dicembre 1819",
+                "author": "Società Biblica di Malta",
+                "year": 1820,
+                "url": "https://archive.org/details/bub_gb_HR5RhQ6j0hEC",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 49",
+                "notes": "Londres, Société de la Bible, imprimé chez J. J. Hughes, 1820 ; texte en italien, lu le 14 octobre 2026 sur la copie numérisée d'archive.org. Page 49, dans la lettre du Caire du 13 avril 1819 d'un missionnaire que le volume appelle « Rev. Signor Jewett » : à Kennee, il trouve « un Coptico molto intelligente, Mallem Botros », qui reconnaît sa Bible arabe. Mallem est un titre placé devant le nom."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Botros",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Employé aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Botros est une variante de Boutros, surtout égyptienne, selon le Dictionary of American Family Names.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Botros",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/botros?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 14 octobre 2026 ; le site affichait une traduction française de la notice. La notice dit : arabe, surtout d'Égypte : variante de Boutros."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
