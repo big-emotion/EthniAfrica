@@ -11,7 +11,10 @@
     {
       "spelling": "Kofi",
       "attestations": [
-        { "countryId": "GHA", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "GHA",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -71,5 +74,65 @@
       "fieldPath": "homonyms",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kofi est un nom de personne akan du Ghana : celui du garçon né un vendredi. Chaque enfant akan reçoit d'ordinaire un nom qui dit son jour de naissance, et Kofi est celui du vendredi. Les sources lues n'en donnent pas d'autre explication.",
+    "names": [
+      {
+        "nameText": "Kofi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom akan du garçon né un vendredi ; une forme proche est écrite dès 1819.",
+        "periodLabel": "Forme proche écrite dès 1819",
+        "accounts": [
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Décrit en 1881"
+            },
+            "statement": "Le nom Kofi est celui d'un garçon ou d'un homme akan né un vendredi, selon Johann Gottlieb Christaller. Il le range avec les six autres noms de jour : chaque garçon reçoit d'ordinaire le nom du jour de sa naissance, et Kofi est celui du vendredi.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 236 ; p. 663",
+                "notes": "Bâle, Evangelical Missionary Society, 1881 ; exemplaire numérisé sur archive.org. Page 236, entrée « Kofi » : nom propre d'un garçon ou d'un homme né un vendredi. Page 663 (annexe D) : chaque garçon reçoit un nom du jour de sa naissance, parmi sept noms dont Kofi. Missionnaire de Bâle, cité pour les formes qu'il écrit. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1819,
+              "to": 1819,
+              "label": "Mission de 1817, récit publié en 1819"
+            },
+            "era": "polity",
+            "statement": "Le nom Kofi apparaît par écrit sous une forme proche, Quophi, chez Thomas Edward Bowdich. Quatchie Quophi y figure parmi les quatre capitaines qui forment le conseil du roi d'Asante, à Kumasi. C'est la plus ancienne trace de ce nom que le projet connaît ; le nom est plus ancien qu'elle.",
+            "formAsWritten": "Quophi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Mission from Cape Coast Castle to Ashantee",
+                "author": "Thomas Edward Bowdich",
+                "year": 1819,
+                "url": "https://archive.org/details/missionfromcapec00bowd",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 105",
+                "notes": "Londres, John Murray, 1819 ; exemplaire numérisé sur archive.org. Page 105 : le roi est suivi de « Amanquate'a, Quatchie Quophi, Apokoo, and Odumata », les quatre capitaines qui composent le conseil du roi. Voyageur britannique, cité pour les formes qu'il écrit. Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
