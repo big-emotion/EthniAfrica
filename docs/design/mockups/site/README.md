@@ -1,8 +1,8 @@
 # Site mockups — the reference for every visible change
 
-Forty-nine boards that record the site as it shipped in release v5.2.0
-(production, captured on 2026-10-14): a design-system board, then sixteen pages
-at 430, 768 and 1440 px. They are the reference every change a reader can see
+Fifty-eight boards: a design-system board, sixteen pages at 430, 768 and
+1440 px recorded from release v5.2.0 (production, captured on 2026-10-14), and
+the approved changes listed under "Changes since the record". They are the reference every change a reader can see
 answers to, whoever makes it: the team, an agency, a contractor or an agent.
 
 Source canvas (public, read-only for anyone with the link):
@@ -38,6 +38,9 @@ two is wrong, and the fix is decided, not improvised.
 |                   | Résultat « bassa » (several subjects)        | `search-bassa`       |
 |                   | Résultat « congo » (two countries)           | `search-congo`       |
 |                   | Résultat d'un nom inconnu                    | `search-unknown`     |
+|                   | État mince (« wolof »)                       | `search-state-thin`  |
+|                   | État : origines concurrentes (« yamoussoukro ») | `search-state-competing` |
+|                   | État : origine non datée (exemple à remplacer) | `search-state-nodate` |
 | 2 · Peoples       | `PPL_FULA`                                   | `people-fula`        |
 |                   | `PPL_BASSA`                                  | `people-bassa`       |
 |                   | `PPL_ALABA`                                  | `people-thin-alaba`  |
@@ -54,6 +57,15 @@ two is wrong, and the fix is decided, not improvised.
 The three files of a page hold the same markup; the width alone changes the
 layout, through the same media and container queries the site uses. Long pages
 are recorded whole, folded as the site folds them.
+
+## Changes since the record
+
+| Date       | Brief                                                                 | Boards                                                                 |
+| ---------- | --------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| 2026-10-14 | [Brief 1, the search result page](../briefs/01-result-page-timeline.md) | `search-peul`, `search-bassa`, `search-congo`, `search-unknown`, the three `search-state-*`, `Main` |
+
+The boards of a changed page no longer record v5.2.0: they are the approved
+target, and the code is behind them until the implementation lands.
 
 ## How a board is built
 
