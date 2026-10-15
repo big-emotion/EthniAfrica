@@ -14,6 +14,13 @@ import { ProvenanceBanner } from "@/components/source-transparency/ProvenanceBan
 import type { Language } from "@/types/shared";
 import type { ProvenanceCensus } from "@/api/v2/schemas/confidence";
 import { languageFicheCopy } from "@/lib/i18n/copy/languageFiche";
+import { FicheNameReadings } from "@/components/fiche/FicheNameReadings";
+import {
+  NameClosingBand,
+  NameFicheSourcesBlock,
+} from "@/components/search/timeline/NameClosing";
+import { ficheSilences } from "@/lib/fiche/ficheNameClosing";
+import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
 
 export interface LanguageDetailViewV2Props {
   data: LanguagePageData;
@@ -84,10 +91,45 @@ export function LanguageDetailViewV2({
   });
   const storyShowsNames = naming.presentation.forms.length > 0;
   const dialects = data.dialects ?? [];
+  // Brief 3 (approved 2026-10-15): with a name history the fiche closes on
+  // what it does not know, so an empty vitality or dialects chapter becomes
+  // one line of that band instead of a block saying it is empty.
+  const history =
+    data.nameHistory && data.nameHistory.names.length > 0
+      ? data.nameHistory
+      : null;
+  const spoken = history ? history.names[0].nameText.toLowerCase() : "";
+  const silences = history
+    ? [
+        ...ficheSilences(history, "language", language),
+        ...(data.gaps ?? []),
+        ...(data.vitalityStatus ? [] : [copy.vitalitySilence(spoken)]),
+        ...(dialects.length > 0 ? [] : [copy.dialectsSilence(spoken)]),
+      ]
+    : [];
+  // A people named after the language (« Lingala (locuteurs) ») is not a
+  // people in the strict sense; the fiche says so where it lists them.
+  const sharedName = data.speakingPeoples.find(
+    (people) =>
+      people.name !== data.name && people.name.startsWith(`${data.name} (`)
+  );
+  const vitality = data.vitalityStatus;
 
   return (
     <div className="afh-parchment" id="fiche">
-      <FicheNameStory chapter naming={naming} language={language} />
+      <FicheNameStory chapter naming={naming} language={language}>
+        {history ? (
+          <FicheNameReadings history={history} language={language} />
+        ) : null}
+      </FicheNameStory>
+
+      {history ? (
+        <NameFicheSourcesBlock
+          history={history}
+          subjectType="language"
+          language={language}
+        />
+      ) : null}
 
       <FicheSection title={copy.identifiers}>
         {/* Inside the first chapter, on the people record's precedent: the
@@ -156,38 +198,69 @@ export function LanguageDetailViewV2({
         ) : (
           <FieldProvenanceMarker state="missing" language={language} />
         )}
+        {sharedName ? (
+          <p
+            data-shared-name=""
+            className="mt-afh-lg border-l-2 border-afh-border pl-afh-lg text-afh-small leading-[1.6] text-afh-text-soft"
+          >
+            {copy.sharedName(sharedName.name, data.name.toLowerCase())}
+          </p>
+        ) : null}
       </FicheSection>
 
-      <FicheSection title={copy.dialects}>
-        {dialects.length > 0 ? (
-          <ul className="afh-rank">
-            {dialects.map((dialect) => (
-              <li key={dialect}>{dialect}</li>
-            ))}
-          </ul>
-        ) : (
-          <FieldProvenanceMarker state="missing" language={language} />
-        )}
-      </FicheSection>
+      {dialects.length > 0 || !history ? (
+        <FicheSection title={copy.dialects}>
+          {dialects.length > 0 ? (
+            <ul className="afh-rank">
+              {dialects.map((dialect) => (
+                <li key={dialect}>{dialect}</li>
+              ))}
+            </ul>
+          ) : (
+            <FieldProvenanceMarker state="missing" language={language} />
+          )}
+        </FicheSection>
+      ) : null}
 
       <FicheSection title={copy.vehicularRole}>
         {data.vehicularRole ? (
-          <p>{data.vehicularRole}</p>
-        ) : (
-          <FieldProvenanceMarker state="missing" language={language} />
-        )}
-      </FicheSection>
-
-      <FicheSection title={copy.vitality}>
-        {data.vitalityStatus ? (
           <p>
-            {data.vitalityStatus.status} ({data.vitalityStatus.scale},{" "}
-            {data.vitalityStatus.asOf})
+            {copy.vehicularRoleLabel[data.vehicularRole] ?? data.vehicularRole}
           </p>
         ) : (
           <FieldProvenanceMarker state="missing" language={language} />
         )}
       </FicheSection>
+
+      {vitality || !history ? (
+        <FicheSection title={copy.vitality}>
+          {vitality ? (
+            <p>
+              {copy.vitalityLine(
+                copy.vitalityLabel[vitality.status] ?? vitality.status,
+                vitality.scale,
+                vitality.asOf
+              )}
+            </p>
+          ) : (
+            <FieldProvenanceMarker state="missing" language={language} />
+          )}
+        </FicheSection>
+      ) : null}
+
+      {history ? (
+        <NameClosingBand
+          silences={silences}
+          contributionTarget={{
+            type: "language",
+            id: data.id,
+            name: data.name,
+            fieldPath: "naming",
+            fieldLabel: nameAnswerCopy[language].appellations,
+          }}
+          language={language}
+        />
+      ) : null}
 
       {/* Before the bibliography, not after it: the reader this block exists
           for is the one who finished the reading, and almost none of them

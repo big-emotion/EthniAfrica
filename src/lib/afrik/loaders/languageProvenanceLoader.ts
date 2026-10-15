@@ -80,6 +80,7 @@ export function persistedContent(
     ...(language.vitalityStatus === undefined
       ? {}
       : { vitalityStatus: language.vitalityStatus }),
+    ...(language.gaps === undefined ? {} : { gaps: language.gaps }),
   };
 }
 

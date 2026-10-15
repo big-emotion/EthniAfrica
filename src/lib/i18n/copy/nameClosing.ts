@@ -67,7 +67,12 @@ export interface NameClosingCopy {
     undated: (names: readonly string[]) => string;
     firstWritten: (name: string, year: number) => string;
     beforeCentury: (name: string, label: string) => string;
-    nextRelation: { family: string; patronyme: string; country: string };
+    nextRelation: {
+      family: string;
+      patronyme: string;
+      country: string;
+      people: string;
+    };
     carrier: (carrier: string, place?: string) => string;
     reportedBy: (author: string, year: number | null, title: string) => string;
   };
@@ -171,6 +176,7 @@ export const nameClosingCopy: Record<Language, NameClosingCopy> = {
         family: "Famille de langues",
         patronyme: "Nom de famille",
         country: "Pays",
+        people: "Peuple",
       },
       carrier: (carrier, place) =>
         `récit porté par ${carrier}${place ? `, ${place}` : ""}`,

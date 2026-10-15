@@ -40,6 +40,7 @@ interface LanguageFiche {
       asOf: number;
     } | null;
     sources?: LanguageSource[];
+    gaps?: Array<{ field: string; reason: string }>;
   };
 }
 
@@ -70,6 +71,7 @@ function toLanguageRecord(fiche: LanguageFiche): LanguageRecord {
     dialects: fiche.content?.dialects ?? [],
     vitalityStatus: fiche.content?.vitalityStatus,
     sources: fiche.content?.sources ?? [],
+    ...(fiche.content?.gaps?.length ? { gaps: fiche.content.gaps } : {}),
     ...(nameHistory ? { nameHistory } : {}),
   };
 }
