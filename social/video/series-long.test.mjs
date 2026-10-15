@@ -52,6 +52,32 @@ test("1.7.0: a long video carries its chapters, each opened by a chapter card", 
 });
 
 // @req REQ-186
+test("1.7.0: a chapter card given its own image carries that image's credit", () => {
+  const image = {
+    src: "Series/tifinagh-algeria.jpg",
+    w: 900,
+    h: 529,
+    focus: [0.5, 0.5],
+    anchor: [0.5, 0.5],
+    zoom: 1,
+  };
+  const credit =
+    "Photo : Patrick Gruban, inscriptions en tifinagh (Algérie), 2006, Wikimedia Commons, CC BY-SA 2.0";
+  const seq = long({
+    edit: (input) => {
+      const beat = input.beats.find(
+        (b) => b.type === "chapter" && b.chapter === 2
+      );
+      beat.image = image;
+      beat.credit = credit;
+    },
+  });
+  const chapter = seq.cards[indexOf(seq, "chapitre-2")];
+  assert.deepEqual(chapter.image, image);
+  assert.equal(chapter.credit, credit);
+});
+
+// @req REQ-186
 test("1.7.0: a video over 90 s without chapters, or with a chapter under 15 s, is refused", () => {
   assert.throws(
     () =>
