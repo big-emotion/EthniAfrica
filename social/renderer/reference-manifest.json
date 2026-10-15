@@ -825,5 +825,9 @@
   "integration-1.7.0": {
     "date": "2026-10-15",
     "decision": "Operator accepted EthniAfrica Cartes 1.7.0-proposition (the long series video with chapters). It changes no card: the 89 sample cards render byte-identical with the 1.6.0 and 1.7.0 design (bundle version string only), alternative texts included, checked by rendering both in diagnostic mode on one browser. The 89 reference hashes are therefore unchanged; only designVersion moves. No tolerance change; the long video is integrated in social/video."
+  },
+  "integration-1.8.0": {
+    "date": "2026-10-16",
+    "decision": "Operator accepted EthniAfrica Cartes 1.8.0-proposition (the document card and the teaching cards of the series video). It changes no card: the 89 sample cards render byte-identical with the 1.7.0 and 1.8.0 design (bundle version string only), alternative texts included, checked by rendering both in diagnostic mode on one browser, and pass 89 of 89 against the 1.6.0 accepted references. The 89 reference hashes are therefore unchanged; only designVersion moves. No tolerance change; the document and teaching cards are integrated in social/video."
   }
 }
