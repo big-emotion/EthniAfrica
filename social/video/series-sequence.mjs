@@ -71,7 +71,7 @@ const sameWord = (unit, word) => {
     bare === word || bare.replace(/^\p{L}{1,3}['’](?=\p{L})/u, "") === word
   );
 };
-function wordOf(seq, card, word) {
+export function wordOf(seq, card, word) {
   let k = 0;
   for (const chunk of seq.chunks) {
     if (chunk.card !== card) continue;

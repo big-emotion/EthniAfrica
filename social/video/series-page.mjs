@@ -74,6 +74,27 @@ html,body{margin:0;background:#000}
 .vf-sigline span{display:block;white-space:nowrap}
 .vf-sent{font:700 32px/40px var(--font-text);--sw:4px;margin-top:28px;max-width:900px;text-wrap:balance}
 .vf-sent p{margin:0}
+/* 1.7.0: the long series video (series.md, « Vidéo longue et chapitres »). */
+.vf-chapnum{display:flex;align-items:baseline;gap:18px}
+.vf-chapnum b{font:400 176px/140px var(--font-display);color:var(--oi-accent);--sw:14px}
+.vf-chapnum span{font:800 30px/36px var(--font-text);color:var(--oi-muted);--sw:4px;letter-spacing:.02em}
+.vf-title--chap{font-size:116px;line-height:112px;--sw:13px;max-width:900px}
+.vf-list{width:960px;display:flex;flex-direction:column;margin-top:30px}
+.vf-row+.vf-row{margin-top:22px}
+.vf-rlab{font:800 26px/32px var(--font-text);letter-spacing:.02em;color:var(--oi-accent);--sw:4px}
+.vf-txt{font:800 40px/48px var(--font-text);color:var(--oi-text);--sw:6px;text-wrap:balance}
+.vf-by{font:700 26px/32px var(--font-text);color:var(--oi-muted);--sw:4px}
+.vf-figs{width:960px;display:grid;grid-template-columns:1fr 1fr;gap:34px 40px;margin-top:34px}
+.vf-val{font:400 112px/104px var(--font-display);color:var(--oi-ink);--sw:12px;white-space:nowrap}
+.vf-val small{font:400 52px/52px var(--font-display);--sw:7px;margin-left:10px}
+.vf-val i{font:800 30px/36px var(--font-text);font-style:normal;color:var(--oi-muted);--sw:4px;display:block;margin-bottom:4px}
+.vf-flab{font:700 30px/38px var(--font-text);color:var(--oi-ink);--sw:4px;margin-top:8px;text-wrap:balance}
+.vf-attr{position:absolute;left:60px;width:900px;bottom:624px;display:flex;flex-direction:column}
+.vf-nm{font:800 34px/40px var(--font-text);color:var(--oi-text);--sw:5px}
+.vf-rl{font:700 26px/32px var(--font-text);color:var(--oi-muted);--sw:4px}
+.vf-next{margin-top:30px;font:700 32px/40px var(--font-text);--sw:4px;color:var(--oi-ink);white-space:nowrap}
+.vf-next em{color:var(--oi-accent);font-weight:800}
+.vf-nowrap{white-space:nowrap}
 .vf-pill{margin-top:30px;display:inline-block;font:800 34px/40px var(--font-text);letter-spacing:.04em;text-transform:uppercase;color:var(--oi-accent);--sw:4px;border:3px solid var(--oi-accent);border-radius:999px;padding:14px 40px;box-shadow:0 0 0 2px var(--oi-stroke),inset 0 0 0 2px var(--oi-stroke)}
 .vf-foot{position:absolute;left:60px;width:960px;bottom:134px;display:flex;flex-direction:column;gap:4px}
 .vf-key{display:flex;align-items:center;gap:14px;font:800 26px/32px var(--font-text);--sw:4px;margin-bottom:10px}
@@ -123,7 +144,59 @@ function signature() {
 // One layer per card, built once from the design system's own render of the
 // card for a video: its band, head, sources and signature words.
 function buildLayer(spec, view) {
-  const card = EthniCards.render(spec, { context: "video", resolve: resolveAsset, demo: false });
+  const parts = buildParts(spec, view);
+  noBreak(parts.layer);
+  return parts;
+}
+
+// 1.7.0: no text breaks inside a hyphenated word (« finit-il », « dit-on »),
+// as 1.6.0 rules for « nous-mêmes ».
+function noBreak(root) {
+  root.querySelectorAll(".vf-title, .vf-kick, .vf-txt, .vf-rlab, .vf-by, .vf-flab, .vf-nm, .vf-rl, .vf-sent, .vf-next").forEach((box) => {
+    const walk = document.createTreeWalker(box, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    while (walk.nextNode()) nodes.push(walk.currentNode);
+    for (const t of nodes) {
+      if (!/\\S-\\S/.test(t.nodeValue)) continue;
+      const f = document.createDocumentFragment();
+      t.nodeValue.split(/(\\S+-\\S+)/).forEach((part, i) => {
+        if (i % 2) f.append(el("span", "vf-nowrap", esc(part)));
+        else if (part) f.append(document.createTextNode(part));
+      });
+      t.replaceWith(f);
+    }
+  });
+}
+
+// 1.7.0: a chapter card or the next episode's own card: the head only, over
+// the image of the card after it, and its credit in the foot.
+function silentParts(parts) {
+  const { spec, layer } = parts;
+  const head = el("div", "vf-head");
+  if (spec.type === "chapter") {
+    head.append(el("div", "vf-chapnum", '<b class="oi oi-l">' + spec.chapter.n + '</b><span class="oi">sur ' + spec.chapter.of + "</span>"));
+    const title = el("h2", "vf-title vf-title--chap oi oi-l", esc(fr(spec.chapter.title)));
+    title.dataset.kind = "chapter-title";
+    head.append(title);
+  } else {
+    head.append(el("div", "vf-kick oi", "Prochain épisode"));
+    head.append(el("h2", "vf-title oi oi-l", esc(fr(spec.title))));
+  }
+  layer.append(head);
+  const foot = el("div", "vf-foot");
+  if (spec.credit) {
+    const credit = el("div", "vf-cred oi", fr(spec.credit));
+    credit.dataset.kind = "credit";
+    foot.append(credit);
+  }
+  layer.append(foot);
+  parts.text.push(head, foot);
+  return parts;
+}
+
+function buildParts(spec, view) {
+  const silent = spec.type === "chapter" || spec.type === "next";
+  const card = silent ? null : EthniCards.render(spec, { context: "video", resolve: resolveAsset, demo: false });
   const pick = (sel) => card.querySelector(sel);
   const layer = el("div", "vf-layer");
   const pic = el("div", "vf-pic");
@@ -157,6 +230,7 @@ function buildLayer(spec, view) {
     parts.photo = img;
     parts.focus = spec.image.focus || [0.5, 0.5];
   }
+  if (silent) return silentParts(parts);
   if (parts.closing) {
     const close = el("div", "vf-close");
     // 1.6.0: the signature line where the slogan was, from the cards' own
@@ -168,6 +242,8 @@ function buildLayer(spec, view) {
     if (pick(".ec-body")) close.append(el("div", "vf-sent oi", pick(".ec-body").innerHTML));
     const pill = pick(".ec-cta-pill");
     close.append(el("div", "vf-pill oi", esc((pill ? pill.textContent : "ethniafrica.com").toUpperCase())));
+    // 1.7.0: the next episode, printed 30 px under the pill, on one line.
+    if (spec.next) close.append(el("div", "vf-next oi", "<em>" + fr("Prochain épisode :") + "</em> " + esc(fr(spec.next))));
     layer.append(close);
     const foot = el("div", "vf-close-foot");
     if (pick(".ec-credit")) foot.append(el("div", "vf-cred oi", pick(".ec-credit").innerHTML));
@@ -177,8 +253,11 @@ function buildLayer(spec, view) {
     return parts;
   }
   const head = el("div", "vf-head");
+  // 1.7.0: in the video, the chapter (« 3 · Le nom s'étend ») or « Nous
+  // pensons » replaces the card's own kicker, which the carousel keeps.
   const kicker = pick(".ec-kicker");
-  if (kicker && kicker.textContent.trim()) head.append(el("div", "vf-kick oi", kicker.innerHTML));
+  if (spec.videoKicker) head.append(el("div", "vf-kick oi", esc(fr(spec.videoKicker))));
+  else if (kicker && kicker.textContent.trim()) head.append(el("div", "vf-kick oi", kicker.innerHTML));
   if (spec.date) {
     // A date is one group: day, month and year never part.
     const html = pick(".ec-date").innerHTML
@@ -194,8 +273,49 @@ function buildLayer(spec, view) {
   } else {
     head.append(el("h2", "vf-title oi oi-l" + (spec.type === "opener" ? " vf-title--xl" : ""), pick(".ec-title").innerHTML));
   }
+  // 1.7.0: readings and figures flow under the title, each item in place
+  // from the card's first frame and entering on its word.
+  if (spec.readings) {
+    const list = el("div", "vf-list");
+    for (const it of spec.readings.items) {
+      const row = el("div", "vf-row");
+      if (it.label) row.append(el("div", "vf-rlab oi", esc(fr(it.label))));
+      row.append(el("div", "vf-txt oi", esc(fr(it.text))));
+      if (it.by) row.append(el("div", "vf-by oi", esc(fr(it.by))));
+      list.append(row);
+    }
+    head.append(list);
+    parts.items = [...list.children];
+  }
+  if (spec.figures) {
+    const grid = el("div", "vf-figs");
+    for (const it of spec.figures.items) {
+      const cell = el("div", "vf-fig");
+      // French numbers: « 2 000 », a narrow no-break space between groups.
+      const value = (it.pre ? '<i class="oi">' + esc(fr(it.pre)) + "</i>" : "") + esc(it.value).replace(/ /g, "\\u202f") + (it.unit ? '<small class="oi">' + esc(fr(it.unit)) + "</small>" : "");
+      cell.append(el("div", "vf-val oi oi-l", value));
+      cell.append(el("div", "vf-flab oi", esc(fr(it.label))));
+      grid.append(cell);
+    }
+    head.append(grid);
+    parts.items = [...grid.children];
+  }
   layer.append(head);
+  // 1.7.0: the quoted person, left on x 60, its bottom at y 1296.
+  if (spec.attribution) {
+    const who = el("div", "vf-attr");
+    who.append(el("div", "vf-nm oi", esc(fr(spec.attribution.name))));
+    who.append(el("div", "vf-rl oi", esc(fr(spec.attribution.role))));
+    layer.append(who);
+    parts.attribution = who;
+  }
   const foot = el("div", "vf-foot");
+  // 1.7.0: a signed card names EthniAfrica's position where a source would be.
+  if (spec.signed) {
+    const line = el("div", "vf-src oi", "Position d'EthniAfrica");
+    line.dataset.kind = "source";
+    foot.append(line);
+  }
   if (view) {
     // The key as text with the satellite swatches, two columns from three
     // items; then the source without its base map clause and the imagery.
@@ -220,7 +340,9 @@ function buildLayer(spec, view) {
     const line = pick(sel);
     // A slot's credit only says the image is missing: the slot says it.
     if (line && !(kind === "credit" && parts.slot)) {
-      const div = el("div", cls + " oi", line.innerHTML);
+      // 1.7.0: « Sources » or « Hypothèses » in place of the default label.
+      const html = kind === "source" && spec.sourceLabel ? line.innerHTML.replace(/^Source/, esc(spec.sourceLabel)) : line.innerHTML;
+      const div = el("div", cls + " oi", html);
       div.dataset.kind = kind;
       foot.append(div);
     }
@@ -530,9 +652,12 @@ function frameBoxes(frame, state) {
     }
     if (!(l.text > 0)) continue;
     const layer = parts.layer;
-    layer.querySelectorAll(".vf-head > *").forEach((n) =>
-      add(n, "head", { card: l.card, ...(n === parts.date && { date: { size: parts.dateSize, lines: parts.dateLines } }) })
-    );
+    layer.querySelectorAll(".vf-head > *").forEach((n) => {
+      // 1.7.0: readings and figures flow below the head, down to y 1290.
+      if (n.matches(".vf-list, .vf-figs")) return [...n.children].forEach((c) => add(c, "items", { card: l.card }));
+      add(n, n.dataset.kind || "head", { card: l.card, ...(n === parts.date && { date: { size: parts.dateSize, lines: parts.dateLines } }) });
+    });
+    layer.querySelectorAll(".vf-attr > *").forEach((n) => add(n, "attribution", { card: l.card }));
     layer.querySelectorAll(".vf-close > *").forEach((n) => {
       if (n.classList.contains("vf-pill")) boxes.push({ id: "pill", kind: "pill", ...rect(n) });
       else add(n, "ending");
@@ -618,6 +743,10 @@ window.drawFrame = (state) => {
     for (const t of parts.text) t.style.opacity = l.text;
     // A sequence card's key items follow their areas.
     if (l.map) parts.layer.querySelectorAll(".vf-key[data-file]").forEach((k) => (k.style.opacity = l.map.keys[k.dataset.file] ?? 0));
+    // 1.7.0: items and the quoted person enter on their word, inside the
+    // card's own text fade.
+    if (parts.items) parts.items.forEach((n, k) => (n.style.opacity = l.items ? l.items[k] : 1));
+    if (parts.attribution) parts.attribution.style.opacity = l.text * (l.attribution ?? 1);
     if (parts.photo) {
       if (parts.view) parts.photo.style.transformOrigin = "540px " + parts.view.camera.centreY + "px";
       parts.photo.style.transform = "scale(" + l.zoom + ")";
@@ -645,6 +774,8 @@ window.drawFrame = (state) => {
     pictures,
     backgrounds: backgrounds(frame),
     imageryPaints: imageryPaints - paintsBefore,
+    // 1.7.0: a hyphenated word drawn over two lines.
+    hyphenBreaks: [...frame.querySelectorAll(".vf-nowrap")].filter((n) => n.getClientRects().length > 1).map((n) => n.textContent),
   };
 };
 </script></body></html>`;

@@ -199,13 +199,6 @@ test("1.6.0: the subtitle band stays empty for the whole ending", () => {
 });
 
 // @req REQ-186
-test("the searched name stays whole on one subtitle line", () => {
-  const [search] = demo().chunks.slice(-2);
-  const lines = search.lines.map((line) => line.map((r) => r.text).join(""));
-  assert.deepEqual(lines, ["Cherchez Burkina\u00a0Faso", "sur EthniAfrica,"]);
-});
-
-// @req REQ-186
 test("the closing card holds until the voice ends plus 0.5 s, 2.5 s at least", () => {
   const seq = demo();
   const closingIn = seq.cardStarts.at(-1);
@@ -233,6 +226,10 @@ test("the closing chunks must say the search sentence for the ending's name", ()
   );
 });
 
+// The length and reading-speed warnings; the series 1 demonstration has no
+// signed card, so it also carries the 1.7.0 « Aucune carte signée » warning.
+const timing = (seq) => seq.warnings.filter((w) => !/carte signée/.test(w));
+
 // @req REQ-186
 test("the length is a recommendation of 35 to 75 s: a longer video loads with a warning", () => {
   const stretched = (factor) =>
@@ -246,11 +243,13 @@ test("the length is a recommendation of 35 to 75 s: a longer video loads with a 
           })),
         })),
     });
-  assert.deepEqual(stretched(1.3).warnings, []);
-  const long = stretched(2.5);
-  assert.ok(seriesFrameCount(long) / FPS > 75);
-  assert.equal(long.warnings.length, 1);
-  assert.match(long.warnings[0], /recommended length is 35 to 75 s/);
+  assert.deepEqual(timing(stretched(1.3)), []);
+  // Past 75 s but under 90 s, where a video becomes long and needs chapters.
+  const long = stretched(1.9);
+  const seconds = seriesFrameCount(long) / FPS;
+  assert.ok(seconds > 75 && seconds < 90, `${seconds} s`);
+  assert.equal(timing(long).length, 1);
+  assert.match(timing(long)[0], /recommended length is 35 to 75 s/);
 });
 
 // The first content chunk is read at `cps` characters a second; the others
@@ -272,11 +271,11 @@ const readAt = (cps) =>
 
 // @req REQ-186
 test("17 characters a second is recommended: a chunk read up to 20 loads with a warning", () => {
-  assert.deepEqual(readAt(15).warnings, []);
+  assert.deepEqual(timing(readAt(15)), []);
   const fast = readAt(18.5);
-  assert.equal(fast.warnings.length, 1);
+  assert.equal(timing(fast).length, 1);
   assert.match(
-    fast.warnings[0],
+    timing(fast)[0],
     /faster than the recommended 17 characters a second/
   );
 });
