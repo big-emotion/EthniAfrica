@@ -10,8 +10,6 @@ were referenced by nothing at all, two of them written that same week.
 ## Design — the charters and the reviewed renderings
 
 - [Design references — V2 atlas](design/README.md)
-- [Design references — V2 atlas](design/README.md)
-- [Design references — V2 atlas](design/README.md)
 - [Actions charter — the four shapes a click is allowed to take](design/actions-charter.md)
 - [Atlas charter — what the design system asserts](design/atlas-charter.md)
 - [Brand charter — what the atlas is, before it is a page](design/brand-charter.md)
@@ -49,6 +47,8 @@ were referenced by nothing at all, two of them written that same week.
 - [Editorial classification status](editorial/classification-status.md)
 - [Contribution forms — a draft per fiche category](editorial/contribution-forms-draft-2026-09-22.md)
 - [EthniAfrica doctrine](editorial/doctrine.md)
+- [Essays](editorial/essais/README.md)
+- [« L'Afrique n'est pas un tout » — the ideological base of the series](editorial/essais/afrique-nest-pas-un-tout-2026-10-13.md)
 - [Peul: three plain-language tones](editorial/examples/peul-tones.md)
 - [Family restoration tracking](editorial/family-restoration/README.md)
 - [Plain-language checks](editorial/plain-language-checks.md)
@@ -76,6 +76,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Reader demand journal — 2026-10-12](audience/demand/2026-10-12.md)
 - [Reader demand journal — 2026-10-13](audience/demand/2026-10-13.md)
 - [Reader demand journal — 2026-10-14](audience/demand/2026-10-14.md)
+- [Reader demand journal — 2026-10-15](audience/demand/2026-10-15.md)
 
 ## Runbooks — procedures, and records of ones already run
 
