@@ -2,6 +2,8 @@
 
 ## Acceptance and integration status
 
+**1.7.0-proposition, 15 October 2026, accepted by the operator the same day, with the designer's recommendations.** The long series video: chapters on screen, readings, figures, a quoted person, the signed position, two invitations and the next episode on the ending. See « Renderer integration of 1.7.0 ».
+
 **1.6.0-proposition, 15 October 2026, accepted by the operator the same day, with the designer's recommendations.** The project's signature line « Connaître nos noms, décoloniser leur emploi, nous nommer nous-mêmes. » ends every carousel and every series video, after the series' fixed closing; it retires the closing slogan (choice 2) and takes « L'Afrique à travers ses noms » off the closing card. See « Renderer integration of 1.6.0 ».
 
 **1.5.0-proposition, 15 October 2026, accepted by the operator the same day.** A map sequence in the series video: areas and names enter on the word that says them, and consecutive map cards share one map. See « Renderer integration of 1.5.0 ».
@@ -383,6 +385,65 @@ The operator accepted 1.3.0-proposition on 14 October 2026 and chose video layou
 
 **Boards and prototype.** `Lecture` group `cloture-160-*`, `Video` group `video-160-*` (Series, « Boards (1.6.0) »). They were drawn by a scratch copy of the accepted `bundle.js` and `handoff/video-board-full.html`, patched as described here; the patch is kept with the design package. Since the acceptance the bundle and `handoff/video-board-full.html` on this page carry the patch: the ten closing cards changed, the 79 others are pixel-identical to their 1.5.0 renders, alternative texts included.
 
+## Renderer integration of 1.7.0
+
+**Status: accepted by the operator on 15 October 2026, with the designer's recommendations** (Series, « Vidéo longue et chapitres », decisions 1 to 5). It comes after 1.5.0 and 1.6.0 are in `recette` (1.6.0: PR #1784). The rules are in Series, « Vidéo longue et chapitres ».
+
+**Sequence data.**
+
+```json
+"chapters": [
+  { "title": "Un continent entier" },
+  { "title": "D'où vient le mot" }
+],
+"reminder": "afrique-tout-01-rappel",
+"ending": { "search": "Afrique", "pageOnline": true, "next": "le pays des Noirs" }
+```
+
+A chapter card is a card of the sequence, `{ "type": "chapter", "chapter": 2, "image": … }`; the engine prints its number, « sur N » and the title from `chapters`. `ending.general: true` replaces `ending.search` for the general invitation. `reminder` names the card that carries the hook reminder.
+
+**Card fields** (explanation cards of the video):
+
+- `readings: { items: [{ label?, text, by?, say }] }`, five items at most, each `text` two lines at most at 40 px in 960 px.
+- `figures: { items: [{ pre?, value, unit?, label, say }] }`, three or four.
+- `attribution: { name, role, say }`.
+- `signed: true`.
+- `sourceLabel`: « Source » (default), « Sources » or « Hypothèses ».
+
+`say` names a unit of the card's own chunks (`chunkUnits`), first occurrence, as 1.5.0's `say`.
+
+**What the engine draws.**
+
+1. **The chapter card**: the head only. Number in Anton 176/140, `on-image-accent`; « sur N » in Nunito Sans 800 30/36, `on-image-muted`, on its baseline; the title in Anton 116/112, two lines at most, at most 900 px wide. No subtitle and no source; the image's credit in the foot.
+2. **The chapter kicker**, « n · Titre », on every content card of a chapter, composed from `chapters`; a dated card keeps its marker label and a signed card shows « Nous pensons ». The kicker in the card data is not changed, so the carousel keeps it.
+3. **Readings and figures** under the title, inside the head's flow, ending above y 1290. Items enter on their `say` word over 9 frames (`enter`), their place kept from the card's first frame.
+4. **The attribution**, bottom at y 1296 from x 60, entering on its `say` word over 9 frames, kept to the end of the card.
+5. **The signed card**: kicker « Nous pensons », foot « Position d'EthniAfrica », no source line.
+6. **The ending**: the 1.6.0 block, then « Prochain épisode : [titre] » 30 px under the pill, Nunito Sans 800 and 700 32/40, when `ending.next` is set and the block still ends by y 820. Otherwise the engine inserts a card before the ending: the kicker « Prochain épisode » and the title in Anton, on the ending's image, held at least the title's reading time at 21 characters a second plus 0.3 s.
+7. **Hyphenated words** in titles, kickers, items and the invitation are set without wrapping.
+8. **Runs of one image**: when consecutive cards share an image file and framing, the change cross-fades the heads only, and one zoom of 100 to 104 % runs over the whole run.
+
+**Timing.** A chapter card has no chunks. It starts when the previous chapter's last chunk has gone and ends where the next card's 300 ms change begins, 150 ms before that card's first chunk. Its full-opacity span must last at least max(36 frames, ceil((characters of the title ÷ 21 + 0.3) × 30)); a shorter silence is refused with the milliseconds missing. The ending's hold is unchanged (1.6.0).
+
+**What the engine checks** (refuse, or report with `--diagnose`):
+
+1. A video longer than 90 s has 3 to 7 chapters, each at least 15 s (« Vidéo longue sans chapitres »); a chaptered video outside 2 to 4 min, or a short one outside 35 to 75 s, loads with a warning.
+2. Chapter titles: one to two lines, inside x 60 to 960 and y 318 to 700; the silence check above.
+3. Every content card of a chapter shows its chapter kicker, except the two exceptions.
+4. `readings` and `figures`: every `say` is a unit of the card's chunks; the items end above y 1290; the card holds at least the time to read its items at 21 characters a second.
+5. The attribution's `say` is found; its box stays above y 1300 and clear of the subtitle band.
+6. A signed card has no source; a sourced card has no « Nous pensons ». A video without a signed card loads with a warning (decision 4).
+7. The reminder card shows the opener's image and framing and comes between 75 and 120 s (warning outside).
+8. The invitation is the named or the general form, word for word, and its two chunks close the ending's chunks after the signature line's three (1.6.0).
+9. `ending.next` holds on one line; the ending block ends by y 820, or the next episode moves to its own card.
+10. A source text that starts with « Mot : » is refused (« Le champ source porte déjà son étiquette »).
+11. No line breaks inside a hyphenated word.
+12. Everything accepted before still holds: bands, the 300 ms change, map cards and sequences, the signature line.
+
+**Length it recommends**: 35 to 75 s for a short video, 2 to 4 min for a long one, and chapters from 90 s.
+
+**Boards and prototype.** `Video` group `video-170-*` (Series, « Boards (1.7.0) »), drawn by a scratch copy of `handoff/video-board-full.html` patched as described here; since the acceptance `handoff/video-board-full.html` on this page carries the patch.
+
 ## Required assets
 
 - Fonts: `fonts/Anton-Regular.ttf`, `fonts/NunitoSans.ttf`, `fonts/NotoSans-Variable.ttf`, `fonts/Fraunces.ttf`, `fonts/NotoSansEthiopic-Bold.ttf`, all under the SIL Open Font License 1.1.
@@ -453,3 +514,10 @@ The operator accepted 1.3.0-proposition on 14 October 2026 and chose video layou
 - The operator's decision of 15 October 2026: the signature line « Connaître nos noms, décoloniser leur emploi, nous nommer nous-mêmes. » ends every reel and every carousel, word for word, after the series' fixed closing, with the same look in the same place every time, and with no panel, veil or band to carry it.
 - Brief: `proposals/1.6.0-proposition/claude-design-brief.md` on `recette` (first numbered 1.5.0, renumbered on 15 October 2026 by PR #1776).
 - Proposed and accepted on 15 October 2026, with the designer's recommendations on the four questions.
+
+## Commissioned on 15 October 2026 (1.7.0)
+
+- The long series video with chapters, one brief in place of three drafts (« Afrique », series 6 episode 1; « Kouassi et Yao », series 3 episode 1; « tribu », series 4 episode 1). « Afrique » is the main test case; its result is needed by 18 October.
+- Settled by the operator: length follows the argument; chapters are required in long videos; a reminder of the hook between 1 min 15 and 2 min; each video carries part of the signed position; nothing darkens the image. Reading limit 21 characters a second.
+- Brief: `proposals/1.7.0-proposition/claude-design-brief.md` (draft PR #1781). The document card and the teaching cards are 1.8.0.
+- Proposed and accepted on 15 October 2026, with the designer's recommendations on the five questions.

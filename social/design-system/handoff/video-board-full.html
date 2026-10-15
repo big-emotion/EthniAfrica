@@ -74,6 +74,27 @@ html,body{margin:0;background:#000}
 .foot .key i.sw{box-shadow:none}
 .keys2 .key{margin-bottom:6px;font-size:24px;line-height:30px}
 .keys2 .key span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* 1.7.0-proposition: the long series video. */
+.head .title.chap{font-size:116px;line-height:112px;--sw:13px;max-width:900px}
+.head .chapnum{display:flex;align-items:baseline;gap:18px;margin-bottom:0}
+.head .chapnum b{font:400 176px/140px var(--font-display);color:var(--oi-accent);--sw:14px;font-weight:400}
+.head .chapnum span{font:800 30px/36px var(--font-text);color:var(--oi-muted);--sw:4px;letter-spacing:.02em}
+.list{width:960px;display:flex;flex-direction:column;margin-top:30px}
+.list .row{margin-top:22px}
+.list .row:first-child{margin-top:0}
+.list .rlab{font:800 26px/32px var(--font-text);letter-spacing:.02em;color:var(--oi-accent);--sw:4px}
+.list .txt{font:800 40px/48px var(--font-text);color:var(--oi-text);--sw:6px;text-wrap:balance}
+.list .by{font:700 26px/32px var(--font-text);color:var(--oi-muted);--sw:4px}
+.figs{width:960px;display:grid;grid-template-columns:1fr 1fr;gap:34px 40px;margin-top:34px}
+.figs .val{font:400 112px/104px var(--font-display);color:var(--oi-ink);--sw:12px;white-space:nowrap}
+.figs .val small{font:400 52px/52px var(--font-display);--sw:7px;margin-left:10px}
+.figs .val i{font:800 30px/36px var(--font-text);font-style:normal;color:var(--oi-muted);--sw:4px;display:block;margin-bottom:4px}
+.figs .flab{font:700 30px/38px var(--font-text);color:var(--oi-ink);--sw:4px;margin-top:8px;text-wrap:balance}
+.attr{position:absolute;left:60px;width:900px;bottom:624px;display:flex;flex-direction:column}
+.attr .nm{font:800 34px/40px var(--font-text);color:var(--oi-text);--sw:5px}
+.attr .rl{font:700 26px/32px var(--font-text);color:var(--oi-muted);--sw:4px}
+.close .next{margin-top:30px;font:700 32px/40px var(--font-text);--sw:4px;color:var(--oi-ink)}
+.close .next em{color:var(--oi-accent);font-style:normal;font-weight:800}
 .guides{position:absolute;inset:0;z-index:20;pointer-events:none;font:700 22px/28px var(--font-text)}
 </style>
 </head><body><div id="out"></div>
@@ -86,7 +107,7 @@ html,body{margin:0;background:#000}
   var q = new URLSearchParams(location.search);
   var tokens = await (await fetch('../tokens.json')).json();
   await EthniCards.installTokens(tokens, '../');
-  var data = await (await fetch('cards.sample.json')).json();
+  var data = await (await fetch(q.get('cards') || 'cards.sample.json')).json();
   var FIND = {
     'serie-pays-03': "le texte de l'ordonnance du 2 août 1984, ou une photographie datée de Thomas Sankara en 1984, du domaine public ou sous licence libre",
     'serie-pays-05': "un document daté où on lit le mot « burkinabè » : journal, affiche ou texte officiel",
@@ -192,6 +213,7 @@ html,body{margin:0;background:#000}
       cl.appendChild(el('div', 'sigline oi oi-l', EthniCards.signatureLines.map(function (t) { return '<span>' + esc(t) + '</span>'; }).join('')));
       if (pick('.ec-body')) cl.appendChild(el('div', 'sent oi', pick('.ec-body').innerHTML));
       var p = pick('.ec-cta-pill'); cl.appendChild(el('div', 'pill oi', esc((p ? p.textContent : 'ethniafrica.com').toUpperCase())));
+      if (spec.next) cl.appendChild(el('div', 'next oi', '<em>Prochain épisode :</em> ' + fr(spec.next)));
       L.appendChild(cl);
       var cs = el('div', 'close-sign');
       if (spec.credit) cs.appendChild(el('div', 'cred oi', fr(spec.credit)));
@@ -200,7 +222,13 @@ html,body{margin:0;background:#000}
     } else {
       var head = el('div', 'head');
       var k = pick('.ec-kicker');
-      if (k && k.textContent.trim()) head.appendChild(el('div', 'kick oi', k.innerHTML));
+      if (spec.type === 'chapter') {
+        if (spec.chapterStyle !== 'kicker') head.appendChild(el('div', 'chapnum', '<b class="oi oi-l">' + spec.chapter.n + '</b><span class="oi">sur ' + spec.chapter.of + '</span>'));
+        else head.appendChild(el('div', 'kick oi', 'Chapitre ' + spec.chapter.n + ' sur ' + spec.chapter.of));
+        head.appendChild(el('h2', 'title chap oi oi-l', fr(spec.chapter.title)));
+      } else if (spec.signed) head.appendChild(el('div', 'kick oi', 'Nous pensons'));
+      else if (spec.chapterKicker) head.appendChild(el('div', 'kick oi', fr(spec.chapterKicker)));
+      else if (k && k.textContent.trim()) head.appendChild(el('div', 'kick oi', k.innerHTML));
       if (spec.date) {
         // A date is one group: day, month and year never part.
         var M = '(janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre)';
@@ -210,8 +238,39 @@ html,body{margin:0;background:#000}
         var nm = pick('.ec-field .ec-field-name');
         if (nm) { head.appendChild(el('div', 'lab oi', pick('.ec-field .ec-label').innerHTML)); head.appendChild(el('div', 'name oi oi-l', nm.innerHTML)); }
         rep.date = d; rep.dateHtml = dh;
-      } else head.appendChild(el('h2', 'title oi oi-l' + (spec.type === 'opener' ? ' xl' : ''), pick('.ec-title').innerHTML));
+      } else if (spec.type !== 'chapter') head.appendChild(el('h2', 'title oi oi-l' + (spec.type === 'opener' ? ' xl' : ''), pick('.ec-title').innerHTML));
       L.appendChild(head);
+      var shown = q.get('rows') != null ? +q.get('rows') : 99;
+      if (spec.readings) {
+        var li = el('div', 'list');
+        spec.readings.items.forEach(function (it, i) {
+          var r = el('div', 'row');
+          if (it.label) r.appendChild(el('div', 'rlab oi', fr(it.label)));
+          r.appendChild(el('div', 'txt oi', fr(it.text)));
+          if (it.by) r.appendChild(el('div', 'by oi', fr(it.by)));
+          r.style.opacity = i < shown ? 1 : 0;
+          li.appendChild(r);
+        });
+        head.appendChild(li);
+      }
+      if (spec.figures) {
+        var fg = el('div', 'figs');
+        spec.figures.items.forEach(function (it, i) {
+          var c = el('div', 'fig');
+          c.appendChild(el('div', 'val oi oi-l', (it.pre ? '<i class="oi">' + fr(it.pre) + '</i>' : '') + fr(it.value).replace(/ /g, '\u202f') + (it.unit ? '<small class="oi">' + fr(it.unit) + '</small>' : '')));
+          c.appendChild(el('div', 'flab oi', fr(it.label)));
+          c.style.opacity = i < shown ? 1 : 0;
+          fg.appendChild(c);
+        });
+        head.appendChild(fg);
+      }
+      if (spec.attribution) {
+        var at = el('div', 'attr');
+        at.appendChild(el('div', 'nm oi', fr(spec.attribution.name)));
+        at.appendChild(el('div', 'rl oi', fr(spec.attribution.role)));
+        at.style.opacity = q.get('attr') != null ? +q.get('attr') : 1;
+        L.appendChild(at);
+      }
       var foot = el('div', 'foot');
       if (spec.map) {
         var keys = [];
@@ -237,7 +296,8 @@ html,body{margin:0;background:#000}
         }
         if (onSat) foot.appendChild(el('div', 'cred oi', 'Imagerie\u202f: NASA Earth Observatory\u202f; frontières\u202f: Natural Earth, domaine public'));
       }
-      if (spec.source) foot.appendChild(el('div', 'src oi', 'Source : ' + fr(spec.source)));
+      if (spec.signed) foot.appendChild(el('div', 'src oi', 'Position d\'EthniAfrica'));
+      else if (spec.source) foot.appendChild(el('div', 'src oi', esc(spec.sourceLabel || 'Source') + ' : ' + fr(spec.source)));
       if (spec.credit && !/a-trouver-/.test(src)) foot.appendChild(el('div', 'cred oi', fr(spec.credit)));
       L.appendChild(foot);
     }
@@ -268,6 +328,20 @@ html,body{margin:0;background:#000}
     vf.appendChild(s);
   }
   await document.fonts.ready;
+  // 1.7.0: no text breaks inside a hyphenated word (« dit-on », « nomme-t-il »), as 1.6.0 rules for « nous-mêmes ».
+  Array.prototype.forEach.call(vf.querySelectorAll('.title, .kick, .txt, .sent, .next, .flab, .rlab, .by'), function (box) {
+    var walk = document.createTreeWalker(box, NodeFilter.SHOW_TEXT), nodes = [], n;
+    while ((n = walk.nextNode())) nodes.push(n);
+    nodes.forEach(function (t) {
+      if (!/\S-\S/.test(t.nodeValue)) return;
+      var f = document.createDocumentFragment();
+      t.nodeValue.split(/(\S+-\S+)/).forEach(function (part, i) {
+        if (i % 2) { var s = document.createElement('span'); s.style.whiteSpace = 'nowrap'; s.textContent = part; f.appendChild(s); }
+        else if (part) f.appendChild(document.createTextNode(part));
+      });
+      t.parentNode.replaceChild(f, t);
+    });
+  });
   // Long dates: the largest of 176, 148, 124, 104 px that holds on one line in 960 px.
   report.cards.forEach(function (r) {
     if (!r.date) return;
@@ -295,7 +369,7 @@ html,body{margin:0;background:#000}
   }
   await new Promise(function (r) { setTimeout(r, 120); });
   var o = vf.getBoundingClientRect();
-  window.__boxes = Array.prototype.map.call(vf.querySelectorAll('.band, .head > *, .close > *, .sub-line > *, .foot > *:not(.keys2), .keys2 > *, .gsign, .close-sign > *, .slot-text > *, .tape'), function (e) {
+  window.__boxes = Array.prototype.map.call(vf.querySelectorAll('.band, .head > *, .close > *, .list .row, .figs .fig, .attr > *, .sub-line > *, .foot > *:not(.keys2), .keys2 > *, .gsign, .close-sign > *, .slot-text > *, .tape'), function (e) {
     var range = document.createRange(); range.selectNodeContents(e); var r = e.classList.contains('gsign') || e.classList.contains('pill') || e.classList.contains('tape') ? e.getBoundingClientRect() : range.getBoundingClientRect(), b = e.getBoundingClientRect();
     return { cls: e.className, text: e.textContent.slice(0, 40), x: Math.round(r.left - o.left), x1: Math.round(r.right - o.left), y: Math.round(b.top - o.top), y1: Math.round(b.bottom - o.top) };
   });
