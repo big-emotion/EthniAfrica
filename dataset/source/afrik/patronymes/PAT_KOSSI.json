@@ -16,6 +16,15 @@
           "sourceRefs": ["essizewa-2006-kossi"]
         }
       ]
+    },
+    {
+      "spelling": "Kosi",
+      "attestations": [
+        {
+          "countryId": "TGO",
+          "sourceRefs": ["westermann-1907-ewe"]
+        }
+      ]
     }
   ],
   "transmissionMode": "non_hereditary",
@@ -27,7 +36,7 @@
       {
         "claim": "Essizewa classe Kossi parmi les prénoms ewe attribués selon le jour de la semaine et l'associe aux garçons nés le dimanche.",
         "claimStatus": "established",
-        "sourceRefs": ["essizewa-2006-kossi"]
+        "sourceRefs": ["essizewa-2006-kossi", "westermann-1907-ewe"]
       }
     ]
   },
@@ -35,14 +44,14 @@
     {
       "peopleId": "PPL_EWE",
       "status": "attested",
-      "sourceRefs": ["essizewa-2006-kossi"]
+      "sourceRefs": ["essizewa-2006-kossi", "westermann-1907-ewe"]
     }
   ],
   "countries": [
     {
       "countryId": "TGO",
       "status": "attested",
-      "sourceRefs": ["essizewa-2006-kossi"]
+      "sourceRefs": ["essizewa-2006-kossi", "westermann-1907-ewe"]
     }
   ],
   "alliances": [],
@@ -57,6 +66,14 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Komlan E. Essizewa, Journal of West African Languages XXXIII (2006), PDF intégral consulté, p. 41. Le passage cite explicitement Kossi parmi les noms ewe donnés selon le jour de naissance et l'associe au dimanche ; aucune claim concernant un autre nom n'est transférée ici."
+    },
+    {
+      "sourceKey": "westermann-1907-ewe",
+      "title": "Grammatik der Ewe-Sprache",
+      "url": "https://archive.org/details/grammatikderewes00westuoft",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Berlin, 1907. Lu sur l'exemplaire numérisé d'archive.org le 15 octobre 2026. Pages 49-50 : le tableau des noms de jour éwé ; l'auteur écrit que ces noms viennent du twi (« stammen aus dem Tschi »)."
     }
   ],
   "gaps": [
@@ -84,5 +101,66 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches « Kossi homonym etymology » et « Kossi surname origin other language » n'ont pas établi une graphie identique d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Kossi est un nom de jour éwé : au Togo, on le donne au garçon né le dimanche, et la fille née ce jour s'appelle Kossiwa. Au Ghana, le garçon né le dimanche s'appelle Kwasi ; chez les Baoulé de Côte d'Ivoire, Kouassi désigne le garçon né le lundi.",
+    "names": [
+      {
+        "nameText": "Kossi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom éwé donné à la naissance au garçon né le dimanche.",
+        "periodLabel": "Forme proche écrite dès 1907 ; donné aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "aspect": "meaning",
+            "statement": "Le nom Kossi est donné en éwé au garçon né le dimanche, et Kossiwa à la fille, selon le linguiste Komlan Essizewa.",
+            "sources": [
+              {
+                "title": "A Sociolinguistic Survey of Language Contact in Togo: A Case Study of Kabiye and Ewe",
+                "author": "Komlan E. Essizewa",
+                "year": 2006,
+                "url": "https://journalofwestafricanlanguages.org/downloads?catid=92&id=448&m=0&task=download.send",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 41",
+                "notes": "Komlan E. Essizewa, Journal of West African Languages XXXIII (2006), PDF intégral consulté, p. 41. Le passage cite explicitement Kossi parmi les noms ewe donnés selon le jour de naissance et l'associe au dimanche ; aucune claim concernant un autre nom n'est transférée ici."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom apparaît par écrit sous une forme proche, Kosi, dans la grammaire éwé de Diedrich Westermann, qui le donne au garçon né le dimanche et Akosiba à la fille. L'auteur écrit que ces noms de jour viennent du twi. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Kosi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Grammatik der Ewe-Sprache",
+                "author": "Diedrich Westermann",
+                "year": 1907,
+                "url": "https://archive.org/details/grammatikderewes00westuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 49-50",
+                "notes": "Berlin, 1907. Lu sur l'exemplaire numérisé d'archive.org le 15 octobre 2026. Pages 49-50 : le tableau des noms de jour éwé ; l'auteur écrit que ces noms viennent du twi (« stammen aus dem Tschi »)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
