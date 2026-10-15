@@ -25,12 +25,16 @@ import {
   encodeFrames,
   prepareImageryRegion,
   BROWSER_ARGS,
+  MAX_TEXTURE,
 } from "./render.mjs";
 import { DOWNLOADS, readVerified } from "./areas.mjs";
-import { countryIndex, seriesMapView } from "./series-map.mjs";
-
-// The verified imagery of the series map cards (series.md, « Scale limit »).
-const MAP_IMAGERY = "bmng-2004-07-topo-bathy";
+import {
+  MAP_FRAME,
+  MAP_IMAGERY,
+  countryIndex,
+  seriesMapView,
+  sharedBorders,
+} from "./series-map.mjs";
 
 const designRoot = fileURLToPath(new URL("../design-system/", import.meta.url));
 const sha256 = (bytes) => createHash("sha256").update(bytes).digest("hex");
@@ -72,10 +76,22 @@ async function routesFor(seq) {
   return { routes, tokens, cards };
 }
 
-// Every map card's view, and the imagery covering all of them.
-async function prepareMaps(cards, routes, assets) {
-  const indices = cards.flatMap((c, i) => (c.type === "map" ? [i] : []));
-  if (!indices.length) return null;
+// The world texture is MAX_TEXTURE pixels around the Earth: a frame whose
+// world texture would be enlarged past the scale limit at the end of the
+// zoom needs the full-resolution region under it.
+const needsRegion = ({ camera }) =>
+  ((camera.radius * 2 * Math.PI) / MAX_TEXTURE) * MAP_FRAME.maxZoom >
+  MAP_FRAME.maxScale;
+
+// Every map card's view, and the imagery covering all of them. A map
+// sequence's cards (1.5.0) come planned from series.mjs; only their border
+// lines need Natural Earth's countries.
+async function prepareMaps(seq, cards, routes, assets) {
+  const plan = seq.mapSequence;
+  const indices = cards.flatMap((c, i) =>
+    c.type === "map" && !c.map.sequence ? [i] : []
+  );
+  if (!indices.length && !plan) return null;
   if (!assets)
     throw new Error(
       "A map card is drawn on the verified imagery: set ETHNIAFRICA_VIDEO_ASSETS"
@@ -93,6 +109,48 @@ async function prepareMaps(cards, routes, assets) {
       imagery
     );
   const all = Object.values(views).map((v) => v.bounds);
+  let sequence = null;
+  if (plan) {
+    const detailed = plan.cameras.filter(needsRegion);
+    all.push(
+      ...(detailed.length ? detailed : plan.cameras).map((c) => c.bounds)
+    );
+    const lineBounds = plan.cameras.map((c) => c.bounds);
+    const shown = [
+      Math.min(...lineBounds.map((b) => b[0])),
+      Math.max(...lineBounds.map((b) => b[1])),
+      Math.min(...lineBounds.map((b) => b[2])),
+      Math.max(...lineBounds.map((b) => b[3])),
+    ];
+    sequence = {
+      order: plan.order,
+      areas: Object.fromEntries(
+        Object.entries(plan.areas).map(([file, a]) => [
+          file,
+          {
+            sequence: a.sequence,
+            polygons: a.polygons,
+            ink: a.ink,
+            uncertain: a.uncertain,
+            hatch: a.hatch,
+          },
+        ])
+      ),
+      runs: plan.runs.map((r) => ({ sequence: r.sequence, cards: r.cards })),
+      views: Object.fromEntries(
+        Object.entries(plan.views).map(([i, v]) => [i, { camera: v.camera }])
+      ),
+      borders: plan.runs.map((r) => {
+        const kind = plan.views[r.cards[0]].borders;
+        return kind === "none"
+          ? null
+          : { strong: kind === "strong", lines: sharedBorders(world, shown) };
+      }),
+    };
+    // A sequence card's foot: its key and credits.
+    for (const [i, v] of Object.entries(plan.views))
+      views[i] = { sequence: true, key: v.key, credits: v.credits };
+  }
   const bounds = [
     Math.min(...all.map((b) => b[0])),
     Math.max(...all.map((b) => b[1])),
@@ -102,17 +160,22 @@ async function prepareMaps(cards, routes, assets) {
   const prepared = await prepareImageryRegion(MAP_IMAGERY, bounds, assets);
   routes.set("/imagery/world.jpg", prepared.world);
   routes.set("/imagery/region.jpg", prepared.region);
+  const spans = { ...views, ...(plan?.views ?? {}) };
   return {
     bounds,
     views,
+    sequence,
     record: {
       imagery: { id: MAP_IMAGERY, sha256: prepared.imageryHash },
       countries: DOWNLOADS.countries.sha256,
-      cards: indices.map((i) => ({
-        id: cards[i].id,
-        spanKm: Math.round(views[i].spanKm),
-        capped: views[i].capped,
-      })),
+      cards: Object.keys(spans)
+        .map(Number)
+        .sort((a, b) => a - b)
+        .map((i) => ({
+          id: cards[i].id,
+          spanKm: Math.round(spans[i].spanKm),
+          capped: spans[i].capped,
+        })),
     },
   };
 }
@@ -127,7 +190,7 @@ async function openSeriesRenderer(
     await readFile(new URL("../renderer/runtime.json", import.meta.url))
   );
   const { routes, tokens, cards } = await routesFor(seq);
-  const maps = await prepareMaps(cards, routes, assets);
+  const maps = await prepareMaps(seq, cards, routes, assets);
   // A map card's WebGL runs on SwiftShader, as in the satellite video.
   const browser = await chromium.launch({
     headless: true,
@@ -164,7 +227,11 @@ async function openSeriesRenderer(
       cards,
       logo: seq.logo,
       demo: seq.demo,
-      maps: maps && { bounds: maps.bounds, views: maps.views },
+      maps: maps && {
+        bounds: maps.bounds,
+        views: maps.views,
+        sequence: maps.sequence,
+      },
     });
     if (ready.broken.length)
       throw new Error(`Images not loaded: ${ready.broken.join(", ")}`);
@@ -254,6 +321,7 @@ export async function encodeSeriesVideo(
       "series-page.mjs",
       "series-render.mjs",
       "series-map.mjs",
+      "series-sequence.mjs",
       "sequence.mjs",
       "render.mjs",
       "page.mjs",
@@ -273,6 +341,7 @@ export async function encodeSeriesVideo(
     // 1.4.1: the verified imagery and countries under the map cards.
     ...(renderer.maps && { maps: renderer.maps }),
     demo: !!seq.demo,
+    ...(seq.warnings.length && { warnings: seq.warnings }),
     // A diagnostic export lists the frames whose text left its band.
     ...(diagnose && { diagnostic: true, layoutProblems: problems }),
     // Mechanical export only: editorial approvals live in the checkpoint.
@@ -308,6 +377,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const seq = loadSeriesVideo(JSON.parse(await readFile(file, "utf8")), {
     dir: dirname(resolve(file)),
   });
+  seq.warnings.forEach((w) => console.warn(`Warning: ${w}`));
   const diagnose = process.argv.includes("--diagnose");
   if (arg("--frames")) {
     await mkdir(out, { recursive: true });

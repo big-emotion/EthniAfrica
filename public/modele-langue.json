@@ -13,7 +13,12 @@
   "whyProblematic": "<Ce que ces noms posent, si l'un d'eux est colonial ou péjoratif — sinon null>",
   "spellingAliases": ["<Orthographe alternative 1 (si applicable)>"],
   "familyId": "FLG_XXXXX",
-  "peoples": [{ "name": "<Nom du peuple>", "peopleId": "PPL_XXXXX" }],
+  "peoples": [
+    {
+      "name": "<Nom du peuple>",
+      "peopleId": "PPL_XXXXX"
+    }
+  ],
   "nameHistory": {
     "summary": "<Commence par « Le nom X » ; nomme le nom que le sujet se donne, dit s'il porte plusieurs noms et si leurs origines sont débattues, et qu'elles sont présentées plus bas>",
     "names": [
@@ -180,6 +185,12 @@
         "url": "<URL résolvable, ou null pour une œuvre hors ligne>",
         "tier": "official | referenced | unverified",
         "notes": "<Faits de provenance publiés tels quels au lecteur : éditeur, édition, institution, ce qui a été lu ou recoupé — jamais la raison pour laquelle le tier a été attribué>"
+      }
+    ],
+    "gaps": [
+      {
+        "field": "<Chemin du champ que les sources ne remplissent pas — ex: nameHistory.names[0]>",
+        "reason": "<Ce que nous ne savons pas, dit au lecteur, sans vocabulaire d'atelier>"
       }
     ],
     "searchAnswer": {
