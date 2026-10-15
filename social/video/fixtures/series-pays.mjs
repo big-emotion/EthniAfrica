@@ -21,23 +21,31 @@ const model = JSON.parse(
 export const CARDS = fileURLToPath(
   new URL("../../design-system/handoff/cards.sample.json", import.meta.url)
 );
+// The accepted signature line (Cartes 1.6.0), voiced one printed line per
+// chunk, at about 16 characters a second, as the design's timing board has it.
+const { signatureLine } = JSON.parse(
+  readFileSync(
+    new URL("../../design-system/version.json", import.meta.url),
+    "utf8"
+  )
+);
 // The first word is said 0.6 s in, so the cover (frame 0) has no subtitle.
 const LEAD = 0.6;
 const round = (s) => Math.round(s * 1000) / 1000;
+export const signatureChunks = () =>
+  signatureLine
+    .split(/(?<=,) /u)
+    .map((text) => ({ text, duration: round([...text].length / 16) }));
 
-// `edit(input)` changes the sequence before it is returned; `script(beats)`
-// changes the spoken chunks before they are timed.
-export function seriesDemo(dir, { edit = () => {}, script = (b) => b } = {}) {
-  mkdirSync(dir, { recursive: true });
-  const beats = script(
-    model.beats.map((beat) => ({
-      card: `serie-${beat.card}`,
-      chunks: beat.chunks.map(({ text, duration }) => ({ text, duration })),
-    }))
-  );
+// Generated silence whose word times spread each chunk's units over the
+// chunk's scripted duration, from 0.6 s in; writes voice.wav and words.json.
+// A beat's `silence` (seconds, 1.7.0) is a pause before its chunks, the one a
+// chapter card fills.
+export function writeSyntheticVoice(dir, beats) {
   let t = LEAD;
-  const timed = beats.flatMap((beat) =>
-    beat.chunks.map(({ text, duration }) => {
+  const timed = beats.flatMap((beat) => {
+    t += beat.silence ?? 0;
+    return (beat.chunks ?? []).map(({ text, duration }) => {
       const units = chunkUnits(text);
       const letters = units.reduce((n, u) => n + [...u].length + 1, 0);
       const pace = (duration - 0.2) / letters;
@@ -54,8 +62,8 @@ export function seriesDemo(dir, { edit = () => {}, script = (b) => b } = {}) {
       });
       t += duration;
       return { text, words };
-    })
-  );
+    });
+  });
   const duration = round(t);
   const audio = wavBytes(
     new Int16Array(Math.round(duration * SAMPLE_RATE)),
@@ -73,9 +81,26 @@ export function seriesDemo(dir, { edit = () => {}, script = (b) => b } = {}) {
       chunks: timed,
     })
   );
+}
+
+// `edit(input)` changes the sequence before it is returned; `script(beats)`
+// changes the spoken chunks before they are timed.
+export function seriesDemo(dir, { edit = () => {}, script = (b) => b } = {}) {
+  mkdirSync(dir, { recursive: true });
+  const beats = script(
+    model.beats.map((beat, i) => ({
+      card: `serie-${beat.card}`,
+      chunks: [
+        // 1.6.0: the voice says the signature line before the search sentence.
+        ...(i === model.beats.length - 1 ? signatureChunks() : []),
+        ...beat.chunks.map(({ text, duration }) => ({ text, duration })),
+      ],
+    }))
+  );
+  writeSyntheticVoice(dir, beats);
   const input = {
     // The script is 1.3.0's; the layout is the accepted 1.4.0 full screen.
-    design: "EthniAfrica Cartes 1.4.1-proposition, vidéo de série plein écran",
+    design: "EthniAfrica Cartes 1.5.0-proposition, vidéo de série plein écran",
     // The cards' own tape, as on the carousel and the design's boards.
     demo: JSON.parse(readFileSync(CARDS, "utf8")).cards.find(
       (c) => c.id === beats[0].card
