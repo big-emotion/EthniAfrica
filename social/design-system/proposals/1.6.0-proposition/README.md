@@ -48,3 +48,12 @@ The 89 sample cards were rendered on the pinned browser:
 **Series video.** The ending draws the line from the same constant, top at y 318. Loading requires the closing card to say the line in three chunks, then the search sentence. The closing card's chunks are voiced, but no subtitle shows during the ending. The hold is unchanged.
 
 **Not in this integration.** The reading limit of 21 characters a second belongs to pull request #1778, still open when this was integrated. `series.md` keeps the wording on `recette` until that pull request lands.
+
+## Clipped reels and the satellite video, 16 October 2026
+
+The operator extended the line to two formats outside the card system on 16 October 2026. Both kept the motto « L'Afrique à travers ses noms » and had no signature line.
+
+- **Clipped reels** (`.claude/skills/ethniafrica-reel-clip/`). A reel now ends on its last picture, held in silence, with the signature line where the captions were (Fraunces 600 56/64, three lines). No caption, box or replaced text can cover it. The ending lasts the time to read the line at 21 characters a second plus 0.3 s, which is 3.6 s. The motto leaves the reel's signature and its cover.
+- **The satellite video** (`social/video/page.mjs`, Vidéo carte 0.4.0). In both endings, the line takes the motto's place under the word EthniAfrica, in the same face and size, and the pill of ending A moves down with it.
+
+Both read the line from `version.json`. `integration-2026-10-16/` holds the frames: `reel-fin-large-et-vertical.jpg` shows, for a wide and a tall source, the last clip and then the ending; `video-carte-fins-a-et-b.jpg` shows the satellite video's two endings.

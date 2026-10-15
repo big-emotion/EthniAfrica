@@ -1,5 +1,17 @@
 // The isolated page that draws one frame. Everything it shows arrives in the
 // payload computed by render.mjs; the page has no clock and no network.
+import { readFileSync } from "node:fs";
+
+// Cartes 1.6.0 (operator, 16 October 2026): the satellite video's ending
+// carries the project's signature line in place of the motto « L'Afrique à
+// travers ses noms ». The line is the accepted design's (version.json), split
+// after each comma as the cards print it; the page keeps no copy of its own.
+const SIGNATURE_LINES = JSON.parse(
+  readFileSync(
+    new URL("../design-system/version.json", import.meta.url),
+    "utf8"
+  )
+).signatureLine.split(/(?<=,) /u);
 
 // The ending darkens the base to the design's brightness 0.45 (board 10),
 // which the end frames apply where a hold applies 0.84: hence their ratio.
@@ -175,6 +187,7 @@ html,body{margin:0;background:#070605}
 <div id="closing" style="left:120px;width:840px;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center"></div>
 </div>
 <script>
+const SIGNATURE_LINES = ${JSON.stringify(SIGNATURE_LINES)};
 const END_GLSL = ${JSON.stringify(END_GLSL)};
 const VERT = ${JSON.stringify(FLAT_VERT)};
 const FRAG = ${JSON.stringify(FLAT_FRAG)};
@@ -400,6 +413,11 @@ const el = (tag, style, text) => {
   if (style) e.setAttribute("style", style);
   if (text !== undefined) e.textContent = text;
   return e;
+};
+const signatureLine = () => {
+  const line = el("span", "font-family:Fraunces,Georgia,serif;font-weight:600;font-size:56px;line-height:64px;color:#f3e9da");
+  for (const t of SIGNATURE_LINES) line.append(el("span", "display:block;white-space:nowrap", t));
+  return line;
 };
 ${OVERLAY_SCRIPT}
 document.querySelector("#lines defs").insertAdjacentHTML("beforeend", hatchDefs());
@@ -631,7 +649,7 @@ window.drawFrame = async (f) => {
   }
   panel.append(legend, caption);
 
-  // Board 10's closing: signature and slogan; ending A adds what the page
+  // Board 10's closing: signature and, since Cartes 1.6.0, the signature line in place of the slogan; ending A adds what the page
   // holds and the bare domain. Neither asks the viewer for anything.
   const closing = document.getElementById("closing");
   closing.replaceChildren();
@@ -645,7 +663,9 @@ window.drawFrame = async (f) => {
     big.src = "/logo.png"; big.alt = "Logo EthniAfrica";
     closingParts.push(big,
       el("span", "font-family:Fraunces,Georgia,serif;font-weight:600;font-size:64px;line-height:72px;color:#f3e9da", "EthniAfrica"),
-      el("span", "font-family:Fraunces,Georgia,serif;font-style:italic;font-weight:400;font-size:28px;line-height:36px;color:#cbbba3", "L\\u2019Afrique \\u00e0 travers ses noms"));
+      // Cartes 1.6.0: the signature line, three lines broken after each
+      // comma, in the cards' Fraunces 600 56/64.
+      signatureLine());
     if (a) closingParts.push(
       el("span", "margin-top:28px;font-size:30px;line-height:40px;font-weight:700;color:#f3e9da", f.closing.sentence),
       el("span", "margin-top:6px;padding:12px 28px;border-radius:999px;border:2px solid #e8b96a;color:#e8b96a;font-size:34px;line-height:40px;font-weight:800;letter-spacing:.04em", f.closing.address));

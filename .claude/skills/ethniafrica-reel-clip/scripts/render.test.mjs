@@ -130,7 +130,8 @@ test("renders a framed, captioned vertical reel with its SRT and cover", async (
     const video = reel.streams.find((s) => s.codec_type === "video");
     assert.deepEqual([video.width, video.height], [1080, 1920]);
     assert.ok(reel.streams.some((s) => s.codec_type === "audio"));
-    assert.ok(Math.abs(Number(reel.format.duration) - 4) < 0.15);
+    // 4 s of clips, then the 3.6 s ending that holds the signature line.
+    assert.ok(Math.abs(Number(reel.format.duration) - 7.6) < 0.15);
     assert.match(
       readFileSync(join(out, "sous-titres-fr.srt"), "utf8"),
       /00:00:02,100 --> 00:00:03,900\npuis la suite après la coupe\./
@@ -147,10 +148,64 @@ test("renders a framed, captioned vertical reel with its SRT and cover", async (
       !existsSync(join(out, "_layers")),
       "intermediate layers are removed"
     );
+    // The ending (Cartes 1.6.0): the last picture held, silent, with the
+    // signature line written where the captions were.
+    const reelFile = join(out, "reel.mp4");
+    assert.ok(brightest(reelFile, 6, 1305) > 230, "no line in the ending");
+    assert.ok(loudness(reelFile, 4.3, 3) < -80, "the ending is not silent");
   } finally {
     rmSync(dir, { recursive: true, force: true });
   }
 });
+
+// The brightest channel along row `y` between x 100 and 980, at `t` seconds.
+function brightest(file, t, y) {
+  const row = spawnSync(
+    "ffmpeg",
+    [
+      "-v",
+      "error",
+      "-ss",
+      String(t),
+      "-i",
+      file,
+      "-frames:v",
+      "1",
+      "-vf",
+      `format=rgb24,crop=880:2:100:${y}`,
+      "-f",
+      "rawvideo",
+      "-pix_fmt",
+      "rgb24",
+      "-",
+    ],
+    { encoding: "buffer" }
+  ).stdout;
+  return Math.max(0, ...row);
+}
+
+// Mean volume in dB of `seconds` of audio from `t`.
+function loudness(file, t, seconds) {
+  const out = spawnSync(
+    "ffmpeg",
+    [
+      "-ss",
+      String(t),
+      "-t",
+      String(seconds),
+      "-i",
+      file,
+      "-af",
+      "volumedetect",
+      "-f",
+      "null",
+      "-",
+    ],
+    { encoding: "utf8" }
+  ).stderr;
+  const m = out.match(/mean_volume: (-?[\d.]+|-inf) dB/);
+  return !m || m[1] === "-inf" ? -Infinity : Number(m[1]);
+}
 
 // @req REQ-186
 test("a tall source gets the portrait gabarit and its on-screen text replaced", async () => {

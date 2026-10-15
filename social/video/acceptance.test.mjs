@@ -11,6 +11,7 @@ import { join, resolve } from "node:path";
 import sharp from "sharp";
 import { loadSequence, frameState, frameCount, project } from "./sequence.mjs";
 import { renderFrame, renderFrames, encodeVideo } from "./render.mjs";
+import { PAGE_HTML } from "./page.mjs";
 
 const assets = process.env.ETHNIAFRICA_VIDEO_ASSETS;
 const congo = JSON.parse(
@@ -310,6 +311,17 @@ test("an area named by a chunk is drawn once it has entered", async () => {
 });
 
 // @req REQ-186
+test("the ending carries the signature line in place of the motto (Cartes 1.6.0)", () => {
+  for (const line of [
+    "Connaître nos noms,",
+    "décoloniser leur emploi,",
+    "nous nommer nous-mêmes.",
+  ])
+    assert.ok(PAGE_HTML.includes(line), line);
+  assert.ok(!/travers ses noms/.test(PAGE_HTML), "the motto has left");
+});
+
+// @req REQ-186
 test("ending A adds the site pill; both endings keep the imagery line", async () => {
   const a = sahara({
     variant: "A",
@@ -319,11 +331,17 @@ test("ending A adds the site pill; both endings keep the imagery line", async ()
   const b = sahara();
   const [endA] = await renderFrames(a, [frameCount(a) - 1], options());
   const [endB] = await renderFrames(b, [frameCount(b) - 1], options());
+  // The pill's outline, searched under the block since the signature line
+  // (Cartes 1.6.0) moved it down by three lines.
   const accentPixels = async (png) => {
-    let count = 0;
-    for (let x = 240; x < 840; x += 2)
-      if (inkDistance(await pixel(png, x, 884), "#e8b96a") < 40) count++;
-    return count;
+    let best = 0;
+    for (let y = 840; y < 1240; y += 4) {
+      let count = 0;
+      for (let x = 240; x < 840; x += 4)
+        if (inkDistance(await pixel(png, x, y), "#e8b96a") < 40) count++;
+      best = Math.max(best, count);
+    }
+    return best;
   };
   assert.ok((await accentPixels(endA)) > 10, "ending A shows the pill");
   assert.equal(await accentPixels(endB), 0, "ending B shows no pill");
