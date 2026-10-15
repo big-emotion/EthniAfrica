@@ -43,7 +43,15 @@ export interface SourceFamilyGroup {
 export function groupAccountsBySourceFamily(
   name: TimelineName
 ): SourceFamilyGroup[] {
-  const accounts = name.tiles.flatMap((tile) => tile.accounts);
+  return groupBySourceFamily(name.tiles.flatMap((tile) => tile.accounts));
+}
+
+/** Any list of accounts, regrouped the same way (a fiche's names, brief 2). */
+// @req REQ-198
+// @req REQ-161
+export function groupBySourceFamily(
+  accounts: readonly NameHistoryAccount[]
+): SourceFamilyGroup[] {
   return SOURCE_KIND_FAMILIES.flatMap((family) => {
     const backed = accounts.flatMap((account) => {
       const sources = account.sources.filter(

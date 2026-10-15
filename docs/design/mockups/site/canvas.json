@@ -105,145 +105,166 @@
       "x": 5038,
       "y": 0,
       "w": 430,
-      "h": 13986,
+      "h": 13796,
       "expand": "fill"
     },
     "people-fula-768.dc.html": {
       "x": 5548,
       "y": 0,
       "w": 768,
-      "h": 11762,
+      "h": 11588,
       "expand": "fill"
     },
     "people-fula-1440.dc.html": {
       "x": 6396,
       "y": 0,
       "w": 1440,
-      "h": 11141,
+      "h": 10975,
       "expand": "fill"
     },
     "people-bassa-430.dc.html": {
       "x": 5038,
-      "y": 14106,
+      "y": 13916,
       "w": 430,
-      "h": 9902,
+      "h": 9712,
       "expand": "fill"
     },
     "people-bassa-768.dc.html": {
       "x": 5548,
-      "y": 14106,
+      "y": 13916,
       "w": 768,
-      "h": 8629,
+      "h": 8455,
       "expand": "fill"
     },
     "people-bassa-1440.dc.html": {
       "x": 6396,
-      "y": 14106,
+      "y": 13916,
       "w": 1440,
-      "h": 8084,
+      "h": 7918,
       "expand": "fill"
     },
     "people-thin-alaba-430.dc.html": {
       "x": 5038,
-      "y": 24128,
+      "y": 23748,
       "w": 430,
-      "h": 9238,
+      "h": 9193,
       "expand": "fill"
     },
     "people-thin-alaba-768.dc.html": {
       "x": 5548,
-      "y": 24128,
+      "y": 23748,
       "w": 768,
-      "h": 7875,
+      "h": 7692,
       "expand": "fill"
     },
     "people-thin-alaba-1440.dc.html": {
       "x": 6396,
-      "y": 24128,
+      "y": 23748,
       "w": 1440,
-      "h": 7590,
+      "h": 7390,
       "expand": "fill"
     },
     "language-lingala-430.dc.html": {
       "x": 8236,
       "y": 0,
       "w": 430,
-      "h": 3911,
+      "h": 7198,
       "expand": "fill"
     },
     "language-lingala-768.dc.html": {
       "x": 8746,
       "y": 0,
       "w": 768,
-      "h": 3382,
+      "h": 5657,
       "expand": "fill"
     },
     "language-lingala-1440.dc.html": {
       "x": 9594,
       "y": 0,
       "w": 1440,
-      "h": 3585,
+      "h": 5664,
       "expand": "fill"
+    },
+    "language-thin-havu-430.dc.html": {
+      "expand": "fill",
+      "x": 8236,
+      "y": 7318,
+      "w": 430,
+      "h": 5103
+    },
+    "language-thin-havu-768.dc.html": {
+      "expand": "fill",
+      "x": 8746,
+      "y": 7318,
+      "w": 768,
+      "h": 3993
+    },
+    "language-thin-havu-1440.dc.html": {
+      "expand": "fill",
+      "x": 9594,
+      "y": 7318,
+      "w": 1440,
+      "h": 4035
     },
     "family-bantu-430.dc.html": {
       "x": 8236,
-      "y": 4031,
+      "y": 12541,
       "w": 430,
       "h": 15250,
       "expand": "fill"
     },
     "family-bantu-768.dc.html": {
       "x": 8746,
-      "y": 4031,
+      "y": 12541,
       "w": 768,
       "h": 11194,
       "expand": "fill"
     },
     "family-bantu-1440.dc.html": {
       "x": 9594,
-      "y": 4031,
+      "y": 12541,
       "w": 1440,
       "h": 9496,
       "expand": "fill"
     },
     "family-mande-430.dc.html": {
       "x": 8236,
-      "y": 19401,
+      "y": 27911,
       "w": 430,
       "h": 22132,
       "expand": "fill"
     },
     "family-mande-768.dc.html": {
       "x": 8746,
-      "y": 19401,
+      "y": 27911,
       "w": 768,
       "h": 14579,
       "expand": "fill"
     },
     "family-mande-1440.dc.html": {
       "x": 9594,
-      "y": 19401,
+      "y": 27911,
       "w": 1440,
       "h": 11630,
       "expand": "fill"
     },
     "country-civ-430.dc.html": {
       "x": 8236,
-      "y": 41653,
+      "y": 50163,
       "w": 430,
       "h": 9999,
       "expand": "fill"
     },
     "country-civ-768.dc.html": {
       "x": 8746,
-      "y": 41653,
+      "y": 50163,
       "w": 768,
       "h": 8678,
       "expand": "fill"
     },
     "country-civ-1440.dc.html": {
       "x": 9594,
-      "y": 41653,
+      "y": 50163,
       "w": 1440,
       "h": 8142,
       "expand": "fill"
@@ -461,6 +482,9 @@
     "language-lingala-430.dc.html",
     "language-lingala-768.dc.html",
     "language-lingala-1440.dc.html",
+    "language-thin-havu-430.dc.html",
+    "language-thin-havu-768.dc.html",
+    "language-thin-havu-1440.dc.html",
     "family-bantu-430.dc.html",
     "family-bantu-768.dc.html",
     "family-bantu-1440.dc.html",
