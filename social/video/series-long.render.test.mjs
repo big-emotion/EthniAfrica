@@ -9,7 +9,11 @@ import assert from "node:assert/strict";
 import { mkdtempSync, rmSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { loadSeriesVideo, seriesFrameCount } from "./series.mjs";
+import {
+  checkSeriesLayout,
+  loadSeriesVideo,
+  seriesFrameCount,
+} from "./series.mjs";
 import { renderSeriesFrames } from "./series-render.mjs";
 import { longDemo } from "./fixtures/series-long.mjs";
 
@@ -40,7 +44,12 @@ const flat = (t) => t.replace(/\s+/gu, " ");
 
 // @req REQ-186
 test("1.7.0: every text of the long video stays in its band", () => {
-  for (const f of frames) assert.deepEqual(f.problems, [], `frame ${f.frame}`);
+  for (const f of frames)
+    assert.deepEqual(
+      checkSeriesLayout(f.boxes, { demo: true }),
+      [],
+      `frame ${f.frame}`
+    );
 });
 
 // @req REQ-186

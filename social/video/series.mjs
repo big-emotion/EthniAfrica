@@ -607,7 +607,13 @@ const BANDS = {
   "ending-credit": LAYOUT.endingCredit,
   signature: LAYOUT.signature,
   slot: LAYOUT.slot.y,
+  // 1.7.0: readings and figures end above y 1290; the quoted person above
+  // the subtitle band; a chapter title in the head, at most 900 px wide.
+  items: [LAYOUT.head[0], 1290],
+  attribution: [LAYOUT.head[0], 1300],
+  "chapter-title": LAYOUT.head,
 };
+const X_BANDS = { slot: LAYOUT.slot.x, "chapter-title": [60, 960] };
 export function checkSeriesLayout(boxes, { demo = false } = {}) {
   const problems = [];
   const near = 0.5;
@@ -662,7 +668,7 @@ export function checkSeriesLayout(boxes, { demo = false } = {}) {
       say(`unknown kind ${b.kind}`);
       continue;
     }
-    const [x0, x1] = b.kind === "slot" ? LAYOUT.slot.x : LAYOUT.x;
+    const [x0, x1] = X_BANDS[b.kind] ?? LAYOUT.x;
     if (left < x0 - near || right > x1 + near)
       say(
         `x ${Math.round(left)} to ${Math.round(right)} leaves x ${x0} to ${x1}`
