@@ -1,0 +1,109 @@
+import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
+import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
+import { firstSentence, type NextStepCard } from "@/lib/search/nameClosing";
+import { sourceKindFamily } from "@/lib/sources/sourceKindFamily";
+import type { SearchEntityType } from "@/types/afrik-frontend";
+import type { Language } from "@/types/shared";
+
+/**
+ * The closing of a fiche (brief 2, boards docs/design/mockups/site/
+ * people-*.dc.html): the silences of all the subject's names and the next
+ * names, deduced from the data only. A fiche never declares a silence its
+ * data does not support.
+ */
+
+type FicheName = NameHistory["names"][number];
+
+const hasDate = (name: FicheName) =>
+  name.accounts.some((account) => account.period.from != null);
+const birthOf = (name: FicheName) =>
+  name.accounts.find((account) => account.birth);
+
+/**
+ * One line each: no oral account for any name; the names with neither a
+ * dated origin nor a dated trace; then what lies before the first name's
+ * oldest trace (its self-name, first in the fiche).
+ */
+// @req REQ-198
+export function ficheSilences(
+  history: NameHistory,
+  subject: SearchEntityType,
+  language: Language = "fr"
+): string[] {
+  const copy = nameClosingCopy[language];
+  const { names } = history;
+  if (names.length === 0) return [];
+  const lines: string[] = [];
+
+  const oral = names.some((name) =>
+    name.accounts.some((account) =>
+      account.sources.some(
+        (source) => sourceKindFamily(source.source_kind) === "oral"
+      )
+    )
+  );
+  if (!oral) {
+    lines.push(
+      names.length > 1
+        ? copy.fiche.noOral(subject)
+        : copy.silence.noOral(names[0].nameText)
+    );
+  }
+
+  const undated = names.filter((name) => !birthOf(name) && !hasDate(name));
+  if (undated.length > 0) {
+    lines.push(copy.fiche.undated(undated.map((name) => name.nameText)));
+  }
+
+  const [first] = names;
+  const birth = birthOf(first);
+  if (birth) {
+    const label = birth.period.label;
+    lines.push(
+      /^\d{3,4}$/.test(label)
+        ? copy.silence.beforeYear(first.nameText, label)
+        : /siècle$/i.test(label)
+          ? copy.fiche.beforeCentury(first.nameText, label)
+          : copy.silence.beforeBirth(first.nameText)
+    );
+  } else if (hasDate(first)) {
+    const year = Math.min(
+      ...first.accounts.flatMap((account) =>
+        account.period.from != null ? [account.period.from] : []
+      )
+    );
+    lines.push(copy.fiche.firstWritten(first.nameText, year));
+  }
+  return lines;
+}
+
+/** A name the fiche links, with the summary of its own fiche when it has one. */
+export interface FicheNextCandidate {
+  kind: string;
+  name: string;
+  summary?: string | null;
+}
+
+/**
+ * The next step of a fiche: the first candidates whose fiche has a summary,
+ * each with that summary's first sentence as its reason. A candidate without
+ * one is left out rather than shown without a reason.
+ */
+// @req REQ-198
+export function ficheNextSteps(
+  candidates: readonly FicheNextCandidate[],
+  limit = 2
+): NextStepCard[] {
+  const cards: NextStepCard[] = [];
+  for (const candidate of candidates) {
+    if (cards.length === limit) break;
+    if (!candidate.summary?.trim()) continue;
+    if (cards.some((card) => card.name === candidate.name)) continue;
+    cards.push({
+      kind: candidate.kind,
+      name: candidate.name,
+      reason: firstSentence(candidate.summary),
+    });
+  }
+  return cards;
+}

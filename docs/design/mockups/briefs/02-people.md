@@ -63,8 +63,8 @@ Recorded in `docs/design/mockups/site/`. The implementation reproduces them.
 
 - `people-fula`, `people-bassa` and `people-thin-alaba`, each at 430, 768 and
   1440, gain the three components approved in brief 1. « Les sources parlent »
-  follows « Les autres noms ». The closing band comes after « Compléter cette
-  page », without the thesis line. « Poursuivre avec un autre nom » replaces
+  follows « Les autres noms ». The closing band comes before the next step,
+  without the thesis line. « Poursuivre avec un autre nom » replaces
   « Poursuivre ». The hero, « D'où vient le nom ? », « Les autres noms », the
   map and the chapter order above the new blocks are unchanged.
 - `Main` gains the fiche variant of « Les sources parlent ».
@@ -95,3 +95,20 @@ Decisions taken in review:
    link (`PPL_ZARMA`); the Fula hero says 12 countries where the brief counted
    14.
 
+## Implementation (2026-10-15)
+
+Operator decisions taken after approval, drawn on the boards before the code:
+
+1. « Compléter cette page » is removed from a fiche that has a nameHistory: the
+   closing band carries the invitation alone. A fiche without one keeps the
+   amend band.
+2. Silences follow fixed rules, so the boards show only what the data
+   supports: no oral source for any name; the names with neither a dated
+   origin nor a dated trace; then what lies before the first name's oldest
+   trace (a plain year, a century, or neither), or, with no dated origin, the
+   year of its first dated trace. The Alaba line on an unexplained origin was
+   removed: no field of the data says it.
+3. The next step is the family, then the first name the people bears whose
+   fiche has a summary, otherwise the first country. `people-thin-alaba` now
+   shows Couchitique and Éthiopie.
+4. Folding Langue, Histoire and Culture et société stays to be drawn first.

@@ -51,6 +51,26 @@ export interface NameClosingCopy {
     seed: { people: string; country: string };
   };
   seedReason: { people: string; country: string };
+  /**
+   * The same blocks on a fiche (brief 2, approved 2026-10-15, boards
+   * people-*.dc.html): a fiche tells every name of its subject, so the
+   * sources block and the silences speak of « the names of this people ».
+   */
+  fiche: {
+    sourcesTitle: (subject: SearchEntityType) => string;
+    sourcesLead: (
+      accounts: number,
+      names: number,
+      subject: SearchEntityType
+    ) => string;
+    noOral: (subject: SearchEntityType) => string;
+    undated: (names: readonly string[]) => string;
+    firstWritten: (name: string, year: number) => string;
+    beforeCentury: (name: string, label: string) => string;
+    nextRelation: { family: string; patronyme: string; country: string };
+    carrier: (carrier: string, place?: string) => string;
+    reportedBy: (author: string, year: number | null, title: string) => string;
+  };
 }
 
 const about = aboutCopy.fr;
@@ -131,6 +151,31 @@ export const nameClosingCopy: Record<Language, NameClosingCopy> = {
       family: "Famille de langues",
       people: "Peuple",
       seed: { people: "Peuple", country: "Pays" },
+    },
+    fiche: {
+      sourcesTitle: (subject) =>
+        `Qui raconte les noms ${SUBJECT_FR[subject] ?? "de ce sujet"} ?`,
+      sourcesLead: (accounts, names, subject) =>
+        `Voici les ${accounts} récits des ${names} noms ${SUBJECT_FR[subject] ?? "de ce sujet"}, rangés par nom, puis selon le type de source qui les rapporte. Une même source peut en appuyer plusieurs.`,
+      noOral: (subject) =>
+        `Aucun récit transmis oralement n’est enregistré pour les noms ${SUBJECT_FR[subject] ?? "de ce sujet"}.`,
+      undated: (names) =>
+        names.length === 1
+          ? `L’origine du nom ${names[0]} n’est pas datée dans le projet pour l’instant.`
+          : `L’origine des noms ${joinFr(names)} n’est pas datée dans le projet pour l’instant.`,
+      firstWritten: (name, year) =>
+        `On ne sait pas avec certitude quand le nom ${name} a été écrit pour la première fois. La plus ancienne trace datée que le projet connaît est de ${year}.`,
+      beforeCentury: (name, label) =>
+        `Avant sa plus ancienne trace connue du projet, au ${label}, l’histoire du nom ${name} reste à écrire.`,
+      nextRelation: {
+        family: "Famille de langues",
+        patronyme: "Nom de famille",
+        country: "Pays",
+      },
+      carrier: (carrier, place) =>
+        `récit porté par ${carrier}${place ? `, ${place}` : ""}`,
+      reportedBy: (author, year, title) =>
+        `rapporté par ${author}${year ? `, ${year}` : ""}, « ${title} »`,
     },
     seedReason: {
       people:

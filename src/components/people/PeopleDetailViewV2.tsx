@@ -46,6 +46,13 @@ import type { PeopleFicheNotes } from "@/components/people/peopleFicheNotes";
 import type { FicheSourceEntry } from "@/lib/afrik/ficheSourceLabel";
 import type { Language } from "@/types/shared";
 import { peopleCopy } from "@/lib/i18n/copy/people";
+import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
+import {
+  NameClosingBand,
+  NameFicheSourcesBlock,
+} from "@/components/search/timeline/NameClosing";
+import { ficheSilences } from "@/lib/fiche/ficheNameClosing";
+import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
 
 export interface PeopleDetailViewV2Props {
   people: PeopleDetail;
@@ -96,6 +103,12 @@ export interface PeopleDetailViewV2Props {
    */
   peopleNameIndex?: readonly PeopleNameIndexEntry[];
   resolvedFamilyName?: string;
+  /**
+   * The fiche's nameHistory (brief 2, boards people-*.dc.html). With it the
+   * fiche tells who speaks for each of its names and closes on what the
+   * project does not know; without it the fiche keeps its amend band.
+   */
+  nameHistory?: NameHistory | null;
 }
 
 /**
@@ -149,6 +162,7 @@ export function PeopleDetailViewV2({
   onward,
   peopleNameIndex,
   resolvedFamilyName,
+  nameHistory = null,
 }: PeopleDetailViewV2Props) {
   const copy = peopleCopy[language];
   const data = transformPeopleData(people, namesDossier);
@@ -252,6 +266,15 @@ export function PeopleDetailViewV2({
           />
         </FicheSection>
       )}
+
+      {/* Brief 2: who speaks for each name, right after the names. */}
+      {nameHistory ? (
+        <NameFicheSourcesBlock
+          history={nameHistory}
+          subjectType="people"
+          language={language}
+        />
+      ) : null}
 
       <FicheSection
         title={copy.sections.distribution}
@@ -424,8 +447,24 @@ export function PeopleDetailViewV2({
 
       {/* After the chapters, before the way onward: the reader who has just
           finished a thin chapter is the one who knows what is missing from
-          it, and asking once they have gone is asking nobody. */}
-      <FicheAmendBand language={language} />
+          it, and asking once they have gone is asking nobody. With a
+          nameHistory the closing band asks (brief 2), so the amend band
+          would only repeat it. */}
+      {nameHistory && nameHistory.names.length > 0 ? (
+        <NameClosingBand
+          silences={ficheSilences(nameHistory, "people", language)}
+          contributionTarget={{
+            type: "people",
+            id: people.id,
+            name: data.hero.nameMain,
+            fieldPath: "naming",
+            fieldLabel: nameAnswerCopy[language].appellations,
+          }}
+          language={language}
+        />
+      ) : (
+        <FicheAmendBand language={language} />
+      )}
 
       {/* The way out sits before the bibliography, not after it. The reader
           this block exists for is the one who finished the reading, and
