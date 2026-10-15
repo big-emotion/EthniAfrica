@@ -105,15 +105,27 @@ export function validateInput(data, mode = "final", version) {
         "Folio order does not match sequence"
       );
     }
-    if (mode === "final")
+    if (mode === "final") {
       required(
         !Object.hasOwn(c, "demo"),
         "Demo content cannot be exported as final"
       );
+      // The 1.3.0 models mark unfilled image slots with `a-trouver-*.png`.
+      required(
+        !/(^|\/)a-trouver-[^/]*$/.test(c.image?.src || ""),
+        `Mock-up slot « image à trouver » cannot be exported as final: ${c.id}`
+      );
+    }
+    // 1.6.0: the signature line replaces the closing slogan, and a series'
+    // fixed closing sits on the last content card, so a closing card has none.
+    required(
+      c.type !== "closing" || !Object.hasOwn(c, "title"),
+      "Titre sur une carte de clôture : la ligne de signature remplace la phrase de clôture, retirer le titre."
+    );
     required(
       c.type === "dated"
         ? c.date && nonempty(c.date.display)
-        : nonempty(c.title),
+        : c.type === "closing" || nonempty(c.title),
       "Missing card title or date"
     );
     if (c.type === "dated")
@@ -608,7 +620,8 @@ export async function verifyOutput(options) {
       required(
         card.fit.ok &&
           !card.fit.overflow &&
-          card.fit.panelHeight <= 900 &&
+          card.fit.panelHeight <= (card.fit.series ? 828 : 900) &&
+          (!card.fit.series || card.fit.series.lines === 1) &&
           !card.fit.warnings.length &&
           !card.errors.length,
         "Invalid final/proof layout report"
@@ -625,6 +638,18 @@ export async function verifyOutput(options) {
             (atlas.maxLeader == null || atlas.maxLeader <= ATLAS_MAX_LEADER),
           "Atlas spacing outside the accepted limits"
         );
+    }
+    // 1.6.0: the accepted design records the line (version.json); the engine
+    // draws it from its own constant, so the two must agree, at y 760.
+    if (card.fit.type === "closing") {
+      const line = current.version.signatureLine;
+      required(
+        card.fit.sigline?.text === line &&
+          card.fit.sigline.lines === 3 &&
+          Math.abs(card.fit.sigline.top - 760) <= 0.5 &&
+          card.alt.endsWith(line),
+        "Closing card without the signature line in its place"
+      );
     }
     if (report.mode === "final")
       required(card.demo === false, "Demo in final report");

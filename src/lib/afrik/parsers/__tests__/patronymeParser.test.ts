@@ -13,6 +13,7 @@ describe("parsePatronymeFile", () => {
     "nisba",
     "praise_name",
     "totemic_clan",
+    "hereditary_family_name",
   ] as const;
 
   // @req REQ-133

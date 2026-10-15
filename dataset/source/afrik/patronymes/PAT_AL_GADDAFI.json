@@ -125,5 +125,170 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les recherches « Al-Gaddafi lignée », « Al-Gaddafi clan », « Al-Gaddafi tribe » et « Al-Gaddafi place name » n’ont pas permis de déterminer si cette graphie désigne une lignée, un clan, une caste, une classe d’âge ou un établissement dans le contexte précis de la fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Al-Gaddafi est un nom libyen, porté notamment par Muammar Gaddafi, que la presse rattache à la tribu des Qadhadhfa, dont Syrte est le bastion. Il se lirait « de la tribu Qadhadhfa » : c'est notre lecture. On l'écrit aussi Kadhafi en français. On ne sait pas avec certitude depuis quand il est écrit.",
+    "names": [
+      {
+        "nameText": "Al-Gaddafi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom libyen, peut-être « de la tribu Qadhadhfa » ; écrit aussi Kadhafi en français.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "Décrit en 2024"
+            },
+            "statement": "Le nom Al-Gaddafi se translittère Qadhdhāfi quand on suit une table de translittération de l'arabe. La forme Gaddafi, répandue dans le monde, rend un peu mieux la prononciation libyenne, plus proche du g, selon l'Institut suédois de la langue et du folklore.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Så ska utländska namn skrivas på svenska — Institutet för språk och folkminnen",
+                "author": "Institutet för språk och folkminnen",
+                "year": 2024,
+                "url": "https://www.isof.se/svenska-spraket/artiklar/sa-ska-utlandska-namn-skrivas-pa-svenska",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Guide officiel suédois de transcription, mis à jour le 5 avril 2024, lu le 14 octobre 2026. Il écrit que le nom de l'ancien dirigeant libyen se translittère « lämpligen Qadhdhāfi », et que la forme « Gaddafi », répandue dans le monde, « avspeglar ett mer g-haltigt libyskt uttal ». Il donne aussi la forme suédoise Kadaffi. Il ne propose pas d'étymologie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Décrit en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Al-Gaddafi est porté en Libye par Muammar Gaddafi, dont la tribu, les Qadhadhfa, a Syrte pour bastion, selon le journal Asharq Al-Awsat.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Sirte: From Al-Ghardabiya to ISIS, Through the Rise and Fall of Gaddafi",
+                "author": "Camille Tawil",
+                "year": 2021,
+                "url": "https://english.aawsat.com/node/2844351",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article d'Asharq Al-Awsat du 6 mars 2021, lu le 14 octobre 2026 : « Gaddafi transformed Sirte - the stronghold of his Qadhadhfa tribe - from a small marginal town on the Libyan coast [...] ». L'article ne parle pas du sens du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Lecture du projet d'après un journal"
+            },
+            "statement": "Le nom Al-Gaddafi viendrait du nom de la tribu des Qadhadhfa : il aurait la forme d'un nom d'origine, qui dit « de la tribu Qadhadhfa ». C'est la lecture que nous en faisons : aucune source lue ne l'énonce, et le journal cité nomme seulement la tribu de Muammar Gaddafi.",
+            "hypothesisGroup": "origine du nom Al-Gaddafi",
+            "sources": [
+              {
+                "title": "Sirte: From Al-Ghardabiya to ISIS, Through the Rise and Fall of Gaddafi",
+                "author": "Camille Tawil",
+                "year": 2021,
+                "url": "https://english.aawsat.com/node/2844351",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article d'Asharq Al-Awsat du 6 mars 2021, lu le 14 octobre 2026 : « Gaddafi transformed Sirte - the stronghold of his Qadhadhfa tribe - from a small marginal town on the Libyan coast [...] ». L'article ne parle pas du sens du nom."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kadhafi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La graphie française courante du nom Gaddafi.",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Kadhafi est la graphie française courante de Gaddafi : le Robert des noms propres l'emploie pour le colonel libyen. Le français confondait traditionnellement le qâf arabe avec le kâf, d'où le k, selon Richard Jacquemond.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Translittérer en caractères latins : Le grand souk",
+                "author": "Richard Jacquemond",
+                "year": null,
+                "url": "https://www.translitterature.fr/Doc/article_436.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 49-50",
+                "notes": "Translittérature, n° 26, dossier « Translittérer en caractères latins », p. 47-52, lu le 14 octobre 2026. Page 50 : le français confondait traditionnellement le qâf arabe avec le kâf, « ou Kadhafi pour le colonel libyen (graphies du Robert) ». Le numéro est daté de la fin 2003 ou du début 2004 ; nous n'avons pas trouvé sa date exacte."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Qadhadhfa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de la tribu de Syrte, qui descendrait, dit-on, d'un saint, Qadhaf al-Dam.",
+        "periodLabel": "Cité dès les années 1790 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2004,
+              "to": 2004,
+              "label": "Proposé en 2004"
+            },
+            "era": "modern",
+            "statement": "Le nom Qadhadhfa serait celui des descendants de Qadhaf al-Dam, un saint dont on suppose qu'il descendait de Musa al-Kazim, selon Faraj Najem, qui écrit « on dit ». Qadhaf al-Dam serait enterré dans la vallée d'al-Kure, près de Ghiryan, et ses descendants vivent dans l'étendue aride de Syrte.",
+            "hypothesisGroup": "origine du nom Qadhadhfa",
+            "sources": [
+              {
+                "title": "Tribe, Islam and State in Libya: Analytical Study of the Roots of the Libyan Tribal Society and Interaction up to the Qaramanli Rule (1711-1835)",
+                "author": "Faraj Najem",
+                "year": 2004,
+                "url": "https://westminsterresearch.westminster.ac.uk/download/926d7d076329ed28eba6c6893c17630fb1ec633a9e37b4a2ac4ea32394f484ed/19198678/Najem.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 150",
+                "notes": "Thèse de doctorat, Université de Westminster, 2004, lue le 14 octobre 2026 dans le dépôt WestminsterResearch. Page 150 : « It is said that the Gadhädhfa tribe in Libya are descendants of the \"sainted\" Qadhäf al-Dam whose descent is assumed to be of Müsa al-Käzim. Qadhaf al-Dam is buried in al-Küre valley near Ghiryän, but his descendants live in the wasteland of Sirt. » La note 85 renvoie à al-Tayyib, Mawsūʿat al-qabāʾil al-ʿarabiyya, vol. 1, p. 899-901."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1792,
+              "to": null,
+              "label": "Après 1792, rapporté en 2004"
+            },
+            "era": "polity",
+            "statement": "Le nom Qadhadhfa, que Faraj Najem écrit al-Qadhädhfa, figure dans sa thèse parmi les tribus libyennes parties en Égypte après la peste de 1785 et la sécheresse de 1792, d'après al-Zuwayy. C'est la plus ancienne trace de ce nom que le projet connaît ; elle est connue de seconde main, et Najem ne date pas ce départ plus précisément. Elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "formAsWritten": "al-Qadhädhfa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tribe, Islam and State in Libya: Analytical Study of the Roots of the Libyan Tribal Society and Interaction up to the Qaramanli Rule (1711-1835)",
+                "author": "Faraj Najem",
+                "year": 2004,
+                "url": "https://westminsterresearch.westminster.ac.uk/download/926d7d076329ed28eba6c6893c17630fb1ec633a9e37b4a2ac4ea32394f484ed/19198678/Najem.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 184-185",
+                "notes": "Thèse de doctorat, Université de Westminster, 2004, lue le 14 octobre 2026 dans le dépôt WestminsterResearch. Pages 184-185 : après la peste de l'été 1785 à Tripoli et la sécheresse de 1792, « tribes such as al-Firjan, al-Qadhädhfa, al-Tbül (section of Wrfalla tribe), al-ʿIbidät immigrated to Egypt in search for a better life » ; la note 30 renvoie à al-Zuwayy, p. 252."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

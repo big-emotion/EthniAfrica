@@ -6,7 +6,7 @@
   },
   "id": "PAT_MUKASA",
   "nameMain": "Mukasa",
-  "nameSystem": "totemic_clan",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Mukasa",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [
       {
@@ -99,7 +99,7 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "la recherche web et bibliographique combinant « Mukasa », « BAGANDA », « surname », « clan », « etymology », « transmission », « alliance » et « obituary », ainsi que la page Forebears dédiée et les travaux ou notices propres au nom cités dans la fiche n'ont pas établi que la catégorie provisoire « totemic_clan » décrive le nom lui-même ; elle reste un classement de travail et non une origine démontrée."
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues le disent un nom de personne ganda, donné selon les circonstances de la naissance. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant. La fiche reste donc parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "alliances",

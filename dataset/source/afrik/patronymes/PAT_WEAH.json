@@ -6,7 +6,7 @@
   },
   "id": "PAT_WEAH",
   "nameMain": "Weah",
-  "nameSystem": "clan_name",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Weah",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [
@@ -74,14 +74,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "nameSystem",
-      "reason": "Le Dictionary of American Family Names qualifie Weah de patronyme issu d'un nom personnel masculin, et Gunn documente une anglicisation historique du nom. Aucun de ces travaux ne dit si le patronyme désigne un clan ; la valeur typologique exigée par le modèle reste non résolue."
-    },
-    {
-      "fieldPath": "designatedSocialUnit",
-      "reason": "Gunn décrit les panton ou patrilignages kru en général, mais ne rattache pas Weah à l'un d'eux. L'entrée onomastique ne nomme pas davantage d'unité sociale ; aucune désignation de clan ou de lignage ne peut être affirmée."
-    },
     {
       "fieldPath": "origin.oralTraditions",
       "reason": "Gunn cite des traditions kru recueillies par James Connelly, mais le passage propre à Weah est une explication historique d'anglicisation et n'attribue aucun récit du nom à un griot identifiable. Les recherches « Weah Kru oral tradition » n'ont pas fourni la transcription requise."

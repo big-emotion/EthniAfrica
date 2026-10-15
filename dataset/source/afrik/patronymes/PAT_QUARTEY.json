@@ -68,7 +68,7 @@
     },
     {
       "sourceKey": "accra-archive-quartey",
-      "title": "What’s in a (Ga) Name?",
+      "title": "What's in a (Ga) Name?",
       "url": "https://www.accraarchive.com/blog/whats-in-a-ga-name",
       "tier": "unverified",
       "source_kind": "community",
@@ -201,13 +201,13 @@
             ],
             "sources": [
               {
-                "title": "A Grammatical Sketch of the Akra- or Gã-Language, vol. I",
+                "title": "A Grammatical Sketch of the Akra- or Gã-Language",
                 "author": "Johannes Zimmermann",
                 "year": 1858,
                 "url": "https://archive.org/details/agrammaticalske01zimmgoog",
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
-                "page": "p. 133 ; p. 186",
+                "page": "p. 133 ; p. 186 de la grammaire",
                 "notes": "Stuttgart, imprimé pour la Société missionnaire de Bâle par J. F. Steinkopf, 1858. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 133 : exemple de grammaire « Bo, Kwate, yile, thou Kwate didst beat him ». Page 186 : « Kwatei Kodso », un chef, dans le récit en ga de la guerre de Katamanso, datée « about 1826 ». Auteur de l'époque coloniale, cité ici pour les formes qu'il relève."
               },
               {

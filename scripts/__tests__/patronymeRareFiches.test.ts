@@ -45,6 +45,7 @@ describe("ETNI-1682 rare patronyme fiches", () => {
       "nisba",
       "praise_name",
       "totemic_clan",
+      "hereditary_family_name",
     ]);
 
     for (const [id, nameSystem] of Object.entries(FICHES)) {

@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><title>EthniAfrica Cartes : vidéo de série plein écran</title>
+<link rel="stylesheet" href="../components/bundle.css">
+<script src="../components/bundle.js"></script>
+<script src="video-board-sat.js"></script>
+<style>
+/* 1.4.0-proposition: the series video in full screen. The image fills the whole
+   1080 x 1920 frame; only text sits on it. No band of ground, no veil, no scrim:
+   every text carries its own dark outline (Vidéo carte 0.4.0's subtitle treatment). */
+@font-face{font-family:"Nunito Sans";src:url(../fonts/NotoSans-Variable.ttf);font-weight:200 1000;unicode-range:U+02BE-02BF}
+html,body{margin:0;background:#000}
+.vf{position:relative;width:1080px;height:1920px;overflow:hidden;background:#0b0806;
+  /* On-image inks: the same in Nuit and Parchemin (tokens on-image-*). */
+  --oi-ink:#f3e9da;--oi-text:#fffaf2;--oi-muted:#cbbba3;--oi-faint:#a8977f;--oi-accent:#e8b96a;--oi-on-accent:#1a120a;
+  --oi-stroke:rgba(11,8,6,.92);--oi-shadow:rgba(11,8,6,.7);
+  --oi-area-a:#e8b96a;--oi-area-b:#6cc3b5;--oi-area-c:#e3876a}
+.vf[data-ink="p2"]{--oi-ink:#2a1e15;--oi-text:#2a1e15;--oi-muted:#55463a;--oi-faint:#655443;--oi-accent:#7f5212;--oi-on-accent:#fffaf0;--oi-stroke:rgba(255,250,240,.92);--oi-shadow:rgba(255,250,240,.75);--oi-area-a:#875714;--oi-area-b:#256b62;--oi-area-c:#a3462a}
+.layer{position:absolute;inset:0}
+.pic{position:absolute;inset:0;overflow:hidden}
+.pic img{position:absolute;max-width:none;display:block}
+.pic svg.ec-map{position:absolute;left:0;top:0;width:1080px;height:1920px;display:block}
+/* « Image à trouver »: the renderer draws the slot over the whole frame, in the theme's ground. */
+.slot{position:absolute;inset:0;background:repeating-linear-gradient(135deg,var(--ground) 0 18px,var(--slot-stripe) 18px 22px)}
+.vf[data-theme="nuit"] .slot{--slot-stripe:#2a2118}
+.vf[data-theme="parchemin"] .slot{--slot-stripe:#ebe1d0}
+.slot:before{content:'';position:absolute;left:48px;top:48px;right:48px;bottom:48px;border:2px solid var(--rule)}
+.slot-text{position:absolute;left:120px;right:120px;top:760px;height:480px;display:flex;flex-direction:column;justify-content:center;gap:14px}
+/* The one text treatment: light letters on a dark outline painted under them. */
+.oi{--area-a-ink:var(--oi-area-a);--area-b-ink:var(--oi-area-b);--area-c-ink:var(--oi-area-c);color:var(--oi-ink);paint-order:stroke fill;-webkit-text-stroke:var(--sw,6px) var(--oi-stroke);text-shadow:0 1px 8px var(--oi-shadow)}
+.oi-l{text-shadow:0 2px 14px var(--oi-shadow)}
+.oi .ec-accent,.oi em{color:var(--oi-accent);font-style:normal}
+.oi [class*="area-a"]{color:var(--oi-area-a)} .oi [class*="area-b"]{color:var(--oi-area-b)} .oi [class*="area-c"]{color:var(--oi-area-c)}
+/* Bands, at 1080 x 1920 */
+.band{position:absolute;left:60px;right:60px;top:250px;font:800 32px/40px var(--font-text);letter-spacing:.02em;--sw:4px;white-space:nowrap}
+.band .sep{color:var(--oi-faint)} .band .ep{color:var(--oi-accent)}
+.head{position:absolute;left:60px;width:960px;top:318px;display:flex;flex-direction:column}
+.head .kick{font:800 30px/36px var(--font-text);letter-spacing:.02em;color:var(--oi-accent);--sw:4px;margin-bottom:10px}
+.head .title{font:400 88px/90px var(--font-display);letter-spacing:.005em;margin:0;text-wrap:balance;--sw:10px}
+.head .title.xl{font-size:116px;line-height:112px;--sw:13px}
+.head .date{font:400 176px/156px var(--font-display);letter-spacing:.01em;color:var(--oi-accent);margin:0;--sw:14px;white-space:nowrap}
+.head .lab{font:800 22px/28px var(--font-text);letter-spacing:.1em;text-transform:uppercase;color:var(--oi-muted);--sw:4px;margin-top:14px}
+.head .name{font:400 76px/82px var(--font-display);--sw:8px;margin-top:2px}
+.close{position:absolute;left:60px;right:60px;top:318px;text-align:center;display:flex;flex-direction:column;align-items:center}
+/* 1.6.0: the signature line, Fraunces 600 56/64 as on the closing card, three lines, its top at y 318. */
+.close .sigline{font:600 56px/64px var(--font-wordmark);letter-spacing:-.005em;--sw:8px}
+.close .sigline span{display:block;white-space:nowrap}
+.close .sigline + .sent{margin-top:28px}
+.close .slogan{font:400 84px/88px var(--font-display);text-transform:uppercase;--sw:10px;text-wrap:balance}
+.close .sent{font:700 32px/40px var(--font-text);color:var(--oi-ink);--sw:4px;margin-top:18px;max-width:900px;text-wrap:balance}
+.close .pill{margin-top:30px;display:inline-block;font:800 34px/40px var(--font-text);letter-spacing:.04em;text-transform:uppercase;color:var(--oi-accent);--sw:4px;border:3px solid var(--oi-accent);border-radius:999px;padding:14px 40px;box-shadow:0 0 0 2px var(--oi-stroke),inset 0 0 0 2px var(--oi-stroke)}
+.sub{position:absolute;left:60px;width:960px;top:1316px;height:136px;display:flex;flex-direction:column;justify-content:center;z-index:5}
+.sub-line{text-align:center;white-space:pre;font:800 56px/68px var(--font-text);color:var(--oi-text);-webkit-text-stroke:9px var(--oi-stroke);paint-order:stroke fill;text-shadow:0 2px 14px var(--oi-shadow)}
+.lit{background:var(--oi-accent);color:var(--oi-on-accent);border-radius:6px;box-shadow:6px 0 0 var(--oi-accent),-6px 0 0 var(--oi-accent);-webkit-text-stroke:0;text-shadow:none}
+.foot{position:absolute;left:60px;width:960px;bottom:134px;display:flex;flex-direction:column;gap:4px}
+.foot .key{display:flex;align-items:center;gap:14px;font:800 26px/32px var(--font-text);--sw:4px;margin-bottom:10px}
+.foot .key i{width:34px;height:24px;border-radius:3px;flex:none;box-shadow:0 0 0 2px var(--oi-stroke)}
+.foot .src{font:700 24px/30px var(--font-text);color:var(--oi-ink);--sw:4px}
+.foot .cred{font:700 22px/28px var(--font-text);color:var(--oi-muted);--sw:4px}
+.gsign{position:absolute;left:60px;bottom:36px;height:48px;display:flex;align-items:center;z-index:4}
+.sign{display:flex;align-items:center;gap:14px}
+.sign img{width:44px;height:44px;display:block;filter:drop-shadow(0 0 2px rgba(11,8,6,.95)) drop-shadow(0 1px 6px rgba(11,8,6,.6))}
+.sign b{font:600 32px/38px var(--font-wordmark);--sw:4px;font-weight:600}
+.close-sign{position:absolute;left:0;right:0;bottom:36px;display:flex;flex-direction:column;align-items:center;gap:12px}
+.close-sign .cred{font:700 22px/28px var(--font-text);color:var(--oi-muted);--sw:4px;text-align:center;max-width:900px}
+.close-sign .sign img{width:56px;height:56px}
+.close-sign .sign b{font-size:44px;line-height:48px;--sw:6px}
+.tape{background:var(--demo-tape,#ffe58a);color:var(--demo-ink,#2b2100);font:800 22px/28px var(--font-text);letter-spacing:.06em;text-transform:uppercase;padding:10px 22px;border-radius:999px;white-space:nowrap}
+.tape-abs{position:absolute;right:60px;top:178px;z-index:9}
+.sat-name{white-space:nowrap;z-index:2}
+/* 1.4.1: names on imagery, the satellite video's 0.4.0 styles, each on its halo. */
+.sat-region{font:400 44px/52px var(--font-display);letter-spacing:.12em;text-indent:.12em;color:rgba(243,233,218,.94);text-shadow:0 0 2px rgba(11,8,6,.95),0 0 8px rgba(11,8,6,.8),0 1px 14px rgba(11,8,6,.6)}
+.sat-area{font:700 32px/38px var(--font-text);text-shadow:0 0 2px rgba(11,8,6,.95),0 0 8px rgba(11,8,6,.8),0 1px 14px rgba(11,8,6,.6)}
+.sat-place{font:800 28px/32px var(--font-text);color:#f3e9da;text-shadow:0 0 2px rgba(11,8,6,.95),0 0 6px rgba(11,8,6,.8),0 1px 10px rgba(11,8,6,.6)}
+.foot .key i.sw{box-shadow:none}
+.keys2 .key{margin-bottom:6px;font-size:24px;line-height:30px}
+.keys2 .key span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* 1.7.0-proposition: the long series video. */
+.head .title.chap{font-size:116px;line-height:112px;--sw:13px;max-width:900px}
+.head .chapnum{display:flex;align-items:baseline;gap:18px;margin-bottom:0}
+.head .chapnum b{font:400 176px/140px var(--font-display);color:var(--oi-accent);--sw:14px;font-weight:400}
+.head .chapnum span{font:800 30px/36px var(--font-text);color:var(--oi-muted);--sw:4px;letter-spacing:.02em}
+.list{width:960px;display:flex;flex-direction:column;margin-top:30px}
+.list .row{margin-top:22px}
+.list .row:first-child{margin-top:0}
+.list .rlab{font:800 26px/32px var(--font-text);letter-spacing:.02em;color:var(--oi-accent);--sw:4px}
+.list .txt{font:800 40px/48px var(--font-text);color:var(--oi-text);--sw:6px;text-wrap:balance}
+.list .by{font:700 26px/32px var(--font-text);color:var(--oi-muted);--sw:4px}
+.figs{width:960px;display:grid;grid-template-columns:1fr 1fr;gap:34px 40px;margin-top:34px}
+.figs .val{font:400 112px/104px var(--font-display);color:var(--oi-ink);--sw:12px;white-space:nowrap}
+.figs .val small{font:400 52px/52px var(--font-display);--sw:7px;margin-left:10px}
+.figs .val i{font:800 30px/36px var(--font-text);font-style:normal;color:var(--oi-muted);--sw:4px;display:block;margin-bottom:4px}
+.figs .flab{font:700 30px/38px var(--font-text);color:var(--oi-ink);--sw:4px;margin-top:8px;text-wrap:balance}
+.attr{position:absolute;left:60px;width:900px;bottom:624px;display:flex;flex-direction:column}
+.attr .nm{font:800 34px/40px var(--font-text);color:var(--oi-text);--sw:5px}
+.attr .rl{font:700 26px/32px var(--font-text);color:var(--oi-muted);--sw:4px}
+.close .next{margin-top:30px;font:700 32px/40px var(--font-text);--sw:4px;color:var(--oi-ink)}
+.close .next em{color:var(--oi-accent);font-style:normal;font-weight:800}
+/* 1.8.0-proposition: document cards and teaching cards. */
+.docst{position:absolute;overflow:hidden}
+.docmark{position:absolute;height:7px;background:var(--oi-accent);box-shadow:0 0 0 2px rgba(11,8,6,.85);border-radius:2px}
+.fx{position:absolute;left:60px;width:960px;top:740px;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center}
+.fx .day{font:800 40px/48px var(--font-text);color:var(--oi-ink);--sw:5px}
+.fx .day .r{color:var(--oi-accent)}
+.fx .lab{font:800 32px/38px var(--font-text);color:var(--oi-ink);--sw:5px;margin-top:10px}
+.fx .eq{font:400 120px/124px var(--font-display);color:var(--oi-ink);--sw:12px;white-space:nowrap}
+.fx .eq .r{color:var(--oi-accent)}
+.fx .eq .op{font:800 64px/64px var(--font-text);color:var(--oi-muted);--sw:7px;margin:0 22px;position:relative;top:-14px}
+.fx .eq .gone{opacity:.3}
+.fx .note{font:700 26px/32px var(--font-text);color:var(--oi-muted);--sw:4px;margin-top:8px;max-width:900px}
+.sbs{width:960px;display:grid;grid-template-columns:1fr 1fr;gap:16px 40px;margin-top:34px}
+.sbs .hd{font:800 28px/34px var(--font-text);color:var(--oi-accent);--sw:4px}
+.sbs .nm{font:400 72px/74px var(--font-display);color:var(--oi-ink);--sw:9px;white-space:nowrap}
+.sbs .dy{font:800 36px/42px var(--font-text);color:var(--oi-accent);--sw:5px;min-height:42px}
+.sbs .note{grid-column:1 / span 2;font:700 28px/36px var(--font-text);color:var(--oi-muted);--sw:4px;margin-top:10px}
+.week{width:960px;display:grid;grid-template-columns:150px 1fr 1fr;gap:10px 24px;margin-top:30px;align-items:baseline}
+.week .hd{font:800 28px/34px var(--font-text);color:var(--oi-accent);--sw:4px}
+.week .wsub{font:700 22px/28px var(--font-text);color:var(--oi-muted);--sw:4px;margin-top:-6px}
+.week .dn{font:800 30px/36px var(--font-text);color:var(--oi-muted);--sw:4px}
+.week .nm{font:800 38px/44px var(--font-text);color:var(--oi-text);--sw:5px;white-space:nowrap}
+.week .dw{font:700 24px/28px var(--font-text);color:var(--oi-muted);--sw:4px;display:block}
+.guides{position:absolute;inset:0;z-index:20;pointer-events:none;font:700 22px/28px var(--font-text)}
+</style>
+</head><body><div id="out"></div>
+<script>
+/* One frame of the series video, full screen (1.4.0-proposition), 1080 x 1920.
+   ?card=ID  next=ID  fade=0..1 (opacity of the incoming card)  sub=line1|line2  lit=word
+   zoom=1..1.04  guides=1  ink=p2 (comparison only)  view=x,y,w,h (map)  find=text (slot)
+   Result: body[data-ready=1], window.__boxes, window.__report. */
+(async function () {
+  var q = new URLSearchParams(location.search);
+  var tokens = await (await fetch('../tokens.json')).json();
+  await EthniCards.installTokens(tokens, '../');
+  var data = await (await fetch(q.get('cards') || 'cards180.json')).json();
+  var FIND = {
+    'serie-pays-03': "le texte de l'ordonnance du 2 août 1984, ou une photographie datée de Thomas Sankara en 1984, du domaine public ou sous licence libre",
+    'serie-pays-05': "un document daté où on lit le mot « burkinabè » : journal, affiche ou texte officiel",
+    'serie-pays-06': "les ouvrages cités (Maharaux 1995, Izard 1985), photographiés par l'équipe",
+    'serie-frontieres-03': "[à choisir avec l'épisode] : la frontière ou le traité qui l'a tracée, document daté",
+    'serie-villes-03': "[à choisir avec l'épisode] : la ville, photographie sous licence libre, ou son ancien nom sur un document daté"
+  };
+  function resolve(n) { return '../assets/' + n; }
+  function card(id) { return JSON.parse(JSON.stringify(data.cards.find(function (c) { return c.id === id; }))); }
+  function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;'); }
+  function fr(s) { return esc(s).replace(/\s+([;:!?»])/g, ' $1').replace(/«\s+/g, '« '); }
+  var first = card(q.get('card'));
+  if (q.get('datetext') && first.date) first.date.display = q.get('datetext');
+  var theme = first.theme || 'nuit';
+  var out = document.getElementById('out');
+  var vf = document.createElement('div'); vf.className = 'vf'; vf.setAttribute('data-theme', theme);
+  if (q.get('ink')) vf.setAttribute('data-ink', q.get('ink'));
+  out.appendChild(vf);
+  var zoom = parseFloat(q.get('zoom') || '1');
+  // 1.4.1: satellite views of the map cards (prep script), when given.
+  var VIEWS = null, SATBASE = q.get('sat') || '';
+  if (SATBASE) VIEWS = await (await fetch(SATBASE + 'views.json')).json();
+  var report = { cards: [] };
+
+  function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
+
+  // The photograph fills the frame: cover scale, its focal point brought to
+  // (540, 1000), the middle of the clear zone, as far as the edges allow.
+  function placeImage(img, focus, z) {
+    var W = img.naturalWidth, H = img.naturalHeight, s = Math.max(1080 / W, 1920 / H);
+    var w = W * s, h = H * s;
+    var left = Math.min(0, Math.max(1080 - w, 540 - focus[0] * w));
+    var top = Math.min(0, Math.max(1920 - h, 1000 - focus[1] * h));
+    img.style.width = w + 'px'; img.style.height = h + 'px'; img.style.left = left + 'px'; img.style.top = top + 'px';
+    var fx = left + focus[0] * w, fy = top + focus[1] * h;
+    img.style.transformOrigin = (fx - left) + 'px ' + (fy - top) + 'px';
+    img.style.transform = 'scale(' + z + ')';
+    return { natural: [W, H], scale: +(s * z).toFixed(2), keptWidth: +(1080 / w).toFixed(2), keptHeight: +(1920 / h).toFixed(2), focusAt: [Math.round(fx), Math.round(fy)] };
+  }
+
+  async function layer(spec, picOp, textOp) {
+    if (spec.map && spec.map.dataRef && !spec.map.data) spec.map.data = await (await fetch(resolve(spec.map.dataRef))).json();
+    var c = EthniCards.render(spec, { context: 'video', resolve: resolve, logo: data.logo, demo: false });
+    function pick(sel) { return c.querySelector(sel); }
+    var L = el('div', 'layer'); vf.appendChild(L);
+    var pic = el('div', 'pic'); L.appendChild(pic);
+    var rep = { id: spec.id };
+    var src = spec.image && spec.image.src || '';
+    if (spec.map && VIEWS && VIEWS[spec.id]) {
+      // 1.4.1: the map card on satellite imagery.
+      var sat = await SeriesSat.draw(pic, spec, VIEWS[spec.id], { zoom: zoom, satBase: SATBASE });
+      rep.sat = { spanKm: Math.round(sat.spanKm), capped: sat.capped, names: sat.count, subject: [sat.subject.x0, sat.subject.y0, sat.subject.x1, sat.subject.y1].map(Math.round) };
+    } else if (c._map || spec.map) {
+      var svg = pick('svg.ec-map');
+      var vb = svg.getAttribute('viewBox').split(/[ ,]+/).map(Number);
+      svg.setAttribute('width', 1080); svg.setAttribute('height', 1920);
+      svg.setAttribute('preserveAspectRatio', 'xMidYMid slice');
+      pic.appendChild(svg);
+      var v = (q.get('view') || '').split(',').map(Number);
+      if (v.length !== 4 || v.some(isNaN)) {
+        // The video's own view: the subject of the map (highlight or areas)
+        // brought to (540, 1000), at the card's scale or closer, never past
+        // the edge of the map's data (its water rectangle).
+        // The base map's extent: every drawn path (land, borders, lakes), the
+        // sea painted behind it in the water colour.
+        var water = svg.querySelector('.ec-m-water');
+        if (water) pic.style.background = getComputedStyle(water).fill;
+        var pb = Array.prototype.map.call(svg.querySelectorAll('path'), function (e) { return e.getBBox(); }).reduce(function (a, b) { return { x0: Math.min(a.x0, b.x), y0: Math.min(a.y0, b.y), x1: Math.max(a.x1, b.x + b.width), y1: Math.max(a.y1, b.y + b.height) }; }, { x0: 1e9, y0: 1e9, x1: -1e9, y1: -1e9 });
+        var wb = { x: pb.x0, y: pb.y0, width: pb.x1 - pb.x0, height: pb.y1 - pb.y0 };
+        rep.baseExtent = [Math.round(wb.x), Math.round(wb.y), Math.round(wb.width), Math.round(wb.height)];
+        var subj = Array.prototype.map.call(svg.querySelectorAll('.ec-m-hl, .ec-m-area, [class*="ec-m-zone"]'), function (e) { return e.getBBox(); });
+        var bx = subj.length ? subj.reduce(function (a, b) { return { x0: Math.min(a.x0, b.x), y0: Math.min(a.y0, b.y), x1: Math.max(a.x1, b.x + b.width), y1: Math.max(a.y1, b.y + b.height) }; }, { x0: 1e9, y0: 1e9, x1: -1e9, y1: -1e9 }) : { x0: vb[0], y0: vb[1], x1: vb[0] + vb[2], y1: vb[1] + vb[3] };
+        var cx = (bx.x0 + bx.x1) / 2, cy = (bx.y0 + bx.y1) / 2;
+        var cardU = vb[2] / 1080;
+        var u = Math.min(cardU, (cx - wb.x) / 540, (wb.x + wb.width - cx) / 540, (wb.y + wb.height - cy) / 920, (cy - wb.y) / 1000);
+        u = Math.max(u, cardU / 2); // at most twice as close as on the card
+        // A subject wider than the frame (with 60 px margins) sets the scale instead.
+        u = Math.max(u, (bx.x1 - bx.x0) / 960);
+        var x0 = Math.min(Math.max(cx - 540 * u, wb.x), wb.x + wb.width - 1080 * u), y0 = Math.min(Math.max(cy - 1000 * u, wb.y), wb.y + wb.height - 1920 * u);
+        v = [x0, y0, 1080 * u, 1920 * u];
+        rep.subjectAt = [Math.round((cx - x0) / u), Math.round((cy - y0) / u)];
+        rep.closer = +(cardU / u).toFixed(2); rep.subjectBox = [Math.round((bx.x0 - x0) / u), Math.round((bx.y0 - y0) / u), Math.round((bx.x1 - x0) / u), Math.round((bx.y1 - y0) / u)]; if (rep.subjectBox[1] < 724) rep.problem = 'Le sujet de la carte passe sous la tête : fond de carte trop court vers le nord';
+      }
+      svg.setAttribute('viewBox', v.join(' '));
+      svg.style.transformOrigin = '540px 1000px'; svg.style.transform = 'scale(' + zoom + ')';
+      rep.map = { cardView: vb, videoView: v.map(function (n) { return +n.toFixed(1); }) };
+    } else if (/a-trouver-/.test(src)) {
+      pic.appendChild(el('div', 'slot'));
+      var t = el('div', 'slot-text');
+      t.appendChild(el('div', 'oi', '<span style="font:800 30px/36px var(--font-text);letter-spacing:.1em;text-transform:uppercase;color:var(--oi-accent);--sw:4px" class="oi">Image à trouver</span>'));
+      t.appendChild(el('div', 'oi', fr(FIND[spec.id] || '')));
+      t.lastChild.style.cssText = 'font:700 40px/52px var(--font-text);--sw:6px;text-wrap:pretty';
+      L.appendChild(t);
+      rep.slot = true;
+    } else if (src && spec.image.document) {
+      // 1.8.0: a document card. The quoted passage is brought to (540, 1000)
+      // at the scale that sets it 960 px wide (never past 1.5 frame pixels per
+      // source pixel, never under the cover scale); outside a band around the
+      // passage the page goes out of focus, so the head and the subtitle sit on
+      // a soft texture instead of printed lines. The passage is never retouched.
+      var D = spec.image.document, dimg = new Image(); dimg.decoding = 'sync'; dimg.alt = ''; dimg.src = resolve(src);
+      await dimg.decode().catch(function () {});
+      var W0 = dimg.naturalWidth, H0 = dimg.naturalHeight, pad = D.pad || 0, Ht = H0 + pad, P = D.passage;
+      var cover = Math.max(1080 / W0, 1920 / Ht), sc = Math.max(cover, Math.min(1.5, (D.width || 960) / P[2]));
+      var cx = P[0] + P[2] / 2, cy = pad + P[1] + P[3] / 2;
+      var edge = D.edge != null ? D.edge : 400;
+      // Near the page's edge the frame may show past it, at most 400 px, on the frame's own dark ground: the page ends there.
+      var dl = Math.min(0, Math.max(1080 - W0 * sc, 540 - cx * sc)), dt = Math.min(edge, Math.max(1920 - Ht * sc - edge, 1000 - cy * sc));
+      var edgeUsed = Math.round(Math.max(0, dt, (dt + Ht * sc) < 1920 ? 1920 - (dt + Ht * sc) : 0));
+      var stage = function (blur) {
+        var st = el('div', 'docst');
+        st.style.cssText = 'left:' + dl + 'px;top:' + dt + 'px;width:' + (W0 * sc) + 'px;height:' + (Ht * sc) + 'px;background:' + (D.padColor || '#fff') + ';transform-origin:' + (540 - dl) + 'px ' + (1000 - dt) + 'px;transform:scale(' + zoom + ')' + (blur ? ';filter:blur(' + blur + 'px)' : '');
+        var im = dimg.cloneNode(); im.style.cssText = 'position:absolute;left:0;top:' + (pad * sc) + 'px;width:' + (W0 * sc) + 'px;height:' + (H0 * sc) + 'px;max-width:none';
+        st.appendChild(im); pic.appendChild(st); return st;
+      };
+      var py0 = (pad + P[1]) * sc, py1 = py0 + P[3] * sc, sharp;
+      if ((q.get('docmode') || D.mode) !== 'plain') {
+        stage(D.blur || 7); sharp = stage(0);
+        var a = py0 - 48, b = py1 + 48, f = 90;
+        sharp.style.webkitMaskImage = sharp.style.maskImage = 'linear-gradient(to bottom, transparent ' + (a - f) + 'px, #000 ' + a + 'px, #000 ' + b + 'px, transparent ' + (b + f) + 'px)';
+      } else sharp = stage(0);
+      (D.marks || []).forEach(function (m) {
+        var u = el('div', 'docmark');
+        u.style.cssText = 'left:' + (m[0] * sc) + 'px;top:' + ((pad + m[1] + m[3]) * sc + 5) + 'px;width:' + (m[2] * sc) + 'px;opacity:' + (q.get('mark') != null ? +q.get('mark') : 1);
+        sharp.appendChild(u);
+      });
+      rep.doc = { edge: edgeUsed, scale: +sc.toFixed(3), cover: +cover.toFixed(3), passage: [Math.round(dl + P[0] * sc), Math.round(dt + py0), Math.round(P[2] * sc), Math.round(P[3] * sc)], text: D.lineHeight ? Math.round(D.lineHeight * sc) : null };
+    } else if (src) {
+      var img = new Image(); img.decoding = 'sync'; img.alt = ''; img.src = resolve(src);
+      pic.appendChild(img);
+      await img.decode().catch(function () {});
+      rep.image = placeImage(img, spec.image.focus || [0.5, 0.5], zoom);
+    }
+    if (spec.type === 'closing') {
+      var cl = el('div', 'close');
+      cl.appendChild(el('div', 'sigline oi oi-l', EthniCards.signatureLines.map(function (t) { return '<span>' + esc(t) + '</span>'; }).join('')));
+      if (pick('.ec-body')) cl.appendChild(el('div', 'sent oi', pick('.ec-body').innerHTML));
+      var p = pick('.ec-cta-pill'); cl.appendChild(el('div', 'pill oi', esc((p ? p.textContent : 'ethniafrica.com').toUpperCase())));
+      if (spec.next) cl.appendChild(el('div', 'next oi', '<em>Prochain épisode :</em> ' + fr(spec.next)));
+      L.appendChild(cl);
+      var cs = el('div', 'close-sign');
+      if (spec.credit) cs.appendChild(el('div', 'cred oi', fr(spec.credit)));
+      cs.appendChild(el('div', 'sign', '<img src="' + resolve(data.logo) + '" alt=""><b class="oi">EthniAfrica</b>'));
+      L.appendChild(cs);
+    } else {
+      var head = el('div', 'head');
+      var k = pick('.ec-kicker');
+      if (spec.type === 'chapter') {
+        if (spec.chapterStyle !== 'kicker') head.appendChild(el('div', 'chapnum', '<b class="oi oi-l">' + spec.chapter.n + '</b><span class="oi">sur ' + spec.chapter.of + '</span>'));
+        else head.appendChild(el('div', 'kick oi', 'Chapitre ' + spec.chapter.n + ' sur ' + spec.chapter.of));
+        head.appendChild(el('h2', 'title chap oi oi-l', fr(spec.chapter.title)));
+      } else if (spec.signed) head.appendChild(el('div', 'kick oi', 'Nous pensons'));
+      else if (spec.chapterKicker) head.appendChild(el('div', 'kick oi', fr(spec.chapterKicker)));
+      else if (k && k.textContent.trim()) head.appendChild(el('div', 'kick oi', k.innerHTML));
+      if (spec.date) {
+        // A date is one group: day, month and year never part.
+        var M = '(janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre)';
+        var dh = pick('.ec-date').innerHTML.replace(new RegExp('(\\d+(?:er|<sup>er</sup>)?) ' + M + ' (\\d{3,4})', 'g'), '$1\u00a0$2\u00a0$3').replace(new RegExp(M + ' (\\d{3,4})', 'g'), '$1\u00a0$2');
+        var d = el('div', 'date oi oi-l', dh);
+        head.appendChild(d);
+        var nm = pick('.ec-field .ec-field-name');
+        if (nm) { head.appendChild(el('div', 'lab oi', pick('.ec-field .ec-label').innerHTML)); head.appendChild(el('div', 'name oi oi-l', nm.innerHTML)); }
+        rep.date = d; rep.dateHtml = dh;
+      } else if (spec.type !== 'chapter') head.appendChild(el('h2', 'title oi oi-l' + (spec.type === 'opener' ? ' xl' : ''), pick('.ec-title').innerHTML));
+      L.appendChild(head);
+      var shown = q.get('rows') != null ? +q.get('rows') : 99;
+      if (spec.readings) {
+        var li = el('div', 'list');
+        spec.readings.items.forEach(function (it, i) {
+          var r = el('div', 'row');
+          if (it.label) r.appendChild(el('div', 'rlab oi', fr(it.label)));
+          r.appendChild(el('div', 'txt oi', fr(it.text)));
+          if (it.by) r.appendChild(el('div', 'by oi', fr(it.by)));
+          r.style.opacity = i < shown ? 1 : 0;
+          li.appendChild(r);
+        });
+        head.appendChild(li);
+      }
+      if (spec.figures) {
+        var fg = el('div', 'figs');
+        spec.figures.items.forEach(function (it, i) {
+          var c = el('div', 'fig');
+          c.appendChild(el('div', 'val oi oi-l', (it.pre ? '<i class="oi">' + fr(it.pre) + '</i>' : '') + fr(it.value).replace(/ /g, '\u202f') + (it.unit ? '<small class="oi">' + fr(it.unit) + '</small>' : '')));
+          c.appendChild(el('div', 'flab oi', fr(it.label)));
+          c.style.opacity = i < shown ? 1 : 0;
+          fg.appendChild(c);
+        });
+        head.appendChild(fg);
+      }
+      if (spec.sbs) {
+        var sb = el('div', 'sbs'), nr = q.get('rows') != null ? +q.get('rows') : 99, nd = q.get('days') != null ? +q.get('days') : 1;
+        spec.sbs.heads.forEach(function (h) { sb.appendChild(el('div', 'hd oi', fr(h))); });
+        spec.sbs.rows.forEach(function (r, i) {
+          r.forEach(function (c) {
+            var cell = el('div', 'cell');
+            cell.appendChild(el('div', 'nm oi oi-l', fr(c.name)));
+            var dy = el('div', 'dy oi', fr(c.day)); dy.style.opacity = nd; cell.appendChild(dy);
+            cell.style.opacity = i < nr ? 1 : 0; sb.appendChild(cell);
+          });
+        });
+        if (spec.sbs.note) { var sn = el('div', 'note oi', fr(spec.sbs.note)); sn.style.opacity = q.get('note') != null ? +q.get('note') : 1; sb.appendChild(sn); }
+        head.appendChild(sb);
+      }
+      if (spec.week) {
+        var wk = el('div', 'week');
+        spec.week.heads.forEach(function (h) { wk.appendChild(el('div', 'hd oi', fr(h))); });
+        spec.week.subs.forEach(function (h) { wk.appendChild(el('div', 'wsub oi', fr(h))); });
+        spec.week.rows.forEach(function (r) {
+          wk.appendChild(el('div', 'dn oi', fr(r[0])));
+          [r[1], r[2]].forEach(function (c) { wk.appendChild(el('div', 'nm oi', fr(c[1]) + ' · ' + fr(c[2]) + '<span class="dw oi">' + fr(c[0]) + '</span>')); });
+        });
+        head.appendChild(wk);
+      }
+      if (spec.formula) {
+        var fx = el('div', 'fx'), st = spec.formula.steps[q.get('step') != null ? +q.get('step') : spec.formula.steps.length - 1];
+        fx.innerHTML = st; L.appendChild(fx);
+        Array.prototype.forEach.call(fx.children, function (c) { c.classList.add('oi'); });
+        // A formula line takes the largest of 120, 104 and 88 px that holds in 960 px.
+        await document.fonts.ready;
+        Array.prototype.forEach.call(fx.querySelectorAll('.eq'), function (e) {
+          [[120, 124, 64], [104, 108, 56], [88, 92, 48]].some(function (z) {
+            e.style.fontSize = z[0] + 'px'; e.style.lineHeight = z[1] + 'px';
+            Array.prototype.forEach.call(e.querySelectorAll('.op'), function (o) { o.style.fontSize = z[2] + 'px'; });
+            return e.scrollWidth <= 960;
+          });
+        });
+      }
+      if (spec.attribution) {
+        var at = el('div', 'attr');
+        at.appendChild(el('div', 'nm oi', fr(spec.attribution.name)));
+        at.appendChild(el('div', 'rl oi', fr(spec.attribution.role)));
+        at.style.opacity = q.get('attr') != null ? +q.get('attr') : 1;
+        L.appendChild(at);
+      }
+      var foot = el('div', 'foot');
+      if (spec.map) {
+        var keys = [];
+        if (spec.map.highlight && spec.map.highlight.legend) keys.push([spec.map.highlight.tone || 'area-a', spec.map.highlight.legend]);
+        (spec.map.areas || []).forEach(function (a) { keys.push([a.tone || 'area-a', a.legend || a.label]); });
+        var onSat = !!(VIEWS && VIEWS[spec.id]);
+        // On imagery the key sits in two columns from three items (Vidéo carte 0.4.0's legend grid).
+        var keyBox = foot;
+        var nKeys = ((spec.map.highlight && spec.map.highlight.legend) ? 1 : 0) + (spec.map.areas || []).length + (onSat && spec.map.borders === 'strong' ? 1 : 0);
+        if (onSat && nKeys >= 3) { keyBox = el('div', 'keys2'); keyBox.style.cssText = 'display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;margin-bottom:6px'; foot.appendChild(keyBox); }
+        keys.forEach(function (kk) {
+          var ink = SeriesSat.INK[kk[0].replace('area-', '')];
+          var sw = onSat ? '<i class="sw" style="background:' + ink + '59;border:3px solid ' + ink + ';box-sizing:border-box"></i>' : '<i style="background:var(--' + kk[0] + ')"></i>';
+          keyBox.appendChild(el('div', 'key oi', sw + '<span>' + fr(kk[1]) + '</span>'));
+        });
+        // Strong borders are a layer the reader must read: the card's key names them.
+        if (onSat && spec.map.borders === 'strong')
+          keyBox.appendChild(el('div', 'key oi', '<i class="sw" style="background:none;height:0;border-top:4px solid #f3e9da;box-shadow:0 0 0 2px rgba(11,8,6,.55)"></i><span>Frontières actuelles</span>'));
+        if (spec.map.caption && spec.map.caption.source) {
+          // On imagery the flat base map's clause (« fond Natural Earth ») gives way to the imagery credit.
+          var srcText = onSat ? spec.map.caption.source.replace(/\s*;\s*fond [^;]*$/, '') : spec.map.caption.source;
+          foot.appendChild(el('div', 'src oi', 'Source\u202f: ' + fr(srcText)));
+        }
+        if (onSat) foot.appendChild(el('div', 'cred oi', 'Imagerie\u202f: NASA Earth Observatory\u202f; frontières\u202f: Natural Earth, domaine public'));
+      }
+      if (spec.signed) foot.appendChild(el('div', 'src oi', 'Position d\'EthniAfrica'));
+      else if (spec.source) foot.appendChild(el('div', 'src oi', esc(spec.sourceLabel || 'Source') + ' : ' + fr(spec.source)));
+      if (spec.credit && !/a-trouver-/.test(src)) foot.appendChild(el('div', 'cred oi', fr(spec.credit)));
+      L.appendChild(foot);
+    }
+    // Card change: the images cross-fade over the whole 300 ms; the outgoing
+    // text leaves in the first 150 ms and the incoming text enters in the last
+    // 150 ms, so two heads never show at once. Nothing slides.
+    Array.prototype.forEach.call(L.children, function (ch) { ch.style.opacity = ch === pic ? picOp : textOp; });
+    report.cards.push(rep);
+    return rep;
+  }
+
+  var fade = parseFloat(q.get('fade') || '0.5');
+  if (q.get('next')) { await layer(first, 1, Math.max(0, 1 - 2 * fade)); await layer(card(q.get('next')), fade, Math.max(0, 2 * fade - 1)); }
+  else await layer(first, 1, 1);
+  // The band and the content cards' signature are drawn once: they never fade.
+  if (first.type !== 'closing') { var gs = el('div', 'gsign'); gs.appendChild(el('div', 'sign', '<img src="' + resolve(data.logo) + '" alt=""><b class="oi">EthniAfrica</b>')); vf.appendChild(gs); }
+  var sr = EthniCards.seriesOf(first);
+  if (sr) vf.appendChild(el('div', 'band oi', esc(sr.name).replace(/\s+\?/g, ' ?') + '<span class="sep"> · </span><span class="ep">n° ' + sr.episode + '</span>'));
+  if (q.get('demo') !== '0') vf.appendChild(el('div', 'tape tape-abs', 'Démonstration : texte non validé'));
+  if (q.get('sub')) {
+    var lines = q.get('sub').split('|'), lit = q.get('lit');
+    var s = el('div', 'sub');
+    lines.forEach(function (ln) {
+      var row = el('div', 'sub-line');
+      row.innerHTML = fr(ln).split(' ').map(function (w) { return '<span' + (w.replace(/ .*$/, '').replace(/[,.:]$/, '') === lit ? ' class="lit"' : '') + '>' + w + '</span>'; }).join(' ');
+      s.appendChild(row);
+    });
+    vf.appendChild(s);
+  }
+  await document.fonts.ready;
+  // 1.7.0: no text breaks inside a hyphenated word (« dit-on », « nomme-t-il »), as 1.6.0 rules for « nous-mêmes ».
+  Array.prototype.forEach.call(vf.querySelectorAll('.title, .kick, .txt, .sent, .next, .flab, .rlab, .by'), function (box) {
+    var walk = document.createTreeWalker(box, NodeFilter.SHOW_TEXT), nodes = [], n;
+    while ((n = walk.nextNode())) nodes.push(n);
+    nodes.forEach(function (t) {
+      if (!/\S-\S/.test(t.nodeValue)) return;
+      var f = document.createDocumentFragment();
+      t.nodeValue.split(/(\S+-\S+)/).forEach(function (part, i) {
+        if (i % 2) { var s = document.createElement('span'); s.style.whiteSpace = 'nowrap'; s.textContent = part; f.appendChild(s); }
+        else if (part) f.appendChild(document.createTextNode(part));
+      });
+      t.parentNode.replaceChild(f, t);
+    });
+  });
+  // Long dates: the largest of 176, 148, 124, 104 px that holds on one line in 960 px.
+  report.cards.forEach(function (r) {
+    if (!r.date) return;
+    var steps = [[176, 156], [148, 136], [124, 118], [104, 100]], i = 0;
+    function inkW() { var rg = document.createRange(); rg.selectNodeContents(r.date); return rg.getBoundingClientRect().width; }
+    for (; i < steps.length; i++) { r.date.style.fontSize = steps[i][0] + 'px'; r.date.style.lineHeight = steps[i][1] + 'px'; if (inkW() <= 960) break; }
+    if (i === steps.length) { r.date.style.whiteSpace = 'normal'; r.date.style.textWrap = 'balance'; i = 3; r.date.style.fontSize = '104px'; r.date.style.lineHeight = '100px'; r.twoLines = true; }
+    r.dateSize = steps[Math.min(i, 3)][0]; r.dateWidth = Math.round(inkW()); delete r.date;
+  });
+  if (q.get('guides') === '1') {
+    var g = el('div', 'guides');
+    g.innerHTML = '<svg width="1080" height="1920" style="position:absolute;inset:0">' +
+      '<rect x="60" y="250" width="960" height="450" fill="none" stroke="rgba(255,220,120,.85)" stroke-width="3" stroke-dasharray="10 8"/>' +
+      '<rect x="60" y="700" width="960" height="600" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="2" stroke-dasharray="4 8"/>' +
+      '<path d="M510 1000H570M540 970V1030" stroke="rgba(255,255,255,.9)" stroke-width="3"/>' +
+      '<rect x="60" y="1316" width="960" height="136" fill="rgba(120,200,255,.08)" stroke="rgba(120,200,255,.9)" stroke-width="3" stroke-dasharray="10 8"/>' +
+      '<rect x="60" y="1652" width="960" height="232" fill="none" stroke="rgba(150,255,170,.85)" stroke-width="3" stroke-dasharray="10 8"/>' +
+      '<path d="M0 240H1080M0 1680H1080" stroke="rgba(255,95,170,.9)" stroke-width="3" stroke-dasharray="14 8"/></svg>' +
+      '<div style="position:absolute;left:66px;top:212px;color:#ffdc78">Bandeau et tête : 250 à 700</div>' +
+      '<div style="position:absolute;left:66px;top:706px;color:#fff">Image dégagée : 700 à 1300, point focal visé en 540, 1000</div>' +
+      '<div style="position:absolute;left:66px;top:1462px;color:#78c8ff">Sous-titre : 1316 à 1452, centré sur 540</div>' +
+      '<div style="position:absolute;left:66px;top:1614px;color:#96ffaa">Sources, crédit, signature : jusqu\'à 1884</div>' +
+      '<div style="position:absolute;right:66px;top:1686px;color:#ff5faa">Vignette 3:4 de la grille</div>';
+    vf.appendChild(g);
+  }
+  await new Promise(function (r) { setTimeout(r, 120); });
+  var o = vf.getBoundingClientRect();
+  window.__boxes = Array.prototype.map.call(vf.querySelectorAll('.fx > *, .sbs > *, .week > *, .band, .head > *, .close > *, .list .row, .figs .fig, .attr > *, .sub-line > *, .foot > *:not(.keys2), .keys2 > *, .gsign, .close-sign > *, .slot-text > *, .tape'), function (e) {
+    var range = document.createRange(); range.selectNodeContents(e); var r = e.classList.contains('gsign') || e.classList.contains('pill') || e.classList.contains('tape') ? e.getBoundingClientRect() : range.getBoundingClientRect(), b = e.getBoundingClientRect();
+    return { cls: e.className, text: e.textContent.slice(0, 40), x: Math.round(r.left - o.left), x1: Math.round(r.right - o.left), y: Math.round(b.top - o.top), y1: Math.round(b.bottom - o.top) };
+  });
+  window.__report = report;
+  document.body.dataset.ready = '1';
+})();
+</script></body></html>

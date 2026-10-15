@@ -1,0 +1,4668 @@
+
+/* ===== color.css (verbatim) ===== */
+/* ============================================================
+   EthniAfrica — Color Tokens
+   ETNI-21 · Epic 1 (Source Transparency Fabric) · UX-DR1
+   ------------------------------------------------------------
+   Two-layer system:
+     L1 — raw palette (--afh-color-*)
+     L2 — semantic aliases (confidence / classification / source /
+          flag-state / surface / accents)
+
+   Existing --country-* tokens (src/styles/country-tokens.css) are
+   preserved unchanged for one release; selected --country-* are
+   re-aliased below to --afh-* values to keep callers in sync.
+   ============================================================ */
+
+:root {
+  /* ─── L1 · Raw palette ─────────────────────────────────────── */
+  --afh-color-bg: #fbf7f2;
+  --afh-color-bg-warm: #f5ede0;
+  --afh-color-card: #ffffff;
+  --afh-color-border: #e8dfd3;
+
+  --afh-color-text: #2c2018;
+  /* text-soft meets WCAG AA on the earth and other warm surfaces. */
+  --afh-color-text-soft: #746557;
+  --afh-color-text-muted: #9b8b7d;
+
+  /* gold meets WCAG AA on white, gold, and warm surfaces. */
+  --afh-color-gold: #7a5a00;
+  --afh-color-gold-bg: #fdf5e1;
+  --afh-color-green: #2b6b42;
+  --afh-color-green-bg: #e8f5ed;
+  /* terracotta darkened from #c2532a for WCAG AA contrast on terracotta-bg
+     (#fceee8 → 4.51:1) — used by ClassificationBadge "reconstructive" and
+     other foreground accents in country detail views. */
+  --afh-color-terracotta: #b64e27;
+  --afh-color-terracotta-bg: #fceee8;
+  /* earth darkened from #8b6b47 for WCAG AA on every warm surface we layer
+     it onto (bg, bg-warm, earth-bg, terracotta-bg). Worst-case 4.9:1 — used
+     by ClassificationBadge "colonial-legacy" and DoctrineLinkCard. */
+  --afh-color-earth: #7e603e;
+  --afh-color-earth-bg: #f3ebe0;
+  --afh-color-colonial: #9b3030;
+  --afh-color-colonial-bg: #fce8e8;
+
+  --afh-color-amber: #d4a843;
+  --afh-color-azure: #5b8db8;
+  --afh-color-sage: #6baf8d;
+  --afh-color-clay: #b87d5b;
+  --afh-color-slate: #5b6b7b;
+
+  /* Error palette — reserved for Error / Invalid / Broken UI only.
+     Enforced by eslint/rules/afh-error-misuse.js (UX-DR49 rule 3). */
+  --afh-color-error: #9b3030;
+  --afh-color-error-bg: #fce8e8;
+  --afh-color-error-border: #e5b8b8;
+
+  /* Home night surface */
+  --afh-night-ground: #120e0a;
+  --afh-night-surface: #1d1710;
+  --afh-night-surface-2: #271e14;
+  --afh-night-line: #3a2e1f;
+  --afh-night-ink: #f1e7d8;
+  --afh-night-ink-2: #c9b99f;
+  --afh-night-ink-3: #8f7f66;
+  --afh-night-ocre: #c9821f;
+  --afh-night-ocre-soft: #e8b96a;
+  --afh-night-teal: #33a390;
+  --afh-night-terre: #c4573f;
+  --afh-night-perv: #7a8ce8;
+  /* The colonial tone lightened for a dark ground. #9b3030 is a day ink and
+     sits at 2.2–2.6:1 on the night grounds; this clears 6.1:1 on the darkest
+     of them. Not --afh-night-terre, which the charter reserves as
+     IdentityPanel's imposed-exonym accent and which only reaches 3.7:1 here
+     anyway. */
+  --afh-night-colonial: #d98a7a;
+
+  /* Charter categorical accents (V2, ETNI-798 · FR104) — the CVD-validated
+     set promoted to first-class tokens. Base hexes match the dormant
+     --afh-night-{ocre,teal,terre,perv} above; the -tint variants are new.
+     The --afh-night-* group stays otherwise dormant. DEC-022 (ETNI-1284)
+     lifted that for one surface: the atlas globe stage on a fiche is
+     --afh-night-ground/-ink* regardless of the fiche's own accent — see
+     src/components/atlas/AtlasGlobe.tsx. No other component may consume it. */
+  /* ─── The brand mark's two stops ──────────────────────────────
+     The warm gradient paints the masthead tagline on every page and
+     the title of each axis hub. It is the most visible colour in the
+     product, and until now neither of its stops was a token: both
+     lived as raw HSL in index.css, outside this palette entirely.
+
+     Named here, at their existing values, byte for byte. Nothing
+     moves a pixel — the point is that the brand's own colour is now
+     in the system that governs every other colour, and greppable.
+
+     They are mark colours, not accents: no surface takes them, no
+     component reads them. Only --afh-gradient-brand does. */
+  --afh-brand-flame: #da622f;
+  --afh-brand-gold: #f2ba36;
+  --afh-gradient-brand: linear-gradient(
+    135deg,
+    var(--afh-brand-flame),
+    var(--afh-brand-gold)
+  );
+
+  /* The name-history timeline (ETNI-2012), from the approved mockup v5:
+     terre cuite for the birth of a name, a warm grey for the dashes of
+     « before the name ». The ink reads 6.4:1 on the ground and 5.3:1 on the
+     chip; the dashes reach 4.3:1 on the warm page, over the 3:1 a
+     non-text mark needs. */
+  --afh-color-name-birth-bg: #fbe9dc;
+  --afh-color-name-birth-ink: #8a3d1c;
+  --afh-color-name-birth-chip: #f6d3bd;
+  --afh-color-name-before-dash: #7d6c5c;
+
+  --afh-cat-ocre: #c9821f;
+  --afh-cat-ocre-tint: #f1d9ae;
+  --afh-cat-teal: #33a390;
+  --afh-cat-teal-tint: #cbe7df;
+  --afh-cat-terre: #c4573f;
+  --afh-cat-terre-tint: #f0d2c8;
+  --afh-cat-perv: #7a8ce8;
+  --afh-cat-perv-tint: #dce1f9;
+
+  /* -ink variants: the accent as *text on its own tint*. The base hexes are
+     fill colours — each one lands between 2.28:1 and 3.09:1 against its tint,
+     so accent-coloured label text on a tinted card fails WCAG AA. Each ink is
+     its base scaled toward black on the same hue, the lightest step that
+     clears 4.5:1, so an accent still reads as itself when it carries text. */
+  --afh-cat-ocre-ink: #835514;
+  --afh-cat-teal-ink: #226d60;
+  --afh-cat-terre-ink: #974331;
+  --afh-cat-perv-ink: #535f9e;
+
+  /* The night half of the same pair. The inks above were scaled toward
+     black to read on the parchment tint; on a night card that makes them
+     dark-on-dark (2.47:1 to 2.73:1), worse than the fill they replaced.
+     Here the readable direction is the other one, so ocre, teal and perv
+     need no lift at all — the base fill already measures 5.2:1 on the
+     card and 5.9:1 on the ground. Only terre is too dark at full
+     strength (3.73:1), so it alone is lifted toward white on its own hue,
+     to the darkest step clearing the bar with margin on both surfaces
+     (4.81:1 card, 5.44:1 ground). */
+  --afh-cat-ocre-ink-night: var(--afh-cat-ocre);
+  --afh-cat-teal-ink-night: var(--afh-cat-teal);
+  --afh-cat-terre-ink-night: #cd725e;
+  --afh-cat-perv-ink-night: var(--afh-cat-perv);
+
+  /* The source diamond (ETNI-2015): one colour per family of source, from the
+     manifesto film's legend. The film's fills are the --afh-cat-* hexes, and
+     ocre, teal and perv land at 2.6:1 on the birth tile's wash, under the
+     3:1 a meaningful mark needs (WCAG 1.4.11). Each day fill is its film hue
+     taken darker, to the lightest step clearing 3.3:1 on every tile ground;
+     press and archive already clear it at the film's own value. The night
+     fills are the film hues as they are, archive and other lifted to 4:1.
+     Encyclopedia is not in the film: it is a plum, a hue none of the other
+     families uses, kept at least 35 ΔE from each of them so Wikipedia
+     no longer reads as a book (4.6:1 on the birth wash by day, 5.3:1 on the
+     lightest night surface).
+     Asserted in src/styles/__tests__/sourceDiamondCharter.test.ts. */
+  --afh-color-source-oral: #b1721b;
+  --afh-color-source-book: #2c8e7d;
+  --afh-color-source-encyclopedia: #a3488a;
+  --afh-color-source-press: #c4573f;
+  --afh-color-source-report: #6277e4;
+  --afh-color-source-archive: #7e603e;
+  --afh-color-source-other: #5b6b7b;
+  --afh-color-source-oral-night: #c9821f;
+  --afh-color-source-book-night: #33a390;
+  --afh-color-source-encyclopedia-night: #cf73b4;
+  --afh-color-source-press-night: #cd725e;
+  --afh-color-source-report-night: #7a8ce8;
+  --afh-color-source-archive-night: #9d774d;
+  --afh-color-source-other-night: #6e8194;
+
+  /* ─── L2 · Semantic aliases ────────────────────────────────── */
+
+  /* Surface */
+  --afh-bg: var(--afh-color-bg);
+  --afh-bg-warm: var(--afh-color-bg-warm);
+  --afh-surface: var(--afh-color-card);
+  --afh-border: var(--afh-color-border);
+
+  /* The keyboard focus ring's ink: 4.8:1 on the parchment ground. */
+  --afh-focus-ring: var(--afh-color-terracotta);
+
+  /* Name-history timeline: the birth tile and the before-the-name dashes. */
+  --afh-name-birth-bg: var(--afh-color-name-birth-bg);
+  --afh-name-birth-ink: var(--afh-color-name-birth-ink);
+  --afh-name-birth-chip: var(--afh-color-name-birth-chip);
+  --afh-name-before-dash: var(--afh-color-name-before-dash);
+
+  /* Text */
+  --afh-text: var(--afh-color-text);
+  --afh-text-soft: var(--afh-color-text-soft);
+  --afh-text-muted: var(--afh-color-text-muted);
+
+  /* The readable colonial tone, for anything inked against the theme's own
+     ground — the imposed-exonym marker, the unverified-source chip. It stands
+     to the raw tone exactly as the accent ink stands to the accent fill: the
+     fill keeps its place on blocks that carry their own pale tint, and this
+     one follows the surface into night. A rule that paints
+     --afh-color-colonial-bg under itself keeps the raw tone, because that
+     tint is parchment and travels with it.
+
+     Written without a colon after any token name: charterTokens.test.ts reads
+     this file line by line, and prose shaped like a declaration is picked up
+     as one. */
+  --afh-colonial-ink: var(--afh-color-colonial);
+
+  /* Muted surface + foreground pair — used by source-transparency badges
+     (SourceChainSheet tier pills, etc.) and other low-emphasis chips. The
+     pair must satisfy WCAG AA (≥ 4.5:1) for normal text. */
+  --afh-muted: var(--afh-color-bg);
+  --afh-fg-muted: var(--afh-color-text-soft);
+
+  /* Media metadata stays readable over every poster without changing with the
+     page theme. The translucent ground preserves the image while the night
+     ink keeps the duration and play glyph at AA contrast. */
+  --afh-media-badge-bg: rgba(18, 14, 10, 0.72);
+  --afh-media-badge-ink: var(--afh-night-ink);
+
+  /* Accents (kept from V1 country palette) */
+  --afh-earth: var(--afh-color-earth);
+  --afh-terracotta: var(--afh-color-terracotta);
+  --afh-gold: var(--afh-color-gold);
+
+  /* The ink of a record's lead figure — the one count a reader came for, on
+     both the country and the people summary. It is a role, not a hue: the
+     four counts beside it keep the text ink, because a terracotta spent on
+     all five would stop meaning « population » and start meaning « number ».
+
+     It needs a night value of its own, which is why it is a token rather
+     than a reuse of the terracotta alias above. Raw terracotta reaches only
+     2.5:1 on the night ground — a figure nobody can read. The terre ink ramp
+     clears 4.5:1 there.
+
+     Written without a colon after any token name: charterTokens.test.ts
+     reads this file line by line, and prose shaped like a declaration is
+     picked up as one. */
+  --afh-figure-lead-ink: var(--afh-color-terracotta);
+
+  /* Confidence tier — applied to data lineage badges, sources, etc.
+     high  → 95–100 % corroborated by primary sources
+     mid   → 70–94 %  mixed primary + secondary
+     low   → < 70 %   single source or AI-flagged */
+  --afh-conf-high: var(--afh-color-green);
+  --afh-conf-high-bg: var(--afh-color-green-bg);
+  --afh-conf-mid: var(--afh-color-amber);
+  --afh-conf-mid-bg: var(--afh-color-gold-bg);
+  --afh-conf-low: var(--afh-color-clay);
+  --afh-conf-low-bg: var(--afh-color-earth-bg);
+  /* Clay is a fill, not an ink: #b87d5b reads 3.22:1 on the page ground, so
+     the header's « Bientôt » chip — which is state a reader has to be able to
+     read, not decoration — failed AA wherever it was set in it. The darker
+     sibling of the same family clears at 5.42:1. Same mirror that --accent-ink
+     holds against the accent fill — marks take the fill, type takes the ink.
+
+     Written without a `--token` + colon anywhere above: charterTokens.test.ts
+     reads the accent declarations with a regex over this file, and a comment
+     shaped like a declaration is captured as one. */
+  --afh-conf-low-ink: var(--afh-color-earth);
+
+  /* Classification state — fiche-level editorial status */
+  --afh-classification-stable: var(--afh-color-green);
+  --afh-classification-stable-bg: var(--afh-color-green-bg);
+  --afh-classification-contested: var(--afh-color-amber);
+  --afh-classification-contested-bg: var(--afh-color-gold-bg);
+  --afh-classification-disputed: var(--afh-color-colonial);
+  --afh-classification-disputed-bg: var(--afh-color-colonial-bg);
+
+  /* Source tier — authority signal for citations */
+  --afh-source-primary: var(--afh-color-green);
+  --afh-source-primary-bg: var(--afh-color-green-bg);
+  --afh-source-secondary: var(--afh-color-azure);
+  --afh-source-secondary-bg: #e6f0f7;
+  --afh-source-ai-flagged: var(--afh-color-clay);
+  --afh-source-ai-flagged-bg: var(--afh-color-earth-bg);
+
+  /* Flag state — moderation / report-error / open-issue surfaces */
+  --afh-flag-open: var(--afh-color-terracotta);
+  --afh-flag-open-bg: var(--afh-color-terracotta-bg);
+  --afh-flag-resolved: var(--afh-color-green);
+  --afh-flag-resolved-bg: var(--afh-color-green-bg);
+
+  /* Error — reserved (see L1 above) */
+  --afh-error: var(--afh-color-error);
+  --afh-error-bg: var(--afh-color-error-bg);
+  --afh-error-border: var(--afh-color-error-border);
+
+  /* Relation type — RelationTypeBadge / EgoNetworkGraph edges (Epic 11,
+     ETNI-509). Hues reference the existing calm palette — no new colors,
+     no red. Linguistic proximity is always AFRIK-derived, never sourced
+     individually, hence the dashed stroke pairing. */
+  --afh-relation-linguistic: var(--afh-color-green);
+  --afh-relation-migratory: var(--afh-color-earth);
+  --afh-relation-commercial: var(--afh-color-gold);
+  --afh-relation-religious: var(--afh-color-terracotta);
+  --afh-relation-derived-dash: 4 3;
+
+  /* Atlas — AfricaBasemap foundation (Epic 12, ETNI-519). Aliases only, no
+     new raw hex: the basemap silhouette reuses the earth palette so it
+     reads as "terrain" without introducing a new hue. Epic 12/13 overlay
+     layers (rendered as AfricaBasemap children) pick their own tokens. */
+  --afh-atlas-land: var(--afh-color-earth-bg);
+  --afh-atlas-coastline: var(--afh-color-earth);
+
+  /* Atlas — the shared textured sphere (REQ-112/REQ-116), night surface.
+     DEC-022 puts dataviz on the Night surface, which is still what a fiche's
+     atlas does whatever the reader's page theme. The home's globe is the one
+     exception: it is the page's subject rather than a panel inside it, and a
+     dark disc punched through a parchment page read as a hole — so it takes
+     the parchment counterpart below when the reader is on parchment.
+     Ocean and land are darker/warmer siblings of the night ground rather
+     than new hues; coast and equator reuse existing tokens outright. */
+  --afh-globe-ocean: #120e0a;
+  --afh-globe-graticule: #42341f;
+  --afh-globe-graticule-major: #5d4a2e;
+  --afh-globe-land: #6b4a22;
+  /* The rest of the world, drawn under Africa. The corpus can only vouch
+     for African geography, so the other continents wear the hero title's
+     own ink at low opacity: enough to put Africa on a real planet, faint
+     enough that one continent alone still reads as painted. */
+  --afh-globe-land-far: rgba(241, 231, 216, 0.4);
+  --afh-globe-coast: var(--afh-night-ocre-soft);
+  /* The equator is the one line that is a measurement, not terrain, so it
+     takes the categorical accent no landmass ever wears. */
+  --afh-globe-equator: var(--afh-cat-perv);
+  /* Tissot indicatrices — every disc covers the same real area, so they
+     read as instrumentation rather than terrain and take teal, the accent
+     no landmass and no boundary ever wears. */
+  --afh-globe-tissot: rgba(51, 163, 144, 0.3);
+  --afh-globe-tissot-edge: var(--afh-cat-teal);
+  /* National boundaries. Faint on purpose: they are the frame the chosen
+     country is read against, never a second subject competing with it.
+     Drawn under every highlight, so the surlignage always wins. */
+  --afh-globe-border: rgba(232, 185, 106, 0.28);
+
+  /* Atlas — the same sphere on the parchment surface. Role for role with
+     the night group above, so nothing downstream learns which surface it
+     is painting; only the values differ.
+
+     The relation between ocean and page is what flips. On night the ocean
+     IS the ground, and the body is separated from it by the lit limb; on
+     parchment the ocean is a shade deeper than the page (--afh-color-bg),
+     so the disc states its own edge and needs no rim — see GLOBE_LIGHTING
+     in globePalette.ts, which is the other half of this pair.
+
+     Land is the terracotta the rest of the parchment surface already uses
+     for a warm foreground, so the continent stays the one mass painted as
+     terrain without introducing a hue the charter does not have. */
+  --afh-globe-parchment-ocean: #e6dcc7;
+  --afh-globe-parchment-graticule: #cdbc9f;
+  --afh-globe-parchment-graticule-major: #b09a78;
+  --afh-globe-parchment-land: var(--afh-color-terracotta);
+  /* The far continents, in the page's own ink at low alpha — the mirror of
+     the night group's hero ink: faint enough that Africa alone still reads
+     as the painted one. */
+  --afh-globe-parchment-land-far: rgba(44, 32, 24, 0.16);
+  --afh-globe-parchment-coast: #6b3a1c;
+  --afh-globe-parchment-equator: var(--afh-cat-perv);
+  --afh-globe-parchment-tissot: rgba(51, 163, 144, 0.28);
+  --afh-globe-parchment-tissot-edge: var(--afh-cat-teal);
+  --afh-globe-parchment-border: rgba(107, 58, 28, 0.26);
+
+  /* Atlas — MigrationPathLayer overlay (Epic 12, Story 12.9, ETNI-522).
+     Active/selected state is never color-alone: stroke-width + opacity in
+     the component carry the signal, these tokens only supply the hue. */
+  --afh-atlas-path-inactive: var(--afh-color-text-muted);
+  --afh-atlas-path-active: var(--afh-color-terracotta);
+  --afh-atlas-path-selected: var(--afh-color-gold);
+
+  /* Accent scoping (ETNI-798 · FR104) — the ONLY path a component may use
+     to receive an accent colour. A page or route wrapper scopes an accent
+     by overriding --accent and --accent-tint to one of the --afh-cat-
+     base/tint pairs above (e.g. a `.afh-accent-teal` wrapper sets
+     `--accent: var(--afh-cat-teal); --accent-tint: var(--afh-cat-teal-tint);`).
+     Components must consume var(--accent) / var(--accent-tint) and must
+     never reference an --afh-cat- token or a hex literal directly — that
+     keeps the accent swappable per page without touching component code.
+     The default below (ocre) keeps unscoped components valid.
+
+     --accent-foreground pairs with --accent for text placed directly on
+     the full-strength accent fill (e.g. a selected filter pill). It must
+     satisfy WCAG AA (≥ 4.5:1) against --accent. It is the dark ink, not
+     white: measured, white lands at 3.14:1 on ocre, 3.10:1 on teal and
+     3.11:1 on perv — every accent fill in the product, not the edge case
+     terre was once thought to be. The dark ink clears all three (5.91,
+     5.98, 5.95); terre alone still needs its own darker override, because
+     even this ink only reaches 4.22:1 on it (see .afh-accent-terre below).
+
+     The night block below already said this, for the same reason: an accent
+     fill is a light patch whichever theme it sits in, and the --afh-cat-*
+     hexes are identical in day and night, so the ink on them must be too.
+
+     It stayed invisible because --accent used to hold a hex here and a bare
+     shadcn HSL triplet in index.css, so bg-[color:var(--accent)] resolved to
+     rgba(0, 0, 0, 0) outside an accent scope: the fill never painted, and
+     axe-core measured white text on parchment instead. Asserted now in
+     src/styles/__tests__/colorTokens.test.ts.
+
+     --accent-ink is the mirror image: text placed on --accent-tint rather
+     than on the full-strength fill. --accent itself is never legible there,
+     so any accent-coloured text over a tinted surface takes --accent-ink. */
+  --accent: var(--afh-cat-ocre);
+  --accent-tint: var(--afh-cat-ocre-tint);
+  --accent-ink: var(--afh-cat-ocre-ink);
+  --accent-foreground: #1a1208;
+
+  /* Display type carries its accent as text, not as a fill, so it needs the
+     ocre that stays readable on the surface it is set on — the dark ink on
+     parchment, the soft gold on night. One token instead of a theme test in
+     every headline that wants an accented word. */
+  --afh-display-accent: var(--afh-cat-ocre-ink);
+
+  /* The source diamond, by family (ETNI-2015). */
+  --afh-source-oral: var(--afh-color-source-oral);
+  --afh-source-book: var(--afh-color-source-book);
+  --afh-source-encyclopedia: var(--afh-color-source-encyclopedia);
+  --afh-source-press: var(--afh-color-source-press);
+  --afh-source-report: var(--afh-color-source-report);
+  --afh-source-archive: var(--afh-color-source-archive);
+  --afh-source-other: var(--afh-color-source-other);
+
+  /* Retired: --afh-gradient-spectrum, a five-hue ramp read off
+     `public/africa.png` and reserved for the footer's brand qualifier. The
+     qualifier now takes --afh-gradient-brand, the gradient the masthead sets
+     the identical string in, so the ramp had exactly zero consumers left.
+     Declared-and-unconsumed is the failure --afh-section-gap already cost us
+     (brand charter §7); a dead token is deleted, not kept warm. */
+}
+
+/* ─── Night theme (REQ-115) ───────────────────────────────────────
+   The reader's choice between parchment and night, applied site-wide.
+   next-themes writes `.dark` on <html>, which is also what Tailwind's
+   `darkMode: ["class"]` reads, so one class drives both systems.
+
+   Only the L2 semantic aliases are rebound. Nothing below this line
+   learns which theme it is under: a component that already reads
+   --afh-bg / --afh-text / --afh-surface follows the swap untouched,
+   and one that hardcodes a hex would not have followed either way.
+   The raw --afh-color-* ramp stays put — it is the parchment palette,
+   and the night surface has its own --afh-night-* group.
+
+   .afh-on-night is the same swap applied to a subtree instead of the
+   page: the home's hero band is night whatever the reader chose, because
+   a lit globe only reads as a body against a dark sky (DEC-022). Sharing
+   the rule rather than copying it is what stops the band and the page
+   theme drifting into two different nights. */
+.dark,
+.afh-on-night {
+  --afh-bg: var(--afh-night-ground);
+  --afh-bg-warm: var(--afh-night-surface);
+  --afh-surface: var(--afh-night-surface-2);
+  --afh-border: var(--afh-night-line);
+
+  /* Raw terracotta clears 3:1 on the night ground but not with margin on the
+     raised surfaces; the lifted terre ink holds 4.8:1 or more on all three. */
+  --afh-focus-ring: var(--afh-cat-terre-ink-night);
+
+  --afh-text: var(--afh-night-ink);
+  --afh-text-soft: var(--afh-night-ink-2);
+  --afh-text-muted: var(--afh-night-ink-3);
+
+  --afh-colonial-ink: var(--afh-night-colonial);
+
+  /* On a dark page the birth tile takes the raised night surface, inked with
+     the terre ramp lifted for type (4.8:1). */
+  --afh-name-birth-bg: var(--afh-night-surface-2);
+  --afh-name-birth-ink: var(--afh-cat-terre-ink-night);
+  --afh-name-birth-chip: var(--afh-night-surface);
+  --afh-name-before-dash: var(--afh-night-ink-3);
+
+  /* Raw terracotta is a dark red on a dark ground — 2.5:1, a figure nobody
+     can read. The terre ink ramp is the same hue lifted for type. */
+  --afh-figure-lead-ink: var(--afh-cat-terre-ink-night);
+
+  /* fg-muted must clear AA on --afh-muted; ink-3 sits at 4.2:1 on the
+     raised surface, so the muted pair takes ink-2 the way the parchment
+     pair takes text-soft rather than text-muted. */
+  --afh-muted: var(--afh-night-surface);
+  --afh-fg-muted: var(--afh-night-ink-2);
+
+  /* An accent fill is a light patch on a dark page, so the text on it
+     flips to the dark ink for the same reason terre needs it in day. */
+  --accent-foreground: #1a1208;
+
+  --afh-display-accent: var(--afh-night-ocre-soft);
+
+  --afh-source-oral: var(--afh-color-source-oral-night);
+  --afh-source-book: var(--afh-color-source-book-night);
+  --afh-source-encyclopedia: var(--afh-color-source-encyclopedia-night);
+  --afh-source-press: var(--afh-color-source-press-night);
+  --afh-source-report: var(--afh-color-source-report-night);
+  --afh-source-archive: var(--afh-color-source-archive-night);
+  --afh-source-other: var(--afh-color-source-other-night);
+
+  /* Rebinding the tokens is not enough on its own: `color` is resolved
+     once on body and then inherited, so text with no colour of its own
+     stays parchment-dark inside a night subtree. Stating it here is what
+     makes the scope carry to anything that never set a colour — the nav's
+     wordmark went unreadable on the home band without it. */
+  color: var(--afh-text);
+}
+
+/* ─── Accent scope wrappers (ETNI-798 · FR104 · ETNI-927) ─────────
+   The sanctioned way to put a page or a subtree on a different accent:
+   a wrapper element rebinds --accent / --accent-tint for everything
+   below it. Scoping belongs here rather than in components so a route
+   changes its accent by swapping one class — no component learns which
+   accent it was rendered under, and none needs editing to be reused on
+   another accent.
+
+   Naming mirrors the --afh-cat-* pairs; adding an accent means adding a
+   pair above and a rule here, nothing else. */
+.afh-accent-ocre {
+  --accent: var(--afh-cat-ocre);
+  --accent-tint: var(--afh-cat-ocre-tint);
+  --accent-ink: var(--afh-cat-ocre-ink);
+}
+
+.afh-accent-teal {
+  --accent: var(--afh-cat-teal);
+  --accent-tint: var(--afh-cat-teal-tint);
+  --accent-ink: var(--afh-cat-teal-ink);
+}
+
+/* Terre doubles as IdentityPanel's colonial-marker accent — scoping a whole
+   page to it would drown that marker. Available, but not for fiche scopes. */
+.afh-accent-terre {
+  --accent: var(--afh-cat-terre);
+  --accent-tint: var(--afh-cat-terre-tint);
+  --accent-ink: var(--afh-cat-terre-ink);
+  /* #c4573f only clears WCAG AA (4.5:1) against black, not white
+     (4.39:1) — axe-core flagged this on the live /fr/peuples route. */
+  --accent-foreground: #000;
+}
+
+.afh-accent-perv {
+  --accent: var(--afh-cat-perv);
+  --accent-tint: var(--afh-cat-perv-tint);
+  --accent-ink: var(--afh-cat-perv-ink);
+}
+
+/* The language fiche (ETNI-1507) reads under the same pervenche as its
+   family — a language sits directly under a family in the AFRIK hierarchy,
+   and no fifth hue has been through CVD validation yet. A distinct class
+   name, rather than reusing `.afh-accent-perv` on the language route too,
+   keeps each fiche's accent scope exclusive to its own entity: two entity
+   types painted through the same selector would make a "no foreign accent
+   on this page" check unable to tell its own root from another entity's. */
+.afh-accent-language {
+  --accent: var(--afh-cat-perv);
+  --accent-tint: var(--afh-cat-perv-tint);
+  --accent-ink: var(--afh-cat-perv-ink);
+}
+
+/* The name fiche (REQ-133) reads under ocre, like the people fiche: a
+   patronyme is a naming fact about a people, and the charter's accent table
+   is closed at the three cartographic entities. It gets its own selector for
+   the same reason the language fiche does — the name route was painted
+   through `.afh-accent-ocre` itself, so "no foreign accent on this page"
+   could not tell a name fiche's own scope from a people fiche's leaking
+   into it. Aliasing rather than adding a hue keeps the categorical set at
+   four. */
+.afh-accent-name {
+  --accent: var(--afh-cat-ocre);
+  --accent-tint: var(--afh-cat-ocre-tint);
+  --accent-ink: var(--afh-cat-ocre-ink);
+}
+
+/* A person search result (REQ-126) deliberately does NOT take a fifth
+   --afh-cat-* hue. The four categorical accents (brand charter §5.2) name
+   the corpus's peer entity kinds — pays/peuples/familles/langues — and a
+   person is not a fifth peer of that set: the whole point of this scope is
+   that a person (an ethnographer, a colonial administrator) must never read
+   as one more kind of "corpus entity" alongside the people it studied or
+   governed. So it takes the site's own neutral, parchment-and-ink palette
+   instead of a new saturated hue — semantic tokens already declared and
+   already contrast-checked elsewhere, not a new primitive needing its own
+   CVD pass. Being achromatic is also why it never needs a night-scoped
+   --accent-ink override below: --afh-text-muted/-soft/-bg-warm already
+   rebind themselves under .dark/.afh-on-night. */
+.afh-accent-neutral {
+  --accent: var(--afh-text-muted);
+  --accent-tint: var(--afh-bg-warm);
+  --accent-ink: var(--afh-text-soft);
+}
+
+/* The ink half of each accent pair flips with the surface, exactly as
+   --accent-foreground does above: on a dark page the readable accent is
+   the light one. Written as a night-scoped override of the same wrappers
+   so a component still only ever reads --accent-ink and never learns
+   which surface it was rendered on. */
+
+.dark .afh-accent-ocre,
+.afh-on-night .afh-accent-ocre,
+.afh-accent-ocre.dark,
+.afh-accent-ocre.afh-on-night {
+  --accent-ink: var(--afh-cat-ocre-ink-night);
+}
+
+.dark .afh-accent-teal,
+.afh-on-night .afh-accent-teal,
+.afh-accent-teal.dark,
+.afh-accent-teal.afh-on-night {
+  --accent-ink: var(--afh-cat-teal-ink-night);
+}
+
+.dark .afh-accent-terre,
+.afh-on-night .afh-accent-terre,
+.afh-accent-terre.dark,
+.afh-accent-terre.afh-on-night {
+  --accent-ink: var(--afh-cat-terre-ink-night);
+}
+
+.dark .afh-accent-perv,
+.afh-on-night .afh-accent-perv,
+.afh-accent-perv.dark,
+.afh-accent-perv.afh-on-night {
+  --accent-ink: var(--afh-cat-perv-ink-night);
+}
+
+.dark .afh-accent-language,
+.afh-on-night .afh-accent-language,
+.afh-accent-language.dark,
+.afh-accent-language.afh-on-night {
+  --accent-ink: var(--afh-cat-perv-ink-night);
+}
+
+.dark .afh-accent-name,
+.afh-on-night .afh-accent-name,
+.afh-accent-name.dark,
+.afh-accent-name.afh-on-night {
+  --accent-ink: var(--afh-cat-ocre-ink-night);
+}
+
+/* ===== type.css (verbatim) ===== */
+/* ============================================================
+   EthniAfrica — Typography Tokens
+   ETNI-21 · UX-DR2, UX-DR3, UX-DR48
+   ------------------------------------------------------------
+   Fraunces (--font-fraunces) and Nunito Sans (--font-nunito-sans)
+   are loaded by `src/app/layout.tsx` via `next/font/google` —
+   these tokens layer a 9-role scale on top.
+
+   9-role scale: hero / h1 / h2 / h3 / lead / body / small /
+                 caption / eyebrow
+
+   Editorial roles (hero → body) are FLUID: one clamp() anchored
+   at 390 px and 1200 px replaces the two @media steps the scale
+   used to carry. Utility roles (small, caption, eyebrow) are
+   FIXED — an interface label that grows with the window drifts
+   away from the control it labels.
+
+   Every clamp() intercept is written in rem, never px. A clamp
+   whose preferred term is pixels ignores the reader's browser
+   font-size setting outright, which fails WCAG 1.4.4; the vw
+   term cannot restore that on its own. `typeScaleCharter.test.ts`
+   fails the file if a px intercept ever reappears.
+
+   The retired `micro` (10 px) and `nano` (9 px) roles are gone:
+   the audit found no reference site that stops below 11 px, and
+   both landed under the 4.5:1 contrast threshold that small text
+   is held to. Their callers moved up to `caption` or `eyebrow`.
+
+   Density profiles (UX-DR48):
+     reading    — generous line-height (1.65), public fiches
+     moderation — compact (1.45), admin tables
+     developer  — monospaced lookalike (1.35), debug surfaces
+   ============================================================ */
+
+:root {
+  /* ─── Font families ───────────────────────────────────────── */
+  --afh-font-display: var(--font-fraunces), "Fraunces", Georgia, serif;
+  --afh-font-body:
+    var(--font-nunito-sans), "Nunito Sans", system-ui, sans-serif;
+  --afh-font-mono:
+    var(--font-jetbrains-mono), "JetBrains Mono", "Fira Code", ui-monospace,
+    SFMono-Regular, monospace;
+
+  /* ─── Editorial roles · fluid 390 → 1200 px ───────────────── */
+  --afh-text-hero: clamp(2.125rem, 1.583rem + 2.222vw, 3.25rem); /* 34 → 52 */
+  --afh-text-h1: clamp(1.6875rem, 1.296rem + 1.605vw, 2.5rem); /* 27 → 40 */
+  --afh-text-h2: clamp(1.375rem, 1.134rem + 0.988vw, 1.875rem); /* 22 → 30 */
+  --afh-text-h3: clamp(1.1875rem, 1.067rem + 0.494vw, 1.4375rem); /* 19 → 23 */
+  --afh-text-lead: clamp(1.1875rem, 1.098rem + 0.37vw, 1.375rem); /* 19 → 22 */
+  --afh-text-body: clamp(1.0625rem, 1.0025rem + 0.247vw, 1.1875rem); /* 17→19 */
+
+  /* ─── Utility roles · fixed ───────────────────────────────── */
+  /* 16 px, not 15: the interface step of the reference site and the
+     default shadcn control size, so a button and its label agree. */
+  --afh-text-small: 1rem;
+  --afh-text-caption: 0.8125rem;
+  --afh-text-eyebrow: 0.75rem;
+
+  /* ─── Figure steps · the size of a number, not of a text role ─ */
+  /* The counted figure of a fiche summary card. It is not a tenth entry in
+     the scale above: that scale sizes classes of text, this sizes a single
+     measurement, and the charter holds the `--afh-text-*` namespace to nine
+     roles. It lives here rather than on a surface because the country record
+     and the family record draw the same card, and the size was a pixel
+     literal in each of them. */
+  --afh-figure-lead: clamp(1.625rem, 1.35rem + 1.1vw, 2rem); /* 26 → 32 */
+  /* The same figure when the corpus fills nothing. Smaller on purpose: an
+     absence must not shout louder than a measurement. It lands on the same
+     step as `--afh-text-h3` today and is still written out, because a
+     heading role and a figure state answer to different decisions and
+     aliasing one to the other would hide the day they part. */
+  --afh-figure-gap: clamp(
+    1.1875rem,
+    1.067rem + 0.494vw,
+    1.4375rem
+  ); /* 19 → 23 */
+
+  /* ─── Line-heights, paired by role ────────────────────────── */
+  --afh-leading-hero: 1.05;
+  --afh-leading-h1: 1.1;
+  --afh-leading-h2: 1.2;
+  --afh-leading-h3: 1.3;
+  --afh-leading-lead: 1.45;
+  --afh-leading-body: 1.65;
+  --afh-leading-small: 1.5;
+  --afh-leading-caption: 1.45;
+  --afh-leading-eyebrow: 1.4;
+
+  /* ─── The eyebrow's fixed dress ───────────────────────────── */
+  /* An eyebrow is a role, not a size: uppercase, semibold and widely
+     tracked. Callers that set only the size get a caption, not an
+     eyebrow — the charter names these as part of the token. */
+  --afh-eyebrow-transform: uppercase;
+  --afh-eyebrow-weight: 600;
+  --afh-eyebrow-tracking: 0.16em;
+
+  /* ─── Weights ─────────────────────────────────────────────── */
+  --afh-weight-regular: 400;
+  --afh-weight-medium: 500;
+  --afh-weight-semibold: 600;
+  --afh-weight-bold: 700;
+  --afh-weight-heavy: 800;
+  --afh-weight-black: 900;
+
+  /* ─── Generic line-heights (non-role-bound callers) ───────── */
+  --afh-leading-tight: 1.2;
+  --afh-leading-snug: 1.35;
+  --afh-leading-normal: 1.5;
+  --afh-leading-relaxed: 1.65;
+
+  /* ─── Letter-spacing ──────────────────────────────────────── */
+  --afh-tracking-tight: -0.01em;
+  --afh-tracking-normal: 0;
+  --afh-tracking-wide: 0.05em;
+  --afh-tracking-wider: 0.1em;
+
+  /* ─── Density profiles (UX-DR48) ──────────────────────────── */
+  --afh-density-reading: var(--afh-leading-relaxed);
+  --afh-density-moderation: var(--afh-leading-snug);
+  --afh-density-developer: var(--afh-leading-snug);
+
+  /* ─── Measure ─────────────────────────────────────────────── */
+  /* Band compositions only. Running prose carries no measure —
+     charter §5: a capped paragraph beside full-width stat cards and
+     tables was the one thing on the page that stopped mid-width.
+     What is left is the centred band, where there is no empty right
+     half to create: the home's "Saviez-vous" is the only consumer. */
+  --afh-measure-prose: 65ch;
+}
+
+/* ===== space.css (verbatim) ===== */
+/* ============================================================
+   EthniAfrica — Spacing Tokens
+   ETNI-21 · UX-DR4
+   ------------------------------------------------------------
+   4 px base, T-shirt scale plus numeric aliases. Used for
+   padding, margin, gap, and absolute offsets across all L3
+   components.
+   ============================================================ */
+
+:root {
+  --afh-space-0: 0;
+  --afh-space-px: 1px;
+  --afh-space-xs: 4px; /* 1 ×  */
+  --afh-space-sm: 6px;
+  --afh-space-md: 8px; /* 2 ×  */
+  --afh-space-base: 10px;
+  --afh-space-lg: 12px; /* 3 ×  */
+  --afh-space-xl: 14px;
+  --afh-space-2xl: 16px; /* 4 ×  */
+  --afh-space-3xl: 18px;
+  --afh-space-4xl: 20px; /* 5 ×  */
+  --afh-space-5xl: 24px; /* 6 ×  */
+  --afh-space-6xl: 32px; /* 8 ×  */
+  --afh-space-7xl: 40px;
+  --afh-space-8xl: 48px;
+  --afh-space-9xl: 64px;
+  --afh-space-10xl: 96px;
+
+  /* Layout-level aliases (mobile-first containers) */
+  --afh-page-padding: 12px;
+  --afh-card-padding: 18px;
+  /* The home does not consume this token: wiring it there would move the
+     page instead of naming its current cadence. Fiche chapters do consume it.
+
+     The bands of the home do not sit in a gap: they abut, and the cadence
+     between two of them is the previous one's bottom padding plus the next
+     one's top. Measured on the rendered page:
+
+       430px   44 · 70 · 68 · 68 · 74 · 60
+       1440px  64 · 96 · 108 · 108 · 100 · 78
+
+     So the real rhythm is near-regular in the middle and hand-kept at both
+     ends, at roughly 68 and 104 — not the 24/32/48 below. Reconciling the two
+     is a design decision about the most visited page in the product, and the
+     values a designer needs to take it are the two rows above.
+
+     Brand charter §7. */
+  --afh-section-gap: 24px;
+  --afh-container-max: 430px;
+
+  /* The shell box, distinct from `--afh-container-max` above.
+     `--afh-container-max` is a *reading* measure that tracks the breakpoints
+     themselves (430 / 720 / 800) — it is what a country fiche's prose column
+     is allowed to grow to. `--afh-shell-max` is the *page* box: the width the
+     bar, the hero, the body and the footer all stop at so their left edges
+     agree. Binding the shell to the reading measure would put the whole site
+     in an 800 px column.
+
+     One value, no breakpoint steps: below it the box is never reached and the
+     gutter alone does the work. 1240 px is the width the bar already carried,
+     and the nearest round number to the 1200 px of the reference the shell was
+     calibrated against. */
+  --afh-shell-max: 1240px;
+
+  /* HierarchyTree (ETNI-461) — guide-line color reuses --afh-border.
+     The indent is the tree's one cost in width: at 430px, three levels at
+     20px eat 60px of line length and start breaking people names. It opens
+     back up at 768px, where the width is there to spend. */
+  --afh-tree-indent: 14px;
+  --afh-tree-guide: var(--afh-border);
+  --afh-tree-node-min-h: 44px; /* touch target, UX-DR37 */
+}
+
+@media (min-width: 768px) {
+  :root {
+    --afh-page-padding: 24px;
+    --afh-card-padding: 24px;
+    --afh-section-gap: 32px;
+    --afh-container-max: 720px;
+    --afh-tree-indent: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --afh-page-padding: 32px;
+    --afh-card-padding: 32px;
+    --afh-section-gap: 48px;
+    --afh-container-max: 800px;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Globe stage height · Epic 19 LOT 1
+   A fiche's globe is a fixed band, not an aspect-ratio box: the
+   shell went full-bleed, and an aspect ratio at full width made
+   the stage grow taller the wider the viewport got.
+   ───────────────────────────────────────────────────────────── */
+:root {
+  --afh-globe-stage-height: 470px;
+}
+
+@media (min-width: 760px) {
+  :root {
+    --afh-globe-stage-height: 520px;
+  }
+}
+
+/* ===== radius.css (verbatim) ===== */
+/* ============================================================
+   EthniAfrica — Radius Tokens
+   ETNI-21
+   ------------------------------------------------------------
+   Soft, organic curves echoing earth/terracotta aesthetic.
+   ============================================================ */
+
+:root {
+  --afh-radius-0: 0;
+  --afh-radius-sm: 4px;
+  --afh-radius-md: 6px;
+  --afh-radius-base: 12px;
+  --afh-radius-lg: 14px;
+  --afh-radius-xl: 16px;
+  --afh-radius-2xl: 20px;
+  --afh-radius-3xl: 28px;
+  --afh-radius-full: 9999px;
+}
+
+/* ===== elevation.css (verbatim) ===== */
+/* ============================================================
+   EthniAfrica — Elevation Tokens
+   ETNI-21 · UX-DR5
+   ------------------------------------------------------------
+   Six-step elevation scale, warm earth-toned shadows. Tracks
+   shadcn surfaces (cards, dialogs, popovers) without breaking
+   them — components can opt-in via `box-shadow: var(--afh-elev-N)`.
+   ============================================================ */
+
+:root {
+  --afh-elev-0: none;
+
+  --afh-elev-1:
+    0 1px 2px -1px hsl(25 25% 15% / 0.05), 0 1px 1px 0 hsl(25 25% 15% / 0.04);
+
+  --afh-elev-2:
+    0 2px 4px -2px hsl(25 25% 15% / 0.06), 0 4px 8px -2px hsl(25 25% 15% / 0.06);
+
+  --afh-elev-3:
+    0 4px 8px -2px hsl(25 25% 15% / 0.08),
+    0 8px 16px -4px hsl(25 25% 15% / 0.08);
+
+  --afh-elev-4:
+    0 8px 16px -4px hsl(25 25% 15% / 0.1),
+    0 16px 32px -8px hsl(25 25% 15% / 0.1);
+
+  --afh-elev-5:
+    0 16px 32px -8px hsl(25 25% 15% / 0.12),
+    0 32px 64px -16px hsl(25 25% 15% / 0.12);
+
+  /* Warm elevation — for hero / featured cards */
+  --afh-elev-warm: 0 10px 40px -10px hsl(18 70% 52% / 0.2);
+}
+
+/* Focus ring — accessibility. Declared on the night scopes as well as :root:
+   a custom property holding var(--afh-bg) is resolved where it is declared,
+   so a :root-only ring would carry the day ground into a night subtree. */
+:root,
+.dark,
+.afh-on-night {
+  --afh-ring-focus: 0 0 0 2px var(--afh-bg), 0 0 0 4px var(--afh-focus-ring);
+}
+
+/* ===== motion.css (verbatim) ===== */
+/* ============================================================
+   EthniAfrica — Motion Tokens
+   ETNI-21 · UX-DR6, UX-DR49 rule 4
+   ------------------------------------------------------------
+   Durations, easings, and named transitions.
+
+   Accessibility: when `prefers-reduced-motion: reduce` is set,
+   every duration collapses to 0.01 ms and transforms are
+   neutralised — only opacity transitions remain. This is the
+   contract callers can rely on.
+   ============================================================ */
+
+:root {
+  /* Durations */
+  --afh-duration-instant: 0.01ms;
+  --afh-duration-fast: 120ms;
+  --afh-duration-base: 200ms;
+  --afh-duration-slow: 320ms;
+  --afh-duration-fade: 400ms;
+  --afh-duration-pageload: 600ms;
+
+  /* Easings */
+  --afh-ease-linear: linear;
+  --afh-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --afh-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --afh-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --afh-ease-default: ease;
+  /* Reserved for things arriving on screen — panel, sheet, drawer, card
+     (atlas charter §6). State changes keep the flat curves above: a spring
+     on a colour change reads as a glitch, not as an arrival. */
+  --afh-ease-spring: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Composed transitions */
+  --afh-transition-color:
+    color var(--afh-duration-base) var(--afh-ease-in-out),
+    background-color var(--afh-duration-base) var(--afh-ease-in-out),
+    border-color var(--afh-duration-base) var(--afh-ease-in-out);
+  --afh-transition-opacity: opacity var(--afh-duration-base)
+    var(--afh-ease-in-out);
+  --afh-transition-transform: transform var(--afh-duration-base)
+    var(--afh-ease-in-out);
+  --afh-transition-all: all var(--afh-duration-base) var(--afh-ease-in-out);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   prefers-reduced-motion · UX-DR49 rule 4
+   All durations → 0.01 ms · transforms neutralised · opacity only
+   ───────────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --afh-duration-instant: 0.01ms;
+    --afh-duration-fast: 0.01ms;
+    --afh-duration-base: 0.01ms;
+    --afh-duration-slow: 0.01ms;
+    --afh-duration-fade: 0.01ms;
+    --afh-duration-pageload: 0.01ms;
+
+    /* The one easing worth neutralising at the source: a spring overshoots
+       its destination and comes back, which stays visible for any caller
+       that pairs the curve with a duration of its own rather than a token. */
+    --afh-ease-spring: linear;
+
+    --afh-transition-color: opacity 0.01ms linear;
+    --afh-transition-opacity: opacity 0.01ms linear;
+    --afh-transition-transform: opacity 0.01ms linear;
+    --afh-transition-all: opacity 0.01ms linear;
+  }
+}
+
+/* ===== shell.css (verbatim) ===== */
+/* ============================================================
+   EthniAfrica — The shell box
+   ------------------------------------------------------------
+   One measure, shared by every surface the reader sees at once:
+   the bar, the hero, the trail, the body and the footer.
+
+   Before this class the four of them carried four widths
+   (1240 / 1400 / 1280 / 780) and five gutter scales, so the
+   logo, the page title and the copyright line each started on
+   a different vertical. Nothing was broken — it simply never
+   lined up, which is the kind of defect a reader feels without
+   being able to name.
+
+   A background may still run bord à bord: put `.afh-shell` on
+   the *content* inside the full-bleed band, not on the band.
+   ============================================================ */
+
+/* A page that must run the width of the screen lifts the cap for everything
+   below it, so the bar, the body and the footer keep one vertical. */
+.afh-shell-wide {
+  --afh-shell-max: none;
+}
+
+.afh-shell {
+  width: 100%;
+  max-width: var(--afh-shell-max);
+  margin-inline: auto;
+  padding-inline: var(--afh-page-padding);
+}
+
+/* ===== site-chrome.css (verbatim) ===== */
+/**
+ * The chrome that follows the reader: the masthead's retraction and the
+ * control that undoes a long scroll.
+ *
+ * Two rules, one contract. The masthead is pinned and retracts while the
+ * reader moves down the document, so anything else pinned to the top of the
+ * screen — today only the fiche's chapter rail — has to know two things: how
+ * tall the masthead is, and how far it has travelled. Both are published
+ * here as custom properties rather than duplicated per surface, because the
+ * failure this file exists to prevent is a rail and a masthead occupying the
+ * same band of screen and one of them being unreadable.
+ *
+ * `--afh-header-height` is overwritten from the measured bar at runtime (see
+ * `use-header-reveal.ts`); the value below is what a route without a masthead
+ * gets, and what the first paint uses before the measurement lands.
+ *
+ * Mobile first: the base rules are the 430px layout.
+ */
+
+:root {
+  --afh-header-height: 56px;
+
+  /* How far a rail pinned under the masthead must travel to stay against it.
+     Zero while the masthead is out, its full height once it has retracted —
+     at which point the rail lands exactly at the top of the screen. */
+  --afh-header-shift: 0px;
+}
+
+:root[data-header-retracted="true"] {
+  --afh-header-shift: calc(-1 * var(--afh-header-height));
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Back to top
+   ───────────────────────────────────────────────────────────── */
+
+/**
+ * A fiche runs to several thousand pixels and the masthead now returns on the
+ * way up, but returning to the *top* still meant scrolling the whole way. The
+ * control is offered only once a screenful is behind the reader: above that,
+ * the top of the page is one flick away and a floating button is clutter.
+ *
+ * It is hidden with `visibility`, not opacity alone: an invisible button that
+ * still takes a click and still answers to the Tab key is worse than no
+ * button, and `visibility` is one of the few properties that both removes it
+ * from the accessibility tree and can be transitioned.
+ */
+.afh-back-to-top {
+  position: fixed;
+  right: var(--afh-space-2xl);
+  bottom: calc(var(--afh-space-2xl) + env(safe-area-inset-bottom, 0px));
+  z-index: 45;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* 44px: the touch target is the button, not an icon inside a larger box. */
+  width: 44px;
+  height: 44px;
+
+  border: 1px solid var(--afh-border);
+  border-radius: 9999px;
+  background: var(--afh-surface);
+  color: var(--afh-text);
+  box-shadow: var(--afh-elev-3);
+  cursor: pointer;
+
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(var(--afh-space-md));
+  transition:
+    opacity var(--afh-duration-base) var(--afh-ease-out),
+    transform var(--afh-duration-base) var(--afh-ease-out),
+    visibility 0s linear var(--afh-duration-base);
+}
+
+.afh-back-to-top[data-offered] {
+  visibility: visible;
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity var(--afh-duration-base) var(--afh-ease-out),
+    transform var(--afh-duration-base) var(--afh-ease-out),
+    visibility 0s;
+}
+
+.afh-back-to-top:hover {
+  background: var(--afh-bg-warm);
+}
+
+.afh-back-to-top:focus-visible {
+  outline: 2px solid var(--afh-text);
+  outline-offset: 2px;
+}
+
+.afh-back-to-top svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* From the width the masthead changes shape at, the control takes the wider
+   inset the rest of the page's gutters use. */
+@media (min-width: 760px) {
+  .afh-back-to-top {
+    right: var(--afh-space-6xl);
+    bottom: calc(var(--afh-space-6xl) + env(safe-area-inset-bottom, 0px));
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/* A reader who has asked for less motion still gets the control; what they do
+   not get is a button that slides in, nor a page that races past them on the
+   way up (the scroll behaviour is chosen in the component). */
+@media (prefers-reduced-motion: reduce) {
+  .afh-back-to-top {
+    transform: none;
+  }
+}
+
+/* ===== source-diamond.css (verbatim) ===== */
+/**
+ * The source diamond (ETNI-2015): a small coloured diamond after the sentence
+ * it backs, its colour the family of the source. Shape and proportions follow
+ * the manifesto film (a square turned 45°, about half the type's height,
+ * slightly rounded). The colours are the --afh-source-* tokens, whose
+ * contrast on every tile ground is asserted in sourceDiamondCharter.test.ts.
+ */
+
+.afh-source-diamond,
+.afh-source-diamond-legend li {
+  --afh-source-diamond-fill: var(--afh-source-other);
+}
+
+.afh-source-diamond[data-family="oral"],
+.afh-source-diamond-legend [data-family="oral"] {
+  --afh-source-diamond-fill: var(--afh-source-oral);
+}
+.afh-source-diamond[data-family="book"],
+.afh-source-diamond-legend [data-family="book"] {
+  --afh-source-diamond-fill: var(--afh-source-book);
+}
+.afh-source-diamond[data-family="encyclopedia"],
+.afh-source-diamond-legend [data-family="encyclopedia"] {
+  --afh-source-diamond-fill: var(--afh-source-encyclopedia);
+}
+.afh-source-diamond[data-family="press"],
+.afh-source-diamond-legend [data-family="press"] {
+  --afh-source-diamond-fill: var(--afh-source-press);
+}
+.afh-source-diamond[data-family="report"],
+.afh-source-diamond-legend [data-family="report"] {
+  --afh-source-diamond-fill: var(--afh-source-report);
+}
+.afh-source-diamond[data-family="archive"],
+.afh-source-diamond-legend [data-family="archive"] {
+  --afh-source-diamond-fill: var(--afh-source-archive);
+}
+.afh-source-diamond[data-family="other"],
+.afh-source-diamond-legend [data-family="other"] {
+  --afh-source-diamond-fill: var(--afh-source-other);
+}
+
+/* The button is the 24px target (WCAG 2.5.8); the negative block margin keeps
+   it from opening a gap in the line of prose it ends. The mark sits at the
+   start of the box, so the no-break space before it is the only gap after
+   the last word, as in the film; the rest of the target extends past it. */
+.afh-source-diamond {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 24px;
+  min-height: 24px;
+  margin-block: -4px;
+  padding: 0 0 0 2px;
+  border: 0;
+  border-radius: var(--afh-radius-sm);
+  background: transparent;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.afh-source-diamond-mark {
+  display: inline-block;
+  flex: none;
+  width: 0.5em;
+  height: 0.5em;
+  min-width: 8px;
+  min-height: 8px;
+  border-radius: 1px;
+  background: var(--afh-source-diamond-fill);
+  transform: rotate(45deg);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .afh-source-diamond-mark {
+    transition: transform 120ms ease-out;
+  }
+  .afh-source-diamond:hover .afh-source-diamond-mark {
+    transform: rotate(45deg) scale(1.25);
+  }
+}
+
+/* Forced colours drop backgrounds; the diamond must not vanish with them. */
+@media (forced-colors: active) {
+  .afh-source-diamond-mark {
+    background: CanvasText;
+  }
+}
+
+.afh-source-diamond-legend ul {
+  margin: var(--afh-space-sm) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.afh-source-diamond-legend li {
+  display: flex;
+  align-items: center;
+  gap: var(--afh-space-sm);
+  padding-block: var(--afh-space-xs);
+  border-bottom: 1px solid var(--afh-border);
+  font-size: var(--afh-text-small);
+  color: var(--afh-text);
+}
+
+/* ===== search-feed.css (verbatim) ===== */
+/* The reviewed boards publish rounded reference-width values for the three
+   fluid editorial roles used by the search feed. Keep the scale fluid between
+   its existing bounds while landing exactly on the approved 430 px rendering.
+   The forty-board Playwright gate holds both these values and their desktop
+   maxima to the reviewed output (REQ-180). */
+.search-feed-reviewed {
+  --search-feed-text-hero: clamp(2.125rem, 1.5828375rem + 2.222vw, 3.25rem);
+  --search-feed-text-h3: clamp(1.1875rem, 1.0672375rem + 0.494vw, 1.4375rem);
+  --search-feed-text-body: clamp(1.0625rem, 1.00236875rem + 0.247vw, 1.1875rem);
+  --afh-text-hero: var(--search-feed-text-hero);
+  --afh-text-h3: var(--search-feed-text-h3);
+  --afh-text-body: var(--search-feed-text-body);
+}
+
+/* ===== name-timeline.css (verbatim) ===== */
+/**
+ * The name-history timeline (ETNI-2012, REQ-198) on the search result page.
+ *
+ * It borrows the fiche chronology's thread, dots and tiles
+ * (fiche-parchment.css, `.afh-chronology*`, `.afh-tile`) so a name's history
+ * and a country's history read as the same object; this file adds only what
+ * a name adds: the birth tile, the « before the name » tiles, the competing
+ * hypotheses and the « meanwhile » anchors. Base rules are the 430px layout;
+ * nothing here needs a wider breakpoint, the feed column caps the width.
+ */
+
+.afh-name-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--afh-space-lg);
+  min-width: 0;
+  color: var(--afh-text);
+}
+
+.afh-name-timeline-title {
+  margin: var(--afh-space-xs) 0 var(--afh-space-sm);
+  font-family: var(--afh-font-display);
+  font-size: var(--afh-text-h1);
+  font-weight: 900;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+
+.afh-name-timeline-summary {
+  margin: 0;
+  font-size: var(--afh-text-body);
+  line-height: 1.55;
+}
+
+/* The way to the self-name (REQ-197): a whole-width target, never a bare
+   link a thumb has to find. */
+.afh-name-timeline-lead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--afh-space-base);
+  width: 100%;
+  min-height: 48px;
+  margin-top: var(--afh-space-lg);
+  padding: var(--afh-space-base) var(--afh-space-lg);
+  border: 1.5px solid var(--afh-conf-high);
+  border-radius: var(--afh-radius-lg);
+  background: var(--afh-conf-high-bg);
+  color: var(--afh-text);
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+
+.afh-name-timeline-lead-go {
+  font-weight: 700;
+  color: var(--afh-conf-high);
+  white-space: nowrap;
+}
+
+.afh-name-timeline-names {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--afh-space-sm);
+}
+
+.afh-name-timeline-name {
+  min-height: 44px;
+  padding: var(--afh-space-xs) var(--afh-space-lg);
+  border: 1px solid var(--afh-border);
+  border-radius: var(--afh-radius-full);
+  background: var(--afh-surface);
+  color: var(--afh-text);
+  font: inherit;
+  font-size: var(--afh-text-small);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.afh-name-timeline-name[aria-pressed="true"] {
+  border-color: var(--afh-text);
+  background: var(--afh-text);
+  color: var(--afh-bg);
+}
+
+.afh-name-timeline-mark {
+  font-size: var(--afh-text-caption);
+  font-weight: 600;
+}
+
+.afh-name-timeline-intro,
+.afh-name-timeline-nobirth {
+  margin: 0;
+  font-size: var(--afh-text-small);
+  line-height: 1.5;
+  color: var(--afh-text-soft);
+}
+
+.afh-name-timeline-nobirth {
+  padding: var(--afh-space-md) var(--afh-space-lg);
+  border-left: 3px solid var(--afh-name-birth-ink);
+  background: var(--afh-surface);
+  color: var(--afh-text);
+}
+
+.afh-name-timeline-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--afh-space-md);
+}
+
+.afh-name-timeline-hint {
+  margin: 0;
+  font-size: var(--afh-text-small);
+  font-weight: 600;
+  color: var(--afh-text-soft);
+}
+
+.afh-name-timeline-elsewhere-toggle {
+  min-height: 44px;
+  padding: var(--afh-space-sm) var(--afh-space-lg);
+  border: 1px dashed var(--afh-name-before-dash);
+  border-radius: var(--afh-radius-full);
+  background: var(--afh-surface);
+  color: var(--afh-text);
+  font: inherit;
+  font-size: var(--afh-text-caption);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.afh-name-timeline-elsewhere-toggle[aria-pressed="true"] {
+  border-style: solid;
+  background: var(--afh-bg-warm);
+}
+
+.afh-name-timeline .afh-chronology-legend {
+  margin: 0;
+}
+
+/* An undated tile has no era to be inked by: it takes the soft ink rather
+   than losing its thread. */
+.afh-name-timeline .afh-chronology-station:not([data-regime]) {
+  --afh-regime-ink: var(--afh-text-soft);
+}
+
+.afh-name-timeline .afh-chronology-station > .afh-tile {
+  display: flex;
+  flex-direction: column;
+  gap: var(--afh-space-sm);
+}
+
+.afh-name-timeline-period {
+  margin: 0;
+  font-family: var(--afh-font-mono);
+  font-size: var(--afh-text-h3);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--afh-regime-ink);
+}
+
+.afh-name-timeline-statement,
+.afh-name-timeline-hypotheses {
+  margin: 0;
+  font-size: var(--afh-text-small);
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.afh-name-timeline-hypotheses {
+  font-family: var(--afh-font-display);
+  font-weight: 700;
+}
+
+.afh-name-timeline-hypothesis {
+  padding-top: var(--afh-space-md);
+  border-top: 1px dashed var(--afh-border);
+}
+
+.afh-name-timeline-tag,
+.afh-name-timeline-actors {
+  margin: 0;
+  font-family: var(--afh-font-mono);
+  font-size: var(--afh-text-caption);
+  color: var(--afh-text-soft);
+}
+
+.afh-name-timeline-actors {
+  font-family: var(--afh-font-body);
+}
+
+.afh-name-timeline-pill {
+  align-self: flex-start;
+  margin: 0;
+  padding: var(--afh-space-xs) var(--afh-space-base);
+  border-radius: var(--afh-radius-full);
+  font-family: var(--afh-font-mono);
+  font-size: var(--afh-text-eyebrow);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* ── The birth of the name: a frame, a heavy left rule, a pill and a bigger
+   dot, so it reads as the birth without its colour. ───────────────────── */
+.afh-name-timeline [data-placement="birth"] {
+  --afh-regime-ink: var(--afh-name-birth-ink);
+}
+
+.afh-name-timeline [data-placement="birth"] > .afh-tile {
+  border: 2px solid var(--afh-name-birth-ink);
+  border-left-width: 6px;
+  background: var(--afh-name-birth-bg);
+}
+
+.afh-name-timeline [data-placement="birth"]::after {
+  left: -24px;
+  top: 14px;
+  width: 19px;
+  height: 19px;
+  box-shadow:
+    0 0 0 4px var(--afh-bg-warm),
+    0 0 0 6px var(--afh-name-birth-ink);
+}
+
+.afh-name-timeline [data-placement="birth"] .afh-name-timeline-pill {
+  background: var(--afh-name-birth-chip);
+  color: var(--afh-name-birth-ink);
+}
+
+/* ── Before the name: dashed tile, dashed thread, hollow dot. ──────────── */
+.afh-name-timeline [data-placement="before"]::before {
+  background: repeating-linear-gradient(
+    var(--afh-name-before-dash) 0 6px,
+    transparent 6px 11px
+  );
+}
+
+.afh-name-timeline [data-placement="before"]::after {
+  border: 2px solid var(--afh-name-before-dash);
+  background: var(--afh-bg-warm);
+}
+
+.afh-name-timeline [data-placement="before"] > .afh-tile {
+  border: 1.5px dashed var(--afh-name-before-dash);
+  background: transparent;
+}
+
+.afh-name-timeline [data-placement="before"] .afh-name-timeline-pill {
+  border: 1px dashed var(--afh-name-before-dash);
+  color: var(--afh-text-soft);
+}
+
+/* ── Pendant ce temps, ailleurs ─────────────────────────────────────────── */
+.afh-name-timeline-elsewhere {
+  display: flex;
+  flex-direction: column;
+  gap: var(--afh-space-xs);
+  padding: var(--afh-space-md) var(--afh-space-base);
+  border: 1px dashed var(--afh-name-before-dash);
+  border-radius: var(--afh-radius-md);
+  background: var(--afh-bg-warm);
+}
+
+.afh-name-timeline-end {
+  margin: 0;
+  font-size: var(--afh-text-small);
+  color: var(--afh-text-soft);
+}
+
+/* ===== fiche-parchment.css (verbatim) ===== */
+/**
+ * A fiche's parchment: the reading below the globe band.
+ *
+ * Every chapter sits on the same warm ground, rounded, at one width, and the
+ * section-gap token is the only thing between two of them (operator ruling,
+ * 2026-09-12). The alternating grounds this replaced made the seam the only
+ * separator, so anything that was not a section — the amend band, the
+ * country's summary — fell out of the rhythm and measured 0, 22 or 24px.
+ *
+ * Mobile first throughout: the base rules are the 430px layout, and the
+ * container query raises the type and the gutters from the band's own
+ * breakpoint so the parchment and the globe change shape at the same width.
+ */
+
+/* The gap belongs to the container, not to a margin on the second sibling: a
+   flex gap cannot skip a child that forgot a class. */
+.afh-parchment {
+  container-type: inline-size;
+  display: flex;
+  flex-direction: column;
+  gap: var(--afh-section-gap);
+  padding: var(--afh-section-gap) var(--afh-space-lg);
+  background: var(--afh-bg);
+  color: var(--afh-text);
+}
+
+.afh-parchment-head {
+  padding: 26px 20px 22px;
+  border-bottom: 1px solid var(--afh-border);
+}
+
+/* --afh-text-soft, never --afh-text-muted, for anything at caption size or
+   below. Muted is #9b8b7d, which reaches only 2.8:1 on --afh-bg-warm and
+   3.3:1 on --afh-surface — under the 4.5:1 small text needs. The mockup uses
+   the lighter ink throughout and is not contrast-tested; axe caught it here
+   at all three widths. Soft clears 4.8:1 on every parchment ground. */
+.afh-parchment-eyebrow {
+  margin: 0 0 10px;
+  font-family: var(--afh-font-mono);
+  font-size: var(--afh-text-caption);
+  letter-spacing: 0.1em;
+  color: var(--afh-text-soft);
+}
+
+/* A people fiche's eyebrow holds two kinds of thing at once: the corpus keys
+   that name the record — PPL_JUHOANSI, FLG_KXA — and the ethnolinguistic group
+   that names the people in the world. Set in one dress the line reads as a
+   single long machine key, which is what made the head look unedited. The
+   keys keep the mono and the tracking; the group takes the body face at
+   normal tracking, so the eye lands on the words rather than on the ids. */
+.afh-parchment-eyebrow-group {
+  font-family: var(--afh-font-body);
+  letter-spacing: 0;
+  color: var(--afh-text);
+}
+
+/* The names and the invitation to amend them. Stacked on a phone, where the
+   head's composition is a centred title and a control pulled up beside it
+   would take that centring away; side by side from the tablet floor, which is
+   the same floor `mobile-text.css` uses, so the two rules cannot disagree. */
+.afh-parchment-head-title {
+  display: flex;
+  flex-direction: column;
+  gap: var(--afh-space-lg);
+}
+
+@media (min-width: 768px) {
+  .afh-parchment-head-title {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--afh-space-4xl);
+  }
+}
+
+.afh-parchment-contribute {
+  align-self: center;
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding-inline: var(--afh-space-4xl);
+  border: 1px solid var(--afh-gold);
+  border-radius: var(--afh-radius-base);
+  background: var(--afh-color-gold-bg);
+  font-size: var(--afh-text-small);
+  font-weight: 600;
+  color: var(--afh-gold);
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .afh-parchment-contribute {
+    align-self: flex-start;
+  }
+}
+
+.afh-parchment-contribute:hover {
+  text-decoration: underline;
+}
+
+.afh-parchment-contribute:focus-visible {
+  outline: none;
+  box-shadow: var(--afh-ring-focus);
+}
+
+/* Opens the night map, which a fiche keeps closed until asked. Under the head
+   rather than beside the title: on a phone a second control next to the name
+   and the contribute link would wrap the title before it wrapped the buttons. */
+.afh-parchment-map-toggle {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: var(--afh-space-lg);
+  padding-inline: var(--afh-space-4xl);
+  border: 1px solid var(--accent-ink);
+  border-radius: var(--afh-radius-base);
+  background: transparent;
+  font-size: var(--afh-text-small);
+  font-weight: 600;
+  color: var(--accent-ink);
+  cursor: pointer;
+}
+
+.afh-parchment-map-toggle:hover {
+  text-decoration: underline;
+}
+
+.afh-parchment-map-toggle:focus-visible {
+  outline: none;
+  box-shadow: var(--afh-ring-focus);
+}
+
+.afh-parchment-head h1 {
+  margin: 0;
+  font-family: var(--afh-font-display);
+  font-weight: 900;
+  font-size: var(--afh-text-h1);
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  /* Patronymes are single corpus tokens. Long forms such as
+     Randriamampionona cannot benefit from ordinary word wrapping and would
+     otherwise widen a 320px document beyond its viewport. */
+  overflow-wrap: anywhere;
+  /* A family title carries a predicate after the name and runs two lines at
+     the widths that matter. `pretty`, not `balance`: balancing
+     "Nilo-saharien, une aire à reconstruire" into two even lines ends the
+     first one on the article. */
+  text-wrap: pretty;
+}
+
+/* The editorial half of the title, set apart from the name it qualifies. */
+.afh-parchment-head h1 em {
+  font-style: italic;
+  color: var(--accent-ink, var(--accent));
+}
+
+.afh-parchment-lede {
+  margin: 12px 0 0;
+  font-size: var(--afh-text-body);
+  line-height: var(--afh-leading-body);
+  color: var(--afh-text-soft);
+  /* The head stands in a band four columns wide, not in the parchment's own
+     measure. A people fiche's lede is a full sentence of geography and would
+     run past 100 characters a line there. */
+  max-width: 58ch;
+}
+
+.afh-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 16px;
+}
+
+.afh-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 11px;
+  border-radius: var(--afh-radius-full);
+  border: 1px solid var(--afh-border);
+  background: var(--afh-surface);
+  font-size: var(--afh-text-caption);
+  color: var(--afh-text-soft);
+  white-space: nowrap;
+}
+
+/* A missing field is marked in the colonial/gap tone the rest of the app uses
+   for an absence, never in the accent — an absence is not a category. */
+.afh-chip[data-tone="missing"] {
+  border-color: var(--afh-color-colonial);
+  background: var(--afh-color-colonial-bg);
+  color: var(--afh-color-colonial);
+}
+
+/* One ground for every chapter. The page ground shows only in the gaps, which
+   is what separates two chapters now that no hairline or change of ground
+   does. 24px of block padding and a 16px gutter, both on the spacing ramp. */
+.afh-parchment-section {
+  padding: 24px 16px;
+  border-radius: var(--afh-radius-lg);
+  background: var(--afh-bg-warm);
+}
+
+/* Three family chapters use a wrapper for their ground. Their chapter box
+   must meet the wrapper's edge so the padding is not counted twice. */
+.afh-parchment-section:has(> [data-fiche-section]) {
+  padding: 0;
+}
+
+.afh-parchment-section > [data-fiche-section] {
+  padding: 24px 16px;
+}
+
+.afh-parchment-section h2 {
+  margin: 0;
+  font-family: var(--afh-font-display);
+  font-weight: 700;
+  font-size: var(--afh-text-h2);
+  letter-spacing: -0.01em;
+}
+
+.afh-parchment-note {
+  margin: 6px 0 16px;
+  font-family: var(--afh-font-mono);
+  font-size: var(--afh-text-caption);
+  color: var(--afh-text-soft);
+}
+
+/* The parchment, not a measure, decides where a line ends. Capped at 72ch the
+   prose stopped around 60% of a desktop chapter and left the rest of the row
+   empty, while the figures, rankings and tables in the same chapter ran to
+   both edges — the paragraph was the only thing on the page that broke off
+   mid-width, against nothing. The section's own gutters are the margin now,
+   so the reading is as wide as the document it belongs to. */
+.afh-parchment-section p {
+  margin: 0 0 12px;
+  font-size: var(--afh-text-body);
+  line-height: 1.7;
+  color: var(--afh-text-soft);
+}
+
+/* The source review chip rides inside the people fiche's "En bref" chapter, under
+   its heading. It declares no gutter of its own: it takes the chapter's, which
+   is the only way the two can never drift apart again. */
+.afh-parchment-confidence {
+  margin-bottom: var(--afh-space-lg);
+}
+
+/* SourceReviewChip pads itself by 4px so its focus ring is not clipped where it
+   sits flush against something. That padding is the component's business, but
+   it must not read as an indent here: a gutter is measured to the text, which
+   is what a reader lines the column up against. */
+.afh-parchment-confidence > * {
+  margin-inline-start: -4px;
+}
+
+/* The provenance census sits at the head of the first chapter, on the same
+   gutter as the source review chip and for the same reason: it declares no gutter
+   of its own, so it can never drift from the column the reader lines up
+   against. Its own width is bounded by the banner (the reading measure) — a
+   census stretched across the parchment reads as a navigation bar, which is
+   the one object readers have learned to skip. */
+.afh-parchment-provenance {
+  margin-bottom: var(--afh-space-lg);
+}
+
+/* The banner owns its ink and its rhythm in CSS rather than in utilities,
+   because it stands inside a chapter and `.afh-parchment-section p` already
+   declares both at a specificity no Tailwind utility reaches. Left to the
+   utilities, the loud state rendered a gold frame around a grey sentence and
+   the census ran straight into the line below it — two blocks where the
+   component declares one. */
+.afh-provenance-banner p,
+.afh-provenance-banner dl {
+  margin: var(--afh-space-lg) 0 0;
+  color: inherit;
+  line-height: 1.55;
+}
+
+.afh-provenance-banner > p:first-child {
+  margin-top: 0;
+}
+
+.afh-provenance-banner dt,
+.afh-provenance-banner dd {
+  margin: 0;
+  color: inherit;
+}
+
+/* ── Structured prose ─────────────────────────────────────────────── */
+
+/* The chapter is an h2, and the corpus has exactly one level under it. There
+   is no h4 role in the type charter and the register is closed, so the grammar
+   produces no fourth level rather than leaving one to arrive by accident. */
+.afh-prose-heading {
+  margin: 22px 0 8px;
+  font-family: var(--afh-font-display);
+  font-weight: var(--afh-weight-semibold);
+  font-size: var(--afh-text-h3);
+  line-height: var(--afh-leading-h3);
+  color: var(--afh-text);
+}
+
+/* A field that opens on its first sub-heading does not dig above it: the
+   field's own term is already the white space. */
+.afh-prose-heading:first-child {
+  margin-top: 0;
+}
+
+/* Every other ul on the parchment is a component's structure wearing
+   list-style: none. This one is a list a reader reads, so it carries a mark. */
+.afh-prose-list {
+  margin: 0 0 12px;
+  padding-inline-start: 1.15em;
+  list-style: disc;
+  /* The site centres text from the body down, and a list is the one block that
+     cannot survive it: the marker stays on the inline start while the item's
+     text drifts to the middle, so every row carries two alignments and the
+     bullets end up pointing at nothing. Brand charter §8.1 — one alignment per
+     block. Same fix, and the same reason, as `.afh-source-row` below.
+
+     The country parchment happened to reset this on its own; the people
+     parchment did not, which is how one component rendered left on one fiche
+     and centred on the other. */
+  text-align: start;
+}
+
+.afh-prose-list li {
+  margin-bottom: 4px;
+  font-size: var(--afh-text-body);
+  line-height: 1.7;
+  color: var(--afh-text-soft);
+}
+
+/* §2: a component never names an accent, it reads the one its surface scopes —
+   and it takes the ink, not the fill. The fills sit between 2.28:1 and 3.09:1
+   on their own tint, which a mark this small cannot carry. */
+.afh-prose-list li::marker {
+  color: var(--accent-ink);
+}
+
+.afh-prose-fields {
+  margin: 0;
+}
+
+/* The label of a field is a term, not a section — it stays out of the document
+   outline so the corpus keeps the one heading level there is under the h2. */
+.afh-prose-term {
+  margin: 18px 0 4px;
+  font-size: var(--afh-text-eyebrow);
+  line-height: var(--afh-leading-eyebrow);
+  font-weight: var(--afh-eyebrow-weight);
+  text-transform: var(--afh-eyebrow-transform);
+  letter-spacing: var(--afh-eyebrow-tracking);
+  color: var(--afh-text-soft);
+}
+
+.afh-prose-term:first-child {
+  margin-top: 0;
+}
+
+/* The user agent indents a dd by 40px, which would set every value out of line
+   with its own term and with every heading in the chapter. */
+.afh-prose-def {
+  margin: 0;
+  margin-inline-start: 0;
+}
+
+/* §4: a corpus defect is said, not made up. The tone is the one the parchment
+   already keeps for something wrong, never the accent — an anomaly is not a
+   category. */
+.afh-prose-defect {
+  margin: 0 0 12px;
+  padding: 8px 10px;
+  border-inline-start: 2px solid var(--afh-color-colonial);
+  font-size: var(--afh-text-caption);
+  line-height: var(--afh-leading-caption);
+  color: var(--afh-color-colonial);
+}
+
+.afh-parchment-section code {
+  font-family: var(--afh-font-mono);
+  font-size: 0.92em;
+  padding: 1px 5px;
+  border-radius: var(--afh-radius-sm);
+  background: var(--afh-surface);
+  color: var(--afh-text);
+}
+
+/* ── The four figures ─────────────────────────────────────────────── */
+
+.afh-stat-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 11px;
+}
+
+/* A definition list, so the pair keeps the left edge a phone would otherwise
+   take from it — see the markup note in FicheStatCard. The browser's own
+   margins on dl and dd are reset here rather than fought with elsewhere. */
+.afh-stat-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background: var(--afh-surface);
+  border: 1px solid var(--afh-border);
+  border-radius: var(--afh-radius-lg);
+  padding: 16px;
+}
+
+.afh-stat-card dd {
+  margin: 0;
+}
+
+.afh-stat-card-mark {
+  margin-top: 8px;
+}
+
+/* The provenance marker says nothing about a field the fiche declares. Its
+   silence should not still cost the card a row of margin. */
+.afh-stat-card-mark:empty {
+  display: none;
+}
+
+/* Two weights of the same card. A record leads with the one figure a reader
+   came for and files the rest beside it; the family record, which leads with
+   none of its four, passes neither and keeps the even dress above. */
+.afh-stat-card[data-emphasis="lead"] {
+  background: var(--afh-surface);
+}
+
+.afh-stat-card[data-emphasis="tile"] {
+  padding: 12px 16px;
+}
+
+/* A people panel carries two words among its counts — a main language, a
+   family. They ride the same card a step smaller than a figure, in the face a
+   name takes on this surface. */
+.afh-stat-card[data-kind="word"] .afh-stat-card-n {
+  font-family: var(--afh-font-display);
+  font-weight: 700;
+  font-size: var(--afh-text-h3);
+  line-height: 1.2;
+}
+
+.afh-stat-card[data-emphasis="tile"] .afh-stat-card-n {
+  font-size: var(--afh-text-h3);
+  line-height: 1.2;
+}
+
+/* Written after its name, painted before it: the figure is what the eye
+   comes for, the name is what a screen reader needs first. */
+.afh-stat-card-n {
+  order: -1;
+  font-family: var(--afh-font-mono);
+  font-size: var(--afh-figure-lead);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--afh-text);
+  font-variant-numeric: tabular-nums;
+}
+
+.afh-stat-card-k {
+  margin-top: 5px;
+  font-size: var(--afh-text-caption);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--afh-text-soft);
+  font-weight: 700;
+}
+
+.afh-stat-card-src {
+  display: block;
+  margin-top: 7px;
+  font-family: var(--afh-font-mono);
+  font-size: var(--afh-text-caption);
+  color: var(--afh-text-soft);
+  line-height: 1.6;
+}
+
+/* What a count covers, said by the surface that owns it. Running text rather
+   than an interface label, so it stays in the body face and sentence case —
+   a second uppercase line under the first would read as a second heading. */
+.afh-stat-card-scope {
+  display: block;
+  margin-top: 3px;
+  font-size: var(--afh-text-caption);
+  line-height: 1.35;
+  color: var(--afh-text-soft);
+}
+
+.afh-stat-card-scope[data-caveat] {
+  color: var(--afh-color-colonial);
+}
+
+/* Driven by the computed provenance, never by a hard-coded label: the day the
+   corpus is loaded these cards fill in and stop being marked. */
+.afh-stat-card[data-provenance="missing"] {
+  border-color: var(--afh-color-colonial);
+  background: var(--afh-color-colonial-bg);
+}
+
+.afh-stat-card[data-provenance="missing"] .afh-stat-card-n {
+  color: var(--afh-color-colonial);
+  font-size: var(--afh-figure-gap);
+}
+
+.afh-parchment-gap {
+  margin-top: 16px;
+  padding: 15px 16px;
+  border: 1px dashed var(--afh-color-colonial);
+  border-radius: var(--afh-radius-md);
+  background: var(--afh-color-colonial-bg);
+}
+
+.afh-parchment-gap h3 {
+  margin: 0 0 8px;
+  font-family: var(--afh-font-display);
+  font-size: var(--afh-text-h3);
+  color: var(--afh-color-colonial);
+}
+
+.afh-parchment-gap p {
+  margin: 0;
+  font-size: var(--afh-text-small);
+}
+
+/* ── The footprint ranking ────────────────────────────────────────── */
+
+.afh-rank {
+  display: grid;
+  gap: 6px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.afh-rank-row {
+  display: grid;
+  grid-template-columns: 30px 1fr auto;
+  gap: 10px;
+  align-items: center;
+}
+
+.afh-rank-name {
+  font-size: var(--afh-text-small);
+  color: var(--afh-text);
+}
+
+.afh-rank-n {
+  font-family: var(--afh-font-mono);
+  font-size: var(--afh-text-caption);
+  color: var(--afh-text-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+.afh-rank-track {
+  grid-column: 2 / -1;
+  height: 5px;
+  border-radius: var(--afh-radius-full);
+  background: var(--afh-surface);
+  overflow: hidden;
+}
+
+.afh-rank-fill {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+}
+
+/* ── Member peoples ───────────────────────────────────────────────── */
+
+.afh-members {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.afh-member {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 8px 12px;
+  border: 1px solid var(--afh-border);
+  border-radius: var(--afh-radius-md);
+  background: var(--afh-surface);
+  font-size: var(--afh-text-small);
+  color: var(--afh-text-soft);
+}
+
+.afh-member b {
+  color: var(--afh-text);
+  font-weight: 700;
+}
+
+.afh-member-spread {
+  margin-left: auto;
+  font-family: var(--afh-font-mono);
+  font-size: var(--afh-text-caption);
+  color: var(--afh-text-soft);
+  white-space: nowrap;
+}
+
+/* ── Sources ──────────────────────────────────────────────────────── */
+
+.afh-sources {
+  display: grid;
+  gap: 9px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.afh-source-row {
+  display: flex;
+  /* The source-kind tag drops under a title too long to share its line. */
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 10px;
+  /* The site centres text under 768px from the body down. That rule left the
+     chip on the row's left edge and the citation centred beside it — two
+     alignments inside one card, which brand charter §8.1 forbids and which is
+     visible on every fiche's Sources block, not only this one. */
+  text-align: start;
+  font-size: var(--afh-text-small);
+  line-height: 1.65;
+  color: var(--afh-text-soft);
+}
+
+/* A flex item will not shrink below its content, and a corpus source title is
+   routinely a path with no space in it — `dataset/source/afrik/peuples/…`.
+   Without these two the row grows past the parchment at 430px and the title,
+   its notes and the card's right edge all leave the screen together. The chip
+   keeps its width because a tier read at half a word is worse than no tier. */
+.afh-source-row > .afh-chip {
+  flex: none;
+}
+
+.afh-source-row > :not(.afh-chip) {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.afh-source-row a {
+  color: var(--accent-ink, var(--accent));
+}
+
+/* `SourceCitation` emits these two, shared by the name fiche, the
+   bibliography and the dossier, so one citation reads the same on all three. */
+.afh-source-citation {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+/* `--afh-text-soft`, not `--afh-text-muted`: the muted ink fails AA at this
+   size on every parchment ground, which `ficheParchmentContrast` holds the
+   whole stylesheet to. */
+.afh-source-kind-label {
+  white-space: nowrap;
+  font-size: var(--afh-text-caption);
+  color: var(--afh-text-soft);
+}
+
+/* ── Source list ─────────────────────────────────────────────────── */
+
+.afh-fiche-sources {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+  font-size: var(--afh-text-caption);
+  line-height: 1.6;
+  color: var(--afh-text-soft);
+}
+
+.afh-fiche-source-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* A corpus title is routinely a URL with no space in it; without this the
+   row grows past the parchment at 430px. */
+.afh-fiche-source-list > li {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.afh-fiche-source-note {
+  flex-basis: 100%;
+  font-size: var(--afh-text-eyebrow);
+}
+
+/* The share of a country no people accounts for, drawn rather than left as
+   empty track. */
+[data-demo-unassigned] {
+  background: repeating-linear-gradient(
+    135deg,
+    var(--afh-border) 0 5px,
+    transparent 5px 10px
+  );
+}
+
+/* ── Tiles ──────────────────────────────────────────────────────────
+   The unit every chapter folds its prose into: 12px apart, 16px inside. On
+   production the tiles sat 6px apart with their text against the border,
+   and each chapter chose its own gap. An odd last tile takes the whole row
+   rather than leaving a hole beside it.
+
+   One column on a phone. These tiles carry prose, and two columns gave each
+   of them 140px of measure — "Islam sunnite (école malékite majoritaire),
+   soufisme important", 62 characters, fell on five lines at twelve
+   characters each, against a 45-75 comfort floor (measured on MAR,
+   2026-09-16). Two further defects came with it: columns of free height
+   left an empty card beside four lines of text, and two `details` side by
+   side put their controls at two different heights, so there was no row of
+   controls left to scan.
+
+   Two columns return at the parchment's own 760px, where each measure is
+   wide enough to carry a sentence. Brand charter §8.7 states the rule this
+   obeys: two columns on a phone admit only atomic cells. */
+
+.afh-tiles {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+}
+
+.afh-tiles > [data-wide="true"],
+.afh-tiles > :last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
+.afh-tile {
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid var(--afh-border);
+  border-radius: var(--afh-radius-lg);
+  background: var(--afh-surface);
+  text-align: start;
+}
+
+.afh-tile-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.afh-tile-summary::-webkit-details-marker {
+  display: none;
+}
+
+.afh-tile-label {
+  margin: 0;
+  font-family: var(--afh-font-mono);
+  font-size: var(--afh-text-caption);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-ink, var(--afh-text-soft));
+}
+
+.afh-tile-value {
+  margin: 0;
+  font-family: var(--afh-font-display);
+  font-weight: 700;
+  font-size: var(--afh-text-h3);
+  line-height: 1.25;
+  color: var(--afh-text);
+  overflow-wrap: anywhere;
+}
+
+/* Two lines, then the control. The clamp is the whole of "a preview": the
+   sentence is all there, and opening the tile lifts the clamp rather than
+   printing it a second time. */
+.afh-tile-preview {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: var(--afh-text-small);
+  line-height: 1.5;
+  color: var(--afh-text-soft);
+}
+
+.afh-tile[open] .afh-tile-preview {
+  display: block;
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
+.afh-tile-control {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-family: var(--afh-font-mono);
+  font-size: var(--afh-text-caption);
+  color: var(--accent-ink, var(--afh-text-soft));
+}
+
+.afh-tile-control [data-when="open"],
+.afh-tile[open] .afh-tile-control [data-when="closed"] {
+  display: none;
+}
+
+.afh-tile[open] .afh-tile-control [data-when="open"] {
+  display: inline;
+}
+
+.afh-tile-body {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--afh-border);
+  font-size: var(--afh-text-small);
+  line-height: 1.6;
+  color: var(--afh-text-soft);
+}
+
+.afh-tile-fact {
+  margin-top: 4px;
+  font-size: var(--afh-text-small);
+  line-height: 1.6;
+  color: var(--afh-text-soft);
+}
+
+.afh-tile[open][data-body-restates-preview="true"] .afh-tile-preview {
+  display: none;
+}
+
+.afh-tile-kicker {
+  margin: 0;
+  font-family: var(--afh-font-mono);
+  font-size: var(--afh-text-caption);
+  font-weight: 700;
+  color: var(--afh-text-soft);
+}
+
+/* A term inside an opened tile: the name of the rubric a passage comes from. */
+.afh-tile-term {
+  margin: 0 0 4px;
+  font-family: var(--afh-font-mono);
+  font-size: var(--afh-text-caption);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--afh-text-soft);
+}
+
+.afh-tile-body .afh-tile-prose {
+  margin: 0 0 8px;
+  font-size: var(--afh-text-small);
+  line-height: 1.6;
+  color: var(--afh-text-soft);
+}
+
+.afh-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.afh-pills > li {
+  padding: 4px 12px;
+  border: 1px solid var(--afh-border);
+  border-radius: var(--afh-radius-full);
+  background: var(--afh-bg);
+  font-size: var(--afh-text-small);
+  color: var(--afh-text);
+}
+
+/* ── Chronology ───────────────────────────────────────────────────────
+   One timeline for both records (operator ruling, 2026-09-12): a line down
+   the stations, a dot and a rule per station inked by its regime, and in
+   each the period, the title, the preview. Three regimes, three existing
+   inks — gold for a precolonial polity, the colonial ink the atlas keeps for
+   imposed authority, green for the contemporary state. */
+
+.afh-chronology-lead {
+  margin-bottom: 16px;
+}
+
+.afh-chronology-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.afh-chronology-legend > li {
+  padding: 4px 12px;
+  border: 1px solid var(--afh-border);
+  border-radius: var(--afh-radius-full);
+  background: var(--afh-surface);
+  font-family: var(--afh-font-mono);
+  font-size: var(--afh-text-caption);
+  font-weight: 700;
+  color: var(--afh-regime-ink);
+}
+
+.afh-chronology-legend > [data-regime="polity"],
+.afh-chronology > [data-regime="polity"] {
+  --afh-regime-ink: var(--afh-gold);
+}
+
+.afh-chronology-legend > [data-regime="colonial"],
+.afh-chronology > [data-regime="colonial"] {
+  --afh-regime-ink: var(--afh-colonial-ink);
+}
+
+.afh-chronology-legend > [data-regime="modern"],
+.afh-chronology > [data-regime="modern"] {
+  --afh-regime-ink: var(--afh-conf-high);
+}
+
+.afh-chronology {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding: 0 0 0 24px;
+  list-style: none;
+}
+
+.afh-chronology-station {
+  position: relative;
+}
+
+/* The line is drawn one segment per station, so it changes ink where the
+   regime does. The segments overlap the 12px gap, which keeps it whole. */
+.afh-chronology-station::before {
+  content: "";
+  position: absolute;
+  left: -16px;
+  top: -8px;
+  bottom: -8px;
+  width: 3px;
+  background: var(--afh-regime-ink);
+}
+
+.afh-chronology-station:first-child::before {
+  top: 24px;
+}
+
+.afh-chronology-station:last-child::before {
+  bottom: calc(100% - 24px);
+}
+
+.afh-chronology-station::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 18px;
+  width: 11px;
+  height: 11px;
+  border-radius: var(--afh-radius-full);
+  background: var(--afh-regime-ink);
+  box-shadow: 0 0 0 3px var(--afh-bg-warm);
+}
+
+.afh-chronology-station > .afh-tile {
+  border-left: 3px solid var(--afh-regime-ink);
+}
+
+.afh-chronology-station .afh-tile-kicker {
+  color: var(--afh-regime-ink);
+}
+
+/* In a station the label is the entity, so it takes the display face. */
+.afh-chronology-station .afh-tile-label {
+  font-family: var(--afh-font-display);
+  font-size: var(--afh-text-h3);
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--afh-text);
+}
+
+.afh-chronology-station .afh-tile-value {
+  font-family: var(--afh-font-body);
+  font-size: var(--afh-text-small);
+  font-weight: 400;
+}
+
+.afh-chronology-names {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.afh-chronology-name {
+  padding: 2px 12px;
+  border: 1px solid var(--afh-regime-ink);
+  border-radius: var(--afh-radius-full);
+  font-weight: 600;
+  color: var(--afh-text);
+}
+
+.afh-chronology-name-term {
+  font-weight: 400;
+  color: var(--afh-text-soft);
+}
+
+.afh-chronology-passage + .afh-chronology-passage {
+  margin-top: 12px;
+}
+
+.afh-chronology-routes {
+  display: grid;
+  gap: 4px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--afh-text-small);
+  color: var(--afh-text);
+}
+
+.afh-chronology-routes > li::before {
+  content: "→ ";
+  color: var(--afh-regime-ink);
+}
+
+.afh-chronology-centres {
+  margin: 8px 0 0;
+  font-family: var(--afh-font-mono);
+  font-size: var(--afh-text-caption);
+  color: var(--afh-text-soft);
+}
+
+/* ── Names ─────────────────────────────────────────────────────────────
+   The names chapter both records share. A group per naming system on a
+   people, a register per provenance on a country, each a surface with its
+   count; the names themselves are pills that lead to their own record. */
+
+.afh-names {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.afh-names-group {
+  padding: 16px;
+  border: 1px solid var(--afh-border);
+  border-radius: var(--afh-radius-lg);
+  background: var(--afh-surface);
+  text-align: start;
+}
+
+.afh-names-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.afh-names-title {
+  margin: 0;
+  font-family: var(--afh-font-display);
+  font-weight: 700;
+  font-size: var(--afh-text-h3);
+  line-height: 1.25;
+  color: var(--afh-text);
+}
+
+.afh-names-tally {
+  font-family: var(--afh-font-mono);
+  font-size: var(--afh-text-caption);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  color: var(--accent-ink, var(--afh-text-soft));
+}
+
+.afh-names-systems {
+  margin: 12px 0 0;
+  font-family: var(--afh-font-mono);
+  font-size: var(--afh-text-caption);
+  color: var(--afh-text-soft);
+}
+
+.afh-name-pills > li {
+  padding: 0;
+}
+
+.afh-name-pills a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 4px 12px;
+  font-weight: 600;
+  color: var(--accent-ink, var(--afh-text));
+  text-decoration: none;
+}
+
+.afh-name-pills a:hover {
+  text-decoration: underline;
+}
+
+.afh-name-index {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 0 0 12px;
+}
+
+.afh-name-index > [data-letter] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: var(--afh-radius-lg);
+  font-size: var(--afh-text-body);
+}
+
+.afh-name-index > [data-letter="present"] {
+  border: 1px solid var(--accent);
+  font-weight: 600;
+  color: var(--accent-ink);
+  text-decoration: none;
+}
+
+.afh-name-index > [data-letter="absent"] {
+  border: 1px dashed var(--afh-border);
+  color: var(--afh-text-soft);
+}
+
+.afh-name-letter + .afh-name-letter {
+  margin-top: 12px;
+}
+
+.afh-tile-passage + .afh-tile-passage {
+  margin-top: 12px;
+}
+
+.afh-pills a {
+  font-weight: 600;
+  color: var(--accent-ink, var(--afh-text));
+  text-decoration: none;
+}
+
+.afh-pills a:hover {
+  text-decoration: underline;
+}
+
+.afh-pill-code {
+  margin-left: 4px;
+  font-family: var(--afh-font-mono);
+  font-size: var(--afh-text-caption);
+  color: var(--afh-text-soft);
+}
+
+.afh-tile-value a {
+  color: var(--accent-ink, var(--afh-text));
+  text-decoration: none;
+}
+
+.afh-tile-value a:hover {
+  text-decoration: underline;
+}
+
+/* ── Summary panel ────────────────────────────────────────────────────
+   The panel that opens both records. It takes the chapter's width: an inline
+   stylesheet once capped it at min(100% − 1rem, 44rem), which is what left
+   "En bref" narrower than every chapter under it. */
+
+.fiche-summary-brief {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.fiche-summary-brief__eyebrow {
+  margin: 0;
+  font-family: var(--afh-font-mono);
+  font-size: var(--afh-text-eyebrow);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--afh-text-soft);
+}
+
+.fiche-summary-brief h2 {
+  margin: 8px 0 16px;
+  font-family: var(--afh-font-display);
+  font-weight: 700;
+  font-size: var(--afh-text-h2);
+  line-height: 1.15;
+  color: var(--afh-text);
+}
+
+/* Two columns on a phone, and here that is deliberate: every cell is atomic
+   — a count, a date — so nothing wraps and no measure is at stake. This is
+   the other half of brand charter §8.7, whose first half linearises the
+   tiles above. */
+.fiche-summary-brief__counted {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 22px;
+}
+
+/* The lead figure takes the whole row. A tile beside it would read as its
+   equal, and the four tiles count what the atlas holds while the lead counts
+   the country or the people itself. */
+.fiche-summary-brief__counted > [data-emphasis="lead"] {
+  grid-column: 1 / -1;
+}
+
+/* ── The figures of the summary, stripped of their cards ──────────────
+   Four counts wore four white grounds, four borders, four radii and four
+   paddings — four "separate object" signals for a one-character datum, and
+   on a desktop parchment a "5" sat in 600px of white. The container weighed
+   more than the content it carried. A hairline under each pair is the whole
+   of the device now; the typography charter §4 reserves a card for a
+   preview, and a counted figure previews nothing.
+
+   The figures also leave the monospace. "The display face names, the body
+   face explains and operates, the monospace aligns figures in a column" —
+   and 5, 7, 2 and 79 are four unrelated magnitudes in a 2x2 grid, never a
+   column to align, so `tabular-nums` buys nothing and the face is not
+   earned. This is why the peoples chapter next door reads warmer than the
+   panel above it: it was already in the display face. */
+.fiche-summary-brief__counted > .afh-stat-card {
+  margin-top: 11px;
+  padding: 0 0 11px;
+  border: 0;
+  border-bottom: 1px solid var(--afh-border);
+  border-radius: 0;
+  background: none;
+}
+
+.fiche-summary-brief__counted > .afh-stat-card[data-emphasis="lead"] {
+  margin-top: 0;
+  padding: 0 0 14px;
+}
+
+.fiche-summary-brief__counted > .afh-stat-card[data-emphasis="tile"] {
+  padding: 0 0 11px;
+}
+
+/* A rule under the last row would close a table that nothing continues. */
+.fiche-summary-brief__counted > .afh-stat-card:nth-last-child(-n + 2) {
+  border-bottom: 0;
+}
+
+.fiche-summary-brief__counted > .afh-stat-card .afh-stat-card-n {
+  font-family: var(--afh-font-display);
+  font-weight: 900;
+  letter-spacing: -0.015em;
+  font-variant-numeric: normal;
+}
+
+/* One figure is inked, and only one. The ink says "population", not
+   "number": spent on all five it would stop teaching anything, and the four
+   counts beside it would claim the weight the lead is owed. It is the same
+   reading the peoples chapter gives its national total. */
+.fiche-summary-brief__counted
+  > .afh-stat-card[data-emphasis="lead"]
+  .afh-stat-card-n {
+  color: var(--afh-figure-lead-ink);
+  line-height: 1;
+}
+
+/* An absence is a different statement from a measurement, and dropping the
+   card must not drop that distinction with it. The colonial tint moves from
+   a filled ground to the hairline, and a missing lead keeps the colonial ink
+   rather than the figure ink above — a population nobody has sourced must
+   not be painted like one that is. */
+.fiche-summary-brief__counted > .afh-stat-card[data-provenance="missing"] {
+  border-bottom-color: var(--afh-color-colonial);
+}
+
+.fiche-summary-brief__counted
+  > .afh-stat-card[data-emphasis="lead"][data-provenance="missing"]
+  .afh-stat-card-n {
+  color: var(--afh-color-colonial);
+}
+
+/* Four counts across, once the parchment has the width. At two columns a
+   desktop reader met two half-screen slabs holding one digit each; four
+   turns the row into a strip of figures, and it is that density — not an
+   alignment — that was making the panel feel unfinished. */
+@container (min-width: 760px) {
+  .fiche-summary-brief__counted {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .fiche-summary-brief__counted > .afh-stat-card:nth-last-child(-n + 4) {
+    border-bottom: 0;
+  }
+}
+
+/* A rule down the left rather than a line across the top. A top rule reads
+   as the end of the figures; a left rule reads as a quotation, which is what
+   this is — one sourced sentence, not a sixth count. The gold role, the same
+   one the search surface gives a sourced highlight. */
+.fiche-summary-brief__fact {
+  margin-top: 16px;
+  padding: 12px 16px;
+  border-left: 3px solid var(--afh-gold);
+  border-radius: 0 var(--afh-radius-lg) var(--afh-radius-lg) 0;
+  background: var(--afh-surface);
+}
+
+.fiche-summary-brief__fact p {
+  margin: 0 0 8px;
+  line-height: 1.5;
+}
+
+.fiche-summary-brief__source {
+  margin: 8px 0 0;
+  font-size: var(--afh-text-small);
+  color: var(--afh-text-soft);
+}
+
+/* ── The story of the names ───────────────────────────────────────────
+   Opens the country and people summaries above their figures, and stands as
+   the first chapter of a family or language. Rows are prose, not atomic
+   cells, so a phone gets one column (brand charter §8.7 admits two only for
+   counts); the second column arrives with the container, never the viewport.
+   Every row carries the same face and size — the dot is the only mark. */
+
+.fiche-name-story {
+  min-width: 0;
+  margin: 0 0 24px;
+  overflow-wrap: anywhere;
+}
+
+.fiche-name-story__eyebrow {
+  margin: 0 0 6px;
+  font-family: var(--afh-font-mono);
+  font-size: var(--afh-text-eyebrow);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--afh-text-soft);
+}
+
+.fiche-name-story__ask {
+  margin: 0 0 6px;
+  font-family: var(--afh-font-display);
+  font-weight: 700;
+  font-size: var(--afh-text-h3);
+  line-height: 1.25;
+  color: var(--afh-text);
+}
+
+.fiche-name-story__lead {
+  margin: 0 0 12px;
+  color: var(--afh-text-soft);
+  line-height: 1.5;
+}
+
+.fiche-name-story__forms {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fiche-name-story__form {
+  display: grid;
+  gap: 2px;
+  padding: 12px 0;
+  border-top: 1px solid var(--afh-border);
+}
+
+.fiche-name-story__name {
+  font-family: var(--afh-font-display);
+  font-weight: 700;
+  font-size: var(--afh-text-h3);
+  line-height: 1.2;
+  color: var(--afh-text);
+}
+
+.fiche-name-story__mark {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-left: 8px;
+  border-radius: 50%;
+  background: var(--accent, var(--afh-gold));
+  vertical-align: middle;
+}
+
+.fiche-name-story__tag {
+  font-family: var(--afh-font-mono);
+  font-size: var(--afh-text-eyebrow);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--afh-text-soft);
+}
+
+.fiche-name-story__sense {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.fiche-name-story__disclosure {
+  margin: 8px 0 0;
+}
+
+.fiche-name-story__disclosure > summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--accent-ink, var(--afh-text-soft));
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.fiche-name-story__disclosure > p {
+  margin: 8px 0 0;
+  line-height: 1.5;
+}
+
+.fiche-name-story__caution {
+  margin: 12px 0 0;
+  padding: 10px 12px;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--afh-radius-md) var(--afh-radius-md) 0;
+  background: var(--afh-surface);
+  font-size: var(--afh-text-small);
+  line-height: 1.5;
+}
+
+.fiche-name-story__caution > p {
+  margin: 0;
+}
+
+@container (min-width: 640px) {
+  .fiche-name-story__forms {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 32px;
+  }
+}
+
+/* ── Callout ──────────────────────────────────────────────────────────
+   An aside the section cannot say in its own prose. A rule in the
+   surface's accent, never a box, so it reads as part of the same
+   document.
+
+   The rule and the glyph are the whole of the signal: the aside used to
+   open on a bold label naming what the fiche was doing ("Ce que la fiche
+   refuse de taire"), which told the reader about the atlas rather than
+   about the country. A marked passage needs no caption. */
+
+.afh-parchment-callout {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+  padding: 13px 16px;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--afh-radius-md) var(--afh-radius-md) 0;
+  background: var(--afh-surface);
+  font-size: var(--afh-text-small);
+  line-height: 1.65;
+  color: var(--afh-text-soft);
+}
+
+/* --accent-ink is the accent that clears contrast on the parchment;
+   --accent alone is the fill tone and reads too pale at this size. */
+.afh-parchment-callout-icon {
+  flex: none;
+  width: 17px;
+  height: 17px;
+  /* Optical alignment with the cap-height of the first line, not its box. */
+  margin-top: 4px;
+  color: var(--accent-ink, var(--accent));
+}
+
+/* ── The name borne, the names imposed ────────────────────────────────
+   The opening rubric of a people fiche, and the one place the surface
+   states two things it refuses to rank. Both are fields of the same
+   rubric, so they take the callout's device — a rule in ink, never a
+   box — and differ only in which ink: the accent for the name a people
+   uses for itself, the colonial tone for the names put on it.
+
+   They used to be two filled cards in a stretching grid, which tied the
+   autonym's height to however many exonyms the fiche happened to record.
+   A one-line autonym beside a nine-name list stood on 300px of empty
+   fill. `align-items: start` is the whole of that fix: the fields state
+   different amounts and are entitled to different heights. */
+
+.afh-naming {
+  display: grid;
+  align-items: start;
+  gap: 18px;
+  margin: 2px 0 18px;
+}
+
+.afh-naming-field {
+  padding: 1px 0 1px 14px;
+  border-left: 3px solid var(--accent);
+}
+
+/* Charter §2 keeps the accent out of components, but the colonial tone is not
+   an accent — it is the atlas's one marker for an imposed name, and it means
+   the same thing on every surface. */
+.afh-naming-field[data-role="imposed"] {
+  border-left-color: var(--afh-colonial-ink);
+}
+
+.afh-naming-label {
+  margin: 0 0 6px;
+  font-family: var(--afh-font-mono);
+  font-size: var(--afh-text-caption);
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--afh-text-soft);
+}
+
+.afh-naming-field[data-role="imposed"] .afh-naming-label {
+  color: var(--afh-colonial-ink);
+}
+
+/* Two classes, so it outranks `.afh-parchment-section p` — the autonym is the
+   loudest thing in the section, not running prose in the soft ink. */
+.afh-naming .afh-naming-value {
+  margin: 0;
+  max-width: none;
+  font-family: var(--afh-font-display);
+  font-weight: 700;
+  font-size: var(--afh-text-h3);
+  line-height: 1.3;
+  color: var(--afh-text);
+  text-wrap: pretty;
+}
+
+/* The names run on one after another rather than stacking one per row. The
+   corpus swings from one exonym to nine, and a row apiece made !Kung's nine
+   into a column twice the height of everything beside it — the autonym then
+   stood on a void the width of half the page. Flowing them keeps the two
+   fields within a line or two of each other whatever the fiche records, which
+   is what lets them be read face to face at all.
+
+   A bullet list is also the wrong claim: these are not steps or ranked items,
+   they are the set of names imposed on one people. */
+.afh-naming-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--afh-text-small);
+  line-height: 1.6;
+  color: var(--afh-text);
+}
+
+/* Many exonyms are a name followed by a parenthesis naming who imposed it, so
+   an item can be a clause rather than a word. The separator has to survive
+   that without reading as punctuation inside it. */
+.afh-naming-list li:not(:last-child)::after {
+  content: "·";
+  margin: 0 8px;
+  color: var(--afh-text-soft);
+}
+
+/* ── Wide layout ──────────────────────────────────────────────────── */
+
+@container (min-width: 760px) {
+  .afh-parchment-head {
+    padding: 34px 40px;
+  }
+
+  /* Wide enough for two measures, which is the only condition under which a
+     tile of prose may share its row. */
+  .afh-tiles {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .afh-parchment-section {
+    padding: 32px 24px;
+  }
+
+  .afh-parchment-section > [data-fiche-section] {
+    padding: 32px 24px;
+  }
+
+  /* Side by side only once there is room for two measures. Below this the
+     fields stack, which is also the order they are read in: the name borne
+     first, then the names imposed on it. */
+  .afh-naming {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 28px;
+  }
+
+  .afh-parchment-head h1 {
+    font-size: var(--afh-text-hero);
+  }
+
+  .afh-parchment-section h2 {
+    font-size: var(--afh-text-h1);
+  }
+}
+
+/* ── The way out ──────────────────────────────────────────────────────
+   Measured on production 2026-09-07: a fiche holds a reader for 251 to
+   276 seconds against 21 on the listing that points at it, and ten
+   fiches still ended at a 100 % exit rate. The document held and then
+   stopped without pointing anywhere.
+
+   One column on a phone, two once the parchment has room for two
+   measures — the same 760px the chapters change padding at, so the
+   block breathes with the document rather than against it.
+
+   `text-align: left` is a decision, not an inheritance. mobile-text.css
+   centres the body below 768px, and every row here is a shrink-to-fit
+   inline-flex link: centred, five rows start at five different x and
+   their arrows land in five places, so there is no column to scan and
+   no return edge. Brand charter §8.1 — one alignment per block, and
+   this block chooses ragged-right. */
+.afh-onward {
+  display: grid;
+  gap: 16px;
+  /* The chapter heading is display type at h1 size on a wide parchment, and
+     the first kicker sat straight under it. One step of the ramp, not the
+     6px the sources note happens to carry — that is one of the odd steps the
+     brand charter deprecated in place. */
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+  text-align: start;
+}
+
+/* The parchment's own eyebrow, at this row's margin: the kind of thing
+   a link leads to is carried by a word, never by a hue. Painting each
+   row in its target's accent would open a fourth entity-to-colour
+   mapping inside one scroll (atlas charter §2 already runs three). */
+.afh-onward-kind {
+  display: block;
+  margin-bottom: 4px;
+}
+
+@container (min-width: 760px) {
+  .afh-onward {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 24px;
+  }
+}
+
+/* ── The page saying it can be amended ─────────────────────────────── */
+
+/* A direct child of the parchment, so the flex gap spaces it and the column
+   gives it the chapter's width. It used to carry its own margins, which is
+   what left it 40px narrower than the chapters and flush against the one
+   above.
+
+   A dashed frame rather than a chapter's ground: this is the record speaking
+   about itself, and a dashed edge reads as a space left open. The tint is
+   mixed from the accent into the chapter ground, so a record scoped to a
+   different accent carries the band in its own hue. */
+.afh-amend-band {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 18px 16px;
+  border: 1.5px dashed var(--accent);
+  border-radius: var(--afh-radius-lg);
+  background: color-mix(in srgb, var(--accent) 12%, var(--afh-bg-warm));
+}
+
+.afh-amend-band-lead {
+  margin: 0;
+  line-height: 1.5;
+  color: var(--afh-text);
+}
+
+/* The accent button sets its own fill, radius and focus ring. The label is
+   a sentence-length verb, so it may wrap on a phone rather than overflow. */
+.afh-amend-band-action {
+  font-weight: 700;
+  text-decoration: none;
+  white-space: normal;
+}
+
+/* ---------------------------------------------------------------------------
+   The people fiche's answer card (REQ-190, DEC-068).
+
+   One face: the display and mono tokens point at the body face inside the
+   fiche, so chapter titles and uppercase labels stop carrying meaning through
+   a change of typeface. Hierarchy is size and weight only.
+   ------------------------------------------------------------------------ */
+.afh-one-face {
+  --afh-font-display: var(--afh-font-body);
+  --afh-font-mono: var(--afh-font-body);
+}
+
+.afh-name-answer,
+.afh-name-others li {
+  display: grid;
+  gap: var(--afh-space-sm);
+}
+
+.afh-name-answer__self {
+  font-size: var(--afh-text-h1);
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.afh-name-answer__say {
+  display: flex;
+  align-items: center;
+  gap: var(--afh-space-sm);
+  margin: 0;
+  color: var(--afh-text-soft);
+}
+
+.afh-name-answer__say button {
+  inline-size: 2.25rem;
+  block-size: 2.25rem;
+  border-radius: 50%;
+  border: 1px solid var(--accent-ink);
+  background: transparent;
+  color: var(--accent-ink);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.afh-name-answer__say svg {
+  inline-size: 0.875rem;
+  fill: currentColor;
+}
+
+.afh-name-others ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.afh-name-others li {
+  padding-block: var(--afh-space-md);
+  border-top: 1px solid var(--afh-border);
+}
+
+.afh-name-others li:first-child {
+  border-top: 0;
+}
+
+.afh-name-others__form {
+  font-size: var(--afh-text-h3);
+  font-weight: 800;
+  margin: 0;
+}
+
+/* A status is a badge: an icon and a word, coloured from a token. The word
+   carries the meaning on its own, so the colour is never the only signal. */
+.afh-name-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--afh-space-xs);
+}
+
+.afh-name-badge {
+  /* The word is always in the page's own ink, so its contrast never depends
+     on the status colour: a tinted ground took the teal ink to 4.35:1 and
+     the soft ink under 4.5:1 (axe, 2026-10-03). The status colour rides on
+     the outline and the icon, beside a word that says it anyway. */
+  --badge-ink: var(--afh-text-soft);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  padding: 0.3em 0.65em 0.3em 0.5em;
+  border-radius: 999px;
+  border: 1px solid var(--badge-ink);
+  font-size: var(--afh-text-caption);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--afh-text);
+  background: transparent;
+  white-space: nowrap;
+}
+
+.afh-name-badge svg {
+  inline-size: 0.85em;
+  block-size: 0.85em;
+  fill: none;
+  stroke: var(--badge-ink);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.afh-name-badge[data-badge="own"] {
+  --badge-ink: var(--afh-cat-teal-ink);
+}
+.afh-name-badge[data-badge="imposed"] {
+  --badge-ink: var(--afh-colonial-ink);
+}
+.afh-name-badge[data-badge="debated"] {
+  --badge-ink: var(--afh-cat-ocre-ink);
+}
+.afh-name-badge[data-badge="usage"] {
+  --badge-ink: var(--afh-cat-perv-ink);
+}
+.afh-on-night .afh-name-badge[data-badge="own"] {
+  --badge-ink: var(--afh-cat-teal-ink-night);
+}
+.afh-on-night .afh-name-badge[data-badge="debated"] {
+  --badge-ink: var(--afh-cat-ocre-ink-night);
+}
+.afh-on-night .afh-name-badge[data-badge="usage"] {
+  --badge-ink: var(--afh-cat-perv-ink-night);
+}
+
+.afh-name-more summary {
+  cursor: pointer;
+  color: var(--accent-ink);
+  font-weight: 700;
+  font-size: var(--afh-text-small);
+}
+
+.afh-name-more ul {
+  margin: var(--afh-space-sm) 0 0;
+  padding-left: 1.1em;
+  display: grid;
+  gap: var(--afh-space-xs);
+  font-size: var(--afh-text-small);
+  color: var(--afh-text-soft);
+}
+
+/* ===== fiche-chapter-bar.css (verbatim) ===== */
+/**
+ * The reading rail — atlas charter §7.
+ *
+ * A bar that follows the reader down the parchment, naming the chapter they
+ * are in and opening the fiche's summary.
+ *
+ * It takes the parchment's own measure rather than the viewport's: pinned at
+ * the top of the screen it reads as the document's header, because the ground
+ * on either side of it is the ground the document is printed on.
+ *
+ * Its own file rather than a section of fiche-parchment.css, because the rail
+ * is not part of the parchment: it sits above it, outside `.afh-parchment`,
+ * and it owns the scroll offset every chapter has to clear.
+ *
+ * Mobile first: the base rules are the 430px layout. Nothing here names an
+ * accent — the scope class on FicheSequence's root decides which one
+ * (charter §2).
+ */
+
+:root {
+  /* The rail's height, published so a chapter can clear it when scrolled to.
+     One value, because an anchor landing *under* the rail is the failure this
+     token exists to prevent. */
+  --afh-chapter-bar-height: 48px;
+}
+
+/* A chapter scrolled to has to arrive below the rail, not under it — and now
+   below the masthead too, which the reader can bring back at any moment.
+
+   Both heights are reserved, in every state. Reserving only what is on screen
+   when the jump is computed is wrong at the one moment it matters: a jump up
+   the document is itself an upward scroll, so the masthead is on its way back
+   in while the chapter is still travelling, and the chapter lands under it.
+   The cost of the safe reading is a masthead's worth of paper above a chapter
+   reached while the masthead is out. That is a gap; the alternative is a
+   heading the reader cannot see. */
+[data-fiche-section] {
+  scroll-margin-top: calc(
+    var(--afh-header-height) + var(--afh-chapter-bar-height) +
+      var(--afh-space-md)
+  );
+}
+
+/* The rail moves focus to the chapter it opens, so a keyboard reader lands
+   somewhere they can read from. That focus must be seen when it was asked for
+   with a key and stay quiet when it followed a click — and in the fiche's own
+   accent, not the browser's blue. */
+[data-fiche-section]:focus {
+  outline: none;
+}
+
+[data-fiche-section]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
+.afh-chapter-bar {
+  position: sticky;
+  /* Under the masthead, not behind it. The two are the only pinned things on
+     a fiche and they now share the top of the screen: the rail is pinned one
+     masthead down, then travels back up by exactly the distance the masthead
+     retracts, so it lands at the top of the screen when the masthead has gone
+     and returns to sit against it when the masthead comes back.
+
+     The travel is folded into the pinned offset rather than carried by a
+     transform. A transform applies whether or not the rail is pinned, so
+     while the masthead was retracted it lifted the rail a masthead's height
+     above its place in the flow — over the foot of the globe band, whose
+     controls sit against that edge. `top` is inert until the rail is
+     actually pinned, which is the only state the travel describes. It moves
+     nothing else either: a sticky offset does not re-lay out the parchment.
+
+     Its z-index stays below the masthead's 40, so during the travel the
+     masthead is what covers the rail and not the reverse. */
+  top: calc(var(--afh-header-height) + var(--afh-header-shift));
+  transition: top var(--afh-duration-base) var(--afh-ease-out);
+  z-index: 30;
+  /* Welds the rail onto the parchment it heads: the sequence sets a large gap
+     between its children, and a rail floating in that gap would read as an
+     unrelated widget rather than as the document's own header. */
+  margin-bottom: calc(-1 * var(--afh-space-3xl));
+  background: var(--afh-bg);
+  border-top: 1px solid var(--afh-border);
+  border-bottom: 1px solid var(--afh-border);
+}
+
+/* The bar proper. Its own box so the read rule below stays under the bar and
+   does not drop to the foot of the summary when that opens.
+
+   A row, because the rail carries two controls: the summary toggle, which
+   takes whatever width is left, and the report control, which keeps its own
+   (moderation charter §3). */
+.afh-chapter-bar-head {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.afh-chapter-bar-toggle {
+  display: flex;
+  align-items: center;
+  gap: var(--afh-space-lg);
+  /* Takes the room the report control does not. `min-width: 0` is what lets
+     the chapter title ellipsize instead of pushing the report control off the
+     rail — a flex item's default minimum is its content. */
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: var(--afh-chapter-bar-height);
+  padding: 0 var(--afh-space-lg);
+  border: 0;
+  background: none;
+  color: var(--afh-text);
+  text-align: left;
+  cursor: pointer;
+  transition: var(--afh-transition-color);
+}
+
+.afh-chapter-bar-toggle:hover {
+  background: var(--afh-bg-warm);
+}
+
+/* The rail used to open with "02 / 09". It went with the idea it implied:
+   that the record's chapters are a sequence a reader walks in order, when
+   they open the one they came for. The bar names the chapter in view, which
+   is the part that was doing work. */
+
+/* The rail's other half of the pair. Reporting is for a page that is wrong;
+   contributing is for one that is merely thin, which on an atlas this young
+   is the commoner case — and the rail offered only the first.
+
+   A link in the accent ink rather than the filled block the reviewed
+   rendering gives it. That rendering puts the pair in a bar of its own at
+   the foot of the screen, where a filled block has room; this rail is 48px
+   tall, carries an ellipsizing chapter title, and follows the reader down
+   the whole page. A filled block there competes with the page it sits on. */
+.afh-chapter-bar-contribute {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--afh-chapter-bar-height);
+  padding-inline: var(--afh-space-lg);
+  font-size: var(--afh-text-caption);
+  font-weight: 700;
+  color: var(--accent-ink, var(--accent));
+  text-decoration: none;
+}
+
+.afh-chapter-bar-contribute:hover {
+  text-decoration: underline;
+}
+
+.afh-chapter-bar-contribute:focus-visible {
+  outline: none;
+  box-shadow: var(--afh-ring-focus);
+  border-radius: var(--afh-radius-sm);
+}
+
+.afh-chapter-bar-current {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: var(--afh-font-display);
+  font-weight: 700;
+  font-size: var(--afh-text-small);
+}
+
+.afh-chapter-bar-cue {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--afh-space-xs);
+  font-size: var(--afh-text-caption);
+  color: var(--afh-text-soft);
+}
+
+/* At 430px the chapter title is what the reader needs; the word naming the
+   control is what gives way. The button keeps its full name for a screen
+   reader either way (aria-label). */
+.afh-chapter-bar-cue-label {
+  display: none;
+}
+
+/* The report control keeps its width at every breakpoint, including 430px.
+   Which word gives way when the rail runs out of room is a decision, and this
+   is the opposite one from the summary's: "Sommaire" names a control the
+   caret already explains, so it can go, while "Signaler" names a gesture
+   a reader cannot guess from anything else on the rail. What yields instead is
+   the chapter title, which ellipsizes — it is also the one thing on the rail
+   the reader can read off the page itself. */
+.afh-chapter-bar-report {
+  flex: none;
+  padding-right: var(--afh-space-lg);
+}
+
+.afh-chapter-bar-caret {
+  width: 16px;
+  height: 16px;
+  transition: var(--afh-transition-transform);
+}
+
+.afh-chapter-bar[data-open] .afh-chapter-bar-caret {
+  transform: rotate(180deg);
+}
+
+/* How much of the fiche is behind the reader. It sits over the rail's own
+   hairline rather than beside it: a second rule under the first would read as
+   a border, not as progress. */
+.afh-chapter-bar-read {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 2px;
+  width: var(--afh-chapter-read, 0%);
+  background: var(--accent);
+  transition: width var(--afh-duration-slow) var(--afh-ease-out);
+}
+
+/* The summary hangs off the bar rather than sitting in the flow under it.
+   In the flow, closing it removed its height from the document *after* the
+   chosen chapter's scroll had been computed, and the chapter landed that far
+   above the viewport — under the rail. It also spared the reader a page that
+   jumps every time they open the summary. */
+.afh-chapter-bar-summary {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: var(--afh-space-md) 0;
+  list-style: none;
+  max-height: 60vh;
+  overflow-y: auto;
+  background: var(--afh-bg-warm);
+  border-bottom: 1px solid var(--afh-border);
+  box-shadow: var(--afh-elev-3);
+}
+
+.afh-chapter-bar-summary[hidden] {
+  display: none;
+}
+
+.afh-chapter-bar-summary a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: var(--afh-space-md) var(--afh-space-lg);
+  border-left: 2px solid transparent;
+  color: var(--afh-text-soft);
+  font-size: var(--afh-text-small);
+  text-decoration: none;
+  transition: var(--afh-transition-color);
+}
+
+.afh-chapter-bar-summary a:hover {
+  background: var(--afh-surface);
+  color: var(--afh-text);
+}
+
+.afh-chapter-bar-summary a[aria-current="true"] {
+  border-left-color: var(--accent);
+  color: var(--accent-ink, var(--accent));
+  font-weight: 700;
+}
+
+/* From the width the band and the nav change shape at (760px), the rail has
+   room for the word naming its control and for the parchment's gutters. */
+@media (min-width: 760px) {
+  :root {
+    --afh-chapter-bar-height: 56px;
+  }
+
+  .afh-chapter-bar-toggle {
+    padding: 0 var(--afh-space-4xl);
+  }
+
+  /* The report control sits against the parchment's gutter, like the toggle. */
+  .afh-chapter-bar-report {
+    padding-right: var(--afh-space-4xl);
+  }
+
+  .afh-chapter-bar-cue-label {
+    display: inline;
+  }
+
+  /* A dozen chapters in one full-width column is a list with a field of empty
+     paper beside it. Multi-column, not grid: `columns` keeps the chapters
+     reading top-to-bottom down each column, where a grid would deal them
+     across rows and break the fiche's order. */
+  .afh-chapter-bar-summary {
+    columns: 2;
+    column-gap: 0;
+    padding-block: var(--afh-space-lg);
+  }
+
+  .afh-chapter-bar-summary li {
+    break-inside: avoid;
+  }
+
+  .afh-chapter-bar-summary a {
+    padding-inline: var(--afh-space-4xl);
+  }
+}
+
+@media (min-width: 1200px) {
+  .afh-chapter-bar-summary {
+    columns: 3;
+  }
+}
+/* ============================================================
+   EthniAfrica record layer.
+   Everything above this line is the product's own CSS, copied
+   byte for byte from design-system/css/ in the extraction.
+   Below: the site chrome and search page rules that live in
+   styled-jsx or Tailwind utilities upstream, rebuilt from the
+   computed styles in pages/<name>/structure-*.json.
+   ============================================================ */
+
+:root {
+  --font-fraunces: "Fraunces";
+  --font-nunito-sans: "Nunito Sans";
+  --font-jetbrains-mono: "JetBrains Mono";
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  font-family: var(--afh-font-body);
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--afh-text);
+  background: linear-gradient(180deg, #faf8f5 0%, #f5ede0 100%);
+  -webkit-font-smoothing: antialiased;
+}
+button, input { font: inherit; color: inherit; }
+button { background: none; border: 0; padding: 0; cursor: pointer; }
+a { color: inherit; text-decoration: none; }
+p, h1, h2, h3, ul, ol { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+svg { display: block; }
+
+.ea-page { width: 100%; min-height: 100%; display: flex; flex-direction: column; }
+
+/* ── Site header ───────────────────────────────────────────── */
+.sh-header {
+  position: sticky; top: 0; z-index: 40;
+  height: 61px;
+  background: var(--afh-bg);
+  border-bottom: 1px solid var(--afh-border);
+}
+.sh-bar {
+  display: flex; align-items: center; gap: 16px;
+  height: 60px;
+  padding: 8px var(--afh-page-padding);
+}
+.sh-brand { display: flex; align-items: center; gap: 9px; flex: none; }
+.sh-brand-mark { width: 44px; height: 44px; object-fit: contain; }
+.sh-brand-text { display: flex; flex-direction: column; text-align: center; }
+.sh-brand-name {
+  font-family: var(--afh-font-display); font-weight: 900;
+  font-size: var(--afh-text-h3); line-height: 1.15; letter-spacing: -0.01em;
+}
+.sh-brand-tagline, .afh-brand-tagline {
+  font-family: var(--afh-font-display); font-weight: 700;
+  background-image: var(--afh-gradient-brand);
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent;
+}
+.sh-brand-tagline { font-size: 13px; line-height: 15.6px; letter-spacing: 0.005em; }
+.sh-axes { display: none; margin-left: auto; gap: 4px; }
+.sh-axis { display: flex; align-items: center; padding: 0 2px; min-height: 44px; color: var(--afh-text-soft); }
+.sh-axis-pill {
+  display: flex; align-items: center; gap: 7px;
+  padding: 6px 12px;
+  border: 1px solid transparent; border-radius: 9999px;
+  font-size: var(--afh-text-body); line-height: 1.5;
+}
+.sh-seed { width: 6px; height: 6px; border-radius: 50%; background: var(--seed, var(--afh-text-soft)); flex: none; }
+.sh-caret { width: 11px; height: 11px; opacity: 0.7; }
+.sh-controls { display: flex; align-items: center; gap: 2px; margin-left: auto; }
+.sh-icon { display: grid; place-items: center; width: 44px; height: 44px; color: var(--afh-text-soft); }
+.sh-icon-circle {
+  display: grid; place-items: center;
+  width: 30px; height: 30px;
+  border: 1px solid var(--afh-border); border-radius: 50%;
+}
+.sh-icon-circle svg { width: 14px; height: 14px; }
+.sh-icon-circle svg.sh-moon { width: 16px; height: 16px; }
+@media (min-width: 1200px) {
+  .sh-axes { display: flex; }
+  .sh-controls { margin-left: 0; }
+  .sh-burger { display: none; }
+}
+
+/* ── Page body ─────────────────────────────────────────────── */
+.ea-main {
+  flex: 1 0 auto;
+  padding: 0 var(--afh-page-padding) 16px;
+}
+@media (min-width: 768px) { .ea-main { padding-bottom: 32px; } }
+.ea-ground { background: var(--afh-bg); padding-top: 32px; }
+.ea-inner { padding-inline: var(--afh-page-padding); background: var(--afh-bg); }
+
+/* Search field */
+.ea-search { position: relative; width: 100%; max-width: 640px; margin-inline: auto; }
+.ea-search-icon {
+  position: absolute; left: 17px; top: 17px;
+  width: 14px; height: 14px; color: var(--afh-text-muted); pointer-events: none;
+}
+.ea-search-input {
+  display: flex; width: 100%; height: 48px;
+  padding: 8px 48px 8px 40px;
+  background: var(--afh-surface);
+  border: 1px solid var(--afh-border); border-radius: var(--afh-radius-lg);
+  font-size: 16px; color: var(--afh-text);
+  outline: none;
+}
+.ea-search-input::placeholder { color: var(--afh-text-muted); }
+.ea-search-clear {
+  position: absolute; right: 4px; top: 2px;
+  display: flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px; border-radius: 9999px; color: var(--afh-text-soft);
+}
+.ea-search-clear svg { width: 16px; height: 16px; }
+
+/* Answer page */
+.afh-answer-page { max-width: 880px; margin-inline: auto; text-align: left; min-width: 0; }
+.ea-lenses {
+  display: flex; gap: 8px; margin-top: 12px;
+  overflow-x: auto; scrollbar-width: none;
+}
+.ea-lens {
+  display: inline-flex; align-items: center; gap: 5px; flex: none;
+  min-height: 44px; padding: 0 16px;
+  border: 1px solid var(--afh-border); border-radius: 9999px;
+  background: var(--afh-surface);
+  font-size: 14px; font-weight: 700; line-height: 20px; color: var(--afh-text);
+  white-space: nowrap;
+}
+.ea-lens-count { font-weight: 500; color: var(--afh-text-soft); }
+.ea-lens[aria-pressed="true"] {
+  background: var(--afh-text); border-color: var(--afh-text); color: var(--afh-bg);
+}
+.ea-movement {
+  display: flex; flex-direction: column; gap: var(--afh-section-gap);
+  margin-top: var(--afh-section-gap); min-width: 0;
+}
+
+/* Fiche link (« Voir la fiche complète ») */
+.ea-fiche-links { display: grid; gap: 8px; min-width: 0; }
+.ea-fiche-link {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 100%; max-width: 624px; min-height: 52px;
+  padding: 8px 16px;
+  border-radius: var(--afh-radius-lg);
+  background: var(--accent); color: var(--accent-foreground);
+  font-size: var(--afh-text-body); font-weight: 700; line-height: 1.3; text-align: center;
+}
+
+/* Inline text helpers */
+.ea-em { font-style: italic; }
+
+/* ── Site footer ───────────────────────────────────────────── */
+.ea-footer {
+  background: var(--afh-bg-warm);
+  border-top: 1px solid var(--afh-border);
+  color: var(--afh-text-soft);
+}
+.ea-footer-content {
+  display: flex; flex-direction: column; gap: 12px;
+  padding: 14px var(--afh-page-padding);
+}
+.ea-footer-directory {
+  display: flex; flex-direction: column; align-items: center; gap: 32px; text-align: center;
+}
+.ea-footer-brand { display: flex; align-items: center; gap: 12px; }
+.ea-footer-brand img { width: 80px; height: 80px; flex: none; object-fit: contain; }
+.ea-footer-brand-text { display: flex; flex-direction: column; text-align: left; }
+.ea-footer-brand-name {
+  font-family: var(--afh-font-display); font-weight: 900;
+  font-size: var(--afh-text-h2); line-height: 1.5; color: var(--afh-text);
+}
+.ea-footer-brand .afh-brand-tagline { font-size: var(--afh-text-small); line-height: 24px; }
+.ea-footer-rubric {
+  font-family: var(--afh-font-display); font-weight: 700;
+  font-size: var(--afh-text-body); line-height: 1.5; color: var(--afh-text);
+}
+.ea-footer-list { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }
+.ea-footer-link, .ea-footer-legal a, .ea-footer-legal button {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 44px; min-width: 44px;
+  color: var(--afh-text-soft);
+  text-decoration: underline; text-decoration-color: rgba(116, 101, 87, 0.28);
+  text-underline-offset: 4px;
+}
+.ea-footer-follow { text-align: center; }
+.ea-footer-follow ul {
+  display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+  gap: 6px; max-width: 144px; margin: 12px auto 0;
+}
+.ea-footer-follow a { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; color: var(--afh-text-soft); }
+.ea-footer-follow svg { width: 20px; height: 20px; }
+.ea-footer-rule { margin: 24px 0; border: 0; border-top: 1px solid var(--afh-border); }
+.ea-footer-links, .ea-footer-legal {
+  display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 8px 20px;
+}
+.ea-footer-baseline {
+  display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 4px 10px;
+}
+.ea-footer-baseline p { text-align: left; }
+.ea-footer-credit { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; color: var(--afh-text-soft); }
+.ea-footer-partner { display: block; width: 64px; height: auto; }
+@media (max-width: 767.98px) {
+  .ea-footer-baseline p { text-align: left; }
+}
+@media (min-width: 768px) {
+  .ea-footer-directory {
+    flex-direction: row; flex-wrap: wrap; justify-content: space-between;
+    align-items: flex-start; gap: 12px; text-align: left;
+  }
+  .ea-footer-link { justify-content: flex-start; }
+  .ea-footer-follow ul { margin-left: 0; justify-content: flex-start; }
+  .ea-footer-follow { text-align: left; }
+}
+@media (min-width: 1200px) {
+  .ea-footer-directory { flex-wrap: nowrap; }
+  .ea-footer-follow { text-align: center; }
+  .ea-footer-follow ul { margin-inline: auto; justify-content: center; }
+}
+
+/* ── Design system board only ─────────────────────────────── */
+.ds-board { padding: 64px; display: flex; flex-direction: column; gap: 72px; background: var(--afh-bg); }
+.ds-title { font-family: var(--afh-font-display); font-weight: 900; font-size: 52px; line-height: 1.05; }
+.ds-sub { font-size: 17px; color: var(--afh-text-soft); max-width: 70ch; margin-top: 12px; line-height: 1.6; }
+.ds-section { display: flex; flex-direction: column; gap: 20px; }
+.ds-h2 {
+  font-family: var(--afh-font-mono); font-size: 12px; font-weight: 600;
+  letter-spacing: 0.16em; text-transform: uppercase; color: var(--afh-text-soft);
+  padding-bottom: 12px; border-bottom: 1px solid var(--afh-border);
+}
+.ds-h3 { font-family: var(--afh-font-display); font-weight: 700; font-size: 22px; line-height: 1.3; }
+.ds-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
+.ds-swatch { display: flex; flex-direction: column; gap: 8px; }
+.ds-chip { height: 72px; border: 1px solid var(--afh-border); }
+.ds-name { font-family: var(--afh-font-mono); font-size: 12px; line-height: 1.4; color: var(--afh-text); }
+.ds-val { font-family: var(--afh-font-mono); font-size: 12px; color: var(--afh-text-soft); }
+.ds-row { display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start; }
+.ds-col { display: flex; flex-direction: column; gap: 12px; }
+.ds-spec { display: grid; grid-template-columns: 180px 1fr; gap: 24px; align-items: baseline; padding: 14px 0; border-bottom: 1px solid var(--afh-border); }
+.ds-frame { border: 1px solid var(--afh-border); background: var(--afh-bg); overflow: hidden; }
+.ds-cap { font-family: var(--afh-font-mono); font-size: 12px; color: var(--afh-text-soft); margin-bottom: 8px; }
+.ds-mobile .sh-axes { display: none; }
+.ds-mobile .sh-burger { display: grid; }
+.ds-mobile .sh-controls { margin-left: auto; }
+.ds-mobile .sh-bar { padding: 8px 12px; }
+.ds-mobile .sh-brand-name { font-size: 19.2px; }
+
+/* Several fiche links: the outlined form (search-bassa, search-congo) */
+.ea-fiche-link[data-variant="outline"] {
+  min-height: 44px;
+  background: var(--afh-surface);
+  border: 1px solid var(--accent);
+  color: var(--afh-text);
+}
+/* A result page that answers for several subjects opens on the query itself */
+.ea-feed-title {
+  font-family: var(--afh-font-display); font-weight: 900;
+  font-size: var(--afh-text-h1); line-height: 1.1;
+}
+/* « Ce nom désigne aussi » */
+.ea-also { display: flex; flex-direction: column; gap: 2px; }
+.ea-also-kind { font-weight: 700; color: var(--afh-text); }
+.ea-also-text { color: var(--afh-text); }
+.ea-also-more {
+  align-self: flex-start; display: inline-flex; align-items: center; min-height: 44px;
+  font-weight: 700; color: var(--accent-ink);
+  text-decoration: underline; text-underline-offset: 4px;
+}
+.ea-fiche-link[data-variant="outline"] { font-size: 16px; }
+
+/* Unknown name: verdict, shorts, owed, further */
+.ea-eyebrow {
+  font-size: var(--afh-text-eyebrow); font-weight: 600;
+  letter-spacing: 0.16em; text-transform: uppercase; line-height: 1.4;
+  color: var(--afh-text-soft);
+}
+.ea-verdict { padding-top: 16px; }
+.ea-verdict .ea-eyebrow { color: var(--accent-ink); }
+.ea-verdict-name {
+  margin-top: 4px;
+  font-family: var(--afh-font-display); font-weight: 900;
+  font-size: var(--afh-text-hero); line-height: 1.05;
+}
+.ea-verdict-line {
+  margin-top: 8px;
+  font-family: var(--afh-font-display); font-weight: 700;
+  font-size: var(--afh-text-h3); line-height: 1.3;
+}
+.ea-verdict-text { margin-top: 8px; font-size: var(--afh-text-small); line-height: 1.5; }
+.ea-shorts-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.ea-shorts-title {
+  font-family: var(--afh-font-display); font-weight: 700;
+  font-size: var(--afh-text-h3); line-height: 1.3;
+}
+.ea-shorts-all {
+  display: inline-flex; align-items: center; gap: 6px; min-height: 44px;
+  font-size: var(--afh-text-small); font-weight: 600; color: var(--accent-ink);
+}
+.ea-shorts-all svg { width: 16px; height: 16px; }
+.ea-shorts-empty { margin-top: 8px; font-size: var(--afh-text-caption); font-weight: 700; color: var(--afh-text-soft); }
+.ea-owed { display: flex; flex-direction: column; gap: 16px; max-width: 624px; }
+.ea-owed-card { padding: 16px; border-radius: var(--afh-radius-lg); font-size: var(--afh-text-small); line-height: 1.5; }
+.ea-owed-card[data-tone="warm"] { background: var(--afh-bg-warm); }
+.ea-owed-card[data-tone="ask"] { background: var(--afh-surface); border: 1px solid var(--accent); }
+.ea-owed-title { font-weight: 700; }
+.ea-owed-text { margin-top: 4px; }
+.ea-owed-action {
+  display: inline-flex; align-items: center; min-height: 44px; margin-top: 12px;
+  padding: 8px 16px; border: 1px solid var(--accent); border-radius: var(--afh-radius-lg);
+  background: var(--accent-tint); color: var(--afh-text); font-weight: 500;
+}
+.ea-further-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.ea-further-list a {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px;
+  border: 1px solid var(--afh-border); border-radius: 9999px; background: var(--afh-surface);
+  font-size: 14px; font-weight: 600; color: var(--afh-text);
+}
+
+/* ── Fiche pages (people, language, family, country, name, place) ── */
+.ea-hero {
+  display: flex; align-items: flex-end;
+  background: var(--afh-bg-warm);
+  border-bottom: 1px solid var(--afh-border);
+}
+.ea-hero-inner { width: 100%; max-width: 1240px; margin-inline: auto; padding: 32px 12px 24px; }
+@media (min-width: 768px) { .ea-hero-inner { padding: 40px 24px 32px; } }
+@media (min-width: 1200px) { .ea-hero-inner { padding: 40px 32px 32px; } }
+.ea-hero-plate {
+  max-width: 672px; padding: 24px;
+  background: var(--afh-surface);
+  border: 1px solid var(--afh-border); border-radius: var(--afh-radius-lg);
+  box-shadow: var(--afh-elev-2);
+  text-align: center;
+}
+.ea-hero-plate .afh-parchment-head { padding: 0; border: 0; margin: 0 0 12px; }
+.ea-hero-plate .afh-parchment-eyebrow, .ea-hero-plate .afh-parchment-lede { text-align: left; }
+.ea-exonym { font-family: var(--afh-font-body); font-weight: 400; font-size: 0.7em; letter-spacing: 0; }
+.ea-chip-figure { font-family: var(--afh-font-mono); color: var(--afh-text); }
+.ea-chip-colonial { background: #fceee8; border-color: #fceee8; color: #7e603e; }
+.ea-chip-colonial svg { width: 14px; height: 14px; }
+.ea-crumbs { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 6px; margin: 8px 0 4px; color: var(--afh-text-soft); }
+.ea-crumbs li { display: flex; align-items: center; gap: 4px; }
+.ea-crumbs a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; min-width: 44px; }
+.ea-crumb-sep { opacity: 0.5; }
+.ea-crumb-here { font-weight: 500; color: var(--afh-text); }
+@media (min-width: 768px) {
+  .ea-hero-plate { text-align: left; }
+  .ea-crumbs { justify-content: flex-start; }
+}
+
+.ea-fiche-main { width: 100%; max-width: 1240px; margin-inline: auto; padding: 0 var(--afh-page-padding) 16px; }
+@media (min-width: 768px) { .ea-fiche-main { padding-bottom: 32px; } }
+.ea-fiche-col { display: flex; flex-direction: column; gap: 18px; }
+.ea-fiche-col > .afh-chapter-bar { position: relative; top: 0; }
+.ea-fiche {
+  container-type: inline-size;
+  display: flex; flex-direction: column;
+  gap: var(--afh-section-gap);
+  padding: var(--afh-section-gap) 12px;
+  background: var(--afh-bg);
+}
+.ea-fiche .afh-parchment-section h2 { line-height: 1.5; color: var(--afh-text); }
+@media (min-width: 768px) { .ea-fiche .afh-parchment-section { padding: 24px 16px; } }
+@media (min-width: 1200px) {
+  .ea-fiche .afh-parchment-section { padding: 32px 24px; }
+  .ea-fiche .afh-parchment-section h2 { font-size: var(--afh-text-h1); }
+}
+@container (min-width: 760px) {
+  .afh-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+.ea-fiche .afh-tile-preview { display: -webkit-box; }
+.ea-chapter-report {
+  display: inline-flex; align-items: center; justify-content: center; min-height: 44px;
+  padding: 8px 12px; background: var(--afh-surface);
+  border: 1px solid var(--afh-border); border-radius: var(--afh-radius-lg);
+  font-size: 13px; font-weight: 500; line-height: 19.5px; color: var(--afh-text);
+}
+.ea-flag-section {
+  display: inline-flex; align-items: center; justify-content: center; min-height: 44px; margin-top: 12px;
+  padding: 8px 16px; background: var(--afh-surface);
+  border: 1px solid var(--afh-border); border-radius: var(--afh-radius-lg);
+  font-size: 13px; font-weight: 500; line-height: 19.5px; color: var(--afh-text);
+}
+.ea-sources-link { color: var(--afh-text-soft); text-decoration: underline; text-underline-offset: 4px; }
+.afh-name-more summary { display: list-item; }
+.afh-name-badge svg { width: 0.85em; height: 0.85em; }
+
+/* Population by country, as drawn in « Où vit ce peuple » */
+.ea-rank-head { margin: 0 0 6px; padding-left: 10px; font-size: 13px; font-weight: 600; color: var(--afh-text); }
+.ea-rank { display: grid; gap: 0; }
+.ea-rank-row {
+  display: grid; grid-template-columns: 52px minmax(0, 1fr) auto;
+  align-items: center; column-gap: 0; padding-top: 6px;
+}
+.ea-rank-code { font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 13px; font-weight: 700; color: var(--accent); }
+.ea-rank-name { display: flex; flex-direction: column; font-size: 13px; line-height: 20px; color: var(--afh-text); }
+.ea-rank-n { color: var(--afh-text-soft); }
+.ea-rank-share { align-self: start; font-size: 18px; font-weight: 700; color: var(--afh-text); }
+.ea-rank-track { grid-column: 1 / -1; height: 6px; margin-top: 8px; border-radius: 9999px; background: #e6ddd0; overflow: hidden; }
+.ea-rank-fill { display: block; height: 100%; border-radius: 9999px; background: var(--accent); }
+.ea-ref { margin-top: 10px; }
+
+/* Tile values that are not paragraphs keep the role sizes */
+.ea-tile-figure { font-family: var(--afh-font-body); font-weight: 700; font-size: var(--afh-text-h3); line-height: 1.25; color: var(--afh-text); }
+
+/* Poursuivre */
+.ea-onward-kind { display: block; margin-bottom: 4px; font-family: var(--afh-font-mono); font-size: 13px; letter-spacing: 0.06em; color: var(--afh-text-soft); }
+.ea-onward-link {
+  display: inline-flex; align-items: center; gap: 8px; min-height: 44px;
+  font-family: "Fraunces", Georgia, serif; font-weight: 700; font-size: var(--afh-text-h3);
+  color: var(--accent-ink);
+}
+.ea-onward-link svg { width: 18px; height: 18px; }
+.ea-amend-action {
+  display: inline-flex; align-items: center; justify-content: center; min-height: 44px;
+  padding: 8px 16px; border-radius: var(--afh-radius-lg);
+  background: var(--accent); color: var(--accent-foreground); font-weight: 700;
+}
+.ea-fiche .afh-amend-band { border-width: 1px; }
+.ea-rank-meta { display: flex; flex-wrap: wrap; column-gap: 8px; color: var(--afh-text-soft); }
+.ea-rank-note { color: var(--afh-text-soft); }
+.ea-registry {
+  padding: 24px; margin-bottom: 8px;
+  background: var(--afh-surface); border: 1px solid var(--afh-border); border-radius: 22px;
+}
+@media (min-width: 1200px) { .ea-registry { padding: 28px; } }
+.ea-registry ul { display: flex; flex-direction: column; gap: 8px; margin-top: 4px; }
+.ea-registry a { color: var(--afh-text); text-decoration: underline; text-underline-offset: 3px; font-size: 16px; }
+.ea-fiche .ea-registry p { margin: 4px 0 12px; }
+
+@media (min-width: 768px) { .ea-hero { min-height: 320px; } }
+.ea-fiche .afh-provenance-banner { max-width: 624px; padding: 12px 16px; border: 1px solid var(--afh-border); color: var(--afh-text-soft); }
+.ea-prov-link { display: inline-flex; align-items: center; gap: 6px; font-size: 16px; color: var(--accent-ink); }
+.ea-prov-link svg { width: 16px; height: 16px; }
+.ea-fiche dl.afh-pairs { margin: 0; color: var(--afh-text); }
+.ea-fiche dl.afh-pairs dt, .ea-fiche dl.afh-pairs dd { margin: 0; }
+.ea-plain-list li { font-size: 16px; color: var(--afh-text); }
+.ea-missing { display: inline-flex; align-items: center; padding: 2px 10px; border: 1px solid var(--afh-border); border-radius: 9999px; font-size: 13px; font-weight: 600; line-height: 19.5px; color: var(--afh-text); }
+.ea-fiche .afh-prose-def { font-size: var(--afh-text-body); line-height: 1.7; color: var(--afh-text-soft); }
+.ea-fiche .fiche-name-story__lead { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
+.ea-colonial-pill { display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border: 1px solid #fceee8; border-radius: 9999px; background: #fceee8; color: #7e603e; font-size: 13px; font-weight: 600; line-height: 19.5px; }
+.ea-colonial-pill svg { width: 14px; height: 14px; }
+.ea-basis-pill { display: inline-flex; align-items: center; margin: 0 0 12px; padding: 2px 10px; border: 1px solid rgba(232, 223, 211, 0.6); border-radius: 9999px; background: var(--afh-bg-warm); font-size: 13px; font-weight: 600; line-height: 19.5px; color: var(--afh-text); }
+.ea-flag { font-size: 14px; line-height: 1; }
+.ea-method { padding: 12px 24px; }
+.ea-method p { margin: 0 0 8px; }
+.ea-method a { font-size: 16px; font-weight: 600; color: #7e603e; text-decoration: underline; text-underline-offset: 3px; }
+.ea-fiche .afh-source-row { font-size: 16px; }
+.ea-fiche .afh-source-kind-label { padding-left: 8px; font-size: 12px; }
+.ea-member-name { color: var(--afh-text); font-weight: 700; }
+
+/* Country page: peoples share */
+.ea-share-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; margin-top: 4px; }
+.ea-share-total { font-family: var(--afh-font-display); font-weight: 900; font-size: 28px; line-height: 1.05; letter-spacing: -0.015em; color: var(--afh-figure-lead-ink); }
+.ea-share-sub { font-size: 13px; color: var(--afh-text-soft); }
+.ea-share-count { font-family: var(--afh-font-display); font-weight: 700; font-size: var(--afh-text-h3); color: var(--afh-text); }
+.ea-share-bar { display: flex; gap: 2px; height: 18px; margin: 12px 0 10px; border-radius: 9999px; overflow: hidden; }
+.ea-share-bar > span { display: block; height: 100%; }
+.ea-share-rest { background: repeating-linear-gradient(135deg, #ece3d6 0 6px, transparent 6px 10px); }
+.ea-share-warn { margin: 0 0 4px !important; font-weight: 700; }
+.ea-share-list { margin-top: 28px; }
+.ea-share-row { display: grid; grid-template-columns: 26px minmax(0, 1fr) auto; align-items: center; padding: 14px 0; border-bottom: 1px solid var(--afh-border); }
+.ea-share-row:last-child { border-bottom: 0; }
+.ea-share-swatch { width: 12px; height: 12px; border-radius: 2px; }
+.ea-share-name { font-size: 16px; font-weight: 700; color: var(--afh-text); }
+.ea-share-group { margin-left: 6px; font-size: 13px; font-weight: 400; color: var(--afh-text-soft); }
+.ea-share-where { display: block; margin-top: 8px; font-size: 12px; color: var(--afh-text-soft); }
+.ea-share-pct { text-align: right; font-family: var(--afh-font-display); font-weight: 900; font-size: 22px; line-height: 1.1; color: var(--afh-text); }
+.ea-share-pct small { display: block; font-family: var(--afh-font-body); font-weight: 400; font-size: 12px; color: var(--afh-text-soft); }
+.ea-letter { margin: 14px 0 10px !important; font-family: var(--afh-font-mono); font-size: 18px !important; color: var(--afh-text-soft) !important; }
+.ea-fiche .fiche-summary-brief__fact a { color: var(--afh-text-soft); }
+
+/* ── Home (pages/home) ─────────────────────────────────────── */
+.home-main { flex: 1 0 auto; color: var(--afh-text); }
+.home-hero { background: #fbf7f2; position: relative; text-align: center; }
+.home-hero-inner { display: grid; gap: 32px; padding-top: 24px; padding-bottom: 28px; }
+@media (min-width: 768px) { .home-hero-inner { padding-top: 32px; padding-bottom: 36px; } }
+.home-hero-copy { width: 100%; max-width: 780px; margin-inline: auto; }
+@media (min-width: 768px) { .home-hero-copy { max-width: 576px; } }
+@media (min-width: 1200px) { .home-hero-copy { max-width: 593px; } }
+.home-hero-copy h1 {
+  margin: 0 0 12px;
+  font-family: var(--afh-font-display); font-weight: 900;
+  font-size: var(--afh-text-hero); line-height: 1.05;
+}
+.home-hero-description {
+  max-width: 31.2em; margin-inline: auto;
+  font-size: var(--afh-text-body); line-height: 1.65;
+}
+.home-hero-search { margin-top: 36px; text-align: left; }
+@media (min-width: 768px) { .home-hero-search { margin-top: 48px; } }
+.home-hero-search-form { display: flex; flex-wrap: wrap; gap: 8px; }
+.home-hero-search-label {
+  flex: 0 0 100%; margin-bottom: 8px;
+  font-size: 16px; font-weight: 600; line-height: 24px; text-align: center;
+}
+@media (min-width: 768px) { .home-hero-search-label { text-align: left; } }
+.home-hero-field { position: relative; flex: 1 1 100%; }
+@media (min-width: 768px) { .home-hero-field { flex: 1 1 0; } }
+.home-hero-field svg {
+  position: absolute; left: 16px; top: 17px; width: 18px; height: 18px;
+  color: var(--afh-text-soft); pointer-events: none;
+}
+.home-hero-input {
+  width: 100%; height: 52px; padding: 0 16px 0 42px;
+  background: var(--afh-surface);
+  border: 1px solid var(--afh-border); border-radius: 14px;
+  font-size: 16px; color: var(--afh-text); outline: none;
+}
+.home-hero-input::placeholder { color: var(--afh-text-muted); }
+.home-hero-submit {
+  flex: 1 1 100%; height: 52px; padding: 0 16px;
+  background: var(--accent); color: var(--afh-text);
+  border-radius: 14px; font-size: 16px; font-weight: 500;
+}
+@media (min-width: 768px) { .home-hero-submit { flex: 0 0 auto; } }
+.home-hero-seeds {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+  gap: 8px; margin-top: 16px;
+}
+@media (min-width: 768px) { .home-hero-seeds { justify-content: flex-start; flex-wrap: nowrap; } }
+.home-hero-seeds-lead { color: var(--afh-text-soft); flex: 0 0 100%; text-align: center; }
+@media (min-width: 768px) { .home-hero-seeds-lead { flex: none; } }
+.home-hero-search-seeds { display: flex; gap: 8px; justify-content: center; }
+.home-hero-seed {
+  display: inline-flex; align-items: center; height: 44px; padding: 0 14px;
+  border: 1px solid var(--accent-tint); border-radius: 9999px;
+  color: var(--accent-ink); font-size: 16px;
+}
+.home-hero-more {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 44px; padding: 0 12px; border-radius: 14px;
+  color: var(--accent-ink); font-weight: 500;
+}
+@media (max-width: 767.98px) { .home-hero-more { flex: 0 0 auto; margin-inline: calc(50% - 73px); } }
+.home-hero-seam {
+  height: 44px; background: #fbf7f2;
+  border-bottom: 1px solid var(--afh-cat-ocre);
+}
+@media (min-width: 768px) { .home-hero-seam { height: 26px; } }
+.home-project {
+  display: grid; grid-template-columns: 1fr; gap: 48px;
+  padding-top: 48px; padding-bottom: 48px; text-align: center;
+}
+@media (min-width: 768px) {
+  .home-project { grid-template-columns: 1fr 1fr; padding-top: 64px; padding-bottom: 64px; text-align: left; }
+}
+.home-project .afh-section-heading { margin-bottom: 20px; }
+.home-project .afh-section-heading-title {
+  margin: 0;
+  font-family: var(--afh-font-display); font-weight: 700;
+  font-size: var(--afh-text-h1); line-height: 1.1; letter-spacing: -0.014em;
+}
+.home-project-body {
+  margin: 0 0 16px; text-align: left;
+  font-size: var(--afh-text-body); line-height: 1.65;
+}
+.home-project-link {
+  display: inline-flex; align-items: center; min-height: 44px;
+  color: var(--afh-cat-ocre-ink); font-weight: 600;
+}
+.home-contribute {
+  display: flex; justify-content: center;
+  padding-top: 24px; padding-bottom: 24px;
+}
+.home-contribute a {
+  display: inline-flex; align-items: center; gap: 8px; min-height: 44px;
+  color: var(--accent-ink); font-weight: 600;
+}
+
+/* ── Editorial pages: about, glossary (Tailwind upstream) ──── */
+.ed-crumbs-nav { margin: 8px auto 4px; }
+.ed-crumbs { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; color: var(--afh-text-soft); justify-content: center; }
+@media (min-width: 768px) { .ed-crumbs { justify-content: flex-start; } }
+.ed-crumbs li { display: flex; align-items: center; gap: 4px; }
+.ed-crumbs a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; min-width: 44px; }
+.ed-crumb-sep { opacity: 0.5; user-select: none; }
+.ed-crumb-here { color: var(--afh-text); font-weight: 500; }
+.ed-main { flex: 1 0 auto; padding-top: 16px; padding-bottom: 16px; color: var(--afh-text); }
+@media (min-width: 768px) { .ed-main { padding-top: 32px; padding-bottom: 32px; } }
+.ed-phone-centre h1, .ed-phone-centre h2, .ed-phone-centre h3 { text-align: center; }
+@media (min-width: 768px) { .ed-phone-centre h1, .ed-phone-centre h2, .ed-phone-centre h3 { text-align: left; } }
+.ed-eyebrow {
+  margin: 0 0 8px; color: var(--afh-text-soft);
+  font-size: var(--afh-text-eyebrow); font-weight: 600; line-height: 18px;
+  letter-spacing: 0.025em; text-transform: uppercase;
+}
+.ed-h1 {
+  margin: 0 0 8px;
+  font-family: var(--afh-font-display); font-weight: 900;
+  font-size: var(--afh-text-hero); line-height: 1;
+}
+.ed-lead { margin: 0 0 8px; font-size: var(--afh-text-lead); font-weight: 600; line-height: 1.625; }
+.ed-soft { color: var(--afh-text-soft); font-size: 16px; line-height: 26px; }
+.ed-stack > * + * { margin-top: 8px; }
+.ab-overview { padding-bottom: 16px; margin-bottom: 32px; border-bottom: 1px solid var(--afh-border); }
+.ab-section { margin-bottom: 32px; }
+.ab-section:last-child { margin-bottom: 0; }
+.ab-head { display: flex; flex-direction: column; gap: 6px; }
+.ab-head hr { height: 1px; width: 100%; border: 0; margin: 0; background: var(--accent, var(--afh-cat-ocre)); }
+.ab-num {
+  color: var(--afh-text-soft); font-size: var(--afh-text-caption); line-height: 19.5px;
+  letter-spacing: 0.025em; text-transform: uppercase;
+}
+.ab-h2 {
+  font-family: var(--afh-font-display); font-weight: 900;
+  font-size: var(--afh-text-h2); line-height: 1.5;
+}
+.ab-modes { display: grid; grid-template-columns: 1fr; gap: 8px; padding-top: 6px; }
+@media (min-width: 768px) { .ab-modes { grid-template-columns: repeat(3, 1fr); } }
+.ab-modes li { color: var(--afh-text-soft); font-size: 16px; line-height: 26px; }
+.ab-modes h3 { font-family: var(--afh-font-display); font-weight: 700; color: var(--afh-text); }
+.ab-modes p { margin-top: 4px; }
+.ed-ul-link {
+  display: inline-flex; align-items: center; min-height: 44px;
+  color: var(--afh-cat-ocre-ink);
+  text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px;
+}
+.ab-actions { display: flex; flex-wrap: wrap; column-gap: 12px; }
+.ab-actions .ed-ul-link { font-weight: 700; }
+
+/* Glossary */
+.gl-hero .ea-hero-plate { text-align: center; }
+@media (min-width: 768px) {
+  .gl-hero .ea-hero-plate { text-align: left; }
+  .gl-hero .ea-crumbs { justify-content: flex-start; }
+}
+.gl-title {
+  font-family: var(--afh-font-display); font-weight: 700;
+  font-size: var(--afh-text-h1); line-height: 1.1; letter-spacing: -0.014em;
+  background-image: var(--afh-gradient-brand);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.gl-subtitle {
+  margin-top: 12px; max-width: 27.6em; text-align: left;
+  color: var(--afh-text-soft); font-size: var(--afh-text-lead); line-height: 1.45;
+}
+.gl-wrap { display: flex; flex-direction: column; gap: 32px; }
+.gl-anchors { display: flex; flex-wrap: wrap; gap: 6px; }
+.gl-anchors a {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 8px;
+  border: 1px solid var(--afh-border); border-radius: 9999px;
+  color: var(--accent-ink); font-weight: 600;
+}
+.gl-grid { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 12px; }
+@media (min-width: 768px) { .gl-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1200px) { .gl-grid { grid-template-columns: repeat(3, 1fr); } }
+.gl-term { display: flex; flex-direction: column; gap: 4px; text-align: left; }
+.gl-term h3 {
+  text-align: left !important;
+  font-family: var(--afh-font-display); font-weight: 600;
+  font-size: var(--afh-text-body); line-height: 1.5;
+}
+.gl-def { color: var(--afh-text-soft); font-size: 16px; line-height: 24px; }
+.gl-ex { color: var(--afh-text-soft); font-size: 13px; line-height: 19.5px; }
+.ed-action {
+  display: inline-flex; align-items: center; gap: 8px; min-height: 44px;
+  color: var(--accent-ink); font-weight: 600;
+}
+
+/* Place fiche (pages/place-yamoussoukro): sections as warm cards on #fiche */
+.pl-fiche {
+  display: flex; flex-direction: column; gap: 24px;
+  padding: 24px 12px; background: #fbf7f2; text-align: left;
+  container-type: inline-size;
+}
+@media (min-width: 768px) { .pl-fiche { gap: 32px; padding: 32px 12px; } }
+@media (min-width: 1200px) { .pl-fiche { gap: 48px; padding: 48px 12px; } }
+.pl-card { padding: 24px 16px; background: var(--afh-bg-warm); border-radius: 14px; }
+@media (min-width: 1200px) { .pl-card { padding: 32px 24px; } }
+.pl-card h2 {
+  font-family: var(--afh-font-display); font-weight: 700;
+  font-size: var(--afh-text-h2); line-height: 1.5; letter-spacing: -0.01em;
+}
+@media (min-width: 1200px) { .pl-card h2 { font-size: var(--afh-text-h1); } }
+.pl-card p { margin: 0 0 12px; color: var(--afh-text-soft); font-size: var(--afh-text-body); line-height: 1.7; }
+.pl-card .fiche-name-story__eyebrow { font-family: var(--afh-font-mono); letter-spacing: 0.07em; }
+.pl-card .fiche-name-story__disclosure > summary { list-style: revert; }
+.pl-card .afh-tile-term { margin: 0 0 4px; }
+.pl-card .afh-fiche-sources p { margin: 0; }
+.pl-card .fiche-name-story__disclosure > p { margin: 8px 0 0; line-height: 1.5; }
+
+/* Name fiche (pages/name-traore) */
+.nm-main { flex: 1 0 auto; padding-bottom: 16px; color: var(--afh-text); }
+@media (min-width: 768px) { .nm-main { padding-bottom: 32px; } }
+.nm-col { display: flex; flex-direction: column; gap: 18px; }
+.nm-col > .afh-chapter-bar { position: relative; top: 0; margin-bottom: -18px; }
+.pl-card .afh-prose-heading:first-of-type { margin-top: 0; }
+.pl-card .afh-prose-list strong { font-weight: 700; }
+.pl-card .afh-prose-term { margin: 0 0 4px; }
+.pl-card .afh-prose-fields > div + div .afh-prose-term { margin-top: 0; }
+.nm-links { display: flex; flex-wrap: wrap; column-gap: 12px; font-size: 16px; line-height: 22.5px; }
+.nm-links a { color: var(--afh-text); }
+.ea-source-note { font-family: var(--afh-font-mono); font-size: 13px; }
+.afh-source-row .afh-source-title { color: var(--afh-text-soft); }
+
+/* ============================================================
+   Brief 1 (2026-10-14): blocks added under the timeline on the
+   search result page. Every selector below is new; none restyles
+   an existing board.
+   ============================================================ */
+
+/* Block 3 · Les sources parlent */
+.ea-voices { display: flex; flex-direction: column; gap: var(--afh-space-2xl); }
+.ea-voices-title {
+  font-family: var(--afh-font-display); font-weight: 900;
+  font-size: var(--afh-text-h2); line-height: 1.2; overflow-wrap: anywhere;
+}
+.ea-voices-lead { font-size: var(--afh-text-small); line-height: 1.6; color: var(--afh-text-soft); }
+.ea-voices-strip {
+  display: flex; flex-wrap: wrap; gap: var(--afh-space-md);
+}
+.ea-voices-strip li {
+  display: inline-flex; align-items: center; gap: var(--afh-space-md);
+  min-height: 36px; padding: var(--afh-space-xs) var(--afh-space-lg);
+  border: 1px solid var(--afh-border); border-radius: var(--afh-radius-full);
+  background: var(--afh-bg);
+  font-size: var(--afh-text-caption); font-weight: 600; color: var(--afh-text);
+}
+.ea-voices-strip b { font-family: var(--afh-font-mono); font-weight: 700; }
+.ea-voice-mark {
+  flex: none; display: inline-block; width: 10px; height: 10px;
+  border-radius: 2px; transform: rotate(45deg);
+  background: var(--afh-source-other);
+}
+[data-family="oral"] .ea-voice-mark { background: var(--afh-source-oral); }
+[data-family="book"] .ea-voice-mark { background: var(--afh-source-book); }
+[data-family="encyclopedia"] .ea-voice-mark { background: var(--afh-source-encyclopedia); }
+[data-family="press"] .ea-voice-mark { background: var(--afh-source-press); }
+[data-family="report"] .ea-voice-mark { background: var(--afh-source-report); }
+[data-family="archive"] .ea-voice-mark { background: var(--afh-source-archive); }
+.ea-voices-groups { display: flex; flex-direction: column; gap: var(--afh-space-md); }
+.ea-voice {
+  border: 1px solid var(--afh-border); border-radius: var(--afh-radius-lg);
+  background: var(--afh-bg);
+}
+.ea-voice > summary {
+  display: flex; align-items: center; gap: var(--afh-space-lg);
+  min-height: 52px; padding: var(--afh-space-md) var(--afh-space-2xl);
+  list-style: none; cursor: pointer;
+}
+.ea-voice > summary::-webkit-details-marker { display: none; }
+.ea-voice-name { font-weight: 700; color: var(--afh-text); }
+.ea-voice-count {
+  margin-left: auto; font-family: var(--afh-font-mono);
+  font-size: var(--afh-text-caption); color: var(--afh-text-soft); white-space: nowrap;
+}
+.ea-voice-caret { flex: none; width: 16px; height: 16px; color: var(--afh-text-soft); }
+.ea-voice[open] > summary .ea-voice-caret { transform: rotate(180deg); }
+.ea-voice-body {
+  display: flex; flex-direction: column; gap: var(--afh-space-md);
+  padding: 0 var(--afh-space-2xl) var(--afh-space-2xl);
+}
+.ea-voice-account { border-top: 1px dashed var(--afh-border); }
+.ea-voice-account > summary {
+  display: grid; grid-template-columns: 1fr auto; align-items: center; gap: var(--afh-space-lg);
+  min-height: 44px; padding: var(--afh-space-md) 0;
+  list-style: none; cursor: pointer;
+}
+.ea-voice-account > summary::-webkit-details-marker { display: none; }
+.ea-voice-account-head { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.ea-voice-period {
+  font-family: var(--afh-font-mono); font-size: var(--afh-text-caption);
+  font-weight: 600; color: var(--afh-text-soft);
+}
+.ea-voice-gist {
+  font-size: var(--afh-text-small); line-height: 1.5; color: var(--afh-text);
+  display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden;
+}
+.ea-voice-account[open] .ea-voice-gist { display: none; }
+.ea-voice-account[open] > summary .ea-voice-caret { transform: rotate(180deg); }
+.ea-voice-statement { font-size: var(--afh-text-small); line-height: 1.6; overflow-wrap: anywhere; }
+.ea-voice-hyp {
+  display: inline-block; margin-right: var(--afh-space-sm);
+  font-family: var(--afh-font-mono); font-size: var(--afh-text-caption); font-weight: 700;
+  color: var(--afh-text-soft);
+}
+.ea-voice-sources {
+  display: flex; flex-direction: column; gap: var(--afh-space-sm);
+  margin: var(--afh-space-md) 0 var(--afh-space-md);
+  padding-left: var(--afh-space-lg); border-left: 2px solid var(--afh-border);
+}
+.ea-voice-source { font-size: var(--afh-text-caption); line-height: 1.5; color: var(--afh-text-soft); }
+.ea-voice-source a {
+  color: var(--accent-ink); font-weight: 700;
+  text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px;
+}
+.ea-voices-note { font-size: var(--afh-text-caption); line-height: 1.6; color: var(--afh-text-soft); }
+
+/* Blocks 5 to 7 · la bande de clôture */
+.ea-close {
+  display: flex; flex-direction: column; gap: var(--afh-space-5xl);
+  padding: var(--afh-space-5xl) var(--afh-space-2xl);
+  border-radius: var(--afh-radius-lg); background: var(--afh-bg-warm);
+}
+@media (min-width: 768px) { .ea-close { padding: var(--afh-space-6xl); } }
+.ea-close-title {
+  font-family: var(--afh-font-display); font-weight: 900;
+  font-size: var(--afh-text-h2); line-height: 1.2;
+}
+.ea-silences { display: flex; flex-direction: column; gap: var(--afh-space-md); margin-top: var(--afh-space-lg); }
+.ea-silences li {
+  position: relative; padding-left: 26px;
+  font-size: var(--afh-text-small); line-height: 1.6; color: var(--afh-text);
+}
+.ea-silences li::before {
+  content: ""; position: absolute; left: 0; top: 0.5em; width: 10px; height: 10px; border-radius: 50%;
+  border: 1.5px dashed var(--afh-name-before-dash);
+}
+.ea-conviction {
+  padding-top: var(--afh-space-5xl); border-top: 1px solid var(--afh-border);
+  font-family: var(--afh-font-display); font-weight: 700;
+  font-size: var(--afh-text-h3); line-height: 1.35; color: var(--afh-text);
+}
+.ea-thesis {
+  margin-top: calc(var(--afh-space-5xl) * -0.5);
+  font-family: var(--afh-font-mono); font-size: var(--afh-text-caption);
+  letter-spacing: 0.04em; color: var(--afh-text-soft);
+}
+.ea-correct {
+  display: flex; flex-direction: column; gap: var(--afh-space-lg);
+  padding: var(--afh-space-2xl); border-radius: var(--afh-radius-lg);
+  background: var(--afh-surface); border: 1px solid var(--accent);
+}
+.ea-correct-title { font-weight: 700; }
+.ea-correct-text { font-size: var(--afh-text-small); line-height: 1.6; }
+.ea-correct-actions { display: flex; flex-wrap: wrap; gap: var(--afh-space-md); }
+.ea-correct-actions a {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 8px 16px;
+  border: 1px solid var(--accent); border-radius: var(--afh-radius-lg);
+  font-weight: 600; color: var(--afh-text);
+}
+.ea-correct-actions a:first-child { background: var(--accent-tint); }
+
+/* Block 8 · le pas suivant */
+.ea-next { display: flex; flex-direction: column; gap: var(--afh-space-lg); }
+.ea-next-title {
+  font-family: var(--afh-font-display); font-weight: 900;
+  font-size: var(--afh-text-h2); line-height: 1.2;
+}
+.ea-next-cards { display: grid; grid-template-columns: 1fr; gap: var(--afh-space-lg); }
+@media (min-width: 768px) { .ea-next-cards { grid-template-columns: 1fr 1fr; } }
+.ea-next-card {
+  display: flex; flex-direction: column; gap: var(--afh-space-sm);
+  min-height: 44px; padding: var(--afh-space-2xl);
+  border: 1px solid var(--afh-border); border-radius: var(--afh-radius-lg);
+  background: var(--afh-surface); color: var(--afh-text);
+}
+.ea-next-kind {
+  font-family: var(--afh-font-mono); font-size: var(--afh-text-caption);
+  font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-ink);
+}
+.ea-next-name {
+  display: inline-flex; align-items: center; gap: var(--afh-space-md);
+  font-family: var(--afh-font-display); font-weight: 900;
+  font-size: var(--afh-text-h3); line-height: 1.2;
+}
+.ea-next-name svg { width: 18px; height: 18px; color: var(--accent-ink); }
+.ea-next-why { font-size: var(--afh-text-small); line-height: 1.55; color: var(--afh-text-soft); }
+
+/* State boards: the added blocks alone, at the page's measure */
+.ea-state { padding: var(--afh-space-5xl) var(--afh-page-padding) var(--afh-space-8xl); }
+.ea-state .afh-answer-page { display: flex; flex-direction: column; gap: var(--afh-section-gap); }
+.ea-placeholder { font-family: var(--afh-font-mono); color: var(--afh-text-soft); }
+
+/* ============================================================
+   Brief 2 (2026-10-15): on a fiche with several names,
+   « Les sources parlent » groups the accounts by name first,
+   then by source family. New selectors only.
+   ============================================================ */
+.ea-voice-person { background: var(--afh-surface); }
+.ea-voice-person > summary { flex-wrap: wrap; gap: var(--afh-space-md); }
+.ea-voice-person-name {
+  font-family: var(--afh-font-display); font-weight: 900;
+  font-size: var(--afh-text-h3); line-height: 1.2; color: var(--afh-text);
+  overflow-wrap: anywhere;
+}
+.ea-voice-person > .ea-voice-body > .ea-voice { background: var(--afh-bg); }
+
+/* ============================================================
+   Brief 3 (2026-10-15): the language fiche. The competing
+   readings of a name sit side by side from 768 px; the note that
+   a language and a people are different things. New selectors.
+   ============================================================ */
+.ea-readings { display: flex; flex-direction: column; gap: var(--afh-space-lg); margin-top: var(--afh-space-2xl); }
+.ea-readings-grid { display: grid; grid-template-columns: 1fr; gap: var(--afh-space-2xl); }
+@media (min-width: 768px) { .ea-readings-grid { grid-template-columns: 1fr 1fr; } }
+.ea-shared-name {
+  margin-top: var(--afh-space-lg); padding-left: var(--afh-space-lg);
+  border-left: 2px solid var(--afh-border);
+  font-size: var(--afh-text-small); line-height: 1.6; color: var(--afh-text-soft);
+}
+
+/* ============================================================
+   Brief 4 (2026-10-15): the language-family fiche. A family's
+   classification status is said in a sentence, above its
+   figures, rather than worn as a badge. New selectors only.
+   ============================================================ */
+.ea-classification {
+  margin-top: var(--afh-space-lg); padding-left: var(--afh-space-lg);
+  border-left: 2px solid var(--afh-color-colonial);
+  font-size: var(--afh-text-small); line-height: 1.6; color: var(--afh-text);
+}
+
+/* ============================================================
+   Brief 5 (2026-10-15): the country fiche. A name whose origin
+   the sources tell in several ways folds its readings under its
+   row in « L'histoire des noms ». New selectors only.
+   ============================================================ */
+.ea-form-readings > summary {
+  display: flex; align-items: center; gap: var(--afh-space-md);
+  min-height: 44px; cursor: pointer; list-style: none;
+}
+.ea-form-readings > summary::-webkit-details-marker { display: none; }
+.ea-form-readings-count {
+  margin-left: auto; white-space: nowrap;
+  font-family: var(--afh-font-mono); font-size: var(--afh-text-caption);
+  color: var(--afh-text-soft);
+}
+.ea-form-readings[open] > summary .ea-voice-caret { transform: rotate(180deg); }
+
+/* ============================================================
+   Brief 9 (2026-10-16): « Notre démarche ». The signature line
+   is the page's one display sentence; « Notre position » is the
+   signed opinion, set apart like the fiches' conviction line;
+   the footer carries the line under its tagline (state B). New
+   selectors only, tokens only.
+   ============================================================ */
+.ea-approach {
+  --accent: var(--afh-cat-ocre); --accent-ink: var(--afh-cat-ocre-ink);
+  max-width: var(--afh-measure-prose);
+}
+.ea-signature {
+  margin: var(--afh-space-lg) 0 var(--afh-space-2xl);
+  font-family: var(--afh-font-display); font-weight: 700;
+  font-size: var(--afh-text-h2); line-height: 1.25; color: var(--afh-text);
+}
+.ea-position {
+  margin-bottom: var(--afh-space-6xl);
+  padding-top: var(--afh-space-5xl); border-top: 1px solid var(--afh-border);
+}
+.ea-position-text {
+  margin-top: var(--afh-space-lg);
+  font-family: var(--afh-font-display); font-weight: 700;
+  font-size: var(--afh-text-body); line-height: 1.55; color: var(--afh-text);
+}
+.ea-approach-sources { display: flex; flex-direction: column; gap: var(--afh-space-lg); margin-bottom: var(--afh-space-6xl); }
+.ea-approach-source { font-size: var(--afh-text-small); line-height: 1.5; color: var(--afh-text-soft); }
+.ea-approach-source a {
+  color: var(--accent-ink); font-weight: 700;
+  text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px;
+}
+.ea-approach-close { padding-top: var(--afh-space-lg); border-top: 1px solid var(--afh-border); }
+.ea-footer-signature {
+  contain: inline-size; margin-top: var(--afh-space-xs);
+  font-size: var(--afh-text-caption); line-height: 1.5; color: var(--afh-text-soft);
+}
+/* Main board only: the footer at phone width inside a 1440 board. */
+.ds-mobile .ea-footer-content { padding: 14px 12px; }
+.ds-mobile .ea-footer-directory { flex-direction: column; flex-wrap: nowrap; align-items: center; gap: 32px; text-align: center; }
+.ds-mobile .ea-footer-link { justify-content: center; }
+.ds-mobile .ea-footer-follow { text-align: center; }
+.ds-mobile .ea-footer-follow ul { margin: 12px auto 0; justify-content: center; }

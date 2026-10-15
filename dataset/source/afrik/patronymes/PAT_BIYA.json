@@ -6,7 +6,7 @@
   },
   "id": "PAT_BIYA",
   "nameMain": "Biya",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Biya",
@@ -28,7 +28,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [
@@ -94,6 +94,10 @@
       "reason": "la recherche web combinant « Biya », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », qui comprenait le terme « homonyme », et la lecture de « Historical Dictionary of the Republic of Cameroon » et « Origine du nom Biya : l'histoire méconnue révélée par Jean Paul Ntsengue », n'ont pas établi de lignée homonyme d'origine distincte."
     },
     {
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues le disent un nom de personne du Cameroun. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant. La fiche reste donc parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
+    },
+    {
       "fieldPath": "transmissionMode",
       "reason": "La recherche « Biya Bulu surname transmission inheritance clan » et la lecture de « Historical Dictionary of the Republic of Cameroon » et de l'article « Origine du nom Biya » ont trouvé un cas de transmission par homonymie à Paul Biya, mais aucune règle générale permettant de classer le nom comme patrilinéaire, matrilinéaire ou non héréditaire ; le mode reste donc « other »."
     }
@@ -122,7 +126,7 @@
             "sources": [
               {
                 "title": "Historical Dictionary of the Republic of Cameroon",
-                "author": "Mark Dike DeLancey, Rebecca Neh Mbuh et Mark W. DeLancey",
+                "author": "Emizet François Kisangani et F. Scott Bobb",
                 "year": 2010,
                 "url": "https://shcas.shnu.edu.cn/_upload/article/files/0e/08/4b0564f84fd9b9a65bde70ec5e4a/67ccaabe-3afc-4fb2-9df9-b7b27b0ebc0a.pdf",
                 "tier": "referenced",

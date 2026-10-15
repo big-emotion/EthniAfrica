@@ -6,7 +6,7 @@
   },
   "id": "PAT_BEN_BADIS",
   "nameMain": "Ben Badis",
-  "nameSystem": "nisba",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Ben Badis",
@@ -28,7 +28,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "other",
+  "designatedSocialUnit": "lineage",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -94,10 +94,6 @@
     {
       "fieldPath": "homonyms",
       "reason": "Les recherches exactes « Ben Badis homonym surname », « Ben Badis homonyme patronyme » et les variantes graphiques de la fiche n’ont pas établi deux origines distinctes et documentées pour la même forme."
-    },
-    {
-      "fieldPath": "nameSystem",
-      "reason": "Les sources consultées attestent la graphie « Ben Badis » sans établir assez précisément le système dénominatif ; le classement comme nisba reste donc provisoire."
     },
     {
       "fieldPath": "transmissionMode",

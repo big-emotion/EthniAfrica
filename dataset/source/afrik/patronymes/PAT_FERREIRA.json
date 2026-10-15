@@ -76,5 +76,157 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Ferreira à un peuple en Angola. Nous n'avons pas encore consulté de source consacrée à ce nom. Les exemples de noms portugais cités pour les créoles de Guinée-Bissau ne suffisent pas à expliquer leur usage en Angola."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ferreira est un nom de famille portugais et galicien, porté en Angola. Les sources le rattachent à un mot latin qui désigne une forge, par deux chemins différents que nous présentons plus bas. On ne sait pas avec certitude quand ni comment il est arrivé en Angola.",
+    "names": [
+      {
+        "nameText": "Ferreira",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Un nom de famille portugais lié à la forge, porté en Angola ; son origine est discutée.",
+        "periodLabel": "Écrit dès 991 sous une forme proche ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ferreira est un nom de famille galicien et portugais, qui vient du mot latin ferraria, « forge, atelier du fer ». Les sources lues n'expliquent pas tout à fait de la même façon comment ce mot est devenu un nom de famille ; nous présentons les deux explications séparément. Elles ne disent rien de l'Angola.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Ferreira Name Meaning and Ferreira Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=ferreira",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch et lue en anglais. Elle donne : « Galician and Portuguese: topographic name for someone who lived by a forge or iron workings, derived from Latin ferraria ‘forge, iron works’. »  Lu le 14 octobre 2026."
+              },
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 172",
+                "notes": "José Leite de Vasconcelos, Antroponímia portuguesa, Lisbonne, Imprensa Nacional, 1928, lu sur la copie numérisée d'archive.org. À la page 172, il range Ferreira parmi des noms de famille tirés de noms de lieux. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "22 mai 2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Ferreira est porté en Angola comme nom de famille : une dépêche de l'agence Lusa du 22 mai 2018, reprise par le Diário de Notícias, présente l'ambassadrice Maria de Jesus Ferreira comme la nouvelle représentante permanente de l'Angola auprès des Nations unies. La dépêche ne dit rien de l'origine du nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Maria de Jesus Ferreira é a nova embaixadora de Angola junto da ONU",
+                "author": "Lusa / Diário de Notícias",
+                "year": 2018,
+                "url": "https://www.dn.pt/lusa/interior/maria-de-jesus-ferreira-e-a-nova-embaixadora-de-angola-junto-da-onu-9366904.html",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Dépêche publiée par le Diário de Notícias le 22 mai 2018 : « A embaixadora Maria de Jesus Ferreira é a nova representante permanente de Angola junto das Nações Unidas, divulgou hoje a organização. » Elle ne dit rien de l'origine du nom. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Proposé en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Ferreira pourrait être devenu un nom angolais par le baptême et l'état civil. À l'époque coloniale, les missionnaires donnaient aux Ovimbundu baptisés des noms de saints, et l'état civil remplaçait des noms en umbundu par des noms portugais, selon Severino Canhola Dungue. Il ne cite pas ce nom en particulier.",
+            "sources": [
+              {
+                "title": "O nome: Identidade cultural do povo Ovimbundu",
+                "author": "Severino Canhola Dungue",
+                "year": 2025,
+                "url": "https://www.ajol.info/index.php/academicus/article/download/285659/269148/667445",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 28-30",
+                "notes": "Revue Academicus, vol. 3, n° 1, 2025, p. 23-34, publiée le 7 janvier 2025 ; texte intégral lu sur AJOL. Pages 28 à 30 : à l'époque coloniale, les missionnaires donnaient aux Ovimbundu baptisés des noms de saints à la place de leurs noms, et au registre civil des noms en umbundu étaient remplacés par des noms portugais (exemple donné : « Nangoya – Gomes »), d'après Chimbinda (2009). L'article ne cite pas ce nom. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Proposé en 2003"
+            },
+            "statement": "Le nom Ferreira aurait d'abord désigné quelqu'un qui vivait près d'une forge ou d'ateliers du fer, selon le dictionnaire de Patrick Hanks.",
+            "hypothesisGroup": "origine du nom Ferreira",
+            "sources": [
+              {
+                "title": "Ferreira Name Meaning and Ferreira Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=ferreira",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch et lue en anglais. Elle donne : « Galician and Portuguese: topographic name for someone who lived by a forge or iron workings, derived from Latin ferraria ‘forge, iron works’. »  Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Proposé en 1928"
+            },
+            "statement": "Le nom Ferreira viendrait plutôt d'un lieu, selon José Leite de Vasconcelos : il le range, avec Porto, Lisboa, Coimbra et Braga, parmi les noms de famille tirés de noms de lieux, et cite « Ruy Pires de Ferreira » dans le Livro de linhagens.",
+            "hypothesisGroup": "origine du nom Ferreira",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 172",
+                "notes": "José Leite de Vasconcelos, Antroponímia portuguesa, Lisbonne, Imprensa Nacional, 1928, lu sur la copie numérisée d'archive.org. À la page 172, il cite « Ruy Pires de Ferreira, Linhagens, p. 351 » et écrit que Porto, Ferreira, Lisboa, Coimbra et Braga sont des noms de famille, « como parece », et non de simples indications de lieu. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 991,
+              "to": 991,
+              "label": "991"
+            },
+            "statement": "Le nom Ferreira a pour plus ancienne trace une forme proche, Ferraria, dans un document de 991 que cite José Leite de Vasconcelos : « Tructemundo de Ferraria ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle ne dit rien de l'Angola.",
+            "formAsWritten": "Ferraria",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 159",
+                "notes": "José Leite de Vasconcelos, Antroponímia portuguesa, Lisbonne, Imprensa Nacional, 1928, lu sur la copie numérisée d'archive.org. À la page 159, parmi des noms de famille tirés de noms de lieux, il cite « Tructemundo de Ferraria, num de 991, ib., p. 100 ». Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

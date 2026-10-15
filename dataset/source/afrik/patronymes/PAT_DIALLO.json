@@ -49,7 +49,7 @@
         },
         {
           "countryId": "GNB",
-          "sourceRefs": ["forebears-diallo"]
+          "sourceRefs": ["forebears-diallo", "sadjo-2019-kaabu"]
         },
         {
           "countryId": "GMB",
@@ -99,6 +99,24 @@
           "sourceRefs": ["forebears-jallow"]
         }
       ]
+    },
+    {
+      "spelling": "Djaló",
+      "attestations": [
+        {
+          "countryId": "GNB",
+          "sourceRefs": ["sadjo-2019-kaabu"]
+        }
+      ]
+    },
+    {
+      "spelling": "Jaló",
+      "attestations": [
+        {
+          "countryId": "GNB",
+          "sourceRefs": ["sadjo-2019-kaabu"]
+        }
+      ]
     }
   ],
   "transmissionMode": "patrilineal",
@@ -133,6 +151,11 @@
         "claim": "Presque tous les Fulbe de Guinée portent l'un de quatre noms de famille : Diallo, aussi écrit Jalloh, Barry, Balde, aussi écrit Bah, et Sow. Le nom Diallo couvre environ un dixième de la population guinéenne, sans être plus répandu que les trois autres.",
         "claimStatus": "claimed",
         "sourceRefs": ["slate-kelly-2011-diallo"]
+      },
+      {
+        "claim": "Pour la Guinée-Bissau, Sadjo rattache les graphies Diallo, Djaló et Jaló au groupe Djal-Djaló parmi les principaux groupes fulas et décrit une organisation qui privilégie la ligne paternelle.",
+        "claimStatus": "established",
+        "sourceRefs": ["sadjo-2019-kaabu"]
       }
     ],
     "linguisticReconstructions": [
@@ -162,7 +185,8 @@
         "diallo-2006-plaisanterie-peuls",
         "interpeace-autoportrait-mali-2015",
         "sy-2015-ethnies-langues-mali",
-        "slate-kelly-2011-diallo"
+        "slate-kelly-2011-diallo",
+        "sadjo-2019-kaabu"
       ]
     },
     {
@@ -223,7 +247,7 @@
     {
       "countryId": "GNB",
       "status": "attested",
-      "sourceRefs": ["forebears-diallo"]
+      "sourceRefs": ["forebears-diallo", "sadjo-2019-kaabu"]
     },
     {
       "countryId": "GMB",
@@ -386,6 +410,14 @@
       "tier": "unverified",
       "source_kind": "repository",
       "notes": "Site agrégateur de statistiques patronymiques, sans revue éditoriale indépendante vérifiable ; données de 2014, consultées dans une copie archivée de 2024. Il compte environ 101 000 porteurs : Gambie 89 958, Guinée 5 821, Sénégal 94. Cité pour la répartition de cette graphie seulement."
+    },
+    {
+      "sourceKey": "sadjo-2019-kaabu",
+      "title": "Fulas e Mandingas na luta pelo poder e conquista do Império de Kaabu: causas e consequências (século XVI-XIX)",
+      "url": "https://repositorio.unilab.edu.br/jspui/bitstream/123456789/3467/1/ibu%20djalo_tcc.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Ibu Sadjo, mémoire de bacharelado, UNILAB, 2019. Aux p. 19-20, le mémoire cite Djaló (2013) sur le groupe Djal-Djaló, ses graphies Diallo, Djaló et Jaló en Guinée-Bissau et la priorité accordée à la filiation paternelle."
     }
   ],
   "gaps": [

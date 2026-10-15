@@ -10,6 +10,8 @@ import type { Language } from "@/types/shared";
 interface MeasuredPopulation {
   value: number;
   referenceYear?: number;
+  /** Who counted it, in its short name (brief 5): « UNFPA, 2025 ». */
+  source?: string;
 }
 
 export interface CountrySummaryFigures {
@@ -92,7 +94,11 @@ function countryFigures(
       // the one count on the panel a reader can date, and an undated
       // population is a weaker claim than a dated one.
       scope:
-        lead.value !== null && year ? copy.referenceYear(year) : lead.scope,
+        lead.value !== null && year
+          ? figures.population?.source
+            ? `${figures.population.source}, ${year}`
+            : copy.referenceYear(year)
+          : lead.scope,
       emphasis: "lead",
     },
     counted("peoples", figures.peoples),

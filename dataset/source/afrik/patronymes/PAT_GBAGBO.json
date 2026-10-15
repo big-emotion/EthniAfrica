@@ -65,7 +65,7 @@
     },
     {
       "sourceKey": "afriksoir-2021-noms-bete",
-      "title": "Côte d'Ivoire : Voici la signification des noms Bété que vous connaissez",
+      "title": "Côte d'Ivoire : voici la signification des noms Bété que vous connaissez",
       "url": "https://afriksoir.net/cote-divoire-voici-la-signification-des-noms-bete-que-vous-connaissez/",
       "tier": "unverified",
       "source_kind": "press",
@@ -75,7 +75,7 @@
   "gaps": [
     {
       "fieldPath": "nameSystem",
-      "reason": "Aucune source consultée ne fait de Gbagbo un nom de clan : l'article de Kakou y voit un nom propre bété, et une liste de presse lui donne le sens d'un nom personnel. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet jamais."
+      "reason": "Aucune source consultée ne fait de Gbagbo un nom de clan : l'article de Kakou y voit un nom propre bété, et une liste de presse lui donne le sens d'un nom personnel. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant. La fiche reste donc parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "designatedSocialUnit",

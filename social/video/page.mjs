@@ -1,5 +1,146 @@
 // The isolated page that draws one frame. Everything it shows arrives in the
 // payload computed by render.mjs; the page has no clock and no network.
+import { readFileSync } from "node:fs";
+
+// Cartes 1.6.0 (operator, 16 October 2026): the satellite video's ending
+// carries the project's signature line in place of the motto « L'Afrique à
+// travers ses noms ». The line is the accepted design's (version.json), split
+// after each comma as the cards print it; the page keeps no copy of its own.
+const SIGNATURE_LINES = JSON.parse(
+  readFileSync(
+    new URL("../design-system/version.json", import.meta.url),
+    "utf8"
+  )
+).signatureLine.split(/(?<=,) /u);
+
+// The ending darkens the base to the design's brightness 0.45 (board 10),
+// which the end frames apply where a hold applies 0.84: hence their ratio.
+const END_GLSL = `
+float ending(float dim) { return mix(1.0, 0.45 / 0.84, dim); }`;
+export const FLAT_VERT = `#version 300 es
+in vec2 p; void main(){ gl_Position = vec4(p, 0.0, 1.0); }`;
+// Grade, limb darkening, atmosphere and vignette follow the design's
+// render.py (board 1); the parameters are mixed from base to recede. The
+// series video's map cards (Cartes 1.4.1) set `plain` to drop the vignette.
+export const FLAT_FRAG = `#version 300 es
+precision highp float;
+uniform vec2 centre; uniform float radius; uniform vec2 view;
+uniform sampler2D world; uniform sampler2D region; uniform vec4 bounds;
+uniform float grade, dim, plain;
+out vec4 colour;
+const float PI = 3.141592653589793;
+${END_GLSL}
+const vec3 SPACE = vec3(7.0, 6.0, 5.0) / 255.0;
+const vec3 ATMOS = vec3(143.0, 184.0, 204.0) / 255.0;
+const vec3 WARM = vec3(255.0, 238.0, 221.0) / 255.0;
+vec3 graded(vec3 c) {
+  float sat = mix(0.85, 0.70, grade), expo = mix(0.90, 0.76, grade);
+  float con = mix(1.06, 0.96, grade), warm = mix(0.35, 0.45, grade);
+  float lum = dot(c, vec3(0.2126, 0.7152, 0.0722));
+  c = vec3(lum) + sat * (c - vec3(lum));
+  c = (c * expo - 0.5) * con + 0.5;
+  return clamp(c * (1.0 - warm + warm * WARM), 0.0, 1.0);
+}
+void main() {
+  vec2 px = vec2(gl_FragCoord.x, 1920.0 - gl_FragCoord.y);
+  float x = (px.x - centre.x) / radius, y = -(px.y - centre.y) / radius;
+  float rho = length(vec2(x, y));
+  float d = (rho - 1.0) * radius;
+  float glow = exp(-max(d, 0.0) / max(0.045 * radius, 1.0)) * 0.55;
+  vec3 space = mix(SPACE, ATMOS, glow);
+  vec3 land = space;
+  if (rho < 1.0) {
+    float cc = sqrt(1.0 - rho * rho);
+    float lat0 = view.y, lon0 = view.x;
+    float lat = rho > 0.0 ? asin(clamp(cc * sin(lat0) + y * rho * cos(lat0) / rho, -1.0, 1.0)) : lat0;
+    float lon = lon0 + (rho > 0.0 ? atan(x * rho, rho * cc * cos(lat0) - y * rho * sin(lat0)) : 0.0);
+    float lonD = degrees(lon), latD = degrees(lat);
+    lonD = mod(lonD + 180.0, 360.0) - 180.0;
+    vec3 c;
+    if (lonD >= bounds.x && lonD <= bounds.y && latD >= bounds.z && latD <= bounds.w)
+      c = texture(region, vec2((lonD - bounds.x) / (bounds.y - bounds.x), (bounds.w - latD) / (bounds.w - bounds.z))).rgb;
+    else
+      c = texture(world, vec2((lonD + 180.0) / 360.0, (90.0 - latD) / 180.0)).rgb;
+    c = graded(c) * (0.62 + 0.38 * sqrt(cc));
+    float haze = 0.28 * pow(1.0 - cc, 3.0);
+    land = c * (1.0 - haze) + ATMOS * haze * mix(0.55, 0.4, grade);
+  }
+  // Antialiased limb: blend over one pixel instead of a hard edge.
+  vec3 c = mix(land, space, smoothstep(-0.5, 0.5, d));
+  float nx = (px.x / 1080.0 - 0.5) * 2.0;
+  float ny = (px.y / 1920.0 - 0.36) * 2.0 * (1920.0 / 1080.0) * 0.6;
+  float t = smoothstep(0.0, 1.0, clamp((sqrt(nx * nx * 0.8 + ny * ny) - 0.6) / 0.75, 0.0, 1.0));
+  colour = vec4(c * (1.0 - 0.24 * t * (1.0 - plain)) * ending(dim), 1.0);
+}`;
+
+// The satellite overlays (boards 2 and 3): inks, hatching, areas, borders
+// and legend swatches, shared with the series video's map cards (1.4.1).
+export const OVERLAY_SCRIPT = `const SVG = "http://www.w3.org/2000/svg";
+// d, lilac, is the series map sequence's fourth name (Cartes 1.5.0); the
+// satellite video draws three inks and never references it.
+const INK = { a: "#e8b96a", b: "#6cc3b5", c: "#e3876a", d: "#c4a8f2" };
+// The neutral ink of the « Zone approximative » swatch (0.4.0).
+const NOTE_INK = "#a8977f";
+// Hatching for each ink at 45° and, for an area inside an earlier one, at
+// 135° so the overlap reads as crossing; small swatches for the legend.
+function hatchDefs() {
+  let defs = "";
+  for (const [k, v] of Object.entries(INK))
+    for (const angle of [45, 135])
+      defs += \`<pattern id="hatch-\${k}-\${angle}" patternUnits="userSpaceOnUse" width="18" height="18" patternTransform="rotate(\${angle})"><rect width="18" height="18" fill="\${v}" fill-opacity="0.10"/><line x1="9" y1="0" x2="9" y2="18" stroke="#0b0806" stroke-opacity="0.45" stroke-width="8"/><line x1="9" y1="0" x2="9" y2="18" stroke="\${v}" stroke-width="4"/></pattern>\`;
+  for (const [k, v] of [...Object.entries(INK), ["note", NOTE_INK]])
+    defs += \`<pattern id="swatch-hatch-\${k}" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(45)"><line x1="3.5" y1="0" x2="3.5" y2="7" stroke="\${v}" stroke-width="2"/></pattern>\`;
+  return defs;
+}
+function path(d, attrs) {
+  const p = document.createElementNS(SVG, "path");
+  p.setAttribute("d", d);
+  for (const [k, v] of Object.entries(attrs)) p.setAttribute(k, v);
+  return p;
+}
+function group(opacity, ...children) {
+  const g = document.createElementNS(SVG, "g");
+  g.setAttribute("opacity", opacity);
+  g.append(...children);
+  return g;
+}
+// Board 2: certain areas filled at 30 % with a solid edge; uncertain areas
+// hatched with a dashed edge; every bright stroke over a dark keyline.
+function areaFill(a) {
+  return group(a.opacity, path(a.d, a.uncertain
+    ? { fill: \`url(#hatch-\${a.ink}-\${a.hatch ?? 45})\`, "fill-rule": "evenodd" }
+    : { fill: INK[a.ink], "fill-opacity": 0.3, "fill-rule": "evenodd" }));
+}
+function areaEdge(a) {
+  const dash = a.uncertain ? { "stroke-dasharray": "16 10" } : {};
+  return group(a.opacity,
+    path(a.d, { stroke: "#0b0806", "stroke-opacity": 0.55, "stroke-width": 8, ...dash }),
+    path(a.d, { stroke: INK[a.ink], "stroke-width": 4, ...dash }));
+}
+function border(b) {
+  return group(b.opacity, ...(b.strong
+    ? [path(b.d, { stroke: "#0b0806", "stroke-opacity": 0.55, "stroke-width": 8 }),
+       path(b.d, { stroke: "#f3e9da", "stroke-opacity": 0.92, "stroke-width": 3.5 })]
+    : [path(b.d, { stroke: "#0b0806", "stroke-opacity": 0.35, "stroke-width": 5 }),
+       path(b.d, { stroke: "#f3e9da", "stroke-opacity": 0.7, "stroke-width": 2, "stroke-dasharray": "9 7" })]));
+}
+const SWATCHES = {
+  river: '<line x1="4" y1="12" x2="40" y2="12" stroke="#6fcbe2" stroke-width="12" stroke-linecap="round" opacity="0.45"/><line x1="4" y1="12" x2="40" y2="12" stroke="#e4f6fb" stroke-width="4.5" stroke-linecap="round"/>',
+  "border-quiet": '<line x1="2" y1="12" x2="42" y2="12" stroke="#f3e9da" stroke-opacity="0.8" stroke-width="2.5" stroke-dasharray="7 5"/>',
+  "border-strong": '<line x1="2" y1="12" x2="42" y2="12" stroke="#0b0806" stroke-opacity="0.55" stroke-width="8"/><line x1="2" y1="12" x2="42" y2="12" stroke="#f3e9da" stroke-opacity="0.92" stroke-width="3.5"/>',
+  outline: '<line x1="5" y1="12" x2="39" y2="12" stroke="#bfe0ea" stroke-width="5" stroke-linecap="round" stroke-dasharray="0.1 10"/>',
+  place: '<circle cx="22" cy="12" r="6.5" fill="#f3e9da" stroke="#0b0806" stroke-opacity="0.7" stroke-width="3"/>',
+  region: '<text x="22" y="21" text-anchor="middle" font-family="Anton" font-size="22" letter-spacing="2.6" fill="#f3e9da">Aa</text>',
+  water: '<text x="22" y="20" text-anchor="middle" font-family="Nunito Sans" font-style="italic" font-weight="700" font-size="22" fill="#bfe0ea">Aa</text>',
+};
+for (const [k, v] of Object.entries(INK)) {
+  SWATCHES["certain-" + k] = \`<rect x="2" y="2" width="40" height="20" rx="3" fill="\${v}" fill-opacity="0.35" stroke="\${v}" stroke-width="3"/>\`;
+  SWATCHES["uncertain-" + k] = \`<rect x="2" y="2" width="40" height="20" rx="3" fill="url(#swatch-hatch-\${k})" stroke="\${v}" stroke-width="3" stroke-dasharray="6 4"/>\`;
+}
+SWATCHES.approximate = \`<rect x="2" y="2" width="40" height="20" rx="3" fill="url(#swatch-hatch-note)" stroke="\${NOTE_INK}" stroke-width="3" stroke-dasharray="6 4"/>\`;
+// A name the placement rule could not fit on the map is listed as text.
+SWATCHES.text = "";
+`;
 
 export const PAGE_HTML = `<!doctype html>
 <html lang="fr"><head><meta charset="utf-8"><style>
@@ -46,64 +187,10 @@ html,body{margin:0;background:#070605}
 <div id="closing" style="left:120px;width:840px;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center"></div>
 </div>
 <script>
-// The ending darkens the base to the design's brightness 0.45 (board 10),
-// which the end frames apply where a hold applies 0.84: hence their ratio.
-const END_GLSL = \`
-float ending(float dim) { return mix(1.0, 0.45 / 0.84, dim); }\`;
-const VERT = \`#version 300 es
-in vec2 p; void main(){ gl_Position = vec4(p, 0.0, 1.0); }\`;
-// Grade, limb darkening, atmosphere and vignette follow the design's
-// render.py (board 1); the parameters are mixed from base to recede.
-const FRAG = \`#version 300 es
-precision highp float;
-uniform vec2 centre; uniform float radius; uniform vec2 view;
-uniform sampler2D world; uniform sampler2D region; uniform vec4 bounds;
-uniform float grade, dim;
-out vec4 colour;
-const float PI = 3.141592653589793;
-\${END_GLSL}
-const vec3 SPACE = vec3(7.0, 6.0, 5.0) / 255.0;
-const vec3 ATMOS = vec3(143.0, 184.0, 204.0) / 255.0;
-const vec3 WARM = vec3(255.0, 238.0, 221.0) / 255.0;
-vec3 graded(vec3 c) {
-  float sat = mix(0.85, 0.70, grade), expo = mix(0.90, 0.76, grade);
-  float con = mix(1.06, 0.96, grade), warm = mix(0.35, 0.45, grade);
-  float lum = dot(c, vec3(0.2126, 0.7152, 0.0722));
-  c = vec3(lum) + sat * (c - vec3(lum));
-  c = (c * expo - 0.5) * con + 0.5;
-  return clamp(c * (1.0 - warm + warm * WARM), 0.0, 1.0);
-}
-void main() {
-  vec2 px = vec2(gl_FragCoord.x, 1920.0 - gl_FragCoord.y);
-  float x = (px.x - centre.x) / radius, y = -(px.y - centre.y) / radius;
-  float rho = length(vec2(x, y));
-  float d = (rho - 1.0) * radius;
-  float glow = exp(-max(d, 0.0) / max(0.045 * radius, 1.0)) * 0.55;
-  vec3 space = mix(SPACE, ATMOS, glow);
-  vec3 land = space;
-  if (rho < 1.0) {
-    float cc = sqrt(1.0 - rho * rho);
-    float lat0 = view.y, lon0 = view.x;
-    float lat = rho > 0.0 ? asin(clamp(cc * sin(lat0) + y * rho * cos(lat0) / rho, -1.0, 1.0)) : lat0;
-    float lon = lon0 + (rho > 0.0 ? atan(x * rho, rho * cc * cos(lat0) - y * rho * sin(lat0)) : 0.0);
-    float lonD = degrees(lon), latD = degrees(lat);
-    lonD = mod(lonD + 180.0, 360.0) - 180.0;
-    vec3 c;
-    if (lonD >= bounds.x && lonD <= bounds.y && latD >= bounds.z && latD <= bounds.w)
-      c = texture(region, vec2((lonD - bounds.x) / (bounds.y - bounds.x), (bounds.w - latD) / (bounds.w - bounds.z))).rgb;
-    else
-      c = texture(world, vec2((lonD + 180.0) / 360.0, (90.0 - latD) / 180.0)).rgb;
-    c = graded(c) * (0.62 + 0.38 * sqrt(cc));
-    float haze = 0.28 * pow(1.0 - cc, 3.0);
-    land = c * (1.0 - haze) + ATMOS * haze * mix(0.55, 0.4, grade);
-  }
-  // Antialiased limb: blend over one pixel instead of a hard edge.
-  vec3 c = mix(land, space, smoothstep(-0.5, 0.5, d));
-  float nx = (px.x / 1080.0 - 0.5) * 2.0;
-  float ny = (px.y / 1920.0 - 0.36) * 2.0 * (1920.0 / 1080.0) * 0.6;
-  float t = smoothstep(0.0, 1.0, clamp((sqrt(nx * nx * 0.8 + ny * ny) - 0.6) / 0.75, 0.0, 1.0));
-  colour = vec4(c * (1.0 - 0.24 * t) * ending(dim), 1.0);
-}\`;
+const SIGNATURE_LINES = ${JSON.stringify(SIGNATURE_LINES)};
+const END_GLSL = ${JSON.stringify(END_GLSL)};
+const VERT = ${JSON.stringify(FLAT_VERT)};
+const FRAG = ${JSON.stringify(FLAT_FRAG)};
 
 // Relief (board 6): a sphere mesh raised by the height model, seen through
 // the perspective camera computed in sequence.mjs. Imagery and overlays are
@@ -327,69 +414,13 @@ const el = (tag, style, text) => {
   if (text !== undefined) e.textContent = text;
   return e;
 };
-const SVG = "http://www.w3.org/2000/svg";
-const INK = { a: "#e8b96a", b: "#6cc3b5", c: "#e3876a" };
-// The neutral ink of the « Zone approximative » swatch (0.4.0).
-const NOTE_INK = "#a8977f";
-// Hatching for each ink at 45° and, for an area inside an earlier one, at
-// 135° so the overlap reads as crossing; small swatches for the legend.
-{
-  let defs = "";
-  for (const [k, v] of Object.entries(INK))
-    for (const angle of [45, 135])
-      defs += \`<pattern id="hatch-\${k}-\${angle}" patternUnits="userSpaceOnUse" width="18" height="18" patternTransform="rotate(\${angle})"><rect width="18" height="18" fill="\${v}" fill-opacity="0.10"/><line x1="9" y1="0" x2="9" y2="18" stroke="#0b0806" stroke-opacity="0.45" stroke-width="8"/><line x1="9" y1="0" x2="9" y2="18" stroke="\${v}" stroke-width="4"/></pattern>\`;
-  for (const [k, v] of [...Object.entries(INK), ["note", NOTE_INK]])
-    defs += \`<pattern id="swatch-hatch-\${k}" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(45)"><line x1="3.5" y1="0" x2="3.5" y2="7" stroke="\${v}" stroke-width="2"/></pattern>\`;
-  document.querySelector("#lines defs").insertAdjacentHTML("beforeend", defs);
-}
-function path(d, attrs) {
-  const p = document.createElementNS(SVG, "path");
-  p.setAttribute("d", d);
-  for (const [k, v] of Object.entries(attrs)) p.setAttribute(k, v);
-  return p;
-}
-function group(opacity, ...children) {
-  const g = document.createElementNS(SVG, "g");
-  g.setAttribute("opacity", opacity);
-  g.append(...children);
-  return g;
-}
-// Board 2: certain areas filled at 30 % with a solid edge; uncertain areas
-// hatched with a dashed edge; every bright stroke over a dark keyline.
-function areaFill(a) {
-  return group(a.opacity, path(a.d, a.uncertain
-    ? { fill: \`url(#hatch-\${a.ink}-\${a.hatch ?? 45})\`, "fill-rule": "evenodd" }
-    : { fill: INK[a.ink], "fill-opacity": 0.3, "fill-rule": "evenodd" }));
-}
-function areaEdge(a) {
-  const dash = a.uncertain ? { "stroke-dasharray": "16 10" } : {};
-  return group(a.opacity,
-    path(a.d, { stroke: "#0b0806", "stroke-opacity": 0.55, "stroke-width": 8, ...dash }),
-    path(a.d, { stroke: INK[a.ink], "stroke-width": 4, ...dash }));
-}
-function border(b) {
-  return group(b.opacity, ...(b.strong
-    ? [path(b.d, { stroke: "#0b0806", "stroke-opacity": 0.55, "stroke-width": 8 }),
-       path(b.d, { stroke: "#f3e9da", "stroke-opacity": 0.92, "stroke-width": 3.5 })]
-    : [path(b.d, { stroke: "#0b0806", "stroke-opacity": 0.35, "stroke-width": 5 }),
-       path(b.d, { stroke: "#f3e9da", "stroke-opacity": 0.7, "stroke-width": 2, "stroke-dasharray": "9 7" })]));
-}
-const SWATCHES = {
-  river: '<line x1="4" y1="12" x2="40" y2="12" stroke="#6fcbe2" stroke-width="12" stroke-linecap="round" opacity="0.45"/><line x1="4" y1="12" x2="40" y2="12" stroke="#e4f6fb" stroke-width="4.5" stroke-linecap="round"/>',
-  "border-quiet": '<line x1="2" y1="12" x2="42" y2="12" stroke="#f3e9da" stroke-opacity="0.8" stroke-width="2.5" stroke-dasharray="7 5"/>',
-  "border-strong": '<line x1="2" y1="12" x2="42" y2="12" stroke="#0b0806" stroke-opacity="0.55" stroke-width="8"/><line x1="2" y1="12" x2="42" y2="12" stroke="#f3e9da" stroke-opacity="0.92" stroke-width="3.5"/>',
-  outline: '<line x1="5" y1="12" x2="39" y2="12" stroke="#bfe0ea" stroke-width="5" stroke-linecap="round" stroke-dasharray="0.1 10"/>',
-  place: '<circle cx="22" cy="12" r="6.5" fill="#f3e9da" stroke="#0b0806" stroke-opacity="0.7" stroke-width="3"/>',
-  region: '<text x="22" y="21" text-anchor="middle" font-family="Anton" font-size="22" letter-spacing="2.6" fill="#f3e9da">Aa</text>',
-  water: '<text x="22" y="20" text-anchor="middle" font-family="Nunito Sans" font-style="italic" font-weight="700" font-size="22" fill="#bfe0ea">Aa</text>',
+const signatureLine = () => {
+  const line = el("span", "font-family:Fraunces,Georgia,serif;font-weight:600;font-size:56px;line-height:64px;color:#f3e9da");
+  for (const t of SIGNATURE_LINES) line.append(el("span", "display:block;white-space:nowrap", t));
+  return line;
 };
-for (const [k, v] of Object.entries(INK)) {
-  SWATCHES["certain-" + k] = \`<rect x="2" y="2" width="40" height="20" rx="3" fill="\${v}" fill-opacity="0.35" stroke="\${v}" stroke-width="3"/>\`;
-  SWATCHES["uncertain-" + k] = \`<rect x="2" y="2" width="40" height="20" rx="3" fill="url(#swatch-hatch-\${k})" stroke="\${v}" stroke-width="3" stroke-dasharray="6 4"/>\`;
-}
-SWATCHES.approximate = \`<rect x="2" y="2" width="40" height="20" rx="3" fill="url(#swatch-hatch-note)" stroke="\${NOTE_INK}" stroke-width="3" stroke-dasharray="6 4"/>\`;
-// A name the placement rule could not fit on the map is listed as text.
-SWATCHES.text = "";
+${OVERLAY_SCRIPT}
+document.querySelector("#lines defs").insertAdjacentHTML("beforeend", hatchDefs());
 
 function river(d, state) {
   const g = document.createElementNS(SVG, "g");
@@ -618,7 +649,7 @@ window.drawFrame = async (f) => {
   }
   panel.append(legend, caption);
 
-  // Board 10's closing: signature and slogan; ending A adds what the page
+  // Board 10's closing: signature and, since Cartes 1.6.0, the signature line in place of the slogan; ending A adds what the page
   // holds and the bare domain. Neither asks the viewer for anything.
   const closing = document.getElementById("closing");
   closing.replaceChildren();
@@ -632,7 +663,9 @@ window.drawFrame = async (f) => {
     big.src = "/logo.png"; big.alt = "Logo EthniAfrica";
     closingParts.push(big,
       el("span", "font-family:Fraunces,Georgia,serif;font-weight:600;font-size:64px;line-height:72px;color:#f3e9da", "EthniAfrica"),
-      el("span", "font-family:Fraunces,Georgia,serif;font-style:italic;font-weight:400;font-size:28px;line-height:36px;color:#cbbba3", "L\\u2019Afrique \\u00e0 travers ses noms"));
+      // Cartes 1.6.0: the signature line, three lines broken after each
+      // comma, in the cards' Fraunces 600 56/64.
+      signatureLine());
     if (a) closingParts.push(
       el("span", "margin-top:28px;font-size:30px;line-height:40px;font-weight:700;color:#f3e9da", f.closing.sentence),
       el("span", "margin-top:6px;padding:12px 28px;border-radius:999px;border:2px solid #e8b96a;color:#e8b96a;font-size:34px;line-height:40px;font-weight:800;letter-spacing:.04em", f.closing.address));

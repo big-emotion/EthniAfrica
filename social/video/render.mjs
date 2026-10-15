@@ -4,7 +4,7 @@
 import { chromium } from "@playwright/test";
 import { spawn, execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
-import { mkdir, readFile, writeFile, access } from "node:fs/promises";
+import { mkdir, readFile, writeFile, access, rm } from "node:fs/promises";
 import { join, resolve } from "node:path";
 import sharp from "sharp";
 import { PAGE_HTML } from "./page.mjs";
@@ -41,9 +41,12 @@ const FONTS = [
 ];
 // SwiftShader keeps WebGL on the CPU, so the same frame gives the same pixels
 // on a given machine regardless of the GPU.
-const BROWSER_ARGS = ["--use-angle=swiftshader", "--enable-unsafe-swiftshader"];
+export const BROWSER_ARGS = [
+  "--use-angle=swiftshader",
+  "--enable-unsafe-swiftshader",
+];
 // Largest texture side SwiftShader accepts; the world mosaic is reduced to it.
-const MAX_TEXTURE = 8192;
+export const MAX_TEXTURE = 8192;
 
 // Board 6's production height model, checked on 11 October 2026: NOAA NCEI
 // ETOPO 2022, 60 arc-seconds, public domain (CC0 1.0). Ocean depths are
@@ -196,9 +199,15 @@ function heightSampler(bounds, heights) {
 }
 
 async function prepareImagery(seq, assets) {
-  const entry = IMAGERY[seq.imagery];
-  if (!entry.file)
-    throw new Error(`No verified local imagery file for ${seq.imagery}`);
+  return prepareImageryRegion(seq.imagery, holdBounds(seq), assets);
+}
+
+// The verified imagery as the shaders read it: the world reduced to the
+// largest texture, and the full-resolution crop of `bounds` (lon/lat). The
+// series video's map cards (Cartes 1.4.1) use it too.
+export async function prepareImageryRegion(id, bounds, assets) {
+  const entry = IMAGERY[id];
+  if (!entry.file) throw new Error(`No verified local imagery file for ${id}`);
   const path = join(assets, entry.file);
   const bytes = await readFile(path).catch(() => {
     throw new Error(`Verified imagery file is missing: ${entry.file}`);
@@ -207,7 +216,6 @@ async function prepareImagery(seq, assets) {
     throw new Error(
       `Imagery file differs from the verified one: ${entry.file}`
     );
-  const bounds = holdBounds(seq);
   const cache = join(assets, ".cache", entry.sha256.slice(0, 16));
   const key = bounds.join("_");
   const world = join(cache, "world.jpg");
@@ -219,8 +227,10 @@ async function prepareImagery(seq, assets) {
       .resize(MAX_TEXTURE, MAX_TEXTURE / 2)
       .jpeg({ quality: 95 })
       .toFile(world);
+  const { width, height } = await source().metadata();
+  if (entry.width && width !== entry.width)
+    throw new Error(`${entry.file} is ${width} px wide, not ${entry.width}`);
   if (!(await exists(region))) {
-    const { width, height } = await source().metadata();
     const [lonMin, lonMax, latMin, latMax] = bounds;
     const left = Math.round(((lonMin + 180) / 360) * width);
     const top = Math.round(((90 - latMax) / 180) * height);
@@ -715,7 +725,7 @@ export async function renderFrame(seq, frame, options) {
 
 // The voice file is checked again at export: the words were timed on the
 // audio whose SHA-256 they record, and FFmpeg must read the same length.
-async function checkVoice(voice) {
+export async function checkVoice(voice) {
   const hash = sha256(await readFile(voice.audio));
   if (hash !== voice.sha256)
     throw new Error(
@@ -742,7 +752,7 @@ async function checkVoice(voice) {
 // The voice is muxed as AAC at 48 kHz, cut to the encoded frames and padded
 // with silence to their end, so the video always keeps the schedule's
 // length: the audio never shortens it.
-function audioArgs(voice, from, seconds) {
+export function audioArgs(voice, from, seconds) {
   if (!voice) return { input: [], output: ["-an"] };
   return {
     input: [
@@ -772,6 +782,71 @@ function audioArgs(voice, from, seconds) {
   };
 }
 
+// Pipes frames `from` to `to` (exclusive), drawn by `render(frame)` as PNG,
+// into FFmpeg with the audio arguments of `audioArgs`. Shared by the
+// satellite video and the series video (series-render.mjs).
+export async function encodeFrames(file, { from, to, render, sound }) {
+  const ffmpeg = spawn(
+    "ffmpeg",
+    [
+      "-hide_banner",
+      "-loglevel",
+      "error",
+      "-f",
+      "image2pipe",
+      "-framerate",
+      String(FPS),
+      "-c:v",
+      "png",
+      "-i",
+      "-",
+      ...sound.input,
+      "-c:v",
+      "libx264",
+      "-preset",
+      "slow",
+      "-crf",
+      "16",
+      "-pix_fmt",
+      "yuv420p",
+      "-r",
+      String(FPS),
+      ...sound.output,
+      "-map_metadata",
+      "-1",
+      "-fflags",
+      "+bitexact",
+      "-movflags",
+      "+faststart",
+      "-y",
+      file,
+    ],
+    { stdio: ["pipe", "ignore", "pipe"] }
+  );
+  let stderr = "";
+  ffmpeg.stderr.on("data", (c) => (stderr += c));
+  const done = new Promise((ok, ko) =>
+    ffmpeg.on("close", (code) =>
+      code === 0 ? ok() : ko(new Error(`FFmpeg failed: ${stderr}`))
+    )
+  );
+  try {
+    for (let f = from; f < to; f++) {
+      const png = await render(f);
+      if (!ffmpeg.stdin.write(png))
+        await new Promise((ok) => ffmpeg.stdin.once("drain", ok));
+    }
+  } catch (error) {
+    // A refused frame must not leave a playable excerpt behind.
+    ffmpeg.kill("SIGKILL");
+    await done.catch(() => {});
+    await rm(file, { force: true });
+    throw error;
+  }
+  ffmpeg.stdin.end();
+  await done;
+}
+
 // `range` ({ from, to }, frames) encodes an excerpt, for a short proof.
 export async function encodeVideo(seq, outDir, { assets, range }) {
   const count = frameCount(seq);
@@ -793,57 +868,7 @@ export async function encodeVideo(seq, outDir, { assets, range }) {
     .toString()
     .split("\n")[0];
   try {
-    const ffmpeg = spawn(
-      "ffmpeg",
-      [
-        "-hide_banner",
-        "-loglevel",
-        "error",
-        "-f",
-        "image2pipe",
-        "-framerate",
-        String(FPS),
-        "-c:v",
-        "png",
-        "-i",
-        "-",
-        ...sound.input,
-        "-c:v",
-        "libx264",
-        "-preset",
-        "slow",
-        "-crf",
-        "16",
-        "-pix_fmt",
-        "yuv420p",
-        "-r",
-        String(FPS),
-        ...sound.output,
-        "-map_metadata",
-        "-1",
-        "-fflags",
-        "+bitexact",
-        "-movflags",
-        "+faststart",
-        "-y",
-        file,
-      ],
-      { stdio: ["pipe", "ignore", "pipe"] }
-    );
-    let stderr = "";
-    ffmpeg.stderr.on("data", (c) => (stderr += c));
-    const done = new Promise((ok, ko) =>
-      ffmpeg.on("close", (code) =>
-        code === 0 ? ok() : ko(new Error(`FFmpeg failed: ${stderr}`))
-      )
-    );
-    for (let f = from; f < to; f++) {
-      const png = await renderer.render(f);
-      if (!ffmpeg.stdin.write(png))
-        await new Promise((ok) => ffmpeg.stdin.once("drain", ok));
-    }
-    ffmpeg.stdin.end();
-    await done;
+    await encodeFrames(file, { from, to, render: renderer.render, sound });
   } finally {
     await renderer.close();
   }

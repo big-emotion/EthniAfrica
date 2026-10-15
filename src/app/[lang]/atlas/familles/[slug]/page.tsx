@@ -17,6 +17,8 @@ import {
 import { PageLayout } from "@/components/layout/PageLayout";
 import { FicheJsonLd } from "@/components/fiche/FicheJsonLd";
 import { FicheOnward } from "@/components/fiche/FicheOnward";
+import { NameNextStep } from "@/components/search/timeline/NameClosing";
+import { loadFamilyNextSteps } from "@/lib/fiche/familyNextSteps";
 import { buildOnwardLinks } from "@/lib/fiche/onwardLinks";
 import { familyOnwardGroups } from "@/lib/fiche/onwardGroups";
 import { rankMemberPeoplesByReach } from "@/lib/familyFootprintRanking";
@@ -103,6 +105,17 @@ async function FamilyLiveContent({
   });
   const copy = familyCopy[language];
   const atlasFamilyName = familyDetail.nameFr;
+  const rankedPeoples = rankMemberPeoplesByReach(memberPeoples);
+  // Brief 4: a language and a people inside the family, each with the reason
+  // its own fiche gives; the onward list stays for a family with neither.
+  const nextSteps = await loadFamilyNextSteps({
+    languages: familyLanguages,
+    peoples: rankedPeoples.map((people) => ({
+      id: people.id,
+      name: people.nameMain,
+    })),
+    language,
+  });
 
   return (
     <>
@@ -141,18 +154,22 @@ async function FamilyLiveContent({
             footprintProvenance={footprintProvenance}
             provenance={provenance}
             onward={
-              <FicheOnward
-                from="language-family"
-                language={language}
-                links={buildOnwardLinks(
-                  familyOnwardGroups({
-                    languages: familyLanguages,
-                    peoples: rankMemberPeoplesByReach(memberPeoples),
-                    language,
-                  }),
-                  language
-                )}
-              />
+              nextSteps.length > 0 ? (
+                <NameNextStep cards={nextSteps} language={language} />
+              ) : (
+                <FicheOnward
+                  from="language-family"
+                  language={language}
+                  links={buildOnwardLinks(
+                    familyOnwardGroups({
+                      languages: familyLanguages,
+                      peoples: rankedPeoples,
+                      language,
+                    }),
+                    language
+                  )}
+                />
+              )
             }
           />
         }

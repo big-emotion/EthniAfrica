@@ -6,7 +6,7 @@
   },
   "id": "PAT_MOBUTU",
   "nameMain": "Mobutu",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Mobutu",
@@ -98,7 +98,7 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "Les sources décrivent Mobutu comme nom personnel choisi par son père, non comme nom de clan ; le modèle ne proposant pas de catégorie générique pour le prénom ou nom individuel, clan_name est conservé comme valeur technique avec cette réserve explicite."
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues le disent un nom de personne choisi par le père de celui qui le porte. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant. La fiche reste donc parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "alliances",

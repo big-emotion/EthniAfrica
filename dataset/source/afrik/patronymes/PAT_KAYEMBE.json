@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "lineage",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -73,6 +73,10 @@
     {
       "fieldPath": "homonyms",
       "reason": "la recherche web combinant « Kayembe », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de le rapport « Scramble for the Congo: Anatomy of an Ugly War » et son annexe prosopographique sur les forces armées congolaises, n'ont pas établi de lignée homonyme d'origine distincte ni d'autre homonyme documentable."
+    },
+    {
+      "fieldPath": "nameSystem",
+      "reason": "Kayembe est un nom de famille : aucune source consultée n'en fait un nom de clan. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que Kayembe se transmet de parent à enfant. La fiche garde donc la case des noms de clan, la plus proche, avec la lignée pour unité, sans dire que Kayembe est un clan."
     },
     {
       "fieldPath": "transmissionMode",

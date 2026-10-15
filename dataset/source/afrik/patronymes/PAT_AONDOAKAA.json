@@ -6,7 +6,7 @@
   },
   "id": "PAT_AONDOAKAA",
   "nameMain": "Aondoakaa",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Aondoakaa",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -87,12 +87,12 @@
       "reason": "Les recherches « Aondoakaa homonym etymology » et « Aondoakaa surname origin other language » n'ont pas établi une graphie identique d'origine distincte."
     },
     {
-      "fieldPath": "transmissionMode",
-      "reason": "La notice gouvernementale atteste un porteur, mais les recherches « Aondoakaa surname inheritance Tiv » n'ont livré aucune règle de transmission."
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom de personne du Nigeria, qui commence par Aondo, « Dieu » en tiv. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant. La fiche reste donc parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
-      "fieldPath": "designatedSocialUnit",
-      "reason": "Les sources consultées ne permettent pas de déterminer si Aondoakaa désigne historiquement un lignage, un clan ou une autre unité sociale."
+      "fieldPath": "transmissionMode",
+      "reason": "La notice gouvernementale atteste un porteur, mais les recherches « Aondoakaa surname inheritance Tiv » n'ont livré aucune règle de transmission."
     }
   ],
   "nameHistory": {

@@ -25,7 +25,11 @@ function directChildren(container: HTMLElement): Element[] {
 function isChapterOrBand(element: Element): boolean {
   return (
     element.classList.contains("afh-parchment-section") ||
-    element.classList.contains("afh-amend-band")
+    element.classList.contains("afh-amend-band") ||
+    // « Les sources parlent » and the closing band stand on their own ground
+    // on the approved boards (briefs 2 to 5, docs/design/mockups/site/).
+    element.hasAttribute("data-name-sources") ||
+    element.hasAttribute("data-name-closing")
   );
 }
 

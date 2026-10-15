@@ -231,6 +231,20 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     sourceRefs: ["afrik-naming-taxonomy"],
   },
   {
+    id: "nom-de-famille-hereditaire",
+    fr: "Nom de famille héréditaire",
+    en: "Hereditary family name",
+    family: "objet",
+    definition:
+      "Un nom que les enfants reçoivent de leurs parents, et qui n’est ni un nom de clan, ni une nisba, ni un nom de louange. Il était d’abord un prénom, un titre ou le nom du père, puis il est devenu le nom de toute une famille.",
+    corpusExample:
+      "Les noms maghrébins en Ben ou en Bou, comme Benali ou Bouzid, en font partie.",
+    corpusPresence: "instantiated",
+    seeAlso: ["nisba", "jamu", "anthroponyme"],
+    chapterRef: "la-personne",
+    sourceRefs: ["afrik-naming-taxonomy"],
+  },
+  {
     id: "nom-totemique",
     fr: "Nom totémique clanique",
     en: "Totemic clan name",

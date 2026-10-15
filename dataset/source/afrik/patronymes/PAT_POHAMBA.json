@@ -6,7 +6,7 @@
   },
   "id": "PAT_POHAMBA",
   "nameMain": "Pohamba",
-  "nameSystem": "clan_name",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Pohamba",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -57,10 +57,6 @@
     {
       "fieldPath": "origin",
       "reason": "la recherche web et bibliographique combinant « Pohamba », « Ovambo », « Namibia », « surname », « personal name », « onomastics », « etymology », « clan », « transmission », « alliance », « caste », « homonym » et « obituary », les travaux de Saarelma-Maunumaa sur les noms ambo, ainsi que la page Forebears dédiée n'ont livré aucune tradition attribuée, chronique ou étude linguistique propre à ce nom qui en établirait l'origine ; les rapprochements fondés sur la seule ressemblance ou la seule géographie ont été écartés."
-    },
-    {
-      "fieldPath": "nameSystem",
-      "reason": "la recherche web et bibliographique combinant « Pohamba », « Ovambo », « Namibia », « surname », « personal name », « onomastics », « etymology », « clan », « transmission », « alliance », « caste », « homonym » et « obituary », les travaux de Saarelma-Maunumaa sur les noms ambo, ainsi que la page Forebears dédiée n'ont pas établi que la catégorie de système nominal portée par la fiche provisoire décrive ce nom lui-même ; elle reste une hypothèse de classement et n'est pas transformée en fait."
     },
     {
       "fieldPath": "alliances",

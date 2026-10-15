@@ -2,6 +2,18 @@
 
 ## Acceptance and integration status
 
+**1.8.0-proposition, 15 October 2026, accepted by the operator the same day, with the designer's recommendations.** The document card (the quoted passage framed sharp and underlined, the rest of the page out of focus) and three teaching cards: the name-making formula, the side-by-side forms and the week table. See « Renderer integration of 1.8.0 ».
+
+**1.7.0-proposition, 15 October 2026, accepted by the operator the same day, with the designer's recommendations.** The long series video: chapters on screen, readings, figures, a quoted person, the signed position, two invitations and the next episode on the ending. See « Renderer integration of 1.7.0 ».
+
+**1.6.0-proposition, 15 October 2026, accepted by the operator the same day, with the designer's recommendations.** The project's signature line « Connaître nos noms, décoloniser leur emploi, nous nommer nous-mêmes. » ends every carousel and every series video, after the series' fixed closing; it retires the closing slogan (choice 2) and takes « L'Afrique à travers ses noms » off the closing card. See « Renderer integration of 1.6.0 ».
+
+**1.5.0-proposition, 15 October 2026, accepted by the operator the same day.** A map sequence in the series video: areas and names enter on the word that says them, and consecutive map cards share one map. See « Renderer integration of 1.5.0 ».
+
+**1.4.1-proposition, 14 October 2026, accepted by the operator the same day.** In the series video, map cards are drawn on satellite imagery by the satellite video engine; atlas cards stay on the carousel. Nothing else changes. See « Renderer integration of 1.4.1 ».
+
+**1.4.0-proposition, 14 October 2026, accepted by the operator the same day.** It replaces only the series video's layout B of 1.3.0 by a full-screen layout (Series, « Vidéo de série »), adds eight `on-image-*` tokens for the video and changes no card. See « Renderer integration of 1.4.0 ».
+
 **1.2.0-proposition, 12 October 2026.** The operator accepted 1.2.0-proposition
 on 12 October 2026, recorded in `version.json`. It adds the historical atlas map
 (approximate zones, regional keys, the 1914 partition with named territories,
@@ -78,6 +90,7 @@ One JSON object per card. Every text field accepts `*mot*` for the accent word; 
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `id`              | string                                                                                                                                                                                | all                                                            | stable identifier, also the reference image name                                                                                                               |
 | `type`            | `opener`, `explanation`, `document`, `dated`, `map`, `closing`                                                                                                                        | all                                                            |                                                                                                                                                                |
+| `series`          | `{id, episode}` or `{name, episode}`                                                                                                                                                  | all (1.3.0)                                                    | series band; `id` among `pays`, `nom-recu`, `nom-famille`, `mots`, `frontieres`, `afrique-tout`, `villes`; panel limit 828 px                                  |
 | `theme`           | `nuit` (default), `parchemin`                                                                                                                                                         | all                                                            | one theme per carousel                                                                                                                                         |
 | `folio`           | string                                                                                                                                                                                | all                                                            | « 03/08 »                                                                                                                                                      |
 | `kicker`          | string                                                                                                                                                                                | all                                                            | accent, no forced capitals                                                                                                                                     |
@@ -212,6 +225,272 @@ the steps below are what was done.
    warnings, and that the alternative text covers zones, keys, territories and
    the period marker (`EthniCards.altText` now describes them).
 
+## Renderer integration of 1.3.0
+
+The operator accepted 1.3.0-proposition on 14 October 2026 and chose video layout **B** (decision 4). Layout A is not to be implemented; its boards stay in the `Vidéo` group as the record of the choice.
+
+**New fields.** `series: {id, episode}` (or `{name, episode}`) on any card; `EthniCards.SERIES`, `EthniCards.seriesOf`, `EthniCards.BAND_H` (72) and `EthniCards.PANEL_MAX_SERIES` (828) in the engine; the mount option `context: 'video'`, which leaves out the « Faites défiler » cue. The fit report adds `report.panelMax` and, on a series card, `report.series: {text, lines, right}`.
+
+**New refusals.** A series card whose panel exceeds 828 px; a band on two lines; a map text, marker, key, callout or inset within 12 px of the band; a series card whose photograph's focal point falls under the band; an unknown series `id` (the engine throws).
+
+**New references.** The 49 model cards `serie-<series>-NN` and the two band-over-map samples `serie-atlas-1880` and `serie-atlas-1914-parchemin`, 51 in all, in the `References` group; the images they use are in `assets/Series/` (8 verified pictures from the site's credited library, 34 « image à trouver » slots).
+
+**Existing references that change: none.** The 37 cards without `series` were rendered again with 1.3.0 and compared with the 1.2.0 references: identical pixel for pixel. The 38th, `overflow`, is drawn in diagnostic mode and unchanged.
+
+**Video.** `handoff/video-board.html` renders one frame of the series video in layout A or B; it is a design board, not the video renderer. The video belongs to `social/video` (Vidéo carte 0.4.0's chunks, highlight, reading rule and voice timing), in layout B: frame 1080 × 1920, band, video card (Series, « Vidéo de série », layout B), subtitles, the 300 ms cross-fade, the 100 to 104 % zoom and the ending « série » (Series, « Vidéo de série »).
+
+## Renderer integration of 1.4.0
+
+**Status: accepted on 14 October 2026,** with the four decisions recorded in Series, « Vidéo de série ». It replaces the series video's layout B of 1.3.0 and nothing else. **The card renderer is unchanged:** a card without video context renders as in 1.3.0. The eight new `on-image-*` tokens are used by the video only; seven sample cards (`serie-pays-01`, `serie-pays-04`, `serie-pays-07`, `serie-nom-recu-01`, `serie-frontieres-02`, `seq-1`, `map-fula`) were rendered with the 1.3.0 and the 1.4.0 `tokens.json` in Claude Design's Chromium: identical pixel for pixel. Rerun that comparison on all 89 references on the pinned browser.
+
+**Version.** `EthniCards.version`, `version.json` and `handoff/cards.sample.json` say `1.4.0-proposition`; nothing else in `bundle.js` or `bundle.css` changes. The card renderer's `reference-manifest.json` takes the new `designVersion` with the same 89 reference hashes.
+
+**Where it goes.** `social/video`: `series.mjs` (`LAYOUT`, `checkSeriesLayout`), `series-page.mjs` (the layout B styles and `buildLayer`), `series-render.mjs`. `handoff/video-board-full.html` is the visual reference, not the engine; it draws one frame from the sample cards (`?card=…&next=…&fade=…&sub=…&lit=…&zoom=…&guides=1`). The schedule, voice, chunks, `pageOnline` and encoding of 1.3.0 stay. The design's `version.json` says `"videoLayout": "full"`; the engine checks it instead of `"B"`.
+
+**Bands** (frame pixels, every text between x 60 and 1020):
+
+| Band        | y            | Check                                                    |
+| ----------- | ------------ | -------------------------------------------------------- |
+| Demo tape   | 178 to 226   | right edge on x 1020; mockups only                       |
+| Series band | 250 to 290   | one line                                                 |
+| Head        | 318 to 700   | title three lines at most; the ending's block 318 to 820 |
+| Clear image | 700 to 1300  | no text; the focal point aimed at (540, 1000)            |
+| Subtitle    | 1316 to 1452 | centred on 540, lines at most 900 px (0.4.0)             |
+| Foot        | 1652 to 1786 | bottom aligned on 1786                                   |
+| Signature   | 1836 to 1884 | content cards from x 60; ending centred, 1828 to 1884    |
+
+**Legibility rule.** Every text on the image: fill from the `on-image-*` tokens (the same in Nuit and Parchemin), `-webkit-text-stroke` in `on-image-stroke` with `paint-order: stroke fill`, outline width by size (subtitle 9 px, opener title 13, title and slogan 10, date 14, name employed 8, every text from 22 to 34 px 4), shadow `on-image-shadow` 0 2px 14px from 40 px up, 0 1px 8px below. The lit word: background `on-image-accent`, text `on-image-on-accent`, no outline, radius 6, 6 px side shadows. The page draws nothing with a background over the image except the lit word, the pill's outline rings, the « image à trouver » slot and the demo tape: no veil, scrim, gradient or panel.
+
+**Long-date rule.** The date takes the largest of 176/156, 148/136, 124/118, 104/100 that holds on one line in 960 px, measured on the drawn glyphs; else two balanced lines at 104/100; day, month and year joined by no-break spaces; a date that needs a third line is refused.
+
+**New fields.** `image.video: { src, focus }` (a video framing for an image too wide or whose focal point is out of reach); `map.videoView: [x, y, w, h]` (the map's 9:16 view, map units); `image.find` (what an « image à trouver » slot must show, drawn as text on the video frame).
+
+**What the engine checks** (refuse, or report with `--diagnose`):
+
+1. Every text box inside x 60 to 1020 and inside its band (table above), on the cover, the last frame and every frame where a chunk is fully drawn.
+2. Band on one line; head at most three title lines; date per the long-date rule.
+3. Image scale at most 1.5 frame pixels per source pixel at 104 % (« Image trop petite pour la vidéo »); `keptWidth` reported; a focal point that cannot reach y 700 reported.
+4. Map card: the subject's box (highlight or areas) below y 724 and above the foot (« Le sujet de la carte passe sous la tête »); the view inside the base map's drawn extent.
+5. No two cards' heads visible together: during a change the outgoing text fades out over frames 1 to 4 and the incoming text fades in over frames 5 to 9 of the 9-frame change, while the images cross-fade over all 9; band and signature drawn once.
+6. French spacing applied to every text, subtitles included.
+7. A final video refuses a slot, as in 1.3.0.
+
+**Boards** (`Video` group, `video-14-*`; full size 1080 × 1920 and 430 px): cover, subtitle with the lit word, the card change at 100 and 200 ms, a dated card with a long date, a map card, a Parchemin card, the « image à trouver » slot in both themes, both endings, the guides, the feed at 430 px, legibility on the hardest images, the Parchemin inks compared, the long dates, the framing of wide images, and a map refused.
+
+## Renderer integration of 1.4.1
+
+**Status: accepted by the operator on 14 October 2026.** It changes one rule of 1.4.0, how a map card is drawn in the series video (Series, « Map cards on satellite imagery »), and nothing else: the frame, band, head, subtitles, foot, legibility rule, long dates, card change, endings and every carousel card stay. The card renderer and the flat base maps are unchanged. `EthniCards.version`, `version.json` and `handoff/cards.sample.json` move to `1.4.1-proposition` at acceptance, with the 89 reference hashes unchanged.
+
+**Integrated on 14 October 2026** in `social/video` ([evidence](proposals/1.4.1-proposition/README.md)). Two precisions taken by the integration, within the accepted rules: the view is computed in `series-map.mjs` (`seriesMapView`), which `series.mjs` and `series-render.mjs` use; and the scale cap is taken at the end of the card's zoom, as check 2 below requires, so the narrowest view is 1388 km across at 100 % and 1336 km at 104 % with the verified file. The flat shader and the overlays are exported by `page.mjs` (`FLAT_FRAG`, `OVERLAY_SCRIPT`) and shared, not copied; the satellite video's frames are pixel-identical before and after.
+
+**Where it goes.** `social/video/series.mjs` computes the map card's view as a pure function of the card and its base map (`seriesMapView`); `series-page.mjs` draws it with the satellite video's own shader and overlay functions from `page.mjs` (reuse them, do not fork them); `series-render.mjs` prepares the imagery with `render.mjs`'s `prepareImagery` (the verified Blue Marble file, from `ETHNIAFRICA_VIDEO_ASSETS`, outside git) and reads Natural Earth 1:50m admin 0 as `areas.mjs` pins it. `handoff/video-board-sat.js` and the board page's `?sat=` mode are the visual reference, not the engine; the views of the boards were computed by the script kept with the design package.
+
+**Framing.** Target: the middle of the subject's longitude and latitude box (highlight outlines, or the card's areas converted). Frame position of the target: (540, 1010). Radius (pixels per Earth radius): the largest that fits the subject's box within 840 × 520 px, capped by the scale limit, `R ≤ 1080 ÷ (minSpanKm ÷ 6371)` with `minSpanKm = 720 × source km a pixel` (1336 km for the verified 21600 px file). Flat style only (orthographic, no tilt); the zoom 100 to 104 % scales the radius around (540, 1010).
+
+**Grade.** `grade = 1` (recede) on every frame; no vignette term and no ending dim in the series frame.
+
+**Card units to longitude and latitude.** From the base map's `meta.projection` (« équirectangulaire, k px par degré, origine λ0 φ0 »): `lon = λ0 + x ÷ k`, `lat = φ0 − y ÷ k`, applied to every point of an area path (control points included) and of a label or place.
+
+**Overlays.** `page.mjs`'s `areaFill`, `areaEdge` and `border` with its inks a, b, c and hatch patterns; layer order fills, borders, edges. Highlight: Natural Earth outline as a certain area in the card's `tone`. Borders: the edges shared by two Natural Earth countries within the frame's bounds (`a.boundary ∩ b.boundary`), never a coastline. Names: `page.mjs`'s region, area-label, place and water styles on their halos, placed by `placeLabels`.
+
+**Credits.** Foot: `Source :` + the card caption's source minus its « fond … » clause; then « Imagerie : NASA Earth Observatory ; frontières : Natural Earth, domaine public » in the credit style (`IMAGERY[…].credit` for another verified source).
+
+**What the engine checks** (refuse, or report with `--diagnose`):
+
+1. The subject's box between y 724 and the foot's top, and its long side at least 120 px (« Sujet trop petit pour l'imagerie vérifiée »).
+2. The imagery verified (SHA-256) and the frame at least `minSpanKm` wide: no source pixel enlarged past 1.5, zoom included.
+3. At most six names on screen, every name box between y 724 and 1296 and x 60 and 1020, no two overlapping.
+4. Every text box in its band, a map card's foot between y 1600 and 1786 with its key in two columns from three items.
+5. An atlas card (`map.categorical`, `map.atlas`, zones, keys or a period marker) refused: « Carte d'atlas : carrousel seulement ».
+6. No vignette, scrim or veil over the imagery (the render tests' background check).
+
+**Withdrawn from 1.4.0:** `map.videoView` on the flat base map, the subject at (540, 1000) on the card's map, the refusal « Le sujet de la carte passe sous la tête » for a short base map, and the 9:16 base map per region.
+
+**Boards** (`Video` group, `video-141-*`): `serie-nom-famille-02` (Côte d'Ivoire highlighted), `serie-frontieres-02` (two areas across a border, Parchemin, drawn at the scale limit), the change from a photograph to a map at 100 and 200 ms, the guides, the Parchemin and the flat carousel cards beside their video frames, the atlas card kept on the carousel, and the 430 px strip.
+
+## Renderer integration of 1.5.0
+
+**Status: accepted by the operator on 15 October 2026, with the designer's recommendations** (Series, « Map sequence », decisions 1 to 4). The Amazigh area of the test episode is built from its own cited source before the episode is produced. It adds the map sequence to the series video (Series, « Map sequence »); a single map card without `map.sequence` stays exactly as in 1.4.1, and no carousel card changes.
+
+**Card data.**
+
+```json
+"map": {
+  "sequence": "touareg",
+  "areas": [
+    { "file": "touareg-imuhagh.geojson", "name": "Imuhagh", "lang": "tamahaq", "ink": "a", "say": "Imuhagh", "langSay": "tamahaq" },
+    { "file": "touareg-imajeghen.geojson", "name": "Imajeghen", "lang": "tamajaq", "ink": "b", "say": "Imajeghen", "langSay": "tamajaq" }
+  ],
+  "caption": { "source": "fiche EthniAfrica Touareg ; aires approximatives d'après Natural Earth et al-Idrîsî (1154)" }
+}
+```
+
+`say` and `langSay` name a unit of the card's own chunks (`chunkUnits`), first occurrence; a card later in the sequence lists the areas its view frames, and may set `say` only for those entering on it. The area files are those of `social/video/data/areas/`, with their `kind`, `source` and `licence`; the engine reads no inline path for a sequence.
+
+**Timing** (frames at 30 fps, from the voice's words JSON). An area's entry starts at the start of its `say` word, or 21 frames (700 ms) after the previous entry in the sequence if that is later; its opacity is `enter((f − start) / 21)` (the 0.4.0 easing). Its name starts when the area reaches 0.6 and takes 9 frames (300 ms); its key item follows the area. A language starts at its `langSay` word and takes 9 frames. Nothing that has entered leaves before the sequence ends, except an area the next view does not frame.
+
+**Inks.** `page.mjs`'s `INK` gains `d: "#c4a8f2"`, with its hatch patterns at 45° and 135° and its legend swatches, generated as for a, b and c; the satellite video's frames do not change. On imagery, every coloured stroke keeps its dark keyline (`areaFill`, `areaEdge`).
+
+**Labels.** Placed by `placeLabels` in the map band (y 724 to 1296, x 60 to 1020) with a `stack` style: one box for name and language, 32/38 then 26/30, both outlined (`-webkit-text-stroke` 6 px and 5 px, `paint-order: stroke fill`). The box is reserved at full height from the name's entry, so the language never moves it. A label with no room goes to the key as text (0.4.0).
+
+**Continuity.** Consecutive cards with the same `map.sequence` share one map layer: the page draws the imagery once per view and never cross-fades it between them; only the head and foot layers change, with the 1.4.0 timing. The zoom is `1 + 0.04 × (f − sequence start) / (sequence end − sequence start)`. A card of the sequence that comes back after another card is entered by the ordinary 9-frame cross-fade, its overlays at their end-of-sequence state.
+
+**Change of view.** When a card's view differs from the previous card's, the camera moves during the change: 27 frames from the outgoing card's change start, longitude and latitude linear, radius log-linear, eased (`enter`), flat, orthographic. The imagery is redrawn each frame of the move (the only frames where it is). Names fade out over the first 5 frames and back over the 5 after the move; an area outside the new view fades out over the move.
+
+**Credits.** As 1.4.1, the source line from the caption; then « Imagerie : NASA Earth Observatory ; contours : Natural Earth, domaine public », with « frontières » instead of « contours » when the map draws borders.
+
+**What the engine checks** (refuse, or report with `--diagnose`):
+
+1. Every sequence area is a file of `social/video/data/areas/`; a sequence with an inline area path is refused.
+2. Every `say` and `langSay` is a unit of its card's chunks; one not found is refused (« Mot de la carte absent du sous-titre »).
+3. At most four inks in a sequence (« Cinq noms en couleur : quatre au plus »), at most six labels on screen, a stack counting one.
+4. Each view: subject between y 724 and the foot, the scale limit, every label in the map band.
+5. Between two cards of one sequence, the imagery is not cross-faded: away from overlays and text, the pixels of the last frame of one card and the first of the next are equal unless the view changes.
+6. A camera move only happens during a card change, in 27 frames, flat.
+7. The 1.4.1 checks hold for every map card.
+
+**Boards** (`Video` group, `video-150-*`): the four beats (`carte-1` to `carte-4`), the entries on the word, the change of view, the return after a photograph, the label rule, the inks, the timing, the 430 px strip. Drawn by a scratch copy of the 1.4.1 engine page, patched for per-area opacity, stacked labels and the fourth ink; the script is kept with the design package.
+
+## Renderer integration of 1.6.0
+
+**Status: accepted by the operator on 15 October 2026, with the designer's recommendations** (Series, « The signature line », decisions 1 to 4). It comes after the 1.5.0 integration (branch `feat/social-series-map-sequence`): `series.md` on `recette` does not yet carry the 1.5.0 text, so 1.5.0 is deposited first, then 1.6.0 over it. The rules are in Series, « The signature line ».
+
+**One constant.** The line is a constant of the renderer, never a card field, so no card can change it: `EthniCards.signatureLine` (« Connaître nos noms, décoloniser leur emploi, nous nommer nous-mêmes. ») and `EthniCards.signatureLines`, its three printed lines. The series video reads the same constant from the bundle it already loads; it keeps no copy of its own.
+
+**Carousel** (`components/bundle.js`, `components/bundle.css`).
+
+- On `type: "closing"`, the panel draws the line where the title was: `<div class="ec-sigline">` with one `<span>` per printed line, each `display: block; white-space: nowrap`. Fraunces 600 56/64, `ink`, centred, 28 px above the invitation.
+- The top of the line sits at y 760 on every closing card: after measuring, an empty block between the pill and the credit takes the difference, settled to the pixel. A line that would sit lower than 760 (an invitation or a credit longer than two lines) is refused (« Ligne de signature poussée hors de sa place »).
+- A closing card with `title` is refused (« Titre sur une carte de clôture : la ligne de signature remplace la phrase de clôture »). The default title of the closing card is removed.
+- The centred signature row draws no motto: `TAGLINE` leaves the closing card.
+- `tokens.json` records the style `signature-line` (Fraunces 600 56/64) in the « Signature » group; `display-closing` and `tagline` are marked retired. Nothing in the renderer reads the type groups, so no card changes through them; remove the two retired styles once nothing in the repository refers to them.
+- `altText` ends with `signatureLine` on a closing card and no longer reads its title.
+- The sample: the ten closing cards (`seq-9`, `seq-9-parchemin`, `chr-5` and the seven series closings) lose their `title`. Their ten references are redrawn and accepted again with 1.6.0; the 79 other references must stay pixel-identical, alternative texts included.
+
+**Series video** (`social/video`).
+
+- The ending layer draws the line where the slogan was, `vf-sigline`: Fraunces 600 56/64, `on-image-ink`, 8 px outline, the large shadow, top at y 318. `LAYOUT.ending` stays 318 to 820.
+- The voice says the line (decision 1): the closing card's chunks are the line in three chunks, « Connaître nos noms, », « décoloniser leur emploi, », « nous nommer nous-mêmes. », then the invitation's two chunks (the existing check). None of the closing card's chunks is shown: the subtitle band is empty from the ending's first frame.
+- The hold is otherwise unchanged: 75 frames, or the voice's end plus 0.5 s.
+
+**What the renderer checks** (refuse, or report with `--diagnose`):
+
+1. **Present.** Every closing card and every video ending draws the line.
+2. **Identical.** Its text, lines joined by one space, equals the constant, character for character; three line boxes of 64 px each, so no line wraps and « nous-mêmes » is whole.
+3. **After the fixed closing.** A carousel's closing card has no title (the fixed closing is on an earlier card); a video's ending is its last card and the line is its first text under the band.
+4. **In its band.** On the card: top at y 760 within 0.5 px, inside x 72 to 1008. In the video: inside y 318 to 820 and x 60 to 1020.
+5. **Nothing over it.** The boxes of the line, the invitation, the pill, the credit and the signature row do not overlap; a kicker or a recap ends above y 760.
+6. **Alternative text.** It ends with the constant, word for word.
+7. **Spoken line.** The closing card's chunks start with the line's three chunks, word for word (« La ligne de signature n'est pas dite mot pour mot »), and the subtitle band shows nothing during the ending.
+
+**No U+2011.** The brief suggested a non-breaking hyphen in « nous-mêmes » if the browser would break there. Fraunces, Nunito Sans and Anton have no glyph for U+2011, so the browser would draw it from a fallback face. The line keeps U+002D, and each printed line is set without wrapping: it cannot break at the hyphen.
+
+**Boards and prototype.** `Lecture` group `cloture-160-*`, `Video` group `video-160-*` (Series, « Boards (1.6.0) »). They were drawn by a scratch copy of the accepted `bundle.js` and `handoff/video-board-full.html`, patched as described here; the patch is kept with the design package. Since the acceptance the bundle and `handoff/video-board-full.html` on this page carry the patch: the ten closing cards changed, the 79 others are pixel-identical to their 1.5.0 renders, alternative texts included.
+
+## Renderer integration of 1.7.0
+
+**Status: accepted by the operator on 15 October 2026, with the designer's recommendations** (Series, « Vidéo longue et chapitres », decisions 1 to 5). It comes after 1.5.0 and 1.6.0 are in `recette` (1.6.0: PR #1784). The rules are in Series, « Vidéo longue et chapitres ».
+
+**Sequence data.**
+
+```json
+"chapters": [
+  { "title": "Un continent entier" },
+  { "title": "D'où vient le mot" }
+],
+"reminder": "afrique-tout-01-rappel",
+"ending": { "search": "Afrique", "pageOnline": true, "next": "le pays des Noirs" }
+```
+
+A chapter card is a card of the sequence, `{ "type": "chapter", "chapter": 2, "image": … }`; the engine prints its number, « sur N » and the title from `chapters`. `ending.general: true` replaces `ending.search` for the general invitation. `reminder` names the card that carries the hook reminder.
+
+**Card fields** (explanation cards of the video):
+
+- `readings: { items: [{ label?, text, by?, say }] }`, five items at most, each `text` two lines at most at 40 px in 960 px.
+- `figures: { items: [{ pre?, value, unit?, label, say }] }`, three or four.
+- `attribution: { name, role, say }`.
+- `signed: true`.
+- `sourceLabel`: « Source » (default), « Sources » or « Hypothèses ».
+
+`say` names a unit of the card's own chunks (`chunkUnits`), first occurrence, as 1.5.0's `say`.
+
+**What the engine draws.**
+
+1. **The chapter card**: the head only. Number in Anton 176/140, `on-image-accent`; « sur N » in Nunito Sans 800 30/36, `on-image-muted`, on its baseline; the title in Anton 116/112, two lines at most, at most 900 px wide. No subtitle and no source; the image's credit in the foot.
+2. **The chapter kicker**, « n · Titre », on every content card of a chapter, composed from `chapters`; a dated card keeps its marker label and a signed card shows « Nous pensons ». The kicker in the card data is not changed, so the carousel keeps it.
+3. **Readings and figures** under the title, inside the head's flow, ending above y 1290. Items enter on their `say` word over 9 frames (`enter`), their place kept from the card's first frame.
+4. **The attribution**, bottom at y 1296 from x 60, entering on its `say` word over 9 frames, kept to the end of the card.
+5. **The signed card**: kicker « Nous pensons », foot « Position d'EthniAfrica », no source line.
+6. **The ending**: the 1.6.0 block, then « Prochain épisode : [titre] » 30 px under the pill, Nunito Sans 800 and 700 32/40, when `ending.next` is set and the block still ends by y 820. Otherwise the engine inserts a card before the ending: the kicker « Prochain épisode » and the title in Anton, on the ending's image, held at least the title's reading time at 21 characters a second plus 0.3 s.
+7. **Hyphenated words** in titles, kickers, items and the invitation are set without wrapping.
+8. **Runs of one image**: when consecutive cards share an image file and framing, the change cross-fades the heads only, and one zoom of 100 to 104 % runs over the whole run.
+
+**Timing.** A chapter card has no chunks. It starts when the previous chapter's last chunk has gone and ends where the next card's 300 ms change begins, 150 ms before that card's first chunk. Its full-opacity span must last at least max(36 frames, ceil((characters of the title ÷ 21 + 0.3) × 30)); a shorter silence is refused with the milliseconds missing. The ending's hold is unchanged (1.6.0).
+
+**What the engine checks** (refuse, or report with `--diagnose`):
+
+1. A video longer than 90 s has 3 to 7 chapters, each at least 15 s (« Vidéo longue sans chapitres »); a chaptered video outside 2 to 4 min, or a short one outside 35 to 75 s, loads with a warning.
+2. Chapter titles: one to two lines, inside x 60 to 960 and y 318 to 700; the silence check above.
+3. Every content card of a chapter shows its chapter kicker, except the two exceptions.
+4. `readings` and `figures`: every `say` is a unit of the card's chunks; the items end above y 1290; the card holds at least the time to read its items at 21 characters a second.
+5. The attribution's `say` is found; its box stays above y 1300 and clear of the subtitle band.
+6. A signed card has no source; a sourced card has no « Nous pensons ». A video without a signed card loads with a warning (decision 4).
+7. The reminder card shows the opener's image and framing and comes between 75 and 120 s (warning outside).
+8. The invitation is the named or the general form, word for word, and its two chunks close the ending's chunks after the signature line's three (1.6.0).
+9. `ending.next` holds on one line; the ending block ends by y 820, or the next episode moves to its own card.
+10. A source text that starts with « Mot : » is refused (« Le champ source porte déjà son étiquette »).
+11. No line breaks inside a hyphenated word.
+12. Everything accepted before still holds: bands, the 300 ms change, map cards and sequences, the signature line.
+
+**Length it recommends**: 35 to 75 s for a short video, 2 to 4 min for a long one, and chapters from 90 s.
+
+**Boards and prototype.** `Video` group `video-170-*` (Series, « Boards (1.7.0) »), drawn by a scratch copy of `handoff/video-board-full.html` patched as described here; since the acceptance `handoff/video-board-full.html` on this page carries the patch.
+
+## Renderer integration of 1.8.0
+
+**Status: accepted by the operator on 15 October 2026, with the designer's recommendations** (Series, « Document and teaching cards », decisions 1 to 5). Integration order: 1.6.0 (PR #1784), then 1.7.0, then 1.8.0, each in `recette` before the next. The document card comes first: the « tribu » video needs it by about 22 October. The rules are in Series, « Document and teaching cards ».
+
+**Card fields.**
+
+```json
+"image": {
+  "src": "page-academie-1835.jpg",
+  "document": {
+    "passage": [125, 712, 680, 125],
+    "marks": [[722, 759, 70, 28], [130, 796, 300, 30]],
+    "say": "sauvages"
+  }
+}
+```
+
+- `image.document`: `passage` and `marks` in source pixels; `say`, the unit of the card's chunks on which the underline enters; for a web capture, `pad` (pixels added above the page) and `padColor` (the page's own background).
+- `formula: { steps: [{ say, day?, rows: [{ label, parts: [{ text, role }] }], note? }] }`, `role` one of `name`, `day` (accent), `op` (« + », « = », « → »), `dropped` (30 %).
+- `sbs: { heads: [a, b], rows: [[{ name, day }, { name, day }]], daysSay, note?, noteSay }`.
+- `week: { heads, rows: [[jour, [mot, garçon, fille], [mot, garçon, fille]]] }`.
+
+**What the engine draws.**
+
+1. **Document framing.** Scale s = max(cover, min(1.5, 960 ÷ passage width)); the passage's centre to (540, 1000); the page clamped to the frame, except that the frame may pass the page's edge by up to 400 px, on the frame's dark ground.
+2. **Out of focus.** The page is drawn twice: blurred by 7 px over the whole frame, and sharp under a mask that is opaque from 48 px above the passage to 48 px below it and fades to nothing over 90 px. The slow zoom applies to both, around (540, 1000).
+3. **The underline.** 7 px in `on-image-accent` with a 2 px keyline of `on-image-stroke` at 85 %, under each mark, 5 px below it, drawn in the sharp layer so it zooms with the page; it fades in over 9 frames from the start of its `say` word.
+4. **Foot.** One « Source : » line; no credit line on a document card.
+5. **Formula.** In the clear zone from y 740, centred: the day line, then each row's label and line; each line at the largest of 120, 104 and 88 px that holds in 960 px. Each step enters on its `say` word in 9 frames; the previous step cross-fades out in place over the same 9 frames.
+6. **Side by side** and **week table** under the title, inside the head's flow, ending above y 1290; rows enter on their words, the days on `daysSay`, their place kept from the card's first frame.
+
+**What the engine checks** (refuse, or report with `--diagnose`):
+
+1. The passage lands inside y 700 to 1300 and x 60 to 1020; the scale is at most 1.5 and at least the cover scale; the page's edge shows by 400 px at most (« Passage hors de l'image dégagée »). Amended by the operator on 16 October 2026: before this check, `documentFrame` lowers the scale, in steps of 0.0005 and never under the scale that covers the frame's width with at most 400 px of edge at the top and the bottom, until the passage fits inside x 60 to 1020; the y range and the 1.5 limit are unchanged. A passage that ends near the page's edge does not fit at any scale and is still refused here.
+2. Every mark lies inside the passage.
+3. Every `say` is a unit of the card's chunks.
+4. A document card has a `source` and no `credit`; a web capture's source starts with « Capture : » and names the capture's date.
+5. The blur never covers the passage: the sharp band contains the passage's box.
+6. Formula: every line holds in 960 px at 88 px or more; « = » only between parts whose letters add up to the result (checked on the strings); the formula ends above y 1290.
+7. Side by side: two columns, two to three rows; the note, when present, holds on two lines.
+8. Week table: the card holds at least its reading time at 21 characters a second, else it must be split.
+9. Everything accepted before still holds: bands, the 300 ms change, the head inside y 318 to 700, the subtitle band, the 1.7.0 rules.
+
+**Boards and prototype.** `Video` group `video-180-*` (Series, « Boards (1.8.0) »), drawn by a scratch copy of `handoff/video-board-full.html` patched as described here; since the acceptance `handoff/video-board-full.html` on this page carries the patch.
+
 ## Required assets
 
 - Fonts: `fonts/Anton-Regular.ttf`, `fonts/NunitoSans.ttf`, `fonts/NotoSans-Variable.ttf`, `fonts/Fraunces.ttf`, `fonts/NotoSansEthiopic-Bold.ttf`, all under the SIL Open Font License 1.1.
@@ -239,7 +518,7 @@ the steps below are what was done.
 ## Choices left to the operator
 
 1. **Missing letters in Nunito Sans.** ɛ, ɔ, ɲ, ƙ, ɖ and ɣ come from Noto Sans inside the text, a slightly different drawing. Accept it, or keep such names in titles, terms and field names (Anton).
-2. **Closing slogan.** « Notre objectif : raconter l'origine des noms, avec des sources. » comes from the fetishism carousel. Keep it on every closing card, or write one per publication.
+2. **Closing slogan.** « Notre objectif : raconter l'origine des noms, avec des sources. » comes from the fetishism carousel. Keep it on every closing card, or write one per publication. _Answered by 1.6.0-proposition, accepted on 15 October 2026: the signature line takes its place and the slogan is retired._
 3. **Image on every card.** The `NameForms` pair example has no image yet; the operator's rule of 30 September asks for one on every card.
 4. **Logo licence.** The repository does not record where the Africa icon of the logo comes from or under which licence. Confirm before the first production under this system.
 5. **Anton's ʋ.** At title size Anton draws ʋ close to a v (see « Eʋegbe » on the `stress` card). Accept it, or set that name in the text face.
@@ -252,3 +531,47 @@ the steps below are what was done.
 - Afternoon review: the 1914 map names its territories (AOF, AEF, Congo belge…); present-day borders are dotted on the 1914 and independence maps; states, societies and cultures are drawn as approximate zones at one moment rather than numbered points, which read as towns; dates must be checked.
 - Decisions taken in this proposal, open to the operator's proof: the wording « Société sans roi » in the legend (the brief allows a change at proof); the « ° » mark for uncertain dates; the diamond for archaeological sites; the 1914 legend in three columns in the panel rather than a key over the sea; one frame for all point maps of a carousel.
 - Accepted by the operator on 12 October 2026 after the afternoon review (« c'est parfait »), with these decisions.
+
+## Commissioned on 13 October 2026 (1.3.0)
+
+- The operator's decisions of 13 October 2026, drawn as given: the band at the top of the card; 72 px taken from the panel (828 px), the image window keeping 450 px; the episode number in `accent`; the video's ending keeps « Cherchez [nom] sur EthniAfrica, lien en profil. », a deliberate exception to the 0.4.0 endings; an image on every model card.
+- Video layout chosen by the operator on 14 October 2026: B, the video's own card (decision 4).
+- Accepted by the operator on 14 October 2026, with these decisions.
+
+## Commissioned on 14 October 2026 (1.4.0)
+
+- The operator's decision of 14 October 2026, drawn as given: the series video's image fills the whole frame, with no shadow zone and no placement fitted to the networks' interface; only text sits on the image. Decision 4 (layout B) is withdrawn.
+- Brief: `proposals/1.4.0-proposition/claude-design-brief.md` on the repository branch `feat/social-series-video-b`.
+- Accepted by the operator on 14 October 2026, with the designer's recommendations on the four open questions (Series, « Vidéo de série »).
+
+## Commissioned on 14 October 2026 (1.4.1)
+
+- The operator's decision of 14 October 2026: in the series video, a map card is drawn by the satellite video engine on imagery; no flat 9:16 base map is built per region; one map grammar in video, the satellite video's.
+- Brief: `proposals/1.4.1-proposition/claude-design-brief.md` on `recette`.
+- Proposed and accepted on 14 October 2026.
+
+## Commissioned on 15 October 2026 (1.5.0)
+
+- The operator's request of 15 October 2026, for series 2, episode 1 (« Touareg »): the regions appear on the map as the voice names them, each in its colour; then the language names on the same regions; then, in the summary, the map returns with the names and languages.
+- Brief: `proposals/1.5.0-proposition/claude-design-brief.md`. The signature line brief, first filed under the same number, is renumbered 1.6.0 (`proposals/1.6.0-proposition/`).
+- Proposed and accepted on 15 October 2026, with the designer's recommendations.
+
+## Commissioned on 15 October 2026 (1.6.0)
+
+- The operator's decision of 15 October 2026: the signature line « Connaître nos noms, décoloniser leur emploi, nous nommer nous-mêmes. » ends every reel and every carousel, word for word, after the series' fixed closing, with the same look in the same place every time, and with no panel, veil or band to carry it.
+- Brief: `proposals/1.6.0-proposition/claude-design-brief.md` on `recette` (first numbered 1.5.0, renumbered on 15 October 2026 by PR #1776).
+- Proposed and accepted on 15 October 2026, with the designer's recommendations on the four questions.
+
+## Commissioned on 15 October 2026 (1.7.0)
+
+- The long series video with chapters, one brief in place of three drafts (« Afrique », series 6 episode 1; « Kouassi et Yao », series 3 episode 1; « tribu », series 4 episode 1). « Afrique » is the main test case; its result is needed by 18 October.
+- Settled by the operator: length follows the argument; chapters are required in long videos; a reminder of the hook between 1 min 15 and 2 min; each video carries part of the signed position; nothing darkens the image. Reading limit 21 characters a second.
+- Brief: `proposals/1.7.0-proposition/claude-design-brief.md` (draft PR #1781). The document card and the teaching cards are 1.8.0.
+- Proposed and accepted on 15 October 2026, with the designer's recommendations on the five questions.
+
+## Commissioned on 15 October 2026 (1.8.0)
+
+- The document card for « tribu » (series 4, episode 1, slot 27 October, needed by about 22 October), and the name-making formula, the side-by-side forms and the week table for « Kouassi et Yao » (series 3, episode 1).
+- Settled: the image fills the frame, only text sits on it, nothing is fitted to the networks' interface, nothing darkens the image; any departure is shown with its variant and left to the operator.
+- Brief: `proposals/1.8.0-proposition/claude-design-brief.md` (draft PR #1781).
+- Proposed and accepted on 15 October 2026, with the designer's recommendations on the five questions.

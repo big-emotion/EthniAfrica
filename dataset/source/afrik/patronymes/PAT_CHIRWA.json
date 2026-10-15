@@ -23,19 +23,13 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "lineage",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
     "linguisticReconstructions": []
   },
-  "peoples": [
-    {
-      "peopleId": "PPL_TUMBUKA",
-      "status": "supposed",
-      "sourceRefs": ["forebears-chirwa"]
-    }
-  ],
+  "peoples": [],
   "countries": [
     {
       "countryId": "ZWE",
@@ -72,6 +66,10 @@
   ],
   "gaps": [
     {
+      "fieldPath": "peoples",
+      "reason": "Le lien avec les Tumbuka ne reposait que sur la répartition géographique de Forebears, qui ne dit pas à quel peuple appartient le nom. Il est retiré. La seule personne nommée dans les sources lues, Yuraia Chatonda Chirwa, est dite tonga, mais cela ne suffit pas à rattacher le nom à ce peuple."
+    },
+    {
       "fieldPath": "origin",
       "reason": "la recherche web combinant « Chirwa », « Tumbuka », « Chewa », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de la page Forebears dédiée, n'ont livré ni tradition attribuable, ni chronique dédiée, ni reconstruction linguistique établissant l'origine de Chirwa. La glose communautaire non référencée et les seules attestations géographiques ne sont pas transformées en étymologie."
     },
@@ -90,6 +88,10 @@
     {
       "fieldPath": "homonyms",
       "reason": "la recherche web combinant « Chirwa », « Tumbuka », « Chewa », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de la page Forebears dédiée, n'ont pas établi de lignée homonyme d'origine distincte."
+    },
+    {
+      "fieldPath": "nameSystem",
+      "reason": "Chirwa est un nom de famille : aucune source consultée n'en fait un nom de clan. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que Chirwa se transmet de parent à enfant. La fiche garde donc la case des noms de clan, la plus proche, avec la lignée pour unité, sans dire que Chirwa est un clan."
     },
     {
       "fieldPath": "transmissionMode",

@@ -6,7 +6,7 @@
   },
   "id": "PAT_AMARA",
   "nameMain": "Amara",
-  "nameSystem": "nisba",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Amara",
@@ -107,10 +107,6 @@
     {
       "fieldPath": "bearers",
       "reason": "Les recherches biographiques exactes sur « Amara » dans les catalogues et répertoires consultés n'ont pas permis d'isoler un porteur décédé dont ce segment soit explicitement documenté dans la position anthroponymique pertinente. Les personnes vivantes repérées ont été exclues."
-    },
-    {
-      "fieldPath": "nameSystem",
-      "reason": "Les sources consultées décrivent la graphie « Amara » sans établir assez précisément le système dénominatif ; le classement comme nisba reste donc provisoire."
     },
     {
       "fieldPath": "transmissionMode",

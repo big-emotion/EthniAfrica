@@ -1,0 +1,191 @@
+import { describe, expect, it } from "vitest";
+
+import {
+  LINGALA_HISTORY,
+  PEUL_HISTORY,
+} from "@/lib/search/__fixtures__/nameTimelineFixtures";
+import {
+  deduceSilences,
+  firstSentence,
+  groupAccountsBySourceFamily,
+  nextStepTargets,
+  otherVoiceKinds,
+} from "@/lib/search/nameClosing";
+import { sourceKindFamily } from "@/lib/sources/sourceKindFamily";
+import { buildNameTimeline } from "@/lib/search/nameTimeline";
+import type { SearchResult } from "@/types/afrik-frontend";
+
+const peul = buildNameTimeline(PEUL_HISTORY, "peul");
+const lingala = buildNameTimeline(LINGALA_HISTORY, "lingala");
+
+describe("groupAccountsBySourceFamily — block 3, « Les sources parlent »", () => {
+  // @req REQ-198
+  it("groups the open name's accounts by source family, in the code's fixed order", () => {
+    const groups = groupAccountsBySourceFamily(peul.names[0]);
+    const order = groups.map((group) => group.family);
+
+    expect(order).toEqual(
+      [
+        "oral",
+        "book",
+        "encyclopedia",
+        "press",
+        "report",
+        "archive",
+        "other",
+      ].filter((family) => order.includes(family as never))
+    );
+    for (const group of groups) {
+      expect(group.accounts.length).toBeGreaterThan(0);
+      for (const { sources } of group.accounts) {
+        expect(sources.length).toBeGreaterThan(0);
+      }
+    }
+  });
+
+  // @req REQ-161
+  it("never ranks: an account backed by two families appears in both", () => {
+    const groups = groupAccountsBySourceFamily(lingala.names[0]);
+    const all = groups.flatMap((group) => group.accounts.map((a) => a.account));
+    const accounts = lingala.names[0].tiles.flatMap((tile) => tile.accounts);
+
+    expect(new Set(all)).toEqual(new Set(accounts));
+  });
+
+  // @req REQ-198
+  it("counts the distinct sources of each family", () => {
+    for (const group of groupAccountsBySourceFamily(lingala.names[0])) {
+      const titles = new Set(
+        group.accounts.flatMap(({ sources }) => sources.map((s) => s.title))
+      );
+      expect(group.sourceCount).toBe(titles.size);
+    }
+  });
+});
+
+describe("otherVoiceKinds — the note under block 3", () => {
+  const kindsOf = (name: (typeof peul.names)[number]) =>
+    new Set(
+      name.tiles.flatMap((tile) =>
+        tile.accounts.flatMap((account) =>
+          account.sources.map((source) => source.source_kind)
+        )
+      )
+    );
+
+  // @req REQ-198
+  it("names only the kinds the other names cite and the open one does not", () => {
+    for (const timeline of [peul, lingala]) {
+      for (const open of timeline.names) {
+        const own = kindsOf(open);
+        const others = new Set(
+          timeline.names
+            .filter((name) => name !== open)
+            .flatMap((name) => [...kindsOf(name)])
+        );
+        for (const kind of otherVoiceKinds(timeline.names, open)) {
+          expect(own.has(kind)).toBe(false);
+          expect(others.has(kind)).toBe(true);
+          expect(sourceKindFamily(kind)).not.toBe("other");
+        }
+      }
+    }
+  });
+
+  // @req REQ-198
+  it("is silent for a subject with a single name", () => {
+    expect(otherVoiceKinds([peul.names[0]], peul.names[0])).toEqual([]);
+  });
+});
+
+describe("deduceSilences — the closing band", () => {
+  // @req REQ-198
+  it("declares a missing oral voice only when no account of the open name cites one", () => {
+    const silences = deduceSilences([{ name: lingala.names[0] }]);
+    const oral = lingala.names[0].tiles.some((tile) =>
+      tile.accounts.some((account) =>
+        account.sources.some(
+          (source) => source.source_kind === "oral_tradition"
+        )
+      )
+    );
+
+    expect(silences.some((line) => line.includes("oralement"))).toBe(!oral);
+  });
+
+  // @req REQ-198
+  it("says the origin is undated when the name has no birth, and what lies before it when it has one", () => {
+    const [name] = lingala.names;
+    const silences = deduceSilences([{ name }]);
+
+    expect(
+      silences.some((line) =>
+        name.hasBirth
+          ? line.includes("plus ancienne")
+          : line.includes("pas datée")
+      )
+    ).toBe(true);
+  });
+
+  // @req REQ-198
+  it("names a subject whose history is not written yet", () => {
+    const silences = deduceSilences([], [{ label: "Langue", name: "Bassa" }]);
+
+    expect(silences).toEqual([
+      "L’histoire du nom Bassa (langue) n’est pas encore écrite.",
+    ]);
+  });
+});
+
+describe("nextStepTargets — the next step", () => {
+  const people: SearchResult = {
+    type: "people",
+    id: "PPL_FULA",
+    name: "Peul",
+    languageFamilyId: "FLG_ATLANTIQUE" as SearchResult["languageFamilyId"],
+    languageFamilyName: "Atlantique",
+  };
+  const patronyme: SearchResult = {
+    type: "patronyme",
+    id: "PAT_CONGO",
+    name: "Congo",
+    associatedPeoples: [{ id: "PPL_MOSSI", name: "Mossi" }],
+  };
+
+  // @req REQ-198
+  it("offers names the data already links: a people's family, a family name's people", () => {
+    expect(nextStepTargets([people, patronyme])).toEqual([
+      {
+        type: "languageFamily",
+        id: "FLG_ATLANTIQUE",
+        name: "Atlantique",
+        relation: "family",
+      },
+      { type: "people", id: "PPL_MOSSI", name: "Mossi", relation: "people" },
+    ]);
+  });
+
+  // @req REQ-198
+  it("offers two names at most, never a subject of the page itself", () => {
+    const mossi: SearchResult = {
+      type: "people",
+      id: "PPL_MOSSI",
+      name: "Mossi",
+    };
+    const targets = nextStepTargets([people, patronyme, mossi]);
+
+    expect(targets.length).toBeLessThanOrEqual(2);
+    expect(targets.map((target) => target.id)).not.toContain("PPL_MOSSI");
+  });
+});
+
+describe("firstSentence", () => {
+  // @req REQ-198
+  it("keeps the first sentence of a summary", () => {
+    expect(
+      firstSentence(
+        "Le nom Krou désigne une famille. Le mot a d’abord nommé des gens."
+      )
+    ).toBe("Le nom Krou désigne une famille.");
+  });
+});

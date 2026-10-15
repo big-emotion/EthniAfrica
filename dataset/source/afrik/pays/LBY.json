@@ -372,7 +372,7 @@
         "Colonie italienne de Libye (1911-1951)"
       ],
       "antiquity": "Libya (grec), Libye (latin). Le territoire était peuplé de Berbères (Libyens), Grecs (Cyrénaïque), Phéniciens (Tripolitaine).",
-      "middleAges": "Ifriqiya (nom arabe pour la région), Barqa (Cyrénaïque), Tarabulus (Tripoli). Domination arabe puis ottomane.",
+      "middleAges": "Ifriqiya (forme arabe du latin Africa ; la région y est parfois comptée, au sens large), Barqa (Cyrénaïque), Tarabulus (Tripoli). Domination arabe puis ottomane.",
       "precolonial": "Régences de Tripoli et de Benghazi (1551-1911), États ottomans semi-autonomes. Le territoire était divisé en Tripolitaine et Cyrénaïque.",
       "colonization": "1911-1951 : Colonie italienne de Libye. Le nom \"Libye\" est officialisé par les Italiens.",
       "contemporary": "1951 : Indépendance, royaume de Libye, puis république (1969), État de Libye (2011). Le nom officiel en arabe est \"Dawlat Lībiyā\"."
@@ -504,15 +504,14 @@
         "name": "Touaregs",
         "selfAppellation": "Kel Tamasheq / Imuhagh",
         "exonyms": [
-          "Touaregs (nom français donné de l'extérieur)",
-          "« Berbère » (terme colonial",
-          "considéré problématique)"
+          "Touaregs (nom venu de l'arabe, diffusé par le français, donné de l'extérieur)",
+          "« Berbère » (terme colonial, considéré problématique)"
         ],
         "peopleId": "PPL_TUAREG",
         "mainRegion": "Fezzan (sud-ouest), désert libyen",
         "languages": ["Tamasheq (tmh)"],
         "languageFamily": "FLG_BERBERE",
-        "appellationRemarks": "Touareg est un nom français donné de l'extérieur. Les personnes concernées se nomment Kel Tamasheq, « ceux qui parlent tamasheq », ou Imuhagh. Le nom Berbère est considéré comme problématique."
+        "appellationRemarks": "Touareg est un nom donné de l'extérieur : il vient de l'arabe et le français l'a diffusé. Les personnes concernées se nomment Imuhagh, ou Kel Tamasheq, « ceux qui parlent tamasheq ». Le nom Berbère est considéré comme problématique."
       },
       {
         "name": "Toubou",

@@ -84,5 +84,67 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web et bibliographique combinant « Modise », « TSWANA », « surname », « clan », « etymology », « transmission », « alliance » et « obituary », ainsi que la page Forebears dédiée et les travaux ou notices propres au nom cités dans la fiche n'ont pas établi de lignée homonyme d'origine distincte documentable ; la diffusion dans plusieurs pays et les ressemblances graphiques ne suffisent pas à créer un homonyme."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Modise est un nom de personne du Botswana : une étude des noms de personnes publiée en 2019 le traduit « gardien de troupeau ». Les sources lues ne disent pas depuis quand il est un nom de famille, ni si toutes les familles qui le portent ont la même origine.",
+    "names": [
+      {
+        "nameText": "Modise",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tsn",
+        "namedBy": null,
+        "shortLine": "Un nom de personne du Botswana qui voudrait dire « gardien de troupeau » ; on le donne à un garçon.",
+        "periodLabel": "Relevé en 2019",
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Décrit en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Modise voudrait dire « gardien de troupeau » ou « berger », selon Goabilwe Ramaeba. Dans le cas qu'elle recueille, on l'a donné à un garçon dans l'espoir qu'il aiderait son père à garder le bétail de la famille. Ce sens est celui d'un nom de personne : il ne dit pas que toutes les familles Modise d'aujourd'hui ont la même origine.",
+            "aspect": "meaning",
+            "hypothesisGroup": "sens du nom Modise",
+            "sources": [
+              {
+                "title": "A comparative study of linguistic and social aspects of personal names in Botswana and Scotland",
+                "author": "Goabilwe Nnanishie Ramaeba",
+                "year": 2019,
+                "url": "https://theses.gla.ac.uk/74387/1/2019ramaebaphd.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 141",
+                "notes": "Thèse de doctorat, University of Glasgow, 2019 ; PDF lu en entier le 14 octobre 2026. Page 141 : « Modise ‘herd boy/shepherd’ it was hoped that as a boy he will help his father to look after the family livestock » ; l'exemple est celui d'une personne interrogée au Botswana. Le nom Modisa, de même sens, est cité comme exemple de métier à la page 140."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Relevé en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Modise figure dans la thèse de Goabilwe Ramaeba sous la forme Modise, parmi les noms donnés au Botswana. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit ce qu'une famille a rapporté en enquête, pas depuis quand le nom est donné.",
+            "formAsWritten": "Modise",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A comparative study of linguistic and social aspects of personal names in Botswana and Scotland",
+                "author": "Goabilwe Nnanishie Ramaeba",
+                "year": 2019,
+                "url": "https://theses.gla.ac.uk/74387/1/2019ramaebaphd.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 141",
+                "notes": "Thèse de doctorat, University of Glasgow, 2019 ; PDF lu en entier le 14 octobre 2026. Page 141 : « Modise ‘herd boy/shepherd’ it was hoped that as a boy he will help his father to look after the family livestock » ; l'exemple est celui d'une personne interrogée au Botswana. Le nom Modisa, de même sens, est cité comme exemple de métier à la page 140."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

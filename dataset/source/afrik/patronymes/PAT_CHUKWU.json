@@ -16,15 +16,6 @@
           "sourceRefs": ["hanks-chukwu"]
         }
       ]
-    },
-    {
-      "spelling": "Chukwuma",
-      "attestations": [
-        {
-          "countryId": "NGA",
-          "sourceRefs": ["afrik-candidate-queue"]
-        }
-      ]
     }
   ],
   "transmissionMode": "other",
@@ -124,7 +115,7 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "Aucune source consultée ne fait de Chukwu un nom de clan : les sources y voient un nom personnel qui porte le nom de Dieu. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet jamais."
+      "reason": "Aucune source consultée ne fait de Chukwu un nom de clan : les sources y voient un nom personnel qui porte le nom de Dieu. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant. La fiche reste donc parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     }
   ],
   "nameHistory": {

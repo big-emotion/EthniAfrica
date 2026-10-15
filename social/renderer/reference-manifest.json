@@ -1,6 +1,6 @@
 {
-  "designVersion": "1.2.0-proposition",
-  "source": "Operator-supplied Claude Design references received 10 October 2026; two map references reconciled to the unchanged accepted engine by explicit operator decision on the same date. Version 1.2.0-proposition accepted by the operator on 12 October 2026: 28 references of 1.1.0 kept unchanged, three 1.1 cards whose sample label moved re-rendered on the pinned browser, seven atlas cards added from the pinned browser after comparison with Claude Design's 1.2.0 references.",
+  "designVersion": "1.8.0-proposition",
+  "source": "Operator-supplied Claude Design references received 10 October 2026; two map references reconciled to the unchanged accepted engine by explicit operator decision on the same date. Version 1.2.0-proposition accepted by the operator on 12 October 2026: 28 references of 1.1.0 kept unchanged, three 1.1 cards whose sample label moved re-rendered on the pinned browser, seven atlas cards added from the pinned browser after comparison with Claude Design's 1.2.0 references. Version 1.3.0-proposition accepted by the operator on 14 October 2026 with series video layout B: the 38 references of 1.2.0 kept unchanged, 51 series cards added from the pinned browser after comparison with Claude Design's 1.3.0 references. Version 1.4.0-proposition accepted by the operator on 14 October 2026: the series video in full screen and eight on-image-* tokens for it; the 89 references are unchanged. Version 1.4.1-proposition accepted by the operator on 14 October 2026: the series video's map cards on satellite imagery; the 89 references are unchanged.",
   "files": [
     {
       "id": "seq-1",
@@ -45,7 +45,8 @@
     {
       "id": "seq-9",
       "file": "seq-9.png",
-      "sha256": "68352000222d8cfa82ad80e3457b0872b35e2b20cd2c0a0c7bc6ed781966f0de"
+      "sha256": "1530ab12d49c8072c170178a939486093e116f4e2c3e1e44cba74d9d76f0410a",
+      "previousSha256": "68352000222d8cfa82ad80e3457b0872b35e2b20cd2c0a0c7bc6ed781966f0de"
     },
     {
       "id": "chr-1",
@@ -70,7 +71,8 @@
     {
       "id": "chr-5",
       "file": "chr-5.png",
-      "sha256": "a586ab9b52abe4a13315d6ed56cd633b54cbded8c423567af3789a0f184f6038"
+      "sha256": "3b835ff619d9cc109734312a1f6c8eeb778e388c9d3c5f57942e53feeeecde95",
+      "previousSha256": "a586ab9b52abe4a13315d6ed56cd633b54cbded8c423567af3789a0f184f6038"
     },
     {
       "id": "chr-branch",
@@ -125,7 +127,8 @@
     {
       "id": "seq-9-parchemin",
       "file": "seq-9-parchemin.png",
-      "sha256": "ccbf80f1d9105e4ea0eb00f1c1a2c8f003f8e6ca7975f8d6c94e320ef22158cc"
+      "sha256": "a0cd86d74d52a349aaf0f10d660c674c266c602fe361c4e7dfd83c4def321848",
+      "previousSha256": "ccbf80f1d9105e4ea0eb00f1c1a2c8f003f8e6ca7975f8d6c94e320ef22158cc"
     },
     {
       "id": "map-fula",
@@ -191,6 +194,268 @@
       "id": "atlas-proto-collisions",
       "file": "atlas-proto-collisions.png",
       "sha256": "7d293f5d942127eefeae4aab8ef7ca00c51917cf12c54ea5c7eb660bc96282e0"
+    },
+    {
+      "id": "serie-pays-01",
+      "file": "serie-pays-01.png",
+      "sha256": "dddf852a9ffbd23c2656c98e4ffc1b98487ed6204bbf3122114ae8c71e0c2132"
+    },
+    {
+      "id": "serie-pays-02",
+      "file": "serie-pays-02.png",
+      "sha256": "f3ac2e7028c0ac0207d5fd7abc4982aef02152ebd983d1bc08076a114ff6309f"
+    },
+    {
+      "id": "serie-pays-03",
+      "file": "serie-pays-03.png",
+      "sha256": "678a7e0575bbc8ef683eddd70ec4424e6c55a6369a8e89ad6c24fd3e197a8836"
+    },
+    {
+      "id": "serie-pays-04",
+      "file": "serie-pays-04.png",
+      "sha256": "6169f73a5e2ef261d75178d22b22cc425dde4769288790ce20ff12bb42e5984a"
+    },
+    {
+      "id": "serie-pays-05",
+      "file": "serie-pays-05.png",
+      "sha256": "50dc199db5811f8cb73fd97f53920089fdaf0057bd07727ca713f86adaf181f0"
+    },
+    {
+      "id": "serie-pays-06",
+      "file": "serie-pays-06.png",
+      "sha256": "5e4a936384f4c39d39ede1c9e684c8b49fea1b2366d6efec725b501c8a87ce49"
+    },
+    {
+      "id": "serie-pays-07",
+      "file": "serie-pays-07.png",
+      "sha256": "d3f122920016e7f98d721b607b7a48782251333ff3ea296fa31567a33bd972c4",
+      "previousSha256": "00ca1f27ed7f7a3d6e1fafc92c92d133a0a94ebdbb587d1b856c48d9704ca91d"
+    },
+    {
+      "id": "serie-nom-recu-01",
+      "file": "serie-nom-recu-01.png",
+      "sha256": "685ce0a18879567d27687e077caf31dc32e0e766a53b8657ef23a505c59ecf59"
+    },
+    {
+      "id": "serie-nom-recu-02",
+      "file": "serie-nom-recu-02.png",
+      "sha256": "5e3c22251d21b7563c5028d5f3d4a94894f72e9f5f2580e03c97e849608fde7f"
+    },
+    {
+      "id": "serie-nom-recu-03",
+      "file": "serie-nom-recu-03.png",
+      "sha256": "cae8bf7c0ae0d6e4e9bd62568c06f184293e33131193f83868aae00263407c26"
+    },
+    {
+      "id": "serie-nom-recu-04",
+      "file": "serie-nom-recu-04.png",
+      "sha256": "e2342b8e348f24ae2e5a08d31c3510e807dbb55222f73b2ce88e8bfa00e5c050"
+    },
+    {
+      "id": "serie-nom-recu-05",
+      "file": "serie-nom-recu-05.png",
+      "sha256": "cc8ee175cb70b17ebe75ee60b9fe7300ece8a82deb96b39da1a599d86b8a84c6"
+    },
+    {
+      "id": "serie-nom-recu-06",
+      "file": "serie-nom-recu-06.png",
+      "sha256": "bfe7c946f4205b163a3ca60b3a4feb4d4ed7d01da9b35550fde75992f8f5f0a8"
+    },
+    {
+      "id": "serie-nom-recu-07",
+      "file": "serie-nom-recu-07.png",
+      "sha256": "17cd56e66c7e1f8fd1df3d8b5ddce2d7766493fe3d5d7e20f97aa3a71681ae58"
+    },
+    {
+      "id": "serie-nom-recu-08",
+      "file": "serie-nom-recu-08.png",
+      "sha256": "d09d54278423e13d3129fc3806785d611772d1cd33e73dab6f9ba4b5a9035f19",
+      "previousSha256": "054199607fc637754f0ba0c9973eb1f23aaaae83e28ca4d041b7427600687f21"
+    },
+    {
+      "id": "serie-nom-famille-01",
+      "file": "serie-nom-famille-01.png",
+      "sha256": "6ff0708220b773608c0218c8cb35accd28e085fba75e849cee1cd0a7c50c559c"
+    },
+    {
+      "id": "serie-nom-famille-02",
+      "file": "serie-nom-famille-02.png",
+      "sha256": "550483301dc8b75ca389131d4f04abfc6f3b735e0ebacf33a4c6e47c1f423943"
+    },
+    {
+      "id": "serie-nom-famille-03",
+      "file": "serie-nom-famille-03.png",
+      "sha256": "2d8e59618c0390ab12e90a604f0f103ac473ca2635283cd8786edeb32ccef288"
+    },
+    {
+      "id": "serie-nom-famille-04",
+      "file": "serie-nom-famille-04.png",
+      "sha256": "395415dcfa6074f36da5d4d8ba9fa3de2a868dcbfb9362b882400d40eb7ff797"
+    },
+    {
+      "id": "serie-nom-famille-05",
+      "file": "serie-nom-famille-05.png",
+      "sha256": "6d58ed8e23eaa48f71131e43f35d662ee065faf8c9ea5b50f86c244ac100b606"
+    },
+    {
+      "id": "serie-nom-famille-06",
+      "file": "serie-nom-famille-06.png",
+      "sha256": "9fdd4aff24f92e5c6b22b187d82dee85ceb354516f0a6223b7868a4f5b6052ed"
+    },
+    {
+      "id": "serie-nom-famille-07",
+      "file": "serie-nom-famille-07.png",
+      "sha256": "57701e6472a8f6fd09884ad295aac004162c837768db4a7406a6319789e55f59",
+      "previousSha256": "9b4dd9bb84ea0280e4b571ee594f29b57b0fbe74bd07e76dbdcae5abf5243627"
+    },
+    {
+      "id": "serie-mots-01",
+      "file": "serie-mots-01.png",
+      "sha256": "cbf168873b0ad3cb2d50e3a8584837eba618a90fec6b5f0315c40c5945f9a80a"
+    },
+    {
+      "id": "serie-mots-02",
+      "file": "serie-mots-02.png",
+      "sha256": "8060731735121cebd8bcf8cd4738545fb7a42d83c06fa5bbed6068bc046177bc"
+    },
+    {
+      "id": "serie-mots-03",
+      "file": "serie-mots-03.png",
+      "sha256": "baf1458de24af07de6bce394edfe5b2f27ba2d81b982d2ec371988674b457b9f"
+    },
+    {
+      "id": "serie-mots-04",
+      "file": "serie-mots-04.png",
+      "sha256": "05137076e9ca28f5dee248356c2ecba15160625a75258ff8aa4d6bc07b64dbf0"
+    },
+    {
+      "id": "serie-mots-05",
+      "file": "serie-mots-05.png",
+      "sha256": "5a63c71de08d6c3ce212a0d4c5f6dadf31479f2baa1db8a33cb1a42cda51de62"
+    },
+    {
+      "id": "serie-mots-06",
+      "file": "serie-mots-06.png",
+      "sha256": "5ad55443f434f4d344259f3ebd896c68a1c2dd7a851e43d4347c0ffd377c02b7"
+    },
+    {
+      "id": "serie-mots-07",
+      "file": "serie-mots-07.png",
+      "sha256": "1f5cf1ddfb1d9e6a015cf2cc28c2058855ae70990346e17e3e5d44f0d12029bd",
+      "previousSha256": "af1c289d5cdabbd84c22b1d80d01d7a3d23e7b0a6b5a49ed99a7261b63bf61cf"
+    },
+    {
+      "id": "serie-frontieres-01",
+      "file": "serie-frontieres-01.png",
+      "sha256": "99fa7acf1876b6b68314dec2f6a9b616587f80735659c4eefb7306eb1c11f206"
+    },
+    {
+      "id": "serie-frontieres-02",
+      "file": "serie-frontieres-02.png",
+      "sha256": "6e2bb2763f25362e327957f20431065384ccdc61a4b993f185d657041edc9dfe"
+    },
+    {
+      "id": "serie-frontieres-03",
+      "file": "serie-frontieres-03.png",
+      "sha256": "c55eb2266814ecca1f7686a6fd8142c4f52053264759ce689e569cc5d8c1495a"
+    },
+    {
+      "id": "serie-frontieres-04",
+      "file": "serie-frontieres-04.png",
+      "sha256": "5e67829dc51e14f2c997e40564f4c9696308763b7ecd15f155e9589138c427b9"
+    },
+    {
+      "id": "serie-frontieres-05",
+      "file": "serie-frontieres-05.png",
+      "sha256": "021a500c1bff44b12de15038715c30705900916ff0b26d0013217834c2076050"
+    },
+    {
+      "id": "serie-frontieres-06",
+      "file": "serie-frontieres-06.png",
+      "sha256": "8d12d9a3b9ef439450b53a52fca1f4a27e71437270ca2e1ea98e8ea92dafb179"
+    },
+    {
+      "id": "serie-frontieres-07",
+      "file": "serie-frontieres-07.png",
+      "sha256": "33094e580a439eca53ae72165939294991b0c787d3703933cd286b2450c1eb3e",
+      "previousSha256": "f4668e2b6a058570fc9a43e95081247c5dff2affcfeebfad2ccfc7ac6fbf4919"
+    },
+    {
+      "id": "serie-afrique-tout-01",
+      "file": "serie-afrique-tout-01.png",
+      "sha256": "d358d442117fe6090c54a8eb42b91ef78752f5cec8c9cea0e4f9d28b8186289a"
+    },
+    {
+      "id": "serie-afrique-tout-02",
+      "file": "serie-afrique-tout-02.png",
+      "sha256": "c8ea39579c7f555a2f6cb1647adabb4c7fd4ee7a17d61c396da5c9b9c9cd19c9"
+    },
+    {
+      "id": "serie-afrique-tout-03",
+      "file": "serie-afrique-tout-03.png",
+      "sha256": "99a441b07a0c75119813f70c15bc8bc5f5dd89b31b3796576612848c832f46f7"
+    },
+    {
+      "id": "serie-afrique-tout-04",
+      "file": "serie-afrique-tout-04.png",
+      "sha256": "a77a9b208730e32167f6f8af07883024befc61660089822dddde193eb7e1d1a3"
+    },
+    {
+      "id": "serie-afrique-tout-05",
+      "file": "serie-afrique-tout-05.png",
+      "sha256": "6308b885f49a17cf9c51286e24c65248eda07dd9c47f45ce39d28cf3ea6f2e40"
+    },
+    {
+      "id": "serie-afrique-tout-06",
+      "file": "serie-afrique-tout-06.png",
+      "sha256": "1d70054512b098a8ec766aa0776744dea7d8bf0ae04ade24f6c166746f6bc80f"
+    },
+    {
+      "id": "serie-afrique-tout-07",
+      "file": "serie-afrique-tout-07.png",
+      "sha256": "5564fb46d8456e5dce3b905810289fdc3ffe5660fd435d26f08454ef6f5150b5",
+      "previousSha256": "ce7fa9da277c5840692a2c99a339c44735cd368666842a4a61e5167f62a5ca33"
+    },
+    {
+      "id": "serie-villes-01",
+      "file": "serie-villes-01.png",
+      "sha256": "9bb9dd574b532d1dd59df58da72050785de4c8fb3faefe2dfecb29b3d1197d08"
+    },
+    {
+      "id": "serie-villes-02",
+      "file": "serie-villes-02.png",
+      "sha256": "2b8f86c142f1d7aee0179db4e58aa7ed131e789f242a4ca726b0bffbc83bdb62"
+    },
+    {
+      "id": "serie-villes-03",
+      "file": "serie-villes-03.png",
+      "sha256": "f379793d6e5e51e70b45476c90ec0add2f5663a614402b37c9b0c7b104f7facd"
+    },
+    {
+      "id": "serie-villes-04",
+      "file": "serie-villes-04.png",
+      "sha256": "9d10ec810d80b559ecf864263e28fd9f4f8a1af7832f60ac491f8879388fb221"
+    },
+    {
+      "id": "serie-villes-05",
+      "file": "serie-villes-05.png",
+      "sha256": "16480041edd838c9ecd052f458c36017c3ae5bda45ad1e20e2166e55c81ceb1c"
+    },
+    {
+      "id": "serie-villes-06",
+      "file": "serie-villes-06.png",
+      "sha256": "a65e967daad40a4fafd4fc8b24681d02b94e2feb946d0086c05e236b8e021304",
+      "previousSha256": "fa3ae2f166480bd8389a08d996daac1acb116753a1199e33fa671a027b3dbddd"
+    },
+    {
+      "id": "serie-atlas-1880",
+      "file": "serie-atlas-1880.png",
+      "sha256": "864e9c64500e747453bdcadcd1bb583ee8997e792bc8fed93310709f12ce466a"
+    },
+    {
+      "id": "serie-atlas-1914-parchemin",
+      "file": "serie-atlas-1914-parchemin.png",
+      "sha256": "5e90d72acf9ca9561ef687b3ed2f2a9d434a3ba365c4440964764c24960068aa"
     }
   ],
   "reconciliation": {
@@ -266,5 +531,303 @@
         "claudeDesignSha256": "c4b69bed05d8d8f3f022a7d13c549453e009450bf40ebb6a2918fda29d83adac"
       }
     ]
+  },
+  "integration-1.3.0": {
+    "date": "2026-10-14",
+    "decision": "Operator accepted EthniAfrica Cartes 1.3.0-proposition (series band, seven series models, series video layout B) and asked for its integration (claude-design-1.3.0-prompt.md). The 38 cards without a series render byte-identically with the 1.2.0 and 1.3.0 engines, so their references are unchanged. References for the 51 new cards are the pinned browser's renders; Claude Design's own 1.3.0 references are kept separately as evidence. No tolerance or engine change.",
+    "added": [
+      {
+        "id": "serie-pays-01",
+        "sha256": "dddf852a9ffbd23c2656c98e4ffc1b98487ed6204bbf3122114ae8c71e0c2132",
+        "claudeDesignSha256": "f5928322e0bccc70144dd6b84495aabaca3e09be1098e9868f9b4cecdb605a91"
+      },
+      {
+        "id": "serie-pays-02",
+        "sha256": "f3ac2e7028c0ac0207d5fd7abc4982aef02152ebd983d1bc08076a114ff6309f",
+        "claudeDesignSha256": "d509d0b3d00420fc8b2fa7b83a4c462ca68f4ec4f00c39c56c5829daddbbd03a"
+      },
+      {
+        "id": "serie-pays-03",
+        "sha256": "678a7e0575bbc8ef683eddd70ec4424e6c55a6369a8e89ad6c24fd3e197a8836",
+        "claudeDesignSha256": "985c84c678021bdfa2ccf415824871508e81524b96aed22735c282b5eb109637"
+      },
+      {
+        "id": "serie-pays-04",
+        "sha256": "6169f73a5e2ef261d75178d22b22cc425dde4769288790ce20ff12bb42e5984a",
+        "claudeDesignSha256": "59f5332d41a8820b70b2dacc0bf7a1ae9238e89d38261e73100c99f618347fdb"
+      },
+      {
+        "id": "serie-pays-05",
+        "sha256": "50dc199db5811f8cb73fd97f53920089fdaf0057bd07727ca713f86adaf181f0",
+        "claudeDesignSha256": "fc04b8c09aa085ae485bba63ce90f8dc1f02768344ab5e9ab260c1189cc2016d"
+      },
+      {
+        "id": "serie-pays-06",
+        "sha256": "5e4a936384f4c39d39ede1c9e684c8b49fea1b2366d6efec725b501c8a87ce49",
+        "claudeDesignSha256": "57296632ed3bcc0b23550253afd1a58ef122d88b9247b0da43db8c588ba4e8c6"
+      },
+      {
+        "id": "serie-pays-07",
+        "sha256": "00ca1f27ed7f7a3d6e1fafc92c92d133a0a94ebdbb587d1b856c48d9704ca91d",
+        "claudeDesignSha256": "94536ebd001bfad0cd03a81cae0224ed60a2c591b200853312754b7191283097"
+      },
+      {
+        "id": "serie-nom-recu-01",
+        "sha256": "685ce0a18879567d27687e077caf31dc32e0e766a53b8657ef23a505c59ecf59",
+        "claudeDesignSha256": "ce50f78e4f6aab2a32526333b6b2684c51d92baf1584debc45c50667828e5866"
+      },
+      {
+        "id": "serie-nom-recu-02",
+        "sha256": "5e3c22251d21b7563c5028d5f3d4a94894f72e9f5f2580e03c97e849608fde7f",
+        "claudeDesignSha256": "fa9a84cbb30b0ed92c45e7cfd7f927c115dbf128f69d5fe07b3f117e81bdd51b"
+      },
+      {
+        "id": "serie-nom-recu-03",
+        "sha256": "cae8bf7c0ae0d6e4e9bd62568c06f184293e33131193f83868aae00263407c26",
+        "claudeDesignSha256": "5cd2e804ac879b673a12b9f3f39b1bd3c62f313ac908c36163936afbeecb67c7"
+      },
+      {
+        "id": "serie-nom-recu-04",
+        "sha256": "e2342b8e348f24ae2e5a08d31c3510e807dbb55222f73b2ce88e8bfa00e5c050",
+        "claudeDesignSha256": "ef702104a1afdcc009fd227f02e9eab6325edfb4ea3abee1c7ede259e11cac30"
+      },
+      {
+        "id": "serie-nom-recu-05",
+        "sha256": "cc8ee175cb70b17ebe75ee60b9fe7300ece8a82deb96b39da1a599d86b8a84c6",
+        "claudeDesignSha256": "5e3b45e521d4f80bec20af54d05aa0ffbf83b87ccc15e8232d79c76958fe9982"
+      },
+      {
+        "id": "serie-nom-recu-06",
+        "sha256": "bfe7c946f4205b163a3ca60b3a4feb4d4ed7d01da9b35550fde75992f8f5f0a8",
+        "claudeDesignSha256": "3aa47e8d12ecd431aab18a46cff073224dfedd43b1fd3955fe2cb1ecf43842bc"
+      },
+      {
+        "id": "serie-nom-recu-07",
+        "sha256": "17cd56e66c7e1f8fd1df3d8b5ddce2d7766493fe3d5d7e20f97aa3a71681ae58",
+        "claudeDesignSha256": "9962ee552d37fe565d36192c5250c280273ab0b83aad93ebfcc4c45606f5e6fe"
+      },
+      {
+        "id": "serie-nom-recu-08",
+        "sha256": "054199607fc637754f0ba0c9973eb1f23aaaae83e28ca4d041b7427600687f21",
+        "claudeDesignSha256": "540888bd9a0309cda33b55d4061614c65e0e4b1dce7c7f0f104b5f2028f24451"
+      },
+      {
+        "id": "serie-nom-famille-01",
+        "sha256": "6ff0708220b773608c0218c8cb35accd28e085fba75e849cee1cd0a7c50c559c",
+        "claudeDesignSha256": "e0aec29f1d9f31c51c5c23aa2b77c147c0086ca216fe24be55cbf3647b4a10f6"
+      },
+      {
+        "id": "serie-nom-famille-02",
+        "sha256": "550483301dc8b75ca389131d4f04abfc6f3b735e0ebacf33a4c6e47c1f423943",
+        "claudeDesignSha256": "e582c622a7e0bdfbf32a8f641937d1a9a935df7f5add3f36c01f8bbacff13898"
+      },
+      {
+        "id": "serie-nom-famille-03",
+        "sha256": "2d8e59618c0390ab12e90a604f0f103ac473ca2635283cd8786edeb32ccef288",
+        "claudeDesignSha256": "5a06fecdd7b3d5ef342eebb9ba9a497859324e502a5d4641b809eee6ee5b13a0"
+      },
+      {
+        "id": "serie-nom-famille-04",
+        "sha256": "395415dcfa6074f36da5d4d8ba9fa3de2a868dcbfb9362b882400d40eb7ff797",
+        "claudeDesignSha256": "a0eab400c55f0309e1aa77b4760eea4e272c12cff03bc53b9f074a53ba5a76af"
+      },
+      {
+        "id": "serie-nom-famille-05",
+        "sha256": "6d58ed8e23eaa48f71131e43f35d662ee065faf8c9ea5b50f86c244ac100b606",
+        "claudeDesignSha256": "159d01c33c352419067c606bf8210297d8bd5c8f67776d0c03711a2d6308af06"
+      },
+      {
+        "id": "serie-nom-famille-06",
+        "sha256": "9fdd4aff24f92e5c6b22b187d82dee85ceb354516f0a6223b7868a4f5b6052ed",
+        "claudeDesignSha256": "bdd8d34ca0e2a756e808c0f8b7eb890131da764e9be37aae5bbc8bf68fb50122"
+      },
+      {
+        "id": "serie-nom-famille-07",
+        "sha256": "9b4dd9bb84ea0280e4b571ee594f29b57b0fbe74bd07e76dbdcae5abf5243627",
+        "claudeDesignSha256": "dc00a249f5cd2fa7f82be4aad3481dbf279ab2c17e2eba9c41dfe651642fb034"
+      },
+      {
+        "id": "serie-mots-01",
+        "sha256": "cbf168873b0ad3cb2d50e3a8584837eba618a90fec6b5f0315c40c5945f9a80a",
+        "claudeDesignSha256": "ab0f648dd4dcd2a7b8530efab3150213474ffc81c64d383ef30d75f00c1f86ea"
+      },
+      {
+        "id": "serie-mots-02",
+        "sha256": "8060731735121cebd8bcf8cd4738545fb7a42d83c06fa5bbed6068bc046177bc",
+        "claudeDesignSha256": "a673fa6c2aeb1cb1924d9c11bacf3efed0a35156dac18dca2d14cafd520b1d00"
+      },
+      {
+        "id": "serie-mots-03",
+        "sha256": "baf1458de24af07de6bce394edfe5b2f27ba2d81b982d2ec371988674b457b9f",
+        "claudeDesignSha256": "c2645067e0ec43b7d3ba9f70fb1d87d14ddce8e82f6883e637b9f96d381836c4"
+      },
+      {
+        "id": "serie-mots-04",
+        "sha256": "05137076e9ca28f5dee248356c2ecba15160625a75258ff8aa4d6bc07b64dbf0",
+        "claudeDesignSha256": "5f002952049f71da6983d10e69c4486143711e811eabdbe173a5db58d399aaec"
+      },
+      {
+        "id": "serie-mots-05",
+        "sha256": "5a63c71de08d6c3ce212a0d4c5f6dadf31479f2baa1db8a33cb1a42cda51de62",
+        "claudeDesignSha256": "8b46188f951f481b831904ea760d7720357e070dd07e1fd2365772fa8fc6e4d0"
+      },
+      {
+        "id": "serie-mots-06",
+        "sha256": "5ad55443f434f4d344259f3ebd896c68a1c2dd7a851e43d4347c0ffd377c02b7",
+        "claudeDesignSha256": "5b7ecca6d47bd4d0749f1a29dce4588cd908f8072673e5e6d143bc59332bf516"
+      },
+      {
+        "id": "serie-mots-07",
+        "sha256": "af1c289d5cdabbd84c22b1d80d01d7a3d23e7b0a6b5a49ed99a7261b63bf61cf",
+        "claudeDesignSha256": "8cc34c9cc0ce78dabf843bf05740d5b64c2eb244f73caf3ef6996963b70da99d"
+      },
+      {
+        "id": "serie-frontieres-01",
+        "sha256": "99fa7acf1876b6b68314dec2f6a9b616587f80735659c4eefb7306eb1c11f206",
+        "claudeDesignSha256": "be74a2581e8fc6dcee2069b619c55df7a14c5fc4112a7a7af0fa1748929b27fe"
+      },
+      {
+        "id": "serie-frontieres-02",
+        "sha256": "6e2bb2763f25362e327957f20431065384ccdc61a4b993f185d657041edc9dfe",
+        "claudeDesignSha256": "d8cdeaf0455460e283bb66ae21afbd43426ddbc8bae8672f030d6ce032b979fa"
+      },
+      {
+        "id": "serie-frontieres-03",
+        "sha256": "c55eb2266814ecca1f7686a6fd8142c4f52053264759ce689e569cc5d8c1495a",
+        "claudeDesignSha256": "829039b02e67187901a30f8108ac5af9cf9df1c2d392e01943ffedf6b2654860"
+      },
+      {
+        "id": "serie-frontieres-04",
+        "sha256": "5e67829dc51e14f2c997e40564f4c9696308763b7ecd15f155e9589138c427b9",
+        "claudeDesignSha256": "9fd1bf7ca1e02f2a28d47066d8e80aef9cb309c6c73a4d6f2d05a35924c3181a"
+      },
+      {
+        "id": "serie-frontieres-05",
+        "sha256": "021a500c1bff44b12de15038715c30705900916ff0b26d0013217834c2076050",
+        "claudeDesignSha256": "a8dbc52c9d10c50093630d554df2c3fffdc0c664613345106759dd5d07ef9d4a"
+      },
+      {
+        "id": "serie-frontieres-06",
+        "sha256": "8d12d9a3b9ef439450b53a52fca1f4a27e71437270ca2e1ea98e8ea92dafb179",
+        "claudeDesignSha256": "7bd06559e491735c99dbebe6f11bcdd8155b8196493ea448f53c4cef802f2588"
+      },
+      {
+        "id": "serie-frontieres-07",
+        "sha256": "f4668e2b6a058570fc9a43e95081247c5dff2affcfeebfad2ccfc7ac6fbf4919",
+        "claudeDesignSha256": "a74bf3886da3665027952fb45533e4da35a3dfa3b541db8a9117a3fd111ba1b1"
+      },
+      {
+        "id": "serie-afrique-tout-01",
+        "sha256": "d358d442117fe6090c54a8eb42b91ef78752f5cec8c9cea0e4f9d28b8186289a",
+        "claudeDesignSha256": "eaf00e28452209d06c7fb7322e4217c8539354ab73f25fdc025aef4d1575a1ea"
+      },
+      {
+        "id": "serie-afrique-tout-02",
+        "sha256": "c8ea39579c7f555a2f6cb1647adabb4c7fd4ee7a17d61c396da5c9b9c9cd19c9",
+        "claudeDesignSha256": "134d5cd88081c7e29719bd5c024ae0e2626f1c9226d1f037794ea005d0428dc0"
+      },
+      {
+        "id": "serie-afrique-tout-03",
+        "sha256": "99a441b07a0c75119813f70c15bc8bc5f5dd89b31b3796576612848c832f46f7",
+        "claudeDesignSha256": "d62a64514b95e1464a91c81ed0282f127fe0e8012be69735237572a13077502e"
+      },
+      {
+        "id": "serie-afrique-tout-04",
+        "sha256": "a77a9b208730e32167f6f8af07883024befc61660089822dddde193eb7e1d1a3",
+        "claudeDesignSha256": "db3fd7d97e834a053d26383b116e2d18621bd72a231cd75035ee53977aae4b75"
+      },
+      {
+        "id": "serie-afrique-tout-05",
+        "sha256": "6308b885f49a17cf9c51286e24c65248eda07dd9c47f45ce39d28cf3ea6f2e40",
+        "claudeDesignSha256": "1c9a15b4de63cb1746b2022f77652775fb007756d946e00773f73170c4027e1e"
+      },
+      {
+        "id": "serie-afrique-tout-06",
+        "sha256": "1d70054512b098a8ec766aa0776744dea7d8bf0ae04ade24f6c166746f6bc80f",
+        "claudeDesignSha256": "1f4e7beef1805558e013887ef9b3924a41f189e9cae8b1f80ab15a7fbf9b5e62"
+      },
+      {
+        "id": "serie-afrique-tout-07",
+        "sha256": "ce7fa9da277c5840692a2c99a339c44735cd368666842a4a61e5167f62a5ca33",
+        "claudeDesignSha256": "c173b4af974c4263583565510e98eee0c368558a864e34a0ebdaf8f40de03b73"
+      },
+      {
+        "id": "serie-villes-01",
+        "sha256": "9bb9dd574b532d1dd59df58da72050785de4c8fb3faefe2dfecb29b3d1197d08",
+        "claudeDesignSha256": "00011723c743fd517d77e220c103e89390ecfdf04971da73511193cf0a1f01b2"
+      },
+      {
+        "id": "serie-villes-02",
+        "sha256": "2b8f86c142f1d7aee0179db4e58aa7ed131e789f242a4ca726b0bffbc83bdb62",
+        "claudeDesignSha256": "5a66f6a2cefb8cae4936e0585ff5184110c48287a96663326da096da981db748"
+      },
+      {
+        "id": "serie-villes-03",
+        "sha256": "f379793d6e5e51e70b45476c90ec0add2f5663a614402b37c9b0c7b104f7facd",
+        "claudeDesignSha256": "f4db579a024f00aa9667e86c247f205e7d3691096fc31c49153579f7028d5b13"
+      },
+      {
+        "id": "serie-villes-04",
+        "sha256": "9d10ec810d80b559ecf864263e28fd9f4f8a1af7832f60ac491f8879388fb221",
+        "claudeDesignSha256": "1be8043940fd2d8b12b46224bc479900ad7b6d03c9bfac5862b20b0e816cc7c7"
+      },
+      {
+        "id": "serie-villes-05",
+        "sha256": "16480041edd838c9ecd052f458c36017c3ae5bda45ad1e20e2166e55c81ceb1c",
+        "claudeDesignSha256": "3a1e7c73f58e34edbebe438fc09bd836a36680cba9ee1fff89453f9dbb3a3b0f"
+      },
+      {
+        "id": "serie-villes-06",
+        "sha256": "fa3ae2f166480bd8389a08d996daac1acb116753a1199e33fa671a027b3dbddd",
+        "claudeDesignSha256": "071b84a33dbe03907e381668ccccefd7553f71d51c6d33f709121b777e7bd465"
+      },
+      {
+        "id": "serie-atlas-1880",
+        "sha256": "864e9c64500e747453bdcadcd1bb583ee8997e792bc8fed93310709f12ce466a",
+        "claudeDesignSha256": "14183616339051490c466a2d776243676c78674eff44756b23801dc368d34e9f"
+      },
+      {
+        "id": "serie-atlas-1914-parchemin",
+        "sha256": "5e90d72acf9ca9561ef687b3ed2f2a9d434a3ba365c4440964764c24960068aa",
+        "claudeDesignSha256": "5c8b8915a6730166489490f6b4fddaec7c4cf14f1545e2f206a6881451b37aec"
+      }
+    ]
+  },
+  "integration-1.4.0": {
+    "date": "2026-10-14",
+    "decision": "Operator accepted EthniAfrica Cartes 1.4.0-proposition (series video in full screen, replacing layout B). It changes no card: the 89 sample cards render pixel-identical with the 1.3.0 and 1.4.0 design (bundle version string and on-image-* tokens only), checked by rendering both in diagnostic mode on one browser and comparing every PNG and alternative text. The 89 reference hashes are therefore unchanged; only designVersion moves. No tolerance or engine change."
+  },
+  "integration-1.4.1": {
+    "date": "2026-10-14",
+    "decision": "Operator accepted EthniAfrica Cartes 1.4.1-proposition (series video map cards drawn on satellite imagery). It changes no card: the 89 sample cards render pixel-identical with the 1.4.0 and 1.4.1 design (bundle version string only), checked by rendering both in diagnostic mode on one browser and comparing every PNG and alternative text. The 89 reference hashes are therefore unchanged; only designVersion moves. No tolerance or engine change."
+  },
+  "integration-1.5.0": {
+    "date": "2026-10-15",
+    "decision": "Operator accepted EthniAfrica Cartes 1.5.0-proposition (a spoken map sequence in the series video). It changes no card: the 89 sample cards render pixel-identical with the 1.4.1 and 1.5.0 design (bundle version string only), checked by rendering both in diagnostic mode on one browser and comparing every PNG and alternative text. The 89 reference hashes are therefore unchanged; only designVersion moves. No tolerance change; the map sequence is integrated in social/video."
+  },
+  "integration-1.6.0": {
+    "date": "2026-10-15",
+    "decision": "Operator accepted EthniAfrica Cartes 1.6.0-proposition (the signature line « Connaître nos noms, décoloniser leur emploi, nous nommer nous-mêmes. » on every closing card, top at y 760, the closing slogan and the motto retired). Rendered in diagnostic mode on the pinned browser and compared with the accepted references: the 79 cards that are not closing cards pass unchanged, so their references and hashes stay; the ten closing cards change by design and take the pinned browser's 1.6.0 renders, checked by eye against Claude Design's boards (design-system-1.6.0-boards/cartes/). Each records its previous hash. No tolerance change.",
+    "references": ".local/research/social-production-2026-10-09/design-system-1.6.0-accepted/",
+    "changed": [
+      "chr-5",
+      "seq-9",
+      "seq-9-parchemin",
+      "serie-afrique-tout-07",
+      "serie-frontieres-07",
+      "serie-mots-07",
+      "serie-nom-famille-07",
+      "serie-nom-recu-08",
+      "serie-pays-07",
+      "serie-villes-06"
+    ]
+  },
+  "integration-1.7.0": {
+    "date": "2026-10-15",
+    "decision": "Operator accepted EthniAfrica Cartes 1.7.0-proposition (the long series video with chapters). It changes no card: the 89 sample cards render byte-identical with the 1.6.0 and 1.7.0 design (bundle version string only), alternative texts included, checked by rendering both in diagnostic mode on one browser. The 89 reference hashes are therefore unchanged; only designVersion moves. No tolerance change; the long video is integrated in social/video."
+  },
+  "integration-1.8.0": {
+    "date": "2026-10-16",
+    "decision": "Operator accepted EthniAfrica Cartes 1.8.0-proposition (the document card and the teaching cards of the series video). It changes no card: the 89 sample cards render byte-identical with the 1.7.0 and 1.8.0 design (bundle version string only), alternative texts included, checked by rendering both in diagnostic mode on one browser, and pass 89 of 89 against the 1.6.0 accepted references. The 89 reference hashes are therefore unchanged; only designVersion moves. No tolerance change; the document and teaching cards are integrated in social/video."
   }
 }

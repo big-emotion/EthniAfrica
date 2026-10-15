@@ -16,8 +16,8 @@
   },
   "answer": {
     "lead": {
-      "fr": "Pour les Romains, « Afrique » ne nommait qu'une région d'Afrique du Nord. L'origine du mot n'est pas établie.",
-      "en": "For the Romans, « Africa » named only a region of North Africa. The origin of the word is not settled."
+      "fr": "Pour l'administration romaine, « Afrique » nommait une province d'Afrique du Nord ; les géographes latins l'employaient déjà pour toute une partie du monde. L'origine du mot n'est pas établie.",
+      "en": "For the Roman administration, « Africa » named a province of North Africa; Latin geographers already used it for a whole part of the world. The origin of the word is not settled."
     },
     "origin": [
       {
@@ -29,15 +29,15 @@
       },
       {
         "text": {
-          "fr": "Une autre le tire du latin aprica, « ensoleillé, chaud ».",
-          "en": "Another takes it from Latin aprica, « sunny, hot »."
+          "fr": "Une autre le tire du latin aprica, « ensoleillée » ; Isidore de Séville la rapporte au VIIe siècle.",
+          "en": "Another takes it from Latin aprica, « sunny »; Isidore of Seville reports it in the 7th century."
         },
         "attribution": "written"
       },
       {
         "text": {
-          "fr": "Léon l'Africain le tirait du grec a-phrike, « sans froid » ou « sans horreur ».",
-          "en": "Leo Africanus took it from Greek a-phrike, « without cold » or « without horror »."
+          "fr": "Une lecture sans auteur connu le tire du grec a-phrikê, « sans froid » ; Samuel Bochart la rapporte en 1646 et la rejette.",
+          "en": "A reading with no known author takes it from Greek a-phrikê, « without cold »; Samuel Bochart reports it in 1646 and rejects it."
         },
         "attribution": "written"
       }

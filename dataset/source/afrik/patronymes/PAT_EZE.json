@@ -93,7 +93,7 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "Aucune source consultée ne fait de Eze un nom de clan : les sources y voient le titre ezè, « roi » ou « chef », employé aussi comme nom personnel. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet jamais."
+      "reason": "Aucune source consultée ne fait de Eze un nom de clan : les sources y voient le titre ezè, « roi » ou « chef », employé aussi comme nom personnel. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant. La fiche reste donc parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     }
   ],
   "nameHistory": {

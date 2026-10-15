@@ -4,8 +4,8 @@
   "nameEn": "Burkina Faso",
   "nameOfficial": "Burkina Faso (Burkina Faso)",
   "summary": "Le nom du Burkina Faso est composé dans deux langues du pays : « la patrie des hommes intègres », de « burkina » en mooré et « faso » en dioula. Le pays s'appelait Haute-Volta jusqu'en 1984, et la colonie de ce nom fut supprimée en 1932 puis rétablie en 1947. Son histoire est celle des royaumes mossi — Tenkodogo, Yatenga, Ouagadougou, Fada N'Gourma, Boussouma — et des chefferies gur qui les entouraient.",
-  "etymology": "Le nom \"Burkina Faso\" est composé de deux mots pris dans deux langues différentes du pays : \"burkina\", qui dit l'intégrité et l'honneur en mooré, la langue des Mossi, et \"faso\", qui dit le pays, la terre ou la patrie en dioula, une langue mandé. Ensemble, ils se traduisent par \"la patrie des hommes intègres\". Le nom remplace \"Haute-Volta\", que l'administration coloniale française avait donné à la colonie d'après le fleuve Volta. Une ordonnance du 2 août 1984 établit le changement, qui prend effet le 4 août 1984, jour du premier anniversaire de l'arrivée au pouvoir de Thomas Sankara. Le gentilé \"burkinabè\" n'est formé dans aucune de ces deux langues seule : le géographe Alain Maharaux écrit qu'il emprunte aux trois langues principales du pays. La langue d'origine de sa terminaison et son sens précis ne sont pas établis par les sources réunies ici.",
-  "nameOriginActor": "Le nom a été choisi sous la présidence de Thomas Sankara et établi par une ordonnance du 2 août 1984, entrée en vigueur le 4 août. Le nom qu'il remplace, \"Haute-Volta\", avait été donné par l'administration coloniale française, qui créa la colonie par décret du 1er mars 1919 avec Ouagadougou pour capitale.",
+  "etymology": "Le nom \"Burkina Faso\" est composé de deux mots pris dans deux langues du pays. \"Burkina\" vient du mooré, la langue des Mossi : le dictionnaire mooré de la SIL le traduit par « homme intègre », une personne qui a le sens de la dignité et de l'honneur ; l'intégrité elle-même se dit burkĩndi. Ce dictionnaire note aussi que le mot est emprunté au songhay ; en zarma, une langue songhay, burcin veut dire « noble ». \"Faso\" vient du dioula, où il veut dire « patrie » ; les dictionnaires le décomposent en fa, « père », et so, « maison » : la maison du père. Ensemble, ils se traduisent par \"la patrie des hommes intègres\". Le nom remplace \"Haute-Volta\", que l'administration coloniale française avait donné à la colonie d'après le fleuve Volta, un nom que des marins portugais employaient déjà pour le fleuve au début du XVIe siècle. Une ordonnance datée du 2 août 1984 établit le changement, qui prend effet le 4 août 1984, jour du premier anniversaire de l'arrivée au pouvoir de Thomas Sankara. La même ordonnance nomme les habitants \"Burkinabè\". Ce mot ajoute à \"burkina\" la terminaison -bè, qui vient du fulfulde, la langue des Peuls, où elle marque le pluriel des personnes, selon la linguiste Nataša Raschi et l'Office québécois de la langue française. Des linguistes rappellent qu'en fulfulde cette terminaison ne sert qu'au pluriel ; en français, on dit pourtant « un Burkinabè ». Le géographe Alain Maharaux écrit que le mot burkinabè emprunte aux trois langues principales du pays : c'est vrai de l'ensemble formé par burkina, faso et -bè.",
+  "nameOriginActor": "Le nom a été établi par l'ordonnance n° 84-043/CNR/PRES du 2 août 1984, entrée en vigueur le 4 août, sous la présidence de Thomas Sankara. Selon Nayabtigoungou Congo Kaboré, secrétaire général du gouvernement à l'époque, qui l'a raconté en 2013, le conseil des ministres a d'abord entendu plusieurs propositions, chacune dans une langue. Le mot burkina a été retenu sur l'avis de Blaise Compaoré ; Thomas Sankara a ajouté faso et la terminaison -bè. C'est le récit d'un seul témoin. Le nom qu'il remplace, \"Haute-Volta\", avait été donné par l'administration coloniale française, qui créa la colonie par décret du 1er mars 1919 avec Ouagadougou pour capitale.",
   "nameHistory": {
     "summary": "Le nom Burkina Faso désigne un pays d'Afrique de l'Ouest, qui le porte depuis le 4 août 1984. Il est formé de deux mots pris à deux langues du pays, le mooré et le dioula. Le pays s'appelait auparavant Haute-Volta, du nom que l'administration coloniale française avait donné à la colonie en 1919. Les sources lues s'accordent sur le sens du nom Burkina Faso ; elles disent moins de choses sur le choix du nom Haute-Volta. Nous les présentons plus bas.",
     "names": [
@@ -56,7 +56,7 @@
               "label": "Usage contemporain"
             },
             "era": "modern",
-            "statement": "Le nom Burkina Faso veut dire « le pays des hommes intègres », selon Alain Maharaux et Jeune Afrique. Le premier mot vient du mooré, où il signifie « homme intègre », et le second du dioula, où il signifie « terre natale », selon Jeune Afrique. Les sources lues s'accordent sur ce sens.",
+            "statement": "Le nom Burkina Faso veut dire « le pays des hommes intègres », selon Alain Maharaux. Le premier mot vient du mooré : le dictionnaire mooré de la SIL donne burkĩna, « homme intègre », et note que le mot est emprunté au songhay. Le second vient du dioula : les dictionnaires de Maurice Delafosse (1929) et Bamadaba donnent faso, « patrie », mot à mot « maison du père ». Jeune Afrique traduit faso par « terre natale ». Les sources lues s'accordent sur le sens d'ensemble.",
             "aspect": "meaning",
             "sources": [
               {
@@ -78,6 +78,36 @@
                 "source_kind": "press",
                 "page": "deuxième paragraphe",
                 "notes": "Article de presse publié en juillet 2014, republié en 2021, consulté le 10 octobre 2026. Il date l'ordonnance du 2 août 1984, donne l'orthographe d'origine « Bourkina Fâso », et traduit burkina par « homme intègre » en mooré et faso par « terre natale » en dioula."
+              },
+              {
+                "title": "Dictionnaire mooré – français – English",
+                "author": "Urs Niggli, SIL",
+                "year": 2021,
+                "url": "https://www.webonary.org/moore/files/Dictionnaire-Moore-fran%C3%A7ais-English.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 56, entrées burkĩna et burkĩndi",
+                "notes": "Version du 13 janvier 2021, lue le 15 octobre 2026. burkĩna : « intègre (personne), homme intègre qui a le sens de la dignité et de l'honneur » ; burkĩndi : « intégrité, honnêteté dans la dignité ». L'entrée burkĩna porte la mention « emprunt: songai »."
+              },
+              {
+                "title": "Bamadaba, dictionnaire du Corpus bambara de référence",
+                "author": "Valentin Vydrine, Jean-Jacques Méric et al. (INALCO, LLACAN)",
+                "year": 2022,
+                "url": "https://cormand.huma-num.fr/Bamadaba/lexicon/f.htm",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrée fàso",
+                "notes": "Lu le 15 octobre 2026 : « fàso( père maison ) n. patrie. »"
+              },
+              {
+                "title": "La langue mandingue et ses dialectes (Malinké, Bambara, Dioula), vol. 1",
+                "author": "Maurice Delafosse",
+                "year": 1929,
+                "url": "https://archive.org/details/la-langue-mandingue-et-ses-...-delafosse-maurice-bpt-6k-3412996f",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "lexique, entrées maison et patrie",
+                "notes": "Lu dans l'OCR le 15 octobre 2026 : maison « — paternelle, fa-so » ; patrie « fa-so ». Texte d'un administrateur colonial français."
               }
             ]
           },
@@ -88,7 +118,7 @@
               "label": "1984"
             },
             "era": "modern",
-            "statement": "Le nom Burkina Faso doit permettre de rompre avec le passé néocolonial et de porter un projet de société commun à tous les habitants, selon Alain Maharaux. Le nom des habitants, burkinabè, emprunte de son côté aux trois langues principales du pays.",
+            "statement": "Le nom Burkina Faso doit permettre de rompre avec le passé néocolonial et de porter un projet de société commun à tous les habitants, selon Alain Maharaux. Pour lui, le nom des habitants, burkinabè, emprunte aux trois langues principales du pays. Louis-Dominique Ouédraogo, secrétaire général des Affaires étrangères en 1984, parle de deux langues : le mot réunit burkina, en mooré, et la terminaison -bè, en fulfulde. Le dioula entre par le mot faso ; les trois langues se retrouvent donc dans l'ensemble formé par le nom du pays et celui de ses habitants. Nayabtigoungou Congo Kaboré, secrétaire général du gouvernement en 1984, en donne la raison en 2013 : faso est ajouté pour les dioulaphones de l'Ouest, -bè pour les Peuls du Sahel, « pour prendre en compte les trois grandes régions du pays ».",
             "sources": [
               {
                 "title": "La Haute-Volta devient Burkina Faso : un territoire qui se crée, se défait et s'affirme au rythme des enjeux, colloque « Le territoire, lien ou frontière ? », Paris, 2-4 octobre 1995",
@@ -99,6 +129,24 @@
                 "source_kind": "academic",
                 "page": "p. 9",
                 "notes": "Communication archivée par l'Institut de recherche pour le développement, relue le 10 octobre 2026. Le nouveau nom doit « rompre avec ce passé néo-colonial » ; « Burkina Faso signifie : le pays des hommes intègres » ; le terme burkinabè « emprunte aux trois langues principales du pays »."
+              },
+              {
+                "title": "Du Burkina Faso et des Burkinabè : Nous sommes burkinaBÈ, pas burkinaBÉ ni burkinais, ni burkinabaises, ni burkina-fassiens",
+                "author": "Louis-Dominique Ouédraogo",
+                "year": 2018,
+                "url": "https://lefaso.net/spip.php?article84432",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Tribune d'un secrétaire général des Affaires étrangères en poste en 1984, republiée le 5 août 2024, lue le 15 octobre 2026. Elle cite l'ordonnance « n°84-83 CNR.PRES du 2 août 1984 » et la circulaire n° 84-15 du Journal officiel du 16 août 1984 ; ces références n'ont pas été vérifiées dans le Journal officiel."
+              },
+              {
+                "title": "Nayabtigoungou Congo Kaboré, secrétaire général du gouvernement sous la Révolution : « C’est grâce à Blaise Compaoré qu’on parle aujourd’hui du Burkina Faso »",
+                "author": "Sidwaya, repris par thomassankara.net",
+                "year": 2013,
+                "url": "https://www.thomassankara.net/nayabtigoungou-congo-kabore-secretaire-general-du-gouvernement-sous-la-revolution-cest-grace-a-blaise-compaore-quon-parle-aujourdhui-du-burkina-faso/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Entretien publié par Sidwaya, repris le 11 décembre 2013, lu le 15 octobre 2026. Témoignage d'un participant au conseil des ministres de 1984, recueilli 29 ans après ; un seul témoin ; le titre attribue le nom à Blaise Compaoré, alors chef de l'État."
               }
             ]
           },
@@ -106,19 +154,33 @@
             "period": {
               "from": 1984,
               "to": 1984,
-              "label": "2 août 1984"
+              "label": "1er-4 août 1984"
             },
             "era": "modern",
-            "statement": "Le nom Burkina Faso apparaît dans une ordonnance du 2 août 1984, écrit Bourkina Fâso, dans la forme longue République démocratique et populaire du Bourkina Fâso, selon Jeune Afrique. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays et ses peuples existaient bien avant lui.",
-            "formAsWritten": "Bourkina Fâso",
+            "statement": "Le nom Burkina Faso apparaît dans l'ordonnance n° 84-043/CNR/PRES du Conseil national de la révolution, datée du 2 août 1984, qui prend effet le 4 août. Une ordonnance de 1985 la cite sous ce numéro. Son article 1er dit : « le territoire libre d'Afrique […] dénommé Haute-Volta, s'appelle désormais le Burkina Faso ». Le texte que reproduit Burkina 24 écrit Burkina Faso et le signe « Capitaine Thomas ». Jeune Afrique écrit que l'ordonnance disait « Bourkina Fâso ». Louis-Dominique Ouédraogo, haut fonctionnaire en 1984, rapporte qu'une circulaire du même mois demandait de prononcer « Bourkina ». Qui a proposé le nom ? Un participant, Nayabtigoungou Congo Kaboré, secrétaire général du gouvernement, l'a raconté en 2013. Selon lui, plusieurs noms sont proposés en conseil des ministres, chacun dans une langue : « République du Faso », « République du Moogho », « Léédymè ». Le mot burkina est retenu sur l'avis de Blaise Compaoré. Thomas Sankara ajoute ensuite faso, pour les dioulaphones de l'Ouest, et la terminaison -bè, pour les Peuls. C'est le récit d'un seul témoin, publié vingt-neuf ans après ; les autres sources lues ne disent pas qui a proposé le nom. La plus ancienne trace datée que le projet connaît est l'annonce de Radio France Internationale, le 1er août 1984, que The Christian Science Monitor rapporte le 3 août en écrivant « Bourkina Fasso ». Le pays et ses peuples existaient bien avant ce nom.",
+            "formAsWritten": "Bourkina Fasso",
             "birth": true,
             "actors": [
               {
                 "name": "Thomas Sankara",
-                "role": "capitaine, à la tête du pays depuis le 4 août 1983"
+                "role": "capitaine, président du Conseil national de la révolution, signataire de l'ordonnance ; ajoute faso et -bè selon N. Congo Kaboré"
+              },
+              {
+                "name": "Blaise Compaoré",
+                "role": "capitaine, ministre ; fait retenir le mot burkina selon N. Congo Kaboré"
               }
             ],
             "sources": [
+              {
+                "title": "Le 4 août 1984, Thomas Sankara rebaptisait la Haute-Volta en Burkina Faso (Burkina 24)",
+                "author": "Rédaction Burkina 24",
+                "year": 2021,
+                "url": "https://burkina24.com/2021/08/04/le-4-aout-1984-thomas-sankara-rebaptisait-la-haute-volta-en-burkina-faso/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "page": "articles 1 à 6",
+                "notes": "Reproduit le texte de l'ordonnance tel que lu à la télévision, daté « Ouagadougou le 2 août 1984 », signé « Capitaine Thomas ». Lu le 15 octobre 2026."
+              },
               {
                 "title": "Le 4 août 1984, Thomas Sankara rebaptisait la Haute-Volta en Burkina Faso",
                 "author": "Benjamin Roger, Jeune Afrique",
@@ -128,6 +190,56 @@
                 "source_kind": "press",
                 "page": "deuxième paragraphe",
                 "notes": "Article de presse publié en juillet 2014, republié en 2021, consulté le 10 octobre 2026. Il date l'ordonnance du 2 août 1984, donne l'orthographe d'origine « Bourkina Fâso », et traduit burkina par « homme intègre » en mooré et faso par « terre natale » en dioula."
+              },
+              {
+                "title": "Du Burkina Faso et des Burkinabè : Nous sommes burkinaBÈ, pas burkinaBÉ ni burkinais, ni burkinabaises, ni burkina-fassiens",
+                "author": "Louis-Dominique Ouédraogo",
+                "year": 2018,
+                "url": "https://lefaso.net/spip.php?article84432",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Tribune d'un secrétaire général des Affaires étrangères en poste en 1984, republiée le 5 août 2024, lue le 15 octobre 2026. Elle cite l'ordonnance « n°84-83 CNR.PRES du 2 août 1984 » et la circulaire n° 84-15 du Journal officiel du 16 août 1984 ; ces références n'ont pas été vérifiées dans le Journal officiel.",
+                "page": "passage sur la circulaire n° 84-15"
+              },
+              {
+                "title": "Upper Volta is changing its name under new regime",
+                "author": "The Christian Science Monitor",
+                "year": 1984,
+                "url": "https://www.csmonitor.com/1984/0803/080336.html",
+                "tier": "unverified",
+                "source_kind": "press",
+                "page": "News In Brief, 3 août 1984",
+                "notes": "Rapporte l'annonce de Radio France Internationale du mercredi 1er août 1984 : « Bourkina Fasso ». Lu le 15 octobre 2026."
+              },
+              {
+                "title": "Burkina Faso: Polity Style",
+                "author": "Archontology.org",
+                "year": null,
+                "url": "https://www.archontology.org/nations/burkina_faso/01_polity.php",
+                "tier": "unverified",
+                "source_kind": "repository",
+                "notes": "Situe l'ordonnance au Journal officiel du Burkina Faso n° 33, 16 août 1984, p. 804. Lu le 15 octobre 2026.",
+                "page": "notice « Burkina Faso: Polity Style », note sur l’ordonnance du 2 août 1984"
+              },
+              {
+                "title": "Ordonnance n° 85-04/CNR/PRES portant protection du patrimoine culturel (29 août 1985), visas",
+                "author": "Conseil national de la révolution",
+                "year": 1985,
+                "url": "https://www.african-archaeology.net/heritage_laws/burkina_o29081985.html",
+                "tier": "unverified",
+                "source_kind": "repository",
+                "notes": "Transcription hébergée par WWW Virtual Library African Archaeology, lue le 15 octobre 2026 : « Vu L'Ordonnance N° 84-043/CNR/PRES du 2 août 1984, portant changement d'appellation et symboles de la Nation ». Journal officiel non consulté.",
+                "page": "visas"
+              },
+              {
+                "title": "Nayabtigoungou Congo Kaboré, secrétaire général du gouvernement sous la Révolution : « C’est grâce à Blaise Compaoré qu’on parle aujourd’hui du Burkina Faso »",
+                "author": "Sidwaya, repris par thomassankara.net",
+                "year": 2013,
+                "url": "https://www.thomassankara.net/nayabtigoungou-congo-kabore-secretaire-general-du-gouvernement-sous-la-revolution-cest-grace-a-blaise-compaore-quon-parle-aujourdhui-du-burkina-faso/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Entretien publié par Sidwaya, repris le 11 décembre 2013, lu le 15 octobre 2026. Témoignage d'un participant au conseil des ministres de 1984, recueilli 29 ans après ; un seul témoin ; le titre attribue le nom à Blaise Compaoré, alors chef de l'État.",
+                "page": "réponse à la question « Il y a donc eu de vifs débats ? »"
               }
             ]
           },
@@ -282,7 +394,7 @@
               "label": "Époque coloniale"
             },
             "era": "colonial",
-            "statement": "Le nom Haute-Volta désigne une colonie située dans le bassin des Volta, comme l'historien Michel Izard appelle cette région. Les sources lues ne disent pas qui a proposé ce nom ni pourquoi il a été retenu.",
+            "statement": "Le nom Haute-Volta désigne une colonie située dans le bassin des Volta, comme l'historien Michel Izard appelle cette région. Le nom Volta lui-même est un mot portugais : des marins venus acheter de l'or sur la côte de l'actuel Ghana l'employaient déjà au début du XVIe siècle ; on ne sait pas qui l'a donné. Le plus ancien texte lu qui le nomme est le livre de navigation de Duarte Pacheco Pereira, écrit vers 1505 : « un fleuve qui s'appelle le Rio da Volta ». En portugais, volta veut dire tour, détour ou retour ; le texte ne dit pas pourquoi les marins ont choisi ce nom. Maurice Delafosse, en 1912, y voit soit les méandres du fleuve, soit un nom local entendu à son embouchure ; la journaliste Elizabeth Ohene rapporte que les bateaux y faisaient demi-tour, alors que Pacheco décrit la côte au-delà du fleuve. Les Ewe l'appellent Amu, selon Elizabeth Ohene ; plus au nord, écrit Delafosse, chaque peuple l'appelle simplement « le fleuve ». En février 1918, Delafosse propose une colonie pour les populations « du groupe dit voltaïque ». Les sources lues ne disent pas qui a proposé le nom Haute-Volta.",
             "aspect": "meaning",
             "sources": [
               {
@@ -303,6 +415,45 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "notes": "Page consultée le 10 octobre 2026. Elle reproduit le décret du 1er mars 1919, publié au Journal officiel de la République française du 20 mai 1919, et retrace la région Volta de 1899, la suppression de 1932 et le rétablissement de 1947 par la loi n° 47-1707 du 4 septembre 1947."
+              },
+              {
+                "title": "Esmeraldo de situ orbis",
+                "author": "Duarte Pacheco Pereira, éd. R. E. de Azevedo Basto",
+                "year": 1892,
+                "url": "https://archive.org/details/esmeraldodesitu00peregoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "livre II, ch. 6-7, p. 70-71",
+                "notes": "Texte écrit vers 1505-1508, lu le 15 octobre 2026 : « hum Rio que se chama ho Rio da volta ». Le texte ne dit pas pourquoi le fleuve porte ce nom."
+              },
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), 1re série, t. I",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://ugspace.ug.edu.gh/server/api/core/bitstreams/170518d8-781c-4ae0-be8d-7eb7ad0217c0/content",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 63, note 1",
+                "notes": "Lu le 15 octobre 2026. Deux explications du nom, sans trancher : les « sinuosités de son cours inférieur » ou un nom local de l'embouchure, « Folila », rapporté par ouï-dire. Le fleuve « ne porte pas, dans les langues locales, de nom spécial ». Texte d'un administrateur colonial français."
+              },
+              {
+                "title": "I have got names of regions on my mind",
+                "author": "Elizabeth Ohene, Graphic Online",
+                "year": 2018,
+                "url": "https://www.graphic.com.gh/features/opinion/ghananews-have-got-names-of-regions-on-my-mind.html",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Chronique du 12 décembre 2018, lue le 15 octobre 2026 : les Ewe appellent le fleuve Amu, les Akan Firaw ; le nom serait celui du lieu où les bateaux portugais faisaient demi-tour."
+              },
+              {
+                "title": "La Haute-Volta devient Burkina Faso : un territoire qui se crée, se défait et s'affirme au rythme des enjeux, colloque « Le territoire, lien ou frontière ? », Paris, 2-4 octobre 1995",
+                "author": "Alain Maharaux",
+                "year": 1995,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers08-09/010014865-32.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2-3",
+                "notes": "Communication archivée par l'Institut de recherche pour le développement, relue le 15 octobre 2026. « Début 1897, la région Niger-Volta est créée » ; en février 1918, Maurice Delafosse propose une colonie pour « les populations du groupe dit voltaïque »."
               }
             ]
           },
@@ -336,7 +487,7 @@
               "label": "1899"
             },
             "era": "colonial",
-            "statement": "Avant le nom Haute-Volta, on parle de la région Volta pour désigner ces territoires conquis par la France, qui forment en 1899 un territoire militaire, selon la Digithèque de l'université de Perpignan.",
+            "statement": "Avant le nom Haute-Volta, l'administration française crée début 1897 la région Niger-Volta, selon Alain Maharaux, puis parle de la région Volta pour désigner ces territoires conquis, qui forment en 1899 un territoire militaire, selon la Digithèque de l'université de Perpignan.",
             "before": true,
             "sources": [
               {
@@ -347,6 +498,16 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "notes": "Page consultée le 10 octobre 2026. Elle reproduit le décret du 1er mars 1919, publié au Journal officiel de la République française du 20 mai 1919, et retrace la région Volta de 1899, la suppression de 1932 et le rétablissement de 1947 par la loi n° 47-1707 du 4 septembre 1947."
+              },
+              {
+                "title": "La Haute-Volta devient Burkina Faso : un territoire qui se crée, se défait et s'affirme au rythme des enjeux, colloque « Le territoire, lien ou frontière ? », Paris, 2-4 octobre 1995",
+                "author": "Alain Maharaux",
+                "year": 1995,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers08-09/010014865-32.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2-3",
+                "notes": "Communication archivée par l'Institut de recherche pour le développement, relue le 15 octobre 2026. « Début 1897, la région Niger-Volta est créée » ; en février 1918, Maurice Delafosse propose une colonie pour « les populations du groupe dit voltaïque »."
               }
             ]
           }
@@ -550,15 +711,15 @@
         "name": "Touareg",
         "selfAppellation": "Kel Tamasheq / Imuhagh",
         "exonyms": [
-          "Touareg (terme français)",
-          "\"Targui\" (terme arabe)",
+          "Touareg (terme français, venu de l'arabe)",
+          "\"Targui\" (singulier, forme française venue de l'arabe)",
           "\"Berbères du désert\" (terme descriptif)"
         ],
         "peopleId": "PPL_TUAREG",
         "mainRegion": "Nord du Burkina Faso, Sahara",
         "languages": ["Tamasheq (taq", "ISO 639-3)", "français"],
         "languageFamily": "FLG_BERBERE",
-        "appellationRemarks": "Les personnes concernées se nomment Kel Tamasheq ou Imuhagh. Touareg est le nom donné de l'extérieur le plus courant en français. Les sources ne signalent pas de sens insultant pour ces noms."
+        "appellationRemarks": "Les personnes concernées se nomment Kel Tamasheq ou Imuhagh. Touareg est le nom donné de l'extérieur le plus courant en français. En 1864, des Touareg du Nord le tenaient pour une injure venue des Arabes, selon l'explorateur Henri Duveyrier."
       }
     ],
     "culture": {

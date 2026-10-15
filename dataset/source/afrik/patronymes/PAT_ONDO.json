@@ -6,7 +6,7 @@
   },
   "id": "PAT_ONDO",
   "nameMain": "Ondo",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Ondo",
@@ -32,7 +32,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -78,7 +78,7 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "la recherche web et bibliographique combinant « Ondo », « Ondó », « Fang », « Gabon », « Guinée équatoriale », « patronyme », « onomastique », « étymologie », « clan », « transmission », « alliance », « caste », « homonyme » et « nécrologie », ainsi que la page Forebears dédiée n'ont pas établi que la catégorie de système nominal portée par la fiche provisoire décrive ce nom lui-même ; elle reste une hypothèse de classement et n'est pas transformée en fait."
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues le rangent parmi les noms de personnes des Fang du Gabon. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant. La fiche reste donc parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "alliances",
@@ -124,9 +124,9 @@
             "aspect": "usage",
             "sources": [
               {
-                "title": "Anthroponymie comparée makina, fang et Saké : quelques spécificités sur les noms de personnes chez les Makina du Gabon",
+                "title": "Anthroponymie comparée makina, fang et saké : quelques spécificités sur les noms de personnes chez les Makina du Gabon",
                 "author": "Fabrice Agyune Ndone",
-                "year": null,
+                "year": 2006,
                 "url": "http://www.ddl.cnrs.fr/fulltext/fflac/Agyune%20Ndone_2006.pdf",
                 "tier": "referenced",
                 "source_kind": "academic",

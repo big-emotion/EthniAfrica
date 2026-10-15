@@ -1,0 +1,1965 @@
+{
+  "_meta": {
+    "format": "AFRIK JSON v2",
+    "entity": "lieu",
+    "directives": "Premier lieu de la taille d'un continent (countryIds pour les 54 pays qui ont une fiche). Chaque forme garde sa date et sa source ; les explications de l'origine d'Africa partagent un hypothesisGroup et ne sont pas classées. Proposition soumise à l'approbation 2 de la série « L'Afrique n'est pas un tout »."
+  },
+  "id": "LOC_AFRIQUE",
+  "placeType": "autre",
+  "nameMain": "Afrique",
+  "countryIds": [
+    "AGO",
+    "BDI",
+    "BEN",
+    "BFA",
+    "BWA",
+    "CAF",
+    "CIV",
+    "CMR",
+    "COD",
+    "COG",
+    "COM",
+    "CPV",
+    "DJI",
+    "DZA",
+    "EGY",
+    "ERI",
+    "ETH",
+    "GAB",
+    "GHA",
+    "GIN",
+    "GMB",
+    "GNB",
+    "GNQ",
+    "KEN",
+    "LBR",
+    "LBY",
+    "LSO",
+    "MAR",
+    "MDG",
+    "MLI",
+    "MOZ",
+    "MRT",
+    "MUS",
+    "MWI",
+    "NAM",
+    "NER",
+    "NGA",
+    "RWA",
+    "SDN",
+    "SEN",
+    "SLE",
+    "SOM",
+    "SSD",
+    "STP",
+    "SWZ",
+    "SYC",
+    "TCD",
+    "TGO",
+    "TUN",
+    "TZA",
+    "UGA",
+    "ZAF",
+    "ZMB",
+    "ZWE"
+  ],
+  "associatedPeoples": [],
+  "summary": "Le nom Afrique vient du latin Africa, qui a d'abord désigné une terre autour de Carthage, puis tout le continent. L'origine du mot Africa est discutée, et nous ne savons pas qui l'a le premier étendu au continent entier.",
+  "gaps": [
+    {
+      "field": "countryIds",
+      "reason": "Le Sahara occidental, territoire au statut contesté, fait partie du continent, mais il n'a pas encore de fiche pays sur le site."
+    },
+    {
+      "field": "nameHistory.names",
+      "reason": "Nous n'avons trouvé aucun texte ancien qui donne un nom commun du continent entier dans une langue de ses peuples. Nous n'avons pas trouvé non plus de chercheur qui affirme qu'un tel nom n'a jamais existé. Ne pas trouver de trace ne prouve pas qu'il n'y en a pas."
+    },
+    {
+      "field": "nameHistory.names",
+      "reason": "Le nom Kemet est parfois présenté comme un ancien nom de l'Afrique. Dans les sources que nous avons lues, il désigne l'Égypte : les anciens Égyptiens appelaient ainsi leur pays, « la terre noire », selon le grammairien Alan Gardiner. Nous n'avons trouvé aucun spécialiste de l'Égypte ancienne qui l'emploie pour tout le continent."
+    },
+    {
+      "field": "nameHistory.names[0].accounts",
+      "reason": "Nous ne savons pas encore quand la forme française Afrique apparaît pour la première fois dans un texte."
+    },
+    {
+      "field": "nameHistory.names[1].namedBy",
+      "reason": "Le mot Africa est une forme latine, mais nous ne savons pas qui l'a employé le premier. L'Encyclopédie berbère juge possible que les Carthaginois aient déjà donné ce nom à la terre des Afri."
+    },
+    {
+      "field": "nameHistory.names[1].accounts",
+      "reason": "Nous ne savons pas qui, le premier, a employé le nom Africa pour toute une partie du monde. Vers 40 av. J.-C., Salluste dit déjà que la plupart des auteurs le font."
+    },
+    {
+      "field": "nameHistory.names[1].accounts",
+      "reason": "Samuel Bochart attribue aussi l'explication par aprica à Servius, dans son commentaire du livre VI de l'Énéide. Nous n'avons pas encore retrouvé ce passage."
+    },
+    {
+      "field": "nameHistory.names[1].accounts",
+      "reason": "Nous avons lu Flavius Josèphe dans une traduction anglaise de 1737, pas dans le texte grec."
+    },
+    {
+      "field": "nameHistory.names[1].accounts",
+      "reason": "Nous avons lu Léon l'Africain dans l'édition italienne de 1588 et dans la traduction anglaise de 1600. Nous n'avons pas encore vu la traduction française d'Épaulard, parue en 1956."
+    },
+    {
+      "field": "nameHistory.names[1].accounts",
+      "reason": "L'article « Ifrikos » de l'Encyclopédie berbère n'a pas pu être lu : sa page en ligne affiche le texte d'un autre article."
+    },
+    {
+      "field": "nameHistory.names[1].accounts",
+      "reason": "Nous n'avons pas encore étudié les cartes de Mercator."
+    },
+    {
+      "field": "nameHistory.names[2].languageOfOrigin",
+      "reason": "Nous ne savons pas de quelle langue vient le nom Afri. Stéphane Gsell pense à une langue locale, sans pouvoir le montrer."
+    },
+    {
+      "field": "nameHistory.names[3].accounts",
+      "reason": "Nous ne savons pas quand le nom arabe Ifrīqiya a commencé à désigner tout le continent. Nous avons lu Ibn Khaldūn seulement en traduction anglaise."
+    },
+    {
+      "field": "nameHistory.names[5].accounts",
+      "reason": "Nous avons lu Hérodote seulement dans une traduction anglaise, et les cartes de Blaeu seulement par leurs notices de catalogue, pas sur les cartes elles-mêmes."
+    },
+    {
+      "field": "nameHistory.names[6].accounts",
+      "reason": "Nous avons lu Thevet, Dapper, Ogilby, Moréri et La Croix dans le texte que les copies numériques ont lu automatiquement, pas encore sur les images des pages. Nous n'avons trouvé aucune trace du nom Alkebulan plus ancienne que 1575 ; cela ne prouve pas qu'il n'en existe pas. Nous ne savons pas d'où Thevet tient ce nom, ni de quelle langue il vient."
+    },
+    {
+      "field": "nameHistory.names[6].accounts",
+      "reason": "Nous avons lu le livre de Yosef ben-Jochannan seulement par extraits, dans une réimpression de 1989. La date de la première édition, 1970, vient des catalogues de bibliothèques. Dans les passages lus, l'auteur ne dit pas de quelle langue vient le mot."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Remains of Old Latin, vol. I : Ennius and Caecilius",
+      "author": "Ennius, édition et traduction anglaise d'E. H. Warmington",
+      "year": 1935,
+      "url": "https://archive.org/download/remainsofoldlati01warmuoft/remainsofoldlati01warmuoft_djvu.txt",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Collection Loeb. Annales, fragment 306, p. 114-115 ; Satires, fragment 10-11, p. 386-387. Ennius a vécu de 239 à 169 av. J.-C. Ses vers ne sont connus que par des citations plus tardives, chez Festus et Nonius. Lu dans la transcription numérique du livre."
+    },
+    {
+      "title": "De oratore, livre III",
+      "author": "Cicéron, texte latin publié par The Latin Library",
+      "year": null,
+      "url": "https://www.thelatinlibrary.com/cicero/oratore3.shtml",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Livre III, 167, où Cicéron cite le vers d'Ennius sur l'Afrique. L'éditeur du texte n'est pas nommé sur la page."
+    },
+    {
+      "title": "Notes to Book I, dans The History and Description of Africa de Léon l'Africain",
+      "author": "Robert Brown",
+      "year": 1896,
+      "url": "https://archive.org/download/india.history.resource.88579/88579_djvu.txt",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Tome I, p. 191-193 : note de l'éditeur sur le nom de l'Afrique, publiée à Londres par la Hakluyt Society."
+    },
+    {
+      "title": "Histoire ancienne de l'Afrique du Nord, tome VII : La République romaine et les rois indigènes",
+      "author": "Stéphane Gsell",
+      "year": 1928,
+      "url": "https://archive.org/download/histoireancienne07gsel/histoireancienne07gsel_djvu.txt",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Paris, Hachette. Pages 1 à 7. Lu dans la transcription numérique du livre."
+    },
+    {
+      "title": "Ifrîkiyya",
+      "author": "A. Siraj et E.B., Encyclopédie berbère",
+      "year": 2001,
+      "url": "https://journals.openedition.org/encyclopedieberbere/1545",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Encyclopédie berbère, tome 24, p. 3660-3666. A. Siraj signe les premiers paragraphes, E.B. la partie « De l'Africa à l'Ifrîqiyya »."
+    },
+    {
+      "title": "Afri",
+      "author": "T. Kotula et J. Peyras, Encyclopédie berbère",
+      "year": 1985,
+      "url": "https://journals.openedition.org/encyclopedieberbere/886",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Encyclopédie berbère, tome 2, p. 208-215. T. Kotula signe la première partie, J. Peyras la seconde, « La Gens des Afri »."
+    },
+    {
+      "title": "Africa",
+      "author": "W. Vycichl, Encyclopédie berbère",
+      "year": 1985,
+      "url": "https://journals.openedition.org/encyclopedieberbere/888",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Encyclopédie berbère, tome 2, p. 216-217."
+    },
+    {
+      "title": "Ifren (Beni)",
+      "author": "C. Agabi, Encyclopédie berbère",
+      "year": 2001,
+      "url": "https://journals.openedition.org/encyclopedieberbere/1543",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Encyclopédie berbère, tome 24, p. 3657-3659. L'article ne parle ni des Afri ni du nom Afrique."
+    },
+    {
+      "title": "Geographiae sacrae pars altera : Chanaan, seu de coloniis et sermone Phoenicum",
+      "author": "Samuel Bochart",
+      "year": 1651,
+      "url": "https://archive.org/download/geographisacrpar00boch/page/n614_w1500.jpg",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Livre I, chapitre XXV, « De Africae nomine & fertilitate ». Première édition en 1646 ; nous avons lu l'édition de Caen de 1651. Le passage sur le mot « épi » a été lu dans la transcription numérique de la page suivante, pas encore sur l'image de la page."
+    },
+    {
+      "title": "Etymologiae, livre IX",
+      "author": "Isidore de Séville, texte latin de W. M. Lindsay publié par LacusCurtius",
+      "year": 1911,
+      "url": "https://penelope.uchicago.edu/Thayer/L/Roman/Texts/Isidore/9*.html",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Livre IX, 2, 115. Isidore est mort en 636."
+    },
+    {
+      "title": "Etymologiae, livre XIV",
+      "author": "Isidore de Séville, texte latin de W. M. Lindsay publié par LacusCurtius",
+      "year": 1911,
+      "url": "https://penelope.uchicago.edu/Thayer/L/Roman/Texts/Isidore/14*.html",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Livre XIV, 5, 1-2. Isidore est mort en 636."
+    },
+    {
+      "title": "Etymologiae, livre XIV (The Latin Library)",
+      "author": "Isidore de Séville, texte latin publié par The Latin Library",
+      "year": null,
+      "url": "https://www.thelatinlibrary.com/isidore/14.shtml",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Livre XIV, 2, sur la division du monde."
+    },
+    {
+      "title": "Cod. Sang. 236, p. 89",
+      "author": "Stiftsbibliothek de Saint-Gall, e-codices",
+      "year": null,
+      "url": "https://e-codices.unifr.ch/en/csg/0236/89",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Manuscrit des livres XI à XX des Étymologies d'Isidore, copié à Saint-Gall dans la seconde moitié du IXe siècle."
+    },
+    {
+      "title": "Carte du monde en T dans l'O, dans les Etymologiae d'Isidore de Séville",
+      "author": "Boston Public Library, Norman B. Leventhal Map & Education Center",
+      "year": 1483,
+      "url": "https://digitalcommonwealth.org/search/commonwealth:q524n595p",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Imprimé à Venise par Peter Löslein en 1483."
+    },
+    {
+      "title": "Antiquities of the Jews",
+      "author": "Flavius Josèphe, traduction anglaise de William Whiston",
+      "year": 1737,
+      "url": "https://www.gutenberg.org/cache/epub/2848/pg2848.txt",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Livre I, chapitre 15. Josèphe écrit vers 93-94. Il cite Alexandre Polyhistor, du Ier siècle av. J.-C., qui cite lui-même Cléodème Malchus, auteur juif dont la date est incertaine. Lu dans l'édition du projet Gutenberg."
+    },
+    {
+      "title": "Della descrittione dell'Africa et delle cose notabili che quivi sono, dans Navigationi et viaggi, tome I",
+      "author": "Léon l'Africain (al-Ḥasan al-Wazzān), édition de G. B. Ramusio",
+      "year": 1588,
+      "url": "https://archive.org/download/primovolumequart00ramu/primovolumequart00ramu_djvu.txt",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Première partie, section « Africa onde detta ». Texte italien imprimé pour la première fois à Venise en 1550 ; nous avons lu l'édition de 1588, dans sa transcription numérique."
+    },
+    {
+      "title": "The History and Description of Africa",
+      "author": "Léon l'Africain (al-Ḥasan al-Wazzān), traduction anglaise de John Pory (1600), édition de Robert Brown",
+      "year": 1896,
+      "url": "https://archive.org/details/historyanddescr03porygoog",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Tome I, p. 122-123. Publié à Londres par la Hakluyt Society."
+    },
+    {
+      "title": "Historiae Romanae, livre II",
+      "author": "Velleius Paterculus, texte latin publié par The Latin Library",
+      "year": null,
+      "url": "https://www.thelatinlibrary.com/vell2.html",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Livre II, 38, 2. Velleius écrit sous l'empereur Tibère."
+    },
+    {
+      "title": "Africa Proconsularis (Roman province)",
+      "author": "Pleiades, notice de J. J. Wilkes, S. T. Parker, R. S. Bagnall et d'autres contributeurs",
+      "year": null,
+      "url": "https://pleiades.stoa.org/places/981504/json",
+      "tier": "referenced",
+      "source_kind": "repository",
+      "notes": "Répertoire en ligne des lieux de l'Antiquité. Seule la description de la notice a été lue."
+    },
+    {
+      "title": "Naturalis historia, livre III",
+      "author": "Pline l'Ancien, texte latin publié par LacusCurtius",
+      "year": null,
+      "url": "https://penelope.uchicago.edu/Thayer/L/Roman/Texts/Pliny_the_Elder/3*.html",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Livre III, 3. L'ouvrage est dédié en 77 apr. J.-C."
+    },
+    {
+      "title": "Naturalis historia, livre V",
+      "author": "Pline l'Ancien, texte latin publié par LacusCurtius",
+      "year": null,
+      "url": "https://penelope.uchicago.edu/Thayer/L/Roman/Texts/Pliny_the_Elder/5*.html",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Livre V, 1 et 23. L'ouvrage est dédié en 77 apr. J.-C."
+    },
+    {
+      "title": "Naturalis historia, livre V (The Latin Library)",
+      "author": "Pline l'Ancien, texte latin publié par The Latin Library",
+      "year": null,
+      "url": "https://www.thelatinlibrary.com/pliny.nh5.html",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Livre V, 25, sur les deux provinces d'Afrique."
+    },
+    {
+      "title": "Bellum Iugurthinum",
+      "author": "Salluste, texte latin publié par LacusCurtius",
+      "year": null,
+      "url": "https://penelope.uchicago.edu/Thayer/L/Roman/Texts/Sallust/Bellum_Jugurthinum/1*.html",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Chapitre 17, 3-4. Écrit vers 41-40 av. J.-C."
+    },
+    {
+      "title": "De agri cultura",
+      "author": "Caton l'Ancien, texte latin publié par The Latin Library",
+      "year": null,
+      "url": "https://www.thelatinlibrary.com/cato/cato.agri.html",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Chapitre VIII, 1."
+    },
+    {
+      "title": "Poenulus",
+      "author": "Plaute, texte latin publié par The Latin Library",
+      "year": null,
+      "url": "https://www.thelatinlibrary.com/plautus/poenulus.shtml",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Vers 1011-1012."
+    },
+    {
+      "title": "T. Macci Plauti Comoediae, tome II",
+      "author": "Plaute, édition de W. M. Lindsay",
+      "year": 1905,
+      "url": "https://archive.org/download/tmacciplauticomo02plauuoft/tmacciplauticomo02plauuoft_djvu.txt",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Fragments, Caecus vel Praedones, fragment X. Le fragment n'est connu que par une citation plus tardive ; sa place dans la pièce est inconnue."
+    },
+    {
+      "title": "Noctes Atticae, livre IV",
+      "author": "Aulu-Gelle, texte latin publié par The Latin Library",
+      "year": null,
+      "url": "https://www.thelatinlibrary.com/gellius/gellius4.shtml",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Livre IV, 18, 3. Aulu-Gelle écrit au IIe siècle apr. J.-C. et dit tirer ces paroles des annales."
+    },
+    {
+      "title": "The Reception of Ptolemy's Geography (End of the Fourteenth to Beginning of the Sixteenth Century)",
+      "author": "Patrick Gautier Dalché, dans The History of Cartography, tome 3",
+      "year": 2007,
+      "url": "https://press.uchicago.edu/books/HOC/HOC_V3_Pt1/HOC_VOLUME3_Part1_chapter9.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "University of Chicago Press, chapitre 9, p. 290-291, 301, 303 et 317."
+    },
+    {
+      "title": "Commercial Cartography and Map Production in the Low Countries, 1500-ca. 1672",
+      "author": "Cornelis Koeman, Günter Schilder, Marco van Egmond et Peter van der Krogt, dans The History of Cartography, tome 3",
+      "year": 2007,
+      "url": "https://press.uchicago.edu/books/HOC/HOC_V3_Pt2/HOC_VOLUME3_Part2_chapter44.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "University of Chicago Press, chapitre 44, p. 1302."
+    },
+    {
+      "title": "Africae tabula nova",
+      "author": "Abraham Ortelius, notice de la Boston Public Library (Norman B. Leventhal Map & Education Center)",
+      "year": 1570,
+      "url": "https://collections.leventhalmap.org/search/commonwealth:st74cw506",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Carte parue dans le Theatrum orbis terrarum, à Anvers, en 1570. Nous avons lu la notice du catalogue."
+    },
+    {
+      "title": "Bakrī et le Maghreb",
+      "author": "Emmanuelle Tixier, dans Islamisation et arabisation de l'Occident musulman médiéval (VIIe-XIIe siècle)",
+      "year": 2011,
+      "url": "https://books.openedition.org/psorbonne/2527",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Éditions de la Sorbonne, sous la direction de Dominique Valérian."
+    },
+    {
+      "title": "The Muqaddimah: An Introduction to History, tome I",
+      "author": "Ibn Khaldūn, traduction anglaise de Franz Rosenthal",
+      "year": 1958,
+      "url": "https://archive.org/details/in.gov.ignca.16173",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Chapitre I, deuxième discussion préliminaire, et chapitre III, section 9. Lu dans la transcription numérique de la traduction, où les numéros de page ne sont pas lisibles."
+    },
+    {
+      "title": "The Idea of Africa",
+      "author": "V. Y. Mudimbe",
+      "year": 1994,
+      "url": "https://books.google.fr/books?id=yjbQnqI5HR0C",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Indiana University Press et James Currey. Préface, p. xi. Lu par extraits dans Google Livres."
+    },
+    {
+      "title": "Introduction, General History of Africa, vol. VIII : Africa since 1935",
+      "author": "Ali A. Mazrui",
+      "year": 1993,
+      "url": "https://archive.org/details/general_history_africa_viii",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "UNESCO, Heinemann et University of California Press. Chapitre 1, p. 9."
+    },
+    {
+      "title": "Black Man of the Nile and His Family",
+      "author": "Yosef A. A. ben-Jochannan",
+      "year": 1989,
+      "url": "https://books.google.fr/books?id=6EK3Bs1h1FUC",
+      "tier": "referenced",
+      "source_kind": "unknown",
+      "notes": "Réimpression de Black Classic Press, à Baltimore. Selon les catalogues de bibliothèques, la première édition date de 1970. Pages 47, 75 et 120, lues par extraits dans Google Livres."
+    },
+    {
+      "title": "Yosef A.A. ben-Jochannan: A Bibliographic Introduction",
+      "author": "Africology: The Journal of Pan African Studies, dernière partie annotée par Itibari M. Zulu",
+      "year": 2016,
+      "url": "https://web.archive.org/web/2016/http://www.jpanafrican.org/docs/vol8no10/8.10-3-DB-Bib.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Tome 8, numéro 10, p. 5, 10 et 12. Lu dans la copie conservée par la Wayback Machine."
+    },
+    {
+      "title": "La Cosmographie universelle, tome I",
+      "author": "André Thevet",
+      "year": 1575,
+      "url": "https://archive.org/details/lacosmographievn01thev",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Imprimé à Paris par Pierre L'Huillier. Le nom Alkebulan figure dans la légende de la carte de l'Afrique, au livre III, chapitre I, f. 66, et au livre V, chapitre XII, f. 145. Lu dans la transcription numérique de l'exemplaire de la John Carter Brown Library, pas encore sur les images des pages."
+    },
+    {
+      "title": "Naukeurige beschrijvinge der Afrikaensche gewesten",
+      "author": "Olfert Dapper",
+      "year": 1668,
+      "url": "https://archive.org/details/gri_33125009359999",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Imprimé à Amsterdam par Jacob van Meurs. Lu dans la transcription numérique de l'exemplaire du Getty Research Institute ; la page n'y est pas lisible."
+    },
+    {
+      "title": "Africa: being an accurate description of the regions of Ægypt, Barbary, Lybia, and Billedulgerid",
+      "author": "John Ogilby, d'après Olfert Dapper",
+      "year": 1670,
+      "url": "https://archive.org/details/bim_early-english-books-1641-1700_africa-being-an-accurat_ogilby-john_1670",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Imprimé à Londres. Version anglaise du livre d'Olfert Dapper paru en 1668. Lu dans la transcription numérique."
+    },
+    {
+      "title": "Le grand dictionaire historique, tome I",
+      "author": "Louis Moréri",
+      "year": 1683,
+      "url": "https://archive.org/details/bub_gb_gglqIgtFCfIC",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Édition de 1683. La première édition, de 1674, n'a pas pu être lue. Lu dans la transcription numérique, où plusieurs mots sont mal reconnus."
+    },
+    {
+      "title": "Description de l'Afrique",
+      "author": "Olfert Dapper, traduction française",
+      "year": 1686,
+      "url": "https://archive.org/details/bub_gb_lVFFVLhxVsEC",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Traduction française imprimée à Amsterdam. Lue dans la transcription numérique, où le mot Alkebulan ne se lit pas."
+    },
+    {
+      "title": "Relation universelle de l'Afrique ancienne et moderne, tome I",
+      "author": "Antoine Phérotée de La Croix",
+      "year": 1688,
+      "url": "https://archive.org/details/relationunivers00croigoog",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Imprimé à Lyon par Thomas Amaulry. Discours préliminaire, p. 36. Lu dans la transcription numérique, où le mot Alkebulan ne se lit pas."
+    },
+    {
+      "title": "Histoires, livre III",
+      "author": "Hérodote, traduction anglaise d'A. D. Godley publiée par Perseus",
+      "year": 1920,
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0126:book=3:chapter=114",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Livre III, 114, lu dans la traduction anglaise d'A. D. Godley."
+    },
+    {
+      "title": "De chorographia, livre I",
+      "author": "Pomponius Mela, texte latin publié par The Latin Library",
+      "year": null,
+      "url": "https://www.thelatinlibrary.com/pomponius1.html",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Livre I, 8 et 18-19. Ouvrage écrit vers 43-44 apr. J.-C."
+    },
+    {
+      "title": "Aethiopia inferior vel exterior ; Aethiopia superior vel interior",
+      "author": "Willem et Joan Blaeu, notices du catalogue de cartes de la bibliothèque de l'université Yale",
+      "year": null,
+      "url": "https://geoblacklight.library.yale.edu/catalog/bibid-4134218",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Notices bibid 4134218 et 8480781. Cartes de l'atlas de Willem et Joan Blaeu, publiées à Amsterdam au XVIIe siècle ; la bibliothèque date la première des années 1643-1650."
+    },
+    {
+      "title": "Egyptian Grammar, being an Introduction to the Study of Hieroglyphs",
+      "author": "Alan H. Gardiner",
+      "year": 1957,
+      "url": "https://archive.org/details/egyptiangrammar0000alan",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Troisième édition revue, Oxford, 1957 ; première édition en 1927. Liste des signes, O 49, et vocabulaire, entrée km."
+    }
+  ],
+  "nameHistory": {
+    "summary": "Le nom Afrique est le nom actuel du continent en français ; il vient du latin Africa. Ce mot a d'abord désigné une terre autour de Carthage, puis une province romaine, avant de nommer une des trois parties du monde. Les Grecs appelaient cette terre Libye, et le nom Éthiopie a longtemps désigné les terres du sud. Le nom arabe Ifrīqiya a désigné tantôt une région du nord, tantôt un espace plus large. Nous n'avons trouvé aucun texte ancien qui donne un nom commun que les peuples du continent auraient donné au continent entier. Le nom Alkebulan apparaît en 1575 chez le cosmographe français André Thevet, qui l'attribue aux Arabes et aux Éthiopiens sans citer de source ; en 1970, Yosef ben-Jochannan l'a présenté comme le plus ancien nom du continent. L'origine du mot Africa est discutée : les explications proposées sont présentées plus bas, côte à côte.",
+    "names": [
+      {
+        "nameText": "Afrique",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "lat",
+        "namedBy": null,
+        "shortLine": "Du latin Africa, nom d'une province romaine autour de Carthage, puis de tout le continent.",
+        "usedIn": ["fra"],
+        "periodLabel": "Forme française du latin Africa, écrit avant 169 av. J.-C.",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Français"
+            },
+            "statement": "Le nom Afrique est la forme française du latin Africa. Les historiens qui écrivent en français traduisent ainsi le nom de la province romaine : Stéphane Gsell rend Africa nova par « l'Afrique nouvelle ».",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire ancienne de l'Afrique du Nord, tome VII : La République romaine et les rois indigènes",
+                "author": "Stéphane Gsell",
+                "year": 1928,
+                "url": "https://archive.org/download/histoireancienne07gsel/histoireancienne07gsel_djvu.txt",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "tome VII, p. 5-7"
+              },
+              {
+                "title": "Ifrîkiyya",
+                "author": "A. Siraj et E.B., Encyclopédie berbère",
+                "year": 2001,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1545",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 12"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1993,
+              "to": 1993,
+              "label": "1993"
+            },
+            "statement": "Le nom Afrique n'a peut-être pas été inventé par les Européens, écrit Ali Mazrui en 1993 dans l'Histoire générale de l'Afrique de l'UNESCO, mais ils ont joué un rôle décisif pour l'appliquer à tout le continent tel que nous le connaissons (notre traduction). Ses mots exacts sont : « Europeans may not have invented the name ‘Africa’, but they did play a decisive role in applying it to the continental landmass that we recognize today ». Il place ce rôle dans l'histoire de la cartographie européenne.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Introduction, General History of Africa, vol. VIII : Africa since 1935",
+                "author": "Ali A. Mazrui",
+                "year": 1993,
+                "url": "https://archive.org/details/general_history_africa_viii",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "chapitre 1, p. 9"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1994,
+              "to": 1994,
+              "label": "1994"
+            },
+            "statement": "Le nom Afrique pose à lui seul un problème, selon V. Y. Mudimbe : « the very name of the continent is itself a major problem », écrit-il en 1994. Il explique que les Grecs appelaient cette terre Libye. Les Romains avaient une province nommée Africa, et leurs savants employaient le même mot pour la troisième partie du monde, après l'Europe et l'Asie. Pour lui, la confusion commence avec les Romains et devient complète avec la « découverte » européenne du continent au XVe siècle (notre traduction).",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "The Idea of Africa",
+                "author": "V. Y. Mudimbe",
+                "year": 1994,
+                "url": "https://books.google.fr/books?id=yjbQnqI5HR0C",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "préface, p. xi"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Africa",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "lat",
+        "namedBy": null,
+        "shortLine": "Le nom latin, écrit avant 169 av. J.-C. ; son origine est discutée et plusieurs explications existent.",
+        "periodLabel": "Écrit en latin avant 169 av. J.-C., titre des cartes du continent au XVIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": -239,
+              "to": -169,
+              "label": "Du vivant d'Ennius, entre 239 et 169 av. J.-C."
+            },
+            "era": "polity",
+            "statement": "Le nom Africa apparaît pour la première fois dans deux fragments du poète latin Ennius, selon Robert Brown, qui note en 1896 qu'Ennius l'emploie comme un nom déjà connu de ses lecteurs. Un vers dit : « Africa terribili tremit horrida terra tumultu », c'est-à-dire : l'Afrique, terre farouche, tremble d'un terrible tumulte (notre traduction). Un autre fragment parle d'Africa terra, la terre d'Afrique. Ces vers ne nous sont parvenus que par des auteurs plus tardifs, comme Cicéron et Festus. Festus prend le premier vers comme exemple d'une figure de style où le nom d'une terre est mis pour ses habitants. C'est le plus ancien emploi trouvé, pas la date où le nom a été créé.",
+            "birth": true,
+            "formAsWritten": "Africa",
+            "actors": [
+              {
+                "name": "Ennius",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Cicéron et Festus",
+                "role": "citent ses vers, plus tard"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Remains of Old Latin, vol. I : Ennius and Caecilius",
+                "author": "Ennius, édition et traduction anglaise d'E. H. Warmington",
+                "year": 1935,
+                "url": "https://archive.org/download/remainsofoldlati01warmuoft/remainsofoldlati01warmuoft_djvu.txt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "Annales, fragment 306, p. 114-115 ; Satires, fragment 10-11, p. 386-387"
+              },
+              {
+                "title": "De oratore, livre III",
+                "author": "Cicéron, texte latin publié par The Latin Library",
+                "year": null,
+                "url": "https://www.thelatinlibrary.com/cicero/oratore3.shtml",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "III, 167"
+              },
+              {
+                "title": "Notes to Book I, dans The History and Description of Africa de Léon l'Africain",
+                "author": "Robert Brown",
+                "year": 1896,
+                "url": "https://archive.org/download/india.history.resource.88579/88579_djvu.txt",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "tome I, p. 191-193"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": -146,
+              "label": "Avant 146 av. J.-C."
+            },
+            "era": "polity",
+            "statement": "Le nom Africa a des mots de la même famille déjà employés en latin avant 146 av. J.-C. : les adjectifs africus et africanus, « africain », formés sur le nom Afer, selon Stéphane Gsell. Caton parle ainsi de figues africaines, et Plaute de rats africains. Scipion l'Ancien reçoit le surnom d'Africanus après sa victoire sur Hannibal à Zama, à la fin du IIIe siècle av. J.-C. Des paroles qui lui sont attribuées disent qu'il a vaincu Hannibal « in terra Africa », sur la terre d'Afrique ; mais elles ne sont connues que par Aulu-Gelle, un auteur du IIe siècle de notre ère.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire ancienne de l'Afrique du Nord, tome VII : La République romaine et les rois indigènes",
+                "author": "Stéphane Gsell",
+                "year": 1928,
+                "url": "https://archive.org/download/histoireancienne07gsel/histoireancienne07gsel_djvu.txt",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "tome VII, p. 2-3, notes 6 et 7"
+              },
+              {
+                "title": "Ifrîkiyya",
+                "author": "A. Siraj et E.B., Encyclopédie berbère",
+                "year": 2001,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1545",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 6"
+              },
+              {
+                "title": "De agri cultura",
+                "author": "Caton l'Ancien, texte latin publié par The Latin Library",
+                "year": null,
+                "url": "https://www.thelatinlibrary.com/cato/cato.agri.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "VIII, 1"
+              },
+              {
+                "title": "Poenulus",
+                "author": "Plaute, texte latin publié par The Latin Library",
+                "year": null,
+                "url": "https://www.thelatinlibrary.com/plautus/poenulus.shtml",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "vers 1011-1012"
+              },
+              {
+                "title": "Noctes Atticae, livre IV",
+                "author": "Aulu-Gelle, texte latin publié par The Latin Library",
+                "year": null,
+                "url": "https://www.thelatinlibrary.com/gellius/gellius4.shtml",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "IV, 18, 3"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": -146,
+              "to": -146,
+              "label": "146 av. J.-C."
+            },
+            "era": "polity",
+            "statement": "Le nom Africa devient en 146 av. J.-C. celui d'une province romaine, après la chute de Carthage. Elle s'appelle provincia Africa : dans ce nom, Africa est un adjectif, « la province africaine », explique Stéphane Gsell. L'historien romain Velleius Paterculus écrit que Scipion Émilien, après avoir détruit Carthage, « Africam in formulam redegit provinciae », c'est-à-dire qu'il fit de l'Afrique une province (notre traduction). La province couvre l'ancien territoire de Carthage, à l'est d'une ligne qui va de Thabraka, sur la côte nord, jusqu'à Thaenae, au sud de Sfax. Elle s'étend bien au-delà des terres des Afri, selon l'Encyclopédie berbère.",
+            "actors": [
+              {
+                "name": "Scipion Émilien",
+                "role": "général romain, vainqueur de Carthage"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Historiae Romanae, livre II",
+                "author": "Velleius Paterculus, texte latin publié par The Latin Library",
+                "year": null,
+                "url": "https://www.thelatinlibrary.com/vell2.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "II, 38, 2"
+              },
+              {
+                "title": "Histoire ancienne de l'Afrique du Nord, tome VII : La République romaine et les rois indigènes",
+                "author": "Stéphane Gsell",
+                "year": 1928,
+                "url": "https://archive.org/download/histoireancienne07gsel/histoireancienne07gsel_djvu.txt",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "tome VII, livre I, chapitre I, p. 1-2"
+              },
+              {
+                "title": "Ifrîkiyya",
+                "author": "A. Siraj et E.B., Encyclopédie berbère",
+                "year": 2001,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1545",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 12"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": -46,
+              "to": -27,
+              "label": "De 46 à 27 av. J.-C."
+            },
+            "era": "polity",
+            "statement": "Le nom Africa s'étend en 46 av. J.-C. à une deuxième province, quand Jules César annexe la plus grande partie du royaume numide de Juba Ier : c'est l'Africa nova, « l'Afrique nouvelle ». L'ancienne province devient l'Africa vetus, « la vieille Afrique ». Pline l'Ancien décrit encore ces deux provinces, séparées par un fossé. Auguste les réunit en une seule province, l'Africa proconsularis, en 27 av. J.-C. selon l'Encyclopédie berbère ; le répertoire Pleiades date cette réunion des environs de 35 av. J.-C.",
+            "actors": [
+              {
+                "name": "Jules César",
+                "role": "crée la province d'Africa nova"
+              },
+              {
+                "name": "Auguste",
+                "role": "réunit les deux provinces"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Ifrîkiyya",
+                "author": "A. Siraj et E.B., Encyclopédie berbère",
+                "year": 2001,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1545",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 12"
+              },
+              {
+                "title": "Histoire ancienne de l'Afrique du Nord, tome VII : La République romaine et les rois indigènes",
+                "author": "Stéphane Gsell",
+                "year": 1928,
+                "url": "https://archive.org/download/histoireancienne07gsel/histoireancienne07gsel_djvu.txt",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "tome VII, p. 5-7"
+              },
+              {
+                "title": "Naturalis historia, livre V (The Latin Library)",
+                "author": "Pline l'Ancien, texte latin publié par The Latin Library",
+                "year": null,
+                "url": "https://www.thelatinlibrary.com/pliny.nh5.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "V, 25"
+              },
+              {
+                "title": "Africa Proconsularis (Roman province)",
+                "author": "Pleiades, notice de J. J. Wilkes, S. T. Parker, R. S. Bagnall et d'autres contributeurs",
+                "year": null,
+                "url": "https://pleiades.stoa.org/places/981504/json",
+                "tier": "referenced",
+                "source_kind": "repository"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": -41,
+              "to": -40,
+              "label": "Vers 40 av. J.-C."
+            },
+            "era": "polity",
+            "statement": "Le nom Africa désigne aussi, chez les auteurs latins, une des trois parties du monde. Vers 40 av. J.-C., l'historien Salluste écrit que la plupart des auteurs placent l'Afrique comme troisième partie, à côté de l'Asie et de l'Europe ; quelques-uns seulement la rangent dans l'Europe. Ce sens large existait donc déjà avant lui. Son Afrique va du détroit qui relie la Méditerranée à l'Océan, à l'ouest, jusqu'au Catabathmos, un plateau entre la Cyrénaïque et l'Égypte, à l'est. Stéphane Gsell note que le mot Africa a pris ce sens large en géographie, comme le grec Libyē.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bellum Iugurthinum",
+                "author": "Salluste, texte latin publié par LacusCurtius",
+                "year": null,
+                "url": "https://penelope.uchicago.edu/Thayer/L/Roman/Texts/Sallust/Bellum_Jugurthinum/1*.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "17, 3-4"
+              },
+              {
+                "title": "Histoire ancienne de l'Afrique du Nord, tome VII : La République romaine et les rois indigènes",
+                "author": "Stéphane Gsell",
+                "year": 1928,
+                "url": "https://archive.org/download/histoireancienne07gsel/histoireancienne07gsel_djvu.txt",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "tome VII, p. 5-7"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 77,
+              "to": 77,
+              "label": "77 apr. J.-C."
+            },
+            "era": "polity",
+            "statement": "Le nom Africa a deux sens à la fois chez Pline l'Ancien, en 77 apr. J.-C. Il divise le monde en trois parties, l'Europe, l'Asie et l'Afrique, et note que les Grecs ont appelé l'Afrique Libye. Mais il nomme aussi, près de Carthage, la région « quae proprie vocetur Africa », c'est-à-dire celle qu'on appelle l'Afrique au sens propre (notre traduction).",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Naturalis historia, livre III",
+                "author": "Pline l'Ancien, texte latin publié par LacusCurtius",
+                "year": null,
+                "url": "https://penelope.uchicago.edu/Thayer/L/Roman/Texts/Pliny_the_Elder/3*.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "III, 3"
+              },
+              {
+                "title": "Naturalis historia, livre V",
+                "author": "Pline l'Ancien, texte latin publié par LacusCurtius",
+                "year": null,
+                "url": "https://penelope.uchicago.edu/Thayer/L/Roman/Texts/Pliny_the_Elder/5*.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "V, 1 et V, 23"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 636,
+              "label": "Avant 636, puis dans les manuscrits du IXe siècle"
+            },
+            "statement": "Le nom Africa reste le nom de la troisième partie du monde chez Isidore de Séville, mort en 636 : « tertia Africa nuncupatur », la troisième partie s'appelle Afrique (notre traduction). Dans des manuscrits de ses Étymologies, dès la seconde moitié du IXe siècle, une carte du monde en forme de T dans un O illustre sa description des parties du monde. Une version imprimée de cette carte paraît à Venise en 1483.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Etymologiae, livre XIV (The Latin Library)",
+                "author": "Isidore de Séville, texte latin publié par The Latin Library",
+                "year": null,
+                "url": "https://www.thelatinlibrary.com/isidore/14.shtml",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "XIV, 2"
+              },
+              {
+                "title": "Cod. Sang. 236, p. 89",
+                "author": "Stiftsbibliothek de Saint-Gall, e-codices",
+                "year": null,
+                "url": "https://e-codices.unifr.ch/en/csg/0236/89",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 89"
+              },
+              {
+                "title": "Carte du monde en T dans l'O, dans les Etymologiae d'Isidore de Séville",
+                "author": "Boston Public Library, Norman B. Leventhal Map & Education Center",
+                "year": 1483,
+                "url": "https://digitalcommonwealth.org/search/commonwealth:q524n595p",
+                "tier": "referenced",
+                "source_kind": "archive"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1406,
+              "to": 1427,
+              "label": "De 1406 à 1427"
+            },
+            "statement": "Le nom Africa remplace le grec Libyē dans les copies latines de la Géographie de Ptolémée, un ouvrage écrit en grec. La traduction latine d'Angeli date d'entre 1406 et 1409. Dans une copie faite pour le cardinal Guillaume Fillastre en 1427, les cartes de cette partie du monde s'appellent Afrique I à IV. Dans un autre manuscrit du XVe siècle, la quatrième carte d'Afrique prolonge même le continent au-delà de l'équateur, jusque vers le vingt-cinquième degré de latitude.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Reception of Ptolemy's Geography (End of the Fourteenth to Beginning of the Sixteenth Century)",
+                "author": "Patrick Gautier Dalché, dans The History of Cartography, tome 3",
+                "year": 2007,
+                "url": "https://press.uchicago.edu/books/HOC/HOC_V3_Pt1/HOC_VOLUME3_Part1_chapter9.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 290-291, 301, 303 et 317"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1570,
+              "to": 1596,
+              "label": "De 1570 à 1596"
+            },
+            "statement": "Le nom Africa est le titre de la carte du continent qu'Abraham Ortelius publie à Anvers en 1570, dans son recueil de cartes Theatrum orbis terrarum : « Africae tabula nova », c'est-à-dire nouvelle carte de l'Afrique. Au-dessus du titre, Ortelius reprend les mots de Pline : « Africam Graeci Libyam app. », les Grecs l'ont appelée Libye (notre traduction). En 1596, une carte murale de l'Afrique en onze feuilles fait partie d'une série de cartes des continents.",
+            "aspect": "usage",
+            "actors": [
+              {
+                "name": "Abraham Ortelius",
+                "role": "auteur de la carte de 1570"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Africae tabula nova",
+                "author": "Abraham Ortelius, notice de la Boston Public Library (Norman B. Leventhal Map & Education Center)",
+                "year": 1570,
+                "url": "https://collections.leventhalmap.org/search/commonwealth:st74cw506",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "notice du catalogue"
+              },
+              {
+                "title": "Commercial Cartography and Map Production in the Low Countries, 1500-ca. 1672",
+                "author": "Cornelis Koeman, Günter Schilder, Marco van Egmond et Peter van der Krogt, dans The History of Cartography, tome 3",
+                "year": 2007,
+                "url": "https://press.uchicago.edu/books/HOC/HOC_V3_Pt2/HOC_VOLUME3_Part2_chapter44.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1302"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Explication publiée en 1928, puis en 1985"
+            },
+            "statement": "Le nom Africa signifierait « la terre des Afri », un peuple du nord de la Tunisie actuelle, distinct des Carthaginois. C'est l'explication de Stéphane Gsell en 1928 et de W. Vycichl en 1985. L'Encyclopédie berbère ajoute que les Carthaginois ont peut-être déjà donné ce nom à la terre de leurs plus proches voisins. Une question reste ouverte : d'où vient le nom des Afri ? « L'origine de cet ethnique demeure inconnue », écrit T. Kotula en 1985 ; un ethnique est un nom de peuple. Gsell parlait déjà de « notre entière ignorance sur l'origine de ce nom ».",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine du nom Africa",
+            "sources": [
+              {
+                "title": "Histoire ancienne de l'Afrique du Nord, tome VII : La République romaine et les rois indigènes",
+                "author": "Stéphane Gsell",
+                "year": 1928,
+                "url": "https://archive.org/download/histoireancienne07gsel/histoireancienne07gsel_djvu.txt",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "tome VII, p. 2-3 et p. 5"
+              },
+              {
+                "title": "Africa",
+                "author": "W. Vycichl, Encyclopédie berbère",
+                "year": 1985,
+                "url": "https://journals.openedition.org/encyclopedieberbere/888",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 4"
+              },
+              {
+                "title": "Ifrîkiyya",
+                "author": "A. Siraj et E.B., Encyclopédie berbère",
+                "year": 2001,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1545",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 12"
+              },
+              {
+                "title": "Afri",
+                "author": "T. Kotula et J. Peyras, Encyclopédie berbère",
+                "year": 1985,
+                "url": "https://journals.openedition.org/encyclopedieberbere/886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Hypothèse publiée par W. Vycichl en 1985"
+            },
+            "statement": "Le nom Africa pourrait se rattacher, à travers le nom des Afri, à Īfrī, l'ancêtre dont descendraient les Banū Īfran, une grande branche de la tribu berbère des Zenāta. W. Vycichl avance ce lien avec prudence : la forme ifrī « existe peut-être » comme nom de cet ancêtre, écrit-il. Pour lui, Ifren serait le pluriel d'Afer. J. Peyras reprend cette idée à propos d'un lieu-dit berbère de la région, Ragoubet Lefriane, qui serait peut-être « la colline des Afri ». En 1896, Robert Brown signalait déjà un rapprochement entre Afer et les Ifre, d'après Meltzer, auteur d'une histoire de Carthage. Le mot berbère ifri, « grotte », est rapproché du nom des Beni Ifren dans un autre article de l'Encyclopédie berbère, mais cet article ne parle pas du nom Afrique.",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine du nom Africa",
+            "sources": [
+              {
+                "title": "Africa",
+                "author": "W. Vycichl, Encyclopédie berbère",
+                "year": 1985,
+                "url": "https://journals.openedition.org/encyclopedieberbere/888",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 6-8"
+              },
+              {
+                "title": "Afri",
+                "author": "T. Kotula et J. Peyras, Encyclopédie berbère",
+                "year": 1985,
+                "url": "https://journals.openedition.org/encyclopedieberbere/886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 19"
+              },
+              {
+                "title": "Notes to Book I, dans The History and Description of Africa de Léon l'Africain",
+                "author": "Robert Brown",
+                "year": 1896,
+                "url": "https://archive.org/download/india.history.resource.88579/88579_djvu.txt",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "tome I, p. 191-193"
+              },
+              {
+                "title": "Ifren (Beni)",
+                "author": "C. Agabi, Encyclopédie berbère",
+                "year": 2001,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1543",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Explication publiée en 1646"
+            },
+            "statement": "Le nom Africa viendrait d'un mot punique, la langue de Carthage, qui voudrait dire « épi » : l'Afrique serait la terre des épis de blé. C'est la proposition de Samuel Bochart dans sa Géographie sacrée, publiée en 1646. Il rapproche ce mot de l'arabe pheric, « épi ». Bochart écarte d'autres explications, dont celle par l'hébreu epher, « poussière », qu'il attribue à d'autres auteurs. En 1896, Robert Brown lui prête pourtant cette explication par la poussière, que Bochart rejetait.",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine du nom Africa",
+            "sources": [
+              {
+                "title": "Geographiae sacrae pars altera : Chanaan, seu de coloniis et sermone Phoenicum",
+                "author": "Samuel Bochart",
+                "year": 1651,
+                "url": "https://archive.org/download/geographisacrpar00boch/page/n614_w1500.jpg",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "livre I, chapitre XXV"
+              },
+              {
+                "title": "Notes to Book I, dans The History and Description of Africa de Léon l'Africain",
+                "author": "Robert Brown",
+                "year": 1896,
+                "url": "https://archive.org/download/india.history.resource.88579/88579_djvu.txt",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "tome I, p. 191-193"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 636,
+              "label": "Rapportée par Isidore de Séville, mort en 636"
+            },
+            "statement": "Le nom Africa viendrait du latin aprica, « exposée au soleil », parce que cette terre est ouverte au ciel et au soleil, sans la rigueur du froid. Isidore de Séville rapporte cette idée comme l'avis de certains, quidam existimant en latin ; il ne la propose pas lui-même. En 1646, Samuel Bochart l'attribue à Isidore et au commentateur Servius.",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine du nom Africa",
+            "sources": [
+              {
+                "title": "Etymologiae, livre XIV",
+                "author": "Isidore de Séville, texte latin de W. M. Lindsay publié par LacusCurtius",
+                "year": 1911,
+                "url": "https://penelope.uchicago.edu/Thayer/L/Roman/Texts/Isidore/14*.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "XIV, 5, 2"
+              },
+              {
+                "title": "Geographiae sacrae pars altera : Chanaan, seu de coloniis et sermone Phoenicum",
+                "author": "Samuel Bochart",
+                "year": 1651,
+                "url": "https://archive.org/download/geographisacrpar00boch/page/n614_w1500.jpg",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "livre I, chapitre XXV"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Rapportée par Samuel Bochart en 1646"
+            },
+            "statement": "Le nom Africa viendrait d'un mot grec, aphrikē, qui voudrait dire « sans froid ». Samuel Bochart cite cette explication en 1646 sans nommer son auteur, et la rejette : selon lui, ce mot était inconnu des anciens Grecs. Pour W. Vycichl, le mot grec Aphrikē n'est que la transcription du latin Africa, et il désignait d'abord la province romaine. Le chapitre de Léon l'Africain sur le nom de l'Afrique ne contient pas cette explication.",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine du nom Africa",
+            "sources": [
+              {
+                "title": "Geographiae sacrae pars altera : Chanaan, seu de coloniis et sermone Phoenicum",
+                "author": "Samuel Bochart",
+                "year": 1651,
+                "url": "https://archive.org/download/geographisacrpar00boch/page/n614_w1500.jpg",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "livre I, chapitre XXV"
+              },
+              {
+                "title": "Africa",
+                "author": "W. Vycichl, Encyclopédie berbère",
+                "year": 1985,
+                "url": "https://journals.openedition.org/encyclopedieberbere/888",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 10"
+              },
+              {
+                "title": "Della descrittione dell'Africa et delle cose notabili che quivi sono, dans Navigationi et viaggi, tome I",
+                "author": "Léon l'Africain (al-Ḥasan al-Wazzān), édition de G. B. Ramusio",
+                "year": 1588,
+                "url": "https://archive.org/download/primovolumequart00ramu/primovolumequart00ramu_djvu.txt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "première partie, section « Africa onde detta »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1550,
+              "to": 1550,
+              "label": "1550"
+            },
+            "statement": "Le nom Africa se dit en arabe Ifrīqiya et viendrait du verbe arabe faraqa, « diviser », écrit Léon l'Africain (al-Ḥasan al-Wazzān) dans sa Description de l'Afrique, imprimée en 1550. Selon cette explication, cette partie du monde est séparée de l'Europe par la Méditerranée et de l'Asie par le Nil.",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine du nom Africa",
+            "sources": [
+              {
+                "title": "Della descrittione dell'Africa et delle cose notabili che quivi sono, dans Navigationi et viaggi, tome I",
+                "author": "Léon l'Africain (al-Ḥasan al-Wazzān), édition de G. B. Ramusio",
+                "year": 1588,
+                "url": "https://archive.org/download/primovolumequart00ramu/primovolumequart00ramu_djvu.txt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "première partie, section « Africa onde detta »"
+              },
+              {
+                "title": "The History and Description of Africa",
+                "author": "Léon l'Africain (al-Ḥasan al-Wazzān), traduction anglaise de John Pory (1600), édition de Robert Brown",
+                "year": 1896,
+                "url": "https://archive.org/details/historyanddescr03porygoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome I, p. 122-123"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1550,
+              "to": 1550,
+              "label": "1550"
+            },
+            "statement": "Le nom Africa viendrait d'Ifricus, un roi de « l'Arabie Heureuse » qui aurait été le premier à habiter ces régions. C'est la seconde explication que rapporte Léon l'Africain en 1550, comme l'avis d'autres personnes. Samuel Bochart mentionne aussi, en 1646, ce récit des Arabes sur le roi Ifricus.",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine du nom Africa",
+            "sources": [
+              {
+                "title": "Della descrittione dell'Africa et delle cose notabili che quivi sono, dans Navigationi et viaggi, tome I",
+                "author": "Léon l'Africain (al-Ḥasan al-Wazzān), édition de G. B. Ramusio",
+                "year": 1588,
+                "url": "https://archive.org/download/primovolumequart00ramu/primovolumequart00ramu_djvu.txt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "première partie, section « Africa onde detta »"
+              },
+              {
+                "title": "The History and Description of Africa",
+                "author": "Léon l'Africain (al-Ḥasan al-Wazzān), traduction anglaise de John Pory (1600), édition de Robert Brown",
+                "year": 1896,
+                "url": "https://archive.org/details/historyanddescr03porygoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome I, p. 122-123"
+              },
+              {
+                "title": "Geographiae sacrae pars altera : Chanaan, seu de coloniis et sermone Phoenicum",
+                "author": "Samuel Bochart",
+                "year": 1651,
+                "url": "https://archive.org/download/geographisacrpar00boch/page/n614_w1500.jpg",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "livre I, chapitre XXV"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 94,
+              "label": "Récit ancien, rapporté par Flavius Josèphe vers 93-94"
+            },
+            "statement": "Le nom Africa viendrait d'Apher et de Japhran, deux fils d'Abraham et de Ketura, alliés d'Hercule quand il combattit en Libye. Ce récit est celui de Cléodème Malchus, un auteur juif dont la date est incertaine. Alexandre Polyhistor le cite au Ier siècle av. J.-C., puis Flavius Josèphe le reprend vers 93-94. Josèphe donne aussi une autre version, avec un descendant d'Abraham nommé Ophren, dont les petits-enfants auraient appelé le pays Afrique. Isidore de Séville rapporte la même idée d'un descendant d'Abraham nommé Afer, comme l'avis d'autres auteurs.",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine du nom Africa",
+            "sources": [
+              {
+                "title": "Antiquities of the Jews",
+                "author": "Flavius Josèphe, traduction anglaise de William Whiston",
+                "year": 1737,
+                "url": "https://www.gutenberg.org/cache/epub/2848/pg2848.txt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "livre I, chapitre 15"
+              },
+              {
+                "title": "Etymologiae, livre IX",
+                "author": "Isidore de Séville, texte latin de W. M. Lindsay publié par LacusCurtius",
+                "year": 1911,
+                "url": "https://penelope.uchicago.edu/Thayer/L/Roman/Texts/Isidore/9*.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "IX, 2, 115"
+              },
+              {
+                "title": "Etymologiae, livre XIV",
+                "author": "Isidore de Séville, texte latin de W. M. Lindsay publié par LacusCurtius",
+                "year": 1911,
+                "url": "https://penelope.uchicago.edu/Thayer/L/Roman/Texts/Isidore/14*.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "XIV, 5, 2"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1976,
+              "to": 1976,
+              "label": "Hypothèse publiée en 1976"
+            },
+            "statement": "Le nom Africa viendrait du nom d'un vent, l'Africus ventus, qui souffle du sud-ouest vers l'Italie et apporte la pluie. C'est l'hypothèse de M. Fruyt en 1976, rapportée par T. Kotula, qui juge qu'elle « ne semble pas devoir être retenue ». Pour W. Vycichl, c'est le vent qui tient son nom de l'Afrique, et non l'inverse.",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine du nom Africa",
+            "sources": [
+              {
+                "title": "Afri",
+                "author": "T. Kotula et J. Peyras, Encyclopédie berbère",
+                "year": 1985,
+                "url": "https://journals.openedition.org/encyclopedieberbere/886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1",
+                "notes": "L'article de M. Fruyt, « D'Africus ventus à Africa terra », paru dans la Revue de Philologie en 1976, n'a pas été lu."
+              },
+              {
+                "title": "Africa",
+                "author": "W. Vycichl, Encyclopédie berbère",
+                "year": 1985,
+                "url": "https://journals.openedition.org/encyclopedieberbere/888",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 9"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Afri",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom latin d'un peuple des environs de Carthage ; au singulier, Afer. Son origine est inconnue.",
+        "periodLabel": "Écrit en latin dès la fin du IIIe siècle av. J.-C.",
+        "accounts": [
+          {
+            "period": {
+              "from": -250,
+              "to": -200,
+              "label": "Fin du IIIe siècle av. J.-C."
+            },
+            "era": "polity",
+            "statement": "Le nom Afri, au singulier Afer, est écrit en latin dès la fin du IIIe siècle av. J.-C. On le trouve chez le poète comique Plaute, dans un fragment de pièce où un personnage s'écrie « Afer est », c'est un Afer (notre traduction). Le poète Térence porte aussi le surnom d'Afer, « qui rappelait son origine », selon Stéphane Gsell. C'est le plus ancien emploi trouvé ; il ne dit pas quand le nom est né.",
+            "birth": true,
+            "formAsWritten": "Afer",
+            "actors": [
+              {
+                "name": "Plaute",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "T. Macci Plauti Comoediae, tome II",
+                "author": "Plaute, édition de W. M. Lindsay",
+                "year": 1905,
+                "url": "https://archive.org/download/tmacciplauticomo02plauuoft/tmacciplauticomo02plauuoft_djvu.txt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "fragments, Caecus vel Praedones, fragment X"
+              },
+              {
+                "title": "Histoire ancienne de l'Afrique du Nord, tome VII : La République romaine et les rois indigènes",
+                "author": "Stéphane Gsell",
+                "year": 1928,
+                "url": "https://archive.org/download/histoireancienne07gsel/histoireancienne07gsel_djvu.txt",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "tome VII, p. 2-3, note 10"
+              },
+              {
+                "title": "Ifrîkiyya",
+                "author": "A. Siraj et E.B., Encyclopédie berbère",
+                "year": 2001,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1545",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 6"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Antiquité, d'après les auteurs latins"
+            },
+            "era": "polity",
+            "statement": "Le nom Afri désignait, selon T. Kotula, les habitants d'origine de l'Afrique du Nord ancienne, et surtout les tribus qui vivaient dans la province de Carthage et autour d'elle, à la différence des Numides et des Maures, plus à l'ouest. L'historien romain Tite-Live distingue les Afri des Carthaginois, rappellent Stéphane Gsell et W. Vycichl. Pour l'Encyclopédie berbère, ce nom désignait la population des territoires que Carthage contrôlait.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Afri",
+                "author": "T. Kotula et J. Peyras, Encyclopédie berbère",
+                "year": 1985,
+                "url": "https://journals.openedition.org/encyclopedieberbere/886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1"
+              },
+              {
+                "title": "Histoire ancienne de l'Afrique du Nord, tome VII : La République romaine et les rois indigènes",
+                "author": "Stéphane Gsell",
+                "year": 1928,
+                "url": "https://archive.org/download/histoireancienne07gsel/histoireancienne07gsel_djvu.txt",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "tome VII, p. 2-3"
+              },
+              {
+                "title": "Africa",
+                "author": "W. Vycichl, Encyclopédie berbère",
+                "year": 1985,
+                "url": "https://journals.openedition.org/encyclopedieberbere/888",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 4"
+              },
+              {
+                "title": "Ifrîkiyya",
+                "author": "A. Siraj et E.B., Encyclopédie berbère",
+                "year": 2001,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1545",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 6"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Article publié en 1985"
+            },
+            "statement": "Le nom Afri ne correspond à aucun peuple précis connu, selon T. Kotula : les sources ne gardent aucune trace sûre d'une tribu dont le nom se serait conservé dans ce nom collectif. C'est pourquoi les Afri ne figurent pas dans le catalogue des tribus africaines de l'Antiquité dressé par J. Desanges.",
+            "aspect": "meaning",
+            "hypothesisGroup": "un peuple précis",
+            "sources": [
+              {
+                "title": "Afri",
+                "author": "T. Kotula et J. Peyras, Encyclopédie berbère",
+                "year": 1985,
+                "url": "https://journals.openedition.org/encyclopedieberbere/886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 2"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Article publié en 1985 ; inscription du Ier siècle"
+            },
+            "statement": "Le nom Afri désignait bien un peuple de la région, selon J. Peyras : les Afri de Suas et ceux d'Uccula formaient, pour lui, un même peuple. Une inscription d'Uccula, de la première moitié du Ier siècle, parle d'un decretum Afrorum, une décision des Afri. Certains chercheurs y voient la preuve qu'un peuple des Afri, sujet de Carthage, a survécu, rapporte l'Encyclopédie berbère.",
+            "aspect": "meaning",
+            "hypothesisGroup": "un peuple précis",
+            "sources": [
+              {
+                "title": "Afri",
+                "author": "T. Kotula et J. Peyras, Encyclopédie berbère",
+                "year": 1985,
+                "url": "https://journals.openedition.org/encyclopedieberbere/886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 10"
+              },
+              {
+                "title": "Ifrîkiyya",
+                "author": "A. Siraj et E.B., Encyclopédie berbère",
+                "year": 2001,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1545",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 7"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Explications publiées en 1928, puis en 1985"
+            },
+            "statement": "Le nom Afri a une origine inconnue. Stéphane Gsell, en 1928, juge qu'il vaut mieux « confesser notre entière ignorance » sur ce point. Il pense pourtant que le nom vient d'une langue locale, une idée que T. Kotula trouve vraisemblable en 1985. Les Romains l'auraient ensuite transmis sous une forme latine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire ancienne de l'Afrique du Nord, tome VII : La République romaine et les rois indigènes",
+                "author": "Stéphane Gsell",
+                "year": 1928,
+                "url": "https://archive.org/download/histoireancienne07gsel/histoireancienne07gsel_djvu.txt",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "tome VII, p. 5"
+              },
+              {
+                "title": "Afri",
+                "author": "T. Kotula et J. Peyras, Encyclopédie berbère",
+                "year": 1985,
+                "url": "https://journals.openedition.org/encyclopedieberbere/886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1"
+              },
+              {
+                "title": "Ifrîkiyya",
+                "author": "A. Siraj et E.B., Encyclopédie berbère",
+                "year": 2001,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1545",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 6"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ifrīqiya",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "shortLine": "La forme arabe du latin Africa : une région du nord, parfois tout le Maghreb ou tout le continent.",
+        "periodLabel": "En usage depuis la conquête arabe",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Au temps de la conquête arabe"
+            },
+            "era": "polity",
+            "statement": "Le nom Ifrīqiya est la forme arabe du latin Africa. Selon l'Encyclopédie berbère, les musulmans ont trouvé ce nom déjà en usage à leur arrivée, et savaient qu'il désignait une partie de l'Afrique à l'ouest de la Tripolitaine. Au temps de la conquête, il semble désigner surtout le territoire de l'actuelle Tunisie : ʿAmr ibn al-ʿĀṣ écrit au calife ʿUmar que Tripoli n'est qu'à neuf journées de marche de l'Ifrīqiya. Pour Stéphane Gsell, l'Ifrīqiya des Arabes correspondait à peu près à la province romaine d'Afrique de la fin de l'Empire.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Ifrîkiyya",
+                "author": "A. Siraj et E.B., Encyclopédie berbère",
+                "year": 2001,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1545",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1 et § 8"
+              },
+              {
+                "title": "Histoire ancienne de l'Afrique du Nord, tome VII : La République romaine et les rois indigènes",
+                "author": "Stéphane Gsell",
+                "year": 1928,
+                "url": "https://archive.org/download/histoireancienne07gsel/histoireancienne07gsel_djvu.txt",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "tome VII, p. 5-7"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Moyen Âge, selon les auteurs arabes"
+            },
+            "era": "polity",
+            "statement": "Le nom Ifrīqiya a eu, comme le latin Africa, un sens large et un sens étroit. Selon l'Encyclopédie berbère, les Arabes l'ont employé soit pour une partie de l'Afrique du Nord, soit pour tout le continent. Pour les premiers historiens de la conquête, il couvre souvent tout le Maghreb, de la Cyrénaïque à l'océan Atlantique. Les géographes tendent au contraire à le limiter aux terres des Aghlabides, une dynastie qui gouvernait l'ancienne province romaine, de Bougie aux environs de Barka. L'article conclut : « pour les Arabes, tout comme pour les Latins, l'Ifrîkiyya ou Africa avait une double signification dont l'une est large, l'autre restreinte ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Ifrîkiyya",
+                "author": "A. Siraj et E.B., Encyclopédie berbère",
+                "year": 2001,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1545",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1, § 8 et § 14-15"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1001,
+              "to": 1100,
+              "label": "XIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Ifrīqiya désigne une région parmi d'autres chez le géographe al-Bakrī, au XIe siècle : il décrit les routes de l'Ifrīqiya, puis celles du Maghreb central et du Maghreb extrême, selon Emmanuelle Tixier.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bakrī et le Maghreb",
+                "author": "Emmanuelle Tixier, dans Islamisation et arabisation de l'Occident musulman médiéval (VIIe-XIIe siècle)",
+                "year": 2011,
+                "url": "https://books.openedition.org/psorbonne/2527",
+                "tier": "referenced",
+                "source_kind": "academic"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Muqaddima d'Ibn Khaldūn"
+            },
+            "era": "polity",
+            "statement": "Le nom Ifrīqiya désigne chez Ibn Khaldūn une région de la côte. La Méditerranée, écrit-il, est bordée au sud par la côte du Maghreb : d'abord Tanger, puis l'Ifrīqiya, Barqa et Alexandrie (notre traduction, d'après la traduction anglaise de Franz Rosenthal). Il cite aussi une parole attribuée au calife ʿUmar : l'Ifrīqiya divise les cœurs de ses habitants, à cause du grand nombre de tribus et de groupes qui s'y trouvent. Le traducteur met le mot « divides » entre guillemets, ce qui semble signaler un jeu sur le verbe arabe faraqa, « diviser ».",
+            "aspect": "usage",
+            "actors": [
+              {
+                "name": "Ibn Khaldūn",
+                "role": "historien, emploie ce nom"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Muqaddimah: An Introduction to History, tome I",
+                "author": "Ibn Khaldūn, traduction anglaise de Franz Rosenthal",
+                "year": 1958,
+                "url": "https://archive.org/details/in.gov.ignca.16173",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "chapitre I, deuxième discussion préliminaire ; chapitre III, section 9"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1550,
+              "to": 1600,
+              "label": "1550, traduit en anglais en 1600"
+            },
+            "era": "polity",
+            "statement": "Le nom Ifrīqiya est écrit « Ifrichia » dans la Description de l'Afrique de Léon l'Africain (al-Ḥasan al-Wazzān), imprimée en italien en 1550 et lue ici dans l'édition de 1588. C'est, écrit-il, le nom de l'Afrique en arabe. Il ajoute que les Arabes s'imaginent que seule la contrée autour de Carthage, avec les régions situées à l'ouest, forme toute l'Afrique (notre traduction, d'après la traduction anglaise de 1600).",
+            "formAsWritten": "Ifrichia",
+            "actors": [
+              {
+                "name": "Léon l'Africain (al-Ḥasan al-Wazzān)",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "John Pory",
+                "role": "traduit le livre en anglais en 1600"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Della descrittione dell'Africa et delle cose notabili che quivi sono, dans Navigationi et viaggi, tome I",
+                "author": "Léon l'Africain (al-Ḥasan al-Wazzān), édition de G. B. Ramusio",
+                "year": 1588,
+                "url": "https://archive.org/download/primovolumequart00ramu/primovolumequart00ramu_djvu.txt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "première partie, section « Africa onde detta »"
+              },
+              {
+                "title": "The History and Description of Africa",
+                "author": "Léon l'Africain (al-Ḥasan al-Wazzān), traduction anglaise de John Pory (1600), édition de Robert Brown",
+                "year": 1896,
+                "url": "https://archive.org/details/historyanddescr03porygoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome I, p. 122-123"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Libye",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "grc",
+        "namedBy": "Les auteurs grecs",
+        "shortLine": "Le nom grec de cette terre, que les auteurs latins rendent par Africa.",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 77,
+              "label": "Nom grec, rapporté par Pline l'Ancien en 77 apr. J.-C."
+            },
+            "era": "polity",
+            "statement": "Le nom Libye, en grec Libyē, est le nom que les Grecs donnaient à cette terre. Pline l'Ancien l'écrit en 77 apr. J.-C. : « Africam Graeci Libyam appellavere », c'est-à-dire que les Grecs ont appelé l'Afrique Libye (notre traduction). Selon l'Encyclopédie berbère, le nom Africa a fini par désigner le continent que les Grecs avaient appelé Libye. V. Y. Mudimbe le rappelle aussi en 1994. En grec, le mot Aphrikē désignait d'abord la seule province romaine, selon W. Vycichl.",
+            "sources": [
+              {
+                "title": "Naturalis historia, livre V",
+                "author": "Pline l'Ancien, texte latin publié par LacusCurtius",
+                "year": null,
+                "url": "https://penelope.uchicago.edu/Thayer/L/Roman/Texts/Pliny_the_Elder/5*.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "V, 1"
+              },
+              {
+                "title": "Ifrîkiyya",
+                "author": "A. Siraj et E.B., Encyclopédie berbère",
+                "year": 2001,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1545",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 12"
+              },
+              {
+                "title": "The Idea of Africa",
+                "author": "V. Y. Mudimbe",
+                "year": 1994,
+                "url": "https://books.google.fr/books?id=yjbQnqI5HR0C",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "préface, p. xi"
+              },
+              {
+                "title": "Africa",
+                "author": "W. Vycichl, Encyclopédie berbère",
+                "year": 1985,
+                "url": "https://journals.openedition.org/encyclopedieberbere/888",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 10"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Éthiopie",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "grc",
+        "namedBy": "Les auteurs grecs",
+        "shortLine": "Un ancien nom grec des terres du sud, au-delà de l'Égypte, encore donné au sud du continent au XVIIe siècle.",
+        "periodLabel": "De l'Antiquité grecque au XVIIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "De l'Antiquité grecque aux atlas du XVIIe siècle"
+            },
+            "statement": "Le nom Éthiopie, en grec Aithiopia, désignait chez les auteurs grecs et latins les terres du sud, au-delà de l'Égypte. Pour l'historien grec Hérodote, l'Éthiopie est, vers le sud-ouest, la partie du monde qui s'étend le plus loin vers le couchant (notre traduction, d'après la traduction anglaise d'A. D. Godley). Vers 43 apr. J.-C., le géographe latin Pomponius Mela écrit que les Éthiopiens occupent tout le côté de l'Afrique tourné vers le midi (notre traduction). Au XVIIe siècle encore, l'atlas du cartographe Blaeu, publié à Amsterdam, partage le sud du continent entre une « Éthiopie inférieure », qui couvre l'Afrique australe, et une « Éthiopie supérieure », à l'est et au centre. Ce nom ne désignait pas l'État actuel d'Éthiopie.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoires, livre III",
+                "author": "Hérodote, traduction anglaise d'A. D. Godley publiée par Perseus",
+                "year": 1920,
+                "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0126:book=3:chapter=114",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "III, 114"
+              },
+              {
+                "title": "De chorographia, livre I",
+                "author": "Pomponius Mela, texte latin publié par The Latin Library",
+                "year": null,
+                "url": "https://www.thelatinlibrary.com/pomponius1.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "I, 18-19"
+              },
+              {
+                "title": "Aethiopia inferior vel exterior ; Aethiopia superior vel interior",
+                "author": "Willem et Joan Blaeu, notices du catalogue de cartes de la bibliothèque de l'université Yale",
+                "year": null,
+                "url": "https://geoblacklight.library.yale.edu/catalog/bibid-4134218",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "notices bibid 4134218 et 8480781"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Alkebulan",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Écrit en 1575 par André Thevet, qui l'attribue aux Arabes et aux Éthiopiens sans citer de source.",
+        "periodLabel": "Écrit depuis 1575, repris depuis 1970",
+        "accounts": [
+          {
+            "period": {
+              "from": 1575,
+              "to": 1575,
+              "label": "1575"
+            },
+            "statement": "Le nom Alkebulan apparaît pour la première fois, dans les textes que nous avons trouvés, en 1575, dans la Cosmographie universelle du cosmographe français André Thevet. Il l'écrit à trois endroits. Dans la légende de sa carte de l'Afrique, il dit que les Arabes appellent ainsi cette partie du monde. Dans son chapitre sur l'Afrique en général, il écrit que les Arabes, les « Adémiens » et les Éthiopiens lui donnent ce nom ; il ne dit pas qui sont les Adémiens. Dans un chapitre sur la Guinée, il emploie le même mot pour le vent chaud et humide qui souffle du midi. Thevet ne cite aucune source pour ce nom. C'est le plus ancien emploi trouvé, pas la date où le nom a été créé.",
+            "birth": true,
+            "formAsWritten": "Alkebulan",
+            "actors": [
+              {
+                "name": "André Thevet",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "La Cosmographie universelle, tome I",
+                "author": "André Thevet",
+                "year": 1575,
+                "url": "https://archive.org/details/lacosmographievn01thev",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "légende de la carte de l'Afrique ; livre III, chapitre I, f. 66 ; livre V, chapitre XII, f. 145"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1668,
+              "to": 1688,
+              "label": "De 1668 à 1688"
+            },
+            "statement": "Le nom Alkebulan est repris par plusieurs auteurs du XVIIe siècle. En 1668, à Amsterdam, Olfert Dapper écrit que les Maures appellent l'Afrique ainsi, « selon Thevet » : il ne donne pas d'autre source. À Londres, John Ogilby reprend cette phrase en 1670, dans sa version anglaise du livre de Dapper. En 1683, le dictionnaire de Louis Moréri attribue le nom aux Arabes, sans citer de source. La traduction française de Dapper, en 1686, et Antoine Phérotée de La Croix, en 1688, répètent la phrase qui cite Thevet ; dans les copies numériques que nous avons lues, le mot lui-même ne se lit pas chez ces deux auteurs. Aucun d'eux ne dit ce que le mot veut dire.",
+            "aspect": "usage",
+            "actors": [
+              {
+                "name": "Olfert Dapper",
+                "role": "reprend le nom en citant Thevet"
+              },
+              {
+                "name": "John Ogilby",
+                "role": "traduit Dapper en anglais"
+              },
+              {
+                "name": "Louis Moréri",
+                "role": "reprend le nom dans son dictionnaire"
+              },
+              {
+                "name": "Antoine Phérotée de La Croix",
+                "role": "reprend le nom en citant Thevet"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Naukeurige beschrijvinge der Afrikaensche gewesten",
+                "author": "Olfert Dapper",
+                "year": 1668,
+                "url": "https://archive.org/details/gri_33125009359999",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "description générale de l'Afrique, passage « Oorsprongkelijkheit van 't woort Afrika »"
+              },
+              {
+                "title": "Africa: being an accurate description of the regions of Ægypt, Barbary, Lybia, and Billedulgerid",
+                "author": "John Ogilby, d'après Olfert Dapper",
+                "year": 1670,
+                "url": "https://archive.org/details/bim_early-english-books-1641-1700_africa-being-an-accurat_ogilby-john_1670",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "« Africa in general », passage « Names of Africa »"
+              },
+              {
+                "title": "Le grand dictionaire historique, tome I",
+                "author": "Louis Moréri",
+                "year": 1683,
+                "url": "https://archive.org/details/bub_gb_gglqIgtFCfIC",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "article « Afrique », section « Ses noms anciens & modernes »"
+              },
+              {
+                "title": "Description de l'Afrique",
+                "author": "Olfert Dapper, traduction française",
+                "year": 1686,
+                "url": "https://archive.org/details/bub_gb_lVFFVLhxVsEC",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "« De l'Afrique en general », première page"
+              },
+              {
+                "title": "Relation universelle de l'Afrique ancienne et moderne, tome I",
+                "author": "Antoine Phérotée de La Croix",
+                "year": 1688,
+                "url": "https://archive.org/details/relationunivers00croigoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "Discours préliminaire, p. 36"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1970,
+              "to": 1970,
+              "label": "1970, date de la première édition selon les catalogues"
+            },
+            "statement": "Le nom Alkebu-lan, écrit avec un trait d'union, est présenté par l'auteur Yosef ben-Jochannan, dans son livre Black Man of the Nile, paru en 1970, comme le plus ancien nom du continent et « the only one of indigenous origin », c'est-à-dire le seul venu des peuples du continent (notre traduction). Selon lui, les Maures, les Nubiens, les Numides, les Carthaginois et les Éthiopiens l'employaient. Il le traduit en anglais par « the mother of mankind » ou « garden of eden », la mère de l'humanité ou le jardin d'Éden. C'est chez lui que nous trouvons ces sens pour la première fois. Pour lui, le nom Afrique a été donné ensuite par les Grecs et les Romains.",
+            "formAsWritten": "Alkebu-lan",
+            "actors": [
+              {
+                "name": "Yosef A. A. ben-Jochannan",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Black Man of the Nile and His Family",
+                "author": "Yosef A. A. ben-Jochannan",
+                "year": 1989,
+                "url": "https://books.google.fr/books?id=6EK3Bs1h1FUC",
+                "tier": "referenced",
+                "source_kind": "unknown",
+                "page": "p. 47, 75 et 120"
+              },
+              {
+                "title": "Yosef A.A. ben-Jochannan: A Bibliographic Introduction",
+                "author": "Africology: The Journal of Pan African Studies, dernière partie annotée par Itibari M. Zulu",
+                "year": 2016,
+                "url": "https://web.archive.org/web/2016/http://www.jpanafrican.org/docs/vol8no10/8.10-3-DB-Bib.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1970,
+              "to": 2016,
+              "label": "De 1970 à 2016, dans les sources lues"
+            },
+            "statement": "Le nom Alkebulan est repris depuis 1970 avec les sens que lui donne Yosef ben-Jochannan. Dans les passages que nous avons lus, l'auteur ne donne aucun texte ancien où le mot serait écrit, et il ne cite pas Thevet. Une bibliographie de ses livres, publiée en 2016, reprend ses définitions sans citer d'autre trace du mot.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Black Man of the Nile and His Family",
+                "author": "Yosef A. A. ben-Jochannan",
+                "year": 1989,
+                "url": "https://books.google.fr/books?id=6EK3Bs1h1FUC",
+                "tier": "referenced",
+                "source_kind": "unknown",
+                "page": "p. 47"
+              },
+              {
+                "title": "Yosef A.A. ben-Jochannan: A Bibliographic Introduction",
+                "author": "Africology: The Journal of Pan African Studies, dernière partie annotée par Itibari M. Zulu",
+                "year": 2016,
+                "url": "https://web.archive.org/web/2016/http://www.jpanafrican.org/docs/vol8no10/8.10-3-DB-Bib.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5, 10 et 12"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

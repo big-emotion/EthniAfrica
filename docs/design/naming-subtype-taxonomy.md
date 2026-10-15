@@ -12,13 +12,14 @@ declaring subtype-only fields as optional in exactly one model.
 
 ## Subtypes
 
-| `namingSystem` value | System                                                          |
-| -------------------- | --------------------------------------------------------------- |
-| `totemic_clan`       | Totemic clan naming (food prohibition, closed given-name list)  |
-| `patronymic_chain`   | Patronymic-chain naming (e.g. Somali _abtirsi_, Arabic _nasab_) |
-| `nisba`              | Nisba naming (geographic, tribal or occupational attribution)   |
-| `jamu`               | Mandé praise-name / _jamu_ naming                               |
-| `undetermined`       | The system has not been established for this fiche              |
+| `namingSystem` value     | System                                                                                       |
+| ------------------------ | -------------------------------------------------------------------------------------------- |
+| `totemic_clan`           | Totemic clan naming (food prohibition, closed given-name list)                               |
+| `patronymic_chain`       | Patronymic-chain naming (e.g. Somali _abtirsi_, Arabic _nasab_)                              |
+| `nisba`                  | Nisba naming (geographic, tribal or occupational attribution)                                |
+| `jamu`                   | Mandé praise-name / _jamu_ naming                                                            |
+| `undetermined`           | The system has not been established for this fiche                                           |
+| `hereditary_family_name` | A hereditary surname that began as a given name, a title or a patronymic element (ETNI-2011) |
 
 This list is not exhaustive of every naming tradition on the continent — it is
 the closed set this ticket builds strict models for. Extending it means
@@ -60,6 +61,16 @@ by `modele-nom.json` and `modele-migration.json`.
 systems by its shared fields and its `namingSystem` value alone, the same way
 `eventType` distinguishes migration fiches without every event type owning a
 private field.
+
+`hereditary_family_name` (ETNI-2011, ruling of 2026-10-14) also carries no
+subtype-only field. It is the sixth value of the `nameSystem` enum of
+`public/modele-nom-patronyme.json` and names a surname that is hereditary and
+is neither a clan or lineage name, a nisba, a praise name, a totemic clan nor a
+non-hereditary patronymic: a given name, a title or a patronymic element that
+became a family name. A fiche takes it only when its own `nameHistory` shows
+the name passing from parent to child as a surname and tells no clan. Where a
+source does not show that transmission, the fiche keeps its nearest box and a
+`nameSystem` gap.
 
 Each subtype-only field appears in exactly **one** model file. A fiche
 declaring a subtype must not carry a subtype-only field belonging to another

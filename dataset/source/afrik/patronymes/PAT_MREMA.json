@@ -88,5 +88,145 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Mrema », « CHAGA », « surname », « clan », « etymology », « transmission », « alliance » et « obituary », ainsi que la page Forebears dédiée et les travaux ou notices propres au nom cités dans la fiche n'ont établi aucune règle propre à l'ensemble des emplois de Mrema permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mrema est un nom de clan des Chagga du district de Rombo, sur les pentes du Kilimandjaro, en Tanzanie. Il s'écrit aussi Mremi. Les sources lues proposent deux rapprochements possibles avec des mots chagga, que nous présentons plus bas. On ne sait pas avec certitude d'où il vient.",
+    "names": [
+      {
+        "nameText": "Mrema",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan chagga du district de Rombo, au Kilimandjaro ; deux rapprochements sont proposés pour son origine.",
+        "periodLabel": "Écrit dès 2020 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "Décrit en 2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Mrema est un nom de clan chez les Chagga du district de Rombo. Dans les registres d'élèves qu'étudient Amani Lusekelo et Victor Mtenga, il revient 7 fois sur 379 noms ; les auteurs traitent Mrema et Mremi comme un même nom de clan.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Historicity of personal names in Tanzania: the case of the names in the Rombo-Chagga community in Kilimanjaro",
+                "author": "Amani Lusekelo et Victor Mtenga",
+                "year": 2020,
+                "url": "https://www.researchgate.net/publication/342876767_Historicity_of_personal_names_in_Tanzania_the_case_of_the_names_in_the_Rombo-Chagga_community_in_Kilimanjaro",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 106-107",
+                "notes": "International Journal of Modern Anthropology, vol. 2, n° 13, 2020, p. 100-121, DOI 10.4314/ijma.v2i13.3. Texte intégral lu dans la copie que diffuse l'Association tunisienne d'anthropologie ; la page citée est celle imprimée en tête de page. Page 106, tableau 3 : un élève porte Mrema comme nom de clan. Page 107, tableau 4 : Mrema revient 7 fois sur 379 noms d'élèves ; note 1, même page : Mrema et Mremi peuvent être traités comme des noms de clan semblables. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "Proposé en 2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Mrema viendrait du verbe chagga rema ou rima, qui touche à la culture et au travail des champs, selon Amani Lusekelo et Victor Mtenga. Ils appellent eux-mêmes cette déduction plausible et citent Munger (1952) pour le mot rema, « terre cultivée » au Kilimandjaro.",
+            "hypothesisGroup": "origine du nom Mrema",
+            "sources": [
+              {
+                "title": "Historicity of personal names in Tanzania: the case of the names in the Rombo-Chagga community in Kilimanjaro",
+                "author": "Amani Lusekelo et Victor Mtenga",
+                "year": 2020,
+                "url": "https://www.researchgate.net/publication/342876767_Historicity_of_personal_names_in_Tanzania_the_case_of_the_names_in_the_Rombo-Chagga_community_in_Kilimanjaro",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 109",
+                "notes": "International Journal of Modern Anthropology, vol. 2, n° 13, 2020, p. 100-121, DOI 10.4314/ijma.v2i13.3. Texte intégral lu dans la copie que diffuse l'Association tunisienne d'anthropologie ; la page citée est celle imprimée en tête de page. Page 109 : Mrema et Mremi rangés parmi les noms de clan liés à un travail, le verbe rema ou rima, courant dans les jardins de bananiers ; les auteurs jugent la déduction plausible. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "Proposé en 2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Mrema pourrait se rapprocher du nom reema, qui désigne dans le calendrier chagga les jours sombres, selon Amani Lusekelo et Victor Mtenga. Ils ne donnent là qu'une supposition, liée à la manière de compter le temps chez les Chagga.",
+            "hypothesisGroup": "origine du nom Mrema",
+            "sources": [
+              {
+                "title": "Historicity of personal names in Tanzania: the case of the names in the Rombo-Chagga community in Kilimanjaro",
+                "author": "Amani Lusekelo et Victor Mtenga",
+                "year": 2020,
+                "url": "https://www.researchgate.net/publication/342876767_Historicity_of_personal_names_in_Tanzania_the_case_of_the_names_in_the_Rombo-Chagga_community_in_Kilimanjaro",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 109",
+                "notes": "International Journal of Modern Anthropology, vol. 2, n° 13, 2020, p. 100-121, DOI 10.4314/ijma.v2i13.3. Texte intégral lu dans la copie que diffuse l'Association tunisienne d'anthropologie ; la page citée est celle imprimée en tête de page. Page 109 : le nom reema, relevé par Dundas (1926) et cité par les auteurs, est présenté comme proche de Mrema ; ils parlent d'une supposition (« the assumption here »). Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Mrema apparaît par écrit dans une étude d'Amani Lusekelo et Victor Mtenga sur les noms des élèves du district de Rombo, comme nom de clan. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand des auteurs l'ont noté, pas depuis quand le clan existe.",
+            "formAsWritten": "Mrema",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Historicity of personal names in Tanzania: the case of the names in the Rombo-Chagga community in Kilimanjaro",
+                "author": "Amani Lusekelo et Victor Mtenga",
+                "year": 2020,
+                "url": "https://www.researchgate.net/publication/342876767_Historicity_of_personal_names_in_Tanzania_the_case_of_the_names_in_the_Rombo-Chagga_community_in_Kilimanjaro",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 106",
+                "notes": "International Journal of Modern Anthropology, vol. 2, n° 13, 2020, p. 100-121, DOI 10.4314/ijma.v2i13.3. Texte intégral lu dans la copie que diffuse l'Association tunisienne d'anthropologie ; la page citée est celle imprimée en tête de page. Page 106, tableau 3 : « Jackson / Wolter / Mrema », prénom, nom du père, nom de clan. Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mremi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre forme du nom Mrema, que les auteurs d'une étude de 2020 traitent comme le même nom de clan.",
+        "periodLabel": "Écrit dès 2020 ; porté aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Mremi est une autre forme du nom de clan Mrema dans le district de Rombo : il revient 2 fois dans les registres d'élèves qu'étudient Amani Lusekelo et Victor Mtenga, qui le traitent comme le même nom. C'est la plus ancienne trace de cette forme que le projet connaît.",
+            "formAsWritten": "Mremi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Historicity of personal names in Tanzania: the case of the names in the Rombo-Chagga community in Kilimanjaro",
+                "author": "Amani Lusekelo et Victor Mtenga",
+                "year": 2020,
+                "url": "https://www.researchgate.net/publication/342876767_Historicity_of_personal_names_in_Tanzania_the_case_of_the_names_in_the_Rombo-Chagga_community_in_Kilimanjaro",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 107",
+                "notes": "International Journal of Modern Anthropology, vol. 2, n° 13, 2020, p. 100-121, DOI 10.4314/ijma.v2i13.3. Texte intégral lu dans la copie que diffuse l'Association tunisienne d'anthropologie ; la page citée est celle imprimée en tête de page. Page 107, tableau 5 : Mremi revient 2 fois sur 379 noms d'élèves ; note 1, même page : Mrema et Mremi peuvent être traités comme des noms de clan semblables. Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

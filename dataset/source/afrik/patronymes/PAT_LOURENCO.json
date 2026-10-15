@@ -6,7 +6,7 @@
   },
   "id": "PAT_LOURENCO",
   "nameMain": "Lourenço",
-  "nameSystem": "clan_name",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Lourenço",
@@ -28,7 +28,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -79,11 +79,174 @@
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+      "reason": "Le nom Lourenço est d'abord un nom de personne : nous ne documentons pas encore comment il passe d'une génération à l'autre comme nom de famille."
     },
     {
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Lourenço à un peuple en Angola. Nous n'avons pas encore consulté de source consacrée à ce nom. Les mentions trouvées concernent Lourenço Marques, l'ancien nom de Maputo. Elles désignent un lieu et n'expliquent pas le nom de famille. Les exemples de noms portugais cités pour les créoles de Guinée-Bissau ne suffisent pas à expliquer leur usage en Angola."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Lourenço est d'abord un prénom chrétien portugais, la forme de Laurent, devenu aussi un nom de famille. Il est porté en Angola, où on l'écrit aussi Lourenco. On ne sait pas avec certitude quand ni comment il est devenu un nom de famille angolais ; nous présentons plus bas ce que les sources disent.",
+    "names": [
+      {
+        "nameText": "Lourenço",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Un prénom chrétien portugais devenu nom de famille, porté en Angola.",
+        "periodLabel": "Écrit dès 1211 sous une forme proche ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Lourenço reprend le prénom portugais Lourenço, du latin Laurentius, selon le Dictionary of American Family Names. José Leite de Vasconcelos y voit le nom de saints des IIIe et VIIe siècles, qui était à l'origine un surnom tiré de Laurentum, une ville du Latium. Ces sources ne disent rien de l'Angola.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Lourenco Name Meaning and Lourenco Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=lourenco",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch et lue en anglais. Elle donne : « Portuguese (Lourenço): from the personal name Lourenço, Latin Laurentius (see Lawrence). »  Lu le 14 octobre 2026."
+              },
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 44",
+                "notes": "José Leite de Vasconcelos, Antroponímia portuguesa, Lisbonne, Imprensa Nacional, 1928, lu sur la copie numérisée d'archive.org. À la page 44, il écrit au sujet de « Laurencius (cristão) = Laurentius » : « Nome de santos dos secs. III e VII. Este nome, hoje Lourenço, é na origem cognome, derivado de Laurentum, cidade do Lacio. » Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "24 août 2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Lourenço est porté en Angola comme nom de famille : la biographie du président João Lourenço, publiée par l'ambassade d'Angola au Japon, lui donne le nom complet João Manuel Gonçalves Lourenço, et cite son père, Sequeira João Lourenço. La biographie ne dit rien de l'origine du nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Biography of His Excellency João Manuel Gonçalves Lourenço, President of the Republic",
+                "author": "Ministère des Affaires étrangères de l'Angola, ambassade d'Angola au Japon",
+                "year": 2020,
+                "url": "https://www.angola.or.jp/?p=7164",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Page de l'ambassade d'Angola au Japon qui reprend la biographie diffusée par le bureau de communication institutionnelle du ministère angolais des Affaires étrangères, datée du 24 août 2020. Elle dit : « Mister João Manuel Gonçalves Lourenço, was born on March 5, 1954, in Lobito city, province of Benguela, son of the late Sequeira João Lourenço, nurse of profession, and of the late Josefa Gonçalves Cipriano Lourenço, dressmaker. » Elle ne dit rien de l'origine des noms. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Proposé en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Lourenço pourrait être devenu un nom angolais par le baptême et l'état civil. À l'époque coloniale, les missionnaires donnaient aux Ovimbundu baptisés des noms de saints, et l'état civil remplaçait des noms en umbundu par des noms portugais, selon Severino Canhola Dungue. Il ne cite pas ce nom en particulier.",
+            "sources": [
+              {
+                "title": "O nome: Identidade cultural do povo Ovimbundu",
+                "author": "Severino Canhola Dungue",
+                "year": 2025,
+                "url": "https://www.ajol.info/index.php/academicus/article/download/285659/269148/667445",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 28-30",
+                "notes": "Revue Academicus, vol. 3, n° 1, 2025, p. 23-34, publiée le 7 janvier 2025 ; texte intégral lu sur AJOL. Pages 28 à 30 : à l'époque coloniale, les missionnaires donnaient aux Ovimbundu baptisés des noms de saints à la place de leurs noms, et au registre civil des noms en umbundu étaient remplacés par des noms portugais (exemple donné : « Nangoya – Gomes »), d'après Chimbinda (2009). L'article ne cite pas ce nom. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1308,
+              "to": 1308,
+              "label": "1308"
+            },
+            "statement": "Le nom Lourenço sert de second nom à un homme au Portugal en 1308 : José Leite de Vasconcelos cite « Afonso Lourenço » dans un document de cette année. Le même nom est déjà un prénom courant en 1302, avec Domingos, Gonçalo, Martim et Pedro.",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 128 et p. 55",
+                "notes": "José Leite de Vasconcelos, Antroponímia portuguesa, Lisbonne, Imprensa Nacional, 1928, lu sur la copie numérisée d'archive.org. À la page 128, il cite « Afonso Lourenço, 1308, AP, VII, 181 » comme exemple de prénom servant de second nom ; à la page 55, il relève « Lourenço » parmi les prénoms de 1302 des Documentos do Souto. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1211,
+              "to": 1211,
+              "label": "1211"
+            },
+            "statement": "Le nom Lourenço a pour plus ancienne trace une forme latine proche, Laurencius, dans un texte de 1211 que cite José Leite de Vasconcelos, où ce prénom de saint apparaît pour la première fois dans ses listes. C'est la plus ancienne trace de ce nom que le projet connaît ; elle ne dit rien de l'Angola.",
+            "formAsWritten": "Laurencius",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 44",
+                "notes": "José Leite de Vasconcelos, Antroponímia portuguesa, Lisbonne, Imprensa Nacional, 1928, lu sur la copie numérisée d'archive.org. À la page 44, il écrit que, dans les documents de 1211 (Dissertações chronologicas, I, 260), « Laurencius (cristão) = Laurentius » apparaît pour la première fois dans ses listes. Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Lourenco",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Le même nom écrit sans cédille, dans les registres et les bases de données.",
+        "periodLabel": "Porté aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Lourenco est le même nom écrit sans cédille. Le Dictionary of American Family Names donne l'entrée sous cette forme, avec Lourenço comme forme portugaise.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Lourenco Name Meaning and Lourenco Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=lourenco",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch et lue en anglais. La page de la forme Lourenco affiche l'entrée « Portuguese (Lourenço): from the personal name Lourenço, Latin Laurentius (see Lawrence). »  Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -28,7 +28,15 @@ import { CountriesAnswer } from "@/components/search/feed/CountriesAnswer";
 import { SubjectAnswer } from "@/components/search/feed/SubjectAnswer";
 import { VerdictBlock } from "@/components/search/feed/VerdictBlock";
 import { WordAnswerPage } from "@/components/search/feed/WordAnswerPage";
+import {
+  NameClosingBand,
+  NameNextStep,
+  type NextStepCard,
+} from "@/components/search/timeline/NameClosing";
 import { NameTimeline } from "@/components/search/timeline/NameTimeline";
+import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
+import { deduceSilences } from "@/lib/search/nameClosing";
+import { buildNameTimeline } from "@/lib/search/nameTimeline";
 import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
 import { searchAnswerCopy } from "@/lib/i18n/copy/searchAnswer";
@@ -104,6 +112,11 @@ export interface SearchFeedProps {
    * order. When there is one, the page opens on the timeline (REQ-198).
    */
   nameHistories?: readonly SubjectNameHistory[];
+  /**
+   * The names the page offers next, with their reason (brief 1, block 8),
+   * loaded by the caller from the subjects' links.
+   */
+  nextSteps?: readonly NextStepCard[];
   /**
    * A fiche opened from the feed. `surface` names where the reader was
    * served: a click from the answer or the timeline is not a pick from a
@@ -236,6 +249,7 @@ export function SearchFeed({
   presentation,
   relation,
   nameHistories = [],
+  nextSteps = [],
   onResultNavigate,
 }: SearchFeedProps) {
   // The feed is keyed by query, so the default is chosen once per search.
@@ -788,49 +802,64 @@ export function SearchFeed({
         );
       case "owed":
         return (
-          <OwedBlock
-            language={language}
-            reviewed={Boolean(presentation)}
-            thin
-            silences={presentation?.owed?.silences ?? []}
-            conviction={
-              hasAnswer
-                ? undefined
-                : (presentation?.owed?.conviction ?? {
-                    title: answerCopy.conviction,
-                    body: answerCopy.convictionBody,
-                  })
-            }
-            invitation={
-              presentation?.owed?.invitation ??
-              (hasAnswer
-                ? searchAnswerCopy[language].invitation[closingKind]
-                : {
-                    title: answerCopy.invitation,
-                    body: answerCopy.invitationBody,
-                    action: answerCopy.invitationAction,
-                  })
-            }
-            contributionTarget={contributionTarget}
-          />
+          <>
+            {state === "unknown" ? (
+              <NameClosingBand
+                silences={[
+                  nameClosingCopy[language].silence.unknown(query.trim()),
+                ]}
+                language={language}
+              />
+            ) : null}
+            <OwedBlock
+              language={language}
+              reviewed={Boolean(presentation)}
+              thin
+              silences={presentation?.owed?.silences ?? []}
+              conviction={
+                hasAnswer
+                  ? undefined
+                  : (presentation?.owed?.conviction ?? {
+                      title: answerCopy.conviction,
+                      body: answerCopy.convictionBody,
+                    })
+              }
+              invitation={
+                presentation?.owed?.invitation ??
+                (hasAnswer
+                  ? searchAnswerCopy[language].invitation[closingKind]
+                  : {
+                      title: answerCopy.invitation,
+                      body: answerCopy.invitationBody,
+                      action: answerCopy.invitationAction,
+                    })
+              }
+              contributionTarget={contributionTarget}
+            />
+          </>
         );
       case "further":
         return (
-          <FurtherBlock
-            language={language}
-            links={[
-              ...(presentation?.further?.links ?? [
-                {
-                  href: getLocalizedRoute(language, "peoples"),
-                  label: answerCopy.browsePeoples,
-                },
-                {
-                  href: getLocalizedRoute(language, "families"),
-                  label: answerCopy.browseFamilies,
-                },
-              ]),
-            ]}
-          />
+          <>
+            {state === "unknown" ? (
+              <NameNextStep cards={nextSteps} language={language} />
+            ) : null}
+            <FurtherBlock
+              language={language}
+              links={[
+                ...(presentation?.further?.links ?? [
+                  {
+                    href: getLocalizedRoute(language, "peoples"),
+                    label: answerCopy.browsePeoples,
+                  },
+                  {
+                    href: getLocalizedRoute(language, "families"),
+                    label: answerCopy.browseFamilies,
+                  },
+                ]),
+              ]}
+            />
+          </>
         );
       default:
         return null;
@@ -895,6 +924,7 @@ export function SearchFeed({
               countryIds={
                 subject.type === "country" ? [subject.id] : subject.countryIds
               }
+              sourcesOpen={index === 0}
               language={language}
             />
           )),
@@ -937,6 +967,29 @@ export function SearchFeed({
           <Fragment key="timeline-fiche-link">
             {ficheLinkBlock("timeline")}
           </Fragment>,
+          // Brief 1 (approved 2026-10-14): the page no longer ends on the
+          // timeline. What we do not know, the conviction, the invitation to
+          // correct, then one or two names to read next.
+          <NameClosingBand
+            key="timeline-closing"
+            silences={deduceSilences(
+              nameHistories.map(({ nameHistory }) => ({
+                name: buildNameTimeline(nameHistory, query).names[0],
+              })),
+              unwritten.map((subject) => ({
+                label: getSearchEntityLabel(subject.type),
+                name: getLocalizedSearchResultName(subject, language),
+              })),
+              language
+            )}
+            contributionTarget={contributionTarget}
+            language={language}
+          />,
+          <NameNextStep
+            key="timeline-next"
+            cards={nextSteps}
+            language={language}
+          />,
         ]}
       />
     );

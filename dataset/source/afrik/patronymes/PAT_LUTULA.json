@@ -89,7 +89,7 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "Aucune source consultée ne précise si ce nom relève d'un nom de clan, d'un nom personnel ou d'un autre système chez les Tetela ; la valeur retenue est un choix par défaut, non une donnée vérifiée."
+      "reason": "Lutula est un nom de famille : aucune source consultée n'en fait un nom de clan. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que Lutula se transmet de parent à enfant. La fiche garde donc la case des noms de clan, la plus proche, avec la lignée pour unité, sans dire que Lutula est un clan."
     },
     {
       "fieldPath": "transmissionMode",

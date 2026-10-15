@@ -37,6 +37,7 @@ import {
 } from "@/lib/search/searchEnvelope";
 import {
   loadSearchCompanions,
+  loadNextSteps,
   loadSubjectNameHistories,
   search as searchCorpus,
   searchWithLeads,
@@ -60,6 +61,7 @@ import {
   isSearchFeedSubject,
   type SearchFeedAnswerState,
 } from "@/lib/search/searchFeedPlan";
+import type { NextStepCard } from "@/lib/search/nameClosing";
 import type { SearchCompanionsData } from "@/api/v2/schemas/searchCompanions";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
 import type { SearchFeedPresentation } from "@/lib/search/searchFeedPresentation";
@@ -165,6 +167,7 @@ export function RecherchePageContent() {
     useState<SearchFeedPresentation>();
   const [feedSubjects, setFeedSubjects] = useState<SearchHit[]>([]);
   const [nameHistories, setNameHistories] = useState<SubjectNameHistory[]>([]);
+  const [nextSteps, setNextSteps] = useState<NextStepCard[]>([]);
   const requestController = useRef<AbortController | null>(null);
   const requestTicket = useRef(0);
   const restoreFocusAfterClear = useRef(false);
@@ -295,19 +298,22 @@ export function RecherchePageContent() {
         );
         // Loaded before the feed mounts: the feed picks its default lens once,
         // and opens on the timeline when a subject has a name history.
-        const [nextCompanions, nextNameHistories] = await Promise.all([
-          loadSearchCompanions(
-            companionSubjects,
-            language,
-            controller.signal,
-            q
-          ),
-          loadSubjectNameHistories(resolvedSubjects, controller.signal),
-        ]);
+        const [nextCompanions, nextNameHistories, nextNextSteps] =
+          await Promise.all([
+            loadSearchCompanions(
+              companionSubjects,
+              language,
+              controller.signal,
+              q
+            ),
+            loadSubjectNameHistories(resolvedSubjects, controller.signal),
+            loadNextSteps(resolvedSubjects, language, controller.signal),
+          ]);
         if (ticket !== requestTicket.current) return;
 
         setCompanions(nextCompanions);
         setNameHistories(nextNameHistories);
+        setNextSteps(nextNextSteps);
         setFeedSubjects(resolvedSubjects);
         setFeedState(
           classifySearchFeed({
@@ -762,6 +768,7 @@ export function RecherchePageContent() {
               presentation={feedPresentation}
               relation={relation ?? undefined}
               nameHistories={nameHistories}
+              nextSteps={nextSteps}
               onResultNavigate={trackResultClick}
             />
           ) : null}

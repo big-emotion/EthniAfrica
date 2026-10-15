@@ -113,5 +113,144 @@
       "fieldPath": "homonyms",
       "reason": "Aucune lignée homonyme d'origine distincte n'a été trouvée ; les 111 occurrences du terme chez Bryant renvoient toutes au même ensemble."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mntungwa est une louange de clan zouloue : on la dit, par exemple, à un membre du clan khumalo. Sous la forme Ntungwa, le missionnaire Alfred T. Bryant l'écrit en 1929 pour des clans nguni dont plusieurs refusent ce nom. On ne sait pas avec certitude ce qu'il veut dire ; les sources lues ne lui donnent pas de sens.",
+    "names": [
+      {
+        "nameText": "Mntungwa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une louange de clan zouloue, dite par exemple aux Khumalo ; son sens reste inconnu.",
+        "periodLabel": "Écrit dès 1986 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1986,
+              "to": 1986,
+              "label": "Noté en 1986"
+            },
+            "statement": "Le nom Mntungwa est une louange de clan (isithakazelo) des Khumalo : Adrian Koopman écrit qu'on peut s'adresser à un membre du clan khumalo en disant « Khumalo », « Mntungwa » ou « Wena wasemaMthungweni », et il cite le nom dans une louange où il suit Khumalo et précède Mabaso, puis Mzilikazi fils de Mashobana. C'est la plus ancienne trace de cette forme que le projet connaît ; la forme Ntungwa, plus ancienne, est écrite à part.",
+            "sources": [
+              {
+                "title": "The Social and Literary Aspects of Zulu Personal Names",
+                "author": "Adrian Koopman",
+                "year": 1986,
+                "url": "https://repository.nwu.ac.za/bitstreams/ea16f498-c289-4e9a-8f98-c9ed3b0354ab/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 56 et 146",
+                "notes": "Mémoire de master, université du Natal (Pietermaritzburg), 1986 ; texte du dépôt de la North-West University. Les numéros de page sont les numéros imprimés, relevés sur le texte numérisé. P. 56 : les formes d'adresse d'un Khumalo, dont « Khumalo, Mntungwa » ; p. 146 : la louange où Mntungwa suit Khumalo, avec la traduction « You of the Ntungwa people! ». Lu le 14 octobre 2026."
+              }
+            ],
+            "era": "modern",
+            "formAsWritten": "Mntungwa",
+            "birth": true
+          },
+          {
+            "period": {
+              "from": 1986,
+              "to": 1986,
+              "label": "Noté en 1986"
+            },
+            "statement": "Le nom Mntungwa est, dans l'étude de Koopman, une louange de clan et non un nom de famille (isibongo) : elle sert d'appel respectueux, et se dit aussi « vous du peuple ntungwa ». On ne sait pas avec certitude ce qu'il veut dire ; l'étude n'en donne pas de sens.",
+            "sources": [
+              {
+                "title": "The Social and Literary Aspects of Zulu Personal Names",
+                "author": "Adrian Koopman",
+                "year": 1986,
+                "url": "https://repository.nwu.ac.za/bitstreams/ea16f498-c289-4e9a-8f98-c9ed3b0354ab/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 56 et 146",
+                "notes": "Mémoire de master, université du Natal (Pietermaritzburg), 1986 ; texte du dépôt de la North-West University. Les numéros de page sont les numéros imprimés, relevés sur le texte numérisé. Koopman traduit « Wena wasemaNtungweni » par « You of the Ntungwa people ». Lu le 14 octobre 2026."
+              }
+            ],
+            "era": "modern",
+            "aspect": "meaning"
+          }
+        ]
+      },
+      {
+        "nameText": "Ntungwa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "shortLine": "La forme que Bryant écrit en 1929 pour des clans nguni, dont plusieurs la refusent.",
+        "periodLabel": "Écrit dès 1929",
+        "accounts": [
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Écrit Ntungwa en 1929"
+            },
+            "statement": "Le nom Ntungwa apparaît par écrit chez Alfred T. Bryant, sous les formes Ntungwa et abaNtungwa, pour désigner les Nguni restés sur place après le départ des Xhosa et des Thembu, vers l'an 1500 selon lui, d'où les Zoulous tireraient leur descendance. C'est la plus ancienne trace de ce nom que le projet connaît ; le nom est plus ancien qu'elle.",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bryant-a-t-olden-times-in-zululand-and-natal-containing-earlier-political-histor",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 14",
+                "notes": "Londres, Longmans, Green, 1929. Missionnaire catholique installé au Natal, qui écrit dans le cadre de l'Union sud-africaine et recueille des récits sur les ancêtres des clans. Texte lu sur une autre numérisation d'archive.org du même ouvrage (identifiant bwb_KT-091-892) ; la page est celle de l'en-tête courant du texte numérisé. Texte placé entre les en-têtes courants 14 et 15 : « We call these Ngunis left behind, the Ntungwas (Z. abaNtungwa) ». Lu le 14 octobre 2026."
+              }
+            ],
+            "era": "modern",
+            "formAsWritten": "abaNtungwa",
+            "birth": true
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Rapporté en 1929"
+            },
+            "statement": "Le nom Ntungwa est, de l'aveu de Bryant, « dans une certaine mesure un terme de commodité », car bon nombre de clans qu'il appelle ainsi le refusent. Bryant pense qu'ils ont perdu la tradition, et défie ces clans de dire ce qu'ils étaient s'ils n'étaient pas Ntungwa. Le nom est donc en partie celui que l'auteur donne aux clans, et non seulement celui qu'ils se donnent.",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bryant-a-t-olden-times-in-zululand-and-natal-containing-earlier-political-histor",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 14",
+                "notes": "Londres, Longmans, Green, 1929. Missionnaire catholique installé au Natal, qui écrit dans le cadre de l'Union sud-africaine et recueille des récits sur les ancêtres des clans. Texte lu sur une autre numérisation d'archive.org du même ouvrage (identifiant bwb_KT-091-892) ; la page est celle de l'en-tête courant du texte numérisé. « That is in some degree a term of convenience ; for quite a number of the clans to whom we here apply the name, disown it. » Lu le 14 octobre 2026."
+              }
+            ],
+            "era": "modern"
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1500,
+              "label": "Vers 1500, selon Bryant (1929)"
+            },
+            "statement": "Le nom Ntungwa va avec une formule que Bryant dit tenir des Nguni ntungwa eux-mêmes : ils seraient « descendus avec les grands paniers à grain » (b'-ehla ngesiLulu), de grands paniers d'herbe tressée où l'on rangeait le grain. Bryant propose aussi de comprendre « descendus à cause des iziLulu », le mot ayant pu servir de sobriquet à des étrangers venus avec de tels paniers. Il ne dit pas que le nom Ntungwa vienne de ce mot. On ne sait pas avec certitude ce que Ntungwa veut dire.",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bryant-a-t-olden-times-in-zululand-and-natal-containing-earlier-political-histor",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 14",
+                "notes": "Londres, Longmans, Green, 1929. Missionnaire catholique installé au Natal, qui écrit dans le cadre de l'Union sud-africaine et recueille des récits sur les ancêtres des clans. Texte lu sur une autre numérisation d'archive.org du même ouvrage (identifiant bwb_KT-091-892) ; la page est celle de l'en-tête courant du texte numérisé. Le récit ntungwa et la lecture que Bryant en propose ; il écrit que les preuves ne permettent pas d'en faire une institution nguni d'origine. Lu le 14 octobre 2026."
+              }
+            ],
+            "era": "polity",
+            "aspect": "meaning"
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -6,7 +6,7 @@
   },
   "id": "PAT_RITA",
   "nameMain": "Rita",
-  "nameSystem": "clan_name",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Rita",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -70,7 +70,7 @@
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+      "reason": "Le nom Rita est d'abord un nom de personne : nous ne documentons pas encore comment il passe d'une génération à l'autre comme nom de famille."
     },
     {
       "fieldPath": "peoples",

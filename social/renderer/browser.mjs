@@ -78,7 +78,7 @@ export function inspectCard() {
       ? window.EthniCards.altText({ map: spec.map, timeline: spec.timeline })
       : "";
   const blocks = [...panel.children].filter(
-    (node) => !node.matches(".ec-source,.ec-credit,.ec-sign")
+    (node) => !node.matches(".ec-source,.ec-credit,.ec-sign,.ec-sigline")
   );
   const reading = blocks.map((node) => {
     const copy = node.cloneNode(true);
@@ -86,9 +86,17 @@ export function inspectCard() {
     // Include direct text around accents and labels, preserving field boundaries.
     return text(copy);
   });
+  // 1.3.0: a series card's alternative text opens with its band, in the design
+  // system's wording (« D'où vient le nom de mon pays ?, n° 1 »).
+  const series = spec.series ? window.EthniCards.seriesOf(spec) : null;
+  const band = series ? `${series.name}, n° ${series.episode}` : "";
+  // 1.6.0: on a closing card the alternative text ends with the signature
+  // line, word for word, although the card prints it above the invitation.
+  const signature =
+    spec.type === "closing" ? window.EthniCards.signatureLine : "";
   const alt =
     spec.alt ||
-    [spec.imageAlt, mapDescription, ...mapText, ...reading]
+    [band, spec.imageAlt, mapDescription, ...mapText, ...reading, signature]
       .filter(Boolean)
       .join(". ");
   return {

@@ -6,7 +6,7 @@
   },
   "id": "PAT_EKPO",
   "nameMain": "Ekpo",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Ekpo",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -87,12 +87,12 @@
       "reason": "Les recherches « Ekpo homonym etymology » et « Ekpo surname origin other language » n'ont pas établi une graphie identique d'origine distincte."
     },
     {
-      "fieldPath": "transmissionMode",
-      "reason": "Le dictionnaire atteste un nom de famille, mais ne décrit pas sa règle de transmission ; les recherches « Ekpo surname inheritance Ibibio » n'en ont pas livré."
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom de personne du sud-est du Nigeria. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant. La fiche reste donc parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
-      "fieldPath": "designatedSocialUnit",
-      "reason": "Les sources consultées ne permettent pas de déterminer si Ekpo désigne historiquement un lignage, un clan ou une autre unité sociale."
+      "fieldPath": "transmissionMode",
+      "reason": "Le dictionnaire atteste un nom de famille, mais ne décrit pas sa règle de transmission ; les recherches « Ekpo surname inheritance Ibibio » n'en ont pas livré."
     }
   ],
   "nameHistory": {

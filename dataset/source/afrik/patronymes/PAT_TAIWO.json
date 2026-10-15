@@ -6,7 +6,7 @@
   },
   "id": "PAT_TAIWO",
   "nameMain": "Taiwo",
-  "nameSystem": "praise_name",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Taiwo",
@@ -35,8 +35,8 @@
       ]
     }
   ],
-  "transmissionMode": "non_hereditary",
-  "designatedSocialUnit": "individual",
+  "transmissionMode": "patrilineal",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],

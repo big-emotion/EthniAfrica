@@ -76,5 +76,139 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Neto à un peuple en Angola. Nous n'avons pas encore consulté de source consacrée à ce nom. Les exemples de noms portugais cités pour les créoles de Guinée-Bissau ne suffisent pas à expliquer leur usage en Angola."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Neto est un nom de famille portugais, porté aussi en Angola. Un linguiste le range parmi les noms de famille tirés d'un mot de parenté, neto, « petit-fils ». On ne sait pas avec certitude depuis quand ni comment il est arrivé en Angola. Il s'écrit aussi Netto.",
+    "names": [
+      {
+        "nameText": "Neto",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Un nom de famille portugais tiré d'un mot de parenté, « petit-fils », porté aussi en Angola.",
+        "periodLabel": "Écrit au Portugal dès le XIVe siècle ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Proposée en 1928"
+            },
+            "statement": "Le nom Neto serait un surnom de parenté devenu nom de famille, neto étant le « petit-fils », selon le linguiste José Leite de Vasconcelos. Il le range avec Sobrinho et Filho, et rappelle le latin Cornelius Nepos et l'espagnol Nieto.",
+            "hypothesisGroup": "origine du nom Neto",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 181-182",
+                "notes": "Traité publié à Lisbonne en 1928 ; exemplaire numérisé sur archive.org. La page citée est celle du livre, imprimée en tête de page. Page 181 : « Apelidos expressos por alcunhas designativas de parentesco », dont Pero Paez Neto, XIVe siècle, et la remarque que Sobrinho, Filho et Neto existent encore aujourd'hui. Page 182 : « Em latim é bem conhecido Cornelius Nepos », « em hespanhol igualmente Nieto ». Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Proposée en 1928"
+            },
+            "statement": "Le nom Neto aurait été ajouté à son nom par un homme pour se distinguer de son père et de son grand-père qui portaient le même nom, selon José Leite de Vasconcelos. Il en donne un exemple connu de lui : Antonio Matias, troisième Matias de sa lignée, devenu Antonio Matias Neto.",
+            "hypothesisGroup": "origine du nom Neto",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 182",
+                "notes": "Traité publié à Lisbonne en 1928 ; exemplaire numérisé sur archive.org. La page citée est celle du livre, imprimée en tête de page. Page 182 : « A respeito de Neto posso indicar um facto curioso, que ajuda a compreender como é que um apelido d'estes se fórma », puis l'exemple d'Antonio Matias Neto ; l'auteur précise que les raisons du choix d'un nom de famille varient beaucoup. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1979,
+              "label": "De 1922 à 1979"
+            },
+            "statement": "Le nom Neto est porté en Angola : l'encyclopédie Larousse présente Agostinho Neto comme un homme d'État angolais, né en 1922 à Cachicane et mort en 1979, proclamé président de la République populaire d'Angola le 11 novembre 1975. On ne sait pas avec certitude depuis quand ni comment ce nom portugais y est arrivé.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Agostinho Neto",
+                "author": "Larousse",
+                "year": null,
+                "url": "https://www.larousse.fr/encyclopedie/personnage/Agostinho_Neto/135019",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Notice de l'encyclopédie Larousse en ligne : Agostinho Neto, homme d'État angolais, né en 1922 à Cachicane (aujourd'hui Kaxikane, district d'Icolo e Bengo), fils d'un pasteur méthodiste, proclamé président de la République populaire d'Angola le 11 novembre 1975, mort à Moscou en 1979. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1301,
+              "to": 1400,
+              "label": "XIVe siècle"
+            },
+            "statement": "Le nom Neto apparaît au Portugal dans la mention d'un certain Pero Paez Neto, au XIVe siècle, que José Leite de Vasconcelos rapporte d'après la Revista de História. C'est la plus ancienne trace de ce nom que le projet connaît, connue par Vasconcelos et non lue dans la revue ; elle ne dit rien de son arrivée en Angola.",
+            "formAsWritten": "Pero Paez Neto",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 181",
+                "notes": "Traité publié à Lisbonne en 1928 ; exemplaire numérisé sur archive.org. La page citée est celle du livre, imprimée en tête de page. Page 181 : « Pero Paez Neto, sec. XIV, na Rev. de Hist., IV, 151 sgs. » ; la revue elle-même n'a pas été ouverte. Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Netto",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "L'ancienne orthographe du nom Neto, avec deux t, citée dans une chronique portugaise du XVIIe siècle.",
+        "periodLabel": "Écrit dès le XVIIe siècle",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1601,
+              "to": 1700,
+              "label": "XVIIe siècle"
+            },
+            "statement": "Le nom Netto apparaît au Portugal, avec deux t, dans la Monarchia Lusitana, chronique du XVIIe siècle qui parle des familles de « Barriga, de Netto, Goes Barregão », selon José Leite de Vasconcelos qui cite le passage. C'est la plus ancienne trace de cette orthographe que le projet connaît ; c'est le même nom que Neto.",
+            "formAsWritten": "Netto",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 11",
+                "notes": "Traité publié à Lisbonne en 1928 ; exemplaire numérisé sur archive.org. La page citée est celle du livre, imprimée en tête de page. Page 11, introduction : citations de la Monarchia Lusitana (XVIIe siècle), dont « de Barriga, de Netto, Goes Barregão », p. 351 de la chronique ; la chronique elle-même n'a pas été ouverte. Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

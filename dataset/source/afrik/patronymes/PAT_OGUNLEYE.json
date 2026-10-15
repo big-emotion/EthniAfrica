@@ -6,7 +6,7 @@
   },
   "id": "PAT_OGUNLEYE",
   "nameMain": "Ogunleye",
-  "nameSystem": "praise_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Ogunleye",
@@ -91,6 +91,10 @@
     {
       "fieldPath": "homonyms",
       "reason": "Les recherches « Ogunleye homonym etymology » et « Ogunleye surname origin other language » n'ont pas établi une graphie identique d'origine distincte."
+    },
+    {
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues le disent un nom de personne yoruba. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant. La fiche reste donc parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     }
   ],
   "nameHistory": {

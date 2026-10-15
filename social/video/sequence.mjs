@@ -48,6 +48,8 @@ export const IMAGERY = {
     // The historical chapter's imagery line (board 10) needs the room.
     short: "NASA",
     file: "imagery/world.topo.bathy.200407.3x21600x10800.jpg",
+    // Pixels around the Earth: the series map cards' scale limit (1.4.1).
+    width: 21600,
     sha256: "d225f1f35a6448a4d1d8f6de6e48f3433e470085b70a35800e64f384f269a7b0",
   },
   "s2cloudless-2016": {
@@ -82,8 +84,9 @@ function cubicBezier(x1, y1, x2, y2) {
   };
 }
 
-const enter = cubicBezier(0.2, 0, 0, 1);
-const leave = cubicBezier(0.4, 0, 1, 1);
+// Exported for the series video (series.mjs), whose subtitles fade as here.
+export const enter = cubicBezier(0.2, 0, 0, 1);
+export const leave = cubicBezier(0.4, 0, 1, 1);
 const symmetric = cubicBezier(0.45, 0, 0.55, 1);
 const descent = cubicBezier(0.45, 0, 0.15, 1);
 const span = (t, start, duration, ease) => ease((t - start) / duration);
@@ -563,7 +566,7 @@ export function captionLines(seq) {
 // fonts on 11 October 2026: Anton titles 0.39–0.42 em per character, Nunito
 // Sans captions 0.41–0.46. The browser re-measures the real glyphs before
 // export; this gate only catches layouts that cannot fit.
-const estimateWidth = (text, size, ratio) =>
+export const estimateWidth = (text, size, ratio) =>
   Math.ceil(text.length * size * ratio);
 
 const textBox = (text, size, ratio, lineHeight) => {
@@ -926,13 +929,19 @@ const LABEL_STYLES = {
   plate: { sizes: [38], box: (t, s) => [estimateWidth(t, s, 0.45) + 44, 54] },
 };
 
-export function placeLabels(labels, obstacles) {
+// The series video (Cartes 1.4.1) places its map names by the same rule in
+// its own band and sizes: `band` and `styles` replace the satellite video's.
+export function placeLabels(
+  labels,
+  obstacles,
+  { band = { x: BANDS.x, y: BANDS.names }, styles = LABEL_STYLES } = {}
+) {
   const regions = labels.filter((l) => l.style === "region").length;
-  const [x0, x1] = BANDS.x;
-  const [y0, y1] = BANDS.names;
+  const [x0, x1] = band.x;
+  const [y0, y1] = band.y;
   const placed = [];
   for (const label of labels) {
-    const style = LABEL_STYLES[label.style];
+    const style = styles[label.style];
     let sizes = style.sizes;
     // Two region names or more start one step smaller.
     if (label.style === "region" && regions > 1) sizes = sizes.slice(1);
@@ -1606,7 +1615,7 @@ function loadChapters(input, style, dir) {
 // video order (intro, chapters, outro) a list of words with start and end in
 // seconds (0.4.0 open question 8). The words JSON records the audio's
 // SHA-256, so a voice re-recorded without being re-timed is refused.
-function loadVoice(voice, texts, dir) {
+export function loadVoice(voice, texts, dir) {
   if (typeof voice?.audio !== "string" || typeof voice?.words !== "string")
     fail('A voice is { "audio": audio file, "words": words JSON }');
   const at = (file) =>

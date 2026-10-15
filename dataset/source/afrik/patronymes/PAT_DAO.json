@@ -293,7 +293,7 @@
             "statement": "Dâo figure au XVIIe siècle dans le Tarikh es-Soudan, la chronique d'es-Sa'di, lettré de Tombouctou, dans des noms de rois de Gao comme Sonni-Mohammed Dâo. André Arcin croit y voir des Daou ; les sources ne disent pas s'il s'agit du même nom.",
             "sources": [
               {
-                "title": "Tarikh es-Soudan, par Abderrahman ben Abdallah ben Imran ben Amir es-Sa'di, traduit de l'arabe par O. Houdas",
+                "title": "Tarikh es-Soudan",
                 "author": "Abderrahman es-Sa'di ; traduction d'Octave Houdas",
                 "year": 1900,
                 "url": "https://archive.org/details/tarikhessoudanpa00sadauoft",
@@ -303,7 +303,7 @@
                 "notes": "Paris, Ernest Leroux, 1900. Lu le 11 octobre 2026 sur l'exemplaire numérisé d'archive.org. Le traducteur situe l'auteur, lettré de Tombouctou, au XVIIe siècle. Pages 5 et 6, liste des rois za et sonni de Gao : « Zâ-Yama-Da'o », « Sonni-Mohammed Dâo », « Sonni-Bar, dont le nom était Bokar-Dâ'o »."
               },
               {
-                "title": "La Guinée française",
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
                 "author": "André Arcin",
                 "year": 1907,
                 "url": "https://archive.org/details/laguinefrana00arci",
@@ -325,7 +325,7 @@
             "hypothesisGroup": "origine du nom Dao",
             "sources": [
               {
-                "title": "La Guinée française",
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
                 "author": "André Arcin",
                 "year": 1907,
                 "url": "https://archive.org/details/laguinefrana00arci",
@@ -413,7 +413,7 @@
             "aspect": "usage",
             "sources": [
               {
-                "title": "La Guinée française",
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
                 "author": "André Arcin",
                 "year": 1907,
                 "url": "https://archive.org/details/laguinefrana00arci",

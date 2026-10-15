@@ -82,5 +82,183 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Mothibi », « TSWANA », « surname », « clan », « etymology », « transmission », « alliance » et « obituary », ainsi que la page Forebears dédiée n'ont établi aucune règle propre à l'ensemble des emplois de Mothibi permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mothibi est d'abord celui d'un chef des Batlhaping, au sud de l'actuel Botswana : le voyageur John Campbell l'écrit Mateebe en 1813. Les sources lues n'en donnent pas le sens et ne disent pas si les familles Mothibi d'aujourd'hui descendent de ce chef.",
+    "names": [
+      {
+        "nameText": "Mothibi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tsn",
+        "namedBy": null,
+        "shortLine": "Le nom d'un chef des Batlhaping, écrit Mateebe dès 1813 ; on ne sait pas avec certitude ce qu'il veut dire.",
+        "periodLabel": "Écrit Mateebe dès 1813",
+        "accounts": [
+          {
+            "period": {
+              "from": 1842,
+              "to": 1842,
+              "label": "Décrit en 1842"
+            },
+            "era": "polity",
+            "statement": "Le nom Mothibi est celui du chef des Batlhaping, que Robert Moffat nomme Mothibi, « chief of the Batlapis », à propos de la visite du missionnaire John Campbell à Lithako. Les sources lues ne disent pas ce que le nom veut dire, ni si les familles Mothibi d'aujourd'hui descendent de ce chef ; on ne sait pas avec certitude.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Missionary Labours and Scenes in Southern Africa",
+                "author": "Robert Moffat",
+                "year": 1842,
+                "url": "https://archive.org/details/10450139bsb",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 227",
+                "notes": "Londres, John Snow, 1842 ; exemplaire numérisé d'archive.org (Bayerische Staatsbibliothek). Page 227 : le missionnaire John Campbell visite Lithako et y est bien accueilli « by the Bechuanas, Mothibi, the chief of the Batlapis, and other tribes ». Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1842,
+              "to": 1842,
+              "label": "Texte publié en 1842"
+            },
+            "era": "polity",
+            "statement": "Le nom Mothibi est écrit Mateebe ou Matevi par des voyageurs qui passent chez les Batlhaping, selon Robert Moffat, qui s'étonne que chaque voyageur ou missionnaire écrive les noms à sa manière.",
+            "sources": [
+              {
+                "title": "Missionary Labours and Scenes in Southern Africa",
+                "author": "Robert Moffat",
+                "year": 1842,
+                "url": "https://archive.org/details/10450139bsb",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 225",
+                "notes": "Londres, John Snow, 1842 ; exemplaire numérisé d'archive.org (Bayerische Staatsbibliothek). Page 225 : Moffat s'étonne que des voyageurs écrivent « Lattakoo for Lithako ; Krooman for Kuruman ; Mateebe and Matevi for Mothibi ; and Bachapins and Machapis for Batlapis ». Il écrit à Kuruman et connaît le chef. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1813,
+              "to": 1813,
+              "label": "Juin 1813"
+            },
+            "era": "polity",
+            "statement": "Le nom Mothibi apparaît par écrit sous une forme proche, Mateebe, dans le récit du premier voyage du missionnaire John Campbell : « Mateebe, the Matchappee king » est le roi de Lattakoo, que les compagnons de Campbell disent déjà informé de leur approche. Moffat écrit en 1842 que Mateebe est une façon d'écrire Mothibi. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un voyageur l'a écrit, pas depuis quand le nom est donné.",
+            "formAsWritten": "Mateebe",
+            "birth": true,
+            "actors": [
+              {
+                "name": "John Campbell",
+                "role": "missionnaire, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels in South Africa, undertaken at the request of the Missionary Society",
+                "author": "John Campbell",
+                "year": 1815,
+                "url": "https://archive.org/details/travelsinsouthaf00camp",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 239",
+                "notes": "Londres, Black, Parbury et Allen, 1815 ; exemplaire numérisé sur archive.org. Récit du premier voyage du missionnaire John Campbell (1813). Page 239, en tête « June.] Journey to Lattakoo » : « Mateebe, the Matchappee king, was already informed of our approach ». Lu le 14 octobre 2026."
+              },
+              {
+                "title": "Missionary Labours and Scenes in Southern Africa",
+                "author": "Robert Moffat",
+                "year": 1842,
+                "url": "https://archive.org/details/10450139bsb",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 225",
+                "notes": "Londres, John Snow, 1842 ; exemplaire numérisé d'archive.org (Bayerische Staatsbibliothek). Page 225 : Moffat s'étonne que des voyageurs écrivent « Lattakoo for Lithako ; Krooman for Kuruman ; Mateebe and Matevi for Mothibi ; and Bachapins and Machapis for Batlapis ». Il écrit à Kuruman et connaît le chef. Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mateebe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme que John Campbell écrit en 1813 pour le nom du chef de Lattakoo, Mothibi.",
+        "periodLabel": "Écrit dès 1813",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1813,
+              "to": 1813,
+              "label": "Juin 1813"
+            },
+            "era": "polity",
+            "statement": "Le nom Mateebe est la forme que John Campbell écrit pour le roi de Lattakoo en juin 1813. Moffat note en 1842 que c'est une des façons d'écrire Mothibi. C'est la plus ancienne trace de cette graphie que le projet connaît.",
+            "formAsWritten": "Mateebe",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels in South Africa, undertaken at the request of the Missionary Society",
+                "author": "John Campbell",
+                "year": 1815,
+                "url": "https://archive.org/details/travelsinsouthaf00camp",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 239",
+                "notes": "Londres, Black, Parbury et Allen, 1815 ; exemplaire numérisé sur archive.org. Récit du premier voyage du missionnaire John Campbell (1813). Page 239, en tête « June.] Journey to Lattakoo » : « Mateebe, the Matchappee king, was already informed of our approach ». Lu le 14 octobre 2026."
+              },
+              {
+                "title": "Missionary Labours and Scenes in Southern Africa",
+                "author": "Robert Moffat",
+                "year": 1842,
+                "url": "https://archive.org/details/10450139bsb",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 225",
+                "notes": "Londres, John Snow, 1842 ; exemplaire numérisé d'archive.org (Bayerische Staatsbibliothek). Page 225 : Moffat s'étonne que des voyageurs écrivent « Lattakoo for Lithako ; Krooman for Kuruman ; Mateebe and Matevi for Mothibi ; and Bachapins and Machapis for Batlapis ». Il écrit à Kuruman et connaît le chef. Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Matevi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre forme du nom Mothibi, que Moffat relève en 1842 chez des voyageurs.",
+        "periodLabel": "Cité en 1842",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1842,
+              "to": 1842,
+              "label": "Texte publié en 1842"
+            },
+            "era": "polity",
+            "statement": "Le nom Matevi est une autre façon d'écrire Mothibi chez des voyageurs, selon Robert Moffat. C'est la plus ancienne trace de cette graphie que le projet connaît ; Moffat la rapporte sans dire qui l'a écrite.",
+            "formAsWritten": "Matevi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Missionary Labours and Scenes in Southern Africa",
+                "author": "Robert Moffat",
+                "year": 1842,
+                "url": "https://archive.org/details/10450139bsb",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 225",
+                "notes": "Londres, John Snow, 1842 ; exemplaire numérisé d'archive.org (Bayerische Staatsbibliothek). Page 225 : Moffat s'étonne que des voyageurs écrivent « Lattakoo for Lithako ; Krooman for Kuruman ; Mateebe and Matevi for Mothibi ; and Bachapins and Machapis for Batlapis ». Il écrit à Kuruman et connaît le chef. Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

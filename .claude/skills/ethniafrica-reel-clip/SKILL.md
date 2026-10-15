@@ -80,10 +80,14 @@ cannot be located or the file cannot be read.
    The engine reads the source size and picks the gabarit: **band** for a wide
    source (the interview reels), **portrait** for a tall one (the « sauvage »
    reel). It writes `reel.mp4` (1080×1920, H.264/AAC), `sous-titres-<lang>.srt`,
-   `cover.png` (when `thumbnail` is set) and a copy of `plan.json`.
-7. **Look**: at least three frames (start, a two-line caption, another
-   speaker or an overlay) and the cover. Check credit, watermark, the source's
-   logo, an overlay fully covering its original, and no word cut at either end.
+   `cover.png` (when `thumbnail` is set) and a copy of `plan.json`. Every reel
+   ends on the project's signature line (Cartes 1.6.0, operator, 16 October
+   2026): the last picture held in silence for 3.6 s, the line where the
+   captions were. The reel is that much longer than its clips.
+7. **Look**: at least four frames (start, a two-line caption, another
+   speaker or an overlay, and the ending with the signature line) and the
+   cover. Check credit, watermark, the source's logo, an overlay fully
+   covering its original, and no word cut at either end.
 8. **Captions for the networks**: `descriptions.md` following
    [references/descriptions.md](references/descriptions.md), then
    `npm run check:publication -- OUT_DIR/descriptions.md` until it passes.

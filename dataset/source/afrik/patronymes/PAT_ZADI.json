@@ -6,7 +6,7 @@
   },
   "id": "PAT_ZADI",
   "nameMain": "Zadi",
-  "nameSystem": "non_hereditary_patronymic",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Zadi",
@@ -86,7 +86,7 @@
     },
     {
       "sourceKey": "afriksoir-2021-noms-bete",
-      "title": "Côte d'Ivoire : Voici la signification des noms Bété que vous connaissez",
+      "title": "Côte d'Ivoire : voici la signification des noms Bété que vous connaissez",
       "url": "https://afriksoir.net/cote-divoire-voici-la-signification-des-noms-bete-que-vous-connaissez/",
       "tier": "unverified",
       "source_kind": "press",
@@ -94,10 +94,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "nameSystem",
-      "reason": "Aucune source consultée ne fait de Zadi un nom de clan : une liste de presse le donne comme un nom de jumeaux, et Gronner comme la BnF le citent comme nom de personne. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet jamais."
-    },
     {
       "fieldPath": "designatedSocialUnit",
       "reason": "La thèse de Gronner a été vérifiée pour les occurrences Zadi et Zadiayo, mais elle ne démontre pas que le patronyme moderne désigne ce groupe ou un lignage précis. L'unité sociale désignée reste inconnue."
@@ -164,7 +160,7 @@
                 "notes": "Thèse de troisième cycle, EHESS, publiée par l'ORSTOM en 1982 ; lue dans le PDF intégral du fonds documentaire de l'IRD le 11 octobre 2026. Les chroniques villageoises qu'elle transcrit ont été racontées à l'auteur par les anciens des villages."
               },
               {
-                "title": "Côte d'Ivoire : Voici la signification des noms Bété que vous connaissez",
+                "title": "Côte d'Ivoire : voici la signification des noms Bété que vous connaissez",
                 "author": "Afrik Soir",
                 "year": 2021,
                 "url": "https://afriksoir.net/cote-divoire-voici-la-signification-des-noms-bete-que-vous-connaissez/",
@@ -185,7 +181,7 @@
             "hypothesisGroup": "origine du nom Zadi",
             "sources": [
               {
-                "title": "Côte d'Ivoire : Voici la signification des noms Bété que vous connaissez",
+                "title": "Côte d'Ivoire : voici la signification des noms Bété que vous connaissez",
                 "author": "Afrik Soir",
                 "year": 2021,
                 "url": "https://afriksoir.net/cote-divoire-voici-la-signification-des-noms-bete-que-vous-connaissez/",

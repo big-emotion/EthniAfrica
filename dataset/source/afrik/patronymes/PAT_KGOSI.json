@@ -92,5 +92,89 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web combinant « Kgosi », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de l'article onomastique de Thapelo Otlogetswe et la page de répartition patronymique Forebears consacrée à Kgosi, n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kgosi est un nom de personne du Botswana : il veut dire « chef » selon une étude des noms de personnes publiée en 2019, qui le montre donné à des garçons, parfois d'après leur père. Les sources lues ne disent pas depuis quand il est un nom de famille, ni si toutes les familles qui le portent ont la même origine.",
+    "names": [
+      {
+        "nameText": "Kgosi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tsn",
+        "namedBy": null,
+        "shortLine": "Un nom de personne du Botswana qui veut dire « chef » ; il est donné à des garçons.",
+        "periodLabel": "Relevé en 2019",
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Décrit en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Kgosi voudrait dire « chef », selon Goabilwe Ramaeba, qui le range parmi les noms tirés d'une fonction ou d'un rang dans la société. Dans ses données du Botswana, tous les porteurs sont des hommes. Ce sens est celui d'un nom de personne : il ne dit pas que les familles Kgosi d'aujourd'hui ont toutes la même origine.",
+            "aspect": "meaning",
+            "hypothesisGroup": "sens du nom Kgosi",
+            "sources": [
+              {
+                "title": "A comparative study of linguistic and social aspects of personal names in Botswana and Scotland",
+                "author": "Goabilwe Nnanishie Ramaeba",
+                "year": 2019,
+                "url": "https://theses.gla.ac.uk/74387/1/2019ramaebaphd.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 140-141",
+                "notes": "Thèse de doctorat, University of Glasgow, 2019 ; PDF lu en entier le 14 octobre 2026. Elle étudie des noms de personnes recueillis au Botswana et en Écosse. Pages 140 à 143 : Kgosi « chief » y est rangé parmi les noms de fonction ou de rang, tous portés par des hommes ; il est donné à un garçon longtemps attendu, seul au milieu de filles, et à des fils de mères qui dirigent seules leur famille ; deux porteurs l'ont reçu d'après leur père."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Décrit en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Kgosi est donné, selon Goabilwe Ramaeba, à un garçon longtemps attendu, seul au milieu de filles : on espère qu'il deviendra le chef de la famille. Il est aussi choisi par des mères qui élèvent seules leurs enfants, parce que leur premier fils prendra la tête du foyer.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A comparative study of linguistic and social aspects of personal names in Botswana and Scotland",
+                "author": "Goabilwe Nnanishie Ramaeba",
+                "year": 2019,
+                "url": "https://theses.gla.ac.uk/74387/1/2019ramaebaphd.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 142",
+                "notes": "Thèse de doctorat, University of Glasgow, 2019 ; PDF lu en entier le 14 octobre 2026. Elle étudie des noms de personnes recueillis au Botswana et en Écosse. Pages 140 à 143 : Kgosi « chief » y est rangé parmi les noms de fonction ou de rang, tous portés par des hommes ; il est donné à un garçon longtemps attendu, seul au milieu de filles, et à des fils de mères qui dirigent seules leur famille ; deux porteurs l'ont reçu d'après leur père."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Relevé en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Kgosi figure dans la thèse de Goabilwe Ramaeba sous la forme Kgosi, parmi les noms donnés au Botswana : deux hommes le portent d'après leur père. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit ce que des familles ont rapporté en enquête, pas depuis quand le nom est donné.",
+            "formAsWritten": "Kgosi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A comparative study of linguistic and social aspects of personal names in Botswana and Scotland",
+                "author": "Goabilwe Nnanishie Ramaeba",
+                "year": 2019,
+                "url": "https://theses.gla.ac.uk/74387/1/2019ramaebaphd.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 143",
+                "notes": "Thèse de doctorat, University of Glasgow, 2019 ; PDF lu en entier le 14 octobre 2026. Elle étudie des noms de personnes recueillis au Botswana et en Écosse. Pages 140 à 143 : Kgosi « chief » y est rangé parmi les noms de fonction ou de rang, tous portés par des hommes ; il est donné à un garçon longtemps attendu, seul au milieu de filles, et à des fils de mères qui dirigent seules leur famille ; deux porteurs l'ont reçu d'après leur père."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

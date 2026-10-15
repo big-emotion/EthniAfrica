@@ -30,6 +30,16 @@ import {
 } from "./layout.mjs";
 
 const FPS = 30;
+// Cartes 1.6.0 (operator, 16 October 2026): every reel ends on the project's
+// signature line, here on the last picture held in silence, so no caption,
+// box or replaced text can cover it. The line comes from the accepted design
+// (version.json), split after each comma as the cards print it. It holds the
+// time to read it at 21 characters a second plus 0.3 s.
+const { signatureLine: SIGNATURE_LINE } = JSON.parse(
+  await readFile(resolve("social/design-system/version.json"), "utf8")
+);
+const ENDING_SECONDS =
+  Math.ceil(([...SIGNATURE_LINE].length / 21 + 0.3) * 10) / 10;
 const brandFonts = resolve("social/brand/fonts");
 const logo = resolve("social/design-system/assets/Logo/ethniafrica-logo.png");
 const FONTS = {
@@ -65,7 +75,11 @@ function styles(layout, rect) {
 .signature{position:absolute;left:0;right:0;display:flex;justify-content:center;align-items:center}
 .signature img{filter:brightness(0) invert(1)}
 .signature b{display:block;font-family:Signature;font-weight:700;color:#fff}
-.signature i{display:block;font-family:Signature;font-weight:600;font-style:normal;color:#fff}`;
+.signature i{display:block;font-family:Signature;font-weight:600;font-style:normal;color:#fff}
+.ending{position:absolute;left:60px;width:960px;top:1305px;transform:translateY(-50%);
+  text-align:center;font:600 56px/64px Signature;color:#fff;
+  text-shadow:0 0 4px #000,0 2px 14px rgba(0,0,0,.85)}
+.ending span{display:block;white-space:nowrap}`;
   if (layout.name === "portrait")
     return (
       common +
@@ -111,8 +125,13 @@ html,body{margin:0;width:${WIDTH}px;height:${HEIGHT}px;background:transparent;ov
 ${styles(layout, rect)}
 </style></head><body><div class="layer" id="layer"></div></body></html>`;
 
+// The motto « L'Afrique à travers ses noms » left the signature with 1.6.0:
+// the signature line now speaks for the project, once, at the end.
 const signature = `<div class="signature"><img src="/logo.png" alt=""><div>
-<b>EthniAfrica</b><i>L’Afrique à travers ses noms</i></div></div>`;
+<b>EthniAfrica</b></div></div>`;
+const endingHtml = `<div class="ending">${SIGNATURE_LINE.split(/(?<=,) /u)
+  .map((line) => `<span>${escape(line)}</span>`)
+  .join("")}</div>`;
 
 const captionHtml = (text) =>
   `<div class="caption"><span>${escape(text)}</span></div>`;
@@ -255,6 +274,7 @@ export async function renderClip(planFile, outDir) {
       join(layers, "frame.png")
     );
     await draw("", join(layers, "empty.png"));
+    await draw(endingHtml, join(layers, "ending.png"));
     const tooLong = [];
     for (const [i, p] of phrases.entries()) {
       await draw(captionHtml(p.text));
@@ -310,6 +330,13 @@ export async function renderClip(planFile, outDir) {
     }))
   );
 
+  // The ending appears once the clips are over, when every other track ends.
+  await writeTrack(layers, "ending", [
+    { seconds: duration, picture: "empty.png" },
+    { seconds: ENDING_SECONDS, picture: "ending.png" },
+  ]);
+  const total = +(duration + ENDING_SECONDS).toFixed(3);
+
   const cuts = plan.clips
     .map(
       ([a, b], i) =>
@@ -323,14 +350,19 @@ export async function renderClip(planFile, outDir) {
   const graph =
     cuts +
     `${joined}concat=n=${plan.clips.length}:v=1:a=1[cut][aout];` +
-    frameGraph("[cut]", rect) +
+    // The ending: the last picture held, the sound padded with silence.
+    `[cut]tpad=stop_mode=clone:stop_duration=${ENDING_SECONDS}[held];` +
+    `[aout]apad=pad_dur=${ENDING_SECONDS}[aend];` +
+    frameGraph("[held]", rect) +
     `[framed];[framed][1:v]overlay=0:0[signed];` +
     layer(4, "ovl") +
     `[signed][ovl]overlay=0:0:eof_action=pass[replaced];` +
     layer(3, "box") +
     `[replaced][box]overlay=0:0:eof_action=pass[boxed];` +
     layer(2, "cap") +
-    `[boxed][cap]overlay=0:0:eof_action=pass,format=yuv420p[vout]`;
+    `[boxed][cap]overlay=0:0:eof_action=pass[captioned];` +
+    layer(5, "end") +
+    `[captioned][end]overlay=0:0:eof_action=pass,format=yuv420p[vout]`;
   const reel = join(outDir, "reel.mp4");
   ffmpeg([
     "-i",
@@ -342,14 +374,15 @@ export async function renderClip(planFile, outDir) {
     ...concatInput(join(layers, "captions.txt")),
     ...concatInput(join(layers, "boxes.txt")),
     ...concatInput(join(layers, "overlays.txt")),
+    ...concatInput(join(layers, "ending.txt")),
     "-filter_complex",
     graph,
     "-map",
     "[vout]",
     "-map",
-    "[aout]",
+    "[aend]",
     "-t",
-    String(duration),
+    String(total),
     "-c:v",
     "libx264",
     "-preset",
@@ -389,7 +422,12 @@ export async function renderClip(planFile, outDir) {
   // Kept after a failed render for inspection; a delivered folder holds only
   // the publishable files.
   await rm(layers, { recursive: true, force: true });
-  return { reel, duration, layout: layout.name, captions: phrases.length };
+  return {
+    reel,
+    duration: total,
+    layout: layout.name,
+    captions: phrases.length,
+  };
 }
 
 const [command, planFile, outDir] = process.argv.slice(2);

@@ -151,6 +151,14 @@ days).
 
 - **Every caption ends with the same sentence, no link block, no hashtag wall:**
   « Cherchez [nom] sur EthniAfrica, lien en profil. »
+- **Every reel and every carousel ends with the project's signature, word for
+  word, and every account's bio carries it** (decided 2026-10-15):
+  « Connaître nos noms, décoloniser leur emploi, nous nommer nous-mêmes. »
+  It comes after the series' fixed closing line, never in its place, and
+  repeats nothing of it. Its meaning, its limits and the four kinds of use
+  behind « décoloniser leur emploi » are in
+  [the essay, section 5.6](../essais/afrique-nest-pas-un-tout-2026-10-13.md).
+  How it sits on the cards is a design-system rule, not decided here.
 - **The profile link stays fixed** on the search page; the episode-specific link
   goes in the **Instagram story link sticker**, the only place where a link is
   one tap away and changes with every episode:
@@ -176,5 +184,11 @@ days).
 - **Unity** (series 6) is a signed position, written « nous pensons que… »,
   never presented as a sourced fact. Any figure on Africa's resources enriching
   other countries carries its source.
+- **Every episode carries part of the signed position** (operator, 2026-10-15:
+  « Chaque vidéo doit être vue comme une possibilité de partager la morale »).
+  A viewer may see one episode only, so the « nous pensons » paragraph is no
+  longer kept for episode 6. Episode 6 still develops it in full, with the
+  series' closing line. The paragraph closes each video, set apart from the
+  sourced facts, and never blames the Africans who use a word.
 - **Third-party clips**: the operator clears the rights for each clip before
   publication.

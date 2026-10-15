@@ -39,7 +39,16 @@ describe("fiche names charter", () => {
     expect(
       within(chapter).getByRole("heading", { level: 3, name: "Nom de clan" })
     ).toBeVisible();
-    expect(chapter).toHaveTextContent("8 noms");
+    // Pohamba and Shikongo are personal names turned family names (ETNI-2011,
+    // sixth naming system), so the Ovambo names split across two groups.
+    expect(
+      within(chapter).getByRole("heading", {
+        level: 3,
+        name: "Nom de famille héréditaire",
+      })
+    ).toBeVisible();
+    expect(chapter).toHaveTextContent("6 noms");
+    expect(chapter).toHaveTextContent("2 noms");
     expect(within(chapter).queryByRole("navigation")).toBeNull();
 
     const links = within(chapter).getAllByRole("link");

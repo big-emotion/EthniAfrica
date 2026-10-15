@@ -14,7 +14,6 @@ const AFRIK = resolve(process.cwd(), "dataset/source/afrik");
 const SURMIC_PEOPLES = [
   "PPL_SURI",
   "PPL_MURSI",
-  "PPL_BODI",
   "PPL_MEEN",
   "PPL_MURLE",
   "PPL_MAJANG",
@@ -52,13 +51,7 @@ describe("the Surmic peoples", () => {
     );
 
     expect(listed).toEqual(
-      expect.arrayContaining([
-        "PPL_SURI",
-        "PPL_MURSI",
-        "PPL_BODI",
-        "PPL_MEEN",
-        "PPL_MURLE",
-      ])
+      expect.arrayContaining(["PPL_SURI", "PPL_MURSI", "PPL_MEEN", "PPL_MURLE"])
     );
   });
 });

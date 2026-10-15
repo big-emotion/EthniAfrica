@@ -1,0 +1,369 @@
+{
+  "id": "PPL_MAO",
+  "nameMain": "Mao",
+  "languageFamilyId": "FLG_OMOTIQUE",
+  "currentCountries": ["ETH"],
+  "classificationStatus": "contested",
+  "content": {
+    "appellations": {
+      "mainName": "Mao",
+      "selfAppellation": "Mao",
+      "exonyms": ["Mawo", "Manno", "Manjo", "Anfillo", "Sit Shwala"],
+      "originOfExonyms": "Le terme Mao a historiquement fonctionne comme une etiquette sociopolitique appliquee a diverses populations subordonnees dans l'ouest ethiopien, plutot que comme un nom ethnique unifie. Mawo et Manno sont des variantes dialectales ou orthographiques. Manjo est un terme parfois utilise de maniere pejorative pour designer les groupes marginalises associes aux Mao dans certaines regions. Anfillo est le nom territorial et ethnique du groupe Mao meridional (Southern Mao) ayant adopte la langue Omotic Kefoid. Sit Shwala est une auto-designation utilisee par les locuteurs du Mao Koman dans la region de Begi.",
+      "whyProblematic": "La denomination Mao recouvre en realite plusieurs groupes linguistiquement distincts: les Mao omotiques (Hozo, Sezo, Bambasi, Ganza) et les Mao komaniques (groupe linguistique different). La correspondance entre identite ethnique et langue n'est pas systematique, certains groupes s'identifiant comme Mao tout en parlant une langue Koman, et vice versa. L'Anfillo meridional est un groupe Mao qui a abandonne sa langue omotique au profit de l'Oromo.",
+      "contemporaryUsage": "Mao est utilise dans la litterature ethnographique et linguistique pour designer un ensemble de peuples de l'ouest ethiopien aux marges de la frontiere soudanaise. Dans le contexte administratif ethiopien, les groupes Mao sont disperses entre la region de Benishangul-Gumuz et la zone du Mirab Welega (Oromia).",
+      "linguisticFamily": "FLG_OMOTIQUE",
+      "ethnoLinguisticGroup": "Omotic (branche Mao, incluant les sous-groupes Bambasi, Hozo/Seze, Ganza) et Koman (Nilo-Saharien pour le Mao komanophone); affiliation contestee",
+      "historicalRegion": "Quest de l'Ethiopie, region de Benishangul-Gumuz et zone du Mirab Welega (Oromia), aux marges de la frontiere avec le Soudan",
+      "currentCountries": ["ETH"]
+    },
+    "ethnicities": [
+      "Mao (Hozo)",
+      "Mao (Sezo/Seze)",
+      "Mao (Bambasi/Northern Mao)",
+      "Mao (Ganza)",
+      "Anfillo (Southern Mao)"
+    ],
+    "origins": {
+      "ancientOrigins": "Les Mao sont considered comme l'un des groupes omotiques les plus divergents et les plus anciennement separes du reste de la famille omotique. Bender (2000, 2003) les positionnait comme une branche primaire et precoce de l'Omotic, suggerant une separation tres ancienne du proto-omotique. Les langues mao omotiques (Hozo, Sezo, Bambasi, Ganza) temoignent d'une longue periode d'isolement relatif dans les zones forestieres et marecageuses de l'ouest ethiopien, entrecoupee de contacts intenses avec les locuteurs komaniques voisins.",
+      "formationPeriod": "La formation du royaume Gonga d'Anfillo au tournant du XVIe et XVIIe siecle a profondement remodele les identites mao: les Mao meridionaux (Anfillo) ont ete incorpores comme serfs ou clients dependants des elites Kefoid (Gonga), ce qui a provoque un abandon progressif de leur langue omotique originelle au profit des langues kefoides, puis de l'oromo.",
+      "migrationRoutes": [
+        "Zone des montagnes de Guma Gara Arba et marais du Dabus (Mao omotique), Oromia occidentale",
+        "Woreda de Bambasi, region de Benishangul-Gumuz (Mao septentrional/Bambasi)",
+        "Vallee de la riviere Didessa et woreda de Belo Jegonfoy (migration recente de locuteurs Bambasi)"
+      ],
+      "historicalSettlementZones": [
+        "Woreda de Bambasi, zone d'Asosa, region de Benishangul-Gumuz",
+        "Environs de Begi, zone du Mirab Welega, region d'Oromia",
+        "Etat du Nil Bleu (Soudan), pour le groupe Ganza"
+      ],
+      "unificationsOrDivisions": "L'etablissement du Royaume Gonga d'Anfillo a la fin du XVIe siecle (a la suite des migrations kefoides vers l'ouest provoquees par les expansions oromo dans le bassin du Gibe vers 1560-1570) a entraene une integration asymetrique des Mao meridionaux sous domination kefoid. Les Mao ont ainsi forme une categorie sociale subordonnee (serfs, clients) au sein de la structure politique gonga, favorisant un bilinguisme generalise puis un abandon linguistique.",
+      "externalInfluences": "Contact intensif et de longue date avec les langues komaniques voisines (Kwama, Ganza/Koma) a provoque d'importantes restructurations linguistiques par contact. L'expansion oromo dans le Mirab Welega a progressivement reduit l'aire des locuteurs mao omotiques. La domination kefoid (Busasi) au XVIIe siecle a pousse les Mao meridionaux (Anfillo) a fuir vers Anfillo et a adopter l'oromo. L'islamisation partielle est documentee chez les Mao du nord (Bambasi region).",
+      "majorHistoricalEvents": "Formation du Royaume Gonga d'Anfillo au XVIe-XVIIe siecle et subordination des Mao meridionaux. Fuite des Anfillo vers la region de Wellega suite aux persecutions des Busasi. Adoption de l'oromo par les Anfillo au contact des Oromo de Wellega. Migrations recentes de locuteurs Bambasi vers la vallee du Didessa lors de troubles politiques recents."
+    },
+    "organization": {
+      "traditionalPoliticalSystem": "Organisation en communautes villageoises autonomes sans structure politique centralisee. Les Mao ont historiquement occupe des positions subordonnees vis-a-vis des royaumes voisins (Gonga, Kefa, puis domination oromo).",
+      "clanOrganization": "Organisation en clans patriliniaires. Le clan Kur est documente comme l'un des clans principaux du Mao komanophone dans la region de Begi. L'intermariage entre les groupes Sezo et Hozo est documente, ainsi qu'avec les groupes komaniques voisins.",
+      "ageClassSystems": null,
+      "roleOfLineages": "Les lignages claniques determinent les regles d'intermariage et les obligations de reciprocite. Des relations de maitres-clients (Mao fournissant des produits forestiers aux populations agricoles) ont structure historiquement les echanges economiques.",
+      "religiousAuthority": null
+    },
+    "languages": {
+      "mainLanguage": "Langues mao (groupe: Hozo, Sezo, Bambasi, Ganza)",
+      "isoCodes": ["hoz", "sze", "myf", "gza"],
+      "dialects": [
+        "Hozo (Mao de Begi)",
+        "Sezo/Seze (Mao de Begi)",
+        "Mawes Aas'e/Bambasi (Mao septentrional)",
+        "Ganza (aussi parle au Soudan)"
+      ],
+      "vehicularRole": "Les quatre langues mao omotiques sont distinctes et peu intelligibles entre elles. Hozo et Sezo forment un sous-groupe (Mao de Begi) parle dans la zone de Mirab Welega (Oromia). Bambasi (Mao septentrional) est parle dans la region de Benishangul-Gumuz. Ganza est parle a la frontiere ethiopio-soudanaise. L'oromo sert de lingua franca dans la zone de Mirab Welega, l'amharique dans la region de Benishangul-Gumuz. Le Mao meridional (Anfillo) a entierement adopte l'oromo comme langue maternelle."
+    },
+    "culture": {
+      "majorRites": "La culture materielle et les pratiques rituelles des Mao sont peu documentees dans la litterature accessible. Les pratiques agro-forestieres de cueillette, de chasse et d'agriculture constituent le cadre de vie traditionnel. Les Anfillo (Mao meridionaux oromanises) pratiquent l'agriculture (mais, durra, teff, orge, haricots, cafe, enset) et tirent un usage important du miel et de la cire d'abeille.",
+      "symbols": "Le miel et la cire d'abeilles sont des produits symboliques et economiques importants pour les communautes Anfillo-Mao. La foret et les ressources forestieres constituent l'environnement symbolique central des groupes Mao.",
+      "artsAndMusic": null,
+      "spiritualities": "Les Anfillo (Mao meridional oromanise) croient en un etre supreme nomme Yere, assiste de deux entites: Sanci Gai (createur du peuple Anfillo, invoque lors des epidemies) et Karifo (seigneur de la pluie). Les Mao septentrionaux (Bambasi) sont en majorite musulmans. Les Mao de Begi (Hozo, Sezo) sont en majorite chretiens dans la vallee du Didessa et de tradition mixte pres de Begi."
+    },
+    "historicalRole": {
+      "kingdomsOrChiefdoms": null,
+      "relationsWithNeighbors": "Les Mao ont entretenu des relations de maitres-clients avec les populations agricoles voisines, echangeant des produits forestiers contre des biens manufactures ou des cereales. Les contacts linguistiques et culturels avec les locuteurs komaniques (Kwama, Ganza) et les locuteurs kefoides (Anfillo-Gonga) ont profondement marque leur identite. La coexistence avec les Oromo dans le Mirab Welega a conduit a une assimilation progressive.",
+      "conflictsOrAlliances": "Les Mao meridionaux ont subi une severe repression et l'esclavage sous la domination Busasi (Kefa) au XVIIe siecle, ce qui les a forces a fuir vers la region d'Anfillo. Les relations asymetriques avec les Oromo de Wellega ont favorise l'abandon linguistique et culturel progressif des Anfillo. Les Mao septentrionaux ont maintenu une identite distincte dans les zones plus isolees de Benishangul-Gumuz.",
+      "diaspora": null
+    },
+    "demography": {
+      "totalPopulation": 31400,
+      "referenceYear": 2025,
+      "source": "Estimations composites: Hozo 6000 (Mao languages – Wikipedia), Sezo/Seze 13000 (estimations linguistiques), Bambasi/Northern Mao 4500 (Joshua Project 2025, https://joshuaproject.net/people_groups/14023), Ganza quelques centaines en Ethiopie; total approche 31400",
+      "distributionByCountry": [
+        {
+          "country": "ETH",
+          "population": 31400
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Mao, Northern in Ethiopia – Joshua Project, 2025",
+        "url": "https://joshuaproject.net/people_groups/14023",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
+      },
+      {
+        "title": "Oromo, Anfillo in Ethiopia – Joshua Project, 2025",
+        "url": "https://joshuaproject.net/people_groups/10318",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
+      },
+      {
+        "title": "Omotic languages – Encyclopaedia Britannica, 2024",
+        "url": "https://www.britannica.com/topic/Omotic-languages",
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
+      },
+      {
+        "title": "The Mao and Komo Languages in the Begi-Tongo area in Western Ethiopia – Journals of Dartmouth College, 2013",
+        "url": "https://journals.dartmouth.edu/cgi-bin/WebObjects/Journals.woa/xmlpage/1/article/447",
+        "tier": "needs_review",
+        "source_kind": "academic"
+      },
+      {
+        "title": "Omotic Features in the Mao Group and Internal Coherence – Ahland, CSULB",
+        "url": "https://www.csulb.edu/sites/default/files/2025/documents/OmoticFeaturesMaoGroup.Final_Ahland.pdf",
+        "tier": "needs_review",
+        "source_kind": "academic"
+      },
+      {
+        "title": "Mao – Summary – eHRAF World Cultures",
+        "url": "https://ehrafworldcultures.yale.edu/cultures/mp19/summary",
+        "tier": "referenced",
+        "source_kind": "academic"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Mao désigne plusieurs peuples de l'ouest de l'Éthiopie, à la frontière du Soudan, de langues omotiques et komanes. Ceux qui parlent des langues omotiques, comme les Anfillo, les Bambasi, les Hozo et les Sezo, se nomment eux-mêmes Mao. Une partie des groupes de langue komane préfère Sit Shwala. D'autres noms existent, comme Mawo. Les sources ne s'accordent pas sur l'origine du nom Mao ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Mao",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de plusieurs peuples de l'ouest de l'Éthiopie ; son origine est discutée. Écrit dès 1930.",
+        "periodLabel": "Écrit dès 1930 ; en usage aujourd'hui",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mao désigne plusieurs peuples de l'ouest de l'Éthiopie, de langues omotiques et komanes, sans former un peuple unique. Selon Alexander Meckelburg, il sert à la fois de nom que des groupes se donnent (les Anfillo, les Bambasi, les Hozo et les Sezo), de nom que d'autres leur donnent, et d'étiquette sociale. Son origine est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "From “Subject to Citizen”? History, Identity and Minority Citizenship: The Case of the Mao and Komo of Western Ethiopia",
+                "author": "Alexander Meckelburg",
+                "year": 2016,
+                "url": "https://ediss.sub.uni-hamburg.de/bitstream/ediss/8036/1/Dissertation.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 60-61",
+                "notes": "Thèse de doctorat, Université de Hambourg, soutenue le 1er mars 2017 ; lue le 13 octobre 2026 dans la version en ligne. Pages imprimées au bas des feuillets."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Mao viendrait d'un mot omotique qui veut dire « homme » ou « gens », selon Alexander Meckelburg.",
+            "hypothesisGroup": "origine-mao",
+            "sources": [
+              {
+                "title": "From “Subject to Citizen”? History, Identity and Minority Citizenship: The Case of the Mao and Komo of Western Ethiopia",
+                "author": "Alexander Meckelburg",
+                "year": 2016,
+                "url": "https://ediss.sub.uni-hamburg.de/bitstream/ediss/8036/1/Dissertation.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 60",
+                "notes": "Thèse de doctorat, Université de Hambourg, soutenue le 1er mars 2017 ; lue le 13 octobre 2026 dans la version en ligne. Pages imprimées au bas des feuillets."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "1975"
+            },
+            "era": "modern",
+            "statement": "Le nom Mao viendrait d'un mot que les Oromo emploient pour « les gens à la peau très foncée » de la région, comme les Éthiopiens emploient le mot shankilla, selon le linguiste Lionel Bender (1975), que cite Alexander Meckelburg. Meckelburg ne pense pas que le mot soit aussi général : pour lui, son emploi dépend de la proximité sociale entre ces gens et les Oromo.",
+            "hypothesisGroup": "origine-mao",
+            "sources": [
+              {
+                "title": "From “Subject to Citizen”? History, Identity and Minority Citizenship: The Case of the Mao and Komo of Western Ethiopia",
+                "author": "Alexander Meckelburg",
+                "year": 2016,
+                "url": "https://ediss.sub.uni-hamburg.de/bitstream/ediss/8036/1/Dissertation.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 61",
+                "notes": "Thèse de doctorat, Université de Hambourg, soutenue le 1er mars 2017 ; lue le 13 octobre 2026 dans la version en ligne. Pages imprimées au bas des feuillets. Bender est lu à travers Meckelburg, qui le cite (« The Mao Problem », p. 128) ; nous n'avons pas lu Bender."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Mao viendrait d'Anfillo, où les Oromo l'auraient donné aux gens à la peau noire qu'ils ont trouvés autour de Begi et de Tongo, selon un homme politique d'ascendance mao, interrogé à Asosa en 2012.",
+            "hypothesisGroup": "origine-mao",
+            "sources": [
+              {
+                "title": "Entretien à Asosa, 23 octobre 2012, recueilli par Alexander Meckelburg",
+                "author": "Alexander Meckelburg",
+                "year": 2012,
+                "url": "https://ediss.sub.uni-hamburg.de/bitstream/ediss/8036/1/Dissertation.pdf",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "page": "p. 80",
+                "notes": "Entretien du 23 octobre 2012 à Asosa, recueilli par Alexander Meckelburg et cité dans sa thèse ; lue le 13 octobre 2026.",
+                "narrative": "Le nom Mao vient d'Anfillo et fut donné par les Oromo aux gens à la peau noire autour de Begi et de Tongo",
+                "carrier": "Un homme politique d'ascendance mao, interrogé par Alexander Meckelburg",
+                "place": "Asosa, région du Benishangul-Gumuz"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Mao aurait été donné à ces gens par le cheikh Khojali, un chef du Benishangul, selon un informateur interrogé par Alexander Meckelburg, pour qui « avant cela nous étions sit shwala ».",
+            "hypothesisGroup": "origine-mao",
+            "sources": [
+              {
+                "title": "Entretien sur le nom Mao et le cheikh Khojali, recueilli par Alexander Meckelburg",
+                "author": "Alexander Meckelburg",
+                "year": 2016,
+                "url": "https://ediss.sub.uni-hamburg.de/bitstream/ediss/8036/1/Dissertation.pdf",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "page": "p. 116",
+                "notes": "Entretien recueilli par Alexander Meckelburg entre 2010 et 2014 et cité dans sa thèse ; lue le 13 octobre 2026. L'informateur n'est pas nommé dans le passage.",
+                "narrative": "Le cheikh Khojali a donné le nom Mao aux gens du pays ; avant, ils étaient sit shwala",
+                "carrier": "Un informateur interrogé par Alexander Meckelburg",
+                "place": "Région du Benishangul-Gumuz"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1800,
+              "to": 1899,
+              "label": "XIXe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Amam désigne, dans les récits de voyage du XIXe siècle, des gens du nord-ouest de l'Éthiopie, au sud de la zone d'influence du Soudan égyptien. Pour Alexander Meckelburg, c'est ce que l'on connaît de plus proche des Mao du Benishangul. Le nom Mao n'avait pas encore été introduit dans la région dans les années 1880 ; il a remplacé Amam quand l'influence des Oromo a grandi.",
+            "before": true,
+            "sources": [
+              {
+                "title": "From “Subject to Citizen”? History, Identity and Minority Citizenship: The Case of the Mao and Komo of Western Ethiopia",
+                "author": "Alexander Meckelburg",
+                "year": 2016,
+                "url": "https://ediss.sub.uni-hamburg.de/bitstream/ediss/8036/1/Dissertation.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 95-96 et p. 99",
+                "notes": "Thèse de doctorat, Université de Hambourg, soutenue le 1er mars 2017 ; lue le 13 octobre 2026 dans la version en ligne. Pages imprimées au bas des feuillets."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "1930"
+            },
+            "era": "polity",
+            "statement": "Le nom Mao figure dans Etiopia occidentale, le récit du voyage de 1927-1928 de l'orientaliste Enrico Cerulli, paru en 1930. Il y décrit des Mao soumis aux Busase d'Anfillo, et leur langue, selon Alexander Meckelburg. Nous n'avons pas lu Cerulli. C'est la plus ancienne trace de ce nom que le projet connaît ; les gens qu'il désigne existaient déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "From “Subject to Citizen”? History, Identity and Minority Citizenship: The Case of the Mao and Komo of Western Ethiopia",
+                "author": "Alexander Meckelburg",
+                "year": 2016,
+                "url": "https://ediss.sub.uni-hamburg.de/bitstream/ediss/8036/1/Dissertation.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 86",
+                "notes": "Thèse de doctorat, Université de Hambourg, soutenue le 1er mars 2017 ; lue le 13 octobre 2026 dans la version en ligne. Pages imprimées au bas des feuillets. Meckelburg renvoie à Cerulli, Etiopia occidentale (Rome, Sindacato Italiano Arti Grafiche, 1930), pp. 87, 88 et 91 ; il écrit que Cerulli décrit la langue mao."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sit Shwala",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "« Gens noirs » en gwama : le nom que des Mao komans se donnent à la place de Mao.",
+        "periodLabel": "En usage aujourd'hui",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sit Shwala veut dire « gens noirs » en gwama. Une partie des Mao de l'Oromia, qui parlent une langue komane, s'en servent pour se désigner et refusent le nom Mao, comme une affaire de dignité, selon Alexander Meckelburg. On ne sait pas quand ce nom a été écrit pour la première fois.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "From “Subject to Citizen”? History, Identity and Minority Citizenship: The Case of the Mao and Komo of Western Ethiopia",
+                "author": "Alexander Meckelburg",
+                "year": 2016,
+                "url": "https://ediss.sub.uni-hamburg.de/bitstream/ediss/8036/1/Dissertation.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 61 et p. 80",
+                "notes": "Thèse de doctorat, Université de Hambourg, soutenue le 1er mars 2017 ; lue le 13 octobre 2026 dans la version en ligne. Pages imprimées au bas des feuillets."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mawo",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Le royaume de Kafa",
+        "shortLine": "En kafa, un mot qui désigne les serfs ; Meckelburg le cite à propos des Mao d'Anfillo.",
+        "periodLabel": "Rapporté dans une thèse de 2016",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mawo est, en kafa, un des mots qui désignent les esclaves ou les serfs, selon Alexander Meckelburg, qui le rapporte d'après l'historien Werner Lange (1982). Les Mao d'Anfillo servaient les Busase, leurs maîtres. Meckelburg ne dit pas que le nom Mao en vienne.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "From “Subject to Citizen”? History, Identity and Minority Citizenship: The Case of the Mao and Komo of Western Ethiopia",
+                "author": "Alexander Meckelburg",
+                "year": 2016,
+                "url": "https://ediss.sub.uni-hamburg.de/bitstream/ediss/8036/1/Dissertation.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 86",
+                "notes": "Thèse de doctorat, Université de Hambourg, soutenue le 1er mars 2017 ; lue le 13 octobre 2026 dans la version en ligne. Pages imprimées au bas des feuillets. Meckelburg cite Werner J. Lange, History of the Southern Gonga (Wiesbaden, 1982), p. 260, dans sa note 17 ; nous n'avons pas lu Lange."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
