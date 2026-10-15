@@ -53,7 +53,10 @@ export const DATE_STEPS = [
 const CROSS_FADE = 9; // 300 ms
 const ZOOM = 0.04; // 100 → 104 %
 const CLOSING_HOLD = 75; // 2.5 s
-const LENGTH = [35, 45]; // seconds
+// Seconds. A recommendation, not a refusal (operator, 15 October 2026): an
+// episode may run longer when the research needs it; the warning keeps the
+// overrun visible in the loaded sequence and the export manifest.
+const RECOMMENDED_LENGTH = [35, 75];
 // 0.4.0 voice timing (README, Voice): a chunk appears 150 ms before its first
 // word; the last stays 200 ms after its last word, then fades in 200 ms.
 const VOICE = { lead: 0.15, hold: 0.2, tail: 0.5, maxCps: 17, fade: 6 };
@@ -224,9 +227,10 @@ function schedule(seq, words) {
     chunks.at(-1).gone
   );
   const seconds = seq.frames / FPS;
-  if (seconds < LENGTH[0] || seconds > LENGTH[1])
-    fail(
-      `A series video lasts 35 to 45 s; this one lasts ${seconds.toFixed(1)} s`
+  seq.warnings = [];
+  if (seconds < RECOMMENDED_LENGTH[0] || seconds > RECOMMENDED_LENGTH[1])
+    seq.warnings.push(
+      `A series video's recommended length is ${RECOMMENDED_LENGTH[0]} to ${RECOMMENDED_LENGTH[1]} s; this one lasts ${seconds.toFixed(1)} s`
     );
 }
 

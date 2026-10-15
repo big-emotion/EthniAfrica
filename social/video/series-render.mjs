@@ -273,6 +273,7 @@ export async function encodeSeriesVideo(
     // 1.4.1: the verified imagery and countries under the map cards.
     ...(renderer.maps && { maps: renderer.maps }),
     demo: !!seq.demo,
+    ...(seq.warnings.length && { warnings: seq.warnings }),
     // A diagnostic export lists the frames whose text left its band.
     ...(diagnose && { diagnostic: true, layoutProblems: problems }),
     // Mechanical export only: editorial approvals live in the checkpoint.
@@ -308,6 +309,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const seq = loadSeriesVideo(JSON.parse(await readFile(file, "utf8")), {
     dir: dirname(resolve(file)),
   });
+  seq.warnings.forEach((w) => console.warn(`Warning: ${w}`));
   const diagnose = process.argv.includes("--diagnose");
   if (arg("--frames")) {
     await mkdir(out, { recursive: true });
