@@ -194,6 +194,39 @@ test("the length is a recommendation of 35 to 75 s: a longer video loads with a 
   assert.match(long.warnings[0], /recommended length is 35 to 75 s/);
 });
 
+// The first content chunk is read at `cps` characters a second; the others
+// keep the design's timing.
+const readAt = (cps) =>
+  demo({
+    script: (beats) =>
+      beats.map((b, i) =>
+        i !== 1
+          ? b
+          : {
+              ...b,
+              chunks: b.chunks.map((c, k) =>
+                k ? c : { ...c, duration: [...c.text].length / cps }
+              ),
+            }
+      ),
+  });
+
+// @req REQ-186
+test("17 characters a second is recommended: a chunk read up to 20 loads with a warning", () => {
+  assert.deepEqual(readAt(15).warnings, []);
+  const fast = readAt(18.5);
+  assert.equal(fast.warnings.length, 1);
+  assert.match(
+    fast.warnings[0],
+    /faster than the recommended 17 characters a second/
+  );
+});
+
+// @req REQ-186
+test("a chunk read faster than 20 characters a second is refused", () => {
+  assert.throws(() => readAt(22), /faster than 20 characters a second/);
+});
+
 // @req REQ-186
 test("an opener first, a closing card last, and one series for every card", () => {
   assert.throws(
