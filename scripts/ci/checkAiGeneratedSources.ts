@@ -55,7 +55,7 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * withdrawn after wave 15, and of PAT_BAH, folded into PAT_BA, left with them;
  * the keeper attests the carried spellings with opened sources.
  */
-export const UNREVIEWED_AI_GENERATED_RATCHET = 1223;
+export const UNREVIEWED_AI_GENERATED_RATCHET = 1222;
 
 export interface AiGeneratedSourcesResult {
   ok: boolean;
