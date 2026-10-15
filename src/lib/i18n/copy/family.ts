@@ -28,6 +28,28 @@ const fr = {
     branches: "Branches",
     distribution: "Distribution",
     empty: "vide",
+    /**
+     * The classification status said in a sentence above the figures, not
+     * worn as a badge (brief 4, boards family-*.dc.html). Only the status the
+     * boards draw has a sentence; the others wait for theirs.
+     */
+    classification: {
+      "colonial-legacy":
+        "Ce regroupement de langues est une catégorie héritée de la période coloniale. Nous la conservons et nous expliquons pourquoi plus bas, dans « Appellations et décolonisation ».",
+    } as Partial<Record<string, string>>,
+    unsourcedFigure:
+      "Une estimation que la fiche ne rattache pas encore à une source",
+    /** The closing band's line on a declared distribution (brief 4). */
+    distributionOnly: (countries: readonly string[]) => {
+      const count =
+        ["", "un seul", "deux", "trois", "quatre", "cinq"][countries.length] ??
+        String(countries.length);
+      const list =
+        countries.length < 2
+          ? (countries[0] ?? "")
+          : `${countries.slice(0, -1).join(", ")} et ${countries[countries.length - 1]}`;
+      return `Pays par pays, le nombre de personnes qui parlent ces langues n’est donné que pour ${count} pays : ${list}.`;
+    },
     footprint: "L'empreinte, et d'où elle vient",
     nameOrigin: "D'où vient le nom de la famille",
     attachedPeoples: "Peuples rattachés",

@@ -122,3 +122,26 @@ show five sources then a disclosure (2,040 / 3,794 px), show five countries
 in « L'empreinte » (1,769 px on Bantou), and move « Peuples rattachés » up
 after « Les sources parlent » on Mandé so the member names reach the third
 screen.
+
+## Implementation (2026-10-15)
+
+Decided with the operator after the boards were approved:
+
+1. Implement now, compared at 430, 768 and 1440 on the stories
+   `Fiches/Famille de langues (brief 4)`, fed with the corpus fiches.
+2. A family fiche may declare `content.generalInfo.figureNotes`, one note per
+   figure (`numberOfLanguages`, `totalSpeakers`), or `unsourced: true` for a
+   figure tied to no source. Without a note the card says nothing more.
+3. The Manden account « Avant Soundiata » gains its own oral source
+   (« Traditions des écoles de griots du Manden », unverified, no carrier)
+   beside the Niane chapter, which stays a public report. A work that only
+   writes an oral tradition down is named in the tradition's line, not
+   counted again as a voice; the silence names that work's author.
+4. The next language is the most spoken one whose fiche has a summary, then
+   A to Z; the next people is the widest one whose fiche has a summary.
+
+The boards were updated first on one line: French country names carry no
+article in the data, so the distribution silence reads « Pays par pays, le
+nombre de personnes qui parlent ces langues n’est donné que pour deux pays :
+Sénégal et Côte d'Ivoire. » The classification sentence exists for
+`colonial-legacy` only; the other statuses wait for a drawn sentence.

@@ -1,6 +1,10 @@
 import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
-import { firstSentence, type NextStepCard } from "@/lib/search/nameClosing";
+import {
+  firstSentence,
+  traditionReporters,
+  type NextStepCard,
+} from "@/lib/search/nameClosing";
 import { sourceKindFamily } from "@/lib/sources/sourceKindFamily";
 import type { SearchEntityType } from "@/types/afrik-frontend";
 import type { Language } from "@/types/shared";
@@ -20,9 +24,10 @@ const birthOf = (name: FicheName) =>
   name.accounts.find((account) => account.birth);
 
 /**
- * One line each: no oral account for any name; the names with neither a
- * dated origin nor a dated trace; then what lies before the first name's
- * oldest trace (its self-name, first in the fiche).
+ * One line each: no oral account for any name, or oral traditions known only
+ * through the authors who wrote them down; the names no account tells yet;
+ * the names with neither a dated origin nor a dated trace; then what lies
+ * before the first name's oldest trace (its self-name, first in the fiche).
  */
 // @req REQ-198
 export function ficheSilences(
@@ -35,22 +40,47 @@ export function ficheSilences(
   if (names.length === 0) return [];
   const lines: string[] = [];
 
-  const oral = names.some((name) =>
-    name.accounts.some((account) =>
-      account.sources.some(
+  const oralOf = (name: FicheName) =>
+    name.accounts.flatMap((account) =>
+      account.sources.filter(
         (source) => sourceKindFamily(source.source_kind) === "oral"
       )
-    )
-  );
-  if (!oral) {
+    );
+  const oral = names.flatMap(oralOf);
+  if (oral.length === 0) {
     lines.push(
       names.length > 1
         ? copy.fiche.noOral(subject)
         : copy.silence.noOral(names[0].nameText)
     );
+  } else if (
+    oral.every(
+      (source) => source.source_kind === "oral_tradition" && !source.carrier
+    )
+  ) {
+    // Brief 4: traditions the project reads only in a written work. The
+    // reader is told who wrote them down, and that no carrier speaks yet.
+    const told = names.find((name) => oralOf(name).length > 0);
+    const reporters = names.flatMap((name) =>
+      name.accounts.flatMap(traditionReporters)
+    );
+    const authors = [
+      ...new Set(
+        (reporters.length > 0 ? reporters : oral).map((source) => source.author)
+      ),
+    ];
+    lines.push(copy.fiche.oralOnlyThrough(told.nameText, authors));
   }
 
-  const undated = names.filter((name) => !birthOf(name) && !hasDate(name));
+  for (const name of names) {
+    if (name.accounts.length === 0) {
+      lines.push(copy.fiche.noAccount(name.nameText));
+    }
+  }
+
+  const undated = names.filter(
+    (name) => name.accounts.length > 0 && !birthOf(name) && !hasDate(name)
+  );
   if (undated.length > 0) {
     lines.push(copy.fiche.undated(undated.map((name) => name.nameText)));
   }
