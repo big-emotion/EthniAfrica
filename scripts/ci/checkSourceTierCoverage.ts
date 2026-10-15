@@ -51,7 +51,7 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * fiches withdrawn or folded, that day. 880 -> 879 the same day: the
  * needs_review citation of PPL_NABT left with it, folded into PPL_NABDAM.
  */
-export const NEEDS_REVIEW_RATCHET = 879;
+export const NEEDS_REVIEW_RATCHET = 878;
 
 /** The doctrine's three tiers, plus the numeric tiers the name/relation/migration fiches still carry. */
 const TIERS_WITH_AUTHORITY = new Set<unknown>([

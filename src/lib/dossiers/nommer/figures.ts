@@ -227,7 +227,10 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 208 -> 207 the same day: the Khainai, Koyra, Yerima and Kirdi fiches folded or retired after wave 12.
     // 207 -> 201 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
     // 201 -> 200 on 2026-10-14: the Nabt fiche, which counted, was folded.
-    value: 200,
+    // 200 -> 199 on 2026-10-15: PPL_TUAREG's origin text, rewritten from the
+    // research for series 2 n° 1, dates the French spelling (Targui, 19th
+    // century) instead of saying « à l'époque coloniale ».
+    value: 199,
     method: "radical colonial dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -283,7 +286,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 112 -> 110 on 2026-10-11: ten duplicate people fiches of wave 8 folded into their keepers, and the Afizere fiche split from Jarawa.
     // 110 -> 108 on 2026-10-12: eleven duplicate people fiches of wave 10 folded into their keepers, and the « Swahili (Yémen) » fiche renamed PPL_MUWALLADEEN.
     // 108 -> 107 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
-    value: 107,
+    // 107 -> 108 on 2026-10-15: PPL_TUAREG's origin text now says European
+    // travellers took the name up from 1802 (Hornemann, Caillié).
+    value: 108,
     method: "radical europ dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
