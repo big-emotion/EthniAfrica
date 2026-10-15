@@ -202,17 +202,17 @@ describe("LanguageFamilyDetailViewV2", () => {
     render(<LanguageFamilyDetailViewV2 language="fr" family={family} />);
 
     // Both branches and distributionByCountry are structurally expected yet
-    // empty in this fixture, so each is marked missing. Asserted on the two
+    // empty in this fixture, so each is said to be missing. Asserted on the two
     // cards rather than on a count of markers across the page, which changes
     // whenever a section is added and says nothing about either field.
     expect(screen.getByTestId("stat-card-branches")).toHaveAttribute(
       "data-provenance",
       "missing"
     );
-    expect(screen.getByTestId("stat-card-distribution")).toHaveAttribute(
-      "data-provenance",
-      "missing"
-    );
+    // The distribution card is gone (brief 4); the undeclared distribution
+    // is still said, by the chip under the globe.
+    expect(screen.queryByTestId("stat-card-distribution")).toBeNull();
+    expect(screen.getByText("Distribution non déclarée")).toBeInTheDocument();
     // The one field this fixture does declare is shown, unmarked.
     expect(
       screen.getByText(family.content.generalInfo.geographicArea)

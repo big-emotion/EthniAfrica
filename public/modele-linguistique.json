@@ -175,7 +175,16 @@
       "branches": ["<Sous-groupe 1>", "<Sous-groupe 2>"],
       "geographicArea": "<Aires géographiques>",
       "numberOfLanguages": 0,
-      "totalSpeakers": 0
+      "totalSpeakers": 0,
+      "figureNotes": {
+        "numberOfLanguages": {
+          "note": "<Ce que vaut le chiffre, en une ligne, par exemple : Plus de 500, une estimation>"
+        },
+        "totalSpeakers": {
+          "note": "<D'où vient le chiffre, par exemple : Un ordre de grandeur, selon Auteur, année>",
+          "unsourced": false
+        }
+      }
     },
     "associatedPeoples": [
       { "name": "<Nom du peuple>", "peopleId": "PPL_XXXXX" },

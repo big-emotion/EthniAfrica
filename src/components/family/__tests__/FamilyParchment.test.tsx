@@ -62,6 +62,7 @@ function undeclaredFamily(): FamilyPageData {
       geographicArea: null,
       numberOfLanguages: 900,
       totalSpeakers: 500_000_000,
+      figureNotes: {},
       associatedPeoples: [],
     },
     linguisticTraits: {
@@ -160,29 +161,29 @@ describe("FamilyParchment — what the page declares", () => {
     expect(branches).toHaveAttribute("data-provenance", "declared");
   });
 
+  // Brief 4, approved 2026-10-15 (boards family-*.dc.html): the
+  // « Distribution » card counted the countries with a figure, which read as
+  // the family's reach. It is gone; a declared distribution is said in the
+  // closing band, an undeclared one by the chip and the gap.
   // @req REQ-119
-  it("does the same for the distribution, which is the other empty field", () => {
+  it("draws no distribution card, declared or not", () => {
     const declared = undeclaredFamily();
     declared.distribution.distributionByCountry = { NGA: 60, BEN: 40 };
 
     renderParchment(declared);
 
-    const distribution = screen.getByTestId("stat-card-distribution");
-    expect(distribution).toHaveTextContent("2");
-    expect(distribution).toHaveAttribute("data-provenance", "declared");
+    expect(screen.queryByTestId("stat-card-distribution")).toBeNull();
   });
 
   // @req REQ-119
-  it("keeps the declared gap marked even though the footprint is derived", () => {
+  it("keeps the declared gap said even though the footprint is derived", () => {
     // Deriving a value does not fill the hole it was derived around. The
-    // footprint below says where the family is; this card still says the fiche
-    // never declared it.
+    // footprint below says where the family is; the chip and the gap still
+    // say the fiche never declared it.
     renderParchment();
 
-    expect(screen.getByTestId("stat-card-distribution")).toHaveAttribute(
-      "data-provenance",
-      "missing"
-    );
+    expect(screen.getByText("Distribution non déclarée")).toBeInTheDocument();
+    expect(document.querySelector(".afh-parchment-gap")).not.toBeNull();
     // The derived footprint is still stated, right beside the gap.
     expect(screen.getByTestId("footprint-ranking")).toBeInTheDocument();
   });
@@ -480,7 +481,7 @@ describe("FamilyParchment — provenance addressed to the reader", () => {
     renderParchment();
 
     expect(document.querySelectorAll(".afh-stat-card-src")).toHaveLength(0);
-    expect(document.querySelectorAll(".afh-stat-card")).toHaveLength(4);
+    expect(document.querySelectorAll(".afh-stat-card")).toHaveLength(3);
     expect(
       within(screen.getByTestId("stat-card-branches")).getByText(
         "Information manquante"

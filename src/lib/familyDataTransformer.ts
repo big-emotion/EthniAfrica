@@ -1,5 +1,6 @@
 import type {
   ClassificationStatus,
+  FamilyFigureNotes,
   FicheSource,
   LanguageFamily,
   PeopleReference,
@@ -28,6 +29,7 @@ export interface FamilyGeneralInfoData {
   geographicArea: string | null;
   numberOfLanguages: number | null;
   totalSpeakers: number | null;
+  figureNotes: FamilyFigureNotes;
   associatedPeoples: PeopleReference[];
 }
 
@@ -110,6 +112,7 @@ export function transformGeneralInfo(
     geographicArea: generalInfo.geographicArea ?? null,
     numberOfLanguages: generalInfo.numberOfLanguages ?? null,
     totalSpeakers: generalInfo.totalSpeakers ?? null,
+    figureNotes: generalInfo.figureNotes ?? {},
     associatedPeoples:
       family.associatedPeoples ?? content.associatedPeoples ?? [],
   };

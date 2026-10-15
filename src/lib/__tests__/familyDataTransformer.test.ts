@@ -124,6 +124,7 @@ describe("familyDataTransformer", () => {
         geographicArea: null,
         numberOfLanguages: null,
         totalSpeakers: null,
+        figureNotes: {},
         associatedPeoples: [],
       },
       linguisticTraits: {
