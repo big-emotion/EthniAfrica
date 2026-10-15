@@ -433,3 +433,73 @@ test("1.3.0: every series sample fits, on a one-line band, under 828 px, with th
     );
   }
 });
+
+// The operator's words, chosen on 15 October 2026 (essay 5.6). Spelled out
+// here on purpose: the test holds the engine's constant to the decision.
+const SIGNATURE_LINE =
+  "Connaître nos noms, décoloniser leur emploi, nous nommer nous-mêmes.";
+const closings = () => samples.cards.filter((c) => c.type === "closing");
+
+// @req REQ-186
+test("1.6.0: every closing card ends on the signature line, in its place, with nothing over it", async (t) => {
+  const cards = closings();
+  assert.equal(cards.length, 10);
+  const f = await fixture(t, {
+    version: samples.version,
+    logo: samples.logo,
+    cards,
+  });
+  const r = await renderSequence({ ...f, mode: "diagnostic" });
+  for (const card of r.cards) {
+    const line = card.fit.sigline;
+    assert.ok(line, `${card.id}: no signature line`);
+    assert.equal(line.text, SIGNATURE_LINE, card.id);
+    assert.equal(line.lines, 3, `${card.id}: a printed line wrapped`);
+    assert.ok(Math.abs(line.top - 760) <= 0.5, `${card.id}: top ${line.top}`);
+    assert.ok(line.left >= 72 && line.right <= 1008, card.id);
+    assert.equal(line.overlaps, 0, `${card.id}: a box overlaps`);
+    assert.deepEqual(card.fit.warnings, [], card.id);
+    assert.ok(card.alt.endsWith(SIGNATURE_LINE), `${card.id}: ${card.alt}`);
+    assert.ok(!/travers ses noms/.test(card.visibleText), card.id);
+    assert.ok(!/raconter l.origine des noms/.test(card.visibleText), card.id);
+  }
+});
+
+// @req REQ-186
+test("1.6.0: a closing card with a title, or a line pushed below 760, is refused", async (t) => {
+  const titled = {
+    ...structuredClone(samples.cards.find((c) => c.id === "seq-9")),
+    title: "Notre objectif : raconter l'origine des noms, avec des sources.",
+  };
+  const pushed = structuredClone(samples.cards.find((c) => c.id === "seq-9"));
+  pushed.body =
+    "Sur ethniafrica.com, la fiche Ouganda présente ses peuples, ses langues, ses royaumes, leurs noms, les noms que leurs voisins leur donnent et les sources de chacun.";
+  for (const [card, reason] of [
+    [titled, /Titre sur une carte de clôture/],
+    [pushed, /Ligne de signature poussée/],
+  ]) {
+    const f = await fixture(t, finalOf(card));
+    await assert.rejects(renderSequence(f), reason);
+    await assert.rejects(access(f.output));
+  }
+});
+
+// @req REQ-186
+test("1.6.0: recovery refuses a closing card whose report lacks the line or moves it", async (t) => {
+  const f = await fixture(t, single("seq-9"));
+  const r = await renderSequence({ ...f, mode: "proof" });
+  const path = join(f.output, "report.json");
+  const original = structuredClone(r);
+  for (const change of [
+    (c) => delete c.fit.sigline,
+    (c) => (c.fit.sigline.top = 790),
+    (c) => (c.fit.sigline.text = "Connaître nos noms."),
+  ]) {
+    const altered = structuredClone(original);
+    change(altered.cards[0]);
+    await writeFile(path, JSON.stringify(altered));
+    await assert.rejects(verifyOutput(f), /signature/i);
+  }
+  await writeFile(path, JSON.stringify(original));
+  assert.equal((await verifyOutput(f)).cards.length, 1);
+});

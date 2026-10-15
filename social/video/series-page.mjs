@@ -9,6 +9,7 @@
 // Everything arrives from series-render.mjs; the page has no clock and no
 // network.
 import { FLAT_VERT, FLAT_FRAG, OVERLAY_SCRIPT } from "./page.mjs";
+import { flatProject } from "./series-map.mjs";
 
 export const SERIES_PAGE_HTML = `<!doctype html>
 <html lang="fr"><head><meta charset="utf-8">
@@ -35,6 +36,11 @@ html,body{margin:0;background:#000}
 .sm-region{font-family:var(--font-display);font-weight:400;letter-spacing:.12em;text-indent:.12em;color:rgba(243,233,218,.94)}
 .sm-area{font-family:var(--font-text);font-weight:700}
 .sm-water{font:italic 700 26px/30px var(--font-text);color:#bfe0ea}
+/* 1.5.0: a map sequence's name in its ink over the head's dark outline, its
+   language in italic under it, in one box kept at full height. */
+.sm-seq{display:flex;flex-direction:column;align-items:center;text-align:center}
+.sm-self{font:700 32px/38px var(--font-text);-webkit-text-stroke:6px var(--oi-stroke);paint-order:stroke fill}
+.sm-lang{font:italic 700 26px/30px var(--font-text);-webkit-text-stroke:5px var(--oi-stroke);paint-order:stroke fill}
 .sm-place{position:absolute;left:0;top:0}
 .sm-dot{position:absolute;width:16px;height:16px;box-sizing:border-box;border-radius:999px;background:#f3e9da;border:3px solid rgba(11,8,6,.7)}
 .sm-place-name{position:absolute;font:800 28px/32px var(--font-text);color:#f3e9da;white-space:nowrap;text-shadow:0 0 2px rgba(11,8,6,.95),0 0 6px rgba(11,8,6,.8),0 1px 10px rgba(11,8,6,.6)}
@@ -64,9 +70,31 @@ html,body{margin:0;background:#000}
 .vf-label{font:800 22px/28px var(--font-text);letter-spacing:.1em;text-transform:uppercase;color:var(--oi-muted);--sw:4px;margin-top:14px}
 .vf-name{font:400 76px/82px var(--font-display);--sw:8px;margin-top:2px}
 .vf-close{position:absolute;left:60px;width:960px;top:318px;text-align:center;display:flex;flex-direction:column;align-items:center}
-.vf-slogan{font:400 84px/88px var(--font-display);text-transform:uppercase;--sw:10px;text-wrap:balance}
-.vf-sent{font:700 32px/40px var(--font-text);--sw:4px;margin-top:18px;max-width:900px;text-wrap:balance}
+.vf-sigline{font:600 56px/64px var(--font-wordmark);color:var(--oi-ink);--sw:8px}
+.vf-sigline span{display:block;white-space:nowrap}
+.vf-sent{font:700 32px/40px var(--font-text);--sw:4px;margin-top:28px;max-width:900px;text-wrap:balance}
 .vf-sent p{margin:0}
+/* 1.7.0: the long series video (series.md, « Vidéo longue et chapitres »). */
+.vf-chapnum{display:flex;align-items:baseline;gap:18px}
+.vf-chapnum b{font:400 176px/140px var(--font-display);color:var(--oi-accent);--sw:14px}
+.vf-chapnum span{font:800 30px/36px var(--font-text);color:var(--oi-muted);--sw:4px;letter-spacing:.02em}
+.vf-title--chap{font-size:116px;line-height:112px;--sw:13px;max-width:900px}
+.vf-list{width:960px;display:flex;flex-direction:column;margin-top:30px}
+.vf-row+.vf-row{margin-top:22px}
+.vf-rlab{font:800 26px/32px var(--font-text);letter-spacing:.02em;color:var(--oi-accent);--sw:4px}
+.vf-txt{font:800 40px/48px var(--font-text);color:var(--oi-text);--sw:6px;text-wrap:balance}
+.vf-by{font:700 26px/32px var(--font-text);color:var(--oi-muted);--sw:4px}
+.vf-figs{width:960px;display:grid;grid-template-columns:1fr 1fr;gap:34px 40px;margin-top:34px}
+.vf-val{font:400 112px/104px var(--font-display);color:var(--oi-ink);--sw:12px;white-space:nowrap}
+.vf-val small{font:400 52px/52px var(--font-display);--sw:7px;margin-left:10px}
+.vf-val i{font:800 30px/36px var(--font-text);font-style:normal;color:var(--oi-muted);--sw:4px;display:block;margin-bottom:4px}
+.vf-flab{font:700 30px/38px var(--font-text);color:var(--oi-ink);--sw:4px;margin-top:8px;text-wrap:balance}
+.vf-attr{position:absolute;left:60px;width:900px;bottom:624px;display:flex;flex-direction:column}
+.vf-nm{font:800 34px/40px var(--font-text);color:var(--oi-text);--sw:5px}
+.vf-rl{font:700 26px/32px var(--font-text);color:var(--oi-muted);--sw:4px}
+.vf-next{margin-top:30px;font:700 32px/40px var(--font-text);--sw:4px;color:var(--oi-ink);white-space:nowrap}
+.vf-next em{color:var(--oi-accent);font-weight:800}
+.vf-nowrap{white-space:nowrap}
 .vf-pill{margin-top:30px;display:inline-block;font:800 34px/40px var(--font-text);letter-spacing:.04em;text-transform:uppercase;color:var(--oi-accent);--sw:4px;border:3px solid var(--oi-accent);border-radius:999px;padding:14px 40px;box-shadow:0 0 0 2px var(--oi-stroke),inset 0 0 0 2px var(--oi-stroke)}
 .vf-foot{position:absolute;left:60px;width:960px;bottom:134px;display:flex;flex-direction:column;gap:4px}
 .vf-key{display:flex;align-items:center;gap:14px;font:800 26px/32px var(--font-text);--sw:4px;margin-bottom:10px}
@@ -106,6 +134,7 @@ const fr = (s) => s.replace(/[ \\u00a0]+([;:!?»])/g, "\\u202f$1").replace(/«[ 
 const MONTHS = "(janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre)";
 const DATE_STEPS = [[176, 156], [148, 136], [124, 118], [104, 100]];
 const layers = [];
+const runs = [];
 let logoUrl = null;
 
 function signature() {
@@ -115,14 +144,70 @@ function signature() {
 // One layer per card, built once from the design system's own render of the
 // card for a video: its band, head, sources and signature words.
 function buildLayer(spec, view) {
-  const card = EthniCards.render(spec, { context: "video", resolve: resolveAsset, demo: false });
+  const parts = buildParts(spec, view);
+  noBreak(parts.layer);
+  return parts;
+}
+
+// 1.7.0: no text breaks inside a hyphenated word (« finit-il », « dit-on »),
+// as 1.6.0 rules for « nous-mêmes ».
+function noBreak(root) {
+  root.querySelectorAll(".vf-title, .vf-kick, .vf-txt, .vf-rlab, .vf-by, .vf-flab, .vf-nm, .vf-rl, .vf-sent, .vf-next").forEach((box) => {
+    const walk = document.createTreeWalker(box, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    while (walk.nextNode()) nodes.push(walk.currentNode);
+    for (const t of nodes) {
+      if (!/\\S-\\S/.test(t.nodeValue)) continue;
+      const f = document.createDocumentFragment();
+      t.nodeValue.split(/(\\S+-\\S+)/).forEach((part, i) => {
+        if (i % 2) f.append(el("span", "vf-nowrap", esc(part)));
+        else if (part) f.append(document.createTextNode(part));
+      });
+      t.replaceWith(f);
+    }
+  });
+}
+
+// 1.7.0: a chapter card or the next episode's own card: the head only, over
+// the image of the card after it, and its credit in the foot.
+function silentParts(parts) {
+  const { spec, layer } = parts;
+  const head = el("div", "vf-head");
+  if (spec.type === "chapter") {
+    head.append(el("div", "vf-chapnum", '<b class="oi oi-l">' + spec.chapter.n + '</b><span class="oi">sur ' + spec.chapter.of + "</span>"));
+    const title = el("h2", "vf-title vf-title--chap oi oi-l", esc(fr(spec.chapter.title)));
+    title.dataset.kind = "chapter-title";
+    head.append(title);
+  } else {
+    head.append(el("div", "vf-kick oi", "Prochain épisode"));
+    head.append(el("h2", "vf-title oi oi-l", esc(fr(spec.title))));
+  }
+  layer.append(head);
+  const foot = el("div", "vf-foot");
+  if (spec.credit) {
+    const credit = el("div", "vf-cred oi", fr(spec.credit));
+    credit.dataset.kind = "credit";
+    foot.append(credit);
+  }
+  layer.append(foot);
+  parts.text.push(head, foot);
+  return parts;
+}
+
+function buildParts(spec, view) {
+  const silent = spec.type === "chapter" || spec.type === "next";
+  const card = silent ? null : EthniCards.render(spec, { context: "video", resolve: resolveAsset, demo: false });
   const pick = (sel) => card.querySelector(sel);
   const layer = el("div", "vf-layer");
   const pic = el("div", "vf-pic");
   layer.append(pic);
   const parts = { spec, layer, pic, text: [], photo: null, map: null, date: null, slot: false, closing: spec.type === "closing" };
   const src = (spec.image && spec.image.src) || "";
-  if (view) {
+  if (view && view.sequence) {
+    // 1.5.0: the card's map is its run's, drawn by drawRun; the card brings
+    // its head and foot.
+    parts.seqView = view;
+  } else if (view) {
     parts.map = mapLayer(view);
     parts.photo = parts.map;
     parts.view = view;
@@ -145,12 +230,20 @@ function buildLayer(spec, view) {
     parts.photo = img;
     parts.focus = spec.image.focus || [0.5, 0.5];
   }
+  if (silent) return silentParts(parts);
   if (parts.closing) {
     const close = el("div", "vf-close");
-    close.append(el("div", "vf-slogan oi oi-l", pick(".ec-title").innerHTML));
+    // 1.6.0: the signature line where the slogan was, from the cards' own
+    // constant: the video keeps no copy of the line.
+    const line = el("div", "vf-sigline oi oi-l");
+    line.setAttribute("lang", "fr");
+    EthniCards.signatureLines.forEach((t) => line.append(el("span", "", esc(t))));
+    close.append(line);
     if (pick(".ec-body")) close.append(el("div", "vf-sent oi", pick(".ec-body").innerHTML));
     const pill = pick(".ec-cta-pill");
     close.append(el("div", "vf-pill oi", esc((pill ? pill.textContent : "ethniafrica.com").toUpperCase())));
+    // 1.7.0: the next episode, printed 30 px under the pill, on one line.
+    if (spec.next) close.append(el("div", "vf-next oi", "<em>" + fr("Prochain épisode :") + "</em> " + esc(fr(spec.next))));
     layer.append(close);
     const foot = el("div", "vf-close-foot");
     if (pick(".ec-credit")) foot.append(el("div", "vf-cred oi", pick(".ec-credit").innerHTML));
@@ -160,8 +253,11 @@ function buildLayer(spec, view) {
     return parts;
   }
   const head = el("div", "vf-head");
+  // 1.7.0: in the video, the chapter (« 3 · Le nom s'étend ») or « Nous
+  // pensons » replaces the card's own kicker, which the carousel keeps.
   const kicker = pick(".ec-kicker");
-  if (kicker && kicker.textContent.trim()) head.append(el("div", "vf-kick oi", kicker.innerHTML));
+  if (spec.videoKicker) head.append(el("div", "vf-kick oi", esc(fr(spec.videoKicker))));
+  else if (kicker && kicker.textContent.trim()) head.append(el("div", "vf-kick oi", kicker.innerHTML));
   if (spec.date) {
     // A date is one group: day, month and year never part.
     const html = pick(".ec-date").innerHTML
@@ -177,8 +273,49 @@ function buildLayer(spec, view) {
   } else {
     head.append(el("h2", "vf-title oi oi-l" + (spec.type === "opener" ? " vf-title--xl" : ""), pick(".ec-title").innerHTML));
   }
+  // 1.7.0: readings and figures flow under the title, each item in place
+  // from the card's first frame and entering on its word.
+  if (spec.readings) {
+    const list = el("div", "vf-list");
+    for (const it of spec.readings.items) {
+      const row = el("div", "vf-row");
+      if (it.label) row.append(el("div", "vf-rlab oi", esc(fr(it.label))));
+      row.append(el("div", "vf-txt oi", esc(fr(it.text))));
+      if (it.by) row.append(el("div", "vf-by oi", esc(fr(it.by))));
+      list.append(row);
+    }
+    head.append(list);
+    parts.items = [...list.children];
+  }
+  if (spec.figures) {
+    const grid = el("div", "vf-figs");
+    for (const it of spec.figures.items) {
+      const cell = el("div", "vf-fig");
+      // French numbers: « 2 000 », a narrow no-break space between groups.
+      const value = (it.pre ? '<i class="oi">' + esc(fr(it.pre)) + "</i>" : "") + esc(it.value).replace(/ /g, "\\u202f") + (it.unit ? '<small class="oi">' + esc(fr(it.unit)) + "</small>" : "");
+      cell.append(el("div", "vf-val oi oi-l", value));
+      cell.append(el("div", "vf-flab oi", esc(fr(it.label))));
+      grid.append(cell);
+    }
+    head.append(grid);
+    parts.items = [...grid.children];
+  }
   layer.append(head);
+  // 1.7.0: the quoted person, left on x 60, its bottom at y 1296.
+  if (spec.attribution) {
+    const who = el("div", "vf-attr");
+    who.append(el("div", "vf-nm oi", esc(fr(spec.attribution.name))));
+    who.append(el("div", "vf-rl oi", esc(fr(spec.attribution.role))));
+    layer.append(who);
+    parts.attribution = who;
+  }
   const foot = el("div", "vf-foot");
+  // 1.7.0: a signed card names EthniAfrica's position where a source would be.
+  if (spec.signed) {
+    const line = el("div", "vf-src oi", "Position d'EthniAfrica");
+    line.dataset.kind = "source";
+    foot.append(line);
+  }
   if (view) {
     // The key as text with the satellite swatches, two columns from three
     // items; then the source without its base map clause and the imagery.
@@ -188,6 +325,7 @@ function buildLayer(spec, view) {
       const swatch = item.swatch === "text" ? "" : '<svg viewBox="0 0 44 24">' + SWATCHES[item.swatch] + "</svg>";
       const key = el("div", "vf-key oi", swatch + "<span>" + esc(fr(item.label)) + "</span>");
       key.dataset.kind = "key";
+      if (item.file) key.dataset.file = item.file;
       box.append(key);
     }
     const lines = [["vf-src", "source", view.credits.source && "Source : " + view.credits.source], ["vf-cred", "credit", view.credits.imagery]];
@@ -202,7 +340,9 @@ function buildLayer(spec, view) {
     const line = pick(sel);
     // A slot's credit only says the image is missing: the slot says it.
     if (line && !(kind === "credit" && parts.slot)) {
-      const div = el("div", cls + " oi", line.innerHTML);
+      // 1.7.0: « Sources » or « Hypothèses » in place of the default label.
+      const html = kind === "source" && spec.sourceLabel ? line.innerHTML.replace(/^Source/, esc(spec.sourceLabel)) : line.innerHTML;
+      const div = el("div", cls + " oi", html);
       div.dataset.kind = kind;
       foot.append(div);
     }
@@ -318,6 +458,89 @@ function mapLayer(view) {
   return wrap;
 }
 
+// 1.5.0: one map per run of a map sequence. Its imagery is painted once per
+// still view, in setup; a frame of a change of view repaints it (the only
+// frames that do). Its areas and borders are projected from longitude and
+// latitude by the engine's own flat projection.
+${flatProject.toString()}
+const viewImagery = new Map();
+let imageryPaints = 0;
+const cameraKey = (c) => [c.lon, c.lat, c.radius, c.centreY].join(",");
+const ringPath = (camera, ring) =>
+  "M" + ring.map(([lon, lat]) => flatProject(camera, lon, lat).map((n) => +n.toFixed(1)).join(",")).join("L");
+function runLayer(sequence, r) {
+  const wrap = el("div", "vf-map");
+  const canvas = document.createElement("canvas");
+  canvas.width = 1080; canvas.height = 1920;
+  wrap.append(canvas);
+  const svg = document.createElementNS(SVG, "svg");
+  svg.setAttribute("width", 1080); svg.setAttribute("height", 1920);
+  svg.setAttribute("viewBox", "0 0 1080 1920");
+  const [fills, lines, edges] = ["fills", "borders", "edges"].map(() => {
+    const g = document.createElementNS(SVG, "g");
+    g.setAttribute("fill", "none"); g.setAttribute("stroke-linecap", "round"); g.setAttribute("stroke-linejoin", "round");
+    svg.append(g);
+    return g;
+  });
+  const areas = {};
+  for (const file of sequence.order) {
+    const a = sequence.areas[file];
+    if (a.sequence !== sequence.runs[r].sequence) continue;
+    const spec = { d: "", ink: a.ink, uncertain: a.uncertain, hatch: a.hatch, opacity: 0 };
+    const fill = areaFill(spec), edge = areaEdge(spec);
+    fills.append(fill); edges.append(edge);
+    areas[file] = { polygons: a.polygons, groups: [fill, edge], paths: [...fill.querySelectorAll("path"), ...edge.querySelectorAll("path")] };
+  }
+  const borderLines = sequence.borders[r];
+  let borderPaths = [];
+  if (borderLines) {
+    const g = border({ d: "", strong: borderLines.strong, opacity: 1 });
+    lines.append(g);
+    borderPaths = [...g.querySelectorAll("path")];
+  }
+  wrap.append(svg);
+  const names = el("div");
+  wrap.append(names);
+  return { wrap, canvas, areas, borderLines, borderPaths, names, key: null };
+}
+function paintRun(node, camera) {
+  const key = cameraKey(camera);
+  if (node.key === key) return;
+  node.key = key;
+  const cached = viewImagery.get(key);
+  if (cached) {
+    node.canvas.getContext("2d").drawImage(cached, 0, 0);
+  } else {
+    paintImagery(node.canvas, camera);
+    imageryPaints++;
+  }
+  for (const a of Object.values(node.areas)) {
+    const d = a.polygons.flatMap((p) => p.map((ring) => ringPath(camera, ring) + "Z")).join("");
+    a.paths.forEach((p) => p.setAttribute("d", d));
+  }
+  if (node.borderLines) {
+    const d = node.borderLines.lines.map((l) => ringPath(camera, l)).join("");
+    node.borderPaths.forEach((p) => p.setAttribute("d", d));
+  }
+}
+function drawRun(node, map) {
+  paintRun(node, map.camera);
+  for (const [file, a] of Object.entries(node.areas)) {
+    const shown = map.areas.find((x) => x.file === file);
+    a.groups.forEach((g) => g.setAttribute("opacity", shown ? shown.opacity : 0));
+  }
+  node.names.replaceChildren();
+  for (const n of map.names) {
+    if (!(n.opacity > 0)) continue;
+    const name = el("div", "sm-name sm-name-box sm-seq", '<span class="sm-self">' + esc(fr(n.text)) + "</span>" + (n.lang ? '<span class="sm-lang">' + esc(fr(n.lang)) + "</span>" : ""));
+    Object.assign(name.style, { left: n.box.x + n.box.w / 2 + "px", top: n.box.y + n.box.h / 2 + "px", color: INK[n.ink], opacity: n.opacity });
+    if (n.lang) name.lastChild.style.opacity = n.opacity > 0 ? n.langOpacity / n.opacity : 0;
+    node.names.append(name);
+  }
+  node.wrap.style.transformOrigin = "540px " + map.camera.centreY + "px";
+  node.wrap.style.transform = "scale(" + map.zoom + ")";
+}
+
 // Long dates: the largest size that holds on one line in 960 px, measured
 // on the drawn glyphs; else two balanced lines at 104/100.
 function setDate(parts) {
@@ -349,6 +572,17 @@ window.setup = async ({ tokens, cards, logo, demo, maps }) => {
     if (parts.view) paintImagery(parts.map._canvas, parts.view.camera);
     frame.append(parts.layer);
     layers.push(parts);
+  }
+  if (maps && maps.sequence) {
+    for (const v of Object.values(maps.sequence.views)) {
+      const key = cameraKey(v.camera);
+      if (viewImagery.has(key)) continue;
+      const still = document.createElement("canvas");
+      still.width = 1080; still.height = 1920;
+      paintImagery(still, v.camera);
+      viewImagery.set(key, still);
+    }
+    maps.sequence.runs.forEach((_, r) => runs.push(runLayer(maps.sequence, r)));
   }
   // The band and the content cards' signature are drawn once: they never
   // fade, whatever the card change.
@@ -408,17 +642,28 @@ function frameBoxes(frame, state) {
       boxes.push({ id: parts.spec.id, kind: "map-subject", x: 540 + (s.x - 540) * z, y: cy + (s.y - cy) * z, w: s.w * z, h: s.h * z });
       parts.map.querySelectorAll(".sm-name-box").forEach((n) => boxes.push({ id: n.textContent, kind: "map-name", ...rect(n) }));
     }
+    if (l.opacity > 0 && l.map) {
+      // 1.5.0: the run's map, hosted by this layer. The subject is checked
+      // on still views; a stack is one name box.
+      boxes.push({ id: parts.spec.id, kind: "image", x: 0, y: 0, w: 1080, h: 1920, scale: +(l.map.scale * l.zoom).toFixed(3) });
+      const s = l.map.subject, z = l.zoom, cy = l.map.camera.centreY;
+      if (s) boxes.push({ id: parts.spec.id, kind: "map-subject", x: 540 + (s.x - 540) * z, y: cy + (s.y - cy) * z, w: s.w * z, h: s.h * z });
+      runs[l.map.run].names.querySelectorAll(".sm-name-box").forEach((n) => boxes.push({ id: n.textContent, kind: "map-name", ...rect(n), ink: getComputedStyle(n).color }));
+    }
     if (!(l.text > 0)) continue;
     const layer = parts.layer;
-    layer.querySelectorAll(".vf-head > *").forEach((n) =>
-      add(n, "head", { card: l.card, ...(n === parts.date && { date: { size: parts.dateSize, lines: parts.dateLines } }) })
-    );
+    layer.querySelectorAll(".vf-head > *").forEach((n) => {
+      // 1.7.0: readings and figures flow below the head, down to y 1290.
+      if (n.matches(".vf-list, .vf-figs")) return [...n.children].forEach((c) => add(c, "items", { card: l.card }));
+      add(n, n.dataset.kind || "head", { card: l.card, ...(n === parts.date && { date: { size: parts.dateSize, lines: parts.dateLines } }) });
+    });
+    layer.querySelectorAll(".vf-attr > *").forEach((n) => add(n, "attribution", { card: l.card }));
     layer.querySelectorAll(".vf-close > *").forEach((n) => {
       if (n.classList.contains("vf-pill")) boxes.push({ id: "pill", kind: "pill", ...rect(n) });
       else add(n, "ending");
     });
     // A map card's foot may start at y 1600 (1.4.1).
-    layer.querySelectorAll(".vf-foot [data-kind]").forEach((n) => add(n, n.dataset.kind, parts.view ? { map: true } : {}));
+    layer.querySelectorAll(".vf-foot [data-kind]").forEach((n) => add(n, n.dataset.kind, parts.view || parts.seqView ? { map: true } : {}));
     layer.querySelectorAll(".vf-close-foot .vf-cred").forEach((n) => add(n, "ending-credit"));
     layer.querySelectorAll(".vf-close-foot .vf-sign").forEach((n) => boxes.push({ id: "signature", kind: "signature", ...rect(n) }));
     layer.querySelectorAll(".vf-slot-text > *").forEach((n) => add(n, "slot"));
@@ -479,6 +724,16 @@ function drawSubtitle(subtitle) {
 
 window.drawFrame = (state) => {
   const frame = document.getElementById("frame");
+  const paintsBefore = imageryPaints;
+  // A run's map is drawn once, in the picture of its most opaque layer: the
+  // outgoing card between two cards of a run, the incoming one on a return.
+  const hosts = new Map();
+  for (const l of state.layers)
+    if (l.map && (!hosts.has(l.map.run) || l.opacity > hosts.get(l.map.run).opacity)) hosts.set(l.map.run, l);
+  for (const [r, l] of hosts) {
+    drawRun(runs[r], l.map);
+    if (runs[r].wrap.parentNode !== layers[l.card].pic) layers[l.card].pic.append(runs[r].wrap);
+  }
   layers.forEach((parts, i) => {
     const l = state.layers.find((x) => x.card === i);
     parts.layer.style.display = l ? "block" : "none";
@@ -486,6 +741,12 @@ window.drawFrame = (state) => {
     parts.layer.style.zIndex = state.layers.indexOf(l) + 1;
     parts.pic.style.opacity = l.opacity;
     for (const t of parts.text) t.style.opacity = l.text;
+    // A sequence card's key items follow their areas.
+    if (l.map) parts.layer.querySelectorAll(".vf-key[data-file]").forEach((k) => (k.style.opacity = l.map.keys[k.dataset.file] ?? 0));
+    // 1.7.0: items and the quoted person enter on their word, inside the
+    // card's own text fade.
+    if (parts.items) parts.items.forEach((n, k) => (n.style.opacity = l.items ? l.items[k] : 1));
+    if (parts.attribution) parts.attribution.style.opacity = l.text * (l.attribution ?? 1);
     if (parts.photo) {
       if (parts.view) parts.photo.style.transformOrigin = "540px " + parts.view.camera.centreY + "px";
       parts.photo.style.transform = "scale(" + l.zoom + ")";
@@ -502,6 +763,8 @@ window.drawFrame = (state) => {
     const r = p.map.getBoundingClientRect();
     return { id: p.spec.id, camera: p.view.camera, spanKm: p.view.spanKm, capped: p.view.capped, x: r.left, y: r.top, w: r.width, h: r.height };
   });
+  for (const [r, l] of hosts)
+    maps.push({ id: layers[l.card].spec.id, run: r, camera: l.map.camera, moving: l.map.moving, spanKm: (1080 / l.map.camera.radius) * 6371 });
   const pictures = state.layers.filter((l) => l.opacity > 0).map((l) => ({ id: layers[l.card].spec.id, ...rect(layers[l.card].pic.firstElementChild || layers[l.card].pic) }));
   return {
     boxes: frameBoxes(frame, state),
@@ -510,6 +773,9 @@ window.drawFrame = (state) => {
     maps,
     pictures,
     backgrounds: backgrounds(frame),
+    imageryPaints: imageryPaints - paintsBefore,
+    // 1.7.0: a hyphenated word drawn over two lines.
+    hyphenBreaks: [...frame.querySelectorAll(".vf-nowrap")].filter((n) => n.getClientRects().length > 1).map((n) => n.textContent),
   };
 };
 </script></body></html>`;

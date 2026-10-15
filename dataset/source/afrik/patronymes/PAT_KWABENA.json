@@ -1,0 +1,282 @@
+{
+  "_meta": {
+    "format": "AFRIK JSON v2",
+    "entity": "patronyme",
+    "directives": "Fiche recherchée selon le protocole anthroponymique. Les affirmations sont limitées aux sources propres au nom ; les lacunes consignent les recherches restées sans résultat."
+  },
+  "id": "PAT_KWABENA",
+  "nameMain": "Kwabena",
+  "nameSystem": "non_hereditary_patronymic",
+  "spellings": [
+    {
+      "spelling": "Kwabena",
+      "attestations": [
+        {
+          "countryId": "GHA",
+          "sourceRefs": ["christaller-1881-twi", "agyekum-2006-akan-names"]
+        }
+      ]
+    },
+    {
+      "spelling": "Kobina",
+      "attestations": [
+        {
+          "countryId": "GHA",
+          "sourceRefs": ["agyekum-2006-akan-names"]
+        }
+      ]
+    },
+    {
+      "spelling": "Kabenla",
+      "attestations": [
+        {
+          "countryId": "GHA",
+          "sourceRefs": ["grottanelli-1977-nzema-names"]
+        }
+      ]
+    }
+  ],
+  "transmissionMode": "non_hereditary",
+  "designatedSocialUnit": "individual",
+  "origin": {
+    "oralTraditions": [],
+    "writtenChronicles": [],
+    "linguisticReconstructions": [
+      {
+        "claim": "En twi, au Ghana, Kwabena est le nom du garçon né le mardi, Benada ; chaque garçon reçoit d'ordinaire le nom du jour de sa naissance.",
+        "claimStatus": "established",
+        "sourceRefs": ["christaller-1881-twi", "agyekum-2006-akan-names"]
+      }
+    ]
+  },
+  "peoples": [
+    {
+      "peopleId": "PPL_ASANTE",
+      "status": "attested",
+      "sourceRefs": ["christaller-1881-twi"]
+    },
+    {
+      "peopleId": "PPL_FANTE",
+      "status": "attested",
+      "sourceRefs": ["agyekum-2006-akan-names"]
+    },
+    {
+      "peopleId": "PPL_NZEMA",
+      "status": "attested",
+      "sourceRefs": [
+        "grottanelli-1977-nzema-names",
+        "dolphyne-1986-akan-languages"
+      ]
+    },
+    {
+      "peopleId": "PPL_AKAN",
+      "status": "attested",
+      "sourceRefs": ["agyekum-2006-akan-names"]
+    }
+  ],
+  "countries": [
+    {
+      "countryId": "GHA",
+      "status": "attested",
+      "sourceRefs": ["christaller-1881-twi", "agyekum-2006-akan-names"]
+    }
+  ],
+  "alliances": [],
+  "casteOrSocialFunction": null,
+  "bearers": [],
+  "homonyms": [],
+  "sources": [
+    {
+      "sourceKey": "christaller-1881-twi",
+      "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+      "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Bâle, Evangelical Missionary Society, 1881. Lu sur l'exemplaire numérisé d'archive.org. Annexe D, p. 662-663 : la liste des sept jours, des noms de garçons et de filles, et l'explication par les génies des jours, que l'auteur présente avec prudence."
+    },
+    {
+      "sourceKey": "agyekum-2006-akan-names",
+      "title": "The Sociolinguistic of Akan Personal Names",
+      "url": "https://www.njas.fi/njas/article/download/24/16/38",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Nordic Journal of African Studies, vol. 15, n° 2, 2006, p. 206-235. Lu le 15 octobre 2026. Page 213 : le nom du jour est appelé kradin, « nom de l'âme ». Page 214 : le tableau des noms de jour en twi et en fante. Page 215 : les surnoms d'éloge de chaque jour."
+    },
+    {
+      "sourceKey": "dolphyne-1986-akan-languages",
+      "title": "The Languages of the Akan Peoples",
+      "url": "https://pdfproc.lib.msu.edu/?file=%2FDMC%2FAfrican+Journals%2Fpdfs%2FInstitue+of+African+Studies+Research+Review%2F1986v2n1%2Fasrv002001002.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Florence Abena Dolphyne, Research Review (Institute of African Studies, University of Ghana), nouvelle série, vol. 2, n° 1, 1986 ; écrit en 1975. Lu le 15 octobre 2026 dans le PDF des African e-Journals de l'université d'État du Michigan. Pages 5 à 7 du tapuscrit : les noms de jour des Anyi (Agni), des Baoulé et des Nzema sont décalés d'un jour par rapport au twi-fante ; tableaux des deux groupes et des Nzema du Ghana ; hypothèse sur l'origine de l'écart."
+    },
+    {
+      "sourceKey": "grottanelli-1977-nzema-names",
+      "title": "Personal Names as a Reflection of Social Relations among the Nzema of Ghana",
+      "url": "https://rosa.uniroma1.it/rosa03/uomo/article/view/15546",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Vinigi L. Grottanelli, L'Uomo. Società Tradizione Sviluppo, vol. 1, n° 2, 1977, p. 149-175, d'après une enquête chez les Nzema de 1954 à 1977. Lu le 15 octobre 2026. Page 151 : sept noms de garçons et sept noms de filles selon le jour. Page 161 : tableau des noms de jour nzema ; les en-têtes « garçons » et « filles » y sont inversés à l'impression, le texte de la page 151 donne la bonne lecture."
+    }
+  ],
+  "gaps": [
+    {
+      "fieldPath": "alliances",
+      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+    },
+    {
+      "fieldPath": "casteOrSocialFunction",
+      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+    },
+    {
+      "fieldPath": "bearers",
+      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+    },
+    {
+      "fieldPath": "homonyms",
+      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+    }
+  ],
+  "nameHistory": {
+    "summary": "Kwabena est un nom de jour akan : au Ghana, on le donne au garçon né le mardi, et la fille née ce jour s'appelle Abena. En fante, on dit Kobina, et chez les Nzema, Kabenla. Selon la linguiste Florence Abena Dolphyne, ce mardi correspond au mercredi des Baoulé et des Agni de Côte d'Ivoire, le jour où naît Konan.",
+    "names": [
+      {
+        "nameText": "Kwabena",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom akan du garçon né un mardi.",
+        "periodLabel": "Écrit dès 1881 ; donné aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "aspect": "meaning",
+            "statement": "Le nom Kwabena est donné chez les Akan du Ghana au garçon né le mardi, et Abena à la fille, selon le linguiste Kofi Agyekum. Il explique que les Akan appellent le nom du jour kradin, « le nom de l'âme ».",
+            "sources": [
+              {
+                "title": "The Sociolinguistic of Akan Personal Names",
+                "author": "Kofi Agyekum",
+                "year": 2006,
+                "url": "https://www.njas.fi/njas/article/download/24/16/38",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 213-214",
+                "notes": "Nordic Journal of African Studies, vol. 15, n° 2, 2006, p. 206-235. Lu le 15 octobre 2026. Page 213 : le nom du jour est appelé kradin, « nom de l'âme ». Page 214 : le tableau des noms de jour en twi et en fante. Page 215 : les surnoms d'éloge de chaque jour."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Le même nom se retrouve chez plusieurs peuples akan. Chez les Ashanti, le garçon s'appelle Kwabena et la fille Abena ; chez les Fante, Kobina ou Ebo et Abenaa ou Araba ; chez les Nzema du Ghana, Kabenla et Abenlema. Tous sont nés le mardi. Chez les Agni et les Baoulé, la linguiste Florence Abena Dolphyne place à ce rang le mercredi, avec les noms Kwamlan et Abina ou Ablan.",
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "annexe D, p. 662-663",
+                "notes": "Bâle, Evangelical Missionary Society, 1881. Lu sur l'exemplaire numérisé d'archive.org. Annexe D, p. 662-663 : la liste des sept jours, des noms de garçons et de filles, et l'explication par les génies des jours, que l'auteur présente avec prudence."
+              },
+              {
+                "title": "The Sociolinguistic of Akan Personal Names",
+                "author": "Kofi Agyekum",
+                "year": 2006,
+                "url": "https://www.njas.fi/njas/article/download/24/16/38",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 214",
+                "notes": "Nordic Journal of African Studies, vol. 15, n° 2, 2006, p. 206-235. Lu le 15 octobre 2026. Page 213 : le nom du jour est appelé kradin, « nom de l'âme ». Page 214 : le tableau des noms de jour en twi et en fante. Page 215 : les surnoms d'éloge de chaque jour."
+              },
+              {
+                "title": "Personal Names as a Reflection of Social Relations among the Nzema of Ghana",
+                "author": "Vinigi L. Grottanelli",
+                "year": 1977,
+                "url": "https://rosa.uniroma1.it/rosa03/uomo/article/view/15546",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 151, 161",
+                "notes": "Vinigi L. Grottanelli, L'Uomo. Società Tradizione Sviluppo, vol. 1, n° 2, 1977, p. 149-175, d'après une enquête chez les Nzema de 1954 à 1977. Lu le 15 octobre 2026. Page 151 : sept noms de garçons et sept noms de filles selon le jour. Page 161 : tableau des noms de jour nzema ; les en-têtes « garçons » et « filles » y sont inversés à l'impression, le texte de la page 151 donne la bonne lecture."
+              },
+              {
+                "title": "The Languages of the Akan Peoples",
+                "author": "Florence Abena Dolphyne",
+                "year": 1986,
+                "url": "https://pdfproc.lib.msu.edu/?file=%2FDMC%2FAfrican+Journals%2Fpdfs%2FInstitue+of+African+Studies+Research+Review%2F1986v2n1%2Fasrv002001002.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5-6",
+                "notes": "Florence Abena Dolphyne, Research Review (Institute of African Studies, University of Ghana), nouvelle série, vol. 2, n° 1, 1986 ; écrit en 1975. Lu le 15 octobre 2026 dans le PDF des African e-Journals de l'université d'État du Michigan. Pages 5 à 7 du tapuscrit : les noms de jour des Anyi (Agni), des Baoulé et des Nzema sont décalés d'un jour par rapport au twi-fante ; tableaux des deux groupes et des Nzema du Ghana ; hypothèse sur l'origine de l'écart."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "Proposé en 1975"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Selon la linguiste ghanéenne Florence Abena Dolphyne, les Agni, les Baoulé et les Nzema nomment les jours de la semaine avec un jour de décalage par rapport aux Ashanti et aux Fante. Les Nzema donnent pourtant à leurs enfants les noms des Ashanti, aux mêmes jours qu'eux. Elle dit ne pas savoir quelle façon de compter est la plus ancienne. Elle propose une explication : chaque groupe aurait calé ses jours sur la semaine européenne de son côté, la semaine anglaise commençant le dimanche et la française le lundi. C'est son hypothèse ; elle ne la démontre pas.",
+            "hypothesisGroup": "decalage-semaine",
+            "sources": [
+              {
+                "title": "The Languages of the Akan Peoples",
+                "author": "Florence Abena Dolphyne",
+                "year": 1986,
+                "url": "https://pdfproc.lib.msu.edu/?file=%2FDMC%2FAfrican+Journals%2Fpdfs%2FInstitue+of+African+Studies+Research+Review%2F1986v2n1%2Fasrv002001002.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5-7",
+                "notes": "Florence Abena Dolphyne, Research Review (Institute of African Studies, University of Ghana), nouvelle série, vol. 2, n° 1, 1986 ; écrit en 1975. Lu le 15 octobre 2026 dans le PDF des African e-Journals de l'université d'État du Michigan. Pages 5 à 7 du tapuscrit : les noms de jour des Anyi (Agni), des Baoulé et des Nzema sont décalés d'un jour par rapport au twi-fante ; tableaux des deux groupes et des Nzema du Ghana ; hypothèse sur l'origine de l'écart."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Kwabena apparaît dans le dictionnaire du twi de Johann Gottlieb Christaller, missionnaire de Bâle, qui le donne au garçon né le mardi. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Kwabena",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Johann Gottlieb Christaller",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 269",
+                "notes": "Bâle, Evangelical Missionary Society, 1881. Lu sur l'exemplaire numérisé d'archive.org. Annexe D, p. 662-663 : la liste des sept jours, des noms de garçons et de filles, et l'explication par les génies des jours, que l'auteur présente avec prudence."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
