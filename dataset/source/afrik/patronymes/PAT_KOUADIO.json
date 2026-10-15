@@ -13,7 +13,7 @@
       "attestations": [
         {
           "countryId": "CIV",
-          "sourceRefs": ["pagnet-2005-noms-baoule"]
+          "sourceRefs": ["ngoran-poame-2006-anthroponymes-baoule"]
         }
       ]
     },
@@ -25,6 +25,15 @@
           "sourceRefs": ["pagnet-2005-noms-baoule"]
         }
       ]
+    },
+    {
+      "spelling": "Kwadwo",
+      "attestations": [
+        {
+          "countryId": "GHA",
+          "sourceRefs": ["christaller-1881-twi"]
+        }
+      ]
     }
   ],
   "transmissionMode": "non_hereditary",
@@ -34,9 +43,12 @@
     "writtenChronicles": [],
     "linguisticReconstructions": [
       {
-        "claim": "Pagnet atteste Kouadjo comme nom baoulé d'un garçon né le mardi, jour appelé djolai. La source ne démontre pas que Kouadio est une variante de Kouadjo ; ce rapprochement reste donc non établi pour la graphie principale de cette fiche.",
-        "claimStatus": "contested",
-        "sourceRefs": ["pagnet-2005-noms-baoule"]
+        "claim": "Chez les Baoulé, Kouadio est le nom du garçon né le mardi, jour appelé djolai ; Pagnet l'écrit Kouadjo, N'Goran-Poamé Kouadio.",
+        "claimStatus": "established",
+        "sourceRefs": [
+          "pagnet-2005-noms-baoule",
+          "ngoran-poame-2006-anthroponymes-baoule"
+        ]
       }
     ]
   },
@@ -44,14 +56,35 @@
     {
       "peopleId": "PPL_BAOULE",
       "status": "attested",
-      "sourceRefs": ["pagnet-2005-noms-baoule"]
+      "sourceRefs": [
+        "pagnet-2005-noms-baoule",
+        "ngoran-poame-2006-anthroponymes-baoule"
+      ]
+    },
+    {
+      "peopleId": "PPL_ANYI",
+      "status": "attested",
+      "sourceRefs": ["delafosse-1900-agni"]
+    },
+    {
+      "peopleId": "PPL_ASANTE",
+      "status": "attested",
+      "sourceRefs": ["christaller-1881-twi"]
     }
   ],
   "countries": [
     {
       "countryId": "CIV",
       "status": "attested",
-      "sourceRefs": ["pagnet-2005-noms-baoule"]
+      "sourceRefs": [
+        "pagnet-2005-noms-baoule",
+        "ngoran-poame-2006-anthroponymes-baoule"
+      ]
+    },
+    {
+      "countryId": "GHA",
+      "status": "attested",
+      "sourceRefs": ["christaller-1881-twi"]
     }
   ],
   "alliances": [],
@@ -65,7 +98,55 @@
       "url": "https://hdl.handle.net/20.500.12177/1675",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Thèse de Doh Clément Pagnet, Université d'Abidjan-Cocody, année universitaire 2004-2005, soutenue le 20 mai 2005. Le texte intégral a été consulté ; le chapitre « Les noms chez les Baoulé », pp. 259-263, atteste les noms semainiers et ordinaux cités. Lue dans le dépôt institutionnel DICAMES du CAMES ; une copie non officielle de la thèse circule aussi sur Scribd. Le titre original écrit « didactive »."
+      "notes": "Thèse de Doh Clément Pagnet, Université de Cocody, soutenue le 20 mai 2005. Relue le 15 octobre 2026 dans le dépôt DICAMES du CAMES (le lien handle était alors inaccessible ; la page du dépôt est http://dicames.online/jspui/handle/20.500.12177/1675). Page 260 : les noms donnés selon le jour de naissance chez les Baoulé. L'auteur ne cite pas de source pour cette liste. Le titre original écrit « didactive »."
+    },
+    {
+      "sourceKey": "ngoran-poame-2006-anthroponymes-baoule",
+      "title": "De l'essence au sens des anthroponymes du baoulé",
+      "url": "http://greenstone.lecames.org/collect/revu/tmp/B00702197207.html",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Revue du CAMES, nouvelle série B, vol. 7, n° 2, 2006, p. 197-207. Lu le 15 octobre 2026. Page 198 : un tableau des noms de jour baoulé repris d'un livre de Bernadette Akissi Koffi paru en 2001."
+    },
+    {
+      "sourceKey": "delafosse-1900-agni",
+      "title": "Essai de manuel de la langue agni, parlée dans la moitié orientale de la Côte d'Ivoire",
+      "url": "https://archive.org/details/essaidemanuelde00delagoog",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Paris, J. André, 1900. Lu sur l'exemplaire numérisé d'archive.org. Page 133 : le tableau des noms de jour agni, garçons et filles. Page 134, note 1 : les mêmes noms chez les Achanti de Coumassie, cités dans le même ordre. Auteur de l'époque coloniale, cité ici pour les formes qu'il relève."
+    },
+    {
+      "sourceKey": "christaller-1881-twi",
+      "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+      "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Bâle, Evangelical Missionary Society, 1881. Lu sur l'exemplaire numérisé d'archive.org. Annexe D, p. 662-663 : la liste des sept jours, des noms de garçons et de filles, et l'explication par les génies des jours, que l'auteur présente avec prudence."
+    },
+    {
+      "sourceKey": "etienne-1968-baoule-temps",
+      "title": "Les Baoulé et le temps",
+      "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_4/sci_hum/19805.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Cahiers ORSTOM, série Sciences humaines, vol. V, n° 3, 1968. Article fondé sur l'enquête de terrain de l'auteur chez les Baoulé. Lu le 15 octobre 2026. Page 18 et note 1 : la semaine baoulé et l'écart d'un jour avec les Ashanti, les Fanti, les Agni et les Abron ; page 19 : un enfant né après le coucher du soleil reçoit le nom du jour suivant."
+    },
+    {
+      "sourceKey": "raulin-1968-droit-personnes",
+      "title": "Le droit des personnes et de la famille en Côte d'Ivoire",
+      "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_5/b_fdi_20-21/28201.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Rapport pour l'Unesco, 1968, déposé à l'IRD. Lu le 15 octobre 2026. Page 222 : les dates des lois de 1964. Page 224 : dans la zone forestière, « l'enfant prend le nom de son père auquel on ajoute le nom local donné à la naissance »."
+    },
+    {
+      "sourceKey": "loi-64-381-1964",
+      "title": "Loi n° 64-381 du 7 octobre 1964 relative aux dispositions diverses applicables aux matières régies par les lois sur le nom, l'état civil, le mariage, le divorce et la séparation de corps, la paternité et la filiation, l'adoption, les successions, les donations entre vifs et les testaments",
+      "url": "https://axl.cefan.ulaval.ca/afrique/cotiv-lois_div.htm",
+      "tier": "referenced",
+      "source_kind": "government",
+      "notes": "Texte reproduit par le site Aménagement linguistique dans le monde (Université Laval) et dans une compilation du Code civil ivoirien ; pas lu au Journal officiel. Article 3 : « Toute personne conserve le nom et les prénoms sous lesquels elle est actuellement connue. Ce nom devient son nom patronymique ainsi que celui de ses enfants mineurs »."
     }
   ],
   "gaps": [
@@ -93,5 +174,140 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches « Kouadio homonym etymology » et « Kouadio surname origin other language » n'ont pas établi une graphie identique d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Kouadio est un nom de jour : chez les Baoulé de Côte d'Ivoire, on le donne au garçon né le mardi, et la fille née ce jour s'appelle Adjoa. On l'écrit aussi Kouadjo. Au Ghana, en twi, le nom proche Kwadwo désigne le garçon né le lundi : la semaine des noms y est placée un jour plus tôt. En Côte d'Ivoire, une loi de 1964 a fait de ce nom de naissance un nom de famille.",
+    "names": [
+      {
+        "nameText": "Kouadio",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom donné à la naissance au garçon né le mardi, chez les Baoulé.",
+        "periodLabel": "Forme proche écrite dès 1900 ; donné aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "aspect": "meaning",
+            "statement": "Le nom Kouadio est un nom de jour : on le donne au garçon baoulé né le mardi, appelé djolai, et la fille née ce jour s'appelle Adjoa, selon un article de Léa N'Goran-Poamé. La thèse de Doh Clément Pagnet écrit le même nom Kouadjo.",
+            "sources": [
+              {
+                "title": "De l'essence au sens des anthroponymes du baoulé",
+                "author": "Léa Marie Laurence N'Goran-Poamé",
+                "year": 2006,
+                "url": "http://greenstone.lecames.org/collect/revu/tmp/B00702197207.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 198",
+                "notes": "Revue du CAMES, nouvelle série B, vol. 7, n° 2, 2006, p. 197-207. Lu le 15 octobre 2026. Page 198 : un tableau des noms de jour baoulé repris d'un livre de Bernadette Akissi Koffi paru en 2001."
+              },
+              {
+                "title": "Les noms Wè : valeur expressive et didactive, un exemple de créativité poétique dans la littérature orale africaine",
+                "author": "Doh Clément Pagnet",
+                "year": 2005,
+                "url": "https://hdl.handle.net/20.500.12177/1675",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 260",
+                "notes": "Thèse de Doh Clément Pagnet, Université de Cocody, soutenue le 20 mai 2005. Relue le 15 octobre 2026 dans le dépôt DICAMES du CAMES (le lien handle était alors inaccessible ; la page du dépôt est http://dicames.online/jspui/handle/20.500.12177/1675). Page 260 : les noms donnés selon le jour de naissance chez les Baoulé. L'auteur ne cite pas de source pour cette liste. Le titre original écrit « didactive »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1968,
+              "to": 1968,
+              "label": "Constaté en 1968"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Au Ghana, le nom proche Kwadwo va au garçon né le lundi, selon le dictionnaire de Johann Gottlieb Christaller. L'ethnologue Pierre Étienne constate en 1968 que la semaine baoulé est placée un jour plus tard que celle des Ashanti et des Fanti ; il n'explique pas cet écart, et les autres sources lues ne l'expliquent pas non plus.",
+            "sources": [
+              {
+                "title": "Les Baoulé et le temps",
+                "author": "Pierre Étienne",
+                "year": 1968,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_4/sci_hum/19805.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18, note 1",
+                "notes": "Cahiers ORSTOM, série Sciences humaines, vol. V, n° 3, 1968. Article fondé sur l'enquête de terrain de l'auteur chez les Baoulé. Lu le 15 octobre 2026. Page 18 et note 1 : la semaine baoulé et l'écart d'un jour avec les Ashanti, les Fanti, les Agni et les Abron ; page 19 : un enfant né après le coucher du soleil reçoit le nom du jour suivant."
+              },
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 270",
+                "notes": "Bâle, Evangelical Missionary Society, 1881. Lu sur l'exemplaire numérisé d'archive.org. Annexe D, p. 662-663 : la liste des sept jours, des noms de garçons et de filles, et l'explication par les génies des jours, que l'auteur présente avec prudence."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1964,
+              "to": 1964,
+              "label": "1964"
+            },
+            "era": "modern",
+            "aspect": "imposition",
+            "statement": "En Côte d'Ivoire, une loi du 7 octobre 1964 fait du nom sous lequel chacun est alors connu un nom de famille, transmis à ses enfants. Avant elle, dans la zone forestière, l'enfant prenait le nom de son père suivi de son propre nom de naissance, selon un rapport d'Henri Raulin pour l'Unesco. C'est par ce chemin qu'un nom de jour comme Kouadio a pu devenir un nom de famille. Les textes lus décrivent la règle ; ils ne disent pas quand le nom Kouadio lui-même a été fixé ainsi pour la première fois.",
+            "sources": [
+              {
+                "title": "Loi n° 64-381 du 7 octobre 1964 relative aux dispositions diverses applicables aux matières régies par les lois sur le nom, l'état civil, le mariage, le divorce et la séparation de corps, la paternité et la filiation, l'adoption, les successions, les donations entre vifs et les testaments",
+                "author": "République de Côte d'Ivoire",
+                "year": 1964,
+                "url": "https://axl.cefan.ulaval.ca/afrique/cotiv-lois_div.htm",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "art. 3",
+                "notes": "Texte reproduit par le site Aménagement linguistique dans le monde (Université Laval) et dans une compilation du Code civil ivoirien ; pas lu au Journal officiel. Article 3 : « Toute personne conserve le nom et les prénoms sous lesquels elle est actuellement connue. Ce nom devient son nom patronymique ainsi que celui de ses enfants mineurs »."
+              },
+              {
+                "title": "Le droit des personnes et de la famille en Côte d'Ivoire",
+                "author": "Henri Raulin",
+                "year": 1968,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_5/b_fdi_20-21/28201.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 222, 224",
+                "notes": "Rapport pour l'Unesco, 1968, déposé à l'IRD. Lu le 15 octobre 2026. Page 222 : les dates des lois de 1964. Page 224 : dans la zone forestière, « l'enfant prend le nom de son père auquel on ajoute le nom local donné à la naissance »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "1900"
+            },
+            "era": "colonial",
+            "statement": "Le nom apparaît par écrit sous une forme proche, Kwadyo, chez Maurice Delafosse, qui le donne comme le nom agni du garçon né le mardi. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Kwadyo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Essai de manuel de la langue agni, parlée dans la moitié orientale de la Côte d'Ivoire",
+                "author": "Maurice Delafosse",
+                "year": 1900,
+                "url": "https://archive.org/details/essaidemanuelde00delagoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 133",
+                "notes": "Paris, J. André, 1900. Lu sur l'exemplaire numérisé d'archive.org. Page 133 : le tableau des noms de jour agni, garçons et filles. Page 134, note 1 : les mêmes noms chez les Achanti de Coumassie, cités dans le même ordre. Auteur de l'époque coloniale, cité ici pour les formes qu'il relève."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

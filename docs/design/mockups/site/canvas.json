@@ -210,61 +210,61 @@
       "x": 8236,
       "y": 13187,
       "w": 430,
-      "h": 15250,
+      "h": 17465,
       "expand": "fill"
     },
     "family-bantu-768.dc.html": {
       "x": 8746,
       "y": 13187,
       "w": 768,
-      "h": 11194,
+      "h": 12467,
       "expand": "fill"
     },
     "family-bantu-1440.dc.html": {
       "x": 9594,
       "y": 13187,
       "w": 1440,
-      "h": 9496,
+      "h": 10860,
       "expand": "fill"
     },
     "family-mande-430.dc.html": {
       "x": 8236,
-      "y": 28557,
+      "y": 30772,
       "w": 430,
-      "h": 22132,
+      "h": 25080,
       "expand": "fill"
     },
     "family-mande-768.dc.html": {
       "x": 8746,
-      "y": 28557,
+      "y": 30772,
       "w": 768,
-      "h": 14579,
+      "h": 16395,
       "expand": "fill"
     },
     "family-mande-1440.dc.html": {
       "x": 9594,
-      "y": 28557,
+      "y": 30772,
       "w": 1440,
-      "h": 11630,
+      "h": 13335,
       "expand": "fill"
     },
     "country-civ-430.dc.html": {
       "x": 8236,
-      "y": 50809,
+      "y": 55972,
       "w": 430,
       "h": 9999,
       "expand": "fill"
     },
     "country-civ-768.dc.html": {
       "x": 8746,
-      "y": 50809,
+      "y": 55972,
       "w": 768,
       "h": 8678,
       "expand": "fill"
     },
     "country-civ-1440.dc.html": {
       "x": 9594,
-      "y": 50809,
+      "y": 55972,
       "w": 1440,
       "h": 8142,
       "expand": "fill"
