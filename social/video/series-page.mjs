@@ -1,11 +1,14 @@
 // The isolated page that draws one frame of the series video, full screen
-// (EthniAfrica Cartes 1.4.0). Its geometry and styles follow the design
+// (EthniAfrica Cartes 1.4.0; map cards on satellite imagery since 1.4.1,
+// with the satellite video's own shader and overlays). Its geometry and
+// styles follow the design
 // board handoff/video-board-full.html; the cards' words, inks and fonts come
 // from the design system itself (EthniCards.render with context 'video'), so
 // they match the carousel. The image fills the frame and only text sits on
 // it: every letter carries its own dark outline, nothing darkens the image.
 // Everything arrives from series-render.mjs; the page has no clock and no
 // network.
+import { FLAT_VERT, FLAT_FRAG, OVERLAY_SCRIPT } from "./page.mjs";
 
 export const SERIES_PAGE_HTML = `<!doctype html>
 <html lang="fr"><head><meta charset="utf-8">
@@ -25,7 +28,19 @@ html,body{margin:0;background:#000}
 .vf-layer{position:absolute;inset:0;display:none}
 .vf-pic{position:absolute;inset:0;overflow:hidden}
 .vf-pic img{position:absolute;max-width:none;display:block}
-.vf-pic svg.ec-map{position:absolute;left:0;top:0;width:1080px;height:1920px;display:block}
+/* 1.4.1: a map card on imagery, its overlays and names; all of it zooms. */
+.vf-map{position:absolute;left:0;top:0;width:1080px;height:1920px}
+.vf-map canvas,.vf-map svg{position:absolute;left:0;top:0;width:1080px;height:1920px;display:block}
+.sm-name{position:absolute;white-space:nowrap;transform:translate(-50%,-50%);text-shadow:0 0 2px rgba(11,8,6,.95),0 0 8px rgba(11,8,6,.8),0 1px 14px rgba(11,8,6,.6)}
+.sm-region{font-family:var(--font-display);font-weight:400;letter-spacing:.12em;text-indent:.12em;color:rgba(243,233,218,.94)}
+.sm-area{font-family:var(--font-text);font-weight:700}
+.sm-water{font:italic 700 26px/30px var(--font-text);color:#bfe0ea}
+.sm-place{position:absolute;left:0;top:0}
+.sm-dot{position:absolute;width:16px;height:16px;box-sizing:border-box;border-radius:999px;background:#f3e9da;border:3px solid rgba(11,8,6,.7)}
+.sm-place-name{position:absolute;font:800 28px/32px var(--font-text);color:#f3e9da;white-space:nowrap;text-shadow:0 0 2px rgba(11,8,6,.95),0 0 6px rgba(11,8,6,.8),0 1px 10px rgba(11,8,6,.6)}
+.vf-keys{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;margin-bottom:6px}
+.vf-keys .vf-key{font-size:24px;line-height:30px;margin-bottom:6px}
+.vf-key svg{width:36px;height:24px;flex:none;display:block}
 .vf-slot{position:absolute;inset:0;background:repeating-linear-gradient(135deg,var(--ground) 0 18px,var(--slot-stripe) 18px 22px)}
 #frame[data-theme="nuit"] .vf-slot{--slot-stripe:#2a2118}
 #frame[data-theme="parchemin"] .vf-slot{--slot-stripe:#ebe1d0}
@@ -76,7 +91,12 @@ html,body{margin:0;background:#000}
 .sub-text{-webkit-text-stroke:9px var(--oi-stroke);paint-order:stroke fill;text-shadow:0 2px 14px var(--oi-shadow)}
 .lit{background:var(--oi-accent);color:var(--oi-on-accent);border-radius:6px;box-shadow:6px 0 0 var(--oi-accent),-6px 0 0 var(--oi-accent);-webkit-text-stroke:0;text-shadow:none}
 </style></head><body><div id="frame"></div>
+<svg id="sm-defs" width="0" height="0" style="position:absolute" aria-hidden="true"><defs></defs></svg>
 <script>
+${OVERLAY_SCRIPT}
+document.querySelector("#sm-defs defs").insertAdjacentHTML("beforeend", hatchDefs());
+const SAT_VERT = ${JSON.stringify(FLAT_VERT)};
+const SAT_FRAG = ${JSON.stringify(FLAT_FRAG)};
 const el = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
 const resolveAsset = (name) => "/assets/" + name;
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;");
@@ -94,7 +114,7 @@ function signature() {
 
 // One layer per card, built once from the design system's own render of the
 // card for a video: its band, head, sources and signature words.
-function buildLayer(spec) {
+function buildLayer(spec, view) {
   const card = EthniCards.render(spec, { context: "video", resolve: resolveAsset, demo: false });
   const pick = (sel) => card.querySelector(sel);
   const layer = el("div", "vf-layer");
@@ -102,14 +122,12 @@ function buildLayer(spec) {
   layer.append(pic);
   const parts = { spec, layer, pic, text: [], photo: null, map: null, date: null, slot: false, closing: spec.type === "closing" };
   const src = (spec.image && spec.image.src) || "";
-  if (card._map) {
-    const svg = pick("svg.ec-map");
-    svg.setAttribute("width", 1080);
-    svg.setAttribute("height", 1920);
-    svg.setAttribute("preserveAspectRatio", "xMidYMid slice");
-    pic.append(svg);
-    parts.map = svg;
-    parts.photo = svg;
+  if (view) {
+    parts.map = mapLayer(view);
+    parts.photo = parts.map;
+    parts.view = view;
+    parts.scale = view.scale;
+    pic.append(parts.map);
   } else if (/(^|\\/)a-trouver-[^/]*$/.test(src)) {
     pic.append(el("div", "vf-slot"));
     const t = el("div", "vf-slot-text");
@@ -161,18 +179,22 @@ function buildLayer(spec) {
   }
   layer.append(head);
   const foot = el("div", "vf-foot");
-  if (spec.map) {
-    const keys = [];
-    if (spec.map.highlight && spec.map.highlight.legend) keys.push([spec.map.highlight.tone || "area-a", spec.map.highlight.legend]);
-    (spec.map.areas || []).forEach((a) => keys.push([a.tone || "area-a", a.legend || a.label]));
-    for (const [tone, text] of keys) {
-      const key = el("div", "vf-key oi", '<i style="background:var(--' + tone + ')"></i><span>' + esc(fr(text)) + "</span>");
+  if (view) {
+    // The key as text with the satellite swatches, two columns from three
+    // items; then the source without its base map clause and the imagery.
+    const box = view.key.length >= 3 ? el("div", "vf-keys") : foot;
+    if (box !== foot) foot.append(box);
+    for (const item of view.key) {
+      const swatch = item.swatch === "text" ? "" : '<svg viewBox="0 0 44 24">' + SWATCHES[item.swatch] + "</svg>";
+      const key = el("div", "vf-key oi", swatch + "<span>" + esc(fr(item.label)) + "</span>");
       key.dataset.kind = "key";
-      foot.append(key);
+      box.append(key);
     }
-    if (spec.map.caption && spec.map.caption.source) {
-      const line = el("div", "vf-src oi", "Source\\u202f: " + esc(fr(spec.map.caption.source)));
-      line.dataset.kind = "source";
+    const lines = [["vf-src", "source", view.credits.source && "Source : " + view.credits.source], ["vf-cred", "credit", view.credits.imagery]];
+    for (const [cls, kind, text] of lines) {
+      if (!text) continue;
+      const line = el("div", cls + " oi", esc(fr(text)));
+      line.dataset.kind = kind;
       foot.append(line);
     }
   }
@@ -205,32 +227,95 @@ function placeImage(parts) {
   parts.focusAt = [left + fx * w, top + fy * h];
 }
 
-// The map's own 9:16 view: map.videoView when the card gives one; otherwise
-// the subject (highlight or areas) brought to (540, 1000), at the card's
-// scale or up to twice closer, within the base map's drawn extent, the sea
-// painted behind in the water colour. Needs the layer displayed.
-function placeMap(parts) {
-  const svg = parts.map;
-  const vb = svg.getAttribute("viewBox").split(/[ ,]+/).map(Number);
-  const water = svg.querySelector(".ec-m-water");
-  if (water) parts.pic.style.background = getComputedStyle(water).fill;
-  const union = (list) => list.reduce((a, b) => ({ x0: Math.min(a.x0, b.x), y0: Math.min(a.y0, b.y), x1: Math.max(a.x1, b.x + b.width), y1: Math.max(a.y1, b.y + b.height) }), { x0: 1e9, y0: 1e9, x1: -1e9, y1: -1e9 });
-  const base = union([...svg.querySelectorAll("path")].map((e) => e.getBBox()));
-  const subjects = [...svg.querySelectorAll(".ec-m-hl, .ec-m-area, [class*='ec-m-zone']")].map((e) => e.getBBox());
-  const sb = subjects.length ? union(subjects) : { x0: vb[0], y0: vb[1], x1: vb[0] + vb[2], y1: vb[1] + vb[3] };
-  let view = parts.spec.map.videoView;
-  if (!view) {
-    const cx = (sb.x0 + sb.x1) / 2, cy = (sb.y0 + sb.y1) / 2, cardU = vb[2] / 1080;
-    let u = Math.min(cardU, (cx - base.x0) / 540, (base.x1 - cx) / 540, (base.y1 - cy) / 920, (cy - base.y0) / 1000);
-    u = Math.max(u, cardU / 2, (sb.x1 - sb.x0) / 960);
-    const x0 = Math.min(Math.max(cx - 540 * u, base.x0), base.x1 - 1080 * u);
-    const y0 = Math.min(Math.max(cy - 1000 * u, base.y0), base.y1 - 1920 * u);
-    view = [x0, y0, 1080 * u, 1920 * u];
+// A map card on imagery (1.4.1): the satellite video's flat shader at the
+// recede grade with no vignette, drawn once into the layer's own canvas;
+// the overlays and names over it, in frame pixels at 100 %.
+let sat = null;
+async function satellite(bounds) {
+  const canvas = document.createElement("canvas");
+  canvas.width = 1080; canvas.height = 1920;
+  const gl = canvas.getContext("webgl2", { preserveDrawingBuffer: true, antialias: false });
+  if (!gl) throw new Error("WebGL2 unavailable");
+  const compile = (type, src) => {
+    const s = gl.createShader(type); gl.shaderSource(s, src); gl.compileShader(s);
+    if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) throw new Error(gl.getShaderInfoLog(s));
+    return s;
+  };
+  const program = gl.createProgram();
+  gl.attachShader(program, compile(gl.VERTEX_SHADER, SAT_VERT));
+  gl.attachShader(program, compile(gl.FRAGMENT_SHADER, SAT_FRAG));
+  gl.linkProgram(program);
+  if (!gl.getProgramParameter(program, gl.LINK_STATUS)) throw new Error(gl.getProgramInfoLog(program));
+  gl.useProgram(program);
+  gl.bindBuffer(gl.ARRAY_BUFFER, gl.createBuffer());
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+  const loc = gl.getAttribLocation(program, "p");
+  gl.enableVertexAttribArray(loc); gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
+  // As the satellite video loads its imagery (render.mjs, page.mjs).
+  for (const [unit, url, name] of [[0, "/imagery/world.jpg", "world"], [1, "/imagery/region.jpg", "region"]]) {
+    const img = await createImageBitmap(await (await fetch(url)).blob(), { colorSpaceConversion: "none" });
+    gl.activeTexture(gl.TEXTURE0 + unit); gl.bindTexture(gl.TEXTURE_2D, gl.createTexture());
+    gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGB8, gl.RGB, gl.UNSIGNED_BYTE, img);
+    gl.generateMipmap(gl.TEXTURE_2D);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR_MIPMAP_LINEAR);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+    gl.uniform1i(gl.getUniformLocation(program, name), unit);
   }
-  svg.setAttribute("viewBox", view.map((n) => +n.toFixed(3)).join(" "));
-  const u = view[2] / 1080;
-  parts.subject = { x: (sb.x0 - view[0]) / u, y: (sb.y0 - view[1]) / u, w: (sb.x1 - sb.x0) / u, h: (sb.y1 - sb.y0) / u };
-  parts.focusAt = [540, 1000];
+  gl.uniform4f(gl.getUniformLocation(program, "bounds"), ...bounds);
+  gl.uniform1f(gl.getUniformLocation(program, "grade"), 1); // recede
+  gl.uniform1f(gl.getUniformLocation(program, "dim"), 0);
+  gl.uniform1f(gl.getUniformLocation(program, "plain"), 1); // no vignette
+  return { gl, program, canvas };
+}
+function paintImagery(target, camera) {
+  const { gl, program, canvas } = sat;
+  gl.viewport(0, 0, 1080, 1920);
+  gl.uniform2f(gl.getUniformLocation(program, "centre"), 540, camera.centreY);
+  gl.uniform1f(gl.getUniformLocation(program, "radius"), camera.radius);
+  gl.uniform2f(gl.getUniformLocation(program, "view"), camera.lon * Math.PI / 180, camera.lat * Math.PI / 180);
+  gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+  gl.finish();
+  target.getContext("2d").drawImage(canvas, 0, 0);
+}
+function mapLayer(view) {
+  const wrap = el("div", "vf-map");
+  const canvas = document.createElement("canvas");
+  canvas.width = 1080; canvas.height = 1920;
+  wrap.append(canvas);
+  const svg = document.createElementNS(SVG, "svg");
+  svg.setAttribute("width", 1080); svg.setAttribute("height", 1920);
+  svg.setAttribute("viewBox", "0 0 1080 1920");
+  const groups = ["fills", "borders", "edges"].map(() => {
+    const g = document.createElementNS(SVG, "g");
+    g.setAttribute("fill", "none"); g.setAttribute("stroke-linecap", "round"); g.setAttribute("stroke-linejoin", "round");
+    svg.append(g);
+    return g;
+  });
+  const areas = view.areas.map((a) => ({ ...a, opacity: 1 }));
+  groups[0].append(...areas.map(areaFill));
+  groups[1].append(...view.borders.map((b) => border({ ...b, opacity: 1 })));
+  groups[2].append(...areas.map(areaEdge));
+  wrap.append(svg);
+  for (const p of view.places) {
+    const g = el("div", "sm-place");
+    const dot = el("div", "sm-dot");
+    Object.assign(dot.style, { left: p.x - 8 + "px", top: p.y - 8 + "px" });
+    const name = el("div", "sm-place-name sm-name-box", esc(fr(p.name)));
+    Object.assign(name.style, { left: p.x + 14 + "px", top: p.y - 16 + "px" });
+    g.append(dot, name);
+    wrap.append(g);
+  }
+  for (const n of view.names) {
+    const name = el("div", "sm-name sm-name-box sm-" + n.style, esc(fr(n.text)));
+    const lead = { region: 8, area: 6, water: 4 }[n.style];
+    Object.assign(name.style, { left: n.box.x + n.box.w / 2 + "px", top: n.box.y + n.box.h / 2 + "px", fontSize: n.size + "px", lineHeight: n.size + lead + "px" });
+    if (n.ink) name.style.color = INK[n.ink];
+    wrap.append(name);
+  }
+  wrap._canvas = canvas;
+  return wrap;
 }
 
 // Long dates: the largest size that holds on one line in 960 px, measured
@@ -253,13 +338,15 @@ function setDate(parts) {
   parts.dateLines = Math.round(d.getBoundingClientRect().height / DATE_STEPS[i][1]);
 }
 
-window.setup = async ({ tokens, cards, logo, demo }) => {
+window.setup = async ({ tokens, cards, logo, demo, maps }) => {
   await EthniCards.installTokens(tokens, "/design/");
   logoUrl = resolveAsset(logo);
   const frame = document.getElementById("frame");
   frame.setAttribute("data-theme", cards[0].theme || "nuit");
-  for (const spec of cards) {
-    const parts = buildLayer(spec);
+  if (maps) sat = await satellite(maps.bounds);
+  for (const [i, spec] of cards.entries()) {
+    const parts = buildLayer(spec, maps && maps.views[i]);
+    if (parts.view) paintImagery(parts.map._canvas, parts.view.camera);
     frame.append(parts.layer);
     layers.push(parts);
   }
@@ -284,8 +371,7 @@ window.setup = async ({ tokens, cards, logo, demo }) => {
   await document.fonts.ready;
   for (const parts of layers) {
     parts.layer.style.display = "block";
-    if (parts.map) placeMap(parts);
-    else if (parts.photo && parts.photo.naturalWidth) placeImage(parts);
+    if (parts.photo && parts.photo.naturalWidth) placeImage(parts);
     if (parts.date) setDate(parts);
     parts.layer.style.display = "none";
   }
@@ -316,7 +402,12 @@ function frameBoxes(frame, state) {
   for (const l of state.layers) {
     const parts = layers[l.card];
     if (l.opacity > 0 && parts.scale) boxes.push({ id: parts.spec.id, kind: "image", ...rect(parts.photo), scale: +(parts.scale * l.zoom).toFixed(3) });
-    if (l.opacity > 0 && parts.subject) boxes.push({ id: parts.spec.id, kind: "map-subject", ...parts.subject });
+    if (l.opacity > 0 && parts.view) {
+      // The subject and the names zoom with the map around (540, 1010).
+      const s = parts.view.subject, z = l.zoom, cy = parts.view.camera.centreY;
+      boxes.push({ id: parts.spec.id, kind: "map-subject", x: 540 + (s.x - 540) * z, y: cy + (s.y - cy) * z, w: s.w * z, h: s.h * z });
+      parts.map.querySelectorAll(".sm-name-box").forEach((n) => boxes.push({ id: n.textContent, kind: "map-name", ...rect(n) }));
+    }
     if (!(l.text > 0)) continue;
     const layer = parts.layer;
     layer.querySelectorAll(".vf-head > *").forEach((n) =>
@@ -326,7 +417,8 @@ function frameBoxes(frame, state) {
       if (n.classList.contains("vf-pill")) boxes.push({ id: "pill", kind: "pill", ...rect(n) });
       else add(n, "ending");
     });
-    layer.querySelectorAll(".vf-foot > *").forEach((n) => add(n, n.dataset.kind));
+    // A map card's foot may start at y 1600 (1.4.1).
+    layer.querySelectorAll(".vf-foot [data-kind]").forEach((n) => add(n, n.dataset.kind, parts.view ? { map: true } : {}));
     layer.querySelectorAll(".vf-close-foot .vf-cred").forEach((n) => add(n, "ending-credit"));
     layer.querySelectorAll(".vf-close-foot .vf-sign").forEach((n) => boxes.push({ id: "signature", kind: "signature", ...rect(n) }));
     layer.querySelectorAll(".vf-slot-text > *").forEach((n) => add(n, "slot"));
@@ -341,9 +433,9 @@ function frameBoxes(frame, state) {
 }
 
 // Anything that paints a background over the image, besides the lit word,
-// the « image à trouver » slot, the map's sea and the demo tape.
+// the « image à trouver » slot, a map's place dots and the demo tape.
 function backgrounds(frame) {
-  const allowed = (n) => n.closest(".lit, .vf-slot, .vf-demo, .vf-key") || n.classList.contains("vf-pic");
+  const allowed = (n) => n.closest(".lit, .vf-slot, .vf-demo, .vf-key, .sm-dot") || n.classList.contains("vf-pic");
   return [...frame.querySelectorAll("*")]
     .filter((n) => n.getClientRects().length && !allowed(n))
     .filter((n) => {
@@ -395,7 +487,7 @@ window.drawFrame = (state) => {
     parts.pic.style.opacity = l.opacity;
     for (const t of parts.text) t.style.opacity = l.text;
     if (parts.photo) {
-      parts.photo.style.transformOrigin = parts.map ? "540px 1000px" : parts.photo.style.transformOrigin;
+      if (parts.view) parts.photo.style.transformOrigin = "540px " + parts.view.camera.centreY + "px";
       parts.photo.style.transform = "scale(" + l.zoom + ")";
     }
   });
@@ -408,7 +500,7 @@ window.drawFrame = (state) => {
   const visible = state.layers.map((l) => layers[l.card]);
   const maps = visible.filter((p) => p.map).map((p) => {
     const r = p.map.getBoundingClientRect();
-    return { viewBox: p.map.getAttribute("viewBox"), x: r.left, y: r.top, w: r.width, h: r.height };
+    return { id: p.spec.id, camera: p.view.camera, spanKm: p.view.spanKm, capped: p.view.capped, x: r.left, y: r.top, w: r.width, h: r.height };
   });
   const pictures = state.layers.filter((l) => l.opacity > 0).map((l) => ({ id: layers[l.card].spec.id, ...rect(layers[l.card].pic.firstElementChild || layers[l.card].pic) }));
   return {

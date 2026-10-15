@@ -108,3 +108,46 @@ or the chapter order above the added blocks.
 - Show a tier, a score or a « most reliable » label on any source.
 - Redraw the three approved components: reuse them from `Main`.
 - Put the thesis anywhere but the closing band.
+
+## Approved boards (2026-10-15)
+
+The sections above are the brief as given; where they differ from this section
+(for example the closing band's position), this section is what was approved
+and wins.
+
+Recorded in `docs/design/mockups/site/`. The implementation reproduces them.
+
+- `people-fula`, `people-bassa` and `people-thin-alaba`, each at 430, 768 and
+  1440, gain the three components approved in brief 1. « Les sources parlent »
+  follows « Les autres noms ». The closing band comes after « Compléter cette
+  page », without the thesis line. « Poursuivre avec un autre nom » replaces
+  « Poursuivre ». The hero, « D'où vient le nom ? », « Les autres noms », the
+  map and the chapter order above the new blocks are unchanged.
+- `Main` gains the fiche variant of « Les sources parlent ».
+
+Decisions taken in review:
+
+1. On a fiche with several names, « Les sources parlent » is titled « Qui
+   raconte les noms de ce peuple ? » and groups the accounts by name first
+   (the self-name marked « Leur nom »), then by the seven source-diamond
+   families. Only the first name is open, with its first family and first
+   account. A fiche with one name keeps the brief 1 form.
+2. An oral account is named by its carrier and place, then by who wrote it
+   down: « Comment les Bassa ont reçu leur nom », told by Abba Karnga,
+   Liberia, reported by Heath Vogel in 2013.
+3. Silences come from the corpus. Bassa declares no missing oral account.
+   Alaba adds « Les sources que nous avons lues n'expliquent pas l'origine du
+   nom Halaba », taken from its own account.
+4. Next-step targets: Atlantique and Ba (`people-fula`), Krou and Libéria
+   (`people-bassa`), Couchitique alone (`people-thin-alaba`). Each reason is
+   the first sentence of the target's summary. Removed because the target has
+   no fiche: the languages Fulfulde, Bassa and Halaba-K'abeena; Gbedee has a
+   fiche without a summary and is left out. The family-name card is named Ba,
+   the name of its fiche, not Bah.
+5. Left open for the operator: « Compléter cette page » and the closing band's
+   invitation now follow each other; folding Langue, Histoire and Culture et
+   société behind a one-line summary (about 2,300 to 2,500 px saved at 430 px)
+   was proposed, not applied; the hero does not repeat the promise of a social
+   link (`PPL_ZARMA`); the Fula hero says 12 countries where the brief counted
+   14.
+

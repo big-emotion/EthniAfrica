@@ -2,6 +2,8 @@
 
 ## Acceptance and integration status
 
+**1.4.1-proposition, 14 October 2026, accepted by the operator the same day.** In the series video, map cards are drawn on satellite imagery by the satellite video engine; atlas cards stay on the carousel. Nothing else changes. See « Renderer integration of 1.4.1 ».
+
 **1.4.0-proposition, 14 October 2026, accepted by the operator the same day.** It replaces only the series video's layout B of 1.3.0 by a full-screen layout (Series, « Vidéo de série »), adds eight `on-image-*` tokens for the video and changes no card. See « Renderer integration of 1.4.0 ».
 
 **1.2.0-proposition, 12 October 2026.** The operator accepted 1.2.0-proposition
@@ -267,6 +269,37 @@ The operator accepted 1.3.0-proposition on 14 October 2026 and chose video layou
 
 **Boards** (`Video` group, `video-14-*`; full size 1080 × 1920 and 430 px): cover, subtitle with the lit word, the card change at 100 and 200 ms, a dated card with a long date, a map card, a Parchemin card, the « image à trouver » slot in both themes, both endings, the guides, the feed at 430 px, legibility on the hardest images, the Parchemin inks compared, the long dates, the framing of wide images, and a map refused.
 
+## Renderer integration of 1.4.1
+
+**Status: accepted by the operator on 14 October 2026.** It changes one rule of 1.4.0, how a map card is drawn in the series video (Series, « Map cards on satellite imagery »), and nothing else: the frame, band, head, subtitles, foot, legibility rule, long dates, card change, endings and every carousel card stay. The card renderer and the flat base maps are unchanged. `EthniCards.version`, `version.json` and `handoff/cards.sample.json` move to `1.4.1-proposition` at acceptance, with the 89 reference hashes unchanged.
+
+**Integrated on 14 October 2026** in `social/video` ([evidence](proposals/1.4.1-proposition/README.md)). Two precisions taken by the integration, within the accepted rules: the view is computed in `series-map.mjs` (`seriesMapView`), which `series.mjs` and `series-render.mjs` use; and the scale cap is taken at the end of the card's zoom, as check 2 below requires, so the narrowest view is 1388 km across at 100 % and 1336 km at 104 % with the verified file. The flat shader and the overlays are exported by `page.mjs` (`FLAT_FRAG`, `OVERLAY_SCRIPT`) and shared, not copied; the satellite video's frames are pixel-identical before and after.
+
+**Where it goes.** `social/video/series.mjs` computes the map card's view as a pure function of the card and its base map (`seriesMapView`); `series-page.mjs` draws it with the satellite video's own shader and overlay functions from `page.mjs` (reuse them, do not fork them); `series-render.mjs` prepares the imagery with `render.mjs`'s `prepareImagery` (the verified Blue Marble file, from `ETHNIAFRICA_VIDEO_ASSETS`, outside git) and reads Natural Earth 1:50m admin 0 as `areas.mjs` pins it. `handoff/video-board-sat.js` and the board page's `?sat=` mode are the visual reference, not the engine; the views of the boards were computed by the script kept with the design package.
+
+**Framing.** Target: the middle of the subject's longitude and latitude box (highlight outlines, or the card's areas converted). Frame position of the target: (540, 1010). Radius (pixels per Earth radius): the largest that fits the subject's box within 840 × 520 px, capped by the scale limit, `R ≤ 1080 ÷ (minSpanKm ÷ 6371)` with `minSpanKm = 720 × source km a pixel` (1336 km for the verified 21600 px file). Flat style only (orthographic, no tilt); the zoom 100 to 104 % scales the radius around (540, 1010).
+
+**Grade.** `grade = 1` (recede) on every frame; no vignette term and no ending dim in the series frame.
+
+**Card units to longitude and latitude.** From the base map's `meta.projection` (« équirectangulaire, k px par degré, origine λ0 φ0 »): `lon = λ0 + x ÷ k`, `lat = φ0 − y ÷ k`, applied to every point of an area path (control points included) and of a label or place.
+
+**Overlays.** `page.mjs`'s `areaFill`, `areaEdge` and `border` with its inks a, b, c and hatch patterns; layer order fills, borders, edges. Highlight: Natural Earth outline as a certain area in the card's `tone`. Borders: the edges shared by two Natural Earth countries within the frame's bounds (`a.boundary ∩ b.boundary`), never a coastline. Names: `page.mjs`'s region, area-label, place and water styles on their halos, placed by `placeLabels`.
+
+**Credits.** Foot: `Source :` + the card caption's source minus its « fond … » clause; then « Imagerie : NASA Earth Observatory ; frontières : Natural Earth, domaine public » in the credit style (`IMAGERY[…].credit` for another verified source).
+
+**What the engine checks** (refuse, or report with `--diagnose`):
+
+1. The subject's box between y 724 and the foot's top, and its long side at least 120 px (« Sujet trop petit pour l'imagerie vérifiée »).
+2. The imagery verified (SHA-256) and the frame at least `minSpanKm` wide: no source pixel enlarged past 1.5, zoom included.
+3. At most six names on screen, every name box between y 724 and 1296 and x 60 and 1020, no two overlapping.
+4. Every text box in its band, a map card's foot between y 1600 and 1786 with its key in two columns from three items.
+5. An atlas card (`map.categorical`, `map.atlas`, zones, keys or a period marker) refused: « Carte d'atlas : carrousel seulement ».
+6. No vignette, scrim or veil over the imagery (the render tests' background check).
+
+**Withdrawn from 1.4.0:** `map.videoView` on the flat base map, the subject at (540, 1000) on the card's map, the refusal « Le sujet de la carte passe sous la tête » for a short base map, and the 9:16 base map per region.
+
+**Boards** (`Video` group, `video-141-*`): `serie-nom-famille-02` (Côte d'Ivoire highlighted), `serie-frontieres-02` (two areas across a border, Parchemin, drawn at the scale limit), the change from a photograph to a map at 100 and 200 ms, the guides, the Parchemin and the flat carousel cards beside their video frames, the atlas card kept on the carousel, and the 430 px strip.
+
 ## Required assets
 
 - Fonts: `fonts/Anton-Regular.ttf`, `fonts/NunitoSans.ttf`, `fonts/NotoSans-Variable.ttf`, `fonts/Fraunces.ttf`, `fonts/NotoSansEthiopic-Bold.ttf`, all under the SIL Open Font License 1.1.
@@ -319,3 +352,9 @@ The operator accepted 1.3.0-proposition on 14 October 2026 and chose video layou
 - The operator's decision of 14 October 2026, drawn as given: the series video's image fills the whole frame, with no shadow zone and no placement fitted to the networks' interface; only text sits on the image. Decision 4 (layout B) is withdrawn.
 - Brief: `proposals/1.4.0-proposition/claude-design-brief.md` on the repository branch `feat/social-series-video-b`.
 - Accepted by the operator on 14 October 2026, with the designer's recommendations on the four open questions (Series, « Vidéo de série »).
+
+## Commissioned on 14 October 2026 (1.4.1)
+
+- The operator's decision of 14 October 2026: in the series video, a map card is drawn by the satellite video engine on imagery; no flat 9:16 base map is built per region; one map grammar in video, the satellite video's.
+- Brief: `proposals/1.4.1-proposition/claude-design-brief.md` on `recette`.
+- Proposed and accepted on 14 October 2026.

@@ -41,7 +41,10 @@ const FONTS = [
 ];
 // SwiftShader keeps WebGL on the CPU, so the same frame gives the same pixels
 // on a given machine regardless of the GPU.
-const BROWSER_ARGS = ["--use-angle=swiftshader", "--enable-unsafe-swiftshader"];
+export const BROWSER_ARGS = [
+  "--use-angle=swiftshader",
+  "--enable-unsafe-swiftshader",
+];
 // Largest texture side SwiftShader accepts; the world mosaic is reduced to it.
 const MAX_TEXTURE = 8192;
 
@@ -196,9 +199,15 @@ function heightSampler(bounds, heights) {
 }
 
 async function prepareImagery(seq, assets) {
-  const entry = IMAGERY[seq.imagery];
-  if (!entry.file)
-    throw new Error(`No verified local imagery file for ${seq.imagery}`);
+  return prepareImageryRegion(seq.imagery, holdBounds(seq), assets);
+}
+
+// The verified imagery as the shaders read it: the world reduced to the
+// largest texture, and the full-resolution crop of `bounds` (lon/lat). The
+// series video's map cards (Cartes 1.4.1) use it too.
+export async function prepareImageryRegion(id, bounds, assets) {
+  const entry = IMAGERY[id];
+  if (!entry.file) throw new Error(`No verified local imagery file for ${id}`);
   const path = join(assets, entry.file);
   const bytes = await readFile(path).catch(() => {
     throw new Error(`Verified imagery file is missing: ${entry.file}`);
@@ -207,7 +216,6 @@ async function prepareImagery(seq, assets) {
     throw new Error(
       `Imagery file differs from the verified one: ${entry.file}`
     );
-  const bounds = holdBounds(seq);
   const cache = join(assets, ".cache", entry.sha256.slice(0, 16));
   const key = bounds.join("_");
   const world = join(cache, "world.jpg");
@@ -219,8 +227,10 @@ async function prepareImagery(seq, assets) {
       .resize(MAX_TEXTURE, MAX_TEXTURE / 2)
       .jpeg({ quality: 95 })
       .toFile(world);
+  const { width, height } = await source().metadata();
+  if (entry.width && width !== entry.width)
+    throw new Error(`${entry.file} is ${width} px wide, not ${entry.width}`);
   if (!(await exists(region))) {
-    const { width, height } = await source().metadata();
     const [lonMin, lonMax, latMin, latMax] = bounds;
     const left = Math.round(((lonMin + 180) / 360) * width);
     const top = Math.round(((90 - latMax) / 180) * height);

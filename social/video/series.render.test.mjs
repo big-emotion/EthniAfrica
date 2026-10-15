@@ -12,7 +12,6 @@ import { join } from "node:path";
 import {
   loadSeriesVideo,
   seriesFrameCount,
-  seriesFrameState,
   checkSeriesLayout,
   LAYOUT,
 } from "./series.mjs";
@@ -172,70 +171,4 @@ test("the ending: block from y 318, centred signature ending on y 1884", () => {
   assert.ok(Math.abs(sign.y + sign.h - 1884) <= 0.5, `signature at ${sign.y}`);
   assert.ok(Math.abs(sign.x + sign.w / 2 - 540) <= 1, "signature centred");
   assert.match(end.text, /ETHNIAFRICA\.COM/);
-});
-
-// Series 3's model carries a map card: the map fills the frame with its own
-// 9:16 view, its subject brought into the clear zone.
-function familleVideo(mapDir, card2 = "serie-nom-famille-02") {
-  return loadSeriesVideo(
-    seriesDemo(mapDir, {
-      script: (beats) =>
-        beats.map((beat, i) => ({
-          ...beat,
-          card: i === 1 ? card2 : `serie-nom-famille-0${i + 1}`,
-          chunks:
-            i === beats.length - 1
-              ? [
-                  { text: "Cherchez Kouassi sur EthniAfrica,", duration: 2.8 },
-                  { text: "lien en profil.", duration: 1.4 },
-                ]
-              : beat.chunks,
-        })),
-      edit: (input) => (input.ending.search = "Kouassi"),
-    }),
-    { dir: mapDir }
-  );
-}
-
-// @req REQ-186
-test("a map card fills the frame with its own view, its subject in the clear zone", async () => {
-  const mapDir = mkdtempSync(join(tmpdir(), "series-map-"));
-  try {
-    const famille = familleVideo(mapDir);
-    const card = famille.cards.findIndex((c) => c.type === "map");
-    const frame = famille.chunks.find((c) => c.card === card).fullFrom;
-    const [drawn] = await renderSeriesFrames(famille, [frame]);
-    assert.equal(drawn.maps.length, 1);
-    const [map] = drawn.maps;
-    const [, , w, h] = map.viewBox.split(" ").map(Number);
-    assert.ok(Math.abs(w / h - 1080 / 1920) < 1e-6, `view ${map.viewBox}`);
-    assert.ok(map.w >= 1080 && map.h >= 1920);
-    const subject = drawn.boxes.find((b) => b.kind === "map-subject");
-    assert.ok(subject.y >= LAYOUT.mapSubjectTop, `subject at ${subject.y}`);
-    assert.deepEqual(checkSeriesLayout(drawn.boxes, { demo: true }), []);
-  } finally {
-    rmSync(mapDir, { recursive: true, force: true });
-  }
-});
-
-// @req REQ-186
-test("a map whose base map is too short for 9:16 is refused", async () => {
-  const mapDir = mkdtempSync(join(tmpdir(), "series-map-"));
-  try {
-    const famille = familleVideo(mapDir);
-    famille.cards[1] = structuredClone(
-      JSON.parse(
-        (await import("node:fs")).readFileSync(famille.cardsFile, "utf8")
-      ).cards.find((c) => c.id === "serie-frontieres-02")
-    );
-    famille.cards[1].theme = famille.cards[0].theme;
-    const frame = famille.chunks.find((c) => c.card === 1).fullFrom;
-    assert.equal(seriesFrameState(famille, frame).layers[0].card, 1);
-    await assert.rejects(
-      renderSeriesFrames(famille, [frame]),
-      /Le sujet de la carte passe sous la tête/
-    );
-  } finally {
-    rmSync(mapDir, { recursive: true, force: true });
-  }
 });

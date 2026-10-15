@@ -27,7 +27,7 @@
     band.innerHTML = '<div class="ec-series-text"><span class="ec-series-name">' + fr(sr.name) + '</span><span class="ec-series-sep"> · </span><span class="ec-series-episode">n° ' + esc(String(sr.episode)) + '</span></div>';
     return band;
   }
-  var VERSION = '1.4.0-proposition';
+  var VERSION = '1.4.1-proposition';
   var TAGLINE = 'L’Afrique à travers ses noms';
 
   function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
