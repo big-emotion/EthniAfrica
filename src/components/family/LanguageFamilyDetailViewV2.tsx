@@ -11,6 +11,14 @@ import { FamilyDecolonialHeader } from "@/components/family/FamilyDecolonialHead
 import { FamilyLinguisticTraits } from "@/components/family/FamilyLinguisticTraits";
 import type { Language } from "@/types/shared";
 import type { ProvenanceCensus } from "@/api/v2/schemas/confidence";
+import {
+  NameClosingBand,
+  NameFicheSourcesBlock,
+} from "@/components/search/timeline/NameClosing";
+import { ficheSilences } from "@/lib/fiche/ficheNameClosing";
+import { getAdmin0NameFr } from "@/lib/atlas/overlays";
+import { familyCopy } from "@/lib/i18n/copy/family";
+import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
 
 /**
  * The Record of a family fiche: the reading the globe band opens onto.
@@ -84,6 +92,26 @@ export function LanguageFamilyDetailViewV2({
   onward,
 }: LanguageFamilyDetailViewV2Props) {
   const data = transformFamilyData(family);
+  // Brief 4 (boards family-*.dc.html): who tells the family's names, then
+  // what the project does not know yet. A fiche without a name history keeps
+  // the page it had.
+  const history =
+    family.nameHistory && family.nameHistory.names.length > 0
+      ? family.nameHistory
+      : null;
+  const declared = Object.keys(data.distribution.distributionByCountry);
+  const silences = history
+    ? [
+        ...ficheSilences(history, "languageFamily", language),
+        ...(declared.length > 0
+          ? [
+              familyCopy[language].parchment.distributionOnly(
+                declared.map((id) => getAdmin0NameFr(id) ?? id)
+              ),
+            ]
+          : []),
+      ]
+    : [];
 
   // Inside the parchment, not after it: these chapters used to follow the
   // sources footer, which made the fiche read as ending one chapter early.
@@ -97,6 +125,15 @@ export function LanguageFamilyDetailViewV2({
       footprintProvenance={footprintProvenance}
       provenance={provenance}
       onward={onward}
+      nameSources={
+        history ? (
+          <NameFicheSourcesBlock
+            history={history}
+            subjectType="languageFamily"
+            language={language}
+          />
+        ) : null
+      }
     >
       <div className="afh-parchment-section">
         <FamilyDecolonialHeader
@@ -117,6 +154,19 @@ export function LanguageFamilyDetailViewV2({
           language={language}
         />
       </div>
+      {history ? (
+        <NameClosingBand
+          silences={silences}
+          contributionTarget={{
+            type: "language_family",
+            id: data.hero.id,
+            name: data.hero.nameFr,
+            fieldPath: "naming",
+            fieldLabel: nameAnswerCopy[language].appellations,
+          }}
+          language={language}
+        />
+      ) : null}
     </FamilyParchment>
   );
 }

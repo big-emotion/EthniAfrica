@@ -15,6 +15,7 @@ import type { CountryDetail } from "@/types/afrik-frontend";
 import type { ProvenanceCensus } from "@/api/v2/schemas/confidence";
 import type { Language } from "@/types/shared";
 import { countryCopy } from "@/lib/i18n/copy/country";
+import type { SharedName } from "@/lib/fiche/countryNextSteps";
 
 /** The country record binds server data to the ordered parchment chapters. */
 
@@ -48,6 +49,8 @@ export interface CountryRecordViewProps {
   provenance?: ProvenanceCensus | null;
   /** The way out of the fiche, composed by the route and passed straight down. */
   onward?: ReactNode;
+  /** Another country bearing the same name (brief 5), resolved by the route. */
+  sharedName?: SharedName | null;
   /** Cloudflare Turnstile public site key; without it the flag control is inert. */
 }
 
@@ -62,6 +65,7 @@ export function CountryRecordView({
   familyNamesById,
   provenance = null,
   onward,
+  sharedName = null,
 }: CountryRecordViewProps) {
   const copy = countryCopy[language];
   const data = transformCountryData(country, language, familyNamesById);
@@ -82,6 +86,7 @@ export function CountryRecordView({
         languages={countryLanguages?.value}
         provenance={provenance}
         onward={onward}
+        sharedName={sharedName}
       >
         {/* After the languages, not beside "Noms à travers l'histoire": that
             chapter and "Étymologie du nom" are about what the *country* has

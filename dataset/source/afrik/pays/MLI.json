@@ -552,10 +552,9 @@
       },
       {
         "name": "Touareg",
-        "selfAppellation": "Kel Tamasheq / Imajaghan",
+        "selfAppellation": "Kel Tamasheq / Imushagh / Imajaghen",
         "exonyms": [
-          "Touareg (nom arabo-berbère donné de l'extérieur)",
-          "connotation historiquement ambiguë ; pas insultant mais marqué par les récits coloniaux)"
+          "Touareg (nom venu de l'arabe, donné de l'extérieur et marqué par les récits coloniaux)"
         ],
         "peopleId": "PPL_TUAREG",
         "mainRegion": "Nord (Ahaggar, Azawagh, Air, Adagh)",

@@ -84,6 +84,52 @@ export async function getAfrikCountryIndexRows(): Promise<
 }
 
 /**
+ * Every country's first name, official name and name summary, read from the
+ * name history without shipping it (brief 5): the shared-name note and the
+ * next step need the first name and one sentence, not the accounts.
+ */
+// @req REQ-198
+export async function getAfrikCountryNameRows(): Promise<
+  Array<{
+    id: string;
+    nameFr: string;
+    nameOfficial: string | null;
+    firstName: string | null;
+    summary: string | null;
+  }>
+> {
+  const supabase = createServerClient();
+  const { data, error } = await supabase
+    .from("afrik_countries")
+    .select(
+      "id, name_fr, name_official, first_name:name_history->names->0->>nameText, name_summary:name_history->>summary"
+    )
+    .order("name_fr");
+
+  if (error) {
+    logger.error("Error fetching the AFRIK country names", error);
+    throw error;
+  }
+
+  return (data || []).map((row) => {
+    const named = row as unknown as {
+      id: string;
+      name_fr: string;
+      name_official: string | null;
+      first_name: string | null;
+      name_summary: string | null;
+    };
+    return {
+      id: named.id,
+      nameFr: named.name_fr,
+      nameOfficial: named.name_official ?? null,
+      firstName: named.first_name ?? null,
+      summary: named.name_summary ?? null,
+    };
+  });
+}
+
+/**
  * Get a single AFRIK country by ISO code
  */
 // @req REQ-019

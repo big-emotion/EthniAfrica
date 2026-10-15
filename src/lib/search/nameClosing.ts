@@ -46,7 +46,31 @@ export function groupAccountsBySourceFamily(
   return groupBySourceFamily(name.tiles.flatMap((tile) => tile.accounts));
 }
 
-/** Any list of accounts, regrouped the same way (a fiche's names, brief 2). */
+/**
+ * The written sources through which an account's oral tradition reaches the
+ * project, when it reaches it no other way: an oral source with no carrier
+ * named, beside the work that wrote it down (brief 4, the Manden traditions
+ * Djibril Tamsir Niane reports). Empty when the account has no such source.
+ */
+// @req REQ-161
+export function traditionReporters(
+  account: NameHistoryAccount
+): NameHistorySource[] {
+  const reported = account.sources.some(
+    (source) => source.source_kind === "oral_tradition" && !source.carrier
+  );
+  return reported
+    ? account.sources.filter(
+        (source) => sourceKindFamily(source.source_kind) !== "oral"
+      )
+    : [];
+}
+
+/**
+ * Any list of accounts, regrouped the same way (a fiche's names, brief 2). A
+ * work that only reports an oral tradition is named inside the tradition's
+ * line, not counted again as a voice of its own (brief 4).
+ */
 // @req REQ-198
 // @req REQ-161
 export function groupBySourceFamily(
@@ -54,8 +78,11 @@ export function groupBySourceFamily(
 ): SourceFamilyGroup[] {
   return SOURCE_KIND_FAMILIES.flatMap((family) => {
     const backed = accounts.flatMap((account) => {
+      const reporters = traditionReporters(account);
       const sources = account.sources.filter(
-        (source) => sourceKindFamily(source.source_kind) === family
+        (source) =>
+          sourceKindFamily(source.source_kind) === family &&
+          !reporters.includes(source)
       );
       return sources.length > 0 ? [{ account, sources }] : [];
     });

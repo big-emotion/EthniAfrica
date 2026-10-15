@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-15",
+  "browser": "Chromium 153.0.8010.12 driven by Playwright 1.63.0, as pinned in social/renderer/runtime.json, on macOS arm64",
+  "test:social-video": "181 of 181 pass (163 before 1.5.0: 18 added in series-sequence.test.mjs, the pure frame model of the map sequence and the seven checks)",
+  "series-sequence.acceptance.test.mjs": "9 of 9 pass with ETHNIAFRICA_VIDEO_ASSETS on the verified Blue Marble file and Natural Earth 1:50m admin 0: series 2, episode 1 « Touareg » on a synthetic silent voice (social/video/fixtures/series-touareg.mjs), the four beats, the entries on the word, the change of view, the return after a photograph, and check 5 rendered",
+  "series-map.acceptance.test.mjs": "4 of 4 pass (1.4.1 map cards, unchanged)",
+  "acceptance.test.mjs": "11 of 11 pass (satellite video)",
+  "views": {
+    "regions": "Imuhagh, Imajeghen, Imushagh: 2388 km across, against 2383 km on the boards (frames-report.json); names placed within 8 px of the boards' boxes",
+    "beat 2": "5800 km across with the present-day Amazigh area (amazigh.geojson, Glottolog 5.3), against 4781 km on the boards with al-Idrīsī's « Pays des Berbères » standing in: the present-day area reaches the Sahel and the Atlantic"
+  },
+  "check5": "Two cards of one run sharing one view (beat 2 reduced to the regions): over the 9-frame change the map is drawn once and its imagery never repainted; the mean difference of the pixels no text, name or area covers is 0.69 across the change and 0.68 over the nine frames before it, inside one card: only the slow zoom moves the image. Exact equality is not reachable while the run's slow zoom advances each frame",
+  "satelliteVideoUnchanged": "Five frames each of congo, west-areas and sahara.chapters rendered with the engine at 246176ed8 and with this one: the hold and chapter frames (11 of 15) are pixel-identical. Frames 0 and 90 (globe and travel) differ from run to run with the engine at 246176ed8 itself, so they prove nothing either way; the change to page.mjs only adds the d ink's pattern definitions, which the satellite video never references",
+  "seriesMapCardsUnchanged": "1.4.1 series frames (serie-nom-famille-02, serie-frontieres-02 and the series 1 photo cards, 34 frames) hashed with the engine at 246176ed8 and with this one: identical, except one cross-fade frame that also changes between two runs of the engine at 246176ed8 and is identical when rendered alone",
+  "evidence": "engine-frames/ (12 frames at 1080 × 1920 and frames.json: views, moves, imagery repaints, names with their ink and box) and planches-et-moteur-430.jpg (boards and engine side by side at 430 px: cartes 1 to 4, the entry, the return at 100 ms), written by series-sequence.acceptance.test.mjs with ETHNIAFRICA_SEQUENCE_EVIDENCE"
+}

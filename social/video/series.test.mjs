@@ -44,9 +44,11 @@ test("frame 0 is the cover: the opener alone, with its band, and no subtitle", (
 });
 
 // @req REQ-186
-test("the demonstration script lasts 35 to 45 s", () => {
+// The 1.3.0 script was written for 35 to 45 s; since 1.6.0 the voice also
+// says the signature line on the closing card, about 4.4 s more.
+test("the demonstration script lasts 35 to 45 s, plus the spoken signature line", () => {
   const seconds = seriesFrameCount(demo()) / FPS;
-  assert.ok(seconds >= 35 && seconds <= 45, `${seconds} s`);
+  assert.ok(seconds >= 35 && seconds <= 50, `${seconds} s`);
 });
 
 // @req REQ-186
@@ -139,11 +141,61 @@ test("the last two chunks are the search sentence, on the closing card", () => {
   assert.ok(last.every((c) => seq.cards[c.card].type === "closing"));
 });
 
+// The operator's words (essay 5.6), as the voice says them: one chunk per
+// printed line, broken after each comma (Cartes 1.6.0).
+const SIGNATURE_CHUNKS = [
+  "Connaître nos noms,",
+  "décoloniser leur emploi,",
+  "nous nommer nous-mêmes.",
+];
+
 // @req REQ-186
-test("the searched name stays whole on one subtitle line", () => {
-  const [search] = demo().chunks.slice(-2);
-  const lines = search.lines.map((line) => line.map((r) => r.text).join(""));
-  assert.deepEqual(lines, ["Cherchez Burkina\u00a0Faso", "sur EthniAfrica,"]);
+test("1.6.0: the closing card says the signature line in three chunks, then the search sentence", () => {
+  const seq = demo();
+  const last = seq.cards.length - 1;
+  const closing = seq.chunks.filter((c) => c.card === last);
+  assert.deepEqual(
+    closing.map((c) => c.text.replace(/\s/gu, " ")),
+    [
+      ...SIGNATURE_CHUNKS,
+      "Cherchez Burkina Faso sur EthniAfrica,",
+      "lien en profil.",
+    ]
+  );
+});
+
+// @req REQ-186
+test("1.6.0: a closing card that does not say the line word for word is refused", () => {
+  const closingOf = (beats) => beats.at(-1).chunks;
+  for (const change of [
+    (chunks) => chunks.splice(0, 3),
+    (chunks) => (chunks[2].text = "nous nommer."),
+    (chunks) => chunks.splice(1, 1),
+  ])
+    assert.throws(
+      () =>
+        demo({
+          script: (beats) => {
+            change(closingOf(beats));
+            return beats;
+          },
+        }),
+      /La ligne de signature n'est pas dite mot pour mot/
+    );
+});
+
+// @req REQ-186
+test("1.6.0: the subtitle band stays empty for the whole ending", () => {
+  const seq = demo();
+  const last = seq.cards.length - 1;
+  let ending = 0;
+  for (const state of states(seq)) {
+    const alone = state.layers.length === 1 && state.layers[0].card === last;
+    if (!alone) continue;
+    ending++;
+    assert.equal(state.subtitle, null);
+  }
+  assert.ok(ending > 75, `the ending lasts ${ending} frames`);
 });
 
 // @req REQ-186
@@ -174,6 +226,29 @@ test("the closing chunks must say the search sentence for the ending's name", ()
   );
 });
 
+// The length and reading-speed warnings; the series 1 demonstration has no
+// signed card, so it also carries the 1.7.0 « Aucune carte signée » warning.
+const timing = (seq) => seq.warnings.filter((w) => !/carte signée/.test(w));
+
+// @req REQ-186
+test("a subtitle chunk may read up to 21 characters a second; faster is refused", () => {
+  // Each chunk is timed at `cps` characters a second of its own text, so the
+  // reading rate is set directly rather than inferred from a voice.
+  const paced = (cps) =>
+    demo({
+      script: (beats) =>
+        beats.map((b) => ({
+          ...b,
+          chunks: b.chunks.map((c) => ({
+            ...c,
+            duration: Math.max(1, [...c.text].length / cps + 0.2),
+          })),
+        })),
+    });
+  assert.doesNotThrow(() => paced(20));
+  assert.throws(() => paced(26), /faster than 21 characters a second/);
+});
+
 // @req REQ-186
 test("the length is a recommendation of 35 to 75 s: a longer video loads with a warning", () => {
   const stretched = (factor) =>
@@ -187,11 +262,13 @@ test("the length is a recommendation of 35 to 75 s: a longer video loads with a 
           })),
         })),
     });
-  assert.deepEqual(stretched(1.3).warnings, []);
-  const long = stretched(2.5);
-  assert.ok(seriesFrameCount(long) / FPS > 75);
-  assert.equal(long.warnings.length, 1);
-  assert.match(long.warnings[0], /recommended length is 35 to 75 s/);
+  assert.deepEqual(timing(stretched(1.3)), []);
+  // Past 75 s but under 90 s, where a video becomes long and needs chapters.
+  const long = stretched(1.9);
+  const seconds = seriesFrameCount(long) / FPS;
+  assert.ok(seconds > 75 && seconds < 90, `${seconds} s`);
+  assert.equal(timing(long).length, 1);
+  assert.match(timing(long)[0], /recommended length is 35 to 75 s/);
 });
 
 // The first content chunk is read at `cps` characters a second; the others
@@ -212,19 +289,19 @@ const readAt = (cps) =>
   });
 
 // @req REQ-186
-test("17 characters a second is recommended: a chunk read up to 20 loads with a warning", () => {
-  assert.deepEqual(readAt(15).warnings, []);
+test("17 characters a second is recommended: a chunk read up to 21 loads with a warning", () => {
+  assert.deepEqual(timing(readAt(15)), []);
   const fast = readAt(18.5);
-  assert.equal(fast.warnings.length, 1);
+  assert.equal(timing(fast).length, 1);
   assert.match(
-    fast.warnings[0],
+    timing(fast)[0],
     /faster than the recommended 17 characters a second/
   );
 });
 
 // @req REQ-186
-test("a chunk read faster than 20 characters a second is refused", () => {
-  assert.throws(() => readAt(22), /faster than 20 characters a second/);
+test("a chunk read faster than 21 characters a second is refused", () => {
+  assert.throws(() => readAt(22), /faster than 21 characters a second/);
 });
 
 // @req REQ-186

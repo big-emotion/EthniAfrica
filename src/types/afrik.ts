@@ -244,6 +244,20 @@ export interface CountryContent {
 }
 
 /**
+ * A figure's own caveat: a short note, or the fact that the fiche ties it to
+ * no source yet.
+ */
+export interface FamilyFigureNote {
+  note?: string;
+  unsourced?: boolean;
+}
+
+export interface FamilyFigureNotes {
+  numberOfLanguages?: FamilyFigureNote;
+  totalSpeakers?: FamilyFigureNote;
+}
+
+/**
  * Language Family content (evolutionary)
  * All sections from modele-linguistique.txt stored here
  */
@@ -257,6 +271,8 @@ export interface LanguageFamilyContent {
     geographicArea?: string;
     numberOfLanguages?: number;
     totalSpeakers?: number;
+    /** What each figure is worth, said under it (brief 4). */
+    figureNotes?: FamilyFigureNotes;
   };
 
   // Section 2: Associated peoples

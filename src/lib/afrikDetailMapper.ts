@@ -50,6 +50,7 @@ interface CountryDetailRecord {
   created_at?: string | Date;
   updatedAt?: string | Date;
   updated_at?: string | Date;
+  nameHistory?: CountryDetail["nameHistory"];
   content?: {
     historicalNames?: CountryDetail["historicalNames"];
     kingdoms?: CountryDetail["kingdoms"];
@@ -113,6 +114,7 @@ export function mapCountryDetail(apiData: CountryDetailRecord): CountryDetail {
     historicalFacts: apiData.content?.historicalFacts,
     sources: apiData.content?.sources,
     demographics: apiData.content?.demographics,
+    ...(apiData.nameHistory ? { nameHistory: apiData.nameHistory } : {}),
   };
 }
 

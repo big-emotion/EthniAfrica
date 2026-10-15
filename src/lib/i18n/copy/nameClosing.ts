@@ -67,9 +67,31 @@ export interface NameClosingCopy {
     undated: (names: readonly string[]) => string;
     firstWritten: (name: string, year: number) => string;
     beforeCentury: (name: string, label: string) => string;
-    nextRelation: { family: string; patronyme: string; country: string };
+    /** A name the fiche lists without a single account (brief 4). */
+    noAccount: (name: string) => string;
+    /**
+     * Oral traditions the project only knows through the authors who wrote
+     * them down, none recorded from the people who carry them (brief 4).
+     */
+    oralOnlyThrough: (name: string, authors: readonly string[]) => string;
+    /** A name whose competing readings carry no date at all (brief 5). */
+    undatedReadings: (count: number, name: string) => string;
+    nextRelation: {
+      family: string;
+      patronyme: string;
+      country: string;
+      people: string;
+      language: string;
+      place: string;
+    };
     carrier: (carrier: string, place?: string) => string;
     reportedBy: (author: string, year: number | null, title: string) => string;
+    /** An oral tradition with no carrier, named by who wrote it down. */
+    traditionsReportedBy: (
+      author: string,
+      year: number | null,
+      title: string
+    ) => string;
   };
 }
 
@@ -98,6 +120,15 @@ const SUBJECT_FR: Partial<Record<SearchEntityType, string>> = {
   languageFamily: "de cette famille de langues",
   patronyme: "de ce nom de famille",
   place: "de ce lieu",
+};
+
+/** Small counts in words, as a sentence reads them. */
+const COUNT_FR: Record<number, string> = {
+  2: "deux",
+  3: "trois",
+  4: "quatre",
+  5: "cinq",
+  6: "six",
 };
 
 function joinFr(items: readonly string[]): string {
@@ -167,15 +198,26 @@ export const nameClosingCopy: Record<Language, NameClosingCopy> = {
         `On ne sait pas avec certitude quand le nom ${name} a été écrit pour la première fois. La plus ancienne trace datée que le projet connaît est de ${year}.`,
       beforeCentury: (name, label) =>
         `Avant sa plus ancienne trace connue du projet, au ${label}, l’histoire du nom ${name} reste à écrire.`,
+      noAccount: (name) =>
+        `Aucune source du projet ne raconte encore le nom ${name}.`,
+      oralOnlyThrough: (name, authors) =>
+        `Les traditions orales sur le nom ${name} ne nous parviennent que par ${joinFr(authors)}. Le projet n’a pas encore de récit recueilli auprès de celles et ceux qui les transmettent.`,
+      undatedReadings: (count, name) =>
+        `Les ${COUNT_FR[count] ?? count} explications du nom ${name} ne sont pas datées.`,
       nextRelation: {
         family: "Famille de langues",
         patronyme: "Nom de famille",
         country: "Pays",
+        people: "Peuple",
+        language: "Langue",
+        place: "Lieu",
       },
       carrier: (carrier, place) =>
         `récit porté par ${carrier}${place ? `, ${place}` : ""}`,
       reportedBy: (author, year, title) =>
         `rapporté par ${author}${year ? `, ${year}` : ""}, « ${title} »`,
+      traditionsReportedBy: (author, year, title) =>
+        `rapportées par ${author}${year ? `, ${year}` : ""}, « ${title} »`,
     },
     seedReason: {
       people:

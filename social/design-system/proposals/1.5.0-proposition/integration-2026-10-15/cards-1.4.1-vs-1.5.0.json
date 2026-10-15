@@ -1,0 +1,544 @@
+{
+  "date": "2026-10-15",
+  "method": "The 89 sample cards of handoff/cards.sample.json rendered in diagnostic mode on one browser with the 1.4.1 design (version.json and bundle VERSION of recette at 859ef05e8) and with the 1.5.0 design; PNG bytes and alternative texts compared.",
+  "browser": "153.0.8010.12",
+  "cards": 89,
+  "pngIdentical": 89,
+  "altIdentical": 89,
+  "results": [
+    {
+      "id": "seq-1",
+      "sha256": "3402caff2eb36f806aa005296310151ed1eaff7c23566bdfcc62a1a740f78ce8",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "seq-2",
+      "sha256": "74f19b7589d702010407e991aeb04a04e8ef13afd2bbf4605aac0df2a518df89",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "seq-3",
+      "sha256": "abf610ac7b55be1d6ff732de3d62470970f846232054a930ba3f25ab3b0a5259",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "seq-4",
+      "sha256": "5d66a622ad1bf7c350520c5e4971c6f9defc4e139b4402b38d739c8ae2aa9042",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "seq-5",
+      "sha256": "cf99deac2495c2aafcc9eacd51185c4e7a5a3921a825d83185568836986d0be4",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "seq-6",
+      "sha256": "7443d5a9afb8aed764c7b0ddb9253702b17ba2004467f096a2a500d6032fbe12",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "seq-7",
+      "sha256": "aafdcf330f8f54df5bb2047d32810fdc6aa6d86d88c96caa85088a25a8be732d",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "seq-8",
+      "sha256": "b2a504222b37c72222e5f5741874aa13d3880f106979820037b804c843bf06a6",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "seq-9",
+      "sha256": "c2791ad1528d6b81c0813acd362366671f276633253516f44e0e8d632f99ac8e",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "chr-1",
+      "sha256": "df527caf6ba4fda49eebeca64c1d18f4fafb01869606c3ecad989d271de3bafa",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "chr-2",
+      "sha256": "b71fc4f6415dd24b1666f604193c5ded3f6e43e344fb033d2f2cfc1412293d84",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "chr-3",
+      "sha256": "66018b9091993d958ee13e034c92d1479f989abba1d043f5f3477e36a31ca2ef",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "chr-4",
+      "sha256": "b1e088efab378ffe24fa857b990cb069acb346b9b123ab62e220f699dec2dcd6",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "chr-5",
+      "sha256": "ac61d8c8d1a83c34e5cdf442d2bed121aead0d17a6bb5e49a2b0a06d85dbb706",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "chr-branch",
+      "sha256": "9e71ddc9acb0e8e6c6584a4e9bef4480dec3e84775728e642472e6f4b6900758",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "map-a",
+      "sha256": "2c3dcfc4ef97ec7f4b18c7958893c972ebb8b7a48b231c9568e89be55c178ce2",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "map-b",
+      "sha256": "5cba31493ea46e06dc19939cbdaef3330210196361a1d8de78622fb7b5494e21",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "map-c",
+      "sha256": "614f46a4cae9f75ce2c501b3811ac06f2d7a501c51031211ef472840b110b16c",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "pair",
+      "sha256": "7a608cd25de078a58c02e48af773eaad502b23d5e346fd37edc1fe944daa578f",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "stress",
+      "sha256": "9143d6d2906b0a1d2a9297100331b6b7c3d1024463471867b1c4f082c3bcb3d2",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "overflow",
+      "sha256": "d3812f43885eed5c12e31571294cc5c6d100ac8d195be055a31994143e104dc5",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "seq-4-parchemin",
+      "sha256": "abbd69da3e51047521a8d55aea080b08d5a65a39b0c1aaa1ebf1c0a19a0fb054",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "chr-3-parchemin",
+      "sha256": "771d529699d5d710b3b4bdecc55bbbd22af513fd7b738f4686b5de9284b7dd5f",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "map-c-parchemin",
+      "sha256": "1dd20314e0859e0440a6f16e92b9ce503afe665a619318c0c3b6daca532dffd3",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "seq-9-parchemin",
+      "sha256": "cbcd6245517a99681667db36dfefb5646739dac7d52d55f80437a04204105dff",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "map-fula",
+      "sha256": "063178879043bf51c3c338654b3870a26efdfb21c6d49e14b0bf774135543134",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "map-fula-region",
+      "sha256": "acbaffdc626475df28d7c014c9031913a6f585d19b082b93369fbf10b2049558",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "map-fula-parchemin",
+      "sha256": "ef5eb6d85fb2fcce4c88e4b428c8fe95216ebb55d877ccdd05f679af54bdfbde",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "map-fula-nombre",
+      "sha256": "19fcb4d8af6e4fc707d384577eba80a36ec115fce1352345cc07a04e950b34bc",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "map-fula-nombre-region",
+      "sha256": "5393b1ed1cbaaa409bdc5b4abd15ff051cb31b53cf8ffc17e4486226c1d25d31",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "map-fula-part",
+      "sha256": "0ef4c931feb484ebf09c6b5a796c0a4f7ea9ba115fa70d21d5b6dd25c7623f8f",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "atlas-1880",
+      "sha256": "cc4ee185c31a08384d1ade891b9c2c2f72f349e2dca1b841e36c7f37ad7e2a60",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "atlas-1914",
+      "sha256": "f72664bef9669b9ed1e70a0b089f9a8605ce8f9b26027bc986f374123a37b946",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "atlas-independances",
+      "sha256": "eeeed62111c8512306c9abdefcef1d27b3aa0c5ec0c8c15feb3ae5a6f2096f0a",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "atlas-1500",
+      "sha256": "700ea44308140a51d283730e3890a6a8b7ce0f5e6b929d0e091ad3415cbc3a64",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "atlas-1880-parchemin",
+      "sha256": "62592008e66567c2793ef4806ef57a9c2755d8f45145c97a0c6dfcaaed4f9ede",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "atlas-capacite-45",
+      "sha256": "0904b961e85d15f21d51d5362b867593f95d094c550923f69aab4aa229bfea49",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "atlas-proto-collisions",
+      "sha256": "7d293f5d942127eefeae4aab8ef7ca00c51917cf12c54ea5c7eb660bc96282e0",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-pays-01",
+      "sha256": "dddf852a9ffbd23c2656c98e4ffc1b98487ed6204bbf3122114ae8c71e0c2132",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-pays-02",
+      "sha256": "f3ac2e7028c0ac0207d5fd7abc4982aef02152ebd983d1bc08076a114ff6309f",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-pays-03",
+      "sha256": "678a7e0575bbc8ef683eddd70ec4424e6c55a6369a8e89ad6c24fd3e197a8836",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-pays-04",
+      "sha256": "6169f73a5e2ef261d75178d22b22cc425dde4769288790ce20ff12bb42e5984a",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-pays-05",
+      "sha256": "50dc199db5811f8cb73fd97f53920089fdaf0057bd07727ca713f86adaf181f0",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-pays-06",
+      "sha256": "5e4a936384f4c39d39ede1c9e684c8b49fea1b2366d6efec725b501c8a87ce49",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-pays-07",
+      "sha256": "00ca1f27ed7f7a3d6e1fafc92c92d133a0a94ebdbb587d1b856c48d9704ca91d",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-nom-recu-01",
+      "sha256": "685ce0a18879567d27687e077caf31dc32e0e766a53b8657ef23a505c59ecf59",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-nom-recu-02",
+      "sha256": "5e3c22251d21b7563c5028d5f3d4a94894f72e9f5f2580e03c97e849608fde7f",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-nom-recu-03",
+      "sha256": "cae8bf7c0ae0d6e4e9bd62568c06f184293e33131193f83868aae00263407c26",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-nom-recu-04",
+      "sha256": "e2342b8e348f24ae2e5a08d31c3510e807dbb55222f73b2ce88e8bfa00e5c050",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-nom-recu-05",
+      "sha256": "cc8ee175cb70b17ebe75ee60b9fe7300ece8a82deb96b39da1a599d86b8a84c6",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-nom-recu-06",
+      "sha256": "bfe7c946f4205b163a3ca60b3a4feb4d4ed7d01da9b35550fde75992f8f5f0a8",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-nom-recu-07",
+      "sha256": "17cd56e66c7e1f8fd1df3d8b5ddce2d7766493fe3d5d7e20f97aa3a71681ae58",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-nom-recu-08",
+      "sha256": "054199607fc637754f0ba0c9973eb1f23aaaae83e28ca4d041b7427600687f21",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-nom-famille-01",
+      "sha256": "6ff0708220b773608c0218c8cb35accd28e085fba75e849cee1cd0a7c50c559c",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-nom-famille-02",
+      "sha256": "550483301dc8b75ca389131d4f04abfc6f3b735e0ebacf33a4c6e47c1f423943",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-nom-famille-03",
+      "sha256": "2d8e59618c0390ab12e90a604f0f103ac473ca2635283cd8786edeb32ccef288",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-nom-famille-04",
+      "sha256": "395415dcfa6074f36da5d4d8ba9fa3de2a868dcbfb9362b882400d40eb7ff797",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-nom-famille-05",
+      "sha256": "6d58ed8e23eaa48f71131e43f35d662ee065faf8c9ea5b50f86c244ac100b606",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-nom-famille-06",
+      "sha256": "9fdd4aff24f92e5c6b22b187d82dee85ceb354516f0a6223b7868a4f5b6052ed",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-nom-famille-07",
+      "sha256": "9b4dd9bb84ea0280e4b571ee594f29b57b0fbe74bd07e76dbdcae5abf5243627",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-mots-01",
+      "sha256": "cbf168873b0ad3cb2d50e3a8584837eba618a90fec6b5f0315c40c5945f9a80a",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-mots-02",
+      "sha256": "8060731735121cebd8bcf8cd4738545fb7a42d83c06fa5bbed6068bc046177bc",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-mots-03",
+      "sha256": "baf1458de24af07de6bce394edfe5b2f27ba2d81b982d2ec371988674b457b9f",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-mots-04",
+      "sha256": "05137076e9ca28f5dee248356c2ecba15160625a75258ff8aa4d6bc07b64dbf0",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-mots-05",
+      "sha256": "5a63c71de08d6c3ce212a0d4c5f6dadf31479f2baa1db8a33cb1a42cda51de62",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-mots-06",
+      "sha256": "5ad55443f434f4d344259f3ebd896c68a1c2dd7a851e43d4347c0ffd377c02b7",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-mots-07",
+      "sha256": "af1c289d5cdabbd84c22b1d80d01d7a3d23e7b0a6b5a49ed99a7261b63bf61cf",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-frontieres-01",
+      "sha256": "99fa7acf1876b6b68314dec2f6a9b616587f80735659c4eefb7306eb1c11f206",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-frontieres-02",
+      "sha256": "6e2bb2763f25362e327957f20431065384ccdc61a4b993f185d657041edc9dfe",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-frontieres-03",
+      "sha256": "c55eb2266814ecca1f7686a6fd8142c4f52053264759ce689e569cc5d8c1495a",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-frontieres-04",
+      "sha256": "5e67829dc51e14f2c997e40564f4c9696308763b7ecd15f155e9589138c427b9",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-frontieres-05",
+      "sha256": "021a500c1bff44b12de15038715c30705900916ff0b26d0013217834c2076050",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-frontieres-06",
+      "sha256": "8d12d9a3b9ef439450b53a52fca1f4a27e71437270ca2e1ea98e8ea92dafb179",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-frontieres-07",
+      "sha256": "f4668e2b6a058570fc9a43e95081247c5dff2affcfeebfad2ccfc7ac6fbf4919",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-afrique-tout-01",
+      "sha256": "d358d442117fe6090c54a8eb42b91ef78752f5cec8c9cea0e4f9d28b8186289a",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-afrique-tout-02",
+      "sha256": "c8ea39579c7f555a2f6cb1647adabb4c7fd4ee7a17d61c396da5c9b9c9cd19c9",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-afrique-tout-03",
+      "sha256": "99a441b07a0c75119813f70c15bc8bc5f5dd89b31b3796576612848c832f46f7",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-afrique-tout-04",
+      "sha256": "a77a9b208730e32167f6f8af07883024befc61660089822dddde193eb7e1d1a3",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-afrique-tout-05",
+      "sha256": "6308b885f49a17cf9c51286e24c65248eda07dd9c47f45ce39d28cf3ea6f2e40",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-afrique-tout-06",
+      "sha256": "1d70054512b098a8ec766aa0776744dea7d8bf0ae04ade24f6c166746f6bc80f",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-afrique-tout-07",
+      "sha256": "ce7fa9da277c5840692a2c99a339c44735cd368666842a4a61e5167f62a5ca33",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-villes-01",
+      "sha256": "9bb9dd574b532d1dd59df58da72050785de4c8fb3faefe2dfecb29b3d1197d08",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-villes-02",
+      "sha256": "2b8f86c142f1d7aee0179db4e58aa7ed131e789f242a4ca726b0bffbc83bdb62",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-villes-03",
+      "sha256": "f379793d6e5e51e70b45476c90ec0add2f5663a614402b37c9b0c7b104f7facd",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-villes-04",
+      "sha256": "9d10ec810d80b559ecf864263e28fd9f4f8a1af7832f60ac491f8879388fb221",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-villes-05",
+      "sha256": "16480041edd838c9ecd052f458c36017c3ae5bda45ad1e20e2166e55c81ceb1c",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-villes-06",
+      "sha256": "fa3ae2f166480bd8389a08d996daac1acb116753a1199e33fa671a027b3dbddd",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-atlas-1880",
+      "sha256": "864e9c64500e747453bdcadcd1bb583ee8997e792bc8fed93310709f12ce466a",
+      "identical": true,
+      "altIdentical": true
+    },
+    {
+      "id": "serie-atlas-1914-parchemin",
+      "sha256": "5e90d72acf9ca9561ef687b3ed2f2a9d434a3ba365c4440964764c24960068aa",
+      "identical": true,
+      "altIdentical": true
+    }
+  ]
+}

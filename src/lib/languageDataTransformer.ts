@@ -27,6 +27,9 @@ export interface LanguagePageData {
   vehicularRole: LanguageDetail["vehicularRole"];
   vitalityStatus: LanguageDetail["vitalityStatus"];
   sources: FicheSourceEntry[];
+  /** Brief 3: the name history, for the readings, sources and silences. */
+  nameHistory?: LanguageDetail["nameHistory"];
+  gaps?: LanguageDetail["gaps"];
 }
 
 // @req REQ-136
@@ -47,6 +50,8 @@ export function transformLanguageData(
     speakingPeoples: language.speakingPeoples,
     vehicularRole: language.vehicularRole,
     vitalityStatus: language.vitalityStatus,
+    ...(language.nameHistory ? { nameHistory: language.nameHistory } : {}),
+    ...(language.gaps?.length ? { gaps: language.gaps } : {}),
     sources: language.sources.map((source) => ({
       label: source.title,
       url: source.url,

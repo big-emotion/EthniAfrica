@@ -13,6 +13,8 @@ export interface FicheNameStoryCopy {
   askOne: string;
   readMore: string;
   moreForms: (count: number) => string;
+  /** The count on a name row that folds its competing readings (brief 5). */
+  explanations: (count: number) => string;
   imposedBy: string;
 }
 
@@ -24,6 +26,7 @@ export const ficheNameStoryCopy: Record<Language, FicheNameStoryCopy> = {
     askOne: "D’où vient ce nom ?",
     readMore: "Lire la suite",
     moreForms: (count) => `+${count} ${count === 1 ? "autre" : "autres"}`,
+    explanations: (count) => `${count}\u00a0explications`,
     imposedBy: "Donné par",
   },
 };
