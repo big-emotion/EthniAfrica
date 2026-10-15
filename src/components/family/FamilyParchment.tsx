@@ -26,6 +26,7 @@ import {
   type FamilyFootprintProvenance,
 } from "@/lib/familyFootprintSource";
 import type { FamilyPageData } from "@/lib/familyDataTransformer";
+import type { FamilyFigureNote } from "@/types/afrik";
 import { ficheSourceLabel } from "@/lib/afrik/ficheSourceLabel";
 import type { Language } from "@/types/shared";
 import type { ProvenanceCensus } from "@/api/v2/schemas/confidence";
@@ -89,6 +90,11 @@ export interface FamilyParchmentProps {
    * failure `FicheJsonLd` records.
    */
   onward?: ReactNode;
+  /**
+   * « Les sources parlent » (brief 4), composed by the view from the fiche's
+   * name history and slotted right after the story of the names it answers.
+   */
+  nameSources?: ReactNode;
 }
 
 /**
@@ -103,19 +109,27 @@ function StatCard({
   id,
   label,
   value,
+  note,
   language,
 }: {
   id: string;
   label: string;
   value: unknown;
+  /** What the figure is worth, from the fiche (brief 4). */
+  note?: FamilyFigureNote;
   language: Language;
 }) {
+  const scope =
+    note?.note ??
+    (note?.unsourced ? familyCopy[language].parchment.unsourcedFigure : null);
   return (
     <FicheStatCard
       id={id}
       label={label}
       value={value}
       emptyValue={familyCopy[language].parchment.empty}
+      scope={scope ?? undefined}
+      caveat={Boolean(note?.unsourced)}
       language={language}
     />
   );
@@ -167,6 +181,7 @@ export function FamilyParchment({
   provenance = null,
   children,
   onward,
+  nameSources,
 }: FamilyParchmentProps) {
   const copy = familyCopy[language].parchment;
   const { hero, decolonialHeader, generalInfo, distribution } = data;
@@ -203,6 +218,10 @@ export function FamilyParchment({
         }))
   );
 
+  const classification = hero.classificationStatus
+    ? copy.classification[hero.classificationStatus]
+    : undefined;
+
   const distributionProvenance = classifyFieldProvenance(
     distribution.distributionByCountry
   ).state;
@@ -238,6 +257,8 @@ export function FamilyParchment({
         language={language}
       />
 
+      {nameSources}
+
       <Section title={copy.figures}>
         {/* Inside the first chapter, on the people record's precedent: the
             parchment keeps no child off the chapter ground, and the banner's
@@ -247,12 +268,27 @@ export function FamilyParchment({
             <ProvenanceBanner language={language} census={provenance} />
           </div>
         ) : null}
+        {classification ? (
+          /* Brief 4: the classification status said in a sentence above the
+             figures it qualifies; the head keeps its badge. */
+          <p
+            data-classification={hero.classificationStatus}
+            className="mt-afh-lg border-l-2 border-(--afh-colonial-ink) pl-afh-lg text-afh-small leading-[1.6] text-afh-text"
+          >
+            {classification}
+          </p>
+        ) : null}
+        {/* The « Distribution » card is gone (brief 4): a count of the
+            countries with a figure read as the family's reach. What the
+            fiche declares country by country is said in the closing band,
+            and a fiche that declares nothing keeps the chip and the gap. */}
         <div className="afh-stat-cards">
           <StatCard
             language={language}
             id="langues"
             label={copy.languages}
             value={generalInfo.numberOfLanguages}
+            note={generalInfo.figureNotes.numberOfLanguages}
           />
           <StatCard
             language={language}
@@ -263,18 +299,13 @@ export function FamilyParchment({
                 ? `${Math.round(generalInfo.totalSpeakers / 1e6)} M`
                 : null
             }
+            note={generalInfo.figureNotes.totalSpeakers}
           />
           <StatCard
             language={language}
             id="branches"
             label={copy.branches}
             value={generalInfo.branches}
-          />
-          <StatCard
-            language={language}
-            id="distribution"
-            label={copy.distribution}
-            value={distribution.distributionByCountry}
           />
         </div>
 

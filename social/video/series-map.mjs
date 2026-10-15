@@ -4,6 +4,7 @@
 // satellite video's flat style, fitted around its subject and drawn with that
 // video's overlays: this module turns the card and its base map into that
 // view, in frame pixels, with no browser. series-page.mjs draws it.
+import { readFileSync } from "node:fs";
 import { project, unproject, placeLabels, estimateWidth } from "./sequence.mjs";
 
 export const MAP_FRAME = {
@@ -21,6 +22,8 @@ export const MAP_FRAME = {
   // A map card's foot holds its key: it may start at y 1600.
   foot: [1600, 1786],
 };
+// The verified imagery of the series map cards (series.md, « Scale limit »).
+export const MAP_IMAGERY = "bmng-2004-07-topo-bathy";
 const EARTH_KM = 6371;
 const fail = (message) => {
   throw new Error(message);
@@ -47,12 +50,21 @@ const DRAWN = new Set([
   "caption",
 ]);
 
+// A card of a map sequence (1.5.0) draws its areas from the repository's
+// files and its own borders; the 1.4.1 fields that need the base map or
+// Natural Earth's countries (highlight, card-unit labels and places) have no
+// place in a sequence and are refused like any other undrawn field.
+const SEQUENCE_DRAWN = new Set(["sequence", "areas", "borders", "caption"]);
+export const AREA_INKS = ["a", "b", "c", "d"];
+const AREA_DIR = new URL("./data/areas/", import.meta.url);
+
 export function checkSeriesMapCard(card) {
   const map = card.map ?? fail(`Card ${card.id} has no map`);
   if (ATLAS_FIELDS.some((k) => k in map))
     fail(`Card ${card.id}: Carte d'atlas : carrousel seulement`);
+  const sequence = "sequence" in map;
   for (const k of Object.keys(map))
-    if (!DRAWN.has(k))
+    if (!(sequence ? SEQUENCE_DRAWN : DRAWN).has(k))
       fail(
         `Card ${card.id}: map.${k} has no equivalent on satellite imagery; the video cannot draw it`
       );
@@ -60,6 +72,92 @@ export function checkSeriesMapCard(card) {
     fail(
       `Card ${card.id}: borders « ${map.borders} » are not drawn on imagery (none, quiet or strong)`
     );
+  if (sequence) checkSequenceAreas(card);
+}
+
+// Check 1 of 1.5.0: a sequence's areas are files of social/video/data/areas/,
+// built by areas.mjs from cited sources; the engine reads no inline path.
+function checkSequenceAreas(card) {
+  const { sequence, areas } = card.map;
+  if (typeof sequence !== "string" || !sequence.trim())
+    fail(`Card ${card.id}: map.sequence names its sequence`);
+  if (!Array.isArray(areas))
+    fail(`Card ${card.id}: a map sequence lists its areas`);
+  for (const a of areas) {
+    const what = `Card ${card.id}, area ${a.name ?? a.file}`;
+    if (
+      "paths" in a ||
+      typeof a.file !== "string" ||
+      !/^[\w-][\w.-]*\.geojson$/u.test(a.file)
+    )
+      fail(
+        `${what}: a sequence area is a file of social/video/data/areas/; inline paths and other folders are refused`
+      );
+    if (typeof a.name !== "string" || !a.name.trim())
+      fail(`${what}: an area carries its name`);
+    if (!AREA_INKS.includes(a.ink))
+      fail(
+        `${what}: ink « ${a.ink} » is not one of the four area inks, a to d`
+      );
+  }
+}
+
+const polygonRings = (g) =>
+  g.type === "Polygon"
+    ? [g.coordinates]
+    : g.type === "MultiPolygon"
+      ? g.coordinates
+      : fail(`${g.type} is not an area`);
+
+// One area file with its provenance, as the satellite video reads it.
+export function loadSequenceArea(file) {
+  let geojson;
+  try {
+    geojson = JSON.parse(readFileSync(new URL(file, AREA_DIR), "utf8"));
+  } catch (error) {
+    fail(
+      `Area ${file}: not a file of social/video/data/areas/ (${error.message})`
+    );
+  }
+  const feature =
+    geojson.type === "FeatureCollection" && geojson.features.length === 1
+      ? geojson.features[0]
+      : geojson;
+  const p = feature.properties ?? {};
+  for (const field of ["kind", "source", "licence"])
+    if (typeof p[field] !== "string" || !p[field].trim())
+      fail(`Area ${file}: no ${field}`);
+  if (!["approximate", "certain"].includes(p.kind))
+    fail(`Area ${file}: kind is approximate or certain, not ${p.kind}`);
+  return {
+    file,
+    uncertain: p.kind !== "certain",
+    polygons: polygonRings(feature.geometry),
+  };
+}
+
+// The flat (orthographic, top-down) branch of sequence.mjs's `project`,
+// written with no outside reference so the page runs this very function on
+// each frame of a change of view.
+export function flatProject(camera, lon, lat) {
+  const rad = Math.PI / 180;
+  const l = (lon - camera.lon) * rad;
+  const p = lat * rad;
+  const p0 = camera.lat * rad;
+  const x = Math.cos(p) * Math.sin(l);
+  const y =
+    Math.cos(p0) * Math.sin(p) - Math.sin(p0) * Math.cos(p) * Math.cos(l);
+  return [540 + camera.radius * x, camera.centreY - camera.radius * y];
+}
+
+// 1.5.0: « contours » when the map draws no border, « frontières » when it
+// does. A 1.4.1 card keeps its own line (seriesMapCredits).
+export function sequenceCredits(map, imagery) {
+  const lines = (map.borders ?? "none") === "none" ? "contours" : "frontières";
+  return {
+    source: seriesMapCredits(map, imagery).source,
+    imagery: `Imagerie : ${imagery.credit} ; ${lines} : Natural Earth, domaine public`,
+  };
 }
 
 // « équirectangulaire, 19 px par degré, origine -19° 30° » or « …, origine
@@ -262,7 +360,7 @@ export function fitMapCamera(box, imagery, points) {
 
 // The longitude and latitude the frame shows, with a margin: the region the
 // full-resolution imagery must cover.
-function frameBounds(camera) {
+export function frameBounds(camera) {
   const lons = [];
   const lats = [];
   for (let x = 0; x <= 1080; x += 90)

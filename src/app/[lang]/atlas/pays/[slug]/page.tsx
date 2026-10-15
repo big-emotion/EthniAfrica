@@ -17,6 +17,13 @@ import {
 import { PageLayout } from "@/components/layout/PageLayout";
 import { FicheJsonLd } from "@/components/fiche/FicheJsonLd";
 import { FicheOnward } from "@/components/fiche/FicheOnward";
+import { NameNextStep } from "@/components/search/timeline/NameClosing";
+import {
+  loadCountryNameRows,
+  loadCountryNextSteps,
+  sharedNameNote,
+} from "@/lib/fiche/countryNextSteps";
+import { shortSourceName } from "@/lib/countryDataTransformer";
 import { buildOnwardLinks } from "@/lib/fiche/onwardLinks";
 import { countryOnwardGroups } from "@/lib/fiche/onwardGroups";
 import { getAfrikLanguageFamilyRoster } from "@/lib/supabase/queries/afrik/languageFamilies";
@@ -110,6 +117,7 @@ async function CountryLiveContent({
     countryLanguages,
     familyCount,
     provenance,
+    countryNameRows,
   ] = await Promise.all([
     getActiveSourceFlags("country", countryDetail.id),
     getCountryAtlasIndex(),
@@ -122,7 +130,33 @@ async function CountryLiveContent({
     ).catch(() => null),
     getCountryFamilyCount(countryDetail.id).catch(() => null),
     readProvenanceCensus("country", countryDetail.id),
+    loadCountryNameRows(),
   ]);
+
+  // Brief 5: the name this country shares, and the next names, each with
+  // the reason its own fiche gives.
+  const selfNameRow = {
+    id: countryDetail.id,
+    nameFr: countryDetail.nameFr,
+    nameOfficial: countryDetail.nameOfficial ?? null,
+    firstName: countryDetail.nameHistory?.names[0]?.nameText ?? null,
+    summary: countryDetail.nameHistory?.summary ?? null,
+  };
+  const sharedName = sharedNameNote(selfNameRow, countryNameRows);
+  const nextSteps = countryDetail.nameHistory
+    ? await loadCountryNextSteps({
+        self: selfNameRow,
+        rows: countryNameRows,
+        peoples: [...(countryDetail.demographics?.peoples ?? [])]
+          .filter((people) => people.peopleId)
+          .sort(
+            (a, b) =>
+              (b.percentageInCountry ?? 0) - (a.percentageInCountry ?? 0)
+          )
+          .map((people) => ({ id: people.peopleId, name: people.name })),
+        language,
+      })
+    : [];
 
   const familyNamesById = new Map<string, string>(
     familyRoster.map((family) => [family.id, family.nameFr] as const)
@@ -196,6 +230,9 @@ async function CountryLiveContent({
                   ? {
                       value: countryDetail.demographics.totalPopulation,
                       referenceYear: countryDetail.demographics.referenceYear,
+                      source: shortSourceName(
+                        countryDetail.demographics.source
+                      ),
                     }
                   : null,
               peoples: countryDetail.demographics?.peoples?.length,
@@ -206,21 +243,26 @@ async function CountryLiveContent({
                 : null,
             }}
             familyNamesById={familyNamesById}
+            sharedName={sharedName}
             onward={
-              <FicheOnward
-                from="country"
-                language={language}
-                links={buildOnwardLinks(
-                  countryOnwardGroups({
-                    demographicPeoples:
-                      countryDetail.demographics?.peoples ?? [],
-                    majorPeoples: countryDetail.majorPeoples ?? [],
-                    familyNamesById,
-                    language,
-                  }),
-                  language
-                )}
-              />
+              nextSteps.length > 0 ? (
+                <NameNextStep cards={nextSteps} language={language} />
+              ) : (
+                <FicheOnward
+                  from="country"
+                  language={language}
+                  links={buildOnwardLinks(
+                    countryOnwardGroups({
+                      demographicPeoples:
+                        countryDetail.demographics?.peoples ?? [],
+                      majorPeoples: countryDetail.majorPeoples ?? [],
+                      familyNamesById,
+                      language,
+                    }),
+                    language
+                  )}
+                />
+              )
             }
           />
         }

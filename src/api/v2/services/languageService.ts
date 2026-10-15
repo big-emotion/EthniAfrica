@@ -56,6 +56,18 @@ export interface LanguageDetail {
   }>;
   /** The fiche's shared name-history block (REQ-196), when it declares one. */
   nameHistory?: NameHistory;
+  /** What the sources leave unknown, one reason each (`content.gaps`). */
+  gaps?: string[];
+}
+
+/** The reasons of `content.gaps`, each a sentence written for the reader. */
+function gapReasons(value: unknown): string[] {
+  if (!Array.isArray(value)) return [];
+  return value.flatMap((gap) =>
+    gap && typeof gap === "object" && typeof gap.reason === "string"
+      ? [gap.reason.trim()].filter(Boolean)
+      : []
+  );
 }
 
 /** Keeps a JSONB array that should hold strings from leaking other types. */
@@ -101,6 +113,7 @@ export async function getLanguageById(
     getSourcesMap([id]),
   ]);
   const content = language.content;
+  const gaps = gapReasons(content.gaps);
 
   const detail: LanguageDetail = {
     id: language.id,
@@ -125,6 +138,7 @@ export async function getLanguageById(
       tier: toSourceTier(source.tier),
     })),
     ...(language.nameHistory ? { nameHistory: language.nameHistory } : {}),
+    ...(gaps.length > 0 ? { gaps } : {}),
   };
 
   return detail;

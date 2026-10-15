@@ -1,7 +1,11 @@
 import { describe, expect, it } from "vitest";
 
 import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
-import { ficheNextSteps, ficheSilences } from "@/lib/fiche/ficheNameClosing";
+import {
+  ficheNextSteps,
+  ficheSilences,
+  undatedReadingsSilences,
+} from "@/lib/fiche/ficheNameClosing";
 
 type Name = NameHistory["names"][number];
 type Account = Name["accounts"][number];
@@ -16,6 +20,8 @@ const source = (
   url: null,
   tier: "referenced",
   source_kind,
+  // An oral account is drawn as the corpus records it: carried by someone.
+  ...(source_kind === "oral_tradition" ? { carrier: "Porteur" } : {}),
 });
 
 const account = (
@@ -145,6 +151,83 @@ describe("ficheNextSteps — the next names of a fiche", () => {
         name: "Libéria",
         reason: "Le nom Libéria désigne un pays.",
       },
+    ]);
+  });
+});
+
+// Brief 4, approved 2026-10-15: docs/design/mockups/site/family-*.dc.html.
+describe("ficheSilences — the closing band of a language family", () => {
+  // @req REQ-198
+  it("says a name no account tells yet, instead of calling it undated", () => {
+    const lines = ficheSilences(
+      history(
+        name("Bantou", [account("1858", 1858, "archive", { birth: true })]),
+        name("Bantu", [])
+      ),
+      "languageFamily"
+    );
+
+    expect(lines).toEqual([
+      "Aucun récit transmis oralement n’est enregistré pour les noms de cette famille de langues.",
+      "Aucune source du projet ne raconte encore le nom Bantu.",
+      "Aucune trace du nom Bantou plus ancienne que 1858 n’est connue du projet.",
+    ]);
+  });
+
+  // @req REQ-198
+  // @req REQ-161
+  it("names who wrote down oral traditions no carrier tells yet", () => {
+    const reported = account("Avant Soundiata, selon la tradition", null);
+    reported.sources = [
+      { ...source("intergovernmental"), author: "Djibril Tamsir Niane" },
+      {
+        ...source(
+          "oral_tradition",
+          "Traditions des écoles de griots du Manden"
+        ),
+        carrier: undefined,
+        author: "Écoles de griots du Manden",
+      },
+    ];
+    const lines = ficheSilences(
+      history(
+        name("Mandé", [account("1867", 1867, "archive", { birth: true })]),
+        name("Manden", [reported, account("1854", 1854)])
+      ),
+      "languageFamily"
+    );
+
+    expect(lines).toEqual([
+      "Les traditions orales sur le nom Manden ne nous parviennent que par Djibril Tamsir Niane. Le projet n’a pas encore de récit recueilli auprès de celles et ceux qui les transmettent.",
+      "Aucune trace du nom Mandé plus ancienne que 1867 n’est connue du projet.",
+    ]);
+  });
+});
+
+// Brief 5, approved 2026-10-15: docs/design/mockups/site/country-*.dc.html.
+describe("undatedReadingsSilences — the country fiche", () => {
+  // @req REQ-198
+  it("says when the competing readings of a name carry no date at all", () => {
+    const reading = (label: string) => ({
+      ...account(label, null),
+      hypothesisGroup: "origine du nom Quaqua",
+    });
+    const dated = {
+      ...account("1475-1476", 1475),
+      hypothesisGroup: "malagens",
+    };
+    expect(
+      undatedReadingsSilences(
+        history(
+          name("Côte d'Ivoire", [
+            account("1670", 1670, "archive", { birth: true }),
+          ]),
+          name("Côte de Quaqua", [reading("a"), reading("b"), reading("c")]),
+          name("Costa de Malagens", [dated, { ...dated }])
+        )
+      )
+    ).toEqual([
+      "Les trois explications du nom Côte de Quaqua ne sont pas datées.",
     ]);
   });
 });

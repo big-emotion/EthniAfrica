@@ -76,6 +76,12 @@ export interface LanguageRecord {
   } | null;
   /** The fiche's shared name-history block (REQ-196); only fiches carry one. */
   nameHistory?: NameHistory;
+  /**
+   * What the sources leave unknown, said to the reader (`content.gaps`, the
+   * shape the place model already uses). The fiche's closing band prints
+   * each reason as a silence (brief 3).
+   */
+  gaps?: Array<{ field: string; reason: string }>;
 }
 
 /** The CSV's `source_tier=1` is the only value the corpus declares today; anything else is not the official tier the corpus asserts. */

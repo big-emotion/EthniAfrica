@@ -9,6 +9,12 @@ const fr = {
     title: "En bref",
     portrait: "Portrait",
     referenceYear: (year: number) => `Année de référence : ${year}`,
+    /**
+     * The note under the names when another country bears the same name
+     * (brief 5, boards country-state-shared-congo-*.dc.html).
+     */
+    sharedName: (name: string, self: string, other: string) =>
+      `Deux pays portent le nom ${name} : ${self}, dont parle cette page, et ${other}. Ce sont deux pays différents.`,
     figures: {
       population: {
         label: "habitants",

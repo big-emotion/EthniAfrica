@@ -52,7 +52,10 @@ describe("LanguageDetailViewV2", () => {
     expect(
       screen.getByText("Langue véhiculaire au Nigeria du Sud-Ouest")
     ).toBeInTheDocument();
-    expect(screen.getByText(/Institutional/)).toBeInTheDocument();
+    // Brief 3: the EGIDS status is said in French.
+    expect(
+      screen.getByText("Institutionnelle · échelle EGIDS, 2026")
+    ).toBeInTheDocument();
   });
 
   // AC2: a language with no vitality status in the corpus must render that

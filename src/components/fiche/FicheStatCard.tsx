@@ -46,6 +46,12 @@ interface FicheStatCardProps {
    */
   scope?: string;
   /**
+   * The scope is a warning about a figure that is there: an estimate the
+   * fiche ties to no source (brief 4). Drawn in the caveat tone, like an
+   * absence.
+   */
+  caveat?: boolean;
+  /**
    * How much of the card's row this figure is owed. A record that leads with
    * one figure marks it `lead` and files the others as `tile`; a surface
    * where all the figures weigh the same passes neither.
@@ -70,6 +76,7 @@ export function FicheStatCard({
   value,
   emptyValue = ABSENT_FIGURE,
   scope,
+  caveat = false,
   emphasis,
   language,
 }: FicheStatCardProps) {
@@ -107,7 +114,10 @@ export function FicheStatCard({
           app's single wording for an absent field does — it lives in
           FieldProvenanceMarker and nowhere else. */}
       {scope ? (
-        <dd className="afh-stat-card-scope" data-caveat={missing || undefined}>
+        <dd
+          className="afh-stat-card-scope"
+          data-caveat={missing || caveat || undefined}
+        >
           {scope}
         </dd>
       ) : (

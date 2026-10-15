@@ -215,7 +215,15 @@
       ],
       "geographicArea": "Afrique centrale, orientale et australe, de la région des Grassfields (Cameroun-Nigeria) jusqu'au Cap de Bonne-Espérance (Afrique du Sud), et de la côte atlantique à la côte indienne.",
       "numberOfLanguages": 500,
-      "totalSpeakers": 350000000
+      "totalSpeakers": 350000000,
+      "figureNotes": {
+        "numberOfLanguages": {
+          "note": "Plus de 500, une estimation"
+        },
+        "totalSpeakers": {
+          "note": "Un ordre de grandeur, selon Bostoen et Van de Velde, 2019"
+        }
+      }
     },
     "associatedPeoples": [
       {

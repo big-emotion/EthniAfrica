@@ -172,6 +172,14 @@
                 "source_kind": "intergovernmental",
                 "notes": "UNESCO, lu dans l'exemplaire numérisé du volume. L'auteur suit les traditions orales des écoles de griots du Manden à côté des auteurs arabes.",
                 "page": "p. 153"
+              },
+              {
+                "title": "Traditions des écoles de griots du Manden",
+                "author": "Écoles de griots du Manden",
+                "year": null,
+                "url": null,
+                "tier": "unverified",
+                "source_kind": "oral_tradition"
               }
             ]
           },
@@ -315,7 +323,15 @@
       "branches": ["Eastern Mande", "Western Mande"],
       "geographicArea": "Mali, Guinée, Côte d'Ivoire, Burkina Faso, Sierra Leone, Liberia, Sénégal, Gambie, Guinée-Bissau, Mauritanie, Ghana, Bénin, Nigeria",
       "numberOfLanguages": 75,
-      "totalSpeakers": 60000000
+      "totalSpeakers": 60000000,
+      "figureNotes": {
+        "numberOfLanguages": {
+          "note": "Selon Glottolog, édition 5.3"
+        },
+        "totalSpeakers": {
+          "unsourced": true
+        }
+      }
     },
     "associatedPeoples": [
       {

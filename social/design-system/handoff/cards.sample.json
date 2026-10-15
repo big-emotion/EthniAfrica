@@ -1,5 +1,5 @@
 {
- "version": "1.4.1-proposition",
+ "version": "1.7.0-proposition",
  "logo": "Logo/ethniafrica-logo.png",
  "cards": [
   {
@@ -327,7 +327,6 @@
    "type": "closing",
    "theme": "nuit",
    "folio": "09/09",
-   "title": "Notre objectif : raconter l'origine des noms, avec des sources.",
    "body": "Sur ethniafrica.com, la fiche Ouganda présente ses peuples, ses langues et ses royaumes.",
    "cta": {
     "domain": "ethniafrica.com"
@@ -506,7 +505,6 @@
      "kind": "origine"
     }
    ],
-   "title": "Notre objectif : raconter l'origine des noms, avec des sources.",
    "body": "Vous avez une histoire, un nom transmis ou une source ? Partagez-la sur EthniAfrica.",
    "cta": {
     "domain": "ethniafrica.com"
@@ -1146,7 +1144,6 @@
    "type": "closing",
    "theme": "parchemin",
    "folio": "09/09",
-   "title": "Notre objectif : raconter l'origine des noms, avec des sources.",
    "body": "Sur ethniafrica.com, la fiche Ouganda présente ses peuples, ses langues et ses royaumes.",
    "cta": {
     "domain": "ethniafrica.com"
@@ -4647,7 +4644,6 @@
      "kind": "premiere"
     }
    ],
-   "title": "Notre objectif : raconter l'origine des noms, avec des sources.",
    "body": "Cherchez Burkina Faso sur EthniAfrica, lien en profil.",
    "cta": {
     "domain": "ethniafrica.com"
@@ -4921,7 +4917,6 @@
     "id": "nom-recu",
     "episode": 1
    },
-   "title": "Notre objectif : raconter l'origine des noms, avec des sources.",
    "body": "Cherchez Touareg sur EthniAfrica, lien en profil.",
    "cta": {
     "domain": "ethniafrica.com"
@@ -5168,7 +5163,6 @@
     "id": "nom-famille",
     "episode": 1
    },
-   "title": "Notre objectif : raconter l'origine des noms, avec des sources.",
    "body": "Cherchez Yao sur EthniAfrica, lien en profil.",
    "cta": {
     "domain": "ethniafrica.com"
@@ -5413,7 +5407,6 @@
     "id": "mots",
     "episode": 1
    },
-   "title": "Notre objectif : raconter l'origine des noms, avec des sources.",
    "body": "Cherchez [mot] sur EthniAfrica, lien en profil.",
    "cta": {
     "domain": "ethniafrica.com"
@@ -5689,7 +5682,6 @@
     "id": "frontieres",
     "episode": 1
    },
-   "title": "Notre objectif : raconter l'origine des noms, avec des sources.",
    "body": "Cherchez [peuple] sur EthniAfrica, lien en profil.",
    "cta": {
     "domain": "ethniafrica.com"
@@ -5926,7 +5918,6 @@
     "id": "afrique-tout",
     "episode": 1
    },
-   "title": "Notre objectif : raconter l'origine des noms, avec des sources.",
    "body": "Cherchez Afrique sur EthniAfrica, lien en profil.",
    "cta": {
     "domain": "ethniafrica.com"
@@ -6142,7 +6133,6 @@
     "id": "villes",
     "episode": 1
    },
-   "title": "Notre objectif : raconter l'origine des noms, avec des sources.",
    "body": "Cherchez [ville] sur EthniAfrica, lien en profil.",
    "cta": {
     "domain": "ethniafrica.com"

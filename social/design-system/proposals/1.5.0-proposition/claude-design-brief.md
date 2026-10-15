@@ -1,88 +1,42 @@
-# Claude Design brief: EthniAfrica Cartes 1.5.0-proposition, the signature line at the end of every reel and carousel
+# Claude Design brief: EthniAfrica Cartes 1.5.0-proposition, a spoken map sequence in the series video
 
-For the operator to paste into the Claude Design conversation of EthniAfrica Cartes (https://claude.ai/artifact/FMuUA1zKTU9P8qwdrmmQML, 1.4.1-proposition accepted on 14 October 2026).
+For the operator to paste into the Claude Design conversation of EthniAfrica Cartes (https://claude.ai/artifact/FMuUA1zKTU9P8qwdrmmQML, 1.4.1-proposition accepted on 14 October 2026). The satellite video's own design is the Vidéo carte canvas (https://claude.ai/artifact/Ddics3FaKf1jjcnKMHZYSs, 0.4.0 « plein écran » accepted on 12 October 2026).
 
-The accepted files are in the public repository, branch `recette`: https://github.com/big-emotion/EthniAfrica/tree/recette/social/design-system. Read:
-
-- `README.md`: the signature row, and the `closing` type;
-- `series.md`: « The series band », and in « Vidéo de série » the bands table, the legibility rule and « Cover, card change, ending »;
-- `handoff.md`: « Choices left to the operator », choice 2, the closing slogan.
-
-The editorial source is `docs/editorial/essais/afrique-nest-pas-un-tout-2026-10-13.md`, section 5.6. The rule for the networks is `docs/editorial/strategy/social-series.md`, « Leading readers to the site ».
-
-**Two words, two things.** The **signature row** is the design system's logo row: the logo and « EthniAfrica » in Fraunces. The **signature line** is the project's sentence, the subject of this brief. They are different things and keep their names.
-
----
+The accepted files are in the public repository, branch `recette`: https://github.com/big-emotion/EthniAfrica/tree/recette/social/design-system — read `series.md` (« Vidéo de série », « Map cards on satellite imagery ») and `handoff.md` (« Renderer integration of 1.4.0 » and of 1.4.1). The engines are `social/video/series*.mjs` (the series video) and `social/video/` (the satellite video: `README.md`, « Plein écran, chunks and areas », « Area files »).
 
 ## Assignment
 
-Add **one rule** to 1.4.1: the signature line at the end of every carousel and every series video. Everything else stays as accepted:
+Add one thing to 1.4.1: a map sequence inside the series video, in which areas and names appear on the word that says them, and which can span several consecutive cards. Everything else in 1.4.1 stays as accepted. The result is 1.5.0-proposition; only the operator accepts it.
 
-- the cards and their 89 references;
-- the series band, on the cards and at y 250 in the video;
-- the full-screen frame and its legibility rule;
-- map cards on satellite imagery;
-- the card change and the cover.
+## The operator's request (15 October 2026)
 
-The result is **1.5.0-proposition**; only the operator accepts it.
+For series 2, episode 1 (« Touareg »), the operator asked that, while the voice names the Tuareg self-names region by region, « on voit les différentes régions apparaître sur la carte à plat », each region « avec une couleur différente », the name appearing when it is said; then the language names appear on the same regions; then, in the summary, the map comes back with the names and languages. Today a series map card (1.4.1) is drawn once, with everything on screen from its first frame; the satellite video (0.4.0) already makes « what a chunk names enter at its first word », but only in its own chained format. The request joins the two.
 
-## The operator's decision (15 October 2026)
+The episode's beats, as approved by the operator, are the test case:
 
-The signature line is:
+1. « Chez les Touaregs, on dit plutôt Imuhagh, Imajeghen ou Imushagh, selon la région. » Regions: Ahaggar and Ajjer (Imuhagh), Aïr (Imajeghen), Adrar des Ifoghas (Imushagh).
+2. « C'est le même mot qu'Amazigh, prononcé selon les parlers de chaque région. » The Amazigh (Berber) area of North Africa appears.
+3. « Leur langue aussi change de nom selon la région : tamahaq, tamajaq ou tamasheq. » The language names appear on the same regions.
+4. Later, after a photograph card: « En résumé… Eux se nomment Imuhagh, Imajeghen ou Imushagh, et leur langue tamahaq, tamajaq ou tamasheq. » The map returns with every name and language.
 
-> Connaître nos noms, décoloniser leur emploi, nous nommer nous-mêmes.
-
-Settled, not to reopen:
-
-1. **Word for word, every time.** The same sentence ends every reel and every carousel of every series, and sits in every account's bio. No card, series or episode changes, shortens or translates it.
-2. **After the series' fixed closing, never in its place.** Each series keeps its own fixed closing (`social-series.md`, « The series »). The signature line comes after it. In series 6, the closing line « L'Afrique n'est pas un seul peuple. Elle peut choisir d'être un seul camp. » speaks of unity and the signature line of names: the two follow each other and must never merge.
-3. **The same look, in the same place, every time.** Its use is recognition through repetition: the reader learns to expect it at the end. A look that changes from series to series defeats that.
-4. **No panel, no veil, no band added to carry it.** In the video it follows the 1.4.0 legibility rule, light letters on a dark outline, like every other text on the image.
-5. **It contains no African name**, so capitals are allowed, under the README's rule on uppercase.
-
-Why this sentence, and its limits, are in the essay (5.6). For the design, three of those limits matter. It is an invitation, not a judgement. It speaks of the **use** of names. It never replaces a series' closing.
+Areas come from sourced files only (`social/video/data/areas/`, built by `areas.mjs` from Natural Earth and the corpus, `kind: "approximate"`); none is drawn by hand.
 
 ## What to design
 
-1. **The order of the ending.** On the carousel's closing card and on the video ending « série », place, top to bottom: the series band; the series' fixed closing, when the series has one as a line; the signature line; the invitation sentence « Cherchez [nom] sur EthniAfrica, lien en profil. »; the site pill; the signature row. Show the three kinds of series closing:
-   1. **A line**: series 5 « La ligne a été tracée par-dessus des gens qui étaient déjà là. »; series 6 « L'Afrique n'est pas un seul peuple. Elle peut choisir d'être un seul camp. »; the series 1 season finale « Un nom change-t-il l'identité d'un peuple ? ».
-   2. **A question to readers**: series 2 « Et chez vous, comment dit-on ? ».
-   3. **No line of its own**: series 3, whose next episode comes from readers' comments; series 4, which ends on the word people use for themselves; series 7.
-2. **The signature line's own look.** One type, size and position, the same on every closing card and every video ending, in Nuit and in Parchemin. It must read as the project's voice, distinct from the series' closing, which is the episode's last word. Measure it: the sentence is 66 characters. Say on how many lines it sits and how it breaks. Recommendation: break after each comma, into three balanced parts, so each line carries one idea.
-3. **What it replaces.** Two texts already speak for the project at the end:
-   1. the closing slogan « Notre objectif : raconter l'origine des noms, avec des sources. », in the title of every series closing card (`handoff.md`, choice 2, left open);
-   2. « L'Afrique à travers ses noms », under the word EthniAfrica in the closing card's signature row.
-
-   Recommendation: the signature line takes the closing slogan's place, and the closing slogan is retired. « L'Afrique à travers ses noms » leaves the closing card, so the ending carries one sentence for the project, not three. Show the closing card with and without « L'Afrique à travers ses noms », and say which reads better.
-
-4. **Space.**
-   1. **Carousel.** The closing card's panel stops at 828 px on a series card. If the fixed closing, the signature line, the invitation sentence and the pill do not fit together, say how the content is split. Recommendation: the fixed closing gets its own card just before the closing card, and the closing card keeps the signature line, the invitation and the pill.
-   2. **Video.** The 1.4.0 ending block runs from y 318 to 820 at most. If everything does not fit, the fixed closing gets its own last content card, entered by the 300 ms change, before the ending. In either case, never shrink a text below its accepted size: split instead.
-5. **Time, in the video.** The ending holds 2.5 s, or until the voice ends plus 0.5 s. The operator decides whether the voice says the signature line. Recommendation: it does, because hearing and reading the same sentence together makes it easier to remember. When it is spoken, the subtitle band stays empty while the line is on screen, so the same words never show twice. Draw the frame at the moment the line is said.
-6. **The feed.** The band sits at y 250 so that the profile grid reads as a series. The ending is not the cover, so nothing changes there. Show the ending at 430 px in the feed, where the apps cover part of the frame, as 1.4.0 already does. Nothing is fitted to the apps' interface (1.4.0 rule).
-7. **Alternative text.** The closing card's alternative text ends with the signature line, word for word.
-8. **No break inside « nous-mêmes ».** The line never breaks at its hyphen; if the browser would break there, the renderer uses a non-breaking hyphen (U+2011) and says so in the handoff.
+1. Entry on the word. How an area and its name enter when the chunk that names them is said, inside a series map card: the 0.4.0 entry (700 ms apart, a name waits until its area is 60 % visible) or a variant; what happens when two names are said in one chunk.
+2. A colour per region. 1.4.1 draws areas certain or hatched in the satellite grammar, by category. The operator asks for one colour per region. Propose a small categorical set for imagery (three to five areas, both themes), its keyline, its legibility on the recede grade, and whether hatching (approximate areas) survives with colour.
+3. Two labels on one area. The self-name first, then the language name on the same region (beat 3): replace, stack, or append (« Imuhagh · tamahaq »), within the six-names limit and the map band.
+4. A map that spans cards. Consecutive map cards on the same view (beats 1 to 3) should not cross-fade the imagery between them; only the overlays and the head change. Say how the head (kicker, title) changes while the map stays.
+5. Return to the map. A later map card on the same view (beat 4) after a photograph card: does it re-enter with everything shown, or replay the entries?
+6. A wider area beside small ones. The Amazigh area (North Africa) is much larger than the Tuareg regions: framing that shows both, or a camera move between the two views within the card (and whether any move is allowed in a series card).
+7. Credits and key. Areas' sources in the foot, in the 1.4.1 style.
 
 ## Deliverables
 
-1. `series.md`: a section « The signature line », with the order of the ending, the line's look, its place in the carousel and the video, and what it replaces.
-2. `README.md`, « Closing »: the closing card's description updated to match.
-3. A handoff section « Renderer integration of 1.5.0 ». The signature line is **one constant** in the renderer, not a card field, so no card can change it. Say what the renderer checks: the line present on every closing card and video ending, identical to the constant, after the fixed closing, inside its band, with no text overlapping it.
-4. Boards, at full size and at 430 px, in Nuit and Parchemin:
-   1. closing cards for series 6 (a line), series 2 (a question) and series 3 (no line);
-   2. a fixed closing given its own card, if item 4 needs one;
-   3. the video endings for series 6 and series 2, including the frame where the voice says the line;
-   4. the ending in the feed at 430 px.
-
-   The texts other than the signature line and the fixed closings are demonstration text.
+1. `series.md`, « Vidéo de série »: a « Map sequence » paragraph.
+2. Boards at full size and at 430 px: the four beats above (Parchemin, series 2), frames at the entry of each name, and the card change from the photograph back to the map.
+3. A handoff section « Renderer integration of 1.5.0 »: the entry timing, the categorical colours, the label rule, the continuity rule across cards, and what the engine checks.
 
 ## Out of scope
 
-- The content cards and their 89 references;
-- the series band;
-- map cards;
-- the cover;
-- every episode's text;
-- the accounts' bios, whose text is fixed by `social-series.md`;
-- the site;
-- publication.
+The carousel cards and their references; the satellite video's own format; the area geometries (built by `areas.mjs`, not designed); the episode's text; the length rule (a 35 to 75 s recommendation since 15 October 2026, not a limit); publication.

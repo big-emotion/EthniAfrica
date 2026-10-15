@@ -4560,6 +4560,8 @@ const OPTIONAL_CONTENT_KEYS: ReadonlySet<string> = new Set([
   "searchAnswer",
   "speakers",
   "originDebated",
+  // What the sources leave unknown (brief 3): most fiches declare none.
+  "gaps",
 ]);
 
 function declaredKeys(value: unknown): Set<string> {

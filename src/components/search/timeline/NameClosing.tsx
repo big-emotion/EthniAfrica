@@ -19,6 +19,7 @@ import {
   type NameHistorySource,
   type NextStepCard,
   type SourceFamilyGroup,
+  traditionReporters,
 } from "@/lib/search/nameClosing";
 
 export type { NextStepCard } from "@/lib/search/nameClosing";
@@ -268,8 +269,14 @@ function FamilyGroups({
                       key={sourceIndex}
                       className="text-afh-caption leading-[1.5] text-afh-text-soft"
                     >
-                      {carrierFirst && source.carrier ? (
-                        <OralSourceLine source={source} language={language} />
+                      {carrierFirst &&
+                      (source.carrier ||
+                        source.source_kind === "oral_tradition") ? (
+                        <OralSourceLine
+                          source={source}
+                          reporters={traditionReporters(account)}
+                          language={language}
+                        />
                       ) : (
                         <>
                           {source.url ? (
@@ -308,17 +315,33 @@ function FamilyGroups({
 
 /**
  * An oral account is identified by who carries it and where, then by who
- * wrote it down (doctrine §1.1, brief 2).
+ * wrote it down (doctrine §1.1, brief 2). A tradition the project reads only
+ * in a written work has no carrier to name: it is named by its narrative,
+ * then by who reports it (brief 4).
  */
 function OralSourceLine({
   source,
+  reporters,
   language,
 }: {
   source: NameHistorySource;
+  /** The works that wrote a carrierless tradition down (brief 4). */
+  reporters: readonly NameHistorySource[];
   language: Language;
 }) {
   const copy = nameClosingCopy[language].fiche;
   const title = source.narrative ?? source.title;
+  // A tradition with no carrier is named by who wrote it down: the account's
+  // written sources when it has some, else the oral source's own reference.
+  const reportedBy = source.carrier
+    ? [copy.reportedBy(source.author, source.year, source.title)]
+    : (reporters.length > 0 ? reporters : [source]).map((reporter) =>
+        copy.traditionsReportedBy(
+          reporter.author,
+          reporter.year,
+          reporter.title
+        )
+      );
   return (
     <>
       {source.url ? (
@@ -333,12 +356,16 @@ function OralSourceLine({
       ) : (
         <span className="font-bold text-afh-text">{title}</span>
       )}
-      {" · "}
-      {copy.carrier(source.carrier, source.place)}
+      {source.carrier ? (
+        <>
+          {" · "}
+          {copy.carrier(source.carrier, source.place)}
+        </>
+      ) : null}
       {" · "}
       {sourceKindLabel(source.source_kind, language)}
       {" · "}
-      {copy.reportedBy(source.author, source.year, source.title)}
+      {reportedBy.join(" ; ")}
     </>
   );
 }

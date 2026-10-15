@@ -7,7 +7,13 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { existsSync, readdirSync, readFileSync } from "node:fs";
-import { AREA_IDS, OUTPUT_DIR, rasterize, traceMask } from "./areas.mjs";
+import {
+  AREA_IDS,
+  OUTPUT_DIR,
+  berberLanguagePoints,
+  rasterize,
+  traceMask,
+} from "./areas.mjs";
 
 const PROPERTY_KEYS = [
   "category",
@@ -24,6 +30,44 @@ const PROPERTY_KEYS = [
 // it must cover and places it must leave out. The boxes catch a leak (an
 // area spilling into Arabia or the ocean); the places catch a wrong rule.
 const EXPECTED = {
+  // Series 2, episode 1 (Cartes 1.5.0): one area per self-name, one per name.
+  "touareg-imuhagh": {
+    category: "people",
+    box: { west: 1, east: 12, south: 20, north: 28 },
+    covers: [
+      [5.5, 23], // Ahaggar
+      [8.5, 25.5], // Tassili n'Ajjer
+    ],
+    excludes: [
+      [8.5, 18.5], // Aïr
+      [1, 20.2], // Tessalit
+    ],
+  },
+  "touareg-imajeghen": {
+    category: "people",
+    box: { west: 6, east: 11, south: 15.5, north: 21.5 },
+    covers: [[8.5, 18.5]],
+    excludes: [[5.5, 23]],
+  },
+  "touareg-imushagh": {
+    category: "people",
+    box: { west: -1, east: 3, south: 19, north: 21.5 },
+    covers: [[1, 20.2]],
+    excludes: [[8.5, 18.5]],
+  },
+  amazigh: {
+    category: "people",
+    box: { west: -18, east: 27, south: 12, north: 38 },
+    covers: [
+      [4.76, 36.41], // Kabyle
+      [25.5, 29.2], // Siwi
+      [-2.41, 14.2], // Tamasheq
+    ],
+    excludes: [
+      [31.2, 30], // Cairo
+      [8.8, 11.2], // Hausaland
+    ],
+  },
   sahara: {
     category: "region",
     box: { west: -18, east: 40, south: 9, north: 35 },
@@ -194,6 +238,53 @@ test("a polygon with a hole is rasterized and traced back with its hole", () => 
   assert.ok(!covers(geometry, [10, 10]), "the hole stays a hole");
   assert.ok(!covers(geometry, [19, 19]));
   assert.equal(selfCrossings(geometry), 0);
+});
+
+// @req REQ-186
+test("exteriorOnly keeps the outer ring and drops every hole", () => {
+  const mask = rasterize(SMALL_GRID, {
+    type: "Polygon",
+    coordinates: [square(2, 2, 18, 18), square(8, 8, 12, 12)],
+  });
+  const geometry = traceMask(SMALL_GRID, mask, {
+    tolerance: 0.1,
+    minPartKm2: 0,
+    exteriorOnly: true,
+  });
+  assert.equal(geometry.type, "Polygon");
+  assert.equal(geometry.coordinates.length, 1, "one ring, no hole");
+  assert.ok(covers(geometry, [10, 10]), "the hole is filled");
+});
+
+// @req REQ-186
+test("Glottolog's living Berber languages are kept, extinct ones and dialects left out", () => {
+  const languages = [
+    "ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,Level,Countries,Family_ID,Language_ID,Closest_ISO369P3code,First_Year_Of_Documentation,Last_Year_Of_Documentation,Is_Isolate",
+    "kaby1243,Kabyle,Africa,36.4103,4.76137,kaby1243,kab,language,DZ,afro1255,,kab,,,false",
+    "guan1277,Guanche,Africa,28.2,-16.5,guan1277,gnc,language,ES,afro1255,,gnc,,,false",
+    "less1241,Lesser Kabylian,Africa,36.5,5.1,less1241,,dialect,DZ,afro1255,kaby1243,,,,false",
+    "haus1257,Hausa,Africa,11.2,8.8,haus1257,hau,language,NG,afro1255,,hau,,,false",
+    'tama1365,"Tamasheq, Mali",Africa,14.2038,-2.41269,tama1365,taq,language,BF;ML,afro1255,,taq,,,false',
+  ].join("\n");
+  const values = [
+    "ID,Language_ID,Parameter_ID,Value,Code_ID,Comment,Source,codeReference",
+    "kaby1243-classification,kaby1243,classification,afro1255/berb1260/kaby1244,,,,",
+    "kaby1243-aes,kaby1243,aes,2,aes-threatened,Vulnerable,550905,",
+    "guan1277-classification,guan1277,classification,afro1255/berb1260/unun9880,,,,",
+    "guan1277-aes,guan1277,aes,6,aes-extinct,Extinct,1,",
+    "less1241-classification,less1241,classification,afro1255/berb1260/kaby1244/kaby1243,,,,",
+    "haus1257-classification,haus1257,classification,afro1255/chad1250/west2718,,,,",
+    'tama1365-classification,tama1365,classification,afro1255/berb1260/tuar1240/sout3263,,"a, quoted comma",,',
+    "tama1365-aes,tama1365,aes,1,aes-not_endangered,,1,",
+  ].join("\n");
+  assert.deepEqual(berberLanguagePoints(languages, values), [
+    { glottocode: "kaby1243", name: "Kabyle", point: [4.76137, 36.4103] },
+    {
+      glottocode: "tama1365",
+      name: "Tamasheq, Mali",
+      point: [-2.41269, 14.2038],
+    },
+  ]);
 });
 
 // @req REQ-186
