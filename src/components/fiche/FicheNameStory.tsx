@@ -35,6 +35,11 @@ export interface FicheNameStoryProps {
   caution?: string;
   /** Drawn after the forms, inside the chapter (the competing readings, brief 3). */
   children?: ReactNode;
+  /**
+   * The competing readings of a name, folded under its row (brief 5, boards
+   * country-*.dc.html), keyed by the form they explain.
+   */
+  foldedReadings?: ReadonlyMap<string, { count: number; node: ReactNode }>;
 }
 
 function cutAtWord(sentence: string): string {
@@ -57,9 +62,11 @@ function tagsOf(form: NamingPresentationForm, language: Language): string[] {
 function FormRow({
   form,
   language,
+  folded,
 }: {
   form: NamingPresentationForm;
   language: Language;
+  folded?: { count: number; node: ReactNode };
 }) {
   const words = ficheNameStoryCopy[language];
   const tags = tagsOf(form, language);
@@ -71,6 +78,38 @@ function FormRow({
   ]
     .filter(Boolean)
     .join(" ");
+
+  if (folded) {
+    return (
+      <li
+        className="fiche-name-story__form"
+        data-testid="name-story-form"
+        data-form={form.form}
+      >
+        <details data-form-readings="" className="group/readings">
+          <summary className="flex min-h-[44px] cursor-pointer list-none items-center gap-afh-md [&::-webkit-details-marker]:hidden">
+            <span className="fiche-name-story__name">{form.form}</span>
+            <span className="ml-auto whitespace-nowrap font-afh-mono text-afh-caption text-afh-text-soft">
+              {words.explanations(folded.count)}
+            </span>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+              className="size-4 flex-none text-afh-text-soft motion-safe:transition-transform group-open/readings:rotate-180"
+            >
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </summary>
+          {folded.node}
+        </details>
+      </li>
+    );
+  }
 
   return (
     <li
@@ -118,6 +157,7 @@ export function FicheNameStory({
   chapter = false,
   caution,
   children,
+  foldedReadings,
 }: FicheNameStoryProps) {
   const words = ficheNameStoryCopy[language];
   const origin = naming.origin?.trim();
@@ -167,7 +207,12 @@ export function FicheNameStory({
       {forms.length > 0 ? (
         <ul className="fiche-name-story__forms">
           {visible.map((form) => (
-            <FormRow key={form.form} form={form} language={language} />
+            <FormRow
+              key={form.form}
+              form={form}
+              language={language}
+              folded={foldedReadings?.get(form.form)}
+            />
           ))}
         </ul>
       ) : null}
@@ -176,7 +221,12 @@ export function FicheNameStory({
           <summary>{words.moreForms(hidden.length)}</summary>
           <ul className="fiche-name-story__forms">
             {hidden.map((form) => (
-              <FormRow key={form.form} form={form} language={language} />
+              <FormRow
+                key={form.form}
+                form={form}
+                language={language}
+                folded={foldedReadings?.get(form.form)}
+              />
             ))}
           </ul>
         </details>

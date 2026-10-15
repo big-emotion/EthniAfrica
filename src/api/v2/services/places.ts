@@ -88,6 +88,39 @@ export async function listPlaces(
   };
 }
 
+/**
+ * A country's places, A to Z, each with the summary of its name history
+ * (brief 5): the next step of a country fiche offers the first that has one.
+ */
+// @req REQ-198
+export async function listPlacesOfCountry(
+  countryId: string
+): Promise<Array<{ id: string; nameMain: string; summary: string | null }>> {
+  const { data, error } = await createServerClient()
+    .from("afrik_places")
+    .select("id, name_main, name_summary:name_history->>summary")
+    .eq("country_id", countryId)
+    .order("name_main");
+
+  if (error) {
+    logger.error(`Error listing the places of ${countryId}`, error);
+    throw error;
+  }
+
+  return (data ?? []).map((row) => {
+    const named = row as unknown as {
+      id: string;
+      name_main: string;
+      name_summary: string | null;
+    };
+    return {
+      id: named.id,
+      nameMain: named.name_main,
+      summary: named.name_summary ?? null,
+    };
+  });
+}
+
 // @req REQ-196
 export async function getPlaceById(id: string): Promise<PlaceRecord | null> {
   const supabase = createServerClient();

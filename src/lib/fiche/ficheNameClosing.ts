@@ -107,6 +107,33 @@ export function ficheSilences(
   return lines;
 }
 
+/**
+ * One line for each name whose competing readings carry no date at all
+ * (brief 5, boards country-*.dc.html): « Les trois explications du nom Côte
+ * de Quaqua ne sont pas datées. » Drawn on the country fiche only, the one
+ * whose boards carry it.
+ */
+// @req REQ-198
+export function undatedReadingsSilences(
+  history: NameHistory,
+  language: Language = "fr"
+): string[] {
+  const copy = nameClosingCopy[language].fiche;
+  return history.names.flatMap((name) => {
+    const groups = new Map<string, number[]>();
+    for (const account of name.accounts) {
+      if (!account.hypothesisGroup) continue;
+      groups.set(account.hypothesisGroup, [
+        ...(groups.get(account.hypothesisGroup) ?? []),
+        account.period.from ?? Number.NaN,
+      ]);
+    }
+    return [...groups.values()]
+      .filter((dates) => dates.length > 1 && dates.every(Number.isNaN))
+      .map((dates) => copy.undatedReadings(dates.length, name.nameText));
+  });
+}
+
 /** A name the fiche links, with the summary of its own fiche when it has one. */
 export interface FicheNextCandidate {
   kind: string;

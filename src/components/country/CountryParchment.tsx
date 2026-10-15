@@ -17,7 +17,22 @@ import { countryChronology } from "@/lib/fiche/chronology";
 import { FicheAmendBand } from "@/components/fiche/FicheAmendBand";
 import { FicheTile } from "@/components/fiche/FicheTile";
 import { FicheNameStory } from "@/components/fiche/FicheNameStory";
-import { readNaming } from "@/lib/search/naming";
+import { readNaming, type NamingPresentationForm } from "@/lib/search/naming";
+import {
+  competingReadings,
+  FicheNameReadings,
+} from "@/components/fiche/FicheNameReadings";
+import {
+  NameClosingBand,
+  NameFicheSourcesBlock,
+} from "@/components/search/timeline/NameClosing";
+import {
+  ficheSilences,
+  undatedReadingsSilences,
+} from "@/lib/fiche/ficheNameClosing";
+import type { SharedName } from "@/lib/fiche/countryNextSteps";
+import { shortSourceName } from "@/lib/countryDataTransformer";
+import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
 import { splitLeadSentence } from "@/lib/fiche/prose";
 import { chapterAnchorId } from "@/lib/ficheChapters";
 import type { ProvenanceState } from "@/lib/fieldProvenance";
@@ -64,6 +79,11 @@ export interface CountryParchmentProps {
    * render of it to an empty div — see `FicheJsonLd`.
    */
   onward?: ReactNode;
+  /**
+   * Another country bearing the same name (brief 5), resolved by the route
+   * from every country's first name. Absent, no note.
+   */
+  sharedName?: SharedName | null;
 }
 
 // @req REQ-115
@@ -78,8 +98,66 @@ export function CountryParchment({
   provenance = null,
   children,
   onward,
+  sharedName = null,
 }: CountryParchmentProps) {
   const copy = countryCopy[language];
+  // Brief 5 (boards country-*.dc.html): with a name history, the rows of the
+  // name story are its names, a name with competing readings folds them under
+  // its row, and the fiche closes on its silences instead of the amend band.
+  const history =
+    country.nameHistory && country.nameHistory.names.length > 0
+      ? country.nameHistory
+      : null;
+  const baseNaming = readNaming(
+    "country",
+    { historicalNames: country.historicalNames },
+    {
+      etymology: country.etymology,
+      nameOriginActor: country.nameOriginActor,
+    }
+  );
+  const naming = history
+    ? {
+        ...baseNaming,
+        presentation: {
+          ...baseNaming.presentation,
+          forms: history.names.map((name): NamingPresentationForm => ({
+            form: name.nameText,
+            selfGiven: null,
+            attestations: [],
+            evidence: [],
+          })),
+        },
+      }
+    : baseNaming;
+  const foldedReadings = new Map(
+    (history?.names ?? []).flatMap((name) => {
+      const [group] = competingReadings(name);
+      return group
+        ? [
+            [
+              name.nameText,
+              {
+                count: group[1].length,
+                node: (
+                  <FicheNameReadings
+                    history={history}
+                    nameText={name.nameText}
+                    language={language}
+                  />
+                ),
+              },
+            ] as const,
+          ]
+        : [];
+    })
+  );
+  const silences = history
+    ? [
+        ...ficheSilences(history, "country", language),
+        ...undatedReadingsSilences(history, language),
+      ]
+    : [];
   const languageReferences = languages ?? country.culture?.mainLanguages ?? [];
   const hasPeoples =
     data.peoples.rows.length > 0 ||
@@ -94,6 +172,7 @@ export function CountryParchment({
         ? {
             value: country.demographics.totalPopulation,
             referenceYear: country.demographics.referenceYear,
+            source: shortSourceName(country.demographics.source),
           }
         : null,
     peoples: country.demographics?.peoples?.length,
@@ -115,16 +194,23 @@ export function CountryParchment({
           </div>
         ) : null}
         <FicheNameStory
-          naming={readNaming(
-            "country",
-            { historicalNames: country.historicalNames },
-            {
-              etymology: country.etymology,
-              nameOriginActor: country.nameOriginActor,
-            }
-          )}
+          naming={naming}
+          foldedReadings={foldedReadings}
           language={language}
-        />
+        >
+          {sharedName ? (
+            <p
+              data-shared-name=""
+              className="mt-afh-lg border-l-2 border-afh-border pl-afh-lg text-afh-small leading-[1.6] text-afh-text-soft"
+            >
+              {copy.summary.sharedName(
+                sharedName.name,
+                sharedName.self,
+                sharedName.other
+              )}
+            </p>
+          ) : null}
+        </FicheNameStory>
         <FicheSummaryBrief
           kind="country"
           entityId={country.id}
@@ -145,6 +231,14 @@ export function CountryParchment({
           </FicheTile>
         ) : null}
       </Section>
+
+      {history ? (
+        <NameFicheSourcesBlock
+          history={history}
+          subjectType="country"
+          language={language}
+        />
+      ) : null}
 
       <Section title={copy.sections.peoples}>
         {!hasPeoples ? (
@@ -200,7 +294,21 @@ export function CountryParchment({
       {/* After the chapters, before the way onward: the reader who has just
           finished a thin chapter is the one who knows what is missing from
           it, and asking once they have gone is asking nobody. */}
-      <FicheAmendBand language={language} />
+      {history ? (
+        <NameClosingBand
+          silences={silences}
+          contributionTarget={{
+            type: "country",
+            id: country.id,
+            name: country.nameCommonFr || country.nameFr,
+            fieldPath: "naming",
+            fieldLabel: nameAnswerCopy[language].appellations,
+          }}
+          language={language}
+        />
+      ) : (
+        <FicheAmendBand language={language} />
+      )}
 
       {/* Before the bibliography, not after it: the reader this block exists
           for is the one who finished the reading, and almost none of them
