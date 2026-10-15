@@ -4581,3 +4581,17 @@ svg { display: block; }
   overflow-wrap: anywhere;
 }
 .ea-voice-person > .ea-voice-body > .ea-voice { background: var(--afh-bg); }
+
+/* ============================================================
+   Brief 3 (2026-10-15): the language fiche. The competing
+   readings of a name sit side by side from 768 px; the note that
+   a language and a people are different things. New selectors.
+   ============================================================ */
+.ea-readings { display: flex; flex-direction: column; gap: var(--afh-space-lg); margin-top: var(--afh-space-2xl); }
+.ea-readings-grid { display: grid; grid-template-columns: 1fr; gap: var(--afh-space-2xl); }
+@media (min-width: 768px) { .ea-readings-grid { grid-template-columns: 1fr 1fr; } }
+.ea-shared-name {
+  margin-top: var(--afh-space-lg); padding-left: var(--afh-space-lg);
+  border-left: 2px solid var(--afh-border);
+  font-size: var(--afh-text-small); line-height: 1.6; color: var(--afh-text-soft);
+}
