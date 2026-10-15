@@ -22,6 +22,7 @@ import {
   planMapSequences,
   mapRunState,
   runOfCard,
+  wordOf,
 } from "./series-sequence.mjs";
 
 // The full-screen bands in frame pixels (series.md and handoff.md,
@@ -85,6 +86,26 @@ export const searchSentence = (name) => [
   `Cherchez ${name} sur EthniAfrica,`,
   "lien en profil.",
 ];
+// 1.7.0 (series.md, « Vidéo longue et chapitres »): the general invitation
+// names nothing and leads to the search page.
+export const GENERAL_SENTENCE = [
+  "Vous aussi, cherchez votre nom sur EthniAfrica,",
+  "lien en profil.",
+];
+// A video over 90 s is long: 3 to 7 chapters of 15 s at least, 2 to 4 min
+// recommended. Lengths only warn; a missing chapter refuses.
+const LONG = {
+  from: 90,
+  chapters: [3, 7],
+  minChapter: 15,
+  length: [120, 240],
+};
+// The reading speed of everything printed in 1.7.0 (titles, items), and a
+// chapter card's least full-opacity span, 1.2 s.
+const READ_CPS = 21;
+const CHAPTER_HOLD = 36;
+const REMINDER = [75, 120];
+const SOURCE_LABELS = ["Source", "Sources", "Hypothèses"];
 
 // `input.cards` is the cards JSON (the carousel's), resolved from `dir`.
 export function loadSeriesVideo(input, { dir = "." } = {}) {
@@ -109,8 +130,28 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
   const beats = input.beats;
   if (!Array.isArray(beats) || beats.length < 2)
     fail("A series video has an opener, a closing card and the cards between");
+  // 1.7.0: a long video's chapters. A chapter card is a beat of the sequence,
+  // not a card of the deck: it has no chunks, and its title is the script's.
+  const chapters = input.chapters ?? [];
   const seen = new Set();
-  const cards = beats.map((beat, i) => {
+  const entries = beats.map((beat, i) => {
+    if (beat.type === "chapter") {
+      const n = beat.chapter;
+      const title =
+        chapters[n - 1]?.title ??
+        fail(`Beat ${i + 1}: chapter ${n} has no title in chapters`);
+      if (beat.chunks?.length)
+        fail(`Chapter ${n}: a chapter card is not voiced; the voice is silent`);
+      return {
+        card: {
+          id: `chapitre-${n}`,
+          type: "chapter",
+          chapter: { n, of: chapters.length, title },
+          ...(beat.image && { image: structuredClone(beat.image) }),
+        },
+        chunks: [],
+      };
+    }
     const card = deck.cards.find((c) => c.id === beat.card);
     if (!card) fail(`Beat ${i + 1}: no card ${beat.card} in ${input.cards}`);
     if (seen.has(card.id))
@@ -126,11 +167,17 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
       fail(`Card ${card.id} still shows « image à trouver »`);
     // A map card is drawn on satellite imagery; an atlas card is refused.
     if (card.type === "map") checkSeriesMapCard(card);
-    return structuredClone(card);
+    checkLongCardFields(card);
+    return { card: structuredClone(card), chunks: beat.chunks };
   });
-  if (cards[0].type !== "opener")
+  const numbers = entries.flatMap((e) =>
+    e.card.type === "chapter" ? [e.card.chapter.n] : []
+  );
+  if (numbers.some((n, i) => n !== i + 1) || numbers.length !== chapters.length)
+    fail("The chapter cards are numbered 1 to N, once each, in order");
+  if (entries[0].card.type !== "opener")
     fail("A series video opens on its opener card");
-  if (cards.at(-1).type !== "closing")
+  if (entries.at(-1).card.type !== "closing")
     fail("A series video ends on its closing card");
   const key = (c) =>
     JSON.stringify([
@@ -138,22 +185,37 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
       c.series?.episode,
       c.theme ?? "nuit",
     ]);
-  if (!cards[0].series) fail("A series video's cards carry the series band");
-  if (cards.some((c) => key(c) !== key(cards[0])))
+  const first = entries[0].card;
+  if (!first.series) fail("A series video's cards carry the series band");
+  // A silent card (chapter, next episode) shows the band and theme of the
+  // episode, and by default the image of the card after it: a run of one
+  // image, where only the head changes.
+  const silent = (card, next) => {
+    card.series = structuredClone(first.series);
+    if (first.theme) card.theme = first.theme;
+    if (!card.image && next.image) {
+      card.image = structuredClone(next.image);
+      if (next.credit) card.credit = next.credit;
+    }
+  };
+  entries.forEach((e, i) => {
+    if (e.card.type === "chapter") silent(e.card, entries[i + 1].card);
+  });
+  if (entries.some((e) => key(e.card) !== key(first)))
     fail("A series video shows one series, one episode and one theme");
 
   // The « série » ending (operator, decision 5 of 13 October 2026): it asks
-  // for a search, so like ending A it promises a page that must exist.
+  // for a search, so like ending A it promises a page that must exist. Since
+  // 1.7.0 it may instead invite every viewer to search their own name.
   const ending = input.ending;
   if (ending?.pageOnline !== true)
     fail("The « série » ending promises a page: it needs pageOnline: true");
-  if (typeof ending.search !== "string" || !ending.search.trim())
+  const general = ending.general === true;
+  if (!general && (typeof ending.search !== "string" || !ending.search.trim()))
     fail("The « série » ending names what to search");
-  const closing = beats
-    .at(-1)
-    .chunks.slice(-2)
-    .map((c) => c.text);
-  const expected = searchSentence(ending.search);
+  const expected = general ? GENERAL_SENTENCE : searchSentence(ending.search);
+  const closingChunks = entries.at(-1).chunks;
+  const closing = closingChunks.slice(-2).map((c) => c.text);
   const spaces = (t) => t.replace(/\s+/gu, " ");
   if (
     closing.length !== 2 ||
@@ -164,7 +226,7 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
   // line per chunk, before the search sentence. The line is the accepted
   // design's (version.json), the same text the cards' bundle draws.
   const signature = version.signatureLine.split(/(?<=,) /u);
-  const said = beats.at(-1).chunks.map((c) => spaces(c.text));
+  const said = closingChunks.map((c) => spaces(c.text));
   if (
     said.length !== signature.length + 2 ||
     signature.some((t, i) => said[i] !== t)
@@ -172,20 +234,28 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     fail(
       `La ligne de signature n'est pas dite mot pour mot : la carte de clôture dit « ${signature.join(" ")} », puis la phrase de recherche`
     );
-  // The searched name never breaks across the two subtitle lines, as the
-  // design's ending board shows it: its spaces are set unbreakable.
-  const unbreakable = searchSentence(ending.search.replace(/\s+/gu, " "));
-  const firstClosing = beats.at(-1).chunks.length - 2;
-  const shown = (c, card, k) =>
-    card === beats.length - 1 && k >= firstClosing
-      ? unbreakable[k - firstClosing]
-      : c.text;
-
-  const texts = beats.flatMap((b) => b.chunks.map((c) => c.text));
-  const chunks = beats.flatMap((beat, card) =>
-    beat.chunks.map((c, k) => {
-      const text = shown(c, card, k);
-      const lines = chunkLines(text);
+  // 1.7.0: the next episode, printed under the pill after the named
+  // invitation (one line, measured on « Afrique »); after the general one,
+  // which takes two lines, on a silent card of its own before the ending.
+  if (typeof ending.next === "string" && ending.next.trim()) {
+    const closingCard = entries.at(-1).card;
+    if (general) {
+      const own = { id: "prochain-episode", type: "next", title: ending.next };
+      silent(own, closingCard);
+      entries.splice(-1, 0, { card: own, chunks: [] });
+    } else closingCard.next = ending.next;
+  }
+  const last = entries.length - 1;
+  const cards = entries.map((e) => e.card);
+  const texts = entries.flatMap((e) => e.chunks.map((c) => c.text));
+  const chunks = entries.flatMap((entry, card) =>
+    entry.chunks.map(({ text }) => {
+      // 1.6.0: the ending prints the line and the invitation itself, so the
+      // closing card's chunks are voiced but never shown as subtitles; the
+      // subtitle rules (3 to 6 words, 900 px, reading speed) do not apply
+      // to them. The general invitation's first chunk has 7 words (1.7.0).
+      const hidden = card === last;
+      const lines = hidden ? [] : chunkLines(text);
       for (const line of lines) {
         const text = line.map((r) => r.text).join("");
         if (subtitleLineWidth(text) > LAYOUT.subtitle.maxLineWidth)
@@ -193,9 +263,7 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
             `« ${text} » is wider than 900 px: a series subtitle line holds 900 px`
           );
       }
-      // 1.6.0: the ending prints the line and the invitation itself, so the
-      // closing card's chunks are voiced but never shown as subtitles.
-      return { text, card, lines, hidden: card === beats.length - 1 };
+      return { text, card, lines, hidden };
     })
   );
   if (!input.voice) fail("A series video is spoken: it needs a voice");
@@ -206,15 +274,46 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     cardsFile,
     logo: deck.logo,
     cards,
-    band: { ...cards[0].series },
-    ending: { search: ending.search, pageOnline: true },
+    band: { ...first.series },
+    ending: {
+      ...(general ? { general: true } : { search: ending.search }),
+      pageOnline: true,
+      ...(ending.next && { next: ending.next }),
+    },
     voice,
     chunks,
   };
   schedule(seq, voice.chunks);
   // 1.5.0: consecutive map cards of one `map.sequence` share one map.
   seq.mapSequence = planMapSequences(seq, IMAGERY[MAP_IMAGERY]);
+  planLongVideo(seq, input);
   return seq;
+}
+
+// 1.7.0: what a video card may carry, checked before anything is timed.
+function checkLongCardFields(card) {
+  const id = card.id;
+  if (
+    card.sourceLabel !== undefined &&
+    !SOURCE_LABELS.includes(card.sourceLabel)
+  )
+    fail(
+      `Card ${id}: sourceLabel « ${card.sourceLabel} » is one of ${SOURCE_LABELS.join(", ")}`
+    );
+  if (typeof card.source === "string" && /^\p{L}+\s*:/u.test(card.source))
+    fail(
+      `Card ${id}: Le champ source porte déjà son étiquette (« ${card.source.split(":")[0]} : »); use sourceLabel`
+    );
+  if (card.signed && card.source)
+    fail(`Card ${id}: Une carte signée ne porte pas de source`);
+  if (!card.signed && card.kicker === "Nous pensons" && card.source)
+    fail(`Card ${id}: « Nous pensons » sur une carte sourcée`);
+  const readings = card.readings?.items;
+  if (readings && (readings.length < 1 || readings.length > 5))
+    fail(`Card ${id}: une liste tient cinq lectures au plus`);
+  const figures = card.figures?.items;
+  if (figures && (figures.length < 3 || figures.length > 4))
+    fail(`Card ${id}: une carte de chiffres en tient trois ou quatre`);
 }
 
 function schedule(seq, words) {
@@ -229,13 +328,22 @@ function schedule(seq, words) {
   const fastChunks = [];
   chunks.forEach((chunk, k) => {
     const next = chunks[k + 1];
+    // 1.7.0: before a silent card (a chapter, the next episode) the last
+    // chunk leaves after its last word, so the silence shows no subtitle.
+    const silenceAfter = next && next.card - chunk.card > 1;
     chunk.fullFrom = k ? chunk.appear : chunk.appear + VOICE.fade;
-    chunk.fullTo = next
-      ? next.appear
-      : Math.max(chunk.fullFrom, toFrame(chunk.words.at(-1).end + VOICE.hold));
-    chunk.gone = next ? next.appear : chunk.fullTo + VOICE.fade;
+    chunk.fullTo =
+      next && !silenceAfter
+        ? next.appear
+        : Math.max(
+            chunk.fullFrom,
+            toFrame(chunk.words.at(-1).end + VOICE.hold)
+          );
+    chunk.gone =
+      next && !silenceAfter ? next.appear : chunk.fullTo + VOICE.fade;
     const framesFor = (cps) =>
       Math.ceil((subtitleCharacters(chunk.text) / cps) * FPS - 1e-9);
+    if (chunk.hidden) return; // voiced, never read as a subtitle
     const shown = chunk.gone - chunk.appear;
     if (shown < framesFor(VOICE.maxCps))
       fail(
@@ -244,14 +352,39 @@ function schedule(seq, words) {
     if (shown < framesFor(VOICE.recommendedCps)) fastChunks.push(chunk.text);
   });
   // A card is fully in when its first chunk appears; the cross-fade that
-  // brings it in takes the 300 ms before.
-  seq.cardStarts = seq.cards.map((_, i) =>
-    i ? chunks.find((c) => c.card === i).appear : 0
-  );
+  // brings it in takes the 300 ms before. A silent card is fully in when the
+  // last chunk before it has gone.
+  const isSilent = (c) => c.type === "chapter" || c.type === "next";
+  seq.cardStarts = [];
+  seq.cards.forEach((card, i) => {
+    if (!i) return seq.cardStarts.push(0);
+    if (!isSilent(card))
+      return seq.cardStarts.push(chunks.find((c) => c.card === i).appear);
+    const before = chunks.findLast((c) => c.card < i);
+    seq.cardStarts.push(
+      Math.max(before.gone, seq.cardStarts[i - 1] + CROSS_FADE)
+    );
+  });
   seq.cardStarts.forEach((start, i) => {
     if (i && start - CROSS_FADE < seq.cardStarts[i - 1])
       fail(
         `Card ${seq.cards[i].id} comes before the cross-fade into the card before it ends`
+      );
+  });
+  // The silent card holds at full opacity until the next card's change
+  // begins: long enough to read its title at 21 characters a second plus
+  // 0.3 s, and a chapter card 1.2 s at least.
+  seq.cards.forEach((card, i) => {
+    if (!isSilent(card)) return;
+    const title = card.type === "chapter" ? card.chapter.title : card.title;
+    const need = Math.max(
+      card.type === "chapter" ? CHAPTER_HOLD : 0,
+      Math.ceil(([...title].length / READ_CPS + 0.3) * FPS - 1e-9)
+    );
+    const full = seq.cardStarts[i + 1] - CROSS_FADE - seq.cardStarts[i];
+    if (full < need)
+      fail(
+        `${card.type === "chapter" ? `Chapitre ${card.chapter.n}` : "Prochain épisode"} : le silence est trop court de ${Math.ceil(((need - full) * 1000) / FPS)} ms; the voice script lengthens the pause`
       );
   });
   const voiceEnd = Math.ceil((seq.voice.duration + VOICE.tail) * FPS - 1e-9);
@@ -260,16 +393,111 @@ function schedule(seq, words) {
     voiceEnd,
     chunks.at(-1).gone
   );
-  const seconds = seq.frames / FPS;
   seq.warnings = [];
   if (fastChunks.length)
     seq.warnings.push(
       `${fastChunks.length} chunk(s) read faster than the recommended ${VOICE.recommendedCps} characters a second: ${fastChunks.map((t) => `« ${t} »`).join(", ")}`
     );
-  if (seconds < RECOMMENDED_LENGTH[0] || seconds > RECOMMENDED_LENGTH[1])
-    seq.warnings.push(
-      `A series video's recommended length is ${RECOMMENDED_LENGTH[0]} to ${RECOMMENDED_LENGTH[1]} s; this one lasts ${seconds.toFixed(1)} s`
+}
+
+// 1.7.0, after the schedule: the length and its chapters, the chapter kicker,
+// items entering on their word, the reminder, the signed position and the
+// runs of one image.
+function planLongVideo(seq, input) {
+  const seconds = seq.frames / FPS;
+  const chapterCards = seq.cards.flatMap((c, i) =>
+    c.type === "chapter" ? [i] : []
+  );
+  const chaptered = chapterCards.length > 0;
+  if (
+    seconds > LONG.from &&
+    (chapterCards.length < LONG.chapters[0] ||
+      chapterCards.length > LONG.chapters[1])
+  )
+    fail(
+      `Vidéo longue sans chapitres: ${seconds.toFixed(1)} s needs ${LONG.chapters[0]} to ${LONG.chapters[1]} chapters, it has ${chapterCards.length}`
     );
+  const ending = seq.cards.length - 1;
+  chapterCards.forEach((i, k) => {
+    const end = seq.cardStarts[chapterCards[k + 1] ?? ending];
+    const span = (end - seq.cardStarts[i]) / FPS;
+    if (span < LONG.minChapter)
+      fail(
+        `Chapitre ${seq.cards[i].chapter.n} dure ${span.toFixed(1)} s : ${LONG.minChapter} s au moins`
+      );
+  });
+  const [low, high] = chaptered ? LONG.length : RECOMMENDED_LENGTH;
+  if (seconds < low || seconds > high)
+    seq.warnings.push(
+      chaptered
+        ? `A long video's recommended length is 2 to 4 min; this one lasts ${seconds.toFixed(1)} s`
+        : `A series video's recommended length is ${low} to ${high} s; this one lasts ${seconds.toFixed(1)} s`
+    );
+
+  // The chapter kicker, composed for the video only: the card's own kicker
+  // stays for the carousel. A dated card keeps its marker label.
+  let chapter = null;
+  seq.cards.forEach((card, i) => {
+    if (card.type === "chapter") chapter = card.chapter;
+    if (["opener", "closing", "chapter", "next"].includes(card.type)) return;
+    if (card.signed) card.videoKicker = "Nous pensons";
+    else if (chapter && !card.date)
+      card.videoKicker = `${chapter.n} · ${chapter.title}`;
+    // Items and the quoted person enter on the word that says them, and the
+    // card holds long enough to read its items at 21 characters a second.
+    const items = card.readings?.items ?? card.figures?.items;
+    if (items) {
+      card.itemFrames = items.map((it) => wordOf(seq, i, it.say).frame);
+      const characters = items
+        .flatMap((it) => [it.label, it.text, it.by, it.pre, it.value, it.unit])
+        .filter(Boolean)
+        .reduce((n, t) => n + [...t].length, 0);
+      const need = Math.ceil((characters / READ_CPS) * FPS - 1e-9);
+      const end = seq.cardStarts[i + 1] ?? seq.frames;
+      if (end - seq.cardStarts[i] < need)
+        fail(
+          `Card ${card.id}: ses éléments demandent ${Math.ceil(((need - (end - seq.cardStarts[i])) * 1000) / FPS)} ms de plus à ${READ_CPS} caractères par seconde`
+        );
+    }
+    if (card.attribution)
+      card.attributionFrame = wordOf(seq, i, card.attribution.say).frame;
+  });
+
+  // The hook reminder shows the opener's image and framing again.
+  if (input.reminder) {
+    const i = seq.cards.findIndex((c) => c.id === input.reminder);
+    if (i < 0)
+      fail(`The reminder names no card of the video: ${input.reminder}`);
+    const frame = (c) =>
+      JSON.stringify([c.image?.src, c.image?.focus, c.image?.video]);
+    if (frame(seq.cards[i]) !== frame(seq.cards[0]))
+      fail(
+        `Le rappel ne montre pas l'image d'ouverture: ${input.reminder} shows another image or framing`
+      );
+    const at = seq.cardStarts[i] / FPS;
+    seq.reminder = { card: input.reminder, seconds: +at.toFixed(2) };
+    if (at < REMINDER[0] || at > REMINDER[1])
+      seq.warnings.push(
+        `Le rappel tombe à ${at.toFixed(1)} s, hors de la fenêtre entre ${REMINDER[0]} et ${REMINDER[1]} s`
+      );
+  }
+  if (!seq.cards.some((c) => c.signed))
+    seq.warnings.push(
+      "Aucune carte signée : chaque vidéo porte une part de la position signée (décision 4)"
+    );
+
+  // Runs of one image: consecutive cards on one image file and framing
+  // change their heads only, under one zoom over the whole run.
+  const image = (c) =>
+    c.image && c.type !== "closing" && c.type !== "map"
+      ? JSON.stringify([c.image.src, c.image.focus, c.image.video])
+      : null;
+  let run = -1;
+  seq.imageRuns = seq.cards.map((c, i) => {
+    const same = i && image(c) && image(c) === image(seq.cards[i - 1]);
+    if (!same) run = image(c) ? run + 1 : run;
+    return image(c) ? run : -1;
+  });
 }
 
 export const seriesFrameCount = (seq) => seq.frames;
@@ -281,9 +509,18 @@ export function seriesFrameState(seq, frame) {
   // The card on screen alone, or the one under a cross-fade.
   let current = 0;
   while (current + 1 < starts.length && frame >= starts[current + 1]) current++;
+  // 1.7.0: a run of one image zooms once, from its first card's first frame
+  // to its last card's end.
+  const imageRun = (i) => seq.imageRuns?.[i] ?? -1;
   const zoom = (i) => {
-    const from = i ? starts[i] - CROSS_FADE + 1 : 0; // first frame drawn
-    const to = i + 1 < starts.length ? starts[i + 1] - 1 : null;
+    let a = i;
+    let b = i;
+    if (imageRun(i) >= 0) {
+      while (a > 0 && imageRun(a - 1) === imageRun(i)) a--;
+      while (b + 1 < starts.length && imageRun(b + 1) === imageRun(i)) b++;
+    }
+    const from = a ? starts[a] - CROSS_FADE + 1 : 0; // first frame drawn
+    const to = b + 1 < starts.length ? starts[b + 1] - 1 : null;
     if (to === null) return 1; // the ending shows no photograph
     return 1 + (ZOOM * (frame - from)) / (to - from);
   };
@@ -302,6 +539,28 @@ export function seriesFrameState(seq, frame) {
       zoom: zoom(next),
       text: Math.max(0, 2 * p - 1),
     });
+  }
+  // 1.7.0: within a run of one image only the heads change; the image is
+  // the outgoing card's, not cross-faded.
+  if (
+    layers.length === 2 &&
+    imageRun(current) >= 0 &&
+    imageRun(current) === imageRun(next)
+  )
+    layers[1].opacity = 0;
+  // Items and the quoted person enter on their word, over 9 frames, their
+  // place kept from the card's first frame.
+  const arrive = (from) =>
+    frame <= from
+      ? 0
+      : frame >= from + CROSS_FADE
+        ? 1
+        : enter((frame - from) / CROSS_FADE);
+  for (const l of layers) {
+    const card = seq.cards[l.card];
+    if (card.itemFrames) l.items = card.itemFrames.map(arrive);
+    if (card.attributionFrame !== undefined)
+      l.attribution = arrive(card.attributionFrame);
   }
   // A map sequence's card shows its run's map, zoomed once over the run.
   // Between two cards of one run the map is drawn once, by the outgoing

@@ -78,7 +78,8 @@ test("1.7.0: a chaptered video outside 2 to 4 min loads with a warning", () => {
   const seq = long({
     script: (beats) => {
       for (const b of beats)
-        if (b.chunks && !b.card.endsWith("-07"))
+        // Chapters 1 and 2 shorter; chapter 3 keeps its 15 s.
+        if (b.chunks && !/-0[67]$/.test(b.card))
           b.chunks.forEach((c) => (c.duration = Math.max(3, c.duration * 0.7)));
       return beats;
     },
