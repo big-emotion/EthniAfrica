@@ -1,0 +1,835 @@
+{
+  "id": "WRD_TRIBU",
+  "nameMain": "tribu",
+  "wordLanguage": "fra",
+  "definition": "Un mot qui désignait une division du peuple romain et qui a servi ensuite à nommer, de l'extérieur, des peuples que l'on disait sans État.",
+  "relatedSubjects": [
+    {
+      "id": "WRD_RACE",
+      "relation": "Le mot race a servi, comme le mot tribu, à classer les peuples d'Afrique dans les écrits coloniaux."
+    },
+    {
+      "id": "WRD_KIRDI",
+      "relation": "Le nom Kirdi est, lui aussi, un nom donné de l'extérieur à des peuples, puis repris par certains."
+    },
+    {
+      "id": "PPL_KABYLE",
+      "relation": "Le nom des Kabyles vient de l'arabe qabīla, le mot que le français traduit par « tribu »."
+    },
+    {
+      "id": "DZA",
+      "relation": "En Algérie, le sénatus-consulte de 1863 fait des « tribus » les propriétaires de leurs terres, avant de les partager."
+    },
+    {
+      "id": "PPL_ZULU",
+      "relation": "En zoulou, le mot isizwe veut dire à la fois clan et nation."
+    },
+    {
+      "id": "PPL_AKAN",
+      "relation": "En akan, abusua désigne la famille du côté de la mère et ɔman la nation."
+    },
+    {
+      "id": "PPL_IGBO",
+      "relation": "En igbo, ụmụnna désigne les descendants d'un même père."
+    },
+    {
+      "id": "PPL_KIKUYU",
+      "relation": "Le recensement colonial du Kenya de 1948 compte les Kikuyu comme une « tribe » de plus d'un million de personnes."
+    },
+    {
+      "id": "PPL_SWAHILI",
+      "relation": "En swahili, kabila, venu de l'arabe qabīla, désigne d'abord un groupe plus petit que taifa."
+    },
+    {
+      "id": "KEN",
+      "relation": "Au Kenya, le mot tribe reste courant dans la presse, même si le recensement de 2019 parle d'ethnicité."
+    },
+    {
+      "id": "CMR",
+      "relation": "Au Cameroun, la presse de 2025 et de 2026 parle de tribu et de tribalisme."
+    }
+  ],
+  "nameHistory": {
+    "summary": "Le mot tribu vient du latin tribus, une division du peuple romain. Il est entré en français par les traductions des historiens romains et de la Bible. Il a servi ensuite à traduire l'arabe qabīla et à classer les peuples d'Afrique, et il est aujourd'hui courant en Afrique. Son origine latine est débattue, et les mots que les peuples emploient pour eux-mêmes ne lui correspondent pas toujours ; nous présentons les sources plus bas.",
+    "names": [
+      {
+        "nameText": "tribu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "lat",
+        "namedBy": null,
+        "shortLine": "Un mot latin qui désignait une division des citoyens de Rome, puis a servi à classer les peuples d'Afrique.",
+        "usedIn": ["fra"],
+        "periodLabel": "Écrit en français depuis 1355",
+        "accounts": [
+          {
+            "period": {
+              "from": 2025,
+              "to": 2026,
+              "label": "2025-2026"
+            },
+            "era": "modern",
+            "statement": "Le mot tribu fait partie de la langue de tous les jours en Afrique francophone. Au Cameroun, en 2025, un éditorialiste écrit que son pays « s'enlise dans la tribu ». En 2026, après l'élection, un autre dénonce « le tribalisme médiatique ». Au Gabon, un sénateur écrit en 2025 : « Le tribalisme n'est pas un programme. »",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Je reviens du Gabon ! Un peuple s'est levé, pendant que le Cameroun s'enlise dans la tribu",
+                "author": "Pierre Laverdure Ombang",
+                "year": 2025,
+                "url": "https://www.camer.be/88982/30:27/je-reviens-du-gabon-un-peuple-sest-levependant-que-le-cameroun-senlise-dans-la-tribu-cameroon.html",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Tribune publiée par Camer.be le 16 avril 2025, lue le 15 octobre 2026."
+              },
+              {
+                "title": "Cameroun : Après la présidentielle, le tribalisme médiatique reste impuni et sans frein",
+                "author": "Toto Jacques",
+                "year": 2026,
+                "url": "https://fr.allafrica.com/stories/202605220413.html",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Tribune publiée par Camer.be et reprise par AllAfrica le 22 mai 2026, lue le 15 octobre 2026."
+              },
+              {
+                "title": "Cameroun : risque d'implosion avant l'élection présidentielle 2025",
+                "author": "Journal du Cameroun",
+                "year": 2025,
+                "url": "https://fr.journalducameroun.com/cameroun-risque-dimplosion-avant-lelection-presidentielle-2025/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article du 26 février 2025, lu le 15 octobre 2026."
+              },
+              {
+                "title": "Le piège du tribalisme : « Une insulte à l'intelligence du peuple gabonais »",
+                "author": "Michel Ongoundou Loundah",
+                "year": 2025,
+                "url": "https://www.gabonreview.com/tribune-le-piege-du-tribalisme-une-insulte-a-lintelligence-du-peuple-gabonais/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Tribune publiée par Gabonreview le 23 mars 2025, lue le 15 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1997,
+              "to": 1997,
+              "label": "1997"
+            },
+            "statement": "Le mot tribu se dit aussi en anglais, tribe, et beaucoup d'Africains l'emploient eux-mêmes sans y mettre de mépris, note en 1997 un rapport américain qui recommande pourtant d'éviter ce mot.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Talking About « Tribe »: Moving from Stereotypes to Analysis, Background Paper 010",
+                "author": "Africa Policy Information Center (texte rédigé par Chris Lowe)",
+                "year": 1997,
+                "url": "https://africanactivist.msu.edu/recordFiles/210-849-21158/Background_Paper_010_opt.pdf",
+                "tier": "referenced",
+                "source_kind": "ngo",
+                "page": "p. 1 et p. 5",
+                "notes": "Washington. Lu le 15 octobre 2026 dans le document numérisé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Dictionnaires de 1881 à 2013"
+            },
+            "statement": "Le mot tribu ne correspond pas toujours aux mots que les peuples emploient pour eux-mêmes. En zoulou, isizwe veut dire à la fois clan et nation. En akan, abusua désigne la famille du côté de la mère, et ɔman la nation, l'État. En lingala, un seul mot, ekólo, sert pour « tribu », « ethnie » et « nation ».",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Zulu-English Dictionary, édition de 1884, article isizwe",
+                "author": "John William Colenso",
+                "year": 1884,
+                "url": "https://archive.org/details/colenso-zulu-english-dictionary-1884",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 673",
+                "notes": "Lu le 15 octobre 2026 dans la numérisation d'Internet Archive."
+              },
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 54 et p. 294",
+                "notes": "Bâle, Société des missions évangéliques. Lu le 15 octobre 2026 dans la numérisation d'Internet Archive."
+              },
+              {
+                "title": "Dictionnaire français-lingala-sango",
+                "author": "Musanji Ngalasso-Mwatha (dir.), Organisation internationale de la Francophonie",
+                "year": 2013,
+                "url": "https://web.archive.org/web/20190812134825id_/https://www.francophonie.org/IMG/pdf/dico_.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 412, p. 649 et p. 961",
+                "notes": "Lu le 15 octobre 2026 dans la copie archivée du document."
+              },
+              {
+                "title": "Talking About « Tribe »: Moving from Stereotypes to Analysis, Background Paper 010",
+                "author": "Africa Policy Information Center (texte rédigé par Chris Lowe)",
+                "year": 1997,
+                "url": "https://africanactivist.msu.edu/recordFiles/210-849-21158/Background_Paper_010_opt.pdf",
+                "tier": "referenced",
+                "source_kind": "ngo",
+                "page": "p. 1 et p. 5",
+                "notes": "Washington. Lu le 15 octobre 2026 dans le document numérisé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Dictionnaires de 1913 à 2013"
+            },
+            "statement": "Le mot tribu est souvent rendu, dans les langues africaines, par des mots qui parlent d'abord de lignée. En igbo, ụmụnna désigne les descendants d'un même père. En kikuyu, mbarĩ est le groupe de famille et mũhĩrĩga le clan. En yoruba, ìdílé veut dire la famille, la maison.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Dictionary of Ọnịcha Igbo",
+                "author": "Kay Williamson, édité par Roger Blench",
+                "year": 2013,
+                "url": "https://archive.org/details/igbodictionary",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "article umu nna",
+                "notes": "2e édition du dictionnaire de 1972, version de travail de 2013. Lu le 15 octobre 2026 dans la numérisation d'Internet Archive."
+              },
+              {
+                "title": "Kikuyu-English Dictionary",
+                "author": "T. G. Benson (dir.)",
+                "year": 1964,
+                "url": "https://archive.org/details/kikuyu-english-dictionary-tg-benson",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 157-158 et p. 270-272",
+                "notes": "Oxford, Clarendon Press. Lu le 15 octobre 2026 dans la numérisation d'Internet Archive ; pages déduites du texte reconnu."
+              },
+              {
+                "title": "A Dictionary of the Yoruba Language",
+                "author": "Church Missionary Society",
+                "year": 1913,
+                "url": "https://archive.org/details/DictionaryOfTheYorubaLanguage",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 124-125",
+                "notes": "Lagos, C.M.S. Bookshop. Lu le 15 octobre 2026 dans la numérisation d'Internet Archive, dont le texte reconnu perd les tons."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1979,
+              "to": 1979,
+              "label": "1979"
+            },
+            "era": "modern",
+            "statement": "Le mot tribu a fini par désigner des groupes que les colonisés ont eux-mêmes formés, selon l'historien John Iliffe : les Britanniques croyaient à tort que les habitants du Tanganyika appartenaient à des tribus, et ces habitants ont créé des tribus pour agir dans le cadre colonial.",
+            "aspect": "imposition",
+            "hypothesisGroup": "part de la colonisation dans les tribus",
+            "sources": [
+              {
+                "title": "A Modern History of Tanganyika, chapitre 10 : The creation of tribes",
+                "author": "John Iliffe",
+                "year": 1979,
+                "url": "https://www.cambridge.org/core/books/abs/modern-history-of-tanganyika/creation-of-tribes/3FA4456465368746692D36B46CF8777E",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 318-341",
+                "notes": "Cambridge University Press. Lu le 15 octobre 2026 dans le résumé du chapitre publié par l'éditeur."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2023,
+              "label": "2003 et 2023"
+            },
+            "statement": "Le mot tribu ne désigne pas des groupes inventés de toutes pièces par la colonisation, répondent d'autres historiens. Thomas Spear juge en 2003 que la thèse de l'invention exagère le pouvoir colonial. Le Ghanéen Issah Tikumah écrit en 2023 que des États africains avaient déjà formé des groupes avant l'arrivée des Européens.",
+            "aspect": "imposition",
+            "hypothesisGroup": "part de la colonisation dans les tribus",
+            "sources": [
+              {
+                "title": "Neo-Traditionalism and the Limits of Invention in British Colonial Africa, The Journal of African History, 44-1",
+                "author": "Thomas Spear",
+                "year": 2003,
+                "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/neotraditionalism-and-the-limits-of-invention-in-british-colonial-africa/7E3E5272CBC13DB474A9E2EFBDC86C12",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3-27",
+                "notes": "Lu le 15 octobre 2026 dans le résumé publié par l'éditeur."
+              },
+              {
+                "title": "The Colonial Creation of Tribalism in Africa(?), Social Alternatives, 42-1",
+                "author": "Issah Tikumah",
+                "year": 2023,
+                "url": "https://socialalternatives.com/wp-content/uploads/2023/05/TIKUMAH-SA42_1.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lu le 15 octobre 2026, résumé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1154,
+              "to": 1377,
+              "label": "1154 et 1377"
+            },
+            "era": "polity",
+            "statement": "Le mot tribu sert aussi à traduire l'arabe qabīla. Ce mot désigne en arabe un groupe qui se dit issu d'un même ancêtre. Al-Idrīsī, en 1154, range les Berbères du Sahara en qabāʾil. Ibn Khaldūn, en 1377, parle d'eux à la fois comme de peuples, shuʿūb, et de qabāʾil.",
+            "sources": [
+              {
+                "title": "Nuzhat al-mushtāq fī ikhtirāq al-āfāq, troisième climat, première section",
+                "author": "al-Idrīsī",
+                "year": 1154,
+                "url": "https://ar.wikisource.org/wiki/نزهة_المشتاق_في_اختراق_الآفاق/الإقليم_الثالث/الجزء_الأول",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Texte arabe, lu le 15 octobre 2026 sur Wikisource en arabe."
+              },
+              {
+                "title": "al-Muqaddima, livre I, chapitre 1, premier climat",
+                "author": "Ibn Khaldūn",
+                "year": 1377,
+                "url": "https://ar.wikisource.org/wiki/مقدمة_ابن_خلدون/القسم_الأول_من_تفصيل_الكلام_على_هذه_الجغرافيا",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Texte arabe, lu le 15 octobre 2026 sur Wikisource en arabe."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Date d'emprunt inconnue"
+            },
+            "statement": "Le mot tribu a un équivalent venu de l'arabe dans plusieurs langues africaines, et chacune lui donne son sens. En swahili, kabila désigne en 1903 un groupe plus petit que taifa. En haoussa, en 1913, ce sont « les gens d'une même maison ». En bambara, kàbila veut dire « grande famille, lignage, dynastie ». Nous ne savons pas quand ces langues ont emprunté le mot.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Swahili-English Dictionary, article kabila",
+                "author": "A. C. Madan",
+                "year": 1903,
+                "url": "https://archive.org/details/swahilienglishdi00madauoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 124",
+                "notes": "Oxford, Clarendon Press. Lu le 15 octobre 2026 dans la numérisation d'Internet Archive."
+              },
+              {
+                "title": "Dictionary of the Hausa Language, vol. I",
+                "author": "Charles Henry Robinson",
+                "year": 1913,
+                "url": "https://archive.org/details/dictionaryofhaus01robiuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 157",
+                "notes": "Cambridge University Press, 3e édition. Lu le 15 octobre 2026 dans la numérisation d'Internet Archive."
+              },
+              {
+                "title": "Bamadaba : dictionnaire orthographique bambara, article kàbila",
+                "author": "Charles Bailleul, Valentin Vydrin et al.",
+                "year": 2022,
+                "url": "http://cormand.huma-num.fr/Bamadaba/lexicon/k.htm",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Version du 22 décembre 2022. Lu le 15 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Dictionnaire de 1982"
+            },
+            "statement": "Le mot tribu se dit lɛerc en kabyle, un mot venu de l'arabe ʿarsh. Taqbilt, qui vient de qabīla, désigne une confédération de tribus et ne s'emploie plus guère, selon le dictionnaire de Jean-Marie Dallet.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionnaire kabyle-français, parler des At Mangellat",
+                "author": "Jean-Marie Dallet",
+                "year": 1982,
+                "url": "https://archive.org/details/dictionnaire-kabyle-francais",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 641 et p. 999",
+                "notes": "Paris, SELAF. Lu le 15 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1863,
+              "to": 1863,
+              "label": "22 avril 1863"
+            },
+            "era": "colonial",
+            "statement": "Le mot tribu entre dans la loi en Algérie. L'article 1er du sénatus-consulte du 22 avril 1863 dit : « Les tribus de l'Algérie sont déclarées propriétaires des territoires dont elles ont la jouissance permanente et traditionnelle. » Les terres sont ensuite délimitées et partagées.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Code de l'Algérie annoté (sénatus-consulte du 22 avril 1863, art. 1er)",
+                "author": "Robert Estoublon et Adolphe Lefébure",
+                "year": 1896,
+                "url": "https://archive.org/details/code-de-l-algerie-annote",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 269-270",
+                "notes": "Alger, Jourdan. Texte de 1863 réimprimé en 1896, lu le 15 octobre 2026 sur l'image de la page."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1873,
+              "to": 1873,
+              "label": "1873"
+            },
+            "era": "colonial",
+            "statement": "Le mot tribu est un choix de traducteur. En 1873, Adolphe Hanoteau et Aristide Letourneux traduisent le kabyle ârch par « tribu », mais thak'ebilt, qui vient de l'arabe qabīla, par « confédération ».",
+            "sources": [
+              {
+                "title": "La Kabylie et les coutumes kabyles, tome II",
+                "author": "Adolphe Hanoteau et Aristide Letourneux",
+                "year": 1873,
+                "url": "https://archive.org/details/lakabylieetlesc02letogoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 4-5",
+                "notes": "Paris, Imprimerie nationale. Lu le 15 octobre 2026 sur l'image de la page, numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "1860"
+            },
+            "statement": "Le mot tribu devient en français la traduction ordinaire de l'arabe qabīla. Le dictionnaire d'Albert Kazimirski, en 1860, traduit qabīla par « Tribu » et ajoute que c'est le mot d'où vient « Kabyle ».",
+            "sources": [
+              {
+                "title": "Dictionnaire arabe-français, tome 2, racine q-b-l",
+                "author": "Albert de Biberstein Kazimirski",
+                "year": 1860,
+                "url": "https://archive.org/details/dictionnairearab02bibe",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 667-668",
+                "notes": "Paris, Maisonneuve. Lu le 15 octobre 2026 dans la numérisation d'Internet Archive, dont le texte reconnu est abîmé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1852,
+              "to": 1852,
+              "label": "1852"
+            },
+            "era": "colonial",
+            "statement": "Le mot tribu traduit plusieurs mots arabes dans la version française de l'Histoire des Berbères d'Ibn Khaldūn, publiée en 1852 par ordre du ministre de la Guerre. Son traducteur, le baron de Slane, signe comme « interprète principal de l'armée d'Afrique ».",
+            "sources": [
+              {
+                "title": "Histoire des Berbères et des dynasties musulmanes de l'Afrique septentrionale, tome 1",
+                "author": "Ibn Khaldoun, traduit par le baron de Slane",
+                "year": 1852,
+                "url": "https://archive.org/details/ibn-khaldun-histoire-des-berberes-et-des-dynasties-musulmanes-de-l-afrique-septentrionale-v-1",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. VII",
+                "notes": "Alger, Imprimerie du Gouvernement, publié par ordre du ministre de la Guerre. Lu le 15 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1877,
+              "to": 1877,
+              "label": "1877"
+            },
+            "statement": "Le mot tribu devient une étape dans une échelle des sociétés chez l'anthropologue américain Lewis Henry Morgan. En 1877, il oppose la tribu, fondée sur la parenté, à l'État, et range les sociétés entre « sauvagerie », « barbarie » et « civilisation ». Il ne crée pas ce sens : le dictionnaire de l'Académie parlait déjà de « tribu de sauvages » en 1835.",
+            "sources": [
+              {
+                "title": "Ancient Society",
+                "author": "Lewis Henry Morgan",
+                "year": 1877,
+                "url": "https://www.gutenberg.org/ebooks/45950",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "partie I, chapitre 1",
+                "notes": "New York, Henry Holt. Lu le 15 octobre 2026 dans le texte du projet Gutenberg."
+              },
+              {
+                "title": "Dictionnaire de l'Académie française, 6e édition, article tribu",
+                "author": "Académie française",
+                "year": 1835,
+                "url": "https://www.dictionnaire-academie.fr/article/A6T1084",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "t. 2, p. 882-883",
+                "notes": "Lu le 15 octobre 2026 sur le site du Dictionnaire de l'Académie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1798,
+              "to": 1835,
+              "label": "1798 et 1835"
+            },
+            "statement": "Le mot tribu change de sens dans le dictionnaire de l'Académie française. En 1798, il désigne aussi « une peuplade ou un petit peuple ». En 1835, le dictionnaire ajoute l'exemple « Une tribu de sauvages ».",
+            "sources": [
+              {
+                "title": "Dictionnaire de l'Académie française, 5e édition, article tribu",
+                "author": "Académie française",
+                "year": 1798,
+                "url": "https://www.dictionnaire-academie.fr/article/A5T0963",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "t. 2, p. 693",
+                "notes": "Lu le 15 octobre 2026 sur le site du Dictionnaire de l'Académie."
+              },
+              {
+                "title": "Dictionnaire de l'Académie française, 6e édition, article tribu",
+                "author": "Académie française",
+                "year": 1835,
+                "url": "https://www.dictionnaire-academie.fr/article/A6T1084",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "t. 2, p. 882-883",
+                "notes": "Lu le 15 octobre 2026 sur le site du Dictionnaire de l'Académie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1694,
+              "to": 1762,
+              "label": "1694-1762"
+            },
+            "statement": "Le mot tribu ne désigne d'abord, dans le dictionnaire de l'Académie française, que les divisions de Rome, d'Athènes et du peuple d'Israël, de la première édition en 1694 à la quatrième en 1762.",
+            "sources": [
+              {
+                "title": "Dictionnaire de l'Académie française, 1re édition, article tribu",
+                "author": "Académie française",
+                "year": 1694,
+                "url": "https://www.dictionnaire-academie.fr/article/A1T0210",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu le 15 octobre 2026 sur le site du Dictionnaire de l'Académie."
+              },
+              {
+                "title": "Dictionnaire de l'Académie française, 4e édition, article tribu",
+                "author": "Académie française",
+                "year": 1762,
+                "url": "https://www.dictionnaire-academie.fr/article/A4T0908",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "t. 2, p. 877",
+                "notes": "Lu le 15 octobre 2026 sur le site du Dictionnaire de l'Académie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1355,
+              "to": 1355,
+              "label": "1355"
+            },
+            "statement": "Le mot tribu apparaît pour la première fois dans un texte français en 1355, quand Pierre Bersuire traduit l'historien romain Tite-Live : il garde le latin tribus et l'explique par « lignies », selon le Trésor de la langue française. La forme tribu est datée de 1538. C'est la plus ancienne trace de ce mot en français que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Trésor de la langue française informatisé, article tribu, étymologie et histoire",
+                "author": "ATILF, CNRS et Université de Lorraine",
+                "year": null,
+                "url": "https://www.cnrtl.fr/etymologie/tribu",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu le 15 octobre 2026 sur le portail lexical du CNRTL."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Traduction latine de la Bible"
+            },
+            "statement": "Le mot tribu vient aussi de la Bible. La traduction latine appelle tribus les douze tribus d'Israël, que l'hébreu nomme shevet. Selon le Trésor de la langue française, l'ancien français a d'abord traduit ce mot par « lignée ».",
+            "sources": [
+              {
+                "title": "Biblia Sacra Vulgata, Genèse",
+                "author": "Jérôme de Stridon (traduction latine)",
+                "year": null,
+                "url": "https://www.thelatinlibrary.com/bible/genesis.shtml",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "Genèse 49, 16 et 49, 28",
+                "notes": "Lu le 15 octobre 2026 sur The Latin Library."
+              },
+              {
+                "title": "Trésor de la langue française informatisé, article tribu, étymologie et histoire",
+                "author": "ATILF, CNRS et Université de Lorraine",
+                "year": null,
+                "url": "https://www.cnrtl.fr/etymologie/tribu",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu le 15 octobre 2026 sur le portail lexical du CNRTL."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1355,
+              "label": "Avant 1355"
+            },
+            "statement": "Avant le mot tribu, il y a le latin tribus. À Rome, il désignait une division des citoyens eux-mêmes : trois groupes au départ selon Varron, trente-cinq à la fin. L'impôt, le tributum, était levé tribu par tribu.",
+            "before": true,
+            "sources": [
+              {
+                "title": "De lingua latina, livre V",
+                "author": "Varron",
+                "year": null,
+                "url": "https://www.thelatinlibrary.com/varro.ll5.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "§ 55 et § 181",
+                "notes": "Texte latin, lu le 15 octobre 2026 sur The Latin Library."
+              },
+              {
+                "title": "Dictionnaire étymologique de la langue latine, article tribus",
+                "author": "Alfred Ernout et Antoine Meillet",
+                "year": 1959,
+                "url": "https://archive.org/details/DictionnaireEtymologiqueDeLaLangueLatine",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 702",
+                "notes": "4e édition, retirage de 2001. Lu le 15 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le mot tribu vient du latin tribus, que l'écrivain romain Varron rattache à un territoire partagé « en trois parties ». Ernout et Meillet rapportent cette idée comme une hypothèse.",
+            "hypothesisGroup": "origine du mot latin tribus",
+            "sources": [
+              {
+                "title": "De lingua latina, livre V",
+                "author": "Varron",
+                "year": null,
+                "url": "https://www.thelatinlibrary.com/varro.ll5.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "§ 55 et § 181",
+                "notes": "Texte latin, lu le 15 octobre 2026 sur The Latin Library."
+              },
+              {
+                "title": "Dictionnaire étymologique de la langue latine, article tribus",
+                "author": "Alfred Ernout et Antoine Meillet",
+                "year": 1959,
+                "url": "https://archive.org/details/DictionnaireEtymologiqueDeLaLangueLatine",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 702",
+                "notes": "4e édition, retirage de 2001. Lu le 15 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le mot tribu viendrait d'une racine qui veut dire « partager », selon le linguiste Alois Walde en 1906, qui juge le lien avec « trois » impossible à démontrer.",
+            "hypothesisGroup": "origine du mot latin tribus",
+            "sources": [
+              {
+                "title": "Lateinisches etymologisches Wörterbuch, article tribus",
+                "author": "Alois Walde",
+                "year": 1906,
+                "url": "https://archive.org/details/lateinischesetym00wald",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 636",
+                "notes": "Heidelberg, Winter, 1re édition. Lu le 15 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le mot tribu viendrait d'un ancien composé qui veut dire « division en trois », formé de « trois » et d'un verbe qui veut dire « poser, faire », selon Michiel de Vaan en 2008, qui suit Michael Weiss.",
+            "hypothesisGroup": "origine du mot latin tribus",
+            "sources": [
+              {
+                "title": "Etymological Dictionary of Latin and the other Italic Languages, article tribus",
+                "author": "Michiel de Vaan",
+                "year": 2008,
+                "url": "https://archive.org/details/de-vaan-michiel-etymological-dictionary-of-latin",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 629",
+                "notes": "Leiden, Brill. Lu le 15 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "tribe",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "lat",
+        "namedBy": null,
+        "usedIn": ["eng"],
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "14 décembre 2025"
+            },
+            "era": "modern",
+            "statement": "Le mot tribe, l'anglais pour tribu, revient dans le discours politique en Ouganda. Le président Yoweri Museveni lance en décembre 2025 : « If I am tribalistic, who will buy my milk? », « si j'étais tribaliste, qui achèterait mon lait ? ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Uganda: Say No to Tribalism - Museveni Tells Kagadi",
+                "author": "Kenneth Kazibwe (Nile Post)",
+                "year": 2025,
+                "url": "https://allafrica.com/stories/202512150046.html",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article du 14 décembre 2025, repris par AllAfrica, lu le 15 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2020,
+              "label": "2019-2020"
+            },
+            "era": "modern",
+            "statement": "Le mot tribe reste courant au Kenya. Le formulaire du recensement de 2019 parle d'ethnicité. La même année, l'enquête Afrobaromètre demande à quel « groupe ethnique, groupe culturel ou tribe » on appartient, et la presse écrit en 2020 que « trois tribes » forment près de la moitié du pays.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Afrobarometer, Round 8, Kenya, question 81",
+                "author": "Afrobarometer (catalogue de la Banque mondiale)",
+                "year": 2019,
+                "url": "https://microdata.worldbank.org/catalog/3920/variable/V271",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Libellé exact de la question, lu le 15 octobre 2026 dans le catalogue Microdata de la Banque mondiale."
+              },
+              {
+                "title": "Kikuyu, Luhya and Kalenjin make up almost half of Kenyan population",
+                "author": "The Star (Nairobi)",
+                "year": 2020,
+                "url": "https://www.the-star.co.ke/in-pictures/2020-02-21-kikuyu-luhya-and-kalenjin-make-up-almost-half-of-kenyan-population",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article du 21 février 2020, lu le 15 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1951,
+              "to": 1951,
+              "label": "1951"
+            },
+            "statement": "Le mot tribe devient en Afrique du Sud une unité que l'État trace lui-même : la loi de 1951 sur les autorités bantoues crée des « Bantu tribal authorities » et en fixe les territoires.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Bantu Authorities Act, Act No. 68 of 1951",
+                "author": "Union sud-africaine",
+                "year": 1951,
+                "url": "https://sahistory.org.za/archive/bantu-authorities-act-act-no-68-1951",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1152-1154, art. 2",
+                "notes": "Lu le 15 octobre 2026 sur l'image du texte publiée par South African History Online."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1948,
+              "to": 1948,
+              "label": "1948"
+            },
+            "era": "colonial",
+            "statement": "Le mot tribe sert à compter la population du Kenya colonial. Le recensement de 1948 range les habitants en 87 « main tribes ». La plus nombreuse, les Kikuyu, compte 1 026 341 personnes.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Statistical Abstract 1960, table 16 : Population Census, 1948, Main Tribes",
+                "author": "Colonie et protectorat du Kenya",
+                "year": 1960,
+                "url": "https://www.knbs.or.ke/wp-content/uploads/2023/09/1960-Statistical-Abstract.pdf",
+                "tier": "official",
+                "source_kind": "official_statistics",
+                "page": "p. 17",
+                "notes": "Publié par le Kenya National Bureau of Statistics. Lu le 15 octobre 2026. Nous n'avons pas lu le volume du recensement de 1948 lui-même."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "1922"
+            },
+            "statement": "Le mot tribe marque un rang plus qu'une taille chez l'administrateur britannique Frederick Lugard. En 1922, il classe les Africains, « pour la commodité de l'administrateur », en « tribus primitives », « communautés avancées » et « Africains européanisés ». Une note qu'il cite appelle pourtant les Yoruba « les tribus les plus avancées ».",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "The Dual Mandate in British Tropical Africa",
+                "author": "Frederick Lugard",
+                "year": 1922,
+                "url": "https://archive.org/details/cu31924028741175",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 72 et p. 544",
+                "notes": "Édimbourg et Londres, Blackwood. Lu le 15 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "gaps": [
+    "Nous ne savons pas quand le mot tribu a été employé pour la première fois en français à propos d'un peuple d'Afrique.",
+    "Nous ne savons pas quand le swahili, le haoussa, le bambara ou le kabyle ont emprunté le mot arabe qabīla.",
+    "Nous n'avons pas lu le recueil de sources arabes sur l'Afrique de l'Ouest de Levtzion et Hopkins (1981), ni vérifié le mot arabe qu'emploient al-Bakrī et Ibn Baṭṭūṭa.",
+    "Nous avons lu le texte de 1863 dans une réimpression de 1896, pas dans le Bulletin des lois.",
+    "Nous n'avons pas trouvé de source solide pour le somali qabiil, le wolof xeet ou le peul lenyol.",
+    "Nous n'avons pas encore lu en entier l'article d'Archie Mafeje de 1971."
+  ],
+  "sources": []
+}
