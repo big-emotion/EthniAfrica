@@ -39,10 +39,13 @@ export const signatureChunks = () =>
 
 // Generated silence whose word times spread each chunk's units over the
 // chunk's scripted duration, from 0.6 s in; writes voice.wav and words.json.
+// A beat's `silence` (seconds, 1.7.0) is a pause before its chunks, the one a
+// chapter card fills.
 export function writeSyntheticVoice(dir, beats) {
   let t = LEAD;
-  const timed = beats.flatMap((beat) =>
-    beat.chunks.map(({ text, duration }) => {
+  const timed = beats.flatMap((beat) => {
+    t += beat.silence ?? 0;
+    return (beat.chunks ?? []).map(({ text, duration }) => {
       const units = chunkUnits(text);
       const letters = units.reduce((n, u) => n + [...u].length + 1, 0);
       const pace = (duration - 0.2) / letters;
@@ -59,8 +62,8 @@ export function writeSyntheticVoice(dir, beats) {
       });
       t += duration;
       return { text, words };
-    })
-  );
+    });
+  });
   const duration = round(t);
   const audio = wavBytes(
     new Int16Array(Math.round(duration * SAMPLE_RATE)),
