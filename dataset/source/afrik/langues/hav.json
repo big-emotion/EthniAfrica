@@ -13,7 +13,12 @@
   "whyProblematic": null,
   "spellingAliases": [],
   "familyId": "FLG_BANTU",
-  "peoples": [{ "name": "Havu", "peopleId": "PPL_HAVU" }],
+  "peoples": [
+    {
+      "name": "Havu",
+      "peopleId": "PPL_HAVU"
+    }
+  ],
   "nameHistory": {
     "summary": "Le nom kihavu désigne une langue bantoue de la République démocratique du Congo. Il est formé du nom du peuple Havu et du préfixe ki-, qui sert à nommer les langues. Nous n'avons pas trouvé de source qui explique le nom Havu, ni sa plus ancienne trace.",
     "names": [
@@ -76,6 +81,12 @@
         "tier": "official",
         "source_kind": "linguistic_reference",
         "notes": "Notice directe pour le code ISO 639-3 hav et le glottocode havu1238. Elle situe la langue en République démocratique du Congo, atteste les variantes Haavu et Kihavu et publie le statut EGIDS 6a en 2025. Aucun rôle véhiculaire régional n'est inféré de cette notice."
+      }
+    ],
+    "gaps": [
+      {
+        "field": "nameHistory.names[0]",
+        "reason": "Nous n'avons pas trouvé de source qui explique le nom Havu, ni sa plus ancienne trace."
       }
     ]
   }

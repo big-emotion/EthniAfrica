@@ -168,103 +168,103 @@
       "x": 8236,
       "y": 0,
       "w": 430,
-      "h": 7198,
+      "h": 7731,
       "expand": "fill"
     },
     "language-lingala-768.dc.html": {
       "x": 8746,
       "y": 0,
       "w": 768,
-      "h": 5657,
+      "h": 6011,
       "expand": "fill"
     },
     "language-lingala-1440.dc.html": {
       "x": 9594,
       "y": 0,
       "w": 1440,
-      "h": 5664,
+      "h": 5906,
       "expand": "fill"
     },
     "language-thin-havu-430.dc.html": {
       "expand": "fill",
       "x": 8236,
-      "y": 7318,
+      "y": 7851,
       "w": 430,
-      "h": 5103
+      "h": 5216
     },
     "language-thin-havu-768.dc.html": {
       "expand": "fill",
       "x": 8746,
-      "y": 7318,
+      "y": 7851,
       "w": 768,
-      "h": 3993
+      "h": 4121
     },
     "language-thin-havu-1440.dc.html": {
       "expand": "fill",
       "x": 9594,
-      "y": 7318,
+      "y": 7851,
       "w": 1440,
-      "h": 4035
+      "h": 4245
     },
     "family-bantu-430.dc.html": {
       "x": 8236,
-      "y": 12541,
+      "y": 13187,
       "w": 430,
       "h": 15250,
       "expand": "fill"
     },
     "family-bantu-768.dc.html": {
       "x": 8746,
-      "y": 12541,
+      "y": 13187,
       "w": 768,
       "h": 11194,
       "expand": "fill"
     },
     "family-bantu-1440.dc.html": {
       "x": 9594,
-      "y": 12541,
+      "y": 13187,
       "w": 1440,
       "h": 9496,
       "expand": "fill"
     },
     "family-mande-430.dc.html": {
       "x": 8236,
-      "y": 27911,
+      "y": 28557,
       "w": 430,
       "h": 22132,
       "expand": "fill"
     },
     "family-mande-768.dc.html": {
       "x": 8746,
-      "y": 27911,
+      "y": 28557,
       "w": 768,
       "h": 14579,
       "expand": "fill"
     },
     "family-mande-1440.dc.html": {
       "x": 9594,
-      "y": 27911,
+      "y": 28557,
       "w": 1440,
       "h": 11630,
       "expand": "fill"
     },
     "country-civ-430.dc.html": {
       "x": 8236,
-      "y": 50163,
+      "y": 50809,
       "w": 430,
       "h": 9999,
       "expand": "fill"
     },
     "country-civ-768.dc.html": {
       "x": 8746,
-      "y": 50163,
+      "y": 50809,
       "w": 768,
       "h": 8678,
       "expand": "fill"
     },
     "country-civ-1440.dc.html": {
       "x": 9594,
-      "y": 50163,
+      "y": 50809,
       "w": 1440,
       "h": 8142,
       "expand": "fill"

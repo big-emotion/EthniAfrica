@@ -46,6 +46,38 @@ describe("loadLanguageFiches", () => {
     expect(records.find((r) => r.id === "yor")?.originDebated).toBe(false);
   });
 
+  // @req REQ-198
+  it("carries content.gaps onto the record, and nothing when a fiche declares none", () => {
+    const directory = createFixtureDirectory();
+    const gaps = [
+      {
+        field: "nameHistory.names[0]",
+        reason: "Nous n'avons pas trouvé de source qui explique le nom Havu.",
+      },
+    ];
+    for (const [id, content] of [
+      ["hav", { gaps }],
+      ["yor", {}],
+    ] as const) {
+      writeFileSync(
+        join(directory, `${id}.json`),
+        JSON.stringify({
+          id,
+          isoCode639_3: id,
+          nameFr: id,
+          nameEn: id,
+          familyId: "FLG_BANTU",
+          content,
+        })
+      );
+    }
+
+    const records = loadLanguageFiches(directory);
+
+    expect(records.find((r) => r.id === "hav")?.gaps).toEqual(gaps);
+    expect(records.find((r) => r.id === "yor")).not.toHaveProperty("gaps");
+  });
+
   // @req REQ-136
   it("preserves a fiche's identity, enriched content, aliases, and every source tier", () => {
     const directory = createFixtureDirectory();
