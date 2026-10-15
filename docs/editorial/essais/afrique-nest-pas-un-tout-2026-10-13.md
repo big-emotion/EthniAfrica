@@ -169,9 +169,8 @@ transcribed and corrected only here.
 
 1. **Scope.** The message is no longer the conclusion of series 6 alone. It is
    the background of every publication and of the site. It replaces no series'
-   fixed closing line (`../strategy/social-series.md`). The short line that will
-   carry it everywhere is chosen in a later step and recorded here and in that
-   file.
+   fixed closing line (`../strategy/social-series.md`). The short line that
+   carries it everywhere is the signature recorded in 5.6 and in that file.
 2. **« Nommés de l'extérieur » holds for many names, not for all.** Some names
    are still the ones peoples give themselves; Kouassi and Yao are the example
    in 5.3.
@@ -291,3 +290,48 @@ officiel_; check them there before a card quotes an article.
   word for « cave » circulate widely, but no scholarly source read for this
   essay gives them. Do not print them until one does.
 - **Unity as the answer.** No source here shows it. It stays a signed position.
+
+### 5.6 The signature, decided on 15 October 2026
+
+The message is carried by one sentence, repeated word for word at the end of
+every reel and every carousel, and in the bio of every account:
+
+> Connaître nos noms, décoloniser leur emploi, nous nommer nous-mêmes.
+
+**Why this sentence.** It has to stay true at the end of any episode, whatever
+the series: a country, a people, a family name, a word, a border, a city. So it
+speaks only of what they all share: names, how they are used, and naming
+ourselves. Its three parts follow the essay's own order: knowing where a name
+comes from, looking at how it is used, then naming ourselves. Its « nous »
+includes EthniAfrica: the project learns alongside the reader rather than
+lecturing.
+
+**What « décoloniser leur emploi » covers.** The operator's precision, the same
+day: not every name is a colonial use, and the work is wider than the colonial
+part. Episodes meet four kinds of use:
+
+1. names and words whose use has already been decolonised;
+2. uses that are colonial;
+3. uses that are pejorative or racialising, without being colonial;
+4. uses that are politicised.
+
+The signature names the strongest and most recognisable case; the episodes,
+series 4 first, show which of the four each word or name belongs to. An
+episode never forces a name into the colonial case to match the signature.
+
+**Limits.**
+
+- It is an invitation, never a judgement. It never follows a sentence that
+  blames anyone for using a name that came from elsewhere (5.3).
+- It decolonises the **use** of names, not « our names »: Kouassi and Yao show
+  that some names were never taken away (5.3).
+- It comes **after** a series' fixed closing line, never in its place. After
+  series 6, the closing line speaks of unity and the signature of names.
+- In a voiced reel, a person listens to « nos noms… nommer » before
+  publication: the synthetic voice has already merged close words in this
+  format.
+
+**Open question, not printed.** The operator would like to know what share of
+the names in use are colonial, pejorative or politicised. No source read for
+this essay gives such a figure. Our own fiches record who gave each name, which
+could one day support a count of our fiches only, never of all names in use.

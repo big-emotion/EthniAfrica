@@ -151,6 +151,14 @@ days).
 
 - **Every caption ends with the same sentence, no link block, no hashtag wall:**
   « Cherchez [nom] sur EthniAfrica, lien en profil. »
+- **Every reel and every carousel ends with the project's signature, word for
+  word, and every account's bio carries it** (decided 2026-10-15):
+  « Connaître nos noms, décoloniser leur emploi, nous nommer nous-mêmes. »
+  It comes after the series' fixed closing line, never in its place, and
+  repeats nothing of it. Its meaning, its limits and the four kinds of use
+  behind « décoloniser leur emploi » are in
+  [the essay, section 5.6](../essais/afrique-nest-pas-un-tout-2026-10-13.md).
+  How it sits on the cards is a design-system rule, not decided here.
 - **The profile link stays fixed** on the search page; the episode-specific link
   goes in the **Instagram story link sticker**, the only place where a link is
   one tap away and changes with every episode:
