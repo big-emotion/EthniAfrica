@@ -51,6 +51,14 @@
         "claim": "C. Agabi rapproche prudemment Ifren du berbère ifri, « caverne » ou « grotte », et présente l’idée d’ancêtres troglodytes comme une possibilité, non comme une étymologie démontrée.",
         "claimStatus": "claimed",
         "sourceRefs": ["ifren-encyclopedie-berbere"]
+      },
+      {
+        "claim": "W. Vycichl rapproche avec prudence le nom Afrī, d’où vient le latin Africa, d’Īfrī, l’ancêtre des Banū Īfran : la forme ifrī « existe peut-être » comme nom de cet ancêtre, écrit-il. J. Peyras rapporte qu’Ifren serait « probablement », selon Vycichl, le pluriel d’Afer. Ce lien reste une hypothèse ; il ne passe pas par le mot ifri, « grotte ».",
+        "claimStatus": "claimed",
+        "sourceRefs": [
+          "africa-encyclopedie-berbere",
+          "afri-encyclopedie-berbere"
+        ]
       }
     ]
   },
@@ -93,6 +101,22 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Gi-Dae Lim, Cross-Cultural Studies 57, 2019, p. 339-367. La page et sa bibliographie complète ont été vérifiées. Plusieurs références de l’article sont des pages Wikipédia ou des reprises commerciales ; cette source n’est donc utilisée ici que pour l’attestation publiée de la graphie Banu Ifran et son cadre Maghreb-Andalousie, jamais pour l’étymologie."
+    },
+    {
+      "sourceKey": "africa-encyclopedie-berbere",
+      "title": "Africa",
+      "url": "https://journals.openedition.org/encyclopedieberbere/888",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "W. Vycichl, Encyclopédie berbère, vol. 2, 1985, p. 216-217 ; texte lu en ligne le 15 octobre 2026. « D’ailleurs, la forme ifrī existe peut-être comme nom de l’ancêtre des Banū Īfran ». L’article de 1975 de Vycichl dans Onomastica n’a pas été lu."
+    },
+    {
+      "sourceKey": "afri-encyclopedie-berbere",
+      "title": "Afri",
+      "url": "https://journals.openedition.org/encyclopedieberbere/886",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "T. Kotula et J. Peyras, Encyclopédie berbère, vol. 2, 1985, p. 208-215 ; texte lu en ligne le 15 octobre 2026. Par. 19 (Peyras) : « Ifren serait probablement selon W. Vycichl, le pluriel d’Afer. »"
     }
   ],
   "gaps": [
