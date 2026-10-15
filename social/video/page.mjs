@@ -64,7 +64,9 @@ void main() {
 // The satellite overlays (boards 2 and 3): inks, hatching, areas, borders
 // and legend swatches, shared with the series video's map cards (1.4.1).
 export const OVERLAY_SCRIPT = `const SVG = "http://www.w3.org/2000/svg";
-const INK = { a: "#e8b96a", b: "#6cc3b5", c: "#e3876a" };
+// d, lilac, is the series map sequence's fourth name (Cartes 1.5.0); the
+// satellite video draws three inks and never references it.
+const INK = { a: "#e8b96a", b: "#6cc3b5", c: "#e3876a", d: "#c4a8f2" };
 // The neutral ink of the « Zone approximative » swatch (0.4.0).
 const NOTE_INK = "#a8977f";
 // Hatching for each ink at 45° and, for an area inside an earlier one, at

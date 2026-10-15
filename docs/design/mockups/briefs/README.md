@@ -36,11 +36,12 @@ after a long read (`pays/CIV`, `FLG_MANDE`, `PPL_MUCUVAL`), early exits
 | 1 | [`01-result-page-timeline.md`](01-result-page-timeline.md) | Search result page with the timeline lens | `search-peul`, `search-bassa`, `search-congo`, `search-unknown` (**approved 2026-10-14**) |
 | 2 | [`02-people.md`](02-people.md) | People | `people-fula`, `people-bassa`, `people-thin-alaba` (**approved 2026-10-15**) |
 | 3 | [`03-language.md`](03-language.md) | Language | `language-lingala`, `language-thin-havu` (**approved 2026-10-15**) |
-| 4 | [`04-language-family.md`](04-language-family.md) | Language family | `family-bantu`, `family-mande` |
-| 5 | [`05-country.md`](05-country.md) | Country | `country-civ` |
+| 4 | [`04-language-family.md`](04-language-family.md) | Language family | `family-bantu`, `family-mande` (**approved 2026-10-15**) |
+| 5 | [`05-country.md`](05-country.md) | Country | `country-civ`, `country-state-civ-quaqua`, `country-state-thin-gab`, `country-state-shared-congo` (**approved 2026-10-15**) |
 | 6 | [`06-family-name.md`](06-family-name.md) | Family name | `name-traore` |
 | 7 | [`07-place.md`](07-place.md) | Place | `place-yamoussoukro` |
 | 8 | [`08-free-word.md`](08-free-word.md) | Free word | **new page**, three new boards (`word-race-430`, `-768`, `-1440`); `glossary` untouched |
+| 9 | [`09-our-approach.md`](09-our-approach.md) | Project page « Notre démarche » (not a type of name) | **new page**, three new boards (`approach-430`, `-768`, `-1440`); one link on `about`; footer in two states on `Main`. Prompt: [`claude-design-prompt-09.md`](claude-design-prompt-09.md) |
 
 Dossiers (`DOS_*`) are an editorial type, not a type of name. They carry the
 operator's thesis in full and get their own brief once the thesis wording is

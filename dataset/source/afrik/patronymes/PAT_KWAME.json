@@ -2,7 +2,7 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "patronyme",
-    "directives": "Fiche générée depuis la file d'attente des candidats (vague 1 du plan de couverture anthroponymique). Elle ne porte aucune recherche : ne pas étendre ses affirmations sans appliquer le protocole docs/runbooks/anthroponym-fiche-research.md."
+    "directives": "Fiche recherchée selon le protocole anthroponymique. Les affirmations sont limitées aux sources propres au nom ; les lacunes consignent les recherches restées sans résultat."
   },
   "id": "PAT_KWAME",
   "nameMain": "Kwame",
@@ -13,16 +13,25 @@
       "attestations": [
         {
           "countryId": "GHA",
-          "sourceRefs": ["afrik-candidate-queue"]
+          "sourceRefs": ["christaller-1881-twi", "agyekum-2006-akan-names"]
         }
       ]
     },
     {
-      "spelling": "Kwamé",
+      "spelling": "Kouamé",
+      "attestations": [
+        {
+          "countryId": "CIV",
+          "sourceRefs": ["pagnet-2005-noms-baoule"]
+        }
+      ]
+    },
+    {
+      "spelling": "Kwamina",
       "attestations": [
         {
           "countryId": "GHA",
-          "sourceRefs": ["afrik-candidate-queue"]
+          "sourceRefs": ["agyekum-2006-akan-names"]
         }
       ]
     }
@@ -32,20 +41,54 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [
+      {
+        "claim": "En twi, au Ghana, Kwame est le nom du garçon né le samedi ; chaque garçon reçoit d'ordinaire le nom du jour de sa naissance.",
+        "claimStatus": "established",
+        "sourceRefs": ["christaller-1881-twi", "agyekum-2006-akan-names"]
+      }
+    ]
   },
   "peoples": [
     {
       "peopleId": "PPL_AKAN",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["agyekum-2006-akan-names"]
+    },
+    {
+      "peopleId": "PPL_ASANTE",
+      "status": "attested",
+      "sourceRefs": ["christaller-1881-twi"]
+    },
+    {
+      "peopleId": "PPL_BAOULE",
+      "status": "attested",
+      "sourceRefs": ["ngoran-poame-2006-anthroponymes-baoule"]
+    },
+    {
+      "peopleId": "PPL_FANTE",
+      "status": "attested",
+      "sourceRefs": ["agyekum-2006-akan-names"]
+    },
+    {
+      "peopleId": "PPL_NZEMA",
+      "status": "attested",
+      "sourceRefs": [
+        "grottanelli-1977-nzema-names",
+        "dolphyne-1986-akan-languages"
+      ]
     }
   ],
   "countries": [
     {
       "countryId": "GHA",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["christaller-1881-twi", "agyekum-2006-akan-names"]
+    },
+    {
+      "countryId": "CIV",
+      "status": "attested",
+      "sourceRefs": ["pagnet-2005-noms-baoule"]
     }
   ],
   "alliances": [],
@@ -54,19 +97,79 @@
   "homonyms": [],
   "sources": [
     {
-      "sourceKey": "afrik-candidate-queue",
-      "title": "Relevé de couverture anthroponymique EthniAfrica",
-      "url": null,
-      "tier": "unverified",
-      "source_kind": "ai_generated",
-      "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+      "sourceKey": "christaller-1881-twi",
+      "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+      "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Bâle, Evangelical Missionary Society, 1881. Lu sur l'exemplaire numérisé d'archive.org. Annexe D, p. 662-663 : la liste des sept jours, des noms de garçons et de filles, et l'explication par les génies des jours, que l'auteur présente avec prudence."
+    },
+    {
+      "sourceKey": "agyekum-2006-akan-names",
+      "title": "The Sociolinguistic of Akan Personal Names",
+      "url": "https://www.njas.fi/njas/article/download/24/16/38",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Nordic Journal of African Studies, vol. 15, n° 2, 2006, p. 206-235. Lu le 15 octobre 2026. Page 213 : le nom du jour est appelé kradin, « nom de l'âme ». Page 214 : le tableau des noms de jour en twi et en fante. Page 215 : les surnoms d'éloge de chaque jour."
+    },
+    {
+      "sourceKey": "pagnet-2005-noms-baoule",
+      "title": "Les noms Wè : valeur expressive et didactive, un exemple de créativité poétique dans la littérature orale africaine",
+      "url": "https://hdl.handle.net/20.500.12177/1675",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Thèse de Doh Clément Pagnet, Université de Cocody, soutenue le 20 mai 2005. Relue le 15 octobre 2026 dans le dépôt DICAMES du CAMES (le lien handle était alors inaccessible ; la page du dépôt est http://dicames.online/jspui/handle/20.500.12177/1675). Page 260 : les noms donnés selon le jour de naissance chez les Baoulé. L'auteur ne cite pas de source pour cette liste. Le titre original écrit « didactive »."
+    },
+    {
+      "sourceKey": "ngoran-poame-2006-anthroponymes-baoule",
+      "title": "De l'essence au sens des anthroponymes du baoulé",
+      "url": "http://greenstone.lecames.org/collect/revu/tmp/B00702197207.html",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Revue du CAMES, nouvelle série B, vol. 7, n° 2, 2006, p. 197-207. Lu le 15 octobre 2026. Page 198 : un tableau des noms de jour baoulé repris d'un livre de Bernadette Akissi Koffi paru en 2001."
+    },
+    {
+      "sourceKey": "delafosse-1900-agni",
+      "title": "Essai de manuel de la langue agni, parlée dans la moitié orientale de la Côte d'Ivoire",
+      "url": "https://archive.org/details/essaidemanuelde00delagoog",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Paris, J. André, 1900. Lu sur l'exemplaire numérisé d'archive.org. Page 133 : le tableau des noms de jour agni, garçons et filles. Page 134, note 1 : les mêmes noms chez les Achanti de Coumassie, cités dans le même ordre. Auteur de l'époque coloniale, cité ici pour les formes qu'il relève."
+    },
+    {
+      "sourceKey": "etienne-1968-baoule-temps",
+      "title": "Les Baoulé et le temps",
+      "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_4/sci_hum/19805.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Cahiers ORSTOM, série Sciences humaines, vol. V, n° 3, 1968. Article fondé sur l'enquête de terrain de l'auteur chez les Baoulé. Lu le 15 octobre 2026. Page 18 et note 1 : la semaine baoulé et l'écart d'un jour avec les Ashanti, les Fanti, les Agni et les Abron ; page 19 : un enfant né après le coucher du soleil reçoit le nom du jour suivant."
+    },
+    {
+      "sourceKey": "bowdich-1819-mission-ashantee",
+      "title": "Mission from Cape Coast Castle to Ashantee",
+      "url": "https://archive.org/details/missionfromcapec00bowd",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Londres, John Murray, 1819 ; exemplaire numérisé sur archive.org. Page 126, en tête du traité : « with Saï Tootoo Quamina, King of Ashantee and its Dependencies, and Boïtinnee Quama, King of Dwabin and its Dependencies ». Voyageur britannique, cité pour les formes qu'il écrit. Lu le 14 octobre 2026."
+    },
+    {
+      "sourceKey": "dolphyne-1986-akan-languages",
+      "title": "The Languages of the Akan Peoples",
+      "url": "https://pdfproc.lib.msu.edu/?file=%2FDMC%2FAfrican+Journals%2Fpdfs%2FInstitue+of+African+Studies+Research+Review%2F1986v2n1%2Fasrv002001002.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Florence Abena Dolphyne, Research Review (Institute of African Studies, University of Ghana), nouvelle série, vol. 2, n° 1, 1986 ; écrit en 1975. Lu le 15 octobre 2026 dans le PDF des African e-Journals de l'université d'État du Michigan. Pages 5 à 7 du tapuscrit : les noms de jour des Anyi (Agni), des Baoulé et des Nzema sont décalés d'un jour par rapport au twi-fante ; tableaux des deux groupes et des Nzema du Ghana ; hypothèse sur l'origine de l'écart."
+    },
+    {
+      "sourceKey": "grottanelli-1977-nzema-names",
+      "title": "Personal Names as a Reflection of Social Relations among the Nzema of Ghana",
+      "url": "https://rosa.uniroma1.it/rosa03/uomo/article/view/15546",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Vinigi L. Grottanelli, L'Uomo. Società Tradizione Sviluppo, vol. 1, n° 2, 1977, p. 149-175, d'après une enquête chez les Nzema de 1954 à 1977. Lu le 15 octobre 2026. Page 151 : sept noms de garçons et sept noms de filles selon le jour. Page 161 : tableau des noms de jour nzema ; les en-têtes « garçons » et « filles » y sont inversés à l'impression, le texte de la page 151 donne la bonne lecture."
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
     {
       "fieldPath": "alliances",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
@@ -85,7 +188,7 @@
     }
   ],
   "nameHistory": {
-    "summary": "Le nom Kwame est un nom de personne akan du Ghana : celui du garçon né un samedi. Chaque enfant akan reçoit d'ordinaire un nom qui dit son jour de naissance, et Kwame est celui du samedi. Les sources lues n'en donnent pas d'autre explication.",
+    "summary": "Kwame est un nom de jour akan : au Ghana, on le donne au garçon né le samedi, et la fille née ce jour s'appelle Amma. En Côte d'Ivoire, chez les Baoulé, le même nom s'écrit Kouamé et désigne le garçon né le dimanche, et la fille s'appelle Amoin : la semaine des noms y est placée un jour plus tard, ce qu'une linguiste explique par une hypothèse, présentée plus bas.",
     "names": [
       {
         "nameText": "Kwame",
@@ -114,6 +217,155 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 271 ; p. 663",
                 "notes": "Bâle, Evangelical Missionary Society, 1881 ; exemplaire numérisé sur archive.org. Page 271, entrée « Kwame », avec la forme Kwamena : nom propre d'un homme né un samedi. Page 663 (annexe D) : chaque garçon reçoit un nom du jour de sa naissance, parmi sept noms dont Kwame. Missionnaire de Bâle, cité pour les formes qu'il écrit. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Le même nom se retrouve chez plusieurs peuples akan. Chez les Ashanti, le garçon s'appelle Kwame et la fille Amma ; chez les Fante, Kwame ou Kwamina et Ama ; chez les Nzema du Ghana, Kwame et Ama. Tous sont nés le samedi. Chez les Baoulé, Kouamé et Amoin, et chez les Agni, Kwame et Amwi, sont nés le dimanche.",
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "annexe D, p. 662-663",
+                "notes": "Bâle, Evangelical Missionary Society, 1881. Lu sur l'exemplaire numérisé d'archive.org. Annexe D, p. 662-663 : la liste des sept jours, des noms de garçons et de filles, et l'explication par les génies des jours, que l'auteur présente avec prudence."
+              },
+              {
+                "title": "The Sociolinguistic of Akan Personal Names",
+                "author": "Kofi Agyekum",
+                "year": 2006,
+                "url": "https://www.njas.fi/njas/article/download/24/16/38",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 214",
+                "notes": "Nordic Journal of African Studies, vol. 15, n° 2, 2006, p. 206-235. Lu le 15 octobre 2026. Page 213 : le nom du jour est appelé kradin, « nom de l'âme ». Page 214 : le tableau des noms de jour en twi et en fante. Page 215 : les surnoms d'éloge de chaque jour."
+              },
+              {
+                "title": "Personal Names as a Reflection of Social Relations among the Nzema of Ghana",
+                "author": "Vinigi L. Grottanelli",
+                "year": 1977,
+                "url": "https://rosa.uniroma1.it/rosa03/uomo/article/view/15546",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 151, 161",
+                "notes": "Vinigi L. Grottanelli, L'Uomo. Società Tradizione Sviluppo, vol. 1, n° 2, 1977, p. 149-175, d'après une enquête chez les Nzema de 1954 à 1977. Lu le 15 octobre 2026. Page 151 : sept noms de garçons et sept noms de filles selon le jour. Page 161 : tableau des noms de jour nzema ; les en-têtes « garçons » et « filles » y sont inversés à l'impression, le texte de la page 151 donne la bonne lecture."
+              },
+              {
+                "title": "The Languages of the Akan Peoples",
+                "author": "Florence Abena Dolphyne",
+                "year": 1986,
+                "url": "https://pdfproc.lib.msu.edu/?file=%2FDMC%2FAfrican+Journals%2Fpdfs%2FInstitue+of+African+Studies+Research+Review%2F1986v2n1%2Fasrv002001002.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5-6",
+                "notes": "Florence Abena Dolphyne, Research Review (Institute of African Studies, University of Ghana), nouvelle série, vol. 2, n° 1, 1986 ; écrit en 1975. Lu le 15 octobre 2026 dans le PDF des African e-Journals de l'université d'État du Michigan. Pages 5 à 7 du tapuscrit : les noms de jour des Anyi (Agni), des Baoulé et des Nzema sont décalés d'un jour par rapport au twi-fante ; tableaux des deux groupes et des Nzema du Ghana ; hypothèse sur l'origine de l'écart."
+              },
+              {
+                "title": "Les noms Wè : valeur expressive et didactive, un exemple de créativité poétique dans la littérature orale africaine",
+                "author": "Doh Clément Pagnet",
+                "year": 2005,
+                "url": "https://hdl.handle.net/20.500.12177/1675",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 260",
+                "notes": "Thèse de Doh Clément Pagnet, Université de Cocody, soutenue le 20 mai 2005. Relue le 15 octobre 2026 dans le dépôt DICAMES du CAMES (le lien handle était alors inaccessible ; la page du dépôt est http://dicames.online/jspui/handle/20.500.12177/1675). Page 260 : les noms donnés selon le jour de naissance chez les Baoulé. L'auteur ne cite pas de source pour cette liste. Le titre original écrit « didactive »."
+              },
+              {
+                "title": "Essai de manuel de la langue agni, parlée dans la moitié orientale de la Côte d'Ivoire",
+                "author": "Maurice Delafosse",
+                "year": 1900,
+                "url": "https://archive.org/details/essaidemanuelde00delagoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 133",
+                "notes": "Paris, J. André, 1900. Lu sur l'exemplaire numérisé d'archive.org. Page 133 : le tableau des noms de jour agni, garçons et filles. Page 134, note 1 : les mêmes noms chez les Achanti de Coumassie, cités dans le même ordre. Auteur de l'époque coloniale, cité ici pour les formes qu'il relève."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "Proposé en 1975"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Selon la linguiste ghanéenne Florence Abena Dolphyne, les Agni, les Baoulé et les Nzema nomment les jours de la semaine avec un jour de décalage par rapport aux Ashanti et aux Fante. Les Nzema donnent pourtant à leurs enfants les noms des Ashanti, aux mêmes jours qu'eux. Elle dit ne pas savoir quelle façon de compter est la plus ancienne. Elle propose une explication : chaque groupe aurait calé ses jours sur la semaine européenne de son côté, la semaine anglaise commençant le dimanche et la française le lundi. C'est son hypothèse ; elle ne la démontre pas.",
+            "hypothesisGroup": "decalage-semaine",
+            "sources": [
+              {
+                "title": "The Languages of the Akan Peoples",
+                "author": "Florence Abena Dolphyne",
+                "year": 1986,
+                "url": "https://pdfproc.lib.msu.edu/?file=%2FDMC%2FAfrican+Journals%2Fpdfs%2FInstitue+of+African+Studies+Research+Review%2F1986v2n1%2Fasrv002001002.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5-7",
+                "notes": "Florence Abena Dolphyne, Research Review (Institute of African Studies, University of Ghana), nouvelle série, vol. 2, n° 1, 1986 ; écrit en 1975. Lu le 15 octobre 2026 dans le PDF des African e-Journals de l'université d'État du Michigan. Pages 5 à 7 du tapuscrit : les noms de jour des Anyi (Agni), des Baoulé et des Nzema sont décalés d'un jour par rapport au twi-fante ; tableaux des deux groupes et des Nzema du Ghana ; hypothèse sur l'origine de l'écart."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "aspect": "meaning",
+            "statement": "Le linguiste Kofi Agyekum donne Kwame pour le garçon né le samedi et Amma pour la fille. Il explique que les Akan appellent ce nom kradin, « le nom de l'âme ».",
+            "sources": [
+              {
+                "title": "The Sociolinguistic of Akan Personal Names",
+                "author": "Kofi Agyekum",
+                "year": 2006,
+                "url": "https://www.njas.fi/njas/article/download/24/16/38",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Nordic Journal of African Studies, vol. 15, n° 2, 2006, p. 206-235. Lu le 15 octobre 2026. Page 213 : le nom du jour est appelé kradin, « nom de l'âme ». Page 214 : le tableau des noms de jour en twi et en fante. Page 215 : les surnoms d'éloge de chaque jour.",
+                "page": "p. 213-214"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1968,
+              "to": 1968,
+              "label": "Constaté en 1968"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "En Côte d'Ivoire, chez les Baoulé, Kouamé est le nom du garçon né le dimanche, selon la thèse de Doh Clément Pagnet. L'ethnologue Pierre Étienne constate en 1968 que la semaine baoulé est placée un jour plus tard que celle des Ashanti et des Fanti ; il n'explique pas cet écart ; la linguiste Florence Abena Dolphyne propose une hypothèse, présentée plus bas.",
+            "sources": [
+              {
+                "title": "Les Baoulé et le temps",
+                "author": "Pierre Étienne",
+                "year": 1968,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_4/sci_hum/19805.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18, note 1",
+                "notes": "Cahiers ORSTOM, série Sciences humaines, vol. V, n° 3, 1968. Article fondé sur l'enquête de terrain de l'auteur chez les Baoulé. Lu le 15 octobre 2026. Page 18 et note 1 : la semaine baoulé et l'écart d'un jour avec les Ashanti, les Fanti, les Agni et les Abron ; page 19 : un enfant né après le coucher du soleil reçoit le nom du jour suivant."
+              },
+              {
+                "title": "Les noms Wè : valeur expressive et didactive, un exemple de créativité poétique dans la littérature orale africaine",
+                "author": "Doh Clément Pagnet",
+                "year": 2005,
+                "url": "https://hdl.handle.net/20.500.12177/1675",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 260",
+                "notes": "Thèse de Doh Clément Pagnet, Université de Cocody, soutenue le 20 mai 2005. Relue le 15 octobre 2026 dans le dépôt DICAMES du CAMES (le lien handle était alors inaccessible ; la page du dépôt est http://dicames.online/jspui/handle/20.500.12177/1675). Page 260 : les noms donnés selon le jour de naissance chez les Baoulé. L'auteur ne cite pas de source pour cette liste. Le titre original écrit « didactive »."
               }
             ]
           },

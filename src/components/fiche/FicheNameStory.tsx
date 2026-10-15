@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { FicheSection } from "@/components/fiche/FicheSection";
 import { splitLeadSentence } from "@/lib/fiche/prose";
 import { ficheNameStoryCopy } from "@/lib/i18n/copy/ficheNameStory";
@@ -32,6 +33,8 @@ export interface FicheNameStoryProps {
    * the classes whose fiche states it up front (families). Absent, no note.
    */
   caution?: string;
+  /** Drawn after the forms, inside the chapter (the competing readings, brief 3). */
+  children?: ReactNode;
 }
 
 function cutAtWord(sentence: string): string {
@@ -114,6 +117,7 @@ export function FicheNameStory({
   language,
   chapter = false,
   caution,
+  children,
 }: FicheNameStoryProps) {
   const words = ficheNameStoryCopy[language];
   const origin = naming.origin?.trim();
@@ -195,8 +199,14 @@ export function FicheNameStory({
   );
 
   return chapter ? (
-    <FicheSection title={words.eyebrow}>{body}</FicheSection>
+    <FicheSection title={words.eyebrow}>
+      {body}
+      {children}
+    </FicheSection>
   ) : (
-    body
+    <>
+      {body}
+      {children}
+    </>
   );
 }

@@ -4595,3 +4595,31 @@ svg { display: block; }
   border-left: 2px solid var(--afh-border);
   font-size: var(--afh-text-small); line-height: 1.6; color: var(--afh-text-soft);
 }
+
+/* ============================================================
+   Brief 4 (2026-10-15): the language-family fiche. A family's
+   classification status is said in a sentence, above its
+   figures, rather than worn as a badge. New selectors only.
+   ============================================================ */
+.ea-classification {
+  margin-top: var(--afh-space-lg); padding-left: var(--afh-space-lg);
+  border-left: 2px solid var(--afh-color-colonial);
+  font-size: var(--afh-text-small); line-height: 1.6; color: var(--afh-text);
+}
+
+/* ============================================================
+   Brief 5 (2026-10-15): the country fiche. A name whose origin
+   the sources tell in several ways folds its readings under its
+   row in « L'histoire des noms ». New selectors only.
+   ============================================================ */
+.ea-form-readings > summary {
+  display: flex; align-items: center; gap: var(--afh-space-md);
+  min-height: 44px; cursor: pointer; list-style: none;
+}
+.ea-form-readings > summary::-webkit-details-marker { display: none; }
+.ea-form-readings-count {
+  margin-left: auto; white-space: nowrap;
+  font-family: var(--afh-font-mono); font-size: var(--afh-text-caption);
+  color: var(--afh-text-soft);
+}
+.ea-form-readings[open] > summary .ea-voice-caret { transform: rotate(180deg); }

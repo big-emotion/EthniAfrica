@@ -49,6 +49,9 @@ two is wrong, and the fix is decided, not improvised.
 |                   | `FLG_BANTU`                                  | `family-bantu`       |
 |                   | `FLG_MANDE`                                  | `family-mande`       |
 |                   | Pays `CIV`                                   | `country-civ`        |
+|                   | État : explications de Côte de Quaqua        | `country-state-civ-quaqua` |
+|                   | État mince : pays `GAB`                      | `country-state-thin-gab` |
+|                   | État : nom partagé, pays `COG`               | `country-state-shared-congo` |
 | 4 · Other pages   | Nom `PAT_TRAORE`                             | `name-traore`        |
 |                   | Lieu `LOC_YAMOUSSOUKRO`                      | `place-yamoussoukro` |
 |                   | Glossaire                                    | `glossary`           |
@@ -66,6 +69,8 @@ are recorded whole, folded as the site folds them.
 | 2026-10-14 | [Brief 1, the search result page](../briefs/01-result-page-timeline.md) | `search-peul`, `search-bassa`, `search-congo`, `search-unknown`, the three `search-state-*`, `Main` |
 | 2026-10-15 | [Brief 2, the people fiche](../briefs/02-people.md) | `people-fula`, `people-bassa`, `people-thin-alaba`, `Main` |
 | 2026-10-15 | [Brief 3, the language fiche](../briefs/03-language.md) | `language-lingala`, `language-thin-havu` (new) |
+| 2026-10-15 | [Brief 4, the language-family fiche](../briefs/04-language-family.md) | `family-bantu`, `family-mande` |
+| 2026-10-15 | [Brief 5, the country fiche](../briefs/05-country.md) | `country-civ`, `country-state-civ-quaqua`, `country-state-thin-gab`, `country-state-shared-congo` (new) |
 
 The boards of a changed page no longer record v5.2.0: they are the approved
 target, and the code is behind them until the implementation lands.
