@@ -52,6 +52,15 @@
           "sourceRefs": ["westermann-1907-ewe"]
         }
       ]
+    },
+    {
+      "spelling": "Kwao",
+      "attestations": [
+        {
+          "countryId": "GHA",
+          "sourceRefs": ["grottanelli-1977-nzema-names"]
+        }
+      ]
     }
   ],
   "transmissionMode": "non_hereditary",
@@ -105,6 +114,14 @@
       "peopleId": "PPL_EWE",
       "status": "attested",
       "sourceRefs": ["westermann-1907-ewe"]
+    },
+    {
+      "peopleId": "PPL_NZEMA",
+      "status": "attested",
+      "sourceRefs": [
+        "grottanelli-1977-nzema-names",
+        "dolphyne-1986-akan-languages"
+      ]
     }
   ],
   "countries": [
@@ -224,6 +241,22 @@
       "tier": "official",
       "source_kind": "linguistic_reference",
       "notes": "Notice de la langue yao, parlée au Malawi, au Mozambique et en Tanzanie ; déjà citée par la fiche du peuple Yao."
+    },
+    {
+      "sourceKey": "dolphyne-1986-akan-languages",
+      "title": "The Languages of the Akan Peoples",
+      "url": "https://pdfproc.lib.msu.edu/?file=%2FDMC%2FAfrican+Journals%2Fpdfs%2FInstitue+of+African+Studies+Research+Review%2F1986v2n1%2Fasrv002001002.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Florence Abena Dolphyne, Research Review (Institute of African Studies, University of Ghana), nouvelle série, vol. 2, n° 1, 1986 ; écrit en 1975. Lu le 15 octobre 2026 dans le PDF des African e-Journals de l'université d'État du Michigan. Pages 5 à 7 du tapuscrit : les noms de jour des Anyi (Agni), des Baoulé et des Nzema sont décalés d'un jour par rapport au twi-fante ; tableaux des deux groupes et des Nzema du Ghana ; hypothèse sur l'origine de l'écart."
+    },
+    {
+      "sourceKey": "grottanelli-1977-nzema-names",
+      "title": "Personal Names as a Reflection of Social Relations among the Nzema of Ghana",
+      "url": "https://rosa.uniroma1.it/rosa03/uomo/article/view/15546",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Vinigi L. Grottanelli, L'Uomo. Società Tradizione Sviluppo, vol. 1, n° 2, 1977, p. 149-175, d'après une enquête chez les Nzema de 1954 à 1977. Lu le 15 octobre 2026. Page 151 : sept noms de garçons et sept noms de filles selon le jour. Page 161 : tableau des noms de jour nzema ; les en-têtes « garçons » et « filles » y sont inversés à l'impression, le texte de la page 151 donne la bonne lecture."
     }
   ],
   "gaps": [
@@ -249,7 +282,7 @@
     }
   ],
   "nameHistory": {
-    "summary": "Yao est un nom de jour : on le donne à un garçon d'après le jour de la semaine où il naît, et sa sœur née le même jour s'appelle Aya. Chez les Baoulé et les Agni de Côte d'Ivoire, c'est le nom du garçon né le vendredi. Au Ghana, en twi, le même nom s'écrit Yaw et désigne le garçon né le jeudi ; la fille s'y appelle Yaa. En fante, on dit Ekow ou Kwaw, et en éwé, au Togo, Yawo. Toute la semaine des noms est décalée d'un jour d'un pays à l'autre ; un ethnologue l'a constaté en 1968, sans l'expliquer. En Côte d'Ivoire, une loi de 1964 a fait de ce nom de naissance un nom de famille.",
+    "summary": "Yao est un nom de jour : on le donne à un garçon d'après le jour de la semaine où il naît, et sa sœur née le même jour s'appelle Aya. Chez les Baoulé et les Agni de Côte d'Ivoire, c'est le nom du garçon né le vendredi. Au Ghana, en twi, le même nom s'écrit Yaw et désigne le garçon né le jeudi ; la fille s'y appelle Yaa. En fante, on dit Ekow ou Kwaw, et en éwé, au Togo, Yawo. Entre les Baoulé et les Ashanti, toute la semaine des noms est décalée d'un jour ; un ethnologue l'a constaté en 1968, et une linguiste en propose une explication. En Côte d'Ivoire, une loi de 1964 a fait de ce nom de naissance un nom de famille.",
     "names": [
       {
         "nameText": "Yao",
@@ -303,13 +336,108 @@
           },
           {
             "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Le même nom se retrouve chez plusieurs peuples akan. Chez les Ashanti, le garçon s'appelle Yaw et la fille Yaa ; chez les Fante, Ekow et Aba ; chez les Nzema du Ghana, Kwao et Yaba. Tous sont nés le jeudi. Chez les Baoulé et chez les Agni, Yao et Aya sont nés le vendredi.",
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "annexe D, p. 662-663",
+                "notes": "Bâle, Evangelical Missionary Society, 1881. Lu sur l'exemplaire numérisé d'archive.org. Annexe D, p. 662-663 : la liste des sept jours, des noms de garçons et de filles, et l'explication par les génies des jours, que l'auteur présente avec prudence."
+              },
+              {
+                "title": "The Sociolinguistic of Akan Personal Names",
+                "author": "Kofi Agyekum",
+                "year": 2006,
+                "url": "https://www.njas.fi/njas/article/download/24/16/38",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 214",
+                "notes": "Nordic Journal of African Studies, vol. 15, n° 2, 2006, p. 206-235. Lu le 15 octobre 2026. Page 213 : le nom du jour est appelé kradin, « nom de l'âme ». Page 214 : le tableau des noms de jour en twi et en fante. Page 215 : les surnoms d'éloge de chaque jour."
+              },
+              {
+                "title": "Personal Names as a Reflection of Social Relations among the Nzema of Ghana",
+                "author": "Vinigi L. Grottanelli",
+                "year": 1977,
+                "url": "https://rosa.uniroma1.it/rosa03/uomo/article/view/15546",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 151, 161",
+                "notes": "Vinigi L. Grottanelli, L'Uomo. Società Tradizione Sviluppo, vol. 1, n° 2, 1977, p. 149-175, d'après une enquête chez les Nzema de 1954 à 1977. Lu le 15 octobre 2026. Page 151 : sept noms de garçons et sept noms de filles selon le jour. Page 161 : tableau des noms de jour nzema ; les en-têtes « garçons » et « filles » y sont inversés à l'impression, le texte de la page 151 donne la bonne lecture."
+              },
+              {
+                "title": "The Languages of the Akan Peoples",
+                "author": "Florence Abena Dolphyne",
+                "year": 1986,
+                "url": "https://pdfproc.lib.msu.edu/?file=%2FDMC%2FAfrican+Journals%2Fpdfs%2FInstitue+of+African+Studies+Research+Review%2F1986v2n1%2Fasrv002001002.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5-6",
+                "notes": "Florence Abena Dolphyne, Research Review (Institute of African Studies, University of Ghana), nouvelle série, vol. 2, n° 1, 1986 ; écrit en 1975. Lu le 15 octobre 2026 dans le PDF des African e-Journals de l'université d'État du Michigan. Pages 5 à 7 du tapuscrit : les noms de jour des Anyi (Agni), des Baoulé et des Nzema sont décalés d'un jour par rapport au twi-fante ; tableaux des deux groupes et des Nzema du Ghana ; hypothèse sur l'origine de l'écart."
+              },
+              {
+                "title": "Les noms Wè : valeur expressive et didactive, un exemple de créativité poétique dans la littérature orale africaine",
+                "author": "Doh Clément Pagnet",
+                "year": 2005,
+                "url": "https://hdl.handle.net/20.500.12177/1675",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 260",
+                "notes": "Thèse de Doh Clément Pagnet, Université de Cocody, soutenue le 20 mai 2005. Relue le 15 octobre 2026 dans le dépôt DICAMES du CAMES (le lien handle était alors inaccessible ; la page du dépôt est http://dicames.online/jspui/handle/20.500.12177/1675). Page 260 : les noms donnés selon le jour de naissance chez les Baoulé. L'auteur ne cite pas de source pour cette liste. Le titre original écrit « didactive »."
+              },
+              {
+                "title": "Essai de manuel de la langue agni, parlée dans la moitié orientale de la Côte d'Ivoire",
+                "author": "Maurice Delafosse",
+                "year": 1900,
+                "url": "https://archive.org/details/essaidemanuelde00delagoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 133",
+                "notes": "Paris, J. André, 1900. Lu sur l'exemplaire numérisé d'archive.org. Page 133 : le tableau des noms de jour agni, garçons et filles. Page 134, note 1 : les mêmes noms chez les Achanti de Coumassie, cités dans le même ordre. Auteur de l'époque coloniale, cité ici pour les formes qu'il relève."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "Proposé en 1975"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Selon la linguiste ghanéenne Florence Abena Dolphyne, les Agni, les Baoulé et les Nzema nomment les jours de la semaine avec un jour de décalage par rapport aux Ashanti et aux Fante. Les Nzema donnent pourtant à leurs enfants les noms des Ashanti, aux mêmes jours qu'eux. Elle dit ne pas savoir quelle façon de compter est la plus ancienne. Elle propose une explication : chaque groupe aurait calé ses jours sur la semaine européenne de son côté, la semaine anglaise commençant le dimanche et la française le lundi. C'est son hypothèse ; elle ne la démontre pas.",
+            "hypothesisGroup": "decalage-semaine",
+            "sources": [
+              {
+                "title": "The Languages of the Akan Peoples",
+                "author": "Florence Abena Dolphyne",
+                "year": 1986,
+                "url": "https://pdfproc.lib.msu.edu/?file=%2FDMC%2FAfrican+Journals%2Fpdfs%2FInstitue+of+African+Studies+Research+Review%2F1986v2n1%2Fasrv002001002.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5-7",
+                "notes": "Florence Abena Dolphyne, Research Review (Institute of African Studies, University of Ghana), nouvelle série, vol. 2, n° 1, 1986 ; écrit en 1975. Lu le 15 octobre 2026 dans le PDF des African e-Journals de l'université d'État du Michigan. Pages 5 à 7 du tapuscrit : les noms de jour des Anyi (Agni), des Baoulé et des Nzema sont décalés d'un jour par rapport au twi-fante ; tableaux des deux groupes et des Nzema du Ghana ; hypothèse sur l'origine de l'écart."
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1968,
               "to": 1968,
               "label": "Constaté en 1968"
             },
             "era": "modern",
             "aspect": "usage",
-            "statement": "Chez les Baoulé, le jour appelé ya est le vendredi, et le garçon né ce jour-là s'appelle Yao. Chez les Ashanti et les Fanti du Ghana, le même nom va au garçon né le jeudi : toute la semaine des noms y est placée un jour plus tôt, comme le constate l'ethnologue Pierre Étienne pour le premier jour de la semaine. Il n'explique pas cet écart d'un jour. Les autres sources lues ne l'expliquent pas non plus.",
+            "statement": "Chez les Baoulé, le jour appelé ya est le vendredi, et le garçon né ce jour-là s'appelle Yao. Chez les Ashanti et les Fanti du Ghana, le même nom va au garçon né le jeudi : toute la semaine des noms y est placée un jour plus tôt, comme le constate l'ethnologue Pierre Étienne pour le premier jour de la semaine. Il n'explique pas cet écart d'un jour. La linguiste Florence Abena Dolphyne propose une hypothèse, présentée plus bas.",
             "sources": [
               {
                 "title": "Les Baoulé et le temps",

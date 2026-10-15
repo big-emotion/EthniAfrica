@@ -59,7 +59,17 @@ const CLOSING_HOLD = 75; // 2.5 s
 const RECOMMENDED_LENGTH = [35, 75];
 // 0.4.0 voice timing (README, Voice): a chunk appears 150 ms before its first
 // word; the last stays 200 ms after its last word, then fades in 200 ms.
-const VOICE = { lead: 0.15, hold: 0.2, tail: 0.5, maxCps: 17, fade: 6 };
+// Reading speed (operator, 15 October 2026): 17 characters a second is the
+// recommendation, a faster chunk loads with a warning; 20 is the limit, past
+// which a subtitle cannot be read and the chunk is refused.
+const VOICE = {
+  lead: 0.15,
+  hold: 0.2,
+  tail: 0.5,
+  recommendedCps: 17,
+  maxCps: 20,
+  fade: 6,
+};
 const toFrame = (seconds) => Math.round(seconds * FPS);
 const fail = (message) => {
   throw new Error(message);
@@ -194,6 +204,7 @@ function schedule(seq, words) {
   seq.chunks = chunks;
   if (chunks[0].appear < 1)
     fail("The first word comes too early: frame 0, the cover, has no subtitle");
+  const fastChunks = [];
   chunks.forEach((chunk, k) => {
     const next = chunks[k + 1];
     chunk.fullFrom = k ? chunk.appear : chunk.appear + VOICE.fade;
@@ -201,13 +212,14 @@ function schedule(seq, words) {
       ? next.appear
       : Math.max(chunk.fullFrom, toFrame(chunk.words.at(-1).end + VOICE.hold));
     chunk.gone = next ? next.appear : chunk.fullTo + VOICE.fade;
-    const needed = Math.ceil(
-      (subtitleCharacters(chunk.text) / VOICE.maxCps) * FPS - 1e-9
-    );
-    if (chunk.gone - chunk.appear < needed)
+    const framesFor = (cps) =>
+      Math.ceil((subtitleCharacters(chunk.text) / cps) * FPS - 1e-9);
+    const shown = chunk.gone - chunk.appear;
+    if (shown < framesFor(VOICE.maxCps))
       fail(
-        `« ${chunk.text} » would read faster than 17 characters a second; the voice needs ${Math.ceil(((needed - (chunk.gone - chunk.appear)) * 1000) / FPS)} ms more`
+        `« ${chunk.text} » would read faster than ${VOICE.maxCps} characters a second; the voice needs ${Math.ceil(((framesFor(VOICE.maxCps) - shown) * 1000) / FPS)} ms more`
       );
+    if (shown < framesFor(VOICE.recommendedCps)) fastChunks.push(chunk.text);
   });
   // A card is fully in when its first chunk appears; the cross-fade that
   // brings it in takes the 300 ms before.
@@ -228,6 +240,10 @@ function schedule(seq, words) {
   );
   const seconds = seq.frames / FPS;
   seq.warnings = [];
+  if (fastChunks.length)
+    seq.warnings.push(
+      `${fastChunks.length} chunk(s) read faster than the recommended ${VOICE.recommendedCps} characters a second: ${fastChunks.map((t) => `« ${t} »`).join(", ")}`
+    );
   if (seconds < RECOMMENDED_LENGTH[0] || seconds > RECOMMENDED_LENGTH[1])
     seq.warnings.push(
       `A series video's recommended length is ${RECOMMENDED_LENGTH[0]} to ${RECOMMENDED_LENGTH[1]} s; this one lasts ${seconds.toFixed(1)} s`
