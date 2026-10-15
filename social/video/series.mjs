@@ -148,7 +148,10 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
           id: `chapitre-${n}`,
           type: "chapter",
           chapter: { n, of: chapters.length, title },
+          // An image of its own brings its own credit: a CC BY-SA picture
+          // shown without its attribution breaks its licence.
           ...(beat.image && { image: structuredClone(beat.image) }),
+          ...(beat.image && beat.credit && { credit: beat.credit }),
         },
         chunks: [],
       };
