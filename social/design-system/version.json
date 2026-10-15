@@ -1,93 +1,119 @@
 {
   "name": "EthniAfrica Cartes",
-  "version": "1.4.1-proposition",
-  "date": "2026-10-14",
+  "version": "1.5.0-proposition",
+  "date": "2026-10-15",
   "status": "accepted",
   "artifact": "https://claude.ai/artifact/FMuUA1zKTU9P8qwdrmmQML",
-  "scope": "Amends one rule of 1.4.0: in the series video, a map card is drawn by the satellite video engine on imagery (flat top-down view, recede grade, the satellite overlay grammar, Natural Earth outlines and shared borders), no longer on a flat base map; no 9:16 base map is built per region; atlas cards stay on the carousel. Everything else in 1.4.0 and every carousel card are unchanged.",
+  "scope": "Adds a map sequence to the series video: one or more consecutive map cards sharing one map, areas from sourced files entering on the word that names them, one ink per name (a fourth ink, area-d lilac), the language stacked under the name, no imagery cross-fade between cards of a sequence, a flat change of view allowed only during a card change, and the end state shown at once when the map returns. Everything in 1.4.1 and every carousel card are unchanged.",
   "acceptance": {
-    "date": "2026-10-14",
+    "date": "2026-10-15",
     "by": "operator",
-    "decision": "The operator accepted EthniAfrica Cartes 1.4.1-proposition on 14 October 2026 as proposed: in the series video, a map card is drawn on satellite imagery by the satellite video engine (still top-down view, recede grade, the overlays of Vidéo carte 0.4.0, Natural Earth outlines and shared borders, names on their halos, the key in the foot); atlas cards stay on the carousel; a Parchemin map card is drawn like a Nuit one; the scale limit of the verified imagery applies, and a subject too small for it is refused.",
-    "scope": "Visual design reference for the series video's map cards. Carousel cards and the flat base maps are unchanged. Until a finer imagery file is verified, a small subject such as serie-frontieres-02 is drawn wider than its carousel card."
+    "decision": "The operator accepted EthniAfrica Cartes 1.5.0-proposition (the map sequence of the series video) on 15 October 2026 with the designer's recommendations on its four questions.",
+    "answers": {
+      "colour": "one ink per name, not per region",
+      "viewChange": "the view changes between two cards of a sequence, 900 ms, flat; no single wide view",
+      "amazighArea": "a present-day Amazigh area built by areas.mjs from its own cited source, checked by the operator before the episode; al-Idrisi's « Pays des Berbères » is not used for the episode",
+      "summary": "everything at once, nothing replays"
+    },
+    "scope": "Visual design reference for map sequences in the series video. Carousel cards are unchanged. The boards' texts are demonstration text and their areas board geometries."
   },
   "videoLayout": "full",
   "videoMapCards": "satellite",
+  "videoMapSequence": true,
   "proposal": {
-    "date": "2026-10-14",
-    "brief": "social/design-system/proposals/1.4.1-proposition/claude-design-brief.md"
+    "date": "2026-10-15",
+    "brief": "social/design-system/proposals/1.5.0-proposition/claude-design-brief.md (the signature line brief, first filed under 1.5.0, is renumbered 1.6.0)"
   },
-  "videoBoards": ".local/research/social-production-2026-10-09/design-system-1.4.1-video/",
+  "videoBoards": ".local/research/social-production-2026-10-09/design-system-1.5.0-video/",
   "previous": {
     "name": "EthniAfrica Cartes",
-    "version": "1.4.0-proposition",
+    "version": "1.4.1-proposition",
     "date": "2026-10-14",
     "status": "accepted",
     "artifact": "https://claude.ai/artifact/FMuUA1zKTU9P8qwdrmmQML",
-    "scope": "Replaces only the series video's layout (1.3.0 layout B) by a full-screen layout: the image fills the 1080 × 1920 frame, only text sits on it, every text with a dark outline, no shadow zone, nothing fitted to the networks' interface. Adds eight on-image-* tokens used by the video only. Cards, the band on cards, the seven carousel models and the images are unchanged.",
+    "scope": "Amends one rule of 1.4.0: in the series video, a map card is drawn by the satellite video engine on imagery (flat top-down view, recede grade, the satellite overlay grammar, Natural Earth outlines and shared borders), no longer on a flat base map; no 9:16 base map is built per region; atlas cards stay on the carousel. Everything else in 1.4.0 and every carousel card are unchanged.",
     "acceptance": {
       "date": "2026-10-14",
       "by": "operator",
-      "decision": "The operator accepted EthniAfrica Cartes 1.4.0-proposition (the series video in full screen) on 14 October 2026 and answered its four open questions with the designer's recommendations: the same light inks on a dark outline in both themes; the heads swap inside the 300 ms card change; the series band at y 250, inside the profile grid's 3:4 thumbnail; 9:16 base maps per region for map cards whose card base map is too short.",
-      "answers": {
-        "parcheminOnImage": "same light inks on a dark outline in both themes",
-        "cardChange": "heads swap inside the 300 ms (out in 150, in in 150), images cross-fade over 300 ms",
-        "seriesBand": "y 250 to 290",
-        "shortBaseMaps": "build a 9:16 base map per region from Natural Earth"
-      },
-      "scope": "Visual design reference for the series video. Cards are unchanged. The model texts are demonstration text, and the library images are web renditions too small for a 9:16 frame: production takes the full-resolution files."
+      "decision": "The operator accepted EthniAfrica Cartes 1.4.1-proposition on 14 October 2026 as proposed: in the series video, a map card is drawn on satellite imagery by the satellite video engine (still top-down view, recede grade, the overlays of Vidéo carte 0.4.0, Natural Earth outlines and shared borders, names on their halos, the key in the foot); atlas cards stay on the carousel; a Parchemin map card is drawn like a Nuit one; the scale limit of the verified imagery applies, and a subject too small for it is refused.",
+      "scope": "Visual design reference for the series video's map cards. Carousel cards and the flat base maps are unchanged. Until a finer imagery file is verified, a small subject such as serie-frontieres-02 is drawn wider than its carousel card."
     },
     "videoLayout": "full",
+    "videoMapCards": "satellite",
     "proposal": {
       "date": "2026-10-14",
-      "brief": "social/design-system/proposals/1.4.0-proposition/claude-design-brief.md (branch feat/social-series-video-b)"
+      "brief": "social/design-system/proposals/1.4.1-proposition/claude-design-brief.md (recette)"
     },
-    "videoBoards": ".local/research/social-production-2026-10-09/design-system-1.4.0-video/",
+    "videoBoards": ".local/research/social-production-2026-10-09/design-system-1.4.1-video/",
     "previous": {
-      "version": "1.3.0-proposition",
-      "date": "2026-10-13",
+      "version": "1.4.0-proposition",
+      "date": "2026-10-14",
       "status": "accepted",
+      "scope": "Replaces only the series video's layout (1.3.0 layout B) by a full-screen layout: the image fills the 1080 × 1920 frame, only text sits on it, every text with a dark outline, no shadow zone, nothing fitted to the networks' interface. Adds eight on-image-* tokens used by the video only. Cards, the band on cards, the seven carousel models and the images are unchanged.",
       "acceptance": {
         "date": "2026-10-14",
         "by": "operator",
-        "decision": "The operator accepted EthniAfrica Cartes 1.3.0-proposition (series band, seven carousel models with an image proposal per card, series video model) in the Claude Design conversation on 14 October 2026, and chose video layout B, the video's own card kept inside the feed's safe zone (decision 4).",
-        "videoLayout": "B",
-        "scope": "Visual design reference. Renderer integration pending (see handoff.md, « Renderer integration of 1.3.0 »); the model texts are demonstration text, not validated content, and the cards marked « image à trouver » still need their image.",
-        "videoLayoutWithdrawn": {
+        "decision": "The operator accepted EthniAfrica Cartes 1.4.0-proposition (the series video in full screen) on 14 October 2026 and answered its four open questions with the designer's recommendations: the same light inks on a dark outline in both themes; the heads swap inside the 300 ms card change; the series band at y 250, inside the profile grid's 3:4 thumbnail; 9:16 base maps per region for map cards whose card base map is too short.",
+        "answers": {
+          "parcheminOnImage": "same light inks on a dark outline in both themes",
+          "cardChange": "heads swap inside the 300 ms (out in 150, in in 150), images cross-fade over 300 ms",
+          "seriesBand": "y 250 to 290",
+          "shortBaseMaps": "build a 9:16 base map per region from Natural Earth"
+        },
+        "scope": "Visual design reference for the series video. Cards are unchanged. The model texts are demonstration text, and the library images are web renditions too small for a 9:16 frame: production takes the full-resolution files."
+      },
+      "videoLayout": "full",
+      "proposal": {
+        "date": "2026-10-14",
+        "brief": "social/design-system/proposals/1.4.0-proposition/claude-design-brief.md (branch feat/social-series-video-b)"
+      },
+      "videoBoards": ".local/research/social-production-2026-10-09/design-system-1.4.0-video/",
+      "previous": {
+        "version": "1.3.0-proposition",
+        "date": "2026-10-13",
+        "status": "accepted",
+        "acceptance": {
           "date": "2026-10-14",
           "by": "operator",
-          "decision": "Decision 4 (layout B) withdrawn: « L'image dans la vidéo doit prendre tout l'écran. Il ne doit pas y avoir de zones d'ombre comme sur les cartes des carrousels, et il ne doit pas y avoir de réajustement par rapport à la visibilité de l'écran. La vidéo prend tout l'écran, et il n'y a que le texte. » The full-screen layout is commissioned as 1.4.0-proposition."
-        }
-      },
-      "proposal": {
-        "date": "2026-10-13",
-        "brief": "social/design-system/proposals/1.3.0-proposition/claude-design-brief.md"
-      },
-      "referenceImages": ".local/research/social-production-2026-10-09/design-system-1.3.0-references/",
-      "readingPreviews": ".local/research/social-production-2026-10-09/design-system-1.3.0-lecture/",
-      "videoBoards": ".local/research/social-production-2026-10-09/design-system-1.3.0-video/",
-      "previous": {
-        "version": "1.2.0-proposition",
-        "date": "2026-10-12",
-        "acceptance": {
-          "date": "2026-10-12",
-          "by": "operator",
-          "decision": "The operator accepted EthniAfrica Cartes 1.2.0-proposition (historical atlas map: approximate zones, regional keys, 1914 partition with named territories, dotted present-day borders, period marker, collision check) in the Claude Design conversation on 12 October 2026.",
-          "scope": "Visual design reference. The renderer integrated 1.2.0 on 12 October 2026 (reference manifest, 38 accepted references, tests; see social/renderer/README.md); sample entries, positions and dates are demonstration data, not validated content."
-        },
-        "referenceImages": ".local/research/social-production-2026-10-09/design-system-1.2.0-references/",
-        "readingPreviews": ".local/research/social-production-2026-10-09/design-system-1.2.0-lecture/",
-        "previous": {
-          "version": "1.1.0-proposition",
-          "date": "2026-10-10",
-          "acceptance": {
-            "date": "2026-10-10",
+          "decision": "The operator accepted EthniAfrica Cartes 1.3.0-proposition (series band, seven carousel models with an image proposal per card, series video model) in the Claude Design conversation on 14 October 2026, and chose video layout B, the video's own card kept inside the feed's safe zone (decision 4).",
+          "videoLayout": "B",
+          "scope": "Visual design reference. Renderer integration pending (see handoff.md, « Renderer integration of 1.3.0 »); the model texts are demonstration text, not validated content, and the cards marked « image à trouver » still need their image.",
+          "videoLayoutWithdrawn": {
+            "date": "2026-10-14",
             "by": "operator",
-            "decision": "The operator explicitly accepted EthniAfrica Cartes 1.1.0-proposition as the card design system in the production coordinator conversation.",
-            "scope": "Visual design reference; renderer integration and production acceptance checks remain pending."
+            "decision": "Decision 4 (layout B) withdrawn: « L'image dans la vidéo doit prendre tout l'écran. Il ne doit pas y avoir de zones d'ombre comme sur les cartes des carrousels, et il ne doit pas y avoir de réajustement par rapport à la visibilité de l'écran. La vidéo prend tout l'écran, et il n'y a que le texte. » The full-screen layout is commissioned as 1.4.0-proposition."
+          }
+        },
+        "proposal": {
+          "date": "2026-10-13",
+          "brief": "social/design-system/proposals/1.3.0-proposition/claude-design-brief.md"
+        },
+        "referenceImages": ".local/research/social-production-2026-10-09/design-system-1.3.0-references/",
+        "readingPreviews": ".local/research/social-production-2026-10-09/design-system-1.3.0-lecture/",
+        "videoBoards": ".local/research/social-production-2026-10-09/design-system-1.3.0-video/",
+        "previous": {
+          "version": "1.2.0-proposition",
+          "date": "2026-10-12",
+          "acceptance": {
+            "date": "2026-10-12",
+            "by": "operator",
+            "decision": "The operator accepted EthniAfrica Cartes 1.2.0-proposition (historical atlas map: approximate zones, regional keys, 1914 partition with named territories, dotted present-day borders, period marker, collision check) in the Claude Design conversation on 12 October 2026.",
+            "scope": "Visual design reference. The renderer integrated 1.2.0 on 12 October 2026 (reference manifest, 38 accepted references, tests; see social/renderer/README.md); sample entries, positions and dates are demonstration data, not validated content."
           },
-          "referenceImages": ".local/research/social-production-2026-10-09/design-system-references/",
-          "readingPreviews": ".local/research/social-production-2026-10-09/design-system-lecture/"
+          "referenceImages": ".local/research/social-production-2026-10-09/design-system-1.2.0-references/",
+          "readingPreviews": ".local/research/social-production-2026-10-09/design-system-1.2.0-lecture/",
+          "previous": {
+            "version": "1.1.0-proposition",
+            "date": "2026-10-10",
+            "acceptance": {
+              "date": "2026-10-10",
+              "by": "operator",
+              "decision": "The operator explicitly accepted EthniAfrica Cartes 1.1.0-proposition as the card design system in the production coordinator conversation.",
+              "scope": "Visual design reference; renderer integration and production acceptance checks remain pending."
+            },
+            "referenceImages": ".local/research/social-production-2026-10-09/design-system-references/",
+            "readingPreviews": ".local/research/social-production-2026-10-09/design-system-lecture/"
+          }
         }
       }
     }
