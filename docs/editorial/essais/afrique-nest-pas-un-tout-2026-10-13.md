@@ -396,10 +396,11 @@ Later the same day, key passages:
 > Chaque vidéo, vraiment, doit être vue comme une possibilité de partager la
 > morale
 
-### 6.2 Words to confirm
+### 6.2 Words misheard by the transcription
 
-The episode's session proposed these readings. **The operator has not
-confirmed them**; until then, nothing in 6.4 rests on them.
+The episode's session proposed these readings. **The operator confirmed them
+on 16 October 2026.** The three marked « unclear » have no reading, and
+nothing in 6.4 rests on them.
 
 | Transcribed                         | Proposed reading                        |
 | ----------------------------------- | --------------------------------------- |
@@ -415,8 +416,8 @@ confirmed them**; until then, nothing in 6.4 rests on them.
 
 1. **One word for the whole continent is used from inside too.** The operator
    names everyday uses: comparing « la France » with « l'Afrique », or saying
-   « je rentre en Afrique », in the diaspora as elsewhere (if 6.2's reading
-   holds). Section 5 already says the name came from outside.
+   « je rentre en Afrique », in the diaspora as elsewhere. Section 5 already
+   says the name came from outside.
 2. **« No common name inside »: an absence of evidence, not a proof.** The
    research of the « Afrique » episode found no source that gives a name for
    the whole continent coming from its own peoples. The one candidate,
@@ -444,7 +445,7 @@ confirmed them**; until then, nothing in 6.4 rests on them.
    understood in order to understand one another, never to set peoples
    against each other. This strengthens the rule of every fiche: each
    explanation with its source, and what is uncertain said as uncertain.
-5. **The griots, if 6.2's reading holds: a sourcing caveat.** The research of
+5. **The griots: a sourcing caveat.** The research of
    the « Afrique » episode found that Amadou Hampâté Bâ (UNESCO, _Histoire
    générale de l'Afrique_, vol. I, p. 215) says ordinary griots are bound to
    no discretion. Restraint is attested only for particular griots: Mamadou
