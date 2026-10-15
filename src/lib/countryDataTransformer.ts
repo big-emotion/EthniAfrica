@@ -82,6 +82,8 @@ export interface PeoplesData {
    * headcounts come from different years.
    */
   populationReferenceYear?: number;
+  /** Who counted the national total, in its short name (« UNFPA », brief 5). */
+  populationSource?: string;
   peopleCount: number;
   rows: PeopleRow[];
 }
@@ -241,6 +243,16 @@ export function transformHero(country: CountryDetail): HeroData {
   };
 }
 
+/**
+ * A source's short name, the part before its title: « UNFPA – World
+ * Population Dashboard » reads « UNFPA » under a figure (brief 5).
+ */
+// @req REQ-115
+export function shortSourceName(source?: string | null): string | undefined {
+  const name = source?.split(/\s[–-]\s/)[0]?.trim();
+  return name || undefined;
+}
+
 // @req REQ-001
 export function transformPeoples(
   demographics?: DemographicsSection,
@@ -265,6 +277,9 @@ export function transformPeoples(
       everyPeopleDeclaresPopulation: false,
       populationReferenceYear: totalPopulationIsNational
         ? demographics?.referenceYear
+        : undefined,
+      populationSource: totalPopulationIsNational
+        ? shortSourceName(demographics?.source)
         : undefined,
       peopleCount: 0,
       rows: [],
@@ -369,6 +384,9 @@ export function transformPeoples(
     everyPeopleDeclaresPopulation:
       filtered.length > 0 && counted.length === filtered.length,
     populationReferenceYear,
+    populationSource: totalPopulationIsNational
+      ? shortSourceName(demographics.source)
+      : undefined,
     // The peoples the atlas links to a record. Rows naming a group with no
     // record of its own are shares, not peoples the reader can open.
     peopleCount: rows.filter((row) => row.peopleId).length,

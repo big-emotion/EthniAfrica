@@ -8,36 +8,50 @@ import type { Language } from "@/types/shared";
 
 type Account = NameHistory["names"][number]["accounts"][number];
 
+type Name = NameHistory["names"][number];
+
 /**
- * The competing readings of a fiche's first name (brief 3, boards
- * language-lingala-*.dc.html): every account of a hypothesis group, side by
- * side from 768 px, numbered in the corpus's order and never ranked
- * (doctrine §1.1), each with its source diamond. The grammar is the
- * timeline's own (`search-state-competing`).
+ * The hypothesis groups of a name that hold more than one account: the
+ * competing readings of its origin, in the corpus's order.
  */
 // @req REQ-198
-export function FicheNameReadings({
-  history,
-  language,
-}: {
-  history: NameHistory;
-  language: Language;
-}) {
-  const copy = nameTimelineCopy[language];
-  const [first] = history.names;
-  if (!first) return null;
-  const forms = history.names.map((name) => name.nameText);
+export function competingReadings(name: Name): Array<[string, Account[]]> {
   const groups = new Map<string, Account[]>();
-  for (const account of first.accounts) {
+  for (const account of name.accounts) {
     if (!account.hypothesisGroup) continue;
     groups.set(account.hypothesisGroup, [
       ...(groups.get(account.hypothesisGroup) ?? []),
       account,
     ]);
   }
-  const competing = [...groups.entries()].filter(
-    ([, accounts]) => accounts.length > 1
-  );
+  return [...groups.entries()].filter(([, accounts]) => accounts.length > 1);
+}
+
+/**
+ * The competing readings of a fiche's name (brief 3, boards
+ * language-lingala-*.dc.html): every account of a hypothesis group, side by
+ * side from 768 px, numbered in the corpus's order and never ranked
+ * (doctrine §1.1), each with its source diamond. The grammar is the
+ * timeline's own (`search-state-competing`). The first name by default; a
+ * country fiche folds each name's readings under its row (brief 5).
+ */
+// @req REQ-198
+export function FicheNameReadings({
+  history,
+  language,
+  nameText,
+}: {
+  history: NameHistory;
+  language: Language;
+  nameText?: string;
+}) {
+  const copy = nameTimelineCopy[language];
+  const first = nameText
+    ? history.names.find((name) => name.nameText === nameText)
+    : history.names[0];
+  if (!first) return null;
+  const forms = history.names.map((name) => name.nameText);
+  const competing = competingReadings(first);
   if (competing.length === 0) return null;
 
   return (

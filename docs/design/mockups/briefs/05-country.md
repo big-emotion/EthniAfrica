@@ -124,3 +124,30 @@ A to Z index of family names behind « 47 noms attestés » (about 2,300 px),
 fold the five political entities to their names (about 600 px), fold
 « Culture et société » to its headings (about 700 px). The sources are
 already folded.
+
+## Implementation (2026-10-15)
+
+Decided with the operator after the boards were approved:
+
+1. Implement now, compared at 430, 768 and 1440 on the stories
+   `Fiches/Pays (brief 5)`, fed with the corpus fiches.
+2. The repeated official name is fixed in the data on seven fiches (`BEN`,
+   `CIV`, `COG`, `DJI`, `GAB`, `GIN`, `NER`). `BFA` keeps « Burkina Faso
+   (Burkina Faso) »: its official name is its name of ordinary use, and the
+   corpus rule FR33 refuses a `nameOfficial` equal to `nameFr`; the repetition
+   is how the fiche passes it. Left to a later decision on that rule.
+3. The Gabon etymology contradiction is left to the corpus.
+4. The next place is the first of the country's places, from A to Z, whose
+   fiche has a summary: Daloa for Côte d'Ivoire.
+5. Two countries share a name when the first name of one is a word of the
+   first name of the other (Congo, Guinée, Soudan). The note names both by
+   their official names and says they are different countries; it no longer
+   says « voisine » or « fleuve », which the data does not hold for every
+   pair. The next step then leads to the other country first.
+
+The boards were updated first on two lines: Daloa replaces Yamoussoukro on
+`country-civ`, and the Congo note reads « Deux pays portent le nom Congo :
+la République du Congo, dont parle cette page, et la République
+démocratique du Congo. Ce sont deux pays différents. » The silence on
+undated readings is drawn on the country fiche only, the one whose boards
+carry it.

@@ -98,9 +98,12 @@ function populationCaption(data: PeoplesData, language: Language): string {
       ? copy.inhabitants
       : copy.documentedInhabitants;
 
-  return data.populationReferenceYear
-    ? `${noun} · ${data.populationReferenceYear}`
-    : noun;
+  const when = data.populationReferenceYear
+    ? [data.populationSource, data.populationReferenceYear]
+        .filter(Boolean)
+        .join(", ")
+    : data.populationSource;
+  return when ? `${noun} · ${when}` : noun;
 }
 
 // ==========================================

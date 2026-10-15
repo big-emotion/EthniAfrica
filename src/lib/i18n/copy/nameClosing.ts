@@ -74,12 +74,15 @@ export interface NameClosingCopy {
      * them down, none recorded from the people who carry them (brief 4).
      */
     oralOnlyThrough: (name: string, authors: readonly string[]) => string;
+    /** A name whose competing readings carry no date at all (brief 5). */
+    undatedReadings: (count: number, name: string) => string;
     nextRelation: {
       family: string;
       patronyme: string;
       country: string;
       people: string;
       language: string;
+      place: string;
     };
     carrier: (carrier: string, place?: string) => string;
     reportedBy: (author: string, year: number | null, title: string) => string;
@@ -117,6 +120,15 @@ const SUBJECT_FR: Partial<Record<SearchEntityType, string>> = {
   languageFamily: "de cette famille de langues",
   patronyme: "de ce nom de famille",
   place: "de ce lieu",
+};
+
+/** Small counts in words, as a sentence reads them. */
+const COUNT_FR: Record<number, string> = {
+  2: "deux",
+  3: "trois",
+  4: "quatre",
+  5: "cinq",
+  6: "six",
 };
 
 function joinFr(items: readonly string[]): string {
@@ -190,12 +202,15 @@ export const nameClosingCopy: Record<Language, NameClosingCopy> = {
         `Aucune source du projet ne raconte encore le nom ${name}.`,
       oralOnlyThrough: (name, authors) =>
         `Les traditions orales sur le nom ${name} ne nous parviennent que par ${joinFr(authors)}. Le projet n’a pas encore de récit recueilli auprès de celles et ceux qui les transmettent.`,
+      undatedReadings: (count, name) =>
+        `Les ${COUNT_FR[count] ?? count} explications du nom ${name} ne sont pas datées.`,
       nextRelation: {
         family: "Famille de langues",
         patronyme: "Nom de famille",
         country: "Pays",
         people: "Peuple",
         language: "Langue",
+        place: "Lieu",
       },
       carrier: (carrier, place) =>
         `récit porté par ${carrier}${place ? `, ${place}` : ""}`,

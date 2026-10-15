@@ -41,7 +41,9 @@ const RECORDS: Array<{
     draw: (language) => (
       <CountryRecordView
         language={language}
-        country={countryRecord("NAM")}
+        // A country with a name history closes on the silences instead
+        // (brief 5); the amend band stays on the fiche without one.
+        country={{ ...countryRecord("NAM"), nameHistory: undefined }}
         onward={onward}
       />
     ),

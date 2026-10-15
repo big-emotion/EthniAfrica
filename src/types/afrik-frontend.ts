@@ -1,3 +1,4 @@
+import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 /**
  * AFRIK Frontend Types
  *
@@ -126,6 +127,9 @@ export interface CountryDetail {
 
   // Démographie
   demographics?: DemographicsSection;
+
+  /** The fiche's sourced name history (brief 5), when it declares one. */
+  nameHistory?: NameHistory;
 }
 
 // ==========================================
