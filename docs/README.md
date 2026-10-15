@@ -20,8 +20,6 @@ were referenced by nothing at all, two of them written that same week.
 - [Atlas mockups — the visual oracle](design/mockups/README.md)
 - [Brief 1 — The search result page with the timeline lens](design/mockups/briefs/01-result-page-timeline.md)
 - [Brief 2 — The people fiche](design/mockups/briefs/02-people.md)
-- [Brief 2 — The people fiche](design/mockups/briefs/02-people.md)
-- [Brief 2 — The people fiche](design/mockups/briefs/02-people.md)
 - [Brief 3 — The language fiche](design/mockups/briefs/03-language.md)
 - [Brief 4 — The language-family fiche](design/mockups/briefs/04-language-family.md)
 - [Brief 5 — The country fiche](design/mockups/briefs/05-country.md)
