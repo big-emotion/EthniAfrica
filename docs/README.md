@@ -31,6 +31,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Claude Design prompt, step 1 — shared rules and brief 1](design/mockups/briefs/claude-design-prompt-01.md)
 - [Claude Design prompt, step 2 — brief 2, the people fiche](design/mockups/briefs/claude-design-prompt-02.md)
 - [Claude Design prompt, step 3 — brief 3, the language fiche](design/mockups/briefs/claude-design-prompt-03.md)
+- [Claude Design prompt, step 4 — brief 4, the language-family fiche](design/mockups/briefs/claude-design-prompt-04.md)
 - [Claude Design prompt — brief 9, « Notre démarche »](design/mockups/briefs/claude-design-prompt-09.md)
 - [Search answer page, mockup v11](design/mockups/search-answer/README.md)
 - [The result-page feed mockups — forty boards](design/mockups/search-feed/README.md)
