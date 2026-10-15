@@ -21,9 +21,20 @@ const model = JSON.parse(
 export const CARDS = fileURLToPath(
   new URL("../../design-system/handoff/cards.sample.json", import.meta.url)
 );
+// The accepted signature line (Cartes 1.6.0), voiced one printed line per
+// chunk, at about 16 characters a second, as the design's timing board has it.
+const { signatureLine } = JSON.parse(
+  readFileSync(
+    new URL("../../design-system/version.json", import.meta.url),
+    "utf8"
+  )
+);
 // The first word is said 0.6 s in, so the cover (frame 0) has no subtitle.
 const LEAD = 0.6;
 const round = (s) => Math.round(s * 1000) / 1000;
+const SIGNATURE_CHUNKS = signatureLine
+  .split(/(?<=,) /u)
+  .map((text) => ({ text, duration: round([...text].length / 16) }));
 
 // Generated silence whose word times spread each chunk's units over the
 // chunk's scripted duration, from 0.6 s in; writes voice.wav and words.json.
@@ -73,9 +84,13 @@ export function writeSyntheticVoice(dir, beats) {
 export function seriesDemo(dir, { edit = () => {}, script = (b) => b } = {}) {
   mkdirSync(dir, { recursive: true });
   const beats = script(
-    model.beats.map((beat) => ({
+    model.beats.map((beat, i) => ({
       card: `serie-${beat.card}`,
-      chunks: beat.chunks.map(({ text, duration }) => ({ text, duration })),
+      chunks: [
+        // 1.6.0: the voice says the signature line before the search sentence.
+        ...(i === model.beats.length - 1 ? SIGNATURE_CHUNKS : []),
+        ...beat.chunks.map(({ text, duration }) => ({ text, duration })),
+      ],
     }))
   );
   writeSyntheticVoice(dir, beats);
