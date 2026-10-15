@@ -56,6 +56,7 @@ two is wrong, and the fix is decided, not improvised.
 |                   | Lieu `LOC_YAMOUSSOUKRO`                      | `place-yamoussoukro` |
 |                   | Glossaire                                    | `glossary`           |
 |                   | À propos                                     | `about`              |
+|                   | Notre démarche                               | `approach`           |
 |                   | Accueil                                      | `home`               |
 
 The three files of a page hold the same markup; the width alone changes the
@@ -71,6 +72,7 @@ are recorded whole, folded as the site folds them.
 | 2026-10-15 | [Brief 3, the language fiche](../briefs/03-language.md) | `language-lingala`, `language-thin-havu` (new) |
 | 2026-10-15 | [Brief 4, the language-family fiche](../briefs/04-language-family.md) | `family-bantu`, `family-mande` |
 | 2026-10-15 | [Brief 5, the country fiche](../briefs/05-country.md) | `country-civ`, `country-state-civ-quaqua`, `country-state-thin-gab`, `country-state-shared-congo` (new) |
+| 2026-10-16 | [Brief 9, « Notre démarche »](../briefs/09-our-approach.md) | `approach` (new), `about`, `Main`; the footer (state B) on every board except `name-traore` |
 
 The boards of a changed page no longer record v5.2.0: they are the approved
 target, and the code is behind them until the implementation lands.

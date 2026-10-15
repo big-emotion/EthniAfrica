@@ -2,7 +2,7 @@
 
 Read [`README.md`](README.md) and
 [`../../mockup-first-workflow.md`](../../mockup-first-workflow.md) first.
-Written 2026-10-15. Status: **proposed — awaiting operator review.**
+Written 2026-10-15. Status: **boards approved 2026-10-16.**
 
 **Boards to create** (new page, so three new boards): `approach-430`,
 `approach-768`, `approach-1440`. Add them to the « 4 · Other pages » group,
@@ -163,7 +163,50 @@ filled here. Whether the signature line fills it is the operator's decision.
 That decision touches the fiche templates, and a separate piece of work owns
 the `PAT_*` template.
 
-## Approved boards
+## Approved boards (2026-10-16)
 
-_Not yet._ Once approved, list the boards here as brief 1 does, record them in
-`docs/design/mockups/site/`, and only then implement.
+Recorded in `docs/design/mockups/site/`. The implementation reproduces them.
+The operator accepted the brief's recommendations: footer state B, the
+signature line as the page's one display sentence, and « Notre position »
+set apart in the treatment of the fiches' conviction line.
+
+- `approach`, at 430, 768 and 1440 (new). The breadcrumb « Accueil › Notre
+  démarche », the title, the signature line (`.ea-signature`: display face
+  700 at the h2 size, sentence case, ink colour), the intro. The four sourced
+  sections keep the « À propos » head (ocre rule, number 01 to 04, display
+  title) and its soft body text. « Notre position » has no number and no ocre
+  rule: a neutral rule above, its two paragraphs in the display face 700 at
+  the body size, in ink (`.ea-position`). Then « Sources »: the ten entries,
+  each a link followed by its type, in the fiches' tile « La liste », folded
+  at 430 and open at 768 and 1440. Then the three closing links under a rule.
+  The column is held to the prose measure (`--afh-measure-prose`) and stays
+  left-aligned with the breadcrumb, so wider screens add margin on the right.
+- `about`, at 430, 768 and 1440: « Lire notre démarche » after the two
+  paragraphs of « Notre conviction ». The text does not change.
+- The footer, state B, on every board that shows it (except `name-traore`,
+  owned by another piece of work) and in a new component section on `Main`:
+  « Notre démarche » after « À propos » in « Le projet », and the signature
+  line under the tagline, in the body face at the caption size, soft colour
+  (`.ea-footer-signature`). The line takes the tagline's width
+  (`contain: inline-size`), so the footer's columns do not move at 768.
+- `ea-live.css` gains `.ea-approach`, `.ea-signature`, `.ea-position`,
+  `.ea-approach-sources`, `.ea-approach-source`, `.ea-approach-close`,
+  `.ea-footer-signature`, and the `Main`-only phone footer overrides.
+
+Choices made while drawing, accepted with the boards:
+
+1. No eyebrow above the title: it would have added copy the brief does not
+   give.
+2. « Notre position » keeps the conviction treatment at the body size, not
+   the h3 size: two paragraphs at h3 bold read too heavy at 430.
+3. The column is left-aligned at the prose measure rather than centred.
+4. Source types are capitalised after « · », as on the fiches; the two laws
+   are two links in one entry; the tile reuses « La liste », « + en savoir
+   plus » and « − replier ».
+5. Apostrophes are typographic, as in the site's copy dictionaries; the
+   closing links have no heading.
+
+Found while drawing, left to the operator: the sentence « Nous pensons que
+c'est ainsi que des noms de jour comme Kouassi et Yao sont devenus des noms
+de famille » is an opinion of EthniAfrica inside a sourced section (03), not
+inside « Notre position ». It is drawn as written.

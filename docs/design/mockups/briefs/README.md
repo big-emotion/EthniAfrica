@@ -41,7 +41,7 @@ after a long read (`pays/CIV`, `FLG_MANDE`, `PPL_MUCUVAL`), early exits
 | 6 | [`06-family-name.md`](06-family-name.md) | Family name | `name-traore` |
 | 7 | [`07-place.md`](07-place.md) | Place | `place-yamoussoukro` |
 | 8 | [`08-free-word.md`](08-free-word.md) | Free word | **new page**, three new boards (`word-race-430`, `-768`, `-1440`); `glossary` untouched |
-| 9 | [`09-our-approach.md`](09-our-approach.md) | Project page « Notre démarche » (not a type of name) | **new page**, three new boards (`approach-430`, `-768`, `-1440`); one link on `about`; footer in two states on `Main`. Prompt: [`claude-design-prompt-09.md`](claude-design-prompt-09.md) |
+| 9 | [`09-our-approach.md`](09-our-approach.md) | Project page « Notre démarche » (not a type of name) | **new page**, three new boards (`approach-430`, `-768`, `-1440`); one link on `about`; footer state B on `Main` and every board (**approved 2026-10-16**). Prompt: [`claude-design-prompt-09.md`](claude-design-prompt-09.md) |
 
 Dossiers (`DOS_*`) are an editorial type, not a type of name. They carry the
 operator's thesis in full and get their own brief once the thesis wording is

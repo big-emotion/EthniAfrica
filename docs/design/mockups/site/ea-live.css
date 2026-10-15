@@ -4623,3 +4623,46 @@ svg { display: block; }
   color: var(--afh-text-soft);
 }
 .ea-form-readings[open] > summary .ea-voice-caret { transform: rotate(180deg); }
+
+/* ============================================================
+   Brief 9 (2026-10-16): « Notre démarche ». The signature line
+   is the page's one display sentence; « Notre position » is the
+   signed opinion, set apart like the fiches' conviction line;
+   the footer carries the line under its tagline (state B). New
+   selectors only, tokens only.
+   ============================================================ */
+.ea-approach {
+  --accent: var(--afh-cat-ocre); --accent-ink: var(--afh-cat-ocre-ink);
+  max-width: var(--afh-measure-prose);
+}
+.ea-signature {
+  margin: var(--afh-space-lg) 0 var(--afh-space-2xl);
+  font-family: var(--afh-font-display); font-weight: 700;
+  font-size: var(--afh-text-h2); line-height: 1.25; color: var(--afh-text);
+}
+.ea-position {
+  margin-bottom: var(--afh-space-6xl);
+  padding-top: var(--afh-space-5xl); border-top: 1px solid var(--afh-border);
+}
+.ea-position-text {
+  margin-top: var(--afh-space-lg);
+  font-family: var(--afh-font-display); font-weight: 700;
+  font-size: var(--afh-text-body); line-height: 1.55; color: var(--afh-text);
+}
+.ea-approach-sources { display: flex; flex-direction: column; gap: var(--afh-space-lg); margin-bottom: var(--afh-space-6xl); }
+.ea-approach-source { font-size: var(--afh-text-small); line-height: 1.5; color: var(--afh-text-soft); }
+.ea-approach-source a {
+  color: var(--accent-ink); font-weight: 700;
+  text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px;
+}
+.ea-approach-close { padding-top: var(--afh-space-lg); border-top: 1px solid var(--afh-border); }
+.ea-footer-signature {
+  contain: inline-size; margin-top: var(--afh-space-xs);
+  font-size: var(--afh-text-caption); line-height: 1.5; color: var(--afh-text-soft);
+}
+/* Main board only: the footer at phone width inside a 1440 board. */
+.ds-mobile .ea-footer-content { padding: 14px 12px; }
+.ds-mobile .ea-footer-directory { flex-direction: column; flex-wrap: nowrap; align-items: center; gap: 32px; text-align: center; }
+.ds-mobile .ea-footer-link { justify-content: center; }
+.ds-mobile .ea-footer-follow { text-align: center; }
+.ds-mobile .ea-footer-follow ul { margin: 12px auto 0; justify-content: center; }
