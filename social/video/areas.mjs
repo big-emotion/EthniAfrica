@@ -67,6 +67,23 @@ export const DOWNLOADS = {
     url: "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_10m_rivers_lake_centerlines.geojson",
     sha256: "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
   },
+  // Glottolog 5.3 (tag v5.3 of glottolog-cldf, DOI 10.5281/zenodo.18840967),
+  // CC BY 4.0. The tag's metadata title still reads 5.2.1; the tag and DOI
+  // are 5.3. Language points for the present-day Amazigh area (Cartes 1.5.0).
+  glottologLanguages: {
+    name: "Glottolog 5.3, CLDF languages",
+    version: "5.3",
+    file: "areas/glottolog-5.3-languages.csv",
+    url: "https://raw.githubusercontent.com/glottolog/glottolog-cldf/v5.3/cldf/languages.csv",
+    sha256: "1a50a393bc81568b656f9522be18aa4f80f38e94309ba6c863d583234adfbb89",
+  },
+  glottologValues: {
+    name: "Glottolog 5.3, CLDF values (classification, endangerment)",
+    version: "5.3",
+    file: "areas/glottolog-5.3-values.csv",
+    url: "https://raw.githubusercontent.com/glottolog/glottolog-cldf/v5.3/cldf/values.csv",
+    sha256: "a8601cb04ccc6a310538217f772d2461853aa0ea49e3bfe24c7396570fc4ea25",
+  },
 };
 
 const cite = (key) => {
@@ -182,6 +199,7 @@ export function traceMask(grid, mask, options = {}) {
     tolerance = TOLERANCE_DEG,
     minPartKm2 = MIN_PART_KM2,
     maxParts = Infinity,
+    exteriorOnly = false,
   } = options;
   const { west, north, cell, width, height } = grid;
   const data = new Float32Array(width * height);
@@ -213,7 +231,9 @@ export function traceMask(grid, mask, options = {}) {
     .map((i) => {
       const holes = traced
         .map((_, j) => j)
-        .filter((j) => parents[j] === i && areas[j] >= minPartKm2)
+        .filter(
+          (j) => !exteriorOnly && parents[j] === i && areas[j] >= minPartKm2
+        )
         .sort((a, b) => areas[b] - areas[a]);
       // RFC 7946: exterior counter-clockwise, holes clockwise.
       return [finish(i, true), ...holes.map((j) => finish(j, false))].filter(
@@ -350,9 +370,66 @@ export async function readVerified(assets, key) {
   const hash = createHash("sha256").update(bytes).digest("hex");
   if (hash !== download.sha256)
     throw new Error(`${download.file} differs from the pinned download`);
-  return download.file.endsWith(".zip")
-    ? bytes
-    : JSON.parse(bytes.toString("utf8"));
+  if (download.file.endsWith(".zip")) return bytes;
+  if (download.file.endsWith(".csv")) return bytes.toString("utf8");
+  return JSON.parse(bytes.toString("utf8"));
+}
+
+// RFC 4180 rows: quoted fields may hold commas, doubled quotes and newlines.
+function csvRows(text) {
+  const rows = [];
+  let row = [];
+  let field = "";
+  let quoted = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (quoted) {
+      if (c === '"' && text[i + 1] === '"') ((field += '"'), i++);
+      else if (c === '"') quoted = false;
+      else field += c;
+    } else if (c === '"') quoted = true;
+    else if (c === ",") (row.push(field), (field = ""));
+    else if (c === "\n" || c === "\r") {
+      if (c === "\r" && text[i + 1] === "\n") i++;
+      (row.push(field), rows.push(row), (row = []), (field = ""));
+    } else field += c;
+  }
+  if (field || row.length) (row.push(field), rows.push(row));
+  const [header, ...body] = rows;
+  return body.map((r) => Object.fromEntries(header.map((h, k) => [h, r[k]])));
+}
+
+/**
+ * Glottolog's living Berber languages with a point: level « language »,
+ * classified under berb1260, not marked extinct (aes-extinct). A point is a
+ * language's centre as Glottolog gives it, not the area where it is spoken.
+ */
+export function berberLanguagePoints(languagesCsv, valuesCsv) {
+  const berber = new Set();
+  const extinct = new Set();
+  for (const v of csvRows(valuesCsv)) {
+    if (
+      v.Parameter_ID === "classification" &&
+      v.Value.split("/").includes("berb1260")
+    )
+      berber.add(v.Language_ID);
+    if (v.Parameter_ID === "aes" && v.Code_ID === "aes-extinct")
+      extinct.add(v.Language_ID);
+  }
+  return csvRows(languagesCsv)
+    .filter(
+      (l) =>
+        l.Level === "language" &&
+        berber.has(l.ID) &&
+        !extinct.has(l.ID) &&
+        l.Latitude !== "" &&
+        l.Longitude !== ""
+    )
+    .map((l) => ({
+      glottocode: l.Glottocode,
+      name: l.Name,
+      point: [Number(l.Longitude), Number(l.Latitude)],
+    }));
 }
 
 // One member of a zip archive, read through its central directory. The
@@ -447,7 +524,18 @@ export const AREA_IDS = [
   "libye",
   "touaregs",
   "libyque",
+  "touareg-imuhagh",
+  "touareg-imajeghen",
+  "touareg-imushagh",
+  "amazigh",
 ];
+
+const GLOTTOLOG_CITATION =
+  "Hammarström, Harald, Robert Forkel, Martin Haspelmath and Sebastian Bank. 2026. Glottolog 5.3. Leipzig: Max Planck Institute for Evolutionary Anthropology. DOI 10.5281/zenodo.18840967.";
+const GLOTTOLOG_LICENCE =
+  "Glottolog 5.3, CC BY 4.0 (dc:license of the CLDF metadata): credit Hammarström et al. 2026.";
+const CHAKER_CITATION =
+  "Salem Chaker, « Amaziɣ (le/un Berbère) », Encyclopédie berbère, IV, 1986, p. 562-568, § 6: Amāheγ/Imūhaγ in the Ahaggar and the Ajjer, Amājeγ/Imājeγen in the Aïr and the south (Niger-Mali), Amāšeγ/Imūšaγ in the Adrar des Ifoghas.";
 
 const ECOREGIONS_CITATION =
   "Dinerstein, E., Olson, D., Joshi, A., et al. (2017). An Ecoregion-Based Approach to Protecting Half the Terrestrial Realm. BioScience 67 (6), 534–545. DOI 10.1093/biosci/bix014.";
@@ -482,7 +570,23 @@ export const SAHEL_ECOREGIONS = [
 ];
 
 function definitions(sources) {
-  const { ecoregions, regions, countries, places, rivers } = sources;
+  const {
+    ecoregions,
+    regions,
+    countries,
+    places,
+    rivers,
+    glottologLanguages,
+    glottologValues,
+  } = sources;
+  const amazighPoints = berberLanguagePoints(
+    glottologLanguages,
+    glottologValues
+  );
+  const closedCircle = (point) => {
+    const ring = circle(point, ANCHOR_RADIUS_DEG);
+    return [...ring, ring[0]];
+  };
   const region = (name) =>
     only(
       regions.features,
@@ -641,6 +745,87 @@ function definitions(sources) {
         date: "Present day (Natural Earth 5.1.2, 2022; Ecoregions 2017)",
       },
     },
+    // Cartes 1.5.0: one area per Tuareg self-name, one name one outline.
+    "touareg-imuhagh": {
+      mask: and(
+        union([region("AHAGGAR MTS."), region("Tassili-n-Ajjer")]),
+        africa
+      ),
+      maxParts: 1,
+      exteriorOnly: true,
+      properties: {
+        name: "Imuhagh",
+        category: "people",
+        source: `Salem Chaker, Encyclopédie berbère, 1986; ${cite("regions")}; ${cite("countries")}`,
+        citation: `${CHAKER_CITATION} Regions: Natural Earth Geography Regions AHAGGAR MTS. and Tassili-n-Ajjer.`,
+        derivation: `${SCRIPT_RULE}: the union of the Natural Earth Geography Regions polygons AHAGGAR MTS. and Tassili-n-Ajjer, on Africa's land (${landRule}), kept as one part with its exterior ring only, so the gap between the two regions is filled; ${RASTER_RULE}. Natural Earth draws generalized regions for labelling: the area marks where the form Imuhagh is said, not a limit.`,
+        licence: `Geometry: ${NATURAL_EARTH_LICENCE}`,
+        date: "Present day (Chaker 1986; Natural Earth 5.1.2, 2022)",
+      },
+    },
+    "touareg-imajeghen": {
+      mask: and(rasterize(grid, region("AÏR MTS.")), africa),
+      maxParts: 1,
+      exteriorOnly: true,
+      properties: {
+        name: "Imajeghen",
+        category: "people",
+        source: `Salem Chaker, Encyclopédie berbère, 1986; ${cite("regions")}; ${cite("countries")}`,
+        citation: `${CHAKER_CITATION} Region: Natural Earth Geography Regions AÏR MTS.`,
+        derivation: `${SCRIPT_RULE}: the Natural Earth Geography Regions polygon AÏR MTS., on Africa's land (${landRule}); ${RASTER_RULE}. Chaker gives Imajeghen for the Aïr and the south (Iwellemmeden, Kel Gress); the area draws the Aïr only, where Natural Earth has a region.`,
+        licence: `Geometry: ${NATURAL_EARTH_LICENCE}`,
+        date: "Present day (Chaker 1986; Natural Earth 5.1.2, 2022)",
+      },
+    },
+    "touareg-imushagh": {
+      mask: and(
+        rasterize(grid, {
+          type: "Polygon",
+          coordinates: [
+            closedCircle(
+              only(
+                places.features,
+                (f) =>
+                  f.properties.name === "Tessalit" &&
+                  f.properties.adm0_a3 === "MLI",
+                "place Tessalit"
+              ).geometry.coordinates
+            ),
+          ],
+        }),
+        africa
+      ),
+      maxParts: 1,
+      properties: {
+        name: "Imushagh",
+        category: "people",
+        source: `Salem Chaker, Encyclopédie berbère, 1986; ${cite("places")}; ${cite("countries")}`,
+        citation: `${CHAKER_CITATION} Anchor: Natural Earth populated place Tessalit, MLI (Adrar des Ifoghas; the Adrar is not a Natural Earth region and Kidal is not a Natural Earth place).`,
+        derivation: `${SCRIPT_RULE}: a circle of ${ANCHOR_RADIUS_DEG}° radius around the Natural Earth town Tessalit (the anchor rule of the Tuareg area), on Africa's land (${landRule}); ${RASTER_RULE}. It stands for the Adrar des Ifoghas, centred on its northern town rather than on Kidal; the massif reaches further south.`,
+        licence: `Geometry: ${NATURAL_EARTH_LICENCE}`,
+        date: "Present day (Chaker 1986; Natural Earth 5.1.2, 2022)",
+      },
+    },
+    amazigh: {
+      mask: and(
+        union(
+          amazighPoints.map(({ point }) => ({
+            type: "Polygon",
+            coordinates: [closedCircle(point)],
+          }))
+        ),
+        africa
+      ),
+      properties: {
+        name: "Amazigh",
+        category: "people",
+        source: `${cite("glottologLanguages")}; ${cite("glottologValues")}; ${cite("countries")}`,
+        citation: `${GLOTTOLOG_CITATION} The ${amazighPoints.length} living Berber languages with a point (classification under berb1260, level language, not aes-extinct): ${amazighPoints.map((l) => `${l.name} (${l.glottocode})`).join(", ")}.`,
+        derivation: `${SCRIPT_RULE}: the union of circles of ${ANCHOR_RADIUS_DEG}° radius around Glottolog's point for each living Berber language, on Africa's land (${landRule}); ${RASTER_RULE}. A point is a language's centre, not where it is spoken: the area understates large ranges (Tamasheq has one point for more than 1,000 km), leaves the Arabic-speaking lands between the circles and the diaspora out, and gives no number of speakers. Endangered languages count like large ones.`,
+        licence: `${GLOTTOLOG_LICENCE} Geometry: ${NATURAL_EARTH_LICENCE}`,
+        date: "Present day (Glottolog 5.3, 2026)",
+      },
+    },
   };
 }
 
@@ -652,11 +837,11 @@ export async function buildAreas(assets) {
   const defined = definitions(sources);
   const built = new Map();
   for (const id of AREA_IDS) {
-    const { mask, maxParts, properties } = defined[id];
+    const { mask, maxParts, exteriorOnly, properties } = defined[id];
     const feature = {
       type: "Feature",
       properties: { kind: "approximate", ...properties },
-      geometry: traceMask(GRID, mask, { maxParts }),
+      geometry: traceMask(GRID, mask, { maxParts, exteriorOnly }),
     };
     built.set(id, `${JSON.stringify(feature)}\n`);
   }
