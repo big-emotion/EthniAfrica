@@ -32,3 +32,19 @@ Also settled, against the brief:
 - `boards/`: the accepted boards as Claude Design drew them. Their texts, other than the line and the fixed closings, are demonstration text.
   - `cloture-160-*` show the closing cards of series 6 (a line), series 2 (a question) and series 3 (no line), in Nuit and Parchemin. They also show the order and places, annotated (`ordre`), the line measured (`ligne`), one card or two (`une-ou-deux-cartes`), the closing card with or without the motto (`devise`), the other endings (`autres-fins`) and the feed size (`430`).
   - `video-160-*` show the video endings of series 6 and series 2, the full frame, the guides (`reperes`), the spoken or printed line (`voix`), the timing (`temps`), Parchemin, and the feed at 430 px.
+
+## Integration, 15 October 2026
+
+**Carousel.** The bundle draws the line from `EthniCards.signatureLine` on every closing card, its top settled at y 760, with no title and no motto. The renderer refuses a closing card with a title, or a line pushed below 760. It reports the line's place, text, line count and overlaps, ends the alternative text with the line, and checks the line against `version.json` on recovery.
+
+The board-only option that kept a fixed closing on the closing card is not carried, since a fixed closing always has its own card (decision 3). Nor is the scratch harness patch.
+
+The 89 sample cards were rendered on the pinned browser:
+
+- the 79 cards that are not closing cards pass unchanged against their accepted references;
+- the ten closing cards change by design, are checked by eye against `boards/` and Claude Design's card renders, and are re-accepted (`social/renderer/README.md`, « Fidelity baseline »);
+- a complete fidelity check passes 89 of 89.
+
+**Series video.** The ending draws the line from the same constant, top at y 318. Loading requires the closing card to say the line in three chunks, then the search sentence. The closing card's chunks are voiced, but no subtitle shows during the ending. The hold is unchanged.
+
+**Not in this integration.** The reading limit of 21 characters a second belongs to pull request #1778, still open when this was integrated. `series.md` keeps the wording on `recette` until that pull request lands.
