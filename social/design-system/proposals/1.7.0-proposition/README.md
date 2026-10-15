@@ -38,3 +38,28 @@ One brief replaced three drafts: « Afrique » (series 6, episode 1, the main te
   - The rhythm of a long video: `rythme`.
   - The cover and the feed at 430 px: `couverture`, `430`.
   - Full frames of the two episodes: `plein-*`.
+- `integration-2026-10-15/`: the integration evidence.
+  - `planches-et-moteur-430.jpg` shows the « Afrique » board cards drawn by the integrated engine beside Claude Design's full-frame boards at 430 px (step 5 of `docs/design/mockup-first-workflow.md`): the chapter card, figures, readings, the reminder, the names list, the signed card, the question and the ending. Only the subtitles differ; the engine's are demonstration text.
+  - `video-tests.json` records the test runs and the reminder.
+
+## Integration, 15 October 2026
+
+**Model** (`social/video/series.mjs`).
+
+- Chapter cards are silent beats, titled from the sequence's `chapters`.
+- Each chapter card fills the voice's silence; a short one is refused with the milliseconds missing.
+- The « n · Titre » kicker is composed for the video only.
+- Items and the quoted person are timed on their word.
+- It checks the length and chapters, the reminder's image and window, the signed position, the two invitations, the source label and the next episode.
+- Runs of one image change the head only, under one zoom.
+
+**Drawing** (`social/video/series-page.mjs`). Everything above, in the accepted sizes and inks. Hyphenated words never break.
+
+**Carousel.** No card changes: the 89 sample cards render byte-identical with 1.6.0, alternative texts included.
+
+Two precisions taken by the integration, within the accepted rules:
+
+- **The closing card's chunks**, voiced but never shown as subtitles since 1.6.0, leave the subtitle rules (3 to 6 words, 900 px, reading speed). The general invitation's first chunk has seven words.
+- **The next episode** stays under the pill after the named invitation and gets its own card after the general one, which takes two lines (measured on the boards). The ending block is still checked against y 820.
+
+**The hook reminder on the recorded voice.** Not measured: « Afrique » has no recorded voice yet. Its proof carries a silent placeholder for the old 40 s script. The design's estimate stands at about 1 min 08, just before the window. The engine reports the reminder's time and warns outside 75 to 120 s once the voice is in.

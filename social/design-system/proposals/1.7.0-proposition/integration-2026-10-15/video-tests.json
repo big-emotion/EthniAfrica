@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-15",
+  "design": "EthniAfrica Cartes 1.7.0-proposition",
+  "browser": "pinned Chromium (social/renderer/runtime.json)",
+  "runs": {
+    "test:social-video": "206 pass, 0 fail",
+    "test:social-video-acceptance (ETHNIAFRICA_VIDEO_ASSETS on the verified imagery)": "242 pass, 0 fail, 2 skipped (evidence writers)",
+    "test:social-renderer": "29 pass, 0 fail",
+    "test:social-series-proposal": "8 pass, 0 fail",
+    "fidelity, 89 sample cards": "89 of 89 against design-system-1.6.0-accepted; byte-identical with 1.6.0, alternative texts included",
+    "make check": "passed"
+  },
+  "afrique": {
+    "what": "The « Afrique » cards of Claude Design's accepted boards (tools/cards170.json, demonstration text), drawn by the integrated engine with chapters 1 to 7, on a synthetic silent voice, beside the full-frame boards at 430 px: planches-et-moteur-430.jpg (board left, engine right).",
+    "frames": [
+      {
+        "board": "afr-ch1-chiffre.jpg",
+        "frame": 478,
+        "seconds": 15.93,
+        "problems": [],
+        "hyphenBreaks": []
+      },
+      {
+        "board": "afr-chiffres.jpg",
+        "frame": 1072,
+        "seconds": 35.73,
+        "problems": [],
+        "hyphenBreaks": []
+      },
+      {
+        "board": "afr-lectures.jpg",
+        "frame": 1774,
+        "seconds": 59.13,
+        "problems": [],
+        "hyphenBreaks": []
+      },
+      {
+        "board": "afr-rappel.jpg",
+        "frame": 2296,
+        "seconds": 76.53,
+        "problems": [],
+        "hyphenBreaks": []
+      },
+      {
+        "board": "afr-noms.jpg",
+        "frame": 2908,
+        "seconds": 96.93,
+        "problems": [],
+        "hyphenBreaks": []
+      },
+      {
+        "board": "afr-signe.jpg",
+        "frame": 4466,
+        "seconds": 148.87,
+        "problems": [],
+        "hyphenBreaks": []
+      },
+      {
+        "board": "afr-question.jpg",
+        "frame": 4916,
+        "seconds": 163.87,
+        "problems": [],
+        "hyphenBreaks": []
+      },
+      {
+        "board": "afr-fin.jpg",
+        "frame": 5196,
+        "seconds": 173.2,
+        "problems": [],
+        "hyphenBreaks": []
+      }
+    ],
+    "length_seconds": 173.2,
+    "layout_problems": 0,
+    "hyphen_breaks": 0,
+    "differences": "Only the subtitles, which are demonstration text in the engine's frames."
+  },
+  "reminder": {
+    "recorded_voice": "Not measured: the episode's voice is not recorded. proof-v1 and proof-v2 carry a silent 40 s placeholder for the old 40 s script, and narration v6.1 is not yet split into chunks.",
+    "design_estimate": "about 1 min 08, by the length of the text (series.md)",
+    "engine": "The engine reports seq.reminder.seconds and warns outside 75 to 120 s. On the synthetic voice of this run, which is not the episode's timing, it falls at 61.7 s and the warning is raised."
+  }
+}
