@@ -417,11 +417,22 @@ confirmed them**; until then, nothing in 6.4 rests on them.
    names everyday uses: comparing « la France » with « l'Afrique », or saying
    « je rentre en Afrique », in the diaspora as elsewhere (if 6.2's reading
    holds). Section 5 already says the name came from outside.
-2. **« No common name inside » is the operator's view, not yet a sourced
-   fact.** No source read for this essay establishes that the continent's
-   peoples had no name for the whole; « Alkebulan », for instance, circulates
-   as one and is itself disputed. Do not print it as a fact before the
-   research checks it.
+2. **« No common name inside »: an absence of evidence, not a proof.** The
+   research of the « Afrique » episode found no source that gives a name for
+   the whole continent coming from its own peoples. The one candidate,
+   « Alkebulan », is first printed by the French cosmographer André Thevet in
+   1575 (_Cosmographie universelle_, book V ch. XII and its map legend, book
+   III ch. 1). He attributes it to « les Arabes, Ademiens & Ethiopiens »
+   without citing a source, and uses the same word for the south wind in the
+   same book. Dapper (1668, citing Thevet), Ogilby (1670), Moréri (1683) and
+   La Croix (1688) copy it. The meaning « mère de l'humanité » first appears
+   with Yosef ben-Jochannan in 1970. « Kemet » is the Egyptians' name for
+   Egypt, « la terre noire » (Gardiner), not for the continent. These texts
+   were read in OCR, not yet on the page images; the episode's records are its
+   `sources/E-*.txt`, and the place fiche `LOC_AFRIQUE` carries the same facts
+   (PR #1787). The wording the episode's script uses, and this essay keeps:
+   « Les sources que nous avons lues ne montrent pas de nom commun, venu de
+   l'intérieur, pour tout le continent. »
 3. **Unity at two levels**, a signed position: first between the peoples of
    one country, then between countries, through trade and through political
    and cultural exchange. The bloc is chosen and built, aware of its
@@ -447,8 +458,10 @@ confirmed them**; until then, nothing in 6.4 rests on them.
 
 ### 6.4 Synthèse
 
-Le mot « Afrique » range tout un continent sous un seul nom. Ce nom vient de
-l'extérieur (section 5). Il sert pourtant aussi de l'intérieur : on compare
+Le mot « Afrique » range tout un continent sous un seul nom. Les sources que
+nous avons lues ne montrent pas de nom commun, venu de l'intérieur, pour tout
+le continent. Le nom qui s'est imposé a donc été étendu depuis l'extérieur
+(section 5). Il sert pourtant aussi de l'intérieur : on compare
 « la France » et « l'Afrique », on dit « je rentre en Afrique ». Un nom porte
 une façon de voir, et celle-ci efface les différences entre des peuples qui
 parlent des langues différentes et qui n'ont jamais formé une seule unité
