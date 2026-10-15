@@ -196,3 +196,76 @@ of the population is not shared out among the peoples.
 - Show a tier, a score or a « most reliable » label on any source.
 - Redraw the approved components: reuse them from `Main`.
 - Put the thesis anywhere but the closing band.
+
+## Approved boards (2026-10-15)
+
+The sections above are the brief as given and the record of what the prompt
+asked; where they differ from the sections below, the sections below are what
+was approved and win.
+
+Recorded in `docs/design/mockups/site/`. The implementation reproduces them.
+The hero, the chapter bar, « Peuples du pays », « Langues », the era chips,
+the political entities, « Culture et société » and the sources list are
+unchanged, except where noted.
+
+- `country-civ`, at 430, 768 and 1440, is the rich state. The rows of
+  « L'histoire des noms » are the five names of the sourced history (Côte
+  d'Ivoire, Côte des Dents, Costa de Malagens, Côte de Quaqua, Établissements
+  français de la Côte d'Or). A name whose origin the sources tell in several
+  ways folds its readings under its row (« 3 explications » on Côte de
+  Quaqua), in the readings grid of `language-lingala`. « Les sources parlent »
+  follows « En bref » in the fiche variant: « Qui raconte les noms de ce
+  pays ? » (marked as a proposal), 26 accounts of 5 names, Côte d'Ivoire open.
+  The population carries « UNFPA, 2025 ». The official name is shown once.
+  The amend band goes; the closing band precedes « Poursuivre avec un autre
+  nom », which offers Akan (people) then Yamoussoukro (place).
+- `country-state-civ-quaqua` (new): the row Côte de Quaqua open on its three
+  undated readings.
+- `country-state-thin-gab` (new): one name, eight accounts, 2,600,000
+  inhabitants (UNFPA, 2025), two silences, Fang then Punu as next names (no
+  place in Gabon has a summary).
+- `country-state-shared-congo` (new): a note under the names saying that two
+  countries bear the name Congo and are different countries, both named
+  after the river; next names: the Democratic Republic of the Congo, then the
+  Kongo people.
+- `ea-live.css` gains the folding row (`.ea-form-readings`).
+
+Silences on `country-civ`: no oral account for the names of the country; no
+trace of Côte d'Ivoire older than 1670; the three explanations of Côte de
+Quaqua are not dated. The 4 % not shared out among peoples stays in
+« Peuples du pays » only.
+
+Decisions taken in review:
+
+1. « Les sources parlent » sits after the whole « En bref » block.
+2. Only a name with several explanations folds, labelled « N explications ».
+3. A group of explanations with no date at all gives one silence line.
+4. Yamoussoukro stays as the next place despite a thin first sentence; a
+   country with no place that has a summary offers a second people.
+5. States are block-only boards inside the country frame; the Congo note
+   reuses the approved language and people note.
+
+Found while drawing, left to the corpus:
+
+- The official-name field repeats itself on `CIV`, `GAB` and `COG`
+  (« République de Côte d'Ivoire (République de Côte d'Ivoire) »).
+- « Guinée française et dépendances » is in the former-names list of « En
+  bref » but not a name of the history (the 1891 account cites it).
+- `GAB`: the etymology field says « gabardine » and the fifteenth century;
+  the sourced history says « caban » and dates the oldest trace about
+  1505-1508.
+- Costa de Malagens has one origin in the data (the 1475 wreck); the bad
+  reputation account is an imposition account, not a competing origin.
+- The counts: « 6 peuples » counts the major peoples, « Autres peuples »
+  included; the bar's 5 are the groups with a share; « 121 noms » is 47
+  attested names plus 74 carried by the country's peoples.
+- The Bouët-Willaumez entry: the first screen at 430 shows an origin of the
+  name but not the answer; the 1842-1843 account (his treaties do not name
+  the country) is reachable only in « Les sources parlent ».
+
+Length proposal, measured at 430, for a later decision: remove « D'où vient
+le nom » under « Histoire » and the Portrait preview (about 300 px), fold the
+A to Z index of family names behind « 47 noms attestés » (about 2,300 px),
+fold the five political entities to their names (about 600 px), fold
+« Culture et société » to its headings (about 700 px). The sources are
+already folded.
