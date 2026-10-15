@@ -92,3 +92,22 @@ Decisions taken in review:
    implemented.
 5. The 34,000,000 speaker figure is not shown.
 
+## Implementation (2026-10-15)
+
+Operator decisions taken after approval, drawn on the boards before the code:
+
+1. The page shows every account of a competing group: `language-lingala`
+   now draws four readings (Hypothèse 1 to 4), in the corpus's order.
+2. The proposed labels are kept and the « proposition » marks removed. Two
+   more codes of the model get a label in the same voice: « Langue commune
+   entre groupes » (`vehicular`) and « Langue nationale ou officielle »
+   (`national_official`). EGIDS statuses are said in French.
+3. A language fiche may declare `content.gaps` (`field`, `reason`), the
+   shape the place model already uses. Each reason is printed as a silence;
+   `hav.json` declares the one on the name Havu.
+4. With a nameHistory, an empty « Vitalité » or « Dialectes » chapter is not
+   drawn: its silence goes to the closing band. A fiche without a
+   nameHistory keeps its chapters and their missing markers.
+5. `language-thin-havu` records the « Autres noms attestés » chapter (Havu)
+   the live page already draws for it.
+

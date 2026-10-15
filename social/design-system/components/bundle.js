@@ -27,8 +27,19 @@
     band.innerHTML = '<div class="ec-series-text"><span class="ec-series-name">' + fr(sr.name) + '</span><span class="ec-series-sep"> · </span><span class="ec-series-episode">n° ' + esc(String(sr.episode)) + '</span></div>';
     return band;
   }
-  var VERSION = '1.4.1-proposition';
-  var TAGLINE = 'L’Afrique à travers ses noms';
+  var VERSION = '1.7.0-proposition';
+  /* 1.6.0: the project's signature line, one constant, never a card field.
+     Three lines, broken after each comma; « nous-mêmes » keeps the ordinary
+     hyphen U+002D inside a no-wrap line (none of the three faces draws U+2011). */
+  var SIGNATURE_LINE = ['Connaître nos noms,', 'décoloniser leur emploi,', 'nous nommer nous-mêmes.'];
+  var SIGNATURE_TEXT = SIGNATURE_LINE.join(' ');
+  var SIGLINE_Y = 760; /* top of the line's first line box on every closing card */
+  function sigLine() {
+    var d = el('div', 'ec-sigline');
+    d.setAttribute('lang', 'fr');
+    SIGNATURE_LINE.forEach(function (t) { d.appendChild(el('span', '', esc(t))); });
+    return d;
+  }
 
   function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
   function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
@@ -126,7 +137,6 @@
     if (opts.logo) { var i = new Image(); i.src = opts.logo; i.alt = ''; brand.appendChild(i); }
     var words = el('div', 'ec-sign-words');
     words.appendChild(el('span', 'ec-wordmark', 'EthniAfrica'));
-    if (centered) words.appendChild(el('span', 'ec-tagline', esc(TAGLINE)));
     brand.appendChild(words);
     s.appendChild(brand);
     if (!centered) s.appendChild(el('span', 'ec-sign-url', esc(opts.footer || 'ethniafrica.com · @ethniafrica')));
@@ -708,7 +718,8 @@
       p.appendChild(el('div', dcls, fr(spec.date.display)));
     }
     if (spec.recap) p.appendChild(recap(spec.recap));
-    if (spec.title) p.appendChild(el('h2', 'ec-title' + (type === 'opener' ? ' ec-title--xl' : (type === 'map' ? ' ec-title--m' : '')), fr(spec.title)));
+    if (type === 'closing') p.appendChild(sigLine());
+    else if (spec.title) p.appendChild(el('h2', 'ec-title' + (type === 'opener' ? ' ec-title--xl' : (type === 'map' ? ' ec-title--m' : '')), fr(spec.title)));
     if (spec.date && spec.date.branches) {
       var br = el('div', 'ec-branches');
       spec.date.branches.forEach(function (b, i) {
@@ -744,6 +755,7 @@
       cta.appendChild(el('span', 'ec-cta-pill', esc(spec.cta.domain || 'ethniafrica.com')));
       p.appendChild(cta);
     }
+    if (type === 'closing') { card._gap = el('div', 'ec-close-gap'); p.appendChild(card._gap); }
     sourceLines(p, spec);
     p.appendChild(sign({ logo: opts.logo ? resolve(opts.logo) : null, footer: spec.footer }, type === 'closing'));
     card.appendChild(p);
@@ -786,6 +798,23 @@
     if (title && Math.round(title.getBoundingClientRect().height / sc / parseFloat(getComputedStyle(title).lineHeight)) > 3) report.warnings.push('Titre sur plus de trois lignes : le raccourcir.');
     var pmax = card._bandH ? PANEL_MAX_SERIES : PANEL_MAX;
     report.panelMax = pmax;
+    var sl = spec.type === 'closing' ? p.querySelector('.ec-sigline') : null;
+    if (sl) {
+      /* 1.6.0: the line's top sits at SIGLINE_Y on every closing card. The gap
+         between the pill and the credit takes up what the invitation and the
+         credit leave; the kicker and the recap grow the panel upwards. The
+         panel is bottom-anchored, so the line's top is H - panel + offset. */
+      var lineTop = function () { return H - measure() + (sl.getBoundingClientRect().top - p.getBoundingClientRect().top) / sc; };
+      var natural = lineTop(), gap = Math.round(natural - SIGLINE_Y);
+      if (gap < 0) report.warnings.push('Ligne de signature poussée hors de sa place (' + Math.round(natural) + ' px au lieu de ' + SIGLINE_Y + ') : l’invitation ou le crédit est trop long.');
+      card._gap.style.height = Math.max(0, gap) + 'px';
+      /* Panel heights are rounded up to whole pixels: settle the last pixel. */
+      for (var it = 0; it < 2 && gap > 0; it++) {
+        gap = Math.max(0, gap + Math.round(lineTop() - SIGLINE_Y));
+        card._gap.style.height = gap + 'px';
+      }
+      report.sigline = { naturalY: Math.round(natural), gap: gap };
+    }
     var hgt = measure();
     if (hgt > pmax && spec.density !== 'dense' && spec.density !== 'normal') {
       card.classList.add('ec-dense'); report.autoDense = true; hgt = measure();
@@ -833,6 +862,26 @@
     });
     if (card.classList.contains('ec-diagnose')) {
       var g = el('div', 'ec-guide'); g.style.top = (H - pmax) + 'px'; card.appendChild(g);
+    }
+    if (sl) {
+      /* Measured after the panel is placed, so a late dense step cannot hide a
+         moved line. Boxes are card pixels; a kicker or recap must end above it. */
+      var cr = card.getBoundingClientRect();
+      var box = function (n) { var r = n.getBoundingClientRect(); return { top: (r.top - cr.top) / sc, bottom: (r.bottom - cr.top) / sc, left: (r.left - cr.left) / sc, right: (r.right - cr.left) / sc }; };
+      var lb = box(sl), spans = sl.querySelectorAll('span'), overlaps = 0;
+      Array.prototype.forEach.call(p.querySelectorAll('.ec-kicker,.ec-recap,.ec-body--center,.ec-cta,.ec-credit,.ec-sign'), function (n) {
+        var b = box(n);
+        if (b.bottom > lb.top + 0.5 && b.top < lb.bottom - 0.5) overlaps++;
+      });
+      report.sigline.top = Math.round(lb.top * 10) / 10;
+      report.sigline.left = Math.round(lb.left);
+      report.sigline.right = Math.round(lb.right);
+      report.sigline.text = Array.prototype.map.call(spans, function (s) { return s.textContent; }).join(' ');
+      report.sigline.lines = Math.round((lb.bottom - lb.top) / 64);
+      report.sigline.overlaps = overlaps;
+      if (Math.abs(lb.top - SIGLINE_Y) > 0.5 && report.sigline.gap >= 0 && report.warnings.every(function (w) { return w.indexOf('Ligne de signature') < 0; })) report.warnings.push('Ligne de signature hors de sa place (' + report.sigline.top + ' px au lieu de ' + SIGLINE_Y + ').');
+      if (report.sigline.lines !== 3) report.warnings.push('Ligne de signature sur ' + report.sigline.lines + ' lignes au lieu de trois.');
+      if (overlaps) report.warnings.push('Un texte chevauche la ligne de signature.');
     }
     report.ok = !report.overflow && report.warnings.length === 0;
     card._report = report;
@@ -993,13 +1042,14 @@
     if (spec.note) parts.push(plain(spec.note));
     if (spec.recap) parts.push(spec.recap.map(function (r) { return plain(r.date) + ' : ' + plain(r.name); }).join(' ; '));
     if (spec.cta) parts.push(plain(spec.cta.domain || 'ethniafrica.com'));
+    if (spec.type === 'closing') parts.push(SIGNATURE_TEXT); /* 1.6.0: the alternative text ends with the line, word for word */
     return parts.join('. ').replace(/\.\s*\./g, '.');
   }
 
   window.EthniCards = {
     version: VERSION, W: W, H: H, PANEL_MAX: PANEL_MAX, PANEL_MAX_SERIES: PANEL_MAX_SERIES, BAND_H: BAND_H, SERIES: SERIES, seriesOf: seriesOf,
     render: render, layout: layout, mount: mount,
-    tokensToCss: tokensToCss, installTokens: installTokens, altText: altText,
+    tokensToCss: tokensToCss, installTokens: installTokens, altText: altText, signatureLine: SIGNATURE_TEXT, signatureLines: SIGNATURE_LINE, SIGLINE_Y: SIGLINE_Y,
     statusLabels: STATUS_LABEL, statusMark: statusMark, recap: recap, timeline: timeline, atlasLayout: atlasLayout
   };
 })();

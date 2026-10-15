@@ -18,6 +18,11 @@ vi.mock("@/api/v2/services/languageService", () => ({
   getLanguageById: (...args: unknown[]) => mockGetLanguageById(...args),
 }));
 
+// Brief 3: the next names read other fiches; the route's own test keeps
+// them out of the network.
+vi.mock("@/lib/fiche/languageNextSteps", () => ({
+  loadLanguageNextSteps: vi.fn(async () => []),
+}));
 vi.mock("@/lib/supabase/queries/afrik/flags", () => ({
   getActiveSourceFlags: (...args: unknown[]) =>
     mockGetActiveSourceFlags(...args),

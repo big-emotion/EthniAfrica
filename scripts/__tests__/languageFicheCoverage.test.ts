@@ -117,6 +117,8 @@ describe("language fiche coverage (ETNI-1508)", () => {
       "searchAnswer",
       "speakers",
       "originDebated",
+      // What the sources leave unknown (brief 3): most fiches declare none.
+      "gaps",
     ]);
     const requiredContent = (keys: string[]) =>
       keys.filter((key) => !optionalContentKeys.has(key)).sort();

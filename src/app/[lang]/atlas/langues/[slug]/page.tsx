@@ -8,6 +8,8 @@ import { FicheJsonLd } from "@/components/fiche/FicheJsonLd";
 import { ficheJsonLdFor } from "@/lib/seo/ficheJsonLd";
 import { FicheSequence } from "@/components/fiche/FicheSequence";
 import { FicheOnward } from "@/components/fiche/FicheOnward";
+import { NameNextStep } from "@/components/search/timeline/NameClosing";
+import { loadLanguageNextSteps } from "@/lib/fiche/languageNextSteps";
 import { buildOnwardLinks } from "@/lib/fiche/onwardLinks";
 import { languageOnwardGroups } from "@/lib/fiche/onwardGroups";
 import { FicheHeroHead } from "@/components/fiche/FicheHeroHead";
@@ -83,6 +85,12 @@ export default async function LanguesSlugPage({
   }
 
   const data = transformLanguageData(language);
+  // Brief 3: the next names, each with the reason its own fiche gives.
+  const nextSteps = await loadLanguageNextSteps({
+    family: data.family,
+    speakingPeoples: data.speakingPeoples,
+    language: lang as Language,
+  });
 
   // Live version (revalidate = 3600 at segment level)
   return (
@@ -112,18 +120,22 @@ export default async function LanguesSlugPage({
             hasSourceFlag={sourceFlags.length > 0}
             provenance={provenance}
             onward={
-              <FicheOnward
-                from="language"
-                language={lang as Language}
-                links={buildOnwardLinks(
-                  languageOnwardGroups({
-                    family: data.family,
-                    speakingPeoples: data.speakingPeoples,
-                    language: lang as Language,
-                  }),
-                  lang as Language
-                )}
-              />
+              nextSteps.length > 0 ? (
+                <NameNextStep cards={nextSteps} language={lang as Language} />
+              ) : (
+                <FicheOnward
+                  from="language"
+                  language={lang as Language}
+                  links={buildOnwardLinks(
+                    languageOnwardGroups({
+                      family: data.family,
+                      speakingPeoples: data.speakingPeoples,
+                      language: lang as Language,
+                    }),
+                    lang as Language
+                  )}
+                />
+              )
             }
           />
         }
