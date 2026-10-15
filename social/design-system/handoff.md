@@ -2,6 +2,8 @@
 
 ## Acceptance and integration status
 
+**1.5.0-proposition, 15 October 2026, accepted by the operator the same day.** A map sequence in the series video: areas and names enter on the word that says them, and consecutive map cards share one map. See « Renderer integration of 1.5.0 ».
+
 **1.4.1-proposition, 14 October 2026, accepted by the operator the same day.** In the series video, map cards are drawn on satellite imagery by the satellite video engine; atlas cards stay on the carousel. Nothing else changes. See « Renderer integration of 1.4.1 ».
 
 **1.4.0-proposition, 14 October 2026, accepted by the operator the same day.** It replaces only the series video's layout B of 1.3.0 by a full-screen layout (Series, « Vidéo de série »), adds eight `on-image-*` tokens for the video and changes no card. See « Renderer integration of 1.4.0 ».
@@ -300,6 +302,49 @@ The operator accepted 1.3.0-proposition on 14 October 2026 and chose video layou
 
 **Boards** (`Video` group, `video-141-*`): `serie-nom-famille-02` (Côte d'Ivoire highlighted), `serie-frontieres-02` (two areas across a border, Parchemin, drawn at the scale limit), the change from a photograph to a map at 100 and 200 ms, the guides, the Parchemin and the flat carousel cards beside their video frames, the atlas card kept on the carousel, and the 430 px strip.
 
+## Renderer integration of 1.5.0
+
+**Status: accepted by the operator on 15 October 2026, with the designer's recommendations** (Series, « Map sequence », decisions 1 to 4). The Amazigh area of the test episode is built from its own cited source before the episode is produced. It adds the map sequence to the series video (Series, « Map sequence »); a single map card without `map.sequence` stays exactly as in 1.4.1, and no carousel card changes.
+
+**Card data.**
+
+```json
+"map": {
+  "sequence": "touareg",
+  "areas": [
+    { "file": "touareg-imuhagh.geojson", "name": "Imuhagh", "lang": "tamahaq", "ink": "a", "say": "Imuhagh", "langSay": "tamahaq" },
+    { "file": "touareg-imajeghen.geojson", "name": "Imajeghen", "lang": "tamajaq", "ink": "b", "say": "Imajeghen", "langSay": "tamajaq" }
+  ],
+  "caption": { "source": "fiche EthniAfrica Touareg ; aires approximatives d'après Natural Earth et al-Idrîsî (1154)" }
+}
+```
+
+`say` and `langSay` name a unit of the card's own chunks (`chunkUnits`), first occurrence; a card later in the sequence lists the areas its view frames, and may set `say` only for those entering on it. The area files are those of `social/video/data/areas/`, with their `kind`, `source` and `licence`; the engine reads no inline path for a sequence.
+
+**Timing** (frames at 30 fps, from the voice's words JSON). An area's entry starts at the start of its `say` word, or 21 frames (700 ms) after the previous entry in the sequence if that is later; its opacity is `enter((f − start) / 21)` (the 0.4.0 easing). Its name starts when the area reaches 0.6 and takes 9 frames (300 ms); its key item follows the area. A language starts at its `langSay` word and takes 9 frames. Nothing that has entered leaves before the sequence ends, except an area the next view does not frame.
+
+**Inks.** `page.mjs`'s `INK` gains `d: "#c4a8f2"`, with its hatch patterns at 45° and 135° and its legend swatches, generated as for a, b and c; the satellite video's frames do not change. On imagery, every coloured stroke keeps its dark keyline (`areaFill`, `areaEdge`).
+
+**Labels.** Placed by `placeLabels` in the map band (y 724 to 1296, x 60 to 1020) with a `stack` style: one box for name and language, 32/38 then 26/30, both outlined (`-webkit-text-stroke` 6 px and 5 px, `paint-order: stroke fill`). The box is reserved at full height from the name's entry, so the language never moves it. A label with no room goes to the key as text (0.4.0).
+
+**Continuity.** Consecutive cards with the same `map.sequence` share one map layer: the page draws the imagery once per view and never cross-fades it between them; only the head and foot layers change, with the 1.4.0 timing. The zoom is `1 + 0.04 × (f − sequence start) / (sequence end − sequence start)`. A card of the sequence that comes back after another card is entered by the ordinary 9-frame cross-fade, its overlays at their end-of-sequence state.
+
+**Change of view.** When a card's view differs from the previous card's, the camera moves during the change: 27 frames from the outgoing card's change start, longitude and latitude linear, radius log-linear, eased (`enter`), flat, orthographic. The imagery is redrawn each frame of the move (the only frames where it is). Names fade out over the first 5 frames and back over the 5 after the move; an area outside the new view fades out over the move.
+
+**Credits.** As 1.4.1, the source line from the caption; then « Imagerie : NASA Earth Observatory ; contours : Natural Earth, domaine public », with « frontières » instead of « contours » when the map draws borders.
+
+**What the engine checks** (refuse, or report with `--diagnose`):
+
+1. Every sequence area is a file of `social/video/data/areas/`; a sequence with an inline area path is refused.
+2. Every `say` and `langSay` is a unit of its card's chunks; one not found is refused (« Mot de la carte absent du sous-titre »).
+3. At most four inks in a sequence (« Cinq noms en couleur : quatre au plus »), at most six labels on screen, a stack counting one.
+4. Each view: subject between y 724 and the foot, the scale limit, every label in the map band.
+5. Between two cards of one sequence, the imagery is not cross-faded: away from overlays and text, the pixels of the last frame of one card and the first of the next are equal unless the view changes.
+6. A camera move only happens during a card change, in 27 frames, flat.
+7. The 1.4.1 checks hold for every map card.
+
+**Boards** (`Video` group, `video-150-*`): the four beats (`carte-1` to `carte-4`), the entries on the word, the change of view, the return after a photograph, the label rule, the inks, the timing, the 430 px strip. Drawn by a scratch copy of the 1.4.1 engine page, patched for per-area opacity, stacked labels and the fourth ink; the script is kept with the design package.
+
 ## Required assets
 
 - Fonts: `fonts/Anton-Regular.ttf`, `fonts/NunitoSans.ttf`, `fonts/NotoSans-Variable.ttf`, `fonts/Fraunces.ttf`, `fonts/NotoSansEthiopic-Bold.ttf`, all under the SIL Open Font License 1.1.
@@ -358,3 +403,9 @@ The operator accepted 1.3.0-proposition on 14 October 2026 and chose video layou
 - The operator's decision of 14 October 2026: in the series video, a map card is drawn by the satellite video engine on imagery; no flat 9:16 base map is built per region; one map grammar in video, the satellite video's.
 - Brief: `proposals/1.4.1-proposition/claude-design-brief.md` on `recette`.
 - Proposed and accepted on 14 October 2026.
+
+## Commissioned on 15 October 2026 (1.5.0)
+
+- The operator's request of 15 October 2026, for series 2, episode 1 (« Touareg »): the regions appear on the map as the voice names them, each in its colour; then the language names on the same regions; then, in the summary, the map returns with the names and languages.
+- Brief: `proposals/1.5.0-proposition/claude-design-brief.md`. The signature line brief, first filed under the same number, is renumbered 1.6.0 (`proposals/1.6.0-proposition/`).
+- Proposed and accepted on 15 October 2026, with the designer's recommendations.
