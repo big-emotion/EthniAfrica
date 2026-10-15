@@ -43,6 +43,13 @@ A piece belonging to a social series follows
 `docs/editorial/strategy/social-series.md`: its fixed beats, its series band on
 the accepted card system, its closing sentence and its campaign code.
 
+Before writing a video script, read [Script lessons](references/script-lessons.md).
+It records the operator's corrections over six versions of « tribu » (series 4,
+n° 1, approved 15 October 2026 as « un script parfait »): research before
+approval 1, a narrated thread rather than a list of dates, connectors, a hook
+reminder and chapters in long videos, and a signed ending. Its approved text is
+the reference example.
+
 ## Start or resume
 
 Read `docs/editorial/doctrine.md`, `docs/editorial/reader-facing-register.md` and
