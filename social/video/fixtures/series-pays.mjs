@@ -25,16 +25,9 @@ export const CARDS = fileURLToPath(
 const LEAD = 0.6;
 const round = (s) => Math.round(s * 1000) / 1000;
 
-// `edit(input)` changes the sequence before it is returned; `script(beats)`
-// changes the spoken chunks before they are timed.
-export function seriesDemo(dir, { edit = () => {}, script = (b) => b } = {}) {
-  mkdirSync(dir, { recursive: true });
-  const beats = script(
-    model.beats.map((beat) => ({
-      card: `serie-${beat.card}`,
-      chunks: beat.chunks.map(({ text, duration }) => ({ text, duration })),
-    }))
-  );
+// Generated silence whose word times spread each chunk's units over the
+// chunk's scripted duration, from 0.6 s in; writes voice.wav and words.json.
+export function writeSyntheticVoice(dir, beats) {
   let t = LEAD;
   const timed = beats.flatMap((beat) =>
     beat.chunks.map(({ text, duration }) => {
@@ -73,6 +66,19 @@ export function seriesDemo(dir, { edit = () => {}, script = (b) => b } = {}) {
       chunks: timed,
     })
   );
+}
+
+// `edit(input)` changes the sequence before it is returned; `script(beats)`
+// changes the spoken chunks before they are timed.
+export function seriesDemo(dir, { edit = () => {}, script = (b) => b } = {}) {
+  mkdirSync(dir, { recursive: true });
+  const beats = script(
+    model.beats.map((beat) => ({
+      card: `serie-${beat.card}`,
+      chunks: beat.chunks.map(({ text, duration }) => ({ text, duration })),
+    }))
+  );
+  writeSyntheticVoice(dir, beats);
   const input = {
     // The script is 1.3.0's; the layout is the accepted 1.4.0 full screen.
     design: "EthniAfrica Cartes 1.5.0-proposition, vidéo de série plein écran",

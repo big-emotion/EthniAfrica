@@ -1,0 +1,174 @@
+{
+  "entree-imuhagh": {
+    "frame": 222,
+    "maps": [
+      {
+        "id": "serie-nom-recu-carte-1",
+        "spanKm": 2388,
+        "moving": false
+      }
+    ],
+    "imageryPaints": 0,
+    "names": []
+  },
+  "carte-1": {
+    "frame": 312,
+    "maps": [
+      {
+        "id": "serie-nom-recu-carte-1",
+        "spanKm": 2388,
+        "moving": false
+      }
+    ],
+    "imageryPaints": 0,
+    "names": [
+      ["Imuhaghtamahaq", "rgb(232, 185, 106)", 508, 858, 132, 69],
+      ["Imajeghentamajaq", "rgb(108, 195, 181)", 597, 1156, 156, 69],
+      ["Imushaghtamasheq", "rgb(227, 135, 106)", 241, 1085, 147, 69]
+    ]
+  },
+  "changement-de-vue": {
+    "frame": 333,
+    "maps": [
+      {
+        "id": "serie-nom-recu-carte-2",
+        "spanKm": 5149,
+        "moving": true
+      }
+    ],
+    "imageryPaints": 1,
+    "names": []
+  },
+  "entree-amazigh": {
+    "frame": 387,
+    "maps": [
+      {
+        "id": "serie-nom-recu-carte-2",
+        "spanKm": 5800,
+        "moving": false
+      }
+    ],
+    "imageryPaints": 0,
+    "names": [
+      ["Imuhaghtamahaq", "rgb(232, 185, 106)", 502, 980, 132, 69],
+      ["Imajeghentamajaq", "rgb(108, 195, 181)", 532, 1103, 157, 69],
+      ["Imushaghtamasheq", "rgb(227, 135, 106)", 345, 1074, 148, 69],
+      ["Amazigh", "rgb(196, 168, 242)", 483, 814, 133, 39]
+    ]
+  },
+  "carte-2": {
+    "frame": 485,
+    "maps": [
+      {
+        "id": "serie-nom-recu-carte-2",
+        "spanKm": 5800,
+        "moving": false
+      }
+    ],
+    "imageryPaints": 0,
+    "names": [
+      ["Imuhaghtamahaq", "rgb(232, 185, 106)", 502, 979, 133, 70],
+      ["Imajeghentamajaq", "rgb(108, 195, 181)", 532, 1103, 158, 70],
+      ["Imushaghtamasheq", "rgb(227, 135, 106)", 343, 1075, 149, 70],
+      ["Amazigh", "rgb(196, 168, 242)", 483, 813, 134, 39]
+    ]
+  },
+  "retour-aux-regions": {
+    "frame": 504,
+    "maps": [
+      {
+        "id": "serie-nom-recu-carte-3",
+        "spanKm": 2690,
+        "moving": true
+      }
+    ],
+    "imageryPaints": 1,
+    "names": []
+  },
+  "entree-tamahaq": {
+    "frame": 622,
+    "maps": [
+      {
+        "id": "serie-nom-recu-carte-3",
+        "spanKm": 2388,
+        "moving": false
+      }
+    ],
+    "imageryPaints": 0,
+    "names": [
+      ["Imuhaghtamahaq", "rgb(232, 185, 106)", 507, 854, 134, 70],
+      ["Imajeghentamajaq", "rgb(108, 195, 181)", 599, 1159, 160, 70],
+      ["Imushaghtamasheq", "rgb(227, 135, 106)", 235, 1087, 151, 70]
+    ]
+  },
+  "carte-3": {
+    "frame": 674,
+    "maps": [
+      {
+        "id": "serie-nom-recu-carte-3",
+        "spanKm": 2388,
+        "moving": false
+      }
+    ],
+    "imageryPaints": 0,
+    "names": [
+      ["Imuhaghtamahaq", "rgb(232, 185, 106)", 507, 854, 135, 71],
+      ["Imajeghentamajaq", "rgb(108, 195, 181)", 599, 1159, 160, 71],
+      ["Imushaghtamasheq", "rgb(227, 135, 106)", 234, 1087, 151, 71]
+    ]
+  },
+  "photographie": {
+    "frame": 743,
+    "maps": [],
+    "imageryPaints": 0,
+    "names": []
+  },
+  "retour-100ms": {
+    "frame": 815,
+    "maps": [
+      {
+        "id": "serie-nom-recu-carte-4",
+        "spanKm": 2388,
+        "moving": false
+      }
+    ],
+    "imageryPaints": 0,
+    "names": [
+      ["Imuhaghtamahaq", "rgb(232, 185, 106)", 509, 859, 130, 68],
+      ["Imajeghentamajaq", "rgb(108, 195, 181)", 597, 1154, 154, 68],
+      ["Imushaghtamasheq", "rgb(227, 135, 106)", 245, 1084, 146, 68]
+    ]
+  },
+  "retour-200ms": {
+    "frame": 818,
+    "maps": [
+      {
+        "id": "serie-nom-recu-carte-4",
+        "spanKm": 2388,
+        "moving": false
+      }
+    ],
+    "imageryPaints": 0,
+    "names": [
+      ["Imuhaghtamahaq", "rgb(232, 185, 106)", 508, 859, 130, 68],
+      ["Imajeghentamajaq", "rgb(108, 195, 181)", 597, 1154, 155, 68],
+      ["Imushaghtamasheq", "rgb(227, 135, 106)", 245, 1084, 146, 68]
+    ]
+  },
+  "carte-4": {
+    "frame": 828,
+    "maps": [
+      {
+        "id": "serie-nom-recu-carte-4",
+        "spanKm": 2388,
+        "moving": false
+      }
+    ],
+    "imageryPaints": 0,
+    "names": [
+      ["Imuhaghtamahaq", "rgb(232, 185, 106)", 508, 859, 130, 68],
+      ["Imajeghentamajaq", "rgb(108, 195, 181)", 597, 1154, 155, 68],
+      ["Imushaghtamasheq", "rgb(227, 135, 106)", 244, 1084, 146, 68]
+    ]
+  }
+}

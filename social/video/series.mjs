@@ -15,8 +15,14 @@ import {
   loadVoice,
   enter,
   leave,
+  IMAGERY,
 } from "./sequence.mjs";
-import { MAP_FRAME, checkSeriesMapCard } from "./series-map.mjs";
+import { MAP_FRAME, MAP_IMAGERY, checkSeriesMapCard } from "./series-map.mjs";
+import {
+  planMapSequences,
+  mapRunState,
+  runOfCard,
+} from "./series-sequence.mjs";
 
 // The full-screen bands in frame pixels (series.md and handoff.md,
 // « Renderer integration of 1.4.0 »). The image fills the frame; only text
@@ -182,6 +188,8 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     chunks,
   };
   schedule(seq, voice.chunks);
+  // 1.5.0: consecutive map cards of one `map.sequence` share one map.
+  seq.mapSequence = planMapSequences(seq, IMAGERY[MAP_IMAGERY]);
   return seq;
 }
 
@@ -264,6 +272,16 @@ export function seriesFrameState(seq, frame) {
       zoom: zoom(next),
       text: Math.max(0, 2 * p - 1),
     });
+  }
+  // A map sequence's card shows its run's map, zoomed once over the run.
+  // Between two cards of one run the map is drawn once, by the outgoing
+  // card's layer: the incoming card brings only its head and foot.
+  const runs = layers.map((l) => runOfCard(seq.mapSequence, l.card));
+  for (const [i, l] of layers.entries()) {
+    if (runs[i] < 0) continue;
+    l.map = mapRunState(seq, runs[i], frame);
+    l.zoom = l.map.zoom;
+    if (i && runs[i] === runs[i - 1]) l.opacity = 0;
   }
   const chunk = seq.chunks.find((c) => frame >= c.appear && frame < c.gone);
   const subtitle = chunk
