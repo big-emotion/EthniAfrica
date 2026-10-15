@@ -23,6 +23,8 @@ import { ficheSourceEntries } from "@/lib/afrik/ficheSourceLabel";
 import { getFieldNotes } from "@/lib/supabase/queries/afrik/module-zero-batch";
 import { FicheJsonLd } from "@/components/fiche/FicheJsonLd";
 import { FicheOnward } from "@/components/fiche/FicheOnward";
+import { NameNextStep } from "@/components/search/timeline/NameClosing";
+import { loadPeopleNextSteps } from "@/lib/fiche/peopleNextSteps";
 import { buildOnwardLinks } from "@/lib/fiche/onwardLinks";
 import { peopleOnwardGroups } from "@/lib/fiche/onwardGroups";
 import { getLanguageFamilyById } from "@/api/v2/services/languageFamilyService";
@@ -92,6 +94,7 @@ async function PeopleLiveContent({
           ? {
               id: family.id,
               name: family.nameFr,
+              summary: family.nameHistory?.summary ?? null,
             }
           : null
       )
@@ -113,6 +116,13 @@ async function PeopleLiveContent({
   const peopleFieldOverlay = buildPeopleFieldOverlay(
     peopleDetail.demography?.distributionByCountry
   );
+  // Brief 2: the next names, each with the reason its own fiche gives.
+  const nextSteps = await loadPeopleNextSteps({
+    family: languageFamily,
+    borneNames: borneNames ?? [],
+    countryCodes: peopleDetail.currentCountries ?? [],
+    language,
+  });
   const copy = peopleCopy[language];
   const selfName = peopleDetail.appellations?.selfAppellation;
   const displayName = peopleDisplayLabel(selfName, peopleDetail.nameMain);
@@ -171,25 +181,30 @@ async function PeopleLiveContent({
             peopleNameIndex={peopleNameIndex}
             resolvedFamilyName={languageFamily?.name}
             bibliography={notes.count > 0 ? register.entries : undefined}
+            nameHistory={people.nameHistory ?? null}
             onward={
-              <FicheOnward
-                from="people"
-                language={language}
-                links={buildOnwardLinks(
-                  peopleOnwardGroups({
-                    family: languageFamily,
-                    languages: spokenLanguages,
-                    countryCodes: peopleDetail.currentCountries,
-                    sameFamilyPeoples: egoNetwork.derived.map(
-                      (link) => link.neighbor
-                    ),
-                    borneNames: borneNames ?? [],
+              nextSteps.length > 0 ? (
+                <NameNextStep cards={nextSteps} language={language} />
+              ) : (
+                <FicheOnward
+                  from="people"
+                  language={language}
+                  links={buildOnwardLinks(
+                    peopleOnwardGroups({
+                      family: languageFamily,
+                      languages: spokenLanguages,
+                      countryCodes: peopleDetail.currentCountries,
+                      sameFamilyPeoples: egoNetwork.derived.map(
+                        (link) => link.neighbor
+                      ),
+                      borneNames: borneNames ?? [],
+                      language,
+                    }),
                     language,
-                  }),
-                  language,
-                  { kind: "people", id: peopleDetail.id }
-                )}
-              />
+                    { kind: "people", id: peopleDetail.id }
+                  )}
+                />
+              )
             }
           />
         }

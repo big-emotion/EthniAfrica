@@ -40,7 +40,15 @@ function languageName(code: string, language: Language): string {
   }
 }
 
-function Badge({ badge, language }: { badge: NameBadge; language: Language }) {
+/** One badge of a name (« Leur nom »…), also shown on a fiche's sources block. */
+// @req REQ-198
+export function Badge({
+  badge,
+  language,
+}: {
+  badge: NameBadge;
+  language: Language;
+}) {
   const labels = peopleCopy[language].nameAnswer.badges;
   const [kind, code] = badge.split(":") as [string, string | undefined];
   const word =

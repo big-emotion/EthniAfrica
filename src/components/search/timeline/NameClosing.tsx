@@ -4,16 +4,21 @@ import Link from "next/link";
 import { Fragment, useId } from "react";
 
 import type { FlagFormTarget } from "@/components/flags/FlagForm";
+import { Badge as NameBadgeChip } from "@/components/names/NameAnswerCard";
 import { SearchFeedContributionAction } from "@/components/search/feed/SearchFeedContributionAction";
 import { sourceKindLabel } from "@/lib/glossaire/vocabularies";
 import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
 import { nameTimelineCopy } from "@/lib/i18n/copy/nameTimeline";
 import { sourceDiamondCopy } from "@/lib/i18n/copy/sourceDiamond";
 import { getLocalizedRoute } from "@/lib/routing";
+import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import {
   firstSentence,
   groupAccountsBySourceFamily,
+  groupBySourceFamily,
+  type NameHistorySource,
   type NextStepCard,
+  type SourceFamilyGroup,
 } from "@/lib/search/nameClosing";
 
 export type { NextStepCard } from "@/lib/search/nameClosing";
@@ -116,8 +121,6 @@ export function NameSourcesBlock({
 }: NameSourcesBlockProps) {
   const headingId = useId();
   const copy = nameClosingCopy[language];
-  const families = sourceDiamondCopy[language].families;
-  const timelineCopy = nameTimelineCopy[language];
   const groups = groupAccountsBySourceFamily(name);
   if (groups.length === 0) return null;
 
@@ -149,119 +152,14 @@ export function NameSourcesBlock({
           forms={[name.nameText]}
         />
       </p>
-      <ul aria-label={copy.sourcesStrip} className="flex flex-wrap gap-afh-md">
-        {groups.map((group) => (
-          <li
-            key={group.family}
-            className="inline-flex min-h-9 items-center gap-afh-md rounded-afh-full border border-afh-border bg-afh-bg px-afh-lg py-afh-xs text-afh-caption font-semibold text-afh-text"
-          >
-            <FamilyMark family={group.family} />
-            {families[group.family]} ·{" "}
-            <b className={MONO}>{copy.sourceCount(group.sourceCount)}</b>
-          </li>
-        ))}
-      </ul>
-      <div className="flex flex-col gap-afh-md">
-        {groups.map((group, groupIndex) => (
-          <details
-            key={group.family}
-            open={open && groupIndex === 0}
-            data-family={group.family}
-            className="group rounded-afh-lg border border-afh-border bg-afh-bg"
-          >
-            <summary className="flex min-h-[52px] cursor-pointer list-none items-center gap-afh-lg px-afh-2xl py-afh-md [&::-webkit-details-marker]:hidden">
-              <FamilyMark family={group.family} />
-              <span className="font-bold text-afh-text">
-                {families[group.family]}
-              </span>
-              <span
-                className={cn(
-                  MONO,
-                  "ml-auto whitespace-nowrap text-afh-caption text-afh-text-soft"
-                )}
-              >
-                {copy.accountCount(group.accounts.length)}
-              </span>
-              <Caret />
-            </summary>
-            <div className="flex flex-col gap-afh-md px-afh-2xl pb-afh-2xl">
-              {group.accounts.map(({ account, sources }, index) => (
-                <details
-                  key={index}
-                  open={open && groupIndex === 0 && index === 0}
-                  className="group/account border-t border-dashed border-afh-border"
-                >
-                  <summary className="grid min-h-11 cursor-pointer list-none grid-cols-[1fr_auto] items-center gap-afh-lg py-afh-md [&::-webkit-details-marker]:hidden">
-                    <span className="flex min-w-0 flex-col gap-0.5">
-                      <span
-                        className={cn(
-                          MONO,
-                          "text-afh-caption font-semibold text-afh-text-soft"
-                        )}
-                      >
-                        {hypothesis.has(account)
-                          ? `${timelineCopy.hypothesis(hypothesis.get(account)!)} · `
-                          : null}
-                        {account.period.label ?? copy.undated}
-                      </span>
-                      <span className="line-clamp-1 text-afh-small leading-[1.5] text-afh-text group-open/account:hidden">
-                        <Named
-                          text={firstSentence(account.statement)}
-                          forms={forms}
-                        />
-                      </span>
-                    </span>
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      aria-hidden="true"
-                      className="size-4 text-afh-text-soft transition-transform group-open/account:rotate-180"
-                    >
-                      <path d="m6 9 6 6 6-6" />
-                    </svg>
-                  </summary>
-                  <p className="text-afh-small leading-[1.6] [overflow-wrap:anywhere]">
-                    <Named text={account.statement} forms={forms} />
-                  </p>
-                  <ul className="my-afh-md flex flex-col gap-afh-sm border-l-2 border-afh-border pl-afh-lg">
-                    {sources.map((source, sourceIndex) => (
-                      <li
-                        key={sourceIndex}
-                        className="text-afh-caption leading-[1.5] text-afh-text-soft"
-                      >
-                        {source.url ? (
-                          <a
-                            href={source.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="font-bold text-[color:var(--accent-ink)] underline decoration-1 underline-offset-[3px]"
-                          >
-                            {source.title}
-                          </a>
-                        ) : (
-                          <span className="font-bold text-afh-text">
-                            {source.title}
-                          </span>
-                        )}
-                        {" · "}
-                        {[source.author, source.year]
-                          .filter(Boolean)
-                          .join(", ")}
-                        {" · "}
-                        {sourceKindLabel(source.source_kind, language)}
-                      </li>
-                    ))}
-                  </ul>
-                </details>
-              ))}
-            </div>
-          </details>
-        ))}
-      </div>
+      <SourceStrip groups={groups} language={language} />
+      <FamilyGroups
+        groups={groups}
+        forms={forms}
+        open={open}
+        hypothesis={hypothesis}
+        language={language}
+      />
       {otherKinds.length > 0 ? (
         <p
           data-other-voices=""
@@ -270,6 +168,321 @@ export function NameSourcesBlock({
           {copy.otherVoices(subjectType, otherKinds)}
         </p>
       ) : null}
+    </section>
+  );
+}
+
+interface FamilyGroupsProps {
+  groups: readonly SourceFamilyGroup[];
+  forms: string[];
+  /** Opens the first family and its first account. */
+  open: boolean;
+  hypothesis?: ReadonlyMap<NameHistoryAccount, number>;
+  /** An oral source named by its carrier and place first (brief 2). */
+  carrierFirst?: boolean;
+  language: Language;
+}
+
+/** The family groups of block 3, each folding its accounts. */
+function FamilyGroups({
+  groups,
+  forms,
+  open,
+  hypothesis = new Map(),
+  carrierFirst = false,
+  language,
+}: FamilyGroupsProps) {
+  const copy = nameClosingCopy[language];
+  const families = sourceDiamondCopy[language].families;
+  const timelineCopy = nameTimelineCopy[language];
+  return (
+    <div className="flex flex-col gap-afh-md">
+      {groups.map((group, groupIndex) => (
+        <details
+          key={group.family}
+          open={open && groupIndex === 0}
+          data-family={group.family}
+          className="group rounded-afh-lg border border-afh-border bg-afh-bg"
+        >
+          <summary className="flex min-h-[52px] cursor-pointer list-none items-center gap-afh-lg px-afh-2xl py-afh-md [&::-webkit-details-marker]:hidden">
+            <FamilyMark family={group.family} />
+            <span className="font-bold text-afh-text">
+              {families[group.family]}
+            </span>
+            <span
+              className={cn(
+                MONO,
+                "ml-auto whitespace-nowrap text-afh-caption text-afh-text-soft"
+              )}
+            >
+              {copy.accountCount(group.accounts.length)}
+            </span>
+            <Caret />
+          </summary>
+          <div className="flex flex-col gap-afh-md px-afh-2xl pb-afh-2xl">
+            {group.accounts.map(({ account, sources }, index) => (
+              <details
+                key={index}
+                open={open && groupIndex === 0 && index === 0}
+                className="group/account border-t border-dashed border-afh-border"
+              >
+                <summary className="grid min-h-11 cursor-pointer list-none grid-cols-[1fr_auto] items-center gap-afh-lg py-afh-md [&::-webkit-details-marker]:hidden">
+                  <span className="flex min-w-0 flex-col gap-0.5">
+                    <span
+                      className={cn(
+                        MONO,
+                        "text-afh-caption font-semibold text-afh-text-soft"
+                      )}
+                    >
+                      {hypothesis.has(account)
+                        ? `${timelineCopy.hypothesis(hypothesis.get(account)!)} · `
+                        : null}
+                      {account.period.label ?? copy.undated}
+                    </span>
+                    <span className="line-clamp-1 text-afh-small leading-[1.5] text-afh-text group-open/account:hidden">
+                      <Named
+                        text={firstSentence(account.statement)}
+                        forms={forms}
+                      />
+                    </span>
+                  </span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                    className="size-4 text-afh-text-soft transition-transform group-open/account:rotate-180"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </summary>
+                <p className="text-afh-small leading-[1.6] [overflow-wrap:anywhere]">
+                  <Named text={account.statement} forms={forms} />
+                </p>
+                <ul className="my-afh-md flex flex-col gap-afh-sm border-l-2 border-afh-border pl-afh-lg">
+                  {sources.map((source, sourceIndex) => (
+                    <li
+                      key={sourceIndex}
+                      className="text-afh-caption leading-[1.5] text-afh-text-soft"
+                    >
+                      {carrierFirst && source.carrier ? (
+                        <OralSourceLine source={source} language={language} />
+                      ) : (
+                        <>
+                          {source.url ? (
+                            <a
+                              href={source.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="font-bold text-[color:var(--accent-ink)] underline decoration-1 underline-offset-[3px]"
+                            >
+                              {source.title}
+                            </a>
+                          ) : (
+                            <span className="font-bold text-afh-text">
+                              {source.title}
+                            </span>
+                          )}
+                          {" · "}
+                          {[source.author, source.year]
+                            .filter(Boolean)
+                            .join(", ")}
+                          {" · "}
+                          {sourceKindLabel(source.source_kind, language)}
+                        </>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            ))}
+          </div>
+        </details>
+      ))}
+    </div>
+  );
+}
+
+/**
+ * An oral account is identified by who carries it and where, then by who
+ * wrote it down (doctrine §1.1, brief 2).
+ */
+function OralSourceLine({
+  source,
+  language,
+}: {
+  source: NameHistorySource;
+  language: Language;
+}) {
+  const copy = nameClosingCopy[language].fiche;
+  const title = source.narrative ?? source.title;
+  return (
+    <>
+      {source.url ? (
+        <a
+          href={source.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-bold text-[color:var(--accent-ink)] underline decoration-1 underline-offset-[3px]"
+        >
+          {title}
+        </a>
+      ) : (
+        <span className="font-bold text-afh-text">{title}</span>
+      )}
+      {" · "}
+      {copy.carrier(source.carrier, source.place)}
+      {" · "}
+      {sourceKindLabel(source.source_kind, language)}
+      {" · "}
+      {copy.reportedBy(source.author, source.year, source.title)}
+    </>
+  );
+}
+
+/** The families present, each with its count of distinct sources. */
+function SourceStrip({
+  groups,
+  language,
+}: {
+  groups: readonly SourceFamilyGroup[];
+  language: Language;
+}) {
+  const copy = nameClosingCopy[language];
+  const families = sourceDiamondCopy[language].families;
+  return (
+    <ul aria-label={copy.sourcesStrip} className="flex flex-wrap gap-afh-md">
+      {groups.map((group) => (
+        <li
+          key={group.family}
+          className="inline-flex min-h-9 items-center gap-afh-md rounded-afh-full border border-afh-border bg-afh-bg px-afh-lg py-afh-xs text-afh-caption font-semibold text-afh-text"
+        >
+          <FamilyMark family={group.family} />
+          {families[group.family]} ·{" "}
+          <b className={MONO}>{copy.sourceCount(group.sourceCount)}</b>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+export interface NameFicheSourcesBlockProps {
+  history: NameHistory;
+  subjectType: SearchEntityType;
+  language: Language;
+}
+
+/**
+ * Block 3 on a fiche (brief 2, boards people-*.dc.html): every name of the
+ * subject, grouped by name first, then by the type of its sources. The first
+ * name (the self-name, first in the fiche) is open, the others folded. A
+ * fiche with one name keeps the search page's form.
+ */
+// @req REQ-198
+// @req REQ-161
+export function NameFicheSourcesBlock({
+  history,
+  subjectType,
+  language,
+}: NameFicheSourcesBlockProps) {
+  const headingId = useId();
+  const copy = nameClosingCopy[language];
+  const names = history.names.filter((name) => name.accounts.length > 0);
+  const every = names.flatMap((name) => name.accounts);
+  const groups = groupBySourceFamily(every);
+  if (groups.length === 0) return null;
+  const forms = names.map((name) => name.nameText);
+  const single = names.length === 1 ? names[0] : null;
+
+  return (
+    <section
+      aria-labelledby={headingId}
+      data-name-sources=""
+      className="afh-tile flex flex-col gap-afh-2xl text-left"
+    >
+      <p className="afh-tile-label">{copy.sourcesEyebrow}</p>
+      <h2 id={headingId} className={H2}>
+        {single ? (
+          <Named
+            text={copy.sourcesTitle(single.nameText)}
+            forms={[single.nameText]}
+          />
+        ) : (
+          copy.fiche.sourcesTitle(subjectType)
+        )}
+      </h2>
+      <p className="text-afh-small leading-[1.6] text-afh-text-soft">
+        {single ? (
+          <Named
+            text={copy.sourcesLead(every.length, single.nameText)}
+            forms={[single.nameText]}
+          />
+        ) : (
+          copy.fiche.sourcesLead(every.length, names.length, subjectType)
+        )}
+      </p>
+      <SourceStrip groups={groups} language={language} />
+      {single ? (
+        <FamilyGroups
+          groups={groups}
+          forms={forms}
+          open
+          carrierFirst
+          language={language}
+        />
+      ) : (
+        <div className="flex flex-col gap-afh-md">
+          {names.map((name, index) => (
+            <details
+              key={name.nameText}
+              open={index === 0}
+              data-name-group=""
+              className="group/name rounded-afh-lg border border-afh-border bg-afh-surface"
+            >
+              <summary className="flex min-h-[52px] cursor-pointer list-none flex-wrap items-center gap-afh-md px-afh-2xl py-afh-md [&::-webkit-details-marker]:hidden">
+                <span className="font-afh-display text-afh-h3 font-black leading-[1.2] text-afh-text [overflow-wrap:anywhere]">
+                  {name.nameText}
+                </span>
+                {name.selfGiven ? (
+                  <NameBadgeChip badge="own" language={language} />
+                ) : null}
+                <span
+                  className={cn(
+                    MONO,
+                    "ml-auto whitespace-nowrap text-afh-caption text-afh-text-soft"
+                  )}
+                >
+                  {copy.accountCount(name.accounts.length)}
+                </span>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                  className="size-4 shrink-0 text-afh-text-soft transition-transform group-open/name:rotate-180"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </summary>
+              <div className="px-afh-2xl pb-afh-2xl">
+                <FamilyGroups
+                  groups={groupBySourceFamily(name.accounts)}
+                  forms={forms}
+                  open={index === 0}
+                  carrierFirst
+                  language={language}
+                />
+              </div>
+            </details>
+          ))}
+        </div>
+      )}
     </section>
   );
 }
