@@ -4595,3 +4595,14 @@ svg { display: block; }
   border-left: 2px solid var(--afh-border);
   font-size: var(--afh-text-small); line-height: 1.6; color: var(--afh-text-soft);
 }
+
+/* ============================================================
+   Brief 4 (2026-10-15): the language-family fiche. A family's
+   classification status is said in a sentence, above its
+   figures, rather than worn as a badge. New selectors only.
+   ============================================================ */
+.ea-classification {
+  margin-top: var(--afh-space-lg); padding-left: var(--afh-space-lg);
+  border-left: 2px solid var(--afh-color-colonial);
+  font-size: var(--afh-text-small); line-height: 1.6; color: var(--afh-text);
+}
