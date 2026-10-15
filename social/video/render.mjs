@@ -46,7 +46,7 @@ export const BROWSER_ARGS = [
   "--enable-unsafe-swiftshader",
 ];
 // Largest texture side SwiftShader accepts; the world mosaic is reduced to it.
-const MAX_TEXTURE = 8192;
+export const MAX_TEXTURE = 8192;
 
 // Board 6's production height model, checked on 11 October 2026: NOAA NCEI
 // ETOPO 2022, 60 arc-seconds, public domain (CC0 1.0). Ocean depths are

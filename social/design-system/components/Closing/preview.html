@@ -1,4 +1,4 @@
-<!-- @dsCard group="Cartes" height=1300 subtitle="Carte de clôture" -->
+<!-- @dsCard group="Cartes" height=6200 subtitle="Carte de clôture (1.6.0 acceptée)" -->
 <!doctype html>
 <html lang="fr"><head><meta charset="utf-8"><style>
 html,body{margin:0;background:#0f0c09;color:#cbbba3;font-family:Andika,sans-serif}
@@ -9,7 +9,34 @@ html,body{margin:0;background:#0f0c09;color:#cbbba3;font-family:Andika,sans-seri
 .pv-rep b{color:#e8b96a;font-weight:700}
 .pv-rep.bad b{color:#ff8a6a}
 .pv-intro{width:100%;font:400 14px/20px Andika,sans-serif;color:#cbbba3;max-width:900px;margin:0}
-</style></head><body><div class="pv" id="pv"></div>
+.pv-1{padding:20px 20px 8px;display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start}
+.pv-1 p{width:100%;max-width:900px;margin:0;font:400 15px/22px Andika,sans-serif}
+.pv-1 p b{color:#f3e9da}
+.pv-1 h3{width:100%;margin:14px 0 0;font:800 19px/26px Andika,sans-serif;color:#f3e9da}
+.pv-1 figure{margin:0} .pv-1 figcaption{font:700 13px/18px Andika,sans-serif;color:#f3e9da;margin-top:8px;max-width:900px}
+.pv-1 figcaption span{display:block;font-weight:400;color:#cbbba3}
+.pv-1 .tag{display:inline-block;background:#ffe58a;color:#2b2100;font:800 12px/18px Andika,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:2px 10px;border-radius:999px}
+.pv-1 .f img{width:430px;display:block;border-radius:4px}
+.pv-1 .w img{width:900px;max-width:100%;display:block;border-radius:4px}
+</style></head><body><div class="pv-1">
+<h3>1.6.0, acceptée : la ligne de signature</h3>
+<p><span class="tag">1.6.0, acceptée le 15 octobre 2026</span></p>
+<p><b>« Connaître nos noms, décoloniser leur emploi, nous nommer nous-mêmes. »</b> Sur chaque carte de clôture, la phrase du projet remplace le slogan « Notre objectif : raconter l'origine des noms, avec des sources. ». Elle est en Fraunces 600, 56 px, sur trois lignes, et son haut est toujours à 760 px. Dessous : l'invitation, la pastille du site, le crédit et la signature, sans « L'Afrique à travers ses noms ». La phrase fixe de la série passe sur la carte d'avant. Les cartes plus bas sont rendues par le moteur de cette page, qui dessine la ligne depuis l'acceptation.</p>
+<figure class="w"><img src="/_blob/f86d58af548c3aefe7fcc50ff288318b" alt="Carte de clôture annotée : l'ordre et les places"><figcaption>L'ordre et les places.</figcaption></figure>
+<figure class="w"><img src="/_blob/20a386d300a9985a92f94a88df8bb695" alt="Série 6 : dernière carte et clôture en Nuit et en Parchemin"><figcaption>Série 6, une phrase fixe : la dernière carte, puis la clôture.</figcaption></figure>
+<figure class="w"><img src="/_blob/8a60f971e2769fe56ef2ee4e2759c4e8" alt="Série 2 : la question puis la clôture"><figcaption>Série 2, une question aux lecteurs.</figcaption></figure>
+<figure class="w"><img src="/_blob/0a19c0a495724b2cd1f63b9913fc1e6a" alt="Série 3 : clôture en Nuit et en Parchemin"><figcaption>Série 3, pas de phrase propre.</figcaption></figure>
+<figure class="w"><img src="/_blob/7c981617d3bde3aedf95ea9dd97553a5" alt="La ligne mesurée"><figcaption>La ligne : 68 caractères, trois lignes, une idée par ligne.</figcaption></figure>
+<figure class="w"><img src="/_blob/2d1580886c582a6b75f91c7f82c7cf9b" alt="La phrase fixe sur la clôture ou sur sa propre carte"><figcaption>Une carte ou deux : décidé, la phrase fixe a toujours sa propre carte.</figcaption></figure>
+<figure class="w"><img src="/_blob/20856d385ee0fba8f3751a77c2298db5" alt="La signature avec et sans devise"><figcaption>Avec ou sans « L'Afrique à travers ses noms » : décidé, sans.</figcaption></figure>
+<figure class="w"><img src="/_blob/6bcd5d7de0f5b698c085621d9f3087c9" alt="Autres fins"><figcaption>Autres fins : la ligne ne bouge jamais.</figcaption></figure>
+<figure class="w"><img src="/_blob/5c8c6fb329fb04b2a07a1367128d9878" alt="Clôtures à 430 px"><figcaption>À la taille du fil, 430 px.</figcaption></figure>
+<figure class="f"><img src="/_blob/363ef7a84b8c5e0334bfd8fcf0a40b38" alt="Clôture série 6 en Nuit, pleine taille"><figcaption>Série 6, Nuit, 1080 × 1350</figcaption></figure>
+<figure class="f"><img src="/_blob/c45d1fd859677b9cd05ef9fb13ad932f" alt="Clôture série 2 en Parchemin, pleine taille"><figcaption>Série 2, Parchemin, 1080 × 1350</figcaption></figure>
+<figure class="f"><img src="/_blob/caeaeaa3de42ab354a85137a5753fd93" alt="Clôture série 3 en Nuit, pleine taille"><figcaption>Série 3, Nuit, 1080 × 1350</figcaption></figure>
+<h3>Rendues par le moteur de cette page (1.6.0)</h3>
+</div>
+<div class="pv" id="pv"></div>
 <script>
 (async function () {
   var root = document.getElementById('pv');
@@ -25,7 +52,7 @@ html,body{margin:0;background:#0f0c09;color:#cbbba3;font-family:Andika,sans-seri
       if (c.map && c.map.dataRef) { maps[c.map.dataRef] = maps[c.map.dataRef] || await (await fetch(R(c.map.dataRef))).json(); c.map.data = maps[c.map.dataRef]; }
       return c;
     }
-    var ITEMS = [{"id": "seq-9", "caption": "Clôture centrée : la phrase de la marque, la promesse de la fiche, la pastille du site."}, {"id": "seq-9-parchemin", "caption": "Version claire."}, {"id": "chr-5", "caption": "Clôture d'une suite datée : la frise résume le parcours du nom."}];
+    var ITEMS = [{"id": "seq-9", "caption": "Clôture centrée : la ligne de signature, la promesse de la fiche, la pastille du site."}, {"id": "seq-9-parchemin", "caption": "Version claire."}, {"id": "chr-5", "caption": "Clôture d'une suite datée : la frise résume le parcours du nom."}];
     for (var i = 0; i < ITEMS.length; i++) {
       var it = ITEMS[i];
       if (it.intro) { var p = document.createElement('p'); p.className = 'pv-intro'; p.textContent = it.intro; root.appendChild(p); continue; }

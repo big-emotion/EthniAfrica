@@ -164,11 +164,28 @@ test("during a card change, only one card's head shows", () => {
 // @req REQ-186
 test("the ending: block from y 318, centred signature ending on y 1884", () => {
   const end = frames.at(-1);
-  const slogan = end.boxes.find((b) => b.kind === "ending");
-  assert.ok(Math.abs(slogan.y - 318) <= 0.5, `slogan at ${slogan.y}`);
+  const line = end.boxes.find((b) => b.kind === "ending");
+  assert.ok(Math.abs(line.y - 318) <= 0.5, `signature line at ${line.y}`);
   assert.ok(end.boxes.some((b) => b.kind === "pill"));
   const sign = end.boxes.find((b) => b.kind === "signature");
   assert.ok(Math.abs(sign.y + sign.h - 1884) <= 0.5, `signature at ${sign.y}`);
   assert.ok(Math.abs(sign.x + sign.w / 2 - 540) <= 1, "signature centred");
   assert.match(end.text, /ETHNIAFRICA\.COM/);
+});
+
+// @req REQ-186
+test("1.6.0: the ending draws the signature line, three lines from y 318, and no slogan", () => {
+  const end = frames.at(-1);
+  assert.ok(
+    end.text
+      .replace(/\s+/gu, " ")
+      .includes(
+        "Connaître nos noms, décoloniser leur emploi, nous nommer nous-mêmes."
+      ),
+    end.text
+  );
+  assert.doesNotMatch(end.text, /raconter l.origine des noms/i);
+  const line = end.boxes.find((b) => b.kind === "ending");
+  assert.ok(Math.abs(line.h - 3 * 64) <= 1, `three lines of 64 px: ${line.h}`);
+  assert.ok(line.y + line.h <= 820, "inside the ending block");
 });

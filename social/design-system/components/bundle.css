@@ -62,7 +62,6 @@
 .ec-sign-brand img { width: 44px; height: 44px; display: block; }
 .ec-sign-words { display: flex; flex-direction: column; align-items: flex-start; }
 .ec-wordmark { font: 600 32px/38px var(--font-wordmark, Fraunces, serif); color: var(--ink, #f3e9da); }
-.ec-tagline { font: 400 17px/20px var(--font-wordmark, Fraunces, serif); color: var(--ink-faint, #a8977f); }
 .ec-sign-url { font: 700 22px/28px var(--font-text, "Nunito Sans", sans-serif); color: var(--ink-muted, #cbbba3); }
 .ec-sign--center { justify-content: center; margin-top: 18px; }
 
@@ -239,3 +238,11 @@
 .ec-series-sep { color: var(--ink-faint, #a8977f); }
 .ec-series-episode { color: var(--accent, #e8b96a); white-space: nowrap; }
 .ec-has-series .ec-demo { top: 100px; }
+
+/* 1.6.0: the signature line, the project's sentence, on every closing card.
+   Fraunces, the face of the word EthniAfrica: the project speaking, distinct
+   from Anton, the episode's titles. Three lines broken after each comma. */
+.ec-sigline { font: 600 56px/64px var(--font-wordmark, Fraunces, serif); color: var(--ink, #f3e9da); text-align: center; margin: 0; letter-spacing: -.005em; }
+.ec-sigline span { display: block; white-space: nowrap; }
+.ec-card--closing .ec-sigline + .ec-body--center { margin-top: 28px; }
+.ec-close-gap { flex: none; }
