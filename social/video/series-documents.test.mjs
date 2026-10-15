@@ -48,7 +48,8 @@ test("1.8.0: the passage is set 960 px wide, its centre at (540, 1000), within t
   assert.ok(Math.abs(f.passage.x + f.passage.w / 2 - 540) < 1e-9);
   assert.ok(Math.abs(f.passage.y + f.passage.h / 2 - 1000) < 1e-9);
   assert.ok(Math.abs(f.passage.w - 960) < 1e-9);
-  assert.equal(f.edge, 0);
+  // The page starts below the frame's top: 158 px of dark ground, within 400.
+  assert.ok(f.top > 0 && f.edge === f.top && f.edge <= 400, `${f.edge}`);
   // A narrow passage stops at 1.5; a page smaller than the frame at cover.
   const narrow = documentFrame({
     ...SPEKE,
@@ -65,6 +66,15 @@ test("1.8.0: near the top of a page the frame shows past its edge, 400 px at mos
   assert.ok(f.passage.y >= 700 && f.passage.y + f.passage.h <= 1300);
   // The page is clamped to the frame sideways: no edge shows left or right.
   assert.ok(f.left <= 0 && f.left + f.width >= 1080);
+});
+
+// @req REQ-186
+test("1.8.0: two passages of one page are two framings, not a run of one image", () => {
+  const seq = load(documentDemo);
+  const [middle, top] = ["serie-mots-02", "serie-mots-03"].map((id) =>
+    at(seq, id)
+  );
+  assert.notEqual(seq.imageRuns[middle], seq.imageRuns[top]);
 });
 
 // @req REQ-186
@@ -120,7 +130,7 @@ test("1.8.0: every mark lies inside the passage", () => {
 test("1.8.0: the underline enters over 9 frames from the start of its word, which the card's chunks say", () => {
   const seq = load(documentDemo);
   const i = at(seq, "serie-mots-02");
-  const from = seq.cards[i].documentFrame;
+  const from = seq.cards[i].markFrame;
   const word = seq.chunks
     .filter((c) => c.card === i)
     .flatMap((c) => c.words)
@@ -306,12 +316,7 @@ test("1.8.0: the week table holds its reading time at 21 characters a second, el
 test("1.8.0: a video without these fields is timed and drawn as with 1.7.0", () => {
   const seq = load(seriesDemo);
   for (const card of seq.cards)
-    for (const key of [
-      "documentFrame",
-      "formulaFrames",
-      "sbsFrames",
-      "weekFrames",
-    ])
+    for (const key of ["markFrame", "formulaFrames", "sbsFrames", "weekFrames"])
       assert.equal(card[key], undefined, `${card.id}.${key}`);
   for (let f = 0; f < seq.frames; f += 7)
     for (const l of seriesFrameState(seq, f).layers)

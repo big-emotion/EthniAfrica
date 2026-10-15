@@ -34,7 +34,7 @@ const late = (seq, id) => seq.cardStarts[at(seq, id) + 1] - 12;
 
 const docFrames = {
   openerStart: 1,
-  middleBefore: docs.cards[at(docs, "serie-mots-02")].documentFrame - 1,
+  middleBefore: docs.cards[at(docs, "serie-mots-02")].markFrame - 1,
   middleLate: late(docs, "serie-mots-02"),
   topStart: first(docs, "serie-mots-03"),
   topLate: late(docs, "serie-mots-03"),
@@ -100,9 +100,9 @@ test("1.8.0: near the page's top the frame shows its dark ground above the page,
   );
   const [doc] = drawn.topStart.documents;
   assert.ok(Math.abs(doc.page.y - 400) < 1, `page top ${doc.page.y}`);
-  // The middle passage needs no edge: the page covers the frame.
-  const [mid] = drawn.middleLate.documents;
-  assert.equal(mid.edge, 0);
+  // The opener's margin brings the page to the frame's top: no edge.
+  const [opener] = drawn.openerStart.documents;
+  assert.ok(opener.edge < 1, `${opener.edge}`);
 });
 
 // @req REQ-186

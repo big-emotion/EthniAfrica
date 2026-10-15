@@ -268,6 +268,7 @@ export const TEACHING_SCRIPT = [
         "on obtient Aya.",
         "Pour un garçon, Kwa,",
         "et le nom devient Yao.",
+        "Deux noms du vendredi.",
       ],
       2.6
     ),

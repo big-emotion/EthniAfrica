@@ -24,6 +24,12 @@ import {
   runOfCard,
   wordOf,
 } from "./series-sequence.mjs";
+import {
+  checkDocumentCard,
+  checkFormula,
+  checkSideBySide,
+  weekCharacters,
+} from "./series-document.mjs";
 
 // The full-screen bands in frame pixels (series.md and handoff.md,
 // « Renderer integration of 1.4.0 »). The image fills the frame; only text
@@ -169,6 +175,10 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     // A map card is drawn on satellite imagery; an atlas card is refused.
     if (card.type === "map") checkSeriesMapCard(card);
     checkLongCardFields(card);
+    // 1.8.0: the document card and the teaching cards.
+    if (card.image?.document) checkDocumentCard(card);
+    if (card.formula) checkFormula(card);
+    if (card.sbs) checkSideBySide(card);
     return { card: structuredClone(card), chunks: beat.chunks };
   });
   const numbers = entries.flatMap((e) =>
@@ -294,12 +304,15 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
 // 1.7.0: what a video card may carry, checked before anything is timed.
 function checkLongCardFields(card) {
   const id = card.id;
+  // 1.8.0: « Capture » labels a web capture's foot, on a document card only.
+  const capture = card.sourceLabel === "Capture" && card.image?.document;
   if (
     card.sourceLabel !== undefined &&
-    !SOURCE_LABELS.includes(card.sourceLabel)
+    !SOURCE_LABELS.includes(card.sourceLabel) &&
+    !capture
   )
     fail(
-      `Card ${id}: sourceLabel « ${card.sourceLabel} » is one of ${SOURCE_LABELS.join(", ")}`
+      `Card ${id}: sourceLabel « ${card.sourceLabel} » is one of ${SOURCE_LABELS.join(", ")}, or « Capture » on a document card`
     );
   if (typeof card.source === "string" && /^\p{L}+\s*:/u.test(card.source))
     fail(
@@ -462,6 +475,7 @@ function planLongVideo(seq, input) {
     }
     if (card.attribution)
       card.attributionFrame = wordOf(seq, i, card.attribution.say).frame;
+    planTeachingCard(seq, i);
   });
 
   // The hook reminder shows the opener's image and framing again.
@@ -488,10 +502,16 @@ function planLongVideo(seq, input) {
     );
 
   // Runs of one image: consecutive cards on one image file and framing
-  // change their heads only, under one zoom over the whole run.
+  // change their heads only, under one zoom over the whole run. A document's
+  // framing is its passage (1.8.0): two passages of one page are two images.
   const image = (c) =>
     c.image && c.type !== "closing" && c.type !== "map"
-      ? JSON.stringify([c.image.src, c.image.focus, c.image.video])
+      ? JSON.stringify([
+          c.image.src,
+          c.image.focus,
+          c.image.video,
+          c.image.document?.passage,
+        ])
       : null;
   let run = -1;
   seq.imageRuns = seq.cards.map((c, i) => {
@@ -499,6 +519,52 @@ function planLongVideo(seq, input) {
     if (!same) run = image(c) ? run + 1 : run;
     return image(c) ? run : -1;
   });
+}
+
+// 1.8.0: what enters on its word on a document or a teaching card. Rows and
+// steps keep their place from the card's first frame; only opacity changes.
+function planTeachingCard(seq, i) {
+  const card = seq.cards[i];
+  const start = seq.cardStarts[i];
+  const end = seq.cardStarts[i + 1] ?? seq.frames;
+  if (card.image?.document)
+    card.markFrame = wordOf(seq, i, card.image.document.say).frame;
+  if (card.formula) {
+    card.formulaFrames = card.formula.steps.map(
+      (step) => wordOf(seq, i, step.say).frame
+    );
+    if (card.formulaFrames.some((f, k) => k && f <= card.formulaFrames[k - 1]))
+      fail(
+        `Card ${card.id}: les étapes de la formule suivent l'ordre de la voix`
+      );
+  }
+  if (card.sbs) {
+    // A row enters on its first name (« Kouassi » of « Kouassi · Akissi »),
+    // or on its first cell's own `say`.
+    const { rows, daysSay, note, noteSay } = card.sbs;
+    card.sbsFrames = {
+      rows: rows.map(
+        ([cell]) => wordOf(seq, i, cell.say ?? cell.name.split(/\s/u)[0]).frame
+      ),
+      days: daysSay ? wordOf(seq, i, daysSay).frame : start,
+      ...(note && { note: noteSay ? wordOf(seq, i, noteSay).frame : start }),
+    };
+  }
+  if (card.week) {
+    // A day the voice names enters on its word; the others with the card.
+    card.weekFrames = card.week.rows.map(([day]) => {
+      try {
+        return wordOf(seq, i, day).frame;
+      } catch {
+        return start;
+      }
+    });
+    const need = Math.ceil((weekCharacters(card.week) / READ_CPS) * FPS - 1e-9);
+    if (end - start < need)
+      fail(
+        `Card ${card.id}: Tableau de la semaine : ${Math.ceil(((need - (end - start)) * 1000) / FPS)} ms de lecture manquent à ${READ_CPS} caractères par seconde ; coupez-le en deux cartes, du lundi au jeudi et du vendredi au dimanche`
+      );
+  }
 }
 
 export const seriesFrameCount = (seq) => seq.frames;
@@ -562,6 +628,21 @@ export function seriesFrameState(seq, frame) {
     if (card.itemFrames) l.items = card.itemFrames.map(arrive);
     if (card.attributionFrame !== undefined)
       l.attribution = arrive(card.attributionFrame);
+    // 1.8.0: the underline, the formula's steps (each fading out as the next
+    // fades in, in place), the rows and days of the teaching cards.
+    if (card.markFrame !== undefined) l.mark = arrive(card.markFrame);
+    if (card.formulaFrames)
+      l.steps = card.formulaFrames.map(
+        (f, k) =>
+          arrive(f) * (1 - arrive(card.formulaFrames[k + 1] ?? Infinity))
+      );
+    if (card.sbsFrames) {
+      l.rows = card.sbsFrames.rows.map(arrive);
+      l.days = arrive(card.sbsFrames.days);
+      if (card.sbsFrames.note !== undefined)
+        l.note = arrive(card.sbsFrames.note);
+    }
+    if (card.weekFrames) l.rows = card.weekFrames.map(arrive);
   }
   // A map sequence's card shows its run's map, zoomed once over the run.
   // Between two cards of one run the map is drawn once, by the outgoing
@@ -613,6 +694,8 @@ const BANDS = {
   items: [LAYOUT.head[0], 1290],
   attribution: [LAYOUT.head[0], 1300],
   "chapter-title": LAYOUT.head,
+  // 1.8.0: the formula in the clear zone, ending above y 1290.
+  formula: [LAYOUT.clear[0], 1290],
 };
 const X_BANDS = { slot: LAYOUT.slot.x, "chapter-title": [60, 960] };
 export function checkSeriesLayout(boxes, { demo = false } = {}) {
@@ -641,6 +724,15 @@ export function checkSeriesLayout(boxes, { demo = false } = {}) {
       if (b.scale > LAYOUT.maxImageScale + 1e-9 && !demo)
         say(
           `Image trop petite pour la vidéo: enlarged ${b.scale.toFixed(2)} times, 1.5 at most`
+        );
+      continue;
+    }
+    // 1.8.0, check 5: the blur never covers the passage.
+    if (b.kind === "document") {
+      const { passage: p, sharp: s } = b;
+      if (s.y > p.y + near || s.y + s.h < p.y + p.h - near)
+        say(
+          `Le flou couvre le passage: sharp from y ${Math.round(s.y)} to ${Math.round(s.y + s.h)}, passage from ${Math.round(p.y)} to ${Math.round(p.y + p.h)}`
         );
       continue;
     }
@@ -680,6 +772,12 @@ export function checkSeriesLayout(boxes, { demo = false } = {}) {
       );
     if (b.kind === "subtitle" && b.w > LAYOUT.subtitle.maxLineWidth + near)
       say(`a subtitle line is ${Math.round(b.w)} px wide, over 900`);
+    if (b.kind === "formula" && b.size && b.w > 960 + near)
+      say(
+        `La formule ne tient pas dans 960 px à 88 px: ${Math.round(b.w)} px at ${b.size} px`
+      );
+    if (b.maxLines && b.lines > b.maxLines)
+      say(`${b.lines} lines, ${b.maxLines} at most`);
   }
   return problems;
 }
