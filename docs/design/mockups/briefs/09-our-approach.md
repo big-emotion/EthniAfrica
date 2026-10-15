@@ -210,3 +210,15 @@ Found while drawing, left to the operator: the sentence « Nous pensons que
 c'est ainsi que des noms de jour comme Kouassi et Yao sont devenus des noms
 de famille » is an opinion of EthniAfrica inside a sourced section (03), not
 inside « Notre position ». It is drawn as written.
+
+## Implementation
+
+Decided by the operator on 2026-10-16, before any code:
+
+1. Not now. The boards are the recorded target; the page is built in a later
+   piece of work.
+2. The route is `/fr/notre-demarche`.
+3. The opinion in section 03 stays as written: « Nous pensons » already signs
+   it, and the copy passed review.
+4. The footer in state B ships in the same pull request as the page, so the
+   link « Notre démarche » never points to a missing page.
