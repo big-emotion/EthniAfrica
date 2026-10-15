@@ -335,3 +335,156 @@ episode never forces a name into the colonial case to match the signature.
 the names in use are colonial, pejorative or politicised. No source read for
 this essay gives such a figure. Our own fiches record who gave each name, which
 could one day support a count of our fiches only, never of all names in use.
+
+---
+
+## 6. 15 October 2026, from the « Afrique » episode: unity at two levels, and the risk of the work
+
+While preparing series 6, episode 1 (« Afrique »), the operator dictated two
+more messages on the series' moral. They were passed on by that episode's
+session, which the operator agreed should not write a second version. They
+add three things to section 5: unity at two levels, the risk the work itself
+carries, and the rule that every video carries part of the signed position.
+
+### 6.1 The operator's words, verbatim
+
+Voice transcriptions, unedited. Words the transcription probably misheard are
+listed in 6.2 and are **not** corrected here.
+
+First message:
+
+> Ce qu'il faut savoir avec l'Afrique, c'est qu'il y a effectivement la
+> question qui a fait de l'Afrique un seul bloc. On peut aussi en profiter
+> pour ne pas les présenter comme notre pire, mais dire que l'Afrique est
+> présentée comme un bloc. On parle de l'Afrique très souvent. C'est aussi
+> utilisé pour comparer la France avec l'Afrique, pour dire que je retourne
+> chez moi en Afrique. Même les gens désespérés, les citons, vont reprendre ça
+> pour parler de l'Afrique comme un tout, alors qu'il y a une énorme
+> différence. C'est très vaste, très vaste. C'est uni, et ça a été uni par les
+> gens de l'extérieur, parce qu'à l'intérieur, chacun se concernant, ils n'ont
+> tout simplement pas d'appellation commune. Il y a différentes langues. Il y a
+> eu des échanges entre peuples, mais pas non plus d'unité politique commune,
+> comme on le voit aujourd'hui, récemment. Donc, notre point, c'est que, par
+> rapport aux différents problèmes qui se trouvent sur le continent africain et
+> par rapport à la conjoncture internationale, les pays d'Afrique, aujourd'hui,
+> de population, auraient plus à faire à : 1. s'unir entre peuples au sein d'un
+> pays et donc trouver une commission au sein d'un pays 2. courir des
+> commissions entre nations, favoriser le libre-échange, les relations
+> d'échange, les relations commerciales, politiques et culturelles entre les
+> peuples depuis faire ce bloc
+
+Later the same day, key passages:
+
+> Moi, ce que j'aimerais en tout cas montrer, c'est que le nom ne représente
+> que le nom. Le nom représente une façon de concevoir l'Afrique, et cette
+> façon-là déjà pose problème. […] si on ne comprend pas à quel point la façon
+> dont on se nomme, le fait qu'on se regroupe nous tous sous un même mot, on ne
+> pourra pas avancer correctement. Il faut accepter que nous soyons différents,
+> mais surtout accepter et comprendre que, si on veut voir l'Afrique
+> souveraine, des pays d'Afrique souverains, il faut qu'ils soient unis. Ça, ce
+> sont des questions politiques et économiques qui sortent du sujet du projet,
+> mais la souveraineté passe par l'union, par l'unité. Donc, il faut
+> effectivement un bloc uni, conscient des diversités. Nous, notre travail,
+> c'est de faire comprendre les diversités, non pas pour se taper dessus, mais
+> pour mieux comprendre. Il y a effectivement aussi un risque avec ce travail
+> qu'on fait. On peut aussi faire un clin d'œil au groupe Grillo, qu'on appelle
+> Jelly de leur côté, qui, eux, ne transmettent pas le savoir, l'histoire, sans
+> la maturer. […] là où il y a une histoire confuse, dès le moment où on publie
+> du contenu, et surtout le contenu de l'Afrique qui a différentes sources
+> difficilement vérifiables, on attise déjà directement les conflits.
+
+> Chaque vidéo, vraiment, doit être vue comme une possibilité de partager la
+> morale
+
+### 6.2 Words misheard by the transcription
+
+The episode's session proposed these readings. **The operator confirmed them
+on 16 October 2026.** The three marked « unclear » have no reading, and
+nothing in 6.4 rests on them.
+
+| Transcribed                         | Proposed reading                        |
+| ----------------------------------- | --------------------------------------- |
+| « trouver une commission »          | « trouver une cohésion »                |
+| « courir des commissions »          | (unclear)                               |
+| « depuis faire ce bloc »            | « pour faire ce bloc »                  |
+| « les gens désespérés, les citons » | « les gens de la diaspora »             |
+| « notre pire »                      | « les coupables », « le mal » (unclear) |
+| « groupe Grillo », « Jelly »        | the griots, the jeli                    |
+| « sans la maturer »                 | (unclear)                               |
+
+### 6.3 What it adds, and what the sources hold
+
+1. **One word for the whole continent is used from inside too.** The operator
+   names everyday uses: comparing « la France » with « l'Afrique », or saying
+   « je rentre en Afrique », in the diaspora as elsewhere. Section 5 already
+   says the name came from outside.
+2. **« No common name inside »: an absence of evidence, not a proof.** The
+   research of the « Afrique » episode found no source that gives a name for
+   the whole continent coming from its own peoples. The one candidate,
+   « Alkebulan », is first printed by the French cosmographer André Thevet in
+   1575 (_Cosmographie universelle_, book V ch. XII and its map legend, book
+   III ch. 1). He attributes it to « les Arabes, Ademiens & Ethiopiens »
+   without citing a source, and uses the same word for the south wind in the
+   same book. Dapper (1668, citing Thevet), Ogilby (1670), Moréri (1683) and
+   La Croix (1688) copy it. The meaning « mère de l'humanité » first appears
+   with Yosef ben-Jochannan in 1970. « Kemet » is the Egyptians' name for
+   Egypt, « la terre noire » (Gardiner), not for the continent. These texts
+   were read in OCR, not yet on the page images; the episode's records are its
+   `sources/E-*.txt`, and the place fiche `LOC_AFRIQUE` carries the same facts
+   (PR #1787). The wording the episode's script uses, and this essay keeps:
+   « Les sources que nous avons lues ne montrent pas de nom commun, venu de
+   l'intérieur, pour tout le continent. »
+3. **Unity at two levels**, a signed position: first between the peoples of
+   one country, then between countries, through trade and through political
+   and cultural exchange. The bloc is chosen and built, aware of its
+   diversity. The operator says that sovereignty goes through this union, and
+   that these political and economic questions lie outside the project: they
+   stay a signed « nous pensons », never a finding.
+4. **The risk of the work.** Publishing on an African history whose sources
+   are scarce or hard to verify can stir conflicts. The work makes diversity
+   understood in order to understand one another, never to set peoples
+   against each other. This strengthens the rule of every fiche: each
+   explanation with its source, and what is uncertain said as uncertain.
+5. **The griots: a sourcing caveat.** The research of
+   the « Afrique » episode found that Amadou Hampâté Bâ (UNESCO, _Histoire
+   générale de l'Afrique_, vol. I, p. 215) says ordinary griots are bound to
+   no discretion. Restraint is attested only for particular griots: Mamadou
+   Kouyaté in D. T. Niane's _Soundjata_ (1960), and the refusal at Kéla in 1958. A publication may not say that griots in general hold back what they
+   know.
+6. **Every video carries part of the moral**, not only the series' last
+   episode. Cartes 1.7.0 already applies it: the engine warns when a video has
+   no signed card. The « Afrique » script carries it in « Nous pensons qu'il
+   faut d'abord accepter que nous sommes différents. », the series closing and
+   the signature line.
+
+### 6.4 Synthèse
+
+Le mot « Afrique » range tout un continent sous un seul nom. Les sources que
+nous avons lues ne montrent pas de nom commun, venu de l'intérieur, pour tout
+le continent. Le nom qui s'est imposé a donc été étendu depuis l'extérieur
+(section 5). Il sert pourtant aussi de l'intérieur : on compare
+« la France » et « l'Afrique », on dit « je rentre en Afrique ». Un nom porte
+une façon de voir, et celle-ci efface les différences entre des peuples qui
+parlent des langues différentes et qui n'ont jamais formé une seule unité
+politique.
+
+Notre travail fait comprendre ces différences pour mieux se comprendre, jamais
+pour opposer les peuples. Ce travail a un risque : quand les sources sont rares
+ou difficiles à vérifier, publier sur l'histoire de l'Afrique peut raviver des
+conflits. Nous donnons donc la source de chaque explication, et nous disons ce
+qui reste incertain.
+
+Nous pensons que les pays d'Afrique gagneraient à s'unir, à deux niveaux.
+D'abord entre les peuples d'un même pays. Ensuite entre les pays, par le
+commerce et par les échanges politiques et culturels. Ce rassemblement serait
+choisi et construit, conscient de sa diversité. Nous pensons aussi que la
+souveraineté passe par cette union. Ces questions politiques et économiques
+dépassent notre projet : c'est une position d'EthniAfrica, pas un fait établi
+par une source.
+
+Chaque vidéo porte une part de cette position, pas seulement le dernier
+épisode de la série.
+
+**Contrainte permanente du projet** (section 3) : le sujet de chaque phrase est
+l'Afrique et ses peuples, jamais une puissance extérieure. On nomme une cause
+pour comprendre, pas pour accuser.
