@@ -156,7 +156,7 @@
               "label": "Vers 670"
             },
             "era": "polity",
-            "statement": "Avant le nom Tunisie, on parle d'Ifrīqiya, c'est-à-dire d'Afrique, pour désigner la première province musulmane d'Afrique du Nord, fondée avec la ville de Kairouan. Elle correspond alors à peu près à la Tunisie actuelle, selon l'historien Hussain Monès.",
+            "statement": "Avant le nom Tunisie, on parle d'Ifrīqiya, c'est-à-dire d'Afrique, pour désigner la première province musulmane d'Afrique du Nord, fondée avec la ville de Kairouan. Elle correspond alors à peu près à la Tunisie actuelle, selon l'historien Hussain Monès. Le sens du nom varie toutefois selon les auteurs. Pour les premiers historiens arabes de la conquête, l'Ifrīqiya comprenait souvent tout le Maghreb, de la Cyrénaïque à l'océan Atlantique. Les géographes la limitaient plutôt aux terres des Aghlabides, de Bougie aux environs de Barka, selon l'Encyclopédie berbère. Pour Stéphane Gsell, l'Ifrīqiya des Arabes correspondait à peu près à la province romaine d'Afrique de la fin de l'Empire.",
             "before": true,
             "sources": [
               {
@@ -168,6 +168,26 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 260",
                 "notes": "UNESCO, volume dirigé par Mohammed El Fasi, codirigé par Ivan Hrbek. Avec la fondation de Kairouan naît la première province musulmane d'Afrique du Nord : « On lui donna le nom d'Afrique, Ifrīḳiya. A l'époque, elle correspondait à peu près à la Tunisie actuelle. »"
+              },
+              {
+                "title": "Ifrîkiyya",
+                "author": "A. Siraj et E.B.",
+                "year": 2001,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1545",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3660-3666, par. 8 et 14-15",
+                "notes": "Encyclopédie berbère, vol. 24, 2001 ; texte lu en ligne le 15 octobre 2026. Par. 8 (A. Siraj) : « pour les Arabes, tout comme pour les Latins, l'Ifrîkiyya ou Africa avait une double signification dont l'une est large, l'autre restreinte ». Par. 15 (E.B., d'après M. Talbi) : « pour les historiens arabes de la conquête, l'Ifrîkiyya comprenait la totalité du Maghreb » ; le toponyme s'applique ensuite aux territoires des Aghlabides."
+              },
+              {
+                "title": "Histoire ancienne de l'Afrique du Nord, t. VII : La République romaine et les rois indigènes",
+                "author": "Stéphane Gsell",
+                "year": 1928,
+                "url": "https://archive.org/details/histoireancienne07gsel",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 5-7",
+                "notes": "Paris, Hachette, 1928 ; lu dans le texte OCR d'archive.org le 15 octobre 2026. « l'Ifrikiya des Arabes était à peu près la province d'Afrique du Bas-Empire »."
               }
             ]
           }
@@ -544,11 +564,11 @@
   "content": {
     "historicalNames": {
       "formerNames": [
-        "Ifriqiya (berbère puis arabe)",
+        "Ifriqiya (forme arabe du latin Africa)",
         "Africa (romain, origine du nom du continent)",
         "Régence de Tunis (1574-1881)"
       ],
-      "antiquity": "Ifriqiya (nom berbère), Africa (nom romain, origine du nom du continent), Carthage (ancienne capitale punique). Le territoire était peuplé de Berbères et de Phéniciens. Les Romains emploient Africa vers le IIe siècle avant notre ère pour la région de la Tunisie et de l'Algérie actuelles ; d'où le mot lui-même vient, les historiens en débattent : on l'a rapproché des Afri, un peuple berbère que les Romains connaissaient, mais aucune source ancienne ne le prouve directement.",
+      "antiquity": "Africa (nom romain, origine du nom du continent), Carthage (ancienne capitale punique). Le territoire était peuplé de Berbères et de Phéniciens. Le nom Africa apparaît chez le poète latin Ennius, mort en 169 avant notre ère, puis devient en 146 avant notre ère celui de la province romaine, au nord de la Tunisie actuelle ; d'où le mot lui-même vient, les historiens en débattent : on l'a rapproché des Afri, un peuple de la région que les Romains connaissaient, mais aucune source ancienne ne le prouve directement. Le nom Ifriqiya en est la forme arabe, plus tardive.",
       "middleAges": "Ifriqiya (nom arabe), Tunis (capitale). Dynasties arabes et berbères (Aghlabides, Fatimides, Zirides, Hafsides).",
       "precolonial": "Régence de Tunis (1574-1881), État ottoman semi-autonome dirigé par des beys. Le territoire était appelé \"Ifriqiya\" ou \"Tunis\".",
       "colonization": "1881-1956 : Protectorat français de Tunisie. Le nom \"Tunisie\" est officialisé par l'administration coloniale française.",
@@ -778,7 +798,7 @@
         "url": "https://sahistory.org.za/article/africa-whats-name",
         "tier": "referenced",
         "source_kind": "repository",
-        "notes": "Article d'un portail d'histoire public. Dit que tous les historiens s'accordent sur l'emploi romain du nom en Tunisie et en Algérie vers le IIe siècle avant notre ère, mais que son origine reste discutée : l'idée d'une « terre des Afri » n'est appuyée par aucune preuve directe dans les sources primaires. Mentionne aussi l'explication grecque de Léon l'Africain. Consulté le 25 septembre 2026."
+        "notes": "Article d'un portail d'histoire public. Dit que tous les historiens s'accordent sur l'emploi romain du nom en Tunisie et en Algérie vers le IIe siècle avant notre ère, mais que son origine reste discutée : l'idée d'une « terre des Afri » n'est appuyée par aucune preuve directe dans les sources primaires. Mentionne aussi une explication grecque qu'il attribue à Léon l'Africain ; cette attribution ne se vérifie pas : Léon donne l'arabe faraqa, « diviser », et un roi Ifricus, et la lecture grecque apparaît sans auteur chez Samuel Bochart en 1646. Consulté le 25 septembre 2026."
       },
       {
         "title": "UNFPA – World Population Dashboard — Tunisie",
