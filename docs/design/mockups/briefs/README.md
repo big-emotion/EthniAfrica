@@ -34,7 +34,7 @@ after a long read (`pays/CIV`, `FLG_MANDE`, `PPL_MUCUVAL`), early exits
 | # | Brief | Type | Boards to change (stem, each at `-430`, `-768`, `-1440`) |
 | --- | --- | --- | --- |
 | 1 | [`01-result-page-timeline.md`](01-result-page-timeline.md) | Search result page with the timeline lens | `search-peul`, `search-bassa`, `search-congo`, `search-unknown` (**approved 2026-10-14**) |
-| 2 | [`02-people.md`](02-people.md) | People | `people-fula`, `people-bassa`, `people-thin-alaba` |
+| 2 | [`02-people.md`](02-people.md) | People | `people-fula`, `people-bassa`, `people-thin-alaba` (**approved 2026-10-15**) |
 | 3 | [`03-language.md`](03-language.md) | Language | `language-lingala` |
 | 4 | [`04-language-family.md`](04-language-family.md) | Language family | `family-bantu`, `family-mande` |
 | 5 | [`05-country.md`](05-country.md) | Country | `country-civ` |

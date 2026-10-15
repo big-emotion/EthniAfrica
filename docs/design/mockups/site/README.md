@@ -63,6 +63,7 @@ are recorded whole, folded as the site folds them.
 | Date       | Brief                                                                 | Boards                                                                 |
 | ---------- | --------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | 2026-10-14 | [Brief 1, the search result page](../briefs/01-result-page-timeline.md) | `search-peul`, `search-bassa`, `search-congo`, `search-unknown`, the three `search-state-*`, `Main` |
+| 2026-10-15 | [Brief 2, the people fiche](../briefs/02-people.md) | `people-fula`, `people-bassa`, `people-thin-alaba`, `Main` |
 
 The boards of a changed page no longer record v5.2.0: they are the approved
 target, and the code is behind them until the implementation lands.
