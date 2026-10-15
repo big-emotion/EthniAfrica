@@ -711,15 +711,15 @@
         "name": "Touareg",
         "selfAppellation": "Kel Tamasheq / Imuhagh",
         "exonyms": [
-          "Touareg (terme français)",
-          "\"Targui\" (terme arabe)",
+          "Touareg (terme français, venu de l'arabe)",
+          "\"Targui\" (singulier, forme française venue de l'arabe)",
           "\"Berbères du désert\" (terme descriptif)"
         ],
         "peopleId": "PPL_TUAREG",
         "mainRegion": "Nord du Burkina Faso, Sahara",
         "languages": ["Tamasheq (taq", "ISO 639-3)", "français"],
         "languageFamily": "FLG_BERBERE",
-        "appellationRemarks": "Les personnes concernées se nomment Kel Tamasheq ou Imuhagh. Touareg est le nom donné de l'extérieur le plus courant en français. Les sources ne signalent pas de sens insultant pour ces noms."
+        "appellationRemarks": "Les personnes concernées se nomment Kel Tamasheq ou Imuhagh. Touareg est le nom donné de l'extérieur le plus courant en français. En 1864, des Touareg du Nord le tenaient pour une injure venue des Arabes, selon l'explorateur Henri Duveyrier."
       }
     ],
     "culture": {
