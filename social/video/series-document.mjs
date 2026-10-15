@@ -13,45 +13,63 @@
 // around the passage, fading over 90 px, the page is blurred by 7 px
 // (decision 1). A web capture may add `pad` source pixels above the page in
 // its own colour, so its headline reaches the clear zone (decision 3).
+//
+// When the page's edge stops the passage from centring and it would cross
+// x 60 to 1020, the scale is reduced just enough to bring it inside, so the
+// passage ends a little under 960 px wide (operator, 16 October 2026). The
+// page keeps covering the frame's width and stops at most 400 px short of the
+// top or the bottom; a passage that still cannot fit is left to check 1.
 export function documentFrame(image) {
+  // Self-contained: the page receives this function as source text.
   const doc = image.document;
   const pad = doc.pad ?? 0;
   const pageW = image.w;
   const pageH = image.h + pad;
   const [px, py, pw, ph] = doc.passage;
-  const cover = Math.max(1080 / pageW, 1920 / pageH);
-  const scale = Math.max(cover, Math.min(1.5, 960 / pw));
-  const width = pageW * scale;
-  const height = pageH * scale;
-  const cx = (px + pw / 2) * scale;
-  const cy = (pad + py + ph / 2) * scale;
   const EDGE = 400;
-  const left = Math.min(0, Math.max(1080 - width, 540 - cx));
-  const top = Math.min(EDGE, Math.max(1920 - height - EDGE, 1000 - cy));
-  const edge = Math.max(0, top, 1920 - (top + height));
-  const passage = {
-    x: left + px * scale,
-    y: top + (pad + py) * scale,
-    w: pw * scale,
-    h: ph * scale,
+  const cover = Math.max(1080 / pageW, 1920 / pageH);
+  const frameAt = (scale) => {
+    const width = pageW * scale;
+    const height = pageH * scale;
+    const cx = (px + pw / 2) * scale;
+    const cy = (pad + py + ph / 2) * scale;
+    const left = Math.min(0, Math.max(1080 - width, 540 - cx));
+    const top = Math.min(EDGE, Math.max(1920 - height - EDGE, 1000 - cy));
+    const edge = Math.max(0, top, 1920 - (top + height));
+    const passage = {
+      x: left + px * scale,
+      y: top + (pad + py) * scale,
+      w: pw * scale,
+      h: ph * scale,
+    };
+    return {
+      scale,
+      cover,
+      left,
+      top,
+      width,
+      height,
+      pad: pad * scale,
+      edge,
+      passage,
+      // In frame pixels at zoom 1; the page's own coordinates are these minus
+      // `top`. The zoom grows both around (540, 1000), so the band keeps
+      // containing the passage.
+      sharp: [passage.y - 48, passage.y + passage.h + 48],
+      fade: 90,
+      blur: 7,
+    };
   };
-  return {
-    scale,
-    cover,
-    left,
-    top,
-    width,
-    height,
-    pad: pad * scale,
-    edge,
-    passage,
-    // In frame pixels at zoom 1; the page's own coordinates are these minus
-    // `top`. The zoom grows both around (540, 1000), so the band keeps
-    // containing the passage.
-    sharp: [passage.y - 48, passage.y + passage.h + 48],
-    fade: 90,
-    blur: 7,
-  };
+  const fits = (f) =>
+    f.passage.x >= 60 - 1e-6 && f.passage.x + f.passage.w <= 1020 + 1e-6;
+  const preferred = Math.max(cover, Math.min(1.5, 960 / pw));
+  const floor = Math.max(1080 / pageW, (1920 - 2 * EDGE) / pageH);
+  let frame = frameAt(preferred);
+  for (let s = preferred - 0.0005; !fits(frame) && s >= floor; s -= 0.0005) {
+    const smaller = frameAt(s);
+    if (fits(smaller)) frame = smaller;
+  }
+  return frame;
 }
 
 const fail = (message) => {

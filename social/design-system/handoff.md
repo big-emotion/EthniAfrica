@@ -479,7 +479,7 @@ A chapter card is a card of the sequence, `{ "type": "chapter", "chapter": 2, "i
 
 **What the engine checks** (refuse, or report with `--diagnose`):
 
-1. The passage lands inside y 700 to 1300 and x 60 to 1020; the scale is at most 1.5 and at least the cover scale; the page's edge shows by 400 px at most (« Passage hors de l'image dégagée »).
+1. The passage lands inside y 700 to 1300 and x 60 to 1020; the scale is at most 1.5 and at least the cover scale; the page's edge shows by 400 px at most (« Passage hors de l'image dégagée »). Amended by the operator on 16 October 2026: before this check, `documentFrame` lowers the scale, in steps of 0.0005 and never under the scale that covers the frame's width with at most 400 px of edge at the top and the bottom, until the passage fits inside x 60 to 1020; the y range and the 1.5 limit are unchanged. A passage that ends near the page's edge does not fit at any scale and is still refused here.
 2. Every mark lies inside the passage.
 3. Every `say` is a unit of the card's chunks.
 4. A document card has a `source` and no `credit`; a web capture's source starts with « Capture : » and names the capture's date.

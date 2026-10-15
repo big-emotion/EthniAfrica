@@ -77,6 +77,59 @@ test("1.8.0: two passages of one page are two framings, not a run of one image",
   assert.notEqual(seq.imageRuns[middle], seq.imageRuns[top]);
 });
 
+// Operator, 16 October 2026: when the framing would set a passage past
+// x 60 to 1020 (the page's edge stops it from centring), the scale is reduced
+// just enough to bring it inside, a little under 960 px wide, without
+// re-cropping the card. Measured on the accepted Lugard board of the
+// « tribu » episode (57 to 1023 at the cover scale).
+// @req REQ-186
+test("1.8.0: a passage the page's edge pushes past x 60 to 1020 is scaled down to fit", () => {
+  const cases = [{ w: 1419, h: 2304, passage: [135, 1805, 1160, 130] }];
+  for (const { w, h, passage } of cases) {
+    const f = documentFrame({
+      src: "page.jpg",
+      w,
+      h,
+      document: { passage, marks: [] },
+    });
+    assert.ok(f.passage.x >= 60 - 0.5, `x ${f.passage.x}`);
+    assert.ok(
+      f.passage.x + f.passage.w <= 1020 + 0.5,
+      `right ${f.passage.x + f.passage.w}`
+    );
+    assert.ok(f.passage.w < 960 && f.passage.w > 900, `width ${f.passage.w}`);
+    assert.ok(
+      f.passage.y >= 700 && f.passage.y + f.passage.h <= 1300,
+      `y ${f.passage.y}`
+    );
+    // The page still covers the frame's width, and stops at most 400 px
+    // short of the top or the bottom.
+    assert.ok(f.width >= 1080 - 0.5, `page width ${f.width}`);
+    assert.ok(f.top <= 400 + 0.5 && 1920 - (f.top + f.height) <= 400 + 0.5);
+  }
+});
+
+// A passage that ends near the page's own edge cannot be brought inside by
+// scaling: with the page covering the frame, its right side sits at 1080
+// minus the margin left on the page times the scale, so a smaller scale only
+// pushes it further out. The Code de l'Algérie board (passage ending 99
+// source pixels before the edge) stays at its preferred scale and is left to
+// check 1, which refuses it; that card needs a narrower passage.
+// @req REQ-186
+test("1.8.0: scaling down never moves a passage that ends at the page's edge further out", () => {
+  const f = documentFrame({
+    src: "page.jpg",
+    w: 3919,
+    h: 6171,
+    document: { passage: [2000, 2540, 1820, 470], marks: [] },
+  });
+  assert.ok(Math.abs(f.passage.w - 960) < 1e-6, `width ${f.passage.w}`);
+  assert.ok(
+    f.passage.x + f.passage.w > 1020,
+    "still past 1020: check 1 refuses"
+  );
+});
+
 // @req REQ-186
 test("1.8.0: a passage the clear zone cannot hold is refused with its measured box", () => {
   assert.throws(
