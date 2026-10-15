@@ -2,6 +2,8 @@
 
 ## Acceptance and integration status
 
+**1.6.0-proposition, 15 October 2026, accepted by the operator the same day, with the designer's recommendations.** The project's signature line « Connaître nos noms, décoloniser leur emploi, nous nommer nous-mêmes. » ends every carousel and every series video, after the series' fixed closing; it retires the closing slogan (choice 2) and takes « L'Afrique à travers ses noms » off the closing card. See « Renderer integration of 1.6.0 ».
+
 **1.5.0-proposition, 15 October 2026, accepted by the operator the same day.** A map sequence in the series video: areas and names enter on the word that says them, and consecutive map cards share one map. See « Renderer integration of 1.5.0 ».
 
 **1.4.1-proposition, 14 October 2026, accepted by the operator the same day.** In the series video, map cards are drawn on satellite imagery by the satellite video engine; atlas cards stay on the carousel. Nothing else changes. See « Renderer integration of 1.4.1 ».
@@ -345,6 +347,42 @@ The operator accepted 1.3.0-proposition on 14 October 2026 and chose video layou
 
 **Boards** (`Video` group, `video-150-*`): the four beats (`carte-1` to `carte-4`), the entries on the word, the change of view, the return after a photograph, the label rule, the inks, the timing, the 430 px strip. Drawn by a scratch copy of the 1.4.1 engine page, patched for per-area opacity, stacked labels and the fourth ink; the script is kept with the design package.
 
+## Renderer integration of 1.6.0
+
+**Status: accepted by the operator on 15 October 2026, with the designer's recommendations** (Series, « The signature line », decisions 1 to 4). It comes after the 1.5.0 integration (branch `feat/social-series-map-sequence`): `series.md` on `recette` does not yet carry the 1.5.0 text, so 1.5.0 is deposited first, then 1.6.0 over it. The rules are in Series, « The signature line ».
+
+**One constant.** The line is a constant of the renderer, never a card field, so no card can change it: `EthniCards.signatureLine` (« Connaître nos noms, décoloniser leur emploi, nous nommer nous-mêmes. ») and `EthniCards.signatureLines`, its three printed lines. The series video reads the same constant from the bundle it already loads; it keeps no copy of its own.
+
+**Carousel** (`components/bundle.js`, `components/bundle.css`).
+
+- On `type: "closing"`, the panel draws the line where the title was: `<div class="ec-sigline">` with one `<span>` per printed line, each `display: block; white-space: nowrap`. Fraunces 600 56/64, `ink`, centred, 28 px above the invitation.
+- The top of the line sits at y 760 on every closing card: after measuring, an empty block between the pill and the credit takes the difference, settled to the pixel. A line that would sit lower than 760 (an invitation or a credit longer than two lines) is refused (« Ligne de signature poussée hors de sa place »).
+- A closing card with `title` is refused (« Titre sur une carte de clôture : la ligne de signature remplace la phrase de clôture »). The default title of the closing card is removed.
+- The centred signature row draws no motto: `TAGLINE` leaves the closing card.
+- `tokens.json` records the style `signature-line` (Fraunces 600 56/64) in the « Signature » group; `display-closing` and `tagline` are marked retired. Nothing in the renderer reads the type groups, so no card changes through them; remove the two retired styles once nothing in the repository refers to them.
+- `altText` ends with `signatureLine` on a closing card and no longer reads its title.
+- The sample: the ten closing cards (`seq-9`, `seq-9-parchemin`, `chr-5` and the seven series closings) lose their `title`. Their ten references are redrawn and accepted again with 1.6.0; the 79 other references must stay pixel-identical, alternative texts included.
+
+**Series video** (`social/video`).
+
+- The ending layer draws the line where the slogan was, `vf-sigline`: Fraunces 600 56/64, `on-image-ink`, 8 px outline, the large shadow, top at y 318. `LAYOUT.ending` stays 318 to 820.
+- The voice says the line (decision 1): the closing card's chunks are the line in three chunks, « Connaître nos noms, », « décoloniser leur emploi, », « nous nommer nous-mêmes. », then the invitation's two chunks (the existing check). None of the closing card's chunks is shown: the subtitle band is empty from the ending's first frame.
+- The hold is otherwise unchanged: 75 frames, or the voice's end plus 0.5 s.
+
+**What the renderer checks** (refuse, or report with `--diagnose`):
+
+1. **Present.** Every closing card and every video ending draws the line.
+2. **Identical.** Its text, lines joined by one space, equals the constant, character for character; three line boxes of 64 px each, so no line wraps and « nous-mêmes » is whole.
+3. **After the fixed closing.** A carousel's closing card has no title (the fixed closing is on an earlier card); a video's ending is its last card and the line is its first text under the band.
+4. **In its band.** On the card: top at y 760 within 0.5 px, inside x 72 to 1008. In the video: inside y 318 to 820 and x 60 to 1020.
+5. **Nothing over it.** The boxes of the line, the invitation, the pill, the credit and the signature row do not overlap; a kicker or a recap ends above y 760.
+6. **Alternative text.** It ends with the constant, word for word.
+7. **Spoken line.** The closing card's chunks start with the line's three chunks, word for word (« La ligne de signature n'est pas dite mot pour mot »), and the subtitle band shows nothing during the ending.
+
+**No U+2011.** The brief suggested a non-breaking hyphen in « nous-mêmes » if the browser would break there. Fraunces, Nunito Sans and Anton have no glyph for U+2011, so the browser would draw it from a fallback face. The line keeps U+002D, and each printed line is set without wrapping: it cannot break at the hyphen.
+
+**Boards and prototype.** `Lecture` group `cloture-160-*`, `Video` group `video-160-*` (Series, « Boards (1.6.0) »). They were drawn by a scratch copy of the accepted `bundle.js` and `handoff/video-board-full.html`, patched as described here; the patch is kept with the design package. Since the acceptance the bundle and `handoff/video-board-full.html` on this page carry the patch: the ten closing cards changed, the 79 others are pixel-identical to their 1.5.0 renders, alternative texts included.
+
 ## Required assets
 
 - Fonts: `fonts/Anton-Regular.ttf`, `fonts/NunitoSans.ttf`, `fonts/NotoSans-Variable.ttf`, `fonts/Fraunces.ttf`, `fonts/NotoSansEthiopic-Bold.ttf`, all under the SIL Open Font License 1.1.
@@ -372,7 +410,7 @@ The operator accepted 1.3.0-proposition on 14 October 2026 and chose video layou
 ## Choices left to the operator
 
 1. **Missing letters in Nunito Sans.** ɛ, ɔ, ɲ, ƙ, ɖ and ɣ come from Noto Sans inside the text, a slightly different drawing. Accept it, or keep such names in titles, terms and field names (Anton).
-2. **Closing slogan.** « Notre objectif : raconter l'origine des noms, avec des sources. » comes from the fetishism carousel. Keep it on every closing card, or write one per publication.
+2. **Closing slogan.** « Notre objectif : raconter l'origine des noms, avec des sources. » comes from the fetishism carousel. Keep it on every closing card, or write one per publication. _Answered by 1.6.0-proposition, accepted on 15 October 2026: the signature line takes its place and the slogan is retired._
 3. **Image on every card.** The `NameForms` pair example has no image yet; the operator's rule of 30 September asks for one on every card.
 4. **Logo licence.** The repository does not record where the Africa icon of the logo comes from or under which licence. Confirm before the first production under this system.
 5. **Anton's ʋ.** At title size Anton draws ʋ close to a v (see « Eʋegbe » on the `stress` card). Accept it, or set that name in the text face.
@@ -409,3 +447,9 @@ The operator accepted 1.3.0-proposition on 14 October 2026 and chose video layou
 - The operator's request of 15 October 2026, for series 2, episode 1 (« Touareg »): the regions appear on the map as the voice names them, each in its colour; then the language names on the same regions; then, in the summary, the map returns with the names and languages.
 - Brief: `proposals/1.5.0-proposition/claude-design-brief.md`. The signature line brief, first filed under the same number, is renumbered 1.6.0 (`proposals/1.6.0-proposition/`).
 - Proposed and accepted on 15 October 2026, with the designer's recommendations.
+
+## Commissioned on 15 October 2026 (1.6.0)
+
+- The operator's decision of 15 October 2026: the signature line « Connaître nos noms, décoloniser leur emploi, nous nommer nous-mêmes. » ends every reel and every carousel, word for word, after the series' fixed closing, with the same look in the same place every time, and with no panel, veil or band to carry it.
+- Brief: `proposals/1.6.0-proposition/claude-design-brief.md` on `recette` (first numbered 1.5.0, renumbered on 15 October 2026 by PR #1776).
+- Proposed and accepted on 15 October 2026, with the designer's recommendations on the four questions.

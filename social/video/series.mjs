@@ -160,6 +160,18 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     closing.some((t, i) => spaces(t) !== spaces(expected[i]))
   )
     fail(`The closing card's last two chunks are « ${expected.join(" ")} »`);
+  // Cartes 1.6.0, decision 1: the voice says the signature line, one printed
+  // line per chunk, before the search sentence. The line is the accepted
+  // design's (version.json), the same text the cards' bundle draws.
+  const signature = version.signatureLine.split(/(?<=,) /u);
+  const said = beats.at(-1).chunks.map((c) => spaces(c.text));
+  if (
+    said.length !== signature.length + 2 ||
+    signature.some((t, i) => said[i] !== t)
+  )
+    fail(
+      `La ligne de signature n'est pas dite mot pour mot : la carte de clôture dit « ${signature.join(" ")} », puis la phrase de recherche`
+    );
   // The searched name never breaks across the two subtitle lines, as the
   // design's ending board shows it: its spaces are set unbreakable.
   const unbreakable = searchSentence(ending.search.replace(/\s+/gu, " "));
@@ -181,7 +193,9 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
             `« ${text} » is wider than 900 px: a series subtitle line holds 900 px`
           );
       }
-      return { text, card, lines };
+      // 1.6.0: the ending prints the line and the invitation itself, so the
+      // closing card's chunks are voiced but never shown as subtitles.
+      return { text, card, lines, hidden: card === beats.length - 1 };
     })
   );
   if (!input.voice) fail("A series video is spoken: it needs a voice");
@@ -299,7 +313,9 @@ export function seriesFrameState(seq, frame) {
     l.zoom = l.map.zoom;
     if (i && runs[i] === runs[i - 1]) l.opacity = 0;
   }
-  const chunk = seq.chunks.find((c) => frame >= c.appear && frame < c.gone);
+  const chunk = seq.chunks.find(
+    (c) => !c.hidden && frame >= c.appear && frame < c.gone
+  );
   const subtitle = chunk
     ? {
         lines: chunk.lines,

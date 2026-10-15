@@ -70,8 +70,9 @@ html,body{margin:0;background:#000}
 .vf-label{font:800 22px/28px var(--font-text);letter-spacing:.1em;text-transform:uppercase;color:var(--oi-muted);--sw:4px;margin-top:14px}
 .vf-name{font:400 76px/82px var(--font-display);--sw:8px;margin-top:2px}
 .vf-close{position:absolute;left:60px;width:960px;top:318px;text-align:center;display:flex;flex-direction:column;align-items:center}
-.vf-slogan{font:400 84px/88px var(--font-display);text-transform:uppercase;--sw:10px;text-wrap:balance}
-.vf-sent{font:700 32px/40px var(--font-text);--sw:4px;margin-top:18px;max-width:900px;text-wrap:balance}
+.vf-sigline{font:600 56px/64px var(--font-wordmark);color:var(--oi-ink);--sw:8px}
+.vf-sigline span{display:block;white-space:nowrap}
+.vf-sent{font:700 32px/40px var(--font-text);--sw:4px;margin-top:28px;max-width:900px;text-wrap:balance}
 .vf-sent p{margin:0}
 .vf-pill{margin-top:30px;display:inline-block;font:800 34px/40px var(--font-text);letter-spacing:.04em;text-transform:uppercase;color:var(--oi-accent);--sw:4px;border:3px solid var(--oi-accent);border-radius:999px;padding:14px 40px;box-shadow:0 0 0 2px var(--oi-stroke),inset 0 0 0 2px var(--oi-stroke)}
 .vf-foot{position:absolute;left:60px;width:960px;bottom:134px;display:flex;flex-direction:column;gap:4px}
@@ -158,7 +159,12 @@ function buildLayer(spec, view) {
   }
   if (parts.closing) {
     const close = el("div", "vf-close");
-    close.append(el("div", "vf-slogan oi oi-l", pick(".ec-title").innerHTML));
+    // 1.6.0: the signature line where the slogan was, from the cards' own
+    // constant: the video keeps no copy of the line.
+    const line = el("div", "vf-sigline oi oi-l");
+    line.setAttribute("lang", "fr");
+    EthniCards.signatureLines.forEach((t) => line.append(el("span", "", esc(t))));
+    close.append(line);
     if (pick(".ec-body")) close.append(el("div", "vf-sent oi", pick(".ec-body").innerHTML));
     const pill = pick(".ec-cta-pill");
     close.append(el("div", "vf-pill oi", esc((pill ? pill.textContent : "ethniafrica.com").toUpperCase())));

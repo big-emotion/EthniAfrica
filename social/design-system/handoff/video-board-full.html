@@ -41,6 +41,10 @@ html,body{margin:0;background:#000}
 .head .lab{font:800 22px/28px var(--font-text);letter-spacing:.1em;text-transform:uppercase;color:var(--oi-muted);--sw:4px;margin-top:14px}
 .head .name{font:400 76px/82px var(--font-display);--sw:8px;margin-top:2px}
 .close{position:absolute;left:60px;right:60px;top:318px;text-align:center;display:flex;flex-direction:column;align-items:center}
+/* 1.6.0: the signature line, Fraunces 600 56/64 as on the closing card, three lines, its top at y 318. */
+.close .sigline{font:600 56px/64px var(--font-wordmark);letter-spacing:-.005em;--sw:8px}
+.close .sigline span{display:block;white-space:nowrap}
+.close .sigline + .sent{margin-top:28px}
 .close .slogan{font:400 84px/88px var(--font-display);text-transform:uppercase;--sw:10px;text-wrap:balance}
 .close .sent{font:700 32px/40px var(--font-text);color:var(--oi-ink);--sw:4px;margin-top:18px;max-width:900px;text-wrap:balance}
 .close .pill{margin-top:30px;display:inline-block;font:800 34px/40px var(--font-text);letter-spacing:.04em;text-transform:uppercase;color:var(--oi-accent);--sw:4px;border:3px solid var(--oi-accent);border-radius:999px;padding:14px 40px;box-shadow:0 0 0 2px var(--oi-stroke),inset 0 0 0 2px var(--oi-stroke)}
@@ -185,7 +189,7 @@ html,body{margin:0;background:#000}
     }
     if (spec.type === 'closing') {
       var cl = el('div', 'close');
-      cl.appendChild(el('div', 'slogan oi oi-l', pick('.ec-title').innerHTML));
+      cl.appendChild(el('div', 'sigline oi oi-l', EthniCards.signatureLines.map(function (t) { return '<span>' + esc(t) + '</span>'; }).join('')));
       if (pick('.ec-body')) cl.appendChild(el('div', 'sent oi', pick('.ec-body').innerHTML));
       var p = pick('.ec-cta-pill'); cl.appendChild(el('div', 'pill oi', esc((p ? p.textContent : 'ethniafrica.com').toUpperCase())));
       L.appendChild(cl);
