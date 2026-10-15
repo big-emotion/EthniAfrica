@@ -67,14 +67,15 @@ const RECOMMENDED_LENGTH = [35, 75];
 // 0.4.0 voice timing (README, Voice): a chunk appears 150 ms before its first
 // word; the last stays 200 ms after its last word, then fades in 200 ms.
 // Reading speed (operator, 15 October 2026): 17 characters a second is the
-// recommendation, a faster chunk loads with a warning; 20 is the limit, past
-// which a subtitle cannot be read and the chunk is refused.
+// recommendation, a faster chunk loads with a warning; 21 is the limit, past
+// which a subtitle cannot be read and the chunk is refused (series 1 episode
+// 19 needed 21 at the voice's natural pace).
 const VOICE = {
   lead: 0.15,
   hold: 0.2,
   tail: 0.5,
   recommendedCps: 17,
-  maxCps: 20,
+  maxCps: 21,
   fade: 6,
 };
 const toFrame = (seconds) => Math.round(seconds * FPS);

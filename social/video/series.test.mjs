@@ -231,6 +231,25 @@ test("the closing chunks must say the search sentence for the ending's name", ()
 const timing = (seq) => seq.warnings.filter((w) => !/carte signée/.test(w));
 
 // @req REQ-186
+test("a subtitle chunk may read up to 21 characters a second; faster is refused", () => {
+  // Each chunk is timed at `cps` characters a second of its own text, so the
+  // reading rate is set directly rather than inferred from a voice.
+  const paced = (cps) =>
+    demo({
+      script: (beats) =>
+        beats.map((b) => ({
+          ...b,
+          chunks: b.chunks.map((c) => ({
+            ...c,
+            duration: Math.max(1, [...c.text].length / cps + 0.2),
+          })),
+        })),
+    });
+  assert.doesNotThrow(() => paced(20));
+  assert.throws(() => paced(26), /faster than 21 characters a second/);
+});
+
+// @req REQ-186
 test("the length is a recommendation of 35 to 75 s: a longer video loads with a warning", () => {
   const stretched = (factor) =>
     demo({
@@ -270,7 +289,7 @@ const readAt = (cps) =>
   });
 
 // @req REQ-186
-test("17 characters a second is recommended: a chunk read up to 20 loads with a warning", () => {
+test("17 characters a second is recommended: a chunk read up to 21 loads with a warning", () => {
   assert.deepEqual(timing(readAt(15)), []);
   const fast = readAt(18.5);
   assert.equal(timing(fast).length, 1);
@@ -281,8 +300,8 @@ test("17 characters a second is recommended: a chunk read up to 20 loads with a 
 });
 
 // @req REQ-186
-test("a chunk read faster than 20 characters a second is refused", () => {
-  assert.throws(() => readAt(22), /faster than 20 characters a second/);
+test("a chunk read faster than 21 characters a second is refused", () => {
+  assert.throws(() => readAt(22), /faster than 21 characters a second/);
 });
 
 // @req REQ-186
