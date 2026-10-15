@@ -107,6 +107,14 @@
       "tier": "referenced",
       "source_kind": "government",
       "notes": "Texte reproduit par le site Aménagement linguistique dans le monde (Université Laval) et dans une compilation du Code civil ivoirien ; pas lu au Journal officiel. Article 3 : « Toute personne conserve le nom et les prénoms sous lesquels elle est actuellement connue. Ce nom devient son nom patronymique ainsi que celui de ses enfants mineurs »."
+    },
+    {
+      "sourceKey": "dolphyne-1986-akan-languages",
+      "title": "The Languages of the Akan Peoples",
+      "url": "https://pdfproc.lib.msu.edu/?file=%2FDMC%2FAfrican+Journals%2Fpdfs%2FInstitue+of+African+Studies+Research+Review%2F1986v2n1%2Fasrv002001002.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Florence Abena Dolphyne, Research Review (Institute of African Studies, University of Ghana), nouvelle série, vol. 2, n° 1, 1986 ; écrit en 1975. Lu le 15 octobre 2026 dans le PDF des African e-Journals de l'université d'État du Michigan. Pages 5 à 7 du tapuscrit : les noms de jour des Anyi (Agni), des Baoulé et des Nzema sont décalés d'un jour par rapport au twi-fante ; tableaux des deux groupes et des Nzema du Ghana ; hypothèse sur l'origine de l'écart."
     }
   ],
   "gaps": [
@@ -136,7 +144,7 @@
     }
   ],
   "nameHistory": {
-    "summary": "Konan est un nom de jour : chez les Baoulé de Côte d'Ivoire, on le donne au garçon né le mercredi, et la fille née ce jour s'appelle Amlan. Les sources lues ne lui donnent pas d'équivalent au Ghana. En Côte d'Ivoire, une loi de 1964 a fait de ce nom de naissance un nom de famille.",
+    "summary": "Konan est un nom de jour : chez les Baoulé de Côte d'Ivoire, on le donne au garçon né le mercredi, et la fille née ce jour s'appelle Amlan. Selon la linguiste Florence Abena Dolphyne, le mercredi baoulé et agni correspond au mardi des Ashanti, le jour de Kwabena ; aucune source lue ne rapproche le nom Konan lui-même de Kwabena. En Côte d'Ivoire, une loi de 1964 a fait de ce nom de naissance un nom de famille.",
     "names": [
       {
         "nameText": "Konan",
@@ -177,7 +185,7 @@
             },
             "era": "modern",
             "aspect": "usage",
-            "statement": "Les noms de jour baoulé ne tombent pas le même jour qu'au Ghana. L'ethnologue Pierre Étienne constate en 1968 que la semaine baoulé est placée un jour plus tard que celle des Ashanti et des Fanti ; il n'explique pas cet écart, et les autres sources lues ne l'expliquent pas non plus.",
+            "statement": "Les noms de jour baoulé ne tombent pas le même jour qu'au Ghana. L'ethnologue Pierre Étienne constate en 1968 que la semaine baoulé est placée un jour plus tard que celle des Ashanti et des Fanti ; il n'explique pas cet écart ; la linguiste Florence Abena Dolphyne propose une hypothèse, présentée plus bas.",
             "sources": [
               {
                 "title": "Les Baoulé et le temps",
@@ -188,6 +196,28 @@
                 "source_kind": "academic",
                 "page": "p. 18, note 1",
                 "notes": "Cahiers ORSTOM, série Sciences humaines, vol. V, n° 3, 1968. Article fondé sur l'enquête de terrain de l'auteur chez les Baoulé. Lu le 15 octobre 2026. Page 18 et note 1 : la semaine baoulé et l'écart d'un jour avec les Ashanti, les Fanti, les Agni et les Abron ; page 19 : un enfant né après le coucher du soleil reçoit le nom du jour suivant."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "Proposé en 1975"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Selon Florence Abena Dolphyne, les noms de jour des Agni et des Baoulé sont décalés d'un jour par rapport à ceux des Ashanti : le mercredi des Baoulé, mlan, occupe la place du mardi des Ashanti, jour du nom Kwabena. Elle donne pour ce jour, chez les Agni et les Baoulé, les noms de garçon Kwamlan ou Kamlan, et des noms de fille comme Ablan ou Abina. Elle ne rapproche pas le nom Konan de Kwabena.",
+            "sources": [
+              {
+                "title": "The Languages of the Akan Peoples",
+                "author": "Florence Abena Dolphyne",
+                "year": 1986,
+                "url": "https://pdfproc.lib.msu.edu/?file=%2FDMC%2FAfrican+Journals%2Fpdfs%2FInstitue+of+African+Studies+Research+Review%2F1986v2n1%2Fasrv002001002.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5",
+                "notes": "Florence Abena Dolphyne, Research Review (Institute of African Studies, University of Ghana), nouvelle série, vol. 2, n° 1, 1986 ; écrit en 1975. Lu le 15 octobre 2026 dans le PDF des African e-Journals de l'université d'État du Michigan. Pages 5 à 7 du tapuscrit : les noms de jour des Anyi (Agni), des Baoulé et des Nzema sont décalés d'un jour par rapport au twi-fante ; tableaux des deux groupes et des Nzema du Ghana ; hypothèse sur l'origine de l'écart."
               }
             ]
           },
