@@ -462,7 +462,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 620 -> 622 on 2026-10-13: PAT_SOUMAH (Arcin 1907, Bamadaba) and PAT_ABAZA (a Wikipedia article) now cite sources of their own; both cited only the candidate queue before.
     // 622 -> 618 on 2026-10-14: the four family-name fiches of wave 15 folded or withdrawn (Djaló, Bah, Fadicca, Koum).
     // 618 -> 619 on 2026-10-14: PAT_NSENGIYUMVA now cites sources of its own (wave 22).
-    value: 619,
+    // 619 -> 621 on 2026-10-15: PAT_KOFI and PAT_KWAME now cite sources of their own (Christaller 1881, Agyekum 2006); both cited only the candidate queue before.
+    // 621 -> 622 on 2026-10-15: PAT_KWABENA, the Twi Tuesday day name, added with sources of its own (Christaller 1881, Agyekum 2006, Grottanelli 1977, Dolphyne 1986).
+    value: 622,
     method:
       "fiches dataset/source/afrik/patronymes/PAT_*.json portant un nameSystem et " +
       "au moins une source autre que la file d'attente des candidats — les fiches " +
@@ -479,7 +481,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 172 -> 171 on 2026-10-12: three duplicate family-name fiches of wave 11 folded into their keepers; only Tesfay cited a source of its own.
     // 171 -> 172 on 2026-10-14: PAT_NSENGIYUMVA, a non-hereditary patronymic, now cites sources of its own (wave 22).
     // 172 -> 171 on 2026-10-14: PAT_TAIWO is now a hereditary family name taken from the father, so its transmission is patrilineal.
-    value: 171,
+    // 171 -> 173 on 2026-10-15: PAT_KOFI and PAT_KWAME, two non-hereditary day names, now cite sources of their own.
+    // 173 -> 174 on 2026-10-15: PAT_KWABENA, a non-hereditary day name, added.
+    value: 174,
     method:
       "fiches de nom recherchées dont transmissionMode vaut non_hereditary, au " +
       "même périmètre que le compte ci-dessus",

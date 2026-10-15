@@ -175,18 +175,23 @@ test("the closing chunks must say the search sentence for the ending's name", ()
 });
 
 // @req REQ-186
-test("a video outside 35 to 45 s is refused", () => {
-  assert.throws(
-    () =>
-      demo({
-        script: (beats) =>
-          beats.map((b) => ({
-            ...b,
-            chunks: b.chunks.map((c) => ({ ...c, duration: c.duration * 1.3 })),
+test("the length is a recommendation of 35 to 75 s: a longer video loads with a warning", () => {
+  const stretched = (factor) =>
+    demo({
+      script: (beats) =>
+        beats.map((b) => ({
+          ...b,
+          chunks: b.chunks.map((c) => ({
+            ...c,
+            duration: c.duration * factor,
           })),
-      }),
-    /35 to 45 s/
-  );
+        })),
+    });
+  assert.deepEqual(stretched(1.3).warnings, []);
+  const long = stretched(2.5);
+  assert.ok(seriesFrameCount(long) / FPS > 75);
+  assert.equal(long.warnings.length, 1);
+  assert.match(long.warnings[0], /recommended length is 35 to 75 s/);
 });
 
 // @req REQ-186

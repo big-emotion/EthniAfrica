@@ -6,9 +6,15 @@ below and took four decisions the same day. This file keeps the message
 **verbatim**, in French, then a short French synthesis that series briefs can
 quote, then the sourcing of the one factual claim the message contains.
 
+On 15 October 2026 the operator widened the same message from one series to the
+whole project: every reel, every carousel and the site. Section 5 keeps that
+second message verbatim, with its synthesis and its sources. It extends this
+essay rather than starting a second one that would say the same thing.
+
 It is an essay, not the site doctrine ([doctrine.md](../doctrine.md)): it gives
-the reason one series exists. It decides no template or card rule; those live in
-the social design system and in the content strategy.
+the reason the series, and since 15 October the project's recurring message,
+exist. It decides no template or card rule; those live in the social design
+system and in the content strategy.
 
 ---
 
@@ -132,3 +138,200 @@ sentences. The UN figure is 88.6 billion; UNCTAD's own headline rounds it to 89.
 - **Unity as the remedy.** No source here shows that political union would keep
   this wealth on the continent. That is the reason the conclusion stays a signed
   position.
+
+---
+
+## 5. 15 October 2026 — one message for every publication
+
+### 5.1 The operator's words, verbatim
+
+Voice transcription, 15 October 2026, reproduced in full. The operator meant
+« étayer » where the transcription wrote « bâcler »; the word is left as
+transcribed and corrected only here.
+
+> Je pense que j'ai une formulation, une morale qu'on peut utiliser partout.
+> C'est de dire que l'Afrique n'est pas un tout. L'Afrique est diverse, est
+> multiple. Elle est aussi large. Le continent est très large. Là, tu peux me
+> bâcler avec de vraies données, de vraies informations. Du nord au sud, de
+> l'est à l'ouest, on peut y faire entrer plusieurs pays, plusieurs continents.
+> Les populations sont diverses et variées. Les Africains, le mot Afrique
+> lui-même, les Africains, ont été nommés de l'extérieur, parce que chaque
+> population a sa propre nomination, sa propre appellation, sa propre histoire,
+> sa propre culture. Le travail cherche à montrer ces populations diverses et
+> variées, mais dans la situation actuelle mondiale, l'Afrique a beaucoup à
+> gagner à être unie. Ce travail commence par l'histoire, par la compréhension
+> de l'autre, par la compréhension des noms pour pouvoir nous nommer
+> correctement, apprendre à nous nommer correctement, tel que les peuples se
+> nomment, et comprendre ce qu'il y a toujours de colonial dans les noms qu'on
+> emploie.
+
+### 5.2 What changes on 15 October
+
+1. **Scope.** The message is no longer the conclusion of series 6 alone. It is
+   the background of every publication and of the site. It replaces no series'
+   fixed closing line (`../strategy/social-series.md`). The short line that
+   carries it everywhere is the signature recorded in 5.6 and in that file.
+2. **« Nommés de l'extérieur » holds for many names, not for all.** Some names
+   are still the ones peoples give themselves; Kouassi and Yao are the example
+   in 5.3.
+3. **« Afrique » keeps the rule of section 2, decision 4:** one hypothesis,
+   presented as one among several.
+4. **Unity stays a signed position** (« nous pensons que… »), kept apart from
+   the sourced facts, under the permanent constraint written in section 3.
+5. **Link with series 4, « Les mots qu'on nous a collés ».** The same day,
+   about the word « tribu », the operator stated the position this message
+   generalises: words such as « tribu » come from other languages, arrived at
+   different times, and do not necessarily match how peoples described
+   themselves; « en utilisant les mots, on perpétue cette classification, cette
+   incompréhension de nous-mêmes ». Series 4 applies that position one word at a
+   time; this message states it for the whole project.
+
+### 5.3 Synthèse
+
+L'Afrique n'est pas un seul bloc. C'est d'abord un continent immense : il
+couvre environ 30 millions de kilomètres carrés. Il mesure environ 8 000
+kilomètres du nord au sud et 7 400 kilomètres d'ouest en est. Les États-Unis,
+la Chine et l'Inde réunis y tiendraient, et il resterait de la place. Le
+continent compte 54 États membres des Nations unies, et l'Union africaine
+réunit 55 membres. Plus d'un milliard et demi de personnes y vivent. On y parle
+plus de 2 100 langues, soit près d'un tiers des langues parlées dans le monde.
+
+Chaque peuple a son nom, sa langue, son histoire et sa culture. Beaucoup de
+peuples sont pourtant connus sous un nom qu'ils ne se donnaient pas : un nom
+venu d'un voisin, d'un commerçant, d'un administrateur ou d'un savant. Le mot
+« Afrique » lui-même vient du latin. Son origine reste discutée : il viendrait
+d'un peuple appelé Afri, près de Carthage, ou d'un mot latin ou grec. Ce n'est
+qu'une des explications proposées.
+
+Tous les noms ne sont pas venus de l'extérieur. Kouassi et Yao, par exemple,
+sont des noms que les Baoulé et les Agni de Côte d'Ivoire donnent à un garçon
+selon son jour de naissance. Au Ghana, en twi, on les écrit Kwasi et Yaw. En
+1964, une loi ivoirienne a obligé chaque personne à porter un nom de famille,
+transmis par le père. Nous pensons que c'est ainsi que des noms de jour comme
+Kouassi et Yao sont devenus des noms de famille. La loi ne les cite pas, et
+elle a été remplacée en 2020.
+
+Notre travail montre cette diversité, nom après nom. Il commence par
+l'histoire : comprendre d'où vient chaque nom, qui l'a donné et quand. Cela
+permet d'apprendre à nous nommer comme les peuples se nomment eux-mêmes. Cela
+permet aussi de voir ce que certains noms d'aujourd'hui gardent de l'époque
+coloniale.
+
+Nous pensons aussi que l'Afrique a beaucoup à gagner à être unie dans le monde
+d'aujourd'hui. C'est une position d'EthniAfrica, pas un fait établi par une
+source. Connaître la diversité des peuples n'empêche pas de choisir l'union.
+
+**Contrainte permanente du projet.** La base reste positive et panafricaine. Le
+sujet de chaque phrase est l'Afrique et ses peuples. Une puissance extérieure
+n'est jamais le sujet moral de la phrase. Quand un nom garde une trace
+coloniale, on l'explique pour comprendre, pas pour accuser. On ne reproche pas
+non plus aux Africains d'employer aujourd'hui un nom venu d'ailleurs.
+
+### 5.4 Sources for the figures
+
+Each figure in 5.3 was read on the publisher's page on 15 October 2026.
+
+| Figure in 5.3                         | Source (type for the reader)                                                                                                                                                        | What it says                                                                                                                                                                                                                                                                          |
+| ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| About 30 million km²                  | _Encyclopædia Britannica_, « Africa ». _Encyclopédie._                                                                                                                              | « Africa's total land area is approximately 11,724,000 square miles (30,365,000 square km) ». The UN _Demographic Yearbook 2023_, table 1, p. 44, gives 29 648 thousand km² of land area. « About 30 million » covers both.                                                           |
+| 8 000 km and 7 400 km                 | _Encyclopædia Britannica_, « Africa ». _Encyclopédie._                                                                                                                              | « about 5,000 miles (8,000 km) from north to south and about 4,600 miles (7,400 km) from east to west ».                                                                                                                                                                              |
+| United States, China and India inside | Nations unies, _Demographic Yearbook 2023_, table 3. _Statistiques officielles._                                                                                                    | Surface areas: United States 9 833 517 km², China 9 600 000 km², India 3 287 263 km². Sum computed here: 22 720 780 km², under Africa's area by either measure.                                                                                                                       |
+| 54 UN member states                   | Nations unies, groupes régionaux. _Site officiel._                                                                                                                                  | The « African States » group lists 54 members, counted here; the page gives no total.                                                                                                                                                                                                 |
+| 55 African Union members              | Union africaine, États membres. _Site officiel._                                                                                                                                    | « The AU is made up of 55 Member States which represent all the countries on the African continent. »                                                                                                                                                                                 |
+| More than one and a half billion      | Nations unies, _World Population Prospects 2024_, total population by sex, Africa, medium variant. _Statistiques officielles._                                                      | 1 515 140 849 people in 2024; 1 549 867 579 in 2025 (projection).                                                                                                                                                                                                                     |
+| More than 2 100 languages, near 1/3   | Ethnologue, region « Africa » and « How many languages are there in the world? ». _Ouvrage de référence linguistique._                                                              | « Living Languages 2,167 » for Africa; « 7,170 languages are in use today » worldwide. Share computed here: 30.2 %.                                                                                                                                                                   |
+| Origin of « Afrique »                 | _Encyclopædia Britannica_, « Africa »; T. Kotula, « Afri », _Encyclopédie berbère_ 2, 1985, p. 208-215. _Encyclopédies._                                                            | Britannica: the Roman name « perhaps from the Latin aprica ('sunny') or the Greek aphrike ('without cold') », and « Afriga, or the Land of the Afrigs », a community south of Carthage. Kotula: « L'origine de cet ethnique demeure inconnue ».                                       |
+| The 1964 law                          | Loi n° 64-373 du 7 octobre 1964 relative au nom, as amended in 1983; loi n° 2020-490 du 29 mai 2020, art. 21. _Textes de loi_, read on loidici.biz.                                 | Art. 1: « Toute personne doit avoir un nom patronymique et un ou plusieurs prénoms. » Art. 2: « L'enfant né dans le mariage porte le nom de son père. » The 2020 law, art. 21, repeals the 1964 law.                                                                                  |
+| Day names before the law              | L. Barré, « Mettre son nom », _Genèses_ 2018/3, n° 112, p. 12-36; A. Thiero-Meman, _Le nom patronymique en République de Côte d'Ivoire_, thèse, Paris 10, 1999. _Article et thèse._ | Barré: Baoulé naming followed « une logique temporelle (en fonction des jours de la semaine) », then « en 1964 […] de nouvelles lois civiles imposent la transmission du patronyme ». Thiero-Meman (abstract): the law extended « l'usage des noms de famille à tous les ivoiriens ». |
+| Kouassi and Yao as day names          | Fiches `PAT_KOUASSI` and `PAT_YAO` and their sources (Pagnet 2005; Christaller 1881; Agyekum).                                                                                      | Kouassi: Baoulé boy born on Monday (Pagnet); Kwasi in Twi: Sunday. Yao: Baoulé, Friday (Pagnet); Yaw in Twi: Thursday. Both fiches mark the names as given by the people themselves.                                                                                                  |
+
+URLs, consulted 15 October 2026:
+
+- Britannica: <https://www.britannica.com/place/Africa>
+- UN _Demographic Yearbook 2023_, table 1:
+  <https://unstats.un.org/unsd/demographic-social/products/dyb/documents/dyb2023/table01.pdf>;
+  table 3:
+  <https://unstats.un.org/unsd/demographic-social/products/dyb/documents/dyb2023/table03.pdf>
+- UN regional groups: <https://www.un.org/dgacm/en/content/regional-groups>
+- African Union: <https://au.int/en/member_states/countryprofiles2>
+- UN _World Population Prospects 2024_ (file
+  `WPP2024_TotalPopulationBySex.csv.gz`, location code 903):
+  <https://population.un.org/wpp/>
+- Ethnologue: <https://www.ethnologue.com/region/Africa/> and
+  <https://www.ethnologue.com/insights/how-many-languages/>
+- Kotula, « Afri »: <https://journals.openedition.org/encyclopedieberbere/886>
+- 1964 law:
+  <https://loidici.biz/2018/08/20/la-loi-relative-au-nom-patronymique/lois-article-par-article/droit-des-personnes-et-de-la-famille/646/naty/>;
+  2020 law: <https://loidici.biz/?p=671>
+- Barré: <https://shs.cairn.info/revue-geneses-2018-3-page-12>
+- Thiero-Meman: <https://theses.fr/1999PA100172>
+
+Britannica, Ethnologue and Cairn refuse automated requests; they were read in a
+browser. The law texts were read on a legal database, not in the _Journal
+officiel_; check them there before a card quotes an article.
+
+### 5.5 What the sources do not support
+
+- **Europe and Oceania together inside Africa.** With the UN's definition of
+  Europe, which includes all of Russia, the two add up to 30 621 thousand km² of
+  land, more than Africa's 29 648. Not printed.
+- **Kai Krause's map, « The True Size of Africa » (2010).** The author's page
+  could not be reached, so its list of countries is not quoted. The comparison
+  in 5.3 rests on UN figures instead. A card shows the map only after it has
+  been read on its author's page.
+- **« Environ 2 000 langues ».** Ethnologue counts 2 167; say « plus de 2 100 ».
+- **« La loi de 1964 a fixé Kouassi et Yao comme noms de famille ».** The law
+  makes a family name compulsory and transmitted by the father; it names no day
+  name. The two sources on its effect describe day naming before 1964 and the
+  imposed family name after it, without naming Kouassi or Yao. The step between
+  them is our reading, written « nous pensons » in 5.3. The law was repealed in
+  2020; speak of it in the past.
+- **Other origins of « Afrique ».** A Phoenician word for « dust » and a Berber
+  word for « cave » circulate widely, but no scholarly source read for this
+  essay gives them. Do not print them until one does.
+- **Unity as the answer.** No source here shows it. It stays a signed position.
+
+### 5.6 The signature, decided on 15 October 2026
+
+The message is carried by one sentence, repeated word for word at the end of
+every reel and every carousel, and in the bio of every account:
+
+> Connaître nos noms, décoloniser leur emploi, nous nommer nous-mêmes.
+
+**Why this sentence.** It has to stay true at the end of any episode, whatever
+the series: a country, a people, a family name, a word, a border, a city. So it
+speaks only of what they all share: names, how they are used, and naming
+ourselves. Its three parts follow the essay's own order: knowing where a name
+comes from, looking at how it is used, then naming ourselves. Its « nous »
+includes EthniAfrica: the project learns alongside the reader rather than
+lecturing.
+
+**What « décoloniser leur emploi » covers.** The operator's precision, the same
+day: not every name is a colonial use, and the work is wider than the colonial
+part. Episodes meet four kinds of use:
+
+1. names and words whose use has already been decolonised;
+2. uses that are colonial;
+3. uses that are pejorative or racialising, without being colonial;
+4. uses that are politicised.
+
+The signature names the strongest and most recognisable case; the episodes,
+series 4 first, show which of the four each word or name belongs to. An
+episode never forces a name into the colonial case to match the signature.
+
+**Limits.**
+
+- It is an invitation, never a judgement. It never follows a sentence that
+  blames anyone for using a name that came from elsewhere (5.3).
+- It decolonises the **use** of names, not « our names »: Kouassi and Yao show
+  that some names were never taken away (5.3).
+- It comes **after** a series' fixed closing line, never in its place. After
+  series 6, the closing line speaks of unity and the signature of names.
+- In a voiced reel, a person listens to « nos noms… nommer » before
+  publication: the synthetic voice has already merged close words in this
+  format.
+
+**Open question, not printed.** The operator would like to know what share of
+the names in use are colonial, pejorative or politicised. No source read for
+this essay gives such a figure. Our own fiches record who gave each name, which
+could one day support a count of our fiches only, never of all names in use.

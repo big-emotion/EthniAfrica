@@ -112,7 +112,9 @@ Decision 6 of 13 October 2026: every model card that carries an image gets one. 
 
 The model is **Vidéo carte 0.4.0 « plein écran »** (accepted on 12 October 2026), text in fixed bands over a clear image, minus its veil. Everything else in 1.3.0 stays: the cards, the band on cards, the seven carousel models, the images. The boards are drawn by `handoff/video-board-full.html` (`?card=…&next=…&fade=…&sub=…&lit=…&zoom=…&guides=1`) and kept in the `Video` asset group as `video-14-*`. Their text is demonstration text, and their images are the web renditions of the library, enlarged 1.8 to 3.7 times: the boards are soft where production, from the full-resolution files, will be sharp.
 
-**Unchanged from 1.3.0.** 1080 × 1920 at 30 frames a second, 35 to 45 seconds, on the operator's voice, the same cards as the carousel. Vidéo carte 0.4.0's subtitle chunks (3 to 6 words, two lines of 26 characters at most), the lit word, the reading rule and the voice timing. Frame 0 is the opener with its band and no subtitle; a video never shows « Faites défiler ». The ending « série » asks for one search and needs `pageOnline: true`.
+**Unchanged from 1.3.0**, except the length. 1080 × 1920 at 30 frames a second, on the operator's voice, the same cards as the carousel. Vidéo carte 0.4.0's subtitle chunks (3 to 6 words, two lines of 26 characters at most), the lit word, the reading rule and the voice timing. Frame 0 is the opener with its band and no subtitle; a video never shows « Faites défiler ». The ending « série » asks for one search and needs `pageOnline: true`.
+
+**Length, operator decision of 15 October 2026.** 35 to 75 seconds is a recommendation, no longer a limit: « il ne faut pas que ça soit bloquant pour le moteur ». The first episode of series 2 needed more than 45 s to hold its research. A video outside the range loads and exports with a warning (`warnings` in the manifest); it is a reason to reread the script, not a refusal. No visual rule changes.
 
 ### Bands
 
