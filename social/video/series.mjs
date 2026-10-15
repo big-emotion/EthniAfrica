@@ -59,7 +59,10 @@ const CLOSING_HOLD = 75; // 2.5 s
 const RECOMMENDED_LENGTH = [35, 75];
 // 0.4.0 voice timing (README, Voice): a chunk appears 150 ms before its first
 // word; the last stays 200 ms after its last word, then fades in 200 ms.
-const VOICE = { lead: 0.15, hold: 0.2, tail: 0.5, maxCps: 17, fade: 6 };
+// maxCps: the operator raised the series video's reading limit from 17 to 21
+// characters a second on 15 October 2026, so a voice at its natural pace needs
+// no inserted pauses (series 1 episode 19 needed 21 at normal speed).
+const VOICE = { lead: 0.15, hold: 0.2, tail: 0.5, maxCps: 21, fade: 6 };
 const toFrame = (seconds) => Math.round(seconds * FPS);
 const fail = (message) => {
   throw new Error(message);
@@ -206,7 +209,7 @@ function schedule(seq, words) {
     );
     if (chunk.gone - chunk.appear < needed)
       fail(
-        `« ${chunk.text} » would read faster than 17 characters a second; the voice needs ${Math.ceil(((needed - (chunk.gone - chunk.appear)) * 1000) / FPS)} ms more`
+        `« ${chunk.text} » would read faster than ${VOICE.maxCps} characters a second; the voice needs ${Math.ceil(((needed - (chunk.gone - chunk.appear)) * 1000) / FPS)} ms more`
       );
   });
   // A card is fully in when its first chunk appears; the cross-fade that
