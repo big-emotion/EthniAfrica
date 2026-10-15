@@ -95,6 +95,29 @@ html,body{margin:0;background:#000}
 .attr .rl{font:700 26px/32px var(--font-text);color:var(--oi-muted);--sw:4px}
 .close .next{margin-top:30px;font:700 32px/40px var(--font-text);--sw:4px;color:var(--oi-ink)}
 .close .next em{color:var(--oi-accent);font-style:normal;font-weight:800}
+/* 1.8.0-proposition: document cards and teaching cards. */
+.docst{position:absolute;overflow:hidden}
+.docmark{position:absolute;height:7px;background:var(--oi-accent);box-shadow:0 0 0 2px rgba(11,8,6,.85);border-radius:2px}
+.fx{position:absolute;left:60px;width:960px;top:740px;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center}
+.fx .day{font:800 40px/48px var(--font-text);color:var(--oi-ink);--sw:5px}
+.fx .day .r{color:var(--oi-accent)}
+.fx .lab{font:800 32px/38px var(--font-text);color:var(--oi-ink);--sw:5px;margin-top:10px}
+.fx .eq{font:400 120px/124px var(--font-display);color:var(--oi-ink);--sw:12px;white-space:nowrap}
+.fx .eq .r{color:var(--oi-accent)}
+.fx .eq .op{font:800 64px/64px var(--font-text);color:var(--oi-muted);--sw:7px;margin:0 22px;position:relative;top:-14px}
+.fx .eq .gone{opacity:.3}
+.fx .note{font:700 26px/32px var(--font-text);color:var(--oi-muted);--sw:4px;margin-top:8px;max-width:900px}
+.sbs{width:960px;display:grid;grid-template-columns:1fr 1fr;gap:16px 40px;margin-top:34px}
+.sbs .hd{font:800 28px/34px var(--font-text);color:var(--oi-accent);--sw:4px}
+.sbs .nm{font:400 72px/74px var(--font-display);color:var(--oi-ink);--sw:9px;white-space:nowrap}
+.sbs .dy{font:800 36px/42px var(--font-text);color:var(--oi-accent);--sw:5px;min-height:42px}
+.sbs .note{grid-column:1 / span 2;font:700 28px/36px var(--font-text);color:var(--oi-muted);--sw:4px;margin-top:10px}
+.week{width:960px;display:grid;grid-template-columns:150px 1fr 1fr;gap:10px 24px;margin-top:30px;align-items:baseline}
+.week .hd{font:800 28px/34px var(--font-text);color:var(--oi-accent);--sw:4px}
+.week .wsub{font:700 22px/28px var(--font-text);color:var(--oi-muted);--sw:4px;margin-top:-6px}
+.week .dn{font:800 30px/36px var(--font-text);color:var(--oi-muted);--sw:4px}
+.week .nm{font:800 38px/44px var(--font-text);color:var(--oi-text);--sw:5px;white-space:nowrap}
+.week .dw{font:700 24px/28px var(--font-text);color:var(--oi-muted);--sw:4px;display:block}
 .guides{position:absolute;inset:0;z-index:20;pointer-events:none;font:700 22px/28px var(--font-text)}
 </style>
 </head><body><div id="out"></div>
@@ -107,7 +130,7 @@ html,body{margin:0;background:#000}
   var q = new URLSearchParams(location.search);
   var tokens = await (await fetch('../tokens.json')).json();
   await EthniCards.installTokens(tokens, '../');
-  var data = await (await fetch(q.get('cards') || 'cards.sample.json')).json();
+  var data = await (await fetch(q.get('cards') || 'cards180.json')).json();
   var FIND = {
     'serie-pays-03': "le texte de l'ordonnance du 2 août 1984, ou une photographie datée de Thomas Sankara en 1984, du domaine public ou sous licence libre",
     'serie-pays-05': "un document daté où on lit le mot « burkinabè » : journal, affiche ou texte officiel",
@@ -202,6 +225,39 @@ html,body{margin:0;background:#000}
       t.lastChild.style.cssText = 'font:700 40px/52px var(--font-text);--sw:6px;text-wrap:pretty';
       L.appendChild(t);
       rep.slot = true;
+    } else if (src && spec.image.document) {
+      // 1.8.0: a document card. The quoted passage is brought to (540, 1000)
+      // at the scale that sets it 960 px wide (never past 1.5 frame pixels per
+      // source pixel, never under the cover scale); outside a band around the
+      // passage the page goes out of focus, so the head and the subtitle sit on
+      // a soft texture instead of printed lines. The passage is never retouched.
+      var D = spec.image.document, dimg = new Image(); dimg.decoding = 'sync'; dimg.alt = ''; dimg.src = resolve(src);
+      await dimg.decode().catch(function () {});
+      var W0 = dimg.naturalWidth, H0 = dimg.naturalHeight, pad = D.pad || 0, Ht = H0 + pad, P = D.passage;
+      var cover = Math.max(1080 / W0, 1920 / Ht), sc = Math.max(cover, Math.min(1.5, (D.width || 960) / P[2]));
+      var cx = P[0] + P[2] / 2, cy = pad + P[1] + P[3] / 2;
+      var edge = D.edge != null ? D.edge : 400;
+      // Near the page's edge the frame may show past it, at most 400 px, on the frame's own dark ground: the page ends there.
+      var dl = Math.min(0, Math.max(1080 - W0 * sc, 540 - cx * sc)), dt = Math.min(edge, Math.max(1920 - Ht * sc - edge, 1000 - cy * sc));
+      var edgeUsed = Math.round(Math.max(0, dt, (dt + Ht * sc) < 1920 ? 1920 - (dt + Ht * sc) : 0));
+      var stage = function (blur) {
+        var st = el('div', 'docst');
+        st.style.cssText = 'left:' + dl + 'px;top:' + dt + 'px;width:' + (W0 * sc) + 'px;height:' + (Ht * sc) + 'px;background:' + (D.padColor || '#fff') + ';transform-origin:' + (540 - dl) + 'px ' + (1000 - dt) + 'px;transform:scale(' + zoom + ')' + (blur ? ';filter:blur(' + blur + 'px)' : '');
+        var im = dimg.cloneNode(); im.style.cssText = 'position:absolute;left:0;top:' + (pad * sc) + 'px;width:' + (W0 * sc) + 'px;height:' + (H0 * sc) + 'px;max-width:none';
+        st.appendChild(im); pic.appendChild(st); return st;
+      };
+      var py0 = (pad + P[1]) * sc, py1 = py0 + P[3] * sc, sharp;
+      if ((q.get('docmode') || D.mode) !== 'plain') {
+        stage(D.blur || 7); sharp = stage(0);
+        var a = py0 - 48, b = py1 + 48, f = 90;
+        sharp.style.webkitMaskImage = sharp.style.maskImage = 'linear-gradient(to bottom, transparent ' + (a - f) + 'px, #000 ' + a + 'px, #000 ' + b + 'px, transparent ' + (b + f) + 'px)';
+      } else sharp = stage(0);
+      (D.marks || []).forEach(function (m) {
+        var u = el('div', 'docmark');
+        u.style.cssText = 'left:' + (m[0] * sc) + 'px;top:' + ((pad + m[1] + m[3]) * sc + 5) + 'px;width:' + (m[2] * sc) + 'px;opacity:' + (q.get('mark') != null ? +q.get('mark') : 1);
+        sharp.appendChild(u);
+      });
+      rep.doc = { edge: edgeUsed, scale: +sc.toFixed(3), cover: +cover.toFixed(3), passage: [Math.round(dl + P[0] * sc), Math.round(dt + py0), Math.round(P[2] * sc), Math.round(P[3] * sc)], text: D.lineHeight ? Math.round(D.lineHeight * sc) : null };
     } else if (src) {
       var img = new Image(); img.decoding = 'sync'; img.alt = ''; img.src = resolve(src);
       pic.appendChild(img);
@@ -263,6 +319,44 @@ html,body{margin:0;background:#000}
           fg.appendChild(c);
         });
         head.appendChild(fg);
+      }
+      if (spec.sbs) {
+        var sb = el('div', 'sbs'), nr = q.get('rows') != null ? +q.get('rows') : 99, nd = q.get('days') != null ? +q.get('days') : 1;
+        spec.sbs.heads.forEach(function (h) { sb.appendChild(el('div', 'hd oi', fr(h))); });
+        spec.sbs.rows.forEach(function (r, i) {
+          r.forEach(function (c) {
+            var cell = el('div', 'cell');
+            cell.appendChild(el('div', 'nm oi oi-l', fr(c.name)));
+            var dy = el('div', 'dy oi', fr(c.day)); dy.style.opacity = nd; cell.appendChild(dy);
+            cell.style.opacity = i < nr ? 1 : 0; sb.appendChild(cell);
+          });
+        });
+        if (spec.sbs.note) { var sn = el('div', 'note oi', fr(spec.sbs.note)); sn.style.opacity = q.get('note') != null ? +q.get('note') : 1; sb.appendChild(sn); }
+        head.appendChild(sb);
+      }
+      if (spec.week) {
+        var wk = el('div', 'week');
+        spec.week.heads.forEach(function (h) { wk.appendChild(el('div', 'hd oi', fr(h))); });
+        spec.week.subs.forEach(function (h) { wk.appendChild(el('div', 'wsub oi', fr(h))); });
+        spec.week.rows.forEach(function (r) {
+          wk.appendChild(el('div', 'dn oi', fr(r[0])));
+          [r[1], r[2]].forEach(function (c) { wk.appendChild(el('div', 'nm oi', fr(c[1]) + ' · ' + fr(c[2]) + '<span class="dw oi">' + fr(c[0]) + '</span>')); });
+        });
+        head.appendChild(wk);
+      }
+      if (spec.formula) {
+        var fx = el('div', 'fx'), st = spec.formula.steps[q.get('step') != null ? +q.get('step') : spec.formula.steps.length - 1];
+        fx.innerHTML = st; L.appendChild(fx);
+        Array.prototype.forEach.call(fx.children, function (c) { c.classList.add('oi'); });
+        // A formula line takes the largest of 120, 104 and 88 px that holds in 960 px.
+        await document.fonts.ready;
+        Array.prototype.forEach.call(fx.querySelectorAll('.eq'), function (e) {
+          [[120, 124, 64], [104, 108, 56], [88, 92, 48]].some(function (z) {
+            e.style.fontSize = z[0] + 'px'; e.style.lineHeight = z[1] + 'px';
+            Array.prototype.forEach.call(e.querySelectorAll('.op'), function (o) { o.style.fontSize = z[2] + 'px'; });
+            return e.scrollWidth <= 960;
+          });
+        });
       }
       if (spec.attribution) {
         var at = el('div', 'attr');
@@ -369,7 +463,7 @@ html,body{margin:0;background:#000}
   }
   await new Promise(function (r) { setTimeout(r, 120); });
   var o = vf.getBoundingClientRect();
-  window.__boxes = Array.prototype.map.call(vf.querySelectorAll('.band, .head > *, .close > *, .list .row, .figs .fig, .attr > *, .sub-line > *, .foot > *:not(.keys2), .keys2 > *, .gsign, .close-sign > *, .slot-text > *, .tape'), function (e) {
+  window.__boxes = Array.prototype.map.call(vf.querySelectorAll('.fx > *, .sbs > *, .week > *, .band, .head > *, .close > *, .list .row, .figs .fig, .attr > *, .sub-line > *, .foot > *:not(.keys2), .keys2 > *, .gsign, .close-sign > *, .slot-text > *, .tape'), function (e) {
     var range = document.createRange(); range.selectNodeContents(e); var r = e.classList.contains('gsign') || e.classList.contains('pill') || e.classList.contains('tape') ? e.getBoundingClientRect() : range.getBoundingClientRect(), b = e.getBoundingClientRect();
     return { cls: e.className, text: e.textContent.slice(0, 40), x: Math.round(r.left - o.left), x1: Math.round(r.right - o.left), y: Math.round(b.top - o.top), y1: Math.round(b.bottom - o.top) };
   });

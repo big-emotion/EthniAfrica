@@ -2,6 +2,8 @@
 
 ## Acceptance and integration status
 
+**1.8.0-proposition, 15 October 2026, accepted by the operator the same day, with the designer's recommendations.** The document card (the quoted passage framed sharp and underlined, the rest of the page out of focus) and three teaching cards: the name-making formula, the side-by-side forms and the week table. See « Renderer integration of 1.8.0 ».
+
 **1.7.0-proposition, 15 October 2026, accepted by the operator the same day, with the designer's recommendations.** The long series video: chapters on screen, readings, figures, a quoted person, the signed position, two invitations and the next episode on the ending. See « Renderer integration of 1.7.0 ».
 
 **1.6.0-proposition, 15 October 2026, accepted by the operator the same day, with the designer's recommendations.** The project's signature line « Connaître nos noms, décoloniser leur emploi, nous nommer nous-mêmes. » ends every carousel and every series video, after the series' fixed closing; it retires the closing slogan (choice 2) and takes « L'Afrique à travers ses noms » off the closing card. See « Renderer integration of 1.6.0 ».
@@ -444,6 +446,51 @@ A chapter card is a card of the sequence, `{ "type": "chapter", "chapter": 2, "i
 
 **Boards and prototype.** `Video` group `video-170-*` (Series, « Boards (1.7.0) »), drawn by a scratch copy of `handoff/video-board-full.html` patched as described here; since the acceptance `handoff/video-board-full.html` on this page carries the patch.
 
+## Renderer integration of 1.8.0
+
+**Status: accepted by the operator on 15 October 2026, with the designer's recommendations** (Series, « Document and teaching cards », decisions 1 to 5). Integration order: 1.6.0 (PR #1784), then 1.7.0, then 1.8.0, each in `recette` before the next. The document card comes first: the « tribu » video needs it by about 22 October. The rules are in Series, « Document and teaching cards ».
+
+**Card fields.**
+
+```json
+"image": {
+  "src": "page-academie-1835.jpg",
+  "document": {
+    "passage": [125, 712, 680, 125],
+    "marks": [[722, 759, 70, 28], [130, 796, 300, 30]],
+    "say": "sauvages"
+  }
+}
+```
+
+- `image.document`: `passage` and `marks` in source pixels; `say`, the unit of the card's chunks on which the underline enters; for a web capture, `pad` (pixels added above the page) and `padColor` (the page's own background).
+- `formula: { steps: [{ say, day?, rows: [{ label, parts: [{ text, role }] }], note? }] }`, `role` one of `name`, `day` (accent), `op` (« + », « = », « → »), `dropped` (30 %).
+- `sbs: { heads: [a, b], rows: [[{ name, day }, { name, day }]], daysSay, note?, noteSay }`.
+- `week: { heads, rows: [[jour, [mot, garçon, fille], [mot, garçon, fille]]] }`.
+
+**What the engine draws.**
+
+1. **Document framing.** Scale s = max(cover, min(1.5, 960 ÷ passage width)); the passage's centre to (540, 1000); the page clamped to the frame, except that the frame may pass the page's edge by up to 400 px, on the frame's dark ground.
+2. **Out of focus.** The page is drawn twice: blurred by 7 px over the whole frame, and sharp under a mask that is opaque from 48 px above the passage to 48 px below it and fades to nothing over 90 px. The slow zoom applies to both, around (540, 1000).
+3. **The underline.** 7 px in `on-image-accent` with a 2 px keyline of `on-image-stroke` at 85 %, under each mark, 5 px below it, drawn in the sharp layer so it zooms with the page; it fades in over 9 frames from the start of its `say` word.
+4. **Foot.** One « Source : » line; no credit line on a document card.
+5. **Formula.** In the clear zone from y 740, centred: the day line, then each row's label and line; each line at the largest of 120, 104 and 88 px that holds in 960 px. Each step enters on its `say` word in 9 frames; the previous step cross-fades out in place over the same 9 frames.
+6. **Side by side** and **week table** under the title, inside the head's flow, ending above y 1290; rows enter on their words, the days on `daysSay`, their place kept from the card's first frame.
+
+**What the engine checks** (refuse, or report with `--diagnose`):
+
+1. The passage lands inside y 700 to 1300 and x 60 to 1020; the scale is at most 1.5 and at least the cover scale; the page's edge shows by 400 px at most (« Passage hors de l'image dégagée »).
+2. Every mark lies inside the passage.
+3. Every `say` is a unit of the card's chunks.
+4. A document card has a `source` and no `credit`; a web capture's source starts with « Capture : » and names the capture's date.
+5. The blur never covers the passage: the sharp band contains the passage's box.
+6. Formula: every line holds in 960 px at 88 px or more; « = » only between parts whose letters add up to the result (checked on the strings); the formula ends above y 1290.
+7. Side by side: two columns, two to three rows; the note, when present, holds on two lines.
+8. Week table: the card holds at least its reading time at 21 characters a second, else it must be split.
+9. Everything accepted before still holds: bands, the 300 ms change, the head inside y 318 to 700, the subtitle band, the 1.7.0 rules.
+
+**Boards and prototype.** `Video` group `video-180-*` (Series, « Boards (1.8.0) »), drawn by a scratch copy of `handoff/video-board-full.html` patched as described here; since the acceptance `handoff/video-board-full.html` on this page carries the patch.
+
 ## Required assets
 
 - Fonts: `fonts/Anton-Regular.ttf`, `fonts/NunitoSans.ttf`, `fonts/NotoSans-Variable.ttf`, `fonts/Fraunces.ttf`, `fonts/NotoSansEthiopic-Bold.ttf`, all under the SIL Open Font License 1.1.
@@ -520,4 +567,11 @@ A chapter card is a card of the sequence, `{ "type": "chapter", "chapter": 2, "i
 - The long series video with chapters, one brief in place of three drafts (« Afrique », series 6 episode 1; « Kouassi et Yao », series 3 episode 1; « tribu », series 4 episode 1). « Afrique » is the main test case; its result is needed by 18 October.
 - Settled by the operator: length follows the argument; chapters are required in long videos; a reminder of the hook between 1 min 15 and 2 min; each video carries part of the signed position; nothing darkens the image. Reading limit 21 characters a second.
 - Brief: `proposals/1.7.0-proposition/claude-design-brief.md` (draft PR #1781). The document card and the teaching cards are 1.8.0.
+- Proposed and accepted on 15 October 2026, with the designer's recommendations on the five questions.
+
+## Commissioned on 15 October 2026 (1.8.0)
+
+- The document card for « tribu » (series 4, episode 1, slot 27 October, needed by about 22 October), and the name-making formula, the side-by-side forms and the week table for « Kouassi et Yao » (series 3, episode 1).
+- Settled: the image fills the frame, only text sits on it, nothing is fitted to the networks' interface, nothing darkens the image; any departure is shown with its variant and left to the operator.
+- Brief: `proposals/1.8.0-proposition/claude-design-brief.md` (draft PR #1781).
 - Proposed and accepted on 15 October 2026, with the designer's recommendations on the five questions.

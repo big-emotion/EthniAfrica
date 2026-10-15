@@ -10,6 +10,7 @@
 // network.
 import { FLAT_VERT, FLAT_FRAG, OVERLAY_SCRIPT } from "./page.mjs";
 import { flatProject } from "./series-map.mjs";
+import { documentFrame } from "./series-document.mjs";
 
 export const SERIES_PAGE_HTML = `<!doctype html>
 <html lang="fr"><head><meta charset="utf-8">
@@ -95,6 +96,31 @@ html,body{margin:0;background:#000}
 .vf-next{margin-top:30px;font:700 32px/40px var(--font-text);--sw:4px;color:var(--oi-ink);white-space:nowrap}
 .vf-next em{color:var(--oi-accent);font-weight:800}
 .vf-nowrap{white-space:nowrap}
+/* 1.8.0: the document card and the teaching cards (series.md, « Document and
+   teaching cards »), sizes and inks as the accepted board draws them. */
+.vf-doc{position:absolute;overflow:hidden}
+.vf-mark{position:absolute;height:7px;background:var(--oi-accent);box-shadow:0 0 0 2px rgba(11,8,6,.85);border-radius:2px}
+.vf-probe{position:absolute;left:0;width:100%;pointer-events:none}
+.vf-fx{position:absolute;left:60px;width:960px;top:740px}
+.vf-fx-step{position:absolute;left:0;top:0;width:960px;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center}
+.vf-fx .fx-dayline{font:800 40px/48px var(--font-text);--sw:5px}
+.vf-fx .fx-lab{font:800 32px/38px var(--font-text);--sw:5px;margin-top:10px}
+.vf-fx .fx-eq{font:400 120px/124px var(--font-display);--sw:12px;white-space:nowrap}
+.vf-fx .fx-op{font:800 64px/64px var(--font-text);color:var(--oi-muted);--sw:7px;margin:0 22px;position:relative;top:-14px}
+.vf-fx .fx-r,.vf-fx .fx-p-day{color:var(--oi-accent)}
+.vf-fx .fx-p-dropped{opacity:.3}
+.vf-fx .fx-note{font:700 26px/32px var(--font-text);color:var(--oi-muted);--sw:4px;margin-top:8px;max-width:900px}
+.vf-sbs{width:960px;display:grid;grid-template-columns:1fr 1fr;gap:16px 40px;margin-top:34px}
+.vf-sbs .sbs-hd{font:800 28px/34px var(--font-text);color:var(--oi-accent);--sw:4px}
+.vf-sbs .sbs-nm{font:400 72px/74px var(--font-display);--sw:9px;white-space:nowrap}
+.vf-sbs .sbs-dy{font:800 36px/42px var(--font-text);color:var(--oi-accent);--sw:5px;min-height:42px}
+.vf-sbs .sbs-note{grid-column:1 / span 2;font:700 28px/36px var(--font-text);color:var(--oi-muted);--sw:4px;margin-top:10px}
+.vf-week{width:960px;display:grid;grid-template-columns:150px 1fr 1fr;gap:10px 24px;margin-top:30px;align-items:baseline}
+.vf-week .wk-hd{font:800 28px/34px var(--font-text);color:var(--oi-accent);--sw:4px}
+.vf-week .wk-sub{font:700 22px/28px var(--font-text);color:var(--oi-muted);--sw:4px;margin-top:-6px}
+.vf-week .wk-dn{font:800 30px/36px var(--font-text);color:var(--oi-muted);--sw:4px}
+.vf-week .wk-nm{font:800 38px/44px var(--font-text);color:var(--oi-text);--sw:5px;white-space:nowrap}
+.vf-week .wk-dw{font:700 24px/28px var(--font-text);color:var(--oi-muted);--sw:4px;display:block}
 .vf-pill{margin-top:30px;display:inline-block;font:800 34px/40px var(--font-text);letter-spacing:.04em;text-transform:uppercase;color:var(--oi-accent);--sw:4px;border:3px solid var(--oi-accent);border-radius:999px;padding:14px 40px;box-shadow:0 0 0 2px var(--oi-stroke),inset 0 0 0 2px var(--oi-stroke)}
 .vf-foot{position:absolute;left:60px;width:960px;bottom:134px;display:flex;flex-direction:column;gap:4px}
 .vf-key{display:flex;align-items:center;gap:14px;font:800 26px/32px var(--font-text);--sw:4px;margin-bottom:10px}
@@ -221,6 +247,10 @@ function buildParts(spec, view) {
     layer.append(t);
     parts.text.push(t);
     parts.slot = true;
+  } else if (src && spec.image.document) {
+    parts.doc = documentLayer(spec, pic);
+    parts.photo = parts.doc.sharp;
+    parts.scale = parts.doc.frame.scale;
   } else if (src) {
     const img = new Image();
     img.alt = "";
@@ -300,7 +330,14 @@ function buildParts(spec, view) {
     head.append(grid);
     parts.items = [...grid.children];
   }
+  if (spec.sbs) head.append(sideBySide(spec.sbs, parts));
+  if (spec.week) head.append(weekTable(spec.week, parts));
   layer.append(head);
+  if (spec.formula) {
+    parts.formula = formulaLayer(spec.formula);
+    layer.append(parts.formula.box);
+    parts.text.push(parts.formula.box);
+  }
   // 1.7.0: the quoted person, left on x 60, its bottom at y 1296.
   if (spec.attribution) {
     const who = el("div", "vf-attr");
@@ -350,6 +387,125 @@ function buildParts(spec, view) {
   layer.append(foot);
   parts.text.push(head, foot);
   return parts;
+}
+
+// 1.8.0: a page of text framed on its quoted passage (documentFrame, the
+// engine's own function). The page is drawn twice: blurred by 7 px over the
+// frame, and sharp under a mask opaque from 48 px above to 48 px below the
+// passage, fading over 90 px. Both zoom around (540, 1000). The underline
+// sits in the sharp layer, so it zooms with the page; two empty probes
+// report the passage and the sharp band as drawn, zoom included.
+function documentLayer(spec, pic) {
+  const image = spec.image, doc = image.document, f = documentFrame(image);
+  const stage = (blur) => {
+    const st = el("div", "vf-doc");
+    Object.assign(st.style, {
+      left: f.left + "px", top: f.top + "px", width: f.width + "px", height: f.height + "px",
+      transformOrigin: 540 - f.left + "px " + (1000 - f.top) + "px",
+    });
+    if (doc.pad) st.style.background = doc.padColor || "#ffffff";
+    if (blur) st.style.filter = "blur(" + blur + "px)";
+    const img = new Image();
+    img.alt = "";
+    img.decoding = "sync";
+    img.src = resolveAsset(image.src);
+    Object.assign(img.style, { left: "0px", top: f.pad + "px", width: image.w * f.scale + "px", height: image.h * f.scale + "px" });
+    st.append(img);
+    pic.append(st);
+    return st;
+  };
+  const blurred = stage(f.blur), sharp = stage(0);
+  const a = f.sharp[0] - f.top, b = f.sharp[1] - f.top;
+  sharp.style.webkitMaskImage = sharp.style.maskImage = "linear-gradient(to bottom, transparent " + (a - f.fade) + "px, #000 " + a + "px, #000 " + b + "px, transparent " + (b + f.fade) + "px)";
+  const probe = (y, h) => {
+    const p = el("div", "vf-probe");
+    Object.assign(p.style, { top: y + "px", height: h + "px" });
+    sharp.append(p);
+    return p;
+  };
+  const passage = probe(f.passage.y - f.top, f.passage.h);
+  Object.assign(passage.style, { left: f.passage.x - f.left + "px", width: f.passage.w + "px" });
+  const band = probe(a, b - a);
+  const marks = (doc.marks || []).map(([x, y, w, h]) => {
+    const m = el("div", "vf-mark");
+    Object.assign(m.style, { left: x * f.scale + "px", top: f.pad + (y + h) * f.scale + 5 + "px", width: w * f.scale + "px" });
+    sharp.append(m);
+    return m;
+  });
+  return { frame: f, blurred, sharp, marks, passage, band };
+}
+
+// 1.8.0: the name-making formula. Each step is a whole state, set in place
+// from the card's first frame; the engine fades one out as the next comes in.
+const accentWords = (t) => esc(fr(t)).replace(/\\*([^*]+)\\*/g, '<span class="fx-r">$1</span>');
+function formulaLayer(formula) {
+  const box = el("div", "vf-fx");
+  const steps = formula.steps.map((step) => {
+    const st = el("div", "vf-fx-step");
+    if (step.day) st.append(el("div", "fx-dayline oi", accentWords(step.day)));
+    for (const row of step.rows) {
+      if (row.label) st.append(el("div", "fx-lab oi", accentWords(row.label)));
+      const html = row.parts.map((p) => '<span class="' + (p.role === "op" ? "fx-op" : "fx-p-" + p.role) + '">' + accentWords(p.text) + "</span>").join("");
+      st.append(el("div", "fx-eq oi oi-l", html));
+    }
+    if (step.note) st.append(el("div", "fx-note oi", accentWords(step.note)));
+    box.append(st);
+    return st;
+  });
+  return { box, steps };
+}
+// A formula line takes the largest of 120, 104 and 88 px that holds in 960 px.
+const FORMULA_STEPS = [[120, 124, 64], [104, 108, 56], [88, 92, 48]];
+function setFormula(parts) {
+  for (const eq of parts.formula.box.querySelectorAll(".fx-eq")) {
+    for (const [size, line, op] of FORMULA_STEPS) {
+      eq.style.fontSize = size + "px";
+      eq.style.lineHeight = line + "px";
+      eq.querySelectorAll(".fx-op").forEach((o) => (o.style.fontSize = op + "px"));
+      eq.dataset.size = size;
+      if (inkBox(eq).w <= 960) break;
+    }
+  }
+}
+
+// 1.8.0: two columns of forms, rows entering with the voice, the days on
+// their word, the note under the rows.
+function sideBySide(sbs, parts) {
+  const grid = el("div", "vf-sbs");
+  for (const h of sbs.heads) grid.append(el("div", "sbs-hd oi", esc(fr(h))));
+  const rows = [], days = [];
+  for (const row of sbs.rows) {
+    rows.push(row.map((c) => {
+      const cell = el("div", "sbs-cell");
+      cell.append(el("div", "sbs-nm oi oi-l", esc(fr(c.name))));
+      const day = el("div", "sbs-dy oi", esc(fr(c.day)));
+      days.push(day);
+      cell.append(day);
+      grid.append(cell);
+      return cell;
+    }));
+  }
+  const note = sbs.note ? el("div", "sbs-note oi", esc(fr(sbs.note))) : null;
+  if (note) grid.append(note);
+  parts.sbs = { rows, days, note };
+  return grid;
+}
+
+// 1.8.0: the week table: seven days, two sides, the boy's and the girl's
+// names over the day's own word.
+function weekTable(week, parts) {
+  const grid = el("div", "vf-week");
+  for (const h of ["", ...week.heads]) grid.append(el("div", "wk-hd oi", esc(fr(h))));
+  for (const h of ["", "garçon · fille", "garçon · fille"]) grid.append(el("div", "wk-sub oi", esc(h)));
+  const rows = week.rows.map(([day, ...sides]) => {
+    const cells = [el("div", "wk-dn oi", esc(fr(day)))];
+    for (const [word, boy, girl] of sides)
+      cells.push(el("div", "wk-nm oi", esc(fr(boy)) + " · " + esc(fr(girl)) + '<span class="wk-dw oi">' + esc(fr(word)) + "</span>"));
+    grid.append(...cells);
+    return cells;
+  });
+  parts.week = { rows };
+  return grid;
 }
 
 // The photograph covers the frame: its focal point brought to (540, 1000),
@@ -463,6 +619,7 @@ function mapLayer(view) {
 // frames that do). Its areas and borders are projected from longitude and
 // latitude by the engine's own flat projection.
 ${flatProject.toString()}
+${documentFrame.toString()}
 const viewImagery = new Map();
 let imageryPaints = 0;
 const cameraKey = (c) => [c.lon, c.lat, c.radius, c.centreY].join(",");
@@ -599,6 +756,12 @@ window.setup = async ({ tokens, cards, logo, demo, maps }) => {
   const images = [...frame.querySelectorAll(".vf-pic img")];
   await Promise.all(images.map((i) => i.decode().catch(() => null)));
   const broken = images.filter((i) => !i.naturalWidth).map((i) => i.getAttribute("src"));
+  // 1.8.0: a document is framed from its card's image.w and h.
+  for (const parts of layers) {
+    const img = parts.doc && parts.doc.sharp.firstChild;
+    if (img && img.naturalWidth && (img.naturalWidth !== parts.spec.image.w || img.naturalHeight !== parts.spec.image.h))
+      broken.push(img.getAttribute("src") + " is " + img.naturalWidth + " × " + img.naturalHeight + ", not the card's " + parts.spec.image.w + " × " + parts.spec.image.h);
+  }
   const logoImg = new Image();
   logoImg.src = logoUrl;
   await logoImg.decode().catch(() => broken.push(logoUrl));
@@ -607,6 +770,7 @@ window.setup = async ({ tokens, cards, logo, demo, maps }) => {
     parts.layer.style.display = "block";
     if (parts.photo && parts.photo.naturalWidth) placeImage(parts);
     if (parts.date) setDate(parts);
+    if (parts.formula) setFormula(parts);
     parts.layer.style.display = "none";
   }
   const fonts = ["400 40px Anton", "800 40px 'Nunito Sans'", "600 40px Fraunces"].map((f) => document.fonts.check(f));
@@ -636,6 +800,7 @@ function frameBoxes(frame, state) {
   for (const l of state.layers) {
     const parts = layers[l.card];
     if (l.opacity > 0 && parts.scale) boxes.push({ id: parts.spec.id, kind: "image", ...rect(parts.photo), scale: +(parts.scale * l.zoom).toFixed(3) });
+    if (l.opacity > 0 && parts.doc) boxes.push({ id: parts.spec.id, kind: "document", passage: rect(parts.doc.passage), sharp: rect(parts.doc.band) });
     if (l.opacity > 0 && parts.view) {
       // The subject and the names zoom with the map around (540, 1010).
       const s = parts.view.subject, z = l.zoom, cy = parts.view.camera.centreY;
@@ -654,10 +819,18 @@ function frameBoxes(frame, state) {
     const layer = parts.layer;
     layer.querySelectorAll(".vf-head > *").forEach((n) => {
       // 1.7.0: readings and figures flow below the head, down to y 1290.
-      if (n.matches(".vf-list, .vf-figs")) return [...n.children].forEach((c) => add(c, "items", { card: l.card }));
+      if (n.matches(".vf-list, .vf-figs, .vf-week")) return [...n.children].forEach((c) => add(c, "items", { card: l.card }));
+      // 1.8.0: side by side; its note holds on two lines.
+      if (n.matches(".vf-sbs")) return [...n.children].forEach((c) => add(c, "items", { card: l.card, ...(c === parts.sbs.note && { lines: Math.round(c.getBoundingClientRect().height / 36), maxLines: 2 }) }));
       add(n, n.dataset.kind || "head", { card: l.card, ...(n === parts.date && { date: { size: parts.dateSize, lines: parts.dateLines } }) });
     });
     layer.querySelectorAll(".vf-attr > *").forEach((n) => add(n, "attribution", { card: l.card }));
+    // 1.8.0: the formula's lines of every step on screen.
+    if (parts.formula)
+      parts.formula.steps.forEach((st, k) => {
+        if (!(l.steps ? l.steps[k] > 0 : k === parts.formula.steps.length - 1)) return;
+        [...st.children].forEach((n) => add(n, "formula", { card: l.card, ...(n.dataset.size && { size: +n.dataset.size }) }));
+      });
     layer.querySelectorAll(".vf-close > *").forEach((n) => {
       if (n.classList.contains("vf-pill")) boxes.push({ id: "pill", kind: "pill", ...rect(n) });
       else add(n, "ending");
@@ -680,7 +853,7 @@ function frameBoxes(frame, state) {
 // Anything that paints a background over the image, besides the lit word,
 // the « image à trouver » slot, a map's place dots and the demo tape.
 function backgrounds(frame) {
-  const allowed = (n) => n.closest(".lit, .vf-slot, .vf-demo, .vf-key, .sm-dot") || n.classList.contains("vf-pic");
+  const allowed = (n) => n.closest(".lit, .vf-slot, .vf-demo, .vf-key, .sm-dot, .vf-doc") || n.classList.contains("vf-pic");
   return [...frame.querySelectorAll("*")]
     .filter((n) => n.getClientRects().length && !allowed(n))
     .filter((n) => {
@@ -747,6 +920,18 @@ window.drawFrame = (state) => {
     // card's own text fade.
     if (parts.items) parts.items.forEach((n, k) => (n.style.opacity = l.items ? l.items[k] : 1));
     if (parts.attribution) parts.attribution.style.opacity = l.text * (l.attribution ?? 1);
+    // 1.8.0: the underline, the formula's steps, the rows and the days.
+    if (parts.doc) {
+      parts.doc.marks.forEach((m) => (m.style.opacity = l.mark ?? 1));
+      parts.doc.blurred.style.transform = "scale(" + l.zoom + ")";
+    }
+    if (parts.formula) parts.formula.steps.forEach((st, k) => (st.style.opacity = l.steps ? l.steps[k] : k === parts.formula.steps.length - 1 ? 1 : 0));
+    if (parts.sbs) {
+      parts.sbs.rows.forEach((cells, k) => cells.forEach((c) => (c.style.opacity = l.rows ? l.rows[k] : 1)));
+      parts.sbs.days.forEach((d) => (d.style.opacity = l.days ?? 1));
+      if (parts.sbs.note) parts.sbs.note.style.opacity = l.note ?? 1;
+    }
+    if (parts.week) parts.week.rows.forEach((cells, k) => cells.forEach((c) => (c.style.opacity = l.rows ? l.rows[k] : 1)));
     if (parts.photo) {
       if (parts.view) parts.photo.style.transformOrigin = "540px " + parts.view.camera.centreY + "px";
       parts.photo.style.transform = "scale(" + l.zoom + ")";
@@ -765,6 +950,15 @@ window.drawFrame = (state) => {
   });
   for (const [r, l] of hosts)
     maps.push({ id: layers[l.card].spec.id, run: r, camera: l.map.camera, moving: l.map.moving, spanKm: (1080 / l.map.camera.radius) * 6371 });
+  const accent = getComputedStyle(frame.querySelector(".vf-band .vf-ep")).color;
+  const documents = state.layers.filter((l) => layers[l.card].doc && l.opacity > 0).map((l) => {
+    const d = layers[l.card].doc;
+    return {
+      id: layers[l.card].spec.id, blur: getComputedStyle(d.blurred).filter, scale: d.frame.scale, zoom: l.zoom, edge: d.frame.edge,
+      page: rect(d.sharp), passage: rect(d.passage), sharp: rect(d.band), accent,
+      marks: d.marks.map((m) => ({ ...rect(m), opacity: +getComputedStyle(m).opacity, color: getComputedStyle(m).backgroundColor })),
+    };
+  });
   const pictures = state.layers.filter((l) => l.opacity > 0).map((l) => ({ id: layers[l.card].spec.id, ...rect(layers[l.card].pic.firstElementChild || layers[l.card].pic) }));
   return {
     boxes: frameBoxes(frame, state),
@@ -773,6 +967,7 @@ window.drawFrame = (state) => {
     maps,
     pictures,
     backgrounds: backgrounds(frame),
+    documents,
     imageryPaints: imageryPaints - paintsBefore,
     // 1.7.0: a hyphenated word drawn over two lines.
     hyphenBreaks: [...frame.querySelectorAll(".vf-nowrap")].filter((n) => n.getClientRects().length > 1).map((n) => n.textContent),

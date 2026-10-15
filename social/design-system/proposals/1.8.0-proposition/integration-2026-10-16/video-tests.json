@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-16",
+  "design": "EthniAfrica Cartes 1.8.0-proposition",
+  "browser": "pinned Chromium 153.0.8010.12 (social/renderer/runtime.json)",
+  "runs": {
+    "test:social-video": "228 pass, 0 fail (207 before; 21 new in series-documents.test.mjs and series-documents.render.test.mjs, failing first)",
+    "test:social-video-acceptance (ETHNIAFRICA_VIDEO_ASSETS on the verified imagery)": "264 pass, 0 fail, 2 skipped (evidence writers)",
+    "test:social-renderer": "29 pass, 0 fail",
+    "test:social-series-proposal": "8 pass, 0 fail",
+    "fidelity, 89 sample cards": "89 of 89 against design-system-1.6.0-accepted; byte-identical with 1.7.0, alternative texts included",
+    "make check": "passed",
+    "gates": "check:editorial, lint:req, check:copy-literals, check:local-paths, check:infra-disclosure, check:orphan-docs, check:dead: passed"
+  },
+  "unchanged": {
+    "what": "Every frame of the three repository demonstrations (series-long, the 1.7.0 long video; series-pays, the 1.4.0 series 1; series-touareg, the 1.5.0 map sequence on the verified imagery), rendered by the recette engine and by the 1.8.0 engine, compared by SHA-256.",
+    "frames": {
+      "series-long": 4024,
+      "series-pays": 1357,
+      "series-touareg": 1234
+    },
+    "differing": 0,
+    "note": "The « Afrique » proof sequence of the 1.7.0 acceptance was not kept, so the repository's own 1.7.0 demonstration stands in for it."
+  },
+  "tribu": {
+    "what": "The four scans of tools/cards180.json on the episode's own page files, framed by the integrated engine, beside the full-frame boards at 430 px (planches-et-moteur-430.jpg, top row). Synthetic silent voice, demonstration subtitles.",
+    "framing": [
+      {
+        "card": "doc-hanoteau",
+        "scale": 0.384,
+        "edge": 277,
+        "passage": "x 60 to 1020, y 848 to 1152",
+        "check1": "accepted"
+      },
+      {
+        "card": "doc-academie",
+        "scale": 1.412,
+        "edge": 0,
+        "passage": "x 60 to 1020, y 912 to 1088",
+        "check1": "accepted"
+      },
+      {
+        "card": "doc-code",
+        "scale": 0.527,
+        "edge": 0,
+        "passage": "x 68 to 1028, y 876 to 1124",
+        "check1": "refused: x past 1020 by 8 px"
+      },
+      {
+        "card": "doc-lugard",
+        "scale": 0.833,
+        "edge": 400,
+        "passage": "x 57 to 1023, y 1104 to 1213",
+        "check1": "refused: x outside 60 to 1020 by 3 and 3 px"
+      },
+      {
+        "card": "doc-camer (board simulation)",
+        "scale": 1,
+        "edge": 0,
+        "passage": "x 30 to 1050, y 875 to 1125",
+        "check1": "refused: x outside 60 to 1020 by 30 px"
+      }
+    ],
+    "frames": [
+      { "board": "doc-hanoteau.jpg", "frame": 398, "problems": [] },
+      { "board": "doc-academie.jpg", "frame": 614, "problems": [] },
+      {
+        "board": "doc-code.jpg",
+        "frame": 830,
+        "problems": [],
+        "note": "drawn with check 1's x range lifted in a scratch copy"
+      },
+      {
+        "board": "doc-lugard.jpg",
+        "frame": 1046,
+        "problems": [],
+        "note": "drawn with check 1's x range lifted in a scratch copy"
+      }
+    ],
+    "camer": "Not drawn: the new Camer.be capture for the video (a margin above the article, no reader counter) is not made yet; the board's simulation is not production material.",
+    "differences": "Only the subtitles and the chapter kicker: the engine's subtitles are demonstration text and the acceptance video has no chapters. The framing numbers equal Claude Design's frames-report.json."
+  },
+  "kouassi-yao": {
+    "what": "The Friday formula (five steps), the Monday formula, side by side and the week table on the episode's photographs, beside the boards at 430 px (bottom row).",
+    "frames": [
+      { "board": "fx-5.jpg", "frame": 650, "problems": [] },
+      { "board": "fx-lundi.jpg", "frame": 920, "problems": [] },
+      { "board": "sbs-apres.jpg", "frame": 1256, "problems": [] },
+      { "board": "week.jpg", "frame": 1616, "problems": [] }
+    ],
+    "differences": "Only the subtitles and the chapter kicker."
+  }
+}
