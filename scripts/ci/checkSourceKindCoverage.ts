@@ -39,9 +39,11 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * folded or withdrawn that day. 1009 -> 1008 the same day: the untyped
  * citation of PPL_NABT left with it, folded into PPL_NABDAM. 1008 -> 1006 the
  * same day: the two Gur citations of Koelle's Polyglotta Africana now point
- * to the scan and are typed.
+ * to the scan and are typed. 1006 -> 1003 on 2026-10-15: three untyped
+ * citations left PPL_TUAREG with the Touareg name-history corrections, and
+ * the sources added to it carry a source_kind.
  */
-export const UNTYPED_SOURCE_RATCHET = 1006;
+export const UNTYPED_SOURCE_RATCHET = 1003;
 
 export interface UntypedSource {
   file: string;
