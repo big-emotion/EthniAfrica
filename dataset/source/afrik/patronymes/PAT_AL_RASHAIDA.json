@@ -99,5 +99,163 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "La nisba ne détermine pas à elle seule l'unité sociale désignée : nous ne la documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom al-Rashaida est celui d'un groupe de nomades éleveurs de chameaux de l'est du Soudan, que la fiche range parmi les noms d'appartenance (nisba). MacMichael l'écrit Rashaida en 1922 et y voit un pluriel de Rashid. Les sources lues ne disent pas que ce nom soit porté comme nom de famille ; nous présentons plus bas ce qu'elles disent du groupe et du nom.",
+    "names": [
+      {
+        "nameText": "al-Rashaida",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Nom d'un groupe de nomades éleveurs de chameaux de l'est du Soudan.",
+        "periodLabel": "Écrit Rashaida en 1922",
+        "accounts": [
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom al-Rashaida apparaît par écrit sous la forme Rashaida chez MacMichael, qui consacre un chapitre aux « Rashaida et Zebaydia ». Il y décrit des nomades éleveurs de chameaux, qu'il compte peut-être entre 1 000 et 2 000 hommes dans les provinces de la mer Rouge et de Berber. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand il est porté.",
+            "formAsWritten": "Rashaida",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 345",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée vérifiée sur l'image de la page. Page 345 : chapitre 13, « The Rashaida and Zebaydia », premier paragraphe et note sur leurs sections dans les provinces de Berber et de la mer Rouge."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Rapporté en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom al-Rashaida est celui de gens qui, selon MacMichael, sont des immigrés récents venus d'Arabie. Une partie d'entre eux traverse la mer Rouge en 1846 et s'installe entre Tokar et la frontière de l'Érythrée, et certains poussent plus à l'ouest pour faire paître leurs bêtes sur l'Atbara, dans la province de Berber. D'autres Rashaida venus du Hedjaz les ont rejoints depuis, et d'autres vivent en Érythrée.",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 345",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée vérifiée sur l'image de la page. Page 345 : la traversée de 1846, l'installation entre Tokar et la frontière de l'Érythrée, puis les arrivées venues du Hedjaz."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Expliqué en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom al-Rashaida désigne un groupe de nomades éleveurs de chameaux de l'est du Soudan. On ne sait pas avec certitude d'où vient ce nom ; les sources lues ne donnent que les explications de MacMichael, présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 345",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée vérifiée sur l'image de la page. Page 345 : description du groupe comme nomades éleveurs de chameaux."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Proposé en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Rashaida ne serait, selon MacMichael, qu'un pluriel de Rashid et l'équivalent exact de « Beni Rashid ». Il note que les Beni Rashid de l'ouest sont souvent appelés Rowashda, et que les trois noms sont identiques.",
+            "hypothesisGroup": "origine du nom al-Rashaida",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 297",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée relevée sur l'en-tête de page du texte numérisé ; signes de transcription omis dans les formes citées. Page 297 : « The word Rashaida is simply a variant plural of Rashid and, like Rowashda, is the exact equivalent of Beni Rashid ». Page 345 : l'identité des trois noms rappelée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Proposé en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Rashaida rattacherait ce groupe, selon MacMichael, aux Beni Rashid du Ouadaï et du Bornou. Il juge clair que l'arrivée de Rashaida et de Zebaydia dans l'est du Soudan a eu un précédent il y a plusieurs siècles, quand les ancêtres des Beni Rashid et des Ziud ont traversé la mer Rouge puis poussé par le Kordofan et le Darfour ; il note que ces derniers vivent depuis des siècles dans l'ouest, alors que les Rashaida de l'est sont des immigrés récents.",
+            "hypothesisGroup": "origine du nom al-Rashaida",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 297, 346",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée relevée sur l'en-tête de page du texte numérisé ; signes de transcription omis dans les formes citées. Page 346 : « the influx of Rashaida and Zebaydia to the Eastern Sudan is not confined to modern times » ; page 297 : le contraste entre les Beni Rashid de l'ouest et les Rashaida de l'est."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Rashaida",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Rapporté en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Rashaida est la forme sans l'article al- de al-Rashaida, et c'est celle que MacMichael emploie en 1922. Il écrit aussi Rowashda et Beni Rashid, qu'il tient pour des équivalents.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 297, 345",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée relevée sur l'en-tête de page du texte numérisé ; signes de transcription omis dans les formes citées. Pages 345 et 297 : les formes Rashaida, Rowashda et Beni Rashid."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

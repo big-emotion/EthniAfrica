@@ -11,19 +11,28 @@
     {
       "spelling": "al-Danagla",
       "attestations": [
-        { "countryId": "SDN", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "SDN",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     },
     {
       "spelling": "Danagla",
       "attestations": [
-        { "countryId": "SDN", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "SDN",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     },
     {
       "spelling": "Danágla",
       "attestations": [
-        { "countryId": "SDN", "sourceRefs": ["jaeger-2024-danagla"] }
+        {
+          "countryId": "SDN",
+          "sourceRefs": ["jaeger-2024-danagla"]
+        }
       ]
     }
   ],
@@ -109,5 +118,218 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "La source établit une désignation ethnolinguistique, catégorie absente de l'énumération designatedSocialUnit, mais aucune unité patronymique plus précise (lignage, clan ou établissement) ; la valeur reste donc other."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom al-Danagla désigne les habitants de Dongola, au nord du Soudan : c'est une désignation de groupe, que la fiche range parmi les noms d'appartenance (nisba). MacMichael l'écrit Danágla en 1922. Nous n'avons lu aucune source qui le donne comme nom de famille ; nous présentons plus bas ce que MacMichael et un linguiste de 2024 en disent.",
+    "names": [
+      {
+        "nameText": "al-Danagla",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Désignation des habitants de Dongola, dans le nord du Soudan.",
+        "periodLabel": "Écrit Danágla en 1922 ; employé en 2024",
+        "accounts": [
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom al-Danagla apparaît par écrit sous la forme Danágla chez MacMichael. Il note que les habitants de la Nubie sont connus au nord sous le nom de Barabra et au sud sous celui de Danágla, c'est-à-dire « habitants de Dongola », et que les Danágla ne vont vers le nord que jusqu'au voisinage de l'île d'Arko et n'admettent pas être des Barabra. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand il est employé.",
+            "formAsWritten": "Danágla",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 13",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée vérifiée sur l'image de la page. Page 13 : « are commonly known to the north as Barabra... and to the south as Danagla, i.e. inhabitants of Dongola » et la note 2."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Expliqué en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom al-Danagla désigne les habitants de Dongola, selon MacMichael. Il s'agit d'une désignation de lieu et de groupe : les sources lues ne le donnent pas comme un nom de famille.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 13, 198",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée vérifiée sur l'image de la page. Page 13 : « Danagla, i.e. inhabitants of Dongola ». Page 198 : « the only denomination under which they can all be classed... is that of Danagla, inhabitants, that is, of Dongola »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Proposé en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Danagla viendrait de Dongolawi, dont il est le pluriel, selon MacMichael, qui ajoute que la forme plus juste serait Danákla. Dongolawi est lui-même tiré de Dongola.",
+            "hypothesisGroup": "origine du nom Danagla",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 13",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée vérifiée sur l'image de la page. Page 13, note 2 : « Danagla, or more correctly Danakla is the plural of Dongolawi or Donkolawi »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Proposé en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Danákla serait probablement lié à Danakil, selon MacMichael, qui renvoie pour cela à un ouvrage de Johnston ; Danakil est le nom de groupes de la côte nord de la Somalie.",
+            "hypothesisGroup": "origine du nom Danagla",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 13",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée vérifiée sur l'image de la page. Page 13, note 2 : « There is probably a connection between Danakla and the Danakil of the northern Somali coast »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Rapporté en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Danagla est, selon MacMichael, le seul sous lequel on puisse ranger avec exactitude le groupe des Gawabra et des Bedayria. Il doute qu'on les ait jamais appelés Ga'aliin avant que le généalogiste el Samarkandi ne les dise descendants d'el Abbas.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 198",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée vérifiée sur l'image de la page. Page 198 : « it is doubtful whether they were ever called Ga'aliin until el Samarkandi asserted that they were descended from el 'Abbas »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Rapporté en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Danagla est refusé par certains habitants de Dongola, selon MacMichael : les Rikabia, qui se tiennent pour des Shurafa, n'aiment pas qu'on le leur applique, car il suggère qu'ils sont de simples Nubiens.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 198",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée vérifiée sur l'image de la page. Page 198, note 5 : « All inhabitants of Dongola do not, however, care to be called Danagla. The Rikabia... resent the application of the name »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Danagla",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Rapporté en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Danagla est la forme sans l'article al- et sans accent de al-Danagla. MacMichael l'écrit avec un accent, Danágla, et dit que la forme plus juste serait Danákla.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 13",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée vérifiée sur l'image de la page. Page 13 : la forme Danágla et la note 2 sur Danákla."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Danágla",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "Employé en 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Danágla est employé en 2024 par le linguiste Marcus Jaeger, dans l'expression « Dongolawi/Danágla Nubians », pour nommer les Nubiens installés le long du Nil du côté de Dongola. Jaeger précise que Dongolawi est un nom donné de l'extérieur : leur langue s'appelle andaandi et, dans cette langue, ils n'ont pas de nom propre pour leur groupe ; en arabe, ils se disent dungulanderi (« je suis de Dongola ») ou, plus récemment, dungulawi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Wise Sayings and Proverbs among Andaandi and Mattokki speaking Nubians",
+                "author": "Marcus Jaeger",
+                "year": 2024,
+                "url": "https://kups.ub.uni-koeln.de/74842/1/AM%20Proverbs%20publication%20A5%20Glossar%20italics.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18-19",
+                "notes": "Thèse de doctorat, Universität zu Köln, 2024. Lue le 16 octobre 2026 dans le fichier public de l'université. Dans l'introduction, la section sur les langues et les groupes écrit « Dongolawi/Danágla Nubians » ; elle dit que Dongolawi est un exonyme, qu'en langue andaandi ces personnes n'ont pas de nom propre pour leur groupe, et qu'en arabe elles se disent dungulanderi (« je suis de Dongola ») ou, plus récemment, dungulawi. Le texte ne dit pas d'où vient la forme Danágla."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

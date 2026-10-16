@@ -107,5 +107,186 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les recherches « al-Kabbashi lignée », « al-Kabbashi clan », « al-Kabbashi tribe » et « al-Kabbashi place name » n’ont pas permis de déterminer si cette graphie désigne une lignée, un clan, une caste, une classe d’âge ou un établissement dans le contexte précis de la fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom al-Kabbashi est un nom d'appartenance (nisba) : MacMichael le donne en 1922 comme le singulier de Kababish, nom d'un grand groupe de nomades éleveurs de chameaux du nord du Kordofan. Les sources lues n'attestent pas ce nom comme nom de famille. MacMichael l'explique par le mot kabsh, « bélier » ; une généalogie populaire propose un ancêtre nommé Kabsh. Nous présentons les deux plus bas.",
+    "names": [
+      {
+        "nameText": "al-Kabbashi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Nom d'une personne du groupe des Kababish, nomades du nord du Kordofan.",
+        "periodLabel": "Écrit Kabbashi en 1922",
+        "accounts": [
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom al-Kabbashi apparaît par écrit sous la forme Kabbashi chez MacMichael, qui le donne comme le singulier de Kababish. Il décrit les Kababish comme le plus grand et le plus riche groupe de nomades éleveurs de chameaux du pays, réunis sous l'autorité d'un chef suprême, mais formés en réalité d'éléments arabes d'origines diverses, ajoutés au fil de plusieurs siècles. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand il est porté.",
+            "formAsWritten": "Kabbashi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 307-308",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée vérifiée sur l'image de la page. Page 307 : chapitre 4, section « (a) The Kababish », description du groupe et de sa composition. Page 308 : « The name of Kababish (sing. Kabbashi) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Expliqué en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom al-Kabbashi désigne une personne du groupe des Kababish, qui vivent surtout dans le nord du Kordofan, avec une section importante dans la province de Dongola. On ne sait pas avec certitude d'où vient le nom ; deux explications sont présentées plus bas, et MacMichael écrit qu'on ne sait pas à quelle époque le nom a été adopté.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 307-308",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée vérifiée sur l'image de la page. Page 307 : le pays des Kababish et leur section de la province de Dongola. Page 308 : « At what period the name was adopted there is no evidence »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Rapporté en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kababish viendrait d'un ancêtre nommé Kabsh, selon la généalogie populaire que rapporte MacMichael ; cet ancêtre y apparaît d'ordinaire comme « fils d'Afzar », lui-même descendant d'Abdulla el Guhani. MacMichael le juge purement fictif et y voit une manière de rattacher les Kababish aux Fezara et aux Guhayna.",
+            "hypothesisGroup": "origine du nom Kababish",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 308",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée vérifiée sur l'image de la page. Page 308 : « popularly derived... from a purely fictitious ancestor called Kabsh » et note 2."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Proposé en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kababish viendrait plutôt du mot kabsh, « bélier », selon MacMichael, qui compare avec Ma'aza, tiré de ma'az (« boucs »), et 'Anaza, tiré de anz (« chèvres »). Il note aussi que les Kababish emploient le mot takabbasha pour dire la réunion de leurs parties en un seul ensemble.",
+            "hypothesisGroup": "origine du nom Kababish",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 308",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée vérifiée sur l'image de la page. Page 308 : « more properly to be connected with the word kabsh, a ram », notes 3 et 4."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Proposé en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kababish est celui d'un ensemble qui, selon MacMichael, vient à l'origine du nord du Hedjaz : il le conclut des noms de certaines de ses sections et du peu qu'on sait de leur histoire. Cette idée porte sur le groupe, non sur le nom.",
+            "hypothesisGroup": "origine du groupe Kababish, et non du nom",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 308",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée vérifiée sur l'image de la page. Page 308 : « they came originally from the northern portion of the Hegaz »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Rapporté en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kabbashi est celui d'une personne qui, selon MacMichael, ne se dirait jamais Guhani. Elle ne dirait qu'elle appartient aux Guhayna que si on lui demandait de quelle souche son groupe est issu.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 237",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée relevée sur l'en-tête de page du texte numérisé ; signes de transcription omis dans les formes citées. Page 237 : « a Rufa'i, a Kabbashi, or one of the Bakkara would never think of saying Guhani »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kabbashi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Rapporté en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kabbashi est la forme sans l'article al- de al-Kabbashi, et c'est celle que MacMichael emploie pour le singulier. Il écrit Kababish le pluriel.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 308",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée vérifiée sur l'image de la page. Page 308 : « Kababish (sing. Kabbashi) »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
