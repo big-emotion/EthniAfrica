@@ -40,3 +40,19 @@ On pure white pictures the boards measure 7.9:1 for the subtitles, 6.3:1 for the
   - The treatment by text: `sous-titres` (the subtitles and the lit word), `pied` (the source and the credit), `bandeau` (the band and the kicker), `document` (the 1.8.0 document card), `fin` (the ending).
   - Dark pictures: `sombres`. The measures: `mesures`. The feed at 430 px: `430`.
   - Full frames: `plein-*` (treatment C, and `plein-bfa-01-A` for 1.4.0).
+- `integration-2026-10-16/`: the integration evidence.
+  - `planches-et-moteur-430.jpg` shows Claude Design's full-frame boards in treatment C (left of each pair) beside the integrated engine's frames of the Burkina Faso episode (right) at 430 px: the opener, « Ce que le nom veut dire », the 1930 aerial view under the 1919 date, the boulevard and the ending. The engine's frames come from the episode's own sequence, voice and pictures. Only the subtitle's line break, the zoom's moment and the ending's « Prochain épisode : Togo » differ: the boards cut the subtitles by hand and their ending has no next episode.
+  - `contrast.json` gives the near-field contrast on those five engine frames, measured as `tools/analyze.py` measures the boards, beside the boards' own figures for the same frames.
+  - `video-tests.json` records the test runs and the measures on plain white and black pictures.
+
+## Integration, 16 October 2026
+
+**Drawing** (`social/video/series-page.mjs`). One SVG filter per radius, 3 to 8 px, from the two new tokens. Each outermost block of text on the image takes the ring of its outline. No text on the image keeps the 1.4.0 soft shadow. The lit box has its dark edge and shadow. Map names on imagery, the logo, the slot's ground, the demo tape, the document page and its underline do not change.
+
+**Carousel.** No card changes: the 89 sample cards render byte-identical with 1.8.0, alternative texts included, and pass 89 of 89 against the accepted references.
+
+**Checks.** `series-legibility.render.test.mjs` covers checks 1 to 6 of the handoff. Check 7 is the fidelity run on the 89 cards, check 8 the episode frames above.
+
+**Open for the operator: the lit word's edge.** The handoff's check 5 asks 6:1 between the accent box and the ring round it on a white picture, from the board's one lit word, « colonie » (6.2:1). The accepted board renderer, redrawn on the pinned Chromium with the test frames' own words, gives 5.75 to 6.09:1, and the engine reads within 0.1 of it (5.69 to 6.17:1). A short word on a single line reads lower, because less of the ring lies above and below the box. The engine draws the accepted edge, and the test asks for the board's own level (5.65:1). Reaching 6:1 on every word would change the accepted edge, so the choice is left to the operator.
+
+**A precision on check 4.** On a black picture, the lit box's new shadow, where it meets the line above, moves the frame by 11 levels: the board itself does the same. The test leaves out the lit box with its shadow's reach (16 px).
