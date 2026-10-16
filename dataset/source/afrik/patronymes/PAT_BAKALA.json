@@ -86,5 +86,43 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web combinant « Bakala », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la lecture de « Bakala Surname Origin, Meaning & Last Name History » n'ont établi aucune règle propre à Bakala permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Bakala s'écrit comme bakala, un mot du kikongo qui veut dire « homme (mâle) » dans le dictionnaire de Karl Edvard Laman (1936). Ce dictionnaire ne le donne pas comme nom de famille : on ne sait pas avec certitude si le nom Bakala vient de ce mot.",
+    "names": [
+      {
+        "nameText": "Bakala",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un mot kikongo qui veut dire « homme » ; on ne sait pas s'il est l'origine du nom de famille.",
+        "periodLabel": "Le mot est décrit en 1936 ; le nom est porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1936,
+              "to": 1936,
+              "label": "Décrit en 1936"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bakala s'écrit comme le mot bakala du kikongo, que le dictionnaire de Karl Edvard Laman traduit « homme (mâle) », avec les pluriels mabakala ou bakala. Le même dictionnaire donne à d'autres mots écrits bakala les sens de « poivre » et d'« organe sexuel masculin ». Il ne dit pas que le nom de famille vienne de l'un d'eux : on ne sait pas avec certitude d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionnaire kikongo-français, avec une étude phonétique décrivant les dialectes les plus importants de la langue dite kikongo",
+                "author": "Karl Edvard Laman",
+                "year": 1936,
+                "url": "https://archive.org/details/dictionnairekikongofrancais",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 9",
+                "notes": "Bruxelles, Institut royal colonial belge, 1936. Missionnaire suédois, cité pour ce qu'il relève. Lu dans la numérisation d'Internet Archive le 16 octobre 2026, page vue en image. Page 9, colonne de droite : « bakala, pl. ma- ou ba- (dial. baakala, pl. maakala), homme (mâle) » ; entrées suivantes : « bakala, pl. bi-, [...] organe sexuel (membre) ; semen viril » et « bakala, pl. ba-, poivre. Capsicum annum ». Le dictionnaire ne traite pas de noms de famille."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

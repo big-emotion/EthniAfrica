@@ -11,7 +11,10 @@
     {
       "spelling": "Bangoura",
       "attestations": [
-        { "countryId": "GIN", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["afrik-candidate-queue", "arcin-1907-guinee-francaise"]
+        }
       ]
     }
   ],
@@ -20,24 +23,38 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [
+      {
+        "claim": "Selon André Arcin (1907), le nom Bangoura « peut vouloir dire : les fils de la terre ou de la lance ». Il le note en bas de page, sans donner de raison, et ajoute seulement qu'un roi de la dynastie songhay des Askia portait le diamou de Bangoura.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["arcin-1907-guinee-francaise"]
+      },
+      {
+        "claim": "Selon André Arcin (1907), « Bangoura » serait le nom que les Soso se donnent, et « Sisokho » le nom que des étrangers auraient donné à la même famille. Il juge cela « admissible » et le dit suggéré par de nombreux exemples semblables.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["arcin-1907-guinee-francaise"]
+      }
+    ]
   },
   "peoples": [
     {
       "peopleId": "PPL_SOUSSOU",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "arcin-1907-guinee-francaise"]
     }
   ],
   "countries": [
     {
       "countryId": "GIN",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "arcin-1907-guinee-francaise"]
     }
   ],
   "alliances": [],
-  "casteOrSocialFunction": null,
+  "casteOrSocialFunction": {
+    "value": "Selon André Arcin (1907), les Bangoura se trouvent chez les Soso, surtout au Kaloum et au Soumboya, où ils sont chefs secondaires, et au Kabitaye, où ils forment la famille royale. Cette fonction est décrite en 1907 : elle ne dit pas ce que le nom recouvre aujourd'hui.",
+    "sourceRefs": ["arcin-1907-guinee-francaise"]
+  },
   "bearers": [],
   "homonyms": [],
   "sources": [
@@ -48,19 +65,27 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "arcin-1907-guinee-francaise",
+      "title": "La Guinée française : races, religions, coutumes, production, commerce",
+      "url": "https://archive.org/details/laguinefrana00arci",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "André Arcin, administrateur colonial, Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026. Texte d'un témoin colonial, cité pour ce qu'il écrit des familles et de leurs n'téné, et non comme dernier mot sur leur histoire."
+    },
+    {
+      "sourceKey": "bamadaba-jamuw",
+      "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+      "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 16 octobre 2026."
     }
   ],
   "gaps": [
     {
-      "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
       "fieldPath": "alliances",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
-      "fieldPath": "casteOrSocialFunction",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
@@ -75,5 +100,178 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Bangoura est un nom de clan soussou de Guinée, celui d'une famille de chefs du Kaloum, du Soumboya et du Kabitaye. On ne sait pas avec certitude d'où il vient ; nous présentons plus bas les deux explications relevées en 1907.",
+    "names": [
+      {
+        "nameText": "Bangoura",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan soussou de Guinée, écrit dès 1907 ; son origine reste discutée.",
+        "periodLabel": "Écrit dès 1907 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bangoura désigne un clan soussou de Guinée. Le dictionnaire des noms de clan mandingues l'écrit Bàngura, le relève en malinké et en soussou et n'en donne pas le sens. On ne sait pas avec certitude d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 16 octobre 2026. Entrée Bàngura : parlers malinké (m) et soussou (sou) ; aucun sens donné. Le dictionnaire écrit Bàngura et non Bangoura."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bangoura apparaît par écrit chez André Arcin, administrateur colonial, en 1907 : il le range parmi les principales tribus soso et dialonké, avec le léopard pour n'téné, c'est-à-dire pour emblème de la famille. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un document l'a écrit, pas depuis quand le nom est porté.",
+            "formAsWritten": "Bangoura",
+            "birth": true,
+            "actors": [
+              {
+                "name": "André Arcin",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 281",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026, au numéro de page imprimé. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 281, liste des principales tribus soso et dialonké : « Les Bangoura n'téné : le léopard ; proches parents des Sissokho »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Décrit en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bangoura est porté, selon André Arcin, par des familles soso du Kaloum et du Soumboya, où elles sont chefs secondaires, et du Kabitaye, où elles forment la famille royale ; on les trouve aussi dans des villages côtiers, comme Bakoro, sur le Rio Pongo.",
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 303",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026, au numéro de page imprimé. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 303 : « Les Bangoura ne se rencontrent que chez les Soso surtout dans le Kaloum, le Soumboya, où ils sont chefs secondaires, dans le Kabitaye où ils forment la famille royale. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Décrit en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bangoura est celui de familles que les Souma auraient dépossédées du pouvoir au Dubréka, où elles vivaient mêlées aux Baga, selon André Arcin.",
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 299",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026, au numéro de page imprimé. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 299, à propos des Souma : « Le premier État fondé par eux du côté de la mer fut le Dubréka […], où ils dépossédèrent les Bangoura mêlés aux Baga »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Décrit en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bangoura est celui d'une famille qu'André Arcin dit proche parente des Sissokho ; il écrit aussi que les Kamara dialonké sont « parents des Bangoura ».",
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 281, 303",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026, au numéro de page imprimé. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 281 : « proches parents des Sissokho ». Page 303 : « Les Kamara Dialonké, parents des Bangoura, seraient venus de deux côtés. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Proposé en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bangoura serait le nom que les Soso se donnent, tandis que Sisokho serait le nom que des étrangers auraient donné à cette même famille, selon André Arcin, qui juge cette explication « admissible ».",
+            "hypothesisGroup": "origine du nom Bangoura",
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 282",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026, au numéro de page imprimé. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 282 : « il est donc admissible […] que « Bangoura » est le nom Soso, tandis que le mot « Sisokho » a été donné par des étrangers à cette famille Soso ». Il s'appuie sur un mot entendu d'un Peul du Sénégal (« Sosokho, presque Sousoukho », chef soso en soninké) et d'un Khasonké."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Proposé en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bangoura pourrait vouloir dire « les fils de la terre ou de la lance », selon André Arcin, qui le note sans en donner la raison.",
+            "hypothesisGroup": "origine du nom Bangoura",
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 303",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026, au numéro de page imprimé. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 303, note 1 : « Ce nom peut vouloir dire : les fils de la terre ou de la lance. »"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -76,5 +76,137 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Lima à un peuple à São Tomé-et-Príncipe. Nous n'avons pas encore consulté de source consacrée à ce nom. La fiche sur les Forros cite trois noms d'origine portugaise : Trovoada, Espírito Santo et Vera Cruz. Leur usage ne permet pas de rattacher tous les noms portugais aux Forros."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Lima est un nom de famille portugais, qui vient du nom du fleuve Lima. Il est porté à São Tomé-et-Príncipe. Les sources lues ne disent pas depuis quand ni comment il y est arrivé. Elles lui donnent deux façons de se former à partir du fleuve, que nous présentons plus bas, et une trace écrite dès le XIIIe siècle.",
+    "names": [
+      {
+        "nameText": "Lima",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Un nom de famille portugais tiré du fleuve Lima, porté à São Tomé-et-Príncipe.",
+        "periodLabel": "Écrit dès le XIIIe siècle ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Lima est, au Portugal, le nom du fleuve Lima : il désigne quelqu'un qui vivait sur ses rives, selon le Dictionary of American Family Names, qui date le nom du fleuve d'avant l'époque romaine et le rapproche d'un élément celtique, lemos ou limos, « orme ». Cette source ne dit rien de São Tomé-et-Príncipe.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Lima",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://web.archive.org/web/20251214220141/https://www.ancestry.com/last-name-meaning/lima",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lu le 16 octobre 2026 dans la copie du 14 décembre 2025 conservée par la Wayback Machine, le site d'Ancestry refusant l'accès. La notice dit : « Portuguese : topographic name for someone living on the banks of the river of this name (of pre-Roman origin probably akin to a Celtic element lemos limos ‘elm’). » Elle donne d'abord, pour l'espagnol, l'origine possible lima, « lime », et ajoute un emploi albanais, que nous ne reprenons pas."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Proposée en 1928"
+            },
+            "statement": "Le nom Lima viendrait directement du fleuve Lima, pris comme nom de la région qu'il baigne, selon José Leite de Vasconcelos.",
+            "hypothesisGroup": "origine du nom Lima",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 158",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 158 : « é natural que umas vezes os apelidos sejam abreviaturas de nomes de terras, outras vezes tomados directamente dos dos rios, como epónimos de regiões que eles banham : cf. o que digo nos Opusc., III, 175 sgs., a respeito de Lima »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Proposée en 1928"
+            },
+            "statement": "Le nom Lima viendrait d'un nom de lieu où entre le nom du fleuve, comme Ponte de Lima ou Viana do Lima : le nom de famille en serait alors une abréviation, selon José Leite de Vasconcelos.",
+            "hypothesisGroup": "origine du nom Lima",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 158",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 158 : « Como ha terras em cujos nomes entram os de rios, por exemplo… Ponte de Lima, Viana do Lima… é natural que umas vezes os apelidos sejam abreviaturas de nomes de terras »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Publié en 1928"
+            },
+            "statement": "Le nom Lima est, avec Paiva et Sousa, un nom de famille très répandu au Portugal, selon José Leite de Vasconcelos, qui le range parmi les noms égaux à des noms de rivières ; certains de ces noms viennent déjà du Moyen Âge. Il ne dit rien de São Tomé-et-Príncipe.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 158",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 158 : sous « Apelidos iguaes a nomes de rios » : « Lima, Paiva, Sousa, muito vulgares, e alguns d'eles já vindos da idade-média »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1201,
+              "to": 1300,
+              "label": "XIIIe siècle"
+            },
+            "statement": "Le nom Lima a pour plus ancienne trace « Dominicus Lima », dans les Inquirições du XIIIe siècle, que cite José Leite de Vasconcelos ; il cite aussi « D. Enês Fernandez de Limea » dans le Livro de Linhagens. C'est la plus ancienne trace de ce nom que le projet connaît ; elle ne dit rien de São Tomé-et-Príncipe. Le fleuve portait déjà ce nom avant lui.",
+            "formAsWritten": "Lima",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 158",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 158 : « Lima… já vindos da idade-média : D. Enês Fernandez de Limea, nas Linhagens, p. 286 ; Dominicus Lima, nas Inquisit., p. 439 ». La page ne date pas ces deux exemples."
+              },
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 328",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 328 : « Nas Inquisit., sec. XIII, vão aumentando… » ; « Nas Linhagens, sec. XIII-XIV » : l'auteur date les Inquirições du XIIIe siècle."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

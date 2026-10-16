@@ -13,7 +13,7 @@
       "attestations": [
         {
           "countryId": "SLE",
-          "sourceRefs": ["afrik-candidate-queue"]
+          "sourceRefs": ["afrik-candidate-queue", "bamadaba-jamuw"]
         }
       ]
     },
@@ -22,7 +22,7 @@
       "attestations": [
         {
           "countryId": "SLE",
-          "sourceRefs": ["afrik-candidate-queue"]
+          "sourceRefs": ["afrik-candidate-queue", "arcin-1907-guinee-francaise"]
         }
       ]
     }
@@ -54,6 +54,22 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "arcin-1907-guinee-francaise",
+      "title": "La Guinée française : races, religions, coutumes, production, commerce",
+      "url": "https://archive.org/details/laguinefrana00arci",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "André Arcin, administrateur colonial, Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026. Texte d'un témoin colonial, cité pour ce qu'il écrit des familles et de leurs n'téné, et non comme dernier mot sur leur histoire."
+    },
+    {
+      "sourceKey": "bamadaba-jamuw",
+      "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+      "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 16 octobre 2026."
     }
   ],
   "gaps": [
@@ -85,5 +101,124 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Bangura à un peuple en Sierra Leone. Nous n'avons pas encore consulté de source consacrée à ce nom. Notre fiche sur les Susu cite un percussionniste guinéen portant ce nom. Cela ne suffit pas à expliquer son usage en Sierra Leone."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Bangura est un nom de Sierra Leone dont les sources lues ne parlent que par ses formes voisines Bàngura et Bangoura, relevées en soussou et en Guinée. On ne sait pas avec certitude d'où il vient ; nous présentons plus bas ce que ces sources en disent.",
+    "names": [
+      {
+        "nameText": "Bangura",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de Sierra Leone ; ses formes voisines sont relevées en soussou et en Guinée.",
+        "periodLabel": "Une forme proche écrite dès 1907 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bangura s'écrit presque comme l'entrée Bàngura du dictionnaire des noms de clan mandingues, qui la relève en malinké et en soussou et n'en donne pas le sens. Le dictionnaire ne parle pas de la Sierra Leone. On ne sait pas avec certitude d'où vient le nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 16 octobre 2026. Entrée Bàngura : parlers malinké (m) et soussou (sou) ; aucun sens donné. Le dictionnaire écrit Bàngura, avec un accent grave."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Proposé en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bangura pourrait, sous la forme Bangoura, vouloir dire « les fils de la terre ou de la lance », selon André Arcin, qui parle des Soso de Guinée et note cette explication sans en donner la raison.",
+            "hypothesisGroup": "origine du nom Bangura",
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 303",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026, au numéro de page imprimé. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 303, note 1 : « Ce nom peut vouloir dire : les fils de la terre ou de la lance. » Arcin n'écrit pas Bangura et ne parle pas de la Sierra Leone."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bangura apparaît sous une forme proche, Bangoura, chez André Arcin, administrateur colonial, en 1907 : il écrit que les Bangoura ne se rencontrent que chez les Soso de Guinée. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un document l'a écrit, et elle ne parle pas de la Sierra Leone.",
+            "formAsWritten": "Bangoura",
+            "birth": true,
+            "actors": [
+              {
+                "name": "André Arcin",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 303",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026, au numéro de page imprimé. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 303 : « Les Bangoura ne se rencontrent que chez les Soso surtout dans le Kaloum, le Soumboya, où ils sont chefs secondaires, dans le Kabitaye où ils forment la famille royale. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bangoura",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Décrit en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bangoura est l'écriture d'André Arcin en 1907 pour des familles soso de Guinée, surtout au Kaloum, au Soumboya et au Kabitaye.",
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 281, 303",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026, au numéro de page imprimé. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Pages 281 et 303 : écriture Bangoura."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

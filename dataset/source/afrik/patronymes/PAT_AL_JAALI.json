@@ -98,5 +98,196 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom al-Jaʿali à un peuple au Soudan. Nous n'avons pas encore consulté de source consacrée à ce nom. La fiche générale sur les Arabes d'Afrique ne décrit pas les Ja'aliyyin et les Shaigiya séparément."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom al-Jaʿali est un nom d'appartenance (nisba) : MacMichael l'écrit Ga'ali en 1922 et le donne comme le nom des Ga'aliin, un ensemble de familles qui se disent descendantes d'el Abbas, oncle du Prophète. Nous lisons Ga'ali comme le même nom que al-Jaʿali, ce que les sources lues ne disent pas elles-mêmes. Elles n'attestent pas ce nom comme nom de famille ; nous présentons plus bas ce qu'elles en disent.",
+    "names": [
+      {
+        "nameText": "al-Jaʿali",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Nom d'appartenance : celui des Ga'aliin, qui se disent descendants d'el Abbas.",
+        "periodLabel": "Écrit Ga'ali en 1922",
+        "accounts": [
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom al-Jaʿali apparaît par écrit sous une forme proche, Ga'ali, chez MacMichael, dans le premier chapitre de sa description des groupes arabes du Soudan, intitulé « Les Ga'aliin et les Danagla ». Il y décrit les Ga'aliin comme l'ensemble le plus large et le plus répandu, mais le plus lâche, des groupes arabes du Soudan, dont il dit qu'on ne peut pas faire une tribu. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand il est porté.",
+            "formAsWritten": "Ga'ali",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 197",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée relevée sur l'en-tête de page du texte numérisé ; signes de transcription omis dans les formes citées. Page 197 : début du chapitre 1 de la partie III, « The Ga'aliin and Danagla Group », premier paragraphe."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Expliqué en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom al-Jaʿali désigne, sous la forme Ga'ali, les membres du groupe des Ga'aliin, qui disent descendre d'el Abbas, oncle du Prophète. Selon MacMichael, le mot est devenu presque synonyme d'Abbasi, et de nombreuses familles, de l'Abyssinie au lac Tchad, l'empruntent. On ne sait pas avec certitude d'où vient le nom ; une explication de la tradition est donnée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 197",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée relevée sur l'en-tête de page du texte numérisé ; signes de transcription omis dans les formes citées. Page 197 : « the word Ga'ali used in its wider sense has become practically synonymous with Abbasi »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Rapporté en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ga'ali viendrait d'un surnom, Ga'al, selon une tradition que rapporte MacMichael : un certain Ibrahim, descendant d'el Abbas, aurait secouru des gens pendant une famine et ils l'auraient surnommé ainsi, parce qu'il leur aurait dit ga'alnakum (« nous vous avons faits »). MacMichael n'y voit pas une filiation : la tradition indique seulement qu'un homme qui se disait de la famille d'el Abbas a rassemblé des gens d'origines diverses.",
+            "hypothesisGroup": "origine du nom Ga'ali",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 197",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée relevée sur l'en-tête de page du texte numérisé ; signes de transcription omis dans les formes citées. Page 197 : « It is said that a certain Ibrahim... was surnamed Ga'al by the recipients, because he said ga'alnakum »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Rapporté en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ga'al figure aussi dans « Idris Ga'al », l'ancêtre par qui les descendants du sultan Sulayman Solong, premier souverain musulman du Darfour, disent descendre des Beni 'Abbas. MacMichael ne glose pas ce surnom ; il cite Barth, pour qui cette descendance est « tout à fait imaginaire ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 198",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée vérifiée sur l'image de la page. Page 198 : « through a certain Idris Ga'al » et note 4 citant Barth : « altogether imaginary »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Rapporté en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ga'ali est celui qu'un habitant du fleuve se donne volontiers, selon MacMichael, pour dire qu'il se rattache au Prophète. Un Bedayri à qui l'on demande sa tribu répondrait parfois « Ga'ali » ; au pluriel, Ga'aliin s'applique de façon vague à la plupart des groupes du Nil du nord : Gawabra, Bedayria, Shaikia, Batahin, Gawama'a et d'autres.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 197, 237",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée relevée sur l'en-tête de page du texte numérisé ; signes de transcription omis dans les formes citées. Page 237 : « any native is only too glad to imply a connection with the Prophet by calling himself a Ga'ali ». Page 197 : la liste des groupes auxquels le nom Ga'aliin s'applique."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Jaali",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Rapporté en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Jaali est la manière d'écrire al-Jaʿali sans l'article et sans le signe du ʿ. MacMichael écrit Ga'ali en 1922 ; nous lisons ces formes comme un seul nom, ce que les sources lues ne disent pas elles-mêmes, et elles n'emploient pas la forme Jaali.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 197",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée relevée sur l'en-tête de page du texte numérisé ; signes de transcription omis dans les formes citées. Page 197 : la forme Ga'ali, seule forme du nom dans le passage."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Al-Jaali",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Rapporté en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Al-Jaali est la forme Jaali précédée de l'article al-. MacMichael écrit Ga'ali en 1922 ; nous lisons ces formes comme un seul nom, ce que les sources lues ne disent pas elles-mêmes, et elles n'emploient pas la forme Al-Jaali.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 197",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée relevée sur l'en-tête de page du texte numérisé ; signes de transcription omis dans les formes citées. Page 197 : la forme Ga'ali, seule forme du nom dans le passage."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

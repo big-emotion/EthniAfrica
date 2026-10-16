@@ -76,5 +76,95 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Carvalho à un peuple à São Tomé-et-Príncipe. Nous n'avons pas encore consulté de source consacrée à ce nom. Nos fiches mentionnent ce nom chez les créoles de Guinée-Bissau. Cela ne renseigne pas sur son usage à São Tomé-et-Príncipe. La fiche sur les Forros cite trois noms d'origine portugaise : Trovoada, Espírito Santo et Vera Cruz. Leur usage ne permet pas de rattacher tous les noms portugais aux Forros."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Carvalho est un nom de famille portugais, tiré du mot carvalho, « chêne », et sans doute d'un nom de lieu. Il est porté à São Tomé-et-Príncipe. Les sources lues ne disent pas depuis quand ni comment il y est arrivé. Elles donnent au nom une origine liée à un lieu, que nous présentons plus bas, et une trace écrite dès 1220.",
+    "names": [
+      {
+        "nameText": "Carvalho",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Un nom de famille portugais tiré du chêne ou d'un lieu, porté à São Tomé-et-Príncipe.",
+        "periodLabel": "Écrit dès 1220 sous une forme proche ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Carvalho désigne, au Portugal, quelqu'un qui vivait près d'un chêne remarquable, carvalho en portugais, ou l'un des nombreux lieux ainsi appelés, selon le Dictionary of American Family Names. Cette source ne dit rien de São Tomé-et-Príncipe.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Carvalho",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://web.archive.org/web/20250809063122/https://www.ancestry.com/last-name-meaning/Carvalho",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lu le 16 octobre 2026 dans la copie du 9 août 2025 conservée par la Wayback Machine, le site d'Ancestry refusant l'accès. La notice dit : « Portuguese : topographic name for someone who lived by a conspicuous oak tree carvalho or a habitational name from any of numerous places called with this word. » Elle ajoute des emplois en Inde et chez les Sépharades, que nous ne reprenons pas."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Proposée en 1928"
+            },
+            "statement": "Le nom Carvalho serait à l'origine un nom de lieu, selon José Leite de Vasconcelos, qui le range avec Castanheira, Loureiro, Matos, Pereira et Silva : on le reconnaît parce qu'il est parfois accompagné de « de », « do » ou « da ». Il l'écrit au milieu des surnoms tirés du règne végétal.",
+            "hypothesisGroup": "origine du nom Carvalho",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 264",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 264 : « Abundam, além disso, apelidos, como Carvalho, Castanheira, Loureiro, Matos, Pereira, Silva, e outros que omito, que na origem são geograficos, como se reconhece de virem ás vezes acompanhados de de (do, da) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1220,
+              "to": 1220,
+              "label": "1220"
+            },
+            "statement": "Le nom Carvalho a pour plus ancienne trace une forme proche, Carvalio, dans « Johannes de Carvalio », que José Leite de Vasconcelos tire des Inquirições de 1220 et qu'il explique par « de Carvalho ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle ne dit rien de São Tomé-et-Príncipe.",
+            "formAsWritten": "Carvalio",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 163",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 163 : liste « Com de » : « Johannes de Carvalio (= de Carvalho), pp. 1 e 211 ». Le nom, mêlé aux autres de la liste, est précédé de « de »."
+              },
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 162",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 162 : fin de la page : « A seguir se transcrevem das Inquirições de 1220 varios nomes das duas classes », c'est-à-dire avec et sans « de »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

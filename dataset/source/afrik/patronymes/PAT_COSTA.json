@@ -85,5 +85,139 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Costa à un peuple à São Tomé-et-Príncipe. Nous n'avons pas encore consulté de source consacrée à ce nom. La fiche sur les Forros cite trois noms d'origine portugaise : Trovoada, Espírito Santo et Vera Cruz. Leur usage ne permet pas de rattacher tous les noms portugais aux Forros."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Costa est un nom de famille portugais, qui s'écrit aussi da Costa. Il est porté à São Tomé-et-Príncipe. Les sources lues ne disent pas depuis quand ni comment il y est arrivé. Pour le Portugal, elles lui donnent plusieurs origines possibles, que nous présentons plus bas, et une trace écrite dès 1265.",
+    "names": [
+      {
+        "nameText": "Costa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Un nom de famille portugais tiré d'un lieu ou d'une pente, porté à São Tomé-et-Príncipe ; deux origines sont proposées.",
+        "periodLabel": "Écrit dès 1265 sous une forme proche ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Costa désigne, en portugais comme dans d'autres langues, quelqu'un qui vivait sur une pente, au bord d'une rivière ou près de la côte, ou l'un des nombreux lieux appelés ainsi, du latin costa, « côte » au sens de l'os, « flanc », selon le Dictionary of American Family Names. Cette source ne dit rien de São Tomé-et-Príncipe.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Costa",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://web.archive.org/web/20260102090248/https://www.ancestry.com/last-name-meaning/Costa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lu le 16 octobre 2026 dans la copie du 2 janvier 2026 conservée par la Wayback Machine, le site d'Ancestry refusant l'accès. La notice dit : « Spanish, Catalan, Portuguese, Galician, southern French, and Italian : topographic name for someone who lived on a slope or river bank, or on the coast (ultimately from Latin costa ‘rib, side, flank’…), or a habitational name from any of numerous places called with this word. » Elle ajoute des emplois chez les Sépharades, aux États-Unis et en Europe orientale, que nous ne reprenons pas."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Proposée en 1928"
+            },
+            "statement": "Le nom Costa viendrait, pour une famille au moins, du nom français de la Coste : selon José Leite de Vasconcelos, qui cite Xavier da Cunha, un libraire, João de la Coste, s'est fixé à Lisbonne vers le milieu du XVIIe siècle, et son nom a été portugaisé en da Costa.",
+            "hypothesisGroup": "origine du nom Costa",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 289",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 289 : chapitre sur les noms d'origine étrangère, à propos des noms français du XVIIe siècle : « Nos meados do seculo fixou-se na nossa capital como livreiro João de la Coste, e o seu apelido foi aportuguesado em da Costa (Xavier da Cunha, ib., p. 397) ». L'index du livre classe cette entrée sous « Costa : 2 : origem francesa »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Proposée en 1928"
+            },
+            "statement": "Le nom Costa viendrait d'un lieu de naissance ou de résidence, selon José Leite de Vasconcelos : il range « Martim Mendiz da Costa », cité dans des documents de 1265, parmi les noms précédés de « de » qui disent la patrie ou la résidence de la personne.",
+            "hypothesisGroup": "origine du nom Costa",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 159",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 159 : « Á mesma categoria pertencem : Martim Mendiz da Costa, e Martim Martyz de Cuya… em documentos de 1265 », catégorie des noms précédés de de qui signifient « patria ou residencia ». L'index du livre classe cette entrée sous « Costa : 1 : origem geografica »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1265,
+              "to": 1265,
+              "label": "1265"
+            },
+            "statement": "Le nom Costa a pour plus ancienne trace une forme proche, da Costa, dans « Martim Mendiz da Costa », que José Leite de Vasconcelos cite d'après des documents de 1265. C'est la plus ancienne trace de ce nom que le projet connaît ; elle ne dit rien de São Tomé-et-Príncipe.",
+            "formAsWritten": "da Costa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 159",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 159 : « Martim Mendiz da Costa, e Martim Martyz (= Martiz) de Cuya em documentos de 1265, nas Dissert. Chron., I, 289 »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "da Costa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Une autre forme du nom Costa, précédée de « da », « de la ».",
+        "periodLabel": "Porté aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Publié en 1928"
+            },
+            "statement": "Le nom da Costa est la forme du nom Costa précédée de « da », qui réunit la préposition de et l'article a, « de la ». José Leite de Vasconcelos note que les noms de lieu employés comme noms de famille ont tantôt « de », tantôt non, parce que la préposition tend à disparaître.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 162",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 162 : « Os apelidos geograficos ou têm de ou não, porque é tendencia fazer desaparecer a preposição » (fin de la page 162), avant la liste des noms de 1220 qui suit."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

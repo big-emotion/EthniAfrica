@@ -92,5 +92,95 @@
       "fieldPath": "homonyms",
       "reason": "la notice exacte du Dictionary of American Family Names, les catalogues bibliographiques et les recherches « Duarte » associées au Cap-Vert n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Duarte est d'abord un prénom portugais, que les sources rapprochent d'Édouard, devenu nom de famille. Il est porté au Cap-Vert. Les sources lues ne disent pas depuis quand ni comment il y est arrivé ; nous présentons plus bas ce qu'elles disent.",
+    "names": [
+      {
+        "nameText": "Duarte",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Un prénom portugais devenu nom de famille, porté au Cap-Vert.",
+        "periodLabel": "Écrit au Portugal dès 1811 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Duarte reprend le prénom portugais Duarte, d'origine incertaine, que l'on tient pour l'équivalent d'Edward, Édouard, selon le Dictionary of American Family Names. Cette source ne dit rien du Cap-Vert.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Duarte",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://web.archive.org/web/20250821022643/https://www.ancestry.com/last-name-meaning/Duarte",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lu le 16 octobre 2026 dans la copie du 21 août 2025 conservée par la Wayback Machine, le site d'Ancestry refusant l'accès. La notice dit : « Portuguese : from the personal name Duarte, a Portuguese name of uncertain origin taken to be the equivalent of Edward. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Publié en 1928"
+            },
+            "statement": "Le nom Duarte reprend le prénom Duarte, que José Leite de Vasconcelos dit d'origine anglo-saxonne, avec la variante Eduardo. Il explique que les enfants de ceux qui portaient ce prénom ne pouvaient avoir de patronyme et reprenaient le nom de leur père comme nom de famille.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 59",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 59 : dans la liste des prénoms, « D. Duarte. De origem anglo-saxonica. Variante : Eduardo. »"
+              },
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 119",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 119 : Duarte figure parmi les noms « a que não se ligavam por costume patronimicos propriamente ditos » (Abril, André, Bertolameu, Brás, Denis, Duarte, Luís, Manoel, Nicolau, Tomás) : « Filhos de pessoas assim chamadas não podiam pois ter patronimicos, e repetiam o nome do pai como sobrenome »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1811,
+              "to": 1811,
+              "label": "1811"
+            },
+            "statement": "Le nom Duarte apparaît comme nom de famille au Portugal en 1811, dans les registres de mariage de Monte-Real, près de Leiria, que cite José Leite de Vasconcelos : « Antonio Duarte, filho de José Duarte ». Le fils porte le même nom que son père. C'est la plus ancienne trace de ce nom que le projet connaît ; elle ne dit rien du Cap-Vert.",
+            "formAsWritten": "Duarte",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 132",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 132 : dans la liste des exemples où le nom du fils reprend celui du père, « Do livro dos assentos de casamentos de Monte-Real (Leiria), já acima citado : Antonio Duarte, filho de José Duarte, 1811 »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
