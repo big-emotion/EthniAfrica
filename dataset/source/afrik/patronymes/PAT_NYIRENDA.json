@@ -90,5 +90,109 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Nyirenda », « Tumbuka », « Malawi », « surname », « clan name », « Mowa », « onomastics », « etymology », « transmission », « alliance », « caste », « homonym » et « obituary », ainsi que le mémoire socio-sémantique du dépôt de l'Université de Zambie n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Nyirenda est un nom de clan tumbuka du nord-ouest du Malawi, rattaché à la chefferie de Mowa. On ne sait pas avec certitude d'où il vient : une étude le dit donné à un clan très nombreux, Owen Kalinga pense que les Nyirenda venaient, comme les Msiska, de l'Unyamwezi. Nous présentons ces explications plus bas.",
+    "names": [
+      {
+        "nameText": "Nyirenda",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan tumbuka du nord-ouest du Malawi, rattaché à la chefferie de Mowa.",
+        "periodLabel": "Attesté dès 1909 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "Décrit en 2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Nyirenda marque, chez les Tumbuka, le lieu d'où l'on vient : un Nyirenda, où qu'il vive aujourd'hui, est originaire du nord-ouest du Malawi, de la chefferie de Mowa, selon Chola Musonda. Devant le nom d'une femme, on met nya- ou anya-, « fille de ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Socio-semantic Analysis of Selected Tumbuka Anthroponyms",
+                "author": "Chola Musonda",
+                "year": 2018,
+                "url": "https://dspace.unza.zm/bitstreams/790df0df-ccbb-432d-bb1f-eba586202559/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 65",
+                "notes": "Mémoire de master, University of Zambia, 2018, lu en texte intégral le 16 octobre 2026 sur le dépôt de l'université. L'auteure recueille des noms de famille et de clan tumbuka et en donne le sens, souvent d'après des traditions orales. Page 65 : « a Nyirenda, wherever s/he may be residing today, is by origin from north-western Malawi, in Mowa's chiefdom » ; les préfixes nya- et anya-, « daughter of », s'ajoutent devant les noms de famille des femmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "Proposée en 2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Nyirenda viendrait du grand nombre des membres du clan, si nombreux, disait-on, qu'ils étaient comme les pattes des mille-pattes ; avoir beaucoup d'enfants valait alors du respect, selon Chola Musonda.",
+            "hypothesisGroup": "origine du nom Nyirenda",
+            "sources": [
+              {
+                "title": "A Socio-semantic Analysis of Selected Tumbuka Anthroponyms",
+                "author": "Chola Musonda",
+                "year": 2018,
+                "url": "https://dspace.unza.zm/bitstreams/790df0df-ccbb-432d-bb1f-eba586202559/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 67",
+                "notes": "Mémoire de master, University of Zambia, 2018, lu en texte intégral le 16 octobre 2026 sur le dépôt de l'université. L'auteure recueille des noms de famille et de clan tumbuka et en donne le sens, souvent d'après des traditions orales. Page 67, entrée 82 : « The Nyirenda clan was named based on how their population was increasing uncontrollably. They were so many that people used to comment that they were as many as the legs of the millipedes. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1983,
+              "to": 1983,
+              "label": "Proposée en 1983"
+            },
+            "era": "modern",
+            "statement": "Le nom Nyirenda serait celui d'une famille de marchands venue, comme les Msiska, de l'Unyamwezi, à l'est du lac Malawi, qui prend en main le pays des Mwaphoka avant 1800, selon Owen Kalinga, qui ne l'affirme que comme « probablement » vrai.",
+            "hypothesisGroup": "origine du nom Nyirenda",
+            "sources": [
+              {
+                "title": "Cultural and Political Change in Northern Malawi c. 1350-1800",
+                "author": "Owen J. M. Kalinga",
+                "year": 1983,
+                "url": "https://repository.kulib.kyoto-u.ac.jp/server/api/core/bitstreams/b4722db4-53ca-42e2-99f4-1393d1bdfd81/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 56",
+                "notes": "African Study Monographs 3, mars 1983, p. 49-58, lu en texte intégral le 16 octobre 2026 sur le dépôt de l'université de Kyoto ; la pagination imprimée est celle de la revue. Page 56 : « families—mainly the Msiska and Nyirenda—probably also from Unyamwezi and also traders, took over political control of the area ruled by the Mwaphoka, ending a long period of their supremacy in the area ». Le texte place ces événements avant 1800."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1909,
+              "to": 1909,
+              "label": "1909"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nyirenda apparaît, selon Leroy Vail et Landeg White, en 1909 : Saulos Nyirenda, télégraphiste formé à la mission et plus tard tenu pour le « père de l'histoire » des Tumbuka, écrit cette année-là une longue histoire politique de son peuple. C'est la plus ancienne trace de ce nom que le projet connaît ; le clan qui le porte est plus ancien.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tribalism in the Political History of Malawi, dans The Creation of Tribalism in Southern Africa",
+                "author": "Leroy Vail et Landeg White",
+                "year": 1989,
+                "url": "https://publishing.cdlib.org/ucpressebooks/view?docId=ft158004rs&brand=ucpress",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 155",
+                "notes": "Berkeley, University of California Press, 1989, ouvrage dirigé par Leroy Vail, lu en texte intégral le 16 octobre 2026 dans la copie en ligne de l'ouvrage. Page 155 : « Saulos Nyirenda, a telegraph clerk educated at the Mission who was later to be considered the Tumbuka's ‘Father of History’, produced a lengthy political history in 1909. » Rapport de seconde main : nous n'avons pas lu cette histoire."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

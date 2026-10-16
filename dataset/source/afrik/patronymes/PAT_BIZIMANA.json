@@ -85,5 +85,88 @@
       "fieldPath": "homonyms",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Bizimana est un nom de personne formé avec Imana, le nom de Dieu en kirundi. Léandre Simbananiye, qui étudie les noms du Burundi, le comprend « c'est Imana qui le sait ». Son article parle du Burundi et du kirundi, non du Rwanda : on ne sait pas avec certitude ce que le nom veut dire pour les familles rwandaises qui le portent.",
+    "names": [
+      {
+        "nameText": "Bizimana",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne en -imana : « c'est Imana qui le sait », décrit pour le kirundi du Burundi.",
+        "periodLabel": "Écrit dès 2005 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "Décrit en 2005"
+            },
+            "era": "modern",
+            "statement": "Le nom Bizimana est un nom de personne du kirundi, la langue du Burundi, que Léandre Simbananiye glose « c'est Imana qui le sait » : il le range parmi les noms qui disent ce que les Burundais reconnaissent à Imana, ici sa connaissance de toute chose. L'article ne parle pas du Rwanda.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les noms de personnes au Burundi : un support du lien social (Léandre Simbananiye, Anthropologie et Sociétés, 29(1), 2005, p. 167-181)",
+                "author": "Léandre Simbananiye",
+                "year": 2005,
+                "url": "https://doi.org/10.7202/011745ar",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 174",
+                "notes": "Anthropologie et Sociétés, 29(1), 2005, p. 167-181, lu en entier sur le PDF de la revue le 16 octobre 2026. L'auteur s'appuie sur des entretiens menés en 1999 au Burundi et sur des noms relevés dans des registres paroissiaux, des écoles et l'état civil. Page 174 : « Les Burundais reconnaissent les attributs d'Imana : son existence (Habimana : Il existe Imana) ; sa connaissance de toute chose (Bizimana : c'est Imana qui le sait) ». Page 173 : Imana est l'Être suprême, créateur et bienfaiteur, en qui les Burundais croient."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "Décrit en 2005"
+            },
+            "era": "modern",
+            "statement": "Le nom Bizimana est donné à la naissance, comme beaucoup de noms burundais. Au Burundi, selon Léandre Simbananiye, chacun porte traditionnellement un nom différent de celui de son père ; ce système coexiste aujourd'hui avec un système de noms de famille venu avec la colonisation et le christianisme. L'article ne dit pas comment il en va au Rwanda.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les noms de personnes au Burundi : un support du lien social (Léandre Simbananiye, Anthropologie et Sociétés, 29(1), 2005, p. 167-181)",
+                "author": "Léandre Simbananiye",
+                "year": 2005,
+                "url": "https://doi.org/10.7202/011745ar",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 171",
+                "notes": "Anthropologie et Sociétés, 29(1), 2005, p. 167-181, lu en entier sur le PDF de la revue le 16 octobre 2026. L'auteur s'appuie sur des entretiens menés en 1999 au Burundi et sur des noms relevés dans des registres paroissiaux, des écoles et l'état civil. Page 171 : le système traditionnel de nomination, où chacun porte un nom différent de celui du père, cohabite avec le système patronymique introduit par la colonisation et le christianisme."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "2005"
+            },
+            "era": "modern",
+            "statement": "Le nom Bizimana apparaît par écrit dans l'article de Léandre Simbananiye sur les noms de personnes au Burundi, publié en 2005, qui le donne comme nom burundais. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit où et quand un article l'a écrit, pas depuis quand ni où des familles le portent, ni qu'il vienne du Rwanda.",
+            "formAsWritten": "Bizimana",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les noms de personnes au Burundi : un support du lien social (Léandre Simbananiye, Anthropologie et Sociétés, 29(1), 2005, p. 167-181)",
+                "author": "Léandre Simbananiye",
+                "year": 2005,
+                "url": "https://doi.org/10.7202/011745ar",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 174",
+                "notes": "Anthropologie et Sociétés, 29(1), 2005, p. 167-181, lu en entier sur le PDF de la revue le 16 octobre 2026. L'auteur s'appuie sur des entretiens menés en 1999 au Burundi et sur des noms relevés dans des registres paroissiaux, des écoles et l'état civil. Page 174 : « Bizimana : c'est Imana qui le sait »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

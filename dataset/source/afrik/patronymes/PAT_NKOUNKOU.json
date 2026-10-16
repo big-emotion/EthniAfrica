@@ -97,5 +97,94 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Nkounkou », « Kongo », « Congo », « patronyme », « anthroponymie », « étymologie », « clan », « transmission », « alliance », « caste », « homonyme » et « nécrologie », ainsi que la page Forebears dédiée n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Nkounkou s'écrit comme Nkunku, qui est, dans le dictionnaire de Karl Edvard Laman (1936), un nom de clan à Mindouli, au Congo. Une étude de 1959 donne Kunku, une forme proche, comme nom de personne d'un garçon sundi. On ne sait pas avec certitude d'où vient le nom Nkounkou ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Nkounkou",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom proche de Nkunku, nom de clan à Mindouli en 1936 ; son origine est incertaine.",
+        "periodLabel": "Une forme proche écrite dès 1936 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1959,
+              "to": 1959,
+              "label": "Décrit en 1959"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kunku, forme proche de Nkounkou, est un nom de personne : chez les Sundi, un garçon reçoit ce nom quand sa mère, jusque-là stérile, a consulté l'objet rituel Nzumba avant de l'enfanter, selon Marcel Soret. Le même ouvrage dit que le clan kongo se marque par un nom à préfixe ki- ; Kunku n'en porte pas.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les Kongo nord-occidentaux",
+                "author": "Marcel Soret",
+                "year": 1959,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/2024-05/010027635.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 80",
+                "notes": "Marcel Soret, avec André Jacquot pour la linguistique, Paris, Presses universitaires de France et Institut international africain, 1959 ; texte intégral lu sur la base Horizon de l'IRD le 16 octobre 2026. Page 80 : tableau des noms imposés à l'enfant selon l'objet rituel consulté : pour Nzumba, la fille reçoit Nzumba, le garçon Kunku. Page 73 : « Le clan se marque aujourd'hui par un nom particulier (avec préfixe ki-) ». L'ouvrage ne dit pas que le nom de famille Nkounkou en vienne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1936,
+              "to": 1936,
+              "label": "Décrit en 1936"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nkunku est aussi un mot du kikongo, qui a d'autres sens en kikongo : « maîtrise, supériorité, habileté professionnelle » (en parler sundi), « épervier, faucon », « poule », « herbe de la jungle non brûlée ». Laman ne dit pas que le nom de clan en vienne : on ne sait pas avec certitude ce qu'il veut dire.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionnaire kikongo-français, avec une étude phonétique décrivant les dialectes les plus importants de la langue dite kikongo",
+                "author": "Karl Edvard Laman",
+                "year": 1936,
+                "url": "https://archive.org/details/dictionnairekikongofrancais",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 735",
+                "notes": "Bruxelles, Institut royal colonial belge, 1936. Missionnaire suédois, cité pour ce qu'il relève. Lu dans la numérisation d'Internet Archive le 16 octobre 2026, page vue en image. Page 735, colonne de droite : « nkunku (S), maîtrise, supériorité, habileté professionnelle » ; « nkunku (SB), épervier, faucon » ; « nkunku, poule » ; « nkunku (S), herbe de la jungle qui n'a pas été brûlée l'an dernier ». Le dictionnaire ne relie aucun de ces sens au nom de clan."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1936,
+              "to": 1936,
+              "label": "1936"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nkounkou apparaît par écrit sous une forme proche, Nkunku, dans le dictionnaire kikongo-français de Karl Edvard Laman, qui le donne comme « nom de clan (à Mindouli) ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit où un missionnaire l'a noté, pas depuis quand des familles le portent. Le peuple kongo existait déjà avant ce dictionnaire.",
+            "formAsWritten": "Nkunku",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Karl Edvard Laman",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Dictionnaire kikongo-français, avec une étude phonétique décrivant les dialectes les plus importants de la langue dite kikongo",
+                "author": "Karl Edvard Laman",
+                "year": 1936,
+                "url": "https://archive.org/details/dictionnairekikongofrancais",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 735",
+                "notes": "Bruxelles, Institut royal colonial belge, 1936. Missionnaire suédois, cité pour ce qu'il relève. Lu dans la numérisation d'Internet Archive le 16 octobre 2026, page vue en image. Page 735, colonne de droite : « Nkunku, nom de clan (à Mindouli) », entre deux entrées nkunku de sens commun."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

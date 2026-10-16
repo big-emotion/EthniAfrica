@@ -86,5 +86,87 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web combinant « Hamutenya », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la consultation de la page « Kavango West Region » du ministère namibien de la Santé n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Hamutenya est un nom de personne ambo, de Namibie. Il se forme sur omutenya, « jour » : on le donne à un garçon, et Namutenya à une fille, comme on donne Haufiku à un garçon né la nuit. On le lit aussi comme nom de famille de théologiens ambo.",
+    "names": [
+      {
+        "nameText": "Hamutenya",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne ambo formé sur « jour » (omutenya) ; pour une fille, Namutenya.",
+        "periodLabel": "Noté dès 1976 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1995,
+              "to": 1995,
+              "label": "Relevé en 1995, rapporté en 2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Hamutenya figure dans la liste de noms de famille de théologiens ambo que Nambala a relevée en 1995 et que reprend Minna Saarelma-Maunumaa en 2003.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Edhina Ekogidho — Names as Links: The Encounter between African and European Anthroponymic Systems among the Ambo People in Namibia",
+                "author": "Minna Saarelma-Maunumaa",
+                "year": 2003,
+                "url": "https://digital.unam.edu.na/bitstream/handle/11070.1/21230/Ekogidho_2003.pdf?isAllowed=y&sequence=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 344",
+                "notes": "Minna Saarelma-Maunumaa, Helsinki, Finnish Literature Society, 2003, lu en texte intégral le 16 octobre 2026 ; la pagination imprimée suit celle du fichier. Annexe 1, « The Surname Data (Surnames of Ambo theologians, source: Nambala 1995) » : Hamutenya y figure. Rapport de seconde main : nous n'avons pas lu Nambala."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Décrit en 2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Hamutenya est formé sur omutenya, « jour » : chez les Kwanyama, on le donne à un garçon et on donne Namutenya à une fille, comme Haufiku et Naufiku pour la nuit ou Hangula et Nangula pour le matin. Minna Saarelma-Maunumaa le dit d'après Carlos Estermann, pour qui l'heure de la naissance n'est pas la seule raison de choisir un nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Edhina Ekogidho — Names as Links: The Encounter between African and European Anthroponymic Systems among the Ambo People in Namibia",
+                "author": "Minna Saarelma-Maunumaa",
+                "year": 2003,
+                "url": "https://digital.unam.edu.na/bitstream/handle/11070.1/21230/Ekogidho_2003.pdf?isAllowed=y&sequence=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 120",
+                "notes": "Minna Saarelma-Maunumaa, Helsinki, Finnish Literature Society, 2003, lu en texte intégral le 16 octobre 2026 ; la pagination imprimée suit celle du fichier. Page 120, citation d'Estermann (1976, p. 61) : « Or with the word omutenya (‘day’), which forms the names Hamutenya and Namutenya respectively. It is clear though, that the time of birth is not of unique importance; other circumstances also contribute to furnishing names. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1976,
+              "to": 1976,
+              "label": "Décrit en 1976, cité en 2003"
+            },
+            "statement": "Le nom Hamutenya apparaît par écrit dans la description que Carlos Estermann donne de la façon de nommer les enfants kwanyama, que Minna Saarelma-Maunumaa cite en 2003. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand on le donne.",
+            "formAsWritten": "Hamutenya",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Edhina Ekogidho — Names as Links: The Encounter between African and European Anthroponymic Systems among the Ambo People in Namibia",
+                "author": "Minna Saarelma-Maunumaa",
+                "year": 2003,
+                "url": "https://digital.unam.edu.na/bitstream/handle/11070.1/21230/Ekogidho_2003.pdf?isAllowed=y&sequence=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 120",
+                "notes": "Minna Saarelma-Maunumaa, Helsinki, Finnish Literature Society, 2003, lu en texte intégral le 16 octobre 2026 ; la pagination imprimée suit celle du fichier. Page 120 : citation d'Estermann (1976, p. 61), qui écrit « Hamutenya ». Rapport de seconde main : nous n'avons pas lu Estermann."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

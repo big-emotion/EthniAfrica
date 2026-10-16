@@ -80,5 +80,87 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web combinant « Gondwe », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la lecture de « The Creation of Tribalism in Southern Africa » n'ont établi aucune règle propre à Gondwe permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Gondwe est un nom de famille du nord du Malawi : celui d'une lignée tumbuka de la plaine de Nkhamanga, dont les chefs portent le titre de Chikulamayembe. Owen Kalinga rapporte que le premier Gondwe, Kakalala Musawila Gondwe, était un marchand d'ivoire venu de l'autre côté du lac Malawi. On ne sait pas avec certitude ce que le nom veut dire.",
+    "names": [
+      {
+        "nameText": "Gondwe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de lignée tumbuka du nord du Malawi, celle des chefs Chikulamayembe ; son sens est incertain.",
+        "periodLabel": "Attesté dès 1907 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1983,
+              "to": 1983,
+              "label": "Décrit en 1983"
+            },
+            "era": "modern",
+            "statement": "Le nom Gondwe désigne une lignée tumbuka de la plaine de Nkhamanga, au nord du Malawi, que Owen Kalinga voit dominer cette région par le commerce au XVIIIe siècle. On ne sait pas avec certitude ce que le mot veut dire ; les sources lues ne lui donnent pas de sens.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Cultural and Political Change in Northern Malawi c. 1350-1800",
+                "author": "Owen J. M. Kalinga",
+                "year": 1983,
+                "url": "https://repository.kulib.kyoto-u.ac.jp/server/api/core/bitstreams/b4722db4-53ca-42e2-99f4-1393d1bdfd81/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 56",
+                "notes": "African Study Monographs 3, mars 1983, p. 49-58, lu en texte intégral le 16 octobre 2026 sur le dépôt de l'université de Kyoto ; la pagination imprimée est celle de la revue. Page 56 : vers 1800, Gondwe peut revendiquer le monopole du commerce entre la Luangwa et la rive ouest du lac Malawi, et il a gagné l'autorité politique dans la plaine de Nkamanga. Ni cette page ni celle de Vail et White ne donnent de sens au mot."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1983,
+              "to": 1983,
+              "label": "Proposée en 1983"
+            },
+            "era": "modern",
+            "statement": "Le nom Gondwe serait celui d'un marchand d'ivoire, Kakalala Musawila Gondwe, qui traverse le lac Malawi à Chilumba et s'installe dans la plaine de Nkamanga, selon Owen Kalinga, pour qui il était « probablement » un Nyamwezi influencé par les Yao. Il s'allie par mariage à la famille Luhanga et à d'autres.",
+            "hypothesisGroup": "origine du nom Gondwe",
+            "sources": [
+              {
+                "title": "Cultural and Political Change in Northern Malawi c. 1350-1800",
+                "author": "Owen J. M. Kalinga",
+                "year": 1983,
+                "url": "https://repository.kulib.kyoto-u.ac.jp/server/api/core/bitstreams/b4722db4-53ca-42e2-99f4-1393d1bdfd81/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 55",
+                "notes": "African Study Monographs 3, mars 1983, p. 49-58, lu en texte intégral le 16 octobre 2026 sur le dépôt de l'université de Kyoto ; la pagination imprimée est celle de la revue. Page 55 : « Kakalala Musawila Gondwe, probably a Yao-influenced Nyamwezi who for some time had been involved in the trade to the East Coast »; il traverse le lac à Chilumba, s'installe dans la plaine de Nkamanga et épouse des femmes des familles Luhanga et d'autres. L'auteur place ces arrivées au XVIIIe siècle."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gondwe est celui de la lignée dont la coutume réservait la charge de Chikulamayembe, chef de la plaine de Nkhamanga ; en 1907, l'administration britannique reconnaît pourtant comme Chikulamayembe IX Chilongozi Gondwe, d'une branche collatérale de la lignée de Majuma Gondwe, selon Leroy Vail et Landeg White. C'est la plus ancienne trace datée de ce nom que le projet connaît ; Kalinga rapporte un porteur plus ancien, du XVIIIe siècle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tribalism in the Political History of Malawi, dans The Creation of Tribalism in Southern Africa",
+                "author": "Leroy Vail et Landeg White",
+                "year": 1989,
+                "url": "https://publishing.cdlib.org/ucpressebooks/view?docId=ft158004rs&brand=ucpress",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 155",
+                "notes": "Berkeley, University of California Press, 1989, ouvrage dirigé par Leroy Vail, lu en texte intégral le 16 octobre 2026 dans la copie en ligne de l'ouvrage. Page 155 : « According to custom the revived office should have gone to a member of the lineage of the last of the chiefs, Majuma Gondwe »; les chefs de village choisissent Chilongozi Gondwe, « an offspring of a collateral lineage », et « In 1907 the British [...] recognized Chilongozi as ‘Chief Chikulamayembe IX’ ». Rapport de seconde main : nous n'avons pas lu les documents de 1907."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
