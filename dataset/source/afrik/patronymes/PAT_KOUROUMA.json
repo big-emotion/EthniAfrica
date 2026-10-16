@@ -13,7 +13,11 @@
       "attestations": [
         {
           "countryId": "GIN",
-          "sourceRefs": ["afrik-candidate-queue"]
+          "sourceRefs": [
+            "afrik-candidate-queue",
+            "arcin-1907-guinee-francaise",
+            "binger-1892-du-niger-au-golfe-de-guinee"
+          ]
         }
       ]
     },
@@ -22,7 +26,7 @@
       "attestations": [
         {
           "countryId": "GIN",
-          "sourceRefs": ["hga-iv-niane"]
+          "sourceRefs": ["hga-iv-niane", "bamadaba-jamuw"]
         }
       ]
     },
@@ -31,7 +35,7 @@
       "attestations": [
         {
           "countryId": "GIN",
-          "sourceRefs": ["hga-iv-person"]
+          "sourceRefs": ["hga-iv-person", "bamadaba-jamuw"]
         }
       ]
     }
@@ -97,6 +101,30 @@
       "tier": "official",
       "source_kind": "intergovernmental",
       "notes": "UNESCO, dir. D. T. Niane, 1985 ; chapitre d'Y. Person. Page imprimée 341 : « les clans maninka des Kuruma et Konate du Toron, de Kankan à Odienné, au plus tard au XVe siècle », cités parmi les grands lignages nobles qui se partagent le pouvoir. Le chapitre ne donne aucun sens au nom et n'emploie pas la graphie Kourouma."
+    },
+    {
+      "sourceKey": "arcin-1907-guinee-francaise",
+      "title": "La Guinée française : races, religions, coutumes, production, commerce",
+      "url": "https://archive.org/details/laguinefrana00arci",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "André Arcin, administrateur colonial, Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026. Texte d'un témoin colonial, cité pour ce qu'il écrit des familles et de leurs n'téné, et non comme dernier mot sur leur histoire."
+    },
+    {
+      "sourceKey": "bamadaba-jamuw",
+      "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+      "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 16 octobre 2026."
+    },
+    {
+      "sourceKey": "binger-1892-du-niger-au-golfe-de-guinee",
+      "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi",
+      "url": "https://www.gutenberg.org/ebooks/74720",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Louis-Gustave Binger, Hachette, Paris, 1892, deux tomes ; récit du voyage de 1887-1889, lu dans la réédition numérique du Projet Gutenberg le 16 octobre 2026. Officier français en mission, cité pour les formes qu'il écrit."
     }
   ],
   "gaps": [
@@ -124,5 +152,166 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kourouma est un nom de clan, ou jamu, des Malinké de Guinée ; on l'écrit aussi Koroma ou Kuruma. On ne sait pas avec certitude d'où il vient ; nous présentons plus bas ce que les sources en disent.",
+    "names": [
+      {
+        "nameText": "Kourouma",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan malinké de Guinée, écrit dès 1892 ; son origine reste discutée.",
+        "periodLabel": "Écrit dès 1892 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kourouma désigne un clan, ou jamu, malinké. Le dictionnaire des noms de clan mandingues l'écrit Kuruma, avec Koroma et Kuruba pour variantes, et ne donne pas de sens. Il ne cite pas la forme Kourouma : le rapprochement repose sur la ressemblance des écritures. On ne sait pas avec certitude d'où vient le nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 16 octobre 2026. Entrée Kuruma, avec Koroma et Kuruba pour variantes ; parlers malinké (m) et kouranko ; statuts hɔ́rɔn, garanke et nùmu ; aucun sens donné. Le dictionnaire n'écrit pas la forme Kourouma."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Décrit en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kourouma est celui de familles qui, grâce à Samory, ont pris le pouvoir au Kouloukalan, autour de Norasouba, selon André Arcin. Il les dit aussi installées dans deux villages du Bali Makana et dans une partie du Konian.",
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 307, 311",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026, au numéro de page imprimé. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 311 : « Les Kourouma qui, grâce à Samory, ont dépossédé du pouvoir les Maka Souba et les Taraouré dans le Kouloukalan (capitale Norasouba), peuplent encore deux villages du Bali Makana […] et une partie du Konian. » Page 307 : Samory donna le commandement du Kouloukalan « aux Kourouma »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Proposé en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kourouma serait celui de familles dialonké venues des Soninké, selon André Arcin, qui les dit forgerons chez les Socé et au N'Gabou.",
+            "hypothesisGroup": "famille d'origine des Kourouma",
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 285",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026, au numéro de page imprimé. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 285 : « Les Kourouma sont aussi des Dialonké, et semblent provenir des Soninké. […] On les retrouve comme forgerons chez les Socé et dans le N'Gabou. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Rapporté en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kourouma serait celui d'une fraction des Sissokho malinké, selon M. Le Châtelier, que rapporte André Arcin.",
+            "hypothesisGroup": "famille d'origine des Kourouma",
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 285, 311",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026, au numéro de page imprimé. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 285 : « D'après M. Le Châtelier, ils seraient une fraction des Sissokho Malinké. » Même phrase page 311."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "Voyage de 1887-1889, récit publié en 1892"
+            },
+            "statement": "Le nom Kourouma apparaît chez Louis-Gustave Binger, dans son tableau des familles mandé, parmi les « autres familles » des Malinké, avec les Konaté et les Sissokho. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un voyageur l'a noté, pas depuis quand le nom est porté.",
+            "formAsWritten": "Kourouma",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Louis-Gustave Binger",
+                "role": "officier français, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74720",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 2, p. 376",
+                "notes": "Hachette, Paris, 1892, deux tomes ; récit du voyage de 1887-1889. Lu dans la réédition numérique du Projet Gutenberg (tome 1 no 74720, tome 2 no 74721), qui conserve la pagination imprimée. L'auteur est un officier français en mission ; il est cité pour les formes qu'il écrit et ce qu'on lui rapporte. Tome 2, page 376, tableau « 2o Famille des Mali (hippopotame), dite Mali-nké » : « Autres Familles. Kourouma, Konaté, Sissokho ». Le tome 2 se lit sous un autre numéro du Projet Gutenberg que le tome 1. Lu le 16 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Koroma",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Koroma est donné comme variante de Kuruma par le dictionnaire des noms de clan mandingues, qui relève cette entrée en malinké et en kouranko, avec les statuts hɔ́rɔn, garanke et nùmu, sans en donner le sens.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 16 octobre 2026. Entrée Kuruma, avec Koroma et Kuruba pour variantes ; parlers malinké (m) et kouranko ; statuts hɔ́rɔn, garanke et nùmu ; aucun sens donné. Le dictionnaire n'écrit pas la forme Kourouma."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
