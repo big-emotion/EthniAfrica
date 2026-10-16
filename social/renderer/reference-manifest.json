@@ -1,5 +1,5 @@
 {
-  "designVersion": "1.8.0-proposition",
+  "designVersion": "1.9.0-proposition",
   "source": "Operator-supplied Claude Design references received 10 October 2026; two map references reconciled to the unchanged accepted engine by explicit operator decision on the same date. Version 1.2.0-proposition accepted by the operator on 12 October 2026: 28 references of 1.1.0 kept unchanged, three 1.1 cards whose sample label moved re-rendered on the pinned browser, seven atlas cards added from the pinned browser after comparison with Claude Design's 1.2.0 references. Version 1.3.0-proposition accepted by the operator on 14 October 2026 with series video layout B: the 38 references of 1.2.0 kept unchanged, 51 series cards added from the pinned browser after comparison with Claude Design's 1.3.0 references. Version 1.4.0-proposition accepted by the operator on 14 October 2026: the series video in full screen and eight on-image-* tokens for it; the 89 references are unchanged. Version 1.4.1-proposition accepted by the operator on 14 October 2026: the series video's map cards on satellite imagery; the 89 references are unchanged.",
   "files": [
     {

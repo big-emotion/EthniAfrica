@@ -2,6 +2,8 @@
 
 ## Acceptance and integration status
 
+**1.9.0-proposition, 16 October 2026, accepted by the operator the same day, with the designer's recommendations.** A second contour under every text on the image of the series video, in place of the 1.4.0 soft shadow, and a dark edge on the lit word. See « Renderer integration of 1.9.0 ».
+
 **1.8.0-proposition, 15 October 2026, accepted by the operator the same day, with the designer's recommendations.** The document card (the quoted passage framed sharp and underlined, the rest of the page out of focus) and three teaching cards: the name-making formula, the side-by-side forms and the week table. See « Renderer integration of 1.8.0 ».
 
 **1.7.0-proposition, 15 October 2026, accepted by the operator the same day, with the designer's recommendations.** The long series video: chapters on screen, readings, figures, a quoted person, the signed position, two invitations and the next episode on the ending. See « Renderer integration of 1.7.0 ».
@@ -491,6 +493,32 @@ A chapter card is a card of the sequence, `{ "type": "chapter", "chapter": 2, "i
 
 **Boards and prototype.** `Video` group `video-180-*` (Series, « Boards (1.8.0) »), drawn by a scratch copy of `handoff/video-board-full.html` patched as described here; since the acceptance `handoff/video-board-full.html` on this page carries the patch.
 
+## Renderer integration of 1.9.0
+
+**Status: accepted by the operator on 16 October 2026, with the designer's recommendations** (Series, « Legibility on light pictures: the double outline », decisions 1 and 2): treatment C and the lit word's dark edge. It comes after 1.8.0 (in `recette` since PR #1790, its check 1 amended by PR #1794).
+
+**Where it goes.** `social/video/series-page.mjs`, where the page's styles give every text on the image `-webkit-text-stroke: var(--sw)` with `paint-order: stroke fill` and a `text-shadow` of `on-image-shadow` (`.oi`, `.oi-l`, `.sub-text`).
+
+1. **Filters.** One SVG filter per radius r (3 to 8 px), in the page's defs: `feMorphology` dilate of `SourceAlpha` by r, blurred by 0.6 and filled with `on-image-ring` (the second contour); the same dilation blurred by r and filled with `on-image-ring-soft` (the soft shadow); merged under `SourceGraphic`. `tools/patch190.py`, mode C, has the exact filter.
+2. **Which elements.** Every text block on the image that has no text-on-image ancestor (the band, each head element, each subtitle line, each foot line, the wordmark, the ending's lines and pill, the 1.7.0 and 1.8.0 blocks) takes `filter: url(#oi-ring-r)` with r = max(3, round(0.6 × its outline width)); the subtitle line's outline is 9 px, so r = 5. Its `text-shadow` is removed (`none`); nested spans inherit.
+3. **The lit word.** `box-shadow: 6px 0 0 accent, -6px 0 0 accent, 6px 0 0 2px stroke, -6px 0 0 2px stroke, 0 0 12px 4px rgba(11,8,6,.55)` (tokens `on-image-accent`, `on-image-stroke`); its text stays without stroke.
+4. **Not changed.** Map names on imagery (`.sm-*`, `.sat-*`), the logo's drop shadow, the slot, the demo tape, the document card's sharp page and underline, every carousel card.
+
+**Tokens.** `on-image-ring` (#0b0806 at 62 %) and `on-image-ring-soft` (#0b0806 at 45 %) are added; `on-image-shadow` is kept for older references and no longer used by text on the image.
+
+**Checks** (tests first):
+
+1. Every outermost text block on the image carries the ring filter with the r of its outline (a table test over the card types of 1.4.0 to 1.8.0).
+2. No text on the image keeps a `text-shadow` (map names excepted).
+3. On a frame whose picture is pure white (#ffffff), measured as on the boards (the pixels within 0.12 em of the letters, at least 4 px, the lit box left out, 90th percentile, linear luminance): at least 7.5:1 between `on-image-text` and the subtitles' surround (7.9:1 on the board), 6:1 for the band and the source (6.3 and 6.4), 4:1 for the credit in `on-image-muted` (4.2).
+4. On a frame whose picture is pure black, outside the letters grown by 4 px and the lit word's box, no pixel differs from its 1.8.0 render by more than 10 levels (of 255) on any channel: the second contour is #0b0806 at 62 % (9 levels at most on the board). Near the letters, the filter's antialiasing may move edge pixels, and on a two-line subtitle the second line's contour darkens the lower edge of the lit box above it, which overlaps that line by about 9 px.
+5. The lit word's box has its 2 px edge: the ring 3 to 10 px outside the box, median, reads at least 6:1 against `on-image-accent` on a white picture (6.2:1 on the board).
+6. Layout unchanged: every text box of the 1.8.0 acceptance frames at the same place within 0.5 px.
+7. Carousel cards: the 89 sample cards pixel-identical, alternative texts included.
+8. Acceptance: the Burkina Faso episode's frames compared with `design-system-1.9.0-boards/plein-ecran/` (mode C) at 430 px.
+
+**Boards and prototype.** `Video` group `video-190-*` (Series, « Boards (1.9.0) »), drawn by a scratch copy of `handoff/video-board-full.html` patched for the five treatments (`?legi=A` to `E`, `?mask=1` and `?bare=1` for the measures); the patch, the measure script and the demonstration cards are kept with the design package. Since the acceptance `handoff/video-board-full.html` on this page carries the patch and draws the double outline by default.
+
 ## Required assets
 
 - Fonts: `fonts/Anton-Regular.ttf`, `fonts/NunitoSans.ttf`, `fonts/NotoSans-Variable.ttf`, `fonts/Fraunces.ttf`, `fonts/NotoSansEthiopic-Bold.ttf`, all under the SIL Open Font License 1.1.
@@ -575,3 +603,8 @@ A chapter card is a card of the sequence, `{ "type": "chapter", "chapter": 2, "i
 - Settled: the image fills the frame, only text sits on it, nothing is fitted to the networks' interface, nothing darkens the image; any departure is shown with its variant and left to the operator.
 - Brief: `proposals/1.8.0-proposition/claude-design-brief.md` (draft PR #1781).
 - Proposed and accepted on 15 October 2026, with the designer's recommendations on the five questions.
+
+## Commissioned on 16 October 2026 (1.9.0)
+
+- From the Burkina Faso episode (series 1, episode 19), relayed by the coordinator: the cream text on the image reads only by its dark outline, and the operator finds it hard to read on light or busy pictures. Propose, without reopening the full screen without shadow zones decided on 14 October 2026, a legibility treatment of the text itself (a wider or double outline, a tight drop shadow, or a veil limited to each line's box), measured on the lightest and darkest pictures, with its effect on the subtitles and the lit word, the series band and the foot; recommend one. Also check the 1.8.0 document card under it. Not blocking any episode.
+- Proposed and accepted on 16 October 2026, with the designer's recommendations on the two questions.
