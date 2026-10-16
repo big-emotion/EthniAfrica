@@ -107,5 +107,186 @@
       "fieldPath": "transmissionMode",
       "reason": "La recherche web combinant « Amadhila », « patronyme », « origine », « clan », « alliance », « caste », « obituary » et « homonyme », complétée par les mots-clés « transmission » et « inheritance », puis la lecture de « The Anglicisation of Oshiwambo Names », n'a pas établi de règle de transmission propre à ce nom ; la valeur « other » est donc conservée plutôt qu'une règle familiale supposée."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Amadhila est un nom de personne oshiwambo, que portent des Ambo de Namibie comme nom de famille ; on l'écrit aussi Amathila. Il se rattache au mot pour « oiseaux ». Les sources lues expliquent de deux façons comment ce mot est devenu un nom ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Amadhila",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne oshiwambo, lié aux oiseaux, porté comme nom de famille en Namibie.",
+        "periodLabel": "Relevé dès 1995 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "Décrit en 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Amadhila est un nom de personne oshiwambo que Petrus Mbenzi glose « oiseaux » et Minna Saarelma-Maunumaa « gros oiseaux, avions ». On ne sait pas avec certitude comment ce mot est devenu un nom ; les explications relevées sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Anglicisation of Oshiwambo Names",
+                "author": "Petrus A. Mbenzi",
+                "year": 2024,
+                "url": "https://arushalinguistics.org/publications/Mbenzi_AWPAL_2024.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 87",
+                "notes": "Arusha Working Papers in African Linguistics 6(1), 2024, p. 80-96, épreuve avant publication lue en entier le 16 octobre 2026. Page 87, tableau 1 : le nom oshiwambo Amadhila [amaðiɭa] est glosé « birds »."
+              },
+              {
+                "title": "Edhina Ekogidho — Names as Links: The Encounter between African and European Anthroponymic Systems among the Ambo People in Namibia",
+                "author": "Minna Saarelma-Maunumaa",
+                "year": 2003,
+                "url": "https://digital.unam.edu.na/bitstream/handle/11070.1/21230/Ekogidho_2003.pdf?isAllowed=y&sequence=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 293",
+                "notes": "Minna Saarelma-Maunumaa, Helsinki, Finnish Literature Society, 2003, lu en texte intégral le 16 octobre 2026 ; la pagination imprimée suit celle du fichier. Page 293, parmi les noms qui renvoient aux animaux et aux plantes sauvages : « Amadhila, Namadhila (‘big birds, aeroplanes’) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "Proposée en 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Amadhila viendrait d'omadhila, « oiseaux », nom d'une cérémonie où les participants font claquer le fouet en imitant le chant des oiseaux ; on le donnerait à un enfant né pendant cette cérémonie, selon Petrus Mbenzi.",
+            "hypothesisGroup": "origine du nom Amadhila",
+            "sources": [
+              {
+                "title": "The Anglicisation of Oshiwambo Names",
+                "author": "Petrus A. Mbenzi",
+                "year": 2024,
+                "url": "https://arushalinguistics.org/publications/Mbenzi_AWPAL_2024.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 91",
+                "notes": "Arusha Working Papers in African Linguistics 6(1), 2024, p. 80-96, épreuve avant publication lue en entier le 16 octobre 2026. Page 91, tableau 3 : « From omadhila (birds). Omadhila is name of new ceremony in which the participants crack the whip imitating the singing of the birds hence the name Omadhila. It is given to a child born during the Omadhila ceremony. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Proposée en 2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Amadhila viendrait du pluriel omadhila d'un mot oshiwambo, edhila, « gros oiseau, avion, corne de koudou dont on joue comme d'un instrument à vent dans une cérémonie d'initiation », selon Minna Saarelma-Maunumaa. Elle y voit un nom d'homme où le a- remplace le o- du mot.",
+            "hypothesisGroup": "origine du nom Amadhila",
+            "sources": [
+              {
+                "title": "Edhina Ekogidho — Names as Links: The Encounter between African and European Anthroponymic Systems among the Ambo People in Namibia",
+                "author": "Minna Saarelma-Maunumaa",
+                "year": 2003,
+                "url": "https://digital.unam.edu.na/bitstream/handle/11070.1/21230/Ekogidho_2003.pdf?isAllowed=y&sequence=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 282",
+                "notes": "Minna Saarelma-Maunumaa, Helsinki, Finnish Literature Society, 2003, lu en texte intégral le 16 octobre 2026 ; la pagination imprimée suit celle du fichier. Page 282, « Names Formed with A- » : « Amadhila < pl. oma/dhila; e/dhila ‘big bird, aeroplane, kudu horn as a wind-instrument in an initiation ceremony’ » ; l'auteure dit que ce procédé est typique des noms d'hommes, sans exclure les femmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1995,
+              "to": 1995,
+              "label": "Relevé en 1995, rapporté en 2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Amadhila figure deux fois dans la liste de noms de famille de théologiens ambo que Nambala a relevée en 1995 et que reprend Minna Saarelma-Maunumaa en 2003. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit où il se lit en 1995, pas depuis quand il se donne.",
+            "formAsWritten": "Amadhila",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Edhina Ekogidho — Names as Links: The Encounter between African and European Anthroponymic Systems among the Ambo People in Namibia",
+                "author": "Minna Saarelma-Maunumaa",
+                "year": 2003,
+                "url": "https://digital.unam.edu.na/bitstream/handle/11070.1/21230/Ekogidho_2003.pdf?isAllowed=y&sequence=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 344",
+                "notes": "Minna Saarelma-Maunumaa, Helsinki, Finnish Literature Society, 2003, lu en texte intégral le 16 octobre 2026 ; la pagination imprimée suit celle du fichier. Annexe 1, « The Surname Data (Surnames of Ambo theologians, source: Nambala 1995) » : Amadhila y figure deux fois. Rapport de seconde main : nous n'avons pas lu Nambala."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Amathila",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "Écrit en 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Amathila est la graphie anglicisée d'Amadhila : dh [ð] y est remplacé par th [θ], car l'anglais prononce th [θ] comme le dh oshiwambo, selon Petrus Mbenzi, qui y voit un effet de l'anglicisation. C'est la plus ancienne trace de cette graphie que le projet connaît.",
+            "formAsWritten": "Amathila",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Anglicisation of Oshiwambo Names",
+                "author": "Petrus A. Mbenzi",
+                "year": 2024,
+                "url": "https://arushalinguistics.org/publications/Mbenzi_AWPAL_2024.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 87",
+                "notes": "Arusha Working Papers in African Linguistics 6(1), 2024, p. 80-96, épreuve avant publication lue en entier le 16 octobre 2026. Page 87, tableau 1 et commentaire : Amadhila [amaðiɭa] devient Amathila [amaθiɭa] ; « It can be assumed that this change is effected in the name of Anglicization. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Amadila",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "Écrit en 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Amadila est la forme que Petrus Mbenzi donne, dans son tableau des noms oshiwambo déformés à dessein pour sonner anglais, à côté d'Amadhila [amadila]. C'est la plus ancienne trace de cette graphie que le projet connaît.",
+            "formAsWritten": "Amadila",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Anglicisation of Oshiwambo Names",
+                "author": "Petrus A. Mbenzi",
+                "year": 2024,
+                "url": "https://arushalinguistics.org/publications/Mbenzi_AWPAL_2024.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 91",
+                "notes": "Arusha Working Papers in African Linguistics 6(1), 2024, p. 80-96, épreuve avant publication lue en entier le 16 octobre 2026. Page 91, tableau 3 « Deliberate Mispronunciation of Oshiwambo Names » : Amadhila [amaðiɭa] / Amadila [amadila]."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

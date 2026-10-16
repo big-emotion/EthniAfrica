@@ -82,5 +82,135 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Ncube », « Ndebele », « le Zimbabwe », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la page Forebears propre au nom consultée directement, n’a établi aucune règle propre à Ncube permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ncube est, chez Alfred T. Bryant, celui d'un petit clan nguni du Zululand, les emaNcubeni, que l'on appelle aba-kwa-Ncube sur la côte. Cette fiche suit le nom chez les Ndebele du Zimbabwe : Bryant ne dit pas que ce soit le même clan. On ne sait pas avec certitude ce que le nom veut dire.",
+    "names": [
+      {
+        "nameText": "Ncube",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan nguni du Zululand, écrit Ncubes dès 1905 ; son sens est inconnu.",
+        "periodLabel": "Écrit Ncubes dès 1905 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Rapporté en 1929"
+            },
+            "statement": "Le nom Ncube que suit cette fiche est celui des Ndebele du Zimbabwe, tandis que les pages de Bryant lues ici parlent d'un clan du Zululand et de Natal. Bryant ne dit pas que les deux soient un seul clan, et il ne cite pas de Ncube parmi les clans zoulous qu'il trouve de son temps au Matabeleland. On ne sait donc pas avec certitude si les Ncube du Zimbabwe descendent du clan que décrit Bryant.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 425",
+                "notes": "Londres, Longmans, Green, 1929, lu le 16 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 425 : la liste des clans zoulous présents au Matabeleland (Kumalo, Mabanga, Dlodlo, Ndwandwe, Mtetwa, Mkwanazi, Koza, Ndlovu, emaNcwangeni, Gamede, « and several other Zulu clans ») ne nomme pas les Ncube. Cette absence ne prouve rien : elle montre seulement que cette page ne fait pas le lien."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Rapporté en 1929"
+            },
+            "era": "modern",
+            "statement": "Le nom Ncube est devenu celui des aba-kwa-Ncube, la partie du clan emaNcubeni qui part vers la côte avant que les voisins ne l'appellent amaZilankata, « ceux qui révèrent le tampon d'herbe », et se soumet au chef mtetwa Jobe, alors sur le trône (vers 1790-1807). Elle reçoit une terre près de la baie de Sainte-Lucie, selon Alfred T. Bryant.",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 114-115",
+                "notes": "Londres, Longmans, Green, 1929, lu le 16 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Pages 114 et 115 : « some of their number had migrated coastwards in search of more congenial building sites. There they subjected themselves to the Mtetwa chief—Jobe (86), being then on the throne (c. 1790-1807)—and were allotted a home about the Dukuduku bush, near the mouth of St. Lucia Bay »; « this section of the family down at the coast became there known as aba-kwa-Ncube, not as aba-s-emaNcubeni »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Rapporté en 1929"
+            },
+            "era": "modern",
+            "statement": "Le nom Ncube est lié à un clan appelé emaNcubeni, né d'un groupe de la famille de Mlotsha qui se soumet au chef butelezi. Les pages lues ne disent pas d'où vient le mot Ncube ; Bryant note seulement que ces gens, que leurs voisins surnomment amaZilankata, « ceux qui révèrent le tampon d'herbe » qu'on pose sur la tête pour porter une charge, ne jettent jamais ces tampons mais les brûlent.",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 114",
+                "notes": "Londres, Longmans, Green, 1929, lu le 16 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 114 : « Besides the eziBisini (above), there was another Mlotsha party who subjected themselves to the Butelezi chief, and there grew into the emaNcubeni clan. Among surrounding folk they were nicknamed the amaZilankata (They who reverence the grass-coil—placed on the head when carrying burdens). »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant le clan des Ncube, selon Alfred T. Bryant"
+            },
+            "era": "polity",
+            "statement": "On parle alors de Mlotsha, un chef, peut-être déjà un petit clan, qui entre avec les Nguni ntungwa dans le district de Vryheid ; de sa famille viendront plus tard les clans eziBisini, emaNcubeni et Kambule, selon Alfred T. Bryant.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 114",
+                "notes": "Londres, Longmans, Green, 1929, lu le 16 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 114 : « among them a certain leader—perhaps even already a small clan—named Mlotsha. From this Mlotsha family were afterwards derived the small eziBisini, emaNcubeni, and Kambule clans. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ncube apparaît par écrit sous la forme Ncubes chez Alfred T. Bryant, qui place les Ncube près de la baie de Sainte-Lucie, à côté des Mkwanazi, à l'époque de Shaka. C'est la plus ancienne trace de ce nom que le projet connaît ; le clan qui le porte est plus ancien que ce dictionnaire.",
+            "formAsWritten": "Ncubes",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Alfred T. Bryant",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Zulu-English Dictionary",
+                "author": "Alfred T. Bryant",
+                "year": 1905,
+                "url": "https://archive.org/details/zuluenglishdicti00brya",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 28*",
+                "notes": "Pinetown (Natal), Mariannhill Mission Press, 1905. Lu dans la numérisation d'Internet Archive le 16 octobre 2026, page vue en image. Page 28* de l'histoire placée en tête du dictionnaire : « Adjoining the Mkwanazis were the Ncubes about St. Lucia Bay »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
