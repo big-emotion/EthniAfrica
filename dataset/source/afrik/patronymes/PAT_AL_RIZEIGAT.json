@@ -11,19 +11,28 @@
     {
       "spelling": "al-Rizeigat",
       "attestations": [
-        { "countryId": "SDN", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "SDN",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     },
     {
       "spelling": "Rizeigat",
       "attestations": [
-        { "countryId": "SDN", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "SDN",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     },
     {
       "spelling": "Rizigat",
       "attestations": [
-        { "countryId": "SDN", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "SDN",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -91,5 +100,130 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "La nisba ne détermine pas à elle seule l'unité sociale désignée : nous ne la documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom al-Rizeigat est celui d'un groupe du sud-est du Darfour, que la fiche range parmi les noms d'appartenance (nisba). MacMichael l'écrit Rizaykat en 1922 ; nous lisons ces deux formes comme un seul nom, ce que les sources lues ne disent pas elles-mêmes. Elles ne disent pas d'où vient le nom, ni qu'il soit porté comme nom de famille.",
+    "names": [
+      {
+        "nameText": "al-Rizeigat",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Nom d'un groupe du sud-est du Darfour, écrit Rizaykat en 1922.",
+        "periodLabel": "Écrit Rizaykat en 1922",
+        "accounts": [
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom al-Rizeigat apparaît par écrit sous une forme proche, Rizaykat, chez MacMichael, qui y consacre un paragraphe. Il place les Rizaykat au Darfour, à l'extrême sud-est, et en fait le groupe le plus riche et le plus puissant de ce pays. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand il est porté.",
+            "formAsWritten": "Rizaykat",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 290",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée vérifiée sur l'image de la page. Page 290 : section « (f) Rizaykat », premier paragraphe sur leur pays et leur richesse."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Expliqué en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom al-Rizeigat désigne, sous la forme Rizaykat chez MacMichael, un ensemble formé de plusieurs groupes. Il juge préférable de dire que les Mahamid, les Mahria et les Nawaiba se sont réunis au sud du Darfour pour le former, plutôt que de les prendre pour des rameaux d'un groupe bakkara du sud. Les sources lues ne disent pas d'où vient le nom lui-même.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 291-292",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée relevée sur l'en-tête de page du texte numérisé ; signes de transcription omis dans les formes citées. Page 291 : tableau des divisions des Rizaykat (Mahria, Nawaiba, Mahamid). Page 292 : « it is preferable to speak of these three tribes as having united in the south of Darfur to form the Rizaykat »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Rizeigat",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Rapporté en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Rizeigat est une autre manière d'écrire le nom que MacMichael écrit Rizaykat en 1922. Nous lisons ces formes comme un seul nom ; les sources lues n'emploient pas la forme Rizeigat elle-même.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 290",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée vérifiée sur l'image de la page. Page 290 : la forme Rizaykat, seule forme du nom dans le passage."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Rizigat",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Rapporté en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Rizigat est une autre manière d'écrire le nom que MacMichael écrit Rizaykat en 1922. Nous lisons ces formes comme un seul nom ; les sources lues n'emploient pas la forme Rizigat elle-même.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 290",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée vérifiée sur l'image de la page. Page 290 : la forme Rizaykat, seule forme du nom dans le passage."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

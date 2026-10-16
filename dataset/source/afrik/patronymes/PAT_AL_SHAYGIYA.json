@@ -89,5 +89,186 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom al-Shaygiya à un peuple au Soudan. Nous n'avons pas encore consulté de source consacrée à ce nom. La fiche générale sur les Arabes d'Afrique ne décrit pas les Ja'aliyyin et les Shaigiya séparément."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom al-Shaygiya est celui d'un groupe de la vallée du Nil, entre le sud de Dongola et la quatrième cataracte, que la fiche range parmi les noms d'appartenance (nisba). MacMichael l'écrit Shaikia en 1922. Les sources lues donnent une tradition et une hypothèse sur l'origine du nom, et trois idées sur l'origine du groupe ; nous les présentons plus bas, sans en retenir une seule.",
+    "names": [
+      {
+        "nameText": "al-Shaygiya",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Nom d'un groupe de la vallée du Nil, entre Dongola et la quatrième cataracte.",
+        "periodLabel": "Écrit Shaikia en 1922",
+        "accounts": [
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom al-Shaygiya apparaît par écrit sous une forme proche, Shaikia, chez MacMichael, qui écrit Shaiki pour une personne du groupe. Il situe leur pays dans la riche partie de la vallée du Nil entre le Gebel Dayka, dans le sud de Dongola, et le bout amont de la quatrième cataracte. C'est la plus ancienne trace de cette forme que le projet connaît ; MacMichael cite des auteurs plus anciens qui écrivent le nom autrement, ce que dit la variante plus bas.",
+            "formAsWritten": "Shaikia",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 213, 215",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée vérifiée sur l'image de la page. Page 213 : section « (g) The Shaikia », avec le singulier Shaiki. Page 215 : « The Shaikia country consists of the rich portion of the Nile valley », du Gebel Dayka à la quatrième cataracte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Expliqué en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom al-Shaygiya désigne, sous la forme Shaikia, un groupe que MacMichael tient pour distinct des autres groupes du Soudan et que la tradition rattache aux Ga'aliin. On ne sait pas avec certitude d'où vient le nom ; les sources lues donnent une tradition et une hypothèse, présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 213",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée vérifiée sur l'image de la page. Page 213 : ouverture de la section sur les Shaikia."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Rapporté en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Shaikia se rattacherait à un ancêtre nommé Shaik, selon la tradition que rapporte MacMichael : Shaik y est le frère de Ghanim, dont descendent tous les Ga'aliin proprement dits. MacMichael cite pour cela des arbres généalogiques de manuscrits ; il pense que le groupe a reçu en plus un élément étranger.",
+            "hypothesisGroup": "origine du nom Shaikia",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 213",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée vérifiée sur l'image de la page. Page 213 : « Shaik was the brother of the Ghanim from whom the Ga'aliin proper are all descended » et note 2 sur les arbres des manuscrits BA et A 11."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Cité en 1922, d'après Werne"
+            },
+            "era": "colonial",
+            "statement": "Le nom Schaigie viendrait peut-être d'un saint arabe, selon le voyageur Werne, que cite MacMichael : Werne écrit que ces gens doivent peut-être leur nom actuel à un saint arabe.",
+            "hypothesisGroup": "origine du nom Shaikia",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 214",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée relevée sur l'en-tête de page du texte numérisé ; signes de transcription omis dans les formes citées. Page 214 : texte de Werne cité en entier (Werne, p. 203-204 selon la note de MacMichael) : « who perhaps really do owe their present name to some Arabian saint »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Cité en 1922, d'après Werne"
+            },
+            "era": "colonial",
+            "statement": "Le nom Schaigie est celui de gens qui, selon Werne cité par MacMichael, disent n'être pas arabes et refusent aussi une origine nubienne. Werne se demande s'ils descendent d'une caste de guerriers venue d'Égypte, ou de guerriers mécontents que les rois d'Éthiopie ont accueillis ; il écrit que leurs petits rois n'ont pas pu ou pas voulu lui donner leur généalogie.",
+            "hypothesisGroup": "origine du groupe Shaikia, et non du nom",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 213-214",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée vérifiée sur l'image de la page. Pages 213-214 : texte de Werne cité par MacMichael, de « they unanimously... assert that they are no Arabs » à la question des guerriers d'Égypte et d'Éthiopie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Proposé en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Shaikia désignerait un groupe qui descend en partie, selon l'hypothèse que MacMichael avance lui-même, des mercenaires bosniaques, albanais et turcs qui font garnison en Nubie depuis la conquête de Sélim Ier, en 1517. MacMichael dit que le métissage avec ces soldats est en partie la cause et en partie l'effet de la ressemblance des Shaikia avec eux.",
+            "hypothesisGroup": "origine du groupe Shaikia, et non du nom",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 215",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée vérifiée sur l'image de la page. Page 215 : « I should prefer to hazard a theory that the Shaikia are partly descended from the Bosnian, Albanian and Turkish mercenaries » depuis 1517."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Shaigiya",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Rapporté en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Shaigiya est une autre manière de noter le nom que MacMichael écrit Shaikia. Les textes qu'il cite l'écrivent encore Chaykyes chez Cailliaud, Schaigie chez Werne et Shagieh chez Sir Charles Wilson.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 213-215",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée vérifiée sur l'image de la page. Pages 213-214 : Schaigie chez Werne. Page 215 : Chaykyes dans le passage de Cailliaud, et Shagieh dans la note citant Sir Charles Wilson."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
