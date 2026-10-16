@@ -92,5 +92,168 @@
       "fieldPath": "homonyms",
       "reason": "la notice exacte du Dictionary of American Family Names, les catalogues bibliographiques et les recherches « Fernandes » associées au Cap-Vert n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Fernandes est un nom de famille portugais, formé sur le prénom Fernando. C'était d'abord un patronyme, c'est-à-dire un nom tiré du nom du père. Il est porté au Cap-Vert. Les sources lues ne disent pas depuis quand ni comment il y est arrivé ; nous présentons plus bas ce qu'elles disent, y compris trois explications de sa terminaison.",
+    "names": [
+      {
+        "nameText": "Fernandes",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Un patronyme portugais tiré du prénom Fernando, porté au Cap-Vert.",
+        "periodLabel": "Écrit dès le XIe siècle sous une forme proche ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Fernandes est un patronyme portugais et galicien, formé sur le prénom Fernando, selon le Dictionary of American Family Names, qui y voit l'un des noms de famille les plus courants du Portugal. Cette source ne dit rien du Cap-Vert.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Fernandes",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://web.archive.org/web/20251206163330/https://www.ancestry.com/last-name-meaning/fernandes",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lu le 16 octobre 2026 dans la copie du 6 décembre 2025 conservée par la Wayback Machine, le site d'Ancestry refusant l'accès. La notice dit : « Portuguese and Galician : patronymic from the personal name Fernando. This is one of the most common surnames in Portugal. » Elle ajoute des emplois en Espagne et en Inde, que nous ne reprenons pas."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Publié en 1928"
+            },
+            "statement": "Le nom Fernandes a d'abord voulu dire « fils de Fernando », selon José Leite de Vasconcelos : il le range parmi les noms de famille d'aujourd'hui venus des patronymes du Moyen Âge, comme dans « Afonso Fernandiz, filho de Fernam Gallego ». Il ajoute qu'aujourd'hui, porter ce nom ne veut plus dire que son père s'appelle Fernando.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 120",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 120 : « Quem em tempos modernos se chama Enes (ou Eanes), Fernandes, Henriques, não quer significar que seu pai é respectivamente João, Fernando, Henrique, como outr'ora acontecia : … Afonso FERNANDIZ, filho de FERNAM Gallego (RL, XXI, 261, Azevedo) ». Fernandes figure ensuite dans sa « lista alfabetica de apelidos contemporaneos, provenientes de patronimicos medievais »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1566,
+              "to": 1591,
+              "label": "De 1566 à 1591"
+            },
+            "statement": "Le nom Fernandes est devenu un simple nom de famille au XVIe siècle : dans des documents de 1566 à 1591 que cite José Leite de Vasconcelos, « Encenso Fernandes, carpinteiro », fils de « Heitor Fernandes », porte le même nom que son père. L'auteur note que Fernandes, « originairement patronyme », est ici un « simple surnom ».",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 116",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 116 : « Varios exemplos em documentos de 1566 a 1591, onde não se nota patronimico (AHP, V, 23 e 115 sgs.) : Encenso Fernandes, carpinteiro, filho de Heitor Fernandes (Fernandes, originariamente patronimico, é aqui simples apelido) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "Proposée en 1921"
+            },
+            "statement": "Le nom Fernandes aurait sa terminaison -es d'un suffixe de l'ancienne langue ibère qui marque la descendance, selon Schuchardt en 1921, que rapporte José Leite de Vasconcelos. Ce suffixe, traduit en latin par -ici, aurait donné Lupici et Martinici, d'où Lopez et Martinz. Il ne cite pas Fernandes.",
+            "hypothesisGroup": "origine de la terminaison du nom Fernandes",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 121",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 121 : section « Origem dos patronímicos em -z » : l'auteur résume trois explications de la terminaison -ez (-iz) des patronymes, celles de Meyer-Lübke (1917), de Rios y Rios (1871) et de Schuchardt (1921)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1917,
+              "to": 1917,
+              "label": "Proposée en 1917"
+            },
+            "statement": "Le nom Fernandes aurait sa terminaison -es du génitif latin Dominici, de Dominicus, selon Meyer-Lübke en 1917, que rapporte José Leite de Vasconcelos. Le -z de Dominiz, pris pour le signe d'un patronyme, aurait été ajouté aux autres noms.",
+            "hypothesisGroup": "origine de la terminaison du nom Fernandes",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 121",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 121 : section « Origem dos patronímicos em -z » : l'auteur résume trois explications de la terminaison -ez (-iz) des patronymes, celles de Meyer-Lübke (1917), de Rios y Rios (1871) et de Schuchardt (1921)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1871,
+              "to": 1871,
+              "label": "Proposée en 1871"
+            },
+            "statement": "Le nom Fernandes aurait sa terminaison -es des finales de génitifs latins comme Roderici et Didaci, selon Rios y Rios en 1871, que rapporte José Leite de Vasconcelos. On aurait eu d'abord Nunici, Gundisalviz et Rodriz, puis Nunez, Gonzaliz et Ruiz.",
+            "hypothesisGroup": "origine de la terminaison du nom Fernandes",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 121",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 121 : section « Origem dos patronímicos em -z » : l'auteur résume trois explications de la terminaison -ez (-iz) des patronymes, celles de Meyer-Lübke (1917), de Rios y Rios (1871) et de Schuchardt (1921)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1001,
+              "to": 1100,
+              "label": "XIe siècle"
+            },
+            "statement": "Le nom Fernandes a pour plus ancienne trace une forme latine proche, Fernandi, dans « Iohannes Fernandi », un texte du XIe siècle que cite José Leite de Vasconcelos parmi les patronymes de ses documents anciens : Jean, fils de Fernando. C'est la plus ancienne trace de ce nom que le projet connaît ; elle ne dit rien du Cap-Vert.",
+            "formAsWritten": "Fernandi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 103",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 103 : dans la liste des patronymes au génitif en -i, « Iohannes Fernandi, sec. XI, ib., p. 213 », le renvoi « ib. » désignant le recueil de documents cité dans la liste voisine (DC)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

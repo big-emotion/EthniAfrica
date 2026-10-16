@@ -92,5 +92,52 @@
       "fieldPath": "homonyms",
       "reason": "la notice exacte du Dictionary of American Family Names, les catalogues bibliographiques et les recherches « Monteiro » associées au Cap-Vert n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Monteiro est un nom de famille portugais, qui vient d'un métier ou d'une charge, selon le linguiste José Leite de Vasconcelos. Il est porté au Cap-Vert. Les sources lues ne disent pas depuis quand ni comment il y est arrivé, ni de quand date sa plus ancienne trace écrite ; nous présentons plus bas ce qu'elles disent.",
+    "names": [
+      {
+        "nameText": "Monteiro",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Un nom de famille portugais tiré d'un métier ou d'une charge, porté au Cap-Vert.",
+        "periodLabel": "Décrit au Portugal en 1928 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Publié en 1928"
+            },
+            "statement": "Le nom Monteiro vient du mot portugais monteiro, « chasseur de montagne » (« caçador de monte »), selon le dictionnaire de Moraes que cite José Leite de Vasconcelos, qui ajoute que ce fut aussi une charge publique. Dans sa conclusion, il compte Monteiro parmi les surnoms qui rappellent des activités ou des charges aujourd'hui disparues, mais qui ont compté dans l'ancienne société portugaise. Il parle du Portugal et ne dit rien du Cap-Vert.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 189",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 189 : dans la liste des « apelidos e alcunhas modernos » (Caçador, Caseiro, Cocheiro, Lavrador… Monteiro, Pastor, Rendeiro, Vendeiro), il écrit « Monteiro («caçador de monte», Moraes; tambem foi cargo público) »."
+              },
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 567",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 567 : chapitre « Conclusão » : « Quando encontramos as alcunhas ou alcunhas-apelidos de Espadeiro, Mèleiro, Monteiro, evocamos indústrias ou cargos hoje extintos, mas que desempenharam certo papel na antiga sociedade portuguesa »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
