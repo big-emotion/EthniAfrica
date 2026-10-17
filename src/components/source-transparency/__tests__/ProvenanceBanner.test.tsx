@@ -26,11 +26,26 @@ function census(
 }
 
 describe("the provenance banner", () => {
+  // The census leaves out an assertion that cites no source, so every one it
+  // counts has one, and the banner can say so.
   // @req REQ-019
-  it("states how many assertions the fiche records", () => {
-    render(<ProvenanceBanner language="fr" census={census()} />);
+  it("states how many assertions the fiche records, each with its source", () => {
+    const { rerender } = render(
+      <ProvenanceBanner language="fr" census={census()} />
+    );
+    expect(
+      screen.getByText("15 informations, chacune avec sa source")
+    ).toBeInTheDocument();
 
-    expect(screen.getByText(/15 informations présentées/)).toBeInTheDocument();
+    rerender(
+      <ProvenanceBanner
+        language="fr"
+        census={census({ official: 1, referenced: 0 })}
+      />
+    );
+    expect(
+      screen.getByText("1 information, avec sa source")
+    ).toBeInTheDocument();
   });
 
   // The banner counts and dates; it never weighs. No score, no « confiance »,
@@ -72,12 +87,18 @@ describe("the provenance banner", () => {
     expect(region).not.toHaveAttribute("data-provenance-standing");
   });
 
+  // A missing stamp means no review was recorded, not that nobody read the
+  // fiche, so the sentence says « enregistré ».
   // @req REQ-019
   it("dates the last human review, and says so when there has been none", () => {
     const { rerender } = render(
       <ProvenanceBanner language="fr" census={census()} />
     );
-    expect(screen.getByText(/12 mars 2026/)).toBeInTheDocument();
+    expect(
+      screen.getByText(
+        "Nous avons relu cette fiche pour la dernière fois le 12 mars 2026."
+      )
+    ).toBeInTheDocument();
 
     rerender(
       <ProvenanceBanner
@@ -85,7 +106,14 @@ describe("the provenance banner", () => {
         census={census({}, { lastHumanAuditAt: null })}
       />
     );
-    expect(screen.getByText(/Aucune relecture humaine/)).toBeInTheDocument();
+    expect(
+      screen.getByText(
+        "Nous n'avons encore enregistré aucune relecture de cette fiche."
+      )
+    ).toBeInTheDocument();
+    expect(screen.getByRole("region").textContent).not.toMatch(
+      /relecture humaine|présentées/
+    );
   });
 
   // @req REQ-019

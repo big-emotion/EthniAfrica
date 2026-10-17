@@ -1,5 +1,9 @@
 import type { Language } from "@/types/shared";
 
+/** « le seul pays où » or « les 13 pays où »: some footprints hold one country. */
+const countriesWhere = (count: number) =>
+  count === 1 ? "le seul pays où" : `les ${count} pays où`;
+
 const fr = {
   title: {
     eyebrow: "Famille linguistique",
@@ -61,12 +65,14 @@ const fr = {
       `${count} autres peuples rattachés ne sont pas listés ici.`,
     missingDistribution:
       "Cette page ne donne ni ses branches ni les pays où elle est présente. L'aire dessinée plus haut est donc reconstruite à partir des peuples rattachés à la famille, et c'est écrit.",
+    // The fill grows more opaque with each people, which reads darker on a
+    // light page and brighter on a dark one, hence « marquée ».
     footprintMemberPeoples: (peopleCount: number, countryCount: number) =>
-      `L'aire dessinée plus haut n'est pas lue dans la page de la famille : elle est calculée. Chaque peuple donne sa famille de langues et les pays où il se trouve aujourd'hui ; l'union de ces pays sur les ${peopleCount} peuples rattachés à cette famille donne les ${countryCount} pays teintés, l'intensité suivant le nombre de peuples présents.`,
+      `La zone colorée sur la carte plus haut ne vient pas de la page de la famille : nous l'avons construite à partir des ${peopleCount} peuples rattachés à cette famille de langues. Elle couvre ${countriesWhere(countryCount)} vivent aujourd'hui ces peuples. Plus un pays compte de ces peuples, plus sa couleur est marquée.`,
     footprintDeclaredPeoples: (peopleCount: number, countryCount: number) =>
-      `L'aire dessinée plus haut n'est pas lue dans la page de la famille : elle est calculée. Aucun peuple n'est rattaché directement à cette famille : ils relèvent de ses sous-familles. Plutôt que d'additionner celles-ci — ce qui ferait affirmer à la carte une unité que la page elle-même conteste — l'aire suit la seule liste que la page assume, les peuples que la page nomme : l'union des pays où ces ${peopleCount} peuples se trouvent aujourd'hui donne les ${countryCount} pays teintés. La carte ne dit donc rien de plus que le texte.`,
+      `La zone colorée sur la carte plus haut ne vient pas de la page de la famille : nous l'avons construite à partir des peuples que cette page nomme. Aucun peuple n'est rattaché directement à cette famille : chacun appartient à l'une de ses sous-familles. Additionner ses sous-familles ferait croire qu'elle forme un ensemble uni, ce que la page elle-même conteste. La carte couvre donc seulement ${countriesWhere(countryCount)} vivent aujourd'hui les ${peopleCount} peuples nommés par la page : elle ne dit rien de plus que le texte.`,
     borderNote:
-      "Le bord reste tireté partout : une famille linguistique n'a pas de frontière, et cet agrégat encore moins que le reste.",
+      "Le bord de cette zone est dessiné en tirets, parce qu'une famille de langues n'a pas de frontière.",
     declaredArea: "Aire donnée ici :",
   },
   decolonial: {

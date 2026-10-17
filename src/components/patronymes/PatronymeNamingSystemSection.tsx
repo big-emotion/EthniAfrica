@@ -12,6 +12,9 @@ import {
   readTotemicFoodProhibition,
   readTransmissionMode,
 } from "@/lib/patronymes/content";
+// Server-only here, so the map asset behind the names never reaches the
+// browser. It is the resolver that maps SSD onto the asset's SDS.
+import { getAdmin0NameFr } from "@/lib/atlas/overlays";
 import { resolveChapter } from "@/lib/fieldProvenance";
 import { getTranslation } from "@/lib/translations";
 import type { Language } from "@/types/shared";
@@ -82,7 +85,9 @@ export function PatronymeNamingSystemSection({
                 {form.countryIds.length > 0 ? (
                   <span>
                     {" — "}
-                    {t.spellingAttestedInPrefix} {form.countryIds.join(", ")}
+                    {t.spellingAttestedIn(
+                      form.countryIds.map((id) => getAdmin0NameFr(id) ?? id)
+                    )}
                   </span>
                 ) : null}
               </li>

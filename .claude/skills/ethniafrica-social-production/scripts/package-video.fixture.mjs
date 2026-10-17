@@ -145,6 +145,7 @@ export function installVideoPackageFixture(
     video: final,
     design,
     research: f.config.research,
+    campaign: f.config.campaign,
     networks: f.config.networks.map((n) => ({
       network: n.network,
       caption: n.caption,
