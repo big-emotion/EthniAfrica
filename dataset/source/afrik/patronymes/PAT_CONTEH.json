@@ -54,6 +54,22 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "arcin-1907-guinee-francaise",
+      "title": "La Guinée française : races, religions, coutumes, production, commerce",
+      "url": "https://archive.org/details/laguinefrana00arci",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "André Arcin, administrateur colonial, Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026. Texte d'un témoin colonial, cité pour ce qu'il écrit des familles et de leurs n'téné, et non comme dernier mot sur leur histoire."
+    },
+    {
+      "sourceKey": "bamadaba-jamuw",
+      "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+      "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 16 octobre 2026."
     }
   ],
   "gaps": [
@@ -85,5 +101,135 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Conteh à un peuple en Sierra Leone. Nous n'avons pas encore consulté de source consacrée à ce nom. Notre fiche sur les Susu cite le président guinéen Alpha Condé. Cette mention ne relie pas le nom à un peuple de Sierra Leone."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Conteh est un nom de Sierra Leone dont les sources lues ne parlent que par sa forme voisine Konté, relevée en Guinée comme un nom de clan mandé. On ne sait pas avec certitude d'où il vient ; nous présentons plus bas ce que ces sources en disent.",
+    "names": [
+      {
+        "nameText": "Conteh",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de Sierra Leone que les sources lues ne documentent qu'en Guinée, sous la forme Konté.",
+        "periodLabel": "Une forme proche écrite dès 1907 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Conteh s'écrit comme l'écriture anglaise du nom que le dictionnaire des noms de clan mandingues donne sous la forme Konte, variante de l'entrée Kone. Le dictionnaire n'écrit pas Conteh et aucune source lue ne parle de ce nom en Sierra Leone : le rapprochement repose sur la ressemblance des écritures. On ne sait pas avec certitude d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 16 octobre 2026. Entrée Kone, dont Konte est l'une des variantes (avec Kɔ́ndɛ, Kɔ́nɛ et Kɔ́ntɛ) ; parlers malinké (m) et bambara (b) ; statuts jèli et hɔ́rɔn ; aucun sens donné. Le dictionnaire n'écrit pas la forme Conteh."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Décrit en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Conteh se rapproche de Konté ou Kondé, qu'André Arcin dit présent en Guinée, au Kouloukalan, au Nouga, au Kissi et au Sankaran, où ils sont chefs, puis vers la côte, au Tamisso, au Bèréïré et au Lisso, sur le Rio Pongo. Ces passages parlent de la Guinée, pas de la Sierra Leone.",
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 298",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026, au numéro de page imprimé. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 298 : « Sous le nom de Konté ou Kondé nous les trouvons dans le Kouloukalan, le Nouga […], dans le Kissi et le Sankaran où ils sont chefs. Mais, plus que leurs frères Keïta ils se sont avancés vers la région côtière. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Proposé en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Conteh, sous la forme Konté ou Kanté, serait celui de proches parents des Konaté, selon André Arcin : leur n'téné particulier (l'emblème de la famille), le cynocéphale, ne prouve rien contre cette idée, écrit-il, car ils ont pu adopter celui des peuples chez lesquels ils vivaient.",
+            "hypothesisGroup": "famille des Konté",
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 297",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026, au numéro de page imprimé. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 297 : « Les Konté ou Kanté, nous paraissent proches parents des Konaté. Leur n'téné particulier, le cynocéphale, ne prouve rien contre cette hypothèse »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Rapporté en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Konté serait un autre nom des Keïta, selon André Arcin, qui écrit « Les Keïta appelés aussi Konaté, Konté et Massaré ».",
+            "hypothesisGroup": "famille des Konté",
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 296",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026, au numéro de page imprimé. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 296 (première page du paragraphe « Répartition », sans numéro imprimé) : « Les Keïta appelés aussi Konaté, Konté et Massaré comptent comme les tribus royales par excellence chez les Malinké »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "statement": "Le nom Conteh apparaît sous une forme proche, Konté, chez André Arcin, qui raconte, dans un passage sur les n'téné (les emblèmes de famille), que chez les Konté le serpent trigonocéphale tua le fils aîné du patriarche pendant que la mère était aux champs. C'est la plus ancienne trace de ce nom que le projet connaît ; elle ne situe pas ce récit et ne parle pas de la Sierra Leone.",
+            "formAsWritten": "Konté",
+            "birth": true,
+            "actors": [
+              {
+                "name": "André Arcin",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 248",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026, au numéro de page imprimé. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 248 : « le Trigonocéphale chez les Konté tua le fils aîné du patriarche de la famille pendant que la mère était aux champs »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

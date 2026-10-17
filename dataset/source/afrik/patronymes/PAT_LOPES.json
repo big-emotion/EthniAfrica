@@ -92,5 +92,190 @@
       "fieldPath": "homonyms",
       "reason": "la notice exacte du Dictionary of American Family Names, les catalogues bibliographiques et les recherches « Lopes » associées au Cap-Vert n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Lopes est un nom de famille portugais, formé sur l'ancien prénom Lopo, qui vient du latin lupus, « loup ». C'était d'abord un patronyme, c'est-à-dire un nom tiré du nom du père. Il est porté au Cap-Vert : José Leite de Vasconcelos cite un étudiant cap-verdien qui le porte en 1926-1928. Les sources ne disent pas depuis quand il y est porté ; nous présentons plus bas ce qu'elles disent, y compris trois explications de sa terminaison.",
+    "names": [
+      {
+        "nameText": "Lopes",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Un patronyme portugais tiré de l'ancien prénom Lopo, porté au Cap-Vert.",
+        "periodLabel": "Écrit dès 1258 sous une forme proche ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Lopes est un patronyme portugais et galicien, formé sur l'ancien prénom Lopo, du latin lupus, « loup », selon le Dictionary of American Family Names. Cette source ne dit rien du Cap-Vert.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Lopes",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://web.archive.org/web/20260212081714/https://www.ancestry.com/last-name-meaning/lopes",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lu le 16 octobre 2026 dans la copie du 12 février 2026 conservée par la Wayback Machine, le site d'Ancestry refusant l'accès. La notice dit : « Portuguese and Galician : patronymic from the medieval personal name Lopo (from Latin lupus ‘wolf’). » Elle ajoute des emplois en espagnol et chez les Sépharades, que nous ne reprenons pas."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1926,
+              "to": 1928,
+              "label": "De 1926 à 1928"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lopes est porté par un Cap-Verdien dans les années 1920 : José Leite de Vasconcelos y cite son étudiant d'université « Lopes da Silva, que é Caboverdense », qui lui a donné une liste de diminutifs en usage au Cap-Vert. Il ne dit rien de l'origine de ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 493",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 493 : « O meu aluno universitario (1926-1928) Lopes da Silva, que é Caboverdense, ofereceu-me longa lista de hipocoristicos de Cabo Verde »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Publié en 1928"
+            },
+            "statement": "Le nom Lopes a d'abord voulu dire « fils de Lopo », selon José Leite de Vasconcelos, qui le range parmi les noms de famille d'aujourd'hui venus des patronymes du Moyen Âge. Il rappelle qu'autrefois, porter un tel nom voulait dire que son père s'appelait ainsi, ce qui n'est plus le cas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 120",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 120 : Lopes figure dans la « lista alfabetica de apelidos contemporaneos, provenientes de patronimicos medievais » ; le texte qui la précède dit que celui qui se nomme ainsi ne veut plus dire que son père est Fernando, Henrique, etc., « como outr'ora acontecia »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1528,
+              "label": "Avant 1528"
+            },
+            "statement": "Le nom Lopes sert encore de patronyme au XVIe siècle : José Leite de Vasconcelos cite « Fernão Lopes de Castanheda, filho de Lopo Fernandes de Castanheda », né avant 1528. Le père s'appelle Lopo, et le fils porte Lopes.",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 115",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 115 : « se ainda no sec. XVI aparecem exemplos, como : Fernão Lopes de Castanheda, filho de Lopo Fernandes de Castanheda, nascido antes de 1528 (vid. Dicc. Bibl., II, 284) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "Proposée en 1921"
+            },
+            "statement": "Le nom Lopes aurait sa terminaison -es d'un suffixe de l'ancienne langue ibère qui marque la descendance, selon Schuchardt en 1921, que rapporte José Leite de Vasconcelos. Ce suffixe, traduit en latin par -ici, aurait donné Lupici et Martinici, d'où Lopez et Martinz.",
+            "hypothesisGroup": "origine de la terminaison du nom Lopes",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 121",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 121 : section « Origem dos patronímicos em -z » : l'auteur résume trois explications de la terminaison -ez (-iz) des patronymes, celles de Meyer-Lübke (1917), de Rios y Rios (1871) et de Schuchardt (1921)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1917,
+              "to": 1917,
+              "label": "Proposée en 1917"
+            },
+            "statement": "Le nom Lopes aurait sa terminaison -es du génitif latin Dominici, de Dominicus, selon Meyer-Lübke en 1917, que rapporte José Leite de Vasconcelos. Le -z de Dominiz, pris pour le signe d'un patronyme, aurait été ajouté aux autres noms.",
+            "hypothesisGroup": "origine de la terminaison du nom Lopes",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 121",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 121 : section « Origem dos patronímicos em -z » : l'auteur résume trois explications de la terminaison -ez (-iz) des patronymes, celles de Meyer-Lübke (1917), de Rios y Rios (1871) et de Schuchardt (1921)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1871,
+              "to": 1871,
+              "label": "Proposée en 1871"
+            },
+            "statement": "Le nom Lopes aurait sa terminaison -es des finales de génitifs latins comme Roderici et Didaci, selon Rios y Rios en 1871, que rapporte José Leite de Vasconcelos. On aurait eu d'abord Nunici, Gundisalviz et Rodriz, puis Nunez, Gonzaliz et Ruiz.",
+            "hypothesisGroup": "origine de la terminaison du nom Lopes",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 121",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 121 : section « Origem dos patronímicos em -z » : l'auteur résume trois explications de la terminaison -ez (-iz) des patronymes, celles de Meyer-Lübke (1917), de Rios y Rios (1871) et de Schuchardt (1921)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1258,
+              "to": 1258,
+              "label": "1258"
+            },
+            "statement": "Le nom Lopes a pour plus ancienne trace une forme proche, Lopiz, dans « Martinus Lopiz », un texte latin des Inquirições, les enquêtes de 1258, pour la région de la Beira, que cite José Leite de Vasconcelos : Martin, fils de Lopo. C'est la plus ancienne trace de ce nom que le projet connaît ; elle ne dit rien du Cap-Vert.",
+            "formAsWritten": "Lopiz",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 127",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 127 : « Nas Inquiriçõe[s] de 1258 abundam genetivos em -i… Na 3.ª alçada (Beira) a fórma predominante é tambem a desinencia -i, raramente o sufixo -iz (Martinus Lopiz, p. 807). »"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

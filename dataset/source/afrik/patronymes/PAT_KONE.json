@@ -11,13 +11,22 @@
     {
       "spelling": "Koné",
       "attestations": [
-        { "countryId": "CIV", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "CIV",
+          "sourceRefs": [
+            "afrik-candidate-queue",
+            "binger-1892-du-niger-au-golfe-de-guinee"
+          ]
+        }
       ]
     },
     {
       "spelling": "Kone",
       "attestations": [
-        { "countryId": "CIV", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "CIV",
+          "sourceRefs": ["afrik-candidate-queue", "bamadaba-jamuw"]
+        }
       ]
     }
   ],
@@ -32,7 +41,10 @@
     {
       "peopleId": "PPL_DIOULA",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": [
+        "afrik-candidate-queue",
+        "binger-1892-du-niger-au-golfe-de-guinee"
+      ]
     }
   ],
   "countries": [
@@ -40,6 +52,11 @@
       "countryId": "CIV",
       "status": "attested",
       "sourceRefs": ["afrik-candidate-queue"]
+    },
+    {
+      "countryId": "GIN",
+      "status": "attested",
+      "sourceRefs": ["arcin-1907-guinee-francaise"]
     }
   ],
   "alliances": [],
@@ -54,6 +71,30 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "arcin-1907-guinee-francaise",
+      "title": "La Guinée française : races, religions, coutumes, production, commerce",
+      "url": "https://archive.org/details/laguinefrana00arci",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "André Arcin, administrateur colonial, Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026. Texte d'un témoin colonial, cité pour ce qu'il écrit des familles et de leurs n'téné, et non comme dernier mot sur leur histoire."
+    },
+    {
+      "sourceKey": "bamadaba-jamuw",
+      "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+      "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 16 octobre 2026."
+    },
+    {
+      "sourceKey": "binger-1892-du-niger-au-golfe-de-guinee",
+      "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi",
+      "url": "https://www.gutenberg.org/ebooks/74720",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Louis-Gustave Binger, Hachette, Paris, 1892, deux tomes ; récit du voyage de 1887-1889, lu dans la réédition numérique du Projet Gutenberg le 16 octobre 2026. Officier français en mission, cité pour les formes qu'il écrit."
     }
   ],
   "gaps": [
@@ -81,5 +122,166 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Koné est un nom de clan, ou jamu, mandé, que l'on trouve aussi chez des Sénoufo et en Guinée ; on l'écrit aussi Kone. On ne sait pas avec certitude d'où il vient ; nous présentons plus bas ce que les sources en disent.",
+    "names": [
+      {
+        "nameText": "Koné",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan mandé, écrit Konné dès 1892 chez des Sénoufo ; son origine reste discutée.",
+        "periodLabel": "Écrit sous une forme proche dès 1892 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Koné désigne un clan, ou jamu, mandé. Le dictionnaire des noms de clan mandingues l'écrit Kone, avec les variantes Kɔ́ndɛ, Konte, Kɔ́nɛ et Kɔ́ntɛ, le relève en malinké et en bambara avec les statuts jèli et hɔ́rɔn, et n'en donne pas le sens. On ne sait pas avec certitude d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 16 octobre 2026. Entrée Kone, avec les variantes Kɔ́ndɛ, Konte, Kɔ́nɛ et Kɔ́ntɛ ; parlers malinké (m) et bambara (b) ; statuts jèli et hɔ́rɔn ; aucun sens donné."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Décrit en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Koné est porté en Guinée, selon André Arcin, par des familles diomandé du Sankaran, que les Kamara disent être de « faux Diomandé », et par des Malinké du sud.",
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 286, 310",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026, au numéro de page imprimé. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 310 : « Les Diomandé comprennent diverses tribus, entre autres les Kamara, les Tambara, les Koné. Les deux dernières semblent d'une origine très différente ». Page 286 : parmi les Malinké du sud, « des Masaré-Diara, Koné, Taraouré »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Rapporté en 1907"
+            },
+            "statement": "Le nom Koné est écrit Konné (Koné) par André Arcin, qui reprend la liste de Binger : chez les Dioula de Kong, les Tagouara comprennent les Traouré, les Diarabasou, les Konné et les Bamma. Il note aussi que Binger classe chez les Bamana les Konéré, « fils de Koné ».",
+            "formAsWritten": "Konné (Koné)",
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 285-286",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026, au numéro de page imprimé. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 285 : « Les Konné (Koné) » ; puis « les Konéré, fils de Koné, dont le nom se retrouve chez les Tagouara » (suite page 286)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "Proposé en 1892"
+            },
+            "era": "polity",
+            "statement": "Le nom Koné serait, chez les Sénoufo, un nom de clan pris aux Mandé : Louis-Gustave Binger le pense, puisqu'aucun prénom sénoufo n'est identique à un prénom mandé.",
+            "hypothesisGroup": "origine du nom Koné chez les Sénoufo",
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74720",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 1, p. 214",
+                "notes": "Hachette, Paris, 1892, deux tomes ; récit du voyage de 1887-1889. Lu dans la réédition numérique du Projet Gutenberg (tome 1 no 74720, tome 2 no 74721), qui conserve la pagination imprimée. L'auteur est un officier français en mission ; il est cité pour les formes qu'il écrit et ce qu'on lui rapporte. Tome 1, page 214 : « Sans être de même race que les Mandé, les Siène-ré ont, depuis longtemps […], pris les diammou (noms de tribu) des Mandé. » Puis : « Mais ce qui semblerait prouver que ces noms de famille sont empruntés aux Mandé, c'est qu'aucun de leurs prénoms n'est identique à ceux des Mandé. » Lu le 16 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "Voyage de 1887-1889, récit publié en 1892"
+            },
+            "era": "polity",
+            "statement": "Le nom Koné apparaît sous une forme proche, Konné, chez Louis-Gustave Binger, qui en trouve chez les Sénoufo, avec des Sanokho, des Diarabasou, des Bamma, des Traouré et des Konaté. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un voyageur l'a noté, pas depuis quand le nom est porté.",
+            "formAsWritten": "Konné",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Louis-Gustave Binger",
+                "role": "officier français, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74720",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 1, p. 214",
+                "notes": "Hachette, Paris, 1892, deux tomes ; récit du voyage de 1887-1889. Lu dans la réédition numérique du Projet Gutenberg (tome 1 no 74720, tome 2 no 74721), qui conserve la pagination imprimée. L'auteur est un officier français en mission ; il est cité pour les formes qu'il écrit et ce qu'on lui rapporte. Tome 1, page 214 : « J'ai trouvé chez eux : des Konné, des Sanokho, des Diarabasou ou Diarasouba, des Bamma, des Traouré, des Konaté ». « Eux » désigne les Siène-ré, ou Sénoufo. Lu le 16 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kone",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kone est l'écriture sans accent, celle du dictionnaire des noms de clan mandingues, qui en fait l'entrée principale et y range les variantes Kɔ́ndɛ, Konte, Kɔ́nɛ et Kɔ́ntɛ.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 16 octobre 2026. Entrée Kone, avec les variantes Kɔ́ndɛ, Konte, Kɔ́nɛ et Kɔ́ntɛ ; parlers malinké (m) et bambara (b) ; statuts jèli et hɔ́rɔn ; aucun sens donné."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

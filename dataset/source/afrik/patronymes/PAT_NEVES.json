@@ -92,5 +92,95 @@
       "fieldPath": "homonyms",
       "reason": "les résultats exacts « Neves », RTP Arquivos, Ciberdúvidas et les catalogues bibliographiques sur São Tomé-et-Príncipe n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Neves est un nom de famille portugais, qui viendrait d'un titre de la Vierge Marie, Maria das Neves, « Marie des Neiges ». Il est porté à São Tomé-et-Príncipe. Les sources lues ne disent pas depuis quand ni comment il y est arrivé. Elles montrent que le nom est écrit au Portugal aux XIIIe et XIVe siècles, comme surnom d'une femme.",
+    "names": [
+      {
+        "nameText": "Neves",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Un nom de famille portugais tiré d'un titre de la Vierge, porté à São Tomé-et-Príncipe.",
+        "periodLabel": "Écrit dès les XIIIe et XIVe siècles ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Neves est, au Portugal, une forme courte du titre de la Vierge et du prénom Maria das Neves, « Marie des Neiges », selon le Dictionary of American Family Names. La même source donne aux formes galicienne et asturienne une autre origine, des lieux appelés Neves, que nous ne reprenons pas pour le Portugal. Cette source ne dit rien de São Tomé-et-Príncipe.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Neves",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://web.archive.org/web/20250910120319/https://www.ancestry.com/last-name-meaning/neves",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lu le 16 octobre 2026 dans la copie du 10 septembre 2025 conservée par la Wayback Machine, le site d'Ancestry refusant l'accès. La notice dit : « Portuguese : from a short form of the Marian title and name Maria das Neves ‘Mary of the Snows’ (see Nieves). Galician and Asturian-Leonese : habitational name from any of the places called Neves in the provinces of Pontevedra, Lugo, and A Coruña (all three in Galicia) and Asturias. » Elle ajoute un emploi anglais, que nous ne reprenons pas."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Proposée en 1928"
+            },
+            "statement": "Le nom Neves viendrait d'une origine religieuse, selon José Leite de Vasconcelos, qui pose la question : il rapproche la Senhora das Neves, Notre-Dame des Neiges, et le prénom espagnol Maria de las Nieves, donné par dévotion à la Vierge de ce nom.",
+            "hypothesisGroup": "origine du nom Neves",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 276",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 276 : à propos de « Tareja Rodrigues Neves, p. 160 (hoje mui usado ; origem religiosa ? Cf. Senhora das Neves ; em Hespanha Maria de las Nieves, realmente por devoção com a Senhora de las Nieves. Teremos pois aqui originariamente um sobrenome) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1201,
+              "to": 1400,
+              "label": "XIIIe et XIVe siècles"
+            },
+            "statement": "Le nom Neves a pour plus ancienne trace « Tareja Rodrigues Neves », dans le Livro de Linhagens, que cite José Leite de Vasconcelos. Il écrit que ce nom est aujourd'hui « très usité ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle ne dit rien de São Tomé-et-Príncipe.",
+            "formAsWritten": "Neves",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 276",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 276 : dans la liste « Das Linhagens : … Tareja Rodrigues Neves, p. 160 (hoje mui usado ; origem religiosa ?…) »."
+              },
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 332",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 332 : « Nas Linhagens, sec. XIII-XIV, figuram muitas alcunhas… » : l'auteur date le Livro de Linhagens des XIIIe et XIVe siècles."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -76,5 +76,63 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Bandeira à un peuple à São Tomé-et-Príncipe. Nous n'avons pas encore consulté de source consacrée à ce nom. La fiche sur les Forros cite trois noms d'origine portugaise : Trovoada, Espírito Santo et Vera Cruz. Leur usage ne permet pas de rattacher tous les noms portugais aux Forros."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Bandeira est un nom de famille portugais, porté à São Tomé-et-Príncipe. Les sources lues ne disent pas depuis quand ni comment il y est arrivé, ni de quand date sa plus ancienne trace écrite. Le linguiste José Leite de Vasconcelos le dit d'usage courant au Portugal en 1928 et pense qu'il peut venir d'un nom de lieu ; nous n'avons trouvé aucune autre explication.",
+    "names": [
+      {
+        "nameText": "Bandeira",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Un nom de famille portugais d'usage courant, qui peut venir d'un nom de lieu ; porté à São Tomé-et-Príncipe.",
+        "periodLabel": "Décrit au Portugal en 1928 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Proposée en 1928"
+            },
+            "statement": "Le nom Bandeira viendrait d'un nom de lieu, selon José Leite de Vasconcelos : il en connaît des exemples précédés de « de », et il existe des lieux ainsi appelés. Il écrit seulement que le nom « peut être géographique ».",
+            "hypothesisGroup": "origine du nom Bandeira",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 272",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 272 : « Lança, Bandeira, apelidos usuais. O segundo póde ser geografico, pois conheço exemplos com de, e ha lugares assim chamados. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Publié en 1928"
+            },
+            "statement": "Le nom Bandeira est un nom de famille d'usage courant au Portugal, selon José Leite de Vasconcelos, qui le cite avec Lança dans sa liste des surnoms liés à des instruments de travail, à des ustensiles et à des matières premières. Il ne dit rien de São Tomé-et-Príncipe.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 272",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 272 : sous le titre « Alcunhas alusivas a instrumentos de trabalho, utensilios e materias primas », il écrit « Lança, Bandeira, apelidos usuais »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

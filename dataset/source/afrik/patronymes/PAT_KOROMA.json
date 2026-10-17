@@ -13,7 +13,7 @@
       "attestations": [
         {
           "countryId": "SLE",
-          "sourceRefs": ["afrik-candidate-queue"]
+          "sourceRefs": ["afrik-candidate-queue", "bamadaba-jamuw"]
         }
       ]
     },
@@ -68,6 +68,14 @@
       "tier": "unverified",
       "source_kind": "repository",
       "notes": "Reprise des chapitres « Organisation clanique » et « Ethnonymes et subdivisions » de la fiche sur les Kuranko. Le second chapitre présente les noms du peuple et de ses groupes. Koroma y apparaît à la fois comme groupe kuranko et parmi les clans qui « jouent des rôles importants »."
+    },
+    {
+      "sourceKey": "bamadaba-jamuw",
+      "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+      "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 16 octobre 2026."
     }
   ],
   "gaps": [
@@ -95,5 +103,73 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Koroma est un nom de clan, ou jamu, des Kouranko et des Malinké ; le dictionnaire des noms de clan mandingues le donne comme variante de Kuruma. Les sources lues ne disent ni d'où il vient, ni depuis quand il est écrit.",
+    "names": [
+      {
+        "nameText": "Koroma",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan kouranko et malinké, donné comme variante de Kuruma ; son origine reste inconnue.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Koroma est donné comme variante de Kuruma par le dictionnaire des noms de clan mandingues, qui relève cette entrée en malinké et en kouranko, avec les statuts hɔ́rɔn, garanke et nùmu, sans en donner le sens. On ne sait pas avec certitude d'où il vient, ni depuis quand il est écrit.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 16 octobre 2026. Entrée Kuruma, avec Koroma et Kuruba pour variantes ; parlers malinké (m) et kouranko ; statuts hɔ́rɔn, garanke et nùmu ; aucun sens donné."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kourouma",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kourouma est l'écriture française du nom que le dictionnaire des noms de clan mandingues écrit Kuruma, avec Koroma pour variante. Le dictionnaire ne cite pas la forme Kourouma : le rapprochement repose sur la ressemblance des écritures.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 16 octobre 2026. Entrée Kuruma, avec Koroma et Kuruba pour variantes ; parlers malinké (m) et kouranko ; statuts hɔ́rɔn, garanke et nùmu ; aucun sens donné. Le dictionnaire n'écrit pas la forme Kourouma."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

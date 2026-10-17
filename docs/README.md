@@ -33,6 +33,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Claude Design prompt, step 3 — brief 3, the language fiche](design/mockups/briefs/claude-design-prompt-03.md)
 - [Claude Design prompt, step 4 — brief 4, the language-family fiche](design/mockups/briefs/claude-design-prompt-04.md)
 - [Claude Design prompt, step 5 — brief 5, the country fiche](design/mockups/briefs/claude-design-prompt-05.md)
+- [Claude Design prompt, step 6 — brief 6, the family-name fiche](design/mockups/briefs/claude-design-prompt-06.md)
 - [Claude Design prompt — brief 9, « Notre démarche »](design/mockups/briefs/claude-design-prompt-09.md)
 - [Search answer page, mockup v11](design/mockups/search-answer/README.md)
 - [The result-page feed mockups — forty boards](design/mockups/search-feed/README.md)
@@ -83,6 +84,8 @@ were referenced by nothing at all, two of them written that same week.
 - [Reader demand journal — 2026-10-13](audience/demand/2026-10-13.md)
 - [Reader demand journal — 2026-10-14](audience/demand/2026-10-14.md)
 - [Reader demand journal — 2026-10-15](audience/demand/2026-10-15.md)
+- [Reader demand journal — 2026-10-16](audience/demand/2026-10-16.md)
+- [Reader demand journal — 2026-10-17](audience/demand/2026-10-17.md)
 
 ## Runbooks — procedures, and records of ones already run
 

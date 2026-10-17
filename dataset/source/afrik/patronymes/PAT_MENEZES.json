@@ -76,5 +76,106 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Menezes à un peuple à São Tomé-et-Príncipe. Nous n'avons pas encore consulté de source consacrée à ce nom. La fiche sur les Forros cite trois noms d'origine portugaise : Trovoada, Espírito Santo et Vera Cruz. Leur usage ne permet pas de rattacher tous les noms portugais aux Forros."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Menezes est un nom de famille portugais, que le linguiste José Leite de Vasconcelos écrit Meneses. Il est porté à São Tomé-et-Príncipe. Les sources lues ne disent pas depuis quand ni comment il y est arrivé. Pour le Portugal, elles donnent deux origines possibles, que nous présentons plus bas, et une trace écrite dès 1434.",
+    "names": [
+      {
+        "nameText": "Menezes",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Un nom de famille portugais, porté à São Tomé-et-Príncipe ; deux origines sont proposées.",
+        "periodLabel": "Écrit dès 1434 sous une forme proche ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Proposée en 1928"
+            },
+            "statement": "Le nom Menezes viendrait de la région espagnole de Mena : ses habitants seraient naturellement des Meneses, comme ceux d'Ávila sont des Avileses, selon José Leite de Vasconcelos. Il s'y range, et note que le généalogiste Villasboas écrit que la famille des Meneses est venue d'Espagne.",
+            "hypothesisGroup": "origine du nom Menezes",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 303",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 303 : « De facto inclino-me a que o apelido tem origem hespanhola, e interpreto-o assim. Mena é, como vimos, nome geografico em Hespanha : os habitantes de Mena são naturalmente Meneses, como os de Avila são Avileses. » Il cite aussi le généalogiste Villasboas (Nobiliarchia, p. 302), pour qui la famille des Meneses vient d'Espagne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Proposée en 1928"
+            },
+            "statement": "Le nom Menezes viendrait d'un lieu appelé Meneses, en Espagne (Campo de Palencia) ou au Portugal (Trás-os-Montes et Entre-Douro-e-Minho), selon la première explication que présente José Leite de Vasconcelos. Il l'écarte ensuite pour les lieux portugais, qu'il explique par des Meneses venus d'Espagne s'y installer.",
+            "hypothesisGroup": "origine du nom Menezes",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 302-303",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 302-303 : « De origem hespanhola ou portuguesa, pois tanto em Portugal como em Hespanha ha nomes geograficos, Meneses de Campo de Palencia, Meneses em Tras-os-Montes e Entre-Douro-e-Minho, que o podiam fazer nascer » (p. 302-303), puis, p. 303, les lieux de Meneses et Menesas du Portugal sont expliqués par des membres de la famille venus s'y fixer."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Publié en 1928"
+            },
+            "statement": "Le nom Menezes, que José Leite de Vasconcelos écrit Meneses, est un nom de famille très usuel au Portugal et dans le royaume voisin, l'Espagne. Il ne dit rien de São Tomé-et-Príncipe.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 302",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 302 : « Meneses. É apelido nosso muito usual, e tambem no vizinho reino. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1434,
+              "to": 1434,
+              "label": "1434"
+            },
+            "statement": "Le nom Menezes a pour plus ancienne trace une forme proche, Meneses, dans « D. Fernando de Meneses », en 1434, que cite José Leite de Vasconcelos d'après les Chancelarias. Il la range avec d'autres noms de nobles du XVe siècle, qui plaçaient « de » devant un nom de lieu. C'est la plus ancienne trace de ce nom que le projet connaît ; elle ne dit rien de São Tomé-et-Príncipe.",
+            "formAsWritten": "Meneses",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 164",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 164 : dans la liste des nobles du XVe siècle qui employaient « de » suivi d'un nom de lieu, « D. Fernando de Meneses, 1434 (ib., p. 476) », le renvoi « ib. » désignant les Chancelarias (I) citées plus haut sur la page. La même page donne « D. Tello de Meneses, 1445 » et « D. Issabel de Meneses »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

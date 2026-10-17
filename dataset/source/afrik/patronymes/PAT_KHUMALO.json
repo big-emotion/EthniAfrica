@@ -84,5 +84,261 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web combinant « Khumalo », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de l'article morphologique de Celani Lucky Zwane et le chapitre de thèse UKZN sur les noms de clan et la filiation zouloue, n'ont pas établi de lignée homonyme d'origine distincte ni d'autre homonyme documentable."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Khumalo est un nom de clan zoulou, celui des aba-kwa-Kumalo, que Mzilikazi conduisit hors du Zululand pour fonder, selon Alfred T. Bryant, l'empire matabélé en Rhodésie du Sud. Bryant l'écrit Kumalo en 1905 et en 1929. Les sources ne s'accordent pas sur ce que le nom veut dire ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Khumalo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan zoulou, écrit Kumalos dès 1905 ; son sens est discuté.",
+        "periodLabel": "Écrit Kumalos dès 1905 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "Décrit en 2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Khumalo est un nom de clan zoulou (isibongo) dont l'origine est discutée : une étude de 2020 en rapporte deux explications, présentées plus bas. On ne sait pas avec certitude laquelle est la bonne.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Morphological Analysis of Zulu Clan Names",
+                "author": "Celani Lucky Zwane",
+                "year": 2020,
+                "url": "https://doi.org/10.5430/elr.v9n3p36",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 44",
+                "notes": "English Linguistics Research 9(3), 2020, lu en texte intégral le 16 octobre 2026. L'auteur combine analyse de documents et entretiens à Kwahlathi (Ladysmith, KwaZulu-Natal). Page 44, § 6.5.1 et § 6.7.1 : Khumalo est analysé comme clan zoulou ; l'auteur glose le verbe khuma tantôt « mâcher à sec », tantôt « manger cru », et ne départage pas les explications."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "Proposée en 2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Khumalo viendrait du verbe khuma, que l'auteur traduit « manger cru » (ailleurs « mâcher à sec »), et de lo, « celui-ci » : on l'aurait donné aux Khumalo parce que leurs héros, nombreux, gagnaient vite les guerres, comme quelqu'un qui mange sans cuire, selon Celani Lucky Zwane.",
+            "hypothesisGroup": "origine du nom Khumalo",
+            "sources": [
+              {
+                "title": "The Morphological Analysis of Zulu Clan Names",
+                "author": "Celani Lucky Zwane",
+                "year": 2020,
+                "url": "https://doi.org/10.5430/elr.v9n3p36",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 44",
+                "notes": "English Linguistics Research 9(3), 2020, lu en texte intégral le 16 octobre 2026. L'auteur combine analyse de documents et entretiens à Kwahlathi (Ladysmith, KwaZulu-Natal). § 6.7.1 « Khumalo (Eat This One Uncooked) » : « The clan name giver, it is said he gave Khumalo people this clan because they had lot of heroes who were winning wars, the way they were fast in wars it was associated with someone who eat uncooked food. » § 6.5.1 donne « chew this dry food »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "Proposée en 2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Khumalo serait le nom d'une espèce d'arbre épineux : selon Celani Lucky Zwane, certains Khumalo disent qu'on le leur a donné parce qu'ils vivaient dans un lieu où poussaient beaucoup d'arbres épineux.",
+            "hypothesisGroup": "origine du nom Khumalo",
+            "sources": [
+              {
+                "title": "The Morphological Analysis of Zulu Clan Names",
+                "author": "Celani Lucky Zwane",
+                "year": 2020,
+                "url": "https://doi.org/10.5430/elr.v9n3p36",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 44",
+                "notes": "English Linguistics Research 9(3), 2020, lu en texte intégral le 16 octobre 2026. L'auteur combine analyse de documents et entretiens à Kwahlathi (Ladysmith, KwaZulu-Natal). § 6.7.1 : « The other meaning of Khumalo is a species of thorny tree [...] It is said some Khumalo people said this clan was given to them because they were staying in a place where there were lot of species of thorny tree. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Rapporté en 1929"
+            },
+            "era": "modern",
+            "statement": "Le nom Khumalo, que Bryant écrit Kumalo, est celui d'un clan qui vivait avant l'époque de Shaka à l'intérieur des terres, derrière la colline de Babanango. Sa plus grande part part ensuite vers le nord, entre la Mkuze et la Mfolozi noire, avec les chefs Donda et Mashobana ; Bryant date ce départ de 1800 environ, au plus tôt.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 419-420",
+                "notes": "Londres, Longmans, Green, 1929, lu le 16 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Pages 419 et 420 : « Prior to Magugu's days, the Kumalo clan dwelt inland of the Babanango hill »; Donda s'en va vers le nord « with his uncle, Mashobana [...] with the major portion of the clan » ; « the date could not have been much before the year 1800 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Rapporté en 1929"
+            },
+            "statement": "Le nom Khumalo, que Bryant écrit Kumalo, est celui du clan que Mzilikazi, fils de Mashobana, emmène hors du Zululand après la chute de Zwide : il fonde l'empire matabélé en Rhodésie du Sud. Bryant y trouve, de son temps, des Kumalo et leurs sous-clans Mabanga et Dlodlo, avec des gens d'autres clans zoulous.",
+            "actors": [
+              {
+                "name": "Mzilikazi",
+                "role": "chef du clan, qui le conduit en Rhodésie"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 417, 425",
+                "notes": "Londres, Longmans, Green, 1929, lu le 16 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 417, début du chapitre 42 : « the wanderings and experiences of the aba-kwa-Kumalo clan [...] led by their celebrated and capable chief and conqueror, Mzilikazi, founder of the Matebele empire in and around Southern Rhodesia » ; page 425 : « in Matebeleland we find representatives, not only of the Kumalos themselves, and their Mabanga and Dlodlo sub-clans, but also Ndwandwes, Mtetwas [...] »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Rapporté en 1929"
+            },
+            "era": "modern",
+            "statement": "Le nom Khumalo, que Bryant écrit Kumalo, appartient au groupe nguni ntungwa. Avec les emaNgwaneni, les Kumalo sont les seuls à garder le nom Mntungwa comme louange de clan (isitakazelo), ce qui fait penser à Bryant qu'ils sont la branche la plus ancienne de la famille ntungwa.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 417",
+                "notes": "Londres, Longmans, Green, 1929, lu le 16 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 417 : « The Kumalos pertained to the Ntungwa-Nguni group. Indeed, since they and the emaNgwaneni alone among all the Ntungwa folk had retained as their special prerogative the use of the appellation, Mntungwa, as their tribal isitakazelo, one may well suppose that these two clans represented the older section of the original Ntungwa family. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant la séparation des clans, selon Alfred T. Bryant"
+            },
+            "era": "polity",
+            "statement": "Les Kumalo seraient une branche cadette des Mabaso, ou les deux clans seraient issus d'un même clan-mère : dans les deux cas, selon Alfred T. Bryant, les Mabaso en sont la maison aînée et les Kumalo la maison cadette. En 1905, Bryant présentait plutôt les Kumalo comme une branche des Ndwandwe, ou Nxumalo.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 417-418",
+                "notes": "Londres, Longmans, Green, 1929, lu le 16 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Pages 417 et 418 : « The aba-kwa-Kumalo were either an offshoot of the aba-kwa-Mabaso, or both alike were intimately related offshoots from a common parent clan [...] Of the Mabaso-Kumalo family, the Mabasos represented the senior, the Kumalos the junior house. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom Khumalo apparaît par écrit sous la forme Kumalos chez Alfred T. Bryant, qui place au-delà de la Mfolozi noire la grande tribu des « Ndwandwes or Nxumalos, with its off-shoot the Kumalos », sous le chef Zwide. C'est la plus ancienne trace de ce nom que le projet connaît ; le clan qui le porte est plus ancien que ce dictionnaire.",
+            "formAsWritten": "Kumalos",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Alfred T. Bryant",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Zulu-English Dictionary",
+                "author": "Alfred T. Bryant",
+                "year": 1905,
+                "url": "https://archive.org/details/zuluenglishdicti00brya",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 28*",
+                "notes": "Pinetown (Natal), Mariannhill Mission Press, 1905. Lu dans la numérisation d'Internet Archive le 16 octobre 2026, page vue en image. Page 28* de l'histoire placée en tête du dictionnaire : « Beyond the Black Mfolozi [...] were the large tribe of Ndwandwes or Nxumalos, with its off-shoot the Kumalos, under the famous chief, Zwide. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kumalo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Écrit en 1929"
+            },
+            "era": "modern",
+            "statement": "Le nom Kumalo est la graphie que Bryant emploie en 1929 pour le clan, qu'il appelle aba-kwa-Kumalo, « les gens de Kumalo ». La graphie Khumalo est celle d'aujourd'hui.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 417",
+                "notes": "Londres, Longmans, Green, 1929, lu le 16 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 417 : « the aba-kwa-Kumalo clan (the People of Kumalo) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "Écrit en 1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kumalo est aussi, dans le dictionnaire de Bryant, celui d'un buisson, i(li)-Kumalo, dont la graine, semblable à un pois, se porte comme ornement. Bryant ne dit pas que le clan en tire son nom.",
+            "sources": [
+              {
+                "title": "A Zulu-English Dictionary",
+                "author": "Alfred T. Bryant",
+                "year": 1905,
+                "url": "https://archive.org/details/zuluenglishdicti00brya",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 9",
+                "notes": "Pinetown (Natal), Mariannhill Mission Press, 1905. Lu dans la numérisation d'Internet Archive le 16 octobre 2026, page vue en image. Page 9, entrée Antloko : « Pea-like seed of the i(li)-Kumalo bush, worn as an ornament. »"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -10,6 +10,42 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+## [5.3.0] - 2026-10-16
+
+### Added
+
+- Fiche pages: the name, people, language, language-family and country fiches each
+  close with their readings, sources, silences and next names (briefs 1 to 5).
+- Place fiche `LOC_AFRIQUE` (« Afrique ») and word fiche `WRD_TRIBU` (« tribu »).
+- Family names: name histories for waves 20 to 23 (127 names), personal names filed as
+  clan names reclassified, and the `hereditary_family_name` naming system (migration
+  `107`) (ETNI-2011).
+- Social: EthniAfrica Cartes 1.3.0 to 1.8.0 in the renderers — series band, full-screen
+  series video, map cards on satellite imagery, spoken map sequence, the signature line
+  « Connaître nos noms, décoloniser leur emploi, nous nommer nous-mêmes. » on every
+  ending, long videos with chapters, document and teaching cards.
+- Social video: length becomes a 35-75 s recommendation; subtitles read at 17 characters
+  a second recommended, 21 at most.
+
+### Changed
+
+- `BFA`: Burkina Faso's name history rewritten from primary sources — ordinance
+  n° 84-043/CNR/PRES, a participant's account of how the name was chosen, the meaning of
+  burkina, faso and -bè, and the Portuguese origin of « Volta »; `FLG_GUR` dates
+  « voltaïque » to 1914 (#1766).
+- Akan day names (Kouassi, Yao and the rest of the week) sourced on both sides of the
+  border and walked through Baoulé, Agni, Ashanti, Fante and Nzema; `PPL_TUAREG` name
+  history from the series 2 research; `TUN`, `LBY` and Ifrīqiya corrected.
+
+### Fixed
+
+- Peoples fiches from waves 14 to 20: ISO codes, families and scopes corrected, sources
+  harmonised, duplicates and unattested fiches arbitrated, era rulings settled
+  (ETNI-2011).
+- The Kollo testimony is recorded as an oral source, not a plain source.
+- Social video: a chapter card shows its own image's credit; a document passage scales
+  to fit its frame.
+
 ## [5.2.0] - 2026-10-13
 
 ### Added
@@ -1705,7 +1741,8 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.2.0...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.3.0...HEAD
+[5.3.0]: https://github.com/big-emotion/ethniafrica/compare/v5.2.0...v5.3.0
 [5.2.0]: https://github.com/big-emotion/ethniafrica/compare/v5.1.0...v5.2.0
 [5.1.0]: https://github.com/big-emotion/ethniafrica/compare/v5.0.1...v5.1.0
 [5.0.1]: https://github.com/big-emotion/ethniafrica/compare/v5.0.0...v5.0.1

@@ -11,16 +11,38 @@
     {
       "spelling": "Condé",
       "attestations": [
-        { "countryId": "GIN", "sourceRefs": ["bulman-sunjata-checklist"] }
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["bulman-sunjata-checklist"]
+        }
       ]
     },
     {
       "spelling": "Conde",
-      "attestations": [{ "countryId": "GIN", "sourceRefs": ["gha-iv-mali"] }]
+      "attestations": [
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["gha-iv-mali"]
+        }
+      ]
     },
     {
       "spelling": "Kònde",
-      "attestations": [{ "countryId": "GIN", "sourceRefs": ["bamadaba-jamuw"] }]
+      "attestations": [
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["bamadaba-jamuw"]
+        }
+      ]
+    },
+    {
+      "spelling": "Kondé",
+      "attestations": [
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["arcin-1907-guinee-francaise"]
+        }
+      ]
     }
   ],
   "transmissionMode": "other",
@@ -63,7 +85,7 @@
     {
       "peopleId": "PPL_MALINKE",
       "status": "attested",
-      "sourceRefs": ["gha-iv-mali"]
+      "sourceRefs": ["gha-iv-mali", "arcin-1907-guinee-francaise"]
     }
   ],
   "countries": [
@@ -121,6 +143,14 @@
       "tier": "referenced",
       "source_kind": "linguistic_reference",
       "notes": "Annexe onomastique du Bamadaba, dictionnaire électronique bambara-français supplément du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). 375 entrées au format MDF, consultées sur le fichier complet. Le fichier ne livre aucune légende de ses marqueurs, et la lecture retenue est celle que le fichier impose : la ligne des termes de statut porte les mots mandingues eux-mêmes (nùmu, jèli, hɔ́rɔn, tontigi). L'entrée Kònde porte hɔ́rɔn et tontigi, et situe le nom à Kurusa, Sanakaran, Farana et Kankan. Elle ne porte aucun lien clanique, si bien que le fichier ne donne pour ce nom aucune paire d'alliance à plaisanterie."
+    },
+    {
+      "sourceKey": "arcin-1907-guinee-francaise",
+      "title": "La Guinée française : races, religions, coutumes, production, commerce",
+      "url": "https://archive.org/details/laguinefrana00arci",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "André Arcin, administrateur colonial, Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026. Texte d'un témoin colonial, cité pour ce qu'il écrit des familles et de leurs n'téné, et non comme dernier mot sur leur histoire."
     }
   ],
   "gaps": [
@@ -136,5 +166,176 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission, et aucune des sources consultées ne dit comment ce nom-ci se transmet."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Condé est un nom de clan, ou jamu, des Malinké de Guinée ; on l'écrit aussi Conde, Kondé ou Kònde. On ne sait pas avec certitude d'où il vient ; nous présentons plus bas ce que les sources en disent.",
+    "names": [
+      {
+        "nameText": "Condé",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan malinké de Guinée, écrit Kondé dès 1907 ; son origine reste discutée.",
+        "periodLabel": "Écrit sous une forme proche dès 1907 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Condé désigne un clan, ou jamu, malinké de Guinée. Le dictionnaire des noms de clan mandingues l'écrit Kònde, le situe à Kurusa, au Sanakaran, à Farana et à Kankan, et n'en donne pas le sens. On ne sait pas avec certitude d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 16 octobre 2026. Entrée Kònde : parler bambara (b) ; statuts hɔ́rɔn et tontigi ; lieux Kurusa, Sanakaran, Farana et Kankan ; aucun sens donné. L'entrée Kone du même dictionnaire range aussi la forme Kɔ́ndɛ parmi ses variantes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Décrit en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Condé est écrit Kondé par André Arcin, qui le dit porté en Guinée par des chefs du Sankaran et des Landouma, et par de nombreux habitants du Kissi sud. Il écrit que « la race Mandé plus ou moins métissée y forme presque partout les familles royales ».",
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 311, 315",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026, au numéro de page imprimé. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 311 : les Kondé « que l'on rencontre dans le Sankaran en assez grand nombre. Ils sont chefs chez les Landouma […]. Ils sont en grand nombre dans le Kissi Sud (Lélé) ». Page 315 : « Ce sont les Kamara chez les Mandenyi, les Kondé chez les Landouma »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Proposé en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kondé ne serait peut-être qu'une autre forme de Konté, selon André Arcin, qui écrit ailleurs « Sous le nom de Konté ou Kondé ». Il traite pourtant les Kondé à part dans ses listes.",
+            "hypothesisGroup": "lien entre Kondé et Konté",
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 298, 311",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026, au numéro de page imprimé. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 311 : « Les Kondé, qui ne sont peut-être que des Konté ». Page 298 : « Sous le nom de Konté ou Kondé nous les trouvons dans le Kouloukalan, le Nouga […], dans le Kissi et le Sankaran où ils sont chefs. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Condé apparaît par écrit sous une forme proche, Kondé, chez André Arcin, administrateur colonial, en 1907 : il l'ajoute aux familles malinké et bamana de ses listes. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un document l'a écrit, pas depuis quand le nom est porté.",
+            "formAsWritten": "Kondé",
+            "birth": true,
+            "actors": [
+              {
+                "name": "André Arcin",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 286",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026, au numéro de page imprimé. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 286 : « nous ajouterons à ces nomenclatures : les Bérété ; les Sakho […] ; les Kondé ». Arcin n'écrit pas Condé : le rapprochement des deux écritures repose sur leur ressemblance et sur le Sankaran, où il situe les Kondé."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kònde",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kònde est l'écriture du dictionnaire des noms de clan mandingues, qui le donne en entrée à part et range en outre la forme Kɔ́ndɛ parmi les variantes de Kone, sans dire si c'est le même nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 16 octobre 2026. Entrée Kònde : parler bambara (b) ; statuts hɔ́rɔn et tontigi ; lieux Kurusa, Sanakaran, Farana et Kankan ; aucun sens donné. L'entrée Kone du même dictionnaire range aussi la forme Kɔ́ndɛ parmi ses variantes."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kondé",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kondé est l'écriture d'André Arcin en 1907, qui l'emploie pour des familles malinké du Sankaran et du Kissi.",
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 286, 311",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026, au numéro de page imprimé. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Pages 286 et 311 : écriture Kondé."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

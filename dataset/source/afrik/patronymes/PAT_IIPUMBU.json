@@ -80,5 +80,109 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web combinant « Iipumbu », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la consultation de la monographie « Edhina Ekogidho — Names as Links » n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Iipumbu est un nom de personne ambo, de Namibie, que portait un roi d'Uukwambi de 1908 à 1932. Minna Saarelma-Maunumaa le compte parmi les très vieux noms ambo, souvent donnés parce qu'ils sont traditionnels plus que pour leur sens. On ne sait pas avec certitude ce qu'il veut dire ; nous présentons plus bas le mot qu'elle en rapproche.",
+    "names": [
+      {
+        "nameText": "Iipumbu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un très vieux nom ambo, celui d'un roi d'Uukwambi (1908-1932) ; son sens est incertain.",
+        "periodLabel": "Porté de 1908 à 1932 par un roi ; ancien selon les sources",
+        "accounts": [
+          {
+            "period": {
+              "from": 1938,
+              "to": 1938,
+              "label": "Écrit en 1938"
+            },
+            "era": "colonial",
+            "statement": "Le nom Iipumbu figure dans le calendrier des noms ambo de 1938, parmi les noms traditionnels qu'on donne à un jour de l'année, sur le modèle du calendrier finlandais des fêtes de prénoms, selon Minna Saarelma-Maunumaa.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Edhina Ekogidho — Names as Links: The Encounter between African and European Anthroponymic Systems among the Ambo People in Namibia",
+                "author": "Minna Saarelma-Maunumaa",
+                "year": 2003,
+                "url": "https://digital.unam.edu.na/bitstream/handle/11070.1/21230/Ekogidho_2003.pdf?isAllowed=y&sequence=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 144",
+                "notes": "Minna Saarelma-Maunumaa, Helsinki, Finnish Literature Society, 2003, lu en texte intégral le 16 octobre 2026 ; la pagination imprimée suit celle du fichier. Page 144 : « In the 1938 Ambo calendar, there is one name for almost every day of the year [...] Most of these names are traditional Ambo names, such as Amakali, Angula, Emvula, Endjala, Haufiku, Iipinge, Iipumbu [...] »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Décrit en 2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Iipumbu fait partie, selon Minna Saarelma-Maunumaa, des très vieux noms de personne ambo, qu'on donne surtout parce qu'on les sait traditionnels et non pour leur sens ; le sens de certains est d'ailleurs devenu obscur. On ne sait pas avec certitude ce que le nom veut dire.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Edhina Ekogidho — Names as Links: The Encounter between African and European Anthroponymic Systems among the Ambo People in Namibia",
+                "author": "Minna Saarelma-Maunumaa",
+                "year": 2003,
+                "url": "https://digital.unam.edu.na/bitstream/handle/11070.1/21230/Ekogidho_2003.pdf?isAllowed=y&sequence=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 288",
+                "notes": "Minna Saarelma-Maunumaa, Helsinki, Finnish Literature Society, 2003, lu en texte intégral le 16 octobre 2026 ; la pagination imprimée suit celle du fichier. Page 288 : « Many names in the data, such as Amunyela, Iipumbu, Kambonde, Mpingana and Nehale, are also very old personal names in the Ambo culture, which may be given primarily because they are known to be traditional Ambo personal names, not because of their lexical meanings. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Proposée en 2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Iipumbu viendrait du pluriel d'un mot oshiwambo, oshipumbu, « groupe de grands arbres dans une terre désertique », selon Minna Saarelma-Maunumaa. Elle range ce nom parmi ceux qui renvoient aux animaux et aux plantes sauvages, mais ne dit pas que ce soit la raison pour laquelle on le donne.",
+            "hypothesisGroup": "origine du nom Iipumbu",
+            "sources": [
+              {
+                "title": "Edhina Ekogidho — Names as Links: The Encounter between African and European Anthroponymic Systems among the Ambo People in Namibia",
+                "author": "Minna Saarelma-Maunumaa",
+                "year": 2003,
+                "url": "https://digital.unam.edu.na/bitstream/handle/11070.1/21230/Ekogidho_2003.pdf?isAllowed=y&sequence=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 281",
+                "notes": "Minna Saarelma-Maunumaa, Helsinki, Finnish Literature Society, 2003, lu en texte intégral le 16 octobre 2026 ; la pagination imprimée suit celle du fichier. Page 281 : « Iipumbu < pl. ii/pumbu; oshi/pumbu ‘group of tall trees in a desert wasteland’ » ; page 293 : « Iipumbu (‘groups of tall trees in a desert wasteland’) » dans le groupe des noms d'animaux et de plantes sauvages."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1908,
+              "to": 1932,
+              "label": "Règne de 1908 à 1932, selon Nambala (1994)"
+            },
+            "statement": "Le nom Iipumbu est celui d'un roi d'Uukwambi, Iipumbu yaShilongo, qui règne de 1908 à 1932 selon Nambala (1994), que cite Minna Saarelma-Maunumaa. On le connaît aussi par son nom de louange, Ondilimani, « dynamite ». C'est la plus ancienne trace de ce nom que le projet connaît ; le même ouvrage le dit très ancien.",
+            "formAsWritten": "Iipumbu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Edhina Ekogidho — Names as Links: The Encounter between African and European Anthroponymic Systems among the Ambo People in Namibia",
+                "author": "Minna Saarelma-Maunumaa",
+                "year": 2003,
+                "url": "https://digital.unam.edu.na/bitstream/handle/11070.1/21230/Ekogidho_2003.pdf?isAllowed=y&sequence=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 127, 183",
+                "notes": "Minna Saarelma-Maunumaa, Helsinki, Finnish Literature Society, 2003, lu en texte intégral le 16 octobre 2026 ; la pagination imprimée suit celle du fichier. Page 127 : « Ondilimani (‘dynamite’): Iipumbu yaShilongo (King of Uukwambi 1908–32) » ; note 239 (p. 183) : les années de règne viennent de Nambala 1994, p. 36-38, qui écrit Iipumbu yaTshilongo. Page 95 : en 1932, les forces sud-africaines bombardent l'Uukwambi et détruisent la maison du roi Iipumbu. Rapport de seconde main : nous n'avons pas lu Nambala."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
