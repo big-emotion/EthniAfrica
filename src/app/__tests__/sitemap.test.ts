@@ -3,6 +3,14 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 vi.mock("@/lib/supabase/queries/afrik/sitemapEntries", () => ({
   getSitemapEntityIds: vi.fn(),
 }));
+vi.mock("@/lib/supabase/queries/afrik/nameAddressEntries", () => ({
+  getAnsweredNameRows: vi.fn(async () => []),
+}));
+// The name addresses are cached for an hour; outside Next there is no cache
+// to hold them, so the walk runs on every call.
+vi.mock("next/cache", () => ({
+  unstable_cache: (callback: (...args: unknown[]) => unknown) => callback,
+}));
 
 import robots from "../robots";
 import sitemap, { revalidate } from "../sitemap";
@@ -10,11 +18,18 @@ import { CANONICAL_DOMAIN } from "@/lib/brand";
 import { discoveryPath, eligiblePublications } from "@/lib/discoveries/catalog";
 import { getDiscoveryPublications } from "@/lib/discoveries/entries";
 import { getSitemapEntityIds } from "@/lib/supabase/queries/afrik/sitemapEntries";
+import { getAnsweredNameRows } from "@/lib/supabase/queries/afrik/nameAddressEntries";
+import { VALID_NAME_HISTORY } from "@/lib/afrik/parsers/__tests__/fixtures";
+import {
+  LINGALA_HISTORY,
+  PEUL_HISTORY,
+} from "@/lib/search/__fixtures__/nameTimelineFixtures";
 import {
   getCountryRoute,
   getFamilyRoute,
   getLanguageRoute,
   getLocalizedRoute,
+  getNameAnswerRoute,
   getPatronymeRoute,
   getPeopleLinksRoute,
   getPeopleRoute,
@@ -301,5 +316,100 @@ describe("sitemap.xml — découvertes", () => {
         entry.id
       ).toHaveLength(1);
     }
+  });
+});
+
+describe("sitemap.xml — the addresses of answered names", () => {
+  const [told] = VALID_NAME_HISTORY.names;
+  const [account] = told.accounts;
+  /** « Fulɓe » told by one account citing a referenced source. */
+  const sourcedFulbe = {
+    ...VALID_NAME_HISTORY,
+    names: [
+      {
+        ...told,
+        nameText: "Fulɓe",
+        accounts: [
+          {
+            ...account,
+            sources: [{ ...account.sources[0], tier: "referenced" as const }],
+          },
+        ],
+      },
+    ],
+  };
+
+  beforeEach(() => {
+    vi.clearAllMocks();
+    mockedEntityIds.mockResolvedValue(CORPUS);
+    vi.mocked(getAnsweredNameRows).mockResolvedValue([
+      { name: "Lingala", nameHistory: LINGALA_HISTORY },
+      // Filed twice, by two kinds: one address all the same.
+      { name: "LINGALA", nameHistory: LINGALA_HISTORY },
+      { name: "Fulɓe", nameHistory: sourcedFulbe },
+      // Both tell their name on an unverified account only.
+      { name: "Yoruba", nameHistory: VALID_NAME_HISTORY },
+      { name: "Fulɓe", nameHistory: PEUL_HISTORY },
+    ]);
+  });
+
+  const addressed = async () =>
+    (await urls()).filter((url) =>
+      url.startsWith(
+        `https://${CANONICAL_DOMAIN}${getLocalizedRoute("fr", "search")}/`
+      )
+    );
+
+  // @req REQ-200
+  it("lists an answered form at its address, letters such as ɓ kept", async () => {
+    const all = await addressed();
+    const base = `https://${CANONICAL_DOMAIN}`;
+
+    // The encoding itself (ful%C9%93e) is pinned in routing.test.ts.
+    expect(all).toContain(`${base}${getNameAnswerRoute("fr", "lingala")}`);
+    expect(all).toContain(`${base}${getNameAnswerRoute("fr", "Fulɓe")}`);
+    expect(all.some((url) => url.endsWith("/ful%C9%93e"))).toBe(true);
+  });
+
+  // @req REQ-200
+  it("lists no address for a form whose accounts cite nothing above unverified", async () => {
+    expect(await addressed()).not.toContain(
+      `https://${CANONICAL_DOMAIN}${getNameAnswerRoute("fr", "Yoruba")}`
+    );
+  });
+
+  // @req REQ-200
+  it("lists each address once, case and accent variants folded together", async () => {
+    const all = await addressed();
+
+    expect(new Set(all).size).toBe(all.length);
+    expect(
+      all.filter((url) => url.endsWith(getNameAnswerRoute("fr", "lingala")))
+    ).toHaveLength(1);
+  });
+
+  // @req REQ-200
+  it("lists the production ledger's published words", async () => {
+    expect(await addressed()).toContain(
+      `https://${CANONICAL_DOMAIN}${getNameAnswerRoute("fr", "ethnie")}`
+    );
+  });
+
+  // The directory rejects on a failed read rather than shrinking, so this
+  // build of the sitemap goes without the addresses and keeps everything
+  // else; the next revalidation reads them again.
+  // @req REQ-200
+  it("still ships the fiches and rubrics when the addresses cannot be read", async () => {
+    vi.mocked(getAnsweredNameRows).mockRejectedValue(
+      new Error("afrik_languages: range error")
+    );
+
+    const all = await urls();
+
+    expect(all).toContain(`https://${CANONICAL_DOMAIN}/fr`);
+    expect(all).toContain(
+      `https://${CANONICAL_DOMAIN}${getLanguageRoute("fr", "bam")}`
+    );
+    expect(await addressed()).toEqual([]);
   });
 });

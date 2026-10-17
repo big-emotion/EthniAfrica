@@ -5,6 +5,8 @@ import {
   readArticleCorpus,
 } from "@/lib/articles/corpus";
 import { articleHref } from "@/components/articles/articlePaths";
+import { getNameAddressSpellings } from "@/api/v2/services/nameAddresses";
+import { logger } from "@/lib/api/logger";
 import { CANONICAL_DOMAIN } from "@/lib/brand";
 import { discoveryPath, eligiblePublications } from "@/lib/discoveries/catalog";
 import { getDiscoveryPublications } from "@/lib/discoveries/entries";
@@ -12,6 +14,7 @@ import {
   getCountryRoute,
   getFamilyRoute,
   getLanguageRoute,
+  getNameAnswerRoute,
   getPatronymeRoute,
   getPeopleLinksRoute,
   getPeopleRoute,
@@ -77,8 +80,17 @@ function fichePaths(
 
 // @req REQ-110
 // @req REQ-141
+// @req REQ-200
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const corpus = await getSitemapEntityIds();
+  const [corpus, nameSpellings] = await Promise.all([
+    getSitemapEntityIds(),
+    // The directory rejects on a failed read rather than shrinking: this
+    // build goes without the addresses, the next revalidation reads them.
+    getNameAddressSpellings().catch((error: unknown) => {
+      logger.error("Sitemap: the name addresses could not be read", error);
+      return [] as string[];
+    }),
+  ]);
 
   const entries: MetadataRoute.Sitemap = [];
   for (const path of getSiteTreePaths("fr")) {
@@ -88,6 +100,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }
   for (const path of fichePaths(corpus)) {
     entries.push(entry(path, FICHE_CHANGE_FREQUENCY, 0.6));
+  }
+  // One spelling per accent-and-case fold, so each address is listed once;
+  // the same list decides which addresses answer and which links use them.
+  for (const spelling of nameSpellings) {
+    entries.push(
+      entry(getNameAnswerRoute("fr", spelling), FICHE_CHANGE_FREQUENCY, 0.6)
+    );
   }
   // The same publication predicate as the listing and the menu.
   for (const summary of publishedArticleSummaries(

@@ -11,7 +11,7 @@ import { sourceKindLabel } from "@/lib/glossaire/vocabularies";
 import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
 import { nameTimelineCopy } from "@/lib/i18n/copy/nameTimeline";
 import { sourceDiamondCopy } from "@/lib/i18n/copy/sourceDiamond";
-import { getLocalizedRoute } from "@/lib/routing";
+import { useNameSearchHref } from "@/components/search/NameAddressProvider";
 import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import {
   firstSentence,
@@ -617,8 +617,8 @@ export function NameNextStep({
   onNavigate?: (card: NextStepCard, rank: number) => void;
 }) {
   const copy = nameClosingCopy[language];
+  const nameHref = useNameSearchHref(language);
   if (cards.length === 0) return null;
-  const searchRoute = getLocalizedRoute(language, "search");
   return (
     <nav
       aria-labelledby="name-next-title"
@@ -632,7 +632,7 @@ export function NameNextStep({
         {cards.map((card, index) => (
           <Link
             key={card.name}
-            href={`${searchRoute}?${new URLSearchParams({ q: card.name })}`}
+            href={nameHref(card.name)}
             onClick={() => {
               if (trackFrom) {
                 trackEvent("fiche:related_click", {
