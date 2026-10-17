@@ -54,10 +54,19 @@ export type ShortsBlockProps = ShortsBlockBaseProps &
       }
   );
 
-function durationLabel(durationSeconds: number): string {
+/**
+ * Minutes and zero-padded seconds: the shelf prints them « 2:35 », the video
+ * row of « Histoire du nom » « 2 min 35 » (board search-peul-430).
+ */
+export function durationParts(durationSeconds: number): [number, string] {
   const minutes = Math.floor(durationSeconds / 60);
   const seconds = durationSeconds % 60;
-  return `${minutes}:${seconds.toString().padStart(2, "0")}`;
+  return [minutes, seconds.toString().padStart(2, "0")];
+}
+
+function durationLabel(durationSeconds: number): string {
+  const [minutes, seconds] = durationParts(durationSeconds);
+  return `${minutes}:${seconds}`;
 }
 
 // @req REQ-180
@@ -255,8 +264,11 @@ function ShortsRail({
   );
 }
 
-/** A piece made on the searched name or word, as opposed to its context. */
-function isOnName(item: FeedShortItem): boolean {
+/**
+ * A piece made on the searched name or word, as opposed to its context: the
+ * « Sur ce nom » group of the filter, and the one video of the timeline.
+ */
+export function isOnName(item: FeedShortItem): boolean {
   return item.match.relation === "exact" || item.match.relation === "word";
 }
 
