@@ -26,11 +26,13 @@ changes an account. The operator still gives approval 3 for the exact delivery.
    agreed concise-caption preference or obtain it if still missing; do not invent
    an operator decision to satisfy the input.
 4. Set the link route to match the researched destination and the verified account.
-   An unavailable destination link is `none`, with copy rewritten accordingly. Image source and license URLs already present in the reviewed image records or their rights evidence remain valid credit references, even with `none`; they are not website destination promises. Other URLs are refused unless they match the verified destination. A Facebook
-   first-comment route includes the exact URL in that comment. A profile route
-   requires evidence that the usable profile link actually reaches the verified
-   destination. It is not automatically a per-publication tracking link.
-5. Save `package-input.json` in the piece folder. Create a new delivery revision:
+   An unavailable destination link is `none`, with copy rewritten accordingly. Image source and license URLs already present in the reviewed image records or their rights evidence remain valid credit references, even with `none`; they are not website destination promises. Other URLs are refused unless they are this network's tagged link: the verified destination followed by its [campaign tags](#campaign-tags). A Facebook
+   first-comment route includes the exact tagged URL in that comment. A profile
+   route requires evidence that the usable profile link actually reaches the
+   verified destination, and that link carries the same tags with
+   `utm_content=bio`.
+5. Save `package-input.json` in the piece folder, with the piece's `campaign`.
+   Create a new delivery revision:
 
    ```sh
    npm run social:package -- create PIECE/package-input.json PIECE/delivery-v1 instagram facebook
@@ -62,9 +64,10 @@ Playwright and Vale dependencies. No new rendering framework is installed.
 | `input`, `render`        | The exact card JSON and final renderer output directory. Proof/diagnostic media are refused.                                                                                                                                                                                                                       |
 | `design`, `assets`       | The same design and asset directories used for rendering.                                                                                                                                                                                                                                                          |
 | `research`               | The dossier approved at gate 2. It must pass delivery checks. Every rendered photograph/document/inset must have a matching `images[].file` and rights record. Shared brand provenance remains an agent review responsibility.                                                                                     |
+| `campaign`               | Required for a new revision: the `campaign` of the piece's entry in `docs/productions/`, or a series piece's code `<series>-<episode>`. Lowercase letters, digits and single hyphens only.                                                                                                                         |
 | `networks`               | Exactly one adaptation per selected network, with no omitted or extra target.                                                                                                                                                                                                                                      |
 | Adaptation               | `network`, nonempty `caption`, explicit `firstComment` string or null, `link`, `capability`; TikTok also requires `captionPreference`. Optional `alternativeText` is a complete array of `{file, text}` entries, one per exported image.                                                                           |
-| `link`                   | `placement`: `none`, `profile`, `first-comment` or `caption`; all non-none routes need the exact verified destination `url`.                                                                                                                                                                                       |
+| `link`                   | `placement`: `none`, `profile`, `first-comment` or `caption`; every non-none route needs `url`, the verified destination with this network's [campaign tags](#campaign-tags).                                                                                                                                      |
 | `capability`             | `account`, `checkedAt`, `observation`, local `evidence`, `format: "photo-carousel"`, positive `maxCards`, `captionMax`; `commentMax` when a first comment exists.                                                                                                                                                  |
 | Accessibility capability | `altRoute`: `native`, `description` or `unavailable`; `altInstruction` for the operator. Native insertion requires `altMax`. Description insertion requires every exact image description already in the caption. Unavailable insertion retains descriptions and the verified limitation in the delivery document. |
 | Link capability          | `linkPlacements`: verified supported routes. This workflow allows first-comment links only for Facebook and does not rely on clickable caption links on Instagram, Facebook or TikTok.                                                                                                                             |
@@ -79,6 +82,61 @@ selected route and the source evidence.
 The executable [package tests](../scripts/package.test.mjs) use synthetic account
 capabilities and decisions; their values are not platform limits or approved
 operator preferences.
+
+## Campaign tags
+
+Every link a new revision delivers is the verified destination followed by
+these four parameters, in this order, after `?` (or `&` when the destination
+already has a query):
+
+```text
+utm_source=<network>&utm_medium=social&utm_campaign=<campaign>&utm_content=<content>
+```
+
+`<network>` is the adaptation's network and `<campaign>` the package's
+`campaign`. `<content>` names what carries the link: `carrousel` or `video`
+for a link in the post itself (Facebook first comment, YouTube or X caption),
+`bio` for a profile link. A profile link stays in place after the post, so its
+visits are kept apart from the post's. The Facebook first comment of a Lingala
+carousel in campaign `langue-07`, whose destination is the Lingala fiche, is
+therefore:
+
+```text
+https://ethniafrica.com/fr/atlas/langues/lin?utm_source=facebook&utm_medium=social&utm_campaign=langue-07&utm_content=carrousel
+```
+
+The helper refuses a bare destination and a link tagged for another network,
+campaign or format, and its error prints the expected link. The research
+dossier keeps the bare destination; the tags belong to each adaptation. A
+verified destination that already carries `utm_` parameters or a `#fragment`
+is refused too: the tags would be doubled, or would land after the fragment,
+where Plausible never reads them.
+
+**Why.** Plausible credits a visit to a post only through these parameters.
+The audience audit of 2026-10-13 found that no post published since 1 October
+appeared as a campaign (`docs/audience/audit-2026-10-13.md`). The scheme is
+the one the retired link builder used, so older and newer campaigns read alike
+in the same report.
+
+**Revisions without a campaign.** A revision delivered before this rule has no
+`campaign` and keeps its bare link. `verify` still accepts it, so a piece paused
+at a checkpoint does not reopen; its next revision needs a campaign.
+
+**Limits.** In this workflow a link travels with the post only in a Facebook
+first comment or a YouTube or X caption; Instagram and TikTok rely on the
+profile link. A profile link is shared by every post while it stays in place,
+so its visits go to the campaign it was tagged with. Plausible loads
+only after a reader accepts analytics, so campaign counts are a floor.
+
+Instagram adds tags of its own to visits from its profile link: the audit of
+2026-10-13 counts 35 visitors under `utm_source=ig` and 35 under
+`utm_content=link_in_bio`, tags no package writes
+(`docs/audience/audit-2026-10-13.md`, campaigns line). Instagram profile visits
+may therefore show under `ig`/`link_in_bio` rather than this package's
+`instagram`/`bio`. A profile link tagged per piece also goes against the series
+rule that "the profile link stays fixed on the search page"
+(`docs/editorial/strategy/social-series.md`); the operator settles that before
+a series piece uses `profile`.
 
 ## Delivered files
 
