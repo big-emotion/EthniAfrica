@@ -271,7 +271,9 @@ export function SearchFeed({
   );
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [validatedOption, setValidatedOption] = useState<number | null>(null);
-  // The name each timeline has open, by subject, for the closing band.
+  // The name each timeline has open, by subject. It lives here, not in the
+  // timeline: « Tout » unmounts the timeline, and the closing band must keep
+  // naming what the chips show when the reader comes back.
   const [openNames, setOpenNames] = useState<Record<string, string>>({});
   const copy = searchFeedCopy[language];
   const answerCopy = nameAnswerCopy[language];
@@ -998,6 +1000,7 @@ export function SearchFeed({
                   />
                 ) : undefined
               }
+              openName={openNames[keyOf(subject)]}
               onOpenNameChange={(nameText) =>
                 setOpenNames((open) => ({
                   ...open,

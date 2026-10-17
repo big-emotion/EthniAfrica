@@ -226,7 +226,12 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
         languageFamily: "Une vidéo sur cette famille de langues",
         patronyme: "Une vidéo sur ce nom de famille",
       },
-      duration: (minutes, seconds) => `${minutes} min ${seconds}`,
+      duration: (minutes, seconds) =>
+        minutes === 0
+          ? `${Number(seconds)} s`
+          : Number(seconds) === 0
+            ? `${minutes} min`
+            : `${minutes} min ${seconds}`,
     },
   },
 };

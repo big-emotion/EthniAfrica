@@ -159,6 +159,21 @@ describe("SearchFeed — one video made on the subject, in « Histoire du nom »
     }
   );
 
+  // « 0 min 35 » and « 2 min 00 » are not how French says a duration
+  // (reader-facing register); the brief's « 2 min 35 » stays as it is.
+  // @req REQ-180
+  it.each([
+    [35, "35 s"],
+    [120, "2 min"],
+    [155, "2 min 35"],
+  ])("writes a %i s piece as « %s »", (durationSeconds, spoken) => {
+    renderPeul([short({ durationSeconds })]);
+
+    expect(
+      videoRow()!.querySelector(".afh-name-timeline-video-meta")
+    ).toHaveTextContent(new RegExp(`^${spoken}$`));
+  });
+
   // @req REQ-180
   it("draws no row when the subject has no short", () => {
     renderPeul([]);
@@ -209,6 +224,31 @@ describe("SearchFeed — the closing band follows the open name (brief 11 §1d)"
     );
     expect(document.body).toHaveTextContent(
       /Avant sa plus ancienne trace connue du projet, l.histoire du nom Fulɓe reste à écrire\./
+    );
+    expect(document.body).not.toHaveTextContent(
+      /enregistré pour le nom Peul\./
+    );
+  });
+
+  // « Tout » unmounts the timeline: the page keeps the reader's choice, so
+  // that coming back the chips and the band still name the same name.
+  // @req REQ-198
+  it("keeps the open name through « Tout » and back, in the chips and in the band", () => {
+    renderPeul([]);
+    fireEvent.click(screen.getByRole("button", { name: "Fulɓe" }));
+    fireEvent.click(screen.getByRole("button", { name: "Tout" }));
+    fireEvent.click(screen.getByRole("button", { name: "Histoire du nom" }));
+
+    expect(screen.getByRole("button", { name: "Fulɓe" })).toHaveAttribute(
+      "aria-pressed",
+      "true"
+    );
+    expect(screen.getByRole("button", { name: /^Peul/ })).toHaveAttribute(
+      "aria-pressed",
+      "false"
+    );
+    expect(document.body).toHaveTextContent(
+      /Aucun récit transmis oralement n.est enregistré pour le nom Fulɓe\./
     );
     expect(document.body).not.toHaveTextContent(
       /enregistré pour le nom Peul\./

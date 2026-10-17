@@ -54,7 +54,13 @@ export interface NameTimelineProps {
    * line and the hand-off, whichever name is open: it belongs to the subject.
    */
   video?: ReactNode;
-  /** The name the chips have open, so the closing band can speak of it. */
+  /**
+   * The name the chips have open, when the page keeps it: a lens round trip
+   * unmounts the timeline, and the page's closing band speaks of that name
+   * too, so the page holds the one copy. Without it the timeline keeps its
+   * own, and opens on its first name.
+   */
+  openName?: string;
   onOpenNameChange?: (nameText: string) => void;
   language: Language;
 }
@@ -79,13 +85,18 @@ export function NameTimeline({
   sourcesOpen = false,
   ficheLink,
   video,
+  openName,
   onOpenNameChange,
   language,
 }: NameTimelineProps) {
   const copy = nameTimelineCopy[language];
   const leadCopy = searchFeedCopy[language].searchedLead;
   const timeline = buildNameTimeline(history, searched);
-  const [shown, setShown] = useState(0);
+  const [ownOpenName, setOwnOpenName] = useState<string>();
+  const openIndex = timeline.names.findIndex(
+    ({ nameText }) => nameText === (openName ?? ownOpenName)
+  );
+  const shown = Math.max(openIndex, 0);
   const [elsewhere, setElsewhere] = useState(false);
   const namesRef = useRef<HTMLDivElement>(null);
   const name = timeline.names[shown];
@@ -102,8 +113,9 @@ export function NameTimeline({
   const selfLead = selfLine && selfIndex >= 0 ? timeline.selfLead : undefined;
 
   const show = (index: number) => {
-    setShown(index);
-    onOpenNameChange?.(timeline.names[index].nameText);
+    const { nameText } = timeline.names[index];
+    setOwnOpenName(nameText);
+    onOpenNameChange?.(nameText);
   };
   // The page introduces the name before it explains it (doctrine §1.1): the
   // reader lands on the chips and the intro line under them, never straight
