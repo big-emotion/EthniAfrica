@@ -1,3 +1,6 @@
+import { readdirSync, readFileSync } from "node:fs";
+import { join, resolve } from "node:path";
+
 import { describe, expect, it } from "vitest";
 
 import { violatesReaderRegister } from "@/lib/editorial/readerRegister";
@@ -28,6 +31,22 @@ const proverb = (id: string, entities: Proverb["entities"] = []): Proverb => ({
   ],
 });
 
+function peopleFiledNames(): Map<string, string> {
+  const peoplesRoot = resolve(process.cwd(), "dataset/source/afrik/peuples");
+  const filed = new Map<string, string>();
+  for (const branch of readdirSync(peoplesRoot, { withFileTypes: true })) {
+    if (!branch.isDirectory()) continue;
+    for (const file of readdirSync(join(peoplesRoot, branch.name))) {
+      if (!file.startsWith("PPL_") || !file.endsWith(".json")) continue;
+      const fiche = JSON.parse(
+        readFileSync(join(peoplesRoot, branch.name, file), "utf8")
+      );
+      filed.set(fiche.id, fiche.nameMain);
+    }
+  }
+  return filed;
+}
+
 describe("the proverb bank — what a chip may claim", () => {
   // A chip pointing at a fiche the corpus does not hold is a 404 the reader
   // finds before we do.
@@ -46,6 +65,29 @@ describe("the proverb bank — what a chip may claim", () => {
     }
 
     expect(dangling).toEqual([]);
+  });
+
+  // The chip is a hard-coded copy of the fiche's filed name. When the fiche
+  // is renamed the chip keeps the old name, and the proverb dossier's filter
+  // offers a people under a name the rest of the site no longer prints.
+  // @req REQ-113
+  it("labels each people chip with the name its fiche is filed under", () => {
+    const filedNames = peopleFiledNames();
+    const stale: string[] = [];
+
+    for (const entry of PROVERBS) {
+      for (const entity of entry.entities) {
+        if (entity.kind !== "people") continue;
+        const filed = filedNames.get(entity.id);
+        if (entity.label !== filed) {
+          stale.push(
+            `${entry.id} → ${entity.id}: « ${entity.label} » ≠ « ${filed} »`
+          );
+        }
+      }
+    }
+
+    expect(stale).toEqual([]);
   });
 
   // « Proverbe africain » with no people behind it is the flattening the atlas

@@ -198,3 +198,74 @@ describe("PPL_FULA — the sources behind the names", () => {
     );
   });
 });
+
+interface FulaAccount {
+  period: { from: number | null; to: number | null; label: string };
+  formAsWritten?: string;
+  actors?: { name: string; role: string }[];
+  sources: { year?: number }[];
+}
+
+function fulaNames(): {
+  nameText: string;
+  usedIn?: string[];
+  accounts: FulaAccount[];
+}[] {
+  return readFula().nameHistory.names;
+}
+
+describe("PPL_FULA — the name it is filed under and the timeline's words", () => {
+  // Every label that reads the filed name (result-page title, fiche link,
+  // breadcrumb, country lists) printed « Fula (Fulbe / Peul) », the English
+  // form first. Peul is the form the history records for French.
+  // @req REQ-178
+  it("files the entry under Peul, the name its history gives the French form", () => {
+    const fula = readFula();
+    const peul = fulaNames().find((name) => name.nameText === "Peul");
+
+    expect(peul.usedIn).toContain("fra");
+    expect(fula.nameMain).toBe("Peul");
+    expect(fula.content.appellations.mainName).toBe("Peul");
+  });
+
+  // « Usage décrit au présent par l'auteur » says nothing a reader can place:
+  // the author's present is the year the cited work came out.
+  // @req REQ-178
+  it("dates each usage an author describes by the year of the work that describes it", () => {
+    const accounts = fulaNames().flatMap((name) => name.accounts);
+
+    expect(
+      accounts.filter((account) =>
+        account.period.label.startsWith("Usage décrit au présent par")
+      )
+    ).toEqual([]);
+
+    const dated = accounts.filter((candidate) =>
+      /^Usage décrit en \d{4}$/.test(candidate.period.label)
+    );
+    expect(dated.length).toBeGreaterThan(0);
+    for (const account of dated) {
+      const [source] = account.sources;
+      expect(account.period.label).toBe(`Usage décrit en ${source.year}`);
+      expect(account.period.from).toBe(source.year);
+      expect(account.period.to).toBe(source.year);
+    }
+  });
+
+  // The timeline prints « Personnes citées dans ce récit : <name>, <role> »;
+  // a context clause stored in the name repeated the statement above it.
+  // @req REQ-178
+  it("names Amadou Hampâté Bâ as the actor of the Peul account, with no context clause in the name", () => {
+    const peul = fulaNames().find((name) => name.nameText === "Peul");
+    const written = peul.accounts.find(
+      (account) => account.formAsWritten === "Peuls ou Peulhs"
+    );
+
+    expect(written.actors.map((actor) => actor.name)).toEqual([
+      "Amadou Hampâté Bâ",
+    ]);
+    expect(
+      JSON.stringify(peul.accounts.flatMap((a) => a.actors ?? []))
+    ).not.toContain("à propos de l'usage français");
+  });
+});

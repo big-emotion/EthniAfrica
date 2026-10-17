@@ -4932,6 +4932,65 @@ export function checkSearchAnswerFields(datasetRoot: string): ValidationResult {
 
   return { ok: errors.length === 0, errors, warnings: [] };
 }
+
+interface RecordedNameForm {
+  nameText?: unknown;
+  selfGiven?: unknown;
+  usedIn?: unknown;
+}
+
+/**
+ * REQ-178 – A people fiche whose history records a French form is not filed
+ * under a form recorded for English and not for French.
+ *
+ * `nameMain` is what every label prints: the result-page title, the fiche
+ * link, the breadcrumb, the country and family lists. PPL_FULA was filed as
+ * « Fula (Fulbe / Peul) » while its own history gives Peul as the French
+ * form, so a French reader who searched « peul » was answered in English.
+ * The lead form is the text before the first « ( » or « / ». A fiche whose
+ * history records no French form has nothing better to be filed under, and a
+ * fiche filed under the name the people gives itself is never refused.
+ */
+export function checkPeopleFiledNameLanguage(
+  datasetRoot: string
+): ValidationResult {
+  const errors: string[] = [];
+
+  for (const { flgFolder, file, fullPath } of collectPplFiles(datasetRoot)) {
+    const fiche = readFiche(fullPath);
+    const names = (fiche?.nameHistory as { names?: unknown } | undefined)
+      ?.names;
+    if (typeof fiche?.nameMain !== "string" || !Array.isArray(names)) continue;
+
+    const outsideForms = (names as RecordedNameForm[]).filter(
+      (
+        name
+      ): name is { nameText: string; selfGiven: false; usedIn: string[] } =>
+        name?.selfGiven === false &&
+        typeof name.nameText === "string" &&
+        Array.isArray(name.usedIn)
+    );
+    const frenchForms = outsideForms.filter((name) =>
+      name.usedIn.includes("fra")
+    );
+    if (frenchForms.length === 0) continue;
+
+    const leadForm = fiche.nameMain.split(/[(/]/)[0].trim();
+    const filedInEnglish = outsideForms.some(
+      (name) =>
+        name.nameText === leadForm &&
+        name.usedIn.includes("eng") &&
+        !name.usedIn.includes("fra")
+    );
+    if (filedInEnglish) {
+      errors.push(
+        `REQ-178: peuples/${flgFolder}/${file}: ${String(fiche.id)} is filed under "${fiche.nameMain}", led by ${leadForm}, a form its nameHistory records for English and not French; it records the French form ${frenchForms.map((name) => name.nameText).join(", ")}`
+      );
+    }
+  }
+
+  return { ok: errors.length === 0, errors, warnings: [] };
+}
 // Both lists a country fiche uses to name its peoples carry the same
 // `peopleId` and `languageFamily` pair.
 const COUNTRY_PEOPLE_LISTS: ReadonlyArray<{
@@ -5262,6 +5321,12 @@ async function main() {
   newChecks.push({
     name: "REQ-178 Search answer fields",
     result: checkSearchAnswerFields(datasetRoot),
+  });
+
+  console.log("REQ-178 – People filed under a French name...");
+  newChecks.push({
+    name: "REQ-178 People filed under a French name",
+    result: checkPeopleFiledNameLanguage(datasetRoot),
   });
 
   console.log("REQ-148 – Kingdom time ranges...");
