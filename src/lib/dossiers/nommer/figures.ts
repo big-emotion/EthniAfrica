@@ -469,8 +469,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 618 -> 619 on 2026-10-14: PAT_NSENGIYUMVA now cites sources of its own (wave 22).
     // 619 -> 621 on 2026-10-15: PAT_KOFI and PAT_KWAME now cite sources of their own (Christaller 1881, Agyekum 2006); both cited only the candidate queue before.
     // 621 -> 622 on 2026-10-15: PAT_KWABENA, the Twi Tuesday day name, added with sources of its own (Christaller 1881, Agyekum 2006, Grottanelli 1977, Dolphyne 1986).
-    // 622 -> 626 on 2026-10-16: PAT_BANGOURA, PAT_BANGURA, PAT_CONTEH and PAT_KONE now cite sources of their own (Arcin 1907, Bamadaba, Binger 1892); all four cited only the candidate queue before (wave 23).
-    value: 626,
+    // 622 -> 626 on 2026-10-16: PAT_BANGOURA, the Bangura fiche (since folded into it), PAT_CONTEH and PAT_KONE now cite sources of their own (Arcin 1907, Bamadaba, Binger 1892); all four cited only the candidate queue before (wave 23).
+    // 626 -> 624 on 2026-10-16: the Koroma and Bangura fiches folded into PAT_KOUROUMA and PAT_BANGOURA; both cited sources of their own.
+    value: 624,
     method:
       "fiches dataset/source/afrik/patronymes/PAT_*.json portant un nameSystem et " +
       "au moins une source autre que la file d'attente des candidats — les fiches " +

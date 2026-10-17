@@ -6,7 +6,7 @@
   },
   "id": "PAT_MENEZES",
   "nameMain": "Menezes",
-  "nameSystem": "clan_name",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Menezes",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -70,7 +70,7 @@
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+      "reason": "Nous ne documentons pas encore comment le nom Menezes passe d'une génération à l'autre : les sources lues disent d'où il vient, pas la règle qui le transmet."
     },
     {
       "fieldPath": "peoples",
@@ -151,14 +151,24 @@
                 "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 302 : « Meneses. É apelido nosso muito usual, e tambem no vizinho reino. »"
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "nameText": "Meneses",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
           {
             "period": {
               "from": 1434,
               "to": 1434,
               "label": "1434"
             },
-            "statement": "Le nom Menezes a pour plus ancienne trace une forme proche, Meneses, dans « D. Fernando de Meneses », en 1434, que cite José Leite de Vasconcelos d'après les Chancelarias. Il la range avec d'autres noms de nobles du XVe siècle, qui plaçaient « de » devant un nom de lieu. C'est la plus ancienne trace de ce nom que le projet connaît ; elle ne dit rien de São Tomé-et-Príncipe.",
+            "statement": "Le nom Meneses est l'écriture de José Leite de Vasconcelos pour le nom Menezes. Il la lit dans « D. Fernando de Meneses », en 1434, d'après les Chancelarias, et la range avec d'autres noms de nobles du XVe siècle, qui plaçaient « de » devant un nom de lieu. C'est la plus ancienne trace de cette orthographe que le projet connaît ; elle ne dit rien de São Tomé-et-Príncipe.",
             "formAsWritten": "Meneses",
             "birth": true,
             "sources": [

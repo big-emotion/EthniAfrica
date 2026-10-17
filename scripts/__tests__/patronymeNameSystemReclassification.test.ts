@@ -145,21 +145,34 @@ const KEPT_MAGHREB_FAMILY_NAMES = [
 const HEREDITARY_FAMILY_NAME_FICHES = [
   "PAT_AKHANNOUCH",
   "PAT_AMARA",
+  "PAT_BANDEIRA",
   "PAT_BAPTISTA",
   "PAT_BELKACEM",
   "PAT_BENYOUCEF",
   "PAT_BEN_BADIS",
   "PAT_BOUMEDIENE",
   "PAT_BOUZID",
+  "PAT_CARVALHO",
   "PAT_CHINEDU",
+  "PAT_COSTA",
+  "PAT_DUARTE",
   "PAT_EYOUM",
+  "PAT_FERNANDES",
+  "PAT_FERREIRA",
   "PAT_GONCALVES",
   "PAT_GUIRGUIS",
   "PAT_HAMDI",
   "PAT_JOHNSON",
   "PAT_KACI",
   "PAT_KAZADI",
+  "PAT_LIMA",
+  "PAT_LOPES",
   "PAT_LOURENCO",
+  "PAT_MENEZES",
+  "PAT_MONTEIRO",
+  "PAT_NASCIMENTO",
+  "PAT_NETO",
+  "PAT_NEVES",
   "PAT_NWACHUKWU",
   "PAT_OKORO",
   "PAT_POHAMBA",
@@ -179,6 +192,51 @@ const HEREDITARY_FAMILY_NAME_LINEAGE = new Set<string>([
   "PAT_BEN_BADIS",
   "PAT_EYOUM",
 ]);
+
+// Third pass (ruling of 2026-10-16, waves 21 to 23): Portuguese family names
+// whose own nameHistory, written from Leite de Vasconcelos (1928) and the
+// Dictionary of American Family Names, shows the name borne as a family name
+// and tells no clan. They took the sixth value through the same rule as the
+// 28 above. The unit is `other`: no account shows a family line.
+const THIRD_PASS_PORTUGUESE = [
+  "PAT_MONTEIRO",
+  "PAT_BANDEIRA",
+  "PAT_MENEZES",
+  "PAT_FERNANDES",
+  "PAT_LOPES",
+  "PAT_DUARTE",
+  "PAT_COSTA",
+  "PAT_LIMA",
+  "PAT_NEVES",
+  "PAT_CARVALHO",
+  "PAT_FERREIRA",
+  "PAT_NASCIMENTO",
+  "PAT_NETO",
+] as const;
+
+// Personal names told by the sources of the Ambo and Tswana studies, with no
+// account showing the name passed from parent to child as a surname: the
+// nearest box, like the second pass.
+const PERSONAL_NAMES_THIRD_PASS = [
+  "PAT_AMADHILA",
+  "PAT_HAMUTENYA",
+  "PAT_IIPUMBU",
+  "PAT_KGOSI",
+  "PAT_MOTHIBI",
+] as const;
+
+// Kept on purpose in the third pass: a clan told by the source (Ngcobo,
+// Madiba), a house of chiefs whose history is not yet in the fiche's own
+// nameHistory (Khama, Mahlangu), a regnal name taken by kings (Gbaguidi), or a
+// praise name. Listed in the pull request as open questions.
+const KEPT_THIRD_PASS = [
+  ["PAT_NGCOBO", "clan_name"],
+  ["PAT_MADIBA", "clan_name"],
+  ["PAT_KHAMA", "clan_name"],
+  ["PAT_MAHLANGU", "clan_name"],
+  ["PAT_GBAGUIDI", "clan_name"],
+  ["PAT_MNTUNGWA_PRAISE", "praise_name"],
+] as const;
 
 function everyFiche() {
   const dir = resolve(process.cwd(), "dataset/source/afrik/patronymes");
@@ -416,5 +474,70 @@ describe("hereditary family names (ETNI-2011, sixth value)", () => {
   // @req REQ-133
   it("keeps Taiwo's transmission coherent with a family name taken from the father", () => {
     expect(readFiche("PAT_TAIWO").transmissionMode).toBe("patrilineal");
+  });
+});
+
+describe("third pass: waves 21 to 23 (ETNI-2011)", () => {
+  // @req REQ-133
+  it.each(THIRD_PASS_PORTUGUESE)(
+    "%s is a hereditary family name, with the unit `other` and no clan wording left",
+    (id) => {
+      const fiche = readFiche(id);
+
+      expect(parsePatronymeFile(fiche).success).toBe(true);
+      expect(fiche.nameSystem).toBe("hereditary_family_name");
+      expect(fiche.designatedSocialUnit).toBe("other");
+      expect(nameSystemGaps(fiche)).toHaveLength(0);
+      expect(JSON.stringify(transmissionGaps(fiche))).not.toMatch(
+        /Le nom de clan ne détermine/
+      );
+      expect(JSON.stringify(fiche.nameHistory)).not.toMatch(/nom de clan/);
+    }
+  );
+
+  // @req REQ-133
+  it.each(PERSONAL_NAMES_THIRD_PASS)(
+    "%s is filed as a personal name, with one gap and no leftover provisional wording",
+    (id) => {
+      const fiche = readFiche(id);
+
+      expect(parsePatronymeFile(fiche).success).toBe(true);
+      expect(fiche.nameSystem).toBe("non_hereditary_patronymic");
+      expect(fiche.designatedSocialUnit).toBe("individual");
+      const gaps = nameSystemGaps(fiche);
+      expect(gaps, `${id}: one nameSystem gap`).toHaveLength(1);
+      expect(gaps[0].reason).toMatch(/aucune source/i);
+      expect(gaps[0].reason).toMatch(/nom de clan/);
+      expect(gaps[0].reason).not.toMatch(
+        /provisoire|hypothèse de classement|choix par défaut/
+      );
+      expect(
+        fiche.gaps.some(
+          ({ fieldPath }: { fieldPath: string }) =>
+            fieldPath === "designatedSocialUnit"
+        )
+      ).toBe(false);
+      expect(JSON.stringify(transmissionGaps(fiche))).not.toMatch(
+        /Le nom de clan ne détermine/
+      );
+    }
+  );
+
+  // @req REQ-133
+  it.each(KEPT_THIRD_PASS)("%s keeps its %s typing", (id, nameSystem) => {
+    expect(readFiche(id).nameSystem).toBe(nameSystem);
+  });
+
+  // @req REQ-133
+  it("keeps the bilateral transmission of the Portuguese names whose source gives it", () => {
+    for (const id of [
+      "PAT_MONTEIRO",
+      "PAT_FERNANDES",
+      "PAT_LOPES",
+      "PAT_DUARTE",
+      "PAT_NEVES",
+    ]) {
+      expect(readFiche(id).transmissionMode, id).toBe("bilateral");
+    }
   });
 });

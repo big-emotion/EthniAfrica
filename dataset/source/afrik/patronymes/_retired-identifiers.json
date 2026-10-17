@@ -145,5 +145,19 @@
     "successorId": null,
     "reason": "Only Forebears, an aggregator, attests Koum (Cameroon and Côte d'Ivoire). No dictionary entry, old trace or people backs it, and every other field of the fiche was empty. Withdrawn with no successor.",
     "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PAT_KOROMA",
+    "successorId": "PAT_KOUROUMA",
+    "reason": "Koroma is a spelling of Kourouma: the Bamadaba clan-name dictionary gives Kuruma, with Koroma and Kuruba as variants, as one jamu in the Malinke and Kuranko speech varieties. Folded in: the spelling Koroma in Sierra Leone, on Bamadaba and on EthniAfrica's own Kuranko fiche, which lists Koroma among the Kuranko clans; the Kuranko as a people; Sierra Leone as a country, marked supposed because neither source ties the name to one country. Not carried: the candidate-queue stub, and the spelling Kourouma in Sierra Leone, which rested on the queue alone.",
+    "decidedOn": "2026-10-16"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PAT_BANGURA",
+    "successorId": "PAT_BANGOURA",
+    "reason": "Bangura is the Sierra Leone spelling of Bangoura: the Bamadaba clan-name dictionary gives Bàngura as one jamu in Malinke and Soussou, and Arcin (1907, p. 303) writes Bangoura among the Soso of Guinea. Folded in: the spelling Bangura in Sierra Leone, on Bamadaba; Sierra Leone as a country, marked supposed because only the candidate queue gives it; a Bangura entry in the name history that says neither source speaks of Sierra Leone; and the gap on the people. Not carried: the Bangoura spelling in Sierra Leone, which rested on the queue and on Arcin, who finds the name only in Guinea; the candidate-queue stub.",
+    "decidedOn": "2026-10-16"
   }
 ]
