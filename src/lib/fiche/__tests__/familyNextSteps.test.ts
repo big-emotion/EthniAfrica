@@ -56,11 +56,13 @@ describe("familyNextSteps — « Poursuivre avec un autre nom » on a family", (
 
     expect(cards).toEqual([
       {
+        relation: "language",
         kind: "Langue",
         name: "Lingala",
         reason: "Le nom lin désigne une langue.",
       },
       {
+        relation: "people",
         kind: "Peuple",
         name: "Swahili",
         reason: "Le nom Swahili désigne un peuple.",

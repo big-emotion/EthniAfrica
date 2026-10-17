@@ -188,11 +188,17 @@ export function RecherchePageContent() {
       const params = new URLSearchParams();
       if (q) params.set("q", q);
       if (rel) params.set(rel.kind, rel.id);
+      // The arrival's campaign tags stay in the address: rebuilt from q and
+      // the relation alone, a tagged reader who searched again before
+      // accepting cookies lost the campaign that brought them.
+      searchParams.forEach((value, key) => {
+        if (key.startsWith("utm_")) params.set(key, value);
+      });
       const route = getLocalizedRoute(language, "search");
       const url = params.toString() ? `${route}?${params}` : route;
       router.replace(url, { scroll: false });
     },
-    [language, router]
+    [language, router, searchParams]
   );
 
   // ── main search ─────────────────────────────────────────────────────────────
@@ -226,6 +232,7 @@ export function RecherchePageContent() {
       setFeedState(null);
       setFeedPresentation(undefined);
       setFeedSubjects([]);
+      setNextSteps([]);
       try {
         const {
           results: hits,
@@ -298,22 +305,36 @@ export function RecherchePageContent() {
         );
         // Loaded before the feed mounts: the feed picks its default lens once,
         // and opens on the timeline when a subject has a name history.
-        const [nextCompanions, nextNameHistories, nextNextSteps] =
-          await Promise.all([
-            loadSearchCompanions(
-              companionSubjects,
-              language,
-              controller.signal,
-              q
-            ),
-            loadSubjectNameHistories(resolvedSubjects, controller.signal),
-            loadNextSteps(resolvedSubjects, language, controller.signal),
-          ]);
+        const [nextCompanions, nextNameHistories] = await Promise.all([
+          loadSearchCompanions(
+            companionSubjects,
+            language,
+            controller.signal,
+            q
+          ),
+          loadSubjectNameHistories(resolvedSubjects, controller.signal),
+        ]);
         if (ticket !== requestTicket.current) return;
+
+        // The next names read the histories (the namer of a searched name)
+        // and sit at the bottom of the page, so they arrive after the feed
+        // mounts rather than hold it.
+        loadNextSteps(
+          resolvedSubjects,
+          language,
+          controller.signal,
+          nextNameHistories,
+          q
+        )
+          .then((cards) => {
+            if (ticket === requestTicket.current) setNextSteps(cards);
+          })
+          .catch(() => {
+            // Aborted by a newer search, or failed: the page has no next step.
+          });
 
         setCompanions(nextCompanions);
         setNameHistories(nextNameHistories);
-        setNextSteps(nextNextSteps);
         setFeedSubjects(resolvedSubjects);
         setFeedState(
           classifySearchFeed({

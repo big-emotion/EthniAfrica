@@ -184,7 +184,11 @@ async function PeopleLiveContent({
             nameHistory={people.nameHistory ?? null}
             onward={
               nextSteps.length > 0 ? (
-                <NameNextStep cards={nextSteps} language={language} />
+                <NameNextStep
+                  cards={nextSteps}
+                  language={language}
+                  trackFrom="people"
+                />
               ) : (
                 <FicheOnward
                   from="people"

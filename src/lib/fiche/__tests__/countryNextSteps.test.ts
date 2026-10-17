@@ -118,11 +118,13 @@ describe("countryNextSteps — the names a country shares and its next names", (
     });
     expect(cards).toEqual([
       {
+        relation: "country",
         kind: "Pays",
         name: "République démocratique du Congo",
         reason: "Le nom République démocratique du Congo désigne un pays.",
       },
       {
+        relation: "people",
         kind: "Peuple",
         name: "Kongo",
         reason: "Le nom PPL_KONGO désigne un peuple.",

@@ -44,6 +44,7 @@ function PageEnd() {
       <NameNextStep
         cards={[
           {
+            relation: "family",
             kind: "Famille de langues",
             name: "Atlantique",
             reason:
@@ -96,12 +97,14 @@ export const FichePeuple: Story = {
       <NameNextStep
         cards={[
           {
+            relation: "family",
             kind: "Famille de langues",
             name: "Atlantique",
             reason:
               "Le nom atlantique désigne un ensemble de langues de la côte ouest de l’Afrique, du Sénégal à la Sierra Leone, comme le wolof, le peul, le sérère, le diola ou le temné.",
           },
           {
+            relation: "patronyme",
             kind: "Nom de famille",
             name: "Ba",
             reason:

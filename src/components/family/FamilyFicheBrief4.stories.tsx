@@ -49,8 +49,18 @@ export const Bantou: Story = {
     onward: (
       <NameNextStep
         cards={[
-          { kind: "Langue", name: "Lingala", reason: reason(lin) },
-          { kind: "Peuple", name: "Swahili", reason: reason(swahili) },
+          {
+            relation: "language",
+            kind: "Langue",
+            name: "Lingala",
+            reason: reason(lin),
+          },
+          {
+            relation: "people",
+            kind: "Peuple",
+            name: "Swahili",
+            reason: reason(swahili),
+          },
         ]}
         language="fr"
       />
@@ -67,8 +77,18 @@ export const Mande: Story = {
     onward: (
       <NameNextStep
         cards={[
-          { kind: "Langue", name: "Bambara", reason: reason(bam) },
-          { kind: "Peuple", name: "Malinké", reason: reason(malinke) },
+          {
+            relation: "language",
+            kind: "Langue",
+            name: "Bambara",
+            reason: reason(bam),
+          },
+          {
+            relation: "people",
+            kind: "Peuple",
+            name: "Malinké",
+            reason: reason(malinke),
+          },
         ]}
         language="fr"
       />

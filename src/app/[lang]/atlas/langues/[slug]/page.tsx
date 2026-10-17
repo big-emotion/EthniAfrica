@@ -121,7 +121,11 @@ export default async function LanguesSlugPage({
             provenance={provenance}
             onward={
               nextSteps.length > 0 ? (
-                <NameNextStep cards={nextSteps} language={lang as Language} />
+                <NameNextStep
+                  cards={nextSteps}
+                  language={lang as Language}
+                  trackFrom="language"
+                />
               ) : (
                 <FicheOnward
                   from="language"

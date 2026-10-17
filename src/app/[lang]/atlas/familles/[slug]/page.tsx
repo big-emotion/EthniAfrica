@@ -155,7 +155,11 @@ async function FamilyLiveContent({
             provenance={provenance}
             onward={
               nextSteps.length > 0 ? (
-                <NameNextStep cards={nextSteps} language={language} />
+                <NameNextStep
+                  cards={nextSteps}
+                  language={language}
+                  trackFrom="language-family"
+                />
               ) : (
                 <FicheOnward
                   from="language-family"

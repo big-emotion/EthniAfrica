@@ -23,12 +23,30 @@ const fold = (text: string): string =>
  */
 // @req REQ-178
 export function answersToSearch(form: string, searched?: string): boolean {
+  return searchedFormIn([{ form }], searched) !== undefined;
+}
+
+/**
+ * The part of a recorded form the reader typed, spelled as the fiche spells
+ * it: « Fulani » for « fulani ». Where the reader searched, it titles the
+ * page rather than the filed label (doctrine §1.1).
+ */
+// @req REQ-178
+export function searchedFormIn(
+  forms: ReadonlyArray<{ form: string }>,
+  searched?: string
+): string | undefined {
   const target = searched ? fold(searched) : "";
-  if (!target) return false;
-  return form
-    .replace(/\([^)]*\)/g, "")
-    .split(/[·,/]/)
-    .some((part) => fold(part) === target);
+  if (!target) return undefined;
+  for (const { form } of forms) {
+    const part = form
+      .replace(/\([^)]*\)/g, "")
+      .split(/[·,/]/)
+      .map((piece) => piece.trim())
+      .find((piece) => fold(piece) === target);
+    if (part) return part;
+  }
+  return undefined;
 }
 
 /**

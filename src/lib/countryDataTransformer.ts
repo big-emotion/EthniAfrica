@@ -394,6 +394,21 @@ export function transformPeoples(
   };
 }
 
+/**
+ * The « Peuples » figure of « En bref »: the same peoples « Peuples du pays »
+ * counts, those with a fiche. Counting the demographic rows put « Autres
+ * peuples » in the total, and the two chapters gave two numbers (CIV: 6 and
+ * 5). Absent when the fiche lists no peoples at all.
+ */
+// @req REQ-151
+export function countryPeopleCount(
+  country: Pick<CountryDetail, "demographics" | "majorPeoples">
+): number | undefined {
+  if (!country.demographics?.peoples) return undefined;
+  return transformPeoples(country.demographics, country.majorPeoples)
+    .peopleCount;
+}
+
 function groupSamePercentage(
   rows: PeopleRow[],
   language: Language
