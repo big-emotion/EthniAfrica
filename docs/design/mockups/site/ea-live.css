@@ -4922,8 +4922,10 @@ a.ea-fiche-card:focus-visible { outline: none; box-shadow: var(--afh-ring-focus)
 .ea-consent-quiet > *:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
 @container ea-consent (min-width: 768px) {
   .ea-consent-inner { padding-inline: var(--afh-space-5xl); }
-  /* The source order stays « Refuser », « Accepter », then the quiet pair. */
-  .ea-consent-controls { flex-direction: row-reverse; justify-content: space-between; align-items: center; gap: var(--afh-space-2xl); }
+  /* « Refuser », « Accepter », then the quiet pair, on screen as in the
+     source: no reversed row splits the reading order from the focus order
+     (WCAG 2.4.3, brief 12 approval record item 5). */
+  .ea-consent-controls { flex-direction: row; justify-content: space-between; align-items: center; gap: var(--afh-space-2xl); }
   .ea-consent-choice { flex: none; }
   .ea-consent-button { padding-inline: var(--afh-space-5xl); }
 }
