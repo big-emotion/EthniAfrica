@@ -10,6 +10,64 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+## [5.5.0] - 2026-10-17
+
+### Added
+
+- Analytics: opening a passage's source sheet records `fiche:source_click`, with the
+  surface (`timeline` on the result page, `fiche` on a fiche's competing readings) and
+  the `source_kind` of the passage's first source. No query, anchor or tier is sent, and
+  nothing visible changes (#1809).
+- Corpus check: `validateAfrikData.ts` refuses a people fiche that records a French form
+  but is filed under a form recorded for English and not for French (REQ-178) (#1812).
+- Design: briefs 10 to 12 and their Claude Design prompts for the three site board
+  passes (the fiche's link to its name's story and chapter folds; the result page's
+  hand-off to the self-name, its Short and the « Source » label; the unknown-name page,
+  the Fiches lens and the consent strip). They await the operator's review; no board,
+  charter or code changes (#1811).
+
+### Changed
+
+- `PPL_FULA` is filed under « Peul », the form its own name history records for French,
+  instead of « Fula (Fulbe / Peul) ». Fula, Fulani, Fulbe and Pullo stay among its
+  recorded forms, and the proverb chip follows the fiche. Seven undated accounts in its
+  timeline are now dated by the work they cite (« Usage décrit en 1990 ») (#1812).
+- Result page: the next step follows the approved boards again. On `?q=peul` it offers
+  « Peuple · Wolof », the people who gave the name, before « Famille de langues ·
+  Atlantique »; the unknown-name page offers Siwi then Tchad, each with the first
+  sentence of its own fiche. Next-step cards search a form the target's history tells
+  (`?q=Songhay`, not the filed label), the next names load after the feed, and with one
+  subject « Voir la fiche complète » sits under the timeline. A lone answer is titled
+  with the form the reader searched (« Fiches sur Fulani ») (#1814).
+- Analytics: next-step clicks are counted again, as `fiche:related_click` on fiches and
+  `search:result_click` with `surface: "next"` on the result page, and the arrival's
+  `utm_*` parameters survive a second search (#1814).
+- Fiche copy in plain words: the provenance banner (« 6 informations, chacune avec sa
+  source », « Nous n'avons encore enregistré aucune relecture de cette fiche. »), both
+  variants of « L'empreinte » on family fiches, and patronyme spellings that name their
+  countries (« attestée dans ces pays : Mali, Burkina Faso, … ») instead of codes (#1813).
+- Social production: the publication package requires a `campaign` slug and accepts a
+  site link only when it carries the `utm_source`, `utm_medium=social`, `utm_campaign`
+  and `utm_content` tags for its network, campaign and format (`bio` for a profile
+  link). A verified destination that already carries tags or a fragment is refused, and
+  revisions written before campaigns still verify (#1810).
+
+### Fixed
+
+- Fiche tiles: a closed tile's lead no longer stops on an initial (« selon l'historien
+  N. ») or inside a parenthesis (« Le sultanat de Dosso (fonde ca. »); 62 previews
+  change (#1813).
+- `PPL_ZARMA`: French accents restored on 47 of the fiche's strings, with the typos the
+  fiche's own text settles (« l'État nigérien », Tillabéri, « dynastie », « fondé vers
+  1750 »), and the self-name line no longer explains Zarma through Zarmaganda.
+  `PAT_TRAORE`'s social-function paragraph opens on the variation instead of a rebuttal
+  (#1812).
+- Côte d'Ivoire: the Godié « surnom » line cites Kokora's study, which carries it,
+  instead of SIL Ethnologue, and the unsourced « cote-ivoire » discovery, which the
+  fiche's own sources contradicted, is removed (#1813).
+- Country fiches: « En bref » counts the peoples the way « Peuples du pays » does, so
+  Côte d'Ivoire reads 5 in both (#1814).
+
 ## [5.4.0] - 2026-10-17
 
 ### Added
@@ -1780,7 +1838,8 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.4.0...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.5.0...HEAD
+[5.5.0]: https://github.com/big-emotion/ethniafrica/compare/v5.4.0...v5.5.0
 [5.4.0]: https://github.com/big-emotion/ethniafrica/compare/v5.3.0...v5.4.0
 [5.3.0]: https://github.com/big-emotion/ethniafrica/compare/v5.2.0...v5.3.0
 [5.2.0]: https://github.com/big-emotion/ethniafrica/compare/v5.1.0...v5.2.0
