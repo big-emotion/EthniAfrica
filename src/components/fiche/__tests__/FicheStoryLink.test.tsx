@@ -10,12 +10,15 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 
 import { FicheStoryLink } from "@/components/fiche/FicheStoryLink";
 import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
+import { getLocalizedRoute } from "@/lib/routing";
 import { nameStoryHref } from "@/lib/search/nameClosing";
 
 afterEach(() => {
   cleanup();
   delete window.plausible;
 });
+
+const SEARCH = getLocalizedRoute("fr", "search");
 
 const CIV_HISTORY = {
   summary: "Le nom Côte d'Ivoire renvoie au commerce de l'ivoire.",
@@ -49,10 +52,7 @@ describe("FicheStoryLink", () => {
     const link = screen.getByRole("link", {
       name: /^Suivre l'histoire du nom Côte d'Ivoire/,
     });
-    expect(link).toHaveAttribute(
-      "href",
-      "/fr/atlas/recherche?q=C%C3%B4te+d%27Ivoire"
-    );
+    expect(link).toHaveAttribute("href", `${SEARCH}?q=C%C3%B4te+d%27Ivoire`);
     expect(link).toHaveAttribute("href", nameStoryHref("fr", "Côte d'Ivoire"));
     expect(
       screen.getByText(

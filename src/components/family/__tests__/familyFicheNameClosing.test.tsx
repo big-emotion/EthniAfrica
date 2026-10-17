@@ -29,6 +29,8 @@ vi.mock("next/navigation", () => ({
 
 afterEach(cleanup);
 
+const SEARCH = getLocalizedRoute("fr", "search");
+
 /** Mandé as the corpus tells it, cut down: the family's name and Manden. */
 const MANDE_HISTORY = {
   summary: "Le nom mandé désigne une famille de langues d'Afrique de l'Ouest.",
@@ -244,7 +246,7 @@ describe("LanguageFamilyDetailViewV2 — the link to the story of its name", () 
     const link = within(story).getByRole("link", {
       name: /^Suivre l'histoire du nom Mandé/,
     });
-    expect(link).toHaveAttribute("href", "/fr/atlas/recherche?q=Mand%C3%A9");
+    expect(link).toHaveAttribute("href", `${SEARCH}?q=Mand%C3%A9`);
     const readMore = story.querySelector("[data-name-story-more]") as Node;
     const firstRow = story.querySelector(
       '[data-testid="name-story-form"]'

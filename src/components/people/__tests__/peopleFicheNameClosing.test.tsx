@@ -39,6 +39,8 @@ vi.mock("next/navigation", () => ({
 
 afterEach(cleanup);
 
+const SEARCH = getLocalizedRoute("fr", "search");
+
 /** Bassa as the corpus tells it: one name, an oral account among four. */
 const BASSA: NameHistory = {
   summary: "Le nom Bassa désigne un peuple de langue krou du Liberia.",
@@ -219,7 +221,7 @@ describe("PeopleDetailViewV2 — the link to the story of its name", () => {
     const link = within(answer).getByRole("link", {
       name: /^Suivre l'histoire du nom Zarma/,
     });
-    expect(link).toHaveAttribute("href", "/fr/atlas/recherche?q=Zarma");
+    expect(link).toHaveAttribute("href", `${SEARCH}?q=Zarma`);
     expect(link).toHaveAttribute("href", nameStoryHref("fr", "Zarma"));
     expect(answer.lastElementChild).toBe(link.closest(".ea-story"));
     const others = container.querySelector(
@@ -247,7 +249,7 @@ describe("PeopleDetailViewV2 — the link to the story of its name", () => {
 
     expect(
       screen.getByRole("link", { name: /^Suivre l'histoire du nom Fulɓe/ })
-    ).toHaveAttribute("href", "/fr/atlas/recherche?q=Ful%C9%93e");
+    ).toHaveAttribute("href", `${SEARCH}?q=Ful%C9%93e`);
   });
 
   // @req REQ-198

@@ -14,6 +14,8 @@ vi.mock("next/navigation", () => ({
 
 afterEach(cleanup);
 
+const SEARCH = getLocalizedRoute("fr", "search");
+
 type Account = NameHistory["names"][number]["accounts"][number];
 
 const source = (title: string): Account["sources"][number] => ({
@@ -199,7 +201,7 @@ describe("LanguageDetailViewV2 — the link to the story of its name", () => {
     const link = within(chapter).getByRole("link", {
       name: /^Suivre l'histoire du nom Lingala/,
     });
-    expect(link).toHaveAttribute("href", "/fr/atlas/recherche?q=Lingala");
+    expect(link).toHaveAttribute("href", `${SEARCH}?q=Lingala`);
     expect(chapter.lastElementChild).toBe(link.closest(".ea-story"));
     const readings = chapter.querySelector("[data-readings]") as Node;
     expect(
@@ -232,7 +234,7 @@ describe("LanguageDetailViewV2 — the link to the story of its name", () => {
 
     expect(
       screen.getByRole("link", { name: /^Suivre l'histoire du nom Kihavu/ })
-    ).toHaveAttribute("href", "/fr/atlas/recherche?q=Kihavu");
+    ).toHaveAttribute("href", `${SEARCH}?q=Kihavu`);
   });
 
   // @req REQ-198

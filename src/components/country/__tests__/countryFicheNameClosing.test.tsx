@@ -32,6 +32,8 @@ vi.mock("next/navigation", () => ({
 
 afterEach(cleanup);
 
+const SEARCH = getLocalizedRoute("fr", "search");
+
 // Brief 5, approved 2026-10-15: docs/design/mockups/site/country-*.dc.html.
 describe("CountryRecordView — the names of a country and the end of its fiche", () => {
   // @req REQ-198
@@ -152,10 +154,7 @@ describe("CountryRecordView — the link to the story of its name", () => {
     const link = within(brief).getByRole("link", {
       name: /^Suivre l'histoire du nom Côte d'Ivoire/,
     });
-    expect(link).toHaveAttribute(
-      "href",
-      "/fr/atlas/recherche?q=C%C3%B4te+d%27Ivoire"
-    );
+    expect(link).toHaveAttribute("href", `${SEARCH}?q=C%C3%B4te+d%27Ivoire`);
     expect(screen.getByTestId("name-story-lead").textContent).toBe(
       "Le nom Côte d'Ivoire renvoie au commerce de l'ivoire pratiqué le long du littoral."
     );
@@ -176,13 +175,43 @@ describe("CountryRecordView — the link to the story of its name", () => {
     render(<CountryRecordView country={countryRecord("GAB")} language="fr" />);
     expect(
       screen.getByRole("link", { name: /^Suivre l'histoire du nom Gabon/ })
-    ).toHaveAttribute("href", "/fr/atlas/recherche?q=Gabon");
+    ).toHaveAttribute("href", `${SEARCH}?q=Gabon`);
     cleanup();
 
     render(<CountryRecordView country={countryRecord("COG")} language="fr" />);
     expect(
       screen.getByRole("link", { name: /^Suivre l'histoire du nom Congo/ })
-    ).toHaveAttribute("href", "/fr/atlas/recherche?q=Congo");
+    ).toHaveAttribute("href", `${SEARCH}?q=Congo`);
+  });
+
+  // Brief 10 §2 (REQ-153 as amended), board country-civ.
+  // @req REQ-153
+  it("folds « Histoire », « Culture et société » and the long names list, and never « En bref » or who tells the names", () => {
+    const { container } = render(
+      <CountryRecordView country={countryRecord("CIV")} language="fr" />
+    );
+
+    const closedLabel = (selector: string) =>
+      container.querySelector(
+        `${selector} details.ea-fold > summary [data-when="closed"]`
+      )?.textContent;
+    expect(closedLabel('[data-fiche-section="Histoire"]')).toBe(
+      "+ Voir aussi : 5 entités politiques, Royaume de Kong, Colonie de Côte d'Ivoire, République de Côte d'Ivoire"
+    );
+    expect(closedLabel('[data-fiche-section="Culture et société"]')).toBe(
+      "+ Voir aussi : Modes de vie, Organisation, Relations, Traditions"
+    );
+    for (const block of [
+      '[data-fiche-section="En bref"]',
+      '[data-fiche-section="Peuples du pays"]',
+      '[data-fiche-section="Langues"]',
+      "[data-name-sources]",
+      "[data-name-closing]",
+      '[data-fiche-section="Sources"]',
+    ]) {
+      expect(container.querySelector(block)).not.toBeNull();
+      expect(container.querySelector(`${block} .ea-fold`)).toBeNull();
+    }
   });
 
   // @req REQ-198
