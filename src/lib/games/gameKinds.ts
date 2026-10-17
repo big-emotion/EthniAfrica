@@ -1,5 +1,5 @@
 import type { CountryId } from "@/types/afrik";
-import type { AutonymExonymName, QuizOptionValue } from "@/types/quiz";
+import type { AutonymExonymName } from "@/types/quiz";
 import type { Ring } from "@/lib/atlas/overlays";
 import type { FicheSourceEntry } from "@/lib/afrik/ficheSourceLabel";
 
@@ -233,4 +233,4 @@ export function isCorrectAnswer(
 }
 
 /** Re-exported so a round generator imports one module, not three. */
-export type { AutonymExonymName, CountryId, QuizOptionValue, Ring };
+export type { AutonymExonymName, CountryId, Ring };
