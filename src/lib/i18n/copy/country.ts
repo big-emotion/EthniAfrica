@@ -4,7 +4,7 @@ const fr = {
   editorialCommonNames: {
     COD: "République démocratique du Congo",
   },
-  title: { ficheCountry: "page du pays", reference: "réf." },
+  title: { kind: "Pays" },
   summary: {
     title: "En bref",
     portrait: "Portrait",

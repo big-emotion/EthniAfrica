@@ -35,18 +35,12 @@ import {
   EMPTY_SEARCH_LENS_COUNTS,
   type SearchLensCounts,
 } from "@/lib/search/searchEnvelope";
+import { loadNextSteps, search as searchCorpus } from "@/lib/afrikLoader";
+import { readRelation, type SearchRelation } from "@/lib/search/relationSearch";
 import {
-  loadSearchCompanions,
-  loadNextSteps,
-  loadSubjectNameHistories,
-  search as searchCorpus,
-  searchWithLeads,
-} from "@/lib/afrikLoader";
-import {
-  readRelation,
-  relationSearchParams,
-  type SearchRelation,
-} from "@/lib/search/relationSearch";
+  loadSearchReading,
+  type SearchReading,
+} from "@/lib/search/searchReading";
 import { selectNameSubject } from "@/lib/search/nameSubject";
 import {
   getSearchLabel,
@@ -55,12 +49,7 @@ import {
 import { groupPeopleResults } from "@/lib/search/groupPeopleResults";
 import { getCountryCommonName } from "@/lib/countryNames";
 import { formatNumber } from "@/lib/languageTag";
-import {
-  classifySearchFeed,
-  companionSubjectsForSearch,
-  isSearchFeedSubject,
-  type SearchFeedAnswerState,
-} from "@/lib/search/searchFeedPlan";
+import type { SearchFeedAnswerState } from "@/lib/search/searchFeedPlan";
 import type { NextStepCard } from "@/lib/search/nameClosing";
 import type { SearchCompanionsData } from "@/api/v2/schemas/searchCompanions";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
@@ -79,8 +68,7 @@ import type {
 
 // ── constants ─────────────────────────────────────────────────────────────────
 
-/** Per-kind ceilings the route applies to each ranked query. */
-const RESULTS_PER_SEARCH = 20;
+/** Per-kind ceiling the route applies to each keystroke's suggestions. */
 const SUGGESTIONS_PER_KEYSTROKE = 6;
 
 // ── types ─────────────────────────────────────────────────────────────────────
@@ -127,47 +115,102 @@ function isAbortError(error: unknown): boolean {
   );
 }
 
+/**
+ * A committed search, reported once: the count is the point, since a query
+ * returning nothing is what the corpus was asked for and does not hold. The
+ * query travels with it — once, for a search the reader committed, never per
+ * keystroke — so the public dashboard can list what was asked. `type` is the
+ * class the reader's name resolved to.
+ */
+function trackSearchSubmit(
+  q: string,
+  hits: readonly SearchHit[],
+  subjects: Array<{ type: string }>
+) {
+  const query = searchQueryProp(q);
+  trackEvent("search:submit", {
+    surface: "serp",
+    results: hits.length,
+    type: searchedType(subjects),
+    ...(query ? { query } : {}),
+  });
+}
+
 // ── component ─────────────────────────────────────────────────────────────────
 
+export interface RecherchePageContentProps {
+  /**
+   * The reading of a name's own address (REQ-200), read on the server. The
+   * page renders it on its first render instead of fetching, so the server
+   * HTML carries the answer. A new search from it leaves for `?q=`, the
+   * reading of the search page.
+   */
+  reading?: SearchReading;
+}
+
 // @req REQ-002
-export function RecherchePageContent() {
+// @req REQ-200
+export function RecherchePageContent({
+  reading,
+}: RecherchePageContentProps = {}) {
   const { language } = useLanguage();
   const router = useRouter();
   const searchParams = useSearchParams();
   const inputRef = useRef<HTMLInputElement>(null);
 
-  const initialQuery = searchParams.get("q") ?? "";
-  const initialRelation = readRelation(searchParams);
+  const initialQuery = reading?.query ?? searchParams.get("q") ?? "";
+  const initialRelation = reading ? null : readRelation(searchParams);
 
   const [committedQuery, setCommittedQuery] = useState(initialQuery);
   const [relation, setRelation] = useState<SearchRelation | null>(
     initialRelation
   );
 
-  const [results, setResults] = useState<SearchHit[]>([]);
-  const [leads, setLeads] = useState<SearchLead[]>([]);
-  const [nearNames, setNearNames] = useState<SearchNearName[]>([]);
-  const [nameAnswers, setNameAnswers] = useState<NameAnswer[]>([]);
-  const [wordAnswers, setWordAnswers] = useState<WordAnswer[]>([]);
-  const [nameSuggestions, setNameSuggestions] = useState<string[]>([]);
+  const [results, setResults] = useState<SearchHit[]>(reading?.results ?? []);
+  const [leads, setLeads] = useState<SearchLead[]>(reading?.leads ?? []);
+  const [nearNames, setNearNames] = useState<SearchNearName[]>(
+    reading?.nearNames ?? []
+  );
+  const [nameAnswers, setNameAnswers] = useState<NameAnswer[]>(
+    reading?.nameAnswers ?? []
+  );
+  const [wordAnswers, setWordAnswers] = useState<WordAnswer[]>(
+    reading?.wordAnswers ?? []
+  );
+  const [nameSuggestions, setNameSuggestions] = useState<string[]>(
+    reading?.nameSuggestions ?? []
+  );
   const [counts, setCounts] = useState<SearchLensCounts>(
-    EMPTY_SEARCH_LENS_COUNTS
+    reading?.counts ?? EMPTY_SEARCH_LENS_COUNTS
   );
   const [activeLens, setActiveLens] = useState<SearchEntityType | "all">("all");
   const [status, setStatus] = useState<SearchStatus>(
-    initialQuery || initialRelation ? "loading" : "idle"
+    reading
+      ? reading.answered && reading.companions
+        ? "loaded"
+        : "failed"
+      : initialQuery || initialRelation
+        ? "loading"
+        : "idle"
   );
   const [companions, setCompanions] = useState<SearchCompanionsData | null>(
-    null
+    reading?.companions ?? null
   );
   const [feedState, setFeedState] = useState<SearchFeedAnswerState | null>(
-    null
+    reading?.feedState ?? null
   );
-  const [feedPresentation, setFeedPresentation] =
-    useState<SearchFeedPresentation>();
-  const [feedSubjects, setFeedSubjects] = useState<SearchHit[]>([]);
-  const [nameHistories, setNameHistories] = useState<SubjectNameHistory[]>([]);
-  const [nextSteps, setNextSteps] = useState<NextStepCard[]>([]);
+  const [feedPresentation, setFeedPresentation] = useState<
+    SearchFeedPresentation | undefined
+  >(reading?.presentation);
+  const [feedSubjects, setFeedSubjects] = useState<SearchHit[]>(
+    reading?.subjects ?? []
+  );
+  const [nameHistories, setNameHistories] = useState<SubjectNameHistory[]>(
+    reading?.nameHistories ?? []
+  );
+  const [nextSteps, setNextSteps] = useState<NextStepCard[]>(
+    reading?.nextSteps ?? []
+  );
   const requestController = useRef<AbortController | null>(null);
   const requestTicket = useRef(0);
   const restoreFocusAfterClear = useRef(false);
@@ -234,96 +277,46 @@ export function RecherchePageContent() {
       setFeedSubjects([]);
       setNextSteps([]);
       try {
-        const {
-          results: hits,
-          leads: nearMisses,
-          nearNames: qualifiedNearNames = [],
-          nameAnswers: reviewedAnswers = [],
-          wordAnswers: publishedWordAnswers = [],
-          nameSuggestions: reviewedSuggestions = [],
-          counts: lensCounts,
-          presentation,
-          answered,
-        } = await searchWithLeads(q, {
-          limit: RESULTS_PER_SEARCH,
-          lang: language,
-          ...relationSearchParams(rel),
+        const nextReading = await loadSearchReading(q, {
+          language,
+          relation: rel,
           signal: controller.signal,
+          // Reported here rather than from the submit handler, so a query
+          // that arrives by URL — a shared link, a bookmark — counts as the
+          // search it is. The modal stays without the query: it precedes this
+          // event on the same search and would count it twice.
+          //
+          // Only an answered search reaches this point: the loader degrades
+          // every failure to an empty envelope, so a zero is otherwise
+          // indistinguishable from an outage.
+          onAnswered: (hits, subjects) => {
+            if (ticket === requestTicket.current) {
+              trackSearchSubmit(q, hits, subjects);
+            }
+          },
         });
         if (ticket !== requestTicket.current) return;
-        setResults(hits);
-        setLeads(nearMisses);
-        setNearNames(qualifiedNearNames);
-        setNameAnswers(reviewedAnswers);
-        setWordAnswers(publishedWordAnswers);
-        setNameSuggestions(reviewedSuggestions);
-        setCounts(lensCounts);
-        setFeedPresentation(presentation);
-        if (!answered) {
+        setResults(nextReading.results);
+        setLeads(nextReading.leads);
+        setNearNames(nextReading.nearNames);
+        setNameAnswers(nextReading.nameAnswers);
+        setWordAnswers(nextReading.wordAnswers);
+        setNameSuggestions(nextReading.nameSuggestions);
+        setCounts(nextReading.counts);
+        setFeedPresentation(nextReading.presentation);
+        if (!nextReading.answered) {
           setStatus("failed");
           return;
         }
-
-        // A relation-scoped search ("the peoples of the Krou family") carries
-        // no name to match: `q` is empty, so `selectNameSubject` resolves no
-        // subjects below, and `classifySearchFeed` reports the same "widened"
-        // state a name search reports when it finds only related entries.
-        // `SearchFeed`'s `relation` prop is what tells the two apart at
-        // render time (ETNI-1966) — the reviewed feed's own family/country
-        // chips (`SearchResultCard` → `buildRelationSearchHref`) land here,
-        // so this path has to produce a real feed, not the "loaded" no-op
-        // this used to leave companions/feedState null for.
-        const ranked = [...hits].sort(compareByRelevance);
-        const selected = selectNameSubject(ranked, q, language).filter(
-          isSearchFeedSubject
-        );
-        const resolvedSubjects = selected;
-        // Reported here rather than from the submit handler, so a query that
-        // arrives by URL — a shared link, a bookmark — counts as the search it
-        // is. Only the modal used to report, which left every such arrival out.
-        //
-        // The count is the point: a query returning nothing is what the corpus
-        // was asked for and does not hold. The query travels with it — once,
-        // here, for a search the reader committed, never per keystroke — so the
-        // public dashboard can list what was asked. The modal stays without it:
-        // it precedes this event on the same search and would count it twice.
-        //
-        // Only an answered search reaches this point: the loader degrades every
-        // failure to an empty envelope, so a zero is otherwise
-        // indistinguishable from an outage. It follows the subject choice
-        // because `type` is the class the reader's name resolved to.
-        const query = searchQueryProp(q);
-        trackEvent("search:submit", {
-          surface: "serp",
-          results: hits.length,
-          type: searchedType(resolvedSubjects),
-          ...(query ? { query } : {}),
-        });
-        const companionSubjects = companionSubjectsForSearch(
-          resolvedSubjects,
-          nearMisses
-        );
-        // Loaded before the feed mounts: the feed picks its default lens once,
-        // and opens on the timeline when a subject has a name history.
-        const [nextCompanions, nextNameHistories] = await Promise.all([
-          loadSearchCompanions(
-            companionSubjects,
-            language,
-            controller.signal,
-            q
-          ),
-          loadSubjectNameHistories(resolvedSubjects, controller.signal),
-        ]);
-        if (ticket !== requestTicket.current) return;
 
         // The next names read the histories (the namer of a searched name)
         // and sit at the bottom of the page, so they arrive after the feed
         // mounts rather than hold it.
         loadNextSteps(
-          resolvedSubjects,
+          nextReading.subjects,
           language,
           controller.signal,
-          nextNameHistories,
+          nextReading.nameHistories,
           q
         )
           .then((cards) => {
@@ -333,17 +326,10 @@ export function RecherchePageContent() {
             // Aborted by a newer search, or failed: the page has no next step.
           });
 
-        setCompanions(nextCompanions);
-        setNameHistories(nextNameHistories);
-        setFeedSubjects(resolvedSubjects);
-        setFeedState(
-          classifySearchFeed({
-            search: { results: hits, leads: nearMisses },
-            companions: nextCompanions,
-            subjects: resolvedSubjects,
-            termSuggestions: reviewedSuggestions,
-          })
-        );
+        setCompanions(nextReading.companions);
+        setNameHistories(nextReading.nameHistories);
+        setFeedSubjects(nextReading.subjects);
+        setFeedState(nextReading.feedState);
         setStatus("loaded");
       } catch (error) {
         if (isAbortError(error) || ticket !== requestTicket.current) {
@@ -377,6 +363,15 @@ export function RecherchePageContent() {
       if (cancelled) return;
       if (!committedQuery && !relation) {
         isFirstRelationRun.current = false;
+        return;
+      }
+      // An address arrives already read: it is counted as the search it is,
+      // like a `?q=` arrival, and not fetched a second time.
+      if (isFirstRelationRun.current && reading) {
+        isFirstRelationRun.current = false;
+        if (reading.answered) {
+          trackSearchSubmit(reading.query, reading.results, reading.subjects);
+        }
         return;
       }
       performSearch(committedQuery, relation);
@@ -445,8 +440,25 @@ export function RecherchePageContent() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const q = inputValue.trim();
-    setCommittedQuery(q);
     suggest.dismiss();
+    commitSearch(q);
+  };
+
+  /**
+   * An address reads one name. Another query from it is a reading of the
+   * search page, so the page leaves for `?q=`, which fetches and counts it;
+   * fetching here as well would count the one search twice.
+   */
+  const commitSearch = (q: string) => {
+    if (reading) {
+      router.push(
+        q
+          ? `${getLocalizedRoute(language, "search")}?${new URLSearchParams({ q })}`
+          : getLocalizedRoute(language, "search")
+      );
+      return;
+    }
+    setCommittedQuery(q);
     syncURL(q, relation);
     performSearch(q, relation);
   };
@@ -477,9 +489,7 @@ export function RecherchePageContent() {
     // query, so the panel does not reopen over the results it just asked for.
     const name = getLocalizedSearchResultName(hit, language);
     suggest.commit(name);
-    setCommittedQuery(name);
-    syncURL(name, relation);
-    performSearch(name, relation);
+    commitSearch(name);
   }
 
   /**

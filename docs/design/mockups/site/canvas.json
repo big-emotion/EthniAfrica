@@ -14,259 +14,283 @@
       "x": 0,
       "y": 0,
       "w": 1440,
-      "h": 10950,
+      "h": 19097,
       "title": "design-system"
     },
     "search-peul-430.dc.html": {
       "x": 1840,
       "y": 0,
       "w": 430,
-      "h": 5850,
+      "h": 6314,
       "expand": "fill"
     },
     "search-peul-768.dc.html": {
       "x": 2350,
       "y": 0,
       "w": 768,
-      "h": 4260,
+      "h": 4622,
       "expand": "fill"
     },
     "search-peul-1440.dc.html": {
       "x": 3198,
       "y": 0,
       "w": 1440,
-      "h": 3710,
+      "h": 4051,
       "expand": "fill"
     },
     "search-bassa-430.dc.html": {
       "x": 1840,
-      "y": 5970,
+      "y": 6434,
       "w": 430,
-      "h": 10000,
+      "h": 10270,
       "expand": "fill"
     },
     "search-bassa-768.dc.html": {
       "x": 2350,
-      "y": 5970,
+      "y": 6434,
       "w": 768,
-      "h": 7410,
+      "h": 7607,
       "expand": "fill"
     },
     "search-bassa-1440.dc.html": {
       "x": 3198,
-      "y": 5970,
+      "y": 6434,
       "w": 1440,
-      "h": 6710,
+      "h": 6912,
       "expand": "fill"
     },
     "search-congo-430.dc.html": {
       "x": 1840,
-      "y": 16090,
+      "y": 16824,
       "w": 430,
-      "h": 11500,
+      "h": 11491,
       "expand": "fill"
     },
     "search-congo-768.dc.html": {
       "x": 2350,
-      "y": 16090,
+      "y": 16824,
       "w": 768,
-      "h": 8310,
+      "h": 8299,
       "expand": "fill"
     },
     "search-congo-1440.dc.html": {
       "x": 3198,
-      "y": 16090,
+      "y": 16824,
       "w": 1440,
-      "h": 7510,
+      "h": 7497,
       "expand": "fill"
     },
     "search-unknown-430.dc.html": {
       "x": 1840,
-      "y": 27710,
+      "y": 28435,
       "w": 430,
-      "h": 3350,
+      "h": 2944,
       "expand": "fill"
     },
     "search-unknown-768.dc.html": {
       "x": 2350,
-      "y": 27710,
+      "y": 28435,
       "w": 768,
-      "h": 2430,
+      "h": 2088,
       "expand": "fill"
     },
     "search-unknown-1440.dc.html": {
       "x": 3198,
-      "y": 27710,
+      "y": 28435,
       "w": 1440,
-      "h": 2110,
+      "h": 1752,
       "expand": "fill"
+    },
+    "search-state-fiches-430.dc.html": {
+      "x": 1840,
+      "y": 31499,
+      "w": 430,
+      "h": 2600,
+      "expand": "fill",
+      "title": "État · onglet Fiches · « peul » · 430"
+    },
+    "search-state-fiches-768.dc.html": {
+      "x": 2350,
+      "y": 31499,
+      "w": 768,
+      "h": 1710,
+      "expand": "fill",
+      "title": "État · onglet Fiches · « peul » · 768"
+    },
+    "search-state-fiches-1440.dc.html": {
+      "x": 3198,
+      "y": 31499,
+      "w": 1440,
+      "h": 1440,
+      "expand": "fill",
+      "title": "État · onglet Fiches · « peul » · 1440"
     },
     "people-fula-430.dc.html": {
       "x": 5038,
       "y": 0,
       "w": 430,
-      "h": 13896,
+      "h": 12160,
       "expand": "fill"
     },
     "people-fula-768.dc.html": {
       "x": 5548,
       "y": 0,
       "w": 768,
-      "h": 11648,
+      "h": 10061,
       "expand": "fill"
     },
     "people-fula-1440.dc.html": {
       "x": 6396,
       "y": 0,
       "w": 1440,
-      "h": 11035,
+      "h": 9840,
       "expand": "fill"
     },
     "people-bassa-430.dc.html": {
       "x": 5038,
-      "y": 14016,
+      "y": 12280,
       "w": 430,
-      "h": 9812,
+      "h": 8100,
       "expand": "fill"
     },
     "people-bassa-768.dc.html": {
       "x": 5548,
-      "y": 14016,
+      "y": 12280,
       "w": 768,
-      "h": 8515,
+      "h": 6880,
       "expand": "fill"
     },
     "people-bassa-1440.dc.html": {
       "x": 6396,
-      "y": 14016,
+      "y": 12280,
       "w": 1440,
-      "h": 7978,
+      "h": 6735,
       "expand": "fill"
     },
     "people-thin-alaba-430.dc.html": {
       "x": 5038,
-      "y": 23948,
+      "y": 20500,
       "w": 430,
-      "h": 9293,
+      "h": 7797,
       "expand": "fill"
     },
     "people-thin-alaba-768.dc.html": {
       "x": 5548,
-      "y": 23948,
+      "y": 20500,
       "w": 768,
-      "h": 7752,
+      "h": 6333,
       "expand": "fill"
     },
     "people-thin-alaba-1440.dc.html": {
       "x": 6396,
-      "y": 23948,
+      "y": 20500,
       "w": 1440,
-      "h": 7450,
+      "h": 6401,
       "expand": "fill"
     },
     "language-lingala-430.dc.html": {
       "x": 8236,
       "y": 0,
       "w": 430,
-      "h": 7831,
+      "h": 7928,
       "expand": "fill"
     },
     "language-lingala-768.dc.html": {
       "x": 8746,
       "y": 0,
       "w": 768,
-      "h": 6071,
+      "h": 6169,
       "expand": "fill"
     },
     "language-lingala-1440.dc.html": {
       "x": 9594,
       "y": 0,
       "w": 1440,
-      "h": 5966,
+      "h": 6077,
       "expand": "fill"
     },
     "language-thin-havu-430.dc.html": {
       "expand": "fill",
       "x": 8236,
-      "y": 7951,
+      "y": 8048,
       "w": 430,
-      "h": 5316
+      "h": 5402
     },
     "language-thin-havu-768.dc.html": {
       "expand": "fill",
       "x": 8746,
-      "y": 7951,
+      "y": 8048,
       "w": 768,
-      "h": 4181
+      "h": 4266
     },
     "language-thin-havu-1440.dc.html": {
       "expand": "fill",
       "x": 9594,
-      "y": 7951,
+      "y": 8048,
       "w": 1440,
-      "h": 4305
+      "h": 4372
     },
     "family-bantu-430.dc.html": {
       "x": 8236,
-      "y": 13387,
+      "y": 13570,
       "w": 430,
-      "h": 17565,
+      "h": 15566,
       "expand": "fill"
     },
     "family-bantu-768.dc.html": {
       "x": 8746,
-      "y": 13387,
+      "y": 13570,
       "w": 768,
-      "h": 12527,
+      "h": 11258,
       "expand": "fill"
     },
     "family-bantu-1440.dc.html": {
       "x": 9594,
-      "y": 13387,
+      "y": 13570,
       "w": 1440,
-      "h": 10920,
+      "h": 10012,
       "expand": "fill"
     },
     "family-mande-430.dc.html": {
       "x": 8236,
-      "y": 31072,
+      "y": 29256,
       "w": 430,
-      "h": 25180,
+      "h": 18202,
       "expand": "fill"
     },
     "family-mande-768.dc.html": {
       "x": 8746,
-      "y": 31072,
+      "y": 29256,
       "w": 768,
-      "h": 16455,
+      "h": 12496,
       "expand": "fill"
     },
     "family-mande-1440.dc.html": {
       "x": 9594,
-      "y": 31072,
+      "y": 29256,
       "w": 1440,
-      "h": 13395,
+      "h": 10665,
       "expand": "fill"
     },
     "country-civ-430.dc.html": {
       "x": 8236,
-      "y": 56372,
+      "y": 47578,
       "w": 430,
-      "h": 12508,
+      "h": 9011,
       "expand": "fill"
     },
     "country-civ-768.dc.html": {
       "x": 8746,
-      "y": 56372,
+      "y": 47578,
       "w": 768,
-      "h": 10435,
+      "h": 7501,
       "expand": "fill"
     },
     "country-civ-1440.dc.html": {
       "x": 9594,
-      "y": 56372,
+      "y": 47578,
       "w": 1440,
-      "h": 9918,
+      "h": 7450,
       "expand": "fill"
     },
     "name-traore-430.dc.html": {
@@ -376,7 +400,7 @@
     },
     "search-state-thin-430.dc.html": {
       "x": 1840,
-      "y": 31180,
+      "y": 34219,
       "w": 430,
       "h": 4400,
       "expand": "fill",
@@ -384,7 +408,7 @@
     },
     "search-state-thin-768.dc.html": {
       "x": 2350,
-      "y": 31180,
+      "y": 34219,
       "w": 768,
       "h": 3360,
       "expand": "fill",
@@ -392,7 +416,7 @@
     },
     "search-state-thin-1440.dc.html": {
       "x": 3198,
-      "y": 31180,
+      "y": 34219,
       "w": 1440,
       "h": 2860,
       "expand": "fill",
@@ -400,15 +424,15 @@
     },
     "search-state-competing-430.dc.html": {
       "x": 1840,
-      "y": 35700,
+      "y": 38739,
       "w": 430,
-      "h": 5700,
+      "h": 5726,
       "expand": "fill",
       "title": "État · origines concurrentes · « yamoussoukro » · 430"
     },
     "search-state-competing-768.dc.html": {
       "x": 2350,
-      "y": 35700,
+      "y": 38739,
       "w": 768,
       "h": 4360,
       "expand": "fill",
@@ -416,15 +440,15 @@
     },
     "search-state-competing-1440.dc.html": {
       "x": 3198,
-      "y": 35700,
+      "y": 38739,
       "w": 1440,
-      "h": 3760,
+      "h": 3785,
       "expand": "fill",
       "title": "État · origines concurrentes · « yamoussoukro » · 1440"
     },
     "search-state-nodate-430.dc.html": {
       "x": 1840,
-      "y": 41520,
+      "y": 44585,
       "w": 430,
       "h": 4100,
       "expand": "fill",
@@ -432,7 +456,7 @@
     },
     "search-state-nodate-768.dc.html": {
       "x": 2350,
-      "y": 41520,
+      "y": 44585,
       "w": 768,
       "h": 3160,
       "expand": "fill",
@@ -440,7 +464,7 @@
     },
     "search-state-nodate-1440.dc.html": {
       "x": 3198,
-      "y": 41520,
+      "y": 44585,
       "w": 1440,
       "h": 2760,
       "expand": "fill",
@@ -448,73 +472,73 @@
     },
     "country-state-civ-quaqua-430.dc.html": {
       "x": 8236,
-      "y": 69000,
+      "y": 56709,
       "w": 430,
-      "h": 3504,
+      "h": 3614,
       "expand": "fill",
       "title": "État · explications d'un autre nom · Côte de Quaqua · 430"
     },
     "country-state-civ-quaqua-768.dc.html": {
       "x": 8746,
-      "y": 69000,
+      "y": 56709,
       "w": 768,
-      "h": 3359,
+      "h": 3213,
       "expand": "fill",
       "title": "État · explications d'un autre nom · Côte de Quaqua · 768"
     },
     "country-state-civ-quaqua-1440.dc.html": {
       "x": 9594,
-      "y": 69000,
+      "y": 56709,
       "w": 1440,
-      "h": 2543,
+      "h": 2666,
       "expand": "fill",
       "title": "État · explications d'un autre nom · Côte de Quaqua · 1440"
     },
     "country-state-thin-gab-430.dc.html": {
       "x": 8236,
-      "y": 72624,
+      "y": 65125,
       "w": 430,
-      "h": 4737,
+      "h": 4846,
       "expand": "fill",
       "title": "État mince · Gabon · 430"
     },
     "country-state-thin-gab-768.dc.html": {
       "x": 8746,
-      "y": 72624,
+      "y": 65125,
       "w": 768,
-      "h": 3514,
+      "h": 3624,
       "expand": "fill",
       "title": "État mince · Gabon · 768"
     },
     "country-state-thin-gab-1440.dc.html": {
       "x": 9594,
-      "y": 72624,
+      "y": 65125,
       "w": 1440,
-      "h": 3224,
+      "h": 3315,
       "expand": "fill",
       "title": "État mince · Gabon · 1440"
     },
     "country-state-shared-congo-430.dc.html": {
       "x": 8236,
-      "y": 77481,
+      "y": 70091,
       "w": 430,
-      "h": 3131,
+      "h": 3240,
       "expand": "fill",
       "title": "État · nom partagé · Congo · 430"
     },
     "country-state-shared-congo-768.dc.html": {
       "x": 8746,
-      "y": 77481,
+      "y": 70091,
       "w": 768,
-      "h": 2167,
+      "h": 2277,
       "expand": "fill",
       "title": "État · nom partagé · Congo · 768"
     },
     "country-state-shared-congo-1440.dc.html": {
       "x": 9594,
-      "y": 77481,
+      "y": 70091,
       "w": 1440,
-      "h": 1960,
+      "h": 2050,
       "expand": "fill",
       "title": "État · nom partagé · Congo · 1440"
     },
@@ -538,6 +562,78 @@
       "w": 1440,
       "h": 3150,
       "expand": "fill"
+    },
+    "people-state-fula-culture-open-430.dc.html": {
+      "x": 5038,
+      "y": 28417,
+      "w": 430,
+      "h": 3053,
+      "expand": "fill",
+      "title": "État · chapitre déplié · Culture et société · 430"
+    },
+    "people-state-fula-culture-open-768.dc.html": {
+      "x": 5548,
+      "y": 28417,
+      "w": 768,
+      "h": 2302,
+      "expand": "fill",
+      "title": "État · chapitre déplié · Culture et société · 768"
+    },
+    "people-state-fula-culture-open-1440.dc.html": {
+      "x": 6396,
+      "y": 28417,
+      "w": 1440,
+      "h": 1934,
+      "expand": "fill",
+      "title": "État · chapitre déplié · Culture et société · 1440"
+    },
+    "country-state-civ-names-open-430.dc.html": {
+      "x": 8236,
+      "y": 60443,
+      "w": 430,
+      "h": 4562,
+      "expand": "fill",
+      "title": "État · liste dépliée · 47 noms attestés · 430"
+    },
+    "country-state-civ-names-open-768.dc.html": {
+      "x": 8746,
+      "y": 60443,
+      "w": 768,
+      "h": 3379,
+      "expand": "fill",
+      "title": "État · liste dépliée · 47 noms attestés · 768"
+    },
+    "country-state-civ-names-open-1440.dc.html": {
+      "x": 9594,
+      "y": 60443,
+      "w": 1440,
+      "h": 3109,
+      "expand": "fill",
+      "title": "État · liste dépliée · 47 noms attestés · 1440"
+    },
+    "search-state-peul-fulbe-open-430.dc.html": {
+      "x": 1840,
+      "y": 48805,
+      "w": 430,
+      "h": 6110,
+      "expand": "fill",
+      "title": "État · Fulɓe ouvert · « peul » · 430"
+    },
+    "search-state-peul-fulbe-open-768.dc.html": {
+      "x": 2350,
+      "y": 48805,
+      "w": 768,
+      "h": 4240,
+      "expand": "fill",
+      "title": "État · Fulɓe ouvert · « peul » · 768"
+    },
+    "search-state-peul-fulbe-open-1440.dc.html": {
+      "x": 3198,
+      "y": 48805,
+      "w": 1440,
+      "h": 3760,
+      "expand": "fill",
+      "title": "État · Fulɓe ouvert · « peul » · 1440"
     }
   },
   "order": [
@@ -554,6 +650,9 @@
     "search-unknown-430.dc.html",
     "search-unknown-768.dc.html",
     "search-unknown-1440.dc.html",
+    "search-state-fiches-430.dc.html",
+    "search-state-fiches-768.dc.html",
+    "search-state-fiches-1440.dc.html",
     "search-state-thin-430.dc.html",
     "search-state-thin-768.dc.html",
     "search-state-thin-1440.dc.html",
@@ -563,6 +662,9 @@
     "search-state-nodate-430.dc.html",
     "search-state-nodate-768.dc.html",
     "search-state-nodate-1440.dc.html",
+    "search-state-peul-fulbe-open-430.dc.html",
+    "search-state-peul-fulbe-open-768.dc.html",
+    "search-state-peul-fulbe-open-1440.dc.html",
     "people-fula-430.dc.html",
     "people-fula-768.dc.html",
     "people-fula-1440.dc.html",
@@ -572,6 +674,9 @@
     "people-thin-alaba-430.dc.html",
     "people-thin-alaba-768.dc.html",
     "people-thin-alaba-1440.dc.html",
+    "people-state-fula-culture-open-430.dc.html",
+    "people-state-fula-culture-open-768.dc.html",
+    "people-state-fula-culture-open-1440.dc.html",
     "language-lingala-430.dc.html",
     "language-lingala-768.dc.html",
     "language-lingala-1440.dc.html",
@@ -590,6 +695,9 @@
     "country-state-civ-quaqua-430.dc.html",
     "country-state-civ-quaqua-768.dc.html",
     "country-state-civ-quaqua-1440.dc.html",
+    "country-state-civ-names-open-430.dc.html",
+    "country-state-civ-names-open-768.dc.html",
+    "country-state-civ-names-open-1440.dc.html",
     "country-state-thin-gab-430.dc.html",
     "country-state-thin-gab-768.dc.html",
     "country-state-thin-gab-1440.dc.html",

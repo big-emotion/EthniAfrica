@@ -210,4 +210,40 @@ describe("no boundary turns a 404 into a soft 404 (REQ-052)", () => {
 
     expect([...new Set(offenders)]).toEqual([]);
   });
+
+  /**
+   * A layout that ends the request — a 404, or a redirect — settles it before
+   * its own segment's boundary streams, since a layout wraps that boundary.
+   * It cannot outrun a boundary on a segment above it: that one has already
+   * flushed a shell, so the 404 goes out as a `noindex` page with status 200
+   * and the redirect as a refresh. Measured on a production build on
+   * 2026-10-17, for a browser and a crawler alike, with `atlas/loading.tsx`
+   * above a name's address and a place fiche (REQ-200).
+   */
+  // @req REQ-052
+  // @req REQ-200
+  it("puts no boundary above a layout that answers 404 or redirects", () => {
+    const boundaries = new Set(loadingFiles().map(segmentOf));
+    const boundaryAboveSegment = (segment: string) => {
+      let parent = segment;
+      while (parent) {
+        const cut = parent.lastIndexOf("/");
+        parent = cut < 0 ? "" : parent.slice(0, cut);
+        if (boundaries.has(parent)) return parent;
+      }
+      return null;
+    };
+
+    const offenders = filesUnder("**/layout.tsx")
+      .filter((file) =>
+        /\b(notFound|permanentRedirect|redirect)\(/.test(read(file))
+      )
+      .map((file) =>
+        toPosix(relative(APP_ROOT, file)).replace(/\/?layout\.tsx$/, "")
+      )
+      .filter((segment) => !GRANDFATHERED_SOFT_404_SEGMENTS.includes(segment))
+      .filter((segment) => boundaryAboveSegment(segment) !== null);
+
+    expect(offenders).toEqual([]);
+  });
 });

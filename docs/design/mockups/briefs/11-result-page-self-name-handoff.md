@@ -2,8 +2,25 @@
 
 Read [`README.md`](README.md), [`01-result-page-timeline.md`](01-result-page-timeline.md)
 and [`../../mockup-first-workflow.md`](../../mockup-first-workflow.md) first.
-Written 2026-10-17. Status: **proposed — awaiting operator review.**
+Written 2026-10-17. Status: **approved 2026-10-17 by delegation.** The
+operator asked Claude on 2026-10-17 to approve these boards on their behalf
+(« approuver les maquettes pour moi »). Claude approved them after an
+art-direction review; the operator did not review the boards themselves. The
+decisions taken on their behalf are in the approval record below, and the two
+charter amendments of this brief are applied to
+[`../../search-result-charter.md`](../../search-result-charter.md).
 Prompt: [`claude-design-prompt-11.md`](claude-design-prompt-11.md).
+
+### Approval record (2026-10-17, by delegation)
+
+1. The hand-off's eyebrow reads « Leur nom » for every type.
+2. The video row stays after the open name's end line when another name is
+   open: it belongs to the subject.
+3. The sources button's label is in ink, not in the family colour, for
+   contrast.
+4. Brief 1's « Already on `search-peul`, do not redraw » is superseded for the
+   lead only.
+5. Charter « What left « Tout » » and §8 amended as this brief words them.
 
 This is **pass 2** of the three board passes the operator approved on
 2026-10-17. It starts once pass 1 ([brief 10](10-fiche-story-link-and-folds.md)
