@@ -146,7 +146,7 @@ describe("LanguageDetailViewV2 — the language fiche of brief 3", () => {
     );
 
     expect(
-      screen.getByRole("heading", { name: "Qui raconte le nom Lingala ?" })
+      screen.getByRole("heading", { name: "Les sources du nom Lingala" })
     ).toBeInTheDocument();
     expect(container.querySelector("[data-readings]")).not.toBeNull();
     const band = container.querySelector("[data-name-closing]") as HTMLElement;

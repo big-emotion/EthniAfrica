@@ -19,7 +19,7 @@ import type { SearchResult } from "@/types/afrik-frontend";
 const peul = buildNameTimeline(PEUL_HISTORY, "peul");
 const lingala = buildNameTimeline(LINGALA_HISTORY, "lingala");
 
-describe("groupAccountsBySourceFamily — block 3, « Les sources parlent »", () => {
+describe("groupAccountsBySourceFamily — block 3, « Les sources »", () => {
   // @req REQ-198
   it("groups the open name's accounts by source family, in the code's fixed order", () => {
     const groups = groupAccountsBySourceFamily(peul.names[0]);

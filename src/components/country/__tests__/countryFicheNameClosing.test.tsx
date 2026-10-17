@@ -73,7 +73,7 @@ describe("CountryRecordView — the names of a country and the end of its fiche"
     expect(
       screen.getByRole("heading", {
         level: 2,
-        name: "Qui raconte les noms de ce pays ?",
+        name: "Les sources des noms de ce pays",
       })
     ).toBeInTheDocument();
     const lines = Array.from(

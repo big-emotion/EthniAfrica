@@ -6,7 +6,8 @@ redrawing them (see "Approved boards" in
 [`01-result-page-timeline.md`](01-result-page-timeline.md),
 [`02-people.md`](02-people.md), [`03-language.md`](03-language.md),
 [`04-language-family.md`](04-language-family.md) and
-[`05-country.md`](05-country.md)): the fiche variant of « Les sources parlent »,
+[`05-country.md`](05-country.md)): the fiche variant of the sources block
+(« Les sources des noms … », renamed on 2026-10-17),
 the closing band « Ce que nous ne savons pas encore », « Poursuivre avec un autre
 nom », the competing-readings grid, figures that carry their caveat, and the
 rule that an empty chapter disappears and its silence goes to the closing band.
@@ -68,7 +69,7 @@ social post (`traore-diop`) already points here.
 
 - **The page already has a sources-by-type chapter.** « Origine » groups the
   origin accounts by four types with carrier, collector and claim status; the
-  approved « Les sources parlent » groups accounts by the seven source-diamond
+  approved sources block groups accounts by the seven source-diamond
   families, oral first. They overlap. The fiche also holds a second set of
   accounts, the history of the names (*Traoré* 11, *Tarawele* 3), which the
   board does not show at all. Report what each one covers.
@@ -103,11 +104,12 @@ social post (`traore-diop`) already points here.
 
 ## What to change
 
-1. **Add « Les sources parlent »** in the fiche variant over the history of the
+1. **Add the sources block** in the fiche variant over the history of the
    names (*Traoré* 11 accounts, *Tarawele* 3): accounts grouped by name first,
    then by the seven source-diamond families, oral first, only the first name
-   open. Title it for a family name (propose « Qui raconte ce nom de
-   famille ? » and mark it as a proposal) and tell me where you place it and why.
+   open. Its title is « Les sources du nom Traoré » with one plain sentence
+   under it, as the operator fixed it on 2026-10-17 for every board (no
+   « Qui raconte … ? », no eyebrow); tell me where you place it and why.
    Keep « Origine » as it is; **propose**, without applying it, how the two
    could be merged.
 2. **Add the closing band** « Ce que nous ne savons pas encore » before

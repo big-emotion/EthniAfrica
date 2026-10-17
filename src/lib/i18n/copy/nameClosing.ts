@@ -6,14 +6,19 @@ import type { SourceKind } from "@/types/sources";
 
 /**
  * The blocks under the timeline on the search result page (brief 1, approved
- * 2026-10-14, boards in docs/design/mockups/site/): who tells the name, what
- * the project does not know yet, and where to go next. The conviction and the
- * invitation are the about page's own sentences, so the site says them once.
+ * 2026-10-14, boards in docs/design/mockups/site/): the sources of the name,
+ * what the project does not know yet, and where to go next. The conviction
+ * and the invitation are the about page's own sentences, so the site says
+ * them once.
+ *
+ * The block is titled by what it is, « Les sources du nom … », with one plain
+ * sentence under it (operator, 2026-10-17): no block "speaks", no title asks
+ * a question. The sentence counts sources, not accounts, because one source
+ * can back several accounts and « plusieurs sources » must stay true.
  */
 export interface NameClosingCopy {
-  sourcesEyebrow: string;
   sourcesTitle: (name: string) => string;
-  sourcesLead: (count: number, name: string) => string;
+  sourcesLead: (sources: number, accounts: number, name: string) => string;
   sourcesStrip: string;
   sourceCount: (count: number) => string;
   accountCount: (count: number) => string;
@@ -56,6 +61,7 @@ export interface NameClosingCopy {
   fiche: {
     sourcesTitle: (subject: SearchEntityType) => string;
     sourcesLead: (
+      sources: number,
       accounts: number,
       names: number,
       subject: SearchEntityType
@@ -129,12 +135,11 @@ function joinFr(items: readonly string[]): string {
 // @req REQ-198
 export const nameClosingCopy: Record<Language, NameClosingCopy> = {
   fr: {
-    sourcesEyebrow: "Les sources parlent",
-    sourcesTitle: (name) => `Qui raconte le nom ${name} ?`,
-    sourcesLead: (count, name) =>
-      count === 1
-        ? `Voici le récit du nom ${name}, rangé selon le type de source qui le rapporte.`
-        : `Voici les ${count} récits du nom ${name}, rangés selon le type de source qui les rapporte. Une même source peut en appuyer plusieurs.`,
+    sourcesTitle: (name) => `Les sources du nom ${name}`,
+    sourcesLead: (sources, accounts) =>
+      sources === 1
+        ? `Une seule source explique ce nom pour l’instant. Voici ${accounts === 1 ? "son récit" : `ses ${accounts} récits`}.`
+        : `Plusieurs sources expliquent l’origine de ce nom. Voici ${accounts === 1 ? "leur récit" : `leurs ${accounts} récits`}, rangés par type de source.`,
     sourcesStrip: "Types de sources",
     sourceCount: (count) => `${count} ${count === 1 ? "source" : "sources"}`,
     accountCount: (count) => `${count} ${count === 1 ? "récit" : "récits"}`,
@@ -142,7 +147,7 @@ export const nameClosingCopy: Record<Language, NameClosingCopy> = {
     otherVoices: (subject, kinds) => {
       const voices = joinFr(kinds.flatMap((kind) => VOICES_FR[kind] ?? []));
       const of = SUBJECT_FR[subject];
-      return `Pour les autres noms${of ? ` ${of}` : ""}, d’autres voix parlent aussi : ${voices}. Choisissez un nom plus haut pour les lire.`;
+      return `Pour les autres noms${of ? ` ${of}` : ""}, d’autres sources existent : ${voices}. Choisissez un nom plus haut pour les lire.`;
     },
     closingTitle: "Ce que nous ne savons pas encore",
     silence: {
@@ -177,9 +182,11 @@ export const nameClosingCopy: Record<Language, NameClosingCopy> = {
     },
     fiche: {
       sourcesTitle: (subject) =>
-        `Qui raconte les noms ${SUBJECT_FR[subject] ?? "de ce sujet"} ?`,
-      sourcesLead: (accounts, names, subject) =>
-        `Voici les ${accounts} récits des ${names} noms ${SUBJECT_FR[subject] ?? "de ce sujet"}, rangés par nom, puis selon le type de source qui les rapporte. Une même source peut en appuyer plusieurs.`,
+        `Les sources des noms ${SUBJECT_FR[subject] ?? "de ce sujet"}`,
+      sourcesLead: (sources, accounts, _names, subject) =>
+        sources === 1
+          ? `Une seule source explique les noms ${SUBJECT_FR[subject] ?? "de ce sujet"} pour l’instant. Voici ses ${accounts} récits, rangés par nom.`
+          : `Plusieurs sources expliquent les noms ${SUBJECT_FR[subject] ?? "de ce sujet"}. Voici leurs ${accounts} récits, rangés par nom, puis par type de source.`,
       noOral: (subject) =>
         `Aucun récit transmis oralement n’est enregistré pour les noms ${SUBJECT_FR[subject] ?? "de ce sujet"}.`,
       undated: (names) =>

@@ -91,7 +91,7 @@ export interface FamilyParchmentProps {
    */
   onward?: ReactNode;
   /**
-   * « Les sources parlent » (brief 4), composed by the view from the fiche's
+   * « Les sources des noms … » (brief 4), composed by the view from the fiche's
    * name history and slotted right after the story of the names it answers.
    */
   nameSources?: ReactNode;

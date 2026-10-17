@@ -952,7 +952,7 @@ export function SearchFeed({
               }
               sourcesOpen={index === 0}
               // One subject: the fiche link stays right under its timeline,
-              // before « Les sources parlent » (board search-peul-430).
+              // before « Les sources du nom … » (board search-peul-430).
               ficheLink={
                 !sharedName && index === 0
                   ? ficheLinkBlock("timeline")

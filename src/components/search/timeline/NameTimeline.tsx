@@ -34,7 +34,7 @@ export interface NameTimelineProps {
   /** The subject's countries, so « ailleurs » skips its own region. */
   countryIds?: readonly string[];
   /**
-   * Whether « Les sources parlent » opens its first family (brief 1): the
+   * Whether « Les sources du nom … » opens its first family (brief 1): the
    * first subject of the page does, the others stay folded.
    */
   sourcesOpen?: boolean;
