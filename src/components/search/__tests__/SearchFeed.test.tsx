@@ -53,6 +53,9 @@ function namedResult(overrides: Partial<SearchResult> = {}): SearchResult {
 
 // @req REQ-180
 describe("SearchFeed", () => {
+  // The fixture's companions carry three recent shorts that are not about the
+  // name: they are no reason to draw a shelf under the confession (brief 12,
+  // part A).
   // @req REQ-180
   it("renders the deterministic unknown-name movement without substitute shelves", () => {
     const value = fixture("inconnu");
@@ -71,7 +74,6 @@ describe("SearchFeed", () => {
     expect(blockIds(container)).toEqual([
       "verdict",
       "lenses",
-      "shorts",
       "owed",
       "further",
     ]);
@@ -114,6 +116,70 @@ describe("SearchFeed", () => {
     expect(
       screen.getByText(/n'est pas un nom que ces peuples se donnent/)
     ).toBeInTheDocument();
+  });
+
+  // Brief 12, part A (approved 2026-10-17): a reader who came with a name we
+  // do not hold is asked for it once, under the confession, and nothing empty
+  // is drawn after it.
+  // @req REQ-180
+  it("asks for an unknown name once, in the verdict, with no empty shelf or owed card", () => {
+    const { container } = render(
+      <SearchFeed
+        query="voundou"
+        language="fr"
+        state="unknown"
+        results={[]}
+        subjects={[]}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+
+    expect(screen.queryByText("Pas encore de short")).toBeNull();
+    expect(screen.queryByText("Tout voir")).toBeNull();
+    expect(screen.queryByText("Plusieurs noms peuvent coexister.")).toBeNull();
+    expect(screen.queryByText("Nous nous sommes trompés ?")).toBeNull();
+    expect(container.querySelector('[data-feed-part="invitation"]')).toBeNull();
+    const actions = screen.getAllByRole("button", {
+      name: "Proposer une source",
+    });
+    expect(actions).toHaveLength(1);
+    expect(actions[0].closest('[data-feed-block="verdict"]')).not.toBeNull();
+  });
+
+  // « pigmée » does not confess: its verdict answers, so it carries no button,
+  // and its closing card stays the page's one invitation. The empty shelf goes
+  // with the state, as for any unknown name.
+  // @req REQ-180
+  it("keeps the closing card as the one invitation of a reviewed answer with no fiche", () => {
+    render(
+      <SearchFeed
+        query="pigmée"
+        language="fr"
+        state="unknown"
+        results={[]}
+        subjects={[]}
+        leads={[]}
+        companions={emptyCompanions}
+        nameAnswers={[
+          {
+            term: "Pygmée",
+            subjects: [{ type: "people", id: "PPL_TWA" }],
+            paragraphs: [
+              "« Pygmée » n'est pas un nom que ces peuples se donnent.",
+            ],
+            sources: [],
+          },
+        ]}
+      />
+    );
+
+    expect(screen.queryByText("Pas encore de short")).toBeNull();
+    const actions = screen.getAllByRole("button", {
+      name: "Proposer une source",
+    });
+    expect(actions).toHaveLength(1);
+    expect(actions[0].closest('[data-feed-block="verdict"]')).toBeNull();
   });
 
   // No entity answers to « zombie », but we made a piece on the word. The page
