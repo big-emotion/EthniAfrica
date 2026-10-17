@@ -41,6 +41,7 @@ two is wrong, and the fix is decided, not improvised.
 |                   | État mince (« wolof »)                       | `search-state-thin`  |
 |                   | État : origines concurrentes (« yamoussoukro ») | `search-state-competing` |
 |                   | État : origine non datée (exemple à remplacer) | `search-state-nodate` |
+|                   | État : « peul », le nom propre Fulɓe ouvert   | `search-state-peul-fulbe-open` |
 | 2 · Peoples       | `PPL_FULA`                                   | `people-fula`        |
 |                   | `PPL_BASSA`                                  | `people-bassa`       |
 |                   | `PPL_ALABA`                                  | `people-thin-alaba`  |
@@ -76,6 +77,7 @@ are recorded whole, folded as the site folds them.
 | 2026-10-15 | [Brief 5, the country fiche](../briefs/05-country.md) | `country-civ`, `country-state-civ-quaqua`, `country-state-thin-gab`, `country-state-shared-congo` (new) |
 | 2026-10-16 | [Brief 9, « Notre démarche »](../briefs/09-our-approach.md) | `approach` (new), `about`, `Main`; the footer (state B) on every board except `name-traore` |
 | 2026-10-17 | [Brief 10, the story link and folded chapters](../briefs/10-fiche-story-link-and-folds.md), proposed and awaiting approval; with it the fiche heads of ETNI-2047 (REQ-151) and the filed name « Peul » | `people-fula`, `people-bassa`, `people-thin-alaba`, `language-lingala`, `language-thin-havu`, `family-bantu`, `family-mande` (with the « L'empreinte » words of PR #1813), `country-civ` and its three state boards, `people-state-fula-culture-open` and `country-state-civ-names-open` (new), `search-peul` (the fiche button only), `Main` |
+| 2026-10-17 | [Brief 11, from the searched name to the self-name, one video, labelled sources](../briefs/11-result-page-self-name-handoff.md), proposed and awaiting approval | `search-peul`, `search-bassa` and `search-state-peul-fulbe-open` (new) for the hand-off, the video row and the period rule (also on `search-congo`); the labelled sources button on those and on `search-state-competing`, `search-state-thin`, `language-lingala`, `country-civ`, `country-state-civ-quaqua`; `Main` |
 
 The boards of a changed page no longer record v5.2.0: they are the approved
 target, and the code is behind them until the implementation lands.
@@ -93,6 +95,9 @@ target, and the code is behind them until the implementation lands.
   fails `make check`. Update the boards first, then the code.
 - `assets/` holds the two images the chrome uses: the EthniAfrica mark
   (`public/africa.png`) and the BIG EMOTION credit (`public/brand/big-emotion.svg`).
+  It also holds one poster, `short-fulbe.jpg`, copied from
+  `public/images/discoveries/videos/fulbe-sept-noms-un-sens-ouvert.jpg`, for the
+  video row of brief 11.
 - `canvas.json` is the canvas index as the editor saved it: board positions,
   sizes and the four group titles.
 

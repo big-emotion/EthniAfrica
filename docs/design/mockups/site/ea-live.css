@@ -4702,3 +4702,97 @@ svg { display: block; }
 .ea-fold[open] > summary [data-when="open"] { display: inline; }
 .ea-fold > summary + * { margin-top: var(--afh-space-xs); }
 .afh-names-group .ea-fold { margin: 0; }
+
+/* ============================================================
+   Brief 11 (2026-10-17): the result page hands the reader from
+   the searched name to the self-name (a line in the lead, a tile
+   after the end line), shows one video made on the subject, and
+   prints a period once over consecutive tiles that share it.
+   The sources button gains its visible label (« Source » /
+   « Sources ») and a 44 px target. Until the code catches up,
+   that restyle lives here and outranks the verbatim
+   source-diamond.css through `button.afh-source-diamond`, so the
+   colour swatches on Main, which are spans, keep their shape.
+   Tokens only.
+   ============================================================ */
+
+/* The lead: the self-name's question under the sentence, in the same button. */
+.ea-lead-text { display: flex; flex-direction: column; gap: var(--afh-space-xs); min-width: 0; }
+.ea-lead-line { font-size: var(--afh-text-small); line-height: 1.5; color: var(--afh-text-soft); }
+
+/* The hand-off tile: off the thread, no dot, no date. */
+.ea-handoff { display: flex; flex-direction: column; gap: var(--afh-space-md); }
+.ea-handoff-name {
+  font-family: var(--afh-font-display); font-weight: 900;
+  font-size: var(--afh-text-h2); line-height: 1.15; overflow-wrap: anywhere;
+}
+.ea-handoff-text { font-size: var(--afh-text-small); line-height: 1.6; }
+/* Form C, outlined: the page keeps its one solid action. */
+.ea-handoff-action {
+  align-self: flex-start; display: inline-flex; align-items: center;
+  min-height: 44px; margin-top: var(--afh-space-xs); padding: var(--afh-space-md) var(--afh-space-2xl);
+  border: 1px solid var(--accent); border-radius: var(--afh-radius-lg);
+  background: var(--afh-surface); color: var(--afh-text);
+  font-size: var(--afh-text-small); font-weight: 600; line-height: 1.4; text-align: start;
+}
+.ea-handoff-action:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
+
+/* One video made on the subject: the whole row is the link. */
+.ea-video-row {
+  display: grid; grid-template-columns: 64px minmax(0, 1fr); align-items: center;
+  gap: var(--afh-space-lg); min-height: 44px; padding: var(--afh-space-lg);
+  border: 1px solid var(--afh-border); border-radius: var(--afh-radius-lg);
+  background: var(--afh-surface); color: var(--afh-text);
+}
+.ea-video-row:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
+.ea-video-poster {
+  position: relative; display: block; width: 64px; aspect-ratio: 9 / 16;
+  overflow: hidden; border-radius: var(--afh-radius-lg); background: var(--afh-bg-warm);
+}
+.ea-video-poster img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.ea-video-play {
+  position: absolute; left: 50%; top: 50%;
+  width: 24px; height: 24px; transform: translate(-50%, -50%);
+}
+.ea-video-text { display: flex; flex-direction: column; gap: var(--afh-space-xs); min-width: 0; }
+.ea-video-eyebrow {
+  font-family: var(--afh-font-mono); font-size: var(--afh-text-caption);
+  font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-ink);
+}
+.ea-video-title { font-size: var(--afh-text-small); font-weight: 700; line-height: 1.4; overflow-wrap: anywhere; }
+.ea-video-title svg {
+  display: inline-block; width: 18px; height: 18px;
+  margin-left: var(--afh-space-sm); vertical-align: -3px; color: var(--accent-ink);
+}
+.ea-video-meta { font-size: var(--afh-text-caption); line-height: 1.5; color: var(--afh-text-soft); }
+
+/* Consecutive tiles of one period: the period once, each statement kept. */
+.ea-period-join {
+  display: flex; flex-direction: column; gap: var(--afh-space-sm);
+  padding-top: var(--afh-space-md); border-top: 1px solid var(--afh-border);
+}
+
+/* The sources button: diamond, then « Source » or « Sources », no count.
+   The label sits on the passage's baseline. Ten pixels of padding above
+   and below, cancelled by the same negative margin, make a 44 px target
+   whose layout box is the label's 24 px line: shorter than the passage's
+   own line, so the passage keeps its line height. */
+button.afh-source-diamond {
+  display: inline-block; min-width: 44px;
+  margin-block: calc(-1 * var(--afh-space-base));
+  padding: var(--afh-space-base) var(--afh-space-xs) var(--afh-space-base) 2px;
+  font-size: var(--afh-text-small); font-weight: 600; line-height: 24px;
+  color: var(--afh-text-soft); white-space: nowrap; text-align: start;
+  vertical-align: baseline;
+}
+button.afh-source-diamond .afh-source-diamond-mark {
+  margin-inline-end: var(--afh-space-sm); vertical-align: middle;
+}
+button.afh-source-diamond:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
+/* A no-break space does not hold a button to the word before it: CSS keeps
+   a wrap opportunity on both sides of an atomic inline (CSS Text 3, 5.1).
+   The passage's last word and the button go in one inline block, which
+   moves to the next line whole. Unlike `nowrap`, it still breaks inside
+   when its column is narrower than word and button together (the readings
+   side by side on a fiche at 768), so it never widens that column. */
+.ea-source-tail { display: inline-block; }
