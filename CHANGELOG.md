@@ -10,6 +10,45 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+## [5.4.0] - 2026-10-17
+
+### Added
+
+- Social: EthniAfrica Cartes 1.9.0 in the series video renderer. Text on the image takes
+  a double outline instead of the 1.4.0 text shadow, and the lit word takes a dark edge;
+  on a white picture, subtitles read at 7.9:1. Still cards are unchanged (#1805).
+- Social production: a series video can be packaged for approval 3. The package checks
+  the manifest against the video, sequence, cards, voice and frame count, asks for a
+  research and rights record for every image a card shows, and checks every string the
+  video prints. The encoder records the sequence's hash, so a sequence edited after
+  encoding can no longer be packaged with the old file (#1800).
+
+### Changed
+
+- Family names (ETNI-2011, follow-ups to waves 21 to 23): `PAT_KOROMA` folded into
+  `PAT_KOUROUMA` and `PAT_BANGURA` into `PAT_BANGOURA`, the old addresses redirecting to
+  the kept fiche; 13 Portuguese names (Monteiro, Ferreira, Costa and the rest) filed as
+  `hereditary_family_name`, and 5 personal names (Amadhila, Hamutenya, Iipumbu, Kgosi,
+  Mothibi) as `non_hereditary_patronymic` (#1808).
+- Dependencies: 18 production updates (the Radix UI primitives, `@sentry/nextjs` 11.7.0,
+  `@tanstack/react-query`, `lucide-react`, `swagger-ui-react`, `zod`), `@types/node`,
+  `postcss`, `prettier`, `happy-dom` 21 and `actions/create-github-app-token` 3.3.0
+  (#1796, #1797, #1798, #1799).
+- Dead-code check: knip 6. Re-exports that nothing imports through their re-exporting
+  module are removed, `ffmpeg` and `ffprobe` are declared as system binaries, and the
+  config entries knip 6 calls redundant are dropped; `check:dead` passes with every
+  ceiling unchanged (#1799).
+
+### Fixed
+
+- Family names: the sources and links the wave 21 to 23 reports flagged.
+  `PAT_AL_MIRGHANI`'s source is identified as al-Shahi (1988); page numbers are corrected
+  in `PAT_TARHOUNI`, `PAT_TRABELSI` and `PAT_SHAYO`; South Africa is added to `PAT_NCUBE`
+  (Bryant); spellings are fixed in `PAT_AMADHILA` and `PAT_MENEZES`; the people links of
+  `PAT_MKAPA` and `PAT_NYERERE` are corrected, and a story sourced only to Wikipedia is
+  dropped from `PAT_NYERERE`; `PPL_NDEBELE_SA` types Bryant 1929 as an academic source
+  (#1808).
+
 ## [5.3.0] - 2026-10-16
 
 ### Added
@@ -1741,7 +1780,8 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.3.0...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.4.0...HEAD
+[5.4.0]: https://github.com/big-emotion/ethniafrica/compare/v5.3.0...v5.4.0
 [5.3.0]: https://github.com/big-emotion/ethniafrica/compare/v5.2.0...v5.3.0
 [5.2.0]: https://github.com/big-emotion/ethniafrica/compare/v5.1.0...v5.2.0
 [5.1.0]: https://github.com/big-emotion/ethniafrica/compare/v5.0.1...v5.1.0
