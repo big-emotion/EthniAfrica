@@ -3,7 +3,9 @@ import { unstable_cache } from "next/cache";
 import { CORPUS_AGGREGATE_REVALIDATE_SECONDS } from "@/api/v2/services/corpusCache";
 import { parseNameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import { crawlableWordLabels } from "@/lib/productions/wordAnswer";
+import { nameAnswerSegment } from "@/lib/routing";
 import {
+  addressSpellingOf,
   buildNameAddressDirectory,
   historyAddressSpelling,
 } from "@/lib/search/nameAddress";
@@ -47,3 +49,39 @@ export const getNameAddressSpellings = unstable_cache(
   ["name-address-spellings"],
   { revalidate: CORPUS_AGGREGATE_REVALIDATE_SECONDS }
 );
+
+/** What a requested address segment resolves to. */
+export interface NameAddress {
+  /** The corpus spelling: the page's heading and the query it reads. */
+  spelling: string;
+  /**
+   * Whether the segment is the address itself. An accent or case variant is
+   * not: it reaches the address by one permanent redirect, never by a second
+   * page (DEC-074).
+   */
+  isAddress: boolean;
+}
+
+/**
+ * The address a requested segment belongs to, or nothing when its form has
+ * none. The segment arrives percent-encoded or already decoded depending on
+ * the caller; decoding a decoded form is a no-op for every form the corpus
+ * holds.
+ */
+// @req REQ-200
+export async function resolveNameAddress(
+  segment: string
+): Promise<NameAddress | null> {
+  let form: string;
+  try {
+    form = decodeURIComponent(segment);
+  } catch {
+    return null;
+  }
+  const spelling = addressSpellingOf(
+    buildNameAddressDirectory(await getNameAddressSpellings()),
+    form
+  );
+  if (!spelling) return null;
+  return { spelling, isAddress: form === nameAnswerSegment(spelling) };
+}

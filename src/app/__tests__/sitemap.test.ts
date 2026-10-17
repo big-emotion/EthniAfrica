@@ -365,8 +365,10 @@ describe("sitemap.xml — the addresses of answered names", () => {
     const all = await addressed();
     const base = `https://${CANONICAL_DOMAIN}`;
 
-    expect(all).toContain(`${base}/fr/atlas/recherche/lingala`);
-    expect(all).toContain(`${base}/fr/atlas/recherche/ful%C9%93e`);
+    // The encoding itself (ful%C9%93e) is pinned in routing.test.ts.
+    expect(all).toContain(`${base}${getNameAnswerRoute("fr", "lingala")}`);
+    expect(all).toContain(`${base}${getNameAnswerRoute("fr", "Fulɓe")}`);
+    expect(all.some((url) => url.endsWith("/ful%C9%93e"))).toBe(true);
   });
 
   // @req REQ-200
@@ -382,7 +384,7 @@ describe("sitemap.xml — the addresses of answered names", () => {
 
     expect(new Set(all).size).toBe(all.length);
     expect(
-      all.filter((url) => url.endsWith("/fr/atlas/recherche/lingala"))
+      all.filter((url) => url.endsWith(getNameAnswerRoute("fr", "lingala")))
     ).toHaveLength(1);
   });
 

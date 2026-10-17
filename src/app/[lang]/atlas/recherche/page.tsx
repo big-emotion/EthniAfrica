@@ -12,9 +12,13 @@ import type { Language } from "@/types/shared";
 // @req REQ-002
 export const dynamic = "force-dynamic";
 
-// The canonical is the bare search page: a query is a reading of it, never
-// a page of its own, so a crawler is told about one address.
+// The canonical is the bare search page: a typed query is a reading of it,
+// so a crawler is never offered one address per spelling typed. A form the
+// corpus answers has its own address, `atlas/recherche/[name]`, rendered on
+// the server and listed in the sitemap; this reading of it keeps pointing
+// here (DEC-074).
 // @req REQ-141
+// @req REQ-200
 export async function generateMetadata({
   params,
 }: {

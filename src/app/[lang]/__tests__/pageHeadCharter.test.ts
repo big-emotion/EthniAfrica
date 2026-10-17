@@ -21,6 +21,7 @@ import type { Metadata } from "next";
 import { beforeAll, describe, expect, it, vi } from "vitest";
 
 import { CANONICAL_DOMAIN } from "@/lib/brand";
+import { getLocalizedRoute, getNameAnswerRoute } from "@/lib/routing";
 import { OG_LOCALE } from "@/lib/seo/pageHead";
 import type { Language } from "@/types/shared";
 
@@ -83,6 +84,13 @@ vi.mock("@/api/v2/services/places", async (importOriginal) => ({
 vi.mock("@/api/v2/services/sources", async (importOriginal) => ({
   ...(await importOriginal<object>()),
   getSourceById: async () => null,
+}));
+
+// A name's address decides from the corpus whether it has one; « Lingala »
+// does here, as it does in the corpus.
+vi.mock("@/api/v2/services/nameAddresses", () => ({
+  resolveNameAddress: async (segment: string) =>
+    segment === "lingala" ? { spelling: "Lingala", isAddress: true } : null,
 }));
 
 vi.mock("@/api/v2/handlers/compare", () => ({
@@ -189,6 +197,10 @@ const FIXTURES: Record<string, RouteFixture> = {
     expectation: { surface: "fiche" },
   },
   "atlas/recherche": { expectation: { surface: "search" } },
+  "atlas/recherche/[name]": {
+    params: { name: "lingala" },
+    expectation: { surface: "nameAddress" },
+  },
   atlas: { expectation: { surface: "atlasHub" } },
   comparer: { expectation: { surface: "compare" } },
   "comparer/[entityType]/[...ids]": {
@@ -394,4 +406,36 @@ describe("page head — every public page", () => {
       });
     });
   }
+});
+
+/**
+ * A typed query stays a reading of the search page; an answered form has an
+ * address of its own (REQ-200). The two heads are what tell a crawler which
+ * is which.
+ */
+describe("page head — a name's address and the search reading", () => {
+  // @req REQ-200
+  it("gives the address its own canonical and a title naming the name", async () => {
+    const head = await headOf("atlas/recherche/[name]", "fr");
+
+    const address = `${BASE}${getNameAnswerRoute("fr", "lingala")}`;
+
+    expect(head.alternates?.canonical).toBe(address);
+    expect(head.openGraph?.url).toBe(address);
+    expect(String(head.title)).toContain("Lingala");
+    expect(String(head.title)).not.toContain("Recherche");
+  });
+
+  // @req REQ-200
+  it("keeps the bare search page as the canonical of a ?q= reading", async () => {
+    const searchPage = ROUTE_MODULES.get("atlas/recherche");
+    const head = await searchPage.generateMetadata({
+      params: Promise.resolve({ lang: "fr" }),
+      searchParams: Promise.resolve({ q: "lingala" }),
+    });
+
+    expect(head.alternates?.canonical).toBe(
+      `${BASE}${getLocalizedRoute("fr", "search")}`
+    );
+  });
 });
