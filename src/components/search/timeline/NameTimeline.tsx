@@ -114,6 +114,7 @@ export function NameTimeline({
           sources={account.sources}
           anchorId={anchorIdOf(key)}
           language={language}
+          surface="timeline"
         />
       </p>
       {account.actors?.length ? (
@@ -309,6 +310,7 @@ export function NameTimeline({
                           sources={anchor.sources}
                           anchorId={anchorIdOf(`${tile.key}-elsewhere`)}
                           language={language}
+                          surface="timeline"
                         />
                       </p>
                     </div>
