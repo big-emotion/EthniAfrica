@@ -87,6 +87,7 @@ export function FicheNameReadings({
                       sources={account.sources}
                       anchorId={anchorId}
                       language={language}
+                      surface="fiche"
                     />
                   </p>
                 </div>
