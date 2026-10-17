@@ -108,7 +108,9 @@ Decisions taken in review:
    « Signaler une erreur » and « Proposer une source », and the title « Ce que
    nous ne savons pas encore ». The thesis line stays `[THÈSE — texte à fixer]`.
    On the unknown-name page the existing « Nous nous sommes trompés ? » card is
-   the invitation.
+   the invitation. _Superseded on 2026-10-17 by brief 12, part A (approved by
+   delegation): the invitation is the verdict's « Proposer une source »
+   button._
 3. Next-step targets: Wolof and Atlantique (`peul`), Krou and Nupe (`bassa`),
    Kongo and Mossi (`congo`), Siwi and Tchad (`unknown`), each with a reason
    taken from the target's fiche. They link to the result pages of those names.

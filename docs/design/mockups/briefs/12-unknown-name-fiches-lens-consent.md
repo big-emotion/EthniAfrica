@@ -2,8 +2,34 @@
 
 Read [`README.md`](README.md), [`01-result-page-timeline.md`](01-result-page-timeline.md)
 and [`../../mockup-first-workflow.md`](../../mockup-first-workflow.md) first.
-Written 2026-10-17. Status: **proposed — awaiting operator review.**
+Written 2026-10-17. Status: **approved 2026-10-17 by delegation.** The
+operator asked Claude on 2026-10-17 to approve these boards on their behalf
+(« approuver les maquettes pour moi »). Claude approved them after an
+art-direction review whose blocking finding (the Siwi and Tchad reasons) was
+fixed; the operator did not review the boards themselves. The decisions taken
+on their behalf are in the approval record below, and the charter amendments of
+this brief are applied to
+[`../../search-result-charter.md`](../../search-result-charter.md) and brief 1.
 Prompt: [`claude-design-prompt-12.md`](claude-design-prompt-12.md).
+
+### Approval record (2026-10-17, by delegation)
+
+1. Part A keeps Siwi and Tchad as the next names, as brief 1 decision 3
+   approved them.
+2. Part B: a family name matched only by its sound is withheld when something
+   matches exactly. The rule was published on 2026-10-17 as REQ-201, which
+   refines REQ-135, rather than as the REQ-135 edit proposed below.
+3. Part C: the paragraph at 16 px on four lines (233 px at 430), and the label
+   « Accepter » in place of « Accepter tout ».
+4. The near-name search for family names and languages stays out.
+5. Conditions for the implementation, from the art-direction review: in the
+   consent strip the reading order and the focus order are the same at every
+   width (no reversed row that splits them, WCAG 2.4.3); « Politique de
+   données » stays a quiet link without an arrow; the unknown-name column
+   keeps the widths of the approved board and of `SearchFeedLayout` (672 px at
+   768, 880 px at 1440).
+6. Left to a copy change, outside these boards: the « Cookies analytiques »
+   switch is described « sans cookie ».
 
 This is **pass 3** of the three board passes the operator approved on
 2026-10-17. It starts once pass 2 ([brief 11](11-result-page-self-name-handoff.md))
