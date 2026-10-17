@@ -4,15 +4,34 @@ import { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useConsent } from "@/hooks/use-consent";
-import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
 import { FALLBACK_LOCALE, isLocale } from "@/lib/locale";
 import { getStaticPageRoute } from "@/lib/routing";
 import { getTranslation } from "@/lib/translations";
-import { cn } from "@/lib/utils";
 import type { ConsentPreferences } from "@/types/consent";
 
-const BANNER_TITLE_ID = "consent-banner-title";
+const PANEL_ID = "consent-preferences-panel";
+
+// The strip as drawn on the `Main` board (brief 12 part C). It runs full
+// width, so the board's container steps at 768 and 1200 px are viewport
+// steps here: `md` is 768 px in this Tailwind config, and 1200 has no name.
+// It is written `min-[75rem]` (1200 px), not `min-[1200px]`: Tailwind sorts a
+// px step before the rem-based `md`, and `md:px-afh-5xl` then won at 1200.
+
+// « Refuser », « Accepter » and « Enregistrer mes préférences » share one
+// style, one ink, one weight: refusing is drawn exactly as easy as accepting.
+const ANSWER_CLASS =
+  "inline-flex min-h-11 items-center justify-center rounded-afh-lg border border-afh-text bg-transparent px-afh-2xl py-afh-md text-center text-afh-small font-semibold leading-[1.4] text-afh-text focus-visible:outline-none focus-visible:shadow-afh-focus md:px-afh-5xl";
+
+// Drawn like the footer's legal links, where « Gestion des cookies » is
+// already a button among links.
+const QUIET_CLASS =
+  "inline-flex min-h-11 items-center text-afh-small font-semibold leading-[1.4] text-afh-text-soft underline decoration-[color-mix(in_srgb,var(--afh-text-soft)_40%,transparent)] underline-offset-4 focus-visible:outline-none focus-visible:shadow-afh-focus";
+
+const SWITCH_LABEL_CLASS =
+  "text-afh-small font-semibold leading-[var(--afh-leading-small)] text-afh-text";
+const SWITCH_DESCRIPTION_CLASS =
+  "text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft";
 
 // @req REQ-046
 export function ConsentBanner() {
@@ -29,7 +48,6 @@ export function ConsentBanner() {
   const [localAnalytics, setLocalAnalytics] = useState<boolean | null>(null);
   const [localEmbeds, setLocalEmbeds] = useState<boolean | null>(null);
   const bannerRef = useRef<HTMLDivElement>(null);
-  const firstFocusableRef = useRef<HTMLButtonElement>(null);
 
   // Derive preferences from consent state with local overrides. `functional`
   // is carried through untouched: the banner no longer offers it, because the
@@ -61,10 +79,11 @@ export function ConsentBanner() {
     // Capture the element that currently has focus so we can restore it later.
     triggerElementRef.current = document.activeElement;
 
-    // Focus the first button when banner appears
-    firstFocusableRef.current?.focus();
-
     const banner = bannerRef.current;
+
+    // The strip itself takes the focus: a focused answer is the one a key
+    // press gives, and neither answer may be the easier one (REQ-088).
+    banner.focus();
 
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
@@ -87,8 +106,13 @@ export function ConsentBanner() {
           );
         const firstElement = focusableElements[0];
         const lastElement = focusableElements[focusableElements.length - 1];
+        // On arrival the strip holds the focus, so Shift+Tab from the strip
+        // itself wraps as it does from the first control.
+        const atStart =
+          document.activeElement === firstElement ||
+          document.activeElement === bannerRef.current;
 
-        if (event.shiftKey && document.activeElement === firstElement) {
+        if (event.shiftKey && atStart) {
           event.preventDefault();
           lastElement?.focus();
         } else if (!event.shiftKey && document.activeElement === lastElement) {
@@ -124,136 +148,131 @@ export function ConsentBanner() {
     <div
       ref={bannerRef}
       role="dialog"
-      aria-labelledby={BANNER_TITLE_ID}
       aria-modal="false"
-      className={cn(
-        "fixed bottom-0 left-0 right-0 z-50",
-        "bg-background border-t border-border shadow-lg",
-        "p-4 md:p-6"
-      )}
+      aria-label={copy.title}
+      tabIndex={-1}
+      // No visible title and no shadow. `text-left` opts out of the phone's
+      // centred body text: the board sets the strip ragged left. The open
+      // panel is the one tall state; past the screen it scrolls in the strip.
+      className="fixed inset-x-0 bottom-0 z-50 max-h-dvh overflow-y-auto border-t border-afh-border bg-afh-bg text-left text-afh-text focus:outline-none"
     >
-      <div className="mx-auto max-w-4xl">
-        <div className="flex flex-col gap-4">
-          {/* Header */}
-          <div className="flex flex-col gap-2">
-            <h2
-              id={BANNER_TITLE_ID}
-              className="text-afh-h3 font-semibold text-foreground"
-            >
-              {copy.title}
-            </h2>
-            <p className="text-afh-small text-muted-foreground">
+      <div className="mx-auto flex max-w-[var(--afh-shell-max)] flex-col gap-afh-md p-afh-2xl md:px-afh-5xl min-[75rem]:grid min-[75rem]:grid-cols-[minmax(0,1fr)_auto] min-[75rem]:items-center min-[75rem]:gap-x-afh-6xl min-[75rem]:gap-y-0 min-[75rem]:px-afh-6xl">
+        <p className="text-afh-small leading-[var(--afh-leading-small)] text-afh-text-soft min-[75rem]:col-start-1 min-[75rem]:row-start-2">
+          {copy.strip}
+        </p>
+
+        {/* « Personnaliser » open: the panel opens above the answers. From
+            1200 px it takes a row of its own above the paragraph, and closed
+            that row is empty. */}
+        {showCustomize && (
+          <div
+            id={PANEL_ID}
+            className="flex flex-col gap-afh-lg rounded-afh-lg border border-afh-border bg-afh-surface p-afh-2xl min-[75rem]:col-start-1 min-[75rem]:row-start-1 min-[75rem]:mb-afh-2xl"
+          >
+            <p className="text-afh-small leading-[var(--afh-leading-small)] text-afh-text-soft md:max-w-[var(--afh-measure-prose)]">
               {copy.description}
             </p>
-            {/* The canonical privacy document, the one the footer and the site
-                tree both name. This used to point at `/fr/confidentialite`, a
-                hand-written page that restated it — so the banner sent the
-                reader to a copy nothing else maintained. */}
-            <Link
-              href={getStaticPageRoute(language, "dataPolicy")}
-              className="text-afh-small text-primary underline-offset-4 hover:underline w-fit"
-            >
-              {copy.dataPolicy}
-            </Link>
-          </div>
-
-          {/* Customize Panel */}
-          {showCustomize && (
-            <div className="flex flex-col gap-3 rounded-lg border border-border bg-muted/50 p-4">
-              {/* Essential cookies */}
-              <div className="flex items-center justify-between gap-4">
-                <div className="flex flex-col gap-0.5">
+            <ul className="flex flex-col gap-afh-md">
+              <li className="flex items-center justify-between gap-afh-2xl">
+                <span className="flex min-w-0 flex-col gap-afh-xs">
                   <label
                     htmlFor="essential-switch"
-                    className="text-afh-small font-medium text-foreground"
+                    className={SWITCH_LABEL_CLASS}
                   >
                     {copy.essential}
                   </label>
-                  <span className="text-afh-caption text-muted-foreground">
+                  <span className={SWITCH_DESCRIPTION_CLASS}>
                     {copy.essentialDescription}
                   </span>
-                </div>
+                </span>
                 <Switch
                   id="essential-switch"
                   aria-label={copy.essential}
                   checked={true}
                   disabled
                 />
-              </div>
-
-              {/* Analytics cookies */}
-              <div className="flex items-center justify-between gap-4">
-                <div className="flex flex-col gap-0.5">
+              </li>
+              <li className="flex items-center justify-between gap-afh-2xl">
+                <span className="flex min-w-0 flex-col gap-afh-xs">
                   <label
                     htmlFor="analytics-switch"
-                    className="text-afh-small font-medium text-foreground"
+                    className={SWITCH_LABEL_CLASS}
                   >
                     {copy.analytics}
                   </label>
-                  <span className="text-afh-caption text-muted-foreground">
+                  <span className={SWITCH_DESCRIPTION_CLASS}>
                     {copy.analyticsDescription}
                   </span>
-                </div>
+                </span>
                 <Switch
                   id="analytics-switch"
                   aria-label={copy.analytics}
                   checked={preferences.analytics}
                   onCheckedChange={handleToggleAnalytics}
                 />
-              </div>
-
+              </li>
               {/* Third-party players. Only the panel lists this, so it can be
                   withdrawn; the play click writes it on. The arrival banner
                   offers no such switch about content the reader has not reached. */}
-              <div className="flex items-center justify-between gap-4">
-                <div className="flex flex-col gap-0.5">
-                  <label
-                    htmlFor="embeds-switch"
-                    className="text-afh-small font-medium text-foreground"
-                  >
+              <li className="flex items-center justify-between gap-afh-2xl">
+                <span className="flex min-w-0 flex-col gap-afh-xs">
+                  <label htmlFor="embeds-switch" className={SWITCH_LABEL_CLASS}>
                     {copy.embeds}
                   </label>
-                  <span className="text-afh-caption text-muted-foreground">
+                  <span className={SWITCH_DESCRIPTION_CLASS}>
                     {copy.embedsDescription}
                   </span>
-                </div>
+                </span>
                 <Switch
                   id="embeds-switch"
                   aria-label={copy.embeds}
                   checked={preferences.embeds}
                   onCheckedChange={handleToggleEmbeds}
                 />
-              </div>
-
-              {/* Save preferences button */}
-              <Button
-                variant="default"
-                className="mt-2 w-full md:w-auto md:self-end"
-                onClick={handleSavePreferences}
-              >
-                {copy.save}
-              </Button>
-            </div>
-          )}
-
-          {/* Action Buttons */}
-          <div className="flex flex-col gap-2 sm:flex-row sm:justify-end">
-            <Button
-              ref={firstFocusableRef}
-              variant="default"
-              onClick={acceptAll}
+              </li>
+            </ul>
+            <button
+              type="button"
+              className={`${ANSWER_CLASS} self-stretch md:self-start`}
+              onClick={handleSavePreferences}
             >
-              {copy.acceptAll}
-            </Button>
-            <Button variant="outline" onClick={rejectAll}>
+              {copy.save}
+            </button>
+          </div>
+        )}
+
+        {/* One order on screen and in focus at every width: « Refuser »,
+            « Accepter », then the quiet pair (WCAG 2.4.3, brief 12 approval
+            record item 5). No reversed row, no `order`. */}
+        <div className="flex flex-col gap-afh-md md:flex-row md:items-center md:justify-between md:gap-afh-2xl min-[75rem]:col-start-2 min-[75rem]:row-start-2">
+          <div className="grid grid-cols-2 gap-afh-md md:flex-none">
+            <button type="button" className={ANSWER_CLASS} onClick={rejectAll}>
               {copy.reject}
-            </Button>
-            <Button
-              variant="ghost"
+            </button>
+            <button type="button" className={ANSWER_CLASS} onClick={acceptAll}>
+              {copy.acceptAll}
+            </button>
+          </div>
+          <div className="flex flex-wrap items-center gap-x-afh-5xl">
+            <button
+              type="button"
+              className={QUIET_CLASS}
+              aria-expanded={showCustomize}
+              aria-controls={PANEL_ID}
               onClick={() => setShowCustomize(!showCustomize)}
             >
               {copy.customise}
-            </Button>
+            </button>
+            {/* The canonical privacy document, the one the footer and the site
+                tree both name. This used to point at `/fr/confidentialite`, a
+                hand-written page that restated it — so the banner sent the
+                reader to a copy nothing else maintained. */}
+            <Link
+              href={getStaticPageRoute(language, "dataPolicy")}
+              className={QUIET_CLASS}
+            >
+              {copy.dataPolicy}
+            </Link>
           </div>
         </div>
       </div>
