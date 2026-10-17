@@ -78,6 +78,18 @@ describe("peopleCultureTiles", () => {
     ]);
   });
 
+  // The closed tiles used to read « …par l'anthropologue Daniel P. » and
+  // « …en chefferies (amakhosi, sing. ».
+  // @req REQ-153
+  it("never closes a preview on an initial or inside a parenthesis", () => {
+    const tile = (id: string, key: string) =>
+      peopleTiles(peopleRecord(id)).find((candidate) => candidate.key === key);
+    expect(tile("PPL_BEMBE", "rites")?.preview).toContain("Daniel P. Biebuyck");
+    expect(tile("PPL_XHOSA", "organisation")?.preview).toContain(
+      "(amakhosi, sing. inkosi)"
+    );
+  });
+
   // Relations with neighbours left the chronology for this chapter, beside
   // the country's own "Relations" tile.
   // @req REQ-097

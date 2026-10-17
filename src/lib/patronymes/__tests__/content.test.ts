@@ -1,5 +1,9 @@
+import { readdirSync, readFileSync } from "node:fs";
+import { join } from "node:path";
+
 import { describe, expect, it } from "vitest";
 
+import { getAdmin0NameFr } from "@/lib/atlas/overlays";
 import {
   readAlliances,
   isIndexableStanding,
@@ -15,6 +19,25 @@ import {
   readTotemicFoodProhibition,
   readTransmissionMode,
 } from "@/lib/patronymes/content";
+
+describe("patronyme spellings in the corpus (REQ-133)", () => {
+  // The fiche prints a country's French name and falls back to its code only
+  // when the map asset has none, so every shipped attestation must resolve.
+  // @req REQ-133
+  it("attests every spelling in a country the fiche can name", () => {
+    const dir = join(process.cwd(), "dataset/source/afrik/patronymes");
+    const unnamed = readdirSync(dir)
+      .filter((file) => /^PAT_.*\.json$/.test(file))
+      .flatMap((file) =>
+        readSpellings(JSON.parse(readFileSync(join(dir, file), "utf8")))
+          .flatMap((form) => form.countryIds)
+          .filter((countryId) => !getAdmin0NameFr(countryId))
+          .map((countryId) => `${file}: ${countryId}`)
+      );
+
+    expect(unnamed).toEqual([]);
+  });
+});
 
 describe("patronyme content readers (REQ-133)", () => {
   // @req REQ-133

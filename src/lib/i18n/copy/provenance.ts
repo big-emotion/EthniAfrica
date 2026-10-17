@@ -8,10 +8,16 @@ import type { Language } from "@/types/shared";
  */
 const fr = {
   region: "Sources des informations de cette fiche",
+  // True by construction: the census skips an assertion that cites no source.
   assertionCount: (count: number) =>
-    `${count} information${count > 1 ? "s" : ""} présentée${count > 1 ? "s" : ""}`,
-  lastHumanAudit: (date: string) => `Dernière relecture humaine : ${date}`,
-  neverAudited: "Aucune relecture humaine enregistrée à ce jour",
+    count === 1
+      ? "1 information, avec sa source"
+      : `${count} informations, chacune avec sa source`,
+  lastHumanAudit: (date: string) =>
+    `Nous avons relu cette fiche pour la dernière fois le ${date}.`,
+  // A missing stamp says no review was recorded, not that nobody read it.
+  neverAudited:
+    "Nous n'avons encore enregistré aucune relecture de cette fiche.",
   viewSources: "Voir les sources",
 };
 

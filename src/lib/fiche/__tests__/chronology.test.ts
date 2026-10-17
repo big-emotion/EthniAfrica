@@ -66,6 +66,42 @@ describe("splitLeadSentence", () => {
       rest: null,
     });
   });
+
+  // « l'historien N. » is a name cut in two, not the end of a sentence.
+  // @req REQ-153
+  it("never ends the lead on a lone initial", () => {
+    const { lead, rest } = splitLeadSentence(
+      "En 1710 selon l'historien N. G. Kodjo, Sékou Wattara règne à Kong. Kong devient un grand centre de commerce."
+    );
+    expect(lead).toBe(
+      "En 1710 selon l'historien N. G. Kodjo, Sékou Wattara règne à Kong."
+    );
+    expect(rest).toBe("Kong devient un grand centre de commerce.");
+  });
+
+  // @req REQ-153
+  it("never ends the lead inside a parenthesis", () => {
+    const { lead } = splitLeadSentence(
+      "Le sultanat de Dosso (fondé ca. 1750 par Zarmakoy Aboubacar) est la principale entité politique zarma. Il survit à ce jour."
+    );
+    expect(lead).toBe(
+      "Le sultanat de Dosso (fondé ca. 1750 par Zarmakoy Aboubacar) est la principale entité politique zarma."
+    );
+  });
+
+  // Waiting for a parenthesis that never closes would hand the whole text to
+  // the closed tile; the lead stops before it instead.
+  // @req REQ-153
+  it("cuts before a parenthesis that never closes", () => {
+    expect(
+      splitLeadSentence(
+        "Le royaume de Kong domine la région (fondé vers 1710. Il prospère jusqu'en 1897."
+      )
+    ).toEqual({
+      lead: "Le royaume de Kong domine la région",
+      rest: "(fondé vers 1710. Il prospère jusqu'en 1897.",
+    });
+  });
 });
 
 describe("peopleChronology", () => {
@@ -109,6 +145,17 @@ describe("peopleChronology", () => {
         "fr"
       )
     ).toEqual([]);
+  });
+
+  // The Dosso preview used to stop at « (fonde ca. », inside the parenthesis.
+  // @req REQ-153
+  it("closes every parenthesis the Zarma kingdoms preview opens", () => {
+    const kingdoms = peopleStations(peopleRecord("PPL_ZARMA")).find(
+      (station) => station.title === "Royaumes & chefferies"
+    );
+    const preview = kingdoms?.preview ?? "";
+    expect(preview).toContain("Dosso");
+    expect(preview.split("(").length).toBe(preview.split(")").length);
   });
 
   // Relations with neighbours read as society rather than chronology, and the
@@ -180,6 +227,17 @@ describe("countryChronology", () => {
     expect(etymology?.passages.join(" ")).toContain(
       "proposé par les nationalistes namibiens"
     );
+  });
+
+  // The Kong preview used to end on « selon l'historien N. ».
+  // @req REQ-153
+  it("keeps a historian's initials whole in the Royaume de Kong preview", () => {
+    const { stations } = countryChronology(countryRecord("CIV"), "fr");
+    const kong = stations.find(
+      (station) => station.title === "Royaume de Kong"
+    );
+    expect(kong?.preview).toContain("N. G. Kodjo");
+    expect(kong?.preview).not.toMatch(/\bN\.$/);
   });
 
   // Thirteen countries already type a modern entry; a second, synthesised one

@@ -29,7 +29,10 @@ const fr = {
   },
   casteOrSocialFunctionLabel: "Caste ou fonction sociale",
   attestedFormsTitle: "Orthographes trouvées dans les sources",
-  spellingAttestedInPrefix: "attestée en",
+  spellingAttestedIn: (countries: string[]) =>
+    countries.length === 1
+      ? `attestée dans ce pays : ${countries[0]}`
+      : `attestée dans ces pays : ${countries.join(", ")}`,
   transmissionModeLabel: "Mode de transmission",
   transmissionModeLabels: PATRONYME_VOCABULARY.fr.transmissionMode,
   designatedSocialUnitLabel: "Unité sociale désignée",

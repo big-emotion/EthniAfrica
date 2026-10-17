@@ -229,11 +229,42 @@ describe("FamilyParchment — the footprint", () => {
     expect(rows[0]).toHaveTextContent("3");
   });
 
+  // REQ-116 asks the page to say the area is built, not read. It now says so
+  // in everyday words: « calculée », « union » and « agrégat » were the
+  // workshop's.
   // @req REQ-116
-  it("says the area is calculated, not read from the page", () => {
+  it("says in plain words that the area is built from the peoples, not read from the page", () => {
     renderParchment();
 
-    expect(screen.getByText(/calculée/i)).toBeInTheDocument();
+    const footprint = screen.getByText(/nous l'avons construite/).textContent;
+    expect(footprint).toContain("ne vient pas de la page de la famille");
+    expect(footprint).toContain(
+      "nous l'avons construite à partir des 2 peuples rattachés à cette famille de langues"
+    );
+    expect(footprint).toContain("les 3 pays où vivent aujourd'hui ces peuples");
+    // The globe strokes the edge with dashes (`stroke-dasharray="9 7"`).
+    expect(footprint).toContain("en tirets");
+    expect(footprint).not.toMatch(/calculée|agrégat|union|tireté/i);
+  });
+
+  // Austronesian peoples all live in Madagascar: « les 1 pays » is not French.
+  // @req REQ-116
+  it("counts a single country in the singular", () => {
+    render(
+      <FamilyParchment
+        language="fr"
+        data={undeclaredFamily()}
+        footprintCountries={
+          buildFamilyFootprintOverlay([["MDG"], ["MDG"]], 2)!.countries
+        }
+        memberPeoples={memberPeoples}
+        memberPeopleCount={memberPeoples.length}
+      />
+    );
+
+    expect(screen.getByText(/nous l'avons construite/)).toHaveTextContent(
+      "le seul pays où vivent aujourd'hui ces peuples"
+    );
   });
 
   /**
@@ -251,7 +282,7 @@ describe("FamilyParchment — the footprint", () => {
     // which both branches render.
     expect(container.textContent).toContain("rattachés à cette famille");
     expect(container.textContent).not.toContain(
-      "la seule liste que la page assume"
+      "ce que la page elle-même conteste"
     );
     expect(container.querySelector("code")).toBeNull();
   });
@@ -274,11 +305,14 @@ describe("FamilyParchment — the footprint", () => {
       />
     );
 
-    expect(container.textContent).toContain(
-      "la seule liste que la page assume"
+    const footprint = screen.getByText(/nous l'avons construite/).textContent;
+    expect(footprint).toContain(
+      "nous l'avons construite à partir des peuples que cette page nomme"
     );
+    expect(footprint).toContain("ce que la page elle-même conteste");
+    expect(footprint).toMatch(/sous-familles/i);
+    expect(footprint).not.toMatch(/calculée|agrégat|union|tireté/i);
     expect(container.textContent).toContain("peuples que la fiche nomme");
-    expect(screen.getByText(/sous-familles/i)).toBeInTheDocument();
     expect(container.textContent).not.toContain("rattachés à cette famille");
     expect(container.querySelector("code")).toBeNull();
   });

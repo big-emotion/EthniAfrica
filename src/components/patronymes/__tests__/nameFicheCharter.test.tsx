@@ -156,7 +156,9 @@ describe("name fiche charter — the corpus explains its own silences", () => {
     // Present on 30 dossiers out of 30, rendered on none: the view read
     // `attestedForms`, a key no model and no dossier has ever carried.
     expect(screen.getByText("Camara")).toBeInTheDocument();
-    expect(screen.getByText(/attestée en\s+LBR, SLE/)).toBeInTheDocument();
+    expect(
+      screen.getByText(/attestée dans ces pays : Liberia, Sierra Leone/)
+    ).toBeInTheDocument();
   });
 
   // @req REQ-133
