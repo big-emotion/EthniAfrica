@@ -12,6 +12,7 @@
 import { createServerClient } from "../../server";
 import { logger } from "@/lib/api/logger";
 import { normaliseSearchQuery } from "@/lib/search/queryNormalisation";
+import { findWordAnswer } from "@/lib/productions/wordAnswer";
 import { getAfrikPeoplesByIds } from "./peoples";
 import type {
   FtsSearchParams,
@@ -222,7 +223,6 @@ async function rankAttempt(
   const peoplePayload = asRankedPayload(peopleResult.data);
   const countryPayload = asRankedPayload(countryResult.data);
   const personPayload = asRankedPayload(personResult.data);
-  const patronymePayload = asRankedPayload(patronymeResult.data);
   const familyPayload = asRankedPayload(familyResult.data);
   const quizPayload = asRankedPayload(quizResult.data);
   const languagePayload = asRankedPayload(languageResult.data);
@@ -251,12 +251,19 @@ async function rankAttempt(
   const persons = personPayload.rows.map((row) =>
     toRankedPerson(row, personPeopleLinksById.get(row.id as string) ?? [])
   );
-  const patronymes = await withAssociatedPeoples(
-    patronymePayload.rows.map(toRankedPatronyme)
-  );
   const languages = languagePayload.rows.map(toRankedLanguage);
   const places = placePayload.rows.map(toRankedPlace);
   const words = wordPayload.rows.map(toRankedWord);
+  const patronymePayload = await withoutSoundAlikes(
+    supabase,
+    params,
+    text,
+    asRankedPayload(patronymeResult.data),
+    [peoples, countries, families, persons, languages, places, words].flat()
+  );
+  const patronymes = await withAssociatedPeoples(
+    patronymePayload.rows.map(toRankedPatronyme)
+  );
 
   const total =
     peoplePayload.total +
@@ -303,6 +310,75 @@ async function rankAttempt(
     leads: [],
     nearNames: [],
   };
+}
+
+/**
+ * REQ-201: a family name tied to the query by its phonetic key alone — Bell
+ * for « peul » — is offered only when nothing answers the query exactly. The
+ * SQL drops those rows before its count and its page (migration 108), and
+ * already sees an exact name in its own table; what it cannot see is an exact
+ * answer in another kind, which this asks it to honour.
+ *
+ * The first, unflagged call stays in the parallel batch, so a search with no
+ * name, or no exact answer, pays nothing more. The flag is sent only when true:
+ * a database without migration 108 answers it PGRST202, and the reader then
+ * keeps the answer the search gave before rather than an error.
+ */
+async function withoutSoundAlikes(
+  supabase: ReturnType<typeof createServerClient>,
+  params: FtsSearchParams,
+  text: string,
+  patronymes: RankedPayload,
+  otherKinds: { exactMatch: boolean }[]
+): Promise<RankedPayload> {
+  if (patronymes.total === 0) return patronymes;
+  if (!(await answeredExactlyElsewhere(supabase, params, text, otherKinds))) {
+    return patronymes;
+  }
+
+  const { data, error } = await supabase.rpc("afrik_search_patronymes", {
+    p_q: text,
+    p_limit: params.limit,
+    p_offset: params.offset,
+    p_exact_elsewhere: true,
+  });
+  if (isMissingFunction(error)) return patronymes;
+  if (error) {
+    logger.error("Error in ranked patronymes search", error);
+    throw error;
+  }
+  return asRankedPayload(data);
+}
+
+async function answeredExactlyElsewhere(
+  supabase: ReturnType<typeof createServerClient>,
+  params: FtsSearchParams,
+  text: string,
+  otherKinds: { exactMatch: boolean }[]
+): Promise<boolean> {
+  if (otherKinds.some((hit) => hit.exactMatch)) return true;
+  // A published word answers its query on the page even with no fiche.
+  if (findWordAnswer(text).length > 0) return true;
+  // Every kind ranks its exact rows first, so past the first page they are
+  // out of sight. Asking the first page again keeps page two consistent with
+  // page one; the site never pages, only API callers do.
+  if (!params.offset) return false;
+  const firstPage = await rankAttempt(
+    supabase,
+    { ...params, offset: 0, limit: 1 },
+    text
+  );
+  return [
+    firstPage.peoples,
+    firstPage.countries,
+    firstPage.families,
+    firstPage.persons,
+    firstPage.languages,
+    firstPage.places ?? [],
+    firstPage.words ?? [],
+  ]
+    .flat()
+    .some((hit) => hit.exactMatch);
 }
 
 // @req REQ-002
