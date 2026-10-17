@@ -1,4 +1,4 @@
-import { cleanup, render, screen } from "@testing-library/react";
+import { cleanup, render, screen, within } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
 
 import { CountryRecordView } from "@/components/country/CountryRecordView";
@@ -135,5 +135,63 @@ describe("CountryRecordView — the names of a country and the end of its fiche"
     expect(
       story!.compareDocumentPosition(note!) & Node.DOCUMENT_POSITION_FOLLOWING
     ).toBeTruthy();
+  });
+});
+
+// Brief 10 §1, approved 2026-10-17: docs/design/mockups/site/country-*.dc.html.
+describe("CountryRecordView — the link to the story of its name", () => {
+  // @req REQ-198
+  it("holds in « En bref » the link to Côte d'Ivoire, after the lead and « Lire la suite », before the names", () => {
+    const { container } = render(
+      <CountryRecordView country={countryRecord("CIV")} language="fr" />
+    );
+
+    const brief = container.querySelector(
+      '[data-fiche-section="En bref"]'
+    ) as HTMLElement;
+    const link = within(brief).getByRole("link", {
+      name: /^Suivre l'histoire du nom Côte d'Ivoire/,
+    });
+    expect(link).toHaveAttribute(
+      "href",
+      "/fr/atlas/recherche?q=C%C3%B4te+d%27Ivoire"
+    );
+    expect(screen.getByTestId("name-story-lead").textContent).toBe(
+      "Le nom Côte d'Ivoire renvoie au commerce de l'ivoire pratiqué le long du littoral."
+    );
+    const readMore = brief.querySelector("[data-name-story-more]") as Node;
+    const firstRow = brief.querySelector(
+      '[data-testid="name-story-form"]'
+    ) as Node;
+    expect(
+      readMore.compareDocumentPosition(link) & Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+    expect(
+      link.compareDocumentPosition(firstRow) & Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+  });
+
+  // @req REQ-198
+  it("names Gabon and Congo on their own fiches", () => {
+    render(<CountryRecordView country={countryRecord("GAB")} language="fr" />);
+    expect(
+      screen.getByRole("link", { name: /^Suivre l'histoire du nom Gabon/ })
+    ).toHaveAttribute("href", "/fr/atlas/recherche?q=Gabon");
+    cleanup();
+
+    render(<CountryRecordView country={countryRecord("COG")} language="fr" />);
+    expect(
+      screen.getByRole("link", { name: /^Suivre l'histoire du nom Congo/ })
+    ).toHaveAttribute("href", "/fr/atlas/recherche?q=Congo");
+  });
+
+  // @req REQ-198
+  it("draws no link on a country without a name story", () => {
+    const { nameHistory: _none, ...withoutHistory } = countryRecord("CIV");
+    render(<CountryRecordView country={withoutHistory} language="fr" />);
+
+    expect(
+      screen.queryByRole("link", { name: /Suivre l'histoire du nom/ })
+    ).toBeNull();
   });
 });

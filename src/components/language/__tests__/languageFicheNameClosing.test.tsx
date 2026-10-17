@@ -184,3 +184,68 @@ describe("LanguageDetailViewV2 — the language fiche of brief 3", () => {
     );
   });
 });
+
+// Brief 10 §1, approved 2026-10-17: docs/design/mockups/site/language-*.dc.html.
+describe("LanguageDetailViewV2 — the link to the story of its name", () => {
+  // @req REQ-198
+  it("ends « L’histoire des noms » with the link, after the explanations, before « Les sources parlent »", () => {
+    const { container } = render(
+      <LanguageDetailViewV2 data={lingala} language="fr" />
+    );
+
+    const chapter = container.querySelector(
+      '[data-fiche-section="L’histoire des noms"]'
+    ) as HTMLElement;
+    const link = within(chapter).getByRole("link", {
+      name: /^Suivre l'histoire du nom Lingala/,
+    });
+    expect(link).toHaveAttribute("href", "/fr/atlas/recherche?q=Lingala");
+    expect(chapter.lastElementChild).toBe(link.closest(".ea-story"));
+    const readings = chapter.querySelector("[data-readings]") as Node;
+    expect(
+      readings.compareDocumentPosition(link) & Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+    const sources = container.querySelector("[data-name-sources]") as Node;
+    expect(
+      link.compareDocumentPosition(sources) & Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+  });
+
+  // @req REQ-198
+  it("spells the name as its story does, Kihavu and not the h1's Havu", () => {
+    const havu: LanguagePageData = {
+      ...lingala,
+      id: "hav",
+      name: "Havu",
+      isoCode639_3: "hav",
+      nameEn: "Havu",
+      alternateNames: ["Kihavu", "Haavu"],
+      nameHistory: {
+        summary: "Le nom kihavu désigne la langue des Havu.",
+        names: [
+          { ...LINGALA.names[0], nameText: "Kihavu", accounts: [] },
+          { ...LINGALA.names[0], nameText: "Haavu", accounts: [] },
+        ],
+      } as NameHistory,
+    };
+    render(<LanguageDetailViewV2 data={havu} language="fr" />);
+
+    expect(
+      screen.getByRole("link", { name: /^Suivre l'histoire du nom Kihavu/ })
+    ).toHaveAttribute("href", "/fr/atlas/recherche?q=Kihavu");
+  });
+
+  // @req REQ-198
+  it("draws no link on a fiche without a name story", () => {
+    render(
+      <LanguageDetailViewV2
+        data={{ ...lingala, nameHistory: null }}
+        language="fr"
+      />
+    );
+
+    expect(
+      screen.queryByRole("link", { name: /Suivre l'histoire du nom/ })
+    ).toBeNull();
+  });
+});

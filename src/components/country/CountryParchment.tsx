@@ -17,6 +17,7 @@ import { countryChronology } from "@/lib/fiche/chronology";
 import { FicheAmendBand } from "@/components/fiche/FicheAmendBand";
 import { FicheTile } from "@/components/fiche/FicheTile";
 import { FicheNameStory } from "@/components/fiche/FicheNameStory";
+import { FicheStoryLink } from "@/components/fiche/FicheStoryLink";
 import { readNaming, type NamingPresentationForm } from "@/lib/search/naming";
 import {
   competingReadings,
@@ -200,6 +201,13 @@ export function CountryParchment({
           naming={naming}
           foldedReadings={foldedReadings}
           language={language}
+          storyLink={
+            <FicheStoryLink
+              history={history}
+              from="country"
+              language={language}
+            />
+          }
         >
           {sharedName ? (
             <p

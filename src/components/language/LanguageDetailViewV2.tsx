@@ -6,6 +6,7 @@ import Link from "next/link";
 import type { LanguagePageData } from "@/lib/languageDataTransformer";
 import { getFamilyRoute, getPeopleRoute } from "@/lib/routing";
 import { FicheNameStory } from "@/components/fiche/FicheNameStory";
+import { FicheStoryLink } from "@/components/fiche/FicheStoryLink";
 import { FicheSection } from "@/components/fiche/FicheSection";
 import { formKey, readNaming } from "@/lib/search/naming";
 import { FieldProvenanceMarker } from "@/components/fiche/FieldProvenanceMarker";
@@ -121,6 +122,7 @@ export function LanguageDetailViewV2({
         {history ? (
           <FicheNameReadings history={history} language={language} />
         ) : null}
+        <FicheStoryLink history={history} from="language" language={language} />
       </FicheNameStory>
 
       {history ? (

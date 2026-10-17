@@ -28,6 +28,7 @@ import { FicheNamesChapter } from "@/components/fiche/FicheNamesChapter";
 import { PeopleFieldExplainer } from "@/components/people/PeopleFieldExplainer";
 import { FicheAmendBand } from "@/components/fiche/FicheAmendBand";
 import { FicheSection } from "@/components/fiche/FicheSection";
+import { FicheStoryLink } from "@/components/fiche/FicheStoryLink";
 import {
   NameAnswerCard,
   OtherNamesList,
@@ -244,6 +245,11 @@ export function PeopleDetailViewV2({
         ) : (
           <FieldProvenanceMarker state="missing" language={language} />
         )}
+        <FicheStoryLink
+          history={nameHistory}
+          from="people"
+          language={language}
+        />
       </FicheSection>
 
       {nameAnswer.others.length > 0 && (

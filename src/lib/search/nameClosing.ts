@@ -1,6 +1,7 @@
 import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
 import { normalizeString } from "@/lib/normalize";
+import { getLocalizedRoute } from "@/lib/routing";
 import type {
   NameHistoryAccount,
   TimelineName,
@@ -316,4 +317,18 @@ export function nameFormOf(
   return toldPart
     ? told.get(normalizeString(toldPart))
     : (parts[0] ?? filedLabel);
+}
+
+/**
+ * Where a fiche's « Suivre l'histoire du nom … » leads (brief 10 §1): the
+ * reading a reader gets by searching that name, with no parameter picking a
+ * subject, so « Congo » opens the page where both countries answer.
+ *
+ * One function on purpose. PR #1820 (ETNI-2044) gives each answered name its
+ * own address, `/fr/atlas/recherche/<nom>`; whichever of the two merges second
+ * swaps this body for that address, and the fiche tests follow through it.
+ */
+// @req REQ-198
+export function nameStoryHref(language: Language, name: string): string {
+  return `${getLocalizedRoute(language, "search")}?${new URLSearchParams({ q: name })}`;
 }

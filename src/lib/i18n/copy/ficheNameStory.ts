@@ -16,6 +16,9 @@ export interface FicheNameStoryCopy {
   /** The count on a name row that folds its competing readings (brief 5). */
   explanations: (count: number) => string;
   imposedBy: string;
+  /** The fiche's link to the result page of its leading name (brief 10 §1). */
+  storyLink: (name: string) => string;
+  storyLinkHint: string;
 }
 
 // @req REQ-151
@@ -28,5 +31,8 @@ export const ficheNameStoryCopy: Record<Language, FicheNameStoryCopy> = {
     moreForms: (count) => `+${count} ${count === 1 ? "autre" : "autres"}`,
     explanations: (count) => `${count}\u00a0explications`,
     imposedBy: "Donné par",
+    storyLink: (name) => `Suivre l'histoire du nom ${name}`,
+    storyLinkHint:
+      "La page du nom présente ce que disent les sources : qui l'a donné, à qui, quand et pourquoi, en remontant le temps.",
   },
 };
