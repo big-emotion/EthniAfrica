@@ -34,7 +34,9 @@
  *       Named persons (migration 065, REQ-126) and names
  *       (patronymes — migration 066, REQ-135) rank the same way, with
  *       patronymes additionally folding in a dmetaphone phonetic match so a
- *       misspelling like "Keyta" still reaches the canonical "Keïta". Both
+ *       misspelling like "Keyta" still reaches the canonical "Keïta" —
+ *       offered only when nothing answers the query exactly (migration 108,
+ *       REQ-201). Both
  *       fall back to pg_trgm typo tolerance ahead of a no-match. Languages
  *       (migration 068, REQ-136) rank the same prefix/accent-insensitive way,
  *       with an exact-match bonus that also fires on the ISO 639-3 id — a
