@@ -1,9 +1,11 @@
-import { FALLBACK_SEED_WORDS } from "@/lib/home/seedWords";
+import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
+import { normalizeString } from "@/lib/normalize";
 import type {
   NameHistoryAccount,
   TimelineName,
 } from "@/lib/search/nameTimeline";
+import { answersToSearch } from "@/lib/search/searchedName";
 import {
   SOURCE_KIND_FAMILIES,
   sourceKindFamily,
@@ -178,7 +180,16 @@ export function deduceSilences(
   return [...new Set(lines)];
 }
 
-export type NextStepRelation = "family" | "people";
+/**
+ * What a card's target is to the page, as analytics records it: a machine
+ * value, never the French eyebrow, so one Plausible property holds one
+ * vocabulary. The kinds a fiche links (`NextStepKind`), plus `namer` (the
+ * language a searched outside name comes from) and `seed` (an unknown name's
+ * invitation to read a name the project does know).
+ */
+export type NextStepKind =
+  "family" | "patronyme" | "country" | "people" | "language" | "place";
+export type NextStepRelation = NextStepKind | "namer" | "seed";
 
 export interface NextStepTarget {
   type: SearchEntityType;
@@ -188,23 +199,68 @@ export interface NextStepTarget {
 }
 
 /**
- * One or two names the data already links to the page's subjects: a people's
- * or a language's family, a family name's peoples. Never a subject of the
- * page itself, never more than two (brief 1, block 8).
+ * The next step of a name the project does not know (brief 1 decision 3,
+ * boards search-unknown-*): nothing is related to it, so the page invites the
+ * reader to a people and a country whose names it does tell.
+ */
+const UNKNOWN_NAME_TARGETS: readonly NextStepTarget[] = [
+  { type: "people", id: "PPL_SIWI", name: "Siwi", relation: "seed" },
+  { type: "country", id: "TCD", name: "Tchad", relation: "seed" },
+];
+
+type SubjectHistory = { subject: SearchResult; nameHistory: NameHistory };
+
+/**
+ * The language the searched name comes from, when others gave it: not a
+ * self-name, and not from a language the subject names itself in (or is).
+ */
+function namerOf(
+  { subject, nameHistory }: SubjectHistory,
+  searched: string
+): NextStepTarget | null {
+  const name = nameHistory.names.find((candidate) =>
+    answersToSearch(candidate.nameText, searched)
+  );
+  const origin = name?.languageOfOrigin;
+  if (!origin || name.selfGiven) return null;
+  const own = new Set([
+    subject.id,
+    subject.isoCode639_3,
+    ...nameHistory.names
+      .filter((candidate) => candidate.selfGiven)
+      .map((candidate) => candidate.languageOfOrigin),
+  ]);
+  if (own.has(origin)) return null;
+  // The name is the code until the loader reads the language's fiche.
+  return { type: "language", id: origin, name: origin, relation: "namer" };
+}
+
+/**
+ * One or two names the data already links to the page's subjects: the
+ * language a searched outside name comes from (« Peul », from Wolof), a
+ * people's or a language's family, a family name's peoples. Never a subject
+ * of the page itself, never more than two (brief 1, block 8). A page with no
+ * subject is offered the unknown name's two invitations.
  */
 // @req REQ-198
 export function nextStepTargets(
   subjects: readonly SearchResult[],
+  histories: readonly SubjectHistory[] = [],
+  searched = "",
   limit = 2
 ): NextStepTarget[] {
+  if (subjects.length === 0) return UNKNOWN_NAME_TARGETS.slice(0, limit);
   const onPage = new Set(subjects.map((subject) => subject.id));
   const targets: NextStepTarget[] = [];
-  const add = (target: NextStepTarget) => {
+  const add = (target: NextStepTarget | null) => {
+    if (!target) return;
     if (onPage.has(target.id)) return;
     if (targets.some((known) => known.id === target.id)) return;
     targets.push(target);
   };
   for (const subject of subjects) {
+    const history = histories.find((entry) => entry.subject === subject);
+    if (history) add(namerOf(history, searched));
     if (
       (subject.type === "people" || subject.type === "language") &&
       subject.languageFamilyId &&
@@ -231,33 +287,33 @@ export function nextStepTargets(
   return targets.slice(0, limit);
 }
 
-/** A card of the next step: the relation as eyebrow, the name, the reason. */
+/** A card of the next step: the kind as eyebrow, the name, the reason. */
 export interface NextStepCard {
+  relation: NextStepRelation;
   kind: string;
   name: string;
   reason: string;
 }
 
 /**
- * The next step of a page with no subject (an unknown name): two of the
- * home's seed names, a people and a country, with a plain reason. Nothing is
- * related to a name the atlas does not know, so the step is an invitation to
- * read one it does.
+ * The name a card shows and searches. A filed label is a workshop label
+ * (« Songhay / Sonrai », « Lingala (locuteurs) »): put in `?q=` as is, it is
+ * a name no reader types. Its first part that the target's own history tells
+ * is kept, spelled as the history spells it; otherwise its lead part. A
+ * plain name stays whole.
  */
 // @req REQ-198
-export function seedNextSteps(language: Language = "fr"): NextStepCard[] {
-  const copy = nameClosingCopy[language];
-  const seeds = FALLBACK_SEED_WORDS[language];
-  return [
-    {
-      kind: copy.nextRelation.seed.people,
-      name: seeds.people[0],
-      reason: copy.seedReason.people,
-    },
-    {
-      kind: copy.nextRelation.seed.country,
-      name: seeds.country[0],
-      reason: copy.seedReason.country,
-    },
-  ];
+export function nameFormOf(
+  filedLabel: string,
+  toldNames: readonly string[] = []
+): string {
+  const parts = filedLabel
+    .split(/\s*[()/]\s*/)
+    .map((part) => part.trim())
+    .filter(Boolean);
+  const told = new Map(toldNames.map((name) => [normalizeString(name), name]));
+  const toldPart = parts.find((part) => told.has(normalizeString(part)));
+  return toldPart
+    ? told.get(normalizeString(toldPart))
+    : (parts[0] ?? filedLabel);
 }

@@ -5,6 +5,7 @@ import { describe, expect, it, vi } from "vitest";
 import type { SearchCompanionsData } from "@/api/v2/schemas/searchCompanions";
 import { SearchFeed } from "@/components/search/SearchFeed";
 import { getFamilyRoute } from "@/lib/routing";
+import { ANSWER_FIXTURES } from "@/lib/search/__fixtures__/answerFixtures";
 import { FEED_CASES } from "@/lib/search/__fixtures__/feedCases";
 import type { SearchResult } from "@/types/afrik-frontend";
 
@@ -506,6 +507,51 @@ describe("SearchFeed", () => {
     expect(
       forms.findIndex((form) => form.includes("Fula (Fulbe / Peul)"))
     ).toBeGreaterThan(1);
+  });
+
+  // Doctrine §1.1: where the reader searched, the searched form comes first.
+  // The filed label « Fula (Fulbe / Peul) » titled the « Tout » answer and
+  // every lens, whatever form the reader had typed.
+  // @req REQ-180
+  it("titles the answer and the lenses with the form the reader searched", async () => {
+    const fula = (query: string) => {
+      const result = namedResult({
+        type: "people",
+        id: "PPL_FULA",
+        name: "Fula (Fulbe / Peul)",
+        answer: {
+          ...ANSWER_FIXTURES.peul.answers[0],
+          title: "Fula (Fulbe / Peul)",
+        },
+      });
+      return render(
+        <SearchFeed
+          query={query}
+          language="fr"
+          state="exact"
+          results={[result]}
+          subjects={[result]}
+          leads={[]}
+          companions={emptyCompanions}
+        />
+      );
+    };
+
+    const fulani = fula("fulani");
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
+      /^Fulani$/
+    );
+    await userEvent.click(screen.getByRole("button", { name: /Fiches/ }));
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
+      "Fiches sur Fulani"
+    );
+    fulani.unmount();
+
+    fula("peul");
+    await userEvent.click(screen.getByRole("button", { name: /Fiches/ }));
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
+      "Fiches sur Peul"
+    );
   });
 
   // @req REQ-180

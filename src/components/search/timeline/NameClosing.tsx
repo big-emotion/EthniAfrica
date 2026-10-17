@@ -6,6 +6,7 @@ import { Fragment, useId } from "react";
 import type { FlagFormTarget } from "@/components/flags/FlagForm";
 import { Badge as NameBadgeChip } from "@/components/names/NameAnswerCard";
 import { SearchFeedContributionAction } from "@/components/search/feed/SearchFeedContributionAction";
+import { trackEvent } from "@/lib/analytics/trackEvent";
 import { sourceKindLabel } from "@/lib/glossaire/vocabularies";
 import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
 import { nameTimelineCopy } from "@/lib/i18n/copy/nameTimeline";
@@ -31,6 +32,7 @@ import {
 import type { SourceKindFamily } from "@/lib/sources/sourceKindFamily";
 import { cn } from "@/lib/utils";
 import type { SearchEntityType } from "@/types/afrik-frontend";
+import type { FicheEntityType } from "@/types/fiche";
 import type { Language } from "@/types/shared";
 import type { SourceKind } from "@/types/sources";
 
@@ -592,14 +594,27 @@ export function NameClosingBand({
   );
 }
 
-/** Block 8: one or two names to read next, each with the reason it is offered. */
+/**
+ * Block 8: one or two names to read next, each with the reason it is offered.
+ *
+ * A click is counted one of two ways. A fiche route is a server component and
+ * cannot hand down a callback, so it names the fiche (`trackFrom`) and the
+ * block records `fiche:related_click` itself, as FicheOnward did before it.
+ * The result page passes `onNavigate` and counts the click with its other
+ * result clicks.
+ */
 // @req REQ-198
+// @req REQ-046
 export function NameNextStep({
   cards,
   language,
+  trackFrom,
+  onNavigate,
 }: {
   cards: readonly NextStepCard[];
   language: Language;
+  trackFrom?: FicheEntityType;
+  onNavigate?: (card: NextStepCard, rank: number) => void;
 }) {
   const copy = nameClosingCopy[language];
   if (cards.length === 0) return null;
@@ -614,10 +629,19 @@ export function NameNextStep({
         {copy.nextTitle}
       </h2>
       <div className="grid grid-cols-1 gap-afh-lg md:grid-cols-2">
-        {cards.map((card) => (
+        {cards.map((card, index) => (
           <Link
             key={card.name}
             href={`${searchRoute}?${new URLSearchParams({ q: card.name })}`}
+            onClick={() => {
+              if (trackFrom) {
+                trackEvent("fiche:related_click", {
+                  from: trackFrom,
+                  to: card.relation,
+                });
+              }
+              onNavigate?.(card, index + 1);
+            }}
             className="flex min-h-11 flex-col gap-afh-sm rounded-afh-lg border border-afh-border bg-afh-surface p-afh-2xl text-afh-text no-underline focus-visible:outline-none focus-visible:shadow-afh-focus"
           >
             <span

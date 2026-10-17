@@ -22,10 +22,12 @@ import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
 import {
   firstSentence,
+  nameFormOf,
   nextStepTargets,
-  seedNextSteps,
   type NextStepCard,
+  type NextStepKind,
 } from "@/lib/search/nameClosing";
+import { normalizeString } from "@/lib/normalize";
 import type { Language } from "@/types/shared";
 
 import {
@@ -299,68 +301,144 @@ const FICHE_ENDPOINTS: Partial<Record<SearchEntityType, string>> = {
   patronyme: "patronymes",
 };
 
-async function loadNameHistory(
-  subject: SearchResult,
+/** A fiche as its `/api/v2` endpoint serves it, or null when it does not. */
+async function loadFicheData(
+  type: SearchEntityType,
+  id: string,
   signal?: AbortSignal
-): Promise<{ subject: SearchResult; nameHistory: NameHistory } | null> {
-  const endpoint = FICHE_ENDPOINTS[subject.type];
+): Promise<Record<string, unknown> | null> {
+  const endpoint = FICHE_ENDPOINTS[type];
   if (!endpoint) return null;
   try {
     const response = await fetchWithSignal(
-      `${API_BASE}/${endpoint}/${encodeURIComponent(subject.id)}`,
+      `${API_BASE}/${endpoint}/${encodeURIComponent(id)}`,
       signal
     );
     if (!response.ok) return null;
     const envelope = (await response.json()) as {
-      data?: { nameHistory?: unknown };
+      data?: Record<string, unknown>;
     };
-    if (envelope.data?.nameHistory === undefined) return null;
-    const parsed = parseNameHistory(envelope.data.nameHistory);
-    return parsed.success ? { subject, nameHistory: parsed.data! } : null;
+    return envelope.data ?? null;
   } catch (error) {
     if (isAbortError(error)) throw error;
-    logger.warn("afrikLoader.loadNameHistory failed", {
-      type: subject.type,
-      id: subject.id,
-    });
+    logger.warn("afrikLoader.loadFicheData failed", { type, id });
     return null;
   }
+}
+
+function readNameHistory(
+  fiche: Record<string, unknown> | null
+): NameHistory | null {
+  if (fiche?.nameHistory === undefined) return null;
+  const parsed = parseNameHistory(fiche.nameHistory);
+  return parsed.success ? parsed.data! : null;
+}
+
+async function loadNameHistory(
+  subject: SearchResult,
+  signal?: AbortSignal
+): Promise<{ subject: SearchResult; nameHistory: NameHistory } | null> {
+  const nameHistory = readNameHistory(
+    await loadFicheData(subject.type, subject.id, signal)
+  );
+  return nameHistory ? { subject, nameHistory } : null;
+}
+
+/** The label a card's target takes, by what it is. */
+const NEXT_STEP_KIND: Partial<Record<SearchEntityType, NextStepKind>> = {
+  people: "people",
+  country: "country",
+  language: "language",
+  languageFamily: "family",
+  patronyme: "patronyme",
+  place: "place",
+};
+
+interface ResolvedTarget {
+  type: SearchEntityType;
+  name: string;
+  nameHistory: NameHistory | null;
+}
+
+/**
+ * What a namer card stands for. Brief 1 draws « Peuple · Wolof » for Peul: a
+ * name given in a language is given by the people who speak it, so the card
+ * leads to the people that bears the language's name. A language no people
+ * is named after stays the card itself (« Langue »).
+ */
+async function resolveNamer(
+  fiche: Record<string, unknown>,
+  signal?: AbortSignal
+): Promise<ResolvedTarget> {
+  const name = String(fiche.name ?? "");
+  const language: ResolvedTarget = {
+    type: "language",
+    name,
+    nameHistory: readNameHistory(fiche),
+  };
+  const speakers = Array.isArray(fiche.speakingPeoples)
+    ? (fiche.speakingPeoples as Array<{ id: string; name: string }>)
+    : [];
+  const people = speakers.find(
+    (speaker) => normalizeString(speaker.name) === normalizeString(name)
+  );
+  if (!people) return language;
+  const nameHistory = readNameHistory(
+    await loadFicheData("people", people.id, signal)
+  );
+  return nameHistory?.summary
+    ? { type: "people", name: people.name, nameHistory }
+    : language;
 }
 
 /**
  * The names a page offers next (brief 1, block 8): the ones its subjects'
  * data already links to, each with the first sentence of its own summary as
- * the reason. A target whose name history does not load is left out; a page
- * with no subject offers two seed names instead.
+ * the reason. A target whose fiche does not load, or has no summary, is left
+ * out; a page with no subject offers the unknown name's two invitations.
  */
 // @req REQ-198
 export async function loadNextSteps(
   subjects: readonly SearchResult[],
   language: Language,
-  signal?: AbortSignal
+  signal?: AbortSignal,
+  histories: ReadonlyArray<{
+    subject: SearchResult;
+    nameHistory: NameHistory;
+  }> = [],
+  searched = ""
 ): Promise<NextStepCard[]> {
-  if (subjects.length === 0) return seedNextSteps(language);
-  const copy = nameClosingCopy[language];
-  const targets = nextStepTargets(subjects);
-  const histories = await Promise.all(
-    targets.map((target) =>
-      loadNameHistory(
-        { type: target.type, id: target.id, name: target.name },
-        signal
-      )
-    )
+  const kinds = nameClosingCopy[language].nextRelation;
+  const targets = nextStepTargets(subjects, histories, searched);
+  const resolved = await Promise.all(
+    targets.map(async (target): Promise<ResolvedTarget | null> => {
+      const fiche = await loadFicheData(target.type, target.id, signal);
+      if (!fiche) return null;
+      return target.relation === "namer"
+        ? resolveNamer(fiche, signal)
+        : {
+            type: target.type,
+            name: target.name,
+            nameHistory: readNameHistory(fiche),
+          };
+    })
   );
   return targets.flatMap((target, index) => {
-    const summary = histories[index]?.nameHistory.summary;
-    return summary
-      ? [
-          {
-            kind: copy.nextRelation[target.relation],
-            name: target.name,
-            reason: firstSentence(summary),
-          },
-        ]
-      : [];
+    const entry = resolved[index];
+    const summary = entry?.nameHistory?.summary;
+    const kind = entry && NEXT_STEP_KIND[entry.type];
+    if (!summary || !kind) return [];
+    return [
+      {
+        relation: target.relation,
+        kind: kinds[kind],
+        name: nameFormOf(
+          entry.name,
+          entry.nameHistory.names.map((name) => name.nameText)
+        ),
+        reason: firstSentence(summary),
+      },
+    ];
   });
 }
 

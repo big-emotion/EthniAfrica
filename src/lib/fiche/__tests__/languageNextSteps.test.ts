@@ -32,11 +32,13 @@ describe("loadLanguageNextSteps — « Poursuivre avec un autre nom » on a lang
 
     expect(cards).toEqual([
       {
+        relation: "family",
         kind: "Famille de langues",
         name: "Bantou",
         reason: "Le nom bantou désigne une famille de langues.",
       },
       {
+        relation: "people",
         kind: "Peuple",
         name: "Havu",
         reason: "Le nom Havu désigne un peuple.",

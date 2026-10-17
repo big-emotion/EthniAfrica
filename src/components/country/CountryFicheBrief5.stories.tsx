@@ -56,8 +56,18 @@ export const CoteDIvoire: Story = {
     onward: (
       <NameNextStep
         cards={[
-          { kind: "Peuple", name: "Akan", reason: reason(akan) },
-          { kind: "Lieu", name: "Daloa", reason: reason(daloa) },
+          {
+            relation: "people",
+            kind: "Peuple",
+            name: "Akan",
+            reason: reason(akan),
+          },
+          {
+            relation: "place",
+            kind: "Lieu",
+            name: "Daloa",
+            reason: reason(daloa),
+          },
         ]}
         language="fr"
       />
@@ -73,8 +83,18 @@ export const Gabon: Story = {
     onward: (
       <NameNextStep
         cards={[
-          { kind: "Peuple", name: "Fang", reason: reason(fang) },
-          { kind: "Peuple", name: "Punu", reason: reason(punu) },
+          {
+            relation: "people",
+            kind: "Peuple",
+            name: "Fang",
+            reason: reason(fang),
+          },
+          {
+            relation: "people",
+            kind: "Peuple",
+            name: "Punu",
+            reason: reason(punu),
+          },
         ]}
         language="fr"
       />
@@ -96,11 +116,17 @@ export const Congo: Story = {
       <NameNextStep
         cards={[
           {
+            relation: "country",
             kind: "Pays",
             name: "République démocratique du Congo",
             reason: reason(cod),
           },
-          { kind: "Peuple", name: "Kongo", reason: reason(kongo) },
+          {
+            relation: "people",
+            kind: "Peuple",
+            name: "Kongo",
+            reason: reason(kongo),
+          },
         ]}
         language="fr"
       />

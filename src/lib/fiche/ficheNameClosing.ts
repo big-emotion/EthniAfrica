@@ -2,8 +2,10 @@ import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
 import {
   firstSentence,
+  nameFormOf,
   traditionReporters,
   type NextStepCard,
+  type NextStepKind,
 } from "@/lib/search/nameClosing";
 import { sourceKindFamily } from "@/lib/sources/sourceKindFamily";
 import type { SearchEntityType } from "@/types/afrik-frontend";
@@ -136,9 +138,12 @@ export function undatedReadingsSilences(
 
 /** A name the fiche links, with the summary of its own fiche when it has one. */
 export interface FicheNextCandidate {
-  kind: string;
+  relation: NextStepKind;
+  /** Its filed name, as the linking fiche lists it. */
   name: string;
   summary?: string | null;
+  /** The names its own history tells, so the card searches one of them. */
+  names?: readonly string[];
 }
 
 /**
@@ -149,18 +154,30 @@ export interface FicheNextCandidate {
 // @req REQ-198
 export function ficheNextSteps(
   candidates: readonly FicheNextCandidate[],
-  limit = 2
+  limit = 2,
+  language: Language = "fr"
 ): NextStepCard[] {
+  const kinds = nameClosingCopy[language].nextRelation;
   const cards: NextStepCard[] = [];
   for (const candidate of candidates) {
     if (cards.length === limit) break;
     if (!candidate.summary?.trim()) continue;
-    if (cards.some((card) => card.name === candidate.name)) continue;
+    const name = nameFormOf(candidate.name, candidate.names);
+    if (cards.some((card) => card.name === name)) continue;
     cards.push({
-      kind: candidate.kind,
-      name: candidate.name,
+      relation: candidate.relation,
+      kind: kinds[candidate.relation],
+      name,
       reason: firstSentence(candidate.summary),
     });
   }
   return cards;
+}
+
+/** The names a loaded fiche's history tells, for `FicheNextCandidate.names`. */
+// @req REQ-198
+export function toldNames(
+  fiche: { nameHistory?: NameHistory | null } | null | undefined
+): string[] {
+  return fiche?.nameHistory?.names?.map((name) => name.nameText) ?? [];
 }

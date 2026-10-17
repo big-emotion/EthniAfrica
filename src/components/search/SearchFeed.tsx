@@ -62,7 +62,7 @@ import {
   type FeedLensId,
 } from "@/lib/search/searchLenses";
 import { getLocalizedSearchResultName } from "@/lib/search/localizedResult";
-import { orderForSearch } from "@/lib/search/searchedName";
+import { orderForSearch, searchedFormIn } from "@/lib/search/searchedName";
 import type { SearchFeedPresentation } from "@/lib/search/searchFeedPresentation";
 import type {
   SearchLead,
@@ -122,6 +122,10 @@ export interface SearchFeedProps {
    * served: a click from the answer or the timeline is not a pick from a
    * list, and filing both under one name hid whether the page answered in
    * place. Absent, the caller's own surface applies (the list rows).
+   *
+   * On `next`, a card of « Poursuivre avec un autre nom », `type` is why
+   * the card was offered (`namer`, `family`, `seed`…), the question that
+   * surface exists to answer.
    */
   onResultNavigate?: (
     type: string,
@@ -130,7 +134,7 @@ export interface SearchFeedProps {
   ) => void;
 }
 
-export type SearchFeedSurface = "answer" | "timeline";
+export type SearchFeedSurface = "answer" | "timeline" | "next";
 
 export interface SubjectNameHistory {
   subject: SearchResult;
@@ -346,6 +350,13 @@ export function SearchFeed({
         : undefined;
   const opening = resolveNameOpening({ query, subjects, nameAnswers });
   const answered = subjects.filter((subject) => subject.answer);
+  // Where the reader searched, the form they typed titles a lone answer and
+  // its lenses, not the filed label (doctrine §1.1): « Fulani », never
+  // « Fula (Fulbe / Peul) ».
+  const lone = answered.length === 1 ? answered[0] : undefined;
+  const loneTitle = lone
+    ? (searchedFormIn(lone.answer!.names, query) ?? lone.answer!.title)
+    : undefined;
   // A published word is answered by its record. This precedes the confession
   // on purpose: « pharaon » reaches no fiche, and « Nous ne connaissons pas ce
   // nom » would deny the piece we made on it. A fiche that does answer keeps
@@ -357,8 +368,8 @@ export function SearchFeed({
     opening.title ??
     (state === "typo"
       ? query.trim()
-      : answered.length === 1
-        ? answered[0].answer!.title
+      : loneTitle
+        ? loneTitle
         : subjects[0]
           ? getLocalizedSearchResultName(subjects[0], language)
           : query);
@@ -616,7 +627,11 @@ export function SearchFeed({
           ) : (
             <SubjectAnswer
               key={`${subject!.type}:${subject!.id}`}
-              answer={subject!.answer!}
+              answer={
+                subject === lone
+                  ? { ...subject.answer!, title: loneTitle }
+                  : subject!.answer!
+              }
               listedPeoples={subject!.associatedPeoples}
               searchedForm={query}
               selfNameHref={ficheHrefFor(subject!, language)}
@@ -654,6 +669,15 @@ export function SearchFeed({
       language={language}
       onNavigate={(subject) =>
         onResultNavigate?.(subject.type, subjects.indexOf(subject) + 1, surface)
+      }
+    />
+  );
+  const nextStep = (
+    <NameNextStep
+      cards={nextSteps}
+      language={language}
+      onNavigate={(card, rank) =>
+        onResultNavigate?.(card.relation, rank, "next")
       }
     />
   );
@@ -841,9 +865,7 @@ export function SearchFeed({
       case "further":
         return (
           <>
-            {state === "unknown" ? (
-              <NameNextStep cards={nextSteps} language={language} />
-            ) : null}
+            {state === "unknown" ? nextStep : null}
             <FurtherBlock
               language={language}
               links={[
@@ -925,6 +947,13 @@ export function SearchFeed({
                 subject.type === "country" ? [subject.id] : subject.countryIds
               }
               sourcesOpen={index === 0}
+              // One subject: the fiche link stays right under its timeline,
+              // before « Les sources parlent » (board search-peul-430).
+              ficheLink={
+                !sharedName && index === 0
+                  ? ficheLinkBlock("timeline")
+                  : undefined
+              }
               language={language}
             />
           )),
@@ -963,10 +992,15 @@ export function SearchFeed({
             : []),
           // Measured 2026-10-13 at 430 px: without this the timeline held no
           // link at all, and a reader it served could only leave. The way on
-          // is the same button the answer ends on.
-          <Fragment key="timeline-fiche-link">
-            {ficheLinkBlock("timeline")}
-          </Fragment>,
+          // is the same button the answer ends on. Several subjects share
+          // one row of links after every timeline (board search-bassa-430).
+          ...(sharedName
+            ? [
+                <Fragment key="timeline-fiche-link">
+                  {ficheLinkBlock("timeline")}
+                </Fragment>,
+              ]
+            : []),
           // Brief 1 (approved 2026-10-14): the page no longer ends on the
           // timeline. What we do not know, the conviction, the invitation to
           // correct, then one or two names to read next.
@@ -985,11 +1019,7 @@ export function SearchFeed({
             contributionTarget={contributionTarget}
             language={language}
           />,
-          <NameNextStep
-            key="timeline-next"
-            cards={nextSteps}
-            language={language}
-          />,
+          <Fragment key="timeline-next">{nextStep}</Fragment>,
         ]}
       />
     );

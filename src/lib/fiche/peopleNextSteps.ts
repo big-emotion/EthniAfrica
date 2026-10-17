@@ -1,8 +1,7 @@
 import { getCountryById } from "@/api/v2/services/countryService";
 import type { PatronymeLinkSummary } from "@/api/v2/services/patronymeFicheLinks";
 import { getPatronymeById } from "@/api/v2/services/patronymes";
-import { ficheNextSteps } from "@/lib/fiche/ficheNameClosing";
-import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
+import { ficheNextSteps, toldNames } from "@/lib/fiche/ficheNameClosing";
 import type { NextStepCard } from "@/lib/search/nameClosing";
 import type { Language } from "@/types/shared";
 
@@ -23,33 +22,45 @@ export async function loadPeopleNextSteps({
   countryCodes: readonly string[];
   language: Language;
 }): Promise<NextStepCard[]> {
-  const relation = nameClosingCopy[language].fiche.nextRelation;
   const [patronymes, countries] = await Promise.all([
     Promise.all(
-      borneNames.slice(0, 3).map(async (borne) => ({
-        kind: relation.patronyme,
-        name: borne.nameMain,
-        summary: await getPatronymeById(borne.id)
-          .then((fiche) => fiche?.nameHistory?.summary ?? null)
-          .catch(() => null),
-      }))
+      borneNames.slice(0, 3).map(async (borne) => {
+        const fiche = await getPatronymeById(borne.id).catch(() => null);
+        return {
+          relation: "patronyme" as const,
+          name: borne.nameMain,
+          summary: fiche?.nameHistory?.summary ?? null,
+          names: toldNames(fiche),
+        };
+      })
     ),
     Promise.all(
       countryCodes.slice(0, 2).map(async (code) => {
         const country = await getCountryById(code).catch(() => null);
         return {
-          kind: relation.country,
+          relation: "country" as const,
           name: country?.nameFr ?? code,
           summary: country?.nameHistory?.summary ?? null,
+          names: toldNames(country),
         };
       })
     ),
   ]);
-  return ficheNextSteps([
-    ...(family
-      ? [{ kind: relation.family, name: family.name, summary: family.summary }]
-      : []),
-    ...patronymes,
-    ...countries,
-  ]);
+  return ficheNextSteps(
+    [
+      ...(family
+        ? [
+            {
+              relation: "family" as const,
+              name: family.name,
+              summary: family.summary,
+            },
+          ]
+        : []),
+      ...patronymes,
+      ...countries,
+    ],
+    2,
+    language
+  );
 }

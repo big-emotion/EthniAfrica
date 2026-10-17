@@ -1,4 +1,4 @@
-import { render, screen, within } from "@testing-library/react";
+import { fireEvent, render, screen, within } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
 
 import {
@@ -174,20 +174,16 @@ describe("NameClosingBand — silences, conviction, invitation", () => {
 });
 
 describe("NameNextStep — the next names", () => {
+  const atlantique = {
+    relation: "family" as const,
+    kind: "Famille de langues",
+    name: "Atlantique",
+    reason: "Le nom atlantique désigne un ensemble de langues.",
+  };
+
   // @req REQ-198
   it("links each name to its own result page, with its reason", () => {
-    render(
-      <NameNextStep
-        cards={[
-          {
-            kind: "Famille de langues",
-            name: "Atlantique",
-            reason: "Le nom atlantique désigne un ensemble de langues.",
-          },
-        ]}
-        language="fr"
-      />
-    );
+    render(<NameNextStep cards={[atlantique]} language="fr" />);
 
     const link = screen.getByRole("link", { name: /Atlantique/ });
     expect(link).toHaveAttribute(
@@ -203,5 +199,45 @@ describe("NameNextStep — the next names", () => {
   it("draws nothing when there is no name to offer", () => {
     const { container } = render(<NameNextStep cards={[]} language="fr" />);
     expect(container).toBeEmptyDOMElement();
+  });
+
+  // On a fiche the next step replaced FicheOnward, the only emitter of
+  // fiche:related_click: without this, the fiches that gained a next step
+  // stopped counting their onward clicks.
+  // @req REQ-046
+  it("counts a click from a fiche under the card's machine relation", () => {
+    const plausible = vi.fn();
+    window.plausible = plausible;
+    render(
+      <NameNextStep cards={[atlantique]} language="fr" trackFrom="country" />
+    );
+
+    fireEvent.click(screen.getByRole("link", { name: /Atlantique/ }));
+
+    expect(plausible).toHaveBeenCalledWith("fiche:related_click", {
+      props: { from: "country", to: "family" },
+    });
+    delete window.plausible;
+  });
+
+  // The result page counts its own clicks, through `onNavigate`.
+  // @req REQ-046
+  it("sends no fiche event when it does not serve a fiche", () => {
+    const plausible = vi.fn();
+    window.plausible = plausible;
+    const onNavigate = vi.fn();
+    render(
+      <NameNextStep
+        cards={[atlantique]}
+        language="fr"
+        onNavigate={onNavigate}
+      />
+    );
+
+    fireEvent.click(screen.getByRole("link", { name: /Atlantique/ }));
+
+    expect(plausible).not.toHaveBeenCalled();
+    expect(onNavigate).toHaveBeenCalledWith(atlantique, 1);
+    delete window.plausible;
   });
 });

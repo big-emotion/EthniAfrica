@@ -41,11 +41,13 @@ describe("loadPeopleNextSteps — « Poursuivre avec un autre nom » on a fiche"
 
     expect(cards).toEqual([
       {
+        relation: "family",
         kind: "Famille de langues",
         name: "Atlantique",
         reason: "Le nom atlantique désigne des langues.",
       },
       {
+        relation: "patronyme",
         kind: "Nom de famille",
         name: "Ba",
         reason: "Le nom Ba est un nom de clan des Peuls.",

@@ -24,7 +24,11 @@ export type AnalyticsEvent =
   | "search:result_click"
   /** A source was consulted: the atlas's own promise, exercised. */
   | "fiche:source_click"
-  /** A reader continued to another fiche instead of leaving. */
+  /**
+   * A reader continued from a fiche instead of leaving: to another fiche
+   * (FicheOnward, `to` an entity kind) or to another name's result page
+   * (« Poursuivre avec un autre nom », `to` the card's relation).
+   */
   | "fiche:related_click"
   /** How far down a fiche the reader actually got. */
   | "fiche:depth"

@@ -126,32 +126,60 @@ describe("ficheNextSteps — the next names of a fiche", () => {
     expect(
       ficheNextSteps([
         {
-          kind: "Famille de langues",
+          relation: "family",
           name: "Krou",
           summary:
             "Le nom krou désigne une famille. Le mot a d’abord nommé des gens.",
         },
-        { kind: "Nom de famille", name: "Gbedee", summary: null },
+        { relation: "patronyme", name: "Gbedee", summary: null },
         {
-          kind: "Pays",
+          relation: "country",
           name: "Libéria",
           summary:
             "Le nom Libéria désigne un pays. Il a d’abord désigné une colonie.",
         },
-        { kind: "Pays", name: "Sierra Leone", summary: "Le nom Sierra Leone." },
+        {
+          relation: "country",
+          name: "Sierra Leone",
+          summary: "Le nom Sierra Leone.",
+        },
       ])
     ).toEqual([
       {
+        relation: "family",
         kind: "Famille de langues",
         name: "Krou",
         reason: "Le nom krou désigne une famille.",
       },
       {
+        relation: "country",
         kind: "Pays",
         name: "Libéria",
         reason: "Le nom Libéria désigne un pays.",
       },
     ]);
+  });
+
+  // Rendered on the Lingala fiche as ?q=Lingala+%28locuteurs%29: a filed
+  // label no reader types, and so no result page answers it.
+  // @req REQ-198
+  it("names each card by a form its history tells, not by its filed label", () => {
+    const [songhay, lingala] = ficheNextSteps([
+      {
+        relation: "family",
+        name: "Songhay / Sonrai",
+        summary: "Le nom songhay désigne des langues.",
+        names: ["Songhaï", "Songhay"],
+      },
+      {
+        relation: "people",
+        name: "Lingala (locuteurs)",
+        summary: "Le nom Bato ya mangala désigne des locuteurs.",
+      },
+    ]);
+
+    expect(songhay.name).toBe("Songhay");
+    expect(lingala.name).toBe("Lingala");
   });
 });
 

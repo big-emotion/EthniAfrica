@@ -1346,6 +1346,88 @@ describe("RecherchePageContent feed orchestration", () => {
     expect(document.querySelector("[data-name-timeline]")).not.toBeNull();
   });
 
+  // Block 8 sits at the bottom of the page: the feed must not wait for it.
+  // @req REQ-198
+  it("mounts the feed before the next names have loaded, then adds them", async () => {
+    mockFetch.mockResolvedValue(
+      okJson({
+        data: {
+          peoples: [
+            {
+              id: "PPL_FULA",
+              nameMain: "Peul",
+              languageFamilyId: "FLG_ATLANTIQUE",
+              languageFamilyName: "Atlantique",
+              exactMatch: true,
+            },
+          ],
+          countries: [],
+          families: [],
+          total: 1,
+        },
+      })
+    );
+    let resolveFamily!: (response: Response) => void;
+    mockFicheFetch
+      .mockImplementationOnce(
+        async () =>
+          new Response(JSON.stringify({ data: { nameHistory: PEUL_HISTORY } }))
+      )
+      .mockImplementationOnce(
+        () =>
+          new Promise<Response>((resolve) => {
+            resolveFamily = resolve;
+          })
+      );
+
+    await submitQuery("Peul");
+    await screen.findByTestId("feed-layout");
+
+    expect(document.querySelector("[data-name-timeline]")).not.toBeNull();
+    expect(document.querySelector("[data-name-next]")).toBeNull();
+    expect(String(mockFicheFetch.mock.calls[1][0])).toBe(
+      "/api/v2/language-families/FLG_ATLANTIQUE"
+    );
+
+    await act(async () => {
+      resolveFamily(
+        new Response(
+          JSON.stringify({
+            data: {
+              nameHistory: {
+                ...PEUL_HISTORY,
+                summary: "Le nom atlantique désigne des langues. Suite.",
+              },
+            },
+          })
+        )
+      );
+    });
+
+    expect(
+      await screen.findByRole("link", { name: /Atlantique/ })
+    ).toBeInTheDocument();
+  });
+
+  // A tagged arrival that searches again before accepting cookies would lose
+  // its campaign: the page rebuilt its URL from q and the relation only.
+  // @req REQ-046
+  it("keeps the campaign tags of the arrival when the reader searches again", async () => {
+    vi.mocked(nextNavigation.useSearchParams).mockReturnValue(
+      new URLSearchParams(
+        "q=peul&utm_source=facebook&utm_campaign=langue-07"
+      ) as unknown as ReturnType<typeof nextNavigation.useSearchParams>
+    );
+
+    await submitQuery("fulani");
+
+    const url = String(routerReplace.mock.calls.at(-1)?.[0]);
+    const params = new URL(url, "https://example.org").searchParams;
+    expect(params.get("q")).toBe("fulani");
+    expect(params.get("utm_source")).toBe("facebook");
+    expect(params.get("utm_campaign")).toBe("langue-07");
+  });
+
   // @req REQ-180
   it("loads companions once after a resolved search with its typed subject", async () => {
     mockFetch.mockResolvedValue(okJson(searchApiResponse));

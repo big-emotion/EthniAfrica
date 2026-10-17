@@ -99,8 +99,10 @@ describe("the answer page", () => {
       "fiche-link",
       "owed",
     ]);
+    // Where the reader searched, the searched form titles the page (doctrine
+    // §1.1); the lead under it names the self-name, Fulɓe.
     expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
-      peul.title
+      /^Peul$/
     );
   });
 
@@ -268,7 +270,7 @@ describe("the filters", () => {
 
     expect(blockIds(container)).not.toContain("answer-what");
     expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
-      searchFeedCopy.fr.lens.title.shorts(peul.title)
+      searchFeedCopy.fr.lens.title.shorts("Peul")
     );
     expect(screen.getByRole("button", { name: /^Shorts/ })).toHaveAttribute(
       "aria-pressed",

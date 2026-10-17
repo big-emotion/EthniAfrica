@@ -3,7 +3,10 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 
 import { CountryRecordView } from "@/components/country/CountryRecordView";
 import { countryRecord } from "@/components/fiche/__tests__/corpusRecords";
-import { shortSourceName } from "@/lib/countryDataTransformer";
+import {
+  countryPeopleCount,
+  shortSourceName,
+} from "@/lib/countryDataTransformer";
 import { getLocalizedRoute } from "@/lib/routing";
 
 vi.mock("@/hooks/use-consent", () => ({
@@ -82,6 +85,23 @@ describe("CountryRecordView — the names of a country and the end of its fiche"
       "Les trois explications du nom Côte de Quaqua ne sont pas datées.",
     ]);
     expect(screen.queryByTestId("fiche-amend-band")).toBeNull();
+  });
+
+  // CIV lists six shares, the last « Autres peuples » with no fiche: « En
+  // bref » said 6 where « Peuples du pays » said 5 peuples.
+  // @req REQ-151
+  it("counts in « En bref » the peoples « Peuples du pays » counts", () => {
+    const country = countryRecord("CIV");
+    const { container } = render(
+      <CountryRecordView country={country} language="fr" />
+    );
+
+    const figure = container.querySelector(
+      '[data-testid="stat-card-peoples"] .afh-stat-card-n'
+    );
+    expect(figure?.textContent).toBe("5");
+    expect(screen.getAllByText("5 peuples").length).toBeGreaterThan(0);
+    expect(countryPeopleCount(country)).toBe(5);
   });
 
   // @req REQ-115
