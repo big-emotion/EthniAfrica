@@ -1,6 +1,6 @@
 "use client";
 
-import { Fragment, useState } from "react";
+import { Fragment, useState, type ReactNode } from "react";
 
 import { getSearchEntityLabel } from "@/components/search/searchEntityAccent";
 import { NameSourcesBlock } from "@/components/search/timeline/NameClosing";
@@ -38,6 +38,12 @@ export interface NameTimelineProps {
    * first subject of the page does, the others stay folded.
    */
   sourcesOpen?: boolean;
+  /**
+   * The way to the full fiche, drawn between the timeline and « Les sources
+   * parlent » when the page has one subject (brief 1: it « stays under the
+   * timeline »).
+   */
+  ficheLink?: ReactNode;
   language: Language;
 }
 
@@ -74,6 +80,7 @@ export function NameTimeline({
   headingLevel = "h1",
   countryIds,
   sourcesOpen = false,
+  ficheLink,
   language,
 }: NameTimelineProps) {
   const copy = nameTimelineCopy[language];
@@ -114,6 +121,7 @@ export function NameTimeline({
           sources={account.sources}
           anchorId={anchorIdOf(key)}
           language={language}
+          surface="timeline"
         />
       </p>
       {account.actors?.length ? (
@@ -309,6 +317,7 @@ export function NameTimeline({
                           sources={anchor.sources}
                           anchorId={anchorIdOf(`${tile.key}-elsewhere`)}
                           language={language}
+                          surface="timeline"
                         />
                       </p>
                     </div>
@@ -320,6 +329,7 @@ export function NameTimeline({
         </ol>
         <p className="afh-name-timeline-end">{copy.end(name.nameText)}</p>
       </section>
+      {ficheLink}
       {/* Block 3 follows the name the chips have open (brief 1). */}
       <NameSourcesBlock
         key={name.nameText}

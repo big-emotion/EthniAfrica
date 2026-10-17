@@ -143,6 +143,29 @@ describe("FicheSummaryBrief", () => {
     expect(screen.getAllByTestId("fiche-summary-fact")).toHaveLength(1);
   });
 
+  // The summary prints one source. Under the Godié headline it used to be
+  // Ethnologue, which only attests the name; the nickname account is
+  // Schwartz's, reported by Kokora.
+  // @req REQ-151
+  it("places the Godié fact in Côte d'Ivoire and cites the source carrying it", () => {
+    render(
+      <FicheSummaryBrief
+        kind="country"
+        entityId="CIV"
+        name="Côte d'Ivoire"
+        language="fr"
+        figures={{}}
+      />
+    );
+
+    const fact = screen.getByTestId("fiche-summary-fact");
+    expect(fact.textContent).toMatch(/^En Côte d[’']Ivoire, le nom des Godié/);
+    expect(
+      within(fact).getByText("Studies in the grammar of Koyo")
+    ).toBeVisible();
+    expect(fact.textContent).not.toContain("Ethnologue");
+  });
+
   // @req REQ-151
   it("does not match a country fact to a people with the same id", () => {
     render(

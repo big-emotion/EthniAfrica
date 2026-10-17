@@ -8,6 +8,7 @@ import {
   deduceSilences,
   firstSentence,
   groupAccountsBySourceFamily,
+  nameFormOf,
   nextStepTargets,
   otherVoiceKinds,
 } from "@/lib/search/nameClosing";
@@ -176,6 +177,77 @@ describe("nextStepTargets — the next step", () => {
 
     expect(targets.length).toBeLessThanOrEqual(2);
     expect(targets.map((target) => target.id)).not.toContain("PPL_MOSSI");
+  });
+
+  /** The Peul fiche files its French form as coming from Wolof (`wol`). */
+  const withOrigin = (nameText: string, languageOfOrigin: string) => ({
+    ...PEUL_HISTORY,
+    names: PEUL_HISTORY.names.map((name) =>
+      name.nameText === nameText ? { ...name, languageOfOrigin } : name
+    ),
+  });
+
+  // Brief 1, board search-peul-430: « Peuple · Wolof » before the family.
+  // @req REQ-198
+  it("offers the language a searched outside name comes from, before the family", () => {
+    const targets = nextStepTargets(
+      [people],
+      [{ subject: people, nameHistory: withOrigin("Peul", "wol") }],
+      "peul"
+    );
+
+    expect(targets).toHaveLength(2);
+    expect(targets[0]).toMatchObject({
+      type: "language",
+      id: "wol",
+      relation: "namer",
+    });
+    expect(targets[1]).toMatchObject({
+      id: "FLG_ATLANTIQUE",
+      relation: "family",
+    });
+  });
+
+  // @req REQ-198
+  it("offers no namer for a self-name, an undated origin or the subject's own language", () => {
+    const namers = (history: typeof PEUL_HISTORY, searched: string) =>
+      nextStepTargets(
+        [people],
+        [{ subject: people, nameHistory: history }],
+        searched
+      ).filter((target) => target.relation === "namer");
+
+    // Fulɓe is the name the people gives itself.
+    expect(namers(withOrigin("Fulɓe", "ful"), "fulɓe")).toEqual([]);
+    // The fiche does not say which language the name comes from.
+    expect(namers(PEUL_HISTORY, "peul")).toEqual([]);
+    // A name from the language of its self-name was not given by others.
+    const ownLanguage = {
+      ...PEUL_HISTORY,
+      names: PEUL_HISTORY.names.map((name) => ({
+        ...name,
+        languageOfOrigin: "ful",
+      })),
+    };
+    expect(namers(ownLanguage, "peul")).toEqual([]);
+  });
+});
+
+describe("nameFormOf — the name a next-step card shows and searches", () => {
+  // A filed label is a workshop label: searched as is, « Songhay / Sonrai »
+  // or « Lingala (locuteurs) » is a name no reader types.
+  // @req REQ-198
+  it("cuts a filed label to the form its history tells", () => {
+    expect(nameFormOf("Songhay / Sonrai", ["Songhaï", "Songhay"])).toBe(
+      "Songhay"
+    );
+    expect(nameFormOf("Rwandais (Tutsi)", ["Tutsi", "Watusi"])).toBe("Tutsi");
+  });
+
+  // @req REQ-198
+  it("falls back on the label's lead form, and keeps a plain name whole", () => {
+    expect(nameFormOf("Lingala (locuteurs)")).toBe("Lingala");
+    expect(nameFormOf("Côte d'Ivoire")).toBe("Côte d'Ivoire");
   });
 });
 

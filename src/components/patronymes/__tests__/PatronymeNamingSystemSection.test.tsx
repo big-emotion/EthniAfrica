@@ -40,9 +40,43 @@ describe("PatronymeNamingSystemSection (AC1, REQ-133)", () => {
     );
 
     expect(screen.getByText("Keita")).toBeInTheDocument();
-    expect(screen.getByText(/attestée en\s+MLI/)).toBeInTheDocument();
+    expect(
+      screen.getByText(/attestée dans ce pays : Mali$/)
+    ).toBeInTheDocument();
     expect(screen.getByText("Patrilinéaire")).toBeInTheDocument();
     expect(screen.getByText("Clan")).toBeInTheDocument();
+  });
+
+  // The reader is owed country names, not workshop codes. SSD is the case a
+  // direct read of the map asset misses: the asset files South Sudan as SDS.
+  // @req REQ-133
+  it("names the countries where a spelling is attested", () => {
+    render(
+      <PatronymeNamingSystemSection
+        language="fr"
+        patronyme={{
+          ...base,
+          content: {
+            spellings: [
+              {
+                spelling: "Keita",
+                attestations: [
+                  { countryId: "MLI", sourceRefs: ["s1"] },
+                  { countryId: "BFA", sourceRefs: ["s1"] },
+                  { countryId: "SSD", sourceRefs: ["s2"] },
+                ],
+              },
+            ],
+          },
+        }}
+      />
+    );
+
+    const line = screen.getByText(/attestée dans ces pays/);
+    expect(line).toHaveTextContent(
+      "attestée dans ces pays : Mali, Burkina Faso, Soudan du Sud"
+    );
+    expect(line.textContent).not.toMatch(/\b(MLI|BFA|SSD|SDS)\b/);
   });
 
   // @req REQ-133

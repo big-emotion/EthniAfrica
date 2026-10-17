@@ -114,9 +114,9 @@ function carriesAsWord(name: string, word: string): boolean {
  * the corpus records for it.
  *
  * Matching the filed name alone was the narrower reading, and it failed the
- * premise. `Peul` is an exonym of an entry named `Fula (Fulbe / Peul)`; the
- * most-searched African ethnonym in French reached no subject at all, and the
- * page answered it with a bare result card.
+ * premise. `Peul` was then an exonym of an entry filed as `Fula (Fulbe /
+ * Peul)`; the most-searched African ethnonym in French reached no subject at
+ * all, and the page answered it with a bare result card.
  *
  * Forms are compared whole. A quarter of the corpus's exonyms carry their
  * qualifier inside the string — `Mandingue (français colonial)` — and

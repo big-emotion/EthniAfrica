@@ -1,4 +1,5 @@
 import { aboutCopy } from "@/lib/i18n/copy/about";
+import type { NextStepKind } from "@/lib/search/nameClosing";
 import type { SearchEntityType } from "@/types/afrik-frontend";
 import type { Language } from "@/types/shared";
 import type { SourceKind } from "@/types/sources";
@@ -45,12 +46,8 @@ export interface NameClosingCopy {
   report: string;
   propose: string;
   nextTitle: string;
-  nextRelation: {
-    family: string;
-    people: string;
-    seed: { people: string; country: string };
-  };
-  seedReason: { people: string; country: string };
+  /** A next-step card's eyebrow: what its target is. */
+  nextRelation: Record<NextStepKind, string>;
   /**
    * The same blocks on a fiche (brief 2, approved 2026-10-15, boards
    * people-*.dc.html): a fiche tells every name of its subject, so the
@@ -76,14 +73,6 @@ export interface NameClosingCopy {
     oralOnlyThrough: (name: string, authors: readonly string[]) => string;
     /** A name whose competing readings carry no date at all (brief 5). */
     undatedReadings: (count: number, name: string) => string;
-    nextRelation: {
-      family: string;
-      patronyme: string;
-      country: string;
-      people: string;
-      language: string;
-      place: string;
-    };
     carrier: (carrier: string, place?: string) => string;
     reportedBy: (author: string, year: number | null, title: string) => string;
     /** An oral tradition with no carrier, named by who wrote it down. */
@@ -180,8 +169,11 @@ export const nameClosingCopy: Record<Language, NameClosingCopy> = {
     nextTitle: "Poursuivre avec un autre nom",
     nextRelation: {
       family: "Famille de langues",
+      patronyme: "Nom de famille",
+      country: "Pays",
       people: "Peuple",
-      seed: { people: "Peuple", country: "Pays" },
+      language: "Langue",
+      place: "Lieu",
     },
     fiche: {
       sourcesTitle: (subject) =>
@@ -204,26 +196,12 @@ export const nameClosingCopy: Record<Language, NameClosingCopy> = {
         `Les traditions orales sur le nom ${name} ne nous parviennent que par ${joinFr(authors)}. Le projet n’a pas encore de récit recueilli auprès de celles et ceux qui les transmettent.`,
       undatedReadings: (count, name) =>
         `Les ${COUNT_FR[count] ?? count} explications du nom ${name} ne sont pas datées.`,
-      nextRelation: {
-        family: "Famille de langues",
-        patronyme: "Nom de famille",
-        country: "Pays",
-        people: "Peuple",
-        language: "Langue",
-        place: "Lieu",
-      },
       carrier: (carrier, place) =>
         `récit porté par ${carrier}${place ? `, ${place}` : ""}`,
       reportedBy: (author, year, title) =>
         `rapporté par ${author}${year ? `, ${year}` : ""}, « ${title} »`,
       traditionsReportedBy: (author, year, title) =>
         `rapportées par ${author}${year ? `, ${year}` : ""}, « ${title} »`,
-    },
-    seedReason: {
-      people:
-        "Un peuple dont nous retraçons le nom, ses origines et ses autres noms.",
-      country:
-        "Un pays dont nous retraçons le nom, ses origines et ses autres noms.",
     },
   },
 };

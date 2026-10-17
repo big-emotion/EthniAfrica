@@ -161,6 +161,7 @@ export function seriesPackageFixture(t, networks = ["instagram", "facebook"]) {
     design,
     assets,
     research: f.config.research,
+    campaign: f.config.campaign,
     networks: f.config.networks.map((n) => ({
       network: n.network,
       caption: n.caption,

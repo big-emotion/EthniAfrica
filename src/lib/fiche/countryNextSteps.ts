@@ -1,7 +1,6 @@
 import { listPlacesOfCountry } from "@/api/v2/services/places";
-import { ficheNextSteps } from "@/lib/fiche/ficheNameClosing";
+import { ficheNextSteps, toldNames } from "@/lib/fiche/ficheNameClosing";
 import { loadPeopleFiche } from "@/lib/fiche/ficheExistence";
-import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
 import type { NextStepCard } from "@/lib/search/nameClosing";
 import { getAfrikCountryNameRows } from "@/lib/supabase/queries/afrik/countries";
 import type { Language } from "@/types/shared";
@@ -100,7 +99,6 @@ export async function loadCountryNextSteps({
   peoples: ReadonlyArray<{ id: string; name: string }>;
   language: Language;
 }): Promise<NextStepCard[]> {
-  const relation = nameClosingCopy[language].fiche.nextRelation;
   const candidates = peoples.slice(0, 3);
   const [peopleFiches, places] = await Promise.all([
     Promise.all(
@@ -110,29 +108,33 @@ export async function loadCountryNextSteps({
   ]);
   const peopleCards = ficheNextSteps(
     candidates.map((people, index) => ({
-      kind: relation.people,
+      relation: "people" as const,
       // The target fiche's own name: « Kongo », not the share's
       // « Kongo (Brazzaville) ».
       name: peopleFiches[index]?.nameMain ?? people.name,
       summary: peopleFiches[index]?.nameHistory?.summary ?? null,
+      names: toldNames(peopleFiches[index]),
     })),
-    candidates.length
+    candidates.length,
+    language
   );
   const [place] = ficheNextSteps(
     places.map((entry) => ({
-      kind: relation.place,
+      relation: "place" as const,
       name: entry.nameMain,
       summary: entry.summary,
     })),
-    1
+    1,
+    language
   );
   const shared = ficheNextSteps(
     sharedNameCountries(self, rows).map((row) => ({
-      kind: relation.country,
+      relation: "country" as const,
       name: row.nameFr,
       summary: row.summary,
     })),
-    1
+    1,
+    language
   );
   return [
     ...shared,

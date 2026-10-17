@@ -1,10 +1,13 @@
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
 
 import type { SearchCompanionsData } from "@/api/v2/schemas/searchCompanions";
 import { SearchFeed } from "@/components/search/SearchFeed";
 import { getLocalizedRoute } from "@/lib/routing";
-import { LINGALA_HISTORY } from "@/lib/search/__fixtures__/nameTimelineFixtures";
+import {
+  LINGALA_HISTORY,
+  PEUL_HISTORY,
+} from "@/lib/search/__fixtures__/nameTimelineFixtures";
 import type { SearchResult } from "@/types/afrik-frontend";
 
 vi.mock("next/navigation", () => ({
@@ -34,11 +37,89 @@ const lingala: SearchResult = {
 
 const nextSteps = [
   {
+    relation: "family" as const,
     kind: "Famille de langues",
     name: "Bantou",
     reason: "Le nom bantou désigne une famille de langues.",
   },
 ];
+
+const peul: SearchResult = {
+  type: "people",
+  id: "PPL_FULA",
+  name: "Fula (Fulbe / Peul)",
+  exactMatch: true,
+  naming: lingala.naming,
+};
+const peulNextSteps = [
+  {
+    relation: "namer" as const,
+    kind: "Peuple",
+    name: "Wolof",
+    reason: "Le nom Wolof est celui que ce peuple se donne.",
+  },
+  {
+    relation: "family" as const,
+    kind: "Famille de langues",
+    name: "Atlantique",
+    reason: "Le nom atlantique désigne un ensemble de langues.",
+  },
+];
+
+// Board search-peul-430 (approved 2026-10-14): one subject, so the fiche link
+// stays under the timeline (line 129), before « Les sources parlent » (146).
+describe("SearchFeed — the end of a one-subject timeline", () => {
+  const renderPeul = (
+    onResultNavigate?: (type: string, rank: number, surface?: string) => void
+  ) =>
+    render(
+      <SearchFeed
+        query="peul"
+        language="fr"
+        state="exact"
+        results={[peul]}
+        subjects={[peul]}
+        leads={[]}
+        companions={companions}
+        nameHistories={[{ subject: peul, nameHistory: PEUL_HISTORY }]}
+        nextSteps={peulNextSteps}
+        onResultNavigate={onResultNavigate}
+      />
+    );
+
+  // @req REQ-198
+  it("puts « Voir la fiche complète » before « Qui raconte le nom Peul ? »", () => {
+    renderPeul();
+
+    const ficheLink = screen.getByRole("link", {
+      name: /Voir la fiche complète/,
+    });
+    const sources = screen.getByRole("heading", {
+      level: 2,
+      name: "Qui raconte le nom Peul ?",
+    });
+    expect(
+      ficheLink.compareDocumentPosition(sources) &
+        Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+  });
+
+  // Measured over 30 days: one timeline click recorded, because the next
+  // step's links reported nothing.
+  // @req REQ-198
+  it("reports a next-step click on its own surface, with its rank", () => {
+    const onResultNavigate = vi.fn();
+    renderPeul(onResultNavigate);
+
+    fireEvent.click(screen.getByRole("link", { name: /Wolof/ }));
+    fireEvent.click(screen.getByRole("link", { name: /Atlantique/ }));
+
+    expect(onResultNavigate.mock.calls).toEqual([
+      ["namer", 1, "next"],
+      ["family", 2, "next"],
+    ]);
+  });
+});
 
 // Brief 1, approved 2026-10-14: docs/design/mockups/site/search-*.dc.html.
 describe("SearchFeed — the page no longer ends on the timeline", () => {

@@ -7,6 +7,7 @@ import {
   SourceDiamond,
   SourceDiamondLegend,
 } from "@/components/sources/SourceDiamond";
+import { trackEvent } from "@/lib/analytics/trackEvent";
 import type { SearchEvidenceSource } from "@/lib/search/evidence";
 import type { SourceKind, SourceTier } from "@/types/sources";
 import type { Language } from "@/types/shared";
@@ -27,6 +28,11 @@ export interface TileSourceMarkerProps {
   sources: readonly PassageSource[];
   anchorId: string;
   language: Language;
+  /**
+   * Where the passage sits, so the search page's timeline and a fiche's
+   * competing readings count apart in `fiche:source_click`.
+   */
+  surface: "timeline" | "fiche";
 }
 
 function toSheetSource(
@@ -57,14 +63,26 @@ function toSheetSource(
  */
 // @req REQ-198
 // @req REQ-194
+// @req REQ-046
 export function TileSourceMarker({
   statement,
   sources,
   anchorId,
   language,
+  surface,
 }: TileSourceMarkerProps) {
   const [open, setOpen] = useState(false);
   if (sources.length === 0) return null;
+
+  // The lead source's kind is the one the diamond's colour shows; the tier
+  // stays out of the measurement as it stays out of the page.
+  const openSources = () => {
+    setOpen(true);
+    trackEvent("fiche:source_click", {
+      surface,
+      kind: sources[0].source_kind,
+    });
+  };
 
   return (
     <>
@@ -72,7 +90,7 @@ export function TileSourceMarker({
         id={anchorId}
         kinds={sources.map((source) => source.source_kind)}
         language={language}
-        onOpen={() => setOpen(true)}
+        onOpen={openSources}
       />
       <LazySourceChainSheet
         language={language}

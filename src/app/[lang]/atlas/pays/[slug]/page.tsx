@@ -23,7 +23,10 @@ import {
   loadCountryNextSteps,
   sharedNameNote,
 } from "@/lib/fiche/countryNextSteps";
-import { shortSourceName } from "@/lib/countryDataTransformer";
+import {
+  countryPeopleCount,
+  shortSourceName,
+} from "@/lib/countryDataTransformer";
 import { buildOnwardLinks } from "@/lib/fiche/onwardLinks";
 import { countryOnwardGroups } from "@/lib/fiche/onwardGroups";
 import { getAfrikLanguageFamilyRoster } from "@/lib/supabase/queries/afrik/languageFamilies";
@@ -235,7 +238,7 @@ async function CountryLiveContent({
                       ),
                     }
                   : null,
-              peoples: countryDetail.demographics?.peoples?.length,
+              peoples: countryPeopleCount(countryDetail),
               languages: countryLanguages?.value.length || null,
               families: familyCount,
               names: patronymes
@@ -246,7 +249,11 @@ async function CountryLiveContent({
             sharedName={sharedName}
             onward={
               nextSteps.length > 0 ? (
-                <NameNextStep cards={nextSteps} language={language} />
+                <NameNextStep
+                  cards={nextSteps}
+                  language={language}
+                  trackFrom="country"
+                />
               ) : (
                 <FicheOnward
                   from="country"

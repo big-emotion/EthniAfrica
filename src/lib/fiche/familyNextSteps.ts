@@ -1,6 +1,5 @@
-import { ficheNextSteps } from "@/lib/fiche/ficheNameClosing";
+import { ficheNextSteps, toldNames } from "@/lib/fiche/ficheNameClosing";
 import { loadLanguageFiche, loadPeopleFiche } from "@/lib/fiche/ficheExistence";
-import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
 import type { NextStepCard } from "@/lib/search/nameClosing";
 import type { Language } from "@/types/shared";
 
@@ -56,7 +55,6 @@ export async function loadFamilyNextSteps({
   peoples: ReadonlyArray<{ id: string; name: string }>;
   language: Language;
 }): Promise<NextStepCard[]> {
-  const relation = nameClosingCopy[language].fiche.nextRelation;
   const ranked = rankFamilyLanguages(languages).slice(0, CANDIDATES);
   const people = peoples.slice(0, CANDIDATES);
   const [languageFiches, peopleFiches] = await Promise.all([
@@ -70,19 +68,23 @@ export async function loadFamilyNextSteps({
   return [
     ...ficheNextSteps(
       ranked.map((entry, index) => ({
-        kind: relation.language,
+        relation: "language" as const,
         name: entry.name,
         summary: languageFiches[index]?.nameHistory?.summary ?? null,
+        names: toldNames(languageFiches[index]),
       })),
-      1
+      1,
+      language
     ),
     ...ficheNextSteps(
       people.map((entry, index) => ({
-        kind: relation.people,
+        relation: "people" as const,
         name: entry.name,
         summary: peopleFiches[index]?.nameHistory?.summary ?? null,
+        names: toldNames(peopleFiches[index]),
       })),
-      1
+      1,
+      language
     ),
   ];
 }

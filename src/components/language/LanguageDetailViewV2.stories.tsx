@@ -82,12 +82,14 @@ export const Lingala: Story = {
       <NameNextStep
         cards={[
           {
+            relation: "family",
             kind: "Famille de langues",
             name: "Bantou",
             reason:
               "Le nom bantou désigne une famille de langues d'Afrique centrale, orientale et australe, et non un peuple.",
           },
           {
+            relation: "people",
             kind: "Peuple",
             name: "Lingala (locuteurs)",
             reason:

@@ -106,14 +106,15 @@ describe("the Saviez-vous bank", () => {
   });
 
   // A tier printed over nothing claims an authority the atlas cannot
-  // produce. Six facts predate the sources field and are exempted by name,
-  // so the exemption shrinks and can never silently grow.
+  // produce. Five facts predate the sources field and are exempted by name,
+  // so the exemption shrinks and can never silently grow. « cote-ivoire »
+  // left it: no source carried it, and the Côte d'Ivoire fiche's own sources
+  // contradict its 1839 date and its Portuguese origin.
   // @req REQ-113
   it("makes every fact added since the sources field cite its claim", () => {
     const beforeTheSourcesField = new Set([
       "monrovia",
       "bantou",
-      "cote-ivoire",
       "amazigh",
       "lingala",
       "personne-relationnelle",

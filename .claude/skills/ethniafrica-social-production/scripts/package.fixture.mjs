@@ -143,6 +143,7 @@ export function installPackageFixture(
     design: "social/design-system",
     assets: "social/design-system/assets",
     research,
+    campaign: "test-01",
     networks: networks.map((network) => ({
       network,
       caption: "Découvrons ensemble les noms et leur histoire.",

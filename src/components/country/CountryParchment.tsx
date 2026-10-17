@@ -31,7 +31,10 @@ import {
   undatedReadingsSilences,
 } from "@/lib/fiche/ficheNameClosing";
 import type { SharedName } from "@/lib/fiche/countryNextSteps";
-import { shortSourceName } from "@/lib/countryDataTransformer";
+import {
+  countryPeopleCount,
+  shortSourceName,
+} from "@/lib/countryDataTransformer";
 import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
 import { splitLeadSentence } from "@/lib/fiche/prose";
 import { chapterAnchorId } from "@/lib/ficheChapters";
@@ -175,7 +178,7 @@ export function CountryParchment({
             source: shortSourceName(country.demographics.source),
           }
         : null,
-    peoples: country.demographics?.peoples?.length,
+    peoples: countryPeopleCount(country),
     languages: languageReferences.length || null,
   };
 

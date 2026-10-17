@@ -1846,7 +1846,7 @@ export const PROVERBS: Proverb[] = [
       {
         kind: "people",
         id: "PPL_FULA",
-        label: "Fula (Fulbe / Peul)",
+        label: "Peul",
       },
       {
         kind: "country",
