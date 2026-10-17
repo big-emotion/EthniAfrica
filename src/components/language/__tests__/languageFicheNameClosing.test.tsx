@@ -237,6 +237,36 @@ describe("LanguageDetailViewV2 — the link to the story of its name", () => {
     ).toHaveAttribute("href", `${SEARCH}?q=Kihavu`);
   });
 
+  // dyu is filed « Dioula »; its story leads with « Julakan », which neither
+  // the filed name nor its alternate names carry, so the result page for
+  // « Julakan » does not answer it. The fixture adds « Julakan » as a
+  // spelling alias on purpose: the search row leaves that column out, so an
+  // alias makes no page answer.
+  // @req REQ-198
+  it("draws no link on dyu, whose result page for « Julakan » does not answer it", () => {
+    const dioula: LanguagePageData = {
+      ...lingala,
+      id: "dyu",
+      name: "Dioula",
+      isoCode639_3: "dyu",
+      nameEn: "Dyula",
+      alternateNames: ["Diula", "Djula", "Dyoula", "Jula"],
+      spellingAliases: ["Julakan"],
+      nameHistory: {
+        summary: "Le nom julakan désigne la langue des marchands dioula.",
+        names: [
+          { ...LINGALA.names[0], nameText: "Julakan", accounts: [] },
+          { ...LINGALA.names[0], nameText: "Dioula", accounts: [] },
+        ],
+      } as NameHistory,
+    };
+    render(<LanguageDetailViewV2 data={dioula} language="fr" />);
+
+    expect(
+      screen.queryByRole("link", { name: /Suivre l'histoire du nom/ })
+    ).toBeNull();
+  });
+
   // @req REQ-198
   it("draws no link on a fiche without a name story", () => {
     render(

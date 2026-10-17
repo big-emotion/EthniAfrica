@@ -214,6 +214,22 @@ describe("CountryRecordView — the link to the story of its name", () => {
     }
   });
 
+  // TZA is filed « République-Unie de Tanzanie » and its story leads with
+  // « Tanzanie », a name the result page does not answer it under today.
+  // @req REQ-198
+  it("draws no link on TZA, whose result page for « Tanzanie » does not answer it", () => {
+    const { container } = render(
+      <CountryRecordView country={countryRecord("TZA")} language="fr" />
+    );
+
+    expect(
+      container.querySelector('[data-fiche-section="En bref"]')
+    ).not.toBeNull();
+    expect(
+      screen.queryByRole("link", { name: /Suivre l'histoire du nom/ })
+    ).toBeNull();
+  });
+
   // @req REQ-198
   it("draws no link on a country without a name story", () => {
     const { nameHistory: _none, ...withoutHistory } = countryRecord("CIV");

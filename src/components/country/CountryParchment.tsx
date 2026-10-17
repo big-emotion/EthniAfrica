@@ -18,6 +18,7 @@ import { FicheAmendBand } from "@/components/fiche/FicheAmendBand";
 import { FicheTile } from "@/components/fiche/FicheTile";
 import { FicheNameStory } from "@/components/fiche/FicheNameStory";
 import { FicheStoryLink } from "@/components/fiche/FicheStoryLink";
+import { storyLinkName } from "@/lib/search/nameClosing";
 import { readNaming, type NamingPresentationForm } from "@/lib/search/naming";
 import {
   competingReadings,
@@ -203,7 +204,16 @@ export function CountryParchment({
           language={language}
           storyLink={
             <FicheStoryLink
-              history={history}
+              name={storyLinkName(
+                {
+                  type: "country",
+                  id: country.id,
+                  name: country.nameFr,
+                  content: { historicalNames: country.historicalNames },
+                },
+                history,
+                language
+              )}
               from="country"
               language={language}
             />

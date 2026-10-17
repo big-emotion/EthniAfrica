@@ -9,6 +9,7 @@ import { FicheNameStory } from "@/components/fiche/FicheNameStory";
 import { FicheStoryLink } from "@/components/fiche/FicheStoryLink";
 import { FicheSection } from "@/components/fiche/FicheSection";
 import { formKey, readNaming } from "@/lib/search/naming";
+import { storyLinkName } from "@/lib/search/nameClosing";
 import { FieldProvenanceMarker } from "@/components/fiche/FieldProvenanceMarker";
 import { FicheSources } from "@/components/fiche/FicheSources";
 import { ProvenanceBanner } from "@/components/source-transparency/ProvenanceBanner";
@@ -122,7 +123,20 @@ export function LanguageDetailViewV2({
         {history ? (
           <FicheNameReadings history={history} language={language} />
         ) : null}
-        <FicheStoryLink history={history} from="language" language={language} />
+        <FicheStoryLink
+          name={storyLinkName(
+            {
+              type: "language",
+              id: data.id,
+              name: data.name,
+              content: { alternateNames: data.alternateNames },
+            },
+            history,
+            language
+          )}
+          from="language"
+          language={language}
+        />
       </FicheNameStory>
 
       {history ? (

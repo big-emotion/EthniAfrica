@@ -1,8 +1,14 @@
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+
 import { cleanup, render, screen, within } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
 
 import { LanguageFamilyDetailViewV2 } from "@/components/family/LanguageFamilyDetailViewV2";
-import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
+import {
+  ficheNameHistory,
+  type NameHistory,
+} from "@/lib/afrik/parsers/nameHistoryParser";
 import { getLocalizedRoute } from "@/lib/routing";
 import type { LanguageFamily } from "@/types/afrik";
 
@@ -257,6 +263,35 @@ describe("LanguageFamilyDetailViewV2 — the link to the story of its name", () 
     expect(
       link.compareDocumentPosition(firstRow) & Node.DOCUMENT_POSITION_FOLLOWING
     ).toBeTruthy();
+  });
+
+  // FLG_BERBERE is filed « Berbère / Amazighe »; its story leads with
+  // « Berbère », a name the result page does not answer it under today.
+  // @req REQ-198
+  it("draws no link on FLG_BERBERE, whose result page for « Berbère » does not answer it", () => {
+    const raw = JSON.parse(
+      readFileSync(
+        join(
+          process.cwd(),
+          "dataset/source/afrik/famille_linguistique/FLG_BERBERE.json"
+        ),
+        "utf8"
+      )
+    ) as LanguageFamily & { nameHistory?: unknown };
+    const berbere = {
+      ...raw,
+      nameHistory: ficheNameHistory(raw, "FLG_BERBERE"),
+    };
+    const { container } = render(
+      <LanguageFamilyDetailViewV2 family={berbere} language="fr" />
+    );
+
+    expect(
+      container.querySelector('[data-testid="fiche-name-story"]')
+    ).not.toBeNull();
+    expect(
+      screen.queryByRole("link", { name: /Suivre l'histoire du nom/ })
+    ).toBeNull();
   });
 
   // @req REQ-198

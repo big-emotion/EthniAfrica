@@ -3,50 +3,32 @@
  * docs/design/mockups/site/*-430.dc.html, `Main` « lien vers l'histoire du
  * nom »). The result page is the site's central surface; before this link the
  * only result-page links on a fiche led to other names.
+ *
+ * Which name it may name is decided on the server (`storyLinkName`, tested in
+ * src/lib/search/__tests__/storyLinkName.test.ts): the link only lays out the
+ * name it is given.
  */
 
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
 
 import { FicheStoryLink } from "@/components/fiche/FicheStoryLink";
-import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import { getLocalizedRoute } from "@/lib/routing";
 import { nameStoryHref } from "@/lib/search/nameClosing";
 
 afterEach(() => {
   cleanup();
+  vi.restoreAllMocks();
   delete window.plausible;
 });
 
 const SEARCH = getLocalizedRoute("fr", "search");
 
-const CIV_HISTORY = {
-  summary: "Le nom Côte d'Ivoire renvoie au commerce de l'ivoire.",
-  names: [
-    {
-      nameText: "Côte d'Ivoire",
-      nameStatus: "current",
-      selfGiven: null,
-      languageOfOrigin: null,
-      namedBy: null,
-      accounts: [],
-    },
-    {
-      nameText: "Côte des Dents",
-      nameStatus: "historical",
-      selfGiven: null,
-      languageOfOrigin: null,
-      namedBy: null,
-      accounts: [],
-    },
-  ],
-} as NameHistory;
-
 describe("FicheStoryLink", () => {
   // @req REQ-198
   it("names the fiche's leading name and leads to the page a reader gets by searching it", () => {
     render(
-      <FicheStoryLink history={CIV_HISTORY} from="country" language="fr" />
+      <FicheStoryLink name="Côte d'Ivoire" from="country" language="fr" />
     );
 
     const link = screen.getByRole("link", {
@@ -64,26 +46,22 @@ describe("FicheStoryLink", () => {
   // @req REQ-198
   it("writes the arrow once, through the action link", () => {
     render(
-      <FicheStoryLink history={CIV_HISTORY} from="country" language="fr" />
+      <FicheStoryLink name="Côte d'Ivoire" from="country" language="fr" />
     );
 
     expect(screen.getAllByTestId("action-link-arrow")).toHaveLength(1);
   });
 
   // @req REQ-198
-  it("renders nothing for a fiche without a name story", () => {
+  it("renders nothing without a name the result page answers", () => {
     const { container: none } = render(
-      <FicheStoryLink history={null} from="people" language="fr" />
+      <FicheStoryLink name={undefined} from="people" language="fr" />
     );
     expect(none).toBeEmptyDOMElement();
     cleanup();
 
     const { container: empty } = render(
-      <FicheStoryLink
-        history={{ summary: "", names: [] } as NameHistory}
-        from="people"
-        language="fr"
-      />
+      <FicheStoryLink name="" from="people" language="fr" />
     );
     expect(empty).toBeEmptyDOMElement();
   });
@@ -93,7 +71,7 @@ describe("FicheStoryLink", () => {
     const plausible = vi.fn();
     window.plausible = plausible;
     render(
-      <FicheStoryLink history={CIV_HISTORY} from="country" language="fr" />
+      <FicheStoryLink name="Côte d'Ivoire" from="country" language="fr" />
     );
 
     fireEvent.click(screen.getByRole("link", { name: /Suivre l'histoire/ }));
@@ -106,13 +84,23 @@ describe("FicheStoryLink", () => {
 
   // @req REQ-046
   it("sends nothing and throws nothing without consent", () => {
+    // Without consent the Plausible script never loads, so nothing defines
+    // `window.plausible`. An event could still leave the page as a request or
+    // a beacon; neither may.
+    const fetchSpy = vi.spyOn(globalThis, "fetch");
+    const beacon = vi.fn(() => true);
+    Object.defineProperty(navigator, "sendBeacon", {
+      configurable: true,
+      value: beacon,
+    });
     render(
-      <FicheStoryLink history={CIV_HISTORY} from="country" language="fr" />
+      <FicheStoryLink name="Côte d'Ivoire" from="country" language="fr" />
     );
 
     expect(() =>
       fireEvent.click(screen.getByRole("link", { name: /Suivre l'histoire/ }))
     ).not.toThrow();
-    expect(window.plausible).toBeUndefined();
+    expect(fetchSpy).not.toHaveBeenCalled();
+    expect(beacon).not.toHaveBeenCalled();
   });
 });

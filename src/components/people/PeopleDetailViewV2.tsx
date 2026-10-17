@@ -53,6 +53,7 @@ import {
   NameFicheSourcesBlock,
 } from "@/components/search/timeline/NameClosing";
 import { ficheSilences } from "@/lib/fiche/ficheNameClosing";
+import { storyLinkName } from "@/lib/search/nameClosing";
 import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
 
 export interface PeopleDetailViewV2Props {
@@ -246,7 +247,16 @@ export function PeopleDetailViewV2({
           <FieldProvenanceMarker state="missing" language={language} />
         )}
         <FicheStoryLink
-          history={nameHistory}
+          name={storyLinkName(
+            {
+              type: "people",
+              id: people.id,
+              name: people.nameMain,
+              content: { appellations: people.appellations },
+            },
+            nameHistory,
+            language
+          )}
           from="people"
           language={language}
         />
