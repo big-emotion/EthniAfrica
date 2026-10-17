@@ -390,7 +390,11 @@ export function searchEnvelopeForAnswerFixture(fixture: AnswerFixture) {
 }
 
 // @req REQ-178
-export async function routeSearchAnswerFixtures(page: Page): Promise<void> {
+export async function routeSearchAnswerFixtures(
+  page: Page,
+  /** Pieces to serve in place of the case's own, to fill the lens bar. */
+  options: { companions?: SearchCompanionsData } = {}
+): Promise<void> {
   let activeFixture: AnswerFixture | undefined;
   // The answer fixtures carry no name history. Without this, a subject whose
   // live fiche has one (lingala, since #1622) would open the page on
@@ -405,7 +409,9 @@ export async function routeSearchAnswerFixtures(page: Page): Promise<void> {
     if (url.pathname === `${API_SEARCH_PATH}/companions`) {
       await route.fulfill({
         status: 200,
-        json: { data: companionsForAnswer(activeFixture) },
+        json: {
+          data: options.companions ?? companionsForAnswer(activeFixture),
+        },
       });
       return;
     }

@@ -1,5 +1,7 @@
 "use client";
 
+import { useLayoutEffect, useRef } from "react";
+
 import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
 import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
 import { cn } from "@/lib/utils";
@@ -24,6 +26,24 @@ export function LensesBlock({
   active,
   onChange,
 }: LensesBlockProps) {
+  const pressedLens = useRef<HTMLButtonElement>(null);
+  // Pressing a lens replaces the page, and the bar with it, which then starts
+  // scrolled to its beginning: at 430 px « Fiches » would sit off screen just
+  // after the reader pressed it (brief 12, Main board). The bar's own offset
+  // moves, not the page: `scrollIntoView` would also scroll it vertically.
+  // The offset lands on the lens's snap position, so the bar does not snap
+  // back; nothing moves when the lens is already in view.
+  useLayoutEffect(() => {
+    const lens = pressedLens.current;
+    const bar = lens?.parentElement;
+    if (!lens || !bar) return;
+    const barBox = bar.getBoundingClientRect();
+    const lensBox = lens.getBoundingClientRect();
+    if (lensBox.left >= barBox.left && lensBox.right <= barBox.right) return;
+    const snapInset = parseFloat(getComputedStyle(bar).scrollPaddingLeft) || 0;
+    bar.scrollLeft += lensBox.left - barBox.left - snapInset;
+  }, [active]);
+
   return (
     <SearchFeedBlock
       as="nav"
@@ -37,6 +57,7 @@ export function LensesBlock({
         return (
           <button
             key={lens.id}
+            ref={selected ? pressedLens : undefined}
             type="button"
             aria-pressed={selected}
             onClick={() => onChange(lens.id)}
