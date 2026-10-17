@@ -4623,6 +4623,14 @@ svg { display: block; }
   color: var(--afh-text-soft);
 }
 .ea-form-readings[open] > summary .ea-voice-caret { transform: rotate(180deg); }
+/* 2026-10-17: a row's readings open inside one column of the forms grid
+   (316 px at 768). Side by side they fell to about 12 characters a line and
+   the last word dropped onto a line of its own above « Sources », so they
+   stack until 1200, where the column holds two. The language fiche's grid
+   is unchanged. */
+@media (max-width: 1199.98px) {
+  .ea-form-readings .ea-readings-grid { grid-template-columns: minmax(0, 1fr); }
+}
 
 /* ============================================================
    Brief 9 (2026-10-16): « Notre démarche ». The signature line
@@ -4867,6 +4875,11 @@ a.ea-fiche-card:focus-visible { outline: none; box-shadow: var(--afh-ring-focus)
   text-decoration: underline; text-underline-offset: 4px;
 }
 .ea-lens-back:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
+/* Static markup cannot scroll: below 768 a board draws the lens bar scrolled to
+   its end, as the page shows it once the pressed lens is brought into view. */
+@media (max-width: 767.98px) {
+  .ea-lenses[data-scrolled="end"] { justify-content: flex-end; }
+}
 /* Main only: a 430 frame inside the 1440 board keeps the phone's one column. */
 .ds-mobile .ea-fiche-grid[data-cols] { grid-template-columns: minmax(0, 1fr); }
 .ds-mobile .ea-lens-title { font-size: var(--afh-text-h2); }
@@ -4951,7 +4964,9 @@ a.ea-fiche-card:focus-visible { outline: none; box-shadow: var(--afh-ring-focus)
 }
 .ea-switch[aria-checked="true"] .ea-switch-track { background: var(--afh-text); }
 .ea-switch[aria-checked="true"] .ea-switch-track::after { left: 22px; }
-.ea-switch:disabled { cursor: not-allowed; opacity: 0.5; }
+/* Locked on (the essential cookies) keeps the full ink: dimmed, it read as the
+   off track. « Requis » in its description says it cannot be changed. */
+.ea-switch:disabled { cursor: not-allowed; }
 .ea-consent-save { align-self: stretch; }
 @container ea-consent (min-width: 768px) {
   .ea-consent-panel-text { max-width: var(--afh-measure-prose); }

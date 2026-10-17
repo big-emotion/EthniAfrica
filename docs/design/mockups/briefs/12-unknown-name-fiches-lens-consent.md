@@ -335,7 +335,9 @@ Part C changes no charter: it applies brand charter §5.4 as written.
   silence, its conviction and the next names (REQ-180, REQ-198).
 - Part B: the grouping lives in the lens only; `FichesBlock` keeps its default
   heading when the grouped mode is off; the Bello card takes the line of the
-  form « Bello »; a relation browse shows no grouping (REQ-180).
+  form « Bello »; a relation browse shows no grouping (REQ-180). The lens
+  bar scrolls the pressed lens into view on arrival, so « Fiches » shows at
+  430 px; today it has no such scroll.
 - Part C: the gate is an end-to-end comparison of the computed styles of
   « Refuser » and « Accepter », with the heights taken from the board; the
   dialog, not a button, has focus on arrival; every new test carries its own

@@ -344,7 +344,10 @@ opening adds content, and a chapter never itself collapses ». Proposed:
   goal's comment in `src/lib/analytics/trackEvent.ts` says it can lead to the
   result page.
 - The copy goes in `src/lib/i18n/copy/ficheNameStory.ts` (`storyLink`,
-  `storyLinkHint`) and `src/lib/i18n/copy/fiche.ts` (the fold labels).
+  `storyLinkHint`) and `src/lib/i18n/copy/fiche.ts` (the fold labels). A
+  closed fold label opens with the tile control's glyph, as « + en savoir
+  plus » does: « + Voir aussi : … », « + Voir les 47 noms »; open, it reads
+  « − replier ».
 - Tests first, per the plan: the link on `PPL_ZARMA`, `CIV`, `FLG_MANDE` and
   `lin` with its target and its place (REQ-198); no link without a name
   story and the click event (REQ-046); a five-tile chapter keeping its
