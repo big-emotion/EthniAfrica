@@ -17,7 +17,7 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 - Fiche pages: the name, people, language, language-family and country fiches each
   close with their readings, sources, silences and next names (briefs 1 to 5).
 - Place fiche `LOC_AFRIQUE` (« Afrique ») and word fiche `WRD_TRIBU` (« tribu »).
-- Family names: name histories for waves 20 to 22 (93 names), personal names filed as
+- Family names: name histories for waves 20 to 23 (127 names), personal names filed as
   clan names reclassified, and the `hereditary_family_name` naming system (migration
   `107`) (ETNI-2011).
 - Social: EthniAfrica Cartes 1.3.0 to 1.8.0 in the renderers — series band, full-screen
