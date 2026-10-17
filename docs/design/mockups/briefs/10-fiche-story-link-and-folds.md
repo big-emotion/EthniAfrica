@@ -2,8 +2,32 @@
 
 Read [`README.md`](README.md) and
 [`../../mockup-first-workflow.md`](../../mockup-first-workflow.md) first.
-Written 2026-10-17. Status: **proposed — awaiting operator review.**
+Written 2026-10-17. Status: **approved 2026-10-17 by delegation.** The
+operator asked Claude on 2026-10-17 to approve these boards on their behalf
+(« approuver les maquettes pour moi »). Claude approved them after an
+art-direction review whose blocking finding was fixed; the operator did not
+review the boards themselves. The decisions taken on their behalf are in the
+approval record below.
 Prompt: [`claude-design-prompt-10.md`](claude-design-prompt-10.md).
+
+### Approval record (2026-10-17, by delegation)
+
+1. The link names the name story's spelling: Fulɓe on `people-fula`, Kihavu
+   on `language-thin-havu`, as proposed.
+2. A long chapter is one holding three tiles or more (REQ-153 as published on
+   2026-10-17). A closed fold opens with « + » (« + Voir aussi : … »); open,
+   it reads « − replier ».
+3. The long list of names on a country fiche folds behind its count
+   (« Voir les 47 noms »), with the naming-systems line. REQ-153 was extended
+   on 2026-10-17 to cover a long list of names, so the fold has a requirement.
+4. The repeated name origins (« D'où vient le nom » under « Histoire », « D'où
+   vient le nom de la famille ») are not removed in this pass.
+5. The link opens the reading of the name a reader gets by searching it; no
+   parameter picks a subject.
+6. The link stays under the lead of the name chapter, as §1 places it, even
+   though it lands below the first 812 px screen on six boards (art-direction
+   review). Its reach is measured after release (`fiche:related_click` with
+   `to: "name_story"`) before any move.
 
 This is **pass 1** of the three board passes the operator approved on
 2026-10-17: the fiche boards first (this brief, then brief 6), then the result
@@ -344,7 +368,10 @@ opening adds content, and a chapter never itself collapses ». Proposed:
   goal's comment in `src/lib/analytics/trackEvent.ts` says it can lead to the
   result page.
 - The copy goes in `src/lib/i18n/copy/ficheNameStory.ts` (`storyLink`,
-  `storyLinkHint`) and `src/lib/i18n/copy/fiche.ts` (the fold labels).
+  `storyLinkHint`) and `src/lib/i18n/copy/fiche.ts` (the fold labels). A
+  closed fold label opens with the tile control's glyph, as « + en savoir
+  plus » does: « + Voir aussi : … », « + Voir les 47 noms »; open, it reads
+  « − replier ».
 - Tests first, per the plan: the link on `PPL_ZARMA`, `CIV`, `FLG_MANDE` and
   `lin` with its target and its place (REQ-198); no link without a name
   story and the click event (REQ-046); a five-tile chapter keeping its

@@ -185,7 +185,11 @@ nothing.
 and `Introuvable` carry it because they lack matter; `Mande`, `Peul` and `Bassa`
 do not carry it at all. Reserving the invitation for thin pages says the rich
 ones are settled — exactly what "no appellation is crowned" refuses. A page
-showing seven names is the page most in need of correction.
+showing seven names is the page most in need of correction. On a page that
+admits it does not know the name, the invitation moves up into the verdict,
+where it is the page's one action (« Proposer une source »); the closing then
+holds the silence and the conviction. _(Added 2026-10-17, brief 12, approved
+by delegation.)_
 
 ### Two columns have two reading orders
 
@@ -286,7 +290,12 @@ defect the art-director review found on the rendered « congo » page on
   button per page and none when several answer.
 
 **What left « Tout ».** `shorts`, `plates`, `quiz`, `images` and `fiches` are
-what the filters show. `origins`, `peoples`, `shared-name`, `tiles`,
+what the filters show. One exception: the « Histoire du nom » view shows one
+piece of the « Sur ce nom » group (relation `exact` or `word`), as a single row
+after the end line of the open name's timeline, its eyebrow naming the subject
+the piece is about. The shelf itself stays in the Shorts filter, and no row and
+no empty slot are drawn when no such piece exists. _(Added 2026-10-17, brief
+11, approved by delegation.)_ `origins`, `peoples`, `shared-name`, `tiles`,
 `atlas-holds`, `problem` and `near-name` no longer exist: their job is done by
 the answer blocks and by several answers side by side. `verdict`,
 `appellations` and `further` remain only for the pages with no answer to give.
@@ -296,7 +305,13 @@ Jeux and Fiches appear only when they have content, each with its count, never
 with a zero. A filter replaces the answer by its shelf under one heading about
 the name, with a way back. The shorts shelf separates « Sur ce nom » (a piece
 made on the searched name or word: relation `exact` or `word`) from « Autour de
-ce nom » (context).
+ce nom » (context). The fiches filter separates the same way. « Sur ce nom »
+holds the fiches of the subjects that answer to the name, in the search's
+order. « Autour de ce nom », under the note « Un contexte lié, pas le même
+nom. », holds the other fiches found, each with its own one line and never a
+generic label; a fiche matched only by its sound is not listed there. A
+relation browse, where no name was searched, is not grouped. _(Added
+2026-10-17, brief 12, approved by delegation; REQ-201.)_
 
 `owed` is one top-level block because it is one rhetorical closing; its parts
 are, in order:
@@ -316,8 +331,10 @@ The exceptional states are explicit:
   without `fiche-link`, under the filters, never the confession;
 - a typo with useful leads opens on the verdict and the choices and closes with
   `further` only;
-- a genuinely unknown query opens on the verdict and closes with `owed`
-  (`conviction` and `invitation`), then `further`;
+- a genuinely unknown query opens on the verdict, which carries the invitation
+  to correct, and closes with `owed` (`silences` and `conviction`), the next
+  names, then `further`; it draws no shelf unless a piece matches the reader's
+  word _(replaced 2026-10-17, brief 12, approved by delegation)_;
 - related results with no entity answering the name (and a family or country
   browse) open on the verdict and list the fiches; they close without `owed`.
 
@@ -344,7 +361,10 @@ unchanged. What changes is one sentence and one shelf, in both states.
   It reads instead « Nous n'avons pas de fiche pour ce nom, mais nous avons une
   vidéo sur son origine. » What we lack is said; what we have is said.
 - **The piece takes the shelf, not the empty slot.** The slot that says « Pas
-  encore de short » exists for a name nobody has told yet; beside a piece on
+  encore de short » exists for a name nobody has told yet, except on a page
+  that admits it does not know the name: that page draws no shelf at all,
+  unless a piece matches the reader's word _(amended 2026-10-17, brief 12,
+  approved by delegation)_; beside a piece on
   that very word it would say the opposite of what the shelf shows. A `widened`
   page with no entity blanks every shelf so nothing unrelated sits under it;
   the piece found by the reader's word is kept, because it is the one shelf
@@ -521,7 +541,13 @@ A control is 44 px high and wide at least, at 320 and 430 px: the filter tabs,
 the « Lire la suite » and « Voir les N peuples » links, the choice cards, the
 fiche buttons, the sources button. A text link on its own line grows to 44 px
 through `ANSWER_TEXT_BUTTON` without changing its look; a link inside a sentence
-is exempt, as WCAG 2.5.5 allows. Measured on the real page on 2026-10-07 at 320,
+is exempt, as WCAG 2.5.5 allows. The sources button that ends a passage is not
+a link inside a sentence and is not exempt. It shows its diamond followed by a
+visible label, « Source » for one source and « Sources » for several, with no
+count. Its target is 44 px high and wide at least, without changing the
+passage's line height, and its accessible name begins with the visible label
+(WCAG 2.5.3). _(Added 2026-10-17, brief 11, approved by delegation.)_ Measured
+on the real page on 2026-10-07 at 320,
 430, 768 and 1280 px for the six cases above, no control was under 44 px;
 the rule exists so the next block cannot be the first, and the e2e spec asserts
 it on every case at 320 and 430 px.

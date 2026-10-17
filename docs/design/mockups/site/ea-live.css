@@ -4623,6 +4623,14 @@ svg { display: block; }
   color: var(--afh-text-soft);
 }
 .ea-form-readings[open] > summary .ea-voice-caret { transform: rotate(180deg); }
+/* 2026-10-17: a row's readings open inside one column of the forms grid
+   (316 px at 768). Side by side they fell to about 12 characters a line and
+   the last word dropped onto a line of its own above « Sources », so they
+   stack until 1200, where the column holds two. The language fiche's grid
+   is unchanged. */
+@media (max-width: 1199.98px) {
+  .ea-form-readings .ea-readings-grid { grid-template-columns: minmax(0, 1fr); }
+}
 
 /* ============================================================
    Brief 9 (2026-10-16): « Notre démarche ». The signature line
@@ -4666,3 +4674,305 @@ svg { display: block; }
 .ds-mobile .ea-footer-link { justify-content: center; }
 .ds-mobile .ea-footer-follow { text-align: center; }
 .ds-mobile .ea-footer-follow ul { margin: 12px auto 0; justify-content: center; }
+
+/* ============================================================
+   Brief 10 (2026-10-17): every fiche leads to its name's story,
+   and a long reference chapter folds what follows its first
+   tile. The story link is form A of the actions charter (label
+   then arrow, 16 px, weight 600, 44 px tall, no container), as
+   src/components/ui/ActionLink.tsx draws it. The fold reuses
+   the tile control (« + en savoir plus » / « − replier »): its
+   closed label names each tile it hides. New selectors only,
+   tokens only.
+   ============================================================ */
+.ea-story { display: grid; gap: var(--afh-space-xs); margin-top: var(--afh-space-lg); }
+.fiche-name-story .ea-story { margin: var(--afh-space-lg) 0; }
+.ea-story-link {
+  display: inline-flex; align-items: center; gap: var(--afh-space-md);
+  justify-self: start; min-height: 44px;
+  font-size: var(--afh-text-small); font-weight: 600; line-height: 1.4;
+  color: var(--accent-ink); text-decoration: none; text-underline-offset: 4px;
+}
+.ea-story-link:hover, .ea-story-link:focus-visible { text-decoration: underline; }
+.ea-story-link:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
+.ea-story-arrow { transition: transform var(--afh-duration-fast) var(--afh-ease-out); }
+.ea-story-link:hover .ea-story-arrow, .ea-story-link:focus-visible .ea-story-arrow { transform: translateX(4px); }
+/* Two classes, so it outranks `.afh-parchment-section p`. */
+.ea-story .ea-story-hint {
+  margin: 0; font-size: var(--afh-text-caption); line-height: 1.45; color: var(--afh-text-soft);
+}
+.ea-fold { margin-top: var(--afh-space-lg); }
+.ea-fold > summary { cursor: pointer; list-style: none; }
+.ea-fold > summary::-webkit-details-marker { display: none; }
+.ea-fold > summary:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
+.ea-fold > summary [data-when="open"],
+.ea-fold[open] > summary [data-when="closed"] { display: none; }
+.ea-fold[open] > summary [data-when="open"] { display: inline; }
+.ea-fold > summary + * { margin-top: var(--afh-space-xs); }
+.afh-names-group .ea-fold { margin: 0; }
+
+/* ============================================================
+   Brief 11 (2026-10-17): the result page hands the reader from
+   the searched name to the self-name (a line in the lead, a tile
+   after the end line), shows one video made on the subject, and
+   prints a period once over consecutive tiles that share it.
+   The sources button gains its visible label (« Source » /
+   « Sources ») and a 44 px target. Until the code catches up,
+   that restyle lives here and outranks the verbatim
+   source-diamond.css through `button.afh-source-diamond`, so the
+   colour swatches on Main, which are spans, keep their shape.
+   Tokens only.
+   ============================================================ */
+
+/* The lead: the self-name's question under the sentence, in the same button. */
+.ea-lead-text { display: flex; flex-direction: column; gap: var(--afh-space-xs); min-width: 0; }
+.ea-lead-line { font-size: var(--afh-text-small); line-height: 1.5; color: var(--afh-text-soft); }
+
+/* The hand-off tile: off the thread, no dot, no date. */
+.ea-handoff { display: flex; flex-direction: column; gap: var(--afh-space-md); }
+.ea-handoff-name {
+  font-family: var(--afh-font-display); font-weight: 900;
+  font-size: var(--afh-text-h2); line-height: 1.15; overflow-wrap: anywhere;
+}
+.ea-handoff-text { font-size: var(--afh-text-small); line-height: 1.6; }
+/* Form C, outlined: the page keeps its one solid action. */
+.ea-handoff-action {
+  align-self: flex-start; display: inline-flex; align-items: center;
+  min-height: 44px; margin-top: var(--afh-space-xs); padding: var(--afh-space-md) var(--afh-space-2xl);
+  border: 1px solid var(--accent); border-radius: var(--afh-radius-lg);
+  background: var(--afh-surface); color: var(--afh-text);
+  font-size: var(--afh-text-small); font-weight: 600; line-height: 1.4; text-align: start;
+}
+.ea-handoff-action:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
+
+/* One video made on the subject: the whole row is the link. */
+.ea-video-row {
+  display: grid; grid-template-columns: 64px minmax(0, 1fr); align-items: center;
+  gap: var(--afh-space-lg); min-height: 44px; padding: var(--afh-space-lg);
+  border: 1px solid var(--afh-border); border-radius: var(--afh-radius-lg);
+  background: var(--afh-surface); color: var(--afh-text);
+}
+.ea-video-row:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
+.ea-video-poster {
+  position: relative; display: block; width: 64px; aspect-ratio: 9 / 16;
+  overflow: hidden; border-radius: var(--afh-radius-lg); background: var(--afh-bg-warm);
+}
+.ea-video-poster img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.ea-video-play {
+  position: absolute; left: 50%; top: 50%;
+  width: 24px; height: 24px; transform: translate(-50%, -50%);
+}
+.ea-video-text { display: flex; flex-direction: column; gap: var(--afh-space-xs); min-width: 0; }
+.ea-video-eyebrow {
+  font-family: var(--afh-font-mono); font-size: var(--afh-text-caption);
+  font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-ink);
+}
+.ea-video-title { font-size: var(--afh-text-small); font-weight: 700; line-height: 1.4; overflow-wrap: anywhere; }
+.ea-video-title svg {
+  display: inline-block; width: 18px; height: 18px;
+  margin-left: var(--afh-space-sm); vertical-align: -3px; color: var(--accent-ink);
+}
+.ea-video-meta { font-size: var(--afh-text-caption); line-height: 1.5; color: var(--afh-text-soft); }
+
+/* Consecutive tiles of one period: the period once, each statement kept. */
+.ea-period-join {
+  display: flex; flex-direction: column; gap: var(--afh-space-sm);
+  padding-top: var(--afh-space-md); border-top: 1px solid var(--afh-border);
+}
+
+/* The sources button: diamond, then « Source » or « Sources », no count.
+   The label sits on the passage's baseline. Ten pixels of padding above
+   and below, cancelled by the same negative margin, make a 44 px target
+   whose layout box is the label's 24 px line: shorter than the passage's
+   own line, so the passage keeps its line height. */
+button.afh-source-diamond {
+  display: inline-block; min-width: 44px;
+  margin-block: calc(-1 * var(--afh-space-base));
+  padding: var(--afh-space-base) var(--afh-space-xs) var(--afh-space-base) 2px;
+  font-size: var(--afh-text-small); font-weight: 600; line-height: 24px;
+  color: var(--afh-text-soft); white-space: nowrap; text-align: start;
+  vertical-align: baseline;
+}
+button.afh-source-diamond .afh-source-diamond-mark {
+  margin-inline-end: var(--afh-space-sm); vertical-align: middle;
+}
+button.afh-source-diamond:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
+/* A no-break space does not hold a button to the word before it: CSS keeps
+   a wrap opportunity on both sides of an atomic inline (CSS Text 3, 5.1).
+   The passage's last word and the button go in one inline block, which
+   moves to the next line whole. Unlike `nowrap`, it still breaks inside
+   when its column is narrower than word and button together (the readings
+   side by side on a fiche at 768), so it never widens that column. */
+.ea-source-tail { display: inline-block; }
+
+/* ============================================================
+   Brief 12 (2026-10-17): the unknown-name page carries its one
+   invitation in the verdict (it reuses .ea-owed-action, so no
+   rule here); the « Fiches » lens sets the fiches that answer
+   to the name apart from the related ones, each card with its
+   own line; the consent strip sits low on the screen, refusing
+   as easy as accepting. Tokens only, apart from fixed sizes:
+   the 44 px target, the 44 × 24 switch, the 430 × 812 stage.
+   ============================================================ */
+
+/* The « Fiches » lens: title, then « Sur ce nom », then « Autour de ce nom ». */
+.ea-lens-title {
+  font-family: var(--afh-font-display); font-weight: 900;
+  font-size: var(--afh-text-h1); line-height: var(--afh-leading-h1);
+  color: var(--afh-text); overflow-wrap: anywhere;
+}
+.ea-fiche-groups { display: flex; flex-direction: column; gap: var(--afh-space-5xl); margin-top: var(--afh-space-md); min-width: 0; }
+.ea-fiche-group { min-width: 0; }
+/* The same heading and note as the Shorts lens (ShortsBlock, grouped). */
+.ea-fiche-group-title {
+  margin: 0; font-size: var(--afh-text-small); font-weight: 700;
+  line-height: var(--afh-leading-small); color: var(--accent-ink);
+}
+.ea-fiche-group-note {
+  margin-top: var(--afh-space-xs);
+  font-size: var(--afh-text-caption); line-height: var(--afh-leading-caption); color: var(--afh-text-soft);
+}
+/* One column below 768: each card now carries a line, too long for half of 382 px. */
+.ea-fiche-grid {
+  display: grid; grid-template-columns: minmax(0, 1fr);
+  gap: var(--afh-space-lg); margin-top: var(--afh-space-lg);
+}
+@media (min-width: 768px) {
+  .ea-fiche-grid:not([data-cols="1"]) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 1200px) {
+  .ea-fiche-grid[data-cols="3"] { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .ea-fiche-grid[data-cols="4"] { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+.ea-fiche-card {
+  display: flex; flex-direction: column; justify-content: center; gap: var(--afh-space-xs);
+  height: 100%; min-height: 44px; padding: var(--afh-space-lg) var(--afh-space-2xl);
+  border: 1px solid var(--afh-border); border-radius: var(--afh-radius-lg);
+  background: var(--afh-surface); color: var(--afh-text);
+}
+a.ea-fiche-card:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
+.ea-fiche-kind {
+  font-size: var(--afh-text-eyebrow); font-weight: 600; text-transform: uppercase;
+  letter-spacing: var(--afh-eyebrow-tracking); line-height: var(--afh-leading-eyebrow);
+  color: var(--afh-text-soft);
+}
+.ea-fiche-name {
+  font-family: var(--afh-font-display); font-weight: 700;
+  font-size: var(--afh-text-body); line-height: var(--afh-leading-h3); overflow-wrap: anywhere;
+}
+.ea-fiche-line { font-size: var(--afh-text-caption); line-height: var(--afh-leading-caption); color: var(--afh-text-soft); }
+.ea-fiche-pills { display: flex; flex-wrap: wrap; gap: var(--afh-space-sm); margin-top: var(--afh-space-sm); }
+.ea-fiche-pills a {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--afh-space-lg);
+  border: 1px solid var(--afh-border); border-radius: var(--afh-radius-full);
+  font-size: var(--afh-text-caption); font-weight: 600; line-height: var(--afh-leading-caption);
+}
+.ea-fiche-pills a:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
+.ea-fiche-example { margin-top: var(--afh-space-lg); font-size: var(--afh-text-caption); line-height: var(--afh-leading-caption); }
+.ea-lens-back {
+  display: inline-flex; align-items: center; min-height: 44px;
+  font-weight: 700; color: var(--accent-ink);
+  text-decoration: underline; text-underline-offset: 4px;
+}
+.ea-lens-back:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
+/* Static markup cannot scroll: below 768 a board draws the lens bar scrolled to
+   its end, as the page shows it once the pressed lens is brought into view. */
+@media (max-width: 767.98px) {
+  .ea-lenses[data-scrolled="end"] { justify-content: flex-end; }
+}
+/* Main only: a 430 frame inside the 1440 board keeps the phone's one column. */
+.ds-mobile .ea-fiche-grid[data-cols] { grid-template-columns: minmax(0, 1fr); }
+.ds-mobile .ea-lens-title { font-size: var(--afh-text-h2); }
+
+/* The consent strip. Its layout follows its own width (a container query),
+   which is the viewport's on the site, where it runs full width, and the
+   frame's on Main. Steps at 768 and 1200, the site's breakpoints. */
+.ea-consent {
+  container: ea-consent / inline-size;
+  background: var(--afh-bg); border-top: 1px solid var(--afh-border); color: var(--afh-text);
+}
+/* On arrival the strip itself holds the focus, with no ring: no button is
+   pre-selected, so neither answer is the one a key press gives. */
+.ea-consent:focus { outline: none; }
+.ea-consent-inner {
+  display: flex; flex-direction: column; gap: var(--afh-space-md);
+  max-width: var(--afh-shell-max); margin-inline: auto; padding: var(--afh-space-2xl);
+}
+.ea-consent-text { font-size: var(--afh-text-small); line-height: var(--afh-leading-small); color: var(--afh-text-soft); }
+.ea-consent-controls { display: flex; flex-direction: column; gap: var(--afh-space-md); }
+/* « Refuser » and « Accepter »: one style, one ink, one weight, one width. */
+.ea-consent-choice { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: var(--afh-space-md); }
+.ea-consent-button {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 44px; padding: var(--afh-space-md) var(--afh-space-2xl);
+  border: 1px solid var(--afh-text); border-radius: var(--afh-radius-lg);
+  background: transparent; color: var(--afh-text);
+  font-size: var(--afh-text-small); font-weight: 600; line-height: 1.4; text-align: center;
+}
+.ea-consent-button:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
+/* The quiet pair is drawn like the footer's legal links, where
+   « Gestion des cookies » is already a button among links. */
+.ea-consent-quiet { display: flex; flex-wrap: wrap; align-items: center; gap: 0 var(--afh-space-5xl); }
+.ea-consent-quiet > * {
+  display: inline-flex; align-items: center; min-height: 44px;
+  font-size: var(--afh-text-small); font-weight: 600; line-height: 1.4; color: var(--afh-text-soft);
+  text-decoration: underline; text-underline-offset: 4px;
+  text-decoration-color: color-mix(in srgb, var(--afh-text-soft) 40%, transparent);
+}
+.ea-consent-quiet > *:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
+@container ea-consent (min-width: 768px) {
+  .ea-consent-inner { padding-inline: var(--afh-space-5xl); }
+  /* The source order stays « Refuser », « Accepter », then the quiet pair. */
+  .ea-consent-controls { flex-direction: row-reverse; justify-content: space-between; align-items: center; gap: var(--afh-space-2xl); }
+  .ea-consent-choice { flex: none; }
+  .ea-consent-button { padding-inline: var(--afh-space-5xl); }
+}
+@container ea-consent (min-width: 1200px) {
+  .ea-consent-inner {
+    display: grid; grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas: "panel ." "text controls";
+    align-items: center; column-gap: var(--afh-space-6xl); row-gap: 0;
+    padding-inline: var(--afh-space-6xl);
+  }
+  .ea-consent-text { grid-area: text; }
+  /* The gap lives on the panel: closed, its empty row adds nothing. */
+  .ea-consent-panel { grid-area: panel; margin-bottom: var(--afh-space-2xl); }
+  .ea-consent-controls { grid-area: controls; }
+}
+/* « Personnaliser » open: the panel opens above the buttons. */
+.ea-consent-panel {
+  display: flex; flex-direction: column; gap: var(--afh-space-lg);
+  padding: var(--afh-space-2xl);
+  border: 1px solid var(--afh-border); border-radius: var(--afh-radius-lg); background: var(--afh-surface);
+}
+.ea-consent-panel-text { font-size: var(--afh-text-small); line-height: var(--afh-leading-small); color: var(--afh-text-soft); }
+.ea-consent-switches { display: flex; flex-direction: column; gap: var(--afh-space-md); }
+.ea-consent-switches li { display: flex; align-items: center; justify-content: space-between; gap: var(--afh-space-2xl); }
+.ea-consent-switch-text { display: flex; flex-direction: column; gap: var(--afh-space-xs); min-width: 0; }
+.ea-consent-switch-label { font-size: var(--afh-text-small); font-weight: 600; line-height: var(--afh-leading-small); color: var(--afh-text); }
+.ea-consent-switch-desc { font-size: var(--afh-text-caption); line-height: var(--afh-leading-caption); color: var(--afh-text-soft); }
+/* A switch: a 44 px target around a 44 × 24 track, in ink, never the accent. */
+.ea-switch { display: inline-flex; align-items: center; justify-content: center; flex: none; min-width: 44px; min-height: 44px; }
+.ea-switch:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
+.ea-switch-track {
+  position: relative; display: block; width: 44px; height: 24px;
+  border-radius: var(--afh-radius-full); background: var(--afh-text-muted);
+}
+.ea-switch-track::after {
+  content: ""; position: absolute; top: 2px; left: 2px; width: 20px; height: 20px;
+  border-radius: var(--afh-radius-full); background: var(--afh-surface);
+}
+.ea-switch[aria-checked="true"] .ea-switch-track { background: var(--afh-text); }
+.ea-switch[aria-checked="true"] .ea-switch-track::after { left: 22px; }
+/* Locked on (the essential cookies) keeps the full ink: dimmed, it read as the
+   off track. « Requis » in its description says it cannot be changed. */
+.ea-switch:disabled { cursor: not-allowed; }
+.ea-consent-save { align-self: stretch; }
+@container ea-consent (min-width: 768px) {
+  .ea-consent-panel-text { max-width: var(--afh-measure-prose); }
+  .ea-consent-save { align-self: flex-start; padding-inline: var(--afh-space-5xl); }
+}
+/* Main only: the strip over the first screen of a page, 430 × 812. */
+.ea-consent-stage { position: relative; width: 432px; height: 814px; overflow: hidden; }
+.ea-consent-stage > img { display: block; width: 430px; height: 812px; }
+.ea-consent-stage > .ea-consent { position: absolute; left: 0; right: 0; bottom: 0; }
