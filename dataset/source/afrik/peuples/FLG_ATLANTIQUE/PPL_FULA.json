@@ -1,6 +1,6 @@
 {
   "id": "PPL_FULA",
-  "nameMain": "Fula (Fulbe / Peul)",
+  "nameMain": "Peul",
   "languageFamilyId": "FLG_ATLANTIQUE",
   "currentCountries": [
     "SEN",
@@ -21,7 +21,7 @@
   "classificationStatus": "colonial-legacy",
   "content": {
     "appellations": {
-      "mainName": "Fula (Fulbe / Peul)",
+      "mainName": "Peul",
       "selfAppellation": "Fulbe (pluriel), Pullo (singulier)",
       "exonyms": [
         "Peul",
@@ -611,9 +611,9 @@
           },
           {
             "period": {
-              "from": null,
-              "to": null,
-              "label": "Usage décrit au présent par l'auteur"
+              "from": 1990,
+              "to": 1990,
+              "label": "Usage décrit en 1990"
             },
             "era": "modern",
             "statement": "Le nom Fulɓe est écrit « Pullo (au singulier) et Fulbe (au pluriel) » par François de Medeiros.",
@@ -890,9 +890,9 @@
           },
           {
             "period": {
-              "from": null,
-              "to": null,
-              "label": "Usage décrit au présent par l'auteur"
+              "from": 1990,
+              "to": 1990,
+              "label": "Usage décrit en 1990"
             },
             "era": "modern",
             "statement": "Le nom Haalpulaar'en est écrit « Halpularen » par François de Medeiros.",
@@ -917,9 +917,9 @@
           },
           {
             "period": {
-              "from": null,
-              "to": null,
-              "label": "Usage décrit au présent par l'auteur"
+              "from": 1985,
+              "to": 1985,
+              "label": "Usage décrit en 1985"
             },
             "era": "modern",
             "statement": "Le nom Haalpulaar'en est écrit « Hal pulaaren (ceux qui parlent pular — ou « peul ») » par Djibril Tamsir Niane.",
@@ -1094,7 +1094,7 @@
             "formAsWritten": "Peuls ou Peulhs",
             "actors": [
               {
-                "name": "Amadou Hampâté Bâ, à propos de l'usage français",
+                "name": "Amadou Hampâté Bâ",
                 "role": "écrit cette forme"
               }
             ],
@@ -1331,9 +1331,9 @@
           },
           {
             "period": {
-              "from": null,
-              "to": null,
-              "label": "Usage décrit au présent par l'auteur"
+              "from": 1990,
+              "to": 1990,
+              "label": "Usage décrit en 1990"
             },
             "era": "modern",
             "statement": "Le nom Fula est écrit « Fula » par François de Medeiros, à propos de l'usage des Manden.",
@@ -1610,9 +1610,9 @@
           },
           {
             "period": {
-              "from": null,
-              "to": null,
-              "label": "Usage décrit au présent par l'auteur"
+              "from": 1990,
+              "to": 1990,
+              "label": "Usage décrit en 1990"
             },
             "era": "modern",
             "statement": "Le nom Fulani est écrit « Fulani (au singulier Ba-Filanci) » par François de Medeiros, à propos de l'usage haoussa.",
@@ -1876,9 +1876,9 @@
           },
           {
             "period": {
-              "from": null,
-              "to": null,
-              "label": "Usage décrit au présent par l'auteur"
+              "from": 1990,
+              "to": 1990,
+              "label": "Usage décrit en 1990"
             },
             "era": "modern",
             "statement": "Le nom Fellata est écrit « Felata » par François de Medeiros, à propos de l'usage des Kanuri et des Arabes du Soudan.",
@@ -2321,9 +2321,9 @@
           },
           {
             "period": {
-              "from": null,
-              "to": null,
-              "label": "Usage décrit au présent par les auteurs"
+              "from": 1990,
+              "to": 1990,
+              "label": "Usage décrit en 1990"
             },
             "era": "modern",
             "statement": "Le nom Toucouleur est écrit « Toucouleur » par Mohammed El Fasi et Ivan Hrbek.",

@@ -7,10 +7,14 @@
  * fiche as it did from the record, and these copies are what that promise
  * is checked against.
  *
- * One correction is made in the copies themselves: the operator removed
+ * Two corrections are made in the copies themselves. The operator removed
  * origin hypotheses backed only by Wikipedia (ETNI-2008, 2026-10-09), so the
  * Fellata record no longer announces the Arabic origin in its meaning and
- * short line. Every other field of every record is the folded original.
+ * short line. And the PPL_FULA fiche's timeline wording was corrected on
+ * 2026-10-17: « Usage décrit au présent par l'auteur » now reads « Usage
+ * décrit en <year of the cited work> », and Amadou Hampâté Bâ's name no longer
+ * carries « à propos de l'usage français ». Every other field of every record
+ * is the folded original.
  */
 import { readdirSync, readFileSync } from "fs";
 import { join } from "path";
