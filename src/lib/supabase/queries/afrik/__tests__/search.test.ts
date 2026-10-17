@@ -19,6 +19,7 @@ vi.mock("../peoples", () => ({
 import { ftsSearchEntities } from "../search";
 import { createServerClient } from "../../../server";
 import { getAfrikPeoplesByIds } from "../peoples";
+import { mapSearchCounts } from "@/lib/search/searchEnvelope";
 import type { People } from "@/types/afrik";
 
 function peopleRow(
@@ -159,6 +160,10 @@ describe("ftsSearchEntities", () => {
   let countriesPayload: { total: number; rows: unknown[] };
   let personsPayload: { total: number; rows: unknown[] };
   let patronymesPayload: { total: number; rows: unknown[] };
+  // Ids the fake afrik_search_patronymes reaches only through the phonetic
+  // key, and the error it answers when asked to withhold them.
+  let phoneticOnlyIds: Set<string>;
+  let withholdError: { code: string; message: string } | null;
   let placesPayload: { total: number; rows: unknown[] };
   let placesError: { code: string; message: string } | null;
   let wordsPayload: { total: number; rows: unknown[] };
@@ -177,6 +182,8 @@ describe("ftsSearchEntities", () => {
     countriesPayload = { total: 0, rows: [] };
     personsPayload = { total: 0, rows: [] };
     patronymesPayload = { total: 0, rows: [] };
+    phoneticOnlyIds = new Set();
+    withholdError = null;
     placesPayload = { total: 0, rows: [] };
     placesError = null;
     wordsPayload = { total: 0, rows: [] };
@@ -188,15 +195,28 @@ describe("ftsSearchEntities", () => {
     leadsError = null;
     personPeoplesRows = [];
 
-    rpc = vi.fn((fn: string) => {
+    rpc = vi.fn((fn: string, args: Record<string, unknown> = {}) => {
       if (fn === "afrik_search_peoples")
         return Promise.resolve({ data: peoplesPayload, error: null });
       if (fn === "afrik_search_countries")
         return Promise.resolve({ data: countriesPayload, error: null });
       if (fn === "afrik_search_persons")
         return Promise.resolve({ data: personsPayload, error: null });
-      if (fn === "afrik_search_patronymes")
-        return Promise.resolve({ data: patronymesPayload, error: null });
+      if (fn === "afrik_search_patronymes") {
+        if (args.p_exact_elsewhere !== true)
+          return Promise.resolve({ data: patronymesPayload, error: null });
+        if (withholdError)
+          return Promise.resolve({ data: null, error: withholdError });
+        // Migration 108's contract: the withheld rows leave the count too.
+        const kept = patronymesPayload.rows.filter(
+          (row) => !phoneticOnlyIds.has((row as { id: string }).id)
+        );
+        const withheld = patronymesPayload.rows.length - kept.length;
+        return Promise.resolve({
+          data: { total: patronymesPayload.total - withheld, rows: kept },
+          error: null,
+        });
+      }
       if (fn === "afrik_search_places")
         return Promise.resolve({ data: placesPayload, error: placesError });
       if (fn === "afrik_search_words")
@@ -968,6 +988,211 @@ describe("ftsSearchEntities", () => {
       "afrik_search_patronymes",
       expect.objectContaining({ p_q: "keita", p_limit: 20, p_offset: 0 })
     );
+  });
+
+  describe("REQ-201 — a name reached only by its sound yields to an exact answer", () => {
+    /** Bell, Bailly, Baloyi and Bwalya share « peul »'s phonetic key, nothing else. */
+    function soundAlikesOfPeul() {
+      const rows = [
+        patronymeRow("PATR_BAILLY", "Bailly"),
+        patronymeRow("PATR_BALOYI", "Baloyi"),
+        patronymeRow("PATR_BELL", "Bell"),
+        patronymeRow("PATR_BWALYA", "Bwalya"),
+      ];
+      rows.forEach((row) => phoneticOnlyIds.add(row.id));
+      return rows;
+    }
+
+    // GWT 1
+    // @req REQ-201
+    it("returns none of the sound-alikes of « peul » when a people answers it exactly, and counts none", async () => {
+      peoplesPayload = {
+        total: 1,
+        rows: [peopleRow("PPL_FULA", "Peul", { exactMatch: true })],
+      };
+      patronymesPayload = { total: 4, rows: soundAlikesOfPeul() };
+
+      const result = await ftsSearchEntities({
+        q: "peul",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(result.patronymes).toEqual([]);
+      expect(result.patronymesTotal).toBe(0);
+      expect(result.total).toBe(1);
+      expect(result.results.map((hit) => hit.id)).toEqual(["PPL_FULA"]);
+    });
+
+    // The lens chips read their numbers off these totals, so a withheld
+    // name must be missing from the patronyme chip and from « Tout ».
+    // @req REQ-201
+    it("counts a withheld name in no lens total", async () => {
+      peoplesPayload = {
+        total: 1,
+        rows: [peopleRow("PPL_FULA", "Peul", { exactMatch: true })],
+      };
+      patronymesPayload = { total: 4, rows: soundAlikesOfPeul() };
+
+      const result = await ftsSearchEntities({
+        q: "peul",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(mapSearchCounts({ data: result })).toMatchObject({
+        all: 1,
+        people: 1,
+        patronyme: 0,
+      });
+    });
+
+    // GWT 3: what keeps a name is decided by the SQL (migration 108); the
+    // query layer must not drop what the function still returns.
+    // @req REQ-201
+    it("keeps a name that matches by prefix as well as by sound when a people answers exactly", async () => {
+      peoplesPayload = {
+        total: 1,
+        rows: [peopleRow("PPL_FULA", "Peul", { exactMatch: true })],
+      };
+      patronymesPayload = {
+        total: 5,
+        rows: [patronymeRow("PATR_PEULH", "Peulh"), ...soundAlikesOfPeul()],
+      };
+
+      const result = await ftsSearchEntities({
+        q: "peul",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(result.patronymes.map((p) => p.nameMain)).toEqual(["Peulh"]);
+      expect(result.patronymesTotal).toBe(1);
+    });
+
+    // A published word answers « griot » on the page even with no fiche.
+    // @req REQ-201
+    it("treats a production-ledger word answer as an exact answer", async () => {
+      patronymesPayload = {
+        total: 1,
+        rows: [patronymeRow("PATR_KURT", "Kurt")],
+      };
+      phoneticOnlyIds.add("PATR_KURT");
+
+      const result = await ftsSearchEntities({
+        q: "griot",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(result.patronymes).toEqual([]);
+      expect(result.patronymesTotal).toBe(0);
+    });
+
+    // Every kind ranks its exact rows first, so on a later page the exact
+    // people is out of sight — yet the second page must agree with the first.
+    // @req REQ-201
+    it("withholds on a later page too, where the exact answer is out of sight", async () => {
+      const exactFirst = {
+        total: 21,
+        rows: [peopleRow("PPL_FULA", "Peul", { exactMatch: true })],
+      };
+      const laterPage = {
+        total: 21,
+        rows: [peopleRow("PPL_PEUL_X", "Peul du Nord")],
+      };
+      rpc.mockImplementation(
+        (fn: string, args: Record<string, unknown> = {}) => {
+          if (fn === "afrik_search_peoples")
+            return Promise.resolve({
+              data: args.p_offset === 0 ? exactFirst : laterPage,
+              error: null,
+            });
+          if (fn === "afrik_search_patronymes") {
+            const rows =
+              args.p_exact_elsewhere === true ? [] : soundAlikesOfPeul();
+            return Promise.resolve({
+              data: { total: rows.length, rows },
+              error: null,
+            });
+          }
+          if (fn === "afrik_search_leads")
+            return Promise.resolve({ data: { rows: [] }, error: null });
+          return Promise.resolve({ data: { total: 0, rows: [] }, error: null });
+        }
+      );
+
+      const result = await ftsSearchEntities({
+        q: "peul",
+        limit: 20,
+        offset: 20,
+      });
+
+      expect(result.patronymes).toEqual([]);
+      expect(result.patronymesTotal).toBe(0);
+      expect(result.peoples.map((p) => p.id)).toEqual(["PPL_PEUL_X"]);
+    });
+
+    // GWT 2: a match that is not exact leaves the phonetic bridge in place.
+    // @req REQ-201
+    it("still reaches « Keïta » from « Keyta » when another kind matches without being exact", async () => {
+      peoplesPayload = {
+        total: 1,
+        rows: [peopleRow("PPL_KEYTA_X", "Keytaba", { exactMatch: false })],
+      };
+      patronymesPayload = {
+        total: 1,
+        rows: [patronymeRow("PATR_KEITA", "Keïta")],
+      };
+      phoneticOnlyIds.add("PATR_KEITA");
+
+      const result = await ftsSearchEntities({
+        q: "Keyta",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(result.patronymes.map((p) => p.nameMain)).toEqual(["Keïta"]);
+      expect(result.patronymesTotal).toBe(1);
+      expect(rpc).not.toHaveBeenCalledWith(
+        "afrik_search_patronymes",
+        expect.objectContaining({ p_exact_elsewhere: true })
+      );
+    });
+
+    // Until migration 108 reaches a database, the old function does not know
+    // the flag: the search keeps the answer it gave before, it does not fail.
+    // @req REQ-201
+    it("keeps the earlier answer when the database does not know the flag yet", async () => {
+      peoplesPayload = {
+        total: 1,
+        rows: [peopleRow("PPL_FULA", "Peul", { exactMatch: true })],
+      };
+      patronymesPayload = { total: 4, rows: soundAlikesOfPeul() };
+      withholdError = { code: "PGRST202", message: "no matching function" };
+
+      const result = await ftsSearchEntities({
+        q: "peul",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(result.patronymesTotal).toBe(4);
+    });
+
+    // @req REQ-201
+    it("fails the search on any other error of the withholding call", async () => {
+      peoplesPayload = {
+        total: 1,
+        rows: [peopleRow("PPL_FULA", "Peul", { exactMatch: true })],
+      };
+      patronymesPayload = { total: 4, rows: soundAlikesOfPeul() };
+      withholdError = { code: "57014", message: "statement timeout" };
+
+      await expect(
+        ftsSearchEntities({ q: "peul", limit: 20, offset: 0 })
+      ).rejects.toMatchObject({ code: "57014" });
+    });
   });
 
   // @req REQ-196
