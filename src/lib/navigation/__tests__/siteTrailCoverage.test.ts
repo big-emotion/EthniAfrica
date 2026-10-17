@@ -212,6 +212,27 @@ describe("every route of the site carries a trail", () => {
   });
 
   /**
+   * The search page draws no trail: its reading opens in the search frame,
+   * which hides it. A name's address is that same reading of one name
+   * (REQ-200), so it reaches the same frame and draws no trail either.
+   */
+  // @req REQ-200
+  it("draws no trail on the search page or a name's address", () => {
+    const frame = "components/search/SearchFeedFrame";
+    for (const route of [
+      path.join("atlas", "recherche", "page.tsx"),
+      path.join("atlas", "recherche", "[name]", "page.tsx"),
+    ]) {
+      expect(reachesModule(path.join(APP_ROOT, route), [frame]), route).toBe(
+        true
+      );
+    }
+    expect(readFileSync(path.join(SRC_ROOT, `${frame}.tsx`), "utf8")).toMatch(
+      /\bhideTrail\b/
+    );
+  });
+
+  /**
    * The trail is mounted once, in the shell. A page mounting its own on top of
    * the shell's would render two — which is what the four fiche components did
    * to each other before the mount moved, and the reason a page that wants a

@@ -16,6 +16,7 @@ import {
   getCountryRoute,
   getFamilyRoute,
   getLocalizedRoute,
+  getNameAnswerRoute,
   getPeopleRoute,
 } from "@/lib/routing";
 import type { Language } from "@/types/shared";
@@ -559,5 +560,32 @@ describe("the V1 vocabularies the deleted [section] route used to answer", () =>
         getFamilyRoute(language, "FLG_BANTU")
       );
     }
+  });
+});
+
+describe("a name's address and the redirect tables (REQ-200)", () => {
+  // The address lives below a segment no table holds, so neither table
+  // touches it; the page alone decides its 404 and its one redirect.
+  // @req REQ-200
+  it("leaves every address alone", () => {
+    for (const form of ["Lingala", "Fulɓe", "Traoré"]) {
+      const address = getNameAnswerRoute("fr", form);
+
+      expect(path(address), form).toBeNull();
+      expect(resolveRenamedModulePath(address), form).toBeNull();
+      expect(
+        resolveCanonicalDeepLink(address, new URLSearchParams()),
+        form
+      ).toBeNull();
+    }
+  });
+
+  // The search page's retired top-level address carries the name below it,
+  // so an old link to a name reaches its address in the one hop.
+  // @req REQ-200
+  it("lands the retired search prefix on the address in one hop", () => {
+    expect(path("/fr/recherche/ful%C9%93e")?.path).toBe(
+      getNameAnswerRoute("fr", "Fulɓe")
+    );
   });
 });
