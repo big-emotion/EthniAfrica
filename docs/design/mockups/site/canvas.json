@@ -14,7 +14,7 @@
       "x": 0,
       "y": 0,
       "w": 1440,
-      "h": 14197,
+      "h": 18757,
       "title": "design-system"
     },
     "search-peul-430.dc.html": {
@@ -84,22 +84,46 @@
       "x": 1840,
       "y": 28435,
       "w": 430,
-      "h": 3350,
+      "h": 2993,
       "expand": "fill"
     },
     "search-unknown-768.dc.html": {
       "x": 2350,
       "y": 28435,
       "w": 768,
-      "h": 2430,
+      "h": 2113,
       "expand": "fill"
     },
     "search-unknown-1440.dc.html": {
       "x": 3198,
       "y": 28435,
       "w": 1440,
-      "h": 2110,
+      "h": 1776,
       "expand": "fill"
+    },
+    "search-state-fiches-430.dc.html": {
+      "x": 1840,
+      "y": 31548,
+      "w": 430,
+      "h": 2600,
+      "expand": "fill",
+      "title": "État · onglet Fiches · « peul » · 430"
+    },
+    "search-state-fiches-768.dc.html": {
+      "x": 2350,
+      "y": 31548,
+      "w": 768,
+      "h": 1710,
+      "expand": "fill",
+      "title": "État · onglet Fiches · « peul » · 768"
+    },
+    "search-state-fiches-1440.dc.html": {
+      "x": 3198,
+      "y": 31548,
+      "w": 1440,
+      "h": 1440,
+      "expand": "fill",
+      "title": "État · onglet Fiches · « peul » · 1440"
     },
     "people-fula-430.dc.html": {
       "x": 5038,
@@ -376,7 +400,7 @@
     },
     "search-state-thin-430.dc.html": {
       "x": 1840,
-      "y": 31905,
+      "y": 34268,
       "w": 430,
       "h": 4400,
       "expand": "fill",
@@ -384,7 +408,7 @@
     },
     "search-state-thin-768.dc.html": {
       "x": 2350,
-      "y": 31905,
+      "y": 34268,
       "w": 768,
       "h": 3360,
       "expand": "fill",
@@ -392,7 +416,7 @@
     },
     "search-state-thin-1440.dc.html": {
       "x": 3198,
-      "y": 31905,
+      "y": 34268,
       "w": 1440,
       "h": 2860,
       "expand": "fill",
@@ -400,7 +424,7 @@
     },
     "search-state-competing-430.dc.html": {
       "x": 1840,
-      "y": 36425,
+      "y": 38788,
       "w": 430,
       "h": 5726,
       "expand": "fill",
@@ -408,7 +432,7 @@
     },
     "search-state-competing-768.dc.html": {
       "x": 2350,
-      "y": 36425,
+      "y": 38788,
       "w": 768,
       "h": 4360,
       "expand": "fill",
@@ -416,7 +440,7 @@
     },
     "search-state-competing-1440.dc.html": {
       "x": 3198,
-      "y": 36425,
+      "y": 38788,
       "w": 1440,
       "h": 3785,
       "expand": "fill",
@@ -424,7 +448,7 @@
     },
     "search-state-nodate-430.dc.html": {
       "x": 1840,
-      "y": 42271,
+      "y": 44634,
       "w": 430,
       "h": 4100,
       "expand": "fill",
@@ -432,7 +456,7 @@
     },
     "search-state-nodate-768.dc.html": {
       "x": 2350,
-      "y": 42271,
+      "y": 44634,
       "w": 768,
       "h": 3160,
       "expand": "fill",
@@ -440,7 +464,7 @@
     },
     "search-state-nodate-1440.dc.html": {
       "x": 3198,
-      "y": 42271,
+      "y": 44634,
       "w": 1440,
       "h": 2760,
       "expand": "fill",
@@ -589,7 +613,7 @@
     },
     "search-state-peul-fulbe-open-430.dc.html": {
       "x": 1840,
-      "y": 46491,
+      "y": 48854,
       "w": 430,
       "h": 6110,
       "expand": "fill",
@@ -597,7 +621,7 @@
     },
     "search-state-peul-fulbe-open-768.dc.html": {
       "x": 2350,
-      "y": 46491,
+      "y": 48854,
       "w": 768,
       "h": 4240,
       "expand": "fill",
@@ -605,7 +629,7 @@
     },
     "search-state-peul-fulbe-open-1440.dc.html": {
       "x": 3198,
-      "y": 46491,
+      "y": 48854,
       "w": 1440,
       "h": 3760,
       "expand": "fill",
@@ -626,6 +650,9 @@
     "search-unknown-430.dc.html",
     "search-unknown-768.dc.html",
     "search-unknown-1440.dc.html",
+    "search-state-fiches-430.dc.html",
+    "search-state-fiches-768.dc.html",
+    "search-state-fiches-1440.dc.html",
     "search-state-thin-430.dc.html",
     "search-state-thin-768.dc.html",
     "search-state-thin-1440.dc.html",

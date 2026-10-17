@@ -4796,3 +4796,168 @@ button.afh-source-diamond:focus-visible { outline: none; box-shadow: var(--afh-r
    when its column is narrower than word and button together (the readings
    side by side on a fiche at 768), so it never widens that column. */
 .ea-source-tail { display: inline-block; }
+
+/* ============================================================
+   Brief 12 (2026-10-17): the unknown-name page carries its one
+   invitation in the verdict (it reuses .ea-owed-action, so no
+   rule here); the « Fiches » lens sets the fiches that answer
+   to the name apart from the related ones, each card with its
+   own line; the consent strip sits low on the screen, refusing
+   as easy as accepting. Tokens only, apart from fixed sizes:
+   the 44 px target, the 44 × 24 switch, the 430 × 812 stage.
+   ============================================================ */
+
+/* The « Fiches » lens: title, then « Sur ce nom », then « Autour de ce nom ». */
+.ea-lens-title {
+  font-family: var(--afh-font-display); font-weight: 900;
+  font-size: var(--afh-text-h1); line-height: var(--afh-leading-h1);
+  color: var(--afh-text); overflow-wrap: anywhere;
+}
+.ea-fiche-groups { display: flex; flex-direction: column; gap: var(--afh-space-5xl); margin-top: var(--afh-space-md); min-width: 0; }
+.ea-fiche-group { min-width: 0; }
+/* The same heading and note as the Shorts lens (ShortsBlock, grouped). */
+.ea-fiche-group-title {
+  margin: 0; font-size: var(--afh-text-small); font-weight: 700;
+  line-height: var(--afh-leading-small); color: var(--accent-ink);
+}
+.ea-fiche-group-note {
+  margin-top: var(--afh-space-xs);
+  font-size: var(--afh-text-caption); line-height: var(--afh-leading-caption); color: var(--afh-text-soft);
+}
+/* One column below 768: each card now carries a line, too long for half of 382 px. */
+.ea-fiche-grid {
+  display: grid; grid-template-columns: minmax(0, 1fr);
+  gap: var(--afh-space-lg); margin-top: var(--afh-space-lg);
+}
+@media (min-width: 768px) {
+  .ea-fiche-grid:not([data-cols="1"]) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 1200px) {
+  .ea-fiche-grid[data-cols="3"] { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .ea-fiche-grid[data-cols="4"] { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+.ea-fiche-card {
+  display: flex; flex-direction: column; justify-content: center; gap: var(--afh-space-xs);
+  height: 100%; min-height: 44px; padding: var(--afh-space-lg) var(--afh-space-2xl);
+  border: 1px solid var(--afh-border); border-radius: var(--afh-radius-lg);
+  background: var(--afh-surface); color: var(--afh-text);
+}
+a.ea-fiche-card:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
+.ea-fiche-kind {
+  font-size: var(--afh-text-eyebrow); font-weight: 600; text-transform: uppercase;
+  letter-spacing: var(--afh-eyebrow-tracking); line-height: var(--afh-leading-eyebrow);
+  color: var(--afh-text-soft);
+}
+.ea-fiche-name {
+  font-family: var(--afh-font-display); font-weight: 700;
+  font-size: var(--afh-text-body); line-height: var(--afh-leading-h3); overflow-wrap: anywhere;
+}
+.ea-fiche-line { font-size: var(--afh-text-caption); line-height: var(--afh-leading-caption); color: var(--afh-text-soft); }
+.ea-fiche-pills { display: flex; flex-wrap: wrap; gap: var(--afh-space-sm); margin-top: var(--afh-space-sm); }
+.ea-fiche-pills a {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--afh-space-lg);
+  border: 1px solid var(--afh-border); border-radius: var(--afh-radius-full);
+  font-size: var(--afh-text-caption); font-weight: 600; line-height: var(--afh-leading-caption);
+}
+.ea-fiche-pills a:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
+.ea-fiche-example { margin-top: var(--afh-space-lg); font-size: var(--afh-text-caption); line-height: var(--afh-leading-caption); }
+.ea-lens-back {
+  display: inline-flex; align-items: center; min-height: 44px;
+  font-weight: 700; color: var(--accent-ink);
+  text-decoration: underline; text-underline-offset: 4px;
+}
+.ea-lens-back:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
+/* Main only: a 430 frame inside the 1440 board keeps the phone's one column. */
+.ds-mobile .ea-fiche-grid[data-cols] { grid-template-columns: minmax(0, 1fr); }
+.ds-mobile .ea-lens-title { font-size: var(--afh-text-h2); }
+
+/* The consent strip. Its layout follows its own width (a container query),
+   which is the viewport's on the site, where it runs full width, and the
+   frame's on Main. Steps at 768 and 1200, the site's breakpoints. */
+.ea-consent {
+  container: ea-consent / inline-size;
+  background: var(--afh-bg); border-top: 1px solid var(--afh-border); color: var(--afh-text);
+}
+/* On arrival the strip itself holds the focus, with no ring: no button is
+   pre-selected, so neither answer is the one a key press gives. */
+.ea-consent:focus { outline: none; }
+.ea-consent-inner {
+  display: flex; flex-direction: column; gap: var(--afh-space-md);
+  max-width: var(--afh-shell-max); margin-inline: auto; padding: var(--afh-space-2xl);
+}
+.ea-consent-text { font-size: var(--afh-text-small); line-height: var(--afh-leading-small); color: var(--afh-text-soft); }
+.ea-consent-controls { display: flex; flex-direction: column; gap: var(--afh-space-md); }
+/* « Refuser » and « Accepter »: one style, one ink, one weight, one width. */
+.ea-consent-choice { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: var(--afh-space-md); }
+.ea-consent-button {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 44px; padding: var(--afh-space-md) var(--afh-space-2xl);
+  border: 1px solid var(--afh-text); border-radius: var(--afh-radius-lg);
+  background: transparent; color: var(--afh-text);
+  font-size: var(--afh-text-small); font-weight: 600; line-height: 1.4; text-align: center;
+}
+.ea-consent-button:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
+/* The quiet pair is drawn like the footer's legal links, where
+   « Gestion des cookies » is already a button among links. */
+.ea-consent-quiet { display: flex; flex-wrap: wrap; align-items: center; gap: 0 var(--afh-space-5xl); }
+.ea-consent-quiet > * {
+  display: inline-flex; align-items: center; min-height: 44px;
+  font-size: var(--afh-text-small); font-weight: 600; line-height: 1.4; color: var(--afh-text-soft);
+  text-decoration: underline; text-underline-offset: 4px;
+  text-decoration-color: color-mix(in srgb, var(--afh-text-soft) 40%, transparent);
+}
+.ea-consent-quiet > *:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
+@container ea-consent (min-width: 768px) {
+  .ea-consent-inner { padding-inline: var(--afh-space-5xl); }
+  /* The source order stays « Refuser », « Accepter », then the quiet pair. */
+  .ea-consent-controls { flex-direction: row-reverse; justify-content: space-between; align-items: center; gap: var(--afh-space-2xl); }
+  .ea-consent-choice { flex: none; }
+  .ea-consent-button { padding-inline: var(--afh-space-5xl); }
+}
+@container ea-consent (min-width: 1200px) {
+  .ea-consent-inner {
+    display: grid; grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas: "panel ." "text controls";
+    align-items: center; column-gap: var(--afh-space-6xl); row-gap: 0;
+    padding-inline: var(--afh-space-6xl);
+  }
+  .ea-consent-text { grid-area: text; }
+  /* The gap lives on the panel: closed, its empty row adds nothing. */
+  .ea-consent-panel { grid-area: panel; margin-bottom: var(--afh-space-2xl); }
+  .ea-consent-controls { grid-area: controls; }
+}
+/* « Personnaliser » open: the panel opens above the buttons. */
+.ea-consent-panel {
+  display: flex; flex-direction: column; gap: var(--afh-space-lg);
+  padding: var(--afh-space-2xl);
+  border: 1px solid var(--afh-border); border-radius: var(--afh-radius-lg); background: var(--afh-surface);
+}
+.ea-consent-panel-text { font-size: var(--afh-text-small); line-height: var(--afh-leading-small); color: var(--afh-text-soft); }
+.ea-consent-switches { display: flex; flex-direction: column; gap: var(--afh-space-md); }
+.ea-consent-switches li { display: flex; align-items: center; justify-content: space-between; gap: var(--afh-space-2xl); }
+.ea-consent-switch-text { display: flex; flex-direction: column; gap: var(--afh-space-xs); min-width: 0; }
+.ea-consent-switch-label { font-size: var(--afh-text-small); font-weight: 600; line-height: var(--afh-leading-small); color: var(--afh-text); }
+.ea-consent-switch-desc { font-size: var(--afh-text-caption); line-height: var(--afh-leading-caption); color: var(--afh-text-soft); }
+/* A switch: a 44 px target around a 44 × 24 track, in ink, never the accent. */
+.ea-switch { display: inline-flex; align-items: center; justify-content: center; flex: none; min-width: 44px; min-height: 44px; }
+.ea-switch:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
+.ea-switch-track {
+  position: relative; display: block; width: 44px; height: 24px;
+  border-radius: var(--afh-radius-full); background: var(--afh-text-muted);
+}
+.ea-switch-track::after {
+  content: ""; position: absolute; top: 2px; left: 2px; width: 20px; height: 20px;
+  border-radius: var(--afh-radius-full); background: var(--afh-surface);
+}
+.ea-switch[aria-checked="true"] .ea-switch-track { background: var(--afh-text); }
+.ea-switch[aria-checked="true"] .ea-switch-track::after { left: 22px; }
+.ea-switch:disabled { cursor: not-allowed; opacity: 0.5; }
+.ea-consent-save { align-self: stretch; }
+@container ea-consent (min-width: 768px) {
+  .ea-consent-panel-text { max-width: var(--afh-measure-prose); }
+  .ea-consent-save { align-self: flex-start; padding-inline: var(--afh-space-5xl); }
+}
+/* Main only: the strip over the first screen of a page, 430 × 812. */
+.ea-consent-stage { position: relative; width: 432px; height: 814px; overflow: hidden; }
+.ea-consent-stage > img { display: block; width: 430px; height: 812px; }
+.ea-consent-stage > .ea-consent { position: absolute; left: 0; right: 0; bottom: 0; }

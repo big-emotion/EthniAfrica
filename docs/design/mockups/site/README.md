@@ -38,6 +38,7 @@ two is wrong, and the fix is decided, not improvised.
 |                   | Résultat « bassa » (several subjects)        | `search-bassa`       |
 |                   | Résultat « congo » (two countries)           | `search-congo`       |
 |                   | Résultat d'un nom inconnu                    | `search-unknown`     |
+|                   | État : onglet Fiches (« peul »)              | `search-state-fiches` |
 |                   | État mince (« wolof »)                       | `search-state-thin`  |
 |                   | État : origines concurrentes (« yamoussoukro ») | `search-state-competing` |
 |                   | État : origine non datée (exemple à remplacer) | `search-state-nodate` |
@@ -78,6 +79,7 @@ are recorded whole, folded as the site folds them.
 | 2026-10-16 | [Brief 9, « Notre démarche »](../briefs/09-our-approach.md) | `approach` (new), `about`, `Main`; the footer (state B) on every board except `name-traore` |
 | 2026-10-17 | [Brief 10, the story link and folded chapters](../briefs/10-fiche-story-link-and-folds.md), proposed and awaiting approval; with it the fiche heads of ETNI-2047 (REQ-151) and the filed name « Peul » | `people-fula`, `people-bassa`, `people-thin-alaba`, `language-lingala`, `language-thin-havu`, `family-bantu`, `family-mande` (with the « L'empreinte » words of PR #1813), `country-civ` and its three state boards, `people-state-fula-culture-open` and `country-state-civ-names-open` (new), `search-peul` (the fiche button only), `Main` |
 | 2026-10-17 | [Brief 11, from the searched name to the self-name, one video, labelled sources](../briefs/11-result-page-self-name-handoff.md), proposed and awaiting approval | `search-peul`, `search-bassa` and `search-state-peul-fulbe-open` (new) for the hand-off, the video row and the period rule (also on `search-congo`); the labelled sources button on those and on `search-state-competing`, `search-state-thin`, `language-lingala`, `country-civ`, `country-state-civ-quaqua`; `Main` |
+| 2026-10-17 | [Brief 12, the unknown name, the « Fiches » lens and the consent strip](../briefs/12-unknown-name-fiches-lens-consent.md), proposed and awaiting approval | `search-unknown` (the invitation in the verdict, no empty shelf, no owed cards); `search-state-fiches` (new); `Main` (the fiche cards and the lens states, the consent strip at 430, 768 and 1440, closed and open, and over the first screen of `search-peul-430`) |
 
 The boards of a changed page no longer record v5.2.0: they are the approved
 target, and the code is behind them until the implementation lands.
@@ -97,7 +99,9 @@ target, and the code is behind them until the implementation lands.
   (`public/africa.png`) and the BIG EMOTION credit (`public/brand/big-emotion.svg`).
   It also holds one poster, `short-fulbe.jpg`, copied from
   `public/images/discoveries/videos/fulbe-sept-noms-un-sens-ouvert.jpg`, for the
-  video row of brief 11.
+  video row of brief 11, and `search-peul-430-first-screen.jpg`, a capture of the
+  first 430 × 812 px of `search-peul-430`, the page behind the consent strip on
+  `Main` (brief 12). Capture it again when that board changes.
 - `canvas.json` is the canvas index as the editor saved it: board positions,
   sizes and the four group titles.
 
