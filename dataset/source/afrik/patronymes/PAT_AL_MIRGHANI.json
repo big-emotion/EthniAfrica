@@ -13,7 +13,10 @@
       "attestations": [
         {
           "countryId": "SDN",
-          "sourceRefs": ["afrik-candidate-queue", "oxford-al-mirghani"]
+          "sourceRefs": [
+            "afrik-candidate-queue",
+            "shahi-1988-personal-names-sudan"
+          ]
         }
       ]
     },
@@ -22,7 +25,10 @@
       "attestations": [
         {
           "countryId": "SDN",
-          "sourceRefs": ["afrik-candidate-queue", "oxford-al-mirghani"]
+          "sourceRefs": [
+            "afrik-candidate-queue",
+            "shahi-1988-personal-names-sudan"
+          ]
         }
       ]
     }
@@ -33,9 +39,9 @@
     "oralTraditions": [],
     "writtenChronicles": [
       {
-        "claim": "L’étude d’Oxford indique qu’au Soudan le nom Al-Mirghani signale les descendants du fondateur de l’ordre soufi Khatmiyya. Cette tradition écrite concerne cette famille religieuse et ne doit pas être étendue aux homographes sans preuve.",
+        "claim": "Selon Ahmed al-Shahi (1988), chez les riverains du Nil dans le nord du Soudan, le nom Al-Mirghani signale un descendant du fondateur de l'ordre soufi Khatmiyya et, par extension, un adepte de cet ordre. Cette tradition écrite concerne cette famille religieuse et ne doit pas être étendue aux homographes sans preuve.",
         "claimStatus": "claimed",
-        "sourceRefs": ["oxford-al-mirghani"]
+        "sourceRefs": ["shahi-1988-personal-names-sudan"]
       }
     ],
     "linguisticReconstructions": []
@@ -51,7 +57,7 @@
     {
       "countryId": "SDN",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue", "oxford-al-mirghani"]
+      "sourceRefs": ["afrik-candidate-queue", "shahi-1988-personal-names-sudan"]
     }
   ],
   "alliances": [],
@@ -68,12 +74,12 @@
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
     },
     {
-      "sourceKey": "oxford-al-mirghani",
-      "title": "Sufism and Politics in Sudan — Oxford Research Archive",
+      "sourceKey": "shahi-1988-personal-names-sudan",
+      "title": "Some personal names and nicknames among the riverain people of northern Sudan",
       "url": "https://ora.ox.ac.uk/objects/uuid%3A6cba3331-02f2-4ae9-af12-ce697e4dd5c8/files/rv979v447b",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Travail universitaire consulté le 2 septembre 2026. Il présente Al-Mirghani comme nom des descendants du fondateur de la Khatmiyya ; aucune généalogie exhaustive des porteurs contemporains n’y est établie."
+      "notes": "Ahmed al-Shahi, Journal of the Anthropological Society of Oxford 19(2), 1988, texte intégral déposé à l'Oxford University Research Archive, consulté le 2 septembre 2026 et relu le 16 octobre 2026. Page 135 : les noms de famille At-Mahdi, At-Mirghani, At-Hindi, At-Sammani et At-Maidhub indiquent un descendant du fondateur d'un ordre soufi et, par extension, un adepte de cet ordre ; Mirghani, « the family name of the founder of the Khatmiyya Sufi order », indique chez les Shaygiyya et d'autres tribus une association à la Khatmiyya (note 9 : le fondateur est Sayyid Muhammed Othman Al-Mirghani). L'article ne donne aucune généalogie des porteurs d'aujourd'hui."
     }
   ],
   "gaps": [

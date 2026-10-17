@@ -6,7 +6,7 @@
   },
   "id": "PAT_AMADHILA",
   "nameMain": "Amadhila",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Amadhila",
@@ -27,16 +27,7 @@
       ]
     },
     {
-      "spelling": "Amathila",
-      "attestations": [
-        {
-          "countryId": "NAM",
-          "sourceRefs": ["mbenzi-2024-amadhila"]
-        }
-      ]
-    },
-    {
-      "spelling": "Amathila",
+      "spelling": "Amadila",
       "attestations": [
         {
           "countryId": "NAM",
@@ -46,7 +37,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -102,6 +93,10 @@
     {
       "fieldPath": "homonyms",
       "reason": "La recherche web combinant « Amadhila », « patronyme », « origine », « clan », « alliance », « caste », « obituary » et « homonyme », qui comprenait le terme « homonyme », et la lecture de « The Anglicisation of Oshiwambo Names » n'ont pas établi de lignée homonyme d'origine distincte."
+    },
+    {
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom de personne oshiwambo, que Petrus Mbenzi et Minna Saarelma-Maunumaa rattachent au mot pour « oiseaux ». Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant. La fiche reste donc parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "transmissionMode",

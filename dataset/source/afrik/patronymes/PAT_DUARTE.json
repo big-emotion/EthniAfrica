@@ -6,7 +6,7 @@
   },
   "id": "PAT_DUARTE",
   "nameMain": "Duarte",
-  "nameSystem": "clan_name",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Duarte",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "bilateral",
-  "designatedSocialUnit": "lineage",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],

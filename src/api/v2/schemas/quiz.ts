@@ -18,7 +18,6 @@ import { z } from "zod";
 
 import { isQuizThemeId } from "@/lib/quiz/segmentPolicy";
 import { SOURCE_KINDS } from "@/types/sources";
-import type { QuizScopeKind } from "@/lib/quiz/quizScope";
 
 /** ISO 3166-1 alpha-3, as `afrik_countries.id` stores it. */
 const COUNTRY_ID_PATTERN = /^[A-Za-z]{3}$/;
@@ -231,5 +230,3 @@ export const quizSessionDataSchema = z.object({
 });
 
 export type QuizSessionData = z.infer<typeof quizSessionDataSchema>;
-
-export type { QuizScopeKind };

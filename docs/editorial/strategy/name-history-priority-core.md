@@ -464,6 +464,19 @@ nearest box and its `nameSystem` gap now says that the box exists but that no
 source read shows the transmission. The unit is `other`, or `lineage` where an
 account shows a family line (Akhannouch, Ben Badis, Eyoum). 28 fiches moved.
 
+**Third pass, 2026-10-16 (waves 21 to 23).** The same rule moved 13 Portuguese
+family names (Monteiro, Bandeira, Menezes, Fernandes, Lopes, Duarte, Costa,
+Lima, Neves, Carvalho, Ferreira, Nascimento, Neto) to
+`hereditary_family_name`, unit `other`: each history, written from Leite de
+Vasconcelos (1928) and the Dictionary of American Family Names, shows the name
+borne as a family name and tells no clan. Five fiches whose histories tell a
+personal name and no transmission as a surname (Amadhila, Hamutenya, Iipumbu,
+Kgosi, Mothibi) took `non_hereditary_patronymic`, unit `individual`. Ngcobo,
+Madiba, Khama, Mahlangu and Gbaguidi stay `clan_name`; the pull request lists
+why. Counts by script: `hereditary_family_name` 28 to 41,
+`non_hereditary_patronymic` 277 to 282, `clan_name` 390 to 370 (two of them
+folded away).
+
 # The long tail: wave order
 
 The priority core above is a short list picked by hand. The rest of the corpus

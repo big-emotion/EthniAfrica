@@ -27,6 +27,10 @@
         {
           "countryId": "GIN",
           "sourceRefs": ["hga-iv-niane", "bamadaba-jamuw"]
+        },
+        {
+          "countryId": "SLE",
+          "sourceRefs": ["bamadaba-jamuw", "corpus-ppl-kuranko-clans"]
         }
       ]
     },
@@ -64,6 +68,11 @@
       "peopleId": "PPL_MALINKE",
       "status": "attested",
       "sourceRefs": ["afrik-candidate-queue", "hga-iv-person"]
+    },
+    {
+      "peopleId": "PPL_KURANKO",
+      "status": "attested",
+      "sourceRefs": ["corpus-ppl-kuranko-clans"]
     }
   ],
   "countries": [
@@ -71,6 +80,11 @@
       "countryId": "GIN",
       "status": "attested",
       "sourceRefs": ["afrik-candidate-queue", "hga-iv-niane"]
+    },
+    {
+      "countryId": "SLE",
+      "status": "supposed",
+      "sourceRefs": ["corpus-ppl-kuranko-clans"]
     }
   ],
   "alliances": [],
@@ -125,6 +139,14 @@
       "tier": "referenced",
       "source_kind": "archive",
       "notes": "Louis-Gustave Binger, Hachette, Paris, 1892, deux tomes ; récit du voyage de 1887-1889, lu dans la réédition numérique du Projet Gutenberg le 16 octobre 2026. Officier français en mission, cité pour les formes qu'il écrit."
+    },
+    {
+      "sourceKey": "corpus-ppl-kuranko-clans",
+      "title": "EthniAfrica — fiche du peuple Kuranko, organisation clanique",
+      "url": null,
+      "tier": "unverified",
+      "source_kind": "repository",
+      "notes": "Reprise du chapitre sur l'organisation clanique de la fiche sur les Kuranko et de celui qui présente les noms du peuple et de ses groupes. Koroma y figure à la fois parmi les groupes kuranko et parmi les clans qui « jouent des rôles importants ». La fiche place les Kuranko surtout en Sierra Leone, et aussi en Guinée."
     }
   ],
   "gaps": [

@@ -6,7 +6,7 @@
   },
   "id": "PAT_COSTA",
   "nameMain": "Costa",
-  "nameSystem": "clan_name",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Costa",
@@ -28,7 +28,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -79,7 +79,7 @@
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+      "reason": "Nous ne documentons pas encore comment le nom Costa passe d'une génération à l'autre : les sources lues disent d'où il vient, pas la règle qui le transmet."
     },
     {
       "fieldPath": "peoples",

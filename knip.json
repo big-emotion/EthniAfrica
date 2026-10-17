@@ -1,5 +1,5 @@
 {
-  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "$schema": "https://unpkg.com/knip@6/schema.json",
   "entry": [
     "src/app/**/{page,layout,loading,error,global-error,not-found,template,default,forbidden,unauthorized,route,sitemap,robots,manifest,icon,apple-icon,opengraph-image,twitter-image}.{ts,tsx}!",
     "src/{proxy,instrumentation,instrumentation-client}.ts!",
@@ -13,7 +13,6 @@
 
     "scripts/**/*.{ts,mjs,cjs}!",
     "e2e/**/*.ts",
-    "src/test/server-only-stub.ts",
     "src/test/resolveAsyncServerComponents.tsx",
     "src/lib/search/resultGrammar.ts!",
     "src/lib/search/__fixtures__/*.ts!",
@@ -31,7 +30,17 @@
     "e2e/**/*.ts"
   ],
   "tailwind": { "entry": ["tailwind.config.ts!"] },
-  "ignoreDependencies": ["sharp", "puppeteer", "tailwindcss-animate"],
-  "ignoreBinaries": ["vale"],
+  "ignoreDependencies": [
+    "puppeteer",
+    // The default run hints this is redundant, but `knip --production` does
+    // not follow tailwind.config.ts and reports it unused without this line.
+    "tailwindcss-animate"
+  ],
+  "ignoreBinaries": [
+    // System tools the video scripts and tests run through node:child_process,
+    // which knip 6 now reads; they come from the OS, never from an npm package.
+    "ffmpeg",
+    "ffprobe"
+  ],
   "ignoreExportsUsedInFile": true
 }

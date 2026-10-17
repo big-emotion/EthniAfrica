@@ -27,7 +27,7 @@
     band.innerHTML = '<div class="ec-series-text"><span class="ec-series-name">' + fr(sr.name) + '</span><span class="ec-series-sep"> · </span><span class="ec-series-episode">n° ' + esc(String(sr.episode)) + '</span></div>';
     return band;
   }
-  var VERSION = '1.8.0-proposition';
+  var VERSION = '1.9.0-proposition';
   /* 1.6.0: the project's signature line, one constant, never a card field.
      Three lines, broken after each comma; « nous-mêmes » keeps the ordinary
      hyphen U+002D inside a no-wrap line (none of the three faces draws U+2011). */

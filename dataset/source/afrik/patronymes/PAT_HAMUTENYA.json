@@ -6,7 +6,7 @@
   },
   "id": "PAT_HAMUTENYA",
   "nameMain": "Hamutenya",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Hamutenya",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -81,6 +81,10 @@
     {
       "fieldPath": "homonyms",
       "reason": "la recherche web combinant « Hamutenya », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la consultation de la page « Kavango West Region » du ministère namibien de la Santé n'ont pas établi de lignée homonyme d'origine distincte."
+    },
+    {
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom de personne ambo, formé sur omutenya, « jour », que l'on donne à un garçon. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant. La fiche reste donc parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "transmissionMode",

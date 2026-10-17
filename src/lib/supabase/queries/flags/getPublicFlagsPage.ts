@@ -6,13 +6,10 @@ import {
 } from "@/lib/supabase/queries/flags/publicFlagsPageQuery";
 
 export type {
-  PublicFlagFilters,
   PublicFlagKind,
-  PublicFlagListItem,
   PublicFlagsPage,
   PublicFlagsPageOptions,
   PublicFlagStatus,
-  PublicFlagTarget,
   PublicFlagTargetType,
 } from "@/lib/supabase/queries/flags/publicFlagsPageQuery";
 export { isValidPublicFlagsCursor } from "@/lib/supabase/queries/flags/publicFlagsPageQuery";
