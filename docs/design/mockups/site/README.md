@@ -44,12 +44,14 @@ two is wrong, and the fix is decided, not improvised.
 | 2 · Peoples       | `PPL_FULA`                                   | `people-fula`        |
 |                   | `PPL_BASSA`                                  | `people-bassa`       |
 |                   | `PPL_ALABA`                                  | `people-thin-alaba`  |
+|                   | État : chapitre déplié, « Culture et société » de `PPL_FULA` | `people-state-fula-culture-open` |
 | 3 · Fiches        | Langue `lin`                                 | `language-lingala`   |
 |                   | État mince : langue `hav` (kihavu)           | `language-thin-havu` |
 |                   | `FLG_BANTU`                                  | `family-bantu`       |
 |                   | `FLG_MANDE`                                  | `family-mande`       |
 |                   | Pays `CIV`                                   | `country-civ`        |
 |                   | État : explications de Côte de Quaqua        | `country-state-civ-quaqua` |
+|                   | État : liste dépliée, les 47 noms attestés en Côte d'Ivoire | `country-state-civ-names-open` |
 |                   | État mince : pays `GAB`                      | `country-state-thin-gab` |
 |                   | État : nom partagé, pays `COG`               | `country-state-shared-congo` |
 | 4 · Other pages   | Nom `PAT_TRAORE`                             | `name-traore`        |
@@ -73,6 +75,7 @@ are recorded whole, folded as the site folds them.
 | 2026-10-15 | [Brief 4, the language-family fiche](../briefs/04-language-family.md) | `family-bantu`, `family-mande` |
 | 2026-10-15 | [Brief 5, the country fiche](../briefs/05-country.md) | `country-civ`, `country-state-civ-quaqua`, `country-state-thin-gab`, `country-state-shared-congo` (new) |
 | 2026-10-16 | [Brief 9, « Notre démarche »](../briefs/09-our-approach.md) | `approach` (new), `about`, `Main`; the footer (state B) on every board except `name-traore` |
+| 2026-10-17 | [Brief 10, the story link and folded chapters](../briefs/10-fiche-story-link-and-folds.md), proposed and awaiting approval; with it the fiche heads of ETNI-2047 (REQ-151) and the filed name « Peul » | `people-fula`, `people-bassa`, `people-thin-alaba`, `language-lingala`, `language-thin-havu`, `family-bantu`, `family-mande` (with the « L'empreinte » words of PR #1813), `country-civ` and its three state boards, `people-state-fula-culture-open` and `country-state-civ-names-open` (new), `search-peul` (the fiche button only), `Main` |
 
 The boards of a changed page no longer record v5.2.0: they are the approved
 target, and the code is behind them until the implementation lands.
