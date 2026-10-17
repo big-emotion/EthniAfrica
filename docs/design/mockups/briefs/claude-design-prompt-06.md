@@ -11,12 +11,17 @@ Nothing needs attaching. Do not start before the operator has read this text.
 The canvas was confirmed free on 16 October 2026 (brief 9 recorded in #1791 and
 #1792).
 
+Updated on 2026-10-17: item 6 adds the link to the name's story of brief 10
+([`10-fiche-story-link-and-folds.md`](10-fiche-story-link-and-folds.md)). Paste
+this text after brief 10's boards are approved and recorded, so the link is on
+`Main`.
+
 ## Text to paste
 
 ```text
 We start brief 6, the family-name fiche. Briefs 1 to 5 and 9 are approved: do not touch the search, people, language, family, country or approach boards. The same rules as before apply: mockups first, 430 px then 768 then 1440, real French copy, existing tokens only, a source shows its type and never a tier, no name is crowned, the site never affirms, the thesis only in the closing band as [THÈSE — texte à fixer] and not shown until its text is fixed. Work in the same canvas and edit the existing board.
 
-STEP 0 — before changing anything, reply in 10 lines: which board you can see (name-traore at 430, 768 and 1440); its chapters in order; the height of each chapter at 430 px and the total; whether the components approved in briefs 1 to 5 and 9 are on Main so you can reuse them (the fiche variant of « Les sources parlent », the closing band « Ce que nous ne savons pas encore », « Poursuivre avec un autre nom », the figure with its caveat, footer state B); whether the board shows the history of the names (Traoré, Tarawele) anywhere; and whether « Origine » and the approved « Les sources parlent » overlap. Change nothing yet.
+STEP 0 — before changing anything, reply in 10 lines: which board you can see (name-traore at 430, 768 and 1440); its chapters in order; the height of each chapter at 430 px and the total; whether the components approved in briefs 1 to 5 and 9 are on Main so you can reuse them (the fiche variant of « Les sources parlent », the closing band « Ce que nous ne savons pas encore », « Poursuivre avec un autre nom », the figure with its caveat, footer state B, and the link to the name's story of brief 10); whether the board shows the history of the names (Traoré, Tarawele) anywhere; and whether « Origine » and the approved « Les sources parlent » overlap. Change nothing yet.
 
 BOARD TO CHANGE, at -430, -768 and -1440: name-traore. Main changes only if a shared component does.
 
@@ -39,7 +44,8 @@ WHAT TO CHANGE
 3. Turn « Poursuivre » into « Poursuivre avec un autre nom », reusing the approved component: the allied names that have a fiche and a summary, each with a reason (the first sentence of its summary). Remove Abaza and any target without a fiche or summary.
 4. Footer state B on the three boards, as on the other boards of the canvas: the link « Notre démarche » after « À propos » in « Le projet », and the signature line under the tagline.
 5. Length — report and propose, do NOT apply. name-traore is about 13,191 px at 430 px (14 screens). « Origine » (5,425 characters) and « Sources » (6,126) are 81 % of the text. Measure each chapter at 430 px. Then propose, as a list with the pixels each change would save, what could be folded or shortened: the alliances sentence; the sources list; the oral accounts behind a one-line summary; the « Origine » types. The board keeps today's state until I decide.
-Do not touch the hero, the chapter bar, « Le nom », « Peuples et pays concernés », « Porteurs et porteuses » or the sources list, except where item 5 says so.
+6. Add the link to the name's story, reused from Main as brief 10 drew it: « Suivre l'histoire du nom Traoré », label then the action link's arrow, with under it, in caption size, « La page du nom présente ce que disent les sources : qui l'a donné, à qui, quand et pourquoi, en remontant le temps. » It is the last line of « Le nom », before the next chapter. It names the name as the name story spells it, Traoré, under an h1 that reads « Traore » today (item d leaves the h1 to me). On the two state boards it names Kollo and Sarr, whose fiches have a name story.
+Do not touch the hero, the chapter bar, « Le nom » (except the link of item 6), « Peuples et pays concernés », « Porteurs et porteuses » or the sources list, except where item 5 says so.
 
 REAL DATA FOR THE BOARDS (PAT_TRAORE)
 - Summary: « Le nom Traoré est un nom de clan, ou jamu, porté par des familles bambara et malinké. En bambara et en malinké, il se dit Tarawele ; Traoré en est la graphie française, et d'autres graphies existent : Traore et Taraore. Nous présentons plus bas la seule explication de son origine que nous connaissons. »
