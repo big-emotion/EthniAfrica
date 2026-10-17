@@ -21,7 +21,6 @@ carries for the home and are listed at the end.
 | ------------------------- | ----------------------------- | ----------------------------------------------------------------------------------------- | -------------------------------------------------- | ------------- |
 | `monrovia`                | `monrovia.jpg`                | Map of Liberia, c. 1870, annotated in ink                                                 | American Colonization Society / D. McClelland      | Public domain |
 | `bantou`                  | `bantou.jpg`                  | Guthrie's Bantu zones (with Tervuren's zone J)                                            | Edricson                                           | CC BY-SA 3.0  |
-| `cote-ivoire`             | `cote-ivoire.jpg`             | Tusk Carving with Figures, 19th c., Brooklyn Museum 1992.136.14                           | Unknown                                            | CC BY 3.0     |
 | `lingala`                 | `lingala.jpg`                 | The paddle steamer _Livingstone_ at Baringa, Congo, c. 1900-1915                          | Unknown                                            | Public domain |
 | `personne-relationnelle`  | `personne-relationnelle.jpg`  | Annual meeting of the men of Ribina, Nigeria, 1970-1973 (ASC Leiden, Rietveld Collection) | Aart Rietveld                                      | CC BY-SA 4.0  |
 | `afrique`                 | `afrique.jpg`                 | Antonine Baths at Carthage, Tunisia (2007)                                                | Institute for the Study of the Ancient World       | CC BY 2.0     |
@@ -63,9 +62,8 @@ the descriptions above.
   and a 2020 upload date. The two do not obviously agree; the credit follows
   what Commons asserts rather than what the dates suggest, and the file page is
   the place to settle it if it ever matters.
-- **`cote-ivoire`** and **`lingala`** carry no named author on Commons. They are
-  credited to the holding institution and to the public domain respectively,
-  which is what the file pages support.
+- **`lingala`** carries no named author on Commons. It is credited to the
+  public domain, which is what the file page supports.
 
 ## Second batch — the corpus's naming mechanisms (2026-09-03)
 

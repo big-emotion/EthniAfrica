@@ -69,9 +69,12 @@ export interface DidYouKnowFact {
   entities: DidYouKnowEntity[];
   tier: DidYouKnowTier;
   /**
-   * Optional only because six facts predate the field. Every fact added
+   * Optional only because five facts predate the field. Every fact added
    * from now on carries its provenance; `sourcedFactsCiteTheirClaim` in the
    * bank's tests holds that line.
+   *
+   * The first source is the one the headline rests on: the fiche summary and
+   * the discoveries card print that one alone.
    */
   sources?: DidYouKnowSource[];
 }
@@ -108,20 +111,6 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
       { kind: "people", id: "PPL_ZULU", label: "Zoulou" },
       { kind: "people", id: "PPL_XHOSA", label: "Xhosa" },
       { kind: "country", id: "ZAF", label: "Afrique du Sud" },
-    ],
-    tier: "referenced",
-  },
-  {
-    id: "cote-ivoire",
-    headline:
-      "Le nom Côte d’Ivoire est lié au commerce de l’ivoire sur le littoral.",
-    body: [
-      "Les navigateurs portugais employaient Costa do Marfim, « la côte de l’ivoire », pour désigner ce littoral. À l’est, vers Assinie, on rencontrait aussi le nom Côte de l’Or, associé à l’actuel Ghana.",
-      "En 1839, l’officier français Bouët-Willaumez reprend le nom en français et le rend officiel. L’appellation circulait donc avant son adoption administrative. Elle renvoyait aux marchandises échangées sur la côte, sans décrire les peuples qui y vivaient.",
-    ],
-    entities: [
-      { kind: "country", id: "CIV", label: "Côte d'Ivoire" },
-      { kind: "country", id: "GHA", label: "Ghana" },
     ],
     tier: "referenced",
   },
@@ -729,7 +718,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
     // below is filed under it, and a link already shared carries it.
     id: "wonnin-godie",
     headline:
-      "Le nom Godié viendrait peut-être d’un surnom donné par les voisins.",
+      "En Côte d’Ivoire, le nom des Godié viendrait peut-être d’un surnom donné par leurs voisins.",
     body: [
       "Dago Pascal Kokora, originaire de Fresco, rapporte deux explications du nom Godié. Selon Alfred Schwartz (1971), il viendrait de gwe et dji, qui veulent dire « chimpanzé-panthère » : ce serait un surnom que les Néyo de Sassandra auraient donné aux Godié à cause de leur tempérament. Selon Kouassi Lowa (1967), il viendrait de la phrase a ka gouen zie, « nous allons plus loin », que des Godié auraient dite aux Dida en repartant.",
       "Les sources ne s’accordent pas sur l’origine. Diedrich Westermann et Margaret Bryan (1952) notent que les Godié se donnent eux-mêmes ce nom, et Maurice Delafosse l'écrit déjà Godyé en 1904.",
@@ -741,18 +730,18 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
     tier: "referenced",
     sources: [
       {
-        title: "SIL Ethnologue — Godié (god)",
-        url: "https://www.ethnologue.com/language/god/",
-        tier: "official",
-        source_kind: "linguistic_reference",
-        notes: "Atteste l'appellation Godié et ses variantes.",
-      },
-      {
         title: "Studies in the grammar of Koyo",
         tier: "referenced",
         source_kind: "academic",
         notes:
           "Dago Pascal Kokora, 1976. Il rapporte les deux explications du nom, celle d'Alfred Schwartz (1971) et celle de Kouassi Lowa (1967), et la mention de Westermann et Bryan (1952).",
+      },
+      {
+        title: "SIL Ethnologue — Godié (god)",
+        url: "https://www.ethnologue.com/language/god/",
+        tier: "official",
+        source_kind: "linguistic_reference",
+        notes: "Atteste l'appellation Godié et ses variantes.",
       },
       {
         title:

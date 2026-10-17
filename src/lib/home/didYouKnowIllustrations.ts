@@ -67,16 +67,6 @@ export const DID_YOU_KNOW_ILLUSTRATIONS: Record<
     filePage: "https://commons.wikimedia.org/wiki/File:Bantu_zones.png",
     licenceUrl: "http://creativecommons.org/licenses/by-sa/3.0/",
   },
-  "cote-ivoire": {
-    kind: "picture",
-    src: "/images/anecdotes/cote-ivoire.jpg",
-    alt: "Défense d'éléphant sculptée de personnages sur toute sa longueur.",
-    credit:
-      "Défense sculptée, XIXᵉ siècle, Brooklyn Museum (1992.136.14) — Wikimedia Commons, CC BY 3.0",
-    filePage:
-      "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_1992.136.14_Tusk_Carving_with_Figures.jpg",
-    licenceUrl: "https://creativecommons.org/licenses/by/3.0",
-  },
   amazigh: {
     kind: "picture",
     // The home already ships this file for the same argument; a second copy

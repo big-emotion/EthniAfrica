@@ -5,16 +5,21 @@ import { DidYouKnowLoader } from "@/components/system/DidYouKnowLoader";
 import { LOADER_REVEAL_DELAY_MS } from "@/components/system/AfricaTraceLoader";
 import type { DidYouKnowFact } from "@/lib/home/didYouKnowFacts";
 
+// The id is a real one: the loader finds the picture, and its side, by id.
 const FACT: DidYouKnowFact = {
-  id: "cote-ivoire",
-  headline: "La Côte d'Ivoire porte le nom de ce qu'on y achetait.",
+  id: "monrovia",
+  headline: "La capitale du Liberia porte le nom d'un président américain.",
   body: [
-    "Les navigateurs portugais désignaient ce littoral par sa marchandise.",
-    "En 1839, Bouët-Willaumez francise l'appellation et la fixe.",
+    "Monrovia vient de James Monroe, cinquième président des États-Unis.",
+    "Le comptoir fondé en 1822 s'appelait Christopolis.",
   ],
   entities: [
-    { kind: "country", id: "CIV", label: "Côte d'Ivoire" },
-    { kind: "people", id: "PPL_BAOULE", label: "Baoulé" },
+    { kind: "country", id: "LBR", label: "Liberia" },
+    {
+      kind: "people",
+      id: "PPL_AMERICANO_LIBERIENS",
+      label: "Américano-Libériens",
+    },
   ],
   tier: "referenced",
 };
@@ -53,10 +58,10 @@ describe("DidYouKnowLoader (REQ-104 — the wait is spent reading)", () => {
 
     expect(
       screen.getByRole("img", {
-        name: /Défense d'éléphant sculptée/i,
+        name: /Carte manuscrite du Liberia/i,
       })
     ).toBeInTheDocument();
-    expect(screen.getByText(/Brooklyn Museum/)).toBeInTheDocument();
+    expect(screen.getByText(/Library of Congress/)).toBeInTheDocument();
     expect(container.querySelector(".afh-dykl-split")).toHaveClass(
       "afh-dykl-split--image-start"
     );
@@ -67,7 +72,7 @@ describe("DidYouKnowLoader (REQ-104 — the wait is spent reading)", () => {
     render(<DidYouKnowLoader fact={FACT} label="Chargement" />);
 
     const image = screen.getByRole("img", {
-      name: /Défense d'éléphant sculptée/i,
+      name: /Carte manuscrite du Liberia/i,
     });
     expect(image).toHaveAttribute("loading", "lazy");
     expect(image).not.toHaveAttribute("fetchpriority", "high");
@@ -82,7 +87,7 @@ describe("DidYouKnowLoader (REQ-104 — the wait is spent reading)", () => {
     );
 
     rerender(
-      <DidYouKnowLoader fact={{ ...FACT, id: "amazigh" }} label="Chargement" />
+      <DidYouKnowLoader fact={{ ...FACT, id: "bantou" }} label="Chargement" />
     );
 
     expect(container.querySelector(".afh-dykl-split")).toHaveClass(
@@ -112,8 +117,8 @@ describe("DidYouKnowLoader (REQ-104 — the wait is spent reading)", () => {
       <DidYouKnowLoader fact={FACT} label="Chargement" />
     );
 
-    expect(screen.getByText("Côte d'Ivoire")).toBeInTheDocument();
-    expect(screen.getByText("Baoulé")).toBeInTheDocument();
+    expect(screen.getByText("Liberia")).toBeInTheDocument();
+    expect(screen.getByText("Américano-Libériens")).toBeInTheDocument();
     expect(container.querySelectorAll("a")).toHaveLength(0);
     expect(container.querySelectorAll("button")).toHaveLength(0);
   });
