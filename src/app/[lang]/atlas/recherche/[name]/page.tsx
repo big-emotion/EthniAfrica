@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 
-import { resolveNameAddress } from "@/api/v2/services/nameAddresses";
+import {
+  getNameAddressSpellings,
+  resolveNameAddress,
+} from "@/api/v2/services/nameAddresses";
 import { RecherchePageContent } from "@/components/pages/RecherchePageContent";
+import { NameAddressProvider } from "@/components/search/NameAddressProvider";
 import { PRODUCT_NAME } from "@/lib/brand";
 import { nameAddressCopy } from "@/lib/i18n/copy/nameAddress";
 import { getNameAnswerRoute } from "@/lib/routing";
@@ -62,9 +66,13 @@ export default async function NameAddressPage({
   const address = await resolveNameAddress(name);
   if (!address) return null;
 
+  const [reading, spellings] = await Promise.all([
+    readAddressedName(address.spelling, lang as Language),
+    getNameAddressSpellings(),
+  ]);
   return (
-    <RecherchePageContent
-      reading={await readAddressedName(address.spelling, lang as Language)}
-    />
+    <NameAddressProvider spellings={spellings}>
+      <RecherchePageContent reading={reading} />
+    </NameAddressProvider>
   );
 }

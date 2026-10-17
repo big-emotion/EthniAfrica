@@ -4,12 +4,14 @@ import React from "react";
 import { describe, expect, it, vi } from "vitest";
 
 import { SearchResultCard } from "../SearchResultCard";
+import { NameAddressProvider } from "../NameAddressProvider";
 import type { SearchResult } from "@/types/afrik-frontend";
 import {
   getCountryRoute,
   getFamilyRoute,
   getLanguageRoute,
   getLocalizedRoute,
+  getNameAnswerRoute,
   getPatronymeRoute,
   getPeopleRoute,
   getPersonRoute,
@@ -294,5 +296,23 @@ describe("SearchResultCard — word", () => {
       `${getLocalizedRoute("fr", "search")}?q=race`
     );
     expect(screen.getByText("Mot")).toBeInTheDocument();
+  });
+
+  // On the search pages, a word that has an address is linked there.
+  // @req REQ-200
+  it("links a word that has an address to that address", () => {
+    render(
+      <NameAddressProvider spellings={["race"]}>
+        <SearchResultCard
+          result={{ type: "word", id: "WRD_RACE", name: "race" }}
+          language="fr"
+        />
+      </NameAddressProvider>
+    );
+
+    expect(screen.getByRole("link", { name: "race" })).toHaveAttribute(
+      "href",
+      getNameAnswerRoute("fr", "race")
+    );
   });
 });

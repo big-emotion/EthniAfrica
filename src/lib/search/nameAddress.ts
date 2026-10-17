@@ -13,6 +13,9 @@
  * Pure, so the client links and the server page call the same code.
  */
 
+import { getLocalizedRoute, getNameAnswerRoute } from "@/lib/routing";
+import type { Language } from "@/types/shared";
+
 /** A name of a history, read only as far as the threshold needs. */
 interface ToldName {
   nameText: string;
@@ -120,4 +123,21 @@ export function addressSpellingOf(
   form: string
 ): string | undefined {
   return directory.get(foldNameForm(form));
+}
+
+/**
+ * Where a link naming a form leads: its address when it has one, spelled as
+ * the corpus writes it so the link never spends the redirect; otherwise the
+ * search page's reading of it. Without a directory every form is read.
+ */
+// @req REQ-200
+export function nameSearchHref(
+  language: Language,
+  form: string,
+  directory: NameAddressDirectory | null = null
+): string {
+  const spelling = directory ? addressSpellingOf(directory, form) : undefined;
+  return spelling
+    ? getNameAnswerRoute(language, spelling)
+    : `${getLocalizedRoute(language, "search")}?${new URLSearchParams({ q: form })}`;
 }

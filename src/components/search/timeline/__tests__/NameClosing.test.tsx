@@ -8,7 +8,8 @@ import {
 } from "@/components/search/timeline/NameClosing";
 import { aboutCopy } from "@/lib/i18n/copy/about";
 import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
-import { getLocalizedRoute } from "@/lib/routing";
+import { getLocalizedRoute, getNameAnswerRoute } from "@/lib/routing";
+import { NameAddressProvider } from "@/components/search/NameAddressProvider";
 import { PEUL_HISTORY } from "@/lib/search/__fixtures__/nameTimelineFixtures";
 import { buildNameTimeline } from "@/lib/search/nameTimeline";
 
@@ -193,6 +194,34 @@ describe("NameNextStep — the next names", () => {
     expect(
       screen.getByText("Le nom atlantique désigne un ensemble de langues.")
     ).toBeInTheDocument();
+  });
+
+  // A name with an address is linked there, spelled as the corpus writes
+  // it; one without stays a reading of the search page (REQ-200).
+  // @req REQ-200
+  it("links a name that has an address to that address", () => {
+    const wolof = { ...atlantique, name: "Wolof", relation: "namer" as const };
+    render(
+      <NameAddressProvider spellings={["Wolof", "Traoré"]}>
+        <NameNextStep
+          cards={[wolof, { ...atlantique, name: "Traore" }, atlantique]}
+          language="fr"
+        />
+      </NameAddressProvider>
+    );
+
+    expect(screen.getByRole("link", { name: /Wolof/ })).toHaveAttribute(
+      "href",
+      getNameAnswerRoute("fr", "Wolof")
+    );
+    expect(screen.getByRole("link", { name: /Traore/ })).toHaveAttribute(
+      "href",
+      getNameAnswerRoute("fr", "Traoré")
+    );
+    expect(screen.getByRole("link", { name: /Atlantique/ })).toHaveAttribute(
+      "href",
+      `${getLocalizedRoute("fr", "search")}?q=Atlantique`
+    );
   });
 
   // @req REQ-198
