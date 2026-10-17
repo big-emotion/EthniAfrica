@@ -261,7 +261,7 @@ four warnings. Only three belong to the dataset, down from 457:
 
 - `FLG_BERBERE`, `originOfHistoricalTerm`: Chaker's literal quotation containing
   “ethnonyme”, preceded by an explanation about a people's name.
-- `PAT_KOROMA`, `sources[1].notes`: the quoted chapter title
+- the Koroma family-name fiche (since folded into `PAT_KOUROUMA`), `sources[1].notes`: the quoted chapter title
   “Ethnonymes et subdivisions”, followed by an explanation of its contents.
 - `PPL_BETE`, `sources[12].notes`: the literal quotation beginning
   “Tout d'abord, l'ethnonyme est sujet à caution”, introduced in ordinary French.

@@ -16,6 +16,15 @@
           "sourceRefs": ["afrik-candidate-queue", "arcin-1907-guinee-francaise"]
         }
       ]
+    },
+    {
+      "spelling": "Bangura",
+      "attestations": [
+        {
+          "countryId": "SLE",
+          "sourceRefs": ["bamadaba-jamuw"]
+        }
+      ]
     }
   ],
   "transmissionMode": "other",
@@ -48,6 +57,11 @@
       "countryId": "GIN",
       "status": "attested",
       "sourceRefs": ["afrik-candidate-queue", "arcin-1907-guinee-francaise"]
+    },
+    {
+      "countryId": "SLE",
+      "status": "supposed",
+      "sourceRefs": ["afrik-candidate-queue"]
     }
   ],
   "alliances": [],
@@ -99,6 +113,10 @@
     {
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+    },
+    {
+      "fieldPath": "peoples",
+      "reason": "Nos fiches ne permettent pas encore de relier le nom Bangura à un peuple en Sierra Leone. Nous n'avons pas encore consulté de source consacrée à ce nom. Notre fiche sur les Susu cite un percussionniste guinéen portant ce nom. Cela ne suffit pas à expliquer son usage en Sierra Leone."
     }
   ],
   "nameHistory": {
@@ -267,6 +285,47 @@
                 "source_kind": "archive",
                 "page": "p. 303",
                 "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026, au numéro de page imprimé. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 303, note 1 : « Ce nom peut vouloir dire : les fils de la terre ou de la lance. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bangura",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "aspect": "meaning",
+            "statement": "Le nom Bangura est l'écriture que notre relevé de noms donne pour la Sierra Leone. Elle s'écrit presque comme l'entrée Bàngura du dictionnaire des noms de clan mandingues, relevée en malinké et en soussou, et comme le Bangoura qu'André Arcin décrit en 1907 chez les Soso de Guinée. Aucune de ces deux sources ne parle de la Sierra Leone : nous ne savons pas si le nom y désigne le même clan.",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 16 octobre 2026. Entrée Bàngura : parlers malinké (m) et soussou (sou) ; aucun sens donné. Le dictionnaire écrit Bàngura, avec un accent grave."
+              },
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 303",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026, au numéro de page imprimé. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 303 : « Les Bangoura ne se rencontrent que chez les Soso surtout dans le Kaloum, le Soumboya, où ils sont chefs secondaires, dans le Kabitaye où ils forment la famille royale. »"
               }
             ]
           }

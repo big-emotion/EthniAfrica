@@ -243,6 +243,27 @@ capability lists `caption`. Record that placement only when the evidence shows
 the description link is clickable for that video format. A Short may differ
 from a long video, so the account route decides, not the network name.
 
+### Series videos (Cartes)
+
+A sequence with `beats` is a series video drawn on the accepted Cartes design
+by `social/video/series-render.mjs`; the same package takes it, loaded by
+`loadSeriesVideo` instead of the map loader. The record in `design` reads
+`EthniAfrica Cartes` and the version of `social/design-system/version.json`,
+since the loader refuses cards of any other version. The input also names
+`assets`, the folder the research dossier's image records sit under: every
+image a card or a chapter card shows needs its research and rights record
+there, as a carousel card does. The manifest binds the same things as above
+plus the cards: the cards JSON is copy and layout, and the sequence only names
+it. `encodeSeriesVideo` records the sequence hash before drawing; an export
+made before it recorded one is re-encoded.
+
+The on-screen text of a series video is every string its cards print, read
+from the loaded cards (chapter cards and the chapter kicker included), each
+subtitle chunk, and on the closing card the signature line and the search
+invitation, which the card prints while the voice says them. Image fields,
+identifiers, map file names and `say` are left out. Credits list each card's
+source line, its map caption's source and its image credit.
+
 **What remains manual.** The helper does not judge the rights to the satellite
 imagery or to a voice. The on-screen Source line names the imagery, and the
 dossier keeps its reuse record. Watch the delivered `video.mp4` with sound at

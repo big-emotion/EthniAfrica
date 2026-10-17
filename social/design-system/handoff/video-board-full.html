@@ -118,6 +118,18 @@ html,body{margin:0;background:#000}
 .week .dn{font:800 30px/36px var(--font-text);color:var(--oi-muted);--sw:4px}
 .week .nm{font:800 38px/44px var(--font-text);color:var(--oi-text);--sw:5px;white-space:nowrap}
 .week .dw{font:700 24px/28px var(--font-text);color:var(--oi-muted);--sw:4px;display:block}
+/* 1.9.0-proposition, accepted on 16 October 2026: the double outline (C) is the default; A, B, D and E are kept for comparison. */
+.vf:not([data-legi="A"]) .oi .oi{text-shadow:inherit}
+.vf[data-legi="B"] .oi{-webkit-text-stroke-width:calc(var(--sw,4px) * 1.75)}
+.vf[data-legi="B"] .sub-line{-webkit-text-stroke-width:16px}
+.vf[data-legi="C"] .oi,.vf[data-legi="C"] .sub-line{text-shadow:none}
+.vf[data-legi="B"] .lit,.vf[data-legi="C"] .lit,.vf[data-legi="D"] .lit{box-shadow:6px 0 0 var(--oi-accent),-6px 0 0 var(--oi-accent),6px 0 0 2px var(--oi-stroke),-6px 0 0 2px var(--oi-stroke),0 0 12px 4px rgba(11,8,6,.55)}
+.lvs{position:absolute;inset:0;pointer-events:none}
+.lv{position:absolute;background:rgba(11,8,6,.55);box-shadow:0 0 12px 5px rgba(11,8,6,.42)}
+.vf.mask{background:#000!important}
+.vf.mask .pic,.vf.mask .lvs,.vf.mask img,.vf.mask .tape,.vf.mask .docst{visibility:hidden!important}
+.vf.mask *{-webkit-text-stroke:0!important;text-shadow:none!important;filter:none!important;box-shadow:none!important;color:#fff!important;background:transparent!important;border-color:transparent!important}
+.vf.bare > .layer > :not(.pic),.vf.bare .band,.vf.bare .sub,.vf.bare .gsign,.vf.bare .tape,.vf.bare .lvs,.vf.bare .close-sign{visibility:hidden!important}
 .guides{position:absolute;inset:0;z-index:20;pointer-events:none;font:700 22px/28px var(--font-text)}
 </style>
 </head><body><div id="out"></div>
@@ -445,6 +457,74 @@ html,body{margin:0;background:#000}
     if (i === steps.length) { r.date.style.whiteSpace = 'normal'; r.date.style.textWrap = 'balance'; i = 3; r.date.style.fontSize = '104px'; r.date.style.lineHeight = '100px'; r.twoLines = true; }
     r.dateSize = steps[Math.min(i, 3)][0]; r.dateWidth = Math.round(inkW()); delete r.date;
   });
+  // 1.9.0-proposition, accepted: legibility of the text on the image (the double outline by default).
+  // 1.9.0 accepted: the double outline (C) by default; ?legi=A, B, D or E redraws the other treatments for comparison.
+  var LEGI = q.get('legi') || 'C';
+  vf.setAttribute('data-legi', LEGI);
+  var TG = Array.prototype.filter.call(vf.querySelectorAll('.oi, .sub-line'), function (e) {
+    return !(e.parentElement && e.parentElement.closest('.oi, .sub-line'));
+  });
+  function fsz(e) { return parseFloat(getComputedStyle(e).fontSize); }
+  function swOf(e) { var v = getComputedStyle(e).getPropertyValue('--sw'); return e.classList.contains('sub-line') ? 9 : (v ? parseFloat(v) : 4); }
+  var legiReport = [];
+  if (LEGI === 'C') {
+    // Double outline: the 1.4.0 outline, then a second contour r px wide at 62 %, then a soft shadow of the same reach.
+    var NS = 'http://www.w3.org/2000/svg', svgd = document.createElementNS(NS, 'svg'), made = {};
+    svgd.setAttribute('width', 0); svgd.setAttribute('height', 0); svgd.style.position = 'absolute';
+    var defs = document.createElementNS(NS, 'defs'); svgd.appendChild(defs); vf.appendChild(svgd);
+    TG.forEach(function (e) {
+      var r = Math.max(3, Math.round(0.6 * swOf(e))), id = 'ring' + r;
+      if (!made[id]) {
+        made[id] = 1;
+        var f = document.createElementNS(NS, 'filter');
+        f.setAttribute('id', id); f.setAttribute('x', '-10%'); f.setAttribute('y', '-40%'); f.setAttribute('width', '120%'); f.setAttribute('height', '180%');
+        f.setAttribute('color-interpolation-filters', 'sRGB');
+        f.innerHTML = '<feMorphology in="SourceAlpha" operator="dilate" radius="' + r + '" result="d"/>' +
+          '<feGaussianBlur in="d" stdDeviation="0.6" result="ds"/><feFlood flood-color="#0b0806" flood-opacity="0.62"/><feComposite in2="ds" operator="in" result="ring"/>' +
+          '<feGaussianBlur in="d" stdDeviation="' + r + '" result="sh"/><feFlood flood-color="#0b0806" flood-opacity="0.45"/><feComposite in2="sh" operator="in" result="soft"/>' +
+          '<feMerge><feMergeNode in="soft"/><feMergeNode in="ring"/><feMergeNode in="SourceGraphic"/></feMerge>';
+        defs.appendChild(f);
+      }
+      e.style.filter = 'url(#' + id + ')';
+      legiReport.push({ text: e.textContent.slice(0, 30), size: fsz(e), outline: swOf(e), ring: r });
+    });
+  }
+  if (LEGI === 'D') {
+    // Tight shadow: three drop shadows chained on the outlined letters, each from the one before, their reach 20 % of the type size, between 6 and 16 px.
+    TG.forEach(function (e) {
+      var h = Math.min(16, Math.max(6, Math.round(0.2 * fsz(e))));
+      e.style.textShadow = 'none';
+      e.style.filter = 'drop-shadow(0 0 ' + (h * 0.35).toFixed(1) + 'px rgba(11,8,6,.95)) drop-shadow(0 0 ' + (h * 0.5).toFixed(1) + 'px rgba(11,8,6,.9)) drop-shadow(0 1px ' + h + 'px rgba(11,8,6,.6))';
+      legiReport.push({ text: e.textContent.slice(0, 30), size: fsz(e), outline: swOf(e), halo: h });
+    });
+  }
+  if (LEGI === 'E') {
+    // Line veil: a dark box under each line of text, its line height tall, 0.2 em wider on each side, feathered.
+    var ov = vf.getBoundingClientRect();
+    TG.forEach(function (e) {
+      var host = e.closest('.layer'), box;
+      if (host) { box = host.querySelector(':scope > .lvs'); if (!box) { box = el('div', 'lvs'); host.insertBefore(box, host.children[1] || null); } }
+      else { box = vf.querySelector(':scope > .lvs'); if (!box) { box = el('div', 'lvs'); vf.insertBefore(box, vf.querySelector(':scope > .gsign, :scope > .band, :scope > .sub')); } }
+      var cs = getComputedStyle(e), f = fsz(e), lh = parseFloat(cs.lineHeight) || f * 1.2, rg = document.createRange();
+      rg.selectNodeContents(e);
+      var lines = [];
+      Array.prototype.forEach.call(rg.getClientRects(), function (r) {
+        if (r.width < 1) return;
+        var cy = (r.top + r.bottom) / 2, l = lines.find(function (k) { return Math.abs(k.cy - cy) < lh / 2; });
+        if (l) { l.x0 = Math.min(l.x0, r.left); l.x1 = Math.max(l.x1, r.right); } else lines.push({ x0: r.left, x1: r.right, cy: cy });
+      });
+      var px = Math.min(18, Math.round(0.2 * f));
+      lines.forEach(function (l) {
+        var v = el('div', 'lv');
+        v.style.cssText = 'left:' + (l.x0 - ov.left - px) + 'px;top:' + (l.cy - ov.top - lh / 2) + 'px;width:' + (l.x1 - l.x0 + 2 * px) + 'px;height:' + lh + 'px;border-radius:' + Math.min(12, Math.round(lh * 0.22)) + 'px';
+        box.appendChild(v);
+      });
+      legiReport.push({ text: e.textContent.slice(0, 30), size: f, lines: lines.length, pad: px });
+    });
+  }
+  report.legi = { mode: LEGI, items: legiReport };
+  if (q.get('mask') === '1') vf.classList.add('mask');
+  if (q.get('bare') === '1') vf.classList.add('bare');
   if (q.get('guides') === '1') {
     var g = el('div', 'guides');
     g.innerHTML = '<svg width="1080" height="1920" style="position:absolute;inset:0">' +
@@ -465,7 +545,8 @@ html,body{margin:0;background:#000}
   var o = vf.getBoundingClientRect();
   window.__boxes = Array.prototype.map.call(vf.querySelectorAll('.fx > *, .sbs > *, .week > *, .band, .head > *, .close > *, .list .row, .figs .fig, .attr > *, .sub-line > *, .foot > *:not(.keys2), .keys2 > *, .gsign, .close-sign > *, .slot-text > *, .tape'), function (e) {
     var range = document.createRange(); range.selectNodeContents(e); var r = e.classList.contains('gsign') || e.classList.contains('pill') || e.classList.contains('tape') ? e.getBoundingClientRect() : range.getBoundingClientRect(), b = e.getBoundingClientRect();
-    return { cls: e.className, text: e.textContent.slice(0, 40), x: Math.round(r.left - o.left), x1: Math.round(r.right - o.left), y: Math.round(b.top - o.top), y1: Math.round(b.bottom - o.top) };
+    var cst = getComputedStyle(e);
+    return { cls: e.className, fs: parseFloat(cst.fontSize), color: cst.color, text: e.textContent.slice(0, 40), x: Math.round(r.left - o.left), x1: Math.round(r.right - o.left), y: Math.round(b.top - o.top), y1: Math.round(b.bottom - o.top) };
   });
   window.__report = report;
   document.body.dataset.ready = '1';

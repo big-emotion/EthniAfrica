@@ -33,9 +33,9 @@
   },
   "peoples": [
     {
-      "peopleId": "PPL_MAKONDE",
-      "status": "attested",
-      "sourceRefs": ["world-bank-mkapa-matrilineal"]
+      "peopleId": "PPL_MAKUA",
+      "status": "supposed",
+      "sourceRefs": ["chanzo-mkapa-2023"]
     }
   ],
   "countries": [
@@ -64,7 +64,15 @@
       "url": "https://documents1.worldbank.org/curated/en/099155101252476786/pdf/IDU1717d6cd0140f1857c13e08e29be286.pdf",
       "tier": "referenced",
       "source_kind": "intergovernmental",
-      "notes": "Actes publiés par la Banque mondiale et consultés directement, p. 178. La transcription cite explicitement Benjamin Mkapa, précise que Mkapa est le nom de sa mère et rattache cet usage à la filiation matrilinéaire makonde. Il s'agit du propos d'un intervenant reproduit dans les actes, non d'une position institutionnelle de la Banque mondiale."
+      "notes": "Actes publiés par la Banque mondiale et consultés directement, p. 168 imprimée (page 179 du fichier). Le discours de clôture du ministre Palamagamba Kabudi cite Benjamin Mkapa, dit que Mkapa est le nom de sa mère et range cet usage dans les sociétés matrilocales et matrilinéaires du sud de la Tanzanie. Il cite les Mwera, les Makua, les Yao, les Makonde et les Machinga sans dire duquel relève Mkapa. Il s'agit du propos d'un intervenant reproduit dans les actes, non d'une position institutionnelle de la Banque mondiale."
+    },
+    {
+      "sourceKey": "chanzo-mkapa-2023",
+      "title": "‘He Was a Towering, Multifaceted Personality’: Happy Posthumous 85th Birthday, Benjamin William Mkapa",
+      "url": "https://thechanzo.com/2023/11/12/he-was-a-towering-multifaceted-personality-happy-posthumous-85th-birthday-benjamin-william-mkapa/",
+      "tier": "referenced",
+      "source_kind": "press",
+      "notes": "Article du média tanzanien The Chanzo, daté du 12 novembre 2023, signé d'un pseudonyme. Il écrit que la tribu de Mkapa était les Makua et que son nom de famille était le nom de clan de sa mère. Relevé dans l'article, non recoupé ailleurs."
     }
   ],
   "gaps": [
@@ -83,6 +91,10 @@
     {
       "fieldPath": "homonyms",
       "reason": "la recherche web et bibliographique combinant « Mkapa », « MAKONDE », « surname », « clan », « etymology », « transmission », « alliance » et « obituary », ainsi que la page Forebears dédiée et les travaux ou notices propres au nom cités dans la fiche n'ont pas établi de lignée homonyme d'origine distincte documentable ; la diffusion dans plusieurs pays et les ressemblances graphiques ne suffisent pas à créer un homonyme."
+    },
+    {
+      "fieldPath": "peoples",
+      "reason": "Le discours du ministre Kabudi cite cinq peuples du sud de la Tanzanie sans dire lequel est celui de Benjamin Mkapa. Un seul article de presse écrit Makua, sans autre source : le lien avec les Makua reste supposé."
     }
   ],
   "nameHistory": {

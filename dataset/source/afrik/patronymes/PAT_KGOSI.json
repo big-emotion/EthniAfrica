@@ -6,7 +6,7 @@
   },
   "id": "PAT_KGOSI",
   "nameMain": "Kgosi",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Kgosi",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -69,10 +69,6 @@
   ],
   "gaps": [
     {
-      "fieldPath": "nameSystem",
-      "reason": "la recherche web combinant « Kgosi », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de l'article onomastique de Thapelo Otlogetswe et la page de répartition patronymique Forebears consacrée à Kgosi, n'ont pas établi que la catégorie provisoire « clan_name » décrive ce nom lui-même ; elle est conservée comme hypothèse de classement en attendant une étude anthroponymique dédiée."
-    },
-    {
       "fieldPath": "alliances",
       "reason": "la recherche web combinant « Kgosi », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de l'article onomastique de Thapelo Otlogetswe et la page de répartition patronymique Forebears consacrée à Kgosi, n'ont identifié aucune paire d'alliance ou de parenté à plaisanterie reliant ce nom à un autre nom documenté ici."
     },
@@ -87,6 +83,10 @@
     {
       "fieldPath": "homonyms",
       "reason": "la recherche web combinant « Kgosi », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de l'article onomastique de Thapelo Otlogetswe et la page de répartition patronymique Forebears consacrée à Kgosi, n'ont pas établi de lignée homonyme d'origine distincte ni d'autre homonyme documentable."
+    },
+    {
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom de personne tswana, qui veut dire « chef » et que l'on donne à des garçons. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant. La fiche reste donc parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "transmissionMode",

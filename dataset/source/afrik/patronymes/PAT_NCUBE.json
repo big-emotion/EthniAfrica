@@ -14,6 +14,13 @@
         {
           "countryId": "ZWE",
           "sourceRefs": ["forebears-ncube"]
+        },
+        {
+          "countryId": "ZAF",
+          "sourceRefs": [
+            "bryant-1905-zulu-dictionary",
+            "bryant-1929-olden-times"
+          ]
         }
       ]
     }
@@ -37,6 +44,11 @@
       "countryId": "ZWE",
       "status": "attested",
       "sourceRefs": ["forebears-ncube"]
+    },
+    {
+      "countryId": "ZAF",
+      "status": "attested",
+      "sourceRefs": ["bryant-1905-zulu-dictionary", "bryant-1929-olden-times"]
     }
   ],
   "alliances": [],
@@ -51,6 +63,22 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Base de répartition patronymique consultée directement. Elle atteste l’orthographe Ncube et sa présence dans le Zimbabwe, mais la distribution ne démontre ni l’appartenance Ndebele, ni une origine unique, ni un mode de transmission."
+    },
+    {
+      "sourceKey": "bryant-1905-zulu-dictionary",
+      "title": "A Zulu-English Dictionary",
+      "url": "https://archive.org/details/zuluenglishdicti00brya",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Alfred T. Bryant, Pinetown (Natal), Mariannhill Mission Press, 1905. L'histoire placée en tête du dictionnaire place les Ncube près de la baie de Sainte-Lucie, à côté des Mkwanazi, à l'époque de Shaka. Texte d'un missionnaire, cité pour ce qu'il écrit du clan."
+    },
+    {
+      "sourceKey": "bryant-1929-olden-times",
+      "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+      "url": "https://archive.org/details/bwb_KT-091-892",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Bryant, Alfred T., Longmans Green, 1929. Bryant écrit depuis la mission catholique du Natal, dans le contexte colonial. Il reconstitue l'histoire des clans nguni orientaux à partir de récits sur leurs ancêtres, recueillis au tournant du siècle. Parmi les livres consultés, c'est le seul qui nomme une origine pour chacun de ces clans. Le texte a été lu intégralement. Les orthographes de 1929, comme Mtetwa et Ntungwa, sont citées comme variantes à côté des noms utilisés dans nos fiches."
     }
   ],
   "gaps": [

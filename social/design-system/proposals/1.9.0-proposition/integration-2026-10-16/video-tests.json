@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-16",
+  "design": "EthniAfrica Cartes 1.9.0-proposition",
+  "browser": "pinned Chromium 153.0.8010.12 (social/renderer/runtime.json)",
+  "runs": {
+    "test:social-video": "237 pass, 0 fail (6 new in series-legibility.render.test.mjs, checks 1 to 6; on the 1.8.0 engine checks 1, 2, 3 and 5 failed)",
+    "test:social-video-acceptance (ETHNIAFRICA_VIDEO_ASSETS on the verified imagery)": "276 tests, 274 pass, 0 fail, 2 skipped (evidence writers); run on the final engine while check 4's lit exclusion and check 5's bar were being settled, so series-legibility.render.test.mjs was run again alone afterwards: 6 pass, 0 fail",
+    "test:social-renderer": "29 pass, 0 fail",
+    "fidelity, 89 sample cards": "89 of 89 against design-system-1.6.0-accepted; byte-identical with 1.8.0 (recette at e5046a0), alternative texts included"
+  },
+  "white": {
+    "what": "Check 3: the series 1 demonstration on a pure white picture, the cover, each card while its longest subtitle is drawn, and the last frame; near-field contrast, worst frame.",
+    "engine": {
+      "subtitles": 7.93,
+      "band": 6.39,
+      "source": 6.37,
+      "credit": 4.24
+    },
+    "board": {
+      "subtitles": 7.87,
+      "band": 6.3,
+      "source": 6.43,
+      "credit": 4.22
+    },
+    "required": {
+      "subtitles": 7.5,
+      "band": 6,
+      "source": 6,
+      "credit": 4
+    }
+  },
+  "litEdge": {
+    "what": "Check 5: median of the ring 3 to 10 px round the lit box, against on-image-accent, on white. The board renderer was redrawn on the pinned Chromium with the same words.",
+    "engine": {
+      "Burkina": 5.75,
+      "deux": 5.82,
+      "4": 5.69,
+      "un": 6.17,
+      "sont": 5.82,
+      "le": 5.75
+    },
+    "board": {
+      "colonie (the board's own case)": 6.2,
+      "Burkina": 5.75,
+      "sont": 5.84,
+      "4": 5.78,
+      "le": 5.77,
+      "un": 6.09
+    },
+    "handoff": 6,
+    "test": 5.65,
+    "open": "The handoff's 6:1 holds on the board's one word; on other words the accepted edge reads 5.7 to 6.1:1 on the board and in the engine alike. Reaching 6:1 everywhere would change the accepted edge: left to the operator."
+  },
+  "black": {
+    "what": "Check 4: the series 1 demonstration on a pure black picture against the 1.8.0 engine's frames 0, 599 and 1356, outside the letters grown by 4 px and the lit box with its shadow's reach (16 px).",
+    "worstLevels": "at most 10 (asserted by the test)",
+    "note": "Where the lit box's new shadow meets the line above, the frame moves 11 levels, in the engine and on the board renderer alike; the handoff's « 9 levels at most » was not reproduced on the board renderer with the lit box alone left out (11 to 12 levels)."
+  },
+  "layout": "Check 6: every text box of the 1.8.0 acceptance frames (series-pays, series-long, documents, teaching) and of the black frames at the same place within 0.5 px.",
+  "episode": {
+    "what": "Check 8: the Burkina Faso episode (series 1, episode 19) from its own sequence, cards, voice-v16-final and pictures, the cards' version moved to 1.9.0, beside the boards' plein-ecran C frames at 430 px (planches-et-moteur-430.jpg); near-field contrasts in contrast.json.",
+    "frames": [
+      { "board": "bfa-01--C.jpg", "frame": 245, "problems": [] },
+      { "board": "bfa-02--C.jpg", "frame": 381, "problems": [] },
+      { "board": "bfa-04--C.jpg", "frame": 1330, "problems": [] },
+      { "board": "bfa-06--C.jpg", "frame": 2051, "problems": [] },
+      { "board": "bfa-07--C.jpg", "frame": 2377, "problems": [] }
+    ],
+    "maps": "The two map cards (frames 849 and 1542) were looked at on the verified imagery: their names keep their own halo and read.",
+    "differences": "The subtitle's line break (the boards cut it by hand), the zoom's moment, and the ending's « Prochain épisode : Togo », which the boards' ending does not carry. The frames read as the boards."
+  }
+}

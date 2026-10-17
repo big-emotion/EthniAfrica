@@ -54,8 +54,11 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * 1225 -> 1223 on 2026-10-14: the candidate-queue stubs of PAT_FADICCA,
  * withdrawn after wave 15, and of PAT_BAH, folded into PAT_BA, left with them;
  * the keeper attests the carried spellings with opened sources.
+ * 1219 -> 1217 on 2026-10-16: the candidate-queue stubs of PAT_KOROMA and
+ * PAT_BANGURA, folded into PAT_KOUROUMA and PAT_BANGOURA, left with them; the
+ * keepers attest the carried spellings with opened sources.
  */
-export const UNREVIEWED_AI_GENERATED_RATCHET = 1219;
+export const UNREVIEWED_AI_GENERATED_RATCHET = 1217;
 
 export interface AiGeneratedSourcesResult {
   ok: boolean;

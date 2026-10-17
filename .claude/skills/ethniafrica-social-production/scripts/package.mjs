@@ -22,6 +22,12 @@ import {
   loadSequence,
   frameCount,
 } from "../../../../social/video/sequence.mjs";
+import {
+  loadSeriesVideo,
+  seriesFrameCount,
+  searchSentence,
+  GENERAL_SENTENCE,
+} from "../../../../social/video/series.mjs";
 const TOOL_ROOT = fileURLToPath(new URL("../../../../", import.meta.url));
 const fail = (m) => {
   throw new Error(m);
@@ -237,6 +243,58 @@ function screenText(seq) {
     ...(seq.ending?.sentence ? [seq.ending.sentence] : []),
   ];
 }
+// A series video prints its cards' words, its subtitles and the ending's
+// lines. Image fields, identifiers, map files and the words a card waits for
+// (`say`) are not on screen; a string the design leaves off only makes the
+// language check stricter.
+const OFF_SCREEN = new Set([
+  "id",
+  "type",
+  "theme",
+  "series",
+  "image",
+  "imageAlt",
+  "file",
+  "ink",
+  "say",
+  "sequence",
+  "kind",
+  "marker",
+]);
+function seriesScreenText(seq) {
+  const strings = (value, key) => {
+    if (OFF_SCREEN.has(key)) return [];
+    if (typeof value === "string") return [value];
+    if (Array.isArray(value)) return value.flatMap((v) => strings(v));
+    if (value && typeof value === "object")
+      return Object.entries(value).flatMap(([k, v]) => strings(v, k));
+    return [];
+  };
+  const { signatureLine } = JSON.parse(
+    readFileSync(join(TOOL_ROOT, "social/design-system/version.json"))
+  );
+  const invitation = seq.ending.general
+    ? GENERAL_SENTENCE
+    : searchSentence(seq.ending.search);
+  return seq.cards.flatMap((card, i) => [
+    ...strings(card),
+    ...seq.chunks.filter((c) => c.card === i && !c.hidden).map((c) => c.text),
+    ...(card.type === "closing" ? [signatureLine, invitation.join(" ")] : []),
+  ]);
+}
+function seriesCredits(seq) {
+  return [
+    ...new Set(
+      seq.cards.flatMap((c) =>
+        [
+          c.source && `${c.sourceLabel ?? "Source"} : ${c.source}`,
+          c.map?.caption?.source && `Source : ${c.map.caption.source}`,
+          c.credit,
+        ].filter(Boolean)
+      )
+    ),
+  ].join("\n\n");
+}
 function probeVideo(file) {
   const { streams } = JSON.parse(
     execFileSync("ffprobe", [
@@ -295,12 +353,17 @@ function videoDelivery(root, config, read) {
   const raw = JSON.parse(read(config.sequence));
   if (raw.demo)
     fail("A demo sequence is a proof; only a final sequence may be packaged");
+  // A series video (Cartes) is told on its cards' beats; a map video on chapters of areas.
+  const series = Array.isArray(raw.beats);
   let seq;
   try {
-    seq = loadSequence(raw, { dir: sequenceDir });
+    seq = series
+      ? loadSeriesVideo(raw, { dir: sequenceDir })
+      : loadSequence(raw, { dir: sequenceDir });
   } catch (error) {
     fail(`Sequence refused: ${error.message}`);
   }
+  const records = researchRecords(read, config);
   // The sequence names its own voice; a second input field would be a
   // second source of truth for the same files.
   for (const file of raw.voice ? [raw.voice.audio, raw.voice.words] : [])
@@ -324,7 +387,21 @@ function videoDelivery(root, config, read) {
   // a piece moved after encoding needs a new encode.
   if (manifest.hashes?.sequence !== sha(JSON.stringify(seq)))
     fail("The video manifest does not match the sequence");
-  if (manifest.frames !== frameCount(seq))
+  if (series) {
+    const cardsFile = relative(root, seq.cardsFile).split(sep).join("/");
+    if (manifest.hashes?.cards !== sha(read(cardsFile)))
+      fail("The video manifest does not match the cards");
+    text(config.assets, "Series video assets folder");
+    for (const src of new Set(seq.cards.map((c) => c.image?.src)))
+      if (
+        src &&
+        !records.dossier.images.some(
+          (i) => i.file === `${config.assets}/${src}`
+        )
+      )
+        fail(`Video image has no research/rights record: ${src}`);
+  }
+  if (manifest.frames !== (series ? seriesFrameCount(seq) : frameCount(seq)))
     fail("The video manifest frame count differs from the sequence");
   if (
     seq.voice
@@ -366,10 +443,10 @@ function videoDelivery(root, config, read) {
     });
     coverLine = `\n- [cover.png](cover.png) : image de couverture, image ${frame} de la vidéo`;
   }
-  const screen = screenText(seq);
+  const screen = series ? seriesScreenText(seq) : screenText(seq);
   const seconds = String(Math.round(duration * 10) / 10).replace(".", ",");
   return {
-    ...researchRecords(read, config),
+    ...records,
     media,
     payload,
     describable: [video],
@@ -395,9 +472,11 @@ function videoDelivery(root, config, read) {
     publicCopy: { screen },
     mediaOrder: `- [video.mp4](video.mp4) : ${seconds} s, ${manifest.width} × ${manifest.height}, ${seq.voice ? "voix incluse" : "sans voix"}${coverLine}`,
     screenSection: `## On-screen text\n\n${screen.map((line) => `- ${line.replaceAll("\n", " ")}`).join("\n")}\n\n`,
-    credits: [
-      ...new Set(screen.filter((line) => line.startsWith("Source : "))),
-    ].join("\n\n"),
+    credits: series
+      ? seriesCredits(seq)
+      : [
+          ...new Set(screen.filter((line) => line.startsWith("Source : "))),
+        ].join("\n\n"),
   };
 }
 // `applied` lists the approved corrections the checkpoint knows were integrated.
