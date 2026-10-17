@@ -289,6 +289,9 @@ export async function encodeSeriesVideo(
   outDir,
   { diagnose = false, assets } = {}
 ) {
+  // Hashed before drawing, as loaded: the package loads the sequence again and
+  // compares, so a sequence edited after encoding needs a new encode.
+  const sequence = sha256(JSON.stringify(seq));
   const count = seriesFrameCount(seq);
   const audio = await checkVoice(seq.voice);
   const sound = audioArgs(seq.voice, 0, count / FPS);
@@ -348,6 +351,7 @@ export async function encodeSeriesVideo(
     productionReady: false,
     runtime: { ...renderer.runtime, ffmpeg },
     hashes: {
+      sequence,
       cards: sha256(await readFile(seq.cardsFile)),
       engine: sha256(Buffer.concat(engine)),
       video: sha256(await readFile(file)),

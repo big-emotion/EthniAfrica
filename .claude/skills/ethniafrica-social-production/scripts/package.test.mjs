@@ -12,6 +12,7 @@ import { join } from "node:path";
 import { createPackage, inspectPackage } from "./package.mjs";
 import { packageFixture } from "./package.fixture.mjs";
 import { videoPackageFixture } from "./package-video.fixture.mjs";
+import { seriesPackageFixture } from "./package-series.fixture.mjs";
 
 // @req REQ-186
 test("a checked package preserves media order, exact copy, credits and alternative text", (t) => {
@@ -575,5 +576,102 @@ test("an optional cover is the video's own declared frame", (t) => {
   assert.throws(
     () => createPackage(f.root, f.configPath, "piece/far", both),
     /cover|frame/i
+  );
+});
+
+// @req REQ-186
+test("a final series video package delivers the video, the words its cards and subtitles print, and each network's copy", (t) => {
+  const f = seriesPackageFixture(t);
+  const r = createPackage(f.root, f.configPath, f.output, both);
+  assert.deepEqual(
+    r.media.map((m) => m.file),
+    ["video.mp4"]
+  );
+  assert.deepEqual(
+    readFileSync(join(f.root, f.output, "video.mp4")),
+    readFileSync(join(f.root, f.final, "video.mp4"))
+  );
+  const copy = JSON.parse(
+    readFileSync(join(f.root, f.output, "public-copy.json"), "utf8")
+  );
+  const screen = copy.screen.map((s) => s.replaceAll(" ", " "));
+  for (const line of [
+    "Un continent entier",
+    "Un continent immense",
+    "d'habitants",
+    "Florence Abena Dolphyne",
+    "L'Afrique n'est pas un seul bloc.",
+    "Le continent compte 54 pays,",
+    "Connaître nos noms, décoloniser leur emploi, nous nommer nous-mêmes.",
+    "Cherchez Afrique sur EthniAfrica, lien en profil.",
+    "le pays des Noirs",
+  ])
+    assert.ok(screen.includes(line), line);
+  // File names, identifiers and the voice's spoken forms are not on screen.
+  assert.ok(!screen.some((s) => /\.jpg$|^serie-afrique|^nuit$/.test(s)));
+  const post = readFileSync(join(f.root, f.output, "post.md"), "utf8");
+  assert.match(post, /## On-screen text/);
+  assert.match(post, /incrustés/);
+  assert.doesNotThrow(() => inspectPackage(f.root, f.output, both));
+  appendFileSync(join(f.root, f.output, "video.mp4"), "x");
+  assert.throws(() => inspectPackage(f.root, f.output, both), /changed/i);
+});
+
+// @req REQ-186
+test("a series video's manifest must match the video, its sequence, its cards, the voice and the accepted design", (t) => {
+  const edit = (f, file, change) => {
+    const p = join(f.root, file);
+    const json = JSON.parse(readFileSync(p, "utf8"));
+    change(json);
+    writeFileSync(p, JSON.stringify(json));
+  };
+  for (const [mutate, pattern] of [
+    [(f) => appendFileSync(join(f.root, f.final, "video.mp4"), "x"), /video/i],
+    [
+      (f) =>
+        edit(f, f.sequence, (s) => (s.chapters[0].title = "Un autre titre")),
+      /sequence/i,
+    ],
+    [
+      (f) =>
+        edit(f, f.cards, (d) => (d.cards[1].title = "Un continent très grand")),
+      /cards|sequence/i,
+    ],
+    [
+      (f) => f.writeManifest((m) => (m.audio.sha256 = "0".repeat(64))),
+      /audio|voice/i,
+    ],
+    [(f) => f.writeManifest((m) => (m.frames -= 30)), /frame/i],
+    [(f) => f.writeManifest((m) => (m.demo = true)), /demo|proof/i],
+    [
+      (f) =>
+        f.file("video-design.json", {
+          name: "EthniAfrica Cartes",
+          version: "0.1.0-proposition",
+          status: "accepted",
+        }),
+      /design/i,
+    ],
+  ]) {
+    const f = seriesPackageFixture(t);
+    mutate(f);
+    assert.throws(
+      () => createPackage(f.root, f.configPath, f.output, both),
+      pattern
+    );
+    assert.equal(existsSync(join(f.root, f.output)), false);
+  }
+});
+
+// @req REQ-186
+test("each image a series video shows needs a research and rights record", (t) => {
+  const f = seriesPackageFixture(t);
+  const p = join(f.root, f.config.research);
+  const research = JSON.parse(readFileSync(p, "utf8"));
+  research.images = research.images.slice(1);
+  writeFileSync(p, JSON.stringify(research));
+  assert.throws(
+    () => createPackage(f.root, f.configPath, f.output, both),
+    /research\/rights record/
   );
 });
