@@ -17,7 +17,7 @@ type Row = Record<string, unknown>;
  */
 function supabaseServing(
   rowsByTable: Record<string, Row[]>,
-  failingTables: string[] = []
+  failures: Record<string, { code?: string; message: string }> = {}
 ) {
   let table = "";
   const selects: Record<string, string> = {};
@@ -32,8 +32,8 @@ function supabaseServing(
       return client;
     }),
     range: vi.fn(async (start: number, end: number) => {
-      if (failingTables.includes(table)) {
-        return { data: null, error: { message: `${table} is down` } };
+      if (failures[table]) {
+        return { data: null, error: failures[table] };
       }
       const columns = selects[table].split(",").map((part) => part.trim());
       const data = (rowsByTable[table] ?? []).slice(start, end + 1).map((row) =>
@@ -97,16 +97,23 @@ describe("the rows an address is decided from", () => {
   });
 
   // The words table lands with its own migration, applied by hand: a stack
-  // without it must still list the other five kinds.
+  // without it must still list the other five kinds. A table that is not
+  // deployed stays absent until someone applies it, so holding that answer
+  // for an hour is right.
   // @req REQ-200
-  it("costs only the rows of a table that fails", async () => {
+  it("lists the other kinds when a table is not deployed on this stack", async () => {
     serve(
       supabaseServing(
         {
           afrik_peoples: [{ name_main: "Wolof", name_history: null }],
           afrik_languages: [{ name: "Lingala", name_history: null }],
         },
-        ["afrik_words"]
+        {
+          afrik_words: {
+            code: "PGRST205",
+            message: "Could not find the table 'public.afrik_words'",
+          },
+        }
       )
     );
 
@@ -115,14 +122,32 @@ describe("the rows an address is decided from", () => {
     expect(rows.map((row) => row.name).sort()).toEqual(["Lingala", "Wolof"]);
   });
 
+  // Any other failure is a hiccup, not a smaller corpus. Answering fewer rows
+  // would be cached for an hour and turn every address of that table into a
+  // 404; rejecting leaves nothing cached, so the next request reads again.
   // @req REQ-200
-  it("answers nothing rather than throwing when the client cannot be built", async () => {
+  it("rejects when a deployed table cannot be read", async () => {
+    serve(
+      supabaseServing(
+        {
+          afrik_peoples: [{ name_main: "Wolof", name_history: null }],
+          afrik_languages: [{ name: "Lingala", name_history: null }],
+        },
+        { afrik_languages: { message: "range error" } }
+      )
+    );
+
+    await expect(getAnsweredNameRows()).rejects.toThrow(/afrik_languages/);
+  });
+
+  // @req REQ-200
+  it("rejects when the client cannot be built", async () => {
     (
       createServerClient as unknown as ReturnType<typeof vi.fn>
     ).mockImplementation(() => {
       throw new Error("missing SUPABASE_URL");
     });
 
-    await expect(getAnsweredNameRows()).resolves.toEqual([]);
+    await expect(getAnsweredNameRows()).rejects.toThrow("missing SUPABASE_URL");
   });
 });

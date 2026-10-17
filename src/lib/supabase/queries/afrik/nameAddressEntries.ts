@@ -1,5 +1,5 @@
 import { logger } from "@/lib/api/logger";
-import { walkRanges } from "@/lib/supabase/queries/walkRanges";
+import { walkRanges, type RangeWalk } from "@/lib/supabase/queries/walkRanges";
 
 import { createServerClient } from "../../server";
 
@@ -11,8 +11,13 @@ import { createServerClient } from "../../server";
  * (`exactMatch` folds it against the query), so it is the form an address
  * can be offered for. The history is read because the threshold reads its
  * accounts' tiers and the address spells the form as the history tells it.
- * The rest of each fiche is never fetched: this walk runs once an hour for the
- * sitemap, the address page and the search links.
+ *
+ * The history is still most of what this walk costs: about 8.7 MB across the
+ * six kinds' fiches, of which the threshold reads some 0.4 MB (name texts and
+ * tiers), measured from dataset/source/afrik in October 2026.
+ * `name_history->names` would save 5% only, since the accounts are inside it,
+ * and PostgREST cannot project inside a JSON array. Reading less needs a view
+ * or a function returning each name text with its best tier: a migration.
  */
 
 /** Rows per request, under PostgREST's ceiling as in `sitemapEntries.ts`. */
@@ -44,13 +49,30 @@ export interface AnsweredNameRow {
 
 type SupabaseClient = ReturnType<typeof createServerClient>;
 
+interface NameColumns {
+  name: string;
+  name_history: unknown;
+}
+
+/**
+ * The codes Postgres and PostgREST give a table that is not deployed. The
+ * words table lands with its own migration, applied by hand, so a stack may
+ * lack it until someone applies it: a lasting state, safe to hold for an
+ * hour, unlike a failed read (the distinction `gamesService.ts` draws).
+ */
+function isTableNotDeployed(error: unknown): boolean {
+  const code = (error as { code?: string } | null)?.code;
+  return code === "42P01" || code === "PGRST205";
+}
+
 async function rowsOf(
   supabase: SupabaseClient,
   table: string,
   nameColumn: string
 ): Promise<AnsweredNameRow[]> {
+  let walk: RangeWalk<NameColumns>;
   try {
-    const walk = await walkRanges<{ name: string; name_history: unknown }>(
+    walk = await walkRanges<NameColumns>(
       async (from, to) => {
         // `select()` infers its row type from a literal column list only, so
         // the shape is restated, as in `sitemapEntries.ts`.
@@ -58,7 +80,7 @@ async function rowsOf(
           .from(table)
           .select(`name:${nameColumn}, name_history`)
           .range(from, to)) as unknown as {
-          data: Array<{ name: string; name_history: unknown }> | null;
+          data: NameColumns[] | null;
           error: unknown;
         };
         if (error) throw error;
@@ -66,34 +88,35 @@ async function rowsOf(
       },
       { pageSize: PAGE_SIZE, maxPages: MAX_PAGES }
     );
-    if (walk.truncated) {
-      logger.error(`Name addresses: ${table} exceeded ${MAX_PAGES} pages`);
-    }
-    return walk.rows
-      .filter((row) => typeof row.name === "string" && row.name.trim())
-      .map((row) => ({ name: row.name, nameHistory: row.name_history }));
   } catch (error) {
-    logger.error(`Name addresses: could not read ${table}`, error);
-    return [];
+    if (isTableNotDeployed(error)) {
+      logger.warn(`Name addresses: ${table} is not deployed on this stack`);
+      return [];
+    }
+    const reason =
+      (error as { message?: string } | null)?.message ?? String(error);
+    throw new Error(`Name addresses: could not read ${table}: ${reason}`);
   }
+  if (walk.truncated) {
+    logger.error(`Name addresses: ${table} exceeded ${MAX_PAGES} pages`);
+  }
+  return walk.rows
+    .filter((row) => typeof row.name === "string" && row.name.trim())
+    .map((row) => ({ name: row.name, nameHistory: row.name_history }));
 }
 
 /**
  * Every answered subject's filed name and history, across the six kinds.
  *
- * Never throws: a table that fails costs its own addresses, and a database
- * that is unreachable costs them all, never the sitemap or the search page.
+ * Rejects when a deployed table cannot be read, or when there is no client.
+ * The caller caches what this resolves for an hour, and `unstable_cache`
+ * keeps no rejection: fewer rows resolved on a failed read would turn the
+ * missing addresses into 404s for that hour, where a rejection is read again
+ * on the next request (the lesson recorded in `moduleAvailability.ts`).
  */
 // @req REQ-200
 export async function getAnsweredNameRows(): Promise<AnsweredNameRow[]> {
-  let supabase: SupabaseClient;
-  try {
-    supabase = createServerClient();
-  } catch (error) {
-    logger.error("Name addresses: no Supabase client available", error);
-    return [];
-  }
-
+  const supabase = createServerClient();
   const tables = await Promise.all(
     NAMED_TABLES.map(([table, column]) => rowsOf(supabase, table, column))
   );

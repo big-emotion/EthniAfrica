@@ -17,7 +17,9 @@ interface LayoutParams {
  *
  * A form with no address answers 404. A variant of an addressed form — its
  * accents left out, its case changed — reaches the corpus spelling by one
- * permanent redirect, so the same answer never has two indexable pages.
+ * permanent redirect, so the same answer never has two indexable pages. A
+ * directory that cannot be read rejects and reaches the error boundary: a
+ * 404 there would tell crawlers to drop addresses that still stand.
  */
 // @req REQ-200
 export default async function NameAddressLayout({

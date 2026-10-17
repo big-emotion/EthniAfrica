@@ -85,7 +85,7 @@ export async function loadSearchReading(
     onAnswered,
   }: SearchReadingOptions
 ): Promise<SearchReading> {
-  const answer = await searchWithLeads(query, {
+  const searchEnvelope = await searchWithLeads(query, {
     limit: RESULTS_PER_SEARCH,
     lang: language,
     ...relationSearchParams(relation),
@@ -94,18 +94,18 @@ export async function loadSearchReading(
   });
   const reading: SearchReading = {
     query,
-    ...answer,
-    nearNames: answer.nearNames ?? [],
-    nameAnswers: answer.nameAnswers ?? [],
-    wordAnswers: answer.wordAnswers ?? [],
-    nameSuggestions: answer.nameSuggestions ?? [],
+    ...searchEnvelope,
+    nearNames: searchEnvelope.nearNames ?? [],
+    nameAnswers: searchEnvelope.nameAnswers ?? [],
+    wordAnswers: searchEnvelope.wordAnswers ?? [],
+    nameSuggestions: searchEnvelope.nameSuggestions ?? [],
     subjects: [],
     companions: null,
     nameHistories: [],
     feedState: null,
     nextSteps: [],
   };
-  if (!answer.answered) return reading;
+  if (!searchEnvelope.answered) return reading;
   // A newer query superseded this one while its search answered: nothing
   // more is read for it, not even its companions.
   signal?.throwIfAborted();
@@ -113,17 +113,17 @@ export async function loadSearchReading(
   // A relation-scoped search ("the peoples of the Krou family") carries no
   // name to match, so it resolves no subject and the feed reads it as a
   // browse (ETNI-1966).
-  const ranked = [...answer.results].sort(compareByRelevance);
+  const ranked = [...searchEnvelope.results].sort(compareByRelevance);
   const subjects = selectNameSubject(ranked, query, language).filter(
     isSearchFeedSubject
   );
-  onAnswered?.(answer.results, subjects);
+  onAnswered?.(searchEnvelope.results, subjects);
 
   // Loaded before the feed mounts: the feed picks its default lens once,
   // and opens on the timeline when a subject has a name history.
   const [companions, nameHistories] = await Promise.all([
     loadSearchCompanions(
-      companionSubjectsForSearch(subjects, answer.leads),
+      companionSubjectsForSearch(subjects, searchEnvelope.leads),
       language,
       signal,
       query,
@@ -138,7 +138,7 @@ export async function loadSearchReading(
     companions,
     nameHistories,
     feedState: classifySearchFeed({
-      search: { results: answer.results, leads: answer.leads },
+      search: { results: searchEnvelope.results, leads: searchEnvelope.leads },
       companions,
       subjects,
       termSuggestions: reading.nameSuggestions,

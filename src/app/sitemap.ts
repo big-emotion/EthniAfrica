@@ -6,6 +6,7 @@ import {
 } from "@/lib/articles/corpus";
 import { articleHref } from "@/components/articles/articlePaths";
 import { getNameAddressSpellings } from "@/api/v2/services/nameAddresses";
+import { logger } from "@/lib/api/logger";
 import { CANONICAL_DOMAIN } from "@/lib/brand";
 import { discoveryPath, eligiblePublications } from "@/lib/discoveries/catalog";
 import { getDiscoveryPublications } from "@/lib/discoveries/entries";
@@ -83,7 +84,12 @@ function fichePaths(
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const [corpus, nameSpellings] = await Promise.all([
     getSitemapEntityIds(),
-    getNameAddressSpellings(),
+    // The directory rejects on a failed read rather than shrinking: this
+    // build goes without the addresses, the next revalidation reads them.
+    getNameAddressSpellings().catch((error: unknown) => {
+      logger.error("Sitemap: the name addresses could not be read", error);
+      return [] as string[];
+    }),
   ]);
 
   const entries: MetadataRoute.Sitemap = [];

@@ -35,6 +35,15 @@ vi.mock("@/hooks/use-language", async (importOriginal) => ({
 vi.mock("@/lib/supabase/queries/afrik/nameAddressEntries", () => ({
   getAnsweredNameRows: vi.fn(),
 }));
+// Left real; one test hands the real walk a table that fails to read.
+vi.mock("@/lib/supabase/server", async (importOriginal) => {
+  const original =
+    await importOriginal<typeof import("@/lib/supabase/server")>();
+  return {
+    ...original,
+    createServerClient: vi.fn(original.createServerClient),
+  };
+});
 vi.mock("@/api/v2/services/searchService", () => ({ ftsSearch: vi.fn() }));
 vi.mock("@/api/v2/services/searchCompanions", () => ({
   getSearchCompanionSelections: vi.fn(async () => ({
@@ -49,6 +58,10 @@ vi.mock("@/api/v2/services/searchCompanions", () => ({
 vi.mock("@/api/v2/services/languageService", async (importOriginal) => ({
   ...(await importOriginal<object>()),
   getLanguageById: vi.fn(),
+}));
+vi.mock("@/api/v2/services/patronymes", async (importOriginal) => ({
+  ...(await importOriginal<object>()),
+  getPatronymeById: vi.fn(async () => null),
 }));
 // A page with no subject offers two seed names next; their fiches are not
 // what these tests read.
@@ -69,6 +82,8 @@ import NameAddressPage, {
   generateMetadata,
 } from "@/app/[lang]/atlas/recherche/[name]/page";
 import { getLanguageById } from "@/api/v2/services/languageService";
+import { getPatronymeById } from "@/api/v2/services/patronymes";
+import { getSearchCompanionSelections } from "@/api/v2/services/searchCompanions";
 import { ftsSearch } from "@/api/v2/services/searchService";
 import { VALID_NAME_HISTORY } from "@/lib/afrik/parsers/__tests__/fixtures";
 import { CANONICAL_DOMAIN } from "@/lib/brand";
@@ -76,6 +91,7 @@ import { getNameAnswerRoute } from "@/lib/routing";
 import { LINGALA_HISTORY } from "@/lib/search/__fixtures__/nameTimelineFixtures";
 import { searchQueryLog } from "@/lib/search/searchQueryLog";
 import { getAnsweredNameRows } from "@/lib/supabase/queries/afrik/nameAddressEntries";
+import { createServerClient } from "@/lib/supabase/server";
 import type { FtsSearchResponse } from "@/types/afrik";
 
 /** Traore is filed unaccented and told « Traoré » by its history. */
@@ -84,13 +100,18 @@ const TRAORE_HISTORY = {
   names: [{ ...LINGALA_HISTORY.names[0], nameText: "Traoré" }],
 };
 
-function searchAnswering(languages: Array<Record<string, unknown>>) {
+type SearchRow = Record<string, unknown>;
+
+function searchAnswering({
+  languages = [],
+  patronymes = [],
+}: { languages?: SearchRow[]; patronymes?: SearchRow[] } = {}) {
   return {
     peoples: [],
     countries: [],
     families: [],
     persons: [],
-    patronymes: [],
+    patronymes,
     quizzes: [],
     languages,
     places: [],
@@ -100,12 +121,12 @@ function searchAnswering(languages: Array<Record<string, unknown>>) {
     countriesTotal: 0,
     familiesTotal: 0,
     personsTotal: 0,
-    patronymesTotal: 0,
+    patronymesTotal: patronymes.length,
     quizzesTotal: 0,
     languagesTotal: languages.length,
     placesTotal: 0,
     wordsTotal: 0,
-    total: languages.length,
+    total: languages.length + patronymes.length,
     leads: [],
     nearNames: [],
   } as unknown as FtsSearchResponse;
@@ -126,9 +147,11 @@ beforeEach(() => {
     { name: "Yoruba", nameHistory: VALID_NAME_HISTORY },
   ]);
   vi.mocked(ftsSearch).mockResolvedValue(
-    searchAnswering([
-      { id: "lin", name: "Lingala", exactMatch: true, relevance: 1 },
-    ])
+    searchAnswering({
+      languages: [
+        { id: "lin", name: "Lingala", exactMatch: true, relevance: 1 },
+      ],
+    })
   );
   vi.mocked(getLanguageById).mockResolvedValue({
     id: "lin",
@@ -217,7 +240,7 @@ describe("the address of an answered name", () => {
   // answers it from the registry, and its address renders that answer.
   // @req REQ-200
   it("renders a ledger word's answer on the server, with its own head", async () => {
-    vi.mocked(ftsSearch).mockResolvedValue(searchAnswering([]));
+    vi.mocked(ftsSearch).mockResolvedValue(searchAnswering());
 
     const html = await serverHtml("ethnie");
     const head = await generateMetadata({ params: params("ethnie") });
@@ -226,6 +249,90 @@ describe("the address of an answered name", () => {
     expect(head.alternates?.canonical).toBe(
       `https://${CANONICAL_DOMAIN}${getNameAnswerRoute("fr", "ethnie")}`
     );
+  });
+
+  // The variant's redirect lands on a page headed as the corpus writes the
+  // name, not as it is filed (AC 3).
+  // @req REQ-200
+  it("heads the address of a family name filed unaccented with its corpus spelling", async () => {
+    vi.mocked(ftsSearch).mockResolvedValue(
+      searchAnswering({
+        patronymes: [
+          {
+            id: "PAT_TRAORE",
+            nameMain: "Traore",
+            nameSystem: "clan_name",
+            casteOrSocialFunction: null,
+            content: {},
+            relevance: 1,
+            exactMatch: true,
+            normalizedScore: 1,
+            snippet: null,
+          },
+        ],
+      })
+    );
+    vi.mocked(getPatronymeById).mockResolvedValue({
+      id: "PAT_TRAORE",
+      nameMain: "Traore",
+      nameSystem: "clan_name",
+      casteOrSocialFunction: null,
+      content: { nameMain: "Traore" },
+      associatedPeoples: [],
+      associatedCountries: [],
+      bearers: [],
+      namedBearers: [],
+      alliances: [],
+      nameHistory: TRAORE_HISTORY,
+    });
+
+    const html = await serverHtml("traor%C3%A9");
+
+    expect(html).toMatch(/<h1[^>]*>Traoré<\/h1>/);
+  });
+
+  // A failed read is not a smaller corpus. A 404 tells crawlers the address
+  // is gone; an error is retried and leaves the address standing.
+  // @req REQ-200
+  it("answers an error, not 404, when a names table cannot be read", async () => {
+    const { getAnsweredNameRows: walkTables } = await vi.importActual<
+      typeof import("@/lib/supabase/queries/afrik/nameAddressEntries")
+    >("@/lib/supabase/queries/afrik/nameAddressEntries");
+    vi.mocked(getAnsweredNameRows).mockImplementation(walkTables);
+    const languagesDown = {
+      from: (table: string) => ({
+        select: () => ({
+          range: async () =>
+            table === "afrik_languages"
+              ? { data: null, error: { message: "range error" } }
+              : { data: [], error: null },
+        }),
+      }),
+    };
+    vi.mocked(createServerClient).mockReturnValueOnce(
+      languagesDown as unknown as ReturnType<typeof createServerClient>
+    );
+
+    const layout = NameAddressLayout({
+      children: "page",
+      params: params("lingala"),
+    });
+
+    await expect(layout).rejects.toThrow("afrik_languages");
+    await expect(layout).rejects.not.toThrow("NEXT_NOT_FOUND");
+  });
+
+  // Crawlers read the address. During an outage it answers an error, never a
+  // 200 page with a retry button at the canonical address.
+  // @req REQ-200
+  it("answers an error, not an indexable outage page, when the reading fails", async () => {
+    vi.mocked(ftsSearch).mockRejectedValueOnce(new Error("search is down"));
+    await expect(serverHtml("lingala")).rejects.toThrow();
+
+    vi.mocked(getSearchCompanionSelections).mockRejectedValueOnce(
+      new Error("companions are down")
+    );
+    await expect(serverHtml("lingala")).rejects.toThrow();
   });
 
   // @req REQ-200

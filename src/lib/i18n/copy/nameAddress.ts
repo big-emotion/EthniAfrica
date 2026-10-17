@@ -14,7 +14,7 @@ export interface NameAddressCopy {
 const fr: NameAddressCopy = {
   title: (name) => `${name} : d'où vient ce nom`,
   description: (name) =>
-    `D'où vient le nom ${name}, quels autres noms il porte, et qui les a donnés, quand et pourquoi. Chaque récit cite ses sources.`,
+    `Cette page explique d'où vient le nom ${name}, quels autres noms il porte, qui les a donnés, quand et pourquoi, et cite ses sources.`,
 };
 
 // @req REQ-200

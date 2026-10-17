@@ -15,7 +15,6 @@ import { searchCompanionsQuerySchema } from "@/api/v2/schemas/searchCompanions";
 import { orNotFound, type DetailOutcome } from "@/api/v2/utils/corpusRoute";
 import { logger } from "@/lib/api/logger";
 import { loadNextSteps, type CorpusTransport } from "@/lib/afrikLoader";
-import { EMPTY_SEARCH_LENS_COUNTS } from "@/lib/search/searchEnvelope";
 import {
   loadSearchReading,
   type SearchReading,
@@ -49,7 +48,7 @@ const FICHE_HANDLERS: Record<string, (id: string) => Promise<DetailOutcome>> = {
 
 const FICHE_PATH = /^\/api\/v2\/([a-z-]+)\/([^/]+)$/;
 
-async function answer(url: URL): Promise<Response> {
+async function dispatchToHandler(url: URL): Promise<Response> {
   const params = url.searchParams;
   if (url.pathname === "/api/v2/search") {
     const limit = Number.parseInt(params.get("limit") ?? "", 10);
@@ -88,7 +87,7 @@ const serverSearchTransport: CorpusTransport = async (path) => {
   // Only the path and query are read; the base is never reached.
   const url = new URL(path, "http://localhost");
   try {
-    return await answer(url);
+    return await dispatchToHandler(url);
   } catch (error) {
     logger.error("serverSearchTransport: handler failed", error, {
       path: url.pathname,
@@ -101,46 +100,30 @@ const serverSearchTransport: CorpusTransport = async (path) => {
  * The whole reading of an addressed name, next names included, so the server
  * HTML holds the page the browser would have built from `?q=`.
  *
- * Never rejects. A reading the API could not give is handed over unanswered,
- * and the page shows the outage with its retry, as it does in the browser.
+ * Rejects when the API could not give it, so the error boundary answers 5xx.
+ * The browser's `?q=` reading can show the outage with a retry; an address is
+ * read by crawlers, and a 200 outage page carrying the address's canonical
+ * would be indexed in place of the answer.
  */
 // @req REQ-200
 export async function readAddressedName(
   spelling: string,
   language: Language
 ): Promise<SearchReading> {
-  try {
-    const reading = await loadSearchReading(spelling, {
-      language,
-      transport: serverSearchTransport,
-    });
-    if (!reading.answered) return reading;
-    const nextSteps = await loadNextSteps(
-      reading.subjects,
-      language,
-      undefined,
-      reading.nameHistories,
-      spelling,
-      serverSearchTransport
-    );
-    return { ...reading, nextSteps };
-  } catch (error) {
-    logger.error("readAddressedName: the reading failed", error, { spelling });
-    return {
-      query: spelling,
-      answered: false,
-      results: [],
-      leads: [],
-      nearNames: [],
-      nameAnswers: [],
-      wordAnswers: [],
-      nameSuggestions: [],
-      counts: { ...EMPTY_SEARCH_LENS_COUNTS },
-      subjects: [],
-      companions: null,
-      nameHistories: [],
-      feedState: null,
-      nextSteps: [],
-    };
+  const reading = await loadSearchReading(spelling, {
+    language,
+    transport: serverSearchTransport,
+  });
+  if (!reading.answered) {
+    throw new Error(`readAddressedName: the search did not answer ${spelling}`);
   }
+  const nextSteps = await loadNextSteps(
+    reading.subjects,
+    language,
+    undefined,
+    reading.nameHistories,
+    spelling,
+    serverSearchTransport
+  );
+  return { ...reading, nextSteps };
 }

@@ -21,7 +21,10 @@ vi.mock("@/lib/supabase/queries/afrik/nameAddressEntries", () => ({
 }));
 
 import { CORPUS_AGGREGATE_REVALIDATE_SECONDS } from "@/api/v2/services/corpusCache";
-import { getNameAddressSpellings } from "@/api/v2/services/nameAddresses";
+import {
+  getNameAddressSpellings,
+  resolveNameAddress,
+} from "@/api/v2/services/nameAddresses";
 import { getAnsweredNameRows } from "@/lib/supabase/queries/afrik/nameAddressEntries";
 
 /**
@@ -102,6 +105,17 @@ describe("the spellings that have an address", () => {
     expect(await getNameAddressSpellings()).toEqual(
       expect.arrayContaining(["ethnie", "griot"])
     );
+  });
+
+  // `unstable_cache` keeps what the walk resolves, never what it rejects. A
+  // shorter list resolved on a failed read would be held for an hour and
+  // turn the missing addresses into 404s; a rejection is read again next time.
+  // @req REQ-200
+  it("rejects rather than resolving fewer spellings when the rows cannot be read", async () => {
+    rows.mockRejectedValue(new Error("afrik_languages: range error"));
+
+    await expect(getNameAddressSpellings()).rejects.toThrow("range error");
+    await expect(resolveNameAddress("lingala")).rejects.toThrow("range error");
   });
 
   // @req REQ-200

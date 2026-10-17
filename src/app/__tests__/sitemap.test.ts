@@ -394,4 +394,22 @@ describe("sitemap.xml — the addresses of answered names", () => {
       `https://${CANONICAL_DOMAIN}${getNameAnswerRoute("fr", "ethnie")}`
     );
   });
+
+  // The directory rejects on a failed read rather than shrinking, so this
+  // build of the sitemap goes without the addresses and keeps everything
+  // else; the next revalidation reads them again.
+  // @req REQ-200
+  it("still ships the fiches and rubrics when the addresses cannot be read", async () => {
+    vi.mocked(getAnsweredNameRows).mockRejectedValue(
+      new Error("afrik_languages: range error")
+    );
+
+    const all = await urls();
+
+    expect(all).toContain(`https://${CANONICAL_DOMAIN}/fr`);
+    expect(all).toContain(
+      `https://${CANONICAL_DOMAIN}${getLanguageRoute("fr", "bam")}`
+    );
+    expect(await addressed()).toEqual([]);
+  });
 });
