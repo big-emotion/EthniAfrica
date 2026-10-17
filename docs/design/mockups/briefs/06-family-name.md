@@ -13,6 +13,14 @@ rule that an empty chapter disappears and its silence goes to the closing band.
 Footer B (brief 9, [`09-our-approach.md`](09-our-approach.md)) is now on
 `Main` and on every board that has a footer, except `name-traore`.
 
+**Added on 2026-10-17: the link to the name's story.** Brief 10
+([`10-fiche-story-link-and-folds.md`](10-fiche-story-link-and-folds.md)) gives
+every fiche one action link to its name's result page. This brief is still
+proposed and its prompt not yet pasted, so `name-traore` gets the same link in
+the same pass (item 6), instead of waiting for a later board change. Paste this
+brief's prompt after brief 10's boards are approved, so the board reuses the
+link from `Main`.
+
 **Board to change** (at `-430`, `-768`, `-1440`): `name-traore`. `Main` changes
 only if a shared component does.
 
@@ -121,10 +129,21 @@ social post (`traore-diop`) already points here.
    the alliances sentence; the sources list; the oral accounts behind a one-line
    summary; the « Origine » types. The board keeps today's state until the
    operator decides.
+6. **Add the link to the name's story** (brief 10, item 1), reused from `Main`:
+   « Suivre l'histoire du nom Traoré », label then the action link's arrow,
+   with under it, in caption size, « La page du nom présente ce que disent les
+   sources : qui l'a donné, à qui, quand et pourquoi, en remontant le
+   temps. » It is the last line of « Le nom », before the next chapter. It
+   names the fiche's leading name as the name story spells it: Traoré, under an
+   h1 that reads « Traore » today (item d leaves the h1 spelling to the
+   operator; Traore and Traoré share one address). It leads to the name's
+   answer page, `/fr/atlas/recherche/<nom>`. A family-name fiche with no name
+   story shows no link; `name-state-thin-kollo` and `name-state-weak-sarr`
+   carry one only if their fiche has a name story (both do: Kollo, Sarr).
 
-Do not touch the hero, the chapter bar, « Le nom », « Peuples et pays
-concernés », « Porteurs et porteuses » or the sources list, except where item 5
-says so.
+Do not touch the hero, the chapter bar, « Le nom » (except the link of
+item 6), « Peuples et pays concernés », « Porteurs et porteuses » or the
+sources list, except where item 5 says so.
 
 ## Real data for the boards
 
