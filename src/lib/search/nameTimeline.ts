@@ -53,10 +53,21 @@ export interface TimelineName {
   tiles: TimelineTile[];
 }
 
+export interface SelfNameLead {
+  searched: string;
+  self: string;
+  /**
+   * How many explanations of the self-name the page shows: the accounts of
+   * its explanations tiles (brief 11 §1a), never every account the fiche
+   * files under a hypothesis group. A lone one builds no tile and counts 0.
+   */
+  readings: number;
+}
+
 export interface NameTimelineModel {
   summary: string;
   names: TimelineName[];
-  selfLead?: { searched: string; self: string };
+  selfLead?: SelfNameLead;
   /** Every name and written form the block records, set in italics by the UI. */
   italicForms: string[];
 }
@@ -186,30 +197,36 @@ export function buildNameTimeline(
   const isSearched = (name: HistoryName) =>
     answersToSearch(name.nameText, searched);
   const ordered = orderForSearch(history.names, isSearched);
+  const names = ordered.map((name) => {
+    const tiles = tilesOf(name);
+    return {
+      nameText: name.nameText,
+      former: name.nameStatus === "former",
+      selfGiven: name.selfGiven,
+      searched: isSearched(name),
+      shortLine: name.shortLine,
+      hasBirth: tiles.some(({ placement }) => placement === "birth"),
+      tiles,
+    };
+  });
+  const lead = ordered.some(isSearched)
+    ? selfNameLead(
+        history.names.map(({ nameText, selfGiven }) => ({
+          form: nameText,
+          selfGiven,
+        })),
+        ordered.find(isSearched)!.nameText
+      )
+    : undefined;
+  const readingsOf = (nameText: string) =>
+    (names.find((name) => name.nameText === nameText)?.tiles ?? [])
+      .filter(({ hypotheses }) => hypotheses)
+      .reduce((count, { accounts }) => count + accounts.length, 0);
 
   return {
     summary: history.summary,
-    names: ordered.map((name) => {
-      const tiles = tilesOf(name);
-      return {
-        nameText: name.nameText,
-        former: name.nameStatus === "former",
-        selfGiven: name.selfGiven,
-        searched: isSearched(name),
-        shortLine: name.shortLine,
-        hasBirth: tiles.some(({ placement }) => placement === "birth"),
-        tiles,
-      };
-    }),
-    selfLead: ordered.some(isSearched)
-      ? selfNameLead(
-          history.names.map(({ nameText, selfGiven }) => ({
-            form: nameText,
-            selfGiven,
-          })),
-          ordered.find(isSearched)!.nameText
-        )
-      : undefined,
+    names,
+    selfLead: lead ? { ...lead, readings: readingsOf(lead.self) } : undefined,
     italicForms: [
       ...new Set(
         history.names.flatMap((name) => [
@@ -223,9 +240,79 @@ export function buildNameTimeline(
   };
 }
 
+/**
+ * Consecutive tiles of one period, printed under that period once (brief 11
+ * §4): the data repeats « Usage contemporain » over two statements, and two
+ * stations with the same label read as a stammer. A display rule only: each
+ * tile keeps its statement and its sources, and no account is dropped. A
+ * birth, a « before » or an explanations tile has its own mark and never
+ * joins another.
+ */
+// @req REQ-198
+export function periodRuns(tiles: readonly TimelineTile[]): TimelineTile[][] {
+  const joinable = (tile: TimelineTile) =>
+    tile.placement === "plain" &&
+    !tile.hypotheses &&
+    tile.periodLabel !== undefined;
+  const runs: TimelineTile[][] = [];
+  for (const tile of tiles) {
+    const run = runs[runs.length - 1];
+    const last = run?.[run.length - 1];
+    if (
+      last &&
+      joinable(last) &&
+      joinable(tile) &&
+      last.periodLabel === tile.periodLabel
+    ) {
+      run.push(tile);
+    } else {
+      runs.push([tile]);
+    }
+  }
+  return runs;
+}
+
 export interface NamedTextPart {
   text: string;
   name?: true;
+}
+
+// French typography keeps a guillemet or a high mark with its word, so no
+// line breaks after « nor before » ; : ! ?
+const HOLDS_NEXT = /[«“(]/;
+const HOLDS_PREVIOUS = /[»”):;!?]/;
+
+/**
+ * A passage cut before its last word, so that word and the sources button
+ * after it wrap together (brief 11 §3). A no-break space alone does not hold
+ * a button to the word before it: CSS keeps a wrap opportunity on both sides
+ * of an atomic inline (CSS Text 3, 5.1). A cited name is never cut in two.
+ */
+// @req REQ-194
+export function splitAtLastWord(
+  parts: readonly NamedTextPart[]
+): [NamedTextPart[], NamedTextPart[]] {
+  const text = parts.map((part) => part.text).join("");
+  let start = text.length;
+  for (let index = parts.length - 1; index >= 0; index--) {
+    const part = parts[index];
+    start -= part.text.length;
+    if (part.name) continue;
+    for (let offset = part.text.length - 1; offset >= 0; offset--) {
+      const at = start + offset;
+      if (
+        /\s/.test(text[at]) &&
+        !HOLDS_NEXT.test(text[at - 1] ?? "") &&
+        !HOLDS_PREVIOUS.test(text[at + 1] ?? "")
+      ) {
+        return [
+          [...parts.slice(0, index), { text: part.text.slice(0, offset + 1) }],
+          [{ text: part.text.slice(offset + 1) }, ...parts.slice(index + 1)],
+        ];
+      }
+    }
+  }
+  return [[], [...parts]];
 }
 
 const escapeRegExp = (text: string) =>

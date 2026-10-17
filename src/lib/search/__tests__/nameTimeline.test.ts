@@ -9,9 +9,19 @@ import {
 } from "@/lib/search/__fixtures__/nameTimelineFixtures";
 import {
   buildNameTimeline,
+  periodRuns,
   regimeOfYear,
+  splitAtLastWord,
   splitNamedText,
+  type TimelineTile,
 } from "@/lib/search/nameTimeline";
+
+const historyOf = (path: string) => {
+  const raw = JSON.parse(readFileSync(resolve(process.cwd(), path), "utf8"));
+  return parseNameHistory(raw.nameHistory).data!;
+};
+const FULA = "dataset/source/afrik/peuples/FLG_ATLANTIQUE/PPL_FULA.json";
+const BASSA_CAM = "dataset/source/afrik/peuples/FLG_BANTU/PPL_BASSA_CAM.json";
 
 const tileShape = (history = LINGALA_HISTORY, searched = "lingala") =>
   buildNameTimeline(history, searched).names[0].tiles.map((tile) => [
@@ -38,8 +48,29 @@ describe("buildNameTimeline — which name comes first", () => {
     expect(buildNameTimeline(PEUL_HISTORY, "Peul").selfLead).toEqual({
       searched: "Peul",
       self: "Fulɓe",
+      readings: 0,
     });
     expect(buildNameTimeline(PEUL_HISTORY, "fulbe").selfLead).toBeUndefined();
+  });
+
+  // Brief 11 §1a: the lead announces only the explanations the page shows,
+  // the accounts of the explanations tiles built for the self-name.
+  // @req REQ-197
+  it("counts the self-name's explanations the timeline builds: five for Fulɓe", () => {
+    expect(buildNameTimeline(historyOf(FULA), "peul").selfLead).toEqual({
+      searched: "Peul",
+      self: "Fulɓe",
+      readings: 5,
+    });
+  });
+
+  // « origine du nom Basaa » holds one account: told as a plain tile, so the
+  // page has no explanations tile to announce.
+  // @req REQ-197
+  it("counts none when the self-name's lone explanation builds no tile", () => {
+    expect(
+      buildNameTimeline(historyOf(BASSA_CAM), "bassa").selfLead
+    ).toMatchObject({ searched: "Bassa", self: "Basaa", readings: 0 });
   });
 
   // @req REQ-197
@@ -254,6 +285,114 @@ describe("buildNameTimeline — the validated fiches", () => {
       .map((t) => t.accounts[0].statement);
     expect(below.some((s) => s.includes("bobangi"))).toBe(true);
     expect(below.some((s) => s.includes("Bangala"))).toBe(true);
+  });
+});
+
+describe("periodRuns — a period printed once over the tiles that share it", () => {
+  const tile = (
+    periodLabel: string,
+    placement: TimelineTile["placement"] = "plain",
+    hypotheses = false
+  ): TimelineTile => ({
+    key: `${placement}:${periodLabel}:${hypotheses}`,
+    placement,
+    periodLabel,
+    regime: "modern",
+    hypotheses,
+    accounts: [],
+  });
+  const labels = (runs: TimelineTile[][]) =>
+    runs.map((run) =>
+      run.map(
+        ({ placement, periodLabel, hypotheses }) =>
+          `${placement}${hypotheses ? "+hypotheses" : ""} ${periodLabel}`
+      )
+    );
+
+  // @req REQ-198
+  it("joins Peul's two « Usage contemporain » tiles and keeps every account", () => {
+    const peul = buildNameTimeline(historyOf(FULA), "peul").names[0];
+    const runs = periodRuns(peul.tiles);
+
+    expect(runs.map((run) => run.map((t) => t.periodLabel))).toEqual([
+      ["Usage contemporain", "Usage contemporain"],
+      ["Rapporté dans un article de 1966"],
+      ["1842"],
+    ]);
+    expect(runs.flat()).toEqual(peul.tiles);
+  });
+
+  // @req REQ-198
+  it("never joins a birth, a before or an explanations tile to another", () => {
+    expect(
+      labels(
+        periodRuns([
+          tile("2025"),
+          tile("2025", "birth"),
+          tile("2025"),
+          tile("2025", "plain", true),
+          tile("2025"),
+          tile("2025", "before"),
+          tile("2025", "before"),
+        ])
+      )
+    ).toEqual([
+      ["plain 2025"],
+      ["birth 2025"],
+      ["plain 2025"],
+      ["plain+hypotheses 2025"],
+      ["plain 2025"],
+      ["before 2025"],
+      ["before 2025"],
+    ]);
+  });
+
+  // @req REQ-198
+  it("joins only tiles in a row, and never two without a period", () => {
+    const undated = { ...tile("x"), periodLabel: undefined };
+    expect(
+      periodRuns([tile("A"), tile("B"), tile("A"), undated, undated]).map(
+        (run) => run.length
+      )
+    ).toEqual([1, 1, 1, 1, 1]);
+  });
+});
+
+describe("splitAtLastWord — the passage's last word goes with its sources button", () => {
+  // @req REQ-194
+  it("cuts a plain sentence at its last space", () => {
+    expect(splitAtLastWord([{ text: "Le nom est attesté en 1902." }])).toEqual([
+      [{ text: "Le nom est attesté en " }],
+      [{ text: "1902." }],
+    ]);
+  });
+
+  // A name of several words is never cut, and guillemets stay with the words
+  // they enclose, as French typography wants (board search-congo-430).
+  // @req REQ-194
+  it("keeps a final name of several words and its closing guillemet whole", () => {
+    expect(
+      splitAtLastWord(
+        splitNamedText("le nom du pays est « République du Congo ».", [
+          "République du Congo",
+        ])
+      )
+    ).toEqual([
+      [{ text: "le nom du pays est " }],
+      [
+        { text: "« " },
+        { text: "République du Congo", name: true },
+        { text: " »." },
+      ],
+    ]);
+  });
+
+  // @req REQ-194
+  it("keeps a one-word passage whole", () => {
+    expect(splitAtLastWord([{ text: "Attesté." }])).toEqual([
+      [],
+      [{ text: "Attesté." }],
+    ]);
   });
 });
 
