@@ -75,6 +75,18 @@ function campaignCode(value) {
 // network, utm_content naming what carried the link.
 const LINK_CONTENT = { "photo-carousel": "carrousel", video: "video" };
 function campaignLink(destination, { network, campaign, content }) {
+  // The tags are appended as the destination stands: its own utm_ parameters
+  // would give the link two sets, and a #fragment would carry them where
+  // Plausible never reads them.
+  if (
+    destination.includes("#") ||
+    [...new URL(destination).searchParams.keys()].some((key) =>
+      key.startsWith("utm_")
+    )
+  )
+    fail(
+      "Verified destination must be the bare page, without utm_ parameters or a #fragment"
+    );
   const tags = `utm_source=${network}&utm_medium=social&utm_campaign=${campaign}&utm_content=${content}`;
   return `${destination}${destination.includes("?") ? "&" : "?"}${tags}`;
 }

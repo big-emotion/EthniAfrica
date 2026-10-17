@@ -107,7 +107,10 @@ https://ethniafrica.com/fr/atlas/langues/lin?utm_source=facebook&utm_medium=soci
 
 The helper refuses a bare destination and a link tagged for another network,
 campaign or format, and its error prints the expected link. The research
-dossier keeps the bare destination; the tags belong to each adaptation.
+dossier keeps the bare destination; the tags belong to each adaptation. A
+verified destination that already carries `utm_` parameters or a `#fragment`
+is refused too: the tags would be doubled, or would land after the fragment,
+where Plausible never reads them.
 
 **Why.** Plausible credits a visit to a post only through these parameters.
 The audience audit of 2026-10-13 found that no post published since 1 October
@@ -124,6 +127,16 @@ first comment or a YouTube or X caption; Instagram and TikTok rely on the
 profile link. A profile link is shared by every post while it stays in place,
 so its visits go to the campaign it was tagged with. Plausible loads
 only after a reader accepts analytics, so campaign counts are a floor.
+
+Instagram adds tags of its own to visits from its profile link: the audit of
+2026-10-13 counts 35 visitors under `utm_source=ig` and 35 under
+`utm_content=link_in_bio`, tags no package writes
+(`docs/audience/audit-2026-10-13.md`, campaigns line). Instagram profile visits
+may therefore show under `ig`/`link_in_bio` rather than this package's
+`instagram`/`bio`. A profile link tagged per piece also goes against the series
+rule that "the profile link stays fixed on the search page"
+(`docs/editorial/strategy/social-series.md`); the operator settles that before
+a series piece uses `profile`.
 
 ## Delivered files
 

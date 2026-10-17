@@ -687,15 +687,15 @@ test("each image a series video shows needs a research and rights record", (t) =
 const LINGALA = "https://ethniafrica.com/fr/atlas/recherche?q=Lingala";
 
 // A carousel whose Facebook first comment carries `url`, with the Lingala answer
-// as the verified destination of the campaign langue-07.
-function lingalaPiece(t, url) {
+// (or `destination`) as the verified destination of the campaign langue-07.
+function lingalaPiece(t, url, destination = LINGALA) {
   const f = packageFixture(t);
   const p = join(f.root, f.config.research);
   const research = JSON.parse(readFileSync(p, "utf8"));
   research.destination = {
     status: "verified",
     invitation: "Lire la réponse",
-    url: LINGALA,
+    url: destination,
     checkedAt: "2026-10-17",
     support: "Synthetic observation",
     evidence: f.file("live.txt", "Synthetic answer capture"),
@@ -748,6 +748,65 @@ test("a link tagged for another network, campaign or format is refused", (t) => 
 });
 
 // @req REQ-186
+test("a verified destination that already carries utm tags or a fragment is refused", (t) => {
+  const tags =
+    "utm_source=facebook&utm_medium=social&utm_campaign=langue-07&utm_content=carrousel";
+  for (const destination of [
+    `${LINGALA}&utm_source=newsletter`,
+    `${LINGALA}#origine`,
+  ]) {
+    // The link is the destination with this piece's tags appended, so only
+    // the destination itself can be at fault.
+    const f = lingalaPiece(t, `${destination}&${tags}`, destination);
+    assert.throws(
+      () => createPackage(f.root, f.configPath, f.output, both),
+      /bare page/i,
+      destination
+    );
+    assert.equal(existsSync(join(f.root, f.output)), false);
+  }
+});
+
+// @req REQ-186
+test("a series video carries its YouTube link tagged as a video", (t) => {
+  const networks = ["youtube", "instagram"];
+  const f = seriesPackageFixture(t, networks);
+  const p = join(f.root, f.config.research);
+  const research = JSON.parse(readFileSync(p, "utf8"));
+  research.destination = {
+    status: "verified",
+    invitation: "Lire la réponse",
+    url: LINGALA,
+    checkedAt: "2026-10-17",
+    support: "Synthetic observation",
+    evidence: f.file("live.txt", "Synthetic answer capture"),
+  };
+  writeFileSync(p, JSON.stringify(research));
+  const youtube = f.config.networks[0];
+  const caption = youtube.caption;
+  const tagged = `${LINGALA}&utm_source=youtube&utm_medium=social&utm_campaign=${f.config.campaign}&utm_content=video`;
+  youtube.link = { placement: "caption", url: tagged };
+  youtube.caption = `${caption} ${tagged}`;
+  youtube.capability.linkPlacements = ["none", "caption"];
+  f.save();
+  createPackage(f.root, f.configPath, f.output, networks);
+  assert.ok(
+    readFileSync(join(f.root, f.output, "post.md"), "utf8").includes(tagged)
+  );
+  const asCarousel = tagged.replace(
+    "utm_content=video",
+    "utm_content=carrousel"
+  );
+  youtube.link.url = asCarousel;
+  youtube.caption = `${caption} ${asCarousel}`;
+  f.save();
+  assert.throws(
+    () => createPackage(f.root, f.configPath, "piece/carrousel", networks),
+    /campaign tag/i
+  );
+});
+
+// @req REQ-186
 test("a new delivery needs a campaign written as a lowercase slug", (t) => {
   for (const campaign of ["Langue 07", "langue_07", "", undefined]) {
     const f = packageFixture(t);
@@ -783,19 +842,65 @@ test("a profile link is tagged as the bio link, not as the post", (t) => {
   );
 });
 
+// Turns a delivered revision into one written before campaigns existed: its
+// input has no campaign, and Facebook's tagged link, when there is one, is
+// `bareLink` in the input and in the delivered copy. The manifest then
+// fingerprints the rewritten files, as `create` did at the time.
+function writtenBeforeCampaigns(f, bareLink) {
+  const facebook = f.config.networks[1];
+  const tagged = facebook.link.url;
+  if (tagged) {
+    facebook.link.url = bareLink;
+    facebook.firstComment = bareLink;
+  }
+  delete f.config.campaign;
+  f.save();
+  const sha = (file) =>
+    createHash("sha256")
+      .update(readFileSync(join(f.root, file)))
+      .digest("hex");
+  const manifestFile = join(f.root, f.output, "package.json");
+  const manifest = JSON.parse(readFileSync(manifestFile, "utf8"));
+  for (const name of ["post.md", "public-copy.json"]) {
+    const file = `${f.output}/${name}`;
+    if (tagged)
+      writeFileSync(
+        join(f.root, file),
+        readFileSync(join(f.root, file), "utf8").replaceAll(tagged, bareLink)
+      );
+    manifest.files[name] = sha(file);
+  }
+  manifest.dependencies[f.configPath] = sha(f.configPath);
+  writeFileSync(manifestFile, JSON.stringify(manifest, null, 2) + "\n");
+}
+
 // @req REQ-186
 test("a revision written before campaigns existed still verifies without one", (t) => {
   const f = packageFixture(t);
   createPackage(f.root, f.configPath, f.output, both);
-  // Such a revision has the same files; only its input lacks the campaign,
-  // and its manifest fingerprints that input.
-  delete f.config.campaign;
-  f.save();
-  const manifestFile = join(f.root, f.output, "package.json");
-  const manifest = JSON.parse(readFileSync(manifestFile, "utf8"));
-  manifest.dependencies[f.configPath] = createHash("sha256")
-    .update(readFileSync(join(f.root, f.configPath)))
-    .digest("hex");
-  writeFileSync(manifestFile, JSON.stringify(manifest, null, 2) + "\n");
+  writtenBeforeCampaigns(f);
   assert.doesNotThrow(() => inspectPackage(f.root, f.output, both));
+});
+
+// @req REQ-186
+test("a revision written before campaigns keeps its bare link only when it is the verified destination", (t) => {
+  const tagged = `${LINGALA}&utm_source=facebook&utm_medium=social&utm_campaign=langue-07&utm_content=carrousel`;
+  const f = lingalaPiece(t, tagged);
+  createPackage(f.root, f.configPath, f.output, both);
+  writtenBeforeCampaigns(f, LINGALA);
+  assert.match(
+    readFileSync(join(f.root, f.output, "post.md"), "utf8"),
+    /### Premier commentaire\n\nhttps:\/\/ethniafrica\.com\/fr\/atlas\/recherche\?q=Lingala\n/
+  );
+  assert.doesNotThrow(() => inspectPackage(f.root, f.output, both));
+  const other = lingalaPiece(t, tagged);
+  createPackage(other.root, other.configPath, other.output, both);
+  writtenBeforeCampaigns(
+    other,
+    "https://ethniafrica.com/fr/atlas/recherche?q=Kikongo"
+  );
+  assert.throws(
+    () => inspectPackage(other.root, other.output, both),
+    /verified destination/i
+  );
 });

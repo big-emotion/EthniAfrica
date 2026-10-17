@@ -69,7 +69,7 @@ production package (`ethniafrica-social-production`, its
 accepts a link only when it carries the piece's campaign, its network as
 `utm_source` and one `utm_content` per format (`bio` for a profile link), so
 each tagged visit names the post that sent it. A package whose input has no
-`campaign` predates this rule and went out with a bare link. Read the campaign rows next to the
+`campaign` predates this rule; any link it delivered was bare. Read the campaign rows next to the
 network table of Step 1 bis; a post with views and no campaign row either sent
 nobody or went out with a bare link — the post's `post.md` says which.
 
