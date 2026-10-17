@@ -3,9 +3,6 @@ import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 import type { FeedBlockId, FeedZone } from "@/lib/search/resultGrammar";
 
-export { SearchFeedSectionHeading } from "@/components/search/feed/SearchFeedSectionHeading";
-export type { SearchFeedSectionHeadingProps } from "@/components/search/feed/SearchFeedSectionHeading";
-
 type SearchFeedBlockElement = "section" | "div" | "nav";
 
 export interface SearchFeedBlockProps {
