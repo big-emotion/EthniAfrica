@@ -121,7 +121,7 @@ describe("PeopleCountriesSection", () => {
   });
 
   // The section opened on the same figure the fiche head states above the
-  // globe — "45M personnes · réf. 2025" there, "45M habitants · 2025" here,
+  // globe — "45M personnes en 2025" there, "45M habitants · 2025" here,
   // set in the display face so it read as a second headline for the same
   // fact. The head is where a fiche states its scale; the rows below carry
   // their own populations.

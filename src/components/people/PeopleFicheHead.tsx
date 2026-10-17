@@ -29,7 +29,7 @@ import { peopleCopy } from "@/lib/i18n/copy/people";
  * a head counting the other field would have the page contradicting itself
  * within one screen.
  */
-// @req REQ-115
+// @req REQ-151
 export function PeopleFicheHead({
   language,
   hero,
@@ -97,7 +97,7 @@ export function PeopleFicheHead({
             </span>{" "}
             {copy.people}
             {countries.referenceYear
-              ? ` · ${copy.reference} ${countries.referenceYear}`
+              ? ` ${copy.inYear(countries.referenceYear)}`
               : ""}
           </span>
         )}
