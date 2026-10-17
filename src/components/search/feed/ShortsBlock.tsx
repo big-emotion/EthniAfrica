@@ -58,6 +58,7 @@ export type ShortsBlockProps = ShortsBlockBaseProps &
  * Minutes and zero-padded seconds: the shelf prints them « 2:35 », the video
  * row of « Histoire du nom » « 2 min 35 » (board search-peul-430).
  */
+// @req REQ-180
 export function durationParts(durationSeconds: number): [number, string] {
   const minutes = Math.floor(durationSeconds / 60);
   const seconds = durationSeconds % 60;
@@ -268,6 +269,7 @@ function ShortsRail({
  * A piece made on the searched name or word, as opposed to its context: the
  * « Sur ce nom » group of the filter, and the one video of the timeline.
  */
+// @req REQ-180
 export function isOnName(item: FeedShortItem): boolean {
   return item.match.relation === "exact" || item.match.relation === "word";
 }

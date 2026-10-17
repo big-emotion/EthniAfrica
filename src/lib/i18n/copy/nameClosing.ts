@@ -115,6 +115,7 @@ const SUBJECT_FR: Partial<Record<SearchEntityType, string>> = {
  * Small counts in words, as a sentence reads them; a count it lacks is
  * written in figures. Shared with the timeline's count of explanations.
  */
+// @req REQ-198
 export const COUNT_FR: Record<number, string> = {
   2: "deux",
   3: "trois",
