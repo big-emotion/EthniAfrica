@@ -39,6 +39,11 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
   (`?q=Songhay`, not the filed label), the next names load after the feed, and with one
   subject « Voir la fiche complète » sits under the timeline. A lone answer is titled
   with the form the reader searched (« Fiches sur Fulani ») (#1814).
+- Search: a family name that the search reaches only through its sound is offered only
+  when nothing in the corpus matches the query exactly. « peul » no longer lists Bailly,
+  Baloyi, Bell or Bwalya beside the Peul fiche, and « Keyta » still reaches « Keïta ».
+  `afrik_search_patronymes` takes a `p_exact_elsewhere` flag (migration `108`), and the
+  names it leaves out count in no total (REQ-201, ETNI-2046) (#1817).
 - Analytics: next-step clicks are counted again, as `fiche:related_click` on fiches and
   `search:result_click` with `surface: "next"` on the result page, and the arrival's
   `utm_*` parameters survive a second search (#1814).
