@@ -55,7 +55,7 @@ export function FicheTileChapter({
   }
 
   const { shown, folded } = foldAfterFirst(tiles);
-  const draw = (group: readonly FicheTileData[]) => (
+  const tileGrid = (group: readonly FicheTileData[]) => (
     <FicheTiles>
       {group.map((tile) => (
         <FicheTile
@@ -114,7 +114,7 @@ export function FicheTileChapter({
 
   return (
     <>
-      {draw(shown)}
+      {tileGrid(shown)}
       {folded.length > 0 ? (
         <FicheFold
           label={ficheCopy[language].fold.seeAlso(
@@ -122,7 +122,7 @@ export function FicheTileChapter({
           )}
           language={language}
         >
-          {draw(folded)}
+          {tileGrid(folded)}
         </FicheFold>
       ) : null}
     </>

@@ -84,7 +84,7 @@ export function FicheChronologyChapter({
     </ul>
   ) : null;
 
-  const list = (group: readonly ChronologyStation[]) => (
+  const stationList = (group: readonly ChronologyStation[]) => (
     <ol className="afh-chronology" aria-label={copy.label}>
       {group.map((station) => (
         <ChronologyStationTile
@@ -131,14 +131,14 @@ export function FicheChronologyChapter({
       {foldedStations.length === 0 ? (
         <>
           {legend}
-          {list(stations)}
+          {stationList(stations)}
         </>
       ) : (
         <>
           {openStations.length > 0 ? (
             <>
               {legend}
-              {list(openStations)}
+              {stationList(openStations)}
             </>
           ) : null}
           <FicheFold
@@ -148,7 +148,7 @@ export function FicheChronologyChapter({
             language={language}
           >
             {openStations.length > 0 ? null : legend}
-            {list(foldedStations)}
+            {stationList(foldedStations)}
           </FicheFold>
         </>
       )}
