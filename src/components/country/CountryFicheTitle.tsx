@@ -1,8 +1,5 @@
 import type { CountryDetail } from "@/types/afrik-frontend";
-import {
-  DEMOGRAPHIC_REFERENCE_YEAR,
-  transformCountryData,
-} from "@/lib/countryDataTransformer";
+import { transformCountryData } from "@/lib/countryDataTransformer";
 import { backLinkLabel } from "@/lib/navigation/deriveTrail";
 import { getPeopleRoute, getStaticPageRoute } from "@/lib/routing";
 import type { Language } from "@/types/shared";
@@ -32,7 +29,6 @@ export function CountryFicheTitle({
 }) {
   const copy = countryCopy[language].title;
   const { hero } = transformCountryData(country, language);
-  const hasPeoples = (country.demographics?.peoples?.length ?? 0) > 0;
   // The head names the country twice on purpose — the name of ordinary use,
   // then the protocol name under it — but only while they are two different
   // facts. Repeating one word as if it were two overstates what the fiche
@@ -59,10 +55,10 @@ export function CountryFicheTitle({
       )}
 
       <header className="afh-parchment-head">
-        <p className="afh-parchment-eyebrow">
-          {hero.iso} · {copy.ficheCountry}
-          {hasPeoples && ` · ${copy.reference} ${DEMOGRAPHIC_REFERENCE_YEAR}`}
-        </p>
+        {/* What the page is, in plain words (REQ-151). The ISO code and the
+            reference year stood here; the year now dates the shares it was
+            about, over « Peuples du pays ». */}
+        <p className="afh-parchment-eyebrow">{copy.kind}</p>
         {/* The invitation stands with the name of the page rather than only at
             the foot of it. A reader decides a record is thin in the first
             screen, which is also the screen where the way to fill it was
