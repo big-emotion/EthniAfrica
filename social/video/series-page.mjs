@@ -5,7 +5,8 @@
 // board handoff/video-board-full.html; the cards' words, inks and fonts come
 // from the design system itself (EthniCards.render with context 'video'), so
 // they match the carousel. The image fills the frame and only text sits on
-// it: every letter carries its own dark outline, nothing darkens the image.
+// it: every letter carries its own dark outline, and since 1.9.0 a second,
+// wider contour that follows the letters; nothing darkens the image.
 // Everything arrives from series-render.mjs; the page has no clock and no
 // network.
 import { FLAT_VERT, FLAT_FRAG, OVERLAY_SCRIPT } from "./page.mjs";
@@ -26,7 +27,7 @@ html,body{margin:0;background:#000}
    (operator, 14 October 2026). */
 #frame{position:relative;width:1080px;height:1920px;overflow:hidden;background:#0b0806;
   --oi-ink:var(--on-image-ink);--oi-text:var(--on-image-text);--oi-muted:var(--on-image-muted);--oi-faint:var(--on-image-faint);
-  --oi-accent:var(--on-image-accent);--oi-on-accent:var(--on-image-on-accent);--oi-stroke:var(--on-image-stroke);--oi-shadow:var(--on-image-shadow)}
+  --oi-accent:var(--on-image-accent);--oi-on-accent:var(--on-image-on-accent);--oi-stroke:var(--on-image-stroke)}
 .vf-layer{position:absolute;inset:0;display:none}
 .vf-pic{position:absolute;inset:0;overflow:hidden}
 .vf-pic img{position:absolute;max-width:none;display:block}
@@ -56,10 +57,12 @@ html,body{margin:0;background:#000}
 .vf-slot-label{font:800 30px/36px var(--font-text);letter-spacing:.1em;text-transform:uppercase;color:var(--oi-accent);--sw:4px}
 .vf-slot-find{font:700 40px/52px var(--font-text);--sw:6px;text-wrap:pretty}
 .vf-slot-label.oi{color:var(--oi-accent)}
-/* The one text treatment: light letters on a dark outline painted under them. */
+/* The one text treatment: light letters on a dark outline painted under them.
+   1.9.0: the second contour and its soft shadow come from the ring filters
+   (ringFilters), set on each outermost block; the 1.4.0 soft shadow
+   (on-image-shadow) is retired from the text on the image. */
 .oi{--area-a-ink:var(--on-image-accent);--area-b-ink:var(--area-b-ink-on-image,#6cc3b5);--area-c-ink:var(--area-c-ink-on-image,#e3876a);
-  color:var(--oi-ink);paint-order:stroke fill;-webkit-text-stroke:var(--sw,4px) var(--oi-stroke);text-shadow:0 1px 8px var(--oi-shadow)}
-.oi-l{text-shadow:0 2px 14px var(--oi-shadow)}
+  color:var(--oi-ink);paint-order:stroke fill;-webkit-text-stroke:var(--sw,4px) var(--oi-stroke)}
 .oi .ec-accent,.oi em{color:var(--oi-accent);font-style:normal}
 .vf-band{position:absolute;left:60px;top:250px;font:800 32px/40px var(--font-text);letter-spacing:.02em;--sw:4px;white-space:nowrap;z-index:3}
 .vf-band .vf-sep{color:var(--oi-faint)} .vf-band .vf-ep{color:var(--oi-accent)}
@@ -136,14 +139,17 @@ html,body{margin:0;background:#000}
 .vf-close-foot .vf-sign img{width:56px;height:56px}
 .vf-close-foot .vf-sign b{font-size:44px;line-height:48px;--sw:5px}
 .vf-demo{position:absolute;right:60px;top:178px;z-index:9;background:var(--demo-tape,#ffe58a);color:var(--demo-ink,#2b2100);font:800 22px/28px var(--font-text);letter-spacing:.06em;text-transform:uppercase;padding:10px 22px;border-radius:999px;white-space:nowrap}
-/* Subtitles: Vidéo carte 0.4.0, unchanged (social/video/page.mjs): Nunito
-   Sans 800 56/68, a 9 px dark stroke under the letters and a soft shadow; the
-   spoken word in accent, its text in on-accent. Lines from y 1316 to 1452,
-   centred on x 540, at most 900 px wide. */
+/* Subtitles: Vidéo carte 0.4.0 (social/video/page.mjs): Nunito Sans 800
+   56/68, a 9 px dark stroke under the letters; the spoken word in accent, its
+   text in on-accent. Lines from y 1316 to 1452, centred on x 540, at most
+   900 px wide. 1.9.0: each line takes the ring of its 9 px outline, r = 5,
+   in place of the soft shadow, and the lit box gets a 2 px dark edge and a
+   shadow; the line's ring goes round the box. */
 #subtitles{position:absolute;left:60px;top:1316px;width:960px;height:136px;display:flex;flex-direction:column;justify-content:center;z-index:4}
-.sub-line{text-align:center;white-space:pre;font:800 56px/68px var(--font-text);color:var(--oi-text)}
-.sub-text{-webkit-text-stroke:9px var(--oi-stroke);paint-order:stroke fill;text-shadow:0 2px 14px var(--oi-shadow)}
-.lit{background:var(--oi-accent);color:var(--oi-on-accent);border-radius:6px;box-shadow:6px 0 0 var(--oi-accent),-6px 0 0 var(--oi-accent);-webkit-text-stroke:0;text-shadow:none}
+.sub-line{text-align:center;white-space:pre;font:800 56px/68px var(--font-text);color:var(--oi-text);filter:url(#oi-ring-5)}
+.sub-text{-webkit-text-stroke:9px var(--oi-stroke);paint-order:stroke fill}
+.lit{background:var(--oi-accent);color:var(--oi-on-accent);border-radius:6px;-webkit-text-stroke:0;
+  box-shadow:6px 0 0 var(--oi-accent),-6px 0 0 var(--oi-accent),6px 0 0 2px var(--oi-stroke),-6px 0 0 2px var(--oi-stroke),0 0 12px 4px rgba(11,8,6,.55)}
 </style></head><body><div id="frame"></div>
 <svg id="sm-defs" width="0" height="0" style="position:absolute" aria-hidden="true"><defs></defs></svg>
 <script>
@@ -698,6 +704,38 @@ function drawRun(node, map) {
   node.wrap.style.transform = "scale(" + map.zoom + ")";
 }
 
+// 1.9.0, the double outline (series.md, « Legibility on light pictures »):
+// one filter per radius r, 3 to 8 px. The letters with their outline, grown
+// by r, softened by 0.6 px, in on-image-ring (the second contour); the same
+// growth blurred by r in on-image-ring-soft (its soft shadow); the text over
+// both. The filter region is the board's.
+const RINGS = [3, 4, 5, 6, 7, 8];
+const ringOf = (outline) => Math.max(3, Math.round(0.6 * outline));
+function flood(token) {
+  const value = getComputedStyle(document.documentElement).getPropertyValue("--" + token).trim();
+  const m = value.match(/^rgba\\((\\d+),\\s*(\\d+),\\s*(\\d+),\\s*([\\d.]+)\\)$/);
+  if (!m) throw new Error("Token " + token + " is not an rgba colour: " + value);
+  return 'flood-color="rgb(' + m[1] + "," + m[2] + "," + m[3] + ')" flood-opacity="' + m[4] + '"';
+}
+function ringFilters() {
+  const ring = flood("on-image-ring"), soft = flood("on-image-ring-soft");
+  document.querySelector("#sm-defs defs").insertAdjacentHTML("beforeend", RINGS.map((r) =>
+    '<filter id="oi-ring-' + r + '" x="-10%" y="-40%" width="120%" height="180%" color-interpolation-filters="sRGB">' +
+    '<feMorphology in="SourceAlpha" operator="dilate" radius="' + r + '" result="d"/>' +
+    '<feGaussianBlur in="d" stdDeviation="0.6" result="ds"/><feFlood ' + ring + '/><feComposite in2="ds" operator="in" result="ring"/>' +
+    '<feGaussianBlur in="d" stdDeviation="' + r + '" result="sh"/><feFlood ' + soft + '/><feComposite in2="sh" operator="in" result="soft"/>' +
+    '<feMerge><feMergeNode in="soft"/><feMergeNode in="ring"/><feMergeNode in="SourceGraphic"/></feMerge></filter>').join(""));
+}
+// Each block of text on the image that no other contains takes the ring of
+// its outline; the words of a block share it. Subtitle lines take theirs
+// from the stylesheet, since they are drawn frame by frame.
+function ringText(frame) {
+  for (const n of frame.querySelectorAll(TEXT_ON_IMAGE)) {
+    if (n.parentElement.closest(TEXT_ON_IMAGE)) continue;
+    n.style.filter = "url(#oi-ring-" + ringOf(outlineOf(n)) + ")";
+  }
+}
+
 // Long dates: the largest size that holds on one line in 960 px, measured
 // on the drawn glyphs; else two balanced lines at 104/100.
 function setDate(parts) {
@@ -753,6 +791,8 @@ window.setup = async ({ tokens, cards, logo, demo, maps }) => {
   subtitles.id = "subtitles";
   frame.append(subtitles);
   if (demo) frame.append(el("div", "vf-demo", esc(fr(demo))));
+  ringFilters();
+  ringText(frame);
   const images = [...frame.querySelectorAll(".vf-pic img")];
   await Promise.all(images.map((i) => i.decode().catch(() => null)));
   const broken = images.filter((i) => !i.naturalWidth).map((i) => i.getAttribute("src"));
@@ -863,6 +903,23 @@ function backgrounds(frame) {
     .map((n) => n.className || n.tagName);
 }
 
+// 1.9.0: the text on the image as drawn. Each outermost block (one that no
+// text on the image contains) with the outline its letters carry and its
+// filter; and any text on the image still casting a text-shadow, map names
+// left out (they keep their own halo).
+const TEXT_ON_IMAGE = ".oi, .sub-line";
+const outlineOf = (n) => parseFloat(getComputedStyle(n.matches(".sub-line") ? n.firstElementChild : n).webkitTextStrokeWidth);
+function legibility(frame) {
+  const drawnText = [...frame.querySelectorAll(TEXT_ON_IMAGE)].filter((n) => n.getClientRects().length);
+  const blocks = drawnText
+    .filter((n) => !n.parentElement.closest(TEXT_ON_IMAGE))
+    .map((n) => ({ id: n.textContent.trim().slice(0, 40), cls: n.className, tag: n.tagName, parent: n.parentElement.className, outline: outlineOf(n), filter: getComputedStyle(n).filter }));
+  const shadowed = [...frame.querySelectorAll(".oi, .oi *, .sub-line, .sub-line *")]
+    .filter((n) => n.getClientRects().length && getComputedStyle(n).textShadow !== "none")
+    .map((n) => n.className || n.tagName);
+  return { blocks, shadowed };
+}
+
 // One subtitle chunk, as the 0.4.0 page draws it: units always wrapped, lit
 // or not, so the highlight changes paint only, never layout.
 function drawSubtitle(subtitle) {
@@ -964,6 +1021,8 @@ window.drawFrame = (state) => {
     boxes: frameBoxes(frame, state),
     text: frame.innerText,
     lit: frame.querySelectorAll("#subtitles .lit").length,
+    litBoxes: [...frame.querySelectorAll("#subtitles .lit")].map(rect),
+    legibility: legibility(frame),
     maps,
     pictures,
     backgrounds: backgrounds(frame),

@@ -1,0 +1,5147 @@
+{
+  "series-pays": {
+    "0": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-pays-01",
+        "kind": "image",
+        "x": -909.65625,
+        "y": 0,
+        "w": 2899.328125,
+        "h": 1920
+      },
+      {
+        "id": "Le nom d'un pays",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 257.140625,
+        "h": 36
+      },
+      {
+        "id": "Qui a choisi le nom Burkina Faso ?",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 892.703125,
+        "h": 224
+      },
+      {
+        "id": "Photo : Alexander Leisser, cour royale d",
+        "kind": "credit",
+        "x": 60,
+        "y": 1730,
+        "w": 946.671875,
+        "h": 56
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "19": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-pays-01",
+        "kind": "image",
+        "x": -917.151123046875,
+        "y": -4.96331787109375,
+        "w": 2914.31787109375,
+        "h": 1929.9267578125
+      },
+      {
+        "id": "Le nom d'un pays",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 257.140625,
+        "h": 36
+      },
+      {
+        "id": "Qui a choisi le nom Burkina Faso ?",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 892.703125,
+        "h": 224
+      },
+      {
+        "id": "Photo : Alexander Leisser, cour royale d",
+        "kind": "credit",
+        "x": 60,
+        "y": 1730,
+        "w": 946.671875,
+        "h": 56
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 256.328125,
+        "y": 1350,
+        "w": 567.34375,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "68": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-pays-01",
+        "kind": "image",
+        "x": -936.47998046875,
+        "y": -17.7633056640625,
+        "w": 2952.9755859375,
+        "h": 1955.526611328125
+      },
+      {
+        "id": "Le nom d'un pays",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 257.140625,
+        "h": 36
+      },
+      {
+        "id": "Qui a choisi le nom Burkina Faso ?",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 892.703125,
+        "h": 224
+      },
+      {
+        "id": "Photo : Alexander Leisser, cour royale d",
+        "kind": "credit",
+        "x": 60,
+        "y": 1730,
+        "w": 946.671875,
+        "h": 56
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 268.125,
+        "y": 1350,
+        "w": 543.734375,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "142": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-pays-01",
+        "kind": "image",
+        "x": -965.67041015625,
+        "y": -37.0938720703125,
+        "w": 3011.3564453125,
+        "h": 1994.187744140625
+      },
+      {
+        "id": "Le nom d'un pays",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 257.140625,
+        "h": 36
+      },
+      {
+        "id": "Qui a choisi le nom Burkina Faso ?",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 892.703125,
+        "h": 224
+      },
+      {
+        "id": "Photo : Alexander Leisser, cour royale d",
+        "kind": "credit",
+        "x": 60,
+        "y": 1730,
+        "w": 946.671875,
+        "h": 56
+      },
+      {
+        "id": "serie-pays-02",
+        "kind": "image",
+        "x": -82.0875244140625,
+        "y": -0.3170166015625,
+        "w": 1244.175048828125,
+        "h": 1920.7044677734375
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 268.125,
+        "y": 1350,
+        "w": 543.734375,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "145": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-pays-01",
+        "kind": "image",
+        "x": -966.8538818359375,
+        "y": -37.8775634765625,
+        "w": 3013.723388671875,
+        "h": 1995.755126953125
+      },
+      {
+        "id": "serie-pays-02",
+        "kind": "image",
+        "x": -82.42987060546875,
+        "y": -0.79266357421875,
+        "w": 1244.85986328125,
+        "h": 1921.761474609375
+      },
+      {
+        "id": "Ce que le nom veut dire",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 349.1875,
+        "h": 36
+      },
+      {
+        "id": "Deux mots pris à deux langues du pays",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 779.765625,
+        "h": 180
+      },
+      {
+        "id": "Source : Alain Maharaux, 1995, p. 9",
+        "kind": "source",
+        "x": 60,
+        "y": 1696,
+        "w": 391.296875,
+        "h": 30
+      },
+      {
+        "id": "Photo : Angeline A. van Achterberg, Gran",
+        "kind": "credit",
+        "x": 60,
+        "y": 1730,
+        "w": 943.9375,
+        "h": 56
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 268.125,
+        "y": 1350,
+        "w": 543.734375,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "148": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-pays-02",
+        "kind": "image",
+        "x": -82.772216796875,
+        "y": -1.268310546875,
+        "w": 1245.54443359375,
+        "h": 1922.8184814453125
+      },
+      {
+        "id": "Ce que le nom veut dire",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 349.1875,
+        "h": 36
+      },
+      {
+        "id": "Deux mots pris à deux langues du pays",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 779.765625,
+        "h": 180
+      },
+      {
+        "id": "Source : Alain Maharaux, 1995, p. 9",
+        "kind": "source",
+        "x": 60,
+        "y": 1696,
+        "w": 391.296875,
+        "h": 30
+      },
+      {
+        "id": "Photo : Angeline A. van Achterberg, Gran",
+        "kind": "credit",
+        "x": 60,
+        "y": 1730,
+        "w": 943.9375,
+        "h": 56
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 317.171875,
+        "y": 1316,
+        "w": 445.640625,
+        "h": 68
+      },
+      {
+        "id": "subtitle line 2",
+        "kind": "subtitle",
+        "x": 318.265625,
+        "y": 1384,
+        "w": 443.453125,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "221": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-pays-02",
+        "kind": "image",
+        "x": -91.101806640625,
+        "y": -12.84112548828125,
+        "w": 1262.203369140625,
+        "h": 1948.535888671875
+      },
+      {
+        "id": "Ce que le nom veut dire",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 349.1875,
+        "h": 36
+      },
+      {
+        "id": "Deux mots pris à deux langues du pays",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 779.765625,
+        "h": 180
+      },
+      {
+        "id": "Source : Alain Maharaux, 1995, p. 9",
+        "kind": "source",
+        "x": 60,
+        "y": 1696,
+        "w": 391.296875,
+        "h": 30
+      },
+      {
+        "id": "Photo : Angeline A. van Achterberg, Gran",
+        "kind": "credit",
+        "x": 60,
+        "y": 1730,
+        "w": 943.9375,
+        "h": 56
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 286.546875,
+        "y": 1316,
+        "w": 506.890625,
+        "h": 68
+      },
+      {
+        "id": "subtitle line 2",
+        "kind": "subtitle",
+        "x": 264.78125,
+        "y": 1384,
+        "w": 550.4375,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "299": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-pays-02",
+        "kind": "image",
+        "x": -100.00189208984375,
+        "y": -25.20660400390625,
+        "w": 1280.00341796875,
+        "h": 1976.0146484375
+      },
+      {
+        "id": "Ce que le nom veut dire",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 349.1875,
+        "h": 36
+      },
+      {
+        "id": "Deux mots pris à deux langues du pays",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 779.765625,
+        "h": 180
+      },
+      {
+        "id": "Source : Alain Maharaux, 1995, p. 9",
+        "kind": "source",
+        "x": 60,
+        "y": 1696,
+        "w": 391.296875,
+        "h": 30
+      },
+      {
+        "id": "Photo : Angeline A. van Achterberg, Gran",
+        "kind": "credit",
+        "x": 60,
+        "y": 1730,
+        "w": 943.9375,
+        "h": 56
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 222.421875,
+        "y": 1350,
+        "w": 635.15625,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "353": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-pays-02",
+        "kind": "image",
+        "x": -106.16351318359375,
+        "y": -33.767333984375,
+        "w": 1292.326416015625,
+        "h": 1995.0384521484375
+      },
+      {
+        "id": "Ce que le nom veut dire",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 349.1875,
+        "h": 36
+      },
+      {
+        "id": "Deux mots pris à deux langues du pays",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 779.765625,
+        "h": 180
+      },
+      {
+        "id": "Source : Alain Maharaux, 1995, p. 9",
+        "kind": "source",
+        "x": 60,
+        "y": 1696,
+        "w": 391.296875,
+        "h": 30
+      },
+      {
+        "id": "Photo : Angeline A. van Achterberg, Gran",
+        "kind": "credit",
+        "x": 60,
+        "y": 1730,
+        "w": 943.9375,
+        "h": 56
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 222.421875,
+        "y": 1350,
+        "w": 635.15625,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "356": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-pays-02",
+        "kind": "image",
+        "x": -106.505859375,
+        "y": -34.242919921875,
+        "w": 1293.0111083984375,
+        "h": 1996.095458984375
+      },
+      {
+        "id": "Nom de l'État",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 201.296875,
+        "h": 36
+      },
+      {
+        "id": "4 août 1984",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 821.9375,
+        "h": 156
+      },
+      {
+        "id": "Nom employé",
+        "kind": "head",
+        "x": 60,
+        "y": 534,
+        "w": 187.34375,
+        "h": 28
+      },
+      {
+        "id": "Burkina Faso",
+        "kind": "head",
+        "x": 60,
+        "y": 564,
+        "w": 389.734375,
+        "h": 82
+      },
+      {
+        "id": "Source : Digithèque MJP, université de P",
+        "kind": "source",
+        "x": 60,
+        "y": 1726,
+        "w": 892.15625,
+        "h": 60
+      },
+      {
+        "id": "Image à trouver",
+        "kind": "slot",
+        "x": 120,
+        "y": 982,
+        "w": 328.671875,
+        "h": 36
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 222.421875,
+        "y": 1350,
+        "w": 635.15625,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "359": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "Nom de l'État",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 201.296875,
+        "h": 36
+      },
+      {
+        "id": "4 août 1984",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 821.9375,
+        "h": 156
+      },
+      {
+        "id": "Nom employé",
+        "kind": "head",
+        "x": 60,
+        "y": 534,
+        "w": 187.34375,
+        "h": 28
+      },
+      {
+        "id": "Burkina Faso",
+        "kind": "head",
+        "x": 60,
+        "y": 564,
+        "w": 389.734375,
+        "h": 82
+      },
+      {
+        "id": "Source : Digithèque MJP, université de P",
+        "kind": "source",
+        "x": 60,
+        "y": 1726,
+        "w": 892.15625,
+        "h": 60
+      },
+      {
+        "id": "Image à trouver",
+        "kind": "slot",
+        "x": 120,
+        "y": 982,
+        "w": 328.671875,
+        "h": 36
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 239.453125,
+        "y": 1350,
+        "w": 601.09375,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "431": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "Nom de l'État",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 201.296875,
+        "h": 36
+      },
+      {
+        "id": "4 août 1984",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 821.9375,
+        "h": 156
+      },
+      {
+        "id": "Nom employé",
+        "kind": "head",
+        "x": 60,
+        "y": 534,
+        "w": 187.34375,
+        "h": 28
+      },
+      {
+        "id": "Burkina Faso",
+        "kind": "head",
+        "x": 60,
+        "y": 564,
+        "w": 389.734375,
+        "h": 82
+      },
+      {
+        "id": "Source : Digithèque MJP, université de P",
+        "kind": "source",
+        "x": 60,
+        "y": 1726,
+        "w": 892.15625,
+        "h": 60
+      },
+      {
+        "id": "Image à trouver",
+        "kind": "slot",
+        "x": 120,
+        "y": 982,
+        "w": 328.671875,
+        "h": 36
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 243.15625,
+        "y": 1350,
+        "w": 593.671875,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "503": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "Nom de l'État",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 201.296875,
+        "h": 36
+      },
+      {
+        "id": "4 août 1984",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 821.9375,
+        "h": 156
+      },
+      {
+        "id": "Nom employé",
+        "kind": "head",
+        "x": 60,
+        "y": 534,
+        "w": 187.34375,
+        "h": 28
+      },
+      {
+        "id": "Burkina Faso",
+        "kind": "head",
+        "x": 60,
+        "y": 564,
+        "w": 389.734375,
+        "h": 82
+      },
+      {
+        "id": "Source : Digithèque MJP, université de P",
+        "kind": "source",
+        "x": 60,
+        "y": 1726,
+        "w": 892.15625,
+        "h": 60
+      },
+      {
+        "id": "Image à trouver",
+        "kind": "slot",
+        "x": 120,
+        "y": 982,
+        "w": 328.671875,
+        "h": 36
+      },
+      {
+        "id": "serie-pays-04",
+        "kind": "image",
+        "x": -923.1729736328125,
+        "y": -0.38018798828125,
+        "w": 2926.361572265625,
+        "h": 1920.76025390625
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 243.15625,
+        "y": 1350,
+        "w": 593.671875,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "506": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-pays-04",
+        "kind": "image",
+        "x": -924.0419921875,
+        "y": -0.9505615234375,
+        "w": 2928.099609375,
+        "h": 1921.901123046875
+      },
+      {
+        "id": "Le nom d'avant",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 225.734375,
+        "h": 36
+      },
+      {
+        "id": "1er mars 1919",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 810.5625,
+        "h": 136
+      },
+      {
+        "id": "Nom employé",
+        "kind": "head",
+        "x": 60,
+        "y": 514,
+        "w": 187.34375,
+        "h": 28
+      },
+      {
+        "id": "Haute-Volta",
+        "kind": "head",
+        "x": 60,
+        "y": 544,
+        "w": 348.71875,
+        "h": 82
+      },
+      {
+        "id": "Source : Décret du 1er mars 1919, articl",
+        "kind": "source",
+        "x": 60,
+        "y": 1724,
+        "w": 731.171875,
+        "h": 30
+      },
+      {
+        "id": "Photo : Walter Mittelholzer, Ouagadougou",
+        "kind": "credit",
+        "x": 60,
+        "y": 1758,
+        "w": 845.578125,
+        "h": 28
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 243.15625,
+        "y": 1350,
+        "w": 593.671875,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "509": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-pays-04",
+        "kind": "image",
+        "x": -924.9107666015625,
+        "y": -1.52081298828125,
+        "w": 2929.837158203125,
+        "h": 1923.04150390625
+      },
+      {
+        "id": "Le nom d'avant",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 225.734375,
+        "h": 36
+      },
+      {
+        "id": "1er mars 1919",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 810.5625,
+        "h": 136
+      },
+      {
+        "id": "Nom employé",
+        "kind": "head",
+        "x": 60,
+        "y": 514,
+        "w": 187.34375,
+        "h": 28
+      },
+      {
+        "id": "Haute-Volta",
+        "kind": "head",
+        "x": 60,
+        "y": 544,
+        "w": 348.71875,
+        "h": 82
+      },
+      {
+        "id": "Source : Décret du 1er mars 1919, articl",
+        "kind": "source",
+        "x": 60,
+        "y": 1724,
+        "w": 731.171875,
+        "h": 30
+      },
+      {
+        "id": "Photo : Walter Mittelholzer, Ouagadougou",
+        "kind": "credit",
+        "x": 60,
+        "y": 1758,
+        "w": 845.578125,
+        "h": 28
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 214.9375,
+        "y": 1350,
+        "w": 650.125,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "569": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-pays-04",
+        "kind": "image",
+        "x": -942.288330078125,
+        "y": -12.9267578125,
+        "w": 2964.59228515625,
+        "h": 1945.853515625
+      },
+      {
+        "id": "Le nom d'avant",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 225.734375,
+        "h": 36
+      },
+      {
+        "id": "1er mars 1919",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 810.5625,
+        "h": 136
+      },
+      {
+        "id": "Nom employé",
+        "kind": "head",
+        "x": 60,
+        "y": 514,
+        "w": 187.34375,
+        "h": 28
+      },
+      {
+        "id": "Haute-Volta",
+        "kind": "head",
+        "x": 60,
+        "y": 544,
+        "w": 348.71875,
+        "h": 82
+      },
+      {
+        "id": "Source : Décret du 1er mars 1919, articl",
+        "kind": "source",
+        "x": 60,
+        "y": 1724,
+        "w": 731.171875,
+        "h": 30
+      },
+      {
+        "id": "Photo : Walter Mittelholzer, Ouagadougou",
+        "kind": "credit",
+        "x": 60,
+        "y": 1758,
+        "w": 845.578125,
+        "h": 28
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 370.140625,
+        "y": 1316,
+        "w": 339.71875,
+        "h": 68
+      },
+      {
+        "id": "subtitle line 2",
+        "kind": "subtitle",
+        "x": 328.859375,
+        "y": 1384,
+        "w": 422.28125,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "629": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-pays-04",
+        "kind": "image",
+        "x": -959.6656494140625,
+        "y": -24.3326416015625,
+        "w": 2999.346923828125,
+        "h": 1968.665283203125
+      },
+      {
+        "id": "Le nom d'avant",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 225.734375,
+        "h": 36
+      },
+      {
+        "id": "1er mars 1919",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 810.5625,
+        "h": 136
+      },
+      {
+        "id": "Nom employé",
+        "kind": "head",
+        "x": 60,
+        "y": 514,
+        "w": 187.34375,
+        "h": 28
+      },
+      {
+        "id": "Haute-Volta",
+        "kind": "head",
+        "x": 60,
+        "y": 544,
+        "w": 348.71875,
+        "h": 82
+      },
+      {
+        "id": "Source : Décret du 1er mars 1919, articl",
+        "kind": "source",
+        "x": 60,
+        "y": 1724,
+        "w": 731.171875,
+        "h": 30
+      },
+      {
+        "id": "Photo : Walter Mittelholzer, Ouagadougou",
+        "kind": "credit",
+        "x": 60,
+        "y": 1758,
+        "w": 845.578125,
+        "h": 28
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 192.140625,
+        "y": 1350,
+        "w": 695.71875,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "698": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-pays-04",
+        "kind": "image",
+        "x": -979.6497802734375,
+        "y": -37.44952392578125,
+        "w": 3039.3154296875,
+        "h": 1994.89892578125
+      },
+      {
+        "id": "Le nom d'avant",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 225.734375,
+        "h": 36
+      },
+      {
+        "id": "1er mars 1919",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 810.5625,
+        "h": 136
+      },
+      {
+        "id": "Nom employé",
+        "kind": "head",
+        "x": 60,
+        "y": 514,
+        "w": 187.34375,
+        "h": 28
+      },
+      {
+        "id": "Haute-Volta",
+        "kind": "head",
+        "x": 60,
+        "y": 544,
+        "w": 348.71875,
+        "h": 82
+      },
+      {
+        "id": "Source : Décret du 1er mars 1919, articl",
+        "kind": "source",
+        "x": 60,
+        "y": 1724,
+        "w": 731.171875,
+        "h": 30
+      },
+      {
+        "id": "Photo : Walter Mittelholzer, Ouagadougou",
+        "kind": "credit",
+        "x": 60,
+        "y": 1758,
+        "w": 845.578125,
+        "h": 28
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 192.140625,
+        "y": 1350,
+        "w": 695.71875,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "701": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-pays-04",
+        "kind": "image",
+        "x": -980.5186767578125,
+        "y": -38.019775390625,
+        "w": 3041.052734375,
+        "h": 1996.03955078125
+      },
+      {
+        "id": "Le nom des habitants",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 316.75,
+        "h": 36
+      },
+      {
+        "id": "Burkinabè, un mot pris à trois langues",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 696.484375,
+        "h": 180
+      },
+      {
+        "id": "Source : Alain Maharaux, 1995, p. 9",
+        "kind": "source",
+        "x": 60,
+        "y": 1756,
+        "w": 391.296875,
+        "h": 30
+      },
+      {
+        "id": "Image à trouver",
+        "kind": "slot",
+        "x": 120,
+        "y": 982,
+        "w": 328.671875,
+        "h": 36
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 192.140625,
+        "y": 1350,
+        "w": 695.71875,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "704": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "Le nom des habitants",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 316.75,
+        "h": 36
+      },
+      {
+        "id": "Burkinabè, un mot pris à trois langues",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 696.484375,
+        "h": 180
+      },
+      {
+        "id": "Source : Alain Maharaux, 1995, p. 9",
+        "kind": "source",
+        "x": 60,
+        "y": 1756,
+        "w": 391.296875,
+        "h": 30
+      },
+      {
+        "id": "Image à trouver",
+        "kind": "slot",
+        "x": 120,
+        "y": 982,
+        "w": 328.671875,
+        "h": 36
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 293.53125,
+        "y": 1316,
+        "w": 492.921875,
+        "h": 68
+      },
+      {
+        "id": "subtitle line 2",
+        "kind": "subtitle",
+        "x": 347.390625,
+        "y": 1384,
+        "w": 385.21875,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "776": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "Le nom des habitants",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 316.75,
+        "h": 36
+      },
+      {
+        "id": "Burkinabè, un mot pris à trois langues",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 696.484375,
+        "h": 180
+      },
+      {
+        "id": "Source : Alain Maharaux, 1995, p. 9",
+        "kind": "source",
+        "x": 60,
+        "y": 1756,
+        "w": 391.296875,
+        "h": 30
+      },
+      {
+        "id": "Image à trouver",
+        "kind": "slot",
+        "x": 120,
+        "y": 982,
+        "w": 328.671875,
+        "h": 36
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 265.0625,
+        "y": 1350,
+        "w": 549.859375,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "824": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "Le nom des habitants",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 316.75,
+        "h": 36
+      },
+      {
+        "id": "Burkinabè, un mot pris à trois langues",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 696.484375,
+        "h": 180
+      },
+      {
+        "id": "Source : Alain Maharaux, 1995, p. 9",
+        "kind": "source",
+        "x": 60,
+        "y": 1756,
+        "w": 391.296875,
+        "h": 30
+      },
+      {
+        "id": "Image à trouver",
+        "kind": "slot",
+        "x": 120,
+        "y": 982,
+        "w": 328.671875,
+        "h": 36
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 283.0625,
+        "y": 1316,
+        "w": 513.875,
+        "h": 68
+      },
+      {
+        "id": "subtitle line 2",
+        "kind": "subtitle",
+        "x": 430.515625,
+        "y": 1384,
+        "w": 218.96875,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "878": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "Le nom des habitants",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 316.75,
+        "h": 36
+      },
+      {
+        "id": "Burkinabè, un mot pris à trois langues",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 696.484375,
+        "h": 180
+      },
+      {
+        "id": "Source : Alain Maharaux, 1995, p. 9",
+        "kind": "source",
+        "x": 60,
+        "y": 1756,
+        "w": 391.296875,
+        "h": 30
+      },
+      {
+        "id": "Image à trouver",
+        "kind": "slot",
+        "x": 120,
+        "y": 982,
+        "w": 328.671875,
+        "h": 36
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 283.0625,
+        "y": 1316,
+        "w": 513.875,
+        "h": 68
+      },
+      {
+        "id": "subtitle line 2",
+        "kind": "subtitle",
+        "x": 430.515625,
+        "y": 1384,
+        "w": 218.96875,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "881": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "Les autres lectures",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 280.09375,
+        "h": 36
+      },
+      {
+        "id": "Sur le sens, les sources sont d'accord",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 804.21875,
+        "h": 180
+      },
+      {
+        "id": "Source : Alain Maharaux, 1995 · Michel I",
+        "kind": "source",
+        "x": 60,
+        "y": 1756,
+        "w": 643.25,
+        "h": 30
+      },
+      {
+        "id": "Image à trouver",
+        "kind": "slot",
+        "x": 120,
+        "y": 982,
+        "w": 328.671875,
+        "h": 36
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 283.0625,
+        "y": 1316,
+        "w": 513.875,
+        "h": 68
+      },
+      {
+        "id": "subtitle line 2",
+        "kind": "subtitle",
+        "x": 430.515625,
+        "y": 1384,
+        "w": 218.96875,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "884": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "Les autres lectures",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 280.09375,
+        "h": 36
+      },
+      {
+        "id": "Sur le sens, les sources sont d'accord",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 804.21875,
+        "h": 180
+      },
+      {
+        "id": "Source : Alain Maharaux, 1995 · Michel I",
+        "kind": "source",
+        "x": 60,
+        "y": 1756,
+        "w": 643.25,
+        "h": 30
+      },
+      {
+        "id": "Image à trouver",
+        "kind": "slot",
+        "x": 120,
+        "y": 982,
+        "w": 328.671875,
+        "h": 36
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 279.8125,
+        "y": 1350,
+        "w": 520.359375,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "932": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "Les autres lectures",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 280.09375,
+        "h": 36
+      },
+      {
+        "id": "Sur le sens, les sources sont d'accord",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 804.21875,
+        "h": 180
+      },
+      {
+        "id": "Source : Alain Maharaux, 1995 · Michel I",
+        "kind": "source",
+        "x": 60,
+        "y": 1756,
+        "w": 643.25,
+        "h": 30
+      },
+      {
+        "id": "Image à trouver",
+        "kind": "slot",
+        "x": 120,
+        "y": 982,
+        "w": 328.671875,
+        "h": 36
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 201.59375,
+        "y": 1350,
+        "w": 676.796875,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "986": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "Les autres lectures",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 280.09375,
+        "h": 36
+      },
+      {
+        "id": "Sur le sens, les sources sont d'accord",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 804.21875,
+        "h": 180
+      },
+      {
+        "id": "Source : Alain Maharaux, 1995 · Michel I",
+        "kind": "source",
+        "x": 60,
+        "y": 1756,
+        "w": 643.25,
+        "h": 30
+      },
+      {
+        "id": "Image à trouver",
+        "kind": "slot",
+        "x": 120,
+        "y": 982,
+        "w": 328.671875,
+        "h": 36
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 199.84375,
+        "y": 1350,
+        "w": 680.3125,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "1040": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "Les autres lectures",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 280.09375,
+        "h": 36
+      },
+      {
+        "id": "Sur le sens, les sources sont d'accord",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 804.21875,
+        "h": 180
+      },
+      {
+        "id": "Source : Alain Maharaux, 1995 · Michel I",
+        "kind": "source",
+        "x": 60,
+        "y": 1756,
+        "w": 643.25,
+        "h": 30
+      },
+      {
+        "id": "Image à trouver",
+        "kind": "slot",
+        "x": 120,
+        "y": 982,
+        "w": 328.671875,
+        "h": 36
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 252.375,
+        "y": 1350,
+        "w": 575.234375,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "1082": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "Les autres lectures",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 280.09375,
+        "h": 36
+      },
+      {
+        "id": "Sur le sens, les sources sont d'accord",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 804.21875,
+        "h": 180
+      },
+      {
+        "id": "Source : Alain Maharaux, 1995 · Michel I",
+        "kind": "source",
+        "x": 60,
+        "y": 1756,
+        "w": 643.25,
+        "h": 30
+      },
+      {
+        "id": "Image à trouver",
+        "kind": "slot",
+        "x": 120,
+        "y": 982,
+        "w": 328.671875,
+        "h": 36
+      },
+      {
+        "id": "serie-pays-07",
+        "kind": "image",
+        "x": -909.65625,
+        "y": 0,
+        "w": 2899.328125,
+        "h": 1920
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 252.375,
+        "y": 1350,
+        "w": 575.234375,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "1085": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "serie-pays-07",
+        "kind": "image",
+        "x": -909.65625,
+        "y": 0,
+        "w": 2899.328125,
+        "h": 1920
+      },
+      {
+        "id": "Connaître nos noms,décoloniser leur empl",
+        "kind": "ending",
+        "x": 183.328125,
+        "y": 318,
+        "w": 713.34375,
+        "h": 192
+      },
+      {
+        "id": "Cherchez Burkina Faso sur EthniAfrica, l",
+        "kind": "ending",
+        "x": 150.859375,
+        "y": 538,
+        "w": 778.28125,
+        "h": 40
+      },
+      {
+        "id": "pill",
+        "kind": "pill",
+        "x": 327.40625,
+        "y": 608,
+        "w": 425.1875,
+        "h": 74
+      },
+      {
+        "id": "Photo : Alexander Leisser, cour royale d",
+        "kind": "ending-credit",
+        "x": 123.15625,
+        "y": 1760,
+        "w": 833.671875,
+        "h": 56
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 384.421875,
+        "y": 1828,
+        "w": 311.140625,
+        "h": 56
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 252.375,
+        "y": 1350,
+        "w": 575.234375,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "1088": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "serie-pays-07",
+        "kind": "image",
+        "x": -909.65625,
+        "y": 0,
+        "w": 2899.328125,
+        "h": 1920
+      },
+      {
+        "id": "Connaître nos noms,décoloniser leur empl",
+        "kind": "ending",
+        "x": 183.328125,
+        "y": 318,
+        "w": 713.34375,
+        "h": 192
+      },
+      {
+        "id": "Cherchez Burkina Faso sur EthniAfrica, l",
+        "kind": "ending",
+        "x": 150.859375,
+        "y": 538,
+        "w": 778.28125,
+        "h": 40
+      },
+      {
+        "id": "pill",
+        "kind": "pill",
+        "x": 327.40625,
+        "y": 608,
+        "w": 425.1875,
+        "h": 74
+      },
+      {
+        "id": "Photo : Alexander Leisser, cour royale d",
+        "kind": "ending-credit",
+        "x": 123.15625,
+        "y": 1760,
+        "w": 833.671875,
+        "h": 56
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 384.421875,
+        "y": 1828,
+        "w": 311.140625,
+        "h": 56
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "1123": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "serie-pays-07",
+        "kind": "image",
+        "x": -909.65625,
+        "y": 0,
+        "w": 2899.328125,
+        "h": 1920
+      },
+      {
+        "id": "Connaître nos noms,décoloniser leur empl",
+        "kind": "ending",
+        "x": 183.328125,
+        "y": 318,
+        "w": 713.34375,
+        "h": 192
+      },
+      {
+        "id": "Cherchez Burkina Faso sur EthniAfrica, l",
+        "kind": "ending",
+        "x": 150.859375,
+        "y": 538,
+        "w": 778.28125,
+        "h": 40
+      },
+      {
+        "id": "pill",
+        "kind": "pill",
+        "x": 327.40625,
+        "y": 608,
+        "w": 425.1875,
+        "h": 74
+      },
+      {
+        "id": "Photo : Alexander Leisser, cour royale d",
+        "kind": "ending-credit",
+        "x": 123.15625,
+        "y": 1760,
+        "w": 833.671875,
+        "h": 56
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 384.421875,
+        "y": 1828,
+        "w": 311.140625,
+        "h": 56
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "1168": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "serie-pays-07",
+        "kind": "image",
+        "x": -909.65625,
+        "y": 0,
+        "w": 2899.328125,
+        "h": 1920
+      },
+      {
+        "id": "Connaître nos noms,décoloniser leur empl",
+        "kind": "ending",
+        "x": 183.328125,
+        "y": 318,
+        "w": 713.34375,
+        "h": 192
+      },
+      {
+        "id": "Cherchez Burkina Faso sur EthniAfrica, l",
+        "kind": "ending",
+        "x": 150.859375,
+        "y": 538,
+        "w": 778.28125,
+        "h": 40
+      },
+      {
+        "id": "pill",
+        "kind": "pill",
+        "x": 327.40625,
+        "y": 608,
+        "w": 425.1875,
+        "h": 74
+      },
+      {
+        "id": "Photo : Alexander Leisser, cour royale d",
+        "kind": "ending-credit",
+        "x": 123.15625,
+        "y": 1760,
+        "w": 833.671875,
+        "h": 56
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 384.421875,
+        "y": 1828,
+        "w": 311.140625,
+        "h": 56
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "1211": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "serie-pays-07",
+        "kind": "image",
+        "x": -909.65625,
+        "y": 0,
+        "w": 2899.328125,
+        "h": 1920
+      },
+      {
+        "id": "Connaître nos noms,décoloniser leur empl",
+        "kind": "ending",
+        "x": 183.328125,
+        "y": 318,
+        "w": 713.34375,
+        "h": 192
+      },
+      {
+        "id": "Cherchez Burkina Faso sur EthniAfrica, l",
+        "kind": "ending",
+        "x": 150.859375,
+        "y": 538,
+        "w": 778.28125,
+        "h": 40
+      },
+      {
+        "id": "pill",
+        "kind": "pill",
+        "x": 327.40625,
+        "y": 608,
+        "w": 425.1875,
+        "h": 74
+      },
+      {
+        "id": "Photo : Alexander Leisser, cour royale d",
+        "kind": "ending-credit",
+        "x": 123.15625,
+        "y": 1760,
+        "w": 833.671875,
+        "h": 56
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 384.421875,
+        "y": 1828,
+        "w": 311.140625,
+        "h": 56
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "1295": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "serie-pays-07",
+        "kind": "image",
+        "x": -909.65625,
+        "y": 0,
+        "w": 2899.328125,
+        "h": 1920
+      },
+      {
+        "id": "Connaître nos noms,décoloniser leur empl",
+        "kind": "ending",
+        "x": 183.328125,
+        "y": 318,
+        "w": 713.34375,
+        "h": 192
+      },
+      {
+        "id": "Cherchez Burkina Faso sur EthniAfrica, l",
+        "kind": "ending",
+        "x": 150.859375,
+        "y": 538,
+        "w": 778.28125,
+        "h": 40
+      },
+      {
+        "id": "pill",
+        "kind": "pill",
+        "x": 327.40625,
+        "y": 608,
+        "w": 425.1875,
+        "h": 74
+      },
+      {
+        "id": "Photo : Alexander Leisser, cour royale d",
+        "kind": "ending-credit",
+        "x": 123.15625,
+        "y": 1760,
+        "w": 833.671875,
+        "h": 56
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 384.421875,
+        "y": 1828,
+        "w": 311.140625,
+        "h": 56
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "1356": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "serie-pays-07",
+        "kind": "image",
+        "x": -909.65625,
+        "y": 0,
+        "w": 2899.328125,
+        "h": 1920
+      },
+      {
+        "id": "Connaître nos noms,décoloniser leur empl",
+        "kind": "ending",
+        "x": 183.328125,
+        "y": 318,
+        "w": 713.34375,
+        "h": 192
+      },
+      {
+        "id": "Cherchez Burkina Faso sur EthniAfrica, l",
+        "kind": "ending",
+        "x": 150.859375,
+        "y": 538,
+        "w": 778.28125,
+        "h": 40
+      },
+      {
+        "id": "pill",
+        "kind": "pill",
+        "x": 327.40625,
+        "y": 608,
+        "w": 425.1875,
+        "h": 74
+      },
+      {
+        "id": "Photo : Alexander Leisser, cour royale d",
+        "kind": "ending-credit",
+        "x": 123.15625,
+        "y": 1760,
+        "w": 833.671875,
+        "h": 56
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 384.421875,
+        "y": 1828,
+        "w": 311.140625,
+        "h": 56
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ]
+  },
+  "series-long": {
+    "327": [
+      {
+        "id": "L'Afrique n'est pas un tout · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 509.84375,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "chapitre-1",
+        "kind": "image",
+        "x": -605.0689697265625,
+        "y": -0.7364501953125,
+        "w": 2290.137939453125,
+        "h": 1921.636474609375
+      },
+      {
+        "id": "1sur 3",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 150.359375,
+        "h": 153
+      },
+      {
+        "id": "Un continent entier",
+        "kind": "chapter-title",
+        "x": 60,
+        "y": 471,
+        "w": 896.828125,
+        "h": 112
+      },
+      {
+        "id": "Carte de l'Afrique, 1794, S. Boulton d'a",
+        "kind": "credit",
+        "x": 60,
+        "y": 1758,
+        "w": 707.046875,
+        "h": 28
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "959": [
+      {
+        "id": "L'Afrique n'est pas un tout · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 509.84375,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-afrique-tout-02",
+        "kind": "image",
+        "x": -649.09130859375,
+        "y": -33.9813232421875,
+        "w": 2378.182373046875,
+        "h": 1995.5140380859375
+      },
+      {
+        "id": "1 · Un continent entier",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 330.421875,
+        "h": 36
+      },
+      {
+        "id": "Un continent immense",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 798.65625,
+        "h": 90
+      },
+      {
+        "id": "54pays",
+        "kind": "items",
+        "x": 60,
+        "y": 488,
+        "w": 460,
+        "h": 150
+      },
+      {
+        "id": "1,5milliardd'habitants",
+        "kind": "items",
+        "x": 560,
+        "y": 488,
+        "w": 460,
+        "h": 150
+      },
+      {
+        "id": "plus de2 000langues",
+        "kind": "items",
+        "x": 60,
+        "y": 672,
+        "w": 460,
+        "h": 190
+      },
+      {
+        "id": "Source : [source]",
+        "kind": "source",
+        "x": 60,
+        "y": 1724,
+        "w": 181.359375,
+        "h": 30
+      },
+      {
+        "id": "Carte de l'Afrique, 1794, S. Boulton d'a",
+        "kind": "credit",
+        "x": 60,
+        "y": 1758,
+        "w": 707.046875,
+        "h": 28
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 206.546875,
+        "y": 1350,
+        "w": 666.90625,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "1591": [
+      {
+        "id": "L'Afrique n'est pas un tout · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 509.84375,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-afrique-tout-04",
+        "kind": "image",
+        "x": -375.6986083984375,
+        "y": -22.64337158203125,
+        "w": 1831.412841796875,
+        "h": 1995.477783203125
+      },
+      {
+        "id": "1 · Un continent entier",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 330.421875,
+        "h": 36
+      },
+      {
+        "id": "D'où vient le mot ?",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 651.4375,
+        "h": 90
+      },
+      {
+        "id": "berbèrela terre des Afrilecture souvent ",
+        "kind": "items",
+        "x": 60,
+        "y": 484,
+        "w": 960,
+        "h": 112
+      },
+      {
+        "id": "phénicienun mot pour la poussière",
+        "kind": "items",
+        "x": 60,
+        "y": 618,
+        "w": 960,
+        "h": 80
+      },
+      {
+        "id": "latinaprica, ensoleillée",
+        "kind": "items",
+        "x": 60,
+        "y": 720,
+        "w": 960,
+        "h": 80
+      },
+      {
+        "id": "Hypothèses : [sources]",
+        "kind": "source",
+        "x": 60,
+        "y": 1724,
+        "w": 249.109375,
+        "h": 30
+      },
+      {
+        "id": "Carte du monde d'al-Idrisi, 1154, sud en",
+        "kind": "credit",
+        "x": 60,
+        "y": 1758,
+        "w": 629.296875,
+        "h": 28
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 310.75,
+        "y": 1350,
+        "w": 458.5,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "2321": [
+      {
+        "id": "L'Afrique n'est pas un tout · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 509.84375,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-afrique-tout-02-cite",
+        "kind": "image",
+        "x": -649.1744384765625,
+        "y": -34.044189453125,
+        "w": 2378.348876953125,
+        "h": 1995.6536865234375
+      },
+      {
+        "id": "2 · D'où vient le mot",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 299.40625,
+        "h": 36
+      },
+      {
+        "id": "Un nom venu de l'extérieur",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 953.84375,
+        "h": 90
+      },
+      {
+        "id": "Florence Abena Dolphyne",
+        "kind": "attribution",
+        "x": 60,
+        "y": 1224,
+        "w": 416.296875,
+        "h": 40
+      },
+      {
+        "id": "linguiste ghanéenne",
+        "kind": "attribution",
+        "x": 60,
+        "y": 1264,
+        "w": 244.09375,
+        "h": 32
+      },
+      {
+        "id": "Source : [source]",
+        "kind": "source",
+        "x": 60,
+        "y": 1724,
+        "w": 181.359375,
+        "h": 30
+      },
+      {
+        "id": "Carte de l'Afrique, 1794, S. Boulton d'a",
+        "kind": "credit",
+        "x": 60,
+        "y": 1758,
+        "w": 707.046875,
+        "h": 28
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 238.21875,
+        "y": 1350,
+        "w": 603.546875,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "2681": [
+      {
+        "id": "L'Afrique n'est pas un tout · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 509.84375,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-afrique-tout-rappel",
+        "kind": "image",
+        "x": -843.3101806640625,
+        "y": -33.52410888671875,
+        "w": 2766.6357421875,
+        "h": 1994.498046875
+      },
+      {
+        "id": "2 · D'où vient le mot",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 299.40625,
+        "h": 36
+      },
+      {
+        "id": "Comment finit-il par nommer tout un cont",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 708.609375,
+        "h": 270
+      },
+      {
+        "id": "Carte de l'Afrique, vers 1847, Victor Le",
+        "kind": "credit",
+        "x": 60,
+        "y": 1758,
+        "w": 640.828125,
+        "h": 28
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 207.515625,
+        "y": 1350,
+        "w": 664.96875,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "3742": [
+      {
+        "id": "L'Afrique n'est pas un tout · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 509.84375,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "Nous pensons",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 205.890625,
+        "h": 36
+      },
+      {
+        "id": "D'abord, accepter que nous sommes différ",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 871.34375,
+        "h": 180
+      },
+      {
+        "id": "Position d'EthniAfrica",
+        "kind": "source",
+        "x": 60,
+        "y": 1756,
+        "w": 240.484375,
+        "h": 30
+      },
+      {
+        "id": "Image à trouver",
+        "kind": "slot",
+        "x": 120,
+        "y": 982,
+        "w": 328.671875,
+        "h": 36
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 212.328125,
+        "y": 1350,
+        "w": 655.34375,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "4023": [
+      {
+        "id": "L'Afrique n'est pas un tout · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 509.84375,
+        "h": 40
+      },
+      {
+        "id": "serie-afrique-tout-07",
+        "kind": "image",
+        "x": -791.640625,
+        "y": 0,
+        "w": 2663.296875,
+        "h": 1920
+      },
+      {
+        "id": "Connaître nos noms,décoloniser leur empl",
+        "kind": "ending",
+        "x": 183.328125,
+        "y": 318,
+        "w": 713.34375,
+        "h": 192
+      },
+      {
+        "id": "Cherchez Afrique sur EthniAfrica, lien e",
+        "kind": "ending",
+        "x": 191.484375,
+        "y": 538,
+        "w": 697.03125,
+        "h": 40
+      },
+      {
+        "id": "pill",
+        "kind": "pill",
+        "x": 327.40625,
+        "y": 608,
+        "w": 425.1875,
+        "h": 74
+      },
+      {
+        "id": "Prochain épisode : le pays des Noirs",
+        "kind": "ending",
+        "x": 273.625,
+        "y": 712,
+        "w": 532.734375,
+        "h": 40
+      },
+      {
+        "id": "Carte de l'Afrique, vers 1847, Victor Le",
+        "kind": "ending-credit",
+        "x": 219.578125,
+        "y": 1788,
+        "w": 640.828125,
+        "h": 28
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 384.421875,
+        "y": 1828,
+        "w": 311.140625,
+        "h": 56
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ]
+  },
+  "documents": {
+    "1": [
+      {
+        "id": "Les mots qu'on nous a collés · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 541.796875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-mots-01",
+        "kind": "image",
+        "x": -70.650390625,
+        "y": -0.9765625,
+        "w": 1339.6363525390625,
+        "h": 2861.511474609375
+      },
+      { "id": "serie-mots-01", "kind": "document" },
+      {
+        "id": "Un mot sur l'Afrique",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 301.015625,
+        "h": 36
+      },
+      {
+        "id": "D'où vient le mot barbare ?",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 651.96875,
+        "h": 224
+      },
+      {
+        "id": "Capture : Speke, page 253, chronique de ",
+        "kind": "source",
+        "x": 60,
+        "y": 1726,
+        "w": 948.03125,
+        "h": 60
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "269": [
+      {
+        "id": "Les mots qu'on nous a collés · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 541.796875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-mots-02",
+        "kind": "image",
+        "x": -78.7489013671875,
+        "y": 146.96783447265625,
+        "w": 1357.402587890625,
+        "h": 2067.109375
+      },
+      { "id": "serie-mots-02", "kind": "document" },
+      {
+        "id": "Le mot tel qu'on l'entend",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 370.8125,
+        "h": 36
+      },
+      {
+        "id": "« Des idées barbares »",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 813.46875,
+        "h": 90
+      },
+      {
+        "id": "Source : J. H. Speke, Journal of the Dis",
+        "kind": "source",
+        "x": 60,
+        "y": 1726,
+        "w": 926.71875,
+        "h": 60
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 212.46875,
+        "y": 1350,
+        "w": 655.0625,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "398": [
+      {
+        "id": "Les mots qu'on nous a collés · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 541.796875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-mots-02",
+        "kind": "image",
+        "x": -93.6795654296875,
+        "y": 126.3841552734375,
+        "w": 1390.1568603515625,
+        "h": 2116.98876953125
+      },
+      { "id": "serie-mots-02", "kind": "document" },
+      {
+        "id": "Le mot tel qu'on l'entend",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 370.8125,
+        "h": 36
+      },
+      {
+        "id": "« Des idées barbares »",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 813.46875,
+        "h": 90
+      },
+      {
+        "id": "Source : J. H. Speke, Journal of the Dis",
+        "kind": "source",
+        "x": 60,
+        "y": 1726,
+        "w": 926.71875,
+        "h": 60
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 247.1875,
+        "y": 1350,
+        "w": 585.625,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "410": [
+      {
+        "id": "Les mots qu'on nous a collés · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 541.796875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-mots-03",
+        "kind": "image",
+        "x": -71.4571533203125,
+        "y": 399.09002685546875,
+        "w": 1341.40625,
+        "h": 2042.74951171875
+      },
+      { "id": "serie-mots-03", "kind": "document" },
+      {
+        "id": "Sa langue et son premier sens",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 445.21875,
+        "h": 36
+      },
+      {
+        "id": "Des officiers",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 448.796875,
+        "h": 90
+      },
+      {
+        "id": "Source : J. H. Speke, Journal of the Dis",
+        "kind": "source",
+        "x": 60,
+        "y": 1726,
+        "w": 926.71875,
+        "h": 60
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 371.234375,
+        "y": 1316,
+        "w": 337.515625,
+        "h": 68
+      },
+      {
+        "id": "subtitle line 2",
+        "kind": "subtitle",
+        "x": 376.46875,
+        "y": 1384,
+        "w": 327.0625,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "602": [
+      {
+        "id": "Les mots qu'on nous a collés · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 541.796875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-mots-03",
+        "kind": "image",
+        "x": -93.6795654296875,
+        "y": 377.251220703125,
+        "w": 1390.1568603515625,
+        "h": 2116.989013671875
+      },
+      { "id": "serie-mots-03", "kind": "document" },
+      {
+        "id": "Sa langue et son premier sens",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 445.21875,
+        "h": 36
+      },
+      {
+        "id": "Des officiers",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 448.796875,
+        "h": 90
+      },
+      {
+        "id": "Source : J. H. Speke, Journal of the Dis",
+        "kind": "source",
+        "x": 60,
+        "y": 1726,
+        "w": 926.71875,
+        "h": 60
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 304.015625,
+        "y": 1350,
+        "w": 471.953125,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ]
+  },
+  "teaching": {
+    "650": [
+      {
+        "id": "Mon nom, mon histoire · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 449.96875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-nom-famille-03",
+        "kind": "image",
+        "x": -435.23553466796875,
+        "y": -13.71197509765625,
+        "w": 1950.47119140625,
+        "h": 1950.470947265625
+      },
+      {
+        "id": "Ce que le nom dit",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 258.859375,
+        "h": 36
+      },
+      {
+        "id": "Un nom fait avec le jour",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 844.328125,
+        "h": 90
+      },
+      {
+        "id": "vendredi se dit ya",
+        "kind": "formula",
+        "x": 373.109375,
+        "y": 740,
+        "w": 333.765625,
+        "h": 48
+      },
+      {
+        "id": "fille",
+        "kind": "formula",
+        "x": 510.375,
+        "y": 812,
+        "w": 59.25,
+        "h": 38
+      },
+      {
+        "id": "A+ya=Aya",
+        "kind": "formula",
+        "x": 286.015625,
+        "y": 864,
+        "w": 507.96875,
+        "h": 124
+      },
+      {
+        "id": "garçon",
+        "kind": "formula",
+        "x": 488.359375,
+        "y": 1012,
+        "w": 103.28125,
+        "h": 38
+      },
+      {
+        "id": "Kwa+ya→Yao",
+        "kind": "formula",
+        "x": 203.4375,
+        "y": 1064,
+        "w": 673.125,
+        "h": 124
+      },
+      {
+        "id": "Source : Delafosse, 1900 ; Pagnet, 2005 ",
+        "kind": "source",
+        "x": 60,
+        "y": 1696,
+        "w": 640.28125,
+        "h": 30
+      },
+      {
+        "id": "Photo : Kelsdark, Tanoboase près de Tech",
+        "kind": "credit",
+        "x": 60,
+        "y": 1730,
+        "w": 934.390625,
+        "h": 56
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 219.78125,
+        "y": 1350,
+        "w": 640.421875,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "662": [
+      {
+        "id": "Mon nom, mon histoire · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 449.96875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-nom-famille-04",
+        "kind": "image",
+        "x": -435.62860107421875,
+        "y": -14.06573486328125,
+        "w": 1951.25732421875,
+        "h": 1951.257080078125
+      },
+      {
+        "id": "D'un pays à l'autre",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 276.125,
+        "h": 36
+      },
+      {
+        "id": "Les mêmes noms",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 624.359375,
+        "h": 90
+      },
+      {
+        "id": "Côte d'Ivoire (baoulé)",
+        "kind": "items",
+        "x": 60,
+        "y": 488,
+        "w": 285.703125,
+        "h": 34
+      },
+      {
+        "id": "Ghana (twi)",
+        "kind": "items",
+        "x": 560,
+        "y": 488,
+        "w": 157.640625,
+        "h": 34
+      },
+      {
+        "id": "Kouassi · Akissilundi",
+        "kind": "items",
+        "x": 60,
+        "y": 538,
+        "w": 460,
+        "h": 116
+      },
+      {
+        "id": "Kwasi · Akosuadimanche",
+        "kind": "items",
+        "x": 560,
+        "y": 538,
+        "w": 460,
+        "h": 116
+      },
+      {
+        "id": "Yao · Ayavendredi",
+        "kind": "items",
+        "x": 60,
+        "y": 670,
+        "w": 460,
+        "h": 116
+      },
+      {
+        "id": "Yaw · Yaajeudi",
+        "kind": "items",
+        "x": 560,
+        "y": 670,
+        "w": 460,
+        "h": 116
+      },
+      {
+        "id": "Les Nzema nomment les jours comme les Ba",
+        "kind": "items",
+        "x": 60,
+        "y": 812,
+        "w": 952.671875,
+        "h": 72
+      },
+      {
+        "id": "Source : Delafosse, 1900 ; Pagnet, 2005 ",
+        "kind": "source",
+        "x": 60,
+        "y": 1696,
+        "w": 640.28125,
+        "h": 30
+      },
+      {
+        "id": "Photo : Kelsdark, Tanoboase près de Tech",
+        "kind": "credit",
+        "x": 60,
+        "y": 1730,
+        "w": 934.390625,
+        "h": 56
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 262.75,
+        "y": 1350,
+        "w": 554.5,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "986": [
+      {
+        "id": "Mon nom, mon histoire · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 449.96875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-nom-famille-04",
+        "kind": "image",
+        "x": -446.244384765625,
+        "y": -23.61993408203125,
+        "w": 1972.48876953125,
+        "h": 1972.48876953125
+      },
+      {
+        "id": "D'un pays à l'autre",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 276.125,
+        "h": 36
+      },
+      {
+        "id": "Les mêmes noms",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 624.359375,
+        "h": 90
+      },
+      {
+        "id": "Côte d'Ivoire (baoulé)",
+        "kind": "items",
+        "x": 60,
+        "y": 488,
+        "w": 285.703125,
+        "h": 34
+      },
+      {
+        "id": "Ghana (twi)",
+        "kind": "items",
+        "x": 560,
+        "y": 488,
+        "w": 157.640625,
+        "h": 34
+      },
+      {
+        "id": "Kouassi · Akissilundi",
+        "kind": "items",
+        "x": 60,
+        "y": 538,
+        "w": 460,
+        "h": 116
+      },
+      {
+        "id": "Kwasi · Akosuadimanche",
+        "kind": "items",
+        "x": 560,
+        "y": 538,
+        "w": 460,
+        "h": 116
+      },
+      {
+        "id": "Yao · Ayavendredi",
+        "kind": "items",
+        "x": 60,
+        "y": 670,
+        "w": 460,
+        "h": 116
+      },
+      {
+        "id": "Yaw · Yaajeudi",
+        "kind": "items",
+        "x": 560,
+        "y": 670,
+        "w": 460,
+        "h": 116
+      },
+      {
+        "id": "Les Nzema nomment les jours comme les Ba",
+        "kind": "items",
+        "x": 60,
+        "y": 812,
+        "w": 952.671875,
+        "h": 72
+      },
+      {
+        "id": "Source : Delafosse, 1900 ; Pagnet, 2005 ",
+        "kind": "source",
+        "x": 60,
+        "y": 1696,
+        "w": 640.28125,
+        "h": 30
+      },
+      {
+        "id": "Photo : Kelsdark, Tanoboase près de Tech",
+        "kind": "credit",
+        "x": 60,
+        "y": 1730,
+        "w": 934.390625,
+        "h": 56
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 208.203125,
+        "y": 1350,
+        "w": 663.59375,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "998": [
+      {
+        "id": "Mon nom, mon histoire · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 449.96875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-nom-famille-06",
+        "kind": "image",
+        "x": -446.63751220703125,
+        "y": -23.9737548828125,
+        "w": 1973.27490234375,
+        "h": 1973.2750244140625
+      },
+      {
+        "id": "À toi",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 71.609375,
+        "h": 36
+      },
+      {
+        "id": "Sept jours, sept noms",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 781.265625,
+        "h": 90
+      },
+      {
+        "id": "Baoulé",
+        "kind": "items",
+        "x": 234,
+        "y": 484,
+        "w": 92.609375,
+        "h": 34
+      },
+      {
+        "id": "Twi (ashanti)",
+        "kind": "items",
+        "x": 639,
+        "y": 484,
+        "w": 173.75,
+        "h": 34
+      },
+      {
+        "id": "garçon · fille",
+        "kind": "items",
+        "x": 234,
+        "y": 522,
+        "w": 126.109375,
+        "h": 28
+      },
+      {
+        "id": "garçon · fille",
+        "kind": "items",
+        "x": 639,
+        "y": 522,
+        "w": 126.109375,
+        "h": 28
+      },
+      {
+        "id": "lundi",
+        "kind": "items",
+        "x": 60,
+        "y": 567,
+        "w": 71.890625,
+        "h": 36
+      },
+      {
+        "id": "Kouassi · Akissikissié",
+        "kind": "items",
+        "x": 234,
+        "y": 560,
+        "w": 381,
+        "h": 72
+      },
+      {
+        "id": "Kwadwo · AdwoaDwoda",
+        "kind": "items",
+        "x": 639,
+        "y": 560,
+        "w": 381,
+        "h": 72
+      },
+      {
+        "id": "mardi",
+        "kind": "items",
+        "x": 60,
+        "y": 649,
+        "w": 81.859375,
+        "h": 36
+      },
+      {
+        "id": "Kouadjo · Adjouadjolai",
+        "kind": "items",
+        "x": 234,
+        "y": 642,
+        "w": 381,
+        "h": 72
+      },
+      {
+        "id": "Kwabena · AbenaBenada",
+        "kind": "items",
+        "x": 639,
+        "y": 642,
+        "w": 381,
+        "h": 72
+      },
+      {
+        "id": "mercredi",
+        "kind": "items",
+        "x": 60,
+        "y": 731,
+        "w": 124.5,
+        "h": 36
+      },
+      {
+        "id": "Konan · Amlanmlan",
+        "kind": "items",
+        "x": 234,
+        "y": 724,
+        "w": 381,
+        "h": 72
+      },
+      {
+        "id": "Kwaku · AkuaWukuda",
+        "kind": "items",
+        "x": 639,
+        "y": 724,
+        "w": 381,
+        "h": 72
+      },
+      {
+        "id": "jeudi",
+        "kind": "items",
+        "x": 60,
+        "y": 813,
+        "w": 68.671875,
+        "h": 36
+      },
+      {
+        "id": "Kouakou · Ahouhoué",
+        "kind": "items",
+        "x": 234,
+        "y": 806,
+        "w": 381,
+        "h": 72
+      },
+      {
+        "id": "Yaw · YaaYawda",
+        "kind": "items",
+        "x": 639,
+        "y": 806,
+        "w": 381,
+        "h": 72
+      },
+      {
+        "id": "vendredi",
+        "kind": "items",
+        "x": 60,
+        "y": 895,
+        "w": 123.203125,
+        "h": 36
+      },
+      {
+        "id": "Yao · Ayaya",
+        "kind": "items",
+        "x": 234,
+        "y": 888,
+        "w": 381,
+        "h": 72
+      },
+      {
+        "id": "Kofi · AfuaFida",
+        "kind": "items",
+        "x": 639,
+        "y": 888,
+        "w": 381,
+        "h": 72
+      },
+      {
+        "id": "samedi",
+        "kind": "items",
+        "x": 60,
+        "y": 977,
+        "w": 100.953125,
+        "h": 36
+      },
+      {
+        "id": "Koffi · Affouéfoué",
+        "kind": "items",
+        "x": 234,
+        "y": 970,
+        "w": 381,
+        "h": 72
+      },
+      {
+        "id": "Kwame · AmmaMemeneda",
+        "kind": "items",
+        "x": 639,
+        "y": 970,
+        "w": 381,
+        "h": 72
+      },
+      {
+        "id": "dimanche",
+        "kind": "items",
+        "x": 60,
+        "y": 1059,
+        "w": 136.25,
+        "h": 36
+      },
+      {
+        "id": "Kouamé · Amoinmonlin",
+        "kind": "items",
+        "x": 234,
+        "y": 1052,
+        "w": 381,
+        "h": 72
+      },
+      {
+        "id": "Kwasi · AkosuaKwasida",
+        "kind": "items",
+        "x": 639,
+        "y": 1052,
+        "w": 381,
+        "h": 72
+      },
+      {
+        "id": "Source : Delafosse, 1900 ; Pagnet, 2005 ",
+        "kind": "source",
+        "x": 60,
+        "y": 1696,
+        "w": 640.28125,
+        "h": 30
+      },
+      {
+        "id": "Photo : Kelsdark, Tanoboase près de Tech",
+        "kind": "credit",
+        "x": 60,
+        "y": 1730,
+        "w": 934.390625,
+        "h": 56
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 218.84375,
+        "y": 1350,
+        "w": 642.296875,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "1346": [
+      {
+        "id": "Mon nom, mon histoire · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 449.96875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-nom-famille-06",
+        "kind": "image",
+        "x": -458.03961181640625,
+        "y": -34.23565673828125,
+        "w": 1996.0791015625,
+        "h": 1996.0791015625
+      },
+      {
+        "id": "À toi",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 71.609375,
+        "h": 36
+      },
+      {
+        "id": "Sept jours, sept noms",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 781.265625,
+        "h": 90
+      },
+      {
+        "id": "Baoulé",
+        "kind": "items",
+        "x": 234,
+        "y": 484,
+        "w": 92.609375,
+        "h": 34
+      },
+      {
+        "id": "Twi (ashanti)",
+        "kind": "items",
+        "x": 639,
+        "y": 484,
+        "w": 173.75,
+        "h": 34
+      },
+      {
+        "id": "garçon · fille",
+        "kind": "items",
+        "x": 234,
+        "y": 522,
+        "w": 126.109375,
+        "h": 28
+      },
+      {
+        "id": "garçon · fille",
+        "kind": "items",
+        "x": 639,
+        "y": 522,
+        "w": 126.109375,
+        "h": 28
+      },
+      {
+        "id": "lundi",
+        "kind": "items",
+        "x": 60,
+        "y": 567,
+        "w": 71.890625,
+        "h": 36
+      },
+      {
+        "id": "Kouassi · Akissikissié",
+        "kind": "items",
+        "x": 234,
+        "y": 560,
+        "w": 381,
+        "h": 72
+      },
+      {
+        "id": "Kwadwo · AdwoaDwoda",
+        "kind": "items",
+        "x": 639,
+        "y": 560,
+        "w": 381,
+        "h": 72
+      },
+      {
+        "id": "mardi",
+        "kind": "items",
+        "x": 60,
+        "y": 649,
+        "w": 81.859375,
+        "h": 36
+      },
+      {
+        "id": "Kouadjo · Adjouadjolai",
+        "kind": "items",
+        "x": 234,
+        "y": 642,
+        "w": 381,
+        "h": 72
+      },
+      {
+        "id": "Kwabena · AbenaBenada",
+        "kind": "items",
+        "x": 639,
+        "y": 642,
+        "w": 381,
+        "h": 72
+      },
+      {
+        "id": "mercredi",
+        "kind": "items",
+        "x": 60,
+        "y": 731,
+        "w": 124.5,
+        "h": 36
+      },
+      {
+        "id": "Konan · Amlanmlan",
+        "kind": "items",
+        "x": 234,
+        "y": 724,
+        "w": 381,
+        "h": 72
+      },
+      {
+        "id": "Kwaku · AkuaWukuda",
+        "kind": "items",
+        "x": 639,
+        "y": 724,
+        "w": 381,
+        "h": 72
+      },
+      {
+        "id": "jeudi",
+        "kind": "items",
+        "x": 60,
+        "y": 813,
+        "w": 68.671875,
+        "h": 36
+      },
+      {
+        "id": "Kouakou · Ahouhoué",
+        "kind": "items",
+        "x": 234,
+        "y": 806,
+        "w": 381,
+        "h": 72
+      },
+      {
+        "id": "Yaw · YaaYawda",
+        "kind": "items",
+        "x": 639,
+        "y": 806,
+        "w": 381,
+        "h": 72
+      },
+      {
+        "id": "vendredi",
+        "kind": "items",
+        "x": 60,
+        "y": 895,
+        "w": 123.203125,
+        "h": 36
+      },
+      {
+        "id": "Yao · Ayaya",
+        "kind": "items",
+        "x": 234,
+        "y": 888,
+        "w": 381,
+        "h": 72
+      },
+      {
+        "id": "Kofi · AfuaFida",
+        "kind": "items",
+        "x": 639,
+        "y": 888,
+        "w": 381,
+        "h": 72
+      },
+      {
+        "id": "samedi",
+        "kind": "items",
+        "x": 60,
+        "y": 977,
+        "w": 100.953125,
+        "h": 36
+      },
+      {
+        "id": "Koffi · Affouéfoué",
+        "kind": "items",
+        "x": 234,
+        "y": 970,
+        "w": 381,
+        "h": 72
+      },
+      {
+        "id": "Kwame · AmmaMemeneda",
+        "kind": "items",
+        "x": 639,
+        "y": 970,
+        "w": 381,
+        "h": 72
+      },
+      {
+        "id": "dimanche",
+        "kind": "items",
+        "x": 60,
+        "y": 1059,
+        "w": 136.25,
+        "h": 36
+      },
+      {
+        "id": "Kouamé · Amoinmonlin",
+        "kind": "items",
+        "x": 234,
+        "y": 1052,
+        "w": 381,
+        "h": 72
+      },
+      {
+        "id": "Kwasi · AkosuaKwasida",
+        "kind": "items",
+        "x": 639,
+        "y": 1052,
+        "w": 381,
+        "h": 72
+      },
+      {
+        "id": "Source : Delafosse, 1900 ; Pagnet, 2005 ",
+        "kind": "source",
+        "x": 60,
+        "y": 1696,
+        "w": 640.28125,
+        "h": 30
+      },
+      {
+        "id": "Photo : Kelsdark, Tanoboase près de Tech",
+        "kind": "credit",
+        "x": 60,
+        "y": 1730,
+        "w": 934.390625,
+        "h": 56
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 334.90625,
+        "y": 1316,
+        "w": 410.171875,
+        "h": 68
+      },
+      {
+        "id": "subtitle line 2",
+        "kind": "subtitle",
+        "x": 349.84375,
+        "y": 1384,
+        "w": 380.3125,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ]
+  },
+  "black": {
+    "0": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-pays-01",
+        "kind": "image",
+        "x": 0,
+        "y": 0,
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "id": "Le nom d'un pays",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 257.140625,
+        "h": 36
+      },
+      {
+        "id": "Qui a choisi le nom Burkina Faso ?",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 892.703125,
+        "h": 224
+      },
+      {
+        "id": "Photo : Alexander Leisser, cour royale d",
+        "kind": "credit",
+        "x": 60,
+        "y": 1730,
+        "w": 946.671875,
+        "h": 56
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "44": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-pays-01",
+        "kind": "image",
+        "x": -0.87432861328125,
+        "y": -1.5543212890625,
+        "w": 1081.74853515625,
+        "h": 1923.108642578125
+      },
+      {
+        "id": "Le nom d'un pays",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 257.140625,
+        "h": 36
+      },
+      {
+        "id": "Qui a choisi le nom Burkina Faso ?",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 892.703125,
+        "h": 224
+      },
+      {
+        "id": "Photo : Alexander Leisser, cour royale d",
+        "kind": "credit",
+        "x": 60,
+        "y": 1730,
+        "w": 946.671875,
+        "h": 56
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 256.328125,
+        "y": 1350,
+        "w": 567.34375,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "185": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-pays-02",
+        "kind": "image",
+        "x": -3.6761474609375,
+        "y": -6.535400390625,
+        "w": 1087.352294921875,
+        "h": 1933.07080078125
+      },
+      {
+        "id": "Ce que le nom veut dire",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 349.1875,
+        "h": 36
+      },
+      {
+        "id": "Deux mots pris à deux langues du pays",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 779.765625,
+        "h": 180
+      },
+      {
+        "id": "Source : Alain Maharaux, 1995, p. 9",
+        "kind": "source",
+        "x": 60,
+        "y": 1696,
+        "w": 391.296875,
+        "h": 30
+      },
+      {
+        "id": "Photo : Angeline A. van Achterberg, Gran",
+        "kind": "credit",
+        "x": 60,
+        "y": 1730,
+        "w": 943.9375,
+        "h": 56
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 317.171875,
+        "y": 1316,
+        "w": 445.640625,
+        "h": 68
+      },
+      {
+        "id": "subtitle line 2",
+        "kind": "subtitle",
+        "x": 318.265625,
+        "y": 1384,
+        "w": 443.453125,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "395": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-pays-03",
+        "kind": "image",
+        "x": -7.84912109375,
+        "y": -13.9539794921875,
+        "w": 1095.6982421875,
+        "h": 1947.907958984375
+      },
+      {
+        "id": "Nom de l'État",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 201.296875,
+        "h": 36
+      },
+      {
+        "id": "4 août 1984",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 821.9375,
+        "h": 156
+      },
+      {
+        "id": "Nom employé",
+        "kind": "head",
+        "x": 60,
+        "y": 534,
+        "w": 187.34375,
+        "h": 28
+      },
+      {
+        "id": "Burkina Faso",
+        "kind": "head",
+        "x": 60,
+        "y": 564,
+        "w": 389.734375,
+        "h": 82
+      },
+      {
+        "id": "Source : Digithèque MJP, université de P",
+        "kind": "source",
+        "x": 60,
+        "y": 1694,
+        "w": 892.15625,
+        "h": 60
+      },
+      {
+        "id": "Image à trouver (voir la proposition d’i",
+        "kind": "credit",
+        "x": 60,
+        "y": 1758,
+        "w": 465.390625,
+        "h": 28
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 239.453125,
+        "y": 1350,
+        "w": 601.09375,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "599": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-pays-04",
+        "kind": "image",
+        "x": -11.90283203125,
+        "y": -21.16058349609375,
+        "w": 1103.8056640625,
+        "h": 1962.3212890625
+      },
+      {
+        "id": "Le nom d'avant",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 225.734375,
+        "h": 36
+      },
+      {
+        "id": "1er mars 1919",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 810.5625,
+        "h": 136
+      },
+      {
+        "id": "Nom employé",
+        "kind": "head",
+        "x": 60,
+        "y": 514,
+        "w": 187.34375,
+        "h": 28
+      },
+      {
+        "id": "Haute-Volta",
+        "kind": "head",
+        "x": 60,
+        "y": 544,
+        "w": 348.71875,
+        "h": 82
+      },
+      {
+        "id": "Source : Décret du 1er mars 1919, articl",
+        "kind": "source",
+        "x": 60,
+        "y": 1724,
+        "w": 731.171875,
+        "h": 30
+      },
+      {
+        "id": "Photo : Walter Mittelholzer, Ouagadougou",
+        "kind": "credit",
+        "x": 60,
+        "y": 1758,
+        "w": 845.578125,
+        "h": 28
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 370.140625,
+        "y": 1316,
+        "w": 339.71875,
+        "h": 68
+      },
+      {
+        "id": "subtitle line 2",
+        "kind": "subtitle",
+        "x": 328.859375,
+        "y": 1384,
+        "w": 422.28125,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "740": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-pays-05",
+        "kind": "image",
+        "x": -14.70465087890625,
+        "y": -26.1416015625,
+        "w": 1109.4091796875,
+        "h": 1972.283203125
+      },
+      {
+        "id": "Le nom des habitants",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 316.75,
+        "h": 36
+      },
+      {
+        "id": "Burkinabè, un mot pris à trois langues",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 696.484375,
+        "h": 180
+      },
+      {
+        "id": "Source : Alain Maharaux, 1995, p. 9",
+        "kind": "source",
+        "x": 60,
+        "y": 1724,
+        "w": 391.296875,
+        "h": 30
+      },
+      {
+        "id": "Image à trouver (voir la proposition d’i",
+        "kind": "credit",
+        "x": 60,
+        "y": 1758,
+        "w": 465.390625,
+        "h": 28
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 293.53125,
+        "y": 1316,
+        "w": 492.921875,
+        "h": 68
+      },
+      {
+        "id": "subtitle line 2",
+        "kind": "subtitle",
+        "x": 347.390625,
+        "y": 1384,
+        "w": 385.21875,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "908": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 60,
+        "y": 1836,
+        "w": 235.609375,
+        "h": 48
+      },
+      {
+        "id": "serie-pays-06",
+        "kind": "image",
+        "x": -18.04302978515625,
+        "y": -32.0765380859375,
+        "w": 1116.0859375,
+        "h": 1984.153076171875
+      },
+      {
+        "id": "Les autres lectures",
+        "kind": "head",
+        "x": 60,
+        "y": 318,
+        "w": 280.09375,
+        "h": 36
+      },
+      {
+        "id": "Sur le sens, les sources sont d'accord",
+        "kind": "head",
+        "x": 60,
+        "y": 364,
+        "w": 804.21875,
+        "h": 180
+      },
+      {
+        "id": "Source : Alain Maharaux, 1995 · Michel I",
+        "kind": "source",
+        "x": 60,
+        "y": 1724,
+        "w": 643.25,
+        "h": 30
+      },
+      {
+        "id": "Image à trouver (voir la proposition d’i",
+        "kind": "credit",
+        "x": 60,
+        "y": 1758,
+        "w": 465.390625,
+        "h": 28
+      },
+      {
+        "id": "subtitle line 1",
+        "kind": "subtitle",
+        "x": 279.8125,
+        "y": 1350,
+        "w": 520.359375,
+        "h": 68
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ],
+    "1356": [
+      {
+        "id": "D'où vient le nom de mon pays ? · n° 1",
+        "kind": "band",
+        "x": 60,
+        "y": 250,
+        "w": 595.046875,
+        "h": 40
+      },
+      {
+        "id": "serie-pays-07",
+        "kind": "image",
+        "x": 0,
+        "y": 0,
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "id": "Connaître nos noms,décoloniser leur empl",
+        "kind": "ending",
+        "x": 183.328125,
+        "y": 318,
+        "w": 713.34375,
+        "h": 192
+      },
+      {
+        "id": "Cherchez Burkina Faso sur EthniAfrica, l",
+        "kind": "ending",
+        "x": 150.859375,
+        "y": 538,
+        "w": 778.28125,
+        "h": 40
+      },
+      {
+        "id": "pill",
+        "kind": "pill",
+        "x": 327.40625,
+        "y": 608,
+        "w": 425.1875,
+        "h": 74
+      },
+      {
+        "id": "Photo : Alexander Leisser, cour royale d",
+        "kind": "ending-credit",
+        "x": 123.15625,
+        "y": 1760,
+        "w": 833.671875,
+        "h": 56
+      },
+      {
+        "id": "signature",
+        "kind": "signature",
+        "x": 384.421875,
+        "y": 1828,
+        "w": 311.140625,
+        "h": 56
+      },
+      {
+        "id": "tape",
+        "kind": "tape",
+        "x": 510.203125,
+        "y": 178,
+        "w": 509.796875,
+        "h": 48
+      }
+    ]
+  }
+}

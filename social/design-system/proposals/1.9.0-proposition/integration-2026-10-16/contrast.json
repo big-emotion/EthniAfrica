@@ -1,0 +1,102 @@
+{
+  "bfa-01": {
+    "frame": 245,
+    "engine": {
+      "bandeau": 8.41,
+      "surtitre": 6.31,
+      "titre": 8.47,
+      "crédit": 5.86,
+      "sous-titre": 11.71,
+      "mot éclairé (bord)": 9.54
+    },
+    "board": {
+      "surtitre": 6.1,
+      "titre": 8.7,
+      "crédit": 5.58,
+      "bandeau": 7.35,
+      "sous-titre": 10.91,
+      "mot éclairé (bord)": 9.72
+    }
+  },
+  "bfa-02": {
+    "frame": 381,
+    "engine": {
+      "bandeau": 7.03,
+      "surtitre": 5.32,
+      "titre": 6.78,
+      "source": 7.65,
+      "crédit": 6.81,
+      "sous-titre": 14.8,
+      "mot éclairé (bord)": 9.58
+    },
+    "board": {
+      "surtitre": 5.06,
+      "titre": 7.69,
+      "source": 7.76,
+      "crédit": 5.28,
+      "bandeau": 7.15,
+      "sous-titre": 13.73,
+      "mot éclairé (bord)": 9.86
+    }
+  },
+  "bfa-04": {
+    "frame": 1330,
+    "engine": {
+      "bandeau": 11.25,
+      "surtitre": 6.54,
+      "titre": 4.79,
+      "libellé": 7.98,
+      "source": 6.91,
+      "crédit": 5.43,
+      "sous-titre": 11.18,
+      "mot éclairé (bord)": 9.73
+    },
+    "board": {
+      "surtitre": 7.06,
+      "titre": 5.05,
+      "libellé": 9.14,
+      "source": 7.62,
+      "crédit": 5.11,
+      "bandeau": 7.5,
+      "sous-titre": 10.12,
+      "mot éclairé (bord)": 10.13
+    }
+  },
+  "bfa-06": {
+    "frame": 2051,
+    "engine": {
+      "bandeau": 8.81,
+      "surtitre": 5.79,
+      "titre": 8.38,
+      "source": 7.92,
+      "crédit": 6.71,
+      "sous-titre": 12.07,
+      "mot éclairé (bord)": 8.95
+    },
+    "board": {
+      "surtitre": 5.73,
+      "titre": 8.76,
+      "source": 7.98,
+      "crédit": 5.84,
+      "bandeau": 7.51,
+      "sous-titre": 9.5,
+      "mot éclairé (bord)": 9.04
+    }
+  },
+  "bfa-07": {
+    "frame": 2377,
+    "engine": {
+      "bandeau": 8.21,
+      "titre": 9.04,
+      "phrase": 7.86,
+      "prochain épisode": 5.71,
+      "crédit": 5.58
+    },
+    "board": {
+      "titre": 8.99,
+      "phrase": 7.89,
+      "crédit": 5.71,
+      "bandeau": 7.35
+    }
+  }
+}
