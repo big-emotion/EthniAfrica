@@ -220,7 +220,7 @@ describe("every route of the site carries a trail", () => {
   it("draws no trail on the search page or a name's address", () => {
     const frame = "components/search/SearchFeedFrame";
     for (const route of [
-      path.join("atlas", "recherche", "page.tsx"),
+      path.join("atlas", "recherche", "(reading)", "page.tsx"),
       path.join("atlas", "recherche", "[name]", "page.tsx"),
     ]) {
       expect(reachesModule(path.join(APP_ROOT, route), [frame]), route).toBe(

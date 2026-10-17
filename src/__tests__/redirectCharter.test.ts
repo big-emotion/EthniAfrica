@@ -11,6 +11,7 @@ import {
   resolveRenamedModulePath,
 } from "@/proxy";
 import { LOCALES } from "@/lib/locale";
+import { routePageFile } from "@/test/routePageFile";
 import {
   PAGE_TYPES,
   getCountryRoute,
@@ -50,8 +51,12 @@ const firstSegment = (target: string) => target.split("/").filter(Boolean)[1];
 const under = (language: Language, segment: string) =>
   "/" + language + "/" + segment;
 
-/** The route file behind a public destination. */
+/**
+ * The route file behind a public destination, read through a route group
+ * when the page sits in one; a path that exists nowhere when there is none.
+ */
 const routeFile = (destination: string) =>
+  routePageFile(destination) ??
   resolve(__dirname, "../app/[lang]", destination, "page.tsx");
 
 describe("the relocation table lands in one hop", () => {

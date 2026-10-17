@@ -196,12 +196,12 @@ const FIXTURES: Record<string, RouteFixture> = {
     params: { slug: "PPL_YORUBA" },
     expectation: { surface: "fiche" },
   },
-  "atlas/recherche": { expectation: { surface: "search" } },
+  "atlas/recherche/(reading)": { expectation: { surface: "search" } },
   "atlas/recherche/[name]": {
     params: { name: "lingala" },
     expectation: { surface: "nameAddress" },
   },
-  atlas: { expectation: { surface: "atlasHub" } },
+  "atlas/(hub)": { expectation: { surface: "atlasHub" } },
   comparer: { expectation: { surface: "compare" } },
   "comparer/[entityType]/[...ids]": {
     params: { entityType: "peuples", ids: ["PPL_YORUBA", "PPL_ZULU"] },
@@ -428,7 +428,7 @@ describe("page head — a name's address and the search reading", () => {
 
   // @req REQ-200
   it("keeps the bare search page as the canonical of a ?q= reading", async () => {
-    const searchPage = ROUTE_MODULES.get("atlas/recherche");
+    const searchPage = ROUTE_MODULES.get("atlas/recherche/(reading)");
     const head = await searchPage.generateMetadata({
       params: Promise.resolve({ lang: "fr" }),
       searchParams: Promise.resolve({ q: "lingala" }),

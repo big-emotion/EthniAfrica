@@ -17,7 +17,7 @@ vi.mock("@/components/pages/RecherchePageContent", async () => {
   };
 });
 
-import RecherchePage from "@/app/[lang]/atlas/recherche/page";
+import RecherchePage from "@/app/[lang]/atlas/recherche/(reading)/page";
 import { getNameAddressSpellings } from "@/api/v2/services/nameAddresses";
 import { getLocalizedRoute, getNameAnswerRoute } from "@/lib/routing";
 
