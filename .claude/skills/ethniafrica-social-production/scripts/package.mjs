@@ -56,6 +56,22 @@ function https(value) {
     fail("HTTPS link is required");
   }
 }
+// A campaign is retyped on several networks; capitals, accents or spaces would
+// split one piece into campaigns that never add up again in Plausible.
+const CAMPAIGN_SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+function campaignCode(value) {
+  if (typeof value !== "string" || !CAMPAIGN_SLUG.test(value))
+    fail("Campaign must be a lowercase slug such as langue-07");
+  return value;
+}
+// The scheme of the retired link builder (removed in fd199371e), kept so old
+// and new campaigns read alike: fixed parameter order, one utm_source per
+// network, utm_content naming what carried the link.
+const LINK_CONTENT = { "photo-carousel": "carrousel", video: "video" };
+function campaignLink(destination, { network, campaign, content }) {
+  const tags = `utm_source=${network}&utm_medium=social&utm_campaign=${campaign}&utm_content=${content}`;
+  return `${destination}${destination.includes("?") ? "&" : "?"}${tags}`;
+}
 function date(value) {
   if (typeof value !== "string" || !Number.isFinite(Date.parse(value)))
     fail("Account verification date is required");
@@ -396,6 +412,9 @@ function assemble(root, configFile, networks, applied) {
   if (config.schema !== 1) fail("Unsupported package schema");
   if (config.kind !== undefined && config.kind !== "video")
     fail("Unsupported package kind");
+  // Optional here so revisions delivered before campaigns existed still
+  // verify; createPackage requires it for every new revision.
+  if (config.campaign !== undefined) campaignCode(config.campaign);
   if (
     !Array.isArray(networks) ||
     !networks.length ||
@@ -468,11 +487,24 @@ function assemble(root, configFile, networks, applied) {
     let instruction = "Aucun lien à ajouter.";
     if (link.placement !== "none") {
       https(link.url);
-      if (
-        research.destination.status !== "verified" ||
-        research.destination.url !== link.url
-      )
+      if (research.destination.status !== "verified")
         fail("Link does not match the verified destination");
+      if (config.campaign === undefined) {
+        if (link.url !== research.destination.url)
+          fail("Link does not match the verified destination");
+      } else {
+        // A profile link outlives the post, so its visits are told apart.
+        const expected = campaignLink(research.destination.url, {
+          network: n.network,
+          campaign: config.campaign,
+          content:
+            link.placement === "profile"
+              ? "bio"
+              : LINK_CONTENT[delivery.format],
+        });
+        if (link.url !== expected)
+          fail(`Link lacks this network's campaign tag; expected ${expected}`);
+      }
       if (
         !Array.isArray(c.linkPlacements) ||
         !c.linkPlacements.includes(link.placement)
@@ -556,9 +588,10 @@ function checkLanguage(root, config, copyFile) {
 export function createPackage(root, configFile, output, networks) {
   const target = path(root, output);
   if (existsSync(target)) fail("Package output already exists");
+  const config = JSON.parse(readFileSync(path(root, configFile)));
+  campaignCode(config.campaign);
   const data = assemble(root, configFile, networks);
   const { post, publicCopy, payload, ...manifest } = data;
-  const config = JSON.parse(readFileSync(path(root, configFile)));
   mkdirSync(dirname(target), { recursive: true });
   const lock = target + ".lock";
   mkdirSync(lock);

@@ -63,9 +63,13 @@ curl -s "$BASE/utm_campaigns?period=30d&detailed=true"
 curl -s "$BASE/utm_contents?period=30d&detailed=true"
 ```
 
-**`utm_campaign` is the join between a post and the site.** The link-builder
-writes one campaign per subject and one `utm_content` per format, so each
-tagged visit names the post that sent it. Read the campaign rows next to the
+**`utm_campaign` is the join between a post and the site.** The social
+production package (`ethniafrica-social-production`, its
+[campaign tags](../ethniafrica-social-production/references/publication-package.md#campaign-tags))
+accepts a link only when it carries the piece's campaign, its network as
+`utm_source` and one `utm_content` per format (`bio` for a profile link), so
+each tagged visit names the post that sent it. A package whose input has no
+`campaign` predates this rule and went out with a bare link. Read the campaign rows next to the
 network table of Step 1 bis; a post with views and no campaign row either sent
 nobody or went out with a bare link — the post's `post.md` says which.
 

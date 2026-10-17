@@ -1,6 +1,7 @@
 // @req REQ-186
 import { test } from "node:test";
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import {
   readFileSync,
   writeFileSync,
@@ -77,7 +78,10 @@ test("network additions need new package coverage; none are silently inherited",
 test("link instructions require verified destination, account evidence and matching copy", (t) => {
   const f = packageFixture(t);
   const n = f.config.networks[1];
-  n.link = { placement: "first-comment", url: "https://example.org/answer" };
+  n.link = {
+    placement: "first-comment",
+    url: "https://example.org/answer?utm_source=facebook&utm_medium=social&utm_campaign=test-01&utm_content=carrousel",
+  };
   n.firstComment = n.link.url;
   f.save();
   assert.throws(
@@ -91,7 +95,7 @@ test("link instructions require verified destination, account evidence and match
   research.destination = {
     status: "verified",
     invitation: "Read the answer",
-    url: n.link.url,
+    url: "https://example.org/answer",
     checkedAt: "2026-10-10",
     support: "Synthetic observation",
     evidence: f.file("live.txt", "Synthetic answer capture"),
@@ -529,8 +533,10 @@ test("video links follow the data-driven account routes and the existing network
   const f = videoPackageFixture(t, networks);
   destination(f);
   const youtube = f.config.networks[0];
-  youtube.link = { placement: "caption", url: "https://example.org/answer" };
-  youtube.caption += " https://example.org/answer";
+  const youtubeLink =
+    "https://example.org/answer?utm_source=youtube&utm_medium=social&utm_campaign=test-01&utm_content=video";
+  youtube.link = { placement: "caption", url: youtubeLink };
+  youtube.caption += ` ${youtubeLink}`;
   f.save();
   assert.throws(
     () => createPackage(f.root, f.configPath, f.output, networks),
@@ -542,8 +548,10 @@ test("video links follow the data-driven account routes and the existing network
     createPackage(f.root, f.configPath, f.output, networks)
   );
   const instagram = f.config.networks[1];
-  instagram.link = { placement: "caption", url: "https://example.org/answer" };
-  instagram.caption += " https://example.org/answer";
+  const instagramLink =
+    "https://example.org/answer?utm_source=instagram&utm_medium=social&utm_campaign=test-01&utm_content=video";
+  instagram.link = { placement: "caption", url: instagramLink };
+  instagram.caption += ` ${instagramLink}`;
   instagram.capability.linkPlacements = ["none", "caption"];
   f.save();
   assert.throws(
@@ -576,4 +584,120 @@ test("an optional cover is the video's own declared frame", (t) => {
     () => createPackage(f.root, f.configPath, "piece/far", both),
     /cover|frame/i
   );
+});
+
+const LINGALA = "https://ethniafrica.com/fr/atlas/recherche?q=Lingala";
+
+// A carousel whose Facebook first comment carries `url`, with the Lingala answer
+// as the verified destination of the campaign langue-07.
+function lingalaPiece(t, url) {
+  const f = packageFixture(t);
+  const p = join(f.root, f.config.research);
+  const research = JSON.parse(readFileSync(p, "utf8"));
+  research.destination = {
+    status: "verified",
+    invitation: "Lire la réponse",
+    url: LINGALA,
+    checkedAt: "2026-10-17",
+    support: "Synthetic observation",
+    evidence: f.file("live.txt", "Synthetic answer capture"),
+  };
+  writeFileSync(p, JSON.stringify(research));
+  f.config.campaign = "langue-07";
+  const facebook = f.config.networks[1];
+  facebook.link = { placement: "first-comment", url };
+  facebook.firstComment = url;
+  facebook.capability.linkPlacements = ["none", "first-comment"];
+  f.save();
+  return f;
+}
+
+// @req REQ-186
+test("a link tagged for its network and the piece's campaign is delivered exactly", (t) => {
+  const tagged =
+    "https://ethniafrica.com/fr/atlas/recherche?q=Lingala&utm_source=facebook&utm_medium=social&utm_campaign=langue-07&utm_content=carrousel";
+  const f = lingalaPiece(t, tagged);
+  createPackage(f.root, f.configPath, f.output, both);
+  const post = readFileSync(join(f.root, f.output, "post.md"), "utf8");
+  assert.ok(post.includes(`### Premier commentaire\n\n${tagged}\n`));
+  assert.doesNotThrow(() => inspectPackage(f.root, f.output, both));
+});
+
+// @req REQ-186
+test("a bare link to the verified destination is refused for want of its campaign tag", (t) => {
+  const f = lingalaPiece(t, LINGALA);
+  assert.throws(
+    () => createPackage(f.root, f.configPath, f.output, both),
+    /campaign tag/i
+  );
+  assert.equal(existsSync(join(f.root, f.output)), false);
+});
+
+// @req REQ-186
+test("a link tagged for another network, campaign or format is refused", (t) => {
+  for (const url of [
+    `${LINGALA}&utm_source=instagram&utm_medium=social&utm_campaign=langue-07&utm_content=carrousel`,
+    `${LINGALA}&utm_source=facebook&utm_medium=social&utm_campaign=langue-08&utm_content=carrousel`,
+    `${LINGALA}&utm_source=facebook&utm_medium=social&utm_campaign=langue-07&utm_content=video`,
+  ]) {
+    const f = lingalaPiece(t, url);
+    assert.throws(
+      () => createPackage(f.root, f.configPath, f.output, both),
+      /campaign tag/i,
+      url
+    );
+  }
+});
+
+// @req REQ-186
+test("a new delivery needs a campaign written as a lowercase slug", (t) => {
+  for (const campaign of ["Langue 07", "langue_07", "", undefined]) {
+    const f = packageFixture(t);
+    f.config.campaign = campaign;
+    f.save();
+    assert.throws(
+      () => createPackage(f.root, f.configPath, f.output, both),
+      /campaign/i,
+      String(campaign)
+    );
+  }
+});
+
+// @req REQ-186
+test("a profile link is tagged as the bio link, not as the post", (t) => {
+  const bio = `${LINGALA}&utm_source=instagram&utm_medium=social&utm_campaign=langue-07&utm_content=bio`;
+  const f = lingalaPiece(t, LINGALA);
+  f.config.networks[1].link = { placement: "none" };
+  f.config.networks[1].firstComment = null;
+  const instagram = f.config.networks[0];
+  instagram.link = { placement: "profile", url: bio };
+  instagram.capability.linkPlacements = ["none", "profile"];
+  f.save();
+  createPackage(f.root, f.configPath, f.output, both);
+  assert.ok(
+    readFileSync(join(f.root, f.output, "post.md"), "utf8").includes(bio)
+  );
+  instagram.link.url = bio.replace("utm_content=bio", "utm_content=carrousel");
+  f.save();
+  assert.throws(
+    () => createPackage(f.root, f.configPath, "piece/carrousel", both),
+    /campaign tag/i
+  );
+});
+
+// @req REQ-186
+test("a revision written before campaigns existed still verifies without one", (t) => {
+  const f = packageFixture(t);
+  createPackage(f.root, f.configPath, f.output, both);
+  // Such a revision has the same files; only its input lacks the campaign,
+  // and its manifest fingerprints that input.
+  delete f.config.campaign;
+  f.save();
+  const manifestFile = join(f.root, f.output, "package.json");
+  const manifest = JSON.parse(readFileSync(manifestFile, "utf8"));
+  manifest.dependencies[f.configPath] = createHash("sha256")
+    .update(readFileSync(join(f.root, f.configPath)))
+    .digest("hex");
+  writeFileSync(manifestFile, JSON.stringify(manifest, null, 2) + "\n");
+  assert.doesNotThrow(() => inspectPackage(f.root, f.output, both));
 });
