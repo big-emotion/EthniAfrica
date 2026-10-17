@@ -40,25 +40,30 @@ describe("fiche names charter", () => {
       within(chapter).getByRole("heading", { level: 3, name: "Nom de clan" })
     ).toBeVisible();
     // Pohamba and Shikongo are personal names turned family names (ETNI-2011,
-    // sixth naming system), so the Ovambo names split across two groups.
+    // sixth naming system); Amadhila, Hamutenya and Iipumbu are personal names
+    // with no transmission shown. The Ovambo names split across three groups.
+    expect(
+      within(chapter).getByRole("heading", {
+        level: 3,
+        name: "Patronyme non héréditaire",
+      })
+    ).toBeVisible();
     expect(
       within(chapter).getByRole("heading", {
         level: 3,
         name: "Nom de famille héréditaire",
       })
     ).toBeVisible();
-    expect(chapter).toHaveTextContent("6 noms");
+    expect(chapter).toHaveTextContent("3 noms");
     expect(chapter).toHaveTextContent("2 noms");
     expect(within(chapter).queryByRole("navigation")).toBeNull();
 
     const links = within(chapter).getAllByRole("link");
     expect(links).toHaveLength(8);
     const amadhila = names.find((name) => name.nameMain === "Amadhila")!;
-    expect(links[0]).toHaveTextContent("Amadhila");
-    expect(links[0]).toHaveAttribute(
-      "href",
-      getPatronymeRoute("fr", amadhila.id)
-    );
+    expect(
+      within(chapter).getByRole("link", { name: "Amadhila" })
+    ).toHaveAttribute("href", getPatronymeRoute("fr", amadhila.id));
   });
 
   // @req REQ-133

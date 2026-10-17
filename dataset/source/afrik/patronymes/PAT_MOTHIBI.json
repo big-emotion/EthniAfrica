@@ -6,7 +6,7 @@
   },
   "id": "PAT_MOTHIBI",
   "nameMain": "Mothibi",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Mothibi",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -59,10 +59,6 @@
       "reason": "la recherche web et bibliographique combinant « Mothibi », « TSWANA », « surname », « clan », « etymology », « transmission », « alliance » et « obituary », ainsi que la page Forebears dédiée n'ont livré aucune tradition attribuée, chronique datée ou étude linguistique établissant l'origine de Mothibi. Les explications anonymes, les simples rapprochements lexicaux et la seule géographie ont été écartés."
     },
     {
-      "fieldPath": "nameSystem",
-      "reason": "la recherche web et bibliographique combinant « Mothibi », « TSWANA », « surname », « clan », « etymology », « transmission », « alliance » et « obituary », ainsi que la page Forebears dédiée n'ont pas établi que la catégorie provisoire « clan_name » décrive le nom lui-même ; elle reste un classement de travail et non une origine démontrée."
-    },
-    {
       "fieldPath": "alliances",
       "reason": "la recherche web et bibliographique combinant « Mothibi », « TSWANA », « surname », « clan », « etymology », « transmission », « alliance » et « obituary », ainsi que la page Forebears dédiée n'ont identifié aucune alliance ni parenté à plaisanterie documentée reliant Mothibi à un autre nom documenté ici."
     },
@@ -77,6 +73,10 @@
     {
       "fieldPath": "homonyms",
       "reason": "la recherche web et bibliographique combinant « Mothibi », « TSWANA », « surname », « clan », « etymology », « transmission », « alliance » et « obituary », ainsi que la page Forebears dédiée n'ont pas établi de lignée homonyme d'origine distincte documentable ; la diffusion dans plusieurs pays et les ressemblances graphiques ne suffisent pas à créer un homonyme."
+    },
+    {
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient le nom personnel d'un chef des Batlhaping, que les voyageurs écrivent Mateebe. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant. La fiche reste donc parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "transmissionMode",
