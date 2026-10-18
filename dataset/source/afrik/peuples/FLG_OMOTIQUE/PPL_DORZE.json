@@ -101,5 +101,234 @@
         "tier": "unverified"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Dorze désigne une communauté des hautes terres du Gamo, au-dessus du lac Abaya, dans le sud de l'Éthiopie. Ses habitants se nomment eux-mêmes Dorze, du nom de leur communauté, ou Gamo, et les communautés du sud de ces hautes terres les appellent D'ache. On ne sait pas d'où vient le nom Dorze : les sources que nous avons lues n'en donnent pas l'origine.",
+    "names": [
+      {
+        "nameText": "Dorze",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "doz",
+        "namedBy": null,
+        "shortLine": "Le nom de cette communauté des hautes terres du Gamo, que ses habitants se donnent.",
+        "periodLabel": "Écrit sous une forme proche depuis 1927 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2006,
+              "to": 2006,
+              "label": "2006"
+            },
+            "era": "modern",
+            "statement": "Le nom Dorze est celui de l'une des communautés, les deres, du nord des hautes terres du Gamo. Ses habitants se disent Gamo ou se nomment d'après leur dere, Dorze, selon l'anthropologue Dena Freeman, qui compte Dorze parmi les communautés les plus connues de ces hautes terres.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Who are the Gamo? And who are the D'ache? Confusions of ethnicity in Ethiopia's southern highlands",
+                "author": "Dena Freeman",
+                "year": 2006,
+                "url": "https://eprints.lse.ac.uk/67835/1/Freeman_Who%20are%20the%20Gamo.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Actes de la 15e Conférence internationale des études éthiopiennes, Wiesbaden, Harrassowitz. Version de l'autrice déposée à la London School of Economics, lue le 18 octobre 2026 ; les pages sont celles de cette version."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1994,
+              "to": 1994,
+              "label": "1994"
+            },
+            "era": "modern",
+            "statement": "Le nom Dorze figure dans le recensement éthiopien de 1994 sous la forme Dorzie, celle d'un groupe de 28 990 personnes, compté comme un sous-groupe d'un ensemble plus large. Il n'apparaît plus en 2007 : selon le linguiste Grover Hudson, ce groupe a peut-être été compté avec les Gamo, dont la langue est proche.",
+            "aspect": "usage",
+            "formAsWritten": "Dorzie",
+            "sources": [
+              {
+                "title": "Ethnic Group and Mother Tongue in the Ethiopian Censuses of 1994 and 2007",
+                "author": "Grover Hudson",
+                "year": 2012,
+                "url": "https://journals.sub.uni-hamburg.de/aethiopica/article/view/666",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 206, p. 209, note 9, et p. 212",
+                "notes": "Aethiopica, vol. 15, 2012, p. 204-218. Lu le 18 octobre 2026 dans le PDF de la revue. L'auteur compare les tableaux publiés des recensements éthiopiens de 1994 et de 2007, que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "1975"
+            },
+            "era": "modern",
+            "statement": "Le nom Dorzé, avec un accent, est la forme qu'emploie en français l'anthropologue Dan Sperber pour ce peuple d'Éthiopie méridionale, dont il étudie la façon de classer les animaux.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Pourquoi les animaux parfaits, les hybrides et les monstres sont-ils bons à penser symboliquement ?",
+                "author": "Dan Sperber",
+                "year": 1975,
+                "url": "https://www.persee.fr/doc/hom_0439-4216_1975_num_15_2_367550",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6 et p. 9",
+                "notes": "L'Homme, tome 15, n° 2, 1975, p. 5-34. Lu sur Persée le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1919,
+              "to": 1927,
+              "label": "Voyage de 1919-1920, publié en 1927"
+            },
+            "era": "polity",
+            "statement": "Le nom Dorze a une forme proche, Dorzi, dans le récit du consul britannique Arnold Hodson : parti de son consulat le 29 décembre 1919, il monte depuis le lac Margherita, aujourd'hui le lac Abaya, jusqu'au « pittoresque village de Dorzi », dans les hautes terres du Gamo. C'est la plus ancienne trace de ce nom que le projet connaît. La communauté existait déjà avant elle.",
+            "formAsWritten": "Dorzi",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Arnold Wienholt Hodson",
+                "role": "consul britannique, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Seven Years in Southern Abyssinia",
+                "author": "Arnold Wienholt Hodson",
+                "year": 1927,
+                "url": "https://archive.org/details/in.ernet.dli.2015.77350",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 221",
+                "notes": "Londres, T. Fisher Unwin, 1927. Récit d'un consul britannique en Éthiopie de 1914 à 1927. Lu le 18 octobre 2026 dans la numérisation de la Digital Library of India sur Internet Archive ; page lue sur l'image de la page imprimée."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gamo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom plus large que se donnent aussi les gens de Dorze, comme leurs voisins des hautes terres.",
+        "periodLabel": "Écrit depuis 1901 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2006,
+              "to": 2006,
+              "label": "2006"
+            },
+            "era": "modern",
+            "statement": "Le nom Gamo est aussi celui que se donnent les gens de Dorze et des autres communautés du nord des hautes terres : ils disent que leur langue est le gamo, selon Dena Freeman.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Who are the Gamo? And who are the D'ache? Confusions of ethnicity in Ethiopia's southern highlands",
+                "author": "Dena Freeman",
+                "year": 2006,
+                "url": "https://eprints.lse.ac.uk/67835/1/Freeman_Who%20are%20the%20Gamo.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Actes de la 15e Conférence internationale des études éthiopiennes, Wiesbaden, Harrassowitz. Version de l'autrice déposée à la London School of Economics, lue le 18 octobre 2026 ; les pages sont celles de cette version."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "1901"
+            },
+            "era": "polity",
+            "statement": "Le nom Gamo apparaît par écrit dans le récit de l'officier britannique Montagu Sinclair Wellby, qui décrit « le district montagneux de Gamo », où il aperçoit un poste abyssin perché sur le plus haut sommet. C'est la plus ancienne trace de ce nom que le projet connaît. Ces communautés vivaient déjà là avant elle.",
+            "formAsWritten": "Gamo",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Montagu Sinclair Wellby",
+                "role": "officier britannique, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "'Twixt Sirdar & Menelik: An Account of a Year's Expedition from Zeila to Cairo through Unknown Abyssinia",
+                "author": "Montagu Sinclair Wellby",
+                "year": 1901,
+                "url": "https://archive.org/details/twixtsirdarmenel00welliala",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 151",
+                "notes": "New York, Harper and Brothers. Lu dans la numérisation d'Internet Archive le 18 octobre 2026 ; page lue sur l'image de la page imprimée."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "D'ache",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "les communautés du sud des hautes terres du Gamo",
+        "shortLine": "Le nom que les communautés du sud des hautes terres donnent à celles du nord, dont Dorze.",
+        "periodLabel": "Rapporté en 2006",
+        "accounts": [
+          {
+            "period": {
+              "from": 2006,
+              "to": 2006,
+              "label": "2006"
+            },
+            "era": "modern",
+            "statement": "Le nom D'ache est celui que les communautés du sud des hautes terres du Gamo donnent à celles du nord, comme Dorze. Les gens du nord ne l'emploient pas pour eux-mêmes et se disent Gamo, ou Dorze, selon Dena Freeman.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Who are the Gamo? And who are the D'ache? Confusions of ethnicity in Ethiopia's southern highlands",
+                "author": "Dena Freeman",
+                "year": 2006,
+                "url": "https://eprints.lse.ac.uk/67835/1/Freeman_Who%20are%20the%20Gamo.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Actes de la 15e Conférence internationale des études éthiopiennes, Wiesbaden, Harrassowitz. Version de l'autrice déposée à la London School of Economics, lue le 18 octobre 2026 ; les pages sont celles de cette version."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2006,
+              "to": 2006,
+              "label": "Proposée en 2006"
+            },
+            "era": "modern",
+            "statement": "Le nom D'ache viendrait peut-être des Dach, un groupe oromo que mentionne Bahrey en 1593, alors qu'il écrit depuis le nord des hautes terres du Gamo, selon Dena Freeman. Dans la langue du nord, ce mot évoque aujourd'hui le fait d'agir en seigneur.",
+            "hypothesisGroup": "origine du nom D'ache",
+            "sources": [
+              {
+                "title": "Who are the Gamo? And who are the D'ache? Confusions of ethnicity in Ethiopia's southern highlands",
+                "author": "Dena Freeman",
+                "year": 2006,
+                "url": "https://eprints.lse.ac.uk/67835/1/Freeman_Who%20are%20the%20Gamo.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "Actes de la 15e Conférence internationale des études éthiopiennes, Wiesbaden, Harrassowitz. Version de l'autrice déposée à la London School of Economics, lue le 18 octobre 2026 ; les pages sont celles de cette version."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -113,5 +113,88 @@
         "tier": "unverified"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Sokoro désigne un peuple des montagnes du Guéra, au centre du Tchad, autour de Gogmi et de Badanga, et la langue qu'il parle. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. Le nom Sokoro est noté pour la première fois au XIXe siècle par des voyageurs qui séjournaient au Baguirmi, le royaume voisin. On ne sait pas avec certitude d'où il vient ; nous présentons plus bas ce que disent les sources.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Sokoro",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple du Guéra et de sa langue, écrit dès 1857 ; son origine n'est pas connue.",
+        "periodLabel": "Écrit Sókoró en 1857 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sokoro désigne, dans le catalogue de langues Glottolog, une langue du Tchad, sous le code sok ; le catalogue cite aussi le nom Bedanga. On ne sait pas avec certitude d'où vient le nom Sokoro : aucune source que nous avons lue ne l'explique.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Sokoro (soko1263)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/soko1263",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues, lu le 18 octobre 2026. Autres noms, d'après ElCat et Multitree : Bedanga, Sokoro. Le catalogue n'explique pas leur origine."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1872,
+              "to": 1881,
+              "label": "1872 (récit publié en 1881)"
+            },
+            "era": "polity",
+            "statement": "Le nom Sokoro désigne chez l'explorateur Gustav Nachtigal le plus grand des pays voisins du Baguirmi : un pays de montagnes sans pouvoir unique, partagé en districts dont Badanga, Kenga et Gogomi sont les plus puissants. Il appelle « vrais Sokoro » les gens de Badanga, de Gogomi et des villages proches, dont le parler diffère nettement de celui de Kenga.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Sahara und Sudan. Ergebnisse sechsjähriger Reisen in Afrika, deuxième partie",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 672-673",
+                "notes": "Deuxième tome (Borku, Kanem, Bornu, Bagirmi), Berlin, Weidmann, 1881. Lu le 18 octobre 2026 dans la numérisation d'Internet Archive ; les pages 672 et 673 sont vérifiées sur l'image. Nachtigal surmonte d'un signe le deuxième o du nom, simplifié ici. Page 672 : le « Sokoro-Gebiet », le plus grand des pays voisins du Baguirmi ; page 673 : « Die Sokoro haben kein einheitliches Staatswesen » ; Badanga, Kenga et Gogomi dominent leurs voisins ; les gens de Badanga, Gogomi et des villages proches « sind die eigentlichen Sokoro », séparés de ceux de Kenga par une nette différence de dialecte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1852,
+              "to": 1857,
+              "label": "1852 (récit publié en 1857)"
+            },
+            "era": "polity",
+            "statement": "Le nom Sokoro apparaît par écrit, sous la forme Sókoró, dans le récit de l'explorateur Heinrich Barth, qui séjourne au Baguirmi en 1852. Dans un itinéraire que lui donnent des informateurs, il appelle Sókoró les habitants de Belel Kole et de Gogomi, un lieu fortifié des montagnes dont le chef venait d'être fait prisonnier par le sultan du Baguirmi. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple existait déjà avant elle.",
+            "formAsWritten": "Sókoró",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 3",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://archive.org/details/travelsdiscoveri31857bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 591-592",
+                "notes": "New York, D. Appleton, 1857 ; voyage de 1849-1855, séjour au Bagirmi en 1852. Lu le 18 octobre 2026 dans la numérisation d'Internet Archive ; la page 592 est vérifiée sur l'image. Annexe, itinéraire de Miltu à Gogomi d'après Agid Musa, avec des ajouts de Ramadhan (p. 591). Page 592 : « Belél Kolé, a place inhabited by the Sókoró » ; « Gógomi […] inhabited by a division of the Sókoró, whose formerly powerful chief was conquered and made prisoner by the sultan of Bagírmi during my stay in the country »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

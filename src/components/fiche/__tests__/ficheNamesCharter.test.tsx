@@ -5,7 +5,7 @@ import { FicheNamesChapter } from "@/components/fiche/FicheNamesChapter";
 import { getPatronymeRoute } from "@/lib/routing";
 import { getTranslation } from "@/lib/translations";
 
-import { namesForPeople } from "./corpusRecords";
+import { namesForCountry, namesForPeople } from "./corpusRecords";
 
 const clan = (id: string, nameMain: string) => ({
   id,
@@ -187,5 +187,78 @@ describe("fiche names charter", () => {
     );
     expect(systems).toHaveTextContent("Nom de clan");
     expect(systems).toHaveTextContent("Nisba");
+  });
+});
+
+/**
+ * Brief 10 §2 and REQ-153 as extended on 2026-10-17 (boards country-civ and
+ * country-state-civ-names-open): a long list of names folds behind its count,
+ * its title and tally staying in view.
+ */
+describe("fiche names — a long list folds behind its count", () => {
+  afterEach(cleanup);
+
+  // @req REQ-153
+  it("folds the names attested in Côte d'Ivoire, their index and their systems line, under the title and tally", () => {
+    // The board drew 47; the count is the corpus's, read here, not a constant.
+    const attested = namesForCountry("CIV");
+    const count = attested.length;
+    expect(count).toBeGreaterThan(24);
+    render(
+      <FicheNamesChapter
+        scope="country"
+        patronymes={{
+          attested,
+          borneByPeoples: [reach("PAT_MAGHRAWA", "Maghrawa", "Zénètes")],
+        }}
+        language="fr"
+      />
+    );
+
+    const group = document.querySelector(
+      '[data-names-register="attested"]'
+    ) as HTMLElement;
+    const fold = group.querySelector("details.ea-fold") as HTMLDetailsElement;
+    expect(fold.open).toBe(false);
+    expect(
+      fold.querySelector(':scope > summary [data-when="closed"]')
+    ).toHaveTextContent(`+ Voir les ${count} noms`);
+    expect(
+      fold.querySelector(':scope > summary [data-when="open"]')
+    ).toHaveTextContent("− replier");
+    const title = within(group).getByRole("heading", {
+      level: 3,
+      name: "Attestés dans le pays",
+    });
+    expect(fold).not.toContainElement(title);
+    expect(fold).not.toContainElement(within(group).getByText(`${count} noms`));
+    expect(fold).toContainElement(
+      group.querySelector(".afh-name-index") as HTMLElement
+    );
+    expect(fold).toContainElement(
+      group.querySelector("[data-names-systems]") as HTMLElement
+    );
+    expect(fold.querySelectorAll(".afh-name-pills a")).toHaveLength(count);
+
+    // The second register is already a closed tile, and stays one.
+    const carried = document.querySelector('[data-names-register="reach"]');
+    expect(carried?.querySelector("details.ea-fold")).toBeNull();
+    expect(carried?.querySelector("details.afh-tile")).not.toBeNull();
+  });
+
+  // @req REQ-153
+  it("leaves a list of 24 names or fewer open", () => {
+    const few = Array.from({ length: 24 }, (_, index) =>
+      clan(`PAT_F${index}`, `Nom ${index}`)
+    );
+    const { container } = render(
+      <FicheNamesChapter
+        scope="country"
+        patronymes={{ attested: few, borneByPeoples: [] }}
+        language="fr"
+      />
+    );
+
+    expect(container.querySelector("details.ea-fold")).toBeNull();
   });
 });

@@ -1,11 +1,14 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 
+import { FicheFold } from "@/components/fiche/FicheFold";
 import { FicheTile, FicheTiles } from "@/components/fiche/FicheTile";
 import { FieldProvenanceMarker } from "@/components/fiche/FieldProvenanceMarker";
 import type { ParagraphNoteData } from "@/components/people/peopleFicheNotes";
 import { ProseWithChip } from "@/components/people/ProseWithChip";
+import { foldAfterFirst } from "@/lib/fiche/fold";
 import type { FicheTileData } from "@/lib/fiche/tileData";
+import { ficheCopy } from "@/lib/i18n/copy/fiche";
 import type { Language } from "@/types/shared";
 
 export interface FicheTileChapterProps {
@@ -35,6 +38,10 @@ function detailOf(tile: FicheTileData): string {
  * The preview is plain text, so an opened tile restates its fields in full
  * with their note calls, and the preview steps aside. A chapter the record
  * leaves silent says so rather than disappearing (atlas charter §4).
+ *
+ * A long chapter keeps its first tile and folds the others behind one control
+ * naming each of them (brief 10 §2), on a grid of their own so the hidden
+ * tiles keep the layout they had when they open in place.
  */
 // @req REQ-091 REQ-097 REQ-153
 export function FicheTileChapter({
@@ -47,9 +54,10 @@ export function FicheTileChapter({
     return <FieldProvenanceMarker state="missing" language={language} />;
   }
 
-  return (
+  const { shown, folded } = foldAfterFirst(tiles);
+  const tileGrid = (group: readonly FicheTileData[]) => (
     <FicheTiles>
-      {tiles.map((tile) => (
+      {group.map((tile) => (
         <FicheTile
           key={tile.key}
           language={language}
@@ -102,5 +110,21 @@ export function FicheTileChapter({
         </FicheTile>
       ))}
     </FicheTiles>
+  );
+
+  return (
+    <>
+      {tileGrid(shown)}
+      {folded.length > 0 ? (
+        <FicheFold
+          label={ficheCopy[language].fold.seeAlso(
+            folded.map((tile) => tile.label)
+          )}
+          language={language}
+        >
+          {tileGrid(folded)}
+        </FicheFold>
+      ) : null}
+    </>
   );
 }

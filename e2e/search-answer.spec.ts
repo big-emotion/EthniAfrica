@@ -24,6 +24,7 @@ import {
   type AnswerFixtureCase,
 } from "../src/lib/search/__fixtures__/answerFixtures";
 import type { SearchAnswer } from "../src/lib/search/answer";
+import { FEED_CASES } from "../src/lib/search/__fixtures__/feedCases";
 import { nameAnswerCopy } from "../src/lib/i18n/copy/nameAnswer";
 import { searchFeedCopy } from "../src/lib/i18n/copy/searchFeed";
 
@@ -402,6 +403,61 @@ test.describe("search answer page", () => {
       }
     });
   }
+
+  // Brief 12 (approved 2026-10-17), Main board: « À l'arrivée, la barre
+  // défile jusqu'à la lentille pressée ». At 430 px the bar is wider than the
+  // screen, and pressing a lens replaces the page: the lens the reader just
+  // pressed must still show without a swipe, and the page must not move.
+  // @req REQ-180
+  test("brings the pressed lens into view in a bar wider than the screen", async ({
+    page,
+  }) => {
+    const mande = FEED_CASES.find(({ id }) => id === "mande")!;
+    await page.setViewportSize({ width: 430, height: 812 });
+    await routeSearchAnswerFixtures(page, {
+      companions: { ...mande.production.companions, subjects: [] },
+    });
+    await page.goto(searchAnswerUrl(ANSWER_FIXTURES.peul));
+    const lenses = () =>
+      page.getByRole("navigation", { name: searchFeedCopy.fr.filters.label });
+    const fiches = lenses().getByRole("button", {
+      name: new RegExp(`^${searchFeedCopy.fr.filters.fiches}`),
+    });
+    await expect(fiches).toBeAttached();
+    // The pieces arrive after the fiches: wait for them to fill the bar.
+    await expect(
+      lenses().getByRole("button", {
+        name: new RegExp(`^${searchFeedCopy.fr.filters.shorts}`),
+      })
+    ).toBeAttached();
+    expect(
+      await lenses().evaluate((bar) => bar.scrollWidth > bar.clientWidth)
+    ).toBe(true);
+    const scrollY = await page.evaluate(() => window.scrollY);
+
+    await fiches.click();
+    await expect(page.locator("h1")).toHaveText(/^Fiches sur /);
+
+    const pressed = lenses().locator('[aria-pressed="true"]');
+    await expect(pressed).toHaveText(
+      new RegExp(`^${searchFeedCopy.fr.filters.fiches}`)
+    );
+    await expect
+      .poll(async () => {
+        const [bar, lens] = await Promise.all([
+          lenses().boundingBox(),
+          pressed.boundingBox(),
+        ]);
+        return (
+          bar !== null &&
+          lens !== null &&
+          lens.x >= bar.x - 0.5 &&
+          lens.x + lens.width <= bar.x + bar.width + 0.5
+        );
+      })
+      .toBe(true);
+    expect(await page.evaluate(() => window.scrollY)).toBe(scrollY);
+  });
 
   // @req REQ-178
   test("pharaon renders the word page, not the unknown-name confession", async ({

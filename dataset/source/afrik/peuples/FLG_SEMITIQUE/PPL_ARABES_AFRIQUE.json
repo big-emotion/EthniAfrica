@@ -224,5 +224,194 @@
         "source_kind": "ngo"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Arabes d'Afrique réunit les peuples de langue arabe du continent, de l'Égypte et du Maghreb au Soudan, au Tchad et à la Mauritanie ; ce n'est pas le nom d'un seul peuple, et nous n'avons pas trouvé qui a forgé l'expression. Le nom que se donnent les Arabes, ʿArab, est écrit depuis le IXe siècle avant notre ère, et des habitants de l'Égypte se disaient déjà Arabes dans l'Antiquité. Les sources ne s'accordent pas sur ce que le mot désignait au départ ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "ʿArab",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "arb",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Arabes, écrit depuis 853 avant notre ère ; son sens premier est discuté.",
+        "periodLabel": "Écrit depuis 853 avant notre ère ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom ʿArab désigne aujourd'hui un peuple que l'on reconnaît à sa langue et à sa culture, et dont l'appartenance repose en principe sur la généalogie, selon M. C. A. Macdonald. Ce que le mot désignait au départ reste discuté, et nous n'avons pas trouvé de source lue qui explique d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Arabs, Arabias, and Arabic before Late Antiquity",
+                "author": "M. C. A. Macdonald",
+                "year": 2009,
+                "url": "https://www.persee.fr/doc/topoi_1161-9473_2009_num_16_1_2306",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 295",
+                "notes": "Topoi. Orient-Occident, 16, 2009, p. 277-332. Lu sur Persée le 18 octobre 2026, page par page ; les numéros sont ceux de la revue imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 640,
+              "to": 1100,
+              "label": "Du VIIe au XIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom ʿArab arrive en Afrique du Nord avec la conquête arabe partie d'Égypte au VIIe siècle, qui islamise le Maghreb ; l'invasion des Banū Hilāl, au XIe siècle, l'arabise, selon Ivan Hrbek. Depuis l'Égypte, des Bédouins arabes gagnent aussi la Nubie et ouvrent la voie à l'arabisation du Soudan du Nil.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 1 : L'Afrique dans le contexte de l'histoire mondiale",
+                "author": "Ivan Hrbek",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 26"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 328,
+              "to": 328,
+              "label": "328"
+            },
+            "statement": "Le nom ʿArab figure dans l'épitaphe de Namara, écrite en 328 en vieil arabe : le défunt y est dit, selon la lecture habituelle, « roi de tous les Arabes ». M. C. A. Macdonald précise que ce n'est pas à proprement parler une façon de se nommer soi-même, et qu'une autre lecture y voit une région plutôt qu'un peuple.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Arabs, Arabias, and Arabic before Late Antiquity",
+                "author": "M. C. A. Macdonald",
+                "year": 2009,
+                "url": "https://www.persee.fr/doc/topoi_1161-9473_2009_num_16_1_2306",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 290",
+                "notes": "Topoi. Orient-Occident, 16, 2009, p. 277-332. Lu sur Persée le 18 octobre 2026, page par page ; les numéros sont ceux de la revue imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": -250,
+              "to": -154,
+              "label": "IIIe et IIe siècles avant notre ère"
+            },
+            "era": "polity",
+            "statement": "Le nom ʿArab se lit, sous sa forme grecque Araps, dans des papyrus de l'Égypte des Ptolémées : un barbier et des fermiers, notamment dans le Fayoum, s'y disent eux-mêmes « Arabes ». Presque toutes les traces anciennes de gens qui se donnent ce nom viennent d'Égypte, selon M. C. A. Macdonald.",
+            "aspect": "usage",
+            "formAsWritten": "Ἄραψ",
+            "sources": [
+              {
+                "title": "Arabs, Arabias, and Arabic before Late Antiquity",
+                "author": "M. C. A. Macdonald",
+                "year": 2009,
+                "url": "https://www.persee.fr/doc/topoi_1161-9473_2009_num_16_1_2306",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 285-287",
+                "notes": "Topoi. Orient-Occident, 16, 2009, p. 277-332. Lu sur Persée le 18 octobre 2026, page par page ; les numéros sont ceux de la revue imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": -853,
+              "to": -853,
+              "label": "853 avant notre ère"
+            },
+            "statement": "Le nom ʿArab apparaît pour la première fois dans l'inscription du roi assyrien Salmanazar III sur le monolithe de Kurkh : un certain Gindibu « l'Arabe » y amène mille chameaux à la bataille de Qarqar, en Syrie du Nord, en 853 avant notre ère, selon M. C. A. Macdonald. C'est la plus ancienne trace de ce nom que le projet connaît. Ceux qu'il désigne existaient déjà avant lui.",
+            "formAsWritten": "ar-ba-a-a",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Arabs, Arabias, and Arabic before Late Antiquity",
+                "author": "M. C. A. Macdonald",
+                "year": 2009,
+                "url": "https://www.persee.fr/doc/topoi_1161-9473_2009_num_16_1_2306",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 285 et note 49",
+                "notes": "Topoi. Orient-Occident, 16, 2009, p. 277-332. Lu sur Persée le 18 octobre 2026, page par page ; les numéros sont ceux de la revue imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1995,
+              "to": 1995,
+              "label": "Proposée en 1995"
+            },
+            "statement": "Le nom ʿArab désignerait d'abord un mode de vie, celui des nomades, et non une origine, selon Michel Gawlikowski, cité par M. C. A. Macdonald, qui conteste cette lecture.",
+            "hypothesisGroup": "sens-premier-arab",
+            "sources": [
+              {
+                "title": "Arabs, Arabias, and Arabic before Late Antiquity",
+                "author": "M. C. A. Macdonald",
+                "year": 2009,
+                "url": "https://www.persee.fr/doc/topoi_1161-9473_2009_num_16_1_2306",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 294",
+                "notes": "Topoi. Orient-Occident, 16, 2009, p. 277-332. Lu sur Persée le 18 octobre 2026, page par page ; les numéros sont ceux de la revue imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2002,
+              "to": 2002,
+              "label": "Proposée en 2002"
+            },
+            "era": "modern",
+            "statement": "Le nom Arabe aurait servi, dans l'Égypte grecque et romaine, à désigner tout groupe aux manières de nomades venus du désert, puis un corps de gardes du désert, selon Sylvie Honigman, citée par M. C. A. Macdonald.",
+            "hypothesisGroup": "sens-premier-arab",
+            "sources": [
+              {
+                "title": "Arabs, Arabias, and Arabic before Late Antiquity",
+                "author": "M. C. A. Macdonald",
+                "year": 2009,
+                "url": "https://www.persee.fr/doc/topoi_1161-9473_2009_num_16_1_2306",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 290-291",
+                "notes": "Topoi. Orient-Occident, 16, 2009, p. 277-332. Lu sur Persée le 18 octobre 2026, page par page ; les numéros sont ceux de la revue imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2009,
+              "to": 2009,
+              "label": "Proposée en 2009"
+            },
+            "statement": "Le nom ʿArab aurait eu plusieurs sens à la fois dans l'Antiquité : une origine, un métier, ou une langue et une culture, selon M. C. A. Macdonald. Il rappelle que des gymnasiarques, des barbiers ou des fermiers d'Égypte se disaient Arabes, et non seulement des nomades.",
+            "hypothesisGroup": "sens-premier-arab",
+            "sources": [
+              {
+                "title": "Arabs, Arabias, and Arabic before Late Antiquity",
+                "author": "M. C. A. Macdonald",
+                "year": 2009,
+                "url": "https://www.persee.fr/doc/topoi_1161-9473_2009_num_16_1_2306",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 291-292",
+                "notes": "Topoi. Orient-Occident, 16, 2009, p. 277-332. Lu sur Persée le 18 octobre 2026, page par page ; les numéros sont ceux de la revue imprimée."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
