@@ -11,13 +11,32 @@
     {
       "spelling": "Macuácua",
       "attestations": [
-        { "countryId": "MOZ", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "MOZ",
+          "sourceRefs": ["afrik-candidate-queue", "liesegang-2014-borders"]
+        }
       ]
     },
     {
       "spelling": "Macuacua",
       "attestations": [
-        { "countryId": "MOZ", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "MOZ",
+          "sourceRefs": [
+            "afrik-candidate-queue",
+            "caldas-xavier-1894-limpopo",
+            "liesegang-2014-borders"
+          ]
+        }
+      ]
+    },
+    {
+      "spelling": "Makwakwa",
+      "attestations": [
+        {
+          "countryId": "MOZ",
+          "sourceRefs": ["junod-1912-life-1", "liesegang-2014-borders"]
+        }
       ]
     }
   ],
@@ -32,14 +51,23 @@
     {
       "peopleId": "PPL_TSONGA",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": [
+        "afrik-candidate-queue",
+        "junod-1912-life-1",
+        "liesegang-2014-borders"
+      ]
     }
   ],
   "countries": [
     {
       "countryId": "MOZ",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": [
+        "afrik-candidate-queue",
+        "caldas-xavier-1894-limpopo",
+        "junod-1912-life-1",
+        "liesegang-2014-borders"
+      ]
     }
   ],
   "alliances": [],
@@ -54,6 +82,30 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "junod-1912-life-1",
+      "title": "The Life of a South African Tribe, vol. I : The Social Life",
+      "url": "https://archive.org/details/cu31924012891127",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Neuchâtel, Attinger, 1912 ; numérisation de l'université Cornell sur Internet Archive, lue le 18 octobre 2026. Henri-Alexandre Junod, missionnaire suisse, décrit les Thonga (Tsonga) du sud du Mozambique et du Transvaal ; il écrit dans le contexte colonial et est cité pour ce qu'il rapporte."
+    },
+    {
+      "sourceKey": "liesegang-2014-borders",
+      "title": "East and Northeast of the Borders of the Southeastern Bantu: Partly visible population movements and invisible lineage states",
+      "url": "https://archive.org/details/borders-of-se-bantu-400-1900",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Manuscrit de juillet 2014, diffusé « without full revision of the bibliography and language » ; l'auteur, historien, enseigne au département d'histoire de l'université Eduardo Mondlane, à Maputo. Lu en texte intégral sur Internet Archive le 18 octobre 2026, aux pages imprimées du manuscrit."
+    },
+    {
+      "sourceKey": "caldas-xavier-1894-limpopo",
+      "title": "Reconhecimento do Limpopo",
+      "url": "https://archive.org/details/reconhecimentod00xavigoog",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Lisbonne, Imprensa Nacional, 1894 ; exemplaire numérisé par Google, page vue en image sur Internet Archive le 18 octobre 2026. Rapport d'un officier portugais, écrit avant la guerre de 1895 contre Gungunhana, roi de Gaza."
     }
   ],
   "gaps": [
@@ -81,5 +133,170 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Macuácua est un nom de famille du Mozambique, l'écriture portugaise du nom Makwakwa, celui d'un clan tsonga du bas Limpopo. Il est écrit dès 1894. Un récit transmis en explique le nom par un fruit ; nous le présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Macuácua",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille du Mozambique, écriture portugaise du clan tsonga Makwakwa, écrit dès 1894.",
+        "periodLabel": "Écrit dès 1894 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Macuácua est l'écriture portugaise du nom Makwakwa, celui d'un clan tsonga, une branche des Nwanati établie près de l'embouchure du Limpopo. Un récit transmis l'explique par un fruit, la makwakwa ; il est présenté plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17 et 22",
+                "notes": "Neuchâtel, Attinger, 1912 ; numérisation de l'université Cornell sur Internet Archive, lue le 18 octobre 2026. Henri-Alexandre Junod, missionnaire suisse, décrit les Thonga (Tsonga) du sud du Mozambique et du Transvaal ; il écrit dans le contexte colonial et est cité pour ce qu'il rapporte. P. 17 : la moitié des Nwanati « is settled near the mouth of the Limpopo under the name of the Makwakwa of Khambane and Ndindane » ; p. 22 : récit sur l'origine du nom."
+              },
+              {
+                "title": "East and Northeast of the Borders of the Southeastern Bantu: Partly visible population movements and invisible lineage states",
+                "author": "Gerhard Liesegang",
+                "year": 2014,
+                "url": "https://archive.org/details/borders-of-se-bantu-400-1900",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 35 et 56",
+                "notes": "Manuscrit de juillet 2014, diffusé « without full revision of the bibliography and language » ; l'auteur, historien, enseigne au département d'histoire de l'université Eduardo Mondlane, à Maputo. Lu en texte intégral sur Internet Archive le 18 octobre 2026, aux pages imprimées du manuscrit. P. 35 : l'historien oral « Solomoni Macuacua (in Pande, 1982) » ; p. 56, liste des enregistrements : « Pande: Salomoni Makwakwa ». Le même informateur est écrit des deux manières."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1982,
+              "to": 1982,
+              "label": "Enregistré en 1982"
+            },
+            "era": "modern",
+            "statement": "Le nom Macuácua est porté comme nom de famille au Mozambique : en 1982, à Pande, l'historien Gerhard Liesegang enregistre un historien oral, Solomoni Macuacua, qu'il écrit aussi Salomoni Makwakwa.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "East and Northeast of the Borders of the Southeastern Bantu: Partly visible population movements and invisible lineage states",
+                "author": "Gerhard Liesegang",
+                "year": 2014,
+                "url": "https://archive.org/details/borders-of-se-bantu-400-1900",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 35 et 56",
+                "notes": "Manuscrit de juillet 2014, diffusé « without full revision of the bibliography and language » ; l'auteur, historien, enseigne au département d'histoire de l'université Eduardo Mondlane, à Maputo. Lu en texte intégral sur Internet Archive le 18 octobre 2026, aux pages imprimées du manuscrit. P. 35 : « Several oral historians such as the late pastor Daniel Nkonwana (Comuana), Solomoni Macuacua (in Pande, 1982) and A. Jaques 1982 » ; p. 56 : « Pande: Salomoni Makwakwa etc. »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1894,
+              "to": 1894,
+              "label": "Publié en 1894"
+            },
+            "era": "polity",
+            "statement": "Le nom Macuácua apparaît par écrit, sans accent, chez l'officier portugais Alfredo Augusto Caldas Xavier, qui parle en 1894 de « la forte et aguerrie tribu macuacua », alors vassale de Gungunhana, le roi de Gaza. C'est la plus ancienne trace de ce nom que le projet connaît ; le clan existait déjà avant elle.",
+            "formAsWritten": "macuacua",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Alfredo Augusto Caldas Xavier",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Gungunhana",
+                "role": "roi de Gaza dont le clan est alors vassal"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Reconhecimento do Limpopo",
+                "author": "Alfredo Augusto Caldas Xavier",
+                "year": 1894,
+                "url": "https://archive.org/details/reconhecimentod00xavigoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 23",
+                "notes": "Lisbonne, Imprensa Nacional, 1894 ; exemplaire numérisé par Google, page vue en image sur Internet Archive le 18 octobre 2026. Rapport d'un officier portugais, écrit avant la guerre de 1895 contre Gungunhana, roi de Gaza. P. 23 : « A forte e aguerrida tribu macuacua, gente que em qualidades guerreiras nada tem a invejar aos vatuas, já hoje não pertence ás terras da corôa » ; « o facto dos macuacuas serem hoje avassallados do Gungunhana »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Makwakwa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'écriture tsonga du nom Macuácua, un clan du bas Limpopo, notée en 1912.",
+        "periodLabel": "Écrit dès 1912 ; porté aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Décrit en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Makwakwa apparaît par écrit chez le missionnaire Henri-Alexandre Junod, qui décrit en 1912 les Makwakwa de Khambane et de Ndindane, près de l'embouchure du Limpopo, voisins des Chopi. C'est la plus ancienne trace de cette écriture que le projet connaît ; le clan existait déjà avant elle.",
+            "formAsWritten": "Makwakwa",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Henri-Alexandre Junod",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17 et 18",
+                "notes": "Neuchâtel, Attinger, 1912 ; numérisation de l'université Cornell sur Internet Archive, lue le 18 octobre 2026. Henri-Alexandre Junod, missionnaire suisse, décrit les Thonga (Tsonga) du sud du Mozambique et du Transvaal ; il écrit dans le contexte colonial et est cité pour ce qu'il rapporte. P. 17 : « the Makwakwa of Khambane and Ndindane » ; p. 18 : « The Nwanati with the Makwakwa, Khambane, Ndindane, bordering the Chopi to the North and the West »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Rapporté en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Makwakwa viendrait d'un fruit, la makwakwa, selon un récit que des historiens tsonga ont confié à Henri-Alexandre Junod. Arrivés près de la mer avec les Baloyi, les Nwanati auraient trouvé ce fruit rond à coque dure et auraient dit : « Nous resterons ici pour casser nos makwakwa ». On les aurait appelés ainsi depuis.",
+            "hypothesisGroup": "origine du nom Makwakwa",
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 22",
+                "notes": "Neuchâtel, Attinger, 1912 ; numérisation de l'université Cornell sur Internet Archive, lue le 18 octobre 2026. Henri-Alexandre Junod, missionnaire suisse, décrit les Thonga (Tsonga) du sud du Mozambique et du Transvaal ; il écrit dans le contexte colonial et est cité pour ce qu'il rapporte. P. 22 : « This fruit is called makwakwa. \"We shall remain here to break open our makwakwa\" said the Nwanati, and they bade farewell to the Baloyi, who started back to their present abode. Hence the name Makwakwa now given to those Nwanati. » Les historiens qui racontent ce récit ne sont pas nommés."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
