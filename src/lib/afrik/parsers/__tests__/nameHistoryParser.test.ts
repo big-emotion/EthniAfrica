@@ -67,6 +67,38 @@ describe("parseNameHistory", () => {
   });
 
   // @req REQ-196
+  it("accepts claim status and oral collection details on a name-history account", () => {
+    const parsed = parseNameHistory(
+      nameHistory([
+        account({
+          claimStatus: "claimed",
+          carrier: "Une personne de la famille",
+          collection: "mediated",
+          collector: "Une chercheuse",
+        }),
+      ])
+    );
+
+    expect(parsed.success).toBe(true);
+    expect(parsed.data?.names[0].accounts[0]).toMatchObject({
+      claimStatus: "claimed",
+      carrier: "Une personne de la famille",
+      collection: "mediated",
+      collector: "Une chercheuse",
+    });
+  });
+
+  // @req REQ-196
+  it("refuses a claim status outside the three supported values", () => {
+    const parsed = parseNameHistory(
+      nameHistory([account({ claimStatus: "probable" })])
+    );
+
+    expect(parsed.success).toBe(false);
+    expect(parsed.errors.join("\n")).toMatch(/claimStatus/);
+  });
+
+  // @req REQ-196
   it("allows a fuzzy period with no year at all", () => {
     const parsed = parseNameHistory(
       nameHistory([
