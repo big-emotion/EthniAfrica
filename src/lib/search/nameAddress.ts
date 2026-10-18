@@ -51,28 +51,26 @@ export function citesAboveUnverified(
 }
 
 /**
- * The spelling a subject's history gives a form it answers, when that form
- * meets the crawler threshold — or nothing.
+ * The names of a subject's history that meet the crawler threshold, in
+ * history order and spelt as the history spells them.
  *
- * The spelling is the history's, not the filed name's: the family name filed
- * « Traore » tells its story as « Traoré », and that is what its address and
- * its page heading say. A form the history does not tell has no account to
- * read, so it has no address.
+ * Every name a history tells is an exact answer for its subject (REQ-135,
+ * migration 109), so each one sourced above `unverified` has an address:
+ * « Fulɓe » on the fiche filed « Peul », « Bikpakpaam » on the one filed
+ * « Konkomba ». The spelling is the history's, not the filed name's: the
+ * family name filed « Traore » tells its story as « Traoré », and that is what
+ * its address and its page heading say. A filed name the history does not
+ * tell has no account to read, so it has no address.
  */
 // @req REQ-200
-export function historyAddressSpelling(
-  history: { names: readonly ToldName[] } | null | undefined,
-  form: string
-): string | undefined {
-  const key = foldNameForm(form);
-  if (!key) return undefined;
-  const names = (history?.names ?? []).filter(
-    (name) => foldNameForm(name.nameText) === key
-  );
-  const sourced = names.some((name) =>
-    name.accounts.some((account) => citesAboveUnverified(account.sources))
-  );
-  return sourced ? names[0].nameText : undefined;
+export function addressedHistoryNames(
+  history: { names: readonly ToldName[] } | null | undefined
+): string[] {
+  return (history?.names ?? [])
+    .filter((name) =>
+      name.accounts.some((account) => citesAboveUnverified(account.sources))
+    )
+    .map((name) => name.nameText);
 }
 
 const markCount = (spelling: string): number =>
