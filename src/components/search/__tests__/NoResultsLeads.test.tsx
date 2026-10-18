@@ -4,7 +4,12 @@ import { describe, expect, it, vi } from "vitest";
 
 import { NoResultsLeads } from "../NoResultsLeads";
 import type { SearchLead } from "@/types/afrik-frontend";
-import { getCountryRoute, getFamilyRoute, getPeopleRoute } from "@/lib/routing";
+import {
+  getCountryRoute,
+  getFamilyRoute,
+  getPatronymeRoute,
+  getPeopleRoute,
+} from "@/lib/routing";
 
 vi.mock("next/link", () => ({
   __esModule: true,
@@ -80,7 +85,7 @@ describe("NoResultsLeads", () => {
 
     expect(screen.getByRole("link", { name: /Tchicaya/ })).toHaveAttribute(
       "href",
-      "/fr/atlas/noms/PAT_TCHICAYA"
+      getPatronymeRoute("fr", "PAT_TCHICAYA")
     );
   });
 
