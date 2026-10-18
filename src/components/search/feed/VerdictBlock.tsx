@@ -66,7 +66,7 @@ export function VerdictBlock({
       </p>
       <h1
         className={cn(
-          "mt-afh-xs font-afh-display text-afh-hero font-black leading-[var(--afh-leading-hero)] text-afh-text",
+          "mt-afh-xs font-afh-display text-afh-hero font-black leading-[var(--afh-leading-hero)] text-afh-text [overflow-wrap:anywhere]",
           !plain && "min-[1200px]:mt-afh-md"
         )}
       >

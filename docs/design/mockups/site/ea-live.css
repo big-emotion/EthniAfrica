@@ -1305,6 +1305,12 @@ button.afh-source-diamond .afh-source-diamond-mark {
 }
 
 /* ===== search-feed.css (verbatim) ===== */
+.search-feed-pill-group {
+  /* Approved brief 17 keeps the search controls at 14 px without adding a
+     tenth global text role. The value is limited to their shared group. */
+  --search-feed-text-pill: 0.875rem;
+}
+
 /* The reviewed boards publish rounded reference-width values for the three
    fluid editorial roles used by the search feed. Keep the scale fluid between
    its existing bounds while landing exactly on the approved 430 px rendering.
@@ -4077,6 +4083,11 @@ svg { display: block; }
   outline: none;
 }
 .ea-search-input::placeholder { color: var(--afh-text-muted); }
+.ea-search-input:focus-visible,
+.ea-search-input[data-board-focus] {
+  outline: none;
+  box-shadow: var(--afh-ring-focus);
+}
 .ea-search-clear {
   position: absolute; right: 4px; top: 2px;
   display: flex; align-items: center; justify-content: center;
@@ -4087,6 +4098,7 @@ svg { display: block; }
 /* Answer page */
 .afh-answer-page { max-width: 880px; margin-inline: auto; text-align: left; min-width: 0; }
 .ea-lenses {
+  --search-feed-text-pill: 0.875rem;
   display: flex; gap: 8px; margin-top: 12px;
   overflow-x: auto; scrollbar-width: none;
 }
@@ -4095,12 +4107,17 @@ svg { display: block; }
   min-height: 44px; padding: 0 16px;
   border: 1px solid var(--afh-border); border-radius: 9999px;
   background: var(--afh-surface);
-  font-size: 14px; font-weight: 700; line-height: 20px; color: var(--afh-text);
+  font-size: var(--search-feed-text-pill); font-weight: 700; line-height: 20px; color: var(--afh-text);
   white-space: nowrap;
 }
 .ea-lens-count { font-weight: 500; color: var(--afh-text-soft); }
 .ea-lens[aria-pressed="true"] {
   background: var(--afh-text); border-color: var(--afh-text); color: var(--afh-bg);
+}
+.ea-lens:focus-visible,
+.ea-lens[data-board-focus] {
+  outline: none;
+  box-shadow: var(--afh-ring-focus);
 }
 .ea-movement {
   display: flex; flex-direction: column; gap: var(--afh-section-gap);
@@ -4215,6 +4232,29 @@ svg { display: block; }
 .ds-mobile .sh-controls { margin-left: auto; }
 .ds-mobile .sh-bar { padding: 8px 12px; }
 .ds-mobile .sh-brand-name { font-size: 19.2px; }
+.ds-compact-320 .sh-bar { gap: 8px; padding: 8px 12px; }
+.ds-compact-320 .sh-brand { gap: 6px; min-width: 0; }
+.ds-compact-320 .sh-brand-mark { width: 32px; height: 32px; }
+.ds-compact-320 .sh-brand-name { font-size: var(--afh-text-small); line-height: 1.25; white-space: nowrap; }
+.ds-compact-320 .sh-brand-tagline { display: none; }
+.ds-compact-320 .sh-controls { gap: 2px; }
+@media (max-width: 359.98px) {
+  .sh-bar { gap: 8px; padding-inline: 12px; }
+  .sh-brand { gap: 6px; min-width: 0; }
+  .sh-brand-mark { width: 32px; height: 32px; }
+  .sh-brand-name { font-size: var(--afh-text-small); line-height: 1.25; white-space: nowrap; }
+  .sh-brand-tagline { display: none; }
+  .sh-controls { gap: 2px; }
+}
+@media (max-width: 239.98px) {
+  .sh-header { height: auto; min-height: 61px; }
+  .sh-bar { height: auto; min-height: 60px; flex-wrap: wrap; gap: 4px 8px; }
+  .sh-brand { flex: 1 1 100%; }
+  .sh-brand-mark { width: 24px; height: 24px; }
+  .sh-controls { flex: 1 1 100%; justify-content: flex-end; margin-left: 0; }
+  .ea-footer-brand { flex-direction: column; gap: 4px; text-align: center; }
+  .ea-footer-brand-text { text-align: center; }
+}
 
 /* Several fiche links: the outlined form (search-bassa, search-congo) */
 .ea-fiche-link[data-variant="outline"] {
@@ -4250,7 +4290,7 @@ svg { display: block; }
 .ea-verdict-name {
   margin-top: 4px;
   font-family: var(--afh-font-display); font-weight: 900;
-  font-size: var(--afh-text-hero); line-height: 1.05;
+  font-size: var(--afh-text-hero); line-height: 1.05; overflow-wrap: anywhere;
 }
 .ea-verdict-line {
   margin-top: 8px;
@@ -4282,11 +4322,16 @@ svg { display: block; }
   padding: 8px 16px; border: 1px solid var(--accent); border-radius: var(--afh-radius-lg);
   background: var(--accent-tint); color: var(--accent-foreground); font-weight: 500;
 }
-.ea-further-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.ea-further-list { --search-feed-text-pill: 0.875rem; display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
 .ea-further-list a {
   display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px;
   border: 1px solid var(--afh-border); border-radius: 9999px; background: var(--afh-surface);
-  font-size: 14px; font-weight: 600; color: var(--afh-text);
+  font-size: var(--search-feed-text-pill); font-weight: 600; color: var(--afh-text);
+}
+.ea-further-list a:focus-visible,
+.ea-further-list a[data-board-focus] {
+  outline: none;
+  box-shadow: var(--afh-ring-focus);
 }
 
 /* ── Fiche pages (people, language, family, country, name, place) ── */

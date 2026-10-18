@@ -110,6 +110,7 @@ describe("VerdictBlock", () => {
     expect(block?.className).not.toMatch(/min-\[1200px\]:pt-/);
     const heading = screen.getByRole("heading", { level: 1 });
     expect(heading).toHaveClass("mt-afh-xs");
+    expect(heading).toHaveClass("[overflow-wrap:anywhere]");
     expect(heading.className).not.toMatch(/min-\[1200px\]:mt-/);
     const panel = container.querySelector('[data-verdict-panel=""]');
     expect(panel).toHaveClass("mt-afh-md");
