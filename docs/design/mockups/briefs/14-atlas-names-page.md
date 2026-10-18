@@ -2,8 +2,8 @@
 
 Read [`README.md`](README.md), [`13-search-entry.md`](13-search-entry.md) and
 [`../../mockup-first-workflow.md`](../../mockup-first-workflow.md) first.
-Written 2026-10-18. Status: **scope approved by the operator on 2026-10-18;
-boards not drawn yet.** Prompt: [`claude-design-prompt-14.md`](claude-design-prompt-14.md).
+Written 2026-10-18. Status: **scope and boards approved by the operator on
+2026-10-18.** Prompt: [`claude-design-prompt-14.md`](claude-design-prompt-14.md).
 
 **Pass 5.** It starts once pass 4 ([brief 13](13-search-entry.md)) is approved
 and recorded, because it reuses its search component.
@@ -95,3 +95,53 @@ later pass if the operator asks. The home does not change.
   result page for that name opens.
 - Given the corpus changes, when the page builds, then the counts of
   « Parcourir » follow it.
+
+## Approved boards (2026-10-18)
+
+Recorded in `docs/design/mockups/site/`, group « 0 · Atlas » of
+`canvas.json`. The operator approved the boards on 2026-10-18 with two
+decisions:
+
+1. The sentence under the title is « Peuples, langues, pays : nous expliquons
+   d'où viennent leurs noms, avec leurs sources. » The first sentence ran to
+   three lines at 430 px, at the limit; this one takes two.
+2. « Les lieux » (5 places) stays out of « Parcourir » for now. It can be
+   added as a sixth line when the list grows.
+
+- `atlas-names` at 430, 768 and 1440 (new), « Page Atlas : Les noms
+  d'Afrique », top to bottom:
+  - the title « Les noms d'Afrique » and the sentence above;
+  - the search component of brief 13, empty, as recorded on `Main`;
+  - « Entrer par un pays »: the 54 countries in one row that scrolls sideways,
+    from Afrique du Sud to Zimbabwe, in the home's chips (`.home-hero-seed`),
+    each a link to the country's result page;
+  - « Cherchés cette semaine »: four next-step cards (`.ea-next-card`, which
+    leads to the name's result page): Peuple · Peul, Langue · Lingala, Pays ·
+    Côte d'Ivoire, Famille de langues · Bantou, each with the first sentence
+    of its fiche's summary, word for word;
+  - « Parcourir »: Les peuples 665, Les noms de famille 789, Les pays 54, Les
+    langues 39, Les familles de langues 25;
+  - footer B. No map: al-Idrisi's map leaves this page.
+- `ea-live.css` gains the `.ea-atlas*` selectors. New selectors only, tokens
+  only.
+
+Choices made while drawing, kept by the operator:
+
+1. The title takes the display title of « À propos », left-aligned, with no
+   eyebrow; the sentence is soft body text at the reading measure.
+2. The three block titles take the style of « Poursuivre avec un autre nom ».
+3. The country row starts at the column's left edge and is clipped at its
+   right edge: no fade, no arrows, no visible scrollbar.
+4. The four cards keep the brief's order and one size: one column at 430, two
+   at 768, four at 1440, in the 1,240 px column that the field and the row
+   span.
+5. « Parcourir » gives one line per list: the name in semibold, the count in
+   small mono type, an ocre arrow, a rule between lines; at 1440 the two
+   columns read row by row. The « 0 · Atlas » group sits to the right of group
+   4 on the canvas, so no other board moves.
+
+Measured at 430 px on a render without the Google fonts: header 61, title and
+sentence 100, search component 152, « Entrer par un pays » 87, « Cherchés
+cette semaine » 769, « Parcourir » 320, gaps and margins 192 (1,620 px of
+content), footer 1,415, page 3,096. The field ends 309 px from the top: the
+first screen shows the title, the sentence and the field.

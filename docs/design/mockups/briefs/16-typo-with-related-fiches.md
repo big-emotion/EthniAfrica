@@ -338,13 +338,54 @@ by (**proposed**):
 > query a fiche the search found writes in its text is not a typo: it keeps
 > the related-only page;
 
-**REQ-201** (**proposed**): a family name that matches the query only by its
-sound is also withheld when the search offers a family-name lead beside its
-results (DEC-075). **DEC-075**, its tradeoff (« Chukwu stays under REQ-201 »)
-follows, and a lead's own fiche is not listed among the fiches found.
+Decision 4 changes what REQ-201, DEC-075 and ETNI-2092 say today: all three
+keep Chukwu among the fiches for « tchikaya ». The code already follows the
+drafts below. They are published together with the operator's approval of
+these boards, before #1835 merges: the two Confluence pages as Pending
+amendments through `/ethniafrica-spec`, which publishes only on the
+operator's own confirmation, then the ticket.
 
-**REQ-125** (**proposed**): each lead carries `matchedForm`, the form that
-scored, beside its filed name; a client names that form.
+**REQ-201** (**proposed**), appended to its statement: « A family name that
+the search reaches only through its phonetic key **must not** be returned
+either, nor counted in any lens total, when the search offers a family-name
+lead beside its results (DEC-075). » New GWT: given « tchikaya », which nothing
+answers exactly, Chukwu, which reaches it only through the phonetic key, and
+Tchicaya, offered as a lead, when the search runs, then Chukwu is not
+returned and no count includes it; given a search whose only results reach
+the query by sound and a family-name lead, when the search runs, then it
+returns no result and its leads mix every kind. The « Keyta » block changes
+how Keïta is reached, not whether: Keïta records the spelling Keyita (0.44
+against « keyta », same first letter), so « keyta » gets Keïta as its lead,
+and Keïta, which reaches « keyta » only through its sound, leaves the
+results. The block becomes « then « Keïta » is still reached, as `REQ-135`
+GWT 1 requires: among the results, or as the family-name lead when the
+search offers it as one ».
+
+**DEC-075** (**proposed**), its tradeoff « For « tchikaya », Chukwu stays
+among the related fiches… This decision does not change that » becomes:
+« Once a family-name lead is offered beside results, the family names that
+reach the query only by their phonetic key are withheld from the results and
+the totals (REQ-201 as amended): for « tchikaya », Chukwu is no longer
+returned. The lead already offers the spelling the key was bridging, and
+nothing in the data links Chukwu to Tchicaya. The result page also leaves a
+lead's own fiche out of the fiches found (brief 16). » Under « Requirements
+satisfied », REQ-201's statement is amended, no longer « unchanged ».
+
+**ETNI-2092**, « Out »: « `afrik_search_patronymes` and REQ-201's
+phonetic-only rule are unchanged; Chukwu stays among the fiches for
+« tchikaya » » becomes « `afrik_search_patronymes` is unchanged: the query
+layer reuses migration 108's `p_exact_elsewhere` switch. REQ-201 as amended
+(brief 16) withholds the sound-only family names beside a family-name lead,
+so Chukwu is no longer returned for « tchikaya ». »
+
+**REQ-125** (**proposed**), appended: « Each lead carries `matchedForm`, the
+form that scored, beside its filed name; a client names that form. » New GWT:
+given « jarra », which reaches Diarra only through its recorded spelling Jara,
+when the search offers Diarra as a lead, then the lead's `matchedForm` is
+Jara and the page names Jara, with the line « Jara est une écriture du nom
+Diarra. ». **DEC-075** (**proposed**), a further condition while the question
+below is open: « No family name is offered as a lead while a fiche the search
+found writes the typed word in its own text » (decision 13).
 
 **DEC-075, a question for the operator** (**open**): a spelling a fiche
 records in its text — « Sanoh » among the Kuranko clans, and in the source of

@@ -5233,3 +5233,32 @@ a.ea-fiche-card:focus-visible { outline: none; box-shadow: var(--afh-ring-focus)
 .ea-q-frame-page { background: var(--afh-bg-warm); padding: 0; }
 .ds-mobile .ea-q-sheet { padding-inline: 12px; }
 .ds-mobile .ea-q-sheet-bar { right: 12px; }
+
+/* ============================================================
+   Brief 14 (2026-10-18): the Atlas page, « Les noms d'Afrique ».
+   The search component of brief 13, the 54 countries in one row
+   that scrolls sideways, the searched names as next-step cards,
+   the lists with their counts. New selectors only, tokens only.
+   ============================================================ */
+.ea-atlas { display: flex; flex-direction: column; gap: var(--afh-space-6xl); padding-top: var(--afh-space-5xl); padding-bottom: var(--afh-space-7xl); }
+@media (min-width: 768px) { .ea-atlas { padding-top: var(--afh-space-7xl); } }
+.ea-atlas-head .ed-h1 { margin-bottom: var(--afh-space-lg); }
+.ea-atlas-lead { margin: 0; max-width: var(--afh-measure-prose); font-size: var(--afh-text-body); line-height: 1.55; color: var(--afh-text-soft); }
+.ea-atlas-block { display: flex; flex-direction: column; gap: var(--afh-space-lg); }
+.ea-atlas-countries {
+  display: flex; gap: var(--afh-space-md); margin: 0; padding: 0 0 var(--afh-space-xs); list-style: none;
+  overflow-x: auto; scrollbar-width: none;
+}
+.ea-atlas-countries::-webkit-scrollbar { display: none; }
+.ea-atlas-countries li { flex: none; }
+.ea-atlas-countries .home-hero-seed { white-space: nowrap; }
+@media (min-width: 1200px) { .ea-atlas-cards { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.ea-atlas-browse { display: grid; grid-template-columns: minmax(0, 1fr); margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--afh-border); }
+@media (min-width: 1200px) { .ea-atlas-browse { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--afh-space-6xl); } }
+.ea-atlas-line {
+  display: flex; align-items: center; gap: var(--afh-space-lg); min-height: 56px;
+  border-bottom: 1px solid var(--afh-border); color: var(--afh-text); font-weight: 600;
+}
+.ea-atlas-line-name { flex: 1 1 auto; }
+.ea-atlas-line-count { font-family: var(--afh-font-mono); font-size: var(--afh-text-caption); font-weight: 500; color: var(--afh-text-soft); }
+.ea-atlas-line svg { width: 18px; height: 18px; flex: none; color: var(--accent-ink); }

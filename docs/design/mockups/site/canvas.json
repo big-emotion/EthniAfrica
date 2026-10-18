@@ -730,10 +730,37 @@
       "h": 1293,
       "expand": "fill",
       "title": "État · « tchikaya », un nom qui s’écrit presque de la même façon · 1440"
+    },
+    "atlas-names-430.dc.html": {
+      "x": 14632,
+      "y": 0,
+      "w": 430,
+      "h": 3150,
+      "expand": "fill",
+      "title": "Page Atlas : Les noms d’Afrique · 430"
+    },
+    "atlas-names-768.dc.html": {
+      "x": 15142,
+      "y": 0,
+      "w": 768,
+      "h": 2100,
+      "expand": "fill",
+      "title": "Page Atlas : Les noms d’Afrique · 768"
+    },
+    "atlas-names-1440.dc.html": {
+      "x": 15990,
+      "y": 0,
+      "w": 1440,
+      "h": 1650,
+      "expand": "fill",
+      "title": "Page Atlas : Les noms d’Afrique · 1440"
     }
   },
   "order": [
     "Main.dc.html",
+    "atlas-names-430.dc.html",
+    "atlas-names-768.dc.html",
+    "atlas-names-1440.dc.html",
     "search-peul-430.dc.html",
     "search-peul-768.dc.html",
     "search-peul-1440.dc.html",
@@ -864,6 +891,13 @@
       "x": 11434,
       "y": -300,
       "text": "Groupe 4 · nom, lieu, glossaire, à propos, notre démarche, accueil",
+      "kind": "title1",
+      "maxW": 2798
+    },
+    "g5": {
+      "x": 14632,
+      "y": -300,
+      "text": "Groupe 0 · Atlas",
       "kind": "title1",
       "maxW": 2798
     }

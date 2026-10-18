@@ -257,6 +257,25 @@ describe("NameClosingBand — silences, conviction, invitation", () => {
       screen.queryByRole("button", { name: "Signaler une erreur" })
     ).toBeNull();
   });
+
+  // The accent tint stays light at night while --afh-text turns light: the
+  // report button sat at 1.12:1 there. Text on the tint takes the ink
+  // color.css keeps dark in both themes.
+  // @req REQ-198
+  it("writes the report button in the ink that stays readable on its tint at night", () => {
+    render(
+      <NameClosingBand
+        silences={["Une absence."]}
+        contributionTarget={target}
+        language="fr"
+      />
+    );
+
+    const report = screen.getByRole("button", { name: "Signaler une erreur" });
+    expect(report).toHaveClass("bg-[color:var(--accent-tint)]");
+    expect(report).toHaveClass("text-[color:var(--accent-foreground)]");
+    expect(report).not.toHaveClass("text-afh-text");
+  });
 });
 
 describe("NameNextStep — the next names", () => {

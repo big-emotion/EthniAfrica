@@ -3,7 +3,7 @@ import { join } from "node:path";
 
 import { render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
+import { describe, expect, it, onTestFinished, vi } from "vitest";
 
 import type { SearchCompanionsData } from "@/api/v2/schemas/searchCompanions";
 import { SearchFeed } from "@/components/search/SearchFeed";
@@ -149,6 +149,65 @@ describe("SearchFeed", () => {
     });
     expect(actions).toHaveLength(1);
     expect(actions[0].closest('[data-feed-block="verdict"]')).not.toBeNull();
+    expect(actions[0]).toHaveAttribute("data-flag-kind", "contribution");
+  });
+
+  // The verdict's button is the confessing page's one call to action, so what
+  // it opens matters as much as where it sits: a form about the searched name,
+  // without the « Nous nous sommes trompés ? » that brief 12 part A removed.
+  // @req REQ-180
+  it("opens the contribution form on the searched name from the verdict", async () => {
+    // The form's proof of work asks the API for a challenge on mount; refused
+    // here, it fails quietly instead of reaching for a server on :3000.
+    vi.stubGlobal("fetch", vi.fn().mockResolvedValue({ ok: false }));
+    onTestFinished(() => {
+      vi.unstubAllGlobals();
+    });
+    render(
+      <SearchFeed
+        query="voundou"
+        language="fr"
+        state="unknown"
+        results={[]}
+        subjects={[]}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+
+    await userEvent.click(
+      screen.getByRole("button", { name: "Proposer une source" })
+    );
+
+    const dialog = await screen.findByRole("dialog");
+    expect(within(dialog).getByText(/voundou/)).toBeInTheDocument();
+    expect(within(dialog).queryByText("Nous nous sommes trompés ?")).toBeNull();
+  });
+
+  // The night theme keeps the ocre tint light and turns --afh-text light too:
+  // that pair measured 1.12:1. Text on an accent fill takes
+  // --accent-foreground, the dark ink color.css keeps dark in both themes
+  // (colorTokens.test.ts proves it clears AA on the tint by day and night).
+  // @req REQ-180
+  it("writes the verdict's action in the ink that stays readable on its tint at night", () => {
+    render(
+      <SearchFeed
+        query="voundou"
+        language="fr"
+        state="unknown"
+        results={[]}
+        subjects={[]}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+
+    const action = screen.getByRole("button", { name: "Proposer une source" });
+    expect(action).toHaveClass("bg-[color:var(--accent-tint)]");
+    expect(action).toHaveClass("text-[color:var(--accent-foreground)]");
+    expect(action).toHaveClass("hover:text-[color:var(--accent-foreground)]");
+    expect(action).not.toHaveClass("text-afh-text");
+    expect(action).not.toHaveClass("hover:text-afh-text");
   });
 
   // The accent tint stays light at night while the page's body ink turns
