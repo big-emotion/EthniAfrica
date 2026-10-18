@@ -3,7 +3,7 @@
   "nameFr": "Mandé",
   "nameEn": "Mande",
   "nameHistory": {
-    "summary": "Le nom mandé désigne une famille de langues d'Afrique de l'Ouest, comme le bambara, le maninka ou le soninké. C'est un nom de savants, tiré de Manden, le nom d'un pays du haut Niger ; on a aussi dit mandingue. Les sources que nous avons lues n'expliquent pas le sens premier du nom Manden.",
+    "summary": "Le nom mandé désigne une famille de langues d'Afrique de l'Ouest, comme le bambara, le maninka ou le soninké. C'est un nom de savants, tiré de Manden, le nom d'un pays du haut Niger dont les habitants se nomment Mandenka ; on a aussi dit mandingue. Une seule explication du nom Manden nous est connue, celle que rapporte Camara Laye ; nous la présentons plus bas.",
     "names": [
       {
         "nameText": "Mandé",
@@ -126,7 +126,7 @@
       {
         "nameText": "Manden",
         "nameStatus": "current",
-        "selfGiven": true,
+        "selfGiven": false,
         "languageOfOrigin": "man",
         "namedBy": null,
         "shortLine": "Le nom d'un pays du haut Niger, entre le Mali et la Guinée, d'où est parti l'empire du Mali.",
@@ -139,7 +139,7 @@
               "label": "Usage décrit par l'auteur"
             },
             "era": "modern",
-            "statement": "Le nom Manden, ou Mande, désigne un pays du haut bassin du Niger, entre Kangaba et Siguiri, dans les actuels Mali et Guinée. Djibril Tamsir Niane en fait le noyau d'origine des Maninka. Les sources que nous avons lues n'expliquent pas le sens premier du nom.",
+            "statement": "Le nom Manden, ou Mande, désigne un pays du haut bassin du Niger, entre Kangaba et Siguiri, dans les actuels Mali et Guinée. Djibril Tamsir Niane en fait le noyau d'origine des Maninka.",
             "aspect": "meaning",
             "sources": [
               {
@@ -151,6 +151,28 @@
                 "source_kind": "intergovernmental",
                 "notes": "UNESCO, lu dans l'exemplaire numérisé du volume. L'auteur suit les traditions orales des écoles de griots du Manden à côté des auteurs arabes.",
                 "page": "p. 141 et p. 151, note 24"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1978,
+              "to": 1978,
+              "label": "Proposée en 1978"
+            },
+            "era": "modern",
+            "statement": "Le nom Manden viendrait de man, « lamantin », et den, « enfant », et voudrait dire « l'enfant du lamantin », selon une note de Camara Laye dans Le Maître de la parole, le livre où il transcrit le récit du griot Babou Condé. C'est la seule explication du sens de ce nom que nous ayons trouvée.",
+            "hypothesisGroup": "origine du nom Manden",
+            "sources": [
+              {
+                "title": "Le Maître de la parole : Kouma Lafôlô Kouma",
+                "author": "Camara Laye",
+                "year": 1978,
+                "url": null,
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Plon, 1978. Transcription d'un récit du griot Babou Condé ; la note de la p. 130 donne l'explication de Manden par man, « lamantin », et den, « enfant ». Ouvrage sous droits, non reproduit.",
+                "page": "p. 130, note 1"
               }
             ]
           },
@@ -250,6 +272,60 @@
         ]
       },
       {
+        "nameText": "Mandenka",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "man",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les gens du Manden ; la famille de langues tient son nom de leur pays.",
+        "periodLabel": "Écrit dès 1854",
+        "accounts": [
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "Usage décrit en 1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Mandenka désigne, chez l'historien Djibril Tamsir Niane, le peuple du Manden ; il le traduit par « mandingue ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume. L'auteur suit les traditions orales des écoles de griots du Manden à côté des auteurs arabes.",
+                "page": "p. 141"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Mandenka est noté Mandénga par le missionnaire Sigismund Koelle, à Freetown : ses informateurs, des Africains libérés de la traite, disent Mánde pour leur pays et Mandénga pour ceux qui en viennent. Koelle précise que la finale -nga, souvent prononcée -nka, est une terminaison qui suit les noms propres. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana, jeu de données Lexibank",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "nameText": "Mandingue",
         "nameStatus": "current",
         "selfGiven": false,
@@ -310,7 +386,7 @@
       "followUp": "Que veut dire le nom Manden ?"
     },
     "decolonialHeader": {
-      "selfAppellation": null,
+      "selfAppellation": "Mandenka",
       "contemporaryUsage": "Le mandé est une famille linguistique de l'Afrique de l'Ouest. Glottolog en recense soixante-quinze langues dans son édition 5.3, réparties en deux branches, orientale et occidentale. Joseph Greenberg la classe en 1963 comme branche du Niger-Congo ; Gerrit Dimmendaal et Tom Güldemann contestent cette inclusion, au motif que l'absence de classes nominales et le vocabulaire fondamental divergent. La famille inclut le bambara, le maninka, le mandinka, le dioula, le soninké, le soso, le kpelle, le mende et le dan.\n\nDans la classification de Vydrin (2009, p. 107), le mandingue est un groupe de la famille mandé. Il comprend notamment le bambara, le maninka, le mandinka et plusieurs variétés de dioula ; le soninké, le soso et le kpelle relèvent d'autres groupes de cette famille. Cette classification des langues ne constitue pas une liste d'identités imposées à leurs locuteurs.\n\nLes noms ont aussi des usages historiques et identitaires. Donaldson (2019), à partir d'enquêtes menées entre 2012 et 2017, décrit des enseignants et des élèves du mouvement n'ko qui construisent des liens entre parlers mandingues, notamment à Bamako et à Bobo-Dioulasso. Leur démarche ne représente pas tous les locuteurs mandingues, ni l'ensemble des locuteurs de la famille mandé. Une parenté linguistique ne suffit ni à attribuer une identité commune, ni à invalider une appartenance revendiquée.",
       "historicalAppellations": [
         "Mandingue",
