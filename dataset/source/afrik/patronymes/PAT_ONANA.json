@@ -82,5 +82,66 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Onana », « Ewondo », « Cameroun », « patronyme », « anthroponymie », « étymologie », « clan », « transmission », « alliance », « caste », « homonyme » et « nécrologie », les thèses sur l'onomastique béti-ewondo et les catalogues généalogiques, ainsi que la page Forebears dédiée n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Onana est un nom d'homme ewondo, porté au Cameroun. Les sources lues ne disent pas ce qu'il veut dire : on ne sait pas avec certitude d'où il vient. Sa plus ancienne trace connue du projet est un dialogue en ewondo publié en 1919.",
+    "names": [
+      {
+        "nameText": "Onana",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom d'homme ewondo du Cameroun, écrit dès 1919 ; on ne sait pas ce qu'il veut dire.",
+        "periodLabel": "Écrit dès 1919 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1950,
+              "to": 1950,
+              "label": "Publié en 1950"
+            },
+            "era": "colonial",
+            "statement": "Le nom Onana sert d'exemple de nom d'homme dans une grammaire de l'ewondo publiée en 1950 : un exercice demande comment s'appelle un chef, et répond « Il se nomme Onana ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Petite grammaire ewondo avec exercices appropriés",
+                "author": "Fr. Pichon",
+                "year": 1950,
+                "url": "https://archive.org/details/petite_grammaire_ewondo_avec_exercices_appropries_par_le_fr_pichon_1950",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 19",
+                "notes": "Copie non officielle : numérisation déposée sur Internet Archive par un particulier en 2026 ; le titre et la date sont ceux de ce dépôt. Page lue sur l'image le 18 octobre 2026. Page 19, exercice de thème : « Qui est là ? Un chef est ici. Comment s'appelle-t-il ? Il se nomme Onana. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "Publié en 1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Onana apparaît par écrit dans un recueil de textes en ewondo publié en 1919 : un dialogue y met en scène un procès entre deux hommes, Abanda et Onana, au sujet d'une femme. C'est la plus ancienne trace de ce nom que le projet connaît ; le nom est plus ancien qu'elle.",
+            "formAsWritten": "Onana",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Jaunde-Texte von Karl Atangana und Paul Messi, nebst experimentalphonetischen Untersuchungen über die Tonhöhen im Jaunde und einer Einführung in die Jaundesprache",
+                "author": "Karl Atangana et Paul Messi, textes édités par Martin Heepe",
+                "year": 1919,
+                "url": "https://archive.org/details/jaundetextevonka00heepuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 26",
+                "notes": "Hambourg, L. Friederichsen, 1919 (Abhandlungen des Hamburgischen Kolonialinstituts, 24) ; exemplaire numérisé d'Internet Archive (université de Toronto), page lue sur l'image le 18 octobre 2026. Page 26, « Jaunde-Gespräche », dialogue n° 3 : en ewondo « Etome somene mininga ya abe Abanda bane Onana », traduit « Gerichtsverhandlung zwischen Abanda und Onana wegen einer Frau » (procès entre Abanda et Onana au sujet d'une femme) ; première réplique : « Wer kommt dort? [...] ist das nicht Onana? ». Le dialogue continue jusqu'à la page 32."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
