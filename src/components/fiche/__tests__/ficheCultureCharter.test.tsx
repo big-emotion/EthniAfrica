@@ -45,13 +45,20 @@ function tileLabelled(label: string): HTMLElement {
 describe("fiche culture charter", () => {
   afterEach(cleanup);
 
+  // Brief 10 §2 (REQ-153 as amended 2026-10-17): the first tile stays in
+  // view, the six others sit behind one fold, each still a closed tile.
   // @req REQ-097 REQ-153
-  it("lays every rubric out as a closed tile on one grid", () => {
+  it("lays every rubric out as a closed tile, the first in view and the rest folded", () => {
     const { container } = render(
       <FicheTileChapter tiles={ovamboTiles()} language="fr" />
     );
-    const grid = container.querySelector(".afh-tiles")!;
-    expect(grid.children).toHaveLength(7);
+    const [first, folded] = Array.from(
+      container.querySelectorAll(".afh-tiles")
+    );
+    expect(first.children).toHaveLength(1);
+    expect(first.closest("details.ea-fold")).toBeNull();
+    expect(folded.children).toHaveLength(6);
+    expect(folded.closest("details.ea-fold")).not.toBeNull();
     expect(container.querySelectorAll("details[open]")).toHaveLength(0);
     expect(
       tileLabelled("Rites").querySelector("[data-closed-fact]")

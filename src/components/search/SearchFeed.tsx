@@ -22,6 +22,8 @@ import {
   type FeedPlateItem,
 } from "@/components/search/feed/PlatesBlock";
 import { QuizBlock } from "@/components/search/feed/QuizBlock";
+import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
+import { SearchFeedContributionAction } from "@/components/search/feed/SearchFeedContributionAction";
 import { SearchFeedLayout } from "@/components/search/feed/SearchFeedLayout";
 import { ShortsBlock } from "@/components/search/feed/ShortsBlock";
 import { OriginBlock } from "@/components/search/answer/OriginBlock";
@@ -47,7 +49,7 @@ import { normalizeString } from "@/lib/normalize";
 import { ANSWER_BLOCKS, type FeedBlockId } from "@/lib/search/resultGrammar";
 import type { AnswerKind, WordAnswer } from "@/lib/search/answer";
 import type { NameAnswer } from "@/lib/search/nameAnswer";
-import type { NamingPresentationForm } from "@/lib/search/naming";
+import { formKey, type NamingPresentationForm } from "@/lib/search/naming";
 import { planAnswerSubjects } from "@/lib/search/answerSubjectPlan";
 import { buildRelationSearchHref } from "@/lib/search/relationSearch";
 import { resolveNameOpening } from "@/lib/search/resolveNameOpening";
@@ -238,6 +240,18 @@ function formDetail(
   return text ? { text, evidence: form.evidence[0] } : undefined;
 }
 
+/**
+ * A card's line in the « Fiches » lens: the corpus line of the form that bears
+ * the card's name (brief 12). With no such form, or no line, the card shows
+ * none rather than a generic one.
+ */
+function ficheOwnLine(entry: SearchResult, name: string): string | undefined {
+  const key = formKey(name);
+  return entry.naming?.presentation.forms.find(
+    (form) => formKey(form.form) === key
+  )?.shortLine;
+}
+
 // @req REQ-178
 // @req REQ-180
 export function SearchFeed({
@@ -339,6 +353,22 @@ export function SearchFeed({
         }
   );
   const ficheRows = presentation?.fiches?.items ?? derivedFicheRows;
+  // The « Fiches » lens sets the fiches that answer to the searched name apart
+  // from the ones found around it (brief 12). Subjects arrive as their own
+  // objects, so they are matched by type and id.
+  const subjectKeys = new Set(subjects.map(({ type, id }) => `${type}:${id}`));
+  const answersToName = ({ type, id }: { type: string; id: string }) =>
+    subjectKeys.has(`${type}:${id}`);
+  const lensFicheRows = derivedFicheRows.map((row, index): FeedFicheItem => {
+    const entry = ficheEntries[index];
+    return entry.type === "peopleGroup"
+      ? { ...row, onName: entry.members.some(answersToName) }
+      : {
+          ...row,
+          meta: ficheOwnLine(entry as SearchResult, row.name),
+          onName: answersToName(entry),
+        };
+  });
 
   // A relation browse ("the peoples of the Krou family") only replaces the
   // name-search movement when there is no subject to answer — a query that
@@ -395,6 +425,15 @@ export function SearchFeed({
     subjects.length === 0 &&
     opening.entries.length > 0 &&
     (state === "unknown" || state === "typo");
+  // The page that admits it does not know the name asks for it once, in its
+  // verdict, and owes no card after it (brief 12, part A, approved
+  // 2026-10-17). A word page shares the state but answers.
+  const confesses =
+    state === "unknown" &&
+    !wordPage &&
+    !answeredByWord &&
+    !answeredByReview &&
+    !presentation?.answer;
   const verdict =
     presentation?.answer?.verdict ??
     (answeredByWord
@@ -473,6 +512,7 @@ export function SearchFeed({
       answers: answered.length > 0,
       appellations: forms.length > 0,
       fiches: ficheRows.length > 0,
+      shorts: hasWordPiece,
     },
     { relatedOnly, wordPage }
   );
@@ -715,6 +755,20 @@ export function SearchFeed({
               presentation?.answer?.tone ??
               (state === "typo" || state === "unknown" ? "plain" : "answer")
             }
+            action={
+              confesses ? (
+                <SearchFeedContributionAction
+                  language={language}
+                  target={contributionTarget}
+                  label={answerCopy.invitationAction}
+                  preferredKind="contribution"
+                  variant="outline"
+                  // Board search-unknown-430 (`.ea-owed-action`): ink text at
+                  // the button's own medium weight, on the accent tint.
+                  className="min-h-11 border-[color:var(--accent)] bg-[color:var(--accent-tint)] py-0 text-afh-text hover:bg-[color:var(--accent-tint)] hover:text-afh-text hover:brightness-95"
+                />
+              ) : undefined
+            }
           />
         );
       case "appellations":
@@ -829,6 +883,20 @@ export function SearchFeed({
           />
         );
       case "owed":
+        // The verdict holds the page's one invitation: the closing keeps the
+        // silence and the conviction, and no card speaks of names not shown.
+        if (confesses) {
+          return (
+            <SearchFeedBlock id="owed" zone="closing">
+              <NameClosingBand
+                silences={[
+                  nameClosingCopy[language].silence.unknown(query.trim()),
+                ]}
+                language={language}
+              />
+            </SearchFeedBlock>
+          );
+        }
         return (
           <>
             {state === "unknown" ? (
@@ -1046,7 +1114,16 @@ export function SearchFeed({
       ),
       stories: renderBlock("plates"),
       quiz: renderBlock("quiz"),
-      fiches: renderBlock("fiches"),
+      fiches: presentation?.fiches?.items ? (
+        renderBlock("fiches")
+      ) : (
+        <FichesBlock
+          lens={isRelationBrowse ? "ungrouped" : "grouped"}
+          items={lensFicheRows}
+          reviewed={Boolean(presentation)}
+          language={language}
+        />
+      ),
     };
     return (
       <SearchFeedLayout

@@ -114,5 +114,189 @@
         "source_kind": "press"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Annobonais désigne les habitants de l'île d'Annobón, en Guinée équatoriale, et ceux qui en sont venus. Dans leur langue, le fa d'Ambô, ils nomment leur île Ambô et disent povu d'Ambô pour « le peuple d'Annobón ». Le nom Annobonais vient de celui de l'île, Ano Bom en portugais ; nous présentons plus bas ce que les sources disent de ces noms.",
+    "names": [
+      {
+        "nameText": "Ambô",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "fab",
+        "namedBy": null,
+        "shortLine": "Le nom de l'île dans la langue de ses habitants, qui disent povu d'Ambô, « le peuple d'Annobón ».",
+        "usedIn": ["fab"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ambô est celui que les Annobonais donnent à leur île dans leur langue : ils appellent cette langue fa d'Ambô, « la parole d'Ambô », et disent povu d'Ambô pour « le peuple d'Annobón », selon la linguiste Marike Post. On ne sait pas avec certitude depuis quand ce nom est en usage.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Survey chapter: Fa d'Ambô – APiCS Online (Atlas of Pidgin and Creole Language Structures)",
+                "author": "Marike Post",
+                "year": 2013,
+                "url": "https://apics-online.info/surveys/38",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Atlas of Pidgin and Creole Language Structures Online, lu le 18 octobre 2026. « autoglossonym: Fa d'Ambô » ; exemples « povu d'Ambô » (« the people of Annobón ») et « fa(la) » (« talk »)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Annobonais",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom tiré de celui de l'île, Annobón ; écrit en espagnol dès 1907.",
+        "usedIn": ["fra", "spa", "eng"],
+        "periodLabel": "Écrit dès 1907 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Annobonais a pour équivalents l'espagnol Annobonense et l'anglais Annobonese, qui nomment aussi la langue de l'île, selon la linguiste Marike Post.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Survey chapter: Fa d'Ambô – APiCS Online (Atlas of Pidgin and Creole Language Structures)",
+                "author": "Marike Post",
+                "year": 2013,
+                "url": "https://apics-online.info/surveys/38",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Atlas of Pidgin and Creole Language Structures Online, lu le 18 octobre 2026. « autoglossonym: Fa d'Ambô » ; exemples « povu d'Ambô » (« the people of Annobón ») et « fa(la) » (« talk »)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Annobonais vient de celui de l'île, Annobón, appelée Ano Bom en portugais, selon l'historien Arlindo Caldeira. Ano Bom se compose de ano, « année », et bom, « bon » ; au Brésil, ano-bom désigne l'année qui commence, selon le dictionnaire Priberam. Les sources que nous avons lues ne disent pas pourquoi l'île a reçu ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Ano Bom island, Encyclopaedia of Portuguese Expansion",
+                "author": "Arlindo Caldeira",
+                "year": 2009,
+                "url": "https://eve.fcsh.unl.pt/index.php/en/places/ano-bom-island",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Encyclopédie virtuelle de l'expansion portugaise, NOVA FCSH, Lisbonne, article de 2009 lu en anglais et en portugais le 18 octobre 2026."
+              },
+              {
+                "title": "Dicionário Priberam da Língua Portuguesa, article « ano-bom »",
+                "author": "Priberam",
+                "year": null,
+                "url": "https://dicionario.priberam.org/ano-bom",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire de la langue portugaise en ligne, article lu le 18 octobre 2026. Les deux sens sont marqués « Brasil » : l'année qui commence, et la nuit du 31 décembre au 1er janvier."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Annobonais apparaît sous sa forme espagnole, Annoboneses, chez Mgr Armengol Coll, vicaire apostolique de Fernando Póo : il range les peuples de son vicariat en quatre groupes, les Bubis, les Annoboneses, les Bengas et les Pamues. C'est la plus ancienne trace de ce nom que le projet connaît. Les habitants de l'île y vivaient depuis le XVIe siècle.",
+            "formAsWritten": "Annoboneses",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Los Indígenas de Fernando-Póo, Anthropos, vol. 2",
+                "author": "Armengol Coll",
+                "year": 1907,
+                "url": "https://archive.org/details/anthropos_1907_2",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Article de la revue Anthropos, 1907, signé « Mgre. Armengo Coll, Vicario Apostólico de Fernando-Póo ». Lu dans la numérisation d'Internet Archive ; numéro de page lu sur l'image.",
+                "page": "p. 387"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1777,
+              "to": 1778,
+              "label": "1777-1778"
+            },
+            "statement": "On parle encore de l'île d'Ano Bom quand, par le traité de San Ildefonso de 1777, confirmé par celui du Pardo le 11 mars 1778, le Portugal cède ses droits sur l'île à l'Espagne, avec Fernando Póo. La résistance de ses habitants, qui se gouvernent eux-mêmes depuis le début du XVIIIe siècle, rend ce transfert très difficile, selon Arlindo Caldeira.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Ano Bom island, Encyclopaedia of Portuguese Expansion",
+                "author": "Arlindo Caldeira",
+                "year": 2009,
+                "url": "https://eve.fcsh.unl.pt/index.php/en/places/ano-bom-island",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Encyclopédie virtuelle de l'expansion portugaise, NOVA FCSH, Lisbonne, article de 2009 lu en anglais et en portugais le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1543,
+              "to": 1565,
+              "label": "De 1543 à 1565"
+            },
+            "era": "colonial",
+            "statement": "Le nom Annobonais n'apparaît pas encore dans les sources que nous avons lues quand un premier groupe d'esclaves africains est amené sur l'île pour la cultiver. Ils étaient sans doute passés par São Tomé, où ils avaient appris le créole dont vient le fa d'Ambô, selon Arlindo Caldeira.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Ano Bom island, Encyclopaedia of Portuguese Expansion",
+                "author": "Arlindo Caldeira",
+                "year": 2009,
+                "url": "https://eve.fcsh.unl.pt/index.php/en/places/ano-bom-island",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Encyclopédie virtuelle de l'expansion portugaise, NOVA FCSH, Lisbonne, article de 2009 lu en anglais et en portugais le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1503,
+              "to": 1503,
+              "label": "16 octobre 1503"
+            },
+            "statement": "On parle alors de l'île d'Ano Bom : le roi Manuel Ier en confie la capitainerie à Jorge de Melo, alors que l'île est encore déserte, selon l'historien Arlindo Caldeira. Des cartes du début du XVIe siècle la nomment aussi « île de Diogo Cão ».",
+            "before": true,
+            "sources": [
+              {
+                "title": "Ano Bom island, Encyclopaedia of Portuguese Expansion",
+                "author": "Arlindo Caldeira",
+                "year": 2009,
+                "url": "https://eve.fcsh.unl.pt/index.php/en/places/ano-bom-island",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Encyclopédie virtuelle de l'expansion portugaise, NOVA FCSH, Lisbonne, article de 2009 lu en anglais et en portugais le 18 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

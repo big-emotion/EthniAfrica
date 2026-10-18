@@ -9,6 +9,8 @@ import { FamilyParchment } from "@/components/family/FamilyParchment";
 import { FamilyHistorySection } from "@/components/family/FamilyHistorySection";
 import { FamilyDecolonialHeader } from "@/components/family/FamilyDecolonialHeader";
 import { FamilyLinguisticTraits } from "@/components/family/FamilyLinguisticTraits";
+import { FicheStoryLink } from "@/components/fiche/FicheStoryLink";
+import { nameStoryLink } from "@/lib/search/nameClosing";
 import type { Language } from "@/types/shared";
 import type { ProvenanceCensus } from "@/api/v2/schemas/confidence";
 import {
@@ -125,6 +127,22 @@ export function LanguageFamilyDetailViewV2({
       footprintProvenance={footprintProvenance}
       provenance={provenance}
       onward={onward}
+      storyLink={
+        <FicheStoryLink
+          story={nameStoryLink(
+            {
+              type: "languageFamily",
+              id: family.id,
+              name: family.nameFr,
+              content: family.content,
+            },
+            history,
+            language
+          )}
+          from="language-family"
+          language={language}
+        />
+      }
       nameSources={
         history ? (
           <NameFicheSourcesBlock
