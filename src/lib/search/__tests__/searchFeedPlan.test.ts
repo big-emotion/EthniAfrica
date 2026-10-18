@@ -23,6 +23,15 @@ describe("search-feed plan", () => {
     expect(plan.closing).toEqual(["owed"]);
   });
 
+  // @req REQ-125
+  it("opens a recorded-term page on its verdict and equal fiche shelf", () => {
+    expect(buildSearchFeedPlan("recorded", { fiches: true })).toEqual({
+      first: ["verdict"],
+      primary: ["fiches"],
+      closing: [],
+    });
+  });
+
   // A search that only widened still answers the name it found: the answer
   // does not change because the companions around it are related, not exact.
   // @req REQ-178
@@ -133,6 +142,32 @@ describe("search-feed plan", () => {
     expect(classifySearchFeed(widened.production)).toBe("widened");
     expect(classifySearchFeed(typo.production)).toBe("typo");
     expect(classifySearchFeed(unknown.production)).toBe("unknown");
+  });
+
+  // @req REQ-125
+  it("classifies counted fiche text as a recorded-term answer", () => {
+    const exact = FEED_CASES.find(({ id }) => id === "mande")!;
+    const [result] = exact.production.search.results;
+
+    expect(
+      classifySearchFeed({
+        ...exact.production,
+        search: {
+          ...exact.production.search,
+          results: [
+            {
+              ...result,
+              recordedIn: [
+                {
+                  fieldPath: "content.organization.clanOrganization",
+                  text: "Les clans Kagbo, Sanoh, Kaloko et Koroma jouent également des rôles importants.",
+                },
+              ],
+            },
+          ],
+        },
+      })
+    ).toBe("recorded");
   });
 
   // A reviewed term a near spelling may have meant is as good a suggestion as a

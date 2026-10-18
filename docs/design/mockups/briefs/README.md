@@ -55,7 +55,7 @@ once the previous one is approved and recorded, because they share `Main` and
 | --- | --- | --- | --- |
 | 13 | [`13-search-entry.md`](13-search-entry.md) | Pass 4: one search component, the header search full screen on mobile, the search page | `Main`; three new boards (`search-entry-430`, `-768`, `-1440`) (**boards approved 2026-10-18**). Prompt: [`claude-design-prompt-13.md`](claude-design-prompt-13.md) |
 | 14 | [`14-atlas-names-page.md`](14-atlas-names-page.md) | Pass 5: the Atlas page becomes « Les noms d'Afrique » | three new boards (`atlas-names-430`, `-768`, `-1440`) (**boards approved 2026-10-18, recorded**). Prompt: [`claude-design-prompt-14.md`](claude-design-prompt-14.md) |
-| 15 | [`15-result-page-shorter.md`](15-result-page-shorter.md) | Pass 6: the result page tells each account once and opens shorter | `search-peul`, `search-bassa`, `search-congo`, the `search-state-*` boards with a timeline; new `search-state-long-traore-*`; `Main` (**boards approved 2026-10-18**). Prompt: [`claude-design-prompt-15.md`](claude-design-prompt-15.md) |
+| 15 | [`15-result-page-shorter.md`](15-result-page-shorter.md) | Pass 6: the result page tells each account once and opens shorter | `search-peul`, `search-bassa`, `search-congo`, the `search-state-*` boards with a timeline; new `search-state-long-traore-*`; `Main` (**boards approved 2026-10-18, recorded**). Prompt: [`claude-design-prompt-15.md`](claude-design-prompt-15.md) |
 
 Briefs 13 to 15 come from the operator's mobile review of 2026-10-18 and its
 five decisions. They are drawn in that order, after brief 6, one at a time.
@@ -65,6 +65,7 @@ five decisions. They are drawn in that order, after brief 6, one at a time.
 | 16 | [`16-typo-with-related-fiches.md`](16-typo-with-related-fiches.md) | A misspelling, alone or with related fiches (« tchikaya », « konana », « jarra », DEC-075) | three new boards (`search-state-typo-430`, `-768`, `-1440`); `Main` (**approved 2026-10-18 by the operator**) |
 | 17 | [`17-search-chrome-accessibility.md`](17-search-chrome-accessibility.md) | Search page focus rings, « Aller plus loin » as a titled list, 320 px header and 200% zoom | `search-unknown` and `search-state-typo` at 430/768/1440; new `search-unknown-320` and `search-unknown-215`; `Main` (**approved 2026-10-18 by the operator**) |
 | 18 | [`18-related-only-search-results.md`](18-related-only-search-results.md) | Related-only search results and factual fiche titles | new `search-state-related` at 430/768/1440; `search-unknown`, `search-state-typo` and `Main` (**approved 2026-10-18 by the operator**) |
+| 19 | [`19-recorded-search-term.md`](19-recorded-search-term.md) | A recorded spelling answers the search (« sanoh », ETNI-2110) | new `search-state-recorded` boards at 430/768/1440 (**approved 2026-10-18 by the operator**) |
 
 Brief 16 draws the state that DEC-075 (pull request #1835) adds to the result
 page. It is not one of the passes above and was drawn beside them.

@@ -1012,7 +1012,7 @@ const options: swaggerJsdoc.Options = {
         SearchResponseData: {
           type: "object",
           description:
-            "Search result data for one of two exclusive modes. Without `lens`, `results` is the canonical cross-kind ranking for the five mergeable non-quiz kinds: every hit, best first, each row carrying a `kind` discriminator; languages remain a grouped facet, and quiz questions are neither queried nor returned. With `lens=quiz`, only quiz questions are queried and returned, in both `quizzes` and `results`, while every non-quiz array and total is empty or zero. In the main stream, each entity kind is ALSO returned in its own array, already ordered — an exact name match first (accent- and case-insensitive), then ts_rank over the weighted search_vector (migration 043: A = name and autonym, B = exonyms, C/D = prose) OR the accent-insensitive name_unaccent_vector, both matched with a prefix operator on the last word of q (migration 052, REQ-129), multiplied for peoples by a 0.5–1.0 confidence factor. `relevance` is comparable within an array and NOT between arrays: peoples are scored ts_rank × confidence, countries by bare ts_rank, families by a match tier, persons and patronymes by the same prefix/unaccent/trigram ranking as peoples but with no confidence factor (migration 065, REQ-126; migration 066, REQ-135 — patronymes additionally fold in a dmetaphone phonetic match, withheld when the query has an exact answer: migration 108, REQ-201), languages by the same prefix/unaccent ranking with no confidence factor and an exact-match bonus that also fires on the ISO 639-3 id (migration 068, REQ-136). `normalizedScore` is the magnitude that IS comparable across kinds: migration 069 places each kind's raw relevance inside a band chosen by the match class (exact [0.90,1.00], lexical [0.50,0.90], fallback [0.00,0.50]), and it is what `results` sorts on; languages are exposed as a facet only and are not folded into `results`. A person's link to a studied people is carried by `peopleLinks[].relationLabel` (`membership` | `observation`) and is never confused with that people's own membership.",
+            "Search result data for one of two exclusive modes. Without `lens`, `results` is the canonical cross-kind ranking for the five mergeable non-quiz kinds: every hit, best first, each row carrying a `kind` discriminator; languages remain a grouped facet, and quiz questions are neither queried nor returned. With `lens=quiz`, only quiz questions are queried and returned, in both `quizzes` and `results`, while every non-quiz array and total is empty or zero. In the main stream, each entity kind is ALSO returned in its own array, already ordered — an exact name match first (accent- and case-insensitive), then ts_rank over the weighted search_vector (migration 043: A = name and autonym, B = exonyms, C/D = prose) OR the accent-insensitive name_unaccent_vector, both matched with a prefix operator on the last word of q (migration 052, REQ-129), multiplied for peoples by a 0.5–1.0 confidence factor. `relevance` is comparable within an array and NOT between arrays: peoples are scored ts_rank × confidence, countries by bare ts_rank, families by a match tier, persons and patronymes by the same prefix/unaccent/trigram ranking as peoples but with no confidence factor (migration 065, REQ-126; migration 066, REQ-135 — patronymes additionally fold in a dmetaphone phonetic match, withheld when the query has an exact answer: migration 108, REQ-201), languages by the same prefix/unaccent ranking with no confidence factor and an exact-match bonus that also fires on the ISO 639-3 id (migration 068, REQ-136). `normalizedScore` is the magnitude that IS comparable across kinds: migration 069 places each kind's raw relevance inside a band chosen by the match class (exact [0.90,1.00], lexical [0.50,0.90], fallback [0.00,0.50]), and it is what `results` sorts on; languages are exposed as a facet only and are not folded into `results`. A result hit may carry `recordedIn`, field paths and their text where its fiche writes the query as a whole word; source notes do not count. A person's link to a studied people is carried by `peopleLinks[].relationLabel` (`membership` | `observation`) and is never confused with that people's own membership.",
           properties: {
             peoples: {
               type: "array",
@@ -1054,7 +1054,7 @@ const options: swaggerJsdoc.Options = {
               type: "array",
               items: { $ref: "#/components/schemas/SearchHitV2" },
               description:
-                "Canonical page for the selected mode, ordered on normalizedScore descending, ties broken on the name collated in French then on the id. Without `lens`, it merges the main stream and excludes quiz questions; with `lens=quiz`, it contains only quiz questions.",
+                "Canonical page for the selected mode, ordered on normalizedScore descending, ties broken on the name collated in French then on the id. A hit carries optional recordedIn field paths and text when its fiche writes the query as a whole word; source notes are excluded. Without `lens`, it merges the main stream and excludes quiz questions; with `lens=quiz`, it contains only quiz questions.",
             },
             languages: {
               type: "array",
@@ -1477,6 +1477,25 @@ const options: swaggerJsdoc.Options = {
               type: ["string", "null"],
               description:
                 "Match excerpt where the kind provides one; matched terms are wrapped in [[ ]].",
+            },
+            recordedIn: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: {
+                  fieldPath: {
+                    type: "string",
+                    description: "Path in the fiche's counted content fields.",
+                  },
+                  text: {
+                    type: "string",
+                    description: "Text value of that field in the fiche.",
+                  },
+                },
+                required: ["fieldPath", "text"],
+              },
+              description:
+                "Optional field paths and their text where the fiche records the query as a whole word. Names, lists and prose count; sources[].notes does not.",
             },
           },
           required: ["kind", "id", "name", "normalizedScore", "snippet"],

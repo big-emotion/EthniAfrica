@@ -62,6 +62,7 @@ export type FeedZone = (typeof FEED_ZONES)[number];
 // @req REQ-180
 export const SEARCH_RESULT_STATES = [
   "exact",
+  "recorded",
   "widened",
   "typo",
   "unknown",

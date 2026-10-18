@@ -73,6 +73,7 @@ describe("search-result feed grammar", () => {
     expect(FEED_ZONES).toEqual(["first", "primary", "closing"]);
     expect(SEARCH_RESULT_STATES).toEqual([
       "exact",
+      "recorded",
       "widened",
       "typo",
       "unknown",

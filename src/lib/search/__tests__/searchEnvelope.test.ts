@@ -123,6 +123,40 @@ describe("mapSearchEnvelope — English names (ETNI-1857)", () => {
 });
 
 describe("mapSearchEnvelope", () => {
+  // @req REQ-125
+  it("carries recorded field paths onto the page's result model", () => {
+    const [people] = mapSearchEnvelope({
+      data: {
+        peoples: [
+          {
+            id: "PPL_KURANKO",
+            nameMain: "Kuranko",
+            content: {},
+          },
+        ],
+        results: [
+          {
+            kind: "people",
+            id: "PPL_KURANKO",
+            recordedIn: [
+              {
+                fieldPath: "content.organization.clanOrganization",
+                text: "Les clans Kagbo, Sanoh, Kaloko et Koroma jouent également des rôles importants.",
+              },
+            ],
+          },
+        ],
+      },
+    });
+
+    expect(people.recordedIn).toEqual([
+      {
+        fieldPath: "content.organization.clanOrganization",
+        text: "Les clans Kagbo, Sanoh, Kaloko et Koroma jouent également des rôles importants.",
+      },
+    ]);
+  });
+
   const envelope = {
     data: {
       peoples: [

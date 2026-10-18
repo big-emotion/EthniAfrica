@@ -173,6 +173,7 @@ describe("ftsSearchEntities", () => {
   let languagesPayload: { total: number; rows: unknown[] };
   let leadsPayload: { rows: unknown[] };
   let leadsError: { message: string } | null;
+  let recordedTermsPayload: { rows: unknown[] };
   let personPeoplesRows: Record<string, unknown>[];
 
   beforeEach(() => {
@@ -193,6 +194,7 @@ describe("ftsSearchEntities", () => {
     languagesPayload = { total: 0, rows: [] };
     leadsPayload = { rows: [] };
     leadsError = null;
+    recordedTermsPayload = { rows: [] };
     personPeoplesRows = [];
 
     rpc = vi.fn((fn: string, args: Record<string, unknown> = {}) => {
@@ -229,6 +231,8 @@ describe("ftsSearchEntities", () => {
         return Promise.resolve({ data: languagesPayload, error: null });
       if (fn === "afrik_search_leads")
         return Promise.resolve({ data: leadsPayload, error: leadsError });
+      if (fn === "afrik_search_recorded_term")
+        return Promise.resolve({ data: recordedTermsPayload, error: null });
       throw new Error(`unexpected rpc ${fn}`);
     });
 
@@ -2528,11 +2532,7 @@ describe("ftsSearchEntities", () => {
       expect(result.leads).toEqual([abubakarLead]);
     });
 
-    // « Sanoh » is one of the Kuranko clans, and Sanou's own source note reads
-    // « Notice SANOU / SANOH / SANON ». A spelling a fiche the search found
-    // writes in its text is no misspelling to correct: whether it answers is
-    // DEC-075's open question, so no family name is offered as the spelling
-    // the reader meant, and the page stays the related-only one (brief 16).
+    // Source notes do not count as exact recorded terms.
     const sanohLeads = [
       {
         kind: "patronyme",
@@ -2543,10 +2543,9 @@ describe("ftsSearchEntities", () => {
       { kind: "patronyme", id: "PAT_SANOU", name: "Sanou", similarity: 0.5 },
     ];
 
-    // The other kinds have no phonetic tier: their lexical band (069) is a
-    // match on their own text.
+    // A source note records provenance, so its occurrence does not count.
     // @req REQ-125
-    it("offers no family name when a fiche of another kind writes the word in its text", async () => {
+    it("does not treat a source note as an exact recorded term", async () => {
       peoplesPayload = {
         total: 1,
         rows: [peopleRow("PPL_KURANKO", "Kuranko", { normalizedScore: 0.62 })],
@@ -2567,14 +2566,128 @@ describe("ftsSearchEntities", () => {
       });
 
       expect(result.total).toBe(3);
-      expect(result.leads).toEqual([]);
+      expect(result.leads).toEqual(sanohLeads);
+      expect(result.recordedTerms).toEqual([]);
       expect(result.nearNames).toEqual([]);
     });
 
-    // A family name's lexical band also holds its phonetic matches (066), so
-    // its score cannot tell; its text is read instead.
     // @req REQ-125
-    it("offers no family name when a family name the search found writes the word in its text", async () => {
+    it("treats a name in a clan list as an exact recorded term", async () => {
+      peoplesPayload = {
+        total: 1,
+        rows: [peopleRow("PPL_KURANKO", "Kuranko", { normalizedScore: 0.62 })],
+      };
+      patronymesPayload = {
+        total: 2,
+        rows: [
+          patronymeRow("PAT_SANOGO", "Sanogo", { normalizedScore: 0.28 }),
+          patronymeRow("PAT_SANOU", "Sanou", { normalizedScore: 0.25 }),
+        ],
+      };
+      recordedTermsPayload = {
+        rows: [
+          {
+            kind: "people",
+            id: "PPL_KURANKO",
+            recorded_in: ["content.appellations.clans[]"],
+          },
+        ],
+      };
+      leadsPayload = { rows: sanohLeads };
+
+      const result = await ftsSearchEntities({
+        q: "sanoh",
+        limit: 1,
+        offset: 0,
+      });
+
+      expect(rpc).toHaveBeenCalledWith("afrik_search_recorded_term", {
+        p_q: "sanoh",
+      });
+      expect(result.leads).toEqual([]);
+    });
+
+    // @req REQ-125
+    it("checks recorded terms across matched rows beyond the result page", async () => {
+      peoplesPayload = {
+        total: 2,
+        rows: [
+          peopleRow("PPL_KURANKO_TOP", "Kuranko", { normalizedScore: 0.62 }),
+        ],
+      };
+      patronymesPayload = {
+        total: 2,
+        rows: [patronymeRow("PAT_SANOGO", "Sanogo", { normalizedScore: 0.28 })],
+      };
+      recordedTermsPayload = {
+        rows: [
+          {
+            kind: "people",
+            id: "PPL_KURANKO_BEYOND_PAGE",
+            recorded_in: ["content.organization"],
+          },
+        ],
+      };
+      leadsPayload = { rows: sanohLeads };
+
+      const result = await ftsSearchEntities({
+        q: "sanoh",
+        limit: 1,
+        offset: 0,
+      });
+
+      expect(result.peoples).toHaveLength(1);
+      expect(result.leads).toEqual([]);
+    });
+
+    // @req REQ-125
+    it("returns the matching field paths for every recorded fiche", async () => {
+      peoplesPayload = {
+        total: 2,
+        rows: [
+          peopleRow("PPL_KURANKO", "Kuranko"),
+          peopleRow("PPL_KORANKO", "Koranko"),
+        ],
+      };
+      recordedTermsPayload = {
+        rows: [
+          {
+            kind: "people",
+            id: "PPL_KURANKO",
+            recorded_in: ["content.appellations.clans[]"],
+          },
+          {
+            kind: "people",
+            id: "PPL_KORANKO",
+            recorded_in: ["content.historicalRole"],
+          },
+        ],
+      };
+      leadsPayload = { rows: sanohLeads };
+
+      const result = await ftsSearchEntities({
+        q: "sanoh",
+        limit: 1,
+        offset: 0,
+      });
+
+      expect(result.recordedTerms).toEqual([
+        {
+          kind: "people",
+          id: "PPL_KURANKO",
+          recordedIn: ["content.appellations.clans[]"],
+        },
+        {
+          kind: "people",
+          id: "PPL_KORANKO",
+          recordedIn: ["content.historicalRole"],
+        },
+      ]);
+    });
+
+    // The source note is excluded even when it is stored on the family fiche.
+    // @req REQ-125
+    it("does not treat a source note in a family-name fiche as an exact recorded term", async () => {
       patronymesPayload = {
         total: 2,
         rows: [
@@ -2611,7 +2724,7 @@ describe("ftsSearchEntities", () => {
         offset: 0,
       });
 
-      expect(result.leads).toEqual([]);
+      expect(result.leads).toEqual(sanohLeads);
     });
 
     // Chukwu sits in the lexical band through its phonetic key alone, and
@@ -2649,7 +2762,7 @@ describe("ftsSearchEntities", () => {
     // later page the Kuranko fiche is out of sight, yet page two must agree
     // with page one.
     // @req REQ-125
-    it("offers no family name on a later page when page one holds a fiche that writes the word", async () => {
+    it("offers no family name on a later page when any fiche records the word", async () => {
       rpc.mockImplementation(
         (fn: string, args: Record<string, unknown> = {}) => {
           if (fn === "afrik_search_peoples")
@@ -2669,6 +2782,19 @@ describe("ftsSearchEntities", () => {
           if (fn === "afrik_search_leads")
             return Promise.resolve({
               data: { rows: sanohLeads },
+              error: null,
+            });
+          if (fn === "afrik_search_recorded_term")
+            return Promise.resolve({
+              data: {
+                rows: [
+                  {
+                    kind: "people",
+                    id: "PPL_KURANKO",
+                    recorded_in: ["content.appellations.clans[]"],
+                  },
+                ],
+              },
               error: null,
             });
           return Promise.resolve({ data: { total: 0, rows: [] }, error: null });
