@@ -1,8 +1,26 @@
 import { execFileSync } from "node:child_process";
+import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 
 import { resolveAfrikFiche } from "../resolveAfrikFiche";
+
+// Read from the ledger rather than written out: the fold tests hold every
+// test file to naming no retired id, and the ledger is the list to follow.
+const RETIRED_PATRONYMES: Array<{
+  retiredId: string;
+  successorId: string | null;
+}> = JSON.parse(
+  readFileSync(
+    join(
+      process.cwd(),
+      "dataset/source/afrik/patronymes/_retired-identifiers.json"
+    ),
+    "utf8"
+  )
+);
+const MERGED = RETIRED_PATRONYMES.filter(({ successorId }) => successorId);
+const WITHDRAWN = RETIRED_PATRONYMES.filter(({ successorId }) => !successorId);
 
 describe("resolveAfrikFiche", () => {
   // The curator skill's first phase is "turn what the user typed into a fiche
@@ -131,22 +149,28 @@ describe("resolveAfrikFiche", () => {
   // must lead to the fiche that took it in, and say that it did.
   // @req REQ-032
   it("follows a retired family-name identifier to its successor", () => {
-    expect(resolveAfrikFiche("PAT_KAMARA")).toEqual([
-      {
-        id: "PAT_CAMARA",
-        kind: "patronyme",
-        matchedOn: "retiredId",
-        matchedValue: "PAT_KAMARA",
-        matchType: "retired",
-      },
-    ]);
+    expect(MERGED.length).toBeGreaterThan(0);
+    for (const { retiredId, successorId } of MERGED) {
+      expect(resolveAfrikFiche(retiredId)).toEqual([
+        {
+          id: successorId,
+          kind: "patronyme",
+          matchedOn: "retiredId",
+          matchedValue: retiredId,
+          matchType: "retired",
+        },
+      ]);
+    }
   });
 
   // A withdrawn fiche has no successor, so there is nothing to send the
   // curator to.
   // @req REQ-032
   it("resolves a withdrawn family-name identifier to nothing", () => {
-    expect(resolveAfrikFiche("PAT_KOUM")).toEqual([]);
+    expect(WITHDRAWN.length).toBeGreaterThan(0);
+    for (const { retiredId } of WITHDRAWN) {
+      expect(resolveAfrikFiche(retiredId)).toEqual([]);
+    }
   });
 
   // « tchikaya » is how readers type PAT_TCHICAYA. Each of the four respellings
@@ -203,8 +227,9 @@ describe("resolveAfrikFiche", () => {
         { encoding: "utf8" }
       ).split("\n")[0];
 
-    expect(cli("PAT_KAMARA")).toBe(
-      "PAT_CAMARA\tpatronyme\tretired\tretiredId=PAT_KAMARA"
+    const [merged] = MERGED;
+    expect(cli(merged.retiredId)).toBe(
+      `${merged.successorId}\tpatronyme\tretired\tretiredId=${merged.retiredId}`
     );
     expect(cli("tchikaya")).toBe(
       "PAT_TCHICAYA\tpatronyme\tneighbour\tnameMain=Tchicaya"
