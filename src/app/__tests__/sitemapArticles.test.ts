@@ -3,6 +3,10 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 vi.mock("@/lib/supabase/queries/afrik/sitemapEntries", () => ({
   getSitemapEntityIds: vi.fn(),
 }));
+// The names' addresses are another corpus read, outside what is under test.
+vi.mock("@/api/v2/services/nameAddresses", () => ({
+  getNameAddressSpellings: vi.fn(async () => []),
+}));
 // The bank on disk is empty on this branch; the sitemap's composition is what
 // is under test, so the corpus read is the one thing replaced.
 vi.mock("@/lib/articles/corpus", async (importOriginal) => ({

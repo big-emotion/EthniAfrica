@@ -47,6 +47,24 @@ describe("the hero band — the fiches and the facets open on it too (REQ-115)",
   }
 
   /**
+   * A name's address is the search page's reading of one name (REQ-200), so
+   * it opens where that reading opens: in the search frame, which raises no
+   * band — the answer's own h1 heads the page.
+   */
+  // @req REQ-200
+  it("opens a name's address on the search frame, like the search page", () => {
+    expect(read("src/app/[lang]/atlas/recherche/[name]/page.tsx")).toMatch(
+      /<RecherchePageContent\b/
+    );
+    expect(read("src/components/pages/RecherchePageContent.tsx")).toMatch(
+      /<SearchFeedFrame\b/
+    );
+    expect(read("src/components/search/SearchFeedFrame.tsx")).toMatch(
+      /\bhideHeader\b/
+    );
+  });
+
+  /**
    * The wait is the exception, and it is the counterpart of the rule above
    * rather than a hole in it (brand charter §8.4).
    *

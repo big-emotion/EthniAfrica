@@ -17,6 +17,8 @@ import { countryChronology } from "@/lib/fiche/chronology";
 import { FicheAmendBand } from "@/components/fiche/FicheAmendBand";
 import { FicheTile } from "@/components/fiche/FicheTile";
 import { FicheNameStory } from "@/components/fiche/FicheNameStory";
+import { FicheStoryLink } from "@/components/fiche/FicheStoryLink";
+import { nameStoryLink } from "@/lib/search/nameClosing";
 import { readNaming, type NamingPresentationForm } from "@/lib/search/naming";
 import {
   competingReadings,
@@ -33,6 +35,7 @@ import {
 import type { SharedName } from "@/lib/fiche/countryNextSteps";
 import {
   countryPeopleCount,
+  DEMOGRAPHIC_REFERENCE_YEAR,
   shortSourceName,
 } from "@/lib/countryDataTransformer";
 import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
@@ -200,6 +203,22 @@ export function CountryParchment({
           naming={naming}
           foldedReadings={foldedReadings}
           language={language}
+          storyLink={
+            <FicheStoryLink
+              story={nameStoryLink(
+                {
+                  type: "country",
+                  id: country.id,
+                  name: country.nameFr,
+                  content: { historicalNames: country.historicalNames },
+                },
+                history,
+                language
+              )}
+              from="country"
+              language={language}
+            />
+          }
         >
           {sharedName ? (
             <p
@@ -243,7 +262,16 @@ export function CountryParchment({
         />
       ) : null}
 
-      <Section title={copy.sections.peoples}>
+      {/* The year dates the shares, so it stands over them and only when
+          there are shares to date (REQ-151); it used to sit in the eyebrow. */}
+      <Section
+        title={copy.sections.peoples}
+        note={
+          data.peoples.rows.length > 0
+            ? copy.summary.referenceYear(DEMOGRAPHIC_REFERENCE_YEAR)
+            : undefined
+        }
+      >
         {!hasPeoples ? (
           <FieldProvenanceMarker state="missing" language={language} />
         ) : (

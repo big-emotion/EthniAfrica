@@ -3391,6 +3391,88 @@
   color: var(--afh-text-soft);
 }
 
+/* Brief 10 (2026-10-17): every fiche leads to its name's story, and a long
+   reference chapter folds what follows its first tile.
+
+   The story link is form A of the actions charter (label then arrow, 16 px,
+   weight 600, 44 px tall, no container); in the code `ActionLink` draws it and
+   its arrow, and `.ea-story-arrow` dresses the boards' hand-written one.
+
+   The fold reuses the tile control (« + en savoir plus » / « − replier »).
+   Its closed label names each tile it hides, which is what lets a chapter
+   fold without the chapter itself collapsing (REQ-153). The `>` combinators
+   keep an open fold from switching the labels of the closed tiles inside it. */
+.ea-story {
+  display: grid;
+  gap: var(--afh-space-xs);
+  margin-top: var(--afh-space-lg);
+}
+.fiche-name-story .ea-story {
+  margin: var(--afh-space-lg) 0;
+}
+.ea-story-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--afh-space-md);
+  justify-self: start;
+  min-height: 44px;
+  font-size: var(--afh-text-small);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--accent-ink);
+  text-decoration: none;
+  text-underline-offset: 4px;
+}
+.ea-story-link:hover,
+.ea-story-link:focus-visible {
+  text-decoration: underline;
+}
+.ea-story-link:focus-visible {
+  outline: none;
+  box-shadow: var(--afh-ring-focus);
+}
+.ea-story-arrow {
+  transition: transform var(--afh-duration-fast) var(--afh-ease-out);
+}
+.ea-story-link:hover .ea-story-arrow,
+.ea-story-link:focus-visible .ea-story-arrow {
+  transform: translateX(4px);
+}
+/* Two classes, so it outranks `.afh-parchment-section p`. */
+.ea-story .ea-story-hint {
+  margin: 0;
+  font-size: var(--afh-text-caption);
+  line-height: 1.45;
+  color: var(--afh-text-soft);
+}
+.ea-fold {
+  margin-top: var(--afh-space-lg);
+}
+.ea-fold > summary {
+  cursor: pointer;
+  list-style: none;
+}
+.ea-fold > summary::-webkit-details-marker {
+  display: none;
+}
+.ea-fold > summary:focus-visible {
+  outline: none;
+  box-shadow: var(--afh-ring-focus);
+}
+.ea-fold > summary [data-when="open"],
+.ea-fold[open] > summary [data-when="closed"] {
+  display: none;
+}
+.ea-fold[open] > summary [data-when="open"] {
+  display: inline;
+}
+.ea-fold > summary + * {
+  margin-top: var(--afh-space-xs);
+}
+.afh-names-group .ea-fold {
+  margin: 0;
+}
+
 /* ===== fiche-chapter-bar.css (verbatim) ===== */
 /**
  * The reading rail — atlas charter §7.
@@ -4674,42 +4756,6 @@ svg { display: block; }
 .ds-mobile .ea-footer-link { justify-content: center; }
 .ds-mobile .ea-footer-follow { text-align: center; }
 .ds-mobile .ea-footer-follow ul { margin: 12px auto 0; justify-content: center; }
-
-/* ============================================================
-   Brief 10 (2026-10-17): every fiche leads to its name's story,
-   and a long reference chapter folds what follows its first
-   tile. The story link is form A of the actions charter (label
-   then arrow, 16 px, weight 600, 44 px tall, no container), as
-   src/components/ui/ActionLink.tsx draws it. The fold reuses
-   the tile control (« + en savoir plus » / « − replier »): its
-   closed label names each tile it hides. New selectors only,
-   tokens only.
-   ============================================================ */
-.ea-story { display: grid; gap: var(--afh-space-xs); margin-top: var(--afh-space-lg); }
-.fiche-name-story .ea-story { margin: var(--afh-space-lg) 0; }
-.ea-story-link {
-  display: inline-flex; align-items: center; gap: var(--afh-space-md);
-  justify-self: start; min-height: 44px;
-  font-size: var(--afh-text-small); font-weight: 600; line-height: 1.4;
-  color: var(--accent-ink); text-decoration: none; text-underline-offset: 4px;
-}
-.ea-story-link:hover, .ea-story-link:focus-visible { text-decoration: underline; }
-.ea-story-link:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
-.ea-story-arrow { transition: transform var(--afh-duration-fast) var(--afh-ease-out); }
-.ea-story-link:hover .ea-story-arrow, .ea-story-link:focus-visible .ea-story-arrow { transform: translateX(4px); }
-/* Two classes, so it outranks `.afh-parchment-section p`. */
-.ea-story .ea-story-hint {
-  margin: 0; font-size: var(--afh-text-caption); line-height: 1.45; color: var(--afh-text-soft);
-}
-.ea-fold { margin-top: var(--afh-space-lg); }
-.ea-fold > summary { cursor: pointer; list-style: none; }
-.ea-fold > summary::-webkit-details-marker { display: none; }
-.ea-fold > summary:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
-.ea-fold > summary [data-when="open"],
-.ea-fold[open] > summary [data-when="closed"] { display: none; }
-.ea-fold[open] > summary [data-when="open"] { display: inline; }
-.ea-fold > summary + * { margin-top: var(--afh-space-xs); }
-.afh-names-group .ea-fold { margin: 0; }
 
 /* ============================================================
    Brief 11 (2026-10-17): the result page hands the reader from

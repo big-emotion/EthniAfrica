@@ -59,6 +59,28 @@ describe("loadSubjectNameHistories", () => {
     ]);
   });
 
+  // The address page reads on the server, where there is no network path to
+  // its own API: the same loader runs over the handlers instead (REQ-200).
+  // @req REQ-200
+  it("reads through the transport it is given, never through fetch", async () => {
+    const fetchMock = vi.fn();
+    vi.stubGlobal("fetch", fetchMock);
+    const transport = vi.fn(async () =>
+      ok({ id: "lin", nameHistory: LINGALA_HISTORY })
+    );
+    const lin = subject("language", "lin");
+
+    const histories = await loadSubjectNameHistories(
+      [lin],
+      undefined,
+      transport
+    );
+
+    expect(transport).toHaveBeenCalledWith("/api/v2/languages/lin", undefined);
+    expect(fetchMock).not.toHaveBeenCalled();
+    expect(histories).toEqual([{ subject: lin, nameHistory: LINGALA_HISTORY }]);
+  });
+
   // A missing timeline leaves the answer as the default; it never fails the
   // search it accompanies.
   // @req REQ-198

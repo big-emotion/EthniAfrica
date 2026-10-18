@@ -10,6 +10,49 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+## [5.6.0] - 2026-10-17
+
+### Added
+
+- Search: each name the corpus answers has a permanent address,
+  `/fr/atlas/recherche/<form>` (for example `/fr/atlas/recherche/lingala`). The server
+  renders the approved result page there, with its own title, description and
+  canonical, and an h1 in the corpus spelling (« Traoré »). A form gets an address when
+  the search answers it exactly and one account of it in the subject's name history
+  cites a source above `unverified`; published ledger words get one under their French
+  label. An accent or case variant answers a 308 to the corpus spelling (`traore` →
+  `traor%C3%A9`), a form with no address answers 404, and an address writes nothing to
+  the search query log. A table that cannot be read is not cached as an empty list:
+  the next request reads it again (REQ-200, DEC-074, ETNI-2044) (#1820).
+- Sitemap: each name address is listed once (#1820).
+- Design: the boards of briefs 10 to 12 are recorded as the approved reference for the
+  next implementation wave (the fiche's link to its name's story and chapter folds; the
+  result page's hand-off to the self-name, its Short and the « Source » label; the
+  unknown-name page, the « Fiches » lens and the consent strip). The operator delegated
+  the approval to Claude on 17 October 2026; the boards were approved after an
+  art-direction review, the operator did not review them, and each brief lists the
+  decisions taken on their behalf. The search-result charter carries the amendments of
+  briefs 11 and 12. Docs only (#1821).
+
+### Changed
+
+- Search pages: a next-step card, a spelling suggestion or a word result that names an
+  answered form links to its address, and to `?q=<form>` when the form has none. Fiches
+  and the search modal keep `?q=` links, and a `?q=` reading keeps the bare search page
+  as its canonical (#1820).
+- Fiche heads: a country fiche's eyebrow reads « Pays » instead of « CIV · page du pays
+  · réf. 2025 », and « Peuples du pays » carries « Année de référence : 2025 » as its
+  chapter note when it has shares to date. A people fiche's population chip reads
+  « 40 000 000 personnes en 2025 » instead of « … personnes · réf. 2025 »; a fiche with
+  no declared population still prints no chip and no year (REQ-151, ETNI-2047) (#1822).
+
+### Fixed
+
+- An unknown place fiche (`/fr/atlas/lieux/LOC_INEXISTANT`) answers 404 instead of a
+  `noindex` page with status 200. The atlas-wide loading screen fixed the status before
+  a layout could change it; the wait now sits in the atlas hub's and the search page's
+  own route groups, with the same screen (#1820).
+
 ## [5.5.0] - 2026-10-17
 
 ### Added
@@ -1843,7 +1886,8 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.5.0...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.6.0...HEAD
+[5.6.0]: https://github.com/big-emotion/ethniafrica/compare/v5.5.0...v5.6.0
 [5.5.0]: https://github.com/big-emotion/ethniafrica/compare/v5.4.0...v5.5.0
 [5.4.0]: https://github.com/big-emotion/ethniafrica/compare/v5.3.0...v5.4.0
 [5.3.0]: https://github.com/big-emotion/ethniafrica/compare/v5.2.0...v5.3.0

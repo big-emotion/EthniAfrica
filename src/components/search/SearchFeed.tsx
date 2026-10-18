@@ -6,6 +6,7 @@ import type { SearchCompanionsData } from "@/api/v2/schemas/searchCompanions";
 import { getSearchEntityLabel } from "@/components/search/searchEntityAccent";
 import { inCountry } from "@/lib/atlas/countryPreposition";
 import { getCountryCommonName } from "@/lib/countryNames";
+import { useNameSearchHref } from "@/components/search/NameAddressProvider";
 import { ficheHrefFor } from "@/components/search/SearchResultCard";
 import { AppellationsBlock } from "@/components/search/feed/AppellationsBlock";
 import {
@@ -21,6 +22,8 @@ import {
   type FeedPlateItem,
 } from "@/components/search/feed/PlatesBlock";
 import { QuizBlock } from "@/components/search/feed/QuizBlock";
+import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
+import { SearchFeedContributionAction } from "@/components/search/feed/SearchFeedContributionAction";
 import { SearchFeedLayout } from "@/components/search/feed/SearchFeedLayout";
 import { ShortsBlock } from "@/components/search/feed/ShortsBlock";
 import { OriginBlock } from "@/components/search/answer/OriginBlock";
@@ -158,7 +161,8 @@ function resultForms(
   subjects: readonly SearchResult[],
   leads: readonly SearchLead[],
   nameSuggestions: readonly string[],
-  language: Language
+  language: Language,
+  nameHref: (form: string) => string
 ) {
   if (state === "typo") {
     // Each suggestion is a new search the reader chooses; none is marked as
@@ -172,7 +176,7 @@ function resultForms(
         selfGiven: null,
         problematic: undefined,
         searched: false,
-        href: `${getLocalizedRoute(language, "search")}?${new URLSearchParams({ q: name })}`,
+        href: nameHref(name),
       })
     );
   }
@@ -276,6 +280,7 @@ export function SearchFeed({
   const [validatedOption, setValidatedOption] = useState<number | null>(null);
   const copy = searchFeedCopy[language];
   const answerCopy = nameAnswerCopy[language];
+  const nameHref = useNameSearchHref(language);
   const relatedOnly =
     state === "widened" && subjects.length === 0 && results.length > 0;
   // A related-only answer shows no shelf, so that nothing unrelated sits under
@@ -299,7 +304,8 @@ export function SearchFeed({
     subjects,
     leads,
     nameSuggestions,
-    language
+    language,
+    nameHref
   );
   const forms = presentation?.appellations?.forms ?? derivedForms;
 
@@ -342,7 +348,7 @@ export function SearchFeed({
           kind: getSearchEntityLabel(entry.type),
           name: getLocalizedSearchResultName(entry, language),
           meta: copy.blocks.ficheMeta,
-          href: ficheHrefFor(entry as SearchResult, language),
+          href: ficheHrefFor(entry as SearchResult, language, nameHref),
           onNavigate: () => onResultNavigate?.(entry.type, index + 1),
         }
   );
@@ -419,6 +425,15 @@ export function SearchFeed({
     subjects.length === 0 &&
     opening.entries.length > 0 &&
     (state === "unknown" || state === "typo");
+  // The page that admits it does not know the name asks for it once, in its
+  // verdict, and owes no card after it (brief 12, part A, approved
+  // 2026-10-17). A word page shares the state but answers.
+  const confesses =
+    state === "unknown" &&
+    !wordPage &&
+    !answeredByWord &&
+    !answeredByReview &&
+    !presentation?.answer;
   const verdict =
     presentation?.answer?.verdict ??
     (answeredByWord
@@ -497,6 +512,7 @@ export function SearchFeed({
       answers: answered.length > 0,
       appellations: forms.length > 0,
       fiches: ficheRows.length > 0,
+      shorts: hasWordPiece,
     },
     { relatedOnly, wordPage }
   );
@@ -662,7 +678,7 @@ export function SearchFeed({
               }
               listedPeoples={subject!.associatedPeoples}
               searchedForm={query}
-              selfNameHref={ficheHrefFor(subject!, language)}
+              selfNameHref={ficheHrefFor(subject!, language, nameHref)}
               reviewed={reviewedFor(subject!)}
               originCoveredElsewhere={
                 coveredByAnother(subject!) || Boolean(sharedOrigin)
@@ -738,6 +754,20 @@ export function SearchFeed({
             tone={
               presentation?.answer?.tone ??
               (state === "typo" || state === "unknown" ? "plain" : "answer")
+            }
+            action={
+              confesses ? (
+                <SearchFeedContributionAction
+                  language={language}
+                  target={contributionTarget}
+                  label={answerCopy.invitationAction}
+                  preferredKind="contribution"
+                  variant="outline"
+                  // Board search-unknown-430 (`.ea-owed-action`): ink text at
+                  // the button's own medium weight, on the accent tint.
+                  className="min-h-11 border-[color:var(--accent)] bg-[color:var(--accent-tint)] py-0 text-afh-text hover:bg-[color:var(--accent-tint)] hover:text-afh-text hover:brightness-95"
+                />
+              ) : undefined
             }
           />
         );
@@ -853,6 +883,20 @@ export function SearchFeed({
           />
         );
       case "owed":
+        // The verdict holds the page's one invitation: the closing keeps the
+        // silence and the conviction, and no card speaks of names not shown.
+        if (confesses) {
+          return (
+            <SearchFeedBlock id="owed" zone="closing">
+              <NameClosingBand
+                silences={[
+                  nameClosingCopy[language].silence.unknown(query.trim()),
+                ]}
+                language={language}
+              />
+            </SearchFeedBlock>
+          );
+        }
         return (
           <>
             {state === "unknown" ? (
