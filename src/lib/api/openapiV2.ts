@@ -1347,7 +1347,7 @@ const options: swaggerJsdoc.Options = {
             matchedForm: {
               type: "string",
               description:
-                "The form that scored (migration 110): the filed name, or a recorded spelling, self-appellation or exonym of the entity. « jarra » reaches the family name Diarra through its recorded spelling Jara. A people's form that is not one name, such as « pl. Abaganda) », a piece of the self-appellation « Baganda (sg. Muganda, pl. Abaganda) », is not scored, so a people reached only through one is no lead. Optional: absent from a database without migration 110.",
+                "The form that scored (migrations 110 and 111). For a people, a piece of its filed name, its self-appellation or an exonym that is one name: each field is cut at « , », « ; », « ou » and a slash between spaces, never inside a bracket nor at a slash inside a word (« Hai//om » writes a click), and each piece loses its trailing bracket. A piece is one name when it has three words at most, made of letters, accents, hyphens, apostrophes and click marks, and opens on a capital, a letter with no case (ǂHoan), click marks before a letter (« !Kung »), a class prefix before a capital (« amaXhosa ») or a class prefix of one or two lower-case letters joined by a hyphen to a lower-case one (« a-liyan »). Any other piece, such as « pl. Abaganda) », is never scored; « Baganda / Ganda » gives Baganda and Ganda. For a family name, its filed name as filed, or a recorded spelling that is one name: « jarra » reaches Diarra through its spelling Jara. For a country or a language family, its name as filed. Optional: absent from a database without migration 110.",
               example: "Jara",
             },
             similarity: {

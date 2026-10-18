@@ -34,9 +34,11 @@ export interface ModelEntity {
   /**
    * A family name's `spellings[].spelling`, qualifier removed. `forms` holds
    * every string under `spellings`, attestations included; the leads read
-   * only these, as migration 110 does.
+   * only these, as migrations 110 and 111 do.
    */
   spellings?: string[];
+  /** A people's filed name, self-appellation and each exonym, as written. */
+  nameFields?: string[];
 }
 
 const DATASET = join(process.cwd(), "dataset/source/afrik");
@@ -95,11 +97,21 @@ function peopleEntities(): ModelEntity[] {
         };
       };
       const appellations = fiche.content?.appellations;
-      return entity("people", fiche, fiche.nameMain, [
-        fiche.nameMain,
-        ...(appellations?.selfAppellation ?? "").split(","),
-        ...(Array.isArray(appellations?.exonyms) ? appellations.exonyms : []),
-      ]);
+      const exonyms = Array.isArray(appellations?.exonyms)
+        ? appellations.exonyms
+        : [];
+      return {
+        ...entity("people", fiche, fiche.nameMain, [
+          fiche.nameMain,
+          ...(appellations?.selfAppellation ?? "").split(","),
+          ...exonyms,
+        ]),
+        nameFields: [
+          fiche.nameMain,
+          appellations?.selfAppellation ?? "",
+          ...exonyms,
+        ],
+      };
     })
   );
 }
@@ -282,7 +294,7 @@ export const NEIGHBOUR_FLOOR = 0.2;
 /**
  * The leads scan covers peoples, countries and families (migration 070).
  * `formsOfAPeople: false` reproduces migration 084, which scored the filed
- * name of a people only; `true`, migration 110, which scores the forms of
+ * name of a people only; `true`, migration 111, which scores the pieces of
  * `peopleLeadForms`.
  */
 // @req REQ-178
@@ -304,12 +316,66 @@ export function neighbours(
     });
 }
 
+/**
+ * Where migration 111 cuts a people's name field into pieces: at « , », « ; »,
+ * the word « ou », and a slash only when it stands between spaces
+ * (« Baganda / Ganda »). A slash inside a word writes a click (« Hai//om »,
+ * « Zhu/'hoasi », « G//ana ») and never cuts: cut there, « Hai//om » gave Hai,
+ * a name no fiche gives. Nothing cuts inside a bracket: a bracket qualifies its
+ * piece and is dropped whole, so « Baganda (sg. Muganda, pl. Abaganda) » is
+ * one piece, Baganda, and « Diola (Joola / Jola) » keeps Diola. The text is
+ * the SQL's pattern, read alike by JavaScript.
+ */
+// @req REQ-125
+export const NAME_PIECE_SEPARATOR = String.raw`\s*(?:[,;]|\s/\s|\sou\s)\s*(?![^(]*\))`;
+
+// The parts of ONE_NAME, in POSIX classes as migration 111 writes them. The
+// combining accents are written as escapes: they do not show on their own.
+const CLICK_MARK = "[!|ǀǁǂǃ=/]";
+const LETTER = "[[:alpha:]\\u0300-\\u036f]";
+// A click mark, an apostrophe or a hyphen, each followed in its word by a
+// letter; only an apostrophe or a hyphen may end a word.
+const BEFORE_A_LETTER = "[!|ǀǁǂǃ=/'’-]";
+const REST_OF_WORD = `(?:${BEFORE_A_LETTER}*${LETTER})*['’-]*`;
+// The hyphenated prefix stops at a lower-case letter after the hyphen: with
+// any letter there it would also admit twelve « al- » spellings of family
+// names (« al-Mahdi »), which rule 4 of brief 16 leaves open.
+const NAME_OPENING = `(?:(?![[:lower:]])[[:alpha:]]|${CLICK_MARK}+[[:alpha:]]|[[:lower:]]{1,4}[[:upper:]]|[[:lower:]]{1,2}-[[:lower:]])`;
+
+/**
+ * What makes a piece one name (migration 111): three words at most, each made
+ * of letters of any script with their accents, hyphens, apostrophes, and click
+ * marks (! | ǀ ǁ ǂ ǃ = /) at the start of a word or inside it, never at its
+ * end. The first word opens on an upper-case letter, a letter with no case
+ * (ǂHoan, a Ge'ez name), click marks before a letter (« !Kung », « =|Hoa »),
+ * a class prefix of one to four lower-case letters before an upper-case one
+ * (« amaXhosa », « isiNdebele », « vaKaranga »), or a class prefix of one or
+ * two lower-case letters joined by a hyphen to a lower-case one (« a-liyan »,
+ * « be-liyan », the names the Bassari give themselves). Any other lower-case
+ * word (« suivant Abdoulaye Bathily », « peuple du Burundi »), a digit, « pl. », a
+ * lone « = », guillemets or a sentence is not one name, and is never scored.
+ * The model reads the same text with Unicode classes.
+ */
+// @req REQ-125
+export const ONE_NAME = `^${NAME_OPENING}${REST_OF_WORD}(?: +${BEFORE_A_LETTER}*${LETTER}${REST_OF_WORD}){0,2}$`;
+
+// PostgreSQL reads the POSIX classes with the database's character type, the
+// model with Unicode's: the same letters as long as that type is not C
+// (verification 6 of migration 111 checks it on each database).
+const oneName = new RegExp(
+  ONE_NAME.replaceAll("[:alpha:]", String.raw`\p{L}`)
+    .replaceAll("[:upper:]", String.raw`\p{Lu}`)
+    .replaceAll("[:lower:]", String.raw`\p{Ll}`),
+  "u"
+);
+const pieceSeparator = new RegExp(NAME_PIECE_SEPARATOR, "u");
+
 /** The family-name search's own trigram threshold (066, 069, 108). */
 // @req REQ-125
 export const FAMILY_NAME_LEAD_FLOOR = 0.4;
 
 /**
- * The family-name branch of the leads (migration 110, DEC-075): a family name
+ * The family-name branch of the leads (migrations 110 and 111, DEC-075): a family name
  * qualifies through its filed name or a recorded spelling that begins with
  * the query's first letter, both folded, at the family-name search's own
  * threshold. Whether it is offered —
@@ -328,15 +394,20 @@ export function familyNameLeads(query: string): ModelEntity[] {
     );
 }
 
-/** The forms migration 110 scores: those sharing the query's first letter. */
+/**
+ * The forms migration 111 scores for a family name, among those sharing the
+ * query's first letter: its filed name, as filed, and each recorded spelling
+ * that is one name (« da Costa » is not).
+ */
 function leadForms(item: ModelEntity, foldedQuery: string): string[] {
-  return [withoutQualifier(item.filedName), ...(item.spellings ?? [])].filter(
-    (form) => normalizeString(form).trim()[0] === foldedQuery[0]
-  );
+  return [
+    withoutQualifier(item.filedName),
+    ...(item.spellings ?? []).filter((spelling) => oneName.test(spelling)),
+  ].filter((form) => normalizeString(form).trim()[0] === foldedQuery[0]);
 }
 
 /**
- * The `matched_form` migration 110 returns for a family-name lead: its best
+ * The `matched_form` migration 111 returns for a family-name lead: its best
  * scoring form, the filed name first on a tie.
  */
 // @req REQ-125
@@ -357,30 +428,22 @@ export function familyNameLeadForm(
 }
 
 /**
- * What marks a people's form as no single name, in migration 110's people
- * branch (a POSIX pattern, read alike by JavaScript). The self-appellation is
- * split on its commas alone, so a bracket holding a comma is cut in two
- * (« pl. Abaganda) »), and some forms are two names or a sentence
- * (« Yacouba ou Yakuba », « nkop = terre », « etc. »). The equal sign alone
- * is no mark: « =|Hoa » writes a click.
+ * The forms migration 111 scores for a people: each piece of its filed name,
+ * its self-appellation and each exonym that is one name, without its
+ * trailing bracket. « Baganda / Ganda » gives Baganda and Ganda, « Hai//om »
+ * stays whole, « Diula, Djula, … » gives each spelling. No other form is
+ * scored, the filed name included: a people none of whose pieces scores is
+ * no lead (brief 16, tenth review).
  */
 // @req REQ-125
-export const NOT_ONE_NAME = "[()/;:.«»0-9]| = | ou ";
-const notOneName = new RegExp(NOT_ONE_NAME);
-
-/**
- * The forms migration 110 scores for a people: its filed name, slash
- * included since it is how the fiche is filed, and each other form that is
- * one name, all without their trailing bracket. A piece of a phrase is not
- * scored, so it never makes a people a lead (brief 16, eighth review).
- */
-function peopleLeadForms(item: ModelEntity): string[] {
-  const filed = withoutQualifier(item.filedName);
-  return item.forms.filter((form) => form === filed || !notOneName.test(form));
+export function peopleLeadForms(item: ModelEntity): string[] {
+  return (item.nameFields ?? [])
+    .flatMap((field) => field.split(pieceSeparator).map(withoutQualifier))
+    .filter((piece) => oneName.test(piece));
 }
 
 /**
- * The `matched_form` migration 110 returns for a people lead: the best
+ * The `matched_form` migration 111 returns for a people lead: the best
  * scoring of the forms it scores, the filed name first on a tie. Undefined
  * when none reaches the floor: the people is then no lead.
  */
