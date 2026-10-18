@@ -113,5 +113,153 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Obame », « Obamé », « Fang », « Gabon », « patronyme », « anthroponymie », « étymologie », « clan », « transmission », « alliance », « caste », « homonyme » et « nécrologie », les travaux sur les noms propres gabonais, ainsi que la page Forebears dédiée n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Obame est un nom de personne fang, porté notamment au Gabon. Deux explications le relient au mot fang obam, un oiseau de proie ; une troisième, pour les Makina, à un nom shiwe. Les sources ne tranchent pas ; nous les présentons plus bas. Sa plus ancienne trace connue du projet date de 1912, où Obam est le nom du père fondateur d'un clan.",
+    "names": [
+      {
+        "nameText": "Obame",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne fang, souvent relié au mot obam, un oiseau de proie ; son origine reste discutée.",
+        "periodLabel": "Écrit Obam dès 1912 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Obame figure parmi les noms de personnes fang du Gabon que relève le chercheur Fabrice Agyune Ndone. Il le trouve aussi chez les Makina, voisins des Fang.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Anthroponymie comparée makina, fang et saké : quelques spécificités sur les noms de personnes chez les Makina du Gabon",
+                "author": "Fabrice Agyune Ndone",
+                "year": 2006,
+                "url": "http://www.ddl.cnrs.fr/fulltext/fflac/Agyune%20Ndone_2006.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5 (tableau n° 1)",
+                "notes": "Article d'un doctorant en anthropologie (université Omar Bongo et université Lumière Lyon 2), non daté, mis en ligne par le laboratoire Dynamique du langage ; il cite des travaux de 2005 et 2006. Lu le 18 octobre 2026 ; les pages sont celles du PDF. Page 5, tableau n° 1 : Obame figure dans la colonne des noms fang et dans celle des noms makina ; l'auteur ajoute que les noms de famille circulent « presque toujours en circuit fermé », d'ascendant à descendant."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Obame peut suivre le nom d'un enfant pour dire de qui il est né : chez les Fang, Biloghe b'Obame veut dire « Biloghe, fille d'Obame ». Fabrice Agyune Ndone ajoute qu'au Gabon, le nom de famille transmis comme tel est une chose assez récente.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Anthroponymie comparée makina, fang et saké : quelques spécificités sur les noms de personnes chez les Makina du Gabon",
+                "author": "Fabrice Agyune Ndone",
+                "year": 2006,
+                "url": "http://www.ddl.cnrs.fr/fulltext/fflac/Agyune%20Ndone_2006.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 7 (note 4)",
+                "notes": "Lu le 18 octobre 2026. Page 7 du PDF, note 4 : « Au Gabon le nom patronymique est quelque chose d'assez récent, car l'attribution traditionnelle du nom qui est encore très répandue, s'appuie plus sur le teknonyme qui est une marque de la filiation directe » ; exemple fang : « Biloghe b'Obame, Biloghe fille d'Obame »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "Proposé en 1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Obame viendrait du mot fang obam, l'oiseau de proie qui vole les poules, selon Günter Tessmann, qui l'écrit obám. Il le range parmi les noms de garçons qui doivent faire de l'homme la terreur de ses ennemis ; le nom pourrait aussi porter chance, si l'on pense que l'enfant saura prendre ce qu'il veut.",
+            "hypothesisGroup": "origine du nom Obame",
+            "sources": [
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 2",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku02tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 280",
+                "notes": "Berlin, Ernst Wasmuth, 1913 ; exemplaire numérisé d'Internet Archive, page lue sur l'image le 18 octobre 2026. Page 280, liste des noms de garçons, section V, « Namen, die bezeichnen sollen, daß der Mann der Schrecken seiner Feinde wird », n° 33 : « obá'm = Raubvogel, Hühnerräuber », qui peut aussi aller dans la section des noms qui portent chance « wenn daran gedacht wird, daß sich der Träger die Sachen nehmen wird » ; l'auteur ajoute que le mot imite un son (« bab, daher o-bám ») et note le nom chez les Pangwe du sud (S.)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2006,
+              "to": 2006,
+              "label": "Proposé en 2006"
+            },
+            "era": "modern",
+            "statement": "Le nom Obame viendrait du mot fang obam, l'épervier, selon Fabrice Agyune Ndone, qui donne ce sens dans son tableau des noms que partagent Fang et Makina.",
+            "hypothesisGroup": "origine du nom Obame",
+            "sources": [
+              {
+                "title": "Anthroponymie comparée makina, fang et saké : quelques spécificités sur les noms de personnes chez les Makina du Gabon",
+                "author": "Fabrice Agyune Ndone",
+                "year": 2006,
+                "url": "http://www.ddl.cnrs.fr/fulltext/fflac/Agyune%20Ndone_2006.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11 (tableau n° 4)",
+                "notes": "Lu le 18 octobre 2026. Page 11 du PDF, tableau n° 4 : « Obame [obam] Epervier (Melierax) en fang », en face du nom shiwe Bame, « Cicatrice »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2006,
+              "to": 2006,
+              "label": "Proposé en 2006"
+            },
+            "era": "modern",
+            "statement": "Chez les Makina, le nom Obame serait plutôt la forme fang d'un nom shiwe, Bame, qui veut dire « cicatrice », selon Fabrice Agyune Ndone. Il juge ce passage « probable » pour les porteurs makina, sans le dire des porteurs fang.",
+            "hypothesisGroup": "origine du nom Obame",
+            "sources": [
+              {
+                "title": "Anthroponymie comparée makina, fang et saké : quelques spécificités sur les noms de personnes chez les Makina du Gabon",
+                "author": "Fabrice Agyune Ndone",
+                "year": 2006,
+                "url": "http://www.ddl.cnrs.fr/fulltext/fflac/Agyune%20Ndone_2006.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 12",
+                "notes": "Lu le 18 octobre 2026. Page 12 du PDF : parmi les noms shiwe « probablement » adaptés au fang, l'auteur cite le nom qui veut dire « cicatrice en shiwe qui devient obam épervier en fang »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Publié en 1912"
+            },
+            "statement": "Le nom Obame apparaît par écrit sous une forme proche, Obam, dans le livre du père Henri Trilles sur les Fang : Obam y est le père fondateur d'un clan bétsi, les Esobam, dont le nom est formé sur esa, « père ». C'est la plus ancienne trace de cette forme que le projet connaît ; Trilles ne dit pas si les personnes nommées Obame aujourd'hui viennent de ce clan.",
+            "formAsWritten": "Obam",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Le totémisme chez les Fân",
+                "author": "Henri Trilles",
+                "year": 1912,
+                "url": "https://archive.org/details/letotmismechez01rpht",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 125-126",
+                "notes": "R. P. H. Trilles, missionnaire spiritain, Münster, Aschendorff, 1912 (collection Bibliothèque Anthropos, tome I, fascicule 4) ; exemplaire numérisé d'Internet Archive (Duquesne University), pages lues sur l'image le 18 octobre 2026. Pages 125-126 : dans le rameau bétsi, les clans portent un nom en Esa, mot « qui veut dire « père » », devenu Eso devant certaines voyelles : « les Esobam [...] suivant que le père de la tribu est [...] Obam ». L'auteur ne dit pas où ni quand il a recueilli cette généalogie."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

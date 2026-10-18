@@ -104,5 +104,122 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les recherches « Gharbi lignée », « Gharbi clan », « Gharbi tribe » et « Gharbi place name » n’ont pas permis de déterminer si cette graphie désigne une lignée, un clan, une caste, une classe d’âge ou un établissement dans le contexte précis de la fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Gharbi est un nom arabe qui veut dire « occidental, de l'ouest », selon une étude des noms de famille de Touggourt, en Algérie, où on l'écrit Gherbi. En Tunisie, une chronique de Béja nomme vers 1735 un caïd de la ville, Ahmed el Gharbi. On ne sait pas avec certitude comment les familles Gharbi d'aujourd'hui ont reçu ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Gharbi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "shortLine": "Un nom arabe, « occidental, de l'ouest », porté vers 1735 par un caïd de Béja, en Tunisie.",
+        "periodLabel": "Écrit dès les années 1730",
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Proposée en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Gharbi veut dire « occidental, de l'ouest », mais aussi « marocain » ou « qui se trouve à l'ouest », selon l'étude des noms de famille de Touggourt de Siham Messaoudi, qui le donne comme un nom d'origine arabe. Elle n'explique pas pourquoi les familles qui le portent l'ont reçu.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Étude étymo-sémantique des patronymes de la région de Touggourt",
+                "author": "Siham Messaoudi",
+                "year": 2021,
+                "url": "https://dspace.univ-ouargla.dz/jspui/bitstream/123456789/32616/1/%25D9%2585%25D8%25B3%25D8%25B9%25D9%2588%25D8%25AF%25D9%258A%2520%25D8%25B3%25D9%2587%25D8%25A7%25D9%2585_compressed.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 37",
+                "notes": "Mémoire de master en sciences du langage, Université Kasdi Merbah Ouargla, 2020-2021, dirigé par Nadjah Henka ; texte intégral lu dans le fichier déposé par l'université (pages numérotées de l'imprimé). L'autrice a choisi 215 noms de famille représentatifs dans le registre de l'état civil de la mairie de Touggourt (p. 3). Page 37 : « GHERBI [ɣerbiy] : nom simple, masculin singulier, d'origine arabe, Gharbi : « occidental, de l'Ouest. Marocain. Qui se trouve ou donne à l'ouest » ». Page 56 : la liste des patronymes recensés écrit GHERBI. Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1925,
+              "to": 1925,
+              "label": "Décret du 30 juin 1925"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gharbi, comme les autres noms de famille de Tunisie, s'est fixé avec l'état civil. Sa réforme commence avec le décret beylical du 30 juin 1925, qui laisse en usage la façon traditionnelle de se nommer par la filiation, comme dans « Ali ben Ahmed ben Amor Bouderbala », selon Farid Benramdane. Les sources lues ne disent pas quand les familles Gharbi ont fixé ce nom.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Qui es-tu ? J'ai été dit. De la destruction de la filiation dans l'État civil d'Algérie ou éléments d'un onomacide sémantique",
+                "author": "Farid Benramdane",
+                "year": 2000,
+                "url": "https://insaniyat.crasc.dz/en/article/qui-es-tu-jai-ete-dit-de-la-destruction-de-la-filiation-dans-letat-civil-dalgerie-ou-elements-dun-onomacide-semantique",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 79-87 (section sur les patronymes algériens)",
+                "notes": "Insaniyat, 4(10), 2000, p. 79-87, lu en ligne le 18 octobre 2026. L'article écrit : « En Tunisie, c'est le décret beylical du 30 juin 1925 qui amorça la réforme », « sans pour autant que soit supprimé l'usage de la nomination traditionnelle, ex : Ali ben Ahmed ben Amor Bouderbala ». La version en ligne ne marque pas les pages de l'imprimé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1735,
+              "to": 1738,
+              "label": "Vers 1735-1738"
+            },
+            "era": "polity",
+            "statement": "Le nom Gharbi apparaît sous une forme proche, el Gharbi, avec l'article arabe, dans la chronique tunisienne de Mohammed Seghir ben Youssef, de Béja, traduite en français en 1900. Elle nomme le caïd de Béja Ahmed el Gharbi, et un autre homme de la ville « nommé également El Gharbi ». C'est la plus ancienne trace de ce nom que le projet connaît ; la chronique ne dit pas pourquoi ces deux hommes le portent, ni s'ils sont parents.",
+            "formAsWritten": "el Gharbi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Mechra el melki, chronique tunisienne (1705-1771), pour servir à l'histoire des quatre premiers beys de la famille husseïnite",
+                "author": "Mohammed Seghir ben Youssef ; traduction de Victor Serres et Mohammed Lasram",
+                "year": 1900,
+                "url": "https://archive.org/details/39020001794604-mechraelmelkich",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 151, 175, 181",
+                "notes": "Tunis, Imprimerie rapide, 1900. Chronique de Mohammed Seghir ben Youssef, de Béja, traduite en français ; lue sur l'exemplaire numérisé d'archive.org le 18 octobre 2026. Page 151 : en mai, à l'approche de l'armée d'Alger (an 1147 de l'hégire, 1735), le bey fait évacuer Béja pour les familles des spahis, « qui furent suivies par tous ceux qui redoutaient de se trouver entre les mains du caïd Ahmed el Gharbi ». Page 175, en 1150 de l'hégire (1737-1738) : Mohammed-Bey fait arrêter « le caïd de la ville, Ahmed el Gharbi ». Page 181 : le bey Hassine envoie à Sousse « le caïd El Gharbi, de Béja » ; plus tard, Ahmed el Gharbi cause la mort « d'un autre individu nommé également El Gharbi ». L'index renvoie à « Ahmed el Gharbi, caïd de Béja » et à « El Gharbi, notable de Béja »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gherbi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "shortLine": "La graphie sous laquelle une étude des noms de Touggourt, en Algérie, inscrit le nom.",
+        "periodLabel": "Relevé en 2021",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Relevé en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Gherbi est la graphie sous laquelle l'étude de Siham Messaoudi inscrit le nom dans sa liste de 215 noms de famille relevés à l'état civil de Touggourt, en Algérie ; dans son analyse, elle le lit Gharbi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Étude étymo-sémantique des patronymes de la région de Touggourt",
+                "author": "Siham Messaoudi",
+                "year": 2021,
+                "url": "https://dspace.univ-ouargla.dz/jspui/bitstream/123456789/32616/1/%25D9%2585%25D8%25B3%25D8%25B9%25D9%2588%25D8%25AF%25D9%258A%2520%25D8%25B3%25D9%2587%25D8%25A7%25D9%2585_compressed.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 37, 56",
+                "notes": "Mémoire de master en sciences du langage, Université Kasdi Merbah Ouargla, 2020-2021, dirigé par Nadjah Henka ; texte intégral lu dans le fichier déposé par l'université (pages numérotées de l'imprimé). L'autrice a choisi 215 noms de famille représentatifs dans le registre de l'état civil de la mairie de Touggourt (p. 3). Page 37 : « GHERBI [ɣerbiy] : nom simple, masculin singulier, d'origine arabe, Gharbi : « occidental, de l'Ouest. Marocain. Qui se trouve ou donne à l'ouest » ». Page 56 : la liste des patronymes recensés écrit GHERBI. Lu le 18 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

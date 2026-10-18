@@ -11,7 +11,10 @@
     {
       "spelling": "Mugisha",
       "attestations": [
-        { "countryId": "RWA", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "RWA",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -71,5 +74,64 @@
       "fieldPath": "homonyms",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mugisha est un nom du Rwanda. En 2025, c'est le troisième nom le plus souvent choisi pour les garçons nés dans le pays. Il se traduit par « bénédiction », selon un article de presse rwandais. On ne sait pas avec certitude depuis quand il est donné : les sources que nous avons pu lire n'en disent rien.",
+    "names": [
+      {
+        "nameText": "Mugisha",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kin",
+        "namedBy": null,
+        "shortLine": "Un nom donné aux garçons au Rwanda, traduit « bénédiction » ; sa plus ancienne trace reste inconnue.",
+        "periodLabel": "Donné aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "En 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Mugisha est le troisième nom le plus souvent choisi pour les garçons nés au Rwanda : 3 780 enregistrements, selon l'Institut national de la statistique du Rwanda.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Vital Statistics Executive Summary 2025",
+                "author": "National Institute of Statistics of Rwanda",
+                "year": 2026,
+                "url": "https://statistics.gov.rw/sites/default/files/documents/2026-07/CRVS%20%20BOOKLET%202025%20FINAL.pdf",
+                "tier": "official",
+                "source_kind": "official_statistics",
+                "page": "p. 12",
+                "notes": "Kigali, Institut national de la statistique du Rwanda (NISR), 2026, sous licence CC BY 4.0. Lu le 18 octobre 2026. Page 12, tableau 4, « Top 20 most preferred babies' surname in 2025 by sex » : chez les garçons, « MUGISHA » est au troisième rang, avec 3 780 enregistrements. Le document ne donne pas le sens des noms."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2026,
+              "to": 2026,
+              "label": "Écrit en 2026"
+            },
+            "era": "modern",
+            "statement": "Le nom Mugisha se traduit par « bénédiction » (« blessing » dans l'article), selon Sam Nkurunziza, dans un article de KT Press sur les noms les plus donnés au Rwanda en 2025. L'article ne dit pas comment le nom se forme.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Most Popular Baby Names in Rwanda — and What They Mean",
+                "author": "Sam Nkurunziza, KT Press",
+                "year": 2026,
+                "url": "https://www.ktpress.rw/2026/04/the-most-popular-baby-names-in-rwanda-and-what-they-mean/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article du site d'information rwandais KT Press, 28 avril 2026, lu le 18 octobre 2026. Il commente les chiffres de 2025 de l'Institut national de la statistique du Rwanda et cite, parmi les noms les plus choisis, « Mugisha (blessing) ». Il ne dit pas si ces noms sont des prénoms ou des noms de famille."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

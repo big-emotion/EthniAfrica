@@ -109,5 +109,65 @@
       "fieldPath": "transmissionMode",
       "reason": "Ni l'analyse de Kakou, ni les études générales sur les Bété, ni les recherches « Gbagbo transmission patronyme » ne documentent la règle de transmission de ce nom ; la valeur reste « other » faute de preuve."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Gbagbo est un nom bété de Côte d'Ivoire. Une étude littéraire de 2024 propose d'y lire « faire notre palabre » ; on ne sait pas avec certitude ce qu'il veut dire. Le projet ne connaît pas encore de trace écrite ancienne de ce nom.",
+    "names": [
+      {
+        "nameText": "Gbagbo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom bété de Côte d'Ivoire ; une étude y lit « faire notre palabre ».",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "Décrit en 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Gbagbo est d'origine bété, en Côte d'Ivoire, selon Bi Trah Alphonse Cheriff Kakou.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Espaces et personnage : pour une approche du sens dans Pour le bonheur des miens",
+                "author": "Bi Trah Alphonse Cheriff Kakou",
+                "year": 2024,
+                "url": "https://www.revuesociotexte.org/wp-content/uploads/2025/08/PDF-fin-numero-LIBRE-SOCIOTEXTE-Bi-Trah-4.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 82",
+                "notes": "Sociotexte, n° 14, décembre 2024, p. 72-83 ; l'auteur est à l'Université Alassane Ouattara de Bouaké. Lu dans le PDF intégral le 18 octobre 2026. Page 82, dans l'étude du nom de lieu Gbagbokaha d'un roman : « D'origine Bété, ce nom est l'union de Gba qui s'entend en Bété comme « dire ou faire » et Gbo qui signifie palabre ou logorrhée. Par conséquent, le mot Gbagbo peut vouloir dire entre autres « faire notre palabre » en Bété. » C'est une analyse littéraire : l'article ne cite ni dictionnaire ni enquête sur la langue bété."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "Proposé en 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Gbagbo serait formé de deux mots bété, gba, « dire » ou « faire », et gbo, « palabre » ou « flot de paroles », et pourrait vouloir dire, entre autres, « faire notre palabre », selon Bi Trah Alphonse Cheriff Kakou. Il le propose dans une étude littéraire, sans enquête sur la langue.",
+            "hypothesisGroup": "sens-gbagbo",
+            "sources": [
+              {
+                "title": "Espaces et personnage : pour une approche du sens dans Pour le bonheur des miens",
+                "author": "Bi Trah Alphonse Cheriff Kakou",
+                "year": 2024,
+                "url": "https://www.revuesociotexte.org/wp-content/uploads/2025/08/PDF-fin-numero-LIBRE-SOCIOTEXTE-Bi-Trah-4.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 82",
+                "notes": "Sociotexte, n° 14, décembre 2024, p. 72-83 ; l'auteur est à l'Université Alassane Ouattara de Bouaké. Lu dans le PDF intégral le 18 octobre 2026. Page 82, dans l'étude du nom de lieu Gbagbokaha d'un roman : « D'origine Bété, ce nom est l'union de Gba qui s'entend en Bété comme « dire ou faire » et Gbo qui signifie palabre ou logorrhée. Par conséquent, le mot Gbagbo peut vouloir dire entre autres « faire notre palabre » en Bété. » C'est une analyse littéraire : l'article ne cite ni dictionnaire ni enquête sur la langue bété."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

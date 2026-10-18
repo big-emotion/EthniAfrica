@@ -41,7 +41,7 @@ describe("TileSourceMarker — a source consulted is recorded", () => {
     expect(window.plausible).not.toHaveBeenCalled();
     fireEvent.click(
       within(tiles[1]).getByRole("button", {
-        name: "Source : Archive — voir les sources",
+        name: "Source : Archive, voir les sources",
       })
     );
 
@@ -65,5 +65,20 @@ describe("TileSourceMarker — a source consulted is recorded", () => {
     expect(window.plausible).toHaveBeenCalledWith("fiche:source_click", {
       props: { surface: "fiche", kind: "academic" },
     });
+  });
+
+  // Brief 11 §3 on the fiches too: the labelled button wraps with the last
+  // word of the reading (board language-lingala-768, readings side by side).
+  // @req REQ-194
+  it("labels a fiche reading's sources button and keeps it with the last word", () => {
+    render(<FicheNameReadings history={LINGALA_HISTORY} language="fr" />);
+    const button = screen.getAllByRole("button", {
+      name: /voir les sources/,
+    })[0];
+
+    expect(button.textContent).toMatch(/^Sources?$/);
+    expect(button.getAttribute("aria-label")).toMatch(/^Sources? : /);
+    expect(button.parentElement).toHaveClass("afh-source-tail");
+    expect(button.parentElement!.textContent).toMatch(/^\S+ Sources?$/);
   });
 });

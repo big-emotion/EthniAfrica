@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 
+import { SourcedText } from "@/components/search/timeline/SourcedText";
 import { TileSourceMarker } from "@/components/search/timeline/TileSourceMarker";
 import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import { nameTimelineCopy } from "@/lib/i18n/copy/nameTimeline";
@@ -80,15 +81,15 @@ export function FicheNameReadings({
                     <span> · {account.period.label}</span>
                   </p>
                   <p className="afh-name-timeline-statement">
-                    <Named text={account.statement} forms={forms} />
-                    {" "}
-                    <TileSourceMarker
-                      statement={account.statement}
-                      sources={account.sources}
-                      anchorId={anchorId}
-                      language={language}
-                      surface="fiche"
-                    />
+                    <SourcedText text={account.statement} forms={forms}>
+                      <TileSourceMarker
+                        statement={account.statement}
+                        sources={account.sources}
+                        anchorId={anchorId}
+                        language={language}
+                        surface="fiche"
+                      />
+                    </SourcedText>
                   </p>
                 </div>
               );

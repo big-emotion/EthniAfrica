@@ -118,5 +118,150 @@
       "fieldPath": "transmissionMode",
       "reason": "Les recherches « al-Mahdi transmission patronyme », « al-Mahdi filiation » et « al-Mahdi hereditary surname » n’ont pas établi si, ni comment, cette forme se transmet dans les communautés concernées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom al-Mahdi est porté au Soudan par les descendants de Muhammad Ahmad, qui se dit en 1881 le Mahdi, « le guidé », celui que la tradition musulmane attend à la fin des temps. Au nord du Soudan, ce nom de famille signale un descendant du fondateur et, par extension, un de ses fidèles. Nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "al-Mahdi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "shortLine": "« Le guidé » : le titre que prend Muhammad Ahmad en 1881, devenu le nom de ses descendants au Soudan.",
+        "periodLabel": "Titre pris en 1881 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1988,
+              "to": 1988,
+              "label": "Rapporté en 1988"
+            },
+            "era": "modern",
+            "statement": "Le nom al-Mahdi, porté comme nom de famille par les riverains du Nil au nord du Soudan, signale, comme al-Mirghani, un descendant du fondateur de ce qu'il range parmi les ordres soufis et, par extension, un de ses adeptes, selon l'anthropologue Ahmed al-Shahi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Some personal names and nicknames among the riverain people of northern Sudan",
+                "author": "Ahmed al-Shahi",
+                "year": 1988,
+                "url": "https://ora.ox.ac.uk/objects/uuid%3A6cba3331-02f2-4ae9-af12-ce697e4dd5c8/files/rv979v447b",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 135",
+                "notes": "Journal of the Anthropological Society of Oxford 19(2), 1988, texte intégral déposé à l'Oxford University Research Archive, relu le 18 octobre 2026. L'auteur a enquêté chez les Shaygiyya du nord du Soudan. Page 135 : « The surnames Al-Mahdi, Al-Mirghani, Al-Hindi, Al-Sammani and Al-Majdhub indicate that the person is a descendant of the founder of a Sufi order and by extension a follower of that order » ; « the use of the personal names Sirr Al-Khatim [...], Khatmi [...] and Mirghani (the family name of the founder of the Khatmiyya Sufi order) among the Shaygiyya and other tribes indicates their bearers' association with the Khatmiyya Sufi order ». La note 9 nomme le fondateur, Sayyid Muhammed Othman Al-Mirghani."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1949,
+              "to": 1949,
+              "label": "Rapporté en 1949"
+            },
+            "era": "colonial",
+            "statement": "Le nom al-Mahdi passe à la génération suivante : la qualité de Mahdi devient héréditaire, non chez le fils aîné Ali, mais chez Abd ar-Rahman, né après la mort de son père, que ses fidèles de l'est voient comme le porteur de la baraka de son père, selon J. Spencer Trimingham. Celui-ci l'appelle Abd ar-Rahman ibn al-Mahdi.",
+            "formAsWritten": "ibn al-Mahdi",
+            "sources": [
+              {
+                "title": "Islam in the Sudan",
+                "author": "J. Spencer Trimingham",
+                "year": 1949,
+                "url": "https://archive.org/details/in.ernet.dli.2015.158194",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 33, 161",
+                "notes": "Londres, Oxford University Press, première édition 1949 ; lu dans la deuxième impression (Londres, Frank Cass, 1965), numérisée par la Digital Library of India et déposée sur archive.org (copie non officielle), le 18 octobre 2026. Page 161 : « Mahdiship became hereditary, not in the eldest son Ali, but in Abd ar-Rahman, a posthumous son by a Darfurian woman » ; pour ses fidèles de l'est, il est « the Mahdi not in himself, but as the bearer of the baraka of his father ». Page 33 : chez les Masalit, « Islam now means to them devotion to the person of Abd ar-Rahman ibn al-Mahdi »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1891,
+              "to": 1949,
+              "label": "Expliqué en 1891 et en 1949"
+            },
+            "statement": "Le nom al-Mahdi veut dire « le guidé », celui que Dieu guide sur la vraie voie du salut, d'où aussi « le guide », selon Francis Reginald Wingate. J. Spencer Trimingham le traduit par « celui que Dieu guide ».",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Mahdiism and the Egyptian Sudan: being an account of the rise and progress of Mahdiism and of subsequent events in the Sudan to the present time",
+                "author": "Francis Reginald Wingate",
+                "year": 1891,
+                "url": "https://archive.org/details/mahdiismandegyp01winggoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 14",
+                "notes": "Londres et New York, Macmillan, 1891. Lu sur l'exemplaire numérisé d'archive.org le 18 octobre 2026. Page 14 (en-tête « History of the Sudan », livre I), note : « The Mahdi signifies \"the guided\" in the hadaya or true way of salvation, hence \"the guide.\" » ; la note cite Ibn Khaldoun (« ob. 1406 A.D. in Cairo ») : « At all times the Moslems have believed that towards the end of the world a man of the Prophet's family would appear to sustain the true religion »."
+              },
+              {
+                "title": "Islam in the Sudan",
+                "author": "J. Spencer Trimingham",
+                "year": 1949,
+                "url": "https://archive.org/details/in.ernet.dli.2015.158194",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 148",
+                "notes": "Londres, Oxford University Press, première édition 1949 ; lu dans la deuxième impression (Londres, Frank Cass, 1965), numérisée par la Digital Library of India et déposée sur archive.org (copie non officielle), le 18 octobre 2026. Page 148 : selon une tradition attribuée au Prophète, le Jour dernier serait annoncé par une période d'oppression à laquelle mettrait fin « the appearance of one called the Mahdi (the God-guided one) ». "
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "colonial",
+            "statement": "Le nom al-Mahdi devient celui d'un homme du Soudan quand Muhammad Ahmad, qui répand alors une voie soufie, se dit le libérateur attendu, al-mahdi al-muntazar, et commence en mars 1881 à recevoir des fidèles, selon J. Spencer Trimingham. C'est la plus ancienne trace de ce nom au Soudan que le projet connaît. L'attente d'un Mahdi est bien plus ancienne que lui.",
+            "formAsWritten": "al-mahdi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Islam in the Sudan",
+                "author": "J. Spencer Trimingham",
+                "year": 1949,
+                "url": "https://archive.org/details/in.ernet.dli.2015.158194",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 94",
+                "notes": "Londres, Oxford University Press, première édition 1949 ; lu dans la deuxième impression (Londres, Frank Cass, 1965), numérisée par la Digital Library of India et déposée sur archive.org (copie non officielle), le 18 octobre 2026. Page 94 : la révélation vient à Muhammad Ahmad « that he was that awaited deliverer — al-mahdi al-muntazar » ; « Convinced of his call, he began in March 1881 to initiate others ». "
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant 1881"
+            },
+            "statement": "On attend alors un homme appelé le Mahdi, qui doit venir mettre fin à une période d'oppression avant la fin des temps, selon une tradition attribuée au Prophète que rapporte J. Spencer Trimingham. Ibn Khaldoun, mort au Caire en 1406, écrit déjà que les musulmans ont toujours attendu un homme de la famille du Prophète, selon Francis Reginald Wingate.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Islam in the Sudan",
+                "author": "J. Spencer Trimingham",
+                "year": 1949,
+                "url": "https://archive.org/details/in.ernet.dli.2015.158194",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 148",
+                "notes": "Londres, Oxford University Press, première édition 1949 ; lu dans la deuxième impression (Londres, Frank Cass, 1965), numérisée par la Digital Library of India et déposée sur archive.org (copie non officielle), le 18 octobre 2026. Page 148 : selon une tradition attribuée au Prophète, le Jour dernier serait annoncé par une période d'oppression à laquelle mettrait fin « the appearance of one called the Mahdi (the God-guided one) ». "
+              },
+              {
+                "title": "Mahdiism and the Egyptian Sudan: being an account of the rise and progress of Mahdiism and of subsequent events in the Sudan to the present time",
+                "author": "Francis Reginald Wingate",
+                "year": 1891,
+                "url": "https://archive.org/details/mahdiismandegyp01winggoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 14",
+                "notes": "Londres et New York, Macmillan, 1891. Lu sur l'exemplaire numérisé d'archive.org le 18 octobre 2026. Page 14 (en-tête « History of the Sudan », livre I), note : « The Mahdi signifies \"the guided\" in the hadaya or true way of salvation, hence \"the guide.\" » ; la note cite Ibn Khaldoun (« ob. 1406 A.D. in Cairo ») : « At all times the Moslems have believed that towards the end of the world a man of the Prophet's family would appear to sustain the true religion »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -98,5 +98,108 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les recherches « Mejri lignée », « Mejri clan », « Mejri tribe » et « Mejri place name » n’ont pas permis de déterminer si cette graphie désigne une lignée, un clan, une caste, une classe d’âge ou un établissement dans le contexte précis de la fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mejri est un nom de Tunisie. Une forme proche, Majri, désigne un homme des Majer, ou Majeur, une tribu de pasteurs du centre-ouest du pays, dans une thèse de géographie publiée en 1913. Nous rapprochons les deux formes, mais on ne sait pas avec certitude si les familles Mejri viennent de cette tribu.",
+    "names": [
+      {
+        "nameText": "Mejri",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de Tunisie proche de Majri, qui désigne en 1913 un homme des Majer, une tribu du centre-ouest.",
+        "periodLabel": "Forme proche écrite en 1913",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Lecture d'après une thèse de 1913"
+            },
+            "statement": "Le nom Mejri renverrait aux Majer, ou Majeur, une tribu de pasteurs du centre-ouest de la Tunisie, dans la région de Thala. C'est la lecture que nous faisons à partir de la forme Majri, par laquelle la thèse de Monchicourt désigne un homme de cette tribu ; elle ne parle pas du nom de famille.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "La région du Haut-Tell en Tunisie (Le Kef, Téboursouk, Mactar, Thala) : essai de monographie géographique",
+                "author": "Ch. Monchicourt",
+                "year": 1913,
+                "url": "https://archive.org/details/IA41552810_0005",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 297-298",
+                "notes": "Thèse pour le doctorat ès lettres présentée à la Faculté des lettres de l'Université de Paris ; Paris, Librairie Armand Colin, 1913. Lue sur l'exemplaire numérisé d'archive.org (collection de l'université de Leyde) le 18 octobre 2026 ; la page 297 a été lue sur l'image de la page imprimée. Page 297, section « Les Fréchich et les Majeur » : la situation d'un chef unique des deux tribus « cessa sans doute vers 1812, lors de la révolte du Majri Mohammed ben Ammar el Ferjani qui se prétendait chérif » ; la note renvoie à Féraud, Les Harar, p. 361. Page 298 : « Si les Majer ou Majeur sont cités par Ibn Khaldoun comme un rameau des Oulhaça, ils ne percent pas dans les auteurs avant le XVIIIe siècle. Au XIXe siècle ils comprennent trois bradas : Fouad [...], Ouled-Mehenna [...], Chaquetma » ; plus bas : « Ali ben Rhadahem [...], promoteur de la révolte de 1864, et petit neveu du Mohammed ben Ammar de l'insurrection de 1812 était un Majri des Msahel ». La même page dit que le contrôle civil de Thala, créé en 1895, réunit les Fréchich et les Majeur."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1925,
+              "to": 1925,
+              "label": "Décret du 30 juin 1925"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mejri, comme les autres noms de famille de Tunisie, s'est fixé avec l'état civil. Sa réforme commence avec le décret beylical du 30 juin 1925, qui laisse en usage la façon traditionnelle de se nommer par la filiation, comme dans « Ali ben Ahmed ben Amor Bouderbala », selon Farid Benramdane. Les sources lues ne disent pas quand les familles Mejri ont fixé ce nom.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Qui es-tu ? J'ai été dit. De la destruction de la filiation dans l'État civil d'Algérie ou éléments d'un onomacide sémantique",
+                "author": "Farid Benramdane",
+                "year": 2000,
+                "url": "https://insaniyat.crasc.dz/en/article/qui-es-tu-jai-ete-dit-de-la-destruction-de-la-filiation-dans-letat-civil-dalgerie-ou-elements-dun-onomacide-semantique",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 79-87 (section sur les patronymes algériens)",
+                "notes": "Insaniyat, 4(10), 2000, p. 79-87, lu en ligne le 18 octobre 2026. L'article écrit : « En Tunisie, c'est le décret beylical du 30 juin 1925 qui amorça la réforme », « sans pour autant que soit supprimé l'usage de la nomination traditionnelle, ex : Ali ben Ahmed ben Amor Bouderbala ». La version en ligne ne marque pas les pages de l'imprimé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "Publié en 1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mejri a une forme proche, Majri, dans la thèse de géographie de Monchicourt sur le Haut-Tell tunisien. Elle appelle ainsi un homme des Majeur : Mohammed ben Ammar el Ferjani, à la tête d'une révolte vers 1812, puis son petit-neveu Ali ben Rhadahem, qui lance celle de 1864 et qu'elle dit « un Majri des Msahel ». C'est la plus ancienne trace de cette forme que le projet connaît ; la tribu dont elle vient est bien plus ancienne que ce texte.",
+            "formAsWritten": "Majri",
+            "birth": true,
+            "sources": [
+              {
+                "title": "La région du Haut-Tell en Tunisie (Le Kef, Téboursouk, Mactar, Thala) : essai de monographie géographique",
+                "author": "Ch. Monchicourt",
+                "year": 1913,
+                "url": "https://archive.org/details/IA41552810_0005",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 297-298",
+                "notes": "Thèse pour le doctorat ès lettres présentée à la Faculté des lettres de l'Université de Paris ; Paris, Librairie Armand Colin, 1913. Lue sur l'exemplaire numérisé d'archive.org (collection de l'université de Leyde) le 18 octobre 2026 ; la page 297 a été lue sur l'image de la page imprimée. Page 297, section « Les Fréchich et les Majeur » : la situation d'un chef unique des deux tribus « cessa sans doute vers 1812, lors de la révolte du Majri Mohammed ben Ammar el Ferjani qui se prétendait chérif » ; la note renvoie à Féraud, Les Harar, p. 361. Page 298 : « Si les Majer ou Majeur sont cités par Ibn Khaldoun comme un rameau des Oulhaça, ils ne percent pas dans les auteurs avant le XVIIIe siècle. Au XIXe siècle ils comprennent trois bradas : Fouad [...], Ouled-Mehenna [...], Chaquetma » ; plus bas : « Ali ben Rhadahem [...], promoteur de la révolte de 1864, et petit neveu du Mohammed ben Ammar de l'insurrection de 1812 était un Majri des Msahel ». La même page dit que le contrôle civil de Thala, créé en 1895, réunit les Fréchich et les Majeur."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant la forme Majri, selon Monchicourt"
+            },
+            "statement": "On parle alors des Majer, ou Majeur, une tribu qu'Ibn Khaldoun cite comme une branche des Oulhaça, selon Monchicourt. Elle compte au XIXe siècle trois fractions, les Fouad, les Ouled-Mehenna et les Chaquetma.",
+            "before": true,
+            "sources": [
+              {
+                "title": "La région du Haut-Tell en Tunisie (Le Kef, Téboursouk, Mactar, Thala) : essai de monographie géographique",
+                "author": "Ch. Monchicourt",
+                "year": 1913,
+                "url": "https://archive.org/details/IA41552810_0005",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 298",
+                "notes": "Thèse pour le doctorat ès lettres présentée à la Faculté des lettres de l'Université de Paris ; Paris, Librairie Armand Colin, 1913. Lue sur l'exemplaire numérisé d'archive.org (collection de l'université de Leyde) le 18 octobre 2026 ; la page 297 a été lue sur l'image de la page imprimée. Page 298 : « Si les Majer ou Majeur sont cités par Ibn Khaldoun comme un rameau des Oulhaça, ils ne percent pas dans les auteurs avant le XVIIIe siècle. Au XIXe siècle ils comprennent trois bradas : Fouad [...], Ouled-Mehenna [...], Chaquetma » ; plus bas : « Ali ben Rhadahem [...], promoteur de la révolte de 1864, et petit neveu du Mohammed ben Ammar de l'insurrection de 1812 était un Majri des Msahel ». La même page dit que le contrôle civil de Thala, créé en 1895, réunit les Fréchich et les Majeur."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
