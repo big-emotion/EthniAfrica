@@ -81,15 +81,45 @@ describe("search-feed plan", () => {
     ]);
   });
 
-  // @req REQ-178
+  // @req REQ-180
   it("does not add an owed closing for related-only results", () => {
     expect(
       buildSearchFeedPlan("widened", { fiches: true }, { relatedOnly: true })
     ).toEqual({
-      first: ["verdict", "lenses", "shorts"],
+      first: ["lenses", "verdict"],
       primary: ["fiches"],
       closing: [],
     });
+  });
+
+  // Related-only results open with the filters, then the verdict; this data
+  // has no appellations to list. The fiches stay in the main block, with no
+  // owed closing because none answers the searched name.
+  // @req REQ-180
+  it("opens a related-only result on filters before the verdict and keeps its fiches in the primary block", () => {
+    const plan = buildSearchFeedPlan(
+      "widened",
+      { fiches: true },
+      { relatedOnly: true }
+    );
+
+    expect(plan.first.slice(0, 2)).toEqual(["lenses", "verdict"]);
+    expect(plan.first).not.toContain("appellations");
+    expect(plan.primary).toEqual(["fiches"]);
+    expect(plan.closing).not.toContain("owed");
+  });
+
+  // @req REQ-180
+  it("places available appellations after the verdict in related-only results", () => {
+    const plan = buildSearchFeedPlan(
+      "widened",
+      { appellations: true, fiches: true },
+      { relatedOnly: true }
+    );
+
+    expect(plan.first).toEqual(["lenses", "verdict", "appellations"]);
+    expect(plan.primary).toEqual(["fiches"]);
+    expect(plan.closing).toEqual([]);
   });
 
   // @req REQ-180

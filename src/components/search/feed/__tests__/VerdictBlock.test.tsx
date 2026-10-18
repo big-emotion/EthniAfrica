@@ -5,6 +5,20 @@ import { VerdictBlock } from "@/components/search/feed/VerdictBlock";
 
 describe("VerdictBlock", () => {
   // @req REQ-180
+  it("omits the eyebrow when a result does not answer the searched name", () => {
+    render(
+      <VerdictBlock
+        language="fr"
+        name="bukasa"
+        verdict="Nous avons trouvé des fiches liées."
+        eyebrow={null}
+      />
+    );
+
+    expect(screen.queryByTestId("verdict-eyebrow")).toBeNull();
+  });
+
+  // @req REQ-180
   it("makes the searched name the page heading and the answer one sentence", () => {
     const { container } = render(
       <VerdictBlock

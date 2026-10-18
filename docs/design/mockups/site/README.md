@@ -1,6 +1,6 @@
 # Site mockups — the reference for every visible change
 
-Ninety-nine boards: a design-system board, the pages recorded at 430, 768 and
+One hundred and two boards: a design-system board, the pages recorded at 430, 768 and
 1440 px from release v5.2.0 (production, captured on 2026-10-14), and the
 approved changes listed under "Changes since the record". They are the reference every change a reader can see
 answers to, whoever makes it: the team, an agency, a contractor or an agent.
@@ -46,6 +46,7 @@ two is wrong, and the fix is decided, not improvised.
 |                   | État : « peul », le nom propre Fulɓe ouvert   | `search-state-peul-fulbe-open` |
 |                   | Page de recherche (sans requête)             | `search-entry`       |
 |                   | État : « tchikaya », un nom qui s’écrit presque de la même façon | `search-state-typo` |
+|                   | État : fiches trouvées via un nom lié (« bukasa ») | `search-state-related` |
 | 2 · Peoples       | `PPL_FULA`                                   | `people-fula`        |
 |                   | `PPL_BASSA`                                  | `people-bassa`       |
 |                   | `PPL_ALABA`                                  | `people-thin-alaba`  |
@@ -95,6 +96,7 @@ are recorded whole, folded as the site folds them.
 | 2026-10-18 | [Brief 14, the Atlas page « Les noms d'Afrique »](../briefs/14-atlas-names-page.md) | `atlas-names` (new, group « 0 · Atlas ») |
 | 2026-10-18 | [Brief 16, a misspelling that also finds related fiches](../briefs/16-typo-with-related-fiches.md), **approved 2026-10-18 by the operator** | `search-state-typo` (new): « tchikaya », the plain verdict of `search-unknown`, the accented choice Tchicaya as the page's one action, bordered in the accent ink, under it a note and the quiet link « Proposer une source », which wraps and which the note describes, « Aller plus loin »; the fiche Tchicaya is not listed again, so no fiches block and no filters; no video shelf, no sound-alike fiche; `Main` (the choice chip by day and by night, the invitation, the group heading in both numbers, the chip that names a form other than its fiche's filed name and its line, « jarra », which says only which fiche records the form; « tchikaya » with one choice, « konana » with two choices and a fiche found under a caution that says only that the search found it, and its « Fiches » filter, which keeps that caution and never says « lié »); a word a fiche writes in its text (« sanoh », a Kuranko clan) keeps the related-only page until the operator rules (DEC-075) |
 | 2026-10-18 | [Brief 17, the search chrome accessibility states](../briefs/17-search-chrome-accessibility.md), approved by the operator on 2026-10-18 | `search-unknown` and `search-state-typo` at 430/768/1440 (focus rings, « Aller plus loin » as a heading and list); new `search-unknown-320` and `search-unknown-215` (compact header, 200% zoom); `Main` (shared focus examples, the 320 px header, 14 px pills) |
+| 2026-10-18 | [Brief 18, related-only search results](../briefs/18-related-only-search-results.md), approved by the operator on 2026-10-18 | new `search-state-related` at 430/768/1440 (`bukasa`, the Mukasa fiche, factual singular title, no subtitle); `search-unknown` and `search-state-typo` (no origin eyebrow); `Main` (no-answer examples and both fiche title numbers) |
 
 The boards of a changed page no longer record v5.2.0: they are the approved
 target, and the code is behind them until the implementation lands.

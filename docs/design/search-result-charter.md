@@ -348,8 +348,12 @@ The exceptional states are explicit:
   to correct, and closes with `owed` (`silences` and `conviction`), the next
   names, then `further`; it draws no shelf unless a piece matches the reader's
   word _(replaced 2026-10-17, brief 12, approved by delegation)_;
-- related results with no entity answering the name (and a family or country
-  browse) open on the verdict and list the fiches; they close without `owed`.
+- a related-only name search opens on the filters, then the verdict and any
+  appellations; the found fiches follow as primary content under the factual
+  title « La fiche trouvée » or « Les fiches trouvées », with no subtitle. It
+  has no « D’où vient ce nom » eyebrow and closes without `owed`. A family or
+  country browse keeps the « Résultats liés » eyebrow because it has no name
+  search verdict.
 
 The checked-in manifest (`docs/design/mockups/search-answer/manifest.json`)
 records, for each of the seven validated screens, the ordered block identities;
