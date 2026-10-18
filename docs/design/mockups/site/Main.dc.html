@@ -1061,7 +1061,7 @@ body{margin:0}
 <li><a class="ea-choice" href="#">Tchicaya</a></li>
 <li><a class="ea-choice" href="#" style="box-shadow: var(--afh-ring-focus)">Tchicaya</a></li>
 </ul>
-<p class="ds-val">La puce de nom de Main (police du texte, --afh-text-small 700, 6 px entre deux puces), avec l'accent : bord var(--accent), fond var(--accent-tint), texte var(--accent-foreground). C'est la seule action accentuée de la page.</p>
+<p class="ds-val">La puce de nom de Main (police du texte, --afh-text-small 700, 6 px entre deux puces), avec l'accent : bord var(--accent-ink), fond var(--accent-tint), texte var(--accent-foreground). C'est la seule action accentuée de la page. Le bord prend l'encre de l'accent (6,01:1 sur le parchemin de jour, l'ocre de nuit), et non var(--accent) comme le bouton de search-unknown (2,94:1 de jour)&nbsp;: la puce est entourée d'un titre et d'un lien dans cette encre, et son contour doit tenir à côté d'eux.</p>
 </div>
 <div class="ds-col" style="width: 382px">
 <p class="ds-cap">À côté des lentilles · les lentilles restent neutres</p>
@@ -1091,17 +1091,17 @@ body{margin:0}
 <ul class="ea-choices-list" style="margin-top: 0">
 <li><a class="ea-choice" href="#">Jara</a></li>
 </ul>
-<p class="ea-choice-form">Jara est une écriture du nom Diarra.</p>
+<p class="ea-choice-form">La fiche Diarra donne aussi l’écriture Jara.</p>
 </div>
-<p class="ds-val">La puce nomme la forme qui a obtenu le score&nbsp;: Jara, une écriture que la fiche Diarra enregistre. Diarra commence par une autre lettre&nbsp;; «&nbsp;Diarra s’écrit presque de la même façon&nbsp;» serait faux. Une ligne de note, 8 px sous les puces, dit quelle fiche enregistre la forme, une ligne par fiche. Pour un peuple&nbsp;: «&nbsp;Fellata est un des noms de la fiche Peul.&nbsp;» Une forme que deux fiches enregistrent n'a qu'une puce.</p>
+<p class="ds-val">La puce nomme la forme qui a obtenu le score&nbsp;: Jara, une écriture que la fiche Diarra enregistre. Diarra commence par une autre lettre&nbsp;; «&nbsp;Diarra s’écrit presque de la même façon&nbsp;» serait faux. Une ligne de note, 8 px sous les puces, dit seulement quelle fiche donne la forme, une ligne par fiche&nbsp;: elle ne range aucune forme sous une autre (doctrine §1). Pour un peuple&nbsp;: «&nbsp;La fiche Peul donne aussi le nom Fellata.&nbsp;» Une forme que deux fiches enregistrent n'a qu'une puce.</p>
 </div>
 </div>
 <div class="ds-row afh-accent-ocre" style="gap: 40px; align-items: flex-start">
 <div class="ds-col" style="width: 382px">
 <p class="ds-cap">L'invitation sous les choix · une note et un lien discret</p>
-<p class="ea-choices-invitation" style="margin-top: 0">Si vous écrivez «&nbsp;tchikaya&nbsp;», dites-nous où cette écriture est employée.</p>
-<button class="ea-choices-action" type="button">Proposer une source</button>
-<p class="ds-val">La note de .ea-fiche-group-note et le lien de .ea-lens-back : ni fond ni bord, 44 px de haut. Le bouton accentué de search-unknown reste sur cette page-là, où il est la seule action.</p>
+<p class="ea-choices-invitation" id="main-typo-invitation-sample" style="margin-top: 0">Si vous écrivez «&nbsp;tchikaya&nbsp;», dites-nous où cette écriture est employée.</p>
+<button class="ea-choices-action" type="button" aria-describedby="main-typo-invitation-sample">Proposer une source</button>
+<p class="ds-val">La note de .ea-fiche-group-note et le lien de .ea-lens-back : ni fond ni bord, 44 px de haut. Le lien peut passer à la ligne, aligné à gauche, quand le texte est agrandi. La note le décrit (aria-describedby)&nbsp;: un lecteur d'écran qui passe de bouton en bouton entend qu'il s'agit de l'écriture cherchée, pas du nom proposé. Le bouton accentué de search-unknown reste sur cette page-là, où il est la seule action.</p>
 </div>
 <div class="ds-col" style="width: 382px">
 <p class="ds-cap">De nuit · la puce, le lien, le bouton de search-unknown</p>
@@ -1109,8 +1109,8 @@ body{margin:0}
 <ul class="ea-choices-list" style="margin-top: 0">
 <li><a class="ea-choice" href="#">Tchicaya</a></li>
 </ul>
-<p class="ea-choices-invitation">Si vous écrivez «&nbsp;tchikaya&nbsp;», dites-nous où cette écriture est employée.</p>
-<button class="ea-choices-action" type="button">Proposer une source</button>
+<p class="ea-choices-invitation" id="main-typo-invitation-night">Si vous écrivez «&nbsp;tchikaya&nbsp;», dites-nous où cette écriture est employée.</p>
+<button class="ea-choices-action" type="button" aria-describedby="main-typo-invitation-night">Proposer une source</button>
 <div><button class="ea-owed-action" type="button">Proposer une source</button></div>
 </div>
 <p class="ds-val">Le fond var(--accent-tint) reste clair la nuit, alors que le texte de la page devient clair : 1,12:1. La puce et le bouton prennent donc le texte du fond accentué, var(--accent-foreground) : 13,5:1 de jour comme de nuit.</p>
@@ -1133,8 +1133,8 @@ body{margin:0}
 <ul class="ea-choices-list">
 <li><a class="ea-choice" href="#">Tchicaya</a></li>
 </ul>
-<p class="ea-choices-invitation">Si vous écrivez «&nbsp;tchikaya&nbsp;», dites-nous où cette écriture est employée.</p>
-<button class="ea-choices-action" type="button">Proposer une source</button>
+<p class="ea-choices-invitation" id="main-typo-invitation-tchikaya">Si vous écrivez «&nbsp;tchikaya&nbsp;», dites-nous où cette écriture est employée.</p>
+<button class="ea-choices-action" type="button" aria-describedby="main-typo-invitation-tchikaya">Proposer une source</button>
 </section>
 <p class="ea-placeholder ea-fiche-example">[La recherche trouve aussi la fiche Tchicaya. La puce y mène déjà : la page ne la montre pas une deuxième fois. Sans autre fiche, ni bloc de fiches ni filtres ; « Aller plus loin » suit.]</p>
 </div>
@@ -1160,8 +1160,8 @@ body{margin:0}
 <li><a class="ea-choice" href="#">Konan</a></li>
 <li><a class="ea-choice" href="#">Konaté</a></li>
 </ul>
-<p class="ea-choices-invitation">Si vous écrivez «&nbsp;konana&nbsp;», dites-nous où cette écriture est employée.</p>
-<button class="ea-choices-action" type="button">Proposer une source</button>
+<p class="ea-choices-invitation" id="main-typo-invitation-konana">Si vous écrivez «&nbsp;konana&nbsp;», dites-nous où cette écriture est employée.</p>
+<button class="ea-choices-action" type="button" aria-describedby="main-typo-invitation-konana">Proposer une source</button>
 </section>
 <section class="ea-fiche-group" style="margin-top: var(--afh-section-gap)">
 <h4 class="ea-fiche-group-title">La fiche trouvée</h4>
@@ -1386,7 +1386,7 @@ body{margin:0}
 
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":25904}}'>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":25928}}'>
 class Component extends DCLogic {
 renderVals() {
 return {};

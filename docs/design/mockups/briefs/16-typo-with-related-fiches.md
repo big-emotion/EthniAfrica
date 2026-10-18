@@ -6,7 +6,8 @@ Written 2026-10-18 as brief 13, renumbered 16 the same day (pull request
 #1832 holds briefs 13 to 15). A review through three lenses (art direction,
 doctrine, accessibility) rejected the first drawing; a second review rejected
 the redrawing; a third review rejected two points of the third drawing, and
-this is the fourth (see « Second review » and « Third review » below).
+this is the fourth, with a fourth review's corrections (see « Second
+review », « Third review » and « Fourth review » below).
 Status: **proposed, awaiting the operator's approval.** Nothing here binds the
 code until the operator approves it or asks for changes. The pull request that
 needs it (#1835, ETNI-2092) must not merge before then.
@@ -64,7 +65,11 @@ In order:
 4. **The invitation**, under the choice: the note « Si vous écrivez
    « tchikaya », dites-nous où cette écriture est employée. » (caption, soft
    ink) and the quiet link « Proposer une source » (bold, accent ink,
-   underlined, 44 px tall, no fill, no border).
+   underlined, 44 px tall, no fill, no border). The link wraps, left-aligned,
+   when the text is enlarged, and the note describes it (`aria-describedby`
+   on the link, the note's `id`): moving from button to button, a screen
+   reader says the source is about the spelling typed, not about the lead
+   under the heading above.
 5. **The way out**: « Aller plus loin », the peoples and the families.
 
 A note marked as such ends the column: the search also finds the fiche
@@ -76,11 +81,12 @@ trouvées (brief 16, proposé) »: the choice chip at rest and focused, beside t
 neutral lens pills; the group heading in the singular and the plural, in both
 wordings (« s’écrit presque de la même façon », « ressemble au nom cherché »);
 a chip that does not bear its fiche's filed name, with its line (« jarra »:
-Jara, then « Jara est une écriture du nom Diarra. »); the invitation (note and
-quiet link); a night frame (`.dark`) with the chip, the quiet link and the
+Jara, then « La fiche Diarra donne aussi l’écriture Jara. »); the invitation
+(note and quiet link); a night frame (`.dark`) with the chip, the quiet link
+and the
 accented button of `search-unknown`; one 426 px frame for « tchikaya » (one
 choice, no other fiche) and one for « konana » (two choices, the filters, and
-one fiche found). Main measures 25904 px with brief 16.
+one fiche found). Main measures 25928 px with brief 16.
 
 « konana » is an example the rules produce, taken from the corpus with the
 search model of `src/lib/search/__fixtures__/corpusNameModel.ts` and held by
@@ -92,8 +98,14 @@ letter, so it is no choice, and the page lists it under the related-only
 caution with its own line. Konan and Konaté stay choices and are not shown as
 fiches. The model is not the search: the SQL stays the authority.
 
-Every space before « ? », « : », « ; », « ! » and inside the guillemets is a
-no-break space (U+00A0), on the boards as in `src/lib/i18n/copy/searchFeed.ts`.
+In the page's own copy, every space before « ? », « : », « ; », « ! » and
+inside the guillemets is a no-break space (U+00A0), on the boards as in
+`src/lib/i18n/copy/searchFeed.ts`. Text the page reads from a fiche keeps the
+fiche's spacing: the Onana card on `Main` copies its `shortLine`, which has an
+ordinary space before « ; », as many fiche lines do. A pass over the fiche
+lines, or one rule for French punctuation at render, is a follow-up (see
+« Follow-ups »); editing the board alone would not change what the page
+shows.
 
 ## Decisions
 
@@ -148,8 +160,12 @@ and keeps the approval of the boards.
    noms qui ressemblent à celui-ci : choisissez celui que vous cherchez. »
    under « Des noms qui ressemblent au nom cherché ». When the form a chip
    names is not its fiche's filed name, a line in the note's ink, 8 px under
-   the chips, says which fiche records it: « Jara est une écriture du nom
-   Diarra. », « Fellata est un des noms de la fiche Peul. ». A form two fiches
+   the chips, says only what the data says, which fiche records it: « La
+   fiche Diarra donne aussi l’écriture Jara. », « La fiche Peul donne aussi le
+   nom Fellata. ». It never ranks one form under another (doctrine §1, « none
+   is crowned »): the earlier « Jara est une écriture du nom Diarra » made the
+   filed name the name and the Bambara writing a spelling derived from it,
+   and « un des noms de la fiche » made a fiche bear names. A form two fiches
    record is one search, so one chip, with one line per fiche. The invitation
    and the caution name the spelling typed instead of « ce nom », which read as
    the lead under the chip.
@@ -159,14 +175,30 @@ and keeps the approval of the boards.
    the accented button of the unknown-name page: there that button is the
    page's one action, here it would be a second one, larger than the chip.
    The code gives it its own classes (`proposeSpellingSource` in
-   `SearchFeed.tsx`); `search-unknown` keeps its button.
+   `SearchFeed.tsx`); `search-unknown` keeps its button. The link wraps
+   (`whitespace-normal text-left`: the button primitive holds its label on
+   one line, which at 200 % text on a 320 px phone pushed the page sideways),
+   and the invitation describes it (`SpellingChoicesBlock` gives the note an
+   id with `useId`, the link carries `aria-describedby`). It opens the
+   contribution form without the label « Nous nous sommes trompés ? », as
+   `proposeSource` does on the unknown-name page: the target is passed with
+   its `fieldLabel` cleared, and the form names it « Recherche · tchikaya »
+   (`targetLabels["search-query"]` in `src/lib/i18n/copy/reports.ts`), not by
+   its internal type.
 7. **The choice is the page's one action.** It takes the name chip of `Main`
    (body font, `--afh-text-small` 700, 6 px between chips) with the accent
-   (border `var(--accent)`, fill `var(--accent-tint)`), so it stands apart from
-   the neutral filter pills. Its text is `var(--accent-foreground)`: the tint
-   stays light at night while the page's ink turns light (1.12:1 with
+   (border `var(--accent-ink)`, fill `var(--accent-tint)`), so it stands apart
+   from the neutral filter pills. Its text is `var(--accent-foreground)`: the
+   tint stays light at night while the page's ink turns light (1.12:1 with
    `--afh-text`, 13.5:1 with `--accent-foreground`). The button of
-   `search-unknown` (`.ea-owed-action`) takes the same ink. Its heading is the
+   `search-unknown` (`.ea-owed-action`) takes the same ink. The chip's border
+   differs from that button's `var(--accent)` on purpose: by day the accent
+   border is 2.94:1 on the parchment and the fill 1.29:1, while the heading
+   above the chip and the link below it are both 16 px bold in accent ink
+   (6.01:1). With an accent border, only the fill told « the page's one
+   action » apart from those two lines. The accent-ink border is 6.01:1 by
+   day and resolves to the night ocre after dark; the unknown-name button
+   stands alone in its verdict and keeps its border. Its heading is the
    small group heading of the « Fiches » lens (`.ea-fiche-group-title`), in
    the singular for one choice. The verdict line stays the strongest line
    under the name.
@@ -264,6 +296,30 @@ blocked; both are fixed in the boards, this brief and the code.
   same way (decision 5). `SearchFeedMisspelling.test.tsx` holds « jarra »
   and « felata »; the query layer's tests hold the API field.
 
+## Fourth review (2026-10-18)
+
+The fourth drawing was reviewed again through the three lenses. The
+operator delegated the answers on 2026-10-17; what changed:
+
+- **The line under a chip ranked the names** (doctrine). « Jara est une
+  écriture du nom Diarra » made Diarra the name and Jara a spelling of it,
+  while the Diarra fiche says the name is written Jàra in Bambara. The line
+  now says only which fiche records the form: « La fiche Diarra donne aussi
+  l’écriture Jara. », « La fiche Peul donne aussi le nom Fellata. »
+  (decision 5).
+- **The amendment drafts left DEC-075 and REQ-125 contradicting the code**
+  (doctrine): the lead named by the form that scored, a people lead included,
+  and the three cases where no lead is offered beside results. The drafts are
+  added under « Proposed amendments ».
+- **The form behind « Proposer une source »** (doctrine, accessibility) asked
+  « Nous nous sommes trompés ? » and named its target « search-query ». It now
+  opens as on the unknown-name page, and names its target « Recherche »
+  (decision 6).
+- **The link could not wrap and was not tied to its note** (accessibility).
+  It wraps, and the note describes it, on the boards, `Main` and the page
+  (decision 6, « The boards » item 4).
+- **The chip's border** is the accent ink (decision 7).
+
 ## States to draw
 
 Only the first is drawn as a board; the others are held by tests or drawn on
@@ -274,10 +330,10 @@ Only the first is drawn as a board; the others are held by tests or drawn on
 - **Several leads and a fiche found**: « konana » → Konan, Konaté, and the
   Onana fiche (drawn on `Main`).
 - **A lead through another of its forms**: « jarra » → the chip Jara and the
-  line « Jara est une écriture du nom Diarra. » (drawn on `Main` as a
+  line « La fiche Diarra donne aussi l’écriture Jara. » (drawn on `Main` as a
   component). A people lead through an exonym, « felata » → Fellata, makes no
   spelling claim (« Un nom qui ressemble au nom cherché »), with the line
-  « Fellata est un des noms de la fiche Peul. ». Held by
+  « La fiche Peul donne aussi le nom Fellata. ». Held by
   `SearchFeedMisspelling.test.tsx`.
 - **A spelling a fiche writes in its text**: « sanoh », one of the Kuranko
   clans and written in the source of the Sanou fiche. No lead is offered: the
@@ -382,10 +438,50 @@ so Chukwu is no longer returned for « tchikaya ». »
 form that scored, beside its filed name; a client names that form. » New GWT:
 given « jarra », which reaches Diarra only through its recorded spelling Jara,
 when the search offers Diarra as a lead, then the lead's `matchedForm` is
-Jara and the page names Jara, with the line « Jara est une écriture du nom
-Diarra. ». **DEC-075** (**proposed**), a further condition while the question
-below is open: « No family name is offered as a lead while a fiche the search
-found writes the typed word in its own text » (decision 13).
+Jara and the page names Jara, with the line « La fiche Diarra donne aussi
+l’écriture Jara. ». **DEC-075** (**proposed**), a further condition while the
+question below is open: « No family name is offered as a lead while a fiche
+the search found writes the typed word in its own text » (decision 13).
+
+**DEC-075** (**proposed**), its Decision: « … and is offered under its filed
+name, as migration 094 does for a people » becomes « … and is offered under
+the form that scored (`matched_form`), with a line naming the fiche that
+records it when that form is not its filed name; this also applies to a
+people lead ». The chips name `matchedForm` (Jara for « jarra », Fellata for
+« felata »), and « Do not » forbids naming a lead by its filed name when
+another of its forms scored: as published, the sentence says the opposite.
+
+**REQ-125** (**proposed**), its added statement: after « must be offered even
+when the search found related fiches », add « unless a fiche the search found
+writes the typed word in its own text (DEC-075, open question), the search is
+scoped to a country or a family, or it was widened word by word ». The code
+withholds the lead in these three cases (`offerFamilyNames` in
+`src/lib/supabase/queries/afrik/search.ts`). New GWT, one per case:
+
+- given « sanoh », which the Kuranko fiche counts among its clans and which
+  the source of the Sanou fiche writes (« Notice SANOU / SANOH / SANON »),
+  when the search finds those fiches, then no family-name lead is offered,
+  Sanogo and Sanou are not presented as the name the reader meant, and the
+  page is the related-only one;
+- given « tchikaya » searched with the country filter `COG`, when the search
+  runs, then no family-name lead is offered, and the page stays the relation
+  browse its filter asked for;
+- given the two-word query « hausa egypte », which no entry answers whole and
+  which the search widens word by word to Hausa and Égypte, when the search
+  runs, then no family-name lead is offered, even one close to the whole
+  phrase.
+
+**REQ-125** (**proposed**): « Peoples, countries and linguistic families keep
+their near misses as before » becomes « Peoples, countries and linguistic
+families keep their near-miss scan and its 0.2 threshold, with no
+first-letter rule, as before; their chip names the form that scored (for a
+people, its filed name, the name it gives itself or one of its exonyms; for a
+country or a family, its name), with the line naming the fiche that records
+it when that form is not its filed name ». The same sentence in DEC-075 takes
+the same wording. New GWT: given « felata », which reaches the Peul fiche
+through its exonym Fellata, when the search offers Peul as a lead, then the
+chip names Fellata, with the line « La fiche Peul donne aussi le nom
+Fellata. », and nothing says it is written the same way.
 
 **DEC-075, a question for the operator** (**open**): a spelling a fiche
 records in its text — « Sanoh » among the Kuranko clans, and in the source of
@@ -401,7 +497,11 @@ offered beside such a fiche, and the page stays the related-only one
 
 ## Follow-ups, out of scope
 
-Listed for their own briefs, not changed here:
+Listed for their own briefs, not changed here. Approving these boards does
+not approve the shared chrome they draw as it stands: the focus states (the
+search input, the lens pills, the « Aller plus loin » links) and the layout
+listed below (« Aller plus loin » without a heading or a list, the header at
+320 px) stay to be decided in their own briefs.
 
 - The shared eyebrow « D'où vient ce nom » on the pages with no answer (also
   a question standing for a title; flagged to the #1830 sweep).
@@ -430,6 +530,10 @@ Listed for their own briefs, not changed here:
   `search-unknown` button from `--afh-text` (#2c2018) to
   `--accent-foreground` (#1a1208), a difference no reader sees; the boards
   record it.
+- Many fiche lines (`shortLine`) have an ordinary space before « ; » or
+  « : », so the sign can wrap alone onto the next line when the text is
+  enlarged (the Onana card). A no-break-space pass over the fiche lines, or
+  one rule for French punctuation at render, needs its own ticket.
 
 ## Checked against the rules of the briefs
 
@@ -459,10 +563,36 @@ hold that): Tchicaya as the one result and the one lead, with
 eyebrow, name, line, text, choice heading, chip, note, link, « Aller plus
 loin » eyebrow and links) has the same position, size, type and colour on the
 page and on the board at the three widths. The differences: the board's note,
-and the footer (outside this state). The « konana » frame of `Main` is held by
+the « Aller plus loin » links (14 px on the boards, 13 px on the page, listed
+under « Follow-ups »), and the footer (outside this state). Measured again
+after the fourth review, at 430, 768 and 1440: the chip's border is the
+accent ink on both (rgb(131, 85, 20) by day, the night ocre rgb(201, 130, 31)
+after dark), the link wraps left-aligned on both, and its description is the
+invitation on both. At 320 px with the link's text at 32 px, it takes two
+lines inside its 272 px column and the page does not scroll sideways. The
+form it opens names « Recherche · tchikaya » and does not ask « Nous nous
+sommes trompés ? ». The « konana » frame of `Main` is held by
 `SearchFeedMisspelling.test.tsx` (the filters, the plural copy, Onana alone
 under « La fiche trouvée », « Fiches 1 »), and so are « jarra » and « felata ».
 
 ## Approval record
 
-Empty until the operator approves.
+To be approved with the boards (« Proposed amendments »):
+
+- Charter §3 ter, the exceptional states.
+- REQ-201: the sound-only family names withheld beside a family-name lead,
+  and its « Keyta » block.
+- DEC-075: its tradeoff on Chukwu; its Decision, a lead offered under the
+  form that scored, a people lead included; its further condition while the
+  « sanoh » question is open.
+- ETNI-2092, « Out ».
+- REQ-125: `matchedForm` and the « jarra » GWT; the three cases where no
+  lead is offered beside results, with the « sanoh », « tchikaya » with
+  `COG` and « hausa egypte » GWT; the peoples, countries and families keeping
+  their scan and their 0.2, named by the form that scored, with the
+  « felata » GWT.
+
+Approving the boards does not approve the shared chrome focus states and
+layout listed under « Follow-ups ».
+
+The record itself is empty until the operator approves.

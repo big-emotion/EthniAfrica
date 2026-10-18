@@ -1,5 +1,6 @@
 import { render, screen, within } from "@testing-library/react";
-import { describe, expect, it } from "vitest";
+import userEvent from "@testing-library/user-event";
+import { describe, expect, it, onTestFinished, vi } from "vitest";
 
 import type { SearchCompanionsData } from "@/api/v2/schemas/searchCompanions";
 import { SearchFeed } from "@/components/search/SearchFeed";
@@ -203,7 +204,10 @@ describe("a misspelling whose only fiche found is its lead", () => {
   // The choice is the page's one action: the name chip of Main in the body
   // font, with the accent, so it stands apart from the neutral filter pills.
   // Its ink is the one the accent fill carries in both themes: the page's
-  // body ink turns light at night, on a tint that stays light.
+  // body ink turns light at night, on a tint that stays light. Its border is
+  // the accent ink: var(--accent) on the parchment is 2.94:1 by day, and the
+  // fill alone (1.29:1) left the chip's shape weaker than the accent-ink
+  // heading and link around it.
   // @req REQ-180
   it("draws each choice as an accented name chip, legible by day and by night", () => {
     renderMisspelling();
@@ -212,10 +216,11 @@ describe("a misspelling whose only fiche found is its lead", () => {
       "link",
       { name: "Tchicaya" }
     );
+    expect(choice).not.toHaveClass("border-[color:var(--accent)]");
     expect(choice).toHaveClass(
       "min-h-11",
       "rounded-afh-full",
-      "border-[color:var(--accent)]",
+      "border-[color:var(--accent-ink)]",
       "bg-[color:var(--accent-tint)]",
       "text-afh-small",
       "font-bold",
@@ -258,6 +263,60 @@ describe("a misspelling whose only fiche found is its lead", () => {
     ).toBeTruthy();
   });
 
+  // The board's `.ea-choices-action` wraps. With text alone at 200 % on a
+  // 320 px phone the label needs about 303 px of a 272 px column: a label
+  // held on one line would push the page sideways (WCAG 1.4.4, 1.4.10).
+  // @req REQ-180
+  it("lets the quiet link wrap onto a second line when the text is enlarged", () => {
+    renderMisspelling();
+
+    const action = screen.getByRole("button", { name: "Proposer une source" });
+    expect(action).toHaveClass("whitespace-normal", "text-left");
+    expect(action).not.toHaveClass("whitespace-nowrap");
+  });
+
+  // Moving by button, a screen reader would hear « Proposer une source »
+  // under a heading about Tchicaya, and could take it for a source about the
+  // lead. The note it answers says it is about the spelling typed.
+  // @req REQ-180
+  it("describes the quiet link by the invitation it answers", () => {
+    renderMisspelling();
+
+    const choices = screen.getByTestId("feed-block-appellations");
+    const invitation = within(choices).getByText(
+      asShown(copy.answer.typoInvitation("tchikaya"))
+    );
+    const action = screen.getByRole("button", { name: "Proposer une source" });
+    expect(invitation.id).not.toBe("");
+    expect(action).toHaveAttribute("aria-describedby", invitation.id);
+    expect(action).toHaveAccessibleDescription(
+      /tchikaya.*dites-nous où cette écriture est employée/
+    );
+  });
+
+  // The reader is saying where their spelling is used, not that we were
+  // wrong: the form asks no « Nous nous sommes trompés ? », which brief 12
+  // part A removed, and names the target in words, not by its internal type.
+  // @req REQ-180
+  it("opens the contribution form on the spelling typed, without the question brief 12 removed", async () => {
+    // The form's proof of work asks the API for a challenge on mount; refused
+    // here, it fails quietly instead of reaching for a server on :3000.
+    vi.stubGlobal("fetch", vi.fn().mockResolvedValue({ ok: false }));
+    onTestFinished(() => {
+      vi.unstubAllGlobals();
+    });
+    renderMisspelling();
+
+    await userEvent.click(
+      screen.getByRole("button", { name: "Proposer une source" })
+    );
+
+    const dialog = await screen.findByRole("dialog");
+    expect(within(dialog).getByText("Recherche · tchikaya")).toBeVisible();
+    expect(within(dialog).queryByText(/Nous nous sommes trompés/)).toBeNull();
+    expect(within(dialog).queryByText(/search-query/)).toBeNull();
+  });
+
   // Tchicaya scored through its filed name: there is no other form to
   // explain, so no line follows the chip.
   // @req REQ-125
@@ -266,7 +325,7 @@ describe("a misspelling whose only fiche found is its lead", () => {
 
     expect(
       within(screen.getByTestId("feed-block-appellations")).queryByText(
-        /est une écriture du nom|est un des noms de la fiche/
+        /donne aussi|est une écriture du nom|est un des noms de la fiche/
       )
     ).toBeNull();
   });
@@ -399,7 +458,8 @@ describe("a misspelling that also finds other fiches", () => {
 describe("a lead reached through another of its forms", () => {
   // « jarra » reaches Diarra through its recorded spelling Jara: « Diarra
   // s'écrit presque de la même façon » would be false, Diarra beginning with
-  // another letter.
+  // another letter. The line says which fiche records Jara and ranks neither
+  // form under the other (doctrine §1: none is crowned).
   // @req REQ-125
   it("names the family name's spelling that scored, and the fiche that records it", () => {
     renderMisspelling({
@@ -420,10 +480,12 @@ describe("a lead reached through another of its forms", () => {
     expect(screen.getByTestId("feed-block-verdict")).not.toHaveTextContent(
       /Diarra s’écrit/
     );
-    const note = within(
-      screen.getByTestId("feed-block-appellations")
-    ).getByText(copy.answer.typoFormOf.familyName("Jara", "Diarra"));
+    const choices = screen.getByTestId("feed-block-appellations");
+    const note = within(choices).getByText(
+      "La fiche Diarra donne aussi l’écriture Jara."
+    );
     expect(note).toHaveClass("text-afh-caption", "text-afh-text-soft");
+    expect(choices).not.toHaveTextContent(/une écriture du nom/);
     const invitation = screen.getByText(
       asShown(copy.answer.typoInvitation("jarra"))
     );
@@ -464,8 +526,11 @@ describe("a lead reached through another of its forms", () => {
       })
     ).toBeVisible();
     expect(
-      screen.getByText(copy.answer.typoFormOf.other("Fellata", "Peul"))
+      screen.getByText("La fiche Peul donne aussi le nom Fellata.")
     ).toBeVisible();
+    expect(screen.getByTestId("feed-block-appellations")).not.toHaveTextContent(
+      /un des noms de la fiche/
+    );
   });
 
   // Two fiches may record one form (Fellata for two Fulbe fiches): the form
@@ -498,12 +563,10 @@ describe("a lead reached through another of its forms", () => {
       asShown(copy.answer.typoResembling.summary("felata", 1))
     );
     expect(
-      screen.getByText(copy.answer.typoFormOf.other("Fellata", "Peul"))
+      screen.getByText("La fiche Peul donne aussi le nom Fellata.")
     ).toBeVisible();
     expect(
-      screen.getByText(
-        copy.answer.typoFormOf.other("Fellata", "Fulbe du Massina")
-      )
+      screen.getByText("La fiche Fulbe du Massina donne aussi le nom Fellata.")
     ).toBeVisible();
   });
 

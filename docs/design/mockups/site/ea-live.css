@@ -5027,7 +5027,11 @@ a.ea-fiche-card:focus-visible { outline: none; box-shadow: var(--afh-ring-focus)
    on every approved board, when there are two. The choice is Main's name chip
    (.afh-name-timeline-name) in the accent, the page's one action
    (SpellingChoicesBlock), in the accent fill's ink so that it holds at night.
-   Under it, the invitation is a note (.ea-fiche-group-note) and a quiet link
+   Its border is --accent-ink (6.01:1 on the parchment by day, the night ocre
+   after dark), not the --accent of .ea-owed-action (2.94:1 by day): the chip
+   sits between a heading and a link in accent ink, and its outline has to
+   hold its own beside them. Under it, the invitation is a note
+   (.ea-fiche-group-note) and a quiet link
    (.ea-lens-back), never a second accented button. Its heading and the fiches
    found reuse the « Fiches » lens of brief 12 (.ea-fiche-group-*,
    .ea-fiche-grid[data-cols]). Every spacing holds at every width; tokens only,
@@ -5038,7 +5042,7 @@ a.ea-fiche-card:focus-visible { outline: none; box-shadow: var(--afh-ring-focus)
 .ea-choice {
   display: inline-flex; align-items: center; min-height: 44px;
   padding: var(--afh-space-xs) var(--afh-space-lg);
-  border: 1px solid var(--accent); border-radius: var(--afh-radius-full);
+  border: 1px solid var(--accent-ink); border-radius: var(--afh-radius-full);
   background: var(--accent-tint);
   font-size: var(--afh-text-small); font-weight: 700;
   color: var(--accent-foreground);
@@ -5056,9 +5060,11 @@ a.ea-fiche-card:focus-visible { outline: none; box-shadow: var(--afh-ring-focus)
   font-size: var(--afh-text-caption); line-height: var(--afh-leading-caption);
   color: var(--afh-text-soft);
 }
+/* It wraps, left-aligned, when the text is enlarged: on one line at 200 %
+   text on a 320 px phone it would push the page sideways. */
 .ea-choices-action {
   display: inline-flex; align-items: center; min-height: 44px;
-  padding: 0; border: 0; background: none;
+  padding: 0; border: 0; background: none; text-align: left;
   font-size: var(--afh-text-small); font-weight: 700; color: var(--accent-ink);
   text-decoration: underline; text-underline-offset: 4px;
 }

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { ReactNode } from "react";
+import { useId, type ReactNode } from "react";
 
 import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
 import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
@@ -16,12 +16,17 @@ export interface SpellingChoicesBlockProps {
   title: string;
   /**
    * One line per chip that does not bear its fiche's filed name, saying
-   * which fiche records the form (« Jara est une écriture du nom Diarra. »).
+   * which fiche records the form (« La fiche Diarra donne aussi l’écriture
+   * Jara. »).
    */
   forms?: readonly string[];
   /** For a reader whose own spelling is the one searched. */
   invitation?: string;
-  action?: ReactNode;
+  /**
+   * Receives the invitation's id, so the action is described by the
+   * sentence it answers rather than only by the heading about the lead.
+   */
+  action?: (describedBy: string | undefined) => ReactNode;
 }
 
 /**
@@ -35,7 +40,10 @@ export interface SpellingChoicesBlockProps {
  * line in the note's ink says which fiche records it.
  *
  * The chip's ink is the accent fill's own (`--accent-foreground`): the tint
- * stays light at night while the page's body ink turns light (1.12:1).
+ * stays light at night while the page's body ink turns light (1.12:1). Its
+ * border is `--accent-ink`, not `--accent` as on `.ea-owed-action`: the
+ * accent border is 2.94:1 on the parchment by day, and the chip sits between
+ * a heading and a link in accent ink, so its outline has to hold its own.
  */
 // @req REQ-125
 export function SpellingChoicesBlock({
@@ -45,6 +53,7 @@ export function SpellingChoicesBlock({
   invitation,
   action,
 }: SpellingChoicesBlockProps) {
+  const invitationId = useId();
   return (
     <SearchFeedBlock id="appellations" zone="first" className="pt-afh-2xl">
       <h2 className="m-0 font-afh text-afh-small font-bold leading-[var(--afh-leading-small)] text-[color:var(--accent-ink)]">
@@ -59,7 +68,7 @@ export function SpellingChoicesBlock({
             <Link
               href={choice.href}
               className={cn(
-                "inline-flex min-h-11 items-center rounded-afh-full border border-[color:var(--accent)] bg-[color:var(--accent-tint)] px-afh-lg py-afh-xs text-afh-small font-bold text-[color:var(--accent-foreground)] no-underline",
+                "inline-flex min-h-11 items-center rounded-afh-full border border-[color:var(--accent-ink)] bg-[color:var(--accent-tint)] px-afh-lg py-afh-xs text-afh-small font-bold text-[color:var(--accent-foreground)] no-underline",
                 CHARTER_FOCUS_RING
               )}
             >
@@ -77,11 +86,16 @@ export function SpellingChoicesBlock({
         </p>
       ))}
       {invitation ? (
-        <p className="mt-afh-2xl text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft">
+        <p
+          id={invitationId}
+          className="mt-afh-2xl text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft"
+        >
           {invitation}
         </p>
       ) : null}
-      {action ? <div>{action}</div> : null}
+      {action ? (
+        <div>{action(invitation ? invitationId : undefined)}</div>
+      ) : null}
     </SearchFeedBlock>
   );
 }

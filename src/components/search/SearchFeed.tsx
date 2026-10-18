@@ -836,16 +836,21 @@ export function SearchFeed({
   // The same invitation for a spelling we do not hold (brief 16). Under the
   // choices it stays quiet: the choice is that page's one action, and the
   // accented button would be a second one, larger than the chip.
-  const proposeSpellingSource = (
+  const proposeSpellingSource = (describedBy: string | undefined) => (
     <SearchFeedContributionAction
       language={language}
-      target={contributionTarget}
+      // As on the unknown-name page: the form does not ask « Nous nous sommes
+      // trompés ? ». The reader is saying where their spelling is used.
+      target={{ ...contributionTarget, fieldLabel: undefined }}
       label={answerCopy.invitationAction}
       preferredKind="contribution"
       variant="ghost"
+      describedBy={describedBy}
       // Board search-state-typo (`.ea-choices-action`), the quiet link of
-      // `.ea-lens-back`: no fill, no border, no hover lift.
-      className="h-auto min-h-11 justify-start px-0 py-0 font-bold text-[color:var(--accent-ink)] underline underline-offset-4 hover:bg-transparent hover:text-[color:var(--accent-ink)] motion-safe:hover:shadow-none"
+      // `.ea-lens-back`: no fill, no border, no hover lift. It wraps like the
+      // board's link: held on one line, text enlarged to 200 % on a 320 px
+      // phone pushed the page sideways.
+      className="h-auto min-h-11 justify-start whitespace-normal px-0 py-0 text-left font-bold text-[color:var(--accent-ink)] underline underline-offset-4 hover:bg-transparent hover:text-[color:var(--accent-ink)] motion-safe:hover:shadow-none"
     />
   );
   const nextStep = (

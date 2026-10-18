@@ -87,15 +87,17 @@ describe("the words of a misspelling page", () => {
   });
 
   // The chip names the form that scored. When it is not the fiche's filed
-  // name, a line says which fiche records it, as the data does: Jara is a
-  // recorded spelling of Diarra, Fellata one of the Peul fiche's names.
+  // name, a line says only what the data says, which fiche records it. It
+  // never ranks one form under another (doctrine §1: none is crowned): « Jara
+  // est une écriture du nom Diarra » set the Bambara writing under the filed
+  // name, and a fiche does not « bear » names.
   // @req REQ-125
-  it("says which fiche records a form that is not its filed name", () => {
+  it("says which fiche records a form that is not its filed name, without ranking the forms", () => {
     expect(copy.typoFormOf.familyName("Jara", "Diarra")).toBe(
-      "Jara est une écriture du nom Diarra."
+      "La fiche Diarra donne aussi l’écriture Jara."
     );
     expect(copy.typoFormOf.other("Fellata", "Peul")).toBe(
-      "Fellata est un des noms de la fiche Peul."
+      "La fiche Peul donne aussi le nom Fellata."
     );
   });
 

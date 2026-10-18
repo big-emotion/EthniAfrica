@@ -17,6 +17,8 @@ export interface SearchFeedContributionActionProps {
   variant?: ButtonProps["variant"];
   className?: string;
   preferredKind?: Extract<FlagKind, "contribution" | "correction-proposal">;
+  /** The id of the sentence that says what the reader would contribute. */
+  describedBy?: string;
 }
 
 function meaningfulTarget(target: FlagFormTarget): FlagFormTarget | null {
@@ -34,6 +36,7 @@ export function SearchFeedContributionAction({
   variant = "accent",
   className,
   preferredKind = "contribution",
+  describedBy,
 }: SearchFeedContributionActionProps) {
   const resolvedTarget = meaningfulTarget(target);
   if (!resolvedTarget) return null;
@@ -44,6 +47,7 @@ export function SearchFeedContributionAction({
       variant={variant}
       className={cn("min-h-11 text-afh-small", className)}
       onClick={open}
+      aria-describedby={describedBy}
       data-flag-kind={preferredKind}
     >
       {label}
