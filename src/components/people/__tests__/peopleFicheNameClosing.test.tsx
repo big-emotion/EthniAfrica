@@ -12,7 +12,6 @@ import {
   type NameHistory,
 } from "@/lib/afrik/parsers/nameHistoryParser";
 import { getLocalizedRoute } from "@/lib/routing";
-import { nameStoryHref } from "@/lib/search/nameClosing";
 import { PEUL_HISTORY } from "@/lib/search/__fixtures__/nameTimelineFixtures";
 import type { PeopleDetail } from "@/types/afrik-frontend";
 
@@ -221,8 +220,7 @@ describe("PeopleDetailViewV2 — the link to the story of its name", () => {
     const link = within(answer).getByRole("link", {
       name: /^Suivre l'histoire du nom Zarma/,
     });
-    expect(link).toHaveAttribute("href", `${SEARCH}?q=Zarma`);
-    expect(link).toHaveAttribute("href", nameStoryHref("fr", "Zarma"));
+    expect(link).toHaveAttribute("href", `${SEARCH}/zarma`);
     expect(answer.lastElementChild).toBe(link.closest(".ea-story"));
     const others = container.querySelector(
       '[data-fiche-section="Les autres noms"]'

@@ -4,9 +4,9 @@
  * nom »). The result page is the site's central surface; before this link the
  * only result-page links on a fiche led to other names.
  *
- * Which name it may name is decided on the server (`storyLinkName`, tested in
- * src/lib/search/__tests__/storyLinkName.test.ts): the link only lays out the
- * name it is given.
+ * Which name it may name, and where it leads, are decided on the server
+ * (`nameStoryLink`, tested in src/lib/search/__tests__/nameStoryLink.test.ts):
+ * the link only lays out the name and the href it is given.
  */
 
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
@@ -14,7 +14,6 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 
 import { FicheStoryLink } from "@/components/fiche/FicheStoryLink";
 import { getLocalizedRoute } from "@/lib/routing";
-import { nameStoryHref } from "@/lib/search/nameClosing";
 
 afterEach(() => {
   cleanup();
@@ -24,18 +23,21 @@ afterEach(() => {
 
 const SEARCH = getLocalizedRoute("fr", "search");
 
+/** Côte d'Ivoire's story, as `nameStoryLink` hands it to the CIV fiche. */
+const CIV_STORY = {
+  name: "Côte d'Ivoire",
+  href: `${SEARCH}/c%C3%B4te%20d'ivoire`,
+};
+
 describe("FicheStoryLink", () => {
   // @req REQ-198
-  it("names the fiche's leading name and leads to the page a reader gets by searching it", () => {
-    render(
-      <FicheStoryLink name="Côte d'Ivoire" from="country" language="fr" />
-    );
+  it("names the fiche's leading name and leads where the server says its story is told", () => {
+    render(<FicheStoryLink story={CIV_STORY} from="country" language="fr" />);
 
     const link = screen.getByRole("link", {
       name: /^Suivre l'histoire du nom Côte d'Ivoire/,
     });
-    expect(link).toHaveAttribute("href", `${SEARCH}?q=C%C3%B4te+d%27Ivoire`);
-    expect(link).toHaveAttribute("href", nameStoryHref("fr", "Côte d'Ivoire"));
+    expect(link).toHaveAttribute("href", `${SEARCH}/c%C3%B4te%20d'ivoire`);
     expect(
       screen.getByText(
         "La page du nom présente ce que disent les sources : qui l'a donné, à qui, quand et pourquoi, en remontant le temps."
@@ -45,23 +47,21 @@ describe("FicheStoryLink", () => {
 
   // @req REQ-198
   it("writes the arrow once, through the action link", () => {
-    render(
-      <FicheStoryLink name="Côte d'Ivoire" from="country" language="fr" />
-    );
+    render(<FicheStoryLink story={CIV_STORY} from="country" language="fr" />);
 
     expect(screen.getAllByTestId("action-link-arrow")).toHaveLength(1);
   });
 
   // @req REQ-198
-  it("renders nothing without a name the result page answers", () => {
+  it("renders nothing without a story the result page answers", () => {
     const { container: none } = render(
-      <FicheStoryLink name={undefined} from="people" language="fr" />
+      <FicheStoryLink story={undefined} from="people" language="fr" />
     );
     expect(none).toBeEmptyDOMElement();
     cleanup();
 
     const { container: empty } = render(
-      <FicheStoryLink name="" from="people" language="fr" />
+      <FicheStoryLink story={null} from="people" language="fr" />
     );
     expect(empty).toBeEmptyDOMElement();
   });
@@ -70,9 +70,7 @@ describe("FicheStoryLink", () => {
   it("counts the click as a step to the fiche's own name, once, under consent", () => {
     const plausible = vi.fn();
     window.plausible = plausible;
-    render(
-      <FicheStoryLink name="Côte d'Ivoire" from="country" language="fr" />
-    );
+    render(<FicheStoryLink story={CIV_STORY} from="country" language="fr" />);
 
     fireEvent.click(screen.getByRole("link", { name: /Suivre l'histoire/ }));
 
@@ -93,9 +91,7 @@ describe("FicheStoryLink", () => {
       configurable: true,
       value: beacon,
     });
-    render(
-      <FicheStoryLink name="Côte d'Ivoire" from="country" language="fr" />
-    );
+    render(<FicheStoryLink story={CIV_STORY} from="country" language="fr" />);
 
     expect(() =>
       fireEvent.click(screen.getByRole("link", { name: /Suivre l'histoire/ }))

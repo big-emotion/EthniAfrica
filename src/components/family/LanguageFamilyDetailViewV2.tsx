@@ -10,7 +10,7 @@ import { FamilyHistorySection } from "@/components/family/FamilyHistorySection";
 import { FamilyDecolonialHeader } from "@/components/family/FamilyDecolonialHeader";
 import { FamilyLinguisticTraits } from "@/components/family/FamilyLinguisticTraits";
 import { FicheStoryLink } from "@/components/fiche/FicheStoryLink";
-import { storyLinkName } from "@/lib/search/nameClosing";
+import { nameStoryLink } from "@/lib/search/nameClosing";
 import type { Language } from "@/types/shared";
 import type { ProvenanceCensus } from "@/api/v2/schemas/confidence";
 import {
@@ -129,7 +129,7 @@ export function LanguageFamilyDetailViewV2({
       onward={onward}
       storyLink={
         <FicheStoryLink
-          name={storyLinkName(
+          story={nameStoryLink(
             {
               type: "languageFamily",
               id: family.id,

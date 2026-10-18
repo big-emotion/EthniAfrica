@@ -201,7 +201,7 @@ describe("LanguageDetailViewV2 — the link to the story of its name", () => {
     const link = within(chapter).getByRole("link", {
       name: /^Suivre l'histoire du nom Lingala/,
     });
-    expect(link).toHaveAttribute("href", `${SEARCH}?q=Lingala`);
+    expect(link).toHaveAttribute("href", `${SEARCH}/lingala`);
     expect(chapter.lastElementChild).toBe(link.closest(".ea-story"));
     const readings = chapter.querySelector("[data-readings]") as Node;
     expect(
@@ -232,6 +232,8 @@ describe("LanguageDetailViewV2 — the link to the story of its name", () => {
     };
     render(<LanguageDetailViewV2 data={havu} language="fr" />);
 
+    // Kihavu is not the name hav is filed under, so it has no address of its
+    // own: the link stays the search page's reading of it.
     expect(
       screen.getByRole("link", { name: /^Suivre l'histoire du nom Kihavu/ })
     ).toHaveAttribute("href", `${SEARCH}?q=Kihavu`);
