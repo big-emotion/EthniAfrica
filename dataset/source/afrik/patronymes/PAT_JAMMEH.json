@@ -94,5 +94,63 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Jammeh est un nom de famille de Gambie, celui d'un lignage mandingue qui partageait le pouvoir au Niumi. Un récit des Jammeh le rattache à Sora Musa, un compagnon de Soundiata. On ne sait pas ce que le nom veut dire, et le projet ne connaît pas encore de trace écrite ancienne de ce nom.",
+    "names": [
+      {
+        "nameText": "Jammeh",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un lignage mandingue du Niumi, en Gambie, rattaché par son récit à Soundiata.",
+        "periodLabel": "Porté au Niumi avant l'époque coloniale ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant l'époque coloniale, selon une étude de 1978"
+            },
+            "era": "polity",
+            "statement": "Le nom Jammeh est celui de l'un des trois lignages qui se relayaient au pouvoir au Niumi, un État mandingue de la rive nord du fleuve Gambie, avec les Manneh et les Sonko, selon Donald Wright. Ces lignages sont des branches de groupes plus larges qui portent le même nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Koli Tengela in Sonko Traditions of Origin: An Example of the Process of Change in Mandinka Oral Tradition",
+                "author": "Donald R. Wright",
+                "year": 1978,
+                "url": "https://www.webpulaaku.site/tenhella/koli-tenhella-mandinka-sonko-origins-traditions.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Donald R. Wright, History in Africa, vol. 5, 1978, p. 257-271 (DOI 10.2307/3171489). Lu le 18 octobre 2026 sur une copie non officielle publiée par webPulaaku, sans pagination. Le Niumi, sur la rive nord de l'estuaire du fleuve Gambie, est l'un des États mandingues du fleuve ; « by what was likely the early sixteenth century », sept familles étendues de trois lignages, « the Jammeh, Manneh, and Sonko », eux-mêmes des segments de groupes plus larges « having the same patronymics », s'y relaient au pouvoir. L'auteur renvoie pour les traditions des Jammeh et des Manneh à son étude The Early History of Niumi (1977), non lue."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1978,
+              "to": 1978,
+              "label": "Rapporté en 1978"
+            },
+            "era": "modern",
+            "statement": "Le nom Jammeh serait celui des descendants de Sora Musa, présenté comme un chef des Mandingues qui céda le pouvoir à Soundiata, le fondateur du Mali, puis conduisit des Mandingues vers l'ouest jusqu'au Niumi, selon la tradition des Jammeh que rapporte Donald Wright. Pour Wright, ce récit dit surtout le lien du lignage avec le pays mandingue d'origine.",
+            "hypothesisGroup": "origine-jammeh",
+            "sources": [
+              {
+                "title": "Koli Tengela in Sonko Traditions of Origin: An Example of the Process of Change in Mandinka Oral Tradition",
+                "author": "Donald R. Wright",
+                "year": 1978,
+                "url": "https://www.webpulaaku.site/tenhella/koli-tenhella-mandinka-sonko-origins-traditions.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Donald R. Wright, History in Africa, vol. 5, 1978, p. 257-271 (DOI 10.2307/3171489). Lu le 18 octobre 2026 sur une copie non officielle publiée par webPulaaku, sans pagination. « Members of the Jammeh lineage look to a figure named Sora Musa », présenté comme un chef des Mandingues et un pèlerin musulman qui céda le pouvoir à Soundiata et devint l'un de ses chefs militaires, ancêtre venu en premier s'établir au Niumi. « The Manneh consider Tiramakan Traore », autre chef militaire de Soundiata, comme leur ancêtre ; leurs ancêtres seraient venus au Niumi aider les Jammeh contre une agression extérieure. L'auteur juge que ces traditions disent surtout le lien des lignages avec le pays mandingue d'origine, et qu'elles justifient la primauté des Jammeh et le rôle militaire des Manneh."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
