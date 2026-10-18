@@ -103,7 +103,7 @@
     }
   ],
   "nameHistory": {
-    "summary": "Le nom do Espírito Santo, « du Saint-Esprit », est un nom de famille portugais d'origine religieuse. Au Portugal, des frères et des sœurs prenaient ce genre de nom au couvent, et l'usage s'est ensuite répandu. Les sources lues décrivent le nom au Portugal ; elles ne disent pas quand ni comment il est arrivé à São Tomé-et-Príncipe.",
+    "summary": "Le nom do Espírito Santo, « du Saint-Esprit », est un nom de famille portugais d'origine religieuse, porté aussi à São Tomé-et-Príncipe. Au Portugal, des frères et des sœurs prenaient ce genre de nom au couvent, et l'usage s'est ensuite répandu. Les sources lues ne disent pas quand ni comment il est arrivé à São Tomé.",
     "names": [
       {
         "nameText": "do Espírito Santo",
@@ -114,6 +114,29 @@
         "shortLine": "Un nom de famille portugais d'origine religieuse, « du Saint-Esprit », écrit dès le XVIe siècle.",
         "periodLabel": "Écrit dès le XVIe siècle ; porté aujourd'hui",
         "accounts": [
+          {
+            "period": {
+              "from": 2009,
+              "to": 2009,
+              "label": "Décrit en 2009"
+            },
+            "era": "modern",
+            "statement": "Le nom Espírito Santo est porté à São Tomé-et-Príncipe : la poétesse Alda Espírito Santo, née sur l'île de São Tomé en 1926, le portait, selon la chercheuse Inocência Mata.",
+            "aspect": "usage",
+            "formAsWritten": "Alda Espírito Santo",
+            "sources": [
+              {
+                "title": "Uma tão singular figura",
+                "author": "Inocência Mata",
+                "year": 2009,
+                "url": "https://revistas.usp.br/viaatlantica/article/download/50478/54590/62538",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 259",
+                "notes": "Via Atlântica (Universidade de São Paulo), n° 16, décembre 2009 ; PDF lu le 18 octobre 2026. Page 259, résumé : « Alda Espírito Santo (1926-2010), uma das mais importantes poetisas africanas, nasceu na ilha de São Tomé ». L'article ne traite pas de l'origine du nom."
+              }
+            ]
+          },
           {
             "period": {
               "from": 2014,
