@@ -2,8 +2,24 @@
 
 Read [`README.md`](README.md), [`01-result-page-timeline.md`](01-result-page-timeline.md)
 and [`../../mockup-first-workflow.md`](../../mockup-first-workflow.md) first.
-Written 2026-10-18. Status: **scope approved by the operator on 2026-10-18;
-boards not drawn yet.** Prompt: [`claude-design-prompt-13.md`](claude-design-prompt-13.md).
+Written 2026-10-18. Status: **boards approved by the operator on
+2026-10-18.** Prompt: [`claude-design-prompt-13.md`](claude-design-prompt-13.md).
+
+### Approval record (2026-10-18, by the operator)
+
+1. After step 0, « Essayez avec » uses the examples of the approved `home`
+   board (Shenouda, Siwi, Suri, Tchad), see part C.
+2. The boards are approved with Claude Design's five own choices: the home's
+   field with its label left-aligned; a floating suggestion panel with the
+   first line highlighted for the keyboard; the submitted state keeps the term
+   and its clear button; the full screen at 430 and the dialog at 768 have no
+   dark overlay, because no token exists for one; the search page sits in a
+   640 px column.
+3. The placeholder becomes « Un peuple, une langue, un pays… »: the longer
+   « Un peuple, une langue, un pays, un nom de famille… » was cut at 430 px on
+   the page and in the full screen. The label « Quel nom cherchez-vous ? »
+   already covers family names. Part A below keeps the first wording as the
+   record of what was asked.
 
 This is **pass 4**, the first of three passes the operator approved on
 2026-10-18 after the mobile review of the Atlas, result and search pages
@@ -116,8 +132,12 @@ titled « Page de recherche (sans requête) », in the « 1 · Search » group a
 Top to bottom:
 
 1. The component of part A, empty, focused.
-2. « Essayez avec », the home's example chips, unchanged: Koroma, Four, Lamba,
-   Guinée équatoriale. « Autres exemples » as on the home.
+2. « Essayez avec », the examples of the approved `home` board: Shenouda,
+   Siwi, Suri, Tchad, and « Autres exemples », in the home's chip style.
+   Changed on 2026-10-18 by the operator after step 0: the brief first named
+   Koroma, Four, Lamba and Guinée équatoriale, but Koroma's fiche was merged
+   into PAT_KOUROUMA on 2026-10-16. The live home draws four examples at random
+   on each visit.
 3. « Cherchés cette semaine », chips of names readers searched, each opening
    its result page. Board values, from the demand journal of 2026-10-18 (28
    days, `surface = serp`): **Peul, Lingala, Côte d'Ivoire, Bantou, Guinée**.
