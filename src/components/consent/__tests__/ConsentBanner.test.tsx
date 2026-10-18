@@ -35,19 +35,19 @@ const STRIP_NAME = "Gestion des cookies";
 // The order the strip is read in and tabbed through, at every width
 // (brief 12, approval record item 5).
 const CONTROL_ORDER = [
-  "Refuser",
-  "Accepter",
   "Personnaliser",
   "Politique de données",
+  "Refuser",
+  "Accepter",
 ];
 
 function stripControls() {
   const strip = screen.getByRole("dialog", { name: STRIP_NAME });
   return [
-    within(strip).getByRole("button", { name: "Refuser" }),
-    within(strip).getByRole("button", { name: "Accepter" }),
     within(strip).getByRole("button", { name: "Personnaliser" }),
     within(strip).getByRole("link", { name: "Politique de données" }),
+    within(strip).getByRole("button", { name: "Refuser" }),
+    within(strip).getByRole("button", { name: "Accepter" }),
   ];
 }
 
@@ -149,7 +149,7 @@ describe("ConsentBanner", () => {
     before.remove();
   });
 
-  it("puts « Refuser », « Accepter », « Personnaliser », « Politique de données » in that order", () => {
+  it("puts « Personnaliser », « Politique de données », « Refuser », « Accepter » in that order", () => {
     // @req REQ-046
     render(<ConsentBanner />);
 
@@ -177,6 +177,40 @@ describe("ConsentBanner", () => {
     }
 
     expect(visited).toEqual(CONTROL_ORDER);
+  });
+
+  // @req REQ-046
+  it("wraps Shift+Tab from the strip to the last control and Tab back to the first", async () => {
+    const user = userEvent.setup();
+    render(<ConsentBanner />);
+
+    await user.tab({ shift: true });
+    expect(screen.getByRole("button", { name: "Accepter" })).toHaveFocus();
+
+    await user.tab();
+    expect(screen.getByRole("button", { name: "Personnaliser" })).toHaveFocus();
+  });
+
+  // @req REQ-046
+  it("wraps focus around the controls when the « Personnaliser » panel is open", async () => {
+    const user = userEvent.setup();
+    render(<ConsentBanner />);
+
+    const strip = screen.getByRole("dialog", { name: STRIP_NAME });
+    await user.click(
+      within(strip).getByRole("button", { name: "Personnaliser" })
+    );
+    strip.focus();
+
+    await user.tab({ shift: true });
+    expect(
+      within(strip).getByRole("button", { name: "Accepter" })
+    ).toHaveFocus();
+
+    await user.tab();
+    expect(
+      within(strip).getByRole("switch", { name: "Cookies analytiques" })
+    ).toHaveFocus();
   });
 
   it("opens the « Personnaliser » panel above the two answers", async () => {
