@@ -1056,4 +1056,5 @@ brief 16 section of `Main`, as they stand in this repository.
   Confluence.
 - The people branch's one-name rule, as set under « Tenth review », is not in
   the code #1835 merged: recette runs migration 110 as merged with #1835
-  (head db5583eed). Migration 111 carries the rule (ETNI-2092).
+  (head db5583eed). Migration 111 carries the rule, in pull request #1861
+  (ETNI-2092).
