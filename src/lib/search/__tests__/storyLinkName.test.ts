@@ -71,21 +71,35 @@ type RawFiche = Record<string, unknown> & {
 
 /**
  * The row the loader writes and the search RPC returns: the filed name under
- * its column's key, and the `content` column (a language's holds its
- * `alternateNames`; its `spellingAliases` is a column the RPC leaves out).
+ * its column's key, the `content` column (a language's holds its
+ * `alternateNames`; its `spellingAliases` is a column the RPC leaves out),
+ * and the history's names in history order (migration 109).
  */
 function searchRowOf(kind: Kind, raw: RawFiche): Record<string, unknown> {
+  const historyNames =
+    ficheNameHistory(raw, raw.id)?.names.map((name) => name.nameText) ?? [];
   switch (kind) {
     case "people":
-      return { id: raw.id, nameMain: raw.nameMain, content: raw.content };
+      return {
+        id: raw.id,
+        nameMain: raw.nameMain,
+        content: raw.content,
+        historyNames,
+      };
     case "language":
       return {
         id: raw.isoCode639_3,
         name: raw.nameFr,
         content: { alternateNames: raw.alternateNames },
+        historyNames,
       };
     default:
-      return { id: raw.id, nameFr: raw.nameFr, content: raw.content };
+      return {
+        id: raw.id,
+        nameFr: raw.nameFr,
+        content: raw.content,
+        historyNames,
+      };
   }
 }
 
@@ -165,27 +179,28 @@ function pageAnswers(entry: CorpusFiche, href: string): boolean {
 describe("storyLinkName — the name a fiche's story link may promise", () => {
   // @req REQ-198
   it.each([
-    ["people", "PPL_FULA", "Fulɓe"],
-    ["people", "PPL_KONKOMBA", "Bikpakpaam"],
-    ["languageFamily", "FLG_BERBERE", "Berbère"],
-    ["language", "dyu", "Julakan"],
-  ] as const)(
-    "names nothing on %s %s, whose result page for « %s » does not answer it",
-    (kind, id, leading) => {
-      const entry = fiche(kind, id);
-
-      expect(entry.history?.names[0].nameText).toBe(leading);
-      expect(pageAnswers(entry, nameStoryHref("fr", leading))).toBe(false);
-      expect(storyLinkName(entry.subject, entry.history, "fr")).toBeUndefined();
-    }
-  );
-
-  // @req REQ-198
-  it.each([
     ["people", "PPL_ZARMA", "Zarma"],
     ["languageFamily", "FLG_MANDE", "Mandé"],
     ["language", "hav", "Kihavu"],
     ["country", "CIV", "Côte d'Ivoire"],
+    // The search answers every name a history tells (ETNI-2093): these
+    // sixteen named nothing while it answered the filed name alone.
+    ["people", "PPL_FULA", "Fulɓe"],
+    ["people", "PPL_KONKOMBA", "Bikpakpaam"],
+    ["people", "PPL_DIAWAMBE", "Diawambé"],
+    ["people", "PPL_BANTOUS_SOMALIENS", "Bantu"],
+    ["people", "PPL_TOURA", "Wɛɛmɛɛbo"],
+    ["languageFamily", "FLG_AUSTRONESIENNE", "Austronésien"],
+    ["languageFamily", "FLG_BERBERE", "Berbère"],
+    ["languageFamily", "FLG_CREOLE", "Créole"],
+    ["languageFamily", "FLG_KHOISAN", "Khoïsan"],
+    ["languageFamily", "FLG_NILOSAHARIENNE", "Nilo-saharien"],
+    ["language", "dyu", "Julakan"],
+    ["language", "egy", "Égyptien"],
+    ["language", "kea", "Kriolu"],
+    ["language", "tuq", "Tedaga"],
+    ["language", "din", "Thuɔŋjäŋ"],
+    ["language", "arb", "Al-ʿarabiyya al-fuṣḥā"],
   ] as const)(
     "names the leading name on %s %s, and the page behind « %s » answers it",
     (kind, id, leading) => {

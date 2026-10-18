@@ -10,6 +10,7 @@ import {
   type NameHistory,
 } from "@/lib/afrik/parsers/nameHistoryParser";
 import { getLocalizedRoute } from "@/lib/routing";
+import { nameStoryHref } from "@/lib/search/nameClosing";
 import type { LanguageFamily } from "@/types/afrik";
 
 vi.mock("@/hooks/use-consent", () => ({
@@ -266,9 +267,10 @@ describe("LanguageFamilyDetailViewV2 — the link to the story of its name", () 
   });
 
   // FLG_BERBERE is filed « Berbère / Amazighe »; its story leads with
-  // « Berbère », a name the result page does not answer it under today.
+  // « Berbère », which the search answers it under since it reads every name
+  // a history tells (ETNI-2093).
   // @req REQ-198
-  it("draws no link on FLG_BERBERE, whose result page for « Berbère » does not answer it", () => {
+  it("draws « Suivre l'histoire du nom Berbère » on FLG_BERBERE, its story's leading name", () => {
     const raw = JSON.parse(
       readFileSync(
         join(
@@ -286,12 +288,13 @@ describe("LanguageFamilyDetailViewV2 — the link to the story of its name", () 
       <LanguageFamilyDetailViewV2 family={berbere} language="fr" />
     );
 
-    expect(
-      container.querySelector('[data-testid="fiche-name-story"]')
-    ).not.toBeNull();
-    expect(
-      screen.queryByRole("link", { name: /Suivre l'histoire du nom/ })
-    ).toBeNull();
+    const story = container.querySelector(
+      '[data-testid="fiche-name-story"]'
+    ) as HTMLElement;
+    const link = within(story).getByRole("link", {
+      name: /^Suivre l'histoire du nom Berbère/,
+    });
+    expect(link).toHaveAttribute("href", nameStoryHref("fr", "Berbère"));
   });
 
   // @req REQ-198

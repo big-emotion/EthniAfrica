@@ -6,6 +6,7 @@ import { LanguageDetailViewV2 } from "@/components/language/LanguageDetailViewV2
 import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import type { LanguagePageData } from "@/lib/languageDataTransformer";
 import { getLocalizedRoute } from "@/lib/routing";
+import { nameStoryHref } from "@/lib/search/nameClosing";
 
 vi.mock("next/navigation", () => ({
   usePathname: () => getLocalizedRoute("fr", "search"),
@@ -238,12 +239,12 @@ describe("LanguageDetailViewV2 — the link to the story of its name", () => {
   });
 
   // dyu is filed « Dioula »; its story leads with « Julakan », which neither
-  // the filed name nor its alternate names carry, so the result page for
-  // « Julakan » does not answer it. The fixture adds « Julakan » as a
-  // spelling alias on purpose: the search row leaves that column out, so an
-  // alias makes no page answer.
+  // the filed name nor its alternate names carry. The search answers it under
+  // every name its history tells (ETNI-2093), so the page for « Julakan »
+  // reads dyu. The spelling alias is no part of it: the search row leaves
+  // that column out.
   // @req REQ-198
-  it("draws no link on dyu, whose result page for « Julakan » does not answer it", () => {
+  it("draws « Suivre l'histoire du nom Julakan » on dyu, from its history alone", () => {
     const dioula: LanguagePageData = {
       ...lingala,
       id: "dyu",
@@ -260,11 +261,17 @@ describe("LanguageDetailViewV2 — the link to the story of its name", () => {
         ],
       } as NameHistory,
     };
-    render(<LanguageDetailViewV2 data={dioula} language="fr" />);
+    const { container } = render(
+      <LanguageDetailViewV2 data={dioula} language="fr" />
+    );
 
-    expect(
-      screen.queryByRole("link", { name: /Suivre l'histoire du nom/ })
-    ).toBeNull();
+    const chapter = container.querySelector(
+      '[data-fiche-section="L’histoire des noms"]'
+    ) as HTMLElement;
+    const link = within(chapter).getByRole("link", {
+      name: /^Suivre l'histoire du nom Julakan/,
+    });
+    expect(link).toHaveAttribute("href", nameStoryHref("fr", "Julakan"));
   });
 
   // @req REQ-198

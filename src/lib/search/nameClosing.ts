@@ -358,12 +358,12 @@ export interface StorySubject {
  * drawing none without a history.
  *
  * The page's own selection decides it (`selectNameSubject`), run on the fiche
- * shaped as its search hit, so the two cannot drift apart. If the selection
- * later answers more of the forms this hit carries (Fulɓe on PPL_FULA,
- * Berbère on FLG_BERBERE), the link follows with no change here; a fix that
- * reads what the hit does not carry, such as the name history, has to pass it
- * here too. It assumes the search returns the fiche among its hits for its
- * own filed name or forms, which an exact name match does.
+ * shaped as its search hit, so the two cannot drift apart. The hit carries
+ * the history's names as the search row does (migration 109, ETNI-2093):
+ * the search answers a fiche exactly under each of them, so « Fulɓe » on
+ * PPL_FULA and « Berbère » on FLG_BERBERE draw their link. It assumes the
+ * search returns the fiche among its hits for any of those names, which an
+ * exact answer does.
  */
 // @req REQ-198
 export function storyLinkName(
@@ -378,6 +378,7 @@ export function storyLinkName(
     id: subject.id,
     name: subject.name,
     naming: readNaming(subject.type, subject.content),
+    historyNames: history.names.map((told) => told.nameText),
   };
   return selectNameSubject([hit], name, language).length > 0 ? name : undefined;
 }
