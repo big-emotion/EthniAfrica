@@ -1,5 +1,6 @@
 import type { SearchEntityType } from "@/types/afrik-frontend";
 import type { Language } from "@/types/shared";
+import { searchFieldCopy } from "@/lib/i18n/copy/searchField";
 
 /**
  * What the product is allowed to say the search covers.
@@ -39,8 +40,7 @@ import type { Language } from "@/types/shared";
  * 3134 of something it returns 30 of.
  */
 // @req REQ-002
-export const SEARCH_LABEL =
-  "Cherchez un peuple, une langue, un pays, une famille linguistique ou un nom";
+export const SEARCH_LABEL = searchFieldCopy.fr.label;
 
 /**
  * Concrete examples complement the scope named by the visible label.
@@ -52,7 +52,7 @@ export const SEARCH_LABEL =
  * "Traore" is stored without one.
  */
 // @req REQ-002
-export const SEARCH_PLACEHOLDER = "Ex. Bafut, Fulfulde, Namibie, Keïta";
+export const SEARCH_PLACEHOLDER = searchFieldCopy.fr.placeholder;
 
 // Plural of the singular labels in SEARCH_ENTITY_ACCENT — a group heads a set.
 // The accent still comes from that one table, so a kind's colour is assigned
