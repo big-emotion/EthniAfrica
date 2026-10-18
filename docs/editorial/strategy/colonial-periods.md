@@ -1,6 +1,6 @@
 ---
 title: "Colonial periods: the reference table behind a name-history account's era"
-status: "proposed 2026-10-09; the cases below marked « ruled 2026-10-10 » are operator rulings (Sudan 1821–1885, South Africa 1959–1994, the 1877 Alur letter, the rulings on waves 1 and 2 of the long tail, ETNI-2011, and the era of a hypothesis's publication); those marked « ruled 2026-10-11 » are the operator's rulings on wave 3 of the long tail (the Transvaal and the Orange Free State 1852–1902, Kenya 1902, Accra 1858, Lacerda 1798, Ogilby 1670, and the Rwenzori, Mukenge and Bogos accounts left without an era), and the rulings on waves 4 and 5 of the long tail, also « ruled 2026-10-11 » (Ovamboland, Kilimanjaro, Mount Kenya, the Wolof kingdoms, Koelle, Adamawa, German East Africa before occupation, Ijwi → `polity`; Grebo 1850, Fort-Dauphin 1658, the Toro treaty 1891 → `colonial`; the Bertat country split by Egyptian taxation), and the rulings on waves 6 and 7, also « ruled 2026-10-11 » (Réunion; the interior before occupation, Samori's lands 1887, Hausaland 1876–1888, the Dahra 1838 → `polity`; the Oil Rivers Protectorate, Fort-Dauphin's hinterland 1658, the Haute-Gambie 1891–1892, Molinie's French Sudan 1959 → `colonial`), and the rulings on waves 8 and 9, also « ruled 2026-10-11 » (Ginga 1626, Tremearne's Tripoli, Taiwo 1884, Seeruttun 1857–1858, Payet at Bourbon 1674, Dida 1904, Krobo 1858 and 1871 → `colonial`; Koelle's Kányōp 1854, Pakhalla 1889, Braulot 1893, Guillain on the Antakarana 1845, Richardson 1885 → `polity`; a list of accounts left without an era); those marked « ruled 2026-10-12 » are the rulings on waves 10 and 11 (Krönlein's Nǀusan 1861, Zintgraff's Bafut 1889, Gunya 1598 and Bajuni 1678 at Pate, Gondokoro 1864–1867, Tesfaie 1853 → `polity`; Taddese 1936 → `colonial`; Waberi 1964 → `modern`; Pobéguin on the Sassandra 1895 → `polity`; Italian gazettes take the bearer's territory; a Fouta-Djalon row; a list of accounts left without an era), and the rulings on waves 12 and 13, also « ruled 2026-10-12 » (Petherick's Moru 1862, Grigriqua 1693, Ka-Shongwe 1856–1865, the Phiri from about 1400, the Mzab before 1853 → `polity`; Le Vaillant 1790, Sparrman 1786, Sakala 1958–1961, Savimbi 1902, the Mzab from 1853 → `colonial`; the Bahr el-Ghazal zariba country 1858–1874 and Mayotte after 1975 left without an era), and the rulings of 2026-10-14 on the open questions of waves 14 to 20 (Great Kabylia before 1857, Egypt before 1882, the Nyasa shore from 1893, Wa 1898, the Gaza kingdom to 1895 and Suriname; the Mahdist Sudan after 1885 left without an era)"
+status: "proposed 2026-10-09; the cases below marked « ruled 2026-10-10 » are operator rulings (Sudan 1821–1885, South Africa 1959–1994, the 1877 Alur letter, the rulings on waves 1 and 2 of the long tail, ETNI-2011, and the era of a hypothesis's publication); those marked « ruled 2026-10-11 » are the operator's rulings on wave 3 of the long tail (the Transvaal and the Orange Free State 1852–1902, Kenya 1902, Accra 1858, Lacerda 1798, Ogilby 1670, and the Rwenzori, Mukenge and Bogos accounts left without an era), and the rulings on waves 4 and 5 of the long tail, also « ruled 2026-10-11 » (Ovamboland, Kilimanjaro, Mount Kenya, the Wolof kingdoms, Koelle, Adamawa, German East Africa before occupation, Ijwi → `polity`; Grebo 1850, Fort-Dauphin 1658, the Toro treaty 1891 → `colonial`; the Bertat country split by Egyptian taxation), and the rulings on waves 6 and 7, also « ruled 2026-10-11 » (Réunion; the interior before occupation, Samori's lands 1887, Hausaland 1876–1888, the Dahra 1838 → `polity`; the Oil Rivers Protectorate, Fort-Dauphin's hinterland 1658, the Haute-Gambie 1891–1892, Molinie's French Sudan 1959 → `colonial`), and the rulings on waves 8 and 9, also « ruled 2026-10-11 » (Ginga 1626, Tremearne's Tripoli, Taiwo 1884, Seeruttun 1857–1858, Payet at Bourbon 1674, Dida 1904, Krobo 1858 and 1871 → `colonial`; Koelle's Kányōp 1854, Pakhalla 1889, Braulot 1893, Guillain on the Antakarana 1845, Richardson 1885 → `polity`; a list of accounts left without an era); those marked « ruled 2026-10-12 » are the rulings on waves 10 and 11 (Krönlein's Nǀusan 1861, Zintgraff's Bafut 1889, Gunya 1598 and Bajuni 1678 at Pate, Gondokoro 1864–1867, Tesfaie 1853 → `polity`; Taddese 1936 → `colonial`; Waberi 1964 → `modern`; Pobéguin on the Sassandra 1895 → `polity`; Italian gazettes take the bearer's territory; a Fouta-Djalon row; a list of accounts left without an era), and the rulings on waves 12 and 13, also « ruled 2026-10-12 » (Petherick's Moru 1862, Grigriqua 1693, Ka-Shongwe 1856–1865, the Phiri from about 1400, the Mzab before 1853 → `polity`; Le Vaillant 1790, Sparrman 1786, Sakala 1958–1961, Savimbi 1902, the Mzab from 1853 → `colonial`; the Bahr el-Ghazal zariba country 1858–1874 and Mayotte after 1975 left without an era), and the rulings of 2026-10-14 on the open questions of waves 14 to 20 (Great Kabylia before 1857, Egypt before 1882, the Nyasa shore from 1893, Wa 1898, the Gaza kingdom to 1895 and Suriname; the Mahdist Sudan after 1885 left without an era), and the rulings of 2026-10-18 on waves 24 and 25 (Johnston's Uganda protectorate in 1902 and Greenberg's first labels of 1949–1950 on the Saharan and Central Sudanic fiches, and the Adjovi land claim of 1892 at Ouidah → `colonial`; Baloyi 1730, Letsie 1847 and Ould Ahmed 1910 → `polity`; a Colombia row; Keane 1899, Annobón 1777–1778, Cameroon 1888–1889, Nalou 1879, Pointe Larue, Có 1885 and the Coca de Campos and Kenzi accounts left without an era; Yohouré 1899 waiting for a source)"
 related:
   - docs/editorial/strategy/name-history-timeline-2026-10-08.md
   - docs/editorial/strategy/name-history-priority-core.md
@@ -101,7 +101,7 @@ precision. « by 1880 » means HGA VII, p. 1.
 | Ghana (Gold Coast)                                       | southern Gold Coast by 1880; Accra in 1858 is `colonial`, under British oversight since the Bond of 1844 (ruled 2026-10-11); Wa in the Northern Territories: treaties of 1896 with the chiefs of Bona, Dagarti, Wa and Mamprusi at Gambaga, a district in 1897, a protectorate by the Order in Council of 26 Sept. 1901 (effective 1 Jan. 1902), so Mackworth's « country of Wa » of 1898 is `colonial`, the treaties being a founding act (rule 4) (ruled 2026-10-14)                                                                                                                                                               | 6 March 1957                                                                                                                                                                                                | HGA VII pp. 1, 131; HGA VIII table 5.1; GHA fiche; English Wikipedia, « Northern Territories of the Gold Coast » (citing Roberts-Wray, _Commonwealth and Colonial Law_, 1966, p. 789; Hertslet, _Map of Africa by Treaty_, p. 77), read |
 | Krobo country (Gold Coast)                               | the Krobo mountain between the Akwapim hills and the Volta, in the southern Gold Coast: Zimmermann's dictionary of 1858 and his « Kro » of 1871 are `colonial`, as Accra in 1858 (ruled 2026-10-11); the colonial government expelled the Krobo from the mountain in 1892                                                                                                                                                                                                                                                                                                                                                            | 6 March 1957                                                                                                                                                                                                | HGA VII p. 1; PPL_KROBO fiche (Arlt, Zimmermann); HGA VIII table 5.1                                                                                                                                                                    |
 | Togo                                                     | 5 July 1884 on the coast: the protectorate agreement over « the territory of the King of Togo » (Lomé, Bagida); the interior conquered later (Kabre 1890, Konkomba 1897–1898); British and French parts from 1914–1919; the Misahöhe station was founded in 1890, so Plehn's accounts of 1898 about the peoples around it (Avatime, Logba, Tafi, Nyangbo) are `colonial` (confirmed 2026-10-14)                                                                                                                                                                                                                                      | 27 April 1960; British Togoland joined Ghana on 6 March 1957                                                                                                                                                | Hertslet, Map of Africa by Treaty, 3rd ed., vol. II p. 693; HGA VII pp. 1, 58, 289; HGA VIII p. 202 and table 5.1; English Wikipedia, « Kpalimé » (history section), read                                                               |
-| Benin (Dahomey)                                          | Porto-Novo by 1880; the kingdom of Abomey fought France in the 1890s                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | 1 Aug. 1960                                                                                                                                                                                                 | HGA VII pp. 1, 127; HGA VIII table 5.1                                                                                                                                                                                                  |
+| Benin (Dahomey)                                          | Porto-Novo by 1880; the kingdom of Abomey fought France in the 1890s; French troops occupied Ouidah in March 1892, so the Adjovi land claim of 1892 is `colonial` (ruled 2026-10-18)                                                                                                                                                                                                                                                                                                                                                                                                                                                 | 1 Aug. 1960                                                                                                                                                                                                 | HGA VII pp. 1, 127; HGA VIII table 5.1; Sinou 1995, p. 134 (Ouidah)                                                                                                                                                                     |
 | Nigeria                                                  | Lagos occupied 1851, then a British colony; most of Yorubaland a protectorate by 1893; Niger Coast Protectorate 1894; Southern and Northern Nigeria protectorates from 1 Jan. 1900, southern rule « practically assured » in 1900; amalgamated 1914; the north conquered to 1903–1914; Hausaland under the Sokoto caliphate in 1876–1888 is `polity` (ruled 2026-10-11)                                                                                                                                                                                                                                                              | 1 Oct. 1960                                                                                                                                                                                                 | HGA VII pp. 1, 36, 134 (English edition); NGA fiche (HGA VII fr. pp. 57, 510; Lugard's 1900–1901 reports); HGA VIII table 5.1; Office of the Historian, Nigeria                                                                         |
 | Nigeria: Oil Rivers Protectorate (Old Calabar)           | 1884: treaties by Consul Hewett place the chiefs of the Niger Districts under British protection; 5 June 1885: the British Protectorate over the Niger Districts is notified in the London Gazette, its coast known as the Oil Rivers Protectorate (Old Calabar and the Cross River are among the Oil Rivers); Niger Coast Protectorate from 13 May 1893. Calabar in 1890 is `colonial` (ruled 2026-10-11)                                                                                                                                                                                                                           | 1 Oct. 1960                                                                                                                                                                                                 | Hertslet, _Map of Africa by Treaty_, 3rd ed., 1909, vol. I pp. 115–116 and 153–154, read on archive.org (mapofafricabytr01hert); HGA VIII table 5.1                                                                                     |
 | Niger                                                    | « 3e territoire militaire » by the decree of 20 Dec. 1900; territoire du Niger from 1 Jan. 1921 by the decree of 4 Dec. 1920 (ruled 2026-10-10: 1920, with the caveat that the Digithèque MJP chronology dates a territory decree to 22 June 1910); colonie du Niger by the decree of 13 Oct. 1922                                                                                                                                                                                                                                                                                                                                   | 3 Aug. 1960                                                                                                                                                                                                 | NER fiche (decrees of 1900, 1920, 1922 as printed in the Journal officiel); Digithèque MJP, Niger chronology; HGA VIII table 5.1; Office of the Historian, Niger                                                                        |
@@ -156,6 +156,7 @@ precision. « by 1880 » means HGA VII, p. 1.
 | Namibia (South West Africa)                              | German annexation of South West Africa from the end of 1883; South African conquest 1914–1915, then mandate; renamed Namibia by the UN on 12 June 1968; Ovamboland, Kwanyama included, stays `polity` until occupied: Tönjes in 1911 is `polity` (ruled 2026-10-11); Krönlein's list of the « ǀnusan » language, sent in 1861 from Namaland before German annexation, is `polity` (ruled 2026-10-12)                                                                                                                                                                                                                                 | 21 March 1990                                                                                                                                                                                               | HGA VII p. 28 (English edition); NAM fiche (HGA VII fr. pp. 312–313; UN resolution 2372); HGA VIII table 5.1; Office of the Historian, Namibia                                                                                          |
 | Rwanda                                                   | German colonisation from 1890; the 1903 accounts are `colonial` (ruled 2026-10-10); Belgian mandate 1919, then Ruanda-Urundi                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | 1 July 1962                                                                                                                                                                                                 | Digithèque MJP, Rwanda chronology and Ruanda-Urundi 1919; HGA VIII table 5.1; Office of the Historian, Rwanda                                                                                                                           |
 | Suriname                                                 | Dutch colony from the Treaty of Breda, 31 July 1667; an account about the plantations and the flight from them is `colonial`. The Maroon interior after the peace treaties of 1760 and 1762 carries no era until ruled (the treaties recognised the Maroons as free people, who received a yearly tribute) (ruled 2026-10-14)                                                                                                                                                                                                                                                                                                        | 25 November 1975                                                                                                                                                                                            | English Wikipedia, « History of Suriname » (Breda, independence, Maroon treaties), read; the Ndyuka and Saamaka fiches for the treaty years                                                                                             |
+| Colombia                                                 | Spanish rule over New Granada until independence: the bishop of Cartagena's settlement of the palenque of San Basilio, 1713–1717, is `colonial`; the juntas of 1810 open the process of independence, 20 July 1810 being kept as the national day (ruled 2026-10-18)                                                                                                                                                                                                                                                                                                                                                                 | 17 Dec. 1819: the Republic of Colombia proclaimed, uniting New Granada and Venezuela; independence « effectively achieved » by 1819. The San Andrés archipelago follows this row                            | Digithèque MJP, Colombie (chronology), read; Office of the Historian, Colombia, read; the Palenquero and Raizal fiches for the places                                                                                                   |
 
 Sources opened for this table:
 
@@ -174,7 +175,9 @@ Sources opened for this table:
   1575).
 - US Department of State, Office of the Historian, country pages for Liberia,
   Ethiopia, Nigeria, Niger, Tanzania, Malawi, Botswana, Angola, Namibia and
-  Rwanda (history.state.gov/countries/…).
+  Rwanda (history.state.gov/countries/…), and for Colombia, read on
+  2026-10-18: « Colombia effectively achieved its independence from Spain by
+  1819 ».
 - _Histoire générale de l'Afrique_, French edition (unesdoc): VI, ch. 7
   (Ngwabi Bhebe), pp. 194–195; VII, ch. 1 (A. Adu Boahen), p. 21, the French
   page of Boahen's 1880 list; VII, ch. 18 (John Charles Caldwell), p. 495.
@@ -184,9 +187,17 @@ Sources opened for this table:
   Cabo Verde, the Comoros, Djibouti (and dj1859), Egypt, Equatorial Guinea,
   Eritrea, Gabon, Guinea-Bissau, Libya, Madagascar, Mauritania (and Colonie
   de Mauritanie 1821–1920), Mauritius, Morocco, Niger, Rwanda (and
-  Ruanda-Urundi 1919) and Somalia.
+  Ruanda-Urundi 1919) and Somalia; and Colombie (mjp.univ-perp.fr/constit/co.htm),
+  read on 2026-10-18 for « 20 juillet 1810 […] le début du processus
+  d'indépendance » and « 17 décembre 1819 - Proclamation de la République de
+  Colombie unissant la Nouvelle-Grenade et le Vénézuéla ». The same page
+  prints the battle of Boyacá as « 7 août 1818 »; no row relies on that date.
 - H. H. Johnston, _British Central Africa_, London, Methuen, 1897, p. 86
   n. 1, read on archive.org (britishafrica00johnuoft).
+- Alain Sinou, _Le comptoir de Ouidah : une ville africaine singulière_,
+  Paris, Karthala, 1995, read on 2026-10-18 in the IRD repository copy,
+  p. 134 checked on the page image: « En mars 1892, elle occupe sans
+  difficulté Ouidah », the French troops sent against Béhanzin.
 - Jean Suret-Canale, « The Fouta-Djalon Chieftaincy », in M. Crowder and
   O. Ikime (eds.), _West African Chiefs_, University of Ife Press,
   pp. 79–97, read in the web copy of webfuuta.site (unpaginated): the treaty
@@ -653,3 +664,79 @@ Left open, because no source for the date could be opened:
   once the terms of the treaties are read.
 - French Equatorial Africa and Cameroon: the reports raise no era question
   there.
+
+## Rulings of 2026-10-18 on the era questions of waves 24 and 25
+
+Waves 24 (peoples and groupings, #1837) and 25 (family names, #1838) of the
+long tail, and the arbitration of their duplicates (#1842), left era
+questions open, each with a recommendation. On 2026-10-18 the operator
+approved every recommendation. The rulings set an era on 16 accounts,
+counted by script. Two more, Letsie in 1847 and Ould Ahmed in 1910, sit on
+fiches another pull request of the same day edits, so the era is set there.
+One waits for a source: Yohouré in 1899.
+
+- **Johnston's Uganda protectorate, 1 account, `colonial`.** Harry Johnston
+  writes of « Nilotic Negroes » in 1902 as the former Special Commissioner of
+  the protectorate, proclaimed in 1894 (the Uganda row) (`PPL_NILOTIQUE_MACRO`).
+  Keane's « Nilotic peoples » of 1899, about the whole Upper Nile in
+  1898–1899, stays without an era.
+- **Greenberg's first labels, 1949–1950, 2 accounts, `colonial`.** Every
+  territory where the Saharan and the Central Sudanic languages are spoken was
+  then under colonial rule: Libya under British and French administration to
+  1951, Sudan to 1956. The family fiches now read as the macro fiches
+  (`PPL_SAHARIEN_MACRO`, `PPL_SCT_MACRO`): « saharien central » of 1949–1950
+  on `FLG_SAHARIEN`, and the Central Sudanic account on
+  `FLG_SOUDANIQUECENTRAL`. That account ran to 1963 and so crossed eras
+  (rule 8); it now ends with the « macro-soudanique » of 1954, and the
+  « chari-nil » of 1963 stays told by its own hypothesis tile. Greenberg's
+  table, HGA I p. 338, was read again for the three dates. The ruling holds
+  only where every territory a label covers was under colonial rule then:
+  Niger-Congo (Liberia, the Union of South Africa) and Nilo-Saharan
+  (Ethiopia) in 1949–1950 keep no era, as the wave 4 and 5 ruling on
+  Greenberg's labels over several territories reads.
+- **Baloyi 1730, 1 account, `polity`.** The document of 1730 that renders the
+  name as « wizards », reported by Liesegang (`PAT_BALOYI`): Delagoa Bay had
+  only a Dutch fort (rule 5), as the birth of 1729–1731 already read.
+  **Letsie 1847** (`PAT_LETSIE`) is `polity` too: the Basotho chiefs before
+  the annexation of 1868. The fiche is edited in another pull request of
+  the same day, which carries this era.
+- **Ould Ahmed, published in 1910, `polity`.** The birth is René Basset's
+  note on the emir of the Adrar, « Mokhtar Ould Ahmed Ould Aida Ould
+  Otsman », whose son held power (`PAT_OULD_AHMED`, _Mission au Sénégal_,
+  p. 374 n. 3): it tells the emirate's own rulers. The fiche is edited in
+  another pull request of the same day, which sets this era.
+- **Adjovi 1892, 1 account, `colonial`.** The Adjovi family's claim to
+  several plots, among them the sacred grove of the old king Kpassè, made
+  « dès 1892 » and accepted by the courts at the start of the next century
+  (Sinou 1995, p. 142, `PAT_ADJOVI`). French troops occupied Ouidah in March
+  1892 (Sinou, p. 134), and the passage describes the colonial land regime
+  (the Benin row).
+- **Colombia, a new row, 11 accounts.** `colonial` before the Republic of
+  Colombia of 17 December 1819, `modern` after it, as for Suriname. `colonial`:
+  the bishop of Cartagena's settlement of the palenque of San Basilio,
+  1713–1717 (`PPL_PALENQUERO`). `modern`: the other five Palenquero accounts
+  (Zapata Olivella in 1948, Navarrete's two hypotheses of 2001, the census of
+  2018 and the contemporary usage) and the five Raizal accounts, from 1953 to
+  2018 (`PPL_RAIZAL`). The date comes from the Digithèque MJP and the Office
+  of the Historian, both read. Brazil has no row yet: the Quilombola accounts
+  stay without an era.
+- **No era, confirmed.** Annobón in 1777–1778, when the island governed itself
+  while legally Portuguese, then Spanish (`PPL_ANNOBON`). The word Pygmée
+  reaching Cameroon in 1888–1889: the coast was under the 1884 protectorate,
+  the Ntem interior not yet occupied (`PPL_PYGMEES_AUTOCHTONES`).
+  Bérenger-Féraud's Nalou of 1879 on the lower Rio Nunez, until a date of
+  French rule there is opened (`PPL_NALU`). Pointe Larue, named after one of
+  the first settlers, as reported in 2019 (`PAT_LARUE`). Có in 1885 on Bissau
+  island: the Guinea-Bissau row dates the colony from 1879, but a fort does
+  not make an island colonial (rule 5) (`PAT_CO`). The two Coca de Campos
+  accounts of 2021 on the Kuvale fiche (Mucuval), which report on the
+  colonial period and the 1990s, and the Kenzi usage dated « Avant les années
+  1960 » on `PPL_NUBIENS` (rules 6 and 8).
+- **`polity`, confirmed.** Köpke's hypothesis of 1841 on Casa and the
+  Casangas (`PPL_KUSSI`), by the Manjak precedent: the Portuguese post at
+  Cacheu does not make the coast colonial (rule 5).
+- **Waiting for a source: Yohouré in 1899.** Delafosse took his notes « en
+  1899 dans le Yohouré » as a colonial official (published 1904,
+  `PPL_YOHOURE`). The account becomes `colonial` once a date for the French
+  occupation of the Bouaflé area before 1899 is opened; until then it stays
+  without an era.
