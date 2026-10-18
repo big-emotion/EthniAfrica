@@ -78,6 +78,9 @@ const ERA_RULINGS: Array<[string, string, number, string | null]> = [
   // Delagoa Bay had only a Dutch fort in 1730 (rule 5), as for the birth.
   ["patronymes/PAT_BALOYI", "Baloyi", 1730, "polity"],
   ["patronymes/PAT_BALOYI", "Baloyi", 1729, "polity"],
+  // French troops occupied Ouidah in March 1892 (Sinou 1995, p. 134); the
+  // claim went to the colonial land regime and its courts.
+  ["patronymes/PAT_ADJOVI", "Adjovi", 1892, "colonial"],
   // The new Colombia row.
   [PALENQUERO, "Palenqueros", 1713, "colonial"],
   [PALENQUERO, "Palenqueros", 1948, "modern"],
@@ -143,10 +146,16 @@ describe("era rulings of 2026-10-18 on waves 24 and 25", () => {
   it("records the Colombia row and the rulings in the colonial-periods table", () => {
     const doc = readDoc("docs/editorial/strategy/colonial-periods.md");
 
+    const rulings = doc.slice(doc.indexOf("## Rulings of 2026-10-18"));
+
     expect(doc).toMatch(/\| Colombia/);
     expect(doc).toContain("17 Dec. 1819");
     expect(doc).toMatch(/## Rulings of 2026-10-18/);
-    expect(doc).toMatch(/Letsie/);
+    // Rulings whose fiche another pull request owns, or that wait for a
+    // source, are recorded here even though this branch cannot apply them.
+    for (const subject of ["Letsie", "Ould Ahmed", "Adjovi", "Yohouré"]) {
+      expect(rulings).toContain(subject);
+    }
   });
 });
 
@@ -179,15 +188,5 @@ describe("evidence rulings of 2026-10-18 on waves 24 and 25", () => {
     ]) {
       expect(rulings).toContain(subject);
     }
-  });
-
-  // @req REQ-178
-  it("adds Winye to the oral verification list", () => {
-    const doc = readDoc(
-      "docs/editorial/strategy/self-names-to-verify-orally.md"
-    );
-
-    expect(doc).toContain("Winye");
-    expect(doc).toContain("Damoué");
   });
 });

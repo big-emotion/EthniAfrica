@@ -496,8 +496,9 @@ What may be a self-name:
 - **Winye stays self-given on a thesis title** (`PPL_WIYANA`): the close form
   Winien in the title of S. Damoué's maîtrise thesis (1983), read in the
   bibliography of Jean-Pierre Jacob (2007, p. 252), who counts Damoué among
-  the young scholars « originaires de l'ethnie » (p. 24). The name goes on
-  [the oral verification list](self-names-to-verify-orally.md).
+  the young scholars « originaires de l'ethnie » (p. 24). The name is to go on
+  [the oral verification list](self-names-to-verify-orally.md), with Baka and
+  Bedzan.
 - **An own name may be self-given on a grouping fiche** when a source
   documents it as one: Imazighen on `PPL_AMAZIGH_MACRO`, after Salem Chaker.
 - **A grouping label with no common self-name carries `selfNameUnknown`**,
@@ -518,9 +519,12 @@ What may be a birth:
   Purchas's « Pigmy » of 1625 as the oldest trace, the birth, and
   Schweinfurth's use for the Akka, met in 1870 and published in 1873, as the
   imposition the scholars call the first use of the word for these peoples.
-- **Close forms, each tile saying that no source states the two forms are one
-  name**: Mathebula for Matsebula (van Warmelo 1935, `PAT_MATSEBULA`) and
-  Kagbo for Kargbo (Northcote Thomas 1916, `PAT_KARGBO`). The Kirundi
+- **Close forms, each tile stating its limit**: Kagbo for Kargbo (Northcote
+  Thomas 1916, `PAT_KARGBO`), whose tile says no source read states that
+  Kagbo and Kargbo are the same name; Mathebula for Matsebula (van Warmelo
+  1935, `PAT_MATSEBULA`), whose tile says the census does not tell whether
+  the chief Nyakenye, a Mathebula in 1935, belonged to the same clan as the
+  Matsebula of 2002. The Kirundi
   Havyarimana is not taken as a close form of Habyarimana: `PAT_HABYARIMANA`
   stays unwritten until a source glosses Habyarimana or equates the two.
 - **A second-hand trace without the written form**: the Loyi of 1729-1731,
