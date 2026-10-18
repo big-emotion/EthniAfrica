@@ -1,9 +1,11 @@
 # Site mockups — the reference for every visible change
 
-Eighty-five boards: a design-system board, the pages recorded at 430, 768 and
+Eighty-eight boards: a design-system board, the pages recorded at 430, 768 and
 1440 px from release v5.2.0 (production, captured on 2026-10-14), and the
 approved changes listed under "Changes since the record". They are the reference every change a reader can see
 answers to, whoever makes it: the team, an agency, a contractor or an agent.
+The three `search-state-typo-fiches` boards are proposed, not approved yet
+(brief 13): until the operator approves them they are not a reference.
 
 Source canvas (public, read-only for anyone with the link):
 <https://claude.ai/artifact/TFD4syHT5UygK4WnxGA5Rd>
@@ -43,6 +45,7 @@ two is wrong, and the fix is decided, not improvised.
 |                   | État : origines concurrentes (« yamoussoukro ») | `search-state-competing` |
 |                   | État : origine non datée (exemple à remplacer) | `search-state-nodate` |
 |                   | État : « peul », le nom propre Fulɓe ouvert   | `search-state-peul-fulbe-open` |
+|                   | État : « tchikaya », un nom proche et des fiches (proposé) | `search-state-typo-fiches` |
 | 2 · Peoples       | `PPL_FULA`                                   | `people-fula`        |
 |                   | `PPL_BASSA`                                  | `people-bassa`       |
 |                   | `PPL_ALABA`                                  | `people-thin-alaba`  |
@@ -81,6 +84,7 @@ are recorded whole, folded as the site folds them.
 | 2026-10-17 | [Brief 11, from the searched name to the self-name, one video, labelled sources](../briefs/11-result-page-self-name-handoff.md), approved 2026-10-17 by delegation | `search-peul`, `search-bassa` and `search-state-peul-fulbe-open` (new) for the hand-off, the video row and the period rule (also on `search-congo`); the labelled sources button on those and on `search-state-competing`, `search-state-thin`, `language-lingala`, `country-civ`, `country-state-civ-quaqua`; `Main` |
 | 2026-10-17 | [Brief 12, the unknown name, the « Fiches » lens and the consent strip](../briefs/12-unknown-name-fiches-lens-consent.md), approved 2026-10-17 by delegation | `search-unknown` (the invitation in the verdict, no empty shelf, no owed cards); `search-state-fiches` (new); `Main` (the fiche cards and the lens states, the consent strip at 430, 768 and 1440, closed and open, and over the first screen of `search-peul-430`) |
 | 2026-10-17 | Fixes from the art-direction review of briefs 10 to 12, approved with them by delegation | `search-unknown` (the Siwi and Tchad reasons restored as brief 1 approved them); the fold boards of brief 10 and their two state boards (each closed fold opens with « + »; on `country-civ` the naming-systems line folds with the 47 names); `country-state-civ-quaqua` (the readings stack below 1200 px); `search-state-fiches` (the lens bar drawn scrolled to « Fiches » at 430); `Main` (the locked consent switch in full ink, scale captions, the legend and lens-bar notes) |
+| 2026-10-18 | [Brief 13, a misspelling that also finds related fiches](../briefs/13-typo-with-related-fiches.md), **proposed, awaiting the operator's approval** | `search-state-typo-fiches` (new): « tchikaya », the verdict that asks, the choice Tchicaya, the lens bar, the fiches found, « Aller plus loin »; no video shelf |
 
 The boards of a changed page no longer record v5.2.0: they are the approved
 target, and the code is behind them until the implementation lands.

@@ -4930,6 +4930,42 @@ a.ea-fiche-card:focus-visible { outline: none; box-shadow: var(--afh-ring-focus)
 .ds-mobile .ea-fiche-grid[data-cols] { grid-template-columns: minmax(0, 1fr); }
 .ds-mobile .ea-lens-title { font-size: var(--afh-text-h2); }
 
+/* Brief 13 (proposed): a misspelling with related fiches, « tchikaya ».
+   The choices (AppellationsBlock, typo state) and the fiches found, as « Tout »
+   lists them (FichesBlock, two cards from 430 px). Read from the page's
+   computed styles on 2026-10-18; tokens only. */
+/* The verdict that asks rather than answers (VerdictBlock, tone « plain »):
+   its line sits a step lower, and from 1200 px the block loses its top padding. */
+.ea-verdict[data-tone="plain"] .ea-verdict-line { margin-top: var(--afh-space-lg); }
+@media (min-width: 1200px) {
+  .ea-verdict[data-tone="plain"] { padding-top: 0; }
+  .ea-verdict[data-tone="plain"] .ea-verdict-name { margin-top: var(--afh-space-md); }
+}
+.ea-block-title {
+  font-family: var(--afh-font-display); font-weight: 700;
+  font-size: var(--afh-text-h3); line-height: 1.3; color: var(--afh-text);
+}
+.ea-choices { padding-top: var(--afh-space-lg); }
+@media (min-width: 1200px) { .ea-choices { padding-top: var(--afh-space-md); } }
+.ea-choices-list { display: flex; flex-wrap: wrap; gap: var(--afh-space-md); margin-top: var(--afh-space-lg); }
+.ea-choices-list li { display: flex; }
+.ea-choice {
+  display: inline-flex; align-items: center; min-height: 44px;
+  padding: var(--afh-space-xs) var(--afh-space-lg);
+  border: 1px solid var(--afh-border); border-radius: var(--afh-radius-full);
+  background: var(--afh-surface);
+  font-family: var(--afh-font-display); font-size: var(--afh-text-small); font-weight: 700;
+  color: var(--afh-text);
+}
+.ea-choice:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
+.ea-discover-note {
+  margin-top: var(--afh-space-xs);
+  font-size: var(--afh-text-caption); line-height: var(--afh-leading-caption); color: var(--afh-text-soft);
+}
+@media (min-width: 430px) {
+  .ea-fiche-grid[data-mode="all"] { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
 /* The consent strip. Its layout follows its own width (a container query),
    which is the viewport's on the site, where it runs full width, and the
    frame's on Main. Steps at 768 and 1200, the site's breakpoints. */
