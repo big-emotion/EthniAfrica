@@ -12,9 +12,9 @@ board.
 The source records are the three current word fiches in
 `dataset/source/afrik/mots/`: `WRD_RACE`, `WRD_KIRDI` and `WRD_TRIBU`. The
 site has no page that renders these records; `/api/v2/words` and
-`/api/v2/words/[id]` expose them. This brief proposes `/fr/atlas/mots/[slug]`
-for the new page. It is a proposal for the operator to accept or change, not an
-established route.
+`/api/v2/words/[id]` expose them. The approved route is
+`/fr/atlas/mots/[slug]`, with the breadcrumb « Accueil › Parcourir › Mots ›
+race » (operator decision, 2026-10-19).
 
 Create three new boards named `word-race-430`, `word-race-768` and
 `word-race-1440`. Add them to `canvas.json` in a new group, « 5 · Mots ».
@@ -48,7 +48,8 @@ show source tiers.
   debated, and the record preserves different explanations. Use its own
   wording and sources if any of its claims appear on the board.
 
-The three records have 12, 9 and 35 history accounts respectively. None is a
+The three records have 12, 9 and 27 history accounts respectively. The
+`WRD_TRIBU` record has 22 accounts for « tribu » and 5 for « tribe ». None is a
 thin or single-account example. Do not invent a thin state or compress a
 disagreement into one answer to make the layout shorter.
 
@@ -64,17 +65,27 @@ At 430 px, then 768 px, then 1440 px, draw the page in this order:
 3. The name-history component, adapted to show how people used the word and
    for whom. Keep the twelve accounts attributable and chronological; show
    competing origin proposals side by side, without ranking or merging them.
+   Use the brief 15 timeline pattern: leave the three most recent accounts,
+   the origin account and the hypotheses tile open; collapse the other five
+   accounts.
 4. The related-subject block from `WRD_RACE.relatedSubjects`: Mandé and
-   Bantou, with the recorded relations, their source links and plain labels.
-5. The sources block, titled « Les sources du mot race ». Group claims by
-   account and show each source's type. Never show a tier or rank the sources.
+   Bantou. Present these as links recorded in the fiche, not as claims that
+   the relation itself has been established by a source. Use a plain label
+   such as « Sujets indiqués dans la fiche ». Show a source link for Mandé
+   only where the record provides one. Link to Bantou, but do not imply that
+   a source in the race fiche supports that relation.
+5. The sources block, titled « Les sources du mot race ». List each source
+   once, show its type, and link it to « Voir le récit » where it is used.
+   Never show a tier or rank the sources.
 6. The approved closing band « Ce que nous ne savons pas encore » with the
    three gaps in the record. Reuse the footer B and other relevant components
    from `Main`.
 7. A « Parcourir les mots » area with the three real records: race, Kirdi and
-   tribu. Use their recorded names and short definitions. This is navigation
-   among the available word fiches, not a claim that the records are all
-   related to each other.
+   tribu. Use their recorded names and short definitions as navigation. The
+   `WRD_TRIBU` fiche also records links to race and Kirdi; if shown, label
+   them as relations recorded in that fiche, not as claims independently
+   supported by a source. Do not imply that all three records are related to
+   each other.
 
 Use the actual relations and citations from the three JSON files. No invented
 claims, quotations, dates, sources, source types, related links or thesis copy.
@@ -92,8 +103,15 @@ Before drawing, report in six lines: whether a word page or route exists;
 which word records are present; what the `race` record says about its current
 and earlier meanings; which origin accounts disagree; what related subjects
 and gaps it records; and any route or layout decision for the operator.
-Change nothing in this step. Then wait for the operator's decisions, including
-the route proposal.
+Change nothing in this step. Then wait for the operator's decisions.
+
+Operator decisions, 2026-10-19: use the approved route and breadcrumb above;
+follow the brief 15 timeline pattern with five accounts collapsed; list each
+source once and link it to « Voir le récit » where used; present Mandé and
+Bantou as relations recorded in the race fiche, without implying that the
+relation itself is source-backed when no source link is recorded; and show
+the race and Kirdi links recorded in the tribu fiche as such. The operator
+also approved correcting the `WRD_TRIBU` account count to 27.
 
 After receiving those decisions, draw `word-race-430` first, then 768 and
 1440. List in five lines any remaining choices you made. Wait for the
