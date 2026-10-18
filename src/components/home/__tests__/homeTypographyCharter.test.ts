@@ -25,6 +25,7 @@ function declarations(text: string, selector: string): string {
 
 const HERO = source("src/components/home/HomeHero.tsx");
 const SEARCH = source("src/components/home/HomeHeroSearch.tsx");
+const SEARCH_FIELD = source("src/components/search/UniversalSearchField.tsx");
 const FOOTER = source("src/components/layout/SiteFooter.tsx");
 const HEADER = source("src/components/layout/SiteHeader.tsx");
 
@@ -42,19 +43,13 @@ describe("home typography (typography charter §8)", () => {
     expect(title).toMatch(/font-weight:\s*900/);
   });
 
-  // Two kickers on the home carried their own tracking (0.07em, 0.06em) and
-  // one a 500 weight, so the same role wore three dresses. An eyebrow is a
-  // dress, not a size (charter §1): it reads the dress tokens or it is not one.
   // @req REQ-091
-  it.each([
-    ["the search panel's group label", SEARCH, ".home-hero-search-group"],
-  ])("dresses %s with the eyebrow tokens", (_label, text, selector) => {
-    const kicker = declarations(text, selector);
+  it("sets the shared field label at the small-text step in strong ink", () => {
+    const label = declarations(SEARCH_FIELD, ".universal-search-label");
 
-    expect(kicker).toMatch(/font-size:\s*var\(--afh-text-eyebrow\)/);
-    expect(kicker).toMatch(/font-weight:\s*var\(--afh-eyebrow-weight\)/);
-    expect(kicker).toMatch(/letter-spacing:\s*var\(--afh-eyebrow-tracking\)/);
-    expect(kicker).toMatch(/text-transform:\s*var\(--afh-eyebrow-transform\)/);
+    expect(label).toMatch(/font-size:\s*var\(--afh-text-small\)/);
+    expect(label).toMatch(/font-weight:\s*600/);
+    expect(label).toMatch(/color:\s*var\(--afh-text\)/);
   });
 
   // It introduces the chips and is not one of them: their step, soft ink.

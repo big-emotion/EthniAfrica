@@ -9,6 +9,8 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { PageLayout } from "@/components/layout/PageLayout";
 import { SearchFeedFrame } from "@/components/search/SearchFeedFrame";
+import { UniversalSearchField } from "@/components/search/UniversalSearchField";
+import { HomeHeroSeeds } from "@/components/home/HomeHeroSeeds";
 import {
   SearchFeed,
   type SearchFeedSurface,
@@ -53,6 +55,11 @@ import type { SearchFeedAnswerState } from "@/lib/search/searchFeedPlan";
 import type { NextStepCard } from "@/lib/search/nameClosing";
 import type { SearchCompanionsData } from "@/api/v2/schemas/searchCompanions";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
+import {
+  SEARCH_PAGE_EXAMPLE_WORDS,
+  searchEntryCopy,
+  type WeeklySearchName,
+} from "@/lib/i18n/copy/searchEntry";
 import type { SearchFeedPresentation } from "@/lib/search/searchFeedPresentation";
 import {
   getLocalizedSearchResultFamilyName,
@@ -66,12 +73,10 @@ import type {
   SearchResult,
 } from "@/types/afrik-frontend";
 
-// ── constants ─────────────────────────────────────────────────────────────────
+// ── types ─────────────────────────────────────────────────────────────────────
 
 /** Per-kind ceiling the route applies to each keystroke's suggestions. */
 const SUGGESTIONS_PER_KEYSTROKE = 6;
-
-// ── types ─────────────────────────────────────────────────────────────────────
 
 // The page renders exactly what the shared envelope adapter emits; it used to
 // declare a parallel hit shape, which is how its reader drifted off-contract.
@@ -146,18 +151,20 @@ export interface RecherchePageContentProps {
    * reading of the search page.
    */
   reading?: SearchReading;
+  /** Test seam for the nightly demand list, including the no-match state. */
+  weeklyNames?: readonly WeeklySearchName[];
 }
 
 // @req REQ-002
 // @req REQ-200
 export function RecherchePageContent({
   reading,
+  weeklyNames = [],
 }: RecherchePageContentProps = {}) {
   const { language } = useLanguage();
   const router = useRouter();
   const searchParams = useSearchParams();
   const inputRef = useRef<HTMLInputElement>(null);
-
   const initialQuery = reading?.query ?? searchParams.get("q") ?? "";
   const initialRelation = reading ? null : readRelation(searchParams);
 
@@ -213,7 +220,6 @@ export function RecherchePageContent({
   );
   const requestController = useRef<AbortController | null>(null);
   const requestTicket = useRef(0);
-  const restoreFocusAfterClear = useRef(false);
 
   const fetchSuggestionsFromCorpus = useCallback(
     (query: string): Promise<SearchHit[]> =>
@@ -223,7 +229,6 @@ export function RecherchePageContent({
       }),
     [language]
   );
-
   // ── URL sync ────────────────────────────────────────────────────────────────
 
   const syncURL = useCallback(
@@ -393,15 +398,8 @@ export function RecherchePageContent({
     []
   );
 
-  // ── auto-suggest ────────────────────────────────────────────────────────────
+  // ── auto-suggest for the existing results form ──────────────────────────────
 
-  /**
-   * The SERP's own field used to declare `role="searchbox"` over a
-   * `role="listbox"` it did not own — a searchbox cannot own suggestions, so
-   * under a screen reader the suggestions of the canonical search surface
-   * simply did not exist. The shared hook carries the combobox contract the
-   * accueil and the compare picker already honoured.
-   */
   const suggest = useAutocomplete<SearchHit>({
     fetchSuggestions: fetchSuggestionsFromCorpus,
     onSelect: (hit) => handleSuggestionClick(hit),
@@ -410,17 +408,6 @@ export function RecherchePageContent({
   });
   const inputValue = suggest.query;
 
-  useEffect(() => {
-    if (
-      restoreFocusAfterClear.current &&
-      committedQuery === "" &&
-      status === "idle"
-    ) {
-      restoreFocusAfterClear.current = false;
-      inputRef.current?.focus();
-    }
-  }, [committedQuery, status]);
-
   // ── keyboard shortcut: "/" → focus input (progressive enhancement) ──────────
 
   useEffect(() => {
@@ -428,7 +415,12 @@ export function RecherchePageContent({
       const tag = (document.activeElement as HTMLElement)?.tagName;
       if (e.key === "/" && tag !== "INPUT" && tag !== "TEXTAREA") {
         e.preventDefault();
-        inputRef.current?.focus();
+        (
+          inputRef.current ??
+          document.querySelector<HTMLInputElement>(
+            "main .universal-search input"
+          )
+        )?.focus();
       }
     };
     document.addEventListener("keydown", handleKeyDown);
@@ -466,8 +458,6 @@ export function RecherchePageContent({
   const handleClear = () => {
     requestController.current?.abort();
     requestTicket.current += 1;
-    restoreFocusAfterClear.current = true;
-    suggest.clear();
     setCommittedQuery("");
     setResults([]);
     setLeads([]);
@@ -565,6 +555,7 @@ export function RecherchePageContent({
   // connaissons pas ce nom »: two answers to one question, and the count is
   // the colder of the two.
   const showQueryHead = status === "loaded" && sortedResults.length > 0;
+  const isEntryState = status === "idle" && !committedQuery && !relation;
 
   // The head is the count, always. It used to be the crowned answer's own
   // name when a pivot existed; DEC-057 retires that, and the name the reader
@@ -811,8 +802,11 @@ export function RecherchePageContent({
   return (
     <PageLayout
       language={language}
-      title={showQueryHead ? undefined : "Recherche"}
-      subtitle={showQueryHead ? undefined : getSearchLabel(language)}
+      hideTrail={isEntryState}
+      title={showQueryHead || isEntryState ? undefined : "Recherche"}
+      subtitle={
+        showQueryHead || isEntryState ? undefined : getSearchLabel(language)
+      }
       heroHead={heroHead}
     >
       {/* The SERP's one page-level accent (brand charter §2): everything on
@@ -820,122 +814,267 @@ export function RecherchePageContent({
           in particular — resolves it from here rather than each needing its
           own scope. A result card can still narrow to its own entity-type
           accent (SEARCH_ENTITY_ACCENT), which wins locally by nesting. */}
-      <div className="afh-shell afh-accent-ocre space-y-afh-5xl">
-        {/* ── search form ── */}
-        <form
-          onSubmit={handleSubmit}
-          role="search"
-          aria-label={"Formulaire de recherche"}
-          className="relative flex flex-col md:flex-row gap-afh-md"
-        >
-          <div className="relative flex-1">
-            <Search
-              className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-afh-text-muted pointer-events-none"
-              aria-hidden="true"
-            />
-            <Input
-              ref={inputRef}
-              type="search"
-              {...suggest.comboboxProps}
-              aria-label={getSearchLabel(language)}
-              placeholder={getSearchPlaceholder(language)}
-              value={inputValue}
-              onChange={(e) => suggest.setQuery(e.target.value)}
-              onKeyDown={suggest.handleKeyDown}
-              // The blur is delayed past the option's mousedown on purpose:
-              // closing on focus loss alone retracts the panel out from under
-              // the click that was landing on it.
-              onBlur={() => setTimeout(() => suggest.dismiss(), 150)}
-              className="pl-10 h-12 text-afh-small"
-              autoComplete="off"
-            />
+      <div className="afh-accent-ocre">
+        {isEntryState ? (
+          <div className="ea-entry">
+            <div className="ea-entry-col">
+              <h1 className="sr-only">Recherche</h1>
+              <UniversalSearchField
+                language={language}
+                surface="serp"
+                autoFocus
+                trackSubmit={false}
+                onNavigate={(href) => {
+                  const destination = new URL(href, window.location.origin);
+                  const query = destination.searchParams.get("q");
+                  if (
+                    destination.pathname ===
+                      getLocalizedRoute(language, "search") &&
+                    query
+                  ) {
+                    commitSearch(query);
+                  } else {
+                    router.push(href);
+                  }
+                }}
+              />
+              <section
+                className="home-hero-seeds ea-entry-chips"
+                role="group"
+                aria-label={searchEntryCopy[language].examples}
+              >
+                <HomeHeroSeeds
+                  language={language}
+                  words={SEARCH_PAGE_EXAMPLE_WORDS}
+                  onPick={(word) => {
+                    trackEvent("search:result_click", {
+                      surface: "serp",
+                      type: "example",
+                      rank:
+                        Object.values(SEARCH_PAGE_EXAMPLE_WORDS)
+                          .flat()
+                          .indexOf(word) + 1,
+                    });
+                    commitSearch(word);
+                  }}
+                />
+              </section>
+              {weeklyNames.length > 0 ? (
+                <section
+                  className="home-hero-seeds ea-entry-chips"
+                  role="group"
+                  aria-label={searchEntryCopy[language].weeklyNames}
+                >
+                  <span className="home-hero-seeds-intro">
+                    {searchEntryCopy[language].weeklyNames}
+                  </span>
+                  <ul className="home-hero-search-seeds">
+                    {weeklyNames.slice(0, 6).map((name, index) => (
+                      <li key={name.form}>
+                        <Link
+                          className="home-hero-seed"
+                          href={name.href}
+                          onClick={() =>
+                            trackEvent("search:result_click", {
+                              surface: "serp",
+                              type: "weekly",
+                              rank: index + 1,
+                            })
+                          }
+                        >
+                          {name.form}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              ) : null}
+            </div>
+            <style jsx global>{`
+              .ea-entry {
+                width: 100%;
+                max-width: 704px;
+                margin-inline: auto;
+                padding-top: var(--afh-space-5xl);
+                padding-bottom: var(--afh-space-7xl);
+              }
+              .ea-entry-col {
+                display: flex;
+                flex-direction: column;
+                gap: var(--afh-space-6xl);
+                max-width: 640px;
+                margin-inline: auto;
+              }
+              .ea-entry-chips {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 8px;
+                margin: 0;
+              }
+              .ea-entry-chips .home-hero-seeds-intro {
+                flex: 0 0 100%;
+                font-size: var(--afh-text-small);
+                font-weight: 600;
+                color: var(--afh-text);
+              }
+              .ea-entry-chips .home-hero-search-seeds {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                gap: 8px;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+              }
+              .ea-entry-chips .home-hero-search-seeds button,
+              .ea-entry-chips .home-hero-search-seeds a {
+                display: inline-flex;
+                min-height: 44px;
+                align-items: center;
+                padding: 0 14px;
+                border: 1px solid var(--accent-tint);
+                border-radius: var(--afh-radius-full);
+                background: transparent;
+                color: var(--accent-ink);
+                font-size: var(--afh-text-small);
+                text-decoration: none;
+                cursor: pointer;
+              }
+              .ea-entry-chips .home-hero-search-seeds button:hover,
+              .ea-entry-chips .home-hero-search-seeds a:hover {
+                background: var(--accent-tint);
+              }
+              .ea-entry-chips .home-hero-seeds-refresh {
+                min-height: 44px;
+                margin-inline: 0;
+                color: var(--accent-ink);
+              }
+              @media (min-width: 768px) {
+                .ea-entry {
+                  padding-top: var(--afh-space-7xl);
+                }
+              }
+            `}</style>
           </div>
-          <Button type="submit" className="h-12 px-6 shrink-0">
-            {"Rechercher"}
-          </Button>
-          {/* Hung from the form rather than the input: below md the form
+        ) : (
+          <div className="afh-shell space-y-afh-5xl">
+            {/* ── search form ── */}
+            <form
+              onSubmit={handleSubmit}
+              role="search"
+              aria-label={"Formulaire de recherche"}
+              className="relative flex flex-col md:flex-row gap-afh-md"
+            >
+              <div className="relative flex-1">
+                <Search
+                  className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-afh-text-muted pointer-events-none"
+                  aria-hidden="true"
+                />
+                <Input
+                  ref={inputRef}
+                  type="search"
+                  {...suggest.comboboxProps}
+                  aria-label={getSearchLabel(language)}
+                  placeholder={getSearchPlaceholder(language)}
+                  value={inputValue}
+                  onChange={(e) => suggest.setQuery(e.target.value)}
+                  onKeyDown={suggest.handleKeyDown}
+                  // The blur is delayed past the option's mousedown on purpose:
+                  // closing on focus loss alone retracts the panel out from under
+                  // the click that was landing on it.
+                  onBlur={() => setTimeout(() => suggest.dismiss(), 150)}
+                  className="pl-10 h-12 text-afh-small"
+                  autoComplete="off"
+                />
+              </div>
+              <Button type="submit" className="h-12 px-6 shrink-0">
+                {"Rechercher"}
+              </Button>
+              {/* Hung from the form rather than the input: below md the form
               stacks, and a panel under the input alone covered the submit
               button, so a tap meant to submit landed on a suggestion. */}
-          {suggest.isOpen && (
-            <ul
-              id={suggest.listboxId}
-              role="listbox"
-              aria-label={"Suggestions de recherche"}
-              className="absolute left-0 top-full z-50 w-full bg-afh-surface border border-afh-border rounded-afh-lg shadow-afh-2 mt-afh-xs overflow-hidden"
-            >
-              {suggest.options.map((hit, index) => (
-                <li
-                  key={hit.id}
-                  {...suggest.getOptionProps(index)}
-                  className={cn(
-                    "px-afh-2xl py-afh-md hover:bg-afh-bg-warm cursor-pointer text-afh-small",
-                    index === suggest.activeIndex && "bg-afh-bg-warm"
-                  )}
-                  onMouseDown={() => handleSuggestionClick(hit)}
+              {suggest.isOpen && (
+                <ul
+                  id={suggest.listboxId}
+                  role="listbox"
+                  aria-label={"Suggestions de recherche"}
+                  className="absolute left-0 top-full z-50 w-full bg-afh-surface border border-afh-border rounded-afh-lg shadow-afh-2 mt-afh-xs overflow-hidden"
                 >
-                  {searchResultDisplayLabel(hit, language)}
-                </li>
-              ))}
-            </ul>
-          )}
-        </form>
+                  {suggest.options.map((hit, index) => (
+                    <li
+                      key={hit.id}
+                      {...suggest.getOptionProps(index)}
+                      className={cn(
+                        "px-afh-2xl py-afh-md hover:bg-afh-bg-warm cursor-pointer text-afh-small",
+                        index === suggest.activeIndex && "bg-afh-bg-warm"
+                      )}
+                      onMouseDown={() => handleSuggestionClick(hit)}
+                    >
+                      {searchResultDisplayLabel(hit, language)}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </form>
 
-        {/* ── filter chip row (always visible) ── */}
-        <div
-          data-testid="filter-chip-row"
-          role="group"
-          className="flex flex-wrap items-center gap-afh-md min-h-[2rem]"
-          aria-label={"Filtres actifs"}
-        >
-          {relation && (
-            <Badge
-              variant="secondary"
-              className="flex items-center gap-afh-xs px-afh-lg py-afh-xs text-afh-small"
+            {/* ── filter chip row (always visible) ── */}
+            <div
+              data-testid="filter-chip-row"
+              role="group"
+              className="flex flex-wrap items-center gap-afh-md min-h-[2rem]"
+              aria-label={"Filtres actifs"}
             >
-              {relationLabel}
-              <button
-                type="button"
-                aria-label={`${"Supprimer le filtre"} ${relationLabel}`}
-                onClick={() => setRelation(null)}
-                className={cn("ml-afh-xs rounded-full", CHARTER_FOCUS_RING)}
+              {relation && (
+                <Badge
+                  variant="secondary"
+                  className="flex items-center gap-afh-xs px-afh-lg py-afh-xs text-afh-small"
+                >
+                  {relationLabel}
+                  <button
+                    type="button"
+                    aria-label={`${"Supprimer le filtre"} ${relationLabel}`}
+                    onClick={() => setRelation(null)}
+                    className={cn("ml-afh-xs rounded-full", CHARTER_FOCUS_RING)}
+                  >
+                    <X className="h-3 w-3" aria-hidden="true" />
+                  </button>
+                </Badge>
+              )}
+              {hasActiveFilters && (
+                <button
+                  type="button"
+                  onClick={() => setRelation(null)}
+                  className="text-afh-small text-afh-fg-muted hover:text-afh-text underline underline-offset-2 ml-auto"
+                >
+                  {"Tout effacer"}
+                </button>
+              )}
+            </div>
+
+            {/* ── loading indicator ── */}
+            {status === "loading" && (
+              <div
+                className="flex items-center justify-center h-32"
+                aria-live="polite"
+                aria-busy="true"
               >
-                <X className="h-3 w-3" aria-hidden="true" />
-              </button>
-            </Badge>
-          )}
-          {hasActiveFilters && (
-            <button
-              type="button"
-              onClick={() => setRelation(null)}
-              className="text-afh-small text-afh-fg-muted hover:text-afh-text underline underline-offset-2 ml-auto"
-            >
-              {"Tout effacer"}
-            </button>
-          )}
-        </div>
+                <Loader2
+                  className="h-6 w-6 animate-spin text-afh-text-muted"
+                  aria-label={"Chargement en cours"}
+                />
+              </div>
+            )}
 
-        {/* ── loading indicator ── */}
-        {status === "loading" && (
-          <div
-            className="flex items-center justify-center h-32"
-            aria-live="polite"
-            aria-busy="true"
-          >
-            <Loader2
-              className="h-6 w-6 animate-spin text-afh-text-muted"
-              aria-label={"Chargement en cours"}
-            />
-          </div>
-        )}
-
-        {/* Split fiches of the same people (ETNI-1391) are grouped into one
+            {/* Split fiches of the same people (ETNI-1391) are grouped into one
             card here, at display time only — the underlying result order and
             count are unaffected. */}
-        {/* Named positively rather than as a list of exclusions, because the
+            {/* Named positively rather than as a list of exclusions, because the
             negative form silently admitted every status nobody had thought of:
             `failed` fell through it and drew the unknown-name answer — a
             confession about the corpus — on a request that never reached it. */}
-        {/* Reached only when both committedQuery and relation are empty — the
+            {/* Reached only when both committedQuery and relation are empty — the
             branch above this one (`if (committedQuery || relation)`) sends
             every other case to the reviewed feed. `status === "loaded"` here
             is therefore always a stale render from a relation filter cleared
@@ -945,28 +1084,32 @@ export function RecherchePageContent({
             hold (NameAnswer) was removed once that made it unreachable
             (ETNI-1966) — restoring it here would answer a name nobody
             searched. */}
-        {(status === "idle" || (status === "loaded" && results.length > 0)) && (
-          <div data-testid="search-results-layout" className="space-y-afh-5xl">
-            {nameSubjects.length === 1 ? (
-              <SourcedHighlightBlock result={nameSubjects[0]} />
-            ) : null}
-            {refinements}
-            {resultsList}
-          </div>
-        )}
+            {(status === "idle" ||
+              (status === "loaded" && results.length > 0)) && (
+              <div
+                data-testid="search-results-layout"
+                className="space-y-afh-5xl"
+              >
+                {nameSubjects.length === 1 ? (
+                  <SourcedHighlightBlock result={nameSubjects[0]} />
+                ) : null}
+                {refinements}
+                {resultsList}
+              </div>
+            )}
 
-        {status === "failed" && (
-          <div className="bg-afh-bg-warm rounded-afh-lg px-afh-5xl py-afh-7xl text-center">
-            <p
-              className="text-afh-small text-afh-text-soft mx-auto max-w-sm"
-              role="status"
-            >
-              {nameAnswerCopy[language].searchUnavailable}
-            </p>
-          </div>
-        )}
+            {status === "failed" && (
+              <div className="bg-afh-bg-warm rounded-afh-lg px-afh-5xl py-afh-7xl text-center">
+                <p
+                  className="text-afh-small text-afh-text-soft mx-auto max-w-sm"
+                  role="status"
+                >
+                  {nameAnswerCopy[language].searchUnavailable}
+                </p>
+              </div>
+            )}
 
-        {/* ── a search that returned nothing ──
+            {/* ── a search that returned nothing ──
             The boards keep two cases apart here, and so does this. A spelling
             that missed gets the near-misses the engine found; only a name
             nothing came close to gets the confession REQ-178 asks for. Stacking
@@ -975,30 +1118,33 @@ export function RecherchePageContent({
             What both replace opened on the reader's spelling — a search engine
             apologising for its index, where the doctrine says the silence is
             the atlas's own. */}
-        {status === "loaded" && results.length === 0 && (
-          <div className="space-y-afh-2xl">
-            {leads.length > 0 ? (
-              <div className="flex flex-col items-center gap-afh-2xl bg-afh-bg-warm rounded-afh-lg px-afh-5xl py-afh-7xl text-center">
-                <p className="text-afh-small text-afh-text-soft max-w-sm">
-                  {nameAnswerCopy[language].noExactMatch} « {committedQuery} ».
-                </p>
-                <NoResultsLeads leads={leads} language={language} />
+            {status === "loaded" && results.length === 0 && (
+              <div className="space-y-afh-2xl">
+                {leads.length > 0 ? (
+                  <div className="flex flex-col items-center gap-afh-2xl bg-afh-bg-warm rounded-afh-lg px-afh-5xl py-afh-7xl text-center">
+                    <p className="text-afh-small text-afh-text-soft max-w-sm">
+                      {nameAnswerCopy[language].noExactMatch} « {committedQuery}{" "}
+                      ».
+                    </p>
+                    <NoResultsLeads leads={leads} language={language} />
+                  </div>
+                ) : null}
+                <div className="flex flex-col items-center gap-afh-md text-afh-small">
+                  <Link
+                    href={getLocalizedRoute(language, "peoples")}
+                    className="underline underline-offset-2 hover:text-afh-text transition-colors"
+                  >
+                    {nameAnswerCopy[language].browsePeoples}
+                  </Link>
+                  <Link
+                    href={getLocalizedRoute(language, "families")}
+                    className="underline underline-offset-2 hover:text-afh-text transition-colors"
+                  >
+                    {nameAnswerCopy[language].browseFamilies}
+                  </Link>
+                </div>
               </div>
-            ) : null}
-            <div className="flex flex-col items-center gap-afh-md text-afh-small">
-              <Link
-                href={getLocalizedRoute(language, "peoples")}
-                className="underline underline-offset-2 hover:text-afh-text transition-colors"
-              >
-                {nameAnswerCopy[language].browsePeoples}
-              </Link>
-              <Link
-                href={getLocalizedRoute(language, "families")}
-                className="underline underline-offset-2 hover:text-afh-text transition-colors"
-              >
-                {nameAnswerCopy[language].browseFamilies}
-              </Link>
-            </div>
+            )}
           </div>
         )}
       </div>

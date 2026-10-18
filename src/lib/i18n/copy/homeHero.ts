@@ -1,4 +1,5 @@
 import type { Language } from "@/types/shared";
+import { searchFieldCopy } from "@/lib/i18n/copy/searchField";
 
 export interface HomeHeroCopy {
   question: string;
@@ -49,7 +50,7 @@ export const homeHeroCopy: Record<Language, HomeHeroCopy> = {
     description:
       "Découvrez l’histoire de votre nom de famille ou du nom d’un peuple, d’une langue ou d’un pays. Retrouvez ses différents noms, ses origines possibles et les endroits où il est employé.",
     question: "D’où vient ce nom ?",
-    searchLabel: "Quel nom cherchez-vous ?",
+    searchLabel: searchFieldCopy.fr.label,
     seedsIntro: "Essayez avec",
     seeds: ["Keïta", "Lingala", "Fulbe", "Bénin"],
     refreshSeeds: "Autres exemples",
