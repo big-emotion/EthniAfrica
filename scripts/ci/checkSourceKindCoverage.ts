@@ -41,9 +41,10 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * same day: the two Gur citations of Koelle's Polyglotta Africana now point
  * to the scan and are typed. 1006 -> 1003 on 2026-10-15: three untyped
  * citations left PPL_TUAREG with the Touareg name-history corrections, and
- * the sources added to it carry a source_kind.
+ * the sources added to it carry a source_kind. 1003 -> 1001 on 2026-10-18:
+ * wave 24 typed two untyped citations of the people fiches it wrote.
  */
-export const UNTYPED_SOURCE_RATCHET = 1002;
+export const UNTYPED_SOURCE_RATCHET = 1001;
 
 export interface UntypedSource {
   file: string;
