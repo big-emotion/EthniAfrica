@@ -139,5 +139,236 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kx'a, ou peuples kx'a, réunit des peuples de Namibie, du Botswana et d'Angola dont les langues à clics forment la petite famille kx'a : le !xun, ou ju, et le ǂhoan. Ce n'est pas le nom d'un peuple : aucune source que nous avons lue ne donne un nom que ces peuples se donneraient tous ensemble, et chacun porte le sien. C'est un nom de linguistes, tiré d'un mot de ces langues qui veut dire « terre » ; on a aussi parlé de khoïsan du Nord. Nous présentons ces noms plus bas.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Kx'a",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les linguistes Bernd Heine et Henry Honken, d'après un mot de ces langues",
+        "shortLine": "Un nom de linguistes de 2010, tiré d'un mot de ces langues qui veut dire « terre ».",
+        "periodLabel": "Depuis 2010",
+        "accounts": [
+          {
+            "period": {
+              "from": 2010,
+              "to": 2010,
+              "label": "2010"
+            },
+            "era": "modern",
+            "statement": "Le nom Kx'a réunit des peuples qui ont chacun leur nom. Les locuteurs du !xun se nomment !xuun, ou ju|'hoan, ju|'hoansi, selon les régions. Le nom Hoan, celui des locuteurs du ǂhoan, ne serait peut-être pas leur propre nom, mais un mot de la langue taa qui veut dire « sud », selon Bernd Heine et Henry Honken.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Kx'a Family: A New Khoisan Genealogy, Journal of Asian and African Studies, no 79",
+                "author": "Bernd Heine et Henry Honken",
+                "year": 2010,
+                "url": "https://doi.org/10.15026/57434",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Tokyo University of Foreign Studies, 2010. PDF lu dans le dépôt de l'université le 18 octobre 2026 ; les numéros de page sont ceux imprimés sur les pages.",
+                "page": "p. 7, note 3, et p. 8, tableau 1"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par les auteurs"
+            },
+            "statement": "Le nom Kx'a vient d'une racine kxʼà, « terre, sol », commune aux langues de la famille, selon Bernd Heine et Henry Honken. Ils notent que la même racine se retrouve dans le kwadi, une langue du sud-ouest de l'Angola.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Kx'a Family: A New Khoisan Genealogy, Journal of Asian and African Studies, no 79",
+                "author": "Bernd Heine et Henry Honken",
+                "year": 2010,
+                "url": "https://doi.org/10.15026/57434",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Tokyo University of Foreign Studies, 2010. PDF lu dans le dépôt de l'université le 18 octobre 2026 ; les numéros de page sont ceux imprimés sur les pages. « which we propose to call Proto-Kx’a. This term is taken from the root *kx’à ‘ground, soil’ shared by all the linguistic communities concerned ».",
+                "page": "p. 10 et note 6"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2010,
+              "to": 2010,
+              "label": "2010"
+            },
+            "era": "modern",
+            "statement": "Le nom Kx'a apparaît dans un article des linguistes Bernd Heine et Henry Honken, qui proposent d'appeler ainsi la famille du !xun et du ǂhoan. On rangeait jusque-là ces deux langues dans des groupes différents, le khoïsan du Nord et plutôt le khoïsan du Sud. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il réunit existaient déjà avant lui, chacun sous son nom.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Kx'a Family: A New Khoisan Genealogy, Journal of Asian and African Studies, no 79",
+                "author": "Bernd Heine et Henry Honken",
+                "year": 2010,
+                "url": "https://doi.org/10.15026/57434",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Tokyo University of Foreign Studies, 2010. PDF lu dans le dépôt de l'université le 18 octobre 2026 ; les numéros de page sont ceux imprimés sur les pages.",
+                "page": "p. 6 et p. 10"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Khoïsan du Nord",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des savants européens et américains, d'après le nom Khoisan",
+        "shortLine": "L'ancien nom géographique d'une partie de ces langues, le !xun.",
+        "periodLabel": "Écrit dès 1963 selon Heine et Honken ; ancien",
+        "accounts": [
+          {
+            "period": {
+              "from": 2010,
+              "to": 2010,
+              "label": "2010"
+            },
+            "era": "modern",
+            "statement": "Le nom khoïsan du Nord désigne une branche que l'on tient aujourd'hui pour sans parenté avec le khoïsan du Sud, selon Bernd Heine et Henry Honken. Ils ajoutent que ce groupe forme en fait une seule langue, complexe, le !xun.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Kx'a Family: A New Khoisan Genealogy, Journal of Asian and African Studies, no 79",
+                "author": "Bernd Heine et Henry Honken",
+                "year": 2010,
+                "url": "https://doi.org/10.15026/57434",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Tokyo University of Foreign Studies, 2010. PDF lu dans le dépôt de l'université le 18 octobre 2026 ; les numéros de page sont ceux imprimés sur les pages.",
+                "page": "p. 6"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "statement": "Le nom khoïsan du Nord correspond, chez Joseph Greenberg, au « groupe nord » des langues à clics d'Afrique australe, celui des Auen et des Kung.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 336"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1930,
+              "label": "1928-1930"
+            },
+            "statement": "Le nom khoïsan du Nord est formé sur Khoisan, que l'anthropologue Leonhard Schultze forge en 1928 pour la « souche raciale » commune aux « Bushmen » et aux Khoekhoe, selon Isaac Schapera, qui l'adopte en 1930 comme nom commun de ces deux peuples. Khoisan unit Khoi-Khoin, le nom que se donnent les Khoekhoe, et San, celui qu'ils donnent aux « Bushmen ».",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, 1930. Lu dans la numérisation de la Digital Library of India sur Internet Archive le 18 octobre 2026 ; les numéros de page imprimés ont été lus sur l'image. « The term Khoisan, recently coined by Schultze to denote the racial stock to which the Bushmen and the Hottentots belong, has therefore been accepted here as a convenient generic name for these two peoples » (p. 5) ; la note 1 dit le mot formé de Khoi-Khoin et de San, et ajoute que les seconds « have no collective name of their own ». Le titre et le texte emploient les noms que les Européens donnaient alors à ces peuples ; nous ne les reprenons qu'entre guillemets.",
+                "page": "p. 5 et note 1"
+              },
+              {
+                "title": "The Kx'a Family: A New Khoisan Genealogy, Journal of Asian and African Studies, no 79",
+                "author": "Bernd Heine et Henry Honken",
+                "year": 2010,
+                "url": "https://doi.org/10.15026/57434",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Tokyo University of Foreign Studies, 2010. PDF lu dans le dépôt de l'université le 18 octobre 2026 ; les numéros de page sont ceux imprimés sur les pages. « The term “Khoisan” was first proposed by the anthropologist Leonhard Schultze (1928) and adopted in African linguistics by Westermann (1935) ».",
+                "page": "p. 8"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1963,
+              "to": 1963,
+              "label": "1963"
+            },
+            "statement": "Le nom khoïsan du Nord apparaît, sous sa forme anglaise Northern Khoisan, comme l'une des branches de la famille khoïsan d'Afrique australe que propose Joseph Greenberg en 1963, selon Bernd Heine et Henry Honken. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il réunit existaient déjà avant lui.",
+            "formAsWritten": "Northern Khoisan",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Kx'a Family: A New Khoisan Genealogy, Journal of Asian and African Studies, no 79",
+                "author": "Bernd Heine et Henry Honken",
+                "year": 2010,
+                "url": "https://doi.org/10.15026/57434",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Tokyo University of Foreign Studies, 2010. PDF lu dans le dépôt de l'université le 18 octobre 2026 ; les numéros de page sont ceux imprimés sur les pages. « Formerly considered to be distinct but related branches of the South African Khoisan family (Greenberg 1963), Northern and Southern Khoisan are now widely held to be genetically unrelated groupings ».",
+                "page": "p. 6"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "1930"
+            },
+            "statement": "On parle alors, pour chacun de ces peuples, de son propre nom : les //Kau //en, que l'on appelle couramment Auen, et les !Khũ ou !Kuŋ, dont le nom veut dire simplement « personnes, gens », selon Isaac Schapera.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, 1930. Lu dans la numérisation de la Digital Library of India sur Internet Archive le 18 octobre 2026 ; les numéros de page imprimés ont été lus sur l'image. « the //Kau //en, called ǂaukwe by the Central Bushmen, ǂausan by the Nama, MaKaukau by the neighbouring Bantu, and commonly spoken of as the Auen » ; « Their tribal name means simply “ persons, people ” ». Le titre et le texte emploient les noms que les Européens donnaient alors à ces peuples ; nous ne les reprenons qu'entre guillemets.",
+                "page": "p. 33"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1927,
+              "to": 1930,
+              "label": "1927-1930"
+            },
+            "statement": "On parle alors du « groupe du Nord » des langues des « Bushmen », un nom tiré de leur place sur la carte, que leur donne la linguiste Dorothea Bleek à partir de 1927. Isaac Schapera s'en sert en 1930 pour ranger les tribus elles-mêmes, comme un moyen commode, et note que ces peuples ne semblent pas avoir de nom commun pour eux-mêmes.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, 1930. Lu dans la numérisation de la Digital Library of India sur Internet Archive le 18 octobre 2026 ; les numéros de page imprimés ont été lus sur l'image. « To these the names Southern, Northern, and Central Groups respectively have been applied by Miss D. F. Bleek, on account of their relative geographical distribution. These names may also be used as affording a convenient means of grouping the different tribes » (p. 31-32) ; « The Bushmen do not appear to have any general or collective names for themselves » (p. 31). Le titre et le texte emploient les noms que les Européens donnaient alors à ces peuples ; nous ne les reprenons qu'entre guillemets.",
+                "page": "p. 31-32"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
