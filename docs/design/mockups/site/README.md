@@ -1,11 +1,12 @@
 # Site mockups — the reference for every visible change
 
-Eighty-eight boards: a design-system board, the pages recorded at 430, 768 and
+Ninety-four boards: a design-system board, the pages recorded at 430, 768 and
 1440 px from release v5.2.0 (production, captured on 2026-10-14), and the
 approved changes listed under "Changes since the record". They are the reference every change a reader can see
 answers to, whoever makes it: the team, an agency, a contractor or an agent.
-The three `search-state-typo-fiches` boards are proposed, not approved yet
-(brief 13): until the operator approves them they are not a reference.
+The three `search-state-typo-fiches` boards and the brief 16 section of `Main`
+are proposed, not approved yet: until the operator approves them they are not
+a reference.
 
 Source canvas (public, read-only for anyone with the link):
 <https://claude.ai/artifact/TFD4syHT5UygK4WnxGA5Rd>
@@ -87,7 +88,7 @@ are recorded whole, folded as the site folds them.
 | 2026-10-17 | [Brief 12, the unknown name, the « Fiches » lens and the consent strip](../briefs/12-unknown-name-fiches-lens-consent.md), approved 2026-10-17 by delegation | `search-unknown` (the invitation in the verdict, no empty shelf, no owed cards); `search-state-fiches` (new); `Main` (the fiche cards and the lens states, the consent strip at 430, 768 and 1440, closed and open, and over the first screen of `search-peul-430`) |
 | 2026-10-17 | Fixes from the art-direction review of briefs 10 to 12, approved with them by delegation | `search-unknown` (the Siwi and Tchad reasons restored as brief 1 approved them); the fold boards of brief 10 and their two state boards (each closed fold opens with « + »; on `country-civ` the naming-systems line folds with the 47 names); `country-state-civ-quaqua` (the readings stack below 1200 px); `search-state-fiches` (the lens bar drawn scrolled to « Fiches » at 430); `Main` (the locked consent switch in full ink, scale captions, the legend and lens-bar notes) |
 | 2026-10-18 | [Brief 6, the family-name fiche](../briefs/06-family-name.md) | `name-traore`, `name-state-thin-kollo` and `name-state-weak-sarr` (new); footer B now on `name-traore` too |
-| 2026-10-18 | [Brief 13, a misspelling that also finds related fiches](../briefs/13-typo-with-related-fiches.md), **proposed, awaiting the operator's approval** | `search-state-typo-fiches` (new): « tchikaya », the verdict that asks, the choice Tchicaya, the lens bar, the fiches found, « Aller plus loin »; no video shelf |
+| 2026-10-18 | [Brief 16, a misspelling that also finds related fiches](../briefs/16-typo-with-related-fiches.md), **proposed, awaiting the operator's approval** | `search-state-typo-fiches` (new): « tchikaya », the filters first, the plain verdict of `search-unknown`, the accented choice Tchicaya and « Proposer une source », the fiche found under the related-only caution, « Aller plus loin »; no video shelf, no sound-alike fiche; `Main` (the choice chip, the plain verdict in one-choice and several-choice versions, the fiches found) |
 
 The boards of a changed page no longer record v5.2.0: they are the approved
 target, and the code is behind them until the implementation lands.

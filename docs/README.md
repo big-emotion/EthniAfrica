@@ -30,6 +30,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Brief 10 — The fiche boards: the link to the name's story, and folded chapters](design/mockups/briefs/10-fiche-story-link-and-folds.md)
 - [Brief 11 — The result page: from the searched name to the self-name, one video, labelled sources](design/mockups/briefs/11-result-page-self-name-handoff.md)
 - [Brief 12 — The unknown name, the « Fiches » lens and the consent strip](design/mockups/briefs/12-unknown-name-fiches-lens-consent.md)
+- [Brief 16 — A misspelling that also finds related fiches](design/mockups/briefs/16-typo-with-related-fiches.md)
 - [Name-page mockup briefs — one per type of name](design/mockups/briefs/README.md)
 - [Claude Design prompt, step 1 — shared rules and brief 1](design/mockups/briefs/claude-design-prompt-01.md)
 - [Claude Design prompt, step 2 — brief 2, the people fiche](design/mockups/briefs/claude-design-prompt-02.md)

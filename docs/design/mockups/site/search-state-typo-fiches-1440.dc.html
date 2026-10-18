@@ -52,35 +52,35 @@ body{margin:0}
 </form>
 
 <div class="afh-answer-page" data-testid="feed-layout">
+<nav class="ea-lenses" aria-label="Filtrer ce fil de résultats">
+<button class="ea-lens" type="button" aria-pressed="true">Tout</button>
+<button class="ea-lens" type="button" aria-pressed="false">Fiches <span class="ea-lens-count">1</span></button>
+</nav>
+
 <div>
-<section class="ea-verdict" data-tone="plain" data-testid="feed-block-verdict">
+<section class="ea-verdict" data-testid="feed-block-verdict">
 <p class="ea-eyebrow">D'où vient ce nom</p>
 <h1 class="ea-verdict-name">tchikaya</h1>
-<p class="ea-verdict-line">Cherchiez-vous… ?</p>
-<p class="ea-verdict-text">Aucun nom ne correspond exactement à « tchikaya ». Voici les plus proches : choisissez-en un pour le chercher.</p>
+<p class="ea-verdict-line">Cherchiez-vous… ?</p>
+<p class="ea-verdict-text">Aucune fiche ne porte exactement le nom « tchikaya ». Le nom le plus proche est Tchicaya : choisissez-le pour lire son histoire.</p>
 </section>
 
-<section class="ea-choices" data-testid="feed-block-appellations" aria-labelledby="choices-search-state-typo-fiches-1440">
-<h2 id="choices-search-state-typo-fiches-1440" class="ea-block-title">Les noms les plus proches</h2>
+<section class="ea-choices" data-testid="feed-block-appellations">
+<h2 class="ea-fiche-group-title">Le nom le plus proche</h2>
 <ul class="ea-choices-list">
 <li><a class="ea-choice" href="#">Tchicaya</a></li>
 </ul>
+<p class="ea-choices-invitation">Vous écrivez ce nom « tchikaya » ? Dites-nous d’où vient cette écriture.</p>
+<button class="ea-owed-action" type="button">Proposer une source</button>
 </section>
-
-<nav class="ea-lenses" aria-label="Filtrer ce fil de résultats">
-<button class="ea-lens" type="button" aria-pressed="true">Tout</button>
-<button class="ea-lens" type="button" aria-pressed="false">Jeux <span class="ea-lens-count">1</span></button>
-<button class="ea-lens" type="button" aria-pressed="false">Fiches <span class="ea-lens-count">2</span></button>
-</nav>
 </div>
 
 <div class="ea-movement">
-<section data-testid="feed-block-fiches" aria-labelledby="discover-search-state-typo-fiches-1440">
-<h2 id="discover-search-state-typo-fiches-1440" class="ea-block-title">Découvrir</h2>
-<p class="ea-discover-note">Pour aller au fond : chaque fiche, avec toutes ses sources.</p>
-<ul class="ea-fiche-grid" data-mode="all">
-<li><a class="ea-fiche-card" href="#"><span class="ea-fiche-kind">Nom</span><span class="ea-fiche-name">Chukwu</span><span class="ea-fiche-line">Fiche EthniAfrica</span></a></li>
-<li><a class="ea-fiche-card" href="#"><span class="ea-fiche-kind">Nom</span><span class="ea-fiche-name">Tchicaya</span><span class="ea-fiche-line">Fiche EthniAfrica</span></a></li>
+<section class="ea-fiche-group" data-testid="feed-block-fiches" aria-labelledby="found-search-state-typo-fiches-1440">
+<h2 id="found-search-state-typo-fiches-1440" class="ea-fiche-group-title">La fiche trouvée</h2>
+<p class="ea-fiche-group-note">Nous avons trouvé une fiche liée sans établir qu’elle répond à ce nom.</p>
+<ul class="ea-fiche-grid" data-cols="1">
+<li><a class="ea-fiche-card" href="#"><span class="ea-fiche-kind">Nom</span><span class="ea-fiche-name">Tchicaya</span><span class="ea-fiche-line">Un nom de famille écrit dès 1947 au Journal officiel.</span></a></li>
 </ul>
 </section>
 
@@ -91,6 +91,8 @@ body{margin:0}
 <a href="#">Les familles de langues</a>
 </div>
 </section>
+
+<p class="ea-placeholder ea-fiche-example">[Même état : « muzombo » propose Mutombo et liste sa fiche. Chukwu, que la recherche n’atteint que par le son de « tchikaya », n’est pas listé.]</p>
 </div>
 </div>
 
@@ -169,7 +171,7 @@ body{margin:0}
 
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1326}}'>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1548}}'>
 class Component extends DCLogic {
 renderVals() {
 return {};
