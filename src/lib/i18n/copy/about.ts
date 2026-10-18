@@ -20,7 +20,7 @@ export interface AboutCopy {
   explore: AboutSectionCopy & { accessModes: AccessModeCardCopy[] };
   audience: AboutSectionCopy;
   sources: AboutSectionCopy;
-  conviction: AboutSectionCopy;
+  conviction: AboutSectionCopy & { link: string };
   correction: AboutSectionCopy & {
     links: { search: string; method: string; reportError: string };
   };
@@ -130,6 +130,7 @@ export const aboutCopy: Record<Language, AboutCopy> = {
         "Nous pensons qu’une meilleure connaissance des histoires et des liens entre les populations d’Afrique peut nourrir la compréhension et la coopération.",
         "Cette conviction guide le projet. Elle ne remplace pas les résultats de l’enquête et ne suppose ni une histoire unique ni l’absence de désaccords.",
       ],
+      link: "Lire notre démarche",
     },
     correction: {
       title: "Un travail qui peut être corrigé",

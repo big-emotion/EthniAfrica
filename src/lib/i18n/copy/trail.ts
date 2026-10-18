@@ -23,6 +23,7 @@ export const TRAIL_PAGE_LABELS: Record<Language, Record<PageType, string>> = {
     search: "Recherche",
     doctrine: "Doctrine",
     about: "À propos",
+    approach: "Notre démarche",
     sources: "Sources",
     anecdotes: "Anecdotes",
     proverbs: "Proverbes",

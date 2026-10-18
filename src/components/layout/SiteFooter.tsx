@@ -130,12 +130,12 @@ export function SiteFooter({ language }: SiteFooterProps) {
         },
       ],
     },
-    // À propos and Sources describe the project, not the corpus, so the
-    // three access modes stopped listing them. A rubric here is where they
-    // land: the footer is the one part of the chrome that is allowed to name
-    // the site itself rather than a way into it. Doctrine used to be a
-    // fourth entry here, but that duplicated the link now carried inline on
-    // the À propos page itself — one rubric away rather than one column away.
+    // À propos, Notre démarche and Sources describe the project, not the
+    // corpus, so the three access modes stopped listing them. This rubric is
+    // where they land: the footer is the one part of the chrome that is
+    // allowed to name the site itself rather than a way into it. Doctrine
+    // used to be a separate entry here, but that duplicated the link now
+    // carried inline on the À propos page itself.
     {
       id: "projet",
       heading: directory.projectHeading,
@@ -143,6 +143,10 @@ export function SiteFooter({ language }: SiteFooterProps) {
         {
           label: directory.about,
           href: getLocalizedRoute(language, "about"),
+        },
+        {
+          label: directory.approach,
+          href: getLocalizedRoute(language, "approach"),
         },
         {
           label: directory.sources,
@@ -233,6 +237,12 @@ export function SiteFooter({ language }: SiteFooterProps) {
                 className="afh-brand-tagline font-afh-display text-afh-small font-bold"
               >
                 {PRODUCT_TAGLINE}
+              </span>
+              <span
+                data-testid="footer-signature"
+                className="ea-footer-signature"
+              >
+                {footer.signature}
               </span>
             </span>
           </div>
