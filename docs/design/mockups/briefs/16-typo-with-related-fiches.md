@@ -61,7 +61,7 @@ trouvées (brief 16, proposé) »: the choice chip at rest and focused, beside t
 neutral lens pills; the group heading in the singular and the plural; one 426 px
 frame for « tchikaya » (one choice, one fiche found) and one for several
 choices with no fiche found (« pigmée », names marked as examples). Main
-measures 20090 px.
+measures 19959 px with recette's sources rename of 2026-10-18.
 
 Every space before « ? », « : », « ; », « ! » and inside the guillemets is a
 no-break space (U+00A0), on the boards as in `src/lib/i18n/copy/searchFeed.ts`.
