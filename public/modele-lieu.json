@@ -68,6 +68,7 @@
               "label": "<Ce que le lecteur lit — ex: XVIe siècle>"
             },
             "era": "polity",
+            "accountKind": "family",
             "statement": "<Une phrase qui commence par le nom — ex: Le nom X est attesté…>",
             "hypothesisGroup": "<Même valeur pour les origines concurrentes d'une même période, montrées côte à côte, sans classement>",
             "birth": true,

@@ -89,6 +89,30 @@ describe("parseNameHistory", () => {
   });
 
   // @req REQ-196
+  it('accepts accountKind "family" independently of the claim fields', () => {
+    const parsed = parseNameHistory(
+      nameHistory([
+        account({ accountKind: "family", hypothesisGroup: "origine" }),
+      ])
+    );
+
+    expect(parsed.success).toBe(true);
+    expect(parsed.data?.names[0].accounts[0]).toMatchObject({
+      accountKind: "family",
+      hypothesisGroup: "origine",
+    });
+  });
+
+  // @req REQ-196
+  it("rejects unknown account kinds and leaves the field optional", () => {
+    expect(
+      parseNameHistory(nameHistory([account({ accountKind: "institutional" })]))
+        .success
+    ).toBe(false);
+    expect(parseNameHistory(nameHistory()).success).toBe(true);
+  });
+
+  // @req REQ-196
   it("refuses a claim status outside the three supported values", () => {
     const parsed = parseNameHistory(
       nameHistory([account({ claimStatus: "probable" })])

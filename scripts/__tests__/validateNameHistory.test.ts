@@ -112,6 +112,33 @@ describe("checkNameHistoryBlocks", () => {
   });
 
   // @req REQ-196
+  it('accepts accountKind "family" as an optional account axis', () => {
+    writeJson(tmpDir, "lieux/LOC_TEST.json", {
+      id: "LOC_TEST",
+      nameHistory: nameHistory([account({ accountKind: "family" })]),
+    });
+
+    expect(checkNameHistoryBlocks(tmpDir)).toEqual({
+      ok: true,
+      errors: [],
+      warnings: [],
+    });
+  });
+
+  // @req REQ-196
+  it("rejects an unknown accountKind without changing absent-field behavior", () => {
+    writeJson(tmpDir, "lieux/LOC_TEST.json", {
+      id: "LOC_TEST",
+      nameHistory: nameHistory([account({ accountKind: "institutional" })]),
+    });
+
+    expect(checkNameHistoryBlocks(tmpDir)).toMatchObject({
+      ok: false,
+      errors: [expect.stringMatching(/accountKind.*expected "family"/)],
+    });
+  });
+
+  // @req REQ-196
   it("fails a people fiche whose block names no name the people gives itself", () => {
     const block = nameHistory([account()]);
     block.names[0].selfGiven = false;
@@ -251,6 +278,7 @@ describe("the models declare the shared block", () => {
       for (const name of shared.names) {
         delete name.equivalents;
         for (const account of name.accounts) {
+          delete account.accountKind;
           delete account.claimStatus;
           delete account.carrier;
           delete account.collection;
