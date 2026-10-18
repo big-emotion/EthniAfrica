@@ -54,13 +54,16 @@ const PATRONYME_FOLDS: Array<[string, string]> = [
   ["PAT_ADEN", "PAT_ADAM"],
 ];
 
-// An ethnonym, two given names and a middle name: no source opened shows any
-// of them borne as a family name.
+// An ethnonym, two given names, a name known only from one court citation and
+// the head of tribal group names: no source opened tells any of them as a
+// family name. Ahl Sidi was left off the coordinator's list although wave 25
+// recommended retiring it with Ngarta and Ngarlejy.
 const PATRONYME_WITHDRAWN = [
   "PAT_EL_KENZI",
   "PAT_NGARLEJY",
   "PAT_NGARTA",
   "PAT_KIGOZI",
+  "PAT_AHL_SIDI",
 ];
 
 const RETIRED_PEOPLE = [...PEOPLE_FOLDS.map(([id]) => id), ...PEOPLE_WITHDRAWN];
@@ -80,6 +83,7 @@ interface Account {
   birth?: boolean;
   aspect?: string;
   formAsWritten?: string;
+  hypothesisGroup?: string;
   sources: Source[];
 }
 interface HistoryName {
@@ -320,6 +324,44 @@ describe("what the keepers carry over", () => {
     expect(mucuval.classificationStatus).toBe("colonial-legacy");
   });
 
+  // @req REQ-178
+  it("files Kuvale as the self-name of PPL_MUCUVAL and never as an outside name", () => {
+    const { appellations } = readPeople("PPL_MUCUVAL").content;
+
+    expect(appellations.selfAppellation).toBe("Kuvale");
+    expect(appellations.exonyms).not.toContain("OvaKuvale");
+    expect(appellations.exonyms).not.toContain("Kuvale");
+  });
+
+  // The self-name rests on one historian reporting two earlier authors, in
+  // the past tense: the summary says so rather than stating it as today's fact.
+  // @req REQ-178
+  it("attributes the Kuvale self-name in the PPL_MUCUVAL summary", () => {
+    const { summary } = readPeople("PPL_MUCUVAL").nameHistory;
+
+    expect(summary).toMatch(/Selon l'historien Rafael Coca de Campos/);
+    expect(summary).not.toMatch(/Kuvale est celui que se donne/);
+  });
+
+  // @req REQ-178
+  it("carries Satzinger's two origins of the name Kenzi to PPL_NUBIENS", () => {
+    const kenzi = historyName(readPeople("PPL_NUBIENS"), "Kenzi");
+    const hypotheses =
+      kenzi?.accounts.filter((account) => account.hypothesisGroup) ?? [];
+
+    expect(kenzi?.selfGiven).toBe(false);
+    expect(hypotheses).toHaveLength(2);
+    expect(
+      new Set(hypotheses.map((account) => account.hypothesisGroup)).size
+    ).toBe(1);
+    for (const account of kenzi?.accounts ?? []) {
+      expect(account.sources[0]).toMatchObject({
+        author: "Helmut Satzinger",
+        page: "p. 748",
+      });
+    }
+  });
+
   // @req REQ-141
   it("adds Njie in the Gambia to PAT_NDIAYE, with the Bakweri homonym, on the DAFN", () => {
     const ndiaye = readPatronyme("PAT_NDIAYE");
@@ -397,6 +439,27 @@ describe("what the keepers carry over", () => {
     expect(adam.bearers).toContainEqual(
       expect.objectContaining({ displayName: "Djama Guedi Aden" })
     );
+  });
+
+  // The DAFN entry folded in for Aden also gives two European family names
+  // spelled Aden, of other origins: one homonym, as PAT_WOLDE records them.
+  // @req REQ-141
+  it("records the European Aden as a homonym of PAT_ADAM", () => {
+    const adam = readPatronyme("PAT_ADAM");
+    const dafnAden = adam.sources.find((source: Source) =>
+      /surname=aden/.test(source.url ?? "")
+    );
+
+    expect(adam.homonyms).toContainEqual(
+      expect.objectContaining({
+        entityType: "patronyme",
+        entityId: null,
+        sourceRefs: [dafnAden.sourceKey],
+      })
+    );
+    expect(
+      adam.gaps.map((gap: { fieldPath: string }) => gap.fieldPath)
+    ).not.toContain("homonyms");
   });
 });
 

@@ -185,14 +185,14 @@
     "decision": "merged",
     "retiredId": "PAT_ADEN",
     "successorId": "PAT_ADAM",
-    "reason": "Aden is a Somali form of Adam: the Dictionary of American Family Names (2003, 2006, on FamilySearch, reopened) gives Aden as « a variant of Adan 3 'Adam' », also found in Ethiopia, Kenya and Djibouti, and Adan as the Somali equivalent of Biblical Adam; Burton (First Footsteps in East Africa, 1856, p. 18, note, read on the page image) writes « Adan (i. e. Adam.) » in a Somali genealogy. Folded in: the spelling Aden in Djibouti, Djibouti as a country and the bearer Djama Guedi Aden, on the Présidence de Djibouti page of 22 June 2026, reopened, and the Somali as a people, on the dictionary. The keeper's name history now tells Adan and Aden from those sources, as it tells the Hausa Adamu. Not carried: the spelling Adan in Djibouti and the Djibouti country row as written, which rested on the candidate queue alone, and the candidate-queue stub.",
+    "reason": "Aden is a Somali form of Adam: the Dictionary of American Family Names (2003, 2006, on FamilySearch, reopened) gives Aden as « a variant of Adan 3 'Adam' », also found in Ethiopia, Kenya and Djibouti, and Adan as the Somali equivalent of Biblical Adam; Burton (First Footsteps in East Africa, 1856, p. 18, note, read on the page image) writes « Adan (i. e. Adam.) » in a Somali genealogy. Folded in: the spelling Aden in Djibouti, Djibouti as a country and the bearer Djama Guedi Aden, on the Présidence de Djibouti page of 22 June 2026, reopened, and the Somali as a people, on the dictionary. The keeper's name history now tells Adan and Aden from those sources, as it tells the Hausa Adamu. The same Aden entry gives two European family names spelled Aden, of other origins (East Frisian, from the personal name Ade; Scottish, from the lands of Auden or Aden in Old Deer, Aberdeenshire): the keeper records them as one homonym, as PAT_WOLDE does for the European Wolde, and its gap saying it had no homonym is removed. Not carried: the spelling Adan in Djibouti and the Djibouti country row as written, which rested on the candidate queue alone, and the candidate-queue stub.",
     "decidedOn": "2026-10-18"
   },
   {
     "decision": "withdrawn",
     "retiredId": "PAT_EL_KENZI",
     "successorId": null,
-    "reason": "No source attests El Kenzi as a family name: the spelling rested on the candidate queue alone. The fiche's one sourced claim, Satzinger (Old Nubian, 2010, pp. 748-749, reopened), is about Kenzi or Kenûzi as the name of the Nubian dialect group north of Egyptian Nubia, which he derives from the title kanz al-dawla; PPL_NUBIENS already lists the Kenzi (Mattokki). No family-name fiche fits it. Withdrawn with no successor; the derivation and the candidate-queue stub are not carried.",
+    "reason": "No source attests El Kenzi as a family name: the spelling rested on the candidate queue alone. The fiche's one sourced claim is about a people, not a surname: Satzinger (Old Nubian, 2010, reopened; the fiche cited pp. 748-749, the passage is on p. 748) gives Kenzi or Kenûzi as the name of the Nubians from Aswan to Wadi el-Sebua, derives it from the Arabic title kanz al-dawla, and weighs two bearers of that title. Carried to PPL_NUBIENS, which lists the Kenzi (Mattokki) among its groups: a Kenzi entry in its name history on that page, telling what the name designated and the two bearers as two hypotheses of one group, and one sentence in its summary. No family-name fiche fits the name. Withdrawn with no successor; the candidate-queue stub is not carried.",
     "decidedOn": "2026-10-18"
   },
   {
@@ -213,7 +213,14 @@
     "decision": "withdrawn",
     "retiredId": "PAT_KIGOZI",
     "successorId": null,
-    "reason": "No source shows Kigozi as a family name: its only source, the 2016 ruling of the High Court of Uganda (Nakitende & Another v Kigozi & 2 Others, reopened), names John Kigozi Ssebaggala, Prime Minister of the Fumbe clan, in whose name Kigozi is a middle name. The ruling neither makes Kigozi the name of the clan nor shows it passed on, and the totemic-clan class had no source. As for PAT_NGARLEJY, the PAT_FADICCA precedent applies. Withdrawn with no successor; its Baganda link goes with it.",
+    "reason": "No source tells anything about the name Kigozi. Its only source, the 2016 ruling of the High Court of Uganda (reopened), names John Kigozi Ssebaggala, Prime Minister of the Fumbe clan. Its citation, Nakitende & Another v Kigozi & 2 Others, files him under Kigozi, as it files the first applicant, Nakitende Scovia, under Nakitende: that is the slot a law report keeps for a party's surname, and the one sign of Kigozi in a family-name position. It is one living person's name in one citation: the ruling does not say whether Kigozi is a personal name, a name of the Fumbe clan or a name passed on, and the totemic-clan class had no source. The Ganda personal names the corpus keeps and files as non-hereditary (PAT_LUBEGA, PAT_MUKASA, PAT_KATO) each rest on a source that describes the name; none does here, so the precedent is PAT_KOUM, withdrawn because nothing beyond one bare attestation backed it. Withdrawn with no successor; its Baganda link goes with it. Whether a citation's party name is enough to keep it as a Ganda personal name is left to the operator.",
+    "decidedOn": "2026-10-18"
+  },
+  {
+    "decision": "withdrawn",
+    "retiredId": "PAT_AHL_SIDI",
+    "successorId": null,
+    "reason": "Not a family name: the fiche rested on the candidate queue alone, and no source opened gives Ahl Sidi on its own. In Marty's Études sur l'Islam et les tribus maures: les Brakna (1921, reopened), Ahel Sidi only opens the names of tribal groups and fractions, the Ahel Sidi Mahmoud (pp. 85, 97) and the Kounta Ahel Sidi Amar (p. 91); ahel, « the people of », marks a house or a fraction, as the fiche's own gap said. The wave 25 report recommended retiring it in the same question as PAT_NGARLEJY and PAT_NGARTA. The fiche held no sourced claim to carry. Withdrawn with no successor; a fiche for one of those groups, if wanted, starts from a source.",
     "decidedOn": "2026-10-18"
   }
 ]

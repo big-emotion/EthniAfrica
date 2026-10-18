@@ -61,8 +61,11 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * PAT_ADEN, folded into PAT_NDIAYE and PAT_ADAM, and of PAT_EL_KENZI,
  * withdrawn after wave 25, left with them; the keepers attest the carried
  * spellings with opened sources.
+ * 1214 -> 1213 the same day: the candidate-queue stub of PAT_AHL_SIDI,
+ * withdrawn after wave 25 (Ahl Sidi only opens tribal group names), left
+ * with it.
  */
-export const UNREVIEWED_AI_GENERATED_RATCHET = 1214;
+export const UNREVIEWED_AI_GENERATED_RATCHET = 1213;
 
 export interface AiGeneratedSourcesResult {
   ok: boolean;

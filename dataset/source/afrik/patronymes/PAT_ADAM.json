@@ -87,7 +87,15 @@
       "sourceRefs": ["aden-presidence-djibouti-2026"]
     }
   ],
-  "homonyms": [],
+  "homonyms": [
+    {
+      "label": "Aden frison oriental et écossais",
+      "entityType": "patronyme",
+      "entityId": null,
+      "distinction": "Le Dictionary of American Family Names distingue de la forme somalie d'Adam deux noms de famille européens écrits Aden, d'une autre origine : en Frise orientale, un nom formé sur le nom de personne Ade, et en Écosse, un nom tiré des anciennes terres d'Auden ou Aden, à Old Deer, dans l'Aberdeenshire.",
+      "sourceRefs": ["dafn-familysearch-aden"]
+    }
+  ],
   "sources": [
     {
       "sourceKey": "verney-2019-sudan-names",
@@ -151,7 +159,7 @@
       "url": "https://www.familysearch.org/en/surname?surname=aden",
       "tier": "referenced",
       "source_kind": "linguistic_reference",
-      "notes": "Entrée du Dictionary of American Family Names de Patrick Hanks (Oxford University Press, 2003 et 2006), reproduite par FamilySearch et lue le 18 octobre 2026 : « Somali: from a Somali Muslim personal name, a variant of Adan 3 'Adam'. It is also found in Ethiopia, Kenya, and Djibouti » ; l'entrée ajoute que les Somalis n'ont pas, en général, de nom de famille transmis."
+      "notes": "Entrée du Dictionary of American Family Names de Patrick Hanks (Oxford University Press, 2003 et 2006), reproduite par FamilySearch et lue le 18 octobre 2026 : « Somali: from a Somali Muslim personal name, a variant of Adan 3 'Adam'. It is also found in Ethiopia, Kenya, and Djibouti » ; l'entrée ajoute que les Somalis n'ont pas, en général, de nom de famille transmis. Elle donne avant ce sens deux origines européennes : « East Frisian: patronymic from the personal name Ade » et « Scottish: habitational name from the old lands and barony of Auden or Aden in Old Deer, Aberdeenshire »."
     }
   ],
   "gaps": [
@@ -178,10 +186,6 @@
     {
       "fieldPath": "casteOrSocialFunction",
       "reason": "Les travaux consultés sur les chaînes de noms soudanaises et les résultats seychellois n'attestent aucune fonction sociale héréditaire attachée à Adam."
-    },
-    {
-      "fieldPath": "homonyms",
-      "reason": "Les recherches ont confirmé deux contextes géographiques sans établir deux origines distinctes et sourcées ; aucune homonymie autonome n'est donc enregistrée."
     }
   ],
   "patronymicChainDepth": {
