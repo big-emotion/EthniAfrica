@@ -1,6 +1,6 @@
 ---
 title: "Self-names to verify through oral sources (« à vérifier par sources orales »)"
-status: "ruled 2026-10-10, waves 3, 4, 5, 6 and 8 added 2026-10-11, wave 12 added 2026-10-12 — kept as they are until an oral or fieldwork pass"
+status: "ruled 2026-10-10, waves 3, 4, 5, 6 and 8 added 2026-10-11, wave 12 added 2026-10-12, waves 24 and 25 added 2026-10-18 — kept as they are until an oral or fieldwork pass"
 related:
   - docs/editorial/doctrine.md
   - docs/editorial/strategy/colonial-periods.md
@@ -114,6 +114,19 @@ hand. The operator ruled to keep them and to check each one orally.
 | `PPL_TAIZI`  | Tajuasohn | a source stating the people use the name; ISO 639-3 (`tja`) and Glottolog give it only as the language's name |
 | `PPL_GIZIGA` | Marva     | the source itself: J. Lukas (1970) is read second-hand, through the community site mandaras.info              |
 | `PPL_MARGI`  | Margyi    | the source itself: Hoffmann (1963) is read second-hand, through the community site mandaras.info              |
+
+## Waves 24 and 25 of the long tail — ruled 2026-10-18
+
+The operator approved on 2026-10-18 the recommendation to add these names
+to the oral check. Winye is kept as self-given on an insider's use; Baka
+and Bedzan are not written as self-names, because no source we opened lets
+the people say them for themselves.
+
+| Fiche                     | Name   | What the source gives, and what is missing                                                                                                                                                         |
+| ------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `PPL_WIYANA`              | Winye  | the close form in the title of a 1983 thesis by a scholar from the people (Damoué, « Les Winiens-Winien ma », read in Jacob 2007, pp. 24 and 252); a source in which the people name themselves so |
+| `PPL_PYGMEES_AUTOCHTONES` | Baka   | nothing: the fiche's own field says the Baka call themselves Baka or Bayaka, and the name history does not carry it; a source stating it                                                           |
+| `PPL_PYGMEES_AUTOCHTONES` | Bedzan | same, for Bedzan or Medzan                                                                                                                                                                         |
 
 ## Related case: Bilād Ṣinqīṭ (`MRT`)
 

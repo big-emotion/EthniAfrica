@@ -1,0 +1,223 @@
+{
+  "id": "PPL_MAKA",
+  "nameMain": "Maka",
+  "languageFamilyId": "FLG_BANTU",
+  "currentCountries": ["CMR"],
+  "nameHistory": {
+    "summary": "Le nom Maka désigne un peuple de l'est du Cameroun, dans le département du Haut-Nyong, autour d'Abong-Mbang et de Doumé. Sa langue s'appelle le makaa. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. Le nom apparaît par écrit au début du XXe siècle, dans un rapport allemand ; nous n'avons pas trouvé de source qui explique son origine.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Maka",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple de l'est du Cameroun, écrit dès 1906 ; son origine n'est pas connue.",
+        "periodLabel": "Écrit en 1906 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1966,
+              "to": 1968,
+              "label": "1966-1968"
+            },
+            "era": "modern",
+            "statement": "Le nom Maka désigne en 1966-1967 l'ethnie principale de cinq cantons du département du Haut-Nyong, dans les arrondissements d'Abong-Mbang et de Doumé, et entre dans le nom de ces cantons, comme Maka Mboan ou Maka Bebent, selon le dictionnaire des villages publié par l'ORSTOM en 1968.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionnaire des villages du Haut-Nyong",
+                "author": "André Franqueville, section de géographie de l'ORSTOM",
+                "year": 1968,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers15-04/02870.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. V",
+                "notes": "Yaoundé, ORSTOM, juin 1968, Répertoire géographique du Cameroun, fascicule 15, établi d'après les renseignements de l'administration. Lu le 18 octobre 2026 dans le PDF de la base documentaire de l'IRD, page vue sur l'image. Page V, tableau de la population du département par canton, avec l'« ethnie principale » de chacun, au recensement de 1966-1967 (1964-1965 pour l'arrondissement de Lomié). Arrondissement d'Abong-Mbang : cantons « Maka Mboan », « Maka Bebent » et « Mponmpong », ethnie principale « Maka ». Arrondissement de Doumé : cantons « MAKA (DJATTO) » et « MAKA MBOAN (MABAYA) », ethnie principale « Maka »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1907,
+              "label": "1906-1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Maka figure, avec celui des Njem, dans l'intitulé d'un dossier du gouvernement allemand du Kamerun sur les expéditions militaires de 1906 et 1907 dans les régions qu'il dit en révolte, au sud de la colonie. C'est ainsi que le catalogue des Archives fédérales allemandes donne ce titre ; nous n'avons pas lu le dossier.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Militärische Expeditionen in den Aufstandsgebieten der Dja, Esso, Maka, Njem und anderer Stämme im Süden, Bd. 2",
+                "author": "Bundesarchiv (Archives fédérales allemandes)",
+                "year": null,
+                "url": "https://ts.archivfuehrer-kolonialzeit.de/index.php/militarische-expeditionen-in-den-aufstandsgebieten-der-dja-esso-maka-njem-und-anderer-stamme-im-suden-bd-2",
+                "tier": "official",
+                "source_kind": "archive",
+                "notes": "Notice du dossier BArch R 175-I/87, fonds du gouvernement du Kamerun, années 1906-1907, lue le 18 octobre 2026 dans le guide des archives de la période coloniale allemande (Archivführer Deutsche Kolonialgeschichte). La notice donne le titre du dossier sans dire s'il date de l'époque ; nous n'avons pas lu le dossier lui-même."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1903,
+              "label": "1902-1903, selon un rapport publié en 1906"
+            },
+            "statement": "Le nom Maka apparaît par écrit dans un rapport allemand publié en 1906 sur l'expédition qui a tracé la frontière entre le Kamerun et le Congo français : au retour, son chef, le capitaine Engelhardt, a traversé « le territoire des Gokum et des Maka », deux peuples que le rapport dit alors presque inconnus des Européens. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple vivait déjà là avant elle.",
+            "formAsWritten": "Maka",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Engelhardt",
+                "role": "chef de l'expédition allemande de délimitation de la frontière"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Bericht über die astronomischen und geodätischen Aufnahmen, welche zum Zwecke der Grenzregulierung zwischen Kamerun und dem Congo-Français in den Jahren 1900 bis 1902 ausgeführt wurden",
+                "author": "L. Ambronn, d'après les rapports du capitaine Engelhardt",
+                "year": 1906,
+                "url": "https://archive.org/details/mitteilungen-von-forschungsreisenden-und-gelehrten-aus-den_1906",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 213",
+                "notes": "Mitteilungen von Forschungsreisenden und Gelehrten aus den deutschen Schutzgebieten, vol. 19, fascicule 3, Berlin, 1906, p. 181 et suivantes. Lu le 18 octobre 2026 sur la numérisation d'Internet Archive, page vue sur l'image. Page 213 : après les travaux de la commission de frontière, Engelhardt marche de Bertua vers l'ouest, « durchquerte das Gebiet der Gokum und Maka, zweier damals noch fast unbekannter Kannibalenstämme », et arrive à Kribi en avril 1903. Le texte rapporte le récit d'Engelhardt sans le citer mot pour mot."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Makaa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les catalogues de langues donnent à leur langue, écrit aussi Mekaa.",
+        "periodLabel": "En usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Makaa est celui que le catalogue Glottolog donne à la langue des Maka, parlée au Cameroun, sous le code ISO mcp. Parmi les autres noms de cette langue, il cite Mekaa et Meka.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog — Makaa",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/maka1304",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues, lu le 18 octobre 2026. Glottocode maka1304, code ISO 639-3 mcp, pays : Cameroun. Autres noms : Makaa, Mekaa, Nyaana, South Makaa, South Mekaa, Toma (Multitree) ; Meka (Ruhlen 1987). Le catalogue n'explique pas l'origine de ces noms."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "content": {
+    "appellations": {
+      "mainName": "Maka",
+      "selfAppellation": null,
+      "exonyms": [],
+      "spellingAliases": ["Makaa", "Mekaa", "Meka"],
+      "originOfExonyms": null,
+      "whyProblematic": null,
+      "contemporaryUsage": "En 1966-1967, le nom Maka désigne l'ethnie principale de cinq cantons du département du Haut-Nyong, dans les arrondissements d'Abong-Mbang et de Doumé, selon le dictionnaire des villages de l'ORSTOM. Les catalogues de langues nomment leur langue le makaa.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
+    },
+    "ethnicities": [],
+    "origins": {
+      "ancientOrigins": null,
+      "formationPeriod": null,
+      "migrationRoutes": [],
+      "historicalSettlementZones": [
+        "Département du Haut-Nyong, dans l'est du Cameroun : arrondissements d'Abong-Mbang et de Doumé"
+      ],
+      "unificationsOrDivisions": null,
+      "externalInfluences": null,
+      "majorHistoricalEvents": null
+    },
+    "organization": {
+      "traditionalPoliticalSystem": null,
+      "clanOrganization": null,
+      "ageClassSystems": null,
+      "roleOfLineages": null,
+      "religiousAuthority": null
+    },
+    "languages": {
+      "mainLanguage": "Makaa (mcp)",
+      "isoCodes": ["mcp"],
+      "dialects": [],
+      "vehicularRole": null
+    },
+    "externalIdentifiers": {
+      "glottocode": "maka1304",
+      "iso639_3": "mcp"
+    },
+    "culture": {
+      "majorRites": null,
+      "symbols": null,
+      "artsAndMusic": null,
+      "spiritualities": null
+    },
+    "historicalRole": {
+      "kingdomsOrChiefdoms": null,
+      "relationsWithNeighbors": null,
+      "conflictsOrAlliances": "En 1906 et 1907, le gouvernement allemand du Kamerun mène des expéditions militaires dans les régions du sud de la colonie qu'il dit en révolte, dont celles des Maka et des Njem, selon l'intitulé d'un dossier conservé aux Archives fédérales allemandes.",
+      "diaspora": null
+    },
+    "demography": {
+      "totalPopulation": null,
+      "referenceYear": 2025,
+      "source": "Aucune source lue ne donne le nombre des Maka aujourd'hui. Le dictionnaire des villages du Haut-Nyong (ORSTOM, 1968) compte 41 071 habitants en 1966-1967 dans les cinq cantons dont les Maka sont l'ethnie principale ; ce chiffre compte tous les habitants de ces cantons.",
+      "distributionByCountry": [
+        {
+          "country": "CMR",
+          "population": null,
+          "note": "Département du Haut-Nyong, arrondissements d'Abong-Mbang et de Doumé."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Glottolog — Makaa",
+        "url": "https://glottolog.org/resource/languoid/id/maka1304",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues, lu le 18 octobre 2026 : la langue makaa (mcp), parlée au Cameroun, et ses autres noms."
+      },
+      {
+        "title": "Bericht über die astronomischen und geodätischen Aufnahmen, welche zum Zwecke der Grenzregulierung zwischen Kamerun und dem Congo-Français in den Jahren 1900 bis 1902 ausgeführt wurden",
+        "url": "https://archive.org/details/mitteilungen-von-forschungsreisenden-und-gelehrten-aus-den_1906",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Mitteilungen von Forschungsreisenden und Gelehrten aus den deutschen Schutzgebieten, vol. 19, 1906. Page 213 : la traversée du pays des Maka par le capitaine Engelhardt, au retour de l'expédition de frontière."
+      },
+      {
+        "title": "Militärische Expeditionen in den Aufstandsgebieten der Dja, Esso, Maka, Njem und anderer Stämme im Süden, Bd. 2",
+        "url": "https://ts.archivfuehrer-kolonialzeit.de/index.php/militarische-expeditionen-in-den-aufstandsgebieten-der-dja-esso-maka-njem-und-anderer-stamme-im-suden-bd-2",
+        "tier": "official",
+        "source_kind": "archive",
+        "notes": "Notice du dossier BArch R 175-I/87, fonds du gouvernement du Kamerun, années 1906-1907, lue dans le guide des archives de la période coloniale allemande."
+      },
+      {
+        "title": "Dictionnaire des villages du Haut-Nyong",
+        "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers15-04/02870.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Yaoundé, ORSTOM, 1968, Répertoire géographique du Cameroun, fascicule 15. Page V : la population des cantons et leur ethnie principale, en 1966-1967."
+      }
+    ]
+  }
+}
