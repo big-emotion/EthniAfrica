@@ -11,7 +11,17 @@
     {
       "spelling": "Mabuza",
       "attestations": [
-        { "countryId": "ZAF", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "ZAF",
+          "sourceRefs": ["afrik-candidate-queue", "saho-david-dabede-mabuza"]
+        },
+        {
+          "countryId": "SWZ",
+          "sourceRefs": [
+            "patricks-2002-swazi-surnames",
+            "van-warmelo-1935-survey"
+          ]
+        }
       ]
     }
   ],
@@ -26,14 +36,19 @@
     {
       "peopleId": "PPL_SWAZI",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "patricks-2002-swazi-surnames"]
     }
   ],
   "countries": [
     {
       "countryId": "ZAF",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "saho-david-dabede-mabuza"]
+    },
+    {
+      "countryId": "SWZ",
+      "status": "attested",
+      "sourceRefs": ["patricks-2002-swazi-surnames", "van-warmelo-1935-survey"]
     }
   ],
   "alliances": [],
@@ -48,6 +63,30 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "patricks-2002-swazi-surnames",
+      "title": "Tibongo Netinanatelo Temaswati : Swazi Surnames and Their Praisenames (copie non officielle)",
+      "url": "https://archive.org/details/tibongo-netinanatelo-temaswati-swazi-surnames-and-their-praisenames",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Première édition, Mbabane, 2002, publiée par le Conservation Trust of Swaziland, la Natural History Society of Swaziland et le Swaziland National Trust Commission ; l'auteur travaille au Musée national du Swaziland. Copie non officielle, téléversée sur Internet Archive par un particulier, lue le 18 octobre 2026 sur les images des pages. Les noms de famille et leurs noms de louange ont été recueillis surtout de 1976 à 1984, auprès de personnes dont l'auteur ne donne pas les noms. Le recueil range les noms de famille du Swaziland et des régions d'Afrique du Sud et du Mozambique jadis gouvernées par les rois swazis ; chaque entrée donne les lieux, les clans avec lesquels on ne se marie pas, les interdits alimentaires et le nom de louange."
+    },
+    {
+      "sourceKey": "van-warmelo-1935-survey",
+      "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+      "url": "https://repository.up.ac.za/handle/2263/77107",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Union of South Africa, Department of Native Affairs, Ethnological Publications, vol. V, Pretoria, 1935 ; scan de l'université de Pretoria, lu le 18 octobre 2026. La partie 2, « Swaziland » (p. 34-36), donne par district, à la date de janvier 1935, les chefs, leur nom de clan (isibongo), leur nom de louange (isinanatelo) et le nombre de contribuables adultes de sexe masculin. La partie 3, section 14 (p. 83-86), range ces chefs selon l'origine de leur famille ; p. 34, l'auteur précise que ce classement vaut pour le chef et sa famille, pas forcément pour tous ses gens."
+    },
+    {
+      "sourceKey": "saho-david-dabede-mabuza",
+      "title": "David Dabede Mabuza",
+      "url": "https://sahistory.org.za/people/david-dabede-mabuza",
+      "tier": "referenced",
+      "source_kind": "repository",
+      "notes": "Notice biographique de South African History Online, lue le 18 octobre 2026 : « David Dabede Mabuza was born 25 August, 1960 in Brondal, Mpumalanga ». La notice ne dit rien du nom ni du clan."
     }
   ],
   "gaps": [
@@ -75,5 +114,163 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mabuza est un nom de clan swazi, l'un des dix noms de famille les plus portés au Swaziland, l'actuel Eswatini, et il est aussi porté en Afrique du Sud. Il est écrit dès 1935. Les sources lues ne disent pas ce que veut dire ce nom. On ne sait pas avec certitude d'où vient le clan : deux lectures, qui le rattachent aux Swazis de la famille royale, sont présentées plus bas.",
+    "names": [
+      {
+        "nameText": "Mabuza",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan swazi parmi les dix plus portés au Swaziland, écrit dès 1935 ; son origine reste discutée.",
+        "periodLabel": "Écrit dès 1935 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1976,
+              "to": 2002,
+              "label": "Recueilli de 1976 à 2002"
+            },
+            "era": "modern",
+            "statement": "Le nom Mabuza désigne un clan swazi dont le nom de louange, le sinanatelo, commence par « nkhosi, mabuza, mshengu, mshabalala, ludvonga », nkhosi voulant dire « seigneur ». Richard Patricks voit dans ludvonga le nom d'un ancêtre marquant du clan. Les sources lues ne disent pas ce que veut dire le mot mabuza ; deux lectures de l'origine du clan sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Tibongo Netinanatelo Temaswati : Swazi Surnames and Their Praisenames (copie non officielle)",
+                "author": "Richard Patricks",
+                "year": 2002,
+                "url": "https://archive.org/details/tibongo-netinanatelo-temaswati-swazi-surnames-and-their-praisenames",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 7 et 9 (introduction, sections b et d) ; p. 26-27 (entrée MABUZA)",
+                "notes": "Première édition, Mbabane, 2002, publiée par le Conservation Trust of Swaziland, la Natural History Society of Swaziland et le Swaziland National Trust Commission ; l'auteur travaille au Musée national du Swaziland. Copie non officielle, téléversée sur Internet Archive par un particulier, lue le 18 octobre 2026 sur les images des pages. Les noms de famille et leurs noms de louange ont été recueillis surtout de 1976 à 1984, auprès de personnes dont l'auteur ne donne pas les noms. Dans chaque entrée, « X » désigne les clans avec lesquels le mariage est interdit et « XX » ce que les membres du clan ne mangent pas (guide de lecture, p. 10) ; les lettres H., M., L. et S. désignent les régions de Hhohho, Manzini, Lubombo et Shiselweni. P. 7 : parmi les sortes de mots d'un nom de louange, « (1) names of prominent ancestors of the clan », avec pour exemple « \"ludvonga\" (Mabuza) ». P. 9 : nkhosi, « lord or master »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1976,
+              "to": 2002,
+              "label": "Recueilli de 1976 à 2002"
+            },
+            "era": "modern",
+            "statement": "Le nom Mabuza est l'un des dix noms de famille les plus portés au Swaziland, selon le recueil de Richard Patricks. Le clan vit à eMgomfelweni, eDvudvusini, eMafutseni et kuMahlabane, dans la région de Manzini, et à eJubukweni, dans celle de Hhohho ; ses membres ne se marient pas avec les Ginindza, les Mamba ni les Shabalala, et ne mangent pas le sangoli, une alouette.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Tibongo Netinanatelo Temaswati : Swazi Surnames and Their Praisenames (copie non officielle)",
+                "author": "Richard Patricks",
+                "year": 2002,
+                "url": "https://archive.org/details/tibongo-netinanatelo-temaswati-swazi-surnames-and-their-praisenames",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6 (introduction) et p. 26 (entrée MABUZA)",
+                "notes": "Première édition, Mbabane, 2002, publiée par le Conservation Trust of Swaziland, la Natural History Society of Swaziland et le Swaziland National Trust Commission ; l'auteur travaille au Musée national du Swaziland. Copie non officielle, téléversée sur Internet Archive par un particulier, lue le 18 octobre 2026 sur les images des pages. Les noms de famille et leurs noms de louange ont été recueillis surtout de 1976 à 1984, auprès de personnes dont l'auteur ne donne pas les noms. Dans chaque entrée, « X » désigne les clans avec lesquels le mariage est interdit et « XX » ce que les membres du clan ne mangent pas (guide de lecture, p. 10) ; les lettres H., M., L. et S. désignent les régions de Hhohho, Manzini, Lubombo et Shiselweni. P. 6 : « The rest of the \"top ten\", in descending order, are the Zwane, Kunene, Mabuza, Magagula and Nkambule. Then come the Vilakati, Mamba, Hlophe, Mavuso, and Fakudze, followed by the Nsibande, Dvuba (Dube), Matsebula, Shabangu and Thwala. » Entrée MABUZA : « X Ginindza X Mamba X Shabalala » ; « XX sangoli (a lark, type of bird) » ; « eMgomfelweni, eDvudvusini, eMafutseni, kuMahlabane M., eJubukweni H. »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "Né en 1960"
+            },
+            "era": "modern",
+            "statement": "Le nom Mabuza est aussi porté en Afrique du Sud, dans la province du Mpumalanga : l'homme politique David Dabede Mabuza y est né en 1960, à Brondal, selon South African History Online. La notice ne dit rien de son clan.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "David Dabede Mabuza",
+                "author": "South African History Online",
+                "year": null,
+                "url": "https://sahistory.org.za/people/david-dabede-mabuza",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Notice biographique lue le 18 octobre 2026 : « David Dabede Mabuza was born 25 August, 1960 in Brondal, Mpumalanga ». La notice ne dit rien du nom ni du clan."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1935,
+              "to": 1935,
+              "label": "Janvier 1935"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mabuza apparaît par écrit dans le recensement des chefs du Swaziland que l'ethnologue N. J. van Warmelo publie en 1935 : plusieurs chefs y portent le nom de clan « Mabuza, abaka », dont Madlinkomo dans le district de Bremersdorp, Mvankeli dans celui de Mankaiana et Nduku dans celui de Mbabane, tous avec le nom de louange Shabalala. C'est la plus ancienne trace de ce nom que le projet connaît ; le clan existait déjà avant elle.",
+            "formAsWritten": "Mabuza",
+            "birth": true,
+            "actors": [
+              {
+                "name": "N. J. van Warmelo",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Madlinkomo",
+                "role": "chef recensé sous ce nom de clan"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+                "author": "N. J. van Warmelo",
+                "year": 1935,
+                "url": "https://repository.up.ac.za/handle/2263/77107",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 34 et 35 (partie 2, Swaziland) ; p. 84 (partie 3)",
+                "notes": "Union of South Africa, Department of Native Affairs, Ethnological Publications, vol. V, Pretoria, 1935 ; scan de l'université de Pretoria, lu le 18 octobre 2026. La partie 2, « Swaziland » (p. 34-36), donne par district, à la date de janvier 1935, les chefs, leur nom de clan (isibongo), leur nom de louange (isinanatelo) et le nombre de contribuables adultes de sexe masculin. La partie 3, section 14 (p. 83-86), range ces chefs selon l'origine de leur famille ; p. 34, l'auteur précise que ce classement vaut pour le chef et sa famille, pas forcément pour tous ses gens. P. 34, district de Bremersdorp : chef Madlinkomo, « Mabuza, abaka », Shabalala, 139 contribuables. P. 35 : district de Mankaiana, chef Mvankeli, même clan, Shabalala, 160 ; district de Mbabane, chef Nduku, même clan, Shabalala, 82. P. 84, lignes 14-312 à 14-324 : un quatrième chef Mabuza, Lofana, district de Mankaiana, 50."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2002,
+              "to": 2002,
+              "label": "Proposé en 2002"
+            },
+            "era": "modern",
+            "statement": "Le nom Mabuza serait celui d'un clan dont les ancêtres étaient des Dlamini, la famille royale swazie, puisque son nom de louange commence par nkhosi, « seigneur », comme celui des Dlamini, selon Richard Patricks.",
+            "hypothesisGroup": "origine du clan Mabuza",
+            "sources": [
+              {
+                "title": "Tibongo Netinanatelo Temaswati : Swazi Surnames and Their Praisenames (copie non officielle)",
+                "author": "Richard Patricks",
+                "year": 2002,
+                "url": "https://archive.org/details/tibongo-netinanatelo-temaswati-swazi-surnames-and-their-praisenames",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9 (introduction, section d) et p. 26 (entrée MABUZA)",
+                "notes": "Première édition, Mbabane, 2002, publiée par le Conservation Trust of Swaziland, la Natural History Society of Swaziland et le Swaziland National Trust Commission ; l'auteur travaille au Musée national du Swaziland. Copie non officielle, téléversée sur Internet Archive par un particulier, lue le 18 octobre 2026 sur les images des pages. Les noms de famille et leurs noms de louange ont été recueillis surtout de 1976 à 1984, auprès de personnes dont l'auteur ne donne pas les noms. Dans chaque entrée, « X » désigne les clans avec lesquels le mariage est interdit et « XX » ce que les membres du clan ne mangent pas (guide de lecture, p. 10) ; les lettres H., M., L. et S. désignent les régions de Hhohho, Manzini, Lubombo et Shiselweni. P. 8-9, introduction, section d : deux clans dont les noms de louange contiennent le même mot ou la même phrase ne se marient pas entre eux ; les clans dont le nom de louange commence par nkhosi, « lord or master », ont eu des ancêtres Dlamini."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1935,
+              "to": 1935,
+              "label": "Proposé en 1935"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mabuza serait celui d'un clan des Swazis proprement dits, les amaNgwane, venus avec la famille royale, selon N. J. van Warmelo. Il range les quatre chefs Mabuza parmi eux, en précisant que ce classement vaut pour la famille du chef, pas forcément pour tous ses gens.",
+            "hypothesisGroup": "origine du clan Mabuza",
+            "sources": [
+              {
+                "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+                "author": "N. J. van Warmelo",
+                "year": 1935,
+                "url": "https://repository.up.ac.za/handle/2263/77107",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 84 (partie 3, section 14) ; p. 34",
+                "notes": "Union of South Africa, Department of Native Affairs, Ethnological Publications, vol. V, Pretoria, 1935 ; scan de l'université de Pretoria, lu le 18 octobre 2026. La partie 2, « Swaziland » (p. 34-36), donne par district, à la date de janvier 1935, les chefs, leur nom de clan (isibongo), leur nom de louange (isinanatelo) et le nombre de contribuables adultes de sexe masculin. La partie 3, section 14 (p. 83-86), range ces chefs selon l'origine de leur famille ; p. 34, l'auteur précise que ce classement vaut pour le chef et sa famille, pas forcément pour tous ses gens. P. 84, sous le titre « amaSWAZI (amaNGWANE) PROPER », lignes 14-312 à 14-324 : « Mabuza, abaka », chefs Lofana, Madlinkomo, Mvankeli et Nduku."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

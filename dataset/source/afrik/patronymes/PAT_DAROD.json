@@ -97,5 +97,238 @@
       "fieldPath": "homonyms",
       "reason": "Les sources consultées ne permettent pas encore de présenter un autre nom écrit comme Darod, mais d'origine différente."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Darod est celui de l'une des grandes familles de clans somalies, qui se comptent par le père ; on l'écrit aussi Daarood. Ses membres se disent descendants d'un ancêtre de ce nom. Les récits ne s'accordent ni sur l'origine de cet ancêtre ni sur le sens de son nom ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Darod",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une grande famille de clans somalies, qui se dit issue d'un ancêtre nommé Darod.",
+        "periodLabel": "Écrit dès 1848 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "Décrit en 2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Darod désigne aujourd'hui l'une des grandes familles de clans de Somalie, avec les Hawiye, les Isaaq, les Dir et les Rahanweyn. Un Ogaden, membre de l'un de ses clans, compte de 25 à 30 générations jusqu'à Darod, selon un anthropologue que cite la Commission canadienne de l'immigration.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Somalia: Information on the Ogaden clan in Somaliland, including distinguishing features, locations, occupations and position in the clan hierarchy; treatment by the Somaliland authorities and by al-Shabaab (2015-October 2017)",
+                "author": "Commission de l'immigration et du statut de réfugié du Canada",
+                "year": 2017,
+                "url": "https://www.ecoi.net/en/document/1428637.html",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "sections 1 et 2",
+                "notes": "Réponse SOM106011.E de la direction des recherches de la Commission, publiée le 23 novembre 2017 selon ecoi.net, qui la reproduit. Section 1 : l'Ogaden est un sous-clan de « the Darood [Darod/Daarood] clan-family » ; un enseignant d'anthropologie sociale de l'université de Leipzig donne la généalogie « Darood had several sons, among them Kablalah and Sede » et dit qu'un Ogaden compte « between 25 and 30 generations back to Darod ». Section 2 : « The main groups in Somalia (Darood, Hawiye, Isaaq, Dir, Rahanweyn) ». Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Darod est celui d'un ancêtre : les clans qui le portent se disent ses descendants, de père en fils. D'où venait cet ancêtre, et ce que veut dire son nom, les récits ne le disent pas de la même façon ; nous les présentons séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Information on the Darod clan, its founder and subclans including the Marehan, Majerteen and Ogadeni",
+                "author": "Commission de l'immigration et du statut de réfugié du Canada",
+                "year": 1993,
+                "url": "https://www.ecoi.net/de/dokument/1108313.html",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "réponse SOM14566",
+                "notes": "Réponse à une demande d'information, publiée le 28 juin 1993 selon ecoi.net, qui la reproduit. Elle cite Ioan M. Lewis, A Modern History of Somalia (1988, p. 24) : le clan Darod « traces its descent from a noble Arabian patriarch » ; et David D. Laitin et Said S. Samatar, Somalia: Nation in Search of a State (1987, p. 8) : le clan aurait été fondé par « Sheik Darood, a Muslim saint who married a daughter of a local Somali patriach », les sous-clans darod se rattachant à lui. Lu le 18 octobre 2026."
+              },
+              {
+                "title": "Somali networks — structures of clan and society",
+                "author": "Róisín Hinds",
+                "year": 2013,
+                "url": "https://gsdrc.org/publications/somali-networks-structures-of-clan-and-society/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "GSDRC, Helpdesk Research Report, juin 2013, page de présentation lue sur le site de l'éditeur (le PDF lié ne s'ouvrait plus). Résumé : « The Somali majority belong to four patrilineal clan families: the Darod, Hawiye, Dir, and Rahanweyn. » Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1993,
+              "to": 1993,
+              "label": "Rapporté en 1993"
+            },
+            "era": "modern",
+            "statement": "Le nom Darod viendrait du cheikh Darod, un saint musulman qui épousa la fille d'un patriarche somali ; le clan se rattache ainsi à un noble ancêtre arabe, selon les livres de Ioan Lewis, et de David Laitin et Said Samatar, que cite la Commission canadienne de l'immigration.",
+            "hypothesisGroup": "origine du nom Darod",
+            "sources": [
+              {
+                "title": "Information on the Darod clan, its founder and subclans including the Marehan, Majerteen and Ogadeni",
+                "author": "Commission de l'immigration et du statut de réfugié du Canada",
+                "year": 1993,
+                "url": "https://www.ecoi.net/de/dokument/1108313.html",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "réponse SOM14566",
+                "notes": "Réponse à une demande d'information, publiée le 28 juin 1993 selon ecoi.net, qui la reproduit. Elle cite Ioan M. Lewis, A Modern History of Somalia (1988, p. 24) : le clan Darod « traces its descent from a noble Arabian patriarch » ; et David D. Laitin et Said S. Samatar, Somalia: Nation in Search of a State (1987, p. 8) : le clan aurait été fondé par « Sheik Darood, a Muslim saint who married a daughter of a local Somali patriach », les sous-clans darod se rattachant à lui. Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "Récit publié en 1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Darod serait celui que les Somalis donnèrent à un Arabe, le cheikh Abd er-Rahman ben Djabarti ben Ismaël, qui épousa une fille de Deurr et eut d'elle quatre fils. C'est ce que recueille l'officier de marine Charles Guillain auprès des gens de la baie de Hafoun ; il rattache aussi Darod à Adji, un chef arabe qui aurait prêché l'islam sur la côte d'Adel.",
+            "hypothesisGroup": "origine du nom Darod",
+            "sources": [
+              {
+                "title": "Documents sur l'histoire, la géographie et le commerce de l'Afrique orientale, deuxième partie, tome I",
+                "author": "Charles Guillain",
+                "year": 1856,
+                "url": "https://archive.org/details/documentssurlhis21guil",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 399-400",
+                "notes": "Paris, Arthus Bertrand, 1856, deuxième partie, tome premier : « Relation du voyage d'exploration à la côte orientale d'Afrique exécuté pendant les années 1846, 1847 et 1848 par le brick le Ducouëdic », lue en fac-similé sur archive.org. Officier de marine français, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Page 399 : le nom de Daroud « ne serait autre, d'après les traditions soumal, que le nom du premier descendant ou continuateur d'un certain Adji, chef d'une noble famille arabe qui, obligé de fuir son pays, aborda sur la côte d'Adel ». Page 400, note : « Une fille de Deurr épousa un Arabe, qui eut d'elle quatre enfants ; cet Arabe, désigné sous le nom de Daroud par les Soumal, s'appelait Cheikh-abd-er-Rhaman-ben-Djabarti-ben-Ismaël. » Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "Récit publié en 1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Darod serait celui de Darud Jabarti, fils d'Ismaïl, un noble Arabe du Hedjaz : chassé de son pays, il aurait fait naufrage sur la côte nord-est de l'Afrique et épousé une fille de la tribu des Hawiyah. C'est ce que disent ses descendants à l'explorateur Richard Burton.",
+            "hypothesisGroup": "origine du nom Darod",
+            "sources": [
+              {
+                "title": "First Footsteps in East Africa; or, An Exploration of Harar",
+                "author": "Richard F. Burton",
+                "year": 1856,
+                "url": "https://archive.org/details/firstfootstepsi00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 103-104",
+                "notes": "Londres, Longman, Brown, Green, and Longmans, 1856 ; exemplaire numérisé sur archive.org. Récit d'un voyage fait en 1854-1855 dans le pays somali et jusqu'à Harar, chapitre sur les Somalis. Voyageur britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Pages 103-104 : « Darud Jabarti bin Ismail bin Akil (or Ukayl) is supposed by his descendants to have been a noble Arab from El Hejaz, who, obliged to flee his country, was wrecked on the north-east coast of Africa, where he married a daughter of the Hawiyah tribe ». Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "Récit publié en 1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Darod viendrait de l'arabe tarad, « rejeter » : selon des tribus rivales, Darod était un esclave « galla » qui avait volé les sandales du Prophète et que celui-ci renvoya avec ces mots : « nous l'avons rejeté ». Richard Burton, qui rapporte ce récit, juge cette étymologie « sans doute fabuleuse ».",
+            "hypothesisGroup": "origine du nom Darod",
+            "sources": [
+              {
+                "title": "First Footsteps in East Africa; or, An Exploration of Harar",
+                "author": "Richard F. Burton",
+                "year": 1856,
+                "url": "https://archive.org/details/firstfootstepsi00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 104",
+                "notes": "Londres, Longman, Brown, Green, and Longmans, 1856 ; exemplaire numérisé sur archive.org. Récit d'un voyage fait en 1854-1855 dans le pays somali et jusqu'à Harar, chapitre sur les Somalis. Voyageur britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Page 104 : « rival races declare him to have been a Galla slave, who, stealing the Prophet's slippers, was dismissed with the words, Innâ-tarad-nâhu (verily we have rejected him) : hence his name Tarud or Darud, the Rejected. The etymological part of the story is, doubtless, fabulous ». Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1848,
+              "to": 1848,
+              "label": "Rapporté en 1848"
+            },
+            "era": "polity",
+            "statement": "Le nom Darod serait celui d'un homme venu du Hadramaout, en Arabie du Sud, comme Isaakh, l'ancêtre des tribus de l'ouest : les deux grandes familles de la côte somalie disent tirer leur origine de cette province, selon ce qu'apprend C. J. Cruttenden en 1848.",
+            "hypothesisGroup": "origine du nom Darod",
+            "sources": [
+              {
+                "title": "Memoir on the Western or Edoor Tribes, Inhabiting the Somali Coast of N.-E. Africa, with the Southern Branches of the Family of Darrood, Resident on the Banks of the Webbe Shebeyli, Commonly Called the River Webbe",
+                "author": "C. J. Cruttenden",
+                "year": 1849,
+                "url": "https://archive.org/details/jstor-1798086",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 49 et p. 64",
+                "notes": "Journal of the Royal Geographical Society of London, vol. 19, 1849, p. 49-76 ; mémoire daté d'Aden le 12 mai 1848 et lu le 13 novembre 1848, par le lieutenant C. J. Cruttenden, de la marine des Indes, agent politique adjoint à Aden. Lu en fac-similé (copie JSTOR Early Journal Content) sur archive.org. Officier britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Page 49 : le pays est partagé « between two great nations, who both tracing their origin from the Arab province of Hadramaut, are yet at bitter and endless feud with each other » ; page 64 : les descendants d'Isaakh et ceux de « his fellow-countryman Darrood ». Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1848,
+              "to": 1848,
+              "label": "1848"
+            },
+            "era": "polity",
+            "statement": "Le nom Darod apparaît par écrit, sous la forme Darrood, dans un mémoire que C. J. Cruttenden, officier de la marine des Indes en poste à Aden, date du 12 mai 1848 : il y décrit les tribus de « la famille de Darrood », à l'est de la côte somalie. C'est la plus ancienne trace de ce nom que le projet connaît ; la famille qui le porte existait avant elle.",
+            "formAsWritten": "Darrood",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Memoir on the Western or Edoor Tribes, Inhabiting the Somali Coast of N.-E. Africa, with the Southern Branches of the Family of Darrood, Resident on the Banks of the Webbe Shebeyli, Commonly Called the River Webbe",
+                "author": "C. J. Cruttenden",
+                "year": 1849,
+                "url": "https://archive.org/details/jstor-1798086",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 49-50",
+                "notes": "Journal of the Royal Geographical Society of London, vol. 19, 1849, p. 49-76 ; mémoire daté d'Aden le 12 mai 1848 et lu le 13 novembre 1848, par le lieutenant C. J. Cruttenden, de la marine des Indes, agent politique adjoint à Aden. Lu en fac-similé (copie JSTOR Early Journal Content) sur archive.org. Officier britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Le titre, page 49, annonce « the Southern Branches of the Family of Darrood » ; page 50 : « the four last-named tribes of Darrood ». Lu le 18 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Daarood",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "Rapporté en 2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Daarood est une autre écriture de Darod, que la Commission canadienne de l'immigration donne avec Darood et Darod.",
+            "sources": [
+              {
+                "title": "Somalia: Information on the Ogaden clan in Somaliland, including distinguishing features, locations, occupations and position in the clan hierarchy; treatment by the Somaliland authorities and by al-Shabaab (2015-October 2017)",
+                "author": "Commission de l'immigration et du statut de réfugié du Canada",
+                "year": 2017,
+                "url": "https://www.ecoi.net/en/document/1428637.html",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 1",
+                "notes": "Réponse SOM106011.E de la direction des recherches de la Commission, publiée le 23 novembre 2017 selon ecoi.net, qui la reproduit. Section 1 : « the Darood [Darod/Daarood] clan-family ». Lu le 18 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

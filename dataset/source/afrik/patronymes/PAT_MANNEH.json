@@ -81,5 +81,155 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Manneh est un nom de famille de Gambie, la forme gambienne de Mane, nom d'un clan des Mandingues. C'était aussi le nom d'un lignage qui partageait le pouvoir au Niumi ; un récit le rattache à Tiramakan Traore, un compagnon de Soundiata. Son sens n'est pas expliqué, et le projet ne connaît pas encore de trace écrite ancienne de ce nom.",
+    "names": [
+      {
+        "nameText": "Manneh",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un clan mandingue de Gambie, forme gambienne de Mane ; son sens n'est pas expliqué.",
+        "periodLabel": "Porté au Niumi avant l'époque coloniale ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Manneh est la forme gambienne de Mane, le nom d'un clan des Mandingues, porté aussi chez les Diola et les Sérères, selon le Dictionary of American Family Names. Le dictionnaire dit son étymologie inexpliquée ; on ne sait pas avec certitude d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Manneh",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/manneh?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue le 18 octobre 2026 (texte anglais de la page). L'entrée dit : « West African (Gambia): variant of Mane. West African (Liberia): from a male personal name found among the Kru people, of unexplained etymology »."
+              },
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Mane",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/mane?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue le 18 octobre 2026 (texte anglais de la page). L'entrée dit : « West African (mainly Senegal and Guinea-Bissau; also Mané): from the name of the Mane clan of the Mandinka people, of unexplained etymology. This surname is also found among the Jola and Serer peoples. Compare Manneh ». La même entrée donne d'abord un nom anglais et écossais, variante de Main, et un nom marathe d'Inde."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Manneh est aussi, au Liberia, un nom d'homme des Kru, selon le même dictionnaire. Ce nom libérien est distinct du nom mandingue.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Manneh",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/manneh?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue le 18 octobre 2026 (texte anglais de la page). L'entrée dit : « West African (Gambia): variant of Mane. West African (Liberia): from a male personal name found among the Kru people, of unexplained etymology »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant l'époque coloniale, selon une étude de 1978"
+            },
+            "era": "polity",
+            "statement": "Le nom Manneh est celui de l'un des trois lignages qui se relayaient au pouvoir au Niumi, un État mandingue de la rive nord du fleuve Gambie, avec les Jammeh et les Sonko, selon Donald Wright. Le rôle des Manneh dans la défense du royaume justifiait leur place, selon lui.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Koli Tengela in Sonko Traditions of Origin: An Example of the Process of Change in Mandinka Oral Tradition",
+                "author": "Donald R. Wright",
+                "year": 1978,
+                "url": "https://www.webpulaaku.site/tenhella/koli-tenhella-mandinka-sonko-origins-traditions.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Donald R. Wright, History in Africa, vol. 5, 1978, p. 257-271 (DOI 10.2307/3171489). Lu le 18 octobre 2026 sur une copie non officielle publiée par webPulaaku, sans pagination. Le Niumi, sur la rive nord de l'estuaire du fleuve Gambie, est l'un des États mandingues du fleuve ; « by what was likely the early sixteenth century », sept familles étendues de trois lignages, « the Jammeh, Manneh, and Sonko », eux-mêmes des segments de groupes plus larges « having the same patronymics », s'y relaient au pouvoir. L'auteur renvoie pour les traditions des Jammeh et des Manneh à son étude The Early History of Niumi (1977), non lue."
+              },
+              {
+                "title": "Koli Tengela in Sonko Traditions of Origin: An Example of the Process of Change in Mandinka Oral Tradition",
+                "author": "Donald R. Wright",
+                "year": 1978,
+                "url": "https://www.webpulaaku.site/tenhella/koli-tenhella-mandinka-sonko-origins-traditions.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Donald R. Wright, History in Africa, vol. 5, 1978, p. 257-271 (DOI 10.2307/3171489). Lu le 18 octobre 2026 sur une copie non officielle publiée par webPulaaku, sans pagination. « Members of the Jammeh lineage look to a figure named Sora Musa », présenté comme un chef des Mandingues et un pèlerin musulman qui céda le pouvoir à Soundiata et devint l'un de ses chefs militaires, ancêtre venu en premier s'établir au Niumi. « The Manneh consider Tiramakan Traore », autre chef militaire de Soundiata, comme leur ancêtre ; leurs ancêtres seraient venus au Niumi aider les Jammeh contre une agression extérieure. L'auteur juge que ces traditions disent surtout le lien des lignages avec le pays mandingue d'origine, et qu'elles justifient la primauté des Jammeh et le rôle militaire des Manneh."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1978,
+              "to": 1978,
+              "label": "Rapporté en 1978"
+            },
+            "era": "modern",
+            "statement": "Le nom Manneh serait celui des descendants de Tiramakan Traore, présenté comme un chef militaire de Soundiata qui conduisit des Mandingues vers l'ouest ; leurs ancêtres seraient venus au Niumi aider les Jammeh à se défendre, selon la tradition des Manneh que rapporte Donald Wright.",
+            "hypothesisGroup": "origine-manneh",
+            "sources": [
+              {
+                "title": "Koli Tengela in Sonko Traditions of Origin: An Example of the Process of Change in Mandinka Oral Tradition",
+                "author": "Donald R. Wright",
+                "year": 1978,
+                "url": "https://www.webpulaaku.site/tenhella/koli-tenhella-mandinka-sonko-origins-traditions.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Donald R. Wright, History in Africa, vol. 5, 1978, p. 257-271 (DOI 10.2307/3171489). Lu le 18 octobre 2026 sur une copie non officielle publiée par webPulaaku, sans pagination. « Members of the Jammeh lineage look to a figure named Sora Musa », présenté comme un chef des Mandingues et un pèlerin musulman qui céda le pouvoir à Soundiata et devint l'un de ses chefs militaires, ancêtre venu en premier s'établir au Niumi. « The Manneh consider Tiramakan Traore », autre chef militaire de Soundiata, comme leur ancêtre ; leurs ancêtres seraient venus au Niumi aider les Jammeh contre une agression extérieure. L'auteur juge que ces traditions disent surtout le lien des lignages avec le pays mandingue d'origine, et qu'elles justifient la primauté des Jammeh et le rôle militaire des Manneh."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mané",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Usage contemporain",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mané, ou Mane, est la forme du nom portée surtout au Sénégal et en Guinée-Bissau ; Manneh en est la variante gambienne, selon le Dictionary of American Family Names.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Mane",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/mane?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue le 18 octobre 2026 (texte anglais de la page). L'entrée dit : « West African (mainly Senegal and Guinea-Bissau; also Mané): from the name of the Mane clan of the Mandinka people, of unexplained etymology. This surname is also found among the Jola and Serer peoples. Compare Manneh ». La même entrée donne d'abord un nom anglais et écossais, variante de Main, et un nom marathe d'Inde."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
