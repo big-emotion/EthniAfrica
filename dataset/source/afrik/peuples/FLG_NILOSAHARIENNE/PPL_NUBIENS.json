@@ -5,7 +5,7 @@
   "currentCountries": ["SDN", "EGY"],
   "classificationStatus": "contested",
   "nameHistory": {
-    "summary": "Le nom Nubiens désigne des peuples de la vallée du Nil, en Égypte et au Soudan, dont l'une des langues se nomme nobiin. Un nom proche, celui des Noubas, apparaît chez un savant grec vers 200 avant notre ère. Les Égyptiens anciens appelaient leurs voisins du Sud Nehesyou. Les sources que nous avons lues ne disent pas avec certitude d'où vient le nom ; nous les présentons plus bas.",
+    "summary": "Le nom Nubiens désigne des peuples de la vallée du Nil, en Égypte et au Soudan, dont l'une des langues se nomme nobiin. Un nom proche, celui des Noubas, apparaît chez un savant grec vers 200 avant notre ère. Les Égyptiens anciens appelaient leurs voisins du Sud Nehesyou. Les Nubiens qui vivaient au nord de la Nubie égyptienne, près d'Assouan, sont appelés Kenzi, un nom qui viendrait d'un titre arabe. Les sources que nous avons lues ne disent pas avec certitude d'où vient le nom Nubiens ; nous les présentons plus bas.",
     "names": [
       {
         "nameText": "Nobiin",
@@ -174,6 +174,82 @@
                 "source_kind": "intergovernmental",
                 "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
                 "page": "p. 313"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kenzi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "arb",
+        "namedBy": null,
+        "shortLine": "Le nom des Nubiens du nord de la Nubie égyptienne, qui viendrait d'un titre arabe.",
+        "periodLabel": "Décrit en 2010",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant les années 1960"
+            },
+            "statement": "Le nom Kenzi, ou Kenûzi, désigne les Nubiens qui vivaient au nord de la Nubie égyptienne, d'Assouan au ouadi es-Seboua, selon le linguiste Helmut Satzinger. Leur parler est presque le même que celui de la région de Dongola, dont les séparent pourtant quelque 200 kilomètres.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Old Nubian — Black African Language of the Most Ancient Attestation",
+                "author": "Helmut Satzinger",
+                "year": 2010,
+                "url": "https://homepage.univie.ac.at/helmut.satzinger/Texte/OldNubian.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 748",
+                "notes": "Dans Between the Cataracts, Part Two, Polish Archaeology in the Mediterranean Supplement Series 2.2/2, 2010, p. 747-754 ; lu le 18 octobre 2026 dans le PDF mis en ligne par l'auteur. Page 748, sous « Valley Nubian – before the 1960s » : « Kenzi or Kenûzi (in Arabic Kunûzi): From Aswân to Wâdi el-Sebû‘ (north of Egyptian Nubia) » ; « Dongolâwi and Kenûzi are, while separated by some 200 km, nearly identical »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2010,
+              "to": 2010,
+              "label": "Rapportée en 2010"
+            },
+            "era": "modern",
+            "statement": "Le nom Kenzi viendrait du titre arabe kanz al-dawla, « trésor de l'Empire », que le calife al-Hakim accorde en 1004 au chef d'un groupe d'Arabes Rabia, dont la tribu prend le nom de Banou Kanz, « fils de Kanz », selon l'explication que rapporte le linguiste Helmut Satzinger. Il juge qu'elle n'explique pas pourquoi les Kenzi parlent comme les Nubiens de Dongola, plus au sud.",
+            "hypothesisGroup": "origine du nom Kenzi",
+            "sources": [
+              {
+                "title": "Old Nubian — Black African Language of the Most Ancient Attestation",
+                "author": "Helmut Satzinger",
+                "year": 2010,
+                "url": "https://homepage.univie.ac.at/helmut.satzinger/Texte/OldNubian.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 748",
+                "notes": "Dans Between the Cataracts, Part Two, Polish Archaeology in the Mediterranean Supplement Series 2.2/2, 2010, p. 747-754 ; lu le 18 octobre 2026 dans le PDF mis en ligne par l'auteur. Page 748 : « The name Kenûzi (Kunûzi) or Kenzi (Kanzi) is derived from the Arabic epithet kanz al-dawla, literally “treasure of the Empire” » ; « In AD 1004, the Caliph al-Hakim bestowed this title upon the leader of a group of Rabı̂‘a Arabs » ; « This is, however, not a cogent explanation for the fact that the Kenûzi Nubians use the southern idiom, Dongolâwi »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2010,
+              "to": 2010,
+              "label": "Proposée en 2010"
+            },
+            "era": "modern",
+            "statement": "Le nom Kenzi viendrait plutôt d'un autre Kanz al-Dawla, neveu de Kudanbes, l'un des derniers rois de la Makurie, autour de Dongola, selon le linguiste Helmut Satzinger. Il faudrait alors que ce prince ait fui vers le nord avec ses troupes ou les siens.",
+            "hypothesisGroup": "origine du nom Kenzi",
+            "sources": [
+              {
+                "title": "Old Nubian — Black African Language of the Most Ancient Attestation",
+                "author": "Helmut Satzinger",
+                "year": 2010,
+                "url": "https://homepage.univie.ac.at/helmut.satzinger/Texte/OldNubian.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 748",
+                "notes": "Dans Between the Cataracts, Part Two, Polish Archaeology in the Mediterranean Supplement Series 2.2/2, 2010, p. 747-754 ; lu le 18 octobre 2026 dans le PDF mis en ligne par l'auteur. Page 748 : « it may be that the name Kenûz derives from the other historical figure, Kanz al-Dawla who was the nephew of Kudanbes, one of the last kings of Makuria » ; « it must be assumed that he eventually had to leave Makuria and flee northward with his troops or tribesmen »."
               }
             ]
           }

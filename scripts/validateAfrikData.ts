@@ -2588,7 +2588,9 @@ export function checkSourceIdentity(datasetRoot: string): ValidationResult {
 // took their Factbook citations with them.
 // 119 -> 115 on 2026-10-14: the people fiches of waves 14 to 19 folded or
 // withdrawn that day took four Factbook citations with them.
-export const RETIRED_CIA_FACTBOOK_URL_CEILING = 115;
+// 115 -> 112 on 2026-10-18: the Guwa, Mbogo and Mobe fiches, withdrawn after
+// wave 24 as unattested, took their Factbook citations with them.
+export const RETIRED_CIA_FACTBOOK_URL_CEILING = 112;
 
 const LIVE_CIA_FACTBOOK =
   /cia\.gov\/(?:library\/publications\/)?the-world-factbook/i;
@@ -4787,7 +4789,10 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // folded or withdrawn, left with the model keys they lacked.
   // 6049 -> 6039 on 2026-10-14: PPL_NABT, folded into PPL_NABDAM, left with
   // the model keys it lacked.
-  peuple: 6039,
+  // 6039 -> 5964 on 2026-10-18: PPL_MUCUBAL, folded into PPL_MUCUVAL, and
+  // the seven people fiches withdrawn after wave 24 left with the model keys
+  // they lacked.
+  peuple: 5964,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next
