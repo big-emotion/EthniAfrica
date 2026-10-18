@@ -18,6 +18,7 @@ type Account = {
   era?: string;
   period?: { from?: number | null; label?: string };
   statement: string;
+  sources?: Array<{ title: string; page?: string }>;
 };
 type Fiche = {
   id: string;
@@ -58,6 +59,17 @@ function readFiche(id: string): Fiche {
 const gapsOn = (fiche: Fiche, fieldPath: string) =>
   fiche.gaps.filter((gap) => gap.fieldPath === fieldPath);
 
+const citesPage = (fiche: Fiche, title: RegExp, page: RegExp) =>
+  (fiche.nameHistory?.names ?? [])
+    .flatMap((name) => name.accounts)
+    .flatMap((account) => account.sources ?? [])
+    .some((source) => title.test(source.title) && page.test(source.page ?? ""));
+
+// The 2026-10-14 implementation ruling: a fiche left in its nearest box says
+// that the hereditary_family_name box exists and why it is not used.
+const HEREDITARY_BOX_NAMED =
+  /Le modèle a une case pour un nom de famille héréditaire/;
+
 // w25-A q4, w25-B q2, w25-C q2, w25-D q5, w25-F q3: the history shows the name
 // borne as a family name (a marriage table, a family-name dictionary, a family
 // of Lesotho, the Krio surname passed from father to children) and tells no
@@ -86,8 +98,8 @@ const HEREDITARY_FAMILY_NAMES = [
 ] as const;
 
 // w25-B q2, w25-E q1, w25-F q3: personal names filed as clan names. Lado has
-// no history; the Seligmans name Bari men called Lado and give their clan
-// apart, so the fiche now cites them.
+// no history; on p. 270 the Seligmans name two Bari called Lado alone and give
+// their clan apart, so the fiche now cites them.
 const PERSONAL_NAMES = [
   "PAT_LADO",
   "PAT_KOUNTCHE",
@@ -251,6 +263,47 @@ describe("wave 25 personal names filed as clan names (ETNI-2011, 2026-10-18)", (
     expect(gapsOn(lado, "nameSystem")[0].reason).toMatch(/Bari/);
     expect(gapsOn(lado, "peoples")[0].reason).toMatch(/Bari/);
   });
+
+  // The chief of p. 268 is « Laro Lado » throughout, and Lado may be his
+  // father's name; only the two people of p. 270 are called Lado alone, and
+  // only they are given a clan.
+  // @req REQ-133
+  it("names the Mongalla chief as the Seligmans write him and reads Lado as a personal name from p. 270 only", () => {
+    const lado = readFiche("PAT_LADO");
+    const [nameSystemGap] = gapsOn(lado, "nameSystem");
+
+    for (const gap of lado.gaps.filter((g) => /chef|Mongalla/.test(g.reason))) {
+      expect(gap.reason, gap.fieldPath).toMatch(/Laro Lado/);
+    }
+    expect(nameSystemGap.reason).toMatch(/Molodiong/);
+    expect(nameSystemGap.reason).not.toMatch(/chef/);
+  });
+});
+
+describe("wave 25 personal names say why the hereditary box is not used (ETNI-2011)", () => {
+  // @req REQ-133
+  it.each([...PERSONAL_NAMES, ...FANG_BETI_PERSONAL_NAMES])(
+    "%s names the hereditary_family_name box in its nameSystem gap",
+    (id) => {
+      const [gap] = gapsOn(readFiche(id), "nameSystem");
+
+      expect(gap.reason).toMatch(HEREDITARY_BOX_NAMED);
+    }
+  );
+
+  // Their histories say every child of the man bears his name as a family
+  // name, so « no source shows the transmission » would contradict them: the
+  // gap says instead that each child takes his own father's name.
+  // @req REQ-133
+  it.each(["PAT_NSUE", "PAT_OBIANG"])(
+    "%s gives the reason the box is not used instead of denying the transmission",
+    (id) => {
+      const [gap] = gapsOn(readFiche(id), "nameSystem");
+
+      expect(gap.reason).not.toMatch(/aucune source lue ne montre/i);
+      expect(gap.reason).toMatch(/son propre père/);
+    }
+  );
 });
 
 describe("wave 25 Fang and Ewondo names (ETNI-2011, Fang ruling)", () => {
@@ -272,6 +325,23 @@ describe("wave 25 Fang and Ewondo names (ETNI-2011, Fang ruling)", () => {
       expect(JSON.stringify(fiche.gaps)).not.toMatch(
         /catégorie provisoire|Le nom de clan ne détermine/
       );
+    }
+  );
+
+  // A gap that credits Tessmann needs the fiche to cite the page where he
+  // says it: Die Pangwe, vol. 2, p. 285.
+  // @req REQ-133
+  it.each(FANG_BETI_PERSONAL_NAMES)(
+    "%s credits Tessmann in a gap only if it cites Die Pangwe at p. 285",
+    (id) => {
+      const fiche = readFiche(id);
+      const creditsTessmann = fiche.gaps.some((gap) =>
+        /Tessmann/.test(gap.reason)
+      );
+
+      expect(
+        !creditsTessmann || citesPage(fiche, /^Die Pangwe.*tome 2$/, /\b285\b/)
+      ).toBe(true);
     }
   );
 
