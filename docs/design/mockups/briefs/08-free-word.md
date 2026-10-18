@@ -1,60 +1,100 @@
 # Brief 8 — The free-word fiche
 
-Read [`README.md`](README.md) first.
+Read [`README.md`](README.md), `docs/design/mockups/site/README.md`,
+`docs/design/mockup-first-workflow.md`,
+`docs/editorial/reader-facing-register.md` and
+`docs/editorial/doctrine.md` first. This is a design task: prepare a new page
+and its boards; do not write application code or change the existing glossary
+board.
 
-**Boards to create** (new page, so three new boards): `word-race-430`,
-`word-race-768`, `word-race-1440`. Add them to the canvas as a fifth
-group, and add the page's entry to `canvas.json`. The nearest existing
-board is `glossary`, which stays as it is.
+## Surface and route proposal
 
-**Surface.** The `mots` type (`dataset/source/afrik/mots/`, 2 fiches today).
-**No page at all**: checked on 2026-10-14, the two fiches
-(`WRD_RACE`, `WRD_KIRDI`) are served only by `/api/v2/words`; no route under
-`src/app/[lang]/` renders them and production's sitemap lists none. This brief
-draws a new page, not a redraw. The nearest existing surface is `/fr/glossaire`. Doctrine §2 names it "plus one free
-type", for a word whose history explains Africa through its names without
-fitting the six types: *racisme*, *nation*, *État*, *esclavage*.
+The source records are the three current word fiches in
+`dataset/source/afrik/mots/`: `WRD_RACE`, `WRD_KIRDI` and `WRD_TRIBU`. The
+site has no page that renders these records; `/api/v2/words` and
+`/api/v2/words/[id]` expose them. This brief proposes `/fr/atlas/mots/[slug]`
+for the new page. It is a proposal for the operator to accept or change, not an
+established route.
 
-**Why it carries weight.** The word « race » is the series' top Instagram post
-(about 104–111K Meta views), and « sauvage » (196K views, 3,468 shares) wrapped a
-translated clip in a sourced word history. The audit calls etymology around a
-clip the strongest format measured so far. This is also the type where the
-operator's thesis comes closest to the surface, so it is the type where the
-"never affirm" rule is tested hardest.
+Create three new boards named `word-race-430`, `word-race-768` and
+`word-race-1440`. Add them to `canvas.json` in a new group, « 5 · Mots ».
+The existing `glossary` board stays untouched. The boards show the `WRD_RACE`
+page and use all three real word records in the page's word-navigation area.
 
-## Subject: `WRD_RACE`
+## What the source records say
 
-Real data: the word *race* means today groups of people one wanted to tell
-apart by heredity; it first meant the family, the line; it came into French from
-Italian. The sources do not agree on its origin. 12 accounts; source types:
-academic, archive, intergovernmental, linguistic reference. Fiche fields:
-`wordLanguage`, `definition`, `relatedSubjects`, `gaps`.
+Use the local JSON records as the only source of copy and claims. Keep each
+claim with its attribution, source links, source type and uncertainty. Do not
+show source tiers.
 
-## Blocks, mobile 430 px
+- **Race (`WRD_RACE`)** — the record says the word first meant a family or
+  lineage, then groups people that others tried to distinguish by heredity.
+  It entered French from Italian. Its origin is disputed: the fiche records
+  twelve accounts, including proposals from Latin *ratio*, Latin *generatio*,
+  Old High German *reiza*, Arabic *ra's* and French *haras*. Keep them as
+  separate, attributed hypotheses. Its sources include academic work, an
+  archive, intergovernmental publication and linguistic reference. The fiche
+  also records three gaps; preserve them in the closing band.
+- **Kirdi (`WRD_KIRDI`)** — the record describes a name given from outside to
+  non-Muslim peoples of northern Cameroon and Chad. It was long used
+  disparagingly; some people later reclaimed it as a name of pride. The
+  record has nine accounts, including three different origin proposals
+  (Kanouri *kerdi*, Arabic *choa* and Arabic *qird*). Keep each proposal
+  attributed and uncertain. Its sources include academic work and archives;
+  keep the source type beside each account.
+- **Tribu (`WRD_TRIBU`)** — the record says the French word comes from Latin
+  *tribus*, a division of the Roman people; it later translated Arabic
+  *qabīla* and was used to classify African peoples. Its Latin origin is
+  debated, and the record preserves different explanations. Use its own
+  wording and sources if any of its claims appear on the board.
 
-1. Verdict: the word's older meaning first, then today's. The page says plainly
-   that the word is not African in origin.
-2. Who named whom — here *who used the word for whom*: dates and speakers, one
-   account at a time.
-3. The sources speak.
-4. **Type-specific: where the word went** — `relatedSubjects`, which today
-   holds two real links: `FLG_MANDE` (in 1900 Maurice Delafosse ranks the
-   Mandé-speaking peoples among the « familles nègres » and speaks of Dyoula
-   « de race pure ») and `FLG_BANTU` (Lwanga-Lunyiigo and Vansina warn against
-   confusing language, culture and race). Each is a quoted relation with its
-   own link to the name.
-5. Closing band. The conviction sentence here is allowed to be stronger than on
-   other types; it still comes from the doctrine and is not a sourced claim.
-6. Next step: *Mandé* and *Bantou*, the two names the fiche relates the word to.
+The three records have 12, 9 and 35 history accounts respectively. None is a
+thin or single-account example. Do not invent a thin state or compress a
+disagreement into one answer to make the layout shorter.
 
-## States to draw
+## What to draw
 
-Rich (`WRD_RACE`), a word with a single attested sense (thin), and the reader
-arriving from the social clip (the board should echo the clip's question in its
-first line).
+At 430 px, then 768 px, then 1440 px, draw the page in this order:
 
-## Do not
+1. The shared site header and a plain page title, « Le mot race ».
+2. A short summary based on `WRD_RACE.nameHistory.summary`. Put the current
+   meaning before the older meaning, and say that the sources do not agree on
+   the origin. Do not add a claim that the word has no African origin: the
+   record says how it entered French and keeps its earlier origin disputed.
+3. The name-history component, adapted to show how people used the word and
+   for whom. Keep the twelve accounts attributable and chronological; show
+   competing origin proposals side by side, without ranking or merging them.
+4. The related-subject block from `WRD_RACE.relatedSubjects`: Mandé and
+   Bantou, with the recorded relations, their source links and plain labels.
+5. The sources block, titled « Les sources du mot race ». Group claims by
+   account and show each source's type. Never show a tier or rank the sources.
+6. The approved closing band « Ce que nous ne savons pas encore » with the
+   three gaps in the record. Reuse the footer B and other relevant components
+   from `Main`.
+7. A « Parcourir les mots » area with the three real records: race, Kirdi and
+   tribu. Use their recorded names and short definitions. This is navigation
+   among the available word fiches, not a claim that the records are all
+   related to each other.
 
-- Write "X is racist" or any verdict the sources do not carry: the page
-  presents sources and traces research.
-- Let this brief's boldness leak into the other seven.
+Use the actual relations and citations from the three JSON files. No invented
+claims, quotations, dates, sources, source types, related links or thesis copy.
+No figure of style in a title. Keep difficult source language quoted and
+attributed; explain it in plain French beside the quotation when needed.
+
+At 768 and 1440 px, retain the same reading order and all source-backed
+uncertainty. Use the site's existing tokens and components. The glossary
+board, `Main` and every existing page board stay unchanged unless the operator
+first agrees to a shared-component change.
+
+## Step 0 and approval
+
+Before drawing, report in six lines: whether a word page or route exists;
+which word records are present; what the `race` record says about its current
+and earlier meanings; which origin accounts disagree; what related subjects
+and gaps it records; and any route or layout decision for the operator.
+Change nothing in this step. Then wait for the operator's decisions, including
+the route proposal.
+
+After receiving those decisions, draw `word-race-430` first, then 768 and
+1440. List in five lines any remaining choices you made. Wait for the
+operator's approval before recording the boards in the repository.
