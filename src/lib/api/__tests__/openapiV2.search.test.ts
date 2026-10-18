@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { swaggerSpecV2 } from "@/lib/api/openapiV2";
-import type { SearchHitKind } from "@/types/afrik";
+import type { SearchHitKind, SearchLead } from "@/types/afrik";
 
 interface SchemaObject {
   type?: string | string[];
@@ -48,6 +48,14 @@ const KINDS_THE_MERGE_EMITS: Record<SearchHitKind, true> = {
   person: true,
   patronyme: true,
   quiz: true,
+};
+
+/** Same pattern for the kinds a near-miss lead can carry (DEC-075). */
+const KINDS_A_LEAD_CARRIES: Record<SearchLead["kind"], true> = {
+  people: true,
+  country: true,
+  family: true,
+  patronyme: true,
 };
 
 /** The answer key, in every spelling the fiche and the RPC use for it. */
@@ -154,6 +162,29 @@ describe("OpenAPI v2 unified search contract", () => {
     expect(data.required).toContain("nearNames");
     expect(nearNames?.description).toMatch(/non-empty search/i);
     expect(nearNames?.description).toMatch(/similarity/i);
+  });
+
+  // @req REQ-125
+  it("enumerates every kind a near-miss lead can carry, family names included", () => {
+    const kind = schemas.SearchLeadV2?.properties?.kind;
+
+    expect([...(kind?.enum ?? [])].sort()).toEqual(
+      Object.keys(KINDS_A_LEAD_CARRIES).sort()
+    );
+  });
+
+  // A client that read « always empty when total > 0 » would never show the
+  // family-name lead « tchikaya » now carries beside its results.
+  // @req REQ-125
+  it("documents family-name leads beside results, with their guards", () => {
+    const description =
+      schemas.SearchResponseData.properties?.leads?.description;
+
+    expect(description).not.toMatch(/always an empty array when total/i);
+    expect(description).toMatch(/family name/i);
+    expect(description).toMatch(/answers the query exactly/i);
+    expect(description).toMatch(/first letter/i);
+    expect(description).toMatch(/0\.4/);
   });
 
   // @req REQ-002

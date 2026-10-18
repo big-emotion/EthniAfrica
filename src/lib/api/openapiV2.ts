@@ -1025,13 +1025,13 @@ const options: swaggerJsdoc.Options = {
               type: "array",
               items: { $ref: "#/components/schemas/SearchLeadV2" },
               description:
-                "Near-miss leads (REQ-125), populated only when total is 0: up to 3 suggestions across peoples, countries and language families, ranked by pg_trgm similarity alone (migration 069) below the main search's own fuzzy floor. Always an empty array when total is greater than 0.",
+                "Near-miss leads (REQ-125), ranked by pg_trgm similarity alone (migrations 094, 109). When total is 0: up to 3 suggestions across peoples, countries, language families and family names. A family name is also offered as a spelling of the searched name when total is greater than 0 (DEC-075): up to 3 family names, only when nothing answers the query exactly (no hit of any kind with exactMatch, no published word), only when the family name or one of its recorded spellings begins with the query's first letter (both folded: lower case, accents and apostrophes removed), and only at similarity >= 0.4. Empty otherwise, for a multi-name widening and for quiz-lens searches.",
             },
             nearNames: {
               type: "array",
               items: { $ref: "#/components/schemas/SearchNearNameV2" },
               description:
-                "Qualified similar names (REQ-180) for a non-empty search: up to 3 distinct peoples, countries or language families, ranked by pg_trgm similarity and excluding entities already returned by the search. Always empty for zero-result and quiz-lens searches.",
+                "Qualified similar names (REQ-180) for a non-empty search: up to 3 distinct peoples, countries or language families, ranked by pg_trgm similarity and excluding entities already returned by the search. Never a family name (DEC-075). Always empty for zero-result and quiz-lens searches.",
             },
             nameAnswers: {
               type: "array",
@@ -1226,20 +1226,20 @@ const options: swaggerJsdoc.Options = {
         SearchLeadV2: {
           type: "object",
           description:
-            "A near-miss lead (REQ-125): what the search engine almost understood, only ever returned when the main search's total is 0.",
+            "A near-miss lead (REQ-125): what the search engine almost understood. A people, country or family lead is returned only when the main search's total is 0; a family-name lead is a spelling of the searched name and may come beside results (DEC-075).",
           properties: {
             kind: {
               type: "string",
-              enum: ["people", "country", "family"],
+              enum: ["people", "country", "family", "patronyme"],
               description:
-                "The entity kind this lead belongs to — the three kinds the search surface names to the reader.",
+                "The entity kind this lead belongs to. `patronyme` is a family name, offered under its filed name.",
             },
             id: { type: "string", description: "The entity's own identifier." },
             name: { type: "string", description: "The entity's display name." },
             similarity: {
               type: "number",
               description:
-                "pg_trgm similarity of the folded query against this name, in [0.2, 1].",
+                "pg_trgm similarity of the folded query against this name: in [0.2, 1] for a people, country or family, in [0.4, 1] for a family name.",
               example: 0.27,
             },
           },
