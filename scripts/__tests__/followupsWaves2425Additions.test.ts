@@ -3,6 +3,7 @@ import { resolve } from "node:path";
 
 import { describe, expect, it } from "vitest";
 
+import { nameRecordsFromHistory } from "../../src/lib/afrik/nameHistoryRecords";
 import { parseNameHistory } from "../../src/lib/afrik/parsers/nameHistoryParser";
 import { parsePatronymeFile } from "../../src/lib/afrik/parsers/patronymeParser";
 
@@ -30,11 +31,14 @@ const MOLONY_2014_URL = "https://books.google.com/books?id=qDE3BAAAQBAJ";
 const AMBRONN_1906_URL =
   "https://archive.org/details/mitteilungen-von-forschungsreisenden-und-gelehrten-aus-den_1906";
 const TESSMANN_1913_URL = "https://archive.org/details/diepangwevlkerku01tess";
+const ORSTOM_HAUT_NYONG_1968_URL =
+  "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers15-04/02870.pdf";
 
 interface Source {
   title: string;
   url: string | null;
   page?: string;
+  notes?: string;
   source_kind?: string;
   sourceKey?: string;
 }
@@ -53,6 +57,8 @@ interface Account {
 interface NameEntry {
   nameText: string;
   selfGiven: boolean;
+  namedBy: string | null;
+  periodLabel?: string;
   variantSpelling?: true;
   accounts: Account[];
 }
@@ -89,7 +95,7 @@ describe("the oral verification list after waves 24 and 25", () => {
     );
 
   // @req REQ-178
-  it("adds Baka and Bedzan, Winye and Zhar to the names to check orally", () => {
+  it("adds Baka and Bedzan, and Winye, to the names to check orally, and no name nobody approved", () => {
     const section = doc().split("## Waves 24 and 25 of the long tail")[1];
 
     expect(section).toBeDefined();
@@ -99,42 +105,40 @@ describe("the oral verification list after waves 24 and 25", () => {
       "Bedzan",
       "`PPL_WIYANA`",
       "Winye",
-      "`PPL_JARAWA`",
-      "Zhar",
     ]) {
       expect(section).toContain(expected);
     }
+    expect(section).not.toContain("`PPL_JARAWA`");
   });
 });
 
 describe("PPL_JARAWA after reading Blench's Atlas of Nigerian Languages", () => {
   const jarawa = () => readJson("peuples/FLG_TCHADIQUE/PPL_JARAWA.json");
 
+  // Zhar is the speakers' name for their language (the Atlas's field 1.B),
+  // not a name of the people: as a name block beside selfNameUnknown it
+  // could only be typed an outside name, which it is not.
   // @req REQ-178
-  it("keeps the self-name unknown: the Atlas names the language, not the people", () => {
+  it("keeps the self-name unknown and publishes no Zhar name: the Atlas names the language, not the people", () => {
     const fiche = jarawa();
-    const zhar = nameOf(fiche, "Zhar");
+    const parsed = parseNameHistory(fiche.nameHistory);
 
+    expect(parsed.success).toBe(true);
     expect(fiche.nameHistory.selfNameUnknown).toBe(true);
-    expect(zhar.selfGiven).toBe(false);
     expect(
-      zhar.accounts.some(
-        (account) =>
-          citesUrl(account, BLENCH_ATLAS_URL) &&
-          account.sources.some((source) => source.page === "p. 48")
-      )
-    ).toBe(true);
-    expect(parseNameHistory(fiche.nameHistory).success).toBe(true);
+      nameRecordsFromHistory(parsed.data).map((record) => record.nameText)
+    ).not.toContain("Zhar");
   });
 
   // @req REQ-178
-  it("tells, after the Atlas, that Jarawa is a Hausa name for many language groups", () => {
+  it("tells, after the Atlas, that Jarawa is a Hausa name and that Bankal speakers call their language Zhar", () => {
     const account = nameOf(jarawa(), "Jarawa").accounts.find((candidate) =>
       citesUrl(candidate, BLENCH_ATLAS_URL)
     );
 
     expect(account?.statement).toMatch(/haoussa/);
-    expect(account?.sources[0].page).toBe("p. 49");
+    expect(account?.statement).toMatch(/Zhar/);
+    expect(account?.sources[0].page).toBe("pp. 48-49");
   });
 
   // @req REQ-178
@@ -154,8 +158,8 @@ describe("FLG_GUR takes the Krause hypothesis", () => {
     const family = readJson("famille_linguistique/FLG_GUR.json");
     const macro = readJson("peuples/FLG_GUR/PPL_GUR_MACRO.json");
     const krause = (fiche: { nameHistory: { names: NameEntry[] } }) =>
-      nameOf(fiche, "Gur").accounts.find((account) =>
-        citesUrl(account, SNL_GUR_URL)
+      nameOf(fiche, "Gur").accounts.find(
+        (account) => !account.birth && citesUrl(account, SNL_GUR_URL)
       );
 
     const account = krause(family);
@@ -165,6 +169,24 @@ describe("FLG_GUR takes the Krause hypothesis", () => {
     expect(account?.sources[0].title).toBe(krause(macro)?.sources[0].title);
     expect(family.nameHistory.summary).not.toMatch(/n'expliquent pas/);
     expect(parseNameHistory(family.nameHistory).success).toBe(true);
+  });
+
+  // The 1895 trace is reported, not read: the operator rules whether it may
+  // be a birth (name-history-priority-core.md), so 1927 stays the birth and
+  // says what it is, and the namer credits neither man alone.
+  // @req REQ-196
+  it("keeps 1927 as the oldest trace read, beside Krause's reported 1895 proposal", () => {
+    const gur = nameOf(readJson("famille_linguistique/FLG_GUR.json"), "Gur");
+    const birth = gur.accounts.find((account) => account.birth);
+
+    expect(birth?.period.from).toBe(1927);
+    expect(birth?.statement).not.toMatch(/que le projet connaît/);
+    expect(birth?.statement).toMatch(/que nous avons lue/);
+    expect(birth?.statement).toMatch(/Krause/);
+    expect(birth?.statement).toMatch(/1895/);
+    expect(gur.periodLabel).not.toMatch(/^Depuis 1927/);
+    expect(gur.namedBy).toMatch(/Westermann/);
+    expect(gur.namedBy).toMatch(/Krause/);
   });
 });
 
@@ -421,5 +443,26 @@ describe("the Maka and Njem fiches that replace the forest-peoples label", () =>
       url: AMBRONN_1906_URL,
       page: "p. 213",
     });
+  });
+
+  // Page V of the ORSTOM dictionary gives the Ndjem as the main group of
+  // eight cantons, five of them « Ndjem & Pygmées » by ditto marks, four of
+  // them named Dzimou: counting only the cantons named Ndjem gave 4 140.
+  // @req REQ-196
+  it("counts the eight cantons where the 1968 ORSTOM table gives the Ndjem as the main group", () => {
+    const fiche = readJson("peuples/FLG_BANTU/PPL_NJEM.json");
+    const table = nameOf(fiche, "Ndjem").accounts.find((account) =>
+      citesUrl(account, ORSTOM_HAUT_NYONG_1968_URL)
+    );
+    const demography = fiche.content.demography.source;
+
+    expect(table?.statement).toMatch(/huit cantons/);
+    expect(table?.statement).toMatch(/Pygmées/);
+    expect(table?.sources[0].notes).toMatch(/DZIMOU/);
+    expect(demography).toMatch(/12 204/);
+    expect(demography).not.toMatch(/4 140/);
+    expect(fiche.content.appellations.contemporaryUsage).toMatch(
+      /huit cantons/
+    );
   });
 });

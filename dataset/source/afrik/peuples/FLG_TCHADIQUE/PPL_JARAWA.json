@@ -167,7 +167,7 @@
               "label": "Rapporté en 2020"
             },
             "era": "modern",
-            "statement": "Le nom Jarawa est un nom haoussa, que l'on emploie pour de nombreux groupes de langues du Nigeria : les parlers des Jarawa de Bauchi, mais aussi l'izere des Afizere et plusieurs autres, selon l'atlas des langues du Nigeria du linguiste Roger Blench.",
+            "statement": "Le nom Jarawa est un nom haoussa, que l'on emploie pour de nombreux groupes de langues du Nigeria : les parlers des Jarawa de Bauchi, mais aussi l'izere des Afizere et plusieurs autres, selon l'atlas des langues du Nigeria du linguiste Roger Blench. L'atlas note aussi que les locuteurs du bankal appellent leur langue Zhar. Il ne dit pas comment ces groupes se nomment eux-mêmes ; parmi les autres noms des locuteurs du bankal, il cite Bankalawa.",
             "aspect": "usage",
             "sources": [
               {
@@ -177,8 +177,8 @@
                 "url": "https://web.archive.org/web/20250528003305/https://www.rogerblench.info/Language/Africa/Nigeria/Atlas%20of%20Nigerian%20Languages%202020.pdf",
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
-                "page": "p. 49",
-                "notes": "Édition de 2020 (version du 11 septembre 2020), diffusée par l'auteur, linguiste de l'université de Cambridge, sur son site. L'adresse d'origine refusait la connexion le 18 octobre 2026 ; le document a été lu ce jour-là dans la copie qu'en garde la Wayback Machine, pages vues sur l'image. Page 49 : « Jarawa – a Hausa name used to refer to many language groups: Izere, Ribina, Lame cluster, Ɓarawa […] and the languages of the Jarawan Bantu group including: the Jarawa cluster, Mbárù, Gùra, Rúhû, Gubi, Dulbu, Lábìr, Kulung, and Gwa »."
+                "page": "pp. 48-49",
+                "notes": "Édition de 2020 (version du 11 septembre 2020), diffusée par l'auteur, linguiste de l'université de Cambridge, sur son site. L'adresse d'origine refusait la connexion le 18 octobre 2026 ; le document a été lu ce jour-là dans la copie qu'en garde la Wayback Machine, pages vues sur l'image. Page 48, groupe jar (« Jar cluster »), entrée Zhar : « 1.B Zhar », le nom que le peuple donne à sa langue selon la clé des rubriques en tête de l'index ; « 2.A Ɓankal, Bankal, Bankala » ; « 2.C Bankalawa », un autre nom du peuple ; « 3. Dass town and northward to Bauchi town ». La rubrique 1.C, le nom que le peuple se donne, n'est remplie ni pour le zhar ni pour le gwak. Page 49 : « Jarawa – a Hausa name used to refer to many language groups: Izere, Ribina, Lame cluster, Ɓarawa […] and the languages of the Jarawan Bantu group including: the Jarawa cluster, Mbárù, Gùra, Rúhû, Gubi, Dulbu, Lábìr, Kulung, and Gwa »."
               }
             ]
           },
@@ -256,40 +256,6 @@
                 "source_kind": "archive",
                 "page": "p. 716",
                 "notes": "Oxford, Clarendon Press. Lu le 18 octobre 2026 dans la numérisation d'Internet Archive ; page sans numéro imprimé, déduite des pages voisines. Note 4 : Johnston identifie la langue jarawa à « Koelle's 'Dsarawa' »."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "nameText": "Zhar",
-        "nameStatus": "current",
-        "selfGiven": false,
-        "languageOfOrigin": null,
-        "namedBy": null,
-        "shortLine": "Le nom que les locuteurs du bankal donnent à leur langue, selon un atlas des langues du Nigeria.",
-        "periodLabel": "Relevé en 2020",
-        "accounts": [
-          {
-            "period": {
-              "from": 2020,
-              "to": 2020,
-              "label": "Rapporté en 2020"
-            },
-            "era": "modern",
-            "statement": "Le nom Zhar est celui que les locuteurs du bankal donnent à leur langue, parlée de la ville de Dass jusqu'à celle de Bauchi, selon l'atlas des langues du Nigeria du linguiste Roger Blench. L'atlas ne donne pas le nom que ces groupes se donnent à eux-mêmes ; parmi les autres noms du peuple, il cite Bankalawa. Nous n'avons pas encore lu de source qui dise si ce peuple se nomme Zhar.",
-            "aspect": "usage",
-            "formAsWritten": "Zhar",
-            "sources": [
-              {
-                "title": "An Atlas of Nigerian Languages",
-                "author": "Roger Blench",
-                "year": 2020,
-                "url": "https://web.archive.org/web/20250528003305/https://www.rogerblench.info/Language/Africa/Nigeria/Atlas%20of%20Nigerian%20Languages%202020.pdf",
-                "tier": "referenced",
-                "source_kind": "linguistic_reference",
-                "page": "p. 48",
-                "notes": "Édition de 2020 (version du 11 septembre 2020), diffusée par l'auteur, linguiste de l'université de Cambridge, sur son site. L'adresse d'origine refusait la connexion le 18 octobre 2026 ; le document a été lu ce jour-là dans la copie qu'en garde la Wayback Machine, pages vues sur l'image. Page 48, groupe jar (« Jar cluster »), entrée Zhar : « 1.B Zhar », c'est-à-dire le nom que le peuple donne à sa langue, selon la clé des rubriques en tête de l'index ; « 2.A Ɓankal, Bankal, Bankala » ; « 2.C Bankalawa », un autre nom du peuple ; « 3. Dass town and northward to Bauchi town ». La rubrique 1.C, le nom que le peuple se donne, n'est remplie ni pour le zhar ni pour le gwak."
               }
             ]
           }

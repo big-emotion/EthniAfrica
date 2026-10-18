@@ -100,7 +100,7 @@
               "label": "1964-1968"
             },
             "era": "modern",
-            "statement": "Le nom Ndjem désigne l'ethnie principale de quatre cantons du département du Haut-Nyong, autour de Lomié, de Ngoïla et d'Abong-Mbang, et entre dans le nom de ces cantons, comme Ndjem du Nord ou Ndjem du Sud, selon le dictionnaire des villages publié par l'ORSTOM en 1968.",
+            "statement": "Le nom Ndjem désigne l'ethnie principale de huit cantons du département du Haut-Nyong, autour d'Abong-Mbang, de Lomié et de Ngoïla, selon le dictionnaire des villages publié par l'ORSTOM en 1968. Dans six de ces cantons, le tableau écrit « Ndjem & Pygmées ». Le nom Ndjem entre aussi dans celui de quatre de ces cantons, comme Ndjem du Nord ou Ndjem du Sud ; quatre autres s'appellent Dzimou.",
             "aspect": "usage",
             "formAsWritten": "Ndjem",
             "sources": [
@@ -112,7 +112,7 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. V",
-                "notes": "Yaoundé, ORSTOM, juin 1968, Répertoire géographique du Cameroun, fascicule 15, établi d'après les renseignements de l'administration. Lu le 18 octobre 2026 dans le PDF de la base documentaire de l'IRD, page vue sur l'image. Page V, tableau de la population du département par canton, avec l'« ethnie principale » de chacun, au recensement de 1966-1967 (1964-1965 pour l'arrondissement de Lomié). Arrondissement d'Abong-Mbang : canton « Ndjem », ethnie principale « Ndjem ». Arrondissement de Lomié : cantons « NDJEM DU CENTRE » et « NDJEM DU NORD ». District de Ngoïla : canton « NDJEM DU SUD »."
+                "notes": "Yaoundé, ORSTOM, juin 1968, Répertoire géographique du Cameroun, fascicule 15, établi d'après les renseignements de l'administration. Lu le 18 octobre 2026 dans le PDF de la base documentaire de l'IRD, page vue sur l'image. Page V, tableau de la population du département par canton, avec l'« ethnie principale » de chacun : recensement de 1966-1967 pour l'arrondissement d'Abong-Mbang, de 1964-1965 pour celui de Lomié et pour le district de Ngoïla, dont l'année reprend par des guillemets de répétition celle de Lomié. Arrondissement d'Abong-Mbang : canton « Ndjem », ethnie principale « Ndjem », 1 026 habitants. Arrondissement de Lomié : « NDJEM DU CENTRE », ethnie « NDJEM », 676 ; « NDJEM DU NORD », ethnie « Ndjem & Pygmées », 706 ; puis, avec des guillemets de répétition sous « Ndjem & » et sous « Pygmées », « DZIMOU DE L'EST » (2 023), « DZIMOU DU SUD » (2 429), « DZIMOU DU CENT. » (1 983) et un second « DZIMOU DU SUD » (1 629). District de Ngoïla : « NDJEM DU SUD », ethnie « Ndem & Pygmées », 1 732. En tout, 12 204 habitants dans ces huit cantons ; le tableau donne 11 178 habitants pour l'arrondissement de Lomié, ville de Lomié non comprise, district de Ngoïla compris."
               }
             ]
           }
@@ -128,7 +128,7 @@
       "spellingAliases": ["Ndjem", "Ndzem", "Njyem", "Djem", "Dzem", "Nyem"],
       "originOfExonyms": null,
       "whyProblematic": null,
-      "contemporaryUsage": "En 1964-1967, le nom Ndjem désigne l'ethnie principale de quatre cantons du département du Haut-Nyong, autour de Lomié, de Ngoïla et d'Abong-Mbang, selon le dictionnaire des villages de l'ORSTOM. Les catalogues de langues nomment leur langue le njyem, parlée au Cameroun et en république du Congo.",
+      "contemporaryUsage": "En 1964-1967, le nom Ndjem désigne l'ethnie principale de huit cantons du département du Haut-Nyong, autour d'Abong-Mbang, de Lomié et de Ngoïla, selon le dictionnaire des villages de l'ORSTOM. Dans six de ces cantons, le tableau cite les « Pygmées » à côté des Ndjem. Les catalogues de langues nomment leur langue le njyem, parlée au Cameroun et en république du Congo.",
       "peopleGroupId": null,
       "peopleGroupLabel": null
     },
@@ -138,7 +138,7 @@
       "formationPeriod": null,
       "migrationRoutes": [],
       "historicalSettlementZones": [
-        "Département du Haut-Nyong, dans le sud-est du Cameroun : arrondissement de Lomié, district de Ngoïla et un canton de l'arrondissement d'Abong-Mbang"
+        "Département du Haut-Nyong, dans le sud-est du Cameroun : six cantons de l'arrondissement de Lomié, un canton du district de Ngoïla et un canton de l'arrondissement d'Abong-Mbang"
       ],
       "unificationsOrDivisions": null,
       "externalInfluences": null,
@@ -176,7 +176,7 @@
     "demography": {
       "totalPopulation": null,
       "referenceYear": 2025,
-      "source": "Aucune source lue ne donne le nombre des Njem aujourd'hui. Le dictionnaire des villages du Haut-Nyong (ORSTOM, 1968) compte 4 140 habitants dans les quatre cantons dont les Ndjem sont l'ethnie principale, au recensement de 1964-1965 à Lomié et de 1966-1967 ailleurs ; ce chiffre compte tous les habitants de ces cantons.",
+      "source": "Aucune source lue ne donne le nombre des Njem aujourd'hui. Le dictionnaire des villages du Haut-Nyong (ORSTOM, 1968) compte 12 204 habitants dans les huit cantons dont les Ndjem sont l'ethnie principale, seuls ou avec les « Pygmées ». Le recensement date de 1966-1967 à Abong-Mbang et de 1964-1965 à Lomié et à Ngoïla. Ce chiffre compte tous les habitants de ces cantons.",
       "distributionByCountry": [
         {
           "country": "CMR",

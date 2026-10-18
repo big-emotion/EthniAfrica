@@ -118,8 +118,8 @@ hand. The operator ruled to keep them and to check each one orally.
 ## Waves 24 and 25 of the long tail — ruled 2026-10-18
 
 The operator approved on 2026-10-18 the recommendation to add these names
-to the oral check. Winye is kept as self-given on an insider's use; the
-other three are not written as self-names, because no source we opened lets
+to the oral check. Winye is kept as self-given on an insider's use; Baka
+and Bedzan are not written as self-names, because no source we opened lets
 the people say them for themselves.
 
 | Fiche                     | Name   | What the source gives, and what is missing                                                                                                                                                         |
@@ -127,7 +127,6 @@ the people say them for themselves.
 | `PPL_WIYANA`              | Winye  | the close form in the title of a 1983 thesis by a scholar from the people (Damoué, « Les Winiens-Winien ma », read in Jacob 2007, pp. 24 and 252); a source in which the people name themselves so |
 | `PPL_PYGMEES_AUTOCHTONES` | Baka   | nothing: the fiche's own field says the Baka call themselves Baka or Bayaka, and the name history does not carry it; a source stating it                                                           |
 | `PPL_PYGMEES_AUTOCHTONES` | Bedzan | same, for Bedzan or Medzan                                                                                                                                                                         |
-| `PPL_JARAWA`              | Zhar   | Blench's _Atlas of Nigerian Languages_ (2020, p. 48) gives Zhar as the speakers' own name for the Bankal language, and no own name for the people; a source naming the people                      |
 
 ## Related case: Bilād Ṣinqīṭ (`MRT`)
 
