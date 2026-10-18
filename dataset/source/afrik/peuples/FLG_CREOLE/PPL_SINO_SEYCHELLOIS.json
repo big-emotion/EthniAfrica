@@ -87,7 +87,8 @@
       {
         "title": "Orient and Ocean: The Chinese Community in Seychelles – Dennis Hardy et Wang Dongxia, Seychelles Research Journal Vol. 4, No. 2, 2022",
         "url": "https://seychellesresearchjournal.com/wp-content/uploads/2022/07/orient_and_ocean-the_chinese_community_in_seychelles-dennis_hardy_and_wang_dongxia-srj-4-2.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Han Chinese, Mandarin in Seychelles – Joshua Project, 2024",
@@ -105,6 +106,174 @@
         "title": "The Chinese in Seychelles Facts and Origins – My China Roots",
         "url": "https://www.mychinaroots.com/places/685204/seychelles",
         "tier": "unverified"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Sino-Seychellois désigne les Seychellois dont les ancêtres sont venus de Chine. Ils se disent Seychellois, d'origine chinoise, et leur association porte depuis 1943 le nom de Chinese Association. On ne sait pas avec certitude depuis quand le nom Sino-Seychellois est en usage ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Seychellois",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les habitants de l'archipel, quelle que soit leur origine.",
+        "usedIn": ["fra", "eng"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2026,
+              "to": 2026,
+              "label": "2026"
+            },
+            "era": "modern",
+            "statement": "Le nom Seychellois est celui que revendique la communauté : pour ses 125 ans, la Chinese Association of Seychelles veut célébrer l'esprit de communauté des « Seychellois d'origine chinoise » et leur sentiment d'appartenir à toute la société seychelloise, selon un article du Seychelles Nation.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Celebrating 125 years of heritage, community and belonging",
+                "author": "Seychelles Nation (article communiqué)",
+                "year": 2026,
+                "url": "https://nation.sc/articles/31627/celebrating-125-years-of-heritage-community-and-belonging",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article du quotidien Seychelles Nation daté du 24 juillet 2026, signé « Contributed », qui présente le programme du 125e anniversaire de la Chinese Association of Seychelles. Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Seychellois est celui que se donnent les habitants de l'archipel, quelle que soit leur origine : « nous nous disons LE peuple seychellois », écrit l'historien Tony Mathiot pour le Musée national d'histoire.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "We, the people of Seychelles…",
+                "author": "Tony Mathiot, pour le Musée national d'histoire",
+                "year": 2022,
+                "url": "https://www.nation.sc/articles/15689/we-the-people-of-seychelles",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Chronique publiée dans le quotidien Seychelles Nation, datée du 5 novembre 2022 sur la page lue le 18 octobre 2026. Elle cite en français le journal de Mgr Symphorien Mouard, vicaire apostolique des Seychelles, écrit en 1886."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Chinois",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Le nom que porte l'association de la communauté depuis 1943.",
+        "usedIn": ["fra", "eng"],
+        "periodLabel": "Depuis 1943 dans le nom de l'association ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Chinois sert à nommer la communauté chinoise des Seychelles, qui n'a jamais dépassé 1 % de la population, selon Dennis Hardy et Wang Dongxia. Ses familles anciennes viennent surtout du Guangdong ; Cantonais et Hakkas s'y sont longtemps tenus à part, les premiers au centre de Victoria, les seconds à Mont Fleuri.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Orient and Ocean: The Chinese Community in Seychelles – Dennis Hardy et Wang Dongxia, Seychelles Research Journal Vol. 4, No. 2, 2022",
+                "author": "Dennis Hardy et Wang Dongxia",
+                "year": 2022,
+                "url": "https://seychellesresearchjournal.com/wp-content/uploads/2022/07/orient_and_ocean-the_chinese_community_in_seychelles-dennis_hardy_and_wang_dongxia-srj-4-2.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Seychelles Research Journal, vol. 4, n° 2, août 2022, p. 70-75. Les auteurs ont mené vingt-cinq entretiens dans la communauté. Lu dans le PDF de la revue le 18 octobre 2026.",
+                "page": "p. 70 et p. 72"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1943,
+              "to": 1943,
+              "label": "1943"
+            },
+            "era": "colonial",
+            "statement": "Le nom Chinois entre dans le nom que se donne l'association de la communauté : la société d'entraide Khum Fock Fooy Qoon, qui avait reçu sa charte le 16 septembre 1901, devient en 1943 la Chinese Association and Union of Seychelles, aujourd'hui Chinese Association of Seychelles, selon un article du Seychelles Nation.",
+            "sources": [
+              {
+                "title": "Celebrating 125 years of heritage, community and belonging",
+                "author": "Seychelles Nation (article communiqué)",
+                "year": 2026,
+                "url": "https://nation.sc/articles/31627/celebrating-125-years-of-heritage-community-and-belonging",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article du quotidien Seychelles Nation daté du 24 juillet 2026, signé « Contributed », qui présente le programme du 125e anniversaire de la Chinese Association of Seychelles. Lu le 18 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sino-Seychellois",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom des Seychellois d'ascendance chinoise ; on ne sait pas depuis quand il est en usage.",
+        "usedIn": ["fra", "eng"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Sino-Seychellois figure, suivi d'un point d'interrogation, dans un article de l'historien Tony Mathiot pour le Musée national d'histoire : après avoir compté les familles indiennes et chinoises de 1960, il écrit « Indo-Seychellois ? Sino-Seychellois ? ». Il conclut que les habitants de l'archipel se disent « LE peuple seychellois ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "We, the people of Seychelles…",
+                "author": "Tony Mathiot, pour le Musée national d'histoire",
+                "year": 2022,
+                "url": "https://www.nation.sc/articles/15689/we-the-people-of-seychelles",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Chronique publiée dans le quotidien Seychelles Nation, datée du 5 novembre 2022 sur la page lue le 18 octobre 2026. Elle cite en français le journal de Mgr Symphorien Mouard, vicaire apostolique des Seychelles, écrit en 1886."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1863,
+              "to": 1863,
+              "label": "1863"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sino-Seychellois n'apparaît pas encore dans les sources que nous avons lues quand le premier habitant d'ascendance chinoise est enregistré aux Seychelles, en 1863, selon Dennis Hardy et Wang Dongxia. Une vingtaine d'années plus tard, un groupe de vingt-trois personnes débarque à Victoria, venu de Maurice.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Orient and Ocean: The Chinese Community in Seychelles – Dennis Hardy et Wang Dongxia, Seychelles Research Journal Vol. 4, No. 2, 2022",
+                "author": "Dennis Hardy et Wang Dongxia",
+                "year": 2022,
+                "url": "https://seychellesresearchjournal.com/wp-content/uploads/2022/07/orient_and_ocean-the_chinese_community_in_seychelles-dennis_hardy_and_wang_dongxia-srj-4-2.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Seychelles Research Journal, vol. 4, n° 2, août 2022, p. 70-75. Les auteurs ont mené vingt-cinq entretiens dans la communauté. Lu dans le PDF de la revue le 18 octobre 2026.",
+                "page": "p. 71"
+              }
+            ]
+          }
+        ]
       }
     ]
   }
