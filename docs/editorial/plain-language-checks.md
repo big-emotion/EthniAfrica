@@ -68,6 +68,18 @@ identifiable: use an explicit quoted field or block, not a blanket word exceptio
 See `scripts/lib/plainLanguage.ts` for the exact fields. New public storage paths
 or field conventions need a failing extraction test before extending coverage.
 
+Missing French accents are a separate, mechanical check in
+`scripts/validateAfrikData.ts` (`checkUnaccentedFrenchProse`, 2026-10-18). Older
+fiches were written without accents, and Vale does not see « siecle » as a fault.
+The check uses a fixed list of words that are French only once accented
+(« siècle », « région », « Sénégal »…). It reads the name history, the summary,
+history and culture, but never names, sources, quotations or URLs. A general
+spell-checker would flag African names, which are never corrected. The backlog
+is recorded fiche by fiche in `scripts/data/unaccentedFrenchBaseline.json`. A
+fiche may not rise above its count, and a fix lowers its entry in the same change.
+Restore accents by rereading each sentence, not by search and replace: a word
+such as « fonde » can be a verb or the name of a dish.
+
 This is defense at known authoring and import paths. It cannot prevent every
 future tool or direct database edit from bypassing the process. Do not claim that
 all old content is corrected or that no complex phrase can ever appear again.
