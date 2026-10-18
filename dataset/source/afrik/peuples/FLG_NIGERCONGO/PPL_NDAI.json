@@ -1,7 +1,7 @@
 {
   "id": "PPL_NDAI",
   "nameMain": "Ndai",
-  "languageFamilyId": "FLG_SOUDANIQUECENTRAL",
+  "languageFamilyId": "FLG_NIGERCONGO",
   "currentCountries": ["CMR"],
   "classificationStatus": "contested",
   "content": {
@@ -12,7 +12,7 @@
       "originOfExonyms": "Ndai viendrait du mot de la langue pour 'vache' (Bos taurus). Cette explication souligne l'importance de l'élevage bovin dans la culture du groupe. Les répertoires de langues Ethnologue et Glottolog donnent aussi les noms Galke et Pormi. Les communautés voisines et les chercheurs emploient ces noms.",
       "whyProblematic": "Le groupe Ndai est extrêmement peu documenté en raison de son très faible nombre de locuteurs (5 selon le recensement de 2002, tous de plus de 50 ans, plus deux locuteurs partiels). La langue est classée en voie d'extinction critique. L'appartenance au phylum Niger-Congo est marquée d'un point d'interrogation dans les classifications linguistiques (Wikipedia, Glottolog). Le groupe est souvent confondu avec d'autres petites communautés de la région de Tcholliré.",
       "contemporaryUsage": "Le terme Ndai est peu utilisé en dehors des cercles linguistiques et anthropologiques. Les descendants s'identifient probablement en premier lieu à leur communauté locale ou régionale (Mayo-Rey, Cameroun septentrional). Avec la quasi-disparition de la langue, l'identité ethnique distincte Ndai est en voie d'assimilation dans les groupes voisins.",
-      "linguisticFamily": "FLG_SOUDANIQUECENTRAL",
+      "linguisticFamily": "FLG_NIGERCONGO",
       "ethnoLinguisticGroup": "Branche Mbum des langues Niger-Congo (classement provisoire ; appartenance incertaine au phylum Niger-Congo)",
       "historicalRegion": "Environs de Tcholliré, commune de Tcholliré, département Mayo-Rey, Région Nord du Cameroun",
       "currentCountries": ["CMR"]

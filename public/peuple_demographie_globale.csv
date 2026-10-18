@@ -589,7 +589,7 @@ PPL_NANKANA,Nankana,FLG_NIGERCONGO,250000,1,N/A,250000,2025,"Estimations basées
 PPL_NANUMBA,Nanumba,FLG_NIGERCONGO,0,2,N/A,0,2025,N/A
 PPL_NAO,Nao,FLG_COUCHITIQUE,0,2,N/A,0,2025,N/A
 PPL_NCHUMURU,Nchumuru,FLG_NIGERCONGO,0,2,N/A,0,2025,N/A
-PPL_NDAI,Ndai,FLG_SOUDANIQUECENTRAL,75000,1,N/A,75000,2025,"Estimations basées sur recensements soudanais, SIL Ethnologue, et études démographiques"
+PPL_NDAI,Ndai,FLG_NIGERCONGO,75000,1,N/A,75000,2025,"Estimations basées sur recensements soudanais, SIL Ethnologue, et études démographiques"
 PPL_NDAMBA,Ndamba,FLG_BANTU,0,2,N/A,0,2025,N/A
 PPL_NDAU,Ndau,FLG_NIGERCONGO,1750000,1,N/A,1750000,2025,"Estimations basées sur recensements, SIL Ethnologue, et études démographiques"
 PPL_NDAU_MOZ,Ndau (Mozambique),FLG_NIGERCONGO,1150000,1,N/A,1150000,2025,"Estimations basées sur recensements, SIL Ethnologue, et études démographiques"
@@ -848,7 +848,7 @@ PPL_YAO_MOZ,Yao (Mozambique),FLG_NIGERCONGO,650000,1,N/A,650000,2025,"Estimation
 PPL_YEM,Yem,FLG_COUCHITIQUE,0,2,N/A,0,2025,N/A
 PPL_YERIMA,Yerima,FLG_SAHARIEN,75000,1,N/A,75000,2025,"Estimations basées sur recensements tchadiens, SIL Ethnologue, et études démographiques"
 PPL_YEYI,Yeyi,FLG_BANTU,30000,1,N/A,30000,2025,N/A
-PPL_YOHOURE,Yohouré,FLG_BENOUECONGO,0,2,N/A,0,2025,N/A
+PPL_YOHOURE,Yohouré,FLG_MANDE,0,2,N/A,0,2025,N/A
 PPL_YOMBE,Yombe,FLG_NIGERCONGO,1250000,1,RDC,1250000,2025,"Estimations basées sur recensements, SIL Ethnologue, et études démographiques"
 PPL_YORUBA,PPL_ANAGO,Yoruba / Nago,FLG_BENOUECONGO,1680000,1,N/A,1680000,2025
 PPL_YORUBA,Yoruba,FLG_BENOUECONGO,50741000,1,N/A,50741000,2025,"peuple_demographie_globale.csv, estimations basées sur recensements, SIL Ethnologue, études démographiques, Yoruba Diaspora Studies"
