@@ -578,10 +578,10 @@ lower-case class prefix:
 
 Pull request #1861 was merged into recette (7ed4bc738) before the fix to that
 second finding reached it, so migration 111 is applied with the class prefix
-capped at four letters. An applied migration is never edited. Migration 112
-re-issues `afrik_search_leads` with the same signature and grants; its body is
-111's, but for the cap, which is now eight letters. Migration 111 stays as it
-was applied.
+capped at four letters. An applied migration is never edited. Migration 112,
+in pull request #1864, re-issues `afrik_search_leads` with the same signature
+and grants; its body is 111's, but for the cap, which is now eight letters.
+Migration 111 stays as it was applied.
 
 The rule (decision 5; migration 111, with the class prefix of migration 112):
 
@@ -1168,4 +1168,5 @@ brief 16 section of `Main`, as they stand in this repository.
 - The people branch's one-name rule, as set under « Tenth review », is not in
   the code #1835 merged: recette runs migration 110 as merged with #1835
   (head db5583eed). Migration 111 carries the rule, in pull request #1861
-  (ETNI-2092), and migration 112 widens its class prefix to eight letters.
+  (ETNI-2092), and migration 112 widens its class prefix to eight letters, in
+  pull request #1864.

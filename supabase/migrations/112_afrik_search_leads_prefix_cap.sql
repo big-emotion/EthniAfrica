@@ -2,12 +2,12 @@
 -- name (REQ-125, DEC-075; ETNI-2092, brief 16)
 --
 -- Why a new migration: 111 is applied on recette (merged with #1861, commit
--- 7ed4bc738) and an applied migration is never edited. This one re-issues
--- `afrik_search_leads` with the same signature, the same grants, the same
--- SECURITY INVOKER posture and the same search_path. Its body is 111's, line
--- for line, but for one number: q.one_name admits a lower-case class prefix
--- of one to eight letters before the stem's capital, where 111 admitted one
--- to four. 111 stays as it was applied.
+-- 7ed4bc738) and an applied migration is never edited. This one, in pull
+-- request #1864, re-issues `afrik_search_leads` with the same signature, the
+-- same grants, the same SECURITY INVOKER posture and the same search_path.
+-- Its body is 111's, line for line, but for one number: q.one_name admits a
+-- lower-case class prefix of one to eight letters before the stem's capital,
+-- where 111 admitted one to four. 111 stays as it was applied.
 --
 -- What 111 got wrong (the second review of pull request #1861). Its cap of
 -- four letters dropped abakwaManala (PPL_NDEBELE_MANALA) and abakwaNdzundza
