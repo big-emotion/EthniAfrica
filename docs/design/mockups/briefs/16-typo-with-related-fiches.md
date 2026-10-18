@@ -8,7 +8,8 @@ doctrine, accessibility) rejected the first drawing; a second review rejected
 the redrawing; a third review rejected two points of the third drawing, and
 this is the fourth, with the corrections of a fourth, a fifth, a sixth, a
 seventh and an eighth review (see « Second review » to « Eighth review »
-below).
+below). A ninth and a tenth review set what a people lead is scored on;
+« Tenth review » records both, and migration 111 carries them.
 Status: **approved by the operator on 2026-10-18** (see « Approval record »).
 Pull request #1835 (ETNI-2092) was merged into recette the same day
 (04323b678), before this record was written.
@@ -169,7 +170,9 @@ and keeps the approval of the boards.
    no line, no « ressemble ». The filed name is always scored, slash included
    (« Baganda / Ganda »), but never stands in for a piece that scored: the
    page would say that a name resembles the query when that name did not
-   score. Only a
+   score. What a people and a family name are scored on is now the rule
+   under « Tenth review » (migration 111), which replaces the sentences
+   above on cutting and on the filed name. Only a
    family-name lead is said to be written almost the same way: it begins with
    the query's first letter and its named form scores 0.4 at least, so the
    claim is true of what the chip says. One choice: « Tchicaya s’écrit presque de la même
@@ -494,7 +497,9 @@ they do not change.
   `familyNameLeads.test.ts` holds the six queries and, over every form of
   every people fiche, that a chip is the filed name or a form that is one
   name and scores the floor itself; the contract test of migration 110 holds
-  the filter and that nothing else of 094 changes.
+  the filter and that nothing else of 094 changes. The tenth review replaced
+  this list of marks with a positive rule (« Tenth review »): « abagenda »,
+  « mukongu » and the filed name now read as written there.
 - **« aussi » ranked the name a people gives itself after its filed name**
   (doctrine §1 and §1.1). « La fiche Diola donne aussi le nom Ajamataw. »
   made Ajamataw, the name the Diola give themselves, an add-on to Diola, a
@@ -504,6 +509,142 @@ they do not change.
   donne le nom Ajamataw. » (`typoFormOf` in
   `src/lib/i18n/copy/searchFeed.ts`, the `Main` swatch « jarra » and its
   note, decision 5, « States to draw » and the drafts below).
+
+## Tenth review (2026-10-18)
+
+Two reviews of what a people lead is scored on came after #1835 merged.
+Migration 110 was by then applied on recette, so their rule is carried by a
+new migration, 111, which re-issues `afrik_search_leads` with the same
+signature and grants. Migration 110 stays as it was applied. The three boards
+and `Main` draw none of the queries concerned, and no line they draw changes.
+
+The ninth review found that the eighth review's list of marks failed both
+ways (doctrine §1 and §1.1, decision 5):
+
+- **It dropped clean self-names joined by a slash**, while the filed name was
+  always scored: « Izon / Ijo », « Bakongo (pluriel) / Mukongo
+  (singulier) », « Bidhaawyeet / Tubdhaawi ». The filed name was ranked above
+  the name a people gives itself; « mukongu » offered Tongu, never Kongo.
+- **It still scored lists and prose with no mark.** Exonyms were not cut, so
+  « Diula, Djula, Doula, Dualas, Dyoula, Dyulanke » became a chip, and
+  « bathilly » reached the Dioula fiche through « suivant Abdoulaye
+  Bathily », a historian's name.
+
+Its fix, a positive rule, was drafted on a branch that never merged. The
+tenth review found two doctrine faults in that draft:
+
+- **It cut at every slash.** A slash inside a word writes a click: « Hai//om »
+  gave Hai, « Zhu/'hoasi » Zhu, « G//ana » G. For « zhuhoasi » the page would
+  have said « La fiche Ju|'hoansi donne le nom Zhu. », and no fiche gives that
+  name.
+- **It wanted an upper-case first letter.** That dropped the names peoples
+  give themselves in clicks (ǂHoan, Ju|'hoansi, ǃXoon, ǂNūkhoen) and with a
+  class prefix (amaXhosa, vaKavango). The ǂHoan and the Ju|'hoansi kept only
+  exonyms, among them « Dobe Bushmen ».
+
+The rule (decision 5; migration 111):
+
+1. Each name field of a people, its filed name, its self-appellation and each
+   exonym, is cut into pieces at « , », « ; », the word « ou », and a slash
+   only when it stands between spaces (« Baganda / Ganda »). A slash inside a
+   word is part of a click spelling (« Hai//om », « Zhu/'hoasi », « G//ana »)
+   and never cuts. Separators inside a bracket never cut, and each piece
+   loses its trailing bracket.
+2. A piece is one name when, trimmed, it has at most three words and holds
+   only letters of any script with their combining marks, hyphens,
+   apostrophes (' ’), spaces, and the click marks ! | ǀ ǁ ǂ ǃ = / at the start
+   of a word or inside it; and when its first word starts with an upper-case
+   letter, a letter that has no case (ǂ ǁ ǃ ǀ), a click mark followed by a
+   letter (« !Kung », « =|Hoa »), or a lower-case class prefix of one to four
+   letters directly followed by an upper-case letter (« amaXhosa »,
+   « isiNdebele », « vaKaranga »). Anything else, a lower-case word on its
+   own, digits, « pl. », « = » standing alone, guillemets or prose, is not a
+   name and is never scored.
+3. Only the pieces that are one name are scored. `matched_form` is the piece
+   that scored best, and the chip and the line name it. A filed name that did
+   not itself score as a piece never stands in for one.
+4. A family name keeps its filed name as filed, and each recorded spelling is
+   scored only when it passes the same test (« da Costa » does not).
+
+In migration 111 the combining marks are the accents U+0300 to U+036F, and a
+word ends on a letter, an apostrophe or a hyphen, never on a click mark. The
+rule replaces what decision 5, « States to draw » (« No lead through a form
+that is not one name ») and the REQ-125 and DEC-075 drafts below say a people
+or a family name is scored on. Where they disagree, this section holds.
+
+What it changes, measured with the model of `corpusNameModel.ts` over the 659
+people fiches, against migration 110 as recette runs it:
+
+- **Scored forms.** 3,664 pairs of a fiche and a form instead of 3,428: 306
+  pieces gained in 158 fiches, 70 forms lost in 48. Ten gained: Mukongo
+  (Kongo), Izon and Ijo (Ijaw), Bidhaawyeet (Beja), Dyulanke (Dioula),
+  Abahutu (Rwandais, Hutu), Hai//om (Haiǁom), Zhu/'hoasi (Ju|'hoansi),
+  Nǀhuki (Nǀuu), ʼNǀohan (Taa), vaKavango (Kavango). The 70 lost are 14
+  joined strings now scored piece by piece (« Baganda / Ganda », « Diula,
+  Djula, Doula, Dualas, Dyoula, Dyulanke »); 13 names of other peoples read
+  from inside a bracket of a group fiche (Wolof and Sereer for Peuples
+  atlantiques, Bété and Grebo for Krou); 38 pieces of prose or glosses
+  (« suivant Abdoulaye Bathily », « les Iboko », « rivage », « Gens de la
+  foret »); and 5 that fail the rule's letter (« a-liyan », « Ju–ǂHoan »
+  written with a dash, « Reer Hamar Gibil Madow », and the filed names
+  « Ndebele d'Afrique du Sud » and « Peuples autochtones des forêts
+  d'Afrique centrale »). Every people fiche keeps a scored piece of its filed
+  name or of its self-appellation.
+- **Leads.** Over the 3,510 forms of both versions, each typed as written,
+  the three rows the function returns gain 526 leads and lose 506. Of the
+  506, 371 are only pushed out by a stronger lead the rule now scores; 285
+  leads keep their fiche under another chip. Ten gained: « Gouran » → Kreda
+  through Gourane (0.67), « Batswa » → Sotho-Tswana through Batswana
+  (0.60), « Icenwiyen » → Chaoui through Icawiyen (0.46), « Tongwe » →
+  Ronga through Tonga (0.44), « Zarma-Songhai » → Songhay Nigérien through
+  Songhaiborai (0.42), « Amatabele » → Ndebele du Sud (Manala) through
+  AmaNdebele (0.40), « Oromoo » → Arsi through Arsi Oromo (0.38),
+  « Baluyia » → Luba (Kasai) through Baluba (0.36), « Krio » → Crioulo de
+  Guinée-Bissau through Kriyol (0.33), « Baga-Koga » → Baganda through
+  Baganda (0.31). Ten lost: « Seereer » → Peuples atlantiques through Sereer
+  (0.75), « Wollof » → Peuples atlantiques through Wolof (0.63), « Bush
+  Grebo » → Krou through Grebo (0.55), « Bambete » → Krou through Bété
+  (0.44), « Ju|'hoansi » and « ǂHoan » → Peuples Kx'a through « Ju–ǂHoan »
+  (0.64, 0.63), « Central Kalahari Bushmen » → Peuples Kx'a through
+  « Bushmen du Kalahari septentrional » (0.51), « Amazigh » → Nafusi through
+  « Amazigh du Djebel Nafusa » (0.33), « Tigrayens » → Irob through « Saho
+  chrétiens du Tigray » (0.30), « Ibo » → Ngala through « les Iboko »
+  (0.27).
+- **The reviews' words.** « mukongu » gives Kongo through Mukongo (0.60),
+  « dyoulanke » Dioula through Dyulanke (0.58), « zhuhoasi » Ju|'hoansi
+  through Zhu/'hoasi (0.58), « juhoansi » Ju|'hoansi (0.58); « bathilly » no
+  longer reaches Dioula. No chip is Hai, om, Zhu or G. « pakhalas » keeps
+  Koulango through Pakhallas (0.73) and also offers Dioula through Dualas
+  (0.23). « abagenda » never goes through « pl. Abaganda) »: its third row is
+  now Bugakwe through « /anda » (0.27), a click spelling that fiche records,
+  and Baganda scores 0.21 through Baganda, below. « akokolemou » offers no
+  Kumam; it now offers Bakossi through Akose (0.21). « jarra », « icumama »
+  and « ajumataw » keep their leads and their lines.
+
+How it was checked. `familyNameLeads.test.ts` holds the words above and,
+over every name field of every people fiche, three things: every form a lead
+can be named by is one name, by a check written letter by letter apart from
+the model's pattern; every piece that is one name is scored; and every
+people fiche scores a piece of its filed name or of its self-appellation.
+The contract test of migration 111 holds that the SQL applies the model's two
+patterns. Run by PostgreSQL 17's own regular expressions over every people
+name field and recorded spelling, the patterns as written in the migration
+give the model's 5,343 pieces exactly under the en_US.UTF-8, ICU and builtin
+C.UTF-8 collations, and 264 fewer under C. Verification 6 of the migration
+checks the database's character type on recette and on production. The
+model splits a word at ǂ ǁ ǃ ǀ, which PostgreSQL reads as letters, so its
+scores for click names are close, not exact.
+
+What the rule leaves to the data (ETNI-2135). Glosses of three words or fewer
+that open on a capital pass the rule and are scored: « Habitants du
+Burundi », « Gens de l'ile », « Peuples de l'eau », « Gens du Nil », « Gens
+des roseaux », « Les nombreux inséparables », « Munyankole au singulier »,
+« Garifuna au singulier », « Seychellois d'ascendance chinoise », « Omani de
+retour », « Central Sudanic languages », and « Upper Guinea », cut from
+« Crioulo, Upper Guinea ». Two names joined by a slash with no space stay one
+piece: « Gullah/Geechee », « Drawi/Drawa ». And five names fail the rule's
+letter: « a-liyan », « Ju–ǂHoan », « Reer Hamar Gibil Madow » and the two
+long filed names above. Giving each name its own entry fixes all of these.
 
 ## States to draw
 
@@ -537,7 +678,11 @@ Only the first is drawn as a board; the others are held by tests or drawn on
   Baganda (« pl. Abaganda) »), « mukongu » no Kongo (« Bakongo (pluriel) /
   Mukongo »), the same way. Each still offers the peoples it reaches through
   a form that is one name, named by that form. Held by
-  `familyNameLeads.test.ts` and the contract test of migration 110.
+  `familyNameLeads.test.ts` and the contract test of migration 110. Since
+  the tenth review, « akokolemou » still offers no Kumam, but « mukongu »
+  offers Kongo through Mukongo, and « abagenda » reaches Baganda through
+  Baganda below its three rows, never through « pl. Abaganda) » (« Tenth
+  review »; migration 111).
 - **A spelling a fiche writes in its text**: « sanoh », one of the Kuranko
   clans and written in the source of the Sanou fiche. No lead is offered: the
   related-only page, unchanged, until the operator answers the DEC-075
@@ -909,6 +1054,6 @@ brief 16 section of `Main`, as they stand in this repository.
 - REQ-201, DEC-075 and REQ-125: the drafts are published on Confluence as
   Pending amendments. Moving them to Approved stays the operator's, in
   Confluence.
-- The people branch's one-name rule, as last drafted under « Ninth review »,
-  is not in the merged code: recette runs migration 110 as merged with #1835
-  (head db5583eed). A follow-up migration carries the rule.
+- The people branch's one-name rule, as set under « Tenth review », is not in
+  the code #1835 merged: recette runs migration 110 as merged with #1835
+  (head db5583eed). Migration 111 carries the rule (ETNI-2092).

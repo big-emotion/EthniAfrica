@@ -169,8 +169,8 @@ function normalizedQueryId(query: string): string {
 }
 
 /**
- * A lead's label without its trailing bracket, the regexp migration 110
- * scores a people's forms with. 36 people fiches are filed with one
+ * A lead's label without its trailing bracket, the regexp migrations 110 and
+ * 111 score a people's forms with. 36 people fiches are filed with one
  * (« Diola (Joola / Jola) »), and `name` arrives as filed: compared as is
  * with the form that scored, « Diola » read as another name and the page
  * wrote that the fiche Diola (Joola / Jola) also gives the name Diola. The
@@ -186,9 +186,10 @@ function leadLabel(label: string): string {
  * Jara is written almost the same way; where the reader searched, the form
  * nearest to what they typed comes first and leads to the fiche (doctrine
  * §1.1). A database without the migration names no form: the filed name.
- * Migration 110 scores no piece of a phrase (« pl. Abaganda) »), so a people
- * reached only through one is no lead, and no fragment reaches the chip or
- * its line.
+ * Migration 111 scores a people only on the pieces of its name fields that
+ * are one name (« Baganda / Ganda » gives Baganda and Ganda, « Hai//om »
+ * stays whole, « pl. Abaganda) » is never scored), so no fragment reaches
+ * the chip or its line.
  */
 function leadForm(lead: SearchLead): string {
   return leadLabel(lead.matchedForm?.trim() || lead.name);

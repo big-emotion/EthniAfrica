@@ -943,11 +943,13 @@ export interface SearchLead {
   /** The filed name. */
   name: string;
   /**
-   * The form that scored `similarity` (migration 110): a recorded spelling, a
-   * self-appellation or an exonym when it is not the filed name (« jarra »
-   * reaches Diarra through Jara). A people's form that is not one name
-   * (« pl. Abaganda) », cut from a bracket) is not scored, so it is never
-   * this form. Absent from a database without 110.
+   * The form that scored `similarity` (migrations 110 and 111). For a people,
+   * a piece of its filed name, self-appellation or an exonym that is one
+   * name (cut at « , », « ; », « ou » and a slash between spaces, trailing
+   * bracket dropped; « pl. Abaganda) » is never this form). For a family
+   * name, its filed name as filed or a recorded spelling that is one name
+   * (« jarra » reaches Diarra through Jara). For a country or a language
+   * family, its name as filed. Absent from a database without 110.
    */
   matchedForm?: string;
   similarity: number;

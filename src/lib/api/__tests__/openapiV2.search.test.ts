@@ -190,21 +190,36 @@ describe("OpenAPI v2 unified search contract", () => {
     );
   });
 
-  // A lead is offered only under a form that is one name and that itself
-  // scored (brief 16, eighth review): a piece of a phrase is not scored, so
-  // matchedForm is always what `similarity` measures. A client told that a
-  // people falls back to its filed name would print a name that did not
-  // score.
+  // A lead is offered only under a piece that is one name and that itself
+  // scored (brief 16, ninth and tenth reviews): matchedForm is always what
+  // `similarity` measures. « One name » is promised only where migration 111
+  // guarantees it: a people's piece and a family name's recorded spelling. A
+  // family name's filed name (« dos Santos ») and a country or language
+  // family's name are given as filed; a client told « always one name »
+  // would rely on a test those forms never pass.
   // @req REQ-125
-  it("documents that a piece of a phrase is not scored, with no filed-name fallback", () => {
-    const lead = schemas.SearchLeadV2;
+  it("documents per kind which forms are one name, with no filed-name fallback", () => {
+    const description =
+      schemas.SearchLeadV2?.properties?.matchedForm?.description;
 
-    expect(lead?.properties?.matchedForm?.description).toMatch(/not one name/);
-    expect(lead?.properties?.matchedForm?.description).toMatch(/is not scored/);
-    expect(lead?.properties?.matchedForm?.description).not.toMatch(
-      /named by its filed name/
+    expect(description).toMatch(/migrations 110 and 111/);
+    expect(description).toMatch(
+      /For a people, a piece of its filed name, its self-appellation or an exonym that is one name/
     );
-    expect(lead?.properties?.similarity?.description).not.toMatch(/unless/);
+    expect(description).toMatch(/a slash between spaces/);
+    expect(description).toMatch(/click/);
+    expect(description).toMatch(/is never scored/);
+    expect(description).toMatch(
+      /For a family name, its filed name as filed, or a recorded spelling that is one name/
+    );
+    expect(description).toMatch(
+      /For a country or a language family, its name as filed/
+    );
+    expect(description).not.toMatch(/always one name/);
+    expect(description).not.toMatch(/named by its filed name/);
+    expect(
+      schemas.SearchLeadV2?.properties?.similarity?.description
+    ).not.toMatch(/unless/);
   });
 
   // A client that read « always empty when total > 0 » would never show the
