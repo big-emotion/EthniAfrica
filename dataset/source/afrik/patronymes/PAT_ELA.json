@@ -85,5 +85,100 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web combinant « Ela », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », qui comprenait le terme « homonyme », et la lecture de « Culture for the Recognition of Identity: The Case of the Fang Culture of Equatorial Guinea », n'ont pas établi de lignée homonyme d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ela est un nom de personne fang et ewondo, porté en Guinée équatoriale, au Gabon, où il s'écrit aussi Ella, et au Cameroun. Un auteur fang le range parmi les noms dont on ne trouve pas le sens : on ne sait pas avec certitude d'où il vient. Sa plus ancienne trace connue du projet est un récit en ewondo publié en 1919.",
+    "names": [
+      {
+        "nameText": "Ela",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne fang et ewondo, de la Guinée équatoriale au Cameroun ; son sens reste inconnu.",
+        "periodLabel": "Écrit dès 1919 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "Écrit en 2005, cité en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Ela compte parmi les noms fang que Rosendo Ela Nsue Mibui juge originaux : il n'y trouve ni dérivation ni composition qui en donnerait le sens. On ne sait donc pas avec certitude ce qu'il veut dire. Cet auteur est cité par Bonifacio Nguema Obiang-Mikue.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "La cultura para el reconocimiento de la identidad: caso de la cultura fang de Guinea Ecuatorial",
+                "author": "Bonifacio Nguema Obiang-Mikue",
+                "year": 2023,
+                "url": "https://doi.org/10.29166/catedra.v6i1.4282",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 179",
+                "notes": "Article de Revista Cátedra 6(1), 2023, pp. 171-186. Lu le 18 octobre 2026 dans le PDF en espagnol. Page 179 : l'auteur cite Rosendo Ela Nsue Mibui (2005, p. 102), pour qui certains noms fang « parece que son netamente originales y de los que no puede encontrarse posibilidad de derivación o de composición circunstancial como Mbomio (Mbomeyo), Esono, Edú, Elá, Mbá, Abeso, Nguema » ; l'ouvrage de Nsue Mibui n'a pas été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "Publié en 1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ela apparaît par écrit dans des textes en ewondo de Karl Atangana et Paul Messi, publiés en 1919 : un récit parle d'un jeune homme de Yaoundé, Mboo-Mana, « fils d'Esono-Ela ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle vient du Cameroun, chez les Ewondo, voisins des Fang, et le nom est plus ancien qu'elle.",
+            "formAsWritten": "Esono-Ela",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Jaunde-Texte von Karl Atangana und Paul Messi, nebst experimentalphonetischen Untersuchungen über die Tonhöhen im Jaunde und einer Einführung in die Jaundesprache",
+                "author": "Karl Atangana et Paul Messi, textes édités par Martin Heepe",
+                "year": 1919,
+                "url": "https://archive.org/details/jaundetextevonka00heepuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 67 et 317",
+                "notes": "Hambourg, L. Friederichsen, 1919 (Abhandlungen des Hamburgischen Kolonialinstituts, 24) ; exemplaire numérisé d'Internet Archive (université de Toronto), pages lues sur l'image le 18 octobre 2026. Textes en langue jaunde (ewondo) de Karl Atangana et Paul Messi, avec la traduction allemande de l'éditeur en regard. Page 67, récit n° 16 : « Mboomáña mané Ésóné-Ela », traduit « Mboo-mäna, Esone-Ela's Sohn ». Page 317 : « Ein trefflicher Jaundejüngling war Mboo-Mäna, der Sohn des Esono-Ela »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ella",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "shortLine": "Une autre écriture du nom Ela, relevée chez les Fang du Gabon.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ella, une autre écriture de Ela, figure parmi les noms de personnes fang du Gabon que relève le chercheur Fabrice Agyune Ndone. Il ne dit pas ce que ce nom veut dire.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Anthroponymie comparée makina, fang et saké : quelques spécificités sur les noms de personnes chez les Makina du Gabon",
+                "author": "Fabrice Agyune Ndone",
+                "year": 2006,
+                "url": "http://www.ddl.cnrs.fr/fulltext/fflac/Agyune%20Ndone_2006.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5 (tableau n° 1)",
+                "notes": "Article d'un doctorant en anthropologie (université Omar Bongo et université Lumière Lyon 2), non daté, mis en ligne par le laboratoire Dynamique du langage ; il cite des travaux de 2005 et 2006. Lu le 18 octobre 2026 ; les pages sont celles du PDF. Page 5, tableau n° 1 : Ella figure dans la colonne des noms fang. Que Ella soit une autre écriture de Ela est notre lecture : l'article ne le dit pas."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
