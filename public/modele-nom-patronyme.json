@@ -133,6 +133,7 @@
               "label": "<Ce que le lecteur lit — ex: XVIe siècle>"
             },
             "era": "polity",
+            "accountKind": "family",
             "claimStatus": "claimed",
             "carrier": "<Qui transmet le récit, si la source le précise>",
             "collection": "mediated",

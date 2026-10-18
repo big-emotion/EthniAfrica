@@ -105,6 +105,7 @@ const accountSchema = z
         error: `era must be one of ${NAME_HISTORY_ERAS.join(", ")}`,
       })
       .optional(),
+    accountKind: z.enum(["family"]).optional(),
     statement: z.string().trim().min(1),
     claimStatus: z.enum(CLAIM_STATUSES).optional(),
     carrier: z.string().trim().min(1).optional(),
