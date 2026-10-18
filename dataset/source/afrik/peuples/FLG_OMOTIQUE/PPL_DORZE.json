@@ -138,6 +138,29 @@
           },
           {
             "period": {
+              "from": 1994,
+              "to": 1994,
+              "label": "1994"
+            },
+            "era": "modern",
+            "statement": "Le nom Dorze figure dans le recensement éthiopien de 1994 sous la forme Dorzie, celle d'un groupe de 28 990 personnes, compté comme un sous-groupe d'un ensemble plus large. Il n'apparaît plus en 2007 : selon le linguiste Grover Hudson, ce groupe a peut-être été compté avec les Gamo, dont la langue est proche.",
+            "aspect": "usage",
+            "formAsWritten": "Dorzie",
+            "sources": [
+              {
+                "title": "Ethnic Group and Mother Tongue in the Ethiopian Censuses of 1994 and 2007",
+                "author": "Grover Hudson",
+                "year": 2012,
+                "url": "https://journals.sub.uni-hamburg.de/aethiopica/article/view/666",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 206, p. 209, note 9, et p. 212",
+                "notes": "Aethiopica, vol. 15, 2012, p. 204-218. Lu le 18 octobre 2026 dans le PDF de la revue. L'auteur compare les tableaux publiés des recensements éthiopiens de 1994 et de 2007, que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1975,
               "to": 1975,
               "label": "1975"
