@@ -117,6 +117,23 @@ const SUBJECT_FR: Partial<Record<SearchEntityType, string>> = {
   place: "de ce lieu",
 };
 
+/**
+ * What the fiche's names are, as a sentence object. A family name is one
+ * name with several forms, so « les noms de ce nom de famille » would double
+ * the word: it is « ce nom de famille », and its names are « forms ».
+ */
+function namesOf(subject: SearchEntityType): string {
+  return subject === "patronyme"
+    ? "ce nom de famille"
+    : `les noms ${SUBJECT_FR[subject] ?? "de ce sujet"}`;
+}
+
+function otherNamesOf(subject: SearchEntityType): string {
+  if (subject === "patronyme") return "les autres formes de ce nom de famille";
+  const of = SUBJECT_FR[subject];
+  return `les autres noms${of ? ` ${of}` : ""}`;
+}
+
 /** Small counts in words, as a sentence reads them. */
 const COUNT_FR: Record<number, string> = {
   2: "deux",
@@ -146,8 +163,7 @@ export const nameClosingCopy: Record<Language, NameClosingCopy> = {
     undated: "Date inconnue",
     otherVoices: (subject, kinds) => {
       const voices = joinFr(kinds.flatMap((kind) => VOICES_FR[kind] ?? []));
-      const of = SUBJECT_FR[subject];
-      return `Pour les autres noms${of ? ` ${of}` : ""}, d’autres sources existent : ${voices}. Choisissez un nom plus haut pour les lire.`;
+      return `Pour ${otherNamesOf(subject)}, d’autres sources existent : ${voices}. Choisissez un nom plus haut pour les lire.`;
     },
     closingTitle: "Ce que nous ne savons pas encore",
     silence: {
@@ -182,13 +198,17 @@ export const nameClosingCopy: Record<Language, NameClosingCopy> = {
     },
     fiche: {
       sourcesTitle: (subject) =>
-        `Les sources des noms ${SUBJECT_FR[subject] ?? "de ce sujet"}`,
-      sourcesLead: (sources, accounts, _names, subject) =>
-        sources === 1
-          ? `Une seule source explique les noms ${SUBJECT_FR[subject] ?? "de ce sujet"} pour l’instant. Voici ses ${accounts} récits, rangés par nom.`
-          : `Plusieurs sources expliquent les noms ${SUBJECT_FR[subject] ?? "de ce sujet"}. Voici leurs ${accounts} récits, rangés par nom, puis par type de source.`,
+        subject === "patronyme"
+          ? "Les sources de ce nom de famille"
+          : `Les sources des noms ${SUBJECT_FR[subject] ?? "de ce sujet"}`,
+      sourcesLead: (sources, accounts, _names, subject) => {
+        const by = subject === "patronyme" ? "forme" : "nom";
+        return sources === 1
+          ? `Une seule source explique ${namesOf(subject)} pour l’instant. Voici ses ${accounts} récits, rangés par ${by}.`
+          : `Plusieurs sources expliquent ${namesOf(subject)}. Voici leurs ${accounts} récits, rangés par ${by}, puis par type de source.`;
+      },
       noOral: (subject) =>
-        `Aucun récit transmis oralement n’est enregistré pour les noms ${SUBJECT_FR[subject] ?? "de ce sujet"}.`,
+        `Aucun récit transmis oralement n’est enregistré pour ${namesOf(subject)}.`,
       undated: (names) =>
         names.length === 1
           ? `L’origine du nom ${names[0]} n’est pas datée dans le projet pour l’instant.`

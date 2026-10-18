@@ -144,6 +144,28 @@ describe("NameSourcesBlock — the plain title and its sentence", () => {
   });
 });
 
+describe("NameClosing copy — a family name", () => {
+  // A family name is one name with several forms: « les noms de ce nom de
+  // famille » doubles the word (found on the brief 6 boards, 2026-10-18).
+  // @req REQ-198
+  it("speaks of « ce nom de famille », never of « les noms de ce nom de famille »", () => {
+    const copy = nameClosingCopy.fr;
+
+    expect(copy.fiche.sourcesTitle("patronyme")).toBe(
+      "Les sources de ce nom de famille"
+    );
+    expect(copy.fiche.sourcesLead(3, 14, 2, "patronyme")).toBe(
+      "Plusieurs sources expliquent ce nom de famille. Voici leurs 14 récits, rangés par forme, puis par type de source."
+    );
+    expect(copy.fiche.noOral("patronyme")).toBe(
+      "Aucun récit transmis oralement n’est enregistré pour ce nom de famille."
+    );
+    expect(copy.otherVoices("patronyme", ["archive"])).toBe(
+      "Pour les autres formes de ce nom de famille, d’autres sources existent : des archives. Choisissez un nom plus haut pour les lire."
+    );
+  });
+});
+
 describe("NameSourcesBlock — the other names' voices", () => {
   // @req REQ-198
   it("says who else speaks for the subject's other names, as on the Peul board", () => {
