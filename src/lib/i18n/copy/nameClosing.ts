@@ -64,7 +64,8 @@ export interface NameClosingCopy {
       sources: number,
       accounts: number,
       names: number,
-      subject: SearchEntityType
+      subject: SearchEntityType,
+      originExplained?: boolean
     ) => string;
     noOral: (subject: SearchEntityType) => string;
     undated: (names: readonly string[]) => string;
@@ -87,6 +88,11 @@ export interface NameClosingCopy {
       year: number | null,
       title: string
     ) => string;
+    originUnexplained: (name: string) => string;
+    noHomonyms: (name: string) => string;
+    noBearerCount: (name: string) => string;
+    documentedGaps: (fields: readonly string[]) => string;
+    gapWording: Record<string, string>;
   };
 }
 
@@ -205,8 +211,14 @@ export const nameClosingCopy: Record<Language, NameClosingCopy> = {
         subject === "patronyme"
           ? "Les sources de ce nom de famille"
           : `Les sources des noms ${SUBJECT_FR[subject] ?? "de ce sujet"}`,
-      sourcesLead: (sources, accounts, _names, subject) => {
+      sourcesLead: (sources, accounts, _names, subject, originExplained) => {
         const by = subject === "patronyme" ? "forme" : "nom";
+        if (subject === "patronyme" && originExplained === false) {
+          const count = COUNT_FR[sources] ?? String(sources);
+          return sources === 1
+            ? `Une source mentionne ce nom, sans en expliquer l’origine. Voici son récit, rangé par forme, puis par type de source.`
+            : `${count[0].toLocaleUpperCase("fr")}${count.slice(1)} sources mentionnent ce nom, sans en expliquer l’origine. Voici leurs ${accounts} récits, rangés par forme, puis par type de source.`;
+        }
         return sources === 1
           ? `Une seule source explique ${namesOf(subject)} pour l’instant. Voici ses ${accounts} récits, rangés par ${by}.`
           : `Plusieurs sources expliquent ${namesOf(subject)}. Voici leurs ${accounts} récits, rangés par ${by}, puis par type de source.`;
@@ -233,6 +245,21 @@ export const nameClosingCopy: Record<Language, NameClosingCopy> = {
         `rapporté par ${author}${year ? `, ${year}` : ""}, « ${title} »`,
       traditionsReportedBy: (author, year, title) =>
         `rapportées par ${author}${year ? `, ${year}` : ""}, « ${title} »`,
+      originUnexplained: (name) =>
+        `Aucune source n’explique l’origine du nom ${name}.`,
+      noHomonyms: (name) => `Aucun homonyme du nom ${name} n’est documenté.`,
+      noBearerCount: (name) =>
+        `Le nombre de personnes qui portent le nom ${name} n’est pas connu du projet.`,
+      documentedGaps: (fields) =>
+        `Le projet ne documente pas encore ${joinFr(fields)}.`,
+      gapWording: {
+        origin: "l’origine de ce nom",
+        alliances: "les noms qui lui sont liés",
+        casteOrSocialFunction: "sa fonction sociale",
+        transmissionMode: "son mode de transmission",
+        homonyms: "les autres noms de même forme",
+        bearers: "le nombre de personnes qui le portent",
+      },
     },
   },
 };

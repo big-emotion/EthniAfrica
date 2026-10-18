@@ -18,6 +18,7 @@ export interface FicheStoryLinkProps {
   /** The kind of fiche the reader leaves, recorded with the click. */
   from: FicheEntityType;
   language: Language;
+  familyName?: boolean;
 }
 
 /**
@@ -35,7 +36,12 @@ export interface FicheStoryLinkProps {
  */
 // @req REQ-198
 // @req REQ-046
-export function FicheStoryLink({ story, from, language }: FicheStoryLinkProps) {
+export function FicheStoryLink({
+  story,
+  from,
+  language,
+  familyName = false,
+}: FicheStoryLinkProps) {
   if (!story) return null;
 
   const copy = ficheNameStoryCopy[language];
@@ -49,9 +55,13 @@ export function FicheStoryLink({ story, from, language }: FicheStoryLinkProps) {
           trackEvent("fiche:related_click", { from, to: "name_story" })
         }
       >
-        {copy.storyLink(story.name)}
+        {familyName
+          ? copy.familyNameStoryLink(story.name)
+          : copy.storyLink(story.name)}
       </ActionLink>
-      <p className="ea-story-hint">{copy.storyLinkHint}</p>
+      <p className="ea-story-hint">
+        {familyName ? copy.familyNameStoryHint : copy.storyLinkHint}
+      </p>
     </div>
   );
 }

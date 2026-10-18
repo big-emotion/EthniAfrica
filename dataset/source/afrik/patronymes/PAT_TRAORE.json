@@ -325,6 +325,15 @@
     "names": [
       {
         "nameText": "Traoré",
+        "equivalents": [
+          "Sane",
+          "Mane",
+          "Ouédraogo",
+          "Dembélé",
+          "Diouf",
+          "Touré à Ségou",
+          "Diop en pays wolof"
+        ],
         "nameStatus": "current",
         "selfGiven": true,
         "languageOfOrigin": null,

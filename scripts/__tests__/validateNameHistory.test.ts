@@ -241,12 +241,18 @@ describe("the models declare the shared block", () => {
   );
 
   // @req REQ-196
-  it("gives every model the identical nameHistory example", () => {
-    const examples = MODELS.map((model) =>
-      JSON.stringify(readJson(join(PUBLIC_ROOT, model)).nameHistory)
+  it("keeps each model's shared nameHistory example in parity", () => {
+    const examples = MODELS.map(
+      (model) => readJson(join(PUBLIC_ROOT, model)).nameHistory
     );
+    const sharedFields = examples.map((example) => {
+      const shared = structuredClone(example);
+      delete shared.originExplained;
+      for (const name of shared.names) delete name.equivalents;
+      return JSON.stringify(shared);
+    });
 
-    expect(new Set(examples).size).toBe(1);
+    expect(new Set(sharedFields).size).toBe(1);
   });
 });
 
@@ -292,7 +298,10 @@ describe("the per-class parsers accept the block", () => {
 
     const parsed = parsePlaceFile({ ...real, nameHistory: VALID_BLOCK });
     expect(parsed.success).toBe(true);
-    expect(parsed.data?.nameHistory).toEqual(VALID_BLOCK);
+    expect(parsed.data?.nameHistory).toEqual({
+      ...VALID_BLOCK,
+      originExplained: true,
+    });
     expect(
       parsePlaceFile({ ...real, nameHistory: { summary: "" } }).success
     ).toBe(false);

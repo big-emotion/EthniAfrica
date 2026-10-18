@@ -3,6 +3,7 @@ import { describe, expect, it, vi } from "vitest";
 
 import {
   NameClosingBand,
+  NameFicheSourcesBlock,
   NameNextStep,
   NameSourcesBlock,
 } from "@/components/search/timeline/NameClosing";
@@ -141,6 +142,23 @@ describe("NameSourcesBlock — the plain title and its sentence", () => {
     expect(copy.fiche.sourcesLead(3, 5, 2, "people")).toBe(
       "Plusieurs sources expliquent les noms de ce peuple. Voici leurs 5 récits, rangés par nom, puis par type de source."
     );
+  });
+
+  // @req REQ-198
+  it("says when sources mention a family name without explaining it", () => {
+    render(
+      <NameFicheSourcesBlock
+        history={{ ...PEUL_HISTORY, originExplained: false }}
+        subjectType="patronyme"
+        language="fr"
+      />
+    );
+
+    expect(
+      screen.getByText(
+        /sources mentionnent ce nom, sans en expliquer l’origine/
+      )
+    ).toBeInTheDocument();
   });
 });
 

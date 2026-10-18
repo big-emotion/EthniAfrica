@@ -187,6 +187,7 @@ const nameSchema = z
     // Another spelling of a name rather than a name of its own (Masai for
     // Maasai): the distinction the retired `historical_spelling` type made.
     variantSpelling: z.literal(true).optional(),
+    equivalents: z.array(z.string().trim().min(1)).optional(),
     accounts: z.array(accountSchema),
   })
   .strict()
@@ -220,6 +221,7 @@ const nameSchema = z
 export const nameHistorySchema = z
   .object({
     summary: z.string().trim().min(1),
+    originExplained: z.boolean().default(true),
     // No source gives the name some peoples use for themselves (Shua,
     // ǂHoan). The block says so rather than marking an outside name as
     // self-given; the validator then refuses any self-given name beside it.

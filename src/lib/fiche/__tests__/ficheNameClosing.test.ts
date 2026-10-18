@@ -4,6 +4,7 @@ import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import {
   ficheNextSteps,
   ficheSilences,
+  patronymeSilences,
   undatedReadingsSilences,
 } from "@/lib/fiche/ficheNameClosing";
 
@@ -117,6 +118,42 @@ describe("ficheSilences — the closing band of a fiche", () => {
     expect(year.at(-1)).toBe(
       "Aucune trace du nom Peul plus ancienne que 1842 n’est connue du projet."
     );
+  });
+});
+
+describe("patronymeSilences — the family-name closing band", () => {
+  // @req REQ-198
+  it("shows an unexplained origin, absent homonyms and an unknown bearer count", () => {
+    const unexplained = history(
+      name("Kollo", [account("Usage contemporain", null, "community")])
+    );
+    unexplained.originExplained = false;
+    const lines = patronymeSilences(unexplained, {
+      gapFieldPaths: [],
+      homonymCount: 0,
+    });
+
+    expect(lines).toContain("Aucune source n’explique l’origine du nom Kollo.");
+    expect(lines).toContain("Aucun homonyme du nom Kollo n’est documenté.");
+    expect(lines).toContain(
+      "Le nombre de personnes qui portent le nom Kollo n’est pas connu du projet."
+    );
+  });
+
+  // @req REQ-198
+  it("summarizes declared gaps without repeating their editorial reason", () => {
+    const sarr = history(name("Sarr", []));
+    sarr.originExplained = false;
+    const lines = patronymeSilences(sarr, {
+      gapFieldPaths: ["origin", "homonyms", "bearers"],
+      homonymCount: 0,
+    });
+
+    expect(lines[0]).toBe(
+      "Le projet ne documente pas encore les autres noms de même forme et le nombre de personnes qui le portent."
+    );
+    expect(lines).toContain("Aucune source n’explique l’origine du nom Sarr.");
+    expect(lines.join(" ")).not.toMatch(/source dédiée|consultée/);
   });
 });
 
