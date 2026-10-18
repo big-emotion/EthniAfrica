@@ -148,5 +148,184 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Sahariens, ou peuples sahariens, réunit des peuples du Sahara central et des abords du lac Tchad, comme les Kanuri, les Kanembu, les Teda, les Daza et les Zaghawa, dont les langues forment le groupe saharien. Ce n'est pas le nom d'un peuple : aucune source que nous avons lue ne donne un nom que ces peuples se donneraient tous ensemble, et chacun porte le sien. C'est un nom de savants, formé sur le nom du Sahara, qui sert aussi pour tous les habitants du désert. Nous le présentons plus bas.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Sahariens",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des auteurs français, d'après le nom du Sahara ; pour ce groupe de langues, le linguiste Joseph Greenberg",
+        "shortLine": "Un nom formé sur le Sahara : les tribus du désert, puis un groupe de langues autour du lac Tchad.",
+        "periodLabel": "Écrit dès 1873 ; pour ce groupe depuis 1949-1950",
+        "accounts": [
+          {
+            "period": {
+              "from": 1990,
+              "to": 1990,
+              "label": "1990"
+            },
+            "era": "modern",
+            "statement": "Le nom Sahariens réunit des peuples qui portent chacun leur nom : les Zaghawa se nomment eux-mêmes Beri, selon Dierk Lange. Les Arabes du Tchad et du Soudan, ajoute-t-il, reconnaissent encore à part les Zaghawa et les Gorhan, c'est-à-dire les Daza.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 15 : La région du Tchad en tant que carrefour",
+                "author": "Dierk Lange, en collaboration avec Bawaro W. Barkindo",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 469"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1990,
+              "to": 1990,
+              "label": "1990"
+            },
+            "statement": "Le nom Sahariens désigne aussi, plus largement, tous les habitants du désert. Pour l'historien Tadeusz Lewicki, ce sont, du VIIIe au XIIe siècle, des peuples d'origine berbère à l'ouest et au centre du Sahara, et à l'est des groupes tubu, comme les Zaghāwa, les Teda et les Dawa.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 11 : Le rôle du Sahara et des Sahariens dans les relations entre le Nord et le Sud",
+                "author": "Tadeusz Lewicki",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 303-304"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom saharien désigne, chez Joseph Greenberg, la deuxième branche de la famille nilo-saharienne, avec trois ensembles : le kanouri-kanembu, le teda-daza, et le zaghawa avec le berti.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 335"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1963,
+              "to": 1963,
+              "label": "1963"
+            },
+            "era": "modern",
+            "statement": "Le nom saharien remplace, dans le livre de Joseph Greenberg sur les langues d'Afrique, le « saharien central » de ses premiers articles, et devient une branche de sa famille nilo-saharienne.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 338"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1949,
+              "to": 1950,
+              "label": "1949-1950"
+            },
+            "era": "colonial",
+            "statement": "Le nom saharien sert pour la première fois à grouper les langues de ces peuples, sous la forme « saharien central », dans les articles où Joseph Greenberg propose en 1949-1950 sa classification des langues d'Afrique, selon Greenberg lui-même.",
+            "formAsWritten": "Saharien central",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 328 et p. 338"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1873,
+              "to": 1873,
+              "label": "1873"
+            },
+            "statement": "Le nom saharien qualifie, dans le dictionnaire de Littré, ce qui appartient au désert du Sahara, et l'exemple qu'il donne est « les tribus sahariennes ». C'est la plus ancienne trace de ce nom pour des peuples que le projet connaît. Les peuples qu'il réunit aujourd'hui existaient déjà avant lui, chacun sous son nom.",
+            "formAsWritten": "tribus sahariennes",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionnaire de la langue française, article « saharien »",
+                "author": "Émile Littré",
+                "year": 1873,
+                "url": "https://www.littre.org/definition/saharien",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu en ligne sur littre.org le 18 octobre 2026. « saharien, ienne […] adj. Qui appartient au désert du Sahara. Les tribus sahariennes. »",
+                "page": "article « saharien »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 728,
+              "label": "Avant 728, puis chez les géographes arabes"
+            },
+            "statement": "On parle alors des Zaghāwa chez les géographes arabes : ce nom désigne à peu près toutes les branches des Tubu, selon Tadeusz Lewicki. Wahb ibn Munabbih, qui écrit avant 728, cite à côté d'eux les Kurān, un nom que les Arabes donnent aux Daza. Dierk Lange note que la plupart des géographes arabes citent les Zaghāwa pour la région du Tchad.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 11 : Le rôle du Sahara et des Sahariens dans les relations entre le Nord et le Sud",
+                "author": "Tadeusz Lewicki",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 319"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 15 : La région du Tchad en tant que carrefour",
+                "author": "Dierk Lange, en collaboration avec Bawaro W. Barkindo",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 468"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
