@@ -92,5 +92,43 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Mengue », « Fang », « Gabon », « nom personnel », « patronyme », « étymologie », « filiation », « clan » et « transmission », ainsi que l'article sur les dictionnaires anthroponymiques gabonais et la page Forebears dédiée n'ont établi aucune règle propre à Mengue permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mengue est un nom de personne fang, qu'un auteur écrit aussi Mangue. Il le range parmi les noms fang dont on ne trouve pas le sens : on ne sait pas avec certitude d'où vient Mengue, ni depuis quand il est écrit.",
+    "names": [
+      {
+        "nameText": "Mengue",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne fang, écrit aussi Mangue ; son sens reste inconnu.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "Écrit en 2005, cité en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Mengue, que Rosendo Ela Nsue Mibui écrit « Mangue (Mengue) », compte parmi les noms fang qu'il juge originaux : il n'y trouve ni dérivation ni composition qui en donnerait le sens. On ne sait donc pas avec certitude ce qu'il veut dire. Cet auteur est cité par Bonifacio Nguema Obiang-Mikue.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "La cultura para el reconocimiento de la identidad: caso de la cultura fang de Guinea Ecuatorial",
+                "author": "Bonifacio Nguema Obiang-Mikue",
+                "year": 2023,
+                "url": "https://doi.org/10.29166/catedra.v6i1.4282",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 179",
+                "notes": "Article de Revista Cátedra 6(1), 2023, pp. 171-186. Lu le 18 octobre 2026 dans le PDF en espagnol. Page 179 : l'auteur cite Rosendo Ela Nsue Mibui (2005, p. 102), pour qui certains noms fang « parece que son netamente originales y de los que no puede encontrarse posibilidad de derivación o de composición circunstancial como Mbomio (Mbomeyo), Esono, Edú, Elá, Mbá, Abeso, Nguema, Obono, Mibui, Angue, Mangue (Mengue) ». L'ouvrage de Nsue Mibui n'a pas été lu."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
