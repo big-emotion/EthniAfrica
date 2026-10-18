@@ -25,7 +25,7 @@ import { QuizBlock } from "@/components/search/feed/QuizBlock";
 import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
 import { SearchFeedContributionAction } from "@/components/search/feed/SearchFeedContributionAction";
 import { SearchFeedLayout } from "@/components/search/feed/SearchFeedLayout";
-import { ShortsBlock } from "@/components/search/feed/ShortsBlock";
+import { isOnName, ShortsBlock } from "@/components/search/feed/ShortsBlock";
 import { OriginBlock } from "@/components/search/answer/OriginBlock";
 import { CountriesAnswer } from "@/components/search/feed/CountriesAnswer";
 import { SubjectAnswer } from "@/components/search/feed/SubjectAnswer";
@@ -37,6 +37,7 @@ import {
   type NextStepCard,
 } from "@/components/search/timeline/NameClosing";
 import { NameTimeline } from "@/components/search/timeline/NameTimeline";
+import { TimelineShortRow } from "@/components/search/timeline/TimelineShortRow";
 import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
 import { deduceSilences } from "@/lib/search/nameClosing";
 import { buildNameTimeline } from "@/lib/search/nameTimeline";
@@ -142,7 +143,13 @@ export interface SearchFeedProps {
   ) => void;
 }
 
-export type SearchFeedSurface = "answer" | "timeline" | "next";
+export type SearchFeedSurface =
+  | "answer"
+  | "timeline"
+  | "next"
+  // The one video of « Histoire du nom » (brief 11 §2), apart from the
+  // timeline's fiche link so the audit can tell a video from a fiche.
+  | "timeline_short";
 
 export interface SubjectNameHistory {
   subject: SearchResult;
@@ -285,6 +292,10 @@ export function SearchFeed({
   );
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [validatedOption, setValidatedOption] = useState<number | null>(null);
+  // The name each timeline has open, by subject. It lives here, not in the
+  // timeline: « Tout » unmounts the timeline, and the closing band must keep
+  // naming what the chips show when the reader comes back.
+  const [openNames, setOpenNames] = useState<Record<string, string>>({});
   const copy = searchFeedCopy[language];
   const answerCopy = nameAnswerCopy[language];
   const nameHref = useNameSearchHref(language);
@@ -996,6 +1007,25 @@ export function SearchFeed({
     const unwritten = ficheSubjects.filter(
       (subject) => !withHistory.has(`${subject.type}:${subject.id}`)
     );
+    const keyOf = (subject: SearchResult) => `${subject.type}:${subject.id}`;
+    // Brief 11 §2: the first piece made on the name, under the subject it is
+    // about. An `exact` piece names its subject; a `word` piece has none, so
+    // it goes under the first. The rest stay in the « Shorts » filter.
+    const timelineShort = companions.shorts.items
+      .filter(isOnName)
+      .map((item) => ({
+        item,
+        host:
+          item.match.relation === "word"
+            ? nameHistories[0]?.subject
+            : nameHistories.find(
+                ({ subject }) =>
+                  "entityId" in item.match &&
+                  keyOf(subject) ===
+                    `${item.match.entityType}:${item.match.entityId}`
+              )?.subject,
+      }))
+      .find(({ host }) => host);
     return (
       <SearchFeedLayout
         className="text-afh-text"
@@ -1032,6 +1062,25 @@ export function SearchFeed({
                 !sharedName && index === 0
                   ? ficheLinkBlock("timeline")
                   : undefined
+              }
+              video={
+                timelineShort?.host === subject ? (
+                  <TimelineShortRow
+                    item={timelineShort.item}
+                    subjectType={subject.type}
+                    language={language}
+                    onNavigate={() =>
+                      onResultNavigate?.("short", 1, "timeline_short")
+                    }
+                  />
+                ) : undefined
+              }
+              openName={openNames[keyOf(subject)]}
+              onOpenNameChange={(nameText) =>
+                setOpenNames((open) => ({
+                  ...open,
+                  [keyOf(subject)]: nameText,
+                }))
               }
               language={language}
             />
@@ -1085,10 +1134,18 @@ export function SearchFeed({
           // correct, then one or two names to read next.
           <NameClosingBand
             key="timeline-closing"
+            // The band speaks of the name each timeline has open (brief 11
+            // §1d), as « Qui raconte le nom … ? » already does.
             silences={deduceSilences(
-              nameHistories.map(({ nameHistory }) => ({
-                name: buildNameTimeline(nameHistory, query).names[0],
-              })),
+              nameHistories.map(({ subject, nameHistory }) => {
+                const { names } = buildNameTimeline(nameHistory, query);
+                return {
+                  name:
+                    names.find(
+                      ({ nameText }) => nameText === openNames[keyOf(subject)]
+                    ) ?? names[0],
+                };
+              }),
               unwritten.map((subject) => ({
                 label: getSearchEntityLabel(subject.type),
                 name: getLocalizedSearchResultName(subject, language),

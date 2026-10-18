@@ -17,10 +17,45 @@ describe("SourceDiamond — the mark after a sourced sentence", () => {
       />
     );
     const button = screen.getByRole("button", {
-      name: "Source : Archive — voir les sources",
+      name: "Source : Archive, voir les sources",
     });
     expect(button.getAttribute("data-family")).toBe("archive");
-    expect(button.textContent).toBe("");
+  });
+
+  // Brief 11 §3 and charter §8 (2026-10-17): a lone diamond had no visible
+  // text, so a reader could not tell it was the way to the sources.
+  // @req REQ-194
+  it("shows « Source » after the diamond for one source, and its name starts with that label", () => {
+    render(
+      <SourceDiamond
+        kinds={["academic"]}
+        language="fr"
+        onOpen={() => undefined}
+      />
+    );
+    const button = screen.getByRole("button", {
+      name: "Source : Publication académique, voir les sources",
+    });
+    expect(button.textContent).toBe("Source");
+    expect(button.getAttribute("aria-label")?.startsWith("Source")).toBe(true);
+  });
+
+  // A number beside each passage would read as a score of its strength.
+  // @req REQ-194
+  it("shows « Sources » with no count for several sources, and its name starts with that label", () => {
+    render(
+      <SourceDiamond
+        kinds={["academic", "press", "archive", "oral_tradition"]}
+        language="fr"
+        onOpen={() => undefined}
+      />
+    );
+    const button = screen.getByRole("button", {
+      name: "Sources : Publication académique et 3 autres, voir les sources",
+    });
+    expect(button.textContent).toBe("Sources");
+    expect(button.textContent).not.toMatch(/\d/);
+    expect(button.getAttribute("aria-label")?.startsWith("Sources")).toBe(true);
   });
 
   // @req REQ-198
@@ -33,7 +68,7 @@ describe("SourceDiamond — the mark after a sourced sentence", () => {
       />
     );
     const button = screen.getByRole("button", {
-      name: "Sources : Tradition orale et 2 autres — voir les sources",
+      name: "Sources : Tradition orale et 2 autres, voir les sources",
     });
     expect(button.getAttribute("data-family")).toBe("oral");
   });
@@ -49,7 +84,7 @@ describe("SourceDiamond — the mark after a sourced sentence", () => {
     );
     expect(
       screen.getByRole("button", {
-        name: "Sources : Source gouvernementale et 1 autre — voir les sources",
+        name: "Sources : Source gouvernementale et 1 autre, voir les sources",
       })
     ).toBeTruthy();
   });

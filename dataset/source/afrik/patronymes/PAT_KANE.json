@@ -11,7 +11,10 @@
     {
       "spelling": "Kane",
       "attestations": [
-        { "countryId": "MRT", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "MRT",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -75,5 +78,88 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kane est un nom de famille des Toucouleurs, ou Haalpulaar, de la vallée du fleuve Sénégal, sur la rive mauritanienne comme sur la rive sénégalaise. Paul Marty le compte en 1921 parmi les principales familles toucouleures du Brakna. Les sources ne s'accordent pas sur l'origine des familles Kane ; nous présentons plus bas les deux explications rapportées.",
+    "names": [
+      {
+        "nameText": "Kane",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "fuc",
+        "namedBy": null,
+        "shortLine": "Un nom de famille toucouleur de la vallée du fleuve Sénégal, en Mauritanie et au Sénégal.",
+        "periodLabel": "Écrit dès 1921",
+        "accounts": [
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "Rapporté en 1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kane serait celui de familles d'origine peule devenues toucouleures, selon Paul Marty. Il note que les Kane se sont partagés : ceux de Yahia Kane, sur la rive mauritanienne, sont devenus toucouleurs, tandis que ceux d'Abdoulaye Kane, sur la rive gauche, sont restés peuls, ou veulent le rester.",
+            "hypothesisGroup": "origine des familles Kane",
+            "sources": [
+              {
+                "title": "Études sur l'Islam et les tribus maures : les Brakna",
+                "author": "Paul Marty",
+                "year": 1921,
+                "url": "https://archive.org/details/tudessurlislamet00mart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 296",
+                "notes": "Paris, Ernest Leroux, 1921 ; exemplaire numérisé sur archive.org, lu le 18 octobre 2026. L'auteur est un officier interprète de l'administration coloniale ; il est cité pour ce qu'il rapporte. Page 296, dans le paragraphe sur les familles d'origine peule devenues toucouleures : « Certaines familles, comme les Kane, se sont partagés les Kane de Yahia Kane (Irlabé, Ebyabé maures), sont devenues toucouleures ; les Kane d'Abdoulaye Kane (Irlabé-Elyabé de la rive gauche) sont restés peul, ou du moins visent à le rester ». "
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "Rapporté en 1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kane serait celui de descendants d'un Arabe de Syrie : les Kane originaires du Dimar disent que le nom de leur ancien village, Dimatch, est une déformation de Dimachq, Damas. C'est leur propre récit, que rapporte Paul Marty.",
+            "hypothesisGroup": "origine des familles Kane",
+            "sources": [
+              {
+                "title": "Études sur l'Islam et les tribus maures : les Brakna",
+                "author": "Paul Marty",
+                "year": 1921,
+                "url": "https://archive.org/details/tudessurlislamet00mart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 297",
+                "notes": "Paris, Ernest Leroux, 1921 ; exemplaire numérisé sur archive.org, lu le 18 octobre 2026. L'auteur est un officier interprète de l'administration coloniale ; il est cité pour ce qu'il rapporte. Page 297, dans le paragraphe sur les familles d'origine maure : « Les Kane, qui sont originaires du Dimar, assurent que leur antique village de Dimatch est une corruption de Dimachq (Damas) et que leur ancêtre était un Arabe de Syrie »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "Publié en 1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kane apparaît par écrit chez Paul Marty, qui le compte parmi les principales familles des Toucouleurs du Chamama, la rive mauritanienne du fleuve : dans le Toro, dans le Lao et chez les Elyabé. C'est la plus ancienne trace de ce nom que le projet connaît ; les familles qui le portent sont plus anciennes que ce texte.",
+            "formAsWritten": "Kane",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Études sur l'Islam et les tribus maures : les Brakna",
+                "author": "Paul Marty",
+                "year": 1921,
+                "url": "https://archive.org/details/tudessurlislamet00mart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 295-296",
+                "notes": "Paris, Ernest Leroux, 1921 ; exemplaire numérisé sur archive.org, lu le 18 octobre 2026. L'auteur est un officier interprète de l'administration coloniale ; il est cité pour ce qu'il rapporte. Page 295, sur les Toucouleurs du Chamama, la rive mauritanienne du fleuve : « Les principales familles sont : dans le Toro, les Kane, [p. 296] famille des chefs, les Li, les Si, les Tiélo [...] ; dans le Lao, les Wane, famille des chefs, les Kane, les Li [...] ; chez les Irlabé, les Ane, les Diallo, assimilés aux Kans [...] ; chez les Elyabé, les Li, les Kane, les Ba ». "
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

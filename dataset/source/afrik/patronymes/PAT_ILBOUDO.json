@@ -118,5 +118,153 @@
       "fieldPath": "homonyms",
       "reason": "Les trois formes sont regroupées par le répertoire comme variantes ; aucune source consultée ne distingue une seconde lignée homonyme."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ilboudo, qu'on écrit aussi Lilboudo ou Yilboudo, est un nom de famille mossi du Burkina Faso. Son sens est discuté : un projet de répertoire officiel en donne plusieurs explications, que nous présentons plus bas. Le projet ne connaît pas encore de trace écrite ancienne de ce nom.",
+    "names": [
+      {
+        "nameText": "Ilboudo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille mossi du Burkina Faso, écrit aussi Lilboudo ou Yilboudo.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "Décrit en 2008"
+            },
+            "era": "modern",
+            "statement": "Le nom Ilboudo est un nom de famille mossi, au Burkina Faso : Urs et Idda Niggli le citent parmi leurs exemples de noms de famille mossi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Noms des Kasena",
+                "author": "Urs et Idda Niggli",
+                "year": 2008,
+                "url": "https://sil-burkina.org/sites/default/files/Noms%20des%20Kassena.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 42",
+                "notes": "Société internationale de linguistique, Ouagadougou, 2008. Lu dans le PDF intégral le 18 octobre 2026. La section 6.4, « Exemples de noms de famille mossi », cite Ilboudo, sans en donner le sens."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Proposé en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Ilboudo viendrait du moore yell boudo, « on craint qu'il nous arrive quelque chose », selon certains, d'après le projet de répertoire des patronymes du Burkina Faso.",
+            "hypothesisGroup": "sens-ilboudo",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 91",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de mai 2025 et marqué « version provisoire » sur sa page de titre. Lu le 18 octobre 2026 dans le navigateur, sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Les pages sont celles du document, repérées par leurs numéros en bas de page. Notice n° 492, ILBOUDO/ LILBOUDO : « Le patronyme ILBOUDO/ LILBOUDO/YILBOUDO qui signifie « yell boudo » en Moore qui veut dire « on craint ou on pense que quelque chose nous arrive » pour certains et pour d'autres, « personne qui ne peut être jugée que chez le chef » ou « Juge » ou « se cacher pour le jugement ». » Suit le récit du jugement d'un enfant à la cour royale : son père dit qu'à cause de la honte il allait se cacher, « LIL MBOU et par déformation a donné le patronyme ILBOUDO ». Les Ilboudo « ont plusieurs origines » (Tanlargin, Damzoussi, Nongo, Salgo, Kadiogo, Tanghin, Bonam, Kouka, Bindé) et parlent le moore."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Proposé en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Ilboudo voudrait dire « personne qui ne peut être jugée que chez le chef », « juge » ou « se cacher pour le jugement », selon d'autres, d'après le même projet de répertoire. Il viendrait des mots d'un père qui, honteux du jugement de son enfant à la cour royale, dit qu'il allait se cacher.",
+            "hypothesisGroup": "sens-ilboudo",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 91",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de mai 2025 et marqué « version provisoire » sur sa page de titre. Lu le 18 octobre 2026 dans le navigateur, sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Les pages sont celles du document, repérées par leurs numéros en bas de page. Notice n° 492, ILBOUDO/ LILBOUDO : « Le patronyme ILBOUDO/ LILBOUDO/YILBOUDO qui signifie « yell boudo » en Moore qui veut dire « on craint ou on pense que quelque chose nous arrive » pour certains et pour d'autres, « personne qui ne peut être jugée que chez le chef » ou « Juge » ou « se cacher pour le jugement ». » Suit le récit du jugement d'un enfant à la cour royale : son père dit qu'à cause de la honte il allait se cacher, « LIL MBOU et par déformation a donné le patronyme ILBOUDO ». Les Ilboudo « ont plusieurs origines » (Tanlargin, Damzoussi, Nongo, Salgo, Kadiogo, Tanghin, Bonam, Kouka, Bindé) et parlent le moore."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Lilboudo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Usage contemporain",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Décrit en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Lilboudo est une autre forme d'Ilboudo : le projet de répertoire des patronymes du Burkina Faso les réunit dans une même notice, avec Yilboudo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 91",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de mai 2025 et marqué « version provisoire » sur sa page de titre. Lu le 18 octobre 2026 dans le navigateur, sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Les pages sont celles du document, repérées par leurs numéros en bas de page. Notice n° 492, ILBOUDO/ LILBOUDO : « Le patronyme ILBOUDO/ LILBOUDO/YILBOUDO qui signifie « yell boudo » en Moore qui veut dire « on craint ou on pense que quelque chose nous arrive » pour certains et pour d'autres, « personne qui ne peut être jugée que chez le chef » ou « Juge » ou « se cacher pour le jugement ». » Suit le récit du jugement d'un enfant à la cour royale : son père dit qu'à cause de la honte il allait se cacher, « LIL MBOU et par déformation a donné le patronyme ILBOUDO ». Les Ilboudo « ont plusieurs origines » (Tanlargin, Damzoussi, Nongo, Salgo, Kadiogo, Tanghin, Bonam, Kouka, Bindé) et parlent le moore."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Yilboudo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Usage contemporain",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Décrit en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Yilboudo est une autre forme d'Ilboudo : le projet de répertoire des patronymes du Burkina Faso les réunit dans une même notice, avec Lilboudo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 91",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de mai 2025 et marqué « version provisoire » sur sa page de titre. Lu le 18 octobre 2026 dans le navigateur, sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Les pages sont celles du document, repérées par leurs numéros en bas de page. Notice n° 492, ILBOUDO/ LILBOUDO : « Le patronyme ILBOUDO/ LILBOUDO/YILBOUDO qui signifie « yell boudo » en Moore qui veut dire « on craint ou on pense que quelque chose nous arrive » pour certains et pour d'autres, « personne qui ne peut être jugée que chez le chef » ou « Juge » ou « se cacher pour le jugement ». » Suit le récit du jugement d'un enfant à la cour royale : son père dit qu'à cause de la honte il allait se cacher, « LIL MBOU et par déformation a donné le patronyme ILBOUDO ». Les Ilboudo « ont plusieurs origines » (Tanlargin, Damzoussi, Nongo, Salgo, Kadiogo, Tanghin, Bonam, Kouka, Bindé) et parlent le moore."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
