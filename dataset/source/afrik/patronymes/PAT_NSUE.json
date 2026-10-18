@@ -60,7 +60,7 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom d'homme fang : dans l'exemple de Rosendo Ela Nsue Mibui, les enfants d'un homme appelé Nsue portent tous ce nom. Chez les Fang, chacun reçoit un nom à lui, suivi de celui de son père, et Günter Tessmann écrit en 1913 que les Fang n'ont pas de nom de famille au sens européen. La fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom d'homme fang. Dans l'exemple de Rosendo Ela Nsue Mibui, les enfants d'un homme appelé Nsue portent tous ce nom. Chez les Fang, chacun reçoit un nom à lui, suivi de celui de son père, et Günter Tessmann écrit en 1913 que les Fang n'ont pas de nom de famille au sens européen. La fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "alliances",
