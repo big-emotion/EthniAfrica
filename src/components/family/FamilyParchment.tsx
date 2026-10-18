@@ -95,6 +95,8 @@ export interface FamilyParchmentProps {
    * name history and slotted right after the story of the names it answers.
    */
   nameSources?: ReactNode;
+  /** The link to the story of the family's name (brief 10 §1), composed by the view. */
+  storyLink?: ReactNode;
 }
 
 /**
@@ -182,6 +184,7 @@ export function FamilyParchment({
   children,
   onward,
   nameSources,
+  storyLink,
 }: FamilyParchmentProps) {
   const copy = familyCopy[language].parchment;
   const { hero, decolonialHeader, generalInfo, distribution } = data;
@@ -255,6 +258,7 @@ export function FamilyParchment({
         naming={familyNaming}
         caution={familyNaming.problem}
         language={language}
+        storyLink={storyLink}
       />
 
       {nameSources}

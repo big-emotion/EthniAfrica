@@ -6,7 +6,9 @@ import { describe, expect, it } from "vitest";
 
 import { FicheSection } from "@/components/fiche/FicheSection";
 import { FicheTile, FicheTiles } from "@/components/fiche/FicheTile";
+import { FicheTileChapter } from "@/components/fiche/FicheTileChapter";
 import { AutonymExonymHeading } from "@/components/ui/AutonymExonymHeading";
+import type { FicheTileData } from "@/lib/fiche/tileData";
 
 const stylesheet = readFileSync(
   join(process.cwd(), "src/styles/fiche-parchment.css"),
@@ -331,5 +333,115 @@ describe("FicheTile charter (REQ-153)", () => {
     expect(wideRuleBody(".afh-tiles")).toMatch(
       /grid-template-columns:\s*repeat\(2,\s*minmax\(0,\s*1fr\)\)/
     );
+  });
+});
+
+/** A tile whose preview says more than its title, so it closes. */
+function tile(label: string): FicheTileData {
+  return {
+    key: label,
+    label,
+    preview: `${label} : ce que la fiche en dit d'abord.`,
+    passages: [
+      { text: `${label} : ce que la fiche en dit d'abord. Puis le reste.` },
+    ],
+  };
+}
+
+const CULTURE = [
+  "Rites",
+  "Symboles",
+  "Arts et musique",
+  "Spiritualités",
+  "Organisation",
+].map(tile);
+
+/**
+ * Brief 10 §2 and REQ-153 as amended on 2026-10-17: a chapter of three tiles
+ * or more keeps its heading, its lede and its first tile, and folds the rest
+ * behind one control that names each tile it hides (`Main`, « Chapitre
+ * replié »).
+ */
+describe("FicheTileChapter — a long chapter folds after its first tile", () => {
+  // @req REQ-153
+  it("keeps the heading, the lede and the first tile, and folds the four others behind one control that names them", () => {
+    const { container } = render(
+      <FicheSection title="Culture et société" note="Ce que la fiche décrit.">
+        <FicheTileChapter tiles={CULTURE} language="fr" />
+      </FicheSection>
+    );
+
+    const folds = container.querySelectorAll("details.ea-fold");
+    expect(folds).toHaveLength(1);
+    const fold = folds[0] as HTMLDetailsElement;
+    expect(fold.open).toBe(false);
+    expect(
+      fold.querySelector(':scope > summary [data-when="closed"]')
+    ).toHaveTextContent(
+      "+ Voir aussi : Symboles, Arts et musique, Spiritualités, Organisation"
+    );
+    expect(
+      fold.querySelector(':scope > summary [data-when="open"]')
+    ).toHaveTextContent("− replier");
+
+    const labels = (root: ParentNode) =>
+      Array.from(
+        root.querySelectorAll(".afh-tile-label"),
+        (n) => n.textContent
+      );
+    expect(labels(fold)).toEqual([
+      "Symboles",
+      "Arts et musique",
+      "Spiritualités",
+      "Organisation",
+    ]);
+    const firstGrid = container.querySelector(".afh-tiles") as HTMLElement;
+    expect(fold).not.toContainElement(firstGrid);
+    expect(labels(firstGrid)).toEqual(["Rites"]);
+    expect(
+      firstGrid.compareDocumentPosition(fold) & Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+    expect(fold).not.toContainElement(
+      screen.getByRole("heading", { level: 2, name: "Culture et société" })
+    );
+    expect(fold).not.toContainElement(
+      screen.getByText("Ce que la fiche décrit.")
+    );
+  });
+
+  // @req REQ-153
+  it("folds the last two of three tiles, and nothing of two", () => {
+    const { container, rerender } = render(
+      <FicheTileChapter tiles={CULTURE.slice(0, 3)} language="fr" />
+    );
+    const fold = container.querySelector("details.ea-fold") as HTMLElement;
+    expect(fold.querySelectorAll("[data-fiche-tile]")).toHaveLength(2);
+    expect(
+      fold.querySelector(':scope > summary [data-when="closed"]')
+    ).toHaveTextContent("+ Voir aussi : Symboles, Arts et musique");
+
+    rerender(<FicheTileChapter tiles={CULTURE.slice(0, 2)} language="fr" />);
+    expect(container.querySelector("details.ea-fold")).toBeNull();
+    expect(container.querySelectorAll("[data-fiche-tile]")).toHaveLength(2);
+  });
+
+  // @req REQ-153
+  it("opens from a native summary that announces its state, the tiles appearing in place", () => {
+    const { container } = render(
+      <FicheTileChapter tiles={CULTURE} language="fr" />
+    );
+
+    const fold = container.querySelector("details.ea-fold")!;
+    const summary = fold.querySelector(":scope > summary") as HTMLElement;
+    expect(summary.tagName).toBe("SUMMARY");
+    summary.focus();
+    expect(summary).toHaveFocus();
+    fireEvent.click(summary);
+    expect(fold).toHaveAttribute("open");
+    expect(fold.outerHTML).not.toMatch(
+      /transition-transform|animate-|rotate-|motion-safe:/
+    );
+    fireEvent.click(summary);
+    expect(fold).not.toHaveAttribute("open");
   });
 });
