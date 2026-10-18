@@ -136,6 +136,7 @@
               "to": 2018,
               "label": "Recensement de 2018"
             },
+            "era": "modern",
             "statement": "Le nom Palenquero est l'une des réponses du recensement colombien de 2018 : on peut s'y déclarer « Palenquero de San Basilio ». Cette déclaration repose sur l'autoreconnaissance ethnique, le sentiment d'appartenance que chacun exprime envers un groupe, selon le rapport que l'institut national de la statistique a écrit avec l'instance de consultation de ces communautés.",
             "aspect": "usage",
             "sources": [
@@ -157,6 +158,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Palenqueros désigne les habitants du village, qui appellent leur langue Lengua. Longtemps jugée « arriérée », même par des Palenqueros, cette langue a cessé d'être transmise à beaucoup d'enfants vers 1960, avant un retournement : de nombreux adolescents prennent aujourd'hui plaisir à l'apprendre, selon le linguiste Armin Schwegler.",
             "aspect": "usage",
             "sources": [
@@ -177,6 +179,7 @@
               "to": 1948,
               "label": "13 mars 1948"
             },
+            "era": "modern",
             "statement": "Le nom Palenqueros apparaît dans le récit que l'écrivain colombien Manuel Zapata Olivella publie dans la revue Cromos, à Bogotá, sur sa première visite au village : il y raconte « l'histoire des Noirs palenqueros » et note que « les palenqueros ont deux langues », l'une pour la vie du village, l'autre l'espagnol pour parler aux voisins. C'est la plus ancienne trace de ce nom que le projet connaît. Le village et ses habitants existaient bien avant lui.",
             "formAsWritten": "negros palenqueros",
             "birth": true,
@@ -199,6 +202,7 @@
               "to": 1717,
               "label": "De 1713 à 1717"
             },
+            "era": "colonial",
             "statement": "Le nom Palenqueros n'apparaît pas encore dans les sources que nous avons lues quand l'évêque de Cartagena Antonio María Casiani obtient la soumission du palenque de San Basilio, en échange d'un pardon général et de la liberté de ses habitants. C'est de cette époque que date la première preuve historique de ce palenque, selon l'historienne María Cristina Navarrete.",
             "before": true,
             "sources": [
@@ -220,6 +224,7 @@
               "to": 2001,
               "label": "Proposée en 2001"
             },
+            "era": "modern",
             "statement": "Le nom Palenqueros vient de Palenque, le nom du village. Le mot palenque viendrait des palissades, les empalizadas, qui fortifiaient souvent les villages d'esclaves en fuite et leur auraient donné leur nom commun de palenques, selon María Cristina Navarrete.",
             "hypothesisGroup": "origine du nom Palenque",
             "sources": [
@@ -241,6 +246,7 @@
               "to": 2001,
               "label": "Proposée en 2001"
             },
+            "era": "modern",
             "statement": "Le nom Palenqueros renvoie au village de San Basilio de Palenque, qui tiendrait son nom de l'ordre religieux de l'évêque Casiani, celui de saint Basile. Le village serait l'ancien palenque de San Miguel, dont l'église garda le patron, selon María Cristina Navarrete, qui présente ce lien comme presque prouvé.",
             "hypothesisGroup": "origine du nom San Basilio",
             "sources": [

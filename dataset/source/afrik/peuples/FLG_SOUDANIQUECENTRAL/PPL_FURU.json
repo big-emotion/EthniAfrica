@@ -12,20 +12,20 @@
       ],
       "originOfExonyms": "Les recherches sur la langue et les modes de vie du groupe emploient toutes Furu pour le peuple et sa langue. Les sources ne présentent pas ce nom comme méprisant.",
       "whyProblematic": null,
-      "contemporaryUsage": "Le terme Furu est utilise dans la litterature linguistique (Ethnologue, Glottolog) et dans les profils missionnaires. La communaute est de petite taille et peu documentee. La langue furu est parfois classee dans le sous-groupe Kara des langues soudaniques centrales (Glottolog), ou dans le groupe Kresh (classification plus ancienne de Blench 2012).",
+      "contemporaryUsage": "Le terme Furu est utilise dans la litterature linguistique (Ethnologue, Glottolog) et dans les profils missionnaires. La communaute est de petite taille et peu documentee. Glottolog range le furu parmi les langues sara-bongo-baguirmi. Le linguiste Pascal Boyeldieu le rattache au groupe sara, avec le bagiro, et écrit que Furu n'est pas un autre nom des Kresh.",
       "linguisticFamily": "FLG_SOUDANIQUECENTRAL",
-      "ethnoLinguisticGroup": "Soudanique central (groupe Kara selon Glottolog; anciennement classe Kresh)",
+      "ethnoLinguisticGroup": "Soudanique central, groupe sara-bongo-baguirmi (Glottolog) ; groupe sara selon Pascal Boyeldieu",
       "historicalRegion": "Savanes du Nord-Ubangi (RDC) et le long de la riviere Ubangi; origines migratoires dans la region du Darfour (Soudan)",
       "currentCountries": ["COD", "CAF"]
     },
     "ethnicities": [
       "Furu de la province du Nord-Ubangi (RDC), le long de la riviere Ubangi",
       "Furu de la Republique centrafricaine (CAR), dans les savanes de la region de l'Ubangi",
-      "Groupes lies: Kara, communautes apparentees soudaniques centrales du bassin de l'Ubangi"
+      "Groupes liés : les Bagiro de Centrafrique, dont la langue est très proche du furu selon Pascal Boyeldieu"
     ],
     "origins": {
       "ancientOrigins": "Les Furu sont un petit peuple de langue soudanique centrale etabli dans les savanes de la province du Nord-Ubangi en RDC et dans des zones limitrophes de la Republique centrafricaine. Leurs ancetres ont migre depuis les regions du nord, probablement autour du Darfour au Soudan, vers leur zone d'habitation actuelle le long de la riviere Ubangi, selon les sources missionnaires (Joshua Project). Leur langue appartient a la branche soudanique centrale de la famille nilo-saharienne.",
-      "formationPeriod": "La formation de l'identite furu distincte est difficile a dater precisement, les sources historiques sur ce petit groupe etant rares. Leur presence dans le Nord-Ubangi est attestee dans les sources coloniales belges. Leur langue est classee comme l'une des langues Kara dans la classification contemporaine (Glottolog).",
+      "formationPeriod": "La formation de l'identite furu distincte est difficile a dater precisement, les sources historiques sur ce petit groupe etant rares. Leur presence dans le Nord-Ubangi est attestee dans les sources coloniales belges. Glottolog classe leur langue parmi les langues sara-bongo-baguirmi.",
       "migrationRoutes": [
         "Migration ancestrale depuis la region du Darfour (Soudan) vers le sud, dans les savanes de l'Ubangi",
         "Installation dans le bassin de la riviere Ubangi en RDC et en Republique centrafricaine"
@@ -36,7 +36,7 @@
       ],
       "unificationsOrDivisions": "Les Furu constituent un groupe de taille modeste disperses dans les savanes. Leur organisation sociale repose sur des villages autonomes diriges par des anciens. L'absence de structures politiques centralisees est caracteristique de ce type de groupes soudaniques centraux decentralises.",
       "externalInfluences": "Influence de la colonisation belge du Congo (introduction de l'administration coloniale et de missions chretiennes). Contact avec les grandes langues vehiculaires de la region (lingala, sango). Influence des missions protestantes et catholiques depuis le 20e siecle. Pression des langues dominantes sur les pratiques linguistiques furu.",
-      "majorHistoricalEvents": "Incorporation dans la colonie du Congo belge au debut du 20e siecle. Contact avec les missions chretiennes (un projet de traduction biblique en furu a ete initie). La langue furu figure dans les classifications linguistiques depuis les travaux de Roger Blench (2000, 2012) qui la classa initialement parmi les langues Kresh."
+      "majorHistoricalEvents": "Incorporation dans la colonie du Congo belge au debut du 20e siecle. Contact avec les missions chretiennes (un projet de traduction biblique en furu a ete initie). Les Furu et les Bagiro sont souvent confondus à tort avec les Kresh, parce que les Bagiro se nomment eux-mêmes Gbaya, comme une section des Kresh, selon Pascal Boyeldieu."
     },
     "organization": {
       "traditionalPoliticalSystem": "Organisation en villages autonomes diriges par des anciens. Pas de chefferie centralisee documentee. Les decisions importantes sont prises colllectivement par les elders. La vie communautaire est organisee autour des familles etendues et des obligations reciproques.",
@@ -118,6 +118,13 @@
         "url": "https://www.britannica.com/topic/Central-Sudanic-languages",
         "tier": "unverified",
         "source_kind": "encyclopedia"
+      },
+      {
+        "title": "Numeral Systems of the World's Languages : Furu / Bagiro",
+        "url": "https://lingweb.eva.mpg.de/channumerals/Furu.htm",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Page hébergée par l'Institut Max Planck d'anthropologie évolutionnaire ; données et commentaires fournis par le linguiste Pascal Boyeldieu (CNRS-LLACAN) le 21 novembre 2013. Lue le 18 octobre 2026 : « Furu is not an alternate name for Fer (nor for Kresh as sometimes mentioned) » ; « Furu-Bagiro is clearly another member of Bongo-Bagirmi, more specifically belonging to \"Sara proper\" »."
       }
     ]
   },

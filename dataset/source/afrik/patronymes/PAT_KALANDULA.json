@@ -6,34 +6,43 @@
   },
   "id": "PAT_KALANDULA",
   "nameMain": "Kalandula",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Kalandula",
       "attestations": [
-        { "countryId": "AGO", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "AGO",
+          "sourceRefs": ["dulley-chronicles-of-bailundo-2021"]
+        }
       ]
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [],
+    "writtenChronicles": [
+      {
+        "claim": "Une chronique de Bailundo écrite en umbundu au début du XXe siècle donne Kalandula comme le nom du quinzième roi de Bailundo ; elle ne dit pas ce que veut dire ce nom.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["dulley-chronicles-of-bailundo-2021"]
+      }
+    ],
     "linguisticReconstructions": []
   },
   "peoples": [
     {
-      "peopleId": "PPL_AMBUNDU",
+      "peopleId": "PPL_OVIMBUNDU",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["dulley-chronicles-of-bailundo-2021"]
     }
   ],
   "countries": [
     {
       "countryId": "AGO",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["dulley-chronicles-of-bailundo-2021"]
     }
   ],
   "alliances": [],
@@ -42,38 +51,106 @@
   "homonyms": [],
   "sources": [
     {
-      "sourceKey": "afrik-candidate-queue",
-      "title": "Relevé de couverture anthroponymique EthniAfrica",
-      "url": null,
-      "tier": "unverified",
-      "source_kind": "ai_generated",
-      "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+      "sourceKey": "dulley-chronicles-of-bailundo-2021",
+      "title": "Chronicles of Bailundo: a fragmentary account in Umbundu of life before and after Portuguese colonial rule",
+      "url": "https://doi.org/10.1017/S0001972021000553",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Iracema Dulley, Africa 91(5), 2021, p. 713-741. L'article publie et traduit une chronique de Bailundo, un royaume des hauts plateaux du centre de l'Angola, écrite en umbundu au début du XXe siècle ; elle donne la liste des rois de Bailundo (p. 730)."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "La chronique de Bailundo ne dit pas ce que veut dire le nom Kalandula ni d'où il vient, et nous n'avons pas trouvé d'autre source sur son origine."
     },
     {
       "fieldPath": "alliances",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Les sources consultées, dont la chronique de Bailundo publiée par Iracema Dulley, ne décrivent pas de pacte entre Kalandula et un autre nom présenté ici."
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "La chronique de Bailundo rattache le nom Kalandula à des rois de Bailundo ; elle ne décrit pas de fonction transmise avec ce nom."
     },
     {
       "fieldPath": "bearers",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Nous ne présentons pas encore de porteur dans cette rubrique ; l'histoire du nom parle du roi de Bailundo qui l'a porté."
     },
     {
       "fieldPath": "homonyms",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Les sources consultées, dont la chronique de Bailundo publiée par Iracema Dulley, ne décrivent pas d'autre nom écrit Kalandula qui aurait une origine différente."
+    },
+    {
+      "fieldPath": "nameSystem",
+      "reason": "La chronique de Bailundo publiée par Iracema Dulley présente Kalandula comme le nom d'un roi de Bailundo ; aucune source consultée ne parle d'un clan ni d'un nom de famille. Le modèle n'a pas de case pour le nom de règne d'un souverain : la fiche le range parmi les patronymes non héréditaires, la case la plus proche."
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+      "reason": "Selon la chronique, les anciens choisissent le nouveau roi parmi les fils, les neveux ou les petits-fils des rois ; elle ne dit pas qui reçoit ce nom ni comment. Aucune source consultée ne dit comment ce nom se transmet."
+    },
+    {
+      "fieldPath": "peoples",
+      "reason": "La chronique situe ce nom à Bailundo, chez les Ovimbundu ; nous n'avons lu aucune source qui le rattache à un autre peuple."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kalandula est celui d'un roi de Bailundo, un royaume des hauts plateaux du centre de l'Angola, chez les Ovimbundu. Une chronique du royaume situe sous son règne le début de la guerre contre les Blancs. Les sources que nous avons lues ne disent pas ce que veut dire ce nom, et ne le montrent pas porté comme nom de famille.",
+    "names": [
+      {
+        "nameText": "Kalandula",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un roi de Bailundo, en Angola, selon une chronique du royaume ; son sens n'est pas connu.",
+        "periodLabel": "Porté par un roi de Bailundo",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Règne non daté par la chronique"
+            },
+            "statement": "Le nom Kalandula est celui du quinzième roi de la liste des rois de Bailundo. Sous son règne, selon la chronique du royaume, il n'y a pas de paix : c'est alors que commence la guerre contre les Blancs, que mènent le roi et Mutu-Yakevela, qui porte auprès de lui le titre d'epalanga.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Chronicles of Bailundo: a fragmentary account in Umbundu of life before and after Portuguese colonial rule",
+                "author": "Iracema Dulley",
+                "year": 2021,
+                "url": "https://doi.org/10.1017/S0001972021000553",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 730, 735",
+                "notes": "Africa 91(5), 2021, p. 713-741, en accès libre chez Cambridge University Press ; lu le 18 octobre 2026 dans le PDF de l'éditeur. L'article présente et traduit une chronique de Bailundo écrite en umbundu par des missionnaires congrégationalistes nord-américains entre 1903 et les années 1930 ; le manuscrit ne dit pas qui l'a racontée ni qui l'a notée (p. 713-714). Page 730, liste des rois : « 15. Kalandula ». Page 735, chronique : « In the kingdom of Kalandula there was no peace. This is when the war against the whites began with King Kalandula and his Epalanga, Mutu-Yakevela ». La chronique ne date pas son règne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1903,
+              "to": 1939,
+              "label": "Écrit entre 1903 et les années 1930"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kalandula apparaît par écrit dans une chronique de Bailundo rédigée en umbundu par des missionnaires congrégationalistes nord-américains, après la guerre de Bailundo de 1902-1903, selon Iracema Dulley qui l'a publiée en 2021 : la troisième partie de la chronique raconte les rois « d'Ekuikui II à Kalandula ». C'est la plus ancienne trace de ce nom que le projet connaît ; le nom est plus ancien qu'elle.",
+            "formAsWritten": "Kalandula",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Chronicles of Bailundo: a fragmentary account in Umbundu of life before and after Portuguese colonial rule",
+                "author": "Iracema Dulley",
+                "year": 2021,
+                "url": "https://doi.org/10.1017/S0001972021000553",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 713-714, 730",
+                "notes": "Africa 91(5), 2021, p. 713-741, en accès libre chez Cambridge University Press ; lu le 18 octobre 2026 dans le PDF de l'éditeur. L'article présente et traduit une chronique de Bailundo écrite en umbundu par des missionnaires congrégationalistes nord-américains entre 1903 et les années 1930 ; le manuscrit ne dit pas qui l'a racontée ni qui l'a notée (p. 713-714). Page 714 : la troisième partie du manuscrit porte, dans son index, le titre « The Chronicles of the Kings of Bailundu from Ekuikui II to Kalandula ». Page 730 : la liste des rois de Bailundo s'ouvre sur « 1. Ekuikui the Elder I – The insect that cannot be eaten by the bird » ; on y lit aussi « 11. Ekuikui II » et « 15. Kalandula ». Page 717 : cette liste, « which one supposes to be based on oral tradition », ne donne pas de dates."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

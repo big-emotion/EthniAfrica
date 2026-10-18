@@ -11,7 +11,14 @@
     {
       "spelling": "Irakoze",
       "attestations": [
-        { "countryId": "BDI", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "BDI",
+          "sourceRefs": ["afrik-candidate-queue"]
+        },
+        {
+          "countryId": "RWA",
+          "sourceRefs": ["nisr-vital-statistics-2025"]
+        }
       ]
     }
   ],
@@ -34,6 +41,11 @@
       "countryId": "BDI",
       "status": "attested",
       "sourceRefs": ["afrik-candidate-queue"]
+    },
+    {
+      "countryId": "RWA",
+      "status": "attested",
+      "sourceRefs": ["nisr-vital-statistics-2025"]
     }
   ],
   "alliances": [],
@@ -48,6 +60,14 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "nisr-vital-statistics-2025",
+      "title": "Vital Statistics Executive Summary 2025",
+      "url": "https://statistics.gov.rw/sites/default/files/documents/2026-07/CRVS%20%20BOOKLET%202025%20FINAL.pdf",
+      "tier": "official",
+      "source_kind": "official_statistics",
+      "notes": "Institut national de la statistique du Rwanda (NISR), Kigali, 2026. Le tableau 4, page 12, classe les noms les plus donnés aux enfants nés au Rwanda en 2025."
     }
   ],
   "gaps": [
@@ -71,5 +91,65 @@
       "fieldPath": "homonyms",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Irakoze est un nom donné aux enfants au Rwanda : en 2025, il compte parmi les cinq noms les plus choisis, pour les garçons comme pour les filles. Les sources que nous avons pu lire ne disent pas ce qu'il veut dire, ni depuis quand il est donné.",
+    "names": [
+      {
+        "nameText": "Irakoze",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom donné aux enfants au Rwanda, parmi les plus choisis en 2025 ; son sens n'est pas documenté ici.",
+        "periodLabel": "Donné aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "En 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Irakoze est le cinquième nom le plus souvent choisi pour les garçons nés au Rwanda : 2 637 enregistrements, selon l'Institut national de la statistique du Rwanda.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Vital Statistics Executive Summary 2025",
+                "author": "National Institute of Statistics of Rwanda",
+                "year": 2026,
+                "url": "https://statistics.gov.rw/sites/default/files/documents/2026-07/CRVS%20%20BOOKLET%202025%20FINAL.pdf",
+                "tier": "official",
+                "source_kind": "official_statistics",
+                "page": "p. 12",
+                "notes": "Kigali, Institut national de la statistique du Rwanda (NISR), 2026, sous licence CC BY 4.0. Lu le 18 octobre 2026, page vue sur l'image. Page 12, tableau 4, « Top 20 most preferred babies' surname in 2025 by sex » : « IRAKOZE » est au cinquième rang chez les garçons, avec 2 637 enregistrements, et au quatrième rang chez les filles, avec 3 079. Le document ne donne pas le sens des noms."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "En 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Irakoze est aussi donné aux filles : il est le quatrième nom le plus choisi pour celles qui sont nées au Rwanda, avec 3 079 enregistrements, selon le même institut.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Vital Statistics Executive Summary 2025",
+                "author": "National Institute of Statistics of Rwanda",
+                "year": 2026,
+                "url": "https://statistics.gov.rw/sites/default/files/documents/2026-07/CRVS%20%20BOOKLET%202025%20FINAL.pdf",
+                "tier": "official",
+                "source_kind": "official_statistics",
+                "page": "p. 12",
+                "notes": "Kigali, Institut national de la statistique du Rwanda (NISR), 2026, sous licence CC BY 4.0. Lu le 18 octobre 2026, page vue sur l'image. Page 12, tableau 4, « Top 20 most preferred babies' surname in 2025 by sex » : « IRAKOZE » est au cinquième rang chez les garçons, avec 2 637 enregistrements, et au quatrième rang chez les filles, avec 3 079. Le document ne donne pas le sens des noms."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
