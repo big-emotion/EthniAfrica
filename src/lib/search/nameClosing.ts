@@ -204,6 +204,12 @@ export interface NextStepTarget {
   id: string;
   name: string;
   relation: NextStepRelation;
+  /**
+   * A namer's card explains the naming, not the namer: these are the searched
+   * name's accounts, where the fiche tells who gave the name (« Peul », from
+   * Wolof). The namer's own summary only says what the namer is.
+   */
+  namingAccounts?: readonly string[];
 }
 
 /**
@@ -240,7 +246,47 @@ function namerOf(
   ]);
   if (own.has(origin)) return null;
   // The name is the code until the loader reads the language's fiche.
-  return { type: "language", id: origin, name: origin, relation: "namer" };
+  return {
+    type: "language",
+    id: origin,
+    name: origin,
+    relation: "namer",
+    namingAccounts: name.accounts.map((account) => account.statement),
+  };
+}
+
+function sentencesOf(text: string): string[] {
+  return (text.match(/[\s\S]+?[.!?](?=\s|$)|[\s\S]+$/gu) ?? [])
+    .map((sentence) => sentence.trim())
+    .filter(Boolean);
+}
+
+/**
+ * Why a namer is offered, in the fiche's own words: the first account of the
+ * searched name that names the namer, read up to the sentence that does, so a
+ * pronoun keeps the sentence it points back to (« Forme française du nom. Les
+ * sources consultées la font venir du wolof… »). Undefined when no account
+ * names it; the card then says what the namer is.
+ */
+// @req REQ-198
+export function namingReason(
+  accounts: readonly string[],
+  namer: string
+): string | undefined {
+  const word = normalizeString(namer).trim();
+  if (!word) return undefined;
+  const mentionsNamer = new RegExp(
+    `(?<![\\p{L}\\p{N}])${word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?![\\p{L}\\p{N}])`,
+    "u"
+  );
+  for (const statement of accounts) {
+    const sentences = sentencesOf(statement);
+    const at = sentences.findIndex((sentence) =>
+      mentionsNamer.test(normalizeString(sentence))
+    );
+    if (at >= 0) return sentences.slice(0, at + 1).join(" ");
+  }
+  return undefined;
 }
 
 /**

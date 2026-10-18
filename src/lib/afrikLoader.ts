@@ -23,6 +23,7 @@ import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
 import {
   firstSentence,
   nameFormOf,
+  namingReason,
   nextStepTargets,
   type NextStepCard,
   type NextStepKind,
@@ -414,8 +415,11 @@ async function resolveNamer(
 /**
  * The names a page offers next (brief 1, block 8): the ones its subjects'
  * data already links to, each with the first sentence of its own summary as
- * the reason. A target whose fiche does not load, or has no summary, is left
- * out; a page with no subject offers the unknown name's two invitations.
+ * the reason. A namer's reason is the relation instead, as the searched
+ * name's account tells it (« Peul » from Wolof, board search-peul-430); the
+ * namer's summary stands in only when no account names it. A target whose
+ * fiche does not load, or has no summary, is left out; a page with no subject
+ * offers the unknown name's two invitations.
  */
 // @req REQ-198
 export async function loadNextSteps(
@@ -462,7 +466,10 @@ export async function loadNextSteps(
           entry.name,
           entry.nameHistory.names.map((name) => name.nameText)
         ),
-        reason: firstSentence(summary),
+        reason:
+          (target.relation === "namer" &&
+            namingReason(target.namingAccounts ?? [], entry.name)) ||
+          firstSentence(summary),
       },
     ];
   });
