@@ -144,7 +144,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 678 -> 675 the same day: the Khainai, Koyra, Yerima and Kirdi fiches folded or retired after wave 12.
     // 675 -> 654 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
     // 654 -> 653 on 2026-10-14: the Nabt fiche's self-name left with it.
-    value: 653,
+    // 653 -> 654 on 2026-10-18: the Lingala fiche's hero now prints « Bato ya
+    // mangala », the self-name its name history already told.
+    value: 654,
     method:
       "fiches dont content.appellations.selfAppellation est renseigné et non vide",
     countedOn: COUNTED_ON,
@@ -471,7 +473,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 621 -> 622 on 2026-10-15: PAT_KWABENA, the Twi Tuesday day name, added with sources of its own (Christaller 1881, Agyekum 2006, Grottanelli 1977, Dolphyne 1986).
     // 622 -> 626 on 2026-10-16: PAT_BANGOURA, the Bangura fiche (since folded into it), PAT_CONTEH and PAT_KONE now cite sources of their own (Arcin 1907, Bamadaba, Binger 1892); all four cited only the candidate queue before (wave 23).
     // 626 -> 624 on 2026-10-16: the Koroma and Bangura fiches folded into PAT_KOUROUMA and PAT_BANGOURA; both cited sources of their own.
-    value: 624,
+    // 624 -> 635 on 2026-10-18: eleven Southern African family names of wave 25 (Baloyi, Gamedze, Ginindza, Hlophe, Letsie, Mabote, Mabuza, Macuacua, Magagula, Matsebula, Mondlane) now cite sources of their own (Junod, Van Warmelo, Ellenberger, the Swazi surnames dictionary); all eleven cited only the candidate queue before.
+    value: 635,
     method:
       "fiches dataset/source/afrik/patronymes/PAT_*.json portant un nameSystem et " +
       "au moins une source autre que la file d'attente des candidats — les fiches " +

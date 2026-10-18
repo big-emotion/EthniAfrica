@@ -1,4 +1,4 @@
-.PHONY: unit-tests integration-tests api-tests all-tests test format format-check lint type-check check e2e e2e-ui e2e-install editorial-check
+.PHONY: unit-tests integration-tests api-tests all-tests test format format-check lint type-check check e2e e2e-ui e2e-install editorial-check social-production-tests
 
 # Test commands as specified in TDD plan
 unit-tests:
@@ -46,7 +46,11 @@ format-check:
 editorial-check:
 	npm run check:editorial
 
-check: lint type-check format-check editorial-check all-tests
+# Node test files under .claude/, which vitest excludes; they need Chromium and ffmpeg.
+social-production-tests:
+	npm run test:social-production
+
+check: lint type-check format-check editorial-check all-tests social-production-tests
 	@echo "✅ All checks passed!"
 
 # Playwright E2E suite (separate from `check` to protect developer feedback loop).

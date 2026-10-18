@@ -34,6 +34,7 @@ export function FamilyLinguisticTraits({
     >
       <h2 id="family-linguistic-traits-heading">{copy.title}</h2>
       <FicheFieldList
+        fold
         language={language}
         fields={traitFields.flatMap(([label, field]) =>
           data[field] ? [{ label, prose: data[field] }] : []

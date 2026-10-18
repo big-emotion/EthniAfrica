@@ -110,5 +110,111 @@
         "tier": "unverified"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Sino-Mauriciens désigne les Mauriciens dont les ancêtres sont venus de Chine, et qui se nomment eux-mêmes ainsi. Avant ce nom, les rapports coloniaux britanniques parlaient de « population chinoise ». La Constitution de 1968 compte une communauté sino-mauricienne parmi les quatre communautés de Maurice. Nous présentons plus bas l'histoire de ce nom.",
+    "names": [
+      {
+        "nameText": "Sino-Mauriciens",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom des Mauriciens d'ascendance chinoise, écrit en anglais dès 1952.",
+        "usedIn": ["fra", "eng"],
+        "periodLabel": "Écrit dès 1952 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1968,
+              "to": null,
+              "label": "Depuis 1968"
+            },
+            "era": "modern",
+            "statement": "Le nom Sino-Mauriciens est celui d'une des quatre communautés que distingue la Constitution de Maurice pour les élections : une communauté hindoue, une communauté musulmane et une communauté sino-mauricienne. Toute personne qui ne semble pas, par son mode de vie, appartenir à l'une d'elles relève de la « population générale ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution of Mauritius, 1968 (révisée en 2016), First Schedule",
+                "author": "République de Maurice",
+                "year": 1968,
+                "url": "https://www.constituteproject.org/constitution/Mauritius_2016",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Texte lu sur Constitute le 18 octobre 2026. Le paragraphe 3 de la première annexe, « Communities », range la population en une communauté hindoue, une communauté musulmane, une communauté sino-mauricienne et la « population générale ».",
+                "page": "First Schedule, paragraphe 3(4)"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1952,
+              "to": 1952,
+              "label": "1952"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sino-Mauriciens est aussi celui que se donne une association de la communauté : en 1952, la Sino-Mauritian Association publie à Port-Louis une revue, Cosmos, selon la liste des périodiques du rapport colonial de cette année-là.",
+            "formAsWritten": "Sino-Mauritian Association",
+            "sources": [
+              {
+                "title": "Colonial Office, Report on Mauritius for the year 1952",
+                "author": "Colonial Office (Royaume-Uni)",
+                "year": 1954,
+                "url": "https://archive.org/details/mauritius-report-1952",
+                "tier": "referenced",
+                "source_kind": "government",
+                "notes": "Rapport annuel du gouvernement britannique sur la colonie de Maurice, Londres, Her Majesty's Stationery Office, 1954. Lu dans la numérisation Google d'Internet Archive. La page 5, qui ouvre la partie II sans numéro imprimé, est déduite de la page suivante, numérotée 6 ; la page 196 est lue sur l'image.",
+                "page": "p. 196"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1952,
+              "to": 1952,
+              "label": "1952"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sino-Mauriciens apparaît en anglais dans le rapport annuel du gouvernement britannique sur Maurice pour 1952 : pour la statistique, la population y est divisée en trois classes, dont la « population sino-mauricienne », faite des immigrants venus de Chine et de leurs descendants. C'est la plus ancienne trace de ce nom que le projet connaît. Les familles venues de Chine vivaient dans l'île bien avant lui.",
+            "formAsWritten": "Sino-Mauritian population",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Colonial Office, Report on Mauritius for the year 1952",
+                "author": "Colonial Office (Royaume-Uni)",
+                "year": 1954,
+                "url": "https://archive.org/details/mauritius-report-1952",
+                "tier": "referenced",
+                "source_kind": "government",
+                "notes": "Rapport annuel du gouvernement britannique sur la colonie de Maurice, Londres, Her Majesty's Stationery Office, 1954. Lu dans la numérisation Google d'Internet Archive. La page 5, qui ouvre la partie II sans numéro imprimé, est déduite de la page suivante, numérotée 6 ; la page 196 est lue sur l'image.",
+                "page": "p. 5"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1950,
+              "to": 1950,
+              "label": "1950"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sino-Mauriciens n'apparaît pas encore dans les sources que nous avons lues : le rapport colonial sur Maurice pour 1950 parle de « population chinoise », faite des immigrants venus de Chine et de leurs descendants. C'est, dit-il, le plus petit groupe de l'île, environ 3 % de la population, et il tient presque tout le commerce de détail de l'épicerie.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Colonial Office, Report on Mauritius for the year 1950",
+                "author": "Colonial Office (Royaume-Uni)",
+                "year": 1952,
+                "url": "https://archive.org/details/mauritius-report-1950",
+                "tier": "referenced",
+                "source_kind": "government",
+                "notes": "Rapport annuel du gouvernement britannique sur la colonie de Maurice, Londres, His Majesty's Stationery Office, 1952. Lu dans la numérisation Google d'Internet Archive. La page 15, qui ouvre la partie II sans numéro imprimé, est déduite de la page suivante, numérotée 16. Le rapport parle de la population avec le vocabulaire colonial de son temps.",
+                "page": "p. 15"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

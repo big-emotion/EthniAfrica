@@ -11,7 +11,27 @@
     {
       "spelling": "Mabote",
       "attestations": [
-        { "countryId": "MOZ", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "MOZ",
+          "sourceRefs": [
+            "afrik-candidate-queue",
+            "junod-1896-grammaire-ronga",
+            "cia-1986-mozambique-outlook"
+          ]
+        }
+      ]
+    },
+    {
+      "spelling": "Mabota",
+      "attestations": [
+        {
+          "countryId": "MOZ",
+          "sourceRefs": [
+            "junod-1896-grammaire-ronga",
+            "junod-1912-life-1",
+            "torre-do-valle-1906-shironga"
+          ]
+        }
       ]
     }
   ],
@@ -26,14 +46,19 @@
     {
       "peopleId": "PPL_TSONGA",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "junod-1912-life-1"]
     }
   ],
   "countries": [
     {
       "countryId": "MOZ",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": [
+        "afrik-candidate-queue",
+        "junod-1896-grammaire-ronga",
+        "junod-1912-life-1",
+        "cia-1986-mozambique-outlook"
+      ]
     }
   ],
   "alliances": [],
@@ -48,6 +73,46 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "junod-1896-grammaire-ronga",
+      "title": "Grammaire ronga, suivie d'un manuel de conversation et d'un vocabulaire ronga-portugais-français-anglais",
+      "url": "https://archive.org/details/grammairerongasu00junouoft",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Lausanne, Bridel, 1896 ; numérisation de l'université de Toronto sur Internet Archive, pages lues en image le 18 octobre 2026. L'introduction cite une description anonyme de la baie de Lourenço Marques écrite « dans le dernier quart du siècle passé » (p. 4), c'est-à-dire à la fin du XVIIIe siècle ; le projet n'a pas lu ce document lui-même."
+    },
+    {
+      "sourceKey": "junod-1912-life-1",
+      "title": "The Life of a South African Tribe, vol. I : The Social Life",
+      "url": "https://archive.org/details/cu31924012891127",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Neuchâtel, Attinger, 1912 ; numérisation de l'université Cornell sur Internet Archive, lue le 18 octobre 2026. Henri-Alexandre Junod, missionnaire suisse, décrit les Thonga (Tsonga) du sud du Mozambique et du Transvaal ; il écrit dans le contexte colonial et est cité pour ce qu'il rapporte."
+    },
+    {
+      "sourceKey": "junod-1913-life-2",
+      "title": "The Life of a South African Tribe, vol. II : The Psychic Life",
+      "url": "https://archive.org/details/lifeofsouthafric02junouoft",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Neuchâtel, Imprimerie Attinger frères, 1913 ; numérisation de l'université de Toronto sur Internet Archive, lue le 18 octobre 2026. Second volume de l'ouvrage de Henri-Alexandre Junod, missionnaire suisse, cité pour ce qu'il rapporte."
+    },
+    {
+      "sourceKey": "torre-do-valle-1906-shironga",
+      "title": "Diccionarios shironga-portuguez e portuguez-shironga, precedidos de uns breves elementos de grammatica do dialecto shironga, falado pelos indigenas de Lourenço Marques",
+      "url": "https://archive.org/details/diccionariosshi00vallgoog",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Lourenço Marques, Imprensa nacional, 1906 ; exemplaire numérisé par Google, page lue en image sur Internet Archive le 18 octobre 2026. À la p. 38, l'auteur corrige une liste de noms que l'administration portugaise écrit mal : « X, por Y » veut dire que X est écrit pour Y."
+    },
+    {
+      "sourceKey": "cia-1986-mozambique-outlook",
+      "title": "Mozambique: Short-term Outlook for the Chissano Government",
+      "url": "https://archive.org/details/cia-readingroom-document-cia-rdp86t01017r000707480001-4",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Note de la Direction du renseignement du 19 novembre 1986, déclassifiée en partie en 2011, lue sur Internet Archive le 18 octobre 2026. Au chapitre sur l'armée : « Machel's plans to replace Mabote with a lesser known officer, Army Political Commissar Major General Armando Panguene »."
     }
   ],
   "gaps": [
@@ -75,5 +140,284 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mabote est un nom de famille du Mozambique et une autre forme de Mabota, le nom d'un clan et d'un pays ronga au nord de Lourenço Marques, l'actuelle Maputo. Il est connu dès la fin du XVIIIe siècle sous la forme Mauote. Une explication de son origine est présentée plus bas.",
+    "names": [
+      {
+        "nameText": "Mabote",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille du Mozambique, autre forme du clan ronga Mabota, connu dès le XVIIIe siècle.",
+        "periodLabel": "Écrit dès 1896 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Mabote est une autre forme de Mabota, le nom d'un clan ronga et de son pays, au nord de Lourenço Marques : Henri-Alexandre Junod écrit Mabote pour la cour royale de ce pays, et Mabota pour le pays lui-même. Une explication de son origine est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Grammaire ronga, suivie d'un manuel de conversation et d'un vocabulaire ronga-portugais-français-anglais",
+                "author": "Henri-Alexandre Junod",
+                "year": 1896,
+                "url": "https://archive.org/details/grammairerongasu00junouoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 20 et 35",
+                "notes": "Lausanne, Bridel, 1896 ; numérisation de l'université de Toronto sur Internet Archive, pages lues en image le 18 octobre 2026. L'introduction cite une description anonyme de la baie de Lourenço Marques écrite « dans le dernier quart du siècle passé » (p. 4), c'est-à-dire à la fin du XVIIIe siècle ; le projet n'a pas lu ce document lui-même. P. 20 : la description anonyme « décrit tour à tour les cours royales du Tembé, de Matola, de Mabote (Mauote) » ; p. 35, note 1 : « Mabota, contrée au nord de la ville, est écrit : Mauote ou Mahota »."
+              },
+              {
+                "title": "The Life of a South African Tribe, vol. II : The Psychic Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1913,
+                "url": "https://archive.org/details/lifeofsouthafric02junouoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 125",
+                "notes": "Neuchâtel, Imprimerie Attinger frères, 1913 ; numérisation de l'université de Toronto sur Internet Archive, lue le 18 octobre 2026. Second volume de l'ouvrage de Henri-Alexandre Junod, missionnaire suisse, cité pour ce qu'il rapporte. P. 125 : « the King of Maouote (Mabota) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1986,
+              "to": 1986,
+              "label": "Novembre 1986"
+            },
+            "era": "modern",
+            "statement": "Le nom Mabote est porté comme nom de famille au Mozambique : en novembre 1986, une note de la CIA sur le nouveau gouvernement mozambicain parle d'un responsable de l'armée appelé Mabote, que le président Samora Machel avait prévu de remplacer.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Mozambique: Short-term Outlook for the Chissano Government",
+                "author": "Central Intelligence Agency",
+                "year": 1986,
+                "url": "https://archive.org/details/cia-readingroom-document-cia-rdp86t01017r000707480001-4",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "chapitre « A Discouraged Military »",
+                "notes": "Note de la Direction du renseignement du 19 novembre 1986, déclassifiée en partie en 2011, lue sur Internet Archive le 18 octobre 2026. Au chapitre sur l'armée : « Machel's plans to replace Mabote with a lesser known officer, Army Political Commissar Major General Armando Panguene »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1896,
+              "to": 1896,
+              "label": "Écrit en 1896"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mabote apparaît sous cette forme en 1896, dans la grammaire ronga de Henri-Alexandre Junod, qui parle de « la cour royale de Mabote (Mauote) » décrite par un voyageur du XVIIIe siècle. C'est la plus ancienne trace de cette forme que le projet connaît ; le nom existait déjà avant elle, sous la forme Mauote.",
+            "formAsWritten": "Mabote",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Henri-Alexandre Junod",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Grammaire ronga, suivie d'un manuel de conversation et d'un vocabulaire ronga-portugais-français-anglais",
+                "author": "Henri-Alexandre Junod",
+                "year": 1896,
+                "url": "https://archive.org/details/grammairerongasu00junouoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 20",
+                "notes": "Lausanne, Bridel, 1896 ; numérisation de l'université de Toronto sur Internet Archive, pages lues en image le 18 octobre 2026. L'introduction cite une description anonyme de la baie de Lourenço Marques écrite « dans le dernier quart du siècle passé » (p. 4), c'est-à-dire à la fin du XVIIIe siècle ; le projet n'a pas lu ce document lui-même. P. 20 : « Il décrit tour à tour les cours royales du Tembé, de Matola, de Mabote (Mauote) »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mabota",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme ronga du nom Mabote : un clan et un pays au nord de Maputo, écrits dès 1896.",
+        "periodLabel": "Écrit dès 1896",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1896,
+              "to": 1896,
+              "label": "Écrit en 1896"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mabota apparaît par écrit en 1896 dans la grammaire ronga de Henri-Alexandre Junod, qui le donne pour une « contrée au nord de la ville » de Lourenço Marques. C'est la plus ancienne trace de cette forme que le projet connaît ; le pays existait déjà avant elle.",
+            "formAsWritten": "Mabota",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Henri-Alexandre Junod",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Grammaire ronga, suivie d'un manuel de conversation et d'un vocabulaire ronga-portugais-français-anglais",
+                "author": "Henri-Alexandre Junod",
+                "year": 1896,
+                "url": "https://archive.org/details/grammairerongasu00junouoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 35, note 1",
+                "notes": "Lausanne, Bridel, 1896 ; numérisation de l'université de Toronto sur Internet Archive, pages lues en image le 18 octobre 2026. L'introduction cite une description anonyme de la baie de Lourenço Marques écrite « dans le dernier quart du siècle passé » (p. 4), c'est-à-dire à la fin du XVIIIe siècle ; le projet n'a pas lu ce document lui-même. P. 35, note 1 : « Ainsi Mabota, contrée au nord de la ville, est écrit : Mauote ou Mahota »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Décrit en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mabota désigne en 1912 un clan du groupe ronga, établi au nord de Lourenço Marques, selon Henri-Alexandre Junod. La tradition du clan lui donne une suite de chefs qui commence par Mabota lui-même, puis Magwenyana, Lawulana, Magumbin, Mbakana et Nwatjonga.",
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 16 et 24",
+                "notes": "Neuchâtel, Attinger, 1912 ; numérisation de l'université Cornell sur Internet Archive, lue le 18 octobre 2026. Henri-Alexandre Junod, missionnaire suisse, décrit les Thonga (Tsonga) du sud du Mozambique et du Transvaal ; il écrit dans le contexte colonial et est cité pour ce qu'il rapporte. P. 16 : « North of Lourenco Marques are the Mabota and Mazwaya clans » ; p. 24 : « Mabota : Mabota, Magwenyana, Lawulana, Magumbin, Mbakana, Nwatjonga »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Décrit en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mabota sert de nom de famille à tous les membres du clan, comme les autres noms de clans thonga : ce nom, le shibongo, est celui de l'ancêtre dont le clan pense descendre, explique Henri-Alexandre Junod. Il cite l'un de ses informateurs, Mboza : « le nom de famille ne se mange pas, il est éternel ».",
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 333 et 334",
+                "notes": "Neuchâtel, Attinger, 1912 ; numérisation de l'université Cornell sur Internet Archive, lue le 18 octobre 2026. Henri-Alexandre Junod, missionnaire suisse, décrit les Thonga (Tsonga) du sud du Mozambique et du Transvaal ; il écrit dans le contexte colonial et est cité pour ce qu'il rapporte. P. 333-334 : le clan porte le nom de « its original ancestor » ; « This name is a kind of family name for all the members of the clan » ; « \"Shibongo a shi diwe\", \"the family name is never eaten, it is eternal\" ! (Mboza) ». Le passage décrit les clans thonga en général."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "Proposé en 1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mabota viendrait peut-être du mot bota, une marmite de fer à trois pieds, selon Ernesto Torre do Valle, qui avance cette explication avec prudence (« talvez », peut-être).",
+            "hypothesisGroup": "origine du nom Mabota",
+            "sources": [
+              {
+                "title": "Diccionarios shironga-portuguez e portuguez-shironga, precedidos de uns breves elementos de grammatica do dialecto shironga, falado pelos indigenas de Lourenço Marques",
+                "author": "Ernesto Torre do Valle",
+                "year": 1906,
+                "url": "https://archive.org/details/diccionariosshi00vallgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 38",
+                "notes": "Lourenço Marques, Imprensa nacional, 1906 ; exemplaire numérisé par Google, page lue en image sur Internet Archive le 18 octobre 2026. À la p. 38, l'auteur corrige une liste de noms que l'administration portugaise écrit mal : « X, por Y » veut dire que X est écrit pour Y. P. 38 : « Mahota, por Mabota ; talvez de : bota, panella de ferro de tres pés. Cl. dyi-ma »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mauote",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme portugaise ancienne du nom Mabota, connue par un récit de la fin du XVIIIe siècle.",
+        "periodLabel": "Fin du XVIIIe siècle",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1775,
+              "to": 1800,
+              "label": "Fin du XVIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Mauote apparaît dans une description anonyme de la baie de Lourenço Marques, écrite à la fin du XVIIIe siècle par un Portugais, qui y décrit la cour du roi de Mauote, selon Henri-Alexandre Junod, qui la cite. C'est la plus ancienne trace de ce nom que le projet connaît ; le projet ne l'a lue qu'à travers Junod.",
+            "formAsWritten": "Mauote",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Grammaire ronga, suivie d'un manuel de conversation et d'un vocabulaire ronga-portugais-français-anglais",
+                "author": "Henri-Alexandre Junod",
+                "year": 1896,
+                "url": "https://archive.org/details/grammairerongasu00junouoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4 et 20",
+                "notes": "Lausanne, Bridel, 1896 ; numérisation de l'université de Toronto sur Internet Archive, pages lues en image le 18 octobre 2026. L'introduction cite une description anonyme de la baie de Lourenço Marques écrite « dans le dernier quart du siècle passé » (p. 4), c'est-à-dire à la fin du XVIIIe siècle ; le projet n'a pas lu ce document lui-même. P. 4 : « L'auteur de la description anonyme de la baie de Lourenço-Marquez, dans le dernier quart du siècle passé » ; p. 20 : « les cours royales du Tembé, de Matola, de Mabote (Mauote) »."
+              },
+              {
+                "title": "The Life of a South African Tribe, vol. II : The Psychic Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1913,
+                "url": "https://archive.org/details/lifeofsouthafric02junouoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 124 et 125",
+                "notes": "Neuchâtel, Imprimerie Attinger frères, 1913 ; numérisation de l'université de Toronto sur Internet Archive, lue le 18 octobre 2026. Second volume de l'ouvrage de Henri-Alexandre Junod, missionnaire suisse, cité pour ce qu'il rapporte. P. 124-125 : « a Portuguese who visited Lourenco Marques at the end of the XVIIIth century, and wrote an account of his impressions to Don F. Amaro de San Thome, Prelate of Mozambique » ; « I saw in the house of the King of Maouote (Mabota) two large chests full of amber »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1896,
+              "to": 1906,
+              "label": "Noté de 1896 à 1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mauote est l'une des écritures portugaises du nom Mabota, avec Mahota, explique Henri-Alexandre Junod : l'orthographe portugaise supprime le son b doux du ronga ou le remplace par u ou h. En 1906, Ernesto Torre do Valle relève encore Mahota dans une liste de noms que l'administration écrit mal.",
+            "sources": [
+              {
+                "title": "Grammaire ronga, suivie d'un manuel de conversation et d'un vocabulaire ronga-portugais-français-anglais",
+                "author": "Henri-Alexandre Junod",
+                "year": 1896,
+                "url": "https://archive.org/details/grammairerongasu00junouoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 35, note 1",
+                "notes": "Lausanne, Bridel, 1896 ; numérisation de l'université de Toronto sur Internet Archive, pages lues en image le 18 octobre 2026. L'introduction cite une description anonyme de la baie de Lourenço Marques écrite « dans le dernier quart du siècle passé » (p. 4), c'est-à-dire à la fin du XVIIIe siècle ; le projet n'a pas lu ce document lui-même. P. 35, note 1 : « L'orthographe portugaise des noms landins supprime cette lettre ou la remplace par u (w) ou h. Ainsi Mabota, contrée au nord de la ville, est écrit : Mauote ou Mahota »."
+              },
+              {
+                "title": "Diccionarios shironga-portuguez e portuguez-shironga, precedidos de uns breves elementos de grammatica do dialecto shironga, falado pelos indigenas de Lourenço Marques",
+                "author": "Ernesto Torre do Valle",
+                "year": 1906,
+                "url": "https://archive.org/details/diccionariosshi00vallgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 38",
+                "notes": "Lourenço Marques, Imprensa nacional, 1906 ; exemplaire numérisé par Google, page lue en image sur Internet Archive le 18 octobre 2026. À la p. 38, l'auteur corrige une liste de noms que l'administration portugaise écrit mal : « X, por Y » veut dire que X est écrit pour Y. P. 38 : « Mahota, por Mabota »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

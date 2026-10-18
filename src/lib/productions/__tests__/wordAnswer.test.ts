@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import type { LedgerEntry } from "../ledger";
-import { findWordAnswer } from "../wordAnswer";
+import { crawlableWordLabels, findWordAnswer } from "../wordAnswer";
 
 // A test fixture, not the registry's data: the real record gets its `answer`
 // in a separate data session.
@@ -149,5 +149,36 @@ describe("findWordAnswer", () => {
     expect(several.origin?.debated).toBe(true);
     // The count still says how many sources the piece rests on.
     expect(several.sources.count).toBe(1);
+  });
+});
+
+describe("crawlableWordLabels", () => {
+  // A word's address is its French label, offered to crawlers once the piece
+  // cites a source above `unverified`: the ledger lists the piece's sources
+  // once, so that is where the threshold reads them.
+  // @req REQ-200
+  it("offers a published word whose piece cites a source above unverified", () => {
+    expect(crawlableWordLabels([pharaoh])).toEqual(["pharaon"]);
+  });
+
+  // @req REQ-200
+  it("keeps back a word whose piece cites only unverified sources, or no answer", () => {
+    const weak: LedgerEntry = {
+      ...pharaoh,
+      sources: [
+        { title: "Un blog", url: "https://example.org", tier: "unverified" },
+      ],
+    };
+
+    expect(crawlableWordLabels([weak, withoutAnswer])).toEqual([]);
+  });
+
+  // ethnie and griot carry several accounts and no per-account source; they
+  // still meet the threshold through the piece's own sources.
+  // @req REQ-200
+  it("offers the registry's ethnie and griot", () => {
+    expect(crawlableWordLabels()).toEqual(
+      expect.arrayContaining(["ethnie", "griot"])
+    );
   });
 });

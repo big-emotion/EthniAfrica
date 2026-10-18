@@ -1,14 +1,19 @@
 "use client";
 
-import { Fragment, useState, type ReactNode } from "react";
+import { useRef, useState, type ReactNode } from "react";
 
 import { getSearchEntityLabel } from "@/components/search/searchEntityAccent";
 import { NameSourcesBlock } from "@/components/search/timeline/NameClosing";
+import {
+  NamedText,
+  SourcedText,
+} from "@/components/search/timeline/SourcedText";
 import { otherVoiceKinds } from "@/lib/search/nameClosing";
 import { TileSourceMarker } from "@/components/search/timeline/TileSourceMarker";
 import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
 import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import { nameTimelineCopy } from "@/lib/i18n/copy/nameTimeline";
+import { peopleCopy } from "@/lib/i18n/copy/people";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
 import {
   africanRegionsOf,
@@ -16,7 +21,7 @@ import {
 } from "@/lib/search/elsewhereAnchors";
 import {
   buildNameTimeline,
-  splitNamedText,
+  periodRuns,
   type NameHistoryAccount,
   type TimelineRegime,
   type TimelineTile,
@@ -34,7 +39,7 @@ export interface NameTimelineProps {
   /** The subject's countries, so « ailleurs » skips its own region. */
   countryIds?: readonly string[];
   /**
-   * Whether « Les sources parlent » opens its first family (brief 1): the
+   * Whether « Les sources du nom … » opens its first family (brief 1): the
    * first subject of the page does, the others stay folded.
    */
   sourcesOpen?: boolean;
@@ -44,25 +49,23 @@ export interface NameTimelineProps {
    * timeline »).
    */
   ficheLink?: ReactNode;
+  /**
+   * The one video made on the subject (brief 11 §2), drawn after the end
+   * line and the hand-off, whichever name is open: it belongs to the subject.
+   */
+  video?: ReactNode;
+  /**
+   * The name the chips have open, when the page keeps it: a lens round trip
+   * unmounts the timeline, and the page's closing band speaks of that name
+   * too, so the page holds the one copy. Without it the timeline keeps its
+   * own, and opens on its first name.
+   */
+  openName?: string;
+  onOpenNameChange?: (nameText: string) => void;
   language: Language;
 }
 
 const REGIMES: readonly TimelineRegime[] = ["modern", "colonial", "polity"];
-
-/** A sentence with the names it cites set in italics. */
-function NamedText({ text, forms }: { text: string; forms: string[] }) {
-  return (
-    <>
-      {splitNamedText(text, forms).map((part, index) =>
-        part.name ? (
-          <em key={index}>{part.text}</em>
-        ) : (
-          <Fragment key={index}>{part.text}</Fragment>
-        )
-      )}
-    </>
-  );
-}
 
 /**
  * The name-history timeline (REQ-198, DEC-073): one name at a time, from today
@@ -81,13 +84,21 @@ export function NameTimeline({
   countryIds,
   sourcesOpen = false,
   ficheLink,
+  video,
+  openName,
+  onOpenNameChange,
   language,
 }: NameTimelineProps) {
   const copy = nameTimelineCopy[language];
   const leadCopy = searchFeedCopy[language].searchedLead;
   const timeline = buildNameTimeline(history, searched);
-  const [shown, setShown] = useState(0);
+  const [ownOpenName, setOwnOpenName] = useState<string>();
+  const openIndex = timeline.names.findIndex(
+    ({ nameText }) => nameText === (openName ?? ownOpenName)
+  );
+  const shown = Math.max(openIndex, 0);
   const [elsewhere, setElsewhere] = useState(false);
+  const namesRef = useRef<HTMLDivElement>(null);
   const name = timeline.names[shown];
   const forms = timeline.italicForms;
   const Heading = headingLevel;
@@ -99,6 +110,31 @@ export function NameTimeline({
   const selfIndex = timeline.selfLead
     ? timeline.names.findIndex((n) => n.nameText === timeline.selfLead!.self)
     : -1;
+  const selfLead = selfLine && selfIndex >= 0 ? timeline.selfLead : undefined;
+
+  const show = (index: number) => {
+    const { nameText } = timeline.names[index];
+    setOwnOpenName(nameText);
+    onOpenNameChange?.(nameText);
+  };
+  // The page introduces the name before it explains it (doctrine §1.1): the
+  // reader lands on the chips and the intro line under them, never straight
+  // on the explanations. Focus follows the scroll (WCAG 2.4.3).
+  const openSelfName = () => {
+    show(selfIndex);
+    const names = namesRef.current;
+    if (!names) return;
+    const reduced = window.matchMedia?.(
+      "(prefers-reduced-motion: reduce)"
+    )?.matches;
+    names.scrollIntoView({
+      block: "start",
+      behavior: reduced ? "auto" : "smooth",
+    });
+    names
+      .querySelectorAll<HTMLButtonElement>("button")
+      [selfIndex]?.focus({ preventScroll: true });
+  };
 
   const subjectRegions = africanRegionsOf(countryIds);
   const anchorOf = (tile: TimelineTile) =>
@@ -113,16 +149,15 @@ export function NameTimeline({
   const passage = (account: NameHistoryAccount, key: string) => (
     <>
       <p className="afh-name-timeline-statement">
-        <NamedText text={account.statement} forms={forms} />
-        {/* A no-break space, so the diamond never wraps alone onto a line. */}
-        {"\u00a0"}
-        <TileSourceMarker
-          statement={account.statement}
-          sources={account.sources}
-          anchorId={anchorIdOf(key)}
-          language={language}
-          surface="timeline"
-        />
+        <SourcedText text={account.statement} forms={forms}>
+          <TileSourceMarker
+            statement={account.statement}
+            sources={account.sources}
+            anchorId={anchorIdOf(key)}
+            language={language}
+            surface="timeline"
+          />
+        </SourcedText>
       </p>
       {account.actors?.length ? (
         <p className="afh-name-timeline-actors">
@@ -148,17 +183,27 @@ export function NameTimeline({
           <p className="afh-name-timeline-summary">
             <NamedText text={timeline.summary} forms={forms} />
           </p>
-          {timeline.selfLead && selfLine && selfIndex >= 0 ? (
+          {selfLead ? (
             <button
               type="button"
               className={cn("afh-name-timeline-lead", CHARTER_FOCUS_RING)}
-              onClick={() => setShown(selfIndex)}
+              onClick={openSelfName}
             >
-              <span>
-                <NamedText
-                  text={`${leadCopy.searched(timeline.selfLead.searched)} ${selfLine(timeline.selfLead.self)}`}
-                  forms={forms}
-                />
+              <span className="afh-name-timeline-lead-text">
+                <span>
+                  <NamedText
+                    text={`${leadCopy.searched(selfLead.searched)} ${selfLine(selfLead.self)}`}
+                    forms={forms}
+                  />
+                </span>
+                {selfLead.readings > 0 ? (
+                  <span className="afh-name-timeline-lead-line">
+                    <NamedText
+                      text={copy.selfReadings(selfLead.self, selfLead.readings)}
+                      forms={forms}
+                    />
+                  </span>
+                ) : null}
               </span>
               <span className="afh-name-timeline-lead-go" aria-hidden="true">
                 {copy.seeSelfName}
@@ -168,6 +213,7 @@ export function NameTimeline({
         </div>
 
         <div
+          ref={namesRef}
           role="group"
           aria-label={copy.namesLabel(timeline.names[0].nameText)}
           className="afh-name-timeline-names"
@@ -177,7 +223,7 @@ export function NameTimeline({
               key={candidate.nameText}
               type="button"
               aria-pressed={index === shown}
-              onClick={() => setShown(index)}
+              onClick={() => show(index)}
               className={cn("afh-name-timeline-name", CHARTER_FOCUS_RING)}
             >
               <span>{candidate.nameText}</span>
@@ -245,7 +291,8 @@ export function NameTimeline({
           className="afh-chronology"
           aria-label={copy.tilesLabel(name.nameText)}
         >
-          {name.tiles.map((tile) => {
+          {/* A run of tiles of one period is one station (brief 11 §4). */}
+          {periodRuns(name.tiles).map(([tile, ...joined]) => {
             const anchor = elsewhere ? anchorOf(tile) : undefined;
             return (
               <li
@@ -295,6 +342,11 @@ export function NameTimeline({
                   ) : (
                     passage(tile.accounts[0], tile.key)
                   )}
+                  {joined.map((next) => (
+                    <div key={next.key} className="afh-name-timeline-join">
+                      {passage(next.accounts[0], next.key)}
+                    </div>
+                  ))}
                   {anchor ? (
                     <div
                       className="afh-name-timeline-elsewhere"
@@ -310,15 +362,15 @@ export function NameTimeline({
                           )}
                           forms={forms}
                         />{" "}
-                        {anchor.sentence}
-                        {"\u00a0"}
-                        <TileSourceMarker
-                          statement={anchor.sentence}
-                          sources={anchor.sources}
-                          anchorId={anchorIdOf(`${tile.key}-elsewhere`)}
-                          language={language}
-                          surface="timeline"
-                        />
+                        <SourcedText text={anchor.sentence} forms={[]}>
+                          <TileSourceMarker
+                            statement={anchor.sentence}
+                            sources={anchor.sources}
+                            anchorId={anchorIdOf(`${tile.key}-elsewhere`)}
+                            language={language}
+                            surface="timeline"
+                          />
+                        </SourcedText>
                       </p>
                     </div>
                   ) : null}
@@ -328,6 +380,33 @@ export function NameTimeline({
           })}
         </ol>
         <p className="afh-name-timeline-end">{copy.end(name.nameText)}</p>
+        {/* Off the thread, no dot, no date: the way on to the self-name's
+            story, while the searched name is open (brief 11 §1b-c). */}
+        {selfLead && shown === 0 ? (
+          <div className="afh-tile afh-name-timeline-handoff" data-handoff="">
+            <p className="afh-tile-label">
+              {peopleCopy[language].nameAnswer.badges.own}
+            </p>
+            <p className="afh-name-timeline-handoff-name">{selfLead.self}</p>
+            <p className="afh-name-timeline-handoff-text">
+              <NamedText
+                text={`${selfLine(selfLead.self)} ${copy.handOffStory(selfLead.readings)}`}
+                forms={forms}
+              />
+            </p>
+            <button
+              type="button"
+              onClick={openSelfName}
+              className={cn(
+                "afh-name-timeline-handoff-action",
+                CHARTER_FOCUS_RING
+              )}
+            >
+              {copy.handOffAction(selfLead.self)}
+            </button>
+          </div>
+        ) : null}
+        {video}
       </section>
       {ficheLink}
       {/* Block 3 follows the name the chips have open (brief 1). */}

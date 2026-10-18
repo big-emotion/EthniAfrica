@@ -204,6 +204,23 @@ describe("middleware", () => {
       );
     });
 
+    // A name's address sits below the search page, its segment percent-encoded
+    // when the form holds ɓ or an accent; the proxy must hand it to the page,
+    // which alone knows whether it answers or redirects (REQ-200).
+    // @req REQ-200
+    it.each([
+      "/fr/atlas/recherche/lingala",
+      "/fr/atlas/recherche/ful%C9%93e",
+      "/fr/atlas/recherche/traor%C3%A9",
+    ])("lets the name address %s through to its page", async (address) => {
+      const response = await middleware(
+        new NextRequest(`http://localhost:3000${address}`)
+      );
+
+      expect(response.status).toBe(200);
+      expect(response.headers.get("location")).toBeNull();
+    });
+
     // The rename moved a hub, not the resource pages it groups. /fr/atlas/peuples
     // is a live route and must not be swept up by a prefix match on
     // "peuples".

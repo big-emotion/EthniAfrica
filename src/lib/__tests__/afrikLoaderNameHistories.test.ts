@@ -59,6 +59,28 @@ describe("loadSubjectNameHistories", () => {
     ]);
   });
 
+  // The address page reads on the server, where there is no network path to
+  // its own API: the same loader runs over the handlers instead (REQ-200).
+  // @req REQ-200
+  it("reads through the transport it is given, never through fetch", async () => {
+    const fetchMock = vi.fn();
+    vi.stubGlobal("fetch", fetchMock);
+    const transport = vi.fn(async () =>
+      ok({ id: "lin", nameHistory: LINGALA_HISTORY })
+    );
+    const lin = subject("language", "lin");
+
+    const histories = await loadSubjectNameHistories(
+      [lin],
+      undefined,
+      transport
+    );
+
+    expect(transport).toHaveBeenCalledWith("/api/v2/languages/lin", undefined);
+    expect(fetchMock).not.toHaveBeenCalled();
+    expect(histories).toEqual([{ subject: lin, nameHistory: LINGALA_HISTORY }]);
+  });
+
   // A missing timeline leaves the answer as the default; it never fails the
   // search it accompanies.
   // @req REQ-198
@@ -98,20 +120,38 @@ describe("loadNextSteps — « Poursuivre avec un autre nom »", () => {
     languageFamilyId: "FLG_ATLANTIQUE" as SearchResult["languageFamilyId"],
     languageFamilyName: "Atlantique",
   };
-  /** The Peul fiche files its French form as coming from `origin`. */
-  const peulFrom = (origin: string) => [
+  /**
+   * The Peul fiche files its French form as coming from `origin`, and may
+   * tell the relation in an account of its own.
+   */
+  const peulFrom = (origin: string, relation?: string) => [
     {
       subject: fula,
       nameHistory: {
         ...PEUL_HISTORY,
         names: PEUL_HISTORY.names.map((name) =>
           name.nameText === "Peul"
-            ? { ...name, languageOfOrigin: origin }
+            ? {
+                ...name,
+                languageOfOrigin: origin,
+                accounts: relation
+                  ? [
+                      {
+                        ...name.accounts[0],
+                        statement: relation,
+                        formAsWritten: undefined,
+                      },
+                      ...name.accounts,
+                    ]
+                  : name.accounts,
+              }
             : name
         ),
       },
     },
   ];
+  const PEUL_FROM_WOLOF =
+    "Forme française du nom. Les sources consultées la font venir du wolof, où le peuple est nommé d'une forme proche. Maurice Delafosse écrit que les Wolof prononcent Peul le radical de Foulbé.";
   const wolofLanguage = (
     speakingPeoples: Array<{ id: string; name: string }>
   ) =>
@@ -136,7 +176,46 @@ describe("loadNextSteps — « Poursuivre avec un autre nom »", () => {
       ),
     });
 
-  // Brief 1, board search-peul-430: « Peuple · Wolof », then the family.
+  // Brief 1, board search-peul-430: « Peuple · Wolof », then the family. The
+  // namer's reason is the relation the searched name's own account tells, up
+  // to the sentence that names the namer (triage of 2026-10-17).
+  // @req REQ-198
+  it("gives a namer card the account of the searched name that names the relation", async () => {
+    vi.stubGlobal(
+      "fetch",
+      fiches({
+        "/api/v2/languages/wol": () =>
+          wolofLanguage([{ id: "PPL_WOLOF", name: "Wolof" }]),
+        "/api/v2/peoples/PPL_WOLOF": () =>
+          ok({
+            nameHistory: historyOf(
+              "Le nom Wolof est celui que ce peuple se donne. Son histoire est présentée plus bas.",
+              "Wolof"
+            ),
+          }),
+        "/api/v2/language-families/FLG_ATLANTIQUE": atlantique,
+      })
+    );
+
+    const [namer] = await loadNextSteps(
+      [fula],
+      "fr",
+      undefined,
+      peulFrom("wol", PEUL_FROM_WOLOF),
+      "peul"
+    );
+
+    expect(namer).toEqual({
+      relation: "namer",
+      kind: "Peuple",
+      name: "Wolof",
+      reason:
+        "Forme française du nom. Les sources consultées la font venir du wolof, où le peuple est nommé d'une forme proche.",
+    });
+  });
+
+  // A fiche that files the origin without telling it keeps the namer's own
+  // first sentence, so the card still says what the namer is.
   // @req REQ-198
   it("offers the people whose language gave the searched name, then the family", async () => {
     vi.stubGlobal(

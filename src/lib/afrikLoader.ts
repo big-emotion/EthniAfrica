@@ -23,6 +23,7 @@ import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
 import {
   firstSentence,
   nameFormOf,
+  namingReason,
   nextStepTargets,
   type NextStepCard,
   type NextStepKind,
@@ -111,11 +112,26 @@ export interface SearchOptions extends SearchQueryOptions {
   type?: SearchEntityType;
   /** Cancels a committed search when a newer query supersedes it. */
   signal?: AbortSignal;
+  /** How the request reaches the API; the browser's `fetch` when absent. */
+  transport?: CorpusTransport;
 }
 
-function fetchWithSignal(url: string, signal?: AbortSignal): Promise<Response> {
-  return signal ? fetch(url, { signal }) : fetch(url);
-}
+/**
+ * How a reader reaches `/api/v2`, given the path and query it would fetch.
+ *
+ * The browser fetches. The address page of a name (REQ-200) reads on the
+ * server, where its own API has no network path, so it hands these loaders a
+ * transport that calls the handlers instead
+ * (`src/lib/search/serverSearchReading.ts`): one reading for both, never a
+ * second mapping of the envelopes that could drift from this one.
+ */
+export type CorpusTransport = (
+  path: string,
+  signal?: AbortSignal
+) => Promise<Response>;
+
+const fetchWithSignal: CorpusTransport = (url, signal) =>
+  signal ? fetch(url, { signal }) : fetch(url);
 
 function isAbortError(error: unknown): boolean {
   return (
@@ -204,8 +220,9 @@ export async function searchWithLeads(
   query: string,
   options: SearchOptions = {}
 ): Promise<SearchWithLeads> {
+  const transport = options.transport ?? fetchWithSignal;
   try {
-    const response = await fetchWithSignal(
+    const response = await transport(
       `${API_BASE}/search?${buildSearchParams(query, options)}`,
       options.signal
     );
@@ -262,7 +279,8 @@ export async function loadSearchCompanions(
   subjects: readonly SearchCompanionSubject[],
   language: Language,
   signal?: AbortSignal,
-  word?: string
+  word?: string,
+  transport: CorpusTransport = fetchWithSignal
 ): Promise<SearchCompanionsData> {
   const params = new URLSearchParams();
   if (word?.trim()) params.set("word", word.trim());
@@ -276,7 +294,7 @@ export async function loadSearchCompanions(
   }
   params.set("lang", language);
 
-  const response = await fetchWithSignal(
+  const response = await transport(
     `${API_BASE}/search/companions?${params}`,
     signal
   );
@@ -305,12 +323,13 @@ const FICHE_ENDPOINTS: Partial<Record<SearchEntityType, string>> = {
 async function loadFicheData(
   type: SearchEntityType,
   id: string,
-  signal?: AbortSignal
+  signal: AbortSignal | undefined,
+  transport: CorpusTransport
 ): Promise<Record<string, unknown> | null> {
   const endpoint = FICHE_ENDPOINTS[type];
   if (!endpoint) return null;
   try {
-    const response = await fetchWithSignal(
+    const response = await transport(
       `${API_BASE}/${endpoint}/${encodeURIComponent(id)}`,
       signal
     );
@@ -336,10 +355,11 @@ function readNameHistory(
 
 async function loadNameHistory(
   subject: SearchResult,
-  signal?: AbortSignal
+  signal: AbortSignal | undefined,
+  transport: CorpusTransport
 ): Promise<{ subject: SearchResult; nameHistory: NameHistory } | null> {
   const nameHistory = readNameHistory(
-    await loadFicheData(subject.type, subject.id, signal)
+    await loadFicheData(subject.type, subject.id, signal, transport)
   );
   return nameHistory ? { subject, nameHistory } : null;
 }
@@ -368,7 +388,8 @@ interface ResolvedTarget {
  */
 async function resolveNamer(
   fiche: Record<string, unknown>,
-  signal?: AbortSignal
+  signal: AbortSignal | undefined,
+  transport: CorpusTransport
 ): Promise<ResolvedTarget> {
   const name = String(fiche.name ?? "");
   const language: ResolvedTarget = {
@@ -384,7 +405,7 @@ async function resolveNamer(
   );
   if (!people) return language;
   const nameHistory = readNameHistory(
-    await loadFicheData("people", people.id, signal)
+    await loadFicheData("people", people.id, signal, transport)
   );
   return nameHistory?.summary
     ? { type: "people", name: people.name, nameHistory }
@@ -394,8 +415,11 @@ async function resolveNamer(
 /**
  * The names a page offers next (brief 1, block 8): the ones its subjects'
  * data already links to, each with the first sentence of its own summary as
- * the reason. A target whose fiche does not load, or has no summary, is left
- * out; a page with no subject offers the unknown name's two invitations.
+ * the reason. A namer's reason is the relation instead, as the searched
+ * name's account tells it (« Peul » from Wolof, board search-peul-430); the
+ * namer's summary stands in only when no account names it. A target whose
+ * fiche does not load, or has no summary, is left out; a page with no subject
+ * offers the unknown name's two invitations.
  */
 // @req REQ-198
 export async function loadNextSteps(
@@ -406,16 +430,22 @@ export async function loadNextSteps(
     subject: SearchResult;
     nameHistory: NameHistory;
   }> = [],
-  searched = ""
+  searched = "",
+  transport: CorpusTransport = fetchWithSignal
 ): Promise<NextStepCard[]> {
   const kinds = nameClosingCopy[language].nextRelation;
   const targets = nextStepTargets(subjects, histories, searched);
   const resolved = await Promise.all(
     targets.map(async (target): Promise<ResolvedTarget | null> => {
-      const fiche = await loadFicheData(target.type, target.id, signal);
+      const fiche = await loadFicheData(
+        target.type,
+        target.id,
+        signal,
+        transport
+      );
       if (!fiche) return null;
       return target.relation === "namer"
-        ? resolveNamer(fiche, signal)
+        ? resolveNamer(fiche, signal, transport)
         : {
             type: target.type,
             name: target.name,
@@ -436,7 +466,10 @@ export async function loadNextSteps(
           entry.name,
           entry.nameHistory.names.map((name) => name.nameText)
         ),
-        reason: firstSentence(summary),
+        reason:
+          (target.relation === "namer" &&
+            namingReason(target.namingAccounts ?? [], entry.name)) ||
+          firstSentence(summary),
       },
     ];
   });
@@ -450,10 +483,11 @@ export async function loadNextSteps(
 // @req REQ-198
 export async function loadSubjectNameHistories(
   subjects: readonly SearchResult[],
-  signal?: AbortSignal
+  signal?: AbortSignal,
+  transport: CorpusTransport = fetchWithSignal
 ): Promise<Array<{ subject: SearchResult; nameHistory: NameHistory }>> {
   const histories = await Promise.all(
-    subjects.map((subject) => loadNameHistory(subject, signal))
+    subjects.map((subject) => loadNameHistory(subject, signal, transport))
   );
   return histories.filter((entry) => entry !== null);
 }

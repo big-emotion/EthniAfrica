@@ -1,5 +1,7 @@
 import type { ReactNode } from "react";
 
+import { FicheFold } from "@/components/fiche/FicheFold";
+import { foldAfterFirst } from "@/lib/fiche/fold";
 import {
   parseFicheProse,
   type ProseBlock,
@@ -130,6 +132,12 @@ export interface FicheFieldListProps {
   className?: string;
   /** Carried by the paragraphs inside each definition. */
   paragraphClassName?: string;
+  /**
+   * A long reference chapter keeps its first field and folds the rest behind
+   * one control that names them (brief 10 §2). Opt-in: the chapters about a
+   * fiche's own names never fold, and they read through this list too.
+   */
+  fold?: boolean;
   language?: Language;
 }
 
@@ -148,6 +156,7 @@ export function FicheFieldList({
   fields,
   className,
   paragraphClassName,
+  fold = false,
   language = FALLBACK_LOCALE,
 }: FicheFieldListProps) {
   const filled = fields.filter(
@@ -155,13 +164,55 @@ export function FicheFieldList({
   );
   if (filled.length === 0) return null;
 
+  const { shown, folded } = fold
+    ? foldAfterFirst(filled)
+    : { shown: filled, folded: [] };
+
+  return (
+    <>
+      <FieldDefinitions
+        fields={shown}
+        className={className}
+        paragraphClassName={paragraphClassName}
+        language={language}
+      />
+      {folded.length > 0 ? (
+        <FicheFold
+          label={ficheCopy[language].fold.seeAlso(
+            folded.map((field) => field.label)
+          )}
+          language={language}
+        >
+          <FieldDefinitions
+            fields={folded}
+            className={className}
+            paragraphClassName={paragraphClassName}
+            language={language}
+          />
+        </FicheFold>
+      ) : null}
+    </>
+  );
+}
+
+function FieldDefinitions({
+  fields,
+  className,
+  paragraphClassName,
+  language,
+}: {
+  fields: readonly FicheField[];
+  className?: string;
+  paragraphClassName?: string;
+  language: Language;
+}) {
   return (
     <dl
       className={
         className ? `afh-prose-fields ${className}` : "afh-prose-fields"
       }
     >
-      {filled.map((field) => (
+      {fields.map((field) => (
         <div key={field.label}>
           <dt className="afh-prose-term">{field.label}</dt>
           <dd className="afh-prose-def" lang={field.lang}>

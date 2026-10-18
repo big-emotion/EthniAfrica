@@ -11,7 +11,10 @@
     {
       "spelling": "Niyonzima",
       "attestations": [
-        { "countryId": "RWA", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "RWA",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -71,5 +74,72 @@
       "fieldPath": "homonyms",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Niyonzima est un nom du Rwanda et du Burundi. Il veut dire « il est le vivant », et « il » désigne Imana, le nom de Dieu dans ces deux pays, selon la missionnaire Rosemary Guillebaud. Un père le donne à son enfant pour louer la bonté d'Imana. On ne sait pas avec certitude depuis quand il est donné, ni depuis quand des familles le portent comme nom de famille.",
+    "names": [
+      {
+        "nameText": "Niyonzima",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kin",
+        "namedBy": null,
+        "shortLine": "Un nom du Rwanda et du Burundi qui veut dire « il est le vivant », Imana, selon une missionnaire en 1950.",
+        "periodLabel": "Écrit dès 1950",
+        "accounts": [
+          {
+            "period": {
+              "from": 1950,
+              "to": 1950,
+              "label": "Décrit en 1950"
+            },
+            "era": "colonial",
+            "statement": "Le nom Niyonzima veut dire « il est le vivant », et « il » désigne Imana, le nom de Dieu au Rwanda et au Burundi. C'est l'un des noms par lesquels un père loue la bonté d'Imana en nommant son enfant, selon la missionnaire Rosemary Guillebaud.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Idea of God in Ruanda-Urundi",
+                "author": "Rosemary Guillebaud",
+                "year": 1950,
+                "url": "https://archive.org/details/dli.ernet.233313",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 194-195",
+                "notes": "Chapitre 6 du livre African Ideas of God, dirigé par Edwin W. Smith, Londres, Edinburgh House Press, 1950. L'autrice, de la Church Missionary Society, a traduit la Bible en kirundi. Lu le 18 octobre 2026 dans la numérisation de la Digital Library of India hébergée par Internet Archive ; les pages 194 et 195 ont été vues en image. Page 194 : c'est le père qui nomme l'enfant ; dans chaque nom, « il » désigne Imana ; les noms en italique sont communs aux deux pays, les autres sont de l'Urundi. Page 195, parmi les noms qui louent la bonté d'Imana : « Niyonzima, ‘He is the living one’ », en italique."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1950,
+              "to": 1950,
+              "label": "1950"
+            },
+            "era": "colonial",
+            "statement": "Le nom Niyonzima apparaît par écrit chez Rosemary Guillebaud, une missionnaire qui a traduit la Bible en kirundi. Elle le donne comme un nom porté à la fois au Ruanda et en Urundi, les actuels Rwanda et Burundi. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; elle dit quand une autrice l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Niyonzima",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Rosemary Guillebaud",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Idea of God in Ruanda-Urundi",
+                "author": "Rosemary Guillebaud",
+                "year": 1950,
+                "url": "https://archive.org/details/dli.ernet.233313",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 194-195",
+                "notes": "Chapitre 6 du livre African Ideas of God, dirigé par Edwin W. Smith, Londres, Edinburgh House Press, 1950. L'autrice, de la Church Missionary Society, a traduit la Bible en kirundi. Lu le 18 octobre 2026 dans la numérisation de la Digital Library of India hébergée par Internet Archive ; les pages 194 et 195 ont été vues en image. Page 194 : les noms en italique sont communs aux deux pays, les autres sont de l'Urundi. Page 195 : « Niyonzima », en italique, donc commun au Ruanda et à l'Urundi."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

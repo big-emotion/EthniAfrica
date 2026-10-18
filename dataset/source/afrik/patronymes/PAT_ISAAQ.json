@@ -97,5 +97,272 @@
       "fieldPath": "homonyms",
       "reason": "Les sources consultées ne permettent pas encore de présenter un autre nom écrit comme Isaaq, mais d'origine différente."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Isaaq est celui de l'une des grandes familles de clans somalies, la plus nombreuse du Somaliland ; on l'écrit aussi Isaq. Ses membres se disent descendants d'un ancêtre de ce nom, venu d'Arabie selon leurs traditions. Au XIXe siècle, un officier de la marine des Indes les appelait Edoor, un nom qu'ils refusaient. Nous présentons ces noms et leur histoire plus bas.",
+    "names": [
+      {
+        "nameText": "Isaaq",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une grande famille de clans somalies, la plus nombreuse du Somaliland, issue d'un ancêtre nommé Isaaq.",
+        "periodLabel": "Écrit dès 1848 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1996,
+              "to": 1996,
+              "label": "Décrit en 1996"
+            },
+            "era": "modern",
+            "statement": "Le nom Isaaq est celui de la plus grande famille de clans du Somaliland. Les Isaaq vivent entre les Gadabursi à l'ouest et les Dolbahante et Warsangeli, des clans darod, à l'est, selon la Commission canadienne de l'immigration.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Information on the current situation of the Isaaq clan and on the areas in which they live",
+                "author": "Commission de l'immigration et du statut de réfugié du Canada",
+                "year": 1996,
+                "url": "https://www.ecoi.net/en/document/1301518.html",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "réponse SML24647.E",
+                "notes": "Réponse à une demande d'information, publiée le 18 septembre 1996 selon ecoi.net, qui la reproduit. Elle dit, d'après le Somalia: Background Brief du Home Office britannique (octobre 1995, p. 47), que « the Isaaq are the largest clan family in Somaliland », et que les cartes placent les Isaaq entre les Gadabursi (Dir) à l'ouest et les Dolbahante et Warsangeli (Darod) à l'est. Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Isaaq est celui d'un ancêtre : les clans qui le portent, comme les Haber Awal et les Haber Gerhajis, se disent ses descendants. Les traditions recueillies ne disent pas toutes la même chose de lui ; nous les présentons séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Memoir on the Western or Edoor Tribes, Inhabiting the Somali Coast of N.-E. Africa, with the Southern Branches of the Family of Darrood, Resident on the Banks of the Webbe Shebeyli, Commonly Called the River Webbe",
+                "author": "C. J. Cruttenden",
+                "year": 1849,
+                "url": "https://archive.org/details/jstor-1798086",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 49",
+                "notes": "Journal of the Royal Geographical Society of London, vol. 19, 1849, p. 49-76 ; mémoire daté d'Aden le 12 mai 1848 et lu le 13 novembre 1848, par le lieutenant C. J. Cruttenden, de la marine des Indes, agent politique adjoint à Aden. Lu en fac-similé (copie JSTOR Early Journal Content) sur archive.org. Officier britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Page 49 : « the Haber Gerhajis, the Haber Awal, and the Haber el Jahleh (Haber meaning the sons of), who were the children of Isaakh by three wives ». Lu le 18 octobre 2026."
+              },
+              {
+                "title": "First Footsteps in East Africa; or, An Exploration of Harar",
+                "author": "Richard F. Burton",
+                "year": 1856,
+                "url": "https://archive.org/details/firstfootstepsi00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 102",
+                "notes": "Londres, Longman, Brown, Green, and Longmans, 1856 ; exemplaire numérisé sur archive.org. Récit d'un voyage fait en 1854-1855 dans le pays somali et jusqu'à Harar, chapitre sur les Somalis. Voyageur britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Page 102 : « Hence the great clans, Habr Gerhajis and Awal ». Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1848,
+              "to": 1848,
+              "label": "Rapporté en 1848"
+            },
+            "era": "polity",
+            "statement": "Le nom Isaaq viendrait d'Isaakh, un homme venu du Hadramaout, en Arabie du Sud, qui s'établit à Meyet, près de Burnt Island, où se trouve son tombeau. Ses trois épouses lui donnèrent les ancêtres des Haber Gerhajis, des Haber Awal et des Haber el Jahleh, selon la tradition que recueille C. J. Cruttenden.",
+            "hypothesisGroup": "origine du nom Isaaq",
+            "sources": [
+              {
+                "title": "Memoir on the Western or Edoor Tribes, Inhabiting the Somali Coast of N.-E. Africa, with the Southern Branches of the Family of Darrood, Resident on the Banks of the Webbe Shebeyli, Commonly Called the River Webbe",
+                "author": "C. J. Cruttenden",
+                "year": 1849,
+                "url": "https://archive.org/details/jstor-1798086",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 49 et p. 64",
+                "notes": "Journal of the Royal Geographical Society of London, vol. 19, 1849, p. 49-76 ; mémoire daté d'Aden le 12 mai 1848 et lu le 13 novembre 1848, par le lieutenant C. J. Cruttenden, de la marine des Indes, agent politique adjoint à Aden. Lu en fac-similé (copie JSTOR Early Journal Content) sur archive.org. Officier britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Page 49 : « the children of Isaakh by three wives ; the said Isaakh having crossed over from Hadramaut some time after his countrymen had founded the nation to the eastward, and settled at the town of Meyet near Burnt Island, where his tomb exists to this day ». Page 64 : l'attachement « to the memory of their forefather Isaakh » pousse des vieillards des tribus de l'ouest à finir leur vie à Meyet. Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "Récit publié en 1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Isaaq serait celui du chérif Ishak ben Ahmed, parti du Hadramaout avec quarante-quatre saints une quinzaine de générations plus tôt, soit environ 450 ans avant le récit ; d'autres le disent fils d'Abdallah, rapporte Richard Burton.",
+            "hypothesisGroup": "origine du nom Isaaq",
+            "sources": [
+              {
+                "title": "First Footsteps in East Africa; or, An Exploration of Harar",
+                "author": "Richard F. Burton",
+                "year": 1856,
+                "url": "https://archive.org/details/firstfootstepsi00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 102",
+                "notes": "Londres, Longman, Brown, Green, and Longmans, 1856 ; exemplaire numérisé sur archive.org. Récit d'un voyage fait en 1854-1855 dans le pays somali et jusqu'à Harar, chapitre sur les Somalis. Voyageur britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Page 102 : « The last and most important Arab immigration took place about fifteen generations or 450 years ago, when the Sherif Ishak bin Ahmed left his native country Hazramaut, and, with forty-four saints, before mentioned, landed on Makhar » ; son tombeau est à Met, près de Burnt Island ; note : « According to others he was the son of Abdullah. » Burton dit ailleurs (p. 103, note) que ses informateurs et ceux de Cruttenden ne s'accordent pas. Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "Proposée en 1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Isaaq se rattacherait à un ancêtre arabe que Richard Burton met lui-même en doute : un noble Arabe, écrit-il, n'aurait pas appelé ses fils Gerhajis, Awal ou Rambad.",
+            "hypothesisGroup": "origine du nom Isaaq",
+            "sources": [
+              {
+                "title": "First Footsteps in East Africa; or, An Exploration of Harar",
+                "author": "Richard F. Burton",
+                "year": 1856,
+                "url": "https://archive.org/details/firstfootstepsi00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 103, note",
+                "notes": "Londres, Longman, Brown, Green, and Longmans, 1856 ; exemplaire numérisé sur archive.org. Récit d'un voyage fait en 1854-1855 dans le pays somali et jusqu'à Harar, chapitre sur les Somalis. Voyageur britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Page 103, note : « The salient doubt suggested by this genealogy is the barbarous nature of the names. A noble Arab would not call his children Gerhajis, Awal, and Rambad. » Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1848,
+              "to": 1848,
+              "label": "1848"
+            },
+            "era": "polity",
+            "statement": "Le nom Isaaq apparaît par écrit, sous la forme Isaakh, dans un mémoire que C. J. Cruttenden, officier de la marine des Indes en poste à Aden, date du 12 mai 1848 et consacre aux tribus de la côte somalie. C'est la plus ancienne trace de ce nom que le projet connaît ; les clans qui le portent existaient avant elle.",
+            "formAsWritten": "Isaakh",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Memoir on the Western or Edoor Tribes, Inhabiting the Somali Coast of N.-E. Africa, with the Southern Branches of the Family of Darrood, Resident on the Banks of the Webbe Shebeyli, Commonly Called the River Webbe",
+                "author": "C. J. Cruttenden",
+                "year": 1849,
+                "url": "https://archive.org/details/jstor-1798086",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 49",
+                "notes": "Journal of the Royal Geographical Society of London, vol. 19, 1849, p. 49-76 ; mémoire daté d'Aden le 12 mai 1848 et lu le 13 novembre 1848, par le lieutenant C. J. Cruttenden, de la marine des Indes, agent politique adjoint à Aden. Lu en fac-similé (copie JSTOR Early Journal Content) sur archive.org. Officier britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Page 49 : « who were the children of Isaakh by three wives ». Lu le 18 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Isaq",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "Rapporté en 2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Isaq est une autre écriture d'Isaaq, que la Commission canadienne de l'immigration donne avec Issak, d'après un rapport d'Ambroso paru en 2002.",
+            "sources": [
+              {
+                "title": "Somalia: Information on the Ogaden clan in Somaliland, including distinguishing features, locations, occupations and position in the clan hierarchy; treatment by the Somaliland authorities and by al-Shabaab (2015-October 2017)",
+                "author": "Commission de l'immigration et du statut de réfugié du Canada",
+                "year": 2017,
+                "url": "https://www.ecoi.net/en/document/1428637.html",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 3",
+                "notes": "Réponse SOM106011.E de la direction des recherches de la Commission, publiée le 23 novembre 2017 selon ecoi.net, qui la reproduit. Section 3 : « According to Ambroso, in Somaliland itself, the main clan is the Isaaq [Isaq/Issak], which dominates most regions of Somaliland » (Ambroso 2002, p. 32-33). Lu le 18 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Edoor",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom donné au XIXe siècle aux clans issus d'Isaaq, qui le refusaient.",
+        "periodLabel": "Écrit en 1848 et 1856",
+        "accounts": [
+          {
+            "period": {
+              "from": 1848,
+              "to": 1848,
+              "label": "1848"
+            },
+            "era": "polity",
+            "statement": "Le nom Edoor est celui que les tribus de l'est de la côte somalie donnent aux tribus de l'ouest, issues d'Isaakh ; C. J. Cruttenden le reprend pour les distinguer des descendants de Darrood. Les tribus de l'ouest le refusent : pour elles, les Edoor sont les « Galla », écrit-il. C'est la plus ancienne trace de ce nom que le projet connaît ; les tribus qu'il désigne existaient avant lui.",
+            "formAsWritten": "Edoor",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Memoir on the Western or Edoor Tribes, Inhabiting the Somali Coast of N.-E. Africa, with the Southern Branches of the Family of Darrood, Resident on the Banks of the Webbe Shebeyli, Commonly Called the River Webbe",
+                "author": "C. J. Cruttenden",
+                "year": 1849,
+                "url": "https://archive.org/details/jstor-1798086",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 49 et p. 64",
+                "notes": "Journal of the Royal Geographical Society of London, vol. 19, 1849, p. 49-76 ; mémoire daté d'Aden le 12 mai 1848 et lu le 13 novembre 1848, par le lieutenant C. J. Cruttenden, de la marine des Indes, agent politique adjoint à Aden. Lu en fac-similé (copie JSTOR Early Journal Content) sur archive.org. Officier britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Page 49 : les tribus à l'ouest de Burnt Island sont « distinguished amongst the windward tribes as the \"Edoor\" ». Page 64 : « I have made use of the word Edoor to distinguish the descendants of Isaakh from those of his fellow-countryman Darrood, but it may be as well to observe that the western tribes are averse to the appellation, and invariably correct the person who styles them Edoor, by telling him that the Edoor are the Galla tribes. » Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1848,
+              "to": 1848,
+              "label": "Rapporté en 1848"
+            },
+            "era": "polity",
+            "statement": "Le nom Edoor viendrait de Durr, le nom de la famille « galla » dans laquelle le cheikh Isaakh prit femme, selon les Majerteen qu'interroge C. J. Cruttenden.",
+            "hypothesisGroup": "origine du nom Edoor",
+            "sources": [
+              {
+                "title": "Memoir on the Western or Edoor Tribes, Inhabiting the Somali Coast of N.-E. Africa, with the Southern Branches of the Family of Darrood, Resident on the Banks of the Webbe Shebeyli, Commonly Called the River Webbe",
+                "author": "C. J. Cruttenden",
+                "year": 1849,
+                "url": "https://archive.org/details/jstor-1798086",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 64",
+                "notes": "Journal of the Royal Geographical Society of London, vol. 19, 1849, p. 49-76 ; mémoire daté d'Aden le 12 mai 1848 et lu le 13 novembre 1848, par le lieutenant C. J. Cruttenden, de la marine des Indes, agent politique adjoint à Aden. Lu en fac-similé (copie JSTOR Early Journal Content) sur archive.org. Officier britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Page 64 : « The Mijjerthaine told me that the Galla family into which Sheikh Isaakh married was called \"Durr\", and from that is derived the name of \"Edoor\" ». Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "Proposée en 1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Edoor, que Richard Burton écrit Aydur, serait celui de l'une des vieilles généalogies d'avant l'islam : Dirr et Aydur seraient les ancêtres des Somalis du nord, Eesa, Gudabirsi, Ishak et Bursuk. Burton précise que ses informateurs et ceux de Cruttenden ne disent pas la même chose.",
+            "hypothesisGroup": "origine du nom Edoor",
+            "sources": [
+              {
+                "title": "First Footsteps in East Africa; or, An Exploration of Harar",
+                "author": "Richard F. Burton",
+                "year": 1856,
+                "url": "https://archive.org/details/firstfootstepsi00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 103",
+                "notes": "Londres, Longman, Brown, Green, and Longmans, 1856 ; exemplaire numérisé sur archive.org. Récit d'un voyage fait en 1854-1855 dans le pays somali et jusqu'à Harar, chapitre sur les Somalis. Voyageur britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Page 103 : « The old and pagan genealogies still known to the Somal, are Dirr, Aydur, Darud, and, according to some, Hawiyah. Dirr and Aydur, of whom nothing is certainly known but the name, are the progenitors of the northern Somal, the Eesa, Gudabirsi, Ishak, and Bursuk tribes. » Note : « Lieut. Cruttenden applies the term Edoor (Aydur) to the descendants of Ishak […]. His informants and mine differ, therefore, toto cœlo. » Lu le 18 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

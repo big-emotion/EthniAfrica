@@ -120,7 +120,7 @@ describe("country fiche charter", () => {
     expect(section).toHaveTextContent("Information manquante");
   });
 
-  // @req REQ-115
+  // @req REQ-151
   it("opens on the country's own name, with the official name beneath it", () => {
     const { container } = renderTitle(countryFixture());
 
@@ -138,7 +138,7 @@ describe("country fiche charter", () => {
   // refuses the repetition on its own — the family lede already declines to
   // name the autonym and the English name when they are one word, and this is
   // the same fact presented as two.
-  // @req REQ-115
+  // @req REQ-151
   it("states the official name once, never twice", () => {
     const { container } = renderTitle(
       countryFixture({
@@ -158,7 +158,7 @@ describe("country fiche charter", () => {
 
   // The mockup writes "un nom de 1914" in italics beside the title. No corpus
   // field carries it, so the fiche would be asserting a date it cannot source.
-  // @req REQ-115
+  // @req REQ-151
   it("asserts no date the corpus does not state", () => {
     const { container } = renderParchment(countryFixture());
 
@@ -540,26 +540,52 @@ describe("country fiche charter", () => {
  * reader met the bibliography in the middle of the reading.
  */
 describe("country fiche parchment — head and closing", () => {
-  // The reference year dates the shares in "Peuples du pays". A fiche with no
-  // demographics has nothing to date, so it says nothing.
-  // @req REQ-115
-  it("dates the fiche's figures in the eyebrow when it carries demographics", () => {
+  // The eyebrow read "NGA · page du pays · réf. 2025": a country code and an
+  // abbreviation the reader-facing register rules out, and a year dating the
+  // shares of "Peuples du pays", several screens below it. The year now
+  // stands over those shares, written in full (boards country-civ-*).
+  // @req REQ-151
+  it("names the page « Pays » in the eyebrow, with no code and no year", () => {
     const { container } = renderTitle(countryFixture());
 
-    expect(container.querySelector(".afh-parchment-eyebrow")).toHaveTextContent(
-      "NGA · page du pays · réf. 2025"
+    expect(container.querySelector(".afh-parchment-eyebrow")?.textContent).toBe(
+      "Pays"
+    );
+    expect(
+      container.querySelector(".afh-parchment-head")?.textContent
+    ).not.toMatch(/\b\d{4}\b|réf\./);
+  });
+
+  // @req REQ-151
+  it("dates the peoples' shares in full beside them when the fiche carries demographics", () => {
+    const { container } = renderParchment(countryFixture());
+
+    const peoples = container.querySelector(
+      '[data-fiche-section="Peuples du pays"]'
+    );
+    expect(peoples?.querySelector(".afh-parchment-note")).toHaveTextContent(
+      "Année de référence : 2025"
     );
   });
 
-  // @req REQ-115
-  it("dates nothing when the atlas gives the country no demographics", () => {
-    const { container } = renderTitle(
-      countryFixture({ demographics: undefined, majorPeoples: undefined })
-    );
+  // A fiche with no demographics has nothing to date, so it says nothing.
+  // @req REQ-151
+  it("prints no year when the atlas gives the country no demographics", () => {
+    const country = countryFixture({
+      demographics: undefined,
+      majorPeoples: undefined,
+    });
+    const { container: title } = renderTitle(country);
+    const { container: parchment } = renderParchment(country);
 
-    const eyebrow = container.querySelector(".afh-parchment-eyebrow");
-    expect(eyebrow).toHaveTextContent("NGA · page du pays");
-    expect(eyebrow?.textContent).not.toMatch(/réf\./);
+    expect(title.querySelector(".afh-parchment-eyebrow")?.textContent).toBe(
+      "Pays"
+    );
+    expect(title.textContent).not.toMatch(/\b\d{4}\b/);
+    expect(
+      parchment.querySelector('[data-fiche-section="Peuples du pays"]')
+        ?.textContent
+    ).not.toMatch(/Année de référence|\b\d{4}\b/);
   });
 
   // @req REQ-115
@@ -629,7 +655,8 @@ describe("country fiche — a note only where it adds something", () => {
         `[data-fiche-section="${title}"] .afh-parchment-note`
       );
 
-    expect(noteFor("Peuples du pays")).toBeNull();
+    // « Peuples du pays » is not in this list: its note is the reference year
+    // of its shares (REQ-151), which its title does not say.
     expect(noteFor("Histoire")).toBeNull();
     // The sources note explained a tier badge the reader no longer sees.
     expect(noteFor("Sources")).toBeNull();

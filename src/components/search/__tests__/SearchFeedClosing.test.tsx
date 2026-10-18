@@ -3,6 +3,7 @@ import { describe, expect, it, vi } from "vitest";
 
 import type { SearchCompanionsData } from "@/api/v2/schemas/searchCompanions";
 import { SearchFeed } from "@/components/search/SearchFeed";
+import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
 import { getLocalizedRoute } from "@/lib/routing";
 import {
   LINGALA_HISTORY,
@@ -67,7 +68,7 @@ const peulNextSteps = [
 ];
 
 // Board search-peul-430 (approved 2026-10-14): one subject, so the fiche link
-// stays under the timeline (line 129), before « Les sources parlent » (146).
+// stays under the timeline (line 129), before « Les sources » (146).
 describe("SearchFeed — the end of a one-subject timeline", () => {
   const renderPeul = (
     onResultNavigate?: (type: string, rank: number, surface?: string) => void
@@ -88,7 +89,7 @@ describe("SearchFeed — the end of a one-subject timeline", () => {
     );
 
   // @req REQ-198
-  it("puts « Voir la fiche complète » before « Qui raconte le nom Peul ? »", () => {
+  it("puts « Voir la fiche complète » before « Les sources du nom Peul »", () => {
     renderPeul();
 
     const ficheLink = screen.getByRole("link", {
@@ -96,7 +97,7 @@ describe("SearchFeed — the end of a one-subject timeline", () => {
     });
     const sources = screen.getByRole("heading", {
       level: 2,
-      name: "Qui raconte le nom Peul ?",
+      name: "Les sources du nom Peul",
     });
     expect(
       ficheLink.compareDocumentPosition(sources) &
@@ -183,10 +184,22 @@ describe("SearchFeed — the page no longer ends on the timeline", () => {
         "Aucune source sur le nom zzqxv n’est enregistrée dans le projet."
       )
     ).toBeInTheDocument();
-    // The page's own « Nous nous sommes trompés ? » card is its invitation.
+    const closing = container.querySelector("[data-name-closing]")!;
+    expect(closing).toHaveTextContent(nameClosingCopy.fr.conviction);
+    // The verdict's « Proposer une source » is the page's one invitation, so
+    // the band asks for nothing (brief 12, part A).
+    expect(closing.textContent).not.toContain("Signaler une erreur");
+    const invitation = screen.getByRole("button", {
+      name: "Proposer une source",
+    });
+    const next = container.querySelector("[data-name-next]")!;
+    expect(invitation.closest('[data-feed-block="verdict"]')).not.toBeNull();
     expect(
-      container.querySelector("[data-name-closing]")?.textContent
-    ).not.toContain("Signaler une erreur");
-    expect(container.querySelector("[data-name-next]")).not.toBeNull();
+      invitation.compareDocumentPosition(closing) &
+        Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+    expect(
+      closing.compareDocumentPosition(next) & Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
   });
 });

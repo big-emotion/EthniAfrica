@@ -97,5 +97,120 @@
       "fieldPath": "homonyms",
       "reason": "Bationo et Kantiono ont été vérifiés comme formes sexuées d'un même clan, non comme homonymes ; les recherches n'ont pas établi de lignée distincte portant le même nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Bationo est un nom de famille lyele du Burkina Faso : il désigne les hommes du clan Tiono, et les femmes de ce clan s'appellent Kantiono. Tiono voudrait dire « lumière ». Le projet ne connaît pas encore de trace écrite ancienne de ce nom.",
+    "names": [
+      {
+        "nameText": "Bationo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom des hommes du clan lyele Tiono, au Burkina Faso ; les femmes sont des Kantiono.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Décrit en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Bationo désigne un homme du clan Tiono, chez les Lyele de Réo, au Burkina Faso : ba veut dire « homme » en lyele, et Tiono, le nom du clan, veut dire « lumière », selon Paul-Marie Moyenga.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Identités en conflit : l'état civil burkinabè dans le quotidien de la communauté lyele",
+                "author": "Paul-Marie Moyenga",
+                "year": 2019,
+                "url": "https://journals.openedition.org/cjm/pdf/731",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 11-12",
+                "notes": "Paul-Marie Moyenga, Cahiers Jean Moulin, n° 5, 2019, DOI 10.4000/cjm.731. Lu le 18 octobre 2026 dans la version HTML de l'article sur OpenEdition (journals.openedition.org/cjm/731), dont l'adresse citée est le PDF. Paragraphe 11 : les Lyele, communauté gourounsi de Réo, ont des patronymes « qui se déclinent en masculin et en féminin » ; la racine identifie le clan, Ba et Kan « signifient respectivement « homme » et « femme » » ; « on a Bationo pour les hommes et Kantiono pour les femmes du clan Tiono (qui signifie « lumière » en langue lyele) ». Le même paragraphe dit à une ligne d'écart que Kan marque l'homme et Ba la femme ; les exemples suivent la règle Ba pour l'homme. Paragraphe 12 : « en aucun cas une femme ne peut être désignée par Bationo (homme du clan Tiono) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Décrit en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Bationo est aussi celui que l'état civil donne aux filles du clan, en reprenant le nom du père. Dans la communauté, une fille reste une Kantiono : l'appeler Bationo reviendrait à la dire homme, selon Paul-Marie Moyenga.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Identités en conflit : l'état civil burkinabè dans le quotidien de la communauté lyele",
+                "author": "Paul-Marie Moyenga",
+                "year": 2019,
+                "url": "https://journals.openedition.org/cjm/pdf/731",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 53, 56",
+                "notes": "Paul-Marie Moyenga, Cahiers Jean Moulin, n° 5, 2019, DOI 10.4000/cjm.731. Lu le 18 octobre 2026 dans la version HTML de l'article sur OpenEdition (journals.openedition.org/cjm/731), dont l'adresse citée est le PDF. Paragraphe 53 : à la déclaration de naissance d'une fille, l'état civil lui donne le patronyme de son père ; certains parents présentent ensuite leur fille par son identité officielle, « Bationo Louise par exemple », d'autres par son identité communautaire, « Kantiono Louise ». Paragraphe 56 : appeler une fille Bationo « reviendrait à l'appeler homme du clan Tiono, alors qu'elle demeurera femme du clan Tiono, c'est-à-dire une Kantiono »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Proposé en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Bationo voudrait dire « paisible visiteur » ou « lumière », selon le projet de répertoire des patronymes du Burkina Faso, qui le donne pour un nom lyele de Réo.",
+            "hypothesisGroup": "sens-bationo",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 22",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de mai 2025 et marqué « version provisoire » sur sa page de titre. Lu le 18 octobre 2026 dans le navigateur, sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Les pages sont celles du document, repérées par leurs numéros en bas de page. Notice n° 132, BATIONO (homme) / KANTIONO (femme) : « BATIONO /KANTIONO est un patronyme lyélé qui signifie « paisible visiteur », « Lumière ». Ils sont originaires de Réo et parlent le lyélé. » La notice ajoute qu'ils habitent la province du Sanguié."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kantiono",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom des femmes du clan lyele Tiono, au Burkina Faso.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Décrit en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Kantiono désigne une femme du clan Tiono, chez les Lyele de Réo : kan veut dire « femme » en lyele. C'est la forme féminine de Bationo, selon Paul-Marie Moyenga.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Identités en conflit : l'état civil burkinabè dans le quotidien de la communauté lyele",
+                "author": "Paul-Marie Moyenga",
+                "year": 2019,
+                "url": "https://journals.openedition.org/cjm/pdf/731",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 11-12",
+                "notes": "Paul-Marie Moyenga, Cahiers Jean Moulin, n° 5, 2019, DOI 10.4000/cjm.731. Lu le 18 octobre 2026 dans la version HTML de l'article sur OpenEdition (journals.openedition.org/cjm/731), dont l'adresse citée est le PDF. Paragraphe 11 : les Lyele, communauté gourounsi de Réo, ont des patronymes « qui se déclinent en masculin et en féminin » ; la racine identifie le clan, Ba et Kan « signifient respectivement « homme » et « femme » » ; « on a Bationo pour les hommes et Kantiono pour les femmes du clan Tiono (qui signifie « lumière » en langue lyele) ». Le même paragraphe dit à une ligne d'écart que Kan marque l'homme et Ba la femme ; les exemples suivent la règle Ba pour l'homme. Paragraphe 12 : « en aucun cas une femme ne peut être désignée par Bationo (homme du clan Tiono) »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -104,5 +104,88 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kasanga désigne un petit peuple de Guinée-Bissau et de Casamance, au Sénégal, ainsi que la langue qu'il parle. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. Le nom est écrit Casangas dès 1594 ; on trouve aussi Cassanga, Kassanga, Haal et I-Hadja. La forme Kussi, que la fiche relève aussi, n'a été retrouvée dans aucune source que nous avons ouverte. Une seule explication de l'origine du nom a été trouvée, et elle reste une hypothèse ; nous la présentons plus bas.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Kasanga",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple et de sa langue, écrit Casangas dès 1594 par un capitaine du Cap-Vert.",
+        "periodLabel": "Écrit dès 1594 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kasanga désigne, dans le catalogue Glottolog, la langue de ce peuple, code ISO ccj, parlée en Guinée-Bissau et au Sénégal. Le catalogue relève aussi les formes Cassanga, Kassanga, Haal et I-Hadja, sans dire qui les emploie. L'origine du nom n'est pas établie : nous n'en avons trouvé qu'une explication.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Kasanga (kasa1248)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/kasa1248",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Page du catalogue Glottolog, lue le 18 octobre 2026 à partir du code ISO ccj. Autres noms relevés d'après les catalogues ElCat et MultiTree : Cassanga, Haal, I-Hadja, Kasanga, Kassanga."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1841,
+              "to": 1841,
+              "label": "Proposée en 1841"
+            },
+            "era": "polity",
+            "statement": "Le nom Kasanga viendrait de Casa, le nom d'un royaume : Casa-mança voudrait dire « l'empereur de Casa », et Casangas désignerait la nation de ce royaume, selon Diogo Köpke, qui publie à Porto le traité d'André Álvares de Almada. C'est la seule explication que nous avons lue.",
+            "hypothesisGroup": "origine du nom Kasanga",
+            "sources": [
+              {
+                "title": "Tratado breve dos rios de Guiné do Cabo-Verde",
+                "author": "André Álvares de Almada",
+                "year": 1594,
+                "url": "https://archive.org/details/tratadobrevedosr00alma",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 103",
+                "notes": "Note de l'éditeur Diogo Köpke dans l'édition de Porto, 1841, exemplaire numérisé d'Internet Archive ; page vérifiée sur l'image : « Casa-mança significa o Imperador de Casa ; desta ultima, Casangas, para denotar a nação »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1594,
+              "to": 1594,
+              "label": "1594"
+            },
+            "era": "polity",
+            "statement": "Le nom Kasanga apparaît par écrit, au pluriel Casangas, dans le traité du capitaine André Álvares de Almada sur les rivières de Guinée, en 1594. À l'entrée du fleuve Casamance, il note que les Casangas se comprennent avec les Jabundos, qui parlent la langue des Banhuns, et que les Mandingues vivent plus à l'intérieur des terres. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Casangas",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tratado breve dos rios de Guiné do Cabo-Verde",
+                "author": "André Álvares de Almada",
+                "year": 1594,
+                "url": "https://archive.org/details/tratadobrevedosr00alma",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 38",
+                "notes": "Traité écrit en 1594, lu dans l'édition publiée par Diogo Köpke à Porto en 1841, exemplaire numérisé d'Internet Archive ; page 38 vérifiée sur l'image : « os quaes falão a lingoa dos Banhuns, e se entendem com elles os Casangas »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

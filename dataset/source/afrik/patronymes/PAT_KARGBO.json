@@ -76,5 +76,114 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Kargbo à un peuple en Sierra Leone. Nous n'avons pas encore consulté de source consacrée à ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kargbo est un nom de famille de Sierra Leone, celui d'un clan des Temne. Il est écrit sous une forme proche, Kagbo, en 1916. Son sens n'est pas expliqué : on ne sait pas avec certitude d'où il vient.",
+    "names": [
+      {
+        "nameText": "Kargbo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan temne de Sierra Leone, écrit Kagbo en 1916 ; son sens n'est pas expliqué.",
+        "periodLabel": "Écrit Kagbo en 1916 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kargbo est le nom d'un clan des Temne de Sierra Leone, selon le Dictionary of American Family Names. Le dictionnaire dit son étymologie inexpliquée ; on ne sait pas avec certitude d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Kargbo",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/kargbo?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue le 18 octobre 2026 (texte anglais de la page). L'entrée dit : « West African (Sierra Leone): from the name of the Kargbo clan of the Temne people, of unexplained etymology »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1916,
+              "to": 1916,
+              "label": "1916"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kargbo, sous la forme Kagbo, figure dans la liste des clans temne que dresse Northcote Thomas. Il note que les Temne ajoutent le nom de leur clan à leur propre nom, au point que ce nom de clan est en train de devenir un nom de famille.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Anthropological Report on Sierra Leone, Part I: Law and Custom of the Timne and Other Tribes",
+                "author": "Northcote W. Thomas",
+                "year": 1916,
+                "url": "https://archive.org/details/anthropological01thom",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 132-133",
+                "notes": "Londres, Harrison and Sons, 1916. L'auteur, anthropologue du gouvernement colonial, publie ce qu'il a recueilli dans le protectorat de Sierra Leone. Lu le 18 octobre 2026 dans la numérisation d'Internet Archive, pages 133 et 134 vues en image. Page 132 : l'existence des clans est proclamée au pays temne « by the custom of appending the clan name to that of the individual ; it is, in fact, on the way to become a surname » ; suit « a list of Timne clans » (clan, en temne abuna ; interdits ; sanction). Page 133, n° 9 : « Kagbo », interdits « (a) abana (? weaver bird). (b) ranink (fish). (c) crocodile », sanction « loose teeth », et pour le crocodile « cracked feet ». Page 134, « Alternative names » : « 9. Kagbo = Sanko »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1916,
+              "to": 1916,
+              "label": "1916"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kargbo, écrit Kagbo, est attaché selon Northcote Thomas à des interdits : les membres du clan évitent un oiseau, peut-être un tisserin, un poisson électrique et le crocodile, de peur de perdre leurs dents. Ils peuvent donner ce poisson à un autre, mais se lavent les mains après l'avoir touché.",
+            "sources": [
+              {
+                "title": "Anthropological Report on Sierra Leone, Part I: Law and Custom of the Timne and Other Tribes",
+                "author": "Northcote W. Thomas",
+                "year": 1916,
+                "url": "https://archive.org/details/anthropological01thom",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 133 ; p. 135",
+                "notes": "Londres, Harrison and Sons, 1916. L'auteur, anthropologue du gouvernement colonial, publie ce qu'il a recueilli dans le protectorat de Sierra Leone. Lu le 18 octobre 2026 dans la numérisation d'Internet Archive, pages 133 et 134 vues en image. Page 133, n° 9 : « Kagbo », interdits « (a) abana (? weaver bird). (b) ranink (fish). (c) crocodile », sanction « loose teeth », et pour le crocodile « cracked feet ». Page 135 (lue dans le texte numérisé) : « Kagbo clan may give ranink to one who is not a Kagbo, but must wash hands after touching it »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1916,
+              "to": 1916,
+              "label": "1916"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kargbo apparaît par écrit sous une forme proche, Kagbo, dans la liste des clans temne de Northcote Thomas, qui donne aussi Sanko comme autre nom de ce clan. C'est la plus ancienne trace de ce nom que le projet connaît ; les sources lues ne disent pas expressément que Kagbo et Kargbo sont le même nom.",
+            "formAsWritten": "Kagbo",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Northcote W. Thomas",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Anthropological Report on Sierra Leone, Part I: Law and Custom of the Timne and Other Tribes",
+                "author": "Northcote W. Thomas",
+                "year": 1916,
+                "url": "https://archive.org/details/anthropological01thom",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 132-133",
+                "notes": "Londres, Harrison and Sons, 1916. L'auteur, anthropologue du gouvernement colonial, publie ce qu'il a recueilli dans le protectorat de Sierra Leone. Lu le 18 octobre 2026 dans la numérisation d'Internet Archive, pages 133 et 134 vues en image. Page 132 : l'existence des clans est proclamée au pays temne « by the custom of appending the clan name to that of the individual ; it is, in fact, on the way to become a surname » ; suit « a list of Timne clans » (clan, en temne abuna ; interdits ; sanction). Page 133, n° 9 : « Kagbo », interdits « (a) abana (? weaver bird). (b) ranink (fish). (c) crocodile », sanction « loose teeth », et pour le crocodile « cracked feet ». Page 134, « Alternative names » : « 9. Kagbo = Sanko »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

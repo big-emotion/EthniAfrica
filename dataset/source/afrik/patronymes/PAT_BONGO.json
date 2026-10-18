@@ -82,5 +82,109 @@
       "fieldPath": "transmissionMode",
       "reason": "La recherche « Bongo Gabon Teke surname transmission inheritance clan » et la lecture de « Une sociogenèse de la structure du pouvoir d'Omar Bongo » documentent la reproduction d'une famille politique mais pas la règle anthroponymique de transmission du nom Bongo ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Bongo est, au Gabon, le nom de famille d'Omar Bongo, chef de l'État, et de sa famille. Selon un témoignage, il s'écrivait d'abord Mbongo ; deux récits différents expliquent d'où il vient, et nous les présentons plus bas. Devenu le nom du président, il est devenu un « grand nom » au Gabon. Les sources lues ne disent pas depuis quand il est écrit.",
+    "names": [
+      {
+        "nameText": "Bongo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de famille d'Omar Bongo au Gabon, écrit d'abord Mbongo selon un témoignage.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Décrit en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Bongo est devenu au Gabon un « grand nom », celui de la « famille du président » : la nomination d'Omar Bongo à la tête de l'État a fait de ce nom de famille un capital, et des personnes qui le portent ont reçu de hautes fonctions, selon Placide Ondo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Une sociogenèse de la structure du pouvoir d'Omar Bongo",
+                "author": "Placide Ondo",
+                "year": 2021,
+                "url": "https://inrs.gouv.tg/wp-content/uploads/2024/08/ET-RTS-V15-N%C2%B02-Juillet-Decembre-2021.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 239-240",
+                "notes": "Placide Ondo, université Omar Bongo, « La construction dynastique de la « maison du Président » : une sociogenèse de la structure du pouvoir d'Omar Bongo », Études togolaises, Revue togolaise des sciences, vol. 15, n° 2, juillet-décembre 2021, p. 234 et suivantes ; numéro entier lu en PDF le 18 octobre 2026. Pages 239-240 : « Les nominations de personnes portant le patronyme Bongo à de hautes fonctions de l'État » ; « La nomination de Bongo à la tête de l'État consacre ainsi ce patronyme comme « grand nom » » ; « la famille attachée ou portant le patronyme Bongo devient une « grande famille » »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 2021,
+              "label": "Rapporté en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Bongo s'est ensuite allongé en Bongo Ondimba. Ondimba ne serait pas le nom du père d'Omar Bongo, comme on le dit officiellement, mais celui de son grand-père maternel supposé, ajouté après un long conflit avec les descendants du chef Mbongo, selon le témoignage de Paul Malékou que rapporte Placide Ondo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Une sociogenèse de la structure du pouvoir d'Omar Bongo",
+                "author": "Placide Ondo",
+                "year": 2021,
+                "url": "https://inrs.gouv.tg/wp-content/uploads/2024/08/ET-RTS-V15-N%C2%B02-Juillet-Decembre-2021.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 241-242",
+                "notes": "Lu le 18 octobre 2026. Pages 241-242 : « Paul Mélékou confie également que le nom Ondimba, qu'il ajoute à son patronyme officiel à la suite d'un long conflit qui l'oppose à la descendance du chef Mbongo, n'est pas celui de son père comme on le prétend officiellement, mais celui de son supposé grand-père maternel. » L'auteur écrit ailleurs Malékou ; il cite les mémoires de Paul Malékou (2016)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2021,
+              "label": "Témoignage de 2016, rapporté en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Bongo viendrait de celui d'un chef traditionnel, Mbongo, qui passait la nuit à Léwaï le jour où Omar Bongo y est né : c'est ce qu'Omar Bongo lui-même disait, selon le témoignage de Paul Malékou que rapporte Placide Ondo. Il aurait retiré le m de Mbongo en s'engageant dans l'armée française.",
+            "hypothesisGroup": "origine du nom Bongo",
+            "sources": [
+              {
+                "title": "Une sociogenèse de la structure du pouvoir d'Omar Bongo",
+                "author": "Placide Ondo",
+                "year": 2021,
+                "url": "https://inrs.gouv.tg/wp-content/uploads/2024/08/ET-RTS-V15-N%C2%B02-Juillet-Decembre-2021.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 241",
+                "notes": "Lu le 18 octobre 2026. Page 241 : « Concernant son patronyme, à l'origine « Mbongo » [...] Bongo [...] disait devoir ce nom à la coïncidence de deux événements : sa naissance et la présence du chef traditionnel, Mbongo, à Léwaï (le jour de sa naissance) où il passa la nuit. Et c'est à l'occasion de son engagement dans l'armée française qu'il expurge l'initial m de Mbongo. » L'auteur s'appuie sur les mémoires de Paul Malékou (2016)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2021,
+              "label": "Témoignage de 2016, rapporté en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Bongo, écrit d'abord Mbongo, était aussi celui d'un officier supérieur de l'armée centrafricaine, le commandant Mbongo, qui se disait le frère d'Omar Bongo, selon le témoignage de Paul Malékou que rapporte Placide Ondo. Ce récit relierait le nom à une famille Mbongo ; l'auteur ne tranche pas entre les deux récits.",
+            "hypothesisGroup": "origine du nom Bongo",
+            "sources": [
+              {
+                "title": "Une sociogenèse de la structure du pouvoir d'Omar Bongo",
+                "author": "Placide Ondo",
+                "year": 2021,
+                "url": "https://inrs.gouv.tg/wp-content/uploads/2024/08/ET-RTS-V15-N%C2%B02-Juillet-Decembre-2021.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 241",
+                "notes": "Lu le 18 octobre 2026. Page 241 : « Concernant son patronyme, à l'origine « Mbongo », un officier supérieur de l'armée centrafricaine, le Commandant Mbongo, revendiquait sa fraternité avec le Directeur de cabinet du Président Léon Mba. Mais Bongo [...] disait devoir ce nom à » la coïncidence de sa naissance et de la présence du chef Mbongo. La même page rapporte, d'après Malékou, que les origines d'Omar Bongo se situeraient entre le Congo-Brazzaville et l'Oubangui-Chari."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

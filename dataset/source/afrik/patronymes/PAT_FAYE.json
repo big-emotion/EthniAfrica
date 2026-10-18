@@ -81,5 +81,112 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Faye est un nom de famille du Sénégal, celui d'un clan des Sérères, porté aussi chez les Lébou. Il est écrit Fay dès 1858. Son sens n'est pas expliqué : on ne sait pas avec certitude d'où il vient. Un nom de famille anglais et français s'écrit de la même façon ; il est distinct.",
+    "names": [
+      {
+        "nameText": "Faye",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan sérère du Sénégal, écrit Fay dès 1858 ; son sens n'est pas expliqué.",
+        "periodLabel": "Écrit Fay dès 1858 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Faye est le nom d'un clan des Sérères, surtout au Sénégal, porté aussi chez les Lébou, selon le Dictionary of American Family Names. Le dictionnaire dit son étymologie inexpliquée ; on ne sait pas avec certitude d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Faye",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/faye?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue le 18 octobre 2026 (texte anglais de la page). L'entrée dit : « West African (mainly Senegal): from the name of the Faye clan of the Serer people of unexplained etymology. This surname is also found among the Lebou people ». La même entrée donne d'abord un nom anglais, variante de Fay, et un nom français, variante de Fay ou nom tiré de lieux de France appelés (La) Faye."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Décrit en 2022"
+            },
+            "statement": "Le nom Faye est aussi un nom de famille anglais et français, que le même dictionnaire explique autrement, notamment par des lieux de France appelés La Faye. Ce nom européen est distinct du nom sérère.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Faye",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/faye?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue le 18 octobre 2026 (texte anglais de la page). L'entrée dit : « West African (mainly Senegal): from the name of the Faye clan of the Serer people of unexplained etymology. This surname is also found among the Lebou people ». La même entrée donne d'abord un nom anglais, variante de Fay, et un nom français, variante de Fay ou nom tiré de lieux de France appelés (La) Faye."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Faye figure, écrit Fay, parmi les noms de famille du dictionnaire wolof d'Aloïse Kobès, revu par le père O. Abiven. L'animal que la famille évite de toucher, son mbagne, y est le sanglier.",
+            "formAsWritten": "Fay",
+            "sources": [
+              {
+                "title": "Dictionnaire volof-français",
+                "author": "Aloïse Kobès ; nouvelle édition par O. Abiven",
+                "year": 1923,
+                "url": "https://archive.org/details/dictionnairevolo00kobs",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 383",
+                "notes": "Nouvelle édition revue et augmentée par le père O. Abiven, de la Congrégation du Saint-Esprit. Dakar, Mission catholique, 1923, selon la notice d'Internet Archive (l'adresse de l'éditeur est masquée par une étiquette). Lu le 18 octobre 2026, page 383 vue en image. Liste « Noms de famille (santa) » : « D̤ûf, D̤ip, espèce de biche », « Fal, Ténêv, tigre », « Fay, sanglier », « Gèy, Mbetă, gueule tapée », « Nd̤ay, Gaéndé, lion » (le D porte deux points souscrits). Note au bas de la page : les noms d'animaux placés après les noms de familles « désignent l'ennemi (mbagne) de cette famille », que l'on évite de toucher de peur de mourir ou de tomber malade. Missionnaires catholiques, cités pour les formes qu'ils écrivent et ce qu'ils rapportent."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1858,
+              "label": "1858"
+            },
+            "statement": "Le nom Faye apparaît par écrit, sous la forme Fay, dans la grammaire wolof de l'abbé David Boilat : c'est le sœnte de Birœm, l'un de ses exemples, c'est-à-dire le nom qui suit le prénom. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a écrit, pas depuis quand le nom est porté.",
+            "formAsWritten": "Fay",
+            "birth": true,
+            "actors": [
+              {
+                "name": "David Boilat",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Grammaire de la langue woloffe",
+                "author": "David Boilat",
+                "year": 1858,
+                "url": "https://archive.org/details/grammairedelalan00boil",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 358",
+                "notes": "Paris, Imprimerie impériale, 1858. Lu le 18 octobre 2026 dans la numérisation d'Internet Archive, pages 357 et 358 vues en image. Chapitre « De la particule » : le nom d'une personne est souvent suivi d'une particule, le sœnte, « qu'on pourrait comparer à un titre plutôt qu'à un sobriquet » ; l'animal auquel elle se rapporte s'appelle mbagne, « ennemi », et « doit être respecté par lui et par sa famille ». Exemples, prénom puis sœnte : « Hœmet Fale », « Sambœ Ndhiaye », « Saigœ Sare » (p. 357) ; « Birœm Fay », « Galo Dhioufe » (p. 358). Page 358 encore : le lion, « Gayndé », porte le sœnte « Ndhiaye », le tigre, « Sègœ », le sœnte « Fale » ; « la particule ndhiaye et la particule fale sont souvent les sœnte des familles princières ». Abbé Boilat, missionnaire apostolique et ancien inspecteur de l'instruction publique au Sénégal selon la page de titre, cité pour les formes qu'il écrit et ce qu'il rapporte."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

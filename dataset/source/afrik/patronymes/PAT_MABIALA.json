@@ -97,5 +97,86 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web combinant « Mabiala », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de la page Forebears Mabiala et les requêtes « Mabiala Kongo patronyme origine clan onomastique » dans les catalogues linguistiques et universitaires, n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mabiala est un nom de personne kongo. C'est aussi le nom d'un nkisi célèbre de la côte de Loango, Mabiala ma ndemba, qui servait à trouver les voleurs. Les sources lues ne disent pas ce que veut dire Mabiala : on ne sait pas avec certitude d'où il vient. Sa plus ancienne trace connue du projet est un livre sur le Loango publié en 1907.",
+    "names": [
+      {
+        "nameText": "Mabiala",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne kongo, aussi le nom d'un nkisi de Loango ; on ne sait pas ce qu'il veut dire.",
+        "periodLabel": "Écrit dès 1907 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1959,
+              "label": "Rapporté en 1959"
+            },
+            "statement": "Le nom Mabiala est porté par un maître rituel sundi, Mabiala-Manianga, tué pendant la conquête française du pays kongo, selon Marcel Soret.",
+            "aspect": "usage",
+            "formAsWritten": "Mabiala-Manianga",
+            "sources": [
+              {
+                "title": "Les Kongo nord-occidentaux",
+                "author": "Marcel Soret",
+                "year": 1959,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/2024-05/010027635.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 24",
+                "notes": "Presses universitaires de France et Institut international africain, 1959 ; texte intégral lu le 18 octobre 2026 sur la base Horizon de l'IRD. Page 24 : le capitaine Baratier, « en avant-garde de la mission Marchand en route pour Fachoda », occupe Balimoéké, « où il infligeait une dure leçon aux Sundi » et tuait, dans la grotte où il s'était réfugié, Mabiala-Manianga, que l'auteur présente comme leur spécialiste des objets rituels."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1907,
+              "label": "Publié en 1907"
+            },
+            "statement": "Le nom Mabiala, comme d'autres noms de nkisi de la côte de Loango, garderait celui d'un grand guérisseur mort, selon Eduard Pechuël-Loesche : ces objets rituels représentaient des banganga célèbres et portaient leur nom. Il ne dit pas qui était Mabiala.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Volkskunde von Loango",
+                "author": "Eduard Pechuël-Loesche",
+                "year": 1907,
+                "url": "https://archive.org/details/volkskundevonlo00loegoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 379",
+                "notes": "Exemplaire numérisé d'Internet Archive, page lue sur l'image le 18 octobre 2026. Page 379 : plusieurs grands objets rituels à forme humaine sont, à l'origine, des représentations de grands guérisseurs « und bewahren deren Namen » (et gardent leur nom) ; les élèves sculptaient leur maître et « gaben ihm den Namen des Vorbildes ». Parmi les objets rituels de justice qui représentent des banganga célèbres morts, l'auteur cite « Matāli, Mavūngo, Tschitōlo, Mabiāla ma ndēmba, Lipāmba ». L'auteur écrit « Fetisch » ; le mot local est nkisi."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1907,
+              "label": "Publié en 1907"
+            },
+            "statement": "Le nom Mabiala apparaît par écrit dans le livre d'Eduard Pechuël-Loesche sur le Loango : Mabiala ma ndemba y est un nkisi réputé loin à la ronde pour trouver les voleurs. Son original, qui appartenait à une association du Kakongo, coula dans la Lueme vers la fin des années 1850, écrit-il. C'est la plus ancienne trace de ce nom que le projet connaît ; elle ne dit pas si des personnes le portaient alors.",
+            "formAsWritten": "Mabiāla ma ndēmba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Volkskunde von Loango",
+                "author": "Eduard Pechuël-Loesche",
+                "year": 1907,
+                "url": "https://archive.org/details/volkskundevonlo00loegoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 381",
+                "notes": "Exemplaire numérisé d'Internet Archive, page lue sur l'image le 18 octobre 2026. Page 381 : « So geschah es etwa zu Ende der fünfziger Jahre dem einer Genossenschaft in Kakongo gehörigen Urbilde des als Diebfinder weit und breit berühmten Fetisches Mabiāla ma ndēmba » ; l'objet coula avec le canot en traversant l'embouchure de la Lueme."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

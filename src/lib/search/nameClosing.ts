@@ -1,6 +1,14 @@
 import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
 import { normalizeString } from "@/lib/normalize";
+import { getNameAnswerRoute } from "@/lib/routing";
+import {
+  foldNameForm,
+  historyAddressSpelling,
+  nameSearchHref,
+} from "@/lib/search/nameAddress";
+import { readNaming } from "@/lib/search/naming";
+import { selectNameSubject } from "@/lib/search/nameSubject";
 import type {
   NameHistoryAccount,
   TimelineName,
@@ -196,6 +204,12 @@ export interface NextStepTarget {
   id: string;
   name: string;
   relation: NextStepRelation;
+  /**
+   * A namer's card explains the naming, not the namer: these are the searched
+   * name's accounts, where the fiche tells who gave the name (« Peul », from
+   * Wolof). The namer's own summary only says what the namer is.
+   */
+  namingAccounts?: readonly string[];
 }
 
 /**
@@ -231,8 +245,70 @@ function namerOf(
       .map((candidate) => candidate.languageOfOrigin),
   ]);
   if (own.has(origin)) return null;
+  // Doctrine §1.1: competing readings stand side by side, unranked. Quoting
+  // one of them as the card's reason would crown it, so they are left out and
+  // the namer's own summary stands in when nothing else names it.
+  const readings = new Map<string, number>();
+  for (const { hypothesisGroup } of name.accounts) {
+    if (hypothesisGroup) {
+      readings.set(hypothesisGroup, (readings.get(hypothesisGroup) ?? 0) + 1);
+    }
+  }
   // The name is the code until the loader reads the language's fiche.
-  return { type: "language", id: origin, name: origin, relation: "namer" };
+  return {
+    type: "language",
+    id: origin,
+    name: origin,
+    relation: "namer",
+    namingAccounts: name.accounts
+      .filter(
+        ({ hypothesisGroup }) =>
+          !hypothesisGroup || readings.get(hypothesisGroup) === 1
+      )
+      .map((account) => account.statement),
+  };
+}
+
+// A « . » closes a sentence unless it closes an initial (« E. J. Alagoa »,
+// « J.-C. ») or a reference abbreviation (« p. 141 », « XIXe s. »): accounts
+// cite their authors and pages, and a cut there halves the attribution. A
+// sentence that really ends on one is merged with the next, which keeps the
+// attribution whole at the cost of a longer reason.
+const SENTENCE =
+  /[\s\S]+?(?:[!?]|(?<!(?:^|[^\p{L}\p{N}])(?:\p{Lu}|p|pp|s|av|apr|env|cf|ch|vol|éd|dir|trad|coll|al))\.)(?=\s|$)|[\s\S]+$/gu;
+
+function sentencesOf(text: string): string[] {
+  return (text.match(SENTENCE) ?? [])
+    .map((sentence) => sentence.trim())
+    .filter(Boolean);
+}
+
+/**
+ * Why a namer is offered, in the fiche's own words: the first account of the
+ * searched name that names the namer, read up to the sentence that does, so a
+ * pronoun keeps the sentence it points back to (« Forme française du nom. Les
+ * sources consultées la font venir du wolof… »). Undefined when no account
+ * names it; the card then says what the namer is.
+ */
+// @req REQ-198
+export function namingReason(
+  accounts: readonly string[],
+  namer: string
+): string | undefined {
+  const word = normalizeString(namer).trim();
+  if (!word) return undefined;
+  const mentionsNamer = new RegExp(
+    `(?<![\\p{L}\\p{N}])${word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?![\\p{L}\\p{N}])`,
+    "u"
+  );
+  for (const statement of accounts) {
+    const sentences = sentencesOf(statement);
+    const at = sentences.findIndex((sentence) =>
+      mentionsNamer.test(normalizeString(sentence))
+    );
+    if (at >= 0) return sentences.slice(0, at + 1).join(" ");
+  }
+  return undefined;
 }
 
 /**
@@ -316,4 +392,100 @@ export function nameFormOf(
   return toldPart
     ? told.get(normalizeString(toldPart))
     : (parts[0] ?? filedLabel);
+}
+
+/**
+ * A fiche as its search row describes it: the name it is filed under and the
+ * `content` the search API reads its forms from (`readNaming`). A view passes
+ * what that column holds, no more: a language's `spellingAliases` is a column
+ * of its own the search RPC does not return, so it is left out.
+ */
+export interface StorySubject {
+  type: SearchEntityType;
+  id: string;
+  name: string;
+  content: unknown;
+}
+
+/** What a fiche's « Suivre l'histoire du nom … » names, and where it leads. */
+export interface NameStoryLink {
+  /** The history's first name, spelt as the history spells it. */
+  name: string;
+  href: string;
+}
+
+/**
+ * The address of the fiche's story name (REQ-200), when the address
+ * directory holds one for it — or nothing.
+ *
+ * The directory is keyed on each subject's filed name (`getAnsweredNameRows`)
+ * and spelt as that subject's history tells it (`getNameAddressSpellings`).
+ * So through this fiche the story name has an address only when it is the
+ * filed name, accents and case aside, and the history tells that form with a
+ * source above unverified. The history alone is not enough: hav's tells
+ * « Kihavu », but hav is filed « Havu (kihavu) » and
+ * `/fr/atlas/recherche/kihavu` answers 404.
+ *
+ * A fiche route mounts no directory (`NameAddressProvider`), so this applies
+ * the directory's rule rather than reading its list. When another subject
+ * spells the same form differently, the directory may keep that spelling
+ * (the language yor's history writes « Yoruba », the people's « Yorùbá »):
+ * the link then reaches the address through one permanent redirect, never a
+ * 404.
+ */
+function storyAddressSpelling(
+  subject: StorySubject,
+  history: NameHistory,
+  name: string
+): string | undefined {
+  return foldNameForm(name) === foldNameForm(subject.name)
+    ? historyAddressSpelling(history, subject.name)
+    : undefined;
+}
+
+/**
+ * A fiche's « Suivre l'histoire du nom … », or nothing (brief 10 §1).
+ *
+ * The name is the history's first, and it is named only when the page the
+ * link opens counts this fiche among its subjects. Without that the page says
+ * « Nous avons trouvé des fiches liées sans établir qu'elles répondent à ce
+ * nom » and tells no timeline, so the link would promise what it cannot keep
+ * — the brief's own reason for drawing none without a history.
+ *
+ * The page's own selection decides it (`selectNameSubject`), run on the fiche
+ * shaped as its search hit, so the two cannot drift apart. If the selection
+ * later answers more of the forms this hit carries (Fulɓe on PPL_FULA,
+ * Berbère on FLG_BERBERE), the link follows with no change here; a fix that
+ * reads what the hit does not carry, such as the name history, has to pass it
+ * here too. It assumes the search returns the fiche among its hits for its
+ * own filed name or forms, which an exact name match does.
+ *
+ * The link leads to the name's own address when it has one, and otherwise to
+ * the search page's reading of the name. Neither picks a subject, so
+ * « Congo » opens the page where both countries answer. Both pages read the
+ * same name through the same selection, accents and case aside.
+ */
+// @req REQ-198
+// @req REQ-200
+export function nameStoryLink(
+  subject: StorySubject,
+  history: NameHistory | null | undefined,
+  language: Language
+): NameStoryLink | undefined {
+  const name = history?.names[0]?.nameText;
+  if (!name) return undefined;
+  const hit: SearchResult = {
+    type: subject.type,
+    id: subject.id,
+    name: subject.name,
+    naming: readNaming(subject.type, subject.content),
+  };
+  if (selectNameSubject([hit], name, language).length === 0) return undefined;
+  const address = storyAddressSpelling(subject, history, name);
+  return {
+    name,
+    href: address
+      ? getNameAnswerRoute(language, address)
+      : nameSearchHref(language, name),
+  };
 }

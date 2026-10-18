@@ -1,6 +1,6 @@
 /**
- * Resolve what a human typed — "Zoulou", "Afrique du Sud", "amaZulu" — to an
- * AFRIK fiche identifier, by reading the corpus in git.
+ * Resolve what a human typed — "Zoulou", "Afrique du Sud", "amaZulu",
+ * "Mulumba" — to an AFRIK fiche identifier, by reading the corpus in git.
  *
  *   npx tsx scripts/resolveAfrikFiche.ts "Zoulou"
  *
@@ -20,17 +20,26 @@
  *      for the ten fiches merged on 31 August 2026.
  *
  * Matching folds accents and case, and ranks exact hits above containment. It
- * does not attempt similarity: a fuzzy near-miss that silently wins would send
- * the curator to edit the wrong fiche, and the corpus has no field it could
- * safely guess from.
+ * computes no similarity score: a fuzzy near-miss that silently wins would send
+ * the curator to edit the wrong fiche. The one exception is four respellings
+ * of the same name (`spellingKey`), offered only when no declared name matches
+ * exactly and labelled `neighbour`, so the caller confirms them instead of
+ * taking them for the name typed.
+ *
+ * Family names are read too, with their retired identifiers: the nightly
+ * demand journal of 2026-10-17 listed mulumba, mutombo and tchikaya as names
+ * without a fiche when PAT_MULUMBA, PAT_MUTOMBO and PAT_TCHICAYA had been filed
+ * since 2026-09-02, because this script never opened `patronymes/`.
  */
 import { readFileSync, readdirSync } from "fs";
 import { join } from "path";
 
 const CORPUS_ROOT = join(process.cwd(), "dataset/source/afrik");
 
-export type FicheKind = "people" | "country" | "family" | "language";
-export type MatchType = "id" | "exact" | "contains" | "partial";
+export type FicheKind =
+  "people" | "country" | "family" | "language" | "patronyme";
+export type MatchType =
+  "id" | "retired" | "exact" | "neighbour" | "contains" | "partial";
 
 /**
  * Below this length a declared name is not allowed to match by being contained
@@ -42,9 +51,12 @@ const SHORTEST_NAME_MATCHED_INSIDE_A_QUERY = 4;
 export interface FicheMatch {
   id: string;
   kind: FicheKind;
-  /** Which declared name matched — `mainName`, `selfAppellation`, `nameFr`, … */
+  /**
+   * Which declared name matched — `mainName`, `selfAppellation`, `nameFr`, … —
+   * or `retiredId` when the query was an identifier merged into this fiche.
+   */
   matchedOn: string;
-  /** That name as the corpus spells it, accents and all. */
+  /** That name as the corpus spells it, accents and all, or the retired id. */
   matchedValue: string;
   matchType: MatchType;
 }
@@ -69,6 +81,20 @@ function fold(value: string): string {
     .replace(/\p{Diacritic}/gu, "")
     .toLowerCase()
     .trim();
+}
+
+/**
+ * One key for the spellings the search fold leaves apart: c/k, tch/ch, ou/u
+ * and i/y — « tchikaya » and « Tchicaya », « moutombo » and « Mutombo ». Only
+ * these four pairs, the ones the 2026-10-17 triage named: each further pair
+ * makes more distinct names collide. Applied to both sides, after `fold`.
+ */
+function spellingKey(folded: string): string {
+  return folded
+    .replace(/tch/g, "ch")
+    .replace(/ou/g, "u")
+    .replace(/c/g, "k")
+    .replace(/y/g, "i");
 }
 
 function declare(names: DeclaredName[], field: string, value: unknown): void {
@@ -182,14 +208,62 @@ function loadCorpus(): Fiche[] {
       declare(names, "alternateNames", raw.alternateNames);
       declare(names, "spellingAliases", raw.spellingAliases);
     }),
+    ...flatFiches("patronymes", "patronyme", (raw, names) => {
+      declare(names, "nameMain", raw.nameMain);
+      const spellings = Array.isArray(raw.spellings) ? raw.spellings : [];
+      for (const entry of spellings) {
+        declare(names, "spellings", (entry as { spelling?: unknown }).spelling);
+      }
+    }),
   ];
+}
+
+/**
+ * Each retired family-name identifier and the one that took it in, or null
+ * for a fiche withdrawn without a successor.
+ */
+function retiredPatronymes(): Map<string, string | null> {
+  const entries = readJson(
+    join(CORPUS_ROOT, "patronymes", "_retired-identifiers.json")
+  );
+  const retired = new Map<string, string | null>();
+  for (const entry of Array.isArray(entries) ? entries : []) {
+    if (typeof entry?.retiredId !== "string") continue;
+    retired.set(
+      entry.retiredId,
+      typeof entry.successorId === "string" ? entry.successorId : null
+    );
+  }
+  return retired;
+}
+
+/**
+ * The live fiche a retired identifier leads to, following a successor that
+ * was itself retired later; undefined when the chain ends on a withdrawal.
+ */
+function successorOf(
+  retiredId: string,
+  retired: Map<string, string | null>,
+  corpus: Fiche[]
+): Fiche | undefined {
+  const seen = new Set<string>();
+  let id = retired.get(retiredId);
+  while (id && !seen.has(id)) {
+    const live = corpus.find((fiche) => fiche.id === id);
+    if (live) return live;
+    seen.add(id);
+    id = retired.get(id);
+  }
+  return undefined;
 }
 
 const MATCH_RANK: Record<MatchType, number> = {
   id: 0,
+  retired: 0,
   exact: 1,
-  contains: 2,
-  partial: 3,
+  neighbour: 2,
+  contains: 3,
+  partial: 4,
 };
 
 /**
@@ -237,6 +311,32 @@ export function resolveAfrikFiche(query: string): FicheMatch[] {
     ];
   }
 
+  const retired = retiredPatronymes();
+  const retiredId = [...retired.keys()].find((id) => fold(id) === needle);
+  if (retiredId) {
+    const successor = successorOf(retiredId, retired, corpus);
+    return successor
+      ? [
+          {
+            id: successor.id,
+            kind: successor.kind,
+            matchedOn: "retiredId",
+            matchedValue: retiredId,
+            matchType: "retired",
+          },
+        ]
+      : [];
+  }
+
+  // A neighbour is offered only where no declared name is the one typed, and
+  // only for a fiche nothing else matched: a query that resolved before
+  // 2026-10-18 keeps every line it printed, in the same order among them.
+  const neighbourKey = corpus.some((fiche) =>
+    fiche.names.some((name) => fold(name.value) === needle)
+  )
+    ? undefined
+    : spellingKey(needle);
+
   const matches: FicheMatch[] = [];
   for (const fiche of corpus) {
     // One hit per fiche, the strongest: a fiche that declares "Zulu" twice is
@@ -258,12 +358,33 @@ export function resolveAfrikFiche(query: string): FicheMatch[] {
       }
     }
 
+    if (!best && neighbourKey !== undefined) {
+      const respelt = fiche.names.find(
+        (name) => spellingKey(fold(name.value)) === neighbourKey
+      );
+      if (respelt) {
+        best = {
+          id: fiche.id,
+          kind: fiche.kind,
+          matchedOn: respelt.field,
+          matchedValue: respelt.value,
+          matchType: "neighbour",
+        };
+      }
+    }
+
     if (best) matches.push(best);
   }
 
+  // At equal strength a family name comes after the fiches it was read
+  // beside before 2026-10-18 — « Zulu » still answers PPL_ZULU first, then
+  // PAT_ZULU — so the lines a query printed then keep their order.
+  const familyNameLast = (match: FicheMatch) =>
+    match.kind === "patronyme" ? 1 : 0;
   return matches.sort(
     (left, right) =>
       MATCH_RANK[left.matchType] - MATCH_RANK[right.matchType] ||
+      familyNameLast(left) - familyNameLast(right) ||
       left.id.localeCompare(right.id)
   );
 }

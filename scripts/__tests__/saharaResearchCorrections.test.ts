@@ -191,11 +191,12 @@ describe("the humid period and the 4.2 ka event in the family and people fiches"
     const ancientOrigins = readFiche("peuples/FLG_ATLANTIQUE/PPL_FULA.json")
       .content.origins.ancientOrigins;
 
-    expect(ancientOrigins).not.toContain(
-      "plus humide vers le VIIe siecle av. J.-C."
+    // The accents were restored on 2026-10-18 (unaccented French prose).
+    expect(ancientOrigins).not.toMatch(
+      /plus humide vers le VIIe si[eè]cle av\. J\.-C\./
     );
     expect(ancientOrigins).toContain(
-      "Leurs ancetres auraient migre du Sahara occidental vers la vallee du Senegal"
+      "Leurs ancêtres auraient migré du Sahara occidental vers la vallée du Sénégal"
     );
   });
 });

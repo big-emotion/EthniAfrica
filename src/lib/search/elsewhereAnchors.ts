@@ -1,5 +1,5 @@
 /**
- * « Pendant ce temps, ailleurs » (REQ-198, doctrine §1.1): a fixed list of
+ * « Ailleurs à la même époque » (REQ-198, doctrine §1.1): a fixed list of
  * dated events a reader can set a name's date against. They are time anchors,
  * never the subject: the timeline prints one only after a sentence about the
  * African name.

@@ -123,13 +123,14 @@
   },
   "nameHistory": {
     "summary": "Le nom Nganguela désigne un ensemble de peuples de l'est de l'Angola. Seuls deux groupes de l'ouest se nommaient ainsi eux-mêmes ; les Lwena, les Luchazi, les Mbunda et les autres ont chacun leur nom. Le nom s'écrit aussi Ganguela. Les sources lues n'expliquent pas son origine ; nous présentons plus bas ce qu'elles en disent.",
+    "selfNameUnknown": true,
     "names": [
       {
         "nameText": "Nganguela",
         "nameStatus": "current",
-        "selfGiven": true,
+        "selfGiven": false,
         "languageOfOrigin": null,
-        "namedBy": null,
+        "namedBy": "Les Ovimbundu",
         "shortLine": "Un nom donné par les Ovimbundu, que seuls deux groupes acceptaient.",
         "usedIn": ["por"],
         "periodLabel": "Écrit dès 1881 ; en usage aujourd'hui",

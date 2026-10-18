@@ -11,6 +11,7 @@ import {
   getFamilyRoute,
   getLanguageFromRoute,
   getLocalizedRoute,
+  getNameAnswerRoute,
   getNommerChapterRoute,
   getPageFromRoute,
   getPatronymeRoute,
@@ -492,5 +493,50 @@ describe("static pages outside the page types (REQ-141)", () => {
       countries: "pays",
       families: "familles",
     });
+  });
+});
+
+// ---------------------------------------------------------------------------
+// The address of an answered name (REQ-200, DEC-074)
+// ---------------------------------------------------------------------------
+
+describe("the address of an answered name", () => {
+  // ɓ is a letter of Fulfulde, not an accent: the address keeps it, encoded.
+  // @req REQ-200
+  it("keeps ɓ, lower-cased and percent-encoded", () => {
+    expect(getNameAnswerRoute("fr", "Fulɓe")).toBe(
+      "/fr/atlas/recherche/ful%C9%93e"
+    );
+  });
+
+  // @req REQ-200
+  it("gives case variants one address", () => {
+    expect(getNameAnswerRoute("fr", "fulɓe")).toBe(
+      getNameAnswerRoute("fr", "Fulɓe")
+    );
+    expect(getNameAnswerRoute("fr", "FULƁE")).toBe(
+      getNameAnswerRoute("fr", "Fulɓe")
+    );
+  });
+
+  // A decomposed « é » typed on one keyboard and a composed one typed on
+  // another are the same letter, so they must not make two addresses.
+  // @req REQ-200
+  it("composes the form before encoding it", () => {
+    expect(getNameAnswerRoute("fr", "Traoré")).toBe(
+      "/fr/atlas/recherche/traor%C3%A9"
+    );
+    expect(getNameAnswerRoute("fr", "Traoré")).toBe(
+      "/fr/atlas/recherche/traor%C3%A9"
+    );
+  });
+
+  // The address lives under the search page, so the page it belongs to is
+  // still the search: the trail and the header read it as such.
+  // @req REQ-200
+  it("is read back as the search page", () => {
+    expect(getPageFromRoute(getNameAnswerRoute("fr", "Lingala"))).toBe(
+      "search"
+    );
   });
 });

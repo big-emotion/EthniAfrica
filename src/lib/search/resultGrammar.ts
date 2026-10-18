@@ -25,7 +25,9 @@ export type AnswerBlockId = (typeof ANSWER_BLOCKS)[number];
  * `appellations` open the pages that have no answer to give (unknown name,
  * misspelling, a relation browse). `shorts`, `plates`, `quiz` and `fiches`
  * are what the filters show — they left « Tout » when the answer became the
- * page.
+ * page. One exception, outside « Tout »: « Histoire du nom » shows one piece
+ * made on the name as a row after the open name's end line (charter « What
+ * left Tout », amended 2026-10-17); the shelf stays in the Shorts filter.
  */
 // @req REQ-180
 export const FEED_BLOCKS = [

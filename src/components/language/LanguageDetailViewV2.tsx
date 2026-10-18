@@ -6,8 +6,10 @@ import Link from "next/link";
 import type { LanguagePageData } from "@/lib/languageDataTransformer";
 import { getFamilyRoute, getPeopleRoute } from "@/lib/routing";
 import { FicheNameStory } from "@/components/fiche/FicheNameStory";
+import { FicheStoryLink } from "@/components/fiche/FicheStoryLink";
 import { FicheSection } from "@/components/fiche/FicheSection";
 import { formKey, readNaming } from "@/lib/search/naming";
+import { nameStoryLink } from "@/lib/search/nameClosing";
 import { FieldProvenanceMarker } from "@/components/fiche/FieldProvenanceMarker";
 import { FicheSources } from "@/components/fiche/FicheSources";
 import { ProvenanceBanner } from "@/components/source-transparency/ProvenanceBanner";
@@ -121,6 +123,20 @@ export function LanguageDetailViewV2({
         {history ? (
           <FicheNameReadings history={history} language={language} />
         ) : null}
+        <FicheStoryLink
+          story={nameStoryLink(
+            {
+              type: "language",
+              id: data.id,
+              name: data.name,
+              content: { alternateNames: data.alternateNames },
+            },
+            history,
+            language
+          )}
+          from="language"
+          language={language}
+        />
       </FicheNameStory>
 
       {history ? (
