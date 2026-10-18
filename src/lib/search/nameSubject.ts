@@ -122,8 +122,19 @@ function carriesAsWord(name: string, word: string): boolean {
  * qualifier inside the string — `Mandingue (français colonial)` — and
  * splitting on the parenthesis to widen the match would make `français
  * colonial` a name a people answers to.
+ *
+ * The names the fiche's history tells come last (REQ-135, ETNI-2093). A
+ * people's forms are its exonyms, so its self-given name — « Fulɓe »,
+ * « Bikpakpaam » — reached no subject, and neither did any name a history
+ * tells but no other field holds. The search now answers those names
+ * exactly, and the page has to agree with it. Their order changes nothing:
+ * any name that answers makes the fiche a subject, none is promoted.
  */
 function namesOf(result: SearchResult, language: Language): string[] {
   const forms = result.naming?.forms.map((form) => form.form) ?? [];
-  return [getLocalizedSearchResultName(result, language), ...forms];
+  return [
+    getLocalizedSearchResultName(result, language),
+    ...forms,
+    ...(result.historyNames ?? []),
+  ];
 }

@@ -601,6 +601,16 @@ function toDate(value: unknown): Date | undefined {
   return value ? new Date(value as string) : undefined;
 }
 
+/**
+ * The names a row's history tells (migration 109). A function not yet
+ * migrated sends none, and a malformed entry is dropped rather than compared.
+ */
+function historyNamesOf(value: unknown): string[] {
+  return Array.isArray(value)
+    ? value.filter((name): name is string => typeof name === "string")
+    : [];
+}
+
 function toRankedPeople(row: Record<string, unknown>): RankedPeople {
   return {
     id: row.id as string,
@@ -613,6 +623,7 @@ function toRankedPeople(row: Record<string, unknown>): RankedPeople {
       (row.classificationStatus as RankedPeople["classificationStatus"]) ??
       null,
     content: (row.content as Record<string, unknown>) || {},
+    historyNames: historyNamesOf(row.historyNames),
     confidence: typeof row.confidence === "number" ? row.confidence : null,
     relevance: typeof row.relevance === "number" ? row.relevance : 0,
     exactMatch: row.exactMatch === true,
@@ -633,6 +644,7 @@ function toRankedCountry(row: Record<string, unknown>): RankedCountry {
     etymology: (row.etymology as string) || undefined,
     nameOriginActor: (row.nameOriginActor as string) || undefined,
     content: (row.content as Record<string, unknown>) || {},
+    historyNames: historyNamesOf(row.historyNames),
     relevance: typeof row.relevance === "number" ? row.relevance : 0,
     exactMatch: row.exactMatch === true,
     normalizedScore: toScore(row.normalizedScore),
@@ -700,6 +712,7 @@ function toRankedPatronyme(row: Record<string, unknown>): RankedPatronyme {
     nameSystem: row.nameSystem as string,
     casteOrSocialFunction: (row.casteOrSocialFunction as string) ?? null,
     content: (row.content as Record<string, unknown>) || {},
+    historyNames: historyNamesOf(row.historyNames),
     relevance: typeof row.relevance === "number" ? row.relevance : 0,
     exactMatch: row.exactMatch === true,
     normalizedScore: toScore(row.normalizedScore),
@@ -764,6 +777,7 @@ function toRankedLanguageFamily(
       (row.classificationStatus as RankedLanguageFamily["classificationStatus"]) ??
       null,
     content: (row.content as Record<string, unknown>) || {},
+    historyNames: historyNamesOf(row.historyNames),
     relevance: typeof row.relevance === "number" ? row.relevance : 0,
     exactMatch: row.exactMatch === true,
     normalizedScore: toScore(row.normalizedScore),
@@ -821,6 +835,7 @@ function toRankedLanguage(row: Record<string, unknown>): RankedLanguage {
     familyName: (row.familyName as string) ?? null,
     familyNameEn: (row.familyNameEn as string) ?? null,
     content: (row.content as RankedLanguage["content"]) || {},
+    historyNames: historyNamesOf(row.historyNames),
     relevance: typeof row.relevance === "number" ? row.relevance : 0,
     exactMatch: row.exactMatch === true,
     snippet: (row.snippet as string) ?? null,

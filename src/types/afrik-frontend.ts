@@ -206,6 +206,15 @@ export interface SearchResult {
    * (persons, quizzes), reads as before.
    */
   answer?: SearchAnswer;
+  /**
+   * Every name the fiche's history tells (`nameHistory.names[].nameText`), in
+   * history order, as the corpus spells them (REQ-135, ETNI-2093). The search
+   * answers a fiche exactly under any of them, so the page's subject selection
+   * reads them beside the filed name. `[]` on a fiche without a history, and
+   * on a row from a search function not yet migrated; absent on the kinds the
+   * page does not answer by name (persons, places).
+   */
+  historyNames?: string[];
   /** Autonyme (selfAppellation) du peuple, quand le corpus le porte. */
   autonym?: string;
   /** Exonymes connus, dans l'ordre de la fiche. */

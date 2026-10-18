@@ -170,6 +170,27 @@ function appellationsOf(content: unknown): {
   return { autonym, exonyms, peopleGroupId, peopleGroupLabel };
 }
 
+/**
+ * The names a row's history tells, in history order (migration 109). A row
+ * from a function not yet migrated carries none and reads as a fiche without
+ * a history, which is what it answered as.
+ */
+function historyNamesOf(value: unknown): string[] {
+  return Array.isArray(value)
+    ? value.filter((name): name is string => typeof name === "string")
+    : [];
+}
+
+/** A word row carries its whole history (migration 104), so its names are read off it. */
+function wordHistoryNamesOf(nameHistory: unknown): string[] {
+  const names = (nameHistory as { names?: unknown } | null)?.names;
+  return Array.isArray(names)
+    ? historyNamesOf(
+        names.map((name) => (name as { nameText?: unknown } | null)?.nameText)
+      )
+    : [];
+}
+
 function numberOrUndefined(value: unknown): number | undefined {
   return typeof value === "number" && Number.isFinite(value)
     ? value
@@ -352,6 +373,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
       type: "people",
       naming: namingOf(row),
       answer: answerOf(row),
+      historyNames: historyNamesOf(row.historyNames),
       id: String(row.id),
       name: String(row.nameMain ?? ""),
       languageFamilyId:
@@ -373,6 +395,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
       type: "country",
       naming: namingOf(row),
       answer: answerOf(row),
+      historyNames: historyNamesOf(row.historyNames),
       id: String(row.id),
       name: String(row.nameFr ?? ""),
       nameEn: englishNameOf(row.nameEn),
@@ -388,6 +411,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
       type: "languageFamily",
       naming: namingOf(row),
       answer: answerOf(row),
+      historyNames: historyNamesOf(row.historyNames),
       id: String(row.id),
       name: String(row.nameFr ?? ""),
       nameEn: englishNameOf(row.nameEn),
@@ -416,6 +440,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
       type: "patronyme",
       naming: namingOf(row),
       answer: answerOf(row),
+      historyNames: historyNamesOf(row.historyNames),
       id: String(row.id),
       name: String(row.nameMain ?? ""),
       nameSystem: row.nameSystem as SearchResult["nameSystem"],
@@ -434,6 +459,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
       type: "language",
       naming: namingOf(row),
       answer: answerOf(row),
+      historyNames: historyNamesOf(row.historyNames),
       id: String(row.id),
       name: String(row.name ?? ""),
       nameEn: englishNameOf(row.nameEn),
@@ -469,6 +495,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
       type: "word",
       naming: namingOf(row),
       answer: answerOf(row),
+      historyNames: wordHistoryNamesOf(row.nameHistory),
       id: String(row.id),
       name: String(row.nameMain ?? ""),
       snippet: (row.definition as string) || undefined,
