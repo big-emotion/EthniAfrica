@@ -8,9 +8,12 @@ import type { Language } from "@/types/shared";
  * page, and one wording per idea is what keeps the two surfaces from drifting.
  */
 export interface FicheNameStoryCopy {
-  eyebrow: string;
-  askSeveral: string;
-  askOne: string;
+  /**
+   * The block's one title. It was an eyebrow over a question (« D'où viennent
+   * ces noms ? »); the operator ruled out figures of style in titles on
+   * 2026-10-17, and a question that stands for a title is one.
+   */
+  title: string;
   readMore: string;
   moreForms: (count: number) => string;
   /** The count on a name row that folds its competing readings (brief 5). */
@@ -27,9 +30,7 @@ export interface FicheNameStoryCopy {
 // @req REQ-151
 export const ficheNameStoryCopy: Record<Language, FicheNameStoryCopy> = {
   fr: {
-    eyebrow: "L’histoire des noms",
-    askSeveral: "D’où viennent ces noms ?",
-    askOne: "D’où vient ce nom ?",
+    title: "L’histoire des noms",
     readMore: "Lire la suite",
     moreForms: (count) => `+${count} ${count === 1 ? "autre" : "autres"}`,
     explanations: (count) => `${count}\u00a0explications`,

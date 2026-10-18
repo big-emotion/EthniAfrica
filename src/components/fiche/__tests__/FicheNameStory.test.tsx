@@ -141,8 +141,10 @@ describe("FicheNameStory", () => {
     expect(container).toBeEmptyDOMElement();
   });
 
+  // No figure of style in a title (operator, 2026-10-17): the block is titled
+  // by what it holds, once, with no eyebrow above it and no question below.
   // @req REQ-151
-  it("asks about one name, not several, when only one form is known", () => {
+  it("titles the story « L’histoire des noms » once, with no eyebrow and no question", () => {
     const naming = readNaming("languageFamily", {
       decolonialHeader: {
         historicalAppellations: ["Langues bantoues"],
@@ -150,11 +152,27 @@ describe("FicheNameStory", () => {
           "Le terme a été introduit par Wilhelm Bleek en 1862.",
       },
     });
-    render(<FicheNameStory naming={naming} language="fr" />);
+    const { container } = render(
+      <FicheNameStory naming={naming} language="fr" />
+    );
 
     expect(
-      screen.getByRole("heading", { name: "D’où vient ce nom ?" })
+      screen.getByRole("heading", { level: 3, name: "L’histoire des noms" })
     ).toBeVisible();
+    expect(screen.queryByRole("heading", { name: /D’où vien/ })).toBeNull();
+    expect(container.querySelector(".fiche-name-story__eyebrow")).toBeNull();
+    expect(screen.getAllByText("L’histoire des noms")).toHaveLength(1);
+  });
+
+  // @req REQ-151
+  it("draws no question under the chapter title either, whatever the number of forms", () => {
+    const { container } = render(
+      <FicheNameStory naming={fula()} language="fr" chapter />
+    );
+
+    expect(screen.queryByRole("heading", { name: /D’où vien/ })).toBeNull();
+    expect(container.querySelector(".fiche-name-story__ask")).toBeNull();
+    expect(container.querySelector(".fiche-name-story__eyebrow")).toBeNull();
   });
 
   // @req REQ-151
