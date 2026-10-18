@@ -75,5 +75,137 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Guindo est un nom de famille dogon du Mali, porté aussi au Burkina Faso. Louis Desplagnes l'écrit dès 1907 comme celui d'une famille du plateau de Bandiagara d'où sortaient les grands prêtres, les Hogon. Son sens est discuté ; nous présentons plus bas ce qu'en disent les sources.",
+    "names": [
+      {
+        "nameText": "Guindo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille dogon du Mali, celui des Hogon de Bandiagara selon un récit de 1907.",
+        "periodLabel": "Écrit dès 1907 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Décrit en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Guindo est aussi porté au Burkina Faso, dans le Yatenga, par des familles de langue dogon que le projet de répertoire des patronymes du Burkina Faso dit originaires du Mali et de Kain.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 85",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de mai 2025 et marqué « version provisoire » sur sa page de titre. Lu le 18 octobre 2026 dans le navigateur, sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Les pages sont celles du document, repérées par leurs numéros en bas de page. Notice n° 463, GUINDO : « GUINDO est un patronyme originaire du Mali et de Kain qui signifie « bienvenue ou bonne arrivée ». La langue parlée est le dogon. On trouve les GUINDO dans le Yatenga. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Proposé en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Guindo voudrait dire « bienvenue » ou « bonne arrivée », selon le même projet de répertoire. Aucune autre source lue ne donne son sens.",
+            "hypothesisGroup": "sens-guindo",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 85",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de mai 2025 et marqué « version provisoire » sur sa page de titre. Lu le 18 octobre 2026 dans le navigateur, sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Les pages sont celles du document, repérées par leurs numéros en bas de page. Notice n° 463, GUINDO : « GUINDO est un patronyme originaire du Mali et de Kain qui signifie « bienvenue ou bonne arrivée ». La langue parlée est le dogon. On trouve les GUINDO dans le Yatenga. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Guindo est, selon Louis Desplagnes, celui de la famille d'où sortaient les Hogon, les grands chefs religieux des peuples du plateau de Bandiagara. Le conseil des anciens choisissait le grand prêtre parmi les Guindo ou les Togo.",
+            "sources": [
+              {
+                "title": "Le plateau central nigérien : une mission archéologique et ethnographique au Soudan français",
+                "author": "Louis Desplagnes",
+                "year": 1907,
+                "url": "https://archive.org/details/leplateaucentral00desp",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 193 ; p. 326",
+                "notes": "Paris, Émile Larose, 1907. L'auteur, lieutenant d'infanterie coloniale, rend compte d'une mission menée dans la boucle du Niger, autour de Bandiagara et de Djenné. Auteur de l'époque coloniale, cité pour ce qu'il rapporte. Lu le 18 octobre 2026 dans le texte numérisé d'Internet Archive, pages repérées par leurs numéros. Page 193 : « les Hogon-Guindo furent toujours reconnus comme les grands chefs religieux de tous ces nouveaux peuples » ; à Engem, « un chef Hogon, représentant les familles Guindo et un chef représentant les Tellé se partagent le pouvoir ». Page 326 : le conseil des anciens choisit le grand prêtre « parmi les membres d'une famille désignée, Guindo ou Togo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Guindo figure, chez Louis Desplagnes, parmi les familles d'un groupe qu'il appelle le clan Ndogom, avec les Togo et les Tessougue ; le chef militaire de ce groupe était, écrit-il, de la famille des Guindo.",
+            "formAsWritten": "Guindo",
+            "sources": [
+              {
+                "title": "Le plateau central nigérien : une mission archéologique et ethnographique au Soudan français",
+                "author": "Louis Desplagnes",
+                "year": 1907,
+                "url": "https://archive.org/details/leplateaucentral00desp",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 191",
+                "notes": "Paris, Émile Larose, 1907. L'auteur, lieutenant d'infanterie coloniale, rend compte d'une mission menée dans la boucle du Niger, autour de Bandiagara et de Djenné. Auteur de l'époque coloniale, cité pour ce qu'il rapporte. Lu le 18 octobre 2026 dans le texte numérisé d'Internet Archive, pages repérées par leurs numéros. Page 191, vue en image : « Le deuxième groupe qui formait le clan des Ndogom, se composait des familles : Guindo, Togo, Tessougue, Garango, Armoï, Dibo, Pongoro, Oron, etc. » ; son chef militaire, « Badioma ou Badj-Ouma », était « de la famille des Guindo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Guindo apparaît par écrit chez Louis Desplagnes, dans le nom de la confédération des Ndogom-Guindo, que les peuples du plateau de Bandiagara avaient formée sous la devise « les lions rassemblés ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a écrit, pas depuis quand le nom est porté.",
+            "formAsWritten": "Guindo",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Louis Desplagnes",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Le plateau central nigérien : une mission archéologique et ethnographique au Soudan français",
+                "author": "Louis Desplagnes",
+                "year": 1907,
+                "url": "https://archive.org/details/leplateaucentral00desp",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 185",
+                "notes": "Paris, Émile Larose, 1907. L'auteur, lieutenant d'infanterie coloniale, rend compte d'une mission menée dans la boucle du Niger, autour de Bandiagara et de Djenné. Auteur de l'époque coloniale, cité pour ce qu'il rapporte. Lu le 18 octobre 2026 dans le texte numérisé d'Internet Archive, pages repérées par leurs numéros. Page 185 : les populations des plateaux de Bandiagara avaient formé « la grande confédération des Ndogom-Guindo, ayant pour devise : « les lions rassemblés » »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -106,5 +106,91 @@
       "fieldPath": "transmissionMode",
       "reason": "La source primaire de 1885 qualifie Có/Cól de patronyme papel sans expliquer s’il se transmet par filiation paternelle, maternelle, bilatérale ou par affiliation."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Có est un nom de famille papel de Guinée-Bissau : en 1885, il désigne à la fois un groupe papel de l'île de Bissau et ceux qui en portent le nom. On ne sait pas ce que le mot veut dire.",
+    "names": [
+      {
+        "nameText": "Có",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un groupe papel de l'île de Bissau et de ses membres, écrit dès 1885.",
+        "periodLabel": "Écrit dès 1885 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1885,
+              "to": 1885,
+              "label": "1885"
+            },
+            "statement": "Le nom Có désigne, selon le père Marcelino Marques de Barros, un groupe papel de l'île de Bissau, qu'il appelle une « tribu », et c'est aussi le nom de famille que portent ses membres. Les sources lues ne disent pas ce que le mot veut dire.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Marcelino Marques de Barros à Hugo Schuchardt (03-00537), avec notes sur « Cojjête Jangá »",
+                "author": "Marcelino Marques de Barros",
+                "year": 1885,
+                "url": "https://gams.uni-graz.at/o:hsa.letter.2779/sdef:TEI/get?context=context:hsa.letters&locale=de",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "f. 3-4",
+                "notes": "Lettre écrite à Lisbonne le 5 juillet 1885, avec quatre feuillets « Vocabulos e Versos de Mondé », éditée par Silvio Moreira de Sousa (2015) dans le Hugo Schuchardt Archiv de l'Université de Graz. Lue le 18 octobre 2026 dans l'édition en ligne. Feuillet 3 : poème « Cojjête Jangá » de Mondé, en créole avec la traduction portugaise en regard ; le vers « Parente nam Col » est traduit « Meu parente na tribo Có ». Feuillet 4 : Cojjete-Jangá est un jeune homme, « amante e parente da poetisa Mondé da Ilha de Bissau », qui « floreceu em 1860 em diante » ; « namá ou nam, somente Cól po Có, tribu papel com este appelido ». Prêtre, cité pour les formes qu'il écrit et ce qu'il explique ; le mot « tribu » est le sien."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1885,
+              "to": 1885,
+              "label": "1885"
+            },
+            "statement": "Le nom Có prend la forme Cól dans le poème de Mondé, une poétesse de l'île de Bissau : Barros explique que Cól, dans ce vers, vaut pour Có.",
+            "formAsWritten": "Cól",
+            "sources": [
+              {
+                "title": "Marcelino Marques de Barros à Hugo Schuchardt (03-00537), avec notes sur « Cojjête Jangá »",
+                "author": "Marcelino Marques de Barros",
+                "year": 1885,
+                "url": "https://gams.uni-graz.at/o:hsa.letter.2779/sdef:TEI/get?context=context:hsa.letters&locale=de",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "f. 3-4",
+                "notes": "Lettre écrite à Lisbonne le 5 juillet 1885, avec quatre feuillets « Vocabulos e Versos de Mondé », éditée par Silvio Moreira de Sousa (2015) dans le Hugo Schuchardt Archiv de l'Université de Graz. Lue le 18 octobre 2026 dans l'édition en ligne. Feuillet 3 : poème « Cojjête Jangá » de Mondé, en créole avec la traduction portugaise en regard ; le vers « Parente nam Col » est traduit « Meu parente na tribo Có ». Feuillet 4 : Cojjete-Jangá est un jeune homme, « amante e parente da poetisa Mondé da Ilha de Bissau », qui « floreceu em 1860 em diante » ; « namá ou nam, somente Cól po Có, tribu papel com este appelido ». Prêtre, cité pour les formes qu'il écrit et ce qu'il explique ; le mot « tribu » est le sien."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1885,
+              "to": 1885,
+              "label": "1885"
+            },
+            "statement": "Le nom Có apparaît par écrit dans les notes que le père Marcelino Marques de Barros envoie en 1885 au linguiste Hugo Schuchardt : il y traduit un vers de Mondé, « Parente nam Col », par « mon parent dans la tribu Có ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a écrit, pas depuis quand le nom est porté.",
+            "formAsWritten": "Có",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Marcelino Marques de Barros",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Marcelino Marques de Barros à Hugo Schuchardt (03-00537), avec notes sur « Cojjête Jangá »",
+                "author": "Marcelino Marques de Barros",
+                "year": 1885,
+                "url": "https://gams.uni-graz.at/o:hsa.letter.2779/sdef:TEI/get?context=context:hsa.letters&locale=de",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "f. 3-4",
+                "notes": "Lettre écrite à Lisbonne le 5 juillet 1885, avec quatre feuillets « Vocabulos e Versos de Mondé », éditée par Silvio Moreira de Sousa (2015) dans le Hugo Schuchardt Archiv de l'Université de Graz. Lue le 18 octobre 2026 dans l'édition en ligne. Feuillet 3 : poème « Cojjête Jangá » de Mondé, en créole avec la traduction portugaise en regard ; le vers « Parente nam Col » est traduit « Meu parente na tribo Có ». Feuillet 4 : Cojjete-Jangá est un jeune homme, « amante e parente da poetisa Mondé da Ilha de Bissau », qui « floreceu em 1860 em diante » ; « namá ou nam, somente Cól po Có, tribu papel com este appelido ». Prêtre, cité pour les formes qu'il écrit et ce qu'il explique ; le mot « tribu » est le sien."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -116,5 +116,146 @@
       "fieldPath": "homonyms",
       "reason": "L’entrée DAFN/FamilySearch a été recherchée pour plusieurs origines de Gueye ; elle atteste le nom chez trois peuples voisins mais ne décrit pas de lignée homonyme distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Gueye, qu'on écrit aussi Guèye, est un nom de famille du Sénégal, porté chez les Wolof, les Lébou et les Toucouleurs. Il est écrit Gaiy dès 1858. Son sens n'est pas expliqué : on ne sait pas avec certitude d'où il vient.",
+    "names": [
+      {
+        "nameText": "Gueye",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille wolof, lébou et toucouleur du Sénégal, écrit Gaiy dès 1858.",
+        "periodLabel": "Écrit Gaiy dès 1858 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Gueye est porté surtout au Sénégal, chez les Wolof, les Lébou et les Toucouleurs, selon le Dictionary of American Family Names. Le dictionnaire dit son étymologie inexpliquée ; on ne sait pas avec certitude d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Gueye",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/gueye?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue le 18 octobre 2026 (texte anglais de la page). L'entrée dit : « West African (mainly Senegal; also Guèye): name found among the Wolof, Lebou, and Tukulor peoples, of unexplained etymology »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1994,
+              "to": 1994,
+              "label": "Édition de 1994"
+            },
+            "era": "modern",
+            "statement": "Le nom Gueye est, selon Ihechukwu Madubuike, l'un des noms de famille wolof les plus courants, que les enfants reçoivent de leur père.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Handbook of African Names",
+                "author": "Ihechukwu Madubuike",
+                "year": 1994,
+                "url": "https://dokumen.pub/a-handbook-of-african-names-2-revnbsped-0894104381-9780894104381-0894104373.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 111-112",
+                "notes": "2e éd., Three Continents Press, 1994. Lu le 18 octobre 2026 sur une copie non officielle, une transcription numérique miroir du volume imprimé, mal découpée par endroits. Section sur les Wolof, p. 111-112 : les enfants prennent le nom de famille du père ; les noms les plus courants, transmis par les hommes, sont « Diop, Ndiaye, Mbang, Fall, Gueye, Mbaye, Sek, Diao ». Parmi les noms qui rappellent les ancêtres : « The Fall are descendants of a powerful and large family — the Damel of Cayor, once the vassal of Boubou Djollof » ; « The N'Diaye are the descendants of Bouba Djollof or N'Diadia'u, the monarch who grouped the people of Wolof under his authority », ce qui leur vaut « the title of the most noble among the Wolofs ». L'auteur ne dit pas de qui il tient ces récits."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gueye figure, écrit Gèy, parmi les noms de famille du dictionnaire wolof d'Aloïse Kobès, revu par le père O. Abiven. L'animal que la famille évite de toucher, son mbagne, y est le varan appelé gueule tapée.",
+            "formAsWritten": "Gèy",
+            "sources": [
+              {
+                "title": "Dictionnaire volof-français",
+                "author": "Aloïse Kobès ; nouvelle édition par O. Abiven",
+                "year": 1923,
+                "url": "https://archive.org/details/dictionnairevolo00kobs",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 383",
+                "notes": "Nouvelle édition revue et augmentée par le père O. Abiven, de la Congrégation du Saint-Esprit. Dakar, Mission catholique, 1923, selon la notice d'Internet Archive (l'adresse de l'éditeur est masquée par une étiquette). Lu le 18 octobre 2026, page 383 vue en image. Liste « Noms de famille (santa) » : « D̤ûf, D̤ip, espèce de biche », « Fal, Ténêv, tigre », « Fay, sanglier », « Gèy, Mbetă, gueule tapée », « Nd̤ay, Gaéndé, lion » (le D porte deux points souscrits). Note au bas de la page : les noms d'animaux placés après les noms de familles « désignent l'ennemi (mbagne) de cette famille », que l'on évite de toucher de peur de mourir ou de tomber malade. Missionnaires catholiques, cités pour les formes qu'ils écrivent et ce qu'ils rapportent."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1858,
+              "label": "1858"
+            },
+            "statement": "Le nom Gueye apparaît par écrit, sous la forme Gaiy, dans un chant wolof que l'abbé David Boilat publie dans sa grammaire : Isœ-Gaiy, qu'il traduit Issa-Guèye, y est l'une des aïeules de la jeune femme que chante le poète. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a écrit, pas depuis quand le nom est porté.",
+            "formAsWritten": "Gaiy",
+            "birth": true,
+            "actors": [
+              {
+                "name": "David Boilat",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Grammaire de la langue woloffe",
+                "author": "David Boilat",
+                "year": 1858,
+                "url": "https://archive.org/details/grammairedelalan00boil",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 406",
+                "notes": "Paris, Imprimerie impériale, 1858. Lu le 18 octobre 2026 dans la numérisation d'Internet Archive, page 406 vue en image. Chant wolof en l'honneur de Rose : le texte wolof nomme « Kodou-Sambœ, Isœ-Gaiy », que l'auteur traduit « Kodou-Samba et Issa-Guèye » ; sa note explique que le poète rappelle ainsi « le souvenir des aïeules de Rose ». Le lieu du chant n'est pas dit sur cette page. Abbé Boilat, cité pour les formes qu'il écrit."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Guèye",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Usage contemporain",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Guèye est une autre façon d'écrire Gueye, avec un accent, selon le Dictionary of American Family Names.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Gueye",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/gueye?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue le 18 octobre 2026 (texte anglais de la page). L'entrée dit : « West African (mainly Senegal; also Guèye): name found among the Wolof, Lebou, and Tukulor peoples, of unexplained etymology »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -106,5 +106,116 @@
       "fieldPath": "homonyms",
       "reason": "Aucune graphie identique désignant un autre peuple, un lieu ou une autre chaîne n'a été relevée. L'entrée communautaire renvoie seulement au nom voisin Ògúnwùsì, sans en préciser le lien."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Adewusi, qu'on écrit aussi Adeusi, est un nom de personne yoruba du Nigeria. Une lecture le traduit « la royauté se multiplie ». Il apparaît par écrit en 1921, comme nom d'un prince d'Oyo. Les sources lues ne disent pas comment il passe d'une génération à l'autre comme nom de famille.",
+    "names": [
+      {
+        "nameText": "Adewusi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne yoruba, « la royauté se multiplie » selon une lecture ; écrit en 1921.",
+        "periodLabel": "Écrit en 1921 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Adewusi voudrait dire « la royauté se multiplie » ou « la royauté est influente » : il serait formé de adé, « couronne, royauté », et de wùsì, « se multiplier, être influent », selon la base collaborative YorubaNames.",
+            "hypothesisGroup": "sens-adewusi",
+            "sources": [
+              {
+                "title": "Adéwùsì — YorubaNames",
+                "author": "YorubaNames",
+                "year": null,
+                "url": "https://www.yorubaname.com/entries/adewusi",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Base collaborative de noms yoruba, page lue le 18 octobre 2026. Sens : « Royalty multiplies/is influential » ; morphologie adé-wùsì, adé « crown, royalty », wùsì « be influential, multiplies » ; le nom s'écrit et se prononce parfois « Adéùsì ». La page en fait aussi le nom d'une famille royale d'Ijebu-Ode, sans citer de source : ce point n'est pas repris ici."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "Écrit en 1921"
+            },
+            "statement": "Le nom Adewusi commence par ade, que Samuel Johnson traduit « couronne ». Il note que les noms formés sur ade étaient d'abord ceux de gens de naissance princière, avant d'être portés plus largement, et que ade peut aussi venir du verbe de, « arriver ».",
+            "hypothesisGroup": "sens-adewusi",
+            "sources": [
+              {
+                "title": "The History of the Yorubas",
+                "author": "Samuel Johnson",
+                "year": 1921,
+                "url": "https://archive.org/details/historyofyorubas00john",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 82",
+                "notes": "Première édition en 1921, préparée par O. Johnson d'après le manuscrit de l'auteur, pasteur d'Oyo. Lu le 18 octobre 2026 dans une réimpression des CMS Bookshops de Lagos, numérisée par Internet Archive ; cité pour ce que l'auteur rapporte. Page 82, chapitre sur les noms yoruba : « Names compounded of Ade, Ola, Olu, Oye originally belonged to one of high or princely birth, but are now used more or less indiscriminately », avec Adebiyi, « The crown has begotten this » ; « N.B. — Ade does not always signify a crown, it may be taken from the verb de to arrive, it may then mean coming », avec Adesina, « My coming opens the way »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1921,
+              "label": "Rapporté en 1921"
+            },
+            "statement": "Le nom Adewusi apparaît par écrit chez l'historien yoruba Samuel Johnson : c'est le nom du prince héritier d'Oyo, surnommé Fùhúnijì, à qui le vieux roi Majotu laissait les affaires de l'État. C'est la plus ancienne trace de ce nom que le projet connaît ; le nom est plus ancien qu'elle.",
+            "formAsWritten": "Adewusi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The History of the Yorubas",
+                "author": "Samuel Johnson",
+                "year": 1921,
+                "url": "https://archive.org/details/historyofyorubas00john",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 212-213",
+                "notes": "Première édition en 1921, préparée par O. Johnson d'après le manuscrit de l'auteur, pasteur d'Oyo. Lu le 18 octobre 2026 dans une réimpression des CMS Bookshops de Lagos, numérisée par Internet Archive ; cité pour ce que l'auteur rapporte. Pages 212-213, vues en image : le roi Majotu étant âgé, « the business of state was for the most part left in the hands of the Crown Prince Adewusi surnamed Fùhúnijì », prince que l'auteur dit dissolu et cruel. L'auteur nomme plus loin un autre Adewusi, fils du roi Atiba et frère d'Adelu (p. 328)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Adeusi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Usage contemporain",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Adeusi est une autre façon d'écrire et de prononcer Adewusi, selon la base collaborative YorubaNames.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Adéwùsì — YorubaNames",
+                "author": "YorubaNames",
+                "year": null,
+                "url": "https://www.yorubaname.com/entries/adewusi",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Base collaborative de noms yoruba, page lue le 18 octobre 2026. Sens : « Royalty multiplies/is influential » ; morphologie adé-wùsì, adé « crown, royalty », wùsì « be influential, multiplies » ; le nom s'écrit et se prononce parfois « Adéùsì ». La page en fait aussi le nom d'une famille royale d'Ijebu-Ode, sans citer de source : ce point n'est pas repris ici."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
