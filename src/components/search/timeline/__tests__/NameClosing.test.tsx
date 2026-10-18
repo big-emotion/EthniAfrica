@@ -11,6 +11,7 @@ import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
 import { getLocalizedRoute, getNameAnswerRoute } from "@/lib/routing";
 import { NameAddressProvider } from "@/components/search/NameAddressProvider";
 import { PEUL_HISTORY } from "@/lib/search/__fixtures__/nameTimelineFixtures";
+import { groupAccountsBySourceFamily } from "@/lib/search/nameClosing";
 import { buildNameTimeline } from "@/lib/search/nameTimeline";
 
 vi.mock("next/navigation", () => ({
@@ -21,7 +22,7 @@ vi.mock("next/navigation", () => ({
 const timeline = buildNameTimeline(PEUL_HISTORY, "peul");
 const name = timeline.names[0];
 
-describe("NameSourcesBlock — « Les sources parlent »", () => {
+describe("NameSourcesBlock — « Les sources »", () => {
   // @req REQ-198
   it("asks who tells the open name and lists its source families", () => {
     render(
@@ -36,7 +37,7 @@ describe("NameSourcesBlock — « Les sources parlent »", () => {
     expect(
       screen.getByRole("heading", {
         level: 2,
-        name: `Qui raconte le nom ${name.nameText} ?`,
+        name: `Les sources du nom ${name.nameText}`,
       })
     ).toBeInTheDocument();
     expect(
@@ -81,6 +82,90 @@ describe("NameSourcesBlock — « Les sources parlent »", () => {
   });
 });
 
+describe("NameSourcesBlock — the plain title and its sentence", () => {
+  // @req REQ-198
+  it("titles the block « Les sources du nom … » with no eyebrow above it", () => {
+    const { container } = render(
+      <NameSourcesBlock
+        name={name}
+        forms={timeline.italicForms}
+        open
+        language="fr"
+      />
+    );
+
+    expect(container.querySelector("section > .afh-tile-label")).toBeNull();
+    expect(container.querySelector("h2")?.textContent).toBe(
+      `Les sources du nom ${name.nameText}`
+    );
+  });
+
+  // @req REQ-198
+  it("counts the sources that explain the name, not its accounts", () => {
+    const sources = groupAccountsBySourceFamily(name).reduce(
+      (sum, group) => sum + group.sourceCount,
+      0
+    );
+    const accounts = name.tiles.flatMap((tile) => tile.accounts).length;
+    // The Peul fixture cites one source for several accounts: the sentence
+    // must say so rather than count the accounts as sources.
+    expect(sources).toBe(1);
+    expect(accounts).toBeGreaterThan(1);
+    const { container } = render(
+      <NameSourcesBlock
+        name={name}
+        forms={timeline.italicForms}
+        open
+        language="fr"
+      />
+    );
+
+    expect(container.querySelector("h2 + p")?.textContent).toBe(
+      `Une seule source explique ce nom pour l’instant. Voici ses ${accounts} récits.`
+    );
+  });
+
+  // @req REQ-198
+  it("keeps the sentence true when a single source explains the name", () => {
+    const copy = nameClosingCopy.fr;
+
+    expect(copy.sourcesLead(1, 1, "Kollo")).toBe(
+      "Une seule source explique ce nom pour l’instant. Voici son récit."
+    );
+    expect(copy.sourcesLead(1, 2, "Kollo")).toBe(
+      "Une seule source explique ce nom pour l’instant. Voici ses 2 récits."
+    );
+    expect(copy.fiche.sourcesLead(1, 2, 2, "people")).toBe(
+      "Une seule source explique les noms de ce peuple pour l’instant. Voici ses 2 récits, rangés par nom."
+    );
+    expect(copy.fiche.sourcesLead(3, 5, 2, "people")).toBe(
+      "Plusieurs sources expliquent les noms de ce peuple. Voici leurs 5 récits, rangés par nom, puis par type de source."
+    );
+  });
+});
+
+describe("NameClosing copy — a family name", () => {
+  // A family name is one name with several forms: « les noms de ce nom de
+  // famille » doubles the word (found on the brief 6 boards, 2026-10-18).
+  // @req REQ-198
+  it("speaks of « ce nom de famille », never of « les noms de ce nom de famille »", () => {
+    const copy = nameClosingCopy.fr;
+
+    expect(copy.fiche.sourcesTitle("patronyme")).toBe(
+      "Les sources de ce nom de famille"
+    );
+    expect(copy.fiche.sourcesLead(3, 14, 2, "patronyme")).toBe(
+      "Plusieurs sources expliquent ce nom de famille. Voici leurs 14 récits, rangés par forme, puis par type de source."
+    );
+    expect(copy.fiche.noOral("patronyme")).toBe(
+      "Aucun récit transmis oralement n’est enregistré pour ce nom de famille."
+    );
+    expect(copy.otherVoices("patronyme", ["archive"])).toBe(
+      "Pour les autres formes de ce nom de famille, d’autres sources existent : des archives. Choisissez un nom plus haut pour les lire."
+    );
+  });
+});
+
 describe("NameSourcesBlock — the other names' voices", () => {
   // @req REQ-198
   it("says who else speaks for the subject's other names, as on the Peul board", () => {
@@ -100,7 +185,7 @@ describe("NameSourcesBlock — the other names' voices", () => {
     );
 
     expect(container.querySelector("[data-other-voices]")?.textContent).toBe(
-      "Pour les autres noms de ce peuple, d’autres voix parlent aussi : des références linguistiques, des articles de presse, des organisations intergouvernementales et des archives. Choisissez un nom plus haut pour les lire."
+      "Pour les autres noms de ce peuple, d’autres sources existent : des références linguistiques, des articles de presse, des organisations intergouvernementales et des archives. Choisissez un nom plus haut pour les lire."
     );
   });
 

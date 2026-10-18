@@ -14,7 +14,7 @@
       "x": 0,
       "y": 0,
       "w": 1440,
-      "h": 19097,
+      "h": 23597,
       "title": "design-system"
     },
     "search-peul-430.dc.html": {
@@ -297,103 +297,103 @@
       "x": 11434,
       "y": 0,
       "w": 430,
-      "h": 13191,
+      "h": 8250,
       "expand": "fill"
     },
     "name-traore-768.dc.html": {
       "x": 11944,
       "y": 0,
       "w": 768,
-      "h": 8525,
+      "h": 6250,
       "expand": "fill"
     },
     "name-traore-1440.dc.html": {
       "x": 12792,
       "y": 0,
       "w": 1440,
-      "h": 6956,
+      "h": 5900,
       "expand": "fill"
     },
     "place-yamoussoukro-430.dc.html": {
       "x": 11434,
-      "y": 13311,
+      "y": 19910,
       "w": 430,
       "h": 3733,
       "expand": "fill"
     },
     "place-yamoussoukro-768.dc.html": {
       "x": 11944,
-      "y": 13311,
+      "y": 19910,
       "w": 768,
       "h": 2803,
       "expand": "fill"
     },
     "place-yamoussoukro-1440.dc.html": {
       "x": 12792,
-      "y": 13311,
+      "y": 19910,
       "w": 1440,
       "h": 2641,
       "expand": "fill"
     },
     "glossary-430.dc.html": {
       "x": 11434,
-      "y": 17164,
+      "y": 23763,
       "w": 430,
       "h": 8896,
       "expand": "fill"
     },
     "glossary-768.dc.html": {
       "x": 11944,
-      "y": 17164,
+      "y": 23763,
       "w": 768,
       "h": 5748,
       "expand": "fill"
     },
     "glossary-1440.dc.html": {
       "x": 12792,
-      "y": 17164,
+      "y": 23763,
       "w": 1440,
       "h": 4056,
       "expand": "fill"
     },
     "about-430.dc.html": {
       "x": 11434,
-      "y": 26180,
+      "y": 32779,
       "w": 430,
       "h": 4457,
       "expand": "fill"
     },
     "about-768.dc.html": {
       "x": 11944,
-      "y": 26180,
+      "y": 32779,
       "w": 768,
       "h": 2984,
       "expand": "fill"
     },
     "about-1440.dc.html": {
       "x": 12792,
-      "y": 26180,
+      "y": 32779,
       "w": 1440,
       "h": 2447,
       "expand": "fill"
     },
     "home-430.dc.html": {
       "x": 11434,
-      "y": 35027,
+      "y": 41626,
       "w": 430,
       "h": 2722,
       "expand": "fill"
     },
     "home-768.dc.html": {
       "x": 11944,
-      "y": 35027,
+      "y": 41626,
       "w": 768,
       "h": 1800,
       "expand": "fill"
     },
     "home-1440.dc.html": {
       "x": 12792,
-      "y": 35027,
+      "y": 41626,
       "w": 1440,
       "h": 1493,
       "expand": "fill"
@@ -544,21 +544,21 @@
     },
     "approach-430.dc.html": {
       "x": 11434,
-      "y": 30757,
+      "y": 37356,
       "w": 430,
       "h": 4150,
       "expand": "fill"
     },
     "approach-768.dc.html": {
       "x": 11944,
-      "y": 30757,
+      "y": 37356,
       "w": 768,
       "h": 3350,
       "expand": "fill"
     },
     "approach-1440.dc.html": {
       "x": 12792,
-      "y": 30757,
+      "y": 37356,
       "w": 1440,
       "h": 3150,
       "expand": "fill"
@@ -634,6 +634,78 @@
       "h": 3760,
       "expand": "fill",
       "title": "État · Fulɓe ouvert · « peul » · 1440"
+    },
+    "name-state-thin-kollo-430.dc.html": {
+      "expand": "fill",
+      "x": 11434,
+      "y": 8370,
+      "w": 430,
+      "h": 6000,
+      "title": "État mince · Kollo · 430"
+    },
+    "name-state-thin-kollo-768.dc.html": {
+      "expand": "fill",
+      "x": 11944,
+      "y": 8370,
+      "w": 768,
+      "h": 4450,
+      "title": "État mince · Kollo · 768"
+    },
+    "name-state-thin-kollo-1440.dc.html": {
+      "expand": "fill",
+      "x": 12792,
+      "y": 8370,
+      "w": 1440,
+      "h": 4150,
+      "title": "État mince · Kollo · 1440"
+    },
+    "name-state-weak-sarr-430.dc.html": {
+      "expand": "fill",
+      "x": 11434,
+      "y": 14490,
+      "w": 430,
+      "h": 5300,
+      "title": "État · sources faibles · Sarr · 430"
+    },
+    "name-state-weak-sarr-768.dc.html": {
+      "expand": "fill",
+      "x": 11944,
+      "y": 14490,
+      "w": 768,
+      "h": 3950,
+      "title": "État · sources faibles · Sarr · 768"
+    },
+    "name-state-weak-sarr-1440.dc.html": {
+      "expand": "fill",
+      "x": 12792,
+      "y": 14490,
+      "w": 1440,
+      "h": 3800,
+      "title": "État · sources faibles · Sarr · 1440"
+    },
+    "search-entry-430.dc.html": {
+      "x": 1840,
+      "y": 55035,
+      "w": 430,
+      "h": 2050,
+      "expand": "fill",
+      "title": "Page de recherche (sans requête) · 430"
+    },
+    "search-entry-768.dc.html": {
+      "x": 2350,
+      "y": 55035,
+      "w": 768,
+      "h": 1250,
+      "expand": "fill",
+      "title": "Page de recherche (sans requête) · 768"
+    },
+    "search-entry-1440.dc.html": {
+      "x": 3198,
+      "y": 55035,
+      "w": 1440,
+      "h": 1000,
+      "expand": "fill",
+      "title": "Page de recherche (sans requête) · 1440"
     }
   },
   "order": [
@@ -665,6 +737,9 @@
     "search-state-peul-fulbe-open-430.dc.html",
     "search-state-peul-fulbe-open-768.dc.html",
     "search-state-peul-fulbe-open-1440.dc.html",
+    "search-entry-430.dc.html",
+    "search-entry-768.dc.html",
+    "search-entry-1440.dc.html",
     "people-fula-430.dc.html",
     "people-fula-768.dc.html",
     "people-fula-1440.dc.html",
@@ -707,6 +782,12 @@
     "name-traore-430.dc.html",
     "name-traore-768.dc.html",
     "name-traore-1440.dc.html",
+    "name-state-thin-kollo-430.dc.html",
+    "name-state-thin-kollo-768.dc.html",
+    "name-state-thin-kollo-1440.dc.html",
+    "name-state-weak-sarr-430.dc.html",
+    "name-state-weak-sarr-768.dc.html",
+    "name-state-weak-sarr-1440.dc.html",
     "place-yamoussoukro-430.dc.html",
     "place-yamoussoukro-768.dc.html",
     "place-yamoussoukro-1440.dc.html",

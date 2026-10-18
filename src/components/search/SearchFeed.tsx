@@ -1057,7 +1057,7 @@ export function SearchFeed({
               }
               sourcesOpen={index === 0}
               // One subject: the fiche link stays right under its timeline,
-              // before « Les sources parlent » (board search-peul-430).
+              // before « Les sources du nom … » (board search-peul-430).
               ficheLink={
                 !sharedName && index === 0
                   ? ficheLinkBlock("timeline")
@@ -1135,7 +1135,7 @@ export function SearchFeed({
           <NameClosingBand
             key="timeline-closing"
             // The band speaks of the name each timeline has open (brief 11
-            // §1d), as « Qui raconte le nom … ? » already does.
+            // §1d), as « Les sources du nom … » already does.
             silences={deduceSilences(
               nameHistories.map(({ subject, nameHistory }) => {
                 const { names } = buildNameTimeline(nameHistory, query);

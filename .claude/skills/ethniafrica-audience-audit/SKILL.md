@@ -73,6 +73,15 @@ each tagged visit names the post that sent it. A package whose input has no
 network table of Step 1 bis; a post with views and no campaign row either sent
 nobody or went out with a bare link — the post's `post.md` says which.
 
+**A post about a name lands on that name's address**,
+`/fr/atlas/recherche/<nom>` (REQ-200, since v5.6.0 on 2026-10-17): a package
+created since 2026-10-18 accepts no other destination for a name
+([name addresses](../ethniafrica-social-production/references/publication-package.md#name-addresses)).
+So the campaign's landing page names the name. A post delivered before then
+sent readers to the search page with `?q=<nom>`, and its visits sit in the
+single `/fr/atlas/recherche` row whatever name they read. Do not compare that
+row across the change as if it were one page.
+
 **`detailed=true` is what makes this audit possible.** Without it the breakdown
 endpoints return only `visitors` and `percentage`; with it every row carries
 `bounce_rate`, `time_on_page`, `scroll_depth` and `pageviews` — and bounce

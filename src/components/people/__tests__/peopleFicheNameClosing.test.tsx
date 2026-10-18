@@ -88,7 +88,7 @@ const BASSA: NameHistory = {
 } as NameHistory;
 
 // Brief 2, approved 2026-10-15: docs/design/mockups/site/people-*.dc.html.
-describe("NameFicheSourcesBlock — « Les sources parlent » on a fiche", () => {
+describe("NameFicheSourcesBlock — « Les sources » on a fiche", () => {
   // @req REQ-198
   it("groups the accounts by name first, the first name open and marked as theirs", () => {
     const { container } = render(
@@ -102,7 +102,7 @@ describe("NameFicheSourcesBlock — « Les sources parlent » on a fiche", () =>
     expect(
       screen.getByRole("heading", {
         level: 2,
-        name: "Qui raconte les noms de ce peuple ?",
+        name: "Les sources des noms de ce peuple",
       })
     ).toBeInTheDocument();
     const groups = container.querySelectorAll("details[data-name-group]");
@@ -133,7 +133,7 @@ describe("NameFicheSourcesBlock — « Les sources parlent » on a fiche", () =>
     expect(
       screen.getByRole("heading", {
         level: 2,
-        name: "Qui raconte le nom Bassa ?",
+        name: "Les sources du nom Bassa",
       })
     ).toBeInTheDocument();
     const families = container.querySelectorAll("details[data-family]");

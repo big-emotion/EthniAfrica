@@ -148,7 +148,7 @@ describe("LanguageDetailViewV2 — the language fiche of brief 3", () => {
     );
 
     expect(
-      screen.getByRole("heading", { name: "Qui raconte le nom Lingala ?" })
+      screen.getByRole("heading", { name: "Les sources du nom Lingala" })
     ).toBeInTheDocument();
     expect(container.querySelector("[data-readings]")).not.toBeNull();
     const band = container.querySelector("[data-name-closing]") as HTMLElement;
@@ -190,7 +190,7 @@ describe("LanguageDetailViewV2 — the language fiche of brief 3", () => {
 // Brief 10 §1, approved 2026-10-17: docs/design/mockups/site/language-*.dc.html.
 describe("LanguageDetailViewV2 — the link to the story of its name", () => {
   // @req REQ-198
-  it("ends « L’histoire des noms » with the link, after the explanations, before « Les sources parlent »", () => {
+  it("ends « L’histoire des noms » with the link, after the explanations, before « Les sources du nom … »", () => {
     const { container } = render(
       <LanguageDetailViewV2 data={lingala} language="fr" />
     );

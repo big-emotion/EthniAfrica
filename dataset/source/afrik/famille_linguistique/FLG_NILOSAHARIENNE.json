@@ -17,9 +17,9 @@
         "accounts": [
           {
             "period": {
-              "from": null,
-              "to": null,
-              "label": "Classification exposée au présent par l'auteur"
+              "from": 1980,
+              "to": 1980,
+              "label": "Classification exposée en 1980"
             },
             "era": "modern",
             "aspect": "usage",
