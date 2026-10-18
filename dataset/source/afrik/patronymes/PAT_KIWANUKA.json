@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Aloysius M. Lugira traduit Kiwanuka par « quelque chose qui descend à grande vitesse » et présente Kiwanuka comme la divinité baganda du tonnerre, de la foudre et de la fécondité. Il précise que des parents ayant obtenu un enfant après l'avoir invoquée peuvent nommer un fils Kiwanuka ou une fille Nakiwanuka : il s'agit ici d'un nom individuel votif, non d'un nom de clan totémique.",
-        "claimStatus": "established",
-        "sourceRefs": ["lugira-kiwanuka"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -181,6 +176,26 @@
                 "source_kind": "archive",
                 "page": "p. 210",
                 "notes": "Londres, Sampson Low, Marston, Searle & Rivington, 1890, « nouvelle édition à bon marché » (le livre est paru pour la première fois en 1889) ; exemplaire numérisé sur archive.org. Page 210 : « The chancellor's store-house was soon struck by lightning. Kiwanuka, the God of Thunder, could not allow the divine Kabaka to be driven out of his houses by fire without sending a thunderbolt into the Katikiro's enclosure ». Le passage suit le récit d'une lettre portée au roi le 3 décembre 1886 (p. 206) : l'incendie date de peu après. Missionnaire, cité pour les formes qu'il écrit. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Aloysius M. Lugira traduit Kiwanuka par « quelque chose qui descend à grande vitesse » et présente Kiwanuka comme la divinité baganda du tonnerre, de la foudre et de la fécondité. Il précise que des parents ayant obtenu un enfant après l'avoir invoquée peuvent nommer un fils Kiwanuka ou une fille Nakiwanuka : il s'agit ici d'un nom individuel votif, non d'un nom de clan totémique.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "World Religions: African Traditional Religion",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://oldmis.kp.ac.rw/admin/admin_panel/kp_lms/files/digital/Core%20Books/Theology/African%20Traditional%20-%20Aloysius%20M.%20Lugira.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Ouvrage d'Aloysius M. Lugira consulté dans le PDF intégral. Le chapitre sur le monde spirituel baganda donne le sens de Kiwanuka, ses fonctions divines et la pratique consistant à attribuer ce nom après une prière féconde."
               }
             ]
           }

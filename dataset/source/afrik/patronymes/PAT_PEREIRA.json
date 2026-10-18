@@ -27,13 +27,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le Dictionary of American Family Names donne pour Pereira deux formations portugaises possibles : un nom topographique lié au poirier, ou un nom d'habitation tiré d'un lieu appelé Pereira. La source ne permet pas de choisir entre elles pour la branche capverdienne.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["dafn-pereira-2022"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -172,6 +167,26 @@
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
                 "notes": "Entrée Pereira du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch : « Portuguese and Galician: topographic name from Portuguese pereira 'pear tree' or a habitational name from a place called with this word in Portugal and Galicia (Spain) ». Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le Dictionary of American Family Names donne pour Pereira deux formations portugaises possibles : un nom topographique lié au poirier, ou un nom d'habitation tiré d'un lieu appelé Pereira. La source ne permet pas de choisir entre elles pour la branche capverdienne.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Pereira Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.ancestry.com/last-name-meaning/pereira?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Patrick Hanks et al., Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry. La notice conserve deux formations possibles, topographique et habitative."
               }
             ]
           }

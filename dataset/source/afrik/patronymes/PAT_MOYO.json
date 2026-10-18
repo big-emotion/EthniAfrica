@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "La ressource communautaire Nhaka yevaShona présente Moyo comme un totem shona dont l'image est le cœur et répertorie plusieurs noms de louange associés. L'absence d'auteur et de méthode publiée impose de conserver cette explication comme proposition revendiquée, non comme reconstruction linguistique établie.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["nhaka-moyo-totem"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -153,7 +148,8 @@
                 "page": "p. 94 et 125",
                 "notes": "Bulawayo, Philpott & Collins, 1915 ; exemplaire numérisé par Google, lu sur Internet Archive le 18 octobre 2026. P. 94, exercice 64, phrase 3 : « This woman's heart is very sore » ; p. 125, corrigé : « Moyo wo mukadzi uyu u no rgwadza gikuru »."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           },
           {
             "period": {

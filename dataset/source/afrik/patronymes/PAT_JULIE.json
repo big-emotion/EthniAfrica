@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Mairi O'Gorman, s'appuyant sur les recherches patrimoniales seychelloises et Benedict & Benedict, cite Julie parmi les patronymes seychellois courants qui proviennent de prénoms, souvent de prénoms féminins. La source établit le mécanisme onomastique, sans identifier une Julie fondatrice unique.",
-        "claimStatus": "established",
-        "sourceRefs": ["ogorman-2019-seychelles-surnames"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -145,6 +140,27 @@
                 "tier": "unverified",
                 "source_kind": "community",
                 "notes": "Base de données d'une association de généalogie, qui dépouille les tables et actes d'état civil, les registres paroissiaux et les registres d'inhumation. Lue le 18 octobre 2026. Le patronyme JULIE y figure dans les mariages de Mahé pour la période 1865-1903, avec 4 et 10 mentions dans deux colonnes, « Intervenant 1 » et « Intervenant 2 », que la page ne définit pas. La même table donne aussi JULIEN, JULIENNE et JULIETTE, qui sont d'autres noms. Le détail des actes n'a pas été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Mairi O'Gorman, s'appuyant sur les recherches patrimoniales seychelloises et Benedict & Benedict, cite Julie parmi les patronymes seychellois courants qui proviennent de prénoms, souvent de prénoms féminins. La source établit le mécanisme onomastique, sans identifier une Julie fondatrice unique.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Tree of Knowledge, Tree of Life: Materials, Intimacy and Being Creole in London and Seychelles",
+                "author": "Mairi O'Gorman",
+                "year": 2019,
+                "url": "https://era.ed.ac.uk/bitstream/handle/1842/36098/O%27Gorman2019.pdf?sequence=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 126-127",
+                "notes": "Thèse de doctorat en anthropologie sociale, université d'Édimbourg, 2019, lue le 18 octobre 2026 dans le dépôt de l'université. Page 126 : un artiste travaille avec la Division du patrimoine national à un projet sur l'origine des noms de famille seychellois. Page 127 : les noms africains sont rares, la traite ayant empêché leur transmission ; beaucoup de noms seychellois courants sont des prénoms, « often specifically women's first names: Adelaide, Betsy, Ernesta, Julie, Marie ». L'autrice s'appuie sur B. et M. Benedict (1982), dont le livre n'a pas été lu."
               }
             ]
           }

@@ -22,13 +22,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Un récit attribué à Ndougsa Vincent présente Essomba Na Ba'ana comme l'un des enfants de Fura ou Fouda Togo et fait dériver de sa descendance plusieurs familles et lignages ewondo. La publication est secondaire et communautaire ; cette généalogie reste donc revendiquée.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["actu-cameroun-essomba-2024"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -139,6 +134,26 @@
                 "source_kind": "government",
                 "page": "section « Histoire », paragraphe sur les Ewondo",
                 "notes": "Page officielle de la Communauté urbaine de Yaoundé, sans date, lue le 13 octobre 2026. Elle dit que chaque famille ewondo est sous la direction d'un chef, et que « le premier nom de Yaoundé est « Epsum » c'est-à-dire, chez « Essomba » », ou « N'tsonun », chez « Essono Éla ». Elle ne donne ni le sens ni l'origine du nom Essomba."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Un récit attribué à Ndougsa Vincent présente Essomba Na Ba'ana comme l'un des enfants de Fura ou Fouda Togo et fait dériver de sa descendance plusieurs familles et lignages ewondo. La publication est secondaire et communautaire ; cette généalogie reste donc revendiquée.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Origines des Éwondo : récit de Ndougsa Vincent",
+                "author": "Armand Djaleu",
+                "year": 2024,
+                "url": "https://actucameroun.com/2024/02/18/histoire-voici-les-origines-des-ewondo/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article de presse du 18 février 2024, lu le 13 octobre 2026 dans la copie conservée par Internet Archive. Il reproduit un récit attribué à Ndougsa Vincent, sans transcription primaire : Foura Togo aurait eu trois enfants avec Na Baana, dont Essomba Na Ba'ana, et la descendance d'Essomba Na Ba'ana aurait donné plusieurs familles ewondo, comme les Mvog Atangana Mballa, Mvog Tsoungui Mballa et Mvog Fouda Mballa."
               }
             ]
           }

@@ -11,29 +11,56 @@
     {
       "spelling": "Diaby",
       "attestations": [
-        { "countryId": "GIN", "sourceRefs": ["forebears-diaby"] },
-        { "countryId": "MLI", "sourceRefs": ["forebears-diaby"] },
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["forebears-diaby"]
+        },
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["forebears-diaby"]
+        },
         {
           "countryId": "SEN",
           "sourceRefs": ["forebears-diaby", "djakodico-diakhanke-history"]
         },
-        { "countryId": "CIV", "sourceRefs": ["forebears-diaby"] },
-        { "countryId": "GMB", "sourceRefs": ["ncac-jaabi-faraba-banta"] }
+        {
+          "countryId": "CIV",
+          "sourceRefs": ["forebears-diaby"]
+        },
+        {
+          "countryId": "GMB",
+          "sourceRefs": ["ncac-jaabi-faraba-banta"]
+        }
       ]
     },
     {
       "spelling": "Diabi",
       "attestations": [
-        { "countryId": "GIN", "sourceRefs": ["originenom-diaby"] },
-        { "countryId": "MLI", "sourceRefs": ["originenom-diaby"] },
-        { "countryId": "SEN", "sourceRefs": ["originenom-diaby"] },
-        { "countryId": "CIV", "sourceRefs": ["originenom-diaby"] }
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["originenom-diaby"]
+        },
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["originenom-diaby"]
+        },
+        {
+          "countryId": "SEN",
+          "sourceRefs": ["originenom-diaby"]
+        },
+        {
+          "countryId": "CIV",
+          "sourceRefs": ["originenom-diaby"]
+        }
       ]
     },
     {
       "spelling": "Jabbi",
       "attestations": [
-        { "countryId": "GMB", "sourceRefs": ["ncac-jaabi-faraba-banta"] }
+        {
+          "countryId": "GMB",
+          "sourceRefs": ["ncac-jaabi-faraba-banta"]
+        }
       ]
     },
     {
@@ -46,7 +73,10 @@
             "sunugox-diakhanke-history"
           ]
         },
-        { "countryId": "GIN", "sourceRefs": ["djakodico-diakhanke-history"] }
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["djakodico-diakhanke-history"]
+        }
       ]
     }
   ],
@@ -55,23 +85,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le jamu est un nom de clan patrilinéaire : il désigne l'appartenance à un groupe de descendance, et non une filiation individuelle au père.",
-        "claimStatus": "established",
-        "sourceRefs": ["jansen-sunjata-paradigm"]
-      },
-      {
-        "claim": "Le dictionnaire des jamuw range Jaabi parmi les clans de la subdivision Wago, l'une des trois grandes divisions de la société soninké dont l'origine est rapportée au Wagadu, l'ancien empire du Ghana, et rattache le jamu par la généalogie à un fils de Dinga, l'ancêtre fondateur du Wagadu.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["bamadaba-jamuw"]
-      },
-      {
-        "claim": "Une source communautaire diakhanké rapporte une généalogie faisant descendre les Diaby du calife Omar Ibn al-Khattab, compagnon du prophète Mahomet, rattachant ainsi la lignée à une origine arabo-islamique distincte de la tradition soninké du Wagadu ; elle présente elle-même cette généalogie comme plausible mais non prouvée, faute de preuve historique tranchant entre une origine arabo-berbère et une origine plus ancienne.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["sunugox-diakhanke-history"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -378,6 +393,66 @@
                 "source_kind": "archive",
                 "page": "tome 2, p. 381",
                 "notes": "Hachette, Paris, 1892, deux tomes ; récit du voyage de 1887-1889. Lu dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée. Tome 2, page 381."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le jamu est un nom de clan patrilinéaire : il désigne l'appartenance à un groupe de descendance, et non une filiation individuelle au père.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Beyond the Mali Empire — A New Paradigm for the Sunjata Epic",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2952645/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Jansen, Jan, Universiteit Leiden. Travail critique sur la transmission de l'épopée et sur le jamu comme institution sociale plutôt que comme mémoire historique ; utilisé ici pour la nature du jamu, non pour dater un ancêtre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le dictionnaire des jamuw range Jaabi parmi les clans de la subdivision Wago, l'une des trois grandes divisions de la société soninké dont l'origine est rapportée au Wagadu, l'ancien empire du Ghana, et rattache le jamu par la généalogie à un fils de Dinga, l'ancêtre fondateur du Wagadu.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Fichier complet lu. Entrée Jaabi : statuts mòri et wage, trois marqueurs de groupe ; aucun sens donné au nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une source communautaire diakhanké rapporte une généalogie faisant descendre les Diaby du calife Omar Ibn al-Khattab, compagnon du prophète Mahomet, rattachant ainsi la lignée à une origine arabo-islamique distincte de la tradition soninké du Wagadu ; elle présente elle-même cette généalogie comme plausible mais non prouvée, faute de preuve historique tranchant entre une origine arabo-berbère et une origine plus ancienne.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Un regard sur les Diakhankés",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://sunugox.info/histoire/histoire-regard-diakhankes",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Portail d'actualités sénégalais (direction de publication Y. Cissokho, rédaction en chef Mame Anta Diamé), article de mémoire sans auteur signé ni bibliographie académique. Reprend la même liste de clans ajoutés à la confédération diakhanké que la source précédente (Diakhité-Kaba, Sylla, Gassama-Diaby, Dansokho, Diakhaby, Badio, Sakho) et la même généalogie légendaire remontant à Omar Ibn al-Khattab ; le même texte est aussi publié sur un site miroir."
               }
             ]
           }

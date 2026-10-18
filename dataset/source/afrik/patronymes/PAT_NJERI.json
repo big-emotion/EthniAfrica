@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -54,10 +55,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "la recherche web et bibliographique combinant « Njeri », « Kikuyu », « Kenya », « surname », « prénom », « onomastique », « étymologie », « clan », « transmission », « alliance », « caste », « homonyme » et « nécrologie », ainsi que la page Forebears dédiée n'ont livré aucune tradition attribuée, chronique ou étude linguistique propre à ce nom qui en établirait l'origine ; les rapprochements fondés sur la seule ressemblance ou la seule géographie ont été écartés."
-    },
     {
       "fieldPath": "nameSystem",
       "reason": "la recherche web et bibliographique combinant « Njeri », « Kikuyu », « Kenya », « surname », « prénom », « onomastique », « étymologie », « clan », « transmission », « alliance », « caste », « homonyme » et « nécrologie », ainsi que la page Forebears dédiée n'ont pas établi que la catégorie de système nominal portée par la fiche provisoire décrive ce nom lui-même ; elle reste une hypothèse de classement et n'est pas transformée en fait."

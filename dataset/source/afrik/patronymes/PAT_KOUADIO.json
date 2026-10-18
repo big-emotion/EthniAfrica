@@ -59,16 +59,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Chez les Baoulé, Kouadio est le nom du garçon né le mardi, jour appelé djolai ; Pagnet l'écrit Kouadjo, N'Goran-Poamé Kouadio.",
-        "claimStatus": "established",
-        "sourceRefs": [
-          "pagnet-2005-noms-baoule",
-          "ngoran-poame-2006-anthroponymes-baoule"
-        ]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -272,7 +264,8 @@
                 "page": "p. 260",
                 "notes": "Thèse de Doh Clément Pagnet, Université de Cocody, soutenue le 20 mai 2005. Relue le 15 octobre 2026 dans le dépôt DICAMES du CAMES (le lien handle était alors inaccessible ; la page du dépôt est http://dicames.online/jspui/handle/20.500.12177/1675). Page 260 : les noms donnés selon le jour de naissance chez les Baoulé. L'auteur ne cite pas de source pour cette liste. Le titre original écrit « didactive »."
               }
-            ]
+            ],
+            "claimStatus": "established"
           },
           {
             "period": {

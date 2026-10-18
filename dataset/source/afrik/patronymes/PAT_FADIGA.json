@@ -44,31 +44,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le jamu est un nom de clan patrilinéaire : il désigne l'appartenance à un groupe de descendance, et non une filiation individuelle au père.",
-        "claimStatus": "established",
-        "sourceRefs": ["jansen-sunjata-paradigm"]
-      },
-      {
-        "claim": "Fadiga est l'un des quatre clans soninké autour desquels la communauté diakhanké s'est formée, les quatre maisons (boulou nano), avec Souaré, Dramé et Fofana-Guirassy. Le récit communautaire en fait aussi le nom d'un des trois cousins avec lesquels le fondateur, venu de Diafounou, créa dans le Bambouk le premier village diakhanké, Diakha.",
-        "claimStatus": "claimed",
-        "sourceRefs": [
-          "djakodico-diakhanke-history",
-          "sunugox-diakhanke-history"
-        ]
-      },
-      {
-        "claim": "Le dictionnaire des jamuw a une entrée Fàdiga, avec la variante Fàdika, qu'il rattache notamment aux Malinké. Il n'y ajoute aucun statut.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["bamadaba-jamuw"]
-      },
-      {
-        "claim": "Une liste communautaire soninké range Fadiga parmi les seconds noms (jammu kare) de Dramé, à côté de Kandji, Saama, Demba, Dibasi et d'autres, alors que le récit diakhanké compte Fadiga et Dramé comme deux maisons distinctes. Les sources ne disent pas comment ces deux lectures s'accordent.",
-        "claimStatus": "contested",
-        "sourceRefs": ["soninkara-noms-soninke", "djakodico-diakhanke-history"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -380,6 +357,104 @@
                 "source_kind": "archive",
                 "page": "p. 81, note 1",
                 "notes": "Paris, Challamel, 1911. Administrateur colonial. Lu sur le texte numérisé d'archive.org le 11 octobre 2026. « La légende des Dibassi Fadiga les fait descendre de Touré Fadiga, captif de Salomon »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le jamu est un nom de clan patrilinéaire : il désigne l'appartenance à un groupe de descendance, et non une filiation individuelle au père.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Beyond the Mali Empire — A New Paradigm for the Sunjata Epic",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2952645/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Jansen, Jan, Universiteit Leiden. Travail critique sur la transmission de l'épopée et sur le jamu comme institution sociale plutôt que comme mémoire historique ; utilisé ici pour la nature du jamu, non pour dater un ancêtre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Fadiga est l'un des quatre clans soninké autour desquels la communauté diakhanké s'est formée, les quatre maisons (boulou nano), avec Souaré, Dramé et Fofana-Guirassy. Le récit communautaire en fait aussi le nom d'un des trois cousins avec lesquels le fondateur, venu de Diafounou, créa dans le Bambouk le premier village diakhanké, Diakha.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Histoire des Diakhankhé",
+                "author": "Site Djakodico",
+                "year": null,
+                "url": "https://www.djakodico.com/history.php",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site communautaire consacré au patrimoine diakhanké, sans auteur individuel nommé, lu le 11 octobre 2026. Il compte Fadiga, dit Dibassy, parmi les quatre maisons fondatrices des Diakhanké et nomme Tounlé Fadiga parmi les cousins qui fondent Diakha avec M'bemba Laye."
+              },
+              {
+                "title": "Un regard sur les Diakhankés",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://sunugox.info/histoire/histoire-regard-diakhankes",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Portail d'actualités sénégalais (direction de publication Y. Cissokho, rédaction en chef Mame Anta Diamé), article de mémoire sans auteur signé ni bibliographie académique. Reprend la même liste de clans ajoutés à la confédération diakhanké que la source précédente (Diakhité-Kaba, Sylla, Gassama-Diaby, Dansokho, Diakhaby, Badio, Sakho) et la même généalogie légendaire remontant à Omar Ibn al-Khattab ; le même texte est aussi publié sur un site miroir."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le dictionnaire des jamuw a une entrée Fàdiga, avec la variante Fàdika, qu'il rattache notamment aux Malinké. Il n'y ajoute aucun statut.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 11 octobre 2026. Entrée Fàdiga, variante Fàdika : aucun sens donné."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une liste communautaire soninké range Fadiga parmi les seconds noms (jammu kare) de Dramé, à côté de Kandji, Saama, Demba, Dibasi et d'autres, alors que le récit diakhanké compte Fadiga et Dramé comme deux maisons distinctes. Les sources ne disent pas comment ces deux lectures s'accordent.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "Les noms de famille avec leur jammu kare",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "http://www.soninkara.com/societe/organisation-sociale/les-noms-de-famille-avec-leur-jammu-kare.html",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Portail communautaire soninké, page d'organisation sociale sans auteur académique identifié : liste non exhaustive, constituée par les internautes du portail, des seconds noms (jammu kare) donnés aux noms de famille soninké. Le jammu kare est, dit la page, le second nom qui s'ajoute à un nom de famille et lui sert d'identifiant. Consultée dans une copie archivée du 12 décembre 2024. On n'en retire ici que la présence du nom dans la liste et ses seconds noms : la liste ne dit rien de leur origine."
+              },
+              {
+                "title": "Histoire des Diakhankhé",
+                "author": "Site Djakodico",
+                "year": null,
+                "url": "https://www.djakodico.com/history.php",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site communautaire consacré au patrimoine diakhanké, sans auteur individuel nommé, lu le 11 octobre 2026. Il compte Fadiga, dit Dibassy, parmi les quatre maisons fondatrices des Diakhanké et nomme Tounlé Fadiga parmi les cousins qui fondent Diakha avec M'bemba Laye."
               }
             ]
           }

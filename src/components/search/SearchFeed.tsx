@@ -16,6 +16,7 @@ import {
 import { FicheLinkBlock } from "@/components/search/feed/FicheLinkBlock";
 import { FurtherBlock } from "@/components/search/feed/FurtherBlock";
 import { LensesBlock } from "@/components/search/feed/LensesBlock";
+import { SeeAlso } from "@/components/search/feed/SeeAlso";
 import { OwedBlock } from "@/components/search/feed/OwedBlock";
 import {
   PlatesBlock,
@@ -1228,7 +1229,7 @@ export function SearchFeed({
       <SearchFeedLayout
         className="text-afh-text"
         reviewed={Boolean(presentation)}
-        first={renderBlock("lenses")}
+        first={null}
         blocks={[
           ...(sharedName
             ? [
@@ -1253,7 +1254,6 @@ export function SearchFeed({
               countryIds={
                 subject.type === "country" ? [subject.id] : subject.countryIds
               }
-              sourcesOpen={index === 0}
               // One subject: the fiche link stays right under its timeline,
               // before « Les sources du nom … » (board search-peul-430).
               ficheLink={
@@ -1281,6 +1281,17 @@ export function SearchFeed({
                 }))
               }
               language={language}
+              seeAlso={
+                index === 0 ? (
+                  <SeeAlso
+                    language={language}
+                    reviewed={Boolean(presentation)}
+                    lenses={lenses}
+                    active={activeLens}
+                    onChange={setActiveLens}
+                  />
+                ) : undefined
+              }
             />
           )),
           ...(unwritten.length > 0

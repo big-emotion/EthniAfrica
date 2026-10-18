@@ -43,38 +43,9 @@
   "transmissionMode": "patrilineal",
   "designatedSocialUnit": "lineage",
   "origin": {
-    "oralTraditions": [
-      {
-        "claim": "Selon le prince Kum'a Ndumbe III, Mbape est d'abord le nom d'un ancêtre, fils du roi Béri ba Doo, fondateur de Bonabéri, puis le nom de ses descendants : ses fils Bwanga Mbape et Koum Mbape, dit Lock Priso, puis les lignées de Bonabéri qui se disent « Bona Mbap'a Bele » ou « Bona Kum'a Mbape ». Cette généalogie est portée par l'une des branches qui se disputent la chefferie des Bele Bele.",
-        "claimStatus": "claimed",
-        "griot": "Kum'a Ndumbe III, auteur du Livre Blanc de Bele Bele",
-        "transcription": "Livre Blanc de Bele Bele, mars 2003, page 2, citant une lettre de chefs du 17 février 1945 : « Mbape, fils du Roi Douala Béri-ba Doo, fondateur de Bonabéri, eut de son premier foyer plusieurs fils ; l'aîné, Bwanga Mbape (Bona Mujonge), […] fut écarté de la Chefferie par son père lui-même, qui désigna pour lui succéder son deuxième fils, Koum Mbape (Lock Priso) ». La page 6 du recueil et la page de l'association Osidimbea donnent la même suite de noms, Mbape puis Kum'a Mbape.",
-        "sourceRefs": [
-          "livre-blanc-bele-bele-2003",
-          "osidimbea-canton-bele-bele"
-        ]
-      }
-    ],
-    "writtenChronicles": [
-      {
-        "claim": "Le 28 août 1884, le roi d'Hickory Town (aujourd'hui Bonabéri) adresse au consul allemand Max Buchner une lettre en anglais demandant que le drapeau allemand soit retiré. Dans ces textes, la lettre est signée Lock Priso Bell ; le prince Kum'a Ndumbe III et la presse camerounaise en identifient l'auteur à Kum'a Mbape. La forme Mbape ne figure pas dans la signature.",
-        "claimStatus": "claimed",
-        "sourceRefs": [
-          "ndumbe-declaration-africavenir-2013",
-          "cameroon-tribune-lock-priso-2022"
-        ]
-      },
-      {
-        "claim": "Le 24 octobre 1912, une assemblée de chefs duala réunie sous la présidence de Rudolf Duala Manga Bell tranche un litige de succession au trône des Bele Bele entre Kum'a Mbape et Mbape a Bwanga. Le verdict, tel que le reproduit le recueil de 2003, attribue le trône à Kum'a Mbape. C'est la plus ancienne pièce datée, parmi celles consultées, où la forme Mbape est écrite.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["livre-blanc-bele-bele-2003"]
-      },
-      {
-        "claim": "Une lettre des chefs et notables du canton Bele Bele, datée du 17 février 1945 et adressée à l'administrateur des colonies, chef de la Région du Wouri, présente Mbape comme fils du roi Béri ba Doo et Koum Mbape, dit Lock Priso, comme l'un de ses fils.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["livre-blanc-bele-bele-2003"]
-      }
-    ],
+    "oralTraditions": [],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -368,7 +339,68 @@
                 "tier": "referenced",
                 "source_kind": "community",
                 "page": "p. 2",
-                "notes": "Recueil publié par le prince Kum'a Ndumbe III, qui y revendique la chefferie supérieure des Bele Bele dans un différend de succession avec une autre branche de la famille : les pièces qu'il reproduit sont présentées par une partie au différend. Lu le 11 octobre 2026. Lettre du 17 février 1945 à l'administrateur des colonies, chef de la région du Wouri : « Mbape, fils du Roi Douala Béri-ba Doo, fondateur de Bonabéri, eut de son premier foyer plusieurs fils ; l'aîné, Bwanga Mbape […] son deuxième fils, Koum Mbape (Lock Priso) »."
+                "notes": "Recueil publié par le prince Kum'a Ndumbe III, qui y revendique la chefferie supérieure des Bele Bele dans un différend de succession avec une autre branche de la famille : les pièces qu'il reproduit sont présentées par une partie au différend. Lu le 11 octobre 2026. Lettre du 17 février 1945 à l'administrateur des colonies, chef de la région du Wouri : « Mbape, fils du Roi Douala Béri-ba Doo, fondateur de Bonabéri, eut de son premier foyer plusieurs fils ; l'aîné, Bwanga Mbape […] son deuxième fils, Koum Mbape (Lock Priso) ».\nLivre Blanc de Bele Bele, mars 2003, page 2, citant une lettre de chefs du 17 février 1945 : « Mbape, fils du Roi Douala Béri-ba Doo, fondateur de Bonabéri, eut de son premier foyer plusieurs fils ; l'aîné, Bwanga Mbape (Bona Mujonge), […] fut écarté de la Chefferie par son père lui-même, qui désigna pour lui succéder son deuxième fils, Koum Mbape (Lock Priso) ». La page 6 du recueil et la page de l'association Osidimbea donnent la même suite de noms, Mbape puis Kum'a Mbape."
+              },
+              {
+                "title": "Chefferie Supérieure du Canton Belè-Belè, association Osidimbea",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://osidimbea-villages.jimdofree.com/chefferies/littoral/canton-bele-bele/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page sans auteur ni sources indiqués, hébergée par le site qui publie aussi le recueil de 2003 : elle n'en est donc pas indépendante. Elle liste « MBAPPE BELLÈ » (1804-1846), puis « KUM'A MBAPPE, Lock Priso » (1846-1916)."
+              }
+            ],
+            "claimStatus": "claimed",
+            "carrier": "Kum'a Ndumbe III, auteur du Livre Blanc de Bele Bele"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le 28 août 1884, le roi d'Hickory Town (aujourd'hui Bonabéri) adresse au consul allemand Max Buchner une lettre en anglais demandant que le drapeau allemand soit retiré. Dans ces textes, la lettre est signée Lock Priso Bell ; le prince Kum'a Ndumbe III et la presse camerounaise en identifient l'auteur à Kum'a Mbape. La forme Mbape ne figure pas dans la signature.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Déclaration solennelle du Prince Kum'a Ndumbe III, 28 août 1884 - 28 août 2013, au mausolée de Lock Priso (Kum'a Mbape)",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.africavenir.org/en/declaration-solennelle-du-prince-kumandumbe-iii-sur-les-debuts-de-la-resistance-des-peuples-camerounais-a-loccupation-coloniale-28-aout-1884-28-aout-2013-au-mausolee-de-l/",
+                "tier": "referenced",
+                "source_kind": "community",
+                "notes": "Texte publié le 1er septembre 2013 par l'association AfricAvenir, de la plume du même auteur que le recueil de 2003, qui s'y dit descendant de Lock Priso. Il reproduit la lettre du 28 août 1884, signée « LOCK PRISO BELL », et écrit « Lock Priso Bell, ou Kum'a Mbap'a Bele ba Dooh »."
+              },
+              {
+                "title": "Patrimoine : les héritages de Lock Priso",
+                "author": "Rita Diba",
+                "year": 2022,
+                "url": "https://www.cameroon-tribune.cm/article.html/50744/fr.html/patrimoine-les-heritages-de-lock",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Cameroon Tribune, 30 août 2022, lu le 11 octobre 2026 : le 28 août 1884, « Kum'a Mbape Bell, chef du canton Bèlè Bèlè, roi d'Hickory Town (aujourd'hui Bonabéri), nom de règne Lock Priso Bell », écrit au consul allemand Max Buchner."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le 24 octobre 1912, une assemblée de chefs duala réunie sous la présidence de Rudolf Duala Manga Bell tranche un litige de succession au trône des Bele Bele entre Kum'a Mbape et Mbape a Bwanga. Le verdict, tel que le reproduit le recueil de 2003, attribue le trône à Kum'a Mbape. C'est la plus ancienne pièce datée, parmi celles consultées, où la forme Mbape est écrite.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Le Livre Blanc de Bele Bele, traduction française, format tabloïd, mars 2003",
+                "author": "Prince Kum'a Ndumbe III",
+                "year": 2003,
+                "url": "https://sad94e72f77868383.jimcontent.com/download/version/1721423345/module/7545904459/name/Le%20Livre%20Blanc%20des%20Bele%20Bele%20par%20le%20Prince%20Kum'a%20Ndumbe%20III.pdf",
+                "tier": "referenced",
+                "source_kind": "community",
+                "page": "p. 2, 5",
+                "notes": "Recueil publié par le prince Kum'a Ndumbe III, qui y revendique la chefferie supérieure des Bele Bele dans un différend de succession avec une autre branche de la famille : les pièces qu'il reproduit sont présentées par une partie au différend. Lu le 11 octobre 2026. Généalogies des Bele Bele de Bonabéri et verdict de 1912."
               }
             ]
           }

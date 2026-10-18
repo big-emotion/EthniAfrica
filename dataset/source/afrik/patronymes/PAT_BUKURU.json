@@ -26,25 +26,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Au Burundi, la naissance de jumeaux impose les noms Bukuru et Butoyi, qui signifient « le majeur » et « le mineur ». L'enfant né après des jumeaux reçoit l'un des noms Nkurikiye (« celui qui vient après les jumeaux »), Ciza (« le beau ») ou Congera (« celui qui s'ajoute »).",
-        "claimStatus": "claimed",
-        "sourceRefs": ["simbananiye-2005-noms-burundi"]
-      },
-      {
-        "claim": "Une explication de cette règle : les jumeaux seraient vus comme un signe de malheur qui frappe la famille, un phénomène étrange pour lequel un rite d'intégration doit être organisé. L'article donne cette conception sans nommer qui la tient.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["simbananiye-2005-noms-burundi"]
-      }
-    ],
-    "historicalSyntheses": [
-      {
-        "claim": "Le système traditionnel de nomination, où chacun porte un nom différent de celui de son père, coexiste aujourd'hui au Burundi avec un système patronymique introduit par la colonisation et le christianisme. Ce dernier montre ses limites : un nom de rang, par exemple, ne peut passer du père aux enfants sans perdre son sens.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["simbananiye-2005-noms-burundi"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -83,10 +66,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Les explications ci-dessus portent sur le sens du nom et sur la règle qui le donne à la naissance de jumeaux au Burundi. Nous n'avons trouvé aucune source sur l'histoire de familles précises qui le portent, ni sur d'autres raisons de le donner."
-    },
     {
       "fieldPath": "alliances",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
@@ -197,6 +176,69 @@
                 "role": "écrit cette forme"
               }
             ],
+            "sources": [
+              {
+                "title": "Les noms de personnes au Burundi : un support du lien social (Léandre Simbananiye, Anthropologie et Sociétés, 29(1), 2005, p. 167-181)",
+                "author": "Léandre Simbananiye",
+                "year": 2005,
+                "url": "https://doi.org/10.7202/011745ar",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 172",
+                "notes": "Article lu en entier sur le site d'Érudit le 13 octobre 2026. L'auteur s'appuie sur des entretiens menés en 1999 au Burundi et sur des noms relevés dans des registres paroissiaux, des écoles et l'état civil. Page 172 : la naissance de jumeaux impose les noms Bukuru et Butoyi, « le majeur » et « le mineur », et l'article explique cette règle par la conception des jumeaux comme un signe de malheur qui frappe la famille. L'article ne dit pas lequel des deux jumeaux reçoit lequel des deux noms, ni qui tient cette conception."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le système traditionnel de nomination, où chacun porte un nom différent de celui de son père, coexiste aujourd'hui au Burundi avec un système patronymique introduit par la colonisation et le christianisme. Ce dernier montre ses limites : un nom de rang, par exemple, ne peut passer du père aux enfants sans perdre son sens.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Les noms de personnes au Burundi : un support du lien social (Léandre Simbananiye, Anthropologie et Sociétés, 29(1), 2005, p. 167-181)",
+                "author": "Léandre Simbananiye",
+                "year": 2005,
+                "url": "https://doi.org/10.7202/011745ar",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 172",
+                "notes": "Article lu en entier sur le site d'Érudit le 13 octobre 2026. L'auteur s'appuie sur des entretiens menés en 1999 au Burundi et sur des noms relevés dans des registres paroissiaux, des écoles et l'état civil. Page 172 : la naissance de jumeaux impose les noms Bukuru et Butoyi, « le majeur » et « le mineur », et l'article explique cette règle par la conception des jumeaux comme un signe de malheur qui frappe la famille. L'article ne dit pas lequel des deux jumeaux reçoit lequel des deux noms, ni qui tient cette conception."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Au Burundi, la naissance de jumeaux impose les noms Bukuru et Butoyi, qui signifient « le majeur » et « le mineur ». L'enfant né après des jumeaux reçoit l'un des noms Nkurikiye (« celui qui vient après les jumeaux »), Ciza (« le beau ») ou Congera (« celui qui s'ajoute »).",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Les noms de personnes au Burundi : un support du lien social (Léandre Simbananiye, Anthropologie et Sociétés, 29(1), 2005, p. 167-181)",
+                "author": "Léandre Simbananiye",
+                "year": 2005,
+                "url": "https://doi.org/10.7202/011745ar",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 172",
+                "notes": "Article lu en entier sur le site d'Érudit le 13 octobre 2026. L'auteur s'appuie sur des entretiens menés en 1999 au Burundi et sur des noms relevés dans des registres paroissiaux, des écoles et l'état civil. Page 172 : la naissance de jumeaux impose les noms Bukuru et Butoyi, « le majeur » et « le mineur », et l'article explique cette règle par la conception des jumeaux comme un signe de malheur qui frappe la famille. L'article ne dit pas lequel des deux jumeaux reçoit lequel des deux noms, ni qui tient cette conception."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une explication de cette règle : les jumeaux seraient vus comme un signe de malheur qui frappe la famille, un phénomène étrange pour lequel un rite d'intégration doit être organisé. L'article donne cette conception sans nommer qui la tient.",
+            "claimStatus": "claimed",
             "sources": [
               {
                 "title": "Les noms de personnes au Burundi : un support du lien social (Léandre Simbananiye, Anthropologie et Sociétés, 29(1), 2005, p. 167-181)",

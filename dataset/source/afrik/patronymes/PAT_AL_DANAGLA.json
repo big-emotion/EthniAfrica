@@ -41,13 +41,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Jaeger emploie Danágla pour les Nubiens dongolawi. Il décrit Dongolawi comme un nom donné de l'extérieur. En arabe, les personnes concernées se nomment dungulanderi (« je suis de Dongola ») ou dungulawi. Dans leur propre langue, elles appellent celle-ci Andaandi. Ces noms sont liés à Dongola, mais ils n'expliquent pas à eux seuls l'origine du nom de famille al-Danagla.",
-        "claimStatus": "established",
-        "sourceRefs": ["jaeger-2024-danagla"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -261,6 +256,27 @@
                 "source_kind": "academic",
                 "page": "p. 198",
                 "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée vérifiée sur l'image de la page. Page 198, note 5 : « All inhabitants of Dongola do not, however, care to be called Danagla. The Rikabia... resent the application of the name »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Jaeger emploie Danágla pour les Nubiens dongolawi. Il décrit Dongolawi comme un nom donné de l'extérieur. En arabe, les personnes concernées se nomment dungulanderi (« je suis de Dongola ») ou dungulawi. Dans leur propre langue, elles appellent celle-ci Andaandi. Ces noms sont liés à Dongola, mais ils n'expliquent pas à eux seuls l'origine du nom de famille al-Danagla.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Wise Sayings and Proverbs among Andaandi and Mattokki speaking Nubians",
+                "author": "Marcus Jaeger",
+                "year": 2024,
+                "url": "https://kups.ub.uni-koeln.de/74842/1/AM%20Proverbs%20publication%20A5%20Glossar%20italics.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18-19",
+                "notes": "Thèse de doctorat, Universität zu Köln, 2024. Lue le 16 octobre 2026 dans le fichier public de l'université. Dans l'introduction, la section sur les langues et les groupes écrit « Dongolawi/Danágla Nubians » ; elle dit que Dongolawi est un nom donné de l'extérieur, qu'en langue andaandi ces personnes n'ont pas de nom propre pour leur groupe, et qu'en arabe elles se disent dungulanderi (« je suis de Dongola ») ou, plus récemment, dungulawi. Le texte ne dit pas d'où vient la forme Danágla."
               }
             ]
           }

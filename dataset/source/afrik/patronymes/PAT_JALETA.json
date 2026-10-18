@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -62,10 +63,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "L'article de Tadesse Jaleta Jirata, sa bibliographie et les requêtes « Jaleta Oromo name/etymology » ont été examinés ; aucune étude linguistique dédiée du nom Jaleta n'a été trouvée."
-    },
     {
       "fieldPath": "alliances",
       "reason": "Les matériaux de parenté et de relations sociales guji-oromo de l'article ont été recherchés ; aucune alliance à plaisanterie entre Jaleta et un autre nom documenté ici n'y est nommée."

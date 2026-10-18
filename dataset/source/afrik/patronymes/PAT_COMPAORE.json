@@ -31,20 +31,9 @@
   "designatedSocialUnit": "lineage",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Une étude de peuplement situe un lignage Compaoré à Niaogo, venu de Guiéri puis segmenté vers Sondogo et Widi. Ce récit concerne ce seul lignage, pas l'origine de tous les Compaoré.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["lahuec-1979-mobilite-bissa-mossi"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le répertoire provisoire rattache Compaoré à une formule en mooré évoquant ceux qui peuvent manquer la chefferie sans manquer d'être descendants de Naaba Oubri. Cette explication collectée n'est pas corroborée par une analyse linguistique publiée.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["burkina-provisional-patronyme-register"]
-      }
-    ]
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -279,6 +268,48 @@
             "era": "modern",
             "statement": "Le nom Compaoré aurait été donné par les habitants d'un village à des ancêtres que leur chef avait retenus en promettant que rien ne leur manquerait, selon le projet de répertoire des patronymes du Burkina Faso.",
             "hypothesisGroup": "origine du nom Compaoré",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 42-43",
+                "notes": "Document de travail daté de mai 2025 et marqué « version provisoire », sans validation finale visible, lu le 11 octobre 2026 sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle de ce répertoire n'a été trouvée. Notice COMPAORE (n° 231) : la formule en mooré « Naam toin paoga neba taaba la ka toin poag Naba Oubri biig yé », traduite « certaines personnes peuvent rater la chefferie mais pas les descendants de Naba Oubri », puis le récit d'ancêtres retenus par le chef d'un village. La notice ne cite pas ses sources."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une étude de peuplement situe un lignage Compaoré à Niaogo, venu de Guiéri puis segmenté vers Sondogo et Widi. Ce récit concerne ce seul lignage, pas l'origine de tous les Compaoré.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "La mobilité du peuplement bissa et mossi",
+                "author": "Jean-Paul Lahuec et Jean-Yves Marchal",
+                "year": 1979,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_5/pt5/travaux_d/21153.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 27 ; p. 34",
+                "notes": "Paris, ORSTOM, Travaux et documents n° 103, 1979 ; première partie de Jean-Paul Lahuec. Lu dans le PDF intégral le 11 octobre 2026. Page 27 : « Les habitants de Niaogo, les Compaoré, sont originaires de Guiéri », avec la note « Patronyme mossi encore couramment usité entre Manga et Ouagadougou ». Page 34 : la tradition recueillie, une liste de 32 chefs et la référence à Naba Oubri font « envisager une implantation vers 1500 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le répertoire provisoire rattache Compaoré à une formule en mooré évoquant ceux qui peuvent manquer la chefferie sans manquer d'être descendants de Naaba Oubri. Cette explication collectée n'est pas corroborée par une analyse linguistique publiée.",
+            "claimStatus": "claimed",
             "sources": [
               {
                 "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",

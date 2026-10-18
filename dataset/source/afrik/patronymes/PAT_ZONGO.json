@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le répertoire provisoire juxtapose pour Zongo les interprétations « respect voué à tout le monde », « maîtres de la pluie », « case à deux portes », « vestibule » et « antichambre du chef ». Faute d'analyse linguistique ou de distinction claire entre sens lexical, titre et fonction, ces propositions demeurent contestées.",
-        "claimStatus": "contested",
-        "sourceRefs": ["burkina-provisional-patronyme-register"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -237,6 +232,27 @@
                 "source_kind": "academic",
                 "page": "p. 33, note 1 ; p. 158",
                 "notes": "Mémoires ORSTOM n° 46, 1971, d'après des enquêtes faites à Dakola de mai 1965 à fin 1968. Lu dans le PDF intégral le 11 octobre 2026. Page 33, note 1 : « Le patrilignage des tambourinaires du chef de Dakola, dont le patronyme est Zongo, forme le quartier Loungo de Dakola. » Page 158 : « Les lignages les plus anciens à Dakola, ceux de Zongo Somtanaba et Guiguemdé Songa »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le répertoire provisoire juxtapose pour Zongo les interprétations « respect voué à tout le monde », « maîtres de la pluie », « case à deux portes », « vestibule » et « antichambre du chef ». Faute d'analyse linguistique ou de distinction claire entre sens lexical, titre et fonction, ces propositions demeurent contestées.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 232-233",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de mai 2025 et marqué « version provisoire ». Lu le 11 octobre 2026 sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Notice ZONGO : « Ce patronyme signifie « Respect voué à tout le monde sans distinction ». Ils sont considérés comme les « maitres de la pluie », ou « la case à deux portes », « vestibule », ou encore « l'antichambre du chef ». » La notice suivante traite à part ZONGO/BAZONGO, « patronyme lyélé »."
               }
             ]
           }

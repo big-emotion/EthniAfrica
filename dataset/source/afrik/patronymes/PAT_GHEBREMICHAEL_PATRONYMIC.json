@@ -23,18 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Ghebremichael se lirait « serviteur de Michel », composé sur le nom de l'archange : son premier élément répondrait au guèze gabr, « esclave, serviteur », que donne le dictionnaire de Wolf Leslau. Le dictionnaire ne parle pas de ce nom ; la lecture reste une hypothèse.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["leslau-1987-geez"]
-      },
-      {
-        "claim": "En Éthiopie, on ne porte pas de nom de famille héréditaire : après son prénom, on porte le nom personnel du père, qui change donc à chaque génération, selon le Cultural Atlas.",
-        "claimStatus": "established",
-        "sourceRefs": ["cultural-atlas-ethiopian-naming"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -171,7 +161,8 @@
                 "page": "p. 178",
                 "notes": "Wiesbaden, Otto Harrassowitz, 1987. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Entrée gabra : le nom gabr (pluriel 'agbərt) veut dire « slave, servant, bondsman, vassal ». Le dictionnaire ne parle pas du nom Ghebremichael."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           },
           {
             "period": {
@@ -203,6 +194,26 @@
                 "source_kind": "archive",
                 "page": "vol. II, p. 478",
                 "notes": "Londres, William Miller, 1809, volume II. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Le journal de Henry Salt, cité entre guillemets, écrit près de Hamhamou : « Guebra Michael, our Abyssinian guide, came to us »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "En Éthiopie, on ne porte pas de nom de famille héréditaire : après son prénom, on porte le nom personnel du père, qui change donc à chaque génération, selon le Cultural Atlas.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Ethiopian Culture — Naming",
+                "author": "Nina Evason",
+                "year": 2018,
+                "url": "https://culturalatlas.sbs.com.au/ethiopian-culture/ethiopian-culture-naming",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Page lue le 11 octobre 2026 à sa nouvelle adresse, theculturalatlas.org, vers laquelle renvoie ce lien. Elle dit : « People do not have a surname in Ethiopia » et décrit la forme « [personal name] [father's personal name] ». Elle ne parle ni de l'Érythrée ni du nom Ghebremichael."
               }
             ]
           }

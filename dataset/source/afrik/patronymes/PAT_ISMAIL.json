@@ -11,7 +11,10 @@
     {
       "spelling": "Ismail",
       "attestations": [
-        { "countryId": "DJI", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "DJI",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -20,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "La notice consultée présente Ismail (إسماعيل) comme la forme arabe d'Ishmael et Ismaaciil comme forme somalie. Ce rapprochement vient d'une contribution communautaire et reste une hypothèse.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["ismail-behindthename"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -202,6 +200,26 @@
                 "source_kind": "archive",
                 "page": "p. 17-18",
                 "notes": "Londres, Longman, Brown, Green, and Longmans, 1856 ; exemplaire numérisé sur archive.org. Récit d'un voyage fait en 1854-1855 dans le pays somali et jusqu'à Harar. Voyageur britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Page 17 : « The governor of Zayla, El Hajj Sharmarkay bin Ali Salih ». Page 18, note : « The following genealogical table was given to me by Mohammed Sharmarkay », avec, au rang 5, « Musa (the third son : the eldest was Ismail ; then, in succession, Ishak, Misa, Mikahil, Gambah, Dandan, &c.) », fils d'Arrah. Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La notice consultée présente Ismail (إسماعيل) comme la forme arabe d'Ishmael et Ismaaciil comme forme somalie. Ce rapprochement vient d'une contribution communautaire et reste une hypothèse.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Ismail",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.behindthename.com/name/ismail",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Behind the Name, notice consultée intégralement le 2 septembre 2026. Elle donne le script arabe إسماعيل, décrit Ismail comme forme arabe d'Ishmael et répertorie Ismaaciil en somali. Aucun ouvrage savant n'est cité directement dans la notice."
               }
             ]
           }

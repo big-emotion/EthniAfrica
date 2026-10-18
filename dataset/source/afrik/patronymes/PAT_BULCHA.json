@@ -27,6 +27,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -80,10 +81,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Les travaux de Mekuria Bulcha, les études de noms personnels oromo et les requêtes « Bulcha meaning/etymology » ont été examinés ; aucune analyse linguistique dédiée de Bulcha n'a été trouvée."
-    },
     {
       "fieldPath": "alliances",
       "reason": "Les deux sources Bulcha et les recherches de parenté à plaisanterie oromo ne nomment aucune alliance entre Bulcha et un autre nom documenté ici."

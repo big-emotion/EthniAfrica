@@ -40,23 +40,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "YorubaNames analyse Balógun comme ba(ba)-ní-ogun, « père dans la guerre » ou « le général ».",
-        "claimStatus": "contested",
-        "sourceRefs": ["yorubanames-balogun"]
-      },
-      {
-        "claim": "Une autre décomposition, relevée sur un site généalogique agrégateur, lit Balogun comme ba (rencontrer/rejoindre) + logun (la guerre/l'armée), soit « chef de guerre ».",
-        "claimStatus": "contested",
-        "sourceRefs": ["forebears-balogun"]
-      },
-      {
-        "claim": "Une troisième lecture, attachée à la variante orthographique francophone « Balogoun » utilisée au Bénin et au Togo, décompose le nom en oba (roi) + ogun (guerre), soit « roi de guerre ».",
-        "claimStatus": "contested",
-        "sourceRefs": ["forebears-balogun"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -348,7 +333,8 @@
                 "source_kind": "community",
                 "notes": "Dictionnaire collaboratif des noms yoruba, lu en ligne le 11 octobre 2026. L'entrée donne le sens « père à la guerre, le général » et le découpage ba(ba)-ní-ogun, sans citer de source."
               }
-            ]
+            ],
+            "claimStatus": "contested"
           },
           {
             "period": {
@@ -367,6 +353,46 @@
                 "source_kind": "academic",
                 "page": "p. 90 et 132",
                 "notes": "Première édition en 1921, préparée par O. Johnson d'après le manuscrit de l'auteur, pasteur d'Oyo. Lu dans une réimpression des CMS Bookshops de Lagos, numérisée par Internet Archive. Page 90, sur le choix du Jagun ou Balogun ; page 132, sur les titres militaires d'Ibadan."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une autre décomposition, relevée sur un site généalogique agrégateur, lit Balogun comme ba (rencontrer/rejoindre) + logun (la guerre/l'armée), soit « chef de guerre ».",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "Balogun Surname Origin, Meaning & Last Name History — Forebears",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://forebears.io/surnames/balogun",
+                "tier": "unverified",
+                "source_kind": "repository",
+                "notes": "Base généalogique agrégeant des données de recensement et des étymologies soumises par des utilisateurs. Fournit une incidence chiffrée du patronyme par pays (environ 215 000 porteurs au Nigeria, populations notables au Ghana, en Angleterre et aux États-Unis) et plusieurs décompositions étymologiques concurrentes, dont celle expliquant la variante « Balogoun » utilisée au Bénin et au Togo. Contenu non arbitré par un travail publié indépendant ; conservé au niveau « unverified »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une troisième lecture, attachée à la variante orthographique francophone « Balogoun » utilisée au Bénin et au Togo, décompose le nom en oba (roi) + ogun (guerre), soit « roi de guerre ».",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "Balogun Surname Origin, Meaning & Last Name History — Forebears",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://forebears.io/surnames/balogun",
+                "tier": "unverified",
+                "source_kind": "repository",
+                "notes": "Base généalogique agrégeant des données de recensement et des étymologies soumises par des utilisateurs. Fournit une incidence chiffrée du patronyme par pays (environ 215 000 porteurs au Nigeria, populations notables au Ghana, en Angleterre et aux États-Unis) et plusieurs décompositions étymologiques concurrentes, dont celle expliquant la variante « Balogoun » utilisée au Bénin et au Togo. Contenu non arbitré par un travail publié indépendant ; conservé au niveau « unverified »."
               }
             ]
           }

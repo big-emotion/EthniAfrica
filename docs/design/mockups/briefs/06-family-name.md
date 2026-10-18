@@ -324,3 +324,18 @@ Decided, not drawn:
    « Porteurs » match the live page word for word on 2026-10-18; the live page
    has a rewritten « Le nom » (plain social function, country names in full)
    and lists Malinké before Bambara.
+
+### ETNI-2105 board amendment approved 2026-10-18
+
+The operator approved these amendments in chat on 2026-10-18. They are recorded
+in the canonical `name-traore` boards at 430, 768 and 1440 px:
+
+- Move the origin narratives into the name history and show each migrated
+  claim's status as plain text in its period line (including « Revendiquée »
+  and « Contestée »); statuses do not change the order or visual weight of an
+  account.
+- Replace the folded « Origine » account groups with one sentence directing
+  readers to the sourced narratives in the name history.
+
+This approval amends item 3 in the approval record above. The original record
+remains as the decision history; this section records the later approval.

@@ -36,18 +36,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Dans l'usage soudanais documenté, Adam peut occuper l'un des éléments d'une chaîne de noms personnels formée par le nom du porteur, celui du père et celui du grand-père ; ce n'est pas un nom de famille héréditaire.",
-        "claimStatus": "established",
-        "sourceRefs": ["verney-2019-sudan-names"]
-      },
-      {
-        "claim": "Pour le patronyme européen, le Dictionary of American Family Names rattache Adam au prénom biblique Adam, lui-même expliqué par l'hébreu générique pour « homme » et rapproché de adama (« terre »). Cette analyse ne doit pas être transférée au système non héréditaire associé aux Four/Fur dans la même fiche.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["dafn-adam-2022"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -254,6 +244,47 @@
                 "source_kind": "academic",
                 "page": "p. 68",
                 "notes": "Sudan Studies, no 59, janvier 2019. Lu le 11 octobre 2026 dans une copie archivée du numéro, le lien d'origine ne répondant plus. L'auteur écrit que, dans le système soudanais, fils et filles prennent aussi les noms de leur père et de leur grand-père paternel, ce qui déroute souvent les fonctionnaires européens, et cite le cas d'un Darfouri nommé Adam Suleiman."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans l'usage soudanais documenté, Adam peut occuper l'un des éléments d'une chaîne de noms personnels formée par le nom du porteur, celui du père et celui du grand-père ; ce n'est pas un nom de famille héréditaire.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Tongue-tied: How interpreting errors hurt Sudanese asylum cases",
+                "author": "Peter Verney",
+                "year": 2019,
+                "url": "https://sssuk.org/sites/default/files/sudanStudies/SS59.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 68",
+                "notes": "Sudan Studies, no 59, janvier 2019. Lu le 11 octobre 2026 dans une copie archivée du numéro, le lien d'origine ne répondant plus. L'auteur écrit que, dans le système soudanais, fils et filles prennent aussi les noms de leur père et de leur grand-père paternel, ce qui déroute souvent les fonctionnaires européens, et cite le cas d'un Darfouri nommé Adam Suleiman."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Pour le patronyme européen, le Dictionary of American Family Names rattache Adam au prénom biblique Adam, lui-même expliqué par l'hébreu générique pour « homme » et rapproché de adama (« terre »). Cette analyse ne doit pas être transférée au système non héréditaire associé aux Four/Fur dans la même fiche.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Adam Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.ancestry.com/last-name-meaning/adam?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Patrick Hanks et al., Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry. La notice couvre le patronyme européen ; elle ne caractérise pas le patronyme non héréditaire associé aux Four/Fur."
               }
             ]
           }

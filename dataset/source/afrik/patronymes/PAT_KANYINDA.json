@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -62,10 +63,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "la recherche web combinant « Kanyinda », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de l'article « Luba-Kasai: A Working Bibliography » et sa bibliographie détaillée, n'ont livré aucune étymologie, chronique d'origine ou tradition orale attribuable à un témoin pour ce nom. Les rapprochements seulement plausibles ont été écartés."
-    },
     {
       "fieldPath": "alliances",
       "reason": "la recherche web combinant « Kanyinda », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de l'article « Luba-Kasai: A Working Bibliography » et sa bibliographie détaillée, n'ont identifié aucune paire d'alliance ou de parenté à plaisanterie reliant ce nom à un autre nom documenté ici."

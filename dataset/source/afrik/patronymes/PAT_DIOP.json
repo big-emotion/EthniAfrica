@@ -34,13 +34,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Diop est documenté comme nom de clan wolof et lébou au Sénégal, d’étymologie non expliquée ; Madubuike le classe parmi les patronymes wolof transmis par les hommes et note son association historique aux chefferies traditionnelles de Dakar.",
-        "claimStatus": "established",
-        "sourceRefs": ["dafn-familysearch-diop", "madubuike-1994-african-names"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -186,6 +181,36 @@
                 "source_kind": "archive",
                 "page": "p. 83",
                 "notes": "Saint-Louis, Imprimerie du Gouvernement, 1865, lu le 13 octobre 2026 dans la numérisation d'Internet Archive (catalogue : « Annuaire du Gouvernement général de l'Afrique occidentale française »). Page 83, liste des interprètes auxiliaires de 2e classe : la ligne « Akar-Diop, à Mbidjem » suit celles de Demba, à Nguiguis, et d'Alpha, à Saldé. Le même annuaire nomme plus loin « Doumbé Diop » parmi les titulaires de licences (p. 99). Mbidjem est le chef-lieu d'un « Cercle de Mbidjem » dans la liste des commandants du même volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Diop est documenté comme nom de clan wolof et lébou au Sénégal, d’étymologie non expliquée ; Madubuike le classe parmi les patronymes wolof transmis par les hommes et note son association historique aux chefferies traditionnelles de Dakar.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names — Diop entry",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.familysearch.org/en/surname?surname=diop",
+                "tier": "unverified",
+                "source_kind": "repository",
+                "notes": "Entrée FamilySearch reproduisant le Dictionary of American Family Names de Patrick Hanks. Elle décrit Diop comme un nom de clan wolof et lébou principalement sénégalais et qualifie son étymologie d’inexpliquée."
+              },
+              {
+                "title": "A Handbook of African Names",
+                "author": "Ihechukwu Madubuike",
+                "year": 1994,
+                "url": "https://dokumen.pub/a-handbook-of-african-names-2-revnbsped-0894104381-9780894104381-0894104373.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 69 (page que donne l'index du volume)",
+                "notes": "2e éd., Three Continents Press, 1994, lue le 12 octobre 2026 sur une transcription numérique miroir du volume imprimé. Dans la section sur les Wolof, les enfants prennent le nom familial du père ; les noms les plus courants, transmis par les hommes, sont « Diop, Ndiaye, Mbang, Fall, Gueye, Mbaye, Sek, Diao », et les chefs traditionnels de Dakar sont en général des Diop. Le texte numérisé est mal découpé : la page 69 est celle que l'index attribue à Diop."
               }
             ]
           }

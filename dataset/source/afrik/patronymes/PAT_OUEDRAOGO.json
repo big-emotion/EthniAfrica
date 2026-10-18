@@ -40,23 +40,9 @@
   "designatedSocialUnit": "lineage",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Dans l'histoire traditionnelle publiée par Yamba Tiendrebeogo, la princesse Yennenga quitte Gambaga sur un cheval qui l'emporte dans la brousse, rencontre le chasseur Rialé et donne naissance à un fils que son père nomme Ouedraogo en souvenir de ce cheval. Ce récit fondateur est attesté comme tradition écrite ; il ne constitue pas à lui seul une généalogie historique vérifiée de tous les porteurs du patronyme.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["tiendrebeogo-1963-histoire-mossi"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le répertoire provisoire donne Wédraoogo comme forme d'origine et la traduit par « cheval mâle » ou « étalon ». Cette glose concorde avec la fonction du cheval dans le récit publié, mais aucune analyse morphologique universitaire consultée ne l'établit indépendamment.",
-        "claimStatus": "claimed",
-        "sourceRefs": [
-          "tiendrebeogo-1963-histoire-mossi",
-          "burkina-provisional-patronyme-register"
-        ]
-      }
-    ]
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -316,6 +302,58 @@
             "statement": "Le nom Ouédraogo viendrait de Wédraoogo, qui veut dire « cheval mâle » ou « étalon », selon le projet de répertoire des patronymes du Burkina Faso.",
             "hypothesisGroup": "sens du nom Ouédraogo",
             "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 163-164",
+                "notes": "Document de travail daté de mai 2025 et marqué « version provisoire », sans validation finale visible, lu sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle de ce répertoire n'a été trouvée. La notice OUEDRAOGO donne Wédraoogo comme forme d'origine et la traduit par « cheval mâle » ou « étalon »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans l'histoire traditionnelle publiée par Yamba Tiendrebeogo, la princesse Yennenga quitte Gambaga sur un cheval qui l'emporte dans la brousse, rencontre le chasseur Rialé et donne naissance à un fils que son père nomme Ouedraogo en souvenir de ce cheval. Ce récit fondateur est attesté comme tradition écrite ; il ne constitue pas à lui seul une généalogie historique vérifiée de tous les porteurs du patronyme.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Histoire traditionnelle des Mossi de Ouagadougou",
+                "author": "Yamba Tiendrebeogo",
+                "year": 1963,
+                "url": "https://www.persee.fr/doc/jafr_0037-9166_1963_num_33_1_1365?pageId=T1_9",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 8-9",
+                "notes": "Journal de la Société des Africanistes, 33(1), 1963, p. 7-46. Les pages 8 et 9 nomment Yennenga, Rialé et leur fils Ouedraogo, ainsi appelé par son père en souvenir du cheval fougueux de la princesse. C'est la mise par écrit d'une histoire traditionnelle, pas une démonstration généalogique."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le répertoire provisoire donne Wédraoogo comme forme d'origine et la traduit par « cheval mâle » ou « étalon ». Cette glose concorde avec la fonction du cheval dans le récit publié, mais aucune analyse morphologique universitaire consultée ne l'établit indépendamment.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Histoire traditionnelle des Mossi de Ouagadougou",
+                "author": "Yamba Tiendrebeogo",
+                "year": 1963,
+                "url": "https://www.persee.fr/doc/jafr_0037-9166_1963_num_33_1_1365?pageId=T1_9",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 8-9",
+                "notes": "Journal de la Société des Africanistes, 33(1), 1963, p. 7-46. Les pages 8 et 9 nomment Yennenga, Rialé et leur fils Ouedraogo, ainsi appelé par son père en souvenir du cheval fougueux de la princesse. C'est la mise par écrit d'une histoire traditionnelle, pas une démonstration généalogique."
+              },
               {
                 "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
                 "author": "Direction du patrimoine culturel, Burkina Faso",

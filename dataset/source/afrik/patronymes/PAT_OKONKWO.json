@@ -23,17 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Okonkwo est un nom personnel igbo signifiant « homme né le jour Nkwo ». Le dictionnaire et Nkamigbo rattachent Nkwo/Nkwọ à l'un des quatre jours de marché de la semaine igbo.",
-        "claimStatus": "established",
-        "sourceRefs": [
-          "hanks-okonkwo",
-          "nkamigbo-2019-igbo-names",
-          "ogbaa-1980-names"
-        ]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -266,6 +257,46 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 146",
                 "notes": "Lagos, Church Missionary Society Bookshop, 1923. Lu sur une copie déposée sur archive.org, copie non officielle de l'exemplaire numérisé par Google pour HathiTrust (https://hdl.handle.net/2027/ien.35556041684267). Article « Superintend » : la phrase d'exemple en igbo commence par « Okonkwo » et se traduit « Okonkwo is superintending the work ». Ouvrage missionnaire de l'époque coloniale, cité ici pour la forme qu'il écrit. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Okonkwo est un nom personnel igbo signifiant « homme né le jour Nkwo ». Le dictionnaire et Nkamigbo rattachent Nkwo/Nkwọ à l'un des quatre jours de marché de la semaine igbo.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Okonkwo Name Meaning and Okonkwo Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=okonkwo",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Entrée Okonkwo du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch. Elle donne Okonkwo comme un nom personnel igbo du Nigeria signifiant « homme né le jour Nkwo », l'un des quatre jours de marché de la semaine igbo. Lu le 11 octobre 2026."
+              },
+              {
+                "title": "The Sociolinguistics of Igbo Personal Names",
+                "author": "Linda Chinelo Nkamigbo",
+                "year": 2019,
+                "url": "https://www.nigerianjournalsonline.org/index.php/JOLLC/article/download/4155/3899/7523",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 166-167",
+                "notes": "Journal of Linguistics, Language and Culture, vol. 6, no 1, 2019, p. 158-178. Section « Market day names » : l'enfant reçoit un nom d'après le jour de sa naissance ; le nom suit le modèle « nom de la divinité du jour de marché + nwa ou oko » pour un garçon, ainsi Okafọ pour Afọ et Okonkwọ pour Nkwọ. La note 2 dit que les quatre jours portent le nom des divinités du marché. Lu le 11 octobre 2026."
+              },
+              {
+                "title": "Names and Naming in Chinua Achebe's Novels",
+                "author": "Kalu Ogbaa",
+                "year": 1980,
+                "url": "https://ans-names.pitt.edu/ans/article/view/930",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 269",
+                "notes": "Names, vol. 28, no 4, 1980, p. 267-289, lu dans le PDF de la revue. L'auteur range Okonkwo et Okafo parmi les noms qui renvoient aux quatre jours du marché igbo, Nkwo, Eke, Oye et Afo, « soit » au jour de la naissance, « soit » à la divinité qui veille sur ce jour ; Okonkwo, de oko et de Nkwo, veut dire « garçon né le jour de marché Nkwo ». Lu le 11 octobre 2026."
               }
             ]
           }

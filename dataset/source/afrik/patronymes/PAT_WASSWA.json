@@ -31,13 +31,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Le chapitre consacré à Apolo Kivebulaya indique qu'il naquit sous le nom Waswa, nom de l'aîné de jumeaux garçons en Buganda. Cette règle de rang de naissance établit un nom personnel non héréditaire ; elle ne suffit pas à expliquer tout usage moderne de Wasswa comme patronyme.",
-        "claimStatus": "established",
-        "sourceRefs": ["wild-wood-2020-waswa"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -163,6 +158,26 @@
                 "role": "reçoit ce nom à sa naissance, selon le récit"
               }
             ],
+            "sources": [
+              {
+                "title": "Waswa, a commoner in the Kingdom of Buganda (c.1865–c.1884)",
+                "author": "Emma Wild-Wood",
+                "year": 2020,
+                "url": "https://www.cambridge.org/core/books/abs/mission-of-apolo-kivebulaya/waswa-a-commoner-in-the-kingdom-of-buganda-c1865c1884/3BC8F0B346AAFFCD6C1EF624C8867C12",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Chapitre 2, p. 61-94, du livre The Mission of Apolo Kivebulaya, publié par Boydell and Brewer en 2020. Seul le résumé du chapitre a été lu, sur Cambridge Core, le 12 octobre 2026 : Apolo Kivebulaya est né sous le nom « Waswa », le nom de l'aîné de jumeaux garçons, au Buganda, sous le règne du kabaka Mutesa. Le résumé s'appuie aussi sur son autobiographie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le chapitre consacré à Apolo Kivebulaya indique qu'il naquit sous le nom Waswa, nom de l'aîné de jumeaux garçons en Buganda. Cette règle de rang de naissance établit un nom personnel non héréditaire ; elle ne suffit pas à expliquer tout usage moderne de Wasswa comme patronyme.",
+            "claimStatus": "established",
             "sources": [
               {
                 "title": "Waswa, a commoner in the Kingdom of Buganda (c.1865–c.1884)",

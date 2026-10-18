@@ -20,6 +20,7 @@ describe("readSearchedThisWeek", () => {
           {
             form: "Peul",
             href: getNameAnswerRoute("fr", "Peul"),
+            subject: { type: "people", id: "PPL_FULA" },
             summary: "...",
           },
           { form: "  ", href: `${getLocalizedRoute("fr", "search")}/empty` },
@@ -30,7 +31,12 @@ describe("readSearchedThisWeek", () => {
     );
 
     await expect(readSearchedThisWeek()).resolves.toEqual([
-      { form: "Peul", href: getNameAnswerRoute("fr", "Peul") },
+      {
+        form: "Peul",
+        href: getNameAnswerRoute("fr", "Peul"),
+        subject: { type: "people", id: "PPL_FULA" },
+        summary: "...",
+      },
     ]);
   });
 

@@ -40,18 +40,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'entrée consultée décrit Abdallah comme un nom de famille formé sur le nom personnel homographe dans l'usage swahili. Elle ne permet pas de généraliser ce mécanisme à tous les porteurs africains de la graphie.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["btn-surname-abdallah"]
-      },
-      {
-        "claim": "Deux dictionnaires historiques reproduits par Forebears analysent Abdallah comme un nom arabe signifiant « serviteur de Dieu » ; cette glose lexicale ne démontre ni une lignée commune ni une origine ethnique des porteurs.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["forebears-abdallah"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -218,6 +208,46 @@
                 "source_kind": "linguistic_reference",
                 "page": "entrée « ʿabd »",
                 "notes": "Lexique d'Edward William Lane (Londres, 1863-1893), lu sur la reproduction en ligne du Hawramani Arabic Lexicon le 13 octobre 2026. L'entrée donne à ʿabd le sens de « male slave », puis de serviteur ou d'adorateur de Dieu, et cite l'emploi « ʿabdu llāhi ». La reproduction en ligne n'indique pas les pages du livre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'entrée consultée décrit Abdallah comme un nom de famille formé sur le nom personnel homographe dans l'usage swahili. Elle ne permet pas de généraliser ce mécanisme à tous les porteurs africains de la graphie.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the surname Abdallah — Behind the Name",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://surnames.behindthename.com/name/abdallah",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Entrée communautaire lue le 13 octobre 2026. Elle classe Abdallah comme nom de famille tiré du prénom Abdallah, avec l'usage « Swahili »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Deux dictionnaires historiques reproduits par Forebears analysent Abdallah comme un nom arabe signifiant « serviteur de Dieu » ; cette glose lexicale ne démontre ni une lignée commune ni une origine ethnique des porteurs.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Abdallah Surname Origin, Meaning & Last Name History",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://forebears.io/surnames/abdallah",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page dédiée consultée intégralement. Elle atteste le patronyme au Soudan, en Égypte et aux Comores et reproduit deux dictionnaires anciens donnant la glose arabe « serviteur de Dieu ». Les contributions déposées par les utilisateurs n'ont pas été retenues. Forebears avertit que la distribution géographique ne permet pas d'inférer une appartenance ethnique."
               }
             ]
           }

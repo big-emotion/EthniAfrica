@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une explication relie Nascimento à la naissance de Jésus-Christ : le mot veut dire « naissance » en portugais.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["wikipedia-en-nascimento"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [],
   "countries": [
@@ -203,6 +198,26 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 8",
                 "notes": "Traité publié à Lisbonne en 1928 ; exemplaire numérisé sur archive.org. La page citée est celle du livre, imprimée en tête de page. Page 8 : « o Côro das Musas, de Nascimento Silveira, 4 tomos, Lisboa 1792-1796 », cité comme source de notes généalogiques ; l'ouvrage lui-même n'a pas été ouvert. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une explication relie Nascimento à la naissance de Jésus-Christ : le mot veut dire « naissance » en portugais.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Nascimento (surname) — Wikipédia (version anglaise)",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://en.wikipedia.org/wiki/Nascimento_(surname)",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Article consulté en octobre 2026 dans sa version anglaise. Il s'appuie sur une thèse de Fabiana Aparecida Prenhaca Giacometti, O Nome do Homem Casado (Universidade Estadual Paulista, 2019), que nous n'avons pas consultée dans l'original. Il ne dit rien de l'Angola, et la présence du nom dans ce pays reste donc non expliquée ici."
               }
             ]
           }

@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -62,10 +63,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Les recherches exactes « Randriamampionona etymology », « Randriamampionona onomastics », leurs équivalents français, Google Books et les résultats académiques n'ont livré ni récit attribué, ni chronique d'origine, ni reconstruction linguistique."
-    },
     {
       "fieldPath": "transmissionMode",
       "reason": "Le profil atteste un individu sans filiation. Les recherches Randriamampionona avec père, fils, famille et généalogie n'ont pas établi le mode de transmission ; « other » maintient l'indétermination."
@@ -135,7 +132,11 @@
             ]
           },
           {
-            "period": { "from": 1984, "to": 1984, "label": "1984" },
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "1984"
+            },
             "statement": "Le nom Randriamampionona apparaît par écrit comme nom d'auteur d'un livre de Modeste Randriamampionona, vétérinaire, imprimé à Toulouse en 1984, selon le catalogue de la Bibliothèque nationale de France. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand il est donné.",
             "birth": true,
             "sources": [

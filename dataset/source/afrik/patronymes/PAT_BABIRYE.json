@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "La notice dédiée identifie Babirye comme un nom féminin ganda signifiant « première des jumeaux » en luganda ; faute de bibliographie propre à l'entrée, la glose est conservée comme attribution communautaire.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["behindthename-babirye"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -159,6 +154,26 @@
                 "source_kind": "government",
                 "page": "p. 511",
                 "notes": "Supplément à la Gazette de l'Ouganda daté du 30 novembre, reproduit dans le volume de 1917 numérisé sur archive.org et lu le 13 octobre 2026. Les pages 509 à 511 listent les sommes reçues pour les œuvres de guerre (la Croix-Rouge britannique et l'ordre de Saint-Jean), versées par l'intermédiaire du commissaire de la province du Buganda. Page 511 : « Maliyamu Babirye … 2 00 » (2 roupies), parmi des centaines de noms de donateurs du Buganda."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La notice dédiée identifie Babirye comme un nom féminin ganda signifiant « première des jumeaux » en luganda ; faute de bibliographie propre à l'entrée, la glose est conservée comme attribution communautaire.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Babirye",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/babirye",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice du site Behind the Name, lue le 13 octobre 2026. Elle donne : « Means \"first of twins\" in Luganda », usage ganda, nom féminin, catégories « birth order » et « twins », mise à jour le 23 avril 2024. Elle ne cite aucune source."
               }
             ]
           }

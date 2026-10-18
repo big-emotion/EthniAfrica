@@ -1457,6 +1457,53 @@ button.afh-source-diamond .afh-source-diamond-mark {
   gap: var(--afh-space-md);
 }
 
+.ea-tl-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--afh-space-md);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.ea-tl-controls::-webkit-scrollbar {
+  display: none;
+}
+
+.ea-tl-controls > * {
+  flex: none;
+}
+
+.ea-tl-controls .afh-name-timeline-hint,
+.ea-tl-controls .afh-chronology-legend > li {
+  white-space: nowrap;
+}
+
+.ea-tl-controls .afh-chronology-legend {
+  flex-wrap: nowrap;
+  margin: 0;
+}
+
+.ea-tl-fold::after {
+  display: none;
+}
+
+.ea-tl-fold > .ea-fold {
+  margin-top: 0;
+}
+
+.ea-tl-folded {
+  margin-top: var(--afh-space-md);
+  padding: 0;
+}
+
+.ea-tl-folded > .afh-chronology-station:first-child::before {
+  top: -8px;
+}
+
+.ea-tl-folded > .afh-chronology-station:last-child::before {
+  bottom: -8px;
+}
+
 .afh-name-timeline-hint {
   margin: 0;
   font-size: var(--afh-text-small);
@@ -1744,7 +1791,6 @@ button.afh-source-diamond .afh-source-diamond-mark {
   line-height: 1.5;
   color: var(--afh-text-soft);
 }
-
 /* ===== fiche-parchment.css (verbatim) ===== */
 /**
  * A fiche's parchment: the reading below the globe band.
@@ -5392,3 +5438,17 @@ a.ea-fiche-card:focus-visible { outline: none; box-shadow: var(--afh-ring-focus)
 .ea-readings-family { padding-top: var(--afh-space-md); border-top: 1px dashed var(--afh-border); }
 .pl-card .ea-readings p { margin: 0; }
 .pl-card .ea-readings .afh-name-timeline-statement { margin-top: var(--afh-space-xs); color: var(--afh-text); line-height: 1.6; }
+
+/* ============================================================
+   Brief 8 (2026-10-19): the free-word page, « Le mot race »,
+   /fr/atlas/mots/[slug]. The result page's timeline with the
+   brief 15 fold and sources list, the related families as fiche
+   links, and « Parcourir les mots » in the next-step cards, the
+   current word shown but not linked. New selectors only, tokens
+   only.
+   ============================================================ */
+.ea-word-related .afh-prose-list p { margin: var(--afh-space-xs) 0 0; }
+.ea-words .ea-next-card[aria-current="page"] { border-style: dashed; cursor: default; }
+.ea-words-noted { margin-top: var(--afh-space-2xl); }
+.ea-words-noted-lead { margin: 0 0 var(--afh-space-sm); font-size: var(--afh-text-small); line-height: 1.6; color: var(--afh-text-soft); }
+.ea-words-noted .afh-prose-list { font-size: var(--afh-text-small); line-height: 1.6; }

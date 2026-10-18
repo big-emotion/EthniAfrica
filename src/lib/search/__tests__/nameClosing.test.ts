@@ -8,11 +8,13 @@ import {
   deduceSilences,
   firstSentence,
   groupAccountsBySourceFamily,
+  sourceRowsForTimelineName,
   nameFormOf,
   namingReason,
   nextStepTargets,
   otherVoiceKinds,
 } from "@/lib/search/nameClosing";
+import type { NameHistorySource } from "@/lib/search/nameClosing";
 import { sourceKindFamily } from "@/lib/sources/sourceKindFamily";
 import { buildNameTimeline } from "@/lib/search/nameTimeline";
 import type { SearchResult } from "@/types/afrik-frontend";
@@ -62,6 +64,73 @@ describe("groupAccountsBySourceFamily — block 3, « Les sources »", () => {
       );
       expect(group.sourceCount).toBe(titles.size);
     }
+  });
+});
+
+describe("sourceRowsForTimelineName — brief 15", () => {
+  // @req REQ-198
+  it("lists each source once, links it to every backed timeline account, and preserves the approved order", () => {
+    const accounts = peul.names[0].tiles
+      .flatMap((tile) => tile.accounts)
+      .slice(0, 3);
+    const oral = {
+      title: "Récit recueilli",
+      author: "",
+      year: null,
+      url: null,
+      tier: "unverified",
+      source_kind: "oral_tradition" as const,
+      carrier: "Moussa Diallo",
+      place: "Labé",
+    } satisfies NameHistorySource;
+    const book = {
+      title: "Histoire des Peuls",
+      author: "Aminata Barry",
+      year: 1988,
+      url: "https://example.test/book",
+      tier: "referenced",
+      source_kind: "academic" as const,
+    } satisfies NameHistorySource;
+    const press = {
+      title: "Les noms du Fouta",
+      author: "Mamadou Ba",
+      year: 2001,
+      url: "https://example.test/article",
+      tier: "referenced",
+      source_kind: "press" as const,
+    } satisfies NameHistorySource;
+    const timelineName = {
+      ...peul.names[0],
+      tiles: [
+        {
+          ...peul.names[0].tiles[0],
+          accounts: [
+            { ...accounts[0], sources: [press, oral] },
+            { ...accounts[1], sources: [book, oral] },
+            { ...accounts[2], sources: [book] },
+          ],
+        },
+      ],
+    };
+
+    const rows = sourceRowsForTimelineName(timelineName);
+
+    expect(rows.map((row) => row.source.title)).toEqual([
+      "Récit recueilli",
+      "Histoire des Peuls",
+      "Les noms du Fouta",
+    ]);
+    expect(rows[0].accounts.map(({ account }) => account)).toEqual([
+      timelineName.tiles[0].accounts[0],
+      timelineName.tiles[0].accounts[1],
+    ]);
+    expect(rows[1].accounts.map(({ account }) => account)).toEqual([
+      timelineName.tiles[0].accounts[1],
+      timelineName.tiles[0].accounts[2],
+    ]);
+    expect(rows[2].accounts.map(({ account }) => account)).toEqual([
+      timelineName.tiles[0].accounts[0],
+    ]);
   });
 });
 

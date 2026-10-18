@@ -27,13 +27,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Pour le Nord-Cameroun, Gabana et Bello décrivent Hamidou comme une adaptation locale du nom arabo-islamique Hamid par ajout du suffixe « -ou ».",
-        "claimStatus": "established",
-        "sourceRefs": ["gabana-bello-2025-cameroon-anthroponyms"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -185,6 +180,26 @@
                 "source_kind": "academic",
                 "page": "p. 401",
                 "notes": "Bulletin du Comité d'études historiques et scientifiques de l'Afrique occidentale française, 1918, n° 4 (octobre-décembre), p. 393 sqq., lu le 13 octobre 2026 dans la numérisation d'Internet Archive. La troisième partie passe en revue les prénoms recueillis dans le Bâté, le Sankaran, le Toron et le Kouranko, en Haute-Guinée. L'entrée « Hamidou » dit : « De l'arabe Hamid, louable, digne d'éloges. Doublet de Amadou. » L'en-tête de la page est mal reconnu par la numérisation (« 40i ») : nous lisons 401, en comptant depuis les pages voisines portant les numéros 394, 396 et 406."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Pour le Nord-Cameroun, Gabana et Bello décrivent Hamidou comme une adaptation locale du nom arabo-islamique Hamid par ajout du suffixe « -ou ».",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Anthroponymes et dynamique identitaire dans les sociétés camerounaises : des noms locaux aux appellations importées (XVIIIe–XXe siècles)",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.researchgate.net/publication/393426204_Anthroponymes_et_dynamique_identitaire_dans_les_societes_camerounaises_Des_noms_locaux_aux_appellations_importees_XVllle-XXe_siecles",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Jean Francis Gabana et Assana Bello, contribution publiée en 2025 dans Le patrimoine culturel des populations des sites défensifs du pourtour du lac Tchad à l’épreuve de la modernité, p. 301-321. Les p. 312-314 décrivent l’adoption de noms de califes comme patronymes et l’adaptation phonologique de noms arabo-islamiques au Nord-Cameroun. Le passage donne explicitement Hamid → Hamidou comme exemple d’ajout du suffixe local « -ou »."
               }
             ]
           }

@@ -27,13 +27,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "La notice contributive classe Hamdi comme un nom de famille arabe, tiré du prénom Hamdi, et donne la graphie حمدي. Elle ne dit rien d'un pays ni du Maghreb. Faute de source plus forte propre à cette fiche, cette proposition reste non vérifiée.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["btn-surname-hamdi"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -143,6 +138,26 @@
                 "source_kind": "linguistic_reference",
                 "notes": "Oxford University Press, 2021, notice reproduite par Ancestry. Lue le 13 octobre 2026 ; le site affiche une traduction française. La notice dit : nom tiré d'un prénom dérivé de la racine arabe ḥ-m-d, « louange » ; à comparer à Hamid, Mahmood et Mohammed. Ce dictionnaire traite des noms portés en Grande-Bretagne : il ne parle ni de l'Algérie ni de la Tunisie."
               },
+              {
+                "title": "User-submitted surname Hamdi — Behind the Name",
+                "author": "Behind the Name",
+                "year": 2023,
+                "url": "https://surnames.behindthename.com/name/hamdi/submitted",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice contributive lue le 13 octobre 2026, ajoutée le 4 mai 2023 par un contributeur anonyme. Elle dit seulement que le nom de famille vient du prénom Hamdi et le range parmi les noms arabes, sans pays."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La notice contributive classe Hamdi comme un nom de famille arabe, tiré du prénom Hamdi, et donne la graphie حمدي. Elle ne dit rien d'un pays ni du Maghreb. Faute de source plus forte propre à cette fiche, cette proposition reste non vérifiée.",
+            "claimStatus": "claimed",
+            "sources": [
               {
                 "title": "User-submitted surname Hamdi — Behind the Name",
                 "author": "Behind the Name",

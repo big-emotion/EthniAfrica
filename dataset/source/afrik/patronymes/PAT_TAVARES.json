@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le Dictionary of American Family Names analyse Tavares comme un nom d'habitation tiré de lieux portugais appelés Tavares, dont le toponyme serait préromain. Elle n'établit pas le trajet d'une lignée vers le Cap-Vert.",
-        "claimStatus": "established",
-        "sourceRefs": ["dafn-tavares-2022"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -134,6 +129,26 @@
             },
             "statement": "Le nom Tavares viendrait d'un des petits lieux du Portugal appelés Tavares, au moins sept, dont le nom serait plus ancien que la conquête romaine, selon le Dictionary of American Family Names.",
             "hypothesisGroup": "origine du nom Tavares",
+            "sources": [
+              {
+                "title": "Tavares Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Patrick Hanks et al.",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/tavares?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue en anglais le 11 octobre 2026. La notice fait de Tavares un nom portugais et de l'ouest de l'Espagne, tiré du nom d'au moins sept petits lieux du Portugal appelés Tavares, un toponyme d'origine préromaine."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le Dictionary of American Family Names analyse Tavares comme un nom d'habitation tiré de lieux portugais appelés Tavares, dont le toponyme serait préromain. Elle n'établit pas le trajet d'une lignée vers le Cap-Vert.",
+            "claimStatus": "established",
             "sources": [
               {
                 "title": "Tavares Surname Meaning — Dictionary of American Family Names, 2nd edition",

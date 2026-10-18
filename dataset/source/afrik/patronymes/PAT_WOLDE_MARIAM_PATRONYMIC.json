@@ -23,18 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Wolde procède du guèze wäldä, « fils de » ; Wolde Mariam se lit « fils de Marie », composé théophore formé sur un nom marial.",
-        "claimStatus": "established",
-        "sourceRefs": ["leslau-1987-geez", "familysearch-ethiopia-naming"]
-      },
-      {
-        "claim": "Le système habesha ne comporte pas de nom de famille héréditaire : le second élément est le nom personnel du père, celui du grand-père servant à désambiguïser. Il change donc à chaque génération.",
-        "claimStatus": "established",
-        "sourceRefs": ["cultural-atlas-ethiopian-naming"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -163,8 +153,18 @@
                 "source_kind": "academic",
                 "page": "p. 612",
                 "notes": "Wiesbaden, Otto Harrassowitz, 1987 ; lu sur une copie non officielle mise en ligne sur Internet Archive. Entrée wald : « son, child, boy, young one, disciple, servant », avec la forme liée walda, comme dans walda wald, « petit-fils »."
+              },
+              {
+                "title": "Ethiopia Naming Customs",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.familysearch.org/en/wiki/Ethiopia_Naming_Customs",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Wiki généalogique de FamilySearch. Contributif : cité pour les éléments guèzes Gäbrä (« serviteur de ») et Wäldä (« fils de »), à recouper sur un dictionnaire de guèze."
               }
-            ]
+            ],
+            "claimStatus": "established"
           },
           {
             "period": {
@@ -192,6 +192,26 @@
                 "source_kind": "archive",
                 "page": "p. 51",
                 "notes": "Paris, E. Guilmoto, 1904 ; lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. L'auteur de la chronique se présente lui-même : « son nom est Walda Mâryâm », originaire de Mehouy-Qollâ-Warraw, dans le Choa. La préface du traducteur le nomme « l'alaqâ Walda-Mâryâm »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le système habesha ne comporte pas de nom de famille héréditaire : le second élément est le nom personnel du père, celui du grand-père servant à désambiguïser. Il change donc à chaque génération.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Ethiopian Culture — Naming",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://culturalatlas.sbs.com.au/ethiopian-culture/ethiopian-culture-naming",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Cultural Atlas, publié par SBS (radiodiffuseur public australien). Établit l'absence de nom de famille et la structure prénom + prénom du père, le grand-père servant à désambiguïser."
               }
             ]
           }

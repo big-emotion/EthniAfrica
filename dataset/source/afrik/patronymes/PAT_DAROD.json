@@ -31,13 +31,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Une synthèse de la Commission de l'immigration et du statut de réfugié du Canada rapporte que le clan Darod fait remonter sa filiation à un ancêtre arabe appelé Sheikh Darood, qui aurait épousé la fille d'un patriarche somali. Cette généalogie est présentée comme une tradition clanique alléguée, non comme un fait historique établi.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["darod-irb-1993"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -293,6 +288,27 @@
                 "source_kind": "archive",
                 "page": "p. 49-50",
                 "notes": "Journal of the Royal Geographical Society of London, vol. 19, 1849, p. 49-76 ; mémoire daté d'Aden le 12 mai 1848 et lu le 13 novembre 1848, par le lieutenant C. J. Cruttenden, de la marine des Indes, agent politique adjoint à Aden. Lu en fac-similé (copie JSTOR Early Journal Content) sur archive.org. Officier britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Le titre, page 49, annonce « the Southern Branches of the Family of Darrood » ; page 50 : « the four last-named tribes of Darrood ». Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une synthèse de la Commission de l'immigration et du statut de réfugié du Canada rapporte que le clan Darod fait remonter sa filiation à un ancêtre arabe appelé Sheikh Darood, qui aurait épousé la fille d'un patriarche somali. Cette généalogie est présentée comme une tradition clanique alléguée, non comme un fait historique établi.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Information on the Darod clan, its founder and subclans including the Marehan, Majerteen and Ogadeni",
+                "author": "Commission de l'immigration et du statut de réfugié du Canada",
+                "year": 1993,
+                "url": "https://www.ecoi.net/de/dokument/1108313.html",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "réponse SOM14566",
+                "notes": "Réponse à une demande d'information, publiée le 28 juin 1993 selon ecoi.net, qui la reproduit. Elle cite Ioan M. Lewis, A Modern History of Somalia (1988, p. 24) : le clan Darod « traces its descent from a noble Arabian patriarch » ; et David D. Laitin et Said S. Samatar, Somalia: Nation in Search of a State (1987, p. 8) : le clan aurait été fondé par « Sheik Darood, a Muslim saint who married a daughter of a local Somali patriach », les sous-clans darod se rattachant à lui. Lu le 18 octobre 2026."
               }
             ]
           }

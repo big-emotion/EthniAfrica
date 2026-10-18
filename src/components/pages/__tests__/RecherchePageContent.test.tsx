@@ -1530,6 +1530,11 @@ describe("RecherchePageContent feed orchestration", () => {
     expect(String(mockFicheFetch.mock.calls[0][0])).toBe(
       "/api/v2/peoples/PPL_ZULU"
     );
+    const seeAlso = screen.getByRole("button", {
+      name: new RegExp(`^${searchFeedCopy.fr.filters.seeAlso}`),
+    });
+    expect(seeAlso).toHaveAttribute("aria-expanded", "false");
+    fireEvent.click(seeAlso);
     expect(
       screen.getByRole("button", { name: searchFeedCopy.fr.filters.timeline })
     ).toHaveAttribute("aria-pressed", "true");

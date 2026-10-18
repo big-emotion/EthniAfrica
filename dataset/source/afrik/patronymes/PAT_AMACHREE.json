@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le chapitre historique publié par Kalabari Townhall affirme que le futur Amachree Ier s'appelait d'abord Amakro, reçut ensuite le nom Amakiri à Kalabari, puis que ce nom prit la forme anglaise « Amachree » après sa mort afin de distinguer le roi des nombreux Amakiri.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["kalabari-townhall-amachree"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -157,7 +152,8 @@
                 "page": "p. 3",
                 "notes": "Chapitre XI, « Summary and Conclusions », PDF de cinq pages publié par Kalabari Townhall, sans nom d'auteur ni date dans le fichier ; il reprend des positions de Brown-West et de Talbot qu'il discute. Il présente une tradition communautaire sur Amachree Ier, les formes Amakro, Amakiri et Amachree. Lu intégralement le 13 octobre 2026."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           },
           {
             "period": {

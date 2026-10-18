@@ -48,13 +48,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le jamu est un nom de clan patrilinéaire : il désigne l'appartenance à un groupe de descendance, et non une filiation individuelle au père.",
-        "claimStatus": "established",
-        "sourceRefs": ["jansen-sunjata-paradigm"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -373,6 +368,26 @@
                 "source_kind": "archive",
                 "page": "p. 279",
                 "notes": "Paris, Challamel, 1907. Administrateur colonial. Lu sur le texte numérisé d'archive.org le 11 octobre 2026 ; cité pour les formes et les classements qu'il rapporte, non pour ses théories sur les races. « Les Fofana qui semblent bien, comme l'indique M. Le Châtelier, être d'origine Soninké […] M. Le Châtelier émet l'hypothèse […] que le groupe des Fofana représenterait la survivance d'une ancienne caste commune à toute la famille Mandé ». L'ouvrage de Le Châtelier n'a pas été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le jamu est un nom de clan patrilinéaire : il désigne l'appartenance à un groupe de descendance, et non une filiation individuelle au père.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Beyond the Mali Empire — A New Paradigm for the Sunjata Epic",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2952645/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Jansen, Jan, Universiteit Leiden. Travail critique sur la transmission de l'épopée et sur le jamu comme institution sociale plutôt que comme mémoire historique ; utilisé ici pour la nature du jamu, non pour dater un ancêtre."
               }
             ]
           }

@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le Dictionary of American Family Names analyse Nwosu comme un nom personnel igbo signifiant « enfant d'une personne consacrée à une divinité ». Nkamigbo atteste le nom parmi les formes devenues moins fréquentes dans les pratiques contemporaines.",
-        "claimStatus": "established",
-        "sourceRefs": ["hanks-nwosu", "nkamigbo-2019-igbo-names"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -200,6 +195,36 @@
                 "source_kind": "academic",
                 "page": "p. 196",
                 "notes": "Londres, Seeley, Service and Co., 1921 ; lu sur l'exemplaire numérisé d'archive.org le 13 octobre 2026. Missionnaire anglican ; auteur de l'époque coloniale, cité pour ce qu'il décrit. Page 196, à propos des marchés : « the tiny dwelling places of the Osu people, i.e. those who are devoted to the alusi or ju-ju of that particular place ». Basden ne parle pas du nom Nwosu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le Dictionary of American Family Names analyse Nwosu comme un nom personnel igbo signifiant « enfant d'une personne consacrée à une divinité ». Nkamigbo atteste le nom parmi les formes devenues moins fréquentes dans les pratiques contemporaines.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Nwosu Name Meaning and Nwosu Family History at FamilySearch",
+                "author": "Patrick Hanks",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=nwosu",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Entrée Nwosu du Dictionary of American Family Names de Patrick Hanks (2003, 2006), hébergée par FamilySearch. Lu le 13 octobre 2026. Texte : « West African (Nigeria): from the Igbo personal name Nwosu, meaning 'child of a person dedicated to a god' ». Il cite aussi Chinua Achebe, Things Fall Apart : l'osu est « a person dedicated to a god, a thing set apart – a taboo forever and his children after him »."
+              },
+              {
+                "title": "The Sociolinguistics of Igbo Personal Names",
+                "author": "Linda Chinelo Nkamigbo",
+                "year": 2019,
+                "url": "https://www.nigerianjournalsonline.org/index.php/JOLLC/article/download/4155/3899/7523",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 174",
+                "notes": "Journal of Linguistics, Language and Culture, vol. 6, n° 1, 2019. Lu le 13 octobre 2026. Page 174, section « Name dropping » : « names such as Ohuabụnwa, Nweke, Nwaagwụ, Nwosu are fast disappearing », parce que les gens ajoutent chukwu à leur nom d'origine."
               }
             ]
           }

@@ -32,24 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [],
-    "historicalSyntheses": [
-      {
-        "claim": "Les Diomandé sont dits frères des Camara. Au XVIe siècle, un groupe de Malinké du clan Camara venu du haut Niger s'établit au Liberia et dans l'ouest de la Côte d'Ivoire ; dans le même temps, les Diomandé avancèrent vers l'est, s'installèrent à Touba et en chassèrent les Dan-Toura, qui occupèrent alors la région de Man.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["hga-v-wondji"]
-      },
-      {
-        "claim": "Le pays du Konyan, autour de Touba, est peuplé de clans maninka sous l'hégémonie des clans kamara et dyomande. Leur ancêtre légendaire, Feren-Kaman, aurait refoulé ou assimilé des Kpelle déjà là. L'auteur du chapitre estime que le peuplement du Konyan et du Mau, à Touba, doit remonter au moins à la fin du XVe siècle pour que l'invasion mane soit intelligible.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["hga-iv-person"]
-      },
-      {
-        "claim": "Dans un passage sur les mouvements des groupes jula, le chapitre note, sans les dire jula, que les Diomandé s'installaient dans le Centre-Ouest de la Côte d'Ivoire, tandis que les Wattara faisaient de Boron et de Mankono des carrefours commerciaux.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["hga-v-izard-ki-zerbo"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -104,10 +88,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Aucun sens du nom Diomandé n'est établi dans les sources que nous avons consultées : elles disent où le clan s'est installé et à quel autre clan il est apparenté, pas ce que le mot veut dire. Les dates et les récits ci-dessus sont ceux de leurs auteurs, aucun n'est retenu comme le bon. Le peuple Mahouka a son propre récit de l'arrivée des Diomandé, dans sa fiche ; il n'est pas repris ici."
-    },
     {
       "fieldPath": "alliances",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
@@ -351,6 +331,66 @@
                 "source_kind": "archive",
                 "page": "p. 310",
                 "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Section « Les Diomandé » : « D'après leurs légendes ces Diomandé seraient fils d'un chef Kamara et d'une Masaré captive du Dioma, appelée Ma Dioma. Mais Diomandé veut dire « homme de Dioma » et non « fils de Dioma » » ; « Certains les font venir du Fouta Dialo : Ce seraient des Dialonké chassés par la conquête des métis foula ». L'auteur ne nomme pas ses informateurs."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Les Diomandé sont dits frères des Camara. Au XVIe siècle, un groupe de Malinké du clan Camara venu du haut Niger s'établit au Liberia et dans l'ouest de la Côte d'Ivoire ; dans le même temps, les Diomandé avancèrent vers l'est, s'installèrent à Touba et en chassèrent les Dan-Toura, qui occupèrent alors la région de Man.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 13 : Les États et les cultures de la côte de haute Guinée",
+                "author": "Christophe Wondji",
+                "year": null,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, dir. B. A. Ogot, 1999 ; chapitre de C. Wondji. Page imprimée 421 : au XVIe siècle, les Malinké du clan Camara s'établissent au Liberia et dans l'ouest de la Côte d'Ivoire ; les Diomandé, frères des Camara, progressent vers l'est, s'installent à Touba et en chassent les Dan-Toura, qui occupent le secteur de Man. Le chapitre ne donne aucun sens au nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le pays du Konyan, autour de Touba, est peuplé de clans maninka sous l'hégémonie des clans kamara et dyomande. Leur ancêtre légendaire, Feren-Kaman, aurait refoulé ou assimilé des Kpelle déjà là. L'auteur du chapitre estime que le peuplement du Konyan et du Mau, à Touba, doit remonter au moins à la fin du XVe siècle pour que l'invasion mane soit intelligible.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 12 : Les peuples côtiers, premiers contacts avec les Portugais, de la Casamance aux lagunes ivoiriennes",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, 1985 ; chapitre d'Yves Person. Page imprimée 345 : le Konyan peuplé de clans maninka sous l'hégémonie des clans kamara et dyomande, dont l'ancêtre légendaire est Feren-Kaman, qui a refoulé ou assimilé des Kpelle ; le peuplement du Konyan et du Mau, à Touba, doit remonter au moins à la fin du XVe siècle. Le chapitre ne donne aucun sens au nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans un passage sur les mouvements des groupes jula, le chapitre note, sans les dire jula, que les Diomandé s'installaient dans le Centre-Ouest de la Côte d'Ivoire, tandis que les Wattara faisaient de Boron et de Mankono des carrefours commerciaux.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 12 : Du Niger à la Volta",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, dir. B. A. Ogot, 1999 ; chapitre de M. Izard et J. Ki-Zerbo. Page imprimée 399, dans un passage sur les groupes jula : les Diomandé s'installent dans le Centre-Ouest, les Wattara font de Boron et de Mankono des carrefours commerciaux. Le chapitre ne donne aucun sens au nom."
               }
             ]
           }

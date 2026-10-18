@@ -26,18 +26,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "En yakoma, Kolingba est analysé comme un composé de koli, terme masculin ou marital dans l'analyse de l'auteur, et ngba, « buffle » ; le lexique le glose « buffle mâle ».",
-        "claimStatus": "established",
-        "sourceRefs": ["gnikoli-2015-yakoma-onomastics"]
-      },
-      {
-        "claim": "L'étude traite Kolingba parmi les anthroponymes individuels yakoma. Dans ce système, le nom du nouveau-né est choisi par les parents de la lignée paternelle ou par une personne à qui ce droit est délégué, et non transmis automatiquement comme nom de clan.",
-        "claimStatus": "established",
-        "sourceRefs": ["gnikoli-2015-yakoma-onomastics"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -114,5 +104,60 @@
       "fieldPath": "homonyms",
       "reason": "Le lexique yakoma, les catalogues et les recherches exactes sur la graphie n'ont livré aucun homonyme doté d'une origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Les sources réunies dans ce dossier racontent l’histoire du nom Kolingba.",
+    "originExplained": true,
+    "names": [
+      {
+        "nameText": "Kolingba",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "En yakoma, Kolingba est analysé comme un composé de koli, terme masculin ou marital dans l'analyse de l'auteur, et ngba, « buffle » ; le lexique le glose « buffle mâle ».",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Étude onomastique du yakoma de Centrafrique : analyse morphosyntaxique et ébauche d'un dictionnaire des noms propres",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://fr.scribd.com/document/967073823/Etude-Onomastique-Yakoma-Gnikoli-2015",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Vincent Gnikoli, mémoire de Master 2, université de Bangui, 2014-2015, issu des archives Language and Culture de SIL et consulté ici dans son miroir Scribd. Les pages 66 et 279 analysent kôli + ngbâ et glossent Kolingba « buffle mâle » ; les pages 78-84 décrivent l'attribution individuelle du nom par la parenté paternelle."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'étude traite Kolingba parmi les anthroponymes individuels yakoma. Dans ce système, le nom du nouveau-né est choisi par les parents de la lignée paternelle ou par une personne à qui ce droit est délégué, et non transmis automatiquement comme nom de clan.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Étude onomastique du yakoma de Centrafrique : analyse morphosyntaxique et ébauche d'un dictionnaire des noms propres",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://fr.scribd.com/document/967073823/Etude-Onomastique-Yakoma-Gnikoli-2015",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Vincent Gnikoli, mémoire de Master 2, université de Bangui, 2014-2015, issu des archives Language and Culture de SIL et consulté ici dans son miroir Scribd. Les pages 66 et 279 analysent kôli + ngbâ et glossent Kolingba « buffle mâle » ; les pages 78-84 décrivent l'attribution individuelle du nom par la parenté paternelle."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

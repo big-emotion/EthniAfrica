@@ -31,13 +31,8 @@
   "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Un portrait de 2010 décrit António Indjai comme d’origine balante mais précise que son patronyme est mandingue ; l’association au peuple balante atteste donc un porteur et ne permet pas de conclure à une origine balante du nom.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["dn-2010-antonio-indjai"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -101,5 +96,40 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Aucune des sources consacrées à António Injai ne dit si le patronyme désigne un lignage, un clan, une maison ou une autre unité sociale."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Les sources réunies dans ce dossier racontent l’histoire du nom Injai.",
+    "originExplained": true,
+    "names": [
+      {
+        "nameText": "Injai",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Un portrait de 2010 décrit António Indjai comme d’origine balante mais précise que son patronyme est mandingue ; l’association au peuple balante atteste donc un porteur et ne permet pas de conclure à une origine balante du nom.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "O novo chefe dos militares guineenses",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.dn.pt/arquivo/diario-de-noticias/o-novo-chefe-dos-militares-guineenses.html",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Brève du Diário de Notícias, 4 avril 2010. Elle donne António Indjai comme d’origine balante et affirme que le patronyme est mandingue. Faute de référence onomastique dans l’article, cette attribution d’origine reste au niveau non vérifié."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

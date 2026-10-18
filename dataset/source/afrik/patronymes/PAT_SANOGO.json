@@ -22,20 +22,9 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Dans son étude de la société sénoufo de Côte d'Ivoire, Navigué Félicien Coulibaly décrit l'influence mandé sur les noms et donne Sanogo parmi les équivalents mandé du nom sénoufo Sékongo. La fiche documente donc un nom adopté ou mis en correspondance dans ce contexte, sans postuler que Sanogo serait lui-même d'origine linguistique sénoufo.",
-        "claimStatus": "established",
-        "sourceRefs": ["coulibaly-2023-missionnaires-senoufo"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le répertoire provisoire burkinabè propose pour Sanogo les sens « qui travaille l'or », « homme simple » ou « bijoutier ». Ces gloses hétérogènes ne sont accompagnées d'aucune analyse linguistique et restent contestées.",
-        "claimStatus": "contested",
-        "sourceRefs": ["burkina-provisional-patronyme-register"]
-      }
-    ]
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -162,7 +151,8 @@
                 "page": "p. 55",
                 "notes": "Thèse de doctorat d'histoire, Université de Cocody-Abidjan, année académique 2008-2009, sous la direction de Tiona Ouattara ; mise en ligne par le CODESRIA le 27 juin 2023, DOI 10.57054/codesria.pub.1440.3133. Le tableau no 2, p. 55, donne Sékongo comme nom sénoufo, l'écureuil comme éponyme et Kamara, Traoré et Sanogo comme équivalents mandé, dans un développement sur l'influence mandé. Lu le 12 octobre 2026."
               }
-            ]
+            ],
+            "claimStatus": "established"
           },
           {
             "period": {
@@ -239,6 +229,27 @@
             "era": "modern",
             "statement": "Le nom Sanogo voudrait dire « qui travaille l'or », « homme simple » ou « bijoutier », et viendrait du Mali, selon le projet de répertoire des patronymes du Burkina Faso.",
             "hypothesisGroup": "origine du nom Sanogo",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 179-180",
+                "notes": "Document de travail daté de mai 2025 et marqué « version provisoire », sans validation finale visible, lu sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle de ce répertoire n'a été trouvée. Le document recueille des traditions sans appareil critique : ses explications restent des propositions. Notice SANOGO : nom « venu du Mali », porté par des locuteurs du dioula, du tusian, du sénoufo et du marka. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le répertoire provisoire burkinabè propose pour Sanogo les sens « qui travaille l'or », « homme simple » ou « bijoutier ». Ces gloses hétérogènes ne sont accompagnées d'aucune analyse linguistique et restent contestées.",
+            "claimStatus": "contested",
             "sources": [
               {
                 "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",

@@ -40,20 +40,9 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Tauxier rapporte chez les Pallakha qu'un ancêtre aurait fait tomber un couteau menaçant le groupe pendant une descente mythique du ciel, ce qui lui aurait valu le nom Soro, « brave ». Ce récit colonialement transcrit n'est pas attribué à un informateur nommé et ne doit pas être généralisé aux autres sous-groupes sénoufo.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["tauxier-2003-etats-kong"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "Les interprétations consultées ne se réduisent pas à une seule glose : Tauxier consigne Soro au sens de « brave », puis discute le rapprochement avec sora/sorao, « léopard » ou « panthère », d'où aurait pu dériver l'idée de force ou de courage ; le tableau de Coulibaly associe aussi Soro/Horo à plusieurs éponymes animaux selon les régions. L'étymologie reste donc contestée et localisée.",
-        "claimStatus": "contested",
-        "sourceRefs": ["coulibaly-2019-noms-senoufo", "tauxier-2003-etats-kong"]
-      }
-    ]
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -342,6 +331,58 @@
                 "source_kind": "academic",
                 "page": "p. 164",
                 "notes": "Manuscrit rédigé par Louis Tauxier, administrateur colonial, entre novembre 1921 et août 1922, publié pour la première fois en 2003 par Karthala avec une introduction d'Edmond Bernus. Lu dans le PDF du dépôt Horizon de l'IRD le 11 octobre 2026. Page 164 : chez les Tafiré du Koumbala, « Tuo, Soro, Silivué, Sékou, Yè (Yèo) et Sula » sont donnés comme des noms de clan « à peu près identiques chez tous les Sénoufo » ; « Soro » équivaudrait au dioula « Kouloubali »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Tauxier rapporte chez les Pallakha qu'un ancêtre aurait fait tomber un couteau menaçant le groupe pendant une descente mythique du ciel, ce qui lui aurait valu le nom Soro, « brave ». Ce récit colonialement transcrit n'est pas attribué à un informateur nommé et ne doit pas être généralisé aux autres sous-groupes sénoufo.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Les États de Kong (Côte d'Ivoire)",
+                "author": "Louis Tauxier",
+                "year": 2003,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/2022-12/010075008.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 203-204",
+                "notes": "Manuscrit rédigé par Louis Tauxier, administrateur colonial, entre novembre 1921 et août 1922, publié pour la première fois en 2003 par Karthala avec une introduction d'Edmond Bernus. Lu dans le PDF du dépôt Horizon de l'IRD le 11 octobre 2026. Pages 203-204 : chez les Pallakha, « Solo ou Soro (qui correspond à Kouloubali) » ; « Solo ou Soro veut dire brave », et l'auteur rapporte le récit pallakha du couteau renversé pendant la descente du ciel, sans nommer qui le lui a dit."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Les interprétations consultées ne se réduisent pas à une seule glose : Tauxier consigne Soro au sens de « brave », puis discute le rapprochement avec sora/sorao, « léopard » ou « panthère », d'où aurait pu dériver l'idée de force ou de courage ; le tableau de Coulibaly associe aussi Soro/Horo à plusieurs éponymes animaux selon les régions. L'étymologie reste donc contestée et localisée.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "La perception des Sénoufo de Côte d'Ivoire de leurs noms traditionnels",
+                "author": "Yalamoussa Coulibaly",
+                "year": 2019,
+                "url": "https://www.histoire-univdaloa.net/wp-content/uploads/2019/10/RISH-JUIN-2019-DEF.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 39",
+                "notes": "Revue ivoirienne des sciences historiques, no 5, juin 2019, p. 37-44. Le lien d'origine sur le site de la revue ne répond plus (erreur 404 le 11 octobre 2026) ; le numéro a été lu dans la copie conservée par la Wayback Machine d'Internet Archive le 27 novembre 2022 (web.archive.org/web/20221127203320/https://www.histoire-univdaloa.net/wp-content/uploads/2019/10/RISH-JUIN-2019-DEF.pdf). Page 39 : à la naissance, l'individu appartient « soit au Tienne de son père ou encore à celui de sa mère » ; « le Tienne de la mère reste toujours le plus important ». Le tienne, ou fè, est le nom de clan."
+              },
+              {
+                "title": "Les États de Kong (Côte d'Ivoire)",
+                "author": "Louis Tauxier",
+                "year": 2003,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/2022-12/010075008.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 203-204",
+                "notes": "Manuscrit rédigé par Louis Tauxier, administrateur colonial, entre novembre 1921 et août 1922, publié pour la première fois en 2003 par Karthala avec une introduction d'Edmond Bernus. Lu dans le PDF du dépôt Horizon de l'IRD le 11 octobre 2026. Pages 203-204 : chez les Pallakha, « Solo ou Soro (qui correspond à Kouloubali) » ; « Solo ou Soro veut dire brave », et l'auteur rapporte le récit pallakha du couteau renversé pendant la descente du ciel, sans nommer qui le lui a dit."
               }
             ]
           }

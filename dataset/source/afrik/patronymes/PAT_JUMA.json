@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une ressource onomastique communautaire classe Juma comme prénom arabe et swahili signifiant « vendredi » ou « semaine » et relie le patronyme swahili au prénom. Faute de source académique accessible établissant cette dérivation pour les lignées tanzaniennes, l'analyse reste revendiquée et non établie.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["behind-name-juma"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -170,6 +165,26 @@
                 "source_kind": "archive",
                 "page": "p. 70 ; p. 135",
                 "notes": "Édition de 1860 en un volume ; exemplaire de la bibliothèque de la Brigham Young University, numérisé sur archive.org. Page 70, vue en image : l'expédition envoyée par le sayyid « under command of Juma Mfumbi, the late, and Bori, the present, Diwan of Saadani ». Page 135 : « one Abdullah bin Jumah ». Voyageur britannique, cité pour les formes qu'il écrit. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une ressource onomastique communautaire classe Juma comme prénom arabe et swahili signifiant « vendredi » ou « semaine » et relie le patronyme swahili au prénom. Faute de source académique accessible établissant cette dérivation pour les lignées tanzaniennes, l'analyse reste revendiquée et non établie.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Juma",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/juma",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Ressource onomastique communautaire, relue le 14 octobre 2026 : usage arabe, pachto et swahili ; sens « vendredi » ou « semaine » en arabe ; renvoi à un patronyme swahili descendant du prénom. Source faible, gardée à son niveau « unverified » et attribuée."
               }
             ]
           }

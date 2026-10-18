@@ -32,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le Dictionary of American Family Names classe Évora comme un nom d'habitation portugais tiré de la ville d'Évora, dans l'Alentejo. La notice n'autorise pas à déduire que chaque lignée capverdienne vient directement de cette ville.",
-        "claimStatus": "established",
-        "sourceRefs": ["dafn-evora-2022"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -101,5 +96,40 @@
       "fieldPath": "homonyms",
       "reason": "la notice exacte du Dictionary of American Family Names, les catalogues bibliographiques et les recherches « Évora » associées au Cap-Vert n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Les sources réunies dans ce dossier racontent l’histoire du nom Évora.",
+    "originExplained": true,
+    "names": [
+      {
+        "nameText": "Évora",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le Dictionary of American Family Names classe Évora comme un nom d'habitation portugais tiré de la ville d'Évora, dans l'Alentejo. La notice n'autorise pas à déduire que chaque lignée capverdienne vient directement de cette ville.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Évora Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.ancestry.com/last-name-meaning/evora?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Patrick Hanks et al., Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry. La notice est utilisée pour la formation toponymique, non comme preuve d'une migration directe depuis Évora."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

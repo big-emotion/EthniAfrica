@@ -22,13 +22,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Une chronique de Bailundo écrite en umbundu au début du XXe siècle donne Kalandula comme le nom du quinzième roi de Bailundo ; elle ne dit pas ce que veut dire ce nom.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["dulley-chronicles-of-bailundo-2021"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -60,10 +55,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "La chronique de Bailundo ne dit pas ce que veut dire le nom Kalandula ni d'où il vient, et nous n'avons pas trouvé d'autre source sur son origine."
-    },
     {
       "fieldPath": "alliances",
       "reason": "Les sources consultées, dont la chronique de Bailundo publiée par Iracema Dulley, ne décrivent pas de pacte entre Kalandula et un autre nom présenté ici."
@@ -146,6 +137,27 @@
                 "source_kind": "academic",
                 "page": "p. 713-714, 730",
                 "notes": "Africa 91(5), 2021, p. 713-741, en accès libre chez Cambridge University Press ; lu le 18 octobre 2026 dans le PDF de l'éditeur. L'article présente et traduit une chronique de Bailundo écrite en umbundu par des missionnaires congrégationalistes nord-américains entre 1903 et les années 1930 ; le manuscrit ne dit pas qui l'a racontée ni qui l'a notée (p. 713-714). Page 714 : la troisième partie du manuscrit porte, dans son index, le titre « The Chronicles of the Kings of Bailundu from Ekuikui II to Kalandula ». Page 730 : la liste des rois de Bailundo s'ouvre sur « 1. Ekuikui the Elder I – The insect that cannot be eaten by the bird » ; on y lit aussi « 11. Ekuikui II » et « 15. Kalandula ». Page 717 : cette liste, « which one supposes to be based on oral tradition », ne donne pas de dates."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une chronique de Bailundo écrite en umbundu au début du XXe siècle donne Kalandula comme le nom du quinzième roi de Bailundo ; elle ne dit pas ce que veut dire ce nom.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Chronicles of Bailundo: a fragmentary account in Umbundu of life before and after Portuguese colonial rule",
+                "author": "Iracema Dulley",
+                "year": 2021,
+                "url": "https://doi.org/10.1017/S0001972021000553",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 730, 735",
+                "notes": "Africa 91(5), 2021, p. 713-741, en accès libre chez Cambridge University Press ; lu le 18 octobre 2026 dans le PDF de l'éditeur. L'article présente et traduit une chronique de Bailundo écrite en umbundu par des missionnaires congrégationalistes nord-américains entre 1903 et les années 1930 ; le manuscrit ne dit pas qui l'a racontée ni qui l'a notée (p. 713-714). Page 730, liste des rois : « 15. Kalandula ». Page 735, chronique : « In the kingdom of Kalandula there was no peace. This is when the war against the whites began with King Kalandula and his Epalanga, Mutu-Yakevela ». La chronique ne date pas son règne."
               }
             ]
           }

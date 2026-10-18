@@ -11,21 +11,36 @@
     {
       "spelling": "Maïga",
       "attestations": [
-        { "countryId": "MLI", "sourceRefs": ["massing-2004-maiga"] },
-        { "countryId": "NER", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["massing-2004-maiga"]
+        },
+        {
+          "countryId": "NER",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     },
     {
       "spelling": "Maiga",
       "attestations": [
-        { "countryId": "MLI", "sourceRefs": ["afrik-candidate-queue"] },
-        { "countryId": "NER", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["afrik-candidate-queue"]
+        },
+        {
+          "countryId": "NER",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     },
     {
       "spelling": "Maega",
       "attestations": [
-        { "countryId": "BFA", "sourceRefs": ["guillaud-1993-maega"] }
+        {
+          "countryId": "BFA",
+          "sourceRefs": ["guillaud-1993-maega"]
+        }
       ]
     }
   ],
@@ -33,13 +48,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Massing rapporte un récit du Tarikh al-Fattash dans lequel une captive nommée Meinga devient l'ancêtre des Maïga, qualifiés de clan royal songhay ; il en propose une lecture wangara. La filiation est enregistrée comme un récit chronique revendiqué, non comme un fait généalogique établi.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["massing-2004-maiga"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -216,7 +226,8 @@
                 "page": "p. 888",
                 "notes": "Cahiers d'études africaines, n° 176, 2004, p. 887-922. Lu le 11 octobre 2026 dans le PDF d'OpenEdition. Page 888 : d'après le Tarikh el-Fettach, l'une des esclaves du plus jeune fils de Taras, « called Meinga became the ancestor of the Maïga, the Songhay royal clan ». La chronique elle-même n'a pas été lue."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           },
           {
             "period": {

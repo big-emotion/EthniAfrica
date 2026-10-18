@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -54,10 +55,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "la recherche web et bibliographique combinant « Tshisekedi », « Luba », « Tshiluba », « surname », « clan », « etymology », « transmission » et « obituary », ainsi que la consultation directe de « Tshisekedi Surname Origin, Meaning & Last Name History » n'ont livré aucune tradition attribuée, chronique ou étude linguistique établissant l'origine de Tshisekedi. Les rapprochements fondés uniquement sur la géographie, une biographie ou une contribution non référencée ont été écartés."
-    },
     {
       "fieldPath": "nameSystem",
       "reason": "Les sources lues donnent Tshisekedi comme le nom d'un village des Lulua en 1937, puis comme le nom d'une personne en 1943 ; aucune n'en fait un nom de clan. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant. La fiche reste donc parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."

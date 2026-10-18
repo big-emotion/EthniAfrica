@@ -22,13 +22,8 @@
   "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Dupraz et Simson citent Coker parmi les patronymes krio courants qui correspondent aux noms de colons européens connus. Ils distinguent ce cas des noms européens adoptés ultérieurement par des Africains libérés ; l'article ne désigne toutefois pas un fondateur individuel de la lignée Coker.",
-        "claimStatus": "established",
-        "sourceRefs": ["dupraz-simson-2024-krio"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -158,6 +153,26 @@
                 "source_kind": "academic",
                 "page": "p. 9 ; p. 15",
                 "notes": "African Economic History Network, mars 2023, document de travail non relu par des pairs, selon sa page de garde ; la version publiée en 2024 dans le Journal of Development Economics n'a pas été lue. Lu dans le PDF intégral le 18 octobre 2026. Page 9 : les Krio portent pour la plupart des noms anglo-saxons associés aux premiers colons venus des Amériques ou aux administrateurs et colons britanniques, « such as Cole, Davies, Johnson and Williams ». Page 15 : chez les Krio, le nom passe du père aux enfants ; « The liberated Africans in contrast, adopted European names on or after arrival. Many adopted the names of employers, foster families, or administrators. Some of the most common Krio surnames are names of known European settlers (Cole, Coker). »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dupraz et Simson citent Coker parmi les patronymes krio courants qui correspondent aux noms de colons européens connus. Ils distinguent ce cas des noms européens adoptés ultérieurement par des Africains libérés ; l'article ne désigne toutefois pas un fondateur individuel de la lignée Coker.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Elite persistence in Sierra Leone: What can names tell us?",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.history.ox.ac.uk/publication/1532813/ora-hyrax",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Yannick Dupraz et Rebecca Simson, Journal of Development Economics 171 (2024), DOI 10.1016/j.jdeveco.2024.103333. La section sur les pratiques de dénomination indique que les patronymes krio passent du père aux enfants et cite Cole et Coker parmi les noms de colons européens connus. La page Oxford et le texte de l'article ont été contrôlés."
               }
             ]
           }

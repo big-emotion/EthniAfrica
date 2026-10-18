@@ -22,13 +22,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "La liste des sultans d'Aussa emploie Hanfare à différentes positions dans des chaînes de noms personnelles, tandis que l'article nomme explicitement Aydahiso comme clan ; Hanfare est donc traité ici comme nom personnel et élément patronymique, non comme nom de clan.",
-        "claimStatus": "established",
-        "sourceRefs": ["hanfare-hailu-jemere-2017"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -150,6 +145,27 @@
                 "source_kind": "archive",
                 "page": "p. 189, n° 10040",
                 "notes": "Leipzig, Duncker & Humblot, 1890. Lu le 13 octobre 2026 dans le texte océrisé de la numérisation d'archive.org. Sous « Aethiopien », le n° 10040 reproduit en italien le traité d'amitié entre les autorités italiennes d'Assab et « il sultano Mohamed Anfari », signé à Hadéle-Gubo le 15 mars 1883 et scellé à Ankober le 22 mai 1883 au nom du roi du Choa. Le texte est tiré des livres verts italiens de 1889 et 1890. La page exacte est déduite de la pagination des pages voisines du texte océrisé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La liste des sultans d'Aussa emploie Hanfare à différentes positions dans des chaînes de noms personnelles, tandis que l'article nomme explicitement Aydahiso comme clan ; Hanfare est donc traité ici comme nom personnel et élément patronymique, non comme nom de clan.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Recalling the history of Sultan Mohammed Hanfare “Illalta”: Was he a democratic Sultan of Aussa in Afar, Ethiopia?",
+                "author": "Berihun Kassa Hailu et Jemal Abebe Jemere",
+                "year": 2017,
+                "url": "https://academicjournals.org/journal/AJHC/article-full-text/54E525066800",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 72-77",
+                "notes": "African Journal of History and Culture 9(9), 31 octobre 2017, DOI 10.5897/AJHC2017.0370. Lu en texte intégral le 13 octobre 2026 ; le texte n'a pas de numéros de page internes. Il cite le sultan Mohammed Hanfare « Illalta » (1861-1898), son neveu Mohammed Aydahis Hanfare (1898-1900) et Alimirah Mohammed Hanfare, fils aîné du premier. Il appelle Aydahiso un nom de clan, de la tribu mudaito (d'après Abir, 1968), et dit que « Illalta » veut dire « rivière qui coule ». Il ne donne ni sens ni origine pour Hanfare."
               }
             ]
           }

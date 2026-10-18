@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'étude d'Otiso identifie Njoroge comme la forme kikuyu à partir de laquelle l'ekegusii a créé la forme empruntée Nchoroke, en substituant notamment l'affriquée et la fricative vélaires. Cette comparaison établit l'appartenance linguistique de la forme, mais pas son étymologie lexicale.",
-        "claimStatus": "established",
-        "sourceRefs": ["otiso-2017-njoroge"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -181,6 +176,27 @@
                 "source_kind": "archive",
                 "page": "p. 15",
                 "notes": "Londres, H.M. Stationery Office, mai 1922, présenté au Parlement. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; page vue en image. Page 15, « Enclosure 3 in No. 2 », enquête judiciaire n° 4 de 1922 : la liste des vingt et un morts compte « 15 Njerogi wa Kitcheski ». La forme n'est pas Njoroge ; rien dans le texte ne dit qu'elle en est une écriture."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'étude d'Otiso identifie Njoroge comme la forme kikuyu à partir de laquelle l'ekegusii a créé la forme empruntée Nchoroke, en substituant notamment l'affriquée et la fricative vélaires. Cette comparaison établit l'appartenance linguistique de la forme, mais pas son étymologie lexicale.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Gender identity through the Ekegusii naming system",
+                "author": "Zipporah K. Otiso",
+                "year": 2017,
+                "url": "https://erepository.uonbi.ac.ke/server/api/core/bitstreams/9cd30361-434c-4fe3-bdcf-495e7fb30e62/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 77",
+                "notes": "Article publié dans The University of Nairobi Journal of Language and Linguistics, volume 6, 2017, p. 64-82. Lu le 13 octobre 2026 dans le dépôt de l'université de Nairobi. Page 77 : le nom kikuyu Njoroge devient Nchoroke ; « the voiced palato-alveolar affricate /ndʒ/ […] is replaced with the voiceless palato-alveolar affricate /ntʃ/ », et la fricative vélaire sonore est remplacée par /k/."
               }
             ]
           }

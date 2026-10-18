@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'étude onomastique consultée classe Esono parmi les noms fang considérés comme originaux, pour lesquels elle ne trouve ni dérivation ni composition circonstancielle ; la glose populaire « né le dimanche » repérée sur un site sans références n'est pas retenue.",
-        "claimStatus": "established",
-        "sourceRefs": ["scielo-fang-esono-2023"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -227,6 +222,27 @@
                 "source_kind": "academic",
                 "page": "p. 9",
                 "notes": "Berlin, Ernst Wasmuth, 1913. Lu le 13 octobre 2026 sur l'exemplaire numérisé d'Internet Archive (Museum of African Art, Washington). Légende de la figure 5, page 9 : « Essun (Fam. Omwang), Span. Guinea »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'étude onomastique consultée classe Esono parmi les noms fang considérés comme originaux, pour lesquels elle ne trouve ni dérivation ni composition circonstancielle ; la glose populaire « né le dimanche » repérée sur un site sans références n'est pas retenue.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "La cultura para el reconocimiento de la identidad: caso de la cultura fang de Guinea Ecuatorial",
+                "author": "Bonifacio Nguema Obiang-Mikue",
+                "year": 2023,
+                "url": "https://doi.org/10.29166/catedra.v6i1.4282",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 178-179",
+                "notes": "Article de Revista Cátedra 6(1), 2023, pp. 171-186, DOI 10.29166/catedra.v6i1.4282. Lu le 13 octobre 2026 dans le PDF en espagnol. Page 178 : l'auteur cite Rosendo Ela Nsue Mibui (2005, p. 92) pour dire que le nom du père devient le nom de famille commun de tous ses fils et filles. Page 179 : il range Esono parmi les noms fang réservés aux hommes, et cite Nsue Mibui (2005, p. 102) : le nom d'un père qui laisse beaucoup de descendants, répété chez chacun d'eux, se perpétue dans le temps et dans l'espace. Nous n'avons pas lu l'ouvrage de Nsue Mibui."
               }
             ]
           }

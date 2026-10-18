@@ -26,13 +26,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Une étude consacrée aux femmes chewa et yao du Malawi classe Banda parmi les noms de clan chewa et le glose « ceux qui foulent l'herbe sous leurs pieds » ; elle associe aussi ce clan au sol et à la capacité de faire venir la pluie.",
-        "claimStatus": "established",
-        "sourceRefs": ["mbalaka-chewa-yawo-2019"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -268,6 +263,27 @@
                 "source_kind": "academic",
                 "page": "p. 40",
                 "notes": "Woodbridge, James Currey, 2020. Lu sur une copie non officielle en ligne. Page 11 : le livre de Samuel Josia Ntara, Mbiri ya Achewa, paraît d'abord en 1944 ou en 1945 ; l'auteur le cite dans sa traduction anglaise de 1973. Page 37 : l'auteur cite en entier la légende recueillie par Ntara (Ntara 1973, p. 6) : ceux qui avaient dormi au pied d'une colline, et avaient dû aplanir l'herbe, furent appelés Banda, « ceux qui foulent l'herbe sous leurs pieds », et ceux qui avaient dormi au sommet Phiri. Page 38 : une autre légende, rapportée par Ian Linden en 1972 (Linden 1972, p. 14), fait des Phiri ceux qui passèrent par les montagnes et des Banda ceux qui suivirent les vallées ; Mangadzi, prêtresse qui appelle la pluie, porte le titre de Makewana et dirige le clan Banda ; les petits clans Mbewe et Mwale sont comptés avec les Banda parmi ceux qui seraient arrivés avant les Phiri. Page 40 : Schoffeleers place l'arrivée des Banda entre 1200 et 1400. Page 41 : Marwick voit chez les Banda les gardiens du rituel de la pluie. Nous n'avons lu ni Ntara, ni Linden, ni Schoffeleers. Relu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une étude consacrée aux femmes chewa et yao du Malawi classe Banda parmi les noms de clan chewa et le glose « ceux qui foulent l'herbe sous leurs pieds » ; elle associe aussi ce clan au sol et à la capacité de faire venir la pluie.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Gender, Religion and Migration: A Study of Malawian Chewa and Yawo Muslim Women in Durban, 1994–2017",
+                "author": "Joseph Y. Mbalaka",
+                "year": null,
+                "url": "https://researchspace.ukzn.ac.za/bitstreams/181a927d-f2c5-41ff-8677-9fb4e2be0244/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 47",
+                "notes": "Thèse de doctorat de Joseph Y. Mbalaka, University of KwaZulu-Natal, lue en texte intégral ; elle cite des sources de 2022 et la page de l'université annonçant le diplômé date de septembre 2023, alors que le dépôt porte 2017, année qui borne la période étudiée. Pages citées selon la pagination de la thèse (page 47 = page 61 du PDF ; page 49 = page 63 ; page 50 = page 64). Page 47 : Banda est « possiblement des plus vieux groupes », étroitement lié au sol et reconnu capable de faire venir la pluie, d'après Pike ; la tribu compte quatre clans, Banda, Phiri, Nkhoma et Mwale. Page 49 : noms de clan Phiri (colline), Banda (« ceux qui foulent l'herbe sous leurs pieds »), Mwale (de kumwalira, « mourir »), Linde, Kwenda, Mbewe, Mphandwe (« un éclat du clan Banda »), d'après Ntara 1973, p. 6-7 ; les Yawo, venus du Mozambique au XIXe siècle, ont les mêmes noms de clan, par exemple le chef Malemia, du clan amwale, d'après Mitchell 1956. Page 50 : une Chewa du clan Mwale et une Yawo du clan Amwale se reconnaissent parentes. Nous n'avons lu ni Ntara, ni Pike, ni Mitchell. Lu le 12 octobre 2026."
               }
             ]
           }

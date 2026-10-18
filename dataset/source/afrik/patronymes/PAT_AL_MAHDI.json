@@ -40,13 +40,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "La thèse consultée décrit le clan al-Mahdi et rattache son nom à la proclamation de Muhammad Ahmad Abdallah comme Mahdi, le « Guide attendu ». Il s’agit de l’histoire de ce clan soudanais, non d’une origine universelle de la forme Mahdi.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["durham-al-mahdi-clan"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -257,6 +252,26 @@
                 "source_kind": "archive",
                 "page": "p. 14",
                 "notes": "Londres et New York, Macmillan, 1891. Lu sur l'exemplaire numérisé d'archive.org le 18 octobre 2026. Page 14 (en-tête « History of the Sudan », livre I), note : « The Mahdi signifies \"the guided\" in the hadaya or true way of salvation, hence \"the guide.\" » ; la note cite Ibn Khaldoun (« ob. 1406 A.D. in Cairo ») : « At all times the Moslems have believed that towards the end of the world a man of the Prophet's family would appear to sustain the true religion »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La thèse consultée décrit le clan al-Mahdi et rattache son nom à la proclamation de Muhammad Ahmad Abdallah comme Mahdi, le « Guide attendu ». Il s’agit de l’histoire de ce clan soudanais, non d’une origine universelle de la forme Mahdi.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Political Islam in Sudan — Durham University",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://durham-repository.worktribe.com/OutputFile/1699796",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Thèse déposée à Durham et consultée le 2 septembre 2026. Elle explique la formation du nom du clan al-Mahdi à partir de la revendication mahdique de Muhammad Ahmad Abdallah ; la portée est limitée à ce clan soudanais."
               }
             ]
           }

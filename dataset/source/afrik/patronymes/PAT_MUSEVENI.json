@@ -22,13 +22,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Un profil institutionnel de Makerere University Business School rapporte que Museveni signifie « fils d’un homme du Septième », en référence au Seventh Battalion des King’s African Rifles dans lequel son père aurait servi pendant la Seconde Guerre mondiale. Cette explication biographique est conservée comme affirmation attribuée, non comme reconstruction linguistique généralisable.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["mubs-museveni-profile"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -147,6 +142,26 @@
                 "source_kind": "government",
                 "page": "section « Early Political Awareness »",
                 "notes": "Page de présentation du président sur le site de la présidence de l'Ouganda ; ses métadonnées la datent du 18 juillet 2023, avec une modification le 30 janvier 2025. Elle écrit : « Yoweri Kaguta Museveni was born in 1944 during the Second World War and his name was taken from the Abaseveni, who were Ugandan servicemen in the Seventh Regiment of the King’s African Rifles into which many Ugandans had been drafted. He was born in a peasant pastoralist family in Ankole ». Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Un profil institutionnel de Makerere University Business School rapporte que Museveni signifie « fils d’un homme du Septième », en référence au Seventh Battalion des King’s African Rifles dans lequel son père aurait servi pendant la Seconde Guerre mondiale. Cette explication biographique est conservée comme affirmation attribuée, non comme reconstruction linguistique généralisable.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "President Museveni",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://ldpc.mubs.ac.ug/wp-content/uploads/2016/09/Yoweri_Kaguta_Museveni.pdf",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Profil institutionnel du Leadership Centre de Makerere University Business School consulté dans son PDF. Il rattache explicitement Yoweri Museveni aux Banyankole et explique le patronyme par le service de son père dans le Seventh Battalion des King’s African Rifles ; il ne démontre pas une règle générale de transmission."
               }
             ]
           }

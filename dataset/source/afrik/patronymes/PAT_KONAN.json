@@ -32,16 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Dans le système anthroponymique baoulé décrit par Pagnet, Konan est le nom attribué à un garçon né le mercredi, jour appelé mlan.",
-        "claimStatus": "established",
-        "sourceRefs": [
-          "pagnet-2005-noms-baoule",
-          "ngoran-poame-2006-anthroponymes-baoule"
-        ]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -273,6 +265,37 @@
                 "source_kind": "academic",
                 "page": "p. 260",
                 "notes": "Thèse de Doh Clément Pagnet, Université de Cocody, soutenue le 20 mai 2005. Relue le 15 octobre 2026 dans le dépôt DICAMES du CAMES (le lien handle était alors inaccessible ; la page du dépôt est http://dicames.online/jspui/handle/20.500.12177/1675). Page 260 : les noms donnés selon le jour de naissance chez les Baoulé. L'auteur ne cite pas de source pour cette liste. Le titre original écrit « didactive »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans le système anthroponymique baoulé décrit par Pagnet, Konan est le nom attribué à un garçon né le mercredi, jour appelé mlan.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Les noms Wè : valeur expressive et didactive, un exemple de créativité poétique dans la littérature orale africaine",
+                "author": "Doh Clément Pagnet",
+                "year": 2005,
+                "url": "https://hdl.handle.net/20.500.12177/1675",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 260",
+                "notes": "Thèse de Doh Clément Pagnet, Université de Cocody, soutenue le 20 mai 2005. Relue le 15 octobre 2026 dans le dépôt DICAMES du CAMES (le lien handle était alors inaccessible ; la page du dépôt est http://dicames.online/jspui/handle/20.500.12177/1675). Page 260 : les noms donnés selon le jour de naissance chez les Baoulé. L'auteur ne cite pas de source pour cette liste. Le titre original écrit « didactive »."
+              },
+              {
+                "title": "De l'essence au sens des anthroponymes du baoulé",
+                "author": "Léa Marie Laurence N'Goran-Poamé",
+                "year": 2006,
+                "url": "http://greenstone.lecames.org/collect/revu/tmp/B00702197207.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 198",
+                "notes": "Revue du CAMES, nouvelle série B, vol. 7, n° 2, 2006, p. 197-207. Lu le 15 octobre 2026. Page 198 : un tableau des noms de jour baoulé repris d'un livre de Bernadette Akissi Koffi paru en 2001."
               }
             ]
           }

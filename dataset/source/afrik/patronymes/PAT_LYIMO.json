@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -54,10 +55,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "la recherche web combinant « Lyimo », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de la page Forebears Lyimo et les requêtes « Lyimo Chaga surname clan origin onomastics » dans les moteurs académiques et dépôts tanzaniens, n'ont livré aucune étymologie, chronique d'origine ou tradition orale attribuable à un témoin pour ce nom. Les rapprochements seulement plausibles ont été écartés."
-    },
     {
       "fieldPath": "nameSystem",
       "reason": "la recherche web combinant « Lyimo », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de la page Forebears Lyimo et les requêtes « Lyimo Chaga surname clan origin onomastics » dans les moteurs académiques et dépôts tanzaniens, n'ont pas établi que la catégorie provisoire « clan_name » décrive ce nom lui-même ; elle reste une hypothèse de classement."

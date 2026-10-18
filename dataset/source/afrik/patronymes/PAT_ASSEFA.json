@@ -32,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le Dictionary of American Family Names analyse Assefa comme un nom personnel amharique, interprété « il a élargi », et précise que son emploi comme surname résulte notamment de l'enregistrement diasporique d'un nom éthiopien non héréditaire.",
-        "claimStatus": "established",
-        "sourceRefs": ["dafn-assefa"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -167,6 +162,26 @@
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
                 "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 13 octobre 2026 dans la traduction française que le site affiche. La notice dit : nom personnel éthiopien, du nom personnel Assefa interprété comme, par exemple, « il s'est élargi » en amharique. Les Éthiopiens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le Dictionary of American Family Names analyse Assefa comme un nom personnel amharique, interprété « il a élargi », et précise que son emploi comme surname résulte notamment de l'enregistrement diasporique d'un nom éthiopien non héréditaire.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2nd ed. — Assefa (Ancestry)",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.ancestry.com/last-name-meaning/Assefa",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Entrée du Dictionary of American Family Names, 2e éd. (Oxford University Press, 2022), reproduite par Ancestry et consultée le 2 septembre 2026. Elle analyse Assefa comme nom personnel éthiopien amharique et précise que son enregistrement comme surname dans la diaspora ne correspond pas à un patronyme héréditaire en Éthiopie."
               }
             ]
           }

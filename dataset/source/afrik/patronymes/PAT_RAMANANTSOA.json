@@ -11,7 +11,10 @@
     {
       "spelling": "Ramanantsoa",
       "attestations": [
-        { "countryId": "MDG", "sourceRefs": ["lemonde-ramanantsoa-1979"] }
+        {
+          "countryId": "MDG",
+          "sourceRefs": ["lemonde-ramanantsoa-1979"]
+        }
       ]
     }
   ],
@@ -20,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -57,10 +61,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Les recherches exactes « Ramanantsoa etymology », « Ramanantsoa onomastics », leurs équivalents français et les catalogues académiques n'ont livré ni tradition attribuée, ni chronique d'origine du nom, ni reconstruction linguistique."
-    },
     {
       "fieldPath": "transmissionMode",
       "reason": "La notice nécrologique établit un porteur et son milieu familial merina, mais ne donne pas de généalogie nominale. Les recherches père-fils et généalogiques n'ont pas établi le mode de transmission ; « other » conserve cette indétermination."
@@ -126,7 +126,11 @@
             ]
           },
           {
-            "period": { "from": 1942, "to": 1942, "label": "1942" },
+            "period": {
+              "from": 1942,
+              "to": 1942,
+              "label": "1942"
+            },
             "statement": "Le nom Ramanantsoa apparaît par écrit comme nom d'auteur d'une thèse de médecine de Raymond Ramanantsoa, datée de 1942, selon le catalogue de la Bibliothèque nationale de France. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand il est donné.",
             "birth": true,
             "sources": [

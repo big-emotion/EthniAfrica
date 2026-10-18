@@ -32,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le site Behind the Name présente Mahamat comme une forme de Muhammad employée en Afrique centrale, voisine de Mahamadou ; Mahamadou et Mohamed ont chacun leur propre fiche.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["btn-mahamat"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [],
   "countries": [
@@ -99,5 +94,40 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Mahamat à un peuple au Tchad. Nous n'avons pas encore consulté de source consacrée à ce nom. Nos fiches citent Mahamat Déby, présenté comme Zaghawa, et un sultan barma. Elles décrivent aussi l'usage de Mahamat comme prénom du père, ajouté au nom d'une personne, dans différents groupes musulmans du Tchad. Ce nom peut reprendre le prénom d'un parent. Il reste à vérifier s'il se transmet comme nom de famille dans un groupe précis."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Les sources réunies dans ce dossier racontent l’histoire du nom Mahamat.",
+    "originExplained": true,
+    "names": [
+      {
+        "nameText": "Mahamat",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le site Behind the Name présente Mahamat comme une forme de Muhammad employée en Afrique centrale, voisine de Mahamadou ; Mahamadou et Mohamed ont chacun leur propre fiche.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Mahamat — Behind the Name",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.behindthename.com/name/mahamat",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page communautaire consultée directement le 11 octobre 2026. Elle présente Mahamat comme une forme de Muhammad employée en Afrique centrale et donne Mahamadou parmi ses variantes. Elle n'établit pas une attribution ethnique de la graphie."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

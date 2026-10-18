@@ -22,13 +22,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Le dictionnaire historique de la République démocratique du Congo place Kalala Ilunga dans la tradition dynastique luba : il y est présenté comme le neveu et successeur de Nkongolo, puis comme un ancien roi luba. L'ouvrage atteste ainsi Ilunga dans les noms de la chronique royale, sans démontrer l'origine du patronyme contemporain ni isoler le sens du composant.",
-        "claimStatus": "established",
-        "sourceRefs": ["historical-dictionary-drc-ilunga"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -155,6 +150,27 @@
                 "source_kind": "archive",
                 "page": "p. 66-67",
                 "notes": "Lisbonne, Imprimerie nationale, 1890 ; exemplaire numérisé sur archive.org. Page 66 : « Vinha á frente d'esse grupo o chibinda (čibida « caçador ») Ilunga » ; page 67 : « Ilunga mandou acampar ». Officier portugais, cité pour la tradition qu'il recueille. Pages vues en image. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le dictionnaire historique de la République démocratique du Congo place Kalala Ilunga dans la tradition dynastique luba : il y est présenté comme le neveu et successeur de Nkongolo, puis comme un ancien roi luba. L'ouvrage atteste ainsi Ilunga dans les noms de la chronique royale, sans démontrer l'origine du patronyme contemporain ni isoler le sens du composant.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Historical Dictionary of the Democratic Republic of the Congo, Third Edition",
+                "author": "Emizet François Kisangani et F. Scott Bobb",
+                "year": 2010,
+                "url": "https://shcas.shnu.edu.cn/_upload/article/files/dc/3d/863da74f4f1dbe922dc9702d9de9/a6f95c07-9183-4c78-a7c4-ec5ea565507a.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 255 et p. 274",
+                "notes": "Lanham, Scarecrow Press, 2010 ; copie non officielle, hébergée par un site universitaire. Page 255, entrée « Kalala Ilunga » (« According to legend… A nephew of Kongolo ») ; page 274, entrée « Kibinda Ilunga ». Lu le 13 octobre 2026."
               }
             ]
           }

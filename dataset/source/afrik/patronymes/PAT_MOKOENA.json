@@ -27,13 +27,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'étude des lithoko sesotho explique que koena signifie « crocodile » et que les préfixes personnels forment Mokoena au singulier et Bakoena au pluriel. Ces formes identifient l'appartenance au clan du crocodile dans les textes étudiés.",
-        "claimStatus": "established",
-        "sourceRefs": ["maimane-2016-mokoena"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -130,7 +125,8 @@
                 "page": "p. 134-135 (149-150 du fichier PDF)",
                 "notes": "Thèse de doctorat, University of KwaZulu-Natal, lue le 12 octobre 2026. La section 3.3.1.5 explique, d'après Kunene (1971), qu'un clan prend souvent son nom d'un animal : koena « crocodile », avec les préfixes personnels mo- et ba-, donne Mokoena au singulier et Bakoena, « People of the crocodile », au pluriel ; elle cite des lithoko où un chef est loué sous les noms Koena et Mokoena. Les pages imprimées 134 et 135 sont les pages 149 et 150 du fichier."
               }
-            ]
+            ],
+            "claimStatus": "established"
           },
           {
             "period": {

@@ -44,20 +44,9 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Dans une lettre datée du 3 janvier 1890, Hendrik Witbooi se présente comme le continuateur de la migration conduite par son grand-père David Witbooi et désigne son peuple par l'autre nom /Khowese. L'édition de 1929 identifie explicitement /Khowese comme une désignation des Witbooi.",
-        "claimStatus": "established",
-        "sourceRefs": ["dbnl-witbooi-diary-1890"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'appellation Witbooi signifie littéralement « garçons blancs » dans la source académique consultée. Elle y est expliquée par les étoffes ou écharpes blanches portées sur les chapeaux, notamment lors des expéditions militaires, pour distinguer ce groupe des autres groupes de langue nama.",
-        "claimStatus": "established",
-        "sourceRefs": ["bosman-witbooi-2011"]
-      }
-    ]
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -267,6 +256,48 @@
             "era": "modern",
             "statement": "Le nom Witbooi voudrait dire « garçons blancs » : il viendrait des étoffes ou écharpes blanches que les membres du groupe portaient autour du chapeau, surtout en expédition militaire, pour se distinguer des autres groupes nama, selon Hendrik Bosman.",
             "hypothesisGroup": "origine du nom Witbooi",
+            "sources": [
+              {
+                "title": "A Nama ‘Exodus’? A Postcolonial Reading of the Diaries of Hendrik Witbooi",
+                "author": "Hendrik Bosman",
+                "year": 2011,
+                "url": "https://scriptura.journals.ac.za/pub/article/download/6/6",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 330",
+                "notes": "Scriptura, no 108, 2011, p. 329-341. Lu dans le PDF le 11 octobre 2026. Page 330 : le groupe Witbooi s'installe en 1863 dans ce qui deviendra la Namibie, venu de Pella, au sud du fleuve Orange ; la note 3 explique l'appellation Witbooi, « littéralement garçons blancs », par les étoffes ou écharpes blanches portées autour du chapeau, surtout en expédition militaire, pour se distinguer des dix autres groupes de langue nama."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans une lettre datée du 3 janvier 1890, Hendrik Witbooi se présente comme le continuateur de la migration conduite par son grand-père David Witbooi et désigne son peuple par l'autre nom /Khowese. L'édition de 1929 identifie explicitement /Khowese comme une désignation des Witbooi.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Die dagboek van Hendrik Witbooi — no 20, Hornkrans, 3 janvier 1890",
+                "author": "Hendrik Witbooi",
+                "year": 1929,
+                "url": "https://www.dbnl.org/tekst/witb002dagb01_01/witb002dagb01_01_0023.php",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 53",
+                "notes": "Lettre de Hendrik Witbooi, reproduite dans l'édition de 1929 de son journal, lue sur la Digitale Bibliotheek voor de Nederlandse Letteren le 11 octobre 2026. La note 7 reproduit une lettre signée « Mozes Witbooi, van Gibeon », datée « Gibeon den 4 Maart 1881 », qui parle de « ou David Witbooi »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'appellation Witbooi signifie littéralement « garçons blancs » dans la source académique consultée. Elle y est expliquée par les étoffes ou écharpes blanches portées sur les chapeaux, notamment lors des expéditions militaires, pour distinguer ce groupe des autres groupes de langue nama.",
+            "claimStatus": "established",
             "sources": [
               {
                 "title": "A Nama ‘Exodus’? A Postcolonial Reading of the Diaries of Hendrik Witbooi",

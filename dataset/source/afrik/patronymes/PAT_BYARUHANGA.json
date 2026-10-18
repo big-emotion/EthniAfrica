@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -68,10 +69,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "la recherche web combinant « Byaruhanga », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la lecture de « UPDF Bids Farewell To Brig Gen Winston Byaruhanga » n'ont livré ni tradition attribuable, ni chronique dédiée, ni reconstruction linguistique établissant l'origine de Byaruhanga. Les attestations géographiques ou individuelles trouvées ne sont pas transformées en étymologie."
-    },
     {
       "fieldPath": "alliances",
       "reason": "la recherche web combinant « Byaruhanga », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la lecture de « UPDF Bids Farewell To Brig Gen Winston Byaruhanga » n'ont identifié aucune paire d'alliance ou de parenté à plaisanterie reliant Byaruhanga à un autre nom documenté ici."

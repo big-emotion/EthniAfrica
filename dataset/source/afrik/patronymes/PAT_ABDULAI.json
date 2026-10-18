@@ -41,13 +41,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Dans l'inventaire dagomba de M. E. Kropp Dakubu, Abudulai est une réalisation dagbani du nom musulman Abdullah. L'autrice classe ces noms parmi les noms primaires d'origine arabe, transmis en dagbani le plus souvent par l'intermédiaire du haoussa et parfois du mandingue.",
-        "claimStatus": "established",
-        "sourceRefs": ["dakubu-2000-dagomba-names"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -176,6 +171,27 @@
                 "source_kind": "government",
                 "page": "p. 2 et suivantes",
                 "notes": "Liste électorale spéciale 2024 de la région Northern, 209 pages et 7 342 lignes de noms, pour dix-huit circonscriptions ; lue le 14 octobre 2026. Les personnes vivantes de cette liste ne sont pas nommées dans la fiche. Les lignes sont de la forme « ABDULAI, prénoms », suivies d'un numéro d'électeur ; 253 des 7 342 lignes commencent par ABDULAI."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans l'inventaire dagomba de M. E. Kropp Dakubu, Abudulai est une réalisation dagbani du nom musulman Abdullah. L'autrice classe ces noms parmi les noms primaires d'origine arabe, transmis en dagbani le plus souvent par l'intermédiaire du haoussa et parfois du mandingue.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Personal Names of the Dagomba",
+                "author": "M. E. Kropp Dakubu",
+                "year": 2000,
+                "url": "https://pdfproc.lib.msu.edu/?file=%2FDMC%2FAfrican+Journals%2Fpdfs%2FInstitue+of+African+Studies+Research+Review%2F2000v16n2%2Fasrv016002006.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 59-60",
+                "notes": "Research Review, nouvelle série, vol. 16, no 2, 2000, p. 53-65 ; texte intégral lu le 14 octobre 2026. L'autrice a recueilli ses informations en 1983 auprès d'un chercheur dagomba de Savelugu. Page 59 : l'imam fournit une liste de noms convenant au jour de naissance et le père en choisit un ; ces noms sont d'origine arabe, « transmitted to Dagbani via Hausa or in some cases perhaps Manden ». Page 60, jour du samedi, noms masculins : « Abdullah, Abudulai [ʔabulai], Abd-al-Rahman […] »."
               }
             ]
           }

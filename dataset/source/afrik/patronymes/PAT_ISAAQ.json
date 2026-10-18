@@ -31,13 +31,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Medani décrit Isaaq comme l'une des familles claniques somalies structurées par des liens de parenté patrilinéaires ; il distingue la famille clanique de ses groupes de paiement de la diya, sans proposer d'étymologie du nom.",
-        "claimStatus": "established",
-        "sourceRefs": ["isaaq-medani-2022"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -249,6 +244,26 @@
                 "source_kind": "archive",
                 "page": "p. 49",
                 "notes": "Journal of the Royal Geographical Society of London, vol. 19, 1849, p. 49-76 ; mémoire daté d'Aden le 12 mai 1848 et lu le 13 novembre 1848, par le lieutenant C. J. Cruttenden, de la marine des Indes, agent politique adjoint à Aden. Lu en fac-similé (copie JSTOR Early Journal Content) sur archive.org. Officier britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Page 49 : « who were the children of Isaakh by three wives ». Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Medani décrit Isaaq comme l'une des familles claniques somalies structurées par des liens de parenté patrilinéaires ; il distingue la famille clanique de ses groupes de paiement de la diya, sans proposer d'étymologie du nom.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "State Collapse, Informal Networks, and the Dilemma of State Building in Somalia",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.cambridge.org/core/books/black-markets-and-militants/state-collapse-informal-networks-and-the-dilemma-of-state-building-in-somalia/190802472753A92D8970F284356B8871",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Khalid Mustafa Medani, chapitre de Black Markets and Militants, Cambridge University Press, publication en ligne le 20 août 2022. Le texte intégral a été vérifié : il nomme Isaaq parmi les familles claniques reliées par filiation patrilinéaire et décrit les groupes de paiement de la diya. Il n'étudie pas l'étymologie d'Isaaq."
               }
             ]
           }

@@ -28,6 +28,7 @@
 @import "./styles/search-feed.css";
 @import "./styles/name-timeline.css";
 @import "./styles/approach.css";
+@import "./styles/atlas-names.css";
 /* Last, and unlayered on purpose: the rule is inherited from `body`, so it
    must sit after every sheet above it and outside the `base` layer that
    Tailwind's preflight occupies. */

@@ -11,7 +11,10 @@
     {
       "spelling": "Rajoelina",
       "attestations": [
-        { "countryId": "MDG", "sourceRefs": ["bnf-andry-rajoelina"] }
+        {
+          "countryId": "MDG",
+          "sourceRefs": ["bnf-andry-rajoelina"]
+        }
       ]
     }
   ],
@@ -20,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -59,10 +63,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Les recherches exactes « Rajoelina etymology », « Rajoelina onomastics », « origine nom Rajoelina » et les résultats académiques n'ont livré aucune source dédiée ; les répertoires automatiques de noms sans bibliographie ont été rejetés."
-    },
     {
       "fieldPath": "transmissionMode",
       "reason": "La notice BnF atteste un individu, pas une filiation. Les recherches Rajoelina avec famille, père, fils et généalogie n'ont pas établi la transmission ; « other » conserve l'indétermination."
@@ -132,7 +132,11 @@
             ]
           },
           {
-            "period": { "from": 1909, "to": 1909, "label": "1909" },
+            "period": {
+              "from": 1909,
+              "to": 1909,
+              "label": "1909"
+            },
             "era": "colonial",
             "statement": "Le nom Rajoelina apparaît par écrit dans le titre d'un recueil de discours prononcés à Tananarive le 9 octobre 1909, où un orateur est nommé « Dr. Rajoelina », selon le catalogue de la Bibliothèque nationale de France. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand il est donné.",
             "birth": true,

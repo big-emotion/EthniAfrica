@@ -11,7 +11,10 @@
     {
       "spelling": "Tsiranana",
       "attestations": [
-        { "countryId": "MDG", "sourceRefs": ["assemblee-philibert-tsiranana"] }
+        {
+          "countryId": "MDG",
+          "sourceRefs": ["assemblee-philibert-tsiranana"]
+        }
       ]
     }
   ],
@@ -20,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -57,10 +61,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "La biographie documente l'origine tsimihety du porteur, pas celle du nom. Les recherches exactes « Tsiranana etymology », « Tsiranana onomastics », leurs équivalents français et les résultats académiques n'ont livré ni tradition attribuée, ni chronique de formation, ni reconstruction linguistique."
-    },
     {
       "fieldPath": "transmissionMode",
       "reason": "La biographie officielle donne le milieu familial de Philibert Tsiranana sans filiation portant le même nom. Les recherches généalogiques n'ont pas établi le mode de transmission ; « other » maintient l'indétermination."

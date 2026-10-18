@@ -20,7 +20,10 @@
     {
       "spelling": "Ababdeh",
       "attestations": [
-        { "countryId": "EGY", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "EGY",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -28,13 +31,8 @@
   "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Dans un tableau comparatif de désignations beja contemporaines, Barnard reproduit la forme « Ababda(?) » ; le point d'interrogation de la source impose de traiter l'identification et le niveau social exact comme incertains.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["ababda-barnard-2009"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -221,6 +219,27 @@
                 "source_kind": "archive",
                 "page": "p. 148",
                 "notes": "Londres, John Murray, 1819, publié après la mort de l'auteur en 1817, lu dans l'exemplaire numérisé le 12 octobre 2026. Page 148 : « the Ababde and Bisharye » comme les deux tribus principales des Bédouins entre la Nubie et la mer Rouge ; l'Arabe est écrit en regard de Ababde ; les Ababde occupent « the country south of Kosseir, nearly as far as the latitude of Derr »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans un tableau comparatif de désignations beja contemporaines, Barnard reproduit la forme « Ababda(?) » ; le point d'interrogation de la source impose de traiter l'identification et le niveau social exact comme incertains.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "The Archaeology of Pastoral Nomads between the Nile and the Red Sea",
+                "author": "Hans Barnard",
+                "year": 2009,
+                "url": "https://isac.uchicago.edu/sites/oi.uchicago.edu/files/uploads/shared/docs/ois5.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21, 25",
+                "notes": "Dans Jeffrey Szuchman (dir.), Nomads, Tribes, and the State in the Ancient Near East, Oriental Institute Seminars 5, 2009, lu dans le fichier complet de l'éditeur le 12 octobre 2026. Page 21 : les Ababda dans la liste de l'ensemble beja. Page 25, tableau 2.2, d'après Murray (1935), Paul (1954) et Wendrich (2008) : « Ababda(?) » dans la colonne des clans, avec un point d'interrogation."
               }
             ]
           }

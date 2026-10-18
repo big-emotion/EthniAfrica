@@ -31,20 +31,9 @@
   "designatedSocialUnit": "lineage",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Le répertoire provisoire présente les Kaboré comme descendants de Naaba Koudoumié. Cette filiation est enregistrée comme tradition revendiquée, faute de chronique indépendante ou de généalogie critique retrouvée.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["burkina-provisional-patronyme-register"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "La même notice donne à Kaboré le sens « cela ne me diminue pas ». La recherche dans les dictionnaires et études onomastiques mossi accessibles n'a pas retrouvé d'analyse morphologique qui confirmerait cette glose.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["burkina-provisional-patronyme-register"]
-      }
-    ]
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -177,6 +166,48 @@
             "era": "modern",
             "statement": "Le nom Kaboré voudrait dire que « la chefferie se distingue naturellement du reste », pour les Kaboré originaires de Thyou, selon le même projet de répertoire. Des Ouédraogo l'auraient pris sous le règne de Naaba Koudoumié, huitième roi de Ouagadougou, dont les Kaboré seraient les descendants.",
             "hypothesisGroup": "sens-kabore",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 92-93",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de mai 2025 et marqué « version provisoire » sur sa page de titre. Lu le 18 octobre 2026 dans le navigateur, sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Les pages sont celles du document, repérées par leurs numéros en bas de page. Notice n° 505, KABORE : « KABORE est originaire de Zorgho. Ce patronyme signifie « ça ne me diminue pas ». » Puis : « Les KABORE sont originaires de Thyou. C'est sous le règne de Naaba Koundoumié, huitième roi de Ouagadougou dont les reliques reposent à Thyou que les OUEDRAOGO ont arboré le nom KABORE qui veut dire que « la chefferie se distingue naturellement du reste ». [...] Les KABORE sont donc des descendants de Naaba Koudoumié. » La notice écrit le nom du roi Koundoumié puis Koudoumié ; elle ajoute que les Kaboré vivent surtout dans le Ganzourgou, le Boulkiemdé et le Kadiogo, et parlent le moore."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le répertoire provisoire présente les Kaboré comme descendants de Naaba Koudoumié. Cette filiation est enregistrée comme tradition revendiquée, faute de chronique indépendante ou de généalogie critique retrouvée.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 92-93",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de mai 2025 et marqué « version provisoire » sur sa page de titre. Lu le 18 octobre 2026 dans le navigateur, sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Les pages sont celles du document, repérées par leurs numéros en bas de page. Notice n° 505, KABORE : « KABORE est originaire de Zorgho. Ce patronyme signifie « ça ne me diminue pas ». » Puis : « Les KABORE sont originaires de Thyou. C'est sous le règne de Naaba Koundoumié, huitième roi de Ouagadougou dont les reliques reposent à Thyou que les OUEDRAOGO ont arboré le nom KABORE qui veut dire que « la chefferie se distingue naturellement du reste ». [...] Les KABORE sont donc des descendants de Naaba Koudoumié. » La notice écrit le nom du roi Koundoumié puis Koudoumié ; elle ajoute que les Kaboré vivent surtout dans le Ganzourgou, le Boulkiemdé et le Kadiogo, et parlent le moore."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La même notice donne à Kaboré le sens « cela ne me diminue pas ». La recherche dans les dictionnaires et études onomastiques mossi accessibles n'a pas retrouvé d'analyse morphologique qui confirmerait cette glose.",
+            "claimStatus": "claimed",
             "sources": [
               {
                 "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",

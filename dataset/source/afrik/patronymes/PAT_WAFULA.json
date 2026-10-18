@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'étude du système de nomination abaluhyia classe Wafula comme nom masculin attribué à un enfant né pendant la saison des pluies dans dix sous-groupes et le dérive de efula/ifula, « pluie ». Elle établit un nom circonstanciel de naissance, pas une origine unique de toutes les lignées modernes Wafula.",
-        "claimStatus": "established",
-        "sourceRefs": ["lwangale-2016-wafula"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -179,6 +174,26 @@
                 "source_kind": "academic",
                 "page": "vol. 1, p. 282, 314",
                 "notes": "Londres, Oxford University Press pour l'International African Institute, 1949, vol. 1. Lu le 12 octobre 2026 dans une numérisation déposée sur Internet Archive par un particulier (copie non officielle). Page 314, sur les noms d'enfance que choisit la mère : « Among the Vugusu boys' names frequently take the prefix wa- and girls' names the prefix na- Thus a child who was born during a heavy rain might be named Wafula if a boy and Nafula if a girl ». Page 282 : la pierre appelée « stone of Wafula » ; « Wafula is the spirit for whom, many generations ago, the first sacrificial hut of this kind is said to have been erected ». Auteur de l'époque coloniale, cité ici pour les formes qu'il relève."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'étude du système de nomination abaluhyia classe Wafula comme nom masculin attribué à un enfant né pendant la saison des pluies dans dix sous-groupes et le dérive de efula/ifula, « pluie ». Elle établit un nom circonstanciel de naissance, pas une origine unique de toutes les lignées modernes Wafula.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "A Genealogical Linguistic Implication of the Abaluhyia Naming System",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://ijrdosshr.com/article/download/99/88/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Article de David Wafula Lwangale, texte intégral et notice consultés. Le tableau de terrain indique Wafula pour un garçon né pendant la saison des pluies dans dix sous-groupes luhya et rattache le nom à efula/ifula « pluie »."
               }
             ]
           }

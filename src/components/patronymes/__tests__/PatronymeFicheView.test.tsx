@@ -235,7 +235,7 @@ describe("name fiche closing — sources, silences and the next name", () => {
 
   // @req REQ-133
   // @req REQ-198
-  it("connects the four origin records, alliance links, story and next names", () => {
+  it("points from Origine to the name history's sources and keeps the other fiche links", () => {
     const patronyme: PublicPatronyme = {
       ...camara,
       id: "PAT_TRAORE",
@@ -323,7 +323,13 @@ describe("name fiche closing — sources, silences and the next name", () => {
       />
     );
 
-    expect(container.querySelectorAll("[data-form-readings]")).toHaveLength(4);
+    expect(
+      screen.getByText(
+        "Les récits sur l’origine de ce nom sont présentés dans l’histoire du nom, avec leurs sources."
+      )
+    ).toBeInTheDocument();
+    expect(container.querySelectorAll("[data-form-readings]")).toHaveLength(0);
+    expect(screen.queryByText("Récit oral attesté.")).toBeNull();
     expect(screen.getByText(/Les six pactes de ce nom/)).toBeInTheDocument();
     expect(container.querySelectorAll("[data-name-next] a")).toHaveLength(4);
     expect(

@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'entrée consultée traite Abebe comme un nom personnel amharique, écrit አበበ, et le rapproche de አበባ, « fleur ». Cette proposition lexicale ne suffit pas à attribuer le nom à un lignage ni à un peuple déterminé.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["btn-abebe"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -181,6 +176,26 @@
                 "source_kind": "academic",
                 "page": "p. 2",
                 "notes": "Wiesbaden, Otto Harrassowitz, 1987. Lu le 13 octobre 2026 dans une copie non officielle déposée sur Internet Archive par un particulier. Page 2, entrée ʾabāba, « perfume, sweet odor » : le mot guèze viendrait probablement du mot amharique abäba, « flower ». Le dictionnaire traite d'un nom commun, pas du nom de personne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'entrée consultée traite Abebe comme un nom personnel amharique, écrit አበበ, et le rapproche de አበባ, « fleur ». Cette proposition lexicale ne suffit pas à attribuer le nom à un lignage ni à un peuple déterminé.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Abebe — Behind the Name",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/abebe",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice du site Behind the Name, lue le 13 octobre 2026. Elle écrit le nom አበበ, le dit masculin et amharique, le tire de አበባ (ʾababa), « flower », et donne Abeba comme forme féminine. Entrée ajoutée le 23 décembre 2025."
               }
             ]
           }

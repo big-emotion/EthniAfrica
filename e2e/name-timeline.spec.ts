@@ -63,6 +63,12 @@ const EMPTY_COMPANIONS = {
   quiz: { count: 0, item: null },
 };
 
+const expandLenses = async (page: import("@playwright/test").Page) => {
+  const summary = page.getByRole("button", { name: /^Voir aussi/ });
+  await expect(summary).toHaveAttribute("aria-expanded", "false");
+  await summary.click();
+};
+
 test.beforeEach(async ({ page }) => {
   await page.route("**/api/v2/search**", async (route) => {
     const { pathname } = new URL(route.request().url());
@@ -87,6 +93,7 @@ test("@smoke a search for lingala opens on its name-history timeline", async ({
   page,
 }) => {
   await page.goto(`${getLocalizedRoute(LOCALE, "search")}?q=lingala`);
+  await expandLenses(page);
 
   // Exact: « Histoire du nom » is also the start of the tile list's name.
   const timelineLens = page.getByRole("button", {
@@ -167,6 +174,7 @@ test("@smoke a passage's sources button opens its sources and the colour key", a
 // @req REQ-198
 test("@smoke « Tout » leaves the timeline for the answer", async ({ page }) => {
   await page.goto(`${getLocalizedRoute(LOCALE, "search")}?q=lingala`);
+  await expandLenses(page);
   await page
     .getByRole("button", { name: searchFeedCopy.fr.filters.all })
     .click();
@@ -183,6 +191,7 @@ test("@smoke @nfr-a11y every representative control shows its focus ring", async
   page,
 }) => {
   await page.goto(`${getLocalizedRoute(LOCALE, "search")}?q=lingala`);
+  await expandLenses(page);
   const timeline = page.locator("[data-name-timeline]");
   await expect(timeline).toBeVisible();
 

@@ -23,14 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [],
-    "historicalSyntheses": [
-      {
-        "claim": "Selon l'historien Thomas Molony, le père de Julius Nyerere, le chef Nyerere Burito, né en 1860, a reçu le nom Nyerere, qui veut dire « chenille » en zanaki, après une invasion de chenilles légionnaires qui ravageaient la campagne au moment de sa naissance. Ce récit explique le nom d'une personne ; il ne dit pas si Nyerere est aussi un nom de clan.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["molony-nyerere-early-years-2014"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [],
   "countries": [
@@ -165,7 +159,8 @@
                 "page": "p. 32",
                 "notes": "James Currey, 2014. Page 32, lue le 18 octobre 2026 dans l'aperçu de Google Livres : « The chief, Julius Nyerere's father, was born in 1860 to Burito Mazembe and Wakuru Malima, and was given the name 'Nyerere', meaning 'caterpillar' in Zanaki, after a plague of army worm caterpillars that attacked the countryside at the time of his birth ». L'auteur appuie ce passage sur une note, que nous n'avons pas lue."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           }
         ]
       }

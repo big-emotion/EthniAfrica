@@ -43,6 +43,8 @@ const fr = {
   nisbaSubtypeLabel: "Type de nisba",
   nisbaSubtypeLabels: PATRONYME_VOCABULARY.fr.nisbaSubtype,
   originTitle: "Origine",
+  originHistorySources:
+    "Les récits sur l’origine de ce nom sont présentés dans l’histoire du nom, avec leurs sources.",
   // Three parallel lists, not one classification: the corpus can hold a
   // account carried orally and a written chronicle for the same name without
   // either overruling the other. The strand is not called « griotique »: a

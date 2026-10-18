@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le Dictionary of American Family Names analyse Getachew comme un nom personnel amharique interprété « leur seigneur ». Il précise que l'emploi comme surname observé dans ses collections résulte de l'enregistrement diasporique d'un nom éthiopien non héréditaire.",
-        "claimStatus": "established",
-        "sourceRefs": ["dafn-getachew"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -158,6 +153,26 @@
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
                 "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 13 octobre 2026 dans la traduction française que le site affiche. La notice dit : nom éthiopien, du nom personnel Getachew interprété comme « leur seigneur » en amharique. Les Éthiopiens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le Dictionary of American Family Names analyse Getachew comme un nom personnel amharique interprété « leur seigneur ». Il précise que l'emploi comme surname observé dans ses collections résulte de l'enregistrement diasporique d'un nom éthiopien non héréditaire.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2nd ed. — Getachew (Ancestry)",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.ancestry.com/last-name-meaning/getachew",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Entrée du Dictionary of American Family Names, 2e éd. (Oxford University Press, 2022), reproduite par Ancestry et consultée le 2 septembre 2026. Elle traite Getachew comme nom personnel amharique et précise le caractère non héréditaire du système éthiopien."
               }
             ]
           }

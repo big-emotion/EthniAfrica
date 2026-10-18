@@ -32,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Ciberdúvidas classe Espírito Santo parmi les patronymes portugais composés dérivés de noms religieux. Cette analyse explique la structure de la forme « do Espírito Santo », mais ne permet pas d'identifier les circonstances dans lesquelles une lignée santoméenne l'a reçue.",
-        "claimStatus": "established",
-        "sourceRefs": ["ciberduvidas-espirito-santo-2014"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -197,6 +192,26 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 138",
                 "notes": "Page lue sur l'image le 18 octobre 2026. Page 138 : « Julgo que é do sec. XVI em diante que tais sobrenomes começam propriamente a aparecer » ; parmi les « Outros exemplos do sec. XVI » tirés de l'Archivo Historico Portuguez (AHP) : « Fr. Domingos do Espirito Santo, ib., VIII, 60 ». Trace de seconde main : le volume VIII de l'AHP n'a pas été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Ciberdúvidas classe Espírito Santo parmi les patronymes portugais composés dérivés de noms religieux. Cette analyse explique la structure de la forme « do Espírito Santo », mais ne permet pas d'identifier les circonstances dans lesquelles une lignée santoméenne l'a reçue.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Apelidos/sobrenomes compostos",
+                "author": "Paulo J. S. Barata (Ciberdúvidas da Língua Portuguesa)",
+                "year": 2014,
+                "url": "https://ciberduvidas.iscte-iul.pt/pergunta.php?id=32772",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Réponse datée du 3 octobre 2014 à une archiviste de Braga, lue le 18 octobre 2026. Parmi les noms de famille composés, elle cite « Espírito Santo ou Santa Rita, no que se refere a apelidos derivados de nomes religiosos ». Elle porte sur le portugais en général, pas sur São Tomé."
               }
             ]
           }

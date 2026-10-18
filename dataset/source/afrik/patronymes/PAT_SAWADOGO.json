@@ -32,16 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Dans son étude menée à Gourcy, Doris Bonnet identifie Sawadogo comme le sôndré, ou nom de lignage, de Pierre Sawadogo et donne au nom le sens de « nuage ». Le répertoire provisoire reprend les formes Sawadogo/Savadogo et les interprétations « nuages », « détenteurs de la pluie » ou « faiseur de pluie » ; seules la catégorie de nom de lignage et la glose « nuage » sont directement attestées par la publication scientifique consultée.",
-        "claimStatus": "established",
-        "sourceRefs": [
-          "bonnet-1982-proverbe-mossi",
-          "burkina-provisional-patronyme-register"
-        ]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -275,6 +267,37 @@
             "era": "modern",
             "statement": "Le nom Sawadogo, écrit aussi Saoudougué, est également porté par une lignée kurumfe. Ce nom-là voudrait dire « nous avons cessé » et ne se confond pas avec le nom mossi, selon le projet de répertoire des patronymes du Burkina Faso.",
             "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 180-181",
+                "notes": "Document de travail daté de mai 2025 et marqué « version provisoire », sans validation finale visible, lu sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle de ce répertoire n'a été trouvée. Les deux notices successives SAVADOGO/SAOUDOUGUE et SAWADOGO/SAVADOGO distinguent une lignée kurumfe, au nom traduit par « nous avons cessé », de la lignée mossi, au nom relié aux nuages et à la pluie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans son étude menée à Gourcy, Doris Bonnet identifie Sawadogo comme le sôndré, ou nom de lignage, de Pierre Sawadogo et donne au nom le sens de « nuage ». Le répertoire provisoire reprend les formes Sawadogo/Savadogo et les interprétations « nuages », « détenteurs de la pluie » ou « faiseur de pluie » ; seules la catégorie de nom de lignage et la glose « nuage » sont directement attestées par la publication scientifique consultée.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Le proverbe chez les Mossi du Yatenga (Haute-Volta)",
+                "author": "Doris Bonnet",
+                "year": 1982,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/2023-06/010083740.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 14",
+                "notes": "SELAF/CNRS, 1982. La page 14 présente Pierre Sawadogo, qui participe aux veillées de Gourcy, précise que Sawadogo est son sôndré, ou nom de lignage, et traduit le nom par « le nuage »."
+              },
               {
                 "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
                 "author": "Direction du patrimoine culturel, Burkina Faso",

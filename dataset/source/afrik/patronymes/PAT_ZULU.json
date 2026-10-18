@@ -26,25 +26,9 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Une explication relie le nom au chef qui fonda le clan des amaZulu, uZulu (dates inconnues, mort probablement vers 1709) ; les chefferies réunies sous ce clan ont ensuite pris son nom. Un journal de 1829 note à l'inverse que le grand-père de Chaka s'appelait Zulu, ce qui signifie « haut, ou les cieux », et que la nation en tire le nom d'amaZulu, « peuple du ciel » ; le dictionnaire cite cette phrase comme exemple d'une lecture qu'il juge fondée sur une méprise.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["dsae-zulu"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le nom du fondateur viendrait du mot zoulou izulu, « ciel », devenu plus tard aussi « paradis ». Selon le dictionnaire, amaZulu a souvent été compris comme « peuple du ciel » ou « peuple du paradis » par méprise : la lecture exacte serait « les gens de uZulu », le fondateur du clan. Le dictionnaire retient la seconde lecture ; la première reste courante. Nous les rapportons toutes deux. Toutes les sources consultées sont extérieures : aucun récit en zoulou sur ce nom n'a été trouvé.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["dsae-zulu"]
-      },
-      {
-        "claim": "Un auteur de 1978 préfère comprendre Zulu comme « le ciel » et amaZulu comme « les gens du ciel », au motif que, écrit-il, les « païens » n'ont pas d'équivalent du paradis ni de l'enfer. C'est une préférence personnelle de l'auteur, non une croyance attribuée aux Zoulous.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["dsae-zulu"]
-      }
-    ]
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -88,10 +72,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Les sources consultées expliquent le nom des amaZulu d'Afrique du Sud. Aucune ne dit comment le nom est devenu un patronyme chez les Ngoni de Zambie et du Malawi : ce lien n'est pas établi ici."
-    },
     {
       "fieldPath": "alliances",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
@@ -228,6 +208,66 @@
                 "source_kind": "linguistic_reference",
                 "notes": "Entrée lue le 10 octobre 2026. Le radical -Zulu se retrouve dans amaZulu, le peuple, umZulu, une personne, et isiZulu, la langue. L'entrée le rattache au nom de uZulu, fondateur du clan dominant, mort vers 1709 selon elle, dont le nom viendrait de izulu, « ciel » ; elle juge que lire amaZulu comme « peuple du ciel » vient d'une méprise et que le sens strict est « ceux de uZulu ». Elle cite un texte de 1824 : « Chaka, king of the Zulus », et le journal du missionnaire William Shaw, le 16 mai 1829 : « Chaka's grandfather was called Zulu, which signifies High, or the Heavens .. from him the Nation is now called Amazulu, or people of Heaven ».",
                 "page": "citation de 1824"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une explication relie le nom au chef qui fonda le clan des amaZulu, uZulu (dates inconnues, mort probablement vers 1709) ; les chefferies réunies sous ce clan ont ensuite pris son nom. Un journal de 1829 note à l'inverse que le grand-père de Chaka s'appelait Zulu, ce qui signifie « haut, ou les cieux », et que la nation en tire le nom d'amaZulu, « peuple du ciel » ; le dictionnaire cite cette phrase comme exemple d'une lecture qu'il juge fondée sur une méprise.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Zulu »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/zulu/e08042",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 10 octobre 2026. Le radical -Zulu se retrouve dans amaZulu, le peuple, umZulu, une personne, et isiZulu, la langue. L'entrée le rattache au nom de uZulu, fondateur du clan dominant, mort vers 1709 selon elle, dont le nom viendrait de izulu, « ciel » ; elle juge que lire amaZulu comme « peuple du ciel » vient d'une méprise et que le sens strict est « ceux de uZulu ». Elle cite un texte de 1824 : « Chaka, king of the Zulus », et le journal du missionnaire William Shaw, le 16 mai 1829 : « Chaka's grandfather was called Zulu, which signifies High, or the Heavens .. from him the Nation is now called Amazulu, or people of Heaven »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom du fondateur viendrait du mot zoulou izulu, « ciel », devenu plus tard aussi « paradis ». Selon le dictionnaire, amaZulu a souvent été compris comme « peuple du ciel » ou « peuple du paradis » par méprise : la lecture exacte serait « les gens de uZulu », le fondateur du clan. Le dictionnaire retient la seconde lecture ; la première reste courante. Nous les rapportons toutes deux. Toutes les sources consultées sont extérieures : aucun récit en zoulou sur ce nom n'a été trouvé.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Zulu »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/zulu/e08042",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 10 octobre 2026. Le radical -Zulu se retrouve dans amaZulu, le peuple, umZulu, une personne, et isiZulu, la langue. L'entrée le rattache au nom de uZulu, fondateur du clan dominant, mort vers 1709 selon elle, dont le nom viendrait de izulu, « ciel » ; elle juge que lire amaZulu comme « peuple du ciel » vient d'une méprise et que le sens strict est « ceux de uZulu ». Elle cite un texte de 1824 : « Chaka, king of the Zulus », et le journal du missionnaire William Shaw, le 16 mai 1829 : « Chaka's grandfather was called Zulu, which signifies High, or the Heavens .. from him the Nation is now called Amazulu, or people of Heaven »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Un auteur de 1978 préfère comprendre Zulu comme « le ciel » et amaZulu comme « les gens du ciel », au motif que, écrit-il, les « païens » n'ont pas d'équivalent du paradis ni de l'enfer. C'est une préférence personnelle de l'auteur, non une croyance attribuée aux Zoulous.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Zulu »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/zulu/e08042",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 10 octobre 2026. Le radical -Zulu se retrouve dans amaZulu, le peuple, umZulu, une personne, et isiZulu, la langue. L'entrée le rattache au nom de uZulu, fondateur du clan dominant, mort vers 1709 selon elle, dont le nom viendrait de izulu, « ciel » ; elle juge que lire amaZulu comme « peuple du ciel » vient d'une méprise et que le sens strict est « ceux de uZulu ». Elle cite un texte de 1824 : « Chaka, king of the Zulus », et le journal du missionnaire William Shaw, le 16 mai 1829 : « Chaka's grandfather was called Zulu, which signifies High, or the Heavens .. from him the Nation is now called Amazulu, or people of Heaven »."
               }
             ]
           }

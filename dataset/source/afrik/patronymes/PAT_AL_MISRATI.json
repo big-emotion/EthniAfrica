@@ -32,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "La recherche d’Oxford analyse Al-Miṣrātī comme une nisba reliant son porteur à la ville ou au district de Misrata, tout en signalant aussi une section Misrata des Hawwara. Ces possibilités ne suffisent pas à attribuer tous les porteurs à une seule lignée.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["oxford-al-misrati"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -239,6 +234,27 @@
                 "source_kind": "academic",
                 "page": "p. 7 ; p. 75 ; p. 81 ; p. 84",
                 "notes": "Journal of Arabic and Islamic Studies, vol. 16, 2016, p. 1-84, lu en texte intégral le 14 octobre 2026 dans l'Oxford Research Archive. Page 7 : le document 4 est un registre arabe (jarīda) des paysans musulmans de Saint-Georges, daté de novembre 536 de l'hégire, indiction V (1141). Page 81, ligne 9d : « Aḥmad rabīb al-Miṣrātī » (rabīb : fils adoptif ou beau-fils). Page 84, ligne 12d : « Abū ʿAbd Allāh al-Miṣrātī ». Les éditeurs rapprochent ce nom de Misrata, en Libye, ou des Hawwara."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La recherche d’Oxford analyse Al-Miṣrātī comme une nisba reliant son porteur à la ville ou au district de Misrata, tout en signalant aussi une section Misrata des Hawwara. Ces possibilités ne suffisent pas à attribuer tous les porteurs à une seule lignée.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "The Twelfth-century documents of St. George’s of Tròccoli (Sicily)",
+                "author": "Vera von Falkenhausen, Nadia Jamil et Jeremy Johns",
+                "year": 2016,
+                "url": "https://ora.ox.ac.uk/objects/uuid%3A91e386fb-56e6-4c10-9a71-514b875c1eb6/files/mb4cb97b8fc65dc94bb6b8c19332b4614",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 47 ; p. 81",
+                "notes": "Journal of Arabic and Islamic Studies, vol. 16, 2016, p. 1-84, lu en texte intégral le 14 octobre 2026 dans l'Oxford Research Archive. Page 81, note 411 : « Al-Miṣrātī is a nisba indicating a connection either with the town or district of Miṣrāta in northwest Libya, or with the Miṣrāta section of the Berber confederation of Hawwāra ». Page 47 : même remarque pour les deux hommes qui portent ce nom dans le registre."
               }
             ]
           }

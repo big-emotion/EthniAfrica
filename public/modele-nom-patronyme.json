@@ -2,7 +2,7 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "patronyme",
-    "directives": "This is the per-name PAT_* contract. Keep it separate from PPL_* ethnonym dossiers and ONS_* naming-system dossiers. Omit subtype-only fields unless the declared canonical nameSystem permits them. Fiche prose is written in French. nameHistory.originExplained is optional and defaults to true; set it to false when no cited source explains the origin. nameHistory.names[].equivalents is optional."
+    "directives": "This is the per-name PAT_* contract. Keep it separate from PPL_* ethnonym dossiers and ONS_* naming-system dossiers. Omit subtype-only fields unless the declared canonical nameSystem permits them. Fiche prose is written in French. nameHistory.originExplained is optional and defaults to true; set it to false when no cited source explains the origin. nameHistory.names[].equivalents is optional. A nameHistory account may carry the origin claimStatus and oral carrier, collection and collector fields when the sources give them."
   },
   "id": "PAT_XXXXX",
   "nameMain": "<Nom principal>",
@@ -133,6 +133,10 @@
               "label": "<Ce que le lecteur lit — ex: XVIe siècle>"
             },
             "era": "polity",
+            "claimStatus": "claimed",
+            "carrier": "<Qui transmet le récit, si la source le précise>",
+            "collection": "mediated",
+            "collector": "<Qui a recueilli le récit, si la source le précise>",
             "statement": "<Une phrase qui commence par le nom — ex: Le nom X est attesté…>",
             "hypothesisGroup": "<Même valeur pour les origines concurrentes d'une même période, montrées côte à côte, sans classement>",
             "birth": true,

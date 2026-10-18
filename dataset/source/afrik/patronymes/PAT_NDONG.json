@@ -21,35 +21,10 @@
   "transmissionMode": "other",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [
-      {
-        "claim": "Plusieurs Shiwe disent que leur nom est Toungou (Ntoungou), et que Ndong ne figure chez eux que parce que l'administration l'a écrit à la place de Toungou, qui serait d'origine makina.",
-        "claimStatus": "claimed",
-        "carrier": "Plusieurs informateurs shiwe (makina), sans autre précision dans l'article",
-        "collection": "direct",
-        "collector": "Fabrice Agyune Ndone",
-        "context": "Enquêtes du chercheur auprès des Makina du Gabon ; le lieu et la date des entretiens ne sont pas donnés. L'article ne dit ni quel agent de l'administration ni quand le nom a été écrit.",
-        "sourceRefs": ["agyune-ndone-anthroponymie-makina-fang"]
-      }
-    ],
+    "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le sens du nom en fang n'est pas établi : dans la liste des noms partagés par les Makina et les Fang, le chercheur place un point d'interrogation à la place du sens de Ndong.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["agyune-ndone-anthroponymie-makina-fang"]
-      },
-      {
-        "claim": "Pour les Makina, le chercheur juge « probable » que le nom shiwe Ntoungou, qui veut dire « citron », ait été rendu par le nom fang Ndong. Il précise que Ndong n'a rien à voir avec le citron en fang, où le fruit porte un tout autre mot.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["agyune-ndone-anthroponymie-makina-fang"]
-      },
-      {
-        "claim": "Le chercheur n'écarte pas d'autres explications de la présence de Ndong chez les Makina : une origine commune avec les Fang, ou un emprunt favorisé par les contacts et les mariages entre groupes. Il note aussi que des informateurs saké portent Ndong, qu'il rapproche plutôt de Ndongo.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["agyune-ndone-anthroponymie-makina-fang"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -91,10 +66,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Nous n'avons trouvé qu'une seule étude qui parle de ce nom, et elle ne donne aucun sens à Ndong en fang. Le récit des informateurs shiwe et le rapprochement avec le nom shiwe Ntoungou (« citron ») ne valent que pour les porteurs makina, pas pour les Fang. Nous n'avons pas pu consulter le dictionnaire des noms propres gabonais de Raponda Walker (1993), que l'article cite."
-    },
     {
       "fieldPath": "nameSystem",
       "reason": "Des sources font de Ndong le nom d'un clan fang : Günter Tessmann légende en 1913 la photographie d'une étable « Fam. Ndong », et des Fang interrogés par Bonifacio Nguema Obiang-Mikue citent en 2023 le clan Ndong. Obiang-Mikue en fait aussi un nom d'homme fang, et aucune source lue ne dit si les hommes qui le portent appartiennent à ce clan. La fiche garde donc la case du nom de clan, en disant que c'est aussi un nom de personne."
@@ -216,9 +187,13 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 7",
-                "notes": "Lu le 18 octobre 2026. Page 7 du PDF : « C'est le cas d'ailleurs de Ndong, figurant dans les actes d'identités civils de plusieurs Shiwe. Plusieurs de nos informateurs n'ont cessé de nous répéter que leur nom est Toungou », Ndong n'existant chez eux que par l'administration « qui l'aurait transcrit en lieu et place de NToungou ». Les informateurs ne sont pas nommés ; le lieu et la date des entretiens ne sont pas donnés. Page 8 : les Mekè et les Shiwe sont les deux sous-groupes makina."
+                "notes": "Lu le 18 octobre 2026. Page 7 du PDF : « C'est le cas d'ailleurs de Ndong, figurant dans les actes d'identités civils de plusieurs Shiwe. Plusieurs de nos informateurs n'ont cessé de nous répéter que leur nom est Toungou », Ndong n'existant chez eux que par l'administration « qui l'aurait transcrit en lieu et place de NToungou ». Les informateurs ne sont pas nommés ; le lieu et la date des entretiens ne sont pas donnés. Page 8 : les Mekè et les Shiwe sont les deux sous-groupes makina.\nEnquêtes du chercheur auprès des Makina du Gabon ; le lieu et la date des entretiens ne sont pas donnés. L'article ne dit ni quel agent de l'administration ni quand le nom a été écrit."
               }
-            ]
+            ],
+            "claimStatus": "claimed",
+            "carrier": "Plusieurs informateurs shiwe (makina), sans autre précision dans l'article",
+            "collection": "direct",
+            "collector": "Fabrice Agyune Ndone"
           },
           {
             "period": {
@@ -284,7 +259,8 @@
                 "page": "p. 7",
                 "notes": "Lu le 18 octobre 2026. Page 7 du PDF : après le récit des Shiwe, l'auteur ajoute que « d'autres hypothèses » sont possibles, « celle de l'origine commune » et « l'hypothèse de l'emprunt favorisé par les contacts et les nombreux mariages » ; il cite Ndong parmi les noms communs aux Fang et aux Makina dont il veut chercher l'origine."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           },
           {
             "period": {
@@ -349,6 +325,48 @@
                 "source_kind": "academic",
                 "page": "p. 285",
                 "notes": "Berlin, Ernst Wasmuth, 1913 ; exemplaire numérisé d'Internet Archive, lu le 18 octobre 2026. Page 285 : « Dem eigenen, vom Vater gegebenen Namen wird der des Vaters selbst angefügt » ; l'exemple de l'auteur est Boka-Essun, Boka fils d'Essun."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le sens du nom en fang n'est pas établi : dans la liste des noms partagés par les Makina et les Fang, le chercheur place un point d'interrogation à la place du sens de Ndong.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Anthroponymie comparée makina, fang et saké : quelques spécificités sur les noms de personnes chez les Makina du Gabon",
+                "author": "Fabrice Agyune Ndone",
+                "year": 2006,
+                "url": "http://www.ddl.cnrs.fr/fulltext/fflac/Agyune%20Ndone_2006.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5 (tableau n° 1) et p. 7",
+                "notes": "Article d'un doctorant en anthropologie (université Omar Bongo et université Lumière Lyon 2), non daté, mis en ligne par le laboratoire Dynamique du langage ; il cite des travaux de 2005 et 2006. Lu le 18 octobre 2026 ; les pages sont celles du PDF. Page 5, tableau n° 1 : Ndong figure dans la colonne des noms fang et dans celle des noms makina ; l'auteur ajoute que les noms de famille circulent « presque toujours en circuit fermé », d'ascendant à descendant. Page 7 : chez certains Saké, il relève « Ndong qui se rapproche plus de celui de Ndongo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le chercheur n'écarte pas d'autres explications de la présence de Ndong chez les Makina : une origine commune avec les Fang, ou un emprunt favorisé par les contacts et les mariages entre groupes. Il note aussi que des informateurs saké portent Ndong, qu'il rapproche plutôt de Ndongo.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Anthroponymie comparée makina, fang et saké : quelques spécificités sur les noms de personnes chez les Makina du Gabon",
+                "author": "Fabrice Agyune Ndone",
+                "year": 2006,
+                "url": "http://www.ddl.cnrs.fr/fulltext/fflac/Agyune%20Ndone_2006.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5 (tableau n° 1) et p. 7",
+                "notes": "Article d'un doctorant en anthropologie (université Omar Bongo et université Lumière Lyon 2), non daté, mis en ligne par le laboratoire Dynamique du langage ; il cite des travaux de 2005 et 2006. Lu le 18 octobre 2026 ; les pages sont celles du PDF. Page 5, tableau n° 1 : Ndong figure dans la colonne des noms fang et dans celle des noms makina ; l'auteur ajoute que les noms de famille circulent « presque toujours en circuit fermé », d'ascendant à descendant. Page 7 : chez certains Saké, il relève « Ndong qui se rapproche plus de celui de Ndongo »."
               }
             ]
           }

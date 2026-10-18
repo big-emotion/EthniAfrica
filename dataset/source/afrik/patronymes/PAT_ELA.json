@@ -32,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'étude onomastique consultée classe Elá parmi les noms fang considérés comme originaux, pour lesquels elle ne trouve ni dérivation ni composition circonstancielle ; aucune glose plus précise n'est donc proposée.",
-        "claimStatus": "established",
-        "sourceRefs": ["catedra-fang-ela-2023"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -144,6 +139,26 @@
                 "source_kind": "academic",
                 "page": "p. 67 et 317",
                 "notes": "Hambourg, L. Friederichsen, 1919 (Abhandlungen des Hamburgischen Kolonialinstituts, 24) ; exemplaire numérisé d'Internet Archive (université de Toronto), pages lues sur l'image le 18 octobre 2026. Textes en langue jaunde (ewondo) de Karl Atangana et Paul Messi, avec la traduction allemande de l'éditeur en regard. Page 67, récit n° 16 : « Mboomáña mané Ésóné-Ela », traduit « Mboo-mäna, Esone-Ela's Sohn ». Page 317 : « Ein trefflicher Jaundejüngling war Mboo-Mäna, der Sohn des Esono-Ela »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'étude onomastique consultée classe Elá parmi les noms fang considérés comme originaux, pour lesquels elle ne trouve ni dérivation ni composition circonstancielle ; aucune glose plus précise n'est donc proposée.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Culture for the Recognition of Identity: The Case of the Fang Culture of Equatorial Guinea",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://revistadigital.uce.edu.ec/index.php/CATEDRA/article/download/3868/5199/23782",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Version anglaise en PDF de l'article de Revista Cátedra 6(1), 2023, DOI 10.29166/catedra.v6i1.4282, consultée intégralement pour la fiche Ela. Les pages 8–9 citent explicitement Elá parmi les noms fang non décomposables et décrivent la répétition du patronyme paternel chez les enfants pour perpétuer la lignée. Cette source est utilisée ici uniquement pour ses énoncés explicites sur Elá et le système fang."
               }
             ]
           }

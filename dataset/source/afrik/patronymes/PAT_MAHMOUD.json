@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "La source classe Mahmoud comme nom de famille formé sur le nom personnel Mahmud/Mahmoud, avec la graphie محمود. Cette dérivation ne suffit pas à attribuer une histoire commune à tous les porteurs égyptiens.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["btn-surname-mahmoud"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -221,6 +216,26 @@
                 "source_kind": "archive",
                 "page": "p. 31",
                 "notes": "Le Caire, Imprimerie nationale, 1888. Chronique égyptienne écrite par un lettré du Caire, lue dans la traduction française sur l'exemplaire numérisé d'archive.org le 14 octobre 2026. Page 31, résumé de l'histoire des rois d'Égypte : « Nour-el-Din Mahmoud ibn Zinki, qui luttait dans ce pays contre eux, envoya Assad-el-Din-Chircawa à la tête d'une armée pour faire la conquête de l'Egypte », au temps des derniers califes fatimides."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La source classe Mahmoud comme nom de famille formé sur le nom personnel Mahmud/Mahmoud, avec la graphie محمود. Cette dérivation ne suffit pas à attribuer une histoire commune à tous les porteurs égyptiens.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the surname Mahmoud — Behind the Name",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://surnames.behindthename.com/name/mahmoud",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site d'onomastique en ligne, lu le 14 octobre 2026. Entrée mise à jour le 26 mai 2026 : nom de famille « From the given name Mahmud », écrit محمود, d'usage arabe et persan, avec les variantes Mahmud et Mahmoudi."
               }
             ]
           }

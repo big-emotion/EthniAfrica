@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -62,10 +63,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Les recherches « Mekonnen anthroponymie », « Mekonnen onomastique », « Mekonnen etymology » et les résultats des catalogues Persée, OpenEdition, Oxford Academic et des dépôts universitaires éthiopiens n'ont livré aucun travail savant consacré à cette fiche. Les pages exactes consultées n'apportent qu'une attestation de forme ou de répartition ; aucune étymologie n'est donc ajoutée."
-    },
     {
       "fieldPath": "peoples",
       "reason": "Les recherches « Mekonnen anthroponymie », « Mekonnen onomastique », « Mekonnen etymology » et les résultats des catalogues Persée, OpenEdition, Oxford Academic et des dépôts universitaires éthiopiens n'ont livré aucun travail savant consacré à cette fiche. La source propre au nom ne démontre pas une association exclusive avec le peuple indiqué ; ce rattachement reste au niveau non vérifié."

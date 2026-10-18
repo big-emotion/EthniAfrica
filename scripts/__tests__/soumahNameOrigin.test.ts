@@ -22,19 +22,26 @@ const sourceKeys: string[] = fiche.sources.map(
 describe("the clan name Soumah, after Arcin (1907)", () => {
   // @req REQ-196
   it("writes Arcin's account of the Souma into the origin, with its page", () => {
-    const chronicle = fiche.origin.writtenChronicles[0];
+    const chronicle = fiche.nameHistory.names[0].accounts.find(
+      (account: { statement: string }) => /Gania/.test(account.statement)
+    );
 
-    expect(chronicle.claim).toMatch(/Arcin/);
-    expect(chronicle.claim).toMatch(/Gania/);
-    expect(chronicle.claim).toMatch(/Dubréka/);
+    expect(chronicle.statement).toMatch(/Arcin/);
+    expect(chronicle.statement).toMatch(/Gania/);
+    expect(chronicle.statement).toMatch(/Dubréka/);
     expect(chronicle.claimStatus).toBe("claimed");
-    expect(sourceKeys).toContain(chronicle.sourceRefs[0]);
+    expect(
+      chronicle.sources.some(
+        (source: { page?: string }) => source.page === "p. 298-299"
+      )
+    ).toBe(true);
+    expect(sourceKeys).toContain("arcin-1907-guinee-francaise");
   });
 
   // @req REQ-196
   it("keeps Arcin's Keïta kinship and Suma / Sumaoro as attributed hypotheses", () => {
-    const claims = fiche.origin.linguisticReconstructions.map(
-      (entry: { claim: string }) => entry.claim
+    const claims = fiche.nameHistory.names[0].accounts.map(
+      (entry: { statement: string }) => entry.statement
     );
 
     expect(claims.some((claim: string) => /Keïta/.test(claim))).toBe(true);

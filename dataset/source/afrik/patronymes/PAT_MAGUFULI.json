@@ -22,16 +22,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Une étude politique spécialisée identifie John Magufuli comme Zinza, sous-groupe du vaste ensemble sukuma dont les membres s'identifient souvent comme Sukuma. Sa biographie officielle le situe à Chato en Tanzanie. Ces sources établissent un porteur sukuma-zinza, mais ne donnent aucune origine linguistique au patronyme.",
-        "claimStatus": "established",
-        "sourceRefs": [
-          "tandfonline-magufuli-ethnicity",
-          "ikulu-magufuli-profile"
-        ]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -105,5 +97,49 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web combinant « Magufuli », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de l'article sur le régime Magufuli, la biographie et le communiqué funéraire officiels de la présidence tanzanienne, ainsi que des requêtes sur l'origine du nom, n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Les sources réunies dans ce dossier racontent l’histoire du nom Magufuli.",
+    "originExplained": true,
+    "names": [
+      {
+        "nameText": "Magufuli",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une étude politique spécialisée identifie John Magufuli comme Zinza, sous-groupe du vaste ensemble sukuma dont les membres s'identifient souvent comme Sukuma. Sa biographie officielle le situe à Chato en Tanzanie. Ces sources établissent un porteur sukuma-zinza, mais ne donnent aucune origine linguistique au patronyme.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Tanzania under Magufuli: The Personalization of a Party-Based Regime",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.tandfonline.com/doi/abs/10.1080/13510347.2023.2273871",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Article scientifique consulté sur la page de l'éditeur et dans son texte disponible. Il précise que John Magufuli était Zinza, sous-groupe du vaste ensemble sukuma, et explique l'usage contextuel de cette identification."
+              },
+              {
+                "title": "Wasifu: Mhe. Dkt. John Pombe Joseph Magufuli",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.ikulu.go.tz/administration/profile/6",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Biographie officielle en swahili consultée directement. Elle donne le nom complet, la naissance à Chato en 1959 et la carrière du cinquième président tanzanien."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

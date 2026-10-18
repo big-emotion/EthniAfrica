@@ -36,13 +36,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "La collecte communautaire Wikinames rapporte Gatluaak/Nyaluaak lorsqu’une famille a construit une grande étable. La grammaire nuer établit seulement que gat- signifie « fils, enfant » ; elle ne permet pas de reconstruire le second élément. L’explication complète reste claimed.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["wikinames-south-sudan-2025", "indiana-nuer-grammar"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -247,6 +242,35 @@
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
                 "notes": "Fiches de vocabulaire nuer réunies par Eleanor Vandevort, missionnaire presbytérienne à Nasir de 1949 à 1963, publiées par l'université de l'Indiana. Lu le 11 octobre 2026. Entrée « Luak barn » ; la liste donne aussi « Luääk a helper »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La collecte communautaire Wikinames rapporte Gatluaak/Nyaluaak lorsqu’une famille a construit une grande étable. La grammaire nuer établit seulement que gat- signifie « fils, enfant » ; elle ne permet pas de reconstruire le second élément. L’explication complète reste claimed.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Wikinames South Sudan 2025",
+                "author": "Contributeurs de Wikinames South Sudan",
+                "year": 2025,
+                "url": "https://meta.wikimedia.org/wiki/Wikinames_South_Sudan_2025",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Collecte communautaire de noms sud-soudanais publiée sur Meta-Wiki, sans appareil critique. Lu le 11 octobre 2026. Tableau Naath/Nuer : « Gatluaak/Nyaluaak », « when a family built a big house for cattle » ; un autre tableau donne pour Gatluak « Not readily available »."
+              },
+              {
+                "title": "A Precis of the Nuer Grammar",
+                "author": "Nuer Field Notes Project, Indiana University",
+                "year": null,
+                "url": "https://dlib.indiana.edu/collections/nuer/grammar/gramintro.utx.html",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Grammaire pédagogique des bibliothèques de l'université de l'Indiana. Lu le 11 octobre 2026. Section Proper Names : « The male prefix is gat- meaning son or child » ; « nya- stemming from [nyal] meaning daughter or girl » ; dans le nom complet, « the father's name is always in the genitive case »."
               }
             ]
           }

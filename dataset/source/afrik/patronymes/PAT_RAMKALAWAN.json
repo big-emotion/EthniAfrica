@@ -26,6 +26,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -76,10 +77,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "les résultats exacts « Ramkalawan », le catalogue des Seychelles National Archives, le Family Tree Project et les recherches patrimoniales décrites par O'Gorman ont été consultés. Ils attestent le nom ou décrivent le fonds disponible, mais n'ont livré ni étymologie publiée ni chronique attribuable à une lignée précise ; l'origine reste donc vide."
-    },
     {
       "fieldPath": "alliances",
       "reason": "les résultats exacts « Ramkalawan », le catalogue des Seychelles National Archives, le Family Tree Project et les recherches patrimoniales décrites par O'Gorman, complétés par les termes « alliance », « cousinage » et « joking relationship », n'ont fait apparaître aucune paire nommée et sourcée reliant Ramkalawan à un autre nom documenté ici."

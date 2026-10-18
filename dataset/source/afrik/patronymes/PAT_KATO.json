@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une enquête universitaire sur les pratiques de nomination en Ouganda rapporte que, chez les Baganda, Kato est attribué au garçon né en second dans une paire de jumeaux : après Waswa lorsque les deux enfants sont des garçons, ou après Babirye lorsque la fille naît la première. Cette règle documente un nom individuel de rang de naissance plutôt qu'un nom clanique totémique.",
-        "claimStatus": "established",
-        "sourceRefs": ["kyambogo-wadiko-kato"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -141,6 +136,27 @@
                 "source_kind": "archive",
                 "page": "p. 154",
                 "notes": "Londres, Sampson Low, Marston, Searle & Rivington, 1890, « nouvelle édition à bon marché » (le livre est paru pour la première fois en 1889) ; exemplaire numérisé sur archive.org. Page 154 : « Kato, the page who took my message, \"re-delivered\" me in a very polite manner. He was one of the Frenchman's pupils, and a great friend of mine », dans un passage qui suit une date : « About this time, June of 1885 ». Missionnaire, cité pour les formes qu'il écrit. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une enquête universitaire sur les pratiques de nomination en Ouganda rapporte que, chez les Baganda, Kato est attribué au garçon né en second dans une paire de jumeaux : après Waswa lorsque les deux enfants sont des garçons, ou après Babirye lorsque la fille naît la première. Cette règle documente un nom individuel de rang de naissance plutôt qu'un nom clanique totémique.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Contextual Study of 1 Samuel 1:1–20 in Relation to Naming Practices of the Lugbara",
+                "author": "Wadiko Iren",
+                "year": 2019,
+                "url": "https://kyuspace.kyu.ac.ug/server/api/core/bitstreams/a01f6712-047f-4e8b-a12b-0eb0c7d23cc6/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 115-116",
+                "notes": "Mémoire de master, Kyambogo University, juillet 2019, lu dans son texte intégral. Pages 115 et 116 : l'autrice rapporte la règle des noms de jumeaux chez les Baganda d'après un entretien du 16 février 2018 avec Rose Nairuba (note 261). Nous connaissons ce témoignage par le mémoire seulement, sans transcription de l'entretien. Lu le 13 octobre 2026."
               }
             ]
           }

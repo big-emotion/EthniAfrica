@@ -36,18 +36,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "YorubaNames analyse Adébáyọ̀ comme adé-bá-ayọ̀ (« la royauté rencontre la joie ») ou a-dé-bá-ayọ̀ (« nous sommes arrivés dans la joie »). Une source pédagogique universitaire l'atteste séparément comme nom choisi pour un garçon né pendant une période de joie familiale.",
-        "claimStatus": "established",
-        "sourceRefs": ["yorubanames-adebayo", "merryfield-1989-yoruba"]
-      },
-      {
-        "claim": "Dans la typologie de l'onomastique yoruba, un nom comme Adébáyọ̀ — donné pour marquer la joie entourant une naissance — relève des orúkọ àmútọ̀runwá (noms dits « apportés du ciel », attribués selon les circonstances de la naissance), une catégorie que les chercheurs distinguent des oríkì proprement dits, qui sont des noms de louange célébrant une lignée ou des qualités. Cette classification précise le sens du prénom sans contredire son interprétation comme « la royauté rencontre la joie ».",
-        "claimStatus": "claimed",
-        "sourceRefs": ["fakuade-2020-yoruba-naming"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -206,6 +196,56 @@
                 "tier": "unverified",
                 "source_kind": "community",
                 "notes": "Dictionnaire collaboratif des noms yoruba, lu le 11 octobre 2026. Il donne la forme tonale Adébáyọ̀, deux sens, « Royalty meets joy » et « We have come to meet joy », et deux découpages, adé-bá-ayọ̀ et a-dé-bá-ayọ̀. La page ne nomme pas ses contributeurs."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "YorubaNames analyse Adébáyọ̀ comme adé-bá-ayọ̀ (« la royauté rencontre la joie ») ou a-dé-bá-ayọ̀ (« nous sommes arrivés dans la joie »). Une source pédagogique universitaire l'atteste séparément comme nom choisi pour un garçon né pendant une période de joie familiale.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Adébáyọ̀ — YorubaNames",
+                "author": "YorubaNames",
+                "year": null,
+                "url": "https://www.yorubaname.com/entries/adebayo?lang=en",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Dictionnaire collaboratif des noms yoruba, lu le 11 octobre 2026. Il donne la forme tonale Adébáyọ̀, deux sens, « Royalty meets joy » et « We have come to meet joy », et deux découpages, adé-bá-ayọ̀ et a-dé-bá-ayọ̀. La page ne nomme pas ses contributeurs."
+              },
+              {
+                "title": "Lessons from Africa: A Supplement to Middle School Courses in World Cultures, Global Studies, and World Geography",
+                "author": "Merry M. Merryfield (dir.)",
+                "year": 1989,
+                "url": "https://files.eric.ed.gov/fulltext/ED304395.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 47",
+                "notes": "ERIC Clearinghouse et Social Studies Development Center, Indiana University, 1989. Lu dans le PDF intégral le 11 octobre 2026. La liste « Some Yoruba Names and Their Meanings », attribuée à E. B. Ogundimu, donne : « Adebayo, Bayo, Born at time of joy in family »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans la typologie de l'onomastique yoruba, un nom comme Adébáyọ̀ — donné pour marquer la joie entourant une naissance — relève des orúkọ àmútọ̀runwá (noms dits « apportés du ciel », attribués selon les circonstances de la naissance), une catégorie que les chercheurs distinguent des oríkì proprement dits, qui sont des noms de louange célébrant une lignée ou des qualités. Cette classification précise le sens du prénom sans contredire son interprétation comme « la royauté rencontre la joie ».",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Yoruba personal naming system: Traditions, patterns and practices",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://doi.org/10.1558/sols.37825",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Article de Gbenga Fakuade, Joseph Friday-Otun et Hezekiah Adeosun paru dans la revue Sociolinguistic Studies (vol. 13, n° 2-4, 2020). Le résumé et des extraits indexés ont été consultés le 5 septembre 2026 ; le texte intégral n'était pas librement accessible. Cette étude distingue, dans la nomenclature des noms yoruba, les orúkọ àmútọ̀runwá (donnés selon les circonstances de la naissance) des oríkì, noms de louange proprement dits."
               }
             ]
           }

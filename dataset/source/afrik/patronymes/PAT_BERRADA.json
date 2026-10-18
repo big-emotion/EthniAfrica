@@ -22,13 +22,8 @@
   "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "L’étude historique consultée cite Berrada parmi des noms encore portés dans la communauté juive du Maroc et signale plusieurs hypothèses étymologiques concurrentes. La fiche conserve seulement cette attestation contextualisée, sans choisir entre les hypothèses.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["jqr-berrada"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -225,6 +220,27 @@
                 "source_kind": "academic",
                 "page": "p. 63, note 70",
                 "notes": "The Jewish Quarterly Review, vol. 55, n° 1, juillet 1964, p. 53-81 (University of Pennsylvania Press). Lu le 14 octobre 2026 dans une copie non officielle de l'article, déposée sur un site consacré au mellah de Fès. Note 70 : « Berrada may also be a surname. It means a porous water jug. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L’étude historique consultée cite Berrada parmi des noms encore portés dans la communauté juive du Maroc et signale plusieurs hypothèses étymologiques concurrentes. La fiche conserve seulement cette attestation contextualisée, sans choisir entre les hypothèses.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "The Jews of Morocco under the Marinides (Continued)",
+                "author": "David Corcos",
+                "year": 1964,
+                "url": "https://mellahdefes.fr/resources/Documents/juifs-maroc-sous-Merinides.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 62-63 et note 70",
+                "notes": "The Jewish Quarterly Review, vol. 55, n° 1, juillet 1964, p. 53-81 (University of Pennsylvania Press). Lu le 14 octobre 2026 dans une copie non officielle de l'article, déposée sur un site consacré au mellah de Fès. Page 62 : liste, parmi les exemples les mieux connus, de familles musulmanes de Fès, établies de longue date dans le commerce, dont les noms sont « either obviously Jewish or which indicate a Jewish origin ». Page 63 : la liste continue par « La'zari, Berrada, Guennoun… », avec la note 70 sur Berrada."
               }
             ]
           }

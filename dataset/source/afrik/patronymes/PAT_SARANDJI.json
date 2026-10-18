@@ -11,7 +11,10 @@
     {
       "spelling": "Sarandji",
       "attestations": [
-        { "countryId": "CAF", "sourceRefs": ["gouv-cf-sarandji"] }
+        {
+          "countryId": "CAF",
+          "sourceRefs": ["gouv-cf-sarandji"]
+        }
       ]
     }
   ],
@@ -20,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [],
@@ -45,10 +49,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Les recherches exactes « Sarandji », « Sarandji onomastique », « Sarandji anthroponymie » et « Sarandji étymologie » dans les catalogues universitaires, Persée, OpenEdition, Google Scholar et les publications centrafricaines n'ont livré ni récit d'origine, ni chronique ancienne, ni reconstruction linguistique."
-    },
     {
       "fieldPath": "peoples",
       "reason": "La page gouvernementale atteste un porteur centrafricain sans indiquer son appartenance ethnique ; aucune source dédiée trouvée n'a confirmé les Sara, association provenant uniquement de la file de candidats et donc retirée."

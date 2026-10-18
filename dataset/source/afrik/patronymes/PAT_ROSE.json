@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le Dictionary of American Family Names réunit pour Rose plusieurs formations anglaises, écossaises, françaises, wallonnes, danoises et allemandes : la fleur, un lieu ou une enseigne à la rose, un teint rosé, ou un prénom féminin. Sans archive de lignée, la branche seychelloise ne peut être assignée à l'une d'elles.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["dafn-rose-2022"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -224,6 +219,26 @@
                 "tier": "unverified",
                 "source_kind": "community",
                 "notes": "Base de données d'une association de généalogie, qui dépouille les registres d'état civil et paroissiaux. Lue le 11 octobre 2026. Le patronyme ROSE y figure dans les mariages de Mahé pour la période 1840-1904, avec 43 mentions. Le détail des actes est réservé aux membres et n'a pas été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le Dictionary of American Family Names réunit pour Rose plusieurs formations anglaises, écossaises, françaises, wallonnes, danoises et allemandes : la fleur, un lieu ou une enseigne à la rose, un teint rosé, ou un prénom féminin. Sans archive de lignée, la branche seychelloise ne peut être assignée à l'une d'elles.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e édition — entrée Rose",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/rose?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 11 octobre 2026 dans la traduction française que le site affiche. La notice réunit plusieurs origines selon la langue : en français, le prénom féminin Rose, tiré du nom de la fleur, un surnom pour un teint rosé, ou le nom de lieux appelés (La) Rose ; en anglais, un ancien prénom féminin, Rohese. Elle note que le nom se trouve aussi aux Antilles et à l'île Maurice."
               }
             ]
           }

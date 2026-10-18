@@ -22,13 +22,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Ojok est documenté comme un nom personnel masculin acholi donné à un enfant né avec une marque ou une particularité physique inhabituelle.",
-        "claimStatus": "established",
-        "sourceRefs": ["amone-acholi-naming-2014"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -166,6 +161,27 @@
                 "source_kind": "academic",
                 "page": "p. 152",
                 "notes": "Londres, T. Fisher Unwin, 1923. Page 152 : « A child born with teeth is named Ojok (fem. Ajok) », note 3 : « From Jok (god), indicating a supernatural influence governing its birth ». Administrateur colonial britannique, cité pour ce qu'il écrit des Langi. Numérisation de la Digital Library of India hébergée par Internet Archive ; page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Ojok est documenté comme un nom personnel masculin acholi donné à un enfant né avec une marque ou une particularité physique inhabituelle.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Identity, Memory and Gender in Child Naming Among the Acholi People of Northern Uganda",
+                "author": "Charles Amone",
+                "year": 2014,
+                "url": "https://ijournals.in/wp-content/uploads/2017/07/IJSRC-2505.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 20",
+                "notes": "International Journal of Social Relevance & Concern 2(5), 2014, p. 17-24. Tableau des noms de jok : Ojok/Ajok, « Born with some unusual mark or feature on some body part » ; texte précédent : toute naissance hors norme est attribuée à jok. Historien de l'université de Gulu. Texte du PDF lu en entier. Lu le 13 octobre 2026."
               }
             ]
           }

@@ -73,64 +73,10 @@
   "transmissionMode": "patrilineal",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [
-      {
-        "claim": "Le récit d'origine des dynasties bambara raconte que deux frères, Baramangolo et Niangolo, poursuivis par un ennemi et sans pirogue, ont traversé le fleuve grâce à un énorme silure, le m'polio, qui les a sauvés de justesse. Baramangolo demande ensuite asile aux Buare, des Soninké de Ségou, qui lui accordent un territoire à part, et Niangolo bâtit une place forte à Baïko.",
-        "claimStatus": "claimed",
-        "collection": "mediated",
-        "collector": "Michel Izard et Joseph Ki-Zerbo",
-        "context": "Synthèse historique publiée par l'UNESCO, édition française de 1999",
-        "sourceRefs": ["hga-v-izard-kizerbo"]
-      },
-      {
-        "claim": "Les Coulibaly viendraient de Dyogo, un village proche de Ségou.",
-        "claimStatus": "claimed",
-        "carrier": "Des griots que Molinie ne nomme pas",
-        "collection": "mediated",
-        "collector": "Molinie, officier de la marine française, en 1959",
-        "context": "Récit tiré d'un dictionnaire rédigé pour les Européens en poste en Afrique-Occidentale française, cité de seconde main dans un mémoire de 2017 qui met en garde contre ses généralisations sans fondement",
-        "sourceRefs": ["bogacheva-2017-jamu"]
-      },
-      {
-        "claim": "Le silure npolyo, le poisson du récit de la traversée, compte parmi les interdits des Coulibaly ; la branche aînée, celle de Niangolo, s'interdit aussi le lion et l'hippopotame. Une explication populaire du nom Kasanbara, porté par des Dogon de Bandiagara et des Bambara de Mopti et tenu pour équivalent de Coulibaly, le tire de kásaa ń bàra, « je sens le poisson », et met en scène un frère cadet Coulibaly qui a mangé un silure. Le même dictionnaire note une origine commune des Coulibaly et des Keïta, et donne la devise « Masa Kuru ni Masa Donde ! » comme celle de Biton Coulibaly.",
-        "claimStatus": "claimed",
-        "collection": "mediated",
-        "collector": "V. Vydrine et A. Davydov, dont les matériaux sont publiés dans le dictionnaire des noms de clan et dans un mémoire de 2017",
-        "context": "Notes de dictionnaire, sans indication de lieu ni d'informateur",
-        "sourceRefs": ["bamadaba-jamuw", "bogacheva-2017-jamu"]
-      },
-      {
-        "claim": "D'autres récits font venir les Coulibaly de la rive sud du fleuve, et même de Kong, et leur font passer le fleuve, par exemple sur un silure.",
-        "claimStatus": "claimed",
-        "collection": "mediated",
-        "collector": "E. A. Bogacheva, qui les résume sans nommer de conteur",
-        "context": "Récits résumés en russe dans un mémoire universitaire de 2017",
-        "sourceRefs": ["bogacheva-2017-jamu"]
-      }
-    ],
+    "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le dictionnaire des noms de clan mandingues écrit le nom Kùlibàli, avec la forme Kùlubàli, et le définit seulement comme un nom de clan, sans lui donner de sens.",
-        "claimStatus": "established",
-        "sourceRefs": ["bamadaba-jamuw"]
-      },
-      {
-        "claim": "Une explication tire le nom de la traversée du fleuve sans pirogue : Koulibali viendrait de kulu, « pirogue », et du privatif bali. La source qui la donne ajoute aussitôt qu'il en existe d'autres.",
-        "claimStatus": "contested",
-        "sourceRefs": ["hga-v-izard-kizerbo"]
-      },
-      {
-        "claim": "Une étude de 2017 propose de lire l'explication « sans pirogue » en sens inverse : elle pourrait désigner des ancêtres qui n'ont pas traversé et sont restés sur la rive nord du Niger, à laquelle l'étude rattache historiquement les Coulibaly, avec Koulikoro, Bamako et le Kaarta. L'étude y range aussi Ségou, que la synthèse de l'UNESCO place pourtant sur la rive droite, au sud.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["bogacheva-2017-jamu"]
-      },
-      {
-        "claim": "Une autre lecture part des formes Kudubali ou Kurubali, qui contiendraient kuluba, « la grande colline », comme la colline de Koulouba à Bamako. L'étude de 2017 qui la propose tient cette traduction pour très plausible et la range parmi les étymologies savantes probables, tout en notant que le nom ne se ramène avec certitude à aucun nom de lieu.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["bogacheva-2017-jamu"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -476,6 +422,152 @@
                 "page": "p. 96",
                 "notes": "Mémoire de licence écrit en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov et relu par V. Vydrin. Ce n'est pas une publication relue par des pairs."
               }
+            ],
+            "claimStatus": "claimed"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le récit d'origine des dynasties bambara raconte que deux frères, Baramangolo et Niangolo, poursuivis par un ennemi et sans pirogue, ont traversé le fleuve grâce à un énorme silure, le m'polio, qui les a sauvés de justesse. Baramangolo demande ensuite asile aux Buare, des Soninké de Ségou, qui lui accordent un territoire à part, et Niangolo bâtit une place forte à Baïko.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 12 : Du Niger à la Volta",
+                "author": "Michel Izard et Joseph Ki-Zerbo",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 372",
+                "notes": "UNESCO, dir. B. A. Ogot, 1999. Page 372 : la forme Kurubari donnée à côté de Koulibali.\nSynthèse historique publiée par l'UNESCO, édition française de 1999"
+              }
+            ],
+            "collection": "mediated",
+            "collector": "Michel Izard et Joseph Ki-Zerbo"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Les Coulibaly viendraient de Dyogo, un village proche de Ségou.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 95-96",
+                "notes": "Mémoire de licence écrit en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov et relu par V. Vydrin. Ce n'est pas une publication relue par des pairs.\nRécit tiré d'un dictionnaire rédigé pour les Européens en poste en Afrique-Occidentale française, cité de seconde main dans un mémoire de 2017 qui met en garde contre ses généralisations sans fondement"
+              }
+            ],
+            "carrier": "Des griots que Molinie ne nomme pas",
+            "collection": "mediated",
+            "collector": "Molinie, officier de la marine française, en 1959"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le silure npolyo, le poisson du récit de la traversée, compte parmi les interdits des Coulibaly ; la branche aînée, celle de Niangolo, s'interdit aussi le lion et l'hippopotame. Une explication populaire du nom Kasanbara, porté par des Dogon de Bandiagara et des Bambara de Mopti et tenu pour équivalent de Coulibaly, le tire de kásaa ń bàra, « je sens le poisson », et met en scène un frère cadet Coulibaly qui a mangé un silure. Le même dictionnaire note une origine commune des Coulibaly et des Keïta, et donne la devise « Masa Kuru ni Masa Donde ! » comme celle de Biton Coulibaly.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrée Kùlibàli",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence. Fichier complet consulté le 9 octobre 2026 : l'entrée Kùlibàli, datée de 2014, donne la forme Kùlubàli et la définit comme un nom de clan, sans lui donner de sens.\nNotes de dictionnaire, sans indication de lieu ni d'informateur"
+              },
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 95-96",
+                "notes": "Mémoire de licence écrit en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov et relu par V. Vydrin. Ce n'est pas une publication relue par des pairs."
+              }
+            ],
+            "collection": "mediated",
+            "collector": "V. Vydrine et A. Davydov, dont les matériaux sont publiés dans le dictionnaire des noms de clan et dans un mémoire de 2017"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "D'autres récits font venir les Coulibaly de la rive sud du fleuve, et même de Kong, et leur font passer le fleuve, par exemple sur un silure.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 95-96",
+                "notes": "Mémoire de licence écrit en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov et relu par V. Vydrin. Ce n'est pas une publication relue par des pairs.\nRécits résumés en russe dans un mémoire universitaire de 2017"
+              }
+            ],
+            "collection": "mediated",
+            "collector": "E. A. Bogacheva, qui les résume sans nommer de conteur"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une explication tire le nom de la traversée du fleuve sans pirogue : Koulibali viendrait de kulu, « pirogue », et du privatif bali. La source qui la donne ajoute aussitôt qu'il en existe d'autres.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 12 : Du Niger à la Volta",
+                "author": "Michel Izard et Joseph Ki-Zerbo",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 372",
+                "notes": "UNESCO, dir. B. A. Ogot, 1999. Page 372 : la forme Kurubari donnée à côté de Koulibali."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une étude de 2017 propose de lire l'explication « sans pirogue » en sens inverse : elle pourrait désigner des ancêtres qui n'ont pas traversé et sont restés sur la rive nord du Niger, à laquelle l'étude rattache historiquement les Coulibaly, avec Koulikoro, Bamako et le Kaarta. L'étude y range aussi Ségou, que la synthèse de l'UNESCO place pourtant sur la rive droite, au sud.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 95-96",
+                "notes": "Mémoire de licence écrit en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov et relu par V. Vydrin. Ce n'est pas une publication relue par des pairs."
+              }
             ]
           }
         ]
@@ -514,7 +606,8 @@
                 "page": "entrée Kùlibàli",
                 "notes": "Fichier complet consulté le 9 octobre 2026."
               }
-            ]
+            ],
+            "claimStatus": "established"
           }
         ]
       }

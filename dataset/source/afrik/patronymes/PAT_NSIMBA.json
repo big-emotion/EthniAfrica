@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Ndoma classe Nsimba parmi les noms kongo donnés selon la chronologie de la naissance : le premier jumeau est appelé Nsimba parce qu'il « tient » l'autre, à partir de simba, « tenir ». Dans le système décrit, il s'agit d'un nom circonstanciel individuel, non d'un nom de clan transmis.",
-        "claimStatus": "established",
-        "sourceRefs": ["ndoma-1977-nsimba"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -229,6 +224,27 @@
                 "source_kind": "academic",
                 "page": "p. 89",
                 "notes": "Names: A Journal of Onomastics, vol. 25, n° 2, 1977, p. 88-98. Texte intégral lu. Page 89 : « The one who comes out first, NSIMBA, holds (i.e., simba - 'to hold') the other twin. » Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Ndoma classe Nsimba parmi les noms kongo donnés selon la chronologie de la naissance : le premier jumeau est appelé Nsimba parce qu'il « tient » l'autre, à partir de simba, « tenir ». Dans le système décrit, il s'agit d'un nom circonstanciel individuel, non d'un nom de clan transmis.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Kongo Personal Names Today: a Sketch",
+                "author": "Ungina Ndoma",
+                "year": 1977,
+                "url": "https://ans-names.pitt.edu/ans/article/download/845/844",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 89",
+                "notes": "Names: A Journal of Onomastics, vol. 25, n° 2, 1977, p. 88-98. Texte intégral lu. Page 89 : « NSIMBA and NZUZI: names for twins regardless of their sex. All twins are called ba-NSIMBA, i.e., 'those who hold each other.' The one who comes out first, NSIMBA, holds (i.e., simba - 'to hold') the other twin who is then drawn out (zuta, zutua - 'to draw'). » L'auteur décrit surtout le sud des Kongo. Lu le 13 octobre 2026."
               }
             ]
           }

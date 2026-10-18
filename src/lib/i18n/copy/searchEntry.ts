@@ -16,6 +16,8 @@ export const searchEntryCopy: Record<Language, SearchEntryCopy> = {
 export interface WeeklySearchName {
   form: string;
   href: string;
+  subject?: { type: string; id: string };
+  summary?: string;
 }
 
 // @req REQ-200

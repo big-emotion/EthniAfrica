@@ -59,36 +59,10 @@
   "transmissionMode": "other",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [
-      {
-        "claim": "Une tradition peule, de forme islamisée, fait descendre le clan Ba de Raabou, ou Raarabou, fils de l'Arabe Okba et de Tadiouma, fille du roi de Tôr, c'est-à-dire du Sinaï. Ses trois sœurs, Daa, Ouoï et Noussou, auraient donné les trois autres grands clans peuls, Diallo, Bari et Sô. Les Ba y sont aussi appelés Ourourbé.",
-        "claimStatus": "claimed",
-        "collection": "mediated",
-        "collector": "Maurice Delafosse, administrateur colonial",
-        "context": "Traditions peules du Soudan, rapportées sans date ni lieu précis et publiées en 1912",
-        "sourceRefs": ["delafosse-1912-haut-senegal-niger"]
-      }
-    ],
-    "writtenChronicles": [
-      {
-        "claim": "Au Fouta-Djalon, Bâ, Bah et Baldé sont donnés comme les noms du groupe classique Uururɓe ; une étude historique ultérieure confirme Bah parmi les quatre yettore employés comme noms de famille et marqueurs fulɓe.",
-        "claimStatus": "established",
-        "sourceRefs": ["vieillard-fouta-clans", "straussberger-2016-futa"]
-      }
-    ],
-    "linguisticReconstructions": [],
-    "historicalSyntheses": [
-      {
-        "claim": "Les quatre grands clans peuls auraient pris forme au Fouta Toro, chez des descendants de Judéo-Syriens de Cyrénaïque, sur le modèle des clans toucouleurs alors dominants : Sal, Ba, Sô et Bari, côté toucouleur, auraient répondu à Diallo, Boli (ou Bourouro), Pérédio et Daédio, côté peul. L'auteur de cette lecture, un administrateur colonial en 1912, précise que ces mots ne se traduisent pas l'un l'autre : ce sont des mots d'origines distinctes d'une même langue, employés les uns surtout par les Toucouleurs, les autres par les Peuls. Il tient le rattachement à la famille du Prophète pour un ajout de Peuls musulmans. C'est son hypothèse, pas un point établi, et elle repose sur sa thèse d'une ascendance judéo-syrienne des Peuls, que nous ne reprenons pas.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["delafosse-1912-haut-senegal-niger"]
-      },
-      {
-        "claim": "Ba compte parmi les noms que portent les Peul, avec Sow, Jallo et Ka, comme Juuf, Jonn et Seen sont des noms seereer. Le chapitre ne dit pas d'où vient le nom, seulement à quel groupe on le rattache.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["hga-i-diagne"]
-      }
-    ]
+    "oralTraditions": [],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -166,10 +140,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Aucun sens du mot Ba n'est établi dans les sources que nous avons consultées : elles disent à quel groupe le nom se rattache et comment un récit peul explique le clan. Nous n'avons trouvé que des sources extérieures aux porteurs du nom, dont une de 1912 écrite par un administrateur colonial ; aucune explication transmise par les familles Ba elles-mêmes n'a été trouvée. Les lectures ci-dessus sont des pistes attribuées, aucune n'est retenue comme la bonne."
-    },
     {
       "fieldPath": "alliances",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
@@ -345,6 +315,98 @@
                 "source_kind": "archive",
                 "page": "p. 99",
                 "notes": "Saint-Louis, Imprimerie du Gouvernement, 1865, lu le 13 octobre 2026 dans la numérisation d'Internet Archive (catalogue : « Annuaire du Gouvernement général de l'Afrique occidentale française »). Page 99, rubrique « 3e Série — Licences » : la ligne « Alioun-Ba, idem » suit « Diogomaye, idem », la rubrique précédente étant « Malic-Samba, maraîcher de Bouët-Ville ». Le volume ne donne pas de prénom autre qu'Alioun."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une tradition peule, de forme islamisée, fait descendre le clan Ba de Raabou, ou Raarabou, fils de l'Arabe Okba et de Tadiouma, fille du roi de Tôr, c'est-à-dire du Sinaï. Ses trois sœurs, Daa, Ouoï et Noussou, auraient donné les trois autres grands clans peuls, Diallo, Bari et Sô. Les Ba y sont aussi appelés Ourourbé.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Émile Larose, 1912 ; ouvrage d'un administrateur colonial, lu le 12 octobre 2026 dans l'édition numérique du Projet Gutenberg, qui ne donne pas les numéros de page. Le passage se trouve dans la partie sur l'origine des Peuls. Il est cité pour ce qu'il dit des noms de clan, non pour sa thèse d'une ascendance judéo-syrienne des Peuls, que nous ne reprenons pas.\nTraditions peules du Soudan, rapportées sans date ni lieu précis et publiées en 1912"
+              }
+            ],
+            "collection": "mediated",
+            "collector": "Maurice Delafosse, administrateur colonial"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Au Fouta-Djalon, Bâ, Bah et Baldé sont donnés comme les noms du groupe classique Uururɓe ; une étude historique ultérieure confirme Bah parmi les quatre yettore employés comme noms de famille et marqueurs fulɓe.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Notes sur les Peuls du Fouta-Djallon — Clans et familles",
+                "author": "Gilbert Vieillard",
+                "year": 1939,
+                "url": "https://webfuuta.site/bibliotheque/gilbert_vieillard/notes/chap03.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "chap. III, section « Le Clan »",
+                "notes": "Notes sur les coutumes des Peuls au Fouta Dialon, Comité d'études historiques et scientifiques de l'AOF, Paris, Larose, 1939, reproduit par WebFuuta, lu le 13 octobre 2026. Le chapitre donne les quatre groupes classiques, dont « Uururɓe (Bâ, Bah, Balde) », et écrit que les Français, qui ont connu les Peuls par les Toucouleurs et les Mandingues, ont pris l'habitude de noter avec soin les noms Diallo, Bari, Sô, Bâ, mais qu'être un Bâ n'a, selon l'auteur, aucune importance aujourd'hui. Cette source coloniale est un témoignage situé."
+              },
+              {
+                "title": "Storming the Citadel: Decolonization and Political Contestation in Guinea's Futa Jallon, 1945–61",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/abs/storming-the-citadel-decolonization-and-political-contestation-in-guineas-futa-jallon-194561/1F793ADC739F5A7A6B328C7CCEF585C5",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "John Straussberger, The Journal of African History 57/2, 2016, p. 231-249, DOI 10.1017/S0021853716000050. La note 35 nomme explicitement Diallo, Barry, Sow et Bah comme yettore employés comme noms de famille et marqueurs fulɓe au Fouta-Djalon."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Les quatre grands clans peuls auraient pris forme au Fouta Toro, chez des descendants de Judéo-Syriens de Cyrénaïque, sur le modèle des clans toucouleurs alors dominants : Sal, Ba, Sô et Bari, côté toucouleur, auraient répondu à Diallo, Boli (ou Bourouro), Pérédio et Daédio, côté peul. L'auteur de cette lecture, un administrateur colonial en 1912, précise que ces mots ne se traduisent pas l'un l'autre : ce sont des mots d'origines distinctes d'une même langue, employés les uns surtout par les Toucouleurs, les autres par les Peuls. Il tient le rattachement à la famille du Prophète pour un ajout de Peuls musulmans. C'est son hypothèse, pas un point établi, et elle repose sur sa thèse d'une ascendance judéo-syrienne des Peuls, que nous ne reprenons pas.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Émile Larose, 1912 ; ouvrage d'un administrateur colonial, lu le 12 octobre 2026 dans l'édition numérique du Projet Gutenberg, qui ne donne pas les numéros de page. Le passage se trouve dans la partie sur l'origine des Peuls. Il est cité pour ce qu'il dit des noms de clan, non pour sa thèse d'une ascendance judéo-syrienne des Peuls, que nous ne reprenons pas."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Ba compte parmi les noms que portent les Peul, avec Sow, Jallo et Ka, comme Juuf, Jonn et Seen sont des noms seereer. Le chapitre ne dit pas d'où vient le nom, seulement à quel groupe on le rattache.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 10, partie I : Histoire et linguistique",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, dir. J. Ki-Zerbo, 1980 ; chapitre de P. Diagne, paragraphe de clôture de la section « La science onomastique », juste avant « L'anthroponymie ». Page imprimée 273 : la phrase « Les Seereer sont, en général, des Jonn, Juuf, Seen, etc., les Peul (Sow, Jallo, Ba, Ka, etc.), les Mandingue (Keita, Touré, Jara, etc.) », donnée comme exemple de ce que les noms de personnes révèlent sur les groupes qui les portent. Le chapitre écrit Juuf ; le rapprochement avec la graphie Diouf est celui de notre relevé de graphies. Il ne dit ni le sens ni l'origine de ces noms, seulement à quel groupe on les rattache."
               }
             ]
           }
