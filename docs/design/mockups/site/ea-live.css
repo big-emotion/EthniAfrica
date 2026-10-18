@@ -5382,3 +5382,13 @@ a.ea-fiche-card:focus-visible { outline: none; box-shadow: var(--afh-ring-focus)
   .ea-src { grid-template-columns: 10px minmax(0, 1fr) auto; }
   .ea-src-go { grid-column: 3; grid-row: 1; align-self: center; }
 }
+
+/* ============================================================
+   Brief 7 (2026-10-18): the place fiche, Yamoussoukro. The two
+   accounts of the change from N'Gokro to Yamoussoukro sit side
+   by side in the readings tile of brief 3 under the names, with
+   the family account after them. New selectors only, tokens only.
+   ============================================================ */
+.ea-readings-family { padding-top: var(--afh-space-md); border-top: 1px dashed var(--afh-border); }
+.pl-card .ea-readings p { margin: 0; }
+.pl-card .ea-readings .afh-name-timeline-statement { margin-top: var(--afh-space-xs); color: var(--afh-text); line-height: 1.6; }
