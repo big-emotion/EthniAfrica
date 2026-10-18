@@ -90,6 +90,36 @@ function campaignLink(destination, { network, campaign, content }) {
   const tags = `utm_source=${network}&utm_medium=social&utm_campaign=${campaign}&utm_content=${content}`;
   return `${destination}${destination.includes("?") ? "&" : "?"}${tags}`;
 }
+// Since v5.6.0 a name the corpus answers has its own address under the search
+// page (REQ-200): the server writes the answer into it and the sitemap lists
+// it. The `?q=` reading of the same name is built in the browser, declares the
+// bare search page as its canonical, and the audits count every such visit as
+// `/fr/atlas/recherche`, whatever name was read. The segment is the corpus
+// spelling composed and lower-cased; any other writing answers with a 308.
+const SITE_HOST = "ethniafrica.com";
+const SEARCH_PAGE = "/fr/atlas/recherche";
+const nameSegment = (form) =>
+  form.normalize("NFC").trim().toLocaleLowerCase("fr");
+function nameAddress(destination) {
+  const url = new URL(destination);
+  if (url.hostname !== SITE_HOST && url.hostname !== `www.${SITE_HOST}`) return;
+  const address = (form) =>
+    `https://${SITE_HOST}${SEARCH_PAGE}/${encodeURIComponent(nameSegment(form))}`;
+  const query = url.searchParams.get("q");
+  if (url.pathname.replace(/\/+$/, "") === SEARCH_PAGE && query !== null)
+    fail(
+      `Destination must be the name's address, ${address(query)} (with the corpus accents), not the search page; verify it in the sitemap or by its 200 answer`
+    );
+  if (url.pathname.startsWith(`${SEARCH_PAGE}/`)) {
+    const written = decodeURIComponent(
+      url.pathname.slice(SEARCH_PAGE.length + 1)
+    );
+    if (written !== nameSegment(written))
+      fail(
+        `Destination answers with a redirect; the name's address is ${address(written)}`
+      );
+  }
+}
 function date(value) {
   if (typeof value !== "string" || !Number.isFinite(Date.parse(value)))
     fail("Account verification date is required");
@@ -660,6 +690,7 @@ function assemble(root, configFile, networks, applied) {
     publicCopy,
     researchFile: config.research,
     payload: delivery.payload,
+    destination: research.destination,
   };
 }
 // A video's screen text is checked from public-copy.json alone: its sequence
@@ -682,7 +713,10 @@ export function createPackage(root, configFile, output, networks) {
   const config = JSON.parse(readFileSync(path(root, configFile)));
   campaignCode(config.campaign);
   const data = assemble(root, configFile, networks);
-  const { post, publicCopy, payload, ...manifest } = data;
+  const { post, publicCopy, payload, destination, ...manifest } = data;
+  // Here rather than in assemble, so a revision delivered to the search page
+  // before name addresses still verifies and its publication can be recorded.
+  if (destination.url !== undefined) nameAddress(destination.url);
   mkdirSync(dirname(target), { recursive: true });
   const lock = target + ".lock";
   mkdirSync(lock);

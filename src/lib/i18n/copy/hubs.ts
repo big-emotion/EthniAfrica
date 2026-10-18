@@ -23,7 +23,7 @@ import type { Language } from "@/types/shared";
 // it. The home's cards (AccessAxes) carry the same change.
 //
 // What replaced it still opened on « L'axe des… », and that went too
-// (2026-09-18). The reader meets this triptych as « Trois chemins » in the
+// (2026-09-18). The reader meets this triptych as « Menu » in the
 // header panel and « Trois manières d'entrer » on the About page; a third
 // name for it, and the only one taken from the inside, is the same failing
 // recorded just above against « le corpus » and « une entité ». The
@@ -82,7 +82,9 @@ const fr = {
   },
   unavailableLabel: "Bientôt",
   plateLicenceLabel: "Licence",
-  menuLabel: "Trois chemins",
+  // « Trois chemins » until 2026-10-17: a figure of style, and the operator
+  // ruled out every one in a title.
+  menuLabel: "Menu",
   // Names the row of facet links under the hub entry. The facets are
   // states of one page, so the menu says so rather than listing them
   // beside the hub as if they were three more destinations — which is

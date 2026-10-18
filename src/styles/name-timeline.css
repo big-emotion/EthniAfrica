@@ -271,7 +271,7 @@
   color: var(--afh-text-soft);
 }
 
-/* ── Pendant ce temps, ailleurs ─────────────────────────────────────────── */
+/* ── Ailleurs à la même époque ─────────────────────────────────────────── */
 .afh-name-timeline-elsewhere {
   display: flex;
   flex-direction: column;

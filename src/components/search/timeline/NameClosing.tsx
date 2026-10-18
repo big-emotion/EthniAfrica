@@ -39,7 +39,7 @@ import type { SourceKind } from "@/types/sources";
 /**
  * The blocks brief 1 adds under the timeline (approved 2026-10-14; boards
  * docs/design/mockups/site/search-*.dc.html, components on `Main`):
- * « Les sources parlent », the closing band and the next step.
+ * « Les sources du nom … », the closing band and the next step.
  */
 
 const MONO = "font-[family-name:var(--afh-font-mono)]";
@@ -128,6 +128,7 @@ export function NameSourcesBlock({
   if (groups.length === 0) return null;
 
   const accounts = name.tiles.flatMap((tile) => tile.accounts);
+  const sources = groups.reduce((sum, group) => sum + group.sourceCount, 0);
   const hypothesis = new Map<NameHistoryAccount, number>();
   for (const tile of name.tiles) {
     if (!tile.hypotheses) continue;
@@ -142,7 +143,6 @@ export function NameSourcesBlock({
       data-name-sources=""
       className="afh-tile flex flex-col gap-afh-2xl [.search-feed-reviewed_&]:mt-[var(--afh-section-gap)] text-left"
     >
-      <p className="afh-tile-label">{copy.sourcesEyebrow}</p>
       <h2 id={headingId} className={H2}>
         <Named
           text={copy.sourcesTitle(name.nameText)}
@@ -151,7 +151,7 @@ export function NameSourcesBlock({
       </h2>
       <p className="text-afh-small leading-[1.6] text-afh-text-soft">
         <Named
-          text={copy.sourcesLead(accounts.length, name.nameText)}
+          text={copy.sourcesLead(sources, accounts.length, name.nameText)}
           forms={[name.nameText]}
         />
       </p>
@@ -425,6 +425,7 @@ export function NameFicheSourcesBlock({
   if (groups.length === 0) return null;
   const forms = names.map((name) => name.nameText);
   const single = names.length === 1 ? names[0] : null;
+  const sources = groups.reduce((sum, group) => sum + group.sourceCount, 0);
 
   return (
     <section
@@ -432,7 +433,6 @@ export function NameFicheSourcesBlock({
       data-name-sources=""
       className="afh-tile flex flex-col gap-afh-2xl text-left"
     >
-      <p className="afh-tile-label">{copy.sourcesEyebrow}</p>
       <h2 id={headingId} className={H2}>
         {single ? (
           <Named
@@ -446,11 +446,16 @@ export function NameFicheSourcesBlock({
       <p className="text-afh-small leading-[1.6] text-afh-text-soft">
         {single ? (
           <Named
-            text={copy.sourcesLead(every.length, single.nameText)}
+            text={copy.sourcesLead(sources, every.length, single.nameText)}
             forms={[single.nameText]}
           />
         ) : (
-          copy.fiche.sourcesLead(every.length, names.length, subjectType)
+          copy.fiche.sourcesLead(
+            sources,
+            every.length,
+            names.length,
+            subjectType
+          )
         )}
       </p>
       <SourceStrip groups={groups} language={language} />

@@ -98,11 +98,11 @@ utm_source=<network>&utm_medium=social&utm_campaign=<campaign>&utm_content=<cont
 for a link in the post itself (Facebook first comment, YouTube or X caption),
 `bio` for a profile link. A profile link stays in place after the post, so its
 visits are kept apart from the post's. The Facebook first comment of a Lingala
-carousel in campaign `langue-07`, whose destination is the Lingala fiche, is
-therefore:
+carousel in campaign `langue-07`, whose destination is the answer for
+« lingala » at its [name address](#name-addresses), is therefore:
 
 ```text
-https://ethniafrica.com/fr/atlas/langues/lin?utm_source=facebook&utm_medium=social&utm_campaign=langue-07&utm_content=carrousel
+https://ethniafrica.com/fr/atlas/recherche/lingala?utm_source=facebook&utm_medium=social&utm_campaign=langue-07&utm_content=carrousel
 ```
 
 The helper refuses a bare destination and a link tagged for another network,
@@ -137,6 +137,36 @@ may therefore show under `ig`/`link_in_bio` rather than this package's
 rule that "the profile link stays fixed on the search page"
 (`docs/editorial/strategy/social-series.md`); the operator settles that before
 a series piece uses `profile`.
+
+### Name addresses
+
+A piece about a name sends the reader to that name's address,
+`https://ethniafrica.com/fr/atlas/recherche/<nom>`, never to the search page
+with `?q=<nom>`. `<nom>` is the name as the corpus spells it, accents kept,
+in lower case: `lingala`, `traor%C3%A9` (« traoré »). The research step
+verifies it (see
+[research and corpus](research-and-corpus.md#dossier-format)): the address
+is accepted only when the sitemap lists it or it answers 200. A 404 means the
+name has no address; a 308 means another spelling, so record the address it
+leads to.
+
+`create` refuses an EthniAfrica destination on the search page with `?q=`,
+and a name address written in another case or composition, which answers with
+a redirect. Its error prints the address to verify. It cannot see a missing
+accent (`traore` answers 308 towards `traoré`): the sitemap or the 200 answer
+settles that.
+
+**Why.** Since v5.6.0 (2026-10-17) each name the corpus answers has its own
+page (REQ-200). The server writes the answer into it and the sitemap lists it.
+The `?q=` reading is built in the reader's browser and declares the bare search
+page as its canonical. The audits of 2026-10-08 and 2026-10-13 count all these
+readings as one page, `/fr/atlas/recherche`, so a campaign's landing page did
+not say which name the reader came for.
+
+**Revisions delivered before this rule.** A revision created with a `?q=`
+destination still passes `verify`, so its publication can be recorded and a
+piece paused at approval 3 is not reopened by this rule alone. Its next
+revision needs the name address.
 
 ## Delivered files
 

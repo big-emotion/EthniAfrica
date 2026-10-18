@@ -160,7 +160,7 @@ describe("LanguageFamilyDetailViewV2 — the names and the end of the fiche", ()
     expect(
       screen.getByRole("heading", {
         level: 2,
-        name: "Qui raconte les noms de cette famille de langues ?",
+        name: "Les sources des noms de cette famille de langues",
       })
     ).toBeInTheDocument();
     const oral = container.querySelector('details[data-family="oral"]');
