@@ -66,8 +66,9 @@ At 430 px, then 768 px, then 1440 px, draw the page in this order:
    for whom. Keep the twelve accounts attributable and chronological; show
    competing origin proposals side by side, without ranking or merging them.
    Use the brief 15 timeline pattern: leave the three most recent accounts,
-   the origin account and the hypotheses tile open; collapse the other five
-   accounts.
+   the origin account and the five-hypothesis tile open. Collapse the three
+   remaining individual accounts (1684, around 1500 and the earlier Italian
+   account). The hypotheses tile contains five accounts but remains open.
 4. The related-subject block from `WRD_RACE.relatedSubjects`: Mandé and
    Bantou. Present these as links recorded in the fiche, not as claims that
    the relation itself has been established by a source. Use a plain label
@@ -106,8 +107,9 @@ and gaps it records; and any route or layout decision for the operator.
 Change nothing in this step. Then wait for the operator's decisions.
 
 Operator decisions, 2026-10-19: use the approved route and breadcrumb above;
-follow the brief 15 timeline pattern with five accounts collapsed; list each
-source once and link it to « Voir le récit » where used; present Mandé and
+follow the brief 15 timeline pattern with three individual accounts collapsed
+and the five-hypothesis tile open; list each source once and link it to « Voir
+le récit » where used; present Mandé and
 Bantou as relations recorded in the race fiche, without implying that the
 relation itself is source-backed when no source link is recorded; and show
 the race and Kirdi links recorded in the tribu fiche as such. The operator
