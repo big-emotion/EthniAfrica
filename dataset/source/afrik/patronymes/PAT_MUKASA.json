@@ -215,6 +215,18 @@
                 "source_kind": "academic",
                 "page": "p. 291",
                 "notes": "Londres, Macmillan, 1911 ; exemplaire numérisé de l'université de Toronto sur archive.org. Page 291 : « they concluded that he had come from Bukasa, and called him a Mukasa (that is a person from the island of Bukasa), and this name attached itself to him from that time ». Roscoe ne nomme pas la personne qui lui a raconté la légende. Ethnographie de l'époque coloniale, citée pour ce que les Ganda lui ont raconté, non pour ses classements. Lu le 13 octobre 2026."
+              },
+              {
+                "title": "Récit sur l'origine du dieu Mukasa",
+                "author": "Récit baganda rapporté par John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "narrative": "Un enfant trouvé sur l'île de Bubembe est dit venu de Bukasa et appelé « un Mukasa ».",
+                "carrier": "Des anciens du village, dont les noms ne sont pas donnés par Roscoe",
+                "place": "Île de Bubembe, Buganda",
+                "notes": "Récit rapporté par John Roscoe dans The Baganda, 1911, p. 291. Roscoe n'identifie pas les personnes qui le lui ont raconté. Il porte sur le dieu Mukasa, pas sur les familles qui portent ce nom aujourd'hui."
               }
             ]
           },
