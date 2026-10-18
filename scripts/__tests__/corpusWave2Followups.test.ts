@@ -175,21 +175,32 @@ describe("validator — the hero and the name history agree on the self-name", (
   });
 });
 
-describe("FLG_MANDE — the self-name is the people's, Manden is their country", () => {
+describe("FLG_MANDE — Mandenka is the Manden people's name, Manden is their country", () => {
   // Koelle (1854), read in the Lexibank transcription: « the natives plainly
   // say Mánde and Mandén·ga »; Niane (1985, p. 141) writes the people mandenka.
+  // Both give the name of the people of the Manden, not one the speakers of
+  // the seventy-five Mandé languages share: a self-given name in a family's
+  // history would print « Le nom employé par les personnes qui la parlent :
+  // Mandenka » under a search for « mandé ».
   // @req REQ-178
-  it("prints Mandenka as the self-name in the hero, as the sources write it", () => {
-    expect(read(MANDE).content.decolonialHeader.selfAppellation).toBe(
-      "Mandenka"
-    );
+  it("says in the hero that the speakers share no name, and whose name Mandenka is", () => {
+    const selfAppellation =
+      read(MANDE).content.decolonialHeader.selfAppellation;
+
+    expect(selfAppellation).toMatch(/^Aucun nom commun aux locuteurs/);
+    expect(selfAppellation).toMatch(/Mandenka[^;]*gens du Manden/);
   });
 
   // @req REQ-178
-  it("tells Mandenka as a self-given name, born in Koelle's notes and used by Niane", () => {
+  it("tells Mandenka as the Manden people's name, born in Koelle's notes and used by Niane", () => {
     const mandenka = nameOf(MANDE, "Mandenka");
 
-    expect(mandenka?.selfGiven).toBe(true);
+    expect(mandenka?.selfGiven).toBe(false);
+    expect(
+      namesOf(MANDE)
+        .filter((entry) => entry.selfGiven)
+        .map((n) => n.nameText)
+    ).toEqual([]);
     const authors = mandenka.accounts.flatMap((account) =>
       account.sources.map((source) => source.author)
     );
@@ -201,6 +212,21 @@ describe("FLG_MANDE — the self-name is the people's, Manden is their country",
     );
     const birth = mandenka.accounts.find((account) => account.birth);
     expect(birth?.period.from).toBe(1854);
+    // Koelle's « patronymic termination » forms the name of a country's
+    // people; it does not follow proper names.
+    expect(birth.statement).toMatch(/forme le nom des gens d'un pays/);
+  });
+
+  // The fiche's reading note for Niane's p. 141 holds « peuple mandenka »
+  // and no gloss, and that page was not reread: the account attributes to
+  // Niane nothing more than the note records.
+  // @req REQ-178
+  it("attributes to Niane only what the fiche's reading note records", () => {
+    const niane = nameOf(MANDE, "Mandenka").accounts.find((account) =>
+      account.sources.some((source) => source.author === "Djibril Tamsir Niane")
+    );
+
+    expect(niane.statement).not.toMatch(/traduit|mandingue/);
   });
 
   // @req REQ-178
@@ -211,9 +237,11 @@ describe("FLG_MANDE — the self-name is the people's, Manden is their country",
     expect(manden.accounts[0].statement).toMatch(/désigne un pays/);
   });
 
-  // The fiche's sources hold one explanation of Manden, the griot Babou
-  // Condé's as Camara Laye transcribed it: the history tells it as a
-  // hypothesis instead of saying no source explains the name.
+  // The fiche's sources hold one explanation of Manden, a note Camara Laye
+  // adds to the book where he transcribes the griot Babou Condé. The note
+  // does not say the etymology is the griot's, so it is Camara Laye's. The
+  // history tells it as a hypothesis instead of saying no source explains the
+  // name, and the family's own account of its name says the same.
   // @req REQ-178
   it("tells the lamantin explanation of Manden as a hypothesis with its source", () => {
     const manden = nameOf(MANDE, "Manden");
@@ -228,6 +256,9 @@ describe("FLG_MANDE — the self-name is the people's, Manden is their country",
     );
     const prose = JSON.stringify(read(MANDE).nameHistory);
     expect(prose).not.toMatch(/n'expliquent pas le sens premier/);
+    const origin = read(MANDE).content.decolonialHeader.originOfHistoricalTerm;
+    expect(origin).toMatch(/note que Camara Laye/);
+    expect(origin).not.toMatch(/celui du griot Babou Condé/);
   });
 });
 
@@ -463,6 +494,32 @@ describe("French prose keeps its accents", () => {
     });
   });
 
+  // The list holds French words and French country names only. Benin City,
+  // the Edo kingdom of Benin and the town of Tillabéri keep the spelling the
+  // fiche gives them (D9), and « on s'y nomme par » is correct French.
+  // @req REQ-178
+  it("leaves place names and a reflexive « se nomme par » alone, and still flags the participle", () => {
+    writeJson(
+      tmpDir,
+      FICHE,
+      people({
+        origins: {
+          ancientOrigins:
+            "Le royaume de Benin commerce depuis Benin City avec la Bight of Benin. Les Kurtey vivent près de Tillabery et de Tillaberi.",
+          formationPeriod:
+            "On s'y nomme par la filiation, et chacun se nomme par son clan. Le village nomme par les Bambara est plus ancien.",
+        },
+      })
+    );
+
+    const result = checkUnaccentedFrenchProse(tmpDir, {});
+
+    expect(result.errors).toHaveLength(1);
+    expect(result.errors[0]).toMatch(
+      /PPL_TEST\.json: 1 French word.*formationPeriod « nomme » \(nommé\)$/
+    );
+  });
+
   // @req REQ-178
   it("holds the backlog as a two-edge ratchet, fiche by fiche", () => {
     writeJson(
@@ -508,6 +565,20 @@ describe("French prose keeps its accents", () => {
         file
       ).toEqual([]);
     }
+  });
+
+  // D9 restores accents and mends broken sentences, never the meaning:
+  // « clericisme » is the Jakhanke clerical tradition, and « cléricalisme »
+  // (the clergy's hold on public affairs) would say something else.
+  // @req REQ-178
+  it("restores the Soninke clerical tradition without turning it into clericalism", () => {
+    const spiritualities = read("peuples/FLG_MANDE/PPL_SONINKE.json").content
+      .culture.spiritualities;
+
+    expect(spiritualities).not.toMatch(/cléricalisme/);
+    expect(spiritualities).toMatch(
+      /une tradition cléricale islamique pacifiste/
+    );
   });
 
   // @req REQ-178

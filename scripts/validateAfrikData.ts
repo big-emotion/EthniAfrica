@@ -4246,28 +4246,31 @@ const W_AFTER = "(?![\\p{L}\\p{N}])";
 // « par ».
 const AUXILIARY =
   "(?:a|ont|avait|avaient|est|sont|fut|furent|été|ete|était|etait|étaient|etaient|être|etre|sera|serait|soit)\\s+";
+// « on s'y nomme par la filiation » is the present tense, not a participle.
+const NOT_REFLEXIVE = `(?<!${W_BEFORE}(?:se|me|te|nous|vous|s['’]y|s['’]en)\\s+)`;
 
 /**
- * French words the fiches printed without their accent. Each spelling is a
- * real word only once accented, so a match in French prose is a fault. The
- * list is fixed on purpose: a general spell-checker would flag African names.
+ * French words the fiches printed without their accent, and the French names
+ * of countries (« Sénégal »). Each spelling is French only once accented, so
+ * a match in French prose is a fault. The list is fixed on purpose and holds
+ * no African place or people name: a general spell-checker would flag those,
+ * and a place keeps the spelling its fiche gives it (Benin City, the Edo
+ * kingdom of Benin, Tillabery, Segou).
  */
 const UNACCENTED_FRENCH: ReadonlyArray<{ spelling: string; word: string }> = [
   { spelling: "etats?", word: "État, état" },
   { spelling: "regions?", word: "région" },
   { spelling: "majorite", word: "majorité" },
   { spelling: "siecles?", word: "siècle" },
-  { spelling: "benin", word: "Bénin" },
   { spelling: "voltaique", word: "voltaïque" },
-  { spelling: "tillab(?:ery|eri|éry)", word: "Tillabéri" },
   { spelling: "fondees?", word: "fondée" },
   {
-    spelling: `(?:(?<=${W_BEFORE}${AUXILIARY})fondes?|fondes?(?=\\s+par${W_AFTER}))`,
+    spelling: `(?:(?<=${W_BEFORE}${AUXILIARY})fondes?|${NOT_REFLEXIVE}fondes?(?=\\s+par${W_AFTER}))`,
     word: "fondé",
   },
   { spelling: "nommees?", word: "nommée" },
   {
-    spelling: `(?:(?<=${W_BEFORE}${AUXILIARY})nommes?|nommes?(?=\\s+par${W_AFTER}))`,
+    spelling: `(?:(?<=${W_BEFORE}${AUXILIARY})nommes?|${NOT_REFLEXIVE}nommes?(?=\\s+par${W_AFTER}))`,
     word: "nommé",
   },
   { spelling: "appelee?s?", word: "appelé" },
