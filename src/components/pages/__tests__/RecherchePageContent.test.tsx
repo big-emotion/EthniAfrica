@@ -716,6 +716,60 @@ describe("RecherchePageContent", () => {
     ).toBeTruthy();
   });
 
+  // A reader keeps the « Peuples du pays » chip and types a name. The page
+  // titles a scoped search with its filter: a misspelling verdict would say
+  // that no name matches « Congo-Brazzaville ».
+  // @req REQ-125
+  it("keeps a country-scoped « tchikaya » a relation browse, even if a family-name lead comes back", async () => {
+    vi.mocked(nextNavigation.useSearchParams).mockReturnValue(
+      new URLSearchParams("q=tchikaya&country=COG") as ReturnType<
+        typeof nextNavigation.useSearchParams
+      >
+    );
+    mockFetch.mockResolvedValue(
+      okJson({
+        data: {
+          peoples: [],
+          countries: [],
+          families: [],
+          languages: [],
+          persons: [],
+          patronymes: [
+            { id: "PAT_CHUKWU", nameMain: "Chukwu", relevance: 0.5 },
+            { id: "PAT_TCHICAYA", nameMain: "Tchicaya", relevance: 0.5 },
+          ],
+          patronymesTotal: 2,
+          total: 2,
+          leads: [
+            {
+              kind: "patronyme",
+              id: "PAT_TCHICAYA",
+              name: "Tchicaya",
+              similarity: 0.5,
+            },
+          ],
+        },
+        meta: {},
+      })
+    );
+
+    await act(async () => {
+      render(<RecherchePageContent />);
+      await new Promise((r) => setTimeout(r, 100));
+    });
+
+    await waitFor(() => {
+      expect(screen.getByTestId("feed-block-fiches")).toBeInTheDocument();
+    });
+    expect(screen.queryByText("Cherchiez-vous… ?")).not.toBeInTheDocument();
+    expect(
+      screen.queryByText(
+        searchFeedCopy.fr.answer.typoSummary("Congo-Brazzaville")
+      )
+    ).not.toBeInTheDocument();
+    expect(screen.queryByTestId("appellations-list")).not.toBeInTheDocument();
+  });
+
   // @req REQ-002
   it("empty state links to the families directory", async () => {
     mockFetch.mockResolvedValue(okJson(emptyApiResponse));

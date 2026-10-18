@@ -2264,6 +2264,81 @@ describe("ftsSearchEntities", () => {
       expect(result.patronymes.map((p) => p.id)).toEqual(["PAT_BELLOW"]);
       expect(result.leads).toEqual([]);
     });
+
+    // A reader keeps the « Peuples du pays » chip and types a name. The page
+    // titles a scoped search with its filter, so a misspelling verdict there
+    // would say no name matches « Congo-Brazzaville ». A relation browse keeps
+    // its own page, as before DEC-075.
+    // @req REQ-125
+    it.each([
+      { scope: "a country", relation: { countryId: "COG" } },
+      { scope: "a language family", relation: { familyId: "FLG_BANTU" } },
+    ])(
+      "offers no family-name lead when the search is scoped to $scope",
+      async ({ relation }) => {
+        patronymesPayload = {
+          total: 2,
+          rows: [
+            patronymeRow("PAT_CHUKWU", "Chukwu"),
+            patronymeRow("PAT_TCHICAYA", "Tchicaya"),
+          ],
+        };
+        leadsPayload = { rows: [tchicayaLead] };
+
+        const result = await ftsSearchEntities({
+          q: "tchikaya",
+          ...relation,
+          limit: 20,
+          offset: 0,
+        });
+
+        expect(result.total).toBe(2);
+        expect(result.leads).toEqual([]);
+      }
+    );
+
+    // Past page one, the sound-alike withholding and the family-name leads
+    // both ask whether page one answers exactly. Each probe is a whole
+    // ranking, so a request asks it once.
+    // @req REQ-125
+    it("ranks page one once on a later page, for the sound-alikes and the leads together", async () => {
+      rpc.mockImplementation(
+        (fn: string, args: Record<string, unknown> = {}) => {
+          if (fn === "afrik_search_patronymes")
+            return Promise.resolve({
+              data: {
+                total: 21,
+                rows: [
+                  args.p_offset === 0
+                    ? patronymeRow("PAT_CHUKWU", "Chukwu")
+                    : patronymeRow("PAT_TCHIKAYI", "Tchikayi"),
+                ],
+              },
+              error: null,
+            });
+          if (fn === "afrik_search_leads")
+            return Promise.resolve({
+              data: { rows: [tchicayaLead] },
+              error: null,
+            });
+          return Promise.resolve({ data: { total: 0, rows: [] }, error: null });
+        }
+      );
+
+      const result = await ftsSearchEntities({
+        q: "tchikaya",
+        limit: 20,
+        offset: 20,
+      });
+
+      const pageOneRankings = rpc.mock.calls.filter(
+        ([fn, args]) =>
+          fn === "afrik_search_peoples" &&
+          (args as Record<string, unknown>).p_offset === 0
+      );
+      expect(pageOneRankings).toHaveLength(1);
+      expect(result.leads).toEqual([tchicayaLead]);
+    });
   });
 
   // ── the cross-kind ordered list (ETNI-1710) ───────────────────────────────

@@ -3,6 +3,7 @@ import type {
   SearchCompanionsData,
 } from "@/api/v2/schemas/searchCompanions";
 import type { SearchWithLeads } from "@/lib/afrikLoader";
+import type { SearchRelation } from "@/lib/search/relationSearch";
 import {
   ANSWER_BLOCKS,
   type FeedBlockId,
@@ -92,6 +93,8 @@ type SearchFeedClassificationInput = {
   subjects?: readonly SearchResult[];
   /** Reviewed terms a near spelling may have meant; they count as suggestions. */
   termSuggestions?: readonly string[];
+  /** The family or country the search is scoped to, when the reader kept one. */
+  relation?: SearchRelation | null;
 };
 
 function companionRelations(data: SearchCompanionsData): string[] {
@@ -109,15 +112,19 @@ export function classifySearchFeed({
   companions,
   subjects,
   termSuggestions = [],
+  relation,
 }: SearchFeedClassificationInput): SearchFeedAnswerState {
   const foundByWord = companions.shorts.items.some(
     ({ match }) => match.relation === "word"
   );
   // Related fiches with a lead: the API offers a lead beside results only as
   // a spelling of the searched name (DEC-075), so the page asks which name
-  // the reader meant before it lists them.
+  // the reader meant before it lists them. A scoped search stays a relation
+  // browse: the page titles it with the filter, which no spelling is about.
   if (subjects && subjects.length === 0 && search.results.length > 0) {
-    return search.leads.length > 0 && !foundByWord ? "typo" : "widened";
+    return search.leads.length > 0 && !foundByWord && !relation
+      ? "typo"
+      : "widened";
   }
   if (search.results.length === 0) {
     const hasSuggestion = search.leads.length + termSuggestions.length > 0;

@@ -172,6 +172,32 @@ describe("search-feed plan", () => {
     ).toBe("widened");
   });
 
+  // A scoped search is titled with its filter: a misspelling verdict there
+  // would say no name matches « Congo-Brazzaville », whatever the API sends.
+  // @req REQ-125
+  it("keeps related fiches with a lead as a widened page when the search is scoped", () => {
+    const widened = FEED_CASES.find(({ id }) => id === "mande")!;
+
+    expect(
+      classifySearchFeed({
+        ...widened.production,
+        search: {
+          results: widened.production.search.results,
+          leads: [
+            {
+              type: "patronyme",
+              id: "PAT_TCHICAYA",
+              name: "Tchicaya",
+              similarity: 0.5,
+            },
+          ],
+        },
+        subjects: [],
+        relation: { kind: "country", id: "COG" },
+      })
+    ).toBe("widened");
+  });
+
   // A piece found by the reader's own word answers it: no spelling is asked.
   // @req REQ-125
   it("does not ask for a spelling when a piece answers the reader's word", () => {

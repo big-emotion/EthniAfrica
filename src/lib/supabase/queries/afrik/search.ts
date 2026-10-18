@@ -72,7 +72,8 @@ import type { TranslationLocale } from "@/lib/i18n/translationLocale";
 async function rankAttempt(
   supabase: ReturnType<typeof createServerClient>,
   params: FtsSearchParams,
-  text: string
+  text: string,
+  pageOneAnswers: PageOneProbe
 ): Promise<FtsSearchResponse> {
   const {
     lens,
@@ -259,7 +260,8 @@ async function rankAttempt(
     params,
     text,
     asRankedPayload(patronymeResult.data),
-    [peoples, countries, families, persons, languages, places, words].flat()
+    [peoples, countries, families, persons, languages, places, words].flat(),
+    pageOneAnswers
   );
   const patronymes = await withAssociatedPeoples(
     patronymePayload.rows.map(toRankedPatronyme)
@@ -329,10 +331,11 @@ async function withoutSoundAlikes(
   params: FtsSearchParams,
   text: string,
   patronymes: RankedPayload,
-  otherKinds: { exactMatch: boolean }[]
+  otherKinds: { exactMatch: boolean }[],
+  pageOneAnswers: PageOneProbe
 ): Promise<RankedPayload> {
   if (patronymes.total === 0) return patronymes;
-  if (!(await answeredExactly(supabase, params, text, otherKinds))) {
+  if (!(await answeredExactly(params, text, otherKinds, pageOneAnswers))) {
     return patronymes;
   }
 
@@ -353,16 +356,13 @@ async function withoutSoundAlikes(
 /**
  * REQ-201's test of « something answers this query exactly », shared by the
  * sound-alike withholding and the family-name leads (DEC-075). `hits` are the
- * ranked rows of the page being answered. On a later page, page one is asked
- * again, its family names included: an exact family name there answers too,
- * and the SQL already withholds sound-alikes for it, so the withholding call
- * it may cause returns the same rows.
+ * ranked rows of the page being answered.
  */
 async function answeredExactly(
-  supabase: ReturnType<typeof createServerClient>,
   params: FtsSearchParams,
   text: string,
-  hits: { exactMatch: boolean }[]
+  hits: { exactMatch: boolean }[],
+  pageOneAnswers: PageOneProbe
 ): Promise<boolean> {
   if (hits.some((hit) => hit.exactMatch)) return true;
   // A published word answers its query on the page even with no fiche.
@@ -371,23 +371,39 @@ async function answeredExactly(
   // out of sight. Asking the first page again keeps page two consistent with
   // page one; the site never pages, only API callers do.
   if (!params.offset) return false;
-  const firstPage = await rankAttempt(
-    supabase,
-    { ...params, offset: 0, limit: 1 },
-    text
-  );
-  return [
-    firstPage.peoples,
-    firstPage.countries,
-    firstPage.families,
-    firstPage.persons,
-    firstPage.patronymes,
-    firstPage.languages,
-    firstPage.places ?? [],
-    firstPage.words ?? [],
-  ]
-    .flat()
-    .some((hit) => hit.exactMatch);
+  return pageOneAnswers(text);
+}
+
+/** Whether page one of `text` holds a row answering it exactly. */
+type PageOneProbe = (text: string) => Promise<boolean>;
+
+/**
+ * One probe per request. Past page one, the sound-alike withholding and the
+ * family-name leads both ask it for the same text, and each answer costs a
+ * whole ranking (nine RPCs), so it is asked once per text and remembered.
+ * Page one's family names count: an exact family name answers too, and the
+ * SQL already withholds sound-alikes for it.
+ */
+function pageOneProbe(
+  supabase: ReturnType<typeof createServerClient>,
+  params: FtsSearchParams
+): PageOneProbe {
+  const asked = new Map<string, Promise<boolean>>();
+  const probe: PageOneProbe = (text) => {
+    let answer = asked.get(text);
+    if (!answer) {
+      // At offset 0 the ranking never calls the probe back.
+      answer = rankAttempt(
+        supabase,
+        { ...params, offset: 0, limit: 1 },
+        text,
+        probe
+      ).then((pageOne) => rankedHits(pageOne).some((hit) => hit.exactMatch));
+      asked.set(text, answer);
+    }
+    return answer;
+  };
+  return probe;
 }
 
 // @req REQ-002
@@ -396,6 +412,7 @@ export async function ftsSearchEntities(
 ): Promise<FtsSearchResponse> {
   const supabase = createServerClient();
   const text = params.q?.trim() ?? "";
+  const pageOneAnswers = pageOneProbe(supabase, params);
 
   // A blank text (a relation browse) and the quiz lens are not names: nothing
   // to clean, nothing to widen.
@@ -404,7 +421,8 @@ export async function ftsSearchEntities(
       supabase,
       params,
       text,
-      await rankAttempt(supabase, params, text)
+      await rankAttempt(supabase, params, text, pageOneAnswers),
+      pageOneAnswers
     );
   }
 
@@ -416,13 +434,19 @@ export async function ftsSearchEntities(
 
   let first: FtsSearchResponse | undefined;
   for (const attempt of attempts) {
-    const found = await rankAttempt(supabase, params, attempt);
+    const found = await rankAttempt(supabase, params, attempt, pageOneAnswers);
     first ??= found;
     if (found.total > 0) {
-      return attachSuggestions(supabase, params, attempt, {
-        ...found,
-        ...(attempt !== text && { matchedQuery: attempt }),
-      });
+      return attachSuggestions(
+        supabase,
+        params,
+        attempt,
+        {
+          ...found,
+          ...(attempt !== text && { matchedQuery: attempt }),
+        },
+        pageOneAnswers
+      );
     }
   }
 
@@ -433,14 +457,20 @@ export async function ftsSearchEntities(
     const perToken = await Promise.all(
       tokens
         .slice(0, MAX_WIDENED_TOKENS)
-        .map((token) => rankAttempt(supabase, params, token))
+        .map((token) => rankAttempt(supabase, params, token, pageOneAnswers))
     );
     const widened = mergeAttempts(perToken, params.limit, params.lang);
     if (widened.total > 0) {
-      return attachSuggestions(supabase, params, attempts[0], {
-        ...widened,
-        widenedFrom: tokens.slice(0, MAX_WIDENED_TOKENS),
-      });
+      return attachSuggestions(
+        supabase,
+        params,
+        attempts[0],
+        {
+          ...widened,
+          widenedFrom: tokens.slice(0, MAX_WIDENED_TOKENS),
+        },
+        pageOneAnswers
+      );
     }
   }
 
@@ -448,7 +478,8 @@ export async function ftsSearchEntities(
     supabase,
     params,
     attempts[0] ?? text,
-    first ?? (await rankAttempt(supabase, params, text))
+    first ?? (await rankAttempt(supabase, params, text, pageOneAnswers)),
+    pageOneAnswers
   );
 }
 
@@ -517,7 +548,8 @@ async function attachSuggestions(
   supabase: ReturnType<typeof createServerClient>,
   params: FtsSearchParams,
   text: string,
-  ranked: FtsSearchResponse
+  ranked: FtsSearchResponse,
+  pageOneAnswers: PageOneProbe
 ): Promise<FtsSearchResponse> {
   const { lens, lang } = params;
   const { total } = ranked;
@@ -547,6 +579,9 @@ async function attachSuggestions(
   // offered only when nothing answers exactly. That also holds when the
   // search found related fiches, which is the case « tchikaya » is in. A
   // widening answers each name apart, so no spelling of the phrase is offered.
+  // A search scoped to a country or a family is a relation browse: the page
+  // titles it with the filter, so a spelling offered there would read as one
+  // of the filter's name.
   const familyNames = nameSuggestions.filter(
     (item) => item.kind === "patronyme"
   );
@@ -554,7 +589,9 @@ async function attachSuggestions(
   const offerFamilyNames =
     familyNames.length > 0 &&
     !ranked.widenedFrom &&
-    !(await answeredExactly(supabase, params, text, rankedHits(ranked)));
+    !params.countryId &&
+    !params.familyId &&
+    !(await answeredExactly(params, text, rankedHits(ranked), pageOneAnswers));
 
   // REQ-125 keeps zero-result recovery distinct from the similar-name
   // editorial block on an answered search (REQ-180), which never carries a
