@@ -191,13 +191,10 @@ export function FicheNameStory({
   const body = (
     <div className="fiche-name-story" data-testid="fiche-name-story">
       {chapter ? null : (
-        <p className="fiche-name-story__eyebrow">{words.eyebrow}</p>
+        <h3 className="fiche-name-story__ask">{words.title}</h3>
       )}
       {origin ? (
         <>
-          <h3 className="fiche-name-story__ask">
-            {forms.length > 1 ? words.askSeveral : words.askOne}
-          </h3>
           <p className="fiche-name-story__lead" data-testid="name-story-lead">
             {shownLead}
           </p>
@@ -258,7 +255,7 @@ export function FicheNameStory({
   );
 
   return chapter ? (
-    <FicheSection title={words.eyebrow}>
+    <FicheSection title={words.title}>
       {body}
       {children}
     </FicheSection>
