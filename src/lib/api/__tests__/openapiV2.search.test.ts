@@ -183,6 +183,10 @@ describe("OpenAPI v2 unified search contract", () => {
     expect(description).not.toMatch(/always an empty array when total/i);
     expect(description).toMatch(/family name/i);
     expect(description).toMatch(/answers the query exactly/i);
+    // A third-party caller scoping its search must know why no lead comes.
+    expect(description).toMatch(/familyId/);
+    expect(description).toMatch(/countryId/);
+    expect(description).toMatch(/spells exactly/i);
     expect(description).toMatch(/first letter/i);
     expect(description).toMatch(/0\.4/);
   });

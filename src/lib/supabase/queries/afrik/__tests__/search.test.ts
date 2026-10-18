@@ -2406,6 +2406,54 @@ describe("ftsSearchEntities", () => {
       expect(pageOneRankings).toHaveLength(1);
       expect(result.leads).toEqual([tchicayaLead]);
     });
+
+    // « Aboubakar » is a recorded spelling of Abubakar. afrik_search_patronymes
+    // compares only the filed name, so its row is not flagged exact, while the
+    // leads score the spelling 1. The reader typed a form the fiche records,
+    // not a misspelling of it (doctrine §1.1).
+    const abubakarLead = {
+      kind: "patronyme",
+      id: "PAT_ABUBAKAR",
+      name: "Abubakar",
+      similarity: 1,
+    };
+
+    // @req REQ-125
+    it("offers no family name for « aboubakar », a recorded spelling of the Abubakar the search found", async () => {
+      patronymesPayload = {
+        total: 1,
+        rows: [
+          patronymeRow("PAT_ABUBAKAR", "Abubakar", {
+            content: { spellings: [{ spelling: "Aboubakar" }] },
+          }),
+        ],
+      };
+      leadsPayload = { rows: [abubakarLead] };
+
+      const result = await ftsSearchEntities({
+        q: "aboubakar",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(result.patronymes.map((p) => p.id)).toEqual(["PAT_ABUBAKAR"]);
+      expect(result.leads).toEqual([]);
+    });
+
+    // With no result, the lead is the reader's only way to the fiche.
+    // @req REQ-125
+    it("keeps the family name a recorded spelling reaches as a lead when the search found nothing", async () => {
+      leadsPayload = { rows: [abubakarLead] };
+
+      const result = await ftsSearchEntities({
+        q: "aboubakar",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(result.total).toBe(0);
+      expect(result.leads).toEqual([abubakarLead]);
+    });
   });
 
   // ── the cross-kind ordered list (ETNI-1710) ───────────────────────────────

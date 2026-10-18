@@ -585,8 +585,20 @@ async function attachSuggestions(
     (item) => item.kind === "patronyme"
   );
   const otherNames = nameSuggestions.filter(isNearNameKind);
+  // A lead scored 1 is a form a family name records, typed as recorded
+  // (« aboubakar », a spelling of Abubakar): an attested form, not a
+  // misspelling to correct. afrik_search_patronymes compares only the filed
+  // name, so it flags no row exact. Assumed: once it has found family names,
+  // the spelled one is among them, and the page answers from its spellings
+  // (selectNameSubject). With no family name found, the lead is the reader's
+  // only way to that fiche, and it stays. Totals decide, not the page, so
+  // every page of a query agrees.
+  const spelledExactly =
+    found.patronymesTotal > 0 &&
+    familyNames.some((item) => item.similarity >= 1);
   const offerFamilyNames =
     familyNames.length > 0 &&
+    !spelledExactly &&
     !found.widenedFrom &&
     !params.countryId &&
     !params.familyId &&
