@@ -105,21 +105,35 @@ function rawFiches(kind: Kind): RawFiche[] {
 
 /**
  * The row the loader writes and the search RPC returns: the filed name under
- * its column's key, and the `content` column (a language's holds its
- * `alternateNames`; its `spellingAliases` is a column the RPC leaves out).
+ * its column's key, the `content` column (a language's holds its
+ * `alternateNames`; its `spellingAliases` is a column the RPC leaves out),
+ * and the history's names in history order (migration 109).
  */
 function searchRowOf(kind: Kind, raw: RawFiche): Record<string, unknown> {
+  const historyNames =
+    ficheNameHistory(raw, raw.id)?.names.map((name) => name.nameText) ?? [];
   switch (kind) {
     case "people":
-      return { id: raw.id, nameMain: raw.nameMain, content: raw.content };
+      return {
+        id: raw.id,
+        nameMain: raw.nameMain,
+        content: raw.content,
+        historyNames,
+      };
     case "language":
       return {
         id: raw.isoCode639_3,
         name: raw.nameFr,
         content: { alternateNames: raw.alternateNames },
+        historyNames,
       };
     default:
-      return { id: raw.id, nameFr: raw.nameFr, content: raw.content };
+      return {
+        id: raw.id,
+        nameFr: raw.nameFr,
+        content: raw.content,
+        historyNames,
+      };
   }
 }
 
@@ -240,22 +254,53 @@ beforeAll(() => {
 });
 
 describe("nameStoryLink — the name a fiche's story link may promise", () => {
+  // The search answers every name a history tells (ETNI-2093): these sixteen
+  // named nothing while it answered the filed name alone.
   // @req REQ-198
   it.each([
     ["people", "PPL_FULA", "Fulɓe"],
     ["people", "PPL_KONKOMBA", "Bikpakpaam"],
+    ["people", "PPL_DIAWAMBE", "Diawambé"],
+    ["people", "PPL_BANTOUS_SOMALIENS", "Bantu"],
+    ["people", "PPL_TOURA", "Wɛɛmɛɛbo"],
+    ["languageFamily", "FLG_AUSTRONESIENNE", "Austronésien"],
     ["languageFamily", "FLG_BERBERE", "Berbère"],
+    ["languageFamily", "FLG_CREOLE", "Créole"],
+    ["languageFamily", "FLG_KHOISAN", "Khoïsan"],
+    ["languageFamily", "FLG_NILOSAHARIENNE", "Nilo-saharien"],
     ["language", "dyu", "Julakan"],
+    ["language", "egy", "Égyptien"],
+    ["language", "kea", "Kriolu"],
+    ["language", "tuq", "Tedaga"],
+    ["language", "din", "Thuɔŋjäŋ"],
+    ["language", "arb", "Al-ʿarabiyya al-fuṣḥā"],
   ] as const)(
-    "names nothing on %s %s, whose result page for « %s » does not answer it",
+    "names « %s » on %s %s, its history's leading name, and the page behind it answers it",
     async (kind, id, leading) => {
       const entry = fiche(kind, id);
+      const link = nameStoryLink(entry.subject, entry.history, "fr");
 
-      expect(entry.history?.names[0].nameText).toBe(leading);
-      expect(await pageAnswers(entry, readingHref(leading))).toBe(false);
-      expect(nameStoryLink(entry.subject, entry.history, "fr")).toBeUndefined();
+      expect(link?.name).toBe(leading);
+      expect(await pageAnswers(entry, link.href)).toBe(true);
     }
   );
+
+  // The board people-fula draws « Suivre l'histoire du nom Fulɓe »; its
+  // history sources the name, so the link leads to the name's own address.
+  // @req REQ-198
+  // @req REQ-200
+  it("leads PPL_FULA to the address of « Fulɓe », filed « Peul »", async () => {
+    const entry = fiche("people", "PPL_FULA");
+
+    expect(nameStoryLink(entry.subject, entry.history, "fr")).toEqual({
+      name: "Fulɓe",
+      href: `${SEARCH}/ful%C9%93e`,
+    });
+    expect(await resolveNameAddress("ful%C9%93e")).toEqual({
+      spelling: "Fulɓe",
+      isAddress: true,
+    });
+  });
 
   // @req REQ-198
   // @req REQ-200
@@ -278,19 +323,22 @@ describe("nameStoryLink — the name a fiche's story link may promise", () => {
   );
 
   // hav is filed « Havu (kihavu) » and its history opens on « Kihavu ». The
-  // address directory is keyed on filed names, so no subject gives Kihavu an
-  // address, though hav's history tells it.
+  // address directory holds every name a history sources (ETNI-2093), so
+  // Kihavu has its address, filed name or not.
   // @req REQ-198
   // @req REQ-200
-  it("keeps hav on the search page's reading of « Kihavu », a name with no address", async () => {
+  it("leads hav to the address of « Kihavu », which its history sources", async () => {
     const entry = fiche("language", "hav");
 
-    expect(await resolveNameAddress("kihavu")).toBeNull();
+    expect(await resolveNameAddress("kihavu")).toEqual({
+      spelling: "Kihavu",
+      isAddress: true,
+    });
     expect(nameStoryLink(entry.subject, entry.history, "fr")).toEqual({
       name: "Kihavu",
-      href: `${SEARCH}?q=Kihavu`,
+      href: `${SEARCH}/kihavu`,
     });
-    expect(await pageAnswers(entry, `${SEARCH}?q=Kihavu`)).toBe(true);
+    expect(await pageAnswers(entry, `${SEARCH}/kihavu`)).toBe(true);
   });
 
   // @req REQ-198

@@ -83,6 +83,7 @@ const OVER_BROAD_GROUPS = {
   peoples: [
     {
       id: "PPL_YORUBA",
+      historyNames: [],
       nameMain: "Yoruba",
       languageFamilyId: "FLG_NIGER_CONGO",
       languageFamilyName: "Niger-Congo",
@@ -100,6 +101,7 @@ const OVER_BROAD_GROUPS = {
   countries: [
     {
       id: "NGA",
+      historyNames: [],
       nameFr: "Nigéria",
       content: {},
       relevance: 0.7,
@@ -111,6 +113,7 @@ const OVER_BROAD_GROUPS = {
   families: [
     {
       id: "FLG_NIGER_CONGO",
+      historyNames: [],
       nameFr: "Niger-Congo",
       classificationStatus: null,
       content: {},
@@ -135,6 +138,7 @@ const OVER_BROAD_GROUPS = {
   patronymes: [
     {
       id: "PAT_ADEBAYO",
+      historyNames: [],
       nameMain: "Adébayo",
       nameSystem: "patronymic",
       casteOrSocialFunction: null,
@@ -148,6 +152,7 @@ const OVER_BROAD_GROUPS = {
   languages: [
     {
       id: "yor",
+      historyNames: [],
       name: "Yoruba",
       nameEn: "Yoruba",
       familyId: "FLG_NIGER_CONGO",

@@ -717,6 +717,12 @@ export interface FtsSearchParams {
 export interface RankedPeople extends People {
   naming?: NamingProjection;
   answer?: SearchAnswer;
+  /**
+   * The nameText values of the fiche's history, in history order, as the
+   * search function returns them (migration 109); [] without a block or from
+   * a function not yet migrated.
+   */
+  historyNames: string[];
   languageFamilyName: string | null;
   /**
    * The family's English name (migration 084), so a card served in English
@@ -735,6 +741,12 @@ export interface RankedPeople extends People {
 export interface RankedCountry extends Country {
   naming?: NamingProjection;
   answer?: SearchAnswer;
+  /**
+   * The nameText values of the fiche's history, in history order, as the
+   * search function returns them (migration 109); [] without a block or from
+   * a function not yet migrated.
+   */
+  historyNames: string[];
   relevance: number;
   exactMatch: boolean;
   normalizedScore: number;
@@ -744,6 +756,12 @@ export interface RankedCountry extends Country {
 export interface RankedLanguageFamily extends LanguageFamily {
   naming?: NamingProjection;
   answer?: SearchAnswer;
+  /**
+   * The nameText values of the fiche's history, in history order, as the
+   * search function returns them (migration 109); [] without a block or from
+   * a function not yet migrated.
+   */
+  historyNames: string[];
   relevance: number;
   exactMatch: boolean;
   normalizedScore: number;
@@ -781,6 +799,12 @@ export interface RankedPatronyme {
   content: Record<string, unknown>;
   naming?: NamingProjection;
   answer?: SearchAnswer;
+  /**
+   * The nameText values of the fiche's history, in history order, as the
+   * search function returns them (migration 109); [] without a block or from
+   * a function not yet migrated.
+   */
+  historyNames: string[];
   /**
    * The peoples of `content.peoples[]` whose fiche exists, resolved to their
    * main name in one batched lookup after ranking (ETNI-1859). Absent when
@@ -893,6 +917,12 @@ export interface RankedLanguage {
   content: LanguageContent;
   naming?: NamingProjection;
   answer?: SearchAnswer;
+  /**
+   * The nameText values of the fiche's history, in history order, as the
+   * search function returns them (migration 109); [] without a block or from
+   * a function not yet migrated.
+   */
+  historyNames: string[];
   relevance: number;
   exactMatch: boolean;
   snippet: string | null;

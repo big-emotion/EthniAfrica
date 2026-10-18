@@ -39,6 +39,7 @@ function response(): FtsSearchResponse {
     peoples: [
       {
         id: "PPL_FANG",
+        historyNames: [],
         nameMain: "Fang",
         languageFamilyId: "FLG_BANTU",
         currentCountries: ["GAB"],
@@ -62,6 +63,7 @@ function response(): FtsSearchResponse {
     countries: [
       {
         id: "NGA",
+        historyNames: [],
         nameFr: "Nigeria",
         nameEn: "Nigeria",
         etymology: "Niger and -ia.",
@@ -76,6 +78,7 @@ function response(): FtsSearchResponse {
     families: [
       {
         id: "FLG_BANTU",
+        historyNames: [],
         nameFr: "Bantu",
         nameEn: "Bantu",
         classificationStatus: null,
@@ -103,6 +106,7 @@ function response(): FtsSearchResponse {
     patronymes: [
       {
         id: "PAT_TRAORE",
+        historyNames: [],
         nameMain: "Traoré",
         nameSystem: "clan_name",
         casteOrSocialFunction: null,
@@ -129,6 +133,7 @@ function response(): FtsSearchResponse {
     languages: [
       {
         id: "lin",
+        historyNames: [],
         name: "Lingala",
         nameEn: "Lingala",
         familyId: "FLG_BANTU",

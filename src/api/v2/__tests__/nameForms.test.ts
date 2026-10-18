@@ -94,6 +94,21 @@ describe("listNameForms", () => {
     expect(query.ilike).toHaveBeenCalledWith("form_key", "%traore%");
   });
 
+  // @req REQ-135
+  it("folds the letters the view's key folds, so 'Fulɓe' and 'Fulbe' look up one form", async () => {
+    const query = buildFormsQuery([], 0);
+    fromMock.mockReturnValue(query);
+
+    await listNameForms({
+      q: "Fulɓe",
+      page: 1,
+      perPage: 48,
+      imposedOnly: false,
+    });
+
+    expect(query.ilike).toHaveBeenCalledWith("form_key", "%fulbe%");
+  });
+
   // @req REQ-054
   it("treats a wildcard typed by the reader as a literal character", async () => {
     const query = buildFormsQuery([], 0);

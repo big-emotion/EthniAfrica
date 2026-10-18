@@ -233,6 +233,32 @@ describe("nextStepTargets — the next step", () => {
     expect(namers(ownLanguage, "peul")).toEqual([]);
   });
 
+  // The fold equates « Kono » and « Kɔnɔ » (REQ-135). On a history that writes
+  // the self-name « Kono » and an outside « Kɔnɔ » apart, a reader who typed
+  // « Kɔnɔ » searched the outside name, whose language is still the namer.
+  // The language code is the fixture's, not a claim about the corpus.
+  // @req REQ-198
+  it("finds the namer of the spelling typed, not of a self-name the fold equates with it", () => {
+    const [selfName, outsideName] = PEUL_HISTORY.names;
+    const kono = {
+      ...PEUL_HISTORY,
+      names: [
+        { ...selfName, nameText: "Kono" },
+        { ...outsideName, nameText: "Kɔnɔ", languageOfOrigin: "tem" },
+      ],
+    };
+
+    expect(
+      nextStepTargets(
+        [people],
+        [{ subject: people, nameHistory: kono }],
+        "Kɔnɔ"
+      ).filter((target) => target.relation === "namer")
+    ).toMatchObject([
+      { type: "language", id: "tem", name: "tem", relation: "namer" },
+    ]);
+  });
+
   // Doctrine §1.1: competing readings stand side by side, unranked. A card
   // that quoted one of them would crown it, so a namer's reason is read only
   // from the accounts no other reading contests (« Avatime », four readings).
@@ -319,6 +345,16 @@ describe("nameFormOf — the name a next-step card shows and searches", () => {
       "Songhay"
     );
     expect(nameFormOf("Rwandais (Tutsi)", ["Tutsi", "Watusi"])).toBe("Tutsi");
+  });
+
+  // « al-Jaʿali » and « Al-Jaali » compare equal under the fold (REQ-135):
+  // the card keeps the spelling the label writes, not the history's last.
+  // @req REQ-135
+  it("keeps the history spelling the label writes when the fold equates two", () => {
+    const jaali = ["al-Jaʿali", "Jaali", "Al-Jaali"];
+    expect(nameFormOf("al-Jaʿali", jaali)).toBe("al-Jaʿali");
+    expect(nameFormOf("Al-Jaali", jaali)).toBe("Al-Jaali");
+    expect(nameFormOf("Fulbe", ["Fulɓe", "Pullo"])).toBe("Fulɓe");
   });
 
   // @req REQ-198

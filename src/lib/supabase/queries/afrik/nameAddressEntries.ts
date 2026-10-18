@@ -7,10 +7,11 @@ import { createServerClient } from "../../server";
  * The rows the name addresses are decided from (REQ-200): each answered
  * subject's filed name and its name history, and nothing else.
  *
- * The filed name is the form the search answers exactly for every kind
- * (`exactMatch` folds it against the query), so it is the form an address
- * can be offered for. The history is read because the threshold reads its
- * accounts' tiers and the address spells the form as the history tells it.
+ * The directory reads the history: every name it tells is an exact answer
+ * for its subject (migration 109), the threshold reads its accounts' tiers,
+ * and the address spells each form as the history tells it. The filed name
+ * is kept beside it as the row's label; a filed name the history does not
+ * tell has no account to read, so it has no address.
  *
  * The history is still most of what this walk costs: about 8.7 MB across the
  * six kinds' fiches, of which the threshold reads some 0.4 MB (name texts and

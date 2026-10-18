@@ -1,9 +1,9 @@
 import { describe, expect, it } from "vitest";
 
 import {
+  addressedHistoryNames,
   buildNameAddressDirectory,
   foldNameForm,
-  historyAddressSpelling,
   addressSpellingOf,
 } from "@/lib/search/nameAddress";
 
@@ -31,42 +31,40 @@ describe("the accent fold of an address", () => {
   });
 });
 
-describe("the spelling a history gives an answered form", () => {
+describe("the names of a history that have an address", () => {
+  // Every name a history tells is an exact answer (ETNI-2093), so each one
+  // that meets the crawler threshold is addressed, spelt as the history
+  // spells it: « Fulɓe » on the fiche filed « Peul ».
   // @req REQ-200
-  it("is the history's own spelling of that form", () => {
+  it("are every name one of whose accounts cites a source above unverified, in history order", () => {
+    const history = {
+      names: [
+        told("Fulɓe", ["referenced"]),
+        told("Peul", ["official"]),
+        told("Fellata", ["unverified"], ["unverified"]),
+        told("Pullo", ["unverified"], ["unverified", "official"]),
+      ],
+    };
+
+    expect(addressedHistoryNames(history)).toEqual(["Fulɓe", "Peul", "Pullo"]);
+  });
+
+  // @req REQ-200
+  it("are the history's own spellings, never the filed name's", () => {
     const history = {
       names: [told("Traoré", ["referenced"]), told("Tarawele", ["official"])],
     };
 
-    expect(historyAddressSpelling(history, "Traore")).toBe("Traoré");
+    expect(addressedHistoryNames(history)).toEqual(["Traoré", "Tarawele"]);
   });
 
   // @req REQ-200
-  it("needs one account of that form citing a source above unverified", () => {
-    const history = {
-      names: [
-        told("Lingala", ["unverified"], ["unverified", "unverified"]),
-        told("Bangala", ["official"]),
-      ],
-    };
-
-    expect(historyAddressSpelling(history, "Lingala")).toBeUndefined();
+  it("are none without a history, or when no account cites above unverified", () => {
+    expect(addressedHistoryNames(null)).toEqual([]);
+    expect(addressedHistoryNames({ names: [] })).toEqual([]);
     expect(
-      historyAddressSpelling(
-        {
-          names: [told("Lingala", ["unverified"], ["unverified", "official"])],
-        },
-        "lingala"
-      )
-    ).toBe("Lingala");
-  });
-
-  // @req REQ-200
-  it("gives nothing for a form the history does not tell", () => {
-    expect(
-      historyAddressSpelling({ names: [told("Peul", ["official"])] }, "Fulbe")
-    ).toBeUndefined();
-    expect(historyAddressSpelling(null, "Peul")).toBeUndefined();
+      addressedHistoryNames({ names: [told("Bangala", ["unverified"])] })
+    ).toEqual([]);
   });
 });
 

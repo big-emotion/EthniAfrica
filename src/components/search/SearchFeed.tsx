@@ -66,7 +66,12 @@ import {
   type FeedLensId,
 } from "@/lib/search/searchLenses";
 import { getLocalizedSearchResultName } from "@/lib/search/localizedResult";
-import { orderForSearch, searchedFormIn } from "@/lib/search/searchedName";
+import {
+  orderForSearch,
+  searchedAmong,
+  searchedFormIn,
+} from "@/lib/search/searchedName";
+import { foldNameForm } from "@/lib/search/nameAddress";
 import type { SearchFeedPresentation } from "@/lib/search/searchFeedPresentation";
 import type {
   SearchLead,
@@ -188,11 +193,14 @@ function resultForms(
     );
   }
 
-  const wanted = normalizeString(query.trim());
   const forms = subjects.flatMap((subject) => {
     const subjectId = `${subject.type}:${subject.id}`;
     const presentation = subject.naming?.presentation.forms ?? [];
     const filedName = getLocalizedSearchResultName(subject, language);
+    const isSearched = searchedAmong(
+      [filedName, ...presentation.map(({ form }) => form)],
+      query
+    );
     // Operator decision 2026-10-08 (doctrine §1.1): where the reader searched,
     // the searched form comes first, the name a people gives itself right
     // after it, then the filed name and the others in the fiche's order.
@@ -204,23 +212,22 @@ function resultForms(
           subjectId,
           selfGiven: subject.autonym === subject.name ? true : null,
           problematic: undefined,
-          searched: normalizeString(filedName) === wanted,
+          searched: isSearched(filedName),
         },
         ...presentation.map((form) => ({
           ...form,
           subjectId,
-          searched: normalizeString(form.form) === wanted,
+          searched: isSearched(form.form),
           detail: formDetail(form),
         })),
       ],
       (form) => form.searched
     );
   });
+  // One chip per spelling, not per comparison key: « Kono » and « Kɔnɔ »
+  // compare equal (REQ-135) and are still two spellings the corpus writes.
   const unique = new Map(
-    forms.map((form) => [
-      `${form.subjectId}:${normalizeString(form.form)}`,
-      form,
-    ])
+    forms.map((form) => [`${form.subjectId}:${foldNameForm(form.form)}`, form])
   );
   return [...unique.values()];
 }

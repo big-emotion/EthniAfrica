@@ -48,6 +48,38 @@ describe("NamesBlock", () => {
     );
   });
 
+  // The fold lets « Kono » reach « Kɔnɔ » (REQ-135); where the fiche writes
+  // the spelling the reader typed, that spelling alone is their search.
+  // @req REQ-135
+  it.each([
+    { kind: "people" as const, selfGiven: true },
+    { kind: "patronyme" as const, selfGiven: null },
+  ])(
+    "marks only the spelling typed, never one the fold equates with it ($kind)",
+    ({ kind, selfGiven }) => {
+      render(
+        <NamesBlock
+          answer={{
+            ...answerOf("peul"),
+            kind,
+            names: [
+              { form: "Kono", selfGiven },
+              { form: "Konnoh", selfGiven: null },
+              { form: "Kɔnɔ", selfGiven: null },
+            ],
+          }}
+          searchedForm="Kono"
+        />
+      );
+
+      const marked = screen
+        .getAllByRole("listitem")
+        .filter((item) => item.textContent?.includes("votre recherche"));
+      expect(marked).toHaveLength(1);
+      expect(marked[0]).toHaveTextContent(/^Kono/);
+    }
+  );
+
   // @req REQ-178
   it("keeps four names visible and the rest behind one control", () => {
     render(<NamesBlock answer={answerOf("peul")} />);
