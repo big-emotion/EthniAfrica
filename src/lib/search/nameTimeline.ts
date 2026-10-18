@@ -21,8 +21,8 @@ import type {
   NameHistoryEra,
 } from "@/lib/afrik/parsers/nameHistoryParser";
 import {
-  answersToSearch,
   orderForSearch,
+  searchedAmong,
   selfNameLead,
 } from "@/lib/search/searchedName";
 
@@ -183,8 +183,11 @@ export function buildNameTimeline(
   history: NameHistory,
   searched: string
 ): NameTimelineModel {
-  const isSearched = (name: HistoryName) =>
-    answersToSearch(name.nameText, searched);
+  const searchedSpelling = searchedAmong(
+    history.names.map(({ nameText }) => nameText),
+    searched
+  );
+  const isSearched = (name: HistoryName) => searchedSpelling(name.nameText);
   const ordered = orderForSearch(history.names, isSearched);
 
   return {

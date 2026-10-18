@@ -42,6 +42,29 @@ describe("buildNameTimeline — which name comes first", () => {
     expect(buildNameTimeline(PEUL_HISTORY, "fulbe").selfLead).toBeUndefined();
   });
 
+  // « al-Jaʿali » and « Al-Jaali » compare equal under the fold (REQ-135);
+  // the reader who typed one of them searched that one, not both.
+  // @req REQ-135
+  it("marks only the history spelling typed, never one the fold equates with it", () => {
+    const raw = JSON.parse(
+      readFileSync(
+        resolve(
+          process.cwd(),
+          "dataset/source/afrik/patronymes/PAT_AL_JAALI.json"
+        ),
+        "utf8"
+      )
+    );
+    const history = parseNameHistory(raw.nameHistory).data!;
+    const searched = (query: string) =>
+      buildNameTimeline(history, query)
+        .names.filter((name) => name.searched)
+        .map(({ nameText }) => nameText);
+
+    expect(searched("Al-Jaali")).toEqual(["Al-Jaali"]);
+    expect(searched("al-Jaʿali")).toEqual(["al-Jaʿali"]);
+  });
+
   // @req REQ-197
   it("keeps the self-given name first when the search matched no name", () => {
     const timeline = buildNameTimeline(LINGALA_HISTORY, "kibangi");

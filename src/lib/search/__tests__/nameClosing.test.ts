@@ -244,6 +244,16 @@ describe("nameFormOf — the name a next-step card shows and searches", () => {
     expect(nameFormOf("Rwandais (Tutsi)", ["Tutsi", "Watusi"])).toBe("Tutsi");
   });
 
+  // « al-Jaʿali » and « Al-Jaali » compare equal under the fold (REQ-135):
+  // the card keeps the spelling the label writes, not the history's last.
+  // @req REQ-135
+  it("keeps the history spelling the label writes when the fold equates two", () => {
+    const jaali = ["al-Jaʿali", "Jaali", "Al-Jaali"];
+    expect(nameFormOf("al-Jaʿali", jaali)).toBe("al-Jaʿali");
+    expect(nameFormOf("Al-Jaali", jaali)).toBe("Al-Jaali");
+    expect(nameFormOf("Fulbe", ["Fulɓe", "Pullo"])).toBe("Fulɓe");
+  });
+
   // @req REQ-198
   it("falls back on the label's lead form, and keeps a plain name whole", () => {
     expect(nameFormOf("Lingala (locuteurs)")).toBe("Lingala");

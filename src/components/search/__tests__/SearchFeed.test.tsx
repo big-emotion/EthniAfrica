@@ -1,3 +1,6 @@
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, expect, it, vi } from "vitest";
@@ -7,6 +10,7 @@ import { SearchFeed } from "@/components/search/SearchFeed";
 import { getFamilyRoute } from "@/lib/routing";
 import { ANSWER_FIXTURES } from "@/lib/search/__fixtures__/answerFixtures";
 import { FEED_CASES } from "@/lib/search/__fixtures__/feedCases";
+import { readNaming } from "@/lib/search/naming";
 import type { SearchResult } from "@/types/afrik-frontend";
 
 function fixture(id: string) {
@@ -734,6 +738,78 @@ describe("SearchFeed", () => {
       )
     ).toHaveLength(2);
   });
+
+  // The comparison fold makes « Kono » and « Kɔnɔ » compare equal so that a
+  // reader typing either reaches the fiche (REQ-135). It must never merge them
+  // on screen: each spelling the corpus writes keeps its chip, and only the
+  // one the reader typed is marked as their search. Reads the real fiches, so
+  // the test fails if a fiche stops writing both spellings.
+  // @req REQ-135
+  it.each([
+    {
+      fiche: "FLG_MANDE/PPL_KONO.json",
+      query: "Kono",
+      expected: [
+        { form: "Kono", searched: true, selfGiven: true },
+        { form: "Konnoh", searched: false, selfGiven: false },
+        { form: "Kɔnɔ", searched: false, selfGiven: false },
+      ],
+    },
+    {
+      fiche: "FLG_KWA/PPL_LARTEH.json",
+      query: "Lete",
+      expected: [
+        { form: "Lete", searched: true, selfGiven: false },
+        { form: "Gua", searched: false, selfGiven: true },
+        { form: "Larteh", searched: false, selfGiven: false },
+        { form: "Kyerepong", searched: false, selfGiven: false },
+        { form: "Okere", searched: false, selfGiven: false },
+        { form: "Late", searched: false, selfGiven: false },
+        { form: "Lɛtɛ", searched: false, selfGiven: false },
+      ],
+    },
+  ])(
+    "keeps every spelling $fiche writes when « $query » is searched",
+    ({ fiche, query, expected }) => {
+      const source = JSON.parse(
+        readFileSync(
+          join(process.cwd(), "dataset/source/afrik/peuples", fiche),
+          "utf8"
+        )
+      );
+      const subject = namedResult({
+        type: "people",
+        id: source.id,
+        name: source.nameMain,
+        nameEn: undefined,
+        autonym: source.content.appellations.selfAppellation,
+        naming: readNaming("people", source.content),
+      });
+      const { container } = render(
+        <SearchFeed
+          query={query}
+          language="fr"
+          state="exact"
+          results={[subject]}
+          subjects={[subject]}
+          leads={[]}
+          companions={emptyCompanions}
+        />
+      );
+
+      const chips = Array.from(
+        container.querySelectorAll<HTMLElement>(
+          '[data-testid="appellations-list"] [data-appellation]'
+        ),
+        (chip) => ({
+          form: chip.querySelector("span")?.textContent,
+          searched: chip.dataset.searched === "true",
+          selfGiven: chip.dataset.selfGiven === "true",
+        })
+      );
+      expect(chips).toEqual(expected);
+    }
+  );
 
   // @req REQ-002
   it("groups split people fiches and preserves privacy-safe click analytics", async () => {

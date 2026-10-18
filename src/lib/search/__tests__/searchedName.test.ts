@@ -3,6 +3,8 @@ import { describe, expect, it } from "vitest";
 import {
   answersToSearch,
   orderForSearch,
+  searchedAmong,
+  searchedFormIn,
   selfNameLead,
 } from "@/lib/search/searchedName";
 
@@ -112,5 +114,52 @@ describe("selfNameLead", () => {
   // @req REQ-178
   it("offers no lead without a query", () => {
     expect(selfNameLead(fulbe, "")).toBeUndefined();
+  });
+});
+
+// The fold lets « Kono » reach « Kɔnɔ » (REQ-135); it must not make « Kɔnɔ »
+// the reader's search on a fiche that also writes « Kono ».
+// @req REQ-135
+describe("searchedAmong", () => {
+  // @req REQ-135
+  it("marks the spelling typed, not a spelling the fold equates with it", () => {
+    const kono = ["Kono", "Konnoh", "Kɔnɔ"];
+    expect(kono.filter(searchedAmong(kono, "Kono"))).toEqual(["Kono"]);
+    expect(kono.filter(searchedAmong(kono, "kɔnɔ"))).toEqual(["Kɔnɔ"]);
+
+    const jaali = ["al-Jaʿali", "Jaali", "Al-Jaali"];
+    expect(jaali.filter(searchedAmong(jaali, "Al-Jaali"))).toEqual([
+      "Al-Jaali",
+    ]);
+  });
+
+  // @req REQ-135
+  it("reaches a form by the fold when the subject writes none spelt as typed", () => {
+    const fula = ["Pullo", "Peul", "Fulɓe"];
+    expect(fula.filter(searchedAmong(fula, "Fulbe"))).toEqual(["Fulɓe"]);
+    expect(fula.filter(searchedAmong(fula, "FULƁE"))).toEqual(["Fulɓe"]);
+  });
+
+  // @req REQ-135
+  it("still ignores accents and case in the spelling typed", () => {
+    const larteh = ["Lɛtɛ", "Lete", "Late"];
+    expect(larteh.filter(searchedAmong(larteh, "LÉTE"))).toEqual(["Lete"]);
+  });
+
+  // @req REQ-135
+  it("marks nothing when nothing was searched", () => {
+    const kono = ["Kono", "Kɔnɔ"];
+    expect(kono.filter(searchedAmong(kono))).toEqual([]);
+  });
+});
+
+// @req REQ-135
+describe("searchedFormIn", () => {
+  // @req REQ-135
+  it("titles the page with the spelling typed before one only the fold reaches", () => {
+    expect(searchedFormIn([{ form: "Kɔnɔ" }, { form: "Kono" }], "kono")).toBe(
+      "Kono"
+    );
+    expect(searchedFormIn([{ form: "Kɔnɔ" }], "kono")).toBe("Kɔnɔ");
   });
 });

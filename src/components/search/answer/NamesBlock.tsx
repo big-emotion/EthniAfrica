@@ -9,7 +9,7 @@ import {
 } from "@/components/search/answer/answerStyle";
 import { searchAnswerCopy } from "@/lib/i18n/copy/searchAnswer";
 import type { AnswerName, SearchAnswer } from "@/lib/search/answer";
-import { answersToSearch, orderForSearch } from "@/lib/search/searchedName";
+import { orderForSearch, searchedAmong } from "@/lib/search/searchedName";
 import { cn } from "@/lib/utils";
 import type { Language } from "@/types/shared";
 
@@ -41,11 +41,11 @@ function pillQualifier(line?: string): string | undefined {
 
 function ListNames({
   names,
-  searchedForm,
+  isSearched,
   language,
 }: {
   names: AnswerName[];
-  searchedForm?: string;
+  isSearched: (form: string) => boolean;
   language: Language;
 }) {
   const copy = searchAnswerCopy[language].names;
@@ -73,7 +73,7 @@ function ListNames({
                   {copy.selfGiven}
                 </span>
               ) : null}
-              {answersToSearch(name.form, searchedForm) ? (
+              {isSearched(name.form) ? (
                 <span className="text-afh-caption font-bold text-[color:var(--accent-ink)]">
                   {copy.yourSearch}
                 </span>
@@ -113,18 +113,18 @@ function ListNames({
 
 function PillNames({
   names,
-  searchedForm,
+  isSearched,
   language,
 }: {
   names: AnswerName[];
-  searchedForm?: string;
+  isSearched: (form: string) => boolean;
   language: Language;
 }) {
   const copy = searchAnswerCopy[language].names;
   return (
     <ul className="m-0 flex list-none flex-wrap gap-afh-md p-0">
       {names.map((name) => {
-        const searched = answersToSearch(name.form, searchedForm);
+        const searched = isSearched(name.form);
         const qualifier = pillQualifier(name.shortLine);
         // A sentence the fiche filed as a name is read, not boxed: a box
         // around a paragraph is a card, and a name is not a card.
@@ -237,9 +237,11 @@ export function NamesBlock({
   if (names.length === 0 && !hasPath) return null;
 
   const dated = kind === "country" && names.some((name) => name.period);
-  const listed = orderForSearch(names, (name) =>
-    answersToSearch(name.form, searchedForm)
+  const isSearched = searchedAmong(
+    names.map(({ form }) => form),
+    searchedForm
   );
+  const listed = orderForSearch(names, (name) => isSearched(name.form));
   const annotated =
     kind === "people" &&
     names.some((name) => name.shortLine || name.selfGiven === true);
@@ -270,17 +272,9 @@ export function NamesBlock({
       ) : dated ? (
         <Timeline names={names} groupLabel={groupLabel} language={language} />
       ) : annotated ? (
-        <ListNames
-          names={listed}
-          searchedForm={searchedForm}
-          language={language}
-        />
+        <ListNames names={listed} isSearched={isSearched} language={language} />
       ) : (
-        <PillNames
-          names={listed}
-          searchedForm={searchedForm}
-          language={language}
-        />
+        <PillNames names={listed} isSearched={isSearched} language={language} />
       )}
     </section>
   );

@@ -891,8 +891,9 @@ GRANT SELECT ON public.afrik_name_forms TO anon, authenticated;
 --      SELECT public.afrik_name_key('Al-ʿarabiyya al-fuṣḥā');  -- al-arabiyya al-fusha
 --
 -- 2. A history name is an exact answer, first among peoples:
---      SELECT public.afrik_search_peoples('Fulɓe') -> 'rows' -> 0
---             -> 'id', -> 'exactMatch';                        -- "PPL_FULA", true
+--      SELECT r ->> 'id', r -> 'exactMatch'
+--        FROM (SELECT public.afrik_search_peoples('Fulɓe') #> '{rows,0}' AS r) s;
+--                                                              -- PPL_FULA, true
 --      SELECT public.afrik_search_peoples('Fulbe') #>> '{rows,0,id}';
 --                                                              -- PPL_FULA
 --      SELECT public.afrik_search_peoples('Bikpakpaam') #>> '{rows,0,id}';

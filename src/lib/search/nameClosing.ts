@@ -319,11 +319,16 @@ export function nameFormOf(
     .split(/\s*[()/]\s*/)
     .map((part) => part.trim())
     .filter(Boolean);
-  const told = new Map(toldNames.map((name) => [normalizeString(name), name]));
-  const toldPart = parts.find((part) => told.has(normalizeString(part)));
-  return toldPart
-    ? told.get(normalizeString(toldPart))
-    : (parts[0] ?? filedLabel);
+  // The comparison fold equates « al-Jaʿali » and « Al-Jaali » (REQ-135); the
+  // history spelling the label writes wins, and the fold only breaks a miss.
+  const toldAs = (part: string) =>
+    toldNames.find((name) => foldNameForm(name) === foldNameForm(part)) ??
+    toldNames.find((name) => normalizeString(name) === normalizeString(part));
+  for (const part of parts) {
+    const told = toldAs(part);
+    if (told) return told;
+  }
+  return parts[0] ?? filedLabel;
 }
 
 /**
