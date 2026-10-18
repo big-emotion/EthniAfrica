@@ -2073,6 +2073,71 @@ describe("ftsSearchEntities", () => {
       expect(result.nearNames).toEqual([]);
     });
 
+    // Chukwu reaches « tchikaya » only through the shared phonetic key, and
+    // nothing in the data links it to Tchicaya. Listed under « Cherchiez-
+    // vous… ? » it would read as a fiche about the name (brief 16). The lead
+    // already offers the spelling the key was bridging.
+    // @req REQ-201
+    it("withholds the family names reached only by their sound when it offers a lead beside them", async () => {
+      patronymesPayload = {
+        total: 2,
+        rows: [
+          patronymeRow("PAT_CHUKWU", "Chukwu"),
+          patronymeRow("PAT_TCHICAYA", "Tchicaya"),
+        ],
+      };
+      phoneticOnlyIds.add("PAT_CHUKWU");
+      leadsPayload = { rows: [tchicayaLead] };
+
+      const result = await ftsSearchEntities({
+        q: "tchikaya",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(result.patronymes.map((p) => p.id)).toEqual(["PAT_TCHICAYA"]);
+      expect(result.patronymesTotal).toBe(1);
+      expect(result.total).toBe(1);
+      expect(result.results.map((hit) => hit.id)).toEqual(["PAT_TCHICAYA"]);
+      expect(result.leads).toEqual([tchicayaLead]);
+    });
+
+    // Withheld, the sound-alikes may have been all the search found: the
+    // page is then a misspelling with no result, whose leads mix every kind.
+    // @req REQ-201
+    it("turns a search that found only sound-alikes into a zero-result misspelling", async () => {
+      patronymesPayload = {
+        total: 1,
+        rows: [patronymeRow("PAT_CHUKWU", "Chukwu")],
+      };
+      phoneticOnlyIds.add("PAT_CHUKWU");
+      leadsPayload = {
+        rows: [
+          tchicayaLead,
+          {
+            kind: "people",
+            id: "PPL_TCHOKWE",
+            name: "Tchokwe",
+            similarity: 0.3,
+          },
+        ],
+      };
+
+      const result = await ftsSearchEntities({
+        q: "tchikaya",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(result.total).toBe(0);
+      expect(result.results).toEqual([]);
+      expect(result.leads.map((lead) => lead.id)).toEqual([
+        "PAT_TCHICAYA",
+        "PPL_TCHOKWE",
+      ]);
+      expect(result.nearNames).toEqual([]);
+    });
+
     // GWT bello: Bell begins with b and scores 0.57, yet Bello answers.
     // @req REQ-125
     it("offers no family name, as a lead or as a similar name, when one answers exactly", async () => {
@@ -2283,6 +2348,8 @@ describe("ftsSearchEntities", () => {
             patronymeRow("PAT_TCHICAYA", "Tchicaya"),
           ],
         };
+        // With no lead offered, nothing stands in for the phonetic bridge.
+        phoneticOnlyIds.add("PAT_CHUKWU");
         leadsPayload = { rows: [tchicayaLead] };
 
         const result = await ftsSearchEntities({

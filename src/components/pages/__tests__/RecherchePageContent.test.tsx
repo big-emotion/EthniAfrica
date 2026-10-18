@@ -186,6 +186,12 @@ const desktopPivotApiResponse = {
 };
 
 // ── helpers ───────────────────────────────────────────────────────────────────
+// Testing Library compares an element's text with its spaces folded, the
+// no-break ones included; the copy keeps them, so it is folded the same way.
+function asShown(text: string): string {
+  return text.replace(/\s+/g, " ");
+}
+
 function okJson(payload: unknown) {
   return Promise.resolve({
     ok: true,
@@ -656,9 +662,11 @@ describe("RecherchePageContent", () => {
 
   // DEC-075, measured on production 2026-10-18: « tchikaya » found Chukwu and
   // Tchicaya, neither answering it, and the page only said it found related
-  // fiches. Tchicaya is the spelling the reader probably meant.
+  // fiches. Tchicaya is the spelling the reader probably meant. Chukwu, tied
+  // to the query by its sound alone, no longer comes back beside the lead
+  // (REQ-201): the API sends Tchicaya only.
   // @req REQ-125
-  it("asks « Cherchiez-vous… ? » for « tchikaya », offers Tchicaya, and still lists the fiches found", async () => {
+  it("asks « Cherchiez-vous… ? » for « tchikaya », offers Tchicaya, and lists the fiche found under its caution", async () => {
     mockFetch.mockResolvedValue(
       okJson({
         data: {
@@ -668,11 +676,10 @@ describe("RecherchePageContent", () => {
           languages: [],
           persons: [],
           patronymes: [
-            { id: "PAT_CHUKWU", nameMain: "Chukwu", relevance: 0.5 },
             { id: "PAT_TCHICAYA", nameMain: "Tchicaya", relevance: 0.5 },
           ],
-          patronymesTotal: 2,
-          total: 2,
+          patronymesTotal: 1,
+          total: 1,
           leads: [
             {
               kind: "patronyme",
@@ -696,10 +703,15 @@ describe("RecherchePageContent", () => {
     });
 
     await waitFor(() => {
-      expect(screen.getByText("Cherchiez-vous… ?")).toBeInTheDocument();
+      expect(
+        screen.getByText(asShown(searchFeedCopy.fr.answer.typo))
+      ).toBeInTheDocument();
     });
     expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
       "tchikaya"
+    );
+    expect(screen.getByTestId("feed-block-verdict")).toHaveTextContent(
+      asShown(searchFeedCopy.fr.answer.typoSummary("tchikaya", ["Tchicaya"]))
     );
     expect(
       screen.queryByText(searchFeedCopy.fr.answer.relatedOnly)
@@ -709,8 +721,18 @@ describe("RecherchePageContent", () => {
       within(choices).getByRole("link", { name: /Tchicaya/ })
     ).toBeInTheDocument();
     const fiches = screen.getByTestId("feed-block-fiches");
-    expect(within(fiches).getByText("Chukwu")).toBeInTheDocument();
+    expect(
+      within(fiches).getByRole("heading", {
+        name: searchFeedCopy.fr.answer.fichesFound.title(1),
+      })
+    ).toBeInTheDocument();
+    expect(fiches).toHaveTextContent(
+      asShown(searchFeedCopy.fr.answer.fichesFound.note(1))
+    );
     expect(within(fiches).getByText("Tchicaya")).toBeInTheDocument();
+    expect(
+      within(fiches).queryByText(searchFeedCopy.fr.blocks.ficheMeta)
+    ).not.toBeInTheDocument();
     expect(
       choices.compareDocumentPosition(fiches) & Node.DOCUMENT_POSITION_FOLLOWING
     ).toBeTruthy();
@@ -764,10 +786,16 @@ describe("RecherchePageContent", () => {
     await waitFor(() => {
       expect(screen.getByTestId("feed-block-fiches")).toBeInTheDocument();
     });
-    expect(screen.queryByText("Cherchiez-vous… ?")).not.toBeInTheDocument();
+    expect(
+      screen.queryByText(asShown(searchFeedCopy.fr.answer.typo))
+    ).not.toBeInTheDocument();
     expect(
       screen.queryByText(
-        searchFeedCopy.fr.answer.typoSummary("Congo-Brazzaville")
+        asShown(
+          searchFeedCopy.fr.answer.typoSummary("Congo-Brazzaville", [
+            "Tchicaya",
+          ])
+        )
       )
     ).not.toBeInTheDocument();
     expect(screen.queryByTestId("appellations-list")).not.toBeInTheDocument();
@@ -911,12 +939,23 @@ describe("RecherchePageContent", () => {
       await new Promise((r) => setTimeout(r, 100));
     });
 
+    // The lead is offered as a new search the reader chooses. A lead is not a
+    // fiche the search found, so no fiches block repeats it as a card (brief
+    // 16, « a misspelling with no related fiche »; charter §3 ter: the
+    // verdict, the choices, then `further`).
     await waitFor(() => {
-      const hrefs = screen
-        .getAllByRole("link", { name: /Bambara/ })
-        .map((link) => link.getAttribute("href"));
-      expect(hrefs).toContain(getPeopleRoute("fr", "PPL_BAMBARA"));
+      const choices = screen.getByTestId("appellations-list");
+      expect(
+        within(choices).getByRole("link", { name: "Bambara" })
+      ).toHaveAttribute(
+        "href",
+        `${getLocalizedRoute("fr", "search")}?${new URLSearchParams({ q: "Bambara" })}`
+      );
     });
+    expect(screen.queryByTestId("feed-block-fiches")).not.toBeInTheDocument();
+    expect(
+      screen.getAllByRole("link").map((link) => link.getAttribute("href"))
+    ).not.toContain(getPeopleRoute("fr", "PPL_BAMBARA"));
   });
 
   // @req REQ-125

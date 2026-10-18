@@ -187,6 +187,18 @@ describe("OpenAPI v2 unified search contract", () => {
     expect(description).toMatch(/0\.4/);
   });
 
+  // « tchikaya » no longer returns Chukwu beside the Tchicaya lead: a client
+  // counting patronymesTotal must know why (brief 16).
+  // @req REQ-201
+  it("documents that a family-name lead also withholds the names reached only by their sound", () => {
+    const description =
+      schemas.SearchResponseData.properties?.patronymes?.description;
+
+    expect(description).toMatch(/phonetic key/i);
+    expect(description).toMatch(/family-name lead/i);
+    expect(description).toMatch(/DEC-075/);
+  });
+
   // @req REQ-002
   it("enumerates every kind the merge can emit", () => {
     const kind = schemas.SearchHitV2?.properties?.kind;

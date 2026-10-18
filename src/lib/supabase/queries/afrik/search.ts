@@ -548,31 +548,30 @@ async function attachSuggestions(
   supabase: ReturnType<typeof createServerClient>,
   params: FtsSearchParams,
   text: string,
-  ranked: FtsSearchResponse,
+  found: FtsSearchResponse,
   pageOneAnswers: PageOneProbe
 ): Promise<FtsSearchResponse> {
   const { lens, lang } = params;
-  const { total } = ranked;
-  if (lens === "quiz" || !text) return ranked;
+  if (lens === "quiz" || !text) return found;
 
   const visibleNameKeys = new Set([
-    ...ranked.peoples.map((item) => nameEntityKey("people", item.id)),
-    ...ranked.countries.map((item) => nameEntityKey("country", item.id)),
-    ...ranked.families.map((item) => nameEntityKey("family", item.id)),
+    ...found.peoples.map((item) => nameEntityKey("people", item.id)),
+    ...found.countries.map((item) => nameEntityKey("country", item.id)),
+    ...found.families.map((item) => nameEntityKey("family", item.id)),
   ]);
   let nameSuggestions: SearchLead[] = [];
   try {
     nameSuggestions = await fetchSearchNameSuggestions(
       supabase,
       text,
-      total === 0 ? 3 : visibleNameKeys.size + 3,
+      found.total === 0 ? 3 : visibleNameKeys.size + 3,
       lang
     );
   } catch (error) {
     // A near-name shelf enriches an answered search; it cannot invalidate
     // the ranked results. Zero-result leads are the answer itself and retain
     // their existing fail-closed behaviour.
-    if (total === 0) throw error;
+    if (found.total === 0) throw error;
   }
   // A family name is offered only as a spelling of the searched name (DEC-075):
   // the SQL keeps those that share its first letter at >= 0.4, and it is
@@ -588,10 +587,23 @@ async function attachSuggestions(
   const otherNames = nameSuggestions.filter(isNearNameKind);
   const offerFamilyNames =
     familyNames.length > 0 &&
-    !ranked.widenedFrom &&
+    !found.widenedFrom &&
     !params.countryId &&
     !params.familyId &&
-    !(await answeredExactly(params, text, rankedHits(ranked), pageOneAnswers));
+    !(await answeredExactly(params, text, rankedHits(found), pageOneAnswers));
+
+  // The phonetic key bridges a spelling the trigram misses (« Keyta » to
+  // « Keïta »). Once a family name is offered as the spelling the reader
+  // meant, the lead does that job, and a name tied to the query by its sound
+  // alone (Chukwu for « tchikaya ») would be listed under « Cherchiez-vous… ? »
+  // as a fiche about the name: a link nothing in the data makes (REQ-201,
+  // brief 16). Withheld, it may leave no result at all; the page is then a
+  // misspelling that found nothing, whose leads mix every kind.
+  const ranked =
+    offerFamilyNames && found.total > 0
+      ? await withoutSoundAlikesBesideLead(supabase, params, text, found)
+      : found;
+  const { total } = ranked;
 
   // REQ-125 keeps zero-result recovery distinct from the similar-name
   // editorial block on an answered search (REQ-180), which never carries a
@@ -613,6 +625,53 @@ async function attachSuggestions(
       : [];
 
   return { ...ranked, leads, nearNames };
+}
+
+/**
+ * Ranks the family names again with migration 108's withholding switch on,
+ * and recounts the page around them. The switch is named for its first use
+ * (an exact answer in another kind); what it does is leave the rows reached
+ * only through the phonetic key out of the rows and the total. A database
+ * without migration 108 keeps the ranking it gave, as `withoutSoundAlikes`.
+ */
+async function withoutSoundAlikesBesideLead(
+  supabase: ReturnType<typeof createServerClient>,
+  params: FtsSearchParams,
+  text: string,
+  ranked: FtsSearchResponse
+): Promise<FtsSearchResponse> {
+  const { data, error } = await supabase.rpc("afrik_search_patronymes", {
+    p_q: text,
+    p_limit: params.limit,
+    p_offset: params.offset,
+    p_exact_elsewhere: true,
+  });
+  if (isMissingFunction(error)) return ranked;
+  if (error) {
+    logger.error("Error in ranked patronymes search", error);
+    throw error;
+  }
+  const payload = asRankedPayload(data);
+  const patronymes = await withAssociatedPeoples(
+    payload.rows.map(toRankedPatronyme)
+  );
+  return {
+    ...ranked,
+    patronymes,
+    patronymesTotal: payload.total,
+    total: ranked.total - ranked.patronymesTotal + payload.total,
+    results: mergeIntoOneRanking(
+      {
+        peoples: ranked.peoples,
+        countries: ranked.countries,
+        families: ranked.families,
+        persons: ranked.persons,
+        patronymes,
+        quizzes: ranked.quizzes,
+      },
+      params.lang ?? "fr"
+    ),
+  };
 }
 
 function isNearNameKind(item: SearchLead): item is SearchNearName {

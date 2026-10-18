@@ -71,14 +71,18 @@ export function buildSearchFeedPlan(
     };
   }
 
-  const first: FeedBlockId[] = ["verdict"];
+  // A misspelling opens on the filters, where every approved board draws
+  // them: set after the choices, the pressed « Tout » read as the selected
+  // option of a set holding the name (board search-state-typo-fiches, brief
+  // 16, proposed).
+  const first: FeedBlockId[] = state === "typo" ? ["lenses"] : [];
+  first.push("verdict");
   if (availability.appellations) first.push("appellations");
-  first.push("lenses");
+  if (state !== "typo") first.push("lenses");
   // A page that admits it does not know the name draws no empty shelf under
   // the confession (brief 12, part A, approved 2026-10-17). A page that asks
   // which name the reader meant draws none either: its pieces are about a
-  // nearest name, and the Shorts filter keeps them (board
-  // search-state-typo-fiches, brief 13, proposed 2026-10-18).
+  // nearest name the reader has not chosen yet (brief 16, proposed).
   if ((state !== "unknown" && state !== "typo") || availability.shorts) {
     first.push("shorts");
   }

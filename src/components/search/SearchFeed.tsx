@@ -26,6 +26,7 @@ import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
 import { SearchFeedContributionAction } from "@/components/search/feed/SearchFeedContributionAction";
 import { SearchFeedLayout } from "@/components/search/feed/SearchFeedLayout";
 import { isOnName, ShortsBlock } from "@/components/search/feed/ShortsBlock";
+import { SpellingChoicesBlock } from "@/components/search/feed/SpellingChoicesBlock";
 import { OriginBlock } from "@/components/search/answer/OriginBlock";
 import { CountriesAnswer } from "@/components/search/feed/CountriesAnswer";
 import { SubjectAnswer } from "@/components/search/feed/SubjectAnswer";
@@ -296,19 +297,23 @@ export function SearchFeed({
     state === "widened" && subjects.length === 0 && results.length > 0;
   // A related-only answer shows no shelf, so that nothing unrelated sits under
   // it. A piece found by the reader's own word is the exception: it answers the
-  // very word that was typed.
+  // very word that was typed. A misspelling shows none either: with nothing
+  // answering, the companions come from the first lead, and a « Jeux » lens
+  // titled with the reader's spelling over a game about that lead would treat
+  // two names as one before the reader chose it (brief 16).
   const wordShorts = loadedCompanions.shorts.items.filter(
     ({ match }) => match.relation === "word"
   );
-  const companions: SearchCompanionsData = relatedOnly
-    ? {
-        subjects: [],
-        shorts: { count: wordShorts.length, items: wordShorts },
-        anecdotes: { count: 0, items: [] },
-        proverbs: { count: 0, items: [] },
-        quiz: { count: 0, item: null },
-      }
-    : loadedCompanions;
+  const companions: SearchCompanionsData =
+    relatedOnly || state === "typo"
+      ? {
+          subjects: [],
+          shorts: { count: wordShorts.length, items: wordShorts },
+          anecdotes: { count: 0, items: [] },
+          proverbs: { count: 0, items: [] },
+          quiz: { count: 0, item: null },
+        }
+      : loadedCompanions;
   const derivedForms = resultForms(
     state,
     query,
@@ -341,8 +346,14 @@ export function SearchFeed({
             (plateOrder.get(right.id) ?? Number.MAX_SAFE_INTEGER)
         )
       : combinedPlates;
+  // A misspelling's leads are its choices, never fiches it found: with no
+  // result, the page draws no fiches block (brief 16).
   const ficheEntries =
-    results.length > 0 ? groupPeopleResults([...results]) : leads;
+    results.length > 0
+      ? groupPeopleResults([...results])
+      : state === "typo"
+        ? []
+        : leads;
   const derivedFicheRows = ficheEntries.map((entry, index): FeedFicheItem =>
     entry.type === "peopleGroup"
       ? {
@@ -473,7 +484,10 @@ export function SearchFeed({
           ? answerCopy.wordNameBody
           : answerCopy.unknownNameBody
         : state === "typo"
-          ? copy.answer.typoSummary(displayName)
+          ? copy.answer.typoSummary(
+              displayName,
+              forms.map(({ form }) => form)
+            )
           : state === "widened"
             ? isRelationBrowse
               ? copy.answer.relationSummary
@@ -727,6 +741,20 @@ export function SearchFeed({
       }
     />
   );
+  // The one way a reader with a name we do not hold, or a spelling we do not
+  // hold, says so (brief 12 for the unknown name, brief 16 for a misspelling).
+  const proposeSource = (
+    <SearchFeedContributionAction
+      language={language}
+      target={contributionTarget}
+      label={answerCopy.invitationAction}
+      preferredKind="contribution"
+      variant="outline"
+      // Board search-unknown-430 (`.ea-owed-action`): ink text at the
+      // button's own medium weight, on the accent tint.
+      className="min-h-11 border-[color:var(--accent)] bg-[color:var(--accent-tint)] py-0 text-afh-text hover:bg-[color:var(--accent-tint)] hover:text-afh-text hover:brightness-95"
+    />
+  );
   const nextStep = (
     <NameNextStep
       cards={nextSteps}
@@ -766,23 +794,25 @@ export function SearchFeed({
               presentation?.answer?.tone ??
               (state === "typo" || state === "unknown" ? "plain" : "answer")
             }
-            action={
-              confesses ? (
-                <SearchFeedContributionAction
-                  language={language}
-                  target={contributionTarget}
-                  label={answerCopy.invitationAction}
-                  preferredKind="contribution"
-                  variant="outline"
-                  // Board search-unknown-430 (`.ea-owed-action`): ink text at
-                  // the button's own medium weight, on the accent tint.
-                  className="min-h-11 border-[color:var(--accent)] bg-[color:var(--accent-tint)] py-0 text-afh-text hover:bg-[color:var(--accent-tint)] hover:text-afh-text hover:brightness-95"
-                />
-              ) : undefined
-            }
+            action={confesses ? proposeSource : undefined}
           />
         );
       case "appellations":
+        // A misspelling's choices: each is a new search the reader chooses,
+        // the page's one action. A reviewed presentation keeps its own block.
+        if (state === "typo" && !presentation?.appellations) {
+          return (
+            <SpellingChoicesBlock
+              choices={forms.map(({ form }) => ({
+                name: form,
+                href: nameHref(form),
+              }))}
+              title={copy.answer.typoChoices(forms.length)}
+              invitation={copy.answer.typoInvitation(displayName)}
+              action={proposeSource}
+            />
+          );
+        }
         return (
           <AppellationsBlock
             key={query}
@@ -795,7 +825,9 @@ export function SearchFeed({
             )}
             title={
               presentation?.appellations?.title ??
-              (state === "typo" ? copy.answer.typoChoices : undefined)
+              (state === "typo"
+                ? copy.answer.typoChoices(forms.length)
+                : undefined)
             }
             subtitle={
               presentation?.appellations
@@ -884,6 +916,13 @@ export function SearchFeed({
           />
         ) : null;
       case "fiches":
+        // A misspelling's fiches bear another name than the one searched:
+        // each card says what its fiche is about, under the caution.
+        if (state === "typo" && !presentation?.fiches) {
+          return (
+            <FichesBlock found items={lensFicheRows} language={language} />
+          );
+        }
         return (
           <FichesBlock
             items={ficheRows}

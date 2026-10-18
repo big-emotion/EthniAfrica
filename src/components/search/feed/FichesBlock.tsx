@@ -45,6 +45,12 @@ export interface FichesBlockProps {
    * relation browse, where no name was searched.
    */
   lens?: "grouped" | "ungrouped";
+  /**
+   * The fiches a misspelling's search found, none bearing the searched name
+   * (brief 16): titled by what they are, under the related-only caution, each
+   * card with its own line, as the « Fiches » lens draws them.
+   */
+  found?: boolean;
 }
 
 // @req REQ-180
@@ -56,8 +62,23 @@ export function FichesBlock({
   zone = "primary",
   language = "fr",
   lens,
+  found = false,
 }: FichesBlockProps) {
   const copy = searchFeedCopy[language];
+
+  if (found) {
+    return (
+      <SearchFeedBlock id="fiches" zone={zone}>
+        <FicheGroup
+          id="fiches-found"
+          title={copy.answer.fichesFound.title(items.length)}
+          note={copy.answer.fichesFound.note(items.length)}
+          items={items}
+          reviewed={reviewed}
+        />
+      </SearchFeedBlock>
+    );
+  }
 
   if (lens) {
     const onName = items.filter((item) => item.onName);

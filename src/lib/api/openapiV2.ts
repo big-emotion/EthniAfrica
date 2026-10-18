@@ -934,7 +934,7 @@ const options: swaggerJsdoc.Options = {
               type: "array",
               items: { $ref: "#/components/schemas/PatronymeSearchResultV2" },
               description:
-                "Matching names (REQ-135), ranked by afrik_search_patronymes (migration 066): exact name match, then a prefix/accent-insensitive lexical match, then a dmetaphone phonetic match, then a pg_trgm typo-tolerance fallback. A name reached only through its phonetic key is left out of this array and of patronymesTotal when the query has an exact answer in any kind or in the production ledger (migration 108, REQ-201). Each carries relevance, exactMatch, normalizedScore and a snippet.",
+                "Matching names (REQ-135), ranked by afrik_search_patronymes (migration 066): exact name match, then a prefix/accent-insensitive lexical match, then a dmetaphone phonetic match, then a pg_trgm typo-tolerance fallback. A name reached only through its phonetic key is left out of this array, of patronymesTotal and of total when the query has an exact answer in any kind or in the production ledger (migration 108, REQ-201), and when the response offers a family-name lead beside its results, which stands for the spelling the phonetic key was bridging (DEC-075). Each carries relevance, exactMatch, normalizedScore and a snippet.",
             },
             quizzes: {
               type: "array",
