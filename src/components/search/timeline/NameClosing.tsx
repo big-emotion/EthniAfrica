@@ -582,7 +582,9 @@ export function NameClosingBand({
               label={copy.report}
               preferredKind="correction-proposal"
               variant="outline"
-              className="border-[color:var(--accent)] bg-[color:var(--accent-tint)] font-semibold text-afh-text"
+              // The tint stays light at night; --accent-foreground is the ink
+              // that stays dark with it (--afh-text turns light: 1.12:1).
+              className="border-[color:var(--accent)] bg-[color:var(--accent-tint)] font-semibold text-[color:var(--accent-foreground)]"
             />
             <SearchFeedContributionAction
               language={language}
