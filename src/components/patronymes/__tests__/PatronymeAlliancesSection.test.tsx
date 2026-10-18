@@ -49,7 +49,7 @@ describe("PatronymeAlliancesSection (REQ-133)", () => {
   });
 
   // @req REQ-133
-  it("glosses a known alliance term in French beside the attested word", () => {
+  it("glosses a known alliance term once beside the linked name", () => {
     render(
       <PatronymeAlliancesSection
         language="fr"
@@ -57,9 +57,55 @@ describe("PatronymeAlliancesSection (REQ-133)", () => {
       />
     );
 
-    const row = screen.getByRole("listitem");
-    expect(row).toHaveTextContent("sanankuya");
-    expect(row).toHaveTextContent("parenté à plaisanterie");
+    expect(
+      screen.getByText(
+        "Le pacte de ce nom est un sanankuya, parenté à plaisanterie mandingue :"
+      )
+    ).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "Coulibaly" })).toBeInTheDocument();
+  });
+
+  // @req REQ-133
+  it("states a shared pact explanation once and keeps all six allied names as links", () => {
+    const alliances = [
+      ["PAT_DIARRA", "Diarra"],
+      ["PAT_DIOP", "Diop"],
+      ["PAT_KONE", "Koné"],
+      ["PAT_TOURE", "Touré"],
+      ["PAT_CONDE", "Condé"],
+      ["PAT_DIAWARA", "Diawara"],
+    ].map(([targetId, targetNameMain]) => ({
+      targetId,
+      targetNameMain,
+      allianceType: "sanankuya",
+    }));
+
+    render(
+      <PatronymeAlliancesSection
+        language="fr"
+        patronyme={{ ...base, alliances }}
+      />
+    );
+
+    expect(
+      screen.getByText(
+        "Les six pactes de ce nom sont des sanankuya, parenté à plaisanterie mandingue :"
+      )
+    ).toBeInTheDocument();
+    expect(
+      screen.getAllByText(/parenté à plaisanterie mandingue/)
+    ).toHaveLength(1); // one shared sentence for the six names
+    for (const name of [
+      "Diarra",
+      "Diop",
+      "Koné",
+      "Touré",
+      "Condé",
+      "Diawara",
+    ]) {
+      expect(screen.getByRole("link", { name })).toBeInTheDocument();
+    }
+    expect(screen.getAllByRole("link")).toHaveLength(6);
   });
 
   // @req REQ-133

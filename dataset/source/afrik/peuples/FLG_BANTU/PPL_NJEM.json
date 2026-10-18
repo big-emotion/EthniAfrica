@@ -1,0 +1,224 @@
+{
+  "id": "PPL_NJEM",
+  "nameMain": "Njem",
+  "languageFamilyId": "FLG_BANTU",
+  "currentCountries": ["CMR", "COG"],
+  "nameHistory": {
+    "summary": "Le nom Njem désigne un peuple du sud-est du Cameroun, autour de Lomié et de Ngoïla, dont la langue, le njyem, se parle aussi en république du Congo. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. Le nom s'écrit aussi Ndjem ou Ndzem. Nous n'avons pas trouvé de source qui explique son origine ; nous présentons plus bas ce que disent les sources.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Njem",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple du sud-est du Cameroun, écrit dès 1906 ; son origine n'est pas connue.",
+        "periodLabel": "Écrit dès 1906 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Njem est l'une des formes que le catalogue Glottolog donne pour le njyem, la langue de ce peuple, parlée au Cameroun et en république du Congo sous le code ISO njy. Le catalogue cite aussi Djem, Dzem, Ndjem, Ndjeme, Ndzem, Ngyeme et Nyem.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog — Njyem",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/njye1238",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues, lu le 18 octobre 2026. Glottocode njye1238, code ISO 639-3 njy, pays : Congo et Cameroun. Autres noms (Multitree) : Djem, Dzem, Ndjem, Ndjeme, Ndzem, Ngyeme, Njem, Njyem, Nyem. Le catalogue n'explique pas l'origine de ces noms."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Njem, écrit aussi Ndzem, désigne pour l'ethnographe allemand Günter Tessmann un peuple que les auteurs français rangeaient à tort parmi les « Pahouins », le nom qu'ils donnaient aux Fang et à leurs voisins. Les Njem, écrit-il, diffèrent en tout des Fang ; on ne les a mis parmi eux que parce qu'on les connaissait trop peu.",
+            "sources": [
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 1",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku01tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "Berlin, Ernst Wasmuth, 1913. Lu le 18 octobre 2026 sur la numérisation d'Internet Archive, page vue sur l'image. Page 6 : les Français nomment les Pangwe « Pahouins » et étendent ce nom collectif aux Bakoko « und sogar die Njem (Ndzem) » ; en note : « Die Njem weichen in jeder Beziehung von den Pangwe ab und sind wohl bloß unter die „Pahouins“ geraten, weil man sie zu wenig kannte ». Tessmann appelle Pangwe les Fang et leurs voisins."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1907,
+              "label": "1906-1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Njem figure, avec celui des Maka, dans l'intitulé d'un dossier du gouvernement allemand du Kamerun sur les expéditions militaires de 1906 et 1907 dans les régions qu'il dit en révolte, au sud de la colonie, tel que le catalogue des Archives fédérales allemandes le donne. C'est la plus ancienne trace de ce nom que le projet connaît ; nous n'avons pas lu le dossier lui-même, et le peuple existait déjà avant lui.",
+            "formAsWritten": "Njem",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Militärische Expeditionen in den Aufstandsgebieten der Dja, Esso, Maka, Njem und anderer Stämme im Süden, Bd. 2",
+                "author": "Bundesarchiv (Archives fédérales allemandes)",
+                "year": null,
+                "url": "https://ts.archivfuehrer-kolonialzeit.de/index.php/militarische-expeditionen-in-den-aufstandsgebieten-der-dja-esso-maka-njem-und-anderer-stamme-im-suden-bd-2",
+                "tier": "official",
+                "source_kind": "archive",
+                "page": "notice R 175-I/87",
+                "notes": "Notice du dossier BArch R 175-I/87, fonds du gouvernement du Kamerun, années 1906-1907, lue le 18 octobre 2026 dans le guide des archives de la période coloniale allemande (Archivführer Deutsche Kolonialgeschichte). La notice donne le titre du dossier sans dire s'il date de l'époque ; nous n'avons pas lu le dossier lui-même."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ndjem",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre graphie du nom, celle des cantons du Haut-Nyong en 1964-1967.",
+        "periodLabel": "Écrit en 1968",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1964,
+              "to": 1968,
+              "label": "1964-1968"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndjem désigne l'ethnie principale de huit cantons du département du Haut-Nyong, autour d'Abong-Mbang, de Lomié et de Ngoïla, selon le dictionnaire des villages publié par l'ORSTOM en 1968. Dans six de ces cantons, le tableau écrit « Ndjem & Pygmées ». Le nom Ndjem entre aussi dans celui de quatre de ces cantons, comme Ndjem du Nord ou Ndjem du Sud ; quatre autres s'appellent Dzimou.",
+            "aspect": "usage",
+            "formAsWritten": "Ndjem",
+            "sources": [
+              {
+                "title": "Dictionnaire des villages du Haut-Nyong",
+                "author": "André Franqueville, section de géographie de l'ORSTOM",
+                "year": 1968,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers15-04/02870.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. V",
+                "notes": "Yaoundé, ORSTOM, juin 1968, Répertoire géographique du Cameroun, fascicule 15, établi d'après les renseignements de l'administration. Lu le 18 octobre 2026 dans le PDF de la base documentaire de l'IRD, page vue sur l'image. Page V, tableau de la population du département par canton, avec l'« ethnie principale » de chacun : recensement de 1966-1967 pour l'arrondissement d'Abong-Mbang, de 1964-1965 pour celui de Lomié et pour le district de Ngoïla, dont l'année reprend par des guillemets de répétition celle de Lomié. Arrondissement d'Abong-Mbang : canton « Ndjem », ethnie principale « Ndjem », 1 026 habitants. Arrondissement de Lomié : « NDJEM DU CENTRE », ethnie « NDJEM », 676 ; « NDJEM DU NORD », ethnie « Ndjem & Pygmées », 706 ; puis, avec des guillemets de répétition sous « Ndjem & » et sous « Pygmées », « DZIMOU DE L'EST » (2 023), « DZIMOU DU SUD » (2 429), « DZIMOU DU CENT. » (1 983) et un second « DZIMOU DU SUD » (1 629). District de Ngoïla : « NDJEM DU SUD », ethnie « Ndem & Pygmées », 1 732. En tout, 12 204 habitants dans ces huit cantons ; le tableau donne 11 178 habitants pour l'arrondissement de Lomié, ville de Lomié non comprise, district de Ngoïla compris."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "content": {
+    "appellations": {
+      "mainName": "Njem",
+      "selfAppellation": null,
+      "exonyms": [],
+      "spellingAliases": ["Ndjem", "Ndzem", "Njyem", "Djem", "Dzem", "Nyem"],
+      "originOfExonyms": null,
+      "whyProblematic": null,
+      "contemporaryUsage": "En 1964-1967, le nom Ndjem désigne l'ethnie principale de huit cantons du département du Haut-Nyong, autour d'Abong-Mbang, de Lomié et de Ngoïla, selon le dictionnaire des villages de l'ORSTOM. Dans six de ces cantons, le tableau cite les « Pygmées » à côté des Ndjem. Les catalogues de langues nomment leur langue le njyem, parlée au Cameroun et en république du Congo.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
+    },
+    "ethnicities": [],
+    "origins": {
+      "ancientOrigins": null,
+      "formationPeriod": null,
+      "migrationRoutes": [],
+      "historicalSettlementZones": [
+        "Département du Haut-Nyong, dans le sud-est du Cameroun : six cantons de l'arrondissement de Lomié, un canton du district de Ngoïla et un canton de l'arrondissement d'Abong-Mbang"
+      ],
+      "unificationsOrDivisions": null,
+      "externalInfluences": null,
+      "majorHistoricalEvents": null
+    },
+    "organization": {
+      "traditionalPoliticalSystem": null,
+      "clanOrganization": null,
+      "ageClassSystems": null,
+      "roleOfLineages": null,
+      "religiousAuthority": null
+    },
+    "languages": {
+      "mainLanguage": "Njyem (njy)",
+      "isoCodes": ["njy"],
+      "dialects": [],
+      "vehicularRole": null
+    },
+    "externalIdentifiers": {
+      "glottocode": "njye1238",
+      "iso639_3": "njy"
+    },
+    "culture": {
+      "majorRites": null,
+      "symbols": null,
+      "artsAndMusic": null,
+      "spiritualities": null
+    },
+    "historicalRole": {
+      "kingdomsOrChiefdoms": null,
+      "relationsWithNeighbors": null,
+      "conflictsOrAlliances": "En 1906 et 1907, le gouvernement allemand du Kamerun mène des expéditions militaires dans les régions du sud de la colonie qu'il dit en révolte, dont celles des Maka et des Njem, selon l'intitulé d'un dossier conservé aux Archives fédérales allemandes.",
+      "diaspora": null
+    },
+    "demography": {
+      "totalPopulation": null,
+      "referenceYear": 2025,
+      "source": "Aucune source lue ne donne le nombre des Njem aujourd'hui. Le dictionnaire des villages du Haut-Nyong (ORSTOM, 1968) compte 12 204 habitants dans les huit cantons dont les Ndjem sont l'ethnie principale, seuls ou avec les « Pygmées ». Le recensement date de 1966-1967 à Abong-Mbang et de 1964-1965 à Lomié et à Ngoïla. Ce chiffre compte tous les habitants de ces cantons.",
+      "distributionByCountry": [
+        {
+          "country": "CMR",
+          "population": null,
+          "note": "Département du Haut-Nyong : arrondissement de Lomié, district de Ngoïla et un canton de l'arrondissement d'Abong-Mbang."
+        },
+        {
+          "country": "COG",
+          "population": null,
+          "note": "La langue njyem y est parlée, selon Glottolog ; nous n'avons pas de chiffre."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Glottolog — Njyem",
+        "url": "https://glottolog.org/resource/languoid/id/njye1238",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues, lu le 18 octobre 2026 : la langue njyem (njy), parlée au Cameroun et en république du Congo, et ses autres noms."
+      },
+      {
+        "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 1",
+        "url": "https://archive.org/details/diepangwevlkerku01tess",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Berlin, Ernst Wasmuth, 1913. Page 6 : les Njem (Ndzem), que les auteurs français rangeaient parmi les « Pahouins »."
+      },
+      {
+        "title": "Militärische Expeditionen in den Aufstandsgebieten der Dja, Esso, Maka, Njem und anderer Stämme im Süden, Bd. 2",
+        "url": "https://ts.archivfuehrer-kolonialzeit.de/index.php/militarische-expeditionen-in-den-aufstandsgebieten-der-dja-esso-maka-njem-und-anderer-stamme-im-suden-bd-2",
+        "tier": "official",
+        "source_kind": "archive",
+        "notes": "Notice du dossier BArch R 175-I/87, fonds du gouvernement du Kamerun, années 1906-1907, lue dans le guide des archives de la période coloniale allemande."
+      },
+      {
+        "title": "Dictionnaire des villages du Haut-Nyong",
+        "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers15-04/02870.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Yaoundé, ORSTOM, 1968, Répertoire géographique du Cameroun, fascicule 15. Page V : la population des cantons et leur ethnie principale, en 1964-1967."
+      }
+    ]
+  }
+}

@@ -263,6 +263,18 @@
                 "source_kind": "academic",
                 "page": "p. 153",
                 "notes": "Londres, Macmillan, 1911 ; exemplaire numérisé de l'université de Toronto sur archive.org. Dans sa préface (p. x-xi), Roscoe, missionnaire, dit avoir recueilli ses informations chez Sir Apolo Kagwa, qui fit venir les anciens, les prêtres et « the principal men from each clan ». Section « The Manis Clan » : « they assert that they were already established in the Busiro district when Kintu came. Their forefather was Mukibe Sekiwunga, to whom Kintu gave the Kapaka hill ». Ethnographie de l'époque coloniale, citée pour ce que les Ganda lui ont raconté, non pour ses classements. Lu le 13 octobre 2026."
+              },
+              {
+                "title": "Récit d'origine du clan du Pangolin",
+                "author": "Chefs du clan du Pangolin, recueillis par John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "narrative": "Le clan du Pangolin se dit établi dans le Busiro avant l'arrivée de Kintu et rattache son origine à Mukibe Sekiwunga.",
+                "carrier": "Les chefs du clan du Pangolin réunis par Apolo Kagwa",
+                "place": "Buganda",
+                "notes": "Récit rapporté par John Roscoe dans The Baganda, 1911, chapitre VI, « The Clans and their Totems ». Roscoe indique avoir recueilli les récits des chefs de clan par l'intermédiaire d'Apolo Kagwa."
               }
             ]
           },

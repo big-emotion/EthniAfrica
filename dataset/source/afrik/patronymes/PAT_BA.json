@@ -284,6 +284,18 @@
                 "tier": "referenced",
                 "source_kind": "archive",
                 "notes": "Paris, Émile Larose, 1912 ; ouvrage d'un administrateur colonial, lu le 12 octobre 2026 dans l'édition numérique du Projet Gutenberg, qui ne donne pas les numéros de page. Le passage se trouve dans la partie sur l'origine des Peuls. Il est cité pour ce qu'il dit des noms de clan, non pour sa thèse d'une ascendance judéo-syrienne des Peuls, que nous ne reprenons pas."
+              },
+              {
+                "title": "Tradition peule sur l’origine des Ba",
+                "author": "Tradition peule rapportée par Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "narrative": "Les Ba descendraient de Raabou, l’un des enfants d’Okba et de Tadiouma.",
+                "carrier": "Des Peuls que Delafosse ne nomme pas",
+                "place": "Soudan français, lieu non précisé",
+                "notes": "Delafosse présente ce passage comme une tradition peule, sans nommer les personnes qui la lui ont transmise ni préciser le lieu ou la date du récit. Il la publie dans Haut-Sénégal-Niger, tome I, en 1912."
               }
             ]
           },

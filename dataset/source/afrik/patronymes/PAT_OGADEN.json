@@ -108,17 +108,17 @@
     },
     {
       "sourceKey": "ogaden-irb-2017",
-      "title": "Somalia: The Ogaden clan, including areas of occupation, clan members and affiliation with other clans",
+      "title": "Somalia: Information on the Ogaden clan in Somaliland, including distinguishing features, locations, occupations and position in the clan hierarchy; treatment by the Somaliland authorities and by al-Shabaab (2015-October 2017)",
       "url": "https://www.ecoi.net/en/document/1428637.html",
       "tier": "official",
       "source_kind": "government",
-      "notes": "Commission de l'immigration et du statut de réfugié du Canada, réponse SOM106004.EF, 23 novembre 2017, reproduite par ecoi.net. La réponse complète a été vérifiée : elle donne les graphies Ogaden/Ogaadeen, la classification darood, une généalogie masculine et l'avertissement méthodologique sur les cartes généalogiques."
+      "notes": "Commission de l'immigration et du statut de réfugié du Canada, réponse SOM106011.E, 23 novembre 2017, reproduite par ecoi.net. La réponse complète a été vérifiée : elle donne les graphies Ogaden/Ogaadeen, la classification darood, une généalogie masculine et l'avertissement méthodologique sur les cartes généalogiques."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin.linguisticReconstructions",
-      "reason": "L'article de Thompson et Matshanda (2023), la réponse SOM106004.EF, leurs bibliographies et les requêtes « Ogaden/Ogaadeen etymology » ont été examinés ; ils expliquent le transfert du nom clanique au territoire, mais aucune étymologie linguistique du nom lui-même n'a été trouvée."
+      "reason": "L'article de Thompson et Matshanda (2023), la réponse SOM106011.E, leurs bibliographies et les requêtes « Ogaden/Ogaadeen etymology » ont été examinés ; ils expliquent le transfert du nom clanique au territoire, mais aucune étymologie linguistique du nom lui-même n'a été trouvée."
     },
     {
       "fieldPath": "alliances",
@@ -166,13 +166,13 @@
                 "notes": "African Affairs, vol. 122, no 486, 2023, p. 119-145. La note 5 dit que les lignées ogaden forment la majorité dans cinq des neuf zones administratives de l'État régional somali, les chiffres du recensement éthiopien restant disputés. Lu le 11 octobre 2026."
               },
               {
-                "title": "Somalia: The Ogaden clan, including areas of occupation, clan members and affiliation with other clans",
+                "title": "Somalia: Information on the Ogaden clan in Somaliland, including distinguishing features, locations, occupations and position in the clan hierarchy; treatment by the Somaliland authorities and by al-Shabaab (2015-October 2017)",
                 "author": "Commission de l'immigration et du statut de réfugié du Canada",
                 "year": 2017,
                 "url": "https://www.ecoi.net/en/document/1428637.html",
                 "tier": "official",
                 "source_kind": "government",
-                "page": "réponse SOM106004.EF",
+                "page": "réponse SOM106011.E",
                 "notes": "Réponse à une demande d'information du 23 novembre 2017, reproduite par ecoi.net. Elle donne les graphies Ogaden, Ogaadeen et Ogadeen ; elle range les Ogaden parmi les Absame, eux-mêmes Kumade, Kablalah et Darod, d'après Abbink (2009), Ambroso (2002) et un document de l'ONU (2004) ; un universitaire interrogé dit qu'Absame, fils de Kumade, eut pour fils principaux Jidwaq et Ogaden, et rappelle que les généalogies sont des « cartes » abstraites de parenté. Lu le 11 octobre 2026."
               }
             ]
@@ -198,13 +198,13 @@
                 "notes": "African Affairs, vol. 122, no 486, 2023, p. 119-145. La note 6 rappelle que le territoire qui forme aujourd'hui l'essentiel de l'État régional somali s'appelait l'Ogaden, et que certains auteurs distinguent ce territoire de la lignée « Ogaadeen » parce que « the territory's name derives from the clan ». Lu le 11 octobre 2026."
               },
               {
-                "title": "Somalia: The Ogaden clan, including areas of occupation, clan members and affiliation with other clans",
+                "title": "Somalia: Information on the Ogaden clan in Somaliland, including distinguishing features, locations, occupations and position in the clan hierarchy; treatment by the Somaliland authorities and by al-Shabaab (2015-October 2017)",
                 "author": "Commission de l'immigration et du statut de réfugié du Canada",
                 "year": 2017,
                 "url": "https://www.ecoi.net/en/document/1428637.html",
                 "tier": "official",
                 "source_kind": "government",
-                "page": "réponse SOM106004.EF",
+                "page": "réponse SOM106011.E",
                 "notes": "Réponse à une demande d'information du 23 novembre 2017, reproduite par ecoi.net. Elle donne les graphies Ogaden, Ogaadeen et Ogadeen ; elle range les Ogaden parmi les Absame, eux-mêmes Kumade, Kablalah et Darod, d'après Abbink (2009), Ambroso (2002) et un document de l'ONU (2004) ; un universitaire interrogé dit qu'Absame, fils de Kumade, eut pour fils principaux Jidwaq et Ogaden, et rappelle que les généalogies sont des « cartes » abstraites de parenté. Lu le 11 octobre 2026."
               }
             ]
@@ -262,13 +262,13 @@
             "hypothesisGroup": "ancêtre du nom Ogaden",
             "sources": [
               {
-                "title": "Somalia: The Ogaden clan, including areas of occupation, clan members and affiliation with other clans",
+                "title": "Somalia: Information on the Ogaden clan in Somaliland, including distinguishing features, locations, occupations and position in the clan hierarchy; treatment by the Somaliland authorities and by al-Shabaab (2015-October 2017)",
                 "author": "Commission de l'immigration et du statut de réfugié du Canada",
                 "year": 2017,
                 "url": "https://www.ecoi.net/en/document/1428637.html",
                 "tier": "official",
                 "source_kind": "government",
-                "page": "réponse SOM106004.EF",
+                "page": "réponse SOM106011.E",
                 "notes": "Réponse à une demande d'information du 23 novembre 2017, reproduite par ecoi.net. Elle donne les graphies Ogaden, Ogaadeen et Ogadeen ; elle range les Ogaden parmi les Absame, eux-mêmes Kumade, Kablalah et Darod, d'après Abbink (2009), Ambroso (2002) et un document de l'ONU (2004) ; un universitaire interrogé dit qu'Absame, fils de Kumade, eut pour fils principaux Jidwaq et Ogaden, et rappelle que les généalogies sont des « cartes » abstraites de parenté. Lu le 11 octobre 2026."
               }
             ]
@@ -316,13 +316,13 @@
             "statement": "Le nom Ogaadeen est l'écriture somalie d'Ogaden, donnée avec Ogaden par la Commission canadienne de l'immigration. Certains auteurs réservent Ogaadeen à la lignée et Ogaden au territoire, selon Daniel Thompson et Namhla Matshanda.",
             "sources": [
               {
-                "title": "Somalia: The Ogaden clan, including areas of occupation, clan members and affiliation with other clans",
+                "title": "Somalia: Information on the Ogaden clan in Somaliland, including distinguishing features, locations, occupations and position in the clan hierarchy; treatment by the Somaliland authorities and by al-Shabaab (2015-October 2017)",
                 "author": "Commission de l'immigration et du statut de réfugié du Canada",
                 "year": 2017,
                 "url": "https://www.ecoi.net/en/document/1428637.html",
                 "tier": "official",
                 "source_kind": "government",
-                "page": "réponse SOM106004.EF",
+                "page": "réponse SOM106011.E",
                 "notes": "Réponse à une demande d'information du 23 novembre 2017, reproduite par ecoi.net. Elle donne les graphies Ogaden, Ogaadeen et Ogadeen ; elle range les Ogaden parmi les Absame, eux-mêmes Kumade, Kablalah et Darod, d'après Abbink (2009), Ambroso (2002) et un document de l'ONU (2004) ; un universitaire interrogé dit qu'Absame, fils de Kumade, eut pour fils principaux Jidwaq et Ogaden, et rappelle que les généalogies sont des « cartes » abstraites de parenté. Lu le 11 octobre 2026."
               },
               {
@@ -357,13 +357,13 @@
             "statement": "Le nom Ogadeen est une autre écriture d'Ogaden, employée par un universitaire que cite la Commission canadienne de l'immigration.",
             "sources": [
               {
-                "title": "Somalia: The Ogaden clan, including areas of occupation, clan members and affiliation with other clans",
+                "title": "Somalia: Information on the Ogaden clan in Somaliland, including distinguishing features, locations, occupations and position in the clan hierarchy; treatment by the Somaliland authorities and by al-Shabaab (2015-October 2017)",
                 "author": "Commission de l'immigration et du statut de réfugié du Canada",
                 "year": 2017,
                 "url": "https://www.ecoi.net/en/document/1428637.html",
                 "tier": "official",
                 "source_kind": "government",
-                "page": "réponse SOM106004.EF",
+                "page": "réponse SOM106011.E",
                 "notes": "Réponse à une demande d'information du 23 novembre 2017, reproduite par ecoi.net. Elle donne les graphies Ogaden, Ogaadeen et Ogadeen ; elle range les Ogaden parmi les Absame, eux-mêmes Kumade, Kablalah et Darod, d'après Abbink (2009), Ambroso (2002) et un document de l'ONU (2004) ; un universitaire interrogé dit qu'Absame, fils de Kumade, eut pour fils principaux Jidwaq et Ogaden, et rappelle que les généalogies sont des « cartes » abstraites de parenté. Lu le 11 octobre 2026."
               }
             ]

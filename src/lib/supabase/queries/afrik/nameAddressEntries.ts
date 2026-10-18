@@ -41,6 +41,68 @@ const NAMED_TABLES = [
   ["afrik_words", "name_main"],
 ] as const;
 
+const SUGGESTION_TABLES = [
+  ["people", "afrik_peoples", "name_main"],
+  ["country", "afrik_countries", "name_fr"],
+  ["family", "afrik_language_families", "name_fr"],
+  ["language", "afrik_languages", "name"],
+  ["patronyme", "afrik_patronymes", "name_main"],
+  ["place", "afrik_places", "name_main"],
+] as const;
+
+export interface NameSuggestionRow {
+  id: string;
+  type: (typeof SUGGESTION_TABLES)[number][0];
+  name: string;
+  nameHistory: unknown;
+}
+
+/** The six subject kinds requested for name-prefix suggestions. */
+// @req REQ-200
+export async function getNameSuggestionRows(): Promise<NameSuggestionRow[]> {
+  const supabase = createServerClient();
+  const results = await Promise.all(
+    SUGGESTION_TABLES.map(async ([type, table, nameColumn]) => {
+      const walk = await walkRanges<{
+        id: string;
+        name: string;
+        name_history: unknown;
+      }>(
+        async (from, to) => {
+          const { data, error } = (await supabase
+            .from(table)
+            .select(`id, name:${nameColumn}, name_history`)
+            .range(from, to)) as unknown as {
+            data: Array<{
+              id: string;
+              name: string;
+              name_history: unknown;
+            }> | null;
+            error: unknown;
+          };
+          if (error) throw error;
+          return data ?? [];
+        },
+        { pageSize: PAGE_SIZE, maxPages: MAX_PAGES }
+      );
+      if (walk.truncated) {
+        throw new Error(
+          `Name suggestions: ${table} exceeded ${MAX_PAGES} pages`
+        );
+      }
+      return walk.rows
+        .filter((row) => typeof row.name === "string" && row.name.trim())
+        .map((row) => ({
+          id: row.id,
+          type,
+          name: row.name,
+          nameHistory: row.name_history,
+        }));
+    })
+  );
+  return results.flat();
+}
+
 export interface AnsweredNameRow {
   /** The name the subject is filed under, as the corpus spells it. */
   name: string;

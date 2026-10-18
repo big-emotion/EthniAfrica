@@ -268,6 +268,7 @@ export function getSiteTree(language: Language): SiteTreeSection[] {
       blurb: copy.site.blurb,
       links: [
         { href: `/${language}/about`, label: copy.site.about },
+        { href: route("approach"), label: copy.site.approach },
         {
           href: route("doctrine"),
           label: copy.dossiers.doctrine[0],

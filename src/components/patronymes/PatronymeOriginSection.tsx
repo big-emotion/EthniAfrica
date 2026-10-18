@@ -112,8 +112,29 @@ export function PatronymeOriginSection({
     <FicheSection title={t.originTitle}>
       {strands.length > 0 ? (
         strands.map((strand) => (
-          <div key={strand.label}>
-            <h3 className="afh-prose-heading">{strand.label}</h3>
+          <details
+            key={strand.label}
+            className="ea-form-readings group/readings"
+            data-form-readings=""
+          >
+            <summary className="flex min-h-[44px] cursor-pointer list-none items-center gap-afh-md [&::-webkit-details-marker]:hidden">
+              <h3 className="afh-prose-heading">{strand.label}</h3>
+              <span className="ml-auto whitespace-nowrap font-afh-mono text-afh-caption text-afh-text-soft">
+                {t.originAccountCount(strand.accounts.length)}
+              </span>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+                className="size-4 flex-none text-afh-text-soft motion-safe:transition-transform group-open/readings:rotate-180"
+              >
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </summary>
             <ul className="afh-prose-list">
               {strand.accounts.map((account) => (
                 <li key={account.claim}>
@@ -127,7 +148,7 @@ export function PatronymeOriginSection({
                 </li>
               ))}
             </ul>
-          </div>
+          </details>
         ))
       ) : (
         <FieldProvenanceMarker

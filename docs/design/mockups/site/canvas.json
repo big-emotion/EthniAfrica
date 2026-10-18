@@ -14,7 +14,7 @@
       "x": 0,
       "y": 0,
       "w": 1440,
-      "h": 23597,
+      "h": 26120,
       "title": "design-system"
     },
     "search-peul-430.dc.html": {
@@ -100,6 +100,22 @@
       "w": 1440,
       "h": 1752,
       "expand": "fill"
+    },
+    "search-unknown-320.dc.html": {
+      "x": 4700,
+      "y": 28435,
+      "w": 320,
+      "h": 3071,
+      "expand": "fill",
+      "title": "État · nom inconnu · en-tête étroit · 320"
+    },
+    "search-unknown-215.dc.html": {
+      "x": 5050,
+      "y": 28435,
+      "w": 215,
+      "h": 4018,
+      "expand": "fill",
+      "title": "État · nom long · zoom 200 % · 215"
     },
     "search-state-fiches-430.dc.html": {
       "x": 1840,
@@ -707,6 +723,30 @@
       "expand": "fill",
       "title": "Page de recherche (sans requête) · 1440"
     },
+    "search-state-typo-430.dc.html": {
+      "x": 1840,
+      "y": 57205,
+      "w": 430,
+      "h": 2193,
+      "expand": "fill",
+      "title": "État · « tchikaya », un nom qui s’écrit presque de la même façon · 430"
+    },
+    "search-state-typo-768.dc.html": {
+      "x": 2350,
+      "y": 57205,
+      "w": 768,
+      "h": 1490,
+      "expand": "fill",
+      "title": "État · « tchikaya », un nom qui s’écrit presque de la même façon · 768"
+    },
+    "search-state-typo-1440.dc.html": {
+      "x": 3198,
+      "y": 57205,
+      "w": 1440,
+      "h": 1293,
+      "expand": "fill",
+      "title": "État · « tchikaya », un nom qui s’écrit presque de la même façon · 1440"
+    },
     "atlas-names-430.dc.html": {
       "x": 14632,
       "y": 0,
@@ -749,6 +789,8 @@
     "search-unknown-430.dc.html",
     "search-unknown-768.dc.html",
     "search-unknown-1440.dc.html",
+    "search-unknown-320.dc.html",
+    "search-unknown-215.dc.html",
     "search-state-fiches-430.dc.html",
     "search-state-fiches-768.dc.html",
     "search-state-fiches-1440.dc.html",
@@ -767,6 +809,9 @@
     "search-entry-430.dc.html",
     "search-entry-768.dc.html",
     "search-entry-1440.dc.html",
+    "search-state-typo-430.dc.html",
+    "search-state-typo-768.dc.html",
+    "search-state-typo-1440.dc.html",
     "people-fula-430.dc.html",
     "people-fula-768.dc.html",
     "people-fula-1440.dc.html",

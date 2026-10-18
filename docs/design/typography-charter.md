@@ -11,6 +11,11 @@ The scale itself lives in `src/styles/tokens/type.css`.
 drifts from the rules in §1 and §2, and `afh/no-raw-font-size` fails it if a
 component reintroduces a size outside the scale.
 
+Corpus prose renderers replace ordinary spaces with U+00A0 at French
+punctuation marks and inside guillemets. This is a display rule only: the
+published prose stays as authored, and existing U+00A0 and U+202F spaces are
+preserved. Apply it to prose fields, not to names, labels or source titles.
+
 ## 1. Nine roles, no tenth
 
 A role is a job, not a size. Two things that do the same job take the same
@@ -215,6 +220,11 @@ of a diff across eight components.
 moved onto `--afh-text-hero` on 2026-09-14 with the rest of §8, and the file was
 deleted. `homeTokensCharter.test.ts` keeps it closed: a `--home-text-*` token
 reappearing anywhere on the home fails the build.
+
+The approved search boards have one scoped exception: `--search-feed-text-pill`
+is fixed at 14 px for the search filter pills and « Aller plus loin » links
+(ETNI-2107, brief 17). It lives on the `.search-feed-pill-group` that contains
+those controls and is not a tenth `--afh-text-*` role.
 
 ## 8. The home, element by element
 

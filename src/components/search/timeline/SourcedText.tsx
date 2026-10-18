@@ -5,15 +5,16 @@ import {
   splitNamedText,
   type NamedTextPart,
 } from "@/lib/search/nameTimeline";
+import { normalizeFrenchSpacing } from "@/lib/prose/frenchSpacing";
 
 function NamedParts({ parts }: { parts: readonly NamedTextPart[] }) {
   return (
     <>
       {parts.map((part, index) =>
         part.name ? (
-          <em key={index}>{part.text}</em>
+          <em key={index}>{normalizeFrenchSpacing(part.text)}</em>
         ) : (
-          <Fragment key={index}>{part.text}</Fragment>
+          <Fragment key={index}>{normalizeFrenchSpacing(part.text)}</Fragment>
         )
       )}
     </>

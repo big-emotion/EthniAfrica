@@ -6,7 +6,7 @@
   },
   "id": "PAT_KOUNTCHE",
   "nameMain": "Kountché",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Kountché",
@@ -20,12 +20,15 @@
     {
       "spelling": "Kounche",
       "attestations": [
-        { "countryId": "NER", "sourceRefs": ["bornand-2004-kountche"] }
+        {
+          "countryId": "NER",
+          "sourceRefs": ["bornand-2004-kountche"]
+        }
       ]
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [
       {
@@ -111,6 +114,10 @@
       "reason": "Les graphies Kountché, Kounche et Kunce ont été recherchées dans les catalogues d'autorité et la bibliographie zarma ; aucune lignée homonyme d'origine distincte n'a été établie."
     },
     {
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait un nom de clan : dans la généalogie que rapporte Sandra Bornand, Kountché est le nom du père de Seyni Kountché, un nom de personne que le fils porte après le sien. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne dit que ce nom passe ensuite aux enfants de Seyni Kountché comme un nom de famille. La fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
+    },
+    {
       "fieldPath": "transmissionMode",
       "reason": "La tradition publiée établit une généalogie revendiquée de Seyni Kountché, mais ne décrit pas la règle de transmission du nom Kountché ; les recherches sur filiation, héritage et clan n'ont pas permis de remplacer « other »."
     }
@@ -146,6 +153,18 @@
                 "source_kind": "academic",
                 "page": "§ 18, 48-94, note 19",
                 "notes": "Dans Côté jardin, côté cour, Graduate Institute Publications, 2004, DOI 10.4000/books.iheid.2375. Lu le 18 octobre 2026 dans le navigateur, sur OpenEdition. § 18 : un récit de jasare dédié à « Seyni Kountché, un ancien Président de la République du Niger (1974-1987) », recueilli par l'autrice auprès de Jeliba Baje en 2000. § 48 : le jasare conclut par « l'énumération des ancêtres du président nigérien jusqu'à ses origines ultimes, Mali Bero, le père de l'aristocratie zarma ». Dans la traduction de la généalogie (§ 49-93), on lit « Zarmakoy Kountché », « Kountché Karanta », puis « Son père qui l'a engendré qui est Kountché Karanta » (§ 83) ; la note 19 donne le texte zarma, « Zeneraal Seyni Kunce / Zarmakoy mo ga a hay / Zarmakoy Kunce ». § 94 : la généalogie inscrit le président « dans la lignée des héros zarma dont il est le parent ». Les vers de louange sont résumés ici, non recopiés."
+              },
+              {
+                "title": "Généalogie récitée par le jasare Jeliba Baje",
+                "author": "Jeliba Baje (Djéliba Badjé), recueilli par Sandra Bornand",
+                "year": 2000,
+                "url": "https://books.openedition.org/iheid/2375",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "narrative": "La généalogie de Seyni Kountché remonte jusqu’à Mali Bero, présenté comme l’ancêtre de l’aristocratie zarma.",
+                "carrier": "Le jasare zarma Jeliba Baje (Djéliba Badjé)",
+                "place": "Niger",
+                "notes": "Généalogie recueillie par Sandra Bornand auprès de Jeliba Baje en 2000, transcrite en zarma et traduite dans son ouvrage publié en 2004. Le texte zarma figure en note 19."
               }
             ]
           },

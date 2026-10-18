@@ -4,16 +4,16 @@
   "nameEn": "Gur / Voltaic (terme ancien)",
   "classificationStatus": "colonial-legacy",
   "nameHistory": {
-    "summary": "Le nom gur désigne une famille de langues d'Afrique de l'Ouest, parlées au Burkina Faso et dans le nord de la Côte d'Ivoire, du Ghana, du Togo et du Bénin, comme le moore, le dagomba ou le gourma. C'est un nom de savants ; en français, on a longtemps dit voltaïque. Les sources que nous avons lues n'expliquent pas d'où vient le mot gur, et elles ne s'accordent pas sur les langues qu'il réunit ; nous les présentons plus bas.",
+    "summary": "Le nom gur désigne une famille de langues d'Afrique de l'Ouest, parlées au Burkina Faso et dans le nord de la Côte d'Ivoire, du Ghana, du Togo et du Bénin, comme le moore, le dagomba ou le gourma. C'est un nom de savants ; en français, on a longtemps dit voltaïque. Le mot gur viendrait des noms de plusieurs de ces langues, qui commencent par gur-, selon un linguiste. Les sources ne s'accordent pas sur les langues que ce nom réunit ; nous les présentons plus bas.",
     "names": [
       {
         "nameText": "Gur",
         "nameStatus": "current",
         "selfGiven": false,
         "languageOfOrigin": null,
-        "namedBy": "Le linguiste allemand Diedrich Westermann",
-        "shortLine": "Un nom de savants pour des langues du bassin des Volta ; les sources lues n'en donnent pas l'origine.",
-        "periodLabel": "Depuis 1927",
+        "namedBy": "Le linguiste allemand Diedrich Westermann, selon Joseph Greenberg, ou dès 1895 l'africaniste allemand Gottlob Adolf Krause, selon Rolf Theil",
+        "shortLine": "Un nom de savants pour des langues du bassin des Volta ; il viendrait de noms de langues en gur-.",
+        "periodLabel": "Écrit dès 1927, peut-être dès 1895 ; en usage aujourd'hui",
         "accounts": [
           {
             "period": {
@@ -117,7 +117,7 @@
               "to": 1927,
               "label": "1927"
             },
-            "statement": "Le nom gur figure, avec le kwa et l'atlantique occidental, parmi les sous-groupes que le linguiste allemand Diedrich Westermann distingue en 1927 dans ses langues soudanaises occidentales, selon Joseph Greenberg et D. Olderogge. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "statement": "Le nom gur figure, avec le kwa et l'atlantique occidental, parmi les sous-groupes que le linguiste allemand Diedrich Westermann distingue en 1927 dans ses langues soudanaises occidentales, selon Joseph Greenberg et D. Olderogge. C'est la plus ancienne trace de ce nom que nous avons lue. Le linguiste Rolf Theil rapporte une proposition plus ancienne, faite en 1895 par l'africaniste allemand Gottlob Adolf Krause ; nous n'avons pas lu ce texte. Les langues que ce nom réunit existaient déjà avant lui.",
             "birth": true,
             "actors": [
               {
@@ -145,6 +145,34 @@
                 "source_kind": "intergovernmental",
                 "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
                 "page": "p. 319"
+              },
+              {
+                "title": "Store norske leksikon — gurspråk",
+                "author": "Rolf Theil",
+                "year": null,
+                "url": "https://snl.no/gurspr%C3%A5k",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Encyclopédie norvégienne en ligne, article signé par un professeur émérite de linguistique de l'université d'Oslo, lu le 18 octobre 2026 (mise à jour du 7 septembre 2026) : « Termen gur blei føreslått i 1895 av den tyske afrikanisten Gottlob Adolf Krause (1850–1938) ». L'article ne donne pas le titre de la publication de Krause, et nous ne l'avons pas lue : la trace de 1895 est rapportée, non lue."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Explication non datée"
+            },
+            "statement": "Le nom gur viendrait des noms de plusieurs langues du groupe qui commencent par gur-, comme le gurma ou le gurenɛ, selon le linguiste Rolf Theil. Il attribue ce nom à l'africaniste allemand Gottlob Adolf Krause, en 1895 ; nous n'avons pas lu le texte de Krause.",
+            "sources": [
+              {
+                "title": "Store norske leksikon — gurspråk",
+                "author": "Rolf Theil",
+                "year": null,
+                "url": "https://snl.no/gurspr%C3%A5k",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Encyclopédie norvégienne en ligne, article signé par un professeur émérite de linguistique de l'université d'Oslo, lu le 18 octobre 2026 (mise à jour du 7 septembre 2026) : « Termen gur blei føreslått i 1895 av den tyske afrikanisten Gottlob Adolf Krause (1850–1938), på grunnlag av at fleire språk i denne gruppa har namn som byrjar med gur-, til dømes gurma og gurenɛ ». L'article ne donne pas le titre de la publication de Krause, et nous ne l'avons pas lue."
               }
             ]
           }

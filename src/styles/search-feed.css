@@ -1,3 +1,9 @@
+.search-feed-pill-group {
+  /* Approved brief 17 keeps the search controls at 14 px without adding a
+     tenth global text role. The value is limited to their shared group. */
+  --search-feed-text-pill: 0.875rem;
+}
+
 /* The reviewed boards publish rounded reference-width values for the three
    fluid editorial roles used by the search feed. Keep the scale fluid between
    its existing bounds while landing exactly on the approved 430 px rendering.

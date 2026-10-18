@@ -3,6 +3,7 @@ import { describe, expect, it, vi } from "vitest";
 
 import {
   NameClosingBand,
+  NameFicheSourcesBlock,
   NameNextStep,
   NameSourcesBlock,
 } from "@/components/search/timeline/NameClosing";
@@ -23,6 +24,43 @@ const timeline = buildNameTimeline(PEUL_HISTORY, "peul");
 const name = timeline.names[0];
 
 describe("NameSourcesBlock — « Les sources »", () => {
+  // @req REQ-198
+  it("keeps punctuation and guillemets together in source account prose", () => {
+    const timeline = buildNameTimeline(PEUL_HISTORY, "peul");
+    const original = timeline.names[0];
+    const name = {
+      ...original,
+      tiles: original.tiles.map((tile, index) =>
+        index === 0
+          ? {
+              ...tile,
+              accounts: tile.accounts.map((account, accountIndex) =>
+                accountIndex === 0
+                  ? {
+                      ...account,
+                      statement: "Un nom : « Fulɓe ! » ; pourquoi ?",
+                    }
+                  : account
+              ),
+            }
+          : tile
+      ),
+    };
+    render(
+      <NameSourcesBlock
+        name={name}
+        forms={timeline.italicForms}
+        open
+        language="fr"
+      />
+    );
+
+    expect(
+      screen.getAllByText(/Un nom/).find((element) => element.tagName === "P")
+        ?.textContent
+    ).toBe("Un nom\u00a0: «\u00a0Fulɓe\u00a0!\u00a0»\u00a0; pourquoi\u00a0?");
+  });
+
   // @req REQ-198
   it("asks who tells the open name and lists its source families", () => {
     render(
@@ -141,6 +179,23 @@ describe("NameSourcesBlock — the plain title and its sentence", () => {
     expect(copy.fiche.sourcesLead(3, 5, 2, "people")).toBe(
       "Plusieurs sources expliquent les noms de ce peuple. Voici leurs 5 récits, rangés par nom, puis par type de source."
     );
+  });
+
+  // @req REQ-198
+  it("says when sources mention a family name without explaining it", () => {
+    render(
+      <NameFicheSourcesBlock
+        history={{ ...PEUL_HISTORY, originExplained: false }}
+        subjectType="patronyme"
+        language="fr"
+      />
+    );
+
+    expect(
+      screen.getByText(
+        /sources mentionnent ce nom, sans en expliquer l’origine/
+      )
+    ).toBeInTheDocument();
   });
 });
 

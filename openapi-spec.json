@@ -3,7 +3,7 @@
   "info": {
     "title": "EthniAfrica API v2 - AFRIK",
     "version": "2.3.0",
-    "description": "API publique v2 basée sur la méthodologie AFRIK. Identifiants stables (FLG_*, PPL_*, codes ISO 3166-1 alpha-3) et format de réponse standardisé avec pagination. Cette API fournit un accès structuré aux données ethnographiques et linguistiques de l'Afrique.\n\n## Response envelope\n\nEvery `/api/v2/*` response uses the Module #0 envelope: `{ data, meta: { license, attribution, pagination?, confidence?, pinned_url?, translation? }, errors }`. License and attribution are always present (AR8); `errors` is empty on success and populated on non-2xx responses. List endpoints place their pagination values under `meta.pagination`.\n\n## 2.3.0 — translated records (additive)\n\nThe five single-entity endpoints accept `?lang=fr|en`. `fr` is the authored language and the default; `en` overlays the translation record when one exists and declares how it was produced in `meta.translation` — `human`, `machine_reviewed` or `machine` — with `stale: true` when the French moved on a field the reader is shown since it was translated. Fields whose subject is a word are withheld at `machine` provenance and served in French until a human has reviewed them (REQ-142, REQ-143). Lists, facets and search stay authored-French.\n\n## 2.1.0 — one source-tier vocabulary (breaking)\n\nSource authority is now one three-value scale — `official` | `referenced` | `unverified` — spoken identically by the database, the payloads and the UI. Provenance stays on the separate `source_kind` axis, so AI-generated text is `tier: \"unverified\"` + `source_kind: \"ai_generated\"` rather than a tier of its own.\n\nRemoved, all superseded by `tier`:\n\n- the numeric evidence-tier property on `Source`, `ReferenceSource` and `ReferenceCreateInput` (a `1 | 2 | null` scale that could not express an unverified source);\n- the legacy `Source.type` enum, which read a column dropped in migration 015 and was therefore always `null`;\n- the two catalogue gating properties on `Source.policy`, which decided whether a citation could be published at all. Under the source doctrine no citation is refused, so `Source.policy.tier` carries the signal instead.",
+    "description": "API publique v2 basée sur la méthodologie AFRIK. Identifiants stables (FLG_*, PPL_*, codes ISO 3166-1 alpha-3) et format de réponse standardisé avec pagination. Cette API fournit un accès structuré aux données ethnographiques et linguistiques de l'Afrique.\n\n## Authentication and rate limits\n\nNo key is required. A request without an `Authorization` header is served on the **anonymous** tier, metered at 60 requests per minute per client IP.\n\nAn API key passed as `Authorization: Bearer <key>` selects a larger quota: `public` keys 600 requests per minute, `partner` keys 6,000, `admin` keys unmetered. A key that is present but unknown, revoked or expired is refused with `401 invalid_api_key` rather than served anonymously, so a broken integration fails loudly instead of silently dropping to the anonymous quota.\n\nMetered responses carry `X-RateLimit-Limit`, `X-RateLimit-Remaining` and `X-RateLimit-Reset`; an exhausted quota answers `429` with `Retry-After`. The figures above are the deployment defaults. The `/api/v2/keys` self-service endpoints are the exception to all of this: they authenticate a signed-in contributor's session instead.\n\n## Response envelope\n\nEvery `/api/v2/*` response uses the Module #0 envelope: `{ data, meta: { license, attribution, pagination?, confidence?, pinned_url?, translation? }, errors }`. License and attribution are always present (AR8); `errors` is empty on success and populated on non-2xx responses. List endpoints place their pagination values under `meta.pagination`.\n\n## French only (breaking)\n\nThe site publishes French alone, so the locale parameters that selected English are narrowed to `fr`: `lang` on `GET /api/v2/search` and `GET /api/v2/search/companions`, and `language` in the `POST /api/v2/flags` body. `lang=en` is now refused with 400 on the two searches; an unknown flag `language` still fails closed to French. Search no longer matches English names; the `nameEn` / `languageFamilyNameEn` fields keep their shape and still carry the value in the record. `contentLanguage` in companion payloads is always `fr`.\n\n## 2.3.0 — translated records (additive)\n\nThe five single-entity endpoints accept `?lang=fr|en`. `fr` is the authored language and the default; `en` overlays the translation record when one exists and declares how it was produced in `meta.translation` — `human`, `machine_reviewed` or `machine` — with `stale: true` when the French moved on a field the reader is shown since it was translated. Fields whose subject is a word are withheld at `machine` provenance and served in French until a human has reviewed them (REQ-142, REQ-143). Lists, facets and search stay authored-French. Retired since: the data is no longer translated, `?lang` is ignored and every record is served as authored.\n\n## 2.1.0 — one source-tier vocabulary (breaking)\n\nSource authority is now one three-value scale — `official` | `referenced` | `unverified` — spoken identically by the database, the payloads and the UI. Provenance stays on the separate `source_kind` axis, so AI-generated text is `tier: \"unverified\"` + `source_kind: \"ai_generated\"` rather than a tier of its own.\n\nRemoved, all superseded by `tier`:\n\n- the numeric evidence-tier property on `Source`, `ReferenceSource` and `ReferenceCreateInput` (a `1 | 2 | null` scale that could not express an unverified source);\n- the legacy `Source.type` enum, which read a column dropped in migration 015 and was therefore always `null`;\n- the two catalogue gating properties on `Source.policy`, which decided whether a citation could be published at all. Under the source doctrine no citation is refused, so `Source.policy.tier` carries the signal instead.",
     "contact": {
       "name": "EthniAfrica",
       "url": "https://github.com/big-emotion/ethniafrica"
@@ -91,13 +91,163 @@
     {
       "name": "API v2 - Quiz",
       "description": "Smart quiz engine — audience segments with per-rung question counts, and randomly-composed sessions drawn from the verified AFRIK corpus, gate-checked at serve time (Epic 10, FR65/FR66, AR8/AR9, NFR38)."
+    },
+    {
+      "name": "API v2 - Places",
+      "description": "Places (towns, regions, historic sites — LOC_*) and the history of their names: every name a place answers to, in the shared nameHistory block every named subject carries (REQ-196, ARCH-028)."
+    },
+    {
+      "name": "API v2 - Words",
+      "description": "Words (WRD_*) whose history explains Africa through its names, each told in the shared nameHistory block (REQ-196, ARCH-028)."
     }
   ],
   "paths": {
+    "/api/v2/names/suggest": {
+      "get": {
+        "summary": "Suggest names by prefix",
+        "description": "Returns alphabetically ordered name forms across peoples, countries, language families, languages, family names and places. A suggestion links to its name-answer page when it has an address, and otherwise starts a search for that form.",
+        "tags": ["API v2 - Names"],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "q",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 2,
+              "maxLength": 100
+            },
+            "description": "Name prefix; accents and case do not affect matching.",
+            "example": "pe"
+          },
+          {
+            "in": "query",
+            "name": "limit",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 20,
+              "default": 8
+            },
+            "description": "Maximum number of suggestions."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Matching name suggestions.",
+            "headers": {
+              "Cache-Control": {
+                "schema": {
+                  "type": "string",
+                  "example": "s-maxage=3600"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": ["data", "meta", "errors"],
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "required": ["query", "suggestions"],
+                      "properties": {
+                        "query": {
+                          "type": "string"
+                        },
+                        "suggestions": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "required": ["form", "type", "id", "note", "href"],
+                            "properties": {
+                              "form": {
+                                "type": "string"
+                              },
+                              "type": {
+                                "type": "string",
+                                "enum": [
+                                  "people",
+                                  "country",
+                                  "family",
+                                  "language",
+                                  "patronyme",
+                                  "place"
+                                ]
+                              },
+                              "id": {
+                                "type": "string"
+                              },
+                              "note": {
+                                "type": ["string", "null"]
+                              },
+                              "href": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "meta": {
+                      "type": "object"
+                    },
+                    "errors": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "The prefix or limit is invalid.",
+            "headers": {
+              "Cache-Control": {
+                "schema": {
+                  "type": "string",
+                  "example": "no-store"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEnvelope"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "The suggestions could not be loaded.",
+            "headers": {
+              "Cache-Control": {
+                "schema": {
+                  "type": "string",
+                  "example": "no-store"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEnvelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/v2/reference-library": {
       "get": {
         "summary": "Search structured references",
-        "description": "Searches the authenticated contributor reference library. The result is mutable and is never cached.",
+        "description": "Searches the reference library. Open to any signed-in session; creating references, linking them to assertions and uploading working assets are reserved to moderators. The result is mutable and is never cached.",
         "tags": ["API v2 - Reference Library"],
         "security": [
           {
@@ -207,7 +357,7 @@
       },
       "post": {
         "summary": "Create or resolve a structured reference",
-        "description": "Creates a structured reference or returns an existing matching entry. The result is mutable and is never cached.",
+        "description": "Creates a structured reference or returns an existing matching entry. Reserved to moderators: a signed-in session whose address is not on the moderator allowlist is refused with 403. The result is mutable and is never cached.",
         "tags": ["API v2 - Reference Library"],
         "security": [
           {
@@ -297,6 +447,24 @@
               }
             }
           },
+          "403": {
+            "description": "Signed-in session whose address is not on the moderator allowlist.",
+            "headers": {
+              "Cache-Control": {
+                "schema": {
+                  "type": "string",
+                  "example": "no-store"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEnvelope"
+                }
+              }
+            }
+          },
           "500": {
             "description": "Internal server error.",
             "headers": {
@@ -321,7 +489,7 @@
     "/api/v2/reference-library/assertions": {
       "post": {
         "summary": "Link a reference to an assertion",
-        "description": "Creates a structured locator linking an authenticated contributor reference to an assertion. The result is mutable and is never cached.",
+        "description": "Creates a structured locator linking a library reference to an assertion. Reserved to moderators: a signed-in session whose address is not on the moderator allowlist is refused with 403. The result is mutable and is never cached.",
         "tags": ["API v2 - Reference Library"],
         "security": [
           {
@@ -393,6 +561,24 @@
               }
             }
           },
+          "403": {
+            "description": "Signed-in session whose address is not on the moderator allowlist.",
+            "headers": {
+              "Cache-Control": {
+                "schema": {
+                  "type": "string",
+                  "example": "no-store"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEnvelope"
+                }
+              }
+            }
+          },
           "500": {
             "description": "Internal server error.",
             "headers": {
@@ -417,7 +603,7 @@
     "/api/v2/reference-library/assets": {
       "post": {
         "summary": "Upload a private reference working asset",
-        "description": "Stores a private scan or OCR working asset. The upload is never cached. The response contains metadata only: it omits binary content, storage bucket identifiers, and object or location paths, and it does not grant retrieval access.",
+        "description": "Stores a private scan or OCR working asset. Reserved to moderators: a signed-in session whose address is not on the moderator allowlist is refused with 403. The upload is never cached. The response contains metadata only: it omits binary content, storage bucket identifiers, and object or location paths, and it does not grant retrieval access.",
         "tags": ["API v2 - Reference Library"],
         "security": [
           {
@@ -489,6 +675,24 @@
               }
             }
           },
+          "403": {
+            "description": "Signed-in session whose address is not on the moderator allowlist.",
+            "headers": {
+              "Cache-Control": {
+                "schema": {
+                  "type": "string",
+                  "example": "no-store"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEnvelope"
+                }
+              }
+            }
+          },
           "500": {
             "description": "Internal server error.",
             "headers": {
@@ -499,6 +703,117 @@
                 }
               }
             },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEnvelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v2/words": {
+      "get": {
+        "summary": "List words (WRD_*)",
+        "description": "One page of the word fiches — words whose history explains Africa through its names — ordered by name (REQ-196). Each row is a summary; the word's names and nameHistory are served by `/api/v2/words/{id}`.\n",
+        "tags": ["API v2 - Words"],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "page",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "default": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "perPage",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100,
+              "default": 20
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Paginated word summaries",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/WordListEnvelope"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEnvelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v2/words/{id}": {
+      "get": {
+        "summary": "Get a word by identifier",
+        "description": "One word fiche (REQ-196): every name it answers to, its shared nameHistory block (ARCH-028), its definition, the subjects the fiche ties to it, with the fiche's gaps and sources.\n",
+        "tags": ["API v2 - Words"],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^WRD_[A-Z0-9_]+$"
+            },
+            "example": "WRD_RACE"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Word detail envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/WordDetailEnvelope"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid word identifier format",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEnvelope"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Word not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEnvelope"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error",
             "content": {
               "application/json": {
                 "schema": {
@@ -683,12 +998,13 @@
     "/api/v2/search": {
       "get": {
         "summary": "Search the main corpus or the dedicated quiz lens",
-        "description": "Full-text search, ranked in Postgres by `afrik_search_peoples` / `afrik_search_countries` (migration 052): an accent-insensitive exact name match first, then `ts_rank` over the weighted `search_vector` (migration 043: A = name and autonym, B = exonyms, C/D = prose) OR the accent-insensitive `name_unaccent_vector`, both queried with the `:*` prefix operator on the last word of `q` — so a partial trailing word (\"bamba\") matches a longer indexed name (\"Bambara\"), and an unaccented query (\"mande\") matches an accented name (\"Mandé\") by construction, not by stemmer coincidence (REQ-129). Relevance is multiplied for peoples by a 0.5–1.0 confidence factor. Language families rank in SQL too (migration 068): exact > prefix > substring on the folded name, then a tier for a match found only in their decolonial prose. `q` no longer accepts websearch syntax — quoted phrases, `OR` and `-` exclusions are not recognised (DEC-034); each word except the last must now match as a complete word. Each result carries `relevance`, `exactMatch` and a `snippet` whose matched terms are wrapped in `[[` and `]]` — deliberately not HTML, because `ts_headline` does not escape the source document. `relevance` is comparable within an array and not between arrays. Each entity kind is returned in its own array, and `results` carries the same hits merged into one cross-kind ranking on `normalizedScore` (migration 068) — the magnitude that, unlike `relevance`, is comparable between kinds. Without `lens`, quiz questions are not queried or returned in the main search stream; with `lens=quiz`, only quiz questions are queried and returned (REQ-121). The dedicated quiz projection contains the stem only: options, the correct answer and the explanation are never returned. Named persons (migration 065, REQ-126) and names (patronymes — migration 066, REQ-135) rank the same way, with patronymes additionally folding in a dmetaphone phonetic match so a misspelling like \"Keyta\" still reaches the canonical \"Keïta\". Both fall back to pg_trgm typo tolerance ahead of a no-match. Languages (migration 068, REQ-136) rank the same prefix/accent-insensitive way, with an exact-match bonus that also fires on the ISO 639-3 id — a reader who types \"swa\" reaches Swahili exactly as precisely as one who types its name. When `total` is 0, `leads` (REQ-125) carries up to 3 near-miss suggestions across peoples, countries and language families — a trigram similarity scan (migration 069) below the main search's own fuzzy floor, so the reader sees what the engine almost understood instead of a bare empty result; `leads` is always empty when `total` is greater than 0. With `lang=en` (migration 084, REQ-141) countries, language families and languages also match on their English name — exact, then prefix, then substring, folded the same way — and rows carry `nameEn` / `languageFamilyNameEn` beside the French name; a people's name is invariant and ranks the same in both locales. Without `lang` the search is served in French, exactly as before. Rate-limited per AR11 (IP: 60 RPM, public key: 600 RPM, partner key: 6 000 RPM).\n",
+        "description": "Full-text search, ranked in Postgres by `afrik_search_peoples` / `afrik_search_countries` (migration 052): an accent-insensitive exact name match first, then `ts_rank` over the weighted `search_vector` (migration 043: A = name and autonym, B = exonyms, C/D = prose) OR the accent-insensitive `name_unaccent_vector`, both queried with the `:*` prefix operator on the last word of `q` — so a partial trailing word (\"bamba\") matches a longer indexed name (\"Bambara\"), and an unaccented query (\"mande\") matches an accented name (\"Mandé\") by construction, not by stemmer coincidence (REQ-129). Relevance is multiplied for peoples by a 0.5–1.0 confidence factor. Language families rank in SQL too (migration 068): exact > prefix > substring on the folded name, then a tier for a match found only in their decolonial prose. `q` no longer accepts websearch syntax — quoted phrases, `OR` and `-` exclusions are not recognised (DEC-034); each word except the last must now match as a complete word. Each result carries `relevance`, `exactMatch` and a `snippet` whose matched terms are wrapped in `[[` and `]]` — deliberately not HTML, because `ts_headline` does not escape the source document. `relevance` is comparable within an array and not between arrays. Each entity kind is returned in its own array, and `results` carries the same hits merged into one cross-kind ranking on `normalizedScore` (migration 068) — the magnitude that, unlike `relevance`, is comparable between kinds. Without `lens`, quiz questions are not queried or returned in the main search stream; with `lens=quiz`, only quiz questions are queried and returned (REQ-121). The dedicated quiz projection contains the stem only: options, the correct answer and the explanation are never returned. Named persons (migration 065, REQ-126) and names (patronymes — migration 066, REQ-135) rank the same way, with patronymes additionally folding in a dmetaphone phonetic match so a misspelling like \"Keyta\" still reaches the canonical \"Keïta\" — offered only when nothing answers the query exactly (migration 108, REQ-201). Both fall back to pg_trgm typo tolerance ahead of a no-match. Languages (migration 068, REQ-136) rank the same prefix/accent-insensitive way, with an exact-match bonus that also fires on the ISO 639-3 id — a reader who types \"swa\" reaches Swahili exactly as precisely as one who types its name. When `total` is 0, `leads` (REQ-125) carries up to 3 near-miss suggestions across peoples, countries and language families — a trigram similarity scan (migration 069) below the main search's own fuzzy floor, so the reader sees what the engine almost understood instead of a bare empty result; `leads` is always empty when `total` is greater than 0. The search is served in French. Rate-limited per AR11 (IP: 60 RPM, public key: 600 RPM, partner key: 6 000 RPM).\n",
         "tags": ["API v2 - Search"],
         "security": [
           {
             "BearerAuth": []
-          }
+          },
+          {}
         ],
         "parameters": [
           {
@@ -718,10 +1034,10 @@
             "required": false,
             "schema": {
               "type": "string",
-              "enum": ["en", "fr"]
+              "enum": ["fr"]
             },
-            "description": "Locale the search is served in (ETNI-1857, REQ-141). With `en`, countries, language families and languages also match on their English name and every result carries it beside the French one; the cross-kind tie-break collates in English. Absent means French, the surface's behaviour before it had a second locale. Any other value is rejected with 400 rather than defaulted.\n",
-            "example": "en"
+            "description": "Locale the search is served in. French is the only one published: absent or `fr` serves French, and any other value — `en` included, since the English site was retired — is rejected with 400 rather than defaulted.\n",
+            "example": "fr"
           },
           {
             "in": "query",
@@ -851,6 +1167,306 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/ApiEnvelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v2/search/companions": {
+      "get": {
+        "summary": "Resolve sourced companion content for search subjects",
+        "description": "Returns shorts, anecdotes, attested proverbs and one playable quiz question for up to twenty typed subjects and their direct corpus neighbours. Ordering is stable: requested subjects first, then linked family, people and country targets; duplicate items are removed after their strongest match is chosen. With no subjects, only the recent-short fallback may be populated. Well-formed unknown ids are treated as an empty subject rather than guessed or rejected. Every item carries its own relation code; localised relation labels are not part of the API. Successful responses are cached for one hour.\n",
+        "tags": ["API v2 - Search"],
+        "security": [
+          {
+            "BearerAuth": []
+          },
+          {}
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "subjects",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Comma-separated type:id values. Types are people, country, languageFamily, language and patronyme. At most 20 unique typed subjects are accepted; duplicates are removed in first-seen order.\n",
+            "example": "people:PPL_BASSA,country:CMR"
+          },
+          {
+            "in": "query",
+            "name": "word",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "maxLength": 80
+            },
+            "description": "The word the reader typed, as typed. It finds the shorts filed against that word, for a word that is not a corpus entity (such as \"zombie\"); those items carry the relation \"word\" and lead the shelf. It is compared whole, lowercased and without accents, never by prefix.\n",
+            "example": "zombie"
+          },
+          {
+            "in": "query",
+            "name": "lang",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": ["fr"],
+              "default": "fr"
+            },
+            "description": "Content locale. French is the only one published; any other value, `en` included, is rejected with 400.\n",
+            "example": "fr"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Bounded companion selections with item-level provenance",
+            "headers": {
+              "Cache-Control": {
+                "description": "Shared one-hour corpus cache",
+                "schema": {
+                  "type": "string",
+                  "example": "s-maxage=3600"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SearchCompanionsResponse"
+                },
+                "examples": {
+                  "exact": {
+                    "summary": "One exact short",
+                    "value": {
+                      "data": {
+                        "subjects": [
+                          {
+                            "entityType": "country",
+                            "entityId": "NGA"
+                          }
+                        ],
+                        "shorts": {
+                          "count": 1,
+                          "items": [
+                            {
+                              "id": "short-nigeria",
+                              "href": "/fr/decouvertes/nigeria",
+                              "name": "Nigeria",
+                              "description": "Une production sourcée.",
+                              "publishedAt": "2026-09-01",
+                              "durationSeconds": 47,
+                              "watchUrl": "https://www.youtube.com/watch?v=example",
+                              "poster": {
+                                "src": "/posters/nigeria.jpg",
+                                "alt": "Couverture : D’où vient le nom « Nigeria » ?",
+                                "width": 270,
+                                "height": 480
+                              },
+                              "source": {
+                                "title": "Source",
+                                "url": "https://example.org/source",
+                                "tier": "referenced"
+                              },
+                              "match": {
+                                "relation": "exact",
+                                "entityType": "country",
+                                "entityId": "NGA"
+                              }
+                            }
+                          ]
+                        },
+                        "anecdotes": {
+                          "count": 0,
+                          "items": []
+                        },
+                        "proverbs": {
+                          "count": 0,
+                          "items": []
+                        },
+                        "quiz": {
+                          "count": 0,
+                          "item": null
+                        }
+                      },
+                      "meta": {
+                        "license": "CC-BY-SA-4.0",
+                        "attribution": "EthniAfrica — ethniafrica.com"
+                      },
+                      "errors": []
+                    }
+                  },
+                  "widened": {
+                    "summary": "One ring-1 anecdote",
+                    "value": {
+                      "data": {
+                        "subjects": [
+                          {
+                            "entityType": "people",
+                            "entityId": "PPL_EKPEYE"
+                          }
+                        ],
+                        "shorts": {
+                          "count": 0,
+                          "items": []
+                        },
+                        "anecdotes": {
+                          "count": 1,
+                          "items": [
+                            {
+                              "id": "nigeria-name",
+                              "contentLanguage": "fr",
+                              "headline": "Le nom du Nigeria vient du fleuve Niger.",
+                              "body": [
+                                "Le nom a été proposé à la fin du XIXe siècle."
+                              ],
+                              "tier": "referenced",
+                              "sources": [
+                                {
+                                  "title": "Source",
+                                  "url": "https://example.org/source",
+                                  "tier": "referenced"
+                                }
+                              ],
+                              "illustration": {
+                                "src": "/images/nigeria.jpg",
+                                "alt": "Carte du Nigeria.",
+                                "credit": "Domaine public"
+                              },
+                              "match": {
+                                "relation": "linked-country",
+                                "entityType": "country",
+                                "entityId": "NGA"
+                              }
+                            }
+                          ]
+                        },
+                        "proverbs": {
+                          "count": 0,
+                          "items": []
+                        },
+                        "quiz": {
+                          "count": 0,
+                          "item": null
+                        }
+                      },
+                      "meta": {
+                        "license": "CC-BY-SA-4.0",
+                        "attribution": "EthniAfrica — ethniafrica.com"
+                      },
+                      "errors": []
+                    }
+                  },
+                  "sparse": {
+                    "summary": "Known subject with no eligible companion",
+                    "value": {
+                      "data": {
+                        "subjects": [
+                          {
+                            "entityType": "patronyme",
+                            "entityId": "PAT_RARE"
+                          }
+                        ],
+                        "shorts": {
+                          "count": 0,
+                          "items": []
+                        },
+                        "anecdotes": {
+                          "count": 0,
+                          "items": []
+                        },
+                        "proverbs": {
+                          "count": 0,
+                          "items": []
+                        },
+                        "quiz": {
+                          "count": 0,
+                          "item": null
+                        }
+                      },
+                      "meta": {
+                        "license": "CC-BY-SA-4.0",
+                        "attribution": "EthniAfrica — ethniafrica.com"
+                      },
+                      "errors": []
+                    }
+                  },
+                  "empty": {
+                    "summary": "No resolved subject and no recent production",
+                    "value": {
+                      "data": {
+                        "subjects": [],
+                        "shorts": {
+                          "count": 0,
+                          "items": []
+                        },
+                        "anecdotes": {
+                          "count": 0,
+                          "items": []
+                        },
+                        "proverbs": {
+                          "count": 0,
+                          "items": []
+                        },
+                        "quiz": {
+                          "count": 0,
+                          "item": null
+                        }
+                      },
+                      "meta": {
+                        "license": "CC-BY-SA-4.0",
+                        "attribution": "EthniAfrica — ethniafrica.com"
+                      },
+                      "errors": []
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid subject syntax, subject count or locale",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEnvelope"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Rate limit exceeded",
+            "headers": {
+              "Retry-After": {
+                "schema": {
+                  "type": "integer"
+                }
+              },
+              "X-RateLimit-Limit": {
+                "schema": {
+                  "type": "integer"
+                }
+              },
+              "X-RateLimit-Remaining": {
+                "schema": {
+                  "type": "integer"
+                }
+              },
+              "X-RateLimit-Reset": {
+                "schema": {
+                  "type": "integer"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Companion relation or quiz service failure",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEnvelope"
                 }
               }
             }
@@ -1039,10 +1655,10 @@
             "required": false,
             "schema": {
               "type": "string",
-              "enum": ["en", "fr"],
+              "enum": ["fr"],
               "default": "fr"
             },
-            "description": "Authored question-bank locale"
+            "description": "Authored question-bank locale. French is the only one published; any other value is rejected with 400.\n"
           },
           {
             "in": "query",
@@ -1197,10 +1813,10 @@
             "required": false,
             "schema": {
               "type": "string",
-              "enum": ["en", "fr"],
+              "enum": ["fr"],
               "default": "fr"
             },
-            "description": "Authored question-bank locale"
+            "description": "Authored question-bank locale. French is the only one published; any other value is rejected with 400.\n"
           }
         ],
         "responses": {
@@ -1243,6 +1859,117 @@
               "X-RateLimit-Reset": {
                 "schema": {
                   "type": "integer"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEnvelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v2/places": {
+      "get": {
+        "summary": "List places (LOC_*)",
+        "description": "One page of the place fiches (towns, regions, historic sites), ordered by name (REQ-196). Each row is a summary; the place's names and nameHistory are served by `/api/v2/places/{id}`.\n",
+        "tags": ["API v2 - Places"],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "page",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "default": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "perPage",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100,
+              "default": 20
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Paginated place summaries",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PlaceListEnvelope"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEnvelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v2/places/{id}": {
+      "get": {
+        "summary": "Get a place by identifier",
+        "description": "One place fiche (REQ-196): every name it answers to, its shared nameHistory block (ARCH-028), its country and the peoples the fiche associates with it, with the fiche's gaps and sources.\n",
+        "tags": ["API v2 - Places"],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^LOC_[A-Z0-9_]+$"
+            },
+            "example": "LOC_YAMOUSSOUKRO"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Place detail envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PlaceDetailEnvelope"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid place identifier format",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEnvelope"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Place not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEnvelope"
                 }
               }
             }
@@ -1363,18 +2090,6 @@
             },
             "description": "Identifiant du peuple (format PPL_*)",
             "example": "PPL_SHONA"
-          },
-          {
-            "in": "query",
-            "name": "lang",
-            "required": false,
-            "schema": {
-              "type": "string",
-              "enum": ["fr", "en"],
-              "default": "fr"
-            },
-            "description": "Locale du contenu servi. `fr` est la langue d'auteur ; `en` superpose l'enregistrement de traduction quand il existe et déclare sa provenance dans `meta.translation` (REQ-142).\n",
-            "example": "en"
           }
         ],
         "responses": {
@@ -1837,18 +2552,6 @@
             },
             "description": "Patronyme identifier",
             "example": "PAT_KEITA"
-          },
-          {
-            "in": "query",
-            "name": "lang",
-            "required": false,
-            "schema": {
-              "type": "string",
-              "enum": ["fr", "en"],
-              "default": "fr"
-            },
-            "description": "Locale of the served content. `fr` is the authored language; `en` overlays the translation record when one exists and declares its provenance in `meta.translation` (REQ-142).\n",
-            "example": "en"
           }
         ],
         "responses": {
@@ -1907,7 +2610,7 @@
     "/api/v2/oral-narratives": {
       "get": {
         "summary": "List public oral narratives for a fiche",
-        "description": "Returns only public narratives that have been approved and rights-cleared. Responses omit transcripts, media locators, collector details, and restricted identity metadata.",
+        "description": "Returns public, rights-cleared narratives whether reviewed or not, reviewed first, each with a reviewed flag. Rejected narratives are excluded. Responses omit transcripts, media locators, collector details, carrier references, reviewer identity, and withheld narrator names.",
         "tags": ["API v2 - Oral Narratives"],
         "parameters": [
           {
@@ -2222,7 +2925,7 @@
             },
             "headers": {
               "Cache-Control": {
-                "description": "s-maxage=86400, immutable",
+                "description": "s-maxage=3600 (people-data class, AR18)",
                 "schema": {
                   "type": "string"
                 }
@@ -2282,7 +2985,7 @@
             },
             "headers": {
               "Cache-Control": {
-                "description": "s-maxage=86400, immutable",
+                "description": "s-maxage=3600 (people-data class, AR18)",
                 "schema": {
                   "type": "string"
                 }
@@ -2417,18 +3120,6 @@
             },
             "description": "Lowercase ISO 639-3 language identifier",
             "example": "yor"
-          },
-          {
-            "in": "query",
-            "name": "lang",
-            "required": false,
-            "schema": {
-              "type": "string",
-              "enum": ["fr", "en"],
-              "default": "fr"
-            },
-            "description": "Locale of the served content. `fr` is the authored language; `en` overlays the translation record when one exists and declares its provenance in `meta.translation` (REQ-142).\n",
-            "example": "en"
           }
         ],
         "responses": {
@@ -2554,18 +3245,6 @@
             },
             "description": "Identifiant de la famille linguistique (format FLG_*)",
             "example": "FLG_BANTU"
-          },
-          {
-            "in": "query",
-            "name": "lang",
-            "required": false,
-            "schema": {
-              "type": "string",
-              "enum": ["fr", "en"],
-              "default": "fr"
-            },
-            "description": "Locale du contenu servi. `fr` est la langue d'auteur ; `en` superpose l'enregistrement de traduction quand il existe et déclare sa provenance dans `meta.translation` (REQ-142).\n",
-            "example": "en"
           }
         ],
         "responses": {
@@ -2925,9 +3604,9 @@
       }
     },
     "/api/v2/keys/issue": {
-      "get": {
+      "post": {
         "summary": "Issue a public read-only API key",
-        "description": "Issues a shared, IP-bound, read-only public API key.\nOne key per IP address — returns 409 if a key already exists for this IP.\nPublic keys are rate-limited and can only perform read operations.\nPartner and admin keys must be requested via the admin UI.\nNo authentication required for this endpoint.\n",
+        "description": "Issues a shared, IP-bound, read-only public API key.\nOne key per IP address — returns 409 if a key already exists for this IP.\nThe address is the one the reverse proxy observed, never a value the\ncaller supplies in X-Forwarded-For.\nAttempts are limited per address (5 an hour), separately from the\nanonymous per-minute quota.\nPublic keys are rate-limited and can only perform read operations.\nPartner and admin keys must be requested via the admin UI.\nNo authentication required for this endpoint. POST only: a GET that\ncreates a key can be triggered by a crawler, a link preview or a\ncross-site request, so the former GET alias was removed.\n",
         "tags": ["API v2 - Keys"],
         "security": [],
         "responses": {
@@ -2937,6 +3616,16 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/ApiKeyIssueEnvelope"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "The client address could not be determined",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEnvelope"
                 }
               }
             }
@@ -2951,6 +3640,9 @@
               }
             }
           },
+          "429": {
+            "description": "Too many issuance attempts from this address"
+          },
           "500": {
             "description": "Failed to issue key",
             "content": {
@@ -2960,6 +3652,9 @@
                 }
               }
             }
+          },
+          "503": {
+            "description": "The attempt counter is unavailable; retry shortly"
           }
         }
       }
@@ -3219,7 +3914,7 @@
                 "counter_source_url": "https://example.org/census/2024",
                 "counter_source_citation": "National Statistics Office, 2024 census, table 12.",
                 "proposed_rewrite": "Update the population figure using the 2024 census.",
-                "language": "en",
+                "language": "fr",
                 "antibot": {
                   "salt": "9f2c1ab4d7e60358",
                   "nonce": "418209",
@@ -3621,6 +4316,62 @@
         }
       }
     },
+    "/api/v2/flags/{public_slug_or_id}/audit": {
+      "get": {
+        "summary": "Read the recorded audit trail of one report",
+        "description": "Returns every recorded transition of one report, oldest first, for the moderation console's case file. Each entry names the **role** that acted and the level it was authorised at — never the person, their id or their address: a register has to establish that a decision was taken and at what level of authorisation, and nothing more. Requires a bearer session token whose address is on the moderation allowlist; a signed-in reader is refused. See docs/design/moderation-charter.md §4.",
+        "tags": ["API v2 - Flags"],
+        "security": [
+          {
+            "SupabaseJwtAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "public_slug_or_id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "00EZK83QDV",
+            "description": "Flag UUID or public slug."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The recorded trail.",
+            "headers": {
+              "Cache-Control": {
+                "schema": {
+                  "type": "string",
+                  "example": "no-store"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FlagAuditTrailResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "No bearer session token."
+          },
+          "403": {
+            "description": "The token's address is not on the moderation allowlist."
+          },
+          "404": {
+            "description": "No report carries this identifier."
+          },
+          "500": {
+            "description": "Internal error."
+          }
+        }
+      }
+    },
     "/api/v2/feed/revisions": {
       "get": {
         "summary": "Cursor-paginated feed of recent revisions",
@@ -3970,18 +4721,6 @@
             },
             "description": "Code ISO 3166-1 alpha-3 du pays",
             "example": "ZWE"
-          },
-          {
-            "in": "query",
-            "name": "lang",
-            "required": false,
-            "schema": {
-              "type": "string",
-              "enum": ["fr", "en"],
-              "default": "fr"
-            },
-            "description": "Locale du contenu servi. `fr` est la langue d'auteur ; `en` superpose l'enregistrement de traduction quand il existe et déclare sa provenance dans `meta.translation` (REQ-142).\n",
-            "example": "en"
           }
         ],
         "responses": {
@@ -4078,6 +4817,66 @@
           },
           "404": {
             "description": "No confidence record found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEnvelope"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEnvelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v2/confidence/{entityType}/{entityId}/census": {
+      "get": {
+        "summary": "Count a fiche's assertions by the standing of their sources",
+        "description": "Returns the per-standing census the provenance banner states. Never an aggregate score.",
+        "tags": ["API v2 - Source Transparency"],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "entityType",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "enum": ["people", "country", "language", "language-family"]
+            },
+            "example": "country"
+          },
+          {
+            "in": "path",
+            "name": "entityId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "CIV"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Provenance census envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProvenanceCensusResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid params",
             "content": {
               "application/json": {
                 "schema": {
@@ -4263,6 +5062,82 @@
           }
         }
       }
+    },
+    "/api/v2/admin/source-tier-rulings": {
+      "post": {
+        "summary": "Record a moderator's decision on a citation awaiting review",
+        "description": "Records a draft ruling on one corpus citation still marked `needs_review`, named by its exact title and url. A draft publishes nothing: the fiche keeps its standing until the draft is pulled into the git ruling ledger (docs/editorial/source-review/source-tier-rulings.json) and applied to the fiches. `tier` states official, referenced or unverified — never needs_review — and is required for `tier` and `repair`, absent for `remove`; `repaired_url` belongs to a repair only. Requires a bearer session token whose address is on the moderation allowlist; every recorded draft writes an audit_log entry.",
+        "tags": ["API v2 - Source Transparency"],
+        "security": [
+          {
+            "SupabaseJwtAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "fiche_path",
+                  "source_title",
+                  "source_url",
+                  "decision",
+                  "rationale"
+                ],
+                "properties": {
+                  "fiche_path": {
+                    "type": "string",
+                    "example": "pays/BEN.json"
+                  },
+                  "source_title": {
+                    "type": "string",
+                    "example": "ONU – World Population Prospects 2025"
+                  },
+                  "source_url": {
+                    "type": ["string", "null"]
+                  },
+                  "decision": {
+                    "type": "string",
+                    "enum": ["tier", "repair", "remove"]
+                  },
+                  "tier": {
+                    "type": ["string", "null"],
+                    "enum": ["official", "referenced", "unverified", null]
+                  },
+                  "repaired_url": {
+                    "type": ["string", "null"],
+                    "format": "uri"
+                  },
+                  "rationale": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 5000
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "The recorded draft."
+          },
+          "400": {
+            "description": "The decision is malformed — no rationale, a missing or forbidden tier, a repair with no corrected address."
+          },
+          "401": {
+            "description": "No bearer session token."
+          },
+          "403": {
+            "description": "The token's address is not on the moderation allowlist."
+          },
+          "500": {
+            "description": "Internal error."
+          }
+        }
+      }
     }
   },
   "components": {
@@ -4271,13 +5146,13 @@
         "type": "http",
         "scheme": "bearer",
         "bearerFormat": "API Key",
-        "description": "API key issued via /api/v2/keys/issue (public tier) or the admin UI (partner/admin tiers). Pass as Authorization: Bearer <key>."
+        "description": "Optional. API key issued via /api/v2/keys/issue (public tier) or the admin UI (partner/admin tiers). Omit it to use the anonymous tier (60 requests per minute per client IP); pass it as Authorization: Bearer <key> to use its own tier's quota. A present but invalid key is refused with 401."
       },
       "SupabaseJwtAuth": {
         "type": "http",
         "scheme": "bearer",
         "bearerFormat": "JWT",
-        "description": "Supabase access token for an authenticated contributor. Pass as Authorization: Bearer <JWT>."
+        "description": "Supabase access token for a signed-in session. Pass as Authorization: Bearer <JWT>. A session alone does not open moderator operations: reference-library writes and report transitions also require the address to be on the moderator allowlist."
       }
     },
     "schemas": {
@@ -4345,30 +5220,544 @@
           }
         }
       },
+      "SearchNamingFormV2": {
+        "type": "object",
+        "description": "One legacy-compatible name form. A qualifier is returned only when the name history records one; it is never parsed from the form.",
+        "properties": {
+          "form": {
+            "type": "string",
+            "example": "Peul"
+          },
+          "qualifier": {
+            "type": "string"
+          },
+          "attestedIn": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Country identifiers where this form is attested, when the name record carries them."
+          }
+        },
+        "required": ["form"]
+      },
+      "SearchNamingEraV2": {
+        "type": "object",
+        "properties": {
+          "era": {
+            "type": "string",
+            "enum": [
+              "formerNames",
+              "antiquity",
+              "middleAges",
+              "precolonial",
+              "colonization",
+              "contemporary"
+            ]
+          },
+          "text": {
+            "type": "string"
+          }
+        },
+        "required": ["era", "text"]
+      },
+      "SearchNamingOriginFactV2": {
+        "type": "object",
+        "description": "Structured origin facts retained only when safe for the reader-facing search surface.",
+        "properties": {
+          "languageCode": {
+            "type": "string"
+          },
+          "meaning": {
+            "type": "string"
+          },
+          "imposedBy": {
+            "type": "string"
+          },
+          "period": {
+            "type": "string"
+          }
+        }
+      },
+      "SearchNamingEvidenceSourceV2": {
+        "type": "object",
+        "description": "A hydrated source for a naming assertion. Source identifiers without these details are not exposed as evidence.",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "author": {
+            "type": "string"
+          },
+          "year": {
+            "type": "integer"
+          },
+          "page": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "tier": {
+            "type": "string",
+            "enum": ["official", "referenced", "unverified", "needs_review"]
+          },
+          "reviewedNarrative": {
+            "type": "boolean"
+          },
+          "bibliographyNumber": {
+            "type": "integer"
+          },
+          "brokenAt": {
+            "type": ["string", "null"],
+            "format": "date-time"
+          },
+          "citation": {
+            "type": "string"
+          }
+        },
+        "required": ["id", "title", "tier"]
+      },
+      "SearchNamingEvidenceAssertionV2": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "statement": {
+            "type": "string"
+          },
+          "position": {
+            "type": "string"
+          },
+          "fieldPath": {
+            "type": "string"
+          },
+          "confidenceScore": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1,
+            "description": "Computed confidence when the entity class has a confidence record. Its absence means unmeasured, never zero."
+          },
+          "sourceCount": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "lastHumanAuditAt": {
+            "type": ["string", "null"],
+            "format": "date-time"
+          }
+        },
+        "required": ["statement", "sourceCount", "lastHumanAuditAt"]
+      },
+      "SearchNamingEvidenceV2": {
+        "type": "object",
+        "description": "Complete evidence for one naming assertion: the assertion and every resolved cited source travel together.",
+        "properties": {
+          "assertion": {
+            "$ref": "#/components/schemas/SearchNamingEvidenceAssertionV2"
+          },
+          "sources": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "#/components/schemas/SearchNamingEvidenceSourceV2"
+            }
+          },
+          "standing": {
+            "type": "string",
+            "enum": ["official", "referenced", "unverified", "needs_review"]
+          }
+        },
+        "required": ["assertion", "sources", "standing"]
+      },
+      "SearchNamingPresentationFormV2": {
+        "type": "object",
+        "description": "One name form as the search feed can present it, without adding facts the name history does not record.",
+        "properties": {
+          "form": {
+            "type": "string"
+          },
+          "selfGiven": {
+            "type": ["boolean", "null"],
+            "description": "True or false only when the name history classifies the form this way; null means it does not."
+          },
+          "qualifier": {
+            "type": "string"
+          },
+          "origin": {
+            "$ref": "#/components/schemas/SearchNamingOriginFactV2"
+          },
+          "attestationPeriod": {
+            "type": "string"
+          },
+          "attestations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "problematic": {
+            "type": "string",
+            "enum": ["recorded"]
+          },
+          "currentUsage": {
+            "type": "string",
+            "enum": ["recorded"]
+          },
+          "claimStatus": {
+            "type": "string",
+            "enum": ["established", "claimed", "contested"]
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SearchNamingEvidenceV2"
+            }
+          }
+        },
+        "required": ["form", "selfGiven", "attestations", "evidence"]
+      },
+      "SearchNamingPositionV2": {
+        "type": "object",
+        "properties": {
+          "statement": {
+            "type": "string"
+          },
+          "claimStatus": {
+            "type": "string",
+            "enum": ["established", "claimed", "contested"]
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SearchNamingEvidenceV2"
+            }
+          }
+        },
+        "required": ["claimStatus", "evidence"]
+      },
+      "SearchNamingDisagreementV2": {
+        "type": "object",
+        "properties": {
+          "positions": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "#/components/schemas/SearchNamingPositionV2"
+            }
+          }
+        },
+        "required": ["positions"]
+      },
+      "SearchNamingPresentationEraV2": {
+        "type": "object",
+        "description": "A recorded era marker. The feed receives no historical prose through this reader-facing projection.",
+        "properties": {
+          "era": {
+            "type": "string",
+            "enum": [
+              "formerNames",
+              "antiquity",
+              "middleAges",
+              "precolonial",
+              "colonization",
+              "contemporary"
+            ]
+          }
+        },
+        "required": ["era"]
+      },
+      "SearchNamingPresentationV2": {
+        "type": "object",
+        "description": "Reader-facing structured naming facts. Missing facts are omitted rather than inferred or rendered as empty prose.",
+        "properties": {
+          "forms": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SearchNamingPresentationFormV2"
+            }
+          },
+          "eras": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SearchNamingPresentationEraV2"
+            }
+          },
+          "disagreements": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SearchNamingDisagreementV2"
+            }
+          },
+          "origin": {
+            "type": "string",
+            "enum": ["recorded"]
+          },
+          "problematic": {
+            "type": "string",
+            "enum": ["recorded"]
+          },
+          "currentUsage": {
+            "type": "string",
+            "enum": ["recorded"]
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SearchNamingEvidenceV2"
+            }
+          }
+        },
+        "required": ["forms", "eras", "disagreements", "evidence"]
+      },
+      "SearchNamingProjectionV2": {
+        "type": "object",
+        "description": "The server-built naming projection shared by peoples, countries, language families, names and languages in search results.",
+        "properties": {
+          "selfGiven": {
+            "type": "string"
+          },
+          "forms": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SearchNamingFormV2"
+            }
+          },
+          "origin": {
+            "type": "string"
+          },
+          "problem": {
+            "type": "string"
+          },
+          "usageToday": {
+            "type": "string"
+          },
+          "eras": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SearchNamingEraV2"
+            }
+          },
+          "presentation": {
+            "$ref": "#/components/schemas/SearchNamingPresentationV2"
+          }
+        },
+        "required": ["forms", "eras", "presentation"]
+      },
+      "SearchAnswerV2": {
+        "type": "object",
+        "description": "The six-block answer for one search row. An optional block whose source the fiche leaves empty is omitted, never returned empty. Text comes from the fiche (`lead`, `question`, accounts); where the fiche writes none, the client composes the sentence from `next.template` and its params. Absent on rows from servers that predate it.",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "people",
+              "country",
+              "language",
+              "languageFamily",
+              "patronyme",
+              "word"
+            ]
+          },
+          "title": {
+            "type": "string"
+          },
+          "what": {
+            "type": "object",
+            "properties": {
+              "lead": {
+                "type": "string",
+                "description": "Written by the fiche (`content.searchAnswer.lead`, 220 characters at most). Absent: the client uses its sentence template."
+              },
+              "facts": {
+                "type": "object",
+                "properties": {
+                  "population": {
+                    "type": "integer"
+                  },
+                  "countryCount": {
+                    "type": "integer"
+                  },
+                  "familyId": {
+                    "type": "string"
+                  },
+                  "peopleCount": {
+                    "type": "integer"
+                  }
+                }
+              }
+            },
+            "required": ["facts"]
+          },
+          "origin": {
+            "type": "object",
+            "description": "Where the name comes from, one account per claim with its own evidence. `debated` is true when accounts are contested or the fiche declares the origin debated; the page then shows every account's first sentence side by side.",
+            "properties": {
+              "accounts": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "text": {
+                      "type": "string"
+                    },
+                    "attribution": {
+                      "type": "string",
+                      "enum": ["oral", "written", "linguistic", "synthesis"]
+                    },
+                    "claimStatus": {
+                      "type": "string",
+                      "enum": ["established", "claimed", "contested"]
+                    },
+                    "evidence": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/SearchNamingEvidenceV2"
+                      }
+                    }
+                  },
+                  "required": ["text", "evidence"]
+                }
+              },
+              "debated": {
+                "type": "boolean"
+              }
+            },
+            "required": ["accounts", "debated"]
+          },
+          "names": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "form": {
+                  "type": "string"
+                },
+                "selfGiven": {
+                  "type": ["boolean", "null"],
+                  "description": "Null when the fiche does not classify the form."
+                },
+                "shortLine": {
+                  "type": "string"
+                },
+                "period": {
+                  "type": "string"
+                },
+                "attestedIn": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": ["form", "selfGiven"]
+            }
+          },
+          "where": {
+            "type": "object",
+            "description": "`percent` rows are keyed by people (`peopleId`); every other unit by country (`countryId`). `speakers` is an estimate the fiche declares, in persons, never a sum of peoples' populations. `presence` (patronymes) has a null value.",
+            "properties": {
+              "unit": {
+                "type": "string",
+                "enum": ["population", "speakers", "percent", "presence"]
+              },
+              "estimate": {
+                "type": "boolean"
+              },
+              "rows": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "countryId": {
+                      "type": "string"
+                    },
+                    "peopleId": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": ["number", "null"]
+                    }
+                  }
+                }
+              },
+              "unsplitPercent": {
+                "type": "number"
+              },
+              "documentedPeopleCount": {
+                "type": "integer"
+              }
+            },
+            "required": ["unit", "estimate", "rows"]
+          },
+          "next": {
+            "type": "object",
+            "description": "Either the fiche's own question, or the name of a template and its parameters.",
+            "properties": {
+              "question": {
+                "type": "string"
+              },
+              "template": {
+                "type": "string",
+                "enum": ["migration", "formerName", "distributionGap"]
+              },
+              "params": {
+                "type": "object",
+                "additionalProperties": {
+                  "oneOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "number"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "sources": {
+            "type": "object",
+            "properties": {
+              "count": {
+                "type": "integer",
+                "description": "Distinct sources across every account's evidence."
+              }
+            },
+            "required": ["count"]
+          }
+        },
+        "required": ["kind", "title", "what", "names", "sources"]
+      },
       "SearchResponseData": {
         "type": "object",
-        "description": "Search result data for one of two exclusive modes. Without `lens`, `results` is the canonical cross-kind ranking for the five mergeable non-quiz kinds: every hit, best first, each row carrying a `kind` discriminator; languages remain a grouped facet, and quiz questions are neither queried nor returned. With `lens=quiz`, only quiz questions are queried and returned, in both `quizzes` and `results`, while every non-quiz array and total is empty or zero. In the main stream, each entity kind is ALSO returned in its own array, already ordered — an exact name match first (accent- and case-insensitive), then ts_rank over the weighted search_vector (migration 043: A = name and autonym, B = exonyms, C/D = prose) OR the accent-insensitive name_unaccent_vector, both matched with a prefix operator on the last word of q (migration 052, REQ-129), multiplied for peoples by a 0.5–1.0 confidence factor. `relevance` is comparable within an array and NOT between arrays: peoples are scored ts_rank × confidence, countries by bare ts_rank, families by a match tier, persons and patronymes by the same prefix/unaccent/trigram ranking as peoples but with no confidence factor (migration 065, REQ-126; migration 066, REQ-135 — patronymes additionally fold in a dmetaphone phonetic match), languages by the same prefix/unaccent ranking with no confidence factor and an exact-match bonus that also fires on the ISO 639-3 id (migration 068, REQ-136). `normalizedScore` is the magnitude that IS comparable across kinds: migration 069 places each kind's raw relevance inside a band chosen by the match class (exact [0.90,1.00], lexical [0.50,0.90], fallback [0.00,0.50]), and it is what `results` sorts on; languages are exposed as a facet only and are not folded into `results`. A person's link to a studied people is carried by `peopleLinks[].relationLabel` (`membership` | `observation`) and is never confused with that people's own membership.",
+        "description": "Search result data for one of two exclusive modes. Without `lens`, `results` is the canonical cross-kind ranking for the five mergeable non-quiz kinds: every hit, best first, each row carrying a `kind` discriminator; languages remain a grouped facet, and quiz questions are neither queried nor returned. With `lens=quiz`, only quiz questions are queried and returned, in both `quizzes` and `results`, while every non-quiz array and total is empty or zero. In the main stream, each entity kind is ALSO returned in its own array, already ordered — an exact name match first (accent- and case-insensitive), then ts_rank over the weighted search_vector (migration 043: A = name and autonym, B = exonyms, C/D = prose) OR the accent-insensitive name_unaccent_vector, both matched with a prefix operator on the last word of q (migration 052, REQ-129), multiplied for peoples by a 0.5–1.0 confidence factor. `relevance` is comparable within an array and NOT between arrays: peoples are scored ts_rank × confidence, countries by bare ts_rank, families by a match tier, persons and patronymes by the same prefix/unaccent/trigram ranking as peoples but with no confidence factor (migration 065, REQ-126; migration 066, REQ-135 — patronymes additionally fold in a dmetaphone phonetic match, withheld when the query has an exact answer: migration 108, REQ-201), languages by the same prefix/unaccent ranking with no confidence factor and an exact-match bonus that also fires on the ISO 639-3 id (migration 068, REQ-136). `normalizedScore` is the magnitude that IS comparable across kinds: migration 069 places each kind's raw relevance inside a band chosen by the match class (exact [0.90,1.00], lexical [0.50,0.90], fallback [0.00,0.50]), and it is what `results` sorts on; languages are exposed as a facet only and are not folded into `results`. A person's link to a studied people is carried by `peopleLinks[].relationLabel` (`membership` | `observation`) and is never confused with that people's own membership.",
         "properties": {
           "peoples": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/PeopleV2"
             },
-            "description": "Matching peoples, ranked. Each carries relevance, exactMatch, normalizedScore, confidence, languageFamilyName, languageFamilyNameEn (migration 084; null when the family has no English name) and a snippet whose matched terms are wrapped in [[ ]]."
+            "description": "Matching peoples, ranked. An exact answer is the filed name or any name the fiche's history tells, compared on afrik_name_key (migration 109). Each carries relevance, exactMatch, normalizedScore, confidence, languageFamilyName, languageFamilyNameEn (migration 084; null when the family has no English name), historyNames and a snippet whose matched terms are wrapped in [[ ]]."
           },
           "countries": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/CountryV2"
             },
-            "description": "Matching countries, ranked by ts_rank with name_fr outranking etymology; with `lang=en` the accent-folded English name also matches (exact 1.0 > prefix 0.6 > substring 0.3, migration 084). Each carries nameEn beside nameFr, relevance, exactMatch, normalizedScore and a snippet. Empty when the request carries only a relation scope."
+            "description": "Matching countries, ranked by ts_rank with name_fr outranking etymology. exactMatch also fires on any name the country's history tells (migration 109). Each carries nameEn beside nameFr, relevance, exactMatch, normalizedScore, historyNames and a snippet. Empty when the request carries only a relation scope."
           },
           "families": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/LanguageFamilyV2"
             },
-            "description": "Matching language families, ranked by afrik_search_language_families (migration 069): accent-insensitive exact (1.0) > prefix (0.6) > substring (0.3) on the locale's name — name_fr, or name_en with `lang=en` (migration 084) — then a prose tier (0.1) through search_vector for a term that appears only in the decolonial text (DEC-028). Each carries nameEn beside nameFr, relevance, exactMatch, normalizedScore and a snippet."
+            "description": "Matching language families, ranked by afrik_search_language_families (migration 069): accent-insensitive exact (1.0) > prefix (0.6) > substring (0.3) on name_fr — then a prose tier (0.1) through search_vector for a term that appears only in the decolonial text (DEC-028). exactMatch also fires on any name the family's history tells (migration 109). Each carries nameEn beside nameFr, relevance, exactMatch, normalizedScore, historyNames and a snippet."
           },
           "persons": {
             "type": "array",
@@ -4382,7 +5771,7 @@
             "items": {
               "$ref": "#/components/schemas/PatronymeSearchResultV2"
             },
-            "description": "Matching names (REQ-135), ranked by afrik_search_patronymes (migration 066): exact name match, then a prefix/accent-insensitive lexical match, then a dmetaphone phonetic match, then a pg_trgm typo-tolerance fallback. Each carries relevance, exactMatch, normalizedScore and a snippet."
+            "description": "Matching names (REQ-135), ranked by afrik_search_patronymes (migration 066): exact name match, then a prefix/accent-insensitive lexical match, then a dmetaphone phonetic match, then a pg_trgm typo-tolerance fallback. A name reached only through its phonetic key is left out of this array and of patronymesTotal when the query has an exact answer in any kind or in the production ledger (migration 108, REQ-201); a name the history tells is an exact answer too (migration 109). Each carries relevance, exactMatch, normalizedScore, historyNames and a snippet."
           },
           "quizzes": {
             "type": "array",
@@ -4396,53 +5785,77 @@
             "items": {
               "$ref": "#/components/schemas/SearchHitV2"
             },
-            "description": "Canonical page for the selected mode, ordered on normalizedScore descending, ties broken on the name collated in the served locale (`lang`, French when absent) then on the id. Without `lens`, it merges the main stream and excludes quiz questions; with `lens=quiz`, it contains only quiz questions."
+            "description": "Canonical page for the selected mode, ordered on normalizedScore descending, ties broken on the name collated in French then on the id. Without `lens`, it merges the main stream and excludes quiz questions; with `lens=quiz`, it contains only quiz questions."
           },
           "languages": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/LanguageSearchResultV2"
             },
-            "description": "Matching languages (REQ-136), ranked by afrik_search_languages (migration 068): exact match on the ISO 639-3 id or the name, then a prefix/accent-insensitive lexical match; with `lang=en` the fiche's English name also matches (migration 084). Each carries nameEn, familyName, familyNameEn, relevance, exactMatch and a snippet."
+            "description": "Matching languages (REQ-136), ranked by afrik_search_languages (migration 068): exact match on the ISO 639-3 id, the name or any name the language's history tells (migration 109), then a prefix/accent-insensitive lexical match. Each carries nameEn, familyName, familyNameEn, relevance, exactMatch, historyNames and a snippet."
           },
           "peoplesTotal": {
             "type": "integer",
-            "description": "Peoples matching corpus-wide, not the number returned on this page",
+            "description": "Total people matching the query, not the number returned on this page",
             "example": 16
           },
           "countriesTotal": {
             "type": "integer",
-            "description": "Countries matching corpus-wide",
+            "description": "Total countries matching the query",
             "example": 0
           },
           "familiesTotal": {
             "type": "integer",
-            "description": "Language families matching corpus-wide",
+            "description": "Total language families matching the query",
             "example": 1
           },
           "personsTotal": {
             "type": "integer",
-            "description": "Named persons matching corpus-wide",
+            "description": "Total named people matching the query",
             "example": 0
           },
           "patronymesTotal": {
             "type": "integer",
-            "description": "Names (patronymes) matching corpus-wide",
+            "description": "Total family names matching the query",
             "example": 0
           },
           "quizzesTotal": {
             "type": "integer",
-            "description": "Zero without `lens`; the corpus-wide count of matching active quiz questions with `lens=quiz`.",
+            "description": "Zero without `lens`; the total number of matching active quiz questions with `lens=quiz`.",
             "example": 0
           },
           "languagesTotal": {
             "type": "integer",
-            "description": "Languages matching corpus-wide",
+            "description": "Total languages matching the query",
+            "example": 0
+          },
+          "places": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PlaceSearchHitV2"
+            },
+            "description": "Matching places (REQ-196), ranked by afrik_search_places (migration 100) on the filed name and every nameHistory name. A grouped facet like languages: not folded into `results`."
+          },
+          "placesTotal": {
+            "type": "integer",
+            "description": "Places matching across every page, not only this one",
+            "example": 0
+          },
+          "words": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/WordSearchHitV2"
+            },
+            "description": "Matching word fiches (REQ-196), ranked by afrik_search_words (migration 104) on the filed name and every nameHistory name. Each row carries the six-block `answer` of kind `word`, read from its nameHistory. A grouped facet like places: not folded into `results`."
+          },
+          "wordsTotal": {
+            "type": "integer",
+            "description": "Word fiches matching across every page, not only this one",
             "example": 0
           },
           "total": {
             "type": "integer",
-            "description": "Without `lens`, the sum of the six non-quiz corpus-wide counts. With `lens=quiz`, this equals `quizzesTotal`. Changed in 2.2.0: this used to report the size of the returned page, which made it useless for paging.",
+            "description": "Without `lens`, the sum of the eight non-quiz counts, each across every page. With `lens=quiz`, this equals `quizzesTotal`. Changed in 2.2.0: this used to report the size of the returned page, which made it useless for paging.",
             "example": 17
           },
           "leads": {
@@ -4451,6 +5864,34 @@
               "$ref": "#/components/schemas/SearchLeadV2"
             },
             "description": "Near-miss leads (REQ-125), populated only when total is 0: up to 3 suggestions across peoples, countries and language families, ranked by pg_trgm similarity alone (migration 069) below the main search's own fuzzy floor. Always an empty array when total is greater than 0."
+          },
+          "nearNames": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SearchNearNameV2"
+            },
+            "description": "Qualified similar names (REQ-180) for a non-empty search: up to 3 distinct peoples, countries or language families, ranked by pg_trgm similarity and excluding entities already returned by the search. Always empty for zero-result and quiz-lens searches."
+          },
+          "nameAnswers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/NameAnswerV2"
+            },
+            "description": "Reviewed, sourced answers to « where does this name come from? » for the searched term (REQ-178), matched on the whole term with accents and case ignored and localized by `lang`. Resolved from the term alone, so a search with no hit can still carry one. Empty for a name nobody has reviewed and for quiz-lens searches."
+          },
+          "wordAnswers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/WordAnswerV2"
+            },
+            "description": "The answer to a published word (REQ-184), read from the production registry and matched on the whole term with accents and case ignored. Carried by the envelope and not by a row, because a word answers to no fiche and may come back with no result at all. Empty for a word nobody published and for quiz-lens searches."
+          },
+          "nameSuggestions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Reviewed terms a near spelling may have meant (REQ-125), offered only when `total` is 0: within one edit of the searched term, two from eight letters, and never under four letters. The query is never rewritten; a client presents these as choices. Empty otherwise."
           }
         },
         "required": [
@@ -4470,8 +5911,205 @@
           "quizzesTotal",
           "languagesTotal",
           "total",
-          "leads"
+          "leads",
+          "nearNames",
+          "nameAnswers",
+          "wordAnswers",
+          "nameSuggestions"
         ]
+      },
+      "NameAnswerV2": {
+        "type": "object",
+        "description": "A reviewed answer to where a name comes from. Written by an editor, never generated per request: rival accounts stay two accounts.",
+        "properties": {
+          "term": {
+            "type": "string",
+            "example": "Lingala"
+          },
+          "subjects": {
+            "type": "array",
+            "description": "The fiches this answer is about. Several for a term shared by a collective and its parts; shared spelling does not assert that they are related.",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "people",
+                    "language",
+                    "country",
+                    "languageFamily",
+                    "person",
+                    "patronyme"
+                  ]
+                },
+                "id": {
+                  "type": "string"
+                }
+              },
+              "required": ["type", "id"]
+            }
+          },
+          "paragraphs": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 2,
+            "items": {
+              "type": "string"
+            }
+          },
+          "uncertainty": {
+            "type": "string",
+            "description": "What the sources leave unsettled, when anything."
+          },
+          "sources": {
+            "type": "array",
+            "description": "One entry per key claim: the statement and the sources behind it, in the shape the source-chain sheet reads.",
+            "items": {
+              "type": "object"
+            }
+          }
+        },
+        "required": ["term", "subjects", "paragraphs", "sources"]
+      },
+      "WordAnswerV2": {
+        "type": "object",
+        "description": "The answer to a published word (REQ-184), built from its record in the production registry. It follows the answer contract of the result page (`kind` is always `word`) and lists the queries that find it. A block with no data is an absent key.",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": ["word"]
+          },
+          "title": {
+            "type": "string",
+            "example": "pharaon"
+          },
+          "queries": {
+            "type": "array",
+            "description": "The accent-free, lowercase queries the registry files for this word.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "what": {
+            "type": "object",
+            "properties": {
+              "lead": {
+                "type": "string",
+                "description": "Written in the registry's `answer.lead`; absent when none was written."
+              },
+              "facts": {
+                "type": "object"
+              }
+            },
+            "required": ["facts"]
+          },
+          "origin": {
+            "type": "object",
+            "properties": {
+              "accounts": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "text": {
+                      "type": "string"
+                    },
+                    "attribution": {
+                      "type": "string",
+                      "enum": ["oral", "written", "linguistic", "synthesis"]
+                    },
+                    "evidence": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    }
+                  },
+                  "required": ["text", "evidence"]
+                }
+              },
+              "debated": {
+                "type": "boolean"
+              }
+            },
+            "required": ["accounts", "debated"]
+          },
+          "names": {
+            "type": "array",
+            "description": "The word's forms, none marked as the one a people gives itself.",
+            "items": {
+              "type": "object",
+              "properties": {
+                "form": {
+                  "type": "string"
+                },
+                "selfGiven": {
+                  "type": ["boolean", "null"]
+                }
+              },
+              "required": ["form", "selfGiven"]
+            }
+          },
+          "next": {
+            "type": "object",
+            "properties": {
+              "question": {
+                "type": "string"
+              }
+            }
+          },
+          "path": {
+            "type": "array",
+            "description": "The form of the word in each language it passed through.",
+            "items": {
+              "type": "object",
+              "properties": {
+                "form": {
+                  "type": "string"
+                },
+                "language": {
+                  "type": "string"
+                },
+                "period": {
+                  "type": "string"
+                }
+              },
+              "required": ["form", "language"]
+            }
+          },
+          "publications": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "network": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "format": {
+                  "type": "string"
+                },
+                "publishedAt": {
+                  "type": "string"
+                }
+              },
+              "required": ["network", "url"]
+            }
+          },
+          "sources": {
+            "type": "object",
+            "properties": {
+              "count": {
+                "type": "integer"
+              }
+            },
+            "required": ["count"]
+          }
+        },
+        "required": ["kind", "title", "queries", "what", "names", "sources"]
       },
       "SearchLeadV2": {
         "type": "object",
@@ -4494,6 +6132,28 @@
             "type": "number",
             "description": "pg_trgm similarity of the folded query against this name, in [0.2, 1].",
             "example": 0.27
+          }
+        },
+        "required": ["kind", "id", "name", "similarity"]
+      },
+      "SearchNearNameV2": {
+        "type": "object",
+        "description": "A name qualified by the API as similar to a non-empty search, with its pg_trgm similarity. It is a distinct entity from every returned people, country and language-family result.",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": ["people", "country", "family"]
+          },
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "similarity": {
+            "type": "number",
+            "minimum": 0.2,
+            "maximum": 1
           }
         },
         "required": ["kind", "id", "name", "similarity"]
@@ -4557,6 +6217,14 @@
           "snippet"
         ]
       },
+      "SearchHistoryNamesV2": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Search rows only (migration 109, REQ-135): every name the fiche's history tells (nameHistory.names[].nameText), in history order and spelt as the fiche writes it. The row answers the query exactly when any of them, folded by afrik_name_key, equals the folded query. An empty array when the fiche has no history block.",
+        "example": ["Fulɓe", "Peul", "Fulani"]
+      },
       "SearchHitV2": {
         "type": "object",
         "description": "One row of the canonical cross-kind ranking. The grouped arrays answer what a query found among peoples, or among countries; this answers what it found, best first, whatever the kind.",
@@ -4611,6 +6279,607 @@
             "items": {
               "$ref": "#/components/schemas/ApiErrorEntry"
             }
+          }
+        },
+        "required": ["data", "meta", "errors"]
+      },
+      "SearchCompanionSubject": {
+        "type": "object",
+        "description": "One typed subject used to resolve companion content. The identifier must match its type: PPL_* for people, ISO 3166-1 alpha-3 for countries, FLG_* for language families, ISO 639-3 lowercase for languages, and PAT_* for patronymes.",
+        "properties": {
+          "entityType": {
+            "type": "string",
+            "enum": [
+              "people",
+              "country",
+              "languageFamily",
+              "language",
+              "patronyme"
+            ]
+          },
+          "entityId": {
+            "type": "string",
+            "minLength": 1,
+            "example": "PPL_BASSA"
+          }
+        },
+        "required": ["entityType", "entityId"]
+      },
+      "SearchCompanionWordMatch": {
+        "type": "object",
+        "description": "A short found by the word the reader typed, not by an entity: there is no subject to name, so the match carries the word itself, lowercased and without accents.",
+        "properties": {
+          "relation": {
+            "type": "string",
+            "enum": ["word"]
+          },
+          "word": {
+            "type": "string",
+            "minLength": 1,
+            "example": "zombie"
+          }
+        },
+        "required": ["relation", "word"]
+      },
+      "SearchCompanionMatch": {
+        "type": "object",
+        "description": "Why this individual item is related to the requested subjects. Provenance is item-level because different shelves and items may come from different widening rings.",
+        "properties": {
+          "relation": {
+            "type": "string",
+            "enum": [
+              "exact",
+              "linked-family",
+              "linked-people",
+              "linked-country",
+              "recent"
+            ]
+          },
+          "entityType": {
+            "type": "string",
+            "enum": [
+              "people",
+              "country",
+              "languageFamily",
+              "language",
+              "patronyme"
+            ]
+          },
+          "entityId": {
+            "type": "string",
+            "minLength": 1,
+            "example": "PPL_BASSA"
+          }
+        },
+        "required": ["relation", "entityType", "entityId"]
+      },
+      "SearchCompanionSource": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": ["string", "null"],
+            "format": "uri"
+          },
+          "tier": {
+            "type": "string",
+            "enum": ["official", "referenced", "unverified"]
+          },
+          "notes": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sourceKind": {
+            "type": "string",
+            "enum": [
+              "intergovernmental",
+              "government",
+              "official_statistics",
+              "linguistic_reference",
+              "academic",
+              "press",
+              "encyclopedia",
+              "ngo",
+              "missionary_database",
+              "community",
+              "repository",
+              "archive",
+              "discovery",
+              "ai_generated",
+              "unknown",
+              "oral_tradition",
+              "ethniafrica_synthesis"
+            ],
+            "description": "What kind of work the source is. Absent when the source records none."
+          }
+        },
+        "required": ["title", "url", "tier"]
+      },
+      "SearchCompanionPoster": {
+        "type": "object",
+        "properties": {
+          "src": {
+            "type": "string",
+            "minLength": 1
+          },
+          "alt": {
+            "type": "string",
+            "minLength": 1
+          },
+          "width": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "height": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "required": ["src", "alt", "width", "height"]
+      },
+      "SearchCompanionIllustration": {
+        "type": "object",
+        "properties": {
+          "src": {
+            "type": "string",
+            "minLength": 1
+          },
+          "alt": {
+            "type": "string",
+            "minLength": 1
+          },
+          "credit": {
+            "type": "string",
+            "minLength": 1
+          },
+          "licenceUrl": {
+            "type": "string",
+            "format": "uri"
+          },
+          "filePage": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": ["src", "alt", "credit"]
+      },
+      "SearchCompanionShort": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "href": {
+            "type": "string",
+            "minLength": 1
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "publishedAt": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "string",
+                "format": "date-time"
+              }
+            ]
+          },
+          "durationSeconds": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "watchUrl": {
+            "type": "string",
+            "format": "uri"
+          },
+          "poster": {
+            "$ref": "#/components/schemas/SearchCompanionPoster"
+          },
+          "source": {
+            "$ref": "#/components/schemas/SearchCompanionSource"
+          },
+          "match": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/SearchCompanionMatch"
+              },
+              {
+                "$ref": "#/components/schemas/SearchCompanionWordMatch"
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "href",
+          "name",
+          "description",
+          "publishedAt",
+          "durationSeconds",
+          "watchUrl",
+          "poster",
+          "source",
+          "match"
+        ]
+      },
+      "SearchCompanionAnecdote": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "contentLanguage": {
+            "type": "string",
+            "enum": ["fr"]
+          },
+          "headline": {
+            "type": "string",
+            "minLength": 1
+          },
+          "body": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 2,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "tier": {
+            "type": "string",
+            "enum": ["official", "referenced", "unverified"]
+          },
+          "sources": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "#/components/schemas/SearchCompanionSource"
+            }
+          },
+          "illustration": {
+            "$ref": "#/components/schemas/SearchCompanionIllustration"
+          },
+          "match": {
+            "$ref": "#/components/schemas/SearchCompanionMatch"
+          }
+        },
+        "required": [
+          "id",
+          "contentLanguage",
+          "headline",
+          "body",
+          "tier",
+          "sources",
+          "illustration",
+          "match"
+        ]
+      },
+      "SearchCompanionProverbOriginal": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lang": {
+            "type": "string",
+            "minLength": 2
+          },
+          "language": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": ["text", "lang", "language"]
+      },
+      "SearchCompanionProverb": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "contentLanguage": {
+            "type": "string",
+            "enum": ["fr"]
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "meaning": {
+            "type": "string",
+            "minLength": 1
+          },
+          "original": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/SearchCompanionProverbOriginal"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "origin": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "string",
+                "enum": ["attested"]
+              },
+              "note": {
+                "type": "string"
+              }
+            },
+            "required": ["status", "note"]
+          },
+          "sources": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "#/components/schemas/SearchCompanionSource"
+            }
+          },
+          "match": {
+            "$ref": "#/components/schemas/SearchCompanionMatch"
+          }
+        },
+        "required": [
+          "id",
+          "contentLanguage",
+          "text",
+          "meaning",
+          "original",
+          "origin",
+          "sources",
+          "match"
+        ]
+      },
+      "SearchCompanionQuizOption": {
+        "oneOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "autonym": {
+                "type": "string"
+              },
+              "exonym": {
+                "type": "string"
+              }
+            },
+            "required": ["autonym"]
+          }
+        ]
+      },
+      "SearchCompanionQuiz": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "templateId": {
+            "type": "string",
+            "enum": [
+              "T1",
+              "T2",
+              "T3",
+              "T4",
+              "T6",
+              "T7",
+              "T8",
+              "T9",
+              "T10",
+              "T11",
+              "T12",
+              "T13",
+              "T14",
+              "T15",
+              "T16",
+              "T17",
+              "T18"
+            ]
+          },
+          "contentLanguage": {
+            "type": "string",
+            "enum": ["fr"]
+          },
+          "prompt": {
+            "type": "string",
+            "minLength": 1
+          },
+          "stimulus": {
+            "type": ["string", "null"]
+          },
+          "options": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "$ref": "#/components/schemas/SearchCompanionQuizOption"
+            }
+          },
+          "correctOption": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 3
+          },
+          "explanation": {
+            "type": "string",
+            "minLength": 1
+          },
+          "assertionId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source": {
+            "$ref": "#/components/schemas/SearchCompanionSource"
+          },
+          "entity": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": ["people", "country"]
+              },
+              "id": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": ["type", "id"]
+          },
+          "match": {
+            "$ref": "#/components/schemas/SearchCompanionMatch"
+          }
+        },
+        "required": [
+          "id",
+          "templateId",
+          "contentLanguage",
+          "prompt",
+          "stimulus",
+          "options",
+          "correctOption",
+          "explanation",
+          "assertionId",
+          "source",
+          "entity",
+          "match"
+        ]
+      },
+      "SearchCompanionShortSelection": {
+        "type": "object",
+        "properties": {
+          "count": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Total matching items before the response limit is applied."
+          },
+          "items": {
+            "type": "array",
+            "maxItems": 6,
+            "items": {
+              "$ref": "#/components/schemas/SearchCompanionShort"
+            }
+          }
+        },
+        "required": ["count", "items"]
+      },
+      "SearchCompanionAnecdoteSelection": {
+        "type": "object",
+        "properties": {
+          "count": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Total matching items before the response limit is applied."
+          },
+          "items": {
+            "type": "array",
+            "maxItems": 3,
+            "items": {
+              "$ref": "#/components/schemas/SearchCompanionAnecdote"
+            }
+          }
+        },
+        "required": ["count", "items"]
+      },
+      "SearchCompanionProverbSelection": {
+        "type": "object",
+        "properties": {
+          "count": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Total matching items before the response limit is applied."
+          },
+          "items": {
+            "type": "array",
+            "maxItems": 2,
+            "items": {
+              "$ref": "#/components/schemas/SearchCompanionProverb"
+            }
+          }
+        },
+        "required": ["count", "items"]
+      },
+      "SearchCompanionQuizSelection": {
+        "type": "object",
+        "properties": {
+          "count": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Total matching quiz items before the single-item response limit is applied."
+          },
+          "item": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/SearchCompanionQuiz"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": ["count", "item"]
+      },
+      "SearchCompanionsData": {
+        "type": "object",
+        "properties": {
+          "subjects": {
+            "type": "array",
+            "maxItems": 20,
+            "items": {
+              "$ref": "#/components/schemas/SearchCompanionSubject"
+            }
+          },
+          "shorts": {
+            "$ref": "#/components/schemas/SearchCompanionShortSelection"
+          },
+          "anecdotes": {
+            "$ref": "#/components/schemas/SearchCompanionAnecdoteSelection"
+          },
+          "proverbs": {
+            "$ref": "#/components/schemas/SearchCompanionProverbSelection"
+          },
+          "quiz": {
+            "$ref": "#/components/schemas/SearchCompanionQuizSelection"
+          }
+        },
+        "required": ["subjects", "shorts", "anecdotes", "proverbs", "quiz"]
+      },
+      "SearchCompanionsResponse": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/SearchCompanionsData"
+          },
+          "meta": {
+            "$ref": "#/components/schemas/ApiResponseMeta"
+          },
+          "errors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ApiErrorEntry"
+            },
+            "maxItems": 0
           }
         },
         "required": ["data", "meta", "errors"]
@@ -4807,6 +7076,440 @@
         },
         "required": ["data", "meta", "errors"]
       },
+      "NameHistorySourceV2": {
+        "type": "object",
+        "description": "A source of a name-history account. An oral source is never refused for having no URL or no page (REQ-195): it names what it can of its narrative, carrier and place.",
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "author": {
+            "type": "string",
+            "minLength": 1
+          },
+          "year": {
+            "type": ["integer", "null"]
+          },
+          "url": {
+            "type": ["string", "null"]
+          },
+          "tier": {
+            "type": "string",
+            "enum": ["official", "referenced", "unverified"]
+          },
+          "source_kind": {
+            "type": "string",
+            "enum": [
+              "intergovernmental",
+              "government",
+              "official_statistics",
+              "linguistic_reference",
+              "academic",
+              "press",
+              "encyclopedia",
+              "ngo",
+              "missionary_database",
+              "community",
+              "repository",
+              "archive",
+              "discovery",
+              "ai_generated",
+              "unknown",
+              "oral_tradition",
+              "ethniafrica_synthesis"
+            ]
+          },
+          "page": {
+            "type": "string",
+            "minLength": 1
+          },
+          "narrative": {
+            "type": "string",
+            "minLength": 1
+          },
+          "carrier": {
+            "type": "string",
+            "minLength": 1
+          },
+          "place": {
+            "type": "string",
+            "minLength": 1
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "required": ["title", "author", "year", "url", "tier", "source_kind"]
+      },
+      "NameHistoryAccountV2": {
+        "type": "object",
+        "description": "One dated account of a name. Accounts sharing a hypothesisGroup are competing hypotheses, shown side by side and never ranked.",
+        "properties": {
+          "period": {
+            "type": "object",
+            "description": "Integer years, negative before the common era; either bound may be unknown. `label` is what the reader reads.",
+            "properties": {
+              "from": {
+                "type": ["integer", "null"]
+              },
+              "to": {
+                "type": ["integer", "null"]
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": ["from", "to", "label"]
+          },
+          "era": {
+            "type": "string",
+            "enum": ["polity", "colonial", "modern"],
+            "description": "The great era of the territory the account is about, at its period: before colonial rule, under it, or since independence. Absent when the account does not settle where or when."
+          },
+          "statement": {
+            "type": "string",
+            "minLength": 1
+          },
+          "aspect": {
+            "type": "string",
+            "enum": ["meaning", "imposition", "usage"],
+            "description": "What the account says of the name as a whole: its meaning, who imposed it and why that is a problem, or how it is used today."
+          },
+          "formAsWritten": {
+            "type": "string",
+            "minLength": 1,
+            "description": "A written trace of the name: the form exactly as the cited document spells it, cited at its page."
+          },
+          "hypothesisGroup": {
+            "type": "string",
+            "minLength": 1
+          },
+          "birth": {
+            "type": "boolean",
+            "enum": [true],
+            "description": "The earliest origin of this name the project knows; at most one per name."
+          },
+          "before": {
+            "type": "boolean",
+            "enum": [true],
+            "description": "What existed before this name."
+          },
+          "actors": {
+            "type": "array",
+            "description": "Context for the reader, never the author of a name.",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "role": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "personId": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": ["name", "role"]
+            }
+          },
+          "sources": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "#/components/schemas/NameHistorySourceV2"
+            }
+          }
+        },
+        "required": ["period", "statement", "sources"]
+      },
+      "WordSearchHitV2": {
+        "type": "object",
+        "description": "A word search hit (REQ-196): exact name match, then a prefix match on any of its names, then a pg_trgm fallback; normalizedScore is the cross-kind scale of migration 069.",
+        "properties": {
+          "id": {
+            "type": "string",
+            "example": "WRD_RACE"
+          },
+          "nameMain": {
+            "type": "string",
+            "example": "race"
+          },
+          "wordLanguage": {
+            "type": "string",
+            "example": "fra"
+          },
+          "definition": {
+            "type": "string"
+          },
+          "nameHistory": {
+            "$ref": "#/components/schemas/NameHistoryV2"
+          },
+          "naming": {
+            "$ref": "#/components/schemas/SearchNamingProjectionV2"
+          },
+          "answer": {
+            "$ref": "#/components/schemas/SearchAnswerV2"
+          },
+          "relevance": {
+            "type": "number"
+          },
+          "exactMatch": {
+            "type": "boolean"
+          },
+          "normalizedScore": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "required": ["id", "nameMain", "exactMatch", "normalizedScore"]
+      },
+      "WordSummaryV2": {
+        "type": "object",
+        "description": "One row of the word list (REQ-196).",
+        "properties": {
+          "id": {
+            "type": "string",
+            "example": "WRD_RACE"
+          },
+          "nameMain": {
+            "type": "string",
+            "example": "race"
+          },
+          "wordLanguage": {
+            "type": "string",
+            "example": "fra"
+          }
+        },
+        "required": ["id", "nameMain", "wordLanguage"]
+      },
+      "WordV2": {
+        "type": "object",
+        "description": "A word fiche (REQ-196): a word whose history explains Africa through its names. `names` lists every name the word answers to — its filed name, then each nameText of its nameHistory — with no form promoted over another; `nameHistory`, always present for a word, tells where each comes from.",
+        "properties": {
+          "id": {
+            "type": "string",
+            "example": "WRD_RACE"
+          },
+          "nameMain": {
+            "type": "string",
+            "example": "race"
+          },
+          "names": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "example": ["race"]
+          },
+          "wordLanguage": {
+            "type": "string",
+            "description": "ISO 639-3 code of the language of the word.",
+            "example": "fra"
+          },
+          "definition": {
+            "type": "string",
+            "description": "One sentence: what the word means today."
+          },
+          "relatedSubjects": {
+            "type": "array",
+            "description": "Fiches of any class the word is tied to, with the fiche's own sentence saying how.",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "example": "FLG_MANDE"
+                },
+                "relation": {
+                  "type": "string"
+                }
+              },
+              "required": ["id", "relation"]
+            }
+          },
+          "gaps": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "nameHistory": {
+            "$ref": "#/components/schemas/NameHistoryV2"
+          }
+        },
+        "required": [
+          "id",
+          "nameMain",
+          "names",
+          "wordLanguage",
+          "definition",
+          "relatedSubjects",
+          "gaps",
+          "sources",
+          "nameHistory"
+        ]
+      },
+      "WordDetailEnvelope": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/WordV2"
+          },
+          "meta": {
+            "$ref": "#/components/schemas/ApiResponseMeta"
+          },
+          "errors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ApiErrorEntry"
+            },
+            "maxItems": 0
+          }
+        },
+        "required": ["data", "meta", "errors"]
+      },
+      "WordListEnvelope": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/WordSummaryV2"
+            }
+          },
+          "meta": {
+            "$ref": "#/components/schemas/ApiResponseMeta"
+          },
+          "errors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ApiErrorEntry"
+            },
+            "maxItems": 0
+          }
+        },
+        "required": ["data", "meta", "errors"]
+      },
+      "NameHistoryV2": {
+        "type": "object",
+        "description": "The subject's name history (REQ-196, ARCH-028): one shape on every subject, validated by the one shared schema before it is loaded. Absent when the fiche declares none yet.",
+        "properties": {
+          "summary": {
+            "type": "string",
+            "minLength": 1
+          },
+          "selfNameUnknown": {
+            "type": "boolean",
+            "enum": [true],
+            "description": "No source gives the name the people uses for itself; no name is then self-given."
+          },
+          "names": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "properties": {
+                "nameText": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "nameStatus": {
+                  "type": "string",
+                  "enum": ["current", "former"]
+                },
+                "selfGiven": {
+                  "type": "boolean"
+                },
+                "languageOfOrigin": {
+                  "type": ["string", "null"]
+                },
+                "namedBy": {
+                  "type": ["string", "null"]
+                },
+                "shortLine": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 120,
+                  "description": "One sentence a reader understands without context."
+                },
+                "usedIn": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "description": "ISO 639-3 codes of the languages the name is used in."
+                },
+                "pronunciation": {
+                  "type": "object",
+                  "properties": {
+                    "respelling": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "audio": {
+                      "type": ["object", "null"],
+                      "properties": {
+                        "url": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "consent": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "required": ["url", "consent"]
+                    },
+                    "source": {
+                      "$ref": "#/components/schemas/NameHistorySourceV2"
+                    }
+                  },
+                  "required": ["respelling", "audio", "source"]
+                },
+                "periodLabel": {
+                  "type": "string",
+                  "minLength": 1,
+                  "description": "When the name is or was in use."
+                },
+                "variantSpelling": {
+                  "type": "boolean",
+                  "enum": [true],
+                  "description": "Another spelling of a name rather than a name of its own."
+                },
+                "accounts": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/NameHistoryAccountV2"
+                  }
+                }
+              },
+              "required": [
+                "nameText",
+                "nameStatus",
+                "selfGiven",
+                "languageOfOrigin",
+                "namedBy",
+                "accounts"
+              ]
+            }
+          }
+        },
+        "required": ["summary", "names"]
+      },
       "CountryV2": {
         "type": "object",
         "properties": {
@@ -4821,7 +7524,7 @@
           },
           "nameEn": {
             "type": "string",
-            "description": "English name of ordinary use, in the state's own English form (Chad, Côte d'Ivoire, Cabo Verde, The Gambia). Absent until the corpus reload fills migration 084's column.",
+            "description": "English name of ordinary use, in the state's own English form (Chad, Côte d'Ivoire, Cabo Verde, The Gambia). Absent until the next data reload fills migration 084's column.",
             "example": "Zimbabwe"
           },
           "nameOfficial": {
@@ -4834,6 +7537,18 @@
           "content": {
             "type": "object",
             "description": "Contenu évolutif en JSONB"
+          },
+          "naming": {
+            "$ref": "#/components/schemas/SearchNamingProjectionV2"
+          },
+          "answer": {
+            "$ref": "#/components/schemas/SearchAnswerV2"
+          },
+          "historyNames": {
+            "$ref": "#/components/schemas/SearchHistoryNamesV2"
+          },
+          "nameHistory": {
+            "$ref": "#/components/schemas/NameHistoryV2"
           }
         }
       },
@@ -4864,6 +7579,18 @@
           "content": {
             "type": "object",
             "description": "Contenu évolutif en JSONB"
+          },
+          "naming": {
+            "$ref": "#/components/schemas/SearchNamingProjectionV2"
+          },
+          "answer": {
+            "$ref": "#/components/schemas/SearchAnswerV2"
+          },
+          "historyNames": {
+            "$ref": "#/components/schemas/SearchHistoryNamesV2"
+          },
+          "nameHistory": {
+            "$ref": "#/components/schemas/NameHistoryV2"
           }
         }
       },
@@ -4941,7 +7668,7 @@
       },
       "PatronymeSearchResultV2": {
         "type": "object",
-        "description": "A name (patronyme) search hit (REQ-135), ranked by afrik_search_patronymes (migration 066): exact name match, then a prefix/accent-insensitive lexical match, then a dmetaphone phonetic match (bridging spellings like Keyta/Keïta), then a pg_trgm typo-tolerance fallback.",
+        "description": "A name (patronyme) search hit (REQ-135), ranked by afrik_search_patronymes (migration 066): exact name match, then a prefix/accent-insensitive lexical match, then a dmetaphone phonetic match (bridging spellings like Keyta/Keïta), then a pg_trgm typo-tolerance fallback. A name reached only through its phonetic key is offered only when nothing answers the query exactly (migration 108, REQ-201).",
         "properties": {
           "id": {
             "type": "string",
@@ -4963,6 +7690,12 @@
           "content": {
             "type": "object",
             "description": "Evolutionary JSONB content, forwarded opaquely."
+          },
+          "naming": {
+            "$ref": "#/components/schemas/SearchNamingProjectionV2"
+          },
+          "answer": {
+            "$ref": "#/components/schemas/SearchAnswerV2"
           },
           "associatedPeoples": {
             "type": "array",
@@ -5000,6 +7733,9 @@
           "snippet": {
             "type": "string",
             "description": "Match excerpt over nameMain; matched terms are wrapped in [[ ]]."
+          },
+          "historyNames": {
+            "$ref": "#/components/schemas/SearchHistoryNamesV2"
           }
         },
         "required": [
@@ -5029,7 +7765,7 @@
           },
           "nameEn": {
             "type": ["string", "null"],
-            "description": "The fiche's English name (content.nameEn), matched under `lang=en` (migration 084); null when the fiche carries none.",
+            "description": "The fiche's English name (content.nameEn), carried as fiche data and not searched; null when the fiche carries none.",
             "example": "Swahili"
           },
           "familyId": {
@@ -5049,6 +7785,12 @@
             "type": "object",
             "description": "Evolutionary JSONB content, forwarded opaquely."
           },
+          "naming": {
+            "$ref": "#/components/schemas/SearchNamingProjectionV2"
+          },
+          "answer": {
+            "$ref": "#/components/schemas/SearchAnswerV2"
+          },
           "relevance": {
             "type": "number",
             "example": 0.82
@@ -5061,6 +7803,9 @@
           "snippet": {
             "type": "string",
             "description": "Match excerpt over name; matched terms are wrapped in [[ ]]."
+          },
+          "historyNames": {
+            "$ref": "#/components/schemas/SearchHistoryNamesV2"
           }
         },
         "required": [
@@ -5118,6 +7863,18 @@
           "content": {
             "type": "object",
             "description": "Evolutionary JSONB content. Its associatedPeoples property is a legacy compatibility copy derived from the canonical top-level array."
+          },
+          "naming": {
+            "$ref": "#/components/schemas/SearchNamingProjectionV2"
+          },
+          "answer": {
+            "$ref": "#/components/schemas/SearchAnswerV2"
+          },
+          "historyNames": {
+            "$ref": "#/components/schemas/SearchHistoryNamesV2"
+          },
+          "nameHistory": {
+            "$ref": "#/components/schemas/NameHistoryV2"
           }
         }
       },
@@ -5252,6 +8009,9 @@
             "items": {
               "$ref": "#/components/schemas/LanguageSourceV2"
             }
+          },
+          "nameHistory": {
+            "$ref": "#/components/schemas/NameHistoryV2"
           }
         },
         "required": [
@@ -5273,7 +8033,7 @@
       },
       "PatronymeV2": {
         "type": "object",
-        "description": "A name (patronyme) — DEC-038's fifth corpus dimension. Bearer entries are a narrow allow-listed summary; no code path takes a family name and returns an ethnic origin for a named living person (DEC-040).",
+        "description": "A name (patronyme) — DEC-038's fifth dimension of the atlas. Bearer entries are a narrow allow-listed summary; no code path takes a family name and returns an ethnic origin for a named living person (DEC-040).",
         "properties": {
           "id": {
             "type": "string",
@@ -5297,6 +8057,9 @@
           },
           "casteOrSocialFunction": {
             "type": ["string", "null"]
+          },
+          "nameHistory": {
+            "$ref": "#/components/schemas/NameHistoryV2"
           },
           "content": {
             "type": "object",
@@ -5365,6 +8128,25 @@
               "required": ["id", "fullName", "roleCategory"]
             }
           },
+          "namedBearers": {
+            "type": "array",
+            "description": "Bearers the atlas can only name, because no person record exists for them — they carry a name and a status, never an id, a role or a biography, which is why they are a separate list and not a `bearers` entry with empty fields. Only a bearer the atlas records as dead is served: a family name is an ethnic marker, so publishing a living one would publish their ethnic origin (DEC-040, RGPD art. 9).",
+            "items": {
+              "type": "object",
+              "properties": {
+                "displayName": {
+                  "type": "string",
+                  "minLength": 1,
+                  "example": "Arisekola Alao"
+                },
+                "status": {
+                  "type": "string",
+                  "enum": ["deceased"]
+                }
+              },
+              "required": ["displayName", "status"]
+            }
+          },
           "alliances": {
             "type": "array",
             "description": "Names this name is allied with (joking-kinship pacts such as sanankuya), in the dossier's own order. The target is resolved to its name so a client never has to print a raw PAT_ id; allianceType is the attested term, or null when the dossier records the pact without naming it.",
@@ -5398,6 +8180,7 @@
           "associatedPeoples",
           "associatedCountries",
           "bearers",
+          "namedBearers",
           "alliances"
         ]
       },
@@ -5443,7 +8226,7 @@
                 "type": "null"
               }
             ],
-            "description": "Present once a locale other than the authored one was asked for; null when that locale has no record and the authored text is served."
+            "description": "No longer emitted: translation of the fiches was retired and every record is served as authored, in French. Kept declared so existing clients are not broken."
           }
         },
         "required": ["license", "attribution"]
@@ -5610,7 +8393,7 @@
       },
       "CountryPatronymesV2": {
         "type": "object",
-        "description": "The two name routes a country answers along, kept apart. They assert different things and neither contains the other — measured on the corpus, 2 countries are reachable only directly and 6 only through their peoples. Summing them publishes an inference under the heading of a sourced fact.",
+        "description": "The two name routes a country answers along, kept apart. They assert different things and neither contains the other — measured on the published fiches, 2 countries are reachable only directly and 6 only through their peoples. Summing them publishes an inference under the heading of a sourced fact.",
         "properties": {
           "attested": {
             "type": "array",
@@ -5639,7 +8422,7 @@
             "properties": {
               "patronymes": {
                 "type": "array",
-                "description": "The names this people bears. Distinct from the ethnonym dossier at /peoples/{id}/names, which holds what the people is called. An empty array is the ordinary state of the corpus, not an omission.",
+                "description": "The names this people bears. Distinct from the ethnonym dossier at /peoples/{id}/names, which holds what the people is called. An empty array is the ordinary state of the fiches, not an omission.",
                 "items": {
                   "$ref": "#/components/schemas/PatronymeLinkV2"
                 }
@@ -6731,7 +9514,7 @@
       },
       "OralNarrative": {
         "type": "object",
-        "description": "A public, approved, rights-cleared oral narrative. This representation intentionally excludes transcripts, media locators, collector details, and restricted identity metadata.",
+        "description": "A public, rights-cleared oral narrative, reviewed or not yet reviewed (reviewed narratives are listed first). This representation intentionally excludes transcripts, media locators, collector details, carrier references, reviewer identity, and withheld narrator names.",
         "properties": {
           "id": {
             "type": "string",
@@ -6761,6 +9544,10 @@
           "variantOf": {
             "type": ["string", "null"],
             "format": "uuid"
+          },
+          "reviewed": {
+            "type": "boolean",
+            "description": "Whether the narrative has been reviewed. An unreviewed narrative is shown labelled as not yet reviewed."
           }
         },
         "required": [
@@ -6771,7 +9558,8 @@
           "languageCode",
           "narrativeKind",
           "summary",
-          "variantOf"
+          "variantOf",
+          "reviewed"
         ]
       },
       "OralNarrativeListResponse": {
@@ -6920,6 +9708,80 @@
           }
         }
       },
+      "ProvenanceCensus": {
+        "type": "object",
+        "description": "How many of a fiche's assertions rest on each source standing, each assertion counted once under the standing of its strongest source. Deliberately not a score: an aggregate over chapters of unequal provenance describes none of them, so no field here averages anything. `assertionCount` is always the sum of the four standings; an assertion citing no source is excluded rather than given a bucket.",
+        "properties": {
+          "entityType": {
+            "type": "string",
+            "enum": ["people", "country", "language", "language-family"]
+          },
+          "entityId": {
+            "type": "string",
+            "example": "CIV"
+          },
+          "assertionCount": {
+            "type": "integer",
+            "minimum": 0,
+            "example": 21
+          },
+          "standings": {
+            "type": "object",
+            "description": "One count per value of the published source scale. `needs_review` is a transitional marker, not a fourth tier, and it also covers a source row the database left untiered.",
+            "properties": {
+              "official": {
+                "type": "integer",
+                "minimum": 0,
+                "example": 4
+              },
+              "referenced": {
+                "type": "integer",
+                "minimum": 0,
+                "example": 11
+              },
+              "unverified": {
+                "type": "integer",
+                "minimum": 0,
+                "example": 4
+              },
+              "needs_review": {
+                "type": "integer",
+                "minimum": 0,
+                "example": 2
+              }
+            },
+            "required": ["official", "referenced", "unverified", "needs_review"]
+          },
+          "lastHumanAuditAt": {
+            "type": ["string", "null"],
+            "format": "date-time"
+          }
+        },
+        "required": [
+          "entityType",
+          "entityId",
+          "assertionCount",
+          "standings",
+          "lastHumanAuditAt"
+        ]
+      },
+      "ProvenanceCensusResponse": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/ProvenanceCensus"
+          },
+          "meta": {
+            "$ref": "#/components/schemas/ApiResponseMeta"
+          },
+          "errors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ApiErrorEntry"
+            }
+          }
+        }
+      },
       "ColonialOrigin": {
         "type": "object",
         "description": "Present only once the colonial-borders dataset (Story 13.3) documents the pair (NFR31 — additive, optional).",
@@ -7048,6 +9910,11 @@
           "languageFamilyId": {
             "type": "string",
             "example": "FLG_KWA"
+          },
+          "selfAppellation": {
+            "type": "string",
+            "description": "The name the people gives itself (content.appellations.selfAppellation), verbatim. Omitted when the fiche records none.",
+            "example": "Eʋeawó (les gens Ewe), Eʋe"
           }
         },
         "required": ["id", "nameMain", "languageFamilyId"]
@@ -7208,6 +10075,30 @@
           "tier": {
             "type": ["string", "null"],
             "enum": ["official", "referenced", "unverified", null]
+          },
+          "sourceKind": {
+            "type": ["string", "null"],
+            "enum": [
+              "intergovernmental",
+              "government",
+              "official_statistics",
+              "linguistic_reference",
+              "academic",
+              "press",
+              "encyclopedia",
+              "ngo",
+              "missionary_database",
+              "community",
+              "repository",
+              "archive",
+              "discovery",
+              "ai_generated",
+              "unknown",
+              "oral_tradition",
+              "ethniafrica_synthesis",
+              null
+            ],
+            "description": "What kind of work the source is (provenance, orthogonal to tier). Null or absent when none is recorded."
           }
         },
         "required": ["id", "title", "url", "tier"]
@@ -7368,6 +10259,30 @@
           "tier": {
             "type": ["string", "null"],
             "enum": ["official", "referenced", "unverified", null]
+          },
+          "sourceKind": {
+            "type": ["string", "null"],
+            "enum": [
+              "intergovernmental",
+              "government",
+              "official_statistics",
+              "linguistic_reference",
+              "academic",
+              "press",
+              "encyclopedia",
+              "ngo",
+              "missionary_database",
+              "community",
+              "repository",
+              "archive",
+              "discovery",
+              "ai_generated",
+              "unknown",
+              "oral_tradition",
+              "ethniafrica_synthesis",
+              null
+            ],
+            "description": "What kind of work the source is (provenance, orthogonal to tier). Null or absent when none is recorded."
           }
         },
         "required": ["id", "title", "url", "tier"]
@@ -7619,6 +10534,42 @@
                 "type": "null"
               }
             ]
+          },
+          "attestations": {
+            "type": "array",
+            "description": "The form's history (REQ-189): every time it was written down, by whom, with the source at a printed page. Empty when no attestation is recorded.",
+            "items": {
+              "$ref": "#/components/schemas/NameAttestation"
+            }
+          },
+          "shortLine": {
+            "type": ["string", "null"],
+            "description": "One sentence a reader understands without context (REQ-191), at most 120 characters."
+          },
+          "namedBy": {
+            "type": ["string", "null"],
+            "description": "Who gave the form: a people or an authority, never an author. Null for a self-name.",
+            "example": "Hausa"
+          },
+          "originDebated": {
+            "type": "boolean"
+          },
+          "usedIn": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "example": ["eng"]
+          },
+          "pronunciation": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/NamePronunciation"
+              },
+              {
+                "type": "null"
+              }
+            ]
           }
         },
         "required": [
@@ -7631,7 +10582,120 @@
           "imposition",
           "assertionId",
           "sources",
-          "confidence"
+          "confidence",
+          "attestations",
+          "shortLine",
+          "namedBy",
+          "originDebated",
+          "usedIn",
+          "pronunciation"
+        ]
+      },
+      "NamePronunciation": {
+        "type": "object",
+        "description": "How the self-name is said (REQ-191): a respelling in the site's language, an optional recording with the speaker's consent, and its source.",
+        "properties": {
+          "respelling": {
+            "type": "string",
+            "example": "fool-beh"
+          },
+          "audio": {
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "url": {
+                    "type": "string"
+                  },
+                  "consent": {
+                    "type": "string"
+                  }
+                },
+                "required": ["url", "consent"]
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "source": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "author": {
+                "type": "string"
+              },
+              "year": {
+                "type": "integer"
+              },
+              "url": {
+                "type": "string"
+              },
+              "tier": {
+                "type": "string"
+              },
+              "page": {
+                "type": "string"
+              }
+            },
+            "required": ["title", "author", "year", "url", "tier"]
+          }
+        },
+        "required": ["respelling", "audio", "source"]
+      },
+      "NameAttestation": {
+        "type": "object",
+        "properties": {
+          "formAsWritten": {
+            "type": "string",
+            "example": "Fulbe"
+          },
+          "year": {
+            "type": ["integer", "null"],
+            "example": 1352
+          },
+          "periodLabel": {
+            "type": ["string", "null"],
+            "example": "14th century"
+          },
+          "attestedBy": {
+            "type": "string",
+            "example": "Ibn Battuta"
+          },
+          "source": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "author": {
+                "type": "string"
+              },
+              "year": {
+                "type": "integer"
+              },
+              "url": {
+                "type": "string"
+              },
+              "tier": {
+                "type": "string"
+              },
+              "page": {
+                "type": "string",
+                "example": "p. 192"
+              }
+            },
+            "required": ["title", "author", "year", "url", "tier", "page"]
+          }
+        },
+        "required": [
+          "formAsWritten",
+          "year",
+          "periodLabel",
+          "attestedBy",
+          "source"
         ]
       },
       "PeopleNamesDossier": {
@@ -7781,7 +10845,7 @@
           "branchProvenance": {
             "type": "string",
             "enum": ["language-corpus", "people-fiches"],
-            "description": "Which source produced `branches`: the language corpus, or a reconstruction from the ISO codes the people fiches declare. `afrik_languages` now holds 748 rows in recette, but coverage still varies by family, so `people-fiches` remains a common fallback."
+            "description": "Which source produced `branches`: the language fiches, or a reconstruction from the ISO codes the people fiches declare. `afrik_languages` now holds 748 rows in recette, but coverage still varies by family, so `people-fiches` remains a common fallback."
           },
           "declaredBranches": {
             "type": "array",
@@ -8156,9 +11220,9 @@
           },
           "language": {
             "type": "string",
-            "enum": ["en", "fr"],
+            "enum": ["fr"],
             "default": "fr",
-            "description": "Locale used for reporter verification and moderation-decision e-mails. Missing or invalid values fail closed to French."
+            "description": "Locale used for reporter verification and moderation-decision e-mails. French is the only one published; missing or other values fail closed to French."
           },
           "counter_source_url": {
             "type": "string",
@@ -8225,7 +11289,7 @@
           "counter_source_url": "https://example.org/census/2024",
           "counter_source_citation": "National Statistics Office, 2024 census, table 12.",
           "proposed_rewrite": "Update the population figure using the 2024 census.",
-          "language": "en",
+          "language": "fr",
           "antibot": {
             "salt": "9f2c1ab4d7e60358",
             "nonce": "418209",
@@ -8345,6 +11409,34 @@
             "type": ["string", "null"],
             "format": "date-time",
             "example": null
+          },
+          "moderator_notes": {
+            "type": ["string", "null"],
+            "description": "The moderator's answer on a decided report. Required by the moderation charter on accepted, rejected and duplicate.",
+            "example": null
+          },
+          "remediation_state": {
+            "type": ["string", "null"],
+            "enum": [
+              "not_started",
+              "in_progress",
+              "published",
+              "not_applicable",
+              null
+            ],
+            "description": "What changed in the published fiches, separately from what the moderators thought of the report. Written by the publication of a correction, never by a moderator decision. NULL while the report is open or under review.",
+            "example": null
+          },
+          "remediation_published_at": {
+            "type": ["string", "null"],
+            "format": "date-time",
+            "description": "When the correction reached the published fiches. Never null when remediation_state is published.",
+            "example": null
+          },
+          "remediation_summary": {
+            "type": ["string", "null"],
+            "description": "One reader-facing sentence naming what changed, shown verbatim on the public report page.",
+            "example": null
           }
         },
         "required": [
@@ -8365,7 +11457,11 @@
           "status",
           "created_at",
           "updated_at",
-          "resolved_at"
+          "resolved_at",
+          "moderator_notes",
+          "remediation_state",
+          "remediation_published_at",
+          "remediation_summary"
         ],
         "example": {
           "id": "9c81ca0d-ae45-4f08-8f53-2ac0a9673abd",
@@ -8385,7 +11481,11 @@
           "status": "open",
           "created_at": "2026-07-24T10:15:30.000Z",
           "updated_at": "2026-07-24T11:00:00.000Z",
-          "resolved_at": null
+          "resolved_at": null,
+          "moderator_notes": null,
+          "remediation_state": null,
+          "remediation_published_at": null,
+          "remediation_summary": null
         }
       },
       "FlagCursorPaginationMeta": {
@@ -8484,6 +11584,79 @@
         },
         "required": ["data", "meta", "errors"]
       },
+      "FlagAuditEntry": {
+        "type": "object",
+        "description": "One recorded step in a report's life. It names the role that acted and the level it was authorised at, never the person: a register has to establish that a decision was taken and at what level of authorisation, and a public register backed by an internal console has no reason to go further.",
+        "properties": {
+          "event": {
+            "type": "string",
+            "enum": [
+              "received",
+              "under_review",
+              "accepted",
+              "rejected",
+              "duplicate",
+              "withdrawn",
+              "revision_linked"
+            ],
+            "example": "accepted"
+          },
+          "occurredAt": {
+            "type": "string",
+            "format": "date-time",
+            "description": "When the step was recorded. The console renders it in UTC, so a moderation timeline reads the same from every time zone.",
+            "example": "2026-09-16T08:02:00.000Z"
+          },
+          "actorRole": {
+            "type": "string",
+            "enum": ["reader", "moderator"],
+            "example": "moderator"
+          },
+          "authorisationLevel": {
+            "type": ["string", "null"],
+            "enum": ["admin", null],
+            "description": "The level the actor held, or null for a reader. The moderation allowlist is flat, so `admin` is the only level the console grants.",
+            "example": "admin"
+          }
+        },
+        "required": ["event", "occurredAt", "actorRole", "authorisationLevel"]
+      },
+      "FlagAuditTrail": {
+        "type": "object",
+        "properties": {
+          "publicSlug": {
+            "type": "string",
+            "example": "00EZK83QDV"
+          },
+          "entries": {
+            "type": "array",
+            "description": "Oldest first. The first entry is the report's arrival, credited to a reader.",
+            "items": {
+              "$ref": "#/components/schemas/FlagAuditEntry"
+            }
+          }
+        },
+        "required": ["publicSlug", "entries"]
+      },
+      "FlagAuditTrailResponse": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/FlagAuditTrail"
+          },
+          "meta": {
+            "$ref": "#/components/schemas/ApiResponseMeta"
+          },
+          "errors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ApiErrorEntry"
+            },
+            "maxItems": 0
+          }
+        },
+        "required": ["data", "meta", "errors"]
+      },
       "QuizScopeOption": {
         "type": "object",
         "description": "One track a session can be drawn from. `playable` is false when the track cannot fill a session of eight — it is still listed, and still counted, rather than hidden.",
@@ -8522,7 +11695,7 @@
       },
       "QuizThemeOption": {
         "type": "object",
-        "description": "One domain of content a session can be narrowed to, counted across the whole corpus.",
+        "description": "One domain of content a session can be narrowed to, counted across all the published fiches.",
         "properties": {
           "id": {
             "type": "string",
@@ -8637,6 +11810,30 @@
           },
           "url": {
             "type": ["string", "null"]
+          },
+          "sourceKind": {
+            "type": ["string", "null"],
+            "enum": [
+              "intergovernmental",
+              "government",
+              "official_statistics",
+              "linguistic_reference",
+              "academic",
+              "press",
+              "encyclopedia",
+              "ngo",
+              "missionary_database",
+              "community",
+              "repository",
+              "archive",
+              "discovery",
+              "ai_generated",
+              "unknown",
+              "oral_tradition",
+              "ethniafrica_synthesis",
+              null
+            ],
+            "description": "What kind of work the source is. Absent or null when the source records none."
           }
         },
         "required": ["title", "year", "tier", "url"]
@@ -8866,12 +12063,260 @@
             "required": ["key"]
           }
         ]
+      },
+      "PlaceSummaryV2": {
+        "type": "object",
+        "description": "One row of the place list (REQ-196).",
+        "properties": {
+          "id": {
+            "type": "string",
+            "example": "LOC_YAMOUSSOUKRO"
+          },
+          "placeType": {
+            "type": "string",
+            "enum": ["ville", "region", "site-historique", "autre"]
+          },
+          "nameMain": {
+            "type": "string",
+            "example": "Yamoussoukro"
+          },
+          "countryId": {
+            "type": ["string", "null"],
+            "example": "CIV",
+            "description": "The place's country when it lies in one; null for a region that spans several (read countryIds)."
+          },
+          "countryIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "example": ["CIV"],
+            "description": "Every country the place lies in, in the fiche's order: one for a town, several for a region such as the Sahara."
+          }
+        },
+        "required": ["id", "placeType", "nameMain", "countryId", "countryIds"]
+      },
+      "PlaceV2": {
+        "type": "object",
+        "description": "A place fiche (REQ-196). `names` lists every name the place answers to — its filed name, then each nameText of its nameHistory — with no form promoted over another; `nameHistory` tells where each comes from.",
+        "properties": {
+          "id": {
+            "type": "string",
+            "example": "LOC_YAMOUSSOUKRO"
+          },
+          "placeType": {
+            "type": "string",
+            "enum": ["ville", "region", "site-historique", "autre"]
+          },
+          "nameMain": {
+            "type": "string",
+            "example": "Yamoussoukro"
+          },
+          "names": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "example": ["Yamoussoukro", "N'Gokro"]
+          },
+          "summary": {
+            "type": "string"
+          },
+          "country": {
+            "type": ["object", "null"],
+            "description": "The place's country when it lies in one; null for a region that spans several (read countries).",
+            "properties": {
+              "id": {
+                "type": "string",
+                "example": "CIV"
+              },
+              "name": {
+                "type": ["string", "null"]
+              }
+            },
+            "required": ["id", "name"]
+          },
+          "countries": {
+            "type": "array",
+            "description": "Every country the place lies in, in the fiche's order: one for a town, several for a region such as the Sahara.",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "example": "CIV"
+                },
+                "name": {
+                  "type": ["string", "null"]
+                }
+              },
+              "required": ["id", "name"]
+            }
+          },
+          "associatedPeoples": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": ["string", "null"]
+                },
+                "relation": {
+                  "type": ["string", "null"]
+                }
+              },
+              "required": ["id", "name", "relation"]
+            }
+          },
+          "gaps": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "nameHistory": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/NameHistoryV2"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "placeType",
+          "nameMain",
+          "names",
+          "summary",
+          "country",
+          "countries",
+          "associatedPeoples",
+          "gaps",
+          "sources",
+          "nameHistory"
+        ]
+      },
+      "PlaceSearchHitV2": {
+        "type": "object",
+        "description": "A place search hit (REQ-196): exact name match, then a prefix match on any of its names, then a pg_trgm fallback; normalizedScore is the cross-kind scale of migration 069.",
+        "properties": {
+          "id": {
+            "type": "string",
+            "example": "LOC_YAMOUSSOUKRO"
+          },
+          "nameMain": {
+            "type": "string",
+            "example": "Yamoussoukro"
+          },
+          "placeType": {
+            "type": "string",
+            "example": "ville"
+          },
+          "countryId": {
+            "type": ["string", "null"],
+            "example": "CIV",
+            "description": "The place's country when it lies in one; null for a region that spans several (read countryIds)."
+          },
+          "countryIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "example": ["CIV"]
+          },
+          "summary": {
+            "type": "string"
+          },
+          "nameHistory": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/NameHistoryV2"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "relevance": {
+            "type": "number"
+          },
+          "exactMatch": {
+            "type": "boolean"
+          },
+          "normalizedScore": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "required": [
+          "id",
+          "nameMain",
+          "placeType",
+          "countryId",
+          "exactMatch",
+          "normalizedScore"
+        ]
+      },
+      "PlaceDetailEnvelope": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/PlaceV2"
+          },
+          "meta": {
+            "$ref": "#/components/schemas/ApiResponseMeta"
+          },
+          "errors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ApiErrorEntry"
+            },
+            "maxItems": 0
+          }
+        },
+        "required": ["data", "meta", "errors"]
+      },
+      "PlaceListEnvelope": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PlaceSummaryV2"
+            }
+          },
+          "meta": {
+            "$ref": "#/components/schemas/ApiResponseMeta"
+          },
+          "errors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ApiErrorEntry"
+            },
+            "maxItems": 0
+          }
+        },
+        "required": ["data", "meta", "errors"]
       }
     }
   },
   "security": [
     {
       "BearerAuth": []
-    }
+    },
+    {}
   ]
 }

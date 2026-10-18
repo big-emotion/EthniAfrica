@@ -505,17 +505,24 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
   ];
 }
 
-const LEAD_KIND_TO_TYPE: Record<string, SearchLead["type"]> = {
+const NEAR_NAME_KIND_TO_TYPE: Record<string, SearchNearName["type"]> = {
   people: "people",
   country: "country",
   family: "languageFamily",
 };
 
+/** A family name is a lead (DEC-075), never a similar name. */
+const LEAD_KIND_TO_TYPE: Record<string, SearchLead["type"]> = {
+  ...NEAR_NAME_KIND_TO_TYPE,
+  patronyme: "patronyme",
+};
+
 /**
- * Near-miss leads (REQ-125) — populated by the API only when `data.total`
- * is 0. An unrecognised `kind` is dropped rather than surfaced with a wrong
- * accent: this is the same defensive stance as `mapSearchEnvelope` treating
- * a non-object `data` as no results.
+ * Near-miss leads (REQ-125). Peoples, countries and families come only when
+ * `data.total` is 0; a family name may also come beside results (DEC-075),
+ * so `total` is not read here. An unrecognised `kind` is dropped rather than
+ * surfaced with a wrong accent: this is the same defensive stance as
+ * `mapSearchEnvelope` treating a non-object `data` as no results.
  */
 // @req REQ-125
 export function mapSearchLeads(envelope: unknown): SearchLead[] {
@@ -527,11 +534,14 @@ export function mapSearchLeads(envelope: unknown): SearchLead[] {
   return asRows(leads).flatMap((row): SearchLead[] => {
     const type = LEAD_KIND_TO_TYPE[row.kind as string];
     if (!type) return [];
+    const matchedForm =
+      typeof row.matchedForm === "string" ? row.matchedForm.trim() : "";
     return [
       {
         type,
         id: String(row.id),
         name: String(row.name ?? ""),
+        ...(matchedForm && { matchedForm }),
         similarity: numberOrUndefined(row.similarity) ?? 0,
       },
     ];
@@ -551,7 +561,7 @@ export function mapSearchNearNames(envelope: unknown): SearchNearName[] {
   const { nearNames } = data as Record<string, unknown>;
 
   return asRows(nearNames).flatMap((row): SearchNearName[] => {
-    const type = LEAD_KIND_TO_TYPE[row.kind as string];
+    const type = NEAR_NAME_KIND_TO_TYPE[row.kind as string];
     if (!type) return [];
     return [
       {

@@ -47,32 +47,61 @@ export function PatronymeAlliancesSection({
     senankuya: t.allianceTermGlosses.sanankuya,
     sinankunya: t.allianceTermGlosses.sanankuya,
   };
-  const glossAllianceType = (allianceType: string | null): string => {
-    if (!allianceType) return t.allianceTypeFallback;
-    const gloss = allianceTermGlosses[allianceType.trim().toLowerCase()];
-    return gloss ? `${allianceType}, ${gloss}` : allianceType;
-  };
   const chapter = resolveChapter(
     "name",
     "alliances",
     alliances.length > 0 ? alliances : null,
     readGaps(patronyme.content)
   );
+  const allianceGroups = alliances.reduce<
+    Array<{ type: string | null; alliances: typeof alliances }>
+  >((groups, alliance) => {
+    const normalizedType = alliance.allianceType?.trim().toLowerCase() ?? null;
+    const group = groups.find(
+      (candidate) =>
+        (candidate.type?.trim().toLowerCase() ?? null) === normalizedType
+    );
+    if (group) {
+      group.alliances.push(alliance);
+    } else {
+      groups.push({ type: alliance.allianceType, alliances: [alliance] });
+    }
+    return groups;
+  }, []);
 
   return (
     <FicheSection title={t.alliancesTitle} note={t.alliancesNote}>
       {alliances.length > 0 ? (
-        <ul className="afh-prose-list">
-          {alliances.map((alliance) => (
-            <li key={alliance.targetId}>
-              <Link href={getPatronymeRoute(language, alliance.targetId)}>
-                {alliance.targetNameMain}
-              </Link>
-              {" — "}
-              {glossAllianceType(alliance.allianceType)}
-            </li>
-          ))}
-        </ul>
+        allianceGroups.map((group) => {
+          const gloss = group.type
+            ? allianceTermGlosses[group.type.trim().toLowerCase()]
+            : null;
+          const groupDescription =
+            gloss && group.type
+              ? t.allianceGroupDescription(
+                  group.alliances.length,
+                  group.type,
+                  gloss
+                )
+              : group.type
+                ? t.allianceUnknownTerm(group.type)
+                : t.allianceTypeFallback;
+
+          return (
+            <div key={group.type ?? "unspecified"}>
+              <p>{groupDescription}</p>
+              <ul className="afh-prose-list flex flex-wrap gap-2 p-0">
+                {group.alliances.map((alliance) => (
+                  <li className="list-none" key={alliance.targetId}>
+                    <Link href={getPatronymeRoute(language, alliance.targetId)}>
+                      {alliance.targetNameMain}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          );
+        })
       ) : (
         <FieldProvenanceMarker
           state={chapter.state}

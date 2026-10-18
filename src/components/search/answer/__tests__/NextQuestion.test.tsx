@@ -62,4 +62,18 @@ describe("NextQuestion", () => {
     );
     expect(container).toBeEmptyDOMElement();
   });
+
+  // @req REQ-178
+  it("keeps French punctuation and guillemets together in the fiche question", () => {
+    render(
+      <NextQuestion
+        kind="people"
+        next={{ question: "Un nom : « Fulɓe ! » ; pourquoi ?" }}
+      />
+    );
+
+    expect(screen.getAllByText(/Un nom/)[0].textContent).toBe(
+      "Un nom\u00a0: «\u00a0Fulɓe\u00a0!\u00a0»\u00a0; pourquoi\u00a0?"
+    );
+  });
 });

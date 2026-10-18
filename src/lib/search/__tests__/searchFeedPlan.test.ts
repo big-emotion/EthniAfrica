@@ -42,14 +42,19 @@ describe("search-feed plan", () => {
     expect(plan.closing).toEqual(["owed"]);
   });
 
+  // The page asks which name the reader meant, so it draws no shelf: the
+  // pieces it holds are about a nearest name, which the Shorts filter keeps,
+  // and an empty one would only say it is empty. The filters stay where every
+  // approved board draws them, first in the column, so the choices are not
+  // read as one more filter (brief 16, proposed: Main's « konana » frame).
   // @req REQ-178
-  it("opens with the verdict and the choices when no answer can be given", () => {
+  it("opens on the filters, then the verdict and the choices, when no answer can be given, and draws no shelf", () => {
     const plan = buildSearchFeedPlan("typo", {
       appellations: true,
       fiches: true,
     });
 
-    expect(plan.first).toEqual(["verdict", "appellations", "lenses", "shorts"]);
+    expect(plan.first).toEqual(["lenses", "verdict", "appellations"]);
     expect(plan.primary).toEqual(["fiches"]);
     expect(plan.closing).toEqual(["further"]);
   });
@@ -144,6 +149,101 @@ describe("search-feed plan", () => {
     expect(
       classifySearchFeed({
         ...exact.production,
+        subjects: [],
+      })
+    ).toBe("widened");
+  });
+
+  // DEC-075: « tchikaya » finds Chukwu and Tchicaya, neither answering it,
+  // and the API offers Tchicaya as the spelling the reader probably meant.
+  // @req REQ-125
+  it("asks « Cherchiez-vous… ? » when related fiches come with a lead", () => {
+    const widened = FEED_CASES.find(({ id }) => id === "mande")!;
+    const tchicaya = {
+      type: "patronyme" as const,
+      id: "PAT_TCHICAYA",
+      name: "Tchicaya",
+      similarity: 0.5,
+    };
+
+    expect(
+      classifySearchFeed({
+        ...widened.production,
+        search: {
+          results: widened.production.search.results,
+          leads: [tchicaya],
+        },
+        subjects: [],
+      })
+    ).toBe("typo");
+  });
+
+  // @req REQ-125
+  it("keeps related fiches with no lead as a widened page", () => {
+    const widened = FEED_CASES.find(({ id }) => id === "mande")!;
+
+    expect(
+      classifySearchFeed({
+        ...widened.production,
+        search: { results: widened.production.search.results, leads: [] },
+        subjects: [],
+      })
+    ).toBe("widened");
+  });
+
+  // A scoped search is titled with its filter: a misspelling verdict there
+  // would say no name matches « Congo-Brazzaville », whatever the API sends.
+  // @req REQ-125
+  it("keeps related fiches with a lead as a widened page when the search is scoped", () => {
+    const widened = FEED_CASES.find(({ id }) => id === "mande")!;
+
+    expect(
+      classifySearchFeed({
+        ...widened.production,
+        search: {
+          results: widened.production.search.results,
+          leads: [
+            {
+              type: "patronyme",
+              id: "PAT_TCHICAYA",
+              name: "Tchicaya",
+              similarity: 0.5,
+            },
+          ],
+        },
+        subjects: [],
+        relation: { kind: "country", id: "COG" },
+      })
+    ).toBe("widened");
+  });
+
+  // A piece found by the reader's own word answers it: no spelling is asked.
+  // @req REQ-125
+  it("does not ask for a spelling when a piece answers the reader's word", () => {
+    const widened = FEED_CASES.find(({ id }) => id === "mande")!;
+    const [short] = FEED_CASES.find(({ id }) => id === "inconnu")!.production
+      .companions.shorts.items;
+
+    expect(
+      classifySearchFeed({
+        search: {
+          results: widened.production.search.results,
+          leads: [
+            {
+              type: "patronyme",
+              id: "PAT_TCHICAYA",
+              name: "Tchicaya",
+              similarity: 0.5,
+            },
+          ],
+        },
+        companions: {
+          ...widened.production.companions,
+          shorts: {
+            count: 1,
+            items: [{ ...short, match: { relation: "word", word: "zombie" } }],
+          },
+        },
         subjects: [],
       })
     ).toBe("widened");

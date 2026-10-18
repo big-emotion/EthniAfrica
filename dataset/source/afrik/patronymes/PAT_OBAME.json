@@ -6,7 +6,7 @@
   },
   "id": "PAT_OBAME",
   "nameMain": "Obame",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Obame",
@@ -27,8 +27,8 @@
       ]
     }
   ],
-  "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "transmissionMode": "patrilineal",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -91,7 +91,7 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "la recherche web et bibliographique combinant « Obame », « Obamé », « Fang », « Gabon », « patronyme », « anthroponymie », « étymologie », « clan », « transmission », « alliance », « caste », « homonyme » et « nécrologie », les travaux sur les noms propres gabonais, ainsi que la page Forebears dédiée n'ont pas établi que la catégorie de système nominal portée par la fiche provisoire décrive ce nom lui-même ; elle reste une hypothèse de classement et n'est pas transformée en fait."
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom de personne fang. Le père Trilles fait d'Obam le fondateur d'un clan, mais ce clan porte un autre nom, Esobam. Chez les Fang, le nom du père peut suivre celui de l'enfant, comme dans Biloghe b'Obame, « Biloghe, fille d'Obame ». Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant comme un nom de famille. La fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "alliances",
@@ -108,10 +108,6 @@
     {
       "fieldPath": "homonyms",
       "reason": "la recherche web et bibliographique combinant « Obame », « Obamé », « Fang », « Gabon », « patronyme », « anthroponymie », « étymologie », « clan », « transmission », « alliance », « caste », « homonyme » et « nécrologie », les travaux sur les noms propres gabonais, ainsi que la page Forebears dédiée n'ont pas établi de lignée homonyme d'origine distincte documentable ; une diffusion dans plusieurs pays ou une graphie voisine ne suffit pas à créer un homonyme."
-    },
-    {
-      "fieldPath": "transmissionMode",
-      "reason": "la recherche web et bibliographique combinant « Obame », « Obamé », « Fang », « Gabon », « patronyme », « anthroponymie », « étymologie », « clan », « transmission », « alliance », « caste », « homonyme » et « nécrologie », les travaux sur les noms propres gabonais, ainsi que la page Forebears dédiée n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
   ],
   "nameHistory": {

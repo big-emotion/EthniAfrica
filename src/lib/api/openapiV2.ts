@@ -21,9 +21,9 @@ const options: swaggerJsdoc.Options = {
         "## Response envelope\n\n" +
         "Every `/api/v2/*` response uses the Module #0 envelope: `{ data, meta: { license, attribution, pagination?, confidence?, pinned_url?, translation? }, errors }`. License and attribution are always present (AR8); `errors` is empty on success and populated on non-2xx responses. List endpoints place their pagination values under `meta.pagination`.\n\n" +
         "## French only (breaking)\n\n" +
-        "The site publishes French alone, so the locale parameters that selected English are narrowed to `fr`: `lang` on `GET /api/v2/search` and `GET /api/v2/search/companions`, and `language` in the `POST /api/v2/flags` body. `lang=en` is now refused with 400 on the two searches; an unknown flag `language` still fails closed to French. Search no longer matches English names; the `nameEn` / `languageFamilyNameEn` fields keep their shape and still carry the corpus value. `contentLanguage` in companion payloads is always `fr`.\n\n" +
+        "The site publishes French alone, so the locale parameters that selected English are narrowed to `fr`: `lang` on `GET /api/v2/search` and `GET /api/v2/search/companions`, and `language` in the `POST /api/v2/flags` body. `lang=en` is now refused with 400 on the two searches; an unknown flag `language` still fails closed to French. Search no longer matches English names; the `nameEn` / `languageFamilyNameEn` fields keep their shape and still carry the value in the record. `contentLanguage` in companion payloads is always `fr`.\n\n" +
         "## 2.3.0 — translated records (additive)\n\n" +
-        "The five single-entity endpoints accept `?lang=fr|en`. `fr` is the authored language and the default; `en` overlays the translation record when one exists and declares how it was produced in `meta.translation` — `human`, `machine_reviewed` or `machine` — with `stale: true` when the French moved on a field the reader is shown since it was translated. Fields whose subject is a word are withheld at `machine` provenance and served in French until a human has reviewed them (REQ-142, REQ-143). Lists, facets and search stay authored-French. Retired since: the corpus is no longer translated, `?lang` is ignored and every record is served as authored.\n\n" +
+        "The five single-entity endpoints accept `?lang=fr|en`. `fr` is the authored language and the default; `en` overlays the translation record when one exists and declares how it was produced in `meta.translation` — `human`, `machine_reviewed` or `machine` — with `stale: true` when the French moved on a field the reader is shown since it was translated. Fields whose subject is a word are withheld at `machine` provenance and served in French until a human has reviewed them (REQ-142, REQ-143). Lists, facets and search stay authored-French. Retired since: the data is no longer translated, `?lang` is ignored and every record is served as authored.\n\n" +
         "## 2.1.0 — one source-tier vocabulary (breaking)\n\n" +
         'Source authority is now one three-value scale — `official` | `referenced` | `unverified` — spoken identically by the database, the payloads and the UI. Provenance stays on the separate `source_kind` axis, so AI-generated text is `tier: "unverified"` + `source_kind: "ai_generated"` rather than a tier of its own.\n\n' +
         "Removed, all superseded by `tier`:\n\n" +
@@ -50,6 +50,114 @@ const options: swaggerJsdoc.Options = {
     ],
     tags: OPENAPI_V2_TAGS,
     paths: {
+      "/api/v2/names/suggest": {
+        get: {
+          summary: "Suggest names by prefix",
+          description:
+            "Returns alphabetically ordered name forms across peoples, countries, language families, languages, family names and places. A suggestion links to its name-answer page when it has an address, and otherwise starts a search for that form.",
+          tags: ["API v2 - Names"],
+          parameters: [
+            {
+              in: "query",
+              name: "q",
+              required: true,
+              schema: { type: "string", minLength: 2, maxLength: 100 },
+              description:
+                "Name prefix; accents and case do not affect matching.",
+              example: "pe",
+            },
+            {
+              in: "query",
+              name: "limit",
+              required: false,
+              schema: { type: "integer", minimum: 1, maximum: 20, default: 8 },
+              description: "Maximum number of suggestions.",
+            },
+          ],
+          responses: {
+            200: {
+              description: "Matching name suggestions.",
+              headers: {
+                "Cache-Control": {
+                  schema: {
+                    type: "string",
+                    example: "s-maxage=3600",
+                  },
+                },
+              },
+              content: {
+                "application/json": {
+                  schema: {
+                    type: "object",
+                    required: ["data", "meta", "errors"],
+                    properties: {
+                      data: {
+                        type: "object",
+                        required: ["query", "suggestions"],
+                        properties: {
+                          query: { type: "string" },
+                          suggestions: {
+                            type: "array",
+                            items: {
+                              type: "object",
+                              required: ["form", "type", "id", "note", "href"],
+                              properties: {
+                                form: { type: "string" },
+                                type: {
+                                  type: "string",
+                                  enum: [
+                                    "people",
+                                    "country",
+                                    "family",
+                                    "language",
+                                    "patronyme",
+                                    "place",
+                                  ],
+                                },
+                                id: { type: "string" },
+                                note: { type: ["string", "null"] },
+                                href: { type: "string" },
+                              },
+                            },
+                          },
+                        },
+                      },
+                      meta: { type: "object" },
+                      errors: { type: "array", items: { type: "object" } },
+                    },
+                  },
+                },
+              },
+            },
+            400: {
+              description: "The prefix or limit is invalid.",
+              headers: {
+                "Cache-Control": {
+                  schema: { type: "string", example: "no-store" },
+                },
+              },
+              content: {
+                "application/json": {
+                  schema: { $ref: "#/components/schemas/ApiErrorEnvelope" },
+                },
+              },
+            },
+            500: {
+              description: "The suggestions could not be loaded.",
+              headers: {
+                "Cache-Control": {
+                  schema: { type: "string", example: "no-store" },
+                },
+              },
+              content: {
+                "application/json": {
+                  schema: { $ref: "#/components/schemas/ApiErrorEnvelope" },
+                },
+              },
+            },
+          },
+        },
+      },
       "/api/v2/reference-library": {
         get: {
           summary: "Search structured references",
@@ -505,7 +613,7 @@ const options: swaggerJsdoc.Options = {
         SearchNamingFormV2: {
           type: "object",
           description:
-            "One legacy-compatible name form. A qualifier is only returned when the corpus records one; it is never parsed from the form.",
+            "One legacy-compatible name form. A qualifier is returned only when the name history records one; it is never parsed from the form.",
           properties: {
             form: { type: "string", example: "Peul" },
             qualifier: { type: "string" },
@@ -616,13 +724,13 @@ const options: swaggerJsdoc.Options = {
         SearchNamingPresentationFormV2: {
           type: "object",
           description:
-            "One name form as the search feed can present it, without deriving facts the corpus did not record.",
+            "One name form as the search feed can present it, without adding facts the name history does not record.",
           properties: {
             form: { type: "string" },
             selfGiven: {
               type: ["boolean", "null"],
               description:
-                "True or false only when the corpus classifies the form on this axis; null means it does not.",
+                "True or false only when the name history classifies the form this way; null means it does not.",
             },
             qualifier: { type: "string" },
             origin: {
@@ -934,7 +1042,7 @@ const options: swaggerJsdoc.Options = {
               type: "array",
               items: { $ref: "#/components/schemas/PatronymeSearchResultV2" },
               description:
-                "Matching names (REQ-135), ranked by afrik_search_patronymes (migration 066): exact name match, then a prefix/accent-insensitive lexical match, then a dmetaphone phonetic match, then a pg_trgm typo-tolerance fallback. A name reached only through its phonetic key is left out of this array and of patronymesTotal when the query has an exact answer in any kind or in the production ledger (migration 108, REQ-201); a name the history tells is an exact answer too (migration 109). Each carries relevance, exactMatch, normalizedScore, historyNames and a snippet.",
+                "Matching names (REQ-135), ranked by afrik_search_patronymes (migration 066): exact name match, then a prefix/accent-insensitive lexical match, then a dmetaphone phonetic match, then a pg_trgm typo-tolerance fallback. A name reached only through its phonetic key is left out of this array, of patronymesTotal and of total when the query has an exact answer in any kind or in the production ledger (migration 108, REQ-201), and when the response offers a family-name lead beside its results, which stands for the spelling the phonetic key was bridging (DEC-075); a name the history tells is an exact answer too (migration 109). Each carries relevance, exactMatch, normalizedScore, historyNames and a snippet.",
             },
             quizzes: {
               type: "array",
@@ -957,38 +1065,38 @@ const options: swaggerJsdoc.Options = {
             peoplesTotal: {
               type: "integer",
               description:
-                "Peoples matching corpus-wide, not the number returned on this page",
+                "Total people matching the query, not the number returned on this page",
               example: 16,
             },
             countriesTotal: {
               type: "integer",
-              description: "Countries matching corpus-wide",
+              description: "Total countries matching the query",
               example: 0,
             },
             familiesTotal: {
               type: "integer",
-              description: "Language families matching corpus-wide",
+              description: "Total language families matching the query",
               example: 1,
             },
             personsTotal: {
               type: "integer",
-              description: "Named persons matching corpus-wide",
+              description: "Total named people matching the query",
               example: 0,
             },
             patronymesTotal: {
               type: "integer",
-              description: "Names (patronymes) matching corpus-wide",
+              description: "Total family names matching the query",
               example: 0,
             },
             quizzesTotal: {
               type: "integer",
               description:
-                "Zero without `lens`; the corpus-wide count of matching active quiz questions with `lens=quiz`.",
+                "Zero without `lens`; the total number of matching active quiz questions with `lens=quiz`.",
               example: 0,
             },
             languagesTotal: {
               type: "integer",
-              description: "Languages matching corpus-wide",
+              description: "Total languages matching the query",
               example: 0,
             },
             places: {
@@ -1025,13 +1133,13 @@ const options: swaggerJsdoc.Options = {
               type: "array",
               items: { $ref: "#/components/schemas/SearchLeadV2" },
               description:
-                "Near-miss leads (REQ-125), populated only when total is 0: up to 3 suggestions across peoples, countries and language families, ranked by pg_trgm similarity alone (migration 069) below the main search's own fuzzy floor. Always an empty array when total is greater than 0.",
+                "Near-miss leads (REQ-125), ranked by pg_trgm similarity alone (migrations 094, 110). When total is 0: up to 3 suggestions across peoples, countries, language families and family names. A family name is also offered as a spelling of the searched name when total is greater than 0 (DEC-075): up to 3 family names, only when nothing answers the query exactly (no hit of any kind with exactMatch, no published word, and, once the search has found family names, no family name the query spells exactly through its filed name or a recorded spelling), only when no fiche the search found writes the query as a word in its own text (a clan or name list, a source note: the spelling is then recorded, not a misspelling), only when the family name or one of its recorded spellings begins with the query's first letter (both folded: lower case, accents and apostrophes removed), and only at similarity >= 0.4. A search scoped with familyId or countryId never gets a family-name lead. Empty otherwise, for a multi-name widening and for quiz-lens searches.",
             },
             nearNames: {
               type: "array",
               items: { $ref: "#/components/schemas/SearchNearNameV2" },
               description:
-                "Qualified similar names (REQ-180) for a non-empty search: up to 3 distinct peoples, countries or language families, ranked by pg_trgm similarity and excluding entities already returned by the search. Always empty for zero-result and quiz-lens searches.",
+                "Qualified similar names (REQ-180) for a non-empty search: up to 3 distinct peoples, countries or language families, ranked by pg_trgm similarity and excluding entities already returned by the search. Never a family name (DEC-075). Always empty for zero-result and quiz-lens searches.",
             },
             nameAnswers: {
               type: "array",
@@ -1226,20 +1334,26 @@ const options: swaggerJsdoc.Options = {
         SearchLeadV2: {
           type: "object",
           description:
-            "A near-miss lead (REQ-125): what the search engine almost understood, only ever returned when the main search's total is 0.",
+            "A near-miss lead (REQ-125): what the search engine almost understood. A people, country or family lead is returned only when the main search's total is 0; a family-name lead is a spelling of the searched name and may come beside results (DEC-075).",
           properties: {
             kind: {
               type: "string",
-              enum: ["people", "country", "family"],
+              enum: ["people", "country", "family", "patronyme"],
               description:
-                "The entity kind this lead belongs to — the three kinds the search surface names to the reader.",
+                "The entity kind this lead belongs to. `patronyme` is a family name, offered under its filed name.",
             },
             id: { type: "string", description: "The entity's own identifier." },
             name: { type: "string", description: "The entity's display name." },
+            matchedForm: {
+              type: "string",
+              description:
+                "The form that scored (migrations 110 and 111). For a people, a piece of its filed name, its self-appellation or an exonym that is one name: each field is cut at « , », « ; », « ou » and a slash between spaces, never inside a bracket nor at a slash inside a word (« Hai//om » writes a click), and each piece loses its trailing bracket. A piece is one name when it has three words at most, made of letters, accents, hyphens, apostrophes and click marks, and opens on a capital, a letter with no case (ǂHoan), click marks before a letter (« !Kung »), a class prefix before a capital (« amaXhosa ») or a class prefix of one or two lower-case letters joined by a hyphen to a lower-case one (« a-liyan »). Any other piece, such as « pl. Abaganda) », is never scored; « Baganda / Ganda » gives Baganda and Ganda. For a family name, its filed name as filed, or a recorded spelling that is one name: « jarra » reaches Diarra through its spelling Jara. For a country or a language family, its name as filed. Optional: absent from a database without migration 110.",
+              example: "Jara",
+            },
             similarity: {
               type: "number",
               description:
-                "pg_trgm similarity of the folded query against this name, in [0.2, 1].",
+                "pg_trgm similarity of the folded query against matchedForm, the form that scored: in [0.2, 1] for a people, country or family, in [0.4, 1] for a family name.",
               example: 0.27,
             },
           },

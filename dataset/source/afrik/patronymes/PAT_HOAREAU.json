@@ -6,7 +6,7 @@
   },
   "id": "PAT_HOAREAU",
   "nameMain": "Hoareau",
-  "nameSystem": "clan_name",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Hoareau",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "elective",
-  "designatedSocialUnit": "lineage",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [

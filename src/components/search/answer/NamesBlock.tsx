@@ -8,6 +8,7 @@ import {
   ANSWER_TEXT_BUTTON,
 } from "@/components/search/answer/answerStyle";
 import { searchAnswerCopy } from "@/lib/i18n/copy/searchAnswer";
+import { normalizeFrenchSpacing } from "@/lib/prose/frenchSpacing";
 import type { AnswerName, SearchAnswer } from "@/lib/search/answer";
 import { orderForSearch, searchedAmong } from "@/lib/search/searchedName";
 import { cn } from "@/lib/utils";
@@ -81,7 +82,7 @@ function ListNames({
             </span>
             {name.shortLine ? (
               <span className="text-afh-small leading-[var(--afh-leading-small)] text-afh-fg-muted">
-                {name.shortLine}
+                {normalizeFrenchSpacing(name.shortLine)}
               </span>
             ) : null}
           </li>

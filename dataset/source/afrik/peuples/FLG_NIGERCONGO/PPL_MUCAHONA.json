@@ -13,25 +13,26 @@
       "contemporaryUsage": "Le terme Hakaona est privilegie dans la litterature anglophone recente. Mucahona reste en usage dans les sources de langue portugaise et angolaises. Le terme Mucawana apparait frequemment dans les recits de voyageurs visitant la region d'Oncocua.",
       "linguisticFamily": "FLG_NIGERCONGO",
       "ethnoLinguisticGroup": "Herero (sous-groupe bantou)",
-      "historicalRegion": "Sud-Ouest Angola (province de Cunene)",
+      "historicalRegion": "Sud-ouest de l'Angola : municipalité de Virei, dans la province du Namibe, selon une dépêche de l'agence Lusa (2022) ; région d'Oncocua, dans la province du Cunene, selon des sites de voyage",
       "currentCountries": ["AGO"]
     },
     "ethnicities": ["Hakaona", "Ovahakaona"],
     "origins": {
-      "ancientOrigins": "Les Mucahona sont un sous-groupe des Herero, peuple bantou d'Afrique australe. Comme les autres groupes Herero d'Angola (Himba, Kuvale, Zemba), ils sont issus des migrations bantoues qui ont atteint l'Afrique du Sud-Ouest entre le XVe et le XVIIIe siecle. Leur territoire autour d'Oncocua est isole par les deserts et les montagnes du reste du pays, ce qui a preserve leur mode de vie traditionnel.",
+      "ancientOrigins": "Les Mucahona sont un sous-groupe des Herero, peuple bantou d'Afrique australe. Comme les autres groupes Herero d'Angola (Himba, Kuvale, Zemba), ils sont issus des migrations bantoues qui ont atteint l'Afrique du Sud-Ouest entre le XVe et le XVIIIe siecle. Selon des sites de voyage, leur territoire autour d'Oncocua, dans la province du Cunene, est isolé du reste du pays par des déserts et des montagnes, ce qui aurait préservé leur mode de vie.",
       "formationPeriod": "XVIIe-XVIIIe siecle, dans le contexte des migrations Herero depuis l'Afrique de l'Est vers l'Afrique australe.",
       "migrationRoutes": [
         "Migration depuis l'Afrique de l'Est via la region des Grands Lacs",
-        "Implantation dans la region d'Oncocua (Cunene) apres le franchissement de la riviere Cunene depuis le sud"
+        "Implantation dans la région d'Oncocua, près de la rivière Cunene, selon des sites de voyage"
       ],
       "historicalSettlementZones": [
-        "Region d'Oncocua (province de Cunene)",
-        "Villages de Soba, Elola et Moimba",
-        "Zones boisees et collines rocheuses autour d'Oncocua, pres de la riviere Cunene"
+        "Municipalité de Virei (province du Namibe), selon une dépêche de l'agence Lusa (2022)",
+        "Region d'Oncocua (province de Cunene), selon des sites de voyage",
+        "Villages de Soba, près d'Oncocua, d'Elola et de Moimba, selon des sites de voyage",
+        "Zones boisees et collines rocheuses autour d'Oncocua, pres de la riviere Cunene, selon des sites de voyage"
       ],
       "unificationsOrDivisions": "Les Mucahona font partie du vaste ensemble Herero aux cotes des Himba, Kuvale, Zemba, Tjavikwa et Tjimba. En Angola, ils occupent un territoire distinct de celui des Himba mais partagent des pratiques culturelles proches.",
-      "externalInfluences": "Influence des peuples voisins Himba et Mutua. Pression coloniale portugaise limitee en raison de l'isolement geographique de la region d'Oncocua. Influence croissante du tourisme depuis les annees 2000.",
-      "majorHistoricalEvents": "La region d'Oncocua a ete relativement epargnee par la guerre civile angolaise (1975-2002) en raison de son eloignement des zones de ressources minerales et petrolieres. La secheresse recurrente dans le Cunene depuis les annees 2000 constitue le principal defi contemporain."
+      "externalInfluences": "Influence des peuples voisins Himba et Mutua. Selon des sites de voyage, le tourisme se développe dans la région d'Oncocua.",
+      "majorHistoricalEvents": "Selon des sites de voyage, la sécheresse qui persiste dans la région d'Oncocua est aujourd'hui le principal défi de ce peuple. Selon une dépêche de l'agence Lusa de 2022, la sécheresse qui frappe l'Angola depuis 2012 pousse les éleveurs de la municipalité de Virei, où vivent aussi des Muhakaona, à chercher des pâturages de plus en plus loin."
     },
     "organization": {
       "traditionalPoliticalSystem": "Organisation tribale fondee sur des clans dirigés par l'homme le plus age du clan (soba). Systeme de bilateral descent: chaque membre appartient a deux clans, un par le pere et un par la mere.",
@@ -55,7 +56,7 @@
     "historicalRole": {
       "kingdomsOrChiefdoms": "Chefferies locales (sobas) integrees dans la structure plus large des Herero. Les Mucahona n'ont pas constitue un royaume independant mais participent au systeme politique Herero fonde sur les clans et le bétail.",
       "relationsWithNeighbors": "Relations ambivalentes avec les Himba: les Hakaona sont parfois employes pour garder les troupeaux Himba en signe de soumission sociale. Relations commerciales avec les Mutua voisins. Contacts avec les Mucubal dans la region de Namibe.",
-      "conflictsOrAlliances": "Tensions latentes liees au vol de bétail entre groupes voisins (Mucubal, Muhimba). La region d'Oncocua constitue un carrefour entre plusieurs groupes Herero qui traversent la frontiere angolo-namibienne.",
+      "conflictsOrAlliances": "Tensions latentes liees au vol de bétail entre groupes voisins (Mucubal, Muhimba).",
       "diaspora": null
     },
     "demography": {
@@ -96,6 +97,13 @@
         "url": "https://www.biorxiv.org/content/10.1101/162230v1.full",
         "tier": "referenced",
         "source_kind": "academic"
+      },
+      {
+        "title": "Seca no sul do país leva pastores cada vez mais longe em busca de pasto",
+        "url": "https://www.verangola.net/va/pt/112022/Ambiente/33520/Seca-no-sul-do-pa%C3%ADs-leva-pastores-cada-vez-mais-longe-em-busca-de-pasto.htm",
+        "tier": "referenced",
+        "source_kind": "press",
+        "notes": "Dépêche de l'agence Lusa du 28 novembre 2022, reprise par Ver Angola et lue le 18 octobre 2026 : « Ali vivem quase 43 mil pessoas, entre Mucubais, Cuisses, Muhakaona e Muílas », à propos de la municipalité de Virei, dans la province du Namibe."
       }
     ]
   },

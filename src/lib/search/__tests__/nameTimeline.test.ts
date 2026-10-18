@@ -170,6 +170,7 @@ describe("buildNameTimeline — the tiles of one name, from today backwards", ()
     });
     const history = {
       summary: "Le nom Testa est porté depuis longtemps.",
+      originExplained: true,
       names: [
         {
           nameText: "Testa",

@@ -23,10 +23,10 @@ const layoutFor = (width: number): Layout =>
 
 // Reading order and focus order, at every width (approval record item 5).
 const CONTROL_ORDER = [
-  "Refuser",
-  "Accepter",
   "Personnaliser",
   "Politique de données",
+  "Refuser",
+  "Accepter",
 ];
 
 const STYLE_KEYS = [
@@ -46,10 +46,10 @@ function strip(page: Page): Locator {
 function controls(page: Page): Locator[] {
   const dialog = strip(page);
   return [
-    dialog.getByRole("button", { name: "Refuser", exact: true }),
-    dialog.getByRole("button", { name: "Accepter", exact: true }),
     dialog.getByRole("button", { name: "Personnaliser", exact: true }),
     dialog.getByRole("link", { name: "Politique de données", exact: true }),
+    dialog.getByRole("button", { name: "Refuser", exact: true }),
+    dialog.getByRole("button", { name: "Accepter", exact: true }),
   ];
 }
 
@@ -121,7 +121,7 @@ test.describe("@cross-viewport consent strip", () => {
     page,
   }) => {
     // @req REQ-088
-    const [refuse, accept] = controls(page);
+    const [, , refuse, accept] = controls(page);
     const ink = await tokenColour(page, "var(--afh-text)");
     const refuseStyle = await answerStyle(refuse);
 
@@ -144,7 +144,7 @@ test.describe("@cross-viewport consent strip", () => {
     }
   });
 
-  test("lays the controls out in two rows below 768 px and in one row from 768 px", async ({
+  test("puts the quiet links above the answers below 768 px and to their left from 768 px", async ({
     page,
   }) => {
     // @req REQ-046
@@ -153,16 +153,17 @@ test.describe("@cross-viewport consent strip", () => {
     );
     const boxes = await Promise.all(controls(page).map(boxOf));
     const middle = boxes.map((box) => box.y + box.height / 2);
-    const [refuse, accept, customise, policy] = middle;
+    const [customise, policy, refuse, accept] = middle;
 
     if (layoutFor(width) === "narrow") {
-      expect(Math.abs(refuse - accept)).toBeLessThanOrEqual(1);
       expect(Math.abs(customise - policy)).toBeLessThanOrEqual(1);
+      expect(Math.abs(refuse - accept)).toBeLessThanOrEqual(1);
       expect(boxes[2].y).toBeGreaterThanOrEqual(boxes[0].y + boxes[0].height);
     } else {
       for (const centre of middle) {
         expect(Math.abs(centre - refuse)).toBeLessThanOrEqual(1);
       }
+      expect(boxes[0].x + boxes[0].width).toBeLessThanOrEqual(boxes[2].x);
     }
 
     if (layoutFor(width) === "wide") {
@@ -214,7 +215,7 @@ test.describe("@cross-viewport consent strip", () => {
     expect(
       await dialog.evaluate((element) => getComputedStyle(element).outlineStyle)
     ).toBe("none");
-    const [refuse, accept] = controls(page);
+    const [, , refuse, accept] = controls(page);
     await expect(refuse).not.toBeFocused();
     await expect(accept).not.toBeFocused();
   });
@@ -224,7 +225,7 @@ test.describe("@cross-viewport consent strip", () => {
   }) => {
     // @req REQ-088
     const dialog = strip(page);
-    const [refuse, , customise] = controls(page);
+    const [customise, , refuse] = controls(page);
     await customise.click();
     await expect(customise).toHaveAttribute("aria-expanded", "true");
 
@@ -257,6 +258,17 @@ test.describe("@cross-viewport consent strip", () => {
         .getByRole("switch", { name: "Cookies essentiels" })
         .evaluate((element) => getComputedStyle(element).opacity)
     ).toBe("1");
+
+    const analyticsSwitch = dialog.getByRole("switch", {
+      name: "Cookies analytiques",
+    });
+    await analyticsSwitch.focus();
+    await expect(analyticsSwitch).toBeFocused();
+    expect(
+      await analyticsSwitch.evaluate(
+        (element) => getComputedStyle(element).borderRadius
+      )
+    ).toBe("0px");
 
     const forbidden = [
       await tokenColour(page, "var(--afh-terracotta)"),

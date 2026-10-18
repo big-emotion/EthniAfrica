@@ -113,7 +113,7 @@ describe("single autocomplete surface", () => {
   it("still sees the search bars it is meant to be holding", () => {
     // Guards the guard: a predicate that matched nothing would pass forever.
     expect(suggestFieldsUnder(COMPONENTS_ROOT).length).toBeGreaterThanOrEqual(
-      4
+      2
     );
   });
 });

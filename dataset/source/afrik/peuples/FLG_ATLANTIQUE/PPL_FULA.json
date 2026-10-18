@@ -22,7 +22,7 @@
   "content": {
     "appellations": {
       "mainName": "Peul",
-      "selfAppellation": "Fulbe (pluriel), Pullo (singulier)",
+      "selfAppellation": "Fulɓe (pluriel), Pullo (singulier)",
       "exonyms": [
         "Peul",
         "Peulh",
@@ -60,8 +60,8 @@
       "peopleGroupId": "PGRP_FULANI",
       "peopleGroupLabel": "Fulbe (Peul / Fulani)",
       "linguisticFamily": "FLG_ATLANTIQUE",
-      "ethnoLinguisticGroup": "Atlantique (branche senegambienne)",
-      "historicalRegion": "Bande sahelienne de l'Atlantique au Tchad",
+      "ethnoLinguisticGroup": "Atlantique (branche sénégambienne)",
+      "historicalRegion": "Bande sahélienne de l'Atlantique au Tchad",
       "currentCountries": [
         "SEN",
         "GIN",

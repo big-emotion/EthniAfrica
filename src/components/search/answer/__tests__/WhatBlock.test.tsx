@@ -63,4 +63,25 @@ describe("WhatBlock", () => {
     expect(title).not.toHaveClass("text-afh-hero");
     expect(title).toHaveClass("text-afh-h1");
   });
+
+  // @req REQ-178
+  it("normalizes the fiche lead while preserving its title spelling", () => {
+    const answer = answerOf("lingala");
+    render(
+      <WhatBlock
+        answer={{
+          ...answer,
+          title: "Nom : « Fulɓe ! »",
+          what: { ...answer.what, lead: "Un nom : « Fulɓe ! » ; pourquoi ?" },
+        }}
+      />
+    );
+
+    expect(screen.getByRole("heading", { level: 1 }).textContent).toBe(
+      "Nom : « Fulɓe ! »"
+    );
+    expect(screen.getByText(/Un nom/).textContent).toBe(
+      "Un nom\u00a0: «\u00a0Fulɓe\u00a0!\u00a0»\u00a0; pourquoi\u00a0?"
+    );
+  });
 });
