@@ -39,7 +39,7 @@ after a long read (`pays/CIV`, `FLG_MANDE`, `PPL_MUCUVAL`), early exits
 | 4 | [`04-language-family.md`](04-language-family.md) | Language family | `family-bantu`, `family-mande` (**approved 2026-10-15**) |
 | 5 | [`05-country.md`](05-country.md) | Country | `country-civ`, `country-state-civ-quaqua`, `country-state-thin-gab`, `country-state-shared-congo` (**approved 2026-10-15**) |
 | 6 | [`06-family-name.md`](06-family-name.md) | Family name | `name-traore`, with the link to the name's story of brief 10; `name-state-thin-kollo`, `name-state-weak-sarr` (**approved 2026-10-18**). Prompt: [`claude-design-prompt-06.md`](claude-design-prompt-06.md) |
-| 7 | [`07-place.md`](07-place.md) | Place | `place-yamoussoukro` (**boards approved 2026-10-18, recorded**) |
+| 7 | [`07-place.md`](07-place.md) | Place | `place-yamoussoukro` (430, 768, 1440) (**boards approved 2026-10-18, recorded**); prompt: [`claude-design-prompt-07.md`](claude-design-prompt-07.md) |
 | 8 | [`08-free-word.md`](08-free-word.md) | Free word | **new page**, three new boards (`word-race-430`, `-768`, `-1440`); `glossary` untouched |
 | 9 | [`09-our-approach.md`](09-our-approach.md) | Project page « Notre démarche » (not a type of name) | **new page**, three new boards (`approach-430`, `-768`, `-1440`); one link on `about`; footer state B on `Main` and every board (**approved 2026-10-16**). Prompt: [`claude-design-prompt-09.md`](claude-design-prompt-09.md) |
 | 10 | [`10-fiche-story-link-and-folds.md`](10-fiche-story-link-and-folds.md) | Pass 1, the fiche boards: the link to the name's story, folded chapters | `people-fula`, `people-bassa`, `people-thin-alaba`, `language-lingala`, `language-thin-havu`, `family-bantu`, `family-mande`, `country-civ`, `country-state-civ-quaqua`, `country-state-thin-gab`, `country-state-shared-congo`, `Main` (**approved 2026-10-17 by delegation**, see the brief's approval record). Prompt: [`claude-design-prompt-10.md`](claude-design-prompt-10.md) |
@@ -65,7 +65,6 @@ five decisions. They are drawn in that order, after brief 6, one at a time.
 | 16 | [`16-typo-with-related-fiches.md`](16-typo-with-related-fiches.md) | A misspelling, alone or with related fiches (« tchikaya », « konana », « jarra », DEC-075) | three new boards (`search-state-typo-430`, `-768`, `-1440`); `Main` (**approved 2026-10-18 by the operator**) |
 | 17 | [`17-search-chrome-accessibility.md`](17-search-chrome-accessibility.md) | Search page focus rings, « Aller plus loin » as a titled list, 320 px header and 200% zoom | `search-unknown` and `search-state-typo` at 430/768/1440; new `search-unknown-320` and `search-unknown-215`; `Main` (**approved 2026-10-18 by the operator**) |
 | 18 | [`18-related-only-search-results.md`](18-related-only-search-results.md) | Related-only search results and factual fiche titles | new `search-state-related` at 430/768/1440; `search-unknown`, `search-state-typo` and `Main` (**approved 2026-10-18 by the operator**) |
-| 19 | [`19-recorded-search-term.md`](19-recorded-search-term.md) | A recorded spelling answers the search (« sanoh », ETNI-2110) | new `search-state-recorded` boards at 430/768/1440 (**approved 2026-10-18 by the operator**) |
 
 Brief 16 draws the state that DEC-075 (pull request #1835) adds to the result
 page. It is not one of the passes above and was drawn beside them.
