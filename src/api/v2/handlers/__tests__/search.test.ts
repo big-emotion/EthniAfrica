@@ -211,6 +211,47 @@ describe("ftsSearchHandler — unified results", () => {
     );
   });
 
+  // @req REQ-125
+  it("publishes recorded-field evidence on hits without exposing the lookup", async () => {
+    vi.mocked(ftsSearch).mockResolvedValue(
+      serviceResponse({
+        results: [
+          {
+            ...RANKED_HITS[0],
+            recordedIn: [
+              {
+                fieldPath: "content.organization.clanOrganization",
+                text: "Les clans Kagbo, Sanoh, Kaloko et Koroma jouent également des rôles importants.",
+              },
+            ],
+          },
+        ],
+        recordedTerms: [
+          {
+            kind: "people",
+            id: "PPL_YORUBA",
+            recordedIn: ["content.organization.clanOrganization"],
+          },
+        ],
+      })
+    );
+
+    const envelope = await ftsSearchHandler(QUERY);
+
+    expect(envelope.data.results).toEqual([
+      {
+        ...RANKED_HITS[0],
+        recordedIn: [
+          {
+            fieldPath: "content.organization.clanOrganization",
+            text: "Les clans Kagbo, Sanoh, Kaloko et Koroma jouent également des rôles importants.",
+          },
+        ],
+      },
+    ]);
+    expect(envelope.data).not.toHaveProperty("recordedTerms");
+  });
+
   // @req REQ-121
   it("removes an over-broad quiz response from the default stream", async () => {
     vi.mocked(ftsSearch).mockResolvedValue(

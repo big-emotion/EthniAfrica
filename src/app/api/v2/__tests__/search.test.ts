@@ -88,6 +88,51 @@ describe("GET /api/v2/search (route)", () => {
     expect(Array.isArray(body.errors)).toBe(true);
   });
 
+  // @req REQ-125
+  it("returns recorded field evidence from the handler", async () => {
+    (ftsSearchHandler as ReturnType<typeof vi.fn>).mockResolvedValue({
+      ...mockEnvelope,
+      data: {
+        ...mockEnvelope.data,
+        results: [
+          {
+            kind: "people",
+            id: "PPL_KURANKO",
+            name: "Kuranko",
+            normalizedScore: 1,
+            snippet: null,
+            recordedIn: [
+              {
+                fieldPath: "content.organization.clanOrganization",
+                text: "Les clans Kagbo, Sanoh, Kaloko et Koroma jouent également des rôles importants.",
+              },
+            ],
+          },
+        ],
+      },
+    });
+
+    const res = await GET(
+      new NextRequest("http://localhost/api/v2/search?q=sanoh")
+    );
+
+    expect((await res.json()).data.results).toEqual([
+      {
+        kind: "people",
+        id: "PPL_KURANKO",
+        name: "Kuranko",
+        normalizedScore: 1,
+        snippet: null,
+        recordedIn: [
+          {
+            fieldPath: "content.organization.clanOrganization",
+            text: "Les clans Kagbo, Sanoh, Kaloko et Koroma jouent également des rôles importants.",
+          },
+        ],
+      },
+    ]);
+  });
+
   it("happy path — passes q, limit, offset to handler", async () => {
     (ftsSearchHandler as ReturnType<typeof vi.fn>).mockResolvedValue(
       mockEnvelope

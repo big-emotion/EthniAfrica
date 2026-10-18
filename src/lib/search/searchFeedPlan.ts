@@ -13,7 +13,7 @@ import type { SearchLead, SearchResult } from "@/types/afrik-frontend";
 
 export type SearchFeedAnswerState = Extract<
   SearchResultState,
-  "exact" | "widened" | "typo" | "unknown"
+  "exact" | "widened" | "typo" | "unknown" | "recorded"
 >;
 
 export interface SearchFeedAvailability {
@@ -56,6 +56,13 @@ export function buildSearchFeedPlan(
   availability: SearchFeedAvailability,
   options: SearchFeedPlanOptions = {}
 ): SearchFeedPlan {
+  if (state === "recorded") {
+    return {
+      first: ["verdict"],
+      primary: availability.fiches ? ["fiches"] : [],
+      closing: [],
+    };
+  }
   if (options.wordPage) {
     return {
       first: ["lenses"],
@@ -146,6 +153,15 @@ export function classifySearchFeed({
   const foundByWord = companions.shorts.items.some(
     ({ match }) => match.relation === "word"
   );
+  if (
+    search.results.some((result) =>
+      result.recordedIn?.some(({ fieldPath }) =>
+        fieldPath.startsWith("content.")
+      )
+    )
+  ) {
+    return "recorded";
+  }
   // Related fiches with a lead: the API offers a lead beside results only as
   // a spelling of the searched name (DEC-075), so the page asks which name
   // the reader meant before it lists them. A scoped search stays a relation

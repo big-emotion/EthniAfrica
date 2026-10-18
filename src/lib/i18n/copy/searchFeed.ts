@@ -3,6 +3,9 @@ import type { Language } from "@/types/shared";
 export interface SearchFeedCopy {
   answer: {
     exact: string;
+    recorded: (count: number) => string;
+    recordedSpelling: (name: string, spelling: string) => string;
+    recordedName: (name: string, form: string) => string;
     relatedOnly: string;
     /** Said when no name answers: the nearest names follow as explicit choices. */
     typo: string;
@@ -180,6 +183,15 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
   fr: {
     answer: {
       exact: "Nous documentons ce nom.",
+      recorded: (count) =>
+        count === 2
+          ? "Deux fiches donnent cette écriture."
+          : count === 1
+            ? "Une fiche donne cette écriture."
+            : `${count} fiches donnent cette écriture.`,
+      recordedSpelling: (name, spelling) =>
+        `La fiche ${name} donne aussi l’écriture « ${spelling} ».`,
+      recordedName: (name, form) => `La fiche ${name} donne le nom ${form}.`,
       relatedOnly: RELATED_ONLY_FR,
       typo: "Cherchiez-vous…\u00a0?",
       typoWrittenAlike: {

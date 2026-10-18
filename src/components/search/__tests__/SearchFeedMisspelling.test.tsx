@@ -98,6 +98,43 @@ const konanaResults: SearchResult[] = [
   onanaFiche,
 ];
 
+const sanohResults: SearchResult[] = [
+  {
+    type: "patronyme",
+    id: "PAT_SANOU",
+    name: "Sanou",
+    exactMatch: true,
+    recordedIn: [{ fieldPath: "content.spellings[].spelling", text: "Sanoh" }],
+  },
+  {
+    type: "people",
+    id: "PPL_KURANKO",
+    name: "Kuranko",
+    exactMatch: false,
+    recordedIn: [
+      {
+        fieldPath: "content.organization.clanOrganization",
+        text: "Les clans Kagbo, Sanoh, Kaloko et Koroma jouent également des rôles importants.",
+      },
+    ],
+  },
+];
+
+function renderRecorded(query = "sanoh") {
+  return render(
+    <SearchFeed
+      query={query}
+      language="fr"
+      state="recorded"
+      results={sanohResults}
+      subjects={sanohResults}
+      leads={[]}
+      companions={noCompanions}
+      resultCount={sanohResults.length}
+    />
+  );
+}
+
 function renderMisspelling({
   query = "tchikaya",
   results = [tchicayaFiche],
@@ -743,5 +780,33 @@ describe("a lead reached through another of its forms", () => {
         /La fiche .+ donne/
       )
     ).toBeNull();
+  });
+});
+
+describe("a word recorded by more than one fiche", () => {
+  // @req REQ-125
+  it("lists each fiche equally and shows where the searched word is written", () => {
+    renderRecorded();
+
+    expect(screen.getByTestId("feed-block-verdict")).toHaveTextContent(
+      "Deux fiches donnent cette écriture."
+    );
+    expect(screen.queryByText(/Cherchiez-vous/)).toBeNull();
+    expect(screen.queryByText(/Sanogo/)).toBeNull();
+
+    const grid = within(screen.getByTestId("feed-block-fiches")).getByRole(
+      "list"
+    );
+    expect(grid).toHaveClass("grid-cols-1", "min-[768px]:grid-cols-2");
+    expect(grid.className).not.toMatch(/min-\[430px\]/);
+    expect(within(grid).getByRole("link", { name: /Sanou/ })).toHaveTextContent(
+      /La fiche Sanou donne aussi l’écriture.*Sanoh/
+    );
+    expect(
+      within(grid).getByRole("link", { name: /Kuranko/ })
+    ).toHaveTextContent(
+      /Les clans Kagbo, Sanoh, Kaloko et Koroma jouent également des rôles importants\./
+    );
+    expect(within(grid).getAllByText("Sanoh")).toHaveLength(2);
   });
 });

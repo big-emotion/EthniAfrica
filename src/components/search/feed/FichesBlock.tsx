@@ -14,6 +14,8 @@ interface FeedFicheItemBase {
   name: string;
   /** The card's third line. Absent, the card shows its eyebrow and name only. */
   meta?: string;
+  /** The searched spelling to emphasize inside a recorded-field sentence. */
+  highlight?: string;
   /** In the grouped lens: the fiche answers to the searched name. */
   onName?: boolean;
 }
@@ -56,6 +58,8 @@ export interface FichesBlockProps {
    * nom ».
    */
   foundFor?: string;
+  /** Recorded-term page: no shelf heading, with cards stacked through mobile. */
+  recorded?: boolean;
 }
 
 // @req REQ-180
@@ -68,6 +72,7 @@ export function FichesBlock({
   language = "fr",
   lens,
   foundFor,
+  recorded = false,
 }: FichesBlockProps) {
   const copy = searchFeedCopy[language];
 
@@ -117,6 +122,14 @@ export function FichesBlock({
             ) : null}
           </div>
         )}
+      </SearchFeedBlock>
+    );
+  }
+
+  if (recorded) {
+    return (
+      <SearchFeedBlock id="fiches" zone={zone}>
+        <FicheGrid items={items} reviewed={reviewed} recorded />
       </SearchFeedBlock>
     );
   }
@@ -191,12 +204,15 @@ function FicheGrid({
   items,
   reviewed,
   lens = false,
+  recorded = false,
 }: {
   items: FeedFicheItem[];
   reviewed: boolean;
   lens?: boolean;
+  recorded?: boolean;
 }) {
-  const columns = lens ? lensColumns(items.length) : shelfColumns(items.length);
+  const columns =
+    lens || recorded ? lensColumns(items.length) : shelfColumns(items.length);
   return (
     <ul className={`mt-afh-lg grid list-none gap-afh-lg ${columns}`}>
       {items.map((item) => {
@@ -217,7 +233,9 @@ function FicheGrid({
             </span>
             {item.meta ? (
               <span className="text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft">
-                {normalizeFrenchSpacing(item.meta)}
+                {item.highlight
+                  ? highlightText(item.meta, item.highlight)
+                  : normalizeFrenchSpacing(item.meta)}
               </span>
             ) : null}
           </>
@@ -266,5 +284,20 @@ function FicheGrid({
         );
       })}
     </ul>
+  );
+}
+
+function highlightText(text: string, term: string) {
+  const value = normalizeFrenchSpacing(text);
+  const index = value.toLocaleLowerCase().indexOf(term.toLocaleLowerCase());
+  if (index < 0 || term.length === 0) return value;
+  return (
+    <>
+      {value.slice(0, index)}
+      <strong className="font-bold text-afh-text">
+        {value.slice(index, index + term.length)}
+      </strong>
+      {value.slice(index + term.length)}
+    </>
   );
 }
