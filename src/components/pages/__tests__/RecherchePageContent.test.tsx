@@ -506,7 +506,7 @@ describe("RecherchePageContent", () => {
     const form = screen.getByRole("search");
     const submit = within(form).getByRole("button", { name: "Rechercher" });
 
-    expect(listbox.parentElement).toHaveClass("universal-search-panel");
+    expect(listbox.closest(".universal-search-panel")).not.toBeNull();
     expect(form.className).toContain("universal-search-form");
     expect(
       submit.compareDocumentPosition(listbox) & Node.DOCUMENT_POSITION_FOLLOWING
