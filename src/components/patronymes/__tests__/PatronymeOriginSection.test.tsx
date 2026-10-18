@@ -147,6 +147,73 @@ describe("PatronymeOriginSection (REQ-133)", () => {
     expect(screen.getByText(/Migration vers la côte/)).toBeInTheDocument();
   });
 
+  // @req REQ-133
+  it("folds each origin type under its title and account count without ranking the accounts", () => {
+    render(
+      <PatronymeOriginSection
+        language="fr"
+        patronyme={{
+          ...base,
+          content: {
+            origin: {
+              oralTraditions: [
+                {
+                  claim: "Récit transmis oralement.",
+                  claimStatus: "claimed",
+                  carrier: "Babou Condé",
+                  collection: "mediated",
+                  collector: "E. A. Bogacheva",
+                },
+                { claim: "Autre récit oral." },
+              ],
+              writtenChronicles: [{ claim: "Chronique conservée." }],
+              historicalSyntheses: [{ claim: "Migration ancienne proposée." }],
+              linguisticReconstructions: [
+                { claim: "Reconstruction proposée." },
+              ],
+            },
+          },
+        }}
+      />
+    );
+
+    const summaries = Array.from(
+      document.querySelectorAll<HTMLElement>(
+        "details.ea-form-readings > summary"
+      )
+    );
+    expect(summaries.map((summary) => summary.textContent)).toEqual([
+      expect.stringContaining("Tradition orale"),
+      expect.stringContaining("Chronique écrite"),
+      expect.stringContaining("Synthèse historique"),
+      expect.stringContaining("Reconstruction linguistique"),
+    ]);
+    expect(summaries.map((summary) => summary.textContent)).toEqual([
+      expect.stringContaining("2 récits"),
+      expect.stringContaining("1 récit"),
+      expect.stringContaining("1 récit"),
+      expect.stringContaining("1 récit"),
+    ]);
+    expect(
+      summaries.every(
+        (summary) => summary.parentElement?.hasAttribute("open") === false
+      )
+    ).toBe(true);
+
+    // Each account remains available in its own type; oral attribution and
+    // uncertainty survive the fold and are not presented as a preferred type.
+    expect(screen.getByText(/Récit transmis oralement/)).toHaveTextContent(
+      "Revendiquée"
+    );
+    expect(screen.getByText(/Récit transmis oralement/)).toHaveTextContent(
+      "Babou Condé"
+    );
+    expect(screen.getByText(/Autre récit oral/)).toBeInTheDocument();
+    expect(screen.getByText(/Chronique conservée/)).toBeInTheDocument();
+    expect(screen.getByText(/Migration ancienne proposée/)).toBeInTheDocument();
+    expect(screen.getByText(/Reconstruction proposée/)).toBeInTheDocument();
+  });
+
   // An account is shown with the carrier and collection it was recorded with,
   // and no word the record did not use (audit finding C10).
   // @req REQ-133

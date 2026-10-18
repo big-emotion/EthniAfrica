@@ -413,9 +413,10 @@ describe("the answer-card fields keep the rules they had in a name record", () =
 describe("ficheNameHistory", () => {
   // @req REQ-196
   it("returns the parsed block a fiche declares", () => {
-    expect(ficheNameHistory({ nameHistory: nameHistory() }, "PPL_X")).toEqual(
-      nameHistory()
-    );
+    expect(ficheNameHistory({ nameHistory: nameHistory() }, "PPL_X")).toEqual({
+      ...nameHistory(),
+      originExplained: true,
+    });
   });
 
   // @req REQ-196

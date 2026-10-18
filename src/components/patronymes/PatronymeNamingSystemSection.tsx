@@ -2,7 +2,6 @@ import { DossierLinks } from "@/components/dossiers/DossierLinks";
 import type { PublicPatronyme } from "@/api/v2/schemas/patronymes";
 import { FicheFieldList, type FicheField } from "@/components/fiche/FicheProse";
 import { FicheSection } from "@/components/fiche/FicheSection";
-import { FieldProvenanceMarker } from "@/components/fiche/FieldProvenanceMarker";
 import {
   readDesignatedSocialUnit,
   readGaps,
@@ -15,9 +14,15 @@ import {
 // Server-only here, so the map asset behind the names never reaches the
 // browser. It is the resolver that maps SSD onto the asset's SDS.
 import { getAdmin0NameFr } from "@/lib/atlas/overlays";
-import { resolveChapter } from "@/lib/fieldProvenance";
 import { getTranslation } from "@/lib/translations";
 import type { Language } from "@/types/shared";
+
+function withoutDiacritics(value: string): string {
+  return value
+    .normalize("NFD")
+    .replace(/\p{Diacritic}/gu, "")
+    .toLocaleLowerCase("fr");
+}
 
 /**
  * AC1: states the naming system (in the header — `PatronymeFicheTitle`) and
@@ -37,23 +42,16 @@ export function PatronymeNamingSystemSection({
 }) {
   const t = getTranslation(language).patronymes;
   const { content, nameSystem, casteOrSocialFunction } = patronyme;
+  const gaps = new Set(readGaps(content).map((gap) => gap.fieldPath));
 
   const spellings = readSpellings(content);
   const transmissionMode = readTransmissionMode(content);
   const designatedSocialUnit = readDesignatedSocialUnit(content);
-  const gaps = readGaps(content);
-
-  /** The editor's own wording for an empty field, when they wrote one. */
-  const gapNode = (fieldPath: string) => {
-    const chapter = resolveChapter("name", fieldPath, null, gaps);
-    return chapter.state === "documented-gap" ? (
-      <FieldProvenanceMarker
-        state={chapter.state}
-        reason={chapter.reason}
-        language={language}
-      />
-    ) : undefined;
-  };
+  const currentName = patronyme.nameHistory?.names.find(
+    (name) =>
+      withoutDiacritics(name.nameText) === withoutDiacritics(patronyme.nameMain)
+  );
+  const equivalents = currentName?.equivalents ?? [];
 
   const isTotemicClan = nameSystem === "totemic_clan";
   const isNisba = nameSystem === "nisba";
@@ -66,74 +64,98 @@ export function PatronymeNamingSystemSection({
     : [];
   const nisbaSubtype = isNisba ? readNisbaSubtype(content) : null;
 
-  const fields: FicheField[] = [
+  const fieldsWithPaths: Array<{ fieldPath: string; field: FicheField }> = [
     {
-      label: t.casteOrSocialFunctionLabel,
-      prose: casteOrSocialFunction,
-      node: casteOrSocialFunction
-        ? undefined
-        : gapNode("casteOrSocialFunction"),
+      fieldPath: "casteOrSocialFunction",
+      field: {
+        label: t.casteOrSocialFunctionLabel,
+        prose: casteOrSocialFunction,
+      },
     },
     {
-      label: t.attestedFormsTitle,
-      node:
-        spellings.length > 0 ? (
-          <ul className="afh-prose-list">
-            {spellings.map((form) => (
-              <li key={form.spelling}>
-                <strong>{form.spelling}</strong>
-                {form.countryIds.length > 0 ? (
-                  <span>
-                    {" — "}
-                    {t.spellingAttestedIn(
-                      form.countryIds.map((id) => getAdmin0NameFr(id) ?? id)
-                    )}
-                  </span>
-                ) : null}
-              </li>
-            ))}
-          </ul>
-        ) : (
-          gapNode("spellings")
-        ),
+      fieldPath: "spellings",
+      field: {
+        label: t.attestedFormsTitle,
+        node:
+          spellings.length > 0 ? (
+            <ul className="afh-prose-list">
+              {spellings.map((form) => (
+                <li key={form.spelling}>
+                  <strong>{form.spelling}</strong>
+                  {form.countryIds.length > 0 ? (
+                    <span>
+                      {" — "}
+                      {t.spellingAttestedIn(
+                        form.countryIds.map((id) => getAdmin0NameFr(id) ?? id)
+                      )}
+                    </span>
+                  ) : null}
+                </li>
+              ))}
+            </ul>
+          ) : undefined,
+      },
     },
     {
-      label: t.transmissionModeLabel,
-      prose: transmissionMode
-        ? t.transmissionModeLabels[transmissionMode]
-        : null,
-      node: transmissionMode ? undefined : gapNode("transmissionMode"),
+      fieldPath: "equivalents",
+      field: {
+        label: t.equivalentsLabel,
+        node:
+          equivalents.length > 0 ? (
+            <ul className="afh-prose-list">
+              {equivalents.map((equivalent, index) => (
+                <li key={`${equivalent}-${index}`}>{equivalent}</li>
+              ))}
+            </ul>
+          ) : undefined,
+      },
     },
     {
-      label: t.designatedSocialUnitLabel,
-      prose: designatedSocialUnit
-        ? t.designatedSocialUnitLabels[designatedSocialUnit]
-        : null,
-      node: designatedSocialUnit ? undefined : gapNode("designatedSocialUnit"),
+      fieldPath: "transmissionMode",
+      field: {
+        label: t.transmissionModeLabel,
+        prose: transmissionMode
+          ? t.transmissionModeLabels[transmissionMode]
+          : null,
+      },
     },
     {
-      label: t.totemicFoodProhibitionLabel,
-      prose: totemicFoodProhibition,
-      node:
-        !isTotemicClan || totemicFoodProhibition
-          ? undefined
-          : gapNode("totemicFoodProhibition"),
+      fieldPath: "designatedSocialUnit",
+      field: {
+        label: t.designatedSocialUnitLabel,
+        prose: designatedSocialUnit
+          ? t.designatedSocialUnitLabels[designatedSocialUnit]
+          : null,
+      },
     },
     {
-      label: t.permittedGivenNamesLabel,
-      prose:
-        permittedGivenNames.length > 0 ? permittedGivenNames.join(", ") : null,
-      node:
-        !isTotemicClan || permittedGivenNames.length > 0
-          ? undefined
-          : gapNode("permittedGivenNames"),
+      fieldPath: "totemicFoodProhibition",
+      field: {
+        label: t.totemicFoodProhibitionLabel,
+        prose: totemicFoodProhibition,
+      },
     },
     {
-      label: t.nisbaSubtypeLabel,
-      prose: nisbaSubtype ? t.nisbaSubtypeLabels[nisbaSubtype] : null,
-      node: !isNisba || nisbaSubtype ? undefined : gapNode("nisbaSubtype"),
+      fieldPath: "permittedGivenNames",
+      field: {
+        label: t.permittedGivenNamesLabel,
+        prose:
+          permittedGivenNames.length > 0
+            ? permittedGivenNames.join(", ")
+            : null,
+      },
+    },
+    {
+      fieldPath: "nisbaSubtype",
+      field: {
+        label: t.nisbaSubtypeLabel,
+        prose: nisbaSubtype ? t.nisbaSubtypeLabels[nisbaSubtype] : null,
+      },
     },
   ];
+  const fields = fieldsWithPaths
+    .filter(({ fieldPath }) => !gaps.has(fieldPath))
+    .map(({ field }) => field);
 
   return (
     <FicheSection title={t.nameSystemSectionTitle}>

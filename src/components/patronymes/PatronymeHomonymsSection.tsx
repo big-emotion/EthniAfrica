@@ -35,12 +35,14 @@ export function PatronymeHomonymsSection({
     readGaps(patronyme.content)
   );
 
+  if (homonyms.length === 0 && chapter.state === "documented-gap") return null;
+
   return (
     <FicheSection title={t.homonymsTitle} note={t.homonymsNote}>
       {homonyms.length > 0 ? (
         <ul className="afh-prose-list">
-          {homonyms.map((homonym) => (
-            <li key={homonym.label}>
+          {homonyms.map((homonym, index) => (
+            <li key={`${homonym.label}-${index}`}>
               {homonym.label}
               {homonym.entityType ? <> ({homonym.entityType})</> : null}
               {homonym.distinction ? <> — {homonym.distinction}</> : null}

@@ -399,7 +399,7 @@ describe("ftsSearchHandler — words", () => {
     wordLanguage: "fra",
     definition: "Un mot.",
     content: {},
-    nameHistory: { summary: "s", names: [] },
+    nameHistory: { summary: "s", originExplained: true, names: [] },
     relevance: 1,
     exactMatch: true,
     normalizedScore: 1,

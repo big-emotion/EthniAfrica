@@ -29,6 +29,7 @@ const fr = {
   },
   casteOrSocialFunctionLabel: "Caste ou fonction sociale",
   attestedFormsTitle: "Orthographes trouvées dans les sources",
+  equivalentsLabel: "Équivalents chez d'autres peuples",
   spellingAttestedIn: (countries: string[]) =>
     countries.length === 1
       ? `attestée dans ce pays : ${countries[0]}`
@@ -51,6 +52,8 @@ const fr = {
   originHistoricalSynthesesLabel: "Synthèse historique",
   originLinguisticReconstructionsLabel: "Reconstruction linguistique",
   originClaimStatusLabels: PATRONYME_VOCABULARY.fr.originClaimStatus,
+  originAccountCount: (count: number) =>
+    `${count} ${count === 1 ? "récit" : "récits"}`,
   // Attributed to its carrier rather than stated as a bare fact: an oral
   // chain of transmission is the source, and a page that dropped that
   // attribution would present one carrier's telling as our own claim.
@@ -69,7 +72,34 @@ const fr = {
     sanankuya: "parenté à plaisanterie mandingue",
   },
   allianceTypeFallback: "Alliance documentée",
+  allianceCountWords: [
+    "zéro",
+    "un",
+    "deux",
+    "trois",
+    "quatre",
+    "cinq",
+    "six",
+    "sept",
+    "huit",
+    "neuf",
+    "dix",
+  ],
+  allianceGroupDescription: (count: number, type: string, gloss: string) =>
+    count === 1
+      ? `Le pacte de ce nom est un ${type}, ${gloss} :`
+      : `Les ${fr.allianceCountWords[count] ?? count} pactes de ce nom sont des ${type}, ${gloss} :`,
+  allianceUnknownTerm: (term: string) =>
+    `Les sources désignent ces pactes sous le terme « ${term} » :`,
   homonymsTitle: "Homonymes",
+  gapWording: {
+    origin: "l’origine de ce nom",
+    alliances: "les noms qui lui sont liés",
+    casteOrSocialFunction: "sa fonction sociale",
+    transmissionMode: "son mode de transmission",
+    homonyms: "les autres noms de même forme",
+    bearers: "le nombre de personnes qui le portent",
+  },
   homonymsNote:
     "Ce que la même chaîne de lettres désigne d'autre — un peuple, un lieu, un autre nom — sans lien démontré avec celui-ci. La liste évite qu'une ressemblance de forme se lise comme une filiation.",
   associationsTitle: "Peuples et pays concernés",

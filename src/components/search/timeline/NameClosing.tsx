@@ -446,7 +446,17 @@ export function NameFicheSourcesBlock({
       <p className="text-afh-small leading-[1.6] text-afh-text-soft">
         {single ? (
           <Named
-            text={copy.sourcesLead(sources, every.length, single.nameText)}
+            text={
+              subjectType === "patronyme" && history.originExplained === false
+                ? copy.fiche.sourcesLead(
+                    sources,
+                    every.length,
+                    names.length,
+                    subjectType,
+                    false
+                  )
+                : copy.sourcesLead(sources, every.length, single.nameText)
+            }
             forms={[single.nameText]}
           />
         ) : (
@@ -454,7 +464,8 @@ export function NameFicheSourcesBlock({
             sources,
             every.length,
             names.length,
-            subjectType
+            subjectType,
+            history.originExplained
           )
         )}
       </p>

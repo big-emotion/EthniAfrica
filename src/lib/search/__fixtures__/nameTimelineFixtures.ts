@@ -42,6 +42,7 @@ const MIMPONGO: Source = {
 export const LINGALA_HISTORY: NameHistory = {
   summary:
     "Le nom lingala désigne une langue du bassin du Congo, que beaucoup de ses locuteurs appellent aussi mangala. Elle a porté d'autres noms : Bangala, et avant lui bobangi.",
+  originExplained: true,
   names: [
     {
       nameText: "Lingala",
@@ -172,6 +173,7 @@ const BA: Source = {
 export const PEUL_HISTORY: NameHistory = {
   summary:
     "Le nom Peul désigne un peuple qui se nomme lui-même Fulɓe, et Pullo pour une seule personne.",
+  originExplained: true,
   names: [
     {
       nameText: "Fulɓe",
