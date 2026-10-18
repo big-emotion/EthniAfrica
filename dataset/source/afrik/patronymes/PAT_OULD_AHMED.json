@@ -89,5 +89,96 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Ould Ahmed à un peuple en Mauritanie. Nous n'avons pas encore consulté de source consacrée à ce nom. Les formes « Ould X » et « Ahl X » indiquent d'abord une filiation ou une maison. Elles ne suffisent pas à identifier une tribu ou un peuple."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ould Ahmed veut dire « fils d'Ahmed » : ould est le mot hassaniya pour « fils ». Chez les Maures de Mauritanie, il dit de qui une personne est le fils, non à quelle famille elle appartient. Nous présentons plus bas ce qu'en disent les sources.",
+    "names": [
+      {
+        "nameText": "Ould Ahmed",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mey",
+        "namedBy": null,
+        "shortLine": "« Fils d'Ahmed » : chez les Maures, la marque de filiation suivie du nom du père.",
+        "periodLabel": "Écrit dès 1910",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ould Ahmed se lit « fils d'Ahmed » : ould veut dire « fils, enfant » en hassaniya, la langue des Maures, selon René Basset. Il nomme donc le père d'une personne, et non une famille.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Mission au Sénégal, tome I, fascicule II : notes sur le hassania",
+                "author": "René Basset",
+                "year": 1910,
+                "url": "https://archive.org/details/f2missionausng01bass",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 360",
+                "notes": "Paris, Ernest Leroux, Publications de la Faculté des lettres d'Alger ; exemplaire numérisé sur archive.org, daté de 1910 par sa notice. Le hassania, ou hassaniya, est la langue des Maures. Lu le 18 octobre 2026. Page 360, lexique hassania-français : « ould, pl. aoûlâd : fils, enfant »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ould Ahmed revient souvent chez Paul Marty, qui décrit en 1921 les tribus maures du Brakna, dans des chaînes de filiation comme « Eli ould Ahmed ould Omar ». Au pluriel, Oulad Ahmed, « les fils d'Ahmed », y nomme aussi une tribu maure, alliée des gens du Lao.",
+            "sources": [
+              {
+                "title": "Études sur l'Islam et les tribus maures : les Brakna",
+                "author": "Paul Marty",
+                "year": 1921,
+                "url": "https://archive.org/details/tudessurlislamet00mart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 21, 297",
+                "notes": "Paris, Ernest Leroux, 1921 ; exemplaire numérisé sur archive.org, lu le 18 octobre 2026. L'auteur est un officier interprète de l'administration coloniale ; il est cité pour ce qu'il rapporte. Page 21 : la descendance d'un ancêtre des Brakna « se trouve représentée par des femmes et par Eli ould Ahmed ould Omar ». Page 297 : les gens du Lao et les Aleybé étaient « les alliés des hassanes Oulad Normach et Oulad Ahmed et des marabouts Kounta »."
+              },
+              {
+                "title": "Mission au Sénégal, tome I, fascicule II : notes sur le hassania",
+                "author": "René Basset",
+                "year": 1910,
+                "url": "https://archive.org/details/f2missionausng01bass",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 360",
+                "notes": "Paris, Ernest Leroux, Publications de la Faculté des lettres d'Alger ; exemplaire numérisé sur archive.org, daté de 1910 par sa notice. Le hassania, ou hassaniya, est la langue des Maures. Lu le 18 octobre 2026. Page 360, lexique hassania-français : « ould, pl. aoûlâd : fils, enfant »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1910,
+              "to": 1910,
+              "label": "Publié en 1910"
+            },
+            "statement": "Le nom Ould Ahmed apparaît par écrit chez René Basset, dans une note sur l'émir de l'Adrar, « Mokhtar Ould Ahmed Ould Aida Ould Otsman » : Mokhtar, fils d'Ahmed, fils d'Aida, fils d'Otsman. Le pouvoir est alors exercé par son fils, « Ahmed Ould Mokhtar ». C'est la plus ancienne trace de ce nom que le projet connaît ; la façon de se nommer qu'il suit est plus ancienne.",
+            "formAsWritten": "Ould Ahmed",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Mission au Sénégal, tome I, fascicule II : notes sur le hassania",
+                "author": "René Basset",
+                "year": 1910,
+                "url": "https://archive.org/details/f2missionausng01bass",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 374",
+                "notes": "Paris, Ernest Leroux, Publications de la Faculté des lettres d'Alger ; exemplaire numérisé sur archive.org, daté de 1910 par sa notice. Le hassania, ou hassaniya, est la langue des Maures. Lu le 18 octobre 2026. Page 374, note 3, lue sur l'image de la page imprimée : « L'émir de l'Adrar était Mokhtar Ould Ahmed Ould Aida Ould Otsman, mais le pouvoir était exercé par son fils Ahmed Ould Mokhtar »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
