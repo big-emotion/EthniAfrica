@@ -1,6 +1,6 @@
 ---
 title: "Self-names to verify through oral sources (« à vérifier par sources orales »)"
-status: "ruled 2026-10-10, waves 3, 4, 5, 6 and 8 added 2026-10-11, wave 12 added 2026-10-12 — kept as they are until an oral or fieldwork pass"
+status: "ruled 2026-10-10, waves 3, 4, 5, 6 and 8 added 2026-10-11, wave 12 added 2026-10-12, wave 24 added 2026-10-18 — kept as they are until an oral or fieldwork pass"
 related:
   - docs/editorial/doctrine.md
   - docs/editorial/strategy/colonial-periods.md
@@ -114,6 +114,16 @@ hand. The operator ruled to keep them and to check each one orally.
 | `PPL_TAIZI`  | Tajuasohn | a source stating the people use the name; ISO 639-3 (`tja`) and Glottolog give it only as the language's name |
 | `PPL_GIZIGA` | Marva     | the source itself: J. Lukas (1970) is read second-hand, through the community site mandaras.info              |
 | `PPL_MARGI`  | Margyi    | the source itself: Hoffmann (1963) is read second-hand, through the community site mandaras.info              |
+
+## Wave 24 of the long tail — ruled 2026-10-18
+
+The self-name rests on the title of a thesis by an author from the people,
+not on a source saying the people call themselves so. The operator ruled to
+keep it and to check it orally.
+
+| Fiche        | Name  | What the source gives, and what is missing                                                                                                                                             |
+| ------------ | ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `PPL_WIYANA` | Winye | the close form Winien in the title of S. Damoué's maîtrise thesis (1983), read in Jacob's bibliography (2007, pp. 24 and 252); a source stating the people use the name for themselves |
 
 ## Related case: Bilād Ṣinqīṭ (`MRT`)
 

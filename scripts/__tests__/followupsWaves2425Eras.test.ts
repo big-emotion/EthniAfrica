@@ -149,3 +149,45 @@ describe("era rulings of 2026-10-18 on waves 24 and 25", () => {
     expect(doc).toMatch(/Letsie/);
   });
 });
+
+describe("evidence rulings of 2026-10-18 on waves 24 and 25", () => {
+  // @req REQ-178
+  it("records the evidence rulings in the priority-core file", () => {
+    const doc = readDoc(
+      "docs/editorial/strategy/name-history-priority-core.md"
+    );
+    const rulings = doc.slice(doc.indexOf("## Rulings of 2026-10-18"));
+
+    expect(doc).toMatch(/## Rulings of 2026-10-18/);
+    for (const subject of [
+      "Fadashi",
+      "Rapportée en 2019",
+      "Winye",
+      "nanuus",
+      "Imazighen",
+      "selfNameUnknown",
+      "Purchas",
+      "Havyarimana",
+      "Waberi",
+      "Mathebula",
+      "Liesegang",
+      "Mondlane",
+      "Kagbo",
+      "Kuvale",
+      "Kigozi",
+      "Migration Partnership Facility",
+    ]) {
+      expect(rulings).toContain(subject);
+    }
+  });
+
+  // @req REQ-178
+  it("adds Winye to the oral verification list", () => {
+    const doc = readDoc(
+      "docs/editorial/strategy/self-names-to-verify-orally.md"
+    );
+
+    expect(doc).toContain("Winye");
+    expect(doc).toContain("Damoué");
+  });
+});
