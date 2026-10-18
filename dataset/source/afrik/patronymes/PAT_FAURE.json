@@ -92,5 +92,92 @@
       "fieldPath": "homonyms",
       "reason": "les résultats exacts « Faure », le catalogue des Seychelles National Archives, le Family Tree Project et les recherches patrimoniales décrites par O'Gorman n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Faure est un nom de famille porté aux Seychelles, où il figure dans les registres de mariage de Mahé dès 1817. En français, il désignerait d'abord un forgeron, ou une personne venue d'un lieu du sud de la France ; on ne sait pas avec certitude quelle explication vaut pour les familles seychelloises. Nous présentons ces explications plus bas.",
+    "names": [
+      {
+        "nameText": "Faure",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Un nom de famille des Seychelles, écrit à Mahé dès 1817 ; en français, il désignerait un forgeron.",
+        "periodLabel": "Écrit à Mahé dès 1817",
+        "accounts": [
+          {
+            "period": {
+              "from": 1925,
+              "to": 2022,
+              "label": "Proposé en 1925, repris en 2022"
+            },
+            "statement": "Le nom Faure serait, en français, un nom de métier qui désignait un forgeron. Il viendrait, comme Fabre, Favre et Fèvre, du latin faber, « forgeron », et serait la forme du Plateau central, sauf son sud, et du sud du Dauphiné, selon Albert Dauzat. Le dictionnaire des noms de famille dirigé par Patrick Hanks en fait aussi le nom d'un forgeron ou d'un ouvrier du fer.",
+            "hypothesisGroup": "origine du nom Faure",
+            "sources": [
+              {
+                "title": "Les noms de personnes : origine et évolution",
+                "author": "Albert Dauzat",
+                "year": 1925,
+                "url": "https://archive.org/details/dauzatlesnomsdepersonnesorigine",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 75, 118",
+                "notes": "Paris, Librairie Delagrave, 1925, exemplaire numérisé par Google et déposé sur Internet Archive. Lu le 18 octobre 2026 ; la page 75 a été vue en image. Page 75, page d'ouverture du chapitre III, qui ne porte pas de numéro et précède la page 76 (l'index renvoie à la page 76) : « Fèvre ou Faure (forgeron) ». Page 118, sur les représentants du latin faber : « les Faure au Plateau Central (sauf le sud) et au Dauphiné méridional ». L'auteur traite des noms de famille de France ; il ne parle pas des Seychelles."
+              },
+              {
+                "title": "Faure Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/faure?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e édition, Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 18 octobre 2026 dans la traduction française que le site affiche. La notice fait de Faure, également écrit Fauré, un nom français de métier pour un forgeron ou un ferronnier, tiré d'une forme régionale de fèvre (renvoi à Lefevre), et probablement aussi un nom d'habitation tiré de Du Faure ou La Faure, nom de plusieurs endroits du sud de la France. Elle ne parle pas des Seychelles."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "statement": "Le nom Faure viendrait aussi, probablement, de lieux du sud de la France appelés Du Faure ou La Faure, et désignerait d'abord une personne qui en venait, selon le dictionnaire des noms de famille dirigé par Patrick Hanks.",
+            "hypothesisGroup": "origine du nom Faure",
+            "sources": [
+              {
+                "title": "Faure Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/faure?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e édition, Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 18 octobre 2026 dans la traduction française que le site affiche. Après le nom de métier, la notice ajoute : « Probablement aussi un nom d'habitation du Faure et du La Faure », « le nom de plusieurs endroits dans le sud de la France »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1817,
+              "to": 1817,
+              "label": "1817"
+            },
+            "era": "colonial",
+            "statement": "Le nom Faure figure comme nom de famille dans les tables des mariages de Mahé, aux Seychelles, à partir de 1817, selon le relevé du Cercle de généalogie Maurice-Rodrigues. C'est la plus ancienne trace de ce nom aux Seychelles que le projet connaît ; elle ne dit pas d'où venaient les familles qui le portaient.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Mahé [Seychelles] : mariages, table des patronymes en FAU",
+                "author": "Cercle de Généalogie Maurice-Rodrigues",
+                "year": null,
+                "url": "https://cgmrgenealogie.org/tab_mari.php/Mah%C3%A9+%5BSEYCHELLES%5D/_FAU",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Base de données d'une association de généalogie, qui dépouille les tables et actes d'état civil, les registres paroissiaux et les registres d'inhumation. Lue le 18 octobre 2026. Le patronyme FAURE y figure dans les mariages de Mahé pour la période 1817-1901, avec 5 et 9 mentions dans deux colonnes, « Intervenant 1 » et « Intervenant 2 », que la page ne définit pas. Le détail des actes n'a pas été lu."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
