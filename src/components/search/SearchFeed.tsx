@@ -777,13 +777,19 @@ export function SearchFeed({
               confesses ? (
                 <SearchFeedContributionAction
                   language={language}
-                  target={contributionTarget}
+                  // The form only displays fieldLabel; the request carries the
+                  // type, id and fieldPath, which stay as they were. Without
+                  // it the form no longer prints « Nous nous sommes trompés ? »,
+                  // the question brief 12 part A removed from this page.
+                  target={{ ...contributionTarget, fieldLabel: undefined }}
                   label={answerCopy.invitationAction}
                   preferredKind="contribution"
                   variant="outline"
-                  // Board search-unknown-430 (`.ea-owed-action`): ink text at
-                  // the button's own medium weight, on the accent tint.
-                  className="min-h-11 border-[color:var(--accent)] bg-[color:var(--accent-tint)] py-0 text-afh-text hover:bg-[color:var(--accent-tint)] hover:text-afh-text hover:brightness-95"
+                  // Board search-unknown-430 (`.ea-owed-action`): dark ink at
+                  // the button's own medium weight, on the accent tint. The
+                  // tint stays light at night while --afh-text turns light, so
+                  // the ink is --accent-foreground, dark in both themes.
+                  className="min-h-11 border-[color:var(--accent)] bg-[color:var(--accent-tint)] py-0 text-[color:var(--accent-foreground)] hover:bg-[color:var(--accent-tint)] hover:text-[color:var(--accent-foreground)] hover:brightness-95"
                 />
               ) : undefined
             }
