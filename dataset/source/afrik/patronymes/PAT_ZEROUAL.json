@@ -10,19 +10,39 @@
   "spellings": [
     {
       "spelling": "Zeroual",
-      "attestations": [{ "countryId": "DZA", "sourceRefs": ["zeroual-mosta"] }]
+      "attestations": [
+        {
+          "countryId": "DZA",
+          "sourceRefs": ["zeroual-mosta"]
+        }
+      ]
     },
     {
       "spelling": "Béni Zeroual",
-      "attestations": [{ "countryId": "DZA", "sourceRefs": ["zeroual-mosta"] }]
+      "attestations": [
+        {
+          "countryId": "DZA",
+          "sourceRefs": ["zeroual-mosta"]
+        }
+      ]
     },
     {
       "spelling": "Azerwal",
-      "attestations": [{ "countryId": "MAR", "sourceRefs": ["azerwal-ircam"] }]
+      "attestations": [
+        {
+          "countryId": "MAR",
+          "sourceRefs": ["azerwal-ircam"]
+        }
+      ]
     },
     {
       "spelling": "Ezzerwali",
-      "attestations": [{ "countryId": "MAR", "sourceRefs": ["azerwal-ircam"] }]
+      "attestations": [
+        {
+          "countryId": "MAR",
+          "sourceRefs": ["azerwal-ircam"]
+        }
+      ]
     }
   ],
   "transmissionMode": "other",
@@ -30,13 +50,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une thèse de Mostaganem rapproche Béni Zeroual d’Azerwal et rapporte l’analyse « personne aux yeux bleus ou verts ». Une publication de l’IRCAM confirme indépendamment qu’Azarwal signifie « aux yeux bleus » et relève la forme Ezzerwali ; le passage phonétique jusqu’à Zeroual n’est toutefois pas démontré en détail.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["zeroual-mosta", "azerwal-ircam"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -240,6 +255,37 @@
             "era": "modern",
             "statement": "Le nom Zeroual viendrait du berbère azerwal, qui désigne une personne aux yeux bleus ou verts : une tribu entière en aurait reçu le nom de Béni Zerwal, selon Daef Lahcen, cité dans une thèse sur les noms de Mostaganem. Au Maroc, l'Institut royal de la culture amazighe rattache de même le nom Ezzerwali à azarwal, « aux yeux bleus ».",
             "hypothesisGroup": "origine du nom Zeroual",
+            "sources": [
+              {
+                "title": "Étude diachronique des anthroponymes algériens : cas de la ville de Mostaganem",
+                "author": "Yamina Taibi-Maghraoui",
+                "year": 2017,
+                "url": "https://e-biblio.univ-mosta.dz/bitstream/handle/123456789/2368/Th%C3%A8se%20de%20Magheraoui.pdf?sequence=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 97-98",
+                "notes": "Thèse de doctorat, Université Abdelhamid Ibn Badis de Mostaganem, 2016-2017. Lu le 11 octobre 2026. Pages 97-98 : les Béni Zeroual de la plaine du Chélif, d'après Habib Tengour (1987), et leurs quatre saints, dont Sidi Ben Chaa, saint patron ; puis, d'après Daef Lahcen, « Azerwal » désigne « une personne aux yeux bleus ou verts », d'où les « Izerwalen » ou « Béni Zerwal » d'une tribu du Souss, que la thèse place « en Tunisie » alors que le Souss est au Maroc."
+              },
+              {
+                "title": "The Memory Imprint: Amazigh Landmarks in the National Culture",
+                "author": "Lhoussain Rachid",
+                "year": 2005,
+                "url": "https://biblio.ircam.ma/pmb/uploads/publications/71.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 98",
+                "notes": "Institut royal de la culture amazighe, série Traduction n° 6, 2005, traduction de Mohamed Ouakrime. Lu le 11 octobre 2026. Page 98, parmi des noms de famille marocains d'origine amazighe : « Ezzerwali : `Azarwal' means `blue-eyed' », et Tazerwalt, lieu de la province de Tiznit."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une thèse de Mostaganem rapproche Béni Zeroual d’Azerwal et rapporte l’analyse « personne aux yeux bleus ou verts ». Une publication de l’IRCAM confirme indépendamment qu’Azarwal signifie « aux yeux bleus » et relève la forme Ezzerwali ; le passage phonétique jusqu’à Zeroual n’est toutefois pas démontré en détail.",
+            "claimStatus": "claimed",
             "sources": [
               {
                 "title": "Étude diachronique des anthroponymes algériens : cas de la ville de Mostaganem",

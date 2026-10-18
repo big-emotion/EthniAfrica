@@ -22,13 +22,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Le bureau du Premier ministre de Somalie atteste Warsame comme dernier élément de la chaîne de noms Abdullahi Bidhan Warsame ; la page ne précise pas la relation généalogique exprimée par cet élément.",
-        "claimStatus": "established",
-        "sourceRefs": ["warsame-somalia-opm-2026"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -182,6 +177,26 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 15",
                 "notes": "Dictionnaire publié en 1897 par un missionnaire catholique. Lu le 12 octobre 2026 sur l'exemplaire numérisé de la bibliothèque de l'université Cornell, sur archive.org. Page 15, à l'entrée bahsi : « inanki Warsama wa side? », traduit « how is the son of Warsama? ». Le nom revient comme nom d'homme pages 30 et 111."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le bureau du Premier ministre de Somalie atteste Warsame comme dernier élément de la chaîne de noms Abdullahi Bidhan Warsame ; la page ne précise pas la relation généalogique exprimée par cet élément.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Abdullahi Bidhan Warsame — Minister of Energy and Water Resources",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://cabinet.gov.so/en/cabinet/abdullahi-bidhan-warsame",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Bureau du Premier ministre de la République fédérale de Somalie, page consultée intégralement. Elle identifie Abdullahi Bidhan Warsame comme ministre en exercice. Le porteur vivant n'est pas ajouté à bearers en l'absence d'auto-identification admissible."
               }
             ]
           }

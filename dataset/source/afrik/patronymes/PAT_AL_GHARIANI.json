@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L’étude sur la tribu et l’État en Libye explique que certaines désignations tribales proviennent de villes et cite Ghiryani, de Ghiryān. Cette attestation éclaire la variante al-Ghariani sans établir une généalogie unique pour tous ses porteurs.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["westminster-ghiryani"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -154,6 +149,27 @@
                 "source_kind": "academic",
                 "page": "p. 115",
                 "notes": "Thèse de doctorat, Université de Westminster, 2004, lue le 14 octobre 2026 dans le dépôt WestminsterResearch. Page 115 : certaines tribus libyennes tirent leur nom de villes, de pays ou de métiers, par exemple « Misräti (Misräta), Ghiryäni (Ghiryän), Zwäri (Zwära) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L’étude sur la tribu et l’État en Libye explique que certaines désignations tribales proviennent de villes et cite Ghiryani, de Ghiryān. Cette attestation éclaire la variante al-Ghariani sans établir une généalogie unique pour tous ses porteurs.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Tribe, Islam and State in Libya: Analytical Study of the Roots of the Libyan Tribal Society and Interaction up to the Qaramanli Rule (1711-1835)",
+                "author": "Faraj Najem",
+                "year": 2004,
+                "url": "https://westminsterresearch.westminster.ac.uk/download/926d7d076329ed28eba6c6893c17630fb1ec633a9e37b4a2ac4ea32394f484ed/19198678/Najem.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 216",
+                "notes": "Thèse de doctorat, Université de Westminster, 2004, lue le 14 octobre 2026 dans le dépôt WestminsterResearch. Page 216 : « Those Libyan names are household Tunisian until the present day, such as al-Taräbulsi, al-Tarhnni, al-Wirfilli, al-Ghriyani, al-Firjani, al-Rayyäni, al-Ghidämsi, al-Misräti [...] »."
               }
             ]
           }

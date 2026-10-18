@@ -41,13 +41,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Kahina Chalal classe Meziane parmi les variantes issues d’Ameziane par suppression de l’initiale a, article masculin berbère. Un second mémoire analyse Ameziane/Amezyan comme « petit, jeune », dérivé du verbe d’état kabyle imẓi « être jeune, être petit », et note son emploi comme prénom.",
-        "claimStatus": "established",
-        "sourceRefs": ["meziane-chalal", "ameziane-ummto"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -289,6 +284,37 @@
                 "source_kind": "academic",
                 "page": "p. 52",
                 "notes": "Mémoire de magister, Université Mouloud Mammeri de Tizi-Ouzou, 2016 ; lu en texte intégral le 14 octobre 2026. Les pages sont comptées dans le fichier PDF, qui ne porte pas de numéro imprimé. Les noms étudiés sont tirés des registres de naissances de l'état civil de Tizi-Ouzou, de 1889 à 2010. Page 52 : « Le registre de naissance 1889 ne contient que 14 patronymes », les autres étant illisibles ou perdus ; le tableau donne « Ameziane » parmi eux."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Kahina Chalal classe Meziane parmi les variantes issues d’Ameziane par suppression de l’initiale a, article masculin berbère. Un second mémoire analyse Ameziane/Amezyan comme « petit, jeune », dérivé du verbe d’état kabyle imẓi « être jeune, être petit », et note son emploi comme prénom.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Les anthroponymes algériens entre francisation et arabisation : étude historique et sociolinguistique d’un corpus kabyle (état civil de Tizi-Ouzou)",
+                "author": "Kahina Chalal",
+                "year": 2016,
+                "url": "https://dspace.ummto.dz/bitstream/handle/ummto/374/CHALAL%20Kahina%20TM.%20238.pdf?sequence=1&isAllowed=y",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 128",
+                "notes": "Mémoire de magister, Université Mouloud Mammeri de Tizi-Ouzou, 2016 ; lu en texte intégral le 14 octobre 2026. Les pages sont comptées dans le fichier PDF, qui ne porte pas de numéro imprimé. Les noms étudiés sont tirés des registres de naissances de l'état civil de Tizi-Ouzou, de 1889 à 2010. Page 128 : tableau du patronyme aməzjen, avec ses variantes Ameziane, Meziane, M'ziyène, Meziani, Mezini, Amiziane et Goumeziane."
+              },
+              {
+                "title": "Étude onomastique des anthroponymes de régions kabyles : Mezrara et Ait Ali Ou Mouhand",
+                "author": "Naima Amrani et Thileli Saidani",
+                "year": 2021,
+                "url": "https://dspace.ummto.dz/server/api/core/bitstreams/0b445207-b22e-4eb5-bbd0-985c5669c1a6/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 41-42",
+                "notes": "Mémoire de master, Université Mouloud Mammeri de Tizi-Ouzou, 2020-2021 ; lu en texte intégral le 14 octobre 2026. Pages 41-42, entrée « Ameziane [Amezyan] » : « la forme la plus utilisée est celle qui est amputée du « a » initial ». Les autrices citent Tidjet (2016 : 29)."
               }
             ]
           }

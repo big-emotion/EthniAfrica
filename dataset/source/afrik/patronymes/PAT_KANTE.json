@@ -11,73 +11,55 @@
     {
       "spelling": "Kanté",
       "attestations": [
-        { "countryId": "MLI", "sourceRefs": ["gha-iv-mali"] },
-        { "countryId": "GIN", "sourceRefs": ["donaldson-2020-nko"] }
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["gha-iv-mali"]
+        },
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["donaldson-2020-nko"]
+        }
       ]
     },
     {
       "spelling": "Kante",
       "attestations": [
-        { "countryId": "MLI", "sourceRefs": ["gha-iv-mali"] },
-        { "countryId": "GIN", "sourceRefs": ["charry-1996-jembe"] }
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["gha-iv-mali"]
+        },
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["charry-1996-jembe"]
+        }
       ]
     },
     {
       "spelling": "Kántɛ",
-      "attestations": [{ "countryId": "MLI", "sourceRefs": ["bamadaba-jamuw"] }]
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["bamadaba-jamuw"]
+        }
+      ]
     },
     {
       "spelling": "Kándɛ",
-      "attestations": [{ "countryId": "MLI", "sourceRefs": ["bamadaba-jamuw"] }]
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["bamadaba-jamuw"]
+        }
+      ]
     }
   ],
   "transmissionMode": "other",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [
-      {
-        "claim": "Les traditions mandingues font de Soumaoro Kanté le roi du Sosso que Soundiata affronte et défait. La version recueillie auprès du jeli de Djélibakoro couvre l'ensemble du cycle, de l'ascendance de Soundiata à la guerre contre Soumaoro, et c'est elle qui a fait connaître l'épopée hors du Manden.",
-        "claimStatus": "claimed",
-        "griot": "Mamoudou Kouyaté, jeli de Djélibakoro (Guinée), mort en 1967",
-        "transcription": "Recueilli à Djélibakoro en 1958 par Djibril Tamsir Niane ; Soundjata, ou L'épopée mandingue, Présence Africaine, 1960 ; édition anglaise Sundiata, an Epic of Old Mali, traduite par G. D. Pickett, Longman, 1965",
-        "sourceRefs": ["bulman-sunjata-checklist"]
-      },
-      {
-        "claim": "Le même affrontement est récité à Fadama, sur le Niandan, par le belentigui du lieu. Deux lignées de bardes, dans deux villages différents, transmettent donc le même nom et le même épisode : la figure de Soumaoro Kanté appartient à la tradition orale avant d'appartenir à une chronique.",
-        "claimStatus": "claimed",
-        "griot": "Babou Condé, belentigui de Fadama (Guinée), mort vers 1964",
-        "transcription": "Recueilli à Fadama en mars et avril 1963 par Camara Laye ; Le maître de la parole : Kouma Lafôlô Kouma, Plon, 1978",
-        "sourceRefs": ["bulman-sunjata-checklist"]
-      }
-    ],
+    "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Les Sosso étaient une fraction des Malinké, spécialisée dans le travail du fer, qui se distinguait par son hostilité à l'islam et son attachement aux traditions ancestrales. Les Kanté prirent le pouvoir au Sosso et au Kaniaga et y fondèrent une dynastie : le roi Kémoko unifia les deux vers la fin du XIIe siècle, et son fils Soumaoro, ou Soumanguourou, lui succéda. La suprématie du Sosso dura peu, de 1180 à 1230 environ.",
-        "claimStatus": "established",
-        "sourceRefs": ["gha-iv-mali"]
-      },
-      {
-        "claim": "Une autre figure de Soumaoro ressort des enquêtes menées auprès des forgerons Kanté eux-mêmes : il y aurait cherché à supprimer la traite soninké des captifs, menée avec la complicité des Malinké. La tradition lui attribue par ailleurs l'invention du balafon et du dan, la guitare à quatre cordes du chasseur.",
-        "claimStatus": "contested",
-        "sourceRefs": ["gha-iv-mali"]
-      },
-      {
-        "claim": "Kanté compte parmi les noms de lignées de forgerons, les numu, avec Camara et Doumbia, et les trois sont partie intégrante de l'épopée de Soundiata. L'ethnomusicologue qui l'énonce ajoute aussitôt sa réserve : en Afrique de l'Ouest, les noms de famille sont souvent des indices fiables de l'origine ethnique et sociale, mais la société est fluide et la généralisation demande prudence.",
-        "claimStatus": "established",
-        "sourceRefs": ["charry-1996-jembe"]
-      },
-      {
-        "claim": "Le dictionnaire des noms claniques attache à son entrée Kántɛ deux termes de statut, nùmu, le forgeron, et jèli, le musicien généalogiste, donne Kándɛ et Káane pour variantes, et enregistre Súmàoro comme équivalent de l'entrée. Le nom porte donc dans ce fichier à la fois le métier du fer et la mémoire du roi du Sosso.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["bamadaba-jamuw"]
-      },
-      {
-        "claim": "Solomana Kanté invente en 1949 le n'ko, alphabet destiné aux langues mandingues, après cinq années de recherche. Son approche tient toutes les variétés mandingues pour les dialectes d'une seule langue, à laquelle il donne le nom de n'ko et dont la forme la plus pure serait le maninka-mori parlé au Batè : c'est une tentative d'unification culturelle de l'ensemble mandé. Elle entre en contradiction avec les politiques officielles des pays voisins de la Guinée, qui alphabétisent chacun dans sa variante locale, bambara au Mali, dioula en Côte d'Ivoire et au Burkina Faso, mandinka au Sénégal.",
-        "claimStatus": "established",
-        "sourceRefs": ["vydrine-2010-nko", "donaldson-2020-nko"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -426,6 +408,158 @@
                 "source_kind": "archive",
                 "page": "p. 287, 297",
                 "notes": "Paris, Challamel, 1907. Lu le 11 octobre 2026 sur l'exemplaire numérisé d'archive.org. L'auteur est un administrateur colonial, à lire comme tel. Page 287 : Konaté, Konaré et Diara désignent selon l'auteur « la même tribu » ; « Je pense aussi que Konté et Kanté sont des formes dérivées ». Page 297 : « Les Konté ou Kanté nous paraissent proches parents des Konaté »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Les traditions mandingues font de Soumaoro Kanté le roi du Sosso que Soundiata affronte et défait. La version recueillie auprès du jeli de Djélibakoro couvre l'ensemble du cycle, de l'ascendance de Soundiata à la guerre contre Soumaoro, et c'est elle qui a fait connaître l'épopée hors du Manden.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "A Checklist of English and French Versions of the Sunjata Epic Published before the 21st Century",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://verbafricana.org/malinke-fr/griots/Bulman.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Bulman, Stephen ; version légèrement révisée d'un article paru dans History in Africa en 1997, mise en ligne sur le portail Verba Africana. Le relevé donne pour chaque version publiée le nom du récitant, le lieu et la date de la performance, le collecteur, le format et l'étendue du cycle couvert. Il nomme Mamoudou Kouyaté, mort en 1967, jeli de Djélibakoro en Guinée, enregistré sur place en 1958 par l'historien guinéen Djibril Tamsir Niane, dont la version couvre les cinq parties du cycle dont la guerre contre Soumaoro ; et Babou Condé, mort vers 1964, belentigui de Fadama, enregistré en mars et avril 1963 par Camara Laye.\nRecueilli à Djélibakoro en 1958 par Djibril Tamsir Niane ; Soundjata, ou L'épopée mandingue, Présence Africaine, 1960 ; édition anglaise Sundiata, an Epic of Old Mali, traduite par G. D. Pickett, Longman, 1965"
+              }
+            ],
+            "carrier": "Mamoudou Kouyaté, jeli de Djélibakoro (Guinée), mort en 1967"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le même affrontement est récité à Fadama, sur le Niandan, par le belentigui du lieu. Deux lignées de bardes, dans deux villages différents, transmettent donc le même nom et le même épisode : la figure de Soumaoro Kanté appartient à la tradition orale avant d'appartenir à une chronique.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "A Checklist of English and French Versions of the Sunjata Epic Published before the 21st Century",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://verbafricana.org/malinke-fr/griots/Bulman.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Bulman, Stephen ; version légèrement révisée d'un article paru dans History in Africa en 1997, mise en ligne sur le portail Verba Africana. Le relevé donne pour chaque version publiée le nom du récitant, le lieu et la date de la performance, le collecteur, le format et l'étendue du cycle couvert. Il nomme Mamoudou Kouyaté, mort en 1967, jeli de Djélibakoro en Guinée, enregistré sur place en 1958 par l'historien guinéen Djibril Tamsir Niane, dont la version couvre les cinq parties du cycle dont la guerre contre Soumaoro ; et Babou Condé, mort vers 1964, belentigui de Fadama, enregistré en mars et avril 1963 par Camara Laye.\nRecueilli à Djélibakoro en 1958 par Djibril Tamsir Niane ; Soundjata, ou L'épopée mandingue, Présence Africaine, 1960 ; édition anglaise Sundiata, an Epic of Old Mali, traduite par G. D. Pickett, Longman, 1965\nRecueilli à Fadama en mars et avril 1963 par Camara Laye ; Le maître de la parole : Kouma Lafôlô Kouma, Plon, 1978"
+              }
+            ],
+            "carrier": "Babou Condé, belentigui de Fadama (Guinée), mort vers 1964"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Les Sosso étaient une fraction des Malinké, spécialisée dans le travail du fer, qui se distinguait par son hostilité à l'islam et son attachement aux traditions ancestrales. Les Kanté prirent le pouvoir au Sosso et au Kaniaga et y fondèrent une dynastie : le roi Kémoko unifia les deux vers la fin du XIIe siècle, et son fils Soumaoro, ou Soumanguourou, lui succéda. La suprématie du Sosso dura peu, de 1180 à 1230 environ.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, volume IV : l'Afrique du XIIe au XVIe siècle",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, 1985, sous la direction de D. T. Niane ; édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Le chapitre 6, « Le Mali et la deuxième expansion manden » (D. T. Niane), date l'hégémonie sosoe de 1180 à 1230 (p. 149), décrit en note 18 les Sosoe comme une fraction des Maninka signalée par son hostilité à l'islam (p. 149), dit qu'ils n'étaient qu'un clan maninka spécialisé dans le travail du fer et situe leur capitale, Soso, dans la région de Koulikoro, à quatre-vingts kilomètres au nord de Bamako (p. 149), rapporte que les Kante prirent le dessus dans le Soso et le Kaniaga, que le roi Kemoko unifia les deux et que son fils Sumaoro lui succéda (p. 149), situe le règne de Sumaoro Kante entre 1200 et 1235 (p. 149) et rapporte enfin l'autre visage du roi qu'a révélé l'enquête auprès des forgerons kante, ainsi que l'invention du balafon et du dan qui lui est attribuée (p. 150). L'ouvrage est une synthèse savante et non une chronique."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une autre figure de Soumaoro ressort des enquêtes menées auprès des forgerons Kanté eux-mêmes : il y aurait cherché à supprimer la traite soninké des captifs, menée avec la complicité des Malinké. La tradition lui attribue par ailleurs l'invention du balafon et du dan, la guitare à quatre cordes du chasseur.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, volume IV : l'Afrique du XIIe au XVIe siècle",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, 1985, sous la direction de D. T. Niane ; édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Le chapitre 6, « Le Mali et la deuxième expansion manden » (D. T. Niane), date l'hégémonie sosoe de 1180 à 1230 (p. 149), décrit en note 18 les Sosoe comme une fraction des Maninka signalée par son hostilité à l'islam (p. 149), dit qu'ils n'étaient qu'un clan maninka spécialisé dans le travail du fer et situe leur capitale, Soso, dans la région de Koulikoro, à quatre-vingts kilomètres au nord de Bamako (p. 149), rapporte que les Kante prirent le dessus dans le Soso et le Kaniaga, que le roi Kemoko unifia les deux et que son fils Sumaoro lui succéda (p. 149), situe le règne de Sumaoro Kante entre 1200 et 1235 (p. 149) et rapporte enfin l'autre visage du roi qu'a révélé l'enquête auprès des forgerons kante, ainsi que l'invention du balafon et du dan qui lui est attribuée (p. 150). L'ouvrage est une synthèse savante et non une chronique."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Kanté compte parmi les noms de lignées de forgerons, les numu, avec Camara et Doumbia, et les trois sont partie intégrante de l'épopée de Soundiata. L'ethnomusicologue qui l'énonce ajoute aussitôt sa réserve : en Afrique de l'Ouest, les noms de famille sont souvent des indices fiables de l'origine ethnique et sociale, mais la société est fluide et la généralisation demande prudence.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "A Guide to the Jembe",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://echarry.web.wesleyan.edu/jembearticle/article.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Charry, Eric, Percussive Notes, volume 34, numéro 2, avril 1996, p. 66-72, version augmentée en ligne ; l'auteur est l'ethnomusicologue de Mande Music (University of Chicago Press, 2000). Article de revue spécialisée et non de revue à comité de lecture : il est cité ici pour l'attribution des noms de clan aux statuts sociaux mandingues, qu'il énonce nommément — Camara, Doumbia et Kanté pour les numu, Kouyaté et Diabaté pour les jeli, Kéita, Konaté, Koné et Traoré pour les horon —, et pour la réserve qu'il y attache. Il décrit également ce que fait un numu au-delà du métal, et nomme le roi du Sosso Soumanguourou Kanté d'après les traditions orales."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le dictionnaire des noms claniques attache à son entrée Kántɛ deux termes de statut, nùmu, le forgeron, et jèli, le musicien généalogiste, donne Kándɛ et Káane pour variantes, et enregistre Súmàoro comme équivalent de l'entrée. Le nom porte donc dans ce fichier à la fois le métier du fer et la mémoire du roi du Sosso.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrée Kántɛ",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence. Fichier complet consulté le 11 octobre 2026 : l'entrée Kántɛ, datée de 2013, donne les variantes Kándɛ et Káane, l'équivalent Súmàoro, les statuts nùmu (forgeron) et jèli (griot) et quatre marqueurs de peuple ; elle ne donne pas de sens au nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Solomana Kanté invente en 1949 le n'ko, alphabet destiné aux langues mandingues, après cinq années de recherche. Son approche tient toutes les variétés mandingues pour les dialectes d'une seule langue, à laquelle il donne le nom de n'ko et dont la forme la plus pure serait le maninka-mori parlé au Batè : c'est une tentative d'unification culturelle de l'ensemble mandé. Elle entre en contradiction avec les politiques officielles des pays voisins de la Guinée, qui alphabétisent chacun dans sa variante locale, bambara au Mali, dioula en Côte d'Ivoire et au Burkina Faso, mandinka au Sénégal.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Le Ńkó kɔ́dɔyidalan de Souleymane Kantè et la tradition lexicographique occidentale pour le mandingue",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://llacan.cnrs.fr/PDF/Mandenkan46/46vydrine.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Vydrine, Valentin, Mandenkan, numéro 46, 2010, p. 73-98 ; texte intégral en accès libre. L'auteur date l'invention de l'alphabet de 1949 et le dictionnaire n'ko de son inventeur de 1962, publié une trentaine d'années plus tard et augmenté par ses disciples. Il expose l'approche qui tient toutes les variétés mandingues pour les dialectes d'une seule langue et en donne aussi la limite : cette approche contredit les politiques d'alphabétisation officielles des pays voisins de la Guinée. Cité pour les deux à la fois."
+              },
+              {
+                "title": "The Role of Islam, Ajami writings, and educational reform in Sulemaana Kantè's N'ko",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.cambridge.org/core/journals/african-studies-review/article/role-of-islam-ajami-writings-and-educational-reform-in-sulemaana-kantes-nko/E6394B2D11A96EE6872CA621456E2D22",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Donaldson, Coleman, African Studies Review, volume 63, numéro 3, septembre 2020, p. 462-486. Donne les dates de l'inventeur du n'ko, 1922-1987, sa naissance au Batè dans l'actuelle Guinée, l'invention de l'alphabet en 1949 et la centaine d'ouvrages qu'il a écrits dans sa propre écriture. L'article orthographie son prénom Sulemaana ; on rencontre aussi Souleymane et Solomana, trois transcriptions d'un même nom, et la fiche retient la troisième."
               }
             ]
           }

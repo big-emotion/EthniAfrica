@@ -21,49 +21,10 @@
   "transmissionMode": "patrilineal",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [
-      {
-        "claim": "Le clan du Redunca se dit établi de tout temps dans la forêt de Mabira, en Kyagwe, et donne pour ancêtre Lutimba, qui s'y trouvait quand Kintu s'installa en Ouganda.",
-        "claimStatus": "claimed",
-        "griot": "Les chefs de clan et officiants baganda réunis pour Roscoe par Sir Apolo Kagwa, katikkiro du Buganda",
-        "transcription": "John Roscoe, The Baganda, Macmillan, 1911, chapitre VI « The Clans and their Totems ». Roscoe écrit dans sa préface avoir reçu « the principal men from each clan » plusieurs semaines durant, par l'entremise de Kagwa, et avoir consigné leurs récits ; les sections claniques rapportent donc ce que chaque clan dit de lui-même, au style indirect (« they assert », « they trace their origin to »).",
-        "sourceRefs": ["roscoe-1911-baganda"]
-      }
-    ],
-    "writtenChronicles": [
-      {
-        "claim": "Le totem principal (omuziro) de ce clan est le redunca (antilope des roseaux). Clan Banansangwa, l'un des cinq clans trouvés sur place à l'arrivée de Kintu.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["roscoe-1911-baganda", "buganda-heritage-clans"]
-      },
-      {
-        "claim": "Le totem secondaire (akabbiro) de ce clan est une antilope (njugulu), au rang nº 25 de la liste de Roscoe, qui glose lui-même le totem principal par « Roebuck » et non par le redunca.",
-        "claimStatus": "established",
-        "sourceRefs": ["roscoe-1911-baganda"]
-      },
-      {
-        "claim": "Dans la liste de Roscoe, le clan du Redunca porte la marque (a) : il faisait partie des clans qui n'étaient jamais autorisés à présenter un prince candidat au trône. Le roi pouvait épouser une femme du clan, mais l'appartenance maternelle en écartait l'enfant ; dans la plupart des cas les garçons nés de ces unions étaient tués à la naissance et seules les filles vivaient.",
-        "claimStatus": "established",
-        "sourceRefs": ["roscoe-1911-baganda"]
-      },
-      {
-        "claim": "L'éléphant tué, le clan extrayait le nerf de la défense, l'emportait au loin et l'enterrait en signalant le lieu : le fantôme de l'animal y étant réputé attaché, le malheur devait frapper qui l'enjamberait sans le savoir.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["roscoe-1911-baganda"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'ekika ganda est un clan totémique : chaque clan porte un totem principal (omuziro) et un totem secondaire (akabbiro), et le nom du clan est celui du totem.",
-        "claimStatus": "established",
-        "sourceRefs": ["roscoe-1911-baganda"]
-      },
-      {
-        "claim": "Le clan (ekika) se subdivise en branches (essiga) puis en sous-branches (enda), et s'ancre sur des tenures funéraires (obutaka) : trois générations inhumées en un lieu y fixent le droit du lignage, que le Kabaka lui-même se gardait de contester. La tête de clan porte un titre, et non un nom : le titre est celui du premier détenteur de la charge et passe au successeur.",
-        "claimStatus": "established",
-        "sourceRefs": ["roscoe-1911-baganda"]
-      }
-    ]
+    "oralTraditions": [],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -267,7 +228,7 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 168",
-                "notes": "Londres, Macmillan, 1911 ; exemplaire numérisé sur archive.org. Dans sa préface (p. x-xi), Roscoe, missionnaire, dit avoir recueilli ses informations chez Sir Apolo Kagwa, qui fit venir les anciens, les prêtres et « the principal men from each clan ». Section « The Reedbuck Clan » : le clan a toujours vécu dans la forêt de Mabira, au Kyagwe ; « Their forefather, Lutimba, was there when Kintu settled in Uganda ». Ethnographie de l'époque coloniale, citée ici pour ce qu'elle rapporte des clans. Lu le 11 octobre 2026."
+                "notes": "Londres, Macmillan, 1911 ; exemplaire numérisé sur archive.org. Dans sa préface (p. x-xi), Roscoe, missionnaire, dit avoir recueilli ses informations chez Sir Apolo Kagwa, qui fit venir les anciens, les prêtres et « the principal men from each clan ». Section « The Reedbuck Clan » : le clan a toujours vécu dans la forêt de Mabira, au Kyagwe ; « Their forefather, Lutimba, was there when Kintu settled in Uganda ». Ethnographie de l'époque coloniale, citée ici pour ce qu'elle rapporte des clans. Lu le 11 octobre 2026.\nJohn Roscoe, The Baganda, Macmillan, 1911, chapitre VI « The Clans and their Totems ». Roscoe écrit dans sa préface avoir reçu « the principal men from each clan » plusieurs semaines durant, par l'entremise de Kagwa, et avoir consigné leurs récits ; les sections claniques rapportent donc ce que chaque clan dit de lui-même, au style indirect (« they assert », « they trace their origin to »)."
               },
               {
                 "title": "Récit d’origine du clan du Redunca",
@@ -280,6 +241,143 @@
                 "carrier": "Les chefs du clan du Redunca réunis par Apolo Kagwa",
                 "place": "Kyagwe, Buganda",
                 "notes": "Récit rapporté par John Roscoe dans The Baganda, 1911, chapitre VI, « The Clans and their Totems ». Roscoe indique avoir recueilli les récits des chefs de clan par l’intermédiaire d’Apolo Kagwa."
+              }
+            ],
+            "claimStatus": "claimed",
+            "carrier": "Les chefs de clan et officiants baganda réunis pour Roscoe par Sir Apolo Kagwa, katikkiro du Buganda"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le totem principal (omuziro) de ce clan est le redunca (antilope des roseaux). Clan Banansangwa, l'un des cinq clans trouvés sur place à l'arrivée de Kintu.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "The Baganda: An Account of their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 139 et p. 168",
+                "notes": "Londres, Macmillan, 1911 ; exemplaire numérisé sur archive.org. Dans sa préface (p. x-xi), Roscoe, missionnaire, dit avoir recueilli ses informations chez Sir Apolo Kagwa, qui fit venir les anciens, les prêtres et « the principal men from each clan ». Page 139, liste des clans : « The Roebuck (Njaza) clan ». Page 168, titre de la section : « The Reedbuck Clan ». Ethnographie de l'époque coloniale, citée ici pour ce qu'elle rapporte des clans. Lu le 11 octobre 2026."
+              },
+              {
+                "title": "Clans",
+                "author": "Buganda Heritage and Information Centre",
+                "year": null,
+                "url": "https://www.bugandaheritage.org.uk/culture/clans",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site patrimonial ganda. Il cite les cinq clans d'origine « referred to as Banansangwa » : Ffumbe, Lugave, Nggonge, Njaza et Nnyonyi, et dit que les clans sont passés à 52 en 1966. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le totem secondaire (akabbiro) de ce clan est une antilope (njugulu), au rang nº 25 de la liste de Roscoe, qui glose lui-même le totem principal par « Roebuck » et non par le redunca.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "The Baganda: An Account of their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 139 et p. 168",
+                "notes": "Londres, Macmillan, 1911 ; exemplaire numérisé sur archive.org. Dans sa préface (p. x-xi), Roscoe, missionnaire, dit avoir recueilli ses informations chez Sir Apolo Kagwa, qui fit venir les anciens, les prêtres et « the principal men from each clan ». Page 139, liste des clans : « The Roebuck (Njaza) clan ». Page 168, titre de la section : « The Reedbuck Clan ». Ethnographie de l'époque coloniale, citée ici pour ce qu'elle rapporte des clans. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans la liste de Roscoe, le clan du Redunca porte la marque (a) : il faisait partie des clans qui n'étaient jamais autorisés à présenter un prince candidat au trône. Le roi pouvait épouser une femme du clan, mais l'appartenance maternelle en écartait l'enfant ; dans la plupart des cas les garçons nés de ces unions étaient tués à la naissance et seules les filles vivaient.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "The Baganda: An Account of their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 139 et p. 168",
+                "notes": "Londres, Macmillan, 1911 ; exemplaire numérisé sur archive.org. Dans sa préface (p. x-xi), Roscoe, missionnaire, dit avoir recueilli ses informations chez Sir Apolo Kagwa, qui fit venir les anciens, les prêtres et « the principal men from each clan ». Page 139, liste des clans : « The Roebuck (Njaza) clan ». Page 168, titre de la section : « The Reedbuck Clan ». Ethnographie de l'époque coloniale, citée ici pour ce qu'elle rapporte des clans. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'éléphant tué, le clan extrayait le nerf de la défense, l'emportait au loin et l'enterrait en signalant le lieu : le fantôme de l'animal y étant réputé attaché, le malheur devait frapper qui l'enjamberait sans le savoir.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "The Baganda: An Account of their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 139 et p. 168",
+                "notes": "Londres, Macmillan, 1911 ; exemplaire numérisé sur archive.org. Dans sa préface (p. x-xi), Roscoe, missionnaire, dit avoir recueilli ses informations chez Sir Apolo Kagwa, qui fit venir les anciens, les prêtres et « the principal men from each clan ». Page 139, liste des clans : « The Roebuck (Njaza) clan ». Page 168, titre de la section : « The Reedbuck Clan ». Ethnographie de l'époque coloniale, citée ici pour ce qu'elle rapporte des clans. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'ekika ganda est un clan totémique : chaque clan porte un totem principal (omuziro) et un totem secondaire (akabbiro), et le nom du clan est celui du totem.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "The Baganda: An Account of their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 139 et p. 168",
+                "notes": "Londres, Macmillan, 1911 ; exemplaire numérisé sur archive.org. Dans sa préface (p. x-xi), Roscoe, missionnaire, dit avoir recueilli ses informations chez Sir Apolo Kagwa, qui fit venir les anciens, les prêtres et « the principal men from each clan ». Page 139, liste des clans : « The Roebuck (Njaza) clan ». Page 168, titre de la section : « The Reedbuck Clan ». Ethnographie de l'époque coloniale, citée ici pour ce qu'elle rapporte des clans. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le clan (ekika) se subdivise en branches (essiga) puis en sous-branches (enda), et s'ancre sur des tenures funéraires (obutaka) : trois générations inhumées en un lieu y fixent le droit du lignage, que le Kabaka lui-même se gardait de contester. La tête de clan porte un titre, et non un nom : le titre est celui du premier détenteur de la charge et passe au successeur.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "The Baganda: An Account of their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 139 et p. 168",
+                "notes": "Londres, Macmillan, 1911 ; exemplaire numérisé sur archive.org. Dans sa préface (p. x-xi), Roscoe, missionnaire, dit avoir recueilli ses informations chez Sir Apolo Kagwa, qui fit venir les anciens, les prêtres et « the principal men from each clan ». Page 139, liste des clans : « The Roebuck (Njaza) clan ». Page 168, titre de la section : « The Reedbuck Clan ». Ethnographie de l'époque coloniale, citée ici pour ce qu'elle rapporte des clans. Lu le 11 octobre 2026."
               }
             ]
           }

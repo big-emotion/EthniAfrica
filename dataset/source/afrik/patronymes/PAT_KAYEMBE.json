@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -54,10 +55,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "la recherche web combinant « Kayembe », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de le rapport « Scramble for the Congo: Anatomy of an Ugly War » et son annexe prosopographique sur les forces armées congolaises, n'ont livré aucune étymologie, chronique d'origine ou tradition orale attribuable à un témoin pour ce nom. Les rapprochements seulement plausibles ont été écartés."
-    },
     {
       "fieldPath": "alliances",
       "reason": "la recherche web combinant « Kayembe », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de le rapport « Scramble for the Congo: Anatomy of an Ugly War » et son annexe prosopographique sur les forces armées congolaises, n'ont identifié aucune paire d'alliance ou de parenté à plaisanterie reliant ce nom à un autre nom documenté ici."

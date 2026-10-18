@@ -31,20 +31,9 @@
   "designatedSocialUnit": "lineage",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Le répertoire provisoire localise une tradition Congo/Kongo à Gogo, dans le Zoundwéogo, et l'inscrit dans un contexte de succession à la chefferie. Il s'agit d'une tradition collectée, non d'une chronique indépendante datée.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["burkina-provisional-patronyme-register"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "La notice Congo/Kongo propose une formule en mooré selon laquelle le fils d'une reine vertueuse ne manquerait pas la chefferie. Aucune étude linguistique consultée ne confirme que cette formule constitue l'étymologie du patronyme.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["burkina-provisional-patronyme-register"]
-      }
-    ]
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -225,6 +214,48 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 42",
                 "notes": "Société internationale de linguistique, Ouagadougou, 2008, lu le 13 octobre 2026. Page 42, rubrique 6.4 « Exemples de noms de famille mossi » : le nom Congo figure dans la liste, avec Compaoré, Ouedraogo, Zongo et d'autres. La brochure porte sur les noms des Kasena et ne donne ni sens ni origine pour Congo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le répertoire provisoire localise une tradition Congo/Kongo à Gogo, dans le Zoundwéogo, et l'inscrit dans un contexte de succession à la chefferie. Il s'agit d'une tradition collectée, non d'une chronique indépendante datée.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "notice « CONGO/KONGO »",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de 2025 et marqué « version provisoire », lu le 13 octobre 2026 sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Seule la notice « CONGO/KONGO » est utilisée, et la copie ne numérote pas ses pages de façon fiable. La notice dit que le patronyme découle de l'expression « Naapogsong biiga kon kog naam », « le prince issu de la reine de vertu ne rate pas la chefferie », que ces familles sont originaires de Gogo, dans le Zoundwéogo, et installées dans le Zoundwéogo, le Kadiogo, le Bazèga et l'Oubritenga, et que leur langue est le mooré."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La notice Congo/Kongo propose une formule en mooré selon laquelle le fils d'une reine vertueuse ne manquerait pas la chefferie. Aucune étude linguistique consultée ne confirme que cette formule constitue l'étymologie du patronyme.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "notice « CONGO/KONGO »",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de 2025 et marqué « version provisoire », lu le 13 octobre 2026 sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Seule la notice « CONGO/KONGO » est utilisée, et la copie ne numérote pas ses pages de façon fiable. La notice dit que le patronyme découle de l'expression « Naapogsong biiga kon kog naam », « le prince issu de la reine de vertu ne rate pas la chefferie », que ces familles sont originaires de Gogo, dans le Zoundwéogo, et installées dans le Zoundwéogo, le Kadiogo, le Bazèga et l'Oubritenga, et que leur langue est le mooré."
               }
             ]
           }

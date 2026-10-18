@@ -22,13 +22,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "L'étude socio-onomastique des noms ambo cite Iipumbu yaShilongo, roi d'Uukwambi de 1908 à 1932, et distingue son nom de son nom de louange Ondilimani (« dynamite »). Cette attestation inscrit Iipumbu dans l'histoire anthroponymique ambo sans fournir une étymologie lexicale du nom Iipumbu lui-même.",
-        "claimStatus": "established",
-        "sourceRefs": ["saarelma-maunumaa-ambo-names"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -182,6 +177,27 @@
                 "source_kind": "academic",
                 "page": "p. 127, 183",
                 "notes": "Minna Saarelma-Maunumaa, Helsinki, Finnish Literature Society, 2003, lu en texte intégral le 16 octobre 2026 ; la pagination imprimée suit celle du fichier. Page 127 : « Ondilimani (‘dynamite’): Iipumbu yaShilongo (King of Uukwambi 1908–32) » ; note 239 (p. 183) : les années de règne viennent de Nambala 1994, p. 36-38, qui écrit Iipumbu yaTshilongo. Page 95 : en 1932, les forces sud-africaines bombardent l'Uukwambi et détruisent la maison du roi Iipumbu. Rapport de seconde main : nous n'avons pas lu Nambala."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'étude socio-onomastique des noms ambo cite Iipumbu yaShilongo, roi d'Uukwambi de 1908 à 1932, et distingue son nom de son nom de louange Ondilimani (« dynamite »). Cette attestation inscrit Iipumbu dans l'histoire anthroponymique ambo sans fournir une étymologie lexicale du nom Iipumbu lui-même.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Edhina Ekogidho — Names as Links: The Encounter between African and European Anthroponymic Systems among the Ambo People in Namibia",
+                "author": "Minna Saarelma-Maunumaa",
+                "year": 2003,
+                "url": "https://digital.unam.edu.na/bitstream/handle/11070.1/21230/Ekogidho_2003.pdf?isAllowed=y&sequence=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 144",
+                "notes": "Minna Saarelma-Maunumaa, Helsinki, Finnish Literature Society, 2003, lu en texte intégral le 16 octobre 2026 ; la pagination imprimée suit celle du fichier. Page 144 : « In the 1938 Ambo calendar, there is one name for almost every day of the year [...] Most of these names are traditional Ambo names, such as Amakali, Angula, Emvula, Endjala, Haufiku, Iipinge, Iipumbu [...] »"
               }
             ]
           }

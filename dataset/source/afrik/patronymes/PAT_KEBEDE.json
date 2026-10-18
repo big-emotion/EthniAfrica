@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'entrée consultée présente Kebede, écrit ከበደ, comme un nom personnel amharique signifiant « lourd, sérieux ». La glose reste une proposition communautaire et ne vaut pas attribution à un lignage.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["btn-kebede"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -204,6 +199,26 @@
                 "source_kind": "intergovernmental",
                 "page": "notice du catalogue (titre et date)",
                 "notes": "Communiqué de presse BIO/153 du 23 avril 1962, lu dans la notice de la bibliothèque numérique de l'ONU le 13 octobre 2026 ; seuls le titre, la date et les mots-clés ont été lus, pas le texte du communiqué. Une seconde notice, BIO/153/Rev.1, écrit « Kebbede »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'entrée consultée présente Kebede, écrit ከበደ, comme un nom personnel amharique signifiant « lourd, sérieux ». La glose reste une proposition communautaire et ne vaut pas attribution à un lignage.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Kebede — Behind the Name",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/kebede",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice du site Behind the Name, lue le 13 octobre 2026. Elle donne l'usage « amharique » et le sens « heavy, serious »."
               }
             ]
           }

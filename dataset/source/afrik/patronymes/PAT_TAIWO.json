@@ -40,13 +40,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Taiwo est attribué au premier des jumeaux : le manuel universitaire précise qu'il est tenu pour le cadet dans la convention yoruba ; YorubaNames explique le nom comme « celui ou celle qui goûte le monde/la vie » et atteste Táyé parmi ses variantes.",
-        "claimStatus": "established",
-        "sourceRefs": ["yorubanames-taiwo", "merryfield-1989-yoruba"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -244,8 +239,19 @@
                 "tier": "unverified",
                 "source_kind": "community",
                 "notes": "Base collaborative de noms yoruba, lue le 11 octobre 2026. Elle donne le sens « (The one who) tastes the world/life », la décomposition tọ́...wò, « goûter », et ayé, « le monde, la vie », et les variantes Táyé, Táyéwò et Táíyé. Contenu communautaire, sans date de rédaction."
+              },
+              {
+                "title": "Lessons from Africa: A Supplement to Middle School Courses in World Cultures, Global Studies, and World Geography",
+                "author": "Merry M. Merryfield (dir.)",
+                "year": 1989,
+                "url": "https://files.eric.ed.gov/fulltext/ED304395.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 47-48",
+                "notes": "ERIC Clearinghouse et Social Studies Development Center, Indiana University, 1989, leçon 5. Lu dans le PDF intégral le 11 octobre 2026. Le tableau « Some Yoruba Names and Their Meanings », attribué à E. B. Ogundimu, donne Taiwo, « also called » Taiye : « First of twin babies, regarded as the younger child by Yoruba »."
               }
-            ]
+            ],
+            "claimStatus": "established"
           },
           {
             "period": {

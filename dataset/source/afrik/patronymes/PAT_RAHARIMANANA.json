@@ -22,13 +22,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Une notice communautaire attribue à Raharimanana le sens « celui qui a le don de créer » et rapporte que le grand-père de Jean-Luc Raharimanana donna ce nom à son père, avant que l'écrivain ne l'adopte comme nom de plume. Cette explication est conservée comme affirmation de la notice, non comme étymologie établie.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["voie-jaguar-raharimanana"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -227,6 +222,26 @@
                 "tier": "official",
                 "source_kind": "repository",
                 "notes": "Notice de la Bibliothèque nationale de France, lue le 11 octobre 2026. Elle attribue ce recueil, daté de 1996, à « Raharimanana, Jean-Luc (1967-....) ». C'est la plus ancienne publication sous ce nom que donne le catalogue."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une notice communautaire attribue à Raharimanana le sens « celui qui a le don de créer » et rapporte que le grand-père de Jean-Luc Raharimanana donna ce nom à son père, avant que l'écrivain ne l'adopte comme nom de plume. Cette explication est conservée comme affirmation de la notice, non comme étymologie établie.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Raharimanana — La voie du jaguar",
+                "author": "La voie du jaguar",
+                "year": null,
+                "url": "https://www.lavoiedujaguar.net/_Raharimanana_",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice non signée et non datée d'une revue en ligne. Lue le 11 octobre 2026. Elle écrit : « Son nom, Raharimanana, signifie en malgache “celui qui a le don de créer” » et « C'est le nom que son grand-père a donné à son père et dont il a fait son nom de plume ». Elle ne cite pas d'étude de la langue."
               }
             ]
           }

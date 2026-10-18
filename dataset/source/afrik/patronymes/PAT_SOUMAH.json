@@ -31,25 +31,9 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "André Arcin écrit en 1907 que les Souma sont les chefs par excellence des Soso du centre et des Dialonké de l'ouest. Selon lui, ils se séparent du Ouagadou, puis sont chassés du Manding après la mort de Soumangourou, tué par Soundiata Keïta, et gagnent le Fouta puis la côte. Leur grand fief est le Gania, près de Kindia, et le premier État qu'ils fondent du côté de la mer est le Dubréka. Ce récit est celui d'un administrateur colonial, qui rapporte des traditions sans toujours les attribuer.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["arcin-1907-guinee-francaise"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "Selon André Arcin, les Souma ou Soumaoro sont apparentés aux Keïta des Malinké : ils « paraissent être de même famille que les Keïta », et leur totem, le lion, est le même que celui des familles royales. Il note aussi le caïman.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["arcin-1907-guinee-francaise"]
-      },
-      {
-        "claim": "Le dictionnaire des noms de clan mandingues donne Suma, sans autre indication, et Sumaoro, avec les variantes Sumaworo et Sumanguru, comme deux entrées séparées. Il ne dit donc pas que Soumah et Soumaoro sont un seul nom, contrairement à ce que suggère Arcin.",
-        "claimStatus": "contested",
-        "sourceRefs": ["bamadaba-jamuw", "arcin-1907-guinee-francaise"]
-      }
-    ]
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -154,8 +138,19 @@
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
                 "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 11 octobre 2026. Entrées Suma (sans autre indication) et Sumaoro (variantes Sumaworo et Sumanguru), distinctes."
+              },
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 298",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 298 : « les Souma sont les chefs par excellence des Soso du Centre et des Dialonké occidentaux »."
               }
-            ]
+            ],
+            "claimStatus": "contested"
           },
           {
             "period": {
@@ -205,7 +200,8 @@
                 "page": "p. 298-299",
                 "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 298 : « Le grand fief des Souma est le Gania (cercle de Kindia) ». Page 299 : « Le premier Etat fondé par eux du côté de la mer fut le Dubréka »."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           },
           {
             "period": {
@@ -225,6 +221,27 @@
                 "source_kind": "archive",
                 "page": "p. 281, 298",
                 "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 281 : « Les Souma ou Soumaoro. n'téné : le lion, le caïman, apparentés aux Keïta Malinké ». Page 298 : ils « paraissent être de même famille que les Keïta » et furent chassés du Manding après la mort de Soumangourou."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Selon André Arcin, les Souma ou Soumaoro sont apparentés aux Keïta des Malinké : ils « paraissent être de même famille que les Keïta », et leur totem, le lion, est le même que celui des familles royales. Il note aussi le caïman.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 298",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 298 : « les Souma sont les chefs par excellence des Soso du Centre et des Dialonké occidentaux »."
               }
             ]
           }

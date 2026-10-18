@@ -11,13 +11,19 @@
     {
       "spelling": "Soumaré",
       "attestations": [
-        { "countryId": "MRT", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "MRT",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     },
     {
       "spelling": "Soumare",
       "attestations": [
-        { "countryId": "MRT", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "MRT",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -26,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "En soninké, le nom Soumaré signifie « fait du bien pour ton prochain ». Cette glose est donnée en passant, sans analyse du mot, et sans dire d'où elle vient ni si elle vaut pour tous les Soumaré.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["kante-2019-rasp-soumare"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -71,10 +72,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Nous n'avons trouvé qu'une glose du sens du nom, sans source propre : aucun récit oral ni aucune chronique écrite sur l'origine historique du nom Soumaré n'a été lu à ce jour, et ni la fondation du nom ni sa présence en Mauritanie ne sont documentées ici."
-    },
     {
       "fieldPath": "alliances",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
@@ -180,7 +177,8 @@
                 "page": "p. 92",
                 "notes": "Hommage publié par un chercheur soninké. Relu le 11 octobre 2026. Page 92 : « en soninké, le nom Soumaré signifie : « fait du bien pour ton prochain » ». Le sens est donné en passant, sans source ni analyse du mot."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           },
           {
             "period": {

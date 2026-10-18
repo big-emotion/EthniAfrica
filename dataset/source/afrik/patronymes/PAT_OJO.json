@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "YorubaNames décrit Òjó comme un àmútọ̀runwá, nom déterminé par les circonstances de naissance, attribué à un garçon né avec le cordon ombilical autour du cou.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["yorubanames-ojo"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -156,6 +151,26 @@
                 "source_kind": "academic",
                 "page": "p. 81",
                 "notes": "Première édition en 1921, préparée par O. Johnson d'après le manuscrit de l'auteur, pasteur d'Oyo, mort en 1901. Lu sur l'exemplaire numérisé d'archive.org (Lagos, CMS Bookshops) le 13 octobre 2026. Page 81, section « Yoruba names » : « Ojo or Aina is a child born with the cord twined round its neck. […] Ojo, however, is never given to females, Aina may be male or female. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "YorubaNames décrit Òjó comme un àmútọ̀runwá, nom déterminé par les circonstances de naissance, attribué à un garçon né avec le cordon ombilical autour du cou.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Òjó — YorubaNames",
+                "author": "YorubaNames",
+                "year": null,
+                "url": "https://www.yorubaname.com/entries/Ojo?lang=yo",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Dictionnaire collaboratif des noms yoruba, lu le 13 octobre 2026. Il écrit Òjó avec tous ses tons. Il le glose « A male child who was born with his umbilical cord tied around his neck », le range parmi les noms àmútọ̀runwá, « brought from heaven », et donne Àìná comme nom de même sens, surtout pour les filles. La page ne nomme pas ses contributeurs."
               }
             ]
           }

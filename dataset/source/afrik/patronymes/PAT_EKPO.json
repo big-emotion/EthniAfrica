@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -62,10 +63,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Le Dictionary of American Family Names (2022) marque explicitement Ekpo comme inexpliqué. Les recherches complémentaires « Ekpo Ibibio anthroponymy », « Ekpo Efik surname etymology » et « Ekpo name meaning academic » n'ont livré aucune étymologie propre au patronyme suffisamment étayée."
-    },
     {
       "fieldPath": "peoples",
       "reason": "Le dictionnaire situe Ekpo au Nigeria sans préciser un peuple ; les recherches « Ekpo Ibibio surname » et « Ekpo Efik surname » donnent des associations concurrentes sans source académique propre au nom, donc le rattachement ibibio reste « supposed »."

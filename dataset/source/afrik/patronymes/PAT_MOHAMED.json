@@ -65,18 +65,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'entrée consultée décrit Mohamed comme un nom de famille dérivé du nom personnel Muhammad et atteste la graphie محمّد. Cette formation largement partagée ne prouve aucune origine ethnique exclusive.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["btn-surname-mohamed"]
-      },
-      {
-        "claim": "Le site Behind the Name présente Mahamadou, en Afrique de l'Ouest francophone, et Mahamat, en Afrique centrale, comme des formes de Muhammad. Chacune a sa propre fiche, parce que ses porteurs et ses sources diffèrent.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["btn-mahamadou", "btn-mahamat"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -350,6 +340,55 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 489",
                 "notes": "Paris, Maisonneuve, 1860. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. « Loué, comblé de louanges, digne d'éloges. S'emploie comme n. pr. d'homme, Mohammed »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'entrée consultée décrit Mohamed comme un nom de famille dérivé du nom personnel Muhammad et atteste la graphie محمّد. Cette formation largement partagée ne prouve aucune origine ethnique exclusive.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the surname Mohamed — Behind the Name",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://surnames.behindthename.com/name/mohamed",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site d'onomastique en ligne, lu le 11 octobre 2026. Page du nom de famille Mohamed : « Derived from the given name Muhammad »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le site Behind the Name présente Mahamadou, en Afrique de l'Ouest francophone, et Mahamat, en Afrique centrale, comme des formes de Muhammad. Chacune a sa propre fiche, parce que ses porteurs et ses sources diffèrent.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Mahamadou — Behind the Name",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.behindthename.com/name/mahamadou",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page communautaire consultée directement. Elle présente Mahamadou comme une forme de Muhammad employée dans l'Afrique de l'Ouest francophone et cite Muhammadu parmi les formes haoussa. Elle n'établit pas une attribution ethnique de la graphie exacte."
+              },
+              {
+                "title": "Mahamat — Behind the Name",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.behindthename.com/name/mahamat",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page communautaire consultée directement le 11 octobre 2026. Elle présente Mahamat comme une forme de Muhammad employée en Afrique centrale et donne Mahamadou parmi ses variantes. Elle n'établit pas une attribution ethnique de la graphie."
               }
             ]
           }

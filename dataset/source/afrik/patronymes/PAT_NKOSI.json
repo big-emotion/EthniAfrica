@@ -26,13 +26,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "La monographie rapporte l'auto-présentation de membres de la maison royale swazi selon laquelle Nkosi est leur véritable sibongo, tandis que Dlamini est un nom subsidiaire ; elle précise que le clan Nkosi s'est divisé en plusieurs branches entre lesquelles le mariage est permis.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["swazi-monograph-nkosi"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -251,6 +246,26 @@
                 "source_kind": "academic",
                 "page": "p. 312",
                 "notes": "Londres, Longmans, Green, 1929, lu le 12 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 312 : la phrase sur les sous-clans Ngwane, Nkosi, ekuNene et Mavuso, citée plus haut."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La monographie rapporte l'auto-présentation de membres de la maison royale swazi selon laquelle Nkosi est leur véritable sibongo, tandis que Dlamini est un nom subsidiaire ; elle précise que le clan Nkosi s'est divisé en plusieurs branches entre lesquelles le mariage est permis.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "A MONOGRAM",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://citeseerx.ist.psu.edu/document?doi=f079a87e260f6079187953b880c5806463f3ec1b&repid=rep1&type=pdf",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Copie indexée par CiteSeerX consultée dans le résultat intégral. La section consacrée aux clans rapporte que les membres de la maison royale swazi disent que leur véritable sibongo est Nkosi, Dlamini étant un nom subsidiaire, et note la division du clan Nkosi en plusieurs branches."
               }
             ]
           }

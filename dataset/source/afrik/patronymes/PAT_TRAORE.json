@@ -64,74 +64,10 @@
   "transmissionMode": "patrilineal",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [
-      {
-        "claim": "Les Mara appartiennent à la même branche paternelle que les Traoré : les deux noms ont un ancêtre commun, Mansa Yurukara Nayni, et sont de la même famille que les Sako et les Kouyaté.",
-        "claimStatus": "claimed",
-        "carrier": "Babou Condé, griot du village de Fadama, dans la préfecture de Kouroussa en Guinée",
-        "collection": "mediated",
-        "collector": "E. A. Bogacheva, lors d'entretiens menés en 2017",
-        "context": "Récit rapporté en russe dans un mémoire universitaire",
-        "sourceRefs": ["bogacheva-2017-jamu"]
-      },
-      {
-        "claim": "Dans l'épopée, deux frères tous deux Traoré, Oulamba l'aîné et Oulani le cadet, rapportent du pays de Do la jeune fille promise au vainqueur du buffle, et la donnent au roi du Manding, Naré Maghan Kon Fatta, avant la naissance de Soundiata. Une note de l'éditeur rapporte la tradition qui s'y rattache : quand le cadet a tué le buffle, l'aîné compose sur-le-champ un chant à sa gloire, et le cadet s'écrie : « Frère, si tu étais griot, personne ne te résisterait. » De cette phrase viendraient la séparation entre Traoré et Diabaté (Dioubaté) et le nom Diabaté lui-même, et les griots Diabaté restent frères des Traoré. Une autre note fait naître du même épisode la parenté à plaisanterie entre Kondé et Traoré : les gens de Do se moquèrent des chasseurs qui avaient préféré la laide Sogolon aux belles filles.",
-        "claimStatus": "claimed",
-        "carrier": "Djeli Mamadou Kouyaté, griot de Djeliba Koro, près de Siguiri",
-        "collection": "mediated",
-        "collector": "Djibril Tamsir Niane, qui l'a traduit en français",
-        "context": "Épopée publiée en 1960 ; la séparation des deux noms est rapportée dans les notes de l'éditeur",
-        "sourceRefs": ["niane-1960"]
-      },
-      {
-        "claim": "Tiramaghan Traoré, général de Soundiata, aurait vaincu le roi du Jolof puis conquis la Casamance et le Kaabu. Les Mandenka de l'Ouest le tiennent pour le fondateur de nombreux royaumes, dont le Kaabu, et les griots du Kaabu chantent sa geste à la kora ; il est donné comme l'ancêtre des Traoré. Les traditions ne s'accordent pas sur sa fin : plusieurs villages du Kaabu disent garder ses restes, tandis que des traditions du Gangaran le font revenir au Mali.",
-        "claimStatus": "contested",
-        "carrier": "Les griots du Kaabu et les traditions du Gangaran",
-        "collection": "mediated",
-        "collector": "Le colloque sur les traditions orales du Kaabu de la Fondation Léopold-Sédar-Senghor, notamment M. Cissoko et Madina Ly-Tall, dont Djibril Tamsir Niane reprend les résultats",
-        "context": "Synthèse historique publiée par l'UNESCO en 1985 ; le lien avec les Traoré est donné par un historien de l'épopée",
-        "sourceRefs": ["hga-iv-niane", "jansen-sunjata-paradigm"]
-      },
-      {
-        "claim": "Avant l'empire du Mali, une partie des Traoré vit dans le pays de Kiri, mais la plupart habitent la province appelée plus tard Gangaran, au nord-ouest du Bouré. Ce sont des chasseurs du clan Traoré qui auraient donné en mariage au roi Maghan Kön Fatta la mère de Soundiata.",
-        "claimStatus": "claimed",
-        "collection": "mediated",
-        "collector": "Djibril Tamsir Niane et Youssouf Tata Cissé, d'après les écoles de tradition orale du Manding",
-        "context": "Synthèse historique publiée par l'UNESCO en 1985",
-        "sourceRefs": ["hga-iv-niane"]
-      }
-    ],
-    "writtenChronicles": [
-      {
-        "claim": "Le nom viendrait d'une formule, « À taá dá wéele », que l'ouvrage ne traduit pas et qu'il rattache à l'appel lancé à l'ancêtre. Túraman, général du temps de Soundiata, avait quitté la guerre devenu vieux ; quand une guerre faillit perdre le Manden, on l'envoya chercher, il partit, vainquit les ennemis et ramena la paix. Les conteurs chantèrent ensuite ses descendants en rappelant que leur aïeul avait été appelé à cette guerre, et ceux-ci répondaient que, sans cet appel, le Manden était perdu. Ainsi la lignée prit le nom de Tárawele, et le nom de l'ancêtre, Túraman, devint son jamu. Le même ouvrage, écrit en n'ko par Souleymane Kanté, divise les Tárawele en quatre branches, Dàamasí, Nàyité, Sídimɛ et Jàbaatɛ́, et rapporte aussi qu'on les dit descendants de Lònsanín ; son auteur ajoute qu'il ne croit pas à une origine arabe.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["bogacheva-2017-jamu"]
-      }
-    ],
-    "historicalSyntheses": [
-      {
-        "claim": "Pour un étranger, le jamu est la porte d'entrée dans le tissu social : à Bamako, on lui attribue un jamu mandingue pour lui donner une place dans le groupe. Aujourd'hui, les références historiques des pactes entre noms sont souvent oubliées et les personnes peinent à en expliquer l'origine.",
-        "claimStatus": "established",
-        "sourceRefs": ["canut-2002-senankuya"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "Aucun dictionnaire consulté ne donne de sens au mot : le dictionnaire des noms de clan mandingues l'écrit Tàrawéle, avec les variantes Traore et Taraore, et le définit seulement comme un nom de clan. Traoré en est la graphie française.",
-        "claimStatus": "established",
-        "sourceRefs": ["bamadaba-jamuw"]
-      },
-      {
-        "claim": "Une explication porte sur le nom de l'ancêtre, non sur le mot Traoré : au Kaabu, où il est appelé Tiramagan ou Siramagan, ce nom serait un titre. Magan est un mot ancien pour « roi », et sira la lance dont on se servait au Kaabu, lors d'une ordalie, pour désigner la personne à éprouver ; Tiramagan voudrait dire « chef des ordalies », et un objet de culte serait devenu un personnage. C'est une hypothèse. Dans l'épopée de Soundiata, Tiramagan est son général ; au Kaabu, le récit de fondation ignore presque ce lien.",
-        "claimStatus": "contested",
-        "sourceRefs": ["jansen-sunjata-paradigm", "hga-iv-niane"]
-      },
-      {
-        "claim": "Le nom a des équivalents chez d'autres peuples : en pays wolof, un Traoré est reçu comme un frère par les Diop et peut prendre leur nom, et un Diop peut devenir Traoré chez les Mandenka. La tradition fait remonter ces correspondances entre noms de clan à l'assemblée tenue après la victoire de Soundiata, à qui l'on prête aussi des faits bien postérieurs ; la pratique s'est poursuivie après lui.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["hga-iv-niane"]
-      }
-    ]
+    "oralTraditions": [],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -348,7 +284,7 @@
               "label": "Usage contemporain"
             },
             "era": "modern",
-            "statement": "Le nom Traoré est la graphie française de Tàrawéle, un nom de clan, ou jamu, des Bambara et des Malinké. Les dictionnaires consultés ne lui donnent pas de sens ; nous présentons plus bas la seule explication de son origine que nous connaissons.",
+            "statement": "Aucun dictionnaire consulté ne donne de sens au mot : le dictionnaire des noms de clan mandingues l'écrit Tàrawéle, avec les variantes Traore et Taraore, et le définit seulement comme un nom de clan. Traoré en est la graphie française.",
             "aspect": "meaning",
             "sources": [
               {
@@ -370,7 +306,8 @@
                 "page": "p. 136",
                 "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe. Notice Tàrawéle : les formes Traore et Taraore."
               }
-            ]
+            ],
+            "claimStatus": "established"
           },
           {
             "period": {
@@ -379,7 +316,7 @@
               "label": "Usage décrit par l'auteur"
             },
             "era": "modern",
-            "statement": "Le nom Traoré a des équivalents chez des peuples voisins : en pays wolof, un Traoré est reçu comme un frère par les Diop et peut prendre leur nom, selon Djibril Tamsir Niane.",
+            "statement": "Le nom a des équivalents chez d'autres peuples : en pays wolof, un Traoré est reçu comme un frère par les Diop et peut prendre leur nom, et un Diop peut devenir Traoré chez les Mandenka. La tradition fait remonter ces correspondances entre noms de clan à l'assemblée tenue après la victoire de Soundiata, à qui l'on prête aussi des faits bien postérieurs ; la pratique s'est poursuivie après lui.",
             "aspect": "usage",
             "sources": [
               {
@@ -392,7 +329,8 @@
                 "page": "p. 158, note 44",
                 "notes": "UNESCO, 1985 ; chapitre de D. T. Niane."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           },
           {
             "period": {
@@ -458,7 +396,7 @@
               "label": "Avant l'empire du Mali, selon les traditions"
             },
             "era": "polity",
-            "statement": "Le nom Traoré est celui de chasseurs qui vivaient, avant l'empire du Mali, dans le pays de Kiri et surtout dans la province appelée plus tard Gangaran, au nord-ouest du Bouré. C'est ce que rapportent les écoles de tradition orale du Manding, selon Djibril Tamsir Niane.",
+            "statement": "Avant l'empire du Mali, une partie des Traoré vit dans le pays de Kiri, mais la plupart habitent la province appelée plus tard Gangaran, au nord-ouest du Bouré. Ce sont des chasseurs du clan Traoré qui auraient donné en mariage au roi Maghan Kön Fatta la mère de Soundiata.",
             "sources": [
               {
                 "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
@@ -468,9 +406,12 @@
                 "tier": "official",
                 "source_kind": "intergovernmental",
                 "page": "p. 153-154",
-                "notes": "UNESCO, 1985 ; chapitre de D. T. Niane, d'après les écoles de tradition orale du Manding et les travaux de Youssouf Tata Cissé."
+                "notes": "UNESCO, 1985 ; chapitre de D. T. Niane, d'après les écoles de tradition orale du Manding et les travaux de Youssouf Tata Cissé.\nSynthèse historique publiée par l'UNESCO en 1985"
               }
-            ]
+            ],
+            "claimStatus": "claimed",
+            "collection": "mediated",
+            "collector": "Djibril Tamsir Niane et Youssouf Tata Cissé, d'après les écoles de tradition orale du Manding"
           },
           {
             "period": {
@@ -495,7 +436,7 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 21-28",
-                "notes": "Présence Africaine, 1960. Mise par écrit du récit du griot Djeli Mamadou Kouyaté de Djeliba Koro (Siguiri), lue sur l'exemplaire numérisé d'archive.org, dont la pagination est proche de l'édition imprimée."
+                "notes": "Présence Africaine, 1960. Mise par écrit du récit du griot Djeli Mamadou Kouyaté de Djeliba Koro (Siguiri), lue sur l'exemplaire numérisé d'archive.org, dont la pagination est proche de l'édition imprimée.\nÉpopée publiée en 1960 ; la séparation des deux noms est rapportée dans les notes de l'éditeur"
               },
               {
                 "title": "Récit du griot Djeli Mamadou Kouyaté, de Djeliba Koro près de Siguiri",
@@ -505,7 +446,11 @@
                 "tier": "unverified",
                 "source_kind": "oral_tradition"
               }
-            ]
+            ],
+            "claimStatus": "claimed",
+            "carrier": "Djeli Mamadou Kouyaté, griot de Djeliba Koro, près de Siguiri",
+            "collection": "mediated",
+            "collector": "Djibril Tamsir Niane, qui l'a traduit en français"
           },
           {
             "period": {
@@ -524,7 +469,7 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 32",
-                "notes": "Présence Africaine, 1960. Note de l'éditeur sur la séparation des Traoré et des Diabaté, lue sur l'exemplaire numérisé d'archive.org."
+                "notes": "Présence Africaine, 1960. Note de l'éditeur sur la séparation des Traoré et des Diabaté, lue sur l'exemplaire numérisé d'archive.org.\nÉpopée publiée en 1960 ; la séparation des deux noms est rapportée dans les notes de l'éditeur"
               },
               {
                 "title": "Récit du griot Djeli Mamadou Kouyaté, de Djeliba Koro près de Siguiri",
@@ -534,7 +479,11 @@
                 "tier": "unverified",
                 "source_kind": "oral_tradition"
               }
-            ]
+            ],
+            "claimStatus": "claimed",
+            "carrier": "Djeli Mamadou Kouyaté, griot de Djeliba Koro, près de Siguiri",
+            "collection": "mediated",
+            "collector": "Djibril Tamsir Niane, qui l'a traduit en français"
           },
           {
             "period": {
@@ -553,7 +502,7 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 32",
-                "notes": "Présence Africaine, 1960. Note de l'éditeur sur la parenté à plaisanterie entre Kondé et Traoré, lue sur l'exemplaire numérisé d'archive.org."
+                "notes": "Présence Africaine, 1960. Note de l'éditeur sur la parenté à plaisanterie entre Kondé et Traoré, lue sur l'exemplaire numérisé d'archive.org.\nÉpopée publiée en 1960 ; la séparation des deux noms est rapportée dans les notes de l'éditeur"
               },
               {
                 "title": "Récit du griot Djeli Mamadou Kouyaté, de Djeliba Koro près de Siguiri",
@@ -563,7 +512,11 @@
                 "tier": "unverified",
                 "source_kind": "oral_tradition"
               }
-            ]
+            ],
+            "claimStatus": "claimed",
+            "carrier": "Djeli Mamadou Kouyaté, griot de Djeliba Koro, près de Siguiri",
+            "collection": "mediated",
+            "collector": "Djibril Tamsir Niane, qui l'a traduit en français"
           },
           {
             "period": {
@@ -572,7 +525,7 @@
               "label": "Temps de Soundiata, selon les traditions"
             },
             "era": "polity",
-            "statement": "Le nom Traoré est celui de Tiramaghan Traoré, général de Soundiata dans l'épopée. Les Mandenka de l'Ouest le tiennent pour le fondateur du Kaabu, les griots du Kaabu chantent sa geste et il est donné comme l'ancêtre des Traoré, selon Djibril Tamsir Niane et Jan Jansen.",
+            "statement": "Tiramaghan Traoré, général de Soundiata, aurait vaincu le roi du Jolof puis conquis la Casamance et le Kaabu. Les Mandenka de l'Ouest le tiennent pour le fondateur de nombreux royaumes, dont le Kaabu, et les griots du Kaabu chantent sa geste à la kora ; il est donné comme l'ancêtre des Traoré. Les traditions ne s'accordent pas sur sa fin : plusieurs villages du Kaabu disent garder ses restes, tandis que des traditions du Gangaran le font revenir au Mali.",
             "actors": [
               {
                 "name": "Tiramaghan Traoré",
@@ -588,7 +541,7 @@
                 "tier": "official",
                 "source_kind": "intergovernmental",
                 "page": "p. 157, note 41",
-                "notes": "UNESCO, 1985 ; chapitre de D. T. Niane, qui reprend les résultats du colloque sur les traditions orales du Kaabu de la Fondation Léopold-Sédar-Senghor."
+                "notes": "UNESCO, 1985 ; chapitre de D. T. Niane, qui reprend les résultats du colloque sur les traditions orales du Kaabu de la Fondation Léopold-Sédar-Senghor.\nSynthèse historique publiée par l'UNESCO en 1985 ; le lien avec les Traoré est donné par un historien de l'épopée"
               },
               {
                 "title": "Beyond the Mali Empire — A New Paradigm for the Sunjata Epic",
@@ -600,7 +553,11 @@
                 "page": "p. 15",
                 "notes": "Version d'auteur déposée à l'université de Leyde. Tiramagan y est donné comme l'ancêtre des Traoré et comme le fondateur du Kaabu."
               }
-            ]
+            ],
+            "claimStatus": "contested",
+            "carrier": "Les griots du Kaabu et les traditions du Gangaran",
+            "collection": "mediated",
+            "collector": "Le colloque sur les traditions orales du Kaabu de la Fondation Léopold-Sédar-Senghor, notamment M. Cissoko et Madina Ly-Tall, dont Djibril Tamsir Niane reprend les résultats"
           },
           {
             "period": {
@@ -609,7 +566,7 @@
               "label": "Récit recueilli en 2017"
             },
             "era": "modern",
-            "statement": "Le nom Traoré appartiendrait à la même branche paternelle que le nom Mara : les deux auraient un ancêtre commun, Mansa Yurukara Nayni, et seraient de la même famille que les Sako et les Kouyaté. C'est ce que dit Babou Condé, griot de Fadama, dans la préfecture de Kouroussa en Guinée, selon le mémoire d'E. A. Bogacheva.",
+            "statement": "Les Mara appartiennent à la même branche paternelle que les Traoré : les deux noms ont un ancêtre commun, Mansa Yurukara Nayni, et sont de la même famille que les Sako et les Kouyaté. C'est ce que dit Babou Condé, griot de Fadama, dans la préfecture de Kouroussa en Guinée, selon le mémoire d'E. A. Bogacheva.",
             "actors": [
               {
                 "name": "Mansa Yurukara Nayni",
@@ -625,9 +582,13 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 104",
-                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe. Notice Mara : le récit du griot Babou Condé, de Fadama, recueilli lors d'entretiens menés en 2017."
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe. Notice Mara : le récit du griot Babou Condé, de Fadama, recueilli lors d'entretiens menés en 2017.\nRécit rapporté en russe dans un mémoire universitaire"
               }
-            ]
+            ],
+            "claimStatus": "claimed",
+            "carrier": "Babou Condé, griot du village de Fadama, dans la préfecture de Kouroussa en Guinée",
+            "collection": "mediated",
+            "collector": "E. A. Bogacheva, lors d'entretiens menés en 2017"
           },
           {
             "period": {
@@ -635,7 +596,7 @@
               "to": null,
               "label": "Origine non datée"
             },
-            "statement": "Le nom Traoré viendrait d'une formule, « À taá dá wéele », que l'on chantait aux descendants de Túraman, un général du temps de Soundiata rappelé pour sauver le Manden d'une guerre ; ils prirent le nom de Tárawele, et le nom de leur ancêtre devint leur jamu. C'est le récit d'un ouvrage en n'ko de Souleymane Kanté, selon la traduction russe qu'en donne E. A. Bogacheva.",
+            "statement": "Le nom viendrait d'une formule, « À taá dá wéele », que l'ouvrage ne traduit pas et qu'il rattache à l'appel lancé à l'ancêtre. Túraman, général du temps de Soundiata, avait quitté la guerre devenu vieux ; quand une guerre faillit perdre le Manden, on l'envoya chercher, il partit, vainquit les ennemis et ramena la paix. Les conteurs chantèrent ensuite ses descendants en rappelant que leur aïeul avait été appelé à cette guerre, et ceux-ci répondaient que, sans cet appel, le Manden était perdu. Ainsi la lignée prit le nom de Tárawele, et le nom de l'ancêtre, Túraman, devint son jamu. Le même ouvrage, écrit en n'ko par Souleymane Kanté, divise les Tárawele en quatre branches, Dàamasí, Nàyité, Sídimɛ et Jàbaatɛ́, et rapporte aussi qu'on les dit descendants de Lònsanín ; son auteur ajoute qu'il ne croit pas à une origine arabe.",
             "hypothesisGroup": "origine du nom Traoré",
             "actors": [
               {
@@ -653,6 +614,58 @@
                 "source_kind": "academic",
                 "page": "p. 137",
                 "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe. Notice Tàrawéle : le récit tiré de l'ouvrage en n'ko de Souleymane Kanté sur les noms et les jamu du Manden. L'ouvrage ne traduit pas la formule, et son texte original n'a pas été lu."
+              }
+            ],
+            "claimStatus": "claimed"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Pour un étranger, le jamu est la porte d'entrée dans le tissu social : à Bamako, on lui attribue un jamu mandingue pour lui donner une place dans le groupe. Aujourd'hui, les références historiques des pactes entre noms sont souvent oubliées et les personnes peinent à en expliquer l'origine.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Pouvoir, places et filiation : les senankuya au Mali",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://journals.openedition.org/praxematique/2307",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Canut, Cécile, Cahiers de praxématique, numéro 38, 2002, p. 175-197. Enquête de terrain au Mali. Elle énonce ce que le pacte oblige : la relation vaut à perpétuité pour toute la descendance des deux lignées, le mariage entre elles est prohibé — diversement appliqué aujourd'hui, précise-t-elle — et l'entraide y est due sans réserve. Citée pour l'obligation elle-même ; elle ne nomme pas la paire de cette fiche, que portent les entrées citées à côté d'elle."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une explication porte sur le nom de l'ancêtre, non sur le mot Traoré : au Kaabu, où il est appelé Tiramagan ou Siramagan, ce nom serait un titre. Magan est un mot ancien pour « roi », et sira la lance dont on se servait au Kaabu, lors d'une ordalie, pour désigner la personne à éprouver ; Tiramagan voudrait dire « chef des ordalies », et un objet de culte serait devenu un personnage. C'est une hypothèse. Dans l'épopée de Soundiata, Tiramagan est son général ; au Kaabu, le récit de fondation ignore presque ce lien.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "Beyond the Mali Empire — A New Paradigm for the Sunjata Epic",
+                "author": "Jan Jansen",
+                "year": null,
+                "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2952645/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 15",
+                "notes": "Version d'auteur déposée à l'université de Leyde. Tiramagan y est donné comme l'ancêtre des Traoré et comme le fondateur du Kaabu."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 158, note 44",
+                "notes": "UNESCO, 1985 ; chapitre de D. T. Niane."
               }
             ]
           }

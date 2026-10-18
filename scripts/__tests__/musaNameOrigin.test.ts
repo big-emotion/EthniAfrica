@@ -59,8 +59,11 @@ describe("the name Musa, from the Qur'an to the Mali empire", () => {
 
     expect(mansa?.period).toMatchObject({ from: 1307, to: 1332 });
     expect(mansa?.sources[0]).toMatchObject({ page: "p. 171" });
-    expect(fiche.origin.writtenChronicles[0].claim).toMatch(/Ibn Khaldūn/);
-    expect(fiche.origin.historicalSyntheses).toHaveLength(1);
+    expect(
+      accounts.some((account) => /Ibn Khaldūn/.test(account.statement))
+    ).toBe(true);
+    expect(fiche.origin.writtenChronicles).toEqual([]);
+    expect(fiche.origin.historicalSyntheses).toEqual([]);
   });
 
   // @req REQ-196

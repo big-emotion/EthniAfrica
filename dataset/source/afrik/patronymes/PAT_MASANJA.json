@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'étude sémantique de Peter G. Shigini classe Masanja parmi les noms personnels sukuma liés aux événements familiaux : le nom signifie « union », « rassemblement » ou « unification » et est normalement attribué à un garçon né au moment d'un rapprochement entre personnes, familles ou clans. La source établit ce nom de naissance, non une étymologie universelle de chaque lignée qui l'emploie aujourd'hui comme nom de famille.",
-        "claimStatus": "established",
-        "sourceRefs": ["shigini-2020-masanja"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -139,6 +134,26 @@
                 "source_kind": "academic",
                 "page": "p. 42",
                 "notes": "SKASE Journal of Theoretical Linguistics, vol. 19, n° 2, 2022, p. 35-52. Texte intégral lu en ligne ; la page citée est celle imprimée en bas de page. Les auteurs relèvent les noms d'élèves de villages nyamwezi et sukuma, en trois colonnes : prénom, prénom du père, nom de famille ou de clan. Page 42, tableau 2 (filles) : Masanja, « gathering », figure deux fois dans la colonne du nom de famille. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'étude sémantique de Peter G. Shigini classe Masanja parmi les noms personnels sukuma liés aux événements familiaux : le nom signifie « union », « rassemblement » ou « unification » et est normalement attribué à un garçon né au moment d'un rapprochement entre personnes, familles ou clans. La source établit ce nom de naissance, non une étymologie universelle de chaque lignée qui l'emploie aujourd'hui comme nom de famille.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "The Semantic Nature of Sukuma Personal Names",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://repository.mocu.ac.tz/xmlui/bitstream/handle/123456789/258/The%20semantic%20nature%20of%20Sukuma%20personal%20names%20PAPER-2-By%20PETER-SHIGINI.pdf?isAllowed=y&sequence=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Article de Peter G. Shigini dans l'East African Journal of Social and Applied Sciences, PDF du dépôt de Moshi Co-operative University consulté directement. Il définit Masanja comme un nom personnel sukuma donné à un garçon né lors d'une union entre personnes, familles ou clans."
               }
             ]
           }

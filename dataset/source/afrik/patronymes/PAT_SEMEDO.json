@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le Dictionary of American Family Names classe Semedo comme patronyme espagnol d'Estrémadure et portugais, mais donne explicitement son étymologie comme inexpliquée. Cette conclusion sourcée empêche d'inventer une dérivation pour la branche capverdienne.",
-        "claimStatus": "established",
-        "sourceRefs": ["dafn-semedo-2022"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -146,6 +141,26 @@
                 "source_kind": "academic",
                 "page": "p. 16",
                 "notes": "Mémoire présenté à l'Académie royale des sciences de Lisbonne, Lisbonne, Typographia da Academia Real das Sciencias, 1900. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 16 : le 9 octobre 1650, à la mort du gouverneur Gamboa Ayalla, la chambre municipale élit gouverneur par intérim « Pedro Semedo Cardoso », qui prend ses fonctions le 16 ; « Semedo Cardoso era natural de S. Thiago ». Auteur de l'époque coloniale, cité ici pour les noms qu'il relève."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le Dictionary of American Family Names classe Semedo comme patronyme espagnol d'Estrémadure et portugais, mais donne explicitement son étymologie comme inexpliquée. Cette conclusion sourcée empêche d'inventer une dérivation pour la branche capverdienne.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e édition — entrée Semedo",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/semedo?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 11 octobre 2026 dans la traduction française que le site affiche. La notice dit : espagnol (surtout d'Estrémadure) et portugais, inexpliqué."
               }
             ]
           }

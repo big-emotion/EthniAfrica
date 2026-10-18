@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une étude de la culture fang cite Nchama parmi les noms féminins et reprend, en l’attribuant à Nsue-Mibui, la glose « femme destructrice ». Comme l’article relaie une source secondaire et ne décompose pas le terme, la glose reste une affirmation attribuée plutôt qu’une reconstruction établie.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["nguema-obiang-mikue-2023-nchama"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -178,6 +173,27 @@
                 "source_kind": "academic",
                 "page": "p. 285",
                 "notes": "Berlin, Ernst Wasmuth, 1913 ; exemplaire numérisé d'Internet Archive, lu le 18 octobre 2026. Page 285 : « Dem eigenen, vom Vater gegebenen Namen wird der des Vaters selbst angefügt » (au nom propre donné par le père s'ajoute celui du père lui-même) ; l'exemple de l'auteur est Boka-Essun, Boka fils d'Essun. Même page : « Familiennamen in unserem Sinne kennen die Pangwe nicht » (les Pangwe ne connaissent pas de noms de famille au sens où nous l'entendons)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une étude de la culture fang cite Nchama parmi les noms féminins et reprend, en l’attribuant à Nsue-Mibui, la glose « femme destructrice ». Comme l’article relaie une source secondaire et ne décompose pas le terme, la glose reste une affirmation attribuée plutôt qu’une reconstruction établie.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "La cultura para el reconocimiento de la identidad: caso de la cultura fang de Guinea Ecuatorial",
+                "author": "Bonifacio Nguema Obiang-Mikue",
+                "year": 2023,
+                "url": "https://doi.org/10.29166/catedra.v6i1.4282",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 179 et 182",
+                "notes": "Article de Revista Cátedra 6(1), 2023, pp. 171-186. Lu le 18 octobre 2026 dans le PDF en espagnol. Page 179 : « nombres tales como Nchama, Ñengono, Angue, Obono, Mikue, Okomo, Ayang, Nfono, entre otros para identificar a las mujeres ». Page 182, résultats d'une enquête auprès de 102 personnes fang : être fang, c'est aussi « llevar nombres y apellidos de los fang, por ejemplo, Nguema, Mibuy, Ondo, Esono, Nchama »."
               }
             ]
           }

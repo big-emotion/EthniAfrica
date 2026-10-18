@@ -40,13 +40,8 @@
   "designatedSocialUnit": "lineage",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "L’encyclopédie Treccani emploie Senussi pour les descendants de Muhammad ibn Ali al-Sanusi, fondateur de la confrérie, dans le contexte de la Cyrénaïque. Cette définition historique est limitée à ce lignage.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["treccani-senussi"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -208,6 +203,26 @@
                 "source_kind": "archive",
                 "page": "p. 5",
                 "notes": "Paris, Société de géographie, 1884 ; la page de titre porte aussi « 1300 de l'hégire — 1883 de notre ère ». Lu sur une numérisation d'archive.org déposée en 2022, copie non officielle, le 14 octobre 2026 ; la reconnaissance de texte rend mal les caractères arabes, la lecture a porté sur le français. Page 5 : « Sidi Mohammed Ben ʿAli Es-Senoûsi » ; le novateur appelle sa doctrine « tariqa mohammediya », « voie de Mohammed » ; « ce nom de la secte a été changé, du moins dans la pratique, et maintenant c'est tariqat es-senoûsiya, ou voie senoûsienne, qu'on appelle la doctrine »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L’encyclopédie Treccani emploie Senussi pour les descendants de Muhammad ibn Ali al-Sanusi, fondateur de la confrérie, dans le contexte de la Cyrénaïque. Cette définition historique est limitée à ce lignage.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Senussi — Enciclopedia Treccani",
+                "author": "Istituto della Enciclopedia Italiana",
+                "year": null,
+                "url": "https://www.treccani.it/enciclopedia/senussi/",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice encyclopédique en italien, sans date de publication ni auteur, lue le 14 octobre 2026. Elle désigne par Senussi les descendants de Muḥammad ibn ʿAlī as-Sanūsī (1787-1859), dit as-Sanūsī al-Kabīr, « le Grand Senusso », fondateur en 1837 de la confrérie Sanūsiyya, installé ensuite en Égypte puis en Cyrénaïque. Elle ne dit rien de l'origine du nom as-Sanūsī lui-même."
               }
             ]
           }

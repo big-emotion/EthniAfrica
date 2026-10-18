@@ -41,13 +41,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "En twi, au Ghana, Kofi est le nom du garçon né le vendredi ; chaque garçon reçoit d'ordinaire le nom du jour de sa naissance.",
-        "claimStatus": "established",
-        "sourceRefs": ["christaller-1881-twi", "agyekum-2006-akan-names"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -217,8 +212,19 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 236 ; p. 663",
                 "notes": "Bâle, Evangelical Missionary Society, 1881 ; exemplaire numérisé sur archive.org. Page 236, entrée « Kofi » : nom propre d'un garçon ou d'un homme né un vendredi. Page 663 (annexe D) : chaque garçon reçoit un nom du jour de sa naissance, parmi sept noms dont Kofi. Missionnaire de Bâle, cité pour les formes qu'il écrit. Lu le 14 octobre 2026."
+              },
+              {
+                "title": "The Sociolinguistic of Akan Personal Names",
+                "author": "Kofi Agyekum",
+                "year": 2006,
+                "url": "https://www.njas.fi/njas/article/download/24/16/38",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 214",
+                "notes": "Nordic Journal of African Studies, vol. 15, n° 2, 2006, p. 206-235. Lu le 15 octobre 2026. Page 213 : le nom du jour est appelé kradin, « nom de l'âme ». Page 214 : le tableau des noms de jour en twi et en fante. Page 215 : les surnoms d'éloge de chaque jour."
               }
-            ]
+            ],
+            "claimStatus": "established"
           },
           {
             "period": {

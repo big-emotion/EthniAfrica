@@ -22,13 +22,8 @@
   "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Kasongo M. Kapanga cite Kazadi parmi plusieurs noms luba très répandus au Congo. Cette attestation savante établit l'association luba-congolaise du nom, mais non son étymologie, son ancienneté ni son classement comme nom clanique.",
-        "claimStatus": "established",
-        "sourceRefs": ["kapanga-2009-kazadi"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -132,6 +127,27 @@
             "statement": "Le nom Kazadi apparaît par écrit dans un article de Kasongo M. Kapanga, qui le range parmi les noms luba très répandus au Congo, avec Kasongo, Mujinga, Kabongo et Kabamba. C'est la plus ancienne trace de ce nom que le projet connaît ; le nom est plus ancien que cet article.",
             "formAsWritten": "Kazadi",
             "birth": true,
+            "sources": [
+              {
+                "title": "Legitimizing the invented Congolese space: The gaze from within in early Congolese fiction",
+                "author": "Kasongo M. Kapanga",
+                "year": 2009,
+                "url": "https://letterkunde.africa/article/view/3462/4236",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 34",
+                "notes": "Tydskrif vir Letterkunde 46 (1), 2009, p. 28-39, texte intégral lu. À la page 34, à propos du nom de l'auteur Badibanga, Kapanga écrit que, comme beaucoup de noms luba, tels Kasongo, Kazadi, Mujinga, Kabongo et Kabamba, Badibanga est très répandu au Congo. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Kasongo M. Kapanga cite Kazadi parmi plusieurs noms luba très répandus au Congo. Cette attestation savante établit l'association luba-congolaise du nom, mais non son étymologie, son ancienneté ni son classement comme nom clanique.",
+            "claimStatus": "established",
             "sources": [
               {
                 "title": "Legitimizing the invented Congolese space: The gaze from within in early Congolese fiction",

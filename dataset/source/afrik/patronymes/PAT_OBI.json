@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le Dictionary of American Family Names donne deux analyses igbo de Obi : le titre obì d'un ancien, chef ou roi traditionnel, et la forme courte d'un nom personnel composé tel que Obialo.",
-        "claimStatus": "established",
-        "sourceRefs": ["hanks-obi"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -221,6 +216,26 @@
                 "source_kind": "archive",
                 "page": "p. 92",
                 "notes": "Londres, Richard Bentley, 1837 ; tome I numérisé sur archive.org, lu le 13 octobre 2026, page vue en image. Page 92, titre courant « Mission from King Obie » : deux chefs envoyés par « King Obie » viennent accueillir l'expédition avant Eboe, que l'on écrit aujourd'hui Aboh ; « King Obie was to present us on our arrival with two bullocks, ten goats, and six hundred yams ». Voyageurs britanniques, cités pour la forme qu'ils écrivent."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le Dictionary of American Family Names donne deux analyses igbo de Obi : le titre obì d'un ancien, chef ou roi traditionnel, et la forme courte d'un nom personnel composé tel que Obialo.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Obi Name Meaning and Obi Family History at FamilySearch",
+                "author": "Patrick Hanks",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=obi",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Entrée Obi du Dictionary of American Family Names de Patrick Hanks (2003, 2006), hébergée par FamilySearch. Lu le 13 octobre 2026. Texte : « West African (Nigeria): Igbo name, from the title obì, denoting either an elder or a chief, a traditional Igbo king ». L'entrée propose aussi une forme courte d'un nom personnel comme Obialo, « the heart is at peace », et cite un nom de famille japonais Obi, d'origine distincte."
               }
             ]
           }

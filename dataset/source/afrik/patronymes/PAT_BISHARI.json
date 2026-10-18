@@ -11,19 +11,28 @@
     {
       "spelling": "Bishari",
       "attestations": [
-        { "countryId": "EGY", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "EGY",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     },
     {
       "spelling": "Bisharin",
       "attestations": [
-        { "countryId": "EGY", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "EGY",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     },
     {
       "spelling": "Bishariyyn",
       "attestations": [
-        { "countryId": "SDN", "sourceRefs": ["bishari-pantuliano-2002"] }
+        {
+          "countryId": "SDN",
+          "sourceRefs": ["bishari-pantuliano-2002"]
+        }
       ]
     }
   ],
@@ -31,13 +40,8 @@
   "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Pantuliano présente les Bishariyyn comme l'une des principales tribus de la confédération beja du nord-est soudanais ; la source documente une désignation collective et non l'étymologie d'un patronyme Bishari.",
-        "claimStatus": "established",
-        "sourceRefs": ["bishari-pantuliano-2002"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -165,6 +169,27 @@
                 "source_kind": "archive",
                 "page": "p. 148",
                 "notes": "Londres, John Murray, 1819, publié après la mort de l'auteur en 1817, lu dans l'exemplaire numérisé le 12 octobre 2026. Page 148 : « two principal tribes, the Ababde and Bisharye » ; les Bisharye « inhabit the mountains from thence southwards, as far as Suakin ». L'Arabe est écrit en regard du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Pantuliano présente les Bishariyyn comme l'une des principales tribus de la confédération beja du nord-est soudanais ; la source documente une désignation collective et non l'étymologie d'un patronyme Bishari.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Sustaining Livelihoods across the Rural-Urban Divide: Changes and Challenges Facing the Beja Pastoralists of North Eastern Sudan",
+                "author": "Sara Pantuliano",
+                "year": 2002,
+                "url": "https://www.iied.org/sites/default/files/pdfs/migrate/9163IIED.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "IIED, 2002, lu en texte intégral le 12 octobre 2026. Page 1 : « The main tribes are the Amar'ar/Atmaan, the Bishariyyn and the Hadendowa, who mostly live in North-Eastern Sudan », tous réunis par le tu bedawiye."
               }
             ]
           }

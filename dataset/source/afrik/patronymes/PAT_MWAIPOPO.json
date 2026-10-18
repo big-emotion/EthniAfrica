@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Lusekelo analyse Mwaipopo comme un nom nyakyusa en mwa-, « fils d’Ipopo ». Dans ce système, les formes en mwa- indiquent une descendance familiale paternelle et fonctionnent le plus souvent comme noms de clan ou de famille, à distinguer des formes en sa- associées à une descendance maternelle.",
-        "claimStatus": "established",
-        "sourceRefs": ["lusekelo-2018-mwaipopo"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -139,7 +134,8 @@
                 "page": "p. 53 ; p. 54",
                 "notes": "African Study Monographs, vol. 39, n° 2, juin 2018, p. 47-67, lu en texte intégral le 14 octobre 2026 dans la copie du dépôt de l'Université de Kyoto. Page 53, liste (4) : « Mwaipopo (son of Ipopo) ». Page 54, liste (6) : le même nom figure parmi les noms de princes où certains mots ont un sens inconnu (« Some mwa-names contain words whose meanings are unknown »)."
               }
-            ]
+            ],
+            "claimStatus": "established"
           },
           {
             "period": {

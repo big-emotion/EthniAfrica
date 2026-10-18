@@ -23,18 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Nkamigbo classe Chinedu parmi les noms igbo en Chi remodelés par le christianisme et le glose « Dieu guide ». L'article documente aussi son emploi contemporain comme nom de famille, sans en déduire une transmission uniforme.",
-        "claimStatus": "established",
-        "sourceRefs": ["nkamigbo-2019-igbo-names"]
-      },
-      {
-        "claim": "Une étude des noms igbo explique que chi et chukwu, dans un nom, renvoient à un être supérieur, le plus haut des dieux que reconnaissent les Igbo.",
-        "claimStatus": "established",
-        "sourceRefs": ["asadu-nzuanke-2014-chi-names"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -219,6 +209,47 @@
                 "tier": "unverified",
                 "source_kind": "community",
                 "notes": "Site collaboratif de prénoms, lu le 13 octobre 2026. La notice donne « God is leading » en igbo, avec les racines chi et dú. Contenu communautaire, sans source citée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Nkamigbo classe Chinedu parmi les noms igbo en Chi remodelés par le christianisme et le glose « Dieu guide ». L'article documente aussi son emploi contemporain comme nom de famille, sans en déduire une transmission uniforme.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "The Sociolinguistics of Igbo Personal Names",
+                "author": "Linda Chinelo Nkamigbo",
+                "year": 2019,
+                "url": "https://www.nigerianjournalsonline.org/index.php/JOLLC/article/download/4155/3899/7523",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 173-174",
+                "notes": "Journal of Linguistics, Language and Culture, vol. 6, no 1, 2019, p. 158-178. Lu dans le PDF intégral le 13 octobre 2026. Section « Chi names » : avec le christianisme, les Igbo ont changé le « Chi », notion clé de leur philosophie, pour dire leur croyance en Dieu, d'où de nombreux noms en chi ; la liste donne « Chinedu, God leads »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une étude des noms igbo explique que chi et chukwu, dans un nom, renvoient à un être supérieur, le plus haut des dieux que reconnaissent les Igbo.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Onomastics and Translation: The Case of Igbo→English Translation of Chi Names",
+                "author": "Oluchukwu Asadu et Samson Fabian Nzuanke",
+                "year": 2014,
+                "url": "https://www.ajol.info/index.php/lwati/article/view/119750",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lwati: A Journal of Contemporary Research, vol. 11, no 3, 2014, p. 122-140 ; résumé lu sur la page de la revue le 13 octobre 2026. Les éléments chi et chukwu des noms igbo y renvoient à un être supérieur, le plus haut des dieux que reconnaissent les Igbo. L'étude porte sur les noms de trente étudiants de l'université Nnamdi Azikiwe, à Awka ; elle ne traite pas des noms de famille."
               }
             ]
           }

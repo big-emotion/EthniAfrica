@@ -22,20 +22,9 @@
   "designatedSocialUnit": "lineage",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "L'étude socio-sémantique des noms tumbuka indique qu'une personne nommée Nyirenda est rattachée, dans le système local décrit, au nord-ouest du Malawi et à la chefferie Mowa. Elle présente les noms familiaux comme des marqueurs de localité, sans reconstruire l'étymologie lexicale de Nyirenda.",
-        "claimStatus": "established",
-        "sourceRefs": ["sekeleko-nyirenda"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "La même étude décrit l'adjonction des préfixes nya- ou honorifique anya-, glosés « fille de », aux noms de famille lorsqu'une femme est interpellée ; elle ne présente toutefois pas Nyirenda lui-même comme une forme créée par ce procédé.",
-        "claimStatus": "established",
-        "sourceRefs": ["sekeleko-nyirenda"]
-      }
-    ]
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -188,6 +177,46 @@
                 "source_kind": "academic",
                 "page": "p. 155",
                 "notes": "Berkeley, University of California Press, 1989, ouvrage dirigé par Leroy Vail, lu en texte intégral le 16 octobre 2026 dans la copie en ligne de l'ouvrage. Page 155 : « Saulos Nyirenda, a telegraph clerk educated at the Mission who was later to be considered the Tumbuka's ‘Father of History’, produced a lengthy political history in 1909. » Rapport de seconde main : nous n'avons pas lu cette histoire."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'étude socio-sémantique des noms tumbuka indique qu'une personne nommée Nyirenda est rattachée, dans le système local décrit, au nord-ouest du Malawi et à la chefferie Mowa. Elle présente les noms familiaux comme des marqueurs de localité, sans reconstruire l'étymologie lexicale de Nyirenda.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "A socio-semantic analysis of selected Tumbuka surnames and clan names",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://dspace.unza.zm/bitstreams/790df0df-ccbb-432d-bb1f-eba586202559/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Mémoire universitaire consulté par l'extrait intégral indexé du dépôt de l'Université de Zambie. Il traite Nyirenda comme nom familial tumbuka, le rattache au territoire de la chefferie Mowa dans le nord-ouest du Malawi et décrit les préfixes nya- et anya- employés pour les femmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La même étude décrit l'adjonction des préfixes nya- ou honorifique anya-, glosés « fille de », aux noms de famille lorsqu'une femme est interpellée ; elle ne présente toutefois pas Nyirenda lui-même comme une forme créée par ce procédé.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "A socio-semantic analysis of selected Tumbuka surnames and clan names",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://dspace.unza.zm/bitstreams/790df0df-ccbb-432d-bb1f-eba586202559/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Mémoire universitaire consulté par l'extrait intégral indexé du dépôt de l'Université de Zambie. Il traite Nyirenda comme nom familial tumbuka, le rattache au territoire de la chefferie Mowa dans le nord-ouest du Malawi et décrit les préfixes nya- et anya- employés pour les femmes."
               }
             ]
           }

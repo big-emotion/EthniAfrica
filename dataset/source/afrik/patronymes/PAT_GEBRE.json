@@ -32,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le Dictionary of American Family Names analyse Gebre comme un nom personnel en ge'ez ou en amharique, interprété « mon serviteur » et employé dans des composés au sens de « serviteur de ». Il précise que son enregistrement comme surname dans la diaspora ne reflète pas un nom familial héréditaire éthiopien.",
-        "claimStatus": "established",
-        "sourceRefs": ["dafn-gebre"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -200,6 +195,26 @@
                 "source_kind": "archive",
                 "page": "p. 6",
                 "notes": "Édimbourg, J. Ruthven, pour G. G. J. et J. Robinson, Londres, 1790. Lu le 13 octobre 2026 sur l'exemplaire numérisé d'archive.org (le texte imprime le s long, que nous écrivons s). Page 6 : à propos du roi Amda Sion, « his Christian name was Guebra Mascal »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le Dictionary of American Family Names analyse Gebre comme un nom personnel en ge'ez ou en amharique, interprété « mon serviteur » et employé dans des composés au sens de « serviteur de ». Il précise que son enregistrement comme surname dans la diaspora ne reflète pas un nom familial héréditaire éthiopien.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e édition — entrée Gebre",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/gebre?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 13 octobre 2026 dans la traduction française que le site affiche. La notice dit : nom éthiopien, du nom personnel Gebre interprété comme « mon serviteur » en guèze ou en amharique ; il fait souvent partie d'un nom chrétien tel que Gebremariam et se traduit alors « serviteur de ». Les Éthiopiens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
               }
             ]
           }

@@ -40,14 +40,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [],
-    "historicalSyntheses": [
-      {
-        "claim": "Au début du XVIIIe siècle, des Mandé djoula ajoutent Kong à leurs établissements. Des Mandé keita et koulibali y sont devenus par la suite des Wattara, et l'un d'eux, Sékou Wattara, règne à Nafana et à Kong. La synthèse qui rapporte cette suite ne dit ni pourquoi ni comment leur nom a changé, et ne dit pas que le nom de famille Ouattara en vient.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["hga-v-izard-ki-zerbo"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -292,6 +286,26 @@
                 "source_kind": "archive",
                 "page": "p. 62",
                 "notes": "Exemplaire numérisé d'archive.org (Hachette, 1892, selon la notice), lu le 12 octobre 2026 ; ses pages portent l'en-tête « Le Tour du monde » et la pagination citée est celle de cet exemplaire. Récit d'un officier français en mission, 1887-1889. Page 62 : parmi les envoyés venus de Niélé, « un Ouattara qui porte une barbe de sapeur » rend visite à l'auteur à Fourou ; l'entrée du journal tombe entre le lundi 5 et le 9 décembre, c'est-à-dire en 1887 d'après le jour de la semaine."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Au début du XVIIIe siècle, des Mandé djoula ajoutent Kong à leurs établissements. Des Mandé keita et koulibali y sont devenus par la suite des Wattara, et l'un d'eux, Sékou Wattara, règne à Nafana et à Kong. La synthèse qui rapporte cette suite ne dit ni pourquoi ni comment leur nom a changé, et ne dit pas que le nom de famille Ouattara en vient.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 12 : Du Niger à la Volta",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, dir. B. A. Ogot, 1999 ; chapitre de M. Izard et J. Ki-Zerbo. Page imprimée : à Kong, des Mandé keita et koulibali, devenus par la suite des Wattara, s'imposent aux habitants du pays, et Sékou Wattara règne à Nafana et à Kong (p. 399). Le chapitre écrit Wattara là où la fiche écrit Ouattara et Watara ; il ne donne aucun sens au nom."
               }
             ]
           }

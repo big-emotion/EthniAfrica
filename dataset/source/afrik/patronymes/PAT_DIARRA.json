@@ -46,57 +46,10 @@
   "transmissionMode": "patrilineal",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [
-      {
-        "claim": "Dans l'épopée de Soundiata, le nom est celui des rois du pays de Do, d'où vient Sogolon, la mère de Soundiata : Do Mansa Gnèmo Diarra règne quand le buffle ravage le pays, et le roi de Do qui vient combattre aux côtés de son neveu Soundiata est appelé à la fois Faony Kondé et Faony Diarra. Le récit porte ainsi sur un même roi les deux noms, Kondé et Diarra.",
-        "claimStatus": "claimed",
-        "carrier": "Djeli Mamadou Kouyaté, griot de Djeliba Koro, près de Siguiri",
-        "collection": "mediated",
-        "collector": "Djibril Tamsir Niane, qui l'a traduit en français",
-        "context": "Épopée publiée en 1960",
-        "sourceRefs": ["niane-1960"]
-      },
-      {
-        "claim": "Une louange du pays de Do nomme ensemble Mansa Oumalé Kondé et Marfadou Diara, dans le refrain « Do ni Kri ». L'éditeur de l'épopée, qui la cite, situe le pays de Do dans l'actuelle région de Ségou, en le donnant comme une hypothèse.",
-        "claimStatus": "claimed",
-        "collection": "mediated",
-        "collector": "Djibril Tamsir Niane, dans les notes de l'épopée",
-        "context": "Louange citée en maninka avec sa traduction, dans une note de l'édition de 1960",
-        "sourceRefs": ["niane-1960"]
-      },
-      {
-        "claim": "Les Diarra viendraient du pays de Do, fait de douze villages dont l'emplacement exact n'est pas connu. Certains Diarra descendraient des rois de Ségou, et les Kamissoko, leurs partenaires de plaisanterie, seraient leurs frères cadets.",
-        "claimStatus": "claimed",
-        "carrier": "Des griots que Molinie ne nomme pas",
-        "collection": "mediated",
-        "collector": "Molinie, officier de la marine française, en 1959",
-        "context": "Récit tiré d'un dictionnaire rédigé pour les Européens en poste en Afrique-Occidentale française, cité de seconde main dans un mémoire de 2017 qui met en garde contre ses généralisations sans fondement",
-        "sourceRefs": ["bogacheva-2017-jamu"]
-      }
-    ],
+    "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le nom de clan Jàra, dont Diarra est la transcription française usuelle, est identique au mot bambara jàra, qui désigne le lion (wáraba en est le synonyme) et, dans un second sens que le dictionnaire donne à part, le fétiche. L'épopée appelle Soundiata « Manding-Diara, lion du Manding ». Le dictionnaire des noms de clan range le lion, sous ses deux noms, parmi les interdits du clan. Aucune source consultée ne dit si le clan tient son nom du fauve, du fétiche ou d'autre chose : l'origine du nom n'est pas établie.",
-        "claimStatus": "contested",
-        "sourceRefs": ["bamadaba-lexique", "bamadaba-jamuw", "niane-1960"]
-      },
-      {
-        "claim": "Le lion a longtemps été l'objet de cultes dans la savane ouest-africaine : l'écrivain guinéen Camara Laye raconte son initiation, enfant, dans le nord de la Guinée, par un masque de lion nommé Konden Diarra, signe que ces cultes vivaient encore au moins dans le deuxième quart du XXe siècle. Un historien juge plausible que le nom de Soundiata, où entre le mot jata ou jara, s'en inspire ; il n'en tire aucune explication du nom de clan.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["jansen-sunjata-paradigm"]
-      },
-      {
-        "claim": "Une autre explication fait venir le nom d'un nom de lieu, celui d'une ancienne entité politique, la région de Jara. Une étude de 2017 la juge probable et rattache à cette région deux témoignages anciens : un texte portugais écrit au plus tard vers 1510, qui dit que le roi des Mandingues vit dans une ville entourée d'un mur de terre appelée Jaga, et la chronique de Tombouctou attribuée à Mahmud Kati, qui consacre un chapitre à une région de Jara soumise aux Songhaï. L'explication n'est pas établie.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["bogacheva-2017-jamu"]
-      },
-      {
-        "claim": "Le dictionnaire des noms de clan rapporte un interdit propre au clan : un Jàra ne doit pas regarder un nourrisson pendant les huit premiers jours qui suivent sa naissance, faute de quoi l'enfant mourrait. Aucune source indépendante ne recoupe cette note.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["bamadaba-jamuw"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -365,9 +318,13 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 21-25 et p. 102",
-                "notes": "Présence Africaine. Récit du griot Djeli Mamadou Kouyaté, de Djeliba Koro près de Siguiri, mis par écrit et traduit par Djibril Tamsir Niane. Pages lues sur l'exemplaire numérisé d'archive.org (SoundjataOuLepopeeMandingue), proches de l'édition imprimée sans s'y confondre."
+                "notes": "Présence Africaine. Récit du griot Djeli Mamadou Kouyaté, de Djeliba Koro près de Siguiri, mis par écrit et traduit par Djibril Tamsir Niane. Pages lues sur l'exemplaire numérisé d'archive.org (SoundjataOuLepopeeMandingue), proches de l'édition imprimée sans s'y confondre.\nÉpopée publiée en 1960"
               }
-            ]
+            ],
+            "claimStatus": "claimed",
+            "carrier": "Djeli Mamadou Kouyaté, griot de Djeliba Koro, près de Siguiri",
+            "collection": "mediated",
+            "collector": "Djibril Tamsir Niane, qui l'a traduit en français"
           },
           {
             "period": {
@@ -406,6 +363,153 @@
                 "source_kind": "academic",
                 "page": "p. 56",
                 "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov ; titre traduit du russe. Lu dans le PDF déposé, pagination imprimée. Les données sans indication de provenance y viennent, selon l'autrice, des matériaux réunis par Valentin Vydrine et Artem Davydov. Un mémoire de licence n'est pas relu par des pairs : il est cité pour les témoignages qu'il transmet. Le texte portugais est cité d'après l'édition de Valentim Fernandes (1979) ; la chronique est celle attribuée à Mahmud Kati."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une louange du pays de Do nomme ensemble Mansa Oumalé Kondé et Marfadou Diara, dans le refrain « Do ni Kri ». L'éditeur de l'épopée, qui la cite, situe le pays de Do dans l'actuelle région de Ségou, en le donnant comme une hypothèse.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Soundjata ou l'épopée mandingue",
+                "author": "Djibril Tamsir Niane, d'après le récit du griot Djeli Mamadou Kouyaté",
+                "year": 1960,
+                "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21-25 et p. 102",
+                "notes": "Présence Africaine. Récit du griot Djeli Mamadou Kouyaté, de Djeliba Koro près de Siguiri, mis par écrit et traduit par Djibril Tamsir Niane. Pages lues sur l'exemplaire numérisé d'archive.org (SoundjataOuLepopeeMandingue), proches de l'édition imprimée sans s'y confondre.\nÉpopée publiée en 1960\nLouange citée en maninka avec sa traduction, dans une note de l'édition de 1960"
+              }
+            ],
+            "collection": "mediated",
+            "collector": "Djibril Tamsir Niane, dans les notes de l'épopée"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Les Diarra viendraient du pays de Do, fait de douze villages dont l'emplacement exact n'est pas connu. Certains Diarra descendraient des rois de Ségou, et les Kamissoko, leurs partenaires de plaisanterie, seraient leurs frères cadets.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 54-55",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov ; titre traduit du russe. Lu dans le PDF déposé, pagination imprimée. Les données sans indication de provenance y viennent, selon l'autrice, des matériaux réunis par Valentin Vydrine et Artem Davydov. Un mémoire de licence n'est pas relu par des pairs : il est cité pour les témoignages qu'il transmet. Notice Jàra : graphies françaises Diarra et Diara ; parmi les interdits du clan, jàra et wáraba, les deux mots du lion.\nRécit tiré d'un dictionnaire rédigé pour les Européens en poste en Afrique-Occidentale française, cité de seconde main dans un mémoire de 2017 qui met en garde contre ses généralisations sans fondement"
+              }
+            ],
+            "carrier": "Des griots que Molinie ne nomme pas",
+            "collection": "mediated",
+            "collector": "Molinie, officier de la marine française, en 1959"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom de clan Jàra, dont Diarra est la transcription française usuelle, est identique au mot bambara jàra, qui désigne le lion (wáraba en est le synonyme) et, dans un second sens que le dictionnaire donne à part, le fétiche. L'épopée appelle Soundiata « Manding-Diara, lion du Manding ». Le dictionnaire des noms de clan range le lion, sous ses deux noms, parmi les interdits du clan. Aucune source consultée ne dit si le clan tient son nom du fauve, du fétiche ou d'autre chose : l'origine du nom n'est pas établie.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire bambara-français, lexique",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "https://bamadaba.coastsystems.net/lexicon/j/",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Consulté le 9 octobre 2026. Trois articles distincts : Jara, nom masculin ; Jara, nom de clan ; jara, « lion, Panthera leo », synonyme waraba, puis « fétiche »."
+              },
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA), signalée par Vydrin dans Mandenkan 63, 2020, p. 89-110. Fichier complet consulté. L'entrée Jàra donne les groupes bambara et malinké, des équivalents chez d'autres peuples (Condé, Ndiaye, Koné), parmi les interdits le lion sous ses deux noms, jàra et wáraba, comme partenaires de plaisanterie Tarawele, Denbele, Sanogo, Kone, Kanute, Dunbuya et Bagayogo, et une note rédigée en russe, traduite ici, sur l'interdit des nourrissons ; elle ne porte aucun statut et ne donne aucun sens au nom. Koné y figure à la fois comme équivalent et comme partenaire de plaisanterie. La paire avec Diabaté est portée par l'entrée Jɛbatɛ. Les liens de plaisanterie ne sont pas toujours réciproques d'une entrée à l'autre : chaque paire est citée d'après l'entrée qui la porte, qui peut être celle de l'autre nom."
+              },
+              {
+                "title": "Soundjata ou l'épopée mandingue",
+                "author": "Djibril Tamsir Niane, d'après le récit du griot Djeli Mamadou Kouyaté",
+                "year": 1960,
+                "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21-25 et p. 102",
+                "notes": "Présence Africaine. Récit du griot Djeli Mamadou Kouyaté, de Djeliba Koro près de Siguiri, mis par écrit et traduit par Djibril Tamsir Niane. Pages lues sur l'exemplaire numérisé d'archive.org (SoundjataOuLepopeeMandingue), proches de l'édition imprimée sans s'y confondre.\nÉpopée publiée en 1960"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le lion a longtemps été l'objet de cultes dans la savane ouest-africaine : l'écrivain guinéen Camara Laye raconte son initiation, enfant, dans le nord de la Guinée, par un masque de lion nommé Konden Diarra, signe que ces cultes vivaient encore au moins dans le deuxième quart du XXe siècle. Un historien juge plausible que le nom de Soundiata, où entre le mot jata ou jara, s'en inspire ; il n'en tire aucune explication du nom de clan.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Beyond the Mali Empire — A New Paradigm for the Sunjata Epic",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2952645/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Jansen, Jan, Universiteit Leiden ; article paru dans The International Journal of African Historical Studies, cité d'après la version d'auteur déposée à Leyde et sa pagination. L'auteur soutient que les héros de l'épopée de Soundiata renvoient à des pratiques rituelles plutôt qu'à des personnes historiques. Jata ou Jara signifie « lion », le lion objet de cultes dans la savane, et le masque de lion Konden Diarra du roman L'Enfant noir de Camara Laye, signe que ces cultes se pratiquaient encore dans le deuxième quart du XXe siècle (p. 14)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une autre explication fait venir le nom d'un nom de lieu, celui d'une ancienne entité politique, la région de Jara. Une étude de 2017 la juge probable et rattache à cette région deux témoignages anciens : un texte portugais écrit au plus tard vers 1510, qui dit que le roi des Mandingues vit dans une ville entourée d'un mur de terre appelée Jaga, et la chronique de Tombouctou attribuée à Mahmud Kati, qui consacre un chapitre à une région de Jara soumise aux Songhaï. L'explication n'est pas établie.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 54-55",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov ; titre traduit du russe. Lu dans le PDF déposé, pagination imprimée. Les données sans indication de provenance y viennent, selon l'autrice, des matériaux réunis par Valentin Vydrine et Artem Davydov. Un mémoire de licence n'est pas relu par des pairs : il est cité pour les témoignages qu'il transmet. Notice Jàra : graphies françaises Diarra et Diara ; parmi les interdits du clan, jàra et wáraba, les deux mots du lion."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le dictionnaire des noms de clan rapporte un interdit propre au clan : un Jàra ne doit pas regarder un nourrisson pendant les huit premiers jours qui suivent sa naissance, faute de quoi l'enfant mourrait. Aucune source indépendante ne recoupe cette note.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA), signalée par Vydrin dans Mandenkan 63, 2020, p. 89-110. Fichier complet consulté. L'entrée Jàra donne les groupes bambara et malinké, des équivalents chez d'autres peuples (Condé, Ndiaye, Koné), parmi les interdits le lion sous ses deux noms, jàra et wáraba, comme partenaires de plaisanterie Tarawele, Denbele, Sanogo, Kone, Kanute, Dunbuya et Bagayogo, et une note rédigée en russe, traduite ici, sur l'interdit des nourrissons ; elle ne porte aucun statut et ne donne aucun sens au nom. Koné y figure à la fois comme équivalent et comme partenaire de plaisanterie. La paire avec Diabaté est portée par l'entrée Jɛbatɛ. Les liens de plaisanterie ne sont pas toujours réciproques d'une entrée à l'autre : chaque paire est citée d'après l'entrée qui la porte, qui peut être celle de l'autre nom."
               }
             ]
           }

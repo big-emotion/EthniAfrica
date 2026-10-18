@@ -22,13 +22,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "L'Encyclopaedia Africana atteste Albert Kalonji comme porte-parole luba du Kasaï et rappelle qu'en 1959 une aile du Mouvement national congolais prit le nom MNC/Kalonji. Ce fait documente l'usage historique de Kalonji dans un contexte luba-kasaï, sans établir l'étymologie du nom ni une origine commune à toutes ses lignées.",
-        "claimStatus": "established",
-        "sourceRefs": ["encyclopaedia-africana-lumumba-kalonji"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -155,6 +150,26 @@
                 "source_kind": "academic",
                 "page": "p. 36-37",
                 "notes": "Kongo-Overzee, tome XXI (1955), numéro 1, page 28 et suivantes ; texte en luba avec traduction française. Page 36, texte luba (« mukua Kalonji »), page 37, traduction : « les Kalonji furent vaincus d'abord. La seconde fois, les Kalonji vainquirent les Kuanga ». Pages vues en image. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'Encyclopaedia Africana atteste Albert Kalonji comme porte-parole luba du Kasaï et rappelle qu'en 1959 une aile du Mouvement national congolais prit le nom MNC/Kalonji. Ce fait documente l'usage historique de Kalonji dans un contexte luba-kasaï, sans établir l'étymologie du nom ni une origine commune à toutes ses lignées.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Lumumba, Patrice Emery",
+                "author": "Encyclopaedia Africana",
+                "year": null,
+                "url": "https://encyclopaediaafricana.com/lumumba-p-e/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page web de l'Encyclopaedia Africana, sans date visible ; elle dit que l'une des ailes du MNC est connue comme « M.N.C./Kalonji, after a Luba Kasai spokesman, Albert Kalonji ». Elle ne donne pas d'étymologie du nom. Lu le 13 octobre 2026."
               }
             ]
           }

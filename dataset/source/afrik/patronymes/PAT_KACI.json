@@ -32,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le Dictionnaire des patronymes algériens analyse Aït Kaci comme « ceux de Kaci » ou « les gens de la famille Kaci ». Cette formation établit un collectif familial autour du nom Kaci, sans choisir une étymologie lexicale de Kaci lui-même.",
-        "claimStatus": "established",
-        "sourceRefs": ["kaci-hca-tidjet"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -217,6 +212,27 @@
                 "source_kind": "academic",
                 "page": "p. 267",
                 "notes": "Paris, 1872 ; exemplaire numérisé d'archive.org (tome I), lu le 14 octobre 2026. Page 267, « Tribu des Iâzzouzen (les descendants d'Âzzouz) » : parmi les hameaux et villages du groupe de Taguemmount Boulmou, « Azib Kassi (l'azib de Kassi) ». Un azib est une ferme ou un hameau d'élevage. Les auteurs sont un général d'état-major et un magistrat de l'administration française de l'Algérie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le Dictionnaire des patronymes algériens analyse Aït Kaci comme « ceux de Kaci » ou « les gens de la famille Kaci ». Cette formation établit un collectif familial autour du nom Kaci, sans choisir une étymologie lexicale de Kaci lui-même.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Dictionnaire des patronymes algériens, tome 2 : At Weɣlis",
+                "author": "Mustapha Tidjet",
+                "year": 2016,
+                "url": "https://www.hcamazighite.dz/docs/document/hca/lexiques/dictionnaireII%20Mustapha%20TIDJET%20%20tome%202.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 120",
+                "notes": "Haut Commissariat à l'Amazighité ; recueil de noms de famille de la région des At Weɣlis, en Kabylie, lu en texte intégral le 14 octobre 2026. L'année 2016 est celle que lui donnent les mémoires de master qui le citent. Page 120 : entrée « Kaci », avec deux explications de son origine que le recueil donne côte à côte."
               }
             ]
           }

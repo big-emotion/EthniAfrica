@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "La synthèse de Cultural Atlas donne l'exemple kikuyu « Kimani wa Mumbi », où wa (« de ») exprime « Kimani, fils de Mumbi ». Elle atteste Kimani comme nom personnel dans une construction patronymique ou matronymique traditionnelle non héréditaire, tout en signalant que l'adoption du nom de famille paternel est aujourd'hui devenue plus courante au Kenya. Elle ne fournit pas l'étymologie interne de Kimani.",
-        "claimStatus": "established",
-        "sourceRefs": ["cultural-atlas-kimani"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -183,6 +178,26 @@
                 "source_kind": "archive",
                 "page": "p. 273",
                 "notes": "Londres, Edward Arnold, 1910. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive (bibliothèques de l'université de Californie). Page 273, chapitre sur la sorcellerie : « Near Tu-su, in the possession of one De-gua wa Ki-ma-ni, an individual under the jurisdiction of Ka-ru-ri, chief of Tu-su, is an object that no man living has seen ». Auteurs de l'époque coloniale, cités ici pour la forme qu'ils écrivent."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La synthèse de Cultural Atlas donne l'exemple kikuyu « Kimani wa Mumbi », où wa (« de ») exprime « Kimani, fils de Mumbi ». Elle atteste Kimani comme nom personnel dans une construction patronymique ou matronymique traditionnelle non héréditaire, tout en signalant que l'adoption du nom de famille paternel est aujourd'hui devenue plus courante au Kenya. Elle ne fournit pas l'étymologie interne de Kimani.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Kenyan Culture — Naming",
+                "author": "Chara Scroope",
+                "year": 2018,
+                "url": "https://culturalatlas.sbs.com.au/kenyan-culture/kenyan-culture-naming",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Synthèse culturelle de Cultural Atlas, 2018. Lu le 13 octobre 2026. Il illustre le nom du fils et de la mère par « Kimani wa MUMBI » et précise que, de nos jours, les enfants adoptent bien plus souvent le nom de famille de leur père."
               }
             ]
           }

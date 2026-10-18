@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le Dictionary of American Family Names analyse Faure comme un nom professionnel français régional pour un forgeron ou un ouvrier du fer, avec une possibilité habitative secondaire. Cette analyse lexicale ne prouve pas le métier d'un ancêtre seychellois.",
-        "claimStatus": "established",
-        "sourceRefs": ["dafn-faure-2022"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -173,6 +168,26 @@
                 "tier": "unverified",
                 "source_kind": "community",
                 "notes": "Base de données d'une association de généalogie, qui dépouille les tables et actes d'état civil, les registres paroissiaux et les registres d'inhumation. Lue le 18 octobre 2026. Le patronyme FAURE y figure dans les mariages de Mahé pour la période 1817-1901, avec 5 et 9 mentions dans deux colonnes, « Intervenant 1 » et « Intervenant 2 », que la page ne définit pas. Le détail des actes n'a pas été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le Dictionary of American Family Names analyse Faure comme un nom professionnel français régional pour un forgeron ou un ouvrier du fer, avec une possibilité habitative secondaire. Cette analyse lexicale ne prouve pas le métier d'un ancêtre seychellois.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Faure Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/faure?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e édition, Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 18 octobre 2026 dans la traduction française que le site affiche. La notice fait de Faure, également écrit Fauré, un nom français de métier pour un forgeron ou un ferronnier, tiré d'une forme régionale de fèvre (renvoi à Lefevre), et probablement aussi un nom d'habitation tiré de Du Faure ou La Faure, nom de plusieurs endroits du sud de la France. Elle ne parle pas des Seychelles."
               }
             ]
           }

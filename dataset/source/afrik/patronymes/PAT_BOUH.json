@@ -25,13 +25,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "La Présidence de Djibouti atteste Bouh comme élément médian de la chaîne de noms Absieh Bouh Abdallah ; la notice ne qualifie pas la relation généalogique exprimée par cet élément.",
-        "claimStatus": "established",
-        "sourceRefs": ["bouh-presidence-djibouti-2022"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -97,5 +92,40 @@
       "fieldPath": "homonyms",
       "reason": "Les sources consultées sur Bouh, Buuh et Buux ne permettent pas de présenter un autre nom écrit de la même manière, mais d'origine différente. Les recherches ont porté sur les noms de personnes, de peuples et de lieux."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Les sources réunies dans ce dossier racontent l’histoire du nom Bouh.",
+    "originExplained": true,
+    "names": [
+      {
+        "nameText": "Bouh",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La Présidence de Djibouti atteste Bouh comme élément médian de la chaîne de noms Absieh Bouh Abdallah ; la notice ne qualifie pas la relation généalogique exprimée par cet élément.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Le Président Guelleh rend un vibrant hommage à la mémoire de feu Absieh Bouh Abdallah",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.presidence.dj/index.php/article/le-president-guelleh-rend-un-vibrant-hommage-a-la-memoire-de-feu-absieh-bouh-abdallah-figure-de-proue-de-la-lutte-djiboutienne-pour-l-independance-nationale-1091",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Présidence de la République de Djibouti, 2 juin 2022. La page a été lue intégralement : elle donne de manière répétée le nom Absieh Bouh Abdallah, le décrit comme dirigeant indépendantiste et ancien ambassadeur, et indique son décès à 90 ans."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

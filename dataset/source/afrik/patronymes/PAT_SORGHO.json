@@ -22,20 +22,9 @@
   "designatedSocialUnit": "lineage",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "La notice SORGHO présente les porteurs comme une famille royale de Tenkodogo venue de Gambaga. Cette indication de provenance, non accompagnée d'une chronologie ni d'une source nommée, reste une tradition compilée et non une filiation historique établie.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["burkina-provisional-patronyme-register"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le répertoire provisoire traduit Sorgho par « guêpe ». Aucune analyse en mooré publiée n'ayant été trouvée pour confirmer la forme ou sa dérivation, cette glose reste une interprétation collectée.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["burkina-provisional-patronyme-register"]
-      }
-    ]
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -169,6 +158,48 @@
             "era": "modern",
             "statement": "Le nom Sorgho est porté, selon le même projet de répertoire, par des familles de la lignée royale de Tenkodogo, installées dans le Boulgou, à Tenkodogo et à Bané. Le répertoire les dit venues de Gambaga, au Ghana, sans citer de source.",
             "aspect": "usage",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 189",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de mai 2025 et marqué « version provisoire ». Lu le 11 octobre 2026 sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Notice SORGHO/YIRGA : « Les SORGHO sont les Mosse. Ce patronyme signifie « guêpe ». Ils sont de la Famille royale de Tenkodogo. Ils viennent de Gambaga, on les trouve dans la province du Boulgou (Tenkodogo et Bané). »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La notice SORGHO présente les porteurs comme une famille royale de Tenkodogo venue de Gambaga. Cette indication de provenance, non accompagnée d'une chronologie ni d'une source nommée, reste une tradition compilée et non une filiation historique établie.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 189",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de mai 2025 et marqué « version provisoire ». Lu le 11 octobre 2026 sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Notice SORGHO/YIRGA : « Les SORGHO sont les Mosse. Ce patronyme signifie « guêpe ». Ils sont de la Famille royale de Tenkodogo. Ils viennent de Gambaga, on les trouve dans la province du Boulgou (Tenkodogo et Bané). »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le répertoire provisoire traduit Sorgho par « guêpe ». Aucune analyse en mooré publiée n'ayant été trouvée pour confirmer la forme ou sa dérivation, cette glose reste une interprétation collectée.",
+            "claimStatus": "claimed",
             "sources": [
               {
                 "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",

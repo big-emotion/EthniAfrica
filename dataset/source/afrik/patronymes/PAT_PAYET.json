@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "La notice Payette du Dictionary of American Family Names analyse le français Payet soit comme un nom d'habitation tiré de deux lieux des Landes, soit comme un diminutif de Paye. Faute d'archive de lignée seychelloise, les deux possibilités restent ouvertes.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["dafn-payette-2022"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -230,6 +225,26 @@
                 "tier": "unverified",
                 "source_kind": "press",
                 "notes": "Article en ligne du 7 juillet 2016. L'auteur, généalogiste, rapporte d'après le blog « Le Jour d'avant » que tous les Payet réunionnais ont pour ancêtre commun « Antoine PAYET dit La Roche, un ancien soldat arrivé sur l'île alors Bourbon vers 1674 ». Il cite les origines proposées, Saint-Prim en Isère et Saint-Priest-la-Roche dans la Loire, et retient Saint-Priest en Dauphiné, où un Antoine Fayet fut baptisé en mai 1637, d'après l'acte de baptême qu'il cite sans en donner la cote. Il n'explique pas le passage de Fayet à Payet. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La notice Payette du Dictionary of American Family Names analyse le français Payet soit comme un nom d'habitation tiré de deux lieux des Landes, soit comme un diminutif de Paye. Faute d'archive de lignée seychelloise, les deux possibilités restent ouvertes.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Payette Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.ancestry.com/last-name-meaning/payette",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Patrick Hanks et al., Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice Payette reproduite par Ancestry. Elle définit Payette comme forme américanisée du français Payet et donne deux possibilités pour Payet ; elle ne retrace pas la lignée seychelloise."
               }
             ]
           }

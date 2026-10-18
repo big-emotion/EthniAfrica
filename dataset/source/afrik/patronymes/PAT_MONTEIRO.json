@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le Dictionary of American Family Names analyse Monteiro comme un nom professionnel portugais désignant un chasseur. Il s'agit de l'origine lexicale du patronyme, non d'une fonction sociale héréditaire des lignées capverdiennes.",
-        "claimStatus": "established",
-        "sourceRefs": ["dafn-monteiro-2022"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -133,6 +128,26 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 567",
                 "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 567 : chapitre « Conclusão » : « Quando encontramos as alcunhas ou alcunhas-apelidos de Espadeiro, Mèleiro, Monteiro, evocamos indústrias ou cargos hoje extintos, mas que desempenharam certo papel na antiga sociedade portuguesa »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le Dictionary of American Family Names analyse Monteiro comme un nom professionnel portugais désignant un chasseur. Il s'agit de l'origine lexicale du patronyme, non d'une fonction sociale héréditaire des lignées capverdiennes.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Monteiro Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.ancestry.com/last-name-meaning/monteiro?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Patrick Hanks et al., Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry. La valeur professionnelle de la forme portugaise n'implique pas que les porteurs capverdiens aient exercé ce métier."
               }
             ]
           }

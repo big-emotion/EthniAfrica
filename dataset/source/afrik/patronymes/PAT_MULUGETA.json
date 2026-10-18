@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le répertoire consulté transcrit Mulugeta en ሙሉጌታ et propose les gloses « seigneur accompli » ou « maître complet ». Faute d'appareil critique et de seconde analyse indépendante, cette lecture demeure revendiquée.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["lojs-mulugeta"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -190,6 +185,26 @@
                 "source_kind": "archive",
                 "page": "tome II, p. 598",
                 "notes": "Paris, Librairie orientale et américaine Maisonneuve, tome II, 1932 (le tome I date de 1930). Traduction de l'amharique. Lu le 13 octobre 2026 dans le texte océrisé de la numérisation d'archive.org, qui garde les numéros de page d'origine. Page 598 : « Le ministre des Finances fut le bèdjironde Moulou-guiéta ». La note de l'éditeur, sur la page précédente, dit que la création de ministres fut décidée en octobre 1907 et la proclamation des titulaires faite en janvier 1908."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le répertoire consulté transcrit Mulugeta en ሙሉጌታ et propose les gloses « seigneur accompli » ou « maître complet ». Faute d'appareil critique et de seconde analyse indépendante, cette lecture demeure revendiquée.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Ethiopian Names — Letter M — Lion of Judah Society",
+                "author": "Lion of Judah Society",
+                "year": null,
+                "url": "https://www.lojs.org/ethiopian-names-letter-m/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Répertoire communautaire d'un site rastafari, lu le 13 octobre 2026. L'entrée Mulugeta donne la graphie ሙሉጌታ et la glose « full lord, complete master ». La page ne nomme pas de compilateur, n'est pas datée et ne dit pas d'où viennent ses sens."
               }
             ]
           }

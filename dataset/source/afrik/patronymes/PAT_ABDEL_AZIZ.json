@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'entrée analyse Abd al-Aziz, dont Abdel Aziz est une transcription, comme le composé arabe ʿabd (« serviteur ») et ʿazīz (« puissant »), et traduit l'ensemble par « serviteur du Puissant ». Il s'agit d'une analyse du nom personnel, non d'une généalogie.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["btn-abd-al-aziz"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -206,6 +201,26 @@
                 "source_kind": "archive",
                 "page": "page de titre",
                 "notes": "Le Caire, Imprimerie nationale, 1888. Lu le 14 octobre 2026 sur la copie numérisée d'archive.org, aux pages indiquées. La page de titre porte « Traduites de l'arabe par Chefik Mansour Bey - Abdulaziz Kalil Bey - Gabriel Nicolas Kalil Bey et Iskender Ammoun Effendi », au Caire, Imprimerie nationale, 1888. La page ne dit rien de plus sur ces personnes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'entrée analyse Abd al-Aziz, dont Abdel Aziz est une transcription, comme le composé arabe ʿabd (« serviteur ») et ʿazīz (« puissant »), et traduit l'ensemble par « serviteur du Puissant ». Il s'agit d'une analyse du nom personnel, non d'une généalogie.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Abd al-Aziz — Behind the Name",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/abd00al01aziz",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Entrée communautaire lue le 14 octobre 2026. Elle donne la graphie arabe عبد العزيز et dit que le nom veut dire « servant of the powerful », de ʿabd, « servant », et ʿazīz, « powerful ». Elle liste Abdelaziz, Abdul Aziz et Abdulaziz comme variantes, sans citer « Abdel Aziz » en deux mots."
               }
             ]
           }

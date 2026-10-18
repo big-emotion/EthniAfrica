@@ -20,7 +20,10 @@
     {
       "spelling": "Dignai",
       "attestations": [
-        { "countryId": "SDN", "sourceRefs": ["digna-jackson-1926"] }
+        {
+          "countryId": "SDN",
+          "sourceRefs": ["digna-jackson-1926"]
+        }
       ]
     }
   ],
@@ -28,25 +31,9 @@
   "designatedSocialUnit": "lineage",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Jackson décrit les Dignai comme une famille marchande de Suakin et reproduit une filiation masculine reliant Ali Digna, son fils Mohammed et les descendants de celui-ci, dont Osman Digna.",
-        "claimStatus": "established",
-        "sourceRefs": ["digna-jackson-1926"]
-      },
-      {
-        "claim": "Le même ouvrage rapporte une tradition locale faisant venir Ali Digna de Diyarbakır et attribuant aux Dignai une ascendance kurde mêlée aux Hadendoa et aux Arteiga ; cette généalogie est un récit revendiqué, non une filiation historiquement démontrée.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["digna-jackson-1926"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "Jackson consigne deux explications concurrentes de Digna — un rapprochement arabe avec la barbe et un rapprochement beja avec un qualificatif péjoratif — puis les rejette toutes deux ; l'étymologie reste donc indéterminée.",
-        "claimStatus": "contested",
-        "sourceRefs": ["digna-jackson-1926"]
-      }
-    ]
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -259,6 +246,69 @@
                 "source_kind": "archive",
                 "page": "p. 92",
                 "notes": "Londres et New York, Macmillan, 1891. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026. Page 92 (en-tête « History of the Sudan », livre IV), section « Suakin, 1883 » : « the redoubtable Osman Digna. He was of Turkish extraction, his ancestors having come from Constantinople 300 years before ; but the family had intermarried with the Hadendowa tribe »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Jackson décrit les Dignai comme une famille marchande de Suakin et reproduit une filiation masculine reliant Ali Digna, son fils Mohammed et les descendants de celui-ci, dont Osman Digna.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Osman Digna",
+                "author": "H. C. Jackson",
+                "year": 1926,
+                "url": "https://archive.org/details/in.ernet.dli.2015.506204",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 22",
+                "notes": "Londres, Methuen, 1926. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026 ; les pages citées sont celles de l'impression. P. 22 : « Digna was merely the family name, which, if the family were ever to become sufficiently numerous, would ultimately be the designation of a section of a tribe »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le même ouvrage rapporte une tradition locale faisant venir Ali Digna de Diyarbakır et attribuant aux Dignai une ascendance kurde mêlée aux Hadendoa et aux Arteiga ; cette généalogie est un récit revendiqué, non une filiation historiquement démontrée.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Osman Digna",
+                "author": "H. C. Jackson",
+                "year": 1926,
+                "url": "https://archive.org/details/in.ernet.dli.2015.506204",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 22",
+                "notes": "Londres, Methuen, 1926. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026 ; les pages citées sont celles de l'impression. P. 22 : « Digna was merely the family name, which, if the family were ever to become sufficiently numerous, would ultimately be the designation of a section of a tribe »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Jackson consigne deux explications concurrentes de Digna — un rapprochement arabe avec la barbe et un rapprochement beja avec un qualificatif péjoratif — puis les rejette toutes deux ; l'étymologie reste donc indéterminée.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "Osman Digna",
+                "author": "H. C. Jackson",
+                "year": 1926,
+                "url": "https://archive.org/details/in.ernet.dli.2015.506204",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 22",
+                "notes": "Londres, Methuen, 1926. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026 ; les pages citées sont celles de l'impression. P. 22 : « Digna was merely the family name, which, if the family were ever to become sufficiently numerous, would ultimately be the designation of a section of a tribe »."
               }
             ]
           }

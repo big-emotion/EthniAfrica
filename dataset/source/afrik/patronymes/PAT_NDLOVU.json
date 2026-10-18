@@ -22,35 +22,9 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Le sous-clan aba-kwa-Ndlovu a pour fondateur éponyme un homme personnellement nommé Ndlovu, un Mpungose fils de Kuba, qui quitta les environs de Ntlazatshe pour s'établir à la colline eThaleni, en territoire emaCunwini, vraisemblablement sous le règne de Shaka.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["bryant-1929-olden-times"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "Chez les Nguni, l'isibongo (patronyme) et les izithakazelo (louanges de clan) sont deux objets distincts : le second dit l'ascendance et gouverne l'exogamie, le premier sert d'identifiant d'état civil.",
-        "claimStatus": "established",
-        "sourceRefs": ["nomina-africana-nguni-naming"]
-      },
-      {
-        "claim": "Dans le Matabeleland du Sud, l'isibongo ne sert pas seulement à nommer un clan : il fonctionne comme opérateur de classement, articulant nom de clan, origine revendiquée et « caste », et découpant de l'intérieur la catégorie ndébélé plutôt que de la refléter. Un même isibongo peut donc y recouvrir des origines revendiquées distinctes.",
-        "claimStatus": "established",
-        "sourceRefs": ["lindgren-2004-ndebele-castes"]
-      },
-      {
-        "claim": "Ndlovu signifie « éléphant » en langues nguni ; le clan revendique une descendance du troupeau d'éléphants du territoire où il s'est établi.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["iafrika-izithakazelo-ndlovu"]
-      },
-      {
-        "claim": "Le sens lexical « éléphant » est celui du nom de personne porté par l'ancêtre ; il ne suit pas de là que le clan soit nommé d'après un totem. La chronique clanique donne un éponyme, non un animal tutélaire, et les deux explications ne se recouvrent pas.",
-        "claimStatus": "contested",
-        "sourceRefs": ["bryant-1929-olden-times", "iafrika-izithakazelo-ndlovu"]
-      }
-    ]
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -307,7 +281,8 @@
                 "page": "p. 29",
                 "notes": "Londres, Longmans, Green, 1929, lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 29 : « It was probably during Shaka's time that a certain Mpungose, named Ndlovu (originator of the aba-kwa-Ndlovu sub-clan), son of Kuba [...] settled [...] at the éTAleni hill »."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           },
           {
             "period": {
@@ -350,6 +325,96 @@
                 "source_kind": "academic",
                 "page": "p. 62",
                 "notes": "Londres, Longmans, Green, 1929, lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 62 : « There are those who speak of a Ndlovu branch of the Zulu family. We have been able to discover no evidence whatever that there was such branch. » Des réfugiés d'autres clans, placés sous la protection des Zoulous, auraient plutôt été « distinguished as aba-kwa-Ndlovu »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Chez les Nguni, l'isibongo (patronyme) et les izithakazelo (louanges de clan) sont deux objets distincts : le second dit l'ascendance et gouverne l'exogamie, le premier sert d'identifiant d'état civil.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Derivation of given names from ethnonyms, surnames and clan praises: unveiling gendered naming trends in Nguni",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://journals.co.za/doi/10.10520/ejc-nomina_v39_n1_a3",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Nomina Africana: Journal of African Onomastics, vol. 39 n° 1. Établit l'articulation entre patronyme (isibongo) et louanges de clan (izithakazelo) chez les Nguni."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans le Matabeleland du Sud, l'isibongo ne sert pas seulement à nommer un clan : il fonctionne comme opérateur de classement, articulant nom de clan, origine revendiquée et « caste », et découpant de l'intérieur la catégorie ndébélé plutôt que de la refléter. Un même isibongo peut donc y recouvrir des origines revendiquées distinctes.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "The Internal Dynamics of Ethnicity: Clan Names, Origins and Castes in Southern Zimbabwe",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://doi.org/10.3366/afr.2004.74.2.173",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lindgren, Björn, Africa (Journal of the International African Institute) 74(2), 2004, p. 173-193. Réserve à porter avec la citation : le texte intégral est sous péage chez Cambridge Core et n'a pas pu être lu lors de ce travail ; seuls la notice et le résumé ont été vérifiés. Ce qui est cité ici s'y limite — l'isibongo est en Matabeleland du Sud un opérateur de classement qui articule nom de clan, origine revendiquée et « caste », et qui découpe la catégorie ndébélé en parties. Aucune glose de nom particulier ne lui est empruntée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Ndlovu signifie « éléphant » en langues nguni ; le clan revendique une descendance du troupeau d'éléphants du territoire où il s'est établi.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Izithakazelo zakwa Ndlovu — Clan Names",
+                "author": "iAfrika",
+                "year": null,
+                "url": "https://iafrika.org/izithakazelo-zakwa-ndlovu-clan-names/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site communautaire de louanges de clan, lu le 11 octobre 2026. Les louanges commencent par « Ndlovu, Gatsheni, […] Mpongo kaZingelwayo ». La page signale elle-même que son contenu vient de la communauté."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le sens lexical « éléphant » est celui du nom de personne porté par l'ancêtre ; il ne suit pas de là que le clan soit nommé d'après un totem. La chronique clanique donne un éponyme, non un animal tutélaire, et les deux explications ne se recouvrent pas.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 264-265",
+                "notes": "Londres, Longmans, Green, 1929, lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 264 : « The aba-kwa-Ndlovu (of Gatsheni) were [...] a small clan, of Ntungwa-Nguni origin », sous « their petty chief, Mpongo [...] son of Zingelwayo ». Page 265 : leur histoire au temps de Macingwane, chef des amaCunu sous Dingiswayo et Shaka."
+              },
+              {
+                "title": "Izithakazelo zakwa Ndlovu — Clan Names",
+                "author": "iAfrika",
+                "year": null,
+                "url": "https://iafrika.org/izithakazelo-zakwa-ndlovu-clan-names/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site communautaire de louanges de clan, lu le 11 octobre 2026. Les louanges commencent par « Ndlovu, Gatsheni, […] Mpongo kaZingelwayo ». La page signale elle-même que son contenu vient de la communauté."
               }
             ]
           }

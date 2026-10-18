@@ -22,13 +22,8 @@
   "designatedSocialUnit": "lineage",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Dans l'entretien conservé par la Library of Congress, Thomas F. Johnson cite Tubman parmi les noms qui demeuraient au milieu du XXe siècle un marqueur visible de l'ascendance américano-libérienne. Le témoignage documente cette association sociale, mais ne livre pas l'étymologie anglaise du patronyme ni une lignée fondatrice unique.",
-        "claimStatus": "established",
-        "sourceRefs": ["loc-thomas-johnson-liberia"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -151,7 +146,8 @@
                 "page": "p. 142 du PDF",
                 "notes": "Foreign Affairs Oral History Collection, entretien mené par Charles Stuart Kennedy le 18 mars 2003, lu dans le PDF le 11 octobre 2026. Thomas F. Johnson, diplomate américain en poste à Monrovia, dit qu'au milieu du XXe siècle « the main vestige of the Americo-Liberians was their names: Cooper, Campbell, Tubman, Tolbert, etc. ». Témoignage, non dictionnaire."
               }
-            ]
+            ],
+            "claimStatus": "established"
           },
           {
             "period": {

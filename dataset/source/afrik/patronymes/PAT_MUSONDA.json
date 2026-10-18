@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "La page patronymique reproduit, en l’attribuant à The Names of Zambia de Simboma Mubita Lukama, une glose bemba de Musonda comme « pionnier » ou « personne qui goûte la première ». Faute de consultation de l’ouvrage cité, cette glose est enregistrée comme affirmation non vérifiée et non comme étymologie établie.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["forebears-musonda"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -137,6 +132,26 @@
                 "source_kind": "academic",
                 "page": "p. 39",
                 "notes": "Mémoire de master, University of KwaZulu-Natal, juillet 2022 ; PDF lu en entier sur le dépôt de l'université le 18 octobre 2026. Page 39 : les enfants appartiennent au clan de leur mère, mais « children actually take their father's last name » (Wilfred Whiteley, 1950, p. 19) ; selon Osward Chanda (2020), c'est « after interactions with Europeans and Christian missionaries that the naming system changed, as there was an introduction of surnames for colonial administration purposes ». Le mémoire ne cite pas le nom Musonda à cette page."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La page patronymique reproduit, en l’attribuant à The Names of Zambia de Simboma Mubita Lukama, une glose bemba de Musonda comme « pionnier » ou « personne qui goûte la première ». Faute de consultation de l’ouvrage cité, cette glose est enregistrée comme affirmation non vérifiée et non comme étymologie établie.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Musonda Surname Origin, Meaning & Last Name History",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://forebears.io/surnames/musonda",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Base de répartition patronymique consultée directement. Elle atteste l’orthographe Musonda et sa présence dans la Zambie, mais la distribution ne démontre ni l’appartenance Bemba, ni une origine unique, ni un mode de transmission."
               }
             ]
           }

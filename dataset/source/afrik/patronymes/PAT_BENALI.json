@@ -39,20 +39,9 @@
   "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Le compte rendu d’un ouvrage d’onomastique tunisienne rapporte qu’après l’indépendance la normalisation de l’état civil a parfois supprimé l’espace, transformant Ben Ali en Benali. Cette donnée éclaire l’histoire graphique, non l’origine d’une lignée.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["insaniyat-ben-ali"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une contribution communautaire interprète Benali comme « fils d’Ali ». Cette lecture morphologique plausible est conservée au niveau non vérifié : la page ne démontre ni la fixation du patronyme ni une filiation commune.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["forebears-benali"]
-      }
-    ]
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -217,6 +206,47 @@
                 "source_kind": "academic",
                 "page": "p. 79-87 (section sur les patronymes algériens)",
                 "notes": "Insaniyat, 4(10), 2000, p. 79-87, lu en ligne le 13 octobre 2026. L'article dit qu'en Tunisie c'est le décret beylical du 30 juin 1925 qui a commencé la réforme de l'état civil, sans supprimer la nomination traditionnelle, par exemple « Ali ben Ahmed ben Amor Bouderbala ». La version en ligne ne marque pas les pages de l'imprimé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le compte rendu d’un ouvrage d’onomastique tunisienne rapporte qu’après l’indépendance la normalisation de l’état civil a parfois supprimé l’espace, transformant Ben Ali en Benali. Cette donnée éclaire l’histoire graphique, non l’origine d’une lignée.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Ahmed Chabchoub, Voyage au pays des noms — Insaniyat / CRASC",
+                "author": "Noureddine Mihoubi",
+                "year": 2022,
+                "url": "https://insaniyat.crasc.dz/fr/article/ahmed-chabchoub-2017-voyage-au-pays-des-noms-essai-donomastique-culturelle-appliquee-a-la-tunisie-tunis-la-maison-tunisienne-du-livre-222-p",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 103-106 (troisième paragraphe)",
+                "notes": "Noureddine Mihoubi, compte rendu de l'ouvrage d'Ahmed Chabchoub, Voyage au pays des noms. Essai d'onomastique culturelle appliquée à la Tunisie (Tunis, La maison tunisienne du livre, 2017, 222 p.), Insaniyat, n° 98, 2022, p. 103-106, lu en ligne le 13 octobre 2026. Le compte rendu note que les noms de famille tunisiens montrent une prédilection pour les noms qui commencent par Ben, « fils de… », ou par Bou, « le père de… »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une contribution communautaire interprète Benali comme « fils d’Ali ». Cette lecture morphologique plausible est conservée au niveau non vérifié : la page ne démontre ni la fixation du patronyme ni une filiation commune.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Benali Surname Origin, Meaning & Last Name History — Forebears",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://forebears.io/surnames/benali",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Répertoire communautaire consulté le 2 septembre 2026. Il recense Benali en Algérie et reproduit une interprétation utilisateur « fils d’Ali » sans référence savante."
               }
             ]
           }

@@ -22,13 +22,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Le Dictionary of American Family Names, reproduit par FamilySearch, classe Kamau comme nom kikuyu du Kenya dont le sens demeure incertain. Il le rapproche du nom d'un ensemble régimentaire traditionnel du XVIIIe siècle et avance, avec prudence, que son emploi comme nom de famille occidental a pu être popularisé par le prénom de Jomo Kenyatta. Cette proposition historique n'est pas une étymologie démontrée.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["familysearch-kamau"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -137,6 +132,27 @@
                 "source_kind": "archive",
                 "page": "p. 88 et p. 90",
                 "notes": "Londres, H. F. & G. Witherby, 1922 ; numérisation d'Internet Archive ; pages vues en image. Page 88 : « 6. Kamao » dans la première liste des générations (rika) ; page 90 : « 7. Kamao » dans la seconde. Administrateur colonial britannique, cité pour les formes qu'il écrit. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le Dictionary of American Family Names, reproduit par FamilySearch, classe Kamau comme nom kikuyu du Kenya dont le sens demeure incertain. Il le rapproche du nom d'un ensemble régimentaire traditionnel du XVIIIe siècle et avance, avec prudence, que son emploi comme nom de famille occidental a pu être popularisé par le prénom de Jomo Kenyatta. Cette proposition historique n'est pas une étymologie démontrée.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Kamau Name Meaning and Kamau Family History",
+                "author": "FamilySearch, d'après Patrick Hanks (Dictionary of American Family Names)",
+                "year": 2006,
+                "url": "https://www.familysearch.org/en/surname?surname=kamau",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "entrée « Kamau »",
+                "notes": "Entrée FamilySearch attribuée au Dictionary of American Family Names de Patrick Hanks (2003, 2006). Elle dit : « Kikuyu name of uncertain meaning, the name of a traditional ‘regiment set’ in the 18th century ». Lu le 13 octobre 2026."
               }
             ]
           }

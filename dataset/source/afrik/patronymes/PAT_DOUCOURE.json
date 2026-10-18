@@ -68,34 +68,10 @@
   "transmissionMode": "patrilineal",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [
-      {
-        "claim": "Un récit oral publié en 2013 sur un portail communautaire soninké et consacré aux Doucouré du village de Gory, dans le Diafounou, raconte un différend coutumier entre le Diafounou et le Guidimakha au sujet d'un usage réservé par tradition à la famille Doucouré lors d'un mariage, et rattache la branche concernée à un ancêtre nommé Hamédi Mariya.",
-        "claimStatus": "claimed",
-        "griot": "Récit transcrit en soninké et traduit par Doudou Sakho",
-        "transcription": "Épisode d'une série intitulée « Histoire des Doucouré de Gory », publiée en soninké avec traduction française sur le portail communautaire Soninkara.",
-        "sourceRefs": ["soninkara-doucoure-gory"]
-      }
-    ],
-    "writtenChronicles": [
-      {
-        "claim": "Doukouré, ou Doucouré, figure parmi les patronymes identifiés comme soninké aux côtés de Cissé, Diawara, Sylla, Touré ou Bathily.",
-        "claimStatus": "established",
-        "sourceRefs": ["diouf-1998"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "Des sites généalogiques grand public proposent des traductions incompatibles de ce nom, tantôt un terme militaire, tantôt une désignation de sage ou de détenteur d'un savoir, tantôt un rattachement générique à une culture manding sans terme précis. Aucune de ces lectures ne s'appuie sur une méthode ou une source linguistique identifiable.",
-        "claimStatus": "contested",
-        "sourceRefs": ["geneanet-doucoure", "wisdomlib-doukoure"]
-      },
-      {
-        "claim": "Un dictionnaire spécialisé des noms claniques mandé range Dukure, à côté de Jaruma et Tounkara, parmi les noms rattachés à l'un des trois grands regroupements traditionnels de la société soninké. Par tradition, les familles de ce regroupement ne portaient ni vêtement teint à l'indigo ni sandales, et deux lignées de griots leur étaient attitrées. Ce même regroupement entretenait par ailleurs une relation à plaisanterie avec un second grand regroupement soninké, celui dont le Wagadou est donné comme berceau. Le dictionnaire ne mentionne Dukure que comme membre de ce regroupement plus large, sans lui consacrer d'entrée propre ni lui attribuer de statut social distinct.",
-        "claimStatus": "established",
-        "sourceRefs": ["bamadaba-jamuw"]
-      }
-    ]
+    "oralTraditions": [],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -216,10 +192,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Une page consacrée à l'ancien royaume du Diafounou attribue à ce patronyme une origine datée et un titre militaire précis, en s'appuyant apparemment sur des ouvrages universitaires. Cette page indique cependant elle-même qu'elle peut contenir des éléments non sourcés, et ces ouvrages n'ont pas pu être consultés directement pour vérifier qu'ils traitent bien de ce patronyme. Ce récit détaillé n'a donc pas été retenu."
-    },
     {
       "fieldPath": "alliances",
       "reason": "Une pratique de parenté à plaisanterie entre certaines familles ouest-africaines est bien documentée de façon générale. Un dictionnaire spécialisé des noms claniques mandé documente une telle relation, mais entre deux grands regroupements traditionnels soninké qui comptent chacun plusieurs dizaines de noms de famille membres, dont celui-ci pour l'un d'eux : aucun nom de famille précis, à l'intérieur de l'autre regroupement, n'y est désigné comme le partenaire attitré de ce patronyme en particulier."
@@ -369,6 +341,96 @@
                 "source_kind": "archive",
                 "page": "p. 265-266",
                 "notes": "Émile Larose, Paris, 1912. L'auteur est un administrateur colonial en Afrique-Occidentale française. Lu sur l'édition du Projet Gutenberg, qui marque les pages de l'imprimé. Pages 265 et 266, « d'après une tradition »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Un récit oral publié en 2013 sur un portail communautaire soninké et consacré aux Doucouré du village de Gory, dans le Diafounou, raconte un différend coutumier entre le Diafounou et le Guidimakha au sujet d'un usage réservé par tradition à la famille Doucouré lors d'un mariage, et rattache la branche concernée à un ancêtre nommé Hamédi Mariya.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Histoire des Doucouré de Gory : l'origine des familles Tandja du Diafounou",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "http://www.soninkara.org/histoire-soninke/histoire-de-gory/histoire-des-doucoure-de-gory-lorigine-des-familles-tandja-du-diafounou-partie-20-4424.html",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Portail communautaire soninké publiant une série d'histoire orale locale consacrée à un village précis du Diafounou. Le récit est présenté comme un témoignage transmis et traduit, sans méthode de vérification externe ; il documente une tradition vivante plutôt qu'un fait établi.\nÉpisode d'une série intitulée « Histoire des Doucouré de Gory », publiée en soninké avec traduction française sur le portail communautaire Soninkara."
+              }
+            ],
+            "carrier": "Récit transcrit en soninké et traduit par Doudou Sakho"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Doukouré, ou Doucouré, figure parmi les patronymes identifiés comme soninké aux côtés de Cissé, Diawara, Sylla, Touré ou Bathily.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Sénégal, les ethnies et la nation",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": null,
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Makhtar Diouf, Dakar, Nouvelles Éditions Africaines du Sénégal (NEAS), 1998, p. 70-71. La page exacte n'a pas été consultée directement : la liste de patronymes qu'elle contient a été retrouvée en croisant l'article francophone de Wikipédia consacré aux Soninké, qui la reprend en citant cet ouvrage, avec Doukouré ou Doucouré parmi les noms cités."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Des sites généalogiques grand public proposent des traductions incompatibles de ce nom, tantôt un terme militaire, tantôt une désignation de sage ou de détenteur d'un savoir, tantôt un rattachement générique à une culture manding sans terme précis. Aucune de ces lectures ne s'appuie sur une méthode ou une source linguistique identifiable.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "Nom de famille DOUCOURE : origine et signification",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.geneanet.org/nom-de-famille/DOUCOURE",
+                "tier": "unverified",
+                "source_kind": "ai_generated",
+                "notes": "Page de généalogie grand public au contenu généré automatiquement, sans auteur ni source citée, rattachant le nom de façon générique à une culture manding sans étymologie précise vérifiable."
+              },
+              {
+                "title": "Meaning of the name Doukoure",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.wisdomlib.org/names/doukoure",
+                "tier": "unverified",
+                "source_kind": "ai_generated",
+                "notes": "Page de généalogie grand public en anglais donnant plusieurs traductions incompatibles entre elles (chef, ou composé de deux racines signifiant cœur et tambour), sans méthode ni source indiquée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Un dictionnaire spécialisé des noms claniques mandé range Dukure, à côté de Jaruma et Tounkara, parmi les noms rattachés à l'un des trois grands regroupements traditionnels de la société soninké. Par tradition, les familles de ce regroupement ne portaient ni vêtement teint à l'indigo ni sandales, et deux lignées de griots leur étaient attitrées. Ce même regroupement entretenait par ailleurs une relation à plaisanterie avec un second grand regroupement soninké, celui dont le Wagadou est donné comme berceau. Le dictionnaire ne mentionne Dukure que comme membre de ce regroupement plus large, sans lui consacrer d'entrée propre ni lui attribuer de statut social distinct.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Fichier complet lu. Entrée Dúkùre : groupe soninké, statut hɔ̀rɔn, lieux Yélimané et Diafounou, et une note en russe que nous traduisons par « cultivateurs » ; aucun sens donné au nom."
               }
             ]
           }

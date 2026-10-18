@@ -43,23 +43,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le nom compte parmi les noms de famille dogon du Mali, avec Ouologuem, Ongoiba, Dieptilé et Togo.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["interpeace-autoportrait-mali-2015"]
-      },
-      {
-        "claim": "Le dictionnaire des jamuw a une entrée Kásanbàra, qu'il met en équivalence avec Kulibali (Coulibaly) et le localise à Bandiagara, où il porte le marqueur dogon, et à Mopti, où il porte un second marqueur de groupe que nous lisons comme bambara.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["bamadaba-jamuw"]
-      },
-      {
-        "claim": "La même entrée rapporte une explication populaire du nom : kásaa ń bàra, « de moi sort une odeur de poisson ». Un récit y rattache le nom à une histoire de frères, le cadet, Kulibali, ayant mangé un poisson-chat. Cette lecture est une étymologie de tradition orale, non une reconstruction linguistique, et aucune autre source consultée ne la confirme ni ne la conteste.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["bamadaba-jamuw"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -319,6 +304,67 @@
                 "source_kind": "archive",
                 "page": "p. 350",
                 "notes": "Paris, Émile Larose, 1907. L'auteur, lieutenant d'infanterie coloniale, rend compte d'une mission menée dans la boucle du Niger, autour de Bandiagara et de Djenné. Auteur de l'époque coloniale, cité pour ce qu'il rapporte et pour ses propres hypothèses. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 350, note 1 : « les pigeons sont des animaux Tannas à Djenné, comme les hirondelles chez les Kasamba »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom compte parmi les noms de famille dogon du Mali, avec Ouologuem, Ongoiba, Dieptilé et Togo.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Autoportrait du Mali — Les Obstacles à la Paix",
+                "author": "Institut malien de recherche action pour la paix et Interpeace",
+                "year": 2015,
+                "url": "https://www.interpeace.org/wp-content/uploads/2015/03/2015_03_02_Mali_Autoportrait_FR.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 27",
+                "notes": "Rapport de recherche-action de l'Institut malien de recherche action pour la paix avec Interpeace, mars 2015, lu le 11 octobre 2026. Son chapitre sur les diversités socioculturelles donne quelques noms de famille par grand groupe, suivis de « etc. » : la liste montre qu'un nom est porté dans un groupe, pas d'où il vient."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le dictionnaire des jamuw a une entrée Kásanbàra, qu'il met en équivalence avec Kulibali (Coulibaly) et le localise à Bandiagara, où il porte le marqueur dogon, et à Mopti, où il porte un second marqueur de groupe que nous lisons comme bambara.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Fichier complet lu le 11 octobre 2026. Entrée Kásanbàra : équivalent Kulibali ; deux groupes, l'un localisé à Bandiagara, l'autre à Mopti."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La même entrée rapporte une explication populaire du nom : kásaa ń bàra, « de moi sort une odeur de poisson ». Un récit y rattache le nom à une histoire de frères, le cadet, Kulibali, ayant mangé un poisson-chat. Cette lecture est une étymologie de tradition orale, non une reconstruction linguistique, et aucune autre source consultée ne la confirme ni ne la conteste.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Fichier complet lu le 11 octobre 2026. Entrée Kásanbàra : équivalent Kulibali ; deux groupes, l'un localisé à Bandiagara, l'autre à Mopti."
               }
             ]
           }

@@ -69,108 +69,10 @@
   "transmissionMode": "patrilineal",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [
-      {
-        "claim": "Le nom viendrait d'un ancêtre. Le récit fait remonter la lignée à Kela Mansa Subri, un guerrier originaire de Djida, dont le fils Mansa Djida serait venu en Afrique ; les descendants de Kamanjan Boro, fils de Neni Mansa Kara, sont les premiers à avoir été appelés Kamara, et Kamanjan Boro s'installe ensuite à Tabon.",
-        "claimStatus": "claimed",
-        "carrier": "Babou Condé, griot du village de Fadama, dans la préfecture de Kouroussa en Guinée",
-        "collection": "mediated",
-        "collector": "E. A. Bogacheva, lors d'entretiens menés en 2017",
-        "context": "Récit rapporté en russe dans un mémoire universitaire",
-        "sourceRefs": ["bogacheva-2017-jamu"]
-      },
-      {
-        "claim": "L'épopée de Soundiata distingue deux branches du nom : Kamandjan, roi des Kamara de Sibi, dits Dalikimbon, et son cousin Tabon Wana, roi des Kamara forgerons de Tabon, dits Sinikimbon. Elle fait sceller par Soundiata une alliance perpétuelle entre les Kamara de Sibi et les Keita du Manding.",
-        "claimStatus": "claimed",
-        "carrier": "Djeli Mamadou Kouyaté, griot de Djeliba Koro, près de Siguiri",
-        "collection": "mediated",
-        "collector": "Djibril Tamsir Niane, qui l'a traduit en français",
-        "context": "Épopée publiée en 1960",
-        "sourceRefs": ["niane-1960"]
-      },
-      {
-        "claim": "La devise des Kamara récitée dans l'épopée nomme les Kamara de Sibi, de Tabon et de Nyengenba, et raconte que leur grand-père a fendu de son sabre le rocher de Sibi, devenu la porte d'entrée et de sortie de Kamajan. Les éditeurs du récit notent que les Traoré et les Kamara y sont les fondateurs légendaires de Kangaba.",
-        "claimStatus": "claimed",
-        "carrier": "Lansine Diabaté, chef de la parole (kumatigi) de Kela, au Mali",
-        "collection": "mediated",
-        "collector": "Jan Jansen, Esger Duintjer et Boubacar Tamboura",
-        "context": "Récit en maninka publié avec sa traduction française en 1995",
-        "sourceRefs": ["jansen-1995-lansine-diabate"]
-      },
-      {
-        "claim": "Avant l'empire du Mali, le clan des Kamara a pour villes principales Sibi et Tabon et conquiert peu à peu la rive droite du Niger. Le premier Niani, que des Kamara de Sibi auraient fondé, se trouverait dans les montagnes de la rive gauche entre Bamako et Kangaba.",
-        "claimStatus": "claimed",
-        "collection": "mediated",
-        "collector": "Djibril Tamsir Niane et Youssouf Tata Cissé, d'après les écoles de tradition orale du Manding",
-        "context": "Synthèse historique publiée par l'UNESCO en 1985",
-        "sourceRefs": ["hga-iv-niane"]
-      },
-      {
-        "claim": "Les Kamara sont présentés comme les premiers occupants de plusieurs terres du Manding : à Kita, ils deviennent les alliés de Soundiata et restent maîtres de la terre, et la tradition locale fait de Kangaba une fondation des Kamara de Sibi et des Traoré.",
-        "claimStatus": "claimed",
-        "collection": "mediated",
-        "collector": "Djibril Tamsir Niane",
-        "context": "Épopée publiée en 1960 et ses notes",
-        "sourceRefs": ["niane-1960"]
-      },
-      {
-        "claim": "Des Kamara se disent descendants de Fassuna et de Badjuba Nassari, Fassuna étant présentée comme une concubine du prophète Mahomet. Ce récit rattache le nom à la maison du Prophète ; aucune autre source consultée ne le reprend.",
-        "claimStatus": "claimed",
-        "collection": "mediated",
-        "collector": "Molinie, officier de la marine française, en 1959",
-        "context": "Récit tiré d'un dictionnaire rédigé pour les Européens en poste en Afrique-Occidentale française, cité de seconde main dans un mémoire de 2017 qui met en garde contre ses généralisations sans fondement ; l'informateur n'est pas nommé",
-        "sourceRefs": ["bogacheva-2017-jamu"]
-      },
-      {
-        "claim": "Les clans maninka qui ont atteint la mer vers le lac Pisu (Robertsport) et y ont organisé le peuple vai auraient été dirigés, selon la tradition, par Kamala le Jeune, Fangoloma et Kiatamba ; la même tradition confirmerait que les clans conduits par les Kamara étaient apparentés à ceux du Konyan. Les chefs sont nommés Kamala, non Kamara. Le reste du voyage, sa date et son déroulement relèvent de la synthèse historique de cette fiche.",
-        "claimStatus": "claimed",
-        "collection": "mediated",
-        "collector": "Yves Person, qui rapporte la tradition sans en nommer les porteurs",
-        "context": "Synthèse historique publiée par l'UNESCO en 1985",
-        "sourceRefs": ["hga-iv-person"]
-      }
-    ],
-    "writtenChronicles": [
-      {
-        "claim": "Le nom viendrait d'un ordre donné au premier souverain commun des pays du Sankaran : on lui aurait dit « qu'il règne ! », et la formule serait devenue le nom de ses descendants. Le même ouvrage, écrit en n'ko par Souleymane Kanté, compte six branches du nom : Tabon, Sibi, Gbakundo, Kidimaga, Somono et Fina Kamara.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["bogacheva-2017-jamu"]
-      }
-    ],
-    "historicalSyntheses": [
-      {
-        "claim": "Des synthèses historiques font conduire par le clan des Camara un mouvement de clans mandingues venus du haut Niger vers la côte, à l'origine des Kono et des Vai de la Sierra Leone et du Liberia, et établissent des Malinké du clan Camara au Liberia et dans l'ouest de la Côte d'Ivoire au XVIe siècle, les Diomandé étant dits frères des Camara. La date du mouvement des Kono et des Vai est disputée : avant les années 1460, et peut-être dès le siècle précédent, pour un auteur, qui s'appuie notamment sur la proximité des langues kono et vai avec le maninka ; entre 1500 et 1550 pour un autre ; possiblement plusieurs siècles plus tôt pour un troisième, qui juge peu convaincante l'image d'une incursion rapide menée par un seul chef. Pour ce mouvement, le premier écrit Kamara et le deuxième Camara.",
-        "claimStatus": "contested",
-        "sourceRefs": ["hga-iv-person", "hga-v-wondji", "hga-iii-andah"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "Aucun dictionnaire ni travail de linguiste consulté ne donne de sens au mot : le dictionnaire des noms de clan mandingues le définit seulement comme un nom de clan. Le griot qui raconte l'épopée publiée en 1960 affirme savoir pourquoi tel s'appelle Kamara, mais ne le dit pas.",
-        "claimStatus": "established",
-        "sourceRefs": ["bamadaba-jamuw", "niane-1960"]
-      },
-      {
-        "claim": "Chez les Vai, le nom se prononce Kamana là où les Malinké disent Kamara.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["delafosse-1899-vai"]
-      },
-      {
-        "claim": "Une hypothèse fait apparaître le nom d'abord chez les ancêtres des Soninké, avant le monde malinké. Elle est avancée comme probable, non comme établie.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["bogacheva-2017-jamu"]
-      },
-      {
-        "claim": "Un administrateur colonial s'est demandé en 1907 si Kamara ne venait pas de Hamara, des « hommes rouges du Nord ». La question repose sur une ressemblance de sons, dans un raisonnement qui cherche aux peuples mandé une origine berbère en comparant leur langue au berbère.",
-        "claimStatus": "contested",
-        "sourceRefs": ["arcin-1907-guinee"]
-      },
-      {
-        "claim": "Un historien cité dans une synthèse de l'UNESCO met à part le « facteur kamara » dans l'origine des Vai, comme méritant des recherches plus approfondies, et juge utile de savoir jusqu'où des groupes non mandingues portent des noms mandingues. C'est une question ouverte.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["hga-iii-andah"]
-      }
-    ]
+    "oralTraditions": [],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -665,7 +567,7 @@
                 "page": "p. 76",
                 "carrier": "Babou Condé, griot du village de Fadama",
                 "place": "Fadama, préfecture de Kouroussa, Guinée",
-                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, 2017, dirigé par A. Davydov et relu par V. Vydrin. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet. Récit du griot Babou Condé recueilli lors d'entretiens à Fadama, dans le cercle de Kouroussa, en 2017."
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, 2017, dirigé par A. Davydov et relu par V. Vydrin. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet. Récit du griot Babou Condé recueilli lors d'entretiens à Fadama, dans le cercle de Kouroussa, en 2017.\nRécit rapporté en russe dans un mémoire universitaire"
               },
               {
                 "title": "Récit du griot Babou Condé, de Fadama",
@@ -678,7 +580,11 @@
                 "place": "Fadama, préfecture de Kouroussa, Guinée",
                 "notes": "Récit recueilli lors d'entretiens menés par E. A. Bogacheva en 2017 et rapporté en russe dans son mémoire."
               }
-            ]
+            ],
+            "claimStatus": "claimed",
+            "carrier": "Babou Condé, griot du village de Fadama, dans la préfecture de Kouroussa en Guinée",
+            "collection": "mediated",
+            "collector": "E. A. Bogacheva, lors d'entretiens menés en 2017"
           },
           {
             "period": {
@@ -699,7 +605,8 @@
                 "page": "p. 75",
                 "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, 2017, dirigé par A. Davydov et relu par V. Vydrin. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet. Origine racontée dans l'ouvrage en n'ko de Souleymane Kanté sur les noms et les jamu du Manden ; le texte original n'a pas été lu, seule sa traduction russe l'a été."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           },
           {
             "period": {
@@ -718,9 +625,12 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 74",
-                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, 2017, dirigé par A. Davydov et relu par V. Vydrin. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet. Récit rapporté par Molinie, officier de la marine française, dans un dictionnaire de 1959 rédigé pour les Européens en poste en Afrique-Occidentale française ; le mémoire met en garde contre ses généralisations sans fondement et l'informateur n'est pas nommé."
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, 2017, dirigé par A. Davydov et relu par V. Vydrin. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet. Récit rapporté par Molinie, officier de la marine française, dans un dictionnaire de 1959 rédigé pour les Européens en poste en Afrique-Occidentale française ; le mémoire met en garde contre ses généralisations sans fondement et l'informateur n'est pas nommé.\nRécit tiré d'un dictionnaire rédigé pour les Européens en poste en Afrique-Occidentale française, cité de seconde main dans un mémoire de 2017 qui met en garde contre ses généralisations sans fondement ; l'informateur n'est pas nommé"
               }
-            ]
+            ],
+            "claimStatus": "claimed",
+            "collection": "mediated",
+            "collector": "Molinie, officier de la marine française, en 1959"
           },
           {
             "period": {
@@ -742,7 +652,8 @@
                 "page": "p. 74",
                 "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, 2017, dirigé par A. Davydov et relu par V. Vydrin. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet. Hypothèse rapportée d'après N'Diaye, 1970."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           },
           {
             "period": {
@@ -763,6 +674,258 @@
                 "source_kind": "archive",
                 "page": "p. 635-636",
                 "notes": "Paris, Challamel, 1907. Administrateur colonial. La question sur les « hommes rouges du Nord » (p. 635) précède une comparaison du mandé avec le berbère (p. 636) ; elle est citée comme un exemple d'explication venue de l'extérieur."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'épopée de Soundiata distingue deux branches du nom : Kamandjan, roi des Kamara de Sibi, dits Dalikimbon, et son cousin Tabon Wana, roi des Kamara forgerons de Tabon, dits Sinikimbon. Elle fait sceller par Soundiata une alliance perpétuelle entre les Kamara de Sibi et les Keita du Manding.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Soundjata ou l'épopée mandingue",
+                "author": "Djibril Tamsir Niane, d'après le récit du griot Djeli Mamadou Kouyaté",
+                "year": 1960,
+                "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9",
+                "carrier": "Djeli Mamadou Kouyaté, griot de Djeliba Koro, près de Siguiri",
+                "notes": "Paris, Présence Africaine, 1960. Mise par écrit du récit du griot Djeli Mamadou Kouyaté ; pages lues sur l'exemplaire numérisé d'archive.org (SoundjataOuLepopeeMandingue). Le griot dit savoir pourquoi tel s'appelle Kamara, sans le dire.\nÉpopée publiée en 1960"
+              }
+            ],
+            "carrier": "Djeli Mamadou Kouyaté, griot de Djeliba Koro, près de Siguiri",
+            "collection": "mediated",
+            "collector": "Djibril Tamsir Niane, qui l'a traduit en français"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La devise des Kamara récitée dans l'épopée nomme les Kamara de Sibi, de Tabon et de Nyengenba, et raconte que leur grand-père a fendu de son sabre le rocher de Sibi, devenu la porte d'entrée et de sortie de Kamajan. Les éditeurs du récit notent que les Traoré et les Kamara y sont les fondateurs légendaires de Kangaba.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "L'Épopée de Sunjara, d'après Lansine Diabate de Kela (Mali)",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://hdl.handle.net/1887/2761",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Jansen, Jan, Duintjer, Esger, et Tamboura, Boubacar, CNWS, Leyde, 1995 ; récit du chef de la parole Lansine Diabaté de Kela, en maninka avec traduction. La devise des Kamara de Sibi, Tabon et Nyengenba (p. 118, vers 344) ; le rocher de Sibi fendu, porte de Kamajan (p. 183, vers 606-607) ; note des éditeurs sur les Traoré et les Kamara fondateurs légendaires de Kangaba (p. 208, note 199). Ces pages n'ont pas pu être rouvertes lors de la dernière vérification (texte non accessible) : elles sont reprises telles quelles et restent à relire ; cette source n'est donc retenue pour aucun pays.\nRécit en maninka publié avec sa traduction française en 1995"
+              }
+            ],
+            "carrier": "Lansine Diabaté, chef de la parole (kumatigi) de Kela, au Mali",
+            "collection": "mediated",
+            "collector": "Jan Jansen, Esger Duintjer et Boubacar Tamboura"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Avant l'empire du Mali, le clan des Kamara a pour villes principales Sibi et Tabon et conquiert peu à peu la rive droite du Niger. Le premier Niani, que des Kamara de Sibi auraient fondé, se trouverait dans les montagnes de la rive gauche entre Bamako et Kangaba.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, dir. D. T. Niane, 1985 ; chapitre de D. T. Niane. Pages imprimées : les Kamara tenant Sibi et Tabon et conquérant la rive droite du Niger (p. 153), appelés avec les Keita, Konaté et Traoré par Mamadi Kani (p. 154), Tabon Wana et son cousin Kamajan Kamara de Sibi (p. 155), Niani en pays kamara et le premier Niani fondé par les Kamara de Sibi, d'après une communication de Y. Cissé au colloque de la Fondation SCOA de 1975 (p. 160, note 47). Le chapitre ne donne aucun sens au nom et ne cite pas les Kamara parmi les clans de l'assemblée de Kurukanfuga. Il ne nomme aucun pays : Sibi y est situé « entre Siguiri et Kangaba » (p. 155) et le premier Niani « entre Bamako et Kangaba » (p. 160, note 47), et il n'est donc pas cité ici comme attestation du nom dans un pays.\nSynthèse historique publiée par l'UNESCO en 1985"
+              }
+            ],
+            "collection": "mediated",
+            "collector": "Djibril Tamsir Niane et Youssouf Tata Cissé, d'après les écoles de tradition orale du Manding"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Les Kamara sont présentés comme les premiers occupants de plusieurs terres du Manding : à Kita, ils deviennent les alliés de Soundiata et restent maîtres de la terre, et la tradition locale fait de Kangaba une fondation des Kamara de Sibi et des Traoré.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Soundjata ou l'épopée mandingue",
+                "author": "Djibril Tamsir Niane, d'après le récit du griot Djeli Mamadou Kouyaté",
+                "year": 1960,
+                "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9",
+                "carrier": "Djeli Mamadou Kouyaté, griot de Djeliba Koro, près de Siguiri",
+                "notes": "Paris, Présence Africaine, 1960. Mise par écrit du récit du griot Djeli Mamadou Kouyaté ; pages lues sur l'exemplaire numérisé d'archive.org (SoundjataOuLepopeeMandingue). Le griot dit savoir pourquoi tel s'appelle Kamara, sans le dire.\nÉpopée publiée en 1960 et ses notes"
+              }
+            ],
+            "collection": "mediated",
+            "collector": "Djibril Tamsir Niane"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Les clans maninka qui ont atteint la mer vers le lac Pisu (Robertsport) et y ont organisé le peuple vai auraient été dirigés, selon la tradition, par Kamala le Jeune, Fangoloma et Kiatamba ; la même tradition confirmerait que les clans conduits par les Kamara étaient apparentés à ceux du Konyan. Les chefs sont nommés Kamala, non Kamara. Le reste du voyage, sa date et son déroulement relèvent de la synthèse historique de cette fiche.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 12 : Les peuples côtiers, premiers contacts avec les Portugais, de la Casamance aux lagunes ivoiriennes",
+                "author": "Yves Person",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 341, 346",
+                "notes": "UNESCO, volume dirigé par D. T. Niane. Les Kamara à l'origine de l'arrivée de clans mandingues sur la côte du Liberia et de la Sierra Leone ; l'auteur la place avant les années 1460, peut-être dès le siècle précédent, et donne cette date comme sa propre synthèse.\nSynthèse historique publiée par l'UNESCO en 1985"
+              }
+            ],
+            "collection": "mediated",
+            "collector": "Yves Person, qui rapporte la tradition sans en nommer les porteurs"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Des synthèses historiques font conduire par le clan des Camara un mouvement de clans mandingues venus du haut Niger vers la côte, à l'origine des Kono et des Vai de la Sierra Leone et du Liberia, et établissent des Malinké du clan Camara au Liberia et dans l'ouest de la Côte d'Ivoire au XVIe siècle, les Diomandé étant dits frères des Camara. La date du mouvement des Kono et des Vai est disputée : avant les années 1460, et peut-être dès le siècle précédent, pour un auteur, qui s'appuie notamment sur la proximité des langues kono et vai avec le maninka ; entre 1500 et 1550 pour un autre ; possiblement plusieurs siècles plus tôt pour un troisième, qui juge peu convaincante l'image d'une incursion rapide menée par un seul chef. Pour ce mouvement, le premier écrit Kamara et le deuxième Camara.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 12 : Les peuples côtiers, premiers contacts avec les Portugais, de la Casamance aux lagunes ivoiriennes",
+                "author": "Yves Person",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 341, 346",
+                "notes": "UNESCO, volume dirigé par D. T. Niane. Les Kamara à l'origine de l'arrivée de clans mandingues sur la côte du Liberia et de la Sierra Leone ; l'auteur la place avant les années 1460, peut-être dès le siècle précédent, et donne cette date comme sa propre synthèse."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 13 : Les États et les cultures de la côte de haute Guinée",
+                "author": "Christophe Wondji",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 421",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot. Les Malinké du clan Camara établis au XVIe siècle au Liberia et dans l'ouest de la Côte d'Ivoire."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 18 : Les peuples de la Guinée supérieure",
+                "author": "B. W. Andah",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 590-591",
+                "notes": "UNESCO, volume dirigé par M. El Fasi et I. Hrbek. Une arrivée des Vai possible plusieurs siècles avant la date avancée par Person ; d'après A. Jones, le « facteur kamara » mérite des recherches plus approfondies."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Aucun dictionnaire ni travail de linguiste consulté ne donne de sens au mot : le dictionnaire des noms de clan mandingues le définit seulement comme un nom de clan. Le griot qui raconte l'épopée publiée en 1960 affirme savoir pourquoi tel s'appelle Kamara, mais ne le dit pas.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 9 octobre 2026. L'entrée Kàmara donne la variante Kámala et ses équivalents, mais aucun sens au nom."
+              },
+              {
+                "title": "Soundjata ou l'épopée mandingue",
+                "author": "Djibril Tamsir Niane, d'après le récit du griot Djeli Mamadou Kouyaté",
+                "year": 1960,
+                "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9",
+                "carrier": "Djeli Mamadou Kouyaté, griot de Djeliba Koro, près de Siguiri",
+                "notes": "Paris, Présence Africaine, 1960. Mise par écrit du récit du griot Djeli Mamadou Kouyaté ; pages lues sur l'exemplaire numérisé d'archive.org (SoundjataOuLepopeeMandingue). Le griot dit savoir pourquoi tel s'appelle Kamara, sans le dire."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Chez les Vai, le nom se prononce Kamana là où les Malinké disent Kamara.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Les Vai : leur langue et leur système d'écriture",
+                "author": "Maurice Delafosse",
+                "year": 1899,
+                "url": "https://archive.org/details/rosettaproject_vai_multiple-1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 134",
+                "notes": "L'Anthropologie, tome X, 1899, p. 134 (page 6 du tiré à part) : « les Kamana (au lieu de Kamara chez les Malinke) ». Auteur de l'époque coloniale, cité ici pour une forme relevée, non pour ses classements."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Un administrateur colonial s'est demandé en 1907 si Kamara ne venait pas de Hamara, des « hommes rouges du Nord ». La question repose sur une ressemblance de sons, dans un raisonnement qui cherche aux peuples mandé une origine berbère en comparant leur langue au berbère.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 310",
+                "notes": "Paris, Challamel, 1907. Administrateur colonial. « Les Kamara de Beyla (Konianka) et des hautes régions du Libéria », relevé sur le texte numérisé d'archive.org."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Un historien cité dans une synthèse de l'UNESCO met à part le « facteur kamara » dans l'origine des Vai, comme méritant des recherches plus approfondies, et juge utile de savoir jusqu'où des groupes non mandingues portent des noms mandingues. C'est une question ouverte.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 18 : Les peuples de la Guinée supérieure",
+                "author": "B. W. Andah",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 590-591",
+                "notes": "UNESCO, volume dirigé par M. El Fasi et I. Hrbek. Une arrivée des Vai possible plusieurs siècles avant la date avancée par Person ; d'après A. Jones, le « facteur kamara » mérite des recherches plus approfondies."
               }
             ]
           }

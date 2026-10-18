@@ -48,38 +48,10 @@
   "transmissionMode": "other",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [
-      {
-        "claim": "Les bardes Condé de Fadama, sur le Niandan, tiennent l'un des centres de tradition orale du Manden, au même titre que Kéla près de Kangaba et Djélibakoro. C'est là que le belentigui Babou Condé a récité l'épopée de Soundiata au romancier Camara Laye, en mars et avril 1963 ; la récitation a été transcrite, traduite et romancée avant d'être publiée quinze ans plus tard.",
-        "claimStatus": "established",
-        "griot": "Babou Condé, belentigui de Fadama (Guinée), mort vers 1964",
-        "transcription": "Camara Laye, Le maître de la parole : Kouma Lafôlô Kouma, Plon, 1978 ; édition anglaise The Guardian of the Word, traduite par James Kirkup, Fontana-Collins, 1980",
-        "sourceRefs": ["bulman-sunjata-checklist", "gha-iv-mali"]
-      }
-    ],
+    "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Avant l'empire du Mali, la tradition connaît deux royaumes distincts : le Do ou Dodougou, habité par le clan Condé, et le Kiri ou Manden, tenu au sud par les Konaté et les Kéita. Le Do comptait douze villes, dont la tradition orale ne rapporte pas les noms.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["gha-iv-mali"]
-      },
-      {
-        "claim": "Sogolon Condé, mère de Soundiata, est la femme raillée par les autres épouses du roi pendant l'enfance infirme de son fils. Après la victoire, l'assemblée décrète que les princes devront toujours prendre leur première épouse dans le clan Condé, en mémoire de cette union. Faony Condé figure par ailleurs parmi les généraux qui scellent l'alliance avec Soundiata dans la plaine de Sibi.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["gha-iv-mali"]
-      },
-      {
-        "claim": "À l'est du Fouta-Djalon, l'expansion malinké s'est faite hors du cadre impérial : de grands lignages nobles s'y partageaient le pouvoir sans centralisation politique, et c'est le cas des Condé du Sankaran, sur le haut Niger, attestés là au moins dès le XIVe siècle.",
-        "claimStatus": "established",
-        "sourceRefs": ["gha-iv-mali"]
-      },
-      {
-        "claim": "Le dictionnaire des noms claniques attache à son entrée Kònde deux termes de statut mandingues, hɔ́rɔn, l'homme libre, et tontigi, le porteur de carquois, et situe l'entrée à Kouroussa, au Sankaran, à Faranah et à Kankan. Le carquois et l'arc étaient les emblèmes des hommes libres, seuls autorisés à porter les armes.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["bamadaba-jamuw", "gha-iv-mali"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -269,6 +241,125 @@
                 "source_kind": "archive",
                 "page": "p. 286",
                 "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026, au numéro de page imprimé. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 286 : « nous ajouterons à ces nomenclatures : les Bérété ; les Sakho […] ; les Kondé ». Arcin n'écrit pas Condé : le rapprochement des deux écritures repose sur leur ressemblance et sur le Sankaran, où il situe les Kondé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Les bardes Condé de Fadama, sur le Niandan, tiennent l'un des centres de tradition orale du Manden, au même titre que Kéla près de Kangaba et Djélibakoro. C'est là que le belentigui Babou Condé a récité l'épopée de Soundiata au romancier Camara Laye, en mars et avril 1963 ; la récitation a été transcrite, traduite et romancée avant d'être publiée quinze ans plus tard.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "A Checklist of English and French Versions of the Sunjata Epic Published before the 21st Century",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://verbafricana.org/malinke-fr/griots/Bulman.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Bulman, Stephen ; version légèrement révisée d'un article paru dans History in Africa en 1997, mise en ligne sur le portail Verba Africana. Le relevé donne pour chaque version publiée le nom du récitant, le lieu et la date de la performance, le collecteur et le format. Son entrée Condé nomme Babou Condé, mort vers 1964, belentigui de Fadama en Guinée, enregistré à Fadama en mars et avril 1963 par le romancier guinéen Camara Laye (1928-1980) et publié en 1978. Son entrée suivante nomme Mamadi Condé, mort en janvier 1994, jeli de Fadama, dont deux récits ont paru dans un recueil de traditions orales maninka publié à Madison en 1997.\nCamara Laye, Le maître de la parole : Kouma Lafôlô Kouma, Plon, 1978 ; édition anglaise The Guardian of the Word, traduite par James Kirkup, Fontana-Collins, 1980"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, volume IV : l'Afrique du XIIe au XVIe siècle",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, 1985, sous la direction de D. T. Niane ; édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Le chapitre 6, « Le Mali et la deuxième expansion manden » (D. T. Niane), donne le royaume de Do ou Dodugu peuplé par le clan des Konde (p. 153), signale en note 27 que Fadama, sur le Niandan, en Guinée, est un centre de traditions orales animé par les griots konde (p. 151), raconte que Sogolon Konde, mère de Sunjata Keita, fut la risée des autres épouses du roi (p. 155), cite Faoni Konde parmi les chefs d'armée qui rejoignent Sunjata Keita dans la plaine de Sibi (p. 155), rapporte la règle d'assemblée voulant que les princes prennent toujours leur première femme dans le clan konde (p. 158), et note en 44 qu'un homme du clan konde est tenu pour frère par ceux du clan ndiay chez les Wolof (p. 158). Le chapitre 12, « Les peuples côtiers », situe les Konde du Sankaran sur le haut Niger au moins dès le XIVe siècle (p. 341). L'ouvrage est une synthèse savante et non une chronique."
+              }
+            ],
+            "carrier": "Babou Condé, belentigui de Fadama (Guinée), mort vers 1964"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Avant l'empire du Mali, la tradition connaît deux royaumes distincts : le Do ou Dodougou, habité par le clan Condé, et le Kiri ou Manden, tenu au sud par les Konaté et les Kéita. Le Do comptait douze villes, dont la tradition orale ne rapporte pas les noms.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, volume IV : l'Afrique du XIIe au XVIe siècle",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, 1985, sous la direction de D. T. Niane ; édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Le chapitre 6, « Le Mali et la deuxième expansion manden » (D. T. Niane), donne le royaume de Do ou Dodugu peuplé par le clan des Konde (p. 153), signale en note 27 que Fadama, sur le Niandan, en Guinée, est un centre de traditions orales animé par les griots konde (p. 151), raconte que Sogolon Konde, mère de Sunjata Keita, fut la risée des autres épouses du roi (p. 155), cite Faoni Konde parmi les chefs d'armée qui rejoignent Sunjata Keita dans la plaine de Sibi (p. 155), rapporte la règle d'assemblée voulant que les princes prennent toujours leur première femme dans le clan konde (p. 158), et note en 44 qu'un homme du clan konde est tenu pour frère par ceux du clan ndiay chez les Wolof (p. 158). Le chapitre 12, « Les peuples côtiers », situe les Konde du Sankaran sur le haut Niger au moins dès le XIVe siècle (p. 341). L'ouvrage est une synthèse savante et non une chronique."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Sogolon Condé, mère de Soundiata, est la femme raillée par les autres épouses du roi pendant l'enfance infirme de son fils. Après la victoire, l'assemblée décrète que les princes devront toujours prendre leur première épouse dans le clan Condé, en mémoire de cette union. Faony Condé figure par ailleurs parmi les généraux qui scellent l'alliance avec Soundiata dans la plaine de Sibi.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, volume IV : l'Afrique du XIIe au XVIe siècle",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, 1985, sous la direction de D. T. Niane ; édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Le chapitre 6, « Le Mali et la deuxième expansion manden » (D. T. Niane), donne le royaume de Do ou Dodugu peuplé par le clan des Konde (p. 153), signale en note 27 que Fadama, sur le Niandan, en Guinée, est un centre de traditions orales animé par les griots konde (p. 151), raconte que Sogolon Konde, mère de Sunjata Keita, fut la risée des autres épouses du roi (p. 155), cite Faoni Konde parmi les chefs d'armée qui rejoignent Sunjata Keita dans la plaine de Sibi (p. 155), rapporte la règle d'assemblée voulant que les princes prennent toujours leur première femme dans le clan konde (p. 158), et note en 44 qu'un homme du clan konde est tenu pour frère par ceux du clan ndiay chez les Wolof (p. 158). Le chapitre 12, « Les peuples côtiers », situe les Konde du Sankaran sur le haut Niger au moins dès le XIVe siècle (p. 341). L'ouvrage est une synthèse savante et non une chronique."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "À l'est du Fouta-Djalon, l'expansion malinké s'est faite hors du cadre impérial : de grands lignages nobles s'y partageaient le pouvoir sans centralisation politique, et c'est le cas des Condé du Sankaran, sur le haut Niger, attestés là au moins dès le XIVe siècle.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, volume IV : l'Afrique du XIIe au XVIe siècle",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, 1985, sous la direction de D. T. Niane ; édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Le chapitre 6, « Le Mali et la deuxième expansion manden » (D. T. Niane), donne le royaume de Do ou Dodugu peuplé par le clan des Konde (p. 153), signale en note 27 que Fadama, sur le Niandan, en Guinée, est un centre de traditions orales animé par les griots konde (p. 151), raconte que Sogolon Konde, mère de Sunjata Keita, fut la risée des autres épouses du roi (p. 155), cite Faoni Konde parmi les chefs d'armée qui rejoignent Sunjata Keita dans la plaine de Sibi (p. 155), rapporte la règle d'assemblée voulant que les princes prennent toujours leur première femme dans le clan konde (p. 158), et note en 44 qu'un homme du clan konde est tenu pour frère par ceux du clan ndiay chez les Wolof (p. 158). Le chapitre 12, « Les peuples côtiers », situe les Konde du Sankaran sur le haut Niger au moins dès le XIVe siècle (p. 341). L'ouvrage est une synthèse savante et non une chronique."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le dictionnaire des noms claniques attache à son entrée Kònde deux termes de statut mandingues, hɔ́rɔn, l'homme libre, et tontigi, le porteur de carquois, et situe l'entrée à Kouroussa, au Sankaran, à Faranah et à Kankan. Le carquois et l'arc étaient les emblèmes des hommes libres, seuls autorisés à porter les armes.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 16 octobre 2026. Entrée Kònde : parler bambara (b) ; statuts hɔ́rɔn et tontigi ; lieux Kurusa, Sanakaran, Farana et Kankan ; aucun sens donné. L'entrée Kone du même dictionnaire range aussi la forme Kɔ́ndɛ parmi ses variantes."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, volume IV : l'Afrique du XIIe au XVIe siècle",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, 1985, sous la direction de D. T. Niane ; édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Le chapitre 6, « Le Mali et la deuxième expansion manden » (D. T. Niane), donne le royaume de Do ou Dodugu peuplé par le clan des Konde (p. 153), signale en note 27 que Fadama, sur le Niandan, en Guinée, est un centre de traditions orales animé par les griots konde (p. 151), raconte que Sogolon Konde, mère de Sunjata Keita, fut la risée des autres épouses du roi (p. 155), cite Faoni Konde parmi les chefs d'armée qui rejoignent Sunjata Keita dans la plaine de Sibi (p. 155), rapporte la règle d'assemblée voulant que les princes prennent toujours leur première femme dans le clan konde (p. 158), et note en 44 qu'un homme du clan konde est tenu pour frère par ceux du clan ndiay chez les Wolof (p. 158). Le chapitre 12, « Les peuples côtiers », situe les Konde du Sankaran sur le haut Niger au moins dès le XIVe siècle (p. 341). L'ouvrage est une synthèse savante et non une chronique."
               }
             ]
           }

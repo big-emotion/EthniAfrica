@@ -78,44 +78,10 @@
   "transmissionMode": "other",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [
-      {
-        "claim": "Chez les Peuls de l'ouest du Burkina Faso, les Diallo et les Diakité forment l'un des deux couples qui composent le noyau mythique de l'identité peule. Un récit dit que, dans une fuite après une défaite, un Diallo ranime un Diakité défaillant en lui faisant manger une partie de sa propre chair, et que les deux clans ont noué alliance à cette occasion.",
-        "claimStatus": "claimed",
-        "griot": "Informateurs peuls de l'ouest du Burkina Faso, non nommés dans l'article",
-        "transcription": "Récit résumé par l'auteur, non transcrit mot à mot : Diallo, Youssouf, « Identités et relations de plaisanterie chez les Peuls de l'ouest du Burkina Faso », Cahiers d'études africaines, n° 184, 2006, p. 779-794.",
-        "sourceRefs": ["diallo-2006-plaisanterie-peuls"]
-      }
-    ],
-    "writtenChronicles": [
-      {
-        "claim": "Une étude des élites gouvernementales guinéennes décrit les porteurs de Diakité comme originaires du Wassoulou : son consultant les classe comme Peuls intégrés linguistiquement et culturellement aux Malinkés, tandis que les sources divergent entre les deux appartenances.",
-        "claimStatus": "contested",
-        "sourceRefs": ["rainer-trebbi-2012-political-power"]
-      },
-      {
-        "claim": "L'ensemble peul de l'ouest du Burkina Faso se compose de quatre clans principaux, Diallo, Diakité, Sidibé et Sangaré. Le nom est aussi cité parmi les noms de famille peuls du Mali, et il se rencontre chez les Mandingues.",
-        "claimStatus": "established",
-        "sourceRefs": [
-          "diallo-2006-plaisanterie-peuls",
-          "interpeace-autoportrait-mali-2015",
-          "sy-2015-ethnies-langues-mali",
-          "hanks-dafn2-diakite"
-        ]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "Un dictionnaire de noms de famille présente Diakité comme le nom du clan Diakité des Peuls et le fait dériver du nom de la ville de Dia, au Mali ; il ajoute que le nom se trouve aussi chez les Mandingues. Cette dérivation ne repose que sur cette notice, qui n'en donne pas la preuve.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["hanks-dafn2-diakite"]
-      },
-      {
-        "claim": "Le dictionnaire des noms claniques bambara n'a pas d'entrée pour Jakite, mais il cite ce nom comme partenaire de plaisanterie des clans Bagayogo, Dansoko, Janka, Kanté et Sidibé, et comme équivalent de Jagate, entrée qu'il situe au Bambouk, et de Kaba.",
-        "claimStatus": "established",
-        "sourceRefs": ["bamadaba-jamuw"]
-      }
-    ]
+    "oralTraditions": [],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -323,10 +289,6 @@
       "reason": "Les sources consultées classent Diakité parmi les clans et décrivent des alliances entre clans, mais aucune ne dit comment le nom se transmet ; la règle de filiation, patrilinéaire, matrilinéaire ou élective, n'est donc pas établie."
     },
     {
-      "fieldPath": "origin",
-      "reason": "L'origine du nom n'est pas établie : le rattachement aux Peuls, la dérivation de la ville de Dia et la présence chez les Mandingues sont rapportés par des sources qui ne se départagent pas."
-    },
-    {
       "fieldPath": "spellings",
       "reason": "Nous n'avons trouvé aucune source établissant la graphie Jaiteh comme variante de ce nom ; elle ne figure donc pas ici."
     }
@@ -497,6 +459,134 @@
                 "source_kind": "academic",
                 "page": "p. 53",
                 "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Jàlo. Le texte original en n'ko de Souleymane Kanté n'a pas été lu ; seule sa traduction russe l'a été, et le français est le nôtre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Chez les Peuls de l'ouest du Burkina Faso, les Diallo et les Diakité forment l'un des deux couples qui composent le noyau mythique de l'identité peule. Un récit dit que, dans une fuite après une défaite, un Diallo ranime un Diakité défaillant en lui faisant manger une partie de sa propre chair, et que les deux clans ont noué alliance à cette occasion.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Identités et relations de plaisanterie chez les Peuls de l'ouest du Burkina Faso",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://journals.openedition.org/etudesafricaines/15399",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Youssouf Diallo, Cahiers d'études africaines, vol. 46, n° 184, 2006, p. 779-794 (DOI 10.4000/etudesafricaines.15399). Revue à comité de lecture ; l'auteur était alors rattaché au Max-Planck-Institut für ethnologische Forschung. L'enquête de terrain porte sur les Peuls de l'ouest du Burkina Faso, ce qui atteste les noms dans ce pays. L'article dit que l'ensemble peul se compose de quatre clans principaux (Diallo, Diakité, Sidibé, Sangaré), que les couples Diallo/Diakité et Sidibé/Sangaré, noyau mythique de l'identité peule, sont en relation d'équivalence, et que Diallo/Diko, Diakité/Ba et Sidibé/Sangaré sont homologues et entretiennent à ce titre des relations de plaisanterie (dendiraagu). Il rapporte aussi un récit d'alliance entre un Diallo et un Diakité.\nRécit résumé par l'auteur, non transcrit mot à mot : Diallo, Youssouf, « Identités et relations de plaisanterie chez les Peuls de l'ouest du Burkina Faso », Cahiers d'études africaines, n° 184, 2006, p. 779-794."
+              }
+            ],
+            "carrier": "Informateurs peuls de l'ouest du Burkina Faso, non nommés dans l'article"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une étude des élites gouvernementales guinéennes décrit les porteurs de Diakité comme originaires du Wassoulou : son consultant les classe comme Peuls intégrés linguistiquement et culturellement aux Malinkés, tandis que les sources divergent entre les deux appartenances.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "New Tools for the Analysis of Political Power in Africa",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.nber.org/papers/w18424.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Ilia Rainer et Francesco Trebbi, NBER Working Paper 18424, septembre 2012. L’annexe sur la Guinée, p. 43, explique séparément la classification de Diakite, Sidibe et Sangare : originaires du Wassoulou, décrits comme Peuls intégrés aux populations malinké, ils sont codés par les auteurs à parts égales peuls et malinké. Le document précise qu’il n’a pas été évalué par les pairs."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'ensemble peul de l'ouest du Burkina Faso se compose de quatre clans principaux, Diallo, Diakité, Sidibé et Sangaré. Le nom est aussi cité parmi les noms de famille peuls du Mali, et il se rencontre chez les Mandingues.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Identités et relations de plaisanterie chez les Peuls de l'ouest du Burkina Faso",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://journals.openedition.org/etudesafricaines/15399",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Youssouf Diallo, Cahiers d'études africaines, vol. 46, n° 184, 2006, p. 779-794 (DOI 10.4000/etudesafricaines.15399). Revue à comité de lecture ; l'auteur était alors rattaché au Max-Planck-Institut für ethnologische Forschung. L'enquête de terrain porte sur les Peuls de l'ouest du Burkina Faso, ce qui atteste les noms dans ce pays. L'article dit que l'ensemble peul se compose de quatre clans principaux (Diallo, Diakité, Sidibé, Sangaré), que les couples Diallo/Diakité et Sidibé/Sangaré, noyau mythique de l'identité peule, sont en relation d'équivalence, et que Diallo/Diko, Diakité/Ba et Sidibé/Sangaré sont homologues et entretiennent à ce titre des relations de plaisanterie (dendiraagu). Il rapporte aussi un récit d'alliance entre un Diallo et un Diakité.\nRécit résumé par l'auteur, non transcrit mot à mot : Diallo, Youssouf, « Identités et relations de plaisanterie chez les Peuls de l'ouest du Burkina Faso », Cahiers d'études africaines, n° 184, 2006, p. 779-794."
+              },
+              {
+                "title": "Autoportrait du Mali — Les Obstacles à la Paix",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.interpeace.org/wp-content/uploads/2015/03/2015_03_02_Mali_Autoportrait_FR.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Rapport de recherche-action de l'Institut malien de recherche action pour la paix avec Interpeace, en partenariat avec les Nations unies, mars 2015. Son chapitre sur les diversités socioculturelles donne, pour chaque grand groupe du Mali, quelques noms de famille suivis de « etc. » : la liste est illustrative, sans méthode d'établissement ni source indiquée. Elle atteste qu'un nom est porté dans un groupe, non d'où il vient."
+              },
+              {
+                "title": "Études synchroniques des ethnies et des langues au Mali",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://arlap.hypotheses.org/3726",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Salif Sy, carnet de recherche ARLAP (Hypotheses.org), 18 février 2015. Billet d'un doctorant en langues africaines, sans relecture par des pairs, qui range Diallo, Diakité, Sidibé et Sangaré parmi les noms identifiés comme peuls au Mali. Cité pour attester le nom dans ce groupe et dans ce pays, non pour son origine."
+              },
+              {
+                "title": "Dictionary of American Family Names, 2e édition — entrée Diakite",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://en.geneanet.org/surnames/DIAKITE",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Patrick Hanks (dir.), Dictionary of American Family Names, 2e éd., Oxford University Press, 2022 ; consulté par la page Geneanet qui reproduit l'entrée avec sa mention de source. Ouvrage de référence dont l'entrée est brève : elle donne la dérivation à partir de la ville de Dia sans citer ce qui la fonde."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Un dictionnaire de noms de famille présente Diakité comme le nom du clan Diakité des Peuls et le fait dériver du nom de la ville de Dia, au Mali ; il ajoute que le nom se trouve aussi chez les Mandingues. Cette dérivation ne repose que sur cette notice, qui n'en donne pas la preuve.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e édition — entrée Diakite",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://en.geneanet.org/surnames/DIAKITE",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Patrick Hanks (dir.), Dictionary of American Family Names, 2e éd., Oxford University Press, 2022 ; consulté par la page Geneanet qui reproduit l'entrée avec sa mention de source. Ouvrage de référence dont l'entrée est brève : elle donne la dérivation à partir de la ville de Dia sans citer ce qui la fonde."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le dictionnaire des noms claniques bambara n'a pas d'entrée pour Jakite, mais il cite ce nom comme partenaire de plaisanterie des clans Bagayogo, Dansoko, Janka, Kanté et Sidibé, et comme équivalent de Jagate, entrée qu'il situe au Bambouk, et de Kaba.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe onomastique du Bamadaba, dictionnaire électronique bambara-français supplément du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA) ; l'annexe des noms claniques est signalée comme telle par Vydrin, « Vers une lexicographie mandingue sur la base de grands corpus annotés », Mandenkan 63, 2020, p. 89-110. 375 entrées au format MDF, consultées sur le fichier complet. Jakite n'y a pas d'entrée propre : le nom est cité comme partenaire de plaisanterie (marqueur \\sn, lu senankun) par les entrées Bagayogo, Dansoko, Janka, Kante et Sidibe, et comme équivalent (marqueur \\eq) sous les entrées Jagate, dont le fichier situe le nom au Bambouk, et Kaba. Les liens \\sn ne sont pas systématiquement réciproques d'une entrée à l'autre : chaque paire est donc citée d'après l'entrée qui la porte."
               }
             ]
           }

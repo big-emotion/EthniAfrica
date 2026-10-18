@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le Dictionary of American Family Names décrit Okoro comme un nom personnel igbo signifiant « garçon » ou « jeune homme ».",
-        "claimStatus": "established",
-        "sourceRefs": ["hanks-okoro"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -145,7 +140,8 @@
                 "source_kind": "academic",
                 "notes": "Entrée Okoro du Dictionary of American Family Names de Patrick Hanks (2003, 2006), hébergée par FamilySearch. Lu le 13 octobre 2026. Texte : « West African (Nigeria): from the Igbo personal name Okoro, meaning 'boy, young man'. Compare Okolo »."
               }
-            ]
+            ],
+            "claimStatus": "established"
           },
           {
             "period": {

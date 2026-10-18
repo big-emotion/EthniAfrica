@@ -22,13 +22,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Une étude universitaire de 2019 distingue, dans la politique mémorielle namibienne, un « groupe Riruako » lié à l'Ovaherero Traditional Authority et placé sous le Paramount Chief Riruako. Elle établit cet usage historique ovaherero du nom, mais pas son étymologie.",
-        "claimStatus": "established",
-        "sourceRefs": ["brock-2019-riruako"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -183,6 +178,26 @@
                 "source_kind": "archive",
                 "page": "p. 1-2",
                 "notes": "Télégramme diplomatique du département d'État américain, déclassifié en 2006, lu sur la copie d'archive.org. Il rapporte une démarche de « Namibian National Convention rep Riruako », dont le chef est appelé « Chief Kapuuo », auprès de la mission du Brésil aux Nations unies. Relu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une étude universitaire de 2019 distingue, dans la politique mémorielle namibienne, un « groupe Riruako » lié à l'Ovaherero Traditional Authority et placé sous le Paramount Chief Riruako. Elle établit cet usage historique ovaherero du nom, mais pas son étymologie.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Politics of reparations: unravelling the power relations in the Herero/Nama genocide reparations claims",
+                "author": "Penohole Brock",
+                "year": 2019,
+                "url": "https://open.uct.ac.za/items/35f782fa-ea3a-430d-9701-89f2a7a5bf6a/full",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Mémoire de master, Université du Cap, 2019 ; notice et résumé lus dans le dépôt de l'université. Le résumé décrit les Herero divisés en deux camps, « the Riruako group and the Maherero group », dans les demandes de réparations pour le génocide. Lu le 11 octobre 2026."
               }
             ]
           }

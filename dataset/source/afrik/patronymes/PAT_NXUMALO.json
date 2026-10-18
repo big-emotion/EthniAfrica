@@ -22,30 +22,9 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Les Nxumalo forment une section du clan ndwandwe. Le nom de clan aba-kwa-Nxumalo, « ceux de Nxumalo », fut créé pour dénouer une infraction à l'exogamie : le chef épousa une femme de son propre clan, union prohibée, et la famille de l'épouse reçut un nom de clan neuf afin que le mariage cessât d'être incestueux. Le nom procède ici d'un acte de droit matrimonial, non d'un ancêtre ni d'un totem.",
-        "claimStatus": "established",
-        "sourceRefs": ["bryant-1929-olden-times"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "Chez les Nguni, l'isibongo (patronyme) et les izithakazelo (louanges de clan) sont deux objets distincts : le second dit l'ascendance et gouverne l'exogamie, le premier sert d'identifiant d'état civil.",
-        "claimStatus": "established",
-        "sourceRefs": ["nomina-africana-nguni-naming"]
-      },
-      {
-        "claim": "Dans le Matabeleland du Sud, l'isibongo ne sert pas seulement à nommer un clan : il fonctionne comme opérateur de classement, articulant nom de clan, origine revendiquée et « caste », et découpant de l'intérieur la catégorie ndébélé plutôt que de la refléter. Un même isibongo peut donc y recouvrir des origines revendiquées distinctes.",
-        "claimStatus": "established",
-        "sourceRefs": ["lindgren-2004-ndebele-castes"]
-      },
-      {
-        "claim": "L'explication courante rattache Nxumalo à l'umNxuma, entonnoir de cuir par lequel on faisait téter un nourrisson, Manukuza ayant perdu sa mère en bas âge. Bryant rapporte cette explication comme celle qu'on donne d'ordinaire et la juge peu convaincante, sans en proposer d'autre : l'étymologie du nom reste ouverte.",
-        "claimStatus": "contested",
-        "sourceRefs": ["bryant-1929-olden-times"]
-      }
-    ]
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -217,7 +196,8 @@
                 "page": "p. 161",
                 "notes": "Londres, Longmans, Green and Co., 1929. Bryant écrit depuis la mission catholique du Natal, dans le contexte colonial, à partir de récits recueillis auprès des familles au tournant du siècle. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 161 : l'explication « usually given », celle de l'umNxuma, jugée « hardly convincing »."
               }
-            ]
+            ],
+            "claimStatus": "contested"
           },
           {
             "period": {
@@ -245,6 +225,67 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 28*",
                 "notes": "Pinetown (Natal), Mariannhill Mission Press, 1905. Le dictionnaire s'ouvre sur une courte histoire du peuple zoulou, paginée à part avec un astérisque. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 28* de l'histoire placée en tête du dictionnaire."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Les Nxumalo forment une section du clan ndwandwe. Le nom de clan aba-kwa-Nxumalo, « ceux de Nxumalo », fut créé pour dénouer une infraction à l'exogamie : le chef épousa une femme de son propre clan, union prohibée, et la famille de l'épouse reçut un nom de clan neuf afin que le mariage cessât d'être incestueux. Le nom procède ici d'un acte de droit matrimonial, non d'un ancêtre ni d'un totem.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 161",
+                "notes": "Londres, Longmans, Green and Co., 1929. Bryant écrit depuis la mission catholique du Natal, dans le contexte colonial, à partir de récits recueillis auprès des familles au tournant du siècle. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 161 : la branche aba-kwa-Nxumalo et le pays qu'elle occupait."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Chez les Nguni, l'isibongo (patronyme) et les izithakazelo (louanges de clan) sont deux objets distincts : le second dit l'ascendance et gouverne l'exogamie, le premier sert d'identifiant d'état civil.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Derivation of given names from ethnonyms, surnames and clan praises: unveiling gendered naming trends in Nguni",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://journals.co.za/doi/10.10520/ejc-nomina_v39_n1_a3",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Nomina Africana: Journal of African Onomastics, vol. 39 n° 1. Établit l'articulation entre patronyme (isibongo) et louanges de clan (izithakazelo) chez les Nguni."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans le Matabeleland du Sud, l'isibongo ne sert pas seulement à nommer un clan : il fonctionne comme opérateur de classement, articulant nom de clan, origine revendiquée et « caste », et découpant de l'intérieur la catégorie ndébélé plutôt que de la refléter. Un même isibongo peut donc y recouvrir des origines revendiquées distinctes.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "The Internal Dynamics of Ethnicity: Clan Names, Origins and Castes in Southern Zimbabwe",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://doi.org/10.3366/afr.2004.74.2.173",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lindgren, Björn, Africa (Journal of the International African Institute) 74(2), 2004, p. 173-193. Réserve à porter avec la citation : le texte intégral est sous péage chez Cambridge Core et n'a pas pu être lu lors de ce travail ; seuls la notice et le résumé ont été vérifiés. Ce qui est cité ici s'y limite — l'isibongo est en Matabeleland du Sud un opérateur de classement qui articule nom de clan, origine revendiquée et « caste », et qui découpe la catégorie ndébélé en parties. Aucune glose de nom particulier ne lui est empruntée."
               }
             ]
           }

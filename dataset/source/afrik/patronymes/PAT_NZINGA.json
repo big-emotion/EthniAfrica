@@ -23,24 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [],
-    "historicalSyntheses": [
-      {
-        "claim": "Une légende explique le nom de la reine Njinga, qui régna sur le Ndongo puis sur le Matamba, par sa naissance difficile : le cordon ombilical était enroulé autour de son cou, et le verbe kimbundu kujinga voudrait dire « tordre, tourner » (sens donné par le même article). Les enfants de la maison royale qui survivaient à une naissance difficile ou inhabituelle passaient pour avoir des dons spirituels. Cette explication concerne le nom personnel d'une reine ; aucune source consultée ne dit que Nzinga est un nom de clan.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["wikipedia-en-njinga"]
-      },
-      {
-        "claim": "Le même nom se trouve chez des rois du Kongo : Nzinga Nkuwu, puis son fils Nzinga Mbemba, connu aussi sous le nom d'Afonso Ier, qui lui succède en 1506. Aucune source consultée ne dit si ce nom a le même sens que celui de la reine du Ndongo.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["hga-v-vansina"]
-      },
-      {
-        "claim": "Le nom de la reine s'écrit de nombreuses façons (Njinga Mbande, Nzinga Mbandi, Jinga, Ginga, Zinga, Ngola Nzinga, entre autres), en partie à cause de la transcription du kimbundu, et parce qu'elle signait elle-même sous des noms différents. Elle signait sa correspondance du titre Nzinga Mbandi Ngola, c'est-à-dire reine du Ndongo et du Matamba.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["unesco-nzinga-mbandi-unit"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -98,10 +82,6 @@
     {
       "fieldPath": "nameSystem",
       "reason": "Les sources consultées décrivent Nzinga comme le nom d'une personne, la reine du Ndongo et du Matamba, et comme un nom porté par des rois du Kongo ; aucune ne parle d'un clan. Le modèle n'a pas de case pour le nom personnel d'un souverain : la fiche le range parmi les patronymes non héréditaires, la case la plus proche."
-    },
-    {
-      "fieldPath": "origin",
-      "reason": "Nous n'avons trouvé aucun récit kimbundu ou angolais sur l'origine de ce nom ; les sources consultées sont des textes d'histoire et des pages de Wikipédia en anglais."
     },
     {
       "fieldPath": "alliances",
@@ -202,7 +182,8 @@
                 "page": "p. 606",
                 "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot. Nzinga Mbemba, ou Afonso Ier, succède à son père Nzinga Nkuwu en 1506. Contenu recoupé le 11 octobre 2026 sur l'édition anglaise, que South African History Online met en ligne, l'édition française n'ayant pas pu être rouverte."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           },
           {
             "period": {
@@ -224,6 +205,26 @@
                 "source_kind": "archive",
                 "page": "p. 291",
                 "notes": "Recueil de documents publié à Lisbonne en 1956, lu dans une copie non officielle mise en ligne sur Internet Archive le 11 octobre 2026. La lettre retrace la suite des rois du Kongo : « Muzinga-am-cu », cinquième roi, baptisé Dom João en 1491, puis son fils « Mobemba-à-Mozinga », baptisé Dom Affonso."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une légende explique le nom de la reine Njinga, qui régna sur le Ndongo puis sur le Matamba, par sa naissance difficile : le cordon ombilical était enroulé autour de son cou, et le verbe kimbundu kujinga voudrait dire « tordre, tourner » (sens donné par le même article). Les enfants de la maison royale qui survivaient à une naissance difficile ou inhabituelle passaient pour avoir des dons spirituels. Cette explication concerne le nom personnel d'une reine ; aucune source consultée ne dit que Nzinga est un nom de clan.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Nzinga of Ndongo and Matamba — Wikipédia (version anglaise)",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://en.wikipedia.org/wiki/Nzinga_of_Ndongo_and_Matamba",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Article consulté en octobre 2026 dans sa version anglaise. Il rapporte l'explication du nom comme une légende, en renvoyant pour cette phrase à un article de Anne Thériault, « Queens of Infamy: Njinga » (Longreads, 2019). Il rattache les dons spirituels des enfants nés ainsi à Linda Heywood, Njinga of Angola: Africa's Warrior Queen (Harvard University Press, 2017), p. 14. Nous n'avons consulté aucun de ces deux textes dans l'original."
               }
             ]
           }
@@ -256,7 +257,8 @@
                 "page": "p. 48 du PDF",
                 "notes": "Copie non officielle hébergée sur Wikimedia Commons, relue le 11 octobre 2026. Le nom de la reine s'écrit de nombreuses façons, en partie à cause de la transcription du kimbundu, et parce qu'elle signait elle-même de noms différents."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           }
         ]
       },

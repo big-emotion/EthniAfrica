@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "La source traite Abdel Rahman comme une transcription du composé arabe عبد الرحمٰن et en isole les éléments ʿabd et raḥman. Cette identification graphique et morphologique ne démontre ni une origine lignagère ni une transmission héréditaire.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["btn-abd-al-rahman"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -179,6 +174,26 @@
                 "source_kind": "archive",
                 "page": "p. 66",
                 "notes": "Le Caire, Imprimerie nationale, 1888. Lu le 14 octobre 2026 sur la copie numérisée d'archive.org, aux pages indiquées. Page 66 : « Dans le courant du même mois, Abd-el-Rahman bey fut nommé gouverneur de la province de Djirdjah, où il se rendit immédiatement », au mois de safar de l'année 1108, dont la page donne la date par un chronogramme. Le texte appelle cet homme « bey » et ne donne pas son père."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La source traite Abdel Rahman comme une transcription du composé arabe عبد الرحمٰن et en isole les éléments ʿabd et raḥman. Cette identification graphique et morphologique ne démontre ni une origine lignagère ni une transmission héréditaire.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Abd al-Rahman — Behind the Name",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.behindthename.com/name/abd00al01rahman",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Entrée communautaire consultée le 2 septembre 2026. Elle fournit la graphie عبد الرحمٰن, les éléments ʿabd et raḥman, et rattache Abdelrahman aux variantes du composé. Elle ne documente aucune lignée africaine particulière."
               }
             ]
           }

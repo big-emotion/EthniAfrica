@@ -22,30 +22,9 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Les Dube sont comptés parmi les Nguni mthethwa. Vers 1650 ils descendent avec les Mbonambi la côte du Zululand jusqu'à la Mhlathuze. Le clan traverse les règnes de Dingiswayo et de Shaka sans perdre son territoire, puis est détruit sous Dingane : son chef Nzwakele est tué et le clan dispersé, la plupart de ses membres franchissant la Thukela vers le Natal, où le nom est aujourd'hui répandu.",
-        "claimStatus": "established",
-        "sourceRefs": ["bryant-1929-olden-times"]
-      },
-      {
-        "claim": "Bryant situe les Dube sur la rive nord du lagon de la Mhlathuze, voisins au nord des Mbonambi, qu'il donne pour clans frères issus d'une même souche. Se sachant peu nombreux, ils s'abstinrent de s'opposer à Dingiswayo comme à Shaka, ce qui leur conserva leur territoire : en mars 1827, Farewell et Isaacs remontant la côte en quête d'ivoire y trouvèrent Nzwakele, fils de Kushwayo, régnant encore sur le pays d'origine.",
-        "claimStatus": "established",
-        "sourceRefs": ["bryant-1929-olden-times"]
-      },
-      {
-        "claim": "Le clan a pratiqué l'adoption d'un lignage étranger. À l'éclatement du clan cele sous le règne de Dingane, Mningi, père de Geloza, quitta la Mzimkhulu avec sa famille et se fit adopter par Nzwakele ; il bâtit en pays dube un kraal nommé emaNdlazini, dont ses descendants ont tiré leur propre nom, aba-s-emaNdlazini.",
-        "claimStatus": "established",
-        "sourceRefs": ["bryant-1929-olden-times"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "Chez les Nguni, l'isibongo (patronyme) et les izithakazelo (louanges de clan) sont deux objets distincts : le second dit l'ascendance et gouverne l'exogamie, le premier sert d'identifiant d'état civil.",
-        "claimStatus": "established",
-        "sourceRefs": ["nomina-africana-nguni-naming"]
-      }
-    ]
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -291,6 +270,86 @@
                 "source_kind": "academic",
                 "page": "p. 107",
                 "notes": "Londres, Longmans, Green and Co., 1929. Bryant écrit depuis la mission catholique du Natal, à l'époque coloniale, d'après des récits recueillis sur les ancêtres des clans. Lu le 11 octobre 2026 dans une copie non officielle déposée sur Internet Archive ; un exemplaire de bibliothèque est en prêt sous l'identifiant bwb_KT-091-892. Page 107 : le clan est voué au massacre de son vieux chef Nzwakele et à la dispersion sous Dingane, « most of its adherents fleeing over the Tukela into Whiteman's Natal, where they are now found everywhere scattered »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Les Dube sont comptés parmi les Nguni mthethwa. Vers 1650 ils descendent avec les Mbonambi la côte du Zululand jusqu'à la Mhlathuze. Le clan traverse les règnes de Dingiswayo et de Shaka sans perdre son territoire, puis est détruit sous Dingane : son chef Nzwakele est tué et le clan dispersé, la plupart de ses membres franchissant la Thukela vers le Natal, où le nom est aujourd'hui répandu.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Bryant, Alfred T., Longmans Green, 1929. Bryant écrit depuis la mission catholique du Natal, dans le contexte colonial. Il reconstitue l'histoire des clans nguni orientaux à partir de récits sur leurs ancêtres, recueillis au tournant du siècle. Parmi les livres consultés, c'est le seul qui nomme une origine pour chacun de ces clans. Le texte a été lu intégralement. Les orthographes de 1929, comme Mtetwa et Ntungwa, sont citées comme variantes à côté des noms utilisés dans nos fiches."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Bryant situe les Dube sur la rive nord du lagon de la Mhlathuze, voisins au nord des Mbonambi, qu'il donne pour clans frères issus d'une même souche. Se sachant peu nombreux, ils s'abstinrent de s'opposer à Dingiswayo comme à Shaka, ce qui leur conserva leur territoire : en mars 1827, Farewell et Isaacs remontant la côte en quête d'ivoire y trouvèrent Nzwakele, fils de Kushwayo, régnant encore sur le pays d'origine.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Bryant, Alfred T., Longmans Green, 1929. Bryant écrit depuis la mission catholique du Natal, dans le contexte colonial. Il reconstitue l'histoire des clans nguni orientaux à partir de récits sur leurs ancêtres, recueillis au tournant du siècle. Parmi les livres consultés, c'est le seul qui nomme une origine pour chacun de ces clans. Le texte a été lu intégralement. Les orthographes de 1929, comme Mtetwa et Ntungwa, sont citées comme variantes à côté des noms utilisés dans nos fiches."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le clan a pratiqué l'adoption d'un lignage étranger. À l'éclatement du clan cele sous le règne de Dingane, Mningi, père de Geloza, quitta la Mzimkhulu avec sa famille et se fit adopter par Nzwakele ; il bâtit en pays dube un kraal nommé emaNdlazini, dont ses descendants ont tiré leur propre nom, aba-s-emaNdlazini.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Bryant, Alfred T., Longmans Green, 1929. Bryant écrit depuis la mission catholique du Natal, dans le contexte colonial. Il reconstitue l'histoire des clans nguni orientaux à partir de récits sur leurs ancêtres, recueillis au tournant du siècle. Parmi les livres consultés, c'est le seul qui nomme une origine pour chacun de ces clans. Le texte a été lu intégralement. Les orthographes de 1929, comme Mtetwa et Ntungwa, sont citées comme variantes à côté des noms utilisés dans nos fiches."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Chez les Nguni, l'isibongo (patronyme) et les izithakazelo (louanges de clan) sont deux objets distincts : le second dit l'ascendance et gouverne l'exogamie, le premier sert d'identifiant d'état civil.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Derivation of given names from ethnonyms, surnames and clan praises: unveiling gendered naming trends in Nguni",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://journals.co.za/doi/10.10520/ejc-nomina_v39_n1_a3",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Nomina Africana: Journal of African Onomastics, vol. 39 n° 1. Établit l'articulation entre patronyme (isibongo) et louanges de clan (izithakazelo) chez les Nguni."
               }
             ]
           }

@@ -32,21 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le kanda kongo est une unité de filiation matrilinéaire : l'appartenance clanique s'y transmet par la mère, et chaque kanda est associé à une devise (mvila) et à un récit de ses migrations.",
-        "claimStatus": "established",
-        "sourceRefs": [
-          "corpus-ppl-kongo-organisation",
-          "fromont-2014-art-of-conversion"
-        ]
-      },
-      {
-        "claim": "En kikongo, le mot nkala désigne selon le contexte un crabe, un tertre funéraire ou une plate-bande de culture ; ce n'est pas un sens unique et figé.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["ksludotique-kikongo"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [],
   "countries": [
@@ -185,6 +172,55 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 97 et p. 379",
                 "notes": "Londres, Baptist Missionary Society et Trübner, 1887. L'auteur est missionnaire baptiste à San Salvador, l'actuelle Mbanza Kongo, en Angola. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 379, partie kikongo-anglais : trois entrées nkala de la classe 2, « chaux, mortier » (du portugais cal), « état, condition, manière de vivre » et « crabe ». Page 97, partie anglais-kikongo : à l'article Grave, « tombe », le mot nkala de la classe 4."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le kanda kongo est une unité de filiation matrilinéaire : l'appartenance clanique s'y transmet par la mère, et chaque kanda est associé à une devise (mvila) et à un récit de ses migrations.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "EthniAfrica — fiche du peuple Kongo, organisation clanique",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": null,
+                "tier": "unverified",
+                "source_kind": "repository",
+                "notes": "Reprise du chapitre consacré à l'organisation clanique de la fiche du peuple Kongo, qui décrit le kanda comme unité de filiation matrilinéaire transmise par la mère, assortie de sous-groupes semi-autonomes (Beembe, Vili, Yombe, Sundi, etc.)."
+              },
+              {
+                "title": "The Art of Conversion: Christian Visual Culture in the Kingdom of Kongo",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://uncpress.org/book/9781469618715/the-art-of-conversion/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Fromont, Cécile, University of North Carolina Press, 2014. Ouvrage consulté par l'intermédiaire de l'article Wikipédia en anglais consacré au kanda kongo, qui lui attribue la description de ce système de filiation matrilinéaire assorti d'une devise clanique (mvila) et d'un récit de migration (kinkulu) ; la page précise de l'ouvrage n'a pas été vérifiée directement."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "En kikongo, le mot nkala désigne selon le contexte un crabe, un tertre funéraire ou une plate-bande de culture ; ce n'est pas un sens unique et figé.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Nkala — lexique kikongo",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.ksludotique.com/espace-kikongo/kikongo-mots-divers/mots-divers-partie-8-sur-10-ng-nk/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site personnel consacré à l'apprentissage du kikongo, sans auteur identifié ni méthode lexicographique vérifiable. Donne pour nkala plusieurs sens possibles selon le contexte, dont crabe et tertre funéraire."
               }
             ]
           }

@@ -22,13 +22,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Le bureau du Premier ministre de Somalie atteste Jama comme dernier élément de la chaîne de noms Salah Ahmed Jama ; la notice ne qualifie pas la relation généalogique exprimée par cet élément.",
-        "claimStatus": "established",
-        "sourceRefs": ["jama-somalia-opm-2022"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -198,6 +193,26 @@
                 "source_kind": "linguistic_reference",
                 "notes": "Entrée Jama du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch : « Muslim: from a derivative of Arabic jāmiʿ 'author, writer', literally 'gatherer (of texts)' » ; la même page donne aussi un nom slovène Jama, sans rapport, tiré de jama « grotte, trou ». Lu le 18 octobre 2026.",
                 "page": "entrée Jama"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le bureau du Premier ministre de Somalie atteste Jama comme dernier élément de la chaîne de noms Salah Ahmed Jama ; la notice ne qualifie pas la relation généalogique exprimée par cet élément.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "H.E. Salah Ahmed Jama — Deputy Prime Minister",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://opm.gov.so/prime-ministers/h-e-salah-ahmed-jama",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Bureau du Premier ministre de la République fédérale de Somalie, notice consultée intégralement. Elle donne la chaîne Salah Ahmed Jama et sa fonction à partir d'août 2022. Le porteur étant vivant, il n'est pas encodé dans bearers sans auto-identification conforme au schéma."
               }
             ]
           }

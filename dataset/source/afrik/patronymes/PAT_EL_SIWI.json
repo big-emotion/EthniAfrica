@@ -32,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le Max Planck Institute donne Isiwan comme nom des Siwis et situe leur langue dans l’oasis de Siwa en Égypte. Le rapprochement de la forme égyptienne El Siwi avec ce gentilé géographique est plausible, mais reste une inférence : aucune source consultée n’analyse directement le patronyme.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["siwi-mpi", "el-siwi-forebears"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -209,6 +204,35 @@
                 "source_kind": "archive",
                 "page": "p. 259, notice 5163",
                 "notes": "Berlin, H. Reuther, 1890. Bibliographie annuelle des travaux sur l'Orient, lue sur l'exemplaire numérisé d'archive.org le 14 octobre 2026. Page 259, section « Aegyptisch-arabische Drucke » (impressions arabes d'Égypte) : la notice 5163, qui porte sur des extraits de Sidi Muhammad el 'Aijāsi el Magribi imprimés en 1307 de l'hégire, ajoute « die medicinische Manzūma (mu'nijat el ma'ānī) des Sidi Ibrāhīm es-Siwi ed-Desūqi »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le Max Planck Institute donne Isiwan comme nom des Siwis et situe leur langue dans l’oasis de Siwa en Égypte. Le rapprochement de la forme égyptienne El Siwi avec ce gentilé géographique est plausible, mais reste une inférence : aucune source consultée n’analyse directement le patronyme.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "An Acoustically-based Phonology and Morphophonology of Siwi (Berber)",
+                "author": "Max Planck Institute for Evolutionary Anthropology",
+                "year": null,
+                "url": "https://www.eva.mpg.de/linguistics/past-research-resources/documentation-and-description/an-acoustically-based-phonology-and-morphophonology-of-siwi-berber/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page de présentation d'un projet de recherche, lue le 14 octobre 2026 : le siwi, ou « ǝǧlan n-Isiwan », « la langue des Siwis », est la langue berbère la plus orientale, parlée par environ 20 000 personnes dans l'oasis de Siwa, dans l'ouest de l'Égypte ; l'oasis est restée indépendante de l'Égypte jusqu'au XIXe siècle. La page ne traite pas du patronyme."
+              },
+              {
+                "title": "El Siwi Surname Origin, Meaning & Last Name History",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://forebears.io/surnames/el_siwi",
+                "tier": "unverified",
+                "source_kind": "discovery",
+                "notes": "Agrégateur mondial de patronymes. La page atteste la graphie El Siwi et une concentration déclarée en Égypte, mais n’indique pas ses sources individuelles et dit explicitement ne pas connaître le sens du nom ; elle n’est utilisée ni comme preuve étymologique ni comme preuve d’appartenance ethnique."
               }
             ]
           }

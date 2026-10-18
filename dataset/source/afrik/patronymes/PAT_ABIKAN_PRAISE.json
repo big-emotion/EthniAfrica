@@ -10,7 +10,12 @@
   "spellings": [
     {
       "spelling": "Abikan",
-      "attestations": [{ "countryId": "NGA", "sourceRefs": ["ayeleru-oriki"] }]
+      "attestations": [
+        {
+          "countryId": "NGA",
+          "sourceRefs": ["ayeleru-oriki"]
+        }
+      ]
     }
   ],
   "transmissionMode": "patrilineal",
@@ -18,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'oríkì orílẹ̀ est la louange de lignage : distincte de l'oríkì personnel, elle nomme les fondateurs et la localité d'origine et se transmet, chaque enfant héritant du vers collectif de sa famille.",
-        "claimStatus": "established",
-        "sourceRefs": ["discoveryoruba-oriki"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -87,5 +87,40 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches « Abikan homonym etymology », « Abikan surname origin other language » et « Omo Abikan lineage » n'ont pas établi une graphie identique d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Les sources réunies dans ce dossier racontent l’histoire du nom Abikan.",
+    "originExplained": true,
+    "names": [
+      {
+        "nameText": "Abikan",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'oríkì orílẹ̀ est la louange de lignage : distincte de l'oríkì personnel, elle nomme les fondateurs et la localité d'origine et se transmet, chaque enfant héritant du vers collectif de sa famille.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "The Power of Oríkì: How Praise Names Shape Identity",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://discoveryoruba.com/power-of-oriki-how-praise-names-shape-identity/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site culturel yoruba. Cité pour la distinction entre oríkì personnel et oríkì orílẹ̀ (louange de lignage, héritée), non pour un lignage particulier."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une contribution non référencée reproduite par la base propose que Shumba signifie « lion » en shona. Faute d'analyse linguistique attribuée, cette lecture demeure une affirmation à vérifier.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["forebears-shumba"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -166,6 +161,26 @@
                 "source_kind": "academic",
                 "page": "p. 395",
                 "notes": "South African Journal of Science, vol. 15, 1918, communication lue le 11 juillet 1918 devant la South African Association for the Advancement of Science ; lu le 12 octobre 2026 dans la numérisation d'Internet Archive. L'auteur est un pasteur missionnaire. Page 395 : « The lion, shumba, is also one of the totems of Varozwe and of the Makaranga generally, and is found in the Chibe and Chilimanzi districts. » Auteur de l'époque coloniale, cité ici pour la forme qu'il relève."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une contribution non référencée reproduite par la base propose que Shumba signifie « lion » en shona. Faute d'analyse linguistique attribuée, cette lecture demeure une affirmation à vérifier.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Shumba Surname Origin, Meaning & Last Name History",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://forebears.io/surnames/shumba",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Base de répartition patronymique consultée directement. Elle atteste Shumba surtout au Zimbabwe et reproduit une contribution non référencée donnant « lion » en shona ; cette proposition est conservée au rang claimed et non élevée au rang d'étymologie établie."
               }
             ]
           }

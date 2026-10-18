@@ -120,7 +120,7 @@ describe("the Banu Ifran fiche", () => {
   it("adds Vycichl's cautious link between Afrī and Īfrī", () => {
     const banuIfran = fiche("patronymes/PAT_BANU_IFRAN.json");
     const reconstructions = allStrings(
-      banuIfran.origin.linguisticReconstructions
+      banuIfran.nameHistory.names.flatMap((name: NameEntry) => name.accounts)
     );
 
     expect(reconstructions.some((text) => text.includes("Vycichl"))).toBe(true);

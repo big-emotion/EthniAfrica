@@ -27,13 +27,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'entrée consultée classe Saleh comme un nom de famille formé sur le nom personnel Salih. Cette dérivation anthroponymique ne démontre ni une origine lignagère unique ni les pays d'attestation de la fiche.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["btn-surname-saleh"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -168,6 +163,26 @@
                 "source_kind": "archive",
                 "page": "p. 173, 248",
                 "notes": "Amsterdam, Leide, Rotterdam et Utrecht, Libraires associés, 1786. Traduction française du Coran, lue sur l'exemplaire numérisé d'archive.org le 12 octobre 2026. Page 173 : « Saleh, Ministre de nos volontés, auprès des Thémudéens », avec une note qui le dit « fils d'Abid » et « élu Prophète ». Page 248 : « Ô Saleh ! répondirent les Thémudéens »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'entrée consultée classe Saleh comme un nom de famille formé sur le nom personnel Salih. Cette dérivation anthroponymique ne démontre ni une origine lignagère unique ni les pays d'attestation de la fiche.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the surname Saleh — Behind the Name",
+                "author": "Behind the Name",
+                "year": 2024,
+                "url": "https://surnames.behindthename.com/name/saleh",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site d'onomastique en ligne, lu le 11 octobre 2026. Entrée ajoutée le 6 octobre 2024 : nom de famille arabe, « From the given name Salih », écrit صالح."
               }
             ]
           }

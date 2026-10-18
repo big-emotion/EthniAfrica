@@ -22,20 +22,9 @@
   "designatedSocialUnit": "lineage",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Le répertoire provisoire consigne deux récits distincts : l'un fait de l'ancêtre Nacoulma un aîné, nommé Tapsoba, qui aurait revendiqué les femmes de son père après avoir perdu le trône pendant une absence ; l'autre rattache le nom aux paroles d'un homme souhaitant retourner chez lui. Ces récits collectés ne sont ni attribués ni corroborés par une étude historique.",
-        "claimStatus": "contested",
-        "sourceRefs": ["burkina-provisional-patronyme-register"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "La notice NACOULMA juxtapose plusieurs traductions françaises incompatibles, autour du mariage, du retour chez soi, de la revendication des femmes du roi et des marques de déférence au chef. Faute d'analyse linguistique publiée, elles sont conservées comme gloses collectées et non comme étymologie établie.",
-        "claimStatus": "contested",
-        "sourceRefs": ["burkina-provisional-patronyme-register"]
-      }
-    ]
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -149,7 +138,8 @@
                 "page": "p. 146-147",
                 "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de mai 2025 et marqué « version provisoire » sur sa page de titre. Lu le 18 octobre 2026 dans le navigateur, sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Les pages sont celles du document, repérées par leurs numéros en bas de page. Notice n° 794, NACOULMA : « NACOULMA, signifie « Je veux me marier à toi » ou « on retourne chez nous » ou « Toutes les femmes du roi doivent me revenir » ou encore « Faire des courbettes pour rendre hommages aux chefs ». » Premier récit (p. 146) : l'ancêtre, Tapsoba, aîné et héritier, part en conquête ; le trône est confié à son frère cadet ; à son retour il accepte la chefferie de son frère mais revendique les femmes, en moore « Pagba naa coula mam », « d'où NACOULMA comme patronyme ». Second récit (p. 147) : un Nacoulma parti chercher du travail répond à qui l'interroge « na coula mè », « Je vais repartir ». Originaires de Bindé (Manga) et de Nédgo (Ganzourgou)."
               }
-            ]
+            ],
+            "claimStatus": "contested"
           },
           {
             "period": {
@@ -160,6 +150,27 @@
             "era": "modern",
             "statement": "Le nom Nacoulma viendrait des mots « na coula mè », « je vais repartir », que dit un membre de la famille parti chercher du travail, quand on l'interrogea sur son secret, selon un autre récit du même projet de répertoire.",
             "hypothesisGroup": "origine-nacoulma",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 146-147",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de mai 2025 et marqué « version provisoire » sur sa page de titre. Lu le 18 octobre 2026 dans le navigateur, sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Les pages sont celles du document, repérées par leurs numéros en bas de page. Notice n° 794, NACOULMA : « NACOULMA, signifie « Je veux me marier à toi » ou « on retourne chez nous » ou « Toutes les femmes du roi doivent me revenir » ou encore « Faire des courbettes pour rendre hommages aux chefs ». » Premier récit (p. 146) : l'ancêtre, Tapsoba, aîné et héritier, part en conquête ; le trône est confié à son frère cadet ; à son retour il accepte la chefferie de son frère mais revendique les femmes, en moore « Pagba naa coula mam », « d'où NACOULMA comme patronyme ». Second récit (p. 147) : un Nacoulma parti chercher du travail répond à qui l'interroge « na coula mè », « Je vais repartir ». Originaires de Bindé (Manga) et de Nédgo (Ganzourgou)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La notice NACOULMA juxtapose plusieurs traductions françaises incompatibles, autour du mariage, du retour chez soi, de la revendication des femmes du roi et des marques de déférence au chef. Faute d'analyse linguistique publiée, elles sont conservées comme gloses collectées et non comme étymologie établie.",
+            "claimStatus": "contested",
             "sources": [
               {
                 "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",

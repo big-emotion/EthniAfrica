@@ -23,18 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "La graphie Abdoulaye est présentée comme une forme ouest-africaine, façonnée par l'orthographe française, de l'arabe Abd Allah ; la forme haoussa rapprochée par la même source est Abdullahi. Ryan atteste séparément Abdullahi dans la nomenclature personnelle haoussa et le glose « serviteur d'Allah ».",
-        "claimStatus": "claimed",
-        "sourceRefs": ["btn-abdoulaye", "ryan-1981-abdoulaye"]
-      },
-      {
-        "claim": "Dans le système haoussa décrit par Chamo, le nom personnel est suivi le plus souvent du nom du père, parfois introduit par ɗan (« fils de »), et cet élément ne constitue pas un nom de famille héréditaire stable.",
-        "claimStatus": "established",
-        "sourceRefs": ["chamo-2018-abdoulaye"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -234,6 +224,56 @@
                 "source_kind": "archive",
                 "page": "p. 98",
                 "notes": "Paris, Bertrand, 1822. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. À Timbo, « Abdoulai, simple marabout, qui gouvernait la capitale pendant l'absence du roi », fait loger Mollien. Récit d'un voyageur français, cité ici pour la forme qu'il écrit ; nous n'avons pas lu la première édition de 1820."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La graphie Abdoulaye est présentée comme une forme ouest-africaine, façonnée par l'orthographe française, de l'arabe Abd Allah ; la forme haoussa rapprochée par la même source est Abdullahi. Ryan atteste séparément Abdullahi dans la nomenclature personnelle haoussa et le glose « serviteur d'Allah ».",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Abdoulaye",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/abdoulaye",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site communautaire consacré aux prénoms, lu le 11 octobre 2026. Elle rattache Abdoulaye à Abd Allah et cite Abdullahi comme forme haoussa. La page ne cite pas ses sources."
+              },
+              {
+                "title": "An Introduction to Hausa Personal Nomenclature",
+                "author": "Pauline M. Ryan",
+                "year": 1981,
+                "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 141-142",
+                "notes": "Revue Names, vol. 29, n° 2, 1981, p. 139-164. Lu dans le PDF intégral le 11 octobre 2026. Pages 141-142 : les noms musulmans donnés à la cérémonie du nom ; le tableau I range Abdullahi parmi les noms d'hommes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans le système haoussa décrit par Chamo, le nom personnel est suivi le plus souvent du nom du père, parfois introduit par ɗan (« fils de »), et cet élément ne constitue pas un nom de famille héréditaire stable.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Language and Identity in Africa: The Use of Place Names as Part of a Person’s Name in Hausa",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://auadamu.com/phocadownload/Books/%5B2018%5D%20Festschrift%20in%20Honour%20of%20Abdalla%20Uba%20Adamu%20-%20Media%20-Knowledge%20Transfer%20and%20African%20Identity.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Isa Yusuf Chamo, 2018, pp. 251-252 du chapitre consulté dans le volume intégral. Décrit le prénom suivi du nom du père ou du grand-père et précise que l'usage haoussa ne repose pas sur des noms de famille héréditaires généralisés ; la source ne traite pas l'étymologie d'Abdoulaye."
               }
             ]
           }

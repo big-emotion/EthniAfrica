@@ -32,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L’étude linguistique donne l’arabe standard ṣiqillī, « Sicilien », et documente ṣqallī comme forme patronymique courante au nord du Maroc. Elle établit une formation géographique, pas une ascendance sicilienne pour chaque porteur.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["aida-sqalli"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -185,6 +180,26 @@
                 "source_kind": "academic",
                 "page": "p. 96",
                 "notes": "Résumé d'une communication au 16e congrès de l'Association internationale de dialectologie arabe (AIDA), Catane, 23-26 juin 2026, dans le livret des résumés. Lu le 11 octobre 2026. Il suit le mot ṣiqillī, « Sicilien », au Maghreb sur au moins cinq siècles ; au Maroc, la seule forme reconnue, comme nom de famille ou comme adjectif, est ṣqallī, très courante dans l'extrême nord du pays ; en Tunisie, le mot a donné au moins trois noms de famille, ṣaklī, ṣqallī et zgollī, surtout dans le nord-est (Kelibia, Korba, Menzel Temime)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L’étude linguistique donne l’arabe standard ṣiqillī, « Sicilien », et documente ṣqallī comme forme patronymique courante au nord du Maroc. Elle établit une formation géographique, pas une ascendance sicilienne pour chaque porteur.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "AIDA 16 Booklet of Abstracts — Arabic Dialectology Association",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://aidacatania.unict.it/AIDA16_Booklet_of_Abstracts_09_06_2026_DEF.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Résumé scientifique consulté le 2 septembre 2026. Il compare ṣiqillī « Sicilien » et la forme marocaine ṣqallī ; aucune généalogie de famille n’y est avancée."
               }
             ]
           }

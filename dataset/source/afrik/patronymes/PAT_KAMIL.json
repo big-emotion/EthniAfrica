@@ -11,7 +11,10 @@
     {
       "spelling": "Kamil",
       "attestations": [
-        { "countryId": "DJI", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "DJI",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -20,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'entrée lexicographique communautaire analyse l'afar Káamil comme un prénom masculin emprunté à l'arabe kāmil ; faute de vérification indépendante dans la thèse citée par l'entrée, cette analyse demeure une proposition.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["kamil-wiktionary-afar"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -138,6 +136,26 @@
                 "source_kind": "archive",
                 "page": "p. 599-601",
                 "notes": "Londres, Longman, Brown, Green, and Longmans, 1856 ; exemplaire numérisé sur archive.org. Récit d'un voyage fait en 1854-1855 dans le pays somali et jusqu'à Harar. Voyageur britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Annexe V, « A condensed account of an attempt to reach Harar from Ankobar », récit du lieutenant Barker de la marine des Indes, daté « Aden, February 28, 1842 » (p. 599). Page 601 : quittant Farri avec une caravane « bound for Tajoorah », il est recommandé « to the care of Mahomed ibn Buraitoo and Dorranu ibn Kamil ». Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'entrée lexicographique communautaire analyse l'afar Káamil comme un prénom masculin emprunté à l'arabe kāmil ; faute de vérification indépendante dans la thèse citée par l'entrée, cette analyse demeure une proposition.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Kaamil — Wiktionary, Afar entry",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://en.wiktionary.org/wiki/Kaamil",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Entrée lexicographique collaborative consultée dans sa section afar : elle donne Káamil comme prénom masculin et propose un emprunt à l'arabe kāmil. Elle renvoie à une thèse de Mohamed Hassan Kamil (2015), mais le texte de cette thèse n'a pas pu être vérifié ; la proposition n'est donc pas promue au niveau référencé."
               }
             ]
           }

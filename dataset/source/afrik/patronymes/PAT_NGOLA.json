@@ -23,24 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [],
-    "historicalSyntheses": [
-      {
-        "claim": "L'État de Ndongo, dont le roi portait le titre de ngola, était en formation vers 1500 ; ce titre « donna ensuite le mot Angola » (p. 604). Un autre passage, au conditionnel, dit que la colonie « serait appelée Angola, du titre du roi du Ndongo » (p. 613) : le premier parle de l'origine du mot, le second du nom que les Portugais auraient donné à leur colonie. La même synthèse parle de la cour du ngola, puis du ngola représenté en 1622 et 1623, lors du traité de paix avec les Portugais, par sa sœur Nzinga Mbande. Elle ne dit pas si ngola est aussi un nom de famille.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["hga-v-vansina"]
-      },
-      {
-        "claim": "Le titre complet était « Ngola a Kiluanje », souvent raccourci en « Ngola », d'où le nom du pays actuel, l'Angola. Cette phrase est donnée sans renvoi à une source.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["wikipedia-en-ngola-title"]
-      },
-      {
-        "claim": "La reine Nzinga, réfugiée au Matamba, signait sa correspondance du titre Nzinga Mbandi Ngola, c'est-à-dire reine du Ndongo et du Matamba. Le titre de la reine comporte donc ngola ; la source ne le présente pas comme un nom de famille. Le même document nomme le roi du Ndongo de la fin du XVIe siècle Ngola Kiluanje kia Ndambi, forme que nous ne ramenons pas ici à « Ngola a Kiluanje ».",
-        "claimStatus": "claimed",
-        "sourceRefs": ["unesco-nzinga-mbandi-unit"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -98,10 +82,6 @@
     {
       "fieldPath": "nameSystem",
       "reason": "Les sources consultées décrivent ngola comme le titre du roi du Ndongo, puis comme un élément du titre de la reine Nzinga ; aucune ne parle d'un clan. Le modèle n'a pas de case pour un titre royal : la fiche le range parmi les patronymes non héréditaires, la case la plus proche."
-    },
-    {
-      "fieldPath": "origin",
-      "reason": "Nous n'avons trouvé aucun récit kimbundu ou angolais sur l'origine de ce nom ; les sources consultées sont des textes d'histoire et des pages de Wikipédia en anglais."
     },
     {
       "fieldPath": "alliances",
@@ -181,7 +161,8 @@
                 "page": "p. 45 du PDF",
                 "notes": "Copie non officielle hébergée sur Wikimedia Commons, relue le 11 octobre 2026. La reine, même après avoir fui au Matamba, signait sa correspondance du titre Nzinga Mbandi Ngola."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           },
           {
             "period": {
@@ -251,6 +232,47 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 604",
                 "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot. L'État de Ndongo, « dont le roi portait le titre de ngola », était en formation vers 1500. Contenu recoupé le 11 octobre 2026 sur l'édition anglaise, que South African History Online met en ligne, l'édition française n'ayant pas pu être rouverte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'État de Ndongo, dont le roi portait le titre de ngola, était en formation vers 1500 ; ce titre « donna ensuite le mot Angola » (p. 604). Un autre passage, au conditionnel, dit que la colonie « serait appelée Angola, du titre du roi du Ndongo » (p. 613) : le premier parle de l'origine du mot, le second du nom que les Portugais auraient donné à leur colonie. La même synthèse parle de la cour du ngola, puis du ngola représenté en 1622 et 1623, lors du traité de paix avec les Portugais, par sa sœur Nzinga Mbande. Elle ne dit pas si ngola est aussi un nom de famille.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 19 : Le Royaume du Kongo et ses voisins",
+                "author": "Jan Vansina, à partir d'une contribution de Théophile Obenga",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 604",
+                "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot. « dont le roi portait le titre de ngola, qui donna ensuite le mot Angola ». Contenu recoupé le 11 octobre 2026 sur l'édition anglaise, que South African History Online met en ligne, l'édition française n'ayant pas pu être rouverte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le titre complet était « Ngola a Kiluanje », souvent raccourci en « Ngola », d'où le nom du pays actuel, l'Angola. Cette phrase est donnée sans renvoi à une source.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Ngola (title) — Wikipédia (version anglaise)",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://en.wikipedia.org/wiki/Ngola_(title)",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Article consulté en octobre 2026 dans sa version anglaise. La phrase sur le titre complet et sur l'Angola n'y porte aucune note. L'article renvoie, pour la phrase qui présente le titre du roi du Ndongo, à Mark R. Lipschutz et R. Kent Rasmussen, Dictionary of African Historical Biography (University of California Press, 1989), p. 150, et à un article de Longreads de 2019 pour la reine Njinga ; nous n'avons consulté aucun de ces textes dans l'original. Il ne donne pas le sens du mot ngola."
               }
             ]
           }

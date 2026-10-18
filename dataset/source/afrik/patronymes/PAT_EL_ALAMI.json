@@ -32,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une contribution utilisateur interprète El Alami comme « celui qui est célèbre ». Cette proposition sans référence est conservée comme donnée communautaire non vérifiée et ne permet aucune conclusion de lignée.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["forebears-el-alami"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -152,6 +147,26 @@
                 "source_kind": "government",
                 "page": "rubrique « Political parties and leaders »",
                 "notes": "Fiche « Morocco » de l'annuaire de la CIA, version de 2004 (mise à jour au 1er janvier 2003). Lu le 14 octobre 2026 sur la transcription de Wikisource. Rubrique « Political parties and leaders ». Parti de l'environnement et du développement (« Environment and Development Party »), « Ahmed EL ALAMI ». Ce texte nomme des chefs de partis ; il ne dit rien de l'origine des noms."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une contribution utilisateur interprète El Alami comme « celui qui est célèbre ». Cette proposition sans référence est conservée comme donnée communautaire non vérifiée et ne permet aucune conclusion de lignée.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "El Alami Surname Origin, Meaning & Last Name History — Forebears",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://forebears.io/surnames/el_alami",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Répertoire communautaire consulté le 2 septembre 2026. Il recense El Alami au Maroc et reproduit une signification proposée par un utilisateur, sans bibliographie."
               }
             ]
           }

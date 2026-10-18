@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le Dictionary of American Family Names mentionne explicitement Michel comme patronyme seychellois et mauricien et le rattache au prénom Michel. Cette notice explique la formation du nom, sans identifier le passage d'une lignée précise vers les Seychelles.",
-        "claimStatus": "established",
-        "sourceRefs": ["dafn-michel-2022"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -144,6 +139,26 @@
                 "tier": "unverified",
                 "source_kind": "community",
                 "notes": "Base de données d'une association de généalogie, qui dépouille les tables et actes d'état civil, les registres paroissiaux et les registres d'inhumation. Lue le 18 octobre 2026. Le patronyme MICHEL y figure dans les mariages de Mahé pour la période 1856-1904, avec 13 et 12 mentions dans deux colonnes, « Intervenant 1 » et « Intervenant 2 », que la page ne définit pas. Une ligne « MICHEL ALIAS MACASSAR » est datée de 1867. Le détail des actes n'a pas été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le Dictionary of American Family Names mentionne explicitement Michel comme patronyme seychellois et mauricien et le rattache au prénom Michel. Cette notice explique la formation du nom, sans identifier le passage d'une lignée précise vers les Seychelles.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Michel Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/michel?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e édition, Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 18 octobre 2026 dans la traduction française que le site affiche. La notice donne Michel comme nom français, wallon, allemand, néerlandais, antillais (surtout d'Haïti), seychellois et mauricien, tiré du prénom Michel, avec un renvoi à Michael. Elle donne d'autres origines pour d'autres langues : une forme castillanisée du nom basque Mitxel, une variante polonaise de Michał, une variante anglaise et écossaise de Mitchell, une forme abrégée de noms grecs aux États-Unis."
               }
             ]
           }

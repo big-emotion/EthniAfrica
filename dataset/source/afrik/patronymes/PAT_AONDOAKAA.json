@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -62,10 +63,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Les recherches « Aondoakaa Tiv name meaning », « Aondoakaa anthroponymy » et l'article de Mensah (2020) sur les noms personnels tiv ont été consultés. Ils documentent Aondo dans d'autres noms, mais aucun ne décompose ni n'explique Aondoakaa ; aucune étymologie n'est donc proposée."
-    },
     {
       "fieldPath": "peoples",
       "reason": "La source gouvernementale atteste un porteur nigérian, mais ni elle ni les recherches « Aondoakaa Tiv anthroponym » n'établissent directement le rattachement tiv de la forme complète ; il reste au statut « supposed »."

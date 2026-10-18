@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "La recension d'Elsdon C. Smith cite Nkrumah comme nom masculin akan du Ghana signifiant « neuvième-né ».",
-        "claimStatus": "established",
-        "sourceRefs": ["smith-1973-review-nkrumah"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -129,7 +124,8 @@
                 "page": "p. 57",
                 "notes": "Recension parue dans Names, texte intégral lu le 14 octobre 2026. Page 57 : « Nkrumah, pronounced 'n-KROO-mah, meaning « ninth born » comes from the Akan language as spoken in Ghana ». La recension ne précise pas le sous-groupe akan."
               }
-            ]
+            ],
+            "claimStatus": "established"
           },
           {
             "period": {

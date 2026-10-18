@@ -32,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le Dictionnaire kinande-français du Musée royal de l'Afrique centrale donne Kaseréka comme nom chronologique nande attribué au troisième enfant mâle et le rapproche de Kábúyahia, Máte et Kámatê. Il documente ainsi une règle de rang de naissance, sans faire de Kasereka un patronyme héréditaire.",
-        "claimStatus": "established",
-        "sourceRefs": ["mrac-kinande-kasereka"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -162,6 +157,27 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 124-125",
                 "notes": "Tervuren, Musée royal de l'Afrique centrale, 2012, lu en ligne. Le texte de l'entrée Kámatê (p. 124) écrit Kasereka sans accent ; l'entrée Kaseréka (p. 125) l'écrit avec l'accent ; l'index français-kinande renvoie de Kasereka à Kaseréka. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le Dictionnaire kinande-français du Musée royal de l'Afrique centrale donne Kaseréka comme nom chronologique nande attribué au troisième enfant mâle et le rapproche de Kábúyahia, Máte et Kámatê. Il documente ainsi une règle de rang de naissance, sans faire de Kasereka un patronyme héréditaire.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Dictionnaire kinande-français avec index français-kinande",
+                "author": "Kambale Kavutirwaki et Ngessimo M. Mutaka",
+                "year": 2012,
+                "url": "https://www.africamuseum.be/sites/default/files/media/docs/research/publications/rmca/online/documents-social-sciences-humanities/dictionnaire-kinande-francais.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 125",
+                "notes": "Tervuren, Musée royal de l'Afrique centrale, 2012, lu en ligne. À la page 125, l'entrée Kaseréka le définit comme « nom chronologique nande donné au troisième enfant mâle » ; la page 124 renvoie à lui dans l'entrée Kámatê. Le sens du nom n'y est pas donné. Lu le 13 octobre 2026."
               }
             ]
           }

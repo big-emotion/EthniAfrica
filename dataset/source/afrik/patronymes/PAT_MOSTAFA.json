@@ -32,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "La source classe Mostafa comme nom de famille arabe dérivé du nom personnel Mustafa et fournit la graphie مصطفى. Elle ne permet pas de reconstruire une généalogie ni une règle de transmission particulière.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["btn-surname-mostafa"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -208,6 +203,26 @@
                 "source_kind": "archive",
                 "page": "p. 53",
                 "notes": "Le Caire, Imprimerie nationale, 1888. Chronique égyptienne écrite par un lettré du Caire, lue dans la traduction française sur l'exemplaire numérisé d'archive.org le 14 octobre 2026. Page 53 : « D'autres donnent une autre origine à la division dont nous venons de parler. Ils prétendent que les Kassemites sont les partisans de Kassem bey El Defterdar, suivant de Moustapha bej, et les Fikarites, ceux de Zulfikar bey El Kebir. D'après eux, cette divisiou se serait manifestée en l'an 1050 ; mais Dieu seul connaît la vérité. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La source classe Mostafa comme nom de famille arabe dérivé du nom personnel Mustafa et fournit la graphie مصطفى. Elle ne permet pas de reconstruire une généalogie ni une règle de transmission particulière.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the surname Mostafa — Behind the Name",
+                "author": "Behind the Name",
+                "year": 2024,
+                "url": "https://surnames.behindthename.com/name/mostafa",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site d'onomastique en ligne, lu le 14 octobre 2026. Entrée ajoutée le 6 octobre 2024 : nom de famille « From the given name Mustafa », d'usage arabe, écrit مصطفى."
               }
             ]
           }

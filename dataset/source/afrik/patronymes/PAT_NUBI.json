@@ -40,13 +40,8 @@
   "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Le catalogue de la Princeton Geniza Project décrit une lettre arabe datée du 24 février 1925, envoyée par l'avocat Muḥammad Ḥasan al-Nūbī. Le document établit l'emploi daté de la forme al-Nūbī dans un nom personnel en Égypte, sans préciser s'il s'agit d'un patronyme héréditaire ou d'une nisba descriptive.",
-        "claimStatus": "established",
-        "sourceRefs": ["princeton-geniza-miac-208"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -168,6 +163,27 @@
                 "role": "avocat, auteur de la lettre"
               }
             ],
+            "sources": [
+              {
+                "title": "Princeton Geniza Project — Letter MIAC 208 (PGPID 34857)",
+                "author": "Princeton Geniza Project",
+                "year": null,
+                "url": "https://geniza.princeton.edu/en/documents/34857/",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "notice MIAC 208",
+                "notes": "Notice d'archive universitaire, lue le 14 octobre 2026. Elle décrit une lettre en arabe du 24 février 1925, conservée au Museum of Islamic Art sous le numéro 208, d'après le catalogue de Ḥassanein Muḥammad Rabīʿa : « Letter from the lawyer Muḥammad Ḥasan al-Nūbī to Kẖawaja Sālamūn Melūl requesting payment ». La notice ne donne ni image ni transcription."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le catalogue de la Princeton Geniza Project décrit une lettre arabe datée du 24 février 1925, envoyée par l'avocat Muḥammad Ḥasan al-Nūbī. Le document établit l'emploi daté de la forme al-Nūbī dans un nom personnel en Égypte, sans préciser s'il s'agit d'un patronyme héréditaire ou d'une nisba descriptive.",
+            "claimStatus": "established",
             "sources": [
               {
                 "title": "Princeton Geniza Project — Letter MIAC 208 (PGPID 34857)",

@@ -22,13 +22,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Une publication pédagogique de l'AEFE indique que Joseph Casimir Rabe choisit les initiales J.-J.R. et signa son œuvre sous le pseudonyme Jean Joseph Rabearivelo. Le nom est donc documenté ici comme adoption littéraire individuelle, non comme transmission familiale.",
-        "claimStatus": "established",
-        "sourceRefs": ["aefe-saiky-nofy"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -243,6 +238,26 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 5",
                 "notes": "Antananarivo, London Missionary Society, 1882. Lu sur l'exemplaire numérisé de HathiTrust le 11 octobre 2026. Page 5 : « Naona ny hoe Rabe, satria anaran' olona » (Rabe est un nom, parce que c'est un nom de personne) ; l'exercice 4 demande de ranger parmi les noms de personnes, entre autres, « Rasoa » et « Ranaivo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une publication pédagogique de l'AEFE indique que Joseph Casimir Rabe choisit les initiales J.-J.R. et signa son œuvre sous le pseudonyme Jean Joseph Rabearivelo. Le nom est donc documenté ici comme adoption littéraire individuelle, non comme transmission familiale.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Saiky-Nofy : poésie et identité malgache",
+                "author": "Agence pour l'enseignement français à l'étranger",
+                "year": null,
+                "url": "https://aefe.gouv.fr/sites/default/files/asset/file/livre-saiky-nofy.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Publication pédagogique d'un collège du réseau de l'AEFE, non datée. Lue le 11 octobre 2026. Le mot du chef d'établissement, p. 2 : « J.-J.R., initiales volontairement choisies par Joseph Casimir Rabe pour signer son œuvre littéraire sous le pseudonyme de Jean Joseph Rabearivelo »."
               }
             ]
           }

@@ -31,20 +31,9 @@
   "designatedSocialUnit": "lineage",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "La forme Geingob est attestée au plus tard en 1967 dans le titre d'un texte autobiographique de Gottfried Hage Geingob conservé par les archives de l'Université de Namibie au sein de la collection de l'Institut des Nations unies pour la Namibie.",
-        "claimStatus": "established",
-        "sourceRefs": ["unam-geingob-1967"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "En khoekhoegowab, le marqueur postclitique de troisième personne du singulier est s au féminin et b au masculin. Les formes attestées Geingos et Geingob appliquent cette opposition grammaticale au même radical patronymique Geing-.",
-        "claimStatus": "established",
-        "sourceRefs": ["haacke-khoekhoegowab-2015", "namibian-geingos-2024"]
-      }
-    ]
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -212,6 +201,57 @@
                 "tier": "referenced",
                 "source_kind": "press",
                 "notes": "Namibian Broadcasting Corporation, reportage sur le 46e festival culturel damara, à Okombahe ; la page ne donne pas de date précise. Lu le 11 octobre 2026. Monica Geingos y porte la tenue traditionnelle ǀGaio-Daman, « the clan from which her husband originates »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La forme Geingob est attestée au plus tard en 1967 dans le titre d'un texte autobiographique de Gottfried Hage Geingob conservé par les archives de l'Université de Namibie au sein de la collection de l'Institut des Nations unies pour la Namibie.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Experiences as a student and as a teacher",
+                "author": "Hage Gottfried Geingob",
+                "year": 1967,
+                "url": "https://archives.unam.edu.na/index.php/geingob-hage-gottfried-experiences-as-student-and-as-teacher-by-gottfried-hage-geingob-london-1967",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "notice PA 4/1/1/70",
+                "notes": "Notice d'archive de la collection de l'Institut des Nations unies pour la Namibie. Lu le 11 octobre 2026. L'année 1967 et le lieu, Londres, ne figurent que dans le titre de la notice."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "En khoekhoegowab, le marqueur postclitique de troisième personne du singulier est s au féminin et b au masculin. Les formes attestées Geingos et Geingob appliquent cette opposition grammaticale au même radical patronymique Geing-.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Lexical borrowing by Khoekhoegowab from Cape Dutch and Afrikaans",
+                "author": "Wilfrid H. G. Haacke",
+                "year": 2015,
+                "url": "https://spilplus.journals.ac.za/pub/article/view/653/616",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 59",
+                "notes": "Stellenbosch Papers in Linguistics Plus, vol. 47, 2015, p. 59-74. Lu le 11 octobre 2026. Page 59 : en khoekhoegowab, langue des Nama, des Damara et des Haiǁom, le genre est marqué par une finale ajoutée au nom, « s for feminine », « b for masculine »."
+              },
+              {
+                "title": "Papa was indeed a father of the nation — Geingob's daughter",
+                "author": "Shelleygan Petersen",
+                "year": 2024,
+                "url": "https://www.namibian.com.na/papa-was-indeed-a-father-of-the-nation-geingobs-daughter/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "The Namibian, 22 février 2024. Lu le 11 octobre 2026. « Nangula Geingos, the oldest daughter of president Hage Geingob » ; son cousin s'appelle Lemmy Geingob."
               }
             ]
           }

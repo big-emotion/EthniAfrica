@@ -22,13 +22,8 @@
   "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Une étude des registres d'état civil de Mostaganem relève Benyoucef parmi les prénoms devenus noms de famille et rapproche Youcef de Joseph. Cette observation concerne les registres étudiés. Elle ne signifie pas que toutes les familles Benyoucef ont les mêmes ancêtres.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["onomastica-benyoucef"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -181,6 +176,27 @@
             "statement": "Le nom Benyoucef figure dans les registres d'état civil de la ville de Mostaganem, relevés au cours de l'année 2020, parmi les prénoms devenus noms de famille, selon l'étude de Yamina Taibi-Maghraoui. C'est la plus ancienne trace de ce nom que le projet connaît ; elle ne dit pas depuis quand des familles le portent.",
             "formAsWritten": "Benyoucef",
             "birth": true,
+            "sources": [
+              {
+                "title": "L'usage des prénoms bibliques en Algérie",
+                "author": "Yamina Taibi-Maghraoui",
+                "year": 2024,
+                "url": "https://saber.unioeste.br/index.php/onomastica/article/view/32826",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 7",
+                "notes": "Onomástica desde América Latina, vol. 5, 2024, p. 1-11 ; texte intégral lu dans le PDF de la revue. L'autrice a recensé en 2020 quarante-deux noms propres, prénoms et noms de famille, transcrits dans les registres d'état civil de Mostaganem. Page 7 : « Certains de ces prénoms se sont transmués en patronymes, engendrant ainsi des appellations telles que « Ben Brahim », « Ould Brahim », « Bensmail », « Bendaoud », « Benyoucef », « Benslimane », « Benyagoub », « Benyahia », « Benaissa », « Ould Moussa » et « Benhaoua » » ; ces noms, « au départ de simples prénoms », ont pris « une dimension honorifique de manière permanente au sein de la lignée familiale ». L'autrice renvoie à Bengoua (2021, p. 92). Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une étude des registres d'état civil de Mostaganem relève Benyoucef parmi les prénoms devenus noms de famille et rapproche Youcef de Joseph. Cette observation concerne les registres étudiés. Elle ne signifie pas que toutes les familles Benyoucef ont les mêmes ancêtres.",
+            "claimStatus": "claimed",
             "sources": [
               {
                 "title": "L'usage des prénoms bibliques en Algérie",

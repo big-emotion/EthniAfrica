@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'étude des dictionnaires de noms gabonais atteste Mengue dans la construction Mengue Me Ngou, analysée comme « Mengue de Ngou ». Elle établit la structure relationnelle d'une dénomination bantoue gabonaise où la filiation peut être élidée, mais ne propose ni étymologie lexicale de Mengue ni preuve que toutes les lignées modernes suivent ce modèle.",
-        "claimStatus": "established",
-        "sourceRefs": ["ndinga-koumba-2025-mengue"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -124,6 +119,26 @@
                 "source_kind": "academic",
                 "page": "p. 179",
                 "notes": "Article de Revista Cátedra 6(1), 2023, pp. 171-186. Lu le 18 octobre 2026 dans le PDF en espagnol. Page 179 : l'auteur cite Rosendo Ela Nsue Mibui (2005, p. 102), pour qui certains noms fang « parece que son netamente originales y de los que no puede encontrarse posibilidad de derivación o de composición circunstancial como Mbomio (Mbomeyo), Esono, Edú, Elá, Mbá, Abeso, Nguema, Obono, Mibui, Angue, Mangue (Mengue) ». L'ouvrage de Nsue Mibui n'a pas été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'étude des dictionnaires de noms gabonais atteste Mengue dans la construction Mengue Me Ngou, analysée comme « Mengue de Ngou ». Elle établit la structure relationnelle d'une dénomination bantoue gabonaise où la filiation peut être élidée, mais ne propose ni étymologie lexicale de Mengue ni preuve que toutes les lignées modernes suivent ce modèle.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Dictionnaires des noms personnels gabonais : promesses d'un domaine de la lexicographie gabonaise",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.researchgate.net/publication/388322761_Dictionnaires_des_Noms_Personnels_Gabonais_Promesses_d'un_Domaine_de_la_Lexicographie_Gabonaise",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Article métalexicographique de Ndinga-Koumba-Binza consulté directement. Il donne Mengue Me Ngou comme exemple de dénomination bantoue gabonaise signifiant structurellement « Mengue de Ngou » et décrit l'élision cognitive de fils/fille ; il ne fournit pas le sens lexical de Mengue."
               }
             ]
           }

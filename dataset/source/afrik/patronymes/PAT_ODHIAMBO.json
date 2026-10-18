@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Odhiambo est documenté comme un nom masculin donné à un garçon né dans l’après-midi ou le soir : Oluoch (2022) donne 14 h à 17 h, et Onyoyo (2012) parle du soir.",
-        "claimStatus": "established",
-        "sourceRefs": ["oluoch-dholuo-toponyms-2022", "onyoyo-dholuo-grammar"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -135,7 +130,8 @@
                 "page": "p. 8 et p. 59",
                 "notes": "Grammaire publiée chez Lake Publishers & Enterprises, lue en entier sur le dépôt de l'University of Nairobi. Page 59 : « A male child born in the evening is Odhiambo, a female is Adhiambo ». Page 8 : les salutations du soir s'appellent « Mos mar Odhiambo ». Page 23 : les noms d'hommes commencent par O- et ceux de femmes par A-. Lu le 13 octobre 2026."
               }
-            ]
+            ],
+            "claimStatus": "established"
           },
           {
             "period": {

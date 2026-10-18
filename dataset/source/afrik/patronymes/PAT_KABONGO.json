@@ -22,13 +22,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Un article ethnographique de 1932 sur les Luba du Katanga situe l'une des trois grandes divisions luba sous l'autorité du chef Kabongo. Il s'agit d'une attestation historique du nom dans une fonction de chefferie, non d'une étymologie du patronyme contemporain.",
-        "claimStatus": "established",
-        "sourceRefs": ["donohugh-berry-kabongo-1932"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -155,6 +150,27 @@
                 "source_kind": "archive",
                 "page": "p. 252",
                 "notes": "Londres, Daldy, Isbister, 1877, volume I ; exemplaire numérisé sur archive.org. Page 252, mention « March, 1874 » en marge : « camped at Kabongo, a short way south of the Malagarazi ». Voyageur britannique, cité pour les formes qu'il écrit. Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Un article ethnographique de 1932 sur les Luba du Katanga situe l'une des trois grandes divisions luba sous l'autorité du chef Kabongo. Il s'agit d'une attestation historique du nom dans une fonction de chefferie, non d'une étymologie du patronyme contemporain.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "A Luba Tribe in Katanga: Customs and Folklore",
+                "author": "Agnes C. L. Donohugh et Priscilla Berry",
+                "year": 1932,
+                "url": "https://www.cambridge.org/core/journals/africa/article/abs/luba-tribe-in-katanga1-customs-and-folklore/A6B8D4D7C96529ADEFB39106ED748E78",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 176",
+                "notes": "Africa, volume 5, numéro 2, avril 1932. Seul l'extrait de la première page est ouvert sur Cambridge Core : « One of the three major divisions of the Luba-speaking people in the Katanga Province is under the chief Kabongo ». Le reste de l'article n'a pas été lu. Lu le 13 octobre 2026."
               }
             ]
           }

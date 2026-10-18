@@ -32,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le Dictionary of American Family Names analyse Wolde comme un nom personnel en ge'ez ou en amharique, interprété « mon fils » et, dans les composés chrétiens, « fils de ». Il précise que son enregistrement comme surname dans la diaspora ne reflète pas un nom familial héréditaire éthiopien.",
-        "claimStatus": "established",
-        "sourceRefs": ["dafn-wolde"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -200,6 +195,26 @@
                 "source_kind": "archive",
                 "page": "p. 2-3",
                 "notes": "Édimbourg, J. Ruthven, pour G. G. J. et J. Robinson, 1790, volume 4. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026. Page 2 : Bruce fait halte chez « Shalaka Welled Amlac », qu'il connaissait à Gondar. Page 3 : à Gondar, il avait reçu chez lui un malade venu du Maitsha avec deux serviteurs, Welled Amlac. Récit d'un voyageur écossais, cité ici pour la forme qu'il écrit."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le Dictionary of American Family Names analyse Wolde comme un nom personnel en ge'ez ou en amharique, interprété « mon fils » et, dans les composés chrétiens, « fils de ». Il précise que son enregistrement comme surname dans la diaspora ne reflète pas un nom familial héréditaire éthiopien.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2nd ed. — Wolde (Ancestry)",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.ancestry.com/last-name-meaning/Wolde?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Entrée du Dictionary of American Family Names, 2e éd. (Oxford University Press, 2022), reproduite par Ancestry et consultée le 2 septembre 2026. Elle distingue l'élément de nom personnel éthiopien Wolde d'homonymes nord-allemand et anglais et précise le caractère non héréditaire du système éthiopien."
               }
             ]
           }

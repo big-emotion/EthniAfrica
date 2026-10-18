@@ -22,13 +22,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Dans un article de généalogie congolaise, Johan Roelstraete cite Ivan Godefroid pour décrire Kambale comme le nom attribué au deuxième garçon d'une fratrie dans le système de nomination munande. La même section distingue ce nom chronologique d'un troisième nom hérité des grands-parents ; Kambale est donc documenté ici comme nom individuel de rang de naissance, non comme preuve d'un patronyme héréditaire unique.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["vlaamse-stam-kambale"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -98,6 +93,27 @@
             "era": "modern",
             "statement": "Le nom Kambale est celui que reçoit le deuxième garçon d'une famille chez les Nande, après Mumbere ou Paluku pour l'aîné et avant Kasereka pour le troisième et Kakule pour le quatrième, selon Ivan Godefroid, cité par Johan Roelstraete.",
             "aspect": "usage",
+            "sources": [
+              {
+                "title": "Congo en familiegeschiedenis — Wewe ni nani? (Wie ben je?)",
+                "author": "Johan Roelstraete",
+                "year": 2016,
+                "url": "https://www.familiegeschiedenis.be/sites/default/files/inline-files/Vlaamse_Stam_2016_3_Wewe_ni_nani.pdf",
+                "tier": "unverified",
+                "source_kind": "community",
+                "page": "p. 233",
+                "notes": "Vlaamse Stam, 52e année, n° 3, juillet-septembre 2016, revue de généalogie flamande, et non publication linguistique : page 233 : Roelstraete cite Ivan Godefroid, qui écrit que chez les Munande le deuxième garçon « krijgt de naam Kambale, de derde Kasereka, de vierde Kakule ». Le texte de Godefroid cité n'a pas été retrouvé ; l'article le rapporte de seconde main. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans un article de généalogie congolaise, Johan Roelstraete cite Ivan Godefroid pour décrire Kambale comme le nom attribué au deuxième garçon d'une fratrie dans le système de nomination munande. La même section distingue ce nom chronologique d'un troisième nom hérité des grands-parents ; Kambale est donc documenté ici comme nom individuel de rang de naissance, non comme preuve d'un patronyme héréditaire unique.",
+            "claimStatus": "claimed",
             "sources": [
               {
                 "title": "Congo en familiegeschiedenis — Wewe ni nani? (Wie ben je?)",

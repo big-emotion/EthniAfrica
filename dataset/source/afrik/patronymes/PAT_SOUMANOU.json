@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -62,10 +63,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Les recherches ciblées sur « Soumanou » dans les travaux d'anthroponymie béninoise et dendi, les catalogues bibliographiques et les documents institutionnels n'ont livré ni étymologie étayée, ni tradition orale attribuée, ni chronique consacrée à l'origine du nom."
-    },
     {
       "fieldPath": "peoples",
       "reason": "La notice de la collection Islam West Africa atteste le nom au Bénin sans indiquer le peuple des porteurs ; les recherches associant « Soumanou » à Dendi, Zarma et Songhay n'ont fourni aucune attestation ethnique dédiée, donc l'association initiale reste supposée."

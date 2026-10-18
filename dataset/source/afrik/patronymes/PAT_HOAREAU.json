@@ -22,13 +22,8 @@
   "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Dans sa chronique fondée sur l'histoire du premier peuplement, Tony Mathiot relève la naissance de Louis Leonard Hoareau à Mahé le 20 août 1805. Cette attestation fixe la présence ancienne de la graphie aux Seychelles sans fournir, à elle seule, l'étymologie du nom.",
-        "claimStatus": "established",
-        "sourceRefs": ["mathiot-2022-seychelles-hoareau"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -185,6 +180,26 @@
                 "tier": "referenced",
                 "source_kind": "press",
                 "notes": "Seychelles Nation, 5 novembre 2022, date imprimée sur la page lue le 18 octobre 2026. Chronique écrite au nom du Musée national d'histoire. Après avoir noté que les familles blanches avaient alors beaucoup d'enfants, elle cite des naissances, dont : « On August 20, 1805 Louis Leonard Hoareau was born on Mahé ». L'acte de naissance n'a pas été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans sa chronique fondée sur l'histoire du premier peuplement, Tony Mathiot relève la naissance de Louis Leonard Hoareau à Mahé le 20 août 1805. Cette attestation fixe la présence ancienne de la graphie aux Seychelles sans fournir, à elle seule, l'étymologie du nom.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "We, the people of Seychelles…",
+                "author": "Tony Mathiot",
+                "year": 2022,
+                "url": "https://www.nation.sc/articles/15689/we-the-people-of-seychelles",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Seychelles Nation, 5 novembre 2022, date imprimée sur la page lue le 18 octobre 2026. Chronique écrite au nom du Musée national d'histoire. Elle range les noms des Seychellois en noms européens, africains et créoles : « and creole: Hoareau, Payette, Labrosse, Camille »."
               }
             ]
           }

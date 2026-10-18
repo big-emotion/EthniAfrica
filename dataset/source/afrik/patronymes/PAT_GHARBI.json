@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une contribution utilisateur interprète Gharbi comme « personne venue de l’ouest » et l’applique en Tunisie à une provenance algérienne ou marocaine. Sans bibliographie, cette proposition reste non vérifiée et ne désigne aucun établissement précis.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["forebears-gharbi"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -181,6 +176,26 @@
                 "source_kind": "archive",
                 "page": "p. 151, 175, 181",
                 "notes": "Tunis, Imprimerie rapide, 1900. Chronique de Mohammed Seghir ben Youssef, de Béja, traduite en français ; lue sur l'exemplaire numérisé d'archive.org le 18 octobre 2026. Page 151 : en mai, à l'approche de l'armée d'Alger (an 1147 de l'hégire, 1735), le bey fait évacuer Béja pour les familles des spahis, « qui furent suivies par tous ceux qui redoutaient de se trouver entre les mains du caïd Ahmed el Gharbi ». Page 175, en 1150 de l'hégire (1737-1738) : Mohammed-Bey fait arrêter « le caïd de la ville, Ahmed el Gharbi ». Page 181 : le bey Hassine envoie à Sousse « le caïd El Gharbi, de Béja » ; plus tard, Ahmed el Gharbi cause la mort « d'un autre individu nommé également El Gharbi ». L'index renvoie à « Ahmed el Gharbi, caïd de Béja » et à « El Gharbi, notable de Béja »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une contribution utilisateur interprète Gharbi comme « personne venue de l’ouest » et l’applique en Tunisie à une provenance algérienne ou marocaine. Sans bibliographie, cette proposition reste non vérifiée et ne désigne aucun établissement précis.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Gharbi Surname Origin, Meaning & Last Name History — Forebears",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://forebears.io/surnames/gharbi",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Répertoire communautaire consulté le 2 septembre 2026. Il recense Gharbi en Tunisie et reproduit une interprétation utilisateur liée à l’ouest du Maghreb, sans référence savante."
               }
             ]
           }

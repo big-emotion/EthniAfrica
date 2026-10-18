@@ -32,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Dans le système de noms ga décrit par la Ghana News Agency, Tetteh, avec l'appellation Mpata, est généralement attribué au deuxième garçon d'une fratrie.",
-        "claimStatus": "established",
-        "sourceRefs": ["ghana-news-agency-2024-tetteh"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -137,7 +132,8 @@
                 "source_kind": "press",
                 "notes": "Dossier publié à Tema le 2 juillet 2024, lu le 11 octobre 2026. Il écrit que le premier garçon reçoit d'ordinaire le nom Tettey, et que le deuxième et le troisième prennent Tetteh (Mpata) et Kwei ou Mensa. La graphie Teteh n'y figure pas."
               }
-            ]
+            ],
+            "claimStatus": "established"
           },
           {
             "period": {

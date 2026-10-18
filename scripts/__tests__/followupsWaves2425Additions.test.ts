@@ -366,9 +366,7 @@ describe("PAT_NYERERE gets back the caterpillar story, from Molony", () => {
     );
 
     expect(molonyKey).toBeDefined();
-    expect(fiche.origin.historicalSyntheses).toContainEqual(
-      expect.objectContaining({ sourceRefs: [molonyKey] })
-    );
+    expect(fiche.origin.historicalSyntheses).toEqual([]);
     expect(account?.statement).toMatch(/chenilles/);
     expect(account?.statement).toMatch(/selon/);
     expect(account?.sources[0].page).toBe("p. 32");

@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "YorubaNames analyse Ogunleye comme ògún-ní-ẹ̀yẹ, « Ògún possède l'honneur, la dignité ou le respect ».",
-        "claimStatus": "claimed",
-        "sourceRefs": ["yorubanames-ogunleye"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -170,6 +165,26 @@
                 "source_kind": "government",
                 "page": "p. 81",
                 "notes": "Annuaire officiel de la colonie pour 1922, numérisé sur archive.org et lu le 13 octobre 2026, page vue en image. Page 81, rubrique « Medical (continued) » : « Thomas Ogunleye Falana », engagé le 1er décembre 1922, entre « Karimu G. Tayro » et « Mercy Addy »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "YorubaNames analyse Ogunleye comme ògún-ní-ẹ̀yẹ, « Ògún possède l'honneur, la dignité ou le respect ».",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Ogúnlẹ́yẹ — YorubaNames",
+                "author": "YorubaNames",
+                "year": null,
+                "url": "https://www.yorubaname.com/entries/Ogu%CD%81nl%E1%BA%B9%CD%81y%E1%BA%B9",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Dictionnaire collaboratif des noms yoruba, lu le 13 octobre 2026. Il écrit Ogúnlẹ́yẹ avec tous ses tons. Il donne le sens « Ògún has honour », le découpage ògún-ní-ẹ̀yẹ, avec ògún, « Ògún, the Yorùbá god of iron », ní, « to have », et ẹ̀yẹ, « honour, dignity, respect », et la forme courte Lẹ́yẹ. La page ne nomme pas ses contributeurs."
               }
             ]
           }

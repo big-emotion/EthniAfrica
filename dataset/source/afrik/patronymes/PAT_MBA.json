@@ -31,6 +31,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -77,10 +78,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "la recherche web et bibliographique combinant « Mba », « Beti », « Fang », « Cameroun », « Gabon », « patronyme », « clan », « étymologie », « transmission » et « homonyme », ainsi que la page Forebears dédiée n'ont livré aucune tradition attribuée, chronique ou étude linguistique établissant l'origine de Mba. Les rapprochements portant sur un homonyme d'une autre langue ou sur la seule géographie ont été écartés."
-    },
     {
       "fieldPath": "nameSystem",
       "reason": "Aucune source consultée n'en fait un nom de clan. Chez les Fang, le nom du père s'ajoute au nom de l'enfant (Tessmann, 1913 ; Obiang-Mikue, 2023). Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant. La fiche reste donc parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."

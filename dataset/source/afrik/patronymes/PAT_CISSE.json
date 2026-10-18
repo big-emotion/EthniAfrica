@@ -11,75 +11,72 @@
     {
       "spelling": "Cissé",
       "attestations": [
-        { "countryId": "SEN", "sourceRefs": ["afrik-candidate-queue"] },
-        { "countryId": "MLI", "sourceRefs": ["afrik-candidate-queue"] },
-        { "countryId": "GMB", "sourceRefs": ["afrik-candidate-queue"] },
-        { "countryId": "SLE", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "SEN",
+          "sourceRefs": ["afrik-candidate-queue"]
+        },
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["afrik-candidate-queue"]
+        },
+        {
+          "countryId": "GMB",
+          "sourceRefs": ["afrik-candidate-queue"]
+        },
+        {
+          "countryId": "SLE",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     },
     {
       "spelling": "Cisse",
       "attestations": [
-        { "countryId": "SEN", "sourceRefs": ["afrik-candidate-queue"] },
-        { "countryId": "MLI", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "SEN",
+          "sourceRefs": ["afrik-candidate-queue"]
+        },
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     },
     {
       "spelling": "Sisse",
       "attestations": [
-        { "countryId": "SEN", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "SEN",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     },
     {
       "spelling": "Ceesay",
       "attestations": [
-        { "countryId": "GMB", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "GMB",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     },
     {
       "spelling": "Sesay",
       "attestations": [
-        { "countryId": "SLE", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "SLE",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
   "transmissionMode": "other",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [
-      {
-        "claim": "Les rois du Wagadu, les Sise, furent des alliés de première heure de Soundiata Keita, comme les rois de Nema.",
-        "claimStatus": "claimed",
-        "collection": "mediated",
-        "collector": "Djibril Tamsir Niane, qui rapporte la tradition sans nommer son porteur",
-        "context": "Note d'une synthèse historique publiée par l'UNESCO en 1985 ; ni le porteur, ni le lieu, ni la date du recueil ne sont donnés",
-        "sourceRefs": ["hga-iv-niane"]
-      }
-    ],
+    "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [],
-    "historicalSyntheses": [
-      {
-        "claim": "Les Sise (« Cissé ») du Wagadu, devenus musulmans et alliés politiques de Sunjata Keita, comptent parmi les cinq clans de marabouts alliés de la première heure, proclamés « cinq gardiens de la foi » par l'assemblée qui organisa l'empire du Mali.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["hga-iv-niane"]
-      },
-      {
-        "claim": "À l'époque de l'askia Mohammed, Sise (« Cissé ») était un titre religieux, comme Ture (« Touré »). Le chapitre le note à propos de ce souverain, du clan des Ture ou des Sylla, et ne donne pas de sens au mot.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["hga-iv-cissoko"]
-      },
-      {
-        "claim": "Parmi les clans les plus anciens de la société songhay, d'origine soninké, figurent les Sise, avec les Ture, Sylla, Tunkara, Jakite, Drame et Jawara.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["hga-iv-cissoko"]
-      },
-      {
-        "claim": "Une lecture de l'histoire de Ghana, attribuée à Delafosse, fait conduire les Noirs soninké, vers la fin du VIIIe siècle, par leur premier roi (tunka), Kaya Maghan Cissé, qui aurait refoulé les Blancs vers le Tagant, le Gorgol et le Fouta. Le chapitre la rapporte au conditionnel, au milieu d'un examen des lectures qui expliquent la fondation de Ghana par des fondateurs venus d'ailleurs.",
-        "claimStatus": "contested",
-        "sourceRefs": ["hga-iii-medeiros"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -495,6 +492,113 @@
                 "source_kind": "academic",
                 "page": "p. 128",
                 "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe. Lu dans le PDF du dépôt institutionnel de l'université le 11 octobre 2026. Notice Sìsɛ : le récit du griot Babou Condé, de Fadama, recueilli lors d'entretiens menés en 2017 (pp. 10-11 pour la présentation de ces entretiens)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Les rois du Wagadu, les Sise, furent des alliés de première heure de Soundiata Keita, comme les rois de Nema.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 158-159, note 45",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française. Page 158 : les cinq clans maraboutiques alliés de la première heure, parmi lesquels les Sise du Wagadu, islamisés et alliés politiques de Sunjata Keita ; note 45, page 159 : la tradition dit que les rois du Wagadu, les Sise, furent les alliés de première heure de Sunjata Keita. Relevé repris des notes de la fiche, qui citent ces pages ; l'exemplaire n'a pas été rouvert pour cette rédaction.\nNote d'une synthèse historique publiée par l'UNESCO en 1985 ; ni le porteur, ni le lieu, ni la date du recueil ne sont donnés"
+              }
+            ],
+            "collection": "mediated",
+            "collector": "Djibril Tamsir Niane, qui rapporte la tradition sans nommer son porteur"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Les Sise (« Cissé ») du Wagadu, devenus musulmans et alliés politiques de Sunjata Keita, comptent parmi les cinq clans de marabouts alliés de la première heure, proclamés « cinq gardiens de la foi » par l'assemblée qui organisa l'empire du Mali.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 158-159, note 45",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française. Page 158 : les cinq clans maraboutiques alliés de la première heure, parmi lesquels les Sise du Wagadu, islamisés et alliés politiques de Sunjata Keita ; note 45, page 159 : la tradition dit que les rois du Wagadu, les Sise, furent les alliés de première heure de Sunjata Keita. Relevé repris des notes de la fiche, qui citent ces pages ; l'exemplaire n'a pas été rouvert pour cette rédaction."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "À l'époque de l'askia Mohammed, Sise (« Cissé ») était un titre religieux, comme Ture (« Touré »). Le chapitre le note à propos de ce souverain, du clan des Ture ou des Sylla, et ne donne pas de sens au mot.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 8 : Les Songhay du XIIe au XVIe siècle",
+                "author": "Sékéné Mody Cissoko",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 230",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française. Page 230 : « Les plus anciens étaient d'origine soninke (Ture, Sylla, Tunkara, Sise, Jakite, Drame, Jawara) ». Citation relue dans la fiche du nom Touré le 10 octobre 2026 ; l'exemplaire n'a pas été rouvert pour cette rédaction."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Parmi les clans les plus anciens de la société songhay, d'origine soninké, figurent les Sise, avec les Ture, Sylla, Tunkara, Jakite, Drame et Jawara.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 8 : Les Songhay du XIIe au XVIe siècle",
+                "author": "Sékéné Mody Cissoko",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 230",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française. Page 230 : « Les plus anciens étaient d'origine soninke (Ture, Sylla, Tunkara, Sise, Jakite, Drame, Jawara) ». Citation relue dans la fiche du nom Touré le 10 octobre 2026 ; l'exemplaire n'a pas été rouvert pour cette rédaction."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une lecture de l'histoire de Ghana, attribuée à Delafosse, fait conduire les Noirs soninké, vers la fin du VIIIe siècle, par leur premier roi (tunka), Kaya Maghan Cissé, qui aurait refoulé les Blancs vers le Tagant, le Gorgol et le Fouta. Le chapitre la rapporte au conditionnel, au milieu d'un examen des lectures qui expliquent la fondation de Ghana par des fondateurs venus d'ailleurs.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 5 : Les peuples du Soudan : mouvements de populations",
+                "author": "François de Medeiros",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 153",
+                "notes": "UNESCO, volume dirigé par M. El Fasi et I. Hrbek, édition française. Page 153 : la lecture de Delafosse (1912) qui fait conduire les Soninké par Kaya Maghan Cissé, leur premier roi, vers la fin du VIIIe siècle, rapportée comme un exemple d'interprétation qui explique la fondation du Ghana par des fondateurs venus d'ailleurs. Le texte de Delafosse n'a pas été lu. Relevé repris des notes de la fiche ; l'exemplaire n'a pas été rouvert pour cette rédaction."
               }
             ]
           }

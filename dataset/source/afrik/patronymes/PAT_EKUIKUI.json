@@ -22,13 +22,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Une chronique de Bailundo écrite en umbundu au début du XXe siècle donne Ekuikui comme le nom de plusieurs rois de Bailundo, et l'explique par « l'insecte que l'oiseau ne peut pas manger ».",
-        "claimStatus": "claimed",
-        "sourceRefs": ["dulley-chronicles-of-bailundo-2021"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -143,7 +138,8 @@
                 "page": "p. 730",
                 "notes": "Africa 91(5), 2021, p. 713-741, en accès libre chez Cambridge University Press ; lu le 18 octobre 2026 dans le PDF de l'éditeur. L'article présente et traduit une chronique de Bailundo écrite en umbundu par des missionnaires congrégationalistes nord-américains entre 1903 et les années 1930 ; le manuscrit ne dit pas qui l'a racontée ni qui l'a notée (p. 713-714). Page 730, liste des rois : « Ekuikui the Elder I – The insect that cannot be eaten by the bird » ; chronique d'Ekuikui II : « 'I am Ekuikui Cikundiakundia Cipuka Kaliwa la Njila [The Larva Cikundiakundia that Cannot Be Eaten by the Bird].' This means: 'I escaped; I shall not be defeated by anything.' ». Traduction anglaise de David Rogers depuis le portugais, revue par Iracema Dulley."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           },
           {
             "period": {

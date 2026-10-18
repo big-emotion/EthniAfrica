@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -54,10 +55,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "la recherche web et bibliographique combinant « Obiang », « Fang », « Guinée équatoriale », « apellido », « onomástica », « etimología », « clan », « transmisión », « alianza », « casta », « homónimo » et « obituario », ainsi que la page Forebears dédiée ; l'article général fang déjà employé par une autre fiche n'a pas été reporté ici n'ont livré aucune tradition attribuée, chronique ou étude linguistique propre à ce nom qui en établirait l'origine ; les rapprochements fondés sur la seule ressemblance ou la seule géographie ont été écartés."
-    },
     {
       "fieldPath": "nameSystem",
       "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom d'homme fang. Chez les Fang, le nom du père devient le second nom de tous ses enfants, comme dans Ntsama-Obiang. Le modèle a une case pour un nom de famille héréditaire, mais la fiche ne l'utilise pas : chaque enfant prend pour second nom le nom de son propre père, si bien que ce second nom change d'une génération à l'autre. Günter Tessmann en donne un exemple en 1913 : le fils de Boka-Essun s'appelle Ayong-Boka, et non Ayong-Essun. Il écrit aussi que les Fang n'ont pas de nom de famille au sens européen. La fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."

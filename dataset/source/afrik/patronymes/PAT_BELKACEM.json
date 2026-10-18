@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'étude sur les prénoms d'Aokas rapproche Belkacem, formé avec « bel », d'Aboulqâsim et propose le sens de « père de Kacem ». Cette explication d'un prénom ne permet pas de retracer l'histoire des familles qui portent le même nom.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["salhi-belkacem-aokas"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -245,6 +240,27 @@
                 "source_kind": "archive",
                 "page": "p. 5",
                 "notes": "Docteur A. Bertherand, médecin en chef de l'armée d'expédition ; exemplaire numérisé d'archive.org. Page 5, première page du chapitre sur la campagne de 1854 (pagination reconstituée d'après les pages suivantes, dont les en-têtes sont numérotés) : « Les difficultés politiques suscitées dans l'Est de la province d'Alger, autour du Bach-Aghalick de Bel-Kassem, par les intrigues de Bou-Baghla, décidèrent le Gouverneur-Général comte Randon à se porter, vers la fin de mai 1854, au sein de ces turbulentes et belliqueuses contrées ». Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'étude sur les prénoms d'Aokas rapproche Belkacem, formé avec « bel », d'Aboulqâsim et propose le sens de « père de Kacem ». Cette explication d'un prénom ne permet pas de retracer l'histoire des familles qui portent le même nom.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Étude anthroponymique de la commune d'Aokas de 1962 à 1970",
+                "author": "Lynda Salhi",
+                "year": 2015,
+                "url": "https://bucket.theses-algerie.com/files/repositories-dz/1532970119996190.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 44",
+                "notes": "Mémoire de master en sciences du langage, Université Abderrahmane Mira de Béjaïa, 2014-2015 ; texte intégral lu, pages numérotées de l'imprimé. Il étudie les prénoms inscrits à l'état civil d'Aokas de 1962 à 1970. Page 44 : « La particule « bel » est une altération phonétique de « ben », « fils de » » ; « Belkacem (Belqacem) : est un prénom masculin de la racine arabe [QSM] qui signifie « diviser, partager, répartir, distribuer ». Ce prénom selon le dictionnaire Dallet vient de « aboulqâsim, nom de Mohammed, ainsi appelé à cause de son fils Qâsim », Belkacem ou Aboulkacem : signifie donc « père de Kacem » ». Lu le 14 octobre 2026."
               }
             ]
           }

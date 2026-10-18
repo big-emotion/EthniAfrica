@@ -22,30 +22,9 @@
   "designatedSocialUnit": "lineage",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Les abaNtungwa sont, chez Bryant, l'ensemble nguni demeuré sur place après la séparation d'avec les Xhosa et les Thembu, datée des environs de 1500, et c'est de lui que les Zoulou tirent leur descendance. Le groupe se déplace ensuite par fractions vers Utrecht et Vryheid, puis au cœur du Zululand.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["bryant-1929-olden-times"]
-      },
-      {
-        "claim": "La tradition ntungwa se dit d'une formule : ils « descendirent avec les grands paniers à grain », b'-ehla ngesiLulu, l'isiLulu étant un panier d'herbe tressée en forme de calebasse, d'un mètre environ, où l'on conservait le grain. Bryant note que la formule peut aussi se lire « descendirent à cause des iziLulu », le mot ayant pu servir de sobriquet aux étrangers qui apparurent munis de ces paniers.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["bryant-1929-olden-times"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "Mntungwa relève des izithakazelo — les louanges de clan nguni, distinctes de l'isibongo (patronyme) : elles nomment les figures marquantes du lignage et se récitent en salutation.",
-        "claimStatus": "established",
-        "sourceRefs": ["nomina-africana-nguni-naming"]
-      },
-      {
-        "claim": "Le terme est contesté par ceux qu'il désigne. Bryant reconnaît qu'abaNtungwa est « dans une certaine mesure un terme de commodité » et que bon nombre des clans auxquels il l'applique le récusent ; il maintient l'appellation faute de mieux et met ces clans au défi de s'en donner une autre. L'étiquette est donc celle de l'ethnographe autant que celle du groupe.",
-        "claimStatus": "contested",
-        "sourceRefs": ["bryant-1929-olden-times"]
-      }
-    ]
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -170,6 +149,86 @@
             ],
             "era": "modern",
             "aspect": "meaning"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Les abaNtungwa sont, chez Bryant, l'ensemble nguni demeuré sur place après la séparation d'avec les Xhosa et les Thembu, datée des environs de 1500, et c'est de lui que les Zoulou tirent leur descendance. Le groupe se déplace ensuite par fractions vers Utrecht et Vryheid, puis au cœur du Zululand.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Bryant, Alfred T., Longmans Green, 1929. Bryant écrit depuis la mission catholique du Natal, dans le contexte colonial. Il reconstitue l'histoire des clans nguni orientaux à partir de récits sur leurs ancêtres, recueillis au tournant du siècle. Parmi les livres consultés, c'est le seul qui nomme une origine pour chacun de ces clans. Le texte a été lu intégralement. Les orthographes de 1929, comme Mtetwa et Ntungwa, sont citées comme variantes à côté des noms utilisés dans nos fiches."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La tradition ntungwa se dit d'une formule : ils « descendirent avec les grands paniers à grain », b'-ehla ngesiLulu, l'isiLulu étant un panier d'herbe tressée en forme de calebasse, d'un mètre environ, où l'on conservait le grain. Bryant note que la formule peut aussi se lire « descendirent à cause des iziLulu », le mot ayant pu servir de sobriquet aux étrangers qui apparurent munis de ces paniers.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Bryant, Alfred T., Longmans Green, 1929. Bryant écrit depuis la mission catholique du Natal, dans le contexte colonial. Il reconstitue l'histoire des clans nguni orientaux à partir de récits sur leurs ancêtres, recueillis au tournant du siècle. Parmi les livres consultés, c'est le seul qui nomme une origine pour chacun de ces clans. Le texte a été lu intégralement. Les orthographes de 1929, comme Mtetwa et Ntungwa, sont citées comme variantes à côté des noms utilisés dans nos fiches."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Mntungwa relève des izithakazelo — les louanges de clan nguni, distinctes de l'isibongo (patronyme) : elles nomment les figures marquantes du lignage et se récitent en salutation.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Derivation of given names from ethnonyms, surnames and clan praises: unveiling gendered naming trends in Nguni",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://journals.co.za/doi/10.10520/ejc-nomina_v39_n1_a3",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Nomina Africana: Journal of African Onomastics, vol. 39 n° 1. Établit l'articulation entre patronyme (isibongo) et louanges de clan (izithakazelo) chez les Nguni."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le terme est contesté par ceux qu'il désigne. Bryant reconnaît qu'abaNtungwa est « dans une certaine mesure un terme de commodité » et que bon nombre des clans auxquels il l'applique le récusent ; il maintient l'appellation faute de mieux et met ces clans au défi de s'en donner une autre. L'étiquette est donc celle de l'ethnographe autant que celle du groupe.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Bryant, Alfred T., Longmans Green, 1929. Bryant écrit depuis la mission catholique du Natal, dans le contexte colonial. Il reconstitue l'histoire des clans nguni orientaux à partir de récits sur leurs ancêtres, recueillis au tournant du siècle. Parmi les livres consultés, c'est le seul qui nomme une origine pour chacun de ces clans. Le texte a été lu intégralement. Les orthographes de 1929, comme Mtetwa et Ntungwa, sont citées comme variantes à côté des noms utilisés dans nos fiches."
+              }
+            ]
           }
         ]
       },

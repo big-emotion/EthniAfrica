@@ -83,50 +83,9 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Les chroniques soudanaises donnent deux noms pour l'askiya qui prend le pouvoir à Gao à la fin du XVe siècle : Muhammad Ture ou Muhammad Sylla. La synthèse qui les rapporte le dit d'origine soninké, du clan Ture ou Sylla du Takrur, et précise que Ture était alors un titre religieux, comme Cisse, et qu'il fut ensuite adopté par les conquérants marocains. Le nom se lit donc ici comme une qualité de lettré musulman avant de se lire comme une ascendance.",
-        "claimStatus": "contested",
-        "sourceRefs": ["gha-iv-mali"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "Les Ture figurent parmi les plus anciens clans d'origine soninké du monde songhay, avec les Sylla, les Tunkara, les Cissé, les Jakhité, les Dramé et les Diawara. La famille est l'unité de base et le clan un groupement de familles.",
-        "claimStatus": "established",
-        "sourceRefs": ["gha-iv-mali"]
-      },
-      {
-        "claim": "Après la victoire de Soundiata, l'assemblée du Manden range les Touré et les Bérété parmi les cinq clans maraboutiques, premiers alliés de Soundiata, qui l'avaient cherché pendant son exil et qui sont proclamés les cinq gardiens de la foi, Mori Kanda Lolu. Le groupe compte aussi les Cissé du Wagadou, convertis à l'islam et alliés politiques de Soundiata.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["gha-iv-mali"]
-      },
-      {
-        "claim": "Le père de Samory, Lakhafia Touré, est décrit par un officier français du XIXe siècle comme un Dyula pauvre marié à une femme Mara, et son fils comme né à Sanankoro. L'historien qui rassemble ces témoignages souligne aussitôt qu'ils se contredisent d'un auteur à l'autre, un autre récit plaçant la naissance ailleurs. Le rattachement du nom au monde marchand dyula repose donc sur un témoignage colonial isolé, non sur une filiation établie.",
-        "claimStatus": "contested",
-        "sourceRefs": ["person-1963-ancetres-samori"]
-      },
-      {
-        "claim": "Au temps de l'empire du Mali, les rois (maliks) du Zaghari, sur le Niger moyen, sont dits sunnites orthodoxes et du clan Touré, alors qu'une autre partie de la population relève de la secte ibadite et du clan Saganogo.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["massing-2000-wangara"]
-      },
-      {
-        "claim": "Les Touré sont cités comme « blancs » et comme rois, ce qui a fait penser à une origine berbère ou arabe ; l'auteur qui le relève l'avance comme une piste appelant plus de recherches, et non comme un fait établi. Elle s'oppose à la lecture qui les range parmi les plus anciens clans soninké : l'origine du nom reste discutée.",
-        "claimStatus": "contested",
-        "sourceRefs": ["massing-2000-wangara", "gha-iv-mali"]
-      },
-      {
-        "claim": "Parmi les noms de clan bambara qui seraient venus de la région de Ségou et de San, et qui fondent la ville de Kong, figurent Baro, Daou, Balo, Cissé et Touré. Le rattachement des Touré de Kong aux Bambara reste une indication prudente, non une filiation démontrée.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["massing-2000-wangara"]
-      },
-      {
-        "claim": "Le dictionnaire des jamuw donne pour l'entrée Tùre les équivalences Mànju, Bangura, Samake, Sogoba et Gonepogi, c'est-à-dire des noms qu'il tient pour le même clan sous d'autres appellations, et il lui attache un lien de parenté à plaisanterie avec Tarawele (Traoré).",
-        "claimStatus": "claimed",
-        "sourceRefs": ["bamadaba-jamuw"]
-      }
-    ]
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -334,7 +293,8 @@
                 "source_kind": "linguistic_reference",
                 "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 9 octobre 2026 : entrée Tùre et ses équivalents."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           },
           {
             "period": {
@@ -410,8 +370,18 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 230",
                 "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 230 : « Les plus anciens étaient d'origine soninke (Ture, Sylla, Tunkara, Sise, Jakite, Drame, Jawara) »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, volume IV : l'Afrique du XIIe au XVIe siècle",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, 1985, sous la direction de D. T. Niane ; édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Le chapitre 6, « Le Mali et la deuxième expansion manden » (D. T. Niane), range les Ture et les Berete parmi les cinq clans maraboutiques proclamés « cinq gardiens de la foi », mori kanda lolu, aux côtés des Cissé du Wagadou (p. 158). Le chapitre 8, « Les Songhay du XIIe au XVIe siècle », nomme les Ture parmi les plus anciens clans soninké, avec les Sylla, Tunkara, Sise, Jakite, Drame et Jawara (p. 230), et sa note 13 (p. 219) rapporte que les chroniques donnent Muhammad Ture ou Sylla pour l'askiya et que Ture était alors un titre religieux, comme Sise. L'ouvrage est une synthèse savante et non une chronique ; seule la mention explicite des chroniques est rangée comme telle."
               }
-            ]
+            ],
+            "claimStatus": "established"
           },
           {
             "period": {
@@ -496,6 +466,138 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 158",
                 "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 158 : les cinq clans maraboutiques, « dont les Ture et les Berete », furent proclamés les « cinq gardiens de la foi » ou mori kanda lolu, d'après la tradition du Manden."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Les chroniques soudanaises donnent deux noms pour l'askiya qui prend le pouvoir à Gao à la fin du XVe siècle : Muhammad Ture ou Muhammad Sylla. La synthèse qui les rapporte le dit d'origine soninké, du clan Ture ou Sylla du Takrur, et précise que Ture était alors un titre religieux, comme Cisse, et qu'il fut ensuite adopté par les conquérants marocains. Le nom se lit donc ici comme une qualité de lettré musulman avant de se lire comme une ascendance.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, volume IV : l'Afrique du XIIe au XVIe siècle",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, 1985, sous la direction de D. T. Niane ; édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Le chapitre 6, « Le Mali et la deuxième expansion manden » (D. T. Niane), range les Ture et les Berete parmi les cinq clans maraboutiques proclamés « cinq gardiens de la foi », mori kanda lolu, aux côtés des Cissé du Wagadou (p. 158). Le chapitre 8, « Les Songhay du XIIe au XVIe siècle », nomme les Ture parmi les plus anciens clans soninké, avec les Sylla, Tunkara, Sise, Jakite, Drame et Jawara (p. 230), et sa note 13 (p. 219) rapporte que les chroniques donnent Muhammad Ture ou Sylla pour l'askiya et que Ture était alors un titre religieux, comme Sise. L'ouvrage est une synthèse savante et non une chronique ; seule la mention explicite des chroniques est rangée comme telle."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Après la victoire de Soundiata, l'assemblée du Manden range les Touré et les Bérété parmi les cinq clans maraboutiques, premiers alliés de Soundiata, qui l'avaient cherché pendant son exil et qui sont proclamés les cinq gardiens de la foi, Mori Kanda Lolu. Le groupe compte aussi les Cissé du Wagadou, convertis à l'islam et alliés politiques de Soundiata.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, volume IV : l'Afrique du XIIe au XVIe siècle",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, 1985, sous la direction de D. T. Niane ; édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Le chapitre 6, « Le Mali et la deuxième expansion manden » (D. T. Niane), range les Ture et les Berete parmi les cinq clans maraboutiques proclamés « cinq gardiens de la foi », mori kanda lolu, aux côtés des Cissé du Wagadou (p. 158). Le chapitre 8, « Les Songhay du XIIe au XVIe siècle », nomme les Ture parmi les plus anciens clans soninké, avec les Sylla, Tunkara, Sise, Jakite, Drame et Jawara (p. 230), et sa note 13 (p. 219) rapporte que les chroniques donnent Muhammad Ture ou Sylla pour l'askiya et que Ture était alors un titre religieux, comme Sise. L'ouvrage est une synthèse savante et non une chronique ; seule la mention explicite des chroniques est rangée comme telle."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le père de Samory, Lakhafia Touré, est décrit par un officier français du XIXe siècle comme un Dyula pauvre marié à une femme Mara, et son fils comme né à Sanankoro. L'historien qui rassemble ces témoignages souligne aussitôt qu'ils se contredisent d'un auteur à l'autre, un autre récit plaçant la naissance ailleurs. Le rattachement du nom au monde marchand dyula repose donc sur un témoignage colonial isolé, non sur une filiation établie.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "Les ancêtres de Samori",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1963_num_4_13_3008",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Person, Yves, Cahiers d'études africaines, volume 4, numéro 13, 1963, p. 125-156 ; texte intégral en accès libre. L'auteur est celui de la thèse « Samori : une révolution dyula », publiée en trois tomes par l'Institut fondamental d'Afrique noire entre 1968 et 1975. L'article rassemble les récits contradictoires que les officiers français du XIXe siècle donnaient de l'ascendance de Samory : l'un le dit fils d'un Dyula pauvre nommé Lakhafia Touré et le fait naître à Sanankoro, un autre le fait naître ailleurs, un rapport anglais en fait un pillard arabe. Cité pour la contradiction elle-même autant que pour la version dyula."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Au temps de l'empire du Mali, les rois (maliks) du Zaghari, sur le Niger moyen, sont dits sunnites orthodoxes et du clan Touré, alors qu'une autre partie de la population relève de la secte ibadite et du clan Saganogo.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "The Wangara, an Old Soninke Diaspora in West Africa?",
+                "author": "Andreas W. Massing",
+                "year": 2000,
+                "url": "https://journals.openedition.org/etudesafricaines/175",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "paragraphes 14 et 16",
+                "notes": "Cahiers d'études africaines, n° 158, 2000, p. 281-308, texte intégral relu sur OpenEdition le 10 octobre 2026 ; l'édition en ligne numérote les paragraphes, pas les pages. Le paragraphe 14 cite la traduction anglaise d'Ibn Battûta : « The Sunni mâliki among the white men in that country are called Tûrî ». Le paragraphe 16 en conclut qu'à Zaghari, « the kings (maliks) were orthodox Sunni muslims, and of the Toure clan », et y voit la première mention de noms de clans maliens dans les sources arabes. C'est la lecture de l'auteur ; nous n'avons pas lu Ibn Battûta nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Les Touré sont cités comme « blancs » et comme rois, ce qui a fait penser à une origine berbère ou arabe ; l'auteur qui le relève l'avance comme une piste appelant plus de recherches, et non comme un fait établi. Elle s'oppose à la lecture qui les range parmi les plus anciens clans soninké : l'origine du nom reste discutée.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "The Wangara, an Old Soninke Diaspora in West Africa?",
+                "author": "Andreas W. Massing",
+                "year": 2000,
+                "url": "https://journals.openedition.org/etudesafricaines/175",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "paragraphes 14 et 16",
+                "notes": "Cahiers d'études africaines, n° 158, 2000, p. 281-308, texte intégral relu sur OpenEdition le 10 octobre 2026 ; l'édition en ligne numérote les paragraphes, pas les pages. Le paragraphe 14 cite la traduction anglaise d'Ibn Battûta : « The Sunni mâliki among the white men in that country are called Tûrî ». Le paragraphe 16 en conclut qu'à Zaghari, « the kings (maliks) were orthodox Sunni muslims, and of the Toure clan », et y voit la première mention de noms de clans maliens dans les sources arabes. C'est la lecture de l'auteur ; nous n'avons pas lu Ibn Battûta nous-mêmes."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, volume IV : l'Afrique du XIIe au XVIe siècle",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, 1985, sous la direction de D. T. Niane ; édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Le chapitre 6, « Le Mali et la deuxième expansion manden » (D. T. Niane), range les Ture et les Berete parmi les cinq clans maraboutiques proclamés « cinq gardiens de la foi », mori kanda lolu, aux côtés des Cissé du Wagadou (p. 158). Le chapitre 8, « Les Songhay du XIIe au XVIe siècle », nomme les Ture parmi les plus anciens clans soninké, avec les Sylla, Tunkara, Sise, Jakite, Drame et Jawara (p. 230), et sa note 13 (p. 219) rapporte que les chroniques donnent Muhammad Ture ou Sylla pour l'askiya et que Ture était alors un titre religieux, comme Sise. L'ouvrage est une synthèse savante et non une chronique ; seule la mention explicite des chroniques est rangée comme telle."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Parmi les noms de clan bambara qui seraient venus de la région de Ségou et de San, et qui fondent la ville de Kong, figurent Baro, Daou, Balo, Cissé et Touré. Le rattachement des Touré de Kong aux Bambara reste une indication prudente, non une filiation démontrée.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "The Wangara, an Old Soninke Diaspora in West Africa?",
+                "author": "Andreas W. Massing",
+                "year": 2000,
+                "url": "https://journals.openedition.org/etudesafricaines/175",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "paragraphes 14 et 16",
+                "notes": "Cahiers d'études africaines, n° 158, 2000, p. 281-308, texte intégral relu sur OpenEdition le 10 octobre 2026 ; l'édition en ligne numérote les paragraphes, pas les pages. Le paragraphe 14 cite la traduction anglaise d'Ibn Battûta : « The Sunni mâliki among the white men in that country are called Tûrî ». Le paragraphe 16 en conclut qu'à Zaghari, « the kings (maliks) were orthodox Sunni muslims, and of the Toure clan », et y voit la première mention de noms de clans maliens dans les sources arabes. C'est la lecture de l'auteur ; nous n'avons pas lu Ibn Battûta nous-mêmes."
               }
             ]
           }

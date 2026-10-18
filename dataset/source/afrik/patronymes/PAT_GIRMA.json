@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'entrée consultée présente Girma, écrit ግርማ, comme un nom personnel amharique signifiant « majesté ». Cette glose communautaire n'établit pas une histoire familiale.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["btn-girma"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -181,6 +176,26 @@
                 "source_kind": "academic",
                 "page": "p. 203",
                 "notes": "Wiesbaden, Otto Harrassowitz, 1987. Lu le 13 octobre 2026 dans une copie non officielle déposée sur Internet Archive par un particulier. Page 203, entrée garama : le nom garma y est glosé « terror, fear, dread, awe, glorious act, glory, majesty, dignity, magnificence, pomp »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'entrée consultée présente Girma, écrit ግርማ, comme un nom personnel amharique signifiant « majesté ». Cette glose communautaire n'établit pas une histoire familiale.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Girma — Behind the Name",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/girma",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice du site Behind the Name, lue le 13 octobre 2026. Elle écrit le nom ግርማ, le dit amharique et donne la glose « majesty »."
               }
             ]
           }

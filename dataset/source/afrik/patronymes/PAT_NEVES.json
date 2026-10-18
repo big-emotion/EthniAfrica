@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Pour le portugais, le Dictionary of American Family Names décrit Neves comme une forme abrégée du titre marial Maria das Neves (« Marie des Neiges »). La notice mentionne aussi des formations habitatives galicienne et asturienne ; elle ne tranche pas l'histoire de la branche santoméenne.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["dafn-neves-2022"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -176,6 +171,26 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 332",
                 "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 332 : « Nas Linhagens, sec. XIII-XIV, figuram muitas alcunhas… » : l'auteur date le Livro de Linhagens des XIIIe et XIVe siècles."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Pour le portugais, le Dictionary of American Family Names décrit Neves comme une forme abrégée du titre marial Maria das Neves (« Marie des Neiges »). La notice mentionne aussi des formations habitatives galicienne et asturienne ; elle ne tranche pas l'histoire de la branche santoméenne.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Neves Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.ancestry.com/last-name-meaning/neves?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Patrick Hanks et al., Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry. La notice portugaise est distinguée de ses autres formations galicienne et asturienne."
               }
             ]
           }

@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le Dictionary of American Family Names décrit Rodrigues comme un patronyme portugais formé sur le prénom Rodrigo. Aucun Rodrigo fondateur de la branche capverdienne n'est identifié par cette notice.",
-        "claimStatus": "established",
-        "sourceRefs": ["dafn-rodrigues-2022"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -166,6 +161,26 @@
                 "source_kind": "academic",
                 "page": "p. 65",
                 "notes": "Mémoire présenté à l'Académie royale des sciences de Lisbonne, Lisbonne, Typographia da Academia Real das Sciencias, 1899. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 65 : le 23 octobre 1510, les revenus royaux des îles de Santiago et de Fogo, ainsi que l'île de Maio, sont affermés « a António Rodrigues Mascarenhas » ; l'auteur reproduit ensuite l'acte d'affermage. Auteur de l'époque coloniale, cité ici pour les noms qu'il relève."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le Dictionary of American Family Names décrit Rodrigues comme un patronyme portugais formé sur le prénom Rodrigo. Aucun Rodrigo fondateur de la branche capverdienne n'est identifié par cette notice.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e édition — entrée Rodrigues",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/rodrigues?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 11 octobre 2026 dans la traduction française que le site affiche. La notice dit : portugais et galicien, patronyme tiré du prénom Rodrigo."
               }
             ]
           }

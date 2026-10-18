@@ -197,6 +197,63 @@ describe("NameSourcesBlock — the plain title and its sentence", () => {
       )
     ).toBeInTheDocument();
   });
+
+  // @req REQ-196
+  it("shows a claim status in the period line for patronyme accounts", () => {
+    const history = {
+      ...PEUL_HISTORY,
+      names: PEUL_HISTORY.names.map((item, nameIndex) =>
+        nameIndex === 0
+          ? {
+              ...item,
+              accounts: item.accounts.map((account, accountIndex) =>
+                accountIndex === 0
+                  ? { ...account, claimStatus: "contested" as const }
+                  : account
+              ),
+            }
+          : item
+      ),
+    };
+    const { container } = render(
+      <NameFicheSourcesBlock
+        history={history}
+        subjectType="patronyme"
+        language="fr"
+      />
+    );
+
+    expect(container.textContent).toContain("Contestée");
+    expect(container.textContent).toContain(" · Contestée");
+  });
+
+  // @req REQ-196
+  it("does not add patronyme claim statuses to other subject types", () => {
+    const history = {
+      ...PEUL_HISTORY,
+      names: PEUL_HISTORY.names.map((item, nameIndex) =>
+        nameIndex === 0
+          ? {
+              ...item,
+              accounts: item.accounts.map((account, accountIndex) =>
+                accountIndex === 0
+                  ? { ...account, claimStatus: "contested" as const }
+                  : account
+              ),
+            }
+          : item
+      ),
+    };
+    const { container } = render(
+      <NameFicheSourcesBlock
+        history={history}
+        subjectType="people"
+        language="fr"
+      />
+    );
+
+    expect(container.textContent).not.toContain("Contestée");
+  });
 });
 
 describe("NameClosing copy — a family name", () => {

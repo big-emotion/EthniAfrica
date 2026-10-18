@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Dans son étude de plus d'un million de noms du Botswana, Thapelo Otlogetswe donne à kgosi le sens de « roi » ou de « chef ». Il classe Kgosi parmi les noms personnels masculins setswana liés au pouvoir. Forebears recense aussi Kgosi comme nom de famille, surtout au Botswana, sans en expliquer l'origine. Le sens du mot ne signifie donc pas que toutes les familles Kgosi ont la même origine.",
-        "claimStatus": "established",
-        "sourceRefs": ["otlogetswe-2018-kgosi", "forebears-kgosi"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -170,6 +165,35 @@
                 "source_kind": "academic",
                 "page": "p. 143",
                 "notes": "Thèse de doctorat, University of Glasgow, 2019 ; PDF lu en entier le 14 octobre 2026. Elle étudie des noms de personnes recueillis au Botswana et en Écosse. Pages 140 à 143 : Kgosi « chief » y est rangé parmi les noms de fonction ou de rang, tous portés par des hommes ; il est donné à un garçon longtemps attendu, seul au milieu de filles, et à des fils de mères qui dirigent seules leur famille ; deux porteurs l'ont reçu d'après leur père."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans son étude de plus d'un million de noms du Botswana, Thapelo Otlogetswe donne à kgosi le sens de « roi » ou de « chef ». Il classe Kgosi parmi les noms personnels masculins setswana liés au pouvoir. Forebears recense aussi Kgosi comme nom de famille, surtout au Botswana, sans en expliquer l'origine. Le sens du mot ne signifie donc pas que toutes les familles Kgosi ont la même origine.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Power Relations in Setswana Names: A Study of Kgotla and Kgosi Names",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://journals.co.za/doi/10.2989/NA.2018.32.2.2.1326",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Article de Thapelo Otlogetswe, Nomina Africana 32(2), consulté via sa page intégrale et son résumé. L'étude porte sur le Botswana Names Corpus, définit kgosi et décrit les noms personnels formés avec ce lexème chez les Batswana. Elle ne traite pas la transmission du patronyme autonome Kgosi."
+              },
+              {
+                "title": "Kgosi Surname Origin, Meaning & Last Name History",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://forebears.io/surnames/kgosi",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Base de répartition patronymique consultée directement. Elle recense Kgosi comme nom de famille principalement au Botswana et signale explicitement qu'aucune signification n'est renseignée. Ses chiffres ne démontrent ni appartenance ethnique individuelle ni règle de transmission."
               }
             ]
           }

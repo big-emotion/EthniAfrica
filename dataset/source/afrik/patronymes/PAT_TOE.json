@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Au Liberia, le patronyme Toe provient d'un nom personnel masculin attesté chez les Kru et les Grebo étroitement apparentés. Son étymologie lexicale demeure inexpliquée.",
-        "claimStatus": "established",
-        "sourceRefs": ["dafn-2022-toe"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -114,6 +109,26 @@
             "era": "modern",
             "statement": "Le nom Toe est d'abord un nom personnel d'homme, porté chez les Kru et les Grebo du Liberia, devenu un nom de famille, selon le Dictionary of American Family Names. Ce dictionnaire ne sait pas expliquer le sens du mot.",
             "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2nd edition — Toe",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/toe?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée de la deuxième édition du Dictionary of American Family Names (Oxford University Press, 2022), reproduite par Ancestry et lue le 11 octobre 2026 dans sa version française affichée par le site. Entrée Toe : au Liberia, « d'un nom personnel masculin trouvé parmi les peuples Kru et grébos étroitement apparentés », d'étymologie inexpliquée. L'entrée distingue un Toé du Burkina Faso, lui aussi inexpliqué, et un nom birman sans lien."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Au Liberia, le patronyme Toe provient d'un nom personnel masculin attesté chez les Kru et les Grebo étroitement apparentés. Son étymologie lexicale demeure inexpliquée.",
+            "claimStatus": "established",
             "sources": [
               {
                 "title": "Dictionary of American Family Names, 2nd edition — Toe",

@@ -25,24 +25,10 @@
   "transmissionMode": "other",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [
-      {
-        "claim": "Le nom de louange du clan Mamba (le sinanatelo) s'ouvre sur « nkhosi, mamba, ntfulini, mamba lendze lesensokonsokweni » : le nom du clan vient en deuxième place, après nkhosi, « seigneur ». Le recueil donne ces vers en siswati, sans traduction ni récit d'origine du nom.",
-        "claimStatus": "claimed",
-        "collection": "direct",
-        "collector": "Richard Patricks",
-        "context": "Recueilli surtout de 1976 à 1984 auprès d'informateurs que l'auteur ne nomme pas, pour un clan établi à eNgudzeni, kaMbhoke et kaHhohho au Swaziland ; entrée MAMBA, p. 32",
-        "sourceRefs": ["patricks-2002-swazi-surnames"]
-      }
-    ],
+    "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Richard Patricks range le clan Mamba parmi ceux dont le nom de louange commence par nkhosi, « seigneur », comme celui des Dlamini, la famille royale swazie, et y lit que les ancêtres du clan étaient autrefois Dlamini. C'est une lecture de l'auteur, non une filiation démontrée.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["patricks-2002-swazi-surnames"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -281,7 +267,8 @@
                 "page": "introduction, section d (clans dont le nom de louange commence par nkhosi)",
                 "notes": "Première édition, Mbabane, 2002, publiée par le Conservation Trust of Swaziland, la Natural History Society of Swaziland et le Swaziland National Trust Commission ; l'auteur travaille au Musée national du Swaziland. Copie non officielle, téléversée sur Internet Archive par un particulier, lue le 12 octobre 2026. Les noms de famille et leurs noms de louange ont été recueillis surtout de 1976 à 1984, auprès de personnes dont l'auteur ne donne pas les noms."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           },
           {
             "period": {
@@ -322,6 +309,29 @@
                 "notes": "New York, Holt, Rinehart and Winston, 1964, coll. Case Studies in Cultural Anthropology ; copie numérisée sur Internet Archive, lue le 14 octobre 2026. P. 59, au chapitre « The Spirit World » : l'esprit d'un défunt peut prendre la forme d'un serpent ; « Mambas are associated with kings; harmless green snakes are associated with commoners and women ». Le livre ne cite pas le clan Mamba."
               }
             ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom de louange du clan Mamba (le sinanatelo) s'ouvre sur « nkhosi, mamba, ntfulini, mamba lendze lesensokonsokweni » : le nom du clan vient en deuxième place, après nkhosi, « seigneur ». Le recueil donne ces vers en siswati, sans traduction ni récit d'origine du nom.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Tibongo Netinanatelo Temaswati : Swazi Surnames and Their Praisenames (copie non officielle)",
+                "author": "Richard Patricks",
+                "year": 2002,
+                "url": "https://archive.org/details/tibongo-netinanatelo-temaswati-swazi-surnames-and-their-praisenames",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6 (introduction) et p. 32 (entrée MAMBA)",
+                "notes": "Première édition, Mbabane, 2002, publiée par le Conservation Trust of Swaziland, la Natural History Society of Swaziland et le Swaziland National Trust Commission ; l'auteur travaille au Musée national du Swaziland. Copie non officielle, téléversée sur Internet Archive par un particulier, lue le 12 octobre 2026. Les noms de famille et leurs noms de louange ont été recueillis surtout de 1976 à 1984, auprès de personnes dont l'auteur ne donne pas les noms. P. 6 : « Then come the Vilakati, Mamba, Hlophe, Mavuso, and Fakudze » ; p. 32 : entrée MAMBA.\nRecueilli surtout de 1976 à 1984 auprès d'informateurs que l'auteur ne nomme pas, pour un clan établi à eNgudzeni, kaMbhoke et kaHhohho au Swaziland ; entrée MAMBA, p. 32"
+              }
+            ],
+            "collection": "direct",
+            "collector": "Richard Patricks"
           }
         ]
       }

@@ -43,13 +43,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le mot yorouba « agbo » a plusieurs sens : un bélier, une foule ou un troupeau, un remède à base de plantes obtenu par pression, et un type de tambour. Ces sens ne suffisent pas à expliquer pourquoi Agbo est utilisé comme nom de famille. Ils ne permettent pas non plus de rattacher ce nom à un peuple précis.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["wiktionary-yo-agbo"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -130,10 +125,6 @@
   ],
   "gaps": [
     {
-      "fieldPath": "origin",
-      "reason": "Aucune source ne documente une étymologie propre au patronyme Agbo. Un mot yorouba homophone existe, mais ce simple rapprochement lexical ne permet pas d'établir le sens réellement porté par ce nom de famille ni l'histoire qui lui a donné naissance."
-    },
-    {
       "fieldPath": "peoples",
       "reason": "Le nom est attesté dans plusieurs pays d'Afrique de l'Ouest et centrale, mais aucune source propre au patronyme ne permet d'établir avec certitude à quel peuple il se rattache ; l'hypothèse d'un rattachement éwé reste non confirmée."
     },
@@ -193,6 +184,26 @@
                 "source_kind": "linguistic_reference",
                 "page": "entrées Agbo",
                 "notes": "Londres, Seeleys, 1852. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Trois entrées Agbo : « a ram » (un bélier), un liquide de plantes macérées, et « ring of dancers, flock, fold » (un cercle de danseurs, un troupeau). Le vocabulaire ne parle d'aucun nom de famille."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le mot yorouba « agbo » a plusieurs sens : un bélier, une foule ou un troupeau, un remède à base de plantes obtenu par pression, et un type de tambour. Ces sens ne suffisent pas à expliquer pourquoi Agbo est utilisé comme nom de famille. Ils ne permettent pas non plus de rattacher ce nom à un peuple précis.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "agbo — Wiktionary, the free dictionary",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://en.wiktionary.org/wiki/agbo",
+                "tier": "unverified",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée communautaire consultée directement pour ses quatre sens yorouba homophones du mot « agbo » (bélier ; foule ou troupeau ; remède à base de plantes ; tambour). Aucune entrée éwé ou fon n'y figure ; le rapprochement reste un parallèle lexical, non une attestation patronymique."
               }
             ]
           }

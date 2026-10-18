@@ -23,16 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une fiche culturelle sur le Soudan du Sud explique Nyan Deng par « fille de Deng ». La thèse de LeRoux-Rutledge relève aussi Nyandeng, écrit en un seul mot, chez les Dinka. Les sources consultées ne relient pas explicitement les deux formes. Ce sens reste donc une hypothèse pour Nyandeng.",
-        "claimStatus": "claimed",
-        "sourceRefs": [
-          "cultural-atlas-south-sudan-naming",
-          "leroux-rutledge-south-sudan-2016"
-        ]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -188,6 +180,35 @@
                 "source_kind": "academic",
                 "page": "p. 59 et p. 70",
                 "notes": "New York, Holt, Rinehart and Winston, 1972. Lu sur une copie déposée sur archive.org, copie non officielle. L'auteur, dinka lui-même, y publie des chants dinka traduits en anglais. Page 59, chant de jeu d'enfants : « The diviner of Nyandeeng's Mother ». Page 70, chant de jeunesse : « Nyandeeng, daughter of Koor ». Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une fiche culturelle sur le Soudan du Sud explique Nyan Deng par « fille de Deng ». La thèse de LeRoux-Rutledge relève aussi Nyandeng, écrit en un seul mot, chez les Dinka. Les sources consultées ne relient pas explicitement les deux formes. Ce sens reste donc une hypothèse pour Nyandeng.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "South Sudanese Culture — Naming",
+                "author": "Nina Evason, Cultural Atlas",
+                "year": 2018,
+                "url": "https://culturalatlas.sbs.com.au/south-sudanese-culture/south-sudanese-culture-naming",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Fiche culturelle destinée au grand public, rédigée en 2018 ; l'adresse renvoie aujourd'hui vers theculturalatlas.org. Elle écrit qu'une fille dont le père s'appelle Deng est appelée « Nyan Deng », « Daughter (of) Deng » en dinka ; elle ne mentionne pas le nom Nyandeng. Lu le 11 octobre 2026."
+              },
+              {
+                "title": "Public Narratives as Symbolic Resources for Gender and Development",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://etheses.lse.ac.uk/3548/1/LeRoux-Rutledge_Public_Narratives_as_Symbolic.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Thèse d’Emily LeRoux-Rutledge, London School of Economics, 2016. L’enquête de terrain situe Turalei parmi les Dinka du clan Twic Mayaardit et atteste également la graphie Mayardit dans le nom de la radio locale ; elle cite Nyandeng Malek dans ce même terrain."
               }
             ]
           }

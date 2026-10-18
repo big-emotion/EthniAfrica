@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Gnanguenon rapporte une histoire familiale attribuée à Côme Adjovi : au XVIIe siècle, l'annonce du premier garçon de Dâh Ayihou pendant une danse au tambour « ADJO » aurait produit la formule ADJO-VI-VI, ensuite abrégée en Adjovi. Le récit présente ce fils comme garant de la postérité et transmetteur du nom aux générations suivantes.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["gnanguenon-2017-adjovi"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -182,6 +177,26 @@
                 "source_kind": "academic",
                 "page": "p. 142",
                 "notes": "Paris, Karthala, 1995, ouvrage d'Alain Sinou avec la collaboration de chercheurs béninois et de l'ORSTOM ; lu en entier dans la copie numérisée du dépôt documentaire de l'IRD, les pages imprimées étant vérifiées sur l'image. Page 142 : « La collectivité Adjovi demande dès 1892 la reconnaissance de ses droits sur plusieurs terrains, en particulier celui occupé par le bois où sont célébrés les rituels en l'honneur de l'ancien roi houédah Kpassé. Ce n'est qu'au début du siècle que les tribunaux accepteront ses revendications (P. Manning, 1983). » Nous n'avons pas lu Manning. Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Gnanguenon rapporte une histoire familiale attribuée à Côme Adjovi : au XVIIe siècle, l'annonce du premier garçon de Dâh Ayihou pendant une danse au tambour « ADJO » aurait produit la formule ADJO-VI-VI, ensuite abrégée en Adjovi. Le récit présente ce fils comme garant de la postérité et transmetteur du nom aux générations suivantes.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Le dictionnaire étymologique des noms propres de personne au Bénin : langues fon et français",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://fr.scribd.com/document/728470135/Le-Dictionnaire-Etymologique-Des-Noms-Propres-de-Personnes-Au-Benin-Langues-Fon-Et-Francais-Cossi-Boniface-Gnanguenon-Z-lib-org-1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Cossi Boniface Gnanguenon, L’Harmattan, 2017, ISBN 978-2-343-12064-5, pp. 223-224 de l'édition numérisée consultée. L'auteur attribue explicitement la petite histoire à Côme Adjovi, porteur du nom ; cette attribution impose de conserver le récit au statut « claimed »."
               }
             ]
           }

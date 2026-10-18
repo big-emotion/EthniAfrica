@@ -32,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une contribution utilisateur donne à El-Sayed le sens arabe de « maître ». Cette proposition est conservée comme témoignage communautaire non vérifié et ne suffit pas à expliquer la fixation du patronyme.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["forebears-el-sayed"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -182,6 +177,26 @@
                 "source_kind": "archive",
                 "page": "p. 178",
                 "notes": "Le Caire, Imprimerie nationale, 1888. Lu le 14 octobre 2026 sur la copie numérisée d'archive.org, aux pages indiquées. Page 178 : « Le vendredi 19 Radjab 1121, est mort El Sayed Hassan effendi, chef des nobles. Son père, son oncle et son grand-père avaient, avant lui, été revêtus de cette dignité. » Le texte ne dit pas le lieu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une contribution utilisateur donne à El-Sayed le sens arabe de « maître ». Cette proposition est conservée comme témoignage communautaire non vérifié et ne suffit pas à expliquer la fixation du patronyme.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "El-Sayed Surname Origin, Meaning & Last Name History — Forebears",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://forebears.io/surnames/el-sayed",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Répertoire communautaire consulté le 2 septembre 2026. Il recense El-Sayed principalement en Égypte et reproduit une signification utilisateur « maître » sans bibliographie."
               }
             ]
           }

@@ -22,13 +22,8 @@
   "designatedSocialUnit": "lineage",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Une analyse de l'Ifri identifie Ny Hasina Andriamanjato comme le fils du pasteur Richard Andriamanjato. Cette occurrence sur deux générations établit ici une transmission patrilinéaire du nom, sans préjuger de son étymologie.",
-        "claimStatus": "established",
-        "sourceRefs": ["ifri-crise-malgache"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -102,5 +97,40 @@
       "fieldPath": "homonyms",
       "reason": "Les catalogues d'autorité et recherches exactes consultés n'ont pas établi de lignée homonyme d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Les sources réunies dans ce dossier racontent l’histoire du nom Andriamanjato.",
+    "originExplained": true,
+    "names": [
+      {
+        "nameText": "Andriamanjato",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une analyse de l'Ifri identifie Ny Hasina Andriamanjato comme le fils du pasteur Richard Andriamanjato. Cette occurrence sur deux générations établit ici une transmission patrilinéaire du nom, sans préjuger de son étymologie.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Madagascar Crisis",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.ifri.org/en/node/5242",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Entretien-analyse de Mathieu Pellerin publié par l'Ifri le 23 février 2009. La note 29 identifie Ny Hasina Andriamanjato comme fils du pasteur Richard Andriamanjato."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

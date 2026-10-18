@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "La page communautaire reproduit une définition ancienne de Sassi/Sassy comme nom d’homme arabe « qui a été demandé en aumône ». Faute d’accès à l’appareil critique original depuis cette page, la proposition reste non vérifiée.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["forebears-sassi"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -158,6 +153,26 @@
                 "source_kind": "archive",
                 "page": "p. 201, 253",
                 "notes": "Tunis, Imprimerie rapide, 1900. Chronique de Mohammed Seghir ben Youssef, de Béja, traduite en français ; lue sur l'exemplaire numérisé d'archive.org le 12 octobre 2026. Page 201 : Younès laisse à Tamkart « le caïd Brahim ben Sassi », puis donne ses ordres aux « Oulad-ben-Sassi » ; une note date l'arrivée devant Tabarca du 12 juin 1741. Page 253 : « Les Oulad-ben-Sassi, caïds de Béja ». L'index renvoie aussi à Ali, Hassine et Mahmoud ben Sassi."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La page communautaire reproduit une définition ancienne de Sassi/Sassy comme nom d’homme arabe « qui a été demandé en aumône ». Faute d’accès à l’appareil critique original depuis cette page, la proposition reste non vérifiée.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Sassi Surname Origin, Meaning & Last Name History — Forebears",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://forebears.io/fr/surnames/sassi",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Répertoire communautaire consulté le 2 septembre 2026. Il recense Sassi en Tunisie et reproduit une définition historique sans donner sur la page un appareil critique suffisant pour la vérifier."
               }
             ]
           }
