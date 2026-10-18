@@ -41,10 +41,13 @@ export function FicheNameReadings({
   history,
   language,
   nameText,
+  title,
 }: {
   history: NameHistory;
   language: Language;
   nameText?: string;
+  /** A fiche-specific lead; absent, the shared timeline question is used. */
+  title?: string;
 }) {
   const copy = nameTimelineCopy[language];
   const first = nameText
@@ -64,10 +67,12 @@ export function FicheNameReadings({
           className="afh-tile mt-afh-2xl flex flex-col gap-afh-lg text-left"
         >
           <p className="afh-name-timeline-hypotheses">
-            <Named
-              text={copy.hypothesesHeading(first.nameText)}
-              forms={[first.nameText]}
-            />
+            {title ?? (
+              <Named
+                text={copy.hypothesesHeading(first.nameText)}
+                forms={[first.nameText]}
+              />
+            )}
           </p>
           <div className="grid grid-cols-1 gap-afh-2xl md:grid-cols-2">
             {accounts.map((account, index) => {

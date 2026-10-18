@@ -732,7 +732,7 @@ export function NameNextStep({
 }: {
   cards: readonly NextStepCard[];
   language: Language;
-  trackFrom?: FicheEntityType;
+  trackFrom?: FicheEntityType | "place";
   onNavigate?: (card: NextStepCard, rank: number) => void;
 }) {
   const copy = nameClosingCopy[language];
