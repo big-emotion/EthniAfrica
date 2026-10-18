@@ -169,5 +169,132 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Soudaniques centraux, ou peuples soudaniques centraux, réunit des peuples du nord-est de la République démocratique du Congo, du Soudan du Sud, du nord-ouest de l'Ouganda, de la Centrafrique et du sud du Tchad dont les langues forment le groupe soudanique central, comme le baguirmi, le moru, le madi, le mangbetu ou le lendu. Ce n'est pas le nom d'un peuple : aucune source que nous avons lue ne donne un nom que ces peuples se donneraient tous ensemble, et chacun porte le sien. C'est un nom de savants, formé sur le nom de région Soudan. Nous le présentons plus bas.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Soudaniques centraux",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des linguistes européens et américains, d'après le nom de région Soudan",
+        "shortLine": "Un nom de savants, formé sur le Soudan, « pays des Noirs », pour des langues d'Afrique centrale.",
+        "periodLabel": "Écrit dès 1912 ; pour ce groupe depuis 1949-1950",
+        "accounts": [
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom soudanique central désigne, chez Joseph Greenberg, l'un des deux grands groupes du chari-nil, avec six sous-groupes : le bongo-baguirmi, le kreish, le moru-madi, le mangbetu, le mangbutu-efe et le lendu.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 335-336"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom soudanais central sert aussi à l'historien J. E. G. Sutton pour des peuples anciens : une population plus ancienne que les Bantu autour du lac Victoria, dont la langue s'est éteinte, aurait pu parler une langue de ce groupe. Aujourd'hui, écrit-il, ce n'est plus qu'une sous-famille en groupes dispersés autour de la lisière nord-est de la forêt, comme les Moru-Madi du nord-ouest de l'Ouganda.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 23 : L'Afrique orientale avant le VIIe siècle",
+                "author": "J. E. G. Sutton",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 623 et p. 638"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom soudanique central est formé sur le nom de région Soudan. François de Medeiros rappelle que ce nom reprend le « pays des Noirs », bilād al-Sūdān, des auteurs arabes, et qu'il couvre les bassins du Sénégal, du Niger et du Tchad et les pays plus au sud.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 5 : Les peuples du Soudan : mouvements de populations",
+                "author": "François de Medeiros",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 145"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1949,
+              "to": 1954,
+              "label": "1949-1954"
+            },
+            "era": "colonial",
+            "statement": "Le nom soudanique central sert à Joseph Greenberg, dans ses articles de 1949-1950, à nommer une famille de langues à part. En 1954, il la range dans un ensemble « macro-soudanique », avec le soudanique oriental.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 328 et p. 338"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom soudanique central apparaît par écrit chez le linguiste Diedrich Westermann, qui parle des « Central Sudanic languages », dont le baguirmi, à propos du bongo, une langue parlée au milieu des langues shilluk. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il réunit existaient déjà avant lui, chacun sous son nom.",
+            "formAsWritten": "Central Sudanic languages",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Shilluk People, Their Language and Folklore",
+                "author": "Diedrich Westermann",
+                "year": 1912,
+                "url": "https://archive.org/details/shillukpeoplethe00west",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Berlin, Dietrich Reimer, 1912. Lu dans la numérisation d'Internet Archive le 18 octobre 2026. « Bongo ; this language, though having its habitat amidst the Shilluk languages, shows remarkable connections with Central Sudanic languages, particularly with Bagirmi ». Le numéro de page est déduit de la page suivante, numérotée 37 sur l'image, et de l'index (« Bagirmi 36 »).",
+                "page": "p. 36"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
