@@ -10,6 +10,7 @@ import {
 import { searchAnswerCopy } from "@/lib/i18n/copy/searchAnswer";
 import type { AnswerKind, SearchAnswer } from "@/lib/search/answer";
 import { leadingSentences } from "@/lib/search/answerFormat";
+import { normalizeFrenchSpacing } from "@/lib/prose/frenchSpacing";
 import { cn } from "@/lib/utils";
 import type { Language } from "@/types/shared";
 
@@ -111,8 +112,10 @@ export function OriginBlock({
                   </span>
                 ) : null}
                 <p className="m-0">
-                  {cut[index].shown}
-                  {expanded && cut[index].rest ? ` ${cut[index].rest}` : ""}
+                  {normalizeFrenchSpacing(cut[index].shown)}
+                  {expanded && cut[index].rest
+                    ? ` ${normalizeFrenchSpacing(cut[index].rest)}`
+                    : ""}
                 </p>
               </li>
             ))}
@@ -127,8 +130,10 @@ export function OriginBlock({
       ) : (
         <div id={detailId} className="flex flex-col gap-afh-lg">
           <p className="m-0 text-afh-body leading-[var(--afh-leading-body)] text-afh-text">
-            {cut[0].shown}
-            {expanded && cut[0].rest ? ` ${cut[0].rest}` : ""}
+            {normalizeFrenchSpacing(cut[0].shown)}
+            {expanded && cut[0].rest
+              ? ` ${normalizeFrenchSpacing(cut[0].rest)}`
+              : ""}
           </p>
           {toggle ? <div>{toggle}</div> : null}
         </div>

@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { ANSWER_BLOCK } from "@/components/search/answer/answerStyle";
 import { searchAnswerCopy } from "@/lib/i18n/copy/searchAnswer";
 import type { AnswerKind, AnswerNext } from "@/lib/search/answer";
+import { normalizeFrenchSpacing } from "@/lib/prose/frenchSpacing";
 import { cn } from "@/lib/utils";
 import type { Language } from "@/types/shared";
 
@@ -61,8 +62,10 @@ export function NextQuestion({
   language = "fr",
 }: NextQuestionProps) {
   const copy = searchAnswerCopy[language].next;
-  const question =
-    "question" in next ? next.question : templateQuestion(next, language);
+  const hasFicheQuestion = "question" in next;
+  const question = hasFicheQuestion
+    ? next.question
+    : templateQuestion(next, language);
   if (!question) return null;
 
   const body: ReactNode = (
@@ -72,7 +75,7 @@ export function NextQuestion({
           {copy.eyebrow}
         </span>
         <span className="font-afh-display text-afh-h3 font-bold leading-[var(--afh-leading-h3)] text-afh-text">
-          {question}
+          {hasFicheQuestion ? normalizeFrenchSpacing(question) : question}
         </span>
       </span>
       {href ? (

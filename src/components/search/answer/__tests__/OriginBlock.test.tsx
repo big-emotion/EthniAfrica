@@ -42,6 +42,24 @@ describe("OriginBlock", () => {
   });
 
   // @req REQ-178
+  it("keeps French punctuation and guillemets together in origin prose", () => {
+    render(
+      <OriginBlock
+        origin={{
+          debated: false,
+          accounts: [{ text: "Un nom : « Fulɓe ! ».", evidence: [] }],
+        }}
+        kind="people"
+        title="Fulɓe"
+      />
+    );
+
+    expect(
+      document.querySelector("[data-answer-block=origin] p")?.textContent
+    ).toBe("Un nom\u00a0: «\u00a0Fulɓe\u00a0!\u00a0».");
+  });
+
+  // @req REQ-178
   it("shows the first sentence of every reading, none above another, when the origin is debated", () => {
     render(<OriginBlock {...originOf("lingala")} />);
     expect(

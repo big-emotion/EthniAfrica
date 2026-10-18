@@ -231,6 +231,27 @@ describe("AppellationsBlock expansion", () => {
 // @req REQ-180
 describe("AppellationsBlock form semantics", () => {
   // @req REQ-180
+  it("normalizes French punctuation in the form's corpus detail", async () => {
+    const user = userEvent.setup();
+    render(
+      <AppellationsBlock
+        language="fr"
+        forms={[
+          {
+            form: "Lingala",
+            detail: { text: "Une forme : « lingala ! » ; une autre ?" },
+          },
+        ]}
+      />
+    );
+
+    await user.click(screen.getByRole("button", { name: /Lingala/ }));
+    expect(screen.getByTestId("appellation-detail").textContent).toBe(
+      "Une forme\u00a0: «\u00a0lingala\u00a0!\u00a0»\u00a0; une autre\u00a0?"
+    );
+  });
+
+  // @req REQ-180
   it("opens a form's own detail in place and closes it again", async () => {
     const user = userEvent.setup();
     render(

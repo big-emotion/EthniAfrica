@@ -10,6 +10,7 @@ import { trackEvent } from "@/lib/analytics/trackEvent";
 import { sourceKindLabel } from "@/lib/glossaire/vocabularies";
 import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
 import { nameTimelineCopy } from "@/lib/i18n/copy/nameTimeline";
+import { normalizeFrenchSpacing } from "@/lib/prose/frenchSpacing";
 import { sourceDiamondCopy } from "@/lib/i18n/copy/sourceDiamond";
 import { useNameSearchHref } from "@/components/search/NameAddressProvider";
 import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
@@ -91,9 +92,9 @@ function Named({ text, forms }: { text: string; forms: string[] }) {
     <>
       {splitNamedText(text, forms).map((part, index) =>
         part.name ? (
-          <em key={index}>{part.text}</em>
+          <em key={index}>{normalizeFrenchSpacing(part.text)}</em>
         ) : (
-          <Fragment key={index}>{part.text}</Fragment>
+          <Fragment key={index}>{normalizeFrenchSpacing(part.text)}</Fragment>
         )
       )}
     </>
