@@ -31,6 +31,12 @@ export interface ModelEntity {
   forms: string[];
   /** Every other string of the fiche, sources and translations excluded. */
   prose: string[];
+  /**
+   * A family name's `spellings[].spelling`, qualifier removed. `forms` holds
+   * every string under `spellings`, attestations included; the leads read
+   * only these, as migration 109 does.
+   */
+  spellings?: string[];
 }
 
 const DATASET = join(process.cwd(), "dataset/source/afrik");
@@ -118,8 +124,24 @@ function simpleEntities(
     const spellings = kind === "patronyme" ? stringsOf(fiche.spellings) : [];
     const filed =
       kind === "patronyme" ? String(fiche.nameMain) : nameFrOf(fiche);
-    return entity(kind, fiche, filed, [filed, ...alternates, ...spellings]);
+    const modelled = entity(kind, fiche, filed, [
+      filed,
+      ...alternates,
+      ...spellings,
+    ]);
+    return kind === "patronyme"
+      ? { ...modelled, spellings: recordedSpellings(fiche.spellings) }
+      : modelled;
   });
+}
+
+function recordedSpellings(spellings: unknown): string[] {
+  if (!Array.isArray(spellings)) return [];
+  return spellings
+    .map((entry) => (entry as { spelling?: unknown } | null)?.spelling)
+    .filter((spelling): spelling is string => typeof spelling === "string")
+    .map(withoutQualifier)
+    .filter(Boolean);
 }
 
 let corpus: ModelEntity[] | undefined;
@@ -285,8 +307,9 @@ export const FAMILY_NAME_LEAD_FLOOR = 0.4;
 
 /**
  * The family-name branch of the leads (migration 109, DEC-075): a family name
- * qualifies through a form that begins with the query's first letter, both
- * folded, at the family-name search's own threshold. Whether it is offered —
+ * qualifies through its filed name or a recorded spelling that begins with
+ * the query's first letter, both folded, at the family-name search's own
+ * threshold. Whether it is offered —
  * nothing answering exactly — is the query layer's, and is not modelled.
  */
 // @req REQ-125
@@ -296,7 +319,7 @@ export function familyNameLeads(query: string): ModelEntity[] {
   return corpusEntities()
     .filter((item) => item.kind === "patronyme")
     .filter((item) =>
-      item.forms.some(
+      [withoutQualifier(item.filedName), ...(item.spellings ?? [])].some(
         (form) =>
           normalizeString(form).trim()[0] === folded[0] &&
           similarity(form, query) >= FAMILY_NAME_LEAD_FLOOR

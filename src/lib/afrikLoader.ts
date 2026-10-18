@@ -180,7 +180,11 @@ export async function search(
 
 export interface SearchWithLeads {
   results: SearchResult[];
-  /** Near-miss leads (REQ-125) — non-empty only when the API's own total is 0. */
+  /**
+   * Near-miss leads (REQ-125). Peoples, countries and families come only when
+   * the API's own total is 0; a family name may also come beside results,
+   * when nothing answers the query exactly (DEC-075).
+   */
   leads: SearchLead[];
   /** Similar names qualified by the API for a non-empty search (REQ-180). */
   nearNames: SearchNearName[];
@@ -209,7 +213,8 @@ export interface SearchWithLeads {
 // @req REQ-125
 /**
  * Same single browser path as `search` (ETNI-1415, AC2), additionally carrying
- * zero-result leads and the qualified similar names of a non-empty search. A
+ * the near-miss leads (a family name may come beside results, DEC-075) and the
+ * qualified similar names of a non-empty search. A
  * distinct function rather than an added parameter keeps every existing
  * `search()` caller's `SearchResult[]` return type untouched; it takes the same
  * `SearchOptions`, so a surface that needs the projections and server-side

@@ -35,6 +35,14 @@ describe("which family names are a spelling of the searched name (DEC-075)", () 
     expect(leadIds("chikaya")).not.toContain("PAT_TCHICAYA");
   });
 
+  // Migration 109 scores the filed name and `spellings[].spelling` only. An
+  // attestation's country code is no form of the name: « cog » is not a
+  // spelling of Tchicaya because it was attested in Congo.
+  // @req REQ-125
+  it("scores only the filed name and the recorded spellings, not their attestations", () => {
+    expect(leadIds("cog")).not.toContain("PAT_TCHICAYA");
+  });
+
   // @req REQ-125
   it("offers nothing for a query under three letters", () => {
     expect(familyNameLeads("tc")).toEqual([]);
