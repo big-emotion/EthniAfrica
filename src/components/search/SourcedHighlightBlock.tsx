@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { DID_YOU_KNOW_FACTS } from "@/lib/home/didYouKnowFacts";
 import type { DidYouKnowFact } from "@/lib/home/didYouKnowFacts";
+import { systemStatesCopy } from "@/lib/i18n/copy/systemStates";
 import { selectSourcedHighlight } from "@/lib/search/sourcedHighlight";
 import type { SearchResult } from "@/types/afrik-frontend";
 
@@ -29,7 +30,7 @@ export function SourcedHighlightBlock({
       className="border-l-4 border-l-[var(--accent)] p-afh-md"
     >
       <p className="text-afh-eyebrow font-bold uppercase tracking-[0.11em] text-afh-fg-muted">
-        Le saviez-vous ?
+        {systemStatesCopy.fr.error.anecdote}
       </p>
       <p className="mt-afh-xs text-afh-body font-semibold text-afh-text">
         {fact.headline}

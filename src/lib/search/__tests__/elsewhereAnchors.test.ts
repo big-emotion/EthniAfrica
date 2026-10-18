@@ -9,7 +9,7 @@ import {
 const isAfrican = ({ africanRegions }: { africanRegions: string[] }) =>
   africanRegions.length > 0;
 
-describe("« Pendant ce temps, ailleurs » anchors", () => {
+describe("« Ailleurs à la même époque » anchors", () => {
   // @req REQ-198
   it("cites at least one typed source for every event", () => {
     for (const anchor of ELSEWHERE_ANCHORS) {

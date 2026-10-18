@@ -15,6 +15,13 @@ import { getTranslation } from "@/lib/translations";
  */
 describe("hub blurbs", () => {
   const { hubs } = getTranslation("fr");
+
+  // No figure of style in a title (operator, 2026-10-17): the header panel
+  // is titled by what it is.
+  // @req REQ-114
+  it("titles the header panel plainly", () => {
+    expect(hubs.menuLabel).toBe("Menu");
+  });
   const axes = ["atlas", "dossiers", "jeux"] as const;
 
   // The hub paragraph renders inside max-w-[58ch]; past ~140 characters it
@@ -31,7 +38,7 @@ describe("hub blurbs", () => {
 
   /**
    * The shelving rule is the workshop's, and the reader never asked for it.
-   * The same three things are « Trois chemins » in the header panel and
+   * The same three things are « Menu » in the header panel and
    * « Trois manières d'entrer » on the About page, so opening the pages
    * themselves on « L'axe des… » gave one idea a third name, taken from the
    * inside — the failing `hubs.ts` already records against « le corpus » and

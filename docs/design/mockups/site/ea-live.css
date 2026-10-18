@@ -1593,7 +1593,7 @@ button.afh-source-diamond .afh-source-diamond-mark {
   color: var(--afh-text-soft);
 }
 
-/* ── Pendant ce temps, ailleurs ─────────────────────────────────────────── */
+/* ── Ailleurs à la même époque ─────────────────────────────────────────── */
 .afh-name-timeline-elsewhere {
   display: flex;
   flex-direction: column;
@@ -4671,7 +4671,7 @@ svg { display: block; }
    an existing board.
    ============================================================ */
 
-/* Block 3 · Les sources parlent */
+/* Block 3 · Les sources du nom */
 .ea-voices { display: flex; flex-direction: column; gap: var(--afh-space-2xl); }
 .ea-voices-title {
   font-family: var(--afh-font-display); font-weight: 900;
@@ -4836,7 +4836,7 @@ svg { display: block; }
 
 /* ============================================================
    Brief 2 (2026-10-15): on a fiche with several names,
-   « Les sources parlent » groups the accounts by name first,
+   « Les sources des noms » groups the accounts by name first,
    then by source family. New selectors only.
    ============================================================ */
 .ea-voice-person { background: var(--afh-surface); }

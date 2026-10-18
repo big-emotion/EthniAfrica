@@ -99,13 +99,13 @@ test("@smoke a search for lingala opens on its name-history timeline", async ({
   ).toHaveAttribute("aria-pressed", "true");
 
   const birth = page.locator('[data-placement="birth"]');
-  await expect(birth).toContainText("Naissance du nom Lingala");
+  await expect(birth).toContainText(
+    "Origine la plus ancienne connue du nom Lingala"
+  );
   await expect(birth).toContainText("1902");
   await expect(page.locator('[data-placement="before"]')).toHaveCount(2);
 
-  await page
-    .getByRole("button", { name: "Pendant ce temps, ailleurs" })
-    .click();
+  await page.getByRole("button", { name: "Ailleurs à la même époque" }).click();
   await expect(page.locator("[data-elsewhere]").first()).toBeVisible();
 
   const overflow = await page.evaluate(

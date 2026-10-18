@@ -26,7 +26,7 @@ const fr = {
     copy: "Copier la référence",
     copied: "Copié",
     retry: "Réessayer",
-    anecdote: "Le saviez-vous ?",
+    anecdote: "À savoir",
   },
   empty: {
     searchHint: "Vérifiez l'orthographe ou parcourez par famille linguistique.",

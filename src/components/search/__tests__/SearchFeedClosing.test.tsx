@@ -68,7 +68,7 @@ const peulNextSteps = [
 ];
 
 // Board search-peul-430 (approved 2026-10-14): one subject, so the fiche link
-// stays under the timeline (line 129), before « Les sources parlent » (146).
+// stays under the timeline (line 129), before « Les sources » (146).
 describe("SearchFeed — the end of a one-subject timeline", () => {
   const renderPeul = (
     onResultNavigate?: (type: string, rank: number, surface?: string) => void
@@ -89,7 +89,7 @@ describe("SearchFeed — the end of a one-subject timeline", () => {
     );
 
   // @req REQ-198
-  it("puts « Voir la fiche complète » before « Qui raconte le nom Peul ? »", () => {
+  it("puts « Voir la fiche complète » before « Les sources du nom Peul »", () => {
     renderPeul();
 
     const ficheLink = screen.getByRole("link", {
@@ -97,7 +97,7 @@ describe("SearchFeed — the end of a one-subject timeline", () => {
     });
     const sources = screen.getByRole("heading", {
       level: 2,
-      name: "Qui raconte le nom Peul ?",
+      name: "Les sources du nom Peul",
     });
     expect(
       ficheLink.compareDocumentPosition(sources) &
