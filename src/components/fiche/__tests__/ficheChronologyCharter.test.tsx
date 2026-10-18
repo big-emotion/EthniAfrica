@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 
-import { cleanup, render, within } from "@testing-library/react";
+import { cleanup, fireEvent, render, within } from "@testing-library/react";
 import { afterEach, describe, expect, it } from "vitest";
 
 import { FicheChronologyChapter } from "@/components/fiche/FicheChronologyChapter";
@@ -80,6 +80,11 @@ describe("fiche chronology charter", () => {
       etymology!.compareDocumentPosition(list) &
         Node.DOCUMENT_POSITION_FOLLOWING
     ).toBeTruthy();
+    // Six tiles: the stations sit behind the fold (brief 10 §2) and open in
+    // place, each still naming the territory.
+    fireEvent.click(
+      container.querySelector("details.ea-fold > summary") as HTMLElement
+    );
     expect(
       within(list as HTMLElement).getByText("Deutsch-Südwestafrika")
     ).toBeVisible();
@@ -162,5 +167,100 @@ describe("fiche chronology charter", () => {
     expect(stylesheet).toMatch(
       /\.afh-chronology\s*>\s*\[data-regime="modern"\]\s*\{[^}]*--afh-regime-ink:\s*var\(--afh-conf-high\)/
     );
+  });
+});
+
+const labelsIn = (root: ParentNode) =>
+  Array.from(root.querySelectorAll(".afh-tile-label"), (n) => n.textContent);
+
+/**
+ * Brief 10 §2 (REQ-153 as amended 2026-10-17), boards people-fula and
+ * country-civ: « Histoire » keeps its first tile and folds the rest. A legend
+ * folds with what it explains once nothing it explains is in view (`Main`).
+ */
+describe("fiche chronology — a long history folds after its first tile", () => {
+  afterEach(cleanup);
+
+  // @req REQ-153
+  it("keeps the people's first station under its legend, and folds the others", () => {
+    const people = peopleRecord("PPL_FULA");
+    const { container } = render(
+      <FicheChronologyChapter
+        language="fr"
+        stations={peopleChronology(
+          transformPeopleOrigins(people.origins),
+          transformPeopleHistory(people.historicalRole),
+          "fr"
+        )}
+      />
+    );
+
+    const fold = container.querySelector("details.ea-fold") as HTMLElement;
+    const legend = container.querySelector("[data-chronology-legend]");
+    expect(fold).not.toContainElement(legend as HTMLElement);
+    const [open, folded] = Array.from(
+      container.querySelectorAll("ol.afh-chronology")
+    );
+    expect(open.closest("details.ea-fold")).toBeNull();
+    expect(labelsIn(open)).toEqual(["Formation et origines"]);
+    expect(
+      legend!.compareDocumentPosition(open) & Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+    expect(fold).toContainElement(folded as HTMLElement);
+    expect(
+      fold.querySelector(':scope > summary [data-when="closed"]')
+    ).toHaveTextContent(
+      "+ Voir aussi : Royaumes & chefferies, Influences extérieures, Conflits & alliances, Diaspora"
+    );
+    expect(labelsIn(folded)).toEqual([
+      "Royaumes & chefferies",
+      "Influences extérieures",
+      "Conflits & alliances",
+      "Diaspora",
+    ]);
+  });
+
+  // @req REQ-153
+  it("keeps the country's name origin open and folds the legend with every station", () => {
+    const chronology = countryChronology(countryRecord("CIV"), "fr");
+    const { container } = render(
+      <FicheChronologyChapter
+        language="fr"
+        stations={chronology.stations}
+        etymology={chronology.etymology}
+        etymologyAnchorId="chapitre-le-nom-et-son-histoire"
+      />
+    );
+
+    const fold = container.querySelector("details.ea-fold") as HTMLElement;
+    const etymology = container.querySelector(
+      "#chapitre-le-nom-et-son-histoire"
+    ) as HTMLElement;
+    expect(fold).not.toContainElement(etymology);
+    expect(labelsIn(etymology)).toEqual(["D'où vient le nom"]);
+    expect(fold).toContainElement(
+      container.querySelector("[data-chronology-legend]") as HTMLElement
+    );
+    expect(container.querySelectorAll("ol.afh-chronology")).toHaveLength(1);
+    expect(
+      fold.querySelector(':scope > summary [data-when="closed"]')
+    ).toHaveTextContent(
+      "+ Voir aussi : 5 entités politiques, Royaume de Kong, Colonie de Côte d'Ivoire, République de Côte d'Ivoire"
+    );
+  });
+
+  // @req REQ-153
+  it("folds nothing when the history holds two tiles or fewer", () => {
+    const chronology = countryChronology(countryRecord("CIV"), "fr");
+    const { container } = render(
+      <FicheChronologyChapter
+        language="fr"
+        stations={chronology.stations.slice(0, 1)}
+        etymology={chronology.etymology}
+      />
+    );
+
+    expect(container.querySelector("details.ea-fold")).toBeNull();
+    expect(container.querySelector("[data-chronology-legend]")).not.toBeNull();
   });
 });
