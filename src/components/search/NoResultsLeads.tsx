@@ -7,7 +7,12 @@ import {
 } from "@/components/search/searchEntityAccent";
 import { Badge } from "@/components/ui/badge";
 import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
-import { getCountryRoute, getFamilyRoute, getPeopleRoute } from "@/lib/routing";
+import {
+  getCountryRoute,
+  getFamilyRoute,
+  getPatronymeRoute,
+  getPeopleRoute,
+} from "@/lib/routing";
 import { cn } from "@/lib/utils";
 import type { SearchLead } from "@/types/afrik-frontend";
 import type { Language } from "@/types/shared";
@@ -16,6 +21,7 @@ import type { Language } from "@/types/shared";
 function leadHrefFor(lead: SearchLead, language: Language): string {
   if (lead.type === "country") return getCountryRoute(language, lead.id);
   if (lead.type === "languageFamily") return getFamilyRoute(language, lead.id);
+  if (lead.type === "patronyme") return getPatronymeRoute(language, lead.id);
   return getPeopleRoute(language, lead.id);
 }
 

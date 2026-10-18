@@ -241,18 +241,10 @@ export function ConsentBanner() {
           </div>
         )}
 
-        {/* One order on screen and in focus at every width: « Refuser »,
-            « Accepter », then the quiet pair (WCAG 2.4.3, brief 12 approval
-            record item 5). No reversed row, no `order`. */}
+        {/* One order on screen and in focus at every width: the quiet pair,
+            then the answers (WCAG 2.4.3, brief 12 approval record item 5).
+            No reversed row, no `order`. */}
         <div className="flex flex-col gap-afh-md md:flex-row md:items-center md:justify-between md:gap-afh-2xl min-[75rem]:col-start-2 min-[75rem]:row-start-2">
-          <div className="grid grid-cols-2 gap-afh-md md:flex-none">
-            <button type="button" className={ANSWER_CLASS} onClick={rejectAll}>
-              {copy.reject}
-            </button>
-            <button type="button" className={ANSWER_CLASS} onClick={acceptAll}>
-              {copy.acceptAll}
-            </button>
-          </div>
           <div className="flex flex-wrap items-center gap-x-afh-5xl">
             <button
               type="button"
@@ -273,6 +265,14 @@ export function ConsentBanner() {
             >
               {copy.dataPolicy}
             </Link>
+          </div>
+          <div className="grid grid-cols-2 gap-afh-md md:flex-none">
+            <button type="button" className={ANSWER_CLASS} onClick={rejectAll}>
+              {copy.reject}
+            </button>
+            <button type="button" className={ANSWER_CLASS} onClick={acceptAll}>
+              {copy.acceptAll}
+            </button>
           </div>
         </div>
       </div>

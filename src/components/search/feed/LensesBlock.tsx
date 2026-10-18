@@ -50,7 +50,7 @@ export function LensesBlock({
       id="lenses"
       zone="first"
       ariaLabel={searchFeedCopy[language].filters.label}
-      className="mt-afh-lg flex snap-x snap-mandatory scroll-px-afh-lg flex-nowrap gap-afh-md overflow-x-auto overflow-y-hidden [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+      className="search-feed-pill-group mt-afh-lg flex snap-x snap-mandatory scroll-px-afh-lg flex-nowrap gap-afh-md overflow-x-auto overflow-y-hidden [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
     >
       {lenses.map((lens) => {
         const selected = lens.id === active;
@@ -62,7 +62,7 @@ export function LensesBlock({
             aria-pressed={selected}
             onClick={() => onChange(lens.id)}
             className={cn(
-              "inline-flex min-h-11 shrink-0 snap-start items-center rounded-afh-full px-afh-2xl text-afh-caption font-bold leading-[var(--afh-leading-caption)]",
+              "inline-flex min-h-11 shrink-0 snap-start items-center rounded-afh-full px-afh-2xl text-[length:var(--search-feed-text-pill)] font-bold leading-[var(--afh-leading-caption)]",
               !reviewed && "gap-afh-xs",
               CHARTER_FOCUS_RING,
               selected

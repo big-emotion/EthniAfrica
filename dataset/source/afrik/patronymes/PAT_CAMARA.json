@@ -587,6 +587,14 @@
                 "page": "p. 101",
                 "carrier": "Djeli Mamadou Kouyaté, griot de Djeliba Koro, près de Siguiri",
                 "notes": "Paris, Présence Africaine, 1960. Mise par écrit du récit du griot Djeli Mamadou Kouyaté ; pages lues sur l'exemplaire numérisé d'archive.org (SoundjataOuLepopeeMandingue). Kamandjan, roi des Kamara, dit Dalikimbon, et Tabon Wana, roi des forgerons Kamara, dit Sinikimbon."
+              },
+              {
+                "title": "Récit du griot Djeli Mamadou Kouyaté, de Djeliba Koro près de Siguiri",
+                "author": "Djeli Mamadou Kouyaté",
+                "year": null,
+                "url": null,
+                "tier": "unverified",
+                "source_kind": "oral_tradition"
               }
             ]
           },
@@ -658,6 +666,17 @@
                 "carrier": "Babou Condé, griot du village de Fadama",
                 "place": "Fadama, préfecture de Kouroussa, Guinée",
                 "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, 2017, dirigé par A. Davydov et relu par V. Vydrin. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet. Récit du griot Babou Condé recueilli lors d'entretiens à Fadama, dans le cercle de Kouroussa, en 2017."
+              },
+              {
+                "title": "Récit du griot Babou Condé, de Fadama",
+                "author": "Babou Condé",
+                "year": null,
+                "url": null,
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "carrier": "Babou Condé, griot du village de Fadama",
+                "place": "Fadama, préfecture de Kouroussa, Guinée",
+                "notes": "Récit recueilli lors d'entretiens menés par E. A. Bogacheva en 2017 et rapporté en russe dans son mémoire."
               }
             ]
           },

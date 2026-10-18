@@ -2,7 +2,7 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "patronyme",
-    "directives": "This is the per-name PAT_* contract. Keep it separate from PPL_* ethnonym dossiers and ONS_* naming-system dossiers. Omit subtype-only fields unless the declared canonical nameSystem permits them. Fiche prose is written in French."
+    "directives": "This is the per-name PAT_* contract. Keep it separate from PPL_* ethnonym dossiers and ONS_* naming-system dossiers. Omit subtype-only fields unless the declared canonical nameSystem permits them. Fiche prose is written in French. nameHistory.originExplained is optional and defaults to true; set it to false when no cited source explains the origin. nameHistory.names[].equivalents is optional."
   },
   "id": "PAT_XXXXX",
   "nameMain": "<Nom principal>",
@@ -97,11 +97,15 @@
     "followUp": "<Facultatif. Une question de rebond, 120 caractères au plus, qui se termine par « ? ». Absente, la page utilise un modèle de question.>"
   },
   "nameHistory": {
+    "originExplained": true,
     "summary": "<Commence par « Le nom X » ; nomme le nom que le sujet se donne, dit s'il porte plusieurs noms et si leurs origines sont débattues, et qu'elles sont présentées plus bas>",
     "names": [
       {
         "nameText": "<Le nom actuel, tel qu'un lecteur le cherche>",
         "nameStatus": "current",
+        "equivalents": [
+          "<Nom analogue ou rapprochement géographique documenté>"
+        ],
         "selfGiven": true,
         "languageOfOrigin": "xxx",
         "namedBy": null,

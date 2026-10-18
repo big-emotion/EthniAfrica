@@ -376,7 +376,11 @@ describe("nameStoryLink — the name a fiche's story link may promise", () => {
 
     expect(nameStoryLink(subject, null, "fr")).toBeUndefined();
     expect(
-      nameStoryLink(subject, { summary: "", names: [] }, "fr")
+      nameStoryLink(
+        subject,
+        { summary: "", originExplained: true, names: [] },
+        "fr"
+      )
     ).toBeUndefined();
   });
 });

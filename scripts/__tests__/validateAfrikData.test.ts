@@ -6,6 +6,7 @@
 // @req REQ-031
 // @req REQ-032
 // @req REQ-130
+// @req REQ-196
 import { describe, it, expect, beforeEach, afterEach } from "vitest";
 import { mkdirSync, writeFileSync, rmSync, existsSync, readFileSync } from "fs";
 import { join, resolve } from "path";
@@ -35,6 +36,7 @@ import {
   checkRetiredCiaFactbookUrls,
   AFRICAN_REFERENCE_COUNTRY_CODES,
 } from "../validateAfrikData";
+import { parseNameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 
 // ─── helpers ──────────────────────────────────────────────────────────────────
 
@@ -2232,5 +2234,72 @@ describe("validateAfrikData – new integrity checks", () => {
       const result = checkOrphanFiches(tmpDir);
       expect(result.ok).toBe(true);
     });
+  });
+});
+
+describe("patronyme name history contract (REQ-196)", () => {
+  const minimalHistory = {
+    summary: "Le nom Traoré est un nom de famille.",
+    names: [
+      {
+        nameText: "Traoré",
+        nameStatus: "current",
+        selfGiven: true,
+        languageOfOrigin: null,
+        namedBy: null,
+        accounts: [],
+      },
+    ],
+  };
+
+  // @req REQ-133
+  it("defaults originExplained to true when the optional field is absent", () => {
+    const parsed = parseNameHistory(minimalHistory);
+
+    expect(parsed.success).toBe(true);
+    expect(parsed.data?.originExplained).toBe(true);
+  });
+
+  // @req REQ-133
+  it("accepts originExplained false when the origin is not explained", () => {
+    const parsed = parseNameHistory({
+      ...minimalHistory,
+      originExplained: false,
+    });
+
+    expect(parsed.success).toBe(true);
+    expect(parsed.data?.originExplained).toBe(false);
+  });
+
+  // @req REQ-133
+  it("accepts optional equivalents on a name", () => {
+    const parsed = parseNameHistory({
+      ...minimalHistory,
+      names: [
+        {
+          ...minimalHistory.names[0],
+          equivalents: [
+            "Sane",
+            "Mane",
+            "Ouédraogo",
+            "Dembélé",
+            "Diouf",
+            "Touré à Ségou",
+            "Diop en pays wolof",
+          ],
+        },
+      ],
+    });
+
+    expect(parsed.success).toBe(true);
+    expect(parsed.data?.names[0].equivalents).toEqual([
+      "Sane",
+      "Mane",
+      "Ouédraogo",
+      "Dembélé",
+      "Diouf",
+      "Touré à Ségou",
+      "Diop en pays wolof",
+    ]);
   });
 });

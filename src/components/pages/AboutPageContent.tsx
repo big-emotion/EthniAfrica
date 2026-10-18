@@ -140,7 +140,19 @@ export default function AboutPageContent({ language }: AboutPageContentProps) {
 
       <AboutSection testId="about-sources" step={4} {...t.sources} />
 
-      <AboutSection testId="about-conviction" step={5} {...t.conviction} />
+      <AboutSection
+        testId="about-conviction"
+        step={5}
+        title={t.conviction.title}
+        paragraphs={t.conviction.paragraphs}
+      >
+        <Link
+          href={getLocalizedRoute(language, "approach")}
+          className={LINK_CLASS}
+        >
+          {t.conviction.link}
+        </Link>
+      </AboutSection>
 
       <AboutSection
         testId="about-correction"

@@ -32,6 +32,67 @@ describe("PatronymeFicheTitle (REQ-133)", () => {
   });
 
   // @req REQ-133
+  it("uses the attested accented spelling for the displayed name", () => {
+    render(
+      <PatronymeFicheTitle
+        patronyme={{
+          ...patronyme,
+          nameMain: "Traore",
+          content: { spellings: [{ spelling: "Traoré", attestations: [] }] },
+        }}
+        language="fr"
+      />
+    );
+
+    expect(screen.getByRole("heading", { name: "Traoré" })).toBeInTheDocument();
+  });
+
+  // @req REQ-133
+  it("uses the address spelling from the name history ahead of the filed spelling", () => {
+    render(
+      <PatronymeFicheTitle
+        patronyme={{
+          ...patronyme,
+          nameMain: "Traore",
+          content: { spellings: [{ spelling: "Traore", attestations: [] }] },
+          nameHistory: {
+            summary: "Le nom Traoré est documenté.",
+            originExplained: true,
+            names: [
+              {
+                nameText: "Traoré",
+                nameStatus: "current",
+                selfGiven: true,
+                languageOfOrigin: null,
+                namedBy: null,
+                accounts: [
+                  {
+                    period: { from: 1900, to: 1900, label: "1900" },
+                    statement: "Le nom est attesté.",
+                    sources: [
+                      {
+                        title: "Source",
+                        author: "Auteur",
+                        year: 1900,
+                        url: null,
+                        tier: "referenced",
+                        source_kind: "academic",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        }}
+        language="fr"
+      />
+    );
+
+    expect(screen.getByRole("heading", { name: "Traoré" })).toBeInTheDocument();
+  });
+
+  // @req REQ-133
   it("states the naming system in the header (AC1)", () => {
     render(<PatronymeFicheTitle patronyme={patronyme} language="fr" />);
 
@@ -48,6 +109,23 @@ describe("PatronymeFicheTitle (REQ-133)", () => {
     );
 
     expect(screen.getByText(/Patronyme non héréditaire/)).toBeInTheDocument();
+  });
+
+  // @req REQ-133
+  it("does not state a naming system declared as a gap", () => {
+    render(
+      <PatronymeFicheTitle
+        patronyme={{
+          ...patronyme,
+          content: {
+            gaps: [{ fieldPath: "nameSystem", reason: "Internal note." }],
+          },
+        }}
+        language="fr"
+      />
+    );
+
+    expect(screen.queryByText(/Nom de clan/)).not.toBeInTheDocument();
   });
 });
 

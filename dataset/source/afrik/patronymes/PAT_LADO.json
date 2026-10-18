@@ -6,20 +6,20 @@
   },
   "id": "PAT_LADO",
   "nameMain": "Lado",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Lado",
       "attestations": [
         {
           "countryId": "SSD",
-          "sourceRefs": ["afrik-candidate-queue"]
+          "sourceRefs": ["afrik-candidate-queue", "seligman-1932-pagan-tribes"]
         }
       ]
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -30,7 +30,7 @@
     {
       "countryId": "SSD",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "seligman-1932-pagan-tribes"]
     }
   ],
   "alliances": [],
@@ -45,6 +45,14 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "seligman-1932-pagan-tribes",
+      "title": "Pagan Tribes of the Nilotic Sudan",
+      "url": "https://archive.org/details/in.ernet.dli.2015.57118",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "C. G. Seligman et Brenda Z. Seligman, Londres, George Routledge & Sons, 1932 ; numérisation d'Internet Archive, pages lues en image le 18 octobre 2026. Dans le chapitre sur les Bari, p. 268 : « Laro Lado, a chief known at Mongalla as Suleiman ». P. 270 : un tableau de parenté bari où figurent Lado, fils de Molodiong, du clan Bekat, et un garçon, « a boy, Lado », compté dans le clan Bekat ; les clans y portent leurs propres noms (Bekat, Nyori, Panigilo). Les auteurs ne disent rien du nom Lado lui-même. Utilisé pour l'attestation du nom au Soudan du Sud actuel et pour son classement, non pour une origine."
     }
   ],
   "gaps": [
@@ -69,12 +77,16 @@
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait un nom de clan. Charles et Brenda Seligman décrivent en 1932, chez les Bari, une famille où deux personnes s'appellent Lado : un fils de Molodiong et un jeune garçon. Ils donnent à part le nom de leur clan, Bekat. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant. La fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
+    },
+    {
       "fieldPath": "transmissionMode",
-      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+      "reason": "Nous ne documentons pas encore comment le nom Lado passe d'une génération à l'autre : la source lue le donne comme nom de personne, sans dire s'il se transmet."
     },
     {
       "fieldPath": "peoples",
-      "reason": "Nos fiches ne permettent pas encore de relier le nom Lado à un peuple au Soudan du Sud. Nous n'avons pas encore consulté de source consacrée à ce nom. Les fiches sur les Madi et les Moru mentionnent l'Enclave du Lado, territoire colonial belgo-britannique de 1894 à 1910. Il s'agit d'un lieu, pas d'une explication du nom de famille. Le lien éventuel avec les Bari reste à étudier."
+      "reason": "Charles et Brenda Seligman nomment en 1932 deux Bari appelés Lado, un fils de Molodiong et un jeune garçon, tous deux du clan Bekat. Ils citent aussi un chef appelé Laro Lado, connu à Mongalla, au Soudan du Sud actuel. Le projet n'a pas encore de fiche sur les Bari : le nom n'est donc relié à aucun peuple. Les fiches sur les Madi et les Moru mentionnent l'Enclave du Lado, territoire colonial belgo-britannique de 1894 à 1910. Il s'agit d'un lieu, pas d'une explication du nom."
     }
   ]
 }

@@ -97,13 +97,14 @@ describe("PatronymeNamingSystemSection (AC1, REQ-133)", () => {
   });
 
   // @req REQ-133
-  it("prints the editor's reason for a field the dossier leaves empty", () => {
+  it("omits a field declared as a gap and keeps its editorial reason private", () => {
     render(
       <PatronymeNamingSystemSection
         language="fr"
         patronyme={{
           ...base,
           content: {
+            transmissionMode: "patrilineal",
             gaps: [
               {
                 fieldPath: "transmissionMode",
@@ -117,10 +118,57 @@ describe("PatronymeNamingSystemSection (AC1, REQ-133)", () => {
     );
 
     expect(
-      screen.getByText(
+      screen.queryByText(
         "Le passage ne précise pas le mode de transmission du nom."
       )
-    ).toBeInTheDocument();
+    ).not.toBeInTheDocument();
+    expect(screen.queryByText("Mode de transmission")).not.toBeInTheDocument();
+    expect(screen.queryByText("Patrilinéaire")).not.toBeInTheDocument();
+  });
+
+  // @req REQ-133
+  it("renders name-history equivalents as their own field below the spellings", () => {
+    render(
+      <PatronymeNamingSystemSection
+        language="fr"
+        patronyme={{
+          ...base,
+          nameMain: "Traore",
+          nameHistory: {
+            summary: "Le nom Traoré est documenté.",
+            originExplained: true,
+            names: [
+              {
+                nameText: "Traoré",
+                nameStatus: "current",
+                selfGiven: true,
+                languageOfOrigin: null,
+                namedBy: null,
+                equivalents: ["Sane", "Mane", "Diop en pays wolof"],
+                accounts: [],
+              },
+            ],
+          },
+          content: {
+            spellings: [{ spelling: "Traoré", attestations: [] }],
+          },
+        }}
+      />
+    );
+
+    const spellings = screen.getByText(
+      "Orthographes trouvées dans les sources"
+    );
+    const equivalents = screen.getByText("Équivalents chez d'autres peuples");
+    expect(spellings.compareDocumentPosition(equivalents)).toBe(
+      Node.DOCUMENT_POSITION_FOLLOWING
+    );
+    expect(
+      screen
+        .getAllByRole("listitem")
+        .slice(-3)
+        .map((item) => item.textContent)
+    ).toEqual(["Sane", "Mane", "Diop en pays wolof"]);
   });
 
   // @req REQ-133

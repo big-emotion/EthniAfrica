@@ -132,6 +132,33 @@ describe("the footer directory — the site's rubrics under the fiche (REQ-046)"
   });
 
   // @req REQ-046
+  it("adds Notre démarche after À propos and signs the footer below its tagline", () => {
+    render(<SiteFooter language="fr" />);
+
+    const project = screen.getByRole("navigation", {
+      name: footer.directory.projectHeading,
+    });
+    const projectLinks = within(project).getAllByRole("link");
+
+    expect(projectLinks[0]).toHaveTextContent("À propos");
+    expect(projectLinks[1]).toHaveTextContent("Notre démarche");
+    expect(projectLinks[1]).toHaveAttribute(
+      "href",
+      getLocalizedRoute("fr", "approach")
+    );
+
+    const tagline = screen.getByTestId("footer-tagline");
+    const signature = screen.getByTestId("footer-signature");
+
+    expect(tagline.parentElement?.children[2]).toBe(signature);
+    expect(signature).toHaveTextContent(
+      "Connaître nos noms, décoloniser leur emploi, nous nommer nous-mêmes."
+    );
+    expect(signature).toHaveClass("ea-footer-signature");
+    expect(signature).not.toHaveAttribute("style");
+  });
+
+  // @req REQ-046
   it("offers both ways to talk back to the corpus", () => {
     render(<SiteFooter language="fr" />);
 

@@ -4,7 +4,12 @@ import { describe, expect, it, vi } from "vitest";
 
 import { NoResultsLeads } from "../NoResultsLeads";
 import type { SearchLead } from "@/types/afrik-frontend";
-import { getCountryRoute, getFamilyRoute, getPeopleRoute } from "@/lib/routing";
+import {
+  getCountryRoute,
+  getFamilyRoute,
+  getPatronymeRoute,
+  getPeopleRoute,
+} from "@/lib/routing";
 
 vi.mock("next/link", () => ({
   __esModule: true,
@@ -58,6 +63,29 @@ describe("NoResultsLeads", () => {
     expect(screen.getByRole("link", { name: /Mandé/ })).toHaveAttribute(
       "href",
       getFamilyRoute("fr", "FLG_MANDE")
+    );
+  });
+
+  // DEC-075: a family name offered as a spelling opens its own fiche.
+  // @req REQ-125
+  it("links a family-name lead to its name fiche", () => {
+    render(
+      <NoResultsLeads
+        leads={[
+          {
+            type: "patronyme",
+            id: "PAT_TCHICAYA",
+            name: "Tchicaya",
+            similarity: 0.5,
+          },
+        ]}
+        language="fr"
+      />
+    );
+
+    expect(screen.getByRole("link", { name: /Tchicaya/ })).toHaveAttribute(
+      "href",
+      getPatronymeRoute("fr", "PAT_TCHICAYA")
     );
   });
 

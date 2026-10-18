@@ -30,7 +30,7 @@
       "contemporaryUsage": "Le terme peuples atlantiques est utilise en linguistique et en ethnologie pour regrouper les communautes dont les langues appartiennent a la famille atlantique au sens large, recouvrant une diversite ethnique, culturelle et historique considerable.",
       "linguisticFamily": "FLG_ATLANTIQUE",
       "ethnoLinguisticGroup": "Groupe atlantique de la famille nigero-congolaise (Atlantic-Congo)",
-      "historicalRegion": "Cote atlantique ouest-africaine, du fleuve Senegal au Liberia, avec extensions saheliennes (Peuls)",
+      "historicalRegion": "Côte atlantique ouest-africaine, du fleuve Sénégal au Liberia, avec extensions sahéliennes (Peuls)",
       "currentCountries": [
         "SEN",
         "GMB",
@@ -187,7 +187,10 @@
         "tier": "referenced",
         "source_kind": "academic"
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Un regroupement par la langue, pas un peuple : chaque peuple atlantique porte son propre nom. L'histoire du nom Atlantique comme nom de langues est racontée avec la famille atlantique."
+    }
   },
   "nameHistory": {
     "summary": "Le nom Ouest-Atlantiques, ou peuples atlantiques, réunit des peuples de la côte ouest de l'Afrique, du Sénégal au Liberia, comme les Wolof, les Peuls, les Sérères, les Diola, les Temné ou les Kissi. Ce n'est pas le nom d'un peuple : aucune source que nous avons lue ne donne un nom que ces peuples se donneraient tous ensemble, et chacun porte le sien. C'est d'abord un nom de linguistes pour des langues, appliqué ensuite aux peuples qui les parlent ; des linguistes doutent même que ces langues forment un groupe. Nous présentons son histoire plus bas.",

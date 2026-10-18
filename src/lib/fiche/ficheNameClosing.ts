@@ -109,6 +109,42 @@ export function ficheSilences(
   return lines;
 }
 
+/** The silences the approved family-name boards derive from each fiche. */
+// @req REQ-198
+export function patronymeSilences(
+  history: NameHistory,
+  {
+    gapFieldPaths,
+    homonymCount,
+  }: { gapFieldPaths: readonly string[]; homonymCount: number },
+  language: Language = "fr"
+): string[] {
+  const copy = nameClosingCopy[language].fiche;
+  const lines = ficheSilences(history, "patronyme", language);
+  const firstName = history.names[0]?.nameText;
+  if (!firstName) return lines;
+
+  const knownGaps = gapFieldPaths
+    .filter((path) => !(path === "origin" && history.originExplained === false))
+    .map((path) => nameClosingCopy[language].fiche.gapWording[path])
+    .filter((wording): wording is string => Boolean(wording));
+  if (knownGaps.length > 0) {
+    lines.unshift(copy.documentedGaps(knownGaps));
+  }
+  if (history.originExplained === false) {
+    lines.push(copy.originUnexplained(firstName));
+  }
+
+  if (homonymCount === 0 && !gapFieldPaths.includes("homonyms")) {
+    lines.push(copy.noHomonyms(firstName));
+  }
+  if (!gapFieldPaths.includes("bearers")) {
+    lines.push(copy.noBearerCount(firstName));
+  }
+
+  return lines;
+}
+
 /**
  * One line for each name whose competing readings carry no date at all
  * (brief 5, boards country-*.dc.html): « Les trois explications du nom Côte

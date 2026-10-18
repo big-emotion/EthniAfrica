@@ -6,7 +6,7 @@
   },
   "id": "PAT_MUSONDA",
   "nameMain": "Musonda",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Musonda",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -62,7 +62,7 @@
   "gaps": [
     {
       "fieldPath": "nameSystem",
-      "reason": "la recherche web et bibliographique combinant « Musonda », « Bemba », « la Zambie », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la page Forebears propre au nom consultée directement, n’a pas établi que la catégorie provisoire portée par la fiche décrive Musonda lui-même ; elle reste une hypothèse de classement technique, sans être transformée en affirmation historique."
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom personnel bemba. Chez les Bemba, les enfants appartiennent au clan de leur mère, mais prennent le dernier nom de leur père. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que Musonda lui-même se transmet ainsi de parent à enfant. La fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "alliances",

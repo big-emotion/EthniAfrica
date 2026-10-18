@@ -325,6 +325,15 @@
     "names": [
       {
         "nameText": "Traoré",
+        "equivalents": [
+          "Sane",
+          "Mane",
+          "Ouédraogo",
+          "Dembélé",
+          "Diouf",
+          "Touré à Ségou",
+          "Diop en pays wolof"
+        ],
         "nameStatus": "current",
         "selfGiven": true,
         "languageOfOrigin": null,
@@ -487,6 +496,14 @@
                 "source_kind": "academic",
                 "page": "p. 21-28",
                 "notes": "Présence Africaine, 1960. Mise par écrit du récit du griot Djeli Mamadou Kouyaté de Djeliba Koro (Siguiri), lue sur l'exemplaire numérisé d'archive.org, dont la pagination est proche de l'édition imprimée."
+              },
+              {
+                "title": "Récit du griot Djeli Mamadou Kouyaté, de Djeliba Koro près de Siguiri",
+                "author": "Djeli Mamadou Kouyaté",
+                "year": null,
+                "url": null,
+                "tier": "unverified",
+                "source_kind": "oral_tradition"
               }
             ]
           },
@@ -508,6 +525,14 @@
                 "source_kind": "academic",
                 "page": "p. 32",
                 "notes": "Présence Africaine, 1960. Note de l'éditeur sur la séparation des Traoré et des Diabaté, lue sur l'exemplaire numérisé d'archive.org."
+              },
+              {
+                "title": "Récit du griot Djeli Mamadou Kouyaté, de Djeliba Koro près de Siguiri",
+                "author": "Djeli Mamadou Kouyaté",
+                "year": null,
+                "url": null,
+                "tier": "unverified",
+                "source_kind": "oral_tradition"
               }
             ]
           },
@@ -529,6 +554,14 @@
                 "source_kind": "academic",
                 "page": "p. 32",
                 "notes": "Présence Africaine, 1960. Note de l'éditeur sur la parenté à plaisanterie entre Kondé et Traoré, lue sur l'exemplaire numérisé d'archive.org."
+              },
+              {
+                "title": "Récit du griot Djeli Mamadou Kouyaté, de Djeliba Koro près de Siguiri",
+                "author": "Djeli Mamadou Kouyaté",
+                "year": null,
+                "url": null,
+                "tier": "unverified",
+                "source_kind": "oral_tradition"
               }
             ]
           },

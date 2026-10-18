@@ -71,16 +71,38 @@ describe("FichesBlock", () => {
     );
   });
 
-  // "Dans l’atlas" said where the entries were and not what to do with them;
-  // the heading now names the action the shelf offers.
   // @req REQ-180
-  it("names the shelf by what the reader can do with it", () => {
-    render(<FichesBlock language="fr" items={[]} />);
+  it("titles one fiche by what the block holds, without a subtitle", () => {
+    render(<FichesBlock language="fr" items={[patronymeCard("Abdi")]} />);
 
     expect(
-      screen.getByRole("heading", { name: "Découvrir" })
+      screen.getByRole("heading", { name: "La fiche trouvée" })
     ).toBeInTheDocument();
-    expect(screen.queryByText("Dans l’atlas")).not.toBeInTheDocument();
+  });
+
+  // @req REQ-180
+  it("uses the plural title when the block holds more than one fiche", () => {
+    render(
+      <FichesBlock
+        language="fr"
+        items={[patronymeCard("Abdi"), patronymeCard("Bello")]}
+      />
+    );
+
+    expect(
+      screen.getByRole("heading", { name: "Les fiches trouvées" })
+    ).toBeInTheDocument();
+  });
+
+  // @req REQ-180
+  it("does not add a figure-style subtitle below the factual title", () => {
+    render(<FichesBlock language="fr" items={[patronymeCard("Abdi")]} />);
+
+    expect(
+      screen.queryByText(
+        "Pour aller au fond : chaque fiche, avec toutes ses sources."
+      )
+    ).not.toBeInTheDocument();
   });
 
   // @req REQ-002
@@ -191,5 +213,25 @@ describe("FichesBlock", () => {
     );
     expect(screen.queryByRole("region")).toBeNull();
     expect(screen.queryByRole("heading")).toBeNull();
+  });
+
+  // @req REQ-180
+  it("keeps French punctuation and guillemets together in fiche cards", () => {
+    render(
+      <FichesBlock
+        items={[
+          patronymeCard(
+            "Nom : « Fulɓe ! »",
+            "Une forme ? Oui ; une autre : non !"
+          ),
+        ]}
+      />
+    );
+
+    const card = screen.getByRole("listitem").querySelector("a");
+    expect(card?.children[1].textContent).toBe("Nom : « Fulɓe ! »");
+    expect(card?.children[2].textContent).toBe(
+      "Une forme\u00a0? Oui\u00a0; une autre\u00a0: non\u00a0!"
+    );
   });
 });

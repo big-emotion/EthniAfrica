@@ -557,6 +557,28 @@ describe("French prose keeps its accents", () => {
     );
   });
 
+  // The Peul fiche's head printed « branche senegambienne » and « Bande
+  // sahelienne » (recette, 2026-10-18).
+  // @req REQ-178
+  it("flags « sénégambien » and « sahélien » printed without their accents", () => {
+    writeJson(
+      tmpDir,
+      FICHE,
+      people({
+        origins: {
+          ancientOrigins:
+            "Les traditions senegambiennes parlent d'un royaume soudano-sahelien et de pasteurs saheliens.",
+        },
+      })
+    );
+
+    const result = checkUnaccentedFrenchProse(tmpDir, {});
+
+    expect(result.errors.join("\n")).toMatch(
+      /PPL_TEST\.json: 3 French word.*« senegambiennes » \(sénégambien\).*« sahelien » \(sahélien\).*« saheliens » \(sahélien\)$/
+    );
+  });
+
   // @req REQ-178
   it("holds the backlog as a two-edge ratchet, fiche by fiche", () => {
     writeJson(

@@ -329,14 +329,31 @@ The exceptional states are explicit:
 
 - a published word with no fiche is answered by its record: the same blocks
   without `fiche-link`, under the filters, never the confession;
-- a typo with useful leads opens on the verdict and the choices and closes with
-  `further` only;
+- a typo with useful leads opens on the filters when there are two, the
+  verdict and the choices, the page's one accented action, each named by the
+  form that scored, a form that is not one name being neither scored nor
+  offered, with a line naming the fiche that records a form other than its
+  filed name, a fiche being named without the trailing bracket of its filed
+  name; only family-name leads are said to be written almost the same way;
+  under them a reader who writes the name this way can propose a source
+  through a quiet link; when the search also found fiches other than the
+  choices, they follow as other fiches found, under a caution that says only
+  that the search found them, never that they are linked to the query, each
+  with its own line, a fiche reached only by its sound being left out, and the
+  `fiches` filter lists them the same way, under a title that says only that
+  the search found them; it closes with `further` only and draws no shelf. A
+  query a fiche the search found writes in its text is not a typo: it keeps the
+  related-only page _(replaced 2026-10-18, brief 16, approved by the operator)_;
 - a genuinely unknown query opens on the verdict, which carries the invitation
   to correct, and closes with `owed` (`silences` and `conviction`), the next
   names, then `further`; it draws no shelf unless a piece matches the reader's
   word _(replaced 2026-10-17, brief 12, approved by delegation)_;
-- related results with no entity answering the name (and a family or country
-  browse) open on the verdict and list the fiches; they close without `owed`.
+- a related-only name search opens on the filters, then the verdict and any
+  appellations; the found fiches follow as primary content under the factual
+  title « La fiche trouvée » or « Les fiches trouvées », with no subtitle. It
+  has no « D’où vient ce nom » eyebrow and closes without `owed`. A family or
+  country browse keeps the « Résultats liés » eyebrow because it has no name
+  search verdict.
 
 The checked-in manifest (`docs/design/mockups/search-answer/manifest.json`)
 records, for each of the seven validated screens, the ordered block identities;

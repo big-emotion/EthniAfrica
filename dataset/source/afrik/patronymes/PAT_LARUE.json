@@ -6,7 +6,7 @@
   },
   "id": "PAT_LARUE",
   "nameMain": "Larue",
-  "nameSystem": "clan_name",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Larue",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "elective",
-  "designatedSocialUnit": "lineage",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],

@@ -19,6 +19,9 @@ export interface FicheNameStoryCopy {
   /** The fiche's link to the result page of its leading name (brief 10 §1). */
   storyLink: (name: string) => string;
   storyLinkHint: string;
+  /** Family-name fiche copy, as it appears on the approved brief 6 boards. */
+  familyNameStoryLink: (name: string) => string;
+  familyNameStoryHint: string;
 }
 
 // @req REQ-151
@@ -34,5 +37,8 @@ export const ficheNameStoryCopy: Record<Language, FicheNameStoryCopy> = {
     storyLink: (name) => `Suivre l'histoire du nom ${name}`,
     storyLinkHint:
       "La page du nom présente ce que disent les sources : qui l'a donné, à qui, quand et pourquoi, en remontant le temps.",
+    familyNameStoryLink: (name) => `Lire l’histoire du nom ${name}`,
+    familyNameStoryHint:
+      "La page du nom présente ce que disent les sources : qui l’a donné, à qui, quand et pourquoi, du plus récent au plus ancien.",
   },
 };

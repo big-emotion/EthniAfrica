@@ -83,7 +83,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 687 -> 666 on 2026-10-14: twenty-one people fiches of waves 14 to 19 folded into their keepers or withdrawn (fifteen folded, six withdrawn).
     // 666 -> 665 on 2026-10-14: the Nabt fiche, a duplicate of PPL_NABDAM, folded into it.
     // 665 -> 657 on 2026-10-18: the eight people fiches folded or withdrawn after wave 24 (Mucubal into PPL_MUCUVAL; Taal, Guwa, Mbogo, Mobe, Autres peuples bantous, Peuples forestiers du Sud et de l'Est, Africains d'origine récente withdrawn).
-    value: 657,
+    // 657 -> 659 the same day: PPL_MAKA and PPL_NJEM, two of the peoples the withdrawn forest-peoples label grouped, added with sources of their own.
+    value: 659,
     method: `nombre de fichiers ${PEOPLE_GLOB}`,
     countedOn: COUNTED_ON,
   },
@@ -117,7 +118,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 2740 -> 2730 on 2026-10-14: the Nabt fiche's seven exonyms left with it, and Gwa, Nao and Nyiha were removed from the exonyms of the Gwa, Mao and Nyika fiches (Gwa is the people's own name, Nao a different people, Nyiha the Tanzanian people); the Lamba fiche swapped Lamba for Lala-Lamba. 2730 -> 2729 the same day: Gbunde left the exonyms of PPL_GBANDI (Schwab 1947 lists the Gbunde apart from the Gbande).
     // 2729 -> 2702 on 2026-10-18: the twenty-seven exonyms of the eight people fiches folded or withdrawn after wave 24 left with them; PPL_MUCUVAL swapped Kuvale, now its sourced self-name, for Mucubal.
     // 2702 -> 2701 the same day: OvaKuvale left the exonyms of PPL_MUCUVAL, whose self-name field now reads Kuvale.
-    value: 2701,
+    // 2701 -> 2703 the same day: PPL_MUCUVAL is now headed Kuvale and PPL_WIYANA Winye, so their former
+    // headlines, Mucuval and Wiyana, moved to the exonyms, where a reader who searches them still finds the fiche.
+    value: 2703,
     method:
       "somme de content.appellations.exonyms.length sur les fiches de peuple",
     countedOn: COUNTED_ON,
@@ -181,8 +184,11 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 380 -> 370 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
     // 370 -> 368 on 2026-10-18: the Guwa and Mobe fiches, both contested, withdrawn after wave 24.
     value: 368,
+    // The breakdown in the method text recounted on 2026-10-18: contested
+    // (224) had not followed the folds since it was written; colonial-legacy
+    // happened to be right again.
     method:
-      "fiches dont classificationStatus vaut contested (224) ou colonial-legacy (156)",
+      "fiches dont classificationStatus vaut contested (212) ou colonial-legacy (156)",
     countedOn: COUNTED_ON,
   },
   "status-other": {
@@ -213,7 +219,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 290 -> 279 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
     // 279 -> 278 on 2026-10-14: the Nabt fiche, which declared no status, was folded.
     // 278 -> 275 on 2026-10-18: the Mucubal, Taal and Mbogo fiches, which declared no status, folded or withdrawn after wave 24.
-    value: 275,
+    // 275 -> 277 the same day: PPL_MAKA and PPL_NJEM added without a status, which the model leaves out until a fiche is reviewed.
+    value: 277,
     method: "fiches sans classificationStatus",
     countedOn: COUNTED_ON,
   },
@@ -319,7 +326,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 109 -> 107 on 2026-10-12: eleven duplicate people fiches of wave 10 folded into their keepers, and the « Swahili (Yémen) » fiche renamed PPL_MUWALLADEEN.
     // 107 -> 103 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
     // 103 -> 102 on 2026-10-18: the Taal fiche, which counted, withdrawn after wave 24.
-    value: 102,
+    // 102 -> 101 the same day: PPL_WIYANA's whyProblematic no longer says the Mossi
+    // neighbours imposed Gurunsi; it tells Jacob's hypothesis of a Moore nickname instead.
+    value: 101,
     method: "radical voisin dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -355,7 +364,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 54 -> 50 on 2026-10-12: eleven duplicate people fiches of wave 10 folded into their keepers, and the « Swahili (Yémen) » fiche renamed PPL_MUWALLADEEN.
     // 50 -> 49 the same day: the Khainai, Koyra, Yerima and Kirdi fiches folded or retired after wave 12.
     // 49 -> 50 on 2026-10-12: the Bakwé fiche now records Tuwè, a pejorative Krou name for them, in originOfExonyms.
-    value: 50,
+    // 50 -> 49 on 2026-10-18: PPL_WIYANA no longer calls Gurunsi a pejorative term of Djerma origin,
+    // which no source said; it tells Jacob's « gibier de battue » hypothesis without that label.
+    value: 49,
     method: `radicaux ${PEJORATIVE_STEMS.join(", ")} dans originOfExonyms + whyProblematic`,
     countedOn: "2026-10-09",
   },
@@ -487,7 +498,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 626 -> 624 on 2026-10-16: the Koroma and Bangura fiches folded into PAT_KOUROUMA and PAT_BANGOURA; both cited sources of their own.
     // 624 -> 635 on 2026-10-18: eleven Southern African family names of wave 25 (Baloyi, Gamedze, Ginindza, Hlophe, Letsie, Mabote, Mabuza, Macuacua, Magagula, Matsebula, Mondlane) now cite sources of their own (Junod, Van Warmelo, Ellenberger, the Swazi surnames dictionary); all eleven cited only the candidate queue before.
     // 635 -> 627 on 2026-10-18: the eight family-name fiches folded or withdrawn after wave 25 (Njie, Jallow, Jalloh and Aden into Ndiaye, Diallo and Adam; El Kenzi, Ngarlejy, Ngarta and Kigozi withdrawn); all eight cited sources of their own.
-    value: 627,
+    // 627 -> 631 the same day: PAT_IRAKOZE (the Rwandan statistics of 2025), PAT_EKUIKUI and PAT_KALANDULA (Dulley 2021) and PAT_MAVOUNGOU (the Journal officiel of Congo, 2024) now cite sources of their own; all four cited only the candidate queue before.
+    // 631 -> 632 on 2026-10-18: PAT_LADO now cites a source of its own (Seligman 1932: two Bari named Lado alone on p. 270, a chief « Laro Lado » on p. 268), on which it is filed as a personal name; it cited only the candidate queue before.
+    value: 632,
     method:
       "fiches dataset/source/afrik/patronymes/PAT_*.json portant un nameSystem et " +
       "au moins une source autre que la file d'attente des candidats — les fiches " +
@@ -507,7 +520,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 171 -> 173 on 2026-10-15: PAT_KOFI and PAT_KWAME, two non-hereditary day names, now cite sources of their own.
     // 173 -> 174 on 2026-10-15: PAT_KWABENA, a non-hereditary day name, added.
     // 174 -> 172 on 2026-10-18: the Aden fiche, folded into PAT_ADAM, and the Ngarlejy fiche, withdrawn, were both typed non-hereditary.
-    value: 172,
+    // 172 -> 173 the same day: PAT_IRAKOZE, typed non-hereditary, now cites a source of its own.
+    value: 173,
     method:
       "fiches de nom recherchées dont transmissionMode vaut non_hereditary, au " +
       "même périmètre que le compte ci-dessus",

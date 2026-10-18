@@ -60,6 +60,15 @@ once the previous one is approved and recorded, because they share `Main` and
 Briefs 13 to 15 come from the operator's mobile review of 2026-10-18 and its
 five decisions. They are drawn in that order, after brief 6, one at a time.
 
+| # | Brief | Surface | Boards |
+| --- | --- | --- | --- |
+| 16 | [`16-typo-with-related-fiches.md`](16-typo-with-related-fiches.md) | A misspelling, alone or with related fiches (« tchikaya », « konana », « jarra », DEC-075) | three new boards (`search-state-typo-430`, `-768`, `-1440`); `Main` (**approved 2026-10-18 by the operator**) |
+| 17 | [`17-search-chrome-accessibility.md`](17-search-chrome-accessibility.md) | Search page focus rings, « Aller plus loin » as a titled list, 320 px header and 200% zoom | `search-unknown` and `search-state-typo` at 430/768/1440; new `search-unknown-320` and `search-unknown-215`; `Main` (**approved 2026-10-18 by the operator**) |
+| 18 | [`18-related-only-search-results.md`](18-related-only-search-results.md) | Related-only search results and factual fiche titles | new `search-state-related` at 430/768/1440; `search-unknown`, `search-state-typo` and `Main` (**approved 2026-10-18 by the operator**) |
+
+Brief 16 draws the state that DEC-075 (pull request #1835) adds to the result
+page. It is not one of the passes above and was drawn beside them.
+
 Dossiers (`DOS_*`) are an editorial type, not a type of name. They carry the
 operator's thesis in full and get their own brief once the thesis wording is
 settled (see "The thesis slot").

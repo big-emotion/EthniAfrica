@@ -10,6 +10,8 @@ const fr = {
   // Brand charter §2.
   copyright: `${PRODUCT_NAME} — contenus sous licence CC BY-SA 4.0.`,
   about: "À propos",
+  signature:
+    "Connaître nos noms, décoloniser leur emploi, nous nommer nous-mêmes.",
   // Left the header when it became three intentions rather than ten
   // destinations: the public API is a developer's entry, not a reading
   // one, so it belongs beside « À propos » and not on an axis.
@@ -43,13 +45,14 @@ const fr = {
     participateHeading: "Participer",
     contribute: "Contribuer",
     reportError: "Signaler une erreur",
-    // The two pages that describe the project rather than the atlas.
+    // The pages that describe the project rather than the atlas.
     // No access mode lists them — an axis is a way into the atlas — so
     // the footer is where a reader now finds them. Doctrine is reached
     // from here at one remove, through the link on the À propos page
-    // itself, rather than as a fourth entry in this rubric.
+    // itself, rather than as another entry in this rubric.
     projectHeading: "Le projet",
     about: "À propos",
+    approach: "Notre démarche",
     sources: "Sources",
     glossary: "Glossaire",
     contact: "Contact",

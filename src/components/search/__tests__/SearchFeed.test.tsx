@@ -210,6 +210,31 @@ describe("SearchFeed", () => {
     expect(action).not.toHaveClass("hover:text-afh-text");
   });
 
+  // The accent tint stays light at night while the page's body ink turns
+  // light too (1.12:1 measured on the board). The accent fill's own ink
+  // holds in both themes, as on OwedBlock.
+  // @req REQ-180
+  it("keeps the unknown name's button legible by night: the accent fill's ink on its tint", () => {
+    render(
+      <SearchFeed
+        query="voundou"
+        language="fr"
+        state="unknown"
+        results={[]}
+        subjects={[]}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+
+    const action = screen.getByRole("button", { name: "Proposer une source" });
+    expect(action).toHaveClass(
+      "bg-[color:var(--accent-tint)]",
+      "text-[color:var(--accent-foreground)]"
+    );
+    expect(action).not.toHaveClass("text-afh-text");
+  });
+
   // « pigmée » does not confess: its verdict answers, so it carries no button,
   // and its closing card stays the page's one invitation. The empty shelf goes
   // with the state, as for any unknown name.
@@ -516,7 +541,33 @@ describe("SearchFeed", () => {
     expect(
       screen.queryByText(recentCompanions.shorts.items[0].name)
     ).toBeNull();
+    expect(screen.queryByText("D’où vient ce nom")).toBeNull();
   });
+
+  // @req REQ-180
+  it.each([
+    ["unknown", "voundou", []],
+    ["typo", "tchikaya", [namedResult()]],
+    ["widened", "sahel", [namedResult()]],
+  ] as const)(
+    "omits the verdict eyebrow for unresolved %s searches",
+    (state, query, results) => {
+      render(
+        <SearchFeed
+          query={query}
+          language="fr"
+          state={state}
+          results={results}
+          subjects={[]}
+          leads={[]}
+          companions={emptyCompanions}
+        />
+      );
+
+      expect(screen.queryByTestId("verdict-eyebrow")).toBeNull();
+      expect(screen.queryByText("D’où vient ce nom")).toBeNull();
+    }
+  );
 
   // @req REQ-178
   it("names the family being browsed, rather than confessing an unmatched name search", () => {
@@ -542,6 +593,9 @@ describe("SearchFeed", () => {
     );
 
     expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Krou");
+    expect(screen.getByTestId("verdict-eyebrow")).toHaveTextContent(
+      "Résultats liés"
+    );
     expect(
       screen.getByText("Les peuples de la famille Krou.")
     ).toBeInTheDocument();
@@ -1160,10 +1214,8 @@ describe("SearchFeed « Fiches » lens", () => {
     );
   });
 
-  // The « Tout » shelf of a page with no answer is outside brief 12: it keeps
-  // its heading, its subtitle and its generic line.
   // @req REQ-180
-  it("leaves the « Tout » shelf of a related-only page as it was", () => {
+  it("titles the related-only fiche block by its count", () => {
     render(
       <SearchFeed
         query="wassoulou"
@@ -1177,8 +1229,51 @@ describe("SearchFeed « Fiches » lens", () => {
     );
 
     expect(
-      screen.getByRole("heading", { name: "Découvrir" })
+      screen.getByRole("heading", { name: "La fiche trouvée" })
     ).toBeInTheDocument();
-    expect(screen.getByText("Fiche EthniAfrica")).toBeInTheDocument();
+  });
+
+  // @req REQ-180
+  it("uses the plural title for multiple related-only fiches", () => {
+    render(
+      <SearchFeed
+        query="wassoulou"
+        language="fr"
+        state="widened"
+        results={[
+          ficheWithLine("patronyme", "PAT_DIAKITE", "Diakité", "x"),
+          ficheWithLine("patronyme", "PAT_COULIBALY", "Coulibaly", "y"),
+        ]}
+        subjects={[]}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+
+    expect(
+      screen.getByRole("heading", { name: "Les fiches trouvées" })
+    ).toBeInTheDocument();
+  });
+
+  // @req REQ-180
+  it("does not render figure-style fiche labels on a related-only search page", () => {
+    render(
+      <SearchFeed
+        query="wassoulou"
+        language="fr"
+        state="widened"
+        results={[ficheWithLine("patronyme", "PAT_DIAKITE", "Diakité", "x")]}
+        subjects={[]}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+
+    expect(screen.queryByText("Découvrir")).toBeNull();
+    expect(
+      screen.queryByText(
+        "Pour aller au fond : chaque fiche, avec toutes ses sources."
+      )
+    ).toBeNull();
   });
 });

@@ -142,6 +142,7 @@ export async function loadSearchReading(
       companions,
       subjects,
       termSuggestions: reading.nameSuggestions,
+      relation,
     }),
   };
 }

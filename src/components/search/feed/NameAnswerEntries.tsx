@@ -7,6 +7,7 @@ import { ficheHrefFor } from "@/components/search/SearchResultCard";
 import { getSearchEntityLabel } from "@/components/search/searchEntityAccent";
 import { ActionLink } from "@/components/ui/ActionLink";
 import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
+import { normalizeFrenchSpacing } from "@/lib/prose/frenchSpacing";
 import { searchAnswerCopy } from "@/lib/i18n/copy/searchAnswer";
 import type { AnswerKind } from "@/lib/search/answer";
 import { reviewedAnswerSources } from "@/lib/search/answerPresentation";
@@ -90,9 +91,11 @@ export function NameAnswerEntries({
             ) : null}
             <div className="mt-afh-xs max-w-[65ch] space-y-afh-md text-afh-body leading-[var(--afh-leading-body)]">
               {answer.paragraphs.map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
+                <p key={paragraph}>{normalizeFrenchSpacing(paragraph)}</p>
               ))}
-              {answer.uncertainty ? <p>{answer.uncertainty}</p> : null}
+              {answer.uncertainty ? (
+                <p>{normalizeFrenchSpacing(answer.uncertainty)}</p>
+              ) : null}
             </div>
             <div className="mt-afh-md flex flex-wrap items-center gap-x-afh-2xl">
               {subjects.map((subject) => {
@@ -191,11 +194,11 @@ export function ReviewedOrigin({
       <div className="flex flex-col gap-afh-lg text-afh-body leading-[var(--afh-leading-body)] text-afh-text">
         {answer.paragraphs.map((paragraph) => (
           <p key={paragraph} className="m-0">
-            {paragraph}
+            {normalizeFrenchSpacing(paragraph)}
           </p>
         ))}
         {answer.uncertainty ? (
-          <p className="m-0">{answer.uncertainty}</p>
+          <p className="m-0">{normalizeFrenchSpacing(answer.uncertainty)}</p>
         ) : null}
       </div>
     </section>

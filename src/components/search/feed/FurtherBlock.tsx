@@ -20,15 +20,15 @@ export function FurtherBlock({ links, language = "fr" }: FurtherBlockProps) {
   if (links.length === 0) return null;
   return (
     <SearchFeedBlock id="further" zone="closing">
-      <p className="text-afh-eyebrow font-semibold uppercase leading-[var(--afh-leading-eyebrow)] tracking-[0.14em] text-afh-text-soft">
+      <h2 className="text-afh-eyebrow font-semibold uppercase leading-[var(--afh-leading-eyebrow)] tracking-[0.14em] text-afh-text-soft">
         {nameAnswerCopy[language].further}
-      </p>
-      <ul className="mt-afh-lg flex list-none flex-wrap gap-afh-md">
+      </h2>
+      <ul className="search-feed-pill-group mt-afh-lg flex list-none flex-wrap gap-afh-md">
         {links.map((item) => (
           <li key={item.href}>
             <Link
               href={item.href}
-              className={`inline-flex min-h-11 items-center rounded-afh-full border border-afh-border bg-afh-surface px-afh-2xl text-afh-caption font-semibold text-afh-text no-underline ${CHARTER_FOCUS_RING}`}
+              className={`inline-flex min-h-11 items-center rounded-afh-full border border-afh-border bg-afh-surface px-afh-2xl text-[length:var(--search-feed-text-pill)] font-semibold text-afh-text no-underline ${CHARTER_FOCUS_RING}`}
             >
               {item.label}
             </Link>

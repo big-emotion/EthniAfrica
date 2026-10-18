@@ -5,18 +5,9 @@
     "directives": "Fiche approfondie selon docs/runbooks/anthroponym-fiche-research.md. Les analyses de forme ne doivent pas être transformées en généalogie de lignée sans archive dédiée."
   },
   "id": "PAT_BARBE",
-  "nameMain": "Barbé",
-  "nameSystem": "clan_name",
+  "nameMain": "Barbe",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
-    {
-      "spelling": "Barbé",
-      "attestations": [
-        {
-          "countryId": "SYC",
-          "sourceRefs": ["afrik-candidate-queue"]
-        }
-      ]
-    },
     {
       "spelling": "Barbe",
       "attestations": [
@@ -28,7 +19,7 @@
     }
   ],
   "transmissionMode": "elective",
-  "designatedSocialUnit": "lineage",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -87,11 +78,11 @@
   "gaps": [
     {
       "fieldPath": "alliances",
-      "reason": "les résultats exacts « Barbé », le catalogue des Seychelles National Archives, le Family Tree Project et les recherches patrimoniales décrites par O'Gorman, complétés par les termes « alliance », « cousinage » et « joking relationship », n'ont fait apparaître aucune paire nommée et sourcée reliant Barbé à un autre nom documenté ici."
+      "reason": "les résultats exacts « Barbé », le catalogue des Seychelles National Archives, le Family Tree Project et les recherches patrimoniales décrites par O'Gorman, complétés par les termes « alliance », « cousinage » et « joking relationship », n'ont fait apparaître aucune paire nommée et sourcée reliant Barbe à un autre nom documenté ici."
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "les résultats exacts « Barbé », le catalogue des Seychelles National Archives, le Family Tree Project et les recherches patrimoniales décrites par O'Gorman, complétés par « caste », « statut héréditaire », « métier » et « social function », n'ont établi aucune fonction sociale héréditaire propre aux porteurs de Barbé. Une étymologie professionnelle éventuelle n'est pas assimilée à un statut contemporain."
+      "reason": "les résultats exacts « Barbé », le catalogue des Seychelles National Archives, le Family Tree Project et les recherches patrimoniales décrites par O'Gorman, complétés par « caste », « statut héréditaire », « métier » et « social function », n'ont établi aucune fonction sociale héréditaire propre aux porteurs de Barbe. Une étymologie professionnelle éventuelle n'est pas assimilée à un statut contemporain."
     },
     {
       "fieldPath": "bearers",

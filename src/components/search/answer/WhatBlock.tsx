@@ -8,6 +8,7 @@ import { InlineMarkup } from "@/components/search/feed/InlineMarkup";
 import { searchAnswerCopy } from "@/lib/i18n/copy/searchAnswer";
 import type { SearchAnswer } from "@/lib/search/answer";
 import { formatMillionsInWords } from "@/lib/search/answerFormat";
+import { normalizeFrenchSpacing } from "@/lib/prose/frenchSpacing";
 import { cn } from "@/lib/utils";
 import type { Language } from "@/types/shared";
 
@@ -87,6 +88,7 @@ export function WhatBlock({
       ? copy.eyebrowMany(answer.kind, subjectCount)
       : copy.eyebrow[answer.kind];
   const sentence = lead ?? answer.what.lead ?? fallbackLead(answer, language);
+  const corpusLead = lead === undefined && answer.what.lead !== undefined;
   const Heading = headingLevel;
 
   return (
@@ -118,7 +120,9 @@ export function WhatBlock({
       {children}
       {sentence ? (
         <p className="text-afh-lead leading-[var(--afh-leading-lead)] text-afh-text">
-          <InlineMarkup text={sentence} />
+          <InlineMarkup
+            text={corpusLead ? normalizeFrenchSpacing(sentence) : sentence}
+          />
         </p>
       ) : null}
     </section>

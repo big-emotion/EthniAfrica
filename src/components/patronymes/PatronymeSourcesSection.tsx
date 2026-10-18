@@ -1,6 +1,8 @@
 import type { PublicPatronyme } from "@/api/v2/schemas/patronymes";
+import { FicheTile } from "@/components/fiche/FicheTile";
 import { FicheSection } from "@/components/fiche/FicheSection";
 import { FieldProvenanceMarker } from "@/components/fiche/FieldProvenanceMarker";
+import { ficheCopy } from "@/lib/i18n/copy/fiche";
 import { PatronymeSourceCitation } from "@/components/patronymes/PatronymeSourceCitation";
 import { readGaps, readPatronymeSources } from "@/lib/patronymes/content";
 import { resolveChapter } from "@/lib/fieldProvenance";
@@ -38,22 +40,31 @@ export function PatronymeSourcesSection({
   return (
     <FicheSection title={t.sourcesTitle} as="footer" id="sources">
       {sources.length > 0 ? (
-        <ul className="afh-sources">
-          {sources.map((source) => (
-            <li key={source.title} className="afh-source-row">
-              {/* The shared citation carries a title, a URL and a type, and
-                  deliberately not the corpus's per-source `notes` — those are a
-                  patronyme-fiche field, not part of a citation. So the note
-                  stays here, inside the row's own cell. */}
-              <span>
-                <PatronymeSourceCitation source={source} />
-                {source.notes ? (
-                  <span className="afh-parchment-note"> {source.notes}</span>
-                ) : null}
-              </span>
-            </li>
-          ))}
-        </ul>
+        <FicheTile
+          title={ficheCopy[language].sourcesList}
+          closedFact={sources
+            .slice(0, 3)
+            .map((source) => source.title)
+            .join(" · ")}
+          language={language}
+        >
+          <ul className="afh-sources">
+            {sources.map((source) => (
+              <li key={source.title} className="afh-source-row">
+                {/* The shared citation carries a title, a URL and a type, and
+                    deliberately not the corpus's per-source `notes` — those are a
+                    patronyme-fiche field, not part of a citation. So the note
+                    stays here, inside the row's own cell. */}
+                <span>
+                  <PatronymeSourceCitation source={source} />
+                  {source.notes ? (
+                    <span className="afh-parchment-note"> {source.notes}</span>
+                  ) : null}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </FicheTile>
       ) : (
         <FieldProvenanceMarker
           state={chapter.state}

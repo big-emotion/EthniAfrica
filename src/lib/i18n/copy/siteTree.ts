@@ -84,6 +84,7 @@ const fr = {
     title: "Le site",
     blurb: "Qui publie, sous quelles règles, et comment lire les données.",
     about: "À propos",
+    approach: "Notre démarche",
     glossary: [
       "Glossaire",
       "Les mots avec lesquels nous nommons, définis une fois.",

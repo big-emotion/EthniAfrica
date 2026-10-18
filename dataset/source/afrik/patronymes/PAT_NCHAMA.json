@@ -6,7 +6,7 @@
   },
   "id": "PAT_NCHAMA",
   "nameMain": "Nchama",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Nchama",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -70,7 +70,7 @@
   "gaps": [
     {
       "fieldPath": "nameSystem",
-      "reason": "la recherche web et bibliographique combinant « Nchama », « Fang », « la Guinée équatoriale », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la source dédiée « La cultura para el reconocimiento de la identidad: caso de la cultura fang de Guinea Ecuatorial » et la page Forebears propre au nom, consultées directement, n’a pas établi que la catégorie provisoire portée par la fiche décrive Nchama lui-même ; elle reste une hypothèse de classement technique, sans être transformée en affirmation historique."
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom de femme fang. Chez les Fang, chacun reçoit un nom à lui, suivi de celui de son père, et Günter Tessmann écrit en 1913 que les Fang n'ont pas de nom de famille au sens européen. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant comme un nom de famille. La fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "alliances",
@@ -177,7 +177,7 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 285",
-                "notes": "Berlin, Ernst Wasmuth, 1913 ; exemplaire numérisé d'Internet Archive, lu le 18 octobre 2026. Page 285 : « Dem eigenen, vom Vater gegebenen Namen wird der des Vaters selbst angefügt » (au nom propre donné par le père s'ajoute celui du père lui-même) ; l'exemple de l'auteur est Boka-Essun, Boka fils d'Essun."
+                "notes": "Berlin, Ernst Wasmuth, 1913 ; exemplaire numérisé d'Internet Archive, lu le 18 octobre 2026. Page 285 : « Dem eigenen, vom Vater gegebenen Namen wird der des Vaters selbst angefügt » (au nom propre donné par le père s'ajoute celui du père lui-même) ; l'exemple de l'auteur est Boka-Essun, Boka fils d'Essun. Même page : « Familiennamen in unserem Sinne kennen die Pangwe nicht » (les Pangwe ne connaissent pas de noms de famille au sens où nous l'entendons)."
               }
             ]
           }

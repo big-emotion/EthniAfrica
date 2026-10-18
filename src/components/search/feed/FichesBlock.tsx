@@ -5,6 +5,7 @@ import { SearchFeedSectionHeading } from "@/components/search/feed/SearchFeedSec
 import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
 import type { FeedMovementZone } from "@/components/search/feed/feedBlockTypes";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
+import { normalizeFrenchSpacing } from "@/lib/prose/frenchSpacing";
 import { cn } from "@/lib/utils";
 import type { Language } from "@/types/shared";
 
@@ -45,6 +46,16 @@ export interface FichesBlockProps {
    * relation browse, where no name was searched.
    */
   lens?: "grouped" | "ungrouped";
+  /**
+   * The spelling a misspelling's search was for, when these are the other
+   * fiches it found, none bearing that spelling (brief 16): titled as other
+   * fiches found, under a caution that we have not established they answer
+   * that spelling, each card with its own line, as the « Fiches » lens draws
+   * them. It wins over `lens`: under the « Fiches » filter too, nothing ties
+   * these fiches to the spelling, so they are never grouped « Autour de ce
+   * nom ».
+   */
+  foundFor?: string;
 }
 
 // @req REQ-180
@@ -56,8 +67,27 @@ export function FichesBlock({
   zone = "primary",
   language = "fr",
   lens,
+  foundFor,
 }: FichesBlockProps) {
   const copy = searchFeedCopy[language];
+
+  if (foundFor !== undefined) {
+    const group = (
+      <FicheGroup
+        id="fiches-found"
+        title={copy.answer.fichesFound.title(items.length)}
+        note={copy.answer.fichesFound.note(items.length, foundFor)}
+        items={items}
+        reviewed={reviewed}
+      />
+    );
+    // Under the lens title, the group keeps the gap of the lens groups below.
+    return (
+      <SearchFeedBlock id="fiches" zone={zone}>
+        {lens ? <div className="mt-afh-md">{group}</div> : group}
+      </SearchFeedBlock>
+    );
+  }
 
   if (lens) {
     const onName = items.filter((item) => item.onName);
@@ -94,8 +124,8 @@ export function FichesBlock({
   return (
     <SearchFeedBlock id="fiches" zone={zone}>
       <SearchFeedSectionHeading
-        title={title ?? copy.shelves.fiches}
-        subtitle={subtitle ?? copy.labels.fichesSubtitle}
+        title={title ?? copy.shelves.fichesFoundTitle(items.length)}
+        subtitle={subtitle}
       />
       <FicheGrid items={items} reviewed={reviewed} />
     </SearchFeedBlock>
@@ -187,7 +217,7 @@ function FicheGrid({
             </span>
             {item.meta ? (
               <span className="text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft">
-                {item.meta}
+                {normalizeFrenchSpacing(item.meta)}
               </span>
             ) : null}
           </>

@@ -37,13 +37,22 @@ describe("the Poursuivre block is composed by every fiche route", () => {
   for (const route of FICHE_ROUTES) {
     describe(route, () => {
       // @req REQ-091
-      it("mounts the block its shell cannot", () => {
-        expect(sourceOf(route)).toContain("<FicheOnward");
+      it("mounts the onward block its shell cannot", () => {
+        const source = sourceOf(route);
+        if (route.includes("/noms/")) {
+          expect(source).toContain("<PatronymeFicheView");
+          expect(source).toContain("nextSteps={nextSteps}");
+        } else {
+          expect(source).toContain("<FicheOnward");
+        }
       });
 
       // @req REQ-091
       it("hands it to the parchment rather than to the shell", () => {
-        expect(sourceOf(route)).toMatch(/onward=\{/);
+        const source = sourceOf(route);
+        expect(source).toMatch(
+          route.includes("/noms/") ? /nextSteps=\{/ : /onward=\{/
+        );
       });
     });
   }
