@@ -476,7 +476,7 @@
           "Kaka",
           "Koonzime (termes utilisés par les Européens)"
         ],
-        "peopleId": "PPL_PEUPLES_FORESTIERS_DU_SUD_ET_DE_L_EST",
+        "peopleId": null,
         "mainRegion": "Sud et Est du Cameroun (forêts équatoriales)",
         "languages": ["Langues bantoues (plusieurs langues)", "français"],
         "languageFamily": "FLG_BANTU",

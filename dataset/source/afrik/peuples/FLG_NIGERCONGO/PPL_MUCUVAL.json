@@ -3,14 +3,14 @@
   "nameMain": "Mucuval",
   "languageFamilyId": "FLG_NIGERCONGO",
   "currentCountries": ["AGO"],
-  "classificationStatus": "contested",
+  "classificationStatus": "colonial-legacy",
   "content": {
     "appellations": {
       "mainName": "Mucuval",
       "selfAppellation": "OvaKuvale",
-      "exonyms": ["Kuvale", "OvaKuvale", "Cubal", "Mukuval"],
+      "exonyms": ["OvaKuvale", "Cubal", "Mukuval", "Mucubal"],
       "originOfExonyms": "Le terme Mucuval est la romanisation portugaise du nom bantou OvaKuvale. La forme Kuvale est privilegiee dans les etudes linguistiques (langue Kuvale, ISO olu). Le terme Cubal est aussi employe pour designer le meme groupe dans certaines sources ethnographiques anglophones. OvaKuvale est la forme autochtone en Otjiherero.",
-      "whyProblematic": "Confusion possible avec les Mucubal (OvaMucubal), groupe Herero distinct bien qu'apparente. Le nom Cubal est partage entre les deux groupes dans certaines sources, ce qui brouille les classifications. Le terme OvaKuvale s'est impose recemment dans la litterature specialisee pour les distinguer.",
+      "whyProblematic": "Le nom Mucubal vient des documents coloniaux portugais. Selon l'historien Rafael Coca de Campos, les populations ainsi nommées se désignaient elles-mêmes comme Kuvale, et ce nom portait, chez beaucoup d'agents coloniaux, des accusations qui ont servi à fonder des politiques particulières.",
       "contemporaryUsage": "OvaKuvale est le terme academique et autochtone prefere. Mucuval reste en usage dans les classifications administratives angolaises. Kuvale est utilise en linguistique (langue Kuvale, code ISO olu).",
       "linguisticFamily": "FLG_NIGERCONGO",
       "ethnoLinguisticGroup": "Herero (sous-groupe bantou)",
@@ -113,17 +113,16 @@
     ]
   },
   "nameHistory": {
-    "summary": "Le nom Kuvale désigne un peuple d'éleveurs du sud-ouest de l'Angola, dans le désert du Namibe, dont la langue est proche de celle des Herero. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. Les formes Mucuval, OvaKuvale et Cubal, que la fiche relève aussi, n'ont pas été retrouvées dans une source que nous avons ouverte : nous n'en disons donc rien ici. On ne sait pas avec certitude d'où vient le nom Kuvale.",
-    "selfNameUnknown": true,
+    "summary": "Le nom Kuvale est celui que se donne un peuple d'éleveurs du sud-ouest de l'Angola, dans le désert du Namibe, dont la langue est proche de celle des Herero. Les documents coloniaux portugais l'appelaient Mucubal, un nom encore employé en Angola. Les formes Mucuval, OvaKuvale et Cubal, que la fiche relève aussi, n'ont pas été retrouvées dans une source que nous avons ouverte : nous n'en disons donc rien ici. On ne sait pas avec certitude d'où vient le nom Kuvale.",
     "names": [
       {
         "nameText": "Kuvale",
         "nameStatus": "current",
-        "selfGiven": false,
+        "selfGiven": true,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le nom que les chercheurs emploient pour ce peuple d'éleveurs et pour sa langue.",
-        "periodLabel": "En usage aujourd'hui",
+        "shortLine": "Le nom que se donne ce peuple d'éleveurs du désert du Namibe, et celui de sa langue.",
+        "periodLabel": "Écrit dès 1960 ; en usage aujourd'hui",
         "accounts": [
           {
             "period": {
@@ -164,6 +163,124 @@
                 "tier": "official",
                 "source_kind": "linguistic_reference",
                 "notes": "Page du catalogue Glottolog, lue le 12 octobre 2026 à partir du code ISO olu. Elle ne donne que le nom Kuvale."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Rapporté en 2021"
+            },
+            "statement": "Le nom Kuvale est celui que se donnaient les populations que les documents coloniaux portugais appelaient mucubais, selon l'historien Rafael Coca de Campos, qui s'appuie sur l'anthropologue Ruy Duarte de Carvalho et sur le père Carlos Estermann.",
+            "sources": [
+              {
+                "title": "Kakombola : o genocídio dos Mucubais na Angola colonial, 1930-1943",
+                "author": "Rafael Coca de Campos",
+                "year": 2021,
+                "url": "https://archive.org/details/Kakombola",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 38, note 48",
+                "notes": "Ponta Grossa, Atena Editora, 2021, ISBN 978-65-5983-766-3, en libre accès ; lu le 18 octobre 2026 dans l'exemplaire d'Internet Archive, page vérifiée sur l'image (p. 38 imprimée). Note 48 : « De acordo com Ruy Duarte de Carvalho, bem como com fontes contemporâneas, como o padre Espiritiano Carlos Estermann, as populações designadas mucubais se referiam a si mesmas como kuvale » ; l'auteur ajoute que le terme mucubal portait, chez beaucoup d'agents coloniaux, « uma série de suposições e imputações fundamentais para a elaboração de políticas específicas, vide a chamada Questão Mucubal »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2009,
+              "to": 2009,
+              "label": "2009"
+            },
+            "era": "modern",
+            "statement": "Le nom Kuvale figure dans la classification des langues bantoues de Jouni Filip Maho, sous le code R101.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "New Updated Guthrie List Online (NUGL Online), version du 4 juin 2009",
+                "author": "Jouni Filip Maho",
+                "year": 2009,
+                "url": "https://web.archive.org/web/20180203191542/http://goto.glocalnet.net/mahopapers/nuglonline.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 86",
+                "notes": "Liste de classification des langues bantoues, lue le 18 octobre 2026 dans la copie du 3 février 2018 conservée par la Wayback Machine. Page 86 : « R101 Kuvale », première entrée de la zone R10."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "1960"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kuvale apparaît chez le père Carlos Estermann, qui range les Kuvale parmi les peuples du groupe herero en Angola, avec les Himba et les Hakavona notamment. Il écrit Kuvale dans le texte français et Cuvale dans le texte portugais du même album. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Kuvale",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Álbum de penteados do sudoeste de Angola",
+                "author": "Carlos Estermann",
+                "year": 1960,
+                "url": "https://archive.org/details/dli.ernet.535233",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 8, 24",
+                "notes": "Lisbonne, 1960 ; préface datée de Sá da Bandeira, juin 1959. Lu dans la numérisation d'Internet Archive le 18 octobre 2026, pages vérifiées sur l'image. Texte portugais, p. 8 : « O grupo dos Hereros está representado em Angola pelas seguintes etnias: Dimba, Chimba, Cuvale, Cuanhoca, Chavícua, Hacavona e Guendelengo » ; texte français, p. 24 : « Le groupe héréro est représenté en Angola par les Ndimba, Himba, Kwanyoka, Tyavikwa, Hakavona, Kuvale et Ngendelengo »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mucubal",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les documents coloniaux portugais donnent à ce peuple, encore employé en Angola.",
+        "periodLabel": "Époque coloniale ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Rapporté en 2021"
+            },
+            "statement": "Le nom Mucubal est celui que les documents coloniaux portugais donnent à ce peuple. Pour l'historien Rafael Coca de Campos, ce nom portait, chez beaucoup d'agents coloniaux, des suppositions et des accusations qui ont servi à fonder des politiques particulières, ce qu'on appelait la « question mucubal ».",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Kakombola : o genocídio dos Mucubais na Angola colonial, 1930-1943",
+                "author": "Rafael Coca de Campos",
+                "year": 2021,
+                "url": "https://archive.org/details/Kakombola",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 38, note 48",
+                "notes": "Ponta Grossa, Atena Editora, 2021, ISBN 978-65-5983-766-3, en libre accès ; lu le 18 octobre 2026 dans l'exemplaire d'Internet Archive, page vérifiée sur l'image (p. 38 imprimée). Note 48 : « De acordo com Ruy Duarte de Carvalho, bem como com fontes contemporâneas, como o padre Espiritiano Carlos Estermann, as populações designadas mucubais se referiam a si mesmas como kuvale » ; l'auteur ajoute que le terme mucubal portait, chez beaucoup d'agents coloniaux, « uma série de suposições e imputações fundamentais para a elaboração de políticas específicas, vide a chamada Questão Mucubal »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Mucubal reste en usage aujourd'hui : en 2022, une dépêche de l'agence Lusa compte les Mucubais parmi les habitants de la municipalité de Virei, dans la province du Namibe, et les décrit comme des éleveurs qui se déplacent avec leurs bœufs.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Seca no sul do país leva pastores cada vez mais longe em busca de pasto",
+                "author": "Lusa, repris par Ver Angola",
+                "year": 2022,
+                "url": "https://www.verangola.net/va/pt/112022/Ambiente/33520/Seca-no-sul-do-pa%C3%ADs-leva-pastores-cada-vez-mais-longe-em-busca-de-pasto.htm",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Dépêche de l'agence Lusa de novembre 2022, lue le 18 octobre 2026 sur le site Ver Angola : « Ali vivem quase 43 mil pessoas, entre Mucubais, Cuisses, Muhakaona e Muílas » ; « Criadores de gado transumantes, os Mucubais têm nos bois a sua identidade »."
               }
             ]
           }

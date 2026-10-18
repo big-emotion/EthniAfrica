@@ -1041,5 +1041,61 @@
     "successorId": "PPL_NABDAM",
     "reason": "Same people: the two fiches carry the same exonym lists, the same Nangodi sources (the Mamprusi Facebook post and Akolgo's article) and the same ISO position (no code; a request was rejected in January 2017). Nabdam is the people and the district, Nabt the name of the language. The keeper holds the name history and is now filed with the Gur, as the retired fiche was, where its own text places it. Not carried: the Burkina Faso presence and the 100,000 estimate, which rest on a district profile whose tier is needs_review. The headline stays Nabdam, the name of the district and of the people in the history's sources.",
     "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_MUCUBAL",
+    "successorId": "PPL_MUCUVAL",
+    "reason": "Same people: Mucubal (plural Mucubais) is the name Portuguese colonial documents gave to the Kuvale, whom PPL_MUCUVAL tells. Coca de Campos (Kakombola, 2021, p. 38, note 48, reopened) writes that the populations called mucubais called themselves kuvale, after Ruy Duarte de Carvalho and Carlos Estermann. Folded in: Mucubal as a name given from outside, on that note and on a Lusa dispatch of 2022 (« Mucubais ») for its use today, and Mucubal among the keeper's exonyms. Added to the keeper from sources reopened for this fold: Kuvale as the people's own name, which lifts selfNameUnknown; its oldest written trace in Estermann's Álbum de penteados do sudoeste de Angola (1960, p. 8 « Cuvale », p. 24 « Kuvale »); Maho's code R101 (NUGL Online 2009, p. 86). The keeper's note that the Mucubal were a distinct group is rewritten from the same note. Not carried: the retired fiche's other spellings (Mucubai, Mucabale, Mugubale, Cubal, Mukubal), its self-name OvaMucubal, its greetings and its population of 70,000, which rested on travel and tour sites. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-18"
+  },
+  {
+    "decision": "withdrawn",
+    "retiredId": "PPL_TAAL",
+    "successorId": null,
+    "reason": "No source attests a Taal or Talomsi people. The fiche's code tql is Lehali, a language of Vanuatu (ISO 639-3 registry, reopened), Glottolog has no Taal or Talomsi languoid in Burkina Faso, and the fiche rested on Ethnologue's page for that code, a general page on Gur languages, 101lasttribes and a Britannica entry on the Grusi. Withdrawn with no successor; if a people of the Sanguié was meant, it needs its own fiche from a source. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-18"
+  },
+  {
+    "decision": "withdrawn",
+    "retiredId": "PPL_GUWA",
+    "successorId": null,
+    "reason": "No source opened attests the name Guwa. Glottolog (gwaa1239) treats Gwa (gwb) as a dialect of Gyem, East Kainji, not a Jarawan language, finds no convincing evidence of a Gwa language separate from Lame, Gyem and Shau, and reports that the Gwa village has shifted to Hausa. The fiche's Jarawan classification, Saminaka Gwa, hunting and palm oil rested on 101lasttribes alone. The corpus has no Gyem or Lame fiche to fold it into; PPL_GWA is the Gwa, or M'bato, of Côte d'Ivoire, a different people. Withdrawn with no successor. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-18"
+  },
+  {
+    "decision": "withdrawn",
+    "retiredId": "PPL_MBOGO",
+    "successorId": null,
+    "reason": "No source attests a people called Mbogo in Borno: a Glottolog name search returns nothing, the fiche has no language code (mbo is the Mbo of Cameroon) and its only sources were an Ethnologue subgroup page and the CIA Factbook. Its other names, Mobber and Mober, point to the Mobber of Borno, a group related to the Kanuri, which PPL_MANGA already mentions. Withdrawn with no successor; a Mobber fiche, if wanted, starts under the Saharan family from a source. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-18"
+  },
+  {
+    "decision": "withdrawn",
+    "retiredId": "PPL_MOBE",
+    "successorId": null,
+    "reason": "No source attests a people called Mobe in the Far North of Cameroon: a Glottolog name search returns nothing, the name is absent from the list of ethnic groups on mandaras.info, and the fiche has no language code. Its own sources were a Joshua Project page on the North Mofu, an Ethnologue subgroup page, a Wiktionary list of ISO codes and the CIA Factbook. Withdrawn with no successor. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-18"
+  },
+  {
+    "decision": "withdrawn",
+    "retiredId": "PPL_AUTRES_PEUPLES_BANTOUS",
+    "successorId": null,
+    "reason": "Not a people but a residual census-style category, « other Bantu peoples » of Gabon. No source uses the label: the fiche's sources speak of the Fang or of the Bantu in general. Withdrawn with no successor; the groups it listed keep their own fiches where they exist (PPL_MYENE, PPL_KOTA, PPL_TEKE, PPL_VILI). The Gabon country row keeps its name with no people id. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-18"
+  },
+  {
+    "decision": "withdrawn",
+    "retiredId": "PPL_PEUPLES_FORESTIERS_DU_SUD_ET_DE_L_EST",
+    "successorId": null,
+    "reason": "Not a people: the fiche calls its own label an analytic designation, and no source opened uses it. It joined the Makaa-Njem peoples of southern and eastern Cameroon (Maka, Njem, Koonzime and others) with the Baka, whose names PPL_PYGMEES_AUTOCHTONES now tells. Withdrawn with no successor; fiches for the Maka and the Njem, if wanted, start from a source. The Cameroon country row keeps its name with no people id. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-18"
+  },
+  {
+    "decision": "withdrawn",
+    "retiredId": "PPL_AFRICAINS_D_ORIGINE_RECENTE",
+    "successorId": null,
+    "reason": "Not a people but a Cabo Verde immigration category, and no source names it: the census survey counts foreign residents by nationality. Withdrawn with no successor. Carried to the Cabo Verde country fiche, in its post-independence history, from the Migration Partnership Facility page of 2024, reopened: the 2021 census survey of the Immigration Authority (AAI) and the National Statistics Institute (INE) counts 10,869 immigrants and foreigners, 2 % of the population, most of them on Santiago, Sal, Boa Vista and São Vicente. Not carried: its lists of origins, languages, religions and customs, which had no source. The two country rows keep their name with no people id. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-18"
   }
 ]
