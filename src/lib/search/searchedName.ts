@@ -13,8 +13,14 @@
  * self-given form first, the order `readNaming` builds.
  */
 
-const fold = (text: string): string =>
-  text.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase().trim();
+import { normalizeString } from "@/lib/normalize";
+
+/**
+ * The shared comparison fold, so « Fulbe » finds « Fulɓe » here as it does in
+ * the subject selection. A form leads because the reader searched it; the
+ * fold compares and never decides which form comes first.
+ */
+const fold = (text: string): string => normalizeString(text).trim();
 
 /**
  * Whether a form answers to what the reader typed. A fiche files one name in

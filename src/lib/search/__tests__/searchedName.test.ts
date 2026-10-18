@@ -30,6 +30,15 @@ describe("answersToSearch", () => {
     );
   });
 
+  // @req REQ-135
+  it("reaches a form typed without its letters, by the shared fold", () => {
+    expect(answersToSearch("Fulɓe · Pullo", "Fulbe")).toBe(true);
+    expect(answersToSearch("Wɛɛmɛɛbo", "weemeebo")).toBe(true);
+    expect(
+      answersToSearch("Al-ʿarabiyya al-fuṣḥā", "Al-arabiyya al-fusha")
+    ).toBe(true);
+  });
+
   // @req REQ-178
   it("matches nothing when nothing was searched", () => {
     expect(answersToSearch("Peul", undefined)).toBe(false);
@@ -47,6 +56,22 @@ describe("orderForSearch", () => {
     expect(
       orderForSearch(fulbe, byForm("peul")).map(({ form }) => form)
     ).toEqual(["Peul", "Fulɓe · Pullo", "Fulani", "Fellata"]);
+  });
+
+  // @req REQ-135
+  it("leads with a form the reader typed without its letters, and promotes none for carrying one", () => {
+    const names: Name[] = [
+      { form: "Pullo", selfGiven: true },
+      { form: "Peul", selfGiven: false },
+      { form: "Fulɓe", selfGiven: false },
+    ];
+
+    expect(
+      orderForSearch(names, byForm("Fulbe")).map(({ form }) => form)
+    ).toEqual(["Fulɓe", "Pullo", "Peul"]);
+    expect(
+      orderForSearch(names, byForm("Peul")).map(({ form }) => form)
+    ).toEqual(["Peul", "Pullo", "Fulɓe"]);
   });
 
   // @req REQ-178
