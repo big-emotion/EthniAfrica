@@ -2,8 +2,24 @@
 
 Read [`README.md`](README.md), [`01-result-page-timeline.md`](01-result-page-timeline.md)
 and [`../../mockup-first-workflow.md`](../../mockup-first-workflow.md) first.
-Written 2026-10-18. Status: **scope approved by the operator on 2026-10-18;
-boards not drawn yet.** Prompt: [`claude-design-prompt-13.md`](claude-design-prompt-13.md).
+Written 2026-10-18. Status: **boards approved by the operator on
+2026-10-18.** Prompt: [`claude-design-prompt-13.md`](claude-design-prompt-13.md).
+
+### Approval record (2026-10-18, by the operator)
+
+1. After step 0, « Essayez avec » uses the examples of the approved `home`
+   board (Shenouda, Siwi, Suri, Tchad), see part C.
+2. The boards are approved with Claude Design's five own choices: the home's
+   field with its label left-aligned; a floating suggestion panel with the
+   first line highlighted for the keyboard; the submitted state keeps the term
+   and its clear button; the full screen at 430 and the dialog at 768 have no
+   dark overlay, because no token exists for one; the search page sits in a
+   640 px column.
+3. The placeholder becomes « Un peuple, une langue, un pays… »: the longer
+   « Un peuple, une langue, un pays, un nom de famille… » was cut at 430 px on
+   the page and in the full screen. The label « Quel nom cherchez-vous ? »
+   already covers family names. Part A below keeps the first wording as the
+   record of what was asked.
 
 This is **pass 4**, the first of three passes the operator approved on
 2026-10-18 after the mobile review of the Atlas, result and search pages
@@ -116,8 +132,12 @@ titled « Page de recherche (sans requête) », in the « 1 · Search » group a
 Top to bottom:
 
 1. The component of part A, empty, focused.
-2. « Essayez avec », the home's example chips, unchanged: Koroma, Four, Lamba,
-   Guinée équatoriale. « Autres exemples » as on the home.
+2. « Essayez avec », the examples of the approved `home` board: Shenouda,
+   Siwi, Suri, Tchad, and « Autres exemples », in the home's chip style.
+   Changed on 2026-10-18 by the operator after step 0: the brief first named
+   Koroma, Four, Lamba and Guinée équatoriale, but Koroma's fiche was merged
+   into PAT_KOUROUMA on 2026-10-16. The live home draws four examples at random
+   on each visit.
 3. « Cherchés cette semaine », chips of names readers searched, each opening
    its result page. Board values, from the demand journal of 2026-10-18 (28
    days, `surface = serp`): **Peul, Lingala, Côte d'Ivoire, Bantou, Guinée**.
@@ -150,3 +170,51 @@ redraw `home` only where the component differs from today's.
   runs, then it never appears in « Cherchés cette semaine ».
 - Given `ful`, when the suggestions show, then one of them leads to the Fulɓe
   answer.
+
+## Approved boards (2026-10-18)
+
+Recorded in `docs/design/mockups/site/`. The operator approved the boards on
+2026-10-18 with one change: the placeholder is « Un peuple, une langue, un
+pays… » everywhere the component appears. It fits at 430 px on the page and in
+the full screen (253 px of text for 312 px of field); the label « Quel nom
+cherchez-vous ? » already covers family names.
+
+- `Main`, section « Composants · recherche unique (brief 13) »:
+  - the component in four states, each at 430, 768 and 1440: empty; « pe »
+    with the five suggestions of part A (target behaviour, the API does not
+    answer them yet); « zzq » with « Aucun nom ne commence par « zzq ». Lancer
+    la recherche quand même »; submitted, « peul » kept in the field;
+  - the header search at 430, full screen, empty and with « pe »: the label
+    line carries « Fermer » on the right, no title;
+  - the header search at 768, a dialog with the same component.
+- `search-entry` at 430, 768 and 1440 (new), « Page de recherche (sans
+  requête) »: the component, empty and focused; « Essayez avec » with the
+  home's examples (Shenouda, Siwi, Suri, Tchad) and « Autres exemples »;
+  « Cherchés cette semaine » with Peul, Lingala, Côte d'Ivoire, Bantou,
+  Guinée; footer B. No hero band, no breadcrumb.
+- `ea-live.css` gains the `.ea-q-*` component, the sheet and dialog, and the
+  `.ea-entry` page. New selectors only, tokens only.
+
+Choices made while drawing, kept by the operator:
+
+1. The component is the home's field: visible label, magnifier, « Rechercher »
+   under the field at 430 and beside it from 768. The label is left-aligned
+   everywhere; the focused field has an ocre border and the focus ring.
+2. The suggestions open in a floating panel under the field, the first line
+   highlighted for the keyboard: the name in bold, the note in soft text, the
+   kind in small mono type on the right. « Toutes les réponses pour « pe » »
+   is an underlined link; « Effacer » appears once something is typed.
+3. Submitted: the searched form stays in the field, the list is closed.
+4. The full screen and the 768 dialog have no dark overlay: no token exists for
+   one. The dialog is 640 px wide at most, on the page's warm ground.
+5. `search-entry` holds a centred 640 px column; the chips are left-aligned and
+   wrap; the two leads are in semibold ink; the weekly chips are links in the
+   examples' style; the header keeps its magnifier.
+
+Measured at 430 px on a render without the Google fonts: header 61, component
+152, « Essayez avec » 128, « Cherchés cette semaine » 128, margins 128 (536 px
+of content), footer 1,415, page 2,012.
+
+The home's examples are drawn from the approved home board. The brief's first
+list (Koroma, Four, Lamba, Guinée équatoriale) was dropped: the Koroma fiche
+was merged into `PAT_KOUROUMA` on 2026-10-16.

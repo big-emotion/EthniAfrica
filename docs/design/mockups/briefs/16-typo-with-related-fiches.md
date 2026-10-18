@@ -70,7 +70,7 @@ neutral lens pills; the group heading in the singular and the plural; the
 invitation (note and quiet link); a night frame (`.dark`) with the chip, the
 quiet link and the accented button of `search-unknown`; one 426 px frame for
 « tchikaya » (one choice, no other fiche) and one for « sanoh » (two choices,
-the filters, and one fiche found). Main measures 20697 px.
+the filters, and one fiche found). Main measures 25122 px with brief 13.
 
 « sanoh » is an example the rules produce, taken from the corpus with the
 search model of `src/lib/search/__fixtures__/corpusNameModel.ts` and held by
