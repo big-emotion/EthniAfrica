@@ -213,7 +213,7 @@ describe("OpenAPI v2 unified search contract", () => {
 
   // A lead is offered only under a piece that is one name and that itself
   // scored (brief 16, ninth and tenth reviews): matchedForm is always what
-  // `similarity` measures. « One name » is promised only where migration 111
+  // `similarity` measures. « One name » is promised only where migration 113
   // guarantees it: a people's piece and a family name's recorded spelling. A
   // family name's filed name (« dos Santos ») and a country or language
   // family's name are given as filed; a client told « always one name »
@@ -223,13 +223,16 @@ describe("OpenAPI v2 unified search contract", () => {
     const description =
       schemas.SearchLeadV2?.properties?.matchedForm?.description;
 
-    expect(description).toMatch(/migrations 110 and 111/);
+    expect(description).toMatch(/migrations 110, 111 and 113/);
     expect(description).toMatch(
       /For a people, a piece of its filed name, its self-appellation or an exonym that is one name/
     );
     expect(description).toMatch(/a slash between spaces/);
     expect(description).toMatch(/click/);
     expect(description).toMatch(/« a-liyan »/);
+    expect(description).toMatch(
+      /a class prefix of up to eight lower-case letters before a capital \(« amaXhosa », « abakwaManala »\)/
+    );
     expect(description).toMatch(/is never scored/);
     expect(description).toMatch(
       /For a family name, its filed name as filed, or a recorded spelling that is one name/

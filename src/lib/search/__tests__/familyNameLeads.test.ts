@@ -15,14 +15,14 @@ import {
   type ModelEntity,
 } from "@/lib/search/__fixtures__/corpusNameModel";
 
-// The one-name rule of migration 111 (brief 16, tenth review), restated here
+// The one-name rule of migration 113 (brief 16, tenth review), restated here
 // letter by letter rather than with the model's pattern, so the corpus-wide
 // tests below can catch the model out. At most three words; each word made
 // of letters of any script with their combining marks, hyphens, apostrophes
 // and click marks, a click mark standing at the start of a word or inside
 // it, never at its end. The first word opens on an upper-case letter, a
 // letter with no case (ǂ, ǁ, ǃ, ǀ are letters), click marks before a letter,
-// one to four lower-case letters before an upper-case one, or one or two
+// one to eight lower-case letters before an upper-case one, or one or two
 // lower-case letters joined by a hyphen to a lower-case one.
 const CLICK_MARKS = new Set(["!", "|", "=", "/"]);
 const isLetter = (char: string) => /^[\p{L}\p{M}]$/u.test(char);
@@ -51,7 +51,7 @@ function opensAsAName(word: string): boolean {
   if (chars[prefix] === "-") {
     return prefix <= 2 && isLower(chars[prefix + 1] ?? "");
   }
-  return prefix >= 1 && prefix <= 4 && isUpper(chars[prefix]);
+  return prefix >= 1 && prefix <= 8 && isUpper(chars[prefix]);
 }
 
 function isOneName(form: string): boolean {
@@ -74,7 +74,7 @@ function fiche(key: string): ModelEntity {
 }
 
 /**
- * The leads in the order migration 111 returns its rows: similarity, then
+ * The leads in the order migration 113 returns its rows: similarity, then
  * name, then id. A people is named by the piece that scored; a country or a
  * language family by its name.
  */
@@ -106,8 +106,8 @@ function rankedLeads(query: string): { key: string; form: string }[] {
 }
 
 // DEC-075 over the real family-name fiches of the repository, through the
-// pg_trgm model of corpusNameModel.ts. The SQL of migration 111, which
-// re-issues 110's function, stays the authority; its verification block
+// pg_trgm model of corpusNameModel.ts. The SQL of migration 113, which
+// re-issues 111's function, stays the authority; its verification block
 // re-checks these on recette.
 describe("which family names are a spelling of the searched name (DEC-075)", () => {
   const leadIds = (query: string) =>
@@ -247,7 +247,7 @@ describe("which family names are a spelling of the searched name (DEC-075)", () 
   });
 });
 
-// A people lead through one of its other names (brief 16): migration 111
+// A people lead through one of its other names (brief 16): migration 113
 // scores the pieces of a people's filed name, self-appellation and exonyms
 // that are one name, at 0.2, and names the piece that scored.
 describe("which people a misspelling resembles (REQ-125)", () => {
@@ -475,7 +475,7 @@ describe("which people a misspelling resembles (REQ-125)", () => {
     expect(peopleLeadForm("juhoansi", juhoansi!)).toBe("Ju|'hoansi");
   });
 
-  // A class prefix of one to four lower-case letters before the stem's
+  // A class prefix of one to eight lower-case letters before the stem's
   // capital opens a name: amaXhosa, vaKaranga, vaKavango and haKavango, the
   // names these peoples give themselves.
   // @req REQ-125
@@ -485,6 +485,36 @@ describe("which people a misspelling resembles (REQ-125)", () => {
     expect(peopleLeadForms(fiche("PPL_KAVANGO"))).toEqual(
       expect.arrayContaining(["vaKavango", "haKavango"])
     );
+  });
+
+  // « abakwa- » means « those of the house of »: the two Southern Ndebele
+  // peoples name themselves abakwaManala and abakwaNdzundza, a class prefix
+  // of six letters before the stem's capital. A cap of four letters dropped
+  // both while their exonyms (« Manala Ndebele », « Southern Ndebele ») still
+  // scored, so « abakwamanala » offered Gwandara through « Abakwa Riga » and
+  // never the Manala: a name others gave outranked the name the people gives
+  // itself (doctrine §1). The lower-case spelling and a one-letter slip each
+  // reach their own people first, through the self-name.
+  // @req REQ-125
+  it("scores the Ndebele self-names abakwaManala and abakwaNdzundza: a typo of each offers its own people first", () => {
+    expect(peopleLeadForms(fiche("PPL_NDEBELE_MANALA"))).toContain(
+      "abakwaManala"
+    );
+    expect(peopleLeadForms(fiche("PPL_NDEBELE_NDZUNDZA"))).toContain(
+      "abakwaNdzundza"
+    );
+    for (const query of ["abakwamanala", "abakwamanla"]) {
+      expect(rankedLeads(query)[0], query).toEqual({
+        key: "PPL_NDEBELE_MANALA",
+        form: "abakwaManala",
+      });
+    }
+    for (const query of ["abakwandzundza", "abakwandzunza"]) {
+      expect(rankedLeads(query)[0], query).toEqual({
+        key: "PPL_NDEBELE_NDZUNDZA",
+        form: "abakwaNdzundza",
+      });
+    }
   });
 
   // The Bassari name themselves a-liyan, one person, and be-liyan, the
