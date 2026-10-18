@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
 import { InlineMarkup } from "@/components/search/feed/InlineMarkup";
 import {
@@ -22,6 +24,11 @@ export interface VerdictBlockProps {
   entries?: readonly NameAnswerEntry[];
   /** Matched subjects without a reviewed answer; each keeps a fiche link. */
   unanswered?: readonly SearchResult[];
+  /**
+   * The page's one invitation, when the verdict admits it does not know the
+   * name: asked where the reader reads first (brief 12, part A).
+   */
+  action?: ReactNode;
   className?: string;
 }
 
@@ -37,6 +44,7 @@ export function VerdictBlock({
   tone = "answer",
   entries = [],
   unanswered = [],
+  action,
   className,
 }: VerdictBlockProps) {
   return (
@@ -87,6 +95,7 @@ export function VerdictBlock({
       {unanswered.length > 0 ? (
         <UnansweredFicheLinks subjects={unanswered} language={language} />
       ) : null}
+      {action ? <div className="mt-afh-lg">{action}</div> : null}
     </SearchFeedBlock>
   );
 }
