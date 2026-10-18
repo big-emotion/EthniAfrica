@@ -11,7 +11,14 @@
     {
       "spelling": "Hlophe",
       "attestations": [
-        { "countryId": "SWZ", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "SWZ",
+          "sourceRefs": [
+            "afrik-candidate-queue",
+            "patricks-2002-swazi-surnames",
+            "van-warmelo-1935-survey"
+          ]
+        }
       ]
     }
   ],
@@ -26,14 +33,18 @@
     {
       "peopleId": "PPL_SWAZI",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "patricks-2002-swazi-surnames"]
     }
   ],
   "countries": [
     {
       "countryId": "SWZ",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": [
+        "afrik-candidate-queue",
+        "patricks-2002-swazi-surnames",
+        "van-warmelo-1935-survey"
+      ]
     }
   ],
   "alliances": [],
@@ -48,6 +59,22 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "patricks-2002-swazi-surnames",
+      "title": "Tibongo Netinanatelo Temaswati : Swazi Surnames and Their Praisenames (copie non officielle)",
+      "url": "https://archive.org/details/tibongo-netinanatelo-temaswati-swazi-surnames-and-their-praisenames",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Première édition, Mbabane, 2002, publiée par le Conservation Trust of Swaziland, la Natural History Society of Swaziland et le Swaziland National Trust Commission ; l'auteur travaille au Musée national du Swaziland. Copie non officielle, téléversée sur Internet Archive par un particulier, lue le 18 octobre 2026 sur les images des pages. Les noms de famille et leurs noms de louange ont été recueillis surtout de 1976 à 1984, auprès de personnes dont l'auteur ne donne pas les noms. Le recueil range les noms de famille du Swaziland et des régions d'Afrique du Sud et du Mozambique jadis gouvernées par les rois swazis ; chaque entrée donne les lieux, les clans avec lesquels on ne se marie pas, les interdits alimentaires et le nom de louange."
+    },
+    {
+      "sourceKey": "van-warmelo-1935-survey",
+      "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+      "url": "https://repository.up.ac.za/handle/2263/77107",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Union of South Africa, Department of Native Affairs, Ethnological Publications, vol. V, Pretoria, 1935 ; scan de l'université de Pretoria, lu le 18 octobre 2026. La partie 2, « Swaziland » (p. 34-36), donne par district, à la date de janvier 1935, les chefs, leur nom de clan (isibongo), leur nom de louange (isinanatelo) et le nombre de contribuables adultes de sexe masculin. La partie 3, section 14 (p. 83-86), range ces chefs selon l'origine de leur famille ; p. 34, l'auteur précise que ce classement vaut pour le chef et sa famille, pas forcément pour tous ses gens."
     }
   ],
   "gaps": [
@@ -75,5 +102,175 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Hlophe est un nom de clan swazi, l'un des plus portés au Swaziland, l'actuel Eswatini, et il est écrit dès 1935. Les sources lues ne disent pas ce que veut dire ce nom. L'origine du clan n'est pas établie : une lecture est présentée plus bas.",
+    "names": [
+      {
+        "nameText": "Hlophe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan swazi parmi les plus portés au Swaziland, écrit dès 1935 ; son sens est inconnu.",
+        "periodLabel": "Écrit dès 1935 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1976,
+              "to": 2002,
+              "label": "Recueilli de 1976 à 2002"
+            },
+            "era": "modern",
+            "statement": "Le nom Hlophe désigne un clan swazi dont le nom de louange, le sinanatelo, commence par « hlophe, mabhengu, lukhambule, mkhonkosi, nabonkhosi ». Les sources lues ne disent pas ce que veut dire le mot hlophe, et l'origine du clan n'est pas établie ; une lecture est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Tibongo Netinanatelo Temaswati : Swazi Surnames and Their Praisenames (copie non officielle)",
+                "author": "Richard Patricks",
+                "year": 2002,
+                "url": "https://archive.org/details/tibongo-netinanatelo-temaswati-swazi-surnames-and-their-praisenames",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21 (entrée HLOPHE)",
+                "notes": "Première édition, Mbabane, 2002, publiée par le Conservation Trust of Swaziland, la Natural History Society of Swaziland et le Swaziland National Trust Commission ; l'auteur travaille au Musée national du Swaziland. Copie non officielle, téléversée sur Internet Archive par un particulier, lue le 18 octobre 2026 sur les images des pages. Les noms de famille et leurs noms de louange ont été recueillis surtout de 1976 à 1984, auprès de personnes dont l'auteur ne donne pas les noms. Dans chaque entrée, « X » désigne les clans avec lesquels le mariage est interdit et « XX » ce que les membres du clan ne mangent pas (guide de lecture, p. 10) ; les lettres H., M., L. et S. désignent les régions de Hhohho, Manzini, Lubombo et Shiselweni."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1976,
+              "to": 2002,
+              "label": "Recueilli de 1976 à 2002"
+            },
+            "era": "modern",
+            "statement": "Le nom Hlophe compte parmi les noms de famille les plus portés au Swaziland : le recueil de Richard Patricks le cite juste après les dix premiers, avec Vilakati, Mamba, Mavuso et Fakudze. Le clan vit à kaLaMgabhi, dans la région de Hhohho, à kuBoyane, dans celle de Manzini, et à eMchinisweni, kaDlovunga et eZikhotheni, dans celle de Shiselweni.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Tibongo Netinanatelo Temaswati : Swazi Surnames and Their Praisenames (copie non officielle)",
+                "author": "Richard Patricks",
+                "year": 2002,
+                "url": "https://archive.org/details/tibongo-netinanatelo-temaswati-swazi-surnames-and-their-praisenames",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6 (introduction) et p. 21 (entrée HLOPHE)",
+                "notes": "Première édition, Mbabane, 2002, publiée par le Conservation Trust of Swaziland, la Natural History Society of Swaziland et le Swaziland National Trust Commission ; l'auteur travaille au Musée national du Swaziland. Copie non officielle, téléversée sur Internet Archive par un particulier, lue le 18 octobre 2026 sur les images des pages. Les noms de famille et leurs noms de louange ont été recueillis surtout de 1976 à 1984, auprès de personnes dont l'auteur ne donne pas les noms. Dans chaque entrée, « X » désigne les clans avec lesquels le mariage est interdit et « XX » ce que les membres du clan ne mangent pas (guide de lecture, p. 10) ; les lettres H., M., L. et S. désignent les régions de Hhohho, Manzini, Lubombo et Shiselweni. P. 6 : « The rest of the \"top ten\", in descending order, are the Zwane, Kunene, Mabuza, Magagula and Nkambule. Then come the Vilakati, Mamba, Hlophe, Mavuso, and Fakudze, followed by the Nsibande, Dvuba (Dube), Matsebula, Shabangu and Thwala. » Entrée HLOPHE : « 1. kaLaMgabhi H., kuBoyane M. » ; « 2. eMchinisweni, kaDlovunga, eZikhotheni S. »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1976,
+              "to": 2002,
+              "label": "Recueilli de 1976 à 2002"
+            },
+            "era": "modern",
+            "statement": "Le nom Hlophe est celui d'un clan dont les membres ne se marient pas avec les Mkhabela ni avec les Mndzebele, et ne mangent pas deux sortes d'oiseaux, le jojo et l'intsaki, selon le recueil de Richard Patricks.",
+            "sources": [
+              {
+                "title": "Tibongo Netinanatelo Temaswati : Swazi Surnames and Their Praisenames (copie non officielle)",
+                "author": "Richard Patricks",
+                "year": 2002,
+                "url": "https://archive.org/details/tibongo-netinanatelo-temaswati-swazi-surnames-and-their-praisenames",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21 (entrée HLOPHE)",
+                "notes": "Première édition, Mbabane, 2002, publiée par le Conservation Trust of Swaziland, la Natural History Society of Swaziland et le Swaziland National Trust Commission ; l'auteur travaille au Musée national du Swaziland. Copie non officielle, téléversée sur Internet Archive par un particulier, lue le 18 octobre 2026 sur les images des pages. Les noms de famille et leurs noms de louange ont été recueillis surtout de 1976 à 1984, auprès de personnes dont l'auteur ne donne pas les noms. Dans chaque entrée, « X » désigne les clans avec lesquels le mariage est interdit et « XX » ce que les membres du clan ne mangent pas (guide de lecture, p. 10) ; les lettres H., M., L. et S. désignent les régions de Hhohho, Manzini, Lubombo et Shiselweni. Entrée HLOPHE : « X Mkhabela X Mndzebele » ; « XX jojo XX intsaki (types of bird) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1935,
+              "to": 2002,
+              "label": "Noté en 1935 et en 2002"
+            },
+            "statement": "Le nom Hlophe apparaît aussi dans le nom de louange d'un autre clan, les Mndzebele : en 1935, celui du chef Ntsini, district de Hlatikulu, s'écrit « Hlophe, Nabonkosi ». Richard Patricks explique que deux clans dont les noms de louange ont un mot en commun ne se marient pas entre eux, et il note que les Hlophe n'épousent pas les Mndzebele.",
+            "sources": [
+              {
+                "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+                "author": "N. J. van Warmelo",
+                "year": 1935,
+                "url": "https://repository.up.ac.za/handle/2263/77107",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 35 (partie 2, Swaziland)",
+                "notes": "Union of South Africa, Department of Native Affairs, Ethnological Publications, vol. V, Pretoria, 1935 ; scan de l'université de Pretoria, lu le 18 octobre 2026. La partie 2, « Swaziland » (p. 34-36), donne par district, à la date de janvier 1935, les chefs, leur nom de clan (isibongo), leur nom de louange (isinanatelo) et le nombre de contribuables adultes de sexe masculin. La partie 3, section 14 (p. 83-86), range ces chefs selon l'origine de leur famille ; p. 34, l'auteur précise que ce classement vaut pour le chef et sa famille, pas forcément pour tous ses gens. P. 35, district de Hlatikulu : chef Ntsini, « Mndzebele, abaka », nom de louange « Hlophe, Nabonkosi », 54 contribuables."
+              },
+              {
+                "title": "Tibongo Netinanatelo Temaswati : Swazi Surnames and Their Praisenames (copie non officielle)",
+                "author": "Richard Patricks",
+                "year": 2002,
+                "url": "https://archive.org/details/tibongo-netinanatelo-temaswati-swazi-surnames-and-their-praisenames",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 8 (introduction, section d) et p. 21 (entrée HLOPHE)",
+                "notes": "Première édition, Mbabane, 2002, publiée par le Conservation Trust of Swaziland, la Natural History Society of Swaziland et le Swaziland National Trust Commission ; l'auteur travaille au Musée national du Swaziland. Copie non officielle, téléversée sur Internet Archive par un particulier, lue le 18 octobre 2026 sur les images des pages. Les noms de famille et leurs noms de louange ont été recueillis surtout de 1976 à 1984, auprès de personnes dont l'auteur ne donne pas les noms. Dans chaque entrée, « X » désigne les clans avec lesquels le mariage est interdit et « XX » ce que les membres du clan ne mangent pas (guide de lecture, p. 10) ; les lettres H., M., L. et S. désignent les régions de Hhohho, Manzini, Lubombo et Shiselweni. P. 8-9, introduction, section d : deux clans dont les noms de louange contiennent le même mot ou la même phrase ne se marient pas entre eux ; les clans dont le nom de louange commence par nkhosi, « lord or master », ont eu des ancêtres Dlamini. Entrée HLOPHE : « X Mkhabela X Mndzebele » ; le nom de louange contient « nabonkhosi »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1935,
+              "to": 1935,
+              "label": "Janvier 1935"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hlophe apparaît par écrit dans le recensement des chefs du Swaziland que l'ethnologue N. J. van Warmelo publie en 1935 : deux chefs y portent le nom de clan « Hlophe, abaka », Mahagana dans le district de Hlatikulu, avec le nom de louange Mabhengu, et Mvemve dans celui de Mbabane, avec « Mkhonkose, Ndzebele ». C'est la plus ancienne trace de ce nom que le projet connaît ; le clan existait déjà avant elle.",
+            "formAsWritten": "Hlophe",
+            "birth": true,
+            "actors": [
+              {
+                "name": "N. J. van Warmelo",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Mahagana",
+                "role": "chef recensé sous ce nom de clan"
+              },
+              {
+                "name": "Mvemve",
+                "role": "chef recensé sous ce nom de clan"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+                "author": "N. J. van Warmelo",
+                "year": 1935,
+                "url": "https://repository.up.ac.za/handle/2263/77107",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 35 (partie 2, Swaziland)",
+                "notes": "Union of South Africa, Department of Native Affairs, Ethnological Publications, vol. V, Pretoria, 1935 ; scan de l'université de Pretoria, lu le 18 octobre 2026. La partie 2, « Swaziland » (p. 34-36), donne par district, à la date de janvier 1935, les chefs, leur nom de clan (isibongo), leur nom de louange (isinanatelo) et le nombre de contribuables adultes de sexe masculin. La partie 3, section 14 (p. 83-86), range ces chefs selon l'origine de leur famille ; p. 34, l'auteur précise que ce classement vaut pour le chef et sa famille, pas forcément pour tous ses gens. P. 35 : district de Hlatikulu, chef Mahagana, « Hlophe, abaka », Mabhengu, 48 contribuables ; district de Mbabane, chef Mvemve, « Hlophe, abaka », « Mkhonkose, Ndzebele », 93."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1935,
+              "to": 1935,
+              "label": "Proposé en 1935"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hlophe serait celui d'un clan des Swazis proprement dits, les amaNgwane, venus avec la famille royale, selon N. J. van Warmelo. Il range les deux chefs Hlophe parmi eux, en précisant que ce classement vaut pour la famille du chef, pas forcément pour tous ses gens.",
+            "hypothesisGroup": "origine du clan Hlophe",
+            "sources": [
+              {
+                "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+                "author": "N. J. van Warmelo",
+                "year": 1935,
+                "url": "https://repository.up.ac.za/handle/2263/77107",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 84 (partie 3, section 14) ; p. 34",
+                "notes": "Union of South Africa, Department of Native Affairs, Ethnological Publications, vol. V, Pretoria, 1935 ; scan de l'université de Pretoria, lu le 18 octobre 2026. La partie 2, « Swaziland » (p. 34-36), donne par district, à la date de janvier 1935, les chefs, leur nom de clan (isibongo), leur nom de louange (isinanatelo) et le nombre de contribuables adultes de sexe masculin. La partie 3, section 14 (p. 83-86), range ces chefs selon l'origine de leur famille ; p. 34, l'auteur précise que ce classement vaut pour le chef et sa famille, pas forcément pour tous ses gens. P. 84, sous le titre « amaSWAZI (amaNGWANE) PROPER », lignes 14-296 et 14-300 : « Hlophe, abaka », chefs Mahagana (Hlatikulu) et Mvemve (Mbabane)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
