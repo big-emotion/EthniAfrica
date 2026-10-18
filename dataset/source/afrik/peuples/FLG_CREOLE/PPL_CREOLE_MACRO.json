@@ -147,5 +147,300 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Créoles réunit des peuples nés en Afrique et dans ses îles de la rencontre entre Africains, Européens et d'autres arrivants, comme les Krio de Sierra Leone ou les Créoles de Maurice, de La Réunion et des Seychelles. Ce n'est pas le nom d'un peuple : aucune source que nous avons lue ne donne un nom que ces peuples se donneraient tous ensemble, et chacun porte le sien. Le mot vient de l'espagnol criollo, qui désignait d'abord les gens nés aux Indes ; son origine est discutée, et nous présentons les explications plus bas.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Créoles",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des auteurs européens, d'après l'espagnol criollo",
+        "shortLine": "Un mot venu de l'espagnol criollo, « né aux Indes », pour des peuples nés de rencontres.",
+        "periodLabel": "Écrit dès 1590 ; pour l'Afrique dès 1773 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Créoles est repris par certains des peuples qu'il désigne, dans leur propre langue. En Sierra Leone, les Krio portent un nom qui serait peut-être une forme du mot anglais creole, selon le linguiste Malcolm Awadajin Finney. À Maurice, le défenseur de la langue créole Dev Virahsawmy écrit « lor nou lil, nou tou kreol isi », « sur notre île, nous sommes tous créoles ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Survey chapter: Krio",
+                "author": "Malcolm Awadajin Finney",
+                "year": null,
+                "url": "https://apics-online.info/surveys/15",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Atlas of Pidgin and Creole Language Structures (APiCS) Online. Lu en ligne le 18 octobre 2026.",
+                "page": "sections 1 et 2"
+              },
+              {
+                "title": "General History of Africa, X : Africa and Its Diasporas, ch. 6 : Mauritius, between Community Compartmentalisation and Cultural Melting Pots",
+                "author": "Catherine Servan-Schreiber",
+                "year": 2025,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000396047",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, édition anglaise en libre accès, lue dans l'exemplaire numérisé du volume. « lor nou lil, nou tou kreol isi: ‘On our island, we are all Creoles’ (Virahsawmy, 2004, p. 37) ».",
+                "page": "p. 357"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "Décrit en 1999"
+            },
+            "era": "modern",
+            "statement": "Le nom Créoles désigne, chez l'historien Christophe Wondji, des groupes métis des rivières de Casamance, de Guinée et de Sierra Leone. Ce sont des Afro-Portugais issus de colons portugais des XVe et XVIe siècles et des Anglo-Africains descendant de marchands britanniques, qui servaient d'intermédiaires entre les navires européens et les sociétés de l'intérieur.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 13 : Les États et les cultures de la côte de haute Guinée",
+                "author": "Christophe Wondji",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 438-439"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1998,
+              "to": 1998,
+              "label": "1998"
+            },
+            "statement": "Le nom Créoles sert aussi à décrire la population « créole et cosmopolite » de La Réunion, de Maurice et des Seychelles, que l'historien Michael Twaddle et ses coauteurs distinguent de celle des Comores, plus proche de Zanzibar et de la côte est-africaine.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 9 : L'Afrique orientale",
+                "author": "Michael Twaddle, avec Lucile Rabearimanana et Isaria N. Kimambo",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 269"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1945,
+              "to": 1960,
+              "label": "Entre 1945 et 1960"
+            },
+            "era": "colonial",
+            "statement": "Le nom Créoles sépare alors, en Sierra Leone et en Gambie, les « Créoles » de la « colonie » et les peuples autochtones, majoritaires, des protectorats de l'intérieur : la vie politique les oppose, selon Joseph Ki-Zerbo, Ali A. Mazrui et Christophe Wondji.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 16 : Construction de la nation et évolution des valeurs politiques",
+                "author": "Joseph Ki-Zerbo, Ali A. Mazrui et Christophe Wondji, en collaboration avec A. A. Boahen",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 503"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1880,
+              "to": 1880,
+              "label": "Vers 1880"
+            },
+            "era": "colonial",
+            "statement": "Le nom Créoles désigne alors en Sierra Leone les personnes instruites du pays, selon l'historien Albert Adu Boahen. Ce sont elles qui mènent l'action des missions et des écoles dans d'autres régions d'Afrique de l'Ouest.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 3 : Tendances et processus nouveaux dans l'Afrique du XIXe siècle",
+                "author": "Albert Adu Boahen",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 75"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1773,
+              "to": 1773,
+              "label": "1773"
+            },
+            "era": "colonial",
+            "statement": "Le nom Créoles s'applique en Afrique aux gens nés dans les îles de l'océan Indien : à l'Isle de France, aujourd'hui Maurice, Bernardin de Saint-Pierre écrit qu'« une Européenne se croit supérieure à une créole ». C'est la plus ancienne trace de ce nom en Afrique que le projet connaît.",
+            "formAsWritten": "créole",
+            "sources": [
+              {
+                "title": "Voyage à l'Isle de France, à l'isle de Bourbon, au cap de Bonne-Espérance",
+                "author": "Jacques-Henri Bernardin de Saint-Pierre",
+                "year": 1773,
+                "url": "https://archive.org/details/voyagelisledefr00piegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Édition de 1773, première partie. Lue dans la numérisation d'Internet Archive le 18 octobre 2026 ; le numéro de page imprimé a été lu sur l'image. « Une Européenne se croit supérieure à une créole, & celle-ci regarde souvent l'autre comme une aventurière ». L'auteur décrit la société de l'île avec le regard d'un officier français de son temps.",
+                "page": "p. 131"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1873,
+              "to": 1873,
+              "label": "1873"
+            },
+            "statement": "Le nom Créoles vient de l'espagnol criollo, passé par l'italien creolo, selon le dictionnaire de Littré. Il y désigne d'abord un homme blanc ou une femme blanche originaire des colonies et, comme adjectif, une personne noire née aux colonies, par opposition à celle qu'amène la traite. L'origine de criollo est douteuse ; nous présentons les explications plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionnaire de la langue française, article « créole »",
+                "author": "Émile Littré",
+                "year": 1873,
+                "url": "https://www.littre.org/definition/cr%C3%A9ole",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu en ligne sur littre.org le 18 octobre 2026.",
+                "page": "sens 1 et étymologie"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1609,
+              "to": 1609,
+              "label": "Proposée en 1609"
+            },
+            "statement": "Le nom Créoles viendrait des Noirs réduits en esclavage aux Indes : ils auraient inventé le mot criollo pour distinguer leurs enfants nés en Amérique de ceux nés en Guinée, et les Espagnols le leur auraient pris, selon l'Inca Garcilaso de la Vega. Il ajoute que les parents, nés dans leur patrie, s'en tenaient pour plus honorables et s'offensaient d'être appelés criollos.",
+            "hypothesisGroup": "origine-creole",
+            "sources": [
+              {
+                "title": "Primera parte de los commentarios reales",
+                "author": "Inca Garcilaso de la Vega",
+                "year": 1609,
+                "url": "https://archive.org/details/primerapartedelo00vega",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Lisbonne, Pedro Crasbeeck, 1609. Lu dans la numérisation d'Internet Archive le 18 octobre 2026 ; le numéro de feuillet imprimé a été lu sur l'image. Chapitre « Nombres nueuos para nombrar diuersas generaciones » : « Es nombre que lo inuentaron los Negros […] inuentaronlo para diferenciar los que van de aca nascidos en Guinea de los que nascen alla » ; « los padres se ofenden si les llamã criollos ».",
+                "page": "livre IX, chap. XXXI, f. 255"
+              },
+              {
+                "title": "Dictionnaire de la langue française, article « créole »",
+                "author": "Émile Littré",
+                "year": 1873,
+                "url": "https://www.littre.org/definition/cr%C3%A9ole",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu en ligne sur littre.org le 18 octobre 2026.",
+                "page": "supplément, étymologie"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1873,
+              "to": 1873,
+              "label": "Rapportée en 1873"
+            },
+            "statement": "Le nom Créoles viendrait du verbe espagnol criar, « élever, nourrir », selon une explication que rapporte le dictionnaire de Littré, qui juge cette formation tout à fait irrégulière.",
+            "hypothesisGroup": "origine-creole",
+            "sources": [
+              {
+                "title": "Dictionnaire de la langue française, article « créole »",
+                "author": "Émile Littré",
+                "year": 1873,
+                "url": "https://www.littre.org/definition/cr%C3%A9ole",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu en ligne sur littre.org le 18 octobre 2026.",
+                "page": "étymologie"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1873,
+              "to": 1873,
+              "label": "Rapportée en 1873"
+            },
+            "statement": "Le nom Créoles serait un mot caraïbe, selon d'autres auteurs que cite le dictionnaire de Littré sans les nommer.",
+            "hypothesisGroup": "origine-creole",
+            "sources": [
+              {
+                "title": "Dictionnaire de la langue française, article « créole »",
+                "author": "Émile Littré",
+                "year": 1873,
+                "url": "https://www.littre.org/definition/cr%C3%A9ole",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu en ligne sur littre.org le 18 octobre 2026.",
+                "page": "étymologie"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1873,
+              "to": 1873,
+              "label": "Rapportée en 1873"
+            },
+            "statement": "Le nom Créoles serait un mot inventé par les conquérants des Indes occidentales et transmis par eux, selon l'Académie espagnole, que cite le dictionnaire de Littré.",
+            "hypothesisGroup": "origine-creole",
+            "sources": [
+              {
+                "title": "Dictionnaire de la langue française, article « créole »",
+                "author": "Émile Littré",
+                "year": 1873,
+                "url": "https://www.littre.org/definition/cr%C3%A9ole",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu en ligne sur littre.org le 18 octobre 2026.",
+                "page": "étymologie"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1590,
+              "to": 1590,
+              "label": "1590"
+            },
+            "statement": "Le nom Créoles a une forme proche, criollos, chez le jésuite espagnol José de Acosta : c'est ainsi, écrit-il, qu'on appelle aux Indes les enfants nés de parents espagnols. C'est la plus ancienne trace de ce nom que le projet connaît. Il désigne alors des gens nés en Amérique et ne s'applique que plus tard à des peuples d'Afrique.",
+            "formAsWritten": "Criollos",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Historia natural y moral de las Indias",
+                "author": "José de Acosta",
+                "year": 1590,
+                "url": "https://archive.org/details/historianaturaly00acos_2",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Séville, Juan de León, 1590, première édition. Lu dans la numérisation d'Internet Archive le 18 octobre 2026 ; le numéro de page imprimé a été lu sur l'image. « dezian algunos Criollos (como alla llamã alos nacidos de Españoles en Indias) ». La page de titre présente l'auteur comme « Religioso de la Compañia de Iesus ».",
+                "page": "livre IV, chap. 25, p. 257"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
