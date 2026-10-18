@@ -1,5 +1,9 @@
 // @req REQ-200
 import { beforeEach, describe, expect, it, vi } from "vitest";
+import {
+  buildNameAddressDirectory,
+  nameSearchHref,
+} from "@/lib/search/nameAddress";
 
 vi.mock("@/lib/supabase/queries/afrik/nameAddressEntries", () => ({
   getNameSuggestionRows: vi.fn(),
@@ -98,20 +102,24 @@ describe("suggestNamesByPrefix", () => {
       type: "people",
       id: "PPL_PEDI",
       note: "se nomme lui-même Bapedi",
-      href: "/fr/atlas/recherche?q=Pedi",
+      href: nameSearchHref("fr", "Pedi"),
     });
     expect(result[1].note).toBe("nom que se donnent les Papel");
     expect(result[2].note).toBe("un nom des Kpelle");
     expect(result[3]).toMatchObject({
       form: "Peul",
       note: "se nomme lui-même Fulɓe",
-      href: "/fr/atlas/recherche?q=Peul",
+      href: nameSearchHref("fr", "Peul"),
     });
     expect(await suggestNamesByPrefix("ful", 8)).toEqual(
       expect.arrayContaining([
         expect.objectContaining({
           form: "Fulɓe",
-          href: "/fr/atlas/recherche/ful%C9%93e",
+          href: nameSearchHref(
+            "fr",
+            "Fulɓe",
+            buildNameAddressDirectory(["Fulɓe"])
+          ),
         }),
       ])
     );
@@ -162,7 +170,7 @@ describe("suggestNamesByPrefix", () => {
       type: "people",
       id: "PPL_FULANI_MASSINA",
       note: "se nomme lui-même Fulɓe Maasina",
-      href: "/fr/atlas/recherche?q=Peuls+du+Macina",
+      href: nameSearchHref("fr", "Peuls du Macina"),
     });
   });
 });

@@ -2,6 +2,7 @@
 // @req REQ-200
 import { z } from "zod";
 import { nameSuggestionsHandler } from "@/api/v2/handlers/nameSuggestions";
+import { CORPUS_CACHE_CONTROL } from "@/api/v2/utils/corpusRoute";
 import { createApiError } from "@/api/v2/utils/response";
 import { jsonWithCors, corsOptionsResponse } from "@/lib/api/cors";
 import { logger } from "@/lib/api/logger";
@@ -10,8 +11,6 @@ const querySchema = z.object({
   q: z.string().trim().min(2).max(100),
   limit: z.coerce.number().int().min(1).max(20).default(8),
 });
-const CACHE_CONTROL = "public, s-maxage=3600, stale-while-revalidate=86400";
-
 // @req REQ-200
 export async function GET(request: Request) {
   const params = new URL(request.url).searchParams;
@@ -34,7 +33,7 @@ export async function GET(request: Request) {
   try {
     return jsonWithCors(
       await nameSuggestionsHandler(parsed.data.q, parsed.data.limit),
-      { headers: { "Cache-Control": CACHE_CONTROL } }
+      { headers: { "Cache-Control": CORPUS_CACHE_CONTROL } }
     );
   } catch (error) {
     logger.error("GET /api/v2/names/suggest failed", error);

@@ -81,8 +81,7 @@ const options: swaggerJsdoc.Options = {
                 "Cache-Control": {
                   schema: {
                     type: "string",
-                    example:
-                      "public, s-maxage=3600, stale-while-revalidate=86400",
+                    example: "s-maxage=3600",
                   },
                 },
               },

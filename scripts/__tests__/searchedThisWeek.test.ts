@@ -1,5 +1,6 @@
 // @req REQ-200
 import { describe, expect, it } from "vitest";
+import { nameSearchHref } from "@/lib/search/nameAddress";
 import {
   filterSearchedThisWeek,
   placeSubjectsFromFiche,
@@ -12,7 +13,7 @@ describe("filterSearchedThisWeek", () => {
       form: `Name ${index}`,
       subject: { type: "people", id: `PPL_${index}` },
       summary: `Name ${index} summary. Second sentence.`,
-      href: `/fr/atlas/peuples/name-${index}`,
+      href: nameSearchHref("fr", `Name ${index}`),
     }));
     const rows = [
       ...subjects.map((subject, index) => ({
@@ -53,7 +54,7 @@ describe("filterSearchedThisWeek", () => {
         form: "Yamoussoukro",
         subject: { type: "place", id: "LOC_YAMOUSSOUKRO" },
         summary: "Capitale politique de la Côte d'Ivoire.",
-        href: "/fr/atlas/recherche?q=Yamoussoukro",
+        href: nameSearchHref("fr", "Yamoussoukro"),
       },
     ]);
   });

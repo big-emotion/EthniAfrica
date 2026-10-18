@@ -1,5 +1,6 @@
 // @req REQ-200
 import { describe, expect, it, vi } from "vitest";
+import { nameSearchHref } from "@/lib/search/nameAddress";
 
 vi.mock("@/api/v2/services/nameSuggestions", () => ({
   suggestNamesByPrefix: vi.fn(),
@@ -17,7 +18,7 @@ describe("nameSuggestionsHandler", () => {
         type: "people",
         id: "PPL_FULA",
         note: null,
-        href: "/fr/atlas/recherche/Fulɓe",
+        href: nameSearchHref("fr", "Fulɓe"),
       },
     ]);
 
@@ -31,7 +32,7 @@ describe("nameSuggestionsHandler", () => {
           type: "people",
           id: "PPL_FULA",
           note: null,
-          href: "/fr/atlas/recherche/Fulɓe",
+          href: nameSearchHref("fr", "Fulɓe"),
         },
       ],
       query: "ful",

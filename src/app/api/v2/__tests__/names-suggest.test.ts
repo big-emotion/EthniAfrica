@@ -27,7 +27,7 @@ describe("GET /api/v2/names/suggest", () => {
       "GET"
     );
     expect(response.headers.get("Vary")).toContain("Origin");
-    expect(response.headers.get("Cache-Control")).toContain("s-maxage=");
+    expect(response.headers.get("Cache-Control")).toBe("s-maxage=3600");
   });
 
   // @req REQ-200
