@@ -115,5 +115,151 @@
       "fieldPath": "transmissionMode",
       "reason": "Les recherches « al-Mirghani transmission patronyme », « al-Mirghani filiation » et « al-Mirghani hereditary surname » n’ont pas établi si, ni comment, cette forme se transmet dans les communautés concernées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom al-Mirghani est le nom de famille des descendants de Muhammad Uthman al-Mirghani, fondateur de l'ordre soufi de la Khatmiyya, très présent au nord du Soudan. Il y signale un descendant de ce fondateur et, par extension, un adepte de l'ordre ; sans l'article, Mirghani y sert aussi de prénom. Le nom est écrit dès le XVIIIe siècle à La Mecque, et il est déjà celui d'un ancêtre de la famille. Les sources lues n'expliquent pas ce qu'il veut dire.",
+    "names": [
+      {
+        "nameText": "al-Mirghani",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "shortLine": "Le nom des descendants du fondateur de la Khatmiyya, un ordre soufi très présent au nord du Soudan.",
+        "periodLabel": "Écrit dès 1749-1750 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1988,
+              "to": 1988,
+              "label": "Rapporté en 1988"
+            },
+            "era": "modern",
+            "statement": "Le nom al-Mirghani, porté comme nom de famille par les riverains du Nil au nord du Soudan, signale un descendant du fondateur de la Khatmiyya et, par extension, un adepte de cet ordre soufi, selon l'anthropologue Ahmed al-Shahi. Il le range avec d'autres noms du même genre, comme al-Mahdi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Some personal names and nicknames among the riverain people of northern Sudan",
+                "author": "Ahmed al-Shahi",
+                "year": 1988,
+                "url": "https://ora.ox.ac.uk/objects/uuid%3A6cba3331-02f2-4ae9-af12-ce697e4dd5c8/files/rv979v447b",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 135",
+                "notes": "Journal of the Anthropological Society of Oxford 19(2), 1988, texte intégral déposé à l'Oxford University Research Archive, relu le 18 octobre 2026. L'auteur a enquêté chez les Shaygiyya du nord du Soudan. Page 135 : « The surnames Al-Mahdi, Al-Mirghani, Al-Hindi, Al-Sammani and Al-Majdhub indicate that the person is a descendant of the founder of a Sufi order and by extension a follower of that order » ; « the use of the personal names Sirr Al-Khatim [...], Khatmi [...] and Mirghani (the family name of the founder of the Khatmiyya Sufi order) among the Shaygiyya and other tribes indicates their bearers' association with the Khatmiyya Sufi order ». La note 9 nomme le fondateur, Sayyid Muhammed Othman Al-Mirghani."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1817,
+              "to": 1853,
+              "label": "De 1817 à 1853"
+            },
+            "statement": "Le nom al-Mirghani passe au Soudan avec Muhammad Uthman al-Mirghani, qui vient à Sennar en 1817 appeler à suivre sa voie soufie. Il épouse au Kordofan une femme de Dongola, et leur fils al-Hasan implante l'ordre au Soudan. Muhammad Uthman enseigne que sa famille porte une sainteté qui se transmet par le sang, selon J. Spencer Trimingham.",
+            "formAsWritten": "al Mirghani",
+            "sources": [
+              {
+                "title": "Islam in the Sudan",
+                "author": "J. Spencer Trimingham",
+                "year": 1949,
+                "url": "https://archive.org/details/in.ernet.dli.2015.158194",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 232-233",
+                "notes": "Londres, Oxford University Press, première édition 1949 ; lu dans la deuxième impression (Londres, Frank Cass, 1965), numérisée par la Digital Library of India et déposée sur archive.org (copie non officielle), le 18 octobre 2026. Page 232 : « His family, who were Sherifian in origin, had been settled in Turkestan and later India, but had returned to Mecca. His grandfather, Abd Allah al-Mirghani al-Mahjub (d. 1792/3), was a noted Sufi » mentionné par al-Jabarti ; Trimingham cite la chronique funj : « In 1232 (A.D. 1817) the most learned and pious Sherif, the noble Sayyid Muhammad al Mirghani al Mekki, visited Sennar ». Page 233 : il épouse une femme de Dongola au Kordofan, et leur fils al-Hasan fonde la Khatmiyya au Soudan ; Muhammad Uthman développe « his theory of the peculiar hereditary sanctity of his family », et ses descendants deviennent les chefs de branches régionales."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1792,
+              "to": 1793,
+              "label": "1207 de l'hégire (1792-1793)"
+            },
+            "statement": "Le nom Mirghani est déjà celui d'un ancêtre, Aly Merghani, dans la généalogie qu'Abd al-Rahman al-Jabarti donne du cheikh Abdallah, mort en 1207 de l'hégire, que Trimingham présente comme le grand-père de Muhammad Uthman. Trimingham dit aussi que cette famille, qui se rattache au Prophète, avait vécu au Turkestan puis en Inde avant de revenir à La Mecque.",
+            "formAsWritten": "Merghani",
+            "sources": [
+              {
+                "title": "Merveilles biographiques et historiques, ou Chroniques du cheikh Abd-el-Rahman el Djabarti, tome V",
+                "author": "Abd el-Rahman el-Djabarti ; traduction de Chefik Mansour bey, Abdelaziz Kalil bey, Gabriel Nicolas Kalil bey et Iskender Ammoun effendi",
+                "year": 1890,
+                "url": "https://archive.org/details/merveillesbiogra05jaba",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 182",
+                "notes": "Le Caire, Imprimerie nationale, 1890 (date de la page de titre du tome V) ; chronique d'Abd al-Rahman al-Jabarti traduite de l'arabe, lue sur l'exemplaire numérisé d'archive.org le 18 octobre 2026. Page 182, lue sur l'image de la page imprimée, nécrologie de l'année 1207 de l'hégire : « Est mort, en cette année, le grand Imam [...] Abdallah ibn Ibrahim, Ibn Hassan, Ibn Mohammed Amine, Ibn Aly Merghani, Ibn Hassan [...] El Makki, El Taïefi, El Hanafi, surnommé El Mahdjoub » ; né à La Mecque, il s'installe au Taïf en 1166."
+              },
+              {
+                "title": "Islam in the Sudan",
+                "author": "J. Spencer Trimingham",
+                "year": 1949,
+                "url": "https://archive.org/details/in.ernet.dli.2015.158194",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 232",
+                "notes": "Londres, Oxford University Press, première édition 1949 ; lu dans la deuxième impression (Londres, Frank Cass, 1965), numérisée par la Digital Library of India et déposée sur archive.org (copie non officielle), le 18 octobre 2026. Page 232 : « His family, who were Sherifian in origin, had been settled in Turkestan and later India, but had returned to Mecca. His grandfather, Abd Allah al-Mirghani al-Mahjub (d. 1792/3), was a noted Sufi » mentionné par al-Jabarti ; Trimingham cite la chronique funj : « In 1232 (A.D. 1817) the most learned and pious Sherif, the noble Sayyid Muhammad al Mirghani al Mekki, visited Sennar ». Page 233 : il épouse une femme de Dongola au Kordofan, et leur fils al-Hasan fonde la Khatmiyya au Soudan ; Muhammad Uthman développe « his theory of the peculiar hereditary sanctity of his family », et ses descendants deviennent les chefs de branches régionales."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1749,
+              "to": 1750,
+              "label": "1163 de l'hégire (1749-1750)"
+            },
+            "statement": "Le nom Mirghani apparaît dans la chronique d'Abd al-Rahman al-Jabarti, traduite en français en 1890 : le savant Mortada y rencontre à La Mecque, en 1163 de l'hégire, « le cheikh Abdallah Mirghani el Taïfî ». C'est la plus ancienne trace de ce nom que le projet connaît ; le nom est plus ancien, puisque la généalogie de ce cheikh le donne déjà à l'un de ses ancêtres.",
+            "formAsWritten": "Mirghani",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Merveilles biographiques et historiques, ou Chroniques du cheikh Abd-el-Rahman el Djabarti, tome V",
+                "author": "Abd el-Rahman el-Djabarti ; traduction de Chefik Mansour bey, Abdelaziz Kalil bey, Gabriel Nicolas Kalil bey et Iskender Ammoun effendi",
+                "year": 1890,
+                "url": "https://archive.org/details/merveillesbiogra05jaba",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 103, 182",
+                "notes": "Le Caire, Imprimerie nationale, 1890 (date de la page de titre du tome V) ; chronique d'Abd al-Rahman al-Jabarti traduite de l'arabe, lue sur l'exemplaire numérisé d'archive.org le 18 octobre 2026. Page 103, notice du cheikh Mortada : « En l'an 1163, il se rencontra à la Mecque avec El Sayed Abd-el-Rahman el Eidarouss et avec le cheikh Abdallah Mirghani el Taïfî ». Page 182, lue sur l'image de la page imprimée, nécrologie de l'année 1207 de l'hégire : « Est mort, en cette année, le grand Imam [...] Abdallah ibn Ibrahim, Ibn Hassan, Ibn Mohammed Amine, Ibn Aly Merghani, Ibn Hassan [...] El Makki, El Taïefi, El Hanafi, surnommé El Mahdjoub » ; né à La Mecque, il s'installe au Taïf en 1166."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mirghani",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "shortLine": "Le nom sans l'article, donné aussi comme prénom au nord du Soudan pour marquer un lien avec la Khatmiyya.",
+        "periodLabel": "Rapporté en 1988",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1988,
+              "to": 1988,
+              "label": "Rapporté en 1988"
+            },
+            "era": "modern",
+            "statement": "Le nom Mirghani, sans l'article, sert aussi de prénom chez les Shaygiyya et d'autres tribus du nord du Soudan : il marque le lien de celui qui le porte avec la Khatmiyya, dont il est le nom de famille du fondateur, selon Ahmed al-Shahi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Some personal names and nicknames among the riverain people of northern Sudan",
+                "author": "Ahmed al-Shahi",
+                "year": 1988,
+                "url": "https://ora.ox.ac.uk/objects/uuid%3A6cba3331-02f2-4ae9-af12-ce697e4dd5c8/files/rv979v447b",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 135",
+                "notes": "Journal of the Anthropological Society of Oxford 19(2), 1988, texte intégral déposé à l'Oxford University Research Archive, relu le 18 octobre 2026. L'auteur a enquêté chez les Shaygiyya du nord du Soudan. Page 135 : « The surnames Al-Mahdi, Al-Mirghani, Al-Hindi, Al-Sammani and Al-Majdhub indicate that the person is a descendant of the founder of a Sufi order and by extension a follower of that order » ; « the use of the personal names Sirr Al-Khatim [...], Khatmi [...] and Mirghani (the family name of the founder of the Khatmiyya Sufi order) among the Shaygiyya and other tribes indicates their bearers' association with the Khatmiyya Sufi order ». La note 9 nomme le fondateur, Sayyid Muhammed Othman Al-Mirghani."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
