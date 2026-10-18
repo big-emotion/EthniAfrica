@@ -9,6 +9,11 @@ import {
   approachSources,
 } from "@/lib/approach/sources";
 import { approachCopy } from "@/lib/i18n/copy/approach";
+import {
+  getLocalizedRoute,
+  getPatronymeRoute,
+  getStaticPageRoute,
+} from "@/lib/routing";
 import { SOURCE_KINDS, SOURCE_TIERS } from "@/types/sources";
 
 describe("ApproachPageContent (ETNI-2133)", () => {
@@ -104,19 +109,19 @@ describe("ApproachPageContent (ETNI-2133)", () => {
 
     expect(
       screen.getByRole("link", { name: "Le nom Kouassi" })
-    ).toHaveAttribute("href", "/fr/atlas/noms/PAT_KOUASSI");
+    ).toHaveAttribute("href", getPatronymeRoute("fr", "PAT_KOUASSI"));
     expect(screen.getByRole("link", { name: "Le nom Yao" })).toHaveAttribute(
       "href",
-      "/fr/atlas/noms/PAT_YAO"
+      getPatronymeRoute("fr", "PAT_YAO")
     );
     expect(
       screen.getByRole("link", { name: "Comment nous travaillons" })
-    ).toHaveAttribute("href", "/fr/doctrine");
+    ).toHaveAttribute("href", getLocalizedRoute("fr", "doctrine"));
     expect(
       screen.getByRole("link", { name: "Chercher un nom" })
-    ).toHaveAttribute("href", "/fr/atlas/recherche");
+    ).toHaveAttribute("href", getLocalizedRoute("fr", "search"));
     expect(
       screen.getByRole("link", { name: "Signaler une erreur" })
-    ).toHaveAttribute("href", "/fr/report-error");
+    ).toHaveAttribute("href", getStaticPageRoute("fr", "reportError"));
   });
 });
