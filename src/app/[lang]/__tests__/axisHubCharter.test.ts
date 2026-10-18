@@ -5,6 +5,7 @@ import { describe, expect, it } from "vitest";
 
 import { ACCESS_MODES } from "@/lib/hubs/moduleRegistry";
 import { getLocalizedRoute } from "@/lib/routing";
+import { routePageFile } from "@/test/routePageFile";
 
 const fromRoot = (relativePath: string) => resolve(process.cwd(), relativePath);
 
@@ -44,8 +45,7 @@ describe("the axis hubs — three addresses, one spread", () => {
   // @req REQ-114
   it("serves a page at every axis hub route", () => {
     for (const axis of ACCESS_MODES) {
-      const page = `src/app/[lang]/${HUB_ROUTE_DIR[axis]}/page.tsx`;
-      expect(existsSync(fromRoot(page)), page).toBe(true);
+      expect(routePageFile(HUB_ROUTE_DIR[axis]), axis).not.toBeNull();
     }
   });
 
@@ -69,10 +69,7 @@ describe("the axis hubs — three addresses, one spread", () => {
   // @req REQ-114
   it("builds every spread hub from the shared axis-hub page", () => {
     for (const axis of ACCESS_MODES.filter((mode) => mode !== "dossiers")) {
-      const source = readFileSync(
-        fromRoot(`src/app/[lang]/${HUB_ROUTE_DIR[axis]}/page.tsx`),
-        "utf8"
-      );
+      const source = readFileSync(routePageFile(HUB_ROUTE_DIR[axis]), "utf8");
 
       expect(source, axis).toContain("@/components/hubs/axisHubPage");
       expect(source, axis).toContain(`axis="${axis}"`);

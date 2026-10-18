@@ -49,6 +49,12 @@ const fr = {
     more: "+ en savoir plus",
     less: "− replier",
   },
+  /** The closed label of a folded chapter names what it hides (REQ-153). */
+  fold: {
+    seeAlso: (titles: readonly string[]) =>
+      `+ Voir aussi : ${titles.join(", ")}`,
+    seeNames: (count: number) => `+ Voir les ${count} noms`,
+  },
   amendable: {
     lead: "Vous connaissez un nom, une date ou une source que cette page n'a pas ? Elle est faite pour être complétée.",
     action: "Compléter cette page",

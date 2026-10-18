@@ -137,7 +137,7 @@ const fr = {
   ficheHead: {
     kind: "Peuple",
     people: "personnes",
-    reference: "réf.",
+    inYear: (year: number) => `en ${year}`,
     presenceCountries: (count: number) => `${count} pays de présence`,
     sourceAria: (name: string) => `pour la page ${name}`,
   },

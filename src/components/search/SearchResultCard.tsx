@@ -17,16 +17,17 @@ import {
 } from "@/components/ui/charter-motion";
 import { getCountryCommonName } from "@/lib/countryNames";
 import { formatNumber } from "@/lib/languageTag";
+import { useNameSearchHref } from "@/components/search/NameAddressProvider";
 import {
   getCountryRoute,
   getFamilyRoute,
-  getLocalizedRoute,
   getLanguageRoute,
   getPatronymeRoute,
   getPeopleRoute,
   getPersonRoute,
   getPlaceRoute,
 } from "@/lib/routing";
+import { nameSearchHref } from "@/lib/search/nameAddress";
 import { buildRelationSearchHref } from "@/lib/search/relationSearch";
 import { searchResultDisplayLabel } from "@/lib/search/peopleDisplayNames";
 import {
@@ -55,8 +56,18 @@ import type { Language } from "@/types/shared";
 
 const MAX_COUNTRY_CHIPS = 3;
 
+/**
+ * `nameHref` decides where a word leads, since a word's page is a reading of
+ * the search page: its address on the search pages, which know the
+ * addresses, and `?q=` everywhere else (REQ-200).
+ */
 // @req REQ-002
-export function ficheHrefFor(result: SearchResult, language: Language): string {
+// @req REQ-200
+export function ficheHrefFor(
+  result: SearchResult,
+  language: Language,
+  nameHref: (form: string) => string = (form) => nameSearchHref(language, form)
+): string {
   if (result.type === "country") return getCountryRoute(language, result.id);
   if (result.type === "languageFamily")
     return getFamilyRoute(language, result.id);
@@ -67,8 +78,7 @@ export function ficheHrefFor(result: SearchResult, language: Language): string {
   if (result.type === "place") return getPlaceRoute(language, result.id);
   // A word has no fiche page (REQ-196): its search result is where its name
   // history is told.
-  if (result.type === "word")
-    return `${getLocalizedRoute(language, "search")}?${new URLSearchParams({ q: result.name })}`;
+  if (result.type === "word") return nameHref(result.name);
   return getPeopleRoute(language, result.id);
 }
 
@@ -88,6 +98,7 @@ export function SearchResultCard({
   className,
 }: SearchResultCardProps) {
   const type = result.type as SearchEntityType;
+  const nameHref = useNameSearchHref(language);
   const countries = result.countryIds ?? [];
   const name = searchResultDisplayLabel(result, language);
   const familyName = getLocalizedSearchResultFamilyName(result, language);
@@ -119,7 +130,7 @@ export function SearchResultCard({
         {/* Stretched over the whole card. Anything below that must stay
             separately clickable sits on `relative z-10`, above this overlay. */}
         <Link
-          href={ficheHrefFor(result, language)}
+          href={ficheHrefFor(result, language, nameHref)}
           className={cn(
             "after:absolute after:inset-0 after:content-['']",
             CHARTER_FOCUS_RING

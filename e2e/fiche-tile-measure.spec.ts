@@ -71,7 +71,14 @@ test.describe("@phase-1 fiche tiles — a tile of prose keeps its measure", () =
 
     expect(await columnCount(grid)).toBe(1);
 
-    const tile = grid.locator("details.afh-tile").first();
+    // A chapter of three tiles or more keeps only its first one in view
+    // (brief 10 §2); the tiles after it open in place behind the fold.
+    const fold = chapter.locator("details.ea-fold");
+    if ((await fold.count()) > 0) {
+      await fold.first().locator("summary").first().click();
+      await expect(fold.first()).toHaveAttribute("open", "");
+    }
+    const tile = chapter.locator("details.afh-tile").first();
     await tile.locator("summary").click();
     await expect(tile).toHaveAttribute("open", "");
 

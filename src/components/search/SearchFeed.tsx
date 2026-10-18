@@ -6,6 +6,7 @@ import type { SearchCompanionsData } from "@/api/v2/schemas/searchCompanions";
 import { getSearchEntityLabel } from "@/components/search/searchEntityAccent";
 import { inCountry } from "@/lib/atlas/countryPreposition";
 import { getCountryCommonName } from "@/lib/countryNames";
+import { useNameSearchHref } from "@/components/search/NameAddressProvider";
 import { ficheHrefFor } from "@/components/search/SearchResultCard";
 import { AppellationsBlock } from "@/components/search/feed/AppellationsBlock";
 import {
@@ -160,7 +161,8 @@ function resultForms(
   subjects: readonly SearchResult[],
   leads: readonly SearchLead[],
   nameSuggestions: readonly string[],
-  language: Language
+  language: Language,
+  nameHref: (form: string) => string
 ) {
   if (state === "typo") {
     // Each suggestion is a new search the reader chooses; none is marked as
@@ -174,7 +176,7 @@ function resultForms(
         selfGiven: null,
         problematic: undefined,
         searched: false,
-        href: `${getLocalizedRoute(language, "search")}?${new URLSearchParams({ q: name })}`,
+        href: nameHref(name),
       })
     );
   }
@@ -266,6 +268,7 @@ export function SearchFeed({
   const [validatedOption, setValidatedOption] = useState<number | null>(null);
   const copy = searchFeedCopy[language];
   const answerCopy = nameAnswerCopy[language];
+  const nameHref = useNameSearchHref(language);
   const relatedOnly =
     state === "widened" && subjects.length === 0 && results.length > 0;
   // A related-only answer shows no shelf, so that nothing unrelated sits under
@@ -289,7 +292,8 @@ export function SearchFeed({
     subjects,
     leads,
     nameSuggestions,
-    language
+    language,
+    nameHref
   );
   const forms = presentation?.appellations?.forms ?? derivedForms;
 
@@ -332,7 +336,7 @@ export function SearchFeed({
           kind: getSearchEntityLabel(entry.type),
           name: getLocalizedSearchResultName(entry, language),
           meta: copy.blocks.ficheMeta,
-          href: ficheHrefFor(entry as SearchResult, language),
+          href: ficheHrefFor(entry as SearchResult, language, nameHref),
           onNavigate: () => onResultNavigate?.(entry.type, index + 1),
         }
   );
@@ -646,7 +650,7 @@ export function SearchFeed({
               }
               listedPeoples={subject!.associatedPeoples}
               searchedForm={query}
-              selfNameHref={ficheHrefFor(subject!, language)}
+              selfNameHref={ficheHrefFor(subject!, language, nameHref)}
               reviewed={reviewedFor(subject!)}
               originCoveredElsewhere={
                 coveredByAnother(subject!) || Boolean(sharedOrigin)
