@@ -1,11 +1,13 @@
 import type { Decorator, Meta, StoryObj } from "@storybook/react";
 
+import { SeeAlso } from "@/components/search/feed/SeeAlso";
 import { NameTimeline } from "@/components/search/timeline/NameTimeline";
 import {
   LINGALA_HISTORY,
   PEUL_HISTORY,
 } from "@/lib/search/__fixtures__/nameTimelineFixtures";
 import { cn } from "@/lib/utils";
+import type { FeedLens } from "@/lib/search/searchLenses";
 
 /**
  * The « Histoire du nom » lens (ETNI-2012) as the search result page opens
@@ -24,6 +26,15 @@ const frame: Decorator = (Story, { parameters }) => (
   </div>
 );
 
+const approvedLenses: FeedLens[] = [
+  { id: "timeline", label: "Histoire du nom" },
+  { id: "all", label: "Tout" },
+  { id: "shorts", label: "Shorts", count: 6 },
+  { id: "stories", label: "Récits", count: 5 },
+  { id: "quiz", label: "Jeux", count: 1 },
+  { id: "fiches", label: "Fiches", count: 114 },
+];
+
 const meta = {
   title: "Search/Histoire du nom",
   component: NameTimeline,
@@ -38,6 +49,14 @@ const meta = {
     searched: "lingala",
     subjectType: "language",
     language: "fr",
+    seeAlso: (
+      <SeeAlso
+        language="fr"
+        lenses={approvedLenses}
+        active="timeline"
+        onChange={() => undefined}
+      />
+    ),
   },
 } satisfies Meta<typeof NameTimeline>;
 

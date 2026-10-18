@@ -104,6 +104,7 @@ export interface SearchFeedCopy {
   };
   filters: {
     label: string;
+    seeAlso: string;
     all: string;
     shorts: string;
     stories: string;
@@ -278,6 +279,7 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
     },
     filters: {
       label: "Filtrer ce fil de résultats",
+      seeAlso: "Voir aussi",
       all: "Tout",
       shorts: "Shorts",
       stories: "Récits",

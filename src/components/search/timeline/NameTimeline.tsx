@@ -1,6 +1,12 @@
 "use client";
 
-import { useRef, useState, type ReactNode } from "react";
+import {
+  useEffect,
+  useRef,
+  useState,
+  type MouseEvent,
+  type ReactNode,
+} from "react";
 
 import { getSearchEntityLabel } from "@/components/search/searchEntityAccent";
 import { NameSourcesBlock } from "@/components/search/timeline/NameClosing";
@@ -13,6 +19,7 @@ import { TileSourceMarker } from "@/components/search/timeline/TileSourceMarker"
 import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
 import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import { nameTimelineCopy } from "@/lib/i18n/copy/nameTimeline";
+import { ficheCopy } from "@/lib/i18n/copy/fiche";
 import { peopleCopy } from "@/lib/i18n/copy/people";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
 import {
@@ -26,6 +33,7 @@ import {
   type TimelineRegime,
   type TimelineTile,
 } from "@/lib/search/nameTimeline";
+import { timelineTileAnchorId } from "@/lib/search/nameClosing";
 import { cn } from "@/lib/utils";
 import type { SearchEntityType } from "@/types/afrik-frontend";
 import type { Language } from "@/types/shared";
@@ -39,11 +47,6 @@ export interface NameTimelineProps {
   /** The subject's countries, so « ailleurs » skips its own region. */
   countryIds?: readonly string[];
   /**
-   * Whether « Les sources du nom … » opens its first family (brief 1): the
-   * first subject of the page does, the others stay folded.
-   */
-  sourcesOpen?: boolean;
-  /**
    * The way to the full fiche, drawn between the timeline and « Les sources
    * parlent » when the page has one subject (brief 1: it « stays under the
    * timeline »).
@@ -54,6 +57,8 @@ export interface NameTimelineProps {
    * line and the hand-off, whichever name is open: it belongs to the subject.
    */
   video?: ReactNode;
+  /** The brief 15 lens shortcut, immediately after the summary tile. */
+  seeAlso?: ReactNode;
   /**
    * The name the chips have open, when the page keeps it: a lens round trip
    * unmounts the timeline, and the page's closing band speaks of that name
@@ -66,6 +71,59 @@ export interface NameTimelineProps {
 }
 
 const REGIMES: readonly TimelineRegime[] = ["modern", "colonial", "polity"];
+
+type TimelineStation = TimelineTile[];
+type TimelineSegment =
+  | { kind: "station"; station: TimelineStation }
+  | {
+      kind: "fold";
+      key: string;
+      stations: TimelineStation[];
+      accountCount: number;
+    };
+
+function timelineSegments(stations: TimelineStation[]): TimelineSegment[] {
+  const segments: TimelineSegment[] = [];
+  let seenAccounts = 0;
+  let foldedStations: TimelineStation[] = [];
+
+  const flushFold = () => {
+    if (foldedStations.length === 0) return;
+    const firstTile = foldedStations[0][0];
+    segments.push({
+      kind: "fold",
+      key: `timeline-fold-${firstTile.key}`,
+      stations: foldedStations,
+      accountCount: foldedStations.reduce(
+        (sum, station) =>
+          sum +
+          station.reduce((count, tile) => count + tile.accounts.length, 0),
+        0
+      ),
+    });
+    foldedStations = [];
+  };
+
+  for (const station of stations) {
+    const accountCount = station.reduce(
+      (sum, tile) => sum + tile.accounts.length,
+      0
+    );
+    const staysOpen =
+      seenAccounts < 3 ||
+      station.some((tile) => tile.placement === "birth" || tile.hypotheses);
+    seenAccounts += accountCount;
+
+    if (staysOpen) {
+      flushFold();
+      segments.push({ kind: "station", station });
+    } else {
+      foldedStations.push(station);
+    }
+  }
+  flushFold();
+  return segments;
+}
 
 /**
  * The name-history timeline (REQ-198, DEC-073): one name at a time, from today
@@ -82,9 +140,9 @@ export function NameTimeline({
   subjectType,
   headingLevel = "h1",
   countryIds,
-  sourcesOpen = false,
   ficheLink,
   video,
+  seeAlso,
   openName,
   onOpenNameChange,
   language,
@@ -98,6 +156,8 @@ export function NameTimeline({
   );
   const shown = Math.max(openIndex, 0);
   const [elsewhere, setElsewhere] = useState(false);
+  const [openFolds, setOpenFolds] = useState<Record<string, boolean>>({});
+  const pendingTileKey = useRef<string | undefined>(undefined);
   const namesRef = useRef<HTMLDivElement>(null);
   const name = timeline.names[shown];
   const forms = timeline.italicForms;
@@ -145,6 +205,39 @@ export function NameTimeline({
   const regimes = REGIMES.filter((regime) =>
     name.tiles.some((tile) => tile.regime === regime)
   );
+  const stations = periodRuns(name.tiles);
+  const segments = timelineSegments(stations);
+
+  const revealAccount = (
+    tileKey: string,
+    event: MouseEvent<HTMLAnchorElement>
+  ) => {
+    event.preventDefault();
+    const fold = segments.find(
+      (segment) =>
+        segment.kind === "fold" &&
+        segment.stations.some((station) =>
+          station.some((tile) => tile.key === tileKey)
+        )
+    );
+    if (fold?.kind === "fold") {
+      pendingTileKey.current = tileKey;
+      setOpenFolds((current) => ({ ...current, [fold.key]: true }));
+    } else {
+      document
+        .getElementById(timelineTileAnchorId(name.nameText, tileKey))
+        ?.scrollIntoView?.({ behavior: "smooth", block: "start" });
+    }
+  };
+
+  useEffect(() => {
+    if (!pendingTileKey.current) return;
+    const target = document.getElementById(
+      timelineTileAnchorId(name.nameText, pendingTileKey.current)
+    );
+    target?.scrollIntoView?.({ behavior: "smooth", block: "start" });
+    pendingTileKey.current = undefined;
+  }, [name.nameText, openFolds]);
 
   const passage = (account: NameHistoryAccount, key: string) => (
     <>
@@ -169,6 +262,87 @@ export function NameTimeline({
       ) : null}
     </>
   );
+
+  const renderStation = (station: TimelineStation) => {
+    const [tile, ...joined] = station;
+    const anchor = elsewhere ? anchorOf(tile) : undefined;
+    return (
+      <li
+        key={tile.key}
+        id={timelineTileAnchorId(name.nameText, tile.key)}
+        className="afh-chronology-station"
+        data-regime={tile.regime}
+        data-placement={tile.placement}
+      >
+        <div className="afh-tile">
+          {tile.placement === "birth" ? (
+            <p className="afh-name-timeline-pill">
+              {copy.birthMark(name.nameText)}
+            </p>
+          ) : tile.placement === "before" ? (
+            <p className="afh-name-timeline-pill">
+              {copy.beforeMark(name.nameText)}
+            </p>
+          ) : null}
+          {tile.periodLabel ? (
+            <p className="afh-name-timeline-period">{tile.periodLabel}</p>
+          ) : null}
+          {tile.hypotheses ? (
+            <>
+              <p className="afh-name-timeline-hypotheses">
+                <NamedText
+                  text={copy.hypothesesHeading(name.nameText)}
+                  forms={forms}
+                />
+              </p>
+              {tile.accounts.map((account, index) => (
+                <div key={index} className="afh-name-timeline-hypothesis">
+                  <p className="afh-name-timeline-tag">
+                    <span>{copy.hypothesis(index + 1)}</span>
+                    {tile.periodLabel ? null : (
+                      <span> · {account.period.label}</span>
+                    )}
+                  </p>
+                  {passage(account, `${tile.key}-${index}`)}
+                </div>
+              ))}
+            </>
+          ) : (
+            passage(tile.accounts[0], tile.key)
+          )}
+          {joined.map((next) => (
+            <div
+              key={next.key}
+              id={timelineTileAnchorId(name.nameText, next.key)}
+              className="afh-name-timeline-join"
+            >
+              {passage(next.accounts[0], next.key)}
+            </div>
+          ))}
+          {anchor ? (
+            <div className="afh-name-timeline-elsewhere" data-elsewhere="">
+              <p className="afh-name-timeline-tag">{copy.elsewhereTitle}</p>
+              <p className="afh-name-timeline-statement">
+                <NamedText
+                  text={copy.elsewhereLead[tile.placement](name.nameText)}
+                  forms={forms}
+                />{" "}
+                <SourcedText text={anchor.sentence} forms={[]}>
+                  <TileSourceMarker
+                    statement={anchor.sentence}
+                    sources={anchor.sources}
+                    anchorId={anchorIdOf(`${tile.key}-elsewhere`)}
+                    language={language}
+                    surface="timeline"
+                  />
+                </SourcedText>
+              </p>
+            </div>
+          ) : null}
+        </div>
+      </li>
+    );
+  };
 
   return (
     <>
@@ -212,6 +386,8 @@ export function NameTimeline({
           ) : null}
         </div>
 
+        {seeAlso}
+
         <div
           ref={namesRef}
           role="group"
@@ -253,7 +429,7 @@ export function NameTimeline({
           </p>
         ) : null}
 
-        <div className="afh-name-timeline-tools">
+        <div className="ea-tl-controls">
           <p className="afh-name-timeline-hint">
             <span aria-hidden="true">↓ </span>
             {copy.hint}
@@ -271,113 +447,65 @@ export function NameTimeline({
               {copy.elsewhereButton}
             </button>
           ) : null}
+          {regimes.length > 0 ? (
+            <ul
+              className="afh-chronology-legend"
+              aria-label={copy.regimeLegend}
+              data-chronology-legend=""
+            >
+              {regimes.map((regime) => (
+                <li key={regime} data-regime={regime}>
+                  {copy.regime[regime]}
+                </li>
+              ))}
+            </ul>
+          ) : null}
         </div>
 
-        {regimes.length > 0 ? (
-          <ul
-            className="afh-chronology-legend"
-            aria-label={copy.regimeLegend}
-            data-chronology-legend=""
-          >
-            {regimes.map((regime) => (
-              <li key={regime} data-regime={regime}>
-                {copy.regime[regime]}
-              </li>
-            ))}
-          </ul>
-        ) : null}
-
         <ol
-          className="afh-chronology"
+          className="afh-chronology ea-tl-folds"
           aria-label={copy.tilesLabel(name.nameText)}
         >
-          {/* A run of tiles of one period is one station (brief 11 §4). */}
-          {periodRuns(name.tiles).map(([tile, ...joined]) => {
-            const anchor = elsewhere ? anchorOf(tile) : undefined;
-            return (
-              <li
-                key={tile.key}
-                className="afh-chronology-station"
-                data-regime={tile.regime}
-                data-placement={tile.placement}
-              >
-                <div className="afh-tile">
-                  {tile.placement === "birth" ? (
-                    <p className="afh-name-timeline-pill">
-                      {copy.birthMark(name.nameText)}
-                    </p>
-                  ) : tile.placement === "before" ? (
-                    <p className="afh-name-timeline-pill">
-                      {copy.beforeMark(name.nameText)}
-                    </p>
-                  ) : null}
-                  {tile.periodLabel ? (
-                    <p className="afh-name-timeline-period">
-                      {tile.periodLabel}
-                    </p>
-                  ) : null}
-                  {tile.hypotheses ? (
-                    <>
-                      <p className="afh-name-timeline-hypotheses">
-                        <NamedText
-                          text={copy.hypothesesHeading(name.nameText)}
-                          forms={forms}
-                        />
-                      </p>
-                      {tile.accounts.map((account, index) => (
-                        <div
-                          key={index}
-                          className="afh-name-timeline-hypothesis"
-                        >
-                          <p className="afh-name-timeline-tag">
-                            <span>{copy.hypothesis(index + 1)}</span>
-                            {tile.periodLabel ? null : (
-                              <span> · {account.period.label}</span>
-                            )}
-                          </p>
-                          {passage(account, `${tile.key}-${index}`)}
-                        </div>
-                      ))}
-                    </>
-                  ) : (
-                    passage(tile.accounts[0], tile.key)
-                  )}
-                  {joined.map((next) => (
-                    <div key={next.key} className="afh-name-timeline-join">
-                      {passage(next.accounts[0], next.key)}
-                    </div>
-                  ))}
-                  {anchor ? (
-                    <div
-                      className="afh-name-timeline-elsewhere"
-                      data-elsewhere=""
-                    >
-                      <p className="afh-name-timeline-tag">
-                        {copy.elsewhereTitle}
-                      </p>
-                      <p className="afh-name-timeline-statement">
-                        <NamedText
-                          text={copy.elsewhereLead[tile.placement](
-                            name.nameText
-                          )}
-                          forms={forms}
-                        />{" "}
-                        <SourcedText text={anchor.sentence} forms={[]}>
-                          <TileSourceMarker
-                            statement={anchor.sentence}
-                            sources={anchor.sources}
-                            anchorId={anchorIdOf(`${tile.key}-elsewhere`)}
-                            language={language}
-                            surface="timeline"
-                          />
-                        </SourcedText>
-                      </p>
-                    </div>
-                  ) : null}
-                </div>
+          {segments.map((segment) =>
+            segment.kind === "station" ? (
+              renderStation(segment.station)
+            ) : (
+              <li className="ea-tl-fold" key={segment.key}>
+                <details
+                  className="ea-fold"
+                  open={openFolds[segment.key] ?? false}
+                  onToggle={(event) =>
+                    setOpenFolds((current) => ({
+                      ...current,
+                      [segment.key]: event.currentTarget.open,
+                    }))
+                  }
+                >
+                  <summary
+                    className="afh-tile-control"
+                    aria-label={
+                      openFolds[segment.key]
+                        ? ficheCopy[language].tile.less
+                        : copy.foldMore(segment.accountCount)
+                    }
+                    aria-controls={segment.key}
+                  >
+                    <span data-when="closed">
+                      {copy.foldMore(segment.accountCount)}
+                    </span>
+                    <span data-when="open">
+                      {ficheCopy[language].tile.less}
+                    </span>
+                  </summary>
+                  <ol id={segment.key} className="ea-tl-folded">
+                    {segment.stations.flatMap((station) =>
+                      renderStation(station)
+                    )}
+                  </ol>
+                </details>
               </li>
-            );
-          })}
+            )
+          )}
         </ol>
         <p className="afh-name-timeline-end">{copy.end(name.nameText)}</p>
         {/* Off the thread, no dot, no date: the way on to the self-name's
@@ -413,11 +541,10 @@ export function NameTimeline({
       <NameSourcesBlock
         key={name.nameText}
         name={name}
-        forms={forms}
-        open={sourcesOpen}
         otherKinds={otherVoiceKinds(timeline.names, name)}
         subjectType={subjectType}
         language={language}
+        onRevealAccount={revealAccount}
       />
     </>
   );

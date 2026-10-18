@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Fragment, useId } from "react";
+import { Fragment, useId, type MouseEvent } from "react";
 
 import type { FlagFormTarget } from "@/components/flags/FlagForm";
 import { Badge as NameBadgeChip } from "@/components/names/NameAnswerCard";
@@ -18,7 +18,10 @@ import {
   firstSentence,
   groupAccountsBySourceFamily,
   groupBySourceFamily,
+  sourceRowsForTimelineName,
+  timelineTileAnchorId,
   type NameHistorySource,
+  type NameSourceRow,
   type NextStepCard,
   type SourceFamilyGroup,
   traditionReporters,
@@ -30,7 +33,10 @@ import {
   type NameHistoryAccount,
   type TimelineName,
 } from "@/lib/search/nameTimeline";
-import type { SourceKindFamily } from "@/lib/sources/sourceKindFamily";
+import {
+  sourceKindFamily,
+  type SourceKindFamily,
+} from "@/lib/sources/sourceKindFamily";
 import { cn } from "@/lib/utils";
 import type { SearchEntityType } from "@/types/afrik-frontend";
 import type { FicheEntityType } from "@/types/fiche";
@@ -38,9 +44,9 @@ import type { Language } from "@/types/shared";
 import type { SourceKind } from "@/types/sources";
 
 /**
- * The blocks brief 1 adds under the timeline (approved 2026-10-14; boards
- * docs/design/mockups/site/search-*.dc.html, components on `Main`):
- * « Les sources du nom … », the closing band and the next step.
+ * The blocks under the timeline: « Les sources du nom … », the closing band
+ * and the next step. Result-page source rows follow approved brief 15; fiche
+ * sources retain the account groups because no timeline can receive links.
  */
 
 const MONO = "font-[family-name:var(--afh-font-mono)]";
@@ -103,9 +109,11 @@ function Named({ text, forms }: { text: string; forms: string[] }) {
 
 export interface NameSourcesBlockProps {
   name: TimelineName;
-  forms: string[];
-  /** The first subject's block opens its first family, the others are folded. */
-  open?: boolean;
+  /** Opens and scrolls to a folded timeline tile linked from a source row. */
+  onRevealAccount?: (
+    tileKey: string,
+    event: MouseEvent<HTMLAnchorElement>
+  ) => void;
   /** Kinds of source only the subject's other names cite (see `otherVoiceKinds`). */
   otherKinds?: readonly SourceKind[];
   subjectType?: SearchEntityType;
@@ -117,8 +125,7 @@ export interface NameSourcesBlockProps {
 // @req REQ-161
 export function NameSourcesBlock({
   name,
-  forms,
-  open = false,
+  onRevealAccount,
   otherKinds = [],
   subjectType,
   language,
@@ -128,15 +135,14 @@ export function NameSourcesBlock({
   const groups = groupAccountsBySourceFamily(name);
   if (groups.length === 0) return null;
 
-  const accounts = name.tiles.flatMap((tile) => tile.accounts);
-  const sources = groups.reduce((sum, group) => sum + group.sourceCount, 0);
-  const hypothesis = new Map<NameHistoryAccount, number>();
-  for (const tile of name.tiles) {
-    if (!tile.hypotheses) continue;
-    tile.accounts.forEach((account, index) =>
-      hypothesis.set(account, index + 1)
-    );
+  const rows = sourceRowsForTimelineName(name);
+  const sourceCounts = new Map<SourceKindFamily, number>();
+  for (const { source } of rows) {
+    const family = sourceKindFamily(source.source_kind);
+    sourceCounts.set(family, (sourceCounts.get(family) ?? 0) + 1);
   }
+  const accounts = name.tiles.flatMap((tile) => tile.accounts);
+  const sources = rows.length;
 
   return (
     <section
@@ -156,12 +162,15 @@ export function NameSourcesBlock({
           forms={[name.nameText]}
         />
       </p>
-      <SourceStrip groups={groups} language={language} />
-      <FamilyGroups
+      <SourceStrip
         groups={groups}
-        forms={forms}
-        open={open}
-        hypothesis={hypothesis}
+        sourceCounts={sourceCounts}
+        language={language}
+      />
+      <SourceRows
+        rows={rows}
+        nameText={name.nameText}
+        onRevealAccount={onRevealAccount}
         language={language}
       />
       {otherKinds.length > 0 ? (
@@ -173,6 +182,81 @@ export function NameSourcesBlock({
         </p>
       ) : null}
     </section>
+  );
+}
+
+function SourceRows({
+  rows,
+  nameText,
+  onRevealAccount,
+  language,
+}: {
+  rows: readonly NameSourceRow[];
+  nameText: string;
+  onRevealAccount?: NameSourcesBlockProps["onRevealAccount"];
+  language: Language;
+}) {
+  const copy = nameClosingCopy[language];
+  return (
+    <ul className="flex flex-col gap-afh-md" data-source-rows="">
+      {rows.map(({ source, accounts }) => {
+        const target = accounts[0];
+        const title = source.narrative ?? source.title;
+        const details =
+          source.source_kind === "oral_tradition" && source.carrier
+            ? copy.fiche.carrier(source.carrier, source.place)
+            : [source.author, source.year]
+                .filter(
+                  (value) =>
+                    value !== null && value !== undefined && value !== ""
+                )
+                .join(", ");
+        return (
+          <li
+            key={JSON.stringify([
+              source.source_kind,
+              source.title,
+              source.author,
+              source.year,
+              source.url,
+              source.carrier,
+              source.place,
+              source.narrative,
+            ])}
+            data-source-row=""
+            className="flex flex-col gap-afh-sm rounded-afh-lg border border-afh-border bg-afh-bg p-afh-lg text-afh-small leading-[1.5]"
+          >
+            <span className="flex items-start gap-afh-md font-semibold text-afh-text">
+              <FamilyMark family={sourceKindFamily(source.source_kind)} />
+              {source.url ? (
+                <a
+                  href={source.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline decoration-1 underline-offset-[3px]"
+                >
+                  {title}
+                </a>
+              ) : (
+                title
+              )}
+            </span>
+            <span className="text-afh-text-soft">
+              {details ? `${details} · ` : ""}
+              {sourceKindLabel(source.source_kind, language)}
+            </span>
+            <a
+              href={`#${timelineTileAnchorId(nameText, target.tileKey)}`}
+              onClick={(event) => onRevealAccount?.(target.tileKey, event)}
+              className="w-fit font-bold text-[color:var(--accent-ink)] underline decoration-1 underline-offset-[3px]"
+              data-timeline-account-link=""
+            >
+              {copy.sourceAccounts(accounts.length)}
+            </a>
+          </li>
+        );
+      })}
+    </ul>
   );
 }
 
@@ -376,9 +460,11 @@ function OralSourceLine({
 /** The families present, each with its count of distinct sources. */
 function SourceStrip({
   groups,
+  sourceCounts,
   language,
 }: {
   groups: readonly SourceFamilyGroup[];
+  sourceCounts?: ReadonlyMap<SourceKindFamily, number>;
   language: Language;
 }) {
   const copy = nameClosingCopy[language];
@@ -392,7 +478,11 @@ function SourceStrip({
         >
           <FamilyMark family={group.family} />
           {families[group.family]} ·{" "}
-          <b className={MONO}>{copy.sourceCount(group.sourceCount)}</b>
+          <b className={MONO}>
+            {copy.sourceCount(
+              sourceCounts?.get(group.family) ?? group.sourceCount
+            )}
+          </b>
         </li>
       ))}
     </ul>

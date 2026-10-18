@@ -22,6 +22,7 @@ export interface NameClosingCopy {
   sourcesStrip: string;
   sourceCount: (count: number) => string;
   accountCount: (count: number) => string;
+  sourceAccounts: (count: number) => string;
   undated: string;
   /**
    * The note under block 3 when the subject's other names cite kinds of
@@ -170,6 +171,8 @@ export const nameClosingCopy: Record<Language, NameClosingCopy> = {
     sourcesStrip: "Types de sources",
     sourceCount: (count) => `${count} ${count === 1 ? "source" : "sources"}`,
     accountCount: (count) => `${count} ${count === 1 ? "récit" : "récits"}`,
+    sourceAccounts: (count) =>
+      count === 1 ? "Voir le récit" : `Voir les ${count} récits`,
     undated: "Date inconnue",
     otherVoices: (subject, kinds) => {
       const voices = joinFr(kinds.flatMap((kind) => VOICES_FR[kind] ?? []));

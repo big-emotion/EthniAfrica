@@ -12,7 +12,11 @@ import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
 import { getLocalizedRoute, getNameAnswerRoute } from "@/lib/routing";
 import { NameAddressProvider } from "@/components/search/NameAddressProvider";
 import { PEUL_HISTORY } from "@/lib/search/__fixtures__/nameTimelineFixtures";
-import { groupAccountsBySourceFamily } from "@/lib/search/nameClosing";
+import {
+  groupAccountsBySourceFamily,
+  sourceRowsForTimelineName,
+  timelineTileAnchorId,
+} from "@/lib/search/nameClosing";
 import { buildNameTimeline } from "@/lib/search/nameTimeline";
 
 vi.mock("next/navigation", () => ({
@@ -25,52 +29,17 @@ const name = timeline.names[0];
 
 describe("NameSourcesBlock — « Les sources »", () => {
   // @req REQ-198
-  it("keeps punctuation and guillemets together in source account prose", () => {
-    const timeline = buildNameTimeline(PEUL_HISTORY, "peul");
-    const original = timeline.names[0];
-    const name = {
-      ...original,
-      tiles: original.tiles.map((tile, index) =>
-        index === 0
-          ? {
-              ...tile,
-              accounts: tile.accounts.map((account, accountIndex) =>
-                accountIndex === 0
-                  ? {
-                      ...account,
-                      statement: "Un nom : « Fulɓe ! » ; pourquoi ?",
-                    }
-                  : account
-              ),
-            }
-          : tile
-      ),
-    };
-    render(
-      <NameSourcesBlock
-        name={name}
-        forms={timeline.italicForms}
-        open
-        language="fr"
-      />
-    );
+  it("does not repeat account prose from the timeline", () => {
+    render(<NameSourcesBlock name={name} language="fr" />);
 
-    expect(
-      screen.getAllByText(/Un nom/).find((element) => element.tagName === "P")
-        ?.textContent
-    ).toBe("Un nom\u00a0: «\u00a0Fulɓe\u00a0!\u00a0»\u00a0; pourquoi\u00a0?");
+    for (const account of name.tiles.flatMap((tile) => tile.accounts)) {
+      expect(screen.queryByText(account.statement)).toBeNull();
+    }
   });
 
   // @req REQ-198
-  it("asks who tells the open name and lists its source families", () => {
-    render(
-      <NameSourcesBlock
-        name={name}
-        forms={timeline.italicForms}
-        open
-        language="fr"
-      />
-    );
+  it("keeps the block title, sentence, type strip, and lists source rows", () => {
+    render(<NameSourcesBlock name={name} language="fr" />);
 
     expect(
       screen.getByRole("heading", {
@@ -86,32 +55,41 @@ describe("NameSourcesBlock — « Les sources »", () => {
   });
 
   // @req REQ-198
-  it("opens the first family on the first subject and folds the rest", () => {
+  it("renders source rows without repeating account accordions", () => {
     const { container } = render(
-      <NameSourcesBlock
-        name={name}
-        forms={timeline.italicForms}
-        open
-        language="fr"
-      />
+      <NameSourcesBlock name={name} language="fr" />
     );
-    const families = container.querySelectorAll("details[data-family]");
+    expect(container.querySelectorAll("details[data-family]")).toHaveLength(0);
+    expect(container.querySelectorAll("[data-source-row]").length).toBe(
+      sourceRowsForTimelineName(name).length
+    );
+  });
 
-    expect((families[0] as HTMLDetailsElement).open).toBe(true);
-    for (const family of Array.from(families).slice(1)) {
-      expect((family as HTMLDetailsElement).open).toBe(false);
-    }
+  // @req REQ-198
+  it("links each source to its newest backed account and reveals folded accounts on click", () => {
+    const reveal = vi.fn();
+    const rows = sourceRowsForTimelineName(name);
+    const row = rows.find(({ accounts }) => accounts.length > 1)!;
+    const target = row.accounts[0];
+    render(
+      <NameSourcesBlock name={name} onRevealAccount={reveal} language="fr" />
+    );
+
+    const link = screen.getByRole("link", {
+      name: `Voir les ${row.accounts.length} récits`,
+    });
+    expect(link).toHaveAttribute(
+      "href",
+      `#${timelineTileAnchorId(name.nameText, target.tileKey)}`
+    );
+    fireEvent.click(link);
+    expect(reveal.mock.calls[0][0]).toBe(target.tileKey);
   });
 
   // @req REQ-161
   it("names each source by its type, never by a tier or a score", () => {
     const { container } = render(
-      <NameSourcesBlock
-        name={name}
-        forms={timeline.italicForms}
-        open
-        language="fr"
-      />
+      <NameSourcesBlock name={name} language="fr" />
     );
 
     expect(container.textContent).not.toMatch(
@@ -124,12 +102,7 @@ describe("NameSourcesBlock — the plain title and its sentence", () => {
   // @req REQ-198
   it("titles the block « Les sources du nom … » with no eyebrow above it", () => {
     const { container } = render(
-      <NameSourcesBlock
-        name={name}
-        forms={timeline.italicForms}
-        open
-        language="fr"
-      />
+      <NameSourcesBlock name={name} language="fr" />
     );
 
     expect(container.querySelector("section > .afh-tile-label")).toBeNull();
@@ -150,12 +123,7 @@ describe("NameSourcesBlock — the plain title and its sentence", () => {
     expect(sources).toBe(1);
     expect(accounts).toBeGreaterThan(1);
     const { container } = render(
-      <NameSourcesBlock
-        name={name}
-        forms={timeline.italicForms}
-        open
-        language="fr"
-      />
+      <NameSourcesBlock name={name} language="fr" />
     );
 
     expect(container.querySelector("h2 + p")?.textContent).toBe(
@@ -173,6 +141,8 @@ describe("NameSourcesBlock — the plain title and its sentence", () => {
     expect(copy.sourcesLead(1, 2, "Kollo")).toBe(
       "Une seule source explique ce nom pour l’instant. Voici ses 2 récits."
     );
+    expect(copy.sourceAccounts(1)).toBe("Voir le récit");
+    expect(copy.sourceAccounts(2)).toBe("Voir les 2 récits");
     expect(copy.fiche.sourcesLead(1, 2, 2, "people")).toBe(
       "Une seule source explique les noms de ce peuple pour l’instant. Voici ses 2 récits, rangés par nom."
     );
@@ -227,7 +197,6 @@ describe("NameSourcesBlock — the other names' voices", () => {
     const { container } = render(
       <NameSourcesBlock
         name={name}
-        forms={timeline.italicForms}
         otherKinds={[
           "linguistic_reference",
           "press",
@@ -247,11 +216,7 @@ describe("NameSourcesBlock — the other names' voices", () => {
   // @req REQ-198
   it("draws no note when no other name brings another voice", () => {
     const { container } = render(
-      <NameSourcesBlock
-        name={name}
-        forms={timeline.italicForms}
-        language="fr"
-      />
+      <NameSourcesBlock name={name} language="fr" />
     );
 
     expect(container.querySelector("[data-other-voices]")).toBeNull();

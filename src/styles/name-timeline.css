@@ -129,6 +129,53 @@
   gap: var(--afh-space-md);
 }
 
+.ea-tl-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--afh-space-md);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.ea-tl-controls::-webkit-scrollbar {
+  display: none;
+}
+
+.ea-tl-controls > * {
+  flex: none;
+}
+
+.ea-tl-controls .afh-name-timeline-hint,
+.ea-tl-controls .afh-chronology-legend > li {
+  white-space: nowrap;
+}
+
+.ea-tl-controls .afh-chronology-legend {
+  flex-wrap: nowrap;
+  margin: 0;
+}
+
+.ea-tl-fold::after {
+  display: none;
+}
+
+.ea-tl-fold > .ea-fold {
+  margin-top: 0;
+}
+
+.ea-tl-folded {
+  margin-top: var(--afh-space-md);
+  padding: 0;
+}
+
+.ea-tl-folded > .afh-chronology-station:first-child::before {
+  top: -8px;
+}
+
+.ea-tl-folded > .afh-chronology-station:last-child::before {
+  bottom: -8px;
+}
+
 .afh-name-timeline-hint {
   margin: 0;
   font-size: var(--afh-text-small);

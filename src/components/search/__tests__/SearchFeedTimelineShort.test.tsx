@@ -96,6 +96,18 @@ const follows = (first: Node, second: Node) =>
   );
 
 describe("SearchFeed — one video made on the subject, in « Histoire du nom » (brief 11 §2)", () => {
+  // @req REQ-198
+  it("places the collapsed lens summary after the timeline introduction and before the name choices", () => {
+    const { container } = renderPeul([short({})]);
+    const intro = container.querySelector("[data-timeline-summary]")!;
+    const seeAlso = screen.getByRole("button", { name: /^Voir aussi :/ });
+    const names = screen.getByRole("group", { name: "Les noms de Peul" });
+
+    expect(follows(intro, seeAlso)).toBe(true);
+    expect(follows(seeAlso, names)).toBe(true);
+    expect(seeAlso).toHaveAttribute("aria-expanded", "false");
+  });
+
   // @req REQ-180
   // @req REQ-181
   it("shows the first piece made on the subject once, after the hand-off and before the fiche link", () => {
@@ -236,6 +248,7 @@ describe("SearchFeed — the closing band follows the open name (brief 11 §1d)"
   it("keeps the open name through « Tout » and back, in the chips and in the band", () => {
     renderPeul([]);
     fireEvent.click(screen.getByRole("button", { name: "Fulɓe" }));
+    fireEvent.click(screen.getByRole("button", { name: /^Voir aussi/ }));
     fireEvent.click(screen.getByRole("button", { name: "Tout" }));
     fireEvent.click(screen.getByRole("button", { name: "Histoire du nom" }));
 
