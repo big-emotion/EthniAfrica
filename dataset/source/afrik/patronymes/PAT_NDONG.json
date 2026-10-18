@@ -121,7 +121,7 @@
     }
   ],
   "nameHistory": {
-    "summary": "Le nom Ndong est un nom de personne fang, porté au Gabon, en Guinée équatoriale et au Cameroun. Les sources lues ne disent pas ce qu'il veut dire : on ne sait pas avec certitude d'où il vient. Sa plus ancienne trace connue du projet est une légende de photographie publiée en 1913.",
+    "summary": "Le nom Ndong est un nom de personne fang, porté au Gabon, en Guinée équatoriale et au Cameroun ; c'est aussi le nom d'un clan fang. Les sources lues ne disent pas ce qu'il veut dire : on ne sait pas avec certitude d'où il vient. Sa plus ancienne trace connue du projet est une légende de photographie publiée en 1913.",
     "names": [
       {
         "nameText": "Ndong",
@@ -132,6 +132,50 @@
         "shortLine": "Un nom de personne fang, du Gabon au Cameroun ; on ne sait pas ce qu'il veut dire.",
         "periodLabel": "Écrit dès 1913 ; porté aujourd'hui",
         "accounts": [
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "Décrit en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndong est un nom d'homme fang de Guinée équatoriale, selon Bonifacio Nguema Obiang-Mikue, qui le cite avec Nguema, Esono ou Obiang.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La cultura para el reconocimiento de la identidad: caso de la cultura fang de Guinea Ecuatorial",
+                "author": "Bonifacio Nguema Obiang-Mikue",
+                "year": 2023,
+                "url": "https://doi.org/10.29166/catedra.v6i1.4282",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 179",
+                "notes": "Article de Revista Cátedra 6(1), 2023, pp. 171-186. Lu le 18 octobre 2026 dans le PDF en espagnol. Page 179 : « existen nombres que son netamente utilizados para los hombres, tal es el caso de Nguema, Ndong, Nze, Ondo, Ngomo, Esono, Obiang, Tomo, Bituga »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "Décrit en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndong est aussi celui d'un clan fang. Des Fang de Guinée équatoriale interrogés par Bonifacio Nguema Obiang-Mikue disent qu'être fang, c'est d'abord appartenir à un clan, et citent le clan Ndong avec les clans Esangui, Esawong, Nsoomo ou Obuk. L'auteur ne dit pas si ce clan a un lien avec les hommes qui portent Ndong comme nom personnel.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La cultura para el reconocimiento de la identidad: caso de la cultura fang de Guinea Ecuatorial",
+                "author": "Bonifacio Nguema Obiang-Mikue",
+                "year": 2023,
+                "url": "https://doi.org/10.29166/catedra.v6i1.4282",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 182",
+                "notes": "Article de Revista Cátedra 6(1), 2023, pp. 171-186. Lu le 18 octobre 2026 dans le PDF en espagnol. Page 182, résultats d'une enquête auprès de 102 personnes fang : être fang consiste d'abord à « pertenecer a un clan. Por ejemplo, ser del clan Esangui, Ndong, Esawong, Nsoomo, Obuk, etc. » ; l'auteur ajoute qu'il existe plus de cinquante tribus ou clans fang."
+              }
+            ]
+          },
           {
             "period": {
               "from": null,
