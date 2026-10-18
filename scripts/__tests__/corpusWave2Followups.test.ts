@@ -11,7 +11,9 @@ import { afterEach, beforeEach, describe, expect, it } from "vitest";
 
 import { loadNextSteps } from "../../src/lib/afrikLoader";
 import { parseNameHistory } from "../../src/lib/afrik/parsers/nameHistoryParser";
+import { readAnswer } from "../../src/lib/search/answer";
 import { firstSentence } from "../../src/lib/search/nameClosing";
+import { selfNameLead } from "../../src/lib/search/searchedName";
 import type { SearchResult } from "../../src/types/afrik-frontend";
 import {
   checkNameHistoryBlocks,
@@ -182,13 +184,48 @@ describe("FLG_MANDE — Mandenka is the Manden people's name, Manden is their co
   // the seventy-five Mandé languages share: a self-given name in a family's
   // history would print « Le nom employé par les personnes qui la parlent :
   // Mandenka » under a search for « mandé ».
+  // The search reads a family's `selfAppellation` as a self-given form: a
+  // sentence there printed « Le nom employé par les personnes qui la
+  // parlent : Aucun nom commun… » under a search for « mandé ». The hero
+  // records no self-name, as the approved family-mande boards draw it
+  // (« Auto-appellation : non renseigné »), and the summary says why.
   // @req REQ-178
-  it("says in the hero that the speakers share no name, and whose name Mandenka is", () => {
-    const selfAppellation =
-      read(MANDE).content.decolonialHeader.selfAppellation;
+  it("records no self-name in the hero, and says in the summary that the speakers share none", () => {
+    const mande = read(MANDE);
 
-    expect(selfAppellation).toMatch(/^Aucun nom commun aux locuteurs/);
-    expect(selfAppellation).toMatch(/Mandenka[^;]*gens du Manden/);
+    expect(mande.content.decolonialHeader.selfAppellation).toBeNull();
+    expect(mande.nameHistory.summary).toMatch(
+      /aucun nom commun à toutes les personnes qui parlent les langues mandé/
+    );
+  });
+
+  // @req REQ-178
+  it("gives a search for the family's names no self-given form to lead to", () => {
+    const mande = read(MANDE);
+    const answer = readAnswer("languageFamily", mande.content, mande);
+
+    expect(answer.names.filter((entry) => entry.selfGiven === true)).toEqual(
+      []
+    );
+    for (const query of ["mandé", "mandingue", "manden", "mandenka"]) {
+      expect(selfNameLead(answer.names, query)).toBeUndefined();
+    }
+  });
+
+  // « on a aussi dit mandingue » names the family. Placed after Mandenka, it
+  // read as a gloss of Mandenka, which no reading note records. Mandenka is
+  // told as what Koelle's informants and Niane write, not as a fact.
+  // @req REQ-178
+  it("keeps « mandingue » beside the family name and attributes the Manden people's name", () => {
+    const summary = read(MANDE).nameHistory.summary;
+
+    expect(summary).toMatch(
+      /C'est un nom de savants[^.]*; on a aussi dit mandingue\./
+    );
+    expect(summary).not.toMatch(/Mandenka ; on a aussi dit mandingue/);
+    expect(summary).not.toMatch(/se nomment Mandenka/);
+    expect(summary).toMatch(/Koelle[^.]*Mandénga/);
+    expect(summary).toMatch(/Niane[^.]*Mandenka/);
   });
 
   // @req REQ-178
