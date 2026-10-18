@@ -92,5 +92,178 @@
         "source_kind": "community"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ndai désigne un très petit peuple des environs de Tcholliré, dans le nord du Cameroun, et c'est le nom qu'il se donne lui-même. Les Peuls l'appellent Galke, et un catalogue de langues donne aussi le nom Pormi. Le nom Ndai voudrait dire « vache », mais ce sens n'est rapporté qu'avec prudence ; nous présentons plus bas ses traces.",
+    "names": [
+      {
+        "nameText": "Ndai",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "gke",
+        "namedBy": null,
+        "shortLine": "Le nom d'origine de ce peuple et de sa langue, qu'il se donne lui-même.",
+        "periodLabel": "Écrit depuis 1944 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2001,
+              "to": 2002,
+              "label": "Enquête de 2001, publiée en 2002"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndai est le nom d'origine de ce peuple et de sa langue, et la plupart des publications des linguistes l'emploient. En 2001, cinquante personnes se reconnaissent encore Ndai, dont cinq âgées parlent la langue ; les Ndai se disent cousins des Pam et un seul peuple avec les Dama et les Kali, selon Michael et Charlene Ayotte.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Sociolinguistic Language Survey of Dama, Mono, Pam, Ndai, and Oblo",
+                "author": "Michael Ayotte et Charlene Ayotte",
+                "year": 2002,
+                "url": "https://www.sil.org/system/files/reapdata/12/22/09/122209826390091494056315217643434958601/SILESR2002_048.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6 et p. 8",
+                "notes": "SIL Electronic Survey Reports 2002-048, SIL International, 2002. Enquête menée du 2 au 5 juin 2001 dans les arrondissements de Rey-Bouba et de Tcholliré, au nord du Cameroun. Lu le 18 octobre 2026 dans le PDF de SIL ; pages lues sur la page imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2002,
+              "to": 2002,
+              "label": "Rapportée en 2002"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndai voudrait dire « vache », selon Michael et Charlene Ayotte, qui rapportent ce sens avec prudence : ce serait, écrivent-ils, le mot pour vache.",
+            "hypothesisGroup": "sens du nom Ndai",
+            "sources": [
+              {
+                "title": "Sociolinguistic Language Survey of Dama, Mono, Pam, Ndai, and Oblo",
+                "author": "Michael Ayotte et Charlene Ayotte",
+                "year": 2002,
+                "url": "https://www.sil.org/system/files/reapdata/12/22/09/122209826390091494056315217643434958601/SILESR2002_048.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "SIL Electronic Survey Reports 2002-048, SIL International, 2002. Enquête menée du 2 au 5 juin 2001 dans les arrondissements de Rey-Bouba et de Tcholliré, au nord du Cameroun. Lu le 18 octobre 2026 dans le PDF de SIL ; pages lues sur la page imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1944,
+              "to": 1944,
+              "label": "1944"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ndai figure parmi les parlers que couvre un article de H. Baudélaire sur la façon de compter de 1 à 10 dans les parlers des environs de Garoua, Poli et Rey-Bouba, publié en 1944 dans le Bulletin de la Société des études camerounaises, selon Michael et Charlene Ayotte. C'est la plus ancienne trace de ce nom que le projet connaît, de seconde main. Le peuple existait déjà avant elle.",
+            "formAsWritten": "ndai",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Sociolinguistic Language Survey of Dama, Mono, Pam, Ndai, and Oblo",
+                "author": "Michael Ayotte et Charlene Ayotte",
+                "year": 2002,
+                "url": "https://www.sil.org/system/files/reapdata/12/22/09/122209826390091494056315217643434958601/SILESR2002_048.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 12",
+                "notes": "SIL Electronic Survey Reports 2002-048, SIL International, 2002. Enquête menée du 2 au 5 juin 2001 dans les arrondissements de Rey-Bouba et de Tcholliré, au nord du Cameroun. Lu le 18 octobre 2026 dans le PDF de SIL ; pages lues sur la page imprimée. Les auteurs citent H. Baudélaire, Bulletin de la Société des études camerounaises, n° 5, 1944, p. 25-30, que nous n'avons pas lu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Galke",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fub",
+        "namedBy": "les Peuls, en fulfulde",
+        "shortLine": "Le nom que les Peuls donnent aux Ndai ; un village porte encore ce nom.",
+        "periodLabel": "Écrit depuis 1962 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2001,
+              "to": 2002,
+              "label": "Enquête de 2001, publiée en 2002"
+            },
+            "era": "modern",
+            "statement": "Le nom Galke est celui sous lequel on désigne aujourd'hui les Ndai : c'est le nom que leur donnent les Peuls, en fulfulde. Les Ndai ont fondé à l'est de Tcholliré le village de Mayo Galke, qui garde ce nom alors qu'ils n'y vivent plus, selon Michael et Charlene Ayotte.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Sociolinguistic Language Survey of Dama, Mono, Pam, Ndai, and Oblo",
+                "author": "Michael Ayotte et Charlene Ayotte",
+                "year": 2002,
+                "url": "https://www.sil.org/system/files/reapdata/12/22/09/122209826390091494056315217643434958601/SILESR2002_048.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "SIL Electronic Survey Reports 2002-048, SIL International, 2002. Enquête menée du 2 au 5 juin 2001 dans les arrondissements de Rey-Bouba et de Tcholliré, au nord du Cameroun. Lu le 18 octobre 2026 dans le PDF de SIL ; pages lues sur la page imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1962,
+              "label": "Enquête de 1960, publiée en 1962"
+            },
+            "era": "modern",
+            "statement": "Le nom Galke donne son titre à la note du linguiste Pierre-Francis Lacroix sur la « langue Galke (ndai) », publiée en 1962 après une enquête menée en octobre 1960 auprès de deux personnes qui la parlaient encore, selon Michael et Charlene Ayotte. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Galke",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Sociolinguistic Language Survey of Dama, Mono, Pam, Ndai, and Oblo",
+                "author": "Michael Ayotte et Charlene Ayotte",
+                "year": 2002,
+                "url": "https://www.sil.org/system/files/reapdata/12/22/09/122209826390091494056315217643434958601/SILESR2002_048.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3 et p. 12",
+                "notes": "SIL Electronic Survey Reports 2002-048, SIL International, 2002. Enquête menée du 2 au 5 juin 2001 dans les arrondissements de Rey-Bouba et de Tcholliré, au nord du Cameroun. Lu le 18 octobre 2026 dans le PDF de SIL ; pages lues sur la page imprimée. Les auteurs citent P.-F. Lacroix, Journal of African Languages, vol. 1, 1962, p. 94-121, que nous n'avons pas lu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Pormi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un autre nom des Ndai dans un catalogue de langues ; son origine n'est pas connue.",
+        "periodLabel": "Écrit depuis 2000",
+        "accounts": [
+          {
+            "period": {
+              "from": 2000,
+              "to": 2000,
+              "label": "2000"
+            },
+            "era": "modern",
+            "statement": "Le nom Pormi figure, à côté de Galke, comme autre nom de la langue ndai dans l'Ethnologue de 2000, selon l'annexe de Michael et Charlene Ayotte. C'est la plus ancienne trace de ce nom que le projet connaît. Les sources que nous avons lues ne disent ni qui l'emploie ni d'où il vient.",
+            "formAsWritten": "PORMI",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Sociolinguistic Language Survey of Dama, Mono, Pam, Ndai, and Oblo",
+                "author": "Michael Ayotte et Charlene Ayotte",
+                "year": 2002,
+                "url": "https://www.sil.org/system/files/reapdata/12/22/09/122209826390091494056315217643434958601/SILESR2002_048.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 10",
+                "notes": "SIL Electronic Survey Reports 2002-048, SIL International, 2002. Enquête menée du 2 au 5 juin 2001 dans les arrondissements de Rey-Bouba et de Tcholliré, au nord du Cameroun. Lu le 18 octobre 2026 dans le PDF de SIL ; pages lues sur la page imprimée. Les auteurs citent B. F. Grimes (dir.), Ethnologue, 14e édition, 2000, que nous n'avons pas lu."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

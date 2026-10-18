@@ -182,5 +182,86 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bénoué-Congo, appliqué à des peuples, réunit des centaines de peuples d'Afrique de l'Ouest, du Centre, de l'Est et du Sud, des Yoruba et des Igbo du Nigeria jusqu'aux peuples de langues bantoues. C'est d'abord un nom de linguistes pour une très grande branche de langues, qui reprend les noms de deux fleuves, la Bénoué et le Congo. Ce n'est pas le nom d'un peuple : aucune source que nous avons lue ne donne un nom que ces peuples se donneraient tous ensemble, et chacun porte le sien. Des linguistes doutent même que ces langues forment un groupe ; nous présentons son histoire plus bas.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Bénoué-Congo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Le linguiste allemand Diedrich Westermann, pour des langues, selon Joseph Greenberg",
+        "shortLine": "Un nom de linguistes pour une branche de langues, tiré de deux fleuves, appliqué aux peuples qui les parlent.",
+        "periodLabel": "Pour des peuples depuis 1980 au moins",
+        "accounts": [
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "statement": "Le nom Bénoué-Congo désigne, selon le linguiste David Dalby, le plus grand des groupes de langues que Joseph Greenberg a posés, et sa validité est mise en doute : il cite J. M. Stewart, pour qui les travaux récents mettent en doute la validité de ce groupe. Dalby compare le maintien de ces « divisions arbitraires » sur la carte des langues d'Afrique aux frontières coloniales arbitraires imposées à la carte politique du continent.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie II : Carte linguistique de l'Afrique",
+                "author": "David Dalby",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 344-345"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "statement": "Le nom Bénoué-Congo apparaît pour des peuples sous une forme proche, « les peuples compris entre la Bénoué et le Congo (Zaïre) », chez Théophile Obenga. Il les cite parmi les peuples que la famille de langues niger-congo, « si jamais elle a été bien établie », relierait par des liens très anciens. C'est la plus ancienne trace de ce nom pour des peuples que le projet connaît. Ces peuples existaient déjà avant lui.",
+            "formAsWritten": "les peuples compris entre la Bénoué et le Congo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 4 : Sources et techniques spécifiques de l'histoire africaine : aperçu général",
+                "author": "Théophile Obenga",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 108"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1963,
+              "label": "Avant 1963, chez Westermann"
+            },
+            "statement": "On parle alors de langues bénoué-congo : c'est le nom que le linguiste allemand Diedrich Westermann donnait à un sous-groupe de ses langues soudanaises occidentales, qu'il appelait aussi semi-bantou, selon Joseph Greenberg. Greenberg y range ensuite le bantu.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 329"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
