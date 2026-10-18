@@ -9,6 +9,7 @@ import {
   firstSentence,
   groupAccountsBySourceFamily,
   nameFormOf,
+  namingReason,
   nextStepTargets,
   otherVoiceKinds,
 } from "@/lib/search/nameClosing";
@@ -230,6 +231,82 @@ describe("nextStepTargets — the next step", () => {
       })),
     };
     expect(namers(ownLanguage, "peul")).toEqual([]);
+  });
+
+  // Doctrine §1.1: competing readings stand side by side, unranked. A card
+  // that quoted one of them would crown it, so a namer's reason is read only
+  // from the accounts no other reading contests (« Avatime », four readings).
+  // @req REQ-198
+  it("keeps the readings a hypothesis group sets side by side out of a namer's reason", () => {
+    const account = PEUL_HISTORY.names[0].accounts[0];
+    const told = (statement: string, hypothesisGroup?: string) => ({
+      ...account,
+      statement,
+      hypothesisGroup,
+    });
+    const history = {
+      ...PEUL_HISTORY,
+      names: PEUL_HISTORY.names.map((name) =>
+        name.nameText === "Peul"
+          ? {
+              ...name,
+              languageOfOrigin: "wol",
+              accounts: [
+                told("Le nom Peul viendrait du wolof pal.", "origine du nom"),
+                told("Le nom Peul viendrait du wolof pël.", "origine du nom"),
+                told("Le nom Peul a une seule lecture.", "lecture unique"),
+                told("Le nom Peul est employé en français."),
+              ],
+            }
+          : name
+      ),
+    };
+
+    const [namer] = nextStepTargets(
+      [people],
+      [{ subject: people, nameHistory: history }],
+      "peul"
+    );
+
+    expect(namer.namingAccounts).toEqual([
+      "Le nom Peul a une seule lecture.",
+      "Le nom Peul est employé en français.",
+    ]);
+  });
+});
+
+describe("namingReason — why a namer card is offered", () => {
+  // An initial is not the end of a sentence: the Nupe fiche attributes the
+  // name Tapa to « l'historien E. J. Alagoa », and the card cut him to « E. ».
+  // @req REQ-198
+  it("keeps an author's initials inside the sentence that names the namer", () => {
+    const tapa =
+      "Le nom Tapa est celui que les Yoruba donnent aux Nupe, voisins du royaume d'Oyo, selon l'historien E. J. Alagoa. Il le relève dans les récits d'Oyo.";
+
+    expect(namingReason([tapa], "Yoruba")).toBe(
+      "Le nom Tapa est celui que les Yoruba donnent aux Nupe, voisins du royaume d'Oyo, selon l'historien E. J. Alagoa."
+    );
+  });
+
+  // @req REQ-198
+  it("reads a page or an era reference as part of its sentence", () => {
+    const reference =
+      "Le nom Tapa apparaît vers 1500 apr. J.-C. chez les Yoruba, selon Niane (1985, p. 141). Le reste suit.";
+
+    expect(namingReason([reference], "Yoruba")).toBe(
+      "Le nom Tapa apparaît vers 1500 apr. J.-C. chez les Yoruba, selon Niane (1985, p. 141)."
+    );
+  });
+
+  // @req REQ-198
+  it("reads up to the sentence that names the namer, and no further", () => {
+    expect(
+      namingReason(
+        ["Forme française du nom. Les sources la font venir du wolof. Suite."],
+        "Wolof"
+      )
+    ).toBe("Forme française du nom. Les sources la font venir du wolof.");
+    expect(namingReason(["Aucun lien n'est dit."], "Wolof")).toBeUndefined();
   });
 });
 

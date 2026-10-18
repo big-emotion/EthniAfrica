@@ -245,18 +245,40 @@ function namerOf(
       .map((candidate) => candidate.languageOfOrigin),
   ]);
   if (own.has(origin)) return null;
+  // Doctrine §1.1: competing readings stand side by side, unranked. Quoting
+  // one of them as the card's reason would crown it, so they are left out and
+  // the namer's own summary stands in when nothing else names it.
+  const readings = new Map<string, number>();
+  for (const { hypothesisGroup } of name.accounts) {
+    if (hypothesisGroup) {
+      readings.set(hypothesisGroup, (readings.get(hypothesisGroup) ?? 0) + 1);
+    }
+  }
   // The name is the code until the loader reads the language's fiche.
   return {
     type: "language",
     id: origin,
     name: origin,
     relation: "namer",
-    namingAccounts: name.accounts.map((account) => account.statement),
+    namingAccounts: name.accounts
+      .filter(
+        ({ hypothesisGroup }) =>
+          !hypothesisGroup || readings.get(hypothesisGroup) === 1
+      )
+      .map((account) => account.statement),
   };
 }
 
+// A « . » closes a sentence unless it closes an initial (« E. J. Alagoa »,
+// « J.-C. ») or a reference abbreviation (« p. 141 », « XIXe s. »): accounts
+// cite their authors and pages, and a cut there halves the attribution. A
+// sentence that really ends on one is merged with the next, which keeps the
+// attribution whole at the cost of a longer reason.
+const SENTENCE =
+  /[\s\S]+?(?:[!?]|(?<!(?:^|[^\p{L}\p{N}])(?:\p{Lu}|p|pp|s|av|apr|env|cf|ch|vol|éd|dir|trad|coll|al))\.)(?=\s|$)|[\s\S]+$/gu;
+
 function sentencesOf(text: string): string[] {
-  return (text.match(/[\s\S]+?[.!?](?=\s|$)|[\s\S]+$/gu) ?? [])
+  return (text.match(SENTENCE) ?? [])
     .map((sentence) => sentence.trim())
     .filter(Boolean);
 }
