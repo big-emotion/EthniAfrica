@@ -1,5 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
 import { readSearchedThisWeek } from "../searchedThisWeekData";
+import { getNameAnswerRoute, getLocalizedRoute } from "@/lib/routing";
 
 vi.mock("node:fs/promises", () => ({
   readFile: vi.fn(),
@@ -16,8 +17,12 @@ describe("readSearchedThisWeek", () => {
       JSON.stringify({
         generatedAt: "2026-10-18T00:00:00.000Z",
         names: [
-          { form: "Peul", href: "/fr/atlas/recherche/peul", summary: "..." },
-          { form: "  ", href: "/fr/atlas/recherche/empty" },
+          {
+            form: "Peul",
+            href: getNameAnswerRoute("fr", "Peul"),
+            summary: "...",
+          },
+          { form: "  ", href: `${getLocalizedRoute("fr", "search")}/empty` },
           { form: "Yoruba", href: null },
           null,
         ],
@@ -25,7 +30,7 @@ describe("readSearchedThisWeek", () => {
     );
 
     await expect(readSearchedThisWeek()).resolves.toEqual([
-      { form: "Peul", href: "/fr/atlas/recherche/peul" },
+      { form: "Peul", href: getNameAnswerRoute("fr", "Peul") },
     ]);
   });
 

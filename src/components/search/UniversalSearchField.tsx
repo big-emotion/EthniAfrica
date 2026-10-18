@@ -3,6 +3,7 @@
 import { useEffect, useId, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Search, X } from "lucide-react";
+import { ScrollArea } from "@/components/ui/scroll-area";
 import { trackEvent } from "@/lib/analytics/trackEvent";
 import { searchFieldCopy } from "@/lib/i18n/copy/searchField";
 import { getLocalizedRoute } from "@/lib/routing";
@@ -195,45 +196,47 @@ export function UniversalSearchField({
       {answered && (
         <div className="universal-search-panel">
           {suggestions.length ? (
-            <ul
-              id={`${id}-suggestions`}
-              role="listbox"
-              aria-label={copy.suggestions}
-            >
-              {suggestions.map((item, index) => (
-                <li
-                  key={`${item.type}-${item.id}-${item.form}`}
-                  id={`${id}-option-${index}`}
-                  role="option"
-                  aria-selected={index === active}
-                >
-                  <a
-                    href={item.href}
-                    onMouseEnter={() => setActive(index)}
-                    onClick={(event) => {
-                      event.preventDefault();
-                      openSuggestion(item, index + 1);
-                    }}
+            <ScrollArea className="max-h-80">
+              <ul
+                id={`${id}-suggestions`}
+                role="listbox"
+                aria-label={copy.suggestions}
+              >
+                {suggestions.map((item, index) => (
+                  <li
+                    key={`${item.type}-${item.id}-${item.form}`}
+                    id={`${id}-option-${index}`}
+                    role="option"
+                    aria-selected={index === active}
                   >
-                    <strong>{item.form}</strong>
-                    {item.note && <span>{item.note}</span>}
-                    <small>{copy.kinds[item.type] ?? item.type}</small>
-                  </a>
+                    <a
+                      href={item.href}
+                      onMouseEnter={() => setActive(index)}
+                      onClick={(event) => {
+                        event.preventDefault();
+                        openSuggestion(item, index + 1);
+                      }}
+                    >
+                      <strong>{item.form}</strong>
+                      {item.note && <span>{item.note}</span>}
+                      <small>{copy.kinds[item.type] ?? item.type}</small>
+                    </a>
+                  </li>
+                ))}
+                <li>
+                  <button
+                    type="button"
+                    onClick={() =>
+                      submitSearch(
+                        `${getLocalizedRoute(language, "search")}?${new URLSearchParams({ q: query.trim() })}`
+                      )
+                    }
+                  >
+                    {copy.allAnswers(query.trim())}
+                  </button>
                 </li>
-              ))}
-              <li>
-                <button
-                  type="button"
-                  onClick={() =>
-                    submitSearch(
-                      `${getLocalizedRoute(language, "search")}?${new URLSearchParams({ q: query.trim() })}`
-                    )
-                  }
-                >
-                  {copy.allAnswers(query.trim())}
-                </button>
-              </li>
-            </ul>
+              </ul>
+            </ScrollArea>
           ) : (
             <p>
               {copy.noPrefix(query.trim())}{" "}

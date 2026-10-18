@@ -10,6 +10,7 @@ import {
 } from "@testing-library/react";
 import { UniversalSearchField } from "../UniversalSearchField";
 import type { NameSuggestion } from "../UniversalSearchField";
+import { getLocalizedRoute, getNameAnswerRoute } from "@/lib/routing";
 
 vi.mock("next/navigation", () => ({ useRouter: () => ({ push: vi.fn() }) }));
 vi.mock("@/lib/analytics/trackEvent", () => ({ trackEvent: vi.fn() }));
@@ -21,14 +22,14 @@ const results: NameSuggestion[] = [
     id: "PPL_FULA",
     form: "Fulɓe",
     note: "se nomme lui-même Peul",
-    href: "/fr/atlas/recherche/Fulɓe",
+    href: getNameAnswerRoute("fr", "Fulɓe"),
   },
   {
     type: "country",
     id: "TCD",
     form: "Tchad",
     note: null,
-    href: "/fr/atlas/recherche?q=Tchad",
+    href: `${getLocalizedRoute("fr", "search")}?q=Tchad`,
   },
 ];
 
@@ -67,7 +68,7 @@ describe("UniversalSearchField", () => {
     expect(within(list).getByText("Peuple")).toBeInTheDocument();
     expect(within(list).getByRole("link", { name: /Fulɓe/ })).toHaveAttribute(
       "href",
-      expect.stringContaining("/fr/atlas/recherche")
+      expect.stringContaining(getLocalizedRoute("fr", "search"))
     );
   });
 
@@ -152,7 +153,7 @@ describe("UniversalSearchField", () => {
     fireEvent.change(input, { target: { value: "Fulɓe" } });
     await screen.findByRole("listbox");
     fireEvent.click(screen.getByRole("button", { name: "Rechercher" }));
-    expect(onNavigate).toHaveBeenCalledWith("/fr/atlas/recherche/Fulɓe");
+    expect(onNavigate).toHaveBeenCalledWith(getNameAnswerRoute("fr", "Fulɓe"));
   });
 
   // @req REQ-002
