@@ -72,7 +72,7 @@
       "url": "https://www.nation.sc/articles/15689/we-the-people-of-seychelles",
       "tier": "referenced",
       "source_kind": "press",
-      "notes": "Tony Mathiot, au nom du Musée national d'histoire, Seychelles Nation, 28 octobre 2022. La chronique des premiers habitants nomme la naissance de Louis Leonard Hoareau à Mahé le 20 août 1805."
+      "notes": "Tony Mathiot, au nom du Musée national d'histoire, Seychelles Nation, 5 novembre 2022. La chronique des premiers habitants nomme la naissance de Louis Leonard Hoareau à Mahé le 20 août 1805."
     }
   ],
   "gaps": [
@@ -92,5 +92,104 @@
       "fieldPath": "homonyms",
       "reason": "les résultats exacts « Hoareau », le catalogue des Seychelles National Archives, le Family Tree Project et les recherches patrimoniales décrites par O'Gorman n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Hoareau est un nom de famille porté aux Seychelles depuis le début du XIXe siècle. Un historien seychellois le compte parmi les noms créoles du pays ; une revue de généalogie le range parmi les noms que les premiers habitants, colons français et leurs esclaves, ont laissés à la population. On ne sait pas avec certitude ce que veut dire ce nom : les sources que nous avons pu lire n'en disent rien.",
+    "names": [
+      {
+        "nameText": "Hoareau",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille des Seychelles, porté dès 1805 à Mahé ; son sens reste inconnu.",
+        "periodLabel": "Porté à Mahé dès 1805 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "En 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Hoareau est rangé parmi les noms créoles des Seychelles, à côté de Payette, Labrosse et Camille, par Tony Mathiot, qui écrit au nom du Musée national d'histoire. Il distingue ces noms des noms européens et des noms africains que portent aussi les Seychellois.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "We, the people of Seychelles…",
+                "author": "Tony Mathiot",
+                "year": 2022,
+                "url": "https://www.nation.sc/articles/15689/we-the-people-of-seychelles",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Seychelles Nation, 5 novembre 2022, date imprimée sur la page lue le 18 octobre 2026. Chronique écrite au nom du Musée national d'histoire. Elle range les noms des Seychellois en noms européens, africains et créoles : « and creole: Hoareau, Payette, Labrosse, Camille »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "Rapporté en 2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Hoareau serait l'un des noms que le premier groupe d'habitants, installé à Sainte-Anne en 1770, a laissés à une grande partie de la population seychelloise : des Français et leurs esclaves indiens et africains, selon Guillaume de Morant. Il ajoute que beaucoup de ces colons venaient de La Réunion, sans le dire de chaque nom.",
+            "sources": [
+              {
+                "title": "Les généalogistes de la Réunion à la recherche des premiers habitants des Seychelles",
+                "author": "Guillaume de Morant",
+                "year": 2018,
+                "url": "https://www.rfgenealogie.com/node/5925",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "La Revue française de généalogie, article en ligne du 2 octobre 2018, lu le 18 octobre 2026. Il présente huit généalogistes du Cercle généalogique de Bourbon qui relèvent les tombes du cimetière de Bel-Air, à Mahé. Il écrit : « Comme beaucoup de ces colons étaient d'origine réunionnaise », puis que le groupe de 1770 comprenait des Français et leurs esclaves « qui ont laissé leurs noms à une grande partie de la population seychelloise d'aujourd'hui (Savy, Payet, Mellon, Mussard, Choppy, Hoareau, Morel) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1806,
+              "to": 1904,
+              "label": "1806-1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hoareau figure dans les tables des mariages de Mahé de 1806 à 1904, selon le relevé du Cercle de généalogie Maurice-Rodrigues. La même table donne une forme Hoarau, de 1851 à 1904 ; elle ne dit pas s'il s'agit du même nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Mahé [Seychelles] : mariages, table des patronymes en HO",
+                "author": "Cercle de Généalogie Maurice-Rodrigues",
+                "year": null,
+                "url": "https://cgmrgenealogie.org/tab_mari.php/Mah%C3%A9+%5BSEYCHELLES%5D/_HO",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Base de données d'une association de généalogie, qui dépouille les tables et actes d'état civil, les registres paroissiaux et les registres d'inhumation. Lue le 18 octobre 2026. Le patronyme HOAREAU y figure dans les mariages de Mahé pour la période 1806-1904, avec 14 et 27 mentions dans deux colonnes, « Intervenant 1 » et « Intervenant 2 », que la page ne définit pas ; HOARAU, sur une autre ligne, pour 1851-1904, avec 16 et 7 mentions. Le détail des actes n'a pas été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1805,
+              "to": 1805,
+              "label": "20 août 1805"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hoareau est porté par Louis Leonard Hoareau, né à Mahé le 20 août 1805, que Tony Mathiot cite parmi les enfants des familles blanches de l'époque. C'est la plus ancienne trace de ce nom aux Seychelles que le projet connaît ; elle est rapportée en 2022 et ne dit pas d'où venait la famille.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "We, the people of Seychelles…",
+                "author": "Tony Mathiot",
+                "year": 2022,
+                "url": "https://www.nation.sc/articles/15689/we-the-people-of-seychelles",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Seychelles Nation, 5 novembre 2022, date imprimée sur la page lue le 18 octobre 2026. Chronique écrite au nom du Musée national d'histoire. Après avoir noté que les familles blanches avaient alors beaucoup d'enfants, elle cite des naissances, dont : « On August 20, 1805 Louis Leonard Hoareau was born on Mahé ». L'acte de naissance n'a pas été lu."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

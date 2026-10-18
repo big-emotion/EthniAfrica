@@ -82,5 +82,112 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Ndongo », « Beti », « le Cameroun », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la page Forebears propre au nom consultée directement, n’a établi aucune règle propre à Ndongo permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ndongo est un nom de personne ewondo, porté au Cameroun par des hommes comme par des femmes. Chez les Ewondo, le nom du père peut s'ajouter à celui de l'enfant. Les sources lues ne disent pas ce que veut dire Ndongo : on ne sait pas avec certitude d'où il vient. Sa plus ancienne trace connue du projet est une grammaire de la langue ewondo publiée en 1911.",
+    "names": [
+      {
+        "nameText": "Ndongo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne ewondo du Cameroun, écrit dès 1911 ; on ne sait pas ce qu'il veut dire.",
+        "periodLabel": "Écrit dès 1911 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndongo est aussi porté au Gabon : le chercheur Fabrice Agyune Ndone le relève parmi les noms de personnes des Saké, et le rapproche du nom Ndong que portent certains d'entre eux.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Anthroponymie comparée makina, fang et saké : quelques spécificités sur les noms de personnes chez les Makina du Gabon",
+                "author": "Fabrice Agyune Ndone",
+                "year": 2006,
+                "url": "http://www.ddl.cnrs.fr/fulltext/fflac/Agyune%20Ndone_2006.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5 (tableau n° 1) et p. 7",
+                "notes": "Article d'un doctorant en anthropologie (université Omar Bongo et université Lumière Lyon 2), non daté, mis en ligne par le laboratoire Dynamique du langage ; il cite des travaux de 2005 et 2006. Lu le 18 octobre 2026 ; les pages sont celles du PDF. Page 5, tableau n° 1 : Ndongo figure dans la colonne des noms saké. Page 7 : chez certains Saké, « Ndong qui se rapproche plus de celui de Ndongo existant aussi chez les informateurs shaké »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "Publié en 1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ndongo revient dans la généalogie que Paul Messi écrit en ewondo pour la famille de son père : l'ancêtre Ndongo-Bikie « avait cent enfants », et son descendant Ndongo-Metuú est le grand-père de Paul Messi. Le père de Paul Messi s'appelle Mesi-Méndongo : son nom est suivi de celui de son père, relié par mé-, la marque du complément de nom, explique l'éditeur Martin Heepe.",
+            "aspect": "usage",
+            "formAsWritten": "Ndongo-Bikie",
+            "sources": [
+              {
+                "title": "Jaunde-Texte von Karl Atangana und Paul Messi, nebst experimentalphonetischen Untersuchungen über die Tonhöhen im Jaunde und einer Einführung in die Jaundesprache",
+                "author": "Karl Atangana et Paul Messi, textes édités par Martin Heepe",
+                "year": 1919,
+                "url": "https://archive.org/details/jaundetextevonka00heepuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 316",
+                "notes": "Hambourg, L. Friederichsen, 1919 (Abhandlungen des Hamburgischen Kolonialinstituts, 24) ; exemplaire numérisé d'Internet Archive (université de Toronto), page lue sur l'image le 18 octobre 2026. Textes en langue jaunde (ewondo) de Karl Atangana et Paul Messi, avec la traduction allemande de l'éditeur en regard. Page 316, « Stammbaum meines Vaters Mesi-Méndongo » : « Ndongo-Bikie hatte hundert Kinder », puis Alo-Mesomö, Obamkoá et « Ndongo-Metuú », jusqu'à « mein Vater Mesi-Ménegá-Méndongo-Metuú ». Note 3 : en joignant les noms Mesi-Ménegá et Ndongo-Metuú, on insère le pronom mé-, « wie bei anderen Genetivverbindungen » (comme dans les autres compléments de nom)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "Publié en 1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ndongo est aussi porté par des femmes : Karl Atangana écrit en ewondo, dans le récit de sa vie, qu'il est né à Mvolyé, fils d'Atangana-Esomba et de Judith Ndongo-Edoa.",
+            "aspect": "usage",
+            "formAsWritten": "Ndongo-Edoa",
+            "sources": [
+              {
+                "title": "Jaunde-Texte von Karl Atangana und Paul Messi, nebst experimentalphonetischen Untersuchungen über die Tonhöhen im Jaunde und einer Einführung in die Jaundesprache",
+                "author": "Karl Atangana et Paul Messi, textes édités par Martin Heepe",
+                "year": 1919,
+                "url": "https://archive.org/details/jaundetextevonka00heepuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 89",
+                "notes": "Hambourg, L. Friederichsen, 1919 ; page lue sur l'image le 18 octobre 2026. Page 89, texte n° 26, « Lebenslauf Karl Atangana's » : « Ich, Fr. O. Karl Atangana-Ntsama, bin in Mvoleye geboren als Sohn von Atanana-Esomba und Judith Ndongo-Edoa » ; en ewondo, « Yúdith Ndongo-Edóa »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "Publié en 1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ndongo apparaît par écrit dans une grammaire de la langue ewondo, parlée autour de Yaoundé, publiée par Hermann Nekes : il y sert d'exemple de nom de personne, avec son pluriel Bendongo, « plusieurs personnes du même nom ». C'est la plus ancienne trace de ce nom que le projet connaît ; le nom est plus ancien qu'elle.",
+            "formAsWritten": "Ndongo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Lehrbuch der Jaunde-Sprache",
+                "author": "Hermann Nekes",
+                "year": 1911,
+                "url": "https://archive.org/details/lehrbuchderjaund00nekeuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 54",
+                "notes": "Berlin, Georg Reimer, 1911 ; exemplaire numérisé d'Internet Archive (université de Toronto), page lue sur l'image le 18 octobre 2026. Page 54, parmi les mots de la première classe nominale, qui comprend les noms propres : « Ndongo (Eigenname) Plural Bendongo (mehrere desselben Namens) » ; la même grammaire emploie Ndongo dans ses phrases d'exercice (p. 51, « Ndongo macht den Tisch zurecht »)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

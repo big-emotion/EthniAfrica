@@ -98,5 +98,88 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Hakavona désigne un peuple du sud-ouest de l'Angola que le père Carlos Estermann range en 1960 parmi les peuples du groupe herero. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. Une forme proche, Muhakaona, apparaît en 2022 dans la presse angolaise. Les formes Mucahona, Hakaona, Mucawana, Mucawama, Muhacaona et Ovahakaona, que la fiche relève, n'ont pas été retrouvées dans une source que nous avons ouverte. On ne sait pas d'où vient ce nom : aucune source que nous avons lue ne l'explique. Nous présentons plus bas ce que disent les sources.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Hakavona",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple du groupe herero d'Angola, écrit en 1960 ; on lit Muhakaona en 2022.",
+        "periodLabel": "Écrit dès 1960 ; une forme proche en 2022",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Hakavona a une forme proche, Muhakaona, dans une dépêche de l'agence Lusa reprise par Ver Angola : les Muhakaona y figurent parmi les quelque 43 000 habitants de la municipalité de Virei, dans la province du Namibe, avec les Mucubais, les Cuisses et les Muílas. L'article n'explique pas ce nom et ne dit pas s'il s'agit du même groupe que celui d'Estermann.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Seca no sul do país leva pastores cada vez mais longe em busca de pasto",
+                "author": "Lusa, repris par Ver Angola",
+                "year": 2022,
+                "url": "https://www.verangola.net/va/pt/112022/Ambiente/33520/Seca-no-sul-do-pa%C3%ADs-leva-pastores-cada-vez-mais-longe-em-busca-de-pasto.htm",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Dépêche de l'agence Lusa du 28 novembre 2022, lue le 18 octobre 2026 sur le site Ver Angola : « Ali vivem quase 43 mil pessoas, entre Mucubais, Cuisses, Muhakaona e Muílas »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "1960"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hakavona désigne, pour le père Carlos Estermann, l'un des peuples du groupe herero en Angola, avec les Ndimba, les Himba, les Kwanyoka, les Tyavikwa, les Kuvale et les Ngendelengo. Il écrit ces noms selon leur prononciation et ne publie aucune photo des Hakavona dans son album. Il n'explique pas ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Álbum de penteados do sudoeste de Angola",
+                "author": "Carlos Estermann",
+                "year": 1960,
+                "url": "https://archive.org/details/dli.ernet.535233",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 23-24",
+                "notes": "Lisbonne, 1960 ; préface datée de Sá da Bandeira, juin 1959. Lu dans la numérisation d'Internet Archive le 18 octobre 2026, pages vérifiées sur l'image. Texte français, p. 24 : « Le groupe héréro est représenté en Angola par les Ndimba, Himba, Kwanyoka, Tyavikwa, Hakavona, Kuvale et Ngendelengo » ; p. 23, note : « nous transcrivons tous les termes ethniques d'une manière strictement phonétique »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "1960"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hakavona apparaît sous la forme Hacavona dans l'album de coiffures du sud-ouest de l'Angola que publie le père Carlos Estermann en 1960, parmi les peuples du groupe herero. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Hacavona",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Álbum de penteados do sudoeste de Angola",
+                "author": "Carlos Estermann",
+                "year": 1960,
+                "url": "https://archive.org/details/dli.ernet.535233",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 8",
+                "notes": "Lisbonne, 1960 ; préface datée de Sá da Bandeira, juin 1959. Lu dans la numérisation d'Internet Archive le 18 octobre 2026, page vérifiée sur l'image. Texte portugais : « O grupo dos Hereros está representado em Angola pelas seguintes etnias: Dimba, Chimba, Cuvale, Cuanhoca, Chavícua, Hacavona e Guendelengo »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

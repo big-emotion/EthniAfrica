@@ -216,5 +216,536 @@
         "notes": "Monographie d'historien. L'introduction de sa cinquième partie retrace l'origine du nom arabe des Berbères et sa première attestation."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Amazigh, au pluriel Imazighen, est celui que se donnent des peuples d'Afrique du Nord et du Sahara, comme les Touareg et les berbérophones du Maroc central. Depuis le milieu du XXe siècle, il sert aussi de nom commun à tous les Berbères. D'autres noms existent : Berbères, venu de l'arabe, et Libyens, chez les Grecs de l'Antiquité. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Imazighen",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent des Berbères ; il est devenu le nom commun de tous.",
+        "periodLabel": "Formes proches dès 500 avant notre ère ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1986,
+              "to": 1986,
+              "label": "1986"
+            },
+            "era": "modern",
+            "statement": "Le nom Imazighen, au singulier Amaziɣ, veut dire « les Berbères ». C'est le seul nom que se donnent les Touareg et les berbérophones du Maroc central, selon Salem Chaker ; les Touareg en ont des formes proches selon les régions.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Amaziɣ (le/un Berbère), Encyclopédie berbère, 4",
+                "author": "Salem Chaker",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 18 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 1, 6 et 8"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1986,
+              "to": 1986,
+              "label": "1986"
+            },
+            "era": "modern",
+            "statement": "Le nom Imazighen est devenu en quelques dizaines d'années le nom commun de tous les Berbères et de leur langue, selon Salem Chaker. Il est pourtant inconnu de la culture ancienne du nord de l'Algérie, de la Kabylie, du Mzab et des Aurès.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Amaziɣ (le/un Berbère), Encyclopédie berbère, 4",
+                "author": "Salem Chaker",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 18 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 12, 28 et 30"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1945,
+              "to": 1950,
+              "label": "1945-1950"
+            },
+            "era": "colonial",
+            "statement": "Le nom Imazighen commence à désigner tous les Berbères à partir de la Kabylie, dans les années 1945-1950, surtout par les chansons du mouvement national algérien, selon Salem Chaker.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Amaziɣ (le/un Berbère), Encyclopédie berbère, 4",
+                "author": "Salem Chaker",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 18 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 29"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Imazighen est le pluriel d'Amaziɣ, un nom de peuple très ancien, formé sur une racine dont le verbe a disparu, selon Salem Chaker. Son sens premier reste discuté ; nous présentons les explications plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Amaziɣ (le/un Berbère), Encyclopédie berbère, 4",
+                "author": "Salem Chaker",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 18 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 40-42"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens proposé"
+            },
+            "statement": "Le nom Imazighen voudrait dire « les hommes libres » ou « les nobles », une explication qui remonterait à Jean-Léon l'Africain, puis à S. Gsell, selon Salem Chaker. Chaker la juge « certainement pas fondée » : ce sens n'existe que dans des régions où la société est très hiérarchisée.",
+            "hypothesisGroup": "sens-amazigh",
+            "sources": [
+              {
+                "title": "Amaziɣ (le/un Berbère), Encyclopédie berbère, 4",
+                "author": "Salem Chaker",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 18 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 43-46"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens proposé"
+            },
+            "statement": "Le nom Imazighen viendrait, sous sa forme touarègue Amāheɣ, d'un verbe qui veut dire « piller », selon Charles de Foucauld. Salem Chaker, qui rapporte cette explication, la juge impossible à défendre pour un linguiste.",
+            "hypothesisGroup": "sens-amazigh",
+            "sources": [
+              {
+                "title": "Amaziɣ (le/un Berbère), Encyclopédie berbère, 4",
+                "author": "Salem Chaker",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 18 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 31-34"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens proposé"
+            },
+            "statement": "Le nom Imazighen viendrait d'une racine qui veut dire « rouge », selon T. Sarnelli. Salem Chaker trouve cette explication peu convaincante pour un linguiste.",
+            "hypothesisGroup": "sens-amazigh",
+            "sources": [
+              {
+                "title": "Amaziɣ (le/un Berbère), Encyclopédie berbère, 4",
+                "author": "Salem Chaker",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 18 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 35-36"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens proposé"
+            },
+            "statement": "Le nom Imazighen serait proche d'un verbe touareg du sud qui veut dire « marcher d'un pas fier, comme un noble », selon K. G. Prasse, après F. Nicolas. Salem Chaker juge l'idée possible, mais non démontrée.",
+            "hypothesisGroup": "sens-amazigh",
+            "sources": [
+              {
+                "title": "Amaziɣ (le/un Berbère), Encyclopédie berbère, 4",
+                "author": "Salem Chaker",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 18 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 37-38"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1332,
+              "to": 1406,
+              "label": "XIVe siècle, chez Ibn Khaldoun"
+            },
+            "era": "polity",
+            "statement": "Le nom Imazighen a un ancêtre dans Mazîgh, l'aïeul que l'historien Ibn Khaldoun donne aux Berbères, qu'il fait descendre de Canaan, fils de Cham. Les auteurs arabes n'emploient jamais Amaziɣ comme nom de peuple, mais de très nombreuses tribus berbères se réclamaient d'un ancêtre Maziɣ, selon Salem Chaker.",
+            "formAsWritten": "Mazîgh",
+            "sources": [
+              {
+                "title": "Histoire des Berbères et des dynasties musulmanes de l'Afrique septentrionale, tome I",
+                "author": "Ibn Khaldoun, traduit par William Mac Guckin de Slane",
+                "year": 1852,
+                "url": "https://archive.org/details/ibn-khaldun-histoire-des-berberes-et-des-dynasties-musulmanes-de-l-afrique-septentrionale-v-1",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Alger, Imprimerie du Gouvernement, 1852. Lu dans la numérisation d'Internet Archive le 18 octobre 2026 ; le numéro de page imprimé a été lu sur l'image. « les Berbères sont les enfants de Canaan, fils de Cham, fils de Noé […]. Leur aïeul se nommait Mazîgh ».",
+                "page": "p. 184"
+              },
+              {
+                "title": "Amaziɣ (le/un Berbère), Encyclopédie berbère, 4",
+                "author": "Salem Chaker",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 18 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 22-24"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 1 : L'évolution de l'historiographie de l'Afrique",
+                "author": "John D. Fage",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume. Ibn Khaldūn, « Nord-Africain né à Tunis », y est daté 1332-1406.",
+                "page": "p. 47"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 39,
+              "to": 550,
+              "label": "Du Ier au VIe siècle"
+            },
+            "statement": "Le nom Imazighen a une forme latine, Mazax, que le poète Lucain, au Ier siècle, puis Corippe, vers 550, emploient pour tous les habitants autochtones du Maghreb, selon Salem Chaker. Au IIIe siècle, saint Hippolyte met déjà les Mazices au même rang que les Maures, les Gétules et les Afri.",
+            "formAsWritten": "Mazax",
+            "sources": [
+              {
+                "title": "Amaziɣ (le/un Berbère), Encyclopédie berbère, 4",
+                "author": "Salem Chaker",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 18 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 18-19"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": -500,
+              "to": -401,
+              "label": "Vers 500 avant notre ère, puis au Ve siècle avant notre ère"
+            },
+            "statement": "Le nom Imazighen a des formes proches chez les géographes grecs : Mazyes chez Hécatée de Milet, qui écrit vers 500 avant notre ère, puis Maxyes chez Hérodote, selon Salem Chaker, qui y reconnaît le même nom. Hérodote place ses Maxyes, des sédentaires, en Tunisie, selon J. Desanges. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qui le portent existaient déjà avant lui.",
+            "formAsWritten": "Mazyes",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Amaziɣ (le/un Berbère), Encyclopédie berbère, 4",
+                "author": "Salem Chaker",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 18 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 13-14"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 6 : L'Égypte à l'époque hellénistique",
+                "author": "H. Riad, avec le concours de J. Devisse",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume. Hécatée de Milet « a rédigé vers – 500 la première description systématique du monde » ; Hérodote « avait visité l'Egypte vers – 450 ».",
+                "page": "p. 208"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 17 : Les Protoberbères",
+                "author": "J. Desanges",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 465"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Berbères",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les auteurs arabes, puis les auteurs européens",
+        "shortLine": "Un nom venu de l'arabe Barbar, que des Berbères jugent blessant ; son origine est discutée.",
+        "periodLabel": "Depuis le VIIIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1986,
+              "to": 1986,
+              "label": "1986"
+            },
+            "era": "modern",
+            "statement": "Le nom Berbères est remplacé en français par Imazighen chez des berbérisants du Maghreb, surtout marocains, qui jugent l'ancien nom offensant pour la dignité nationale, selon Salem Chaker. Chaker doute que cet usage s'impose, tant le mot berbère est ancien en français.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Amaziɣ (le/un Berbère), Encyclopédie berbère, 4",
+                "author": "Salem Chaker",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 18 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 48-49"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "16 mai 1930"
+            },
+            "era": "colonial",
+            "statement": "Le nom Berbères sert au Maroc sous protectorat français à mettre à part une partie du pays : le « Ẓahīr berbère » du 16 mai 1930 fait entrer le droit coutumier berbère dans la justice coloniale, selon Jacques Berque. Les Marocains y voient une tentative de diviser le pays, et des Français qui les soutiennent « la manœuvre de propagande coloniale classique ».",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 24 : La politique et le nationalisme au Maghreb et au Sahara, 1919-1935",
+                "author": "Jacques Berque",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 661-662"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Berbères vient de l'arabe Barbar, le nom que les auteurs arabes donnent aux peuples autochtones de l'Afrique du Nord après leur conquête, selon Yves Modéran. Son origine plus lointaine est discutée ; nous présentons les explications plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les Maures et l'Afrique romaine (IVe-VIIe siècle), cinquième partie, introduction : La conquête arabe",
+                "author": "Yves Modéran",
+                "year": 2003,
+                "url": "https://books.openedition.org/efr/1431",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Rome, École française de Rome, 2003. Lu en ligne sur OpenEdition le 18 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 18-19"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Proposée en 2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Berbères viendrait de barbar, la façon populaire de prononcer le latin barbari dans l'Afrique romaine, que les Arabes auraient entendue à leur arrivée, selon Yves Modéran. Une grammaire latine, l'Appendix Probi, corrige déjà cette prononciation.",
+            "hypothesisGroup": "origine-berberes",
+            "sources": [
+              {
+                "title": "Les Maures et l'Afrique romaine (IVe-VIIe siècle), cinquième partie, introduction : La conquête arabe",
+                "author": "Yves Modéran",
+                "year": 2003,
+                "url": "https://books.openedition.org/efr/1431",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Rome, École française de Rome, 2003. Lu en ligne sur OpenEdition le 18 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 19 et note 62"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "Proposée en 1980"
+            },
+            "era": "modern",
+            "statement": "Le nom Berbères viendrait des Bavares, une grande confédération de l'Afrique romaine, selon l'archéologue Gabriel Camps. Yves Modéran, qui rapporte cette hypothèse, objecte que ces peuples vivaient trop loin pour que les Arabes les aient nommés si tôt.",
+            "hypothesisGroup": "origine-berberes",
+            "sources": [
+              {
+                "title": "Les Maures et l'Afrique romaine (IVe-VIIe siècle), cinquième partie, introduction : La conquête arabe",
+                "author": "Yves Modéran",
+                "year": 2003,
+                "url": "https://books.openedition.org/efr/1431",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Rome, École française de Rome, 2003. Lu en ligne sur OpenEdition le 18 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 19 et note 57"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "Proposée en 1892"
+            },
+            "statement": "Le nom Berbères viendrait du latin barbari, le nom que les Romains donnaient aux habitants de l'Afrique restés hors de Rome, selon Schirmer, que rapporte Yves Modéran. Modéran note que les textes de l'époque emploient rarement ce mot.",
+            "hypothesisGroup": "origine-berberes",
+            "sources": [
+              {
+                "title": "Les Maures et l'Afrique romaine (IVe-VIIe siècle), cinquième partie, introduction : La conquête arabe",
+                "author": "Yves Modéran",
+                "year": 2003,
+                "url": "https://books.openedition.org/efr/1431",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Rome, École française de Rome, 2003. Lu en ligne sur OpenEdition le 18 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 18"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 750,
+              "to": 800,
+              "label": "Seconde moitié du VIIIe siècle"
+            },
+            "statement": "Le nom Berbères apparaît sous la forme arabe Barbar chez Ibn al-Kalbî, un auteur de la seconde moitié du VIIIe siècle, mort en 819 ou 821, selon Yves Modéran. Modéran ajoute que des récits transmis oralement, qui remonteraient à la fin du VIIe siècle, parlent déjà de Berbères. C'est la plus ancienne trace écrite de ce nom que le projet connaît. Les peuples qu'il désigne existaient déjà avant lui.",
+            "formAsWritten": "Barbar",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les Maures et l'Afrique romaine (IVe-VIIe siècle), cinquième partie, introduction : La conquête arabe",
+                "author": "Yves Modéran",
+                "year": 2003,
+                "url": "https://books.openedition.org/efr/1431",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Rome, École française de Rome, 2003. Lu en ligne sur OpenEdition le 18 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 19 et note 59"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 301,
+              "to": 600,
+              "label": "IVe-VIe siècle"
+            },
+            "statement": "On parle alors de Mauri, ou Maurousioi en grec, pour désigner les peuples autochtones de l'Afrique du Nord : c'est le nom que préfèrent nettement les textes de cette période, selon Yves Modéran.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Les Maures et l'Afrique romaine (IVe-VIIe siècle), cinquième partie, introduction : La conquête arabe",
+                "author": "Yves Modéran",
+                "year": 2003,
+                "url": "https://books.openedition.org/efr/1431",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Rome, École française de Rome, 2003. Lu en ligne sur OpenEdition le 18 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Libyens",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Grecs, d'après le nom d'un peuple, les Libou",
+        "shortLine": "Le nom grec des peuples d'Afrique du Nord, tiré de celui des Libou.",
+        "periodLabel": "Dès le temps de Ramsès II ; dans l'Antiquité",
+        "accounts": [
+          {
+            "period": {
+              "from": -500,
+              "to": -401,
+              "label": "Ve siècle avant notre ère"
+            },
+            "statement": "Le nom Libyens désigne chez les Grecs les peuples d'Afrique du Nord : Hérodote décrit encore au Ve siècle avant notre ère les Libyens des Syrtes. J. Desanges voit dans les Temehou des textes égyptiens les ancêtres des Libyens que les Grecs connurent en Cyrénaïque.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 17 : Les Protoberbères",
+                "author": "J. Desanges",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 463"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": -1317,
+              "to": -1227,
+              "label": "Sous Ramsès II, après 1317 avant notre ère"
+            },
+            "era": "polity",
+            "statement": "Le nom Libyens vient des Libou, un peuple que nomme pour la première fois une stèle d'el-Alamein, du temps de Ramsès II, selon J. Desanges. Les Grecs ont tiré de ce nom celui de la Libye, d'abord pour le pays de ce peuple, puis pour toute l'Afrique. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il désigne existaient déjà avant lui.",
+            "formAsWritten": "Libou",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 17 : Les Protoberbères",
+                "author": "J. Desanges",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 464"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

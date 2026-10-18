@@ -82,5 +82,43 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Nsue », « Fang », « Guinée équatoriale », « apellido », « onomástica », « etimología », « clan », « transmisión », « alianza », « casta », « homónimo » et « obituario », ainsi que la page Forebears dédiée ; l'article fang déjà mobilisé par une autre fiche a été écarté afin de ne pas partager une source entre dossiers n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Nsue est un nom d'homme fang, porté en Guinée équatoriale. Chez les Fang, le nom du père devient le second nom de ses enfants, et deux auteurs prennent justement Nsue pour exemple. Les sources lues ne disent ni ce que veut dire Nsue ni depuis quand il est écrit : on ne sait pas avec certitude d'où il vient.",
+    "names": [
+      {
+        "nameText": "Nsue",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom d'homme fang de Guinée équatoriale, que le père transmet à ses enfants ; son sens reste inconnu.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2005,
+              "to": 2023,
+              "label": "Écrit en 2005, repris en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Nsue sert d'exemple à Rosendo Ela Nsue Mibui pour expliquer comment les Fang se nomment : les enfants d'un homme appelé Nsue portent tous Nsue comme nom de famille. Bonifacio Nguema Obiang-Mikue, qui le cite, ajoute qu'un fils qui reçoit lui aussi le nom Nsue s'appelle alors Nsue Nsue.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La cultura para el reconocimiento de la identidad: caso de la cultura fang de Guinea Ecuatorial",
+                "author": "Bonifacio Nguema Obiang-Mikue",
+                "year": 2023,
+                "url": "https://doi.org/10.29166/catedra.v6i1.4282",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 179",
+                "notes": "Article de Revista Cátedra 6(1), 2023, pp. 171-186. Lu le 18 octobre 2026 dans le PDF en espagnol. Page 179 : l'auteur cite Rosendo Ela Nsue Mibui (2005, p. 92) : « una persona que se llamase -NSUE- todos tendrán como apellidos el nombre de su padre -NSUE- ». Il ajoute son propre exemple : un père nommé Nsue a quatre enfants, Nguema Nsue, Ondo Nsue, Nsue Nsue et Obono Nsue. L'ouvrage de Nsue Mibui n'a pas été lu."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
