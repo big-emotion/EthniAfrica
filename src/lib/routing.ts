@@ -253,6 +253,29 @@ const PLACE_SLUG: Record<Language, string> = {
 export const getPlaceRoute = (language: Language, id: string): string =>
   `/${language}/${PLACE_SLUG[language]}/${id}`;
 
+/**
+ * The segment an answered name is addressed by: the form composed (NFC) and
+ * lower-cased the French way, nothing else. No ASCII slug: ɓ, ɛ and ŋ are
+ * letters of the names, and folding them would publish Fulɓe as « fulbe »
+ * (DEC-074). Accents are kept too — the corpus spelling is the address, and
+ * an unaccented variant reaches it by one redirect, never by a second page.
+ */
+// @req REQ-200
+export const nameAnswerSegment = (form: string): string =>
+  form.normalize("NFC").trim().toLocaleLowerCase("fr");
+
+/**
+ * The permanent address of a name the corpus answers (REQ-200), under the
+ * search page rather than beside it: it is that page's reading of one name,
+ * given an address a crawler can keep. A typed query stays `?q=`.
+ *
+ * Only a form that has an address may be linked here; the rest stay readings
+ * of the search page (`src/lib/search/nameAddress.ts` decides which).
+ */
+// @req REQ-200
+export const getNameAnswerRoute = (language: Language, form: string): string =>
+  `${getLocalizedRoute(language, "search")}/${encodeURIComponent(nameAnswerSegment(form))}`;
+
 // ---------------------------------------------------------------------------
 // Chapters of the Nommer dossier
 // ---------------------------------------------------------------------------

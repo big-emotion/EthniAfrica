@@ -29,11 +29,11 @@ const countries: PeopleCountriesData = {
   ],
 };
 
-describe("PeopleFicheHead (REQ-115)", () => {
+describe("PeopleFicheHead (REQ-151)", () => {
   // The overline opened on the corpus keys, PPL_YORUBA · FLG_BENOUECONGO. A
   // reader who can see the name has no use for its key, and the approved
   // preview reads "Peuple · Bantou (zone R)" (operator ruling, 2026-09-12).
-  // @req REQ-115
+  // @req REQ-151
   it("names what the record is and its group in the overline, never its keys", () => {
     render(<PeopleFicheHead language="fr" hero={hero} countries={countries} />);
 
@@ -45,7 +45,7 @@ describe("PeopleFicheHead (REQ-115)", () => {
   // 25 of the corpus's 789 fiches declare no ethnoLinguisticGroup. Falling
   // back to the family keeps the overline a triple rather than trailing off
   // into an empty separator.
-  // @req REQ-115
+  // @req REQ-151
   it("falls back to the linguistic family when no ethnolinguistic group is declared", () => {
     render(
       <PeopleFicheHead
@@ -61,15 +61,21 @@ describe("PeopleFicheHead (REQ-115)", () => {
     expect(eyebrow.textContent?.trim()).not.toMatch(/·\s*$/);
   });
 
-  // @req REQ-115
-  it("states the population with the year it was declared for", () => {
-    render(<PeopleFicheHead language="fr" hero={hero} countries={countries} />);
+  // The chip read "48 482 000 personnes · réf. 2025". « réf. » is workshop
+  // vocabulary; the year is written in words, in the same chip as the figure
+  // it dates (boards people-fula-*, people-bassa-*, people-thin-alaba-*).
+  // @req REQ-151
+  it("dates the population in its own chip, in words, with no « réf. »", () => {
+    const { container } = render(
+      <PeopleFicheHead language="fr" hero={hero} countries={countries} />
+    );
 
-    expect(screen.getByText(/48\s*482\s*000/)).toBeInTheDocument();
-    expect(screen.getByText(/2025/)).toBeInTheDocument();
+    const chip = screen.getByText(/48\s*482\s*000/).closest(".afh-chip");
+    expect(chip?.textContent).toMatch(/^48\s482\s000 personnes en 2025$/);
+    expect(container.textContent).not.toMatch(/réf\./i);
   });
 
-  // @req REQ-115
+  // @req REQ-151
   it("counts the countries of presence, not the fiche's currentCountries", () => {
     render(
       <PeopleFicheHead
@@ -84,7 +90,7 @@ describe("PeopleFicheHead (REQ-115)", () => {
     expect(screen.getByText(/2 pays de présence/)).toBeInTheDocument();
   });
 
-  // @req REQ-115
+  // @req REQ-151
   it("leads with the historical region the fiche declares", () => {
     render(<PeopleFicheHead language="fr" hero={hero} countries={countries} />);
 
@@ -93,9 +99,9 @@ describe("PeopleFicheHead (REQ-115)", () => {
     ).toBeInTheDocument();
   });
 
-  // @req REQ-115
-  it("says nothing about a population the fiche never declared", () => {
-    render(
+  // @req REQ-151
+  it("says nothing about a population the fiche never declared, and no year", () => {
+    const { container } = render(
       <PeopleFicheHead
         language="fr"
         hero={hero}
@@ -109,6 +115,7 @@ describe("PeopleFicheHead (REQ-115)", () => {
 
     expect(screen.queryByText(/personnes/)).not.toBeInTheDocument();
     expect(screen.getByText(/2 pays de présence/)).toBeInTheDocument();
+    expect(container.textContent).not.toMatch(/\b\d{4}\b/);
   });
 
   /**
@@ -117,7 +124,7 @@ describe("PeopleFicheHead (REQ-115)", () => {
    * never read the enum `transformPeopleHero` had already put on its hands.
    */
   describe("editorial classification", () => {
-    // @req REQ-115
+    // @req REQ-151
     it("states a colonial-legacy classification and links it to the doctrine", () => {
       render(
         <PeopleFicheHead
@@ -137,7 +144,7 @@ describe("PeopleFicheHead (REQ-115)", () => {
       );
     });
 
-    // @req REQ-115
+    // @req REQ-151
     it("states a contested classification", () => {
       const { container } = render(
         <PeopleFicheHead
@@ -156,7 +163,7 @@ describe("PeopleFicheHead (REQ-115)", () => {
     // nothing at all — no placeholder standing in for the badge, and no node
     // that would reserve space and shift the chips.
     for (const status of [null, "consensual"] as const) {
-      // @req REQ-115
+      // @req REQ-151
       it(`shows no badge and no placeholder when the status is ${status ?? "null"}`, () => {
         const { container } = render(
           <PeopleFicheHead
@@ -178,7 +185,7 @@ describe("PeopleFicheHead (REQ-115)", () => {
   // legend, which states it once over the mark it explains. Repeating it as a
   // title predicate made every one of the 924 fiches announce the same
   // sentence in place of saying anything about its own subject.
-  // @req REQ-115
+  // @req REQ-151
   it("titles the fiche with the people's name and nothing appended to it", () => {
     render(<PeopleFicheHead language="fr" hero={hero} countries={countries} />);
 

@@ -35,6 +35,7 @@ import {
 import type { SharedName } from "@/lib/fiche/countryNextSteps";
 import {
   countryPeopleCount,
+  DEMOGRAPHIC_REFERENCE_YEAR,
   shortSourceName,
 } from "@/lib/countryDataTransformer";
 import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
@@ -261,7 +262,16 @@ export function CountryParchment({
         />
       ) : null}
 
-      <Section title={copy.sections.peoples}>
+      {/* The year dates the shares, so it stands over them and only when
+          there are shares to date (REQ-151); it used to sit in the eyebrow. */}
+      <Section
+        title={copy.sections.peoples}
+        note={
+          data.peoples.rows.length > 0
+            ? copy.summary.referenceYear(DEMOGRAPHIC_REFERENCE_YEAR)
+            : undefined
+        }
+      >
         {!hasPeoples ? (
           <FieldProvenanceMarker state="missing" language={language} />
         ) : (

@@ -2,8 +2,9 @@ import { render, screen, within } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 
 import type { SearchCompanionsData } from "@/api/v2/schemas/searchCompanions";
+import { NameAddressProvider } from "@/components/search/NameAddressProvider";
 import { SearchFeed } from "@/components/search/SearchFeed";
-import { getLocalizedRoute } from "@/lib/routing";
+import { getLocalizedRoute, getNameAnswerRoute } from "@/lib/routing";
 import type { NameAnswer } from "@/lib/search/nameAnswer";
 import type { SearchResult } from "@/types/afrik-frontend";
 
@@ -201,6 +202,32 @@ describe("a query no name answers to", () => {
       `${getLocalizedRoute("fr", "search")}?q=Twa`,
     ]);
     expect(screen.queryByText("votre recherche")).toBeNull();
+  });
+
+  // A suggested name that has an address is offered at that address.
+  // @req REQ-200
+  it("offers a nearest name that has an address at that address", () => {
+    render(
+      <NameAddressProvider spellings={["Aka"]}>
+        <SearchFeed
+          query="pigmée"
+          language="fr"
+          state="typo"
+          results={[]}
+          subjects={[]}
+          leads={leads}
+          companions={noCompanions}
+        />
+      </NameAddressProvider>
+    );
+
+    const hrefs = within(screen.getByTestId("appellations-list"))
+      .getAllByRole("link")
+      .map((link) => link.getAttribute("href"));
+    expect(hrefs).toEqual([
+      getNameAnswerRoute("fr", "Aka"),
+      `${getLocalizedRoute("fr", "search")}?q=Twa`,
+    ]);
   });
 });
 

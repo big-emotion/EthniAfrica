@@ -8,6 +8,7 @@ import {
   strongestSearchSourceStanding,
   type SearchEvidenceSource,
 } from "@/lib/search/evidence";
+import { citesAboveUnverified } from "@/lib/search/nameAddress";
 import { normaliseSearchQuery } from "@/lib/search/queryNormalisation";
 import type { Language } from "@/types/shared";
 
@@ -103,6 +104,25 @@ function termsOf(entry: LedgerEntry): string[] {
   return [...queries, label.fr, label.en ?? ""]
     .filter(Boolean)
     .map(normalizeString);
+}
+
+/**
+ * The published words a crawler is offered, by their French label (REQ-200):
+ * a word with an answer whose piece cites a source above `unverified`.
+ *
+ * The threshold reads the piece's sources rather than each account's, because
+ * the ledger lists a piece's sources once: a word explained by several
+ * accounts carries none on any one of them (see `accountsOf`), and reading
+ * the accounts would keep every such word from crawlers whatever it cites.
+ */
+// @req REQ-200
+export function crawlableWordLabels(
+  ledger: readonly LedgerEntry[] = loadProductionLedger()
+): string[] {
+  return ledger
+    .filter((entry) => entry.word && entry.answer)
+    .filter((entry) => citesAboveUnverified(entry.sources ?? []))
+    .map((entry) => entry.word!.label.fr);
 }
 
 /**
