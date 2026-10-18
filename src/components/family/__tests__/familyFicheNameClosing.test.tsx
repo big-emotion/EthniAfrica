@@ -1,8 +1,14 @@
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+
 import { cleanup, render, screen, within } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
 
 import { LanguageFamilyDetailViewV2 } from "@/components/family/LanguageFamilyDetailViewV2";
-import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
+import {
+  ficheNameHistory,
+  type NameHistory,
+} from "@/lib/afrik/parsers/nameHistoryParser";
 import { getLocalizedRoute } from "@/lib/routing";
 import type { LanguageFamily } from "@/types/afrik";
 
@@ -28,6 +34,8 @@ vi.mock("next/navigation", () => ({
 }));
 
 afterEach(cleanup);
+
+const SEARCH = getLocalizedRoute("fr", "search");
 
 /** Mandé as the corpus tells it, cut down: the family's name and Manden. */
 const MANDE_HISTORY = {
@@ -215,5 +223,88 @@ describe("LanguageFamilyDetailViewV2 — the names and the end of the fiche", ()
     // No name history: the page keeps the end it had.
     expect(container.querySelector("[data-name-closing]")).toBeNull();
     expect(container.querySelector("[data-name-sources]")).toBeNull();
+  });
+});
+
+// Brief 10 §1, approved 2026-10-17: docs/design/mockups/site/family-*.dc.html.
+describe("LanguageFamilyDetailViewV2 — the link to the story of its name", () => {
+  const MANDE_WITH_ORIGIN: LanguageFamily = {
+    ...MANDE,
+    content: {
+      ...MANDE.content,
+      decolonialHeader: {
+        historicalAppellations: ["Mandingue", "Langues mandé"],
+        originOfHistoricalTerm:
+          "Manden est le nom d'un pays, et il circule dans les sources européennes bien avant de devenir une étiquette savante. André Álvares de Almada en parle dès 1594.",
+      },
+    },
+  };
+
+  // @req REQ-198
+  it("links to Mandé, its h1's name and not the self-name Manden, between « Lire la suite » and the names", () => {
+    const { container } = render(
+      <LanguageFamilyDetailViewV2 family={MANDE_WITH_ORIGIN} language="fr" />
+    );
+
+    const story = container.querySelector(
+      '[data-testid="fiche-name-story"]'
+    ) as HTMLElement;
+    const link = within(story).getByRole("link", {
+      name: /^Suivre l'histoire du nom Mandé/,
+    });
+    expect(link).toHaveAttribute("href", `${SEARCH}/mand%C3%A9`);
+    const readMore = story.querySelector("[data-name-story-more]") as Node;
+    const firstRow = story.querySelector(
+      '[data-testid="name-story-form"]'
+    ) as Node;
+    expect(
+      readMore.compareDocumentPosition(link) & Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+    expect(
+      link.compareDocumentPosition(firstRow) & Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+  });
+
+  // FLG_BERBERE is filed « Berbère / Amazighe »; its story leads with
+  // « Berbère », a name the result page does not answer it under today.
+  // @req REQ-198
+  it("draws no link on FLG_BERBERE, whose result page for « Berbère » does not answer it", () => {
+    const raw = JSON.parse(
+      readFileSync(
+        join(
+          process.cwd(),
+          "dataset/source/afrik/famille_linguistique/FLG_BERBERE.json"
+        ),
+        "utf8"
+      )
+    ) as LanguageFamily & { nameHistory?: unknown };
+    const berbere = {
+      ...raw,
+      nameHistory: ficheNameHistory(raw, "FLG_BERBERE"),
+    };
+    const { container } = render(
+      <LanguageFamilyDetailViewV2 family={berbere} language="fr" />
+    );
+
+    expect(
+      container.querySelector('[data-testid="fiche-name-story"]')
+    ).not.toBeNull();
+    expect(
+      screen.queryByRole("link", { name: /Suivre l'histoire du nom/ })
+    ).toBeNull();
+  });
+
+  // @req REQ-198
+  it("draws no link on a family without a name story", () => {
+    render(
+      <LanguageFamilyDetailViewV2
+        family={{ ...MANDE_WITH_ORIGIN, nameHistory: undefined }}
+        language="fr"
+      />
+    );
+
+    expect(
+      screen.queryByRole("link", { name: /Suivre l'histoire du nom/ })
+    ).toBeNull();
   });
 });

@@ -40,6 +40,7 @@ export function FamilyHistorySection({
     >
       <h2 id="family-history-heading">{copy.title}</h2>
       <FicheFieldList
+        fold
         language={language}
         fields={historyFields.flatMap(([label, field]) =>
           data[field] ? [{ label, prose: data[field] }] : []

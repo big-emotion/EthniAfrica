@@ -84,5 +84,114 @@
       "fieldPath": "homonyms",
       "reason": "l'article de Dupraz et Simson, son appareil bibliographique et les recherches exactes « Cole » associées aux Krio n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Cole est un nom de famille krio de Sierra Leone, d'origine anglaise. Des Africains libérés le portent à Freetown dès 1854 ; il serait le nom d'un colon européen pris par des Africains libérés. Nous présentons plus bas ce qu'en disent les sources.",
+    "names": [
+      {
+        "nameText": "Cole",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille krio de Sierra Leone, d'origine anglaise, porté à Freetown dès 1854.",
+        "periodLabel": "Écrit en Sierra Leone dès 1854 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Décrit en 2022"
+            },
+            "statement": "Le nom Cole est d'abord un nom de famille anglais, tiré le plus souvent de Col ou Cole, forme familière du prénom Nicol, c'est-à-dire Nicolas, selon le Dictionary of American Family Names.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Cole",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/cole?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue le 18 octobre 2026 (texte anglais de la page). L'entrée dit : « English: usually from the Middle English and Old French personal name Col(e), Coll(e), Coul(e), a pet form of Nicol (see Nichol and Nicholas), a common personal name from the mid 13th century onward ». L'entrée donne ensuite d'autres origines anglaises, écossaises, irlandaises et françaises, sans sens africain."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "Décrit en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Cole est l'un des noms de famille les plus courants chez les Krio de Sierra Leone, où il passe du père aux enfants, selon Yannick Dupraz et Rebecca Simson.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Elite Persistence in Sierra Leone: What can names tell us? (African Economic History Working Paper No. 71)",
+                "author": "Yannick Dupraz et Rebecca Simson",
+                "year": 2023,
+                "url": "https://www.aehnetwork.org/wp-content/uploads/2023/03/71_AEHNWP_Dupraz_Simson.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9 ; p. 15",
+                "notes": "African Economic History Network, mars 2023, document de travail non relu par des pairs, selon sa page de garde ; la version publiée en 2024 dans le Journal of Development Economics n'a pas été lue. Lu dans le PDF intégral le 18 octobre 2026. Page 9 : les Krio portent pour la plupart des noms anglo-saxons associés aux premiers colons venus des Amériques ou aux administrateurs et colons britanniques, « such as Cole, Davies, Johnson and Williams ». Page 15 : chez les Krio, le nom passe du père aux enfants ; « The liberated Africans in contrast, adopted European names on or after arrival. Many adopted the names of employers, foster families, or administrators. Some of the most common Krio surnames are names of known European settlers (Cole, Coker). »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "Proposé en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Cole serait, chez les Krio, celui d'un colon européen connu, que des Africains libérés ont pris à leur arrivée en Sierra Leone ou après, selon Yannick Dupraz et Rebecca Simson. Beaucoup prenaient alors le nom d'un employeur, d'une famille d'accueil ou d'un administrateur.",
+            "hypothesisGroup": "origine-cole",
+            "sources": [
+              {
+                "title": "Elite Persistence in Sierra Leone: What can names tell us? (African Economic History Working Paper No. 71)",
+                "author": "Yannick Dupraz et Rebecca Simson",
+                "year": 2023,
+                "url": "https://www.aehnetwork.org/wp-content/uploads/2023/03/71_AEHNWP_Dupraz_Simson.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9 ; p. 15",
+                "notes": "African Economic History Network, mars 2023, document de travail non relu par des pairs, selon sa page de garde ; la version publiée en 2024 dans le Journal of Development Economics n'a pas été lue. Lu dans le PDF intégral le 18 octobre 2026. Page 9 : les Krio portent pour la plupart des noms anglo-saxons associés aux premiers colons venus des Amériques ou aux administrateurs et colons britanniques, « such as Cole, Davies, Johnson and Williams ». Page 15 : chez les Krio, le nom passe du père aux enfants ; « The liberated Africans in contrast, adopted European names on or after arrival. Many adopted the names of employers, foster families, or administrators. Some of the most common Krio surnames are names of known European settlers (Cole, Coker). »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "colonial",
+            "statement": "Le nom Cole apparaît par écrit en Sierra Leone chez le missionnaire Sigismund Koelle, qui recueille à Freetown les langues d'Africains libérés : Gbílūdso, né dans le pays egba, s'y appelle aussi Thomas Cole, et Dégbīte, né à Ilésa, Sam Cole. C'est la plus ancienne trace de ce nom en Sierra Leone que le projet connaît ; le nom anglais est plus ancien.",
+            "formAsWritten": "Cole",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Sigismund Wilhelm Koelle",
+                "role": "écrit ces noms"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://archive.org/details/polyglottaafrica00koel",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 5",
+                "notes": "Londres, Church Missionary House, 1854. « Introductory Remarks », page 5 vue en image le 18 octobre 2026 : parmi les informateurs de l'auteur pour les parlers aku, « Gbílūdso, or Thomas Cole, of Freetown », né à Igbóre dans le pays egba, en Sierra Leone depuis vingt-cinq ans, et « Dégbīte, or Sam Cole, of Freetown », né à Ilésa. La même page et les suivantes nomment d'autres informateurs Cole (James Cole, de Freetown ; George Cole, de Campbelltown ; John Cole, de Gloucester). Missionnaire de la Church Missionary Society, cité pour les noms qu'il écrit."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

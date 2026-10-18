@@ -96,5 +96,70 @@
       "fieldPath": "homonyms",
       "reason": "les résultats exacts « Beeharry », les Indian Immigration Archives du Mahatma Gandhi Institute, les publications de l'Aapravasi Ghat et les catalogues bibliographiques sur l'engagisme à Maurice n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Beeharry est un nom d'origine indienne. En 1858, on l'écrit comme le prénom d'émigrants indiens partis pour Maurice. Il renvoie au nom indien Beharry, selon un dictionnaire des noms de famille, et viendrait de bihārī, un élément fréquent des noms de personnes indiens. On ne sait pas avec certitude quand il est devenu un nom de famille à Maurice.",
+    "names": [
+      {
+        "nameText": "Beeharry",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille de Maurice d'origine indienne, écrit dès 1858 comme prénom d'émigrant.",
+        "periodLabel": "Écrit dès 1858",
+        "accounts": [
+          {
+            "period": {
+              "from": 2016,
+              "to": 2022,
+              "label": "Proposé en 2016 et en 2022"
+            },
+            "statement": "Le nom Beeharry est d'origine indienne et renvoie au nom Beharry, selon le dictionnaire des noms de famille de Grande-Bretagne et d'Irlande. Beharry viendrait d'une forme anglicisée de bihārī, un élément qui termine souvent les noms de personnes indiens, autre forme du sanskrit vihārī, « celui qui se promène pour son plaisir » ou « beau », selon le dictionnaire des noms de famille dirigé par Patrick Hanks.",
+            "sources": [
+              {
+                "title": "Beeharry Surname Meaning — The Oxford Dictionary of Family Names in Britain and Ireland",
+                "author": "Patrick Hanks, Richard Coates et Peter McClure",
+                "year": 2016,
+                "url": "https://www.ancestry.com/last-name-meaning/beeharry?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "The Oxford Dictionary of Family Names in Britain and Ireland, Oxford University Press, 2016, notice reproduite par Ancestry et lue le 18 octobre 2026 dans la traduction française que le site affiche : « d'origine indienne ; voir Beharry ». Elle ne parle pas de Maurice."
+              },
+              {
+                "title": "Beharry Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/beharry?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e édition, Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 18 octobre 2026 dans la traduction française que le site affiche. La notice fait de Beharry un nom indien, forme anglicisée de bihārī, élément final courant des noms de personnes indiens, autre forme du sanskrit vihārī, « quelqu'un qui se promène pour le plaisir » ou « beau ». Elle le trouve surtout à Trinité-et-Tobago et au Guyana, et dit qu'il n'est pas en usage en Inde. Elle ne parle ni de Beeharry ni de Maurice."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1858,
+              "label": "1858"
+            },
+            "era": "colonial",
+            "statement": "Le nom Beeharry apparaît comme prénom dans la fiche d'un émigrant de 36 ans, venu du district d'Arrah et parti en 1858 pour Maurice sur le navire Calliope, selon la base de données du projet de recherche Becoming Coolies. Le registre ne lui connaît pas de nom de famille. C'est la plus ancienne trace de ce nom que le projet connaît ; c'est alors un prénom, pas un nom de famille.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Coolitude — fiche d'émigrant « Beeharry »",
+                "author": "Projet Becoming Coolies, universités d'Édimbourg et de Leeds",
+                "year": null,
+                "url": "https://www.coolitude.shca.ed.ac.uk/person/beeharry-unknown",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Base de données d'un projet de recherche financé par l'Arts and Humanities Research Council, sur les migrations de travailleurs sous contrat venus d'Asie du Sud au XIXe siècle. Lue le 18 octobre 2026. La fiche donne « Beeharry » comme prénom et un nom de famille inconnu, 36 ans, district d'Arrah, parti en 1858 pour Maurice sur le navire Calliope. La même base compte d'autres émigrants prénommés Beeharry, partis pour Maurice en 1858 et en 1859."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -82,5 +82,86 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Nzue », « Fang », « Gabon », « patronyme », « nom personnel », « anthroponymie », « étymologie », « clan », « transmission », « alliance », « caste », « homonyme » et « nécrologie », les travaux sur les dictionnaires anthroponymiques gabonais, ainsi que la page Forebears dédiée n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Nzue est un nom de personne fang, porté au Gabon. Dans des contes et des chants fang publiés en 1912, le mot nzue veut dire « chef » ; on ne sait pas avec certitude si le nom vient de ce mot. Sa plus ancienne trace connue du projet est un de ces contes.",
+    "names": [
+      {
+        "nameText": "Nzue",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne fang du Gabon ; le même mot veut dire « chef » dans des textes de 1912.",
+        "periodLabel": "Écrit dès 1912 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Nzue figure parmi les noms de personnes fang du Gabon que relève le chercheur Fabrice Agyune Ndone. Il ne dit pas ce que ce nom veut dire.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Anthroponymie comparée makina, fang et saké : quelques spécificités sur les noms de personnes chez les Makina du Gabon",
+                "author": "Fabrice Agyune Ndone",
+                "year": 2006,
+                "url": "http://www.ddl.cnrs.fr/fulltext/fflac/Agyune%20Ndone_2006.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5 (tableau n° 1)",
+                "notes": "Article d'un doctorant en anthropologie (université Omar Bongo et université Lumière Lyon 2), non daté, mis en ligne par le laboratoire Dynamique du langage ; il cite des travaux de 2005 et 2006. Lu le 18 octobre 2026 ; les pages sont celles du PDF. Page 5, tableau n° 1 : Nzue figure dans la colonne des noms fang, pas dans celles des noms makina et saké. L'article ne donne pas le sens de Nzue."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Publié en 1912"
+            },
+            "statement": "Le nom Nzue est aussi un mot que le père Henri Trilles traduit par « chef ». Un chef fang lui dit : « Mé ne Nzue », « Je suis chef », et le crocodile d'un conte chante « mé ne Nzue Ombure », « moi, le grand chef, moi, Ombure ». Trilles ne dit pas que le nom de personne vient de ce mot ; le lien n'est pas établi.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Le totémisme chez les Fân",
+                "author": "Henri Trilles",
+                "year": 1912,
+                "url": "https://archive.org/details/letotmismechez01rpht",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 198 et 352",
+                "notes": "R. P. H. Trilles, missionnaire spiritain, Münster, Aschendorff, 1912 (collection Bibliothèque Anthropos, tome I, fascicule 4) ; exemplaire numérisé d'Internet Archive (Duquesne University), pages lues sur l'image le 18 octobre 2026. Page 198 : chant du crocodile Ombure, « Mé ne nzue ošu osésé, mé ne Nzue Ombure », traduit « Moi, le grand chef, moi, Ombure ». Page 352 : un chef répond à l'auteur « Mé ne Nzue, mé ne mur akaméyôñ », traduit « Je suis Chef, je suis gardien du totem de ma tribu ». L'auteur ne dit pas où ni quand il a recueilli ces textes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Publié en 1912"
+            },
+            "statement": "Le nom Nzue apparaît par écrit dans un conte fang que publie le père Henri Trilles : le chef des Fang y est appelé Nzue. Trilles demande au conteur si c'était son nom ; on lui répond seulement « Nzue, c'est Nzue ». C'est la plus ancienne trace de ce mot que le projet connaît ; elle ne dit pas s'il s'agit déjà d'un nom de personne ou d'un titre.",
+            "formAsWritten": "Nzue",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Le totémisme chez les Fân",
+                "author": "Henri Trilles",
+                "year": 1912,
+                "url": "https://archive.org/details/letotmismechez01rpht",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 186",
+                "notes": "R. P. H. Trilles, missionnaire spiritain, Münster, Aschendorff, 1912 (collection Bibliothèque Anthropos, tome I, fascicule 4) ; exemplaire numérisé d'Internet Archive (Duquesne University), page lue sur l'image le 18 octobre 2026. Page 186, conte du crocodile Ngan Esa, note 2 : « J'interromps encore : Nzue (chef) était-il son nom ? — On me regarde de travers, et on me répond : Nzue, c'est Nzue. » L'auteur ne dit pas où ni quand il a recueilli ce conte."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

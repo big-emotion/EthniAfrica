@@ -108,5 +108,70 @@
       "fieldPath": "homonyms",
       "reason": "les résultats exacts « Bérenger », les Indian Immigration Archives du Mahatma Gandhi Institute, les publications de l'Aapravasi Ghat et les catalogues bibliographiques sur l'engagisme à Maurice n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Bérenger est un nom de famille porté à Maurice, où l'Assemblée nationale compte des députés de ce nom. En français, ce serait une variante de Béringer, tiré d'un ancien nom de personne germanique. On ne sait pas avec certitude depuis quand des familles le portent à Maurice : les sources que nous avons pu lire n'en disent rien.",
+    "names": [
+      {
+        "nameText": "Bérenger",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Un nom de famille de Maurice, variante française de Béringer, un ancien nom de personne germanique.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2003,
+              "to": 2026,
+              "label": "Depuis 2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Bérenger est porté à Maurice : la page des fonctions de l'Assemblée nationale nomme Paul Raymond Bérenger, qui y a mené les travaux du gouvernement de 2003 à 2005, et Joanna Marie Bérenger, chargée de la discipline de vote de l'opposition depuis août 2026. La page écrit le nom avec un accent.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Mauritius National Assembly — List of Former Leaders of the House",
+                "author": "Assemblée nationale de Maurice",
+                "year": null,
+                "url": "https://mauritiusassembly.govmu.org/mauritiusassembly/index.php/roles/",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Page « Roles » du site de l'Assemblée nationale de Maurice, lue le 18 octobre 2026. Elle nomme, parmi les anciens Leaders of the House, « Hon. Paul Raymond Bérenger, G.C.S.K », du 30 septembre 2003 au 5 juillet 2005, et, parmi les whips, « Hon. BÉRENGER Joanna Marie », Opposition Whip depuis le 13 août 2026. La forme sans accent n'y figure pas. Elle ne dit rien de l'origine du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "statement": "Le nom Bérenger serait, en français, une variante de Béringer. Béringer viendrait d'un ancien nom de personne germanique, Beringar, fait de bern, « ours », et de ger, « lance », selon le dictionnaire des noms de famille dirigé par Patrick Hanks.",
+            "sources": [
+              {
+                "title": "Berenger Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/berenger?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e édition, Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 18 octobre 2026 dans la traduction française que le site affiche. La notice fait du français Bérenger une variante de Béringer, avec un renvoi à Beringer, et de l'anglais Berenger, d'origine normande, une variante de Berringer. Elle ne parle pas de Maurice."
+              },
+              {
+                "title": "Beringer Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/beringer?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e édition, Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 18 octobre 2026 dans la traduction française que le site affiche. La notice fait de l'allemand Beringer et du français Béringer un nom tiré de l'ancien nom de personne germanique Beringar, formé de bern, « ours », et ger, « lance », et renvoie au français Berenger. Elle donne aussi, pour l'allemand, un nom tiré de lieux appelés Behringen ou Böhringen."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

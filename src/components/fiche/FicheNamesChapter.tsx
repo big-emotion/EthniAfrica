@@ -1,9 +1,11 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 
 import type {
   CountryPatronymes,
   PatronymeLinkSummary,
 } from "@/api/v2/services/patronymeFicheLinks";
+import { FicheFold } from "@/components/fiche/FicheFold";
 import { FicheSection } from "@/components/fiche/FicheSection";
 import { FicheTile } from "@/components/fiche/FicheTile";
 import { FieldProvenanceMarker } from "@/components/fiche/FieldProvenanceMarker";
@@ -15,6 +17,7 @@ import {
   sortNames,
   type FicheName,
 } from "@/lib/fiche/names";
+import { ficheCopy } from "@/lib/i18n/copy/fiche";
 import { getPatronymeRoute } from "@/lib/routing";
 import { getTranslation } from "@/lib/translations";
 import type { Language } from "@/types/shared";
@@ -55,6 +58,33 @@ function NameLinks({
         </li>
       ))}
     </ul>
+  );
+}
+
+/**
+ * A long list of names folds behind its count (brief 10 §2, REQ-153 as
+ * extended 2026-10-17), past the same threshold that gives it an index: the
+ * title and the tally above stay in view, so the closed control repeats a
+ * fact the reader already sees rather than hiding one. The CIV list went from
+ * 2,557 px to 524 px on the boards.
+ */
+function NamesFold({
+  count,
+  language,
+  children,
+}: {
+  count: number;
+  language: Language;
+  children: ReactNode;
+}) {
+  if (count <= NAME_INDEX_THRESHOLD) return <>{children}</>;
+  return (
+    <FicheFold
+      label={ficheCopy[language].fold.seeNames(count)}
+      language={language}
+    >
+      {children}
+    </FicheFold>
   );
 }
 
@@ -162,12 +192,14 @@ export function FicheNamesChapter(props: FicheNamesChapterProps) {
                     {onFiche.nameCount(group.names.length)}
                   </span>
                 </div>
-                <NameList
-                  names={group.names}
-                  groupKey={group.system}
-                  groupLabel={copy.nameSystemLabels[group.system]}
-                  language={language}
-                />
+                <NamesFold count={group.names.length} language={language}>
+                  <NameList
+                    names={group.names}
+                    groupKey={group.system}
+                    groupLabel={copy.nameSystemLabels[group.system]}
+                    language={language}
+                  />
+                </NamesFold>
               </div>
             ))}
           </div>
@@ -218,15 +250,17 @@ export function FicheNamesChapter(props: FicheNamesChapterProps) {
                   {onFiche.nameCount(attested.length)}
                 </span>
               </div>
-              <NameList
-                names={attested}
-                groupKey="attested"
-                groupLabel={onFiche.attestedLabel}
-                language={language}
-              />
-              <p data-names-systems="" className="afh-names-systems">
-                {systemsLine(attested, language)}
-              </p>
+              <NamesFold count={attested.length} language={language}>
+                <NameList
+                  names={attested}
+                  groupKey="attested"
+                  groupLabel={onFiche.attestedLabel}
+                  language={language}
+                />
+                <p data-names-systems="" className="afh-names-systems">
+                  {systemsLine(attested, language)}
+                </p>
+              </NamesFold>
             </div>
           ) : null}
           {carried.length > 0 ? (

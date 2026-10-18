@@ -92,5 +92,63 @@
       "fieldPath": "homonyms",
       "reason": "les résultats exacts « Michel », le catalogue des Seychelles National Archives, le Family Tree Project et les recherches patrimoniales décrites par O'Gorman n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Michel est un nom de famille porté aux Seychelles. Il vient du prénom Michel, selon un dictionnaire des noms de famille qui le donne aussi comme mauricien. Il figure dans les registres de mariage de Mahé dès 1856. On ne sait pas avec certitude comment ce prénom est devenu un nom de famille dans les familles seychelloises.",
+    "names": [
+      {
+        "nameText": "Michel",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Un nom de famille des Seychelles tiré du prénom Michel ; écrit à Mahé dès 1856.",
+        "periodLabel": "Écrit à Mahé dès 1856 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Michel est un nom de famille seychellois et mauricien, comme il est aussi français, wallon, allemand, néerlandais ou haïtien. Il vient du prénom Michel, selon le dictionnaire des noms de famille dirigé par Patrick Hanks. Le dictionnaire ne dit pas comment ce prénom est devenu un nom de famille aux Seychelles.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Michel Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/michel?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e édition, Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 18 octobre 2026 dans la traduction française que le site affiche. La notice donne Michel comme nom français, wallon, allemand, néerlandais, antillais (surtout d'Haïti), seychellois et mauricien, tiré du prénom Michel, avec un renvoi à Michael. Elle donne d'autres origines pour d'autres langues : une forme castillanisée du nom basque Mitxel, une variante polonaise de Michał, une variante anglaise et écossaise de Mitchell, une forme abrégée de noms grecs aux États-Unis."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "1856"
+            },
+            "era": "colonial",
+            "statement": "Le nom Michel figure comme nom de famille dans les tables des mariages de Mahé, aux Seychelles, à partir de 1856, selon le relevé du Cercle de généalogie Maurice-Rodrigues. C'est la plus ancienne trace de ce nom aux Seychelles que le projet connaît ; elle ne dit pas d'où venaient les familles qui le portaient.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Mahé [Seychelles] : mariages, table des patronymes en MIC",
+                "author": "Cercle de Généalogie Maurice-Rodrigues",
+                "year": null,
+                "url": "https://cgmrgenealogie.org/tab_mari.php/Mah%C3%A9+%5BSEYCHELLES%5D/_MIC",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Base de données d'une association de généalogie, qui dépouille les tables et actes d'état civil, les registres paroissiaux et les registres d'inhumation. Lue le 18 octobre 2026. Le patronyme MICHEL y figure dans les mariages de Mahé pour la période 1856-1904, avec 13 et 12 mentions dans deux colonnes, « Intervenant 1 » et « Intervenant 2 », que la page ne définit pas. Une ligne « MICHEL ALIAS MACASSAR » est datée de 1867. Le détail des actes n'a pas été lu."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
