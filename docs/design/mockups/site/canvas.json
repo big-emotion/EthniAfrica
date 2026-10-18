@@ -842,6 +842,30 @@
       "h": 980,
       "expand": "fill",
       "title": "Proposition · État « sanoh » · 1440 px — brief 19"
+    },
+    "word-race-430.dc.html": {
+      "x": 17830,
+      "y": 0,
+      "w": 430,
+      "h": 7462,
+      "expand": "fill",
+      "title": "Mot race · 430"
+    },
+    "word-race-768.dc.html": {
+      "x": 18340,
+      "y": 0,
+      "w": 768,
+      "h": 5339,
+      "expand": "fill",
+      "title": "Mot race · 768"
+    },
+    "word-race-1440.dc.html": {
+      "x": 19188,
+      "y": 0,
+      "w": 1440,
+      "h": 4870,
+      "expand": "fill",
+      "title": "Mot race · 1440"
     }
   },
   "order": [
@@ -955,7 +979,10 @@
     "approach-1440.dc.html",
     "home-430.dc.html",
     "home-768.dc.html",
-    "home-1440.dc.html"
+    "home-1440.dc.html",
+    "word-race-430.dc.html",
+    "word-race-768.dc.html",
+    "word-race-1440.dc.html"
   ],
   "notes": {
     "g0": {
@@ -997,6 +1024,13 @@
       "x": 14632,
       "y": -300,
       "text": "Groupe 0 · Atlas",
+      "kind": "title1",
+      "maxW": 2798
+    },
+    "g6": {
+      "x": 17830,
+      "y": -300,
+      "text": "Groupe 5 · Mots",
       "kind": "title1",
       "maxW": 2798
     }
