@@ -332,7 +332,7 @@ async function withoutSoundAlikes(
   otherKinds: { exactMatch: boolean }[]
 ): Promise<RankedPayload> {
   if (patronymes.total === 0) return patronymes;
-  if (!(await answeredExactlyElsewhere(supabase, params, text, otherKinds))) {
+  if (!(await answeredExactly(supabase, params, text, otherKinds))) {
     return patronymes;
   }
 
@@ -350,13 +350,21 @@ async function withoutSoundAlikes(
   return asRankedPayload(data);
 }
 
-async function answeredExactlyElsewhere(
+/**
+ * REQ-201's test of « something answers this query exactly », shared by the
+ * sound-alike withholding and the family-name leads (DEC-075). `hits` are the
+ * ranked rows of the page being answered. On a later page, page one is asked
+ * again, its family names included: an exact family name there answers too,
+ * and the SQL already withholds sound-alikes for it, so the withholding call
+ * it may cause returns the same rows.
+ */
+async function answeredExactly(
   supabase: ReturnType<typeof createServerClient>,
   params: FtsSearchParams,
   text: string,
-  otherKinds: { exactMatch: boolean }[]
+  hits: { exactMatch: boolean }[]
 ): Promise<boolean> {
-  if (otherKinds.some((hit) => hit.exactMatch)) return true;
+  if (hits.some((hit) => hit.exactMatch)) return true;
   // A published word answers its query on the page even with no fiche.
   if (findWordAnswer(text).length > 0) return true;
   // Every kind ranks its exact rows first, so past the first page they are
@@ -373,6 +381,7 @@ async function answeredExactlyElsewhere(
     firstPage.countries,
     firstPage.families,
     firstPage.persons,
+    firstPage.patronymes,
     firstPage.languages,
     firstPage.places ?? [],
     firstPage.words ?? [],
@@ -533,14 +542,33 @@ async function attachSuggestions(
     // their existing fail-closed behaviour.
     if (total === 0) throw error;
   }
+  // A family name is offered only as a spelling of the searched name (DEC-075):
+  // the SQL keeps those that share its first letter at >= 0.4, and it is
+  // offered only when nothing answers exactly. That also holds when the
+  // search found related fiches, which is the case « tchikaya » is in. A
+  // widening answers each name apart, so no spelling of the phrase is offered.
+  const familyNames = nameSuggestions.filter(
+    (item) => item.kind === "patronyme"
+  );
+  const otherNames = nameSuggestions.filter(isNearNameKind);
+  const offerFamilyNames =
+    familyNames.length > 0 &&
+    !ranked.widenedFrom &&
+    !(await answeredExactly(supabase, params, text, rankedHits(ranked)));
+
   // REQ-125 keeps zero-result recovery distinct from the similar-name
-  // editorial block on an answered search. The latter excludes entities
-  // already present in the grouped result arrays, then keeps the same public
-  // three-item bound.
-  const leads = total === 0 ? nameSuggestions.slice(0, 3) : [];
+  // editorial block on an answered search (REQ-180), which never carries a
+  // family name. The latter excludes entities already present in the grouped
+  // result arrays, then keeps the same public three-item bound.
+  const leads =
+    total === 0
+      ? (offerFamilyNames ? nameSuggestions : otherNames).slice(0, 3)
+      : offerFamilyNames
+        ? familyNames.slice(0, 3)
+        : [];
   const nearNames: SearchNearName[] =
     total > 0
-      ? nameSuggestions
+      ? otherNames
           .filter(
             (item) => !visibleNameKeys.has(nameEntityKey(item.kind, item.id))
           )
@@ -548,6 +576,23 @@ async function attachSuggestions(
       : [];
 
   return { ...ranked, leads, nearNames };
+}
+
+function isNearNameKind(item: SearchLead): item is SearchNearName {
+  return item.kind !== "patronyme";
+}
+
+function rankedHits(ranked: FtsSearchResponse): { exactMatch: boolean }[] {
+  return [
+    ranked.peoples,
+    ranked.countries,
+    ranked.families,
+    ranked.persons,
+    ranked.patronymes,
+    ranked.languages,
+    ranked.places ?? [],
+    ranked.words ?? [],
+  ].flat();
 }
 
 function nameEntityKey(kind: SearchLead["kind"], id: string): string {
