@@ -210,6 +210,31 @@ describe("SearchFeed", () => {
     expect(action).not.toHaveClass("hover:text-afh-text");
   });
 
+  // The accent tint stays light at night while the page's body ink turns
+  // light too (1.12:1 measured on the board). The accent fill's own ink
+  // holds in both themes, as on OwedBlock.
+  // @req REQ-180
+  it("keeps the unknown name's button legible by night: the accent fill's ink on its tint", () => {
+    render(
+      <SearchFeed
+        query="voundou"
+        language="fr"
+        state="unknown"
+        results={[]}
+        subjects={[]}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+
+    const action = screen.getByRole("button", { name: "Proposer une source" });
+    expect(action).toHaveClass(
+      "bg-[color:var(--accent-tint)]",
+      "text-[color:var(--accent-foreground)]"
+    );
+    expect(action).not.toHaveClass("text-afh-text");
+  });
+
   // « pigmée » does not confess: its verdict answers, so it carries no button,
   // and its closing card stays the page's one invitation. The empty shelf goes
   // with the state, as for any unknown name.

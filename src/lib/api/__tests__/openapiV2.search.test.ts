@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { swaggerSpecV2 } from "@/lib/api/openapiV2";
-import type { SearchHitKind } from "@/types/afrik";
+import type { SearchHitKind, SearchLead } from "@/types/afrik";
 
 interface SchemaObject {
   type?: string | string[];
@@ -48,6 +48,14 @@ const KINDS_THE_MERGE_EMITS: Record<SearchHitKind, true> = {
   person: true,
   patronyme: true,
   quiz: true,
+};
+
+/** Same pattern for the kinds a near-miss lead can carry (DEC-075). */
+const KINDS_A_LEAD_CARRIES: Record<SearchLead["kind"], true> = {
+  people: true,
+  country: true,
+  family: true,
+  patronyme: true,
 };
 
 /** The answer key, in every spelling the fiche and the RPC use for it. */
@@ -154,6 +162,79 @@ describe("OpenAPI v2 unified search contract", () => {
     expect(data.required).toContain("nearNames");
     expect(nearNames?.description).toMatch(/non-empty search/i);
     expect(nearNames?.description).toMatch(/similarity/i);
+  });
+
+  // @req REQ-125
+  it("enumerates every kind a near-miss lead can carry, family names included", () => {
+    const kind = schemas.SearchLeadV2?.properties?.kind;
+
+    expect([...(kind?.enum ?? [])].sort()).toEqual(
+      Object.keys(KINDS_A_LEAD_CARRIES).sort()
+    );
+  });
+
+  // « jarra » reaches Diarra through its spelling Jara: a client showing
+  // the filed name alone would offer a name that begins with another letter.
+  // Optional, so a client written before migration 110 keeps working.
+  // @req REQ-125
+  it("documents the form that scored on a lead, as an optional addition", () => {
+    const lead = schemas.SearchLeadV2;
+    const matchedForm = lead?.properties?.matchedForm;
+
+    expect(matchedForm?.type).toBe("string");
+    expect(matchedForm?.description).toMatch(/scored/i);
+    expect(lead?.required).not.toContain("matchedForm");
+    expect(lead?.properties?.similarity?.description).toMatch(/matchedForm/);
+    expect(schemas.SearchNearNameV2?.properties).not.toHaveProperty(
+      "matchedForm"
+    );
+  });
+
+  // A lead is offered only under a form that is one name and that itself
+  // scored (brief 16, eighth review): a piece of a phrase is not scored, so
+  // matchedForm is always what `similarity` measures. A client told that a
+  // people falls back to its filed name would print a name that did not
+  // score.
+  // @req REQ-125
+  it("documents that a piece of a phrase is not scored, with no filed-name fallback", () => {
+    const lead = schemas.SearchLeadV2;
+
+    expect(lead?.properties?.matchedForm?.description).toMatch(/not one name/);
+    expect(lead?.properties?.matchedForm?.description).toMatch(/is not scored/);
+    expect(lead?.properties?.matchedForm?.description).not.toMatch(
+      /named by its filed name/
+    );
+    expect(lead?.properties?.similarity?.description).not.toMatch(/unless/);
+  });
+
+  // A client that read « always empty when total > 0 » would never show the
+  // family-name lead « tchikaya » now carries beside its results.
+  // @req REQ-125
+  it("documents family-name leads beside results, with their guards", () => {
+    const description =
+      schemas.SearchResponseData.properties?.leads?.description;
+
+    expect(description).not.toMatch(/always an empty array when total/i);
+    expect(description).toMatch(/family name/i);
+    expect(description).toMatch(/answers the query exactly/i);
+    // A third-party caller scoping its search must know why no lead comes.
+    expect(description).toMatch(/familyId/);
+    expect(description).toMatch(/countryId/);
+    expect(description).toMatch(/spells exactly/i);
+    expect(description).toMatch(/first letter/i);
+    expect(description).toMatch(/0\.4/);
+  });
+
+  // « tchikaya » no longer returns Chukwu beside the Tchicaya lead: a client
+  // counting patronymesTotal must know why (brief 16).
+  // @req REQ-201
+  it("documents that a family-name lead also withholds the names reached only by their sound", () => {
+    const description =
+      schemas.SearchResponseData.properties?.patronymes?.description;
+
+    expect(description).toMatch(/phonetic key/i);
+    expect(description).toMatch(/family-name lead/i);
+    expect(description).toMatch(/DEC-075/);
   });
 
   // @req REQ-135

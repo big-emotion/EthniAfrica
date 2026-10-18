@@ -60,6 +60,13 @@ once the previous one is approved and recorded, because they share `Main` and
 Briefs 13 to 15 come from the operator's mobile review of 2026-10-18 and its
 five decisions. They are drawn in that order, after brief 6, one at a time.
 
+| # | Brief | Surface | Boards |
+| --- | --- | --- | --- |
+| 16 | [`16-typo-with-related-fiches.md`](16-typo-with-related-fiches.md) | A misspelling, alone or with related fiches (« tchikaya », « konana », « jarra », DEC-075) | three new boards (`search-state-typo-430`, `-768`, `-1440`); `Main` (**proposed 2026-10-18, awaiting the operator's approval**) |
+
+Brief 16 draws the state that DEC-075 (pull request #1835) adds to the result
+page. It is not one of the passes above and was drawn beside them.
+
 Dossiers (`DOS_*`) are an editorial type, not a type of name. They carry the
 operator's thesis in full and get their own brief once the thesis wording is
 settled (see "The thesis slot").

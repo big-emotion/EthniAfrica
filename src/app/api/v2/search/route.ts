@@ -42,11 +42,20 @@
  *       with an exact-match bonus that also fires on the ISO 639-3 id — a
  *       reader who types "swa" reaches Swahili exactly as precisely as one
  *       who types its name. When `total` is 0, `leads` (REQ-125) carries up
- *       to 3 near-miss suggestions across peoples, countries and language
- *       families — a trigram similarity scan (migration 069) below the main
- *       search's own fuzzy floor, so the reader sees what the engine almost
- *       understood instead of a bare empty result; `leads` is always empty
- *       when `total` is greater than 0. The search is served in French.
+ *       to 3 near-miss suggestions across peoples, countries, language
+ *       families and family names — a trigram similarity scan (migrations
+ *       094, 110) below the main search's own fuzzy floor, so the reader sees
+ *       what the engine almost understood instead of a bare empty result.
+ *       When `total` is greater than 0, `leads` carries only family names
+ *       offered as a spelling of the searched name (DEC-075): nothing
+ *       answers the query exactly, the name begins with the query's first
+ *       letter, and its similarity reaches 0.4. A search scoped with
+ *       `familyId` or `countryId` never gets a family-name lead, and neither
+ *       does a query that spells exactly a family name the search found,
+ *       through its filed name or a recorded spelling, or that a fiche the
+ *       search found writes as a word in its own text. Each lead names
+ *       `matchedForm`, the form that scored; a people's form that is not
+ *       one name is not scored. The search is served in French.
  *       Rate-limited per AR11 (IP: 60 RPM, public key: 600 RPM,
  *       partner key: 6 000 RPM).
  *     tags: [API v2 - Search]

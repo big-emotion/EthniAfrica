@@ -73,7 +73,7 @@ describe("VerdictBlock", () => {
       "afh-accent-terre",
       "bg-[var(--accent-tint)]"
     );
-    expect(panel).toHaveClass("mt-afh-lg", "text-afh-text");
+    expect(panel).toHaveClass("mt-afh-md", "text-afh-text");
     expect(screen.getByText("Nous ne connaissons pas ce nom.")).toHaveClass(
       "font-afh-display",
       "text-afh-h3",
@@ -87,6 +87,33 @@ describe("VerdictBlock", () => {
       "text-afh-small",
       "leading-[var(--afh-leading-small)]"
     );
+  });
+
+  // The plain tone serves the unknown name and the misspelling alike. It is
+  // drawn on search-unknown-430, -768 and -1440 with one rhythm at every
+  // width: 16 px above the eyebrow, 4 px above the name, 8 px above the line.
+  // At 1200 px the page used to drop the top padding, which set the eyebrow
+  // against the search field.
+  // @req REQ-180
+  it("keeps the rhythm of the search-unknown boards at every width in the plain tone", () => {
+    const { container } = render(
+      <VerdictBlock
+        name="tchikaya"
+        verdict="Cherchiez-vous… ?"
+        summary="Aucune fiche ne porte exactement le nom « tchikaya »."
+        tone="plain"
+      />
+    );
+
+    const block = container.querySelector('[data-feed-block="verdict"]');
+    expect(block).toHaveClass("pt-afh-2xl");
+    expect(block?.className).not.toMatch(/min-\[1200px\]:pt-/);
+    const heading = screen.getByRole("heading", { level: 1 });
+    expect(heading).toHaveClass("mt-afh-xs");
+    expect(heading.className).not.toMatch(/min-\[1200px\]:mt-/);
+    const panel = container.querySelector('[data-verdict-panel=""]');
+    expect(panel).toHaveClass("mt-afh-md");
+    expect(panel?.className).not.toMatch(/min-\[1200px\]:/);
   });
 
   // The page that admits it does not know the name asks for it once, right

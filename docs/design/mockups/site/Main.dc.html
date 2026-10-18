@@ -1053,6 +1053,164 @@ body{margin:0}
 </section>
 
 <section class="ds-section">
+<h2 class="ds-h2">Composants · nom mal écrit : verdict, choix, fiches trouvées (brief 16, proposé)</h2>
+<div class="ds-row afh-accent-ocre" style="gap: 40px; align-items: flex-start">
+<div class="ds-col" style="width: 382px">
+<p class="ds-cap">Choix d'un nom · au repos, puis au focus</p>
+<ul class="ea-choices-list" style="margin-top: 0">
+<li><a class="ea-choice" href="#">Tchicaya</a></li>
+<li><a class="ea-choice" href="#" style="box-shadow: var(--afh-ring-focus)">Tchicaya</a></li>
+</ul>
+<p class="ds-val">La puce de nom de Main (police du texte, --afh-text-small 700, 6 px entre deux puces), avec l'accent : bord var(--accent-ink), fond var(--accent-tint), texte var(--accent-foreground). C'est la seule action accentuée de la page. Le bord prend l'encre de l'accent (6,01:1 sur le parchemin de jour, l'ocre de nuit), et non var(--accent) comme le bouton de search-unknown (2,94:1 de jour)&nbsp;: la puce est entourée d'un titre et d'un lien dans cette encre, et son contour doit tenir à côté d'eux.</p>
+</div>
+<div class="ds-col" style="width: 382px">
+<p class="ds-cap">À côté des lentilles · les lentilles restent neutres</p>
+<nav class="ea-lenses" aria-label="Lentilles (exemple)" style="margin: 0">
+<button class="ea-lens" type="button" aria-pressed="true">Tout</button>
+<button class="ea-lens" type="button" aria-pressed="false">Fiches <span class="ea-lens-count">1</span></button>
+</nav>
+<ul class="ea-choices-list" style="margin-top: 12px">
+<li><a class="ea-choice" href="#">Konan</a></li>
+<li><a class="ea-choice" href="#">Konaté</a></li>
+</ul>
+<p class="ds-val">Les lentilles filtrent la page ; la puce lance une nouvelle recherche. La barre n'apparaît qu'avec deux lentilles au moins. Elle est alors en tête de colonne, 12 px sous le champ, comme sur toutes les planches approuvées.</p>
+</div>
+<div class="ds-col" style="width: 382px">
+<p class="ds-cap">Titre du groupe de choix · le petit titre de la lentille Fiches</p>
+<h4 class="ea-fiche-group-title">Un nom qui s’écrit presque de la même façon</h4>
+<h4 class="ea-fiche-group-title">Des noms qui s’écrivent presque de la même façon</h4>
+<h4 class="ea-fiche-group-title">Un nom qui ressemble au nom cherché</h4>
+<h4 class="ea-fiche-group-title">Des noms qui ressemblent au nom cherché</h4>
+<p class="ds-val">Au singulier pour un seul choix, au pluriel pour plusieurs. «&nbsp;S’écrit presque de la même façon&nbsp;» seulement quand chaque choix est un nom de famille&nbsp;: même première lettre, et la forme nommée par la puce est celle qui a obtenu le score. Un peuple, un pays ou une famille de langues est proposé dès 0,2, sans règle de première lettre&nbsp;: la page dit seulement qu'il ressemble au nom cherché. Jamais «&nbsp;proche&nbsp;»&nbsp;: sur ce site, ce mot désigne une variante attestée d'un nom.</p>
+</div>
+</div>
+<div class="ds-row afh-accent-ocre" style="gap: 40px; align-items: flex-start">
+<div class="ds-col" style="width: 382px">
+<p class="ds-cap">Une puce qui ne porte pas le nom de sa fiche · «&nbsp;jarra&nbsp;»</p>
+<div>
+<ul class="ea-choices-list" style="margin-top: 0">
+<li><a class="ea-choice" href="#">Jara</a></li>
+</ul>
+<p class="ea-choice-form">La fiche Diarra donne l’écriture Jara.</p>
+</div>
+<p class="ds-val">La puce nomme la forme qui a obtenu le score&nbsp;: Jara, une écriture que la fiche Diarra enregistre. Diarra commence par une autre lettre&nbsp;; «&nbsp;Diarra s’écrit presque de la même façon&nbsp;» serait faux. Une ligne de note, 8 px sous les puces, dit seulement quelle fiche donne la forme, une ligne par fiche&nbsp;: elle ne range aucune forme sous une autre (doctrine §1), sans «&nbsp;aussi&nbsp;». Pour un peuple, «&nbsp;pakhalas&nbsp;»&nbsp;: «&nbsp;La fiche Koulango donne le nom Pakhallas.&nbsp;» Une forme que deux fiches enregistrent n'a qu'une puce, et une ligne par fiche&nbsp;: pour «&nbsp;icumama&nbsp;», «&nbsp;La fiche Iteso donne le nom Ikumama.&nbsp;» et «&nbsp;La fiche Kumam donne le nom Ikumama.&nbsp;» La ligne nomme la fiche sans la parenthèse de son nom de fiche&nbsp;: «&nbsp;La fiche Diola donne le nom Ajamataw.&nbsp;», jamais «&nbsp;La fiche Diola (Joola / Jola)…&nbsp;». Une puce qui porte le nom de sa fiche, parenthèse mise à part (Diola pour «&nbsp;Diola (Joola / Jola)&nbsp;»), n'a pas de ligne.</p>
+</div>
+</div>
+<div class="ds-row afh-accent-ocre" style="gap: 40px; align-items: flex-start">
+<div class="ds-col" style="width: 382px">
+<p class="ds-cap">L'invitation sous les choix · une note et un lien discret</p>
+<p class="ea-choices-invitation" id="main-typo-invitation-sample" style="margin-top: 0">Si vous écrivez «&nbsp;tchikaya&nbsp;», dites-nous où cette écriture est employée.</p>
+<button class="ea-choices-action" type="button" aria-describedby="main-typo-invitation-sample">Proposer une source</button>
+<p class="ds-val">La note de .ea-fiche-group-note et le lien de .ea-lens-back : ni fond ni bord, 44 px de haut. Le lien peut passer à la ligne, aligné à gauche, quand le texte est agrandi. La note le décrit (aria-describedby)&nbsp;: un lecteur d'écran qui passe de bouton en bouton entend qu'il s'agit de l'écriture cherchée, pas du nom proposé. Le bouton accentué de search-unknown reste sur cette page-là, où il est la seule action.</p>
+</div>
+<div class="ds-col" style="width: 382px">
+<p class="ds-cap">De nuit · la puce, le lien, le bouton de search-unknown</p>
+<div class="ds-frame dark afh-accent-ocre" style="padding: 16px; color: var(--afh-text)">
+<ul class="ea-choices-list" style="margin-top: 0">
+<li><a class="ea-choice" href="#">Tchicaya</a></li>
+</ul>
+<p class="ea-choices-invitation" id="main-typo-invitation-night">Si vous écrivez «&nbsp;tchikaya&nbsp;», dites-nous où cette écriture est employée.</p>
+<button class="ea-choices-action" type="button" aria-describedby="main-typo-invitation-night">Proposer une source</button>
+<div><button class="ea-owed-action" type="button">Proposer une source</button></div>
+</div>
+<p class="ds-val">Le fond var(--accent-tint) reste clair la nuit, alors que le texte de la page devient clair : 1,12:1. La puce et le bouton prennent donc le texte du fond accentué, var(--accent-foreground) : 13,5:1 de jour comme de nuit.</p>
+</div>
+</div>
+<p class="ds-val">Ces cadres de 426 px sont dessinés dans un tableau de 1440 px : le nom cherché y est un peu plus grand que sur un téléphone. Pour la taille exacte, voir search-state-typo-430.</p>
+<div class="ds-row" style="gap: 16px; align-items: flex-start">
+<div class="ds-col">
+<p class="ds-cap" style="max-width: 426px">Un nom, aucune autre fiche trouvée · « tchikaya »</p>
+<div class="ds-frame ds-mobile afh-accent-ocre" style="width: 426px">
+<div style="padding: 0 21px 24px">
+<section class="ea-verdict">
+<p class="ea-eyebrow">D'où vient ce nom</p>
+<h3 class="ea-verdict-name">tchikaya</h3>
+<p class="ea-verdict-line">Cherchiez-vous…&nbsp;?</p>
+<p class="ea-verdict-text">Aucune de nos fiches ne porte le nom «&nbsp;tchikaya&nbsp;». Tchicaya s’écrit presque de la même façon&nbsp;: vous pouvez chercher ce nom.</p>
+</section>
+<section class="ea-choices">
+<h4 class="ea-fiche-group-title">Un nom qui s’écrit presque de la même façon</h4>
+<ul class="ea-choices-list">
+<li><a class="ea-choice" href="#">Tchicaya</a></li>
+</ul>
+<p class="ea-choices-invitation" id="main-typo-invitation-tchikaya">Si vous écrivez «&nbsp;tchikaya&nbsp;», dites-nous où cette écriture est employée.</p>
+<button class="ea-choices-action" type="button" aria-describedby="main-typo-invitation-tchikaya">Proposer une source</button>
+</section>
+<p class="ea-placeholder ea-fiche-example">[La recherche trouve aussi la fiche Tchicaya. La puce y mène déjà : la page ne la montre pas une deuxième fois. Sans autre fiche, ni bloc de fiches ni filtres ; « Aller plus loin » suit.]</p>
+</div>
+</div>
+</div>
+<div class="ds-col">
+<p class="ds-cap" style="max-width: 426px">Deux noms, une autre fiche trouvée · «&nbsp;konana&nbsp;» (exemple tiré du corpus)</p>
+<div class="ds-frame ds-mobile afh-accent-ocre" style="width: 426px">
+<div style="padding: 12px 21px 24px">
+<nav class="ea-lenses" aria-label="Filtrer ce fil de résultats (exemple)" style="margin: 0">
+<button class="ea-lens" type="button" aria-pressed="true">Tout</button>
+<button class="ea-lens" type="button" aria-pressed="false">Fiches <span class="ea-lens-count">1</span></button>
+</nav>
+<section class="ea-verdict">
+<p class="ea-eyebrow">D'où vient ce nom</p>
+<h3 class="ea-verdict-name">konana</h3>
+<p class="ea-verdict-line">Cherchiez-vous…&nbsp;?</p>
+<p class="ea-verdict-text">Aucune de nos fiches ne porte le nom «&nbsp;konana&nbsp;». Plusieurs noms s’écrivent presque de la même façon&nbsp;: choisissez celui que vous cherchez.</p>
+</section>
+<section class="ea-choices">
+<h4 class="ea-fiche-group-title">Des noms qui s’écrivent presque de la même façon</h4>
+<ul class="ea-choices-list">
+<li><a class="ea-choice" href="#">Konan</a></li>
+<li><a class="ea-choice" href="#">Konaté</a></li>
+</ul>
+<p class="ea-choices-invitation" id="main-typo-invitation-konana">Si vous écrivez «&nbsp;konana&nbsp;», dites-nous où cette écriture est employée.</p>
+<button class="ea-choices-action" type="button" aria-describedby="main-typo-invitation-konana">Proposer une source</button>
+</section>
+<section class="ea-fiche-group" style="margin-top: var(--afh-section-gap)">
+<h4 class="ea-fiche-group-title">Une autre fiche trouvée</h4>
+<p class="ea-fiche-group-note">Nous avons aussi trouvé cette fiche, sans établir qu’elle répond à «&nbsp;konana&nbsp;».</p>
+<ul class="ea-fiche-grid" data-cols="1">
+<li><a class="ea-fiche-card" href="#"><span class="ea-fiche-kind">Nom</span><span class="ea-fiche-name">Onana</span><span class="ea-fiche-line">Un nom d'homme ewondo du Cameroun, écrit dès 1919 ; on ne sait pas ce qu'il veut dire.</span></a></li>
+</ul>
+</section>
+<p class="ea-placeholder ea-fiche-example">[Exemple tiré du corpus par le modèle de la recherche (corpusNameModel.ts)&nbsp;: aucune fiche n'écrit «&nbsp;konana&nbsp;», ni dans son texte, ni dans ses listes de noms, ni dans ses sources. Konan et Konaté commencent comme lui, chacun par son nom de fiche. La recherche trouve aussi Onana par son écriture&nbsp;; il commence par une autre lettre, ce n'est donc pas un choix. Konan et Konaté restent des choix et ne sont pas montrés comme fiches.]</p>
+</div>
+</div>
+</div>
+<div class="ds-col">
+<p class="ds-cap" style="max-width: 426px">La lentille Fiches · «&nbsp;konana&nbsp;», «&nbsp;Fiches&nbsp;» pressé (sous la barre)</p>
+<div class="ds-frame ds-mobile afh-accent-ocre" style="width: 426px">
+<div style="display: flex; flex-direction: column; gap: 24px; padding: 24px 21px">
+<h3 class="ea-lens-title">Fiches trouvées pour «&nbsp;konana&nbsp;»</h3>
+<div class="ea-fiche-groups">
+<section class="ea-fiche-group">
+<h4 class="ea-fiche-group-title">Une autre fiche trouvée</h4>
+<p class="ea-fiche-group-note">Nous avons aussi trouvé cette fiche, sans établir qu’elle répond à «&nbsp;konana&nbsp;».</p>
+<ul class="ea-fiche-grid" data-cols="1">
+<li><a class="ea-fiche-card" href="#"><span class="ea-fiche-kind">Nom</span><span class="ea-fiche-name">Onana</span><span class="ea-fiche-line">Un nom d'homme ewondo du Cameroun, écrit dès 1919 ; on ne sait pas ce qu'il veut dire.</span></a></li>
+</ul>
+</section>
+</div>
+<div><button class="ea-lens-back" type="button">Revenir à la réponse</button></div>
+</div>
+</div>
+<p class="ds-val" style="max-width: 426px">Le bloc de «&nbsp;Tout&nbsp;», avec sa phrase de prudence, sous un titre qui dit seulement que la recherche a trouvé ces fiches. Jamais «&nbsp;Autour de ce nom&nbsp;» ni «&nbsp;Un contexte lié&nbsp;»&nbsp;: seul son score de trigrammes rapproche Onana de «&nbsp;konana&nbsp;». La page des fiches liées garde les mots du brief 12.</p>
+</div>
+</div>
+<div class="ds-row" style="gap: 40px; align-items: flex-start">
+<div class="ds-col" style="width: 406px">
+<p class="ds-cap">Le verdict</p>
+<p class="ds-val">Le ton simple de search-unknown, au même rythme à chaque largeur&nbsp;: 16 px au-dessus du surtitre, 4 px au-dessus du nom, 8 px au-dessus de la ligne et du texte. Il parle de nos fiches, jamais de tous les noms&nbsp;: «&nbsp;Aucune de nos fiches ne porte le nom…&nbsp;». D'un nom de famille proposé, il dit seulement qu'il s'écrit presque de la même façon, et nomme la forme qui a obtenu le score. D'un peuple, d'un pays ou d'une famille de langues, il dit seulement qu'il ressemble au nom cherché&nbsp;: «&nbsp;Nous connaissons un nom qui ressemble à celui-ci&nbsp;: vous pouvez le chercher.&nbsp;» Quand une fiche trouvée écrit le mot cherché dans son texte (Sanoh parmi les clans kuranko), la page n'est pas celle-ci&nbsp;: c'est la page des fiches liées, inchangée, en attendant la décision de l'opérateur (DEC-075).</p>
+</div>
+<div class="ds-col" style="width: 406px">
+<p class="ds-cap">Les choix, puis la source</p>
+<p class="ds-val">Chaque choix est une nouvelle recherche : c'est la seule action accentuée de la page. Sous les choix, une note et le lien discret « Proposer une source » : un lecteur dont la famille écrit ainsi ce nom peut le dire, sans qu'un second bouton passe devant le choix. Aucune lentille n'est tirée d'un nom que le lecteur n'a pas choisi : la barre garde « Tout » et « Fiches ».</p>
+</div>
+<div class="ds-col" style="width: 406px">
+<p class="ds-cap">Les fiches trouvées</p>
+<p class="ds-val">Un choix n'est jamais répété en carte : sa puce mène déjà à sa fiche. Les autres fiches trouvées suivent sous «&nbsp;Une autre fiche trouvée&nbsp;» ou «&nbsp;D’autres fiches trouvées&nbsp;», au nombre des cartes : la recherche a aussi trouvé les choix. La phrase de prudence nomme l'écriture cherchée et dit seulement que la recherche a trouvé ces fiches. Elle ne les dit pas liées : rien dans les données ne relie Onana à «&nbsp;konana&nbsp;», que seul son score de trigrammes rapproche. Chaque carte porte la ligne de sa fiche, jamais « Fiche EthniAfrica ». Un nom que la recherche n'atteint que par le son n'est pas montré (Chukwu pour « tchikaya »). Une colonne sous 768 px.</p>
+</div>
+</div>
+</section>
+
+<section class="ds-section">
 <h2 class="ds-h2">Composants · bandeau de consentement (brief 12)</h2>
 <p class="ds-val">Le bandeau apparaît au premier défilement, au premier toucher ou à la première touche du clavier, ou après 15 s. Il est fixé en bas de l'écran, sur toute la largeur. Fond parchemin (--afh-bg), filet en haut, sans ombre. Pas de titre visible : le nom accessible reste « Gestion des cookies », les mots du bouton du pied de page.</p>
 <div class="ds-row" style="gap: 40px; align-items: flex-start">
@@ -1247,7 +1405,7 @@ body{margin:0}
 
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":23597}}'>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":26120}}'>
 class Component extends DCLogic {
 renderVals() {
 return {};

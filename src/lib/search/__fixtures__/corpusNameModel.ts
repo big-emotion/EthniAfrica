@@ -31,6 +31,12 @@ export interface ModelEntity {
   forms: string[];
   /** Every other string of the fiche, sources and translations excluded. */
   prose: string[];
+  /**
+   * A family name's `spellings[].spelling`, qualifier removed. `forms` holds
+   * every string under `spellings`, attestations included; the leads read
+   * only these, as migration 110 does.
+   */
+  spellings?: string[];
 }
 
 const DATASET = join(process.cwd(), "dataset/source/afrik");
@@ -118,8 +124,24 @@ function simpleEntities(
     const spellings = kind === "patronyme" ? stringsOf(fiche.spellings) : [];
     const filed =
       kind === "patronyme" ? String(fiche.nameMain) : nameFrOf(fiche);
-    return entity(kind, fiche, filed, [filed, ...alternates, ...spellings]);
+    const modelled = entity(kind, fiche, filed, [
+      filed,
+      ...alternates,
+      ...spellings,
+    ]);
+    return kind === "patronyme"
+      ? { ...modelled, spellings: recordedSpellings(fiche.spellings) }
+      : modelled;
   });
+}
+
+function recordedSpellings(spellings: unknown): string[] {
+  if (!Array.isArray(spellings)) return [];
+  return spellings
+    .map((entry) => (entry as { spelling?: unknown } | null)?.spelling)
+    .filter((spelling): spelling is string => typeof spelling === "string")
+    .map(withoutQualifier)
+    .filter(Boolean);
 }
 
 let corpus: ModelEntity[] | undefined;
@@ -260,7 +282,8 @@ export const NEIGHBOUR_FLOOR = 0.2;
 /**
  * The leads scan covers peoples, countries and families (migration 070).
  * `formsOfAPeople: false` reproduces migration 084, which scored the filed
- * name of a people only.
+ * name of a people only; `true`, migration 110, which scores the forms of
+ * `peopleLeadForms`.
  */
 // @req REQ-178
 export function neighbours(
@@ -272,9 +295,136 @@ export function neighbours(
     .filter((item) => ["people", "country", "family"].includes(item.kind))
     .filter((item) => {
       const scored =
-        item.kind === "people" && !formsOfAPeople
-          ? [item.filedName]
-          : item.forms;
+        item.kind !== "people"
+          ? item.forms
+          : formsOfAPeople
+            ? peopleLeadForms(item)
+            : [item.filedName];
       return scored.some((form) => similarity(form, query) >= NEIGHBOUR_FLOOR);
     });
+}
+
+/** The family-name search's own trigram threshold (066, 069, 108). */
+// @req REQ-125
+export const FAMILY_NAME_LEAD_FLOOR = 0.4;
+
+/**
+ * The family-name branch of the leads (migration 110, DEC-075): a family name
+ * qualifies through its filed name or a recorded spelling that begins with
+ * the query's first letter, both folded, at the family-name search's own
+ * threshold. Whether it is offered —
+ * nothing answering exactly — is the query layer's, and is not modelled.
+ */
+// @req REQ-125
+export function familyNameLeads(query: string): ModelEntity[] {
+  const folded = normalizeString(query).trim();
+  if (folded.length < 3) return [];
+  return corpusEntities()
+    .filter((item) => item.kind === "patronyme")
+    .filter((item) =>
+      leadForms(item, folded).some(
+        (form) => similarity(form, query) >= FAMILY_NAME_LEAD_FLOOR
+      )
+    );
+}
+
+/** The forms migration 110 scores: those sharing the query's first letter. */
+function leadForms(item: ModelEntity, foldedQuery: string): string[] {
+  return [withoutQualifier(item.filedName), ...(item.spellings ?? [])].filter(
+    (form) => normalizeString(form).trim()[0] === foldedQuery[0]
+  );
+}
+
+/**
+ * The `matched_form` migration 110 returns for a family-name lead: its best
+ * scoring form, the filed name first on a tie.
+ */
+// @req REQ-125
+export function familyNameLeadForm(
+  query: string,
+  item: ModelEntity
+): string | undefined {
+  const folded = normalizeString(query).trim();
+  const filed = withoutQualifier(item.filedName);
+  return leadForms(item, folded)
+    .map((form) => ({ form, score: similarity(form, query) }))
+    .sort(
+      (left, right) =>
+        right.score - left.score ||
+        Number(right.form === filed) - Number(left.form === filed) ||
+        left.form.localeCompare(right.form)
+    )[0]?.form;
+}
+
+/**
+ * What marks a people's form as no single name, in migration 110's people
+ * branch (a POSIX pattern, read alike by JavaScript). The self-appellation is
+ * split on its commas alone, so a bracket holding a comma is cut in two
+ * (« pl. Abaganda) »), and some forms are two names or a sentence
+ * (« Yacouba ou Yakuba », « nkop = terre », « etc. »). The equal sign alone
+ * is no mark: « =|Hoa » writes a click.
+ */
+// @req REQ-125
+export const NOT_ONE_NAME = "[()/;:.«»0-9]| = | ou ";
+const notOneName = new RegExp(NOT_ONE_NAME);
+
+/**
+ * The forms migration 110 scores for a people: its filed name, slash
+ * included since it is how the fiche is filed, and each other form that is
+ * one name, all without their trailing bracket. A piece of a phrase is not
+ * scored, so it never makes a people a lead (brief 16, eighth review).
+ */
+function peopleLeadForms(item: ModelEntity): string[] {
+  const filed = withoutQualifier(item.filedName);
+  return item.forms.filter((form) => form === filed || !notOneName.test(form));
+}
+
+/**
+ * The `matched_form` migration 110 returns for a people lead: the best
+ * scoring of the forms it scores, the filed name first on a tie. Undefined
+ * when none reaches the floor: the people is then no lead.
+ */
+// @req REQ-125
+export function peopleLeadForm(
+  query: string,
+  item: ModelEntity
+): string | undefined {
+  const [best] = peopleLeadForms(item)
+    .map((form) => ({ form, score: similarity(form, query) }))
+    .sort(
+      (left, right) =>
+        right.score - left.score ||
+        Number(right.form === item.filedName) -
+          Number(left.form === item.filedName) ||
+        left.form.localeCompare(right.form)
+    );
+  return best && best.score >= NEIGHBOUR_FLOOR ? best.form : undefined;
+}
+
+function fichePaths(dir: string): string[] {
+  return readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
+    const path = join(dir, entry.name);
+    if (entry.isDirectory()) return fichePaths(path);
+    return entry.name.endsWith(".json") && !entry.name.startsWith("_")
+      ? [path]
+      : [];
+  });
+}
+
+/**
+ * The fiches whose whole file writes the query as a word, sources and notes
+ * included: what a fiche records anywhere, wider than `proseHits`, which
+ * leaves the sources out as the search vectors do. An example of a
+ * misspelling must find none (brief 16).
+ */
+// @req REQ-125
+export function fichesRecordingWord(query: string): string[] {
+  const wanted = rawWordsOf(query).join(" ");
+  if (!wanted) return [];
+  return fichePaths(DATASET).flatMap((path) => {
+    const text = readFileSync(path, "utf8");
+    const words = ` ${rawWordsOf(text).join(" ")} `;
+    if (!words.includes(` ${wanted} `)) return [];
+    return [String(readJson(path).id ?? path)];
+  });
 }

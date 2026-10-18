@@ -45,6 +45,16 @@ export interface FichesBlockProps {
    * relation browse, where no name was searched.
    */
   lens?: "grouped" | "ungrouped";
+  /**
+   * The spelling a misspelling's search was for, when these are the other
+   * fiches it found, none bearing that spelling (brief 16): titled as other
+   * fiches found, under a caution that we have not established they answer
+   * that spelling, each card with its own line, as the « Fiches » lens draws
+   * them. It wins over `lens`: under the « Fiches » filter too, nothing ties
+   * these fiches to the spelling, so they are never grouped « Autour de ce
+   * nom ».
+   */
+  foundFor?: string;
 }
 
 // @req REQ-180
@@ -56,8 +66,27 @@ export function FichesBlock({
   zone = "primary",
   language = "fr",
   lens,
+  foundFor,
 }: FichesBlockProps) {
   const copy = searchFeedCopy[language];
+
+  if (foundFor !== undefined) {
+    const group = (
+      <FicheGroup
+        id="fiches-found"
+        title={copy.answer.fichesFound.title(items.length)}
+        note={copy.answer.fichesFound.note(items.length, foundFor)}
+        items={items}
+        reviewed={reviewed}
+      />
+    );
+    // Under the lens title, the group keeps the gap of the lens groups below.
+    return (
+      <SearchFeedBlock id="fiches" zone={zone}>
+        {lens ? <div className="mt-afh-md">{group}</div> : group}
+      </SearchFeedBlock>
+    );
+  }
 
   if (lens) {
     const onName = items.filter((item) => item.onName);

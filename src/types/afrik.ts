@@ -931,26 +931,36 @@ export interface RankedLanguage {
 }
 
 /**
- * A near-miss lead (REQ-125): what the search engine almost understood,
- * shown only when the main search's `total` is 0. `kind` is scoped to the
- * three entities the search surface names to the reader (`SEARCH_LABEL`) —
- * languages, persons and patronymes are not candidates for a lead any more
- * than they are named in that label.
+ * A near-miss lead (REQ-125): what the search engine almost understood.
+ * Peoples, countries and families are offered when the main search's `total`
+ * is 0. A family name (`patronyme`) is offered as a spelling of the searched
+ * name (DEC-075) whenever nothing answers the query exactly, including when
+ * the search found related fiches. Languages and persons are never leads.
  */
 export interface SearchLead {
-  kind: "people" | "country" | "family";
+  kind: "people" | "country" | "family" | "patronyme";
   id: string;
+  /** The filed name. */
   name: string;
+  /**
+   * The form that scored `similarity` (migration 110): a recorded spelling, a
+   * self-appellation or an exonym when it is not the filed name (« jarra »
+   * reaches Diarra through Jara). A people's form that is not one name
+   * (« pl. Abaganda) », cut from a bracket) is not scored, so it is never
+   * this form. Absent from a database without 110.
+   */
+  matchedForm?: string;
   similarity: number;
 }
 
 /**
  * A qualified similar name for an answered, non-empty search (REQ-180).
  * Unlike `SearchLead`, this never stands in for a missing result: its entity
- * is distinct from every returned people, country and family subject.
+ * is distinct from every returned people, country and family subject. A
+ * family name is never one: two names that sound alike are two names.
  */
 export interface SearchNearName {
-  kind: SearchLead["kind"];
+  kind: Exclude<SearchLead["kind"], "patronyme">;
   id: string;
   name: string;
   similarity: number;

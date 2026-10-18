@@ -37,6 +37,7 @@ import { selectNameSubject } from "@/lib/search/nameSubject";
 import {
   buildSearchParams,
   mapSearchEnvelope,
+  mapSearchLeads,
 } from "@/lib/search/searchEnvelope";
 
 const mockEnvelope = {
@@ -565,6 +566,47 @@ describe("GET /api/v2/search (route)", () => {
     expect(body.data.total).toBe(0);
     expect(body.data.leads).toEqual([
       expect.objectContaining({ kind: "people", id: "PPL_BAMBARA" }),
+    ]);
+  });
+
+  // DEC-075: a family name comes as a lead beside the results that did not
+  // answer « tchikaya » exactly, and the site's own client must read it.
+  // @req REQ-125
+  it("carries a family-name lead beside results, and the site's client maps it", async () => {
+    (ftsSearchHandler as ReturnType<typeof vi.fn>).mockResolvedValue({
+      ...mockEnvelope,
+      data: {
+        ...mockEnvelope.data,
+        peoples: [],
+        patronymes: [
+          { id: "PAT_CHUKWU", nameMain: "Chukwu" },
+          { id: "PAT_TCHICAYA", nameMain: "Tchicaya" },
+        ],
+        total: 2,
+        leads: [
+          {
+            kind: "patronyme",
+            id: "PAT_TCHICAYA",
+            name: "Tchicaya",
+            similarity: 0.5,
+          },
+        ],
+      },
+    });
+
+    const req = new NextRequest("http://localhost/api/v2/search?q=tchikaya");
+    const res = await GET(req);
+    const body = await res.json();
+
+    expect(res.status).toBe(200);
+    expect(body.data.total).toBe(2);
+    expect(mapSearchLeads(body)).toEqual([
+      {
+        type: "patronyme",
+        id: "PAT_TCHICAYA",
+        name: "Tchicaya",
+        similarity: 0.5,
+      },
     ]);
   });
 

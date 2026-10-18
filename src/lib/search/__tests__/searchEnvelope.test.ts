@@ -866,21 +866,85 @@ describe("mapSearchLeads", () => {
     expect(leads).toEqual([]);
   });
 
-  // ETNI-1463 AC3 (ETNI-1744): patronymes and persons are deliberately not
-  // lead candidates, the same way languages are not.
+  // ETNI-1463 AC3 (ETNI-1744): persons are deliberately not lead candidates,
+  // the same way languages are not.
   // @req REQ-125
-  it("drops a lead whose kind is patronyme or person", () => {
+  it("drops a lead whose kind is person", () => {
     const leads = mapSearchLeads({
       data: {
         total: 0,
-        leads: [
-          { kind: "patronyme", id: "PATR_X", name: "X", similarity: 0.5 },
-          { kind: "person", id: "PER_X", name: "X", similarity: 0.5 },
-        ],
+        leads: [{ kind: "person", id: "PER_X", name: "X", similarity: 0.5 }],
       },
     });
 
     expect(leads).toEqual([]);
+  });
+
+  // DEC-075: a family name is offered as a spelling of the searched name, and
+  // it comes with results, so the mapping cannot read `total`.
+  // @req REQ-125
+  it("maps a family-name lead to the patronyme type, even beside results", () => {
+    const leads = mapSearchLeads({
+      data: {
+        total: 2,
+        leads: [
+          {
+            kind: "patronyme",
+            id: "PAT_TCHICAYA",
+            name: "Tchicaya",
+            similarity: 0.5,
+          },
+        ],
+      },
+    });
+
+    expect(leads).toEqual([
+      {
+        type: "patronyme",
+        id: "PAT_TCHICAYA",
+        name: "Tchicaya",
+        similarity: 0.5,
+      },
+    ]);
+  });
+
+  // Migration 110 sends the form that scored beside the filed name: « jarra »
+  // reaches Diarra through its spelling Jara. A database without it sends
+  // none, and the lead keeps its filed name only.
+  // @req REQ-125
+  it("carries the form that scored, when the API sends one", () => {
+    const leads = mapSearchLeads({
+      data: {
+        total: 0,
+        leads: [
+          {
+            kind: "patronyme",
+            id: "PAT_DIARRA",
+            name: "Diarra",
+            matchedForm: "Jara",
+            similarity: 0.57,
+          },
+          { kind: "country", id: "MLI", name: "Mali", similarity: 0.25 },
+          {
+            kind: "people",
+            id: "PPL_X",
+            name: "X",
+            matchedForm: "  ",
+            similarity: 0.3,
+          },
+        ],
+      },
+    });
+
+    expect(leads[0]).toEqual({
+      type: "patronyme",
+      id: "PAT_DIARRA",
+      name: "Diarra",
+      matchedForm: "Jara",
+      similarity: 0.57,
+    });
+    expect(leads[1]).not.toHaveProperty("matchedForm");
+    expect(leads[2]).not.toHaveProperty("matchedForm");
   });
 
   // @req REQ-125
@@ -920,6 +984,28 @@ describe("mapSearchNearNames", () => {
         similarity: 0.6,
       },
     ]);
+  });
+
+  // A family name is a lead or nothing: two names that sound alike are two
+  // names, so none is offered as a similar name (DEC-075).
+  // @req REQ-125
+  it("drops a family name from the similar names", () => {
+    expect(
+      mapSearchNearNames({
+        data: {
+          total: 1,
+          nearNames: [
+            {
+              kind: "patronyme",
+              id: "PAT_BELL",
+              name: "Bell",
+              similarity: 0.57,
+            },
+            { kind: "people", id: "PPL_BELLA", name: "Bella", similarity: 0.5 },
+          ],
+        },
+      }).map((name) => name.id)
+    ).toEqual(["PPL_BELLA"]);
   });
 
   // @req REQ-180
