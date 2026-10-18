@@ -117,7 +117,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 2740 -> 2730 on 2026-10-14: the Nabt fiche's seven exonyms left with it, and Gwa, Nao and Nyiha were removed from the exonyms of the Gwa, Mao and Nyika fiches (Gwa is the people's own name, Nao a different people, Nyiha the Tanzanian people); the Lamba fiche swapped Lamba for Lala-Lamba. 2730 -> 2729 the same day: Gbunde left the exonyms of PPL_GBANDI (Schwab 1947 lists the Gbunde apart from the Gbande).
     // 2729 -> 2702 on 2026-10-18: the twenty-seven exonyms of the eight people fiches folded or withdrawn after wave 24 left with them; PPL_MUCUVAL swapped Kuvale, now its sourced self-name, for Mucubal.
     // 2702 -> 2701 the same day: OvaKuvale left the exonyms of PPL_MUCUVAL, whose self-name field now reads Kuvale.
-    value: 2701,
+    // 2701 -> 2703 the same day: PPL_MUCUVAL is now headed Kuvale and PPL_WIYANA Winye, so their former
+    // headlines, Mucuval and Wiyana, moved to the exonyms, where a reader who searches them still finds the fiche.
+    value: 2703,
     method:
       "somme de content.appellations.exonyms.length sur les fiches de peuple",
     countedOn: COUNTED_ON,
@@ -181,8 +183,11 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 380 -> 370 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
     // 370 -> 368 on 2026-10-18: the Guwa and Mobe fiches, both contested, withdrawn after wave 24.
     value: 368,
+    // The breakdown in the method text recounted on 2026-10-18: contested
+    // (224) had not followed the folds since it was written; colonial-legacy
+    // happened to be right again.
     method:
-      "fiches dont classificationStatus vaut contested (224) ou colonial-legacy (156)",
+      "fiches dont classificationStatus vaut contested (212) ou colonial-legacy (156)",
     countedOn: COUNTED_ON,
   },
   "status-other": {

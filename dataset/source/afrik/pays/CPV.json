@@ -430,14 +430,6 @@
           "peopleId": "PPL_CREOLE_CABOVERDIEN",
           "region": "Toutes les îles du Cap-Vert",
           "languageFamily": "FLG_CREOLE"
-        },
-        {
-          "name": "Africains d'origine récente",
-          "population": 6000,
-          "referenceYear": 2025,
-          "percentageInCountry": 1,
-          "peopleId": null,
-          "region": ""
         }
       ]
     }
