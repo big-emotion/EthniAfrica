@@ -324,7 +324,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 109 -> 107 on 2026-10-12: eleven duplicate people fiches of wave 10 folded into their keepers, and the « Swahili (Yémen) » fiche renamed PPL_MUWALLADEEN.
     // 107 -> 103 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
     // 103 -> 102 on 2026-10-18: the Taal fiche, which counted, withdrawn after wave 24.
-    value: 102,
+    // 102 -> 101 the same day: PPL_WIYANA's whyProblematic no longer says the Mossi
+    // neighbours imposed Gurunsi; it tells Jacob's hypothesis of a Moore nickname instead.
+    value: 101,
     method: "radical voisin dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -360,7 +362,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 54 -> 50 on 2026-10-12: eleven duplicate people fiches of wave 10 folded into their keepers, and the « Swahili (Yémen) » fiche renamed PPL_MUWALLADEEN.
     // 50 -> 49 the same day: the Khainai, Koyra, Yerima and Kirdi fiches folded or retired after wave 12.
     // 49 -> 50 on 2026-10-12: the Bakwé fiche now records Tuwè, a pejorative Krou name for them, in originOfExonyms.
-    value: 50,
+    // 50 -> 49 on 2026-10-18: PPL_WIYANA no longer calls Gurunsi a pejorative term of Djerma origin,
+    // which no source said; it tells Jacob's « gibier de battue » hypothesis without that label.
+    value: 49,
     method: `radicaux ${PEJORATIVE_STEMS.join(", ")} dans originOfExonyms + whyProblematic`,
     countedOn: "2026-10-09",
   },
