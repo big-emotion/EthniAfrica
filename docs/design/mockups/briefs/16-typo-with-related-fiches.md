@@ -9,9 +9,9 @@ the redrawing; a third review rejected two points of the third drawing, and
 this is the fourth, with the corrections of a fourth, a fifth, a sixth, a
 seventh and an eighth review (see « Second review » to « Eighth review »
 below).
-Status: **proposed, awaiting the operator's approval.** Nothing here binds the
-code until the operator approves it or asks for changes. The pull request that
-needs it (#1835, ETNI-2092) must not merge before then.
+Status: **approved by the operator on 2026-10-18** (see « Approval record »).
+Pull request #1835 (ETNI-2092) was merged into recette the same day
+(04323b678), before this record was written.
 
 ## Why this board exists
 
@@ -897,4 +897,18 @@ To be approved with the boards (« Proposed amendments »):
 Approving the boards does not approve the shared chrome focus states and
 layout listed under « Follow-ups ».
 
-The record itself is empty until the operator approves.
+**Recorded 2026-10-18.** The operator approved the boards in chat on
+2026-10-18 (« J'approuve les maquettes »), while they were being redrawn after
+the first review. As announced to the operator the same day, the approval
+applies to the redrawn boards: the three `search-state-typo` boards and the
+brief 16 section of `Main`, as they stand in this repository.
+
+- Charter §3 ter is replaced word for word in
+  [`search-result-charter.md`](../../search-result-charter.md), with a dated
+  note.
+- REQ-201, DEC-075 and REQ-125: the drafts are published on Confluence as
+  Pending amendments. Moving them to Approved stays the operator's, in
+  Confluence.
+- The people branch's one-name rule, as last drafted under « Ninth review »,
+  is not in the merged code: recette runs migration 110 as merged with #1835
+  (head db5583eed). A follow-up migration carries the rule.

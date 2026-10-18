@@ -329,8 +329,21 @@ The exceptional states are explicit:
 
 - a published word with no fiche is answered by its record: the same blocks
   without `fiche-link`, under the filters, never the confession;
-- a typo with useful leads opens on the verdict and the choices and closes with
-  `further` only;
+- a typo with useful leads opens on the filters when there are two, the
+  verdict and the choices, the page's one accented action, each named by the
+  form that scored, a form that is not one name being neither scored nor
+  offered, with a line naming the fiche that records a form other than its
+  filed name, a fiche being named without the trailing bracket of its filed
+  name; only family-name leads are said to be written almost the same way;
+  under them a reader who writes the name this way can propose a source
+  through a quiet link; when the search also found fiches other than the
+  choices, they follow as other fiches found, under a caution that says only
+  that the search found them, never that they are linked to the query, each
+  with its own line, a fiche reached only by its sound being left out, and the
+  `fiches` filter lists them the same way, under a title that says only that
+  the search found them; it closes with `further` only and draws no shelf. A
+  query a fiche the search found writes in its text is not a typo: it keeps the
+  related-only page _(replaced 2026-10-18, brief 16, approved by the operator)_;
 - a genuinely unknown query opens on the verdict, which carries the invitation
   to correct, and closes with `owed` (`silences` and `conviction`), the next
   names, then `further`; it draws no shelf unless a piece matches the reader's
