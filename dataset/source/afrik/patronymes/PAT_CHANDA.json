@@ -80,5 +80,140 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web combinant « Chanda », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la lecture de « Chanda Surname Origin, Meaning & Last Name History » n'ont établi aucune règle propre à Chanda permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Chanda est un nom personnel bemba, du nord de la Zambie et du Luapula. En 1911, c'est l'un des noms de grands chefs et de cheffes que l'on donne aux enfants ; il se retrouve dans Chandamukulu, le titre des mères des rois bemba. Les sources lues ne disent pas ce qu'il veut dire, ni quand il est devenu un nom de famille.",
+    "names": [
+      {
+        "nameText": "Chanda",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel bemba du nord de la Zambie, porté aussi comme nom de famille.",
+        "periodLabel": "Écrit dès 1911 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2020,
+              "label": "Rapporté en 2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Chanda dit, comme Mulenga, d'où l'on vient : qui porte ces noms est originaire de la Province du Nord ou du Luapula, selon Xaviour Mulenga, interrogé à Lusaka en 2019 par Chanda Penda.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Personal Name Trends in Independent Zambia: A Reflection on the Fluidity of Living Heritage",
+                "author": "Chanda Penda",
+                "year": 2020,
+                "url": "https://journals.unza.zm/index.php/JLSS/article/view/381",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 33-34",
+                "notes": "Journal of Law and Social Sciences (University of Zambia), vol. 4, no 1, mars 2020, p. 28-40, DOI 10.53974/unza.jlss.4.1.381 ; PDF lu en entier sur le site de la revue le 18 octobre 2026. L'article étudie les prénoms des diplômés de l'université de Zambie de 1976 à 2016 et s'appuie sur des entretiens menés en 2019 à Chongwe, Kafue et Lusaka. Pages 33-34, Xaviour Mulenga, entretien du 10 juillet 2019 à Lusaka : « If s/he says \"[I am] Mulenga\", \"Chanda\", I can know that s/he is from Northern Province, Luapula, that's where such names are found. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Depuis l'époque coloniale"
+            },
+            "statement": "Le nom Chanda, comme les autres noms bemba, a pu devenir un nom de famille : les enfants appartiennent au clan de leur mère, mais prennent le dernier nom de leur père. Ces noms de famille sont venus avec les missionnaires et l'administration coloniale, selon les travaux que cite Upendo Mwakasenga. Les sources lues ne disent pas quand Chanda lui-même est devenu un nom de famille.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Being Impalume: A Religio-Cultural Perspective of Bemba Married Men's Construction of Masculinity in Northern Zambia",
+                "author": "Upendo Mwakasenga",
+                "year": 2022,
+                "url": "https://researchspace.ukzn.ac.za/server/api/core/bitstreams/3f7361e5-a613-4770-a676-3e14179f4749/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 39",
+                "notes": "Mémoire de master, University of KwaZulu-Natal, juillet 2022 ; PDF lu en entier sur le dépôt de l'université le 18 octobre 2026. Page 39 : les enfants appartiennent au clan de leur mère, mais « children actually take their father's last name » (Wilfred Whiteley, 1950, p. 19) ; selon Osward Chanda (2020), c'est « after interactions with Europeans and Christian missionaries that the naming system changed, as there was an introduction of surnames for colonial administration purposes ». Le mémoire ne cite pas le nom Chanda à cette page."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Chanda est en 1911 celui de chefs ou de cheffes : chez les Bisa du lac, qui vivent de la pêche, les grands filets portent des noms comme Mwila ou Chanda, et l'on crie ce nom quand un filet se remplit, selon Cullen Gouldsbury et Hubert Sheane.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Great Plateau of Northern Rhodesia: Being Some Impressions of the Tanganyika Plateau",
+                "author": "Cullen Gouldsbury et Hubert Sheane",
+                "year": 1911,
+                "url": "https://archive.org/details/greatplateauofno00goul",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 281",
+                "notes": "Londres, Edward Arnold, 1911 ; lu le 18 octobre 2026 dans la numérisation d'Internet Archive, le numéro de page imprimé étant vérifié sur l'image. Les auteurs sont deux administrateurs britanniques de la Rhodésie du Nord, cités ici pour ce qu'ils rapportent. Page 281 : « For the Lake Bisa fishing is the paramount industry » ; « Each large net is given a name, such as 'the greedy mouth,' 'the tireless eater,' and the names of chiefs or of chieftainesses, such as Mwila, Chanda »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1948,
+              "label": "Rapporté en 1911 et 1948"
+            },
+            "era": "colonial",
+            "statement": "Le nom Chanda se retrouve dans Chandamukulu, le titre héréditaire que reçoivent les mères des rois bemba, les Chitimukulu, selon Cullen Gouldsbury et Hubert Sheane. À la mort d'une Chandamukulu, sa sœur ou sa petite-fille reprend ce nom, d'après William Brelsford (1948), cité par Upendo Mwakasenga.",
+            "sources": [
+              {
+                "title": "The Great Plateau of Northern Rhodesia: Being Some Impressions of the Tanganyika Plateau",
+                "author": "Cullen Gouldsbury et Hubert Sheane",
+                "year": 1911,
+                "url": "https://archive.org/details/greatplateauofno00goul",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 19",
+                "notes": "Londres, Edward Arnold, 1911 ; lu le 18 octobre 2026 dans la numérisation d'Internet Archive, le numéro de page imprimé étant vérifié sur l'image. Les auteurs sont deux administrateurs britanniques de la Rhodésie du Nord, cités ici pour ce qu'ils rapportent. Page 19 : quand ces « royal mothers » avaient fait leur devoir envers l'État, « the hereditary titles of Chandamukulu and Mukukamfumu were, in the fullness of time, accorded to them »."
+              },
+              {
+                "title": "Being Impalume: A Religio-Cultural Perspective of Bemba Married Men's Construction of Masculinity in Northern Zambia",
+                "author": "Upendo Mwakasenga",
+                "year": 2022,
+                "url": "https://researchspace.ukzn.ac.za/server/api/core/bitstreams/3f7361e5-a613-4770-a676-3e14179f4749/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17",
+                "notes": "Mémoire de master, University of KwaZulu-Natal, juillet 2022 ; PDF lu en entier sur le dépôt de l'université le 18 octobre 2026. Page 17, d'après W. V. Brelsford, The Succession of Bemba Chiefs (1948, p. 19), que nous n'avons pas lu : « the hereditary names for mothers to Chitimukulu are 'Chandamukulu' and 'Mukukafume'. When it comes to succession after the death of bana Mfumu, only sisters or granddaughters carry on the name of the chief's mother »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Chanda apparaît chez Cullen Gouldsbury et Hubert Sheane parmi les noms de grands chefs et de cheffes que l'on donne aux enfants bemba : les villages comptent beaucoup de petits Chanda, et les parents prennent ensuite le nom de leur enfant, Sichanda pour le père, Nachanda pour la mère. C'est la plus ancienne trace de ce nom que le projet connaît ; le nom est plus ancien qu'elle.",
+            "formAsWritten": "Chanda",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Great Plateau of Northern Rhodesia: Being Some Impressions of the Tanganyika Plateau",
+                "author": "Cullen Gouldsbury et Hubert Sheane",
+                "year": 1911,
+                "url": "https://archive.org/details/greatplateauofno00goul",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 179",
+                "notes": "Londres, Edward Arnold, 1911 ; lu le 18 octobre 2026 dans la numérisation d'Internet Archive, le numéro de page imprimé étant vérifié sur l'image. Les auteurs sont deux administrateurs britanniques de la Rhodésie du Nord, cités ici pour ce qu'ils rapportent. Page 179 : si les esprits des parents morts récemment n'approuvent pas un nom, « the name is taken from the limited list of great chiefs or chieftainesses, so we find even in the many villages many little 'Mulengas,' 'Chandas,' 'Mutales,' and 'Bwadyas,' and the parents are henceforth known by the name of their child, e.g. Sichanda, the father, Nachanda, the mother, of the baby Chanda »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
