@@ -13,7 +13,7 @@
       "contemporaryUsage": "Le terme Hakaona est privilegie dans la litterature anglophone recente. Mucahona reste en usage dans les sources de langue portugaise et angolaises. Le terme Mucawana apparait frequemment dans les recits de voyageurs visitant la region d'Oncocua.",
       "linguisticFamily": "FLG_NIGERCONGO",
       "ethnoLinguisticGroup": "Herero (sous-groupe bantou)",
-      "historicalRegion": "Sud-Ouest Angola (province de Cunene)",
+      "historicalRegion": "Sud-ouest de l'Angola : municipalité de Virei, dans la province du Namibe, selon une dépêche de l'agence Lusa (2022) ; région d'Oncocua, dans la province du Cunene, selon des sites de voyage",
       "currentCountries": ["AGO"]
     },
     "ethnicities": ["Hakaona", "Ovahakaona"],
@@ -25,9 +25,10 @@
         "Implantation dans la region d'Oncocua (Cunene) apres le franchissement de la riviere Cunene depuis le sud"
       ],
       "historicalSettlementZones": [
-        "Region d'Oncocua (province de Cunene)",
+        "Municipalité de Virei (province du Namibe), selon une dépêche de l'agence Lusa (2022)",
+        "Region d'Oncocua (province de Cunene), selon des sites de voyage",
         "Villages de Soba, Elola et Moimba",
-        "Zones boisees et collines rocheuses autour d'Oncocua, pres de la riviere Cunene"
+        "Zones boisees et collines rocheuses autour d'Oncocua, pres de la riviere Cunene, selon des sites de voyage"
       ],
       "unificationsOrDivisions": "Les Mucahona font partie du vaste ensemble Herero aux cotes des Himba, Kuvale, Zemba, Tjavikwa et Tjimba. En Angola, ils occupent un territoire distinct de celui des Himba mais partagent des pratiques culturelles proches.",
       "externalInfluences": "Influence des peuples voisins Himba et Mutua. Pression coloniale portugaise limitee en raison de l'isolement geographique de la region d'Oncocua. Influence croissante du tourisme depuis les annees 2000.",
@@ -96,6 +97,13 @@
         "url": "https://www.biorxiv.org/content/10.1101/162230v1.full",
         "tier": "referenced",
         "source_kind": "academic"
+      },
+      {
+        "title": "Seca no sul do país leva pastores cada vez mais longe em busca de pasto",
+        "url": "https://www.verangola.net/va/pt/112022/Ambiente/33520/Seca-no-sul-do-pa%C3%ADs-leva-pastores-cada-vez-mais-longe-em-busca-de-pasto.htm",
+        "tier": "referenced",
+        "source_kind": "press",
+        "notes": "Dépêche de l'agence Lusa du 28 novembre 2022, reprise par Ver Angola et lue le 18 octobre 2026 : « Ali vivem quase 43 mil pessoas, entre Mucubais, Cuisses, Muhakaona e Muílas », à propos de la municipalité de Virei, dans la province du Namibe."
       }
     ]
   },
