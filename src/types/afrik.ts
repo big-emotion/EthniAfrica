@@ -899,6 +899,8 @@ export interface RankedSearchHit {
   name: string;
   normalizedScore: number;
   snippet: string | null;
+  /** Counted content fields and their text when the fiche writes this query. */
+  recordedIn?: RecordedFieldEvidence[];
 }
 
 /**
@@ -968,6 +970,20 @@ export interface SearchNearName {
   similarity: number;
 }
 
+/** A fiche whose counted text records the query as a whole word. */
+export interface RecordedTermMatch {
+  kind: SearchLead["kind"];
+  id: string;
+  /** Database paths; the service resolves their text for the public hit. */
+  recordedIn: string[];
+}
+
+/** A counted content field and the text the reader can see on the fiche. */
+export interface RecordedFieldEvidence {
+  fieldPath: string;
+  text: string;
+}
+
 export interface FtsSearchResponse {
   peoples: RankedPeople[];
   countries: RankedCountry[];
@@ -1003,6 +1019,8 @@ export interface FtsSearchResponse {
   leads: SearchLead[];
   /** Qualified similar names for a non-empty search; empty otherwise. */
   nearNames: SearchNearName[];
+  /** Matching fiche rows and the counted fields that contain the query. */
+  recordedTerms?: RecordedTermMatch[];
   /**
    * The cleaned query that found the results, when it differs from what was
    * typed (article, question frame or plural removed). Absent when the typed

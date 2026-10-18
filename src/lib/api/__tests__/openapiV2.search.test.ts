@@ -152,6 +152,27 @@ describe("OpenAPI v2 unified search contract", () => {
     expect(results?.description).toMatch(/ties broken/i);
   });
 
+  // @req REQ-125
+  it("documents optional recorded-field evidence on each unified hit", () => {
+    const hit = schemas.SearchHitV2;
+
+    expect(hit.properties?.recordedIn).toMatchObject({
+      type: "array",
+      items: {
+        type: "object",
+        properties: {
+          fieldPath: { type: "string" },
+          text: { type: "string" },
+        },
+        required: ["fieldPath", "text"],
+      },
+    });
+    expect(hit.properties?.recordedIn?.description).toMatch(
+      /field paths and their text where the fiche records the query as a whole word/i
+    );
+    expect(hit.required).not.toContain("recordedIn");
+  });
+
   // @req REQ-180
   it("documents qualified near names separately from zero-result leads", () => {
     const data = schemas.SearchResponseData;

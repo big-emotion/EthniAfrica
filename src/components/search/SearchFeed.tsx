@@ -309,6 +309,31 @@ function ficheOwnLine(entry: SearchResult, name: string): string | undefined {
   )?.shortLine;
 }
 
+function recordedFicheLine(
+  entry: SearchResult,
+  query: string,
+  name: string,
+  copy: (typeof searchFeedCopy)[Language]
+): string | undefined {
+  const queryKey = foldNameForm(query);
+  const evidence = (entry.recordedIn ?? [])
+    .filter(
+      ({ fieldPath, text }) =>
+        fieldPath.startsWith("content.") &&
+        foldNameForm(text)
+          .split(/[^\p{L}\p{N}]+/u)
+          .includes(queryKey)
+    )
+    .sort((left, right) => right.text.length - left.text.length)[0];
+  if (!evidence) return undefined;
+  if (evidence.fieldPath.includes("spellings[]")) {
+    return copy.answer.recordedSpelling(name, evidence.text);
+  }
+  return evidence.text.length > query.length
+    ? evidence.text
+    : copy.answer.recordedName(name, evidence.text);
+}
+
 // @req REQ-178
 // @req REQ-180
 export function SearchFeed({
@@ -438,11 +463,13 @@ export function SearchFeed({
       : results;
   const withheldLeads = results.length - listedResults.length;
   const ficheEntries =
-    state === "typo"
-      ? groupPeopleResults([...listedResults])
-      : results.length > 0
-        ? groupPeopleResults([...results])
-        : leads;
+    state === "recorded"
+      ? [...results]
+      : state === "typo"
+        ? groupPeopleResults([...listedResults])
+        : results.length > 0
+          ? groupPeopleResults([...results])
+          : leads;
   const derivedFicheRows = ficheEntries.map((entry, index): FeedFicheItem =>
     entry.type === "peopleGroup"
       ? {
@@ -458,7 +485,16 @@ export function SearchFeed({
       : {
           kind: getSearchEntityLabel(entry.type),
           name: getLocalizedSearchResultName(entry, language),
-          meta: copy.blocks.ficheMeta,
+          meta:
+            state === "recorded"
+              ? recordedFicheLine(
+                  entry as SearchResult,
+                  query,
+                  getLocalizedSearchResultName(entry, language),
+                  copy
+                )
+              : copy.blocks.ficheMeta,
+          ...(state === "recorded" && { highlight: query }),
           href: ficheHrefFor(entry as SearchResult, language, nameHref),
           onNavigate: () => onResultNavigate?.(entry.type, index + 1),
         }
@@ -508,6 +544,7 @@ export function SearchFeed({
   // the page: the word is then only one more thing the name can mean.
   const wordPage = wordAnswers.length > 0 && subjects.length === 0 && !relation;
   const displayName =
+    (state === "recorded" ? query.trim() : undefined) ??
     presentation?.answer?.name ??
     relationLabel ??
     opening.title ??
@@ -547,38 +584,42 @@ export function SearchFeed({
     !presentation?.answer;
   const verdict =
     presentation?.answer?.verdict ??
-    (answeredByWord
-      ? answerCopy.wordName
-      : answeredByReview
-        ? copy.answer.exact
-        : state === "unknown"
-          ? answerCopy.unknownName
-          : state === "typo"
-            ? copy.answer.typo
-            : state === "widened"
-              ? relation?.kind === "family" && relationLabel
-                ? copy.answer.relationFamilyVerdict(relationLabel)
-                : relation?.kind === "country"
-                  ? copy.answer.relationCountryVerdict(
-                      inCountry(relation.id, displayName, language)
-                    )
-                  : copy.answer.relatedOnly
-              : copy.answer.exact);
+    (state === "recorded"
+      ? copy.answer.recorded(ficheRows.length)
+      : answeredByWord
+        ? answerCopy.wordName
+        : answeredByReview
+          ? copy.answer.exact
+          : state === "unknown"
+            ? answerCopy.unknownName
+            : state === "typo"
+              ? copy.answer.typo
+              : state === "widened"
+                ? relation?.kind === "family" && relationLabel
+                  ? copy.answer.relationFamilyVerdict(relationLabel)
+                  : relation?.kind === "country"
+                    ? copy.answer.relationCountryVerdict(
+                        inCountry(relation.id, displayName, language)
+                      )
+                    : copy.answer.relatedOnly
+                : copy.answer.exact);
   const summary =
     presentation?.answer?.summary ??
-    (answeredByReview
-      ? copy.answer.exactSummary
-      : state === "unknown"
-        ? hasWordPiece
-          ? answerCopy.wordNameBody
-          : answerCopy.unknownNameBody
-        : state === "typo"
-          ? typoWording.summary(displayName)
-          : state === "widened"
-            ? isRelationBrowse
-              ? copy.answer.relationSummary
-              : copy.answer.widenedSummary
-            : copy.answer.exactSummary);
+    (state === "recorded"
+      ? ""
+      : answeredByReview
+        ? copy.answer.exactSummary
+        : state === "unknown"
+          ? hasWordPiece
+            ? answerCopy.wordNameBody
+            : answerCopy.unknownNameBody
+          : state === "typo"
+            ? typoWording.summary(displayName)
+            : state === "widened"
+              ? isRelationBrowse
+                ? copy.answer.relationSummary
+                : copy.answer.widenedSummary
+              : copy.answer.exactSummary);
   const relationEyebrow = isRelationBrowse
     ? copy.answer.relationEyebrow
     : undefined;
@@ -1054,6 +1095,7 @@ export function SearchFeed({
             title={presentation?.fiches?.title}
             subtitle={presentation?.fiches?.subtitle ?? undefined}
             language={language}
+            recorded={state === "recorded"}
           />
         );
       case "owed":
