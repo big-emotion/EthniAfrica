@@ -21,9 +21,11 @@ describe("search feed responsive contract", () => {
       // Fiche cards alone gain a second column at the canonical 430 px board
       // width. At 320–429 px they remain one column so long names cannot be
       // clipped; this does not change the feed's single movement-II stream.
+      // In the « Fiches » lens a card carries its fiche's line, so its groups
+      // stay one column until 768 px instead (brief 12, approved 2026-10-17).
       const responsiveSource =
         file === "FichesBlock.tsx"
-          ? source.replaceAll("min-[430px]:", "")
+          ? source.replaceAll("min-[430px]:", "").replaceAll("min-[768px]:", "")
           : source;
       const forbidden = responsiveSource.match(
         /\b(?:sm|md|lg|xl|2xl):|min-\[(?!1200px\])[^\]]+\]:/g
