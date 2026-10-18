@@ -60,7 +60,7 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom d'homme ewondo, du Cameroun. Les Ewondo sont voisins des Fang ; comme pour les noms de personne fang, la fiche range ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom d'homme ewondo, du Cameroun. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant comme un nom de famille. Les Ewondo sont voisins des Fang ; comme pour les noms de personne fang, la fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "alliances",

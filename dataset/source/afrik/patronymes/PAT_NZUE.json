@@ -60,7 +60,7 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom de personne fang. Chez les Fang, chacun reçoit un nom à lui, suivi de celui de son père, et Günter Tessmann écrit en 1913 que les Fang n'ont pas de nom de famille au sens européen. La fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
+      "reason": "Aucune source consultée n'en fait un nom de clan : Fabrice Agyune Ndone le range parmi les noms de personnes des Fang du Gabon. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant comme un nom de famille. La fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "alliances",

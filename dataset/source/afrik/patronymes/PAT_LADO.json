@@ -78,7 +78,7 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "Aucune source consultée n'en fait un nom de clan : Charles et Brenda Seligman nomment en 1932 des Bari appelés Lado, un chef et un jeune garçon, et donnent à part le nom de leur clan, Bekat pour l'enfant. Aucune source lue ne montre que ce nom se transmet de parent à enfant. La fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
+      "reason": "Aucune source consultée n'en fait un nom de clan. Charles et Brenda Seligman décrivent en 1932, chez les Bari, une famille où deux personnes s'appellent Lado : un fils de Molodiong et un jeune garçon. Ils donnent à part le nom de leur clan, Bekat. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant. La fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "transmissionMode",
@@ -86,7 +86,7 @@
     },
     {
       "fieldPath": "peoples",
-      "reason": "Charles et Brenda Seligman nomment en 1932 des Bari appelés Lado, dont un chef connu à Mongalla, au Soudan du Sud actuel. Le projet n'a pas encore de fiche sur les Bari : le nom n'est donc relié à aucun peuple. Les fiches sur les Madi et les Moru mentionnent l'Enclave du Lado, territoire colonial belgo-britannique de 1894 à 1910. Il s'agit d'un lieu, pas d'une explication du nom."
+      "reason": "Charles et Brenda Seligman nomment en 1932 deux Bari appelés Lado, un fils de Molodiong et un jeune garçon, tous deux du clan Bekat. Ils citent aussi un chef appelé Laro Lado, connu à Mongalla, au Soudan du Sud actuel. Le projet n'a pas encore de fiche sur les Bari : le nom n'est donc relié à aucun peuple. Les fiches sur les Madi et les Moru mentionnent l'Enclave du Lado, territoire colonial belgo-britannique de 1894 à 1910. Il s'agit d'un lieu, pas d'une explication du nom."
     }
   ]
 }

@@ -60,7 +60,7 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom d'homme fang. Dans l'exemple de Rosendo Ela Nsue Mibui, les enfants d'un homme appelé Nsue portent tous ce nom. Chez les Fang, chacun reçoit un nom à lui, suivi de celui de son père, et Günter Tessmann écrit en 1913 que les Fang n'ont pas de nom de famille au sens européen. La fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom d'homme fang. Dans l'exemple de Rosendo Ela Nsue Mibui, les enfants d'un homme appelé Nsue portent tous ce nom après le leur. Le modèle a une case pour un nom de famille héréditaire, mais la fiche ne l'utilise pas : chez les Fang, chaque enfant prend pour second nom le nom de son propre père. Bonifacio Nguema Obiang-Mikue précise que c'est le fils appelé lui aussi Nsue, Nsue Nsue, qui portera ce nom à ses propres enfants. La fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "alliances",
@@ -109,7 +109,7 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 179",
-                "notes": "Article de Revista Cátedra 6(1), 2023, pp. 171-186. Lu le 18 octobre 2026 dans le PDF en espagnol. Page 179 : l'auteur cite Rosendo Ela Nsue Mibui (2005, p. 92) : « una persona que se llamase -NSUE- todos tendrán como apellidos el nombre de su padre -NSUE- ». Il ajoute son propre exemple : un père nommé Nsue a quatre enfants, Nguema Nsue, Ondo Nsue, Nsue Nsue et Obono Nsue. L'ouvrage de Nsue Mibui n'a pas été lu."
+                "notes": "Article de Revista Cátedra 6(1), 2023, pp. 171-186. Lu le 18 octobre 2026 dans le PDF en espagnol. Page 179 : l'auteur cite Rosendo Ela Nsue Mibui (2005, p. 92) : « una persona que se llamase -NSUE- todos tendrán como apellidos el nombre de su padre -NSUE- ». Il ajoute son propre exemple : un père nommé Nsue a quatre enfants, Nguema Nsue, Ondo Nsue, Nsue Nsue et Obono Nsue ; Nsue Nsue est « el representante onomástico de su padre que llevaría el nombre a sus hijos ». L'ouvrage de Nsue Mibui n'a pas été lu."
               }
             ]
           }

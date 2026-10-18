@@ -486,12 +486,24 @@ Duval, Bérenger), the Indian names of Mauritius (Gopaul, Beeharry, Appadoo),
 Kane, Bongo, do Espírito Santo, Letsie, and the Krio and Liberian names (Cole,
 Coker, Cooper, Freeman). Sixteen took `non_hereditary_patronymic`, unit
 `individual`: Ould Ahmed, a filiation like Ould Cheikh, with no `nameSystem`
-gap; Lado, a Bari personal name in Seligman (1932, pp. 268 and 270, read on the
-page images), which the fiche now cites; Kountché, the father's name in a Zarma
+gap; Lado, a Bari personal name in Seligman (1932, read on the page images),
+which the fiche now cites: on p. 270 a son of Molodiong and a boy are called
+Lado alone, with their clan, Bekat, given apart; the chief of p. 268 is « Laro
+Lado » throughout and is not used for the reading, since Lado may there be his
+father's name; Kountché, the father's name in a Zarma
 genealogy; the Bemba names Bwalya, Chanda, Mulenga and Musonda; and, under the
 Fang ruling, Obame, Obiang, Nchama, Nsue, Ela, Mengue, Nzue and the Ewondo
 names Ndongo and Onana. Obame, Obiang, Nsue and Ndongo, whose histories say
-the father's name follows the child's, are `patrilineal`. Ndong stays
+the father's name follows the child's, are `patrilineal`. Each of the fifteen
+`nameSystem` gaps says that the `hereditary_family_name` box exists. Thirteen
+add that no source read shows the name passed on as a family name. Nsue and
+Obiang cannot say so: their histories show every child of the man bearing his
+name. Their gaps give the reason instead: each child takes his own father's
+name as second name (Obiang-Mikue 2023, p. 179: the son called Nsue Nsue is
+the one who carries Nsue to his children; Tessmann vol. 2, p. 285, cited by
+Obiang only: the son of Boka-Essun is Ayong-Boka, and the Pangwe have no
+family names in our sense). A gap credits Tessmann only on a fiche that cites
+p. 285 (Obiang, Nchama). Ndong stays
 `clan_name`, unit `clan`: Tessmann (« Fam. Ndong ») and Obiang-Mikue call it a
 clan, and its gap now says it is also a man's name. The Swazi and Tsonga names
 keep `clan_name`, Moyo `totemic_clan`, Mabiala `non_hereditary_patronymic`. On

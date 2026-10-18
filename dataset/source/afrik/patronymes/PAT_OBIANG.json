@@ -60,7 +60,7 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom d'homme fang. Chez les Fang, chacun reçoit un nom à lui, suivi de celui de son père, comme dans Ntsama-Obiang, et Günter Tessmann écrit en 1913 que les Fang n'ont pas de nom de famille au sens européen. La fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom d'homme fang. Chez les Fang, le nom du père devient le second nom de tous ses enfants, comme dans Ntsama-Obiang. Le modèle a une case pour un nom de famille héréditaire, mais la fiche ne l'utilise pas : chaque enfant prend pour second nom le nom de son propre père, si bien que ce second nom change d'une génération à l'autre. Günter Tessmann en donne un exemple en 1913 : le fils de Boka-Essun s'appelle Ayong-Boka, et non Ayong-Essun. Il écrit aussi que les Fang n'ont pas de nom de famille au sens européen. La fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "alliances",
@@ -163,7 +163,7 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 285",
-                "notes": "Berlin, Ernst Wasmuth, 1913 ; exemplaire numérisé d'Internet Archive, lu le 18 octobre 2026. Page 285 : « Dem eigenen, vom Vater gegebenen Namen wird der des Vaters selbst angefügt » (au nom propre donné par le père s'ajoute celui du père lui-même) ; l'exemple de l'auteur est Boka-Essun, Boka fils d'Essun."
+                "notes": "Berlin, Ernst Wasmuth, 1913 ; exemplaire numérisé d'Internet Archive, lu le 18 octobre 2026. Page 285 : « Dem eigenen, vom Vater gegebenen Namen wird der des Vaters selbst angefügt » (au nom propre donné par le père s'ajoute celui du père lui-même) ; l'exemple de l'auteur est Boka-Essun, Boka fils d'Essun, dont le fils Ayong s'appelle Ayong-Boka. Même page : « Familiennamen in unserem Sinne kennen die Pangwe nicht » (les Pangwe ne connaissent pas de noms de famille au sens où nous l'entendons)."
               }
             ]
           }

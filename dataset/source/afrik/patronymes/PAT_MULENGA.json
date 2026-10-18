@@ -60,7 +60,7 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom personnel bemba. Chez les Bemba, les enfants appartiennent au clan de leur mère, mais prennent le dernier nom de leur père ; aucune source lue ne dit quand Mulenga lui-même est devenu un nom de famille. La fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom personnel bemba. Chez les Bemba, les enfants appartiennent au clan de leur mère, mais prennent le dernier nom de leur père. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que Mulenga lui-même se transmet ainsi de parent à enfant. La fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "alliances",
