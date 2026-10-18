@@ -33,7 +33,28 @@ export async function readSearchedThisWeek(): Promise<WeeklySearchName[]> {
       ) {
         return [];
       }
-      return [{ form: item.form, href: item.href }];
+      const subject =
+        "subject" in item &&
+        typeof item.subject === "object" &&
+        item.subject !== null &&
+        "type" in item.subject &&
+        typeof item.subject.type === "string" &&
+        "id" in item.subject &&
+        typeof item.subject.id === "string"
+          ? { type: item.subject.type, id: item.subject.id }
+          : undefined;
+      const summary =
+        "summary" in item && typeof item.summary === "string"
+          ? item.summary
+          : undefined;
+      return [
+        {
+          form: item.form,
+          href: item.href,
+          ...(subject ? { subject } : {}),
+          ...(subject && summary ? { summary } : {}),
+        },
+      ];
     });
   } catch {
     return [];
