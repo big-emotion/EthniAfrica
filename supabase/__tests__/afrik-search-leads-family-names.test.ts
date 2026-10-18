@@ -149,6 +149,10 @@ describe("near-miss leads, as migration 111 re-issues them", () => {
     const people = peopleBranch();
 
     expect(sql).toContain(`${literal(ONE_NAME)}::text AS one_name`);
+    // « abakwaManala » opens on a class prefix of six letters: a cap of four
+    // dropped it while the exonyms of its people still scored.
+    expect(sql).toContain("[[:lower:]]{1,8}[[:upper:]]");
+    expect(sql).not.toContain("[[:lower:]]{1,4}");
     expect(people).toContain("p.name_main AS value");
     expect(people).toContain("'{appellations,selfAppellation}'");
     expect(people).toContain("'{appellations,exonyms}'");
@@ -197,6 +201,9 @@ describe("near-miss leads, as migration 111 re-issues them", () => {
     expect(comment).toMatch(/one name/);
     expect(comment).toMatch(/click/);
     expect(comment).toMatch(/« a-liyan »/);
+    expect(comment).toMatch(
+      /class prefix of up to eight lower-case letters before a capital/
+    );
     expect(comment).toMatch(/Migration 111/);
     expect(comment).not.toMatch(/Besides its filed name/);
   });

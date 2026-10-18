@@ -8,8 +8,8 @@ doctrine, accessibility) rejected the first drawing; a second review rejected
 the redrawing; a third review rejected two points of the third drawing, and
 this is the fourth, with the corrections of a fourth, a fifth, a sixth, a
 seventh and an eighth review (see « Second review » to « Eighth review »
-below). A ninth and a tenth review, then a review of pull request #1861,
-set what a people lead is scored on; « Tenth review » records all three, and
+below). A ninth and a tenth review, then two reviews of pull request #1861,
+set what a people lead is scored on; « Tenth review » records all four, and
 migration 111 carries them.
 Status: **approved by the operator on 2026-10-18** (see « Approval record »).
 Pull request #1835 (ETNI-2092) was merged into recette the same day
@@ -557,6 +557,24 @@ written here:
   Rule 2 below now opens on such a prefix too, and a test holds the
   self-appellation on its own.
 
+A second review of pull request #1861 found the same fault in the cap on the
+lower-case class prefix:
+
+- **It dropped the names the two Southern Ndebele peoples give themselves**,
+  abakwaManala and abakwaNdzundza (« abakwa- » means « those of the house
+  of »). Each opens on a lower-case class prefix of six letters before the
+  stem's capital, and the rule capped such a prefix at four. Both fiches cut
+  cleanly at the slash of « AmaNdebele / abakwaManala », yet the piece was
+  dropped while their exonyms (« Manala Ndebele », « Southern Ndebele ») still
+  scored. « abakwamanala » then offered Gwandara through « Abakwa Riga » and
+  never the Manala, so a name others gave outranked the name the people gives
+  itself. Migration 110 did not score these two names either. The cap was
+  arbitrary: over every people piece and every family-name spelling, a cap of
+  six, eight or twelve letters, or none, admits exactly these two pieces and
+  nothing else. Rule 2 below now allows a prefix of one to eight letters.
+  ETNI-2135 could not have repaired it: once moved to a spelling alias, the
+  name would still be scored under this same rule.
+
 The rule (decision 5; migration 111):
 
 1. Each name field of a people, its filed name, its self-appellation and each
@@ -570,9 +588,10 @@ The rule (decision 5; migration 111):
    apostrophes (' ’), spaces, and the click marks ! | ǀ ǁ ǂ ǃ = / at the start
    of a word or inside it; and when its first word starts with an upper-case
    letter, a letter that has no case (ǂ ǁ ǃ ǀ), a click mark followed by a
-   letter (« !Kung », « =|Hoa »), a lower-case class prefix of one to four
+   letter (« !Kung », « =|Hoa »), a lower-case class prefix of one to eight
    letters directly followed by an upper-case letter (« amaXhosa »,
-   « isiNdebele », « vaKaranga »), or a lower-case class prefix of one or two
+   « isiNdebele », « vaKaranga », « abakwaManala »), or a lower-case class
+   prefix of one or two
    letters joined by a hyphen to a lower-case letter (« a-liyan »,
    « be-liyan »). Anything else, a lower-case word on its own, digits,
    « pl. », « = » standing alone, guillemets or prose, is not a name and is
@@ -584,7 +603,19 @@ The rule (decision 5; migration 111):
    that scored best, and the chip and the line name it. A filed name that did
    not itself score as a piece never stands in for one.
 4. A family name keeps its filed name as filed, and each recorded spelling is
-   scored only when it passes the same test (« da Costa » does not).
+   scored only when it passes the same test (« da Costa » does not). Against
+   migration 110, this stops scoring eight recorded spellings in seven
+   family-name fiches: « da Costa » (Costa), « da Silva » (Silva),
+   « al Hawary » and « al-Hawari » (El Hawary), « al-Khaṭṭābī » (Khattabi),
+   « al-Nūbī » (Nubi), « al-Nur » (Nur) and « rîfî » (Rifi). Whether an
+   « al- » spelling is one name is not settled here: migration 111 leaves
+   these eight unscored until the operator decides, so a misspelling of
+   « al-nur » can no longer reach Nur through its spelling. Ten more
+   recorded spellings fail the test and lose nothing, because each equals
+   its fiche's filed name, which is scored as filed: eight « al- » spellings
+   (« al-Danagla », « al-Jaʿali », « al-Kabbashi », « al-Mahdi »,
+   « al-Mirghani », « al-Rashaida », « al-Rizeigat », « al-Shaygiya »),
+   « dos Santos » and « do Espírito Santo ».
 
 In migration 111 the combining marks are the accents U+0300 to U+036F, and a
 word ends on a letter, an apostrophe or a hyphen, never on a click mark. The
@@ -595,12 +626,13 @@ or a family name is scored on. Where they disagree, this section holds.
 What it changes, measured with the model of `corpusNameModel.ts` over the 659
 people fiches, against migration 110 as recette runs it:
 
-- **Scored forms.** 3,666 pairs of a fiche and a form instead of 3,428: 307
+- **Scored forms.** 3,668 pairs of a fiche and a form instead of 3,428: 309
   pieces gained in 159 fiches, 69 forms lost in 47. Ten gained: Mukongo
   (Kongo), Izon and Ijo (Ijaw), Bidhaawyeet (Beja), Dyulanke (Dioula),
   Abahutu (Rwandais, Hutu), Hai//om (Haiǁom), Zhu/'hoasi (Ju|'hoansi),
-  Nǀhuki (Nǀuu), ʼNǀohan (Taa), vaKavango (Kavango); be-liyan (Bassari) is
-  gained too, and a-liyan, which 110 scored, is kept. The 69 lost are 14
+  Nǀhuki (Nǀuu), ʼNǀohan (Taa), vaKavango (Kavango); be-liyan (Bassari),
+  abakwaManala and abakwaNdzundza (the two Ndebele du Sud fiches) are gained
+  too, and a-liyan, which 110 scored, is kept. The 69 lost are 14
   joined strings now scored piece by piece (« Baganda / Ganda », « Diula,
   Djula, Doula, Dualas, Dyoula, Dyulanke »); 13 names of other peoples read
   from inside a bracket of a group fiche (Wolof and Sereer for Peuples
@@ -615,10 +647,13 @@ people fiches, against migration 110 as recette runs it:
   name with its gloss: `PPL_ATLANTIQUE_MACRO`, `PPL_BENOUECONGO_MACRO`,
   `PPL_GUR_MACRO`, `PPL_KROU_MACRO`, `PPL_BANTU`, `PPL_SAWA` and
   `PPL_HARARI`.
-- **Leads.** Over the 3,511 forms of both versions, each typed as written,
-  the three rows the function returns gain 526 leads and lose 506. Of the
-  506, 371 are only pushed out by a stronger lead the rule now scores; 285
-  leads keep their fiche under another chip. Ten gained: « Gouran » → Kreda
+- **Leads.** The 3,512 forms that either version scores (lower-cased, each
+  counted once) are each typed as written, and the three rows the function
+  returns for a typed form are compared, a lead being a typed form paired
+  with a fiche. The rule gains 532 leads and loses 511. Of the 511, 376 still
+  reach 0.2 through a form the rule scores and are only pushed out of the
+  three rows; the other 135 no longer reach 0.2 at all. Another 284 leads
+  keep their fiche among the three rows under another chip. Ten gained: « Gouran » → Kreda
   through Gourane (0.67), « Batswa » → Sotho-Tswana through Batswana
   (0.60), « Icenwiyen » → Chaoui through Icawiyen (0.46), « Tongwe » →
   Ronga through Tonga (0.44), « Zarma-Songhai » → Songhay Nigérien through
@@ -645,10 +680,18 @@ people fiches, against migration 110 as recette runs it:
   and Baganda scores 0.21 through Baganda, below. « akokolemou » offers no
   Kumam; it now offers Bakossi through Akose (0.21). « aliyan » gives
   Bassari first through a-liyan (0.50), above Alladian through Alladyan
-  (0.33), and « beliyan » Bassari through be-liyan (0.55). « jarra »,
+  (0.33), and « beliyan » Bassari through be-liyan (0.55). « abakwamanala »
+  gives the Manala first through abakwaManala (1.00) and « abakwandzundza »
+  the Ndzundza first through abakwaNdzundza (1.00); before, both offered
+  Gwandara through « Abakwa Riga » first. « jarra »,
   « icumama » and « ajumataw » keep their leads and their lines.
+- **Family-name spellings.** Of the 1,123 recorded spellings in the 776
+  family-name fiches, 18 fail the rule: eight that 110 scored and 111 no
+  longer scores, and ten that equal their filed name and lose nothing. Rule 4
+  names all eighteen.
 
-How it was checked. `familyNameLeads.test.ts` holds the words above and,
+How it was checked. `familyNameLeads.test.ts` holds the words above, among
+them the two Ndebele self-names and a one-letter slip of each, and,
 over every name field of every people fiche, three things: every form a lead
 can be named by is one name, by a check written letter by letter apart from
 the model's pattern; every piece that is one name is scored; and every
@@ -658,7 +701,7 @@ scores a piece of it, the filed name left out, but for the seven fiches
 named above, a list it holds exactly. The contract test of migration 111
 holds that the SQL applies the model's two patterns. Run by PostgreSQL 17's
 own regular expressions over every people name field and recorded spelling,
-the patterns as written in the migration give the model's 5,345 pieces
+the patterns as written in the migration give the model's 5,347 pieces
 exactly under the en_US.UTF-8, ICU and builtin C.UTF-8 collations, and 264
 fewer under C. Verification 6 of the migration checks the database's
 character type on recette and on production. The model splits a word at
@@ -673,8 +716,16 @@ the corpus check refuse a name field with a slash, a semicolon, a comma or
 space, one piece each here (« Gullah/Geechee », « Drawi/Drawa »), the packed
 glosses (« Habitants du Burundi / peuple du Burundi », « … ; Garifuna au
 singulier », « Crioulo, Upper Guinea ») and the self-appellations of the
-seven fiches named above. It does not cover these, and no ticket tracks them
-yet:
+seven fiches named above. It starts from migration 111's body, as migration
+112, not from 110's, and applies the pattern of rule 2 to each spelling
+alias. Its corpus check allows a name of four words where rule 2 allows
+three; the ticket settles it by raising the limit in 112 to four words,
+after measuring what the fourth word adds, so that one limit governs both.
+It also moves the colon lists of the group fiches (`PPL_SAHARIEN_MACRO`:
+Zaghawa, Teda, Kanembu; `PPL_NGUNI`: amaXhosa, emaSwati) into prose.
+Migration 111 still scores those pieces as forms of the group: « zagawa »
+ranks Peuples sahariens above Zaghawa, and « amaxosa » Nguni above Xhosa. The
+ticket removes both. It does not cover these, and no ticket tracks them yet:
 
 - **Glosses written as a whole entry** that open on a capital and have three
   words or fewer: « Peuples de l'eau », « Gens du Nil », « Omani de
@@ -682,12 +733,18 @@ yet:
   they pass this rule, so they are scored.
 - **« Ju–ǂHoan » and « Reer Hamar Gibil Madow »**, which fail this rule's
   letter (an en dash; four words). ETNI-2135's check accepts both as
-  written.
+  written. With the four-word limit above, only « Reer Hamar Gibil Madow »
+  would then be scored.
 - **The two long filed names** above: ETNI-2135 leaves filed names out of
   its scope.
 - **The Harari self-name in Ge'ez script**, ጌ፞ይ ኡሱኣች. Its mark U+135E is
   not among the accents U+0300 to U+036F that this rule reads, so written on
   its own, without its gloss, it would still fail here.
+- **The Coptic self-name « ⲣⲉⲙⲛ̀ⲭⲏⲙⲓ »** (`PPL_COPTES`, « remenkhēmi »). Coptic
+  is written in lower case, and a name in a script that has case must open
+  on a capital, or on a class prefix, to pass this rule. The semicolon cuts
+  it cleanly from « Aqbāṭ », which scores; the Coptic name then fails. Readers
+  are unlikely to type Coptic, and the Copts keep Aqbāṭ.
 
 ## States to draw
 

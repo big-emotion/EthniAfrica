@@ -340,7 +340,7 @@ const REST_OF_WORD = `(?:${BEFORE_A_LETTER}*${LETTER})*['’-]*`;
 // The hyphenated prefix stops at a lower-case letter after the hyphen: with
 // any letter there it would also admit twelve « al- » spellings of family
 // names (« al-Mahdi »), which rule 4 of brief 16 leaves open.
-const NAME_OPENING = `(?:(?![[:lower:]])[[:alpha:]]|${CLICK_MARK}+[[:alpha:]]|[[:lower:]]{1,4}[[:upper:]]|[[:lower:]]{1,2}-[[:lower:]])`;
+const NAME_OPENING = `(?:(?![[:lower:]])[[:alpha:]]|${CLICK_MARK}+[[:alpha:]]|[[:lower:]]{1,8}[[:upper:]]|[[:lower:]]{1,2}-[[:lower:]])`;
 
 /**
  * What makes a piece one name (migration 111): three words at most, each made
@@ -348,10 +348,10 @@ const NAME_OPENING = `(?:(?![[:lower:]])[[:alpha:]]|${CLICK_MARK}+[[:alpha:]]|[[
  * marks (! | ǀ ǁ ǂ ǃ = /) at the start of a word or inside it, never at its
  * end. The first word opens on an upper-case letter, a letter with no case
  * (ǂHoan, a Ge'ez name), click marks before a letter (« !Kung », « =|Hoa »),
- * a class prefix of one to four lower-case letters before an upper-case one
- * (« amaXhosa », « isiNdebele », « vaKaranga »), or a class prefix of one or
- * two lower-case letters joined by a hyphen to a lower-case one (« a-liyan »,
- * « be-liyan », the names the Bassari give themselves). Any other lower-case
+ * a class prefix of one to eight lower-case letters before an upper-case one
+ * (« amaXhosa », « isiNdebele », « vaKaranga », « abakwaManala »), or a class
+ * prefix of one or two lower-case letters joined by a hyphen to a lower-case
+ * one (« a-liyan », « be-liyan », the names the Bassari give themselves). Any other lower-case
  * word (« suivant Abdoulaye Bathily », « peuple du Burundi »), a digit, « pl. », a
  * lone « = », guillemets or a sentence is not one name, and is never scored.
  * The model reads the same text with Unicode classes.
