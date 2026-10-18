@@ -41,8 +41,10 @@ export const nameTimelineCopy: Record<Language, NameTimelineCopy> = {
     searchedMark: "cherché",
     formerMark: "ancien",
     seeSelfName: "Voir",
-    hint: "On remonte le temps",
-    elsewhereButton: "Pendant ce temps, ailleurs",
+    // Plain labels, no figure of style (operator, 2026-10-17): the doctrine's
+    // « birth » and « meanwhile, elsewhere » name ideas, not reader labels.
+    hint: "Du plus récent au plus ancien",
+    elsewhereButton: "Ailleurs à la même époque",
     regime: {
       polity: "Précolonial",
       colonial: "Colonial",
@@ -51,8 +53,7 @@ export const nameTimelineCopy: Record<Language, NameTimelineCopy> = {
     regimeLegend: "Époques",
     tilesLabel: (name) =>
       `Histoire du nom ${name}, du plus récent au plus ancien`,
-    birthMark: (name) =>
-      `Naissance du nom ${name} · origine la plus ancienne connue du projet`,
+    birthMark: (name) => `Origine la plus ancienne connue du nom ${name}`,
     beforeMark: (name) => `Avant le nom ${name}`,
     hypothesesHeading: (name) =>
       `D'où vient le nom ${name} ? Les sources proposent plusieurs explications, sans que l'une l'emporte.`,
@@ -62,7 +63,7 @@ export const nameTimelineCopy: Record<Language, NameTimelineCopy> = {
       `L'origine du nom ${name} n'est pas datée dans le projet pour l'instant.`,
     end: (name) =>
       `Fin de ce que nos recherches retracent pour le nom ${name}.`,
-    elsewhereTitle: "Pendant ce temps, ailleurs",
+    elsewhereTitle: "Ailleurs à la même époque",
     elsewhereLead: {
       plain: (name) => `Le nom ${name} est alors en usage.`,
       birth: (name) =>

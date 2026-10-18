@@ -118,7 +118,9 @@ describe("NameTimeline — the tiles", () => {
   it("goes back in time from today, the period set on each tile", () => {
     renderLingala();
 
-    expect(screen.getByText("On remonte le temps")).toBeInTheDocument();
+    expect(
+      screen.getByText("Du plus récent au plus ancien")
+    ).toBeInTheDocument();
     expect(tiles().map((tile) => tile.getAttribute("data-placement"))).toEqual([
       "plain",
       "plain",
@@ -137,7 +139,7 @@ describe("NameTimeline — the tiles", () => {
     const birth = tiles()[2];
 
     expect(birth).toHaveTextContent(
-      "Naissance du nom Lingala · origine la plus ancienne connue du projet"
+      "Origine la plus ancienne connue du nom Lingala"
     );
     expect(birth).toHaveTextContent("1902");
   });
@@ -202,12 +204,12 @@ describe("NameTimeline — the tiles", () => {
   });
 });
 
-describe("NameTimeline — « Pendant ce temps, ailleurs »", () => {
+describe("NameTimeline — « Ailleurs à la même époque »", () => {
   // @req REQ-198
   it("keeps the anchors hidden until the reader asks for them", () => {
     renderLingala();
     const toggle = screen.getByRole("button", {
-      name: "Pendant ce temps, ailleurs",
+      name: "Ailleurs à la même époque",
     });
 
     expect(toggle).toHaveAttribute("aria-pressed", "false");
@@ -241,7 +243,7 @@ describe("NameTimeline — « Pendant ce temps, ailleurs »", () => {
       />
     );
     fireEvent.click(
-      screen.getByRole("button", { name: "Pendant ce temps, ailleurs" })
+      screen.getByRole("button", { name: "Ailleurs à la même époque" })
     );
 
     expect(

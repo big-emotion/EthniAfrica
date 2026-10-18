@@ -51,7 +51,7 @@ export const Lingala: Story = {};
 
 /**
  * Searched by a name the people does not give itself: the lead to Fulɓe. With
- * its West African countries, « Pendant ce temps, ailleurs » skips events from
+ * its West African countries, « Ailleurs à la même époque » skips events from
  * West Africa.
  */
 // @req REQ-198

@@ -38,6 +38,17 @@ describe("SourcedHighlightBlock", () => {
     );
   });
 
+  // No figure of style in a label (operator, 2026-10-17): the aside says
+  // what it is rather than asking the reader a rhetorical question.
+  // @req REQ-124
+  it("labels the fact plainly, without a rhetorical question", () => {
+    render(<SourcedHighlightBlock result={zuluResult} facts={facts} />);
+
+    const block = screen.getByTestId("sourced-highlight-block");
+    expect(block).toHaveTextContent(/^À savoir/);
+    expect(block).not.toHaveTextContent(/saviez-vous/i);
+  });
+
   // @req REQ-124
   it("renders nothing when the bank has no fact about this pivot", () => {
     const { container } = render(
