@@ -286,7 +286,7 @@ const searchResultSchema = z
     name: z.string().min(1),
   })
   .passthrough();
-const searchLeadSchema = z
+const searchNearNameSchema = z
   .object({
     type: z.enum(["people", "country", "languageFamily"]),
     id: z.string().min(1),
@@ -294,6 +294,10 @@ const searchLeadSchema = z
     similarity: z.number().min(0).max(1),
   })
   .strict();
+// A family name is a lead (DEC-075), never a similar name.
+const searchLeadSchema = searchNearNameSchema.extend({
+  type: z.enum(["people", "country", "languageFamily", "patronyme"]),
+});
 const lensCountsSchema = z
   .object({
     all: z.number().int().nonnegative(),
@@ -326,7 +330,7 @@ export const feedCaseFixturesSchema = z
               .object({
                 results: z.array(searchResultSchema),
                 leads: z.array(searchLeadSchema),
-                nearNames: z.array(searchLeadSchema),
+                nearNames: z.array(searchNearNameSchema),
                 counts: lensCountsSchema,
                 answered: z.literal(true),
               })

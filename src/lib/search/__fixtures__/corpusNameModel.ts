@@ -278,3 +278,28 @@ export function neighbours(
       return scored.some((form) => similarity(form, query) >= NEIGHBOUR_FLOOR);
     });
 }
+
+/** The family-name search's own trigram threshold (066, 069, 108). */
+// @req REQ-125
+export const FAMILY_NAME_LEAD_FLOOR = 0.4;
+
+/**
+ * The family-name branch of the leads (migration 109, DEC-075): a family name
+ * qualifies through a form that begins with the query's first letter, both
+ * folded, at the family-name search's own threshold. Whether it is offered —
+ * nothing answering exactly — is the query layer's, and is not modelled.
+ */
+// @req REQ-125
+export function familyNameLeads(query: string): ModelEntity[] {
+  const folded = normalizeString(query).trim();
+  if (folded.length < 3) return [];
+  return corpusEntities()
+    .filter((item) => item.kind === "patronyme")
+    .filter((item) =>
+      item.forms.some(
+        (form) =>
+          normalizeString(form).trim()[0] === folded[0] &&
+          similarity(form, query) >= FAMILY_NAME_LEAD_FLOOR
+      )
+    );
+}

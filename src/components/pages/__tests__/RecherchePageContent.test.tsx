@@ -654,6 +654,68 @@ describe("RecherchePageContent", () => {
     expect(screen.queryByTestId("feed-block-owed")).not.toBeInTheDocument();
   });
 
+  // DEC-075, measured on production 2026-10-18: « tchikaya » found Chukwu and
+  // Tchicaya, neither answering it, and the page only said it found related
+  // fiches. Tchicaya is the spelling the reader probably meant.
+  // @req REQ-125
+  it("asks « Cherchiez-vous… ? » for « tchikaya », offers Tchicaya, and still lists the fiches found", async () => {
+    mockFetch.mockResolvedValue(
+      okJson({
+        data: {
+          peoples: [],
+          countries: [],
+          families: [],
+          languages: [],
+          persons: [],
+          patronymes: [
+            { id: "PAT_CHUKWU", nameMain: "Chukwu", relevance: 0.5 },
+            { id: "PAT_TCHICAYA", nameMain: "Tchicaya", relevance: 0.5 },
+          ],
+          patronymesTotal: 2,
+          total: 2,
+          leads: [
+            {
+              kind: "patronyme",
+              id: "PAT_TCHICAYA",
+              name: "Tchicaya",
+              similarity: 0.5,
+            },
+          ],
+        },
+        meta: {},
+      })
+    );
+    render(<RecherchePageContent />);
+
+    await act(async () => {
+      fireEvent.change(screen.getByRole("combobox"), {
+        target: { value: "tchikaya" },
+      });
+      fireEvent.click(screen.getByRole("button", { name: /rechercher/i }));
+      await new Promise((r) => setTimeout(r, 100));
+    });
+
+    await waitFor(() => {
+      expect(screen.getByText("Cherchiez-vous… ?")).toBeInTheDocument();
+    });
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
+      "tchikaya"
+    );
+    expect(
+      screen.queryByText(searchFeedCopy.fr.answer.relatedOnly)
+    ).not.toBeInTheDocument();
+    const choices = screen.getByTestId("appellations-list");
+    expect(
+      within(choices).getByRole("link", { name: /Tchicaya/ })
+    ).toBeInTheDocument();
+    const fiches = screen.getByTestId("feed-block-fiches");
+    expect(within(fiches).getByText("Chukwu")).toBeInTheDocument();
+    expect(within(fiches).getByText("Tchicaya")).toBeInTheDocument();
+    expect(
+      choices.compareDocumentPosition(fiches) & Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+  });
+
   // @req REQ-002
   it("empty state links to the families directory", async () => {
     mockFetch.mockResolvedValue(okJson(emptyApiResponse));

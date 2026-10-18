@@ -1,0 +1,42 @@
+import { describe, expect, it } from "vitest";
+
+import { familyNameLeads } from "@/lib/search/__fixtures__/corpusNameModel";
+
+// DEC-075 over the real family-name fiches of the repository, through the
+// pg_trgm model of corpusNameModel.ts. The SQL of migration 109 stays the
+// authority; its verification block re-checks these on recette.
+describe("which family names are a spelling of the searched name (DEC-075)", () => {
+  const leadIds = (query: string) =>
+    familyNameLeads(query).map((item) => item.key);
+
+  // @req REQ-125
+  it("offers Tchicaya for « tchikaya », and neither Tchalla nor Tchoumba", () => {
+    expect(leadIds("tchikaya")).toContain("PAT_TCHICAYA");
+    expect(leadIds("tchikaya")).not.toContain("PAT_TCHALLA");
+    expect(leadIds("tchikaya")).not.toContain("PAT_TCHOUMBA");
+  });
+
+  // @req REQ-125
+  it("offers Mutombo for « muzombo »", () => {
+    expect(leadIds("muzombo")).toContain("PAT_MUTOMBO");
+  });
+
+  // Mukasa begins with another letter; Bukuru begins with b but shares too
+  // little with « bukasa ».
+  // @req REQ-125
+  it("offers no family name for « bukasa »", () => {
+    expect(leadIds("bukasa")).toEqual([]);
+  });
+
+  // The first letter changes, so the spelling is not offered; the search
+  // itself still finds what it finds.
+  // @req REQ-125
+  it("does not offer Tchicaya for « chikaya »", () => {
+    expect(leadIds("chikaya")).not.toContain("PAT_TCHICAYA");
+  });
+
+  // @req REQ-125
+  it("offers nothing for a query under three letters", () => {
+    expect(familyNameLeads("tc")).toEqual([]);
+  });
+});

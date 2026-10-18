@@ -110,13 +110,16 @@ export function classifySearchFeed({
   subjects,
   termSuggestions = [],
 }: SearchFeedClassificationInput): SearchFeedAnswerState {
+  const foundByWord = companions.shorts.items.some(
+    ({ match }) => match.relation === "word"
+  );
+  // Related fiches with a lead: the API offers a lead beside results only as
+  // a spelling of the searched name (DEC-075), so the page asks which name
+  // the reader meant before it lists them.
   if (subjects && subjects.length === 0 && search.results.length > 0) {
-    return "widened";
+    return search.leads.length > 0 && !foundByWord ? "typo" : "widened";
   }
   if (search.results.length === 0) {
-    const foundByWord = companions.shorts.items.some(
-      ({ match }) => match.relation === "word"
-    );
     const hasSuggestion = search.leads.length + termSuggestions.length > 0;
     return hasSuggestion && !foundByWord ? "typo" : "unknown";
   }

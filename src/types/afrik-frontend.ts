@@ -283,15 +283,19 @@ export interface SearchResult {
 }
 
 /**
- * Near-miss lead (REQ-125): what the search engine almost understood, shown
- * only when a search's `total` is 0. `type` reuses `SearchEntityType`'s
+ * Near-miss lead (REQ-125): what the search engine almost understood. A
+ * people, country or family lead comes only when a search's `total` is 0; a
+ * family name (`patronyme`) comes as a spelling of the searched name whenever
+ * nothing answers it exactly (DEC-075). `type` reuses `SearchEntityType`'s
  * naming (`languageFamily`, not the API's `family`) so a lead can share
  * `SEARCH_ENTITY_ACCENT`'s accent and label with a real result of the same
- * kind — languages and persons are not candidates for a lead any more than
- * they are named in `SEARCH_LABEL`.
+ * kind. Languages and persons are never leads.
  */
 export interface SearchLead {
-  type: Extract<SearchEntityType, "people" | "country" | "languageFamily">;
+  type: Extract<
+    SearchEntityType,
+    "people" | "country" | "languageFamily" | "patronyme"
+  >;
   id: string;
   name: string;
   similarity: number;
@@ -299,11 +303,11 @@ export interface SearchLead {
 
 /**
  * A similar name explicitly qualified by the API for a non-empty search.
- * Kept separate from `SearchLead`, whose suggestions exist only when the
- * corpus found no result at all.
+ * Kept separate from `SearchLead`, whose suggestions stand in for a missing
+ * answer. A family name is never a similar name (DEC-075).
  */
 export interface SearchNearName {
-  type: SearchLead["type"];
+  type: Exclude<SearchLead["type"], "patronyme">;
   id: string;
   name: string;
   similarity: number;

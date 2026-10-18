@@ -135,6 +135,75 @@ describe("search-feed plan", () => {
     ).toBe("widened");
   });
 
+  // DEC-075: « tchikaya » finds Chukwu and Tchicaya, neither answering it,
+  // and the API offers Tchicaya as the spelling the reader probably meant.
+  // @req REQ-125
+  it("asks « Cherchiez-vous… ? » when related fiches come with a lead", () => {
+    const widened = FEED_CASES.find(({ id }) => id === "mande")!;
+    const tchicaya = {
+      type: "patronyme" as const,
+      id: "PAT_TCHICAYA",
+      name: "Tchicaya",
+      similarity: 0.5,
+    };
+
+    expect(
+      classifySearchFeed({
+        ...widened.production,
+        search: {
+          results: widened.production.search.results,
+          leads: [tchicaya],
+        },
+        subjects: [],
+      })
+    ).toBe("typo");
+  });
+
+  // @req REQ-125
+  it("keeps related fiches with no lead as a widened page", () => {
+    const widened = FEED_CASES.find(({ id }) => id === "mande")!;
+
+    expect(
+      classifySearchFeed({
+        ...widened.production,
+        search: { results: widened.production.search.results, leads: [] },
+        subjects: [],
+      })
+    ).toBe("widened");
+  });
+
+  // A piece found by the reader's own word answers it: no spelling is asked.
+  // @req REQ-125
+  it("does not ask for a spelling when a piece answers the reader's word", () => {
+    const widened = FEED_CASES.find(({ id }) => id === "mande")!;
+    const [short] = FEED_CASES.find(({ id }) => id === "inconnu")!.production
+      .companions.shorts.items;
+
+    expect(
+      classifySearchFeed({
+        search: {
+          results: widened.production.search.results,
+          leads: [
+            {
+              type: "patronyme",
+              id: "PAT_TCHICAYA",
+              name: "Tchicaya",
+              similarity: 0.5,
+            },
+          ],
+        },
+        companions: {
+          ...widened.production.companions,
+          shorts: {
+            count: 1,
+            items: [{ ...short, match: { relation: "word", word: "zombie" } }],
+          },
+        },
+        subjects: [],
+      })
+    ).toBe("widened");
+  });
+
   // @req REQ-180
   it("uses resolved subjects, then typo leads, and permits an empty unknown request", () => {
     const exact = FEED_CASES.find(({ id }) => id === "bassa")!;

@@ -61,6 +61,29 @@ describe("NoResultsLeads", () => {
     );
   });
 
+  // DEC-075: a family name offered as a spelling opens its own fiche.
+  // @req REQ-125
+  it("links a family-name lead to its name fiche", () => {
+    render(
+      <NoResultsLeads
+        leads={[
+          {
+            type: "patronyme",
+            id: "PAT_TCHICAYA",
+            name: "Tchicaya",
+            similarity: 0.5,
+          },
+        ]}
+        language="fr"
+      />
+    );
+
+    expect(screen.getByRole("link", { name: /Tchicaya/ })).toHaveAttribute(
+      "href",
+      "/fr/atlas/noms/PAT_TCHICAYA"
+    );
+  });
+
   // @req REQ-125
   it("labels each lead with its entity kind", () => {
     render(<NoResultsLeads leads={leads} language="fr" />);

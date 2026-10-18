@@ -23,7 +23,9 @@ import { routeCommittedSearchFeedAssets } from "./search-feed-browser";
 
 const API_SEARCH_PATH = "/api/v2/search";
 
-function leadKind(type: SearchLead["type"]): "people" | "country" | "family" {
+function leadKind(
+  type: SearchLead["type"]
+): "people" | "country" | "family" | "patronyme" {
   return type === "languageFamily" ? "family" : type;
 }
 
