@@ -171,5 +171,232 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Khoe, ou peuples khoe, réunit des peuples de Namibie, du Botswana et d'Afrique du Sud dont les langues à clics forment la famille khoe, avec ses deux branches, le khoekhoe et le khoe du Kalahari. Ce n'est pas le nom d'un peuple : aucune source que nous avons lue ne donne un nom que ces peuples se donneraient tous ensemble, et chacun porte le sien. C'est un nom de linguistes, tiré d'un mot de ces langues qui veut dire « homme » ; on a aussi parlé de khoïsan central. Nous présentons ces noms plus bas.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Khoe",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des linguistes, d'après le mot khoe de ces langues",
+        "shortLine": "Un nom de linguistes, tiré d'un mot de ces langues qui veut dire « homme ».",
+        "periodLabel": "Écrit dès 1971 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2000,
+              "to": 2000,
+              "label": "2000"
+            },
+            "era": "modern",
+            "statement": "Le nom Khoe désigne, chez Tom Güldemann et Rainer Voßen, un ensemble de deux branches, le khoekhoe et le khoe du Kalahari, à côté d'autres familles qu'on rangeait autrefois avec lui sous le nom de khoïsan, selon Bernd Heine et Henry Honken.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Kx'a Family: A New Khoisan Genealogy, Journal of Asian and African Studies, no 79",
+                "author": "Bernd Heine et Henry Honken",
+                "year": 2010,
+                "url": "https://doi.org/10.15026/57434",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Tokyo University of Foreign Studies, 2010. PDF lu dans le dépôt de l'université le 18 octobre 2026 ; les numéros de page sont ceux imprimés sur les pages.",
+                "page": "p. 9, tableau 3"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par les auteurs"
+            },
+            "statement": "Le nom Khoe reprend un mot de ces langues que l'historien D. Olderogge traduit par « homme ». Les linguistes ont pris l'habitude de nommer ces familles d'après leur mot pour « personne, gens », selon Tom Güldemann.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 11 : Migrations et différenciations ethniques et linguistiques",
+                "author": "D. Olderogge",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 313"
+              },
+              {
+                "title": "Studies in Tuu (Southern Khoisan), University of Leipzig Papers on Africa, Languages and Literatures, no 23",
+                "author": "Tom Güldemann",
+                "year": 2005,
+                "url": "https://ul.qucosa.de/api/qucosa%3A33604/attachment/ATT-0/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Leipzig, Université de Leipzig, 2005. PDF lu le 18 octobre 2026 ; les numéros de page sont ceux imprimés sur les pages.",
+                "page": "p. 4"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1971,
+              "to": 1974,
+              "label": "1971-1974"
+            },
+            "statement": "Le nom Khoe sert dès 1971 à nommer des peuples : le linguiste Oswin Köhler intitule un article « Die Khoe-sprachigen Buschmänner der Kalahari », les « Bushmen » de langue khoe du Kalahari. Avec Ernst O. J. Westphal, il remplace alors le nom géographique de khoïsan central par celui de khoe, selon Tom Güldemann. C'est la plus ancienne trace de ce nom de groupe que le projet connaît. Les peuples qu'il réunit existaient déjà avant lui.",
+            "formAsWritten": "Khoe-sprachigen",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Studies in Tuu (Southern Khoisan), University of Leipzig Papers on Africa, Languages and Literatures, no 23",
+                "author": "Tom Güldemann",
+                "year": 2005,
+                "url": "https://ul.qucosa.de/api/qucosa%3A33604/attachment/ATT-0/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Leipzig, Université de Leipzig, 2005. PDF lu le 18 octobre 2026 ; les numéros de page sont ceux imprimés sur les pages. La bibliographie cite : « Köhler, Oswin. 1971. Die Khoe-sprachigen Buschmänner der Kalahari: Ihre Verbreitung und […] ». Nous n'avons lu que ce titre, pas l'article.",
+                "page": "p. 4 et bibliographie, p. 9"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Khoïsan central",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des savants européens et américains, d'après le nom Khoisan",
+        "shortLine": "L'ancien nom géographique de cette famille, au centre des langues à clics.",
+        "periodLabel": "Écrit chez Greenberg en 1980 ; ancien",
+        "accounts": [
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "statement": "Le nom khoïsan central désigne, chez Joseph Greenberg, un groupe de deux ensembles : le kiechware d'un côté, le naron et le khoï khoï de l'autre, au milieu des langues à clics d'Afrique australe.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 336"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1930,
+              "label": "1928-1930"
+            },
+            "statement": "Le nom khoïsan central est formé sur Khoisan, que l'anthropologue Leonhard Schultze forge en 1928 pour la « souche raciale » commune aux « Bushmen » et aux Khoekhoe, selon Isaac Schapera, qui l'adopte en 1930 comme nom commun de ces deux peuples. Khoisan unit Khoi-Khoin, le nom que se donnent les Khoekhoe, et San, celui qu'ils donnent aux « Bushmen ».",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, 1930. Lu dans la numérisation de la Digital Library of India sur Internet Archive le 18 octobre 2026 ; les numéros de page imprimés ont été lus sur l'image. « The term Khoisan, recently coined by Schultze to denote the racial stock to which the Bushmen and the Hottentots belong, has therefore been accepted here as a convenient generic name for these two peoples » (p. 5) ; la note 1 dit le mot formé de Khoi-Khoin et de San, et ajoute que les seconds « have no collective name of their own ». Le titre et le texte emploient les noms que les Européens donnaient alors à ces peuples ; nous ne les reprenons qu'entre guillemets.",
+                "page": "p. 5 et note 1"
+              },
+              {
+                "title": "The Kx'a Family: A New Khoisan Genealogy, Journal of Asian and African Studies, no 79",
+                "author": "Bernd Heine et Henry Honken",
+                "year": 2010,
+                "url": "https://doi.org/10.15026/57434",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Tokyo University of Foreign Studies, 2010. PDF lu dans le dépôt de l'université le 18 octobre 2026 ; les numéros de page sont ceux imprimés sur les pages. « The term “Khoisan” was first proposed by the anthropologist Leonhard Schultze (1928) and adopted in African linguistics by Westermann (1935) ».",
+                "page": "p. 8"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1880,
+              "to": 1930,
+              "label": "De 1880 à 1930"
+            },
+            "statement": "Le nom khoïsan central range les langues khoekhoe avec celles de « Bushmen » du Kalahari. On les tenait auparavant pour des langues « chamitiques » : Lepsius le soutient en 1880, puis Meinhof, qui prend en 1912 le nama comme langue type des « Hamites », selon Isaac Schapera. Schapera note qu'on vient de montrer qu'elles ont bien plus en commun avec les langues des « Bushmen ».",
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, 1930. Lu dans la numérisation de la Digital Library of India sur Internet Archive le 18 octobre 2026 ; les numéros de page imprimés ont été lus sur l'image. « They have, therefore, been generally looked upon as essentially Hamitic languages […]. It has recently been demonstrated, however, that fundamentally, they have far more in common with the Bushman than with the Hamitic languages » ; note 2 : « This view, already advocated in 1880 by Lepsius, […] has been expressed most forcibly in recent times by Meinhof, who in his Die Sprachen der Hamiten, 1912, selects Nama as a type language ». Le titre et le texte emploient les noms que les Européens donnaient alors à ces peuples ; nous ne les reprenons qu'entre guillemets.",
+                "page": "p. 419 et note 2"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 336-337"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "1930"
+            },
+            "statement": "On parle alors, pour chacun de ces peuples, de son propre nom. Les //aikwe, que les Auen appellent Naron, « les gens sans importance », se rangent avec leurs voisins sous le nom de K”am-ka Kwe, « les gens de la bouche » ; les Bugakwe et leurs voisins se nomment ensemble /tannekwe, « les gens du fleuve », selon Isaac Schapera.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, 1930. Lu dans la numérisation de la Digital Library of India sur Internet Archive le 18 octobre 2026 ; les numéros de page imprimés ont été lus sur l'image. « by whom they are termed Naron (“ insignificant people ”) » ; « in the collective designation K”am-ka Kwe, “ Mouth's people ” » ; « term themselves collectively /tannekwe, “ river people ” ». Le titre et le texte emploient les noms que les Européens donnaient alors à ces peuples ; nous ne les reprenons qu'entre guillemets.",
+                "page": "p. 35"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1927,
+              "to": 1930,
+              "label": "1927-1930"
+            },
+            "statement": "On parle alors du « groupe central » des langues des « Bushmen », un nom tiré de leur place sur la carte, que leur donne la linguiste Dorothea Bleek à partir de 1927. Isaac Schapera s'en sert en 1930 pour ranger les tribus elles-mêmes, comme un moyen commode, et note que ces peuples ne semblent pas avoir de nom commun pour eux-mêmes. Il note que leurs langues ressemblent beaucoup aux langues khoekhoe.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, 1930. Lu dans la numérisation de la Digital Library of India sur Internet Archive le 18 octobre 2026 ; les numéros de page imprimés ont été lus sur l'image. « To these the names Southern, Northern, and Central Groups respectively have been applied by Miss D. F. Bleek, on account of their relative geographical distribution. These names may also be used as affording a convenient means of grouping the different tribes » (p. 31-32) ; « The Bushmen do not appear to have any general or collective names for themselves » (p. 31). « The languages of these tribes […] present many close similarities to the Hottentot languages » (p. 35). Le titre et le texte emploient les noms que les Européens donnaient alors à ces peuples ; nous ne les reprenons qu'entre guillemets.",
+                "page": "p. 31-32 et 35"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
