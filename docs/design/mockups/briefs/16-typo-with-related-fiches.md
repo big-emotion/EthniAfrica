@@ -6,8 +6,8 @@ Written 2026-10-18 as brief 13, renumbered 16 the same day (pull request
 #1832 holds briefs 13 to 15). A review through three lenses (art direction,
 doctrine, accessibility) rejected the first drawing; a second review rejected
 the redrawing; a third review rejected two points of the third drawing, and
-this is the fourth, with the corrections of a fourth, a fifth and a sixth
-review (see « Second review » to « Sixth review » below).
+this is the fourth, with the corrections of a fourth, a fifth, a sixth and a
+seventh review (see « Second review » to « Seventh review » below).
 Status: **proposed, awaiting the operator's approval.** Nothing here binds the
 code until the operator approves it or asks for changes. The pull request that
 needs it (#1835, ETNI-2092) must not merge before then.
@@ -158,10 +158,17 @@ and keeps the approval of the boards.
    « une forme proche de Tchicaya »), and DEC-075 records no spelling
    « tchikaya ». The chip names the form that scored, which migration 110
    returns as `matched_form` (API `matchedForm`) beside the filed name; the
-   filed name stands only when a database sends no form. Only a family-name
-   lead is said to be written almost the same way: it begins with the query's
-   first letter and its named form scores 0.4 at least, so the claim is true
-   of what the chip says. One choice: « Tchicaya s’écrit presque de la même
+   filed name stands only when a database sends no form, or when a people's
+   form that scored is not one name. The self-appellation is split on its
+   commas alone, so a bracket holding a comma is cut in two: « Baganda (sg.
+   Muganda, pl. Abaganda) » scores « pl. Abaganda) », and printed, the page
+   would say that the fiche « donne aussi le nom pl. Abaganda) ». A form with
+   a bracket, a slash, a semicolon, a colon, a full stop, guillemets, a date,
+   « = » between two words or two names joined by « ou » still scores, and
+   the chip names the fiche's filed name, as before migration 110. Only a
+   family-name lead is said to be written almost the same way: it begins with
+   the query's first letter and its named form scores 0.4 at least, so the
+   claim is true of what the chip says. One choice: « Tchicaya s’écrit presque de la même
    façon : vous pouvez chercher ce nom. » under « Un nom qui s’écrit presque
    de la même façon ». Several: « Plusieurs noms s’écrivent presque de la même
    façon : choisissez celui que vous cherchez. » under « Des noms qui
@@ -409,6 +416,47 @@ brief, with the answers the operator delegated.
   phonetic key, which only the database computes. `familyNameLeads.test.ts`
   holds the model's part, and that the Peul fiche writes « felata ».
 
+## Seventh review (2026-10-18)
+
+The re-review of #1835 modelled pg_trgm over the corpus again, through the
+doctrine lens. One point blocked; it is fixed in migration 110, the model of
+`corpusNameModel.ts` and this brief. The boards draw none of the queries
+concerned, so they do not change.
+
+- **A chip printed a piece of a phrase as a name** (doctrine, decision 5).
+  This pull request is the first to print `matched_form`, and migration
+  110's people branch had been written for scoring: it splits a
+  self-appellation on its commas alone and strips only a trailing bracket.
+  Besides the filed names, 240 forms of 190 of the 657 people fiches still
+  carry a bracket, a slash, a semicolon or a colon. « abagenda » reaches
+  Baganda through « pl. Abaganda) » (0.40), and the page wrote « La fiche
+  Baganda / Ganda donne aussi le nom pl. Abaganda). »; « akokolemou » gave
+  the chip « Akokolemu) » (Kumam, 0.62), « mukongu » the chip « Bakongo
+  (pluriel) / Mukongo » (Kongo, 0.27). No fiche writes these words, so each
+  reaches the misspelling page. The REQ-125 draft says the chip names a
+  people's filed name, the name it gives itself or one of its exonyms, and
+  decision 5 says the line says only what the data says.
+
+  Migration 110 now names a people by the form that scored only when that
+  form is one name; otherwise by its filed name, as the rows of migration 094
+  did. Scores, rows and order are unchanged. The rule also leaves out 20
+  forms that are two names or a sentence (« Yacouba ou Yakuba », « nkop =
+  terre », « etc. », « 1995 »): 260 forms of 198 fiches in all. The equal
+  sign alone is no mark, since « =|Hoa » writes a click. The chips are now
+  « Baganda / Ganda », « Kumam » and « Kongo », each the fiche's filed name,
+  with no line. `familyNameLeads.test.ts` holds the three queries and, over
+  every form of every people fiche, that no chip is a piece of a phrase;
+  the contract test of migration 110 holds that the SQL applies the
+  model's pattern.
+
+  One part of the review's proposal is not taken. It asked that no chip for
+  the three queries contain a slash. The chip for « abagenda » is the filed
+  name « Baganda / Ganda », with its slash: the fiche is filed this way, the
+  search showed it so before this pull request, and keeping one side of the
+  slash would crown one form over the other (doctrine §1). Splitting the
+  singular and plural self-appellations into clean entries is a data fix,
+  listed under « Follow-ups »; once done, « abagenda » can name Abaganda.
+
 ## States to draw
 
 Only the first is drawn as a board; the others are held by tests or drawn on
@@ -434,6 +482,12 @@ Only the first is drawn as a board; the others are held by tests or drawn on
 - **A lead through its filed name, bracket aside**: « diolla » → the chip
   Diola, the form migration 110 scores for the fiche filed « Diola (Joola /
   Jola) », and no line. Held by `SearchFeedMisspelling.test.tsx`.
+- **A lead through a form that is not one name**: « akokolemou » reaches
+  Kumam through « Akokolemu) », a piece of « Kumam (ou Ikokolemu,
+  Akokolemu) » (0.62) → the chip Kumam, the filed name, and no line.
+  « abagenda » → the chip « Baganda / Ganda », « mukongu » → the chip Kongo,
+  the same way. Held by `familyNameLeads.test.ts` and the contract test of
+  migration 110.
 - **A spelling a fiche writes in its text**: « sanoh », one of the Kuranko
   clans and written in the source of the Sanou fiche. No lead is offered: the
   related-only page, unchanged, until the operator answers the DEC-075
@@ -459,9 +513,12 @@ Only the first is drawn as a board; the others are held by tests or drawn on
 - Show a score, a similarity or a tier.
 - Present the lead as the answer, write that the two spellings are one name,
   or call the lead « proche ».
-- Name a lead by its filed name when another of its forms scored, or say that
-  a choice is written almost the same way when it is not a family-name lead.
+- Name a lead by its filed name when another of its forms scored and is one
+  name, or say that a choice is written almost the same way when it is not a
+  family-name lead.
 - Print a fiche's filed label with its trailing bracket in a chip or a line.
+- Print a piece of a phrase as a name: « pl. Abaganda) », « Akokolemu) »,
+  « Yacouba ou Yakuba ».
 - Call the fiches found « liées », in « Tout » or under the « Fiches » filter,
   or keep them on a link the data does not hold.
 - Ask « Cherchiez-vous… ? » when a fiche the search found writes the typed
@@ -490,7 +547,8 @@ by (**proposed**):
 
 > a typo with useful leads opens on the filters when there are two, the
 > verdict and the choices, the page's one accented action, each named by the
-> form that scored, with a line naming the fiche that records a form other
+> form that scored when that form is one name, and by its filed name
+> otherwise, with a line naming the fiche that records a form other
 > than its filed name, a fiche being named without the trailing bracket of
 > its filed name; only family-name leads are said to be written almost the
 > same way; under them a reader who writes the name this way can propose a
@@ -545,19 +603,27 @@ layer reuses migration 108's `p_exact_elsewhere` switch. REQ-201 as amended
 so Chukwu is no longer returned for « tchikaya ». »
 
 **REQ-125** (**proposed**), appended: « Each lead carries `matchedForm`, the
-form that scored, beside its filed name; a client names that form. » New GWT:
-given « jarra », which reaches Diarra only through its recorded spelling Jara,
-when the search offers Diarra as a lead, then the lead's `matchedForm` is
-Jara and the page names Jara, with the line « La fiche Diarra donne aussi
-l’écriture Jara. ». **DEC-075** (**proposed**), a further condition while the
+form that scored, beside its filed name; a client names that form. A people
+whose form that scored is not one name, a piece of a phrase the
+self-appellation was cut into, carries its filed name instead, at the same
+score. » New GWT: given « jarra », which reaches Diarra only through its
+recorded spelling Jara, when the search offers Diarra as a lead, then the
+lead's `matchedForm` is Jara and the page names Jara, with the line « La
+fiche Diarra donne aussi l’écriture Jara. ». Given « akokolemou », which
+reaches the Kumam fiche only through « Akokolemu) », a piece of its
+self-appellation « Kumam (ou Ikokolemu, Akokolemu) », when the search offers
+Kumam as a lead, then its `matchedForm` is Kumam, the chip names Kumam, and
+no line follows it. **DEC-075** (**proposed**), a further condition while the
 question below is open: « No family name is offered as a lead while a fiche
 the search found writes the typed word in its own text » (decision 13).
 
 **DEC-075** (**proposed**), its Decision: « … and is offered under its filed
 name, as migration 094 does for a people » becomes « … and is offered under
-the form that scored (`matched_form`), with a line naming the fiche that
-records it, by its filed name without a trailing bracket, when that form is
-not its filed name; this also applies to a people lead ». The chips name
+the form that scored (`matched_form`) when that form is one name, with a line
+naming the fiche that records it, by its filed name without a trailing
+bracket, when that form is not its filed name; this also applies to a people
+lead, named by its filed name when the form that scored is not one name ».
+The chips name
 `matchedForm` (Jara for « jarra », Pakhallas for « pakhalas »), and « Do
 not » forbids naming a lead by its filed name when
 another of its forms scored: as published, the sentence says the opposite.
@@ -586,8 +652,9 @@ withholds the lead in these three cases (`offerFamilyNames` in
 their near misses as before » becomes « Peoples, countries and linguistic
 families keep their near-miss scan and its 0.2 threshold, with no
 first-letter rule, as before; their chip names the form that scored (for a
-people, its filed name, the name it gives itself or one of its exonyms; for a
-country or a family, its name), with the line naming the fiche that records
+people, its filed name, the name it gives itself or one of its exonyms, and
+its filed name when the form that scored is not one name; for a country or a
+family, its name), with the line naming the fiche that records
 it when that form is not its filed name, named without the trailing bracket
 of its filed name ». The same sentence in DEC-075 takes the same wording.
 New GWT, the typed words being written by no fiche:
@@ -650,6 +717,14 @@ listed below (« Aller plus loin » without a heading or a list, the header at
   vector (migration 060) does not read the name history, so such a form,
   typed, does not find that fiche by its text, and the page can still offer
   it a lead as a misspelling. Not decided here.
+- Many people fiches write several names in one self-appellation:
+  singular and plural (« Baganda (sg. Muganda, pl. Abaganda) », « Bakongo
+  (pluriel) / Mukongo (singulier) », Kuba, Tsonga), a bracket of other names
+  (« Kumam (ou Ikokolemu, Akokolemu) »), names joined by « ou » or a slash
+  (« Yacouba ou Yakuba », Ngizim). Migration 110 scores these pieces and names
+  the fiche by its filed name (seventh review). Splitting them into clean
+  entries is a data ticket, to be filed: then « abagenda » could name
+  Abaganda, and « akokolemou » Akokolemu.
 - Some trailing brackets tell two fiches apart rather than give other names:
   « Rwandais (Tutsi) » and « Rwandais (Hutu) », « Luba (Katanga) » and
   « Luba (Kasai) ». Without the bracket, a line about either reads « La
@@ -680,7 +755,7 @@ listed below (« Aller plus loin » without a heading or a list, the header at
 5. No name is crowned: the title is what the reader typed, and Tchicaya is
    offered as a choice, not as the answer, nor as a form of the name typed.
    A chip names the form nearest to what the reader typed, not the filed
-   name, and a line leads from it to the fiche.
+   name, when that form is one name, and a line leads from it to the fiche.
 6. No block says it is empty: no shelf, no fiches block without a fiche, no
    bar of one filter.
 7. Movement III: this state is not an answer; like the unknown name, it ends
@@ -726,6 +801,12 @@ keeps the lens groups' top margin (`mt-afh-md`, `.ea-fiche-groups`).
 Pakhallas, the line « La fiche Koulango donne aussi le nom Pakhallas. », no
 spelling claim.
 
+The seventh review changed what migration 110 returns, not the page's code
+or the boards: for the same answer of `/api/v2/search`, the page draws what
+it drew. A chip that names its fiche's filed name gets no line, as
+« diolla » shows, which `SearchFeedMisspelling.test.tsx` holds. The page was
+not rendered again for this review.
+
 ## Approval record
 
 To be approved with the boards (« Proposed amendments »):
@@ -737,11 +818,12 @@ To be approved with the boards (« Proposed amendments »):
   form that scored, a people lead included; its further condition while the
   « sanoh » question is open.
 - ETNI-2092, « Out ».
-- REQ-125: `matchedForm` and the « jarra » GWT; the three cases where no
-  lead is offered beside results, with the « sanoh », « tchikaya » with
-  `COG` and « hausa egypte » GWT; the peoples, countries and families keeping
-  their scan and their 0.2, named by the form that scored, with the
-  « pakhalas », « icumama » and « ajumataw » GWT.
+- REQ-125: `matchedForm` and the « jarra » GWT; a people named by its filed
+  name when the form that scored is not one name, with the « akokolemou »
+  GWT; the three cases where no lead is offered beside results, with the
+  « sanoh », « tchikaya » with `COG` and « hausa egypte » GWT; the peoples,
+  countries and families keeping their scan and their 0.2, named by the form
+  that scored, with the « pakhalas », « icumama » and « ajumataw » GWT.
 
 Approving the boards does not approve the shared chrome focus states and
 layout listed under « Follow-ups ».

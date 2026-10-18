@@ -945,7 +945,9 @@ export interface SearchLead {
   /**
    * The form that scored `similarity` (migration 110): a recorded spelling, a
    * self-appellation or an exonym when it is not the filed name (« jarra »
-   * reaches Diarra through Jara). Absent from a database without 110.
+   * reaches Diarra through Jara). A people's filed name when the form that
+   * scored is not one name (« pl. Abaganda) », cut from a bracket). Absent
+   * from a database without 110.
    */
   matchedForm?: string;
   similarity: number;

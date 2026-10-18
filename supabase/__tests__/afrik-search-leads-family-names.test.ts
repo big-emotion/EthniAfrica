@@ -9,6 +9,8 @@ import path from "node:path";
 
 import { describe, expect, it } from "vitest";
 
+import { NOT_ONE_NAME } from "@/lib/search/__fixtures__/corpusNameModel";
+
 const sql = readFileSync(
   path.resolve(
     process.cwd(),
@@ -122,14 +124,31 @@ describe("near-miss leads over family names (migration 110)", () => {
     const bestForm =
       /\(array_agg\(form\.value ORDER BY extensions\.similarity\(public\.afrik_unaccent\(lower\(form\.value\)\), q\.exact_key\) DESC, \(form\.value = p\.name_main\) DESC, form\.value\)\)\[1\] AS matched_form,/;
     expect(familyNameBranch()).toMatch(bestForm);
-    expect(sql.slice(0, sql.indexOf("'country'::text AS kind"))).toMatch(
-      bestForm
-    );
     expect(sql.match(/localized\.name AS matched_form,/g) ?? []).toHaveLength(
       2
     );
     const comment = sql.slice(sql.indexOf("COMMENT ON FUNCTION"));
     expect(comment).toMatch(/matched_form/);
+  });
+
+  // A self-appellation is split on its commas alone, so « Baganda (sg.
+  // Muganda, pl. Abaganda) » scores « pl. Abaganda) ». That piece still
+  // scores; the row names the filed name, as 094's rows did. The pattern is
+  // the one the corpus model applies (corpusNameModel.ts), so the model's
+  // corpus-wide test holds what this SQL prints.
+  // @req REQ-125
+  it("names a people by its filed name when the form that scored is not one name", () => {
+    const people = sql.slice(
+      sql.indexOf("'people'::text AS kind"),
+      sql.indexOf("'country'::text AS kind")
+    );
+
+    expect(people).toContain(
+      `(array_agg(CASE WHEN form.value ~ '${NOT_ONE_NAME}' THEN p.name_main ELSE form.value END ORDER BY extensions.similarity(public.afrik_unaccent(lower(form.value)), q.exact_key) DESC, (form.value = p.name_main) DESC, form.value))[1] AS matched_form,`
+    );
+    expect(sql.slice(sql.indexOf("COMMENT ON FUNCTION"))).toMatch(
+      /not one name/
+    );
   });
 
   // @req REQ-125

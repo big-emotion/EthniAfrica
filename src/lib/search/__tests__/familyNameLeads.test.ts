@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import {
+  corpusEntities,
   familyNameLeadForm,
   familyNameLeads,
   fichesRecordingWord,
@@ -149,6 +150,63 @@ describe("which people a misspelling resembles (REQ-125)", () => {
       expect(proseHits(query)).toEqual([]);
       expect(fichesRecordingWord(query)).toEqual([]);
     }
+  });
+
+  // Migration 110 splits a self-appellation on its commas alone, so a
+  // bracket holding a comma is cut in two: « Baganda (sg. Muganda,
+  // pl. Abaganda) » scores « pl. Abaganda) », « Kumam (ou Ikokolemu,
+  // Akokolemu) » scores « Akokolemu) ». Such a piece still scores, but the
+  // chip names the fiche by its filed name, as 094's rows did: the page
+  // prints a form as a name only when it is one name (seventh review of
+  // brief 16). No fiche writes these three words, so each reaches the
+  // misspelling page. The filed name « Baganda / Ganda » keeps its slash:
+  // it is how the fiche is filed, and no form of it is crowned.
+  // @req REQ-125
+  it("names Baganda, Kumam and Kongo by their filed name when the form that scored is a piece of a phrase", () => {
+    const cases = [
+      ["abagenda", "PPL_BAGANDA", "Baganda / Ganda"],
+      ["akokolemou", "PPL_KUMAM", "Kumam"],
+      ["mukongu", "PPL_KONGO", "Kongo"],
+    ];
+
+    for (const [query, key, filedName] of cases) {
+      const lead = neighbours(query, { formsOfAPeople: true }).find(
+        (item) => item.key === key
+      );
+
+      expect(lead, query).toBeDefined();
+      expect(peopleLeadForm(query, lead!), query).toBe(filedName);
+      expect(nameHits(query), query).toEqual([]);
+      expect(proseHits(query), query).toEqual([]);
+    }
+  });
+
+  // Every form a people fiche records, typed as written, so that it is the
+  // form that scores best: the chip names one of the fiche's names or its
+  // filed name, never a piece of a phrase (a bracket, a slash, a semicolon,
+  // a colon, a full stop, guillemets, a date, « = » or two names joined by
+  // « ou »: « pl. Abaganda) », « etc. », « 1995 », « nkop = terre »,
+  // « Yacouba ou Yakuba »).
+  // @req REQ-125
+  it("never names a piece of a phrase, over every form of every people fiche", () => {
+    const pieces = /[()/;:.«»0-9]| = | ou /;
+    const misnamed = corpusEntities()
+      .filter((item) => item.kind === "people")
+      .flatMap((item) =>
+        item.forms
+          .map((form) => ({
+            key: item.key,
+            form,
+            chip: peopleLeadForm(form, item),
+          }))
+          .filter(
+            ({ chip }) =>
+              chip !== item.filedName &&
+              (pieces.test(chip) || !item.forms.includes(chip))
+          )
+      );
+
+    expect(misnamed).toEqual([]);
   });
 
   // The withdrawn example: the Peul fiche writes « Felata », as François de

@@ -354,16 +354,29 @@ export function familyNameLeadForm(
 }
 
 /**
+ * What marks a people's form as no single name, in migration 110's people
+ * branch (a POSIX pattern, read alike by JavaScript). The self-appellation is
+ * split on its commas alone, so a bracket holding a comma is cut in two
+ * (« pl. Abaganda) »), and some forms are two names or a sentence
+ * (« Yacouba ou Yakuba », « nkop = terre », « etc. »). The equal sign alone
+ * is no mark: « =|Hoa » writes a click.
+ */
+// @req REQ-125
+export const NOT_ONE_NAME = "[()/;:.«»0-9]| = | ou ";
+const notOneName = new RegExp(NOT_ONE_NAME);
+
+/**
  * The `matched_form` migration 110 returns for a people lead: the best
  * scoring of its filed name, self-appellation and exonyms, each without its
- * trailing bracket, the filed name first on a tie.
+ * trailing bracket, the filed name first on a tie; the filed name when the
+ * best form is no single name. Its score stands either way.
  */
 // @req REQ-125
 export function peopleLeadForm(
   query: string,
   item: ModelEntity
 ): string | undefined {
-  return item.forms
+  const best = item.forms
     .map((form) => ({ form, score: similarity(form, query) }))
     .sort(
       (left, right) =>
@@ -372,6 +385,7 @@ export function peopleLeadForm(
           Number(left.form === item.filedName) ||
         left.form.localeCompare(right.form)
     )[0]?.form;
+  return best !== undefined && notOneName.test(best) ? item.filedName : best;
 }
 
 function fichePaths(dir: string): string[] {

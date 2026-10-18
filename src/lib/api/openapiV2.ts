@@ -1239,13 +1239,13 @@ const options: swaggerJsdoc.Options = {
             matchedForm: {
               type: "string",
               description:
-                "The form that scored (migration 110): the filed name, or a recorded spelling, self-appellation or exonym of the entity. « jarra » reaches the family name Diarra through its recorded spelling Jara. Optional: absent from a database without migration 110.",
+                "The form that scored (migration 110): the filed name, or a recorded spelling, self-appellation or exonym of the entity. « jarra » reaches the family name Diarra through its recorded spelling Jara. A people whose form that scored is not one name, such as « pl. Abaganda) », a piece of the self-appellation « Baganda (sg. Muganda, pl. Abaganda) », is named by its filed name. Optional: absent from a database without migration 110.",
               example: "Jara",
             },
             similarity: {
               type: "number",
               description:
-                "pg_trgm similarity of the folded query against matchedForm, the form that scored: in [0.2, 1] for a people, country or family, in [0.4, 1] for a family name.",
+                "pg_trgm similarity of the folded query against the form that scored, which matchedForm names unless a people's form was not one name: in [0.2, 1] for a people, country or family, in [0.4, 1] for a family name.",
               example: 0.27,
             },
           },

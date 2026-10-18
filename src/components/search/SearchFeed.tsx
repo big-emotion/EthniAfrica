@@ -186,6 +186,9 @@ function leadLabel(label: string): string {
  * Jara is written almost the same way; where the reader searched, the form
  * nearest to what they typed comes first and leads to the fiche (doctrine
  * §1.1). A database without the migration names no form: the filed name.
+ * Migration 110 already sends a people's filed name when the form that
+ * scored is a piece of a phrase (« pl. Abaganda) »), so no fragment reaches
+ * the chip or its line.
  */
 function leadForm(lead: SearchLead): string {
   return leadLabel(lead.matchedForm?.trim() || lead.name);
