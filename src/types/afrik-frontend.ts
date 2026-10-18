@@ -22,6 +22,7 @@ import type {
   CultureSection,
   HistoricalFactsSection,
   DemographicsSection,
+  RecordedFieldEvidence,
 } from "./afrik";
 import type { PersonPeopleLink } from "./persons";
 import type { SearchAnswer } from "@/lib/search/answer";
@@ -153,6 +154,8 @@ export interface SearchResult {
   type: SearchEntityType;
   id: string;
   name: string;
+  /** Counted fiche fields where this query is recorded as a whole word. */
+  recordedIn?: RecordedFieldEvidence[];
   /**
    * Extrait expliquant la correspondance, termes appariés encadrés par
    * `[[` et `]]` (voir `src/lib/search/highlight.ts`).

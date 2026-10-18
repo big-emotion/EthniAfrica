@@ -181,6 +181,24 @@ function historyNamesOf(value: unknown): string[] {
     : [];
 }
 
+function recordedInOf(
+  row: Record<string, unknown>,
+  kind: string,
+  byEntity: Map<string, { fieldPath: string; text: string }[]>
+): { recordedIn?: { fieldPath: string; text: string }[] } {
+  const value = row.recordedIn ?? byEntity.get(`${kind}:${String(row.id)}`);
+  const recordedIn = Array.isArray(value)
+    ? value.filter(
+        (field): field is { fieldPath: string; text: string } =>
+          Boolean(field) &&
+          typeof field === "object" &&
+          typeof field.fieldPath === "string" &&
+          typeof field.text === "string"
+      )
+    : [];
+  return recordedIn.length > 0 ? { recordedIn } : {};
+}
+
 /** A word row carries its whole history (migration 104), so its names are read off it. */
 function wordHistoryNamesOf(nameHistory: unknown): string[] {
   const names = (nameHistory as { names?: unknown } | null)?.names;
@@ -366,11 +384,30 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     languages,
     places,
     words,
+    results,
   } = data as Record<string, unknown>;
+  const recordedInByEntity = new Map(
+    asRows(results).flatMap((hit) => {
+      const kind = typeof hit.kind === "string" ? hit.kind : "";
+      const recordedIn = Array.isArray(hit.recordedIn)
+        ? hit.recordedIn.filter(
+            (field): field is { fieldPath: string; text: string } =>
+              Boolean(field) &&
+              typeof field === "object" &&
+              typeof field.fieldPath === "string" &&
+              typeof field.text === "string"
+          )
+        : [];
+      return kind && typeof hit.id === "string" && recordedIn.length > 0
+        ? [[`${kind}:${hit.id}`, recordedIn] as const]
+        : [];
+    })
+  );
 
   return [
     ...asRows(peoples).map((row): SearchResult => ({
       type: "people",
+      ...recordedInOf(row, "people", recordedInByEntity),
       naming: namingOf(row),
       answer: answerOf(row),
       historyNames: historyNamesOf(row.historyNames),
@@ -393,6 +430,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     })),
     ...asRows(countries).map((row): SearchResult => ({
       type: "country",
+      ...recordedInOf(row, "country", recordedInByEntity),
       naming: namingOf(row),
       answer: answerOf(row),
       historyNames: historyNamesOf(row.historyNames),
@@ -409,6 +447,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     })),
     ...asRows(families).map((row): SearchResult => ({
       type: "languageFamily",
+      ...recordedInOf(row, "languageFamily", recordedInByEntity),
       naming: namingOf(row),
       answer: answerOf(row),
       historyNames: historyNamesOf(row.historyNames),
@@ -425,6 +464,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     // studied.
     ...asRows(persons).map((row): SearchResult => ({
       type: "person",
+      ...recordedInOf(row, "person", recordedInByEntity),
       id: String(row.id),
       name: String(row.fullName ?? ""),
       roleCategory: String(row.roleCategory ?? ""),
@@ -438,6 +478,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     // country or family must still return something.
     ...asRows(patronymes).map((row): SearchResult => ({
       type: "patronyme",
+      ...recordedInOf(row, "patronyme", recordedInByEntity),
       naming: namingOf(row),
       answer: answerOf(row),
       historyNames: historyNamesOf(row.historyNames),
@@ -457,6 +498,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     // only through the peoples that mention it.
     ...asRows(languages).map((row): SearchResult => ({
       type: "language",
+      ...recordedInOf(row, "language", recordedInByEntity),
       naming: namingOf(row),
       answer: answerOf(row),
       historyNames: historyNamesOf(row.historyNames),
@@ -480,6 +522,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     // result carries its filed name, and its summary says what it is.
     ...asRows(places).map((row): SearchResult => ({
       type: "place",
+      ...recordedInOf(row, "place", recordedInByEntity),
       id: String(row.id),
       name: String(row.nameMain ?? ""),
       countryIds: row.countryId
@@ -493,6 +536,7 @@ export function mapSearchEnvelope(envelope: unknown): SearchResult[] {
     // and arrives with the answer that history gives, like any subject.
     ...asRows(words).map((row): SearchResult => ({
       type: "word",
+      ...recordedInOf(row, "word", recordedInByEntity),
       naming: namingOf(row),
       answer: answerOf(row),
       historyNames: wordHistoryNamesOf(row.nameHistory),

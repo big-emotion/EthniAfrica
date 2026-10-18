@@ -500,7 +500,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 635 -> 627 on 2026-10-18: the eight family-name fiches folded or withdrawn after wave 25 (Njie, Jallow, Jalloh and Aden into Ndiaye, Diallo and Adam; El Kenzi, Ngarlejy, Ngarta and Kigozi withdrawn); all eight cited sources of their own.
     // 627 -> 631 the same day: PAT_IRAKOZE (the Rwandan statistics of 2025), PAT_EKUIKUI and PAT_KALANDULA (Dulley 2021) and PAT_MAVOUNGOU (the Journal officiel of Congo, 2024) now cite sources of their own; all four cited only the candidate queue before.
     // 631 -> 632 on 2026-10-18: PAT_LADO now cites a source of its own (Seligman 1932: two Bari named Lado alone on p. 270, a chief « Laro Lado » on p. 268), on which it is filed as a personal name; it cited only the candidate queue before.
-    value: 632,
+    // 632 -> 633 on 2026-10-18: PAT_SANOU now records the Sanoh spelling from the provisional Burkina Faso patronym project; its source remains unverified.
+    value: 633,
     method:
       "fiches dataset/source/afrik/patronymes/PAT_*.json portant un nameSystem et " +
       "au moins une source autre que la file d'attente des candidats — les fiches " +

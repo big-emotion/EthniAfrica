@@ -11,7 +11,6 @@
 
 import { createServerClient } from "../../server";
 import { logger } from "@/lib/api/logger";
-import { normalizeString } from "@/lib/normalize";
 import { normaliseSearchQuery } from "@/lib/search/queryNormalisation";
 import { findWordAnswer } from "@/lib/productions/wordAnswer";
 import { getAfrikPeoplesByIds } from "./peoples";
@@ -28,6 +27,7 @@ import type {
   RankedWord,
   RankedQuizQuestion,
   RankedSearchHit,
+  RecordedTermMatch,
   SearchHitKind,
   SearchLead,
   SearchNearName,
@@ -375,78 +375,38 @@ async function answeredExactly(
   return rankedHits(await pageOne(text)).some((hit) => hit.exactMatch);
 }
 
-/**
- * Whether a fiche the search found writes the typed word in its own text: a
- * clan list, a name list, a source note. « Sanoh » is one of the Kuranko
- * clans, and Sanou's source note reads « Notice SANOU / SANOH / SANON ». The
- * spelling is then one our data records, not a misspelling to correct, and
- * whether such a word answers the query is DEC-075's open question (brief
- * 16): until it is decided, no family name is offered as the spelling the
- * reader meant, and the page stays the related-only one.
- *
- * Every kind ranks its text matches right after its exact ones, so past page
- * one they are out of sight, and page one is asked, as for exact answers.
- */
-async function writtenInFoundText(
-  params: FtsSearchParams,
-  text: string,
-  found: FtsSearchResponse,
-  pageOne: PageOneProbe
-): Promise<boolean> {
-  if (writesWord(found, text)) return true;
-  if (!params.offset) return false;
-  return writesWord(await pageOne(text), text);
-}
-
-/** Where migration 069's lexical band begins, above the trigram fallback. */
-const LEXICAL_BAND_FLOOR = 0.5;
-
-/**
- * The kinds other than family names have no phonetic tier: a row in the
- * lexical band matched its own text. A family name's lexical band also holds
- * its phonetic matches (066), which is how Chukwu reaches « tchikaya », so
- * its text is read instead, the word whole: « Tchikayaville » does not write
- * « tchikaya ». The language search has no spelling fallback (109): every
- * row it returns that is not exact matched its text or its English name.
- */
-function writesWord(ranked: FtsSearchResponse, text: string): boolean {
-  const textMatch = [
-    ranked.peoples,
-    ranked.countries,
-    ranked.families,
-    ranked.persons,
-    ranked.places ?? [],
-    ranked.words ?? [],
-  ]
-    .flat()
-    .some(
-      (hit) => !hit.exactMatch && hit.normalizedScore >= LEXICAL_BAND_FLOOR
-    );
-  if (textMatch || ranked.languages.some((hit) => !hit.exactMatch)) {
-    return true;
+/** Returns every fiche with the query as a whole word, excluding source notes. */
+async function findRecordedTerms(
+  supabase: ReturnType<typeof createServerClient>,
+  text: string
+): Promise<RecordedTermMatch[]> {
+  const { data, error } = await supabase.rpc("afrik_search_recorded_term", {
+    p_q: text,
+  });
+  if (isMissingFunction(error)) return [];
+  if (error) {
+    logger.error("Error checking recorded search term", error);
+    throw error;
   }
-  const word = ` ${foldedWords(text)} `;
-  if (word.trim() === "") return false;
-  return ranked.patronymes.some((hit) =>
-    ` ${foldedWords(stringsIn(hit.content).join(" "))} `.includes(word)
-  );
-}
-
-/** The words of a text under the search's fold, one space apart. */
-function foldedWords(text: string): string {
-  return normalizeString(text)
-    .split(/[^\p{L}\p{N}]+/u)
-    .filter(Boolean)
-    .join(" ");
-}
-
-function stringsIn(value: unknown): string[] {
-  if (typeof value === "string") return [value];
-  if (Array.isArray(value)) return value.flatMap(stringsIn);
-  if (value && typeof value === "object") {
-    return Object.values(value).flatMap(stringsIn);
-  }
-  return [];
+  const payload = data as { rows?: Record<string, unknown>[] } | null;
+  const rows = Array.isArray(payload?.rows) ? payload.rows : [];
+  return rows.flatMap((row) => {
+    const recordedIn = Array.isArray(row.recorded_in)
+      ? row.recorded_in.filter(
+          (field): field is string => typeof field === "string"
+        )
+      : [];
+    if (
+      typeof row.kind !== "string" ||
+      typeof row.id !== "string" ||
+      recordedIn.length === 0
+    ) {
+      return [];
+    }
+    return [
+      { kind: row.kind as RecordedTermMatch["kind"], id: row.id, recordedIn },
+    ];
+  });
 }
 
 /** Page one of `text`, ranked at the request's page size. */
@@ -657,6 +617,7 @@ async function attachSuggestions(
     (item) => item.kind === "patronyme"
   );
   const otherNames = nameSuggestions.filter(isNearNameKind);
+  const recordedTerms = await findRecordedTerms(supabase, text);
   // A lead scored 1 is a form a family name records, typed as recorded
   // (« aboubakar », a spelling of Abubakar): an attested form, not a
   // misspelling to correct. afrik_search_patronymes compares only the filed
@@ -675,7 +636,7 @@ async function attachSuggestions(
     !params.countryId &&
     !params.familyId &&
     !(await answeredExactly(params, text, rankedHits(found), pageOne)) &&
-    !(await writtenInFoundText(params, text, found, pageOne));
+    recordedTerms.length === 0;
 
   // The phonetic key bridges a spelling the trigram misses (« Keyta » to
   // « Keïta »). Once a family name is offered as the spelling the reader
@@ -717,7 +678,7 @@ async function attachSuggestions(
           }))
       : [];
 
-  return { ...ranked, leads, nearNames };
+  return { ...ranked, leads, nearNames, recordedTerms };
 }
 
 /**
