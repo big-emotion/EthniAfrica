@@ -9,12 +9,22 @@ export interface NameAddressCopy {
   /** The descriptive half of the title; the product name follows it. */
   title: (name: string) => string;
   description: (name: string) => string;
+  suggestion: {
+    selfName: (name: string) => string;
+    selfGiven: (subject: string) => string;
+    other: (subject: string) => string;
+  };
 }
 
 const fr: NameAddressCopy = {
   title: (name) => `${name} : d'où vient ce nom`,
   description: (name) =>
     `Cette page explique d'où vient le nom ${name}, quels autres noms il porte, qui les a donnés, quand et pourquoi, et cite ses sources.`,
+  suggestion: {
+    selfName: (name) => `se nomme lui-même ${name}`,
+    selfGiven: (subject) => `nom que se donnent les ${subject}`,
+    other: (subject) => `un nom des ${subject}`,
+  },
 };
 
 // @req REQ-200

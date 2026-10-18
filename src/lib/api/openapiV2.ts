@@ -21,9 +21,9 @@ const options: swaggerJsdoc.Options = {
         "## Response envelope\n\n" +
         "Every `/api/v2/*` response uses the Module #0 envelope: `{ data, meta: { license, attribution, pagination?, confidence?, pinned_url?, translation? }, errors }`. License and attribution are always present (AR8); `errors` is empty on success and populated on non-2xx responses. List endpoints place their pagination values under `meta.pagination`.\n\n" +
         "## French only (breaking)\n\n" +
-        "The site publishes French alone, so the locale parameters that selected English are narrowed to `fr`: `lang` on `GET /api/v2/search` and `GET /api/v2/search/companions`, and `language` in the `POST /api/v2/flags` body. `lang=en` is now refused with 400 on the two searches; an unknown flag `language` still fails closed to French. Search no longer matches English names; the `nameEn` / `languageFamilyNameEn` fields keep their shape and still carry the corpus value. `contentLanguage` in companion payloads is always `fr`.\n\n" +
+        "The site publishes French alone, so the locale parameters that selected English are narrowed to `fr`: `lang` on `GET /api/v2/search` and `GET /api/v2/search/companions`, and `language` in the `POST /api/v2/flags` body. `lang=en` is now refused with 400 on the two searches; an unknown flag `language` still fails closed to French. Search no longer matches English names; the `nameEn` / `languageFamilyNameEn` fields keep their shape and still carry the value in the record. `contentLanguage` in companion payloads is always `fr`.\n\n" +
         "## 2.3.0 — translated records (additive)\n\n" +
-        "The five single-entity endpoints accept `?lang=fr|en`. `fr` is the authored language and the default; `en` overlays the translation record when one exists and declares how it was produced in `meta.translation` — `human`, `machine_reviewed` or `machine` — with `stale: true` when the French moved on a field the reader is shown since it was translated. Fields whose subject is a word are withheld at `machine` provenance and served in French until a human has reviewed them (REQ-142, REQ-143). Lists, facets and search stay authored-French. Retired since: the corpus is no longer translated, `?lang` is ignored and every record is served as authored.\n\n" +
+        "The five single-entity endpoints accept `?lang=fr|en`. `fr` is the authored language and the default; `en` overlays the translation record when one exists and declares how it was produced in `meta.translation` — `human`, `machine_reviewed` or `machine` — with `stale: true` when the French moved on a field the reader is shown since it was translated. Fields whose subject is a word are withheld at `machine` provenance and served in French until a human has reviewed them (REQ-142, REQ-143). Lists, facets and search stay authored-French. Retired since: the data is no longer translated, `?lang` is ignored and every record is served as authored.\n\n" +
         "## 2.1.0 — one source-tier vocabulary (breaking)\n\n" +
         'Source authority is now one three-value scale — `official` | `referenced` | `unverified` — spoken identically by the database, the payloads and the UI. Provenance stays on the separate `source_kind` axis, so AI-generated text is `tier: "unverified"` + `source_kind: "ai_generated"` rather than a tier of its own.\n\n' +
         "Removed, all superseded by `tier`:\n\n" +
@@ -50,6 +50,114 @@ const options: swaggerJsdoc.Options = {
     ],
     tags: OPENAPI_V2_TAGS,
     paths: {
+      "/api/v2/names/suggest": {
+        get: {
+          summary: "Suggest names by prefix",
+          description:
+            "Returns alphabetically ordered name forms across peoples, countries, language families, languages, family names and places. A suggestion links to its name-answer page when it has an address, and otherwise starts a search for that form.",
+          tags: ["API v2 - Names"],
+          parameters: [
+            {
+              in: "query",
+              name: "q",
+              required: true,
+              schema: { type: "string", minLength: 2, maxLength: 100 },
+              description:
+                "Name prefix; accents and case do not affect matching.",
+              example: "pe",
+            },
+            {
+              in: "query",
+              name: "limit",
+              required: false,
+              schema: { type: "integer", minimum: 1, maximum: 20, default: 8 },
+              description: "Maximum number of suggestions.",
+            },
+          ],
+          responses: {
+            200: {
+              description: "Matching name suggestions.",
+              headers: {
+                "Cache-Control": {
+                  schema: {
+                    type: "string",
+                    example: "s-maxage=3600",
+                  },
+                },
+              },
+              content: {
+                "application/json": {
+                  schema: {
+                    type: "object",
+                    required: ["data", "meta", "errors"],
+                    properties: {
+                      data: {
+                        type: "object",
+                        required: ["query", "suggestions"],
+                        properties: {
+                          query: { type: "string" },
+                          suggestions: {
+                            type: "array",
+                            items: {
+                              type: "object",
+                              required: ["form", "type", "id", "note", "href"],
+                              properties: {
+                                form: { type: "string" },
+                                type: {
+                                  type: "string",
+                                  enum: [
+                                    "people",
+                                    "country",
+                                    "family",
+                                    "language",
+                                    "patronyme",
+                                    "place",
+                                  ],
+                                },
+                                id: { type: "string" },
+                                note: { type: ["string", "null"] },
+                                href: { type: "string" },
+                              },
+                            },
+                          },
+                        },
+                      },
+                      meta: { type: "object" },
+                      errors: { type: "array", items: { type: "object" } },
+                    },
+                  },
+                },
+              },
+            },
+            400: {
+              description: "The prefix or limit is invalid.",
+              headers: {
+                "Cache-Control": {
+                  schema: { type: "string", example: "no-store" },
+                },
+              },
+              content: {
+                "application/json": {
+                  schema: { $ref: "#/components/schemas/ApiErrorEnvelope" },
+                },
+              },
+            },
+            500: {
+              description: "The suggestions could not be loaded.",
+              headers: {
+                "Cache-Control": {
+                  schema: { type: "string", example: "no-store" },
+                },
+              },
+              content: {
+                "application/json": {
+                  schema: { $ref: "#/components/schemas/ApiErrorEnvelope" },
+                },
+              },
+            },
+          },
+        },
+      },
       "/api/v2/reference-library": {
         get: {
           summary: "Search structured references",
@@ -505,7 +613,7 @@ const options: swaggerJsdoc.Options = {
         SearchNamingFormV2: {
           type: "object",
           description:
-            "One legacy-compatible name form. A qualifier is only returned when the corpus records one; it is never parsed from the form.",
+            "One legacy-compatible name form. A qualifier is returned only when the name history records one; it is never parsed from the form.",
           properties: {
             form: { type: "string", example: "Peul" },
             qualifier: { type: "string" },
@@ -616,13 +724,13 @@ const options: swaggerJsdoc.Options = {
         SearchNamingPresentationFormV2: {
           type: "object",
           description:
-            "One name form as the search feed can present it, without deriving facts the corpus did not record.",
+            "One name form as the search feed can present it, without adding facts the name history does not record.",
           properties: {
             form: { type: "string" },
             selfGiven: {
               type: ["boolean", "null"],
               description:
-                "True or false only when the corpus classifies the form on this axis; null means it does not.",
+                "True or false only when the name history classifies the form this way; null means it does not.",
             },
             qualifier: { type: "string" },
             origin: {
@@ -957,38 +1065,38 @@ const options: swaggerJsdoc.Options = {
             peoplesTotal: {
               type: "integer",
               description:
-                "Peoples matching corpus-wide, not the number returned on this page",
+                "Total people matching the query, not the number returned on this page",
               example: 16,
             },
             countriesTotal: {
               type: "integer",
-              description: "Countries matching corpus-wide",
+              description: "Total countries matching the query",
               example: 0,
             },
             familiesTotal: {
               type: "integer",
-              description: "Language families matching corpus-wide",
+              description: "Total language families matching the query",
               example: 1,
             },
             personsTotal: {
               type: "integer",
-              description: "Named persons matching corpus-wide",
+              description: "Total named people matching the query",
               example: 0,
             },
             patronymesTotal: {
               type: "integer",
-              description: "Names (patronymes) matching corpus-wide",
+              description: "Total family names matching the query",
               example: 0,
             },
             quizzesTotal: {
               type: "integer",
               description:
-                "Zero without `lens`; the corpus-wide count of matching active quiz questions with `lens=quiz`.",
+                "Zero without `lens`; the total number of matching active quiz questions with `lens=quiz`.",
               example: 0,
             },
             languagesTotal: {
               type: "integer",
-              description: "Languages matching corpus-wide",
+              description: "Total languages matching the query",
               example: 0,
             },
             places: {
