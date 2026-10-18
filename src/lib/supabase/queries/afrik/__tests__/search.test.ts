@@ -2527,6 +2527,232 @@ describe("ftsSearchEntities", () => {
       expect(result.total).toBe(0);
       expect(result.leads).toEqual([abubakarLead]);
     });
+
+    // « Sanoh » is one of the Kuranko clans, and Sanou's own source note reads
+    // « Notice SANOU / SANOH / SANON ». A spelling a fiche the search found
+    // writes in its text is no misspelling to correct: whether it answers is
+    // DEC-075's open question, so no family name is offered as the spelling
+    // the reader meant, and the page stays the related-only one (brief 16).
+    const sanohLeads = [
+      {
+        kind: "patronyme",
+        id: "PAT_SANOGO",
+        name: "Sanogo",
+        similarity: 0.56,
+      },
+      { kind: "patronyme", id: "PAT_SANOU", name: "Sanou", similarity: 0.5 },
+    ];
+
+    // The other kinds have no phonetic tier: their lexical band (069) is a
+    // match on their own text.
+    // @req REQ-125
+    it("offers no family name when a fiche of another kind writes the word in its text", async () => {
+      peoplesPayload = {
+        total: 1,
+        rows: [peopleRow("PPL_KURANKO", "Kuranko", { normalizedScore: 0.62 })],
+      };
+      patronymesPayload = {
+        total: 2,
+        rows: [
+          patronymeRow("PAT_SANOGO", "Sanogo", { normalizedScore: 0.28 }),
+          patronymeRow("PAT_SANOU", "Sanou", { normalizedScore: 0.25 }),
+        ],
+      };
+      leadsPayload = { rows: sanohLeads };
+
+      const result = await ftsSearchEntities({
+        q: "sanoh",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(result.total).toBe(3);
+      expect(result.leads).toEqual([]);
+      expect(result.nearNames).toEqual([]);
+    });
+
+    // A family name's lexical band also holds its phonetic matches (066), so
+    // its score cannot tell; its text is read instead.
+    // @req REQ-125
+    it("offers no family name when a family name the search found writes the word in its text", async () => {
+      patronymesPayload = {
+        total: 2,
+        rows: [
+          patronymeRow("PAT_SANOGO", "Sanogo", { normalizedScore: 0.28 }),
+          patronymeRow("PAT_SANOU", "Sanou", {
+            normalizedScore: 0.25,
+            content: {
+              nameHistory: {
+                names: [
+                  {
+                    nameText: "Sanou",
+                    accounts: [
+                      {
+                        sources: [
+                          {
+                            notes:
+                              "Notice SANOU / SANOH / SANON. Lu le 11 octobre 2026.",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              },
+            },
+          }),
+        ],
+      };
+      leadsPayload = { rows: sanohLeads };
+
+      const result = await ftsSearchEntities({
+        q: "sanoh",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(result.leads).toEqual([]);
+    });
+
+    // Chukwu sits in the lexical band through its phonetic key alone, and
+    // Tchicaya's text writes Tschikaya, never « tchikaya » as a word.
+    // @req REQ-125
+    it("still offers the lead when the fiches found reach the word only by sound or by letters", async () => {
+      patronymesPayload = {
+        total: 2,
+        rows: [
+          patronymeRow("PAT_CHUKWU", "Chukwu", {
+            normalizedScore: 0.7,
+            content: { nameMain: "Chukwu" },
+          }),
+          patronymeRow("PAT_TCHICAYA", "Tchicaya", {
+            normalizedScore: 0.3,
+            content: {
+              nameHistory: { names: [{ nameText: "Tschikaya" }] },
+              origin: "Tchikayaville est un nom inventé pour ce test.",
+            },
+          }),
+        ],
+      };
+      leadsPayload = { rows: [tchicayaLead] };
+
+      const result = await ftsSearchEntities({
+        q: "tchikaya",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(result.leads).toEqual([tchicayaLead]);
+    });
+
+    // Every kind ranks its text matches before its spelling matches: on a
+    // later page the Kuranko fiche is out of sight, yet page two must agree
+    // with page one.
+    // @req REQ-125
+    it("offers no family name on a later page when page one holds a fiche that writes the word", async () => {
+      rpc.mockImplementation(
+        (fn: string, args: Record<string, unknown> = {}) => {
+          if (fn === "afrik_search_peoples")
+            return Promise.resolve({
+              data: {
+                total: 21,
+                rows: [
+                  args.p_offset === 0
+                    ? peopleRow("PPL_KURANKO", "Kuranko", {
+                        normalizedScore: 0.62,
+                      })
+                    : peopleRow("PPL_SAN", "San", { normalizedScore: 0.3 }),
+                ],
+              },
+              error: null,
+            });
+          if (fn === "afrik_search_leads")
+            return Promise.resolve({
+              data: { rows: sanohLeads },
+              error: null,
+            });
+          return Promise.resolve({ data: { total: 0, rows: [] }, error: null });
+        }
+      );
+
+      const result = await ftsSearchEntities({
+        q: "sanoh",
+        limit: 20,
+        offset: 20,
+      });
+
+      expect(result.peoples.map((p) => p.id)).toEqual(["PPL_SAN"]);
+      expect(result.leads).toEqual([]);
+    });
+
+    // Migration 110 returns the form that scored beside the filed name:
+    // « jarra » reaches Diarra through its spelling Jara, and « felata » the
+    // Peul fiche through its exonym Fellata. The page names that form.
+    // @req REQ-125
+    it("carries the form that scored as matchedForm on a lead, never on a similar name", async () => {
+      leadsPayload = {
+        rows: [
+          {
+            kind: "patronyme",
+            id: "PAT_DIARRA",
+            name: "Diarra",
+            matched_form: "Jara",
+            similarity: 0.57,
+          },
+          {
+            kind: "people",
+            id: "PPL_FULA",
+            name: "Peul",
+            matched_form: "Fellata",
+            similarity: 0.5,
+          },
+          { kind: "country", id: "MLI", name: "Mali", similarity: 0.25 },
+        ],
+      };
+
+      const zero = await ftsSearchEntities({
+        q: "jarra",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(zero.leads).toEqual([
+        {
+          kind: "patronyme",
+          id: "PAT_DIARRA",
+          name: "Diarra",
+          matchedForm: "Jara",
+          similarity: 0.57,
+        },
+        {
+          kind: "people",
+          id: "PPL_FULA",
+          name: "Peul",
+          matchedForm: "Fellata",
+          similarity: 0.5,
+        },
+        { kind: "country", id: "MLI", name: "Mali", similarity: 0.25 },
+      ]);
+      expect(zero.leads[2]).not.toHaveProperty("matchedForm");
+
+      peoplesPayload = {
+        total: 1,
+        rows: [peopleRow("PPL_TOUCOULEUR", "Toucouleur")],
+      };
+      const answered = await ftsSearchEntities({
+        q: "felata",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(answered.nearNames.map((name) => name.id)).toEqual([
+        "PPL_FULA",
+        "MLI",
+      ]);
+      for (const name of answered.nearNames) {
+        expect(name).not.toHaveProperty("matchedForm");
+      }
+    });
   });
 
   // ── the cross-kind ordered list (ETNI-1710) ───────────────────────────────

@@ -534,11 +534,14 @@ export function mapSearchLeads(envelope: unknown): SearchLead[] {
   return asRows(leads).flatMap((row): SearchLead[] => {
     const type = LEAD_KIND_TO_TYPE[row.kind as string];
     if (!type) return [];
+    const matchedForm =
+      typeof row.matchedForm === "string" ? row.matchedForm.trim() : "";
     return [
       {
         type,
         id: String(row.id),
         name: String(row.name ?? ""),
+        ...(matchedForm && { matchedForm }),
         similarity: numberOrUndefined(row.similarity) ?? 0,
       },
     ];

@@ -14,6 +14,11 @@ export interface SpellingChoice {
 export interface SpellingChoicesBlockProps {
   choices: readonly SpellingChoice[];
   title: string;
+  /**
+   * One line per chip that does not bear its fiche's filed name, saying
+   * which fiche records the form (« Jara est une écriture du nom Diarra. »).
+   */
+  forms?: readonly string[];
   /** For a reader whose own spelling is the one searched. */
   invitation?: string;
   action?: ReactNode;
@@ -25,7 +30,9 @@ export interface SpellingChoicesBlockProps {
  * Main's name chip in the accent and does not read as one more filter pill,
  * and the invitation under it is a note with a quiet `action`, never a second
  * accented button. The heading is the small group heading of the « Fiches »
- * lens: the verdict above it stays the strongest line under the name.
+ * lens: the verdict above it stays the strongest line under the name. A chip
+ * names the form that scored, so when that is not its fiche's filed name, a
+ * line in the note's ink says which fiche records it.
  *
  * The chip's ink is the accent fill's own (`--accent-foreground`): the tint
  * stays light at night while the page's body ink turns light (1.12:1).
@@ -34,6 +41,7 @@ export interface SpellingChoicesBlockProps {
 export function SpellingChoicesBlock({
   choices,
   title,
+  forms = [],
   invitation,
   action,
 }: SpellingChoicesBlockProps) {
@@ -60,6 +68,14 @@ export function SpellingChoicesBlock({
           </li>
         ))}
       </ul>
+      {forms.map((line) => (
+        <p
+          key={line}
+          className="mt-afh-md text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft"
+        >
+          {line}
+        </p>
+      ))}
       {invitation ? (
         <p className="mt-afh-2xl text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft">
           {invitation}

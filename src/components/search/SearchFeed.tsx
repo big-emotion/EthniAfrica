@@ -168,6 +168,29 @@ function normalizedQueryId(query: string): string {
   );
 }
 
+/**
+ * The name a lead's chip says: the form that scored (migration 110), not the
+ * filed name. « jarra » reaches Diarra through its spelling Jara, and only
+ * Jara is written almost the same way; where the reader searched, the form
+ * nearest to what they typed comes first and leads to the fiche (doctrine
+ * §1.1). A database without the migration names no form: the filed name.
+ */
+function leadForm(lead: SearchLead): string {
+  return lead.matchedForm?.trim() || lead.name;
+}
+
+/** Said of every choice only when each one is a family-name lead (DEC-075). */
+function writtenAlike(
+  leads: readonly SearchLead[],
+  nameSuggestions: readonly string[]
+): boolean {
+  return (
+    nameSuggestions.length === 0 &&
+    leads.length > 0 &&
+    leads.every((lead) => lead.type === "patronyme")
+  );
+}
+
 function resultForms(
   state: SearchFeedAnswerState,
   query: string,
@@ -180,18 +203,21 @@ function resultForms(
   if (state === "typo") {
     // Each suggestion is a new search the reader chooses; none is marked as
     // the searched form, because nothing the reader typed matched it. Reviewed
-    // terms come first: they are spellings we hold an answer for.
-    return [...nameSuggestions, ...leads.map((lead) => lead.name)].map(
-      (name) => ({
-        form: name,
-        subjectId: undefined,
-        qualifier: undefined,
-        selfGiven: null,
-        problematic: undefined,
-        searched: false,
-        href: nameHref(name),
-      })
-    );
+    // terms come first: they are spellings we hold an answer for. A form two
+    // fiches record (Fellata) is one search, so one chip.
+    const names = new Map<string, string>();
+    for (const name of [...nameSuggestions, ...leads.map(leadForm)]) {
+      if (!names.has(foldNameForm(name))) names.set(foldNameForm(name), name);
+    }
+    return [...names.values()].map((name) => ({
+      form: name,
+      subjectId: undefined,
+      qualifier: undefined,
+      selfGiven: null,
+      problematic: undefined,
+      searched: false,
+      href: nameHref(name),
+    }));
   }
 
   const forms = subjects.flatMap((subject) => {
@@ -331,6 +357,36 @@ export function SearchFeed({
     nameHref
   );
   const forms = presentation?.appellations?.forms ?? derivedForms;
+  // A family-name lead is written almost like the query by construction
+  // (DEC-075: first letter kept, 0.4 at least, named by the form that
+  // scored). A people, a country or a family scores at 0.2 with no
+  // first-letter rule, and a reviewed term for any of its terms: of those the
+  // page says only that they resemble the name searched.
+  const typoWording = writtenAlike(leads, nameSuggestions)
+    ? {
+        heading: copy.answer.typoWrittenAlike.heading(forms.length),
+        summary: (name: string) =>
+          copy.answer.typoWrittenAlike.summary(
+            name,
+            forms.map(({ form }) => form)
+          ),
+      }
+    : {
+        heading: copy.answer.typoResembling.heading(forms.length),
+        summary: (name: string) =>
+          copy.answer.typoResembling.summary(name, forms.length),
+      };
+  // Under the chips, the fiche each form leads to when the chip does not
+  // bear its filed name: Jara, a spelling of Diarra.
+  const choiceForms = leads.flatMap((lead) => {
+    const form = leadForm(lead);
+    if (foldNameForm(form) === foldNameForm(lead.name)) return [];
+    return [
+      lead.type === "patronyme"
+        ? copy.answer.typoFormOf.familyName(form, lead.name)
+        : copy.answer.typoFormOf.other(form, lead.name),
+    ];
+  });
 
   const combinedPlates: FeedPlateItem[] = [
     ...companions.anecdotes.items.map((item) => ({
@@ -500,10 +556,7 @@ export function SearchFeed({
           ? answerCopy.wordNameBody
           : answerCopy.unknownNameBody
         : state === "typo"
-          ? copy.answer.typoSummary(
-              displayName,
-              forms.map(({ form }) => form)
-            )
+          ? typoWording.summary(displayName)
           : state === "widened"
             ? isRelationBrowse
               ? copy.answer.relationSummary
@@ -843,7 +896,8 @@ export function SearchFeed({
                 name: form,
                 href: nameHref(form),
               }))}
-              title={copy.answer.typoChoices(forms.length)}
+              title={typoWording.heading}
+              forms={choiceForms}
               invitation={copy.answer.typoInvitation(displayName)}
               action={proposeSpellingSource}
             />
@@ -861,9 +915,7 @@ export function SearchFeed({
             )}
             title={
               presentation?.appellations?.title ??
-              (state === "typo"
-                ? copy.answer.typoChoices(forms.length)
-                : undefined)
+              (state === "typo" ? typoWording.heading : undefined)
             }
             subtitle={
               presentation?.appellations

@@ -52,8 +52,9 @@
  *       letter, and its similarity reaches 0.4. A search scoped with
  *       `familyId` or `countryId` never gets a family-name lead, and neither
  *       does a query that spells exactly a family name the search found,
- *       through its filed name or a recorded spelling. The search is served
- *       in French.
+ *       through its filed name or a recorded spelling, or that a fiche the
+ *       search found writes as a word in its own text. Each lead names
+ *       `matchedForm`, the form that scored. The search is served in French.
  *       Rate-limited per AR11 (IP: 60 RPM, public key: 600 RPM,
  *       partner key: 6 000 RPM).
  *     tags: [API v2 - Search]

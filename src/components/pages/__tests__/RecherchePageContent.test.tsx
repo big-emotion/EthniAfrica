@@ -712,7 +712,11 @@ describe("RecherchePageContent", () => {
       "tchikaya"
     );
     expect(screen.getByTestId("feed-block-verdict")).toHaveTextContent(
-      asShown(searchFeedCopy.fr.answer.typoSummary("tchikaya", ["Tchicaya"]))
+      asShown(
+        searchFeedCopy.fr.answer.typoWrittenAlike.summary("tchikaya", [
+          "Tchicaya",
+        ])
+      )
     );
     expect(
       screen.queryByText(searchFeedCopy.fr.answer.relatedOnly)
@@ -785,9 +789,10 @@ describe("RecherchePageContent", () => {
     expect(
       screen.queryByText(
         asShown(
-          searchFeedCopy.fr.answer.typoSummary("Congo-Brazzaville", [
-            "Tchicaya",
-          ])
+          searchFeedCopy.fr.answer.typoWrittenAlike.summary(
+            "Congo-Brazzaville",
+            ["Tchicaya"]
+          )
         )
       )
     ).not.toBeInTheDocument();

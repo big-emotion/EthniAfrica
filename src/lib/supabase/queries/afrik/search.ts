@@ -11,6 +11,7 @@
 
 import { createServerClient } from "../../server";
 import { logger } from "@/lib/api/logger";
+import { normalizeString } from "@/lib/normalize";
 import { normaliseSearchQuery } from "@/lib/search/queryNormalisation";
 import { findWordAnswer } from "@/lib/productions/wordAnswer";
 import { getAfrikPeoplesByIds } from "./peoples";
@@ -73,7 +74,7 @@ async function rankAttempt(
   supabase: ReturnType<typeof createServerClient>,
   params: FtsSearchParams,
   text: string,
-  pageOneAnswers: PageOneProbe
+  pageOne: PageOneProbe
 ): Promise<FtsSearchResponse> {
   const {
     lens,
@@ -261,7 +262,7 @@ async function rankAttempt(
     text,
     asRankedPayload(patronymeResult.data),
     [peoples, countries, families, persons, languages, places, words].flat(),
-    pageOneAnswers
+    pageOne
   );
   const patronymes = await withAssociatedPeoples(
     patronymePayload.rows.map(toRankedPatronyme)
@@ -332,10 +333,10 @@ async function withoutSoundAlikes(
   text: string,
   patronymes: RankedPayload,
   otherKinds: { exactMatch: boolean }[],
-  pageOneAnswers: PageOneProbe
+  pageOne: PageOneProbe
 ): Promise<RankedPayload> {
   if (patronymes.total === 0) return patronymes;
-  if (!(await answeredExactly(params, text, otherKinds, pageOneAnswers))) {
+  if (!(await answeredExactly(params, text, otherKinds, pageOne))) {
     return patronymes;
   }
 
@@ -362,7 +363,7 @@ async function answeredExactly(
   params: FtsSearchParams,
   text: string,
   hits: { exactMatch: boolean }[],
-  pageOneAnswers: PageOneProbe
+  pageOne: PageOneProbe
 ): Promise<boolean> {
   if (hits.some((hit) => hit.exactMatch)) return true;
   // A published word answers its query on the page even with no fiche.
@@ -371,37 +372,108 @@ async function answeredExactly(
   // out of sight. Asking the first page again keeps page two consistent with
   // page one; the site never pages, only API callers do.
   if (!params.offset) return false;
-  return pageOneAnswers(text);
+  return rankedHits(await pageOne(text)).some((hit) => hit.exactMatch);
 }
 
-/** Whether page one of `text` holds a row answering it exactly. */
-type PageOneProbe = (text: string) => Promise<boolean>;
+/**
+ * Whether a fiche the search found writes the typed word in its own text: a
+ * clan list, a name list, a source note. « Sanoh » is one of the Kuranko
+ * clans, and Sanou's source note reads « Notice SANOU / SANOH / SANON ». The
+ * spelling is then one our data records, not a misspelling to correct, and
+ * whether such a word answers the query is DEC-075's open question (brief
+ * 16): until it is decided, no family name is offered as the spelling the
+ * reader meant, and the page stays the related-only one.
+ *
+ * Every kind ranks its text matches right after its exact ones, so past page
+ * one they are out of sight, and page one is asked, as for exact answers.
+ */
+async function writtenInFoundText(
+  params: FtsSearchParams,
+  text: string,
+  found: FtsSearchResponse,
+  pageOne: PageOneProbe
+): Promise<boolean> {
+  if (writesWord(found, text)) return true;
+  if (!params.offset) return false;
+  return writesWord(await pageOne(text), text);
+}
+
+/** Where migration 069's lexical band begins, above the trigram fallback. */
+const LEXICAL_BAND_FLOOR = 0.5;
+
+/**
+ * The kinds other than family names have no phonetic tier: a row in the
+ * lexical band matched its own text. A family name's lexical band also holds
+ * its phonetic matches (066), which is how Chukwu reaches « tchikaya », so
+ * its text is read instead, the word whole: « Tchikayaville » does not write
+ * « tchikaya ». The language search has no spelling fallback (109): every
+ * row it returns that is not exact matched its text or its English name.
+ */
+function writesWord(ranked: FtsSearchResponse, text: string): boolean {
+  const textMatch = [
+    ranked.peoples,
+    ranked.countries,
+    ranked.families,
+    ranked.persons,
+    ranked.places ?? [],
+    ranked.words ?? [],
+  ]
+    .flat()
+    .some(
+      (hit) => !hit.exactMatch && hit.normalizedScore >= LEXICAL_BAND_FLOOR
+    );
+  if (textMatch || ranked.languages.some((hit) => !hit.exactMatch)) {
+    return true;
+  }
+  const word = ` ${foldedWords(text)} `;
+  if (word.trim() === "") return false;
+  return ranked.patronymes.some((hit) =>
+    ` ${foldedWords(stringsIn(hit.content).join(" "))} `.includes(word)
+  );
+}
+
+/** The words of a text under the search's fold, one space apart. */
+function foldedWords(text: string): string {
+  return normalizeString(text)
+    .split(/[^\p{L}\p{N}]+/u)
+    .filter(Boolean)
+    .join(" ");
+}
+
+function stringsIn(value: unknown): string[] {
+  if (typeof value === "string") return [value];
+  if (Array.isArray(value)) return value.flatMap(stringsIn);
+  if (value && typeof value === "object") {
+    return Object.values(value).flatMap(stringsIn);
+  }
+  return [];
+}
+
+/** Page one of `text`, ranked at the request's page size. */
+type PageOneProbe = (text: string) => Promise<FtsSearchResponse>;
 
 /**
  * One probe per request. Past page one, the sound-alike withholding and the
  * family-name leads both ask it for the same text, and each answer costs a
- * whole ranking (nine RPCs), so it is asked once per text and remembered.
+ * whole ranking (nine RPCs), so it is ranked once per text and remembered.
  * Page one's family names count: an exact family name answers too, and the
- * SQL already withholds sound-alikes for it.
+ * SQL already withholds sound-alikes for it. It keeps the request's page
+ * size: a family name that writes the word in its text can rank below its
+ * sound-alikes, which share the lexical band.
  */
 function pageOneProbe(
   supabase: ReturnType<typeof createServerClient>,
   params: FtsSearchParams
 ): PageOneProbe {
-  const asked = new Map<string, Promise<boolean>>();
+  const asked = new Map<string, Promise<FtsSearchResponse>>();
   const probe: PageOneProbe = (text) => {
-    let answer = asked.get(text);
-    if (!answer) {
+    let ranked = asked.get(text);
+    if (!ranked) {
       // At offset 0 the ranking never calls the probe back.
-      answer = rankAttempt(
-        supabase,
-        { ...params, offset: 0, limit: 1 },
-        text,
-        probe
-      ).then((pageOne) => rankedHits(pageOne).some((hit) => hit.exactMatch));
-      asked.set(text, answer);
+      ranked = rankAttempt(supabase, { ...params, offset: 0 }, text, probe);
+      asked.set(text, ranked);
     }
-    return answer;
+    return ranked;
   };
   return probe;
 }
@@ -412,7 +484,7 @@ export async function ftsSearchEntities(
 ): Promise<FtsSearchResponse> {
   const supabase = createServerClient();
   const text = params.q?.trim() ?? "";
-  const pageOneAnswers = pageOneProbe(supabase, params);
+  const pageOne = pageOneProbe(supabase, params);
 
   // A blank text (a relation browse) and the quiz lens are not names: nothing
   // to clean, nothing to widen.
@@ -421,8 +493,8 @@ export async function ftsSearchEntities(
       supabase,
       params,
       text,
-      await rankAttempt(supabase, params, text, pageOneAnswers),
-      pageOneAnswers
+      await rankAttempt(supabase, params, text, pageOne),
+      pageOne
     );
   }
 
@@ -434,7 +506,7 @@ export async function ftsSearchEntities(
 
   let first: FtsSearchResponse | undefined;
   for (const attempt of attempts) {
-    const found = await rankAttempt(supabase, params, attempt, pageOneAnswers);
+    const found = await rankAttempt(supabase, params, attempt, pageOne);
     first ??= found;
     if (found.total > 0) {
       return attachSuggestions(
@@ -445,7 +517,7 @@ export async function ftsSearchEntities(
           ...found,
           ...(attempt !== text && { matchedQuery: attempt }),
         },
-        pageOneAnswers
+        pageOne
       );
     }
   }
@@ -457,7 +529,7 @@ export async function ftsSearchEntities(
     const perToken = await Promise.all(
       tokens
         .slice(0, MAX_WIDENED_TOKENS)
-        .map((token) => rankAttempt(supabase, params, token, pageOneAnswers))
+        .map((token) => rankAttempt(supabase, params, token, pageOne))
     );
     const widened = mergeAttempts(perToken, params.limit, params.lang);
     if (widened.total > 0) {
@@ -469,7 +541,7 @@ export async function ftsSearchEntities(
           ...widened,
           widenedFrom: tokens.slice(0, MAX_WIDENED_TOKENS),
         },
-        pageOneAnswers
+        pageOne
       );
     }
   }
@@ -478,8 +550,8 @@ export async function ftsSearchEntities(
     supabase,
     params,
     attempts[0] ?? text,
-    first ?? (await rankAttempt(supabase, params, text, pageOneAnswers)),
-    pageOneAnswers
+    first ?? (await rankAttempt(supabase, params, text, pageOne)),
+    pageOne
   );
 }
 
@@ -549,7 +621,7 @@ async function attachSuggestions(
   params: FtsSearchParams,
   text: string,
   found: FtsSearchResponse,
-  pageOneAnswers: PageOneProbe
+  pageOne: PageOneProbe
 ): Promise<FtsSearchResponse> {
   const { lens, lang } = params;
   if (lens === "quiz" || !text) return found;
@@ -602,7 +674,8 @@ async function attachSuggestions(
     !found.widenedFrom &&
     !params.countryId &&
     !params.familyId &&
-    !(await answeredExactly(params, text, rankedHits(found), pageOneAnswers));
+    !(await answeredExactly(params, text, rankedHits(found), pageOne)) &&
+    !(await writtenInFoundText(params, text, found, pageOne));
 
   // The phonetic key bridges a spelling the trigram misses (« Keyta » to
   // « Keïta »). Once a family name is offered as the spelling the reader
@@ -634,6 +707,14 @@ async function attachSuggestions(
             (item) => !visibleNameKeys.has(nameEntityKey(item.kind, item.id))
           )
           .slice(0, 3)
+          // A similar name is shown by its filed name (REQ-180): the form
+          // that scored is a lead's alone.
+          .map(({ kind, id, name, similarity }) => ({
+            kind,
+            id,
+            name,
+            similarity,
+          }))
       : [];
 
   return { ...ranked, leads, nearNames };
@@ -727,12 +808,18 @@ async function fetchSearchNameSuggestions(
   const payload = data as { rows?: Record<string, unknown>[] } | null;
   const rows = Array.isArray(payload?.rows) ? payload.rows : [];
 
-  return rows.map((row) => ({
-    kind: row.kind as SearchLead["kind"],
-    id: row.id as string,
-    name: row.name as string,
-    similarity: typeof row.similarity === "number" ? row.similarity : 0,
-  }));
+  return rows.map((row) => {
+    // Migration 110 names the form that scored; an older function does not.
+    const matchedForm =
+      typeof row.matched_form === "string" ? row.matched_form.trim() : "";
+    return {
+      kind: row.kind as SearchLead["kind"],
+      id: row.id as string,
+      name: row.name as string,
+      ...(matchedForm && { matchedForm }),
+      similarity: typeof row.similarity === "number" ? row.similarity : 0,
+    };
+  });
 }
 
 interface RankedPayload {

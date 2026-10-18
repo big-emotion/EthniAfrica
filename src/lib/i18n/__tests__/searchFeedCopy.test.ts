@@ -10,20 +10,27 @@ const copy = searchFeedCopy.fr.answer;
 const BREAKABLE_SPACE = / [?:;!»]|« /;
 
 // The words a misspelling page says, as it says them for one choice and for
-// several (brief 16). « sanoh » is Main's example: two family names begin
-// like it, and the search also finds the Kuranko fiche.
+// several (brief 16). « konana » is Main's example: two family names begin
+// like it, and the search also finds Onana by its spelling. « felata » is a
+// people lead, which is not said to be written the same way.
 function misspellingSentences(): string[] {
   return [
     copy.typo,
-    copy.typoSummary("tchikaya", ["Tchicaya"]),
-    copy.typoSummary("sanoh", ["Sanogo", "Sanou"]),
-    copy.typoChoices(1),
-    copy.typoChoices(2),
+    copy.typoWrittenAlike.summary("tchikaya", ["Tchicaya"]),
+    copy.typoWrittenAlike.summary("konana", ["Konan", "Konaté"]),
+    copy.typoWrittenAlike.heading(1),
+    copy.typoWrittenAlike.heading(2),
+    copy.typoResembling.summary("felata", 1),
+    copy.typoResembling.summary("felata", 2),
+    copy.typoResembling.heading(1),
+    copy.typoResembling.heading(2),
+    copy.typoFormOf.familyName("Jara", "Diarra"),
+    copy.typoFormOf.other("Fellata", "Peul"),
     copy.typoInvitation("tchikaya"),
     copy.fichesFound.title(1),
     copy.fichesFound.title(2),
-    copy.fichesFound.note(1, "sanoh"),
-    copy.fichesFound.note(2, "sanoh"),
+    copy.fichesFound.note(1, "konana"),
+    copy.fichesFound.note(2, "konana"),
   ];
 }
 
@@ -34,21 +41,61 @@ describe("the words of a misspelling page", () => {
   // if the screen had lost the others.
   // @req REQ-125
   it("names the one choice in the singular", () => {
-    expect(copy.typoSummary("tchikaya", ["Tchicaya"])).toBe(
-      "Aucune de nos fiches ne porte le nom «\u00a0tchikaya\u00a0». Tchicaya s’écrit presque de la même façon\u00a0: vous pouvez chercher ce nom."
+    expect(copy.typoWrittenAlike.summary("tchikaya", ["Tchicaya"])).toBe(
+      "Aucune de nos fiches ne porte le nom « tchikaya ». Tchicaya s’écrit presque de la même façon : vous pouvez chercher ce nom."
     );
-    expect(copy.typoChoices(1)).toBe(
+    expect(copy.typoWrittenAlike.heading(1)).toBe(
       "Un nom qui s’écrit presque de la même façon"
     );
   });
 
   // @req REQ-125
   it("speaks of several choices in the plural", () => {
-    expect(copy.typoSummary("sanoh", ["Sanogo", "Sanou"])).toBe(
-      "Aucune de nos fiches ne porte le nom «\u00a0sanoh\u00a0». Plusieurs noms s’écrivent presque de la même façon\u00a0: choisissez celui que vous cherchez."
+    expect(copy.typoWrittenAlike.summary("konana", ["Konan", "Konaté"])).toBe(
+      "Aucune de nos fiches ne porte le nom « konana ». Plusieurs noms s’écrivent presque de la même façon : choisissez celui que vous cherchez."
     );
-    expect(copy.typoChoices(2)).toBe(
+    expect(copy.typoWrittenAlike.heading(2)).toBe(
       "Des noms qui s’écrivent presque de la même façon"
+    );
+  });
+
+  // A people, a country or a family is a lead at 0.2, with no first-letter
+  // rule: names that may share only a syllable. Nothing says they are
+  // written the same way, only that they resemble the name searched.
+  // @req REQ-125
+  it("makes no spelling claim for the other choices, in the right number", () => {
+    expect(copy.typoResembling.summary("felata", 1)).toBe(
+      "Aucune de nos fiches ne porte le nom « felata ». Nous connaissons un nom qui ressemble à celui-ci : vous pouvez le chercher."
+    );
+    expect(copy.typoResembling.summary("felata", 2)).toBe(
+      "Aucune de nos fiches ne porte le nom « felata ». Nous connaissons des noms qui ressemblent à celui-ci : choisissez celui que vous cherchez."
+    );
+    expect(copy.typoResembling.heading(1)).toBe(
+      "Un nom qui ressemble au nom cherché"
+    );
+    expect(copy.typoResembling.heading(2)).toBe(
+      "Des noms qui ressemblent au nom cherché"
+    );
+    for (const text of [
+      copy.typoResembling.summary("felata", 1),
+      copy.typoResembling.summary("felata", 2),
+      copy.typoResembling.heading(1),
+      copy.typoResembling.heading(2),
+    ]) {
+      expect(text, text).not.toMatch(/s’écri/);
+    }
+  });
+
+  // The chip names the form that scored. When it is not the fiche's filed
+  // name, a line says which fiche records it, as the data does: Jara is a
+  // recorded spelling of Diarra, Fellata one of the Peul fiche's names.
+  // @req REQ-125
+  it("says which fiche records a form that is not its filed name", () => {
+    expect(copy.typoFormOf.familyName("Jara", "Diarra")).toBe(
+      "Jara est une écriture du nom Diarra."
+    );
+    expect(copy.typoFormOf.other("Fellata", "Peul")).toBe(
+      "Fellata est un des noms de la fiche Peul."
     );
   });
 
@@ -59,7 +106,10 @@ describe("the words of a misspelling page", () => {
     for (const text of misspellingSentences()) {
       expect(text, text).not.toMatch(/Aucun nom ne correspond/);
     }
-    expect(copy.typoSummary("tchikaya", ["Tchicaya"])).toMatch(
+    expect(copy.typoWrittenAlike.summary("tchikaya", ["Tchicaya"])).toMatch(
+      /^Aucune de nos fiches ne porte le nom /
+    );
+    expect(copy.typoResembling.summary("felata", 1)).toMatch(
       /^Aucune de nos fiches ne porte le nom /
     );
   });
@@ -85,7 +135,7 @@ describe("the words of a misspelling page", () => {
       copy.fichesFound.note(2, "tchikaya"),
     ]) {
       expect(text, text).not.toMatch(/ce nom/);
-      expect(text, text).toContain("«\u00a0tchikaya\u00a0»");
+      expect(text, text).toContain("« tchikaya »");
     }
   });
 
@@ -94,7 +144,7 @@ describe("the words of a misspelling page", () => {
   // @req REQ-125
   it("asks a reader who writes the name this way where the spelling is used", () => {
     expect(copy.typoInvitation("tchikaya")).toBe(
-      "Si vous écrivez «\u00a0tchikaya\u00a0», dites-nous où cette écriture est employée."
+      "Si vous écrivez « tchikaya », dites-nous où cette écriture est employée."
     );
   });
 
@@ -115,11 +165,11 @@ describe("the fiches a misspelling's search found", () => {
   it("titles the block by what it holds and opens it on the related-only caution", () => {
     expect(copy.fichesFound.title(1)).toBe("La fiche trouvée");
     expect(copy.fichesFound.title(3)).toBe("Les fiches trouvées");
-    expect(copy.fichesFound.note(1, "sanoh")).toBe(
-      "Nous avons trouvé une fiche liée sans établir qu’elle répond à «\u00a0sanoh\u00a0»."
+    expect(copy.fichesFound.note(1, "konana")).toBe(
+      "Nous avons trouvé une fiche liée sans établir qu’elle répond à « konana »."
     );
-    expect(copy.fichesFound.note(3, "sanoh")).toBe(
-      "Nous avons trouvé des fiches liées sans établir qu’elles répondent à «\u00a0sanoh\u00a0»."
+    expect(copy.fichesFound.note(3, "konana")).toBe(
+      "Nous avons trouvé des fiches liées sans établir qu’elles répondent à « konana »."
     );
   });
 });

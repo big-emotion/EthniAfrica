@@ -1025,7 +1025,7 @@ const options: swaggerJsdoc.Options = {
               type: "array",
               items: { $ref: "#/components/schemas/SearchLeadV2" },
               description:
-                "Near-miss leads (REQ-125), ranked by pg_trgm similarity alone (migrations 094, 110). When total is 0: up to 3 suggestions across peoples, countries, language families and family names. A family name is also offered as a spelling of the searched name when total is greater than 0 (DEC-075): up to 3 family names, only when nothing answers the query exactly (no hit of any kind with exactMatch, no published word, and, once the search has found family names, no family name the query spells exactly through its filed name or a recorded spelling), only when the family name or one of its recorded spellings begins with the query's first letter (both folded: lower case, accents and apostrophes removed), and only at similarity >= 0.4. A search scoped with familyId or countryId never gets a family-name lead. Empty otherwise, for a multi-name widening and for quiz-lens searches.",
+                "Near-miss leads (REQ-125), ranked by pg_trgm similarity alone (migrations 094, 110). When total is 0: up to 3 suggestions across peoples, countries, language families and family names. A family name is also offered as a spelling of the searched name when total is greater than 0 (DEC-075): up to 3 family names, only when nothing answers the query exactly (no hit of any kind with exactMatch, no published word, and, once the search has found family names, no family name the query spells exactly through its filed name or a recorded spelling), only when no fiche the search found writes the query as a word in its own text (a clan or name list, a source note: the spelling is then recorded, not a misspelling), only when the family name or one of its recorded spellings begins with the query's first letter (both folded: lower case, accents and apostrophes removed), and only at similarity >= 0.4. A search scoped with familyId or countryId never gets a family-name lead. Empty otherwise, for a multi-name widening and for quiz-lens searches.",
             },
             nearNames: {
               type: "array",
@@ -1236,10 +1236,16 @@ const options: swaggerJsdoc.Options = {
             },
             id: { type: "string", description: "The entity's own identifier." },
             name: { type: "string", description: "The entity's display name." },
+            matchedForm: {
+              type: "string",
+              description:
+                "The form that scored (migration 110): the filed name, or a recorded spelling, self-appellation or exonym of the entity. « jarra » reaches the family name Diarra through its recorded spelling Jara. Optional: absent from a database without migration 110.",
+              example: "Jara",
+            },
             similarity: {
               type: "number",
               description:
-                "pg_trgm similarity of the folded query against this name: in [0.2, 1] for a people, country or family, in [0.4, 1] for a family name.",
+                "pg_trgm similarity of the folded query against matchedForm, the form that scored: in [0.2, 1] for a people, country or family, in [0.4, 1] for a family name.",
               example: 0.27,
             },
           },

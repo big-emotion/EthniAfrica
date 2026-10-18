@@ -173,6 +173,23 @@ describe("OpenAPI v2 unified search contract", () => {
     );
   });
 
+  // « jarra » reaches Diarra through its spelling Jara: a client showing
+  // the filed name alone would offer a name that begins with another letter.
+  // Optional, so a client written before migration 110 keeps working.
+  // @req REQ-125
+  it("documents the form that scored on a lead, as an optional addition", () => {
+    const lead = schemas.SearchLeadV2;
+    const matchedForm = lead?.properties?.matchedForm;
+
+    expect(matchedForm?.type).toBe("string");
+    expect(matchedForm?.description).toMatch(/scored/i);
+    expect(lead?.required).not.toContain("matchedForm");
+    expect(lead?.properties?.similarity?.description).toMatch(/matchedForm/);
+    expect(schemas.SearchNearNameV2?.properties).not.toHaveProperty(
+      "matchedForm"
+    );
+  });
+
   // A client that read « always empty when total > 0 » would never show the
   // family-name lead « tchikaya » now carries beside its results.
   // @req REQ-125

@@ -23,8 +23,18 @@ function asShown(text: string): string {
   return text.replace(/\s+/g, " ");
 }
 
-function familyNameLead(id: string, name: string): SearchLead {
-  return { type: "patronyme", id, name, similarity: 0.5 };
+function familyNameLead(
+  id: string,
+  name: string,
+  matchedForm?: string
+): SearchLead {
+  return {
+    type: "patronyme",
+    id,
+    name,
+    ...(matchedForm && { matchedForm }),
+    similarity: 0.5,
+  };
 }
 
 // What the search finds for a family name it also offers as a lead: the same
@@ -33,9 +43,14 @@ function familyNameFiche(id: string, name: string): SearchResult {
   return { type: "patronyme", id, name, exactMatch: false };
 }
 
-function peopleFiche(id: string, name: string, shortLine: string) {
+function ficheWithLine(
+  type: "people" | "patronyme",
+  id: string,
+  name: string,
+  shortLine: string
+) {
   return {
-    type: "people",
+    type,
     id,
     name,
     exactMatch: false,
@@ -63,33 +78,36 @@ function peopleFiche(id: string, name: string, shortLine: string) {
 // « tchikaya » (boards search-state-typo, brief 16, proposed): the search
 // finds the family name Tchicaya by its spelling and offers it as the lead
 // (DEC-075). Chukwu, reached by its sound alone, is withheld by the API.
-const tchicayaLead = familyNameLead("PAT_TCHICAYA", "Tchicaya");
+const tchicayaLead = familyNameLead("PAT_TCHICAYA", "Tchicaya", "Tchicaya");
 const tchicayaFiche = familyNameFiche("PAT_TCHICAYA", "Tchicaya");
 
-// « sanoh » (Main's example, from the corpus model): Sanogo and Sanou begin
-// like it, and the Kuranko fiche names Sanoh among its clans.
-const sanohLeads = [
-  familyNameLead("PAT_SANOGO", "Sanogo"),
-  familyNameLead("PAT_SANOU", "Sanou"),
+// « konana » (Main's example, from the corpus model): Konan and Konaté begin
+// like it, each through its filed name. The search also finds Onana by its
+// spelling, which begins with another letter. No fiche writes « konana ».
+const konanaLeads = [
+  familyNameLead("PAT_KONAN", "Konan", "Konan"),
+  familyNameLead("PAT_KONATE", "Konaté", "Konaté"),
 ];
-const kurankoLine =
-  "Le nom d'un peuple mandé de Sierra Leone et de Guinée, écrit dès 1825.";
-const kurankoFiche = peopleFiche("PPL_KURANKO", "Kuranko", kurankoLine);
-const sanohResults: SearchResult[] = [
-  familyNameFiche("PAT_SANOGO", "Sanogo"),
-  familyNameFiche("PAT_SANOU", "Sanou"),
-  kurankoFiche,
+const onanaLine =
+  "Un nom d'homme ewondo du Cameroun, écrit dès 1919 ; on ne sait pas ce qu'il veut dire.";
+const onanaFiche = ficheWithLine("patronyme", "PAT_ONANA", "Onana", onanaLine);
+const konanaResults: SearchResult[] = [
+  familyNameFiche("PAT_KONAN", "Konan"),
+  familyNameFiche("PAT_KONATE", "Konaté"),
+  onanaFiche,
 ];
 
 function renderMisspelling({
   query = "tchikaya",
   results = [tchicayaFiche],
   leads = [tchicayaLead],
+  nameSuggestions,
   companions = noCompanions,
 }: {
   query?: string;
   results?: SearchResult[];
   leads?: SearchLead[];
+  nameSuggestions?: string[];
   companions?: SearchCompanionsData;
 } = {}) {
   return render(
@@ -100,22 +118,23 @@ function renderMisspelling({
       results={results}
       subjects={[]}
       leads={leads}
+      nameSuggestions={nameSuggestions}
       companions={companions}
       resultCount={results.length}
     />
   );
 }
 
-function renderSanoh(
+function renderKonana(
   overrides: {
     results?: SearchResult[];
     companions?: SearchCompanionsData;
   } = {}
 ) {
   return renderMisspelling({
-    query: "sanoh",
-    results: sanohResults,
-    leads: sanohLeads,
+    query: "konana",
+    results: konanaResults,
+    leads: konanaLeads,
     ...overrides,
   });
 }
@@ -137,6 +156,12 @@ function filterNames(): string[] {
     .map((button) =>
       Array.from(button.children, (part) => part.textContent ?? "").join(" ")
     );
+}
+
+function choiceNames(): string[] {
+  return within(screen.getByTestId("appellations-list"))
+    .getAllByRole("link")
+    .map((link) => link.textContent ?? "");
 }
 
 // @req REQ-125
@@ -161,12 +186,12 @@ describe("a misspelling whose only fiche found is its lead", () => {
     renderMisspelling();
 
     expect(screen.getByTestId("feed-block-verdict")).toHaveTextContent(
-      asShown(copy.answer.typoSummary("tchikaya", ["Tchicaya"]))
+      asShown(copy.answer.typoWrittenAlike.summary("tchikaya", ["Tchicaya"]))
     );
     expect(
       screen.getByRole("heading", {
         level: 2,
-        name: copy.answer.typoChoices(1),
+        name: copy.answer.typoWrittenAlike.heading(1),
       })
     ).toHaveClass(
       "text-afh-small",
@@ -233,6 +258,19 @@ describe("a misspelling whose only fiche found is its lead", () => {
     ).toBeTruthy();
   });
 
+  // Tchicaya scored through its filed name: there is no other form to
+  // explain, so no line follows the chip.
+  // @req REQ-125
+  it("adds no line under a choice named by its filed name", () => {
+    renderMisspelling();
+
+    expect(
+      within(screen.getByTestId("feed-block-appellations")).queryByText(
+        /est une écriture du nom|est un des noms de la fiche/
+      )
+    ).toBeNull();
+  });
+
   // With nothing the data links left to list, there is no block to title.
   // @req REQ-180
   it("draws no fiches block when the search found none", () => {
@@ -250,7 +288,7 @@ describe("a misspelling that also finds other fiches", () => {
   // set holding the name.
   // @req REQ-178
   it("draws the filters first, then the verdict, the choices and the fiches", () => {
-    const { container } = renderSanoh();
+    const { container } = renderKonana();
 
     expect(blockIds(container)).toEqual([
       "lenses",
@@ -263,17 +301,20 @@ describe("a misspelling that also finds other fiches", () => {
 
   // @req REQ-125
   it("speaks of several choices in the plural", () => {
-    renderSanoh();
+    renderKonana();
 
     expect(screen.getByTestId("feed-block-verdict")).toHaveTextContent(
-      asShown(copy.answer.typoSummary("sanoh", ["Sanogo", "Sanou"]))
+      asShown(
+        copy.answer.typoWrittenAlike.summary("konana", ["Konan", "Konaté"])
+      )
     );
     expect(
       screen.getByRole("heading", {
         level: 2,
-        name: copy.answer.typoChoices(2),
+        name: copy.answer.typoWrittenAlike.heading(2),
       })
     ).toBeVisible();
+    expect(choiceNames()).toEqual(["Konan", "Konaté"]);
   });
 
   // The fiches block says what it holds and that none bears the spelling
@@ -281,7 +322,7 @@ describe("a misspelling that also finds other fiches", () => {
   // EthniAfrica ». The leads stay choices only.
   // @req REQ-201
   it("lists only the fiches that are not a choice, under the caution, each with its own line", () => {
-    renderSanoh();
+    renderKonana();
 
     const fiches = screen.getByTestId("feed-block-fiches");
     expect(
@@ -291,12 +332,12 @@ describe("a misspelling that also finds other fiches", () => {
       })
     ).toBeVisible();
     expect(fiches).toHaveTextContent(
-      asShown(copy.answer.fichesFound.note(1, "sanoh"))
+      asShown(copy.answer.fichesFound.note(1, "konana"))
     );
-    expect(within(fiches).getByText("Kuranko")).toBeVisible();
-    expect(within(fiches).getByText(kurankoLine)).toBeVisible();
-    expect(within(fiches).queryByText("Sanogo")).toBeNull();
-    expect(within(fiches).queryByText("Sanou")).toBeNull();
+    expect(within(fiches).getByText("Onana")).toBeVisible();
+    expect(within(fiches).getByText(onanaLine)).toBeVisible();
+    expect(within(fiches).queryByText("Konan")).toBeNull();
+    expect(within(fiches).queryByText("Konaté")).toBeNull();
     expect(within(fiches).queryByText("Découvrir")).toBeNull();
     expect(within(fiches).queryByText(copy.labels.fichesSubtitle)).toBeNull();
     expect(within(fiches).queryByText(copy.blocks.ficheMeta)).toBeNull();
@@ -306,7 +347,7 @@ describe("a misspelling that also finds other fiches", () => {
   // the leads in it.
   // @req REQ-180
   it("counts in the « Fiches » filter only the fiches it lists", () => {
-    renderSanoh();
+    renderKonana();
 
     expect(filterNames()).toEqual([
       copy.filters.all,
@@ -315,8 +356,8 @@ describe("a misspelling that also finds other fiches", () => {
   });
 
   // The companions come from the first lead when nothing answers. Until the
-  // reader chooses it, a « Jeux » lens titled « sanoh » over a game about
-  // Sanogo would treat the two names as one.
+  // reader chooses it, a « Jeux » lens titled « konana » over a game about
+  // Konan would treat the two names as one.
   // @req REQ-180
   it("offers no filter built from a lead the reader has not chosen", () => {
     const loaded = FEED_CASES.find(({ id }) => id === "mande")!.production
@@ -324,7 +365,7 @@ describe("a misspelling that also finds other fiches", () => {
     expect(loaded.quiz.item).not.toBeNull();
     expect(loaded.shorts.items.length).toBeGreaterThan(0);
 
-    renderSanoh({ companions: loaded });
+    renderKonana({ companions: loaded });
 
     expect(filterNames().map((name) => name.replace(/ \d+$/, ""))).toEqual([
       copy.filters.all,
@@ -336,10 +377,10 @@ describe("a misspelling that also finds other fiches", () => {
   // line too long for half of a 382 px phone column (no 430 px step).
   // @req REQ-180
   it("keeps the fiches in one column below 768 px", () => {
-    renderSanoh({
+    renderKonana({
       results: [
-        ...sanohResults,
-        peopleFiche("PPL_KONO", "Kono", "Un nom de peuple."),
+        ...konanaResults,
+        ficheWithLine("people", "PPL_KONO", "Kono", "Un nom de peuple."),
       ],
     });
 
@@ -348,5 +389,149 @@ describe("a misspelling that also finds other fiches", () => {
     );
     expect(grid).toHaveClass("grid-cols-1", "min-[768px]:grid-cols-2");
     expect(grid.className).not.toMatch(/min-\[430px\]/);
+  });
+});
+
+// The API names the form that scored (migration 110). The page names it too:
+// the chip is the spelling written almost like the query, and it leads to the
+// fiche that records it, which a line under the chips names.
+// @req REQ-125
+describe("a lead reached through another of its forms", () => {
+  // « jarra » reaches Diarra through its recorded spelling Jara: « Diarra
+  // s'écrit presque de la même façon » would be false, Diarra beginning with
+  // another letter.
+  // @req REQ-125
+  it("names the family name's spelling that scored, and the fiche that records it", () => {
+    renderMisspelling({
+      query: "jarra",
+      results: [],
+      leads: [familyNameLead("PAT_DIARRA", "Diarra", "Jara")],
+    });
+
+    expect(choiceNames()).toEqual(["Jara"]);
+    expect(
+      within(screen.getByTestId("appellations-list"))
+        .getByRole("link", { name: "Jara" })
+        .getAttribute("href")
+    ).toMatch(/jara/i);
+    expect(screen.getByTestId("feed-block-verdict")).toHaveTextContent(
+      asShown(copy.answer.typoWrittenAlike.summary("jarra", ["Jara"]))
+    );
+    expect(screen.getByTestId("feed-block-verdict")).not.toHaveTextContent(
+      /Diarra s’écrit/
+    );
+    const note = within(
+      screen.getByTestId("feed-block-appellations")
+    ).getByText(copy.answer.typoFormOf.familyName("Jara", "Diarra"));
+    expect(note).toHaveClass("text-afh-caption", "text-afh-text-soft");
+    const invitation = screen.getByText(
+      asShown(copy.answer.typoInvitation("jarra"))
+    );
+    expect(
+      note.compareDocumentPosition(invitation) &
+        Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+  });
+
+  // « felata » reaches the Peul fiche through its exonym Fellata, at the
+  // 0.2 floor of the other kinds: nothing says it is written the same way.
+  // @req REQ-125
+  it("makes no spelling claim for a people reached through one of its names", () => {
+    renderMisspelling({
+      query: "felata",
+      results: [],
+      leads: [
+        {
+          type: "people",
+          id: "PPL_FULA",
+          name: "Peul",
+          matchedForm: "Fellata",
+          similarity: 0.5,
+        },
+      ],
+    });
+
+    expect(choiceNames()).toEqual(["Fellata"]);
+    const verdict = screen.getByTestId("feed-block-verdict");
+    expect(verdict).toHaveTextContent(
+      asShown(copy.answer.typoResembling.summary("felata", 1))
+    );
+    expect(verdict).not.toHaveTextContent(/s’écri/);
+    expect(
+      screen.getByRole("heading", {
+        level: 2,
+        name: copy.answer.typoResembling.heading(1),
+      })
+    ).toBeVisible();
+    expect(
+      screen.getByText(copy.answer.typoFormOf.other("Fellata", "Peul"))
+    ).toBeVisible();
+  });
+
+  // Two fiches may record one form (Fellata for two Fulbe fiches): the form
+  // is one search, so one chip, and each fiche gets its line.
+  // @req REQ-125
+  it("draws one chip per form, and a line for each fiche that records it", () => {
+    renderMisspelling({
+      query: "felata",
+      results: [],
+      leads: [
+        {
+          type: "people",
+          id: "PPL_FULA",
+          name: "Peul",
+          matchedForm: "Fellata",
+          similarity: 0.5,
+        },
+        {
+          type: "people",
+          id: "PPL_FULANI_MASSINA",
+          name: "Fulbe du Massina",
+          matchedForm: "Fellata",
+          similarity: 0.5,
+        },
+      ],
+    });
+
+    expect(choiceNames()).toEqual(["Fellata"]);
+    expect(screen.getByTestId("feed-block-verdict")).toHaveTextContent(
+      asShown(copy.answer.typoResembling.summary("felata", 1))
+    );
+    expect(
+      screen.getByText(copy.answer.typoFormOf.other("Fellata", "Peul"))
+    ).toBeVisible();
+    expect(
+      screen.getByText(
+        copy.answer.typoFormOf.other("Fellata", "Fulbe du Massina")
+      )
+    ).toBeVisible();
+  });
+
+  // A reviewed term is offered by its edit distance to any of its terms, and
+  // a family name beside it is no reason to say every choice is written the
+  // same way.
+  // @req REQ-125
+  it("makes no spelling claim once a choice is not a family-name lead", () => {
+    renderMisspelling({
+      query: "konana",
+      results: [],
+      leads: konanaLeads,
+      nameSuggestions: ["Konongo"],
+    });
+
+    expect(choiceNames()).toEqual(["Konongo", "Konan", "Konaté"]);
+    expect(screen.getByTestId("feed-block-verdict")).toHaveTextContent(
+      asShown(copy.answer.typoResembling.summary("konana", 3))
+    );
+  });
+
+  // A database without migration 110 sends no form: the filed name stands.
+  // @req REQ-125
+  it("keeps the filed name when the API sends no form", () => {
+    renderMisspelling({
+      leads: [familyNameLead("PAT_TCHICAYA", "Tchicaya")],
+    });
+
+    expect(choiceNames()).toEqual(["Tchicaya"]);
   });
 });

@@ -908,6 +908,45 @@ describe("mapSearchLeads", () => {
     ]);
   });
 
+  // Migration 110 sends the form that scored beside the filed name: « jarra »
+  // reaches Diarra through its spelling Jara. A database without it sends
+  // none, and the lead keeps its filed name only.
+  // @req REQ-125
+  it("carries the form that scored, when the API sends one", () => {
+    const leads = mapSearchLeads({
+      data: {
+        total: 0,
+        leads: [
+          {
+            kind: "patronyme",
+            id: "PAT_DIARRA",
+            name: "Diarra",
+            matchedForm: "Jara",
+            similarity: 0.57,
+          },
+          { kind: "country", id: "MLI", name: "Mali", similarity: 0.25 },
+          {
+            kind: "people",
+            id: "PPL_X",
+            name: "X",
+            matchedForm: "  ",
+            similarity: 0.3,
+          },
+        ],
+      },
+    });
+
+    expect(leads[0]).toEqual({
+      type: "patronyme",
+      id: "PAT_DIARRA",
+      name: "Diarra",
+      matchedForm: "Jara",
+      similarity: 0.57,
+    });
+    expect(leads[1]).not.toHaveProperty("matchedForm");
+    expect(leads[2]).not.toHaveProperty("matchedForm");
+  });
+
   // @req REQ-125
   it("returns an empty array when there is no leads field, an array data, or no data", () => {
     expect(mapSearchLeads({ data: { total: 2 } })).toEqual([]);

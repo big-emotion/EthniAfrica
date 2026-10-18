@@ -319,10 +319,64 @@ export function familyNameLeads(query: string): ModelEntity[] {
   return corpusEntities()
     .filter((item) => item.kind === "patronyme")
     .filter((item) =>
-      [withoutQualifier(item.filedName), ...(item.spellings ?? [])].some(
-        (form) =>
-          normalizeString(form).trim()[0] === folded[0] &&
-          similarity(form, query) >= FAMILY_NAME_LEAD_FLOOR
+      leadForms(item, folded).some(
+        (form) => similarity(form, query) >= FAMILY_NAME_LEAD_FLOOR
       )
     );
+}
+
+/** The forms migration 110 scores: those sharing the query's first letter. */
+function leadForms(item: ModelEntity, foldedQuery: string): string[] {
+  return [withoutQualifier(item.filedName), ...(item.spellings ?? [])].filter(
+    (form) => normalizeString(form).trim()[0] === foldedQuery[0]
+  );
+}
+
+/**
+ * The `matched_form` migration 110 returns for a family-name lead: its best
+ * scoring form, the filed name first on a tie.
+ */
+// @req REQ-125
+export function familyNameLeadForm(
+  query: string,
+  item: ModelEntity
+): string | undefined {
+  const folded = normalizeString(query).trim();
+  const filed = withoutQualifier(item.filedName);
+  return leadForms(item, folded)
+    .map((form) => ({ form, score: similarity(form, query) }))
+    .sort(
+      (left, right) =>
+        right.score - left.score ||
+        Number(right.form === filed) - Number(left.form === filed) ||
+        left.form.localeCompare(right.form)
+    )[0]?.form;
+}
+
+function fichePaths(dir: string): string[] {
+  return readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
+    const path = join(dir, entry.name);
+    if (entry.isDirectory()) return fichePaths(path);
+    return entry.name.endsWith(".json") && !entry.name.startsWith("_")
+      ? [path]
+      : [];
+  });
+}
+
+/**
+ * The fiches whose whole file writes the query as a word, sources and notes
+ * included: what a fiche records anywhere, wider than `proseHits`, which
+ * leaves the sources out as the search vectors do. An example of a
+ * misspelling must find none (brief 16).
+ */
+// @req REQ-125
+export function fichesRecordingWord(query: string): string[] {
+  const wanted = rawWordsOf(query).join(" ");
+  if (!wanted) return [];
+  return fichePaths(DATASET).flatMap((path) => {
+    const text = readFileSync(path, "utf8");
+    const words = ` ${rawWordsOf(text).join(" ")} `;
+    if (!words.includes(` ${wanted} `)) return [];
+    return [String(readJson(path).id ?? path)];
+  });
 }

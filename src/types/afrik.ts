@@ -940,7 +940,14 @@ export interface RankedLanguage {
 export interface SearchLead {
   kind: "people" | "country" | "family" | "patronyme";
   id: string;
+  /** The filed name. */
   name: string;
+  /**
+   * The form that scored `similarity` (migration 110): a recorded spelling, a
+   * self-appellation or an exonym when it is not the filed name (« jarra »
+   * reaches Diarra through Jara). Absent from a database without 110.
+   */
+  matchedForm?: string;
   similarity: number;
 }
 

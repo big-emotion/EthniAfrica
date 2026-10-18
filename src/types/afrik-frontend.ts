@@ -306,7 +306,10 @@ export interface SearchLead {
     "people" | "country" | "languageFamily" | "patronyme"
   >;
   id: string;
+  /** The filed name. */
   name: string;
+  /** The form that scored, when the API names one (migration 110). */
+  matchedForm?: string;
   similarity: number;
 }
 

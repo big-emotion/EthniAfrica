@@ -5044,6 +5044,13 @@ a.ea-fiche-card:focus-visible { outline: none; box-shadow: var(--afh-ring-focus)
   color: var(--accent-foreground);
 }
 .ea-choice:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
+/* A chip names the form that scored; when it is not its fiche's filed name,
+   this line says which fiche records it (« jarra » → Jara, of Diarra). */
+.ea-choice-form {
+  margin-top: var(--afh-space-md);
+  font-size: var(--afh-text-caption); line-height: var(--afh-leading-caption);
+  color: var(--afh-text-soft);
+}
 .ea-choices-invitation {
   margin-top: var(--afh-space-2xl);
   font-size: var(--afh-text-caption); line-height: var(--afh-leading-caption);

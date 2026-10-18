@@ -100,8 +100,36 @@ describe("near-miss leads over family names (migration 110)", () => {
         text.indexOf("candidates AS ("),
         text.indexOf("WHERE length(q.exact_key) >= 3\n),")
       );
+    // The one line each branch gains names the form that scored; it selects
+    // no other row and scores nothing.
+    const withoutMatchedForm = (text: string) =>
+      text
+        .split("\n")
+        .filter((line) => !line.includes("AS matched_form,"))
+        .join("\n");
 
-    expect(branches(sql).startsWith(branches(original))).toBe(true);
+    expect(
+      withoutMatchedForm(branches(sql)).startsWith(branches(original))
+    ).toBe(true);
+  });
+
+  // The page names the form that scored, not the filed name: « jarra »
+  // reaches Diarra through its spelling Jara, and Diarra itself begins with
+  // another letter. On a tie the filed name is the one named.
+  // @req REQ-125
+  it("returns the form that scored beside the filed name, in every branch", () => {
+    expect(sql.match(/AS matched_form,/g) ?? []).toHaveLength(4);
+    const bestForm =
+      /\(array_agg\(form\.value ORDER BY extensions\.similarity\(public\.afrik_unaccent\(lower\(form\.value\)\), q\.exact_key\) DESC, \(form\.value = p\.name_main\) DESC, form\.value\)\)\[1\] AS matched_form,/;
+    expect(familyNameBranch()).toMatch(bestForm);
+    expect(sql.slice(0, sql.indexOf("'country'::text AS kind"))).toMatch(
+      bestForm
+    );
+    expect(sql.match(/localized\.name AS matched_form,/g) ?? []).toHaveLength(
+      2
+    );
+    const comment = sql.slice(sql.indexOf("COMMENT ON FUNCTION"));
+    expect(comment).toMatch(/matched_form/);
   });
 
   // @req REQ-125
