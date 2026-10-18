@@ -5136,3 +5136,78 @@ a.ea-fiche-card:focus-visible { outline: none; box-shadow: var(--afh-ring-focus)
 .ea-consent-stage { position: relative; width: 432px; height: 814px; overflow: hidden; }
 .ea-consent-stage > img { display: block; width: 430px; height: 812px; }
 .ea-consent-stage > .ea-consent { position: absolute; left: 0; right: 0; bottom: 0; }
+
+/* ============================================================
+   Brief 13 (2026-10-18): one search component, the same on the
+   home, in the header and on the search page; the header search
+   full screen below 768; the search page with no query. New
+   selectors only, tokens only.
+   ============================================================ */
+.ea-q { position: relative; display: flex; flex-wrap: wrap; gap: 8px; text-align: left; }
+.ea-q .ea-q-label { text-align: left; }
+.ea-q-field[data-focus] .ea-q-input { border-color: var(--accent); box-shadow: var(--afh-ring-focus); }
+.ea-q-input { padding-right: 48px; }
+.ea-q-clear {
+  position: absolute; right: 4px; top: 4px; width: 44px; height: 44px; border-radius: var(--afh-radius-lg);
+  background: none; color: var(--afh-text-soft);
+}
+.ea-q-clear::before, .ea-q-clear::after {
+  content: ""; position: absolute; left: 15px; top: 21px; width: 14px; height: 2px; border-radius: 1px; background: currentColor;
+}
+.ea-q-clear::before { transform: rotate(45deg); }
+.ea-q-clear::after { transform: rotate(-45deg); }
+.ea-q-pop {
+  position: absolute; left: 0; right: 0; top: calc(100% + var(--afh-space-sm)); z-index: 5;
+  margin: 0; padding: var(--afh-space-xs) 0; list-style: none;
+  background: var(--afh-surface); border: 1px solid var(--afh-border); border-radius: var(--afh-radius-lg);
+  box-shadow: var(--afh-elev-4);
+}
+.ea-q-opt a {
+  display: flex; flex-wrap: wrap; align-items: baseline; column-gap: var(--afh-space-md); row-gap: 2px;
+  min-height: 44px; padding: var(--afh-space-md) var(--afh-space-2xl);
+  color: var(--afh-text); font-size: var(--afh-text-small); line-height: 1.4;
+}
+.ea-q-opt[aria-selected="true"] a { background: var(--afh-bg-warm); }
+.ea-q-name { font-weight: 700; }
+.ea-q-note { flex: 1 1 auto; color: var(--afh-text-soft); }
+.ea-q-kind { margin-left: auto; font-family: var(--afh-font-mono); font-size: var(--afh-text-caption); color: var(--afh-text-soft); }
+.ea-q-all { border-top: 1px solid var(--afh-border); margin-top: var(--afh-space-xs); }
+.ea-q-all a, .ea-q-none a {
+  display: flex; align-items: center; min-height: 44px; padding: 0 var(--afh-space-2xl);
+  color: var(--accent-ink); font-size: var(--afh-text-small); font-weight: 600;
+  text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px;
+}
+.ea-q-pop-none { padding: var(--afh-space-md) 0; }
+.ea-q-none { margin: 0; padding: var(--afh-space-xs) var(--afh-space-2xl) 0; font-size: var(--afh-text-small); line-height: 1.5; color: var(--afh-text-soft); }
+.ea-q-none a { display: inline-flex; padding: 0; min-height: 44px; }
+.ea-q-close {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--afh-space-lg);
+  margin-left: auto; color: var(--accent-ink); font-weight: 600; background: none;
+}
+.ea-q-sheet { display: flex; flex-direction: column; gap: var(--afh-space-md); min-height: 100%; padding: var(--afh-space-md) var(--afh-page-padding) var(--afh-space-2xl); background: var(--afh-bg); }
+.ea-q-sheet, .ea-q-dialog { position: relative; }
+.ea-q-sheet-bar { position: absolute; top: var(--afh-space-md); right: var(--afh-page-padding); display: flex; }
+.ea-q-dialog .ea-q-sheet-bar { right: var(--afh-space-md); }
+.ea-q-sheet .ea-q-label, .ea-q-dialog .ea-q-label { display: flex; align-items: center; min-height: 44px; margin-bottom: 0; padding-right: 96px; }
+.ea-q-sheet .ea-q-pop { position: static; box-shadow: none; }
+.ea-q-dialog {
+  max-width: 640px; margin: var(--afh-space-6xl) auto; padding: var(--afh-space-md) var(--afh-space-2xl) var(--afh-space-2xl);
+  background: var(--afh-bg); border: 1px solid var(--afh-border); border-radius: var(--afh-radius-lg); box-shadow: var(--afh-elev-5);
+}
+.ea-q-dialog .ea-q-pop { position: static; }
+/* The search page with no query: the component, then two rows of chips. */
+.ea-entry { flex: 1 0 auto; padding-top: var(--afh-space-5xl); padding-bottom: var(--afh-space-7xl); }
+@media (min-width: 768px) { .ea-entry { padding-top: var(--afh-space-7xl); } }
+.ea-entry-col { display: flex; flex-direction: column; gap: var(--afh-space-6xl); max-width: 640px; margin-inline: auto; }
+.ea-entry-chips { margin-top: 0; justify-content: flex-start; flex-wrap: wrap; }
+.ea-entry-chips .home-hero-seeds-lead { flex: 0 0 100%; text-align: left; font-weight: 600; color: var(--afh-text); }
+.ea-entry-chips .home-hero-search-seeds { flex-wrap: wrap; justify-content: flex-start; margin: 0; padding: 0; }
+.ea-entry-chips .home-hero-more { margin-inline: 0; }
+/* Main board only: the component at phone width, and the page behind the dialog. */
+.ea-q-frame { padding: var(--afh-space-2xl); overflow: visible; }
+.ds-mobile.ea-q-frame { padding: var(--afh-space-2xl) 12px; }
+.ds-mobile .ea-q .home-hero-field, .ds-mobile .ea-q .home-hero-submit { flex: 1 1 100%; }
+.ea-q-frame:has(.ea-q-sheet) { padding: 0; display: flex; }
+.ea-q-frame-page { background: var(--afh-bg-warm); padding: 0; }
+.ds-mobile .ea-q-sheet { padding-inline: 12px; }
+.ds-mobile .ea-q-sheet-bar { right: 12px; }

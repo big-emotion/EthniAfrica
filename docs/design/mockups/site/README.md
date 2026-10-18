@@ -46,6 +46,7 @@ two is wrong, and the fix is decided, not improvised.
 |                   | État : origines concurrentes (« yamoussoukro ») | `search-state-competing` |
 |                   | État : origine non datée (exemple à remplacer) | `search-state-nodate` |
 |                   | État : « peul », le nom propre Fulɓe ouvert   | `search-state-peul-fulbe-open` |
+|                   | Page de recherche (sans requête)             | `search-entry`       |
 |                   | État : « tchikaya », un nom proche et des fiches (proposé) | `search-state-typo-fiches` |
 | 2 · Peoples       | `PPL_FULA`                                   | `people-fula`        |
 |                   | `PPL_BASSA`                                  | `people-bassa`       |
@@ -90,6 +91,7 @@ are recorded whole, folded as the site folds them.
 | 2026-10-18 | [Brief 6, the family-name fiche](../briefs/06-family-name.md) | `name-traore`, `name-state-thin-kollo` and `name-state-weak-sarr` (new); footer B now on `name-traore` too |
 | 2026-10-17 | The sources block renamed, approved by the operator in chat on 2026-10-17 (a wording change, no brief: the layout does not move). The eyebrow « Les sources parlent » goes; the question « Qui raconte le nom X ? » becomes « Les sources du nom X » (« Les sources des noms de ce peuple » on a fiche); the sentence under it counts sources, not accounts (« Plusieurs sources expliquent l'origine de ce nom. Voici leurs 4 récits, rangés par type de source. »). The rule behind it, no figure of style in a title, is in [`reader-facing-register.md`](../../../editorial/reader-facing-register.md) | every `search-*`, `people-*`, `language-*`, `family-*` and `country-*` board that draws the block; `Main` |
 | 2026-10-18 | The same rule on the timeline labels, under the operator's rule of 2026-10-17 (no figure of style on any page): « On remonte le temps » becomes « Du plus récent au plus ancien », « Pendant ce temps, ailleurs » becomes « Ailleurs à la même époque », « Naissance du nom X · origine la plus ancienne connue du projet » becomes « Origine la plus ancienne connue du nom X ». Off the boards, the header panel « Trois chemins » becomes « Menu » and « Le saviez-vous ? » becomes « À savoir » | every board that draws the timeline |
+| 2026-10-18 | [Brief 13, one search component and the search page](../briefs/13-search-entry.md) | `Main` (the search component in four states, the full-screen header search at 430, the dialog at 768); `search-entry` (new) |
 | 2026-10-18 | [Brief 16, a misspelling that also finds related fiches](../briefs/16-typo-with-related-fiches.md), **proposed, awaiting the operator's approval** | `search-state-typo-fiches` (new): « tchikaya », the filters first, the plain verdict of `search-unknown`, the accented choice Tchicaya and « Proposer une source », the fiche found under the related-only caution, « Aller plus loin »; no video shelf, no sound-alike fiche; `Main` (the choice chip, the plain verdict in one-choice and several-choice versions, the fiches found) |
 
 The boards of a changed page no longer record v5.2.0: they are the approved

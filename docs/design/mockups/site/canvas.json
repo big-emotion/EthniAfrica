@@ -14,7 +14,7 @@
       "x": 0,
       "y": 0,
       "w": 1440,
-      "h": 19959,
+      "h": 24459,
       "title": "design-system"
     },
     "search-peul-430.dc.html": {
@@ -683,9 +683,33 @@
       "h": 3800,
       "title": "État · sources faibles · Sarr · 1440"
     },
-    "search-state-typo-fiches-430.dc.html": {
+    "search-entry-430.dc.html": {
       "x": 1840,
       "y": 55035,
+      "w": 430,
+      "h": 2050,
+      "expand": "fill",
+      "title": "Page de recherche (sans requête) · 430"
+    },
+    "search-entry-768.dc.html": {
+      "x": 2350,
+      "y": 55035,
+      "w": 768,
+      "h": 1250,
+      "expand": "fill",
+      "title": "Page de recherche (sans requête) · 768"
+    },
+    "search-entry-1440.dc.html": {
+      "x": 3198,
+      "y": 55035,
+      "w": 1440,
+      "h": 1000,
+      "expand": "fill",
+      "title": "Page de recherche (sans requête) · 1440"
+    },
+    "search-state-typo-fiches-430.dc.html": {
+      "x": 1840,
+      "y": 57205,
       "w": 430,
       "h": 2408,
       "expand": "fill",
@@ -693,7 +717,7 @@
     },
     "search-state-typo-fiches-768.dc.html": {
       "x": 2350,
-      "y": 55035,
+      "y": 57205,
       "w": 768,
       "h": 1709,
       "expand": "fill",
@@ -701,7 +725,7 @@
     },
     "search-state-typo-fiches-1440.dc.html": {
       "x": 3198,
-      "y": 55035,
+      "y": 57205,
       "w": 1440,
       "h": 1548,
       "expand": "fill",
@@ -737,6 +761,9 @@
     "search-state-peul-fulbe-open-430.dc.html",
     "search-state-peul-fulbe-open-768.dc.html",
     "search-state-peul-fulbe-open-1440.dc.html",
+    "search-entry-430.dc.html",
+    "search-entry-768.dc.html",
+    "search-entry-1440.dc.html",
     "search-state-typo-fiches-430.dc.html",
     "search-state-typo-fiches-768.dc.html",
     "search-state-typo-fiches-1440.dc.html",
