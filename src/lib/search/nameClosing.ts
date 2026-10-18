@@ -204,6 +204,12 @@ export interface NextStepTarget {
   id: string;
   name: string;
   relation: NextStepRelation;
+  /**
+   * A namer's card explains the naming, not the namer: these are the searched
+   * name's accounts, where the fiche tells who gave the name (« Peul », from
+   * Wolof). The namer's own summary only says what the namer is.
+   */
+  namingAccounts?: readonly string[];
 }
 
 /**
@@ -239,8 +245,70 @@ function namerOf(
       .map((candidate) => candidate.languageOfOrigin),
   ]);
   if (own.has(origin)) return null;
+  // Doctrine §1.1: competing readings stand side by side, unranked. Quoting
+  // one of them as the card's reason would crown it, so they are left out and
+  // the namer's own summary stands in when nothing else names it.
+  const readings = new Map<string, number>();
+  for (const { hypothesisGroup } of name.accounts) {
+    if (hypothesisGroup) {
+      readings.set(hypothesisGroup, (readings.get(hypothesisGroup) ?? 0) + 1);
+    }
+  }
   // The name is the code until the loader reads the language's fiche.
-  return { type: "language", id: origin, name: origin, relation: "namer" };
+  return {
+    type: "language",
+    id: origin,
+    name: origin,
+    relation: "namer",
+    namingAccounts: name.accounts
+      .filter(
+        ({ hypothesisGroup }) =>
+          !hypothesisGroup || readings.get(hypothesisGroup) === 1
+      )
+      .map((account) => account.statement),
+  };
+}
+
+// A « . » closes a sentence unless it closes an initial (« E. J. Alagoa »,
+// « J.-C. ») or a reference abbreviation (« p. 141 », « XIXe s. »): accounts
+// cite their authors and pages, and a cut there halves the attribution. A
+// sentence that really ends on one is merged with the next, which keeps the
+// attribution whole at the cost of a longer reason.
+const SENTENCE =
+  /[\s\S]+?(?:[!?]|(?<!(?:^|[^\p{L}\p{N}])(?:\p{Lu}|p|pp|s|av|apr|env|cf|ch|vol|éd|dir|trad|coll|al))\.)(?=\s|$)|[\s\S]+$/gu;
+
+function sentencesOf(text: string): string[] {
+  return (text.match(SENTENCE) ?? [])
+    .map((sentence) => sentence.trim())
+    .filter(Boolean);
+}
+
+/**
+ * Why a namer is offered, in the fiche's own words: the first account of the
+ * searched name that names the namer, read up to the sentence that does, so a
+ * pronoun keeps the sentence it points back to (« Forme française du nom. Les
+ * sources consultées la font venir du wolof… »). Undefined when no account
+ * names it; the card then says what the namer is.
+ */
+// @req REQ-198
+export function namingReason(
+  accounts: readonly string[],
+  namer: string
+): string | undefined {
+  const word = normalizeString(namer).trim();
+  if (!word) return undefined;
+  const mentionsNamer = new RegExp(
+    `(?<![\\p{L}\\p{N}])${word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?![\\p{L}\\p{N}])`,
+    "u"
+  );
+  for (const statement of accounts) {
+    const sentences = sentencesOf(statement);
+    const at = sentences.findIndex((sentence) =>
+      mentionsNamer.test(normalizeString(sentence))
+    );
+    if (at >= 0) return sentences.slice(0, at + 1).join(" ");
+  }
+  return undefined;
 }
 
 /**
