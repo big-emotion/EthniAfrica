@@ -22,8 +22,10 @@ import {
   type FeedPlateItem,
 } from "@/components/search/feed/PlatesBlock";
 import { QuizBlock } from "@/components/search/feed/QuizBlock";
+import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
+import { SearchFeedContributionAction } from "@/components/search/feed/SearchFeedContributionAction";
 import { SearchFeedLayout } from "@/components/search/feed/SearchFeedLayout";
-import { ShortsBlock } from "@/components/search/feed/ShortsBlock";
+import { isOnName, ShortsBlock } from "@/components/search/feed/ShortsBlock";
 import { OriginBlock } from "@/components/search/answer/OriginBlock";
 import { CountriesAnswer } from "@/components/search/feed/CountriesAnswer";
 import { SubjectAnswer } from "@/components/search/feed/SubjectAnswer";
@@ -35,6 +37,7 @@ import {
   type NextStepCard,
 } from "@/components/search/timeline/NameClosing";
 import { NameTimeline } from "@/components/search/timeline/NameTimeline";
+import { TimelineShortRow } from "@/components/search/timeline/TimelineShortRow";
 import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
 import { deduceSilences } from "@/lib/search/nameClosing";
 import { buildNameTimeline } from "@/lib/search/nameTimeline";
@@ -47,7 +50,7 @@ import { normalizeString } from "@/lib/normalize";
 import { ANSWER_BLOCKS, type FeedBlockId } from "@/lib/search/resultGrammar";
 import type { AnswerKind, WordAnswer } from "@/lib/search/answer";
 import type { NameAnswer } from "@/lib/search/nameAnswer";
-import type { NamingPresentationForm } from "@/lib/search/naming";
+import { formKey, type NamingPresentationForm } from "@/lib/search/naming";
 import { planAnswerSubjects } from "@/lib/search/answerSubjectPlan";
 import { buildRelationSearchHref } from "@/lib/search/relationSearch";
 import { resolveNameOpening } from "@/lib/search/resolveNameOpening";
@@ -135,7 +138,13 @@ export interface SearchFeedProps {
   ) => void;
 }
 
-export type SearchFeedSurface = "answer" | "timeline" | "next";
+export type SearchFeedSurface =
+  | "answer"
+  | "timeline"
+  | "next"
+  // The one video of « Histoire du nom » (brief 11 §2), apart from the
+  // timeline's fiche link so the audit can tell a video from a fiche.
+  | "timeline_short";
 
 export interface SubjectNameHistory {
   subject: SearchResult;
@@ -238,6 +247,18 @@ function formDetail(
   return text ? { text, evidence: form.evidence[0] } : undefined;
 }
 
+/**
+ * A card's line in the « Fiches » lens: the corpus line of the form that bears
+ * the card's name (brief 12). With no such form, or no line, the card shows
+ * none rather than a generic one.
+ */
+function ficheOwnLine(entry: SearchResult, name: string): string | undefined {
+  const key = formKey(name);
+  return entry.naming?.presentation.forms.find(
+    (form) => formKey(form.form) === key
+  )?.shortLine;
+}
+
 // @req REQ-178
 // @req REQ-180
 export function SearchFeed({
@@ -264,6 +285,10 @@ export function SearchFeed({
   );
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [validatedOption, setValidatedOption] = useState<number | null>(null);
+  // The name each timeline has open, by subject. It lives here, not in the
+  // timeline: « Tout » unmounts the timeline, and the closing band must keep
+  // naming what the chips show when the reader comes back.
+  const [openNames, setOpenNames] = useState<Record<string, string>>({});
   const copy = searchFeedCopy[language];
   const answerCopy = nameAnswerCopy[language];
   const nameHref = useNameSearchHref(language);
@@ -339,6 +364,22 @@ export function SearchFeed({
         }
   );
   const ficheRows = presentation?.fiches?.items ?? derivedFicheRows;
+  // The « Fiches » lens sets the fiches that answer to the searched name apart
+  // from the ones found around it (brief 12). Subjects arrive as their own
+  // objects, so they are matched by type and id.
+  const subjectKeys = new Set(subjects.map(({ type, id }) => `${type}:${id}`));
+  const answersToName = ({ type, id }: { type: string; id: string }) =>
+    subjectKeys.has(`${type}:${id}`);
+  const lensFicheRows = derivedFicheRows.map((row, index): FeedFicheItem => {
+    const entry = ficheEntries[index];
+    return entry.type === "peopleGroup"
+      ? { ...row, onName: entry.members.some(answersToName) }
+      : {
+          ...row,
+          meta: ficheOwnLine(entry as SearchResult, row.name),
+          onName: answersToName(entry),
+        };
+  });
 
   // A relation browse ("the peoples of the Krou family") only replaces the
   // name-search movement when there is no subject to answer — a query that
@@ -395,6 +436,15 @@ export function SearchFeed({
     subjects.length === 0 &&
     opening.entries.length > 0 &&
     (state === "unknown" || state === "typo");
+  // The page that admits it does not know the name asks for it once, in its
+  // verdict, and owes no card after it (brief 12, part A, approved
+  // 2026-10-17). A word page shares the state but answers.
+  const confesses =
+    state === "unknown" &&
+    !wordPage &&
+    !answeredByWord &&
+    !answeredByReview &&
+    !presentation?.answer;
   const verdict =
     presentation?.answer?.verdict ??
     (answeredByWord
@@ -473,6 +523,7 @@ export function SearchFeed({
       answers: answered.length > 0,
       appellations: forms.length > 0,
       fiches: ficheRows.length > 0,
+      shorts: hasWordPiece,
     },
     { relatedOnly, wordPage }
   );
@@ -715,6 +766,20 @@ export function SearchFeed({
               presentation?.answer?.tone ??
               (state === "typo" || state === "unknown" ? "plain" : "answer")
             }
+            action={
+              confesses ? (
+                <SearchFeedContributionAction
+                  language={language}
+                  target={contributionTarget}
+                  label={answerCopy.invitationAction}
+                  preferredKind="contribution"
+                  variant="outline"
+                  // Board search-unknown-430 (`.ea-owed-action`): ink text at
+                  // the button's own medium weight, on the accent tint.
+                  className="min-h-11 border-[color:var(--accent)] bg-[color:var(--accent-tint)] py-0 text-afh-text hover:bg-[color:var(--accent-tint)] hover:text-afh-text hover:brightness-95"
+                />
+              ) : undefined
+            }
           />
         );
       case "appellations":
@@ -829,6 +894,20 @@ export function SearchFeed({
           />
         );
       case "owed":
+        // The verdict holds the page's one invitation: the closing keeps the
+        // silence and the conviction, and no card speaks of names not shown.
+        if (confesses) {
+          return (
+            <SearchFeedBlock id="owed" zone="closing">
+              <NameClosingBand
+                silences={[
+                  nameClosingCopy[language].silence.unknown(query.trim()),
+                ]}
+                language={language}
+              />
+            </SearchFeedBlock>
+          );
+        }
         return (
           <>
             {state === "unknown" ? (
@@ -921,6 +1000,25 @@ export function SearchFeed({
     const unwritten = ficheSubjects.filter(
       (subject) => !withHistory.has(`${subject.type}:${subject.id}`)
     );
+    const keyOf = (subject: SearchResult) => `${subject.type}:${subject.id}`;
+    // Brief 11 §2: the first piece made on the name, under the subject it is
+    // about. An `exact` piece names its subject; a `word` piece has none, so
+    // it goes under the first. The rest stay in the « Shorts » filter.
+    const timelineShort = companions.shorts.items
+      .filter(isOnName)
+      .map((item) => ({
+        item,
+        host:
+          item.match.relation === "word"
+            ? nameHistories[0]?.subject
+            : nameHistories.find(
+                ({ subject }) =>
+                  "entityId" in item.match &&
+                  keyOf(subject) ===
+                    `${item.match.entityType}:${item.match.entityId}`
+              )?.subject,
+      }))
+      .find(({ host }) => host);
     return (
       <SearchFeedLayout
         className="text-afh-text"
@@ -957,6 +1055,25 @@ export function SearchFeed({
                 !sharedName && index === 0
                   ? ficheLinkBlock("timeline")
                   : undefined
+              }
+              video={
+                timelineShort?.host === subject ? (
+                  <TimelineShortRow
+                    item={timelineShort.item}
+                    subjectType={subject.type}
+                    language={language}
+                    onNavigate={() =>
+                      onResultNavigate?.("short", 1, "timeline_short")
+                    }
+                  />
+                ) : undefined
+              }
+              openName={openNames[keyOf(subject)]}
+              onOpenNameChange={(nameText) =>
+                setOpenNames((open) => ({
+                  ...open,
+                  [keyOf(subject)]: nameText,
+                }))
               }
               language={language}
             />
@@ -1010,10 +1127,18 @@ export function SearchFeed({
           // correct, then one or two names to read next.
           <NameClosingBand
             key="timeline-closing"
+            // The band speaks of the name each timeline has open (brief 11
+            // §1d), as « Les sources du nom … » already does.
             silences={deduceSilences(
-              nameHistories.map(({ nameHistory }) => ({
-                name: buildNameTimeline(nameHistory, query).names[0],
-              })),
+              nameHistories.map(({ subject, nameHistory }) => {
+                const { names } = buildNameTimeline(nameHistory, query);
+                return {
+                  name:
+                    names.find(
+                      ({ nameText }) => nameText === openNames[keyOf(subject)]
+                    ) ?? names[0],
+                };
+              }),
               unwritten.map((subject) => ({
                 label: getSearchEntityLabel(subject.type),
                 name: getLocalizedSearchResultName(subject, language),
@@ -1046,7 +1171,16 @@ export function SearchFeed({
       ),
       stories: renderBlock("plates"),
       quiz: renderBlock("quiz"),
-      fiches: renderBlock("fiches"),
+      fiches: presentation?.fiches?.items ? (
+        renderBlock("fiches")
+      ) : (
+        <FichesBlock
+          lens={isRelationBrowse ? "ungrouped" : "grouped"}
+          items={lensFicheRows}
+          reviewed={Boolean(presentation)}
+          language={language}
+        />
+      ),
     };
     return (
       <SearchFeedLayout

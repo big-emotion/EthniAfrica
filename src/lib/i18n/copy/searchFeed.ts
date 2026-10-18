@@ -102,6 +102,18 @@ export interface SearchFeedCopy {
       Record<"people" | "language" | "languageFamily", (self: string) => string>
     >;
   };
+  /**
+   * The one video in « Histoire du nom » (brief 11 §2). A piece matched
+   * `exact` is matched on the subject, not on the name form, so the eyebrow
+   * names the subject by its kind and never says « sur ce nom ».
+   */
+  timelineShort: {
+    eyebrow: Record<
+      "people" | "country" | "language" | "languageFamily" | "patronyme",
+      string
+    >;
+    duration: (minutes: number, seconds: string) => string;
+  };
 }
 
 // @req REQ-180
@@ -205,6 +217,21 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
         languageFamily: (self) =>
           `Le nom employé par les personnes qui la parlent : ${self}.`,
       },
+    },
+    timelineShort: {
+      eyebrow: {
+        people: "Une vidéo sur ce peuple",
+        country: "Une vidéo sur ce pays",
+        language: "Une vidéo sur cette langue",
+        languageFamily: "Une vidéo sur cette famille de langues",
+        patronyme: "Une vidéo sur ce nom de famille",
+      },
+      duration: (minutes, seconds) =>
+        minutes === 0
+          ? `${Number(seconds)} s`
+          : Number(seconds) === 0
+            ? `${minutes} min`
+            : `${minutes} min ${seconds}`,
     },
   },
 };

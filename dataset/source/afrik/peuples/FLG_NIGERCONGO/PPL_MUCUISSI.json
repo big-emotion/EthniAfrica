@@ -101,5 +101,143 @@
         "source_kind": "intergovernmental"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kwisi désigne un petit groupe du sud-ouest de l'Angola, dans le désert du Namibe, autour du bassin du fleuve Curoca. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. En portugais, on écrit Cuíssis ou Cuisses ; des documents coloniaux de 1940-1941 écrivent mucuissos, une forme proche de Mucuissi, le nom principal de cette fiche. On ne sait pas d'où vient le nom Kwisi : aucune source que nous avons lue ne l'explique. Nous présentons plus bas ce que disent les sources.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Kwisi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de ce groupe du désert du Namibe, écrit Kwisi et Cuíssis par le père Estermann en 1960.",
+        "periodLabel": "Écrit dès 1960 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Kwisi désigne, pour la généticienne Sandra Oliveira et ses collègues, l'un des groupes dépossédés du bassin du fleuve Curoca, dans le désert du Namibe, comme les Twa et les Tjimba. Ces groupes dépendent fortement des éleveurs kuvale et himba voisins, dont ils partagent les langues et les coutumes. Les auteurs n'expliquent pas ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Genome-wide variation in the Angolan Namib Desert reveals unique pre-Bantu ancestry",
+                "author": "Sandra Oliveira et al.",
+                "year": 2023,
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10516492/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Science Advances, vol. 9, n° 38, 22 septembre 2023, eadh3822 ; lu le 18 octobre 2026 dans la version HTML de PubMed Central, sans pagination. Introduction : « an array of dispossessed groups also inhabiting the Kuroka River Basin, known as Kwisi, Twa, and Tjimba »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Kwisi a une forme portugaise proche, Cuisses, dans une dépêche de l'agence Lusa reprise par Ver Angola : les Cuisses y figurent parmi les habitants de la municipalité de Virei, dans la province du Namibe, avec les Mucubais, les Muhakaona et les Muílas.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Seca no sul do país leva pastores cada vez mais longe em busca de pasto",
+                "author": "Lusa, repris par Ver Angola",
+                "year": 2022,
+                "url": "https://www.verangola.net/va/pt/112022/Ambiente/33520/Seca-no-sul-do-pa%C3%ADs-leva-pastores-cada-vez-mais-longe-em-busca-de-pasto.htm",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Dépêche de l'agence Lusa du 28 novembre 2022, lue le 18 octobre 2026 sur le site Ver Angola : « Ali vivem quase 43 mil pessoas, entre Mucubais, Cuisses, Muhakaona e Muílas »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2009,
+              "to": 2009,
+              "label": "2009"
+            },
+            "era": "modern",
+            "statement": "Le nom Kwisi figure dans la classification des langues bantoues de Jouni Filip Maho, sous le code R102, à côté du kuvale. Il porte une croix, que Maho emploie pour les langues éteintes, précédée d'un point d'interrogation.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "New Updated Guthrie List Online (NUGL Online), version du 4 juin 2009",
+                "author": "Jouni Filip Maho",
+                "year": 2009,
+                "url": "https://web.archive.org/web/20180203191542/http://goto.glocalnet.net/mahopapers/nuglonline.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 7, 86",
+                "notes": "Liste de classification des langues bantoues, lue le 18 octobre 2026 dans la copie du 3 février 2018 conservée par la Wayback Machine. Page 86 : « R101 Kuvale », « R102 ?† Kwisi » ; page 7 : « Extinct languages and dialects are marked in the list with a dagger (†) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "1960"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kwisi apparaît chez le père Carlos Estermann, qui range les Kwisi parmi les peuples du sud-ouest de l'Angola qu'il classe à part des peuples de langue bantoue, avec les Kwandu, les Vatwa et les Kwepe, et qu'il dit peu nombreux. Il écrit Kwisi selon la prononciation, et Cuíssis dans le texte portugais du même album. C'est la plus ancienne trace de cette forme que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Kwisi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Álbum de penteados do sudoeste de Angola",
+                "author": "Carlos Estermann",
+                "year": 1960,
+                "url": "https://archive.org/details/dli.ernet.535233",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 7, 23",
+                "notes": "Lisbonne, 1960 ; préface datée de Sá da Bandeira, juin 1959. Lu dans la numérisation d'Internet Archive le 18 octobre 2026, pages vérifiées sur l'image. Texte portugais, p. 7 : « Os não-Bantos são constituídos pelos Cuíssis e possivelmente os Cuandos, os Vátuas e os Corocas ou Cuepes » ; texte français, p. 23 : « Les Non-bantous comprennent : les Kwisi, probablement les Kwandu, les Vatwa et finalement les Kwepe »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mucuissi",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une forme portugaise du nom, écrite mucuissos dans des documents coloniaux de 1940-1941.",
+        "periodLabel": "Écrit en 1940-1941",
+        "accounts": [
+          {
+            "period": {
+              "from": 1940,
+              "to": 1941,
+              "label": "Vers 1940-1941"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mucuissi a une forme proche, mucuissos, dans la lettre d'une société commerciale au gouverneur général de l'Angola, pendant la répression militaire menée contre les Mucubais, selon Rafael Coca de Campos, qui cite ces archives. La société s'y plaint que des soldats soient venus arrêter « mucubais, mucuissos, mucuandos » sur une ferme où elle emploie des mucuissos depuis plus de trente ans. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "mucuissos",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Kakombola : o genocídio dos Mucubais na Angola colonial, 1930-1943",
+                "author": "Rafael Coca de Campos",
+                "year": 2021,
+                "url": "https://archive.org/details/Kakombola",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 122-123",
+                "notes": "Ponta Grossa, Atena Editora, 2021, ISBN 978-65-5983-766-3, en libre accès ; lu le 18 octobre 2026 dans l'exemplaire d'Internet Archive, pages vérifiées sur le PDF. Page 122 : lettre de la société Torres & Irmão au gouverneur général, cote AHM 2/2/71/9, citée de seconde main ; page 123 : un télégramme de février de la même période écrit « mucuisses ». La répression est datée de septembre 1940 à 1941 dans le même chapitre."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

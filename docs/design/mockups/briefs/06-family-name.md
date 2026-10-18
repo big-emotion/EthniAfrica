@@ -230,3 +230,62 @@ the same institution; no count of bearers.
   reliable » label on any source.
 - Redraw the approved components: reuse them from `Main`.
 - Put the thesis anywhere but the closing band.
+
+## Approved boards (2026-10-18)
+
+Recorded in `docs/design/mockups/site/`. The operator approved the three
+boards on 2026-10-18 with eight decisions, applied before recording.
+
+- `name-traore`, at 430, 768 and 1440:
+  - the title, the trail and the first spelling read « Traoré »; the rest of
+    the hero is unchanged;
+  - « Le nom » gains « Équivalents chez d'autres peuples » under the spellings
+    (Sane, Mane, Ouédraogo, Dembélé, Diouf, Touré à Ségou, et Diop en pays
+    wolof), then the link « Lire l'histoire du nom Traoré », with the hint
+    « La page du nom présente ce que disent les sources : qui l'a donné, à
+    qui, quand et pourquoi, du plus récent au plus ancien. »;
+  - the sources block follows « Le nom », titled « Les sources de ce nom de
+    famille », with « Plusieurs sources expliquent ce nom de famille. Voici
+    leurs 14 récits, rangés par forme, puis par type de source. »; Traoré open,
+    Tarawele folded;
+  - « Origine » is kept, each of its four types folded to its title and number
+    of accounts;
+  - « Alliances » gives the sentence once and the six names as links side by
+    side;
+  - « Homonymes » goes; its silence joins the closing band;
+  - the closing band: the oral traditions known only through E. A. Bogacheva,
+    Djibril Tamsir Niane and Youssouf Tata Cissé; no meaning for the word in
+    the dictionaries consulted; before the oldest trace; no homonym, the
+    spellings being one jamu; no count of bearers;
+  - « Poursuivre avec un autre nom »: Diarra, Diop, Touré, Diawara, each with
+    the first sentence of its summary; Abaza, Koné and Condé are left out;
+  - the sources list folds behind « La liste »;
+  - footer B.
+- `name-state-thin-kollo` (new): two forms, two accounts; no naming-system line
+  under the title and no « Le nom » rows the fiche declares unestablished;
+  « Homonymes » filled with the two places the fiche holds (Kollo in Niger,
+  Kolo-Mandouka in Cameroon), never merged; its silences in the closing band.
+- `name-state-weak-sarr` (new): the noindex page without alarm; the closing
+  band opens on the chapters not yet documented.
+
+The sources-block sentence has three states: several sources explain the name;
+one source explains it; the sources mention the name without explaining it
+(« Deux sources mentionnent ce nom, sans en expliquer l'origine. … »), the
+last one drawn on Kollo and Sarr.
+
+Measured at 430 px on a render without the Google fonts (about 2.6 % taller
+than the canvas): `name-traore` 15,885 px before the folds, 8,202 after;
+`name-state-thin-kollo` 7,474 then 5,947; `name-state-weak-sarr` 5,256 then
+5,228 (the link to the story adds what its folded list saves).
+
+Decided, not drawn:
+
+1. Merging « Origine » into the history of the names becomes a data ticket.
+2. The code's silence for a family name reads « les noms de ce nom de
+   famille », and on Traoré it would say that no oral account exists while
+   « Origine » holds four: the griots' accounts are typed as academic works in
+   the history. The board draws the line that names who wrote them down.
+3. Point i: « Origine », « Sources », « Alliances », « Homonymes » and
+   « Porteurs » match the live page word for word on 2026-10-18; the live page
+   has a rewritten « Le nom » (plain social function, country names in full)
+   and lists Malinké before Bambara.

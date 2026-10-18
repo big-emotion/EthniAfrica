@@ -11,7 +11,10 @@
     {
       "spelling": "Mondlane",
       "attestations": [
-        { "countryId": "MOZ", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "MOZ",
+          "sourceRefs": ["afrik-candidate-queue", "liesegang-2014-borders"]
+        }
       ]
     }
   ],
@@ -26,14 +29,14 @@
     {
       "peopleId": "PPL_TSONGA",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "liesegang-2014-borders"]
     }
   ],
   "countries": [
     {
       "countryId": "MOZ",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "liesegang-2014-borders"]
     }
   ],
   "alliances": [],
@@ -48,6 +51,22 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "liesegang-2014-borders",
+      "title": "East and Northeast of the Borders of the Southeastern Bantu: Partly visible population movements and invisible lineage states",
+      "url": "https://archive.org/details/borders-of-se-bantu-400-1900",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Manuscrit de juillet 2014, diffusé « without full revision of the bibliography and language » ; l'auteur, historien, enseigne au département d'histoire de l'université Eduardo Mondlane, à Maputo. Lu en texte intégral sur Internet Archive le 18 octobre 2026, aux pages imprimées du manuscrit."
+    },
+    {
+      "sourceKey": "cia-1962-africa-roundtable",
+      "title": "Africa Roundtable, 7 March 1962",
+      "url": "https://archive.org/details/cia-readingroom-document-cia-rdp80-00531a000200030009-7",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Note interne « Official Use Only » du 7 mars 1962, déclassifiée en 2000, lue sur Internet Archive le 18 octobre 2026. La liste jointe, « Possible Africa Roundtable Speakers from the Academic World », cite « Dr. Eduardo Mondlane, Syracuse University », pour un exposé intitulé « Mozambique Timetable »."
     }
   ],
   "gaps": [
@@ -75,5 +94,155 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mondlane est un nom de famille du Mozambique et celui d'un clan du sud du pays, qui forme vers 1810 un petit État autour de son chef Ndzovu. Les sources lues ne disent pas ce que veut dire ce nom. Une lecture, qui en fait une branche du clan Makwakwa, est présentée plus bas.",
+    "names": [
+      {
+        "nameText": "Mondlane",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille du Mozambique et un clan du sud du pays, connu vers 1810 ; son sens est inconnu.",
+        "periodLabel": "Écrit dès 1962 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Mondlane désigne un clan du sud du Mozambique, rattaché aux Nwanati, appelés aussi Khambana, selon l'historien Gerhard Liesegang. Les sources lues ne disent pas ce que veut dire le mot mondlane ; une lecture de l'origine du clan est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "East and Northeast of the Borders of the Southeastern Bantu: Partly visible population movements and invisible lineage states",
+                "author": "Gerhard Liesegang",
+                "year": 2014,
+                "url": "https://archive.org/details/borders-of-se-bantu-400-1900",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 33 et 38",
+                "notes": "Manuscrit de juillet 2014, diffusé « without full revision of the bibliography and language » ; l'auteur, historien, enseigne au département d'histoire de l'université Eduardo Mondlane, à Maputo. Lu en texte intégral sur Internet Archive le 18 octobre 2026, aux pages imprimées du manuscrit. P. 33 : « the southern Nwanati or Khambana (Mondlane) » ; p. 38 : « the Khambana and Nwanati (Makwakwa, Mondlane, Manyika, cf. Jaques 1982: 24) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1810,
+              "to": 1810,
+              "label": "Vers 1810"
+            },
+            "era": "polity",
+            "statement": "Le nom Mondlane est celui d'un petit État lignager fondé vers 1810 par Ndzovu, qui se sépare alors du clan Makwakwa, selon Gerhard Liesegang. Ses sujets étaient des Nwanati et des Chopi du sud, qui gardaient leurs chefs et parlaient plusieurs langues.",
+            "sources": [
+              {
+                "title": "East and Northeast of the Borders of the Southeastern Bantu: Partly visible population movements and invisible lineage states",
+                "author": "Gerhard Liesegang",
+                "year": 2014,
+                "url": "https://archive.org/details/borders-of-se-bantu-400-1900",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17 et 19",
+                "notes": "Manuscrit de juillet 2014, diffusé « without full revision of the bibliography and language » ; l'auteur, historien, enseigne au département d'histoire de l'université Eduardo Mondlane, à Maputo. Lu en texte intégral sur Internet Archive le 18 octobre 2026, aux pages imprimées du manuscrit. P. 17 : « the Mondlane founded by Ndzovu around 1810, which had Nwanati (Khambana) and southern Chopi subjects who retained their chiefs » ; p. 19 : « Dzovo Mondlane breaking away from the Makwakwa ca. 1810 ». Liesegang s'appuie sur des traditions orales et sur Jaques (1982)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1889,
+              "to": 1895,
+              "label": "De 1889 à 1895"
+            },
+            "era": "polity",
+            "statement": "Le nom Mondlane désigne aussi un territoire : de 1889 à 1895, les capitales du royaume de Gaza se trouvent sur les terres des Mondlane et des Makwakwa, vers Mandlakazi et Chibuto, selon Gerhard Liesegang.",
+            "sources": [
+              {
+                "title": "East and Northeast of the Borders of the Southeastern Bantu: Partly visible population movements and invisible lineage states",
+                "author": "Gerhard Liesegang",
+                "year": 2014,
+                "url": "https://archive.org/details/borders-of-se-bantu-400-1900",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 43",
+                "notes": "Manuscrit de juillet 2014, diffusé « without full revision of the bibliography and language » ; l'auteur, historien, enseigne au département d'histoire de l'université Eduardo Mondlane, à Maputo. Lu en texte intégral sur Internet Archive le 18 octobre 2026, aux pages imprimées du manuscrit. P. 43 : les centres du royaume de Gaza sont « later (1889-95) in the Mondlane and Makwakwa territory of Mandlakazi and Chibuto »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "Décrit en 2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Mondlane est celui de gens d'abord comptés parmi les Chopi, puis fondus parmi les Changana, dont ils ont peu à peu adopté le parler, selon Gerhard Liesegang.",
+            "sources": [
+              {
+                "title": "East and Northeast of the Borders of the Southeastern Bantu: Partly visible population movements and invisible lineage states",
+                "author": "Gerhard Liesegang",
+                "year": 2014,
+                "url": "https://archive.org/details/borders-of-se-bantu-400-1900",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 33",
+                "notes": "Manuscrit de juillet 2014, diffusé « without full revision of the bibliography and language » ; l'auteur, historien, enseigne au département d'histoire de l'université Eduardo Mondlane, à Maputo. Lu en texte intégral sur Internet Archive le 18 octobre 2026, aux pages imprimées du manuscrit. P. 33 : « the southern Nwanati or Khambana (Mondlane) who had also been included among the Chopi, were subsumed into the Changana whose dialect they gradually adopted »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1962,
+              "to": 1962,
+              "label": "Mars 1962"
+            },
+            "statement": "Le nom Mondlane apparaît par écrit dans une note de la CIA du 7 mars 1962 : elle cite parmi les orateurs possibles d'une table ronde sur l'Afrique « Dr. Eduardo Mondlane, Syracuse University ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un document l'a noté, pas depuis quand le nom existe. Le clan existait déjà bien avant elle.",
+            "formAsWritten": "Mondlane",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Eduardo Mondlane",
+                "role": "porteur du nom cité dans la note"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Africa Roundtable, 7 March 1962",
+                "author": "Central Intelligence Agency",
+                "year": 1962,
+                "url": "https://archive.org/details/cia-readingroom-document-cia-rdp80-00531a000200030009-7",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "liste « Possible Africa Roundtable Speakers from the Academic World », jointe à la note",
+                "notes": "Note interne « Official Use Only » du 7 mars 1962, déclassifiée en 2000, lue sur Internet Archive le 18 octobre 2026. La liste jointe, « Possible Africa Roundtable Speakers from the Academic World », cite « Dr. Eduardo Mondlane, Syracuse University », pour un exposé intitulé « Mozambique Timetable »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "Proposé en 2014"
+            },
+            "era": "modern",
+            "statement": "Le clan Mondlane serait une branche du clan Makwakwa, selon Gerhard Liesegang, qui le dit « possiblement » issu de lui. Il range les deux clans parmi les descendants de Nkome, l'ancêtre des Khambana et des Nwanati, d'après les traditions recueillies par A. Jaques.",
+            "hypothesisGroup": "origine du clan Mondlane",
+            "sources": [
+              {
+                "title": "East and Northeast of the Borders of the Southeastern Bantu: Partly visible population movements and invisible lineage states",
+                "author": "Gerhard Liesegang",
+                "year": 2014,
+                "url": "https://archive.org/details/borders-of-se-bantu-400-1900",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 38 et 41",
+                "notes": "Manuscrit de juillet 2014, diffusé « without full revision of the bibliography and language » ; l'auteur, historien, enseigne au département d'histoire de l'université Eduardo Mondlane, à Maputo. Lu en texte intégral sur Internet Archive le 18 octobre 2026, aux pages imprimées du manuscrit. P. 38 : « Nkome, the ancestor of the Khambana and Nwanati (Makwakwa, Mondlane, Manyika, cf. Jaques 1982: 24) » ; p. 41 : « the Mondlane, possibly an offshoot of the Makwakwa »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -1,3 +1,4 @@
+import { COUNT_FR } from "@/lib/i18n/copy/nameClosing";
 import type { Language } from "@/types/shared";
 
 /**
@@ -12,6 +13,14 @@ export interface NameTimelineCopy {
   searchedMark: string;
   formerMark: string;
   seeSelfName: string;
+  /**
+   * The lead's second line (brief 11 §1a): how many explanations of the
+   * self-name the page shows. It names none and ranks none.
+   */
+  selfReadings: (name: string, count: number) => string;
+  /** After the lead's own sentence, the hand-off says the name has a story. */
+  handOffStory: (count: number) => string;
+  handOffAction: (name: string) => string;
   hint: string;
   elsewhereButton: string;
   regime: { polity: string; colonial: string; modern: string };
@@ -41,6 +50,13 @@ export const nameTimelineCopy: Record<Language, NameTimelineCopy> = {
     searchedMark: "cherché",
     formerMark: "ancien",
     seeSelfName: "Voir",
+    selfReadings: (name, count) =>
+      `D'où vient le nom ${name} ? Les sources proposent ${COUNT_FR[count] ?? count} explications, sans que l'une l'emporte.`,
+    handOffStory: (count) =>
+      count > 0
+        ? `Ce nom a aussi son histoire : les sources proposent ${COUNT_FR[count] ?? count} explications de son origine, sans que l'une l'emporte.`
+        : "Ce nom a aussi son histoire.",
+    handOffAction: (name) => `Lire l'histoire du nom ${name}`,
     // Plain labels, no figure of style (operator, 2026-10-17): the doctrine's
     // « birth » and « meanwhile, elsewhere » name ideas, not reader labels.
     hint: "Du plus récent au plus ancien",

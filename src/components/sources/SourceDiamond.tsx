@@ -18,8 +18,9 @@ export interface SourceDiamondProps {
 }
 
 /**
- * A small coloured diamond set after the sentence it backs (ETNI-2015); its
- * colour tells the source's type, and tapping it opens the sources.
+ * A small coloured diamond set after the sentence it backs (ETNI-2015), then
+ * the word « Source » or « Sources » (brief 11 §3); the colour tells the
+ * source's type, and tapping either opens the sources.
  *
  * One diamond per passage, coloured by the first source the fiche cites. A
  * row of diamonds, one per type, would read as a score — three marks looking
@@ -28,7 +29,8 @@ export interface SourceDiamondProps {
  * reader. The other sources are counted in the button's name and listed,
  * each with its own type, in the sheet.
  *
- * The visible diamond stays small; the button around it is the 24px target.
+ * It is not a link inside a sentence, so charter §8 gives it a 44px target;
+ * source-diamond.css draws that from padding, so the line height holds.
  */
 // @req REQ-198
 // @req REQ-194
@@ -52,6 +54,9 @@ export function SourceDiamond({
       className={cn("afh-source-diamond", CHARTER_FOCUS_RING)}
     >
       <span className="afh-source-diamond-mark" aria-hidden="true" />
+      <span className="afh-source-diamond-label">
+        {copy.label(kinds.length)}
+      </span>
     </button>
   );
 }

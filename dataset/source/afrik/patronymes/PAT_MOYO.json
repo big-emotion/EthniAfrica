@@ -35,14 +35,14 @@
     {
       "peopleId": "PPL_SHONA",
       "status": "attested",
-      "sourceRefs": ["nhaka-moyo-totem"]
+      "sourceRefs": ["nhaka-moyo-totem", "junod-1934-ndau"]
     }
   ],
   "countries": [
     {
       "countryId": "ZWE",
       "status": "attested",
-      "sourceRefs": ["forebears-moyo"]
+      "sourceRefs": ["forebears-moyo", "junod-1934-ndau"]
     }
   ],
   "alliances": [],
@@ -65,6 +65,30 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Ressource culturelle communautaire consultée directement. Elle présente Moyo comme un totem shona associé au cœur et en donne plusieurs chidawo. Faute d'auteur identifié et d'appareil critique, cette proposition est conservée au niveau non vérifié."
+    },
+    {
+      "sourceKey": "louw-1915-chikaranga",
+      "title": "A Manual of the Chikaranga Language, with Grammar, Exercises, Useful Phrases and Vocabulary",
+      "url": "https://archive.org/details/amanualchikaran00louwgoog",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Bulawayo, Philpott & Collins, 1915 ; exemplaire numérisé par Google, lu sur Internet Archive le 18 octobre 2026. P. 94, exercice 64, phrase 3 : « This woman's heart is very sore » ; p. 125, corrigé : « Moyo wo mukadzi uyu u no rgwadza gikuru »."
+    },
+    {
+      "sourceKey": "junod-1934-ndau",
+      "title": "A contribution to the study of Ndau demography, totemism, and history",
+      "url": "https://archive.org/details/african-studies_1934-03_8_1",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Bantu Studies, vol. 8, no 1, mars 1934, p. 17-38 ; numéro lu sur Internet Archive le 18 octobre 2026. P. 24-25, à propos du clan ndau Moyani, dont le totem est le mouton : « The etymology of the name seems to show again a connection between this clan (Moyani) and the great Moyo group of the Shona »."
+    },
+    {
+      "sourceKey": "liesegang-2014-borders",
+      "title": "East and Northeast of the Borders of the Southeastern Bantu: Partly visible population movements and invisible lineage states",
+      "url": "https://archive.org/details/borders-of-se-bantu-400-1900",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Manuscrit de juillet 2014, diffusé « without full revision of the bibliography and language » ; l'auteur, historien, enseigne à l'université Eduardo Mondlane, à Maputo. Lu en texte intégral sur Internet Archive le 18 octobre 2026. P. 19 : Changamire « seems to have been a member of the Moyo clan, but not of the same lineage as the ruler » ; p. 37 : « the Moyo of Madanda under Nyamunda (near modern Machaze) were already present around 1510-15 in their area south of Sofala » ; « They seem to have had a link to the even earlier original founders of the Great Zimbabwe state »."
     }
   ],
   "gaps": [
@@ -88,5 +112,143 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Moyo », « SHONA », « surname », « clan », « etymology », « transmission », « alliance » et « obituary », ainsi que la page Forebears dédiée et les travaux ou notices propres au nom cités dans la fiche n'ont établi aucune règle propre à l'ensemble des emplois de Moyo permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Moyo est un nom de clan shona, celui d'un totem que l'on rattache au cœur, moyo dans les langues shona. Il est écrit comme nom de groupe dès 1934. Les sources lues ne disent pas depuis quand il sert de nom de famille ; une lecture de l'origine du clan est présentée plus bas.",
+    "names": [
+      {
+        "nameText": "Moyo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan shona, au totem rattaché au cœur, écrit comme nom de groupe dès 1934.",
+        "periodLabel": "Écrit dès 1934 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Moyo désigne un clan shona dont le totem, le mutupo, tire son image du cœur, selon la ressource communautaire Nhaka yevaShona. En chikaranga, une langue shona, moyo est bien le mot du cœur. Les sources lues ne disent pas depuis quand ce nom sert de nom de famille ; une lecture de l'origine du clan est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Nhaka yevaShona — Nhetembo dzemadzinza",
+                "author": "Nhaka yevaShona",
+                "year": 2007,
+                "url": "https://shonahistory.github.io/2007/06/13/nhetembo-dzemadzinza/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Ressource communautaire en ligne sur l'histoire des Shona, page datée du 13 juin 2007, sans auteur nommé, relue le 18 octobre 2026. Rubrique « Moyo (heart) » : « The imagery of the Moyo totem is derived from the heart » ; noms de louange donnés : Chirandu (Mamoyo), Moyondizvo, Bvumavaranda, Sinyoro, Nematombo, Wadyegora, Muzukuru, Mateere, Wakapiwa, Murozvi mukuru, Sayi, Zariro, Yavajena, Dhehwa."
+              },
+              {
+                "title": "A Manual of the Chikaranga Language, with Grammar, Exercises, Useful Phrases and Vocabulary",
+                "author": "C. S. Louw",
+                "year": 1915,
+                "url": "https://archive.org/details/amanualchikaran00louwgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 94 et 125",
+                "notes": "Bulawayo, Philpott & Collins, 1915 ; exemplaire numérisé par Google, lu sur Internet Archive le 18 octobre 2026. P. 94, exercice 64, phrase 3 : « This woman's heart is very sore » ; p. 125, corrigé : « Moyo wo mukadzi uyu u no rgwadza gikuru »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2007,
+              "to": 2007,
+              "label": "Publié en 2007"
+            },
+            "era": "modern",
+            "statement": "Le nom Moyo s'accompagne de noms de louange, les zvidawo, que cite Nhaka yevaShona : parmi eux, Moyondizvo, Sinyoro, Wadyegora et Murozvi mukuru.",
+            "sources": [
+              {
+                "title": "Nhaka yevaShona — Nhetembo dzemadzinza",
+                "author": "Nhaka yevaShona",
+                "year": 2007,
+                "url": "https://shonahistory.github.io/2007/06/13/nhetembo-dzemadzinza/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Ressource communautaire en ligne sur l'histoire des Shona, page datée du 13 juin 2007, sans auteur nommé, relue le 18 octobre 2026. Rubrique « Moyo (heart) » : « The imagery of the Moyo totem is derived from the heart » ; noms de louange donnés : Chirandu (Mamoyo), Moyondizvo, Bvumavaranda, Sinyoro, Nematombo, Wadyegora, Muzukuru, Mateere, Wakapiwa, Murozvi mukuru, Sayi, Zariro, Yavajena, Dhehwa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1510,
+              "to": 1515,
+              "label": "Vers 1510-1515"
+            },
+            "era": "polity",
+            "statement": "Le nom Moyo est celui d'un clan que l'historien Gerhard Liesegang dit déjà présent vers 1510-1515 au sud de Sofala, dans le Madanda, sous le chef Nyamunda, près de l'actuelle Machaze, au Mozambique. Il ne dit pas sous quel nom les documents de l'époque désignent ces gens.",
+            "sources": [
+              {
+                "title": "East and Northeast of the Borders of the Southeastern Bantu: Partly visible population movements and invisible lineage states",
+                "author": "Gerhard Liesegang",
+                "year": 2014,
+                "url": "https://archive.org/details/borders-of-se-bantu-400-1900",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 37",
+                "notes": "Manuscrit de juillet 2014, diffusé « without full revision of the bibliography and language » ; l'auteur, historien, enseigne à l'université Eduardo Mondlane, à Maputo. Lu en texte intégral sur Internet Archive le 18 octobre 2026. P. 19 : Changamire « seems to have been a member of the Moyo clan, but not of the same lineage as the ruler » ; p. 37 : « the Moyo of Madanda under Nyamunda (near modern Machaze) were already present around 1510-15 in their area south of Sofala » ; « They seem to have had a link to the even earlier original founders of the Great Zimbabwe state »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1934,
+              "to": 1934,
+              "label": "Écrit en 1934"
+            },
+            "era": "colonial",
+            "statement": "Le nom Moyo apparaît par écrit comme nom d'un groupe de clans en 1934, chez Henri-Philippe Junod, qui parle du « grand groupe Moyo des Shona » et lui rattache, par la forme de son nom, le clan ndau Moyani. C'est la plus ancienne trace de ce nom de clan que le projet connaît ; le clan existait déjà avant elle.",
+            "formAsWritten": "Moyo",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Henri-Philippe Junod",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A contribution to the study of Ndau demography, totemism, and history",
+                "author": "Henri-Philippe Junod",
+                "year": 1934,
+                "url": "https://archive.org/details/african-studies_1934-03_8_1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 25",
+                "notes": "Bantu Studies, vol. 8, no 1, mars 1934, p. 17-38 ; numéro lu sur Internet Archive le 18 octobre 2026. P. 24-25, à propos du clan ndau Moyani, dont le totem est le mouton : « The etymology of the name seems to show again a connection between this clan (Moyani) and the great Moyo group of the Shona »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "Proposé en 2014"
+            },
+            "era": "modern",
+            "statement": "Le clan Moyo serait lié aux fondateurs de l'État du Grand Zimbabwe, selon Gerhard Liesegang : Changamire, un dignitaire de cet État, aurait été membre du clan Moyo, sans être du lignage du souverain, et les Moyo du Madanda auraient un lien avec les premiers fondateurs de cet État.",
+            "hypothesisGroup": "origine du clan Moyo",
+            "sources": [
+              {
+                "title": "East and Northeast of the Borders of the Southeastern Bantu: Partly visible population movements and invisible lineage states",
+                "author": "Gerhard Liesegang",
+                "year": 2014,
+                "url": "https://archive.org/details/borders-of-se-bantu-400-1900",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 19 et 37",
+                "notes": "Manuscrit de juillet 2014, diffusé « without full revision of the bibliography and language » ; l'auteur, historien, enseigne à l'université Eduardo Mondlane, à Maputo. Lu en texte intégral sur Internet Archive le 18 octobre 2026. P. 19 : Changamire « seems to have been a member of the Moyo clan, but not of the same lineage as the ruler » ; p. 37 : « the Moyo of Madanda under Nyamunda (near modern Machaze) were already present around 1510-15 in their area south of Sofala » ; « They seem to have had a link to the even earlier original founders of the Great Zimbabwe state »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

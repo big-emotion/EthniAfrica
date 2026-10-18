@@ -3,6 +3,7 @@ import { describe, expect, it, vi } from "vitest";
 
 import type { SearchCompanionsData } from "@/api/v2/schemas/searchCompanions";
 import { SearchFeed } from "@/components/search/SearchFeed";
+import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
 import { getLocalizedRoute } from "@/lib/routing";
 import {
   LINGALA_HISTORY,
@@ -183,10 +184,22 @@ describe("SearchFeed — the page no longer ends on the timeline", () => {
         "Aucune source sur le nom zzqxv n’est enregistrée dans le projet."
       )
     ).toBeInTheDocument();
-    // The page's own « Nous nous sommes trompés ? » card is its invitation.
+    const closing = container.querySelector("[data-name-closing]")!;
+    expect(closing).toHaveTextContent(nameClosingCopy.fr.conviction);
+    // The verdict's « Proposer une source » is the page's one invitation, so
+    // the band asks for nothing (brief 12, part A).
+    expect(closing.textContent).not.toContain("Signaler une erreur");
+    const invitation = screen.getByRole("button", {
+      name: "Proposer une source",
+    });
+    const next = container.querySelector("[data-name-next]")!;
+    expect(invitation.closest('[data-feed-block="verdict"]')).not.toBeNull();
     expect(
-      container.querySelector("[data-name-closing]")?.textContent
-    ).not.toContain("Signaler une erreur");
-    expect(container.querySelector("[data-name-next]")).not.toBeNull();
+      invitation.compareDocumentPosition(closing) &
+        Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+    expect(
+      closing.compareDocumentPosition(next) & Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
   });
 });

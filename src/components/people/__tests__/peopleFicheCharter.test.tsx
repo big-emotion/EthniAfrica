@@ -1,9 +1,14 @@
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+
 import { render, screen, cleanup } from "@testing-library/react";
 import { afterEach, describe, expect, it } from "vitest";
 
 import { PeopleDetailViewV2 } from "@/components/people/PeopleDetailViewV2";
 import { PeopleFicheTitle } from "@/components/people/PeopleFicheTitle";
 import { FicheSection } from "@/components/fiche/FicheSection";
+import { peopleRecord } from "@/components/fiche/__tests__/corpusRecords";
+import { ficheNameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import type { PeopleDetail } from "@/types/afrik-frontend";
 import type { PeopleNamesDossier } from "@/api/v2/schemas/names";
 
@@ -579,5 +584,79 @@ describe("people fiche — the answer card (DEC-068)", () => {
     expect(traces?.textContent).toContain("Peuls ou Peulhs");
     expect(traces?.textContent).toContain("p. 23");
     expect(traces?.hasAttribute("open")).toBe(false);
+  });
+});
+
+/**
+ * Brief 10 §2 (REQ-153 as amended 2026-10-17), board people-fula: the long
+ * reference chapters fold after their first tile, and nothing about the
+ * people's own names, nor the map, the closing band, the way on or the
+ * sources, ever does. The chapter order above is the one REQ-155 fixes.
+ */
+describe("people fiche — what folds and what never does", () => {
+  afterEach(cleanup);
+
+  function renderFula() {
+    const raw = JSON.parse(
+      readFileSync(
+        join(
+          process.cwd(),
+          "dataset/source/afrik/peuples/FLG_ATLANTIQUE/PPL_FULA.json"
+        ),
+        "utf8"
+      )
+    ) as { nameHistory?: unknown };
+    return render(
+      <PeopleDetailViewV2
+        language="fr"
+        people={peopleRecord("PPL_FULA")}
+        nameHistory={ficheNameHistory(raw, "PPL_FULA")}
+        resolvedFamilyName="Atlantique"
+        onward={<FicheSection title="Poursuivre">Suite</FicheSection>}
+      />
+    );
+  }
+
+  const chapter = (container: HTMLElement, title: string) =>
+    container.querySelector(`[data-fiche-section="${title}"]`) as HTMLElement;
+
+  const closedLabel = (container: HTMLElement, title: string) =>
+    chapter(container, title).querySelector(
+      'details.ea-fold > summary [data-when="closed"]'
+    )?.textContent;
+
+  // @req REQ-153
+  it("folds « Langue », « Histoire » and « Culture et société » behind a control naming what they hide", () => {
+    const { container } = renderFula();
+
+    expect(closedLabel(container, "Langue")).toBe(
+      "+ Voir aussi : Famille, Parlers, Rôle véhiculaire"
+    );
+    expect(closedLabel(container, "Histoire")).toBe(
+      "+ Voir aussi : Royaumes & chefferies, Influences extérieures, Conflits & alliances, Diaspora"
+    );
+    expect(closedLabel(container, "Culture et société")).toBe(
+      "+ Voir aussi : Symboles, Arts et musique, Spiritualités, Organisation"
+    );
+  });
+
+  // @req REQ-153
+  it("never folds the chapters about its names, the map, the closing band, the way on or the sources", () => {
+    const { container } = renderFula();
+
+    for (const title of [
+      "D'où vient le nom ?",
+      "Les autres noms",
+      "Où vit ce peuple",
+      "Poursuivre",
+      "Sources",
+    ]) {
+      expect(chapter(container, title)).not.toBeNull();
+      expect(chapter(container, title).querySelector(".ea-fold")).toBeNull();
+    }
+    for (const block of ["[data-name-sources]", "[data-name-closing]"]) {
+      expect(container.querySelector(block)).not.toBeNull();
+      expect(container.querySelector(`${block} .ea-fold`)).toBeNull();
+    }
   });
 });

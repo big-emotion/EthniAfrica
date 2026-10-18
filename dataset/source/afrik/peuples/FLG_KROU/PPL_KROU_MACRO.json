@@ -176,5 +176,186 @@
         "notes": "Texte de l'édition de 1911, cité pour les graphies Krus, Croos, Kroomen et Krooboys."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Krou réunit des peuples de la forêt et de la côte du sud du Liberia et du sud-ouest de la Côte d'Ivoire, comme les Bété, les Dida, les Wè, les Grebo ou les Bassa. Ce n'est pas le nom de tout cet ensemble dans leurs langues : dès 1900, Maurice Delafosse note que ces peuples ne se connaissent pas de nom commun, et chacun porte le sien. Le nom d'un peuple de la côte a été étendu par les Européens à toute cette famille, et l'État ivoirien s'en sert encore dans son recensement. Les sources ne s'accordent pas sur l'origine du mot ; nous les présentons plus bas.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Krou",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des navigateurs européens, puis l'administrateur colonial Maurice Delafosse pour tout l'ensemble",
+        "shortLine": "Le nom d'un peuple de la côte, étendu par les Européens à toute une famille de peuples.",
+        "periodLabel": "Pour tout l'ensemble depuis 1900 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Krou sert encore à l'État ivoirien. Son recensement de 2021 range les Ivoiriens en grands groupes ethniques ; les Krou en forment 9,1 %, à côté des Akan, des Mandé du Nord, des Gur ou Voltaïques et des Mandé du Sud.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Répartition des Ivoiriens par grand groupe ethnique selon le sexe, RGPH 2021",
+                "author": "Agence nationale de la statistique (ANStat), Côte d'Ivoire",
+                "year": 2021,
+                "url": "https://data.gouv.ci/datasets/repartition-des-ivoiriens-par-grand-groupe-ethnique",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Portail officiel des données ouvertes de Côte d'Ivoire. Présentation du jeu de données lue le 18 octobre 2026, mise à jour du 11 mars 2026 : « Les groupes Krou et Mandé du Sud occupent des parts plus réduites mais significatives, représentant respectivement 9,1 % et 8,6 % de l'ensemble »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1996,
+              "to": 1996,
+              "label": "Proposée en 1996"
+            },
+            "era": "modern",
+            "statement": "Le nom Krou viendrait de Krawi, le nom d'un des peuples de la côte, entre les Bassa et les Grebo, selon l'historien Yves Person. Ce nom aurait ensuite été étendu à toute la famille de langues dont ce peuple était le membre le plus connu.",
+            "hypothesisGroup": "origine du nom Krou",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 24 : États et peuples de Sénégambie et de haute Guinée",
+                "author": "Yves Person",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 699",
+                "notes": "UNESCO, volume dirigé par J. F. A. Ajayi, lu dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "statement": "Le nom Krou est gardé par Maurice Delafosse pour toute la famille de peuples qu'il décrit, du bas Bandama au Liberia. Il explique que ces peuples n'ont pas, dans leur langue, de mot pour désigner leur « race » ou leur « famille », et que ce nom « a l'avantage d'être connu de tous les Européens ».",
+            "aspect": "imposition",
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "administrateur colonial, auteur des vocabulaires"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 66-67",
+                "notes": "Paris, Ernest Leroux, 1904. Lu dans la numérisation d'Internet Archive le 18 octobre 2026 ; le numéro de page imprimé a été lu sur l'image de la p. 67, la p. 66 se déduit des pages voisines. « les indigènes n'ayant pas dans leur langue de mot pour désigner leur race ou leur famille, j'ai conservé le terme de « Krou », qui a l'avantage d'être connu de tous les Européens » (p. 67). Texte d'un administrateur colonial."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "Rapportée en 1904"
+            },
+            "statement": "Le nom Krou viendrait de Grao, Krao ou Kra, le nom du groupe qui vit autour de Sinoe et de Settra-Krou, au Liberia : ses hommes auraient été les premiers à s'engager sur les navires européens, et les navigateurs auraient ensuite étendu ce nom aux autres groupes de la même famille. C'est l'explication de Sigismund Koelle et de J. Payne, selon Maurice Delafosse.",
+            "hypothesisGroup": "origine du nom Krou",
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 66",
+                "notes": "Paris, Ernest Leroux, 1904. Lu dans la numérisation d'Internet Archive le 18 octobre 2026 ; la p. 66 se déduit des pages voisines, dont le numéro imprimé a été lu sur l'image. Nous n'avons pas lu les textes de Koelle et de Payne auxquels l'auteur renvoie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "Proposée en 1900"
+            },
+            "statement": "Le nom Krou viendrait du mot anglais crewmen, « hommes d'équipe », donné aux gens de cette côte qui s'engageaient sur les navires, selon Maurice Delafosse en 1900. Il abandonne ensuite cette explication.",
+            "hypothesisGroup": "origine du nom Krou",
+            "sources": [
+              {
+                "title": "Note sur les familles Krou, Mandé et Agni-Achanti (Afrique occidentale), Bulletin du Muséum d'histoire naturelle, vol. 6",
+                "author": "Maurice Delafosse",
+                "year": 1900,
+                "url": "https://archive.org/details/biostor-268194",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 334",
+                "notes": "Lu dans la numérisation d'Internet Archive le 18 octobre 2026 ; le numéro de page imprimé, 334, a été lu sur l'image. L'auteur, administrateur colonial, classe les peuples en « familles » et parle de « race »."
+              },
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 67",
+                "notes": "Paris, Ernest Leroux, 1904. Lu dans la numérisation d'Internet Archive le 18 octobre 2026 ; le numéro de page imprimé a été lu sur l'image. « J'ai moi-même soutenu cette seconde hypothèse, mais depuis une objection s'est présentée à mon esprit »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "Proposée en 1904"
+            },
+            "statement": "Le nom Krou viendrait de krao, prononcé « krou » par les Portugais, premiers navigateurs sur cette côte ; les Anglais l'auraient adopté parce que, suivi de man, il leur rappelait leur mot crew, selon Maurice Delafosse.",
+            "hypothesisGroup": "origine du nom Krou",
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 67",
+                "notes": "Paris, Ernest Leroux, 1904. Lu dans la numérisation d'Internet Archive le 18 octobre 2026 ; le numéro de page imprimé a été lu sur l'image. « Je préfère supposer que les Portugais ont fait de krao le son « krou » »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "1900"
+            },
+            "statement": "Le nom Krou désigne une famille de peuples chez l'administrateur colonial Maurice Delafosse, qui la fait s'étendre le long de la côte, de Monrovia environ jusqu'au rio Fresco. Il écrit que ces peuples « ne se connaissent pas de nom de race ou de famille », et qu'en pratique on réserve le nom de Krou à la tribu de la région de Sinoe, au Liberia. C'est la plus ancienne trace de ce nom pour tout cet ensemble de peuples que le projet connaît. Ces peuples existaient déjà avant lui, chacun sous son propre nom.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Note sur les familles Krou, Mandé et Agni-Achanti (Afrique occidentale), Bulletin du Muséum d'histoire naturelle, vol. 6",
+                "author": "Maurice Delafosse",
+                "year": 1900,
+                "url": "https://archive.org/details/biostor-268194",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 334",
+                "notes": "Lu dans la numérisation d'Internet Archive le 18 octobre 2026 ; le numéro de page imprimé, 334, a été lu sur l'image. « Eux-mêmes ne se connaissent pas de nom de race ou de famille. Dans la pratique, on réserve généralement le nom de Krou ou Kroomen à la tribu qui habite la région de Sinoe ». L'auteur, administrateur colonial, classe les peuples en « familles » et parle de « race »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -14,6 +14,8 @@ vi.mock("next/navigation", () => ({
 
 afterEach(cleanup);
 
+const SEARCH = getLocalizedRoute("fr", "search");
+
 type Account = NameHistory["names"][number]["accounts"][number];
 
 const source = (title: string): Account["sources"][number] => ({
@@ -182,5 +184,102 @@ describe("LanguageDetailViewV2 — the language fiche of brief 3", () => {
     ).toContain(
       "« Lingala (locuteurs) » désigne ici l’ensemble des gens qui parlent le lingala"
     );
+  });
+});
+
+// Brief 10 §1, approved 2026-10-17: docs/design/mockups/site/language-*.dc.html.
+describe("LanguageDetailViewV2 — the link to the story of its name", () => {
+  // @req REQ-198
+  it("ends « L’histoire des noms » with the link, after the explanations, before « Les sources du nom … »", () => {
+    const { container } = render(
+      <LanguageDetailViewV2 data={lingala} language="fr" />
+    );
+
+    const chapter = container.querySelector(
+      '[data-fiche-section="L’histoire des noms"]'
+    ) as HTMLElement;
+    const link = within(chapter).getByRole("link", {
+      name: /^Suivre l'histoire du nom Lingala/,
+    });
+    expect(link).toHaveAttribute("href", `${SEARCH}/lingala`);
+    expect(chapter.lastElementChild).toBe(link.closest(".ea-story"));
+    const readings = chapter.querySelector("[data-readings]") as Node;
+    expect(
+      readings.compareDocumentPosition(link) & Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+    const sources = container.querySelector("[data-name-sources]") as Node;
+    expect(
+      link.compareDocumentPosition(sources) & Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+  });
+
+  // @req REQ-198
+  it("spells the name as its story does, Kihavu and not the h1's Havu", () => {
+    const havu: LanguagePageData = {
+      ...lingala,
+      id: "hav",
+      name: "Havu",
+      isoCode639_3: "hav",
+      nameEn: "Havu",
+      alternateNames: ["Kihavu", "Haavu"],
+      nameHistory: {
+        summary: "Le nom kihavu désigne la langue des Havu.",
+        names: [
+          { ...LINGALA.names[0], nameText: "Kihavu", accounts: [] },
+          { ...LINGALA.names[0], nameText: "Haavu", accounts: [] },
+        ],
+      } as NameHistory,
+    };
+    render(<LanguageDetailViewV2 data={havu} language="fr" />);
+
+    // Kihavu is not the name hav is filed under, so it has no address of its
+    // own: the link stays the search page's reading of it.
+    expect(
+      screen.getByRole("link", { name: /^Suivre l'histoire du nom Kihavu/ })
+    ).toHaveAttribute("href", `${SEARCH}?q=Kihavu`);
+  });
+
+  // dyu is filed « Dioula »; its story leads with « Julakan », which neither
+  // the filed name nor its alternate names carry, so the result page for
+  // « Julakan » does not answer it. The fixture adds « Julakan » as a
+  // spelling alias on purpose: the search row leaves that column out, so an
+  // alias makes no page answer.
+  // @req REQ-198
+  it("draws no link on dyu, whose result page for « Julakan » does not answer it", () => {
+    const dioula: LanguagePageData = {
+      ...lingala,
+      id: "dyu",
+      name: "Dioula",
+      isoCode639_3: "dyu",
+      nameEn: "Dyula",
+      alternateNames: ["Diula", "Djula", "Dyoula", "Jula"],
+      spellingAliases: ["Julakan"],
+      nameHistory: {
+        summary: "Le nom julakan désigne la langue des marchands dioula.",
+        names: [
+          { ...LINGALA.names[0], nameText: "Julakan", accounts: [] },
+          { ...LINGALA.names[0], nameText: "Dioula", accounts: [] },
+        ],
+      } as NameHistory,
+    };
+    render(<LanguageDetailViewV2 data={dioula} language="fr" />);
+
+    expect(
+      screen.queryByRole("link", { name: /Suivre l'histoire du nom/ })
+    ).toBeNull();
+  });
+
+  // @req REQ-198
+  it("draws no link on a fiche without a name story", () => {
+    render(
+      <LanguageDetailViewV2
+        data={{ ...lingala, nameHistory: null }}
+        language="fr"
+      />
+    );
+
+    expect(
+      screen.queryByRole("link", { name: /Suivre l'histoire du nom/ })
+    ).toBeNull();
   });
 });

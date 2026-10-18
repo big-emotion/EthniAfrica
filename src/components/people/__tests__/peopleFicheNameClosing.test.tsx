@@ -1,9 +1,16 @@
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+
 import { cleanup, render, screen, within } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
 
+import { peopleRecord } from "@/components/fiche/__tests__/corpusRecords";
 import { PeopleDetailViewV2 } from "@/components/people/PeopleDetailViewV2";
 import { NameFicheSourcesBlock } from "@/components/search/timeline/NameClosing";
-import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
+import {
+  ficheNameHistory,
+  type NameHistory,
+} from "@/lib/afrik/parsers/nameHistoryParser";
 import { getLocalizedRoute } from "@/lib/routing";
 import { PEUL_HISTORY } from "@/lib/search/__fixtures__/nameTimelineFixtures";
 import type { PeopleDetail } from "@/types/afrik-frontend";
@@ -30,6 +37,8 @@ vi.mock("next/navigation", () => ({
 }));
 
 afterEach(cleanup);
+
+const SEARCH = getLocalizedRoute("fr", "search");
 
 /** Bassa as the corpus tells it: one name, an oral account among four. */
 const BASSA: NameHistory = {
@@ -176,5 +185,88 @@ describe("PeopleDetailViewV2 — the end of the fiche (brief 2)", () => {
     expect(
       screen.getByRole("link", { name: "Compléter cette page" })
     ).toBeInTheDocument();
+  });
+});
+
+/** A people's name history as the loader reads it from the corpus. */
+function corpusNameHistory(path: string, id: string): NameHistory {
+  const raw = JSON.parse(
+    readFileSync(
+      join(process.cwd(), "dataset/source/afrik/peuples", path),
+      "utf8"
+    )
+  ) as { nameHistory?: unknown };
+  return ficheNameHistory(raw, id) as NameHistory;
+}
+
+// Brief 10 §1, approved 2026-10-17: docs/design/mockups/site/people-*.dc.html.
+describe("PeopleDetailViewV2 — the link to the story of its name", () => {
+  // @req REQ-198
+  it("ends « D'où vient le nom ? » with the link to its leading name, before « Les autres noms »", () => {
+    const { container } = render(
+      <PeopleDetailViewV2
+        people={peopleRecord("PPL_ZARMA")}
+        language="fr"
+        nameHistory={corpusNameHistory(
+          "FLG_SONGHAY/PPL_ZARMA.json",
+          "PPL_ZARMA"
+        )}
+      />
+    );
+
+    const answer = container.querySelector(
+      `[data-fiche-section="D'où vient le nom ?"]`
+    ) as HTMLElement;
+    const link = within(answer).getByRole("link", {
+      name: /^Suivre l'histoire du nom Zarma/,
+    });
+    expect(link).toHaveAttribute("href", `${SEARCH}/zarma`);
+    expect(answer.lastElementChild).toBe(link.closest(".ea-story"));
+    const others = container.querySelector(
+      '[data-fiche-section="Les autres noms"]'
+    );
+    expect(others).not.toBeNull();
+    expect(
+      link.compareDocumentPosition(others as Node) &
+        Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+  });
+
+  // The board people-fula draws « Suivre l'histoire du nom Fulɓe », but the
+  // result page for « Fulɓe » answers no subject today: the people is filed
+  // « Peul » and its self-name « Fulbe (pluriel), Pullo (singulier) ». The
+  // brief's own rule then holds: no link the page behind it cannot keep.
+  // @req REQ-198
+  it("draws no link on PPL_FULA, whose result page for « Fulɓe » does not answer it", () => {
+    const { container } = render(
+      <PeopleDetailViewV2
+        people={peopleRecord("PPL_FULA")}
+        language="fr"
+        nameHistory={corpusNameHistory(
+          "FLG_ATLANTIQUE/PPL_FULA.json",
+          "PPL_FULA"
+        )}
+      />
+    );
+
+    expect(
+      container.querySelector('[data-fiche-section="D\'où vient le nom ?"]')
+    ).not.toBeNull();
+    expect(
+      screen.queryByRole("link", { name: /Suivre l'histoire du nom/ })
+    ).toBeNull();
+    expect(screen.queryByText(/La page du nom présente/)).toBeNull();
+  });
+
+  // @req REQ-198
+  it("draws no link and no hint on a fiche without a name story", () => {
+    render(
+      <PeopleDetailViewV2 people={peopleRecord("PPL_ZARMA")} language="fr" />
+    );
+
+    expect(
+      screen.queryByRole("link", { name: /Suivre l'histoire du nom/ })
+    ).toBeNull();
+    expect(screen.queryByText(/La page du nom présente/)).toBeNull();
   });
 });
