@@ -160,5 +160,245 @@
         "source_kind": "intergovernmental"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Tuu, ou peuples tuu, réunit des peuples du Botswana, de Namibie et d'Afrique du Sud dont les langues à clics, comme celles du groupe taa, forment la famille tuu. Ce n'est pas le nom d'un peuple : aucune source que nous avons lue ne donne un nom que ces peuples se donneraient tous ensemble, et chacun porte le sien. C'est un nom de linguiste, tiré d'un mot de ces langues qui veut dire « les gens » ; on a aussi parlé de khoïsan du Sud. Nous présentons ces noms plus bas.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Tuu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Le linguiste Tom Güldemann, d'après un mot de ces langues",
+        "shortLine": "Un nom de linguiste de 2005, tiré d'un mot de ces langues qui veut dire « les gens ».",
+        "periodLabel": "Depuis 2005",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par l'auteur"
+            },
+            "statement": "Le nom Tuu reprend un mot ancien, tuu, « les gens », dont toutes les langues de la famille assez bien connues gardent une trace, selon le linguiste Tom Güldemann. Il le trouve dans le dictionnaire de Dorothea Bleek, qui traduit tu par « homme » et par « qui ».",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Studies in Tuu (Southern Khoisan), University of Leipzig Papers on Africa, Languages and Literatures, no 23",
+                "author": "Tom Güldemann",
+                "year": 2005,
+                "url": "https://ul.qucosa.de/api/qucosa%3A33604/attachment/ATT-0/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Leipzig, Université de Leipzig, 2005. PDF lu le 18 octobre 2026 ; les numéros de page sont ceux imprimés sur les pages.",
+                "page": "p. 4-5"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1971,
+              "to": 2005,
+              "label": "Depuis 1971"
+            },
+            "statement": "Le nom Tuu suit une habitude des linguistes, qui nomment ces familles de langues d'après leur mot pour « personne, gens » : khoe, ju, !ui, taa. Cette habitude remonte aux travaux d'Ernst O. J. Westphal et d'Oswin Köhler, en 1971, selon Tom Güldemann.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Studies in Tuu (Southern Khoisan), University of Leipzig Papers on Africa, Languages and Literatures, no 23",
+                "author": "Tom Güldemann",
+                "year": 2005,
+                "url": "https://ul.qucosa.de/api/qucosa%3A33604/attachment/ATT-0/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Leipzig, Université de Leipzig, 2005. PDF lu le 18 octobre 2026 ; les numéros de page sont ceux imprimés sur les pages.",
+                "page": "p. 4"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "2005"
+            },
+            "era": "modern",
+            "statement": "Le nom Tuu est proposé par Tom Güldemann pour la famille qu'on appelait khoïsan du Sud. Selon lui, « du Sud » est faux, puisque les langues les plus au sud sont des parlers khoekhoe, d'une autre famille, et ce nom laisse croire à une parenté de toutes les langues dites khoïsan, qu'aucune méthode admise n'a établie. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il réunit existaient déjà avant lui, chacun sous son nom.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Studies in Tuu (Southern Khoisan), University of Leipzig Papers on Africa, Languages and Literatures, no 23",
+                "author": "Tom Güldemann",
+                "year": 2005,
+                "url": "https://ul.qucosa.de/api/qucosa%3A33604/attachment/ATT-0/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Leipzig, Université de Leipzig, 2005. PDF lu le 18 octobre 2026 ; les numéros de page sont ceux imprimés sur les pages. « The use of a geographical designation “southern” in the majority of the above terms has several defects ».",
+                "page": "p. 3-4"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2000,
+              "to": 2000,
+              "label": "2000"
+            },
+            "era": "modern",
+            "statement": "On parle alors de !ui-taa pour cette famille, d'après le mot « personne » de ses deux grands groupes, chez Tom Güldemann et Rainer Voßen, selon Tom Güldemann.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Studies in Tuu (Southern Khoisan), University of Leipzig Papers on Africa, Languages and Literatures, no 23",
+                "author": "Tom Güldemann",
+                "year": 2005,
+                "url": "https://ul.qucosa.de/api/qucosa%3A33604/attachment/ATT-0/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Leipzig, Université de Leipzig, 2005. PDF lu le 18 octobre 2026 ; les numéros de page sont ceux imprimés sur les pages.",
+                "page": "p. 3-4"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Khoïsan du Sud",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des savants européens et américains, d'après le nom Khoisan",
+        "shortLine": "L'ancien nom géographique de cette famille, qu'une partie des linguistes a abandonné.",
+        "periodLabel": "Écrit dès 1930 selon Güldemann ; ancien",
+        "accounts": [
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "statement": "Le nom khoïsan du Sud correspond, chez Joseph Greenberg, au « san du sud », l'un des trois groupes qu'il distingue dans les langues à clics d'Afrique australe. C'est, écrit-il, celui qui présente la plus grande diversité, avec un nombre considérable de langues distinctes.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 336"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1930,
+              "label": "1928-1930"
+            },
+            "statement": "Le nom khoïsan du Sud est formé sur Khoisan, que l'anthropologue Leonhard Schultze forge en 1928 pour la « souche raciale » commune aux « Bushmen » et aux Khoekhoe, selon Isaac Schapera, qui l'adopte en 1930 comme nom commun de ces deux peuples. Khoisan unit Khoi-Khoin, le nom que se donnent les Khoekhoe, et San, celui qu'ils donnent aux « Bushmen ».",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, 1930. Lu dans la numérisation de la Digital Library of India sur Internet Archive le 18 octobre 2026 ; les numéros de page imprimés ont été lus sur l'image. « The term Khoisan, recently coined by Schultze to denote the racial stock to which the Bushmen and the Hottentots belong, has therefore been accepted here as a convenient generic name for these two peoples » (p. 5) ; la note 1 dit le mot formé de Khoi-Khoin et de San, et ajoute que les seconds « have no collective name of their own ». Le titre et le texte emploient les noms que les Européens donnaient alors à ces peuples ; nous ne les reprenons qu'entre guillemets.",
+                "page": "p. 5 et note 1"
+              },
+              {
+                "title": "The Kx'a Family: A New Khoisan Genealogy, Journal of Asian and African Studies, no 79",
+                "author": "Bernd Heine et Henry Honken",
+                "year": 2010,
+                "url": "https://doi.org/10.15026/57434",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Tokyo University of Foreign Studies, 2010. PDF lu dans le dépôt de l'université le 18 octobre 2026 ; les numéros de page sont ceux imprimés sur les pages. « The term “Khoisan” was first proposed by the anthropologist Leonhard Schultze (1928) and adopted in African linguistics by Westermann (1935) ».",
+                "page": "p. 8"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1963,
+              "label": "1930 et 1963"
+            },
+            "statement": "Le nom khoïsan du Sud apparaît, sous sa forme anglaise Southern Khoisan, chez Isaac Schapera en 1930, puis chez Joseph Greenberg en 1963, selon le tableau des noms de cette famille que dresse Tom Güldemann. Dans le livre de Schapera, nous n'avons lu que « groupe du Sud ». C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il réunit existaient déjà avant lui.",
+            "formAsWritten": "Southern Khoisan",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Studies in Tuu (Southern Khoisan), University of Leipzig Papers on Africa, Languages and Literatures, no 23",
+                "author": "Tom Güldemann",
+                "year": 2005,
+                "url": "https://ul.qucosa.de/api/qucosa%3A33604/attachment/ATT-0/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Leipzig, Université de Leipzig, 2005. PDF lu le 18 octobre 2026 ; les numéros de page sont ceux imprimés sur les pages.",
+                "page": "p. 3, tableau 1"
+              },
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, 1930. Lu dans la numérisation de la Digital Library of India sur Internet Archive le 18 octobre 2026 ; les numéros de page imprimés ont été lus sur l'image. Schapera y écrit « Southern Group » (p. 32) et, au chapitre XV, « Southern Bushman Group » ; nous n'y avons pas trouvé la forme « Southern Khoisan ». Le titre et le texte emploient les noms que les Européens donnaient alors à ces peuples ; nous ne les reprenons qu'entre guillemets.",
+                "page": "p. 31-32"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "1930"
+            },
+            "statement": "On parle alors, pour chacun de ces peuples, de son propre nom. Au Cap, les /xam-ka !ke se nomment « le peuple /xam », et au Griqualand West, les //ŋ !ke, « les gens de la maison », selon Isaac Schapera. Au sud du Bechuanaland, d'autres n'ont pas de nom pour eux-mêmes et on les appelle MaSarwa, le nom tswana de tous les « Bushmen ».",
+            "before": true,
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, 1930. Lu dans la numérisation de la Digital Library of India sur Internet Archive le 18 octobre 2026 ; les numéros de page imprimés ont été lus sur l'image. « the /xam-ka !ke (i.e. /xam people) » ; « The //ŋ !ke (“ home people ”) of Griqualand West and Gordonia » (p. 32) ; « They have no special name for themselves, and are known simply as MaSarwa, the Chwana term for all Bushmen » (p. 33). Le titre et le texte emploient les noms que les Européens donnaient alors à ces peuples ; nous ne les reprenons qu'entre guillemets.",
+                "page": "p. 32-33"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1927,
+              "to": 1930,
+              "label": "1927-1930"
+            },
+            "statement": "On parle alors du « groupe du Sud » des langues des « Bushmen », un nom tiré de leur place sur la carte, que leur donne la linguiste Dorothea Bleek à partir de 1927. Isaac Schapera s'en sert en 1930 pour ranger les tribus elles-mêmes, comme un moyen commode, et note que ces peuples ne semblent pas avoir de nom commun pour eux-mêmes.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, 1930. Lu dans la numérisation de la Digital Library of India sur Internet Archive le 18 octobre 2026 ; les numéros de page imprimés ont été lus sur l'image. « To these the names Southern, Northern, and Central Groups respectively have been applied by Miss D. F. Bleek, on account of their relative geographical distribution. These names may also be used as affording a convenient means of grouping the different tribes » (p. 31-32) ; « The Bushmen do not appear to have any general or collective names for themselves » (p. 31). Le titre et le texte emploient les noms que les Européens donnaient alors à ces peuples ; nous ne les reprenons qu'entre guillemets.",
+                "page": "p. 31-32"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

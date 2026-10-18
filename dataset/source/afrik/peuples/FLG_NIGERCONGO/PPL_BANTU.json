@@ -320,5 +320,185 @@
         "notes": "Chapitre d'un ouvrage universitaire publié. Date le premier emploi du terme par Bleek de 1857 ou 1858 et sa popularisation de la Comparative Grammar de 1862. Consulté le 25 septembre 2026."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le mot Bantou désigne d'abord une famille de langues d'Afrique centrale, orientale et australe ; ce n'est pas le nom d'un peuple. On ne connaît aucun nom que tous les peuples qui parlent ces langues se donneraient eux-mêmes : chacun se nomme par son propre nom. Un linguiste a tiré ce mot d'un mot de ces langues qui veut dire « les gens ». En Afrique du Sud, l'apartheid en a fait un nom officiel pour les Africains, qui l'ont rejeté. Nous présentons plus bas l'histoire de ce mot.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Bantou",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Le linguiste allemand Wilhelm Bleek, d'après un mot de ces langues",
+        "shortLine": "Un mot de linguiste, tiré d'un mot qui veut dire « les gens » ; ce n'est pas le nom d'un peuple.",
+        "periodLabel": "Écrit depuis 1858",
+        "accounts": [
+          {
+            "period": {
+              "from": 1990,
+              "to": 1990,
+              "label": "1990"
+            },
+            "era": "modern",
+            "statement": "Le nom Bantou ne désigne « ni un peuple, ni une société, ni une culture », écrivent Samwiri Lwanga-Lunyiigo et Jan Vansina : l'étiquette n'est que linguistique. Ils mettent en garde contre un « mythe bantu », né comme le mythe « hamite » d'une confusion entre langue, culture et race.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 6 : Les peuples bantuphones et leur expansion",
+                "author": "Samwiri Lwanga-Lunyiigo et Jan Vansina",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume. Une note de l'éditeur signale que les deux auteurs ne partagent pas toutes leurs conclusions.",
+                "page": "p. 186"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1977,
+              "label": "Vers 1960, puis à partir de 1977"
+            },
+            "era": "modern",
+            "statement": "Le nom Bantou remplace vers 1960 le mot « Native » dans l'usage officiel de l'Afrique du Sud de l'apartheid. Les Africains l'ont pris en aversion, parce qu'il était lié à l'apartheid et à un traitement inférieur ; à partir de 1977, « black » le remplace peu à peu, selon South African History Online, qui juge correct et courtois le mot « African ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Defining the term Bantu",
+                "author": "South African History Online",
+                "year": 2011,
+                "url": "https://www.sahistory.org.za/article/defining-term-bantu",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Article publié le 31 mars 2011, d'après un essai de Kees van der Waal, lu en ligne le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1959,
+              "to": 1959,
+              "label": "1959"
+            },
+            "era": "modern",
+            "statement": "Le nom Bantou devient sous l'apartheid un mot de loi : en 1959, le Bantu Self-Government Act regroupe les Africains dans des « foyers nationaux », les bantoustans, selon David Chanaiwa. Cette politique visait, écrit-il, à diviser le nationalisme africain en réveillant les rivalités entre peuples.",
+            "aspect": "imposition",
+            "formAsWritten": "Bantu",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 10 : L'Afrique australe",
+                "author": "David Chanaiwa",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 283"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1940,
+              "to": 1949,
+              "label": "Années 1940"
+            },
+            "era": "modern",
+            "statement": "Le nom Bantou sert aussi, dans les années 1940, à dire l'unité des Noirs d'Afrique du Sud : un journal militant, Umsebenzi, écrit que « the Bantu », les Bantous, doivent exiger l'égalité des droits, selon South African History Online.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Defining the term Bantu",
+                "author": "South African History Online",
+                "year": 2011,
+                "url": "https://www.sahistory.org.za/article/defining-term-bantu",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Article publié le 31 mars 2011, d'après un essai de Kees van der Waal, lu en ligne le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1935,
+              "to": 1935,
+              "label": "1935"
+            },
+            "era": "modern",
+            "statement": "Le nom Bantou désigne des peuples, et non plus seulement des langues, dans l'inventaire des « Bantu Tribes » d'Afrique du Sud que publie en 1935 l'ethnologue du gouvernement, N. J. van Warmelo, pour le ministère des Affaires indigènes. Il y écrit que le terme, « choisi presque au hasard », s'est imposé dans le vocabulaire savant parce qu'il répondait à un besoin.",
+            "aspect": "imposition",
+            "formAsWritten": "Bantu Tribes",
+            "sources": [
+              {
+                "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+                "author": "N. J. van Warmelo",
+                "year": 1935,
+                "url": "https://repository.up.ac.za/handle/2263/77107",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 59",
+                "notes": "Pretoria, Government Printer, 1935 ; Union sud-africaine, ministère des Affaires indigènes, Ethnological Publications, vol. V. L'auteur y signe comme ethnologue du gouvernement. Lu le 18 octobre 2026 dans la numérisation de l'Université de Pretoria (2020). Le numéro de cette page, qui ouvre la troisième partie, n'est pas imprimé : il est déduit des pages voisines, 58 et 60."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1858,
+              "label": "1858"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bantou apparaît par écrit en 1858, sous la forme « The Bantu Family », dans le catalogue des livres de linguistique du gouverneur du Cap, George Grey, que rédige Wilhelm Bleek : il y nomme une famille de langues, pas des peuples. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qui parlent ces langues existaient bien avant lui.",
+            "formAsWritten": "The Bantu Family",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Library of His Excellency Sir George Grey, K.C.B. Philology, vol. 1, part 1 : South Africa",
+                "author": "Wilhelm Heinrich Immanuel Bleek",
+                "year": 1858,
+                "url": "https://archive.org/details/libraryofhisexce01grey",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 35-36",
+                "notes": "Catalogue rédigé par Wilhelm Bleek, 1858. Lu dans la numérisation d'Internet Archive le 18 octobre 2026 ; la section « The Bantu Family » commence p. 35."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Bantou vient d'un mot qui veut dire « les gens » dans ces langues : Wilhelm Bleek, qui reconnaît en 1862 la parenté de ces langues, en a tiré le nom de leur famille, selon Samwiri Lwanga-Lunyiigo et Jan Vansina.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 6 : Les peuples bantuphones et leur expansion",
+                "author": "Samwiri Lwanga-Lunyiigo et Jan Vansina",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume. Une note de l'éditeur signale que les deux auteurs ne partagent pas toutes leurs conclusions.",
+                "page": "p. 166"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bantu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": []
+      }
+    ]
   }
 }

@@ -162,5 +162,288 @@
         "source_kind": "community"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Gur, ou Voltaïques, réunit des peuples du bassin des Volta et des savanes voisines, au Burkina Faso, au Ghana, au Togo, au Bénin et dans le nord de la Côte d'Ivoire, comme les Mossi, les Dagomba, les Gourmantché ou les Dagara. Ce n'est pas le nom d'un peuple : aucune source que nous avons lue ne donne un nom que ces peuples se donneraient tous ensemble, et chacun porte le sien. Ces deux noms viennent de linguistes et d'un administrateur colonial, qui ont classé ces peuples d'après leurs langues ; l'État ivoirien s'en sert encore dans son recensement. Un linguiste ghanéen a proposé un autre nom, Mabia, pour une partie de ces langues. Nous présentons ces noms plus bas.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Gur",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des linguistes européens, d'abord pour des langues",
+        "shortLine": "Un nom de linguistes pour des langues, appliqué ensuite aux peuples qui les parlent.",
+        "periodLabel": "Pour des peuples depuis 1980 au moins ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Gur sert encore à l'État ivoirien. Son recensement de 2021 range les Ivoiriens en grands groupes ethniques ; l'un d'eux, « Gur/Voltaïque », compte 4 834 900 personnes, à côté des Akan, des Mandé du Nord, des Krou et des Mandé du Sud.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Répartition des Ivoiriens par grand groupe ethnique selon le sexe, RGPH 2021",
+                "author": "Agence nationale de la statistique (ANStat), Côte d'Ivoire",
+                "year": 2021,
+                "url": "https://data.gouv.ci/datasets/repartition-des-ivoiriens-par-grand-groupe-ethnique",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Portail officiel des données ouvertes de Côte d'Ivoire. Présentation du jeu de données lue le 18 octobre 2026, mise à jour du 11 mars 2026 : « Les groupes Mandé du Nord et Gur/Voltaïque suivent avec des poids démographiques respectifs de 4 455 058 et 4 834 900 personnes »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom Gur renvoie, pour le linguiste David Dalby, à l'un de ces grands groupes de langues, comme l'ouest-atlantique, le kwa ou le bénoué-congo, dont l'unité n'a jamais été démontrée. Il compare le maintien de ces « divisions arbitraires » sur la carte des langues d'Afrique aux frontières coloniales arbitraires imposées à la carte politique du continent.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie II : Carte linguistique de l'Afrique",
+                "author": "David Dalby",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 344"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom Gur désigne des peuples chez Théophile Obenga, qui cite « les peuples Mande, Gur, Kwa » parmi ceux que la famille de langues niger-congo, « si jamais elle a été bien établie », relierait par des liens très anciens. C'est la plus ancienne trace de ce nom pour des peuples que le projet connaît. Ces peuples existaient déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 4 : Sources et techniques spécifiques de l'histoire africaine : aperçu général",
+                "author": "Théophile Obenga",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 108"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1927,
+              "to": 1927,
+              "label": "1927"
+            },
+            "era": "colonial",
+            "statement": "On parle alors de langues gur : le linguiste allemand Diedrich Westermann distingue en 1927 un sous-groupe gur parmi ses langues soudanaises occidentales, selon Joseph Greenberg.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 327"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Explication non datée"
+            },
+            "statement": "Le nom Gur viendrait des noms de plusieurs langues du groupe qui commencent par gur-, comme le gurma ou le gurenɛ, selon le linguiste Rolf Theil. Il attribue ce nom à l'africaniste allemand Gottlob Adolf Krause, en 1895.",
+            "sources": [
+              {
+                "title": "Store norske leksikon — gurspråk",
+                "author": "Rolf Theil",
+                "year": null,
+                "url": "https://snl.no/gurspr%C3%A5k",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Encyclopédie norvégienne en ligne, article signé par un professeur émérite de linguistique de l'université d'Oslo, lu le 18 octobre 2026 (mise à jour du 7 septembre 2026) : « Termen gur blei føreslått i 1895 av den tyske afrikanisten Gottlob Adolf Krause […], på grunnlag av at fleire språk i denne gruppa har namn som byrjar med gur-, til dømes gurma og gurenɛ ». Nous n'avons pas lu le texte de Krause."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Voltaïques",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "L'administrateur colonial Maurice Delafosse",
+        "shortLine": "Un nom tiré de la Volta, donné en 1912 à une « famille » de peuples d'une colonie française.",
+        "periodLabel": "Depuis 1912",
+        "accounts": [
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Voltaïques, ou gur, désigne pour Michel Izard des sociétés du bassin des Volta, mais il renvoie « strictement » à un classement des langues. Il met en garde : les langues et les cultures « voltaïques » ne se recouvrent pas. Les Bwa, par exemple, parlent une langue gur mais partagent la culture manden de leurs voisins bobo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 9 : Les peuples et les royaumes de la boucle du Niger et du bassin des Volta du XIIe au XVIe siècle",
+                "author": "Michel Izard",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 258 et p. 260"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Voltaïques réunit des peuples qui portent chacun leur propre nom. Maurice Delafosse écrit qu'il a donné à chacun des sept groupes de sa famille voltaïque le nom de son peuple le plus connu, sans faire de ce peuple l'ancêtre des autres. Il note que les Mossi s'appellent eux-mêmes Mô-sé.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 128-129",
+                "notes": "Paris, Émile Larose, 1912 ; ouvrage d'un administrateur colonial, lu dans l'édition numérique du Projet Gutenberg le 18 octobre 2026. Les pages sont celles des repères de pagination de cette édition, établie d'après les images de la HathiTrust ; elles n'ont pas été vérifiées sur l'image. « Les Mossi s'appellent eux mêmes Mô-sé ou plus rarement Mô-si » (p. 129)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Voltaïques apparaît, sous la forme « famille voltaïque », chez l'administrateur colonial Maurice Delafosse. Il écrit avoir choisi ce nom parce que cette famille vit pour l'essentiel dans le bassin de la Volta. Il classe ainsi les quarante peuples de la colonie du Haut-Sénégal-Niger par « races » et par « familles », et compte 2 292 088 « indigènes » de famille voltaïque, près de la moitié des habitants. C'est la plus ancienne trace de ce nom que le projet connaît. Ces peuples existaient déjà avant lui, chacun sous son propre nom.",
+            "formAsWritten": "famille voltaïque",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "administrateur colonial, auteur du livre"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 113, p. 128 et p. 143",
+                "notes": "Paris, Émile Larose, 1912 ; ouvrage d'un administrateur colonial, lu dans l'édition numérique du Projet Gutenberg le 18 octobre 2026. Les pages sont celles des repères de pagination de cette édition, établie d'après les images de la HathiTrust ; elles n'ont pas été vérifiées sur l'image. « J'ai donné le nom de voltaïque à la très importante famille ethnique dont les membres forment presque la moitié de la population totale du Haut-Sénégal-Niger ; ce nom m'a paru justifié par le fait que le domaine de cette famille est sensiblement localisé au bassin de la Volta » (p. 128)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mabia",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Le linguiste ghanéen Adams Bodomo",
+        "shortLine": "Un nom proposé par un linguiste ghanéen, fait de deux mots de ces langues : mère et enfant.",
+        "periodLabel": "Écrit dès 2017",
+        "accounts": [
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Mabia désigne aussi des personnes : Johannes Mursell et Katharina Hartmann, deux linguistes de l'université de Francfort, saluent l'intérêt croissant des « membres de la société mabia » pour l'étude des langues de leurs cultures. Ils l'écrivent à propos du premier manuel consacré à ce groupe de langues.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Review of: Bodomo, Adams, Hasiyatu Abubakari and Samuel Alhassan Issah (2020). Handbook of the Mabia Languages of West Africa",
+                "author": "Johannes Mursell et Katharina Hartmann",
+                "year": 2020,
+                "url": "https://journalofwestafricanlanguages.org/downloads/send/139-volume-47-number-2/745-review-of-bodomo-adams-hasiyatu-abubakari-and-samuel-alhassan-issah-2020-handbook-of-the-mabia-languages-of-west-africa-glienicke-galda-verlag",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 108 et p. 114",
+                "notes": "Journal of West African Languages, vol. 47, n° 2, 2020. Lu dans le PDF de la revue le 18 octobre 2026 ; la première page ne porte pas de numéro, p. 108 se déduit de la suivante. « an increasing scientific interest from members of the Mabia society to investigate properties of the languages of their cultures » (p. 114)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par le linguiste"
+            },
+            "statement": "Le nom Mabia est formé de deux mots courants dans ces langues, ma, « mère », et bie, bia ou biiga, « enfant », selon le linguiste Rolf Theil. Il a été proposé par le linguiste ghanéen Adams Bodomo pour cette branche des langues gur.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Store norske leksikon — gurspråk",
+                "author": "Rolf Theil",
+                "year": null,
+                "url": "https://snl.no/gurspr%C3%A5k",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Encyclopédie norvégienne en ligne, article signé par un professeur émérite de linguistique de l'université d'Oslo, lu le 18 octobre 2026 (mise à jour du 7 septembre 2026) : « Termen mabia er sett saman av orda ma 'mor' og bie/bia/biiga 'barn' ». L'article renvoie au chapitre d'Adams Bodomo (2020), que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Mabia figure dans l'annonce d'un atelier « Mabia (Gur) », le deuxième du nom, tenu à l'université de Vienne en novembre 2017. Adams Bodomo y présente la genèse du terme, et des chercheurs venus surtout d'universités du Ghana y parlent des langues mabia. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "formAsWritten": "Mabia (Gur)",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Mabia Workshop II: 1-2 Nov. 2017 (African Studies Department, University of Vienna, Austria)",
+                "author": "Hasiyatu Abubakari",
+                "year": 2017,
+                "url": "https://lists.univie.ac.at/pipermail/pling/2017-October/000601.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "message du 19 octobre 2017",
+                "notes": "Annonce diffusée sur la liste PLing de l'université de Vienne, lue le 18 octobre 2026 : « We would like to announce the upcoming Mabia (Gur) Workshop/Conference II » ; communication d'Adams Bodomo : « Mabia: its etymological genesis, geographical spread, and some salient genetic features »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -127,5 +127,239 @@
         "notes": "Source de la part chrétienne de la population égyptienne, donnée pour l'ensemble des confessions chrétiennes et non pour les seuls Coptes."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Copte désigne les chrétiens d'Égypte, qui le revendiquent eux-mêmes : leur Église se dit Église copte orthodoxe. Le mot a d'abord désigné l'Égypte et ses habitants, puis la population restée chrétienne après la conquête arabe. Avant cette conquête, les chrétiens d'Égypte se nommaient Rmnkēme, « les gens de la Terre noire ». Les sources ne s'accordent pas sur l'origine du mot copte ; nous présentons leurs explications plus bas.",
+    "names": [
+      {
+        "nameText": "Copte",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "shortLine": "Le nom des chrétiens d'Égypte, qu'ils revendiquent ; il a d'abord voulu dire « égyptien ».",
+        "periodLabel": "Écrit sous une forme proche dès le IIe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom copte est celui que se donnent aujourd'hui les chrétiens d'Égypte : l'Église copte orthodoxe d'Alexandrie parle des « Coptes » quand elle raconte sa propre histoire, jusqu'aux événements de 2013.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Coptic History",
+                "author": "Église copte orthodoxe d'Alexandrie",
+                "year": null,
+                "url": "https://copticorthodox.church/en/coptic-church/coptic-history/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page d'histoire du site officiel de l'Église copte orthodoxe, en anglais, lue le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Copte désigne en français une personne de la communauté chrétienne d'Égypte, qui a gardé pour sa liturgie la langue de l'ancienne Égypte, selon le Dictionnaire de l'Académie française.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionnaire de l'Académie française, 9e édition, article copte",
+                "author": "Académie française",
+                "year": null,
+                "url": "https://www.dictionnaire-academie.fr/article/A9C4179",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Article lu le 18 octobre 2026 sur le site du Dictionnaire de l'Académie française : étymologie et définition du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par les auteurs"
+            },
+            "statement": "Le nom copte a d'abord désigné l'Égypte et ses habitants. Après la conquête arabe de 641, il a servi à distinguer les conquérants musulmans des habitants du pays, en grande majorité chrétiens ; en trois siècles, ces chrétiens sont devenus une minorité, et le mot a pris un sens à la fois ethnique et chrétien, selon Pierre du Bourguet. Son origine est discutée ; les explications sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Copt, The Coptic Encyclopedia",
+                "author": "Pierre du Bourguet",
+                "year": null,
+                "url": "https://ccdl.claremont.edu/digital/collection/cce/id/516",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 599-601",
+                "notes": "Lu le 18 octobre 2026 dans la Claremont Coptic Encyclopedia, version en ligne de la Coptic Encyclopedia (CE, p. 599a-601a). La version en ligne ne marque pas les changements de page à l'intérieur de l'article."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1200,
+              "to": 1600,
+              "label": "XIIIe-XVIe siècles"
+            },
+            "era": "polity",
+            "statement": "Le nom copte désigne la minorité chrétienne d'Égypte chez les croisés du XIIIe siècle, puis chez les voyageurs européens de la fin du XVIe siècle qui s'intéressent aux manuscrits des monastères coptes. Il garde depuis ce sens à la fois ethnique et chrétien, selon Pierre du Bourguet.",
+            "sources": [
+              {
+                "title": "Copt, The Coptic Encyclopedia",
+                "author": "Pierre du Bourguet",
+                "year": null,
+                "url": "https://ccdl.claremont.edu/digital/collection/cce/id/516",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 599-601",
+                "notes": "Lu le 18 octobre 2026 dans la Claremont Coptic Encyclopedia, version en ligne de la Coptic Encyclopedia (CE, p. 599a-601a). La version en ligne ne marque pas les changements de page à l'intérieur de l'article."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1600,
+              "to": 1699,
+              "label": "XVIIe siècle"
+            },
+            "statement": "Le nom copte entre en français au XVIIe siècle, adapté du latin coptita, selon le Dictionnaire de l'Académie française.",
+            "sources": [
+              {
+                "title": "Dictionnaire de l'Académie française, 9e édition, article copte",
+                "author": "Académie française",
+                "year": null,
+                "url": "https://www.dictionnaire-academie.fr/article/A9C4179",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Article lu le 18 octobre 2026 sur le site du Dictionnaire de l'Académie française : étymologie et définition du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 100,
+              "to": 199,
+              "label": "IIe siècle"
+            },
+            "statement": "Le nom copte a une forme proche, gibtith, dans plusieurs passages du Talmud dès le IIe siècle, selon Martin Krause cité par Rodolphe Kasser. C'est la plus ancienne trace de ce nom que le projet connaît. Les habitants de l'Égypte existaient déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Language(s), Coptic, The Coptic Encyclopedia",
+                "author": "Rodolphe Kasser",
+                "year": null,
+                "url": "https://ccdl.claremont.edu/digital/collection/cce/id/2025",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section sur le mot copte",
+                "notes": "Lu le 18 octobre 2026 dans la Claremont Coptic Encyclopedia, version en ligne de la Coptic Encyclopedia (CE, p. A145a-151b). L'auteur cite W. Vycichl (1983) et M. Krause (1979), que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom copte viendrait du grec Aigyptios, « égyptien » : les Arabes, maîtres de l'Égypte à partir de 641, l'auraient réduit à ses consonnes, d'où l'arabe qubtī ou qibt, selon Pierre du Bourguet, Rodolphe Kasser et le Dictionnaire de l'Académie française. Le mot grec viendrait lui-même du nom égyptien du sanctuaire de Ptah à Memphis, « la maison de l'esprit de Ptah », selon les deux premiers. Pierre du Bourguet note qu'aucun texte ne prouve encore le passage par l'arabe.",
+            "hypothesisGroup": "origine du nom copte",
+            "sources": [
+              {
+                "title": "Copt, The Coptic Encyclopedia",
+                "author": "Pierre du Bourguet",
+                "year": null,
+                "url": "https://ccdl.claremont.edu/digital/collection/cce/id/516",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 599",
+                "notes": "Lu le 18 octobre 2026 dans la Claremont Coptic Encyclopedia, version en ligne de la Coptic Encyclopedia (CE, p. 599a-601a). La version en ligne ne marque pas les changements de page à l'intérieur de l'article."
+              },
+              {
+                "title": "Language(s), Coptic, The Coptic Encyclopedia",
+                "author": "Rodolphe Kasser",
+                "year": null,
+                "url": "https://ccdl.claremont.edu/digital/collection/cce/id/2025",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section sur le mot copte",
+                "notes": "Lu le 18 octobre 2026 dans la Claremont Coptic Encyclopedia, version en ligne de la Coptic Encyclopedia (CE, p. A145a-151b). L'auteur cite W. Vycichl (1983) et M. Krause (1979), que nous n'avons pas lus."
+              },
+              {
+                "title": "Dictionnaire de l'Académie française, 9e édition, article copte",
+                "author": "Académie française",
+                "year": null,
+                "url": "https://www.dictionnaire-academie.fr/article/A9C4179",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Article lu le 18 octobre 2026 sur le site du Dictionnaire de l'Académie française : étymologie et définition du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom copte viendrait du nom de la ville de Coptos, aujourd'hui Qift, en Haute-Égypte, selon une explication que rapporte Pierre du Bourguet. Il la rejette : la ville n'a jamais été un centre copte particulier.",
+            "hypothesisGroup": "origine du nom copte",
+            "sources": [
+              {
+                "title": "Copt, The Coptic Encyclopedia",
+                "author": "Pierre du Bourguet",
+                "year": null,
+                "url": "https://ccdl.claremont.edu/digital/collection/cce/id/516",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 599",
+                "notes": "Lu le 18 octobre 2026 dans la Claremont Coptic Encyclopedia, version en ligne de la Coptic Encyclopedia (CE, p. 599a-601a). La version en ligne ne marque pas les changements de page à l'intérieur de l'article."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Rmnkēme",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": "cop",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnaient les chrétiens d'Égypte avant la conquête arabe : « les gens de la Terre noire ».",
+        "periodLabel": "Avant la conquête arabe",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant la conquête arabe"
+            },
+            "era": "polity",
+            "statement": "Le nom Rmnkēme est celui que se donnaient les chrétiens d'Égypte avant la conquête arabe, en sahidique, l'un des parlers coptes. Il veut dire « les gens de la Terre noire » : la terre sombre et cultivable de la vallée et du delta du Nil, par opposition aux déserts, selon Rodolphe Kasser.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Language(s), Coptic, The Coptic Encyclopedia",
+                "author": "Rodolphe Kasser",
+                "year": null,
+                "url": "https://ccdl.claremont.edu/digital/collection/cce/id/2025",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section sur le mot copte",
+                "notes": "Lu le 18 octobre 2026 dans la Claremont Coptic Encyclopedia, version en ligne de la Coptic Encyclopedia (CE, p. A145a-151b). L'auteur cite W. Vycichl (1983) et M. Krause (1979), que nous n'avons pas lus."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

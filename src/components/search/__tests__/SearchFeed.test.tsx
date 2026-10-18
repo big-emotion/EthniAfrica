@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 
-import { render, screen } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, expect, it, vi } from "vitest";
 
@@ -841,5 +841,285 @@ describe("SearchFeed", () => {
       screen.getByRole("link", { name: "Peul du Massina" })
     );
     expect(onResultNavigate).toHaveBeenCalledWith("peopleGroup", 1);
+  });
+});
+
+/** A fiche whose filed name carries the corpus line of that same form. */
+function ficheWithLine(
+  type: SearchResult["type"],
+  id: string,
+  name: string,
+  shortLine?: string,
+  overrides: Partial<SearchResult> = {}
+): SearchResult {
+  return namedResult({
+    type,
+    id,
+    name,
+    nameEn: undefined,
+    exactMatch: false,
+    naming: {
+      forms: [],
+      eras: [],
+      presentation: {
+        forms: shortLine
+          ? [
+              {
+                form: name,
+                selfGiven: null,
+                shortLine,
+                attestations: [],
+                evidence: [],
+              },
+            ]
+          : [],
+        eras: [],
+        disagreements: [],
+        evidence: [],
+      },
+    },
+    ...overrides,
+  });
+}
+
+const BELLO_LINE =
+  "Un nom personnel musulman des Haoussa, qu'une étude dit venu du peul.";
+const KROUMEN_LINE =
+  "Un nom d'abord donné aux marins de la côte, que des peuples de Côte d'Ivoire ont fait leur.";
+
+async function openFichesLens() {
+  await userEvent.click(screen.getByRole("button", { name: /^Fiches/ }));
+}
+
+// Brief 12 part B (approved 2026-10-17): the lens sets the fiches that answer
+// to the searched name apart from the ones found around it, and each card says
+// in its own line what the fiche is about.
+// @req REQ-180
+describe("SearchFeed « Fiches » lens", () => {
+  // @req REQ-180
+  it("lists the fiches on the searched name first, then the ones around it, each with its own line", async () => {
+    const fulbe = { peopleGroupId: "PGRP_FULANI" };
+    const peul = ficheWithLine("people", "PPL_FULA", "Peul", undefined, {
+      ...fulbe,
+      peopleGroupLabel: "Fulbe (Peul / Fulani)",
+      exactMatch: true,
+    });
+    const massina = ficheWithLine(
+      "people",
+      "PPL_FULANI_MASSINA",
+      "Fulbe du Massina (Peuls du Massina / Macina)",
+      undefined,
+      { ...fulbe, peopleGroupLabel: "Fulbe (Peul / Fulani)" }
+    );
+    const bello = ficheWithLine("patronyme", "PAT_BELLO", "Bello", BELLO_LINE);
+    const abdi = ficheWithLine("patronyme", "PAT_ABDI", "Abdi");
+    // Subjects reach the feed as their own objects: they are matched to the
+    // rows by type and id, never by identity.
+    render(
+      <SearchFeed
+        query="peul"
+        language="fr"
+        state="exact"
+        results={[peul, massina, bello, abdi]}
+        subjects={[{ ...peul }, { ...massina }]}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+    await openFichesLens();
+
+    const onName = screen.getByRole("heading", { name: "Sur ce nom · 1" });
+    const around = screen.getByRole("heading", {
+      name: "Autour de ce nom · 2",
+    });
+    expect(
+      onName.compareDocumentPosition(around) & Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+    const note = screen.getByText("Un contexte lié, pas le même nom.");
+    expect(
+      around.compareDocumentPosition(note) & Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+
+    const onNameGroup = screen.getByRole("region", { name: "Sur ce nom · 1" });
+    const group = within(onNameGroup).getByTestId("feed-people-group");
+    expect(group).toHaveTextContent("Fulbe (Peul / Fulani)");
+    expect(group).toHaveTextContent("2 fiches");
+    expect(within(group).getByRole("link", { name: "Peul" })).toBeVisible();
+    expect(
+      within(group).getByRole("link", {
+        name: "Fulbe du Massina (Peuls du Massina / Macina)",
+      })
+    ).toBeVisible();
+
+    const aroundGroup = screen.getByRole("region", {
+      name: "Autour de ce nom · 2",
+    });
+    expect(
+      within(aroundGroup).getByRole("link", { name: /Bello/ })
+    ).toHaveTextContent(BELLO_LINE);
+    expect(
+      within(aroundGroup).getByRole("link", { name: /Abdi/ })
+    ).toHaveTextContent(/^NomAbdi$/);
+
+    expect(screen.queryByText("Fiche EthniAfrica")).toBeNull();
+    expect(
+      screen.queryByText(
+        "Pour aller au fond : chaque fiche, avec toutes ses sources."
+      )
+    ).toBeNull();
+    expect(screen.queryByRole("heading", { name: "Découvrir" })).toBeNull();
+  });
+
+  // @req REQ-180
+  it("shows « Sur ce nom » alone when no other fiche is found", async () => {
+    const kroumen = ficheWithLine(
+      "people",
+      "PPL_KROUMEN",
+      "Kroumen",
+      KROUMEN_LINE,
+      { exactMatch: true }
+    );
+    render(
+      <SearchFeed
+        query="kroumen"
+        language="fr"
+        state="exact"
+        results={[kroumen]}
+        subjects={[kroumen]}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+    await openFichesLens();
+
+    expect(
+      screen.getByRole("heading", { name: "Sur ce nom · 1" })
+    ).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: /Kroumen/ })).toHaveTextContent(
+      KROUMEN_LINE
+    );
+    expect(screen.queryByText(/Autour de ce nom/)).toBeNull();
+    expect(screen.queryByText("Un contexte lié, pas le même nom.")).toBeNull();
+  });
+
+  // A widened search has no subject: « Sur ce nom · 0 » would be a heading
+  // over nothing.
+  // @req REQ-180
+  it("shows « Autour de ce nom » alone on a widened search, never « Sur ce nom · 0 »", async () => {
+    render(
+      <SearchFeed
+        query="wassoulou"
+        language="fr"
+        state="widened"
+        results={[
+          ficheWithLine(
+            "patronyme",
+            "PAT_DIAKITE",
+            "Diakité",
+            "Un des quatre noms de clan des Peuls du Wassoulou ; son origine est incertaine."
+          ),
+          ficheWithLine(
+            "patronyme",
+            "PAT_COULIBALY",
+            "Coulibaly",
+            "Un nom de clan mandingue, écrit Kulibali en bambara ; son origine est discutée."
+          ),
+        ]}
+        subjects={[]}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+    await openFichesLens();
+
+    expect(
+      screen.getByRole("heading", { name: "Autour de ce nom · 2" })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText("Un contexte lié, pas le même nom.")
+    ).toBeInTheDocument();
+    expect(screen.queryByText(/Sur ce nom/)).toBeNull();
+  });
+
+  // No name was searched on a relation browse, so there is nothing to set
+  // apart: one grid, each card with its own line.
+  // @req REQ-180
+  it("lists a relation browse in one ungrouped grid, each card with its own line", async () => {
+    const krou = { languageFamilyName: "Krou" };
+    const peoples = [
+      ficheWithLine(
+        "people",
+        "PPL_BETE",
+        "Bété",
+        "Un nom écrit pour la première fois vers 1901 ; son origine reste discutée.",
+        krou
+      ),
+      ficheWithLine(
+        "people",
+        "PPL_DIDA",
+        "Dida",
+        "Un nom écrit en 1904 sous la forme Dyida ou Dida ; son origine reste inconnue.",
+        krou
+      ),
+      ficheWithLine(
+        "people",
+        "PPL_GODIE",
+        "Godié",
+        "Le nom d'un peuple krou du sud-ouest ivoirien, écrit Godyé dès 1904 ; son origine est discutée.",
+        krou
+      ),
+    ];
+    render(
+      <SearchFeed
+        query=""
+        language="fr"
+        state="widened"
+        results={peoples}
+        subjects={[]}
+        leads={[]}
+        companions={emptyCompanions}
+        relation={{ kind: "family", id: "FLG_KROU" }}
+      />
+    );
+    await openFichesLens();
+
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
+      "Fiches sur Krou"
+    );
+    expect(screen.queryByText(/Sur ce nom/)).toBeNull();
+    expect(screen.queryByText(/Autour de ce nom/)).toBeNull();
+    expect(screen.queryByText("Un contexte lié, pas le même nom.")).toBeNull();
+    expect(screen.queryByRole("heading", { name: "Découvrir" })).toBeNull();
+    expect(screen.getByRole("link", { name: /Bété/ })).toHaveTextContent(
+      "Un nom écrit pour la première fois vers 1901 ; son origine reste discutée."
+    );
+    expect(screen.getByRole("link", { name: /Dida/ })).toHaveTextContent(
+      "Un nom écrit en 1904 sous la forme Dyida ou Dida ; son origine reste inconnue."
+    );
+    expect(screen.getByRole("link", { name: /Godié/ })).toHaveTextContent(
+      "Le nom d'un peuple krou du sud-ouest ivoirien, écrit Godyé dès 1904 ; son origine est discutée."
+    );
+  });
+
+  // The « Tout » shelf of a page with no answer is outside brief 12: it keeps
+  // its heading, its subtitle and its generic line.
+  // @req REQ-180
+  it("leaves the « Tout » shelf of a related-only page as it was", () => {
+    render(
+      <SearchFeed
+        query="wassoulou"
+        language="fr"
+        state="widened"
+        results={[ficheWithLine("patronyme", "PAT_DIAKITE", "Diakité", "x")]}
+        subjects={[]}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+
+    expect(
+      screen.getByRole("heading", { name: "Découvrir" })
+    ).toBeInTheDocument();
+    expect(screen.getByText("Fiche EthniAfrica")).toBeInTheDocument();
   });
 });

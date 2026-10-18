@@ -107,5 +107,143 @@
         "source_kind": "discovery"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Tongas désigne à São Tomé-et-Príncipe les enfants nés dans les îles de serviçais, des travailleurs africains venus sous contrat pour les plantations. On ne sait pas comment ce groupe se nomme lui-même : aucune source que nous avons lue ne le dit. On ne sait pas non plus d'où vient le mot tonga, écrit dès 1895. Nous présentons plus bas ce que les sources disent de ce nom.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Tongas",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom des enfants de serviçais nés dans les îles ; son origine n'est pas documentée.",
+        "usedIn": ["por"],
+        "periodLabel": "Écrit dès 1895 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tongas désigne les enfants nés à São Tomé de serviçais venus d'Afrique : c'est ainsi qu'on a coutume de les identifier, selon les linguistes Jean-Louis Rougé et Emmanuel Schang. On ne sait pas avec certitude d'où vient ce mot.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Classificar, denominar as línguas de São Tomé",
+                "author": "Jean-Louis Rougé et Emmanuel Schang",
+                "year": 2012,
+                "url": "https://repositorio.iscte-iul.pt/handle/10071/4040",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Communication publiée dans les actes du colloque international « São Tomé e Príncipe numa perspectiva interdisciplinar, diacrónica e sincrónica », Lisbonne, ISCTE-IUL et IICT, 2012, p. 633-640. Lue dans le dépôt en ligne de l'ISCTE-IUL.",
+                "page": "p. 637"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1991,
+              "to": 1991,
+              "label": "1991"
+            },
+            "era": "modern",
+            "statement": "Le nom Tongas sert aussi à nommer une façon de parler : Jean-Louis Rougé et Emmanuel Schang appellent « portugais des Tongas » la variété qu'ils décrivent à partir d'un entretien enregistré le 28 mars 1991 à Almas. Ils y écoutent une femme d'environ 80 ans, née à São Tomé de parents eux aussi nés dans l'île.",
+            "sources": [
+              {
+                "title": "Classificar, denominar as línguas de São Tomé",
+                "author": "Jean-Louis Rougé et Emmanuel Schang",
+                "year": 2012,
+                "url": "https://repositorio.iscte-iul.pt/handle/10071/4040",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Communication publiée dans les actes du colloque international « São Tomé e Príncipe numa perspectiva interdisciplinar, diacrónica e sincrónica », Lisbonne, ISCTE-IUL et IICT, 2012, p. 633-640. Lue dans le dépôt en ligne de l'ISCTE-IUL.",
+                "page": "p. 636-637"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "8 juin 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tongas désigne, dans le journal lisboète A Capital, les serviçais « nés dans l'île » : un employé de la compagnie nationale de navigation raconte que, sur 269 serviçais rapatriés de São Tomé à Benguela, en Angola, il y avait « 60 et quelques tongas ». L'article dénonce la mort de dizaines d'entre eux, laissés sans travail autour de Benguela.",
+            "formAsWritten": "tongas, quer dizer, nascidos na ilha",
+            "sources": [
+              {
+                "title": "Algumas dezenas de serviçaes repatriados de S. Thomé morrem de fome nos arredores de Benguella, A Capital, n° 668",
+                "author": "Hermano Neves",
+                "year": 1912,
+                "url": "https://archive.org/details/acapital-n-661ao-n-690",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article de première page du journal républicain du soir A Capital, Lisbonne, 8 juin 1912. Lu dans une numérisation d'Internet Archive déposée par un particulier (copie non officielle). L'article rapporte les propos d'un employé de l'Empresa Nacional de Navegação et parle des travailleurs africains avec le vocabulaire colonial de son temps.",
+                "page": "p. 1"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "1895"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tongas apparaît dans le tableau de la population de l'île de São Tomé que dresse Almada Negreiros : 1 500 « gregorianos, tongas et Noirs de diverses provenances », à côté des Européens, des natifs de l'île et des serviçais. Les gregorianos sont, dit-il, d'anciens esclaves affranchis. C'est la plus ancienne trace de ce nom que le projet connaît ; une note du même livre rapporte qu'un calcul de 1878 comptait déjà des tongas.",
+            "formAsWritten": "tongas",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Historia ethnographica da ilha de S. Thomé",
+                "author": "Almada Negreiros",
+                "year": 1895,
+                "url": "https://archive.org/details/historiaethnogr00negrgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Lisbonne, Antiga Casa Bertrand, José Bastos, 1895. Lu dans la numérisation Google d'Internet Archive ; numéros de page vérifiés sur l'image. La page de titre donne seulement « Almada Negreiros ». La note de la page 121 rapporte que le calcul fait en 1878 par Vicente Pinheiro comptait les tongas, sans dire si Pinheiro employait ce mot. Le livre décrit la population avec le vocabulaire colonial de son temps.",
+                "page": "p. 119 et p. 121"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1875,
+              "to": 1881,
+              "label": "De 1875 à 1881"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tongas n'apparaît pas encore dans les sources que nous avons lues : depuis l'abolition de l'esclavage en 1875, les plantations de São Tomé emploient des travailleurs sous contrat venus d'Angola, du Cap-Vert et du Mozambique, qu'on appelle serviçais, selon Gerhard Seibert. De 1876 à 1881, 7 419 serviçais arrivent dans l'île, selon Almada Negreiros.",
+            "before": true,
+            "sources": [
+              {
+                "title": "São Tomé : o massacre de Batepá (1953-2023)",
+                "author": "Gerhard Seibert",
+                "year": 2023,
+                "url": "https://ces-catalog.ces.uc.pt/ficheiros2/files/BATEPA_74_GERARD_SEIBERT.pdf",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Essai publié le 2 février 2023 par le magazine portugais Setenta e Quatro. Lu le 12 octobre 2026 dans la copie mise en ligne par le Centre d'études sociales de l'université de Coimbra.",
+                "page": "p. 1-2"
+              },
+              {
+                "title": "Historia ethnographica da ilha de S. Thomé",
+                "author": "Almada Negreiros",
+                "year": 1895,
+                "url": "https://archive.org/details/historiaethnogr00negrgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Lisbonne, Antiga Casa Bertrand, José Bastos, 1895. Lu dans la numérisation Google d'Internet Archive ; numéros de page vérifiés sur l'image. La page de titre donne seulement « Almada Negreiros ». La note de la page 121 rapporte que le calcul fait en 1878 par Vicente Pinheiro comptait les tongas, sans dire si Pinheiro employait ce mot. Le livre décrit la population avec le vocabulaire colonial de son temps.",
+                "page": "p. 118"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

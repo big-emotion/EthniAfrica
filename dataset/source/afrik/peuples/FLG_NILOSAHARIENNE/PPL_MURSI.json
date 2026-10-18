@@ -97,5 +97,426 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Mursi désigne un peuple d'éleveurs et de cultivateurs de la basse vallée de l'Omo, dans le sud-ouest de l'Éthiopie, qui se nomme lui-même Mun. Dans les rites et les assemblées, il se dit aussi Tama, et ses voisins lui donnent d'autres noms, comme Ngi-kaalabong. On ne sait pas avec certitude d'où vient le nom Mursi ; nous présentons plus bas ses traces et l'explication proposée.",
+    "names": [
+      {
+        "nameText": "Mun",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "muz",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne lui-même ; au singulier, on dit Muni.",
+        "periodLabel": "Écrit sous une forme proche depuis 1899 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1976,
+              "to": 1976,
+              "label": "1976"
+            },
+            "era": "modern",
+            "statement": "Le nom Mun est celui que se donnent les Mursi, au singulier Muni. David Turton et M. Lionel Bender écrivent pourtant Mursi, pour ne pas ajouter un nom de plus aux noms des peuples de la basse vallée de l'Omo, déjà nombreux et confus.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Mursi, dans The Non-Semitic Languages of Ethiopia",
+                "author": "David Turton et M. Lionel Bender",
+                "year": 1976,
+                "url": "https://www.mursi.org/pdf/turton-bender.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 533 et p. 535",
+                "notes": "Chapitre 22 de l'ouvrage dirigé par M. Lionel Bender, East Lansing, African Studies Center, Michigan State University, 1976, p. 533-561. Lu le 18 octobre 2026 dans la copie déposée sur le site Mursi Online ; pages lues sur l'image de la page imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1973,
+              "to": 1973,
+              "label": "1973"
+            },
+            "era": "modern",
+            "statement": "Le nom Mun est celui que se donnent les Mursi de la vallée de l'Omo, au singulier Muni, selon l'anthropologue David Turton, qui a enquêté parmi eux.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Social Organisation of the Mursi: a pastoral tribe of the Lower Omo Valley, South West Ethiopia",
+                "author": "David Turton",
+                "year": 1973,
+                "url": "https://www.mursi.org/pdf/social-organisation-of-the-mursi.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Thèse de doctorat, Université de Londres, 1973. Lue le 18 octobre 2026 dans la copie déposée sur le site Mursi Online ; les pages sont celles imprimées sur la thèse."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1896,
+              "to": 1899,
+              "label": "Voyage de 1896, publié en 1899"
+            },
+            "era": "polity",
+            "statement": "Le nom Mun a une forme proche, Mûu, dans le récit de l'expédition italienne de Vittorio Bottego : des gens venus parler aux voyageurs au bord de l'Omo se disent Tdamà, et certains disent aussi Mûu, sans que les auteurs sachent si le mot veut dire « gens » ou s'il s'agit d'un nom propre. David Turton y reconnaît en 1973 une forme proche de Mun. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Mûu",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Vittorio Bottego",
+                "role": "officier italien, chef de l'expédition"
+              }
+            ],
+            "sources": [
+              {
+                "title": "L'Omo : viaggio d'esplorazione nell'Africa orientale",
+                "author": "Lamberto Vannutelli et Carlo Citerni",
+                "year": 1899,
+                "url": "https://archive.org/details/lomoviaggiodespl00vann",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 319-320",
+                "notes": "Milan, Hoepli, 1899. Récit de la seconde expédition de Vittorio Bottego, 1895-1897, qui descend l'Omo en juillet et août 1896. Lu le 18 octobre 2026 dans la numérisation d'Internet Archive ; pages lues sur l'image de la page imprimée."
+              },
+              {
+                "title": "The Social Organisation of the Mursi: a pastoral tribe of the Lower Omo Valley, South West Ethiopia",
+                "author": "David Turton",
+                "year": 1973,
+                "url": "https://www.mursi.org/pdf/social-organisation-of-the-mursi.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 29",
+                "notes": "Thèse de doctorat, Université de Londres, 1973. Lue le 18 octobre 2026 dans la copie déposée sur le site Mursi Online ; les pages sont celles imprimées sur la thèse."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Il y a environ deux siècles, selon le récit"
+            },
+            "era": "polity",
+            "statement": "Les ancêtres des Mun vivaient dans les collines de Dirka, sur la rive ouest de l'Omo, avec ceux des Chai, avant de traverser le fleuve il y a environ deux cents ans. Ceux qui firent ce voyage n'étaient pas encore des Mursi : le groupe qui se nomme Mun est né peu à peu de leur installation sur la rive est, selon David Turton et Lugulointheno Jordomo, qui s'appuient sur l'un des récits les plus connus de la tradition orale mursi.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Who are the Mursi?, récit de Lugulointheno Jordomo",
+                "author": "Témoignage de Lugulointheno Jordomo",
+                "year": null,
+                "url": "https://www.mursi.org/pdf/who-are-the-mursi",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "narrative": "La première traversée de l'Omo par les ancêtres des Mursi",
+                "carrier": "Lugulointheno Jordomo, du clan Bumai, de la classe d'âge Geleba",
+                "place": "Pays mursi, basse vallée de l'Omo, Éthiopie",
+                "notes": "Récit dit en 1996 par Lugulointheno Jordomo, aujourd'hui décédé, et publié avec David Turton, dont il est le coauteur, sur le site Mursi Online. Lu le 18 octobre 2026."
+              },
+              {
+                "title": "Who are the Mursi?",
+                "author": "David Turton et Lugulointheno Jordomo",
+                "year": null,
+                "url": "https://www.mursi.org/pdf/who-are-the-mursi",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Texte non daté publié sur le site Mursi Online, hébergé par le département d'anthropologie de l'université de Durham. Lu le 18 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tama",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "muz",
+        "namedBy": null,
+        "shortLine": "Le nom que les Mun se donnent dans les rites et les assemblées ; leurs voisins bodi les appellent ainsi.",
+        "periodLabel": "Écrit sous une forme proche depuis 1899 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par David Turton et Lugulointheno Jordomo"
+            },
+            "era": "modern",
+            "statement": "Le nom Tama, que ces auteurs écrivent Taama, est celui que les Bodi donnent aux Mursi, selon David Turton et Lugulointheno Jordomo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Who are the Mursi?",
+                "author": "David Turton et Lugulointheno Jordomo",
+                "year": null,
+                "url": "https://www.mursi.org/pdf/who-are-the-mursi",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Texte non daté publié sur le site Mursi Online, hébergé par le département d'anthropologie de l'université de Durham. Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1976,
+              "to": 1976,
+              "label": "1976"
+            },
+            "era": "modern",
+            "statement": "Le nom Tama est celui que les Mursi se donnent dans les rites, les assemblées et les débats publics, et leurs voisins bodi les appellent ainsi. Les Tdamà dont parlaient certains auteurs anciens ne sont donc pas un groupe distinct des Mursi, selon David Turton et M. Lionel Bender.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Mursi, dans The Non-Semitic Languages of Ethiopia",
+                "author": "David Turton et M. Lionel Bender",
+                "year": 1976,
+                "url": "https://www.mursi.org/pdf/turton-bender.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 535",
+                "notes": "Chapitre 22 de l'ouvrage dirigé par M. Lionel Bender, East Lansing, African Studies Center, Michigan State University, 1976, p. 533-561. Lu le 18 octobre 2026 dans la copie déposée sur le site Mursi Online ; pages lues sur l'image de la page imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1896,
+              "to": 1899,
+              "label": "Voyage de 1896, publié en 1899"
+            },
+            "era": "polity",
+            "statement": "Le nom Tama a une forme proche, Tdamôo, dans le récit de l'expédition italienne de Vittorio Bottego, qui entre le 2 août 1896 « dans le territoire des Tdamôo », au bord de l'Omo. Quelques jours plus tard, les auteurs écrivent Tdamà. David Turton y reconnaît en 1973 le nom rituel des Mursi. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Tdamôo",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Vittorio Bottego",
+                "role": "officier italien, chef de l'expédition"
+              }
+            ],
+            "sources": [
+              {
+                "title": "L'Omo : viaggio d'esplorazione nell'Africa orientale",
+                "author": "Lamberto Vannutelli et Carlo Citerni",
+                "year": 1899,
+                "url": "https://archive.org/details/lomoviaggiodespl00vann",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 318-319",
+                "notes": "Milan, Hoepli, 1899. Récit de la seconde expédition de Vittorio Bottego, 1895-1897, qui descend l'Omo en juillet et août 1896. Lu le 18 octobre 2026 dans la numérisation d'Internet Archive ; pages lues sur l'image de la page imprimée."
+              },
+              {
+                "title": "The Social Organisation of the Mursi: a pastoral tribe of the Lower Omo Valley, South West Ethiopia",
+                "author": "David Turton",
+                "year": 1973,
+                "url": "https://www.mursi.org/pdf/social-organisation-of-the-mursi.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 29",
+                "notes": "Thèse de doctorat, Université de Londres, 1973. Lue le 18 octobre 2026 dans la copie déposée sur le site Mursi Online ; les pages sont celles imprimées sur la thèse."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mursi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que leur donnent l'administration, les gens des hautes terres et le reste du monde.",
+        "periodLabel": "Écrit sous une forme proche depuis 1899 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par David Turton et Lugulointheno Jordomo"
+            },
+            "era": "modern",
+            "statement": "Le nom Mursi est celui que donnent à ce peuple les cultivateurs des hautes terres, le gouvernement et le reste du monde. Ses voisins emploient des formes proches : les Kara disent Murso et les Daasanach Muruz, selon David Turton et Lugulointheno Jordomo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Who are the Mursi?",
+                "author": "David Turton et Lugulointheno Jordomo",
+                "year": null,
+                "url": "https://www.mursi.org/pdf/who-are-the-mursi",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Texte non daté publié sur le site Mursi Online, hébergé par le département d'anthropologie de l'université de Durham. Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1976,
+              "to": 1976,
+              "label": "1976"
+            },
+            "era": "modern",
+            "statement": "Le nom Mursi est celui que l'administration locale emploie. Les voyageurs et les explorateurs ont aussi écrit Mursu, Murzu, Murzi ou Murdi, selon David Turton et M. Lionel Bender.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Mursi, dans The Non-Semitic Languages of Ethiopia",
+                "author": "David Turton et M. Lionel Bender",
+                "year": 1976,
+                "url": "https://www.mursi.org/pdf/turton-bender.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 533 et p. 535",
+                "notes": "Chapitre 22 de l'ouvrage dirigé par M. Lionel Bender, East Lansing, African Studies Center, Michigan State University, 1976, p. 533-561. Lu le 18 octobre 2026 dans la copie déposée sur le site Mursi Online ; pages lues sur l'image de la page imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1973,
+              "to": 1976,
+              "label": "Proposée en 1973, reprise en 1976"
+            },
+            "era": "modern",
+            "statement": "Le nom Mursi viendrait de murzu, le nom que les Kwegu, chasseurs et piroguiers qui vivent au bord de l'Omo parmi les Mursi, donnent à leurs voisins. Certains des premiers voyageurs l'auraient repris, selon David Turton puis David Turton et M. Lionel Bender.",
+            "hypothesisGroup": "origine du nom Mursi",
+            "sources": [
+              {
+                "title": "The Social Organisation of the Mursi: a pastoral tribe of the Lower Omo Valley, South West Ethiopia",
+                "author": "David Turton",
+                "year": 1973,
+                "url": "https://www.mursi.org/pdf/social-organisation-of-the-mursi.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 29",
+                "notes": "Thèse de doctorat, Université de Londres, 1973. Lue le 18 octobre 2026 dans la copie déposée sur le site Mursi Online ; les pages sont celles imprimées sur la thèse."
+              },
+              {
+                "title": "Mursi, dans The Non-Semitic Languages of Ethiopia",
+                "author": "David Turton et M. Lionel Bender",
+                "year": 1976,
+                "url": "https://www.mursi.org/pdf/turton-bender.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 535",
+                "notes": "Chapitre 22 de l'ouvrage dirigé par M. Lionel Bender, East Lansing, African Studies Center, Michigan State University, 1976, p. 533-561. Lu le 18 octobre 2026 dans la copie déposée sur le site Mursi Online ; pages lues sur l'image de la page imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1896,
+              "to": 1899,
+              "label": "Voyage de 1896, publié en 1899"
+            },
+            "era": "polity",
+            "statement": "Le nom Mursi a une forme proche, Murzù, dans le récit de l'expédition italienne de Vittorio Bottego : les Cherre, au bord de l'Omo, achètent surtout leur ivoire aux « Murzù », comme ils appellent les peuples riverains de l'Omo en amont. C'est la plus ancienne trace sûre de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Murzù",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Vittorio Bottego",
+                "role": "officier italien, chef de l'expédition"
+              }
+            ],
+            "sources": [
+              {
+                "title": "L'Omo : viaggio d'esplorazione nell'Africa orientale",
+                "author": "Lamberto Vannutelli et Carlo Citerni",
+                "year": 1899,
+                "url": "https://archive.org/details/lomoviaggiodespl00vann",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 328-329",
+                "notes": "Milan, Hoepli, 1899. Récit de la seconde expédition de Vittorio Bottego, 1895-1897, qui descend l'Omo en juillet et août 1896. Lu le 18 octobre 2026 dans la numérisation d'Internet Archive ; pages lues sur l'image de la page imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1897,
+              "to": 1898,
+              "label": "Voyage de 1897, publié en 1898"
+            },
+            "era": "polity",
+            "statement": "La forme Murutu figure dans le récit de H. S. H. Cavendish, qui remonte l'Omo en 1897, à propos d'un peuple qu'il dit nombreux, fort et riche. David Turton suppose qu'il s'agit des Mursi ; les sources que nous avons lues ne permettent pas de l'affirmer.",
+            "formAsWritten": "Murutu",
+            "sources": [
+              {
+                "title": "The Social Organisation of the Mursi: a pastoral tribe of the Lower Omo Valley, South West Ethiopia",
+                "author": "David Turton",
+                "year": 1973,
+                "url": "https://www.mursi.org/pdf/social-organisation-of-the-mursi.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 416",
+                "notes": "Thèse de doctorat, Université de Londres, 1973. Lue le 18 octobre 2026 dans la copie déposée sur le site Mursi Online ; les pages sont celles imprimées sur la thèse. L'auteur cite H. S. H. Cavendish, « Through Somaliland and around the south of Lake Rudolf », Geographical Journal, 1898, que nous n'avons pas lu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ngi-kaalabong",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "les Nyangatom",
+        "shortLine": "Le nom que les Nyangatom donnent aux Mun ; les Turkana emploient une forme proche.",
+        "periodLabel": "Écrit sous une forme proche depuis 1973",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par David Turton et Lugulointheno Jordomo"
+            },
+            "era": "modern",
+            "statement": "Le nom Ngi-kaalabong est celui que les Nyangatom donnent aux Mun, selon David Turton et Lugulointheno Jordomo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Who are the Mursi?",
+                "author": "David Turton et Lugulointheno Jordomo",
+                "year": null,
+                "url": "https://www.mursi.org/pdf/who-are-the-mursi",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Texte non daté publié sur le site Mursi Online, hébergé par le département d'anthropologie de l'université de Durham. Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1973,
+              "to": 1973,
+              "label": "1973"
+            },
+            "era": "modern",
+            "statement": "Le nom Ngi-kaalabong a une forme proche, Ngalibong, dans la thèse de David Turton : sur les cartes de l'époque, une chaîne de collines du pays mursi porte ce nom, tiré du nom que les Turkana donnent aux Mursi. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Ngalibong",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Social Organisation of the Mursi: a pastoral tribe of the Lower Omo Valley, South West Ethiopia",
+                "author": "David Turton",
+                "year": 1973,
+                "url": "https://www.mursi.org/pdf/social-organisation-of-the-mursi.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Thèse de doctorat, Université de Londres, 1973. Lue le 18 octobre 2026 dans la copie déposée sur le site Mursi Online ; les pages sont celles imprimées sur la thèse."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

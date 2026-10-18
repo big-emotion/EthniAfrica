@@ -109,5 +109,196 @@
         "source_kind": "encyclopedia"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Winye désigne un peuple du centre-ouest du Burkina Faso, dans la province des Balé, autour de Boromo, ainsi que la langue qu'il parle. Des chercheurs originaires de ce peuple l'emploient, sous la forme Winien dès 1983. D'autres noms existent : Ko et Kolsi, que relèvent les linguistes, et Gourounsi, un nom d'ensemble venu de l'extérieur. La forme Wiyana, que la fiche donne comme nom principal, n'a été retrouvée dans aucune source que nous avons ouverte. Les sources ne disent pas d'où vient le nom Winye ; nous présentons plus bas ce qu'elles disent de ces noms.",
+    "names": [
+      {
+        "nameText": "Winye",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que portent ce peuple des Balé et sa langue ; un auteur winye l'écrit Winien en 1983.",
+        "periodLabel": "Écrit dès 1983 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2007,
+              "to": 2007,
+              "label": "2007"
+            },
+            "era": "modern",
+            "statement": "Le nom Winye désigne un peuple du centre-ouest du Burkina Faso, dans la province des Balé, sur la rive droite de la boucle du Mouhoun, et la langue qu'il parle, selon l'anthropologue Jean-Pierre Jacob. Ce peuple s'est formé à partir de groupes d'origines diverses, peu à peu fondus dans une même langue. Jacob n'explique pas le nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Terres privées, terres communes. Gouvernement de la nature et des hommes en pays winye (Burkina Faso)",
+                "author": "Jean-Pierre Jacob",
+                "year": 2007,
+                "url": "https://www.editions.ird.fr/open_access_download/869/465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 31",
+                "notes": "IRD Éditions, collection « À travers champs », 2007 ; lu le 18 octobre 2026 dans le PDF en libre accès des éditions de l'IRD. La page d'ouverture du chapitre 1 ne porte pas de numéro : le numéro 31 est déduit de la page suivante, numérotée 32."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1990,
+              "to": 1990,
+              "label": "1990"
+            },
+            "era": "modern",
+            "statement": "Le nom Winye est la forme que retient la Bibliothèque nationale de France pour ce peuple, dans une notice créée en 1990. Elle range sous ce nom les formes Ko, Kols, Kolsi, Kos, Wile, Winiama, Winiamas, Winien, Winyema et Winyes, et classe ce peuple parmi les Gourounsi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Notice RAMEAU « Winye (peuple d'Afrique) »",
+                "author": "Bibliothèque nationale de France",
+                "year": 1990,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb12134880w",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice d'autorité créée en 1990, consultée le 18 octobre 2026. Sources citées par la notice : J.-P. Jacob, Le sens des limites (1988) ; J.-C. Tamisier, Dictionnaire des peuples (1998), pour la forme Ko ; D. P. Biebuyck, S. Kelliher et L. McRae, African ethnonyms (1996), pour la forme Winiama."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1983,
+              "to": 1983,
+              "label": "1983"
+            },
+            "era": "modern",
+            "statement": "Le nom Winye a une forme proche, Winien, dans le titre d'un mémoire de maîtrise de S. Damoué, Les Winiens-Winien ma, à l'université de Ouagadougou en 1983. Jean-Pierre Jacob compte Damoué parmi les jeunes universitaires originaires de ce peuple. Nous n'avons lu que ce titre, dans la bibliographie de Jacob. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Winiens-Winien ma",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Terres privées, terres communes. Gouvernement de la nature et des hommes en pays winye (Burkina Faso)",
+                "author": "Jean-Pierre Jacob",
+                "year": 2007,
+                "url": "https://www.editions.ird.fr/open_access_download/869/465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 24, 252",
+                "notes": "IRD Éditions, 2007 ; lu le 18 octobre 2026 dans le PDF en libre accès, pages vérifiées sur le PDF. Page 252, bibliographie : « DAMOUÉ S., 1983 – Les Winiens-Winien ma. Étude des origines et de l'organisation sociale d'une société voltaïque. Mémoire de maîtrise […] université de Ouagadougou ». Page 24 : la société winye a été étudiée « par de jeunes universitaires originaires de l'ethnie », dont Damoué (1983)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ko",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un autre nom de ce peuple et de sa langue, que les linguistes emploient dès 1972.",
+        "periodLabel": "Écrit dès 1972 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ko est l'un des noms que le catalogue Glottolog relève pour la langue winyé, code ISO kst, avec Kõ, Kols et Kolsi. Le catalogue ne dit pas qui emploie ces noms, ni d'où ils viennent.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Winyé (winy1241)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/winy1241",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Page du catalogue Glottolog, lue le 18 octobre 2026 à partir du code ISO kst. Formes relevées : Winye (Glottolog ; Moseley et Asher, 1994), Ko (Ruhlen, 1987), Ko (Winye) (WALS), Ko, Kols, Kolsi, Kõ et Winyé (MultiTree)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1972,
+              "to": 1972,
+              "label": "1972"
+            },
+            "era": "modern",
+            "statement": "Le nom Ko figure dans le titre d'une étude d'A. Prost, Enquête sommaire sur le Ko, langue gourounsi de Haute-Volta, publiée à Dakar en 1972. Nous n'avons lu que ce titre, dans la bibliographie de Jean-Pierre Jacob. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Ko",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Terres privées, terres communes. Gouvernement de la nature et des hommes en pays winye (Burkina Faso)",
+                "author": "Jean-Pierre Jacob",
+                "year": 2007,
+                "url": "https://www.editions.ird.fr/open_access_download/869/465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 262",
+                "notes": "IRD Éditions, 2007 ; lu le 18 octobre 2026 dans le PDF en libre accès, page vérifiée sur le PDF. Bibliographie : « PROST A., 1972 – Enquête sommaire sur le Ko. Langue Gourounsi de Haute-Volta. Dakar, Publications de la Faculté des lettres et sciences humaines de l'université de Dakar, 33 p. » Jacob emploie lui-même le nom Winye."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gourounsi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom d'ensemble venu de l'extérieur, sous lequel les catalogues rangent les Winye.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1990,
+              "to": 1990,
+              "label": "1990"
+            },
+            "era": "modern",
+            "statement": "Le nom Gourounsi est le terme d'ensemble sous lequel la Bibliothèque nationale de France range les Winye, dans sa notice de 1990. La notice n'explique pas ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Notice RAMEAU « Winye (peuple d'Afrique) »",
+                "author": "Bibliothèque nationale de France",
+                "year": 1990,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb12134880w",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice d'autorité créée en 1990, consultée le 18 octobre 2026 : terme générique « Gourounsi (peuple d'Afrique) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2007,
+              "to": 2007,
+              "label": "Rapportée en 2007"
+            },
+            "era": "modern",
+            "statement": "Le nom Gourounsi viendrait d'un sobriquet en moore, la langue des Mossi, qui voudrait dire « gibier de battue », donné aux peuples du sud-ouest du royaume mossi, dont les Winye, selon Jean-Pierre Jacob, qui s'appuie sur D. Liberski-Bagnoud. Jacob le relie aux grandes battues que les Winye de Boromo organisaient avant le jihad et qui pouvaient tourner à la chasse aux esclaves. Ce n'est qu'une des explications proposées pour ce nom.",
+            "hypothesisGroup": "origine du nom Gourounsi",
+            "sources": [
+              {
+                "title": "Terres privées, terres communes. Gouvernement de la nature et des hommes en pays winye (Burkina Faso)",
+                "author": "Jean-Pierre Jacob",
+                "year": 2007,
+                "url": "https://www.editions.ird.fr/open_access_download/869/465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 211",
+                "notes": "IRD Éditions, 2007 ; lu le 18 octobre 2026 dans le PDF en libre accès, page vérifiée sur le PDF : cette pratique des grandes chasses collectives « pourrait expliquer le sobriquet moore [gurunsi] (« gibier de battue ») donné aux populations vivant au sud-ouest du royaume mossi dont les Winye (LIBERSKI-BAGNOUD, 2002 : 29) ». Nous n'avons pas lu Liberski-Bagnoud (2002)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -49,7 +49,7 @@ import { normalizeString } from "@/lib/normalize";
 import { ANSWER_BLOCKS, type FeedBlockId } from "@/lib/search/resultGrammar";
 import type { AnswerKind, WordAnswer } from "@/lib/search/answer";
 import type { NameAnswer } from "@/lib/search/nameAnswer";
-import type { NamingPresentationForm } from "@/lib/search/naming";
+import { formKey, type NamingPresentationForm } from "@/lib/search/naming";
 import { planAnswerSubjects } from "@/lib/search/answerSubjectPlan";
 import { buildRelationSearchHref } from "@/lib/search/relationSearch";
 import { resolveNameOpening } from "@/lib/search/resolveNameOpening";
@@ -247,6 +247,18 @@ function formDetail(
   return text ? { text, evidence: form.evidence[0] } : undefined;
 }
 
+/**
+ * A card's line in the « Fiches » lens: the corpus line of the form that bears
+ * the card's name (brief 12). With no such form, or no line, the card shows
+ * none rather than a generic one.
+ */
+function ficheOwnLine(entry: SearchResult, name: string): string | undefined {
+  const key = formKey(name);
+  return entry.naming?.presentation.forms.find(
+    (form) => formKey(form.form) === key
+  )?.shortLine;
+}
+
 // @req REQ-178
 // @req REQ-180
 export function SearchFeed({
@@ -348,6 +360,22 @@ export function SearchFeed({
         }
   );
   const ficheRows = presentation?.fiches?.items ?? derivedFicheRows;
+  // The « Fiches » lens sets the fiches that answer to the searched name apart
+  // from the ones found around it (brief 12). Subjects arrive as their own
+  // objects, so they are matched by type and id.
+  const subjectKeys = new Set(subjects.map(({ type, id }) => `${type}:${id}`));
+  const answersToName = ({ type, id }: { type: string; id: string }) =>
+    subjectKeys.has(`${type}:${id}`);
+  const lensFicheRows = derivedFicheRows.map((row, index): FeedFicheItem => {
+    const entry = ficheEntries[index];
+    return entry.type === "peopleGroup"
+      ? { ...row, onName: entry.members.some(answersToName) }
+      : {
+          ...row,
+          meta: ficheOwnLine(entry as SearchResult, row.name),
+          onName: answersToName(entry),
+        };
+  });
 
   // A relation browse ("the peoples of the Krou family") only replaces the
   // name-search movement when there is no subject to answer — a query that
@@ -1093,7 +1121,16 @@ export function SearchFeed({
       ),
       stories: renderBlock("plates"),
       quiz: renderBlock("quiz"),
-      fiches: renderBlock("fiches"),
+      fiches: presentation?.fiches?.items ? (
+        renderBlock("fiches")
+      ) : (
+        <FichesBlock
+          lens={isRelationBrowse ? "ungrouped" : "grouped"}
+          items={lensFicheRows}
+          reviewed={Boolean(presentation)}
+          language={language}
+        />
+      ),
     };
     return (
       <SearchFeedLayout
