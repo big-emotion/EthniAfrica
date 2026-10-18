@@ -6,7 +6,7 @@
   },
   "id": "PAT_ONANA",
   "nameMain": "Onana",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Onana",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -60,7 +60,7 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "la recherche web et bibliographique combinant « Onana », « Ewondo », « Cameroun », « patronyme », « anthroponymie », « étymologie », « clan », « transmission », « alliance », « caste », « homonyme » et « nécrologie », les thèses sur l'onomastique béti-ewondo et les catalogues généalogiques, ainsi que la page Forebears dédiée n'ont pas établi que la catégorie de système nominal portée par la fiche provisoire décrive ce nom lui-même ; elle reste une hypothèse de classement et n'est pas transformée en fait."
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom d'homme ewondo, du Cameroun. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant comme un nom de famille. Les Ewondo sont voisins des Fang ; comme pour les noms de personne fang, la fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "alliances",

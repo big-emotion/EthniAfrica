@@ -110,14 +110,14 @@ const FANG_PERSONAL_NAMES = [
 
 // Fang and Beti fiches the ruling does not move: no nameHistory of their own
 // (the rule needs one), a lineage or clan told by an account, or no Fang
-// account at all.
+// account at all. Obiang and Onana, written in wave 25, moved on 2026-10-18
+// (followupsWaves2425Classification.test.ts); Ndong stays, its sources also
+// call it a clan.
 const KEPT_FANG_BETI = [
   ["PAT_OVONO", "clan_name"],
   ["PAT_ESSOMBA", "clan_name"],
   ["PAT_MVONDO", "clan_name"],
   ["PAT_NDONG", "clan_name"],
-  ["PAT_OBIANG", "clan_name"],
-  ["PAT_ONANA", "clan_name"],
 ] as const;
 
 // Ruling of 2026-10-14 on Maghreb names: Ould + the father's name, in
@@ -184,6 +184,27 @@ const HEREDITARY_FAMILY_NAME_FICHES = [
   "PAT_TOE",
   "PAT_WEAH",
   "PAT_ZADI",
+  // Fourth pass, 2026-10-18 (wave 25): followupsWaves2425Classification.test.ts.
+  "PAT_MICHEL",
+  "PAT_FAURE",
+  "PAT_LARUE",
+  "PAT_BARBE",
+  "PAT_JULIE",
+  "PAT_HOAREAU",
+  "PAT_LOUSTAU_LALANNE",
+  "PAT_DUVAL",
+  "PAT_BERENGER",
+  "PAT_GOPAUL",
+  "PAT_BEEHARRY",
+  "PAT_APPADOO",
+  "PAT_KANE",
+  "PAT_BONGO",
+  "PAT_DO_ESPIRITO_SANTO",
+  "PAT_LETSIE",
+  "PAT_COLE",
+  "PAT_COKER",
+  "PAT_COOPER",
+  "PAT_FREEMAN",
 ] as const;
 
 // Of those, the ones whose accounts show a family line.

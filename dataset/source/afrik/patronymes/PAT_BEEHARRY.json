@@ -6,7 +6,7 @@
   },
   "id": "PAT_BEEHARRY",
   "nameMain": "Beeharry",
-  "nameSystem": "clan_name",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Beeharry",
@@ -22,7 +22,7 @@
     }
   ],
   "transmissionMode": "patrilineal",
-  "designatedSocialUnit": "lineage",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],

@@ -6,7 +6,7 @@
   },
   "id": "PAT_DO_ESPIRITO_SANTO",
   "nameMain": "do Espírito Santo",
-  "nameSystem": "clan_name",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "do Espírito Santo",
@@ -28,7 +28,7 @@
     }
   ],
   "transmissionMode": "bilateral",
-  "designatedSocialUnit": "lineage",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],

@@ -6,7 +6,7 @@
   },
   "id": "PAT_KOUNTCHE",
   "nameMain": "Kountché",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Kountché",
@@ -20,12 +20,15 @@
     {
       "spelling": "Kounche",
       "attestations": [
-        { "countryId": "NER", "sourceRefs": ["bornand-2004-kountche"] }
+        {
+          "countryId": "NER",
+          "sourceRefs": ["bornand-2004-kountche"]
+        }
       ]
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [
       {
@@ -109,6 +112,10 @@
     {
       "fieldPath": "homonyms",
       "reason": "Les graphies Kountché, Kounche et Kunce ont été recherchées dans les catalogues d'autorité et la bibliographie zarma ; aucune lignée homonyme d'origine distincte n'a été établie."
+    },
+    {
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait un nom de clan : dans la généalogie que rapporte Sandra Bornand, Kountché est le nom du père de Seyni Kountché, un nom de personne que le fils porte après le sien. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne dit que ce nom passe ensuite aux enfants de Seyni Kountché comme un nom de famille. La fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "transmissionMode",
