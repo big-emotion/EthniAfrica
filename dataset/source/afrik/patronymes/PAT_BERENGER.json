@@ -6,7 +6,7 @@
   },
   "id": "PAT_BERENGER",
   "nameMain": "Bérenger",
-  "nameSystem": "clan_name",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Bérenger",
@@ -19,22 +19,10 @@
           ]
         }
       ]
-    },
-    {
-      "spelling": "Berenger",
-      "attestations": [
-        {
-          "countryId": "MUS",
-          "sourceRefs": [
-            "afrik-candidate-queue",
-            "mauritius-assembly-berenger-roles"
-          ]
-        }
-      ]
     }
   ],
   "transmissionMode": "patrilineal",
-  "designatedSocialUnit": "lineage",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],

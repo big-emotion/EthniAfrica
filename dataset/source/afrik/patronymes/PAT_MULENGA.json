@@ -6,7 +6,7 @@
   },
   "id": "PAT_MULENGA",
   "nameMain": "Mulenga",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Mulenga",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -60,7 +60,7 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "la recherche web et bibliographique combinant « Mulenga », « BEMBA », « surname », « clan », « etymology », « transmission », « alliance » et « obituary », ainsi que la page Forebears dédiée n'ont pas établi que la catégorie provisoire « clan_name » décrive le nom lui-même ; elle reste un classement de travail et non une origine démontrée."
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom personnel bemba. Chez les Bemba, les enfants appartiennent au clan de leur mère, mais prennent le dernier nom de leur père ; aucune source lue ne dit quand Mulenga lui-même est devenu un nom de famille. La fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "alliances",

@@ -477,6 +477,31 @@ why. Counts by script: `hereditary_family_name` 28 to 41,
 `non_hereditary_patronymic` 277 to 282, `clan_name` 390 to 370 (two of them
 folded away).
 
+**Fourth pass, 2026-10-18 (wave 25).** The operator approved every
+recommendation of the wave 25 reports (#1838). Twenty fiches whose history
+shows the name borne as a family name and tells no clan took
+`hereditary_family_name`, unit `other`: the French names of the Seychelles and
+Mauritius (Michel, Faure, Larue, Barbe, Julie, Hoareau, Loustau-Lalanne,
+Duval, Bérenger), the Indian names of Mauritius (Gopaul, Beeharry, Appadoo),
+Kane, Bongo, do Espírito Santo, Letsie, and the Krio and Liberian names (Cole,
+Coker, Cooper, Freeman). Sixteen took `non_hereditary_patronymic`, unit
+`individual`: Ould Ahmed, a filiation like Ould Cheikh, with no `nameSystem`
+gap; Lado, a Bari personal name in Seligman (1932, pp. 268 and 270, read on the
+page images), which the fiche now cites; Kountché, the father's name in a Zarma
+genealogy; the Bemba names Bwalya, Chanda, Mulenga and Musonda; and, under the
+Fang ruling, Obame, Obiang, Nchama, Nsue, Ela, Mengue, Nzue and the Ewondo
+names Ndongo and Onana. Obame, Obiang, Nsue and Ndongo, whose histories say
+the father's name follows the child's, are `patrilineal`. Ndong stays
+`clan_name`, unit `clan`: Tessmann (« Fam. Ndong ») and Obiang-Mikue call it a
+clan, and its gap now says it is also a man's name. The Swazi and Tsonga names
+keep `clan_name`, Moyo `totemic_clan`, Mabiala `non_hereditary_patronymic`. On
+the same fiches: the unsourced spellings Berenger and Barbé are dropped
+(search ignores accents, so both still find their fiche, and Barbe is now filed
+under the form its sources write); the Letsie Moshesh tile of 1847 takes
+`polity` (Basotho chiefs before 1868); the Pointe Larue account keeps no era.
+Counts by script: `hereditary_family_name` 41 to 61,
+`non_hereditary_patronymic` 281 to 297, `clan_name` 366 to 331, `nisba` 66 to 65.
+
 # The long tail: wave order
 
 The priority core above is a short list picked by hand. The rest of the corpus

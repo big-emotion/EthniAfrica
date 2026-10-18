@@ -6,7 +6,7 @@
   },
   "id": "PAT_NCHAMA",
   "nameMain": "Nchama",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Nchama",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -70,7 +70,7 @@
   "gaps": [
     {
       "fieldPath": "nameSystem",
-      "reason": "la recherche web et bibliographique combinant « Nchama », « Fang », « la Guinée équatoriale », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la source dédiée « La cultura para el reconocimiento de la identidad: caso de la cultura fang de Guinea Ecuatorial » et la page Forebears propre au nom, consultées directement, n’a pas établi que la catégorie provisoire portée par la fiche décrive Nchama lui-même ; elle reste une hypothèse de classement technique, sans être transformée en affirmation historique."
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom de femme fang. Chez les Fang, chacun reçoit un nom à lui, suivi de celui de son père, et Günter Tessmann écrit en 1913 que les Fang n'ont pas de nom de famille au sens européen. La fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "alliances",

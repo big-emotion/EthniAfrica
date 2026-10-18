@@ -487,7 +487,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 626 -> 624 on 2026-10-16: the Koroma and Bangura fiches folded into PAT_KOUROUMA and PAT_BANGOURA; both cited sources of their own.
     // 624 -> 635 on 2026-10-18: eleven Southern African family names of wave 25 (Baloyi, Gamedze, Ginindza, Hlophe, Letsie, Mabote, Mabuza, Macuacua, Magagula, Matsebula, Mondlane) now cite sources of their own (Junod, Van Warmelo, Ellenberger, the Swazi surnames dictionary); all eleven cited only the candidate queue before.
     // 635 -> 627 on 2026-10-18: the eight family-name fiches folded or withdrawn after wave 25 (Njie, Jallow, Jalloh and Aden into Ndiaye, Diallo and Adam; El Kenzi, Ngarlejy, Ngarta and Kigozi withdrawn); all eight cited sources of their own.
-    value: 627,
+    // 627 -> 628 on 2026-10-18: PAT_LADO now cites a source of its own (Seligman 1932, pp. 268 and 270, Bari men named Lado), on which it is filed as a personal name; it cited only the candidate queue before.
+    value: 628,
     method:
       "fiches dataset/source/afrik/patronymes/PAT_*.json portant un nameSystem et " +
       "au moins une source autre que la file d'attente des candidats — les fiches " +

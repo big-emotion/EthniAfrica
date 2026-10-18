@@ -6,7 +6,7 @@
   },
   "id": "PAT_MENGUE",
   "nameMain": "Mengue",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Mengue",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -70,7 +70,7 @@
   "gaps": [
     {
       "fieldPath": "nameSystem",
-      "reason": "la recherche web et bibliographique combinant « Mengue », « Fang », « Gabon », « nom personnel », « patronyme », « étymologie », « filiation », « clan » et « transmission », ainsi que l'article sur les dictionnaires anthroponymiques gabonais et la page Forebears dédiée n'ont pas établi que la catégorie provisoire « clan_name » décrive Mengue lui-même ; elle reste une hypothèse de classement, sans être transformée en affirmation."
+      "reason": "Aucune source consultée n'en fait un nom de clan : la source lue y voit un nom de personne fang. Chez les Fang, chacun reçoit un nom à lui, suivi de celui de son père, et Günter Tessmann écrit en 1913 que les Fang n'ont pas de nom de famille au sens européen. La fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "alliances",

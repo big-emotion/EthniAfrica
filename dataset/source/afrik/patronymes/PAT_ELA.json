@@ -6,7 +6,7 @@
   },
   "id": "PAT_ELA",
   "nameMain": "Ela",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Ela",
@@ -28,7 +28,7 @@
     }
   ],
   "transmissionMode": "patrilineal",
-  "designatedSocialUnit": "lineage",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -84,6 +84,10 @@
     {
       "fieldPath": "homonyms",
       "reason": "la recherche web combinant « Ela », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », qui comprenait le terme « homonyme », et la lecture de « Culture for the Recognition of Identity: The Case of the Fang Culture of Equatorial Guinea », n'ont pas établi de lignée homonyme d'origine distincte."
+    },
+    {
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom de personne fang et ewondo. Chez les Fang, chacun reçoit un nom à lui, suivi de celui de son père, et Günter Tessmann écrit en 1913 que les Fang n'ont pas de nom de famille au sens européen. La fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     }
   ],
   "nameHistory": {
