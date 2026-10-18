@@ -51,6 +51,15 @@ Briefs 10 to 12 are the three board passes the operator approved on
 once the previous one is approved and recorded, because they share `Main` and
 `ea-live.css`. Brief 6 is pasted inside pass 1, after brief 10.
 
+| # | Brief | Surface | Boards |
+| --- | --- | --- | --- |
+| 13 | [`13-search-entry.md`](13-search-entry.md) | Pass 4: one search component, the header search full screen on mobile, the search page | `Main`; three new boards (`search-entry-430`, `-768`, `-1440`) (**scope approved 2026-10-18**, boards not drawn). Prompt: [`claude-design-prompt-13.md`](claude-design-prompt-13.md) |
+| 14 | [`14-atlas-names-page.md`](14-atlas-names-page.md) | Pass 5: the Atlas page becomes « Les noms d'Afrique » | three new boards (`atlas-names-430`, `-768`, `-1440`) (**scope approved 2026-10-18**, boards not drawn). Prompt: [`claude-design-prompt-14.md`](claude-design-prompt-14.md) |
+| 15 | [`15-result-page-shorter.md`](15-result-page-shorter.md) | Pass 6: the result page tells each account once and opens shorter | `search-peul`, `search-bassa`, `search-congo`, the `search-state-*` boards with a timeline; new `search-state-long-traore-*`; `Main` (**scope approved 2026-10-18**, boards not drawn). Prompt: [`claude-design-prompt-15.md`](claude-design-prompt-15.md) |
+
+Briefs 13 to 15 come from the operator's mobile review of 2026-10-18 and its
+five decisions. They are drawn in that order, after brief 6, one at a time.
+
 Dossiers (`DOS_*`) are an editorial type, not a type of name. They carry the
 operator's thesis in full and get their own brief once the thesis wording is
 settled (see "The thesis slot").
