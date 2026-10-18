@@ -4280,6 +4280,8 @@ const UNACCENTED_FRENCH: ReadonlyArray<{ spelling: string; word: string }> = [
   { spelling: "a partir", word: "à partir" },
   { spelling: "deja", word: "déjà" },
   { spelling: "egalement", word: "également" },
+  { spelling: "senegambien(?:ne)?s?", word: "sénégambien" },
+  { spelling: "sahelien(?:ne)?s?", word: "sahélien" },
   { spelling: "guinee", word: "Guinée" },
   { spelling: "senegal", word: "Sénégal" },
   { spelling: "ethiopie", word: "Éthiopie" },
