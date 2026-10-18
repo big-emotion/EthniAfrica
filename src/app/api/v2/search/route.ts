@@ -54,8 +54,8 @@
  *       does a query that spells exactly a family name the search found,
  *       through its filed name or a recorded spelling, or that a fiche the
  *       search found writes as a word in its own text. Each lead names
- *       `matchedForm`, the form that scored, or a people's filed name when
- *       that form is not one name. The search is served in French.
+ *       `matchedForm`, the form that scored; a people's form that is not
+ *       one name is not scored. The search is served in French.
  *       Rate-limited per AR11 (IP: 60 RPM, public key: 600 RPM,
  *       partner key: 6 000 RPM).
  *     tags: [API v2 - Search]

@@ -282,7 +282,8 @@ export const NEIGHBOUR_FLOOR = 0.2;
 /**
  * The leads scan covers peoples, countries and families (migration 070).
  * `formsOfAPeople: false` reproduces migration 084, which scored the filed
- * name of a people only.
+ * name of a people only; `true`, migration 110, which scores the forms of
+ * `peopleLeadForms`.
  */
 // @req REQ-178
 export function neighbours(
@@ -294,9 +295,11 @@ export function neighbours(
     .filter((item) => ["people", "country", "family"].includes(item.kind))
     .filter((item) => {
       const scored =
-        item.kind === "people" && !formsOfAPeople
-          ? [item.filedName]
-          : item.forms;
+        item.kind !== "people"
+          ? item.forms
+          : formsOfAPeople
+            ? peopleLeadForms(item)
+            : [item.filedName];
       return scored.some((form) => similarity(form, query) >= NEIGHBOUR_FLOOR);
     });
 }
@@ -366,17 +369,27 @@ export const NOT_ONE_NAME = "[()/;:.«»0-9]| = | ou ";
 const notOneName = new RegExp(NOT_ONE_NAME);
 
 /**
+ * The forms migration 110 scores for a people: its filed name, slash
+ * included since it is how the fiche is filed, and each other form that is
+ * one name, all without their trailing bracket. A piece of a phrase is not
+ * scored, so it never makes a people a lead (brief 16, eighth review).
+ */
+function peopleLeadForms(item: ModelEntity): string[] {
+  const filed = withoutQualifier(item.filedName);
+  return item.forms.filter((form) => form === filed || !notOneName.test(form));
+}
+
+/**
  * The `matched_form` migration 110 returns for a people lead: the best
- * scoring of its filed name, self-appellation and exonyms, each without its
- * trailing bracket, the filed name first on a tie; the filed name when the
- * best form is no single name. Its score stands either way.
+ * scoring of the forms it scores, the filed name first on a tie. Undefined
+ * when none reaches the floor: the people is then no lead.
  */
 // @req REQ-125
 export function peopleLeadForm(
   query: string,
   item: ModelEntity
 ): string | undefined {
-  const best = item.forms
+  const [best] = peopleLeadForms(item)
     .map((form) => ({ form, score: similarity(form, query) }))
     .sort(
       (left, right) =>
@@ -384,8 +397,8 @@ export function peopleLeadForm(
         Number(right.form === item.filedName) -
           Number(left.form === item.filedName) ||
         left.form.localeCompare(right.form)
-    )[0]?.form;
-  return best !== undefined && notOneName.test(best) ? item.filedName : best;
+    );
+  return best && best.score >= NEIGHBOUR_FLOOR ? best.form : undefined;
 }
 
 function fichePaths(dir: string): string[] {

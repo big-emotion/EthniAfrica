@@ -34,7 +34,9 @@ export interface SearchFeedCopy {
      * Under the chips, when the form a chip names is not its fiche's filed
      * name: « jarra » reaches Diarra through the spelling Jara. The line says
      * only which fiche records the form, never that one form derives from
-     * another (doctrine §1: none is crowned).
+     * another (doctrine §1: none is crowned). No « aussi »: it made the form
+     * an add-on to the filed name, and for « ajumataw » set Ajamataw, the
+     * name the Diola give themselves, after Diola, a name others gave them.
      */
     typoFormOf: {
       familyName: (form: string, name: string) => string;
@@ -207,8 +209,8 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       },
       typoFormOf: {
         familyName: (form, name) =>
-          `La fiche ${name} donne aussi l’écriture ${form}.`,
-        other: (form, name) => `La fiche ${name} donne aussi le nom ${form}.`,
+          `La fiche ${name} donne l’écriture ${form}.`,
+        other: (form, name) => `La fiche ${name} donne le nom ${form}.`,
       },
       typoInvitation: (query) =>
         `Si vous écrivez «\u00a0${query}\u00a0», dites-nous où cette écriture est employée.`,

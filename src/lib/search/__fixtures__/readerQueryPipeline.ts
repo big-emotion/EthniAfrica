@@ -3,7 +3,8 @@
  * tolerance work of REQ-178. "Before" asks the corpus for the text as typed and
  * offers neighbours of a people's filed name only (migration 084); "after"
  * cleans the query, tries its candidates, widens per name, and offers
- * neighbours over every recorded form (migration 094).
+ * neighbours over every recorded form that is one name (migrations 094 and
+ * 110).
  *
  * Outcomes follow the page's states: an entry that answers to the name is a
  * `hit`; entries that only mention it, or answer to one of several names, are

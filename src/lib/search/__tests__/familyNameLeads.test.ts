@@ -6,10 +6,17 @@ import {
   familyNameLeads,
   fichesRecordingWord,
   nameHits,
+  NEIGHBOUR_FLOOR,
   neighbours,
   peopleLeadForm,
   proseHits,
+  similarity,
 } from "@/lib/search/__fixtures__/corpusNameModel";
+
+// What no chip may print as a name: a piece of a phrase the self-appellation
+// was cut into, two names, or a sentence (brief 16, seventh and eighth
+// reviews). The equal sign alone is allowed: « =|Hoa » writes a click.
+const PIECE_OF_A_PHRASE = /[()/;:.«»0-9]| = | ou /;
 
 // DEC-075 over the real family-name fiches of the repository, through the
 // pg_trgm model of corpusNameModel.ts. The SQL of migration 110 stays the
@@ -154,56 +161,91 @@ describe("which people a misspelling resembles (REQ-125)", () => {
 
   // Migration 110 splits a self-appellation on its commas alone, so a
   // bracket holding a comma is cut in two: « Baganda (sg. Muganda,
-  // pl. Abaganda) » scores « pl. Abaganda) », « Kumam (ou Ikokolemu,
-  // Akokolemu) » scores « Akokolemu) ». Such a piece still scores, but the
-  // chip names the fiche by its filed name, as 094's rows did: the page
-  // prints a form as a name only when it is one name (seventh review of
-  // brief 16). No fiche writes these three words, so each reaches the
-  // misspelling page. The filed name « Baganda / Ganda » keeps its slash:
-  // it is how the fiche is filed, and no form of it is crowned.
+  // pl. Abaganda) » gives « pl. Abaganda) », « Kumam (ou Ikokolemu,
+  // Akokolemu) » gives « Akokolemu) ». Such a piece is not scored: a lead is
+  // offered only under a form that is one name and that itself scored
+  // (eighth review of brief 16). Falling back to the filed name said that
+  // Kumam (0.00 against « akokolemou »), Kongo (0.17) or « Baganda / Ganda »
+  // (0.19) resembles the word typed, below the 0.2 floor. No fiche writes
+  // these three words; the peoples they still reach do so through a form
+  // that is one name.
   // @req REQ-125
-  it("names Baganda, Kumam and Kongo by their filed name when the form that scored is a piece of a phrase", () => {
+  it("offers no lead from a piece of a phrase: no Baganda for « abagenda », no Kumam for « akokolemou », no Kongo for « mukongu »", () => {
     const cases = [
-      ["abagenda", "PPL_BAGANDA", "Baganda / Ganda"],
-      ["akokolemou", "PPL_KUMAM", "Kumam"],
-      ["mukongu", "PPL_KONGO", "Kongo"],
+      ["abagenda", "PPL_BAGANDA"],
+      ["akokolemou", "PPL_KUMAM"],
+      ["mukongu", "PPL_KONGO"],
     ];
 
-    for (const [query, key, filedName] of cases) {
-      const lead = neighbours(query, { formsOfAPeople: true }).find(
-        (item) => item.key === key
-      );
+    for (const [query, key] of cases) {
+      const leads = neighbours(query, { formsOfAPeople: true });
+      const fiche = corpusEntities().find((item) => item.key === key);
 
-      expect(lead, query).toBeDefined();
-      expect(peopleLeadForm(query, lead!), query).toBe(filedName);
+      expect(
+        leads.map((item) => item.key),
+        query
+      ).not.toContain(key);
+      expect(peopleLeadForm(query, fiche!), query).toBeUndefined();
+      for (const lead of leads.filter((item) => item.kind === "people")) {
+        const chip = peopleLeadForm(query, lead);
+        expect(chip, `${query} → ${lead.key}`).not.toMatch(PIECE_OF_A_PHRASE);
+        expect(
+          similarity(chip!, query),
+          `${query} → ${lead.key}: ${chip}`
+        ).toBeGreaterThanOrEqual(NEIGHBOUR_FLOOR);
+      }
       expect(nameHits(query), query).toEqual([]);
       expect(proseHits(query), query).toEqual([]);
     }
   });
 
-  // Every form a people fiche records, typed as written, so that it is the
-  // form that scores best: the chip names one of the fiche's names or its
-  // filed name, never a piece of a phrase (a bracket, a slash, a semicolon,
-  // a colon, a full stop, guillemets, a date, « = » or two names joined by
-  // « ou »: « pl. Abaganda) », « etc. », « 1995 », « nkop = terre »,
-  // « Yacouba ou Yakuba »).
+  // The examples of brief 16 keep their lead: each is reached through a
+  // form that is one name, and that form's own score clears the floor.
   // @req REQ-125
-  it("never names a piece of a phrase, over every form of every people fiche", () => {
-    const pieces = /[()/;:.«»0-9]| = | ou /;
+  it("keeps the leads of « pakhalas », « icumama » and « ajumataw », each named by the form that scored", () => {
+    const cases: [string, string, string][] = [
+      ["pakhalas", "PPL_KOULANGO", "Pakhallas"],
+      ["icumama", "PPL_ITESO", "Ikumama"],
+      ["icumama", "PPL_KUMAM", "Ikumama"],
+      ["ajumataw", "PPL_DIOLA", "Ajamataw"],
+    ];
+
+    for (const [query, key, form] of cases) {
+      const lead = neighbours(query, { formsOfAPeople: true }).find(
+        (item) => item.key === key
+      );
+
+      expect(lead, `${query} → ${key}`).toBeDefined();
+      expect(peopleLeadForm(query, lead!)).toBe(form);
+      expect(similarity(form, query)).toBeGreaterThanOrEqual(NEIGHBOUR_FLOOR);
+    }
+  });
+
+  // Every form a people fiche records, typed as written. When the people is
+  // a lead, the chip is the form that scored: its filed name or a form that
+  // is one name, whose own score clears the floor. A piece of a phrase (a
+  // bracket, a slash, a semicolon, a colon, a full stop, guillemets, a date,
+  // « = » or two names joined by « ou »: « pl. Abaganda) », « etc. »,
+  // « 1995 », « nkop = terre », « Yacouba ou Yakuba ») is never the chip,
+  // and never makes a people a lead under another name.
+  // @req REQ-125
+  it("never names a piece of a phrase, nor offers a people through one, over every form of every people fiche", () => {
     const misnamed = corpusEntities()
       .filter((item) => item.kind === "people")
-      .flatMap((item) =>
-        item.forms
-          .map((form) => ({
-            key: item.key,
-            form,
-            chip: peopleLeadForm(form, item),
-          }))
-          .filter(
-            ({ chip }) =>
-              chip !== item.filedName &&
-              (pieces.test(chip) || !item.forms.includes(chip))
-          )
+      .flatMap((item) => {
+        const filed = item.filedName.replace(/\s*\([^)]*\)\s*$/, "").trim();
+        return item.forms.map((form) => ({
+          key: item.key,
+          form,
+          filed,
+          chip: peopleLeadForm(form, item),
+        }));
+      })
+      .filter(
+        ({ form, filed, chip }) =>
+          chip !== undefined &&
+          ((chip !== filed && PIECE_OF_A_PHRASE.test(chip)) ||
+            similarity(chip, form) < NEIGHBOUR_FLOOR)
       );
 
     expect(misnamed).toEqual([]);

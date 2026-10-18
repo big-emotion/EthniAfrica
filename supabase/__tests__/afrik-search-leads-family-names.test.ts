@@ -19,6 +19,16 @@ const sql = readFileSync(
   "utf8"
 );
 
+/** The best-scoring form, the filed name first on a tie. */
+const BEST_FORM =
+  /\(array_agg\(form\.value ORDER BY extensions\.similarity\(public\.afrik_unaccent\(lower\(form\.value\)\), q\.exact_key\) DESC, \(form\.value = p\.name_main\) DESC, form\.value\)\)\[1\] AS matched_form,/;
+
+/**
+ * The people branch's one filter over 094: a form other than the filed name
+ * is scored only when, without its trailing bracket, it is one name.
+ */
+const PEOPLE_FORM_FILTER = `    WHERE btrim(raw.value) <> '' AND (raw.value = p.name_main OR regexp_replace(raw.value, '\\s*\\([^)]*\\)\\s*$', '') !~ '${NOT_ONE_NAME}')`;
+
 /** The SQL of the family-name branch, from its kind literal to the next CTE. */
 function familyNameBranch(): string {
   const start = sql.indexOf("'patronyme'::text AS kind");
@@ -102,17 +112,22 @@ describe("near-miss leads over family names (migration 110)", () => {
         text.indexOf("candidates AS ("),
         text.indexOf("WHERE length(q.exact_key) >= 3\n),")
       );
-    // The one line each branch gains names the form that scored; it selects
-    // no other row and scores nothing.
-    const withoutMatchedForm = (text: string) =>
+    // Each branch gains one line naming the form that scored, and the people
+    // branch one filter: a form that is not one name is not scored (eighth
+    // review of brief 16). Nothing else of 094 changes.
+    const as094 = (text: string) =>
       text
         .split("\n")
         .filter((line) => !line.includes("AS matched_form,"))
+        .map((line) =>
+          line === PEOPLE_FORM_FILTER
+            ? "    WHERE btrim(raw.value) <> ''"
+            : line
+        )
         .join("\n");
 
-    expect(
-      withoutMatchedForm(branches(sql)).startsWith(branches(original))
-    ).toBe(true);
+    expect(sql).toContain(PEOPLE_FORM_FILTER);
+    expect(as094(branches(sql)).startsWith(branches(original))).toBe(true);
   });
 
   // The page names the form that scored, not the filed name: « jarra »
@@ -121,9 +136,7 @@ describe("near-miss leads over family names (migration 110)", () => {
   // @req REQ-125
   it("returns the form that scored beside the filed name, in every branch", () => {
     expect(sql.match(/AS matched_form,/g) ?? []).toHaveLength(4);
-    const bestForm =
-      /\(array_agg\(form\.value ORDER BY extensions\.similarity\(public\.afrik_unaccent\(lower\(form\.value\)\), q\.exact_key\) DESC, \(form\.value = p\.name_main\) DESC, form\.value\)\)\[1\] AS matched_form,/;
-    expect(familyNameBranch()).toMatch(bestForm);
+    expect(familyNameBranch()).toMatch(BEST_FORM);
     expect(sql.match(/localized\.name AS matched_form,/g) ?? []).toHaveLength(
       2
     );
@@ -132,23 +145,26 @@ describe("near-miss leads over family names (migration 110)", () => {
   });
 
   // A self-appellation is split on its commas alone, so « Baganda (sg.
-  // Muganda, pl. Abaganda) » scores « pl. Abaganda) ». That piece still
-  // scores; the row names the filed name, as 094's rows did. The pattern is
-  // the one the corpus model applies (corpusNameModel.ts), so the model's
-  // corpus-wide test holds what this SQL prints.
+  // Muganda, pl. Abaganda) » gives « pl. Abaganda) ». Such a piece is not
+  // scored: a lead is offered only under a form that is one name and that
+  // itself scored. Naming the filed name instead said that Kumam resembles
+  // « akokolemou » at 0.00. The filed name stays scored, slash included: it
+  // is how the fiche is filed. The pattern is the one the corpus model
+  // applies (corpusNameModel.ts), so the model's corpus-wide test holds
+  // what this SQL scores.
   // @req REQ-125
-  it("names a people by its filed name when the form that scored is not one name", () => {
+  it("scores no form of a people that is not one name, and names the form that scored", () => {
     const people = sql.slice(
       sql.indexOf("'people'::text AS kind"),
       sql.indexOf("'country'::text AS kind")
     );
 
-    expect(people).toContain(
-      `(array_agg(CASE WHEN form.value ~ '${NOT_ONE_NAME}' THEN p.name_main ELSE form.value END ORDER BY extensions.similarity(public.afrik_unaccent(lower(form.value)), q.exact_key) DESC, (form.value = p.name_main) DESC, form.value))[1] AS matched_form,`
-    );
-    expect(sql.slice(sql.indexOf("COMMENT ON FUNCTION"))).toMatch(
-      /not one name/
-    );
+    expect(people).toContain(PEOPLE_FORM_FILTER);
+    expect(people).toMatch(BEST_FORM);
+    expect(sql).not.toMatch(/CASE WHEN form\.value ~/);
+    const comment = sql.slice(sql.indexOf("COMMENT ON FUNCTION"));
+    expect(comment).toMatch(/not one name/);
+    expect(comment).not.toMatch(/names its filed name instead/);
   });
 
   // @req REQ-125

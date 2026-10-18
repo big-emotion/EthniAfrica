@@ -325,7 +325,7 @@ describe("a misspelling whose only fiche found is its lead", () => {
 
     expect(
       within(screen.getByTestId("feed-block-appellations")).queryByText(
-        /donne aussi|est une écriture du nom|est un des noms de la fiche/
+        /La fiche .+ donne|est une écriture du nom|est un des noms de la fiche/
       )
     ).toBeNull();
   });
@@ -543,7 +543,7 @@ describe("a lead reached through another of its forms", () => {
     );
     const choices = screen.getByTestId("feed-block-appellations");
     const note = within(choices).getByText(
-      "La fiche Diarra donne aussi l’écriture Jara."
+      "La fiche Diarra donne l’écriture Jara."
     );
     expect(note).toHaveClass("text-afh-caption", "text-afh-text-soft");
     expect(choices).not.toHaveTextContent(/une écriture du nom/);
@@ -589,7 +589,7 @@ describe("a lead reached through another of its forms", () => {
       })
     ).toBeVisible();
     expect(
-      screen.getByText("La fiche Koulango donne aussi le nom Pakhallas.")
+      screen.getByText("La fiche Koulango donne le nom Pakhallas.")
     ).toBeVisible();
     expect(screen.getByTestId("feed-block-appellations")).not.toHaveTextContent(
       /un des noms de la fiche/
@@ -627,10 +627,10 @@ describe("a lead reached through another of its forms", () => {
       asShown(copy.answer.typoResembling.summary("icumama", 1))
     );
     expect(
-      screen.getByText("La fiche Iteso donne aussi le nom Ikumama.")
+      screen.getByText("La fiche Iteso donne le nom Ikumama.")
     ).toBeVisible();
     expect(
-      screen.getByText("La fiche Kumam donne aussi le nom Ikumama.")
+      screen.getByText("La fiche Kumam donne le nom Ikumama.")
     ).toBeVisible();
   });
 
@@ -655,7 +655,7 @@ describe("a lead reached through another of its forms", () => {
 
     expect(choiceNames()).toEqual(["Ajamataw"]);
     expect(
-      screen.getByText("La fiche Diola donne aussi le nom Ajamataw.")
+      screen.getByText("La fiche Diola donne le nom Ajamataw.")
     ).toBeVisible();
     expect(screen.getByTestId("feed-block-appellations")).not.toHaveTextContent(
       /Joola/
@@ -685,7 +685,7 @@ describe("a lead reached through another of its forms", () => {
 
     expect(choiceNames()).toEqual(["Diola"]);
     const choices = screen.getByTestId("feed-block-appellations");
-    expect(within(choices).queryByText(/donne aussi/)).toBeNull();
+    expect(within(choices).queryByText(/La fiche .+ donne/)).toBeNull();
     expect(choices).not.toHaveTextContent(/Joola/);
   });
 
@@ -736,7 +736,7 @@ describe("a lead reached through another of its forms", () => {
     expect(choiceNames()).toEqual(["Diola"]);
     expect(
       within(screen.getByTestId("feed-block-appellations")).queryByText(
-        /donne aussi/
+        /La fiche .+ donne/
       )
     ).toBeNull();
   });

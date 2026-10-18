@@ -190,6 +190,23 @@ describe("OpenAPI v2 unified search contract", () => {
     );
   });
 
+  // A lead is offered only under a form that is one name and that itself
+  // scored (brief 16, eighth review): a piece of a phrase is not scored, so
+  // matchedForm is always what `similarity` measures. A client told that a
+  // people falls back to its filed name would print a name that did not
+  // score.
+  // @req REQ-125
+  it("documents that a piece of a phrase is not scored, with no filed-name fallback", () => {
+    const lead = schemas.SearchLeadV2;
+
+    expect(lead?.properties?.matchedForm?.description).toMatch(/not one name/);
+    expect(lead?.properties?.matchedForm?.description).toMatch(/is not scored/);
+    expect(lead?.properties?.matchedForm?.description).not.toMatch(
+      /named by its filed name/
+    );
+    expect(lead?.properties?.similarity?.description).not.toMatch(/unless/);
+  });
+
   // A client that read « always empty when total > 0 » would never show the
   // family-name lead « tchikaya » now carries beside its results.
   // @req REQ-125

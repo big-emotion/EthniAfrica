@@ -24,22 +24,28 @@
 -- reaches the Koulango fiche through its exonym Pakhallas. A page that named
 -- the filed name would say that Diarra, or Koulango, is written almost like
 -- the query. A people
--- names one of the forms 094 scores (filed name, self-appellation, exonyms); a
--- country or a family names its name. This adds one column and changes no
--- row, no score and no order.
+-- names its filed name, a self-appellation or an exonym; a country or a
+-- family names its name.
 --
--- A people names that form only when it is one name. 094 splits the
--- self-appellation on its commas alone, so a bracket holding a comma is cut
--- in two: « Baganda (sg. Muganda, pl. Abaganda) » scores « pl. Abaganda) »,
--- which « abagenda » reaches at 0.40. Besides the filed names, 240 forms of
--- 190 people fiches carry such a mark (a bracket, a slash, a semicolon, a
--- colon), and 20 more are two names or a sentence (« Yacouba ou Yakuba »,
--- « nkop = terre », « etc. », « 1995 »): 260 forms of 198 fiches in all.
--- Printed, the page would say that the Baganda fiche « donne aussi le nom
--- pl. Abaganda) ». Such a form still scores, as under 094; the row
--- then names the filed name, as 094's rows did. The equal sign alone is no
--- mark: « =|Hoa » writes a click. Splitting these appellations into clean
--- entries is a data fix, not this migration's.
+-- A people scores a form other than its filed name only when that form is
+-- one name. 094 splits the self-appellation on its commas alone, so a
+-- bracket holding a comma is cut in two: « Baganda (sg. Muganda,
+-- pl. Abaganda) » gave « pl. Abaganda) », which « abagenda » reaches at
+-- 0.40. Besides the filed names, 240 forms of 190 people fiches carry such a
+-- mark (a bracket, a slash, a semicolon, a colon), and 20 more are two names
+-- or a sentence (« Yacouba ou Yakuba », « nkop = terre », « etc. »,
+-- « 1995 »): 260 forms of 198 fiches in all. Printed, such a piece is no
+-- name. Naming the filed name instead, as 094's rows did, would say that a
+-- name resembles the query when it did not score: Kumam against
+-- « akokolemou » 0.00, Kongo against « mukongu » 0.17, « Baganda / Ganda »
+-- against « abagenda » 0.19, all under the 0.2 floor. So such a piece is not
+-- scored: a people reached only through one is no lead, and a people that
+-- also has a form that is one name scores that form. That is the one change
+-- to 094's rows; their scores and their order are otherwise 094's. The filed
+-- name is always scored, slash included (« Baganda / Ganda »): it is how the
+-- fiche is filed, and keeping one side would crown one form. The equal sign
+-- alone is no mark: « =|Hoa » writes a click. Splitting these appellations
+-- into clean entries is a data fix, not this migration's.
 --
 -- Why 0.4 for this branch and 0.2 for the others: 0.4 is the family-name
 -- search's own trigram threshold (066, 069, 108). At 0.2, « tchikaya » would
@@ -53,8 +59,9 @@
 -- similar name). One shared LIMIT would let peoples that score higher push a
 -- qualifying family name out of the rows, and family names push a people out
 -- of the similar-names shelf (REQ-180). Each group keeps its own p_limit, so
--- the other three kinds return exactly the rows 094 returned. The function
--- therefore returns at most 2 × p_limit rows.
+-- the other three kinds return the rows 094 returned, less the peoples
+-- reached only through a piece of a phrase. The function therefore returns
+-- at most 2 × p_limit rows.
 --
 -- What it does not decide: whether a family name is offered. That needs
 -- « nothing answers the query exactly » (REQ-201's test), which only the
@@ -83,7 +90,7 @@ WITH q AS (
 ),
 candidates AS (
   SELECT 'people'::text AS kind, p.id::text AS id, p.name_main AS name,
-         (array_agg(CASE WHEN form.value ~ '[()/;:.«»0-9]| = | ou ' THEN p.name_main ELSE form.value END ORDER BY extensions.similarity(public.afrik_unaccent(lower(form.value)), q.exact_key) DESC, (form.value = p.name_main) DESC, form.value))[1] AS matched_form,
+         (array_agg(form.value ORDER BY extensions.similarity(public.afrik_unaccent(lower(form.value)), q.exact_key) DESC, (form.value = p.name_main) DESC, form.value))[1] AS matched_form,
          max(
            extensions.similarity(
              public.afrik_unaccent(lower(form.value)), q.exact_key)
@@ -109,7 +116,7 @@ candidates AS (
                ELSE '[]'::jsonb END
         ) AS exonym
     ) raw
-    WHERE btrim(raw.value) <> ''
+    WHERE btrim(raw.value) <> '' AND (raw.value = p.name_main OR regexp_replace(raw.value, '\s*\([^)]*\)\s*$', '') !~ '[()/;:.«»0-9]| = | ou ')
   ) form
   WHERE length(q.exact_key) >= 3
   GROUP BY p.id, p.name_main
@@ -198,7 +205,7 @@ SELECT jsonb_build_object(
 $$;
 
 COMMENT ON FUNCTION public.afrik_search_leads(TEXT, INT, TEXT) IS
-  'Near-miss leads (REQ-125). A trigram similarity scan. A people scores the best of its filed name, self-appellation and exonyms (content.appellations), each without a trailing parenthesis, and is emitted under its filed name; countries and families score their name for p_lang (en | fr, default fr); these three kinds keep similarity >= 0.2. A family name (afrik_patronymes) scores the best of its filed name and recorded spellings (content.spellings[].spelling) among the forms that begin with the folded query''s first letter, keeps similarity >= 0.4 and is emitted under its filed name (DEC-075). Every row names matched_form, the form that scored (the filed name on a tie; a country or a family names its name), so a caller can show the form written like the query: « jarra » reaches Diarra through its spelling Jara. A people whose form that scored is not one name (a piece of a cut bracket such as « pl. Abaganda) », two names joined by « ou », a sentence) names its filed name instead; its score stands. Returns {"rows": [{"kind", "id", "name", "matched_form", "similarity"}, ...]}: at most p_limit rows of peoples, countries and families, plus at most p_limit family names, ordered by similarity. A folded query shorter than 3 characters returns no rows. SECURITY INVOKER: reads only tables already published to anon. Migration 110.';
+  'Near-miss leads (REQ-125). A trigram similarity scan. A people scores the best of its filed name, self-appellation and exonyms (content.appellations), each without a trailing parenthesis, and is emitted under its filed name; countries and families score their name for p_lang (en | fr, default fr); these three kinds keep similarity >= 0.2. A family name (afrik_patronymes) scores the best of its filed name and recorded spellings (content.spellings[].spelling) among the forms that begin with the folded query''s first letter, keeps similarity >= 0.4 and is emitted under its filed name (DEC-075). Every row names matched_form, the form that scored (the filed name on a tie; a country or a family names its name), so a caller can show the form written like the query: « jarra » reaches Diarra through its spelling Jara. Besides its filed name, a form of a people that is not one name (a piece of a cut bracket such as « pl. Abaganda) », two names joined by « ou », a sentence) is not scored, so a people reached only through one is no lead. Returns {"rows": [{"kind", "id", "name", "matched_form", "similarity"}, ...]}: at most p_limit rows of peoples, countries and families, plus at most p_limit family names, ordered by similarity. A folded query shorter than 3 characters returns no rows. SECURITY INVOKER: reads only tables already published to anon. Migration 110.';
 
 REVOKE ALL ON FUNCTION public.afrik_search_leads(TEXT, INT, TEXT) FROM PUBLIC;
 GRANT EXECUTE ON FUNCTION public.afrik_search_leads(TEXT, INT, TEXT)
@@ -223,18 +230,25 @@ GRANT EXECUTE ON FUNCTION public.afrik_search_leads(TEXT, INT, TEXT)
 --      SELECT public.afrik_search_leads('bukasa', 3) -> 'rows';
 --      -- expect no "patronyme" row: Mukasa (0.40) begins with m, Bukuru is 0.27
 --
--- 3. Peoples, countries and families answer exactly as under 094:
+-- 3. Peoples, countries and families answer as under 094:
 --      SELECT public.afrik_search_leads('pigmee', 3) -> 'rows';
---      -- expect the same people rows as before this migration, each with the
+--      -- expect the same people rows as before this migration, less any
+--      -- reached only through a piece of a phrase (below), each with the
 --      -- form that scored as matched_form
 --
---    A people whose form that scored is not one name is named by its filed
---    name, at the same score:
+--    A people reached through a form that is one name is named by it:
+--      SELECT public.afrik_search_leads('pakhalas', 3) -> 'rows';
+--      -- expect PPL_KOULANGO at about 0.73, "matched_form": "Pakhallas"
+--
+--    A people reached only through a piece of a phrase is no lead:
 --      SELECT public.afrik_search_leads('abagenda', 3) -> 'rows';
---      -- expect PPL_BAGANDA at about 0.40, "matched_form": "Baganda / Ganda",
---      -- never "pl. Abaganda)"
+--      -- expect no PPL_BAGANDA row: « pl. Abaganda) » is not scored, and
+--      -- « Baganda / Ganda » scores about 0.19
 --      SELECT public.afrik_search_leads('akokolemou', 3) -> 'rows';
---      -- expect PPL_KUMAM at about 0.62, "matched_form": "Kumam"
+--      -- expect no PPL_KUMAM row: « Akokolemu) » is not scored, and Kumam
+--      -- scores 0
+--      -- and in no row a "matched_form" holding a bracket, a semicolon, a
+--      -- colon or « ou » between two names
 --
 -- 4. It stays far inside the anon statement timeout:
 --      SET ROLE anon; EXPLAIN ANALYZE SELECT public.afrik_search_leads('kassabara', 3); RESET ROLE;

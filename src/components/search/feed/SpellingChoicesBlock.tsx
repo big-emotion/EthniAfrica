@@ -16,7 +16,7 @@ export interface SpellingChoicesBlockProps {
   title: string;
   /**
    * One line per chip that does not bear its fiche's filed name, saying
-   * which fiche records the form (« La fiche Diarra donne aussi l’écriture
+   * which fiche records the form (« La fiche Diarra donne l’écriture
    * Jara. »).
    */
   forms?: readonly string[];

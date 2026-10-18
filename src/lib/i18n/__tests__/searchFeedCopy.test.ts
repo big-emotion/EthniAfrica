@@ -90,15 +90,27 @@ describe("the words of a misspelling page", () => {
   // name, a line says only what the data says, which fiche records it. It
   // never ranks one form under another (doctrine §1: none is crowned): « Jara
   // est une écriture du nom Diarra » set the Bambara writing under the filed
-  // name, and a fiche does not « bear » names.
+  // name, and a fiche does not « bear » names. « aussi » made the form an
+  // add-on to the filed name: « La fiche Diola donne aussi le nom
+  // Ajamataw » set the name the Diola give themselves after Diola, a name
+  // the Mandinka gave them (PPL_DIOLA).
   // @req REQ-125
   it("says which fiche records a form that is not its filed name, without ranking the forms", () => {
     expect(copy.typoFormOf.familyName("Jara", "Diarra")).toBe(
-      "La fiche Diarra donne aussi l’écriture Jara."
+      "La fiche Diarra donne l’écriture Jara."
+    );
+    expect(copy.typoFormOf.other("Ajamataw", "Diola")).toBe(
+      "La fiche Diola donne le nom Ajamataw."
     );
     expect(copy.typoFormOf.other("Pakhallas", "Koulango")).toBe(
-      "La fiche Koulango donne aussi le nom Pakhallas."
+      "La fiche Koulango donne le nom Pakhallas."
     );
+    for (const line of [
+      copy.typoFormOf.familyName("Jara", "Diarra"),
+      copy.typoFormOf.other("Ajamataw", "Diola"),
+    ]) {
+      expect(line, line).not.toMatch(/\baussi\b/);
+    }
   });
 
   // « Aucun nom ne correspond » said no name matched at all, while people
