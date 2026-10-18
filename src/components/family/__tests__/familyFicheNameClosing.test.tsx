@@ -10,7 +10,6 @@ import {
   type NameHistory,
 } from "@/lib/afrik/parsers/nameHistoryParser";
 import { getLocalizedRoute } from "@/lib/routing";
-import { nameStoryHref } from "@/lib/search/nameClosing";
 import type { LanguageFamily } from "@/types/afrik";
 
 vi.mock("@/hooks/use-consent", () => ({
@@ -253,7 +252,7 @@ describe("LanguageFamilyDetailViewV2 — the link to the story of its name", () 
     const link = within(story).getByRole("link", {
       name: /^Suivre l'histoire du nom Mandé/,
     });
-    expect(link).toHaveAttribute("href", `${SEARCH}?q=Mand%C3%A9`);
+    expect(link).toHaveAttribute("href", `${SEARCH}/mand%C3%A9`);
     const readMore = story.querySelector("[data-name-story-more]") as Node;
     const firstRow = story.querySelector(
       '[data-testid="name-story-form"]'
@@ -294,7 +293,7 @@ describe("LanguageFamilyDetailViewV2 — the link to the story of its name", () 
     const link = within(story).getByRole("link", {
       name: /^Suivre l'histoire du nom Berbère/,
     });
-    expect(link).toHaveAttribute("href", nameStoryHref("fr", "Berbère"));
+    expect(link).toHaveAttribute("href", `${SEARCH}/berb%C3%A8re`);
   });
 
   // @req REQ-198

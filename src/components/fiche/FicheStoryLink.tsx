@@ -3,18 +3,18 @@
 import { ActionLink } from "@/components/ui/ActionLink";
 import { trackEvent } from "@/lib/analytics/trackEvent";
 import { ficheNameStoryCopy } from "@/lib/i18n/copy/ficheNameStory";
-import { nameStoryHref } from "@/lib/search/nameClosing";
+import type { NameStoryLink } from "@/lib/search/nameClosing";
 import type { FicheEntityType } from "@/types/fiche";
 import type { Language } from "@/types/shared";
 
 export interface FicheStoryLinkProps {
   /**
-   * The name to follow, as `storyLinkName` decides it on the server: the
-   * history's first name, and only when the result page answers the fiche
-   * under it. A name and not the history, so the client payload carries one
-   * string rather than every account.
+   * The name to follow and its href, as `nameStoryLink` decides them on the
+   * server: the history's first name, only when the result page answers the
+   * fiche under it, and the name's address when it has one. Two strings and
+   * not the history, so the client payload carries no account.
    */
-  name: string | null | undefined;
+  story: NameStoryLink | null | undefined;
   /** The kind of fiche the reader leaves, recorded with the click. */
   from: FicheEntityType;
   language: Language;
@@ -28,15 +28,15 @@ export interface FicheStoryLinkProps {
  * the history spells it: Kihavu under an h1 that reads Havu, Mandé and not the
  * self-name Manden, which the result page then leads to (doctrine §1.1).
  *
- * Without a name it renders nothing, not an empty slot: the page the link
+ * Without a story it renders nothing, not an empty slot: the page the link
  * would open tells no timeline for this fiche. A client component for one
  * reason, as `FicheOnward` is: the click is the only measure of whether the
  * link earns its place before anyone moves it higher (approval record item 6).
  */
 // @req REQ-198
 // @req REQ-046
-export function FicheStoryLink({ name, from, language }: FicheStoryLinkProps) {
-  if (!name) return null;
+export function FicheStoryLink({ story, from, language }: FicheStoryLinkProps) {
+  if (!story) return null;
 
   const copy = ficheNameStoryCopy[language];
 
@@ -44,12 +44,12 @@ export function FicheStoryLink({ name, from, language }: FicheStoryLinkProps) {
     <div className="ea-story">
       <ActionLink
         className="ea-story-link"
-        href={nameStoryHref(language, name)}
+        href={story.href}
         onClick={() =>
           trackEvent("fiche:related_click", { from, to: "name_story" })
         }
       >
-        {copy.storyLink(name)}
+        {copy.storyLink(story.name)}
       </ActionLink>
       <p className="ea-story-hint">{copy.storyLinkHint}</p>
     </div>

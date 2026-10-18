@@ -1,7 +1,12 @@
 import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
 import { normalizeString } from "@/lib/normalize";
-import { getLocalizedRoute } from "@/lib/routing";
+import { getNameAnswerRoute } from "@/lib/routing";
+import {
+  addressedHistoryNames,
+  foldNameForm,
+  nameSearchHref,
+} from "@/lib/search/nameAddress";
 import { readNaming } from "@/lib/search/naming";
 import { selectNameSubject } from "@/lib/search/nameSubject";
 import type {
@@ -322,20 +327,6 @@ export function nameFormOf(
 }
 
 /**
- * Where a fiche's « Suivre l'histoire du nom … » leads (brief 10 §1): the
- * reading a reader gets by searching that name, with no parameter picking a
- * subject, so « Congo » opens the page where both countries answer.
- *
- * One function on purpose. PR #1820 (ETNI-2044) gives each answered name its
- * own address, `/fr/atlas/recherche/<nom>`; whichever of the two merges second
- * swaps this body for that address, and the fiche tests follow through it.
- */
-// @req REQ-198
-export function nameStoryHref(language: Language, name: string): string {
-  return `${getLocalizedRoute(language, "search")}?${new URLSearchParams({ q: name })}`;
-}
-
-/**
  * A fiche as its search row describes it: the name it is filed under and the
  * `content` the search API reads its forms from (`readNaming`). A view passes
  * what that column holds, no more: a language's `spellingAliases` is a column
@@ -348,14 +339,48 @@ export interface StorySubject {
   content: unknown;
 }
 
+/** What a fiche's « Suivre l'histoire du nom … » names, and where it leads. */
+export interface NameStoryLink {
+  /** The history's first name, spelt as the history spells it. */
+  name: string;
+  href: string;
+}
+
 /**
- * The name a fiche's « Suivre l'histoire du nom … » may name, or nothing
- * (brief 10 §1). It is the history's first name, spelt as the history spells
- * it, and only when the page `nameStoryHref` opens counts this fiche among
- * its subjects. Without that the page says « Nous avons trouvé des fiches
- * liées sans établir qu'elles répondent à ce nom » and tells no timeline, so
- * the link would promise what it cannot keep — the brief's own reason for
- * drawing none without a history.
+ * The address of the fiche's story name (REQ-200), when the address
+ * directory holds one for it — or nothing.
+ *
+ * The directory holds every name a subject's history tells with a source
+ * above unverified, spelt as that history spells it (`addressedHistoryNames`,
+ * ETNI-2093): each of them is an exact answer for its subject. So through this
+ * fiche the story name has an address when its own history sources it, filed
+ * name or not — « Fulɓe » on PPL_FULA, filed « Peul ».
+ *
+ * A fiche route mounts no directory (`NameAddressProvider`), so this applies
+ * the directory's rule rather than reading its list. When another subject
+ * spells the same form differently, the directory may keep that spelling
+ * (the language yor's history writes « Yoruba », the people's « Yorùbá »):
+ * the link then reaches the address through one permanent redirect, never a
+ * 404.
+ */
+function storyAddressSpelling(
+  history: NameHistory,
+  name: string
+): string | undefined {
+  const key = foldNameForm(name);
+  return addressedHistoryNames(history).find(
+    (told) => foldNameForm(told) === key
+  );
+}
+
+/**
+ * A fiche's « Suivre l'histoire du nom … », or nothing (brief 10 §1).
+ *
+ * The name is the history's first, and it is named only when the page the
+ * link opens counts this fiche among its subjects. Without that the page says
+ * « Nous avons trouvé des fiches liées sans établir qu'elles répondent à ce
+ * nom » and tells no timeline, so the link would promise what it cannot keep
+ * — the brief's own reason for drawing none without a history.
  *
  * The page's own selection decides it (`selectNameSubject`), run on the fiche
  * shaped as its search hit, so the two cannot drift apart. The hit carries
@@ -364,13 +389,19 @@ export interface StorySubject {
  * PPL_FULA and « Berbère » on FLG_BERBERE draw their link. It assumes the
  * search returns the fiche among its hits for any of those names, which an
  * exact answer does.
+ *
+ * The link leads to the name's own address when it has one, and otherwise to
+ * the search page's reading of the name. Neither picks a subject, so
+ * « Congo » opens the page where both countries answer. Both pages read the
+ * same name through the same selection, accents and case aside.
  */
 // @req REQ-198
-export function storyLinkName(
+// @req REQ-200
+export function nameStoryLink(
   subject: StorySubject,
   history: NameHistory | null | undefined,
   language: Language
-): string | undefined {
+): NameStoryLink | undefined {
   const name = history?.names[0]?.nameText;
   if (!name) return undefined;
   const hit: SearchResult = {
@@ -380,5 +411,12 @@ export function storyLinkName(
     naming: readNaming(subject.type, subject.content),
     historyNames: history.names.map((told) => told.nameText),
   };
-  return selectNameSubject([hit], name, language).length > 0 ? name : undefined;
+  if (selectNameSubject([hit], name, language).length === 0) return undefined;
+  const address = storyAddressSpelling(history, name);
+  return {
+    name,
+    href: address
+      ? getNameAnswerRoute(language, address)
+      : nameSearchHref(language, name),
+  };
 }

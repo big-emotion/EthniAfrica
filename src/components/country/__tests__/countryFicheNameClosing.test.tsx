@@ -8,7 +8,6 @@ import {
   shortSourceName,
 } from "@/lib/countryDataTransformer";
 import { getLocalizedRoute } from "@/lib/routing";
-import { nameStoryHref } from "@/lib/search/nameClosing";
 
 vi.mock("@/hooks/use-consent", () => ({
   useOptionalConsent: () => null,
@@ -155,7 +154,7 @@ describe("CountryRecordView — the link to the story of its name", () => {
     const link = within(brief).getByRole("link", {
       name: /^Suivre l'histoire du nom Côte d'Ivoire/,
     });
-    expect(link).toHaveAttribute("href", `${SEARCH}?q=C%C3%B4te+d%27Ivoire`);
+    expect(link).toHaveAttribute("href", `${SEARCH}/c%C3%B4te%20d'ivoire`);
     expect(screen.getByTestId("name-story-lead").textContent).toBe(
       "Le nom Côte d'Ivoire renvoie au commerce de l'ivoire pratiqué le long du littoral."
     );
@@ -176,13 +175,13 @@ describe("CountryRecordView — the link to the story of its name", () => {
     render(<CountryRecordView country={countryRecord("GAB")} language="fr" />);
     expect(
       screen.getByRole("link", { name: /^Suivre l'histoire du nom Gabon/ })
-    ).toHaveAttribute("href", `${SEARCH}?q=Gabon`);
+    ).toHaveAttribute("href", `${SEARCH}/gabon`);
     cleanup();
 
     render(<CountryRecordView country={countryRecord("COG")} language="fr" />);
     expect(
       screen.getByRole("link", { name: /^Suivre l'histoire du nom Congo/ })
-    ).toHaveAttribute("href", `${SEARCH}?q=Congo`);
+    ).toHaveAttribute("href", `${SEARCH}/congo`);
   });
 
   // Brief 10 §2 (REQ-153 as amended), board country-civ.
@@ -230,7 +229,7 @@ describe("CountryRecordView — the link to the story of its name", () => {
     const link = within(brief).getByRole("link", {
       name: /^Suivre l'histoire du nom Tanzanie/,
     });
-    expect(link).toHaveAttribute("href", nameStoryHref("fr", "Tanzanie"));
+    expect(link).toHaveAttribute("href", `${SEARCH}/tanzanie`);
   });
 
   // @req REQ-198
