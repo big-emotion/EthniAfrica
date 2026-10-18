@@ -196,6 +196,25 @@ jobs:
       - run: npm run check:skill-parity
       - run: npm run check:pagination-contract
 
+      # The social-production helpers are Node test files under .claude/,
+      # which vitest excludes, so until 2026-10-18 their 89 tests ran on no
+      # machine but the author's. They render real cards in Chromium, cut
+      # video with ffmpeg and run Vale, hence the two installs. A docs or
+      # corpus PR touches none of that, so it skips the three steps.
+      - name: Restore Playwright browser cache
+        if: needs.scope.outputs.scope == 'code'
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: ~/.cache/ms-playwright
+          key: ms-playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+      - name: Install Chromium and ffmpeg for the social-production tests
+        if: needs.scope.outputs.scope == 'code'
+        run: |
+          npx playwright install --with-deps chromium
+          command -v ffmpeg >/dev/null || sudo apt-get install -y --no-install-recommends ffmpeg
+      - if: needs.scope.outputs.scope == 'code'
+        run: npm run test:social-production
+
       # Pre-merge, only what is knowable without a database: no two files
       # claiming the same version or name, no hole in the sequence. Whether a
       # migration is *applied* is meaningless here — the one this PR adds is
