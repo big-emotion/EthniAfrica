@@ -1,5 +1,40 @@
 # Brief 6 — The family-name fiche (patronyme)
 
+### Approval record (2026-10-18, by the operator)
+
+Claude Design drew `name-traore` at 430, 768 and 1440 and two new state
+boards, `name-state-thin-kollo` and `name-state-weak-sarr`. The operator
+approved them on 2026-10-18 in chat, with eight decisions sent back to Claude
+Design to apply before the boards are recorded:
+
+1. The three boards are approved, subject to the changes below.
+2. **Length:** the sources list folds behind one line and the « Origine »
+   types fold to their title and number of accounts (about 8,400 px at 430
+   instead of about 15,900); the alliances sentence once, the six names as
+   links.
+3. **Merging « Origine » into the history of the names:** not now. It is
+   ETNI-2105, a data change; « Origine » stays, folded.
+4. **« Équivalents chez d'autres peuples »** in « Le nom », under the
+   spellings: Sane, Mane, Ouédraogo, Dembélé, Diouf, Touré à Ségou, and Diop en
+   pays wolof.
+5. **The page title, breadcrumb and first spelling read « Traoré »**, the
+   spelling of the history and of the name's address.
+6. **The sources block is titled « Les sources de ce nom de famille »**, with
+   « Plusieurs sources expliquent ce nom de famille. Voici leurs 14 récits,
+   rangés par forme, puis par type de source. » This is the code's wording
+   (PR #1830); it puts neither Traoré nor Tarawele forward. No figure of style
+   in any label (operator rule, 2026-10-17).
+7. **Kollo and Sarr** keep Claude Design's sentence for a name the sources
+   mention without explaining it: the third state of the sentence, to add to
+   the copy when the fiche is implemented.
+8. **Item 6 below, the link to the name's story,** is drawn on the three
+   boards with a plain label.
+
+Found while drawing, outside the boards: the griots' accounts in the history
+are filed as academic publications, so the code would say « aucun récit
+transmis oralement » about Traoré (ETNI-2104); and the copy said « les noms de
+ce nom de famille » (fixed in PR #1830).
+
 Read [`README.md`](README.md) first. Briefs 1 to 5 and 9 are approved and
 implemented or recorded; this brief reuses their components instead of
 redrawing them (see "Approved boards" in
