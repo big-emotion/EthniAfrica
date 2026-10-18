@@ -117,6 +117,12 @@ export interface SearchFeedCopy {
       quiz: (name: string) => string;
       fiches: (name: string) => string;
     };
+    /**
+     * The « Fiches » lens of a misspelling (brief 16). The fiches it lists bear
+     * another name than the spelling typed, and nothing in the data ties them
+     * to it: « Fiches sur konana » said they were about it.
+     */
+    fichesFoundTitle: (query: string) => string;
     onName: (count: number) => string;
     around: (count: number) => string;
     aroundNote: string;
@@ -274,6 +280,8 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
         quiz: (name) => `Jeux sur ${name}`,
         fiches: (name) => `Fiches sur ${name}`,
       },
+      fichesFoundTitle: (query) =>
+        `Fiches trouvées pour «\u00a0${query}\u00a0»`,
       onName: (count) => `Sur ce nom · ${count}`,
       around: (count) => `Autour de ce nom · ${count}`,
       aroundNote: "Un contexte lié, pas le même nom.",

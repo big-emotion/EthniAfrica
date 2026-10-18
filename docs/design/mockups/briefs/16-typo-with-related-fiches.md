@@ -6,9 +6,8 @@ Written 2026-10-18 as brief 13, renumbered 16 the same day (pull request
 #1832 holds briefs 13 to 15). A review through three lenses (art direction,
 doctrine, accessibility) rejected the first drawing; a second review rejected
 the redrawing; a third review rejected two points of the third drawing, and
-this is the fourth, with a fourth and a fifth review's corrections (see
-« Second review », « Third review », « Fourth review » and « Fifth review »
-below).
+this is the fourth, with the corrections of a fourth, a fifth and a sixth
+review (see « Second review » to « Sixth review » below).
 Status: **proposed, awaiting the operator's approval.** Nothing here binds the
 code until the operator approves it or asks for changes. The pull request that
 needs it (#1835, ETNI-2092) must not merge before then.
@@ -86,8 +85,12 @@ Jara, then « La fiche Diarra donne aussi l’écriture Jara. »); the invitatio
 (note and quiet link); a night frame (`.dark`) with the chip, the quiet link
 and the
 accented button of `search-unknown`; one 426 px frame for « tchikaya » (one
-choice, no other fiche) and one for « konana » (two choices, the filters, and
-one other fiche found). Main measures 26096 px with brief 16.
+choice, no other fiche), one for « konana » (two choices, the filters, and
+one other fiche found) and one for the « Fiches » filter of « konana », drawn
+as brief 12's lens frames are, under the bar: the title « Fiches trouvées
+pour « konana » », then « Une autre fiche trouvée » and its caution, with
+the lens groups' top margin (`.ea-fiche-groups`, 8 px). Main measures
+26120 px with brief 16.
 
 « konana » is an example the rules produce, taken from the corpus with the
 search model of `src/lib/search/__fixtures__/corpusNameModel.ts` and held by
@@ -171,17 +174,19 @@ and keeps the approval of the boards.
    under « Des noms qui ressemblent au nom cherché ». When the form a chip
    names is not its fiche's filed name, a line in the note's ink, 8 px under
    the chips, says only what the data says, which fiche records it: « La
-   fiche Diarra donne aussi l’écriture Jara. », « La fiche Peul donne aussi le
-   nom Fellata. ». It never ranks one form under another (doctrine §1, « none
-   is crowned »): the earlier « Jara est une écriture du nom Diarra » made the
-   filed name the name and the Bambara writing a spelling derived from it,
-   and « un des noms de la fiche » made a fiche bear names. A form two fiches
-   record is one search, so one chip, with one line per fiche. The chip and
-   the line name a fiche by its filed name without its trailing bracket, the
-   rule migration 110 scores a people's forms by: « Fulbe du Massina », never
-   « Fulbe du Massina (Peuls du Massina / Macina) », the filed label doctrine
-   §1.1 keeps off the page. A chip that names its fiche's filed name, bracket
-   aside (Diola for « Diola (Joola / Jola) »), gets no line. The invitation
+   fiche Diarra donne aussi l’écriture Jara. », « La fiche Koulango donne aussi
+   le nom Pakhallas. » (for « pakhalas »). It never ranks one form under
+   another (doctrine §1, « none is crowned »): the earlier « Jara est une
+   écriture du nom Diarra » made the filed name the name and the Bambara
+   writing a spelling derived from it, and « un des noms de la fiche » made a
+   fiche bear names. A form two fiches record is one search, so one chip, with
+   one line per fiche (« icumama »: Ikumama, which the Iteso and Kumam fiches
+   both record). The chip and the line name a fiche by its filed name without
+   its trailing bracket, the rule migration 110 scores a people's forms by:
+   « La fiche Diola donne aussi le nom Ajamataw. » for « ajumataw », never
+   « La fiche Diola (Joola / Jola) … », the filed label doctrine §1.1 keeps
+   off the page. A chip that names its fiche's filed name, bracket aside
+   (Diola for « Diola (Joola / Jola) »), gets no line. The invitation
    and the caution name the spelling typed instead of « ce nom », which read as
    the lead under the chip.
 6. **A reader who writes the name this way can say so**, since DEC-075 says a
@@ -309,7 +314,8 @@ blocked; both are fixed in the boards, this brief and the code.
   that scored; the chip and the sentence name it, a line says which fiche
   records it, and only family-name leads are said to be written almost the
   same way (decision 5). `SearchFeedMisspelling.test.tsx` holds « jarra »
-  and « felata »; the query layer's tests hold the API field.
+  and a people lead (« felata » then, « pakhalas » since the sixth review);
+  the query layer's tests hold the API field.
 
 ## Fourth review (2026-10-18)
 
@@ -353,7 +359,8 @@ and the code.
   when the API sends no form. The « felata » example was also wrong: two
   fiches record Fellata, Peul and Fulbe du Massina, so the page draws two
   lines, the second « La fiche Fulbe du Massina donne aussi le nom
-  Fellata. » (decision 5, « States to draw », the REQ-125 draft).
+  Fellata. » (decision 5, « States to draw », the REQ-125 draft). The sixth
+  review withdrew the example.
 - **The fiches found were called « liées » and the charter draft kept only
   fiches « the data links to the query »** (doctrine). No code checks such a
   link: Onana reaches « konana » by its trigram score alone, the very ground
@@ -363,6 +370,44 @@ and the code.
   trouvé cette fiche, sans établir qu’elle répond à « konana ». ». The
   charter draft speaks of the fiches the search found (decision 4, `Main`,
   `fichesFound` in `src/lib/i18n/copy/searchFeed.ts`).
+
+## Sixth review (2026-10-18)
+
+The re-review of #1835 read the page against the corpus again, through the
+doctrine lens. Two points blocked; both are fixed in the code, `Main` and this
+brief, with the answers the operator delegated.
+
+- **The « Fiches » filter called a fiche found « lié »** (doctrine). Pressed
+  on « konana », it drew brief 12's « Autour de ce nom · 1 » and its note
+  « Un contexte lié, pas le même nom. » over Onana, under « Fiches sur
+  konana », one press away from the caution of « Tout ». Only its trigram
+  score ties Onana to the word. The filter of this state now lists the block
+  « Tout » shows, « Une autre fiche trouvée » and its caution, under « Fiches
+  trouvées pour « konana » » (`lens.fichesFoundTitle` in
+  `src/lib/i18n/copy/searchFeed.ts`), with the top margin of brief 12's
+  lens groups; `Main` draws it beside the « konana » frame. This filter is
+  new with this state, so no board of brief 12 changes: the related-only
+  page keeps brief 12's wording, which ETNI-2111 covers.
+- **« felata » was a spelling the corpus records** (doctrine). The Peul
+  fiche writes « Felata », as François de Medeiros wrote the name Fellata,
+  and it notes that Fellata can be used as an insult in Sudan and Chad. The
+  example broke two of this brief's « Do not ». It is replaced by
+  « pakhalas », which reaches the Koulango fiche through Pakhallas, the name
+  the Dioula gave the Koulango; only that fiche records it, and no fiche says
+  it hurts. Two more words hold the cases « felata » held: « icumama »
+  (Ikumama, which the Iteso and Kumam fiches both record) and « ajumataw »
+  (Ajamataw, recorded by the fiche filed « Diola (Joola / Jola) »).
+  How the three were checked: a script read every JSON file of
+  `dataset/source/afrik`, sources and notes included, with the search's
+  fold. None of the three words is a word of any file, the beginning of one,
+  or written inside one. The database's French stemmer
+  (`websearch_to_tsquery('french', …)`) reduces each to a stem no fiche word
+  shares. The model of `corpusNameModel.ts` gives each exactly the leads
+  above (0.73, 0.45 and 0.50), no family-name lead, and no filed people or
+  family name at 0.4 against the word, the search's own trigram floor. No
+  family name shares their consonant skeleton, a rough stand-in for the
+  phonetic key, which only the database computes. `familyNameLeads.test.ts`
+  holds the model's part, and that the Peul fiche writes « felata ».
 
 ## States to draw
 
@@ -375,12 +420,17 @@ Only the first is drawn as a board; the others are held by tests or drawn on
   the Onana fiche under « Une autre fiche trouvée » (drawn on `Main`).
 - **A lead through another of its forms**: « jarra » → the chip Jara and the
   line « La fiche Diarra donne aussi l’écriture Jara. » (drawn on `Main` as a
-  component). A people lead through an exonym, « felata » → Fellata, makes no
-  spelling claim (« Un nom qui ressemble au nom cherché »). Two fiches record
-  Fellata, so one chip and two lines: « La fiche Peul donne aussi le nom
-  Fellata. » and « La fiche Fulbe du Massina donne aussi le nom Fellata. »,
-  the second without the bracket of its filed name « Fulbe du Massina (Peuls
-  du Massina / Macina) ». Held by `SearchFeedMisspelling.test.tsx`.
+  component). A people lead through an exonym, « pakhalas » → Pakhallas, the
+  name the Dioula gave the Koulango, makes no spelling claim (« Un nom qui
+  ressemble au nom cherché ») and draws the line « La fiche Koulango donne
+  aussi le nom Pakhallas. ». A form two fiches record, « icumama » →
+  Ikumama, draws one chip and two lines: « La fiche Iteso donne aussi le nom
+  Ikumama. » and « La fiche Kumam donne aussi le nom Ikumama. ». A fiche filed
+  with a bracket, « ajumataw » → Ajamataw, the name the Diola give
+  themselves: « La fiche Diola donne aussi le nom Ajamataw. », without the
+  bracket of « Diola (Joola / Jola) ». No fiche writes any of the three typed
+  words, held by `familyNameLeads.test.ts`; the page is held by
+  `SearchFeedMisspelling.test.tsx`.
 - **A lead through its filed name, bracket aside**: « diolla » → the chip
   Diola, the form migration 110 scores for the fiche filed « Diola (Joola /
   Jola) », and no line. Held by `SearchFeedMisspelling.test.tsx`.
@@ -395,8 +445,12 @@ Only the first is drawn as a board; the others are held by tests or drawn on
 - **A misspelling with no fiche found**: the verdict, the choices and
   « Aller plus loin », with no fiches block and no filters. It is also what
   remains when every fiche found was a lead or a sound-alike.
-- **The « Fiches » lens of this state**: brief 12's « Autour de ce nom » alone,
-  under « Fiches sur konana », without the leads; unchanged otherwise.
+- **The « Fiches » lens of this state**: the block « Tout » shows, « Une autre
+  fiche trouvée » or « D’autres fiches trouvées » with its caution, under the
+  title « Fiches trouvées pour « konana » », without the leads (drawn on
+  `Main`). Brief 12's « Autour de ce nom » and its note « Un contexte lié, pas
+  le même nom. » stay on the related-only page, whose wording ETNI-2111
+  covers. Held by `SearchFeedMisspelling.test.tsx`.
 
 ## Do not
 
@@ -408,8 +462,8 @@ Only the first is drawn as a board; the others are held by tests or drawn on
 - Name a lead by its filed name when another of its forms scored, or say that
   a choice is written almost the same way when it is not a family-name lead.
 - Print a fiche's filed label with its trailing bracket in a chip or a line.
-- Call the fiches found « liées », or keep them on a link the data does not
-  hold.
+- Call the fiches found « liées », in « Tout » or under the « Fiches » filter,
+  or keep them on a link the data does not hold.
 - Ask « Cherchiez-vous… ? » when a fiche the search found writes the typed
   word in its text, a list or a source.
 - Take as an example of a misspelling a word any fiche writes, in its text,
@@ -443,7 +497,9 @@ by (**proposed**):
 > source through a quiet link; when the search also found fiches other than
 > the choices, they follow as other fiches found, under a caution that says
 > only that the search found them, never that they are linked to the query,
-> each with its own line, a fiche reached only by its sound being left out;
+> each with its own line, a fiche reached only by its sound being left out,
+> and the `fiches` filter lists them the same way, under a title that says
+> only that the search found them;
 > it closes with `further` only and draws no shelf. A query a fiche the
 > search found writes in its text is not a typo: it keeps the related-only
 > page;
@@ -501,8 +557,9 @@ the search found writes the typed word in its own text » (decision 13).
 name, as migration 094 does for a people » becomes « … and is offered under
 the form that scored (`matched_form`), with a line naming the fiche that
 records it, by its filed name without a trailing bracket, when that form is
-not its filed name; this also applies to a people lead ». The chips name `matchedForm` (Jara for « jarra », Fellata for
-« felata »), and « Do not » forbids naming a lead by its filed name when
+not its filed name; this also applies to a people lead ». The chips name
+`matchedForm` (Jara for « jarra », Pakhallas for « pakhalas »), and « Do
+not » forbids naming a lead by its filed name when
 another of its forms scored: as published, the sentence says the opposite.
 
 **REQ-125** (**proposed**), its added statement: after « must be offered even
@@ -533,13 +590,21 @@ people, its filed name, the name it gives itself or one of its exonyms; for a
 country or a family, its name), with the line naming the fiche that records
 it when that form is not its filed name, named without the trailing bracket
 of its filed name ». The same sentence in DEC-075 takes the same wording.
-New GWT: given « felata », which reaches the Peul fiche and the Fulbe du
-Massina fiche through the exonym Fellata both record, when the search offers
-both as leads, then one chip names Fellata, with one line per fiche that
-records it, « La fiche Peul donne aussi le nom Fellata. » and « La fiche
-Fulbe du Massina donne aussi le nom Fellata. » (the second fiche is filed
-« Fulbe du Massina (Peuls du Massina / Macina) »), and nothing says it is
-written the same way.
+New GWT, the typed words being written by no fiche:
+
+- given « pakhalas », which reaches the Koulango fiche only through
+  Pakhallas, the name the Dioula gave the Koulango, when the search offers
+  the Koulango fiche as a lead, then the chip names Pakhallas, the line « La
+  fiche Koulango donne aussi le nom Pakhallas. » follows it, and nothing says
+  it is written the same way;
+- given « icumama », which reaches the Iteso fiche and the Kumam fiche
+  through Ikumama, which both record, when the search offers both as leads,
+  then one chip names Ikumama, with one line per fiche, « La fiche Iteso
+  donne aussi le nom Ikumama. » and « La fiche Kumam donne aussi le nom
+  Ikumama. »;
+- given « ajumataw », which reaches the fiche filed « Diola (Joola / Jola) »
+  through Ajamataw, when the search offers it as a lead, then the line reads
+  « La fiche Diola donne aussi le nom Ajamataw. », without the bracket.
 
 **DEC-075, a question for the operator** (**open**): a spelling a fiche
 records in its text — « Sanoh » among the Kuranko clans, and in the source of
@@ -580,10 +645,11 @@ listed below (« Aller plus loin » without a heading or a list, the header at
   first letter differs, Onana for « konana ») is still listed among the fiches
   found, under the caution. Whether the page should tell it apart needs the
   API to say how a row was reached; not decided here.
-- The « Fiches » lens of this state keeps brief 12's « Autour de ce nom »
-  and its note « Un contexte lié, pas le même nom. », shared with the
-  related-only page: of Onana under « konana », it still says « lié ».
-  Changing it changes an approved board of brief 12; not decided here.
+- Decision 13 does not see a form a fiche records only in its name history
+  (`formAsWritten`, as « Felata » in the Peul fiche): the people search
+  vector (migration 060) does not read the name history, so such a form,
+  typed, does not find that fiche by its text, and the page can still offer
+  it a lead as a misspelling. Not decided here.
 - Some trailing brackets tell two fiches apart rather than give other names:
   « Rwandais (Tutsi) » and « Rwandais (Hutu) », « Luba (Katanga) » and
   « Luba (Kasai) ». Without the bracket, a line about either reads « La
@@ -640,8 +706,25 @@ lines inside its 272 px column and the page does not scroll sideways. The
 form it opens names « Recherche · tchikaya » and does not ask « Nous nous
 sommes trompés ? ». The « konana » frame of `Main` is held by
 `SearchFeedMisspelling.test.tsx` (the filters, the plural copy, Onana alone
-under « Une autre fiche trouvée », « Fiches 1 »), and so are « jarra »,
-« felata » and « diolla ».
+under « Une autre fiche trouvée », « Fiches 1 », and its « Fiches » lens),
+and so are « jarra », « pakhalas », « icumama », « ajumataw » and
+« diolla ».
+
+After the sixth review, the « Fiches » filter of « konana » was rendered on
+`next dev` at 430, 768 and 1440, the browser answering `/api/v2/search` the
+same way. The title sits 24, 32 and 48 px under the bar; « Une autre fiche
+trouvée » 32, 40 and 56 px under the title, where the approved
+`search-state-fiches` boards set their first group; the caution 4 px under
+it, the Onana card 12 px under the caution, and « Revenir à la réponse » 24,
+32 and 48 px under the card. The type and colours are those of the boards
+(title 27.6, 33.1 and 40 px Fraunces 900; group heading 16 px bold in the
+accent ink; caution 13 px in the soft ink). The page writes neither « lié »,
+« Autour de ce nom » nor « Fiches sur », and does not scroll sideways. Before
+the fix, the group sat 8 px higher than on brief 12's boards: the block now
+keeps the lens groups' top margin (`mt-afh-md`, `.ea-fiche-groups`).
+« pakhalas » was rendered the same way at the three widths: the chip
+Pakhallas, the line « La fiche Koulango donne aussi le nom Pakhallas. », no
+spelling claim.
 
 ## Approval record
 
@@ -658,7 +741,7 @@ To be approved with the boards (« Proposed amendments »):
   lead is offered beside results, with the « sanoh », « tchikaya » with
   `COG` and « hausa egypte » GWT; the peoples, countries and families keeping
   their scan and their 0.2, named by the form that scored, with the
-  « felata » GWT.
+  « pakhalas », « icumama » and « ajumataw » GWT.
 
 Approving the boards does not approve the shared chrome focus states and
 layout listed under « Follow-ups ».

@@ -216,7 +216,7 @@ function resultForms(
     // Each suggestion is a new search the reader chooses; none is marked as
     // the searched form, because nothing the reader typed matched it. Reviewed
     // terms come first: they are spellings we hold an answer for. A form two
-    // fiches record (Fellata) is one search, so one chip.
+    // fiches record (Ikumama, Iteso and Kumam) is one search, so one chip.
     const names = new Map<string, string>();
     for (const name of [...nameSuggestions, ...leads.map(leadForm)]) {
       if (!names.has(foldNameForm(name))) names.set(foldNameForm(name), name);
@@ -1329,6 +1329,11 @@ export function SearchFeed({
       ) : (
         <FichesBlock
           lens={isRelationBrowse ? "ungrouped" : "grouped"}
+          // A misspelling's fiches keep the caution of « Tout »: only the
+          // search ties them to the spelling typed (Onana to « konana », by
+          // its trigram score), and « Autour de ce nom » would call them
+          // linked.
+          foundFor={state === "typo" ? displayName : undefined}
           items={lensFicheRows}
           reviewed={Boolean(presentation)}
           language={language}
@@ -1345,7 +1350,9 @@ export function SearchFeed({
             key="lens-title"
             className="font-afh-display text-afh-h1 font-black leading-[var(--afh-leading-h1)] text-afh-text [overflow-wrap:anywhere]"
           >
-            {copy.lens.title[activeLens](displayName)}
+            {state === "typo" && activeLens === "fiches"
+              ? copy.lens.fichesFoundTitle(displayName)
+              : copy.lens.title[activeLens](displayName)}
           </h1>,
           <Fragment key="lens-content">{lensBlock[activeLens]}</Fragment>,
           <div key="lens-back">

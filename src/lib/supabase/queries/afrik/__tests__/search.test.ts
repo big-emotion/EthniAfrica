@@ -2686,8 +2686,8 @@ describe("ftsSearchEntities", () => {
     });
 
     // Migration 110 returns the form that scored beside the filed name:
-    // « jarra » reaches Diarra through its spelling Jara, and « felata » the
-    // Peul fiche through its exonym Fellata. The page names that form.
+    // « jarra » reaches Diarra through its spelling Jara, and « pakhalas » the
+    // Koulango fiche through its exonym Pakhallas. The page names that form.
     // @req REQ-125
     it("carries the form that scored as matchedForm on a lead, never on a similar name", async () => {
       leadsPayload = {
@@ -2701,10 +2701,10 @@ describe("ftsSearchEntities", () => {
           },
           {
             kind: "people",
-            id: "PPL_FULA",
-            name: "Peul",
-            matched_form: "Fellata",
-            similarity: 0.5,
+            id: "PPL_KOULANGO",
+            name: "Koulango",
+            matched_form: "Pakhallas",
+            similarity: 0.73,
           },
           { kind: "country", id: "MLI", name: "Mali", similarity: 0.25 },
         ],
@@ -2726,10 +2726,10 @@ describe("ftsSearchEntities", () => {
         },
         {
           kind: "people",
-          id: "PPL_FULA",
-          name: "Peul",
-          matchedForm: "Fellata",
-          similarity: 0.5,
+          id: "PPL_KOULANGO",
+          name: "Koulango",
+          matchedForm: "Pakhallas",
+          similarity: 0.73,
         },
         { kind: "country", id: "MLI", name: "Mali", similarity: 0.25 },
       ]);
@@ -2740,13 +2740,13 @@ describe("ftsSearchEntities", () => {
         rows: [peopleRow("PPL_TOUCOULEUR", "Toucouleur")],
       };
       const answered = await ftsSearchEntities({
-        q: "felata",
+        q: "pakhalas",
         limit: 20,
         offset: 0,
       });
 
       expect(answered.nearNames.map((name) => name.id)).toEqual([
-        "PPL_FULA",
+        "PPL_KOULANGO",
         "MLI",
       ]);
       for (const name of answered.nearNames) {

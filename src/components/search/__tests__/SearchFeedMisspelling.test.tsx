@@ -432,6 +432,67 @@ describe("a misspelling that also finds other fiches", () => {
     ]);
   });
 
+  // Brief 12's grouped lens would set Onana under « Autour de ce nom » with
+  // « Un contexte lié, pas le même nom. », and title the page « Fiches sur
+  // konana »: a link nothing in the data makes, since only its trigram score
+  // ties Onana to the word. One press away from « Tout », the lens keeps the
+  // caution « Tout » gives the same fiches.
+  // @req REQ-180
+  it("keeps the caution of « Tout » when the reader presses « Fiches », and calls no fiche linked", async () => {
+    const { container } = renderKonana();
+
+    await userEvent.click(
+      within(
+        screen.getByRole("navigation", { name: copy.filters.label })
+      ).getByRole("button", { name: new RegExp(`^${copy.filters.fiches}`) })
+    );
+
+    const fiches = screen.getByTestId("feed-block-fiches");
+    expect(container).not.toHaveTextContent(copy.lens.aroundNote);
+    expect(container).not.toHaveTextContent(/Autour de ce nom/);
+    expect(container).not.toHaveTextContent(/Fiches sur/);
+    expect(container.textContent).not.toMatch(/(?<!\p{L})liée?s?(?!\p{L})/u);
+    expect(
+      within(fiches).getByRole("heading", {
+        level: 2,
+        name: copy.answer.fichesFound.title(1),
+      })
+    ).toBeVisible();
+    expect(fiches).toHaveTextContent(
+      asShown(copy.answer.fichesFound.note(1, "konana"))
+    );
+    expect(within(fiches).getByText("Onana")).toBeVisible();
+    expect(within(fiches).getByText(onanaLine)).toBeVisible();
+    expect(within(fiches).queryByText("Konan")).toBeNull();
+    expect(
+      screen.getByRole("heading", {
+        level: 1,
+        name: copy.lens.fichesFoundTitle("konana"),
+      })
+    ).toBeVisible();
+  });
+
+  // Brief 12's lens sets its groups a margin under the lens title
+  // (`.ea-fiche-groups`, 8 px); the group of this state keeps that rhythm.
+  // @req REQ-180
+  it("sets the group of the « Fiches » lens under its title as brief 12's lens does", async () => {
+    renderKonana();
+
+    await userEvent.click(
+      within(
+        screen.getByRole("navigation", { name: copy.filters.label })
+      ).getByRole("button", { name: new RegExp(`^${copy.filters.fiches}`) })
+    );
+
+    const group = within(screen.getByTestId("feed-block-fiches"))
+      .getByRole("heading", {
+        level: 2,
+        name: copy.answer.fichesFound.title(1),
+      })
+      .closest("section");
+    expect(group?.parentElement).toHaveClass("mt-afh-md");
+  });
+
   // One column below 768 px, as the « Fiches » lens: each card carries a
   // line too long for half of a 382 px phone column (no 430 px step).
   // @req REQ-180
@@ -495,28 +556,30 @@ describe("a lead reached through another of its forms", () => {
     ).toBeTruthy();
   });
 
-  // « felata » reaches the Peul fiche through its exonym Fellata, at the
-  // 0.2 floor of the other kinds: nothing says it is written the same way.
+  // « pakhalas » reaches the Koulango fiche through Pakhallas, the name the
+  // Dioula gave the Koulango, at the 0.2 floor of the other kinds: nothing
+  // says it is written the same way. No fiche writes « pakhalas »
+  // (familyNameLeads.test.ts).
   // @req REQ-125
   it("makes no spelling claim for a people reached through one of its names", () => {
     renderMisspelling({
-      query: "felata",
+      query: "pakhalas",
       results: [],
       leads: [
         {
           type: "people",
-          id: "PPL_FULA",
-          name: "Peul",
-          matchedForm: "Fellata",
-          similarity: 0.5,
+          id: "PPL_KOULANGO",
+          name: "Koulango",
+          matchedForm: "Pakhallas",
+          similarity: 0.73,
         },
       ],
     });
 
-    expect(choiceNames()).toEqual(["Fellata"]);
+    expect(choiceNames()).toEqual(["Pakhallas"]);
     const verdict = screen.getByTestId("feed-block-verdict");
     expect(verdict).toHaveTextContent(
-      asShown(copy.answer.typoResembling.summary("felata", 1))
+      asShown(copy.answer.typoResembling.summary("pakhalas", 1))
     );
     expect(verdict).not.toHaveTextContent(/s’écri/);
     expect(
@@ -526,52 +589,76 @@ describe("a lead reached through another of its forms", () => {
       })
     ).toBeVisible();
     expect(
-      screen.getByText("La fiche Peul donne aussi le nom Fellata.")
+      screen.getByText("La fiche Koulango donne aussi le nom Pakhallas.")
     ).toBeVisible();
     expect(screen.getByTestId("feed-block-appellations")).not.toHaveTextContent(
       /un des noms de la fiche/
     );
   });
 
-  // Two fiches record Fellata in the corpus, Peul and Fulbe du Massina: the
-  // form is one search, so one chip, and each fiche gets its line. The second
-  // is filed « Fulbe du Massina (Peuls du Massina / Macina) »: the line names
-  // it without its bracket, the label doctrine §1.1 keeps off the page.
+  // Two fiches record Ikumama, Iteso and Kumam, and « icumama » reaches both
+  // through it: the form is one search, so one chip, and each fiche gets its
+  // line.
   // @req REQ-125
   it("draws one chip per form, and a line for each fiche that records it", () => {
     renderMisspelling({
-      query: "felata",
+      query: "icumama",
       results: [],
       leads: [
         {
           type: "people",
-          id: "PPL_FULA",
-          name: "Peul",
-          matchedForm: "Fellata",
-          similarity: 0.5,
+          id: "PPL_ITESO",
+          name: "Iteso",
+          matchedForm: "Ikumama",
+          similarity: 0.45,
         },
         {
           type: "people",
-          id: "PPL_FULANI_MASSINA",
-          name: "Fulbe du Massina (Peuls du Massina / Macina)",
-          matchedForm: "Fellata",
+          id: "PPL_KUMAM",
+          name: "Kumam",
+          matchedForm: "Ikumama",
+          similarity: 0.45,
+        },
+      ],
+    });
+
+    expect(choiceNames()).toEqual(["Ikumama"]);
+    expect(screen.getByTestId("feed-block-verdict")).toHaveTextContent(
+      asShown(copy.answer.typoResembling.summary("icumama", 1))
+    );
+    expect(
+      screen.getByText("La fiche Iteso donne aussi le nom Ikumama.")
+    ).toBeVisible();
+    expect(
+      screen.getByText("La fiche Kumam donne aussi le nom Ikumama.")
+    ).toBeVisible();
+  });
+
+  // « ajumataw » reaches the fiche filed « Diola (Joola / Jola) » through
+  // Ajamataw, the name the Diola give themselves. The line names the fiche
+  // without its bracket, the filed label doctrine §1.1 keeps off the page.
+  // @req REQ-125
+  it("names the fiche in the line without the bracket of its filed name", () => {
+    renderMisspelling({
+      query: "ajumataw",
+      results: [],
+      leads: [
+        {
+          type: "people",
+          id: "PPL_DIOLA",
+          name: "Diola (Joola / Jola)",
+          matchedForm: "Ajamataw",
           similarity: 0.5,
         },
       ],
     });
 
-    expect(choiceNames()).toEqual(["Fellata"]);
-    expect(screen.getByTestId("feed-block-verdict")).toHaveTextContent(
-      asShown(copy.answer.typoResembling.summary("felata", 1))
-    );
+    expect(choiceNames()).toEqual(["Ajamataw"]);
     expect(
-      screen.getByText("La fiche Peul donne aussi le nom Fellata.")
-    ).toBeVisible();
-    expect(
-      screen.getByText("La fiche Fulbe du Massina donne aussi le nom Fellata.")
+      screen.getByText("La fiche Diola donne aussi le nom Ajamataw.")
     ).toBeVisible();
     expect(screen.getByTestId("feed-block-appellations")).not.toHaveTextContent(
-      /Peuls du Massina/
+      /Joola/
     );
   });
 

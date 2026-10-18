@@ -5,6 +5,8 @@ import {
   familyNameLeads,
   fichesRecordingWord,
   nameHits,
+  neighbours,
+  peopleLeadForm,
   proseHits,
 } from "@/lib/search/__fixtures__/corpusNameModel";
 
@@ -99,5 +101,63 @@ describe("which family names are a spelling of the searched name (DEC-075)", () 
   // @req REQ-125
   it("offers nothing for a query under three letters", () => {
     expect(familyNameLeads("tc")).toEqual([]);
+  });
+});
+
+// A people lead through one of its other names (brief 16): migration 110
+// scores a people's filed name, self-appellation and exonyms at 0.2, and names
+// the form that scored.
+describe("which people a misspelling resembles (REQ-125)", () => {
+  // The example of brief 16: Pakhallas is the name the Dioula gave the
+  // Koulango, recorded by the Koulango fiche alone, and no fiche marks it as
+  // a name that hurts. No fiche writes « pakhalas » anywhere, sources
+  // included, and Koulango begins with another letter: the chip names
+  // Pakhallas, the line names the fiche.
+  // @req REQ-125
+  it("reaches Koulango for « pakhalas » only through its exonym Pakhallas, a word no fiche records", () => {
+    const leads = neighbours("pakhalas", { formsOfAPeople: true });
+
+    expect(leads.map((item) => item.key)).toEqual(["PPL_KOULANGO"]);
+    expect(peopleLeadForm("pakhalas", leads[0])).toBe("Pakhallas");
+    expect(familyNameLeads("pakhalas")).toEqual([]);
+    expect(nameHits("pakhalas")).toEqual([]);
+    expect(proseHits("pakhalas")).toEqual([]);
+    expect(fichesRecordingWord("pakhalas")).toEqual([]);
+  });
+
+  // The page's examples of a form two fiches record, and of a fiche filed
+  // with a bracket: Iteso and Kumam both record Ikumama; the fiche filed
+  // « Diola (Joola / Jola) » records Ajamataw, the name the Diola give
+  // themselves. Neither typed word is written by any fiche.
+  // @req REQ-125
+  it("reaches Iteso and Kumam for « icumama », and Diola for « ajumataw », through the form each records", () => {
+    const ikumama = neighbours("icumama", { formsOfAPeople: true });
+    const ajamataw = neighbours("ajumataw", { formsOfAPeople: true });
+
+    expect(ikumama.map((item) => item.key).sort()).toEqual([
+      "PPL_ITESO",
+      "PPL_KUMAM",
+    ]);
+    expect(ikumama.map((item) => peopleLeadForm("icumama", item))).toEqual([
+      "Ikumama",
+      "Ikumama",
+    ]);
+    expect(ajamataw.map((item) => item.key)).toEqual(["PPL_DIOLA"]);
+    expect(peopleLeadForm("ajumataw", ajamataw[0])).toBe("Ajamataw");
+    for (const query of ["icumama", "ajumataw"]) {
+      expect(familyNameLeads(query)).toEqual([]);
+      expect(proseHits(query)).toEqual([]);
+      expect(fichesRecordingWord(query)).toEqual([]);
+    }
+  });
+
+  // The withdrawn example: the Peul fiche writes « Felata », as François de
+  // Medeiros wrote the name Fellata, and records Fellata as a name that can
+  // be an insult in Sudan and Chad. A spelling our fiches record is no
+  // misspelling to correct.
+  // @req REQ-125
+  it("finds « felata » written by the Peul fiche", () => {
+    expect(fichesRecordingWord("felata")).toContain("PPL_FULA");
+    expect(proseHits("felata").map((item) => item.key)).toContain("PPL_FULA");
   });
 });

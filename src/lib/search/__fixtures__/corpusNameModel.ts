@@ -353,6 +353,27 @@ export function familyNameLeadForm(
     )[0]?.form;
 }
 
+/**
+ * The `matched_form` migration 110 returns for a people lead: the best
+ * scoring of its filed name, self-appellation and exonyms, each without its
+ * trailing bracket, the filed name first on a tie.
+ */
+// @req REQ-125
+export function peopleLeadForm(
+  query: string,
+  item: ModelEntity
+): string | undefined {
+  return item.forms
+    .map((form) => ({ form, score: similarity(form, query) }))
+    .sort(
+      (left, right) =>
+        right.score - left.score ||
+        Number(right.form === item.filedName) -
+          Number(left.form === item.filedName) ||
+        left.form.localeCompare(right.form)
+    )[0]?.form;
+}
+
 function fichePaths(dir: string): string[] {
   return readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
     const path = join(dir, entry.name);

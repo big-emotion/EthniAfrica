@@ -11,7 +11,7 @@ const BREAKABLE_SPACE = / [?:;!»]|« /;
 
 // The words a misspelling page says, as it says them for one choice and for
 // several (brief 16). « konana » is Main's example: two family names begin
-// like it, and the search also finds Onana by its spelling. « felata » is a
+// like it, and the search also finds Onana by its spelling. « pakhalas » is a
 // people lead, which is not said to be written the same way.
 function misspellingSentences(): string[] {
   return [
@@ -20,12 +20,12 @@ function misspellingSentences(): string[] {
     copy.typoWrittenAlike.summary("konana", ["Konan", "Konaté"]),
     copy.typoWrittenAlike.heading(1),
     copy.typoWrittenAlike.heading(2),
-    copy.typoResembling.summary("felata", 1),
-    copy.typoResembling.summary("felata", 2),
+    copy.typoResembling.summary("pakhalas", 1),
+    copy.typoResembling.summary("pakhalas", 2),
     copy.typoResembling.heading(1),
     copy.typoResembling.heading(2),
     copy.typoFormOf.familyName("Jara", "Diarra"),
-    copy.typoFormOf.other("Fellata", "Peul"),
+    copy.typoFormOf.other("Pakhallas", "Koulango"),
     copy.typoInvitation("tchikaya"),
     copy.fichesFound.title(1),
     copy.fichesFound.title(2),
@@ -64,11 +64,11 @@ describe("the words of a misspelling page", () => {
   // written the same way, only that they resemble the name searched.
   // @req REQ-125
   it("makes no spelling claim for the other choices, in the right number", () => {
-    expect(copy.typoResembling.summary("felata", 1)).toBe(
-      "Aucune de nos fiches ne porte le nom « felata ». Nous connaissons un nom qui ressemble à celui-ci : vous pouvez le chercher."
+    expect(copy.typoResembling.summary("pakhalas", 1)).toBe(
+      "Aucune de nos fiches ne porte le nom « pakhalas ». Nous connaissons un nom qui ressemble à celui-ci : vous pouvez le chercher."
     );
-    expect(copy.typoResembling.summary("felata", 2)).toBe(
-      "Aucune de nos fiches ne porte le nom « felata ». Nous connaissons des noms qui ressemblent à celui-ci : choisissez celui que vous cherchez."
+    expect(copy.typoResembling.summary("pakhalas", 2)).toBe(
+      "Aucune de nos fiches ne porte le nom « pakhalas ». Nous connaissons des noms qui ressemblent à celui-ci : choisissez celui que vous cherchez."
     );
     expect(copy.typoResembling.heading(1)).toBe(
       "Un nom qui ressemble au nom cherché"
@@ -77,8 +77,8 @@ describe("the words of a misspelling page", () => {
       "Des noms qui ressemblent au nom cherché"
     );
     for (const text of [
-      copy.typoResembling.summary("felata", 1),
-      copy.typoResembling.summary("felata", 2),
+      copy.typoResembling.summary("pakhalas", 1),
+      copy.typoResembling.summary("pakhalas", 2),
       copy.typoResembling.heading(1),
       copy.typoResembling.heading(2),
     ]) {
@@ -96,8 +96,8 @@ describe("the words of a misspelling page", () => {
     expect(copy.typoFormOf.familyName("Jara", "Diarra")).toBe(
       "La fiche Diarra donne aussi l’écriture Jara."
     );
-    expect(copy.typoFormOf.other("Fellata", "Peul")).toBe(
-      "La fiche Peul donne aussi le nom Fellata."
+    expect(copy.typoFormOf.other("Pakhallas", "Koulango")).toBe(
+      "La fiche Koulango donne aussi le nom Pakhallas."
     );
   });
 
@@ -111,7 +111,7 @@ describe("the words of a misspelling page", () => {
     expect(copy.typoWrittenAlike.summary("tchikaya", ["Tchicaya"])).toMatch(
       /^Aucune de nos fiches ne porte le nom /
     );
-    expect(copy.typoResembling.summary("felata", 1)).toMatch(
+    expect(copy.typoResembling.summary("pakhalas", 1)).toMatch(
       /^Aucune de nos fiches ne porte le nom /
     );
   });
@@ -184,5 +184,17 @@ describe("the fiches a misspelling's search found", () => {
     expect(copy.fichesFound.note(3, "konana")).toBe(
       "Nous avons aussi trouvé ces fiches, sans établir qu’elles répondent à « konana »."
     );
+  });
+
+  // The « Fiches » lens of a misspelling titles the same fiches. « Fiches sur
+  // konana » said they were about the spelling typed, which nothing in the
+  // data establishes; the title says only that the search found them.
+  // @req REQ-180
+  it("titles the « Fiches » lens of a misspelling as fiches found for the spelling typed", () => {
+    const title = searchFeedCopy.fr.lens.fichesFoundTitle("konana");
+
+    expect(title).toBe("Fiches trouvées pour « konana »");
+    expect(title).not.toMatch(/lié|Fiches sur/);
+    expect(title).not.toMatch(BREAKABLE_SPACE);
   });
 });

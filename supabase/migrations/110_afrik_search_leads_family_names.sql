@@ -20,9 +20,10 @@
 --
 -- Every row also names the form that scored, `matched_form`: the best-scoring
 -- form, the filed name on a tie. « jarra » reaches Diarra through its recorded
--- spelling Jara only, Diarra beginning with another letter, and a query near
--- the exonym Fellata reaches the Peul fiche. A page that named the filed name
--- would say that Diarra, or Peul, is written almost like the query. A people
+-- spelling Jara only, Diarra beginning with another letter, and « pakhalas »
+-- reaches the Koulango fiche through its exonym Pakhallas. A page that named
+-- the filed name would say that Diarra, or Koulango, is written almost like
+-- the query. A people
 -- names one of the forms 094 scores (filed name, self-appellation, exonyms); a
 -- country or a family names its name. This adds one column and changes no
 -- row, no score and no order.
