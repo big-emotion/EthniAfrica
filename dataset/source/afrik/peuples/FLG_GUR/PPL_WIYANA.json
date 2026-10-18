@@ -7,7 +7,7 @@
   "content": {
     "appellations": {
       "mainName": "Winye",
-      "selfAppellation": "Wiya / Weeya",
+      "selfAppellation": "Winye",
       "exonyms": [
         "Wiyana",
         "Wiyã",
@@ -16,9 +16,9 @@
         "Kolsi",
         "Gurunsi occidental"
       ],
-      "originOfExonyms": "Le terme Wiyana (ou Wiyã, Weeya) est l'auto-denomination du peuple. Winyé (avec le suffixe -ye d'appartenance en moore) est la forme mossi du nom. Kolsi est un autre nom vernaculaire. Le terme Gurunsi est un meta-terme pejoratif d'origine djerma (guru-si: le fer ne penetre pas) utilise par les Mossi pour designer les peuples non-centralises du Burkina Faso occidental et du Ghana septentrional.",
-      "whyProblematic": "Le terme Gurunsi est d'origine externe et pejorative, impose par les voisins Mossi. Il recouvre une pluralite de peuples distincts ne partageant ni langue commune ni institutions politiques communes. Son emploi efface les identites specifiques comme celle des Wiyana.",
-      "contemporaryUsage": "Wiyana ou Wiyã est utilise dans les sources academiques et linguistiques. Winyé est employe dans la documentation de SIL International pour la langue de Burkina Faso. La communaute se designe elle-meme par Wiya ou Weeya.",
+      "originOfExonyms": "Les sources que nous avons ouvertes n'expliquent pas le nom Winye. Un chercheur originaire de ce peuple l'écrit Winien dès 1983, dans le titre de son mémoire. Les linguistes relèvent aussi les noms Ko et Kolsi, sans les expliquer. Le nom Gourounsi est un nom d'ensemble venu de l'extérieur. Selon l'anthropologue Jean-Pierre Jacob, ce serait un sobriquet en moore, la langue des Mossi, qui voudrait dire « gibier de battue ». Ce n'est qu'une des explications proposées. Les formes Wiyana, Wiyã et Weeya, que la fiche relève aussi, n'ont été retrouvées dans aucune source que nous avons ouverte.",
+      "whyProblematic": "Le nom Gourounsi, écrit aussi Gurunsi, vient de l'extérieur. Les catalogues rangent les Winye sous ce nom d'ensemble, avec d'autres peuples. Selon l'anthropologue Jean-Pierre Jacob, ce serait un sobriquet en moore, la langue des Mossi, donné aux peuples qui vivaient au sud-ouest du royaume mossi, et qui voudrait dire « gibier de battue ». Employé seul, ce nom ne dit pas celui que les Winye se donnent.",
+      "contemporaryUsage": "Le nom Winye est celui qu'emploie l'anthropologue Jean-Pierre Jacob et que retient la Bibliothèque nationale de France. Le catalogue de langues Glottolog écrit Winyé le nom de la langue, code ISO kst, et relève aussi les noms Ko, Kols et Kolsi. La forme Wiyana n'a été retrouvée dans aucune source que nous avons ouverte.",
       "linguisticFamily": "FLG_GUR",
       "ethnoLinguisticGroup": "Gur, sous-branche Gurunsi occidental (Grusi occidental)",
       "historicalRegion": "Centre-ouest du Burkina Faso : province des Balé, autour de Boromo, sur la rive droite de la boucle du Mouhoun",
@@ -50,7 +50,7 @@
       "religiousAuthority": "Le pretre de la terre (tengsoaba) est le principal mediateur religieux, responsable des sacrifices a la Terre pour la fertilite des recoltes. Les anciens des lignages dirigent le culte des ancetres. Pas de hierarchie religieuse institutionnalisee."
     },
     "languages": {
-      "mainLanguage": "Winyé (Wiya, Kolsi)",
+      "mainLanguage": "Winyé (Ko, Kolsi)",
       "isoCodes": ["kst"],
       "dialects": [
         "Winyé du Burkina Faso (variante principale, region de Dedougou)"
@@ -60,11 +60,11 @@
     "culture": {
       "majorRites": "Rites agraires centraux lies au culte de la Terre: ceremonies de semailles avec invocations au tengban (autel de la terre), sacrifices d'animaux avant les recoltes. Rites funeraires avec participation communautaire et ceremonies ancestrales. Ceremonies d'initiation pour les hommes et les femmes marquant le passage a l'age adulte. Festivals collectifs lies au calendrier agricole (debut et fin de saison des pluies). Rites de purification apres souillure rituelle.",
       "symbols": "Masques sculptés en bois aux motifs geometriques polychromes (noir, blanc, rouge), caracteristiques de l'art Gurunsi et utilisés lors des ceremonies. Peintures murales geometriques ornant les facades des maisons (motifs de protection et d'identite clanique). Sculptures zoomorphes (Winiama sculptures parmi les plus geometriques du groupe Gurunsi). Autels de la Terre (tengban) comme centres symboliques communautaires.",
-      "artsAndMusic": "Art sculptural remarquable: les sculptures Winiama/Wiyana sont reconnues comme parmi les plus geometriques et stylisees du groupe Gurunsi. Masques zoomorphes aux yeux concentriques et effets polychromes. Peintures murales ornementales sur les habitations (motifs en noir, blanc, rouge). Architecture en banco avec decorations murales caracteristiques. Musique de balafon et percussion lors des ceremonies villageoises. Poterie feminine. Tissage de coton.",
+      "artsAndMusic": "Art sculptural remarquable: les sculptures winiama sont reconnues comme parmi les plus geometriques et stylisees du groupe Gurunsi. Masques zoomorphes aux yeux concentriques et effets polychromes. Peintures murales ornementales sur les habitations (motifs en noir, blanc, rouge). Architecture en banco avec decorations murales caracteristiques. Musique de balafon et percussion lors des ceremonies villageoises. Poterie feminine. Tissage de coton.",
       "spiritualities": "Religion traditionnelle centree sur le culte de la Terre (tengban) et le culte des ancetres. La Terre est une force sacree et souveraine dont le pretre est le mediateur. Les ancetres sont invoques par des libations et des sacrifices pour obtenir leur protection et leur bienveillance. Croyance en des esprits de la nature (cours d'eau, forets, rochers). Presence croissante du christianisme (missions evangeliques) et de l'islam sunnite au 20e-21e siecle."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Pas de royaume centralise. Les Winye etaient organises en villages independants. Leur resistance aux conquetes exterieures est symbolisee dans le nom Gurunsi (le fer ne penetre pas). L'art des masques et les maisons peintes temoignent d'une identite culturelle forte malgre l'absence de structures etatiques.",
+      "kingdomsOrChiefdoms": "Pas de royaume centralise. Les Winye etaient organises en villages independants. L'art des masques et les maisons peintes temoignent d'une identite culturelle forte malgre l'absence de structures etatiques.",
       "relationsWithNeighbors": "Relations complexes avec les Mossi voisins (tentatives de soumission historiques). Liens culturels etroits avec les autres peuples Gurunsi (Nuna, Lyele, Kassena). Echanges commerciaux regionaux (mil, sorgho, coton, betail).",
       "conflictsOrAlliances": "Resistance aux conquetes Mossi (15e-19e siecles). Victimes des razzias de Babatu (cavaliers Djerma, 1880-1896). Intégration dans la Haute-Volta française, l'actuel Burkina Faso.",
       "diaspora": "Migration economique saisonniere et permanente vers les villes burkinabè (Bobo-Dioulasso, Ouagadougou) et vers la Côte d'Ivoire."

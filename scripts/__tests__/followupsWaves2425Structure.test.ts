@@ -120,6 +120,25 @@ function readCorpus(relative: string) {
   return JSON.parse(readFileSync(resolve(AFRIK, relative), "utf8"));
 }
 
+/**
+ * Every sentence of a fiche's content prose, sources and listed forms left
+ * out: the lists only make a form findable, the prose is what states it.
+ */
+function contentSentences(content: Record<string, unknown>): string[] {
+  const strings: string[] = [];
+  const walk = (value: unknown, key?: string) => {
+    if (key === "sources" || key === "exonyms") return;
+    if (typeof value === "string") strings.push(value);
+    else if (Array.isArray(value)) value.forEach((item) => walk(item));
+    else if (value && typeof value === "object")
+      Object.entries(value).forEach(([childKey, child]) =>
+        walk(child, childKey)
+      );
+  };
+  walk(content);
+  return strings.flatMap((text) => text.split(/(?<=[.;])\s+/));
+}
+
 describe("family moves approved on 2026-10-18", () => {
   // @req REQ-178
   it("files PPL_NDAI under Niger-Congo, where Glottolog puts the Mbum languages", () => {
@@ -175,14 +194,31 @@ describe("headlines renamed on 2026-10-18", () => {
         (row: { country: string }) => row.country
       )
     ).toEqual(["BFA"]);
-    // originOfExonyms keeps its definition of Gourounsi, a label it says
-    // covers peoples on both sides of the border; it places no Winye there.
-    const placed = {
-      ...fiche.content,
-      appellations: { ...appellations, originOfExonyms: "" },
-    };
-    expect(JSON.stringify(placed)).not.toMatch(/Ghana|ghan[ée]/i);
+    expect(JSON.stringify(fiche.content)).not.toMatch(/Ghana|ghan[ée]/i);
     expect(fiche.nameHistory.summary).not.toMatch(/nom principal/);
+  });
+
+  // @req REQ-178
+  it("tells PPL_WIYANA's names in its appellation fields as its history does", () => {
+    const fiche = readPeople("PPL_WIYANA");
+    const selfGiven = fiche.nameHistory.names
+      .filter((name: { selfGiven: boolean }) => name.selfGiven)
+      .map((name: { nameText: string }) => name.nameText);
+
+    expect(selfGiven).toEqual(["Winye"]);
+    expect(fiche.content.appellations.selfAppellation).toBe("Winye");
+    // Wiyana, Wiya, Wiyã and Weeya come from no source the project opened:
+    // the prose may name them only to say so.
+    for (const sentence of contentSentences(fiche.content)) {
+      if (/Wiyana|Wiyã|\bWiya\b|Weeya/.test(sentence))
+        expect(sentence).toMatch(/retrouvée/);
+    }
+    // The fiche's own history gives one attributed hypothesis for Gourounsi;
+    // the « fer ne pénètre pas » gloss had no source.
+    expect(JSON.stringify(fiche.content)).not.toMatch(/fer ne p[ée]n[èe]tre/);
+    for (const sentence of contentSentences(fiche.content)) {
+      if (/gibier de battue/.test(sentence)) expect(sentence).toMatch(/Jacob/);
+    }
   });
 
   // @req REQ-178
@@ -205,6 +241,28 @@ describe("headlines renamed on 2026-10-18", () => {
     expect(prose).not.toMatch(/Comme les Mucubal/);
     expect(prose).not.toMatch(/Zemba, Mucubal/);
     expect(prose).not.toMatch(/Himba et des Mucubal/);
+  });
+
+  // @req REQ-178
+  it("lists in PPL_MUCUVAL's summary, as unattested, only forms its history does not tell", () => {
+    const fiche = readPeople("PPL_MUCUVAL");
+    const told = fiche.nameHistory.names.map(
+      (name: { nameText: string }) => name.nameText
+    );
+    const unattested = (text: string) => {
+      const listed =
+        /Les formes ([^,]+(?:, [^,]+)* et \S+),? que la fiche relève aussi/.exec(
+          text
+        );
+      return listed ? listed[1].split(/, | et /) : [];
+    };
+    const summaryForms = unattested(fiche.nameHistory.summary);
+
+    expect(summaryForms.length).toBeGreaterThan(0);
+    for (const form of summaryForms) expect(told).not.toContain(form);
+    expect(summaryForms).toEqual(
+      unattested(fiche.content.appellations.originOfExonyms)
+    );
   });
 
   // @req REQ-178
@@ -347,6 +405,12 @@ describe("one title, one author, one address per work", () => {
     expect(everyCitationOf(MANSUUR_DEAD_URL)).toEqual([]);
     expect(everyCitationOf(MANSUUR_WAYBACK_URL).length).toBeGreaterThan(10);
     expect(distinct(MANSUUR_WAYBACK_URL, "title").size).toBe(1);
+    // The address now points to the archived PDF: no note may say the
+    // reading was done elsewhere because that PDF could not be opened.
+    for (const citation of everyCitationOf(MANSUUR_WAYBACK_URL)) {
+      expect(citation.notes ?? "").not.toMatch(/PDF n'étant pas accessible/);
+      expect(citation.notes ?? "").not.toMatch(/version en ligne sur le site/);
+    }
   });
 
   // @req REQ-178
@@ -386,9 +450,14 @@ describe("prose corrected from the sources", () => {
     expect(content.sources.map((source: Citation) => source.url)).toContain(
       LUSA_2022_URL
     );
-    for (const zone of content.origins.historicalSettlementZones as string[]) {
-      if (/Oncocua/.test(zone)) expect(zone).toMatch(/selon/);
+    // Oncocua and the villages of Soba, Elola and Moimba come from travel
+    // sites; the Lusa dispatch names Virei and the Namibe only.
+    for (const sentence of contentSentences(content)) {
+      if (/Oncocua|Soba|Elola|Moimba/.test(sentence))
+        expect(sentence).toMatch(/voyage/);
     }
+    expect(JSON.stringify(content)).not.toMatch(/guerre civile/);
+    expect(JSON.stringify(content)).not.toMatch(/franchissement/);
   });
 
   // @req REQ-178
