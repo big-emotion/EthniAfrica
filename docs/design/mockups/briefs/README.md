@@ -38,7 +38,7 @@ after a long read (`pays/CIV`, `FLG_MANDE`, `PPL_MUCUVAL`), early exits
 | 3 | [`03-language.md`](03-language.md) | Language | `language-lingala`, `language-thin-havu` (**approved 2026-10-15**) |
 | 4 | [`04-language-family.md`](04-language-family.md) | Language family | `family-bantu`, `family-mande` (**approved 2026-10-15**) |
 | 5 | [`05-country.md`](05-country.md) | Country | `country-civ`, `country-state-civ-quaqua`, `country-state-thin-gab`, `country-state-shared-congo` (**approved 2026-10-15**) |
-| 6 | [`06-family-name.md`](06-family-name.md) | Family name | `name-traore`, with the link to the name's story of brief 10. Prompt: [`claude-design-prompt-06.md`](claude-design-prompt-06.md) |
+| 6 | [`06-family-name.md`](06-family-name.md) | Family name | `name-traore`, with the link to the name's story of brief 10; new state boards `name-state-thin-kollo` and `name-state-weak-sarr` (**approved 2026-10-18 by the operator**, eight decisions in the brief's approval record; recording pending). Prompt: [`claude-design-prompt-06.md`](claude-design-prompt-06.md) |
 | 7 | [`07-place.md`](07-place.md) | Place | `place-yamoussoukro` |
 | 8 | [`08-free-word.md`](08-free-word.md) | Free word | **new page**, three new boards (`word-race-430`, `-768`, `-1440`); `glossary` untouched |
 | 9 | [`09-our-approach.md`](09-our-approach.md) | Project page « Notre démarche » (not a type of name) | **new page**, three new boards (`approach-430`, `-768`, `-1440`); one link on `about`; footer state B on `Main` and every board (**approved 2026-10-16**). Prompt: [`claude-design-prompt-09.md`](claude-design-prompt-09.md) |
@@ -53,7 +53,6 @@ once the previous one is approved and recorded, because they share `Main` and
 
 | # | Brief | Surface | Boards |
 | --- | --- | --- | --- |
-| 6 | [`06-family-name.md`](06-family-name.md) | Family name, approved 2026-10-18 | `name-traore`, new `name-state-thin-kollo`, `name-state-weak-sarr` (**approved 2026-10-18 by the operator**, eight decisions in the brief's approval record; recording pending) |
 | 13 | [`13-search-entry.md`](13-search-entry.md) | Pass 4: one search component, the header search full screen on mobile, the search page | `Main`; three new boards (`search-entry-430`, `-768`, `-1440`) (**scope approved 2026-10-18**, boards not drawn). Prompt: [`claude-design-prompt-13.md`](claude-design-prompt-13.md) |
 | 14 | [`14-atlas-names-page.md`](14-atlas-names-page.md) | Pass 5: the Atlas page becomes « Les noms d'Afrique » | three new boards (`atlas-names-430`, `-768`, `-1440`) (**scope approved 2026-10-18**, boards not drawn). Prompt: [`claude-design-prompt-14.md`](claude-design-prompt-14.md) |
 | 15 | [`15-result-page-shorter.md`](15-result-page-shorter.md) | Pass 6: the result page tells each account once and opens shorter | `search-peul`, `search-bassa`, `search-congo`, the `search-state-*` boards with a timeline; new `search-state-long-traore-*`; `Main` (**scope approved 2026-10-18**, boards not drawn). Prompt: [`claude-design-prompt-15.md`](claude-design-prompt-15.md) |
