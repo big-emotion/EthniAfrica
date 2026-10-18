@@ -46,8 +46,7 @@ describe("search-feed plan", () => {
   // pieces it holds are about a nearest name, which the Shorts filter keeps,
   // and an empty one would only say it is empty. The filters stay where every
   // approved board draws them, first in the column, so the choices are not
-  // read as one more filter (board search-state-typo-fiches, brief 16,
-  // proposed).
+  // read as one more filter (brief 16, proposed: Main's « sanoh » frame).
   // @req REQ-178
   it("opens on the filters, then the verdict and the choices, when no answer can be given, and draws no shelf", () => {
     const plan = buildSearchFeedPlan("typo", {

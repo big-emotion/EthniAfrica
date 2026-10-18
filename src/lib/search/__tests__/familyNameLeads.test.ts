@@ -1,6 +1,10 @@
 import { describe, expect, it } from "vitest";
 
-import { familyNameLeads } from "@/lib/search/__fixtures__/corpusNameModel";
+import {
+  familyNameLeads,
+  nameHits,
+  proseHits,
+} from "@/lib/search/__fixtures__/corpusNameModel";
 
 // DEC-075 over the real family-name fiches of the repository, through the
 // pg_trgm model of corpusNameModel.ts. The SQL of migration 109 stays the
@@ -19,6 +23,20 @@ describe("which family names are a spelling of the searched name (DEC-075)", () 
   // @req REQ-125
   it("offers Mutombo for « muzombo »", () => {
     expect(leadIds("muzombo")).toContain("PAT_MUTOMBO");
+  });
+
+  // Main's example of several choices with a fiche found that is not one of
+  // them (brief 16): Sanogo and Sanou begin like « sanoh », and the Kuranko
+  // fiche names Sanoh among its clans. Held here so the example stays one
+  // the rules produce.
+  // @req REQ-125
+  it("offers Sanogo and Sanou for « sanoh », whose search also finds the Kuranko fiche", () => {
+    expect(leadIds("sanoh")).toEqual(
+      expect.arrayContaining(["PAT_SANOGO", "PAT_SANOU"])
+    );
+    expect(nameHits("sanoh")).toEqual([]);
+    expect(proseHits("sanoh").map((item) => item.key)).toContain("PPL_KURANKO");
+    expect(leadIds("sanoh")).not.toContain("PPL_KURANKO");
   });
 
   // Mukasa begins with another letter; Bukuru begins with b but shares too

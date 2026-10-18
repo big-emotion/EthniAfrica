@@ -10,19 +10,26 @@ export interface SearchFeedCopy {
      * Scoped to our fiches: people bear spellings we hold no fiche for. The
      * choices agree with how many there are, because one lead is the usual
      * case (DEC-075) and the plural then asked the reader to choose among one.
+     * A lead is only said to be written almost the same way: on this site
+     * « proche » names a recorded variant (the Tchicaya fiche calls Tschikaya
+     * « une forme proche »), which the searched spelling is not.
      */
     typoSummary: (query: string, choices: readonly string[]) => string;
     /** Heading of the suggestions: they are not forms of the searched name. */
     typoChoices: (count: number) => string;
-    /** For a reader whose own spelling is the one searched (brief 16). */
+    /**
+     * For a reader whose own spelling is the one searched (brief 16). It sits
+     * under the chips, so it names the spelling: « ce nom » read as the lead.
+     */
     typoInvitation: (query: string) => string;
     /**
      * The fiches a misspelling's search found: what the block holds, then the
-     * related-only page's caution, in the number of the cards listed.
+     * related-only page's caution, in the number of the cards listed, about
+     * the spelling typed rather than « ce nom », which read as the lead.
      */
     fichesFound: {
       title: (count: number) => string;
-      note: (count: number) => string;
+      note: (count: number, query: string) => string;
     };
     exactSummary: string;
     widenedSummary: string;
@@ -142,22 +149,24 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       relatedOnly: RELATED_ONLY_FR,
       typo: "Cherchiez-vous…\u00a0?",
       typoChoices: (count) =>
-        count === 1 ? "Le nom le plus proche" : "Les noms les plus proches",
+        count === 1
+          ? "Un nom qui s’écrit presque de la même façon"
+          : "Des noms qui s’écrivent presque de la même façon",
       typoSummary: (query, choices) =>
-        `Aucune fiche ne porte exactement le nom «\u00a0${query}\u00a0». ${
+        `Aucune de nos fiches ne porte le nom «\u00a0${query}\u00a0». ${
           choices.length === 1
-            ? `Le nom le plus proche est ${choices[0]}\u00a0: choisissez-le pour lire son histoire.`
-            : "Voici les noms les plus proches\u00a0: choisissez-en un pour lire son histoire."
+            ? `${choices[0]} s’écrit presque de la même façon\u00a0: vous pouvez chercher ce nom.`
+            : "Plusieurs noms s’écrivent presque de la même façon\u00a0: choisissez celui que vous cherchez."
         }`,
       typoInvitation: (query) =>
-        `Vous écrivez ce nom «\u00a0${query}\u00a0»\u00a0? Dites-nous d’où vient cette écriture.`,
+        `Si vous écrivez «\u00a0${query}\u00a0», dites-nous où cette écriture est employée.`,
       fichesFound: {
         title: (count) =>
           count === 1 ? "La fiche trouvée" : "Les fiches trouvées",
-        note: (count) =>
+        note: (count, query) =>
           count === 1
-            ? "Nous avons trouvé une fiche liée sans établir qu’elle répond à ce nom."
-            : RELATED_ONLY_FR,
+            ? `Nous avons trouvé une fiche liée sans établir qu’elle répond à «\u00a0${query}\u00a0».`
+            : `Nous avons trouvé des fiches liées sans établir qu’elles répondent à «\u00a0${query}\u00a0».`,
       },
       exactSummary:
         "Les formes et les sources ci-dessous disent ce que nous pouvons établir.",

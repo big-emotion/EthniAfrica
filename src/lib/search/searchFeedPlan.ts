@@ -73,8 +73,8 @@ export function buildSearchFeedPlan(
 
   // A misspelling opens on the filters, where every approved board draws
   // them: set after the choices, the pressed « Tout » read as the selected
-  // option of a set holding the name (board search-state-typo-fiches, brief
-  // 16, proposed).
+  // option of a set holding the name (Main, brief 16, proposed: the filters
+  // show once a misspelling finds a fiche other than its choices).
   const first: FeedBlockId[] = state === "typo" ? ["lenses"] : [];
   first.push("verdict");
   if (availability.appellations) first.push("appellations");

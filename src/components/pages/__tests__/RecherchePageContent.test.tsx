@@ -664,9 +664,10 @@ describe("RecherchePageContent", () => {
   // Tchicaya, neither answering it, and the page only said it found related
   // fiches. Tchicaya is the spelling the reader probably meant. Chukwu, tied
   // to the query by its sound alone, no longer comes back beside the lead
-  // (REQ-201): the API sends Tchicaya only.
+  // (REQ-201): the API sends Tchicaya only, as a result and as the lead. The
+  // chip leads to its fiche, so the page does not list it a second time.
   // @req REQ-125
-  it("asks « Cherchiez-vous… ? » for « tchikaya », offers Tchicaya, and lists the fiche found under its caution", async () => {
+  it("asks « Cherchiez-vous… ? » for « tchikaya » and offers Tchicaya once, as the choice", async () => {
     mockFetch.mockResolvedValue(
       okJson({
         data: {
@@ -720,23 +721,15 @@ describe("RecherchePageContent", () => {
     expect(
       within(choices).getByRole("link", { name: /Tchicaya/ })
     ).toBeInTheDocument();
-    const fiches = screen.getByTestId("feed-block-fiches");
+    expect(screen.getAllByRole("link", { name: /Tchicaya/ })).toHaveLength(1);
+    expect(screen.queryByTestId("feed-block-fiches")).not.toBeInTheDocument();
     expect(
-      within(fiches).getByRole("heading", {
-        name: searchFeedCopy.fr.answer.fichesFound.title(1),
+      screen.queryByRole("navigation", {
+        name: searchFeedCopy.fr.filters.label,
       })
-    ).toBeInTheDocument();
-    expect(fiches).toHaveTextContent(
-      asShown(searchFeedCopy.fr.answer.fichesFound.note(1))
-    );
-    expect(within(fiches).getByText("Tchicaya")).toBeInTheDocument();
-    expect(
-      within(fiches).queryByText(searchFeedCopy.fr.blocks.ficheMeta)
     ).not.toBeInTheDocument();
-    expect(
-      choices.compareDocumentPosition(fiches) & Node.DOCUMENT_POSITION_FOLLOWING
-    ).toBeTruthy();
-    // Board search-state-typo-fiches: no shelf saying it holds no short.
+    expect(screen.getByTestId("feed-block-further")).toBeInTheDocument();
+    // Board search-state-typo: no shelf saying it holds no short.
     expect(screen.queryByTestId("feed-block-shorts")).not.toBeInTheDocument();
     expect(screen.queryByText("Pas encore de short")).not.toBeInTheDocument();
   });

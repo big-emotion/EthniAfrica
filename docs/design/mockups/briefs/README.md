@@ -62,7 +62,7 @@ five decisions. They are drawn in that order, after brief 6, one at a time.
 
 | # | Brief | Surface | Boards |
 | --- | --- | --- | --- |
-| 16 | [`16-typo-with-related-fiches.md`](16-typo-with-related-fiches.md) | A misspelling that also finds related fiches (« tchikaya », DEC-075) | three new boards (`search-state-typo-fiches-430`, `-768`, `-1440`); `Main` (**proposed 2026-10-18, awaiting the operator's approval**) |
+| 16 | [`16-typo-with-related-fiches.md`](16-typo-with-related-fiches.md) | A misspelling, alone or with related fiches (« tchikaya », « sanoh », DEC-075) | three new boards (`search-state-typo-430`, `-768`, `-1440`); `Main` (**proposed 2026-10-18, awaiting the operator's approval**) |
 
 Brief 16 draws the state that DEC-075 (pull request #1835) adds to the result
 page. It is not one of the passes above and was drawn beside them.

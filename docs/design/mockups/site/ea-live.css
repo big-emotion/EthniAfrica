@@ -4275,10 +4275,12 @@ svg { display: block; }
 .ea-owed-card[data-tone="ask"] { background: var(--afh-surface); border: 1px solid var(--accent); }
 .ea-owed-title { font-weight: 700; }
 .ea-owed-text { margin-top: 4px; }
+/* The accent fill's own ink: the tint stays light at night, where the body
+   ink turns light too (1.12:1). Brief 16, proposed. */
 .ea-owed-action {
   display: inline-flex; align-items: center; min-height: 44px; margin-top: 12px;
   padding: 8px 16px; border: 1px solid var(--accent); border-radius: var(--afh-radius-lg);
-  background: var(--accent-tint); color: var(--afh-text); font-weight: 500;
+  background: var(--accent-tint); color: var(--accent-foreground); font-weight: 500;
 }
 .ea-further-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
 .ea-further-list a {
@@ -5020,13 +5022,16 @@ a.ea-fiche-card:focus-visible { outline: none; box-shadow: var(--afh-ring-focus)
 .ds-mobile .ea-fiche-grid[data-cols] { grid-template-columns: minmax(0, 1fr); }
 .ds-mobile .ea-lens-title { font-size: var(--afh-text-h2); }
 
-/* Brief 16 (proposed): a misspelling that also finds fiches, « tchikaya ».
-   The verdict is the plain one of search-unknown, with no rule of its own.
-   The filters come first, as on every approved board. The choice is Main's
-   name chip (.afh-name-timeline-name) in the accent, the page's one action
-   (SpellingChoicesBlock); its heading and the fiches found reuse the « Fiches »
-   lens of brief 12 (.ea-fiche-group-*, .ea-fiche-grid[data-cols]). Every
-   spacing holds at every width; tokens only, apart from the 44 px target. */
+/* Brief 16 (proposed): a misspelling, « tchikaya ». The verdict is the plain
+   one of search-unknown, with no rule of its own. The filters come first, as
+   on every approved board, when there are two. The choice is Main's name chip
+   (.afh-name-timeline-name) in the accent, the page's one action
+   (SpellingChoicesBlock), in the accent fill's ink so that it holds at night.
+   Under it, the invitation is a note (.ea-fiche-group-note) and a quiet link
+   (.ea-lens-back), never a second accented button. Its heading and the fiches
+   found reuse the « Fiches » lens of brief 12 (.ea-fiche-group-*,
+   .ea-fiche-grid[data-cols]). Every spacing holds at every width; tokens only,
+   apart from the 44 px target. */
 .ea-choices { padding-top: var(--afh-space-2xl); }
 .ea-choices-list { display: flex; flex-wrap: wrap; gap: var(--afh-space-sm); margin-top: var(--afh-space-lg); }
 .ea-choices-list li { display: flex; }
@@ -5036,13 +5041,21 @@ a.ea-fiche-card:focus-visible { outline: none; box-shadow: var(--afh-ring-focus)
   border: 1px solid var(--accent); border-radius: var(--afh-radius-full);
   background: var(--accent-tint);
   font-size: var(--afh-text-small); font-weight: 700;
-  color: var(--afh-text);
+  color: var(--accent-foreground);
 }
 .ea-choice:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
 .ea-choices-invitation {
   margin-top: var(--afh-space-2xl);
-  font-size: var(--afh-text-small); line-height: var(--afh-leading-small);
+  font-size: var(--afh-text-caption); line-height: var(--afh-leading-caption);
+  color: var(--afh-text-soft);
 }
+.ea-choices-action {
+  display: inline-flex; align-items: center; min-height: 44px;
+  padding: 0; border: 0; background: none;
+  font-size: var(--afh-text-small); font-weight: 700; color: var(--accent-ink);
+  text-decoration: underline; text-underline-offset: 4px;
+}
+.ea-choices-action:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
 
 /* The consent strip. Its layout follows its own width (a container query),
    which is the viewport's on the site, where it runs full width, and the

@@ -20,11 +20,15 @@ export interface SpellingChoicesBlockProps {
 }
 
 /**
- * The names a misspelling may have meant (board search-state-typo-fiches,
- * brief 16, proposed). The choice is the page's one action, so each chip
- * takes Main's name chip in the accent and does not read as one more filter
- * pill. The heading is the small group heading of the « Fiches » lens: the
- * verdict above it stays the strongest line under the name.
+ * The names a misspelling may have meant (boards search-state-typo, brief
+ * 16, proposed). The choice is the page's one action, so each chip takes
+ * Main's name chip in the accent and does not read as one more filter pill,
+ * and the invitation under it is a note with a quiet `action`, never a second
+ * accented button. The heading is the small group heading of the « Fiches »
+ * lens: the verdict above it stays the strongest line under the name.
+ *
+ * The chip's ink is the accent fill's own (`--accent-foreground`): the tint
+ * stays light at night while the page's body ink turns light (1.12:1).
  */
 // @req REQ-125
 export function SpellingChoicesBlock({
@@ -47,7 +51,7 @@ export function SpellingChoicesBlock({
             <Link
               href={choice.href}
               className={cn(
-                "inline-flex min-h-11 items-center rounded-afh-full border border-[color:var(--accent)] bg-[color:var(--accent-tint)] px-afh-lg py-afh-xs text-afh-small font-bold text-afh-text no-underline",
+                "inline-flex min-h-11 items-center rounded-afh-full border border-[color:var(--accent)] bg-[color:var(--accent-tint)] px-afh-lg py-afh-xs text-afh-small font-bold text-[color:var(--accent-foreground)] no-underline",
                 CHARTER_FOCUS_RING
               )}
             >
@@ -57,11 +61,11 @@ export function SpellingChoicesBlock({
         ))}
       </ul>
       {invitation ? (
-        <p className="mt-afh-2xl text-afh-small leading-[var(--afh-leading-small)] text-afh-text">
+        <p className="mt-afh-2xl text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft">
           {invitation}
         </p>
       ) : null}
-      {action ? <div className="mt-afh-lg">{action}</div> : null}
+      {action ? <div>{action}</div> : null}
     </SearchFeedBlock>
   );
 }

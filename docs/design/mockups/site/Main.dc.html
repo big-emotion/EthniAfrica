@@ -903,15 +903,15 @@ body{margin:0}
 </section>
 
 <section class="ds-section">
-<h2 class="ds-h2">Composants · nom mal écrit : verdict, choix, fiches trouvées (brief 16, proposé)</h2>
+<h2 class="ds-h2">Composants · nom mal écrit : verdict, choix, fiches trouvées (brief 16, proposé)</h2>
 <div class="ds-row afh-accent-ocre" style="gap: 40px; align-items: flex-start">
 <div class="ds-col" style="width: 382px">
-<p class="ds-cap">Choix d'un nom proche · au repos, puis au focus</p>
+<p class="ds-cap">Choix d'un nom · au repos, puis au focus</p>
 <ul class="ea-choices-list" style="margin-top: 0">
 <li><a class="ea-choice" href="#">Tchicaya</a></li>
 <li><a class="ea-choice" href="#" style="box-shadow: var(--afh-ring-focus)">Tchicaya</a></li>
 </ul>
-<p class="ds-val">La puce de nom de Main (police du texte, --afh-text-small 700, 6 px entre deux puces), avec l'accent : bord var(--accent), fond var(--accent-tint). C'est l'action de la page.</p>
+<p class="ds-val">La puce de nom de Main (police du texte, --afh-text-small 700, 6 px entre deux puces), avec l'accent : bord var(--accent), fond var(--accent-tint), texte var(--accent-foreground). C'est la seule action accentuée de la page.</p>
 </div>
 <div class="ds-col" style="width: 382px">
 <p class="ds-cap">À côté des lentilles · les lentilles restent neutres</p>
@@ -920,68 +920,93 @@ body{margin:0}
 <button class="ea-lens" type="button" aria-pressed="false">Fiches <span class="ea-lens-count">1</span></button>
 </nav>
 <ul class="ea-choices-list" style="margin-top: 12px">
-<li><a class="ea-choice" href="#">Tchicaya</a></li>
+<li><a class="ea-choice" href="#">Sanogo</a></li>
+<li><a class="ea-choice" href="#">Sanou</a></li>
 </ul>
-<p class="ds-val">Les lentilles filtrent la page ; la puce lance une nouvelle recherche. La barre reste en tête de colonne, 12 px sous le champ, comme sur toutes les planches approuvées.</p>
+<p class="ds-val">Les lentilles filtrent la page ; la puce lance une nouvelle recherche. La barre n'apparaît qu'avec deux lentilles au moins. Elle est alors en tête de colonne, 12 px sous le champ, comme sur toutes les planches approuvées.</p>
 </div>
 <div class="ds-col" style="width: 382px">
 <p class="ds-cap">Titre du groupe de choix · le petit titre de la lentille Fiches</p>
-<h4 class="ea-fiche-group-title">Le nom le plus proche</h4>
-<h4 class="ea-fiche-group-title">Les noms les plus proches</h4>
-<p class="ds-val">Au singulier pour un seul choix, au pluriel pour plusieurs. Le verdict reste la phrase la plus forte sous le nom.</p>
+<h4 class="ea-fiche-group-title">Un nom qui s’écrit presque de la même façon</h4>
+<h4 class="ea-fiche-group-title">Des noms qui s’écrivent presque de la même façon</h4>
+<p class="ds-val">Au singulier pour un seul choix, au pluriel pour plusieurs. Jamais « proche » : sur ce site, ce mot désigne une variante attestée d'un nom.</p>
 </div>
 </div>
-<p class="ds-val">Ces cadres de 426 px sont dessinés dans un tableau de 1440 px : le nom cherché y est un peu plus grand que sur un téléphone. Pour la taille exacte, voir search-state-typo-fiches-430.</p>
+<div class="ds-row afh-accent-ocre" style="gap: 40px; align-items: flex-start">
+<div class="ds-col" style="width: 382px">
+<p class="ds-cap">L'invitation sous les choix · une note et un lien discret</p>
+<p class="ea-choices-invitation" style="margin-top: 0">Si vous écrivez «&nbsp;tchikaya&nbsp;», dites-nous où cette écriture est employée.</p>
+<button class="ea-choices-action" type="button">Proposer une source</button>
+<p class="ds-val">La note de .ea-fiche-group-note et le lien de .ea-lens-back : ni fond ni bord, 44 px de haut. Le bouton accentué de search-unknown reste sur cette page-là, où il est la seule action.</p>
+</div>
+<div class="ds-col" style="width: 382px">
+<p class="ds-cap">De nuit · la puce, le lien, le bouton de search-unknown</p>
+<div class="ds-frame dark afh-accent-ocre" style="padding: 16px; color: var(--afh-text)">
+<ul class="ea-choices-list" style="margin-top: 0">
+<li><a class="ea-choice" href="#">Tchicaya</a></li>
+</ul>
+<p class="ea-choices-invitation">Si vous écrivez «&nbsp;tchikaya&nbsp;», dites-nous où cette écriture est employée.</p>
+<button class="ea-choices-action" type="button">Proposer une source</button>
+<div><button class="ea-owed-action" type="button">Proposer une source</button></div>
+</div>
+<p class="ds-val">Le fond var(--accent-tint) reste clair la nuit, alors que le texte de la page devient clair : 1,12:1. La puce et le bouton prennent donc le texte du fond accentué, var(--accent-foreground) : 13,5:1 de jour comme de nuit.</p>
+</div>
+</div>
+<p class="ds-val">Ces cadres de 426 px sont dessinés dans un tableau de 1440 px : le nom cherché y est un peu plus grand que sur un téléphone. Pour la taille exacte, voir search-state-typo-430.</p>
 <div class="ds-row" style="gap: 16px; align-items: flex-start">
 <div class="ds-col">
-<p class="ds-cap" style="max-width: 426px">Un nom proche et une fiche trouvée · « tchikaya »</p>
+<p class="ds-cap" style="max-width: 426px">Un nom, aucune autre fiche trouvée · « tchikaya »</p>
 <div class="ds-frame ds-mobile afh-accent-ocre" style="width: 426px">
 <div style="padding: 0 21px 24px">
 <section class="ea-verdict">
 <p class="ea-eyebrow">D'où vient ce nom</p>
 <h3 class="ea-verdict-name">tchikaya</h3>
-<p class="ea-verdict-line">Cherchiez-vous… ?</p>
-<p class="ea-verdict-text">Aucune fiche ne porte exactement le nom « tchikaya ». Le nom le plus proche est Tchicaya : choisissez-le pour lire son histoire.</p>
+<p class="ea-verdict-line">Cherchiez-vous…&nbsp;?</p>
+<p class="ea-verdict-text">Aucune de nos fiches ne porte le nom «&nbsp;tchikaya&nbsp;». Tchicaya s’écrit presque de la même façon&nbsp;: vous pouvez chercher ce nom.</p>
 </section>
 <section class="ea-choices">
-<h4 class="ea-fiche-group-title">Le nom le plus proche</h4>
+<h4 class="ea-fiche-group-title">Un nom qui s’écrit presque de la même façon</h4>
 <ul class="ea-choices-list">
 <li><a class="ea-choice" href="#">Tchicaya</a></li>
 </ul>
-<p class="ea-choices-invitation">Vous écrivez ce nom « tchikaya » ? Dites-nous d’où vient cette écriture.</p>
-<button class="ea-owed-action" type="button">Proposer une source</button>
+<p class="ea-choices-invitation">Si vous écrivez «&nbsp;tchikaya&nbsp;», dites-nous où cette écriture est employée.</p>
+<button class="ea-choices-action" type="button">Proposer une source</button>
 </section>
-<section class="ea-fiche-group" style="margin-top: var(--afh-section-gap)">
-<h4 class="ea-fiche-group-title">La fiche trouvée</h4>
-<p class="ea-fiche-group-note">Nous avons trouvé une fiche liée sans établir qu’elle répond à ce nom.</p>
-<ul class="ea-fiche-grid" data-cols="1">
-<li><a class="ea-fiche-card" href="#"><span class="ea-fiche-kind">Nom</span><span class="ea-fiche-name">Tchicaya</span><span class="ea-fiche-line">Un nom de famille écrit dès 1947 au Journal officiel.</span></a></li>
-</ul>
-</section>
+<p class="ea-placeholder ea-fiche-example">[La recherche trouve aussi la fiche Tchicaya. La puce y mène déjà : la page ne la montre pas une deuxième fois. Sans autre fiche, ni bloc de fiches ni filtres ; « Aller plus loin » suit.]</p>
 </div>
 </div>
 </div>
 <div class="ds-col">
-<p class="ds-cap" style="max-width: 426px">Plusieurs noms proches, aucune fiche trouvée · « pigmée » (exemple)</p>
+<p class="ds-cap" style="max-width: 426px">Deux noms, une autre fiche trouvée · « sanoh » (exemple tiré du corpus)</p>
 <div class="ds-frame ds-mobile afh-accent-ocre" style="width: 426px">
-<div style="padding: 0 21px 24px">
+<div style="padding: 12px 21px 24px">
+<nav class="ea-lenses" aria-label="Filtrer ce fil de résultats (exemple)" style="margin: 0">
+<button class="ea-lens" type="button" aria-pressed="true">Tout</button>
+<button class="ea-lens" type="button" aria-pressed="false">Fiches <span class="ea-lens-count">1</span></button>
+</nav>
 <section class="ea-verdict">
 <p class="ea-eyebrow">D'où vient ce nom</p>
-<h3 class="ea-verdict-name">pigmée</h3>
-<p class="ea-verdict-line">Cherchiez-vous… ?</p>
-<p class="ea-verdict-text">Aucune fiche ne porte exactement le nom « pigmée ». Voici les noms les plus proches : choisissez-en un pour lire son histoire.</p>
+<h3 class="ea-verdict-name">sanoh</h3>
+<p class="ea-verdict-line">Cherchiez-vous…&nbsp;?</p>
+<p class="ea-verdict-text">Aucune de nos fiches ne porte le nom «&nbsp;sanoh&nbsp;». Plusieurs noms s’écrivent presque de la même façon&nbsp;: choisissez celui que vous cherchez.</p>
 </section>
 <section class="ea-choices">
-<h4 class="ea-fiche-group-title">Les noms les plus proches</h4>
+<h4 class="ea-fiche-group-title">Des noms qui s’écrivent presque de la même façon</h4>
 <ul class="ea-choices-list">
-<li><a class="ea-choice" href="#">Pygmée</a></li>
-<li><a class="ea-choice" href="#">Aka</a></li>
-<li><a class="ea-choice" href="#">Twa</a></li>
+<li><a class="ea-choice" href="#">Sanogo</a></li>
+<li><a class="ea-choice" href="#">Sanou</a></li>
 </ul>
-<p class="ea-choices-invitation">Vous écrivez ce nom « pigmée » ? Dites-nous d’où vient cette écriture.</p>
-<button class="ea-owed-action" type="button">Proposer une source</button>
+<p class="ea-choices-invitation">Si vous écrivez «&nbsp;sanoh&nbsp;», dites-nous où cette écriture est employée.</p>
+<button class="ea-choices-action" type="button">Proposer une source</button>
 </section>
-<p class="ea-placeholder ea-fiche-example">[Exemple : Pygmée, Aka et Twa sont pris pour l'exemple ; la recherche donne les noms réels. Sans fiche trouvée, la page ne dessine aucun bloc de fiches : « Aller plus loin » suit.]</p>
+<section class="ea-fiche-group" style="margin-top: var(--afh-section-gap)">
+<h4 class="ea-fiche-group-title">La fiche trouvée</h4>
+<p class="ea-fiche-group-note">Nous avons trouvé une fiche liée sans établir qu’elle répond à «&nbsp;sanoh&nbsp;».</p>
+<ul class="ea-fiche-grid" data-cols="1">
+<li><a class="ea-fiche-card" href="#"><span class="ea-fiche-kind">Peuple</span><span class="ea-fiche-name">Kuranko</span><span class="ea-fiche-line">Le nom d'un peuple mandé de Sierra Leone et de Guinée, écrit dès 1825.</span></a></li>
+</ul>
+</section>
+<p class="ea-placeholder ea-fiche-example">[Exemple tiré du corpus par le modèle de la recherche (corpusNameModel.ts) : Sanogo et Sanou commencent comme « sanoh », et la fiche Kuranko compte Sanoh parmi les clans kuranko. La recherche trouve aussi Sanogo et Sanou : ils restent des choix et ne sont pas montrés comme fiches.]</p>
 </div>
 </div>
 </div>
@@ -989,15 +1014,15 @@ body{margin:0}
 <div class="ds-row" style="gap: 40px; align-items: flex-start">
 <div class="ds-col" style="width: 406px">
 <p class="ds-cap">Le verdict</p>
-<p class="ds-val">Le ton simple de search-unknown, au même rythme à chaque largeur : 16 px au-dessus du surtitre, 4 px au-dessus du nom, 8 px au-dessus de la ligne et du texte. Il parle de nos fiches, jamais de tous les noms : « Aucune fiche ne porte exactement le nom… ».</p>
+<p class="ds-val">Le ton simple de search-unknown, au même rythme à chaque largeur : 16 px au-dessus du surtitre, 4 px au-dessus du nom, 8 px au-dessus de la ligne et du texte. Il parle de nos fiches, jamais de tous les noms : « Aucune de nos fiches ne porte le nom… ». D'un nom proposé, il dit seulement qu'il s'écrit presque de la même façon.</p>
 </div>
 <div class="ds-col" style="width: 406px">
 <p class="ds-cap">Les choix, puis la source</p>
-<p class="ds-val">Chaque choix est une nouvelle recherche. Sous les choix, la phrase et le bouton « Proposer une source » de search-unknown : un lecteur dont la famille écrit ainsi ce nom peut le dire. Aucune lentille n'est tirée d'un nom que le lecteur n'a pas choisi : la barre garde « Tout » et « Fiches ».</p>
+<p class="ds-val">Chaque choix est une nouvelle recherche : c'est la seule action accentuée de la page. Sous les choix, une note et le lien discret « Proposer une source » : un lecteur dont la famille écrit ainsi ce nom peut le dire, sans qu'un second bouton passe devant le choix. Aucune lentille n'est tirée d'un nom que le lecteur n'a pas choisi : la barre garde « Tout » et « Fiches ».</p>
 </div>
 <div class="ds-col" style="width: 406px">
 <p class="ds-cap">Les fiches trouvées</p>
-<p class="ds-val">Le titre dit ce que le bloc contient, la phrase de prudence suit, au nombre des cartes. Chaque carte porte la ligne de sa fiche, jamais « Fiche EthniAfrica ». Un nom que la recherche n'atteint que par le son n'est pas listé (Chukwu pour « tchikaya »). Une colonne sous 768 px.</p>
+<p class="ds-val">Un choix n'est jamais répété en carte : sa puce mène déjà à sa fiche. Les autres fiches trouvées suivent, sous la phrase de prudence qui nomme l'écriture cherchée, au nombre des cartes. Chaque carte porte la ligne de sa fiche, jamais « Fiche EthniAfrica ». Un nom que la recherche n'atteint que par le son n'est pas montré (Chukwu pour « tchikaya »). Une colonne sous 768 px.</p>
 </div>
 </div>
 </section>
@@ -1197,7 +1222,7 @@ body{margin:0}
 
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":19959}}'>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":20697}}'>
 class Component extends DCLogic {
 renderVals() {
 return {};

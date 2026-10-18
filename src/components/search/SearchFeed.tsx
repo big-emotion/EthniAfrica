@@ -346,13 +346,22 @@ export function SearchFeed({
             (plateOrder.get(right.id) ?? Number.MAX_SAFE_INTEGER)
         )
       : combinedPlates;
-  // A misspelling's leads are its choices, never fiches it found: with no
-  // result, the page draws no fiches block (brief 16).
+  // A misspelling's leads are its choices, never fiches it found. The search
+  // also finds a family-name lead by its spelling (Tchicaya for « tchikaya »),
+  // and the chip's search already leads to that fiche: listed again under
+  // « La fiche trouvée », it would be a second way to the same name, presented
+  // as linked to the spelling typed (brief 16, REQ-201).
+  const leadKeys = new Set(leads.map(({ type, id }) => `${type}:${id}`));
+  const listedResults =
+    state === "typo"
+      ? results.filter(({ type, id }) => !leadKeys.has(`${type}:${id}`))
+      : results;
+  const withheldLeads = results.length - listedResults.length;
   const ficheEntries =
-    results.length > 0
-      ? groupPeopleResults([...results])
-      : state === "typo"
-        ? []
+    state === "typo"
+      ? groupPeopleResults([...listedResults])
+      : results.length > 0
+        ? groupPeopleResults([...results])
         : leads;
   const derivedFicheRows = ficheEntries.map((entry, index): FeedFicheItem =>
     entry.type === "peopleGroup"
@@ -518,7 +527,12 @@ export function SearchFeed({
       shorts: companions.shorts.items.length,
       stories: plates.length,
       quiz: companions.quiz.item ? 1 : 0,
-      fiches: ficheRows.length > 0 ? (resultCount ?? ficheRows.length) : 0,
+      fiches:
+        ficheRows.length > 0
+          ? resultCount === undefined
+            ? ficheRows.length
+            : resultCount - withheldLeads
+          : 0,
     },
     copy.filters
   );
@@ -741,8 +755,7 @@ export function SearchFeed({
       }
     />
   );
-  // The one way a reader with a name we do not hold, or a spelling we do not
-  // hold, says so (brief 12 for the unknown name, brief 16 for a misspelling).
+  // The one way a reader with a name we do not hold says so (brief 12).
   const proposeSource = (
     <SearchFeedContributionAction
       language={language}
@@ -750,9 +763,25 @@ export function SearchFeed({
       label={answerCopy.invitationAction}
       preferredKind="contribution"
       variant="outline"
-      // Board search-unknown-430 (`.ea-owed-action`): ink text at the
-      // button's own medium weight, on the accent tint.
-      className="min-h-11 border-[color:var(--accent)] bg-[color:var(--accent-tint)] py-0 text-afh-text hover:bg-[color:var(--accent-tint)] hover:text-afh-text hover:brightness-95"
+      // Board search-unknown-430 (`.ea-owed-action`): the button's own medium
+      // weight, on the accent tint, in the accent fill's ink. The page's body
+      // ink turns light at night on a tint that stays light (1.12:1).
+      className="min-h-11 border-[color:var(--accent)] bg-[color:var(--accent-tint)] py-0 text-[color:var(--accent-foreground)] hover:bg-[color:var(--accent-tint)] hover:text-[color:var(--accent-foreground)] hover:brightness-95"
+    />
+  );
+  // The same invitation for a spelling we do not hold (brief 16). Under the
+  // choices it stays quiet: the choice is that page's one action, and the
+  // accented button would be a second one, larger than the chip.
+  const proposeSpellingSource = (
+    <SearchFeedContributionAction
+      language={language}
+      target={contributionTarget}
+      label={answerCopy.invitationAction}
+      preferredKind="contribution"
+      variant="ghost"
+      // Board search-state-typo (`.ea-choices-action`), the quiet link of
+      // `.ea-lens-back`: no fill, no border, no hover lift.
+      className="h-auto min-h-11 justify-start px-0 py-0 font-bold text-[color:var(--accent-ink)] underline underline-offset-4 hover:bg-transparent hover:text-[color:var(--accent-ink)] motion-safe:hover:shadow-none"
     />
   );
   const nextStep = (
@@ -809,7 +838,7 @@ export function SearchFeed({
               }))}
               title={copy.answer.typoChoices(forms.length)}
               invitation={copy.answer.typoInvitation(displayName)}
-              action={proposeSource}
+              action={proposeSpellingSource}
             />
           );
         }
@@ -920,7 +949,11 @@ export function SearchFeed({
         // each card says what its fiche is about, under the caution.
         if (state === "typo" && !presentation?.fiches) {
           return (
-            <FichesBlock found items={lensFicheRows} language={language} />
+            <FichesBlock
+              foundFor={displayName}
+              items={lensFicheRows}
+              language={language}
+            />
           );
         }
         return (

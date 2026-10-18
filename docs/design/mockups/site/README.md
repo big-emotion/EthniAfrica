@@ -4,7 +4,7 @@ Ninety-four boards: a design-system board, the pages recorded at 430, 768 and
 1440 px from release v5.2.0 (production, captured on 2026-10-14), and the
 approved changes listed under "Changes since the record". They are the reference every change a reader can see
 answers to, whoever makes it: the team, an agency, a contractor or an agent.
-The three `search-state-typo-fiches` boards and the brief 16 section of `Main`
+The three `search-state-typo` boards and the brief 16 section of `Main`
 are proposed, not approved yet: until the operator approves them they are not
 a reference.
 
@@ -46,7 +46,7 @@ two is wrong, and the fix is decided, not improvised.
 |                   | État : origines concurrentes (« yamoussoukro ») | `search-state-competing` |
 |                   | État : origine non datée (exemple à remplacer) | `search-state-nodate` |
 |                   | État : « peul », le nom propre Fulɓe ouvert   | `search-state-peul-fulbe-open` |
-|                   | État : « tchikaya », un nom proche et des fiches (proposé) | `search-state-typo-fiches` |
+|                   | État : « tchikaya », un nom qui s’écrit presque de la même façon (proposé) | `search-state-typo` |
 | 2 · Peoples       | `PPL_FULA`                                   | `people-fula`        |
 |                   | `PPL_BASSA`                                  | `people-bassa`       |
 |                   | `PPL_ALABA`                                  | `people-thin-alaba`  |
@@ -90,7 +90,7 @@ are recorded whole, folded as the site folds them.
 | 2026-10-18 | [Brief 6, the family-name fiche](../briefs/06-family-name.md) | `name-traore`, `name-state-thin-kollo` and `name-state-weak-sarr` (new); footer B now on `name-traore` too |
 | 2026-10-17 | The sources block renamed, approved by the operator in chat on 2026-10-17 (a wording change, no brief: the layout does not move). The eyebrow « Les sources parlent » goes; the question « Qui raconte le nom X ? » becomes « Les sources du nom X » (« Les sources des noms de ce peuple » on a fiche); the sentence under it counts sources, not accounts (« Plusieurs sources expliquent l'origine de ce nom. Voici leurs 4 récits, rangés par type de source. »). The rule behind it, no figure of style in a title, is in [`reader-facing-register.md`](../../../editorial/reader-facing-register.md) | every `search-*`, `people-*`, `language-*`, `family-*` and `country-*` board that draws the block; `Main` |
 | 2026-10-18 | The same rule on the timeline labels, under the operator's rule of 2026-10-17 (no figure of style on any page): « On remonte le temps » becomes « Du plus récent au plus ancien », « Pendant ce temps, ailleurs » becomes « Ailleurs à la même époque », « Naissance du nom X · origine la plus ancienne connue du projet » becomes « Origine la plus ancienne connue du nom X ». Off the boards, the header panel « Trois chemins » becomes « Menu » and « Le saviez-vous ? » becomes « À savoir » | every board that draws the timeline |
-| 2026-10-18 | [Brief 16, a misspelling that also finds related fiches](../briefs/16-typo-with-related-fiches.md), **proposed, awaiting the operator's approval** | `search-state-typo-fiches` (new): « tchikaya », the filters first, the plain verdict of `search-unknown`, the accented choice Tchicaya and « Proposer une source », the fiche found under the related-only caution, « Aller plus loin »; no video shelf, no sound-alike fiche; `Main` (the choice chip, the plain verdict in one-choice and several-choice versions, the fiches found) |
+| 2026-10-18 | [Brief 16, a misspelling that also finds related fiches](../briefs/16-typo-with-related-fiches.md), **proposed, awaiting the operator's approval** | `search-state-typo` (new): « tchikaya », the plain verdict of `search-unknown`, the accented choice Tchicaya as the page's one action, under it a note and the quiet link « Proposer une source », « Aller plus loin »; the fiche Tchicaya is not listed again, so no fiches block and no filters; no video shelf, no sound-alike fiche; `Main` (the choice chip by day and by night, the invitation, the group heading in both numbers, « tchikaya » with one choice, « sanoh » with two choices and a fiche found under the related-only caution) |
 
 The boards of a changed page no longer record v5.2.0: they are the approved
 target, and the code is behind them until the implementation lands.
