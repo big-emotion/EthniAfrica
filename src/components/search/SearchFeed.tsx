@@ -766,7 +766,11 @@ export function SearchFeed({
   const proposeSource = (
     <SearchFeedContributionAction
       language={language}
-      target={contributionTarget}
+      // The form only displays fieldLabel; the request carries the type, id
+      // and fieldPath, which stay as they were. Without it the form no longer
+      // prints « Nous nous sommes trompés ? », the question brief 12 part A
+      // removed from this page.
+      target={{ ...contributionTarget, fieldLabel: undefined }}
       label={answerCopy.invitationAction}
       preferredKind="contribution"
       variant="outline"
