@@ -76,5 +76,63 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Mansaray à un peuple en Sierra Leone. Nous n'avons pas encore consulté de source consacrée à ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mansaray est un nom de famille de Sierra Leone, une forme du nom du clan Mansare, mandingue d'abord, puis limba et temne. Un dictionnaire le rattache au titre mandingue mansa, « empereur ». Le projet ne connaît pas encore de trace écrite ancienne de ce nom.",
+    "names": [
+      {
+        "nameText": "Mansaray",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan mandingue, limba et temne de Sierra Leone, rattaché au titre mansa.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mansaray est une forme du nom du clan Mansare, porté d'abord chez les Mandingues, puis chez les Limba et les Temne de Sierra Leone, selon le Dictionary of American Family Names.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Mansaray",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/mansaray?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue le 18 octobre 2026 (texte anglais de la page). L'entrée dit : « West African (Sierra Leone): from a variant of the name of the Mansare clan of the Mandinka and, subsequently, Sierra Leonean Limba and Temne peoples, derived from the Mandinka title mansa ‘emperor’ »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Mansaray viendrait du titre mandingue mansa, « empereur », selon le même dictionnaire. Aucune autre source lue ne le dit.",
+            "hypothesisGroup": "origine-mansaray",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Mansaray",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/mansaray?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue le 18 octobre 2026 (texte anglais de la page). L'entrée dit : « West African (Sierra Leone): from a variant of the name of the Mansare clan of the Mandinka and, subsequently, Sierra Leonean Limba and Temne peoples, derived from the Mandinka title mansa ‘emperor’ »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
