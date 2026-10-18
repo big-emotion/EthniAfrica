@@ -73,7 +73,7 @@ export interface SearchFeedCopy {
     shorts: string;
     plates: string;
     quiz: string;
-    fiches: string;
+    fichesFoundTitle: (count: number) => string;
   };
   relation: {
     exact: string;
@@ -98,7 +98,6 @@ export interface SearchFeedCopy {
     seeMore: string;
     playWithName: string;
     allQuestions: string;
-    fichesSubtitle: string;
   };
   filters: {
     label: string;
@@ -238,7 +237,8 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       shorts: "Les vidéos",
       plates: "Récits et proverbes",
       quiz: "Vérifier ce que vous avez lu",
-      fiches: "Découvrir",
+      fichesFoundTitle: (count) =>
+        count === 1 ? "La fiche trouvée" : "Les fiches trouvées",
     },
     relation: {
       exact: "Sur ce nom",
@@ -263,8 +263,6 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
       seeMore: "Voir plus",
       playWithName: "Joue avec ce nom",
       allQuestions: "Toutes les questions",
-      fichesSubtitle:
-        "Pour aller au fond : chaque fiche, avec toutes ses sources.",
     },
     filters: {
       label: "Filtrer ce fil de résultats",

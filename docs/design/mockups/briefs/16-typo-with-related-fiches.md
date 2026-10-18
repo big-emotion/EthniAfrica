@@ -14,6 +14,8 @@ migration 111 carries them.
 Status: **approved by the operator on 2026-10-18** (see « Approval record »).
 Pull request #1835 (ETNI-2092) was merged into recette the same day
 (04323b678), before this record was written.
+Brief 18 supersedes this brief's origin-eyebrow treatment: unresolved typo and
+unknown states have no « D'où vient ce nom » eyebrow.
 
 ## Why this board exists
 
@@ -57,8 +59,7 @@ In order:
    another fiche, the bar comes back first in the column, 12 px under the
    search field, where every approved board draws it (`Main`, « konana »).
 2. **The verdict**, plain, with the rhythm of `search-unknown` at every
-   width: 16 px above the eyebrow, 4 px above the name, 8 px above the line
-   and the text. « D'où vient ce nom », the searched form « tchikaya » as the
+   width: the searched form « tchikaya » as the
    title (doctrine §1.1), « Cherchiez-vous… ? », then « Aucune de nos fiches
    ne porte le nom « tchikaya ». Tchicaya s’écrit presque de la même façon :
    vous pouvez chercher ce nom. »
@@ -936,7 +937,7 @@ listed below (« Aller plus loin » without a heading or a list, the header at
 320 px) stay to be decided in their own briefs.
 
 - The shared eyebrow « D'où vient ce nom » on the pages with no answer (also
-  a question standing for a title; flagged to the #1830 sweep).
+  a question standing for a title; resolved by brief 18).
 - The search input's missing focus ring (`outline: none` with nothing in its
   place).
 - The focus rings of the lens pills and of the « Aller plus loin » links.

@@ -71,6 +71,18 @@ export function buildSearchFeedPlan(
     };
   }
 
+  if (options.relatedOnly) {
+    const first: FeedBlockId[] = ["lenses", "verdict"];
+    if (availability.appellations) first.push("appellations");
+    if (availability.shorts) first.push("shorts");
+
+    return {
+      first,
+      primary: availability.fiches ? ["fiches"] : [],
+      closing: [],
+    };
+  }
+
   // A misspelling opens on the filters, where every approved board draws
   // them: set after the choices, the pressed « Tout » read as the selected
   // option of a set holding the name (Main, brief 16, proposed: the filters

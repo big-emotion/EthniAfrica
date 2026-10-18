@@ -703,9 +703,10 @@ function presentationFor(
     ...(authoring.fiches
       ? {
           fiches: {
-            title: "Les fiches",
-            subtitle:
-              "Pour aller au fond : chaque fiche, avec toutes ses sources.",
+            title:
+              authoring.fiches.length === 1
+                ? "La fiche trouvée"
+                : "Les fiches trouvées",
             items: authoring.fiches.map(([kind, name, meta]) => ({
               kind,
               name,

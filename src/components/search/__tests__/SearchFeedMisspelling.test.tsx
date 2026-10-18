@@ -398,7 +398,11 @@ describe("a misspelling that also finds other fiches", () => {
     expect(within(fiches).queryByText("Konan")).toBeNull();
     expect(within(fiches).queryByText("Konaté")).toBeNull();
     expect(within(fiches).queryByText("Découvrir")).toBeNull();
-    expect(within(fiches).queryByText(copy.labels.fichesSubtitle)).toBeNull();
+    expect(
+      within(fiches).queryByText(
+        "Pour aller au fond : chaque fiche, avec toutes ses sources."
+      )
+    ).toBeNull();
     expect(within(fiches).queryByText(copy.blocks.ficheMeta)).toBeNull();
   });
 

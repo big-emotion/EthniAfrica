@@ -903,7 +903,13 @@ export function SearchFeed({
             entries={presentation?.answer ? [] : opening.entries}
             unanswered={presentation?.answer ? [] : opening.unanswered}
             kind={presentation?.answer?.kind}
-            eyebrow={presentation?.answer?.eyebrow ?? relationEyebrow}
+            eyebrow={
+              state === "unknown" ||
+              state === "typo" ||
+              (relatedOnly && !relation)
+                ? null
+                : (presentation?.answer?.eyebrow ?? relationEyebrow)
+            }
             language={language}
             tone={
               presentation?.answer?.tone ??

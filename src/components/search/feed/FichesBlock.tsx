@@ -124,8 +124,8 @@ export function FichesBlock({
   return (
     <SearchFeedBlock id="fiches" zone={zone}>
       <SearchFeedSectionHeading
-        title={title ?? copy.shelves.fiches}
-        subtitle={subtitle ?? copy.labels.fichesSubtitle}
+        title={title ?? copy.shelves.fichesFoundTitle(items.length)}
+        subtitle={subtitle}
       />
       <FicheGrid items={items} reviewed={reviewed} />
     </SearchFeedBlock>

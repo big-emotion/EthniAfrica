@@ -71,16 +71,38 @@ describe("FichesBlock", () => {
     );
   });
 
-  // "Dans l’atlas" said where the entries were and not what to do with them;
-  // the heading now names the action the shelf offers.
   // @req REQ-180
-  it("names the shelf by what the reader can do with it", () => {
-    render(<FichesBlock language="fr" items={[]} />);
+  it("titles one fiche by what the block holds, without a subtitle", () => {
+    render(<FichesBlock language="fr" items={[patronymeCard("Abdi")]} />);
 
     expect(
-      screen.getByRole("heading", { name: "Découvrir" })
+      screen.getByRole("heading", { name: "La fiche trouvée" })
     ).toBeInTheDocument();
-    expect(screen.queryByText("Dans l’atlas")).not.toBeInTheDocument();
+  });
+
+  // @req REQ-180
+  it("uses the plural title when the block holds more than one fiche", () => {
+    render(
+      <FichesBlock
+        language="fr"
+        items={[patronymeCard("Abdi"), patronymeCard("Bello")]}
+      />
+    );
+
+    expect(
+      screen.getByRole("heading", { name: "Les fiches trouvées" })
+    ).toBeInTheDocument();
+  });
+
+  // @req REQ-180
+  it("does not add a figure-style subtitle below the factual title", () => {
+    render(<FichesBlock language="fr" items={[patronymeCard("Abdi")]} />);
+
+    expect(
+      screen.queryByText(
+        "Pour aller au fond : chaque fiche, avec toutes ses sources."
+      )
+    ).not.toBeInTheDocument();
   });
 
   // @req REQ-002

@@ -17,7 +17,7 @@ export interface VerdictBlockProps {
   verdict: string;
   summary?: string;
   kind?: string;
-  eyebrow?: string;
+  eyebrow?: string | null;
   language?: Language;
   tone?: "answer" | "plain";
   /** Reviewed answers; when present they replace the generic verdict panel. */
@@ -57,13 +57,15 @@ export function VerdictBlock({
       zone="first"
       className={cn("pt-afh-2xl", !plain && "min-[1200px]:pt-0", className)}
     >
-      <p
-        data-testid="verdict-eyebrow"
-        className="text-afh-eyebrow font-semibold uppercase leading-[var(--afh-leading-eyebrow)] tracking-[var(--afh-eyebrow-tracking)] text-[color:var(--accent-ink)]"
-      >
-        {eyebrow ?? nameAnswerCopy[language].eyebrow}
-        {kind ? <span className="text-afh-text-soft"> · {kind}</span> : null}
-      </p>
+      {eyebrow === null ? null : (
+        <p
+          data-testid="verdict-eyebrow"
+          className="text-afh-eyebrow font-semibold uppercase leading-[var(--afh-leading-eyebrow)] tracking-[var(--afh-eyebrow-tracking)] text-[color:var(--accent-ink)]"
+        >
+          {eyebrow ?? nameAnswerCopy[language].eyebrow}
+          {kind ? <span className="text-afh-text-soft"> · {kind}</span> : null}
+        </p>
+      )}
       <h1
         className={cn(
           "mt-afh-xs font-afh-display text-afh-hero font-black leading-[var(--afh-leading-hero)] text-afh-text [overflow-wrap:anywhere]",
