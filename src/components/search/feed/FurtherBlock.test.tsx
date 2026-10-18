@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 
 import { FurtherBlock } from "@/components/search/feed/FurtherBlock";
@@ -27,7 +27,17 @@ describe("FurtherBlock", () => {
     expect(screen.getByRole("link", { name: "Parcourir" })).toHaveClass(
       "min-h-11"
     );
-    expect(screen.getByText("Aller plus loin")).toBeInTheDocument();
+    const heading = screen.getByRole("heading", {
+      level: 2,
+      name: "Aller plus loin",
+    });
+    expect(heading).toBeInTheDocument();
+
+    const list = screen.getByRole("list");
+    expect(list).toHaveClass("search-feed-pill-group");
+    const link = within(list).getByRole("link", { name: "Parcourir" });
+    expect(link.closest("li")).not.toBeNull();
+    expect(link).toHaveClass("text-[length:var(--search-feed-text-pill)]");
   });
 
   // A heading over no way out is an empty promise.

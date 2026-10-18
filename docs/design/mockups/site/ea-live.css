@@ -1305,6 +1305,12 @@ button.afh-source-diamond .afh-source-diamond-mark {
 }
 
 /* ===== search-feed.css (verbatim) ===== */
+.search-feed-pill-group {
+  /* Approved brief 17 keeps the search controls at 14 px without adding a
+     tenth global text role. The value is limited to their shared group. */
+  --search-feed-text-pill: 0.875rem;
+}
+
 /* The reviewed boards publish rounded reference-width values for the three
    fluid editorial roles used by the search feed. Keep the scale fluid between
    its existing bounds while landing exactly on the approved 430 px rendering.
@@ -4092,6 +4098,7 @@ svg { display: block; }
 /* Answer page */
 .afh-answer-page { max-width: 880px; margin-inline: auto; text-align: left; min-width: 0; }
 .ea-lenses {
+  --search-feed-text-pill: 0.875rem;
   display: flex; gap: 8px; margin-top: 12px;
   overflow-x: auto; scrollbar-width: none;
 }
@@ -4100,7 +4107,7 @@ svg { display: block; }
   min-height: 44px; padding: 0 16px;
   border: 1px solid var(--afh-border); border-radius: 9999px;
   background: var(--afh-surface);
-  font-size: 14px; font-weight: 700; line-height: 20px; color: var(--afh-text);
+  font-size: var(--search-feed-text-pill); font-weight: 700; line-height: 20px; color: var(--afh-text);
   white-space: nowrap;
 }
 .ea-lens-count { font-weight: 500; color: var(--afh-text-soft); }
@@ -4315,11 +4322,11 @@ svg { display: block; }
   padding: 8px 16px; border: 1px solid var(--accent); border-radius: var(--afh-radius-lg);
   background: var(--accent-tint); color: var(--accent-foreground); font-weight: 500;
 }
-.ea-further-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.ea-further-list { --search-feed-text-pill: 0.875rem; display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
 .ea-further-list a {
   display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px;
   border: 1px solid var(--afh-border); border-radius: 9999px; background: var(--afh-surface);
-  font-size: 14px; font-weight: 600; color: var(--afh-text);
+  font-size: var(--search-feed-text-pill); font-weight: 600; color: var(--afh-text);
 }
 .ea-further-list a:focus-visible,
 .ea-further-list a[data-board-focus] {

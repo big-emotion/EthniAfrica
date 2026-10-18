@@ -26,6 +26,7 @@ describe("LensesBlock", () => {
     });
     expect(navigation).toHaveAttribute("data-feed-block", "lenses");
     expect(navigation).toHaveAttribute("data-feed-zone", "first");
+    expect(navigation).toHaveClass("search-feed-pill-group");
     expect(navigation).toHaveClass(
       "overflow-x-auto",
       "flex-nowrap",
@@ -42,7 +43,12 @@ describe("LensesBlock", () => {
     const active = screen.getByRole("button", { name: "Fiches 5" });
     expect(active).toHaveAttribute("aria-pressed", "true");
     for (const button of screen.getAllByRole("button")) {
-      expect(button).toHaveClass("min-h-11", "shrink-0", "snap-start");
+      expect(button).toHaveClass(
+        "min-h-11",
+        "shrink-0",
+        "snap-start",
+        "text-[length:var(--search-feed-text-pill)]"
+      );
     }
 
     fireEvent.click(screen.getByRole("button", { name: "Shorts 4" }));
