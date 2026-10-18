@@ -232,12 +232,11 @@ describe("PeopleDetailViewV2 — the link to the story of its name", () => {
     ).toBeTruthy();
   });
 
-  // The board people-fula draws « Suivre l'histoire du nom Fulɓe », but the
-  // result page for « Fulɓe » answers no subject today: the people is filed
-  // « Peul » and its self-name « Fulbe (pluriel), Pullo (singulier) ». The
-  // brief's own rule then holds: no link the page behind it cannot keep.
+  // The board people-fula draws « Suivre l'histoire du nom Fulɓe ». The people
+  // is filed « Peul », and the search answers it under every name its history
+  // tells (ETNI-2093), so the page behind the link keeps its promise.
   // @req REQ-198
-  it("draws no link on PPL_FULA, whose result page for « Fulɓe » does not answer it", () => {
+  it("draws « Suivre l'histoire du nom Fulɓe » on PPL_FULA, as the board people-fula does", () => {
     const { container } = render(
       <PeopleDetailViewV2
         people={peopleRecord("PPL_FULA")}
@@ -249,13 +248,13 @@ describe("PeopleDetailViewV2 — the link to the story of its name", () => {
       />
     );
 
-    expect(
-      container.querySelector('[data-fiche-section="D\'où vient le nom ?"]')
-    ).not.toBeNull();
-    expect(
-      screen.queryByRole("link", { name: /Suivre l'histoire du nom/ })
-    ).toBeNull();
-    expect(screen.queryByText(/La page du nom présente/)).toBeNull();
+    const answer = container.querySelector(
+      `[data-fiche-section="D'où vient le nom ?"]`
+    ) as HTMLElement;
+    const link = within(answer).getByRole("link", {
+      name: /^Suivre l'histoire du nom Fulɓe/,
+    });
+    expect(link).toHaveAttribute("href", `${SEARCH}/ful%C9%93e`);
   });
 
   // @req REQ-198

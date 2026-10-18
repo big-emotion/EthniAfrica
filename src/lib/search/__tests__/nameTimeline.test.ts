@@ -53,6 +53,22 @@ describe("buildNameTimeline — which name comes first", () => {
     expect(buildNameTimeline(PEUL_HISTORY, "fulbe").selfLead).toBeUndefined();
   });
 
+  // « al-Jaʿali » and « Al-Jaali » compare equal under the fold (REQ-135);
+  // the reader who typed one of them searched that one, not both.
+  // @req REQ-135
+  it("marks only the history spelling typed, never one the fold equates with it", () => {
+    const history = historyOf(
+      "dataset/source/afrik/patronymes/PAT_AL_JAALI.json"
+    );
+    const searched = (query: string) =>
+      buildNameTimeline(history, query)
+        .names.filter((name) => name.searched)
+        .map(({ nameText }) => nameText);
+
+    expect(searched("Al-Jaali")).toEqual(["Al-Jaali"]);
+    expect(searched("al-Jaʿali")).toEqual(["al-Jaʿali"]);
+  });
+
   // Brief 11 §1a: the lead announces only the explanations the page shows,
   // the accounts of the explanations tiles built for the self-name.
   // @req REQ-197

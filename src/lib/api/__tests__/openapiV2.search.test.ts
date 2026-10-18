@@ -203,6 +203,33 @@ describe("OpenAPI v2 unified search contract", () => {
     expect(description).toMatch(/DEC-075/);
   });
 
+  // @req REQ-135
+  it("documents the history names on every row kind the page answers by name, as an optional addition", () => {
+    const rows = {
+      peoples: "PeopleV2",
+      countries: "CountryV2",
+      families: "LanguageFamilyV2",
+      patronymes: "PatronymeSearchResultV2",
+      languages: "LanguageSearchResultV2",
+    };
+
+    for (const [array, name] of Object.entries(rows)) {
+      const items = schemas.SearchResponseData.properties?.[array]?.items;
+      const historyNames = schemas[name]?.properties?.historyNames;
+
+      expect(schemaName(items?.$ref ?? ""), array).toBe(name);
+      expect(schemaName(historyNames?.$ref ?? ""), name).toBe(
+        "SearchHistoryNamesV2"
+      );
+      expect(schemas[name]?.required ?? [], name).not.toContain("historyNames");
+    }
+    expect(schemas.SearchHistoryNamesV2).toMatchObject({
+      type: "array",
+      items: { type: "string" },
+    });
+    expect(schemas.SearchHistoryNamesV2?.description).toMatch(/history order/);
+  });
+
   // @req REQ-002
   it("enumerates every kind the merge can emit", () => {
     const kind = schemas.SearchHitV2?.properties?.kind;

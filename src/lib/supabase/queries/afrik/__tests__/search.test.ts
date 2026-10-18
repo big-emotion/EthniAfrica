@@ -641,6 +641,79 @@ describe("ftsSearchEntities", () => {
     expect(result.countries[0].nameEn).toBeUndefined();
   });
 
+  // @req REQ-135
+  it("carries each kind's history names in history order, as the function returns them", async () => {
+    peoplesPayload = {
+      total: 1,
+      rows: [
+        peopleRow("PPL_FULA", "Peul", {
+          exactMatch: true,
+          historyNames: ["Fulɓe", "Peul", "Fulani"],
+        }),
+      ],
+    };
+    countriesPayload = {
+      total: 1,
+      rows: [
+        countryRow("CIV", "Côte d'Ivoire", { historyNames: ["Côte d'Ivoire"] }),
+      ],
+    };
+    familiesPayload = {
+      total: 1,
+      rows: [
+        familyRow("FLG_BERBERE", "Berbère", { historyNames: ["Berbère"] }),
+      ],
+    };
+    languagesPayload = {
+      total: 1,
+      rows: [languageRow("dyu", "Dioula", { historyNames: ["Julakan"] })],
+    };
+    patronymesPayload = {
+      total: 1,
+      rows: [
+        patronymeRow("PAT_TRAORE", "Traore", { historyNames: ["Traoré"] }),
+      ],
+    };
+
+    const result = await ftsSearchEntities({
+      q: "Fulɓe",
+      limit: 20,
+      offset: 0,
+    });
+
+    expect(result.peoples[0].historyNames).toEqual(["Fulɓe", "Peul", "Fulani"]);
+    expect(result.countries[0].historyNames).toEqual(["Côte d'Ivoire"]);
+    expect(result.families[0].historyNames).toEqual(["Berbère"]);
+    expect(result.languages[0].historyNames).toEqual(["Julakan"]);
+    expect(result.patronymes[0].historyNames).toEqual(["Traoré"]);
+  });
+
+  // @req REQ-135
+  it("reads a row from a function not yet migrated as no history names", async () => {
+    peoplesPayload = { total: 1, rows: [peopleRow("PPL_BETE", "Bété")] };
+    countriesPayload = {
+      total: 1,
+      rows: [countryRow("TCD", "Tchad", { historyNames: null })],
+    };
+    familiesPayload = { total: 1, rows: [familyRow("FLG_KROU", "Krou")] };
+    languagesPayload = {
+      total: 1,
+      rows: [languageRow("bet", "Bété", { historyNames: ["Bété", 3] })],
+    };
+    patronymesPayload = {
+      total: 1,
+      rows: [patronymeRow("PAT_KEITA", "Keïta")],
+    };
+
+    const result = await ftsSearchEntities({ q: "bété", limit: 20, offset: 0 });
+
+    expect(result.peoples[0].historyNames).toEqual([]);
+    expect(result.countries[0].historyNames).toEqual([]);
+    expect(result.families[0].historyNames).toEqual([]);
+    expect(result.languages[0].historyNames).toEqual(["Bété"]);
+    expect(result.patronymes[0].historyNames).toEqual([]);
+  });
+
   // @req REQ-002
   it("keeps the database's ranking of language families instead of re-sorting them", async () => {
     // The tier ladder now lives in afrik_search_language_families (migration
@@ -2040,7 +2113,7 @@ describe("ftsSearchEntities", () => {
 
   // DEC-075: a family name is offered as a lead when it is a spelling of the
   // searched name. Which family names qualify (first letter, >= 0.4) is the
-  // SQL's (migration 109); whether one is offered — nothing answers exactly —
+  // SQL's (migration 110); whether one is offered — nothing answers exactly —
   // is decided here, with REQ-201's test.
   describe("family-name leads (DEC-075)", () => {
     const tchicayaLead = {

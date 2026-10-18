@@ -1,4 +1,4 @@
--- Migration 109 — near-miss leads also offer a family name, as a spelling of
+-- Migration 110 — near-miss leads also offer a family name, as a spelling of
 -- the searched name (REQ-125, DEC-075; ETNI-2092)
 --
 -- Context: `afrik_search_leads` (070, re-issued by 084 and 094) scans peoples,
@@ -171,7 +171,7 @@ SELECT jsonb_build_object(
 $$;
 
 COMMENT ON FUNCTION public.afrik_search_leads(TEXT, INT, TEXT) IS
-  'Near-miss leads (REQ-125). A trigram similarity scan. A people scores the best of its filed name, self-appellation and exonyms (content.appellations), each without a trailing parenthesis, and is emitted under its filed name; countries and families score their name for p_lang (en | fr, default fr); these three kinds keep similarity >= 0.2. A family name (afrik_patronymes) scores the best of its filed name and recorded spellings (content.spellings[].spelling) among the forms that begin with the folded query''s first letter, keeps similarity >= 0.4 and is emitted under its filed name (DEC-075). Returns {"rows": [{"kind", "id", "name", "similarity"}, ...]}: at most p_limit rows of peoples, countries and families, plus at most p_limit family names, ordered by similarity. A folded query shorter than 3 characters returns no rows. SECURITY INVOKER: reads only tables already published to anon. Migration 109.';
+  'Near-miss leads (REQ-125). A trigram similarity scan. A people scores the best of its filed name, self-appellation and exonyms (content.appellations), each without a trailing parenthesis, and is emitted under its filed name; countries and families score their name for p_lang (en | fr, default fr); these three kinds keep similarity >= 0.2. A family name (afrik_patronymes) scores the best of its filed name and recorded spellings (content.spellings[].spelling) among the forms that begin with the folded query''s first letter, keeps similarity >= 0.4 and is emitted under its filed name (DEC-075). Returns {"rows": [{"kind", "id", "name", "similarity"}, ...]}: at most p_limit rows of peoples, countries and families, plus at most p_limit family names, ordered by similarity. A folded query shorter than 3 characters returns no rows. SECURITY INVOKER: reads only tables already published to anon. Migration 110.';
 
 REVOKE ALL ON FUNCTION public.afrik_search_leads(TEXT, INT, TEXT) FROM PUBLIC;
 GRANT EXECUTE ON FUNCTION public.afrik_search_leads(TEXT, INT, TEXT)

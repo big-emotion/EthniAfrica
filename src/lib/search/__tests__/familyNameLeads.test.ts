@@ -7,7 +7,7 @@ import {
 } from "@/lib/search/__fixtures__/corpusNameModel";
 
 // DEC-075 over the real family-name fiches of the repository, through the
-// pg_trgm model of corpusNameModel.ts. The SQL of migration 109 stays the
+// pg_trgm model of corpusNameModel.ts. The SQL of migration 110 stays the
 // authority; its verification block re-checks these on recette.
 describe("which family names are a spelling of the searched name (DEC-075)", () => {
   const leadIds = (query: string) =>
@@ -53,7 +53,7 @@ describe("which family names are a spelling of the searched name (DEC-075)", () 
     expect(leadIds("chikaya")).not.toContain("PAT_TCHICAYA");
   });
 
-  // Migration 109 scores the filed name and `spellings[].spelling` only. An
+  // Migration 110 scores the filed name and `spellings[].spelling` only. An
   // attestation's country code is no form of the name: « cog » is not a
   // spelling of Tchicaya because it was attested in Congo.
   // @req REQ-125

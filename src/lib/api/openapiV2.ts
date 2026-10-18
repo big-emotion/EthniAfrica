@@ -910,19 +910,19 @@ const options: swaggerJsdoc.Options = {
               type: "array",
               items: { $ref: "#/components/schemas/PeopleV2" },
               description:
-                "Matching peoples, ranked. Each carries relevance, exactMatch, normalizedScore, confidence, languageFamilyName, languageFamilyNameEn (migration 084; null when the family has no English name) and a snippet whose matched terms are wrapped in [[ ]].",
+                "Matching peoples, ranked. An exact answer is the filed name or any name the fiche's history tells, compared on afrik_name_key (migration 109). Each carries relevance, exactMatch, normalizedScore, confidence, languageFamilyName, languageFamilyNameEn (migration 084; null when the family has no English name), historyNames and a snippet whose matched terms are wrapped in [[ ]].",
             },
             countries: {
               type: "array",
               items: { $ref: "#/components/schemas/CountryV2" },
               description:
-                "Matching countries, ranked by ts_rank with name_fr outranking etymology. Each carries nameEn beside nameFr, relevance, exactMatch, normalizedScore and a snippet. Empty when the request carries only a relation scope.",
+                "Matching countries, ranked by ts_rank with name_fr outranking etymology. exactMatch also fires on any name the country's history tells (migration 109). Each carries nameEn beside nameFr, relevance, exactMatch, normalizedScore, historyNames and a snippet. Empty when the request carries only a relation scope.",
             },
             families: {
               type: "array",
               items: { $ref: "#/components/schemas/LanguageFamilyV2" },
               description:
-                "Matching language families, ranked by afrik_search_language_families (migration 069): accent-insensitive exact (1.0) > prefix (0.6) > substring (0.3) on name_fr — then a prose tier (0.1) through search_vector for a term that appears only in the decolonial text (DEC-028). Each carries nameEn beside nameFr, relevance, exactMatch, normalizedScore and a snippet.",
+                "Matching language families, ranked by afrik_search_language_families (migration 069): accent-insensitive exact (1.0) > prefix (0.6) > substring (0.3) on name_fr — then a prose tier (0.1) through search_vector for a term that appears only in the decolonial text (DEC-028). exactMatch also fires on any name the family's history tells (migration 109). Each carries nameEn beside nameFr, relevance, exactMatch, normalizedScore, historyNames and a snippet.",
             },
             persons: {
               type: "array",
@@ -934,7 +934,7 @@ const options: swaggerJsdoc.Options = {
               type: "array",
               items: { $ref: "#/components/schemas/PatronymeSearchResultV2" },
               description:
-                "Matching names (REQ-135), ranked by afrik_search_patronymes (migration 066): exact name match, then a prefix/accent-insensitive lexical match, then a dmetaphone phonetic match, then a pg_trgm typo-tolerance fallback. A name reached only through its phonetic key is left out of this array, of patronymesTotal and of total when the query has an exact answer in any kind or in the production ledger (migration 108, REQ-201), and when the response offers a family-name lead beside its results, which stands for the spelling the phonetic key was bridging (DEC-075). Each carries relevance, exactMatch, normalizedScore and a snippet.",
+                "Matching names (REQ-135), ranked by afrik_search_patronymes (migration 066): exact name match, then a prefix/accent-insensitive lexical match, then a dmetaphone phonetic match, then a pg_trgm typo-tolerance fallback. A name reached only through its phonetic key is left out of this array, of patronymesTotal and of total when the query has an exact answer in any kind or in the production ledger (migration 108, REQ-201), and when the response offers a family-name lead beside its results, which stands for the spelling the phonetic key was bridging (DEC-075); a name the history tells is an exact answer too (migration 109). Each carries relevance, exactMatch, normalizedScore, historyNames and a snippet.",
             },
             quizzes: {
               type: "array",
@@ -952,7 +952,7 @@ const options: swaggerJsdoc.Options = {
               type: "array",
               items: { $ref: "#/components/schemas/LanguageSearchResultV2" },
               description:
-                "Matching languages (REQ-136), ranked by afrik_search_languages (migration 068): exact match on the ISO 639-3 id or the name, then a prefix/accent-insensitive lexical match. Each carries nameEn, familyName, familyNameEn, relevance, exactMatch and a snippet.",
+                "Matching languages (REQ-136), ranked by afrik_search_languages (migration 068): exact match on the ISO 639-3 id, the name or any name the language's history tells (migration 109), then a prefix/accent-insensitive lexical match. Each carries nameEn, familyName, familyNameEn, relevance, exactMatch, historyNames and a snippet.",
             },
             peoplesTotal: {
               type: "integer",
@@ -1025,7 +1025,7 @@ const options: swaggerJsdoc.Options = {
               type: "array",
               items: { $ref: "#/components/schemas/SearchLeadV2" },
               description:
-                "Near-miss leads (REQ-125), ranked by pg_trgm similarity alone (migrations 094, 109). When total is 0: up to 3 suggestions across peoples, countries, language families and family names. A family name is also offered as a spelling of the searched name when total is greater than 0 (DEC-075): up to 3 family names, only when nothing answers the query exactly (no hit of any kind with exactMatch, no published word, and, once the search has found family names, no family name the query spells exactly through its filed name or a recorded spelling), only when the family name or one of its recorded spellings begins with the query's first letter (both folded: lower case, accents and apostrophes removed), and only at similarity >= 0.4. A search scoped with familyId or countryId never gets a family-name lead. Empty otherwise, for a multi-name widening and for quiz-lens searches.",
+                "Near-miss leads (REQ-125), ranked by pg_trgm similarity alone (migrations 094, 110). When total is 0: up to 3 suggestions across peoples, countries, language families and family names. A family name is also offered as a spelling of the searched name when total is greater than 0 (DEC-075): up to 3 family names, only when nothing answers the query exactly (no hit of any kind with exactMatch, no published word, and, once the search has found family names, no family name the query spells exactly through its filed name or a recorded spelling), only when the family name or one of its recorded spellings begins with the query's first letter (both folded: lower case, accents and apostrophes removed), and only at similarity >= 0.4. A search scoped with familyId or countryId never gets a family-name lead. Empty otherwise, for a multi-name widening and for quiz-lens searches.",
             },
             nearNames: {
               type: "array",
@@ -1318,6 +1318,13 @@ const options: swaggerJsdoc.Options = {
             "normalizedScore",
             "snippet",
           ],
+        },
+        SearchHistoryNamesV2: {
+          type: "array",
+          items: { type: "string" },
+          description:
+            "Search rows only (migration 109, REQ-135): every name the fiche's history tells (nameHistory.names[].nameText), in history order and spelt as the fiche writes it. The row answers the query exactly when any of them, folded by afrik_name_key, equals the folded query. An empty array when the fiche has no history block.",
+          example: ["Fulɓe", "Peul", "Fulani"],
         },
         SearchHitV2: {
           type: "object",
@@ -2245,6 +2252,9 @@ const options: swaggerJsdoc.Options = {
             answer: {
               $ref: "#/components/schemas/SearchAnswerV2",
             },
+            historyNames: {
+              $ref: "#/components/schemas/SearchHistoryNamesV2",
+            },
             nameHistory: {
               $ref: "#/components/schemas/NameHistoryV2",
             },
@@ -2283,6 +2293,9 @@ const options: swaggerJsdoc.Options = {
             },
             answer: {
               $ref: "#/components/schemas/SearchAnswerV2",
+            },
+            historyNames: {
+              $ref: "#/components/schemas/SearchHistoryNamesV2",
             },
             nameHistory: {
               $ref: "#/components/schemas/NameHistoryV2",
@@ -2430,6 +2443,9 @@ const options: swaggerJsdoc.Options = {
               description:
                 "Match excerpt over nameMain; matched terms are wrapped in [[ ]].",
             },
+            historyNames: {
+              $ref: "#/components/schemas/SearchHistoryNamesV2",
+            },
           },
           required: [
             "id",
@@ -2501,6 +2517,9 @@ const options: swaggerJsdoc.Options = {
               description:
                 "Match excerpt over name; matched terms are wrapped in [[ ]].",
             },
+            historyNames: {
+              $ref: "#/components/schemas/SearchHistoryNamesV2",
+            },
           },
           required: [
             "id",
@@ -2566,6 +2585,9 @@ const options: swaggerJsdoc.Options = {
             },
             answer: {
               $ref: "#/components/schemas/SearchAnswerV2",
+            },
+            historyNames: {
+              $ref: "#/components/schemas/SearchHistoryNamesV2",
             },
             nameHistory: {
               $ref: "#/components/schemas/NameHistoryV2",

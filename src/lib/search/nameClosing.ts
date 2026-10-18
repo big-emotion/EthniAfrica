@@ -3,8 +3,8 @@ import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
 import { normalizeString } from "@/lib/normalize";
 import { getNameAnswerRoute } from "@/lib/routing";
 import {
+  addressedHistoryNames,
   foldNameForm,
-  historyAddressSpelling,
   nameSearchHref,
 } from "@/lib/search/nameAddress";
 import { readNaming } from "@/lib/search/naming";
@@ -13,7 +13,7 @@ import type {
   NameHistoryAccount,
   TimelineName,
 } from "@/lib/search/nameTimeline";
-import { answersToSearch } from "@/lib/search/searchedName";
+import { searchedAmong } from "@/lib/search/searchedName";
 import {
   SOURCE_KIND_FAMILIES,
   sourceKindFamily,
@@ -232,8 +232,12 @@ function namerOf(
   { subject, nameHistory }: SubjectHistory,
   searched: string
 ): NextStepTarget | null {
+  const isSearched = searchedAmong(
+    nameHistory.names.map(({ nameText }) => nameText),
+    searched
+  );
   const name = nameHistory.names.find((candidate) =>
-    answersToSearch(candidate.nameText, searched)
+    isSearched(candidate.nameText)
   );
   const origin = name?.languageOfOrigin;
   if (!origin || name.selfGiven) return null;
@@ -387,11 +391,16 @@ export function nameFormOf(
     .split(/\s*[()/]\s*/)
     .map((part) => part.trim())
     .filter(Boolean);
-  const told = new Map(toldNames.map((name) => [normalizeString(name), name]));
-  const toldPart = parts.find((part) => told.has(normalizeString(part)));
-  return toldPart
-    ? told.get(normalizeString(toldPart))
-    : (parts[0] ?? filedLabel);
+  // The comparison fold equates « al-Jaʿali » and « Al-Jaali » (REQ-135); the
+  // history spelling the label writes wins, and the fold only breaks a miss.
+  const toldAs = (part: string) =>
+    toldNames.find((name) => foldNameForm(name) === foldNameForm(part)) ??
+    toldNames.find((name) => normalizeString(name) === normalizeString(part));
+  for (const part of parts) {
+    const told = toldAs(part);
+    if (told) return told;
+  }
+  return parts[0] ?? filedLabel;
 }
 
 /**
@@ -418,13 +427,11 @@ export interface NameStoryLink {
  * The address of the fiche's story name (REQ-200), when the address
  * directory holds one for it — or nothing.
  *
- * The directory is keyed on each subject's filed name (`getAnsweredNameRows`)
- * and spelt as that subject's history tells it (`getNameAddressSpellings`).
- * So through this fiche the story name has an address only when it is the
- * filed name, accents and case aside, and the history tells that form with a
- * source above unverified. The history alone is not enough: hav's tells
- * « Kihavu », but hav is filed « Havu (kihavu) » and
- * `/fr/atlas/recherche/kihavu` answers 404.
+ * The directory holds every name a subject's history tells with a source
+ * above unverified, spelt as that history spells it (`addressedHistoryNames`,
+ * ETNI-2093): each of them is an exact answer for its subject. So through this
+ * fiche the story name has an address when its own history sources it, filed
+ * name or not — « Fulɓe » on PPL_FULA, filed « Peul ».
  *
  * A fiche route mounts no directory (`NameAddressProvider`), so this applies
  * the directory's rule rather than reading its list. When another subject
@@ -434,13 +441,13 @@ export interface NameStoryLink {
  * 404.
  */
 function storyAddressSpelling(
-  subject: StorySubject,
   history: NameHistory,
   name: string
 ): string | undefined {
-  return foldNameForm(name) === foldNameForm(subject.name)
-    ? historyAddressSpelling(history, subject.name)
-    : undefined;
+  const key = foldNameForm(name);
+  return addressedHistoryNames(history).find(
+    (told) => foldNameForm(told) === key
+  );
 }
 
 /**
@@ -453,12 +460,12 @@ function storyAddressSpelling(
  * — the brief's own reason for drawing none without a history.
  *
  * The page's own selection decides it (`selectNameSubject`), run on the fiche
- * shaped as its search hit, so the two cannot drift apart. If the selection
- * later answers more of the forms this hit carries (Fulɓe on PPL_FULA,
- * Berbère on FLG_BERBERE), the link follows with no change here; a fix that
- * reads what the hit does not carry, such as the name history, has to pass it
- * here too. It assumes the search returns the fiche among its hits for its
- * own filed name or forms, which an exact name match does.
+ * shaped as its search hit, so the two cannot drift apart. The hit carries
+ * the history's names as the search row does (migration 109, ETNI-2093):
+ * the search answers a fiche exactly under each of them, so « Fulɓe » on
+ * PPL_FULA and « Berbère » on FLG_BERBERE draw their link. It assumes the
+ * search returns the fiche among its hits for any of those names, which an
+ * exact answer does.
  *
  * The link leads to the name's own address when it has one, and otherwise to
  * the search page's reading of the name. Neither picks a subject, so
@@ -479,9 +486,10 @@ export function nameStoryLink(
     id: subject.id,
     name: subject.name,
     naming: readNaming(subject.type, subject.content),
+    historyNames: history.names.map((told) => told.nameText),
   };
   if (selectNameSubject([hit], name, language).length === 0) return undefined;
-  const address = storyAddressSpelling(subject, history, name);
+  const address = storyAddressSpelling(history, name);
   return {
     name,
     href: address

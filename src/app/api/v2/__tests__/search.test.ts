@@ -33,6 +33,7 @@ vi.mock("@/lib/search/searchQueryLog", () => ({
 import { ftsSearchHandler } from "@/api/v2/handlers/search";
 import { evaluateRateLimit } from "@/lib/api/rate-limit";
 import { searchQueryLog } from "@/lib/search/searchQueryLog";
+import { selectNameSubject } from "@/lib/search/nameSubject";
 import {
   buildSearchParams,
   mapSearchEnvelope,
@@ -499,6 +500,42 @@ describe("GET /api/v2/search (route)", () => {
       expect.objectContaining({ id: "swa", name: "Swahili" }),
     ]);
     expect(body.data.languagesTotal).toBe(1);
+  });
+
+  // ETNI-2093: a row answered by a name its history tells carries those
+  // names, and the page reading the response counts it among its subjects.
+  // @req REQ-135
+  it("carries a row's history names to the page, whose subjects then include it", async () => {
+    (ftsSearchHandler as ReturnType<typeof vi.fn>).mockResolvedValue({
+      ...mockEnvelope,
+      data: {
+        ...mockEnvelope.data,
+        peoples: [
+          {
+            id: "PPL_FULA",
+            nameMain: "Peul",
+            content: {},
+            exactMatch: true,
+            historyNames: ["Fulɓe", "Peul", "Fulani"],
+          },
+        ],
+      },
+    });
+
+    const req = new NextRequest(
+      `http://localhost/api/v2/search?${buildSearchParams("Fulɓe")}`
+    );
+    const res = await GET(req);
+    const body = await res.json();
+
+    expect(body.data.peoples[0].historyNames).toEqual([
+      "Fulɓe",
+      "Peul",
+      "Fulani",
+    ]);
+    expect(
+      selectNameSubject(mapSearchEnvelope(body), "Fulɓe").map(({ id }) => id)
+    ).toEqual(["PPL_FULA"]);
   });
 
   // REQ-125: a zero-result search surfaces near-miss leads in the envelope.

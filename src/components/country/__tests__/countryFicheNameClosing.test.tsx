@@ -215,19 +215,21 @@ describe("CountryRecordView — the link to the story of its name", () => {
   });
 
   // TZA is filed « République-Unie de Tanzanie » and its story leads with
-  // « Tanzanie », a name the result page does not answer it under today.
+  // « Tanzanie », which the search answers it under since it reads every name
+  // a history tells (ETNI-2093).
   // @req REQ-198
-  it("draws no link on TZA, whose result page for « Tanzanie » does not answer it", () => {
+  it("draws « Suivre l'histoire du nom Tanzanie » on TZA, its story's leading name", () => {
     const { container } = render(
       <CountryRecordView country={countryRecord("TZA")} language="fr" />
     );
 
-    expect(
-      container.querySelector('[data-fiche-section="En bref"]')
-    ).not.toBeNull();
-    expect(
-      screen.queryByRole("link", { name: /Suivre l'histoire du nom/ })
-    ).toBeNull();
+    const brief = container.querySelector(
+      '[data-fiche-section="En bref"]'
+    ) as HTMLElement;
+    const link = within(brief).getByRole("link", {
+      name: /^Suivre l'histoire du nom Tanzanie/,
+    });
+    expect(link).toHaveAttribute("href", `${SEARCH}/tanzanie`);
   });
 
   // @req REQ-198

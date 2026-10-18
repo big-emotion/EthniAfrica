@@ -43,8 +43,11 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * citations left PPL_TUAREG with the Touareg name-history corrections, and
  * the sources added to it carry a source_kind. 1003 -> 1001 on 2026-10-18:
  * wave 24 typed two untyped citations of the people fiches it wrote.
+ * 1001 -> 991 the same day: ten untyped citations left with PPL_MUCUBAL,
+ * folded into PPL_MUCUVAL, and two people fiches withdrawn after wave 24;
+ * the one carried to the Cabo Verde fiche carries a source_kind.
  */
-export const UNTYPED_SOURCE_RATCHET = 1001;
+export const UNTYPED_SOURCE_RATCHET = 991;
 
 export interface UntypedSource {
   file: string;

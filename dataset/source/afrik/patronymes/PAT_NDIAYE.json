@@ -37,6 +37,15 @@
           "sourceRefs": ["dafn-familysearch-ndiaye"]
         }
       ]
+    },
+    {
+      "spelling": "Njie",
+      "attestations": [
+        {
+          "countryId": "GMB",
+          "sourceRefs": ["dafn-familysearch-njie"]
+        }
+      ]
     }
   ],
   "transmissionMode": "patrilineal",
@@ -67,12 +76,25 @@
       "countryId": "SEN",
       "status": "attested",
       "sourceRefs": ["madubuike-1994-african-names", "dafn-familysearch-ndiaye"]
+    },
+    {
+      "countryId": "GMB",
+      "status": "attested",
+      "sourceRefs": ["dafn-familysearch-njie"]
     }
   ],
   "alliances": [],
   "casteOrSocialFunction": null,
   "bearers": [],
-  "homonyms": [],
+  "homonyms": [
+    {
+      "label": "Njie / N’Jie bakweri du Cameroun",
+      "entityType": "people",
+      "entityId": "PPL_BAKWERI",
+      "distinction": "Cette forme camerounaise est décrite comme un nom bakweri d’étymologie inexpliquée, distinct de Njie en Gambie présenté comme variante de Ndiaye.",
+      "sourceRefs": ["dafn-familysearch-njie"]
+    }
+  ],
   "sources": [
     {
       "sourceKey": "afrik-candidate-queue",
@@ -97,6 +119,14 @@
       "tier": "unverified",
       "source_kind": "repository",
       "notes": "Entrée FamilySearch reproduisant le Dictionary of American Family Names de Patrick Hanks. Elle décrit Ndiaye/N'Diaye comme nom de clan wolof principalement sénégalais, également porté chez les Sérères, et rapporte la tradition de Ndiadiane Ndiaye comme ancêtre des Wolof."
+    },
+    {
+      "sourceKey": "dafn-familysearch-njie",
+      "title": "Dictionary of American Family Names — Njie entry",
+      "url": "https://www.familysearch.org/en/surname?surname=njie",
+      "tier": "unverified",
+      "source_kind": "repository",
+      "notes": "Entrée FamilySearch reproduisant le Dictionary of American Family Names de Patrick Hanks (2003, 2006), relue le 18 octobre 2026 : « West African (Gambia): variant of Ndiaye » ; « Central African (Cameroon; also N'Jie): name found among the Bakweri people, of unexplained etymology »."
     }
   ],
   "gaps": [
@@ -111,10 +141,6 @@
     {
       "fieldPath": "bearers",
       "reason": "Ndiadiane Ndiaye est présenté comme semi-légendaire et non comme un porteur historiquement vérifié ; aucun bearer n’est donc ajouté après consultation des deux références."
-    },
-    {
-      "fieldPath": "homonyms",
-      "reason": "Le DAFN signale aussi Ndiaye chez les Sérères, mais ne démontre pas une origine distincte de l’usage wolof ; la pluralité des peuples ne suffit pas à créer un homonyme."
     }
   ],
   "nameHistory": {

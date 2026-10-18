@@ -44,7 +44,7 @@
  *       who types its name. When `total` is 0, `leads` (REQ-125) carries up
  *       to 3 near-miss suggestions across peoples, countries, language
  *       families and family names — a trigram similarity scan (migrations
- *       094, 109) below the main search's own fuzzy floor, so the reader sees
+ *       094, 110) below the main search's own fuzzy floor, so the reader sees
  *       what the engine almost understood instead of a bare empty result.
  *       When `total` is greater than 0, `leads` carries only family names
  *       offered as a spelling of the searched name (DEC-075): nothing

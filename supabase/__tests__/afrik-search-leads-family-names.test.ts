@@ -1,5 +1,5 @@
 /**
- * Static contract for migration 109 (DEC-075). Unit tests reach no live
+ * Static contract for migration 110 (DEC-075). Unit tests reach no live
  * Supabase, so these pin what the migration a human will apply has to say;
  * the measured similarities are checked on recette with the verification
  * block at the end of the migration.
@@ -12,7 +12,7 @@ import { describe, expect, it } from "vitest";
 const sql = readFileSync(
   path.resolve(
     process.cwd(),
-    "supabase/migrations/109_afrik_search_leads_family_names.sql"
+    "supabase/migrations/110_afrik_search_leads_family_names.sql"
   ),
   "utf8"
 );
@@ -26,7 +26,7 @@ function familyNameBranch(): string {
   return sql.slice(start, end);
 }
 
-describe("near-miss leads over family names (migration 109)", () => {
+describe("near-miss leads over family names (migration 110)", () => {
   // @req REQ-125
   it("keeps the signature and grants of 084 and 094, so PostgREST sees no overload", () => {
     expect(sql).toMatch(

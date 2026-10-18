@@ -118,6 +118,55 @@ describe("the spellings that have an address", () => {
     await expect(resolveNameAddress("lingala")).rejects.toThrow("range error");
   });
 
+  // Every name a history tells is an exact answer (ETNI-2093), so each one
+  // the history sources above unverified has an address — the self-given
+  // names first among them, which the filed names had left without one.
+  // @req REQ-200
+  it("addresses every sourced name a history tells, not only the filed one", async () => {
+    rows.mockResolvedValue([
+      {
+        name: "Peul",
+        nameHistory: history(
+          ["Fulɓe", "referenced"],
+          ["Peul", "official"],
+          ["Fellata", "unverified"]
+        ),
+      },
+      {
+        name: "Konkomba",
+        nameHistory: history(["Bikpakpaam", "referenced"]),
+      },
+    ]);
+
+    const spellings = await getNameAddressSpellings();
+
+    expect(spellings).toEqual(
+      expect.arrayContaining(["Fulɓe", "Peul", "Bikpakpaam"])
+    );
+    expect(spellings).not.toContain("Fellata");
+    // Konkomba's history does not tell its filed name: no account to read.
+    expect(spellings).not.toContain("Konkomba");
+  });
+
+  // The address key folds accents and case only (DEC-074): « Fulbe » is a
+  // reading of the search page, not a variant of the « Fulɓe » address.
+  // @req REQ-200
+  it("resolves a history name's address, its case variant, and nothing for its letter variant", async () => {
+    rows.mockResolvedValue([
+      { name: "Peul", nameHistory: history(["Fulɓe", "referenced"]) },
+    ]);
+
+    expect(await resolveNameAddress("ful%C9%93e")).toEqual({
+      spelling: "Fulɓe",
+      isAddress: true,
+    });
+    expect(await resolveNameAddress("FUL%C6%81E")).toEqual({
+      spelling: "Fulɓe",
+      isAddress: false,
+    });
+    expect(await resolveNameAddress("fulbe")).toBeNull();
+  });
+
   // @req REQ-200
   it("is recomputed hourly, with the other corpus aggregates", () => {
     expect(cacheRegistrations).toContainEqual({

@@ -34,7 +34,7 @@ export interface ModelEntity {
   /**
    * A family name's `spellings[].spelling`, qualifier removed. `forms` holds
    * every string under `spellings`, attestations included; the leads read
-   * only these, as migration 109 does.
+   * only these, as migration 110 does.
    */
   spellings?: string[];
 }
@@ -306,7 +306,7 @@ export function neighbours(
 export const FAMILY_NAME_LEAD_FLOOR = 0.4;
 
 /**
- * The family-name branch of the leads (migration 109, DEC-075): a family name
+ * The family-name branch of the leads (migration 110, DEC-075): a family name
  * qualifies through its filed name or a recorded spelling that begins with
  * the query's first letter, both folded, at the family-name search's own
  * threshold. Whether it is offered —

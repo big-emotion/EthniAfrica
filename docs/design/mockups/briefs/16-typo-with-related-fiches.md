@@ -152,8 +152,8 @@ and keeps the approval of the boards.
    `data-cols` from the count, no 430 px step.
 10. **States and limits** are listed below, with a proposed charter line.
 11. **Out of scope**, listed under « Follow-ups » and not changed.
-12. **Migration number.** Recette holds migrations up to 108 on 2026-10-18,
-    so this pull request keeps `109_afrik_search_leads_family_names.sql`.
+12. **Migration number.** Recette took migration 109 from ETNI-2093 (#1836) on 2026-10-18,
+    so this pull request renames its file `110_afrik_search_leads_family_names.sql`.
 
 Kept from the first drawing:
 
@@ -302,7 +302,7 @@ Listed for their own briefs, not changed here:
 ## Comparison with the page
 
 The page was rendered on `next dev` at 430, 768 and 1440 on 2026-10-18. The
-local database has no migration 109, so the browser answered
+local database has no migration 110, so the browser answered
 `/api/v2/search` as the query layer now does for « tchikaya » (its unit tests
 hold that): Tchicaya as the one result and the one lead, Chukwu withheld.
 Every block box (search field, eyebrow, name, line, text, choice heading,

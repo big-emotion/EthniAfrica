@@ -13,11 +13,6 @@
       "kind": "patronyme",
       "id": "PAT_DIALLO",
       "label": { "fr": "Diallo" }
-    },
-    {
-      "kind": "patronyme",
-      "id": "PAT_JALLOW",
-      "label": { "fr": "Jallow" }
     }
   ],
   "sitePath": "/fr/atlas/noms/PAT_DIALLO",
