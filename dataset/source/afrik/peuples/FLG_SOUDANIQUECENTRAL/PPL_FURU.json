@@ -120,5 +120,199 @@
         "source_kind": "encyclopedia"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Furu désigne un groupe de la république démocratique du Congo, au sud de l'Oubangui. De l'autre côté du fleuve, en Centrafrique, vivent les Bagiro, qui parlent presque la même langue, disent être issus des Furu et se nomment eux-mêmes Gbaya. Les sources que nous avons lues n'expliquent pas l'origine des noms Furu et Bagiro.",
+    "names": [
+      {
+        "nameText": "Furu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un groupe du nord de la RDC et de sa langue, proche de celle des Bagiro.",
+        "periodLabel": "Écrit depuis 1987 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Furu désigne un groupe qui vit en république démocratique du Congo, au sud de l'Oubangui. Ce n'est pas un autre nom des Fer ni des Kresh, contrairement à ce qu'on lit parfois, selon le linguiste Pascal Boyeldieu.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Numeral Systems of the World's Languages : Furu / Bagiro",
+                "author": "Eugene S. L. Chan",
+                "year": null,
+                "url": "https://lingweb.eva.mpg.de/channumerals/Furu.htm",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Page hébergée par l'Institut Max Planck d'anthropologie évolutionnaire ; données et commentaires fournis par le linguiste Pascal Boyeldieu (CNRS-LLACAN) le 21 novembre 2013. Lue le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1987,
+              "to": 1987,
+              "label": "1987"
+            },
+            "era": "modern",
+            "statement": "Le nom Furu figure dans le guide des langues du monde de Merritt Ruhlen, paru en 1987, selon Glottolog. C'est la plus ancienne trace de ce nom que le projet connaît, de seconde main. Le groupe existait déjà avant elle.",
+            "formAsWritten": "Furu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Glottolog — Furu",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/furu1242",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "autres noms",
+                "notes": "Fiche furu1242 lue le 18 octobre 2026 : autres noms de la langue d'après les catalogues qu'elle cite, et pays où elle est parlée. Nous n'avons pas lu l'ouvrage de Ruhlen."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bagiro",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom donné aux voisins centrafricains des Furu, qui se nomment eux-mêmes Gbaya.",
+        "periodLabel": "Écrit depuis 1995 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bagiro s'écrit aussi Bagero, Baguero ou Baguiro dans les catalogues de langues, selon Glottolog, qui le range parmi les autres noms de la langue furu.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog — Furu",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/furu1242",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "autres noms",
+                "notes": "Fiche furu1242 lue le 18 octobre 2026 : autres noms de la langue d'après les catalogues qu'elle cite, et pays où elle est parlée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Bagiro désigne un groupe de Centrafrique qui vit non loin des Furu, sur l'autre rive de l'Oubangui, et dont la langue est très proche de la leur, peut-être une variante, selon Pascal Boyeldieu.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Numeral Systems of the World's Languages : Furu / Bagiro",
+                "author": "Eugene S. L. Chan",
+                "year": null,
+                "url": "https://lingweb.eva.mpg.de/channumerals/Furu.htm",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Page hébergée par l'Institut Max Planck d'anthropologie évolutionnaire ; données et commentaires fournis par le linguiste Pascal Boyeldieu (CNRS-LLACAN) le 21 novembre 2013. Lue le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1995,
+              "to": 1995,
+              "label": "1995"
+            },
+            "era": "modern",
+            "statement": "Le nom Bagiro apparaît dans le titre d'un article du linguiste Pascal Boyeldieu sur le bagiro, « langue sara de la République centrafricaine », présenté à un colloque en 1992 et publié en 1995. C'est la plus ancienne trace de ce nom que le projet connaît. Le groupe existait déjà avant elle.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Pascal Boyeldieu",
+                "role": "linguiste, auteur de l'article"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Modifications tonales et limites syntaxiques en bagiro (langue sara de la République Centrafricaine) (notice Glottolog)",
+                "author": "Pascal Boyeldieu",
+                "year": 1995,
+                "url": "https://glottolog.org/resource/reference/id/61715",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Dans les actes du 5e colloque de linguistique nilo-saharienne, tenu à Nice en août 1992, Cologne, Rüdiger Köppe, 1995. Titre relevé le 18 octobre 2026 sur la notice de Glottolog, qui écrit « limités » ; nous n'avons pas lu l'article."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Il y a environ deux siècles, selon les Bagiro"
+            },
+            "era": "polity",
+            "statement": "Les ancêtres des Bagiro faisaient partie du groupe furu, qu'ils auraient quitté il y a environ deux cents ans : c'est ce qu'affirment les Bagiro eux-mêmes, selon Pascal Boyeldieu.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Numeral Systems of the World's Languages : Furu / Bagiro",
+                "author": "Eugene S. L. Chan",
+                "year": null,
+                "url": "https://lingweb.eva.mpg.de/channumerals/Furu.htm",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Page hébergée par l'Institut Max Planck d'anthropologie évolutionnaire ; données et commentaires fournis par le linguiste Pascal Boyeldieu (CNRS-LLACAN) le 21 novembre 2013. Lue le 18 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gbaya",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "fuu",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Bagiro ; une section des Kresh porte le même nom.",
+        "periodLabel": "Rapporté en 2013",
+        "accounts": [
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Gbaya est celui que se donnent les Bagiro eux-mêmes. C'est aussi le nom d'une section des Kresh, d'où l'erreur fréquente qui confond les Furu et les Bagiro avec les Kresh, selon Pascal Boyeldieu. C'est la plus ancienne trace de ce nom pour ce groupe que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Numeral Systems of the World's Languages : Furu / Bagiro",
+                "author": "Eugene S. L. Chan",
+                "year": null,
+                "url": "https://lingweb.eva.mpg.de/channumerals/Furu.htm",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Page hébergée par l'Institut Max Planck d'anthropologie évolutionnaire ; données et commentaires fournis par le linguiste Pascal Boyeldieu (CNRS-LLACAN) le 21 novembre 2013. Lue le 18 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
