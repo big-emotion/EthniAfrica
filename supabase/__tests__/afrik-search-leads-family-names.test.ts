@@ -2,7 +2,7 @@
  * Static contract for `afrik_search_leads` as the latest migration that
  * defines it (REQ-125, DEC-075). Migrations 110 and 111 are applied on
  * recette and stay as they were: 111 cut a lower-case class prefix at four
- * letters and dropped the self-names abakwaManala and abakwaNdzundza, and 112
+ * letters and dropped the self-names abakwaManala and abakwaNdzundza, and 113
  * re-issues the function with eight. Unit tests reach no live Supabase, so
  * these pin what the migration a human will apply has to say; the measured
  * similarities are checked on recette with the verification block at the end
@@ -20,7 +20,7 @@ import {
 
 const MIGRATIONS = path.resolve(process.cwd(), "supabase/migrations");
 const ONE_NAME_MIGRATION = "111_afrik_search_leads_one_name.sql";
-const PREFIX_CAP_MIGRATION = "112_afrik_search_leads_prefix_cap.sql";
+const PREFIX_CAP_MIGRATION = "113_afrik_search_leads_prefix_cap.sql";
 
 const readMigration = (file: string) =>
   readFileSync(path.join(MIGRATIONS, file), "utf8");
@@ -81,8 +81,8 @@ function familyNameBranch(): string {
 
 describe("near-miss leads, as the latest migration re-issues them", () => {
   // @req REQ-125
-  it("is migration 112 or a later one, so the prefix cap correction is never dropped", () => {
-    expect(Number.parseInt(latest.slice(0, 3), 10)).toBeGreaterThanOrEqual(112);
+  it("is migration 113 or a later one, so the prefix cap correction is never dropped", () => {
+    expect(Number.parseInt(latest.slice(0, 3), 10)).toBeGreaterThanOrEqual(113);
   });
 
   // @req REQ-125
@@ -234,7 +234,7 @@ describe("near-miss leads, as the latest migration re-issues them", () => {
     expect(comment).toMatch(
       /class prefix of up to eight lower-case letters before a capital/
     );
-    expect(comment).toMatch(/Migration 112, which supersedes migration 111/);
+    expect(comment).toMatch(/Migration 113, which supersedes migration 111/);
     expect(comment).not.toMatch(/Besides its filed name/);
   });
 
@@ -245,9 +245,9 @@ describe("near-miss leads, as the latest migration re-issues them", () => {
 });
 
 // 111 is applied on recette, so the cap fix is a new migration and 111 is not
-// edited. These two checks hold 111 where it was applied and hold 112 to the
+// edited. These two checks hold 111 where it was applied and hold 113 to the
 // one change it exists for.
-describe("migration 112 corrects the class prefix cap of the applied migration 111", () => {
+describe("migration 113 corrects the class prefix cap of the applied migration 111", () => {
   // @req REQ-125
   it("leaves 111 as applied: the same rule with a class prefix capped at four letters", () => {
     const applied = readMigration(ONE_NAME_MIGRATION);

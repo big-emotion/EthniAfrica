@@ -10,7 +10,7 @@ this is the fourth, with the corrections of a fourth, a fifth, a sixth, a
 seventh and an eighth review (see « Second review » to « Eighth review »
 below). A ninth and a tenth review, then two reviews of pull request #1861,
 set what a people lead is scored on; « Tenth review » records all four.
-Migration 111 carries the rule, and migration 112 widens its class prefix.
+Migration 111 carries the rule, and migration 113 widens its class prefix.
 Status: **approved by the operator on 2026-10-18** (see « Approval record »).
 Pull request #1835 (ETNI-2092) was merged into recette the same day
 (04323b678), before this record was written.
@@ -578,12 +578,12 @@ lower-case class prefix:
 
 Pull request #1861 was merged into recette (7ed4bc738) before the fix to that
 second finding reached it, so migration 111 is applied with the class prefix
-capped at four letters. An applied migration is never edited. Migration 112,
+capped at four letters. An applied migration is never edited. Migration 113,
 in pull request #1864, re-issues `afrik_search_leads` with the same signature
 and grants; its body is 111's, but for the cap, which is now eight letters.
 Migration 111 stays as it was applied.
 
-The rule (decision 5; migration 111, with the class prefix of migration 112):
+The rule (decision 5; migration 111, with the class prefix of migration 113):
 
 1. Each name field of a people, its filed name, its self-appellation and each
    exonym, is cut into pieces at « , », « ; », the word « ou », and a slash
@@ -615,7 +615,7 @@ The rule (decision 5; migration 111, with the class prefix of migration 112):
    family-name fiches: « da Costa » (Costa), « da Silva » (Silva),
    « al Hawary » and « al-Hawari » (El Hawary), « al-Khaṭṭābī » (Khattabi),
    « al-Nūbī » (Nubi), « al-Nur » (Nur) and « rîfî » (Rifi). Whether an
-   « al- » spelling is one name is not settled here: migrations 111 and 112
+   « al- » spelling is one name is not settled here: migrations 111 and 113
    leave these eight unscored until the operator decides, so a misspelling of
    « al-nur » can no longer reach Nur through its spelling. Ten more
    recorded spellings fail the test and lose nothing, because each equals
@@ -624,7 +624,7 @@ The rule (decision 5; migration 111, with the class prefix of migration 112):
    « al-Mirghani », « al-Rashaida », « al-Rizeigat », « al-Shaygiya »),
    « dos Santos » and « do Espírito Santo ».
 
-In migrations 111 and 112 the combining marks are the accents U+0300 to U+036F, and a
+In migrations 111 and 113 the combining marks are the accents U+0300 to U+036F, and a
 word ends on a letter, an apostrophe or a hyphen, never on a click mark. The
 rule replaces what decision 5, « States to draw » (« No lead through a form
 that is not one name ») and the REQ-125 and DEC-075 drafts below say a people
@@ -693,10 +693,10 @@ people fiches, against migration 110 as recette runs it:
   Gwandara through « Abakwa Riga » first. « jarra », « icumama » and
   « ajumataw » keep their leads and their lines.
 - **Family-name spellings.** Of the 1,123 recorded spellings in the 776
-  family-name fiches, 18 fail the rule: eight that 110 scored and 111 and 112
+  family-name fiches, 18 fail the rule: eight that 110 scored and 111 and 113
   no longer score, and ten that equal their filed name and lose nothing. Rule
   4 names all eighteen.
-- **What 112 changes from 111.** Two pieces, abakwaManala and abakwaNdzundza,
+- **What 113 changes from 111.** Two pieces, abakwaManala and abakwaNdzundza,
   in two fiches, and nothing lost: 5,345 pieces become 5,347.
 
 How it was checked. `familyNameLeads.test.ts` holds the words above, among
@@ -709,12 +709,12 @@ A fourth test holds that every people fiche that records a self-appellation
 scores a piece of it, the filed name left out, but for the seven fiches
 named above, a list it holds exactly. The contract test holds that the
 latest definition of the function applies the model's two patterns, that 111
-stays as applied with a prefix capped at four letters, and that 112 executes
+stays as applied with a prefix capped at four letters, and that 113 executes
 111's function and grants with that cap raised and nothing else. Run by
 PostgreSQL 17's own regular expressions over every people name field and
-recorded spelling, the patterns as written in migration 112 give the model's
+recorded spelling, the patterns as written in migration 113 give the model's
 5,347 pieces exactly under the en_US.UTF-8, ICU and builtin C.UTF-8
-collations, and 264 fewer under C. Verification 6 of migration 112 checks the
+collations, and 264 fewer under C. Verification 6 of migration 113 checks the
 database's character type on recette and on production. The model splits a word at
 ǂ ǁ ǃ ǀ, which PostgreSQL reads as letters, so its scores for click names are
 close, not exact.
@@ -727,14 +727,14 @@ the corpus check refuse a name field with a slash, a semicolon, a comma or
 space, one piece each here (« Gullah/Geechee », « Drawi/Drawa »), the packed
 glosses (« Habitants du Burundi / peuple du Burundi », « … ; Garifuna au
 singulier », « Crioulo, Upper Guinea ») and the self-appellations of the
-seven fiches named above. It starts from the body of migration 112, the
-latest, under the next free number after 112, not from 110's or 111's, and
+seven fiches named above. It starts from the body of migration 113, the
+latest, under the next free number after 113, not from 110's or 111's, and
 applies the pattern of rule 2 to each spelling alias. Its corpus check allows
 a name of four words where rule 2 allows three; the ticket settles it by
 raising the limit in its migration to four words, after measuring what the
 fourth word adds, so that one limit governs both. It also moves the colon
 lists of the group fiches (`PPL_SAHARIEN_MACRO`: Zaghawa, Teda, Kanembu;
-`PPL_NGUNI`: amaXhosa, emaSwati) into prose. Migration 112 still scores those
+`PPL_NGUNI`: amaXhosa, emaSwati) into prose. Migration 113 still scores those
 pieces as forms of the group: « zagawa » ranks Peuples sahariens above
 Zaghawa, and « amaxosa » Nguni above Xhosa. The ticket removes both. It does not cover these, and no ticket tracks them yet:
 
@@ -1168,5 +1168,5 @@ brief 16 section of `Main`, as they stand in this repository.
 - The people branch's one-name rule, as set under « Tenth review », is not in
   the code #1835 merged: recette runs migration 110 as merged with #1835
   (head db5583eed). Migration 111 carries the rule, in pull request #1861
-  (ETNI-2092), and migration 112 widens its class prefix to eight letters, in
+  (ETNI-2092), and migration 113 widens its class prefix to eight letters, in
   pull request #1864.

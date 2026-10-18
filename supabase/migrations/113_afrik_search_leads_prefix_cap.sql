@@ -1,4 +1,4 @@
--- Migration 112 — a lower-case class prefix of up to eight letters opens a
+-- Migration 113 — a lower-case class prefix of up to eight letters opens a
 -- name (REQ-125, DEC-075; ETNI-2092, brief 16)
 --
 -- Why a new migration: 111 is applied on recette (merged with #1861, commit
@@ -62,7 +62,7 @@
 -- builtin C.UTF-8 collations, and 264 fewer under C.
 --
 -- Measured with that model over the 659 people fiches, against 110 (111
--- scored 5,345 pieces; 112 adds abakwaManala and abakwaNdzundza, in two
+-- scored 5,345 pieces; 113 adds abakwaManala and abakwaNdzundza, in two
 -- fiches, and loses none):
 --   - 3,668 (fiche, form) pairs are scored instead of 3,428: 309 pieces
 --     gained in 159 fiches (Mukongo, Izon, Ijo, Dyulanke, Nǀhuki, ʼNǀohan,
@@ -104,7 +104,7 @@
 -- (« Habitants du Burundi / peuple du Burundi », « … ; Garifuna au
 -- singulier ») and the self-appellations of the seven fiches above. It
 -- starts from this migration's body, the latest, under the next free number
--- after 112, and applies q.one_name to each spelling alias. Its check allows
+-- after 113, and applies q.one_name to each spelling alias. Its check allows
 -- four words where this rule allows three; it settles that by raising the
 -- limit in its migration to four, so one limit governs both. It moves the
 -- colon lists of the group fiches (PPL_SAHARIEN_MACRO: Zaghawa, Teda,
@@ -272,7 +272,7 @@ SELECT jsonb_build_object(
 $$;
 
 COMMENT ON FUNCTION public.afrik_search_leads(TEXT, INT, TEXT) IS
-  'Near-miss leads (REQ-125). A trigram similarity scan. A people is scored on the pieces of its names that are one name, and on nothing else: its filed name, self-appellation and each exonym (content.appellations) are cut at « , », « ; », the word « ou » and a slash between spaces, never inside a bracket nor at a slash inside a word (« Hai//om » writes a click), and each piece loses its trailing bracket. A piece is one name when it has three words at most, made of letters of any script with their accents, hyphens, apostrophes and click marks, and opens on an upper-case letter, a letter with no case (ǂHoan), click marks before a letter (« !Kung »), a class prefix of up to eight lower-case letters before a capital (« amaXhosa », « abakwaManala ») or a class prefix of one or two lower-case letters joined by a hyphen to a lower-case one (« a-liyan »). « Baganda / Ganda » gives Baganda and Ganda; « pl. Abaganda) » and « suivant Abdoulaye Bathily » are never scored. A people is emitted under its filed name and named by the piece that scored best, never by its filed name in place of a piece; a people none of whose pieces scores is no lead. Countries and families score their name for p_lang (en | fr, default fr); these three kinds keep similarity >= 0.2. A family name (afrik_patronymes) scores the best of its filed name, as filed, and of its recorded spellings (content.spellings[].spelling) that are one name, among the forms that begin with the folded query''s first letter, keeps similarity >= 0.4 and is emitted under its filed name (DEC-075). Every row names matched_form, the form that scored (the filed name on a tie; a country or a family names its name), so a caller can show the form written like the query: « jarra » reaches Diarra through its spelling Jara. Returns {"rows": [{"kind", "id", "name", "matched_form", "similarity"}, ...]}: at most p_limit rows of peoples, countries and families, plus at most p_limit family names, ordered by similarity. A folded query shorter than 3 characters returns no rows. SECURITY INVOKER: reads only tables already published to anon. Migration 112, which supersedes migration 111: the same function, with a class prefix of up to eight lower-case letters where 111 allowed four.';
+  'Near-miss leads (REQ-125). A trigram similarity scan. A people is scored on the pieces of its names that are one name, and on nothing else: its filed name, self-appellation and each exonym (content.appellations) are cut at « , », « ; », the word « ou » and a slash between spaces, never inside a bracket nor at a slash inside a word (« Hai//om » writes a click), and each piece loses its trailing bracket. A piece is one name when it has three words at most, made of letters of any script with their accents, hyphens, apostrophes and click marks, and opens on an upper-case letter, a letter with no case (ǂHoan), click marks before a letter (« !Kung »), a class prefix of up to eight lower-case letters before a capital (« amaXhosa », « abakwaManala ») or a class prefix of one or two lower-case letters joined by a hyphen to a lower-case one (« a-liyan »). « Baganda / Ganda » gives Baganda and Ganda; « pl. Abaganda) » and « suivant Abdoulaye Bathily » are never scored. A people is emitted under its filed name and named by the piece that scored best, never by its filed name in place of a piece; a people none of whose pieces scores is no lead. Countries and families score their name for p_lang (en | fr, default fr); these three kinds keep similarity >= 0.2. A family name (afrik_patronymes) scores the best of its filed name, as filed, and of its recorded spellings (content.spellings[].spelling) that are one name, among the forms that begin with the folded query''s first letter, keeps similarity >= 0.4 and is emitted under its filed name (DEC-075). Every row names matched_form, the form that scored (the filed name on a tie; a country or a family names its name), so a caller can show the form written like the query: « jarra » reaches Diarra through its spelling Jara. Returns {"rows": [{"kind", "id", "name", "matched_form", "similarity"}, ...]}: at most p_limit rows of peoples, countries and families, plus at most p_limit family names, ordered by similarity. A folded query shorter than 3 characters returns no rows. SECURITY INVOKER: reads only tables already published to anon. Migration 113, which supersedes migration 111: the same function, with a class prefix of up to eight lower-case letters where 111 allowed four.';
 
 REVOKE ALL ON FUNCTION public.afrik_search_leads(TEXT, INT, TEXT) FROM PUBLIC;
 GRANT EXECUTE ON FUNCTION public.afrik_search_leads(TEXT, INT, TEXT)

@@ -15,7 +15,7 @@ import {
   type ModelEntity,
 } from "@/lib/search/__fixtures__/corpusNameModel";
 
-// The one-name rule of migration 112 (brief 16, tenth review), restated here
+// The one-name rule of migration 113 (brief 16, tenth review), restated here
 // letter by letter rather than with the model's pattern, so the corpus-wide
 // tests below can catch the model out. At most three words; each word made
 // of letters of any script with their combining marks, hyphens, apostrophes
@@ -74,7 +74,7 @@ function fiche(key: string): ModelEntity {
 }
 
 /**
- * The leads in the order migration 112 returns its rows: similarity, then
+ * The leads in the order migration 113 returns its rows: similarity, then
  * name, then id. A people is named by the piece that scored; a country or a
  * language family by its name.
  */
@@ -106,7 +106,7 @@ function rankedLeads(query: string): { key: string; form: string }[] {
 }
 
 // DEC-075 over the real family-name fiches of the repository, through the
-// pg_trgm model of corpusNameModel.ts. The SQL of migration 112, which
+// pg_trgm model of corpusNameModel.ts. The SQL of migration 113, which
 // re-issues 111's function, stays the authority; its verification block
 // re-checks these on recette.
 describe("which family names are a spelling of the searched name (DEC-075)", () => {
@@ -247,7 +247,7 @@ describe("which family names are a spelling of the searched name (DEC-075)", () 
   });
 });
 
-// A people lead through one of its other names (brief 16): migration 112
+// A people lead through one of its other names (brief 16): migration 113
 // scores the pieces of a people's filed name, self-appellation and exonyms
 // that are one name, at 0.2, and names the piece that scored.
 describe("which people a misspelling resembles (REQ-125)", () => {
