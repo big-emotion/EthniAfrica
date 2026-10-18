@@ -533,8 +533,10 @@ describe("a lead reached through another of its forms", () => {
     );
   });
 
-  // Two fiches may record one form (Fellata for two Fulbe fiches): the form
-  // is one search, so one chip, and each fiche gets its line.
+  // Two fiches record Fellata in the corpus, Peul and Fulbe du Massina: the
+  // form is one search, so one chip, and each fiche gets its line. The second
+  // is filed « Fulbe du Massina (Peuls du Massina / Macina) »: the line names
+  // it without its bracket, the label doctrine §1.1 keeps off the page.
   // @req REQ-125
   it("draws one chip per form, and a line for each fiche that records it", () => {
     renderMisspelling({
@@ -551,7 +553,7 @@ describe("a lead reached through another of its forms", () => {
         {
           type: "people",
           id: "PPL_FULANI_MASSINA",
-          name: "Fulbe du Massina",
+          name: "Fulbe du Massina (Peuls du Massina / Macina)",
           matchedForm: "Fellata",
           similarity: 0.5,
         },
@@ -568,6 +570,36 @@ describe("a lead reached through another of its forms", () => {
     expect(
       screen.getByText("La fiche Fulbe du Massina donne aussi le nom Fellata.")
     ).toBeVisible();
+    expect(screen.getByTestId("feed-block-appellations")).not.toHaveTextContent(
+      /Peuls du Massina/
+    );
+  });
+
+  // Migration 110 scores a people's forms without their trailing bracket, so
+  // a lead reached through its filed name names « Diola », not « Diola
+  // (Joola / Jola) ». Compared with the bracketed label, the page wrote a line
+  // about the fiche naming itself: « La fiche Diola (Joola / Jola) donne
+  // aussi le nom Diola. »
+  // @req REQ-125
+  it("adds no line for a lead that scored through its filed name, bracket aside", () => {
+    renderMisspelling({
+      query: "diolla",
+      results: [],
+      leads: [
+        {
+          type: "people",
+          id: "PPL_DIOLA",
+          name: "Diola (Joola / Jola)",
+          matchedForm: "Diola",
+          similarity: 0.5,
+        },
+      ],
+    });
+
+    expect(choiceNames()).toEqual(["Diola"]);
+    const choices = screen.getByTestId("feed-block-appellations");
+    expect(within(choices).queryByText(/donne aussi/)).toBeNull();
+    expect(choices).not.toHaveTextContent(/Joola/);
   });
 
   // A reviewed term is offered by its edit distance to any of its terms, and
@@ -588,7 +620,8 @@ describe("a lead reached through another of its forms", () => {
     );
   });
 
-  // A database without migration 110 sends no form: the filed name stands.
+  // A database without migration 110 sends no form: the filed name stands,
+  // without the bracket a filed label may carry.
   // @req REQ-125
   it("keeps the filed name when the API sends no form", () => {
     renderMisspelling({
@@ -596,5 +629,28 @@ describe("a lead reached through another of its forms", () => {
     });
 
     expect(choiceNames()).toEqual(["Tchicaya"]);
+  });
+
+  // @req REQ-125
+  it("names a lead with no form by its filed name without the bracket", () => {
+    renderMisspelling({
+      query: "diolla",
+      results: [],
+      leads: [
+        {
+          type: "people",
+          id: "PPL_DIOLA",
+          name: "Diola (Joola / Jola)",
+          similarity: 0.5,
+        },
+      ],
+    });
+
+    expect(choiceNames()).toEqual(["Diola"]);
+    expect(
+      within(screen.getByTestId("feed-block-appellations")).queryByText(
+        /donne aussi/
+      )
+    ).toBeNull();
   });
 });

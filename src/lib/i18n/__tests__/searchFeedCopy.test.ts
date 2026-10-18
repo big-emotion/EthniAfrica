@@ -160,18 +160,29 @@ describe("the words of a misspelling page", () => {
 
 // @req REQ-180
 describe("the fiches a misspelling's search found", () => {
-  // The block is titled by what it is, and keeps the caution the related-only
-  // page opens on, in the number of the cards it lists. It names the spelling
-  // the reader typed: under the choices, « ce nom » read as the lead.
+  // The block holds what the search found besides the choices, in the number
+  // of the cards it lists. « La fiche trouvée » said the search found one
+  // fiche, while it also found the leads. Nothing in the data links these
+  // fiches to the spelling typed (Onana reaches « konana » by its trigram
+  // score alone), so the caution does not call them « liées ». It names the
+  // spelling the reader typed: under the choices, « ce nom » read as the lead.
   // @req REQ-180
-  it("titles the block by what it holds and opens it on the related-only caution", () => {
-    expect(copy.fichesFound.title(1)).toBe("La fiche trouvée");
-    expect(copy.fichesFound.title(3)).toBe("Les fiches trouvées");
+  it("titles the block as the other fiches found, and claims no link the data does not hold", () => {
+    expect(copy.fichesFound.title(1)).toBe("Une autre fiche trouvée");
+    expect(copy.fichesFound.title(3)).toBe("D’autres fiches trouvées");
     expect(copy.fichesFound.note(1, "konana")).toBe(
-      "Nous avons trouvé une fiche liée sans établir qu’elle répond à « konana »."
+      "Nous avons aussi trouvé cette fiche, sans établir qu’elle répond à « konana »."
     );
+    for (const text of [
+      copy.fichesFound.title(1),
+      copy.fichesFound.title(3),
+      copy.fichesFound.note(1, "konana"),
+      copy.fichesFound.note(3, "konana"),
+    ]) {
+      expect(text, text).not.toMatch(/lié/);
+    }
     expect(copy.fichesFound.note(3, "konana")).toBe(
-      "Nous avons trouvé des fiches liées sans établir qu’elles répondent à « konana »."
+      "Nous avons aussi trouvé ces fiches, sans établir qu’elles répondent à « konana »."
     );
   });
 });

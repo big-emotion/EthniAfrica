@@ -46,10 +46,11 @@ export interface FichesBlockProps {
    */
   lens?: "grouped" | "ungrouped";
   /**
-   * The spelling a misspelling's search was for, when these are the fiches it
-   * found, none bearing that spelling (brief 16): titled by what they are,
-   * under the related-only caution about that spelling, each card with its
-   * own line, as the « Fiches » lens draws them.
+   * The spelling a misspelling's search was for, when these are the other
+   * fiches it found, none bearing that spelling (brief 16): titled as other
+   * fiches found, under a caution that we have not established they answer
+   * that spelling, each card with its own line, as the « Fiches » lens draws
+   * them.
    */
   foundFor?: string;
 }

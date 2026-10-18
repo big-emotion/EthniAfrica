@@ -169,6 +169,18 @@ function normalizedQueryId(query: string): string {
 }
 
 /**
+ * A lead's label without its trailing bracket, the regexp migration 110
+ * scores a people's forms with. 36 people fiches are filed with one
+ * (« Diola (Joola / Jola) »), and `name` arrives as filed: compared as is
+ * with the form that scored, « Diola » read as another name and the page
+ * wrote that the fiche Diola (Joola / Jola) also gives the name Diola. The
+ * bracketed label is also the one doctrine §1.1 keeps off the page.
+ */
+function leadLabel(label: string): string {
+  return label.replace(/\s*\([^)]*\)\s*$/, "").trim();
+}
+
+/**
  * The name a lead's chip says: the form that scored (migration 110), not the
  * filed name. « jarra » reaches Diarra through its spelling Jara, and only
  * Jara is written almost the same way; where the reader searched, the form
@@ -176,7 +188,7 @@ function normalizedQueryId(query: string): string {
  * §1.1). A database without the migration names no form: the filed name.
  */
 function leadForm(lead: SearchLead): string {
-  return lead.matchedForm?.trim() || lead.name;
+  return leadLabel(lead.matchedForm?.trim() || lead.name);
 }
 
 /** Said of every choice only when each one is a family-name lead (DEC-075). */
@@ -376,15 +388,16 @@ export function SearchFeed({
         summary: (name: string) =>
           copy.answer.typoResembling.summary(name, forms.length),
       };
-  // Under the chips, the fiche each form leads to when the chip does not
-  // bear its filed name: Jara, a spelling of Diarra.
+  // Under the chips, the fiche that records each form when the chip does not
+  // bear its filed name, bracket aside: Jara, which the fiche Diarra records.
   const choiceForms = leads.flatMap((lead) => {
     const form = leadForm(lead);
-    if (foldNameForm(form) === foldNameForm(lead.name)) return [];
+    const name = leadLabel(lead.name);
+    if (foldNameForm(form) === foldNameForm(name)) return [];
     return [
       lead.type === "patronyme"
-        ? copy.answer.typoFormOf.familyName(form, lead.name)
-        : copy.answer.typoFormOf.other(form, lead.name),
+        ? copy.answer.typoFormOf.familyName(form, name)
+        : copy.answer.typoFormOf.other(form, name),
     ];
   });
 
@@ -412,8 +425,8 @@ export function SearchFeed({
   // A misspelling's leads are its choices, never fiches it found. The search
   // also finds a family-name lead by its spelling (Tchicaya for « tchikaya »),
   // and the chip's search already leads to that fiche: listed again under
-  // « La fiche trouvée », it would be a second way to the same name, presented
-  // as linked to the spelling typed (brief 16, REQ-201).
+  // « Une autre fiche trouvée », it would be a second way to the same name,
+  // presented as tied to the spelling typed (brief 16, REQ-201).
   const leadKeys = new Set(leads.map(({ type, id }) => `${type}:${id}`));
   const listedResults =
     state === "typo"

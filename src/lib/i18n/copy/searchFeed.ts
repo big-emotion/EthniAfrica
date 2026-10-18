@@ -46,9 +46,13 @@ export interface SearchFeedCopy {
      */
     typoInvitation: (query: string) => string;
     /**
-     * The fiches a misspelling's search found: what the block holds, then the
-     * related-only page's caution, in the number of the cards listed, about
-     * the spelling typed rather than « ce nom », which read as the lead.
+     * The fiches a misspelling's search found besides its choices, in the
+     * number of the cards listed. « Autre »: the search also found the
+     * leads, so « La fiche trouvée » said one fiche where there were three.
+     * Nothing in the data ties these fiches to the spelling typed (Onana
+     * reaches « konana » by its trigram score alone), so the caution says
+     * only that they were found, never « liées ». It names the spelling typed
+     * rather than « ce nom », which read as the lead.
      */
     fichesFound: {
       title: (count: number) => string;
@@ -204,11 +208,11 @@ export const searchFeedCopy: Record<Language, SearchFeedCopy> = {
         `Si vous écrivez «\u00a0${query}\u00a0», dites-nous où cette écriture est employée.`,
       fichesFound: {
         title: (count) =>
-          count === 1 ? "La fiche trouvée" : "Les fiches trouvées",
+          count === 1 ? "Une autre fiche trouvée" : "D’autres fiches trouvées",
         note: (count, query) =>
           count === 1
-            ? `Nous avons trouvé une fiche liée sans établir qu’elle répond à «\u00a0${query}\u00a0».`
-            : `Nous avons trouvé des fiches liées sans établir qu’elles répondent à «\u00a0${query}\u00a0».`,
+            ? `Nous avons aussi trouvé cette fiche, sans établir qu’elle répond à «\u00a0${query}\u00a0».`
+            : `Nous avons aussi trouvé ces fiches, sans établir qu’elles répondent à «\u00a0${query}\u00a0».`,
       },
       exactSummary:
         "Les formes et les sources ci-dessous disent ce que nous pouvons établir.",

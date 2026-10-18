@@ -6,8 +6,9 @@ Written 2026-10-18 as brief 13, renumbered 16 the same day (pull request
 #1832 holds briefs 13 to 15). A review through three lenses (art direction,
 doctrine, accessibility) rejected the first drawing; a second review rejected
 the redrawing; a third review rejected two points of the third drawing, and
-this is the fourth, with a fourth review's corrections (see « Second
-review », « Third review » and « Fourth review » below).
+this is the fourth, with a fourth and a fifth review's corrections (see
+« Second review », « Third review », « Fourth review » and « Fifth review »
+below).
 Status: **proposed, awaiting the operator's approval.** Nothing here binds the
 code until the operator approves it or asks for changes. The pull request that
 needs it (#1835, ETNI-2092) must not merge before then.
@@ -86,7 +87,7 @@ Jara, then « La fiche Diarra donne aussi l’écriture Jara. »); the invitatio
 and the
 accented button of `search-unknown`; one 426 px frame for « tchikaya » (one
 choice, no other fiche) and one for « konana » (two choices, the filters, and
-one fiche found). Main measures 25928 px with brief 16.
+one other fiche found). Main measures 26096 px with brief 16.
 
 « konana » is an example the rules produce, taken from the corpus with the
 search model of `src/lib/search/__fixtures__/corpusNameModel.ts` and held by
@@ -94,9 +95,12 @@ search model of `src/lib/search/__fixtures__/corpusNameModel.ts` and held by
 through its filed name. No fiche writes the word anywhere: not in its text,
 not in a list of names or clans, not in its sources (`fichesRecordingWord`).
 The search also finds Onana by its spelling (0.44); Onana begins with another
-letter, so it is no choice, and the page lists it under the related-only
-caution with its own line. Konan and Konaté stay choices and are not shown as
-fiches. The model is not the search: the SQL stays the authority.
+letter, so it is no choice, and the page lists it under « Une autre fiche
+trouvée », with its own line and a caution that says only that the search
+found it. Only that trigram score ties Onana to the word: nothing in the data
+links the two, so the page never calls Onana « liée ». Konan and Konaté stay
+choices and are not shown as fiches. The model is not the search: the SQL
+stays the authority.
 
 In the page's own copy, every space before « ? », « : », « ; », « ! » and
 inside the guillemets is a no-break space (U+00A0), on the boards as in
@@ -130,14 +134,20 @@ and keeps the approval of the boards.
    « Keïta »). The query layer asks `afrik_search_patronymes` to withhold those
    rows once it offers a family-name lead beside results (migration 108's
    switch). The page leaves a lead's own fiche out of the fiches found: the
-   chip's search already leads to it, and shown again under « La fiche
-   trouvée » it would be a second way to the same name, presented as linked to
+   chip's search already leads to it, and shown again under « Une autre fiche
+   trouvée » it would be a second way to the same name, presented as tied to
    the spelling typed. The « Fiches » count leaves it out too. The fiches that
-   remain keep a block, titled by what it is, opened by the related-only
-   caution about the spelling typed, each card with the line of its matching
-   form, never « Fiche EthniAfrica ». The title and the sentence agree with
-   the number of cards. With no such fiche, no block is drawn, and no filter
-   bar.
+   remain keep a block titled « Une autre fiche trouvée » or « D’autres fiches
+   trouvées »: the search also found the choices, so « La fiche trouvée »
+   said it found one fiche where it found three. A caution about the spelling
+   typed opens it and says only that the search found them: « Nous avons
+   aussi trouvé cette fiche, sans établir qu’elle répond à « konana ». ».
+   Nothing in the data links these fiches to the spelling (Onana reaches
+   « konana » by its trigram score alone), so the caution never calls them
+   « liées », as the related-only page does of the fiches it lists. Each card
+   carries the line of its matching form, never « Fiche EthniAfrica ». The
+   title and the sentence agree with the number of cards. With no such fiche,
+   no block is drawn, and no filter bar.
 5. **The verdict says only what is true, in the right number.** « Aucune de
    nos fiches ne porte le nom « … ». » speaks of our fiches, not of every name:
    people bear the spelling Tchikaya. A lead is never « proche »: on this site
@@ -166,7 +176,12 @@ and keeps the approval of the boards.
    is crowned »): the earlier « Jara est une écriture du nom Diarra » made the
    filed name the name and the Bambara writing a spelling derived from it,
    and « un des noms de la fiche » made a fiche bear names. A form two fiches
-   record is one search, so one chip, with one line per fiche. The invitation
+   record is one search, so one chip, with one line per fiche. The chip and
+   the line name a fiche by its filed name without its trailing bracket, the
+   rule migration 110 scores a people's forms by: « Fulbe du Massina », never
+   « Fulbe du Massina (Peuls du Massina / Macina) », the filed label doctrine
+   §1.1 keeps off the page. A chip that names its fiche's filed name, bracket
+   aside (Diola for « Diola (Joola / Jola) »), gets no line. The invitation
    and the caution name the spelling typed instead of « ce nom », which read as
    the lead under the chip.
 6. **A reader who writes the name this way can say so**, since DEC-075 says a
@@ -320,6 +335,35 @@ operator delegated the answers on 2026-10-17; what changed:
   (decision 6, « The boards » item 4).
 - **The chip's border** is the accent ink (decision 7).
 
+## Fifth review (2026-10-18)
+
+The final re-review of #1835 read the page against the corpus and the
+charter draft. Two points blocked; both are fixed in the boards, this brief
+and the code.
+
+- **The line under a chip printed the fiche's bracketed label, and misfired
+  on it** (doctrine). Migration 110 scores a people's forms without their
+  trailing bracket, so the form that scored is « Diola », while the lead's
+  `name` is the filed « Diola (Joola / Jola) ». Compared as they came, they
+  differed, and the page would have written « La fiche Diola (Joola / Jola)
+  donne aussi le nom Diola. ». 36 of the 657 people fiches are filed with
+  such a bracket. The page now drops the trailing bracket from a lead's label
+  with the same rule before it compares and before it writes the line
+  (`leadLabel` in `SearchFeed.tsx`), and the chip names a lead without one
+  when the API sends no form. The « felata » example was also wrong: two
+  fiches record Fellata, Peul and Fulbe du Massina, so the page draws two
+  lines, the second « La fiche Fulbe du Massina donne aussi le nom
+  Fellata. » (decision 5, « States to draw », the REQ-125 draft).
+- **The fiches found were called « liées » and the charter draft kept only
+  fiches « the data links to the query »** (doctrine). No code checks such a
+  link: Onana reaches « konana » by its trigram score alone, the very ground
+  on which Chukwu was left out. The block is now « Une autre fiche trouvée »
+  or « D’autres fiches trouvées », since the search also found the choices,
+  and its caution says only that the search found them: « Nous avons aussi
+  trouvé cette fiche, sans établir qu’elle répond à « konana ». ». The
+  charter draft speaks of the fiches the search found (decision 4, `Main`,
+  `fichesFound` in `src/lib/i18n/copy/searchFeed.ts`).
+
 ## States to draw
 
 Only the first is drawn as a board; the others are held by tests or drawn on
@@ -327,14 +371,19 @@ Only the first is drawn as a board; the others are held by tests or drawn on
 
 - **One lead, no other fiche**: « tchikaya » → Tchicaya, as drawn.
 - **Same state**: « muzombo » → Mutombo (a note on the boards, no new board).
-- **Several leads and a fiche found**: « konana » → Konan, Konaté, and the
-  Onana fiche (drawn on `Main`).
+- **Several leads and another fiche found**: « konana » → Konan, Konaté, and
+  the Onana fiche under « Une autre fiche trouvée » (drawn on `Main`).
 - **A lead through another of its forms**: « jarra » → the chip Jara and the
   line « La fiche Diarra donne aussi l’écriture Jara. » (drawn on `Main` as a
   component). A people lead through an exonym, « felata » → Fellata, makes no
-  spelling claim (« Un nom qui ressemble au nom cherché »), with the line
-  « La fiche Peul donne aussi le nom Fellata. ». Held by
-  `SearchFeedMisspelling.test.tsx`.
+  spelling claim (« Un nom qui ressemble au nom cherché »). Two fiches record
+  Fellata, so one chip and two lines: « La fiche Peul donne aussi le nom
+  Fellata. » and « La fiche Fulbe du Massina donne aussi le nom Fellata. »,
+  the second without the bracket of its filed name « Fulbe du Massina (Peuls
+  du Massina / Macina) ». Held by `SearchFeedMisspelling.test.tsx`.
+- **A lead through its filed name, bracket aside**: « diolla » → the chip
+  Diola, the form migration 110 scores for the fiche filed « Diola (Joola /
+  Jola) », and no line. Held by `SearchFeedMisspelling.test.tsx`.
 - **A spelling a fiche writes in its text**: « sanoh », one of the Kuranko
   clans and written in the source of the Sanou fiche. No lead is offered: the
   related-only page, unchanged, until the operator answers the DEC-075
@@ -358,6 +407,9 @@ Only the first is drawn as a board; the others are held by tests or drawn on
   or call the lead « proche ».
 - Name a lead by its filed name when another of its forms scored, or say that
   a choice is written almost the same way when it is not a family-name lead.
+- Print a fiche's filed label with its trailing bracket in a chip or a line.
+- Call the fiches found « liées », or keep them on a link the data does not
+  hold.
 - Ask « Cherchiez-vous… ? » when a fiche the search found writes the typed
   word in its text, a list or a source.
 - Take as an example of a misspelling a word any fiche writes, in its text,
@@ -385,14 +437,16 @@ by (**proposed**):
 > a typo with useful leads opens on the filters when there are two, the
 > verdict and the choices, the page's one accented action, each named by the
 > form that scored, with a line naming the fiche that records a form other
-> than its filed name; only family-name leads are said to be written almost
-> the same way; under them a reader who writes the name this way can propose
-> a source through a quiet link; when the search also found fiches other than
-> the choices that the data links to the query, they follow under the
-> related-only caution, each with its own line, a fiche reached only by its
-> sound being left out; it closes with `further` only and draws no shelf. A
-> query a fiche the search found writes in its text is not a typo: it keeps
-> the related-only page;
+> than its filed name, a fiche being named without the trailing bracket of
+> its filed name; only family-name leads are said to be written almost the
+> same way; under them a reader who writes the name this way can propose a
+> source through a quiet link; when the search also found fiches other than
+> the choices, they follow as other fiches found, under a caution that says
+> only that the search found them, never that they are linked to the query,
+> each with its own line, a fiche reached only by its sound being left out;
+> it closes with `further` only and draws no shelf. A query a fiche the
+> search found writes in its text is not a typo: it keeps the related-only
+> page;
 
 Decision 4 changes what REQ-201, DEC-075 and ETNI-2092 say today: all three
 keep Chukwu among the fiches for « tchikaya ». The code already follows the
@@ -446,8 +500,8 @@ the search found writes the typed word in its own text » (decision 13).
 **DEC-075** (**proposed**), its Decision: « … and is offered under its filed
 name, as migration 094 does for a people » becomes « … and is offered under
 the form that scored (`matched_form`), with a line naming the fiche that
-records it when that form is not its filed name; this also applies to a
-people lead ». The chips name `matchedForm` (Jara for « jarra », Fellata for
+records it, by its filed name without a trailing bracket, when that form is
+not its filed name; this also applies to a people lead ». The chips name `matchedForm` (Jara for « jarra », Fellata for
 « felata »), and « Do not » forbids naming a lead by its filed name when
 another of its forms scored: as published, the sentence says the opposite.
 
@@ -477,11 +531,15 @@ families keep their near-miss scan and its 0.2 threshold, with no
 first-letter rule, as before; their chip names the form that scored (for a
 people, its filed name, the name it gives itself or one of its exonyms; for a
 country or a family, its name), with the line naming the fiche that records
-it when that form is not its filed name ». The same sentence in DEC-075 takes
-the same wording. New GWT: given « felata », which reaches the Peul fiche
-through its exonym Fellata, when the search offers Peul as a lead, then the
-chip names Fellata, with the line « La fiche Peul donne aussi le nom
-Fellata. », and nothing says it is written the same way.
+it when that form is not its filed name, named without the trailing bracket
+of its filed name ». The same sentence in DEC-075 takes the same wording.
+New GWT: given « felata », which reaches the Peul fiche and the Fulbe du
+Massina fiche through the exonym Fellata both record, when the search offers
+both as leads, then one chip names Fellata, with one line per fiche that
+records it, « La fiche Peul donne aussi le nom Fellata. » and « La fiche
+Fulbe du Massina donne aussi le nom Fellata. » (the second fiche is filed
+« Fulbe du Massina (Peuls du Massina / Macina) »), and nothing says it is
+written the same way.
 
 **DEC-075, a question for the operator** (**open**): a spelling a fiche
 records in its text — « Sanoh » among the Kuranko clans, and in the source of
@@ -522,6 +580,15 @@ listed below (« Aller plus loin » without a heading or a list, the header at
   first letter differs, Onana for « konana ») is still listed among the fiches
   found, under the caution. Whether the page should tell it apart needs the
   API to say how a row was reached; not decided here.
+- The « Fiches » lens of this state keeps brief 12's « Autour de ce nom »
+  and its note « Un contexte lié, pas le même nom. », shared with the
+  related-only page: of Onana under « konana », it still says « lié ».
+  Changing it changes an approved board of brief 12; not decided here.
+- Some trailing brackets tell two fiches apart rather than give other names:
+  « Rwandais (Tutsi) » and « Rwandais (Hutu) », « Luba (Katanga) » and
+  « Luba (Kasai) ». Without the bracket, a line about either reads « La
+  fiche Rwandais » or « La fiche Luba ». Telling the two kinds of bracket
+  apart needs the corpus to mark which is which; not decided here.
 - The near-miss cartouche of the home search (`NoResultsLeads`, « Vouliez-vous
   dire : ») still names a lead by its filed name and links to its fiche; it
   makes no spelling claim. Whether it should name `matchedForm` too is left to
@@ -573,7 +640,8 @@ lines inside its 272 px column and the page does not scroll sideways. The
 form it opens names « Recherche · tchikaya » and does not ask « Nous nous
 sommes trompés ? ». The « konana » frame of `Main` is held by
 `SearchFeedMisspelling.test.tsx` (the filters, the plural copy, Onana alone
-under « La fiche trouvée », « Fiches 1 »), and so are « jarra » and « felata ».
+under « Une autre fiche trouvée », « Fiches 1 »), and so are « jarra »,
+« felata » and « diolla ».
 
 ## Approval record
 
