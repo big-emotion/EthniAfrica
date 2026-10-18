@@ -161,6 +161,7 @@ const SOURCE_UUID = "1f2c7c0e-6d0b-4e7f-9d1a-3b2c4d5e6f70";
 const FIXTURES: Record<string, RouteFixture> = {
   "": { expectation: { surface: "home" } },
   about: { expectation: { surface: "about" } },
+  "notre-demarche": { expectation: { surface: "approach" } },
   accessibilite: { expectation: { surface: "accessibility" } },
   "atlas/appellations": { expectation: { surface: "names" } },
   "atlas/familles": { expectation: { surface: "families" } },

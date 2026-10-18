@@ -42,6 +42,18 @@ describe("getSiteTree — access modes are sections and destinations", () => {
   });
 });
 
+describe("getSiteTree — Notre démarche (ETNI-2133)", () => {
+  // @req REQ-132
+  it("lists the public page under Le site and includes it in sitemap paths", () => {
+    const tree = getSiteTree("fr");
+    const site = tree.find((section) => section.id === "le-site");
+    const href = getLocalizedRoute("fr", "approach");
+
+    expect(site?.links.map((link) => link.href)).toContain(href);
+    expect(getSiteTreePaths("fr")).toContain(href);
+  });
+});
+
 // The languages and patronymes index pages (ETNI-1795) ship in the same
 // atlas section as families/peoples/countries — a page nobody can navigate
 // to is not browsable (ETNI-1801).
