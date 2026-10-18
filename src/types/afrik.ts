@@ -943,7 +943,7 @@ export interface SearchLead {
   /** The filed name. */
   name: string;
   /**
-   * The form that scored `similarity` (migrations 110 and 111). For a people,
+   * The form that scored `similarity` (migrations 110 to 112). For a people,
    * a piece of its filed name, self-appellation or an exonym that is one
    * name (cut at « , », « ; », « ou » and a slash between spaces, trailing
    * bracket dropped; « pl. Abaganda) » is never this form). For a family
