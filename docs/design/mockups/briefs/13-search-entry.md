@@ -116,8 +116,12 @@ titled « Page de recherche (sans requête) », in the « 1 · Search » group a
 Top to bottom:
 
 1. The component of part A, empty, focused.
-2. « Essayez avec », the home's example chips, unchanged: Koroma, Four, Lamba,
-   Guinée équatoriale. « Autres exemples » as on the home.
+2. « Essayez avec », the examples of the approved `home` board: Shenouda,
+   Siwi, Suri, Tchad, and « Autres exemples », in the home's chip style.
+   Changed on 2026-10-18 by the operator after step 0: the brief first named
+   Koroma, Four, Lamba and Guinée équatoriale, but Koroma's fiche was merged
+   into PAT_KOUROUMA on 2026-10-16. The live home draws four examples at random
+   on each visit.
 3. « Cherchés cette semaine », chips of names readers searched, each opening
    its result page. Board values, from the demand journal of 2026-10-18 (28
    days, `surface = serp`): **Peul, Lingala, Côte d'Ivoire, Bantou, Guinée**.
