@@ -26,8 +26,8 @@
     },
     "ethnicities": ["Manja", "Mandija"],
     "origins": {
-      "ancientOrigins": "Les Manja (Mandija) sont originaires de la region du lac Tchad, au nord. Les preuves linguistiques indiquent qu'au cours des 2 000 derniers annees, ils ont migre vers leur territoire actuel depuis le nord-est, deplacant les groupes de chasseurs nomades qui y vivaient auparavant. Leur tradition orale corrobore cette these : ils seraient partis de la region du lac Tchad avec leurs voisins Ngbaka et Gbaya pour fuir les negriers.",
-      "formationPeriod": "La migration et l'installation dans le centre de la RCA semblent s'etre achevees avant l'arrivee des Europeens a la fin du XIXe siecle. La distinction ethnique Mandija est probablement consolidee entre le XVIIe et le XIXe siecle.",
+      "ancientOrigins": "Les Manja (Mandija) sont originaires de la région du lac Tchad, au nord. Les preuves linguistiques indiquent qu'au cours des 2 000 dernières années, ils ont migré vers leur territoire actuel depuis le nord-est, déplaçant les groupes de chasseurs nomades qui y vivaient auparavant. Leur tradition orale corrobore cette thèse : ils seraient partis de la région du lac Tchad avec leurs voisins Ngbaka et Gbaya pour fuir les négriers.",
+      "formationPeriod": "La migration et l'installation dans le centre de la RCA semblent s'être achevées avant l'arrivée des Européens à la fin du XIXe siècle. La distinction ethnique Mandija est probablement consolidée entre le XVIIe et le XIXe siècle.",
       "migrationRoutes": [
         "Du lac Tchad vers le sud-ouest",
         "A travers le nord-est centrafricain vers le centre du pays",
@@ -35,13 +35,13 @@
       ],
       "historicalSettlementZones": [
         "Centre de la Republique Centrafricaine",
-        "Region de Ouham",
-        "Region de Gribingui",
+        "Région de Ouham",
+        "Région de Gribingui",
         "Nord-est du pays pres de la frontiere tchadienne"
       ],
       "unificationsOrDivisions": "Le peuple Mandija n'a pas eu de structure politique centralisee. Les rassemblements se faisaient ponctuellement sous l'autorite de chefs regionaux lors de conflits ou d'affrontements. Ils sont etroitement associes au groupe Gbaya avec lequel ils partageaient des territoires de chasse.",
-      "externalInfluences": "Influence des negriers arabes qui ont pousse leur migration depuis le nord. Influence coloniale française depuis la fin du XIXe siecle. Le sango, langue vehiculaire nationale de la RCA, a integre des elements du mandja.",
-      "majorHistoricalEvents": "Fuite des negriers depuis la region du lac Tchad. Contact avec l'administration coloniale française a la fin du XIXe siecle. L'ancien Premier ministre centrafricain Elie Dote appartient a la communaute Mandija du Centre-Nord."
+      "externalInfluences": "Influence des négriers arabes qui ont poussé leur migration depuis le nord. Influence coloniale française depuis la fin du XIXe siècle. Le sango, langue véhiculaire nationale de la RCA, a intégré des éléments du mandja.",
+      "majorHistoricalEvents": "Fuite des négriers depuis la région du lac Tchad. Contact avec l'administration coloniale française à la fin du XIXe siècle. L'ancien Premier ministre centrafricain Elie Dote appartient à la communauté Mandija du Centre-Nord."
     },
     "organization": {
       "traditionalPoliticalSystem": "Organisation decentralisee en petits regroupements de maisons relativement isoles et independants les uns des autres. Absence de chef politique supreme. Les rassemblements pouvaient etre decides par certains chefs regionaux lors de guerres ou d'affrontements.",
@@ -65,7 +65,7 @@
     "historicalRole": {
       "kingdomsOrChiefdoms": "Pas de royaume ou chefferie centralise. Organisation en chefferies locales et familles elargies. Les chefs regionaux pouvaient rallier les communautes en cas de conflits.",
       "relationsWithNeighbors": "Etroitement lies aux Gbaya avec lesquels ils ont migre depuis le lac Tchad et partage des territoires de chasse. Voisins des Ngbaka. Appartiennent au cluster linguistique et culturel Gbaya-Manza-Ngbaka.",
-      "conflictsOrAlliances": "Alliance historique avec les Gbaya et les Ngbaka lors de la migration depuis le lac Tchad pour fuir les negriers. Soumission a l'administration coloniale française a partir de la fin du XIXe siecle.",
+      "conflictsOrAlliances": "Alliance historique avec les Gbaya et les Ngbaka lors de la migration depuis le lac Tchad pour fuir les négriers. Soumission à l'administration coloniale française à partir de la fin du XIXe siècle.",
       "diaspora": "Petites communautes Mandija presentes au Cameroun et au Tchad, issues de la dynamique migratoire historique."
     },
     "demography": {
