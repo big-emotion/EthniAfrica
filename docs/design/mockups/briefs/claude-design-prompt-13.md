@@ -32,7 +32,7 @@ These five lines are the target behaviour; the search API does not answer them y
 
 PART B — THE HEADER SEARCH, on Main, at 430: the header icon opens the component full screen, field focused at the top, « Fermer » on the right, no title. At 768 and 1440 it stays a dialog.
 
-PART C — THE SEARCH PAGE. New boards search-entry-430, -768, -1440, titled « Page de recherche (sans requête) », in the « 1 · Search » group and in canvas.json. Top to bottom: the component, empty and focused; « Essayez avec » with Koroma, Four, Lamba, Guinée équatoriale and « Autres exemples », as on the home; « Cherchés cette semaine » with chips Peul, Lingala, Côte d'Ivoire, Bantou, Guinée; the footer (state B). No hero band, no breadcrumb.
+PART C — THE SEARCH PAGE. New boards search-entry-430, -768, -1440, titled « Page de recherche (sans requête) », in the « 1 · Search » group and in canvas.json. Top to bottom: the component, empty and focused; « Essayez avec » with Shenouda, Siwi, Suri, Tchad and « Autres exemples », as on the home board (changed after step 0, see the brief); « Cherchés cette semaine » with chips Peul, Lingala, Côte d'Ivoire, Bantou, Guinée; the footer (state B). No hero band, no breadcrumb.
 
 Do not: redraw the result boards, add a suggestion that opens a fiche directly, show a count of searches, or put a figure of style in a label.
 
