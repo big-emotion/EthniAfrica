@@ -115,6 +115,33 @@ describe("selfNameLead", () => {
   it("offers no lead without a query", () => {
     expect(selfNameLead(fulbe, "")).toBeUndefined();
   });
+
+  // PPL_KONO gives itself « Kono » and is called « Kɔnɔ » by others. The fold
+  // equates the two, but a reader who typed « Kɔnɔ » searched the other name,
+  // so the page still leads to the self-name (doctrine §1.1).
+  // @req REQ-178
+  it("leads to the self-name the fold equates with a spelling the subject writes apart", () => {
+    const kono: Name[] = [
+      { form: "Kono", selfGiven: true },
+      { form: "Konnoh", selfGiven: null },
+      { form: "Kɔnɔ", selfGiven: null },
+    ];
+
+    expect(selfNameLead(kono, "Kɔnɔ")).toEqual({
+      searched: "Kɔnɔ",
+      self: "Kono",
+    });
+  });
+
+  // @req REQ-178
+  it("offers no lead when the fold reaches the self-name from a spelling the subject does not write", () => {
+    const fula: Name[] = [
+      { form: "Fulɓe", selfGiven: true },
+      { form: "Peul", selfGiven: false },
+    ];
+
+    expect(selfNameLead(fula, "Fulbe")).toBeUndefined();
+  });
 });
 
 // The fold lets « Kono » reach « Kɔnɔ » (REQ-135); it must not make « Kɔnɔ »

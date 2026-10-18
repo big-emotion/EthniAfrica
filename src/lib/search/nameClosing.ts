@@ -13,7 +13,7 @@ import type {
   NameHistoryAccount,
   TimelineName,
 } from "@/lib/search/nameTimeline";
-import { answersToSearch } from "@/lib/search/searchedName";
+import { searchedAmong } from "@/lib/search/searchedName";
 import {
   SOURCE_KIND_FAMILIES,
   sourceKindFamily,
@@ -226,8 +226,12 @@ function namerOf(
   { subject, nameHistory }: SubjectHistory,
   searched: string
 ): NextStepTarget | null {
+  const isSearched = searchedAmong(
+    nameHistory.names.map(({ nameText }) => nameText),
+    searched
+  );
   const name = nameHistory.names.find((candidate) =>
-    answersToSearch(candidate.nameText, searched)
+    isSearched(candidate.nameText)
   );
   const origin = name?.languageOfOrigin;
   if (!origin || name.selfGiven) return null;

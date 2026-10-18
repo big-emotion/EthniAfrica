@@ -231,6 +231,32 @@ describe("nextStepTargets — the next step", () => {
     };
     expect(namers(ownLanguage, "peul")).toEqual([]);
   });
+
+  // The fold equates « Kono » and « Kɔnɔ » (REQ-135). On a history that writes
+  // the self-name « Kono » and an outside « Kɔnɔ » apart, a reader who typed
+  // « Kɔnɔ » searched the outside name, whose language is still the namer.
+  // The language code is the fixture's, not a claim about the corpus.
+  // @req REQ-198
+  it("finds the namer of the spelling typed, not of a self-name the fold equates with it", () => {
+    const [selfName, outsideName] = PEUL_HISTORY.names;
+    const kono = {
+      ...PEUL_HISTORY,
+      names: [
+        { ...selfName, nameText: "Kono" },
+        { ...outsideName, nameText: "Kɔnɔ", languageOfOrigin: "tem" },
+      ],
+    };
+
+    expect(
+      nextStepTargets(
+        [people],
+        [{ subject: people, nameHistory: kono }],
+        "Kɔnɔ"
+      ).filter((target) => target.relation === "namer")
+    ).toEqual([
+      { type: "language", id: "tem", name: "tem", relation: "namer" },
+    ]);
+  });
 });
 
 describe("nameFormOf — the name a next-step card shows and searches", () => {

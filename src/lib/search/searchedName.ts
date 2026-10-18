@@ -29,6 +29,9 @@ const comparisonFold: Fold = (text) => normalizeString(text).trim();
  * Whether a form answers to what the reader typed. A fiche files one name in
  * several shapes — « Fulɓe · Pullo », « Fulbe (pluriel), Pullo (singulier) » —
  * so each part is compared, without its parenthesised gloss.
+ *
+ * It judges one form alone, so the fold makes « Kono » answer to « Kɔnɔ ». To
+ * tell which of a subject's forms the reader searched, use `searchedAmong`.
  */
 // @req REQ-178
 export function answersToSearch(form: string, searched?: string): boolean {
@@ -114,6 +117,8 @@ export function orderForSearch<T extends { selfGiven?: boolean | null }>(
  * What the page says under its heading when the reader searched another name
  * than the self-given one: the query as typed, and the first self-given form.
  * Nothing when the fiche records no self-given form or the reader typed it.
+ * « Typed it » follows `searchedAmong`, as the names block does: « Kɔnɔ »
+ * still leads to the self-given « Kono » on a fiche that writes both.
  */
 // @req REQ-178
 export function selfNameLead(
@@ -124,7 +129,10 @@ export function selfNameLead(
   if (!query) return undefined;
   const selfGiven = names.filter((name) => name.selfGiven === true);
   if (selfGiven.length === 0) return undefined;
-  if (selfGiven.some((name) => answersToSearch(name.form, query)))
-    return undefined;
+  const isSearched = searchedAmong(
+    names.map(({ form }) => form),
+    query
+  );
+  if (selfGiven.some((name) => isSearched(name.form))) return undefined;
   return { searched: query, self: selfGiven[0].form };
 }
