@@ -42,6 +42,13 @@ is no reason to make a sentence harder.
 - Avoid strings of noun fragments, artificial slogans and dramatic contrasts.
   “Un nom. Des peuples. Une histoire.” is not the default voice. Short labels,
   headings, proper names and source references need not become full sentences.
+- No figure of style in a title, on any page (operator decision, 2026-10-17).
+  A block is titled by what it is, with one plain sentence under it: « Les
+  sources du nom Peul » and « Plusieurs sources expliquent l'origine de ce
+  nom », not « Les sources parlent » nor « Qui raconte le nom Peul ? ». No
+  personification, no metaphor, no eyebrow doubling the title, no question
+  standing for a title. A question the page really asks the reader, « Quel nom
+  cherchez-vous ? », is a question, not a figure.
 - Use “les sources”, “les fiches” or “les textes étudiés” according to what is
   actually meant, instead of the internal term “corpus”. Never replace words
   mechanically without checking their meaning.

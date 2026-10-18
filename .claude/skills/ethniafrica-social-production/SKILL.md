@@ -136,7 +136,9 @@ Corpus comparison is mandatory during research when the subject touches project
 knowledge. Follow [the research sequence](references/research-and-corpus.md),
 prepare the dossier and candidate corrections, and include them in the proof.
 Pass `researchFile` at review 2; the helper refuses missing or stale evidence.
-Before final review, verify the public destination or revise the invitation. Keep
+Before final review, verify the public destination or revise the invitation. For
+a name it is the name's address, `/fr/atlas/recherche/<nom>`, never `?q=`
+([name addresses](references/publication-package.md#name-addresses)). Keep
 prepared, locally checked, proposed, integrated and verified-live states distinct.
 Use the existing reviewed repository and release path. If the destination lacks
 the promised answer, resolve that gap or revise the invitation before final

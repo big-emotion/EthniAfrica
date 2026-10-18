@@ -684,7 +684,10 @@ test("each image a series video shows needs a research and rights record", (t) =
   );
 });
 
-const LINGALA = "https://ethniafrica.com/fr/atlas/recherche?q=Lingala";
+// The Lingala answer at its name address (REQ-200), and the search page's
+// reading of the same name that packages sent readers to before it.
+const LINGALA = "https://ethniafrica.com/fr/atlas/recherche/lingala";
+const LINGALA_SEARCH = "https://ethniafrica.com/fr/atlas/recherche?q=Lingala";
 
 // A carousel whose Facebook first comment carries `url`, with the Lingala answer
 // (or `destination`) as the verified destination of the campaign langue-07.
@@ -713,7 +716,7 @@ function lingalaPiece(t, url, destination = LINGALA) {
 // @req REQ-186
 test("a link tagged for its network and the piece's campaign is delivered exactly", (t) => {
   const tagged =
-    "https://ethniafrica.com/fr/atlas/recherche?q=Lingala&utm_source=facebook&utm_medium=social&utm_campaign=langue-07&utm_content=carrousel";
+    "https://ethniafrica.com/fr/atlas/recherche/lingala?utm_source=facebook&utm_medium=social&utm_campaign=langue-07&utm_content=carrousel";
   const f = lingalaPiece(t, tagged);
   createPackage(f.root, f.configPath, f.output, both);
   const post = readFileSync(join(f.root, f.output, "post.md"), "utf8");
@@ -734,9 +737,9 @@ test("a bare link to the verified destination is refused for want of its campaig
 // @req REQ-186
 test("a link tagged for another network, campaign or format is refused", (t) => {
   for (const url of [
-    `${LINGALA}&utm_source=instagram&utm_medium=social&utm_campaign=langue-07&utm_content=carrousel`,
-    `${LINGALA}&utm_source=facebook&utm_medium=social&utm_campaign=langue-08&utm_content=carrousel`,
-    `${LINGALA}&utm_source=facebook&utm_medium=social&utm_campaign=langue-07&utm_content=video`,
+    `${LINGALA}?utm_source=instagram&utm_medium=social&utm_campaign=langue-07&utm_content=carrousel`,
+    `${LINGALA}?utm_source=facebook&utm_medium=social&utm_campaign=langue-08&utm_content=carrousel`,
+    `${LINGALA}?utm_source=facebook&utm_medium=social&utm_campaign=langue-07&utm_content=video`,
   ]) {
     const f = lingalaPiece(t, url);
     assert.throws(
@@ -752,7 +755,7 @@ test("a verified destination that already carries utm tags or a fragment is refu
   const tags =
     "utm_source=facebook&utm_medium=social&utm_campaign=langue-07&utm_content=carrousel";
   for (const destination of [
-    `${LINGALA}&utm_source=newsletter`,
+    `${LINGALA}?utm_source=newsletter`,
     `${LINGALA}#origine`,
   ]) {
     // The link is the destination with this piece's tags appended, so only
@@ -765,6 +768,83 @@ test("a verified destination that already carries utm tags or a fragment is refu
     );
     assert.equal(existsSync(join(f.root, f.output)), false);
   }
+});
+
+const FACEBOOK_TAGS =
+  "utm_source=facebook&utm_medium=social&utm_campaign=langue-07&utm_content=carrousel";
+
+// @req REQ-186
+test("a new delivery sends a name to its address, not to the search page's ?q= reading", (t) => {
+  const f = lingalaPiece(
+    t,
+    `${LINGALA_SEARCH}&${FACEBOOK_TAGS}`,
+    LINGALA_SEARCH
+  );
+  assert.throws(
+    () => createPackage(f.root, f.configPath, f.output, both),
+    (error) =>
+      /name's address/.test(error.message) && error.message.includes(LINGALA)
+  );
+  assert.equal(existsSync(join(f.root, f.output)), false);
+});
+
+// @req REQ-186
+test("a name address in another case is refused, because it answers with a redirect", (t) => {
+  const capitalised = "https://ethniafrica.com/fr/atlas/recherche/Lingala";
+  const f = lingalaPiece(t, `${capitalised}?${FACEBOOK_TAGS}`, capitalised);
+  assert.throws(
+    () => createPackage(f.root, f.configPath, f.output, both),
+    (error) => /redirect/.test(error.message) && error.message.includes(LINGALA)
+  );
+  // The accents are the corpus spelling, so they stay in the address.
+  const traore = "https://ethniafrica.com/fr/atlas/recherche/traor%C3%A9";
+  const accented = lingalaPiece(t, `${traore}?${FACEBOOK_TAGS}`, traore);
+  assert.doesNotThrow(() =>
+    createPackage(accented.root, accented.configPath, accented.output, both)
+  );
+});
+
+// Turns a delivered revision into one created before name addresses: its
+// dossier, input and delivered copy send the reader to the search page's
+// reading of the name, and the manifest fingerprints the rewritten files.
+function deliveredToSearchPage(f) {
+  const files = [
+    f.config.research,
+    f.configPath,
+    `${f.output}/post.md`,
+    `${f.output}/public-copy.json`,
+  ];
+  for (const file of files)
+    writeFileSync(
+      join(f.root, file),
+      readFileSync(join(f.root, file), "utf8")
+        .replaceAll(`${LINGALA}?`, `${LINGALA_SEARCH}&`)
+        .replaceAll(LINGALA, LINGALA_SEARCH)
+    );
+  const sha = (file) =>
+    createHash("sha256")
+      .update(readFileSync(join(f.root, file)))
+      .digest("hex");
+  const manifestFile = join(f.root, f.output, "package.json");
+  const manifest = JSON.parse(readFileSync(manifestFile, "utf8"));
+  manifest.dependencies[f.config.research] = sha(f.config.research);
+  manifest.dependencies[f.configPath] = sha(f.configPath);
+  for (const name of ["post.md", "public-copy.json"])
+    manifest.files[name] = sha(`${f.output}/${name}`);
+  writeFileSync(manifestFile, JSON.stringify(manifest, null, 2) + "\n");
+}
+
+// @req REQ-186
+test("a revision delivered to the search page before name addresses still verifies", (t) => {
+  const f = lingalaPiece(t, `${LINGALA}?${FACEBOOK_TAGS}`);
+  createPackage(f.root, f.configPath, f.output, both);
+  deliveredToSearchPage(f);
+  assert.ok(
+    readFileSync(join(f.root, f.output, "post.md"), "utf8").includes(
+      `${LINGALA_SEARCH}&${FACEBOOK_TAGS}`
+    )
+  );
+  assert.doesNotThrow(() => inspectPackage(f.root, f.output, both));
 });
 
 // @req REQ-186
@@ -784,7 +864,7 @@ test("a series video carries its YouTube link tagged as a video", (t) => {
   writeFileSync(p, JSON.stringify(research));
   const youtube = f.config.networks[0];
   const caption = youtube.caption;
-  const tagged = `${LINGALA}&utm_source=youtube&utm_medium=social&utm_campaign=${f.config.campaign}&utm_content=video`;
+  const tagged = `${LINGALA}?utm_source=youtube&utm_medium=social&utm_campaign=${f.config.campaign}&utm_content=video`;
   youtube.link = { placement: "caption", url: tagged };
   youtube.caption = `${caption} ${tagged}`;
   youtube.capability.linkPlacements = ["none", "caption"];
@@ -822,7 +902,7 @@ test("a new delivery needs a campaign written as a lowercase slug", (t) => {
 
 // @req REQ-186
 test("a profile link is tagged as the bio link, not as the post", (t) => {
-  const bio = `${LINGALA}&utm_source=instagram&utm_medium=social&utm_campaign=langue-07&utm_content=bio`;
+  const bio = `${LINGALA}?utm_source=instagram&utm_medium=social&utm_campaign=langue-07&utm_content=bio`;
   const f = lingalaPiece(t, LINGALA);
   f.config.networks[1].link = { placement: "none" };
   f.config.networks[1].firstComment = null;
@@ -884,20 +964,20 @@ test("a revision written before campaigns existed still verifies without one", (
 
 // @req REQ-186
 test("a revision written before campaigns keeps its bare link only when it is the verified destination", (t) => {
-  const tagged = `${LINGALA}&utm_source=facebook&utm_medium=social&utm_campaign=langue-07&utm_content=carrousel`;
+  const tagged = `${LINGALA}?utm_source=facebook&utm_medium=social&utm_campaign=langue-07&utm_content=carrousel`;
   const f = lingalaPiece(t, tagged);
   createPackage(f.root, f.configPath, f.output, both);
   writtenBeforeCampaigns(f, LINGALA);
   assert.match(
     readFileSync(join(f.root, f.output, "post.md"), "utf8"),
-    /### Premier commentaire\n\nhttps:\/\/ethniafrica\.com\/fr\/atlas\/recherche\?q=Lingala\n/
+    /### Premier commentaire\n\nhttps:\/\/ethniafrica\.com\/fr\/atlas\/recherche\/lingala\n/
   );
   assert.doesNotThrow(() => inspectPackage(f.root, f.output, both));
   const other = lingalaPiece(t, tagged);
   createPackage(other.root, other.configPath, other.output, both);
   writtenBeforeCampaigns(
     other,
-    "https://ethniafrica.com/fr/atlas/recherche?q=Kikongo"
+    "https://ethniafrica.com/fr/atlas/recherche/kikongo"
   );
   assert.throws(
     () => inspectPackage(other.root, other.output, both),

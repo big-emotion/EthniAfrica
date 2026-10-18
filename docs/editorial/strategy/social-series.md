@@ -162,7 +162,12 @@ days).
 - **The profile link stays fixed** on the search page; the episode-specific link
   goes in the **Instagram story link sticker**, the only place where a link is
   one tap away and changes with every episode:
-  `https://ethniafrica.com/fr/atlas/recherche?q=<nom>&utm_source=instagram&utm_medium=story&utm_campaign=<series>-<episode>`.
+  `https://ethniafrica.com/fr/atlas/recherche/<nom>?utm_source=instagram&utm_medium=story&utm_campaign=<series>-<episode>`.
+  Since 2026-10-18 the episode link goes to the name's own address (REQ-200),
+  no longer to the search page with `?q=<nom>`; `<nom>` is the name as the
+  corpus spells it, in lower case, accents kept, and the address must be in
+  the sitemap or answer 200
+  ([name addresses](../../../.claude/skills/ethniafrica-social-production/references/publication-package.md#name-addresses)).
 - **Every post is filed and carries a campaign code** `<series>-<episode>`
   (`pays-14`, `nom-recu-03`, `nom-famille-06`, `mots-02`, `frontieres-01`,
   `afrique-tout-01`, `villes-01`), so each series can be credited with the

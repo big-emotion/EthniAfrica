@@ -45,12 +45,27 @@ after a long read (`pays/CIV`, `FLG_MANDE`, `PPL_MUCUVAL`), early exits
 | 10 | [`10-fiche-story-link-and-folds.md`](10-fiche-story-link-and-folds.md) | Pass 1, the fiche boards: the link to the name's story, folded chapters | `people-fula`, `people-bassa`, `people-thin-alaba`, `language-lingala`, `language-thin-havu`, `family-bantu`, `family-mande`, `country-civ`, `country-state-civ-quaqua`, `country-state-thin-gab`, `country-state-shared-congo`, `Main` (**approved 2026-10-17 by delegation**, see the brief's approval record). Prompt: [`claude-design-prompt-10.md`](claude-design-prompt-10.md) |
 | 11 | [`11-result-page-self-name-handoff.md`](11-result-page-self-name-handoff.md) | Pass 2, the search result page: hand-off to the self-name, one video, labelled sources | `search-peul`, `search-bassa`, `search-congo`, `search-state-competing`, `search-state-thin`, `language-lingala`, `country-civ`, `country-state-civ-quaqua`, `Main` (**approved 2026-10-17 by delegation**, see the brief's approval record). Prompt: [`claude-design-prompt-11.md`](claude-design-prompt-11.md) |
 | 12 | [`12-unknown-name-fiches-lens-consent.md`](12-unknown-name-fiches-lens-consent.md) | Pass 3: the unknown name, the « Fiches » lens, the consent strip | `search-unknown`; three new boards (`search-state-fiches-430`, `-768`, `-1440`); `Main` (**approved 2026-10-17 by delegation**, see the brief's approval record). Prompt: [`claude-design-prompt-12.md`](claude-design-prompt-12.md) |
-| 16 | [`16-typo-with-related-fiches.md`](16-typo-with-related-fiches.md) | A misspelling that also finds related fiches (« tchikaya », DEC-075) | three new boards (`search-state-typo-fiches-430`, `-768`, `-1440`); `Main` (**proposed 2026-10-18, awaiting the operator's approval**) |
 
 Briefs 10 to 12 are the three board passes the operator approved on
 2026-10-17, one per family of pages, drawn in that order: each pass starts
 once the previous one is approved and recorded, because they share `Main` and
 `ea-live.css`. Brief 6 is pasted inside pass 1, after brief 10.
+
+| # | Brief | Surface | Boards |
+| --- | --- | --- | --- |
+| 13 | [`13-search-entry.md`](13-search-entry.md) | Pass 4: one search component, the header search full screen on mobile, the search page | `Main`; three new boards (`search-entry-430`, `-768`, `-1440`) (**scope approved 2026-10-18**, boards not drawn). Prompt: [`claude-design-prompt-13.md`](claude-design-prompt-13.md) |
+| 14 | [`14-atlas-names-page.md`](14-atlas-names-page.md) | Pass 5: the Atlas page becomes « Les noms d'Afrique » | three new boards (`atlas-names-430`, `-768`, `-1440`) (**scope approved 2026-10-18**, boards not drawn). Prompt: [`claude-design-prompt-14.md`](claude-design-prompt-14.md) |
+| 15 | [`15-result-page-shorter.md`](15-result-page-shorter.md) | Pass 6: the result page tells each account once and opens shorter | `search-peul`, `search-bassa`, `search-congo`, the `search-state-*` boards with a timeline; new `search-state-long-traore-*`; `Main` (**scope approved 2026-10-18**, boards not drawn). Prompt: [`claude-design-prompt-15.md`](claude-design-prompt-15.md) |
+
+Briefs 13 to 15 come from the operator's mobile review of 2026-10-18 and its
+five decisions. They are drawn in that order, after brief 6, one at a time.
+
+| # | Brief | Surface | Boards |
+| --- | --- | --- | --- |
+| 16 | [`16-typo-with-related-fiches.md`](16-typo-with-related-fiches.md) | A misspelling that also finds related fiches (« tchikaya », DEC-075) | three new boards (`search-state-typo-fiches-430`, `-768`, `-1440`); `Main` (**proposed 2026-10-18, awaiting the operator's approval**) |
+
+Brief 16 draws the state that DEC-075 (pull request #1835) adds to the result
+page. It is not one of the passes above and was drawn beside them.
 
 Dossiers (`DOS_*`) are an editorial type, not a type of name. They carry the
 operator's thesis in full and get their own brief once the thesis wording is

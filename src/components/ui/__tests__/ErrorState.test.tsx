@@ -68,7 +68,7 @@ describe("ErrorState", () => {
 
     const aside = screen.getByTestId("error-anecdote");
     expect(aside.tagName).toBe("ASIDE");
-    expect(aside.textContent).toContain("Le saviez-vous");
+    expect(aside.textContent).toContain("À savoir");
     expect(aside.textContent).toContain(ANECDOTE.headline);
     expect(aside.textContent).toContain(ANECDOTE.body[0]);
   });
