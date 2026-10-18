@@ -17,7 +17,7 @@ Jira ticket that a session can take with `/ethniafrica-ticket`.
 | 6        | Family-name fiche                                                                            | approved 2026-10-18 (PR #1839) | **to do**, session B                          |
 | 13       | One search component and the search page                                                     | approved 2026-10-18 (PR #1841) | **to do**, sessions D1 and D2                 |
 | 14       | Atlas page « Les noms d'Afrique »                                                            | approved 2026-10-18 (PR #1844) | **to do**, session E                          |
-| 15       | Result page, each account told once                                                          | being drawn                    | **to do** once approved, session F            |
+| 15       | Result page, each account told once                                                          | approved 2026-10-18            | **to do**, session F                          |
 | 7 and 8  | Place fiche, free-word page                                                                  | stale first drafts             | **to rewrite and draw**, session G            |
 
 The last release, v5.6.0 (2026-10-17), predates PR #1830: nothing of this
@@ -29,17 +29,17 @@ Each session is one ticket, one branch from `recette`, one pull request. Tests
 first; every visible change is compared to its recorded boards at 430, 768 and
 1440 px, and the board wins.
 
-| Session | Ticket                                                          | What it delivers                                                                                                            | Depends on                                                      | Touches                                                                                  |
-| ------- | --------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| A       | [ETNI-2112](https://big-emotion.atlassian.net/browse/ETNI-2112) | Page `/fr/notre-demarche`, footer B on every page, link from « À propos »                                                   | nothing                                                         | `SiteFooter.tsx`, `AboutPageContent.tsx`, new page                                       |
-| B       | [ETNI-2113](https://big-emotion.atlassian.net/browse/ETNI-2113) | Family-name fiche: title in the history's spelling, sources block, closing band, allied next names, folds, equivalents line | nothing; two model questions to confirm with the operator first | `src/components/patronymes/`, `NameClosing.tsx`, `nameClosing.ts`, `ficheNameClosing.ts` |
-| C       | [ETNI-2104](https://big-emotion.atlassian.net/browse/ETNI-2104) | Griot accounts counted as oral traditions in name histories (94 candidate sources, 44 fiches)                               | nothing                                                         | corpus only, `dataset/source/afrik/`                                                     |
-| D1      | [ETNI-2114](https://big-emotion.atlassian.net/browse/ETNI-2114) | `GET /api/v2/names/suggest` by first letters with the self-name; `src/data/searchedThisWeek.json` and its script            | nothing                                                         | `src/app/api/v2/names/suggest/`, handlers, services, `openapiV2.ts`, `scripts/`          |
-| D2      | [ETNI-2115](https://big-emotion.atlassian.net/browse/ETNI-2115) | One search component on home, header and search page; header full screen below 768 px; the search page                      | D1                                                              | `HomeHeroSearch.tsx`, `SearchModalV2.tsx`, `RecherchePageContent.tsx`                    |
-| E       | [ETNI-2116](https://big-emotion.atlassian.net/browse/ETNI-2116) | `/fr/atlas` as « Les noms d'Afrique »                                                                                       | D1, D2                                                          | `atlas/(hub)/page.tsx`, hub components, `hubs.ts`                                        |
-| F       | [ETNI-2117](https://big-emotion.atlassian.net/browse/ETNI-2117) | Result page: sources that link back, three accounts open, one row of controls, lens bar under the verdict                   | brief 15 boards recorded; B merged                              | `NameClosing.tsx`, `NameTimeline.tsx`, `SearchFeed.tsx`                                  |
-| G       | [ETNI-2118](https://big-emotion.atlassian.net/browse/ETNI-2118) | Briefs 7 and 8 rewritten, drawn and approved (design only)                                                                  | brief 15 boards recorded                                        | `docs/design/mockups/`                                                                   |
-| H       | [ETNI-2105](https://big-emotion.atlassian.net/browse/ETNI-2105) | Origin accounts told inside the name history, with their claim status                                                       | B merged; a board pass first                                    | model, corpus, patronyme fiche                                                           |
+| Session | Ticket                                                          | What it delivers                                                                                                            | Depends on                                                            | Touches                                                                                  |
+| ------- | --------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| A       | [ETNI-2112](https://big-emotion.atlassian.net/browse/ETNI-2112) | Page `/fr/notre-demarche`, footer B on every page, link from « À propos »                                                   | nothing                                                               | `SiteFooter.tsx`, `AboutPageContent.tsx`, new page                                       |
+| B       | [ETNI-2113](https://big-emotion.atlassian.net/browse/ETNI-2113) | Family-name fiche: title in the history's spelling, sources block, closing band, allied next names, folds, equivalents line | nothing; the two model questions are answered (comment on the ticket) | `src/components/patronymes/`, `NameClosing.tsx`, `nameClosing.ts`, `ficheNameClosing.ts` |
+| C       | [ETNI-2104](https://big-emotion.atlassian.net/browse/ETNI-2104) | Griot accounts counted as oral traditions in name histories (94 candidate sources, 44 fiches)                               | nothing                                                               | corpus only, `dataset/source/afrik/`                                                     |
+| D1      | [ETNI-2114](https://big-emotion.atlassian.net/browse/ETNI-2114) | `GET /api/v2/names/suggest` by first letters with the self-name; `src/data/searchedThisWeek.json` and its script            | nothing                                                               | `src/app/api/v2/names/suggest/`, handlers, services, `openapiV2.ts`, `scripts/`          |
+| D2      | [ETNI-2115](https://big-emotion.atlassian.net/browse/ETNI-2115) | One search component on home, header and search page; header full screen below 768 px; the search page                      | D1                                                                    | `HomeHeroSearch.tsx`, `SearchModalV2.tsx`, `RecherchePageContent.tsx`                    |
+| E       | [ETNI-2116](https://big-emotion.atlassian.net/browse/ETNI-2116) | `/fr/atlas` as « Les noms d'Afrique »                                                                                       | D1, D2                                                                | `atlas/(hub)/page.tsx`, hub components, `hubs.ts`                                        |
+| F       | [ETNI-2117](https://big-emotion.atlassian.net/browse/ETNI-2117) | Result page: sources that link back, three accounts open, one row of controls, lens bar under the verdict                   | brief 15 boards recorded; B merged                                    | `NameClosing.tsx`, `NameTimeline.tsx`, `SearchFeed.tsx`                                  |
+| G       | [ETNI-2118](https://big-emotion.atlassian.net/browse/ETNI-2118) | Briefs 7 and 8 rewritten, drawn and approved (design only)                                                                  | brief 15 boards recorded                                              | `docs/design/mockups/`                                                                   |
+| H       | [ETNI-2105](https://big-emotion.atlassian.net/browse/ETNI-2105) | Origin accounts told inside the name history, with their claim status                                                       | B merged; a board pass first                                          | model, corpus, patronyme fiche                                                           |
 
 ## 3. Order
 
@@ -64,14 +64,18 @@ and `src/lib/i18n/copy/nameClosing.ts`; merge B first.
 
 ## 4. What only the operator can do
 
-- **Approve the brief 15 boards** when Claude Design delivers them; F and G wait
-  for it.
-- **Answer the two model questions of B** (ETNI-2113): an optional
-  `nameHistory.originExplained` for names the sources mention without explaining
-  (Kollo, Sarr), and an optional `equivalents` list for the « Équivalents chez
-  d'autres peuples » line.
-- **Add one line to the nightly demand routine** so it runs
-  `scripts/buildSearchedThisWeek.ts` (D1) and commits the file.
+Done on 2026-10-18:
+
+- The brief 15 boards are approved, with the tile of competing hypotheses
+  always open; Claude Design is recording them.
+- The two model questions of B are answered: follow the ticket's proposals
+  (`nameHistory.originExplained`, an optional `equivalents` list), recorded as a
+  comment on ETNI-2113.
+- The nightly demand routine runs `scripts/buildSearchedThisWeek.ts` once it
+  exists (D1) and commits the file; until then it skips the step.
+
+Still to do:
+
 - **Fix the thesis wording** and the doctrine §1.1 amendment; it unblocks the
   dossiers brief, which is not in this plan.
 - **Publish a release** (`/ethniafrica-release`) once A, B, D2, E and F are
