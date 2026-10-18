@@ -714,6 +714,9 @@ describe("RecherchePageContent", () => {
     expect(
       choices.compareDocumentPosition(fiches) & Node.DOCUMENT_POSITION_FOLLOWING
     ).toBeTruthy();
+    // Board search-state-typo-fiches: no shelf saying it holds no short.
+    expect(screen.queryByTestId("feed-block-shorts")).not.toBeInTheDocument();
+    expect(screen.queryByText("Pas encore de short")).not.toBeInTheDocument();
   });
 
   // A reader keeps the « Peuples du pays » chip and types a name. The page

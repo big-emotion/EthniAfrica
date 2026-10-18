@@ -75,8 +75,13 @@ export function buildSearchFeedPlan(
   if (availability.appellations) first.push("appellations");
   first.push("lenses");
   // A page that admits it does not know the name draws no empty shelf under
-  // the confession (brief 12, part A, approved 2026-10-17).
-  if (state !== "unknown" || availability.shorts) first.push("shorts");
+  // the confession (brief 12, part A, approved 2026-10-17). A page that asks
+  // which name the reader meant draws none either: its pieces are about a
+  // nearest name, and the Shorts filter keeps them (board
+  // search-state-typo-fiches, brief 13, proposed 2026-10-18).
+  if ((state !== "unknown" && state !== "typo") || availability.shorts) {
+    first.push("shorts");
+  }
 
   const closing: FeedBlockId[] = [];
   if (

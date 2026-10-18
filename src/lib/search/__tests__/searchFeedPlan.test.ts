@@ -42,14 +42,18 @@ describe("search-feed plan", () => {
     expect(plan.closing).toEqual(["owed"]);
   });
 
+  // The page asks which name the reader meant, so it draws no shelf: the
+  // pieces it holds are about a nearest name, which the Shorts filter keeps,
+  // and an empty one would only say it is empty (board
+  // search-state-typo-fiches, brief 13, proposed 2026-10-18).
   // @req REQ-178
-  it("opens with the verdict and the choices when no answer can be given", () => {
+  it("opens with the verdict and the choices when no answer can be given, and draws no shelf", () => {
     const plan = buildSearchFeedPlan("typo", {
       appellations: true,
       fiches: true,
     });
 
-    expect(plan.first).toEqual(["verdict", "appellations", "lenses", "shorts"]);
+    expect(plan.first).toEqual(["verdict", "appellations", "lenses"]);
     expect(plan.primary).toEqual(["fiches"]);
     expect(plan.closing).toEqual(["further"]);
   });
