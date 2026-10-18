@@ -23,7 +23,10 @@
     {
       "spelling": "Salif",
       "attestations": [
-        { "countryId": "NER", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "NER",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -32,13 +35,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Salifou est présenté comme une variante du nom Salifu.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["behindthename-salifou-submitted"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -188,6 +186,26 @@
                 "source_kind": "archive",
                 "page": "p. 507-508",
                 "notes": "Journal officiel de la colonie, Saint-Louis. Lu sur l'exemplaire numérisé de HathiTrust le 11 octobre 2026. Pages 507-508 : convention signée le 17 mars 1863 entre le gouverneur Jauréguiberry et les chefs du Pakao, en Casamance, parmi lesquels « Salifou-Coma, Salifou-Souané, alcaty et almamy de Dianath »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Salifou est présenté comme une variante du nom Salifu.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "User-submitted name Salifou",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.behindthename.com/name/salifou/submitted",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Contribution d'un utilisateur, consultée en anglais. Le site précise que son équipe éditoriale ne vérifie pas ces contributions. L'utilisateur propose de voir dans Salifou une variante de Salifu. Cette explication reste une hypothèse."
               }
             ]
           }

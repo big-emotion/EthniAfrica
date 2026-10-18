@@ -31,13 +31,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Un répertoire de fréquence patronymique rattache ce nom au peuple mbunda et lui donne le sens « rivière », d'après le nom d'une rivière angolaise dans une région où les Mbunda sont implantés de longue date.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["forebears-lumbala"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -151,6 +146,26 @@
                 "source_kind": "press",
                 "page": "p. 422",
                 "notes": "The Presbyterian Survey, juillet 1935 (numéro numérisé sous le titre The Presbyterians Today, volume 25, numéro 7). Page 422 : « My name is Lumbala » ; légende de la photographie : « Lumbala, a Baluba boy ». Récit de missionnaire, écrit dix-neuf ans après les faits. Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Un répertoire de fréquence patronymique rattache ce nom au peuple mbunda et lui donne le sens « rivière », d'après le nom d'une rivière angolaise dans une région où les Mbunda sont implantés de longue date.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Lumbala Surname Origin, Meaning & Last Name History",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://forebears.io/surnames/lumbala",
+                "tier": "unverified",
+                "source_kind": "repository",
+                "notes": "Répertoire de fréquence patronymique consulté directement. Il recense environ 28 053 porteurs dans le monde, très majoritairement en République démocratique du Congo (25 961, 93 pour cent) et, dans une moindre mesure, en Zambie (1 925, 7 pour cent) ; de très petits effectifs sont recensés au Canada, en Afrique du Sud et en Angola. Il rattache le nom au peuple mbunda et au sens « rivière », par référence à un cours d'eau angolais du même nom, sans citer de source académique propre à cette étymologie."
               }
             ]
           }

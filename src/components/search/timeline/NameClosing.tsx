@@ -10,6 +10,7 @@ import { trackEvent } from "@/lib/analytics/trackEvent";
 import { sourceKindLabel } from "@/lib/glossaire/vocabularies";
 import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
 import { nameTimelineCopy } from "@/lib/i18n/copy/nameTimeline";
+import { getTranslation } from "@/lib/translations";
 import { normalizeFrenchSpacing } from "@/lib/prose/frenchSpacing";
 import { sourceDiamondCopy } from "@/lib/i18n/copy/sourceDiamond";
 import { useNameSearchHref } from "@/components/search/NameAddressProvider";
@@ -268,6 +269,7 @@ interface FamilyGroupsProps {
   hypothesis?: ReadonlyMap<NameHistoryAccount, number>;
   /** An oral source named by its carrier and place first (brief 2). */
   carrierFirst?: boolean;
+  patronyme?: boolean;
   language: Language;
 }
 
@@ -278,11 +280,14 @@ function FamilyGroups({
   open,
   hypothesis = new Map(),
   carrierFirst = false,
+  patronyme = false,
   language,
 }: FamilyGroupsProps) {
   const copy = nameClosingCopy[language];
   const families = sourceDiamondCopy[language].families;
   const timelineCopy = nameTimelineCopy[language];
+  const claimStatusLabels =
+    getTranslation(language).patronymes.originClaimStatusLabels;
   return (
     <div className="flex flex-col gap-afh-md">
       {groups.map((group, groupIndex) => (
@@ -326,6 +331,9 @@ function FamilyGroups({
                         ? `${timelineCopy.hypothesis(hypothesis.get(account)!)} · `
                         : null}
                       {account.period.label ?? copy.undated}
+                      {patronyme && account.claimStatus
+                        ? ` · ${claimStatusLabels[account.claimStatus]}`
+                        : null}
                     </span>
                     <span className="line-clamp-1 text-afh-small leading-[1.5] text-afh-text group-open/account:hidden">
                       <Named
@@ -567,6 +575,7 @@ export function NameFicheSourcesBlock({
           forms={forms}
           open
           carrierFirst
+          patronyme={subjectType === "patronyme"}
           language={language}
         />
       ) : (
@@ -612,6 +621,7 @@ export function NameFicheSourcesBlock({
                   forms={forms}
                   open={index === 0}
                   carrierFirst
+                  patronyme={subjectType === "patronyme"}
                   language={language}
                 />
               </div>

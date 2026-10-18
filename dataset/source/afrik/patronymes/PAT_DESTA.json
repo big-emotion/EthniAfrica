@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'entrée consultée présente Desta, écrit ደስታ, comme un nom personnel amharique signifiant « joie ». La glose ne constitue pas une tradition d'origine familiale.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["btn-desta"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -194,6 +189,26 @@
                 "source_kind": "archive",
                 "page": "p. 120",
                 "notes": "Premier volume de la réimpression de 1921, approuvée par la Propagande à Rome le 18 décembre 1920. Lu le 13 octobre 2026 sur l'exemplaire numérisé d'archive.org. Page 120, au chapitre sur le Bègemder : « questo monaco, che chiamavasi Abba Desta », un moine abyssin chez qui Massaja passe la nuit. Cette édition ne dit pas, à cette page, l'année de l'épisode."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'entrée consultée présente Desta, écrit ደስታ, comme un nom personnel amharique signifiant « joie ». La glose ne constitue pas une tradition d'origine familiale.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Desta — Behind the Name",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/desta",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice du site Behind the Name, lue le 13 octobre 2026. Elle écrit le nom ደስታ, le dit amharique, féminin et masculin, et donne la glose « joy »."
               }
             ]
           }

@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'entrée consultée présente Tadesse comme un nom personnel amharique avec le sens « revenu à la vie » ou « renouvelé ». Cette proposition communautaire ne constitue pas une chronique d'origine.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["btn-tadesse"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -195,6 +190,26 @@
                 "source_kind": "government",
                 "page": "p. 3406",
                 "notes": "Journal officiel italien, lu dans le PDF du site officiel le 12 octobre 2026. Page 3406, liste des médailles de bronze : « Taddese », de Socotà, « sottocapo nella guardia del degiac Hailè Sellassiè Gugsa », pour la « Battaglia dell'Endertà, 12 febbraio 1936 ». La page ne dit pas ce que veut dire le nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'entrée consultée présente Tadesse comme un nom personnel amharique avec le sens « revenu à la vie » ou « renouvelé ». Cette proposition communautaire ne constitue pas une chronique d'origine.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Tadesse — Behind the Name",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.behindthename.com/name/tadesse",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Entrée communautaire consultée le 2 septembre 2026 : elle traite Tadesse comme nom amharique et propose le sens « revived ». Elle ne documente ni lignée ni transmission. Les versions anglaise et française de Wikipédia n'ont été contrôlées que comme pistes et ne sont pas citées."
               }
             ]
           }

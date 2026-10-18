@@ -10,6 +10,7 @@ import { describe, expect, it } from "vitest";
 
 interface Account {
   statement: string;
+  claimStatus?: string;
   birth?: true;
   before?: true;
   sources: Array<{ source_kind: string }>;
@@ -43,13 +44,16 @@ describe("the family name Abaza, from the Caucasus to the Nile delta", () => {
 
   // @req REQ-196
   it("keeps the competing readings side by side, the historian attributed", () => {
-    const claims = fiche.origin.linguisticReconstructions[0].claim;
-
-    expect(claims).toMatch(/ethnonyme/);
-    expect(claims).toMatch(/al-Sayyid-Marsot/);
-    expect(fiche.origin.linguisticReconstructions[0].claimStatus).toBe(
-      "contested"
+    const reading = accounts.find(
+      (account) =>
+        account.claimStatus === "contested" &&
+        /ethnonyme/.test(account.statement) &&
+        /al-Sayyid-Marsot/.test(account.statement)
     );
+
+    expect(reading?.statement).toMatch(/ethnonyme/);
+    expect(reading?.statement).toMatch(/al-Sayyid-Marsot/);
+    expect(reading?.claimStatus).toBe("contested");
   });
 
   // @req REQ-196

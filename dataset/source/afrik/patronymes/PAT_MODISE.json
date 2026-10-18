@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "La thèse de Ramaeba analyse Modise comme un nom personnel setswana signifiant « gardien de troupeau » ou « berger ». Le cas recueilli relie son attribution à l'espoir qu'un garçon aide son père à garder le bétail familial ; cette motivation documente un nom individuel et ne démontre pas une origine unique de toutes les familles portant aujourd'hui Modise comme patronyme.",
-        "claimStatus": "established",
-        "sourceRefs": ["ramaeba-2019-modise"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -118,7 +113,8 @@
                 "page": "p. 141",
                 "notes": "Thèse de doctorat, University of Glasgow, 2019 ; PDF lu en entier le 14 octobre 2026. Page 141 : « Modise ‘herd boy/shepherd’ it was hoped that as a boy he will help his father to look after the family livestock » ; l'exemple est celui d'une personne interrogée au Botswana. Le nom Modisa, de même sens, est cité comme exemple de métier à la page 140."
               }
-            ]
+            ],
+            "claimStatus": "established"
           },
           {
             "period": {

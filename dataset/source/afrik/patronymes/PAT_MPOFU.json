@@ -22,13 +22,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "L'étude historique de la formation de l'identité ndebele documente un parcours précis : des personnes d'origine shona assimilées à l'État ndebele ont adapté le nom Mhofu en Mpofu. L'auteur souligne toutefois que les izibongo ndebele peuvent avoir plusieurs origines ; ce parcours ne vaut donc pas généalogie unique de tous les Mpofu.",
-        "claimStatus": "established",
-        "sourceRefs": ["ndlovu-gatsheni-2008-mpofu"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -88,5 +83,40 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Mpofu », « NDEBELE », « surname », « clan », « etymology », « transmission », « alliance » et « obituary », ainsi que la page Forebears dédiée et les travaux ou notices propres au nom cités dans la fiche n'ont établi aucune règle propre à l'ensemble des emplois de Mpofu permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Les sources réunies dans ce dossier racontent l’histoire du nom Mpofu.",
+    "originExplained": true,
+    "names": [
+      {
+        "nameText": "Mpofu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'étude historique de la formation de l'identité ndebele documente un parcours précis : des personnes d'origine shona assimilées à l'État ndebele ont adapté le nom Mhofu en Mpofu. L'auteur souligne toutefois que les izibongo ndebele peuvent avoir plusieurs origines ; ce parcours ne vaut donc pas généalogie unique de tous les Mpofu.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Nation Building in Zimbabwe and the Challenges of Ndebele Particularism",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.accord.org.za/ajcr-issues/nation-building-in-zimbabwe-and-the-challenges-of-ndebele-particularism/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Article de Sabelo J. Ndlovu-Gatsheni dans l'African Journal on Conflict Resolution, consulté directement. Il documente l'adaptation de l'isibongo shona Mhofu en Mpofu lors de l'assimilation au monde ndebele et avertit qu'un isibongo ne prouve pas à lui seul une origine ethnique unique."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

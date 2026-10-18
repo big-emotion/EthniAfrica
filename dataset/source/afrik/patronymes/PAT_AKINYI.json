@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Akinyi est documenté comme un nom féminin donné à une enfant née au lever du jour, entre environ 5 h et 7 h.",
-        "claimStatus": "established",
-        "sourceRefs": ["oluoch-dholuo-toponyms-2022", "onyoyo-dholuo-grammar"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -175,6 +170,36 @@
                 "source_kind": "academic",
                 "page": "p. 31",
                 "notes": "Mémoire, University of Nairobi, 2022. Section sur l'anthroponymie dholuo : le « nying juok », nom d'esprit, vient de la place du soleil à la naissance. « …at sunrise, (5-7 am) the juok name is Akinyi/Okinyi », puis Anyango de 7 h à 10 h, Achieng de 11 h à 13 h, Odhiambo/Adhiambo en fin d'après-midi. Texte intégral lu depuis le dépôt de l'université. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Akinyi est documenté comme un nom féminin donné à une enfant née au lever du jour, entre environ 5 h et 7 h.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "A Morpho-semantic Study of Toponyms in Dholuo",
+                "author": "Angeline Awuor Oluoch",
+                "year": 2022,
+                "url": "https://erepository.uonbi.ac.ke/items/a3c4bee8-cbe3-4861-95be-02de1999ade8",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 31",
+                "notes": "Mémoire, University of Nairobi, 2022. Section sur l'anthroponymie dholuo : le « nying juok », nom d'esprit, vient de la place du soleil à la naissance. « …at sunrise, (5-7 am) the juok name is Akinyi/Okinyi », puis Anyango de 7 h à 10 h, Achieng de 11 h à 13 h, Odhiambo/Adhiambo en fin d'après-midi. Texte intégral lu depuis le dépôt de l'université. Lu le 13 octobre 2026."
+              },
+              {
+                "title": "Dholuo grammar for beginners",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://erepository.uonbi.ac.ke/items/0f4c0d43-6613-4d31-b9ad-d61562ea7c97",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Grammaire de Peter Onyango Onyoyo, Lake Publishers & Enterprises. La section sur les noms personnels confirme les séries liées au moment de la naissance. Le PDF intégral a été consulté depuis le dépôt de l’University of Nairobi."
               }
             ]
           }

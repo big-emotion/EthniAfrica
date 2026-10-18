@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Dans le tableau comparatif des noms de jumeaux, Nakato est le nom ganda systématiquement attribué à la seconde jumelle. Il s’agit d’un nom individuel déterminé par l’ordre de naissance, non d’un nom de clan héréditaire.",
-        "claimStatus": "established",
-        "sourceRefs": ["turamyomwe-katushemererwe-2024-nakato"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -145,6 +140,26 @@
                 "source_kind": "academic",
                 "page": "p. 204",
                 "notes": "Londres, Macmillan, 1911 ; exemplaire numérisé de l'université de Toronto sur archive.org. Chapitre VII, « The King », p. 204 : « this woman was given the title Nakato, the name of Budo's first wife, who, when she gave birth to a child, caused the sacred well Nansove to spring forth on Budo hill ». Ethnographie de l'époque coloniale, citée pour ce que les Ganda lui ont raconté, non pour ses classements. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans le tableau comparatif des noms de jumeaux, Nakato est le nom ganda systématiquement attribué à la seconde jumelle. Il s’agit d’un nom individuel déterminé par l’ordre de naissance, non d’un nom de clan héréditaire.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Conflict and Forced Migration in the Emergence and Shaping of Runyaruguru",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.researchgate.net/publication/394343547_Linguistics_and_Language_The_Promise_of_Linguistics_and_Language_The_Promise_of_Studies_in_Africa",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Chapitre de Justus Turamyomwe et Fridah Katushemererwe dans The Promise of Linguistics and Language Studies in Africa, consulté en texte intégral. Son tableau des noms de jumeaux donne Nakato comme nom systématique de la seconde jumelle en ganda."
               }
             ]
           }

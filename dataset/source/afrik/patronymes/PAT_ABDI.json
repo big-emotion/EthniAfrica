@@ -22,13 +22,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Le bureau du Premier ministre de Somalie atteste Abdi comme dernier élément de la chaîne de noms Jibril Abdirashid Haji Abdi ; la page ne précise pas si cet élément est une forme courte, un nom de père ou un nom familial administrativement stabilisé.",
-        "claimStatus": "established",
-        "sourceRefs": ["abdi-somalia-opm-2026"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -218,6 +213,26 @@
                 "source_kind": "archive",
                 "page": "p. 71",
                 "notes": "Journal of the Royal Geographical Society of London, vol. 19, 1849, p. 49-76 ; mémoire daté d'Aden le 12 mai 1848 et lu le 13 novembre 1848, par le lieutenant C. J. Cruttenden, de la marine des Indes, agent politique adjoint à Aden. Lu en fac-similé (copie JSTOR Early Journal Content) sur archive.org. Officier britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Page 71, chez les Ahl Oor Singally : « You are the kings of this world in wisdom, said the solemn Mahamonood Abdi, \"And what are we in comparison! Thank heaven, our world is to come!\" » (orthographe de l'imprimé). Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le bureau du Premier ministre de Somalie atteste Abdi comme dernier élément de la chaîne de noms Jibril Abdirashid Haji Abdi ; la page ne précise pas si cet élément est une forme courte, un nom de père ou un nom familial administrativement stabilisé.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Hon. Jibril Abdirashid Haji Abdi — Second Deputy Prime Minister",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://cabinet.gov.so/prime-ministers/hon-jibril-abdirashid-haji-abdi",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Bureau du Premier ministre de la République fédérale de Somalie, page consultée intégralement. Elle identifie Jibril Abdirashid Haji Abdi comme homme d'État somalien et donne son mandat à partir de juin 2025. Le porteur étant vivant, il n'est pas ajouté à bearers sans auto-identification conforme au schéma."
               }
             ]
           }

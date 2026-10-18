@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'étude cultulinguistique des noms propres bakongo explique que Kiala fait partie des noms indiquant l'ordre des initiés au sein d'une classe d'âge. Cette fonction documente un nom individuel lié au rang initiatique, et non un nom de clan transmis héréditairement.",
-        "claimStatus": "established",
-        "sourceRefs": ["kialanda-2024-kiala"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -143,6 +138,27 @@
             "statement": "Le nom Kiala apparaît par écrit dans une étude sur les noms propres kikongo, présentée à un séminaire en août 2024, qui le cite parmi les noms indiquant l'ordre des initiés d'une classe d'âge. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand on le porte.",
             "formAsWritten": "Kiala",
             "birth": true,
+            "sources": [
+              {
+                "title": "O kikongo e a cultura do povo bakongo: a cultulinguística nos nomes próprios",
+                "author": "Kialunda Sozinho Kialanda",
+                "year": 2024,
+                "url": "https://revistas.unilab.edu.br/index.php/njingaesape/article/view/1866",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 470 et 478",
+                "notes": "Article des Anais des Seminários Internacionais de la revue Njinga & Sepé (1er séminaire international de toponymie et d'anthroponymie, 15 et 16 août 2024), vol. 4, numéro spécial I, p. 470-483, mis en ligne le 15 septembre 2024. Le résumé (p. 470) et la conclusion (p. 478) disent que certains noms indiquent l'ordre des initiés dans une classe d'âge et existent encore, « como Mbala, Kiala, Lukoki ». Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'étude cultulinguistique des noms propres bakongo explique que Kiala fait partie des noms indiquant l'ordre des initiés au sein d'une classe d'âge. Cette fonction documente un nom individuel lié au rang initiatique, et non un nom de clan transmis héréditairement.",
+            "claimStatus": "established",
             "sources": [
               {
                 "title": "O kikongo e a cultura do povo bakongo: a cultulinguística nos nomes próprios",

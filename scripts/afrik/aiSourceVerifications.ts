@@ -165,10 +165,10 @@ function stringOrNull(value: unknown): string | null {
 }
 
 /**
- * Every object carrying `source_kind: "ai_generated"`, not only `sources[]`
- * entries: the anthroponym candidate queue marks each entry's `provenance` the
- * same way, and a gate that only read `sources[]` would let that queue grow
- * unnoticed.
+ * Every distinct source carrying `source_kind: "ai_generated"`, not only
+ * `sources[]` entries: the anthroponym candidate queue marks each entry's
+ * `provenance` the same way. A name-history account may embed a copy of a
+ * catalogue source; that exact copy is one source, not a new review item.
  */
 export function findAiGeneratedSources(
   fiches: CorpusFiche[]
@@ -217,7 +217,16 @@ export function findAiGeneratedSources(
 
   for (const fiche of fiches) visit(fiche.path, fiche.json, "", null);
   disambiguateOwners(found, owners);
-  return found;
+  const catalogueIdentities = new Set(
+    found
+      .filter((source) => /^sources\[\d+\]$/.test(source.path))
+      .map(sourceIdentity)
+  );
+  return found.filter(
+    (source) =>
+      !source.path.startsWith("nameHistory.names[") ||
+      !catalogueIdentities.has(sourceIdentity(source))
+  );
 }
 
 const OWNER_KEYS = ["countryId", "name"];

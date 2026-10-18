@@ -22,13 +22,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "L'étude historique consacrée à Tshekedi Khama replace les Khama dans l'État tswana bangwato du protectorat du Bechuanaland et suit la succession de Seretse Khama à son fils Ian Khama à la chefferie en 1979. Elle établit une lignée historique portant ce nom au Botswana, mais ni l'étymologie de Khama ni une règle de transmission patronymique générale.",
-        "claimStatus": "established",
-        "sourceRefs": ["cambridge-tshekedi-khama"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -197,6 +192,26 @@
                 "source_kind": "archive",
                 "page": "p. 113",
                 "notes": "Londres, Macmillan, 1871 ; exemplaire numérisé sur archive.org. Page 113 : à son arrivée à Shoshong, la ville des Bangwato, le missionnaire trouve « Khame and Khamane, the sons of the chief Sekhome », qui vont à l'école et ont déjà été baptisés par le missionnaire Schulenborg. Missionnaire de la London Missionary Society, cité pour les formes qu'il écrit. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'étude historique consacrée à Tshekedi Khama replace les Khama dans l'État tswana bangwato du protectorat du Bechuanaland et suit la succession de Seretse Khama à son fils Ian Khama à la chefferie en 1979. Elle établit une lignée historique portant ce nom au Botswana, mais ni l'étymologie de Khama ni une règle de transmission patronymique générale.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Tshekedi Khama and Opposition to the British Administration of the Bechuanaland Protectorate, 1926–1936",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/abs/tshekedi-khama-and-opposition-to-the-british-administration-of-the-bechuanaland-protectorate-19261936/176771A4B1ACD451C70B1A903CCFDB81",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Article du Journal of African History consulté sur Cambridge Core. Il documente Tshekedi, Seretse et Ian Khama dans l'histoire de la chefferie bangwato et précise le contexte tswana ; il ne propose aucune analyse linguistique du nom."
               }
             ]
           }

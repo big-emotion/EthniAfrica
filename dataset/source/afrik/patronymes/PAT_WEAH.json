@@ -22,20 +22,9 @@
   "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Dans l'histoire des établissements de la côte kru, King Weah's Town apparaît aussi sous le nom anglais King William's Town ; William y est présenté comme l'anglicisation de Weah.",
-        "claimStatus": "established",
-        "sourceRefs": ["gunn-2019-kru-workers"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "Au Liberia, le patronyme Weah provient d'un nom personnel masculin attesté chez les Kru. Son étymologie lexicale demeure inexpliquée.",
-        "claimStatus": "established",
-        "sourceRefs": ["dafn-2022-weah"]
-      }
-    ]
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -149,6 +138,27 @@
                 "source_kind": "academic",
                 "page": "p. 32 ; p. 38",
                 "notes": "Thèse de doctorat en histoire, York University, 2019, lue dans le PDF du dépôt de l'université le 12 octobre 2026. Page 32 : les cinq villes de commerce kru, dont King William's Town, « as Thomas Ludlam observed in 1812 ». Page 38 : « King William's Town (William is the Anglicization of the name Weah) »."
+              }
+            ],
+            "claimStatus": "established"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Au Liberia, le patronyme Weah provient d'un nom personnel masculin attesté chez les Kru. Son étymologie lexicale demeure inexpliquée.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2nd edition — Weah",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/weah",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 11 octobre 2026. La notice dit : Afrique de l'Ouest (Liberia), d'un nom de personne masculin trouvé chez les Kru, d'étymologie inexpliquée."
               }
             ]
           }

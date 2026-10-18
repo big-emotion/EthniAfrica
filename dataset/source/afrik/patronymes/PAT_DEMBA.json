@@ -31,13 +31,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une notice en ligne, alimentée par des contributions non signées, présente Demba comme un prénom traditionnel ouest-africain d'origine peule, mandingue et wolof, désignant un aîné ou un pilier de la famille, devenu ensuite un nom de famille fixe. Aucune méthode ni aucun auteur n'appuie cette notice, qui reste à ce stade une hypothèse non vérifiée plutôt qu'un résultat établi.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["forebears-demba"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -223,6 +218,26 @@
                 "source_kind": "archive",
                 "page": "p. 29",
                 "notes": "Londres, G. Nicol, 1799, lu dans l'édition numérisée du Projet Gutenberg, dont les numéros de page sont donnés entre crochets. Page 29 : le docteur Laidley, sur la Gambie, fournit à l'auteur « a Negro boy of his own, named Demba », qui parle le mandingue. Pages 70-71 : un neveu de « Demba Sego Jalla, the Mandingo King of Kasson » vient le voir ; l'auteur écrit que son protecteur, « whose name was Demba Sego, probably after his uncle », l'accompagne jusqu'au Khasso. Voyageur écossais, cité pour les formes qu'il écrit. Lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une notice en ligne, alimentée par des contributions non signées, présente Demba comme un prénom traditionnel ouest-africain d'origine peule, mandingue et wolof, désignant un aîné ou un pilier de la famille, devenu ensuite un nom de famille fixe. Aucune méthode ni aucun auteur n'appuie cette notice, qui reste à ce stade une hypothèse non vérifiée plutôt qu'un résultat établi.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Demba Surname Origin, Meaning & Last Name History",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://forebears.io/surnames/demba",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Répertoire de fréquence patronymique complété par des notices explicatives ouvertes aux contributions du public, sans auteur ni méthode identifiés. Il recense environ 36 000 porteurs dans le monde, très majoritairement en Mauritanie, au Sénégal et en Gambie, avec 95 pour cent des porteurs en Afrique. Il présente Demba comme un prénom traditionnel peul, mandingue et wolof, désignant un aîné ou un pilier de famille, devenu un nom de famille fixe sous l'administration coloniale française ; cette dernière affirmation n'est étayée par aucune référence propre et n'a pas pu être recoupée."
               }
             ]
           }

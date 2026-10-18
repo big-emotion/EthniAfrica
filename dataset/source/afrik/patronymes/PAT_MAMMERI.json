@@ -32,6 +32,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -69,10 +70,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "La notice BnF, les deux tomes du Dictionnaire des patronymes algériens du HCA, les dépôts de l’UMMTO, Persée et OpenEdition ont été interrogés avec « Mammeri patronyme », « Mammeri étymologie », « At Maʿmmer » et « معمري أصل اللقب » ; aucune étude dédiée ne permet d’établir une origine."
-    },
     {
       "fieldPath": "transmissionMode",
       "reason": "La notice d’autorité atteste un nom de famille mais ne décrit pas sa transmission ; les recherches « Mammeri filiation » et « famille Mammeri généalogie » n’ont pas fourni d’étude probante."

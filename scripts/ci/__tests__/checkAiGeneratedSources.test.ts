@@ -112,6 +112,26 @@ describe("checkAiGeneratedSources", () => {
   });
 
   // @req REQ-161
+  it("counts a name-history citation copy only once when its catalogue source matches", () => {
+    writeFiche("patronymes/PAT_DIOP.json", {
+      id: "PAT_DIOP",
+      sources: [AI_SOURCE],
+      nameHistory: {
+        names: [
+          {
+            accounts: [{ sources: [AI_SOURCE] }],
+          },
+        ],
+      },
+    });
+
+    const result = checkAiGeneratedSources(datasetRoot, 1);
+
+    expect(result.count).toBe(1);
+    expect(result.sources.map((source) => source.path)).toEqual(["sources[0]"]);
+  });
+
+  // @req REQ-161
   it("fails when a new ai_generated source enters the corpus", () => {
     writeFiche("patronymes/PAT_DIOP.json", { sources: [AI_SOURCE] });
 

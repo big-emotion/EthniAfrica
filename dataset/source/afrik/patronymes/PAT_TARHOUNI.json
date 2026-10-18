@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une contribution utilisateur relie Tarhouni à la tribu de Tarhun et à la ville de Tarhuna. L’alternative entre affiliation tribale et référence urbaine n’est pas résolue ; la proposition reste non vérifiée.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["forebears-tarhouni"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -158,6 +153,26 @@
                 "source_kind": "academic",
                 "page": "p. 216 ; p. 219",
                 "notes": "Thèse de doctorat, Université de Westminster, 2004, lue le 11 octobre 2026 dans le dépôt WestminsterResearch. Page 216 : les Libyens installés en Tunisie y ont donné leurs noms à des lieux, et ces noms libyens sont devenus des noms de famille tunisiens, parmi lesquels les noms qui renvoient à Tripoli et à Tarhūna ; un quartier de Tunisie porte le nom de la tribu libyenne de Tarhūna. Page 219 : des gens de Tarhūna figurent parmi les tribus de Tripolitaine parties pour la Tunisie, que les épidémies de 1865 avaient en partie vidée de ses habitants."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une contribution utilisateur relie Tarhouni à la tribu de Tarhun et à la ville de Tarhuna. L’alternative entre affiliation tribale et référence urbaine n’est pas résolue ; la proposition reste non vérifiée.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Tarhouni Surname Origin, Meaning & Last Name History — Forebears",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://forebears.io/surnames/tarhouni",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Répertoire communautaire consulté le 2 septembre 2026. Il recense Tarhouni en Libye et reproduit une contribution utilisateur évoquant à la fois une tribu et la ville de Tarhuna, sans bibliographie."
               }
             ]
           }

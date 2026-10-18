@@ -31,13 +31,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Dans leur étude des élites gouvernementales guinéennes, Rainer et Trebbi décrivent les porteurs de Sidibé comme originaires du Wassoulou : leur consultant les classe comme Peuls intégrés linguistiquement et culturellement aux Malinkés, tandis que les sources divergent entre les deux appartenances.",
-        "claimStatus": "contested",
-        "sourceRefs": ["rainer-trebbi-2012-political-power"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -322,6 +317,27 @@
                 "source_kind": "archive",
                 "page": "p. 444",
                 "notes": "Paris, Société d'éditions scientifiques, 1894. Lu le 11 octobre 2026 sur l'exemplaire numérisé d'archive.org. L'auteur est un médecin des colonies chargé le 16 mars 1891 d'une mission scientifique en Haute-Gambie : il est cité pour ce qu'il a noté et pour ce qu'on lui a raconté. Page 444 : un chef de village de passage à Dikhoy, dont le « diamou (nom de famille) était Sidibé », raconte pourquoi il est « parent » du « petit Sénégalais » et ne peut le tuer ni le manger."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans leur étude des élites gouvernementales guinéennes, Rainer et Trebbi décrivent les porteurs de Sidibé comme originaires du Wassoulou : leur consultant les classe comme Peuls intégrés linguistiquement et culturellement aux Malinkés, tandis que les sources divergent entre les deux appartenances.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "New Tools for the Analysis of Political Power in Africa",
+                "author": "Ilia Rainer et Francesco Trebbi",
+                "year": 2012,
+                "url": "https://www.nber.org/papers/w18424.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 42",
+                "notes": "NBER Working Paper 18424, septembre 2012, lu le 11 octobre 2026. Page imprimée 42 (page 44 du PDF), annexe sur la Guinée : les porteurs des noms Diakite, Sidibe et Sangare viennent du Wassoulou, selon le consultant des auteurs ; ce sont des Peuls qui ont adopté la langue et les coutumes des Malinké. Document non évalué par les pairs."
               }
             ]
           }

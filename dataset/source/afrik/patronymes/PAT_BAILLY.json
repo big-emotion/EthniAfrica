@@ -40,17 +40,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Le nom est présenté comme signifiant « le beau ». Notre fiche du peuple bété documente par ailleurs, indépendamment de cette liste, le bagnon comme une distinction villageoise décernée selon des critères physiques et moraux, et non un titre hérité : les deux descriptions se recoupent sur la nature personnelle et non héréditaire de cette qualité.",
-        "claimStatus": "claimed",
-        "sourceRefs": [
-          "civ-tourisme-fb-2021-bailly",
-          "afriksoir-2021-bailly",
-          "corpus-ppl-bete-bagnon"
-        ]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -260,6 +251,44 @@
                 "tier": "unverified",
                 "source_kind": "press",
                 "notes": "Article du site d'actualité ivoirien, daté du 14 février 2021, lu le 11 octobre 2026. Il donne pour source de sa liste le traditionaliste Zahui Ouraga Aimé, sans détailler sa méthode nom par nom. Entrée « Bailly, Bagnon : Le beau » ; une autre entrée donne « Baï, Bagnon : beau, phénix ». La page Côte d'Ivoire Tourisme qui publie la même liste en juin 2021 n'est pas comptée à part."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom est présenté comme signifiant « le beau ». Notre fiche du peuple bété documente par ailleurs, indépendamment de cette liste, le bagnon comme une distinction villageoise décernée selon des critères physiques et moraux, et non un titre hérité : les deux descriptions se recoupent sur la nature personnelle et non héréditaire de cette qualité.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Découverte : signification des noms bété (partie 1)",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.facebook.com/tourismecotedivoire.ci/posts/d%C3%A9couverte-signification-des-noms-b%C3%A9t%C3%A9-partie-1-drogba-la-clameur-une-d%C3%A9couverte/3574963495937695/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Publication de la page officielle Côte d'Ivoire Tourisme sur Facebook, datée du 21 juin 2021, qui donne une liste de noms bété avec leur signification supposée, dont Bailly et Bagnon, réunis sous une même entrée, pour le sens « le beau ». La publication indique elle-même reprendre un ouvrage intitulé « Les ethnies de la Côte d'Ivoire et d'Afrique », qui n'a pas pu être identifié comme une publication précise et vérifiable."
+              },
+              {
+                "title": "Côte d'Ivoire : voici la signification des noms Bété que vous connaissez",
+                "author": "Afrik Soir",
+                "year": 2021,
+                "url": "https://afriksoir.net/cote-divoire-voici-la-signification-des-noms-bete-que-vous-connaissez/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article du site d'actualité ivoirien, daté du 14 février 2021, lu le 11 octobre 2026. Il donne pour source de sa liste le traditionaliste Zahui Ouraga Aimé, sans détailler sa méthode nom par nom. Entrée « Bailly, Bagnon : Le beau » ; une autre entrée donne « Baï, Bagnon : beau, phénix ». La page Côte d'Ivoire Tourisme qui publie la même liste en juin 2021 n'est pas comptée à part."
+              },
+              {
+                "title": "EthniAfrica — fiche du peuple bété, organisation sociale",
+                "author": "EthniAfrica",
+                "year": null,
+                "url": null,
+                "tier": "unverified",
+                "source_kind": "repository",
+                "notes": "Reprise du chapitre consacré à l'organisation traditionnelle de notre fiche du peuple bété, qui décrit le bagnon comme une personne désignée dans chaque village selon des critères physiques et moraux, consultée et respectée."
               }
             ]
           }

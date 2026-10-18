@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -62,10 +63,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Les recherches exactes « Razafindrakoto etymology », « Razafindrakoto onomastics », « origine nom Razafindrakoto », les archives et les résultats académiques n'ont livré aucune étude dédiée. Les explications de sites commerciaux ont été rejetées faute de références et parce qu'elles confondaient segmentation plausible et histoire attestée."
-    },
     {
       "fieldPath": "transmissionMode",
       "reason": "La fiche parlementaire atteste un porteur sans filiation. Les recherches avec père, fils, famille et généalogie n'ont pas établi le mode de transmission ; « other » maintient l'indétermination."
@@ -135,7 +132,11 @@
             ]
           },
           {
-            "period": { "from": 1959, "to": 1959, "label": "1959" },
+            "period": {
+              "from": 1959,
+              "to": 1959,
+              "label": "1959"
+            },
             "era": "colonial",
             "statement": "Le nom Razafindrakoto apparaît par écrit comme nom d'auteur d'un livre en malgache, Angano sady ela no vao, imprimé à Tananarive en 1959, selon le catalogue de la Bibliothèque nationale de France. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand il est donné.",
             "birth": true,

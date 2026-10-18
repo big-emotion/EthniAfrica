@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'étude onomastique de Rombo classe Mrema et Mremi parmi les noms claniques chagga et les rattache au verbe rema ou rima, associé à la culture et au travail des champs. Les auteurs qualifient eux-mêmes la déduction de plausible ; elle ne doit donc pas être généralisée sans réserve à chaque lignée Mrema.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["lusekelo-mtenga-2020-mrema"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -143,7 +138,8 @@
                 "page": "p. 109",
                 "notes": "International Journal of Modern Anthropology, vol. 2, n° 13, 2020, p. 100-121, DOI 10.4314/ijma.v2i13.3. Texte intégral lu dans la copie que diffuse l'Association tunisienne d'anthropologie ; la page citée est celle imprimée en tête de page. Page 109 : Mrema et Mremi rangés parmi les noms de clan liés à un travail, le verbe rema ou rima, courant dans les jardins de bananiers ; les auteurs jugent la déduction plausible. Lu le 14 octobre 2026."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           },
           {
             "period": {

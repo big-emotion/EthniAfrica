@@ -31,13 +31,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Une étude sur les Fulas de Guinée-Bissau rattache Baldé aux principaux noms de groupe fulas et décrit une organisation privilégiant la ligne paternelle.",
-        "claimStatus": "established",
-        "sourceRefs": ["sadjo-2019-kaabu"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -239,6 +234,27 @@
                 "source_kind": "archive",
                 "page": "p. 289",
                 "notes": "Paris, Challamel, 1907. Administrateur colonial. Lu sur le texte numérisé d'archive.org le 12 octobre 2026 ; cité pour les formes et les classements qu'il rapporte, non pour ses théories sur les races. Page 289 : « Les Ba ou Baldé, les Dialo, les So, les N'Daédio », donnés comme les quatre tribus peules de départ, puis « Ourouro — Ba ou Baldé » parmi les équivalents au Fouta-Dialo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une étude sur les Fulas de Guinée-Bissau rattache Baldé aux principaux noms de groupe fulas et décrit une organisation privilégiant la ligne paternelle.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Fulas e Mandingas na luta pelo poder e conquista do Império de Kaabu: causas e consequências (século XVI-XIX)",
+                "author": "Ibu Sadjo",
+                "year": 2019,
+                "url": "https://repositorio.unilab.edu.br/jspui/bitstream/123456789/3467/1/ibu%20djalo_tcc.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 20",
+                "notes": "Mémoire de bacharelado, UNILAB, 2019, lu en texte intégral le 12 octobre 2026. À la p. 20, le mémoire cite Tcherno Djaló, O Mestiço e o Poder (Lisbonne, Nova Veja, 2013, p. 72) : « os do clã Djal-Djaló, usam o nome Diallo, Djaló ou Jaló, os do clã ururó, o nome de Baldé, os do clã Daêdjô, o nome de Bari e os do clã Péêdjô, o nome de sòh »."
               }
             ]
           }

@@ -11,7 +11,10 @@
     {
       "spelling": "Rakotomalala",
       "attestations": [
-        { "countryId": "MDG", "sourceRefs": ["harmattan-rakotomalala-2001"] }
+        {
+          "countryId": "MDG",
+          "sourceRefs": ["harmattan-rakotomalala-2001"]
+        }
       ]
     }
   ],
@@ -20,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -59,10 +63,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Les recherches exactes « Rakotomalala etymology », « Rakotomalala onomastics », « origine nom Rakotomalala » et les catalogues académiques n'ont livré aucune étude dédiée. Des sites commerciaux donnaient des gloses contradictoires de malala sans source et ont été rejetés."
-    },
     {
       "fieldPath": "transmissionMode",
       "reason": "La notice de l'ouvrage atteste un auteur, pas sa filiation. Les recherches avec famille, père, fils et généalogie n'ont pas établi le mode de transmission ; « other » conserve l'indétermination."
@@ -132,7 +132,11 @@
             ]
           },
           {
-            "period": { "from": 1924, "to": 1924, "label": "1924" },
+            "period": {
+              "from": 1924,
+              "to": 1924,
+              "label": "1924"
+            },
             "statement": "Le nom Rakotomalala apparaît par écrit comme nom d'auteur d'un texte d'Alphonse Rakotomalala sur la fièvre récurrente à Madagascar, daté de 1924, selon le catalogue de la Bibliothèque nationale de France. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand il est donné.",
             "birth": true,
             "sources": [
@@ -148,7 +152,11 @@
             ]
           },
           {
-            "period": { "from": 1888, "to": 1888, "label": "1888" },
+            "period": {
+              "from": 1888,
+              "to": 1888,
+              "label": "1888"
+            },
             "era": "colonial",
             "statement": "Le nom Rakoto est déjà un nom de personne : le dictionnaire d'Antoine Abinal et Victorin Malzac l'emploie dans l'exemple « Satro-dRakoto, pour satroka ny Rakoto ». Ce dictionnaire traduit aussi le mot kóto par « un garçon », sans dire si le nom vient de ce mot.",
             "before": true,

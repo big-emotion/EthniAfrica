@@ -49,16 +49,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Une publication du 21 juin 2021 sur la page de l'organisme ivoirien de tourisme donne à la graphie Loroungnon le sens « l'étranger, celui qui est de passage ». Le même sens, sous la graphie très proche Lorougnon, circule dès février 2021 dans un article distinct ; mais ce même article attribue ailleurs Lorougnon à un tout autre sens, partagé avec quatre autres noms : « l'enfant qui survient après plusieurs naissances suivies de décès ». Cette contradiction, portée par la même publication, empêche de retenir un sens unique et assuré pour ce nom.",
-        "claimStatus": "contested",
-        "sourceRefs": [
-          "tourisme-ci-2021-loroungnon",
-          "afriksoir-2021-noms-bete"
-        ]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -216,6 +208,35 @@
                 "tier": "referenced",
                 "source_kind": "press",
                 "notes": "Article du quotidien Notre Voie (Abidjan), repris par allAfrica le 19 juillet 2006, lu le 11 octobre 2026. Il atteste l'usage du nom comme nom de famille en Côte d'Ivoire, sans rien dire de son origine."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une publication du 21 juin 2021 sur la page de l'organisme ivoirien de tourisme donne à la graphie Loroungnon le sens « l'étranger, celui qui est de passage ». Le même sens, sous la graphie très proche Lorougnon, circule dès février 2021 dans un article distinct ; mais ce même article attribue ailleurs Lorougnon à un tout autre sens, partagé avec quatre autres noms : « l'enfant qui survient après plusieurs naissances suivies de décès ». Cette contradiction, portée par la même publication, empêche de retenir un sens unique et assuré pour ce nom.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "Découverte : signification des noms bété (partie 1)",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.facebook.com/tourismecotedivoire.ci/posts/d%C3%A9couverte-signification-des-noms-b%C3%A9t%C3%A9-partie-1-drogba-la-clameur-une-d%C3%A9couverte/3574963495937695/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Publication du 21 juin 2021 sur la page Facebook vérifiée de l'organisme ivoirien de tourisme. Elle attribue à la graphie Loroungnon le sens « l'étranger, celui qui est de passage » et indique elle-même s'appuyer uniquement sur un ouvrage intitulé « Les ethnies de la Côte d'Ivoire et d'Afrique », sans en donner l'auteur, l'éditeur ni l'année ; cette référence reste donc introuvable et impossible à vérifier de façon indépendante."
+              },
+              {
+                "title": "Côte d'Ivoire : voici la signification des noms Bété que vous connaissez",
+                "author": "Afriksoir",
+                "year": 2021,
+                "url": "https://afriksoir.net/cote-divoire-voici-la-signification-des-noms-bete-que-vous-connaissez/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article du 14 février 2021, sans auteur signé, lu le 11 octobre 2026. Il donne le sens d'une soixantaine de noms bété et indique pour source Zahui Ouraga Aimé, traditionaliste. Lorougnon y figure deux fois : seul, avec le sens « l'étranger, qui est de passage », et avec Groguhé, Koudougnon, Koukougnon et Pregnon, avec le sens « enfant qui survient après plusieurs naissances suivies de décès ». Une publication de juin 2021 de la page Facebook de l'organisme ivoirien de tourisme reprend la même liste dans le même ordre : elle ne compte pas comme une seconde voix."
               }
             ]
           }

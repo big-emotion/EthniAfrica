@@ -35,13 +35,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Au Fouta-Djalon, Bari et Barry sont donnés comme les noms du groupe classique Dayeeɓe ; une étude historique ultérieure confirme Barry parmi les quatre yettore employés comme noms de famille et marqueurs fulɓe.",
-        "claimStatus": "established",
-        "sourceRefs": ["vieillard-fouta-clans", "straussberger-2016-futa"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -266,6 +261,37 @@
                 "source_kind": "academic",
                 "page": "chap. III, « Clans et familles », section « Le clan »",
                 "notes": "Notes sur les coutumes des Peuls au Fouta Dialon, Librairie Larose, Paris, 1939, 124 pages, reproduites par WebFuuta, lues le 12 octobre 2026. La reproduction ne marque pas les pages de l'imprimé : le passage est donc cité par chapitre et section. Auteur de l'époque coloniale, cité comme témoin situé. Le passage dit que toute la race prétend remonter à Ogba, fils de Yâsir, et à ses quatre enfants, ancêtres des quatre groupes classiques, dont les Dayeeɓe (Bari, Barry)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Au Fouta-Djalon, Bari et Barry sont donnés comme les noms du groupe classique Dayeeɓe ; une étude historique ultérieure confirme Barry parmi les quatre yettore employés comme noms de famille et marqueurs fulɓe.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Notes sur les Peuls du Fouta-Djallon — Clans et familles",
+                "author": "Gilbert Vieillard",
+                "year": 1939,
+                "url": "https://webfuuta.site/bibliotheque/gilbert_vieillard/notes/chap03.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "chap. III, « Clans et familles », section « Le clan »",
+                "notes": "Notes sur les coutumes des Peuls au Fouta Dialon, Librairie Larose, Paris, 1939, 124 pages, reproduites par WebFuuta, lues le 12 octobre 2026. La reproduction ne marque pas les pages de l'imprimé : le passage est donc cité par chapitre et section. Auteur de l'époque coloniale, cité comme témoin situé. Le passage dit que toute la race prétend remonter à Ogba, fils de Yâsir, et à ses quatre enfants, ancêtres des quatre groupes classiques, dont les Dayeeɓe (Bari, Barry)."
+              },
+              {
+                "title": "Storming the Citadel: Decolonization and Political Contestation in Guinea's Futa Jallon, 1945–61",
+                "author": "John Straussberger",
+                "year": 2016,
+                "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/abs/storming-the-citadel-decolonization-and-political-contestation-in-guineas-futa-jallon-194561/1F793ADC739F5A7A6B328C7CCEF585C5",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "note 35",
+                "notes": "The Journal of African History 57/2, 2016, p. 231-249, DOI 10.1017/S0021853716000050. Lu sur la page de l'éditeur, qui donne la note 35 : « four yettore, or cross-rank groupings, that are often used as family names and mark the bearers as being Fulbe: Diallo, Barry, Sow, and Bah », avec un renvoi à W. Derman, Serfs, Peasants, and Socialists, p. 17-18. Le texte complet n'est pas en accès libre."
               }
             ]
           }

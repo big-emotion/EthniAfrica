@@ -22,13 +22,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "La synthèse de Hinds classe Hawiye parmi les quatre grandes familles claniques patrilinéaires auxquelles appartient la majorité somalie ; elle documente un principe de filiation, mais pas l'étymologie du nom.",
-        "claimStatus": "established",
-        "sourceRefs": ["hawiye-hinds-2013"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -303,6 +298,26 @@
                 "source_kind": "archive",
                 "page": "p. 236 et p. 238",
                 "notes": "Paris, Arthus Bertrand, 1856, première partie : « Exposé critique des diverses notions acquises sur l'Afrique orientale », lue en fac-similé sur archive.org. L'auteur, capitaine de vaisseau, y traduit et commente les géographes arabes. Page 236 : « Ibn-Sayd, géographe qui écrivait vers le milieu du XIIIe siècle », dont Guillain traduit le traité Djagrafya. Page 238 : « A l'orient de Hhafouny, parmi les villes des Berbers qui sont connues sur le bord de la mer, est celle de Meurka, dont les habitants sont musulmans […]. C'est la capitale du pays des Haouiia, qui forment plus de cinquante tribus ou bourgades ». Trace de seconde main : nous n'avons pas lu le texte arabe ; la forme Haouiia est la transcription de Guillain. Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La synthèse de Hinds classe Hawiye parmi les quatre grandes familles claniques patrilinéaires auxquelles appartient la majorité somalie ; elle documente un principe de filiation, mais pas l'étymologie du nom.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Somali networks — structures of clan and society",
+                "author": "Róisín Hinds",
+                "year": 2013,
+                "url": "https://gsdrc.org/publications/somali-networks-structures-of-clan-and-society/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "GSDRC, Helpdesk Research Report, juin 2013, page de présentation lue sur le site de l'éditeur (le PDF lié ne s'ouvrait plus). Résumé : « The Somali majority belong to four patrilineal clan families: the Darod, Hawiye, Dir, and Rahanweyn. » Lu le 18 octobre 2026."
               }
             ]
           }

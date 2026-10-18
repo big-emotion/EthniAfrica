@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une étude sociolinguistique des patronymes à Mazouna explique que Tazi renvoie à Taza. Cette lecture toponymique est conservée pour la forme, mais l’étude algérienne ne suffit pas à confirmer la distribution marocaine héritée de la file d’attente.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["mazouna-tazi"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -148,6 +143,27 @@
             "era": "modern",
             "statement": "Le nom Tazi renverrait à la ville de Taza, au Maroc, comme d'autres noms de famille de Mazouna disent la ville d'où vient une famille, Tlemssani pour Tlemcen ou Meliani pour Miliana, selon Hakima Slimani.",
             "hypothesisGroup": "origine du nom Tazi",
+            "sources": [
+              {
+                "title": "Sur-dénomination des familles à Mazouna : analyse sociolinguistique des patronymes et leurs usages",
+                "author": "Hakima Slimani",
+                "year": 2024,
+                "url": "https://journals.openedition.org/multilinguales/12552",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 20",
+                "notes": "Multilinguales, n° 21, mis en ligne le 30 juin 2024, lu le 11 octobre 2026 sur OpenEdition. Le § 20 traite des noms de famille de Mazouna, en Algérie, qui disent un lieu d'origine : Tlemssani pour Tlemcen, Meliani pour Miliana, et « Tazi celui qui renvoie à Taza »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une étude sociolinguistique des patronymes à Mazouna explique que Tazi renvoie à Taza. Cette lecture toponymique est conservée pour la forme, mais l’étude algérienne ne suffit pas à confirmer la distribution marocaine héritée de la file d’attente.",
+            "claimStatus": "claimed",
             "sources": [
               {
                 "title": "Sur-dénomination des familles à Mazouna : analyse sociolinguistique des patronymes et leurs usages",

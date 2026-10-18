@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -54,10 +55,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "la recherche web et bibliographique combinant « Shikongo », « Ovambo », « Oshiwambo », « Namibia », « surname », « clan », « etymology » et « transmission », ainsi que la consultation directe de « Shikongo Surname Origin, Meaning & Last Name History » n'ont livré aucune tradition attribuée, chronique ou étude linguistique établissant l'origine de Shikongo. Les rapprochements fondés uniquement sur la géographie, une biographie ou une contribution non référencée ont été écartés."
-    },
     {
       "fieldPath": "alliances",
       "reason": "la recherche web et bibliographique combinant « Shikongo », « Ovambo », « Oshiwambo », « Namibia », « surname », « clan », « etymology » et « transmission », ainsi que la consultation directe de « Shikongo Surname Origin, Meaning & Last Name History » n'ont identifié aucune alliance ni parenté à plaisanterie documentée reliant Shikongo à un autre nom documenté ici."

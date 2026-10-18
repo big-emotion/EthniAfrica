@@ -34,13 +34,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Madubuike rapporte une tradition qui rattache les Fall wolof aux descendants du damel du Cayor ; l’entrée DAFN décrit cependant Fall d’abord comme un nom toucouleur d’étymologie inexpliquée, également porté chez les Wolof et les Soninké.",
-        "claimStatus": "contested",
-        "sourceRefs": ["madubuike-1994-african-names", "dafn-familysearch-fall"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -274,6 +269,36 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 357",
                 "notes": "Paris, Imprimerie impériale, 1858. Lu le 18 octobre 2026 dans la numérisation d'Internet Archive, pages 357 et 358 vues en image. Chapitre « De la particule » : le nom d'une personne est souvent suivi d'une particule, le sœnte, « qu'on pourrait comparer à un titre plutôt qu'à un sobriquet » ; l'animal auquel elle se rapporte s'appelle mbagne, « ennemi », et « doit être respecté par lui et par sa famille ». Exemples, prénom puis sœnte : « Hœmet Fale », « Sambœ Ndhiaye », « Saigœ Sare » (p. 357) ; « Birœm Fay », « Galo Dhioufe » (p. 358). Page 358 encore : le lion, « Gayndé », porte le sœnte « Ndhiaye », le tigre, « Sègœ », le sœnte « Fale » ; « la particule ndhiaye et la particule fale sont souvent les sœnte des familles princières ». Abbé Boilat, missionnaire apostolique et ancien inspecteur de l'instruction publique au Sénégal selon la page de titre, cité pour les formes qu'il écrit et ce qu'il rapporte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Madubuike rapporte une tradition qui rattache les Fall wolof aux descendants du damel du Cayor ; l’entrée DAFN décrit cependant Fall d’abord comme un nom toucouleur d’étymologie inexpliquée, également porté chez les Wolof et les Soninké.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "A Handbook of African Names",
+                "author": "Ihechukwu Madubuike",
+                "year": 1994,
+                "url": "https://dokumen.pub/a-handbook-of-african-names-2-revnbsped-0894104381-9780894104381-0894104373.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 111-112",
+                "notes": "2e éd., Three Continents Press, 1994. Lu le 18 octobre 2026 sur une copie non officielle, une transcription numérique miroir du volume imprimé, mal découpée par endroits. Section sur les Wolof, p. 111-112 : les enfants prennent le nom de famille du père ; les noms les plus courants, transmis par les hommes, sont « Diop, Ndiaye, Mbang, Fall, Gueye, Mbaye, Sek, Diao ». Parmi les noms qui rappellent les ancêtres : « The Fall are descendants of a powerful and large family — the Damel of Cayor, once the vassal of Boubou Djollof » ; « The N'Diaye are the descendants of Bouba Djollof or N'Diadia'u, the monarch who grouped the people of Wolof under his authority », ce qui leur vaut « the title of the most noble among the Wolofs ». L'auteur ne dit pas de qui il tient ces récits."
+              },
+              {
+                "title": "Dictionary of American Family Names — Fall entry",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.familysearch.org/en/surname?surname=fall",
+                "tier": "unverified",
+                "source_kind": "repository",
+                "notes": "Entrée FamilySearch reproduisant le Dictionary of American Family Names. Elle distingue plusieurs homonymes européens et un usage ouest-africain, principalement sénégalais, présenté comme toucouleur et aussi attesté chez les Wolof et les Soninké, d’étymologie inexpliquée."
               }
             ]
           }

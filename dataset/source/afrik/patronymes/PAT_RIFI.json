@@ -31,20 +31,9 @@
   "designatedSocialUnit": "settlement",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "L’étude croise des dictionnaires et chroniques médiévales pour montrer que Rîf désigne des espaces de rive ou de campagne, dont le Rîf du Maghreb, et que des sources parlent des tribus rîfiyya.",
-        "claimStatus": "established",
-        "sourceRefs": ["rifi-bam-2019"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "La nisba historique rîfî est analysée comme « villageois » ou « rustique ». Le vocable Rîf possède aussi les sens de lieu fertile abondant en eau et, plus précisément, de rive maritime ou fluviale ; le rattachement moderne au Rif marocain est donc géographique, non la preuve d’un lignage unique.",
-        "claimStatus": "established",
-        "sourceRefs": ["rifi-bam-2019"]
-      }
-    ]
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -223,6 +212,48 @@
                 "source_kind": "archive",
                 "page": "p. 30",
                 "notes": "Publication de la Mission scientifique du Maroc, 1913 ; lue le 12 octobre 2026 sur l'exemplaire numérisé d'archive.org, qui reproduit la réimpression Kraus de 1980. Préface signée Ed. Michaux-Bellaire. Page 30, chapitre V : « En 1153 de l'Hégire (1741 J.-C.), le fameux Pacha Ahmed ben 'Ali Er-Rifi » attaque les gens du Gharb ; en 1156, il est vaincu et tué près d'El-Qçar. L'auteur dit tenir ces renseignements de l'Istiqça. Auteur de l'époque coloniale, cité ici pour la forme qu'il relève."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L’étude croise des dictionnaires et chroniques médiévales pour montrer que Rîf désigne des espaces de rive ou de campagne, dont le Rîf du Maghreb, et que des sources parlent des tribus rîfiyya.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Sur les significations historiques du vocable Rîf et sa relation avec les toponymes Jabâla et Ghumâra : une proposition d’interprétation",
+                "author": "Virgilio Martínez Enamorado et Jacques/Jawhar Vignet-Zunz",
+                "year": 2019,
+                "url": "https://app.wadi.dev/api/media/image?inline=&path=stores%2F45%2Fcontenu_de_publication%2F36332%2F15-Virgilio-12_07_20.pdf_0171751348729.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 201, 210",
+                "notes": "Bulletin d'Archéologie Marocaine, n° 24, 2019, p. 197-214. Lu en texte intégral le 12 octobre 2026. Page 201 : la nisba « rîfî » signifie « villageois », « rustique ». Page 202 : chez Ibn Sa'îd al-Maghribî (1214-1286), la côte de Bâdis « est connue sous le nom de Rîf » ; un autre texte parle du « pays rifain » (bilâd al-rîfiyya). Page 210, conclusions : Rîf désigne un lieu fertile abondant en eau, ou la rive d'une mer ou d'une rivière ; les dictionnaires modernes donnent « campagne » et, pour la nisba « rîfî », « villageois », « rustique » ; le Rif peut désigner l'espace de diverses tribus (qaba'il al-rîfiyya)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La nisba historique rîfî est analysée comme « villageois » ou « rustique ». Le vocable Rîf possède aussi les sens de lieu fertile abondant en eau et, plus précisément, de rive maritime ou fluviale ; le rattachement moderne au Rif marocain est donc géographique, non la preuve d’un lignage unique.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Sur les significations historiques du vocable Rîf et sa relation avec les toponymes Jabâla et Ghumâra : une proposition d’interprétation",
+                "author": "Virgilio Martínez Enamorado et Jacques/Jawhar Vignet-Zunz",
+                "year": 2019,
+                "url": "https://app.wadi.dev/api/media/image?inline=&path=stores%2F45%2Fcontenu_de_publication%2F36332%2F15-Virgilio-12_07_20.pdf_0171751348729.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 201, 210",
+                "notes": "Bulletin d'Archéologie Marocaine, n° 24, 2019, p. 197-214. Lu en texte intégral le 12 octobre 2026. Page 201 : la nisba « rîfî » signifie « villageois », « rustique ». Page 202 : chez Ibn Sa'îd al-Maghribî (1214-1286), la côte de Bâdis « est connue sous le nom de Rîf » ; un autre texte parle du « pays rifain » (bilâd al-rîfiyya). Page 210, conclusions : Rîf désigne un lieu fertile abondant en eau, ou la rive d'une mer ou d'une rivière ; les dictionnaires modernes donnent « campagne » et, pour la nisba « rîfî », « villageois », « rustique » ; le Rif peut désigner l'espace de diverses tribus (qaba'il al-rîfiyya)."
               }
             ]
           }

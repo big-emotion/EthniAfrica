@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -70,10 +71,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "L'explication ci-dessus porte sur le sens du nom en kirundi, d'après une seule traduction, établie à partir de Burundais. Nous n'avons trouvé aucune source sur l'histoire de familles précises qui le portent, ni sur le nom au Rwanda."
-    },
     {
       "fieldPath": "alliances",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."

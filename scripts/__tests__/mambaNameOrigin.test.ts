@@ -14,9 +14,17 @@ import { describe, expect, it } from "vitest";
 interface Account {
   period: { from: number | null; to: number | null };
   statement: string;
+  claimStatus?: string;
+  collection?: string;
+  collector?: string;
   birth?: true;
   hypothesisGroup?: string;
-  sources: Array<{ title: string; page?: string }>;
+  sources: Array<{
+    title: string;
+    page?: string;
+    source_kind: string;
+    notes?: string;
+  }>;
 }
 
 const fiche = JSON.parse(
@@ -41,13 +49,17 @@ describe("the Mamba clan name, its praise lines and its neighbours", () => {
 
   // @req REQ-196
   it("records the praise lines as an oral text, without an origin story", () => {
-    const praise = fiche.origin.oralTraditions.find(
-      (entry: { claim: string }) => /mamba lendze/.test(entry.claim)
+    const praise = accounts.find(
+      (entry) =>
+        /mamba lendze/.test(entry.statement) && entry.claimStatus === "claimed"
     );
 
     expect(praise).toBeDefined();
-    expect(praise.sourceRefs).toContain("patricks-2002-swazi-surnames");
-    expect(praise.claim).toMatch(/sans traduction/);
+    expect(praise.statement).toMatch(/sans traduction/);
+    expect(praise.collector).toBe("Richard Patricks");
+    expect(praise.sources[0].notes).toMatch(
+      /informateurs que l'auteur ne nomme pas/
+    );
   });
 
   // @req REQ-196

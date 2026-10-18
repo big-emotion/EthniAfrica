@@ -32,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "YorubaNames analyse Ọláwálé comme ọlá-wá-ilé, « la prospérité est arrivée à la maison ».",
-        "claimStatus": "claimed",
-        "sourceRefs": ["yorubanames-olawale"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -185,6 +180,26 @@
                 "source_kind": "academic",
                 "page": "p. 87",
                 "notes": "Première édition en 1921, préparée par O. Johnson d'après le manuscrit de l'auteur, pasteur d'Oyo, mort en 1901. Lu sur l'exemplaire numérisé d'archive.org (Lagos, CMS Bookshops) le 13 octobre 2026. Page 87, section « Yoruba names » : un tableau de noms complets, avec le nom, l'oriki et le totem. La colonne des femmes commence par « Ọlawale », oriki « Asabi », totem « Opo ». Page vue en image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "YorubaNames analyse Ọláwálé comme ọlá-wá-ilé, « la prospérité est arrivée à la maison ».",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Ọláwálé — YorubaNames",
+                "author": "YorubaNames",
+                "year": null,
+                "url": "https://www.yorubaname.com/entries/Olawale",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Dictionnaire collaboratif des noms yoruba, lu le 13 octobre 2026. Il écrit Ọláwálé avec tous ses tons. Il donne le sens « Prosperity came home », le découpage ọlá-wá-ilé, avec ọlá, « wealth », wá, « comes, arrives », et ilé, « home, house », et les formes voisines Ọlá, Wálé et Ọláálé (Bénin, Kétou). La page ne nomme pas ses contributeurs."
               }
             ]
           }

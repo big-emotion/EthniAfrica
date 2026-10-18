@@ -32,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Forebears publie une proposition contributive qui décompose Gebremariam en gebre, « serviteur », et Mariam, « Marie », soit « serviteur de Marie ». La plateforme avertit elle-même que ces descriptions tierces demandent vérification : la glose reste donc revendiquée, non établie.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["forebears-gebremariam"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -200,6 +195,26 @@
                 "source_kind": "archive",
                 "page": "p. 302",
                 "notes": "Édimbourg, J. Ruthven, pour G. G. J. et J. Robinson, Londres, 1790. Lu le 13 octobre 2026 sur l'exemplaire numérisé d'archive.org (le texte imprime le s long, que nous écrivons s). Page 302 : « The Baharnagalli, Guebra Mariam, was commanded to march against Fatima queen of the Shepherds »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Forebears publie une proposition contributive qui décompose Gebremariam en gebre, « serviteur », et Mariam, « Marie », soit « serviteur de Marie ». La plateforme avertit elle-même que ces descriptions tierces demandent vérification : la glose reste donc revendiquée, non établie.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Gebremariam Surname Origin, Meaning & Last Name History — Forebears",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://forebears.io/surnames/gebremariam",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page d'agrégation consultée le 2 septembre 2026. Elle atteste la forme Gebremariam en Éthiopie et publie, comme contribution d'utilisateur explicitement signalée, la décomposition gebre « serviteur » + Mariam « Marie ». Cette contribution n'est ni une publication savante ni une preuve d'appartenance ethnique."
               }
             ]
           }

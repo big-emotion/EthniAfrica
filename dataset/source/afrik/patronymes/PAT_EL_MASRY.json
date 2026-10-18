@@ -32,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une contribution communautaire interprète El Masry comme « l’Égyptien ». Cette analyse géographique est conservée au niveau non vérifié et ne démontre ni un lieu d’origine précis ni une lignée commune.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["btn-el-masry"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -188,6 +183,26 @@
                 "source_kind": "archive",
                 "page": "p. 69",
                 "notes": "Le Caire, Imprimerie nationale, 1889. Lu le 14 octobre 2026 sur la copie numérisée d'archive.org, aux pages indiquées. Page 69, année 1183 : « Notre seigneur, le maître, Aly Ibn El Arabi, Ibn Aly, Ibn el Arabi el Fassi el Masri, connu sous le nom de El Sakkat. Il naquit à Fez, où il étudia sous la direction de son père. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une contribution communautaire interprète El Masry comme « l’Égyptien ». Cette analyse géographique est conservée au niveau non vérifié et ne démontre ni un lieu d’origine précis ni une lignée commune.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the surname El Masry — Behind the Name",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://surnames.behindthename.com/name/el00masry/submitted",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Contribution utilisateur consultée le 2 septembre 2026. Elle classe El Masry en arabe égyptien et le donne pour « l’Égyptien » ; aucune source savante n’est fournie."
               }
             ]
           }

@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une contribution utilisateur présente Trabelsi comme une nisba pouvant renvoyer à Tripoli en Libye ou à Tripoli au Liban. Cette ambiguïté géographique est conservée au niveau non vérifié et ne prouve aucune lignée commune.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["forebears-trabelsi"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -182,6 +177,26 @@
                 "source_kind": "academic",
                 "page": "p. 94-96",
                 "notes": "Libyan Studies, vol. 53, 2022, p. 94-96. Lu le 11 octobre 2026 : le résumé, en accès libre sur le site de Cambridge University Press ; l'article entier est payant. Le résumé présente ʿAlī b. ʿAbd Allāh b. Maḥbūb al-Ṭarābulusī comme un savant de Tripoli qui vécut à la fin du Ve siècle de l'hégire (XIe siècle) ou au début du VIe (XIIe siècle)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une contribution utilisateur présente Trabelsi comme une nisba pouvant renvoyer à Tripoli en Libye ou à Tripoli au Liban. Cette ambiguïté géographique est conservée au niveau non vérifié et ne prouve aucune lignée commune.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Trabelsi Surname Origin, Meaning & Last Name History — Forebears",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://forebears.io/fr/surnames/trabelsi",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Répertoire communautaire consulté le 2 septembre 2026. Il recense Trabelsi en Tunisie et reproduit une proposition utilisateur reliant la forme à l’une de deux villes nommées Tripoli, sans trancher."
               }
             ]
           }

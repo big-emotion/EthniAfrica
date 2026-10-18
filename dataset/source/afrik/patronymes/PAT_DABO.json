@@ -67,64 +67,10 @@
   "transmissionMode": "patrilineal",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [
-      {
-        "claim": "Un récit de famille kaagoro raconte que les Saagonè et les Daabo, « tous Jaawara », c'est-à-dire tous Diawara, se sont combattus dans le Kingui, et que le Kaagoro Ganyi Maamadu, né de la même mère que le Jaawara Jugudu Maamudu, aida son frère. Le récit ne dit pas d'où vient le nom. L'historien qui le publie en conclut, avec d'autres travaux, que les Kaagoro ont combattu contre les Daabo et que les Saagonè l'ont emporté vers 1753-1754.",
-        "claimStatus": "claimed",
-        "carrier": "Tanba Dancogo, qui transmet une tradition familiale kaagoro du Baakhunu, au Mali",
-        "collection": "mediated",
-        "collector": "Claude-Daniel Ardouin",
-        "context": "Récit recueilli au Baakhunu, traduit en français et publié en 1988",
-        "sourceRefs": ["ardouin-1988-baakhunu"]
-      }
-    ],
-    "writtenChronicles": [
-      {
-        "claim": "Souleymane Kanté, auteur guinéen de langue maninka et inventeur de l'écriture n'ko, fait des Dabo la seconde branche des Diawara, la première étant les Sagonè. Dans son ouvrage sur les noms de clan du Manden, une guerre entre les deux branches, datée des années 300 de son calendrier compté depuis l'assemblée de Kurukan Fuga, chasse une partie des Dabo de leur pays du Baakhunu vers le pays de Sanan, entre Kayes et Kinkin, sans doute le Kingui. C'est là, dit-il, que leur nom devint Dabo, et que leur nom de louange devint Sangan ou Sanganjan. Le même ouvrage dit des Diawara qu'ils ont pris la langue soninké après avoir été soumis par des Soninké. Il fait ensuite passer des Dabo au Fouta-Djalon, où ils prennent part à la bataille de Talansa, vers 1727, puis à la guerre sainte aux côtés des Peuls, et leur attribue la fondation de Dabola, d'où ils auraient été chassés vers Kurukodo.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["bogacheva-2017-jamu"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "Aucun dictionnaire ni travail consulté ne donne de sens au mot : le dictionnaire des noms de clan mandingues définit Daabo seulement comme un nom de clan, et l'ouvrage écrit en n'ko qui raconte comment des Diawara sont devenus Dabo ne dit pas ce que le mot signifie.",
-        "claimStatus": "established",
-        "sourceRefs": ["bamadaba-jamuw", "bogacheva-2017-jamu"]
-      },
-      {
-        "claim": "Le nom s'écrit Daabo, avec une voyelle longue, dans le dictionnaire des noms de clan mandingues et dans les récits du Baakhunu. En Gambie, une notice des archives nationales associe au nom Daabo les graphies Darboe, Daboe, Darbo et Dabo.",
-        "claimStatus": "established",
-        "sourceRefs": [
-          "bamadaba-jamuw",
-          "ardouin-1988-baakhunu",
-          "ncac-daabo-busumbala"
-        ]
-      },
-      {
-        "claim": "Le dictionnaire des noms de clan mandingues rattache Daabo à trois groupes : les Malinké, les Kagoro, pour qui il donne le statut hɔ́rɔn (homme libre), et les Mandinka, pour qui il donne le nom de louange Sonka.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["bamadaba-jamuw", "bogacheva-2017-jamu"]
-      },
-      {
-        "claim": "Des contributeurs d'un forum communautaire soninké rangent Dabo parmi les noms d'origine soninké, et une liste communautaire soninké cite Daabo comme second nom (jammu kare) de Mangasuba. Ces listes ne disent rien de l'origine du mot.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["soninkara-forum-noms-soninke", "soninkara-noms-soninke"]
-      },
-      {
-        "claim": "Un pays appelé le Dabo borde le Baakhunu au sud. Aucune source consultée ne dit si ce nom de lieu et le nom de clan sont liés.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["ardouin-1988-baakhunu"]
-      },
-      {
-        "claim": "Le nom est ainsi rattaché aux Malinké, aux Kagoro et aux Mandinka d'un côté, et par les Diawara au monde soninké de l'autre. Ces rattachements disent qui porte le nom, pas d'où vient le mot : l'origine du nom n'est pas établie.",
-        "claimStatus": "contested",
-        "sourceRefs": [
-          "bamadaba-jamuw",
-          "bogacheva-2017-jamu",
-          "soninkara-forum-noms-soninke"
-        ]
-      }
-    ]
+    "oralTraditions": [],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -447,6 +393,236 @@
                 "source_kind": "academic",
                 "page": "p. 24",
                 "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Daabo : le récit tiré de l'ouvrage de Souleymane Kanté, qui date la guerre des années 300 de son calendrier compté depuis l'assemblée de Kouroukan Fouga. Le texte original en n'ko de Souleymane Kanté n'a pas été lu ; seule sa traduction russe l'a été, et le français est le nôtre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Un récit de famille kaagoro raconte que les Saagonè et les Daabo, « tous Jaawara », c'est-à-dire tous Diawara, se sont combattus dans le Kingui, et que le Kaagoro Ganyi Maamadu, né de la même mère que le Jaawara Jugudu Maamudu, aida son frère. Le récit ne dit pas d'où vient le nom. L'historien qui le publie en conclut, avec d'autres travaux, que les Kaagoro ont combattu contre les Daabo et que les Saagonè l'ont emporté vers 1753-1754.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Une formation politique précoloniale du Sahel occidental malien : le Baakhunu à l'époque des Kaagoro",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://doi.org/10.3406/cea.1988.1659",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Ardouin, Claude-Daniel, Cahiers d'études africaines, volume 28, numéro 111-112, 1988, p. 443-461. Étude fondée sur des traditions orales recueillies au Baakhunu, dans l'ouest du Sahel malien. Le Baakhunu borné au sud par le Dabo (p. 443) ; le récit de Tanba Dancogo : « Les Saagonè et les Daabo, ils sont tous Jaawara, se battirent » (p. 447) ; les Kaagoro présents à Foose prenant part à la lutte interne des Jaawara contre les Daabo (p. 448) ; la victoire des Saagonè sur les Daabo vers 1753-1754, d'après Boyer 1953 et Diawara 1985 (p. 449).\nRécit recueilli au Baakhunu, traduit en français et publié en 1988"
+              }
+            ],
+            "carrier": "Tanba Dancogo, qui transmet une tradition familiale kaagoro du Baakhunu, au Mali",
+            "collection": "mediated",
+            "collector": "Claude-Daniel Ardouin"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Souleymane Kanté, auteur guinéen de langue maninka et inventeur de l'écriture n'ko, fait des Dabo la seconde branche des Diawara, la première étant les Sagonè. Dans son ouvrage sur les noms de clan du Manden, une guerre entre les deux branches, datée des années 300 de son calendrier compté depuis l'assemblée de Kurukan Fuga, chasse une partie des Dabo de leur pays du Baakhunu vers le pays de Sanan, entre Kayes et Kinkin, sans doute le Kingui. C'est là, dit-il, que leur nom devint Dabo, et que leur nom de louange devint Sangan ou Sanganjan. Le même ouvrage dit des Diawara qu'ils ont pris la langue soninké après avoir été soumis par des Soninké. Il fait ensuite passer des Dabo au Fouta-Djalon, où ils prennent part à la bataille de Talansa, vers 1727, puis à la guerre sainte aux côtés des Peuls, et leur attribue la fondation de Dabola, d'où ils auraient été chassés vers Kurukodo.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 24",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Daabo : les mêmes groupes, nommés en clair."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Aucun dictionnaire ni travail consulté ne donne de sens au mot : le dictionnaire des noms de clan mandingues définit Daabo seulement comme un nom de clan, et l'ouvrage écrit en n'ko qui raconte comment des Diawara sont devenus Dabo ne dit pas ce que le mot signifie.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Fichier complet lu. Entrée Daabo : la variante Dabo, les groupes malinké, kagoro et mandinka, le statut hɔ́rɔn chez les Kagoro, le nom d'honneur Sonka chez les Mandinka ; aucun sens donné au nom."
+              },
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 24",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Daabo : les mêmes groupes, nommés en clair."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom s'écrit Daabo, avec une voyelle longue, dans le dictionnaire des noms de clan mandingues et dans les récits du Baakhunu. En Gambie, une notice des archives nationales associe au nom Daabo les graphies Darboe, Daboe, Darbo et Dabo.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Fichier complet lu. Entrée Daabo : la variante Dabo, les groupes malinké, kagoro et mandinka, le statut hɔ́rɔn chez les Kagoro, le nom d'honneur Sonka chez les Mandinka ; aucun sens donné au nom."
+              },
+              {
+                "title": "Une formation politique précoloniale du Sahel occidental malien : le Baakhunu à l'époque des Kaagoro",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://doi.org/10.3406/cea.1988.1659",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Ardouin, Claude-Daniel, Cahiers d'études africaines, volume 28, numéro 111-112, 1988, p. 443-461. Étude fondée sur des traditions orales recueillies au Baakhunu, dans l'ouest du Sahel malien. Le Baakhunu borné au sud par le Dabo (p. 443) ; le récit de Tanba Dancogo : « Les Saagonè et les Daabo, ils sont tous Jaawara, se battirent » (p. 447) ; les Kaagoro présents à Foose prenant part à la lutte interne des Jaawara contre les Daabo (p. 448) ; la victoire des Saagonè sur les Daabo vers 1753-1754, d'après Boyer 1953 et Diawara 1985 (p. 449).\nRécit recueilli au Baakhunu, traduit en français et publié en 1988"
+              },
+              {
+                "title": "An Interview About The History of The Daabo Clan in Busumbala (NCAC_RDD_TAPE_2010A)",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://doi.org/10.25592/uhhfdm.13555",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Notice d'un enregistrement des archives nationales numériques de la Gambie (NCAC), publiée en 2023 par l'Université de Hambourg. L'enregistrement est en accès restreint : nous n'avons lu que la notice, qui nomme l'informateur, Keemo Daabo de Busumbala, annonce son origine, sa migration et sa généalogie, et donne parmi ses mots de recherche les graphies Darboe, Daboe, Darbo et Dabo. D'autres notices du même fonds portent sur les Daabo de Gunjur et de Basori ; nous n'avons entendu aucun de ces entretiens, qui pourraient porter un récit local sur le nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le dictionnaire des noms de clan mandingues rattache Daabo à trois groupes : les Malinké, les Kagoro, pour qui il donne le statut hɔ́rɔn (homme libre), et les Mandinka, pour qui il donne le nom de louange Sonka.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Fichier complet lu. Entrée Daabo : la variante Dabo, les groupes malinké, kagoro et mandinka, le statut hɔ́rɔn chez les Kagoro, le nom d'honneur Sonka chez les Mandinka ; aucun sens donné au nom."
+              },
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 24",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Daabo : les mêmes groupes, nommés en clair."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Des contributeurs d'un forum communautaire soninké rangent Dabo parmi les noms d'origine soninké, et une liste communautaire soninké cite Daabo comme second nom (jammu kare) de Mangasuba. Ces listes ne disent rien de l'origine du mot.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Les noms de Famille d'Origine Soninké",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.soninkara.com/forums/de-l-origine-des-soninke/les-noms-de-famille-d-origine-soninke-530.html",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Fil de discussion du forum du portail communautaire Soninkara.com, ouvert en décembre 2006 et poursuivi jusqu'en 2011 : des contributeurs, sous pseudonyme, y dressent des listes de noms qu'ils tiennent pour soninké. Les listes se recoupent en partie et se contredisent : plusieurs intervenants rappellent que beaucoup de noms portés aujourd'hui par des Soninké ne sont pas soninké à l'origine, et l'un d'eux demande de distinguer les noms soninké des noms d'origine soninké. Consulté dans une copie archivée de 2024."
+              },
+              {
+                "title": "Les noms de famille avec leur jammu kare",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "http://www.soninkara.com/societe/organisation-sociale/les-noms-de-famille-avec-leur-jammu-kare.html",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Portail communautaire soninké, page d'organisation sociale sans auteur académique identifié : liste non exhaustive, constituée par les internautes du portail, des seconds noms (jammu kare) donnés aux noms de famille soninké. Le jammu kare est, dit la page, le second nom qui s'ajoute à un nom de famille et lui sert d'identifiant. Consultée dans une copie archivée du 12 décembre 2024. On n'en retire ici que la présence du nom dans la liste et ses seconds noms : la liste ne dit rien de leur origine."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Un pays appelé le Dabo borde le Baakhunu au sud. Aucune source consultée ne dit si ce nom de lieu et le nom de clan sont liés.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Une formation politique précoloniale du Sahel occidental malien : le Baakhunu à l'époque des Kaagoro",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://doi.org/10.3406/cea.1988.1659",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Ardouin, Claude-Daniel, Cahiers d'études africaines, volume 28, numéro 111-112, 1988, p. 443-461. Étude fondée sur des traditions orales recueillies au Baakhunu, dans l'ouest du Sahel malien. Le Baakhunu borné au sud par le Dabo (p. 443) ; le récit de Tanba Dancogo : « Les Saagonè et les Daabo, ils sont tous Jaawara, se battirent » (p. 447) ; les Kaagoro présents à Foose prenant part à la lutte interne des Jaawara contre les Daabo (p. 448) ; la victoire des Saagonè sur les Daabo vers 1753-1754, d'après Boyer 1953 et Diawara 1985 (p. 449).\nRécit recueilli au Baakhunu, traduit en français et publié en 1988"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom est ainsi rattaché aux Malinké, aux Kagoro et aux Mandinka d'un côté, et par les Diawara au monde soninké de l'autre. Ces rattachements disent qui porte le nom, pas d'où vient le mot : l'origine du nom n'est pas établie.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Fichier complet lu. Entrée Daabo : la variante Dabo, les groupes malinké, kagoro et mandinka, le statut hɔ́rɔn chez les Kagoro, le nom d'honneur Sonka chez les Mandinka ; aucun sens donné au nom."
+              },
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 24",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Daabo : les mêmes groupes, nommés en clair."
+              },
+              {
+                "title": "Les noms de Famille d'Origine Soninké",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.soninkara.com/forums/de-l-origine-des-soninke/les-noms-de-famille-d-origine-soninke-530.html",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Fil de discussion du forum du portail communautaire Soninkara.com, ouvert en décembre 2006 et poursuivi jusqu'en 2011 : des contributeurs, sous pseudonyme, y dressent des listes de noms qu'ils tiennent pour soninké. Les listes se recoupent en partie et se contredisent : plusieurs intervenants rappellent que beaucoup de noms portés aujourd'hui par des Soninké ne sont pas soninké à l'origine, et l'un d'eux demande de distinguer les noms soninké des noms d'origine soninké. Consulté dans une copie archivée de 2024."
               }
             ]
           }

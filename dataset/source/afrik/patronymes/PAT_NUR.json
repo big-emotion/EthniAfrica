@@ -11,31 +11,46 @@
     {
       "spelling": "Nur",
       "attestations": [
-        { "countryId": "SOM", "sourceRefs": ["mansuur-2021-somali-names"] }
+        {
+          "countryId": "SOM",
+          "sourceRefs": ["mansuur-2021-somali-names"]
+        }
       ]
     },
     {
       "spelling": "Nuur",
       "attestations": [
-        { "countryId": "SOM", "sourceRefs": ["mansuur-2021-somali-names"] }
+        {
+          "countryId": "SOM",
+          "sourceRefs": ["mansuur-2021-somali-names"]
+        }
       ]
     },
     {
       "spelling": "Noor",
       "attestations": [
-        { "countryId": "SOM", "sourceRefs": ["mansuur-2021-somali-names"] }
+        {
+          "countryId": "SOM",
+          "sourceRefs": ["mansuur-2021-somali-names"]
+        }
       ]
     },
     {
       "spelling": "Nour",
       "attestations": [
-        { "countryId": "SOM", "sourceRefs": ["mansuur-2021-somali-names"] }
+        {
+          "countryId": "SOM",
+          "sourceRefs": ["mansuur-2021-somali-names"]
+        }
       ]
     },
     {
       "spelling": "al-Nur",
       "attestations": [
-        { "countryId": "SDN", "sourceRefs": ["sudan-tribune-2007-al-nur"] }
+        {
+          "countryId": "SDN",
+          "sourceRefs": ["sudan-tribune-2007-al-nur"]
+        }
       ]
     }
   ],
@@ -44,18 +59,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Dans le système somali, Nuur est un nom personnel qui peut occuper l'un des trois rangs de la chaîne nom du porteur, nom du père, nom du grand-père ; les graphies Noor, Nour et Nur reflètent des conventions étrangères différentes, non des patronymes distincts.",
-        "claimStatus": "established",
-        "sourceRefs": ["mansuur-2021-somali-names"]
-      },
-      {
-        "claim": "Au Soudan, les quatre éléments officiels sont le nom personnel, le nom du père, celui du grand-père et celui de l'arrière-grand-père ; il n'existe pas de nom de famille au sens administratif décrit par la source.",
-        "claimStatus": "established",
-        "sourceRefs": ["uk-hm-passport-2026-sudan-names"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -285,6 +290,47 @@
                 "source_kind": "archive",
                 "page": "p. 218",
                 "notes": "Londres, Longman, Brown, Green, and Longmans, 1856 ; exemplaire numérisé sur archive.org. Récit d'un voyage fait en 1854-1855 dans le pays somali et jusqu'à Harar. Les six fils du chef gudabirsi Ali Addah viennent saluer l'auteur : « Beuh, Igah, Khayri, Nur, Ismail and Yunis ». Voyageur britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans le système somali, Nuur est un nom personnel qui peut occuper l'un des trois rangs de la chaîne nom du porteur, nom du père, nom du grand-père ; les graphies Noor, Nour et Nur reflètent des conventions étrangères différentes, non des patronymes distincts.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Somali names and individual identity",
+                "author": "Cabdalla Cumar Mansuur",
+                "year": 2021,
+                "url": "https://web.archive.org/web/20210920113414/https://wardheernews.com/wp-content/uploads/2021/06/Somali-names-and-indvidual-identity-By-Abdalla-Mansuur.pdf",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 3",
+                "notes": "Texte daté du 14 juin 2021, publié par WardheerNews ; l'adresse d'origine ne répond plus : il a été lu dans la copie de l'Internet Archive du 20 septembre 2021. Section « Anthroponyms » : le nom somali se compose d'un nom personnel, du nom du père et du nom du grand-père ; « a system of name(s)-surname does not exist ». Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Au Soudan, les quatre éléments officiels sont le nom personnel, le nom du père, celui du grand-père et celui de l'arrière-grand-père ; il n'existe pas de nom de famille au sens administratif décrit par la source.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Sudan: Knowledge Base profile",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.gov.uk/government/publications/sudan-knowledge-base-profile/sudan-knowledge-base-profile",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Guide opérationnel de His Majesty's Passport Office, version 4.0 publiée le 16 mars 2026. Il décrit les quatre éléments du nom soudanais et précise que les noms de famille n'existent pas dans ce système."
               }
             ]
           }

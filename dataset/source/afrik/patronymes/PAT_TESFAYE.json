@@ -41,13 +41,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'entrée consultée présente Tesfaye, écrit ተስፋዬ, comme un nom personnel amharique signifiant « mon espoir ». La glose est conservée comme proposition communautaire, non comme récit d'origine familiale.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["btn-tesfaye"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -251,6 +246,26 @@
                 "source_kind": "press",
                 "page": "p. 1",
                 "notes": "Rome, typographie Salviucci, mercredi 12 janvier 1853. Lu le 11 octobre 2026 sur l'exemplaire numérisé de la Biblioteca Nazionale Centrale de Rome, sur archive.org. Le compte rendu de l'académie polyglotte du collège urbain de la Propagande, tenue pour l'Épiphanie, cite au numéro 43 un « Saggio di prosa amarica » lu par « sig. Maria Tesfaie di Adua nell'Abissinia »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'entrée consultée présente Tesfaye, écrit ተስፋዬ, comme un nom personnel amharique signifiant « mon espoir ». La glose est conservée comme proposition communautaire, non comme récit d'origine familiale.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Tesfaye — Behind the Name",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/tesfaye",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice du site Behind the Name, lue le 12 octobre 2026. Elle écrit le nom ተስፋዬ et le fait venir de l'amharique tasfa, « hope »."
               }
             ]
           }

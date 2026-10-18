@@ -25,13 +25,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Une notice officielle djiboutienne atteste Waberi comme dernier élément de la chaîne de noms de l'artiste Habiba Abdillahi Waberi ; elle ne décrit pas la relation généalogique encodée par cet élément.",
-        "claimStatus": "established",
-        "sourceRefs": ["waberi-presidence-djibouti-2020"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -129,7 +124,8 @@
                 "notes": "Article du 24 juin 2020 sur le site de la présidence de Djibouti, lu le 12 octobre 2026. Le titre écrit le nom complet Habiba Abdillahi Waberi ; l'article la présente comme une célèbre artiste djiboutienne. Il ne dit rien du sens du nom."
               }
             ],
-            "aspect": "usage"
+            "aspect": "usage",
+            "claimStatus": "established"
           },
           {
             "period": {

@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Les dictionnaires rassemblés par le Malagasy Dictionary and Encyclopedia donnent au nom commun zafy les sens « petit-enfant » et « descendant » et signalent son emploi dans la formation de noms propres. Aucune source consultée n'établit cependant que ce lexème est l'étymon historique du patronyme Zafy.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["malagasyword-zafy"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -193,6 +188,26 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 793",
                 "notes": "Antananarivo, London Missionary Society, 1885. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Entrée ZAFY : « A grandchild, a descendant. Often used in forming proper names, or as a prefix to tribal names. » Auteur missionnaire, cité ici pour le sens qu'il relève."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Les dictionnaires rassemblés par le Malagasy Dictionary and Encyclopedia donnent au nom commun zafy les sens « petit-enfant » et « descendant » et signalent son emploi dans la formation de noms propres. Aucune source consultée n'établit cependant que ce lexème est l'étymon historique du patronyme Zafy.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Malagasy Dictionary and Encyclopedia — zafy",
+                "author": "Malagasy Dictionary and Encyclopedia",
+                "year": null,
+                "url": "https://malagasyword.org/bins/teny2/zafy",
+                "tier": "unverified",
+                "source_kind": "repository",
+                "notes": "Recueil en ligne de plusieurs dictionnaires malgaches. Il donne pour zafy les sens « petit-enfant » et « descendant » et signale l'emploi du mot dans des noms propres. Il ne dit rien de ce nom de famille en particulier."
               }
             ]
           }

@@ -32,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Ochieng est documenté comme un nom masculin donné à un enfant né autour du milieu de la journée, entre environ 11 h et 13 h.",
-        "claimStatus": "established",
-        "sourceRefs": ["oluoch-dholuo-toponyms-2022", "onyoyo-dholuo-grammar"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -193,6 +188,37 @@
                 "source_kind": "academic",
                 "page": "p. 56",
                 "notes": "Londres, Anthropological Institute of Great Britain and Ireland. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive. Page 56 : sous « Kalachonyo », « A large tribe of Nilotic origin on the south side of Ugowe Bay », la liste des subdivisions et de leurs chefs donne « Akelu — Achieng ». Hobley écrit ici pour l'administration britannique et cite les noms comme on les lui rapporte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Ochieng est documenté comme un nom masculin donné à un enfant né autour du milieu de la journée, entre environ 11 h et 13 h.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "A Morpho-semantic Study of Toponyms in Dholuo",
+                "author": "Angeline Awuor Oluoch",
+                "year": 2022,
+                "url": "https://erepository.uonbi.ac.ke/items/a3c4bee8-cbe3-4861-95be-02de1999ade8",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 31",
+                "notes": "Mémoire de l'université de Nairobi, 2022. Lu le 13 octobre 2026 dans le dépôt de l'université. Page 31 : le « nying juok » (« nom de l'esprit ») est donné selon la position du soleil ; « births between 11 -1pm acquires O/Achieng » ; le nom du père est ajouté après le premier et le deuxième nom, et le troisième sert d'ordinaire de nom de famille."
+              },
+              {
+                "title": "Dholuo grammar for beginners",
+                "author": "Peter Onyango Onyoyo",
+                "year": 2012,
+                "url": "https://erepository.uonbi.ac.ke/items/0f4c0d43-6613-4d31-b9ad-d61562ea7c97",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 60",
+                "notes": "Grammaire publiée par Lake Publishers & Enterprises, sans date sur la copie lue. Lu le 13 octobre 2026 dans le dépôt de l'université de Nairobi. Page 60, rubrique « Phenomenon » : « A male child born when the sun is shining is Ochieng', and a female is Achieng »."
               }
             ]
           }

@@ -23,18 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le dictionnaire français-kiluba d'Em. Jenniges (1909) donne nkongolo pour « arc-en-ciel ».",
-        "claimStatus": "established",
-        "sourceRefs": ["jenniges-1909-kiluba"]
-      },
-      {
-        "claim": "Le père Colle écrit en 1913 que l'arc-en-ciel s'appelle Mwamba Nkongolo, du nom d'un génie, et que nkongolo, qui signifie pour lui « courbé », paraît secondaire. Sa lecture n'est pas celle du dictionnaire de Jenniges : les deux sont gardées côte à côte.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["colle-1913-baluba-ii"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -228,6 +218,48 @@
                 "source_kind": "academic",
                 "page": "p. lvii",
                 "notes": "Scarecrow Press, Lanham, 2010 (collection Historical Dictionaries of Africa, n° 112) ; texte intégral lu. Page lvii de l'introduction : « According to Luba tradition, their leader, a certain Nkongolo Mukulu, founded the Luba Empire and set the capital at Kitenta. He was succeeded by his nephew Kalala Ilunga. » Le dictionnaire donne ce récit comme une tradition, sans le dater. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le dictionnaire français-kiluba d'Em. Jenniges (1909) donne nkongolo pour « arc-en-ciel ».",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Dictionnaire français-kiluba, exposant le vocabulaire de la langue kiluba telle qu'elle se parle au Katanga, publié par le Ministère des Colonies de Belgique",
+                "author": "Em. Jenniges",
+                "year": 1909,
+                "url": "https://archive.org/details/dictionnairefran00jennuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 16",
+                "notes": "Bruxelles, Spineux, 1909. Lu dans la numérisation d'archive.org. Page 16 : « Arc-en-ciel, nkongolo. » Le dictionnaire va du français au kiluba ; il donne le mot, pas son histoire. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le père Colle écrit en 1913 que l'arc-en-ciel s'appelle Mwamba Nkongolo, du nom d'un génie, et que nkongolo, qui signifie pour lui « courbé », paraît secondaire. Sa lecture n'est pas celle du dictionnaire de Jenniges : les deux sont gardées côte à côte.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Les Baluba (Congo belge), tome II",
+                "author": "R. P. Colle",
+                "year": 1913,
+                "url": "https://archive.org/details/lesbalubacongob02coll",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 462-463",
+                "notes": "Collection de monographies ethnographiques publiée par Cyr. van Overbergh, Bruxelles, Albert Dewit et Institut international de bibliographie, 1913 ; l'auteur est un missionnaire des Pères Blancs et décrit de l'extérieur le pays des Baluba, limité au nord par la Lukuga et au sud et à l'ouest par le Luvwa et le Lualaba (tome I, p. 3). Lu dans la numérisation d'archive.org. Pages 462-463 : l'arc-en-ciel est « un double serpent [...] qui tue tous ceux qu'il touche, sauf les individus nommés Mwamba et Nkongolo » ; l'occupant d'une case sur laquelle repose un bout de l'arc-en-ciel doit mourir « à moins qu'il ne porte le nom du génie Mwamba ou Nkongolo ». Lu le 13 octobre 2026."
               }
             ]
           }

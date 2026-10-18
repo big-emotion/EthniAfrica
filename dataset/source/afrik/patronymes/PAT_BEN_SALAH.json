@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Un article culturel tunisien explique que Ben signifie « fils de » dans les formes patronymiques et donne Ben Salah comme exemple. Il ne démontre ni l’identité de l’ancêtre Salah ni une transmission commune à tous les porteurs.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["carthage-ben-salah"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -104,5 +99,40 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les recherches « Ben Salah lignée », « Ben Salah clan », « Ben Salah tribe » et « Ben Salah place name » n’ont pas permis de déterminer si cette graphie désigne une lignée, un clan, une caste, une classe d’âge ou un établissement dans le contexte précis de la fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Les sources réunies dans ce dossier racontent l’histoire du nom Ben Salah.",
+    "originExplained": true,
+    "names": [
+      {
+        "nameText": "Ben Salah",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Un article culturel tunisien explique que Ben signifie « fils de » dans les formes patronymiques et donne Ben Salah comme exemple. Il ne démontre ni l’identité de l’ancêtre Salah ni une transmission commune à tous les porteurs.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Tunisian Names: Meanings, Origins, and the Three Thousand Years Behind Them — Carthage Magazine",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://carthagemagazine.com/tunisian-names/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article culturel consulté le 2 septembre 2026. Il donne Ben Salah comme exemple tunisien du patronymique Ben, « fils de » ; il ne cite pas de travail savant propre à cette famille."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

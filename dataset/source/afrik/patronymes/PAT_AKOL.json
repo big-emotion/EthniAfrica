@@ -23,16 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Baak décrit Akol comme un nom personnel dinka, distinct du nom de clan. Ladd traduit le mot dinka akOl, dans une ancienne orthographe, par « soleil, jour ». Les sources consultées ne relient toutefois pas explicitement ce mot au nom personnel Akol. Ce sens reste donc une hypothèse pour le nom.",
-        "claimStatus": "claimed",
-        "sourceRefs": [
-          "baak-negotiating-belongings-2016",
-          "ladd-dinka-orthography"
-        ]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -103,5 +95,49 @@
       "fieldPath": "homonyms",
       "reason": "Les sources consultées, dont les travaux de Baak et de Ladd, ainsi que les chants dinka conservés à Édimbourg, ne décrivent pas d'autre nom écrit Akol qui aurait une origine différente."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Les sources réunies dans ce dossier racontent l’histoire du nom Akol.",
+    "originExplained": true,
+    "names": [
+      {
+        "nameText": "Akol",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Baak décrit Akol comme un nom personnel dinka, distinct du nom de clan. Ladd traduit le mot dinka akOl, dans une ancienne orthographe, par « soleil, jour ». Les sources consultées ne relient toutefois pas explicitement ce mot au nom personnel Akol. Ce sens reste donc une hypothèse pour le nom.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Negotiating Belongings: Stories of Forced Migration of Dinka Women from South Sudan",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.researchgate.net/publication/307802615_Negotiating_Belongings",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Monographie ethnographique de Melanie Baak, Sense Publishers, 2016, DOI 10.1007/978-94-6300-588-3. Le chapitre Kooc Pan Da transcrit le récit de Nyanut Akol et montre qu’Akol est le nom de son père, distinct de l’appartenance clanique."
+              },
+              {
+                "title": "Orthographic reform in Dinka: some general considerations and a proposal",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.lel.ed.ac.uk/~bob/PAPERS/orth.posted.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Étude de D. Robert Ladd sur l’orthographe dinka. L’exemple lexical akOl, réécrit akOál dans la proposition orthographique, est glosé « sun, day ». La source ne relie pas elle-même ce lexème au nom personnel Akol."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

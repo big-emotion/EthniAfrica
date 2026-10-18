@@ -86,6 +86,7 @@ const actorSchema = z
 // search sheet find the meaning, the imposition and today's usage again
 // (REQ-190, REQ-191) without guessing from prose.
 const ACCOUNT_ASPECTS = ["meaning", "imposition", "usage"] as const;
+const CLAIM_STATUSES = ["claimed", "contested", "established"] as const;
 
 // The great era of the territory an account is about, at its period. A date
 // alone cannot tell it: Saint-Louis was French long before 1885, and Ethiopia
@@ -105,6 +106,10 @@ const accountSchema = z
       })
       .optional(),
     statement: z.string().trim().min(1),
+    claimStatus: z.enum(CLAIM_STATUSES).optional(),
+    carrier: z.string().trim().min(1).optional(),
+    collection: z.enum(["direct", "mediated", "not-stated"]).optional(),
+    collector: z.string().trim().min(1).optional(),
     aspect: z
       .enum(ACCOUNT_ASPECTS, {
         error: `aspect must be one of ${ACCOUNT_ASPECTS.join(", ")}`,

@@ -31,13 +31,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "La monographie d’Osterlund documente Ojula/Ajula comme nom du deuxième enfant dans l’ordre de naissance anuak. Elle n’atteste pas la graphie exacte Ojulu ; le rapprochement entre Ojulu et Ojula reste donc contested.",
-        "claimStatus": "contested",
-        "sourceRefs": ["osterlund-anuak-legacy-2021"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -160,6 +155,27 @@
                 "source_kind": "academic",
                 "page": "notes du chapitre « Social and Cultural Characteristics of the Anuak Tribe »",
                 "notes": "Monographie de David C. Osterlund, 2021, chapitre lu en ligne le 13 octobre 2026. Les notes du chapitre citent des entretiens datés de 1972 et 1973, dont « Interview with Paul Nyinyoni Ojulo, August 2, 1972 », et des transcriptions de bandes par la même personne. Elles écrivent Ojulo, et une fois Ojuly ; elles n'écrivent pas Ojulu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La monographie d’Osterlund documente Ojula/Ajula comme nom du deuxième enfant dans l’ordre de naissance anuak. Elle n’atteste pas la graphie exacte Ojulu ; le rapprochement entre Ojulu et Ojula reste donc contested.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "The Anuak Legacy: Music & Culture",
+                "author": "David C. Osterlund",
+                "year": 2021,
+                "url": "https://mlpp.pressbooks.pub/isbn9781732566125/chapter/social-and-cultural-characteristics-of-the-anuak-tribe/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "chapitre « Social and Cultural Characteristics of the Anuak Tribe », section « Naming »",
+                "notes": "Monographie de David C. Osterlund, University of Northwestern Berntsen Library, 2021, tirée d'un terrain de 1972-1973 ; chapitre lu en ligne le 13 octobre 2026. La section « Naming » dit : « the first born is Omot or Amot, boy or girl; the second born is Ojula or Ajula, boy or girl; the third born is Ochalla or Achalla ». Elle ne donne pas la graphie Ojulu."
               }
             ]
           }

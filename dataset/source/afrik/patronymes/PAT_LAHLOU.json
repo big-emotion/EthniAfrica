@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une contribution utilisateur donne Lahlou pour « doux » dans des parlers marocain ou algérien. Cette proposition non référencée est conservée comme témoignage communautaire, sans inférence sur une lignée.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["forebears-lahlou"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -202,6 +197,26 @@
                 "tier": "unverified",
                 "source_kind": "community",
                 "notes": "Notice contributive. Lu le 14 octobre 2026; ajoutée le 18 avril 2017, modifiée le 25 septembre 2018 par un contributeur qui signe « HL ». Elle donne le sens « sweet » ou « nice, charming », surtout en arabe marocain, et les formes Lehlou et Lahlouh. Cette notice n'a pas de référence savante : elle est citée pour ce qu'elle dit, jamais seule."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une contribution utilisateur donne Lahlou pour « doux » dans des parlers marocain ou algérien. Cette proposition non référencée est conservée comme témoignage communautaire, sans inférence sur une lignée.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Lahlou Surname Origin, Meaning & Last Name History — Forebears",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://forebears.io/surnames/lahlou",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Répertoire communautaire consulté le 2 septembre 2026. Il recense Lahlou surtout au Maroc et reproduit une interprétation utilisateur « doux » sans référence savante."
               }
             ]
           }

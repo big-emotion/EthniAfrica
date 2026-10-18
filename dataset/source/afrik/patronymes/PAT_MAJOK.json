@@ -23,16 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Majok est un nom personnel masculin dinka rattaché à une robe bovine : un bovin blanc portant du noir à la tête et aux épaules. Le motif est attribué selon le rang de la mère et la hiérarchie des robes ; l’article d’Impey et le livret Smithsonian documentent séparément ce rapport entre nom personnel et couleur bovine.",
-        "claimStatus": "established",
-        "sourceRefs": [
-          "impey-dinka-cassette-2013",
-          "smithsonian-dinka-song-notes"
-        ]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -234,6 +226,36 @@
                 "source_kind": "academic",
                 "page": "p. 169",
                 "notes": "Londres, George Routledge & Sons, 1932 ; lu sur la numérisation d'Internet Archive le 18 octobre 2026. Page 169, note : un auteur avait écrit qu'un bœuf aux cornes dressées l'une en avant et l'autre en arrière s'appelait majok ; « This was a mistake ; an ox we saw happened to be a majok, but this term really applies only to a particularly coloured (red with white belly) muor cien » ; la même note donne, d'après Lord Raglan, d'autres robes : « black, macar ; black with white spots, makwaic »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Majok est un nom personnel masculin dinka rattaché à une robe bovine : un bovin blanc portant du noir à la tête et aux épaules. Le motif est attribué selon le rang de la mère et la hiérarchie des robes ; l’article d’Impey et le livret Smithsonian documentent séparément ce rapport entre nom personnel et couleur bovine.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Keeping in touch via cassette: tracing Dinka songs from cattle camp to transnational audio-letter",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.tandfonline.com/doi/abs/10.1080/13696815.2013.775038",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Angela Impey, Journal of African Cultural Studies 25(2), 2013, p. 197-210. L’analyse d’un chant identifie Majok comme un nom personnel attribué suivant la préséance maternelle et une hiérarchie de robes bovines ; la note 19 décrit le bovin blanc à tête, cou et croupe noirs."
+              },
+              {
+                "title": "The Role of Song and Dance in Dinka Society",
+                "author": "Francis Mading Deng",
+                "year": 1976,
+                "url": "https://folkways-media.si.edu/docs/folkways/artwork/FW04301.pdf",
+                "tier": "official",
+                "source_kind": "archive",
+                "page": "p. 4 du livret numérisé",
+                "notes": "Notes de Francis Mading Deng pour les disques Folkways FE 4301-4303, « © 1976 by Folkways Records », livret conservé et mis en ligne par Smithsonian Folkways, relu le 18 octobre 2026. Page 4 : « the eldest of the first wife gets as one of his colour-patterns Majok or Mijok which is a black head and shoulders with a white flanking and either black or white hindquarters » ; « In addition to his personal name, he is known by the name of the colour-pattern of his ox »."
               }
             ]
           }

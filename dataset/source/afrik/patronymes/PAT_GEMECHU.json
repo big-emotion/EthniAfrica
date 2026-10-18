@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -62,10 +63,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "L'étude d'Ayele Gizaw Gemechu et ses exemples, ainsi que les requêtes « Gemechu Oromo meaning/etymology », ont été examinés ; aucune analyse linguistique du nom Gemechu n'a été trouvée dans une source vérifiable."
-    },
     {
       "fieldPath": "alliances",
       "reason": "L'étude des pratiques de nomination et les recherches de parenté oromo n'ont livré aucune alliance à plaisanterie nommant Gemechu et un autre nom documenté ici."

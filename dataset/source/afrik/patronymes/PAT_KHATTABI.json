@@ -40,20 +40,9 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Pessah Shinar situe le clan Ait Khaṭṭāb autour d’Ajdir dans le Rif et précise que la nisba al-Khaṭṭābī d’Abd el-Krim en dérive.",
-        "claimStatus": "established",
-        "sourceRefs": ["khattabi-shinar"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "La forme al-Khaṭṭābī est une nisba construite sur le nom du clan Ait Khaṭṭāb ; la source établit cette relation morphologique dans le cas rifain étudié.",
-        "claimStatus": "established",
-        "sourceRefs": ["khattabi-shinar"]
-      }
-    ]
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -205,7 +194,8 @@
                 "page": "p. 161",
                 "notes": "Pessah Shinar, « 'Abd al-Qādir and 'Abd al-Krīm: Religious Influences on their Thought and Action », Asian and African Studies, annuaire de la Société orientale d'Israël, vol. 1, Jérusalem, 1965, p. 139-174. Lu le 14 octobre 2026 dans un scan non officiel de l'article. Page 161 : « His clan, the Ait Khaṭṭāb (hence his nisba al-Khaṭṭābī), was located at and around Ajdīr, overlooking the Bay of Alhucemas… ». Note 96 : « It is not quite clear whether 'Abd el-Krim ever used this nisba to allege descent from the Caliph 'Umar b. al-Khaṭṭāb ; cf. J. Ladreit de Lacharrière, Le rêve d'Abd el Krim, Paris, 1925, p. 91. » Pages 160-161 : il est « a member of the Banū Wuriāghal », tribu berbère du centre du Rif."
               }
-            ]
+            ],
+            "claimStatus": "established"
           },
           {
             "period": {
@@ -225,6 +215,27 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 161, note 96",
+                "notes": "Pessah Shinar, « 'Abd al-Qādir and 'Abd al-Krīm: Religious Influences on their Thought and Action », Asian and African Studies, annuaire de la Société orientale d'Israël, vol. 1, Jérusalem, 1965, p. 139-174. Lu le 14 octobre 2026 dans un scan non officiel de l'article. Page 161 : « His clan, the Ait Khaṭṭāb (hence his nisba al-Khaṭṭābī), was located at and around Ajdīr, overlooking the Bay of Alhucemas… ». Note 96 : « It is not quite clear whether 'Abd el-Krim ever used this nisba to allege descent from the Caliph 'Umar b. al-Khaṭṭāb ; cf. J. Ladreit de Lacharrière, Le rêve d'Abd el Krim, Paris, 1925, p. 91. » Pages 160-161 : il est « a member of the Banū Wuriāghal », tribu berbère du centre du Rif."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La forme al-Khaṭṭābī est une nisba construite sur le nom du clan Ait Khaṭṭāb ; la source établit cette relation morphologique dans le cas rifain étudié.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "ʿAbd al-Qādir and ʿAbd al-Krīm",
+                "author": "Pessah Shinar",
+                "year": 1965,
+                "url": "https://www.tifraznarif.net/pdf/livres/Abdelkader%20%26%20Abdelkrim.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 161",
                 "notes": "Pessah Shinar, « 'Abd al-Qādir and 'Abd al-Krīm: Religious Influences on their Thought and Action », Asian and African Studies, annuaire de la Société orientale d'Israël, vol. 1, Jérusalem, 1965, p. 139-174. Lu le 14 octobre 2026 dans un scan non officiel de l'article. Page 161 : « His clan, the Ait Khaṭṭāb (hence his nisba al-Khaṭṭābī), was located at and around Ajdīr, overlooking the Bay of Alhucemas… ». Note 96 : « It is not quite clear whether 'Abd el-Krim ever used this nisba to allege descent from the Caliph 'Umar b. al-Khaṭṭāb ; cf. J. Ladreit de Lacharrière, Le rêve d'Abd el Krim, Paris, 1925, p. 91. » Pages 160-161 : il est « a member of the Banū Wuriāghal », tribu berbère du centre du Rif."
               }
             ]

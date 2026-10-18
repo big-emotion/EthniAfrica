@@ -32,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une contribution communautaire présente Al-Warfalli comme la désignation d’une personne issue de la confédération tribale Warfalla de l’ouest libyen. Cette proposition non expertisée est conservée comme témoignage, non comme preuve généalogique.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["btn-al-warfalli"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -159,6 +154,27 @@
                 "source_kind": "ngo",
                 "page": "p. 5, 23",
                 "notes": "United States Institute of Peace, Peaceworks n° 118, 2016, lu le 14 octobre 2026 dans une copie conservée par la Wayback Machine (le lien d'origine ne répond plus). Page 5 : des clans arabes bédouins et des familles voisines forment une « tribu » en milieu rural, les Warfalla en sont l'exemple. Page 23 : la seule tribu de Bani Walid est celle des Warfalla ; la région s'appelait d'abord Wrfalla, nom d'origine berbère amazighe, et cinquante-deux clans devenus la tribu Warfalla ont pris le nom du territoire où ils vivaient. Les descendants de la tribu sont répandus en Libye et au sud, au Niger et au Tchad."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une contribution communautaire présente Al-Warfalli comme la désignation d’une personne issue de la confédération tribale Warfalla de l’ouest libyen. Cette proposition non expertisée est conservée comme témoignage, non comme preuve généalogique.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the surname Al-Warfalli — Behind the Name",
+                "author": "Contribution d'utilisateur (General9696)",
+                "year": 2024,
+                "url": "https://surnames.behindthename.com/name/al01warfalli/submitted",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page de noms soumis par les utilisateurs, ajoutée le 8 juin 2024 et modifiée le 8 juin 2026, lue le 14 octobre 2026. Elle donne al-Warfalli comme nom de famille arabe maghrébin, « le Warfalli », pour une personne de la confédération tribale Warfalla de l'ouest de la Libye, et liste les autres écritures : al-Werfalli, el-Warfally, al-Warfali, Warfalli, Werfalli, Werfali, Warfali, entre autres. Aucun appareil critique ni source n'accompagne la page.",
+                "page": "page entière"
               }
             ]
           }

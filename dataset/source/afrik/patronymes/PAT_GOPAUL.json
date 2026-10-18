@@ -26,6 +26,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -76,10 +77,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "les résultats exacts « Gopaul », les Indian Immigration Archives du Mahatma Gandhi Institute, les publications de l'Aapravasi Ghat et les catalogues bibliographiques sur l'engagisme à Maurice ont été consultés. Ils attestent le nom ou décrivent le fonds disponible, mais n'ont livré ni étymologie publiée ni chronique attribuable à une lignée précise ; l'origine reste donc vide."
-    },
     {
       "fieldPath": "alliances",
       "reason": "les résultats exacts « Gopaul », les Indian Immigration Archives du Mahatma Gandhi Institute, les publications de l'Aapravasi Ghat et les catalogues bibliographiques sur l'engagisme à Maurice, complétés par les termes « alliance », « cousinage » et « joking relationship », n'ont fait apparaître aucune paire nommée et sourcée reliant Gopaul à un autre nom documenté ici."

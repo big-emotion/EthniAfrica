@@ -11,7 +11,10 @@
     {
       "spelling": "Bizimana",
       "attestations": [
-        { "countryId": "RWA", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "RWA",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -20,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une explication donne à Bizimana le sens d'une phrase : « c'est Imana qui le sait », Imana étant le nom de Dieu en kirundi. Le nom y est rangé parmi ceux qui disent ce que l'on reconnaît à Imana, ici sa connaissance de toute chose. Cette explication est avancée par un auteur burundais dans une étude sur les noms au Burundi, à propos du kirundi et non du kinyarwanda ; elle ne dit pas ce que les familles rwandaises qui portent ce nom en disent elles-mêmes.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["simbananiye-2005-noms-burundi"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -65,10 +63,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "L'explication ci-dessus vient du Burundi, pas du Rwanda : nous n'avons pas trouvé de source qui traite de ce nom tel que le donnent les familles rwandaises, ni d'explication venue d'elles."
-    },
     {
       "fieldPath": "alliances",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
@@ -162,6 +156,26 @@
                 "source_kind": "academic",
                 "page": "p. 174",
                 "notes": "Anthropologie et Sociétés, 29(1), 2005, p. 167-181, lu en entier sur le PDF de la revue le 16 octobre 2026. L'auteur s'appuie sur des entretiens menés en 1999 au Burundi et sur des noms relevés dans des registres paroissiaux, des écoles et l'état civil. Page 174 : « Bizimana : c'est Imana qui le sait »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une explication donne à Bizimana le sens d'une phrase : « c'est Imana qui le sait », Imana étant le nom de Dieu en kirundi. Le nom y est rangé parmi ceux qui disent ce que l'on reconnaît à Imana, ici sa connaissance de toute chose. Cette explication est avancée par un auteur burundais dans une étude sur les noms au Burundi, à propos du kirundi et non du kinyarwanda ; elle ne dit pas ce que les familles rwandaises qui portent ce nom en disent elles-mêmes.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Les noms de personnes au Burundi : un support du lien social",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.anthropologie-societes.ant.ulaval.ca/sites/anthropologie-societes.ant.ulaval.ca/files/articles/fichiers/A&S_29-1_167-181.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Léandre Simbananiye, Anthropologie et Sociétés, vol. 29, n° 1, 2005, p. 167-181 ; texte intégral lu. Entretiens menés en 1999 au Burundi et noms relevés dans des registres paroissiaux, des écoles et l'état civil communal. La phrase « Bizimana : c'est Imana qui le sait » figure p. 174, parmi les noms qui disent les attributs d'Imana (sa connaissance de toute chose). L'article porte sur le Burundi et sur le kirundi : il ne dit rien du nom tel qu'il est donné au Rwanda."
               }
             ]
           }

@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -54,10 +55,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "la recherche web et bibliographique combinant « Pohamba », « Ovambo », « Namibia », « surname », « personal name », « onomastics », « etymology », « clan », « transmission », « alliance », « caste », « homonym » et « obituary », les travaux de Saarelma-Maunumaa sur les noms ambo, ainsi que la page Forebears dédiée n'ont livré aucune tradition attribuée, chronique ou étude linguistique propre à ce nom qui en établirait l'origine ; les rapprochements fondés sur la seule ressemblance ou la seule géographie ont été écartés."
-    },
     {
       "fieldPath": "alliances",
       "reason": "la recherche web et bibliographique combinant « Pohamba », « Ovambo », « Namibia », « surname », « personal name », « onomastics », « etymology », « clan », « transmission », « alliance », « caste », « homonym » et « obituary », les travaux de Saarelma-Maunumaa sur les noms ambo, ainsi que la page Forebears dédiée n'ont identifié aucune alliance ni parenté à plaisanterie documentée reliant ce nom à un autre nom documenté ici."

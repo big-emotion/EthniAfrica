@@ -22,13 +22,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "La transcription d'une intervention aux assises de 2018 sur le genre et la justice indique que Benjamin Mkapa portait le nom de sa mère, et non celui de son père, en raison du système matrilocal et matrilinéaire makonde. Cette attestation établit ce mode de transmission pour la lignée documentée, sans fournir l'étymologie lexicale de Mkapa.",
-        "claimStatus": "established",
-        "sourceRefs": ["world-bank-mkapa-matrilineal"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -129,7 +124,8 @@
                 "page": "p. 168",
                 "notes": "Actes de la conférence d'Arusha, 11 au 13 juin 2018, publiés par la Banque mondiale le 22 décembre 2023. Page 168 imprimée (page 179 du fichier) : discours de clôture du ministre des Affaires constitutionnelles et juridiques de Tanzanie, Palamagamba Kabudi. Il range le troisième président, Benjamin Urue Mkapa, parmi les familles où l'enfant prend le nom de sa mère, dans une société matrilocale et matrilinéaire. Il cite comme peuples du Sud les Mwera, les Makua, les Yao, les Makonde et les Machinga, sans dire duquel relève Mkapa. Propos d'un intervenant, non position de la Banque mondiale. Lu le 14 octobre 2026."
               }
-            ]
+            ],
+            "claimStatus": "established"
           },
           {
             "period": {

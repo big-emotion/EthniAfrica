@@ -153,3 +153,4 @@ a board and the live page seem to disagree.
   sticky header that captures stitch mid-page is drawn at the top.
 - Home: the hero copy widths (576 and 593 px), the seed pills' padding and the
   submit button's weight are measured values, not tokens.
+- 2026-10-18 — ETNI-2105, approved by the operator in chat: `name-traore` at 430, 768 and 1440 px (origin claim statuses shown in name-history periods; « Origine » points to the sourced name history in one sentence). See [Brief 6](../briefs/06-family-name.md).

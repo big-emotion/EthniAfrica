@@ -40,13 +40,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le Dictionary of American Family Names rattache Silva soit à des lieux ainsi nommés, soit à l'ancien portugais et galicien silva (« bois », puis « ronce »). La notice ne tranche pas l'histoire particulière des lignées capverdiennes.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["dafn-silva-2022"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -176,6 +171,26 @@
             },
             "statement": "Le nom Silva viendrait du mot silva, « bois », puis « ronce », en ancien portugais et en ancien galicien : il désignerait quelqu'un qui vivait près d'un bois, selon le Dictionary of American Family Names.",
             "hypothesisGroup": "origine du nom Silva",
+            "sources": [
+              {
+                "title": "Silva Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Patrick Hanks et al.",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/silva?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue en anglais le 11 octobre 2026. La notice fait de Silva un nom portugais, galicien et italien : soit le nom d'un des nombreux lieux appelés Silva, soit un nom tiré de l'ancien portugais et de l'ancien galicien silva, « bois », puis « ronce ». Elle ajoute que des familles juives séfarades l'ont pris au moment de leur conversion forcée au catholicisme."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le Dictionary of American Family Names rattache Silva soit à des lieux ainsi nommés, soit à l'ancien portugais et galicien silva (« bois », puis « ronce »). La notice ne tranche pas l'histoire particulière des lignées capverdiennes.",
+            "claimStatus": "claimed",
             "sources": [
               {
                 "title": "Silva Surname Meaning — Dictionary of American Family Names, 2nd edition",

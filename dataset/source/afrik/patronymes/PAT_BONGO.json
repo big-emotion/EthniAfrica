@@ -22,13 +22,8 @@
   "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Une étude de sociogenèse du pouvoir d'Omar Bongo décrit la « famille Bongo » comme une construction politique pouvant être définie minimalement comme un clan, dont Omar Bongo devient l'ancêtre fondateur et le patriarche ; cette analyse ne constitue pas une étymologie du nom.",
-        "claimStatus": "established",
-        "sourceRefs": ["ondo-sociogenese-bongo-2021"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -180,6 +175,27 @@
                 "source_kind": "academic",
                 "page": "p. 241",
                 "notes": "Lu le 18 octobre 2026. Page 241 : « Concernant son patronyme, à l'origine « Mbongo », un officier supérieur de l'armée centrafricaine, le Commandant Mbongo, revendiquait sa fraternité avec le Directeur de cabinet du Président Léon Mba. Mais Bongo [...] disait devoir ce nom à » la coïncidence de sa naissance et de la présence du chef Mbongo. La même page rapporte, d'après Malékou, que les origines d'Omar Bongo se situeraient entre le Congo-Brazzaville et l'Oubangui-Chari."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une étude de sociogenèse du pouvoir d'Omar Bongo décrit la « famille Bongo » comme une construction politique pouvant être définie minimalement comme un clan, dont Omar Bongo devient l'ancêtre fondateur et le patriarche ; cette analyse ne constitue pas une étymologie du nom.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Une sociogenèse de la structure du pouvoir d'Omar Bongo",
+                "author": "Placide Ondo",
+                "year": 2021,
+                "url": "https://inrs.gouv.tg/wp-content/uploads/2024/08/ET-RTS-V15-N%C2%B02-Juillet-Decembre-2021.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 239-240",
+                "notes": "Placide Ondo, université Omar Bongo, « La construction dynastique de la « maison du Président » : une sociogenèse de la structure du pouvoir d'Omar Bongo », Études togolaises, Revue togolaise des sciences, vol. 15, n° 2, juillet-décembre 2021, p. 234 et suivantes ; numéro entier lu en PDF le 18 octobre 2026. Pages 239-240 : « Les nominations de personnes portant le patronyme Bongo à de hautes fonctions de l'État » ; « La nomination de Bongo à la tête de l'État consacre ainsi ce patronyme comme « grand nom » » ; « la famille attachée ou portant le patronyme Bongo devient une « grande famille » »."
               }
             ]
           }

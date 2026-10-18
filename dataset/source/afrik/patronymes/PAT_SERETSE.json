@@ -22,13 +22,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "La notice de Seretse Khama explique que son nom personnel signifie « l'argile qui lie » et renvoie à la réconciliation d'une rupture entre son père et son grand-père. Cette explication concerne ce nom de naissance documenté, non toutes les familles qui emploient aujourd'hui Seretse comme patronyme.",
-        "claimStatus": "established",
-        "sourceRefs": ["saho-seretse-khama"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -182,6 +177,26 @@
                 "source_kind": "press",
                 "page": "p. 59-60",
                 "notes": "Article du New York Daily News repris dans le Negro Digest de décembre 1949, lu sur l'exemplaire numérisé d'archive.org. L'article commence page 59 ; page 60, il écrit que le nom Seretse veut dire « heart of the red earth ». C'est un article de presse américain de son époque, au ton marqué par les clichés coloniaux ; il est cité ici pour le sens qu'il donne au nom. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La notice de Seretse Khama explique que son nom personnel signifie « l'argile qui lie » et renvoie à la réconciliation d'une rupture entre son père et son grand-père. Cette explication concerne ce nom de naissance documenté, non toutes les familles qui emploient aujourd'hui Seretse comme patronyme.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "President Seretse Khama",
+                "author": "South African History Online",
+                "year": null,
+                "url": "https://sahistory.org.za/people/president-seretse-khama",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Notice biographique de South African History Online. Elle donne la naissance de Seretse Khama le 1er juillet 1921 à Serowe, au Bechuanaland, et explique que son nom veut dire « l'argile qui lie », en souvenir de la réconciliation entre son père et son grand-père. La page ne porte pas de date de publication. Lu le 11 octobre 2026."
               }
             ]
           }

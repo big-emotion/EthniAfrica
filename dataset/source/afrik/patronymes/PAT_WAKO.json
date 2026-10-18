@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -62,10 +63,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "L'article de Wario Wako, les études de noms oromo et les requêtes « Wako/Waqo Oromo name etymology » ont été examinés ; aucune reconstruction linguistique dédiée et vérifiable n'a été trouvée."
-    },
     {
       "fieldPath": "alliances",
       "reason": "Les sections de l'article sur les moitiés intermarieuses, les clans et l'entraide ont été recherchées ; elles ne nomment aucune alliance à plaisanterie entre Wako et un autre nom documenté ici."

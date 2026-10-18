@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'entrée consultée présente Alemayehu, écrit አለማየሁ, comme un nom personnel amharique signifiant « j'ai vu le monde ». La glose est conservée au rang de proposition communautaire, sans en déduire une origine lignagère.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["btn-alemayehu"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -200,6 +195,26 @@
                 "source_kind": "archive",
                 "page": "t. II, p. 277",
                 "notes": "Londres, John Murray, 1869, tome II. Lu le 13 octobre 2026 sur l'exemplaire numérisé de Google, déposé sur archive.org. Page 277, journal du 25 mars 1868 à Magdala : la reine Teru-Wark et « her son Dajjaj 'Alamayo » sont appelés à Salamgé. Le texte écrit le nom de la même façon page 293 (« Prince 'Alamayo ») ; l'auteur ne dit pas ce que veut dire le nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'entrée consultée présente Alemayehu, écrit አለማየሁ, comme un nom personnel amharique signifiant « j'ai vu le monde ». La glose est conservée au rang de proposition communautaire, sans en déduire une origine lignagère.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Alemayehu — Behind the Name",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/alemayehu",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice du site Behind the Name, lue le 13 octobre 2026. Elle écrit le nom አለማየሁ, le dit masculin et féminin, et le glose « I have seen the world » en amharique."
               }
             ]
           }

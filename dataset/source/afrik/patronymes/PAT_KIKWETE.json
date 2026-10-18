@@ -22,13 +22,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "La biographie officielle de la présidence tanzanienne atteste Jakaya Mrisho Kikwete, né à Msoga dans la région de Pwani en 1950. Elle établit l'usage du nom en Tanzanie, mais ne mentionne ni une appartenance zaramo, ni un clan Kikwete, ni l'étymologie du nom.",
-        "claimStatus": "established",
-        "sourceRefs": ["ikulu-kikwete-profile"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -106,6 +101,26 @@
             "era": "modern",
             "statement": "Le nom Kikwete est porté en Tanzanie. La présidence l'écrit dans le nom de Jakaya Mrisho Kikwete, ancien président, né le 7 octobre 1950 à Msoga, dans la région de Pwani. Sa biographie ne dit ni ce que veut dire le nom, ni à quel peuple ou à quel lignage il se rattache.",
             "aspect": "usage",
+            "sources": [
+              {
+                "title": "Wasifu: Dkt Jakaya Mrisho Kikwete",
+                "author": "Ikulu, présidence de la République unie de Tanzanie",
+                "year": null,
+                "url": "https://www.ikulu.go.tz/administration/profile/1",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Biographie en swahili du site officiel de la présidence, relue le 14 octobre 2026 : « Rais Mstaafu Dkt. Jakaya Mrisho Kikwete alizaliwa tarehe 7 Oktoba mwaka 1950 Msoga, mkoa wa Pwani ». Elle ne mentionne ni l'origine du nom, ni son sens, ni un peuple."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La biographie officielle de la présidence tanzanienne atteste Jakaya Mrisho Kikwete, né à Msoga dans la région de Pwani en 1950. Elle établit l'usage du nom en Tanzanie, mais ne mentionne ni une appartenance zaramo, ni un clan Kikwete, ni l'étymologie du nom.",
+            "claimStatus": "established",
             "sources": [
               {
                 "title": "Wasifu: Dkt Jakaya Mrisho Kikwete",

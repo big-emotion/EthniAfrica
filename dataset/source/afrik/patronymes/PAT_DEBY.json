@@ -35,21 +35,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Dans la généalogie publiée d'Idriss Déby Itno, Déby est le nom personnel de son père et Hitno celui de son grand-père. Tubiana présente Hitno et son fils Déby comme des cheikhs représentant leur clan à Shigek-Karo, tandis que Rosenhart identifie séparément ce clan comme Kolyala, au sein des Bilia/Bideyat/Zaghawa. Les sources distinguent donc l'élément patronymique Déby du nom de clan Kolyala.",
-        "claimStatus": "established",
-        "sourceRefs": [
-          "tubiana-chad-sudan-2008",
-          "rosenhart-tribal-identity-2024"
-        ]
-      },
-      {
-        "claim": "La monographie communautaire arabe الزغاوة: ماضٍ وحاضر recense l'entrée « إيناء ديبي حنتو » dans une liste d'autorités bideyat du Tchad et du Soudan. Cette attestation écrite confirme seulement la présence de la graphie arabe ديبي en contexte bideyat ; elle ne fournit ni étymologie du nom ni tradition orale attribuée.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["suleiman-zaghawa-1988"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -229,6 +216,58 @@
             "statement": "Le nom Déby est écrit en arabe, ديبي, dans un ouvrage sur les Zaghawa publié au Koweït en 1988 : une liste des responsables bideyat du Tchad et du Soudan porte l'entrée « ايناء ديبي حنتو », où ايناء est le titre de ces responsables. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; la liste ne dit pas de quel Déby il s'agit, et le nom était déjà porté avant elle.",
             "formAsWritten": "ديبي",
             "birth": true,
+            "sources": [
+              {
+                "title": "الزغاوة: ماضٍ وحاضر (Les Zaghawa : passé et présent)",
+                "author": "Mahmoud Abakar Suleiman et Mohamed Ali Abakar Suleiman al-Tinawi",
+                "year": 1988,
+                "url": "https://zaghawa.org/sahifa3/wp-content/uploads/2024/04/zaghawa-past-present-first-edition-1.pdf",
+                "tier": "unverified",
+                "source_kind": "community",
+                "page": "p. 101",
+                "notes": "Ouvrage en arabe, première édition, Koweït, avril 1988, lu le 11 octobre 2026 dans le PDF mis en ligne. Page 101 : liste des responsables des Bideyat du Tchad et du Soudan, appelés ايناء, dont l'entrée « ايناء ديبي حنتو ». La liste ne dit pas qui est ce Déby."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans la généalogie publiée d'Idriss Déby Itno, Déby est le nom personnel de son père et Hitno celui de son grand-père. Tubiana présente Hitno et son fils Déby comme des cheikhs représentant leur clan à Shigek-Karo, tandis que Rosenhart identifie séparément ce clan comme Kolyala, au sein des Bilia/Bideyat/Zaghawa. Les sources distinguent donc l'élément patronymique Déby du nom de clan Kolyala.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "La guerre par procuration entre le Tchad et le Soudan et la « darfourisation » du Tchad : mythes et réalité",
+                "author": "Jérôme Tubiana",
+                "year": 2008,
+                "url": "https://www.smallarmssurvey.org/sites/default/files/resources/HSBA-WP-12-Chad-Sudan-Proxy-War-french.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 12",
+                "notes": "Small Arms Survey, document de travail 12, 2008, lu le 11 octobre 2026. Page 12 : les colons français écartent le clan Kolyala de la chefferie ; Hitno, grand-père d'Idriss Déby, part au Soudan, et au Darfour « Hitno et son fils Déby étaient des cheikhs représentant leurs clans à Shigek-Karo »."
+              },
+              {
+                "title": "Exploiting Tribal Identity: Evidence from the Darfur Conflict (2001-) and the Chad-Sudan Proxy War (2005-2010)",
+                "author": "Eline Rosenhart",
+                "year": 2024,
+                "url": "https://doi.org/10.69755/2995-2212.1281",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 97",
+                "notes": "The Journal of Social Encounters, vol. 8, n° 2, 2024, p. 88-107. Lu le 11 octobre 2026 dans une copie archivée du PDF déposé sur Digital Commons. Page 97 : en janvier 2006, Idriss Déby ajoute à son nom Itno, le nom de son grand-père ; « in a culture where surnames are not common, people are identified by the given name of their father, grandfather and great-grandfather »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La monographie communautaire arabe الزغاوة: ماضٍ وحاضر recense l'entrée « إيناء ديبي حنتو » dans une liste d'autorités bideyat du Tchad et du Soudan. Cette attestation écrite confirme seulement la présence de la graphie arabe ديبي en contexte bideyat ; elle ne fournit ni étymologie du nom ni tradition orale attribuée.",
+            "claimStatus": "claimed",
             "sources": [
               {
                 "title": "الزغاوة: ماضٍ وحاضر (Les Zaghawa : passé et présent)",

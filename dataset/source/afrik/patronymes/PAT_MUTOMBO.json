@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Dans l’onomastique ciluba décrite par Mulamba, Mutombo est la forme masculine d’une paire traditionnelle Mutombo/Mutoba. L’article précise que l’usage européen consistant à imposer le nom du père ou du mari à toute la famille brouille cette opposition de genre ; il établit donc un emploi personnel traditionnel, sans fournir d’étymologie lexicale.",
-        "claimStatus": "established",
-        "sourceRefs": ["mulamba-2021-mutombo"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -161,6 +156,27 @@
                 "source_kind": "academic",
                 "page": "p. 346",
                 "notes": "Akofena, numéro spécial n° 6, vol. 2, juin 2021, p. 341-358 ; PDF intégral lu. Page 346 : « Parents who have adopted the European 'family name' system in which every member is named after the father or the husband, violate the convention and blur gender specification. » Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans l’onomastique ciluba décrite par Mulamba, Mutombo est la forme masculine d’une paire traditionnelle Mutombo/Mutoba. L’article précise que l’usage européen consistant à imposer le nom du père ou du mari à toute la famille brouille cette opposition de genre ; il établit donc un emploi personnel traditionnel, sans fournir d’étymologie lexicale.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Anthroponyms We Live By: An Ecolinguistic Approach to Names in Ciluba",
+                "author": "Nshindi-Germain Mulamba",
+                "year": 2021,
+                "url": "https://www.revue-akofena.com/wp-content/uploads/2021/09/25-retourT06-61-Nshindi-Germain-MULAMBA-pp.341-358.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 346",
+                "notes": "Akofena, numéro spécial n° 6, vol. 2, juin 2021, p. 341-358 ; PDF intégral lu. Page 346 : « some names are gender specific in the traditional Luba society. Hence, the masculine-feminine pairs like Mulamba/Mulanga, Nshindi/Nshimba, Kabeya/Kabedi, Mutombo/Mutoba etc. » L'article ne donne pas le sens de Mutombo. Lu le 13 octobre 2026."
               }
             ]
           }

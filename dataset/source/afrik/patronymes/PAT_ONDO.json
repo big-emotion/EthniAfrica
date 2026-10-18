@@ -36,6 +36,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -72,10 +73,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "la recherche web et bibliographique combinant « Ondo », « Ondó », « Fang », « Gabon », « Guinée équatoriale », « patronyme », « onomastique », « étymologie », « clan », « transmission », « alliance », « caste », « homonyme » et « nécrologie », ainsi que la page Forebears dédiée n'ont livré aucune tradition attribuée, chronique ou étude linguistique propre à ce nom qui en établirait l'origine ; les rapprochements fondés sur la seule ressemblance ou la seule géographie ont été écartés."
-    },
     {
       "fieldPath": "nameSystem",
       "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues le rangent parmi les noms de personnes des Fang du Gabon. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant. La fiche reste donc parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."

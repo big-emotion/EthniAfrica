@@ -57,16 +57,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Dans le système anthroponymique baoulé décrit par Pagnet, Kouakou est le nom attribué à un garçon né le jeudi, jour appelé houé.",
-        "claimStatus": "established",
-        "sourceRefs": [
-          "pagnet-2005-noms-baoule",
-          "ngoran-poame-2006-anthroponymes-baoule"
-        ]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -267,7 +259,8 @@
                 "page": "p. 198",
                 "notes": "Revue du CAMES, nouvelle série B, vol. 7, n° 2, 2006, p. 197-207. Lu le 15 octobre 2026. Page 198 : un tableau des noms de jour baoulé repris d'un livre de Bernadette Akissi Koffi paru en 2001."
               }
-            ]
+            ],
+            "claimStatus": "established"
           },
           {
             "period": {

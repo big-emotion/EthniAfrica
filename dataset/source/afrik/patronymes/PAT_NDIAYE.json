@@ -52,16 +52,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Madubuike rapporte une tradition faisant descendre les Ndiaye d’un ancêtre nommé N’Djadia ; le DAFN relie cette mémoire au Ndiadiane Ndiaye semi-légendaire, fondateur du royaume du Djolof, tout en qualifiant l’étymologie du nom d’inexpliquée.",
-        "claimStatus": "claimed",
-        "sourceRefs": [
-          "madubuike-1994-african-names",
-          "dafn-familysearch-ndiaye"
-        ]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -289,6 +281,36 @@
                 "source_kind": "archive",
                 "page": "p. 282",
                 "notes": "Paris, P. Bertrand, 1853. Lu le 18 octobre 2026 dans la numérisation d'Internet Archive, page 282 vue en image (le texte reconnu par la machine imprime 392). « Rois demels » : l'auteur donne « les seuls documents » qu'il a pu avoir des gens du Cayor, fournis « par un des lettrés de la cour du demel régnant ». « Le 6e, Mafali, fils de Malobé-Ndiay et de Fali » ; « Le 10e, Ckali-Ndiay ». Abbé Boilat, cité pour les formes qu'il écrit."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Madubuike rapporte une tradition faisant descendre les Ndiaye d’un ancêtre nommé N’Djadia ; le DAFN relie cette mémoire au Ndiadiane Ndiaye semi-légendaire, fondateur du royaume du Djolof, tout en qualifiant l’étymologie du nom d’inexpliquée.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "A Handbook of African Names",
+                "author": "Ihechukwu Madubuike",
+                "year": 1994,
+                "url": "https://dokumen.pub/a-handbook-of-african-names-2-revnbsped-0894104381-9780894104381-0894104373.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 111-112",
+                "notes": "2e éd., Three Continents Press, 1994. Lu le 18 octobre 2026 sur une copie non officielle, une transcription numérique miroir du volume imprimé, mal découpée par endroits. Section sur les Wolof, p. 111-112 : les enfants prennent le nom de famille du père ; les noms les plus courants, transmis par les hommes, sont « Diop, Ndiaye, Mbang, Fall, Gueye, Mbaye, Sek, Diao ». Parmi les noms qui rappellent les ancêtres : « The Fall are descendants of a powerful and large family — the Damel of Cayor, once the vassal of Boubou Djollof » ; « The N'Diaye are the descendants of Bouba Djollof or N'Diadia'u, the monarch who grouped the people of Wolof under his authority », ce qui leur vaut « the title of the most noble among the Wolofs ». L'auteur ne dit pas de qui il tient ces récits."
+              },
+              {
+                "title": "Dictionary of American Family Names — Ndiaye entry",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.familysearch.org/en/surname?surname=ndiaye",
+                "tier": "unverified",
+                "source_kind": "repository",
+                "notes": "Entrée FamilySearch reproduisant le Dictionary of American Family Names de Patrick Hanks. Elle décrit Ndiaye/N'Diaye comme nom de clan wolof principalement sénégalais, également porté chez les Sérères, et rapporte la tradition de Ndiadiane Ndiaye comme ancêtre des Wolof."
               }
             ]
           }

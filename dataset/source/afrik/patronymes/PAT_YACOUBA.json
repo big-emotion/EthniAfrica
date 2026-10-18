@@ -20,7 +20,10 @@
     {
       "spelling": "Yakouba",
       "attestations": [
-        { "countryId": "NER", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "NER",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -29,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Yacouba est présenté comme une forme de Yaqub employée dans l'Afrique de l'Ouest francophone.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["behindthename-yacouba"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -210,6 +208,26 @@
                 "source_kind": "archive",
                 "page": "p. 572",
                 "notes": "Londres, Longman, Brown, Green, Longmans & Roberts, 1857. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Dans un itinéraire vers le Bauchi : « Yakoba (thus the name is generally pronounced, although more correctly the accent ought to be given to the second syllable, thus, Yakoba, or rather Yakuba) the capital of the province of Bolobolo or Bauchi, founded by Yakub ». Récit d'un voyageur, cité ici pour la forme qu'il écrit."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Yacouba est présenté comme une forme de Yaqub employée dans l'Afrique de l'Ouest francophone.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Yacouba",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/yacouba",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site communautaire consacré aux prénoms, lu le 11 octobre 2026. Elle présente Yacouba comme une forme de Yaqub employée en Afrique de l'Ouest francophone. La page ne cite pas ses sources."
               }
             ]
           }

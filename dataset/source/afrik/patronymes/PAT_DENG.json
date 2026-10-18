@@ -27,13 +27,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Deng est aussi le nom d’une free-divinity dinka que Nikkel associe à la pluie, au tonnerre et aux éclairs. L’identité formelle est établie, mais aucune source consultée ne démontre que chaque nom personnel Deng dérive de ce théonyme ; le lien onomastique reste contested.",
-        "claimStatus": "contested",
-        "sourceRefs": ["nikkel-dinka-christianity-1993"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -205,6 +200,27 @@
                 "source_kind": "academic",
                 "page": "p. 83, 85",
                 "notes": "Thèse de l'University of Edinburgh, 1993, relue dans le PDF intégral du dépôt ERA le 12 octobre 2026. Les numéros de page sont ceux imprimés en haut de chaque page de la thèse. P. 83 : Daniel Sorur, « a Dinka who entered Holy Orders in 1886 », et note 112 : « An alternative Italian spelling is Daniele Surur Pharim Den ». P. 85, note 118 : « Memorie scritte dal R P. Daniele Sorur Pharim Den », Nigrizia V, 1887, p. 146-152. L'article de 1887 n'a pas été lu : la graphie et la date sont celles que Nikkel rapporte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Deng est aussi le nom d’une free-divinity dinka que Nikkel associe à la pluie, au tonnerre et aux éclairs. L’identité formelle est établie, mais aucune source consultée ne démontre que chaque nom personnel Deng dérive de ce théonyme ; le lien onomastique reste contested.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "The Origins and Development of Christianity among the Dinka of Sudan",
+                "author": "Marc R. Nikkel",
+                "year": 1993,
+                "url": "https://era.ed.ac.uk/items/8e0f0fba-5c36-4071-8f28-9168cf2e688f",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 234",
+                "notes": "Thèse de l'University of Edinburgh, 1993, relue dans le PDF intégral du dépôt ERA le 12 octobre 2026. Les numéros de page sont ceux imprimés en haut de chaque page de la thèse. Chapitre sur Abuna Athiaan Deng, poète : « 'Deng' is, undeniably, a personal name, perhaps the most common name for Dinka males, shared by the poet, his father and his ancestors. »"
               }
             ]
           }

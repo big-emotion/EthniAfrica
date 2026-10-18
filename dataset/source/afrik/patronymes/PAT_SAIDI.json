@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une étude des patronymes de Darguina rattache Saidi à la racine arabe s-ʿ-d et le rapproche de Saadi, glossé « mon bonheur, ma chance ». Cette analyse locale ne doit pas être étendue à tous les homographes.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["bejaia-saidi"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -180,6 +175,26 @@
                 "source_kind": "government",
                 "page": "p. 546, 548",
                 "notes": "Compte rendu in extenso de la séance du vendredi 18 juin 1948, numéro 37 du 19 juin 1948. Lu le 12 octobre 2026 sur l'exemplaire numérisé d'archive.org. Pages 546 et 548 : un orateur cite le cas du « capitaine Saïdi Saddok, candidat à Fort-National », arrêté le jour du vote après avoir protesté contre le déroulement du scrutin, pour montrer l'arbitraire de ces condamnations en Algérie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une étude des patronymes de Darguina rattache Saidi à la racine arabe s-ʿ-d et le rapproche de Saadi, glossé « mon bonheur, ma chance ». Cette analyse locale ne doit pas être étendue à tous les homographes.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Étude onomastique des patronymes de la commune de Darguina — Université de Béjaïa",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.univ-bejaia.dz/jspui/bitstream/123456789/20656/1/Etude%20onomastique%20des%20patronymes%20de%20la%20commune%20de%20Darguina.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Mémoire universitaire consulté le 2 septembre 2026. Il propose de relier Saidi à la racine s-ʿ-d parmi les noms étudiés dans une commune algérienne. Cette explication concerne cette commune."
               }
             ]
           }

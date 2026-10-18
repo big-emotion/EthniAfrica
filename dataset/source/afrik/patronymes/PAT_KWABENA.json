@@ -41,13 +41,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "En twi, au Ghana, Kwabena est le nom du garçon né le mardi, Benada ; chaque garçon reçoit d'ordinaire le nom du jour de sa naissance.",
-        "claimStatus": "established",
-        "sourceRefs": ["christaller-1881-twi", "agyekum-2006-akan-names"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -272,6 +267,37 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 269",
                 "notes": "Bâle, Evangelical Missionary Society, 1881. Lu sur l'exemplaire numérisé d'archive.org. Annexe D, p. 662-663 : la liste des sept jours, des noms de garçons et de filles, et l'explication par les génies des jours, que l'auteur présente avec prudence."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "En twi, au Ghana, Kwabena est le nom du garçon né le mardi, Benada ; chaque garçon reçoit d'ordinaire le nom du jour de sa naissance.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "annexe D, p. 662-663",
+                "notes": "Bâle, Evangelical Missionary Society, 1881. Lu sur l'exemplaire numérisé d'archive.org. Annexe D, p. 662-663 : la liste des sept jours, des noms de garçons et de filles, et l'explication par les génies des jours, que l'auteur présente avec prudence."
+              },
+              {
+                "title": "The Sociolinguistic of Akan Personal Names",
+                "author": "Kofi Agyekum",
+                "year": 2006,
+                "url": "https://www.njas.fi/njas/article/download/24/16/38",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 213-214",
+                "notes": "Nordic Journal of African Studies, vol. 15, n° 2, 2006, p. 206-235. Lu le 15 octobre 2026. Page 213 : le nom du jour est appelé kradin, « nom de l'âme ». Page 214 : le tableau des noms de jour en twi et en fante. Page 215 : les surnoms d'éloge de chaque jour."
               }
             ]
           }

@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -65,10 +66,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "la recherche web combinant « Chipande », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la lecture de « Violence and the Voice Note: The War for Cabo Delgado in Social Media (Mozambique, 2020) » et « Universidade Alberto Chipande — General Alberto Chipande » n'ont livré ni tradition attribuable, ni chronique dédiée, ni reconstruction linguistique établissant l'origine de Chipande. Les attestations géographiques ou individuelles trouvées ne sont pas transformées en étymologie."
-    },
     {
       "fieldPath": "alliances",
       "reason": "la recherche web combinant « Chipande », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la lecture de « Violence and the Voice Note: The War for Cabo Delgado in Social Media (Mozambique, 2020) » et « Universidade Alberto Chipande — General Alberto Chipande » n'ont identifié aucune paire d'alliance ou de parenté à plaisanterie reliant Chipande à un autre nom documenté ici."

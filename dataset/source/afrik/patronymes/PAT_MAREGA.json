@@ -31,18 +31,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une liste communautaire soninké attache à Marega deux seconds noms (jammu kare), Djadja et Bidanesse, et des contributeurs d'un forum communautaire soninké le rangent parmi les noms d'origine soninké.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["soninkara-noms-soninke", "soninkara-forum-noms-soninke"]
-      },
-      {
-        "claim": "Les mêmes contributeurs rappellent que beaucoup de noms portés aujourd'hui par des Soninké ne sont pas soninké à l'origine : le rattachement de Marega aux Soninké reste une attribution communautaire, sans autre source.",
-        "claimStatus": "contested",
-        "sourceRefs": ["soninkara-forum-noms-soninke"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -182,6 +172,36 @@
                 "tier": "unverified",
                 "source_kind": "community",
                 "notes": "Page du portail communautaire soninké publiée le 8 avril 2007, lue le 11 octobre 2026 dans une copie archivée du 12 décembre 2024. Liste non exhaustive, constituée par les internautes du portail, des seconds noms (jammu kare) attribués aux noms de famille soninké ; le jammu kare y est défini comme le second nom qui s'ajoute à un nom de famille et lui sert d'identifiant, surtout lors des salutations. La liste ne dit rien de l'origine des noms. On y lit « Marega » deux fois, avec les jammu kare « Djadja » et « Bidanesse »."
+              },
+              {
+                "title": "Les noms de Famille d'Origine Soninké",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.soninkara.com/forums/de-l-origine-des-soninke/les-noms-de-famille-d-origine-soninke-530.html",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Fil de discussion du forum du portail communautaire Soninkara.com, ouvert en décembre 2006 et poursuivi jusqu'en 2011 : des contributeurs, sous pseudonyme, y dressent des listes de noms qu'ils tiennent pour soninké. Les listes se recoupent en partie et se contredisent : plusieurs intervenants rappellent que beaucoup de noms portés aujourd'hui par des Soninké ne sont pas soninké à l'origine, et l'un d'eux demande de distinguer les noms soninké des noms d'origine soninké. Consulté dans une copie archivée de 2024."
+              }
+            ],
+            "claimStatus": "claimed"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Les mêmes contributeurs rappellent que beaucoup de noms portés aujourd'hui par des Soninké ne sont pas soninké à l'origine : le rattachement de Marega aux Soninké reste une attribution communautaire, sans autre source.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "Les noms de Famille d'Origine Soninké",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.soninkara.com/forums/de-l-origine-des-soninke/les-noms-de-famille-d-origine-soninke-530.html",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Fil de discussion du forum du portail communautaire Soninkara.com, ouvert en décembre 2006 et poursuivi jusqu'en 2011 : des contributeurs, sous pseudonyme, y dressent des listes de noms qu'ils tiennent pour soninké. Les listes se recoupent en partie et se contredisent : plusieurs intervenants rappellent que beaucoup de noms portés aujourd'hui par des Soninké ne sont pas soninké à l'origine, et l'un d'eux demande de distinguer les noms soninké des noms d'origine soninké. Consulté dans une copie archivée de 2024."
               }
             ]
           }

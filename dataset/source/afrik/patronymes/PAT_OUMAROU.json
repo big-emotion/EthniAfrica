@@ -23,18 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "La graphie Oumarou est présentée comme une forme de l'arabe Umar employée dans l'Afrique de l'Ouest sous influence française. Ryan atteste Umaru dans la nomenclature personnelle haoussa et l'identifie au deuxième calife ; aucune étude consultée ne documente directement le passage graphique à Oumarou.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["btn-oumarou", "ryan-1981-oumarou"]
-      },
-      {
-        "claim": "Dans le système haoussa décrit par Chamo, le nom personnel du père ou parfois du grand-père fournit un élément du nom sans former un patronyme héréditaire stable.",
-        "claimStatus": "established",
-        "sourceRefs": ["chamo-2018-oumarou"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -195,6 +185,56 @@
                 "source_kind": "academic",
                 "page": "p. 293",
                 "notes": "Paris, Félix Alcan, 1895 ; lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Au chapitre « Séjour à Kano », l'officier français nomme « Lam-Dioulbé Oumarou », le commandeur des croyants de Sokoto, mort fin mars 1891. Auteur de l'époque coloniale, cité ici pour la forme qu'il écrit."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La graphie Oumarou est présentée comme une forme de l'arabe Umar employée dans l'Afrique de l'Ouest sous influence française. Ryan atteste Umaru dans la nomenclature personnelle haoussa et l'identifie au deuxième calife ; aucune étude consultée ne documente directement le passage graphique à Oumarou.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Oumarou — Behind the Name",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.behindthename.com/name/oumarou",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page communautaire consultée directement. Elle présente Oumarou comme une forme d'Umar employée en Afrique de l'Ouest francophone et cite Umaru parmi les formes haoussa. Elle n'attribue pas spécifiquement la graphie exacte au peuple haoussa."
+              },
+              {
+                "title": "An Introduction to Hausa Personal Nomenclature",
+                "author": "Pauline M. Ryan",
+                "year": 1981,
+                "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 143",
+                "notes": "Names 29(2), 1981, p. 139-164 ; PDF intégral relu le 11 octobre 2026. Le tableau I range parmi les noms musulmans donnés à la cérémonie du nom Umaru, « Companion of the Prophet and second Caliph ». Le tableau n'atteste pas la forme française Oumarou."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans le système haoussa décrit par Chamo, le nom personnel du père ou parfois du grand-père fournit un élément du nom sans former un patronyme héréditaire stable.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Language and Identity in Africa: The Use of Place Names as Part of a Person’s Name in Hausa",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://auadamu.com/phocadownload/Books/%5B2018%5D%20Festschrift%20in%20Honour%20of%20Abdalla%20Uba%20Adamu%20-%20Media%20-Knowledge%20Transfer%20and%20African%20Identity.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Isa Yusuf Chamo, 2018, pp. 251-252 du chapitre consulté dans le volume intégral. Établit le fonctionnement non héréditaire du patronyme haoussa ; ne traite pas l'étymologie d'Oumarou."
               }
             ]
           }

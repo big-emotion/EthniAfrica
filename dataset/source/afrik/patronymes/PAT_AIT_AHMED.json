@@ -11,7 +11,10 @@
     {
       "spelling": "Aït Ahmed",
       "attestations": [
-        { "countryId": "MAR", "sourceRefs": ["afrik-candidate-queue"] },
+        {
+          "countryId": "MAR",
+          "sourceRefs": ["afrik-candidate-queue"]
+        },
         {
           "countryId": "DZA",
           "sourceRefs": ["ait-ahmed-ummto", "ait-ahmed-bnf"]
@@ -21,7 +24,10 @@
     {
       "spelling": "Ait Ahmed",
       "attestations": [
-        { "countryId": "MAR", "sourceRefs": ["afrik-candidate-queue"] },
+        {
+          "countryId": "MAR",
+          "sourceRefs": ["afrik-candidate-queue"]
+        },
         {
           "countryId": "DZA",
           "sourceRefs": ["ait-ahmed-ummto", "ait-ahmed-bnf"]
@@ -31,7 +37,10 @@
     {
       "spelling": "At Ḥmed",
       "attestations": [
-        { "countryId": "DZA", "sourceRefs": ["ait-ahmed-ummto"] }
+        {
+          "countryId": "DZA",
+          "sourceRefs": ["ait-ahmed-ummto"]
+        }
       ]
     }
   ],
@@ -40,13 +49,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le mémoire de l’UMMTO analyse At Ḥmed comme « les enfants d’Ahmed » et rattache Ahmed à la racine arabe ḤMD, avec le sens « louer, célébrer ».",
-        "claimStatus": "established",
-        "sourceRefs": ["ait-ahmed-ummto"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -188,6 +192,27 @@
                 "source_kind": "academic",
                 "page": "p. 272-273",
                 "notes": "Paris, 1872 ; exemplaire numérisé d'archive.org (tome I), lu le 13 octobre 2026. Pages 272-273 : le cercle de Drâ el-Mizan, « Confédération des Aït Sedka. Sept tribus : Iouadhien, Aoukdal, Aït Ahmed, Aït Chebla… », puis « Tribu des Aït Ahmed » avec ses villages. Page 247 : un village « Aït Ahmed (les enfants d'Ahmed) » ; les auteurs glosent de même d'autres noms en Aït, comme « Aït Hammou (les enfants de Hammou) ». Les auteurs sont un général d'état-major et un magistrat de l'administration française de l'Algérie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le mémoire de l’UMMTO analyse At Ḥmed comme « les enfants d’Ahmed » et rattache Ahmed à la racine arabe ḤMD, avec le sens « louer, célébrer ».",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Les noms des lieux et des villages de deux daïras, Iferhounene et Aïn El Hammam : étude sémantique et morphologique",
+                "author": "Aït Benali Azouaou et Ben Boussad Karima",
+                "year": 2020,
+                "url": "https://dspace.ummto.dz/bitstreams/7a6caabf-eff9-42d6-b9ff-50540cc1e417/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 39-40",
+                "notes": "Mémoire de master, Université Mouloud Mammeri de Tizi-Ouzou, 2019-2020, lu en texte intégral le 13 octobre 2026. Les noms composés relevés comprennent At Aḥmed, rangé parmi les noms formés d'une particule et d'un nom. Pages 39-40, tableau d'analyse : « Ait Ahmed (At Ḥmed) », racine ḤMD, « l'anthroponyme arabe, venant de la racine ḤMD signifiant louer, célébrer » ; glose « les enfants d'Ahmed ». Le mémoire étudie des noms de lieux, non des noms de famille."
               }
             ]
           }

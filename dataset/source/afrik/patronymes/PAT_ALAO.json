@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "YorubaNames classe Àlàó comme cognomen/oríkì et propose l'analyse à-là-wó, « personne destinée à diviser et vaincre ses ennemis ».",
-        "claimStatus": "claimed",
-        "sourceRefs": ["yorubanames-alao"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -102,5 +97,40 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "la page YorubaNames consultée ne permet pas de déterminer si l'emploi documenté désigne un individu, une charge, une maison ou un lignage ; les recherches ciblées sur Alao n'ont pas livré de source décisive."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Les sources réunies dans ce dossier racontent l’histoire du nom Alao.",
+    "originExplained": true,
+    "names": [
+      {
+        "nameText": "Alao",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "YorubaNames classe Àlàó comme cognomen/oríkì et propose l'analyse à-là-wó, « personne destinée à diviser et vaincre ses ennemis ».",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Àlàó — YorubaNames",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.yorubaname.com/entries/ALAO?lang=yo",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page de la base collaborative YorubaNames consultée directement pour Alao. Elle fournit la forme tonale, une glose et une segmentation morphologique ; son contenu communautaire est conservé au niveau « unverified »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -32,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "La base du musée ANU décrit Al Fassi et Fassi comme des variantes d’un nom toponymique arabe signifiant « de Fès », dans le contexte des familles juives. Elle précise qu’un nom de lieu ne prouve pas nécessairement une origine directe.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["anu-fassi"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -192,6 +187,26 @@
                 "source_kind": "encyclopedia",
                 "page": "vol. 1, p. 375",
                 "notes": "The Jewish Encyclopedia, vol. 1, New York et Londres, Funk and Wagnalls, 1901, p. 375-377. Lu le 14 octobre 2026 dans l'édition en ligne, qui indique la pagination imprimée. Première phrase de la notice : « Eminent Talmudist ; born in 1013 at Kala't ibn Ḥamad, a village near Fez, in North Africa (whence his surname, which is sometimes attached also to Judah Ḥayyug, the grammarian) ; died at Lucena, 1103. » La notice place ce village près de Fès ; le projet n'a pas lu d'autre source sur l'endroit."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La base du musée ANU décrit Al Fassi et Fassi comme des variantes d’un nom toponymique arabe signifiant « de Fès », dans le contexte des familles juives. Elle précise qu’un nom de lieu ne prouve pas nécessairement une origine directe.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Jewish community of Fez — ANU Museum of the Jewish People",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://dbs.anumuseum.org.il/skn/en/c6/e125714/Place/Fez",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice muséale consultée le 2 septembre 2026. Elle analyse les variantes Alfasi, Al Fassi et Fassi comme toponymiques de Fès dans un contexte juif, en avertissant que le rapport au lieu peut être indirect."
               }
             ]
           }

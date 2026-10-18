@@ -23,18 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Ryan atteste Sani comme nom attribué au deuxième enfant lorsque plusieurs membres d'une fratrie reçoivent le même nom islamique, notamment Muhammadu. La page haoussa consacrée au nom le rapproche de l'arabe thānin, « deuxième », et décrit le même usage ordinal.",
-        "claimStatus": "established",
-        "sourceRefs": ["ryan-1981-sani", "btn-sani-hausa"]
-      },
-      {
-        "claim": "Dans le système haoussa décrit par Chamo, le nom personnel du père est couramment placé après le prénom de l'enfant sans devenir un nom de famille héréditaire stable.",
-        "claimStatus": "established",
-        "sourceRefs": ["chamo-2018-sani"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -201,6 +191,56 @@
                 "tier": "official",
                 "source_kind": "government",
                 "notes": "Communiqué de la présidence du Nigeria daté du 18 février 2026, lu le 11 octobre 2026. Il écrit le nom complet Uba Sani, avec Sani en dernière position."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Ryan atteste Sani comme nom attribué au deuxième enfant lorsque plusieurs membres d'une fratrie reçoivent le même nom islamique, notamment Muhammadu. La page haoussa consacrée au nom le rapproche de l'arabe thānin, « deuxième », et décrit le même usage ordinal.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "An Introduction to Hausa Personal Nomenclature",
+                "author": "Pauline M. Ryan",
+                "year": 1981,
+                "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 143",
+                "notes": "Names, vol. 29, no 2, 1981, p. 139-164. Lu dans le PDF intégral le 11 octobre 2026. L'étude porte sur les noms des Haoussa du nord du Nigeria, musulmans pour la plupart ; la majorité des noms donnés lors de la cérémonie du nom y sont tirés du Coran. Tableau II : noms des garçons d'une même famille qui partagent le nom du Livre Mohammed ; « Second child — Sani ». Ces noms remplacent le nom du Livre."
+              },
+              {
+                "title": "Sani (Hausa) — Behind the Name",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.behindthename.com/name/sani-2",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page communautaire consultée directement. Elle dérive Sani de l'arabe thānin, « deuxième », et décrit son ajout au nom du deuxième membre d'une fratrie portant le même prénom. Ryan recoupe indépendamment l'usage ordinal."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans le système haoussa décrit par Chamo, le nom personnel du père est couramment placé après le prénom de l'enfant sans devenir un nom de famille héréditaire stable.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Language and Identity in Africa: The Use of Place Names as Part of a Person’s Name in Hausa",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://auadamu.com/phocadownload/Books/%5B2018%5D%20Festschrift%20in%20Honour%20of%20Abdalla%20Uba%20Adamu%20-%20Media%20-Knowledge%20Transfer%20and%20African%20Identity.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Isa Yusuf Chamo, 2018, pp. 251-252 du chapitre consulté dans le volume intégral. Établit le fonctionnement non héréditaire du patronyme haoussa ; ne traite pas l'étymologie de Sani."
               }
             ]
           }

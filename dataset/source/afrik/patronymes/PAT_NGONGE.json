@@ -21,39 +21,10 @@
   "transmissionMode": "patrilineal",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [
-      {
-        "claim": "Le clan de la Loutre fait remonter son origine à Mwanga Kisole, donné pour katikkiro — premier ministre — de Kintu, et que ce roi aurait tué dans un accès de colère. À sa mort son fantôme prit un médium ; il fut divinisé et un temple lui fut bâti sur la colline de Nsoke, desservi par un prêtre du clan.",
-        "claimStatus": "claimed",
-        "griot": "Les chefs de clan et officiants baganda réunis pour Roscoe par Sir Apolo Kagwa, katikkiro du Buganda",
-        "transcription": "John Roscoe, The Baganda, Macmillan, 1911, chapitre VI « The Clans and their Totems ». Roscoe écrit dans sa préface avoir reçu « the principal men from each clan » plusieurs semaines durant, par l'entremise de Kagwa, et avoir consigné leurs récits ; les sections claniques rapportent donc ce que chaque clan dit de lui-même, au style indirect (« they assert », « they trace their origin to »).",
-        "sourceRefs": ["roscoe-1911-baganda"]
-      }
-    ],
-    "writtenChronicles": [
-      {
-        "claim": "Le totem principal (omuziro) de ce clan est la loutre. Clan Banansangwa, l'un des cinq clans trouvés sur place à l'arrivée de Kintu.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["roscoe-1911-baganda", "buganda-heritage-clans"]
-      },
-      {
-        "claim": "Le totem secondaire (akabbiro) de ce clan est la genette (kasimba), au rang nº 4 de la liste de Roscoe.",
-        "claimStatus": "established",
-        "sourceRefs": ["roscoe-1911-baganda"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'ekika ganda est un clan totémique : chaque clan porte un totem principal (omuziro) et un totem secondaire (akabbiro), et le nom du clan est celui du totem.",
-        "claimStatus": "established",
-        "sourceRefs": ["roscoe-1911-baganda"]
-      },
-      {
-        "claim": "Le clan (ekika) se subdivise en branches (essiga) puis en sous-branches (enda), et s'ancre sur des tenures funéraires (obutaka) : trois générations inhumées en un lieu y fixent le droit du lignage, que le Kabaka lui-même se gardait de contester. La tête de clan porte un titre, et non un nom : le titre est celui du premier détenteur de la charge et passe au successeur.",
-        "claimStatus": "established",
-        "sourceRefs": ["roscoe-1911-baganda"]
-      }
-    ]
+    "oralTraditions": [],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -213,6 +184,121 @@
                 "carrier": "Les chefs du clan de la Loutre réunis par Apolo Kagwa",
                 "place": "Buganda",
                 "notes": "Récit transcrit par John Roscoe, The Baganda, 1911, p. 143 : « The Otter clan say that their forefather was Mwanga Kisole », katikkiro de Kintu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le clan de la Loutre fait remonter son origine à Mwanga Kisole, donné pour katikkiro — premier ministre — de Kintu, et que ce roi aurait tué dans un accès de colère. À sa mort son fantôme prit un médium ; il fut divinisé et un temple lui fut bâti sur la colline de Nsoke, desservi par un prêtre du clan.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "The Baganda: An Account of their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 138",
+                "notes": "Londres, Macmillan, 1911 ; lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Missionnaire anglican ; les chefs de clan lui ont été présentés par Apolo Kagwa, premier ministre du Buganda. Liste des clans et de leurs totems : « 4. The Otter (Ngonge) clan had the Genet (Kasimba) for its second totem ».\nJohn Roscoe, The Baganda, Macmillan, 1911, chapitre VI « The Clans and their Totems ». Roscoe écrit dans sa préface avoir reçu « the principal men from each clan » plusieurs semaines durant, par l'entremise de Kagwa, et avoir consigné leurs récits ; les sections claniques rapportent donc ce que chaque clan dit de lui-même, au style indirect (« they assert », « they trace their origin to »)."
+              }
+            ],
+            "carrier": "Les chefs de clan et officiants baganda réunis pour Roscoe par Sir Apolo Kagwa, katikkiro du Buganda"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le totem principal (omuziro) de ce clan est la loutre. Clan Banansangwa, l'un des cinq clans trouvés sur place à l'arrivée de Kintu.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "The Baganda: An Account of their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 138",
+                "notes": "Londres, Macmillan, 1911 ; lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Missionnaire anglican ; les chefs de clan lui ont été présentés par Apolo Kagwa, premier ministre du Buganda. Liste des clans et de leurs totems : « 4. The Otter (Ngonge) clan had the Genet (Kasimba) for its second totem »."
+              },
+              {
+                "title": "Clans",
+                "author": "Buganda Heritage and Information Centre",
+                "year": null,
+                "url": "https://www.bugandaheritage.org.uk/culture/clans",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site patrimonial ganda, relu le 11 octobre 2026. Il écrit Nggonge et range ce clan parmi les cinq clans d'origine, les Banansangwa : Ffumbe, Lugave, Nggonge, Njaza et Nnyonyi."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le totem secondaire (akabbiro) de ce clan est la genette (kasimba), au rang nº 4 de la liste de Roscoe.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "The Baganda: An Account of their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 138",
+                "notes": "Londres, Macmillan, 1911 ; lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Missionnaire anglican ; les chefs de clan lui ont été présentés par Apolo Kagwa, premier ministre du Buganda. Liste des clans et de leurs totems : « 4. The Otter (Ngonge) clan had the Genet (Kasimba) for its second totem »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'ekika ganda est un clan totémique : chaque clan porte un totem principal (omuziro) et un totem secondaire (akabbiro), et le nom du clan est celui du totem.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "The Baganda: An Account of their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 138",
+                "notes": "Londres, Macmillan, 1911 ; lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Missionnaire anglican ; les chefs de clan lui ont été présentés par Apolo Kagwa, premier ministre du Buganda. Liste des clans et de leurs totems : « 4. The Otter (Ngonge) clan had the Genet (Kasimba) for its second totem »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le clan (ekika) se subdivise en branches (essiga) puis en sous-branches (enda), et s'ancre sur des tenures funéraires (obutaka) : trois générations inhumées en un lieu y fixent le droit du lignage, que le Kabaka lui-même se gardait de contester. La tête de clan porte un titre, et non un nom : le titre est celui du premier détenteur de la charge et passe au successeur.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "The Baganda: An Account of their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 138",
+                "notes": "Londres, Macmillan, 1911 ; lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Missionnaire anglican ; les chefs de clan lui ont été présentés par Apolo Kagwa, premier ministre du Buganda. Liste des clans et de leurs totems : « 4. The Otter (Ngonge) clan had the Genet (Kasimba) for its second totem »."
               }
             ]
           }

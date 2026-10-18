@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [],
@@ -64,10 +65,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Les recherches exactes « Yalinga patronyme », « Yalinga surname », « Yalinga onomastique », « Yalinga anthroponymie » et « Yalinga étymologie » dans les catalogues universitaires, Persée, OpenEdition, Google Scholar et les résultats centrafricains n'ont livré ni récit d'origine, ni chronique nominative, ni reconstruction linguistique."
-    },
     {
       "fieldPath": "peoples",
       "reason": "Les recherches ciblées sur Yalinga et les Banda n'ont trouvé qu'un toponyme centrafricain ; aucune source dédiée n'a confirmé l'association à les Banda, qui provenait seulement de la file de candidats et a été retirée."

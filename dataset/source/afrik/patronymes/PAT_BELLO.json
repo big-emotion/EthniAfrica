@@ -23,18 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Ryan atteste Bello dans la nomenclature masculine haoussa, le décrit comme un emprunt au peul et lui attribue le sens « auxiliaire de l'islam ». Une source communautaire consacrée au nom confirme les usages peul et haoussa mais ne donne « auxiliaire » que comme étymologie possible ; la reconstruction est donc conservée comme proposition.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["ryan-1981-bello", "btn-bello"]
-      },
-      {
-        "claim": "Pour l'association haoussa de cette fiche, Chamo décrit un système où le nom du père sert de second élément sans devenir un nom de famille héréditaire stable.",
-        "claimStatus": "established",
-        "sourceRefs": ["chamo-2018-bello"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -234,6 +224,56 @@
                 "source_kind": "archive",
                 "page": "p. ix et p. 246",
                 "notes": "Londres, John Murray, 1826, deuxième édition, tome I. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Préface de Denham, p. ix : « the dominions of the sultan Bello ». Récit de Denham, p. 246 : un informateur venu de Tombouctou dit que les gens de la route « are very much afraid of Bello, who protects merchants ». Récit de voyageurs britanniques, cité ici pour la forme qu'ils écrivent."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Ryan atteste Bello dans la nomenclature masculine haoussa, le décrit comme un emprunt au peul et lui attribue le sens « auxiliaire de l'islam ». Une source communautaire consacrée au nom confirme les usages peul et haoussa mais ne donne « auxiliaire » que comme étymologie possible ; la reconstruction est donc conservée comme proposition.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "An Introduction to Hausa Personal Nomenclature",
+                "author": "Pauline M. Ryan",
+                "year": 1981,
+                "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 141-142, 161",
+                "notes": "Revue Names, vol. 29, n° 2, 1981, p. 139-164. Lu dans le PDF intégral le 11 octobre 2026. Pages 141-142 : les noms musulmans donnés à la cérémonie du nom ; le tableau I range Bello parmi les noms d'hommes. Page 161 : le tableau XIV donne les formes Bello et Ballo."
+              },
+              {
+                "title": "Bello",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/bello",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site communautaire consacré aux prénoms, lu le 11 octobre 2026. Elle donne le nom comme venant « peut-être » du peul ballo, « helper ». La page ne cite pas ses sources."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Pour l'association haoussa de cette fiche, Chamo décrit un système où le nom du père sert de second élément sans devenir un nom de famille héréditaire stable.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Language and Identity in Africa: The Use of Place Names as Part of a Person’s Name in Hausa",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://auadamu.com/phocadownload/Books/%5B2018%5D%20Festschrift%20in%20Honour%20of%20Abdalla%20Uba%20Adamu%20-%20Media%20-Knowledge%20Transfer%20and%20African%20Identity.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Isa Yusuf Chamo, 2018, pp. 251-252 du chapitre consulté dans le volume intégral. Établit le fonctionnement non héréditaire du patronyme haoussa ; la source ne décrit pas la transmission du nom Bello dans les communautés peules."
               }
             ]
           }

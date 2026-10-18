@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [],
@@ -59,10 +60,6 @@
     {
       "fieldPath": "peoples",
       "reason": "Le lien avec les Oromo ne reposait que sur le relevé de couverture du projet, qui ne cite aucune source. Les sources lues décrivent Abera comme un nom personnel éthiopien, sans le rattacher à un peuple. Le lien est retiré."
-    },
-    {
-      "fieldPath": "origin",
-      "reason": "Les recherches « Abera Oromo name/etymology », les études de morphosémantique des noms oromo et la page institutionnelle d'Arba Minch University ont été examinées ; aucune source savante consultable n'a analysé Abera comme nom oromo."
     },
     {
       "fieldPath": "alliances",

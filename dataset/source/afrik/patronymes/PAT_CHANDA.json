@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Forebears reproduit trois formulations attribuées au même ouvrage zambien de 2019 : « esprit ancestral », personne dotée d'un esprit d'influence et de pouvoir, ou personne qui diffuse son influence. Faute d'accès à l'ouvrage primaire et face à ces formulations divergentes, la glose reste revendiquée.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["forebears-chanda"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -213,6 +208,26 @@
                 "source_kind": "archive",
                 "page": "p. 179",
                 "notes": "Londres, Edward Arnold, 1911 ; lu le 18 octobre 2026 dans la numérisation d'Internet Archive, le numéro de page imprimé étant vérifié sur l'image. Les auteurs sont deux administrateurs britanniques de la Rhodésie du Nord, cités ici pour ce qu'ils rapportent. Page 179 : si les esprits des parents morts récemment n'approuvent pas un nom, « the name is taken from the limited list of great chiefs or chieftainesses, so we find even in the many villages many little 'Mulengas,' 'Chandas,' 'Mutales,' and 'Bwadyas,' and the parents are henceforth known by the name of their child, e.g. Sichanda, the father, Nachanda, the mother, of the baby Chanda »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Forebears reproduit trois formulations attribuées au même ouvrage zambien de 2019 : « esprit ancestral », personne dotée d'un esprit d'influence et de pouvoir, ou personne qui diffuse son influence. Faute d'accès à l'ouvrage primaire et face à ces formulations divergentes, la glose reste revendiquée.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Chanda Surname Origin, Meaning & Last Name History",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://forebears.io/surnames/chanda",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page dédiée consultée intégralement. Elle attribue à « The Names of Zambia » (Simboma Mubita Lukama, 2019) trois formulations voisines mais non identiques, qualifie Chanda de patronyme bemba et enregistre sa plus forte densité en Zambie. L'ouvrage cité n'a pas été consulté ; les contributions libres et toute inférence depuis la seule distribution ont été écartées."
               }
             ]
           }

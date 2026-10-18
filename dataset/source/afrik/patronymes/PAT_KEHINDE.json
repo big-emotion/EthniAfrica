@@ -36,13 +36,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Kehinde est attribué au second des jumeaux : le manuel universitaire précise que celui-ci est tenu pour l'aîné dans la convention yoruba, tandis que YorubaNames analyse kẹ́hìn-dé comme « celui ou celle qui arrive en second ».",
-        "claimStatus": "established",
-        "sourceRefs": ["yorubanames-kehinde", "merryfield-1989-yoruba"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -254,6 +249,36 @@
                 "source_kind": "academic",
                 "page": "p. 187",
                 "notes": "Londres, Macmillan, 1910 ; exemplaire numérisé sur archive.org. Page 187, tableau du chapitre XVI (« Shango, Oya, Oba, Oshun »), aux colonnes « Name », « Town », « Sacrifice », « Ewos or Ewaws » : sous le titre « Ibeji », la ligne « Kaiwo », ville « Ibadan », puis la ligne « Kainde », ville « Oyan », offrandes « Ekuru beans, all fried things », interdits « Nut oil, Ire (Funtumia elastica) ». Dennett ne dit pas que Kainde est le même nom que Kehinde. Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Kehinde est attribué au second des jumeaux : le manuel universitaire précise que celui-ci est tenu pour l'aîné dans la convention yoruba, tandis que YorubaNames analyse kẹ́hìn-dé comme « celui ou celle qui arrive en second ».",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Kẹ́hìndé — YorubaNames",
+                "author": "YorubaNames",
+                "year": null,
+                "url": "https://www.yorubaname.com/entries/kehinde",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Base collaborative de noms yoruba, lue le 13 octobre 2026. Elle donne la forme tonale Kẹ́hìndé, le sens « One who comes second », la précision que le nom est donné au second des jumeaux, la décomposition kẹ́hìn-dé (kẹ́hìn, « comes last », dé, « arrive, come ») et les variantes Kẹ́yìndé, Ọmọ́kẹhìndé et Ọlákẹ́hìndé. Contenu communautaire, sans date de rédaction."
+              },
+              {
+                "title": "Lessons from Africa: A Supplement to Middle School Courses in World Cultures, Global Studies, and World Geography",
+                "author": "Merry M. Merryfield (dir.)",
+                "year": 1989,
+                "url": "https://files.eric.ed.gov/fulltext/ED304395.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 47",
+                "notes": "ERIC Clearinghouse et Social Studies Development Center, Indiana University, 1989, leçon 5. Lu dans le PDF intégral le 13 octobre 2026. Le tableau « Some Yoruba Names and Their Meanings », attribué à E. B. Ogundimu, donne : « Kehinde, Kehinde, Second of twin babies, regarded as the elder child by Yoruba »."
               }
             ]
           }

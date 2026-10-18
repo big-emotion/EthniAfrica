@@ -23,18 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Kebreab procède du guèze kəbrä ab, « gloire du père » ; le nom est porté comme prénom et devient patronyme à la génération suivante.",
-        "claimStatus": "established",
-        "sourceRefs": ["leslau-1987-geez", "familysearch-ethiopia-naming"]
-      },
-      {
-        "claim": "Le système habesha ne comporte pas de nom de famille héréditaire : le second élément est le nom personnel du père, celui du grand-père servant à désambiguïser. Il change donc à chaque génération.",
-        "claimStatus": "established",
-        "sourceRefs": ["cultural-atlas-ethiopian-naming"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -174,6 +164,56 @@
                 "source_kind": "academic",
                 "page": "p. 2 et p. 274",
                 "notes": "Wiesbaden, Otto Harrassowitz, 1987. Lu le 11 octobre 2026 dans une copie non officielle déposée sur Internet Archive par un particulier. Page 2 : ab, « father, forefather, ancestor » ; page 274 : kabr, « honor, glory, reverence, prestige »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Kebreab procède du guèze kəbrä ab, « gloire du père » ; le nom est porté comme prénom et devient patronyme à la génération suivante.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Comparative Dictionary of Geʿez (Classical Ethiopic)",
+                "author": "Wolf Leslau",
+                "year": 1987,
+                "url": "https://archive.org/details/leslau-comparative-dictionary-of-geez-1987",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2 et p. 274",
+                "notes": "Wiesbaden, Otto Harrassowitz, 1987. Lu le 11 octobre 2026 dans une copie non officielle déposée sur Internet Archive par un particulier. Page 2 : ab, « father, forefather, ancestor » ; page 274 : kabr, « honor, glory, reverence, prestige »."
+              },
+              {
+                "title": "Ethiopia Naming Customs",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.familysearch.org/en/wiki/Ethiopia_Naming_Customs",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Wiki généalogique de FamilySearch. Contributif : cité pour les éléments guèzes Gäbrä (« serviteur de ») et Wäldä (« fils de »), à recouper sur un dictionnaire de guèze."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le système habesha ne comporte pas de nom de famille héréditaire : le second élément est le nom personnel du père, celui du grand-père servant à désambiguïser. Il change donc à chaque génération.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Ethiopian Culture — Naming",
+                "author": "Nina Evason",
+                "year": 2018,
+                "url": "https://culturalatlas.sbs.com.au/ethiopian-culture/ethiopian-culture-naming",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Cultural Atlas, publié par SBS, le radiodiffuseur public australien ; notice de Nina Evason, 2018, lue le 11 octobre 2026. Elle dit qu'en Éthiopie un nom se compose du nom personnel suivi du nom personnel du père, et qu'il n'y a pas de nom de famille."
               }
             ]
           }

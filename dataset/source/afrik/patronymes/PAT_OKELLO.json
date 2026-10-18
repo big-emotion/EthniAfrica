@@ -22,13 +22,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Okello est documenté comme le nom personnel masculin de l’enfant né immédiatement après des jumeaux.",
-        "claimStatus": "established",
-        "sourceRefs": ["amone-acholi-naming-2014"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -188,6 +183,27 @@
                 "source_kind": "academic",
                 "page": "p. 152",
                 "notes": "Londres, T. Fisher Unwin, 1923. Page 152 : tableau des noms de jumeaux, « One male, one female. — Name of elder : Opio or Okelo ; name of younger : Achyen ». Administrateur colonial britannique, cité pour ce qu'il écrit des Langi. Numérisation de la Digital Library of India hébergée par Internet Archive ; page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Okello est documenté comme le nom personnel masculin de l’enfant né immédiatement après des jumeaux.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Identity, Memory and Gender in Child Naming Among the Acholi People of Northern Uganda",
+                "author": "Charles Amone",
+                "year": 2014,
+                "url": "https://ijournals.in/wp-content/uploads/2017/07/IJSRC-2505.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 20",
+                "notes": "International Journal of Social Relevance & Concern 2(5), 2014, p. 17-24. Tableau des noms liés à des naissances hors norme (jok) : Okello/Akello, « Follower of twins » ; Odong/Adong, « Second follower of twins ». Historien de l'université de Gulu. Texte du PDF lu en entier. Lu le 13 octobre 2026."
               }
             ]
           }

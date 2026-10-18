@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une étude sur les noms de famille de Yakouren propose de relier Amara à la racine arabe /ʕmr/, « remplir », avec le sens de « ceux qui peuplent une maison ou un endroit ». Cette explication concerne les noms étudiés dans cette région. Elle ne permet pas de donner la même origine à tous les Amara.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["ummto-amara-yakouren"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -267,6 +262,27 @@
                 "source_kind": "academic",
                 "page": "p. 238",
                 "notes": "Paris, 1872 ; exemplaire numérisé d'archive.org (tome I), page lue sur l'image de la page imprimée. Page 238, cercle de Fort-Napoléon, tribu des Irdjen : « Tala Amara (la fontaine d'Amara) », 130 habitants. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une étude sur les noms de famille de Yakouren propose de relier Amara à la racine arabe /ʕmr/, « remplir », avec le sens de « ceux qui peuplent une maison ou un endroit ». Cette explication concerne les noms étudiés dans cette région. Elle ne permet pas de donner la même origine à tous les Amara.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Analyse morphologique et sémantique des noms de familles de la région de Yakouren, Tizi-Ouzou",
+                "author": "Lamia Ikhlef et Lilia Hadj Ahmed",
+                "year": 2021,
+                "url": "https://dspace.ummto.dz/server/api/core/bitstreams/28e613b9-203f-44ed-bcd8-210ba34f636f/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 29",
+                "notes": "Mémoire de master, Université Mouloud Mammeri de Tizi-Ouzou, département de langue et culture amazighes, 2020-2021, dirigé par Rachida Mohammedi ; texte intégral lu, pages numérotées de l'imprimé. Page 29 (p. 33 du fichier PDF) : « AMARA / ƐMARA », anthroponyme « de souche arabe » construit sur la racine /ɛmr/, qui signifie « remplir » (Dallet, 1982, p. 990) ; « Nous pouvons interpréter /AMARA, AMARENE et AMEUR/ par « ceux qui peuplent une maison ou un endroit »). Lu le 14 octobre 2026."
               }
             ]
           }

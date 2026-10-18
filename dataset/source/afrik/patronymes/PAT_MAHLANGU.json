@@ -22,13 +22,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "South African History Online rapporte qu'au XVIIIe siècle, après le règne de Sindeni, son fils Mahlangu lui succéda et que la famille régnante ndébélé, auparavant appelée Mdungwa, devint alors connue sous le nom de Mahlangu. La source indique que les raisons du changement dans la ligne de succession ne sont pas connues.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["saho-ndebele-mahlangu"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -133,7 +128,8 @@
                 "source_kind": "repository",
                 "notes": "Article de South African History Online, sans numéro de page, lu le 14 octobre 2026. Après la mort de Bongwe, son frère Sindeni est régent ; un changement dans la ligne de succession laisse son fils Mahlangu succéder, pour des raisons inconnues ; « the ruling family, which had previously been known as the Mdungwa, now became the Mahlangu » ; « the last of these events probably took place in the latter part of the mid-eighteenth century »."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           }
         ]
       }

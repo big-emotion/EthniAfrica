@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -54,10 +55,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "la recherche web et bibliographique combinant « Ndongo », « Beti », « le Cameroun », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la page Forebears propre au nom consultée directement, n’a livré aucune tradition attribuée, chronique ou étude linguistique établissant l’origine de Ndongo. Les homonymes d’autres langues et les déductions tirées de la seule distribution ont été écartés."
-    },
     {
       "fieldPath": "nameSystem",
       "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom de personne ewondo, porté par des hommes comme par des femmes. Chez les Ewondo, voisins des Fang, le nom du père peut suivre celui de l'enfant, comme dans Mesi-Méndongo. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant comme un nom de famille. La fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."

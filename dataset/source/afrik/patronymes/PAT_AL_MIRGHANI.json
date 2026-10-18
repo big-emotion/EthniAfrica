@@ -37,13 +37,8 @@
   "designatedSocialUnit": "lineage",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Selon Ahmed al-Shahi (1988), chez les riverains du Nil dans le nord du Soudan, le nom Al-Mirghani signale un descendant du fondateur de l'ordre soufi Khatmiyya et, par extension, un adepte de cet ordre. Cette tradition écrite concerne cette famille religieuse et ne doit pas être étendue aux homographes sans preuve.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["shahi-1988-personal-names-sudan"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -148,7 +143,8 @@
                 "page": "p. 135",
                 "notes": "Journal of the Anthropological Society of Oxford 19(2), 1988, texte intégral déposé à l'Oxford University Research Archive, relu le 18 octobre 2026. L'auteur a enquêté chez les Shaygiyya du nord du Soudan. Page 135 : « The surnames Al-Mahdi, Al-Mirghani, Al-Hindi, Al-Sammani and Al-Majdhub indicate that the person is a descendant of the founder of a Sufi order and by extension a follower of that order » ; « the use of the personal names Sirr Al-Khatim [...], Khatmi [...] and Mirghani (the family name of the founder of the Khatmiyya Sufi order) among the Shaygiyya and other tribes indicates their bearers' association with the Khatmiyya Sufi order ». La note 9 nomme le fondateur, Sayyid Muhammed Othman Al-Mirghani."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           },
           {
             "period": {

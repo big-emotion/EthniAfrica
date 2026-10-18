@@ -25,13 +25,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Une notice officielle djiboutienne atteste Guelleh comme dernier élément de la chaîne de noms du colonel Ibrahim Abdillahi Guelleh ; elle ne précise pas le lien généalogique que cet élément encode.",
-        "claimStatus": "established",
-        "sourceRefs": ["guelleh-presidence-djibouti-2017"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -100,5 +95,40 @@
       "fieldPath": "homonyms",
       "reason": "Les sources consultées ne permettent pas encore de présenter un autre nom écrit comme Guelleh, mais d'origine différente."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Les sources réunies dans ce dossier racontent l’histoire du nom Guelleh.",
+    "originExplained": true,
+    "names": [
+      {
+        "nameText": "Guelleh",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une notice officielle djiboutienne atteste Guelleh comme dernier élément de la chaîne de noms du colonel Ibrahim Abdillahi Guelleh ; elle ne précise pas le lien généalogique que cet élément encode.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Le Président de la République rend hommage à la mémoire de feu le Colonel Ibrahim Abdillahi Guelleh",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.presidence.dj/article/le-president-de-la-republique-rend-hommage-a-la-memoire-de-feu-le-colonel-ibrahim-abdillahi-guelleh-391",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Présidence de la République de Djibouti, 2 août 2017. La page complète a été vérifiée : elle identifie Ibrahim Abdillahi Guelleh comme colonel de l'armée de l'air djiboutienne et confirme son décès le jour de la publication."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

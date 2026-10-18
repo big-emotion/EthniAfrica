@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le Malagasy Dictionary and Encyclopedia classe ranaivo comme anthroponyme et l'analyse en deux éléments, ra- et ivo. L'entrée ne donne ni traduction globale ni démonstration historique : cette segmentation est enregistrée sans la convertir en étymologie du patronyme.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["malagasyword-ranaivo"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -220,6 +215,26 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 93",
                 "notes": "Article de The Antananarivo Annual and Madagascar Magazine, numéro de Noël 1878, à partir de la p. 77 ; la table des matières le signe « Rev. L. Dahle, N. M. S. ». Lu sur l'exemplaire numérisé de HathiTrust le 11 octobre 2026. Page 93 : la phrase d'exemple « hampampitondra an-dRanaivo ny mpanompony ity volanao ity aho », où Ranaivo est un nom de personne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le Malagasy Dictionary and Encyclopedia classe ranaivo comme anthroponyme et l'analyse en deux éléments, ra- et ivo. L'entrée ne donne ni traduction globale ni démonstration historique : cette segmentation est enregistrée sans la convertir en étymologie du patronyme.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Malagasy Dictionary and Encyclopedia — ranaivo",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://malagasyword.org/bins/teny2/ranaivo",
+                "tier": "unverified",
+                "source_kind": "repository",
+                "notes": "Agrégateur lexicographique malgache : classe ranaivo comme nom anthroponymique et renvoie aux éléments ra- et ivo. La page ne fournit pas d'auteur d'analyse ni d'étymologie complète ; le niveau non vérifié est conservé."
               }
             ]
           }

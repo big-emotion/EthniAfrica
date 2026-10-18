@@ -248,7 +248,15 @@ describe("the models declare the shared block", () => {
     const sharedFields = examples.map((example) => {
       const shared = structuredClone(example);
       delete shared.originExplained;
-      for (const name of shared.names) delete name.equivalents;
+      for (const name of shared.names) {
+        delete name.equivalents;
+        for (const account of name.accounts) {
+          delete account.claimStatus;
+          delete account.carrier;
+          delete account.collection;
+          delete account.collector;
+        }
+      }
       return JSON.stringify(shared);
     });
 

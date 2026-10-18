@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Garang est aussi le nom d’une free-divinity dinka décrite par Nikkel comme céleste et associée au soleil. L’identité formelle est établie, mais aucune source consultée ne démontre que chaque nom personnel Garang dérive de ce théonyme ; le lien onomastique reste contested.",
-        "claimStatus": "contested",
-        "sourceRefs": ["nikkel-dinka-christianity-1993"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -201,6 +196,27 @@
                 "source_kind": "academic",
                 "page": "p. 190",
                 "notes": "Londres, George Routledge & Sons, 1932 ; lu sur la numérisation d'Internet Archive le 18 octobre 2026. Page 190 : hymne de Dengdit transmis par l'archidiacre Shaw : « Awok descends upon the cattle hut / The cattle hut of Daiyim, / Abuk descends upon the cattle hut / [...] / Garang descends upon the cattle hut / The cattle hut of Daiyim »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Garang est aussi le nom d’une free-divinity dinka décrite par Nikkel comme céleste et associée au soleil. L’identité formelle est établie, mais aucune source consultée ne démontre que chaque nom personnel Garang dérive de ce théonyme ; le lien onomastique reste contested.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "The Origins and Development of Christianity among the Dinka of Sudan",
+                "author": "Marc R. Nikkel",
+                "year": 1993,
+                "url": "https://era.ed.ac.uk/items/8e0f0fba-5c36-4071-8f28-9168cf2e688f",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18",
+                "notes": "Thèse de doctorat, University of Edinburgh, 1993 ; texte intégral lu dans le fichier déposé sur Edinburgh Research Archive le 18 octobre 2026. Page 18 : « Known to the mythology of all Dinka are the primal ancestors, Abuk, Deng, and Garang » ; « According to some narratives Abuk, the primal mother, is wife of Garang and Deng is their son » ; « Garang is a divinity associated with the affairs of men. Though a free-divinity, he often ranks among clan-divinities in Western Dinkaland »."
               }
             ]
           }

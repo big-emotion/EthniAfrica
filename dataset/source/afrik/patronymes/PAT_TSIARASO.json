@@ -11,7 +11,10 @@
     {
       "spelling": "Tsiaraso",
       "attestations": [
-        { "countryId": "MDG", "sourceRefs": ["sharp-tsiaraso-1997"] }
+        {
+          "countryId": "MDG",
+          "sourceRefs": ["sharp-tsiaraso-1997"]
+        }
       ]
     }
   ],
@@ -19,13 +22,8 @@
   "designatedSocialUnit": "lineage",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "L'étude de Lesley A. Sharp situe Tsiaraso Victor III et son fils Tsiaraso Rachidy IV dans la dynastie bemazava-sakalava et décrit leur reconstruction du palais royal sur les ruines du doany de Tsiaraso I. Elle établit la continuité patrilinéaire de l'élément Tsiaraso dans cette lignée royale, sans en donner l'étymologie.",
-        "claimStatus": "established",
-        "sourceRefs": ["sharp-tsiaraso-1997"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -114,7 +112,8 @@
                 "page": "p. 270-307",
                 "notes": "Journal of Religion in Africa, vol. 27, n° 3, août 1997. Lu le 11 octobre 2026 : la notice et le résumé publiés par AfricaBib, pas l'article entier. Le résumé dit que Tsiaraso Victor III et son fils Tsiaraso Rachidy IV ont rebâti le Palais royal d'Ankify sur les ruines du doany, l'enclos royal, de Tsiaraso I."
               }
-            ]
+            ],
+            "claimStatus": "established"
           },
           {
             "period": {

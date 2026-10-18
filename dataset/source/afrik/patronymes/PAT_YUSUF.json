@@ -60,35 +60,9 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "La Présidence de Djibouti atteste Youssouf comme dernier élément de la chaîne de noms du député Omar Ahmed Youssouf ; la notice ne qualifie pas la relation généalogique exprimée.",
-        "claimStatus": "established",
-        "sourceRefs": ["youssouf-presidence-djibouti-2017"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "Amoo, Ajayi et Sabo classent Yusuf parmi les noms de prophètes employés dans les pratiques de nomination musulmanes haoussa. Ryan atteste la forme Yusufu et la rapproche de Joseph ; la source consacrée à Yusuf le décrit comme la forme arabe et coranique de Yosef.",
-        "claimStatus": "established",
-        "sourceRefs": ["amoo-2022-yusuf", "ryan-1981-yusuf", "btn-yusuf"]
-      },
-      {
-        "claim": "Dans le système haoussa décrit par Chamo, le nom personnel du père est couramment placé après le prénom de l'enfant sans devenir un nom de famille héréditaire stable.",
-        "claimStatus": "established",
-        "sourceRefs": ["chamo-2018-yusuf"]
-      },
-      {
-        "claim": "Une notice communautaire présente Youssouf comme une forme de Yusuf diffusée surtout dans des régions d'Afrique occidentale sous influence française ; elle ne démontre pas ses emplois somali ou comorien.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["youssouf-behindthename"]
-      },
-      {
-        "claim": "La source identifie Youssef comme une transcription de l'arabe يوسف, renvoyée à Yusuf. Cette correspondance du nom personnel ne suffit pas à établir l'origine d'un patronyme héréditaire ni une lignée précise.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["btn-youssef"]
-      }
-    ]
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -303,6 +277,66 @@
                 "notes": "Communiqué de la présidence du Nigeria daté du 29 août 2026, lu le 11 octobre 2026. Il écrit le nom complet Aminu Yusuf, avec Yusuf en dernière position."
               }
             ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans le système haoussa décrit par Chamo, le nom personnel du père est couramment placé après le prénom de l'enfant sans devenir un nom de famille héréditaire stable.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Language and Identity in Africa: The Use of Place Names as Part of a Person’s Name in Hausa",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://auadamu.com/phocadownload/Books/%5B2018%5D%20Festschrift%20in%20Honour%20of%20Abdalla%20Uba%20Adamu%20-%20Media%20-Knowledge%20Transfer%20and%20African%20Identity.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Isa Yusuf Chamo, 2018, pp. 251-252 du chapitre consulté dans le volume intégral. Établit le fonctionnement non héréditaire du patronyme haoussa ; ne traite pas l'étymologie de Yusuf."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une notice communautaire présente Youssouf comme une forme de Yusuf diffusée surtout dans des régions d'Afrique occidentale sous influence française ; elle ne démontre pas ses emplois somali ou comorien.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Youssouf",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/youssouf",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site de référence grand public sur les prénoms, lu le 11 octobre 2026 : « Form of Yusuf mostly used in parts of French-influenced West Africa ». La page ne cite pas de source."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La source identifie Youssef comme une transcription de l'arabe يوسف, renvoyée à Yusuf. Cette correspondance du nom personnel ne suffit pas à établir l'origine d'un patronyme héréditaire ni une lignée précise.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Youssef — Behind the Name",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.behindthename.com/name/youssef",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Entrée communautaire consultée le 2 septembre 2026. Elle donne la graphie arabe يوسف et traite Youssef comme transcription de Yusuf. Elle documente un nom personnel, pas une lignée égyptienne particulière."
+              }
+            ]
           }
         ]
       },
@@ -362,8 +396,27 @@
                 "source_kind": "academic",
                 "page": "p. 143",
                 "notes": "Names, vol. 29, no 2, 1981, p. 139-164. Lu dans le PDF intégral le 11 octobre 2026. L'étude porte sur les noms des Haoussa du nord du Nigeria, musulmans pour la plupart ; la majorité des noms donnés lors de la cérémonie du nom y sont tirés du Coran. Tableau I : « Yusufu — Joseph »."
+              },
+              {
+                "title": "Personal names and naming practices in Hausa and English",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.researchgate.net/publication/380826040_Personal_names_and_naming_practices_in_Hausa_and_English",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Amoo, Ajayi et Sabo, Papers in African Languages and Linguistics 9, 2022, pp. 46-74. Le texte intégral consulté classe exactement Yusuf parmi les noms de prophètes employés par les Haoussa musulmans. L'hébergement ResearchGate est un dépôt, pas l'éditeur de la revue."
+              },
+              {
+                "title": "Yusuf — Behind the Name",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.behindthename.com/name/yusuf",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page communautaire consultée directement. Elle décrit Yusuf comme la forme arabe et coranique de Yosef. Les travaux académiques d'Amoo, Ajayi et Sabo et de Ryan établissent séparément son usage haoussa."
               }
-            ]
+            ],
+            "claimStatus": "established"
           }
         ]
       },
@@ -425,7 +478,8 @@
                 "source_kind": "government",
                 "notes": "Communiqué du 22 janvier 2017, lu le 11 octobre 2026. Il nomme Omar Ahmed Youssouf, notable djiboutien, ancien député, sans dire de qui Youssouf est le nom dans cette suite."
               }
-            ]
+            ],
+            "claimStatus": "established"
           }
         ]
       }

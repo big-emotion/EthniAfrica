@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -62,10 +63,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Les recherches bibliographiques et web « Gbaguidi fon anthroponymie étymologie », « Gbaguidi onomastique » et « Gbaguidi surname meaning », ainsi que la page Forebears propre au nom, n'ont livré aucune étymologie ni histoire de formation vérifiable. La distribution observée n'est pas interprétée comme une origine."
-    },
     {
       "fieldPath": "peoples",
       "reason": "Les sources lues placent le nom chez les Mahi, à Savalou, et dans des familles de Kétou, en pays nago. Notre atlas n'a pas de fiche sur les Mahi ni sur les Nago, et la fiche sur les Fon range les Maxi (Mahi) parmi les Fon du nord : le lien avec les Fon reste donc supposé."

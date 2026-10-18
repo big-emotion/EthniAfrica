@@ -41,13 +41,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Dans son étude des anthroponymes oshiwambo, Petrus Mbenzi glose Amadhila par « oiseaux » et analyse Amathila comme une adaptation anglicisée où dh [ð] est remplacé par th [θ].",
-        "claimStatus": "established",
-        "sourceRefs": ["mbenzi-2024-amadhila"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -211,6 +206,27 @@
                 "source_kind": "academic",
                 "page": "p. 344",
                 "notes": "Minna Saarelma-Maunumaa, Helsinki, Finnish Literature Society, 2003, lu en texte intégral le 16 octobre 2026 ; la pagination imprimée suit celle du fichier. Annexe 1, « The Surname Data (Surnames of Ambo theologians, source: Nambala 1995) » : Amadhila y figure deux fois. Rapport de seconde main : nous n'avons pas lu Nambala."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans son étude des anthroponymes oshiwambo, Petrus Mbenzi glose Amadhila par « oiseaux » et analyse Amathila comme une adaptation anglicisée où dh [ð] est remplacé par th [θ].",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "The Anglicisation of Oshiwambo Names",
+                "author": "Petrus A. Mbenzi",
+                "year": 2024,
+                "url": "https://arushalinguistics.org/publications/Mbenzi_AWPAL_2024.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 87",
+                "notes": "Arusha Working Papers in African Linguistics 6(1), 2024, p. 80-96, épreuve avant publication lue en entier le 16 octobre 2026. Page 87, tableau 1 : le nom oshiwambo Amadhila [amaðiɭa] est glosé « birds »."
               }
             ]
           }

@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le répertoire provisoire burkinabè rassemble pour Ouoba plusieurs gloses incompatibles — « celui qui se lave lui-même », « il n'est pas tombé » et « celui qui se cache et cherche » — puis propose un rapprochement avec uooni, « se cacher », et kiba, « gagner ». Faute d'analyse linguistique publiée, aucune de ces interprétations ne peut être retenue comme étymologie établie.",
-        "claimStatus": "contested",
-        "sourceRefs": ["burkina-provisional-patronyme-register"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -141,6 +136,27 @@
                 "source_kind": "government",
                 "page": "p. 165",
                 "notes": "Document de travail daté de mai 2025 et marqué « version provisoire », sans validation finale visible, lu sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle de ce répertoire n'a été trouvée. Le document recueille des traditions sans appareil critique : ses explications restent des propositions. Notice OUOBA : trois sens proposés, puis un rapprochement avec uooni et kiba, sans analyse linguistique. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le répertoire provisoire burkinabè rassemble pour Ouoba plusieurs gloses incompatibles — « celui qui se lave lui-même », « il n'est pas tombé » et « celui qui se cache et cherche » — puis propose un rapprochement avec uooni, « se cacher », et kiba, « gagner ». Faute d'analyse linguistique publiée, aucune de ces interprétations ne peut être retenue comme étymologie établie.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 165",
+                "notes": "Document de travail daté de mai 2025 et marqué « version provisoire », sans validation finale visible, lu sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle de ce répertoire n'a été trouvée. Le document recueille des traditions sans appareil critique : ses explications restent des propositions. Notice OUOBA, lue en entier. Lu le 11 octobre 2026."
               }
             ]
           }

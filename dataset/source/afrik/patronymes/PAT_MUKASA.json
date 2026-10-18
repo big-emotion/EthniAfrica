@@ -21,25 +21,9 @@
   "transmissionMode": "other",
   "designatedSocialUnit": "individual",
   "origin": {
-    "oralTraditions": [
-      {
-        "claim": "Le nom viendrait d'une île. Des passants ont vu un enfant assis sous un grand arbre près du lac, sur l'île de Bubembe, et l'ont dit aux anciens du village. Ceux-ci ont conclu qu'il venait de Bukasa et l'ont appelé « un Mukasa », c'est-à-dire un homme de l'île de Bukasa ; le nom lui est resté. Ce récit est celui du dieu Mukasa, fils de Wanema et de Nambubi, né sous le nom de Selwanga.",
-        "claimStatus": "claimed",
-        "collection": "mediated",
-        "collector": "John Roscoe, missionnaire anglais qui a recueilli les croyances des Ganda",
-        "context": "Récit sur le dieu Mukasa publié en 1911 ; la personne qui l'a raconté n'est pas nommée. Il explique le nom du dieu, non celui des familles qui le portent aujourd'hui",
-        "sourceRefs": ["roscoe-1911-baganda"]
-      },
-      {
-        "claim": "Chez les Ganda, les jumeaux garçons recevaient le nom de Mukasa, d'après le dieu, et les filles celui de Namukasa ; les jumeaux étaient placés sous sa protection.",
-        "claimStatus": "claimed",
-        "collection": "mediated",
-        "collector": "John Roscoe, missionnaire anglais qui a recueilli les coutumes des Ganda",
-        "context": "Coutume décrite dans un ouvrage publié en 1911 ; la personne qui l'a rapportée n'est pas nommée",
-        "sourceRefs": ["roscoe-1911-baganda"]
-      }
-    ],
+    "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -93,10 +77,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Nous n'avons trouvé aucune source qui explique comment Mukasa est devenu un nom de famille, ni qui dise si les familles qui le portent se rattachent au dieu. Les deux récits ci-dessus parlent du nom du dieu et d'une coutume pour les jumeaux ; aucun n'est un récit des familles elles-mêmes. Les rapprochements lexicaux et la seule géographie ont été écartés."
-    },
     {
       "fieldPath": "nameSystem",
       "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues le disent un nom de personne ganda, donné selon les circonstances de la naissance. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant. La fiche reste donc parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
@@ -214,7 +194,7 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 291",
-                "notes": "Londres, Macmillan, 1911 ; exemplaire numérisé de l'université de Toronto sur archive.org. Page 291 : « they concluded that he had come from Bukasa, and called him a Mukasa (that is a person from the island of Bukasa), and this name attached itself to him from that time ». Roscoe ne nomme pas la personne qui lui a raconté la légende. Ethnographie de l'époque coloniale, citée pour ce que les Ganda lui ont raconté, non pour ses classements. Lu le 13 octobre 2026."
+                "notes": "Londres, Macmillan, 1911 ; exemplaire numérisé de l'université de Toronto sur archive.org. Page 291 : « they concluded that he had come from Bukasa, and called him a Mukasa (that is a person from the island of Bukasa), and this name attached itself to him from that time ». Roscoe ne nomme pas la personne qui lui a raconté la légende. Ethnographie de l'époque coloniale, citée pour ce que les Ganda lui ont raconté, non pour ses classements. Lu le 13 octobre 2026.\nRécit sur le dieu Mukasa publié en 1911 ; la personne qui l'a raconté n'est pas nommée. Il explique le nom du dieu, non celui des familles qui le portent aujourd'hui"
               },
               {
                 "title": "Récit sur l'origine du dieu Mukasa",
@@ -228,7 +208,10 @@
                 "place": "Île de Bubembe, Buganda",
                 "notes": "Récit rapporté par John Roscoe dans The Baganda, 1911, p. 291. Roscoe n'identifie pas les personnes qui le lui ont raconté. Il porte sur le dieu Mukasa, pas sur les familles qui portent ce nom aujourd'hui."
               }
-            ]
+            ],
+            "claimStatus": "claimed",
+            "collection": "mediated",
+            "collector": "John Roscoe, missionnaire anglais qui a recueilli les croyances des Ganda"
           },
           {
             "period": {
@@ -258,6 +241,29 @@
                 "notes": "Londres, Sampson Low, Marston, Searle & Rivington, 1890, « nouvelle édition à bon marché » (le livre est paru pour la première fois en 1889) ; exemplaire numérisé sur archive.org. Page 149 : « Do not call me Mukasa — Mukasa is dead. I am Samweli » ; page 228 : « His native name was Mukasa » ; page 159 : les prêtres du Lubare ne laissent pas le roi aller sur le lac « as they said that Mukasa, the Neptune of the Nyanza, had not yet been propitiated ». Ces pages suivent la mort de Lugalama, le 31 janvier 1885, et précèdent de peu un passage daté de juin 1885 (p. 154). Missionnaire, cité pour les formes qu'il écrit. Lu le 13 octobre 2026."
               }
             ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Chez les Ganda, les jumeaux garçons recevaient le nom de Mukasa, d'après le dieu, et les filles celui de Namukasa ; les jumeaux étaient placés sous sa protection.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "The Baganda: An Account of their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 70",
+                "notes": "Londres, Macmillan, 1911 ; exemplaire numérisé de l'université de Toronto sur archive.org. Page 70 : « Twins were always named after the god, the boys took the name of Mukasa, and the girls of Namukasa ; both were under the protection of the god ». Ethnographie de l'époque coloniale, citée pour ce que les Ganda lui ont raconté, non pour ses classements. Lu le 13 octobre 2026.\nCoutume décrite dans un ouvrage publié en 1911 ; la personne qui l'a rapportée n'est pas nommée"
+              }
+            ],
+            "collection": "mediated",
+            "collector": "John Roscoe, missionnaire anglais qui a recueilli les coutumes des Ganda"
           }
         ]
       }

@@ -31,13 +31,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Une étude linguistique de l’UMMTO situe les Aït Menguellet dans l’ensemble des Igawawen du Djurdjura et traite la désignation comme celle d’une tribu ou confédération kabyle ; elle ne donne pas d’étymologie du second élément.",
-        "claimStatus": "established",
-        "sourceRefs": ["ait-menguellet-ummto"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -174,6 +169,27 @@
                 "source_kind": "archive",
                 "page": "p. 183",
                 "notes": "Général E. Daumas, deuxième édition, Paris, Hachette, 1855 ; exemplaire numérisé d'archive.org. L'auteur est un officier français, conseiller d'État et directeur des affaires de l'Algérie : il est cité pour ce qu'il écrit et rapporte. Page 183, chapitre « La société kabyle » : la fausse monnaie est fabriquée à Aït-el-Arba et chez Ali-ou-Harzoun, dont les gens ne sortent pas de leur retraite ; « C'étaient les Beni-Ianni, les Beni-Menguelat, les Beni-Coudrar, les Beni-Ouassif, qui étaient ordinairement chargés de cette mission » (la faire sortir de Kabylie). Le passage décrit la Kabylie avant la conquête de 1857 : le projet ne lui donne pas d'ère, faute de ligne du tableau des périodes coloniales. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une étude linguistique de l’UMMTO situe les Aït Menguellet dans l’ensemble des Igawawen du Djurdjura et traite la désignation comme celle d’une tribu ou confédération kabyle ; elle ne donne pas d’étymologie du second élément.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Le vocabulaire berbère commun au kabyle et au mozabite : étude de lexicologie berbère comparée",
+                "author": "Abdallah Nouh",
+                "year": 2008,
+                "url": "https://dspace.ummto.dz/server/api/core/bitstreams/7a3b6f49-009a-4d2f-bf11-9a1ed9259944/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 40-41",
+                "notes": "Mémoire de magister, Université Mouloud Mammeri de Tizi-Ouzou, 2008 ; texte intégral lu, pages numérotées de l'imprimé. Pages 40-41 : « Il s'agit des Ait Menguellet, situé dans le pays des Igawawen de Djurdjura » ; le dictionnaire de Dallet « est en fait une description du parler des Ayt Menguellet, une tribu de la grande confédération de Zouaoua/Igawawen située dans la chaîne intérieure rocheuse du Djurdjura », et plus particulièrement de trois villages de son territoire. Lu le 14 octobre 2026."
               }
             ]
           }

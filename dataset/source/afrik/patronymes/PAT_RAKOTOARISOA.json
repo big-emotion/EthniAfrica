@@ -11,7 +11,10 @@
     {
       "spelling": "Rakotoarisoa",
       "attestations": [
-        { "countryId": "MDG", "sourceRefs": ["bnf-jean-aime-rakotoarisoa"] }
+        {
+          "countryId": "MDG",
+          "sourceRefs": ["bnf-jean-aime-rakotoarisoa"]
+        }
       ]
     }
   ],
@@ -20,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -59,10 +63,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Les recherches exactes « Rakotoarisoa etymology », « Rakotoarisoa onomastics », leurs équivalents français et les résultats académiques n'ont livré aucune étude d'origine ; une page commerciale de signification des noms a été rejetée faute de références."
-    },
     {
       "fieldPath": "transmissionMode",
       "reason": "La notice d'autorité atteste un porteur sans filiation. Les recherches avec famille, père, fils et généalogie n'ont pas établi le mode de transmission ; « other » conserve cette indétermination."
@@ -132,7 +132,11 @@
             ]
           },
           {
-            "period": { "from": 1953, "to": 1953, "label": "1953" },
+            "period": {
+              "from": 1953,
+              "to": 1953,
+              "label": "1953"
+            },
             "era": "colonial",
             "statement": "Le nom Rakotoarisoa apparaît par écrit sur une carte du Service géologique de Madagascar, à Tananarive, qui porte la mention « Dressé par Rakotoarisoa G. », selon le catalogue de la Bibliothèque nationale de France. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand il est donné.",
             "birth": true,
@@ -149,7 +153,11 @@
             ]
           },
           {
-            "period": { "from": 1888, "to": 1888, "label": "1888" },
+            "period": {
+              "from": 1888,
+              "to": 1888,
+              "label": "1888"
+            },
             "era": "colonial",
             "statement": "Le nom Rakoto est déjà un nom de personne : le dictionnaire d'Antoine Abinal et Victorin Malzac l'emploie dans l'exemple « Satro-dRakoto, pour satroka ny Rakoto ». Ce dictionnaire traduit aussi le mot kóto par « un garçon », sans dire si le nom vient de ce mot.",
             "before": true,

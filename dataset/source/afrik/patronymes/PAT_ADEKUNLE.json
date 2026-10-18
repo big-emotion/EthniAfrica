@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "YorubaNames analyse Adékúnlé comme adé-kún-ilé (« la couronne remplit la maison ») et signale une seconde lecture, a-dé-kún-ilé (« nous sommes arrivés pour remplir la maison »).",
-        "claimStatus": "claimed",
-        "sourceRefs": ["yorubanames-adekunle"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -174,6 +169,26 @@
             "era": "modern",
             "statement": "Le nom Adekunle est un nom de personne yoruba, qu'on abrège en Kunle ou Dekunle, selon YorubaNames.",
             "aspect": "usage",
+            "sources": [
+              {
+                "title": "Adékúnlé — YorubaNames",
+                "author": "YorubaNames",
+                "year": null,
+                "url": "https://www.yorubaname.com/entries/adekunle",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Base collaborative de noms yoruba, page lue le 18 octobre 2026. Sens : « 1. The crown fills the house. 2. We have arrived to fill the house. » ; morphologie adé-kún-ilé (adé « crown », kún « fill », ilé « house, home ») ou a-dé-kún-ilé (a « we », dé « arrive, return ») ; variantes Kúnlé et Dékúnlé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "YorubaNames analyse Adékúnlé comme adé-kún-ilé (« la couronne remplit la maison ») et signale une seconde lecture, a-dé-kún-ilé (« nous sommes arrivés pour remplir la maison »).",
+            "claimStatus": "claimed",
             "sources": [
               {
                 "title": "Adékúnlé — YorubaNames",

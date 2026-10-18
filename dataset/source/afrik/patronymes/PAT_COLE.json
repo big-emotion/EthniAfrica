@@ -22,13 +22,8 @@
   "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Dupraz et Simson citent Cole parmi les patronymes krio courants qui correspondent aux noms de colons européens connus. Ils distinguent ce cas des noms européens adoptés ultérieurement par des Africains libérés ; l'article ne désigne toutefois pas un fondateur individuel de la lignée Cole.",
-        "claimStatus": "established",
-        "sourceRefs": ["dupraz-simson-2024-krio"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -187,6 +182,26 @@
                 "source_kind": "archive",
                 "page": "p. 5",
                 "notes": "Londres, Church Missionary House, 1854. « Introductory Remarks », page 5 vue en image le 18 octobre 2026 : parmi les informateurs de l'auteur pour les parlers aku, « Gbílūdso, or Thomas Cole, of Freetown », né à Igbóre dans le pays egba, en Sierra Leone depuis vingt-cinq ans, et « Dégbīte, or Sam Cole, of Freetown », né à Ilésa. La même page et les suivantes nomment d'autres informateurs Cole (James Cole, de Freetown ; George Cole, de Campbelltown ; John Cole, de Gloucester). Missionnaire de la Church Missionary Society, cité pour les noms qu'il écrit."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dupraz et Simson citent Cole parmi les patronymes krio courants qui correspondent aux noms de colons européens connus. Ils distinguent ce cas des noms européens adoptés ultérieurement par des Africains libérés ; l'article ne désigne toutefois pas un fondateur individuel de la lignée Cole.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Elite persistence in Sierra Leone: What can names tell us?",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.history.ox.ac.uk/publication/1532813/ora-hyrax",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Yannick Dupraz et Rebecca Simson, Journal of Development Economics 171 (2024), DOI 10.1016/j.jdeveco.2024.103333. La section sur les pratiques de dénomination indique que les patronymes krio passent du père aux enfants et cite Cole et Coker parmi les noms de colons européens connus. La page Oxford et le texte de l'article ont été contrôlés."
               }
             ]
           }

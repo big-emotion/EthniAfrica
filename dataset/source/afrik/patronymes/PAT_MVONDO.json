@@ -21,17 +21,9 @@
   "transmissionMode": "other",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [
-      {
-        "claim": "Le nom Mvondo est celui de Mvondo Menye, ancêtre fondateur du clan eton Mvog Mvondo. La tradition le rattache à Onandoa, qui aurait franchi la Sanaga sur le dos d'un serpent mythique, puis à Onandjana, l'un des fils d'Onandoa, qui aurait eu Mvondo Menye parmi ses enfants. Mvondo Menye serait né dans la région de Sa'a. Pour le second terme, Menye, une explication veut qu'il soit le nom de sa mère, les enfants prenant alors le nom de leur mère ; l'auteure le déduit.",
-        "claimStatus": "claimed",
-        "collection": "mediated",
-        "collector": "Théorine Emmanuelle Onana, par des entretiens de terrain dont les personnes sont citées en note, sans dire laquelle a donné quel élément",
-        "context": "Récit rapporté en français dans un mémoire d'histoire soutenu en 2015 à Yaoundé, à propos des Eton",
-        "sourceRefs": ["onana-2015-mvog-mvondo"]
-      }
-    ],
+    "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -71,10 +63,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore le sens du mot Mvondo : le seul travail lu rattache le nom à un ancêtre fondateur et ne l'explique pas. Il concerne le clan eton Mvog Mvondo ; nous n'avons trouvé aucune source sur d'autres porteurs du nom, notamment chez les Ewondo."
-    },
     {
       "fieldPath": "nameSystem",
       "reason": "la recherche web et bibliographique combinant « Mvondo », « Ewondo », « le Cameroun », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la page Forebears propre au nom consultée directement, n’a pas établi que la catégorie provisoire portée par la fiche décrive Mvondo lui-même ; elle reste une hypothèse de classement technique, sans être transformée en affirmation historique."
@@ -175,9 +163,12 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 22-23",
-                "notes": "Mémoire de DIPES II, département d'histoire, École normale supérieure de Yaoundé I, 2014-2015, travail universitaire non publié, lu le 14 octobre 2026 dans la version numérisée du dépôt de l'université. Page 22 : l'ancêtre Onandoa franchit la Sanaga sur le dos du serpent mythique, ses fils Onandjana et Onamney ; Onandjana a pour enfants Mvondo Menye, « patriarche fondateur des Mvog Mvondo », et d'autres ; l'auteure déduit que la mère de Mvondo Menye s'appelait Menye, les enfants prenant à l'époque le nom de leur mère. Page 23 : Mvondo Menye serait né dans la région de Sa'a. Les récits viennent d'entretiens de terrain, sans que le mémoire dise lequel a donné quel élément. Le mémoire ne dit pas ce que le mot Mvondo signifie."
+                "notes": "Mémoire de DIPES II, département d'histoire, École normale supérieure de Yaoundé I, 2014-2015, travail universitaire non publié, lu le 14 octobre 2026 dans la version numérisée du dépôt de l'université. Page 22 : l'ancêtre Onandoa franchit la Sanaga sur le dos du serpent mythique, ses fils Onandjana et Onamney ; Onandjana a pour enfants Mvondo Menye, « patriarche fondateur des Mvog Mvondo », et d'autres ; l'auteure déduit que la mère de Mvondo Menye s'appelait Menye, les enfants prenant à l'époque le nom de leur mère. Page 23 : Mvondo Menye serait né dans la région de Sa'a. Les récits viennent d'entretiens de terrain, sans que le mémoire dise lequel a donné quel élément. Le mémoire ne dit pas ce que le mot Mvondo signifie.\nRécit rapporté en français dans un mémoire d'histoire soutenu en 2015 à Yaoundé, à propos des Eton"
               }
-            ]
+            ],
+            "claimStatus": "claimed",
+            "collection": "mediated",
+            "collector": "Théorine Emmanuelle Onana, par des entretiens de terrain dont les personnes sont citées en note, sans dire laquelle a donné quel élément"
           },
           {
             "period": {

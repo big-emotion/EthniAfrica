@@ -11,17 +11,35 @@
     {
       "spelling": "Ali",
       "attestations": [
-        { "countryId": "DJI", "sourceRefs": ["afrik-candidate-queue"] },
-        { "countryId": "SOM", "sourceRefs": ["afrik-candidate-queue"] },
-        { "countryId": "EGY", "sourceRefs": ["afrik-candidate-queue"] },
-        { "countryId": "COM", "sourceRefs": ["afrik-candidate-queue"] },
-        { "countryId": "TZA", "sourceRefs": ["tanzania-osg-ally-possi"] }
+        {
+          "countryId": "DJI",
+          "sourceRefs": ["afrik-candidate-queue"]
+        },
+        {
+          "countryId": "SOM",
+          "sourceRefs": ["afrik-candidate-queue"]
+        },
+        {
+          "countryId": "EGY",
+          "sourceRefs": ["afrik-candidate-queue"]
+        },
+        {
+          "countryId": "COM",
+          "sourceRefs": ["afrik-candidate-queue"]
+        },
+        {
+          "countryId": "TZA",
+          "sourceRefs": ["tanzania-osg-ally-possi"]
+        }
       ]
     },
     {
       "spelling": "Ally",
       "attestations": [
-        { "countryId": "TZA", "sourceRefs": ["tanzania-osg-ally-possi"] }
+        {
+          "countryId": "TZA",
+          "sourceRefs": ["tanzania-osg-ally-possi"]
+        }
       ]
     }
   ],
@@ -30,28 +48,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Ali correspond au nom personnel arabe ʿAlī ; le dictionnaire de l'Académie de la langue arabe du Caire rattache ʿaliyy à la racine ʿ-l-w et lui donne les sens « élevé », « puissant » ou « de haut rang ».",
-        "claimStatus": "established",
-        "sourceRefs": ["ali-arabic-academy", "ali-aljarf-2023"]
-      },
-      {
-        "claim": "Une étude onomastique décrit Ali parmi les noms personnels arabes empruntés dans de nombreuses communautés musulmanes ; cette diffusion générale ne prouve pas, à elle seule, une transmission spécifique chez les Afar, Somali, Arabes d'Afrique ou Comoriens.",
-        "claimStatus": "established",
-        "sourceRefs": ["ali-aljarf-2023"]
-      },
-      {
-        "claim": "Le Dictionary of American Family Names, reproduit par FamilySearch, rattache également le patronyme arabe au nom personnel ʿAlī, décrit comme signifiant « élevé », « noble » ou « sublime ».",
-        "claimStatus": "established",
-        "sourceRefs": ["familysearch-ali"]
-      },
-      {
-        "claim": "Le Dictionary of American Family Names, reproduit par FamilySearch, décrit Ally comme une variante musulmane de Ali ; aucune filiation clanique swahilie n'est établie par cette notice.",
-        "claimStatus": "established",
-        "sourceRefs": ["familysearch-ally"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -300,6 +298,97 @@
                 "source_kind": "academic",
                 "page": "p. 42",
                 "notes": "Journal of Gender, Culture and Society, vol. 3, n° 1, 2023, lu le 11 octobre 2026 dans le PDF de l'éditeur. Page 42 : des noms arabes comme Mohammed, Ali et Fatimah ont été empruntés par des communautés musulmanes, avec des changements de prononciation. L'article ne traite pas de l'Afrique."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Ali correspond au nom personnel arabe ʿAlī ; le dictionnaire de l'Académie de la langue arabe du Caire rattache ʿaliyy à la racine ʿ-l-w et lui donne les sens « élevé », « puissant » ou « de haut rang ».",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "معنى «علي» في المعجم — مجمع اللغة العربية بالقاهرة",
+                "author": "Académie de la langue arabe du Caire",
+                "year": null,
+                "url": "https://www.arabicacademy.gov.eg/ar/%D9%85%D8%AD%D8%B1%D9%83-%D8%A7%D9%84%D8%A8%D8%AD%D8%AB/%D9%85%D8%B9%D8%AC%D9%85/dic-19/%D8%B9%D9%84%D9%8A",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée du dictionnaire al-Wasīṭ, lue en arabe le 11 octobre 2026. Le mot العَلِيُّ y est défini comme « élevé », « solide, fort » et « seigneur de haut rang », de la racine ع ل و."
+              },
+              {
+                "title": "The Interchange of Personal Names in Muslim Communities: An Onomastic Study",
+                "author": "Reima Al-Jarf",
+                "year": 2023,
+                "url": "https://doi.org/10.32996/jgcs.2023.3.1.5",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 42",
+                "notes": "Journal of Gender, Culture and Society, vol. 3, n° 1, 2023, lu le 11 octobre 2026 dans le PDF de l'éditeur. Page 42 : des noms arabes comme Mohammed, Ali et Fatimah ont été empruntés par des communautés musulmanes, avec des changements de prononciation. L'article ne traite pas de l'Afrique."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une étude onomastique décrit Ali parmi les noms personnels arabes empruntés dans de nombreuses communautés musulmanes ; cette diffusion générale ne prouve pas, à elle seule, une transmission spécifique chez les Afar, Somali, Arabes d'Afrique ou Comoriens.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "The Interchange of Personal Names in Muslim Communities: An Onomastic Study",
+                "author": "Reima Al-Jarf",
+                "year": 2023,
+                "url": "https://doi.org/10.32996/jgcs.2023.3.1.5",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 42",
+                "notes": "Journal of Gender, Culture and Society, vol. 3, n° 1, 2023, lu le 11 octobre 2026 dans le PDF de l'éditeur. Page 42 : des noms arabes comme Mohammed, Ali et Fatimah ont été empruntés par des communautés musulmanes, avec des changements de prononciation. L'article ne traite pas de l'Afrique."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le Dictionary of American Family Names, reproduit par FamilySearch, rattache également le patronyme arabe au nom personnel ʿAlī, décrit comme signifiant « élevé », « noble » ou « sublime ».",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Ali Name Meaning and Ali Family History at FamilySearch",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.familysearch.org/en/surname?surname=ali",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Notice consultée intégralement. FamilySearch reproduit l'entrée du Dictionary of American Family Names (Oxford University Press, 2022), qui rattache le nom arabe au nom personnel ʿAlī. La notice ne suffit pas à attribuer tous les porteurs africains à un même peuple."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le Dictionary of American Family Names, reproduit par FamilySearch, décrit Ally comme une variante musulmane de Ali ; aucune filiation clanique swahilie n'est établie par cette notice.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Ally Name Meaning and Ally Family History at FamilySearch",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.familysearch.org/en/surname?surname=ally",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Notice consultée intégralement. FamilySearch reproduit le Dictionary of American Family Names, qui présente Ally comme une variante musulmane de Ali. Cette entrée lexicographique ne documente pas un clan swahili particulier."
               }
             ]
           }

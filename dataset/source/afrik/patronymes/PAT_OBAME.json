@@ -32,18 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une explication relie le nom au mot fang obam, qui désigne l'épervier (Melierax). La liste des noms de personnes fang et makina du chercheur donne ce sens en face de Obame.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["agyune-ndone-anthroponymie-makina-fang"]
-      },
-      {
-        "claim": "Pour les porteurs makina, le chercheur juge « probable » que Obame soit une forme adaptée au fang du nom shiwe Bame, qui veut dire « cicatrice » ; ce jugement porte sur une liste de noms dont Obame fait partie. Pour les porteurs fang, l'article ne dit rien de la manière dont le nom a été choisi.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["agyune-ndone-anthroponymie-makina-fang"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -85,10 +75,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Nous n'avons trouvé qu'une seule étude qui donne un sens à ce nom, écrite par un chercheur dont l'article ne dit pas s'il appartient à ces familles : aucun récit de famille, aucune chronique ni aucune autre étude sur Obame n'a été trouvé. Le sens de l'épervier est donné sans que l'article dise comment le nom a été choisi, et le rapprochement avec le nom shiwe Bame (« cicatrice ») ne vaut que pour les Makina. Nous n'avons pas pu consulter le dictionnaire des noms propres gabonais de Raponda Walker (1993), que l'article cite."
-    },
     {
       "fieldPath": "nameSystem",
       "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom de personne fang. Le père Trilles fait d'Obam le fondateur d'un clan, mais ce clan porte un autre nom, Esobam. Chez les Fang, le nom du père peut suivre celui de l'enfant, comme dans Biloghe b'Obame, « Biloghe, fille d'Obame ». Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant comme un nom de famille. La fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
@@ -208,7 +194,8 @@
                 "page": "p. 11 (tableau n° 4)",
                 "notes": "Lu le 18 octobre 2026. Page 11 du PDF, tableau n° 4 : « Obame [obam] Epervier (Melierax) en fang », en face du nom shiwe Bame, « Cicatrice »."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           },
           {
             "period": {
@@ -251,6 +238,27 @@
                 "source_kind": "academic",
                 "page": "p. 125-126",
                 "notes": "R. P. H. Trilles, missionnaire spiritain, Münster, Aschendorff, 1912 (collection Bibliothèque Anthropos, tome I, fascicule 4) ; exemplaire numérisé d'Internet Archive (Duquesne University), pages lues sur l'image le 18 octobre 2026. Pages 125-126 : dans le rameau bétsi, les clans portent un nom en Esa, mot « qui veut dire « père » », devenu Eso devant certaines voyelles : « les Esobam [...] suivant que le père de la tribu est [...] Obam ». L'auteur ne dit pas où ni quand il a recueilli cette généalogie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Pour les porteurs makina, le chercheur juge « probable » que Obame soit une forme adaptée au fang du nom shiwe Bame, qui veut dire « cicatrice » ; ce jugement porte sur une liste de noms dont Obame fait partie. Pour les porteurs fang, l'article ne dit rien de la manière dont le nom a été choisi.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Anthroponymie comparée makina, fang et saké : quelques spécificités sur les noms de personnes chez les Makina du Gabon",
+                "author": "Fabrice Agyune Ndone",
+                "year": 2006,
+                "url": "http://www.ddl.cnrs.fr/fulltext/fflac/Agyune%20Ndone_2006.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5 (tableau n° 1)",
+                "notes": "Article d'un doctorant en anthropologie (université Omar Bongo et université Lumière Lyon 2), non daté, mis en ligne par le laboratoire Dynamique du langage ; il cite des travaux de 2005 et 2006. Lu le 18 octobre 2026 ; les pages sont celles du PDF. Page 5, tableau n° 1 : Obame figure dans la colonne des noms fang et dans celle des noms makina ; l'auteur ajoute que les noms de famille circulent « presque toujours en circuit fermé », d'ascendant à descendant."
               }
             ]
           }

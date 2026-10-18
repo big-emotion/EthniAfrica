@@ -26,13 +26,8 @@
   "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "La base archivistique Virginia Emigrants to Liberia enregistre Francis A. Johnson, une fillette de 3 ans au statut « libre » (le registre ne dit pas si elle est née libre), dans un départ du comté d'Amherst en Virginie vers le Liberia en 1854. Cette attestation ne suffit pas à relier toutes les lignées Johnson du Liberia à cette personne.",
-        "claimStatus": "established",
-        "sourceRefs": ["uva-liberia-johnson-1854"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -154,6 +149,27 @@
                 "role": "émigrante nommée dans le registre"
               }
             ],
+            "sources": [
+              {
+                "title": "Virginia Emigrants to Liberia — Francis A. Johnson",
+                "author": "University of Virginia, Virginia Emigrants to Liberia",
+                "year": null,
+                "url": "https://virginians-to-liberia.iath.virginia.edu/agents/3252",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "notice n° 3252",
+                "notes": "Édition numérique de l'University of Virginia fondée sur les archives de l'American Colonization Society, lue le 13 octobre 2026. La notice écrit Francis A. Johnson, de sexe féminin, âgée de 3 ans, de statut « Free », du comté d'Amherst (Virginie), partie de Norfolk vers le Liberia en 1854 sur le Sophia Walker (passage daté du 18 mai 1854)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La base archivistique Virginia Emigrants to Liberia enregistre Francis A. Johnson, une fillette de 3 ans au statut « libre » (le registre ne dit pas si elle est née libre), dans un départ du comté d'Amherst en Virginie vers le Liberia en 1854. Cette attestation ne suffit pas à relier toutes les lignées Johnson du Liberia à cette personne.",
+            "claimStatus": "established",
             "sources": [
               {
                 "title": "Virginia Emigrants to Liberia — Francis A. Johnson",

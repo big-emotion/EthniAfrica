@@ -35,13 +35,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Le nom est présenté comme signifiant « latex pur, la pureté ». Les deux publications qui rapportent ce sens le font dans les mêmes termes, sans le faire remonter à un travail linguistique ou ethnographique publié.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["civ-tourisme-fb-2021-gnahore", "afriksoir-2021-gnahore"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -222,6 +217,35 @@
                 "source_kind": "academic",
                 "page": "p. 108, note 1",
                 "notes": "Paris, Librairie générale de droit et de jurisprudence, 1969. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Note 1 du tableau V : « Deux leaders de l'opposition (Pascal Krasso Gnahore secrétaire général de la section ivoirienne du P.R.A. et Digua Bailly) ont rallié le P.D.C.I. ». L'auteur renvoie à Aristide Zolberg, que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom est présenté comme signifiant « latex pur, la pureté ». Les deux publications qui rapportent ce sens le font dans les mêmes termes, sans le faire remonter à un travail linguistique ou ethnographique publié.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Découverte : signification des noms bété (partie 1)",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.facebook.com/tourismecotedivoire.ci/posts/d%C3%A9couverte-signification-des-noms-b%C3%A9t%C3%A9-partie-1-drogba-la-clameur-une-d%C3%A9couverte/3574963495937695/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Publication de la page officielle Côte d'Ivoire Tourisme sur Facebook, datée du 21 juin 2021, qui donne une liste de noms bété avec leur signification supposée, dont Gnahoré pour le sens « latex pur, la pureté ». La publication indique elle-même reprendre un ouvrage intitulé « Les ethnies de la Côte d'Ivoire et d'Afrique », qui n'a pas pu être identifié comme une publication précise et vérifiable."
+              },
+              {
+                "title": "Côte d'Ivoire : voici la signification des noms Bété que vous connaissez",
+                "author": "Afrik Soir",
+                "year": 2021,
+                "url": "https://afriksoir.net/cote-divoire-voici-la-signification-des-noms-bete-que-vous-connaissez/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article du 14 février 2021, lu le 11 octobre 2026. Il donne une liste de noms bété avec leur sens, dont « Gnahoré : latex pur, la pureté », et la termine par « Source : Zahui Ouraga Aimé, Traditionnaliste ». L'article ne dit pas comment ce sens a été recueilli."
               }
             ]
           }

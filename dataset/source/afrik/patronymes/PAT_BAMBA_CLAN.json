@@ -27,7 +27,10 @@
           "countryId": "GHA",
           "sourceRefs": ["corpus-ppl-dioula-organisation"]
         },
-        { "countryId": "GNB", "sourceRefs": ["corpus-ppl-dioula-organisation"] }
+        {
+          "countryId": "GNB",
+          "sourceRefs": ["corpus-ppl-dioula-organisation"]
+        }
       ]
     }
   ],
@@ -36,13 +39,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le jamu est un nom de clan patrilinéaire : il désigne l'appartenance à un groupe de descendance, et non une filiation individuelle au père.",
-        "claimStatus": "established",
-        "sourceRefs": ["jansen-sunjata-paradigm"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -299,6 +297,26 @@
                 "source_kind": "academic",
                 "page": "p. 19",
                 "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, 2017, dirigé par A. Davydov et relu par V. Vydrin, lu en texte intégral le 11 octobre 2026 ; traduction du russe par nos soins. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet. Notice Bánbà, passage marqué [MO] : L. Molinie, « Les systèmes patronymiques au Soudan central », 1959, document ronéotypé que nous n'avons pas pu lire."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le jamu est un nom de clan patrilinéaire : il désigne l'appartenance à un groupe de descendance, et non une filiation individuelle au père.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Beyond the Mali Empire — A New Paradigm for the Sunjata Epic",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2952645/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Jansen, Jan, Universiteit Leiden. Travail critique sur la transmission de l'épopée et sur le jamu comme institution sociale plutôt que comme mémoire historique ; utilisé ici pour la nature du jamu, non pour dater un ancêtre."
               }
             ]
           }

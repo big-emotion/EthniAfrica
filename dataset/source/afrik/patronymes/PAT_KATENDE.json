@@ -35,13 +35,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Un ouvrage consacré aux noms de famille zambiens rattache ce nom au peuple senga et lui donne le sens « talon ».",
-        "claimStatus": "claimed",
-        "sourceRefs": ["lukama-2019-names-zambia"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -227,6 +222,26 @@
                 "source_kind": "archive",
                 "page": "p. 96-97",
                 "notes": "Londres, Chatto & Windus, 1891, traduction anglaise de Minna J. A. Bergmann. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Page 96 : « Prince Katende, of the Bashilamboa » ; page 97 : les Bashilamboa, « who with their chief Katende had refused to acknowledge Kalamba as their superior »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Un ouvrage consacré aux noms de famille zambiens rattache ce nom au peuple senga et lui donne le sens « talon ».",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "The Names of Zambia",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": null,
+                "tier": "unverified",
+                "source_kind": "unknown",
+                "notes": "Simboma Mubita Lukama, 2019. Cité par un répertoire de fréquence patronymique pour l'attribution de ce nom au peuple senga et le sens « talon » ; l'ouvrage lui-même n'a pas été consulté directement, et cette attribution n'a pas pu être recoupée par une autre source. La zone actuelle de plus forte présence du nom, l'Ouganda et la République démocratique du Congo, ne recoupe pas la zone senga, principalement zambienne et malawite, ce qui affaiblit la force de ce rapprochement sans le réfuter."
               }
             ]
           }

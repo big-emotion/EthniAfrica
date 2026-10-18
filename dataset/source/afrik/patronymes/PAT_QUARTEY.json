@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Accra Architecture Archive rattache le composé « Quartey-Papafio » au même clan que « Kwate-Kpakpafio ». La source ne démontre pas que cette analyse s'applique au nom isolé Quartey ; ce rapprochement reste donc contesté pour la présente fiche.",
-        "claimStatus": "contested",
-        "sourceRefs": ["accra-archive-quartey"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -76,10 +71,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Les recherches bibliographiques « Quartey Ga names », « Quartey Papafio etymology », la référence bibliographique de Quartey-Papafio (1914) et les sources communautaires accessibles n'ont fourni aucune analyse de la forme isolée Quartey ; seule la claim contestée sur le composé est conservée."
-    },
     {
       "fieldPath": "peoples",
       "reason": "La source communautaire traite de Quartey-Papafio dans un contexte ga, mais ne suffit pas à attribuer la forme isolée Quartey ; le rattachement ga de la fiche reste au statut « supposed »."
@@ -210,6 +201,26 @@
                 "page": "p. 133 ; p. 186 de la grammaire",
                 "notes": "Stuttgart, imprimé pour la Société missionnaire de Bâle par J. F. Steinkopf, 1858. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 133 : exemple de grammaire « Bo, Kwate, yile, thou Kwate didst beat him ». Page 186 : « Kwatei Kodso », un chef, dans le récit en ga de la guerre de Katamanso, datée « about 1826 ». Auteur de l'époque coloniale, cité ici pour les formes qu'il relève."
               },
+              {
+                "title": "What's in a (Ga) Name?",
+                "author": "Lawrencia Amartey",
+                "year": null,
+                "url": "https://www.accraarchive.com/blog/whats-in-a-ga-name",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Article publié par Accra Architecture Archive, daté du 5 juin sans année sur la page. Lu le 11 octobre 2026. Il donne Kpakpatsewe comme nom premier de la famille et écrit qu'une personne nommée Quartey-Papafio est d'un clan semblable à celle qui se nomme Kwate-Kpakpafio. Il ne parle que du nom composé, pas du nom Quartey seul."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Accra Architecture Archive rattache le composé « Quartey-Papafio » au même clan que « Kwate-Kpakpafio ». La source ne démontre pas que cette analyse s'applique au nom isolé Quartey ; ce rapprochement reste donc contesté pour la présente fiche.",
+            "claimStatus": "contested",
+            "sources": [
               {
                 "title": "What's in a (Ga) Name?",
                 "author": "Lawrencia Amartey",

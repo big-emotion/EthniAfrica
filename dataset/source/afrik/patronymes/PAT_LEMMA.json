@@ -22,13 +22,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Giorgis donne « Mengistu Lemma » comme exemple éthiopien et précise que l'ordre normal est le nom personnel suivi du nom du père ; Lemma fonctionne donc ici comme patronymique non héréditaire, pas comme nom de famille fixe.",
-        "claimStatus": "established",
-        "sourceRefs": ["lemma-giorgis-2007"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -183,6 +178,26 @@
                 "source_kind": "archive",
                 "page": "tome II, p. 504, note 9",
                 "notes": "Paris, Librairie orientale et américaine Maisonneuve, tome II, 1932 (le tome I date de 1930). Traduction de l'amharique. Lu le 13 octobre 2026 dans le texte océrisé de la numérisation d'archive.org, qui garde les numéros de page d'origine. Page 504 : parmi les gouverneurs qui défilent, le quatorzième, « le dédjazmatch (9), gouverneur de Gofa et de Changuèmma » ; la note (9) de la même page porte : « Lemma, frère du ras Oualdè-Guiorguis ». La page ne donne pas l'année du défilé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Giorgis donne « Mengistu Lemma » comme exemple éthiopien et précise que l'ordre normal est le nom personnel suivi du nom du père ; Lemma fonctionne donc ici comme patronymique non héréditaire, pas comme nom de famille fixe.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "The entry word in Ethiopian names",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.anzsi.org/wp-content/uploads/2019/05/indexer.2007.47.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Kebreab W. Giorgis, The Indexer 25(4), 2007, C3:8-C3:9, reprise révisée d'un article de 1974. Le PDF a été vérifié : p. C3:9 donne Mengistu Lemma et explicite l'ordre nom personnel puis nom du père. La source porte sur l'Éthiopie en général, pas sur les Oromo en particulier."
               }
             ]
           }

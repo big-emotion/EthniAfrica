@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Mustapha Tidjet analyse Ou comme un morphème berbère de filiation ou d’appartenance, singulier de Ait/At, et classe Ouyahia avec les formes signifiant « de la famille Yahya ».",
-        "claimStatus": "established",
-        "sourceRefs": ["ouyahia-tidjet", "ouyahia-ccdz"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -216,6 +211,36 @@
                 "source_kind": "academic",
                 "page": "p. 126",
                 "notes": "Thèse de doctorat, Université Mouloud Mammeri de Tizi-Ouzou, janvier 2013. Lue le 12 octobre 2026 dans une copie non officielle mise en ligne sur doczz ; la thèse figure au catalogue collectif algérien des thèses. Pages 14 et 15 : la loi du 23 mars 1882 rend le patronyme d'état civil obligatoire en Algérie. Page 119 : les Pères Blancs écrivent la particule ou à part, comme dans « Sidi Ali Ou-yahi », d'après Genevois (1996). Page 126 : ou, morphème berbère de filiation ou d'appartenance, singulier de Ait/At ; Oulmahdi « de la famille Mahdi », puis Oukaci, Ourabah, Oussadi, Ouyahia et Oubrahem. Page 166, parmi les noms bibliques : Yahia, le prophète qui a baptisé Jésus ; « Yahyaoui, Ouyahia, Ait Yahia « de la famille Yahya » ». Page 205, parmi les noms de souhait : « Saidi, Saidani, Saidoun, Boussaid ; Bensaid de Saïd « heureux » »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Mustapha Tidjet analyse Ou comme un morphème berbère de filiation ou d’appartenance, singulier de Ait/At, et classe Ouyahia avec les formes signifiant « de la famille Yahya ».",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "La patronymie dans les daïras de Timezrit, Sidi-Aïch et Chemini : étude morphologique et sémantique",
+                "author": "Mustapha Tidjet",
+                "year": 2013,
+                "url": "https://fr.doczz.net/doc/6484275/la-patronymie-dans-les-dairas-de-timezrit--sidi",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 126",
+                "notes": "Thèse de doctorat, Université Mouloud Mammeri de Tizi-Ouzou, janvier 2013. Lue le 12 octobre 2026 dans une copie non officielle mise en ligne sur doczz ; la thèse figure au catalogue collectif algérien des thèses. Pages 14 et 15 : la loi du 23 mars 1882 rend le patronyme d'état civil obligatoire en Algérie. Page 119 : les Pères Blancs écrivent la particule ou à part, comme dans « Sidi Ali Ou-yahi », d'après Genevois (1996). Page 126 : ou, morphème berbère de filiation ou d'appartenance, singulier de Ait/At ; Oulmahdi « de la famille Mahdi », puis Oukaci, Ourabah, Oussadi, Ouyahia et Oubrahem. Page 166, parmi les noms bibliques : Yahia, le prophète qui a baptisé Jésus ; « Yahyaoui, Ouyahia, Ait Yahia « de la famille Yahya » ». Page 205, parmi les noms de souhait : « Saidi, Saidani, Saidoun, Boussaid ; Bensaid de Saïd « heureux » »."
+              },
+              {
+                "title": "Notice CCDZ : La patronymie dans les daïras de Timezrit, Sidi-Aïch et Chemini",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.ccdz.cerist.dz/admin/notice.php?id=00000000000000787140000632",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Catalogue collectif algérien des thèses, géré par le CERIST. La notice a été consultée pour authentifier la thèse de Mustapha Tidjet ; le contenu du claim provient du texte intégral, pas de cette notice seule."
               }
             ]
           }

@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une contribution communautaire rattache Ouazzani à la ville marocaine de Ouazzane. Cette proposition toponymique est conservée au niveau non vérifié et ne démontre aucune généalogie commune.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["btn-ouazzani"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -214,6 +209,26 @@
                 "source_kind": "government",
                 "page": "rubrique « Political parties and leaders »",
                 "notes": "Fiche « Morocco » de l'annuaire de la CIA, version de 2004 (mise à jour au 1er janvier 2003). Lu le 14 octobre 2026 sur la transcription de Wikisource. Rubrique « Political parties and leaders ». Parti Al Ahd, « Najib EL OUAZZANI, chairman ». Ce texte nomme des chefs de partis ; il ne dit rien de l'origine des noms."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une contribution communautaire rattache Ouazzani à la ville marocaine de Ouazzane. Cette proposition toponymique est conservée au niveau non vérifié et ne démontre aucune généalogie commune.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the surname Ouazzani — Behind the Name",
+                "author": "Behind the Name",
+                "year": 2018,
+                "url": "https://surnames.behindthename.com/name/ouazzani/submitted",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice contributive. Lu le 14 octobre 2026; ajoutée le 15 mars 2017, modifiée le 4 avril 2018 par un contributeur qui signe « HL ». Elle dit : « Denotes someone originally from Ouazzane, a town in northern Morocco. » Elle n'a pas de référence savante : elle est citée pour ce qu'elle dit, et la notice de 1911 sur Wazzān ne parle que de la ville."
               }
             ]
           }
