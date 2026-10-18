@@ -147,8 +147,10 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 678 -> 675 the same day: the Khainai, Koyra, Yerima and Kirdi fiches folded or retired after wave 12.
     // 675 -> 654 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
     // 654 -> 653 on 2026-10-14: the Nabt fiche's self-name left with it.
-    // 653 -> 646 on 2026-10-18: seven of the eight people fiches folded or withdrawn after wave 24 declared one.
-    value: 646,
+    // 653 -> 654 on 2026-10-18: the Lingala fiche's hero now prints « Bato ya
+    // mangala », the self-name its name history already told.
+    // 654 -> 647 on 2026-10-18: seven of the eight people fiches folded or withdrawn after wave 24 declared one.
+    value: 647,
     method:
       "fiches dont content.appellations.selfAppellation est renseigné et non vide",
     countedOn: COUNTED_ON,

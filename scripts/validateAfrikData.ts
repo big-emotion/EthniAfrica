@@ -4111,6 +4111,32 @@ const NAME_HISTORY_FICHE_DIRECTORIES = [
   "mots",
 ];
 
+// Where a class keeps the name a fiche's subject gives itself, beside its
+// nameHistory. Countries, languages and the other classes have no such field.
+const SELF_APPELLATION_SECTION: Readonly<Record<string, string>> = {
+  peuples: "appellations",
+  famille_linguistique: "decolonialHeader",
+};
+
+// True only when the field is there and empty: a fiche without the section
+// says nothing about its self-name, and the block's own checks cover it.
+function recordsNoSelfAppellation(
+  fiche: Record<string, unknown>,
+  directory: string
+): boolean {
+  const sectionKey = SELF_APPELLATION_SECTION[directory];
+  const content = fiche.content as Record<string, unknown> | undefined;
+  const section = sectionKey ? content?.[sectionKey] : undefined;
+  if (!section || typeof section !== "object") return false;
+  if (!("selfAppellation" in section)) return false;
+  const value = (section as { selfAppellation?: unknown }).selfAppellation;
+  return value === null || (typeof value === "string" && !value.trim());
+}
+
+// « Usage décrit au présent par l'auteur »: the author's present is the year
+// the cited work came out, which a reader cannot see from the label.
+const AUTHOR_PRESENT_LABEL = /\bau présent par\b/i;
+
 /**
  * REQ-196 — every fiche that declares `nameHistory` passes the one shared
  * schema. A fiche without the block is not a defect: it is filled subject by
@@ -4157,6 +4183,26 @@ export function checkNameHistoryBlocks(datasetRoot: string): ValidationResult {
           );
         }
       }
+      // The hero prints the fiche's selfAppellation (« Auto-appellation :
+      // non renseigné » when it is empty) while the result page marks a
+      // self-given name « le nom qu'ils se donnent »: the two must not
+      // disagree (FLG_MANDE, triage of 2026-10-17).
+      if (recordsNoSelfAppellation(fiche, directory)) {
+        for (const { nameText } of names.filter((name) => name.selfGiven)) {
+          errors.push(
+            `REQ-178: ${file}: "${nameText}" is self-given in nameHistory, but the fiche's selfAppellation is empty — name the self-name in both, or mark neither`
+          );
+        }
+      }
+      for (const { nameText, accounts } of names) {
+        accounts.forEach((account, index) => {
+          if (AUTHOR_PRESENT_LABEL.test(account.period.label)) {
+            errors.push(
+              `REQ-178: ${file}: "${nameText}" #${index}: the period label « ${account.period.label} » places nothing — date it by the cited work (« Usage décrit en <année> ») or say what the account tells`
+            );
+          }
+        });
+      }
       const seen = new Set<string>();
       for (const { nameText } of names) {
         if (seen.has(nameText)) {
@@ -4188,6 +4234,214 @@ export function checkNameHistoryBlocks(datasetRoot: string): ValidationResult {
       }
     }
   }
+
+  return { ok: errors.length === 0, errors, warnings };
+}
+
+// ─── French accents in fiche prose (triage of 2026-10-17) ────────────────────
+
+// A letter or digit on either side means the match is inside another word.
+const W_BEFORE = "(?<![\\p{L}\\p{N}])";
+const W_AFTER = "(?![\\p{L}\\p{N}])";
+// « il fonde », « il nomme » are French without an accent; only the past
+// participle needs one, so those two count after an auxiliary or before
+// « par ».
+const AUXILIARY =
+  "(?:a|ont|avait|avaient|est|sont|fut|furent|été|ete|était|etait|étaient|etaient|être|etre|sera|serait|soit)\\s+";
+// « on s'y nomme par la filiation » is the present tense, not a participle.
+const NOT_REFLEXIVE = `(?<!${W_BEFORE}(?:se|me|te|nous|vous|s['’]y|s['’]en)\\s+)`;
+
+/**
+ * French words the fiches printed without their accent, and the French names
+ * of countries (« Sénégal »). Each spelling is French only once accented, so
+ * a match in French prose is a fault. The list is fixed on purpose and holds
+ * no African place or people name: a general spell-checker would flag those,
+ * and a place keeps the spelling its fiche gives it (Benin City, the Edo
+ * kingdom of Benin, Tillabery, Segou).
+ */
+const UNACCENTED_FRENCH: ReadonlyArray<{ spelling: string; word: string }> = [
+  { spelling: "etats?", word: "État, état" },
+  { spelling: "regions?", word: "région" },
+  { spelling: "majorite", word: "majorité" },
+  { spelling: "siecles?", word: "siècle" },
+  { spelling: "voltaique", word: "voltaïque" },
+  { spelling: "fondees?", word: "fondée" },
+  {
+    spelling: `(?:(?<=${W_BEFORE}${AUXILIARY})fondes?|${NOT_REFLEXIVE}fondes?(?=\\s+par${W_AFTER}))`,
+    word: "fondé",
+  },
+  { spelling: "nommees?", word: "nommée" },
+  {
+    spelling: `(?:(?<=${W_BEFORE}${AUXILIARY})nommes?|${NOT_REFLEXIVE}nommes?(?=\\s+par${W_AFTER}))`,
+    word: "nommé",
+  },
+  { spelling: "appelee?s?", word: "appelé" },
+  { spelling: "designee?s?|designer|designait|designaient", word: "désigné" },
+  { spelling: "a partir", word: "à partir" },
+  { spelling: "deja", word: "déjà" },
+  { spelling: "egalement", word: "également" },
+  { spelling: "guinee", word: "Guinée" },
+  { spelling: "senegal", word: "Sénégal" },
+  { spelling: "ethiopie", word: "Éthiopie" },
+  { spelling: "erythr[eé]e", word: "Érythrée" },
+];
+
+const UNACCENTED_FRENCH_PATTERNS = UNACCENTED_FRENCH.map(
+  ({ spelling, word }) => ({
+    pattern: new RegExp(`${W_BEFORE}(?:${spelling})${W_AFTER}`, "giu"),
+    word,
+  })
+);
+
+// What a fiche quotes and where it links keep their own spelling.
+const QUOTED_OR_LINKED = /«[^»]*»|“[^”]*”|"[^"]*"|https?:\/\/\S+/gu;
+
+// The fiche's own prose: the name history's sentences, the summary, the
+// chapters of history and culture. Names, sources and titles are left out.
+const PROSE_CHAPTERS = [
+  "origins",
+  "historicalRole",
+  "historyAndOrigins",
+  "historicalFacts",
+  "culture",
+];
+const NOT_PROSE_KEYS = new Set(["sources", "source", "url", "title"]);
+
+function proseStrings(value: unknown, where: string): Array<[string, string]> {
+  if (typeof value === "string") return [[where, value]];
+  if (Array.isArray(value)) {
+    return value.flatMap((item, index) =>
+      proseStrings(item, `${where}[${index}]`)
+    );
+  }
+  if (value && typeof value === "object") {
+    return Object.entries(value).flatMap(([key, item]) =>
+      NOT_PROSE_KEYS.has(key) ? [] : proseStrings(item, `${where}.${key}`)
+    );
+  }
+  return [];
+}
+
+function ficheProse(fiche: Record<string, unknown>): Array<[string, string]> {
+  const prose: Array<[string, string]> = [];
+  const history = fiche.nameHistory as
+    | {
+        summary?: unknown;
+        names?: Array<{ shortLine?: unknown; accounts?: unknown[] }>;
+      }
+    | undefined;
+  if (typeof history?.summary === "string") {
+    prose.push(["nameHistory.summary", history.summary]);
+  }
+  (Array.isArray(history?.names) ? history.names : []).forEach((name, i) => {
+    if (typeof name?.shortLine === "string") {
+      prose.push([`nameHistory.names[${i}].shortLine`, name.shortLine]);
+    }
+    (Array.isArray(name?.accounts) ? name.accounts : []).forEach(
+      (account, j) => {
+        const statement = (account as { statement?: unknown })?.statement;
+        if (typeof statement === "string") {
+          prose.push([
+            `nameHistory.names[${i}].accounts[${j}].statement`,
+            statement,
+          ]);
+        }
+      }
+    );
+  });
+  if (typeof fiche.summary === "string") prose.push(["summary", fiche.summary]);
+  const content = (fiche.content ?? {}) as Record<string, unknown>;
+  for (const chapter of PROSE_CHAPTERS) {
+    prose.push(...proseStrings(content[chapter], `content.${chapter}`));
+  }
+  return prose;
+}
+
+function unaccentedWords(text: string): Array<{ found: string; word: string }> {
+  const masked = text.replace(QUOTED_OR_LINKED, (span) =>
+    " ".repeat(span.length)
+  );
+  return UNACCENTED_FRENCH_PATTERNS.flatMap(({ pattern, word }) =>
+    [...masked.matchAll(pattern)].map((match) => ({
+      index: match.index ?? 0,
+      found: match[0],
+      word,
+    }))
+  )
+    .sort((a, b) => a.index - b.index)
+    .map(({ found, word }) => ({ found, word }));
+}
+
+const UNACCENTED_FRENCH_BASELINE_FILE = path.join(
+  __dirname,
+  "data/unaccentedFrenchBaseline.json"
+);
+
+/** The fiches still to fix, with the count each may hold until then. */
+function loadUnaccentedFrenchBaseline(): Record<string, number> {
+  const recorded = JSON.parse(
+    fs.readFileSync(UNACCENTED_FRENCH_BASELINE_FILE, "utf-8")
+  ) as { fiches: Record<string, number> };
+  return recorded.fiches;
+}
+
+/**
+ * REQ-178 — the fiches' French prose carries its accents (« siècle », not
+ * « siecle »). Thousands of words predate the check, so the backlog is a
+ * two-edge ratchet held fiche by fiche: a fiche above its recorded count, or
+ * absent from the backlog with a fault, fails; a fiche below it fails too,
+ * until its entry is lowered in the same change, so a fix cannot be undone.
+ */
+export function checkUnaccentedFrenchProse(
+  datasetRoot: string,
+  baseline: Record<string, number> = loadUnaccentedFrenchBaseline()
+): ValidationResult {
+  const errors: string[] = [];
+  const counts = new Map<string, number>();
+
+  for (const directory of NAME_HISTORY_FICHE_DIRECTORIES) {
+    for (const fullPath of collectJsonFiles(
+      path.join(datasetRoot, directory)
+    )) {
+      if (path.basename(fullPath).startsWith("_")) continue;
+      const fiche = readFiche(fullPath);
+      if (!fiche || typeof fiche !== "object" || Array.isArray(fiche)) continue;
+
+      const file = path
+        .relative(datasetRoot, fullPath)
+        .split(path.sep)
+        .join("/");
+      const faults = ficheProse(fiche).flatMap(([where, text]) =>
+        unaccentedWords(text).map(
+          ({ found, word }) => `${where} « ${found} » (${word})`
+        )
+      );
+      counts.set(file, faults.length);
+      const allowed = baseline[file] ?? 0;
+      if (faults.length > allowed) {
+        errors.push(
+          `REQ-178: ${file}: ${faults.length} French word(s) without their accent, above its backlog of ${allowed}: ${faults.join("; ")}`
+        );
+      }
+    }
+  }
+
+  for (const [file, allowed] of Object.entries(baseline)) {
+    const count = counts.get(file) ?? 0;
+    if (count < allowed) {
+      errors.push(
+        `REQ-178: ${file}: ${count} French word(s) without their accent, below its backlog of ${allowed} — lower its entry in scripts/data/unaccentedFrenchBaseline.json to ${count}, or remove it at 0`
+      );
+    }
+  }
+
+  const remaining = Object.values(baseline).reduce((sum, n) => sum + n, 0);
+  const warnings =
+    remaining > 0
+      ? [
+          `REQ-178: ${remaining} French word(s) without their accent remain in ${Object.keys(baseline).length} fiche(s), listed in scripts/data/unaccentedFrenchBaseline.json`,
+        ]
+      : [];
 
   return { ok: errors.length === 0, errors, warnings };
 }
@@ -5528,6 +5782,12 @@ async function main() {
   newChecks.push({
     name: "REQ-196 nameHistory block",
     result: checkNameHistoryBlocks(datasetRoot),
+  });
+
+  console.log("REQ-178 - French accents in fiche prose (backlog ratchet)...");
+  newChecks.push({
+    name: "REQ-178 French accents in fiche prose",
+    result: checkUnaccentedFrenchProse(datasetRoot),
   });
 
   console.log(
