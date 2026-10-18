@@ -33,7 +33,6 @@ function PageEnd() {
         history={PEUL_HISTORY}
         searched="peul"
         subjectType="people"
-        sourcesOpen
         language="fr"
       />
       <NameClosingBand

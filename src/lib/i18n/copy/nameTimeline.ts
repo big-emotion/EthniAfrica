@@ -33,6 +33,7 @@ export interface NameTimelineCopy {
   actors: string;
   noBirth: (name: string) => string;
   end: (name: string) => string;
+  foldMore: (count: number) => string;
   elsewhereTitle: string;
   /** The first « meanwhile » sentence, about the name, by kind of tile. */
   elsewhereLead: {
@@ -79,6 +80,10 @@ export const nameTimelineCopy: Record<Language, NameTimelineCopy> = {
       `L'origine du nom ${name} n'est pas datée dans le projet pour l'instant.`,
     end: (name) =>
       `Fin de ce que nos recherches retracent pour le nom ${name}.`,
+    foldMore: (count) =>
+      count === 1
+        ? "+ Voir l’autre récit"
+        : `+ Voir les ${count} autres récits`,
     elsewhereTitle: "Ailleurs à la même époque",
     elsewhereLead: {
       plain: (name) => `Le nom ${name} est alors en usage.`,

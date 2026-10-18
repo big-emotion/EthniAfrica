@@ -43,6 +43,80 @@ export interface SourceFamilyGroup {
   }>;
 }
 
+export interface NameSourceRow {
+  source: NameHistorySource;
+  /** Accounts are kept in the order in which they appear in the timeline. */
+  accounts: Array<{ account: NameHistoryAccount; tileKey: string }>;
+}
+
+/** A stable DOM target shared by a timeline tile and its source link. */
+// @req REQ-198
+export function timelineTileAnchorId(
+  nameText: string,
+  tileKey: string
+): string {
+  return `timeline-${`${nameText}-${tileKey}`
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^\w-]+/g, "-")
+    .replace(/^-+|-+$/g, "")}`;
+}
+
+/**
+ * One row per distinct source, with every timeline account it backs. The
+ * timeline order supplies the first-account order inside each source family.
+ */
+// @req REQ-198
+export function sourceRowsForTimelineName(name: TimelineName): NameSourceRow[] {
+  const rows = new Map<
+    string,
+    NameSourceRow & { family: SourceKindFamily; firstAccount: number }
+  >();
+  let accountOrder = 0;
+
+  for (const tile of name.tiles) {
+    for (const account of tile.accounts) {
+      for (const source of account.sources) {
+        const key = JSON.stringify([
+          source.source_kind,
+          source.title,
+          source.author,
+          source.year,
+          source.url,
+          source.carrier,
+          source.place,
+          source.narrative,
+        ]);
+        const existing = rows.get(key);
+        if (existing) {
+          if (!existing.accounts.some((item) => item.account === account)) {
+            existing.accounts.push({ account, tileKey: tile.key });
+          }
+        } else {
+          rows.set(key, {
+            source,
+            accounts: [{ account, tileKey: tile.key }],
+            family: sourceKindFamily(source.source_kind),
+            firstAccount: accountOrder,
+          });
+        }
+      }
+      accountOrder += 1;
+    }
+  }
+
+  const familyOrder = new Map(
+    SOURCE_KIND_FAMILIES.map((family, index) => [family, index])
+  );
+  return [...rows.values()]
+    .sort(
+      (a, b) =>
+        familyOrder.get(a.family)! - familyOrder.get(b.family)! ||
+        a.firstAccount - b.firstAccount
+    )
+    .map(({ source, accounts }) => ({ source, accounts }));
+}
+
 /**
  * The open name's accounts, regrouped by the family of their sources, in the
  * fixed order of `SOURCE_KIND_FAMILIES`: an order of kinds, never of trust

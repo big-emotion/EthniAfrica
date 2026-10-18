@@ -52,7 +52,12 @@ function renderFeed(
   );
 }
 
-const lens = (name: string) => screen.getByRole("button", { name });
+const lens = (name: string) => {
+  const button = screen.queryByRole("button", { name });
+  if (button) return button;
+  fireEvent.click(screen.getByRole("button", { name: /^Voir aussi/ }));
+  return screen.getByRole("button", { name });
+};
 
 describe("SearchFeed — the name-history timeline lens", () => {
   // @req REQ-198
