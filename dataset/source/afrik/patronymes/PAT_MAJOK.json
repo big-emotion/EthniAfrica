@@ -103,5 +103,177 @@
       "fieldPath": "homonyms",
       "reason": "Les sources consultées, dont l'article d'Impey, le livret de Smithsonian Folkways et les chants dinka conservés à Édimbourg, ne décrivent pas d'autre nom écrit Majok qui aurait une origine différente."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Majok est un nom de personne des Dinka du Soudan du Sud. Il nomme d'abord une robe de bœuf, celle qui revient au fils aîné de la première épouse ; les sources ne décrivent pas toutes cette robe de la même façon. Les Dinka n'ont pas de nom de famille fixe : Majok suit, dans le nom complet, le prénom des enfants d'un homme qui le porte.",
+    "names": [
+      {
+        "nameText": "Majok",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "din",
+        "namedBy": null,
+        "shortLine": "Un nom de personne dinka, tiré de la robe de bœuf réservée au fils aîné de la première épouse.",
+        "periodLabel": "Écrit dès 1932 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "Rapporté en 2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Majok, comme tout nom de personne dinka, n'est pas un nom de famille fixe : chez les Dinka, le prénom d'une personne est suivi de ceux de son père, de son grand-père et parfois de son arrière-grand-père, selon la présentation des chants dinka réunis par Bert Remijsen et son équipe.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Collection of Dinka Songs — README",
+                "author": "Bert Remijsen et l'équipe du projet Metre and Melody in Dinka Speech and Song",
+                "year": 2012,
+                "url": "https://datashare.ed.ac.uk/bitstream/handle/10283/184/ACollectionofDinkaSongs_readme.pdf",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "p. 1-2",
+                "notes": "Présentation des enregistrements réunis par l'University of Edinburgh et la SOAS, déposée sur Edinburgh DataShare, relue le 18 octobre 2026. Elle écrit : « Dinka people do not have a fixed family name. Instead, the first name of an individual is followed by the first names of his or her father, grandfather, and sometimes also of the great-grandfather » ; la présentation explique ensuite les noms des chanteurs par cette suite."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1988,
+              "to": 1988,
+              "label": "Rapporté en 1988"
+            },
+            "statement": "Le nom Majok a été pris par un chef des Dinka Ngok, Deng. Son grand-père l'appelait Deng Majong, « Deng au chien », parce qu'il partageait son lait avec son chien ; les Twic et les Rek voisins ont pris Majong pour la forme ngok de Majok et l'ont appelé Deng Majok, un nom qui lui donnait le rang d'un fils aîné qu'il n'était pas. C'est le récit de son fils Francis Mading Deng, que rapporte Godfrey Lienhardt.",
+            "sources": [
+              {
+                "title": "Social and cultural implications of some African personal names",
+                "author": "Godfrey Lienhardt",
+                "year": 1988,
+                "url": "https://ora.ox.ac.uk/objects/uuid%3A29267519-7f9c-46c7-826d-75f043d7ce60",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 109",
+                "notes": "Journal of the Anthropological Society of Oxford 19(2), 1988, p. 105-116 ; texte intégral lu dans le fichier déposé à l'Oxford University Research Archive le 18 octobre 2026. Page 109, récit fourni par Francis Mading Deng sur le nom de son père : son grand-père l'appelait « Deng Majong - Deng the doggish » ; les Twic et les Rek, « misinterpreting Majong to be the Ngok Dinka version of Majok, the Pied, Black and White, the most senior colour-pattern assigned to the eldest son of the first wife, began to call him Deng Majok ». "
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1976,
+              "to": 1988,
+              "label": "Rapporté en 1976 et en 1988"
+            },
+            "era": "modern",
+            "statement": "Le nom Majok désignerait une robe noire et blanche : tête et épaules noires, flancs blancs. C'est la robe la plus haute en rang, celle du bœuf qui revient au fils aîné de la première épouse, et un homme est aussi connu par le nom de la robe de son bœuf, selon Francis Mading Deng, dont Godfrey Lienhardt reprend le récit.",
+            "aspect": "meaning",
+            "hypothesisGroup": "robe désignée par majok",
+            "sources": [
+              {
+                "title": "The Role of Song and Dance in Dinka Society",
+                "author": "Francis Mading Deng",
+                "year": 1976,
+                "url": "https://folkways-media.si.edu/docs/folkways/artwork/FW04301.pdf",
+                "tier": "official",
+                "source_kind": "archive",
+                "page": "p. 4 du livret numérisé",
+                "notes": "Notes de Francis Mading Deng pour les disques Folkways FE 4301-4303, « © 1976 by Folkways Records », livret conservé et mis en ligne par Smithsonian Folkways, relu le 18 octobre 2026. Page 4 : « the eldest of the first wife gets as one of his colour-patterns Majok or Mijok which is a black head and shoulders with a white flanking and either black or white hindquarters » ; « In addition to his personal name, he is known by the name of the colour-pattern of his ox »."
+              },
+              {
+                "title": "Social and cultural implications of some African personal names",
+                "author": "Godfrey Lienhardt",
+                "year": 1988,
+                "url": "https://ora.ox.ac.uk/objects/uuid%3A29267519-7f9c-46c7-826d-75f043d7ce60",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 108-109",
+                "notes": "Journal of the Anthropological Society of Oxford 19(2), 1988, p. 105-116 ; texte intégral lu dans le fichier déposé à l'Oxford University Research Archive le 18 octobre 2026. Page 108 : « The ox Majok, a name for one such configuration [de noir et de blanc], is regarded as one of the finest of sacrificial offerings, and is the appropriate gift from the father for the initiation into manhood of a first-born son ». Page 109, récit fourni par Francis Mading Deng sur le nom de son père : son grand-père l'appelait « Deng Majong - Deng the doggish » ; les Twic et les Rek, « misinterpreting Majong to be the Ngok Dinka version of Majok, the Pied, Black and White, the most senior colour-pattern assigned to the eldest son of the first wife, began to call him Deng Majok ». "
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1932,
+              "to": 1932,
+              "label": "Proposée en 1932"
+            },
+            "era": "colonial",
+            "statement": "Le nom Majok désignerait une robe rouge au ventre blanc, et seulement chez un bœuf aux cornes dressées, selon Charles et Brenda Seligman.",
+            "aspect": "meaning",
+            "hypothesisGroup": "robe désignée par majok",
+            "sources": [
+              {
+                "title": "Pagan Tribes of the Nilotic Sudan",
+                "author": "C. G. Seligman et Brenda Z. Seligman",
+                "year": 1932,
+                "url": "https://archive.org/details/in.ernet.dli.2015.57118",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 169",
+                "notes": "Londres, George Routledge & Sons, 1932 ; lu sur la numérisation d'Internet Archive le 18 octobre 2026. Page 169, note : un auteur avait écrit qu'un bœuf aux cornes dressées l'une en avant et l'autre en arrière s'appelait majok ; « This was a mistake ; an ox we saw happened to be a majok, but this term really applies only to a particularly coloured (red with white belly) muor cien » ; la même note donne, d'après Lord Raglan, d'autres robes : « black, macar ; black with white spots, makwaic »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1932,
+              "to": 1932,
+              "label": "Publié en 1932"
+            },
+            "era": "colonial",
+            "statement": "Le nom Majok apparaît par écrit, comme nom d'une robe de bœuf chez les Dinka, dans le livre de Charles et Brenda Seligman sur les peuples du Soudan nilotique : ils corrigent un auteur qui l'avait pris pour le nom d'un bœuf aux cornes dressées. C'est la plus ancienne trace de ce nom que le projet connaît ; il y désigne une robe de bœuf, pas encore une personne.",
+            "formAsWritten": "majok",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Pagan Tribes of the Nilotic Sudan",
+                "author": "C. G. Seligman et Brenda Z. Seligman",
+                "year": 1932,
+                "url": "https://archive.org/details/in.ernet.dli.2015.57118",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 169",
+                "notes": "Londres, George Routledge & Sons, 1932 ; lu sur la numérisation d'Internet Archive le 18 octobre 2026. Page 169, note : un auteur avait écrit qu'un bœuf aux cornes dressées l'une en avant et l'autre en arrière s'appelait majok ; « This was a mistake ; an ox we saw happened to be a majok, but this term really applies only to a particularly coloured (red with white belly) muor cien » ; la même note donne, d'après Lord Raglan, d'autres robes : « black, macar ; black with white spots, makwaic »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mijok",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "din",
+        "namedBy": null,
+        "shortLine": "Une autre forme du nom, que Francis Mading Deng donne à côté de Majok.",
+        "periodLabel": "Écrit en 1976",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1976,
+              "to": 1976,
+              "label": "Rapporté en 1976"
+            },
+            "era": "modern",
+            "statement": "Le nom Mijok est une autre forme de Majok, que Francis Mading Deng donne pour la même robe de bœuf, celle du fils aîné de la première épouse.",
+            "aspect": "usage",
+            "formAsWritten": "Mijok",
+            "sources": [
+              {
+                "title": "The Role of Song and Dance in Dinka Society",
+                "author": "Francis Mading Deng",
+                "year": 1976,
+                "url": "https://folkways-media.si.edu/docs/folkways/artwork/FW04301.pdf",
+                "tier": "official",
+                "source_kind": "archive",
+                "page": "p. 4 du livret numérisé",
+                "notes": "Notes de Francis Mading Deng pour les disques Folkways FE 4301-4303, « © 1976 by Folkways Records », livret conservé et mis en ligne par Smithsonian Folkways, relu le 18 octobre 2026. Page 4 : « the eldest of the first wife gets as one of his colour-patterns Majok or Mijok which is a black head and shoulders with a white flanking and either black or white hindquarters » ; « In addition to his personal name, he is known by the name of the colour-pattern of his ox »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
