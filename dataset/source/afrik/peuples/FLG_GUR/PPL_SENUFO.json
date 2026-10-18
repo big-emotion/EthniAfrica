@@ -299,14 +299,14 @@
             "statement": "Le nom Sénoufo désigne, pour l'administrateur colonial Maurice Delafosse, les habitants du pays de Kong au milieu desquels vivent les marchands dyoula ; les enfants des unions entre Dyoula et Sénoufo portent les marques du visage des Sénoufo.",
             "sources": [
               {
-                "title": "Note sur les familles Krou, Mandé et Agni-Achanti (Afrique occidentale)",
+                "title": "Note sur les familles Krou, Mandé et Agni-Achanti (Afrique occidentale), Bulletin du Muséum d'histoire naturelle, vol. 6",
                 "author": "Maurice Delafosse",
                 "year": 1900,
                 "url": "https://archive.org/details/biostor-268194",
                 "tier": "referenced",
-                "source_kind": "academic",
-                "page": "p. 339",
-                "notes": "Bulletin du Muséum d'histoire naturelle, tome 6. Lu sur la numérisation BioStor sur Internet Archive, lu le 10 octobre 2026. La page indiquée est celle imprimée sur le document."
+                "source_kind": "archive",
+                "page": "p. 335",
+                "notes": "Bulletin du Muséum d'histoire naturelle, tome 6. Lu sur la numérisation BioStor sur Internet Archive le 10 octobre 2026 ; le numéro de page imprimé, 335, a été relu sur l'image le 18 octobre 2026."
               }
             ]
           },
@@ -397,14 +397,14 @@
             "aspect": "usage",
             "sources": [
               {
-                "title": "Note sur les familles Krou, Mandé et Agni-Achanti (Afrique occidentale)",
+                "title": "Note sur les familles Krou, Mandé et Agni-Achanti (Afrique occidentale), Bulletin du Muséum d'histoire naturelle, vol. 6",
                 "author": "Maurice Delafosse",
                 "year": 1900,
                 "url": "https://archive.org/details/biostor-268194",
                 "tier": "referenced",
-                "source_kind": "academic",
-                "page": "p. 339",
-                "notes": "Bulletin du Muséum d'histoire naturelle, tome 6. Lu sur la numérisation BioStor sur Internet Archive, lu le 10 octobre 2026. La page indiquée est celle imprimée sur le document."
+                "source_kind": "archive",
+                "page": "p. 335",
+                "notes": "Bulletin du Muséum d'histoire naturelle, tome 6. Lu sur la numérisation BioStor sur Internet Archive le 10 octobre 2026 ; le numéro de page imprimé, 335, a été relu sur l'image le 18 octobre 2026."
               }
             ]
           },

@@ -1,7 +1,7 @@
 {
   "id": "PPL_YOHOURE",
   "nameMain": "Yohouré",
-  "languageFamilyId": "FLG_BENOUECONGO",
+  "languageFamilyId": "FLG_MANDE",
   "currentCountries": ["CIV"],
   "classificationStatus": "contested",
   "content": {
@@ -12,7 +12,7 @@
       "originOfExonyms": "Le nom Yaouré (ou Yohouré) serait une deformation de Yao Wale (ou Yao Ware), nom du patriarche fondateur qui mena le groupe dans sa region actuelle de Bouafle. Le terme aurait evolue en Yaourefouè (gens de Yao Wale) puis en Yaouré. Yowle est l'auto-denomination locale.",
       "whyProblematic": "La classification linguistique du groupe est debattue : geographiquement et culturellement a la frontiere entre les mondes Mande (Gouro) et Akan (Baoulé), les Yaouré parlent soit une langue mande-sud (variante sud-est mande : yre), soit le baoulé selon leur zone d'habitation. Le Smithsonian les situe entre Baoulé (Akan) a l'est et Gouro/Gban (Mande sud) a l'ouest.",
       "contemporaryUsage": "Yohouré est la forme courante en Cote d'Ivoire et dans les travaux artistiques et museologiques (musees europeens). Yaouré ou Yaure est prefere dans les publications academiques anglophones.",
-      "linguisticFamily": "FLG_BENOUECONGO",
+      "linguisticFamily": "FLG_MANDE",
       "ethnoLinguisticGroup": "Mande sud (branche Guro-Tura) ; influence Akan (Baoulé)",
       "historicalRegion": "Centre-Ouest de la Cote d'Ivoire, entre les Bandama Blanc et Bandama Rouge",
       "currentCountries": ["CIV"]

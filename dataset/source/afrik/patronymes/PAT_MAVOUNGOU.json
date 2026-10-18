@@ -11,7 +11,10 @@
     {
       "spelling": "Mavoungou",
       "attestations": [
-        { "countryId": "COG", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "COG",
+          "sourceRefs": ["congo-journal-officiel-2024-49"]
+        }
       ]
     }
   ],
@@ -33,7 +36,7 @@
     {
       "countryId": "COG",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["congo-journal-officiel-2024-49"]
     }
   ],
   "alliances": [],
@@ -48,6 +51,14 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "congo-journal-officiel-2024-49",
+      "title": "Journal officiel de la République du Congo, n° 49-2024",
+      "url": "https://www.sgg.cg/JO/2024/congo-jo-2024-49.pdf",
+      "tier": "official",
+      "source_kind": "government",
+      "notes": "Journal officiel de la République du Congo, 66e année, n° 49, jeudi 5 décembre 2024, publié par le Secrétariat général du Gouvernement. Page 1506 : le décret n° 2024-2764 du 21 novembre 2024 nomme, au grade d'officier de l'ordre du Dévouement congolais, un homme inscrit sous le nom MAVOUNGOU, en capitales, suivi de son prénom entre parenthèses."
     }
   ],
   "gaps": [
@@ -75,5 +86,109 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mavoungou, écrit autrefois Mavungu ou Mavungo, est un nom de personne de la côte de Loango, porté aujourd'hui comme nom de famille en république du Congo. Des hommes de conditions très diverses le portent dans un livre sur le Loango publié en 1907, et c'est aussi le nom d'un nkisi, un objet rituel de justice. Les sources lues ne disent pas ce que veut dire ce nom. Sa plus ancienne trace connue du projet est un conte publié en 1898.",
+    "names": [
+      {
+        "nameText": "Mavoungou",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne de la côte de Loango, écrit Mavungu dès 1898 ; aussi le nom d'un nkisi.",
+        "periodLabel": "Écrit Mavungu dès 1898 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "En 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Mavoungou est porté aujourd'hui comme nom de famille en république du Congo : le Journal officiel du 5 décembre 2024 l'écrit en capitales, suivi du prénom entre parenthèses, comme les autres noms de famille de la liste, pour un homme nommé officier de l'ordre du Dévouement congolais.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Journal officiel de la République du Congo, n° 49-2024",
+                "author": "Secrétariat général du Gouvernement de la République du Congo",
+                "year": 2024,
+                "url": "https://www.sgg.cg/JO/2024/congo-jo-2024-49.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1506",
+                "notes": "Journal officiel de la République du Congo, 66e année, n° 49, 5 décembre 2024, lu le 18 octobre 2026, page vue sur l'image. Page 1506, décret n° 2024-2764 du 21 novembre 2024, ordre du Dévouement congolais, grade d'officier : le nom MAVOUNGOU, en capitales, suivi d'un prénom entre parenthèses. La même page écrit, pour une femme, « NGOMIA née ONDAÏ » : les noms de famille y sont en capitales. Nous ne nommons pas ici la personne décorée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1907,
+              "label": "Publié en 1907"
+            },
+            "statement": "Le nom Mavoungou, écrit Mavungo, est porté par plusieurs hommes que décrit Eduard Pechuël-Loesche sur la côte de Loango : un jeune chasseur tombé en servitude pour avoir tué un homme par accident, ou un petit-fils de prince, maître héréditaire d'une petite terre.",
+            "aspect": "usage",
+            "formAsWritten": "Mavungo",
+            "sources": [
+              {
+                "title": "Volkskunde von Loango",
+                "author": "Eduard Pechuël-Loesche",
+                "year": 1907,
+                "url": "https://archive.org/details/volkskundevonlo00loegoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 239 et 254",
+                "notes": "Exemplaire numérisé d'Internet Archive, pages lues sur l'image le 18 octobre 2026. Page 239 : « der Hörige Mavūngo », jeune chasseur qui a perdu sa liberté après avoir tué un homme d'un coup de feu tiré dans un fourré. Page 254, parmi les petits chefs de Tschintschotscho : « Mavūngo, der Ma Nssālove, Fürstenenkel und erbsässiger Herr einer kleinen Erdschaft ». L'auteur ne dit pas en quelle année il a connu ces hommes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1907,
+              "label": "Publié en 1907"
+            },
+            "statement": "Le nom Mavoungou est aussi celui d'un nkisi, un objet rituel qui servait à rendre la justice sur la côte de Loango : Mavungo. Selon Eduard Pechuël-Loesche, ces objets rituels représentaient de grands guérisseurs après leur mort et gardaient leur nom ; il ne dit pas qui était Mavungo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Volkskunde von Loango",
+                "author": "Eduard Pechuël-Loesche",
+                "year": 1907,
+                "url": "https://archive.org/details/volkskundevonlo00loegoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 379",
+                "notes": "Page lue sur l'image le 18 octobre 2026. Page 379 : plusieurs grands objets rituels à forme humaine sont, à l'origine, des représentations de grands guérisseurs « und bewahren deren Namen » (et gardent leur nom) ; les élèves sculptaient leur maître et « gaben ihm den Namen des Vorbildes ». Parmi les objets rituels de justice qui représentent des banganga célèbres morts, l'auteur cite « Matāli, Mavūngo, Tschitōlo, Mabiāla ma ndēmba, Lipāmba ». L'auteur écrit « Fetisch » ; le mot local est nkisi."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1898,
+              "to": 1898,
+              "label": "Publié en 1898"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mavoungou apparaît par écrit sous une forme proche, Mavungu, dans un conte de la côte de Loango publié en 1898 par R. E. Dennett : deux fils d'une même mère s'y appellent Mavungu et Luemba. C'est la plus ancienne trace de cette forme que le projet connaît ; le nom est plus ancien qu'elle.",
+            "formAsWritten": "Mavungu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Notes on the folklore of the Fjort (French Congo)",
+                "author": "R. E. Dennett",
+                "year": 1898,
+                "url": "https://archive.org/details/notesonfolkloreo00dennuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 42",
+                "notes": "Exemplaire numérisé d'Internet Archive (université de Toronto), page lue sur l'image le 18 octobre 2026. Page 42, conte VI, « Another vanishing wife » : « There were two sons of one mother, one named Mavungu, and the other Luemba. » Le titre situe ces contes au Congo français."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

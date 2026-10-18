@@ -4792,7 +4792,11 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // 6039 -> 5964 on 2026-10-18: PPL_MUCUBAL, folded into PPL_MUCUVAL, and
   // the seven people fiches withdrawn after wave 24 left with the model keys
   // they lacked.
-  peuple: 5964,
+  // 5964 -> 5968 on 2026-10-18: PPL_MAKA and PPL_NJEM added after wave 24.
+  // Each omits `historicalAffiliation`, which the model says to leave out for
+  // a people with a defensible linguistic family, and `classificationStatus`,
+  // which it says to leave out until the fiche has been reviewed.
+  peuple: 5968,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next

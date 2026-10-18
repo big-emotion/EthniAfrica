@@ -1,12 +1,12 @@
 {
   "id": "PPL_AUSTRO_MACRO",
-  "nameMain": "Peuples Austronésiens de Madagascar (macro-groupe)",
+  "nameMain": "Malgaches",
   "languageFamilyId": "FLG_AUSTRONESIENNE",
   "currentCountries": ["MDG"],
   "classificationStatus": "reconstructive",
   "content": {
     "appellations": {
-      "mainName": "Peuples Austronésiens de Madagascar (macro-groupe)",
+      "mainName": "Malgaches",
       "selfAppellation": "Malagasy",
       "exonyms": ["Malgaches (français)", "Malagasy peoples (anglais)"],
       "originOfExonyms": "Malagasy désigne les peuples de Madagascar et leur langue commune, avec ses différentes variétés. Ce nom est utilisé sur l'île et à l'international. Au XIXe siècle, les missionnaires anglais ont fait connaître la distinction entre les habitants des hauts plateaux, appelés highlanders, et ceux du littoral, appelés côtiers.",
@@ -160,10 +160,13 @@
         "tier": "official",
         "source_kind": "official_statistics"
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Les Malgaches sont les peuples de Madagascar, qui se nomment ensemble Malagasy. L'histoire du nom Austronésien comme nom de langues est racontée avec la famille austronésienne."
+    }
   },
   "nameHistory": {
-    "summary": "Le nom Austronésiens, appliqué aux peuples de Madagascar, est un nom de savants : il rappelle que leur langue, le malgache, appartient à la famille austronésienne, et que des navigateurs venus d'Asie du Sud-Est ont été parmi les premiers à gagner l'île. Ce n'est pas le nom que ces peuples se donnent : ensemble, ils se nomment Malagasy, en français Malgaches, et chacun porte aussi son propre nom, comme les Merina, les Betsileo ou les Sakalava. Nous présentons ces noms plus bas.",
+    "summary": "Le nom Malgaches désigne les peuples de Madagascar, qui se nomment eux-mêmes Malagasy ; c'est la forme française de ce nom. Chacun de ces peuples porte aussi son propre nom, comme les Merina, les Betsileo ou les Sakalava. Le nom Austronésiens, appliqué à ces peuples, est un nom de savants : il rappelle que leur langue, le malgache, appartient à la famille austronésienne, et que des navigateurs venus d'Asie du Sud-Est ont été parmi les premiers à gagner l'île. Nous présentons ces noms plus bas.",
     "names": [
       {
         "nameText": "Malagasy",

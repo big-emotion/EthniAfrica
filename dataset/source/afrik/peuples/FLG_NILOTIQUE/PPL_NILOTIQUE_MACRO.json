@@ -184,7 +184,10 @@
         "tier": "unverified",
         "source_kind": "missionary_database"
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Un regroupement par la langue, pas un peuple : chaque peuple nilotique porte son propre nom. L'histoire du nom Nilotique comme nom de langues est racontée avec la famille nilotique."
+    }
   },
   "nameHistory": {
     "summary": "Le nom Nilotes, ou peuples nilotiques, réunit des peuples du haut Nil et d'Afrique de l'Est, comme les Dinka, les Nuer, les Shilluk, les Luo ou les Maasaï. Ce n'est pas le nom d'un peuple : aucune source que nous avons lue ne donne un nom que ces peuples se donneraient tous ensemble, et chacun porte le sien. Venu de l'extérieur, ce nom a d'abord désigné les peuples du bassin du Nil, puis a servi à les classer par « race », avant de désigner un groupe de langues. On a aussi dit Nilo-Chamites pour une partie d'entre eux ; nous présentons ces noms plus bas.",
@@ -300,6 +303,7 @@
               "to": 1902,
               "label": "1902"
             },
+            "era": "colonial",
             "statement": "Le nom Nilotes s'écrit « Nilotic Negroes », les Noirs nilotiques, chez Harry Johnston, ancien commissaire spécial du protectorat britannique de l'Ouganda, qui leur consacre un chapitre de son livre sur ce protectorat. Il reconnaît qu'aucun groupe ne partage à la fois la même langue, les mêmes coutumes et les mêmes traits physiques, mais range ensemble les Noirs du bassin du Nil par commodité, pour décrire leur corps et leurs coutumes.",
             "formAsWritten": "Nilotic Negroes",
             "actors": [

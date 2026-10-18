@@ -150,6 +150,7 @@
               "to": 2018,
               "label": "Recensement de 2018"
             },
+            "era": "modern",
             "statement": "Le nom Raizal est l'une des réponses du recensement colombien de 2018 : on peut s'y déclarer « Raizal de l'archipel de San Andrés, Providencia et Santa Catalina ». Cette déclaration repose sur l'autoreconnaissance ethnique, le sentiment d'appartenance que chacun exprime envers un groupe, selon le rapport que l'institut national de la statistique a écrit avec l'instance de consultation de ces communautés.",
             "aspect": "usage",
             "sources": [
@@ -171,6 +172,7 @@
               "to": 1991,
               "label": "1991"
             },
+            "era": "modern",
             "statement": "Le nom Raizal entre dans la Constitution colombienne de 1991 : son article 310 charge l'assemblée du département de San Andrés de garantir « l'expression institutionnelle des communautés raizales de San Andrés ». Cette reconnaissance reprend les demandes du mouvement Sons of the Soil, selon le politiste Miguel Andrés González Palacios.",
             "aspect": "usage",
             "sources": [
@@ -202,6 +204,7 @@
               "to": 1989,
               "label": "Fin des années 1980"
             },
+            "era": "modern",
             "statement": "Le nom Raizal apparaît dans un projet de loi présenté à la Chambre des représentants à l'initiative de Sons of the Soil : le peuple natif des îles s'y nomme pour la première fois raizal, un nom qui porte en lui un lien ancestral avec la terre. Le projet n'a pas été adopté, selon Miguel Andrés González Palacios, qui s'appuie sur Ortiz (2013). C'est la plus ancienne trace de ce nom que le projet connaît.",
             "birth": true,
             "sources": [
@@ -223,6 +226,7 @@
               "to": 1984,
               "label": "1984"
             },
+            "era": "modern",
             "statement": "Le nom Raizal n'apparaît pas encore dans les sources que nous avons lues quand de jeunes insulaires fondent Sons of the Soil, « les fils du sol », la première organisation créée pour défendre le peuple natif des îles. Elle invoque ses racines historiques et son lien ancestral avec le territoire, selon Miguel Andrés González Palacios.",
             "before": true,
             "sources": [
@@ -244,6 +248,7 @@
               "to": 1953,
               "label": "Après 1953"
             },
+            "era": "modern",
             "statement": "Le nom Raizal n'apparaît pas encore dans les sources que nous avons lues : après que San Andrés est déclarée port franc en 1953, les natifs des îles appellent pañaman les nouveaux venus du continent et commencent à définir contre eux une identité collective d'insulaires, selon Miguel Andrés González Palacios.",
             "before": true,
             "sources": [
