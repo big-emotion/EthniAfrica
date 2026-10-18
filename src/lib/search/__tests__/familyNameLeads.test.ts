@@ -22,7 +22,8 @@ import {
 // and click marks, a click mark standing at the start of a word or inside
 // it, never at its end. The first word opens on an upper-case letter, a
 // letter with no case (ǂ, ǁ, ǃ, ǀ are letters), click marks before a letter,
-// or one to four lower-case letters before an upper-case one.
+// one to four lower-case letters before an upper-case one, or one or two
+// lower-case letters joined by a hyphen to a lower-case one.
 const CLICK_MARKS = new Set(["!", "|", "=", "/"]);
 const isLetter = (char: string) => /^[\p{L}\p{M}]$/u.test(char);
 const isUpper = (char: string) => char !== char.toLowerCase();
@@ -47,6 +48,9 @@ function opensAsAName(word: string): boolean {
   if (!/^\p{L}$/u.test(chars[0])) return false;
   if (!isLower(chars[0])) return true;
   const prefix = chars.findIndex((char) => !isLower(char));
+  if (chars[prefix] === "-") {
+    return prefix <= 2 && isLower(chars[prefix + 1] ?? "");
+  }
   return prefix >= 1 && prefix <= 4 && isUpper(chars[prefix]);
 }
 
@@ -67,6 +71,38 @@ function fiche(key: string): ModelEntity {
   const found = corpusEntities().find((item) => item.key === key);
   expect(found, key).toBeDefined();
   return found!;
+}
+
+/**
+ * The leads in the order migration 111 returns its rows: similarity, then
+ * name, then id. A people is named by the piece that scored; a country or a
+ * language family by its name.
+ */
+function rankedLeads(query: string): { key: string; form: string }[] {
+  return neighbours(query, { formsOfAPeople: true })
+    .map((item) => {
+      const form =
+        item.kind === "people"
+          ? peopleLeadForm(query, item)!
+          : item.forms.reduce((best, candidate) =>
+              similarity(candidate, query) > similarity(best, query)
+                ? candidate
+                : best
+            );
+      return {
+        key: item.key,
+        name: item.filedName,
+        form,
+        score: similarity(form, query),
+      };
+    })
+    .sort(
+      (left, right) =>
+        right.score - left.score ||
+        left.name.localeCompare(right.name) ||
+        left.key.localeCompare(right.key)
+    )
+    .map(({ key, form }) => ({ key, form }));
 }
 
 // DEC-075 over the real family-name fiches of the repository, through the
@@ -173,6 +209,19 @@ describe("which family names are a spelling of the searched name (DEC-075)", () 
 
     expect(leadIds("da costa")).not.toContain("PAT_COSTA");
     expect(familyNameLeadForm("da costa", costa)).toBeUndefined();
+  });
+
+  // A hyphen after a class prefix of one or two letters opens a name only
+  // before a lower-case letter (« a-liyan »). « al-Hawari », a recorded
+  // spelling of El Hawary, opens like « da Costa » on a lower-case particle
+  // before a capital, and stays out until rule 4 is ruled on (brief 16,
+  // « Tenth review »): El Hawary itself begins with another letter.
+  // @req REQ-125
+  it("does not score a recorded spelling opened by « al- »: no El Hawary for « al-hawari »", () => {
+    const elHawary = fiche("PAT_EL_HAWARY");
+
+    expect(leadIds("al-hawari")).not.toContain("PAT_EL_HAWARY");
+    expect(familyNameLeadForm("al-hawari", elHawary)).toBeUndefined();
   });
 
   // Every form a family-name lead can be named by, each typed as written:
@@ -438,9 +487,31 @@ describe("which people a misspelling resembles (REQ-125)", () => {
     );
   });
 
-  // No people fiche is left reachable only through names others gave it:
-  // each scores at least one piece of its filed name or of the name it gives
-  // itself.
+  // The Bassari name themselves a-liyan, one person, and be-liyan, the
+  // people; their fiche says « Bassari est un nom donné au peuple de
+  // l'extérieur ». Each name opens on a class prefix of one or two
+  // lower-case letters joined by a hyphen to its stem. Migration 110 scored
+  // a-liyan. Without this opening, « aliyan » offered Alladian first and
+  // Bassari second, through the exonym Biyan: a name others gave ranked
+  // above the name the people gives itself (doctrine §1).
+  // @req REQ-125
+  it("scores the Bassari self-names a-liyan and be-liyan: « aliyan » offers Bassari first, through a-liyan", () => {
+    expect(peopleLeadForms(fiche("PPL_BASSARI"))).toEqual(
+      expect.arrayContaining(["a-liyan", "be-liyan"])
+    );
+    expect(rankedLeads("aliyan")[0]).toEqual({
+      key: "PPL_BASSARI",
+      form: "a-liyan",
+    });
+    expect(rankedLeads("beliyan")[0]).toEqual({
+      key: "PPL_BASSARI",
+      form: "be-liyan",
+    });
+  });
+
+  // Every people fiche scores at least one piece of its filed name or of its
+  // self-appellation. A filed name can itself be a name others gave
+  // (Bassari), so the next test holds the self-appellation on its own.
   // @req REQ-125
   it("scores, for every people fiche, a piece of its filed name or of its self-appellation", () => {
     const withoutOwnName = peopleFiches()
@@ -454,6 +525,43 @@ describe("which people a misspelling resembles (REQ-125)", () => {
       .map((item) => item.key);
 
     expect(withoutOwnName).toEqual([]);
+  });
+
+  // The seven fiches whose self-appellation holds no piece that is one name.
+  // Five describe rather than name: the four language groups (« Diverses
+  // selon les sous-groupes », « Les noms varient selon les groupes ») and
+  // the Bantu (« Aucun nom propre »). Two pack a name with its gloss: Sawa
+  // (« Sawa — du duala : rive, … ») and Harari (« ጌ፞ይ ኡሱኣች (Gey Usuach) —
+  // les Gens de la Ville »). The list changes only with the data (ETNI-2135
+  // rewrites packed and describing values): a fiche that joins it is a name
+  // the rule drops.
+  const SELF_APPELLATION_WITHOUT_A_NAME = [
+    "PPL_ATLANTIQUE_MACRO",
+    "PPL_BANTU",
+    "PPL_BENOUECONGO_MACRO",
+    "PPL_GUR_MACRO",
+    "PPL_HARARI",
+    "PPL_KROU_MACRO",
+    "PPL_SAWA",
+  ];
+
+  // No people fiche that records the name it gives itself is reachable only
+  // through its filed name and the names others gave it: each scores a piece
+  // of its self-appellation, but for the seven fiches above.
+  // @req REQ-125
+  it("scores, for every people fiche with a self-appellation, a piece of it, but for seven that hold no name", () => {
+    const withoutSelfName = peopleFiches()
+      .filter((item) => {
+        const self = item.nameFields?.[1] ?? "";
+        return (
+          self.trim() !== "" &&
+          !peopleLeadForms({ ...item, nameFields: [self] }).length
+        );
+      })
+      .map((item) => item.key)
+      .sort();
+
+    expect(withoutSelfName).toEqual(SELF_APPELLATION_WITHOUT_A_NAME);
   });
 
   // The examples of brief 16 keep their lead: each is reached through a

@@ -25,6 +25,10 @@
 -- Ju|'hoansi donne le nom Zhu. ») and dropped the names peoples give
 -- themselves in clicks (ǂHoan, Ju|'hoansi, ǃXoon), which left the ǂHoan and
 -- the Ju|'hoansi reachable through exonyms only. The rule below keeps both.
+-- The first version of this migration still dropped a-liyan and be-liyan,
+-- the names the Bassari give themselves: under it « aliyan » offered
+-- Alladian first and Bassari only through the exonym Biyan. Rule 2's last
+-- opening, a hyphenated class prefix, keeps them.
 --
 -- The rule, for a people (brief 16, decision 5):
 --   1. Its filed name, its self-appellation and each exonym are cut into
@@ -39,11 +43,16 @@
 --      U+036F), hyphens, apostrophes, and the click marks ! | ǀ ǁ ǂ ǃ = / at
 --      the start of a word or inside it; and when its first word opens on an
 --      upper-case letter, a letter with no case (ǂ ǁ ǃ ǀ, a Ge'ez name),
---      click marks before a letter (« !Kung », « =|Hoa ») or a class prefix
+--      click marks before a letter (« !Kung », « =|Hoa »), a class prefix
 --      of one to four lower-case letters before an upper-case one
---      (« amaXhosa », « isiNdebele », « vaKaranga »). Anything else, a
---      lower-case word on its own, a digit, « pl. », a lone « = »,
---      guillemets or prose, is not a name and is never scored.
+--      (« amaXhosa », « isiNdebele », « vaKaranga »), or a class prefix of
+--      one or two lower-case letters joined by a hyphen to a lower-case one
+--      (« a-liyan », « be-liyan »). Anything else, a lower-case word on its
+--      own, a digit, « pl. », a lone « = », guillemets or prose, is not a
+--      name and is never scored. The hyphenated prefix stops at a lower-case
+--      letter: with any letter after the hyphen it would also admit twelve
+--      « al- » spellings of family names (« al-Mahdi »), which brief 16
+--      leaves open.
 --   3. Only those pieces are scored, and matched_form is the one that scored
 --      best. The filed name is cut like the other fields and never stands in
 --      for a piece that did not score.
@@ -54,27 +63,44 @@
 -- (src/lib/search/__fixtures__/corpusNameModel.ts), whose tests run them over
 -- every people fiche. Run by PostgreSQL 17's own regular expressions over
 -- every people name field and recorded spelling, the two patterns as written
--- here give the model's 5,343 pieces exactly under a Unicode-aware ctype, and
--- 264 fewer under C.
+-- here give the model's 5,345 pieces exactly under the en_US.UTF-8, ICU and
+-- builtin C.UTF-8 collations, and 264 fewer under C.
 --
 -- Measured with that model over the 659 people fiches, against 110:
---   - 3,664 (fiche, form) pairs are scored instead of 3,428: 306 pieces
---     gained in 158 fiches (Mukongo, Izon, Ijo, Dyulanke, Nǀhuki, ʼNǀohan,
---     vaKavango, Hai//om scored whole), 70 forms lost in 48. Of the 70, 14
---     are joined strings now scored piece by piece, 13 are names of other
---     peoples read from inside a bracket of a group fiche (Wolof and Sereer
---     under the Atlantic group, Bété under the Kru group), 38 are prose or
---     glosses, and 5 fail the rule's letter (« a-liyan », « Ju–ǂHoan » with
---     an en dash, « Reer Hamar Gibil Madow » and two filed names of four
---     words or more). Every people fiche keeps a scored piece of its filed
---     name or of its self-appellation.
---   - Over 3,510 forms typed as written, the top three rows gain 526 leads
+--   - 3,666 (fiche, form) pairs are scored instead of 3,428: 307 pieces
+--     gained in 159 fiches (Mukongo, Izon, Ijo, Dyulanke, Nǀhuki, ʼNǀohan,
+--     vaKavango, be-liyan, Hai//om scored whole), 69 forms lost in 47. Of
+--     the 69, 14 are joined strings now scored piece by piece, 13 are names
+--     of other peoples read from inside a bracket of a group fiche (Wolof
+--     and Sereer under the Atlantic group, Bété under the Kru group), 38 are
+--     prose or glosses, and 4 fail the rule's letter (« Ju–ǂHoan » with an
+--     en dash, « Reer Hamar Gibil Madow » and two filed names of four words
+--     or more). Every people fiche keeps a scored piece of its filed name or
+--     of its self-appellation. Every one that records a self-appellation
+--     scores a piece of it, but for seven whose value describes the people
+--     or packs a name with its gloss: the Atlantic, Benue-Congo, Gur and Kru
+--     groups, the Bantu, Sawa and Harari.
+--   - Over 3,511 forms typed as written, the top three rows gain 526 leads
 --     and lose 506, 371 of them only pushed out by a newly scored, stronger
 --     one; 285 leads keep their fiche under another chip.
--- What it leaves to the data (ETNI-2135): glosses of three words or fewer
--- that open on a capital (« Habitants du Burundi », « Gens de l'ile »,
--- « Garifuna au singulier ») and two names joined by a slash with no space
--- (« Gullah/Geechee », « Drawi/Drawa ») pass the rule and are scored.
+-- What ETNI-2135 covers, and what it does not. It gives each name of a
+-- packed name field an entry of its own, moves a qualifier into the fiche's
+-- prose, scores a people's spelling aliases under this same rule, and makes
+-- the corpus check refuse a field with a slash, a semicolon, a comma or
+-- « ou » between names. That rewrites « Gullah/Geechee » and « Drawi/Drawa »
+-- (one piece each here, since their slash has no space), the packed glosses
+-- (« Habitants du Burundi / peuple du Burundi », « … ; Garifuna au
+-- singulier ») and the self-appellations of the seven fiches above. It does
+-- not cover, and no ticket tracks yet:
+--   - a gloss that is a whole entry, opens on a capital and has three words
+--     or fewer (« Peuples de l'eau », « Gens du Nil », « Omani de retour »,
+--     « Central Sudanic languages »): its check allows it, and it passes this
+--     rule;
+--   - « Ju–ǂHoan » (an en dash) and « Reer Hamar Gibil Madow » (four words):
+--     they fail this rule's letter, and its check accepts them as written;
+--   - the two long filed names: filed names are out of its scope;
+--   - the Harari self-name in Ge'ez script, ጌ፞ይ ኡሱኣች: its mark U+135E is not
+--     among the accents this rule reads, so it fails here even on its own.
 --
 -- [[:alpha:]], [[:upper:]] and [[:lower:]] follow the database's character
 -- type (ctype). Under a C ctype they know ASCII letters only, and every name
@@ -99,7 +125,7 @@ SET search_path = public, extensions, pg_temp
 AS $$
 WITH q AS (
   SELECT public.afrik_unaccent(lower(btrim(p_q))) AS exact_key,
-         '^(?:(?![[:lower:]])[[:alpha:]]|[!|ǀǁǂǃ=/]+[[:alpha:]]|[[:lower:]]{1,4}[[:upper:]])(?:[!|ǀǁǂǃ=/''’-]*[[:alpha:]\u0300-\u036f])*[''’-]*(?: +[!|ǀǁǂǃ=/''’-]*[[:alpha:]\u0300-\u036f](?:[!|ǀǁǂǃ=/''’-]*[[:alpha:]\u0300-\u036f])*[''’-]*){0,2}$'::text AS one_name
+         '^(?:(?![[:lower:]])[[:alpha:]]|[!|ǀǁǂǃ=/]+[[:alpha:]]|[[:lower:]]{1,4}[[:upper:]]|[[:lower:]]{1,2}-[[:lower:]])(?:[!|ǀǁǂǃ=/''’-]*[[:alpha:]\u0300-\u036f])*[''’-]*(?: +[!|ǀǁǂǃ=/''’-]*[[:alpha:]\u0300-\u036f](?:[!|ǀǁǂǃ=/''’-]*[[:alpha:]\u0300-\u036f])*[''’-]*){0,2}$'::text AS one_name
 ),
 candidates AS (
   SELECT 'people'::text AS kind, p.id::text AS id, p.name_main AS name,
@@ -222,7 +248,7 @@ SELECT jsonb_build_object(
 $$;
 
 COMMENT ON FUNCTION public.afrik_search_leads(TEXT, INT, TEXT) IS
-  'Near-miss leads (REQ-125). A trigram similarity scan. A people is scored on the pieces of its names that are one name, and on nothing else: its filed name, self-appellation and each exonym (content.appellations) are cut at « , », « ; », the word « ou » and a slash between spaces, never inside a bracket nor at a slash inside a word (« Hai//om » writes a click), and each piece loses its trailing bracket. A piece is one name when it has three words at most, made of letters of any script with their accents, hyphens, apostrophes and click marks, and opens on an upper-case letter, a letter with no case (ǂHoan), click marks before a letter (« !Kung ») or a class prefix before a capital (« amaXhosa »). « Baganda / Ganda » gives Baganda and Ganda; « pl. Abaganda) » and « suivant Abdoulaye Bathily » are never scored. A people is emitted under its filed name and named by the piece that scored best, never by its filed name in place of a piece; a people none of whose pieces scores is no lead. Countries and families score their name for p_lang (en | fr, default fr); these three kinds keep similarity >= 0.2. A family name (afrik_patronymes) scores the best of its filed name, as filed, and of its recorded spellings (content.spellings[].spelling) that are one name, among the forms that begin with the folded query''s first letter, keeps similarity >= 0.4 and is emitted under its filed name (DEC-075). Every row names matched_form, the form that scored (the filed name on a tie; a country or a family names its name), so a caller can show the form written like the query: « jarra » reaches Diarra through its spelling Jara. Returns {"rows": [{"kind", "id", "name", "matched_form", "similarity"}, ...]}: at most p_limit rows of peoples, countries and families, plus at most p_limit family names, ordered by similarity. A folded query shorter than 3 characters returns no rows. SECURITY INVOKER: reads only tables already published to anon. Migration 111, which supersedes the people branch of 110.';
+  'Near-miss leads (REQ-125). A trigram similarity scan. A people is scored on the pieces of its names that are one name, and on nothing else: its filed name, self-appellation and each exonym (content.appellations) are cut at « , », « ; », the word « ou » and a slash between spaces, never inside a bracket nor at a slash inside a word (« Hai//om » writes a click), and each piece loses its trailing bracket. A piece is one name when it has three words at most, made of letters of any script with their accents, hyphens, apostrophes and click marks, and opens on an upper-case letter, a letter with no case (ǂHoan), click marks before a letter (« !Kung »), a class prefix before a capital (« amaXhosa ») or a class prefix of one or two lower-case letters joined by a hyphen to a lower-case one (« a-liyan »). « Baganda / Ganda » gives Baganda and Ganda; « pl. Abaganda) » and « suivant Abdoulaye Bathily » are never scored. A people is emitted under its filed name and named by the piece that scored best, never by its filed name in place of a piece; a people none of whose pieces scores is no lead. Countries and families score their name for p_lang (en | fr, default fr); these three kinds keep similarity >= 0.2. A family name (afrik_patronymes) scores the best of its filed name, as filed, and of its recorded spellings (content.spellings[].spelling) that are one name, among the forms that begin with the folded query''s first letter, keeps similarity >= 0.4 and is emitted under its filed name (DEC-075). Every row names matched_form, the form that scored (the filed name on a tie; a country or a family names its name), so a caller can show the form written like the query: « jarra » reaches Diarra through its spelling Jara. Returns {"rows": [{"kind", "id", "name", "matched_form", "similarity"}, ...]}: at most p_limit rows of peoples, countries and families, plus at most p_limit family names, ordered by similarity. A folded query shorter than 3 characters returns no rows. SECURITY INVOKER: reads only tables already published to anon. Migration 111, which supersedes the people branch of 110.';
 
 REVOKE ALL ON FUNCTION public.afrik_search_leads(TEXT, INT, TEXT) FROM PUBLIC;
 GRANT EXECUTE ON FUNCTION public.afrik_search_leads(TEXT, INT, TEXT)
@@ -253,6 +279,9 @@ GRANT EXECUTE ON FUNCTION public.afrik_search_leads(TEXT, INT, TEXT)
 --      -- expect PPL_KONGO first, at about 0.60, "matched_form": "Mukongo"
 --      SELECT public.afrik_search_leads('dyoulanke', 3) -> 'rows';
 --      -- expect PPL_DIOULA first, at about 0.58, "matched_form": "Dyulanke"
+--      SELECT public.afrik_search_leads('aliyan', 3) -> 'rows';
+--      -- expect PPL_BASSARI first, at about 0.50, "matched_form": "a-liyan",
+--      -- the name the Bassari give themselves, above Alladian (about 0.33)
 --
 -- 3. A piece that is not one name is never scored, and nothing cuts a click:
 --      SELECT public.afrik_search_leads('bathilly', 3) -> 'rows';

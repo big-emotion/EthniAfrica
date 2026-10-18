@@ -196,6 +196,7 @@ describe("near-miss leads, as migration 111 re-issues them", () => {
     const comment = sql.slice(sql.indexOf("COMMENT ON FUNCTION"));
     expect(comment).toMatch(/one name/);
     expect(comment).toMatch(/click/);
+    expect(comment).toMatch(/« a-liyan »/);
     expect(comment).toMatch(/Migration 111/);
     expect(comment).not.toMatch(/Besides its filed name/);
   });

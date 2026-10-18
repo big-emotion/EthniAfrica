@@ -208,6 +208,7 @@ describe("OpenAPI v2 unified search contract", () => {
     );
     expect(description).toMatch(/a slash between spaces/);
     expect(description).toMatch(/click/);
+    expect(description).toMatch(/« a-liyan »/);
     expect(description).toMatch(/is never scored/);
     expect(description).toMatch(
       /For a family name, its filed name as filed, or a recorded spelling that is one name/
