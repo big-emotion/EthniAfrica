@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 
 import { VerdictBlock } from "@/components/search/feed/VerdictBlock";
@@ -87,5 +87,37 @@ describe("VerdictBlock", () => {
       "text-afh-small",
       "leading-[var(--afh-leading-small)]"
     );
+  });
+
+  // The page that admits it does not know the name asks for it once, right
+  // under the confession (brief 12, part A); every other verdict has no button.
+  // @req REQ-180
+  it("draws an action after the summary, inside the block, only when given one", () => {
+    const props = {
+      name: "voundou",
+      verdict: "Nous ne connaissons pas ce nom.",
+      summary: "Ce n’est pas une réponse : c’est un aveu.",
+      tone: "plain" as const,
+    };
+    const { container, rerender } = render(
+      <VerdictBlock
+        {...props}
+        action={<button type="button">Proposer une source</button>}
+      />
+    );
+
+    const block = container.querySelector<HTMLElement>(
+      '[data-feed-block="verdict"]'
+    )!;
+    const action = within(block).getByRole("button", {
+      name: "Proposer une source",
+    });
+    const summary = screen.getByText(props.summary);
+    expect(
+      summary.compareDocumentPosition(action) & Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+
+    rerender(<VerdictBlock {...props} />);
+    expect(screen.queryByRole("button")).toBeNull();
   });
 });

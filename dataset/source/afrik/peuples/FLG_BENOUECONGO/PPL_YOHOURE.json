@@ -92,12 +92,238 @@
       {
         "title": "Arts de la Cote d'Ivoire, autour des Yohoure – Musee Barbier-Mueller, 2019",
         "url": "https://www.barbier-mueller.ch/2019/07/04/arts-de-la-cote-divoire-autour-des-yohoure/",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic"
       },
       {
         "title": "Yohoure mask – Art Masque Africain",
         "url": "https://www.art-masque-africain.com/en/fiche_yohoure-mask_4236",
         "tier": "needs_review"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Yohouré désigne un peuple du centre de la Côte d'Ivoire, autour de Bouaflé, voisin des Gouro et des Baoulé, qui se nomme lui-même Yowlè. D'autres formes existent : Yaouré, la plus courante chez les linguistes, et Yaure, en anglais. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Yowlè",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "yre",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Yohouré et qu'ils donnent à leur langue ; son origine n'est pas connue.",
+        "periodLabel": "Écrit dès 2007 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Yowlè est celui qu'emploient pour eux-mêmes les cadres de la région de Bouaflé : « nous, cadres Yowlè », dit l'un d'eux, le docteur Gokou Yao, selon l'Agence ivoirienne de presse. La même dépêche présente la communauté yowlè comme l'« ethnie locale », forte de 33 villages. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "La communauté Yowlè invitée à s'unir pour le développement de Bouaflé",
+                "author": "Agence ivoirienne de presse",
+                "year": 2012,
+                "url": "https://news.abidjan.net/articles/446910/la-communaute-yowle-invitee-a-sunir-pour-le-developpement-de-bouafle",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Dépêche de l'AIP reprise sur Abidjan.net, 16 décembre 2012, lue le 18 octobre 2026. Propos du docteur Gokou Yao, cadre de la région de Bouaflé : « nous, cadres Yowlè, sommes restés divisés pendant plusieurs années » ; « la communauté Yowlè (ethnie locale) » ; « La communauté Yowlè compte 33 villages »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2011,
+              "to": 2011,
+              "label": "2011"
+            },
+            "era": "modern",
+            "statement": "Le nom Yowlè est celui qu'emploie le chef central de ce peuple, Nanan Koffi Lazare, lorsqu'il annonce un musée de la civilisation du peuple yowlè dans le département de Bouaflé, selon l'Agence ivoirienne de presse.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bouaflé : la création musée de civilisation du peuple Yowlè (Bouaflé) en vue",
+                "author": "Agence ivoirienne de presse",
+                "year": 2011,
+                "url": "https://news.abidjan.net/articles/417414/bouafle-la-creation-musee-de-civilisation-du-peuple-yowle-bouafle-en-vue",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Dépêche de l'AIP reprise sur Abidjan.net, 23 novembre 2011, lue le 18 octobre 2026. « le chef central des Yowlè, Nanan Koffi Lazare » ; il parle de « la tradition Yowlè » et d'« un répertoire des chefs traditionnels Yowlè »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2007,
+              "to": 2007,
+              "label": "2007"
+            },
+            "era": "modern",
+            "statement": "Le nom Yowlè apparaît par écrit dans le titre d'un ouvrage du linguiste Henri Gadou, paru à Leipzig, qui le présente comme une langue mandé-sud du centre-ouest de la Côte d'Ivoire. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple et sa langue existaient déjà avant elle.",
+            "formAsWritten": "yowlè",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Autour de quelques processus phonologiques et syntaxiques du yowlè, langue mandé-sud de Côte d'Ivoire",
+                "author": "Henri Gadou",
+                "year": 2007,
+                "url": "https://ul.qucosa.de/landing-page/https%3A%2F%2Ful.qucosa.de%2Fapi%2Fqucosa%253A33613%2Fmets%2F",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "University of Leipzig Papers on Africa, Languages and Literatures Series, n° 31, Leipzig, 2007. Lu le 18 octobre 2026 dans le PDF du dépôt Qucosa de l'université de Leipzig ; la page est lue sur l'image. Page 3, note 1 : « Le yowlè est une langue mandé-sud de Côte d'Ivoire, souvent erronément orthographiée \"yaouré\" »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Yohouré",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple dans les écrits en français depuis 1904 ; son origine n'est pas connue.",
+        "usedIn": ["fra"],
+        "periodLabel": "Écrit dès 1904 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2016,
+              "to": 2017,
+              "label": "2016-2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Yohouré est celui qu'emploie le musée Barbier-Mueller, à Genève, pour une exposition sur les arts de ce peuple qui vit « au cœur de la Côte d'Ivoire ». Le musée y présente le professeur Alain-Michel Boyer, qui étudie les Yohouré depuis les années 1970.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Arts de la Cote d'Ivoire, autour des Yohoure – Musee Barbier-Mueller, 2019",
+                "author": "Musée Barbier-Mueller",
+                "year": 2019,
+                "url": "https://www.barbier-mueller.ch/2019/07/04/arts-de-la-cote-divoire-autour-des-yohoure/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page de présentation de l'exposition « Arts de la Côte d'Ivoire, autour des Yohouré », du 24 novembre 2016 au 30 avril 2017, lue le 18 octobre 2026. « Au cœur de la Côte d'Ivoire, à la jonction entre la savane arborée et la forêt, vivent les Yohouré » ; « Le professeur Alain-Michel Boyer, qui étudie les Yohouré depuis les années 1970 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1899,
+              "to": 1904,
+              "label": "1899 (publié en 1904)"
+            },
+            "statement": "Le nom Yohouré apparaît par écrit dans les vocabulaires comparés de Maurice Delafosse, administrateur colonial, qui dit avoir pris des notes en 1899 « dans le Yohouré », à l'ouest du Bandama Blanc. Il range les Yohouré parmi les familles baoulé, sous la forme Youre, tout en notant que la langue des Gouro reste très parlée chez eux. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple existait déjà avant elle.",
+            "formAsWritten": "Yohouré",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 95, p. 111, p. 146 et p. 149",
+                "notes": "Paris, Ernest Leroux, 1904. Lu le 18 octobre 2026 dans la numérisation d'Internet Archive ; les pages 111, 146 et 149 sont lues sur la page, la page 95, début de chapitre sans numéro imprimé, est déduite des pages voisines. Page 95 : « la région des Yohouré et des Kodé », sur la rive occidentale du Bandama Blanc. Page 111 : « les Youre (Yohouré) », parmi les familles baoulé rattachées aux Ouarèbo. Page 146 : ces populations ont dû parler « à une époque relativement récente » des dialectes mandé, et le gouro reste répandu « surtout chez les Yohouré ». Page 149 : « des notes recueillies par moi en 1899 dans le Yohouré »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Yaouré",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme la plus courante chez les linguistes ; une orthographe fautive, selon Henri Gadou.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Yaouré est celui que le catalogue de langues Glottolog donne à la langue de ce peuple, sous le code yre. Le catalogue cite aussi les formes Yaure, Yohowré et Youré.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Yaouré (yaou1238)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/yaou1238",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues, lu le 18 octobre 2026. Autres noms, d'après Multitree : Yaouré, Yaure, Yohowré, Youré. Le catalogue n'explique pas leur origine."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2007,
+              "to": 2007,
+              "label": "2007"
+            },
+            "era": "modern",
+            "statement": "Le nom Yaouré est, pour le linguiste Henri Gadou, une orthographe fautive mais fréquente du nom de la langue yowlè.",
+            "aspect": "usage",
+            "formAsWritten": "yaouré",
+            "sources": [
+              {
+                "title": "Autour de quelques processus phonologiques et syntaxiques du yowlè, langue mandé-sud de Côte d'Ivoire",
+                "author": "Henri Gadou",
+                "year": 2007,
+                "url": "https://ul.qucosa.de/landing-page/https%3A%2F%2Ful.qucosa.de%2Fapi%2Fqucosa%253A33613%2Fmets%2F",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "University of Leipzig Papers on Africa, Languages and Literatures Series, n° 31, Leipzig, 2007. Lu le 18 octobre 2026 dans le PDF du dépôt Qucosa de l'université de Leipzig ; la page est lue sur l'image. Page 3, note 1 : « Le yowlè est une langue mandé-sud de Côte d'Ivoire, souvent erronément orthographiée \"yaouré\" »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Yaure",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme anglaise du nom ; son origine n'est pas connue.",
+        "usedIn": ["eng"],
+        "periodLabel": "En usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2016,
+              "to": 2017,
+              "label": "2016-2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Yaure est la forme qu'emploie le musée Barbier-Mueller dans la version anglaise de la présentation de son exposition sur les arts de ce peuple, « Arts of Côte d'Ivoire, Around the Yaure ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Arts of Côte d'Ivoire, Around the Yaure",
+                "author": "Musée Barbier-Mueller",
+                "year": null,
+                "url": "https://www.barbier-mueller.ch/?p=2505",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Version anglaise de la page de présentation de l'exposition, du 24 novembre 2016 au 30 avril 2017, lue le 18 octobre 2026. « live the Yaure, surrounded by more numerous and better known peoples » ; « Professor Alain-Michel Boyer, who has studied the Yaure since 1970 »."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

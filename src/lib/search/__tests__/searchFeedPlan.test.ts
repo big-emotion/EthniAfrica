@@ -54,11 +54,25 @@ describe("search-feed plan", () => {
     expect(plan.closing).toEqual(["further"]);
   });
 
+  // A page that admits it does not know the name draws no empty shelf under
+  // its confession (brief 12, part A, approved 2026-10-17); its closing keeps
+  // what is owed, then a way out.
   // @req REQ-178
-  it("keeps the unknown-name closing: what is owed, then a way out", () => {
-    expect(buildSearchFeedPlan("unknown", {}).closing).toEqual([
-      "owed",
-      "further",
+  it("opens an unknown name on the verdict with no shelf, and keeps its closing", () => {
+    const plan = buildSearchFeedPlan("unknown", {});
+
+    expect(plan.first).toEqual(["verdict", "lenses"]);
+    expect(plan.closing).toEqual(["owed", "further"]);
+  });
+
+  // The shelf comes back only for a piece found by the reader's own word,
+  // never for the recent shorts the companions carry around any query.
+  // @req REQ-178
+  it("keeps the shelf of an unknown name when a piece matches the reader's word", () => {
+    expect(buildSearchFeedPlan("unknown", { shorts: true }).first).toEqual([
+      "verdict",
+      "lenses",
+      "shorts",
     ]);
   });
 

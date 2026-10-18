@@ -85,5 +85,66 @@
         "source_kind": "community"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Mukulu désigne un peuple du nord de la Zambie, établi au nord du lac Bangweulu. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. Le nom figure sur une carte publiée en 1985 et dans le recensement zambien de 1990. On ne sait pas d'où il vient : aucune source que nous avons lue ne l'explique. Nous présentons plus bas ce que disent les sources.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Mukulu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple du nord de la Zambie, relevé sur une carte en 1985 et au recensement de 1990.",
+        "periodLabel": "Écrit dès 1985 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1990,
+              "to": 1990,
+              "label": "1990"
+            },
+            "era": "modern",
+            "statement": "Le nom Mukulu désigne l'un des groupes ethniques que distingue le recensement zambien de 1990, parmi une soixantaine de réponses possibles à la question du groupe ethnique. Le recensement n'explique pas ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Census of Population, Housing and Agriculture 1990 – IPUMS Subset (Zambie), variable « Ethnicity »",
+                "author": "Central Statistical Office (Zambie) et Minnesota Population Center",
+                "year": 1990,
+                "url": "https://microdata.fao.org/index.php/catalog/1454/variable/V153",
+                "tier": "official",
+                "source_kind": "official_statistics",
+                "notes": "Fiche de la variable dans le catalogue de microdonnées de la FAO, lue le 18 octobre 2026 : question P-12 sur le groupe ethnique de la personne ; la modalité 12 est « Mukulu », entre « Swaka » et « Ambo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Mukulu apparaît sur une carte du chercheur Ichiro Imai, dans son étude des pêcheurs des marais du Bangweulu : elle situe les Mukulu au nord du lac, à côté des Lunda et des Ng'umbo. Imai n'en dit pas plus dans son texte. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "MUKULU",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Fishing Life in the Bangweulu Swamps: A Socio-ecological Study of the Swamp Fishermen in Zambia",
+                "author": "Ichiro Imai",
+                "year": 1985,
+                "url": "https://jambo.africa.kyoto-u.ac.jp/kiroku/asm_suppl/abstracts/pdf/ASM%20%20Sup.4/Ichiro%20IMAI.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 52",
+                "notes": "African Study Monographs, Supplementary Issue 4, mars 1985, p. 49-88 ; lu le 18 octobre 2026 dans le PDF de l'université de Kyoto, page vérifiée sur le PDF. Figure 3, « Geographical distribution of the ethnic groups around the Lake Bangweulu » : « B: MUKULU »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

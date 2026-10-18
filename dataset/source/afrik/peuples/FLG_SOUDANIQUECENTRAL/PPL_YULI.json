@@ -121,5 +121,88 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Yulu désigne un petit peuple de langue soudanique centrale, établi dans l'ouest du Bahr el-Ghazal, au Soudan du Sud, et dans les pays voisins ; on l'écrit aussi Youlou. On ne sait pas comment ce peuple se nomme lui-même : les sources que nous avons lues ne le disent pas, et elles n'expliquent pas l'origine du nom Yulu.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Yulu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple et de sa langue dans les études ; on l'écrit aussi Youlou.",
+        "periodLabel": "Écrit depuis 1940 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Yulu désigne une langue parlée en Centrafrique, au Soudan, au Soudan du Sud et en république démocratique du Congo ; les catalogues de langues l'écrivent aussi Youlou, et Glottolog la nomme Yulu-Binga.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog — Yulu-Binga (yulu1243)",
+                "url": "https://glottolog.org/glottolog?iso=yul",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "author": "Glottolog",
+                "year": null,
+                "notes": "Page lue le 18 octobre 2026 : l'adresse renvoie à la fiche yulu1243, qui donne les autres noms de la langue d'après les catalogues qu'elle cite, et les pays où elle est parlée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1948,
+              "to": 1948,
+              "label": "1948"
+            },
+            "era": "colonial",
+            "statement": "Le nom Yulu désigne l'un des petits peuples de l'ouest du district de Raga, au Bahr el-Ghazal. Sa langue est proche du bongo et du binga, et ce peuple est venu de l'autre côté de la frontière, depuis l'ouest, selon Stefano Santandrea.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Little Known Tribes of the Bahr el Ghazal Basin",
+                "author": "Stefano Santandrea",
+                "year": 1948,
+                "url": "https://archive.org/details/sudan-notes-and-records_1948_29_part-1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 97-98",
+                "notes": "Sudan Notes and Records, vol. 29, n° 1, 1948, p. 79 et suivantes. Lu le 18 octobre 2026 dans la numérisation d'Internet Archive ; pages lues sur l'image de la page imprimée, sauf la p. 97, lue dans le texte de la numérisation entre les en-têtes des p. 97 et 98."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1940,
+              "to": 1940,
+              "label": "1940"
+            },
+            "era": "colonial",
+            "statement": "Le nom Yulu figure dans l'inventaire des langues du Soudan oriental publié par le linguiste A. N. Tucker en 1940, qui compte 300 contribuables yulu et note la ressemblance de leur vocabulaire avec le bongo, selon Stefano Santandrea, qui le cite. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Yulu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Little Known Tribes of the Bahr el Ghazal Basin",
+                "author": "Stefano Santandrea",
+                "year": 1948,
+                "url": "https://archive.org/details/sudan-notes-and-records_1948_29_part-1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 85 et p. 97",
+                "notes": "Sudan Notes and Records, vol. 29, n° 1, 1948, p. 79 et suivantes. Lu le 18 octobre 2026 dans la numérisation d'Internet Archive ; pages lues sur l'image de la page imprimée, sauf la p. 97, lue dans le texte de la numérisation entre les en-têtes des p. 97 et 98. L'auteur cite A. N. Tucker, The Eastern Sudanic Languages, Oxford University Press, 1940, p. 11, n° 49, que nous n'avons pas lu."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

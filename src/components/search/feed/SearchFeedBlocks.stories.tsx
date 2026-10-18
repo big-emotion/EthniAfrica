@@ -318,6 +318,48 @@ export const FichesGrouped: Story = {
   ),
 };
 
+/**
+ * The « Fiches » lens (brief 12, board search-state-fiches): the fiches on the
+ * searched name, then the ones around it, each card with its fiche's own line
+ * or none.
+ */
+// @req REQ-180
+export const FichesLens: Story = {
+  render: () => (
+    <FichesBlock
+      lens="grouped"
+      items={[
+        {
+          kind: "Peuple",
+          name: "Fulbe (Peul / Fulani)",
+          meta: "2 fiches",
+          onName: true,
+          links: [
+            { name: "Peul", href: "#peuple-peul" },
+            {
+              name: "Fulbe du Massina (Peuls du Massina / Macina)",
+              href: "#peuple-fulbe-massina",
+            },
+          ],
+        },
+        {
+          kind: "Nom",
+          name: "Bello",
+          meta: "Un nom personnel musulman des Haoussa, qu'une étude dit venu du peul.",
+          href: "#nom-bello",
+        },
+        { kind: "Nom", name: "Abdi", href: "#nom-abdi" },
+      ]}
+    />
+  ),
+};
+
+// @req REQ-180
+export const FichesLensDesktop: Story = atDesktop(FichesLens);
+
+// @req REQ-180
+export const FichesLensNight: Story = atNight(FichesLens);
+
 // @req REQ-180
 export const Owed: Story = {
   render: () => (

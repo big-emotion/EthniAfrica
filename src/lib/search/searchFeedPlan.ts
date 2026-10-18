@@ -22,6 +22,11 @@ export interface SearchFeedAvailability {
   /** The misspelling choices, or the forms of a related-only page. */
   appellations?: boolean;
   fiches?: boolean;
+  /**
+   * A piece found by the reader's own word. Not the companions' shorts: they
+   * carry recent pieces around any query, which say nothing about the name.
+   */
+  shorts?: boolean;
 }
 
 /** The blocks « Tout » draws, by the zone of the page they belong to. */
@@ -68,7 +73,10 @@ export function buildSearchFeedPlan(
 
   const first: FeedBlockId[] = ["verdict"];
   if (availability.appellations) first.push("appellations");
-  first.push("lenses", "shorts");
+  first.push("lenses");
+  // A page that admits it does not know the name draws no empty shelf under
+  // the confession (brief 12, part A, approved 2026-10-17).
+  if (state !== "unknown" || availability.shorts) first.push("shorts");
 
   const closing: FeedBlockId[] = [];
   if (
