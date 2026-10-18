@@ -44,6 +44,7 @@ two is wrong, and the fix is decided, not improvised.
 |                   | État : origines concurrentes (« yamoussoukro ») | `search-state-competing` |
 |                   | État : origine non datée (exemple à remplacer) | `search-state-nodate` |
 |                   | État : « peul », le nom propre Fulɓe ouvert   | `search-state-peul-fulbe-open` |
+|                   | État : nom à onze récits (« traore ») | `search-state-long-traore` |
 |                   | Page de recherche (sans requête)             | `search-entry`       |
 | 2 · Peoples       | `PPL_FULA`                                   | `people-fula`        |
 |                   | `PPL_BASSA`                                  | `people-bassa`       |
@@ -91,6 +92,7 @@ are recorded whole, folded as the site folds them.
 | 2026-10-18 | The same rule on the timeline labels, under the operator's rule of 2026-10-17 (no figure of style on any page): « On remonte le temps » becomes « Du plus récent au plus ancien », « Pendant ce temps, ailleurs » becomes « Ailleurs à la même époque », « Naissance du nom X · origine la plus ancienne connue du projet » becomes « Origine la plus ancienne connue du nom X ». Off the boards, the header panel « Trois chemins » becomes « Menu » and « Le saviez-vous ? » becomes « À savoir » | every board that draws the timeline |
 | 2026-10-18 | [Brief 13, one search component and the search page](../briefs/13-search-entry.md) | `Main` (the search component in four states, the full-screen header search at 430, the dialog at 768); `search-entry` (new) |
 | 2026-10-18 | [Brief 14, the Atlas page « Les noms d'Afrique »](../briefs/14-atlas-names-page.md) | `atlas-names` (new, group « 0 · Atlas ») |
+| 2026-10-18 | [Brief 15, the result page tells each account once](../briefs/15-result-page-shorter.md) | `search-peul`, `search-bassa`, `search-congo`, `search-state-thin`, `search-state-competing`, `search-state-nodate`, `search-state-peul-fulbe-open` (« Voir aussi » under the verdict, one row of timeline controls, the accounts after the three most recent folded, the sources block as one list of sources); `search-state-long-traore` (new); `Main` |
 
 The boards of a changed page no longer record v5.2.0: they are the approved
 target, and the code is behind them until the implementation lands.

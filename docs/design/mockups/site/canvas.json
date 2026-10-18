@@ -14,96 +14,96 @@
       "x": 0,
       "y": 0,
       "w": 1440,
-      "h": 23597,
+      "h": 24760,
       "title": "design-system"
     },
     "search-peul-430.dc.html": {
       "x": 1840,
       "y": 0,
       "w": 430,
-      "h": 6314,
+      "h": 5875,
       "expand": "fill"
     },
     "search-peul-768.dc.html": {
       "x": 2350,
       "y": 0,
       "w": 768,
-      "h": 4622,
+      "h": 4109,
       "expand": "fill"
     },
     "search-peul-1440.dc.html": {
       "x": 3198,
       "y": 0,
       "w": 1440,
-      "h": 4051,
+      "h": 3768,
       "expand": "fill"
     },
     "search-bassa-430.dc.html": {
       "x": 1840,
-      "y": 6434,
+      "y": 5995,
       "w": 430,
-      "h": 10270,
+      "h": 9887,
       "expand": "fill"
     },
     "search-bassa-768.dc.html": {
       "x": 2350,
-      "y": 6434,
+      "y": 5995,
       "w": 768,
-      "h": 7607,
+      "h": 7252,
       "expand": "fill"
     },
     "search-bassa-1440.dc.html": {
       "x": 3198,
-      "y": 6434,
+      "y": 5995,
       "w": 1440,
-      "h": 6912,
+      "h": 6807,
       "expand": "fill"
     },
     "search-congo-430.dc.html": {
       "x": 1840,
-      "y": 16824,
+      "y": 16002,
       "w": 430,
-      "h": 11491,
+      "h": 11870,
       "expand": "fill"
     },
     "search-congo-768.dc.html": {
       "x": 2350,
-      "y": 16824,
+      "y": 16002,
       "w": 768,
-      "h": 8299,
+      "h": 8222,
       "expand": "fill"
     },
     "search-congo-1440.dc.html": {
       "x": 3198,
-      "y": 16824,
+      "y": 16002,
       "w": 1440,
-      "h": 7497,
+      "h": 7402,
       "expand": "fill"
     },
     "search-unknown-430.dc.html": {
       "x": 1840,
-      "y": 28435,
+      "y": 27992,
       "w": 430,
       "h": 2944,
       "expand": "fill"
     },
     "search-unknown-768.dc.html": {
       "x": 2350,
-      "y": 28435,
+      "y": 27992,
       "w": 768,
       "h": 2088,
       "expand": "fill"
     },
     "search-unknown-1440.dc.html": {
       "x": 3198,
-      "y": 28435,
+      "y": 27992,
       "w": 1440,
       "h": 1752,
       "expand": "fill"
     },
     "search-state-fiches-430.dc.html": {
       "x": 1840,
-      "y": 31499,
+      "y": 31056,
       "w": 430,
       "h": 2600,
       "expand": "fill",
@@ -111,7 +111,7 @@
     },
     "search-state-fiches-768.dc.html": {
       "x": 2350,
-      "y": 31499,
+      "y": 31056,
       "w": 768,
       "h": 1710,
       "expand": "fill",
@@ -119,7 +119,7 @@
     },
     "search-state-fiches-1440.dc.html": {
       "x": 3198,
-      "y": 31499,
+      "y": 31056,
       "w": 1440,
       "h": 1440,
       "expand": "fill",
@@ -400,73 +400,73 @@
     },
     "search-state-thin-430.dc.html": {
       "x": 1840,
-      "y": 34219,
+      "y": 33776,
       "w": 430,
-      "h": 4400,
+      "h": 3719,
       "expand": "fill",
       "title": "État mince · « wolof » · 430"
     },
     "search-state-thin-768.dc.html": {
       "x": 2350,
-      "y": 34219,
+      "y": 33776,
       "w": 768,
-      "h": 3360,
+      "h": 2597,
       "expand": "fill",
       "title": "État mince · « wolof » · 768"
     },
     "search-state-thin-1440.dc.html": {
       "x": 3198,
-      "y": 34219,
+      "y": 33776,
       "w": 1440,
-      "h": 2860,
+      "h": 2440,
       "expand": "fill",
       "title": "État mince · « wolof » · 1440"
     },
     "search-state-competing-430.dc.html": {
       "x": 1840,
-      "y": 38739,
+      "y": 37615,
       "w": 430,
-      "h": 5726,
+      "h": 5140,
       "expand": "fill",
       "title": "État · origines concurrentes · « yamoussoukro » · 430"
     },
     "search-state-competing-768.dc.html": {
       "x": 2350,
-      "y": 38739,
+      "y": 37615,
       "w": 768,
-      "h": 4360,
+      "h": 3453,
       "expand": "fill",
       "title": "État · origines concurrentes · « yamoussoukro » · 768"
     },
     "search-state-competing-1440.dc.html": {
       "x": 3198,
-      "y": 38739,
+      "y": 37615,
       "w": 1440,
-      "h": 3785,
+      "h": 3178,
       "expand": "fill",
       "title": "État · origines concurrentes · « yamoussoukro » · 1440"
     },
     "search-state-nodate-430.dc.html": {
       "x": 1840,
-      "y": 44585,
+      "y": 42875,
       "w": 430,
-      "h": 4100,
+      "h": 3706,
       "expand": "fill",
       "title": "État · origine non datée · exemple à remplacer · 430"
     },
     "search-state-nodate-768.dc.html": {
       "x": 2350,
-      "y": 44585,
+      "y": 42875,
       "w": 768,
-      "h": 3160,
+      "h": 2523,
       "expand": "fill",
       "title": "État · origine non datée · exemple à remplacer · 768"
     },
     "search-state-nodate-1440.dc.html": {
       "x": 3198,
-      "y": 44585,
+      "y": 42875,
       "w": 1440,
-      "h": 2760,
+      "h": 2360,
       "expand": "fill",
       "title": "État · origine non datée · exemple à remplacer · 1440"
     },
@@ -613,27 +613,51 @@
     },
     "search-state-peul-fulbe-open-430.dc.html": {
       "x": 1840,
-      "y": 48805,
+      "y": 46701,
       "w": 430,
-      "h": 6110,
+      "h": 5926,
       "expand": "fill",
       "title": "État · Fulɓe ouvert · « peul » · 430"
     },
     "search-state-peul-fulbe-open-768.dc.html": {
       "x": 2350,
-      "y": 48805,
+      "y": 46701,
       "w": 768,
-      "h": 4240,
+      "h": 4127,
       "expand": "fill",
       "title": "État · Fulɓe ouvert · « peul » · 768"
     },
     "search-state-peul-fulbe-open-1440.dc.html": {
       "x": 3198,
-      "y": 48805,
+      "y": 46701,
       "w": 1440,
-      "h": 3760,
+      "h": 3670,
       "expand": "fill",
       "title": "État · Fulɓe ouvert · « peul » · 1440"
+    },
+    "search-state-long-traore-430.dc.html": {
+      "x": 1840,
+      "y": 52747,
+      "w": 430,
+      "h": 5836,
+      "expand": "fill",
+      "title": "État : nom à onze récits (« traore ») · 430"
+    },
+    "search-state-long-traore-768.dc.html": {
+      "x": 2350,
+      "y": 52747,
+      "w": 768,
+      "h": 3973,
+      "expand": "fill",
+      "title": "État : nom à onze récits (« traore ») · 768"
+    },
+    "search-state-long-traore-1440.dc.html": {
+      "x": 3198,
+      "y": 52747,
+      "w": 1440,
+      "h": 3612,
+      "expand": "fill",
+      "title": "État : nom à onze récits (« traore ») · 1440"
     },
     "name-state-thin-kollo-430.dc.html": {
       "expand": "fill",
@@ -685,7 +709,7 @@
     },
     "search-entry-430.dc.html": {
       "x": 1840,
-      "y": 55035,
+      "y": 58703,
       "w": 430,
       "h": 2050,
       "expand": "fill",
@@ -693,7 +717,7 @@
     },
     "search-entry-768.dc.html": {
       "x": 2350,
-      "y": 55035,
+      "y": 58703,
       "w": 768,
       "h": 1250,
       "expand": "fill",
@@ -701,7 +725,7 @@
     },
     "search-entry-1440.dc.html": {
       "x": 3198,
-      "y": 55035,
+      "y": 58703,
       "w": 1440,
       "h": 1000,
       "expand": "fill",
@@ -764,6 +788,9 @@
     "search-state-peul-fulbe-open-430.dc.html",
     "search-state-peul-fulbe-open-768.dc.html",
     "search-state-peul-fulbe-open-1440.dc.html",
+    "search-state-long-traore-430.dc.html",
+    "search-state-long-traore-768.dc.html",
+    "search-state-long-traore-1440.dc.html",
     "search-entry-430.dc.html",
     "search-entry-768.dc.html",
     "search-entry-1440.dc.html",

@@ -5218,3 +5218,72 @@ a.ea-fiche-card:focus-visible { outline: none; box-shadow: var(--afh-ring-focus)
 .ea-atlas-line-name { flex: 1 1 auto; }
 .ea-atlas-line-count { font-family: var(--afh-font-mono); font-size: var(--afh-text-caption); font-weight: 500; color: var(--afh-text-soft); }
 .ea-atlas-line svg { width: 18px; height: 18px; flex: none; color: var(--accent-ink); }
+
+/* ============================================================
+   Brief 15 (2026-10-18): the result page tells each account
+   once and opens shorter. « Voir aussi » under the verdict, one
+   row of timeline controls that scrolls sideways, the accounts
+   after the three most recent folded with the brief 10 fold (the
+   origin tile and a tile of competing hypotheses stay open), and the sources block as one list of
+   sources, each with a link to the account it backs. New
+   selectors only, tokens only.
+   ============================================================ */
+.ea-seealso {
+  display: flex; align-items: center; flex-wrap: wrap; column-gap: var(--afh-space-sm);
+  width: 100%; min-height: 44px; padding: 0; border: 0; background: none;
+  font: inherit; font-size: var(--afh-text-small); line-height: 1.5; text-align: start;
+  color: var(--afh-text); cursor: pointer;
+}
+.ea-seealso:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
+.ea-seealso-label { font-weight: 700; }
+.ea-seealso-items { font-weight: 600; }
+.ea-seealso .ea-lens-count { font-weight: 500; color: var(--afh-text-soft); }
+.ea-seealso-caret { flex: none; width: 16px; height: 16px; color: var(--afh-text-soft); }
+.ea-seealso[aria-expanded="true"] .ea-seealso-caret { transform: rotate(180deg); }
+.ea-seealso + .ea-lenses { margin-top: 0; }
+
+.ea-tl-controls {
+  display: flex; align-items: center; gap: var(--afh-space-md);
+  overflow-x: auto; scrollbar-width: none;
+}
+.ea-tl-controls::-webkit-scrollbar { display: none; }
+.ea-tl-controls > * { flex: none; }
+.ea-tl-controls .afh-name-timeline-hint { white-space: nowrap; }
+.ea-tl-controls .afh-chronology-legend { flex-wrap: nowrap; margin: 0; }
+.ea-tl-controls .afh-chronology-legend > li { white-space: nowrap; }
+
+/* The fold sits on the thread without a dot: it is not a moment. */
+.ea-tl-fold::after { display: none; }
+.ea-tl-fold > .ea-fold { margin-top: 0; }
+.ea-tl-folded { margin-top: var(--afh-space-md); padding: 0; }
+.ea-tl-folded > .afh-chronology-station:first-child::before { top: -8px; }
+.ea-tl-folded > .afh-chronology-station:last-child::before { bottom: -8px; }
+
+.ea-src-list { display: flex; flex-direction: column; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--afh-border); }
+.ea-src {
+  display: grid; grid-template-columns: 10px minmax(0, 1fr); align-items: start;
+  column-gap: var(--afh-space-lg); row-gap: var(--afh-space-xs); padding: var(--afh-space-md) 0;
+  border-bottom: 1px solid var(--afh-border);
+}
+.ea-src > .ea-voice-mark { margin-top: 7px; }
+.ea-src-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.ea-src-title { font-size: var(--afh-text-small); font-weight: 700; line-height: 1.45; overflow-wrap: anywhere; color: var(--afh-text); }
+.ea-src-title a {
+  color: var(--accent-ink);
+  text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px;
+}
+.ea-src-by { font-size: var(--afh-text-caption); line-height: 1.5; color: var(--afh-text-soft); overflow-wrap: anywhere; }
+/* A 24 px line; ten pixels of padding above and below, cancelled by the
+   same negative margin, make the 44 px target without a taller row. */
+.ea-src-go {
+  grid-column: 2; justify-self: start; display: inline-block;
+  margin: calc(-1 * var(--afh-space-base)) 0; padding: var(--afh-space-base) 0;
+  font-size: var(--afh-text-small); font-weight: 600; line-height: 24px;
+  color: var(--accent-ink); text-decoration: none; white-space: nowrap;
+}
+.ea-src-go:hover { text-decoration: underline; text-underline-offset: 4px; }
+.ea-src-go:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
+@media (min-width: 768px) {
+  .ea-src { grid-template-columns: 10px minmax(0, 1fr) auto; }
+  .ea-src-go { grid-column: 3; grid-row: 1; align-self: center; }
+}
