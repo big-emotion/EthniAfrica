@@ -1403,6 +1403,56 @@ body{margin:0}
 </div>
 </section>
 
+
+<section class="ds-section">
+<h2 class="ds-h2">Chrome de recherche · focus clavier · brief 17 proposé</h2>
+<p class="ds-sub">Le focus reste visible au clavier sur le champ, les filtres et les liens. Les pastilles mesurent 14 px, comme sur les maquettes de recherche déjà approuvées.</p>
+<div class="ds-row" style="gap: 16px">
+<div class="ds-col" style="width: 430px">
+<p class="ds-cap">Champ de recherche · focus visible</p>
+<form class="ea-search" role="search" aria-label="Recherche · aperçu du focus" style="margin: 0">
+<svg class="ea-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg>
+<label for="q-board-focus" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Recherche</label>
+<input id="q-board-focus" class="ea-search-input" data-board-focus type="search" value="peul" placeholder="Ex. Bafut, Fulfulde, Namibie, Keïta">
+<button class="ea-search-clear" type="button" aria-label="Effacer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button>
+</form>
+</div>
+<div class="ds-col" style="width: 430px">
+<p class="ds-cap">Filtres · un filtre au focus · texte 14 px</p>
+<nav class="ea-lenses" aria-label="Filtres · aperçu du focus" style="margin: 0">
+<button class="ea-lens" type="button" aria-pressed="true">Tout</button>
+<button class="ea-lens" data-board-focus type="button" aria-pressed="false">Peuples <span class="ea-lens-count">12</span></button>
+<button class="ea-lens" type="button" aria-pressed="false">Fiches <span class="ea-lens-count">3</span></button>
+</nav>
+</div>
+<div class="ds-col" style="width: 430px">
+<p class="ds-cap">« Aller plus loin » · titre et liste · un lien au focus</p>
+<section data-testid="feed-block-further" aria-labelledby="main-further-title">
+<h2 id="main-further-title" class="ea-eyebrow">Aller plus loin</h2>
+<ul class="ea-further-list">
+<li><a href="#" data-board-focus>Parcourir les peuples</a></li>
+<li><a href="#">Les familles de langues</a></li>
+</ul>
+</section>
+</div>
+</div>
+<div class="ds-col">
+<p class="ds-cap">En-tête · 320 px · « EthniAfrica » en entier · commandes de 44 × 44 px · signature masquée</p>
+<div class="ds-frame ds-mobile ds-compact-320" style="width: 320px">
+<header class="sh-header" style="position: relative">
+<nav class="sh-bar" aria-label="Navigation principale · 320">
+<a class="sh-brand" href="#"><img class="sh-brand-mark" src="./assets/africa.png" alt=""><span class="sh-brand-text"><span class="sh-brand-name">EthniAfrica</span><span class="sh-brand-tagline">L’Afrique à travers ses noms</span></span></a>
+<div class="sh-controls">
+<button class="sh-icon" type="button" aria-label="Rechercher"><span class="sh-icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg></span></button>
+<button class="sh-icon" type="button" aria-label="Passer en mode nuit"><span class="sh-icon-circle"><svg class="sh-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg></span></button>
+<button class="sh-icon sh-burger" type="button" aria-label="Ouvrir le menu"><span class="sh-icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16"></path><path d="M4 18h16"></path><path d="M4 6h16"></path></svg></span></button>
+</div>
+</nav>
+</header>
+</div>
+</div>
+</section>
+
 </div>
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":26120}}'>
