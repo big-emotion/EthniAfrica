@@ -64,8 +64,11 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * 1214 -> 1213 the same day: the candidate-queue stub of PAT_AHL_SIDI,
  * withdrawn after wave 25 (Ahl Sidi only opens tribal group names), left
  * with it.
+ * 1213 -> 1211 on 2026-10-18: PAT_EKUIKUI and PAT_KALANDULA, retyped as the
+ * names of kings of Bailundo after wave 25, now attest their spelling, people
+ * and country on Dulley (2021); their candidate-queue stubs left them.
  */
-export const UNREVIEWED_AI_GENERATED_RATCHET = 1213;
+export const UNREVIEWED_AI_GENERATED_RATCHET = 1211;
 
 export interface AiGeneratedSourcesResult {
   ok: boolean;
