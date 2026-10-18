@@ -122,5 +122,324 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bassari désigne un peuple du sud-est du Sénégal et de la frontière avec la Guinée, qui se nomme lui-même Ɓëliyan. Sa langue s'appelle l'oniyan ; les linguistes l'appellent aussi le basari. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas les explications proposées et ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Ɓëliyan",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bsc",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Bassari ; une explication le relie à la latérite.",
+        "periodLabel": "Écrit Beliyan dès 1984 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Ɓëliyan, noté ɓələ́yan par les linguistes, est celui que se donnent les Bassari, selon le linguiste Loïc-Michel Perrin, qui donne aussi l'orthographe bassari ɓëliyan. On ne sait pas avec certitude d'où vient ce nom ; une explication est présentée plus bas.",
+            "aspect": "meaning",
+            "formAsWritten": "ɓëliyan",
+            "sources": [
+              {
+                "title": "Description grammaticale du basari (oniyan) : langue atlantique du Sénégal oriental",
+                "author": "Loïc-Michel Perrin",
+                "year": 2019,
+                "url": "https://books.openedition.org/pressesinalco/36962",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9-12, § 4",
+                "notes": "Paris, Presses de l'Inalco, 2019. Lu le 18 octobre 2026 sur OpenEdition Books, chapitre « Présentation générale », paragraphe 4 : « Les Bassari, eux, se nomment ɓələ́yan (ɓëliyan dans l'orthographe bassari) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2011,
+              "to": 2011,
+              "label": "2011"
+            },
+            "era": "modern",
+            "statement": "Le nom Ɓëliyan, écrit Beliyan, est « le vrai nom des Bassari », selon le dossier préparé par le Sénégal pour inscrire le pays bassari au patrimoine mondial. Le même dossier ajoute que l'appellation Bassari s'est pourtant imposée dans tout le Sénégal.",
+            "aspect": "usage",
+            "formAsWritten": "Beliyan",
+            "sources": [
+              {
+                "title": "Pays Bassari : paysages culturels bassari, peul et bédik. Proposition d'inscription sur la Liste du patrimoine mondial",
+                "author": "République du Sénégal",
+                "year": 2011,
+                "url": "https://whc.unesco.org/uploads/nominations/1407.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 26",
+                "notes": "Dossier daté de janvier 2011, publié sur le site du Centre du patrimoine mondial de l'UNESCO. Lu le 18 octobre 2026. Page 26 : « Beliyan (le vrai nom des Bassari) » ; note 1 : « Les Bassari sont en réalité des Beliyan, mais l'appellation Bassari s'est aujourd'hui imposée dans tout le Sénégal »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Rapportée en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Ɓëliyan viendrait, comme le nom de la langue, oniyan, du mot ɛɗə́yan, qui désigne la pierre de latérite, une roche typique de la région. Le passage d'un mot à l'autre se ferait par un changement de la première consonne, lié à un changement de classe du nom. C'est l'explication de la linguiste Marie-Paule Ferry, selon Loïc-Michel Perrin.",
+            "hypothesisGroup": "origine du nom Ɓëliyan",
+            "sources": [
+              {
+                "title": "Description grammaticale du basari (oniyan) : langue atlantique du Sénégal oriental",
+                "author": "Loïc-Michel Perrin",
+                "year": 2019,
+                "url": "https://books.openedition.org/pressesinalco/36962",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9-12, § 4 et note 3",
+                "notes": "Paris, Presses de l'Inalco, 2019. Lu le 18 octobre 2026 sur OpenEdition Books, chapitre « Présentation générale ». Paragraphe 4 : Ferry « explique que ce terme de même que le nom de la langue […] seraient en fait dérivés du nom d'un minéral typique de cette région, la pierre de latérite – ɛɗə́yan » ; note 3 : la dérivation repose sur une alternance de la consonne initiale du radical, « consécutif à un changement de classe nominale ». Perrin cite « Ferry (1981, p. 56) », un texte que sa bibliographie ne donne pas ; nous ne l'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Ɓëliyan apparaît par écrit, sous la forme Beliyan, dans un article des chercheurs Marie-Paule Ferry et Erik Guignard sur la parenté chez les Bedik et les Beliyan, qu'ils appellent aussi Bassari. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple existait déjà avant elle.",
+            "formAsWritten": "Beliyan",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tiges de mil, tiges d'igname. Essai sur la parenté chez les Bedik et les Beliyan (Sénégal oriental)",
+                "author": "Marie-Paule Ferry et Erik Guignard",
+                "year": 1984,
+                "url": "https://www.persee.fr/doc/hom_0439-4216_1984_num_24_3_368513",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 35",
+                "notes": "L'Homme, t. 24, n° 3-4, 1984, p. 35-60. Lu le 18 octobre 2026 sur Persée, dont seule la première page s'affiche. Page 35 : « Tiges d'ignames » désigne les lignages matrilinéaires « des Beliyan ou Bassari ». Nous n'avons pas lu la suite de l'article."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bassari",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom sous lequel on connaît ce peuple ; il viendrait du nom que lui donnent les Mandingues.",
+        "usedIn": ["fra"],
+        "periodLabel": "Mentionné dès 1669 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2011,
+              "to": 2011,
+              "label": "2011"
+            },
+            "era": "modern",
+            "statement": "Le nom Bassari s'est imposé dans tout le Sénégal pour désigner les Beliyan, selon le dossier préparé par le Sénégal pour inscrire le pays bassari au patrimoine mondial. Il sert aussi à nommer leur pays, le pays bassari, et leur langue, que le dossier appelle o-niyan.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Pays Bassari : paysages culturels bassari, peul et bédik. Proposition d'inscription sur la Liste du patrimoine mondial",
+                "author": "République du Sénégal",
+                "year": 2011,
+                "url": "https://whc.unesco.org/uploads/nominations/1407.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 26",
+                "notes": "Dossier daté de janvier 2011, publié sur le site du Centre du patrimoine mondial de l'UNESCO. Lu le 18 octobre 2026. Page 26 : « o‐niyan (langue Bassari) » ; note 1 : « l'appellation Bassari s'est aujourd'hui imposée dans tout le Sénégal »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1972,
+              "to": 2019,
+              "label": "Proposée en 1972, rapportée en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Bassari viendrait de basaroo, le nom que les Mandingues donnent à ce peuple, selon la linguiste Marie-Paule Ferry, citée par Loïc-Michel Perrin.",
+            "hypothesisGroup": "origine du nom Bassari",
+            "sources": [
+              {
+                "title": "Description grammaticale du basari (oniyan) : langue atlantique du Sénégal oriental",
+                "author": "Loïc-Michel Perrin",
+                "year": 2019,
+                "url": "https://books.openedition.org/pressesinalco/36962",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9-12, § 4",
+                "notes": "Paris, Presses de l'Inalco, 2019. Lu le 18 octobre 2026 sur OpenEdition Books, chapitre « Présentation générale », paragraphe 4 : « Selon l'hypothèse de Ferry (1972, p. 2), le terme « bassari » serait issu du nom utilisé par les Mandingues pour désigner cette ethnie : basaroo ». La bibliographie du livre donne Ferry 1972 : « Deux langues tenda du Sénégal oriental : basari et bedik », Bulletin de la SELAF, n° 7, p. 1-62, que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1891,
+              "to": 1894,
+              "label": "1891 (récit publié en 1894)"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bassari figure, sous la forme Bassarés, dans le récit du médecin des colonies André Rançon. Parti en octobre 1891 vers la Haute-Gambie, il dit avoir pu visiter « le pays des Coniaguiés et des Bassarés », des pays où, selon lui, aucun Européen n'était encore allé.",
+            "formAsWritten": "Bassarés",
+            "sources": [
+              {
+                "title": "Dans la Haute-Gambie : voyage d'exploration scientifique",
+                "author": "André Rançon",
+                "year": 1894,
+                "url": "https://archive.org/details/danslahautegambi00ranc",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 17",
+                "notes": "Paris, Société d'éditions scientifiques, 1894. Lu le 18 octobre 2026 dans la numérisation d'Internet Archive ; le numéro de page est lu sur l'image. « visiter le pays de Damentan et le pays des Coniaguiés et des Bassarés, pays absolument inconnus et où jamais Européen ne s'était aventuré » ; le départ a lieu le 27 octobre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1669,
+              "to": 1669,
+              "label": "1669"
+            },
+            "era": "polity",
+            "statement": "Le nom Bassari aurait sa première trace dans un livre en 1669 : c'est la date de la plus ancienne mention publiée des Bassari dans cette région, selon la linguiste Marie-Paule Ferry, rapportée par Loïc-Michel Perrin. Il renvoie à la description de la Guinée de Francisco de Lemos Coelho, éditée en 1953. Nous n'avons pas lu ce texte et ne savons pas sous quelle forme le nom y est écrit. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple existait déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Description grammaticale du basari (oniyan) : langue atlantique du Sénégal oriental",
+                "author": "Loïc-Michel Perrin",
+                "year": 2019,
+                "url": "https://books.openedition.org/pressesinalco/36962",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9-12, § 1 et notes 1-2",
+                "notes": "Paris, Presses de l'Inalco, 2019. Lu le 18 octobre 2026 sur OpenEdition Books, chapitre « Présentation générale », paragraphe 1 : Ferry « signale que la première mention dans un ouvrage des Bassari dans cette région date de 1669 » ; note 1 : « Communication personnelle » ; note 2 : « Coelho, 1953, pp. 23-24 ». La bibliographie du livre donne : Coelho Francisco de Lemos, 1953, Duas Descrições Seiscentistas da Guiné, Lisboa, Academia Portuguesa da História. Nous n'avons pas lu ce livre."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Basari",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre orthographe de Bassari, celle des linguistes pour la langue.",
+        "periodLabel": "Écrit dès 1972 ; en usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Basari, avec un seul s, est la forme qu'emploient les linguistes pour la langue des Bassari : Loïc-Michel Perrin l'écrit ainsi dans le titre de sa grammaire, et Marie-Paule Ferry déjà en 1972, dans le titre d'un article, selon la bibliographie de ce livre.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Description grammaticale du basari (oniyan) : langue atlantique du Sénégal oriental",
+                "author": "Loïc-Michel Perrin",
+                "year": 2019,
+                "url": "https://books.openedition.org/pressesinalco/36962",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Paris, Presses de l'Inalco, 2019. Lu le 18 octobre 2026 sur OpenEdition Books : le titre du livre, et, dans sa bibliographie, Ferry Marie-Paule, 1972, « Deux langues tenda du Sénégal oriental : basari et bedik », Bulletin de la SELAF, n° 7, p. 1-62."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Oniyan",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bsc",
+        "namedBy": null,
+        "shortLine": "Le nom que les Bassari donnent à leur langue.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Oniyan, noté ɔnə́yan par les linguistes et écrit aussi onëyan, est celui que les Bassari donnent à leur langue, selon le linguiste Loïc-Michel Perrin, qui le met dans le titre de sa grammaire. On ne sait pas avec certitude d'où vient ce nom ; une explication est présentée plus bas.",
+            "aspect": "meaning",
+            "formAsWritten": "ɔnə́yan",
+            "sources": [
+              {
+                "title": "Description grammaticale du basari (oniyan) : langue atlantique du Sénégal oriental",
+                "author": "Loïc-Michel Perrin",
+                "year": 2019,
+                "url": "https://books.openedition.org/pressesinalco/36962",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9-12, § 4",
+                "notes": "Paris, Presses de l'Inalco, 2019. Lu le 18 octobre 2026 sur OpenEdition Books, chapitre « Présentation générale », paragraphe 4 : « le nom de la langue (appelée ɔnə́yan et orthographiée oniyan ou onëyan) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2011,
+              "to": 2011,
+              "label": "2011"
+            },
+            "era": "modern",
+            "statement": "Le nom Oniyan, écrit o-niyan, désigne la langue des Bassari dans le dossier préparé par le Sénégal pour inscrire le pays bassari au patrimoine mondial.",
+            "aspect": "usage",
+            "formAsWritten": "o‐niyan",
+            "sources": [
+              {
+                "title": "Pays Bassari : paysages culturels bassari, peul et bédik. Proposition d'inscription sur la Liste du patrimoine mondial",
+                "author": "République du Sénégal",
+                "year": 2011,
+                "url": "https://whc.unesco.org/uploads/nominations/1407.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 26",
+                "notes": "Dossier daté de janvier 2011, publié sur le site du Centre du patrimoine mondial de l'UNESCO. Lu le 18 octobre 2026. Page 26 : on « barre le passage » en « o‐niyan (langue Bassari) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Rapportée en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Oniyan viendrait, comme le nom Ɓëliyan, du mot ɛɗə́yan, qui désigne la pierre de latérite, une roche typique de la région, selon la linguiste Marie-Paule Ferry, citée par Loïc-Michel Perrin.",
+            "hypothesisGroup": "origine du nom Oniyan",
+            "sources": [
+              {
+                "title": "Description grammaticale du basari (oniyan) : langue atlantique du Sénégal oriental",
+                "author": "Loïc-Michel Perrin",
+                "year": 2019,
+                "url": "https://books.openedition.org/pressesinalco/36962",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9-12, § 4 et note 3",
+                "notes": "Paris, Presses de l'Inalco, 2019. Lu le 18 octobre 2026 sur OpenEdition Books, chapitre « Présentation générale ». Paragraphe 4 : le nom des Bassari « de même que le nom de la langue » seraient dérivés du nom de « la pierre de latérite – ɛɗə́yan ». Perrin cite « Ferry (1981, p. 56) », un texte que sa bibliographie ne donne pas ; nous ne l'avons pas lu."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

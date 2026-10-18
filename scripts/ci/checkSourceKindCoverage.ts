@@ -43,7 +43,7 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * citations left PPL_TUAREG with the Touareg name-history corrections, and
  * the sources added to it carry a source_kind.
  */
-export const UNTYPED_SOURCE_RATCHET = 1003;
+export const UNTYPED_SOURCE_RATCHET = 1002;
 
 export interface UntypedSource {
   file: string;
