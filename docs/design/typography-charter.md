@@ -11,6 +11,11 @@ The scale itself lives in `src/styles/tokens/type.css`.
 drifts from the rules in §1 and §2, and `afh/no-raw-font-size` fails it if a
 component reintroduces a size outside the scale.
 
+Corpus prose renderers replace ordinary spaces with U+00A0 at French
+punctuation marks and inside guillemets. This is a display rule only: the
+published prose stays as authored, and existing U+00A0 and U+202F spaces are
+preserved. Apply it to prose fields, not to names, labels or source titles.
+
 ## 1. Nine roles, no tenth
 
 A role is a job, not a size. Two things that do the same job take the same

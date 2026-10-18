@@ -12,6 +12,7 @@ import {
   nameAnswerCopy,
   type NameAnswerCopy,
 } from "@/lib/i18n/copy/nameAnswer";
+import { normalizeFrenchSpacing } from "@/lib/prose/frenchSpacing";
 import { cn } from "@/lib/utils";
 import type { SearchEvidence } from "@/lib/search/evidence";
 import type { NamingPresentationForm } from "@/lib/search/naming";
@@ -242,7 +243,7 @@ function AppellationGroup({
         {opened?.detail ? (
           <div className="mt-afh-md max-w-[65ch] text-afh-small leading-[var(--afh-leading-small)] text-afh-text">
             <p>
-              <InlineMarkup text={opened.detail.text} />
+              <InlineMarkup text={normalizeFrenchSpacing(opened.detail.text)} />
             </p>
             {opened.detail.evidence ? (
               <SearchFeedEvidenceAction

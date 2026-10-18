@@ -164,6 +164,55 @@ describe("PlatesBlock", () => {
     expect(screen.getByText(/Archive nationale/)).toBeInTheDocument();
   });
 
+  // @req REQ-180
+  it("keeps French punctuation together in companion prose and preserves originals", () => {
+    render(
+      <PlatesBlock
+        items={[
+          {
+            ...anecdote,
+            headline: "Un nom : « Fulɓe ! »",
+            body: ["Une forme ? Oui ; une autre : non !"],
+          },
+          {
+            ...proverb,
+            text: "Un nom : « Fulɓe ! »",
+            meaning: "Une forme ? Oui ; une autre : non !",
+            original: {
+              text: "nɔ̌m : « Fúlɓe ! »",
+              lang: "xx",
+              language: "langue d’origine",
+            },
+            origin: {
+              status: "attested",
+              note: "Une piste : à vérifier !",
+            },
+          },
+        ]}
+      />
+    );
+
+    const headings = screen.getAllByRole("heading", { level: 3 });
+    expect(headings.map((heading) => heading.textContent)).toEqual([
+      "Un nom\u00a0: «\u00a0Fulɓe\u00a0!\u00a0»",
+      "« Un nom\u00a0: «\u00a0Fulɓe\u00a0!\u00a0» »",
+    ]);
+    expect(
+      screen
+        .getAllByText("Une forme ? Oui ; une autre : non !")
+        .map((paragraph) => paragraph.textContent)
+    ).toEqual([
+      "Une forme\u00a0? Oui\u00a0; une autre\u00a0: non\u00a0!",
+      "Une forme\u00a0? Oui\u00a0; une autre\u00a0: non\u00a0!",
+    ]);
+    expect(screen.getByText("Une piste : à vérifier !").textContent).toBe(
+      "Une piste\u00a0: à vérifier\u00a0!"
+    );
+    expect(screen.getByText("nɔ̌m : « Fúlɓe ! »").textContent).toBe(
+      "nɔ̌m : « Fúlɓe ! »"
+    );
+  });
+
   // @req REQ-178
   it("uses the reviewed board card density without relation or source-list rows", () => {
     render(

@@ -192,4 +192,24 @@ describe("FichesBlock", () => {
     expect(screen.queryByRole("region")).toBeNull();
     expect(screen.queryByRole("heading")).toBeNull();
   });
+
+  // @req REQ-180
+  it("keeps French punctuation and guillemets together in fiche cards", () => {
+    render(
+      <FichesBlock
+        items={[
+          patronymeCard(
+            "Nom : « Fulɓe ! »",
+            "Une forme ? Oui ; une autre : non !"
+          ),
+        ]}
+      />
+    );
+
+    const card = screen.getByRole("listitem").querySelector("a");
+    expect(card?.children[1].textContent).toBe("Nom : « Fulɓe ! »");
+    expect(card?.children[2].textContent).toBe(
+      "Une forme\u00a0? Oui\u00a0; une autre\u00a0: non\u00a0!"
+    );
+  });
 });

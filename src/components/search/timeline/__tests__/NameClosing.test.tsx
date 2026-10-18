@@ -25,6 +25,43 @@ const name = timeline.names[0];
 
 describe("NameSourcesBlock — « Les sources »", () => {
   // @req REQ-198
+  it("keeps punctuation and guillemets together in source account prose", () => {
+    const timeline = buildNameTimeline(PEUL_HISTORY, "peul");
+    const original = timeline.names[0];
+    const name = {
+      ...original,
+      tiles: original.tiles.map((tile, index) =>
+        index === 0
+          ? {
+              ...tile,
+              accounts: tile.accounts.map((account, accountIndex) =>
+                accountIndex === 0
+                  ? {
+                      ...account,
+                      statement: "Un nom : « Fulɓe ! » ; pourquoi ?",
+                    }
+                  : account
+              ),
+            }
+          : tile
+      ),
+    };
+    render(
+      <NameSourcesBlock
+        name={name}
+        forms={timeline.italicForms}
+        open
+        language="fr"
+      />
+    );
+
+    expect(
+      screen.getAllByText(/Un nom/).find((element) => element.tagName === "P")
+        ?.textContent
+    ).toBe("Un nom\u00a0: «\u00a0Fulɓe\u00a0!\u00a0»\u00a0; pourquoi\u00a0?");
+  });
+
+  // @req REQ-198
   it("asks who tells the open name and lists its source families", () => {
     render(
       <NameSourcesBlock

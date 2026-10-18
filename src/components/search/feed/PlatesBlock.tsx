@@ -10,6 +10,7 @@ import { ActionLink } from "@/components/ui/ActionLink";
 import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
 import { getLocalizedRoute } from "@/lib/routing";
+import { normalizeFrenchSpacing } from "@/lib/prose/frenchSpacing";
 import type { Language } from "@/types/shared";
 import type { FeedMovementZone } from "@/components/search/feed/feedBlockTypes";
 import { cn } from "@/lib/utils";
@@ -114,7 +115,7 @@ function ReviewedPlate({
       >
         <Image
           src={item.illustration.src}
-          alt={item.illustration.alt}
+          alt={normalizeFrenchSpacing(item.illustration.alt)}
           unoptimized
           width={250}
           height={155}
@@ -124,10 +125,10 @@ function ReviewedPlate({
         <div className="flex flex-col gap-afh-md px-afh-2xl pb-afh-2xl pt-afh-lg">
           <p className="text-afh-eyebrow font-semibold uppercase leading-[var(--afh-leading-eyebrow)] tracking-[0.14em] text-[color:var(--accent-ink)]">
             {searchFeedCopy[language].labels.anecdote}
-            {item.about ? ` · ${item.about}` : ""}
+            {item.about ? ` · ${normalizeFrenchSpacing(item.about)}` : ""}
           </p>
           <h3 className="font-afh-display text-afh-body font-bold leading-[1.3]">
-            {item.headline}
+            {normalizeFrenchSpacing(item.headline)}
           </h3>
           <p className="text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft">
             Photo : {item.illustration.credit}
@@ -147,7 +148,7 @@ function ReviewedPlate({
         {item.original ? ` ${item.original.language}` : ""}
       </p>
       <h3 className="font-afh-display text-afh-body font-bold leading-[1.3]">
-        « {item.text} »
+        « {normalizeFrenchSpacing(item.text)} »
       </h3>
       {item.original ? (
         <p
@@ -159,12 +160,12 @@ function ReviewedPlate({
       ) : null}
       {item.meaning && item.meaning !== item.text ? (
         <p className="text-afh-small leading-[var(--afh-leading-small)]">
-          {item.meaning}
+          {normalizeFrenchSpacing(item.meaning)}
         </p>
       ) : null}
       {item.origin.note ? (
         <p className="text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft">
-          {item.origin.note}
+          {normalizeFrenchSpacing(item.origin.note)}
         </p>
       ) : null}
     </a>
@@ -230,7 +231,7 @@ export function PlatesBlock({
                     <div className="relative aspect-[8/5] bg-afh-bg-warm min-[1200px]:aspect-auto min-[1200px]:h-[193px]">
                       <Image
                         src={item.illustration.src}
-                        alt={item.illustration.alt}
+                        alt={normalizeFrenchSpacing(item.illustration.alt)}
                         width={250}
                         height={156}
                         sizes="(min-width: 1200px) 50vw, 250px"
@@ -240,7 +241,9 @@ export function PlatesBlock({
                     <div className="flex flex-1 flex-col gap-afh-md p-afh-2xl">
                       <p className="text-afh-eyebrow font-semibold uppercase tracking-[var(--afh-eyebrow-tracking)] text-[color:var(--accent-ink)]">
                         {copy.labels.anecdote}
-                        {reviewed && item.about ? ` · ${item.about}` : ""}
+                        {reviewed && item.about
+                          ? ` · ${normalizeFrenchSpacing(item.about)}`
+                          : ""}
                       </p>
                       {reviewed ? null : (
                         <CompanionRelationLabel
@@ -249,7 +252,7 @@ export function PlatesBlock({
                         />
                       )}
                       <h3 className="font-afh-display text-afh-body font-bold">
-                        {item.headline}
+                        {normalizeFrenchSpacing(item.headline)}
                       </h3>
                       {reviewed
                         ? null
@@ -263,7 +266,7 @@ export function PlatesBlock({
                                   : "min-[1200px]:hidden"
                               )}
                             >
-                              {paragraph}
+                              {normalizeFrenchSpacing(paragraph)}
                             </p>
                           ))}
                       <p className="text-afh-caption text-afh-text-soft">
@@ -297,7 +300,7 @@ export function PlatesBlock({
                       />
                     )}
                     <h3 className="font-afh-display text-afh-body font-bold">
-                      « {item.text} »
+                      « {normalizeFrenchSpacing(item.text)} »
                     </h3>
                     {item.original ? (
                       <p
@@ -308,11 +311,11 @@ export function PlatesBlock({
                       </p>
                     ) : null}
                     <p className="text-afh-small min-[1200px]:line-clamp-5">
-                      {item.meaning}
+                      {normalizeFrenchSpacing(item.meaning)}
                     </p>
                     {item.origin.note ? (
                       <p className="text-afh-caption text-afh-text-soft min-[1200px]:line-clamp-2">
-                        {item.origin.note}
+                        {normalizeFrenchSpacing(item.origin.note)}
                       </p>
                     ) : null}
                     {reviewed ? null : (

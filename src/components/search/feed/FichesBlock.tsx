@@ -5,6 +5,7 @@ import { SearchFeedSectionHeading } from "@/components/search/feed/SearchFeedSec
 import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
 import type { FeedMovementZone } from "@/components/search/feed/feedBlockTypes";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
+import { normalizeFrenchSpacing } from "@/lib/prose/frenchSpacing";
 import { cn } from "@/lib/utils";
 import type { Language } from "@/types/shared";
 
@@ -216,7 +217,7 @@ function FicheGrid({
             </span>
             {item.meta ? (
               <span className="text-afh-caption leading-[var(--afh-leading-caption)] text-afh-text-soft">
-                {item.meta}
+                {normalizeFrenchSpacing(item.meta)}
               </span>
             ) : null}
           </>
