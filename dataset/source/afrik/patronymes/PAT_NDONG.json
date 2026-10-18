@@ -119,5 +119,197 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Ndong », « Fang », « le Gabon », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la page Forebears propre au nom consultée directement, n’a établi aucune règle propre à Ndong permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ndong est un nom de personne fang, porté au Gabon, en Guinée équatoriale et au Cameroun. Les sources lues ne disent pas ce qu'il veut dire : on ne sait pas avec certitude d'où il vient. Sa plus ancienne trace connue du projet est une légende de photographie publiée en 1913.",
+    "names": [
+      {
+        "nameText": "Ndong",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne fang, du Gabon au Cameroun ; on ne sait pas ce qu'il veut dire.",
+        "periodLabel": "Écrit dès 1913 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndong figure parmi les noms de personnes fang du Gabon que relève le chercheur Fabrice Agyune Ndone. Il le trouve aussi chez les Makina, voisins des Fang, et chez des Saké, où il le rapproche du nom Ndongo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Anthroponymie comparée makina, fang et saké : quelques spécificités sur les noms de personnes chez les Makina du Gabon",
+                "author": "Fabrice Agyune Ndone",
+                "year": 2006,
+                "url": "http://www.ddl.cnrs.fr/fulltext/fflac/Agyune%20Ndone_2006.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5 (tableau n° 1) et p. 7",
+                "notes": "Article d'un doctorant en anthropologie (université Omar Bongo et université Lumière Lyon 2), non daté, mis en ligne par le laboratoire Dynamique du langage ; il cite des travaux de 2005 et 2006. Lu le 18 octobre 2026 ; les pages sont celles du PDF. Page 5, tableau n° 1 : Ndong figure dans la colonne des noms fang et dans celle des noms makina ; l'auteur ajoute que les noms de famille circulent « presque toujours en circuit fermé », d'ascendant à descendant. Page 7 : chez certains Saké, il relève « Ndong qui se rapproche plus de celui de Ndongo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2006,
+              "to": 2006,
+              "label": "Rapporté en 2006"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndong figure dans les actes d'état civil de plusieurs Shiwe, un des deux groupes makina du Gabon. Ces Shiwe disent pourtant que leur nom est Toungou : l'administration aurait écrit Ndong à la place de Ntoungou. C'est ce qu'ils ont répété au chercheur Fabrice Agyune Ndone, qui ne dit ni quand ni par qui le nom a été écrit.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Anthroponymie comparée makina, fang et saké : quelques spécificités sur les noms de personnes chez les Makina du Gabon",
+                "author": "Fabrice Agyune Ndone",
+                "year": 2006,
+                "url": "http://www.ddl.cnrs.fr/fulltext/fflac/Agyune%20Ndone_2006.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 7",
+                "notes": "Lu le 18 octobre 2026. Page 7 du PDF : « C'est le cas d'ailleurs de Ndong, figurant dans les actes d'identités civils de plusieurs Shiwe. Plusieurs de nos informateurs n'ont cessé de nous répéter que leur nom est Toungou », Ndong n'existant chez eux que par l'administration « qui l'aurait transcrit en lieu et place de NToungou ». Les informateurs ne sont pas nommés ; le lieu et la date des entretiens ne sont pas donnés. Page 8 : les Mekè et les Shiwe sont les deux sous-groupes makina."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2006,
+              "to": 2006,
+              "label": "Décrit en 2006"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndong n'a pas de sens connu dans les sources lues : dans son tableau des noms que partagent Fang et Makina, Fabrice Agyune Ndone met un point d'interrogation à la place du sens fang. Deux explications de sa présence chez les Makina sont proposées ; nous les présentons à part.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Anthroponymie comparée makina, fang et saké : quelques spécificités sur les noms de personnes chez les Makina du Gabon",
+                "author": "Fabrice Agyune Ndone",
+                "year": 2006,
+                "url": "http://www.ddl.cnrs.fr/fulltext/fflac/Agyune%20Ndone_2006.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11 (tableau n° 4)",
+                "notes": "Lu le 18 octobre 2026. Page 11 du PDF, tableau n° 4 (noms partagés par les Makina et les Fang) : la ligne Ndong porte « ? » dans la colonne du sens fang, en face du nom shiwe Ntoungou, « Citron »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2006,
+              "to": 2006,
+              "label": "Proposé en 2006"
+            },
+            "era": "modern",
+            "statement": "Chez les Makina, le nom Ndong serait la forme écrite d'un nom shiwe, Ntoungou, qui veut dire « citron », selon Fabrice Agyune Ndone. Il juge ce passage « probable » et précise que le nom fang n'a rien à voir avec le citron, qui porte un autre mot en fang.",
+            "hypothesisGroup": "origine du nom Ndong chez les Makina",
+            "sources": [
+              {
+                "title": "Anthroponymie comparée makina, fang et saké : quelques spécificités sur les noms de personnes chez les Makina du Gabon",
+                "author": "Fabrice Agyune Ndone",
+                "year": 2006,
+                "url": "http://www.ddl.cnrs.fr/fulltext/fflac/Agyune%20Ndone_2006.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 12",
+                "notes": "Lu le 18 octobre 2026. Page 12 du PDF : l'auteur range parmi les noms shiwe « probablement » adaptés au fang le cas de ntugu, « citron en shiwe qui est transcrit par » Ndong, « anthroponyme fang qui n'a rien à voir avec le citron », le citron portant un autre mot en fang."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2006,
+              "to": 2006,
+              "label": "Proposé en 2006"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndong pourrait aussi être commun aux Fang et aux Makina depuis une origine partagée, ou être passé d'un groupe à l'autre avec les contacts et les mariages, selon Fabrice Agyune Ndone. Il laisse ces deux pistes ouvertes.",
+            "hypothesisGroup": "origine du nom Ndong chez les Makina",
+            "sources": [
+              {
+                "title": "Anthroponymie comparée makina, fang et saké : quelques spécificités sur les noms de personnes chez les Makina du Gabon",
+                "author": "Fabrice Agyune Ndone",
+                "year": 2006,
+                "url": "http://www.ddl.cnrs.fr/fulltext/fflac/Agyune%20Ndone_2006.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 7",
+                "notes": "Lu le 18 octobre 2026. Page 7 du PDF : après le récit des Shiwe, l'auteur ajoute que « d'autres hypothèses » sont possibles, « celle de l'origine commune » et « l'hypothèse de l'emprunt favorisé par les contacts et les nombreux mariages » ; il cite Ndong parmi les noms communs aux Fang et aux Makina dont il veut chercher l'origine."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1913,
+              "label": "Recherches de 1904-1909, ouvrage publié en 1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ndong désigne aussi un groupe de parenté dans le livre de Günter Tessmann : une photographie montre une étable du village de Massöm, « Fam. Ndong », dans le sud du Cameroun. Tessmann appelle « famille » le groupe de parenté des Fang. Il ne dit pas si ce groupe a un lien avec les hommes qui portent Ndong comme nom personnel.",
+            "aspect": "usage",
+            "formAsWritten": "Fam. Ndong",
+            "sources": [
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 1",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku01tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 107",
+                "notes": "Berlin, Ernst Wasmuth, 1913 ; exemplaire numérisé d'Internet Archive, page lue sur l'image le 18 octobre 2026. Légende de la figure 58, page 107 : « Schaf- und Ziegenstall in Massöm (Fam. Ndong), Süd-Kamerun » (étable à moutons et à chèvres à Massöm, famille Ndong, Sud-Cameroun). La page de titre donne les recherches de l'auteur : expédition de 1907-1909 et travaux de 1904-1907."
+              },
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 2",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku02tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 285",
+                "notes": "Berlin, Ernst Wasmuth, 1913 ; exemplaire numérisé d'Internet Archive, lu le 18 octobre 2026. Page 285 : face à un étranger, le Pangwe donne « der Name der Sippe, die ja als „Familie“ im Pangwesinne zu bezeichnen ist » (le nom du groupe de parenté, qu'il faut appeler « famille » au sens pangwe)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1913,
+              "label": "Recherches de 1904-1909, ouvrage publié en 1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ndong apparaît par écrit dans la monographie de Günter Tessmann sur les Pangwe, nom allemand des Fang : une photographie est légendée « Ndong-Alogo (Fam. Ojek), Span. Guinea ». D'après la règle que Tessmann décrit, Ndong est le nom de l'homme et Alogo celui de son père. C'est la plus ancienne trace de ce nom que le projet connaît ; le nom est plus ancien qu'elle.",
+            "formAsWritten": "Ndong-Alogo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 1",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku01tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 13",
+                "notes": "Berlin, Ernst Wasmuth, 1913 ; exemplaire numérisé d'Internet Archive, page lue sur l'image le 18 octobre 2026. Légende de la figure 8, page 13 : « Ndong-Alogo (Fam. Ojek), Span. Guinea », sous deux photographies d'un jeune homme. La page de titre donne l'expédition de 1907-1909 et les travaux de 1904-1907."
+              },
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 2",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku02tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 285",
+                "notes": "Berlin, Ernst Wasmuth, 1913 ; exemplaire numérisé d'Internet Archive, lu le 18 octobre 2026. Page 285 : « Dem eigenen, vom Vater gegebenen Namen wird der des Vaters selbst angefügt » ; l'exemple de l'auteur est Boka-Essun, Boka fils d'Essun."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
