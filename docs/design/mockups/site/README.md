@@ -34,6 +34,7 @@ two is wrong, and the fix is decided, not improvised.
 | Group             | Page                                         | File stem            |
 | ----------------- | -------------------------------------------- | -------------------- |
 | Design system     | Tokens and components seen on the pages      | `Main`               |
+| 0 · Atlas         | Page Atlas : Les noms d'Afrique              | `atlas-names`        |
 | 1 · Search        | Résultat « peul » (timeline)                 | `search-peul`        |
 |                   | Résultat « bassa » (several subjects)        | `search-bassa`       |
 |                   | Résultat « congo » (two countries)           | `search-congo`       |
@@ -89,6 +90,7 @@ are recorded whole, folded as the site folds them.
 | 2026-10-17 | The sources block renamed, approved by the operator in chat on 2026-10-17 (a wording change, no brief: the layout does not move). The eyebrow « Les sources parlent » goes; the question « Qui raconte le nom X ? » becomes « Les sources du nom X » (« Les sources des noms de ce peuple » on a fiche); the sentence under it counts sources, not accounts (« Plusieurs sources expliquent l'origine de ce nom. Voici leurs 4 récits, rangés par type de source. »). The rule behind it, no figure of style in a title, is in [`reader-facing-register.md`](../../../editorial/reader-facing-register.md) | every `search-*`, `people-*`, `language-*`, `family-*` and `country-*` board that draws the block; `Main` |
 | 2026-10-18 | The same rule on the timeline labels, under the operator's rule of 2026-10-17 (no figure of style on any page): « On remonte le temps » becomes « Du plus récent au plus ancien », « Pendant ce temps, ailleurs » becomes « Ailleurs à la même époque », « Naissance du nom X · origine la plus ancienne connue du projet » becomes « Origine la plus ancienne connue du nom X ». Off the boards, the header panel « Trois chemins » becomes « Menu » and « Le saviez-vous ? » becomes « À savoir » | every board that draws the timeline |
 | 2026-10-18 | [Brief 13, one search component and the search page](../briefs/13-search-entry.md) | `Main` (the search component in four states, the full-screen header search at 430, the dialog at 768); `search-entry` (new) |
+| 2026-10-18 | [Brief 14, the Atlas page « Les noms d'Afrique »](../briefs/14-atlas-names-page.md) | `atlas-names` (new, group « 0 · Atlas ») |
 
 The boards of a changed page no longer record v5.2.0: they are the approved
 target, and the code is behind them until the implementation lands.
