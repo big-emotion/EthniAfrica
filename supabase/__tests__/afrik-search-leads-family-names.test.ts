@@ -161,7 +161,7 @@ describe("near-miss leads over family names (migration 110)", () => {
 
     expect(people).toContain(PEOPLE_FORM_FILTER);
     expect(people).toMatch(BEST_FORM);
-    expect(sql).not.toMatch(/CASE WHEN form\.value ~/);
+    expect(sql).not.toMatch(/CASE WHEN form\.value [~]/);
     const comment = sql.slice(sql.indexOf("COMMENT ON FUNCTION"));
     expect(comment).toMatch(/not one name/);
     expect(comment).not.toMatch(/names its filed name instead/);
