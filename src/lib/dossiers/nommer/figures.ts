@@ -83,7 +83,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 687 -> 666 on 2026-10-14: twenty-one people fiches of waves 14 to 19 folded into their keepers or withdrawn (fifteen folded, six withdrawn).
     // 666 -> 665 on 2026-10-14: the Nabt fiche, a duplicate of PPL_NABDAM, folded into it.
     // 665 -> 657 on 2026-10-18: the eight people fiches folded or withdrawn after wave 24 (Mucubal into PPL_MUCUVAL; Taal, Guwa, Mbogo, Mobe, Autres peuples bantous, Peuples forestiers du Sud et de l'Est, Africains d'origine récente withdrawn).
-    value: 657,
+    // 657 -> 659 the same day: PPL_MAKA and PPL_NJEM, two of the peoples the withdrawn forest-peoples label grouped, added with sources of their own.
+    value: 659,
     method: `nombre de fichiers ${PEOPLE_GLOB}`,
     countedOn: COUNTED_ON,
   },
@@ -213,7 +214,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 290 -> 279 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
     // 279 -> 278 on 2026-10-14: the Nabt fiche, which declared no status, was folded.
     // 278 -> 275 on 2026-10-18: the Mucubal, Taal and Mbogo fiches, which declared no status, folded or withdrawn after wave 24.
-    value: 275,
+    // 275 -> 277 the same day: PPL_MAKA and PPL_NJEM added without a status, which the model leaves out until a fiche is reviewed.
+    value: 277,
     method: "fiches sans classificationStatus",
     countedOn: COUNTED_ON,
   },
@@ -487,7 +489,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 626 -> 624 on 2026-10-16: the Koroma and Bangura fiches folded into PAT_KOUROUMA and PAT_BANGOURA; both cited sources of their own.
     // 624 -> 635 on 2026-10-18: eleven Southern African family names of wave 25 (Baloyi, Gamedze, Ginindza, Hlophe, Letsie, Mabote, Mabuza, Macuacua, Magagula, Matsebula, Mondlane) now cite sources of their own (Junod, Van Warmelo, Ellenberger, the Swazi surnames dictionary); all eleven cited only the candidate queue before.
     // 635 -> 627 on 2026-10-18: the eight family-name fiches folded or withdrawn after wave 25 (Njie, Jallow, Jalloh and Aden into Ndiaye, Diallo and Adam; El Kenzi, Ngarlejy, Ngarta and Kigozi withdrawn); all eight cited sources of their own.
-    value: 627,
+    // 627 -> 631 the same day: PAT_IRAKOZE (the Rwandan statistics of 2025), PAT_EKUIKUI and PAT_KALANDULA (Dulley 2021) and PAT_MAVOUNGOU (the Journal officiel of Congo, 2024) now cite sources of their own; all four cited only the candidate queue before.
+    value: 631,
     method:
       "fiches dataset/source/afrik/patronymes/PAT_*.json portant un nameSystem et " +
       "au moins une source autre que la file d'attente des candidats — les fiches " +
@@ -507,7 +510,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 171 -> 173 on 2026-10-15: PAT_KOFI and PAT_KWAME, two non-hereditary day names, now cite sources of their own.
     // 173 -> 174 on 2026-10-15: PAT_KWABENA, a non-hereditary day name, added.
     // 174 -> 172 on 2026-10-18: the Aden fiche, folded into PAT_ADAM, and the Ngarlejy fiche, withdrawn, were both typed non-hereditary.
-    value: 172,
+    // 172 -> 173 the same day: PAT_IRAKOZE, typed non-hereditary, now cites a source of its own.
+    value: 173,
     method:
       "fiches de nom recherchées dont transmissionMode vaut non_hereditary, au " +
       "même périmètre que le compte ci-dessus",
