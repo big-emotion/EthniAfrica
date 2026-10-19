@@ -55,8 +55,105 @@ const DRAWN = new Set([
 // Natural Earth's countries (highlight, card-unit labels and places) have no
 // place in a sequence and are refused like any other undrawn field.
 const SEQUENCE_DRAWN = new Set(["sequence", "areas", "borders", "caption"]);
+// 1.11.0, the animated satellite map (handoff, « Card data »): the fields a
+// map phase adds beside the 1.5.0 ones. A card with none of them is drawn
+// exactly as in 1.5.0.
+const ANIMATED_DRAWN = {
+  view: ["lon", "lat", "radius"],
+  moves: ["say", "lon", "lat", "radius"],
+  arrows: [
+    "id",
+    "from",
+    "to",
+    "via",
+    "people",
+    "ink",
+    "foreign",
+    "say",
+    "bend",
+    "both",
+    "trace",
+    "out",
+  ],
+  drawings: ["kind", "at", "say", "until", "label"],
+  words: ["text", "kind", "at", "say", "until", "people", "ink"],
+  places: ["name", "at", "say", "side"],
+  facts: ["say", "shows"],
+  rename: ["from", "to", "dates", "at", "say"],
+  // The foot's key, when the plan groups its marks (« Royaumes », « Chemin
+  // des Mossi ») instead of listing every area.
+  key: ["swatch", "label"],
+};
+const ANIMATED_AREA = ["id", "people", "states", "nameAt", "label"];
+const AREA_FIELDS = ["file", "name", "ink", "lang", "say", "langSay"];
 export const AREA_INKS = ["a", "b", "c", "d"];
 const AREA_DIR = new URL("./data/areas/", import.meta.url);
+
+// The eight drawings of series 1 (assets/Illustrations/README.md) and the
+// label each takes under it on the map.
+export const ILLUSTRATIONS = {
+  or: "or",
+  kola: "kola",
+  eleveurs: "éleveurs",
+  cavaliers: "cavaliers",
+  commercants: "commerçants",
+  guerres: "guerres",
+  colonne: "colonne française",
+  travailleurs: "travailleurs",
+};
+
+// 1.11.0, the marks on the map (series.md, « Where the marks sit », 4 to 6).
+export const MARKS = {
+  band: { x: [60, 1020], y: [724, 1296] },
+  maxTexts: 8,
+  maxWords: 2,
+  clearance: 12,
+  maxDrawings: 3,
+  maxArrowsFull: 3,
+  // The colonial power's ink, outside the four (token map-foreign).
+  foreign: "#f3e9da",
+  phraseChars: 26,
+  // Font size and line height of each word style and of the labels.
+  styles: {
+    // Ratios: the advance of an average letter in em, measured on the
+    // boards' drawn boxes (frames-report.json of the 1.11.0 boards).
+    phrase: { size: 40, line: 48, ratio: 0.52, outline: 6 },
+    name: { size: 40, line: 48, ratio: 0.52, outline: 6 },
+    date: { size: 80, line: 80, ratio: 0.5, outline: 9 },
+    country: { size: 64, line: 70, ratio: 0.62, outline: 8 },
+    dates: { size: 30, line: 36, ratio: 0.52, outline: 4 },
+    label: { size: 28, line: 32, ratio: 0.48, outline: 4 },
+    place: { size: 28, line: 32, ratio: 0.62, outline: 0 },
+  },
+};
+// The proportion rule (series.md, « 5. Proportions »): s is the shorter side
+// of the smallest lit area's box on screen.
+const clamp = (x, lo, hi) => Math.min(hi, Math.max(lo, x));
+export const arrowWidth = (s) => clamp(Math.round(s / 14), 5, 10);
+export const drawingHeight = (s) => clamp(Math.round(1.1 * s), 100, 150);
+
+// Series.md, « 2. Area states »: the fill, edge, keyline, hatching and name
+// of an area between context (lit 0) and lit (lit 1). At lit 1 these are the
+// 1.4.1 grammar's own values, so a lit area reads as before.
+// `hatch` is the opacity of an approximate area's hatching; a certain area
+// has none. The page draws with this very function (sent as source).
+export function areaStyle(lit) {
+  const r = (n) => Math.round(n * 1000) / 1000;
+  return {
+    fill: r(0.1 + 0.2 * lit),
+    edge: r(2.5 + 1.5 * lit),
+    edgeOpacity: r(0.6 + 0.4 * lit),
+    keyline: r(5 + 3 * lit),
+    keylineOpacity: r(0.55 * (0.6 + 0.4 * lit)),
+    hatch: r(0.35 + 0.65 * lit),
+    name: r(0.6 + 0.4 * lit),
+  };
+}
+
+export const isAnimatedCard = (card) =>
+  card.opening === "globe" ||
+  Object.keys(ANIMATED_DRAWN).some((k) => k in (card.map ?? {})) ||
+  (card.map?.areas ?? []).some((a) => ANIMATED_AREA.some((k) => k in a));
 
 export function checkSeriesMapCard(card) {
   const map = card.map ?? fail(`Card ${card.id} has no map`);
@@ -64,7 +161,10 @@ export function checkSeriesMapCard(card) {
     fail(`Card ${card.id}: Carte d'atlas : carrousel seulement`);
   const sequence = "sequence" in map;
   for (const k of Object.keys(map))
-    if (!(sequence ? SEQUENCE_DRAWN : DRAWN).has(k))
+    if (
+      !(sequence ? SEQUENCE_DRAWN : DRAWN).has(k) &&
+      !(sequence && k in ANIMATED_DRAWN)
+    )
       fail(
         `Card ${card.id}: map.${k} has no equivalent on satellite imagery; the video cannot draw it`
       );
@@ -72,7 +172,18 @@ export function checkSeriesMapCard(card) {
     fail(
       `Card ${card.id}: borders « ${map.borders} » are not drawn on imagery (none, quiet or strong)`
     );
+  if (card.opening !== undefined) {
+    if (card.opening !== "globe" || card.type !== "opener")
+      fail(`Card ${card.id}: only the opener opens, on the globe`);
+    if (!sequence || !map.view)
+      fail(
+        `Card ${card.id}: the globe opens on a map sequence's first view (map.view)`
+      );
+    if (map.moves?.length)
+      fail(`Card ${card.id}: the globe is the opener's only camera move`);
+  }
   if (sequence) checkSequenceAreas(card);
+  if (sequence && isAnimatedCard(card)) checkAnimatedFields(card);
 }
 
 // Check 1 of 1.5.0: a sequence's areas are files of social/video/data/areas/,
@@ -95,11 +206,147 @@ function checkSequenceAreas(card) {
       );
     if (typeof a.name !== "string" || !a.name.trim())
       fail(`${what}: an area carries its name`);
-    if (!AREA_INKS.includes(a.ink))
+    // 1.11.0: the ink follows the people; a territory gives its own.
+    if (a.people !== undefined && a.ink !== undefined)
+      fail(`${what}: an area gives its people or ink, not both`);
+    if (a.people === undefined && !AREA_INKS.includes(a.ink))
       fail(
         `${what}: ink « ${a.ink} » is not one of the four area inks, a to d`
       );
   }
+}
+
+const isPoint = (p) =>
+  Array.isArray(p) && p.length === 2 && p.every(Number.isFinite);
+// The new fields' shapes, before anything is timed: an unknown field is
+// refused rather than silently dropped, as for the 1.4.1 grammar.
+function checkAnimatedFields(card) {
+  const map = card.map;
+  const say = (where, s) => {
+    if (typeof s !== "string" || !s.trim())
+      fail(`Card ${card.id}: ${where} names its word (say)`);
+  };
+  const fields = (where, item, allowed) => {
+    for (const k of Object.keys(item))
+      if (!allowed.includes(k))
+        fail(
+          `Card ${card.id}: ${where}.${k} is not a field of the animated map`
+        );
+  };
+  if (map.view) {
+    fields("map.view", map.view, ANIMATED_DRAWN.view);
+    if (!["lon", "lat", "radius"].every((k) => Number.isFinite(map.view[k])))
+      fail(`Card ${card.id}: map.view gives lon, lat and radius`);
+  }
+  for (const k of [
+    "moves",
+    "arrows",
+    "drawings",
+    "words",
+    "places",
+    "facts",
+    "key",
+  ]) {
+    if (map[k] === undefined) continue;
+    if (!Array.isArray(map[k])) fail(`Card ${card.id}: map.${k} is a list`);
+    map[k].forEach((item, i) =>
+      fields(`map.${k}[${i}]`, item, ANIMATED_DRAWN[k])
+    );
+  }
+  map.areas.forEach((a, i) =>
+    fields(`map.areas[${i}]`, a, [...AREA_FIELDS, ...ANIMATED_AREA])
+  );
+  for (const [i, a] of map.areas.entries()) {
+    for (const s of a.states ?? []) {
+      say(`map.areas[${i}].states`, s.say);
+      if (!/^(lit|context|out|ink:[a-d])$/u.test(s.to ?? ""))
+        fail(
+          `Card ${card.id}: area ${a.name} goes to « ${s.to} »: lit, context, ink:a to ink:d or out`
+        );
+    }
+    if (a.nameAt !== undefined && !isPoint(a.nameAt))
+      fail(`Card ${card.id}: area ${a.name}'s nameAt is [lon, lat]`);
+    if (!["area", "country", "none", undefined].includes(a.label))
+      fail(`Card ${card.id}: area ${a.name}'s label is area, country or none`);
+  }
+  for (const m of map.moves ?? []) {
+    say("a move", m.say);
+    if (!["lon", "lat", "radius"].every((k) => Number.isFinite(m[k])))
+      fail(`Card ${card.id}: a move gives lon, lat and radius`);
+  }
+  const ids = new Set();
+  for (const a of map.arrows ?? []) {
+    say(`arrow ${a.id}`, a.say);
+    if (typeof a.id !== "string" || ids.has(a.id))
+      fail(`Card ${card.id}: every arrow has its own id`);
+    ids.add(a.id);
+    if (![a.from, a.to, ...(a.via ?? [])].every(isPoint))
+      fail(`Card ${card.id}: arrow ${a.id} runs from [lon, lat] to [lon, lat]`);
+    const owners = [a.people, a.ink, a.foreign].filter((x) => x !== undefined);
+    if (owners.length !== 1)
+      fail(
+        `Card ${card.id}: arrow ${a.id} gives one of people, ink or foreign`
+      );
+    if (a.ink !== undefined && !AREA_INKS.includes(a.ink))
+      fail(`Card ${card.id}: arrow ${a.id}'s ink is a to d`);
+    if (a.foreign !== undefined && a.foreign !== true)
+      fail(`Card ${card.id}: arrow ${a.id}: foreign is true or absent`);
+  }
+  for (const d of map.drawings ?? []) {
+    say(`drawing ${d.kind}`, d.say);
+    if (!Object.hasOwn(ILLUSTRATIONS, d.kind))
+      fail(
+        `Card ${card.id}: no drawing « ${d.kind} » in assets/Illustrations/ (${Object.keys(ILLUSTRATIONS).join(", ")})`
+      );
+    if (!isPoint(d.at))
+      fail(`Card ${card.id}: drawing ${d.kind} sits at [lon, lat]`);
+  }
+  for (const w of map.words ?? []) {
+    say(`word « ${w.text} »`, w.say);
+    if (typeof w.text !== "string" || !w.text.trim() || !isPoint(w.at))
+      fail(`Card ${card.id}: a word gives its text and where it sits`);
+    if (!["phrase", "date", "name", undefined].includes(w.kind))
+      fail(`Card ${card.id}: word « ${w.text} » is a phrase, a date or a name`);
+    if (w.people !== undefined && w.ink !== undefined)
+      fail(
+        `Card ${card.id}: word « ${w.text} » gives its people or ink, not both`
+      );
+  }
+  for (const p of map.places ?? [])
+    if (typeof p.name !== "string" || !p.name.trim() || !isPoint(p.at))
+      fail(`Card ${card.id}: a place gives its name and where it is`);
+  for (const f of map.facts ?? []) {
+    say("a fact", f.say);
+    if (!Array.isArray(f.shows) || !f.shows.length)
+      fail(`Card ${card.id}: the fact « ${f.say} » names its marks`);
+    for (const s of f.shows)
+      if (!/^(area|arrow|illus|text):\S/u.test(s))
+        fail(
+          `Card ${card.id}: the mark « ${s} » is area:, arrow:, illus: or text:`
+        );
+  }
+  if (map.rename) {
+    fields("map.rename", map.rename, ANIMATED_DRAWN.rename);
+    say("the rename", map.rename.say);
+    if (
+      !["from", "to", "dates"].every(
+        (k) => typeof map.rename[k] === "string"
+      ) ||
+      !isPoint(map.rename.at)
+    )
+      fail(`Card ${card.id}: a rename gives from, to, dates and at`);
+  }
+}
+
+// The ink of a mark: its people's (input.inks), a territory's own, or cream
+// for a colonial power, outside the four inks.
+export function markInk(mark, inks, what) {
+  if (mark.foreign) return "w";
+  if (mark.people !== undefined)
+    return (
+      inks?.[mark.people] ?? fail(`${what}: Peuple sans encre : ${mark.people}`)
+    );
+  return mark.ink;
 }
 
 const polygonRings = (g) =>

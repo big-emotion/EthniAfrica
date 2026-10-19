@@ -76,6 +76,76 @@ void main() {
   colour = vec4(c * (1.0 - 0.24 * t * (1.0 - plain)) * ending(dim), 1.0);
 }`;
 
+// Cartes 1.11.0, the opening globe of the series video (series.md, « 1. The
+// opening globe »): the same orthographic globe as above, from frame 0. Its
+// camera passes three keys, 0 s (the subject's longitude + 40°, latitude
+// 2°, radius 300), 1.8 s (+ 7.5°, the subject's latitude − 3°, 430) and
+// 4.4 s (the first map view), on one monotone cubic per channel with zero
+// speed at both ends, the radius in log; the view centre is the map card's
+// (540, 1010), with no tilt. When it stops, the globe is the flat map.
+export const GLOBE = { keys: [0, 54, 132], grade: [102, 138], centreY: 1010 };
+
+// Fritsch–Carlson through the keys, zero slope at the first and last key:
+// no overshoot between keys, no stop at the middle one.
+export function monotonePath(times, values) {
+  const n = times.length;
+  const d = [];
+  for (let i = 0; i < n - 1; i++)
+    d.push((values[i + 1] - values[i]) / (times[i + 1] - times[i]));
+  const m = [0];
+  for (let i = 1; i < n - 1; i++) {
+    const [h0, h1] = [times[i] - times[i - 1], times[i + 1] - times[i]];
+    m.push(
+      d[i - 1] * d[i] <= 0
+        ? 0
+        : (3 * (h0 + h1)) / ((2 * h1 + h0) / d[i - 1] + (h1 + 2 * h0) / d[i])
+    );
+  }
+  m.push(0);
+  return (t) => {
+    if (t <= times[0]) return values[0];
+    if (t >= times[n - 1]) return values[n - 1];
+    let k = 0;
+    while (t > times[k + 1]) k++;
+    const h = times[k + 1] - times[k];
+    const s = (t - times[k]) / h;
+    const s2 = s * s;
+    const s3 = s2 * s;
+    return (
+      (2 * s3 - 3 * s2 + 1) * values[k] +
+      (s3 - 2 * s2 + s) * h * m[k] +
+      (-2 * s3 + 3 * s2) * values[k + 1] +
+      (s3 - s2) * h * m[k + 1]
+    );
+  };
+}
+
+export function globeCamera(view, frame) {
+  const keys = [
+    { lon: view.lon + 40, lat: 2, radius: 300 },
+    { lon: view.lon + 7.5, lat: view.lat - 3, radius: 430 },
+    view,
+  ];
+  if (frame >= GLOBE.keys[2])
+    return {
+      lon: view.lon,
+      lat: view.lat,
+      radius: view.radius,
+      centreY: GLOBE.centreY,
+    };
+  const at = (channel) => monotonePath(GLOBE.keys, keys.map(channel))(frame);
+  return {
+    lon: at((k) => k.lon),
+    lat: at((k) => k.lat),
+    radius: Math.exp(at((k) => Math.log(k.radius))),
+    centreY: GLOBE.centreY,
+  };
+}
+
+// The base grade during the globe, the recede grade from 4.6 s, `mono`
+// between them from 3.4 s, as overlays are about to enter.
+export const globeGrade = (frame) => monotonePath(GLOBE.grade, [0, 1])(frame);
+
 // The satellite overlays (boards 2 and 3): inks, hatching, areas, borders
 // and legend swatches, shared with the series video's map cards (1.4.1).
 export const OVERLAY_SCRIPT = `const SVG = "http://www.w3.org/2000/svg";
