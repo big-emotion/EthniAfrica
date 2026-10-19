@@ -1149,6 +1149,18 @@ function areaState(plan, file, frame, base) {
   }
   return { opacity, lit, inks };
 }
+// Every ink an area takes over its sequence: its own first, then each ink
+// change in the order of its events, as areaState reads them. The page makes
+// one layer per ink in setup, in this order (operator, 19 October 2026).
+const AREA_STATES = new Set(["enter", "lit", "context", "out"]);
+export const areaInks = (plan, file) => [
+  ...new Set([
+    plan.areas[file].ink,
+    ...(plan.eventsByFile[file] ?? [])
+      .filter((e) => !AREA_STATES.has(e.to))
+      .map((e) => e.to.slice(4)),
+  ]),
+];
 function screenBox(area, camera) {
   let [x0, y0, x1, y1] = [Infinity, Infinity, -Infinity, -Infinity];
   for (const [lon, lat] of outerPoints(area)) {

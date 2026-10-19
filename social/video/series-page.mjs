@@ -714,8 +714,12 @@ function runLayer(sequence, r) {
     const a = sequence.areas[file];
     if (a.sequence !== sequence.runs[r].sequence) continue;
     if (animated) {
-      // 1.11.0: one layer per ink the area takes, made when first needed.
+      // 1.11.0: one layer per ink the area takes, all made here in the
+      // sequence's order. Made when first needed, they stacked in the order
+      // this browser had first drawn them, so a frame drawn first differed
+      // from the same frame drawn after others (operator, 19 October 2026).
       areas[file] = { polygons: a.polygons, uncertain: a.uncertain, hatch: a.hatch, layers: {}, paths: [], group: fills };
+      for (const ink of a.inks) areaLayer(areas[file], ink);
       continue;
     }
     const spec = { d: "", ink: a.ink, uncertain: a.uncertain, hatch: a.hatch, opacity: 0 };
@@ -794,8 +798,7 @@ const svgEl = (tag, attrs) => {
   for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v);
   return e;
 };
-function areaLayer(node, a, ink) {
-  if (a.layers[ink]) return a.layers[ink];
+function areaLayer(a, ink) {
   const dash = a.uncertain ? { "stroke-dasharray": "16 10" } : {};
   const g = svgEl("g", { opacity: 0 });
   const fill = svgEl("path", a.uncertain ? { fill: "url(#hatch-" + ink + "-" + (a.hatch || 45) + ")", "fill-rule": "evenodd" } : { fill: inkOf(ink), "fill-rule": "evenodd" });
@@ -818,7 +821,8 @@ function drawAnimatedRun(node, map) {
     if (!shown) continue;
     const s = areaStyle(shown.lit);
     for (const l of shown.inks) {
-      const layer = areaLayer(node, a, l.ink);
+      const layer = a.layers[l.ink];
+      if (!layer) throw new Error("Ink " + l.ink + " of " + file + " has no layer made in setup");
       layer.g.setAttribute("opacity", shown.opacity * l.w);
       if (a.uncertain) layer.fill.setAttribute("opacity", s.hatch);
       else layer.fill.setAttribute("fill-opacity", s.fill);

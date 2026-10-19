@@ -35,6 +35,7 @@ import {
   seriesMapView,
   sharedBorders,
 } from "./series-map.mjs";
+import { areaInks } from "./series-sequence.mjs";
 
 const designRoot = fileURLToPath(new URL("../design-system/", import.meta.url));
 const sha256 = (bytes) => createHash("sha256").update(bytes).digest("hex");
@@ -170,6 +171,7 @@ async function prepareMaps(seq, cards, routes, assets) {
             ink: a.ink,
             uncertain: a.uncertain,
             hatch: a.hatch,
+            inks: areaInks(plan, file),
           },
         ])
       ),
