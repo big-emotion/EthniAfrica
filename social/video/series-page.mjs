@@ -31,6 +31,7 @@ html,body{margin:0;background:#000}
 .vf-layer{position:absolute;inset:0;display:none}
 .vf-pic{position:absolute;inset:0;overflow:hidden}
 .vf-pic img{position:absolute;max-width:none;display:block}
+.vf-ident{position:absolute;left:0;top:0;width:1080px;height:1920px;border:0;display:block}
 /* 1.4.1: a map card on imagery, its overlays and names; all of it zooms. */
 .vf-map{position:absolute;left:0;top:0;width:1080px;height:1920px}
 .vf-map canvas,.vf-map svg{position:absolute;left:0;top:0;width:1080px;height:1920px;display:block}
@@ -231,7 +232,40 @@ function silentParts(parts) {
   return parts;
 }
 
+// The series idents (operator, 19 October 2026): the intro bumper and the
+// end card are drawn by their own page (social/series-idents) in a frame the
+// size of the video, which drawFrame moves to the ident's own time. The end
+// card replaces the closing card's 1.10.0 block, so nothing else is built.
+function identParts(spec) {
+  const layer = el("div", "vf-layer");
+  const pic = el("div", "vf-pic");
+  layer.append(pic);
+  const query = new URLSearchParams({ t: "0" });
+  if (spec.outro) {
+    query.set("layers", spec.outro.layers);
+    if (spec.outro.next) query.set("next", spec.outro.next);
+  }
+  const frame = document.createElement("iframe");
+  frame.className = "vf-ident";
+  frame.setAttribute("width", "1080");
+  frame.setAttribute("height", "1920");
+  frame.src = "/repo/social/series-idents/" + (spec.outro ? "endcard" : "ident") + ".html?" + query;
+  pic.append(frame);
+  return { spec, layer, pic, text: [], photo: null, map: null, date: null, slot: false, closing: spec.type === "closing", ident: { frame, clip: spec.outro ? "outro" : "intro" } };
+}
+const identReady = (parts) => new Promise((ok, fail) => {
+  const started = Date.now();
+  const check = () => {
+    const w = parts.ident.frame.contentWindow;
+    if (w && w.identReady === true) return ok();
+    if (Date.now() - started > 20000) return fail(new Error("The " + parts.ident.clip + " ident did not load"));
+    setTimeout(check, 50);
+  };
+  check();
+});
+
 function buildParts(spec, view) {
+  if (spec.type === "intro" || spec.outro) return identParts(spec);
   const silent = spec.type === "chapter";
   const card = silent ? null : EthniCards.render(spec, { context: "video", resolve: resolveAsset, demo: false });
   const pick = (sel) => card.querySelector(sel);
@@ -958,6 +992,7 @@ window.setup = async ({ tokens, cards, logo, demo, maps, subtitles: cardLines, z
   logoImg.src = logoUrl;
   await logoImg.decode().catch(() => broken.push(logoUrl));
   await document.fonts.ready;
+  await Promise.all(layers.filter((p) => p.ident).map(identReady));
   for (const [i, parts] of layers.entries()) {
     parts.layer.style.display = "block";
     if (parts.photo && parts.photo.naturalWidth) placeImage(parts);
@@ -1155,6 +1190,14 @@ window.drawFrame = (state) => {
   const closing = state.layers.find((l) => layers[l.card].closing);
   const content = state.layers.find((l) => !layers[l.card].closing);
   document.getElementById("signature").style.opacity = !content ? 0 : closing ? content.text : 1;
+  // An ident draws its own frame; the band and the signature leave the
+  // parchment to it, fading with it.
+  const idents = state.layers.filter((l) => l.ident);
+  for (const l of idents) layers[l.card].ident.frame.contentWindow.render(l.ident.t);
+  const identOn = Math.max(0, ...idents.map((l) => l.opacity));
+  frame.querySelector(".vf-band").style.opacity = 1 - identOn;
+  const sig = document.getElementById("signature");
+  sig.style.opacity = +sig.style.opacity * (1 - identOn);
   drawSubtitle(state.subtitle);
   const visible = state.layers.map((l) => layers[l.card]);
   const maps = visible.filter((p) => p.map).map((p) => {
@@ -1189,6 +1232,12 @@ window.drawFrame = (state) => {
     imageryPaints: imageryPaints - paintsBefore,
     // 1.7.0: a hyphenated word drawn over two lines.
     hyphenBreaks: [...frame.querySelectorAll(".vf-nowrap")].filter((n) => n.getClientRects().length > 1).map((n) => n.textContent),
+    // The ident on top, its clock, its opacity and the words it shows.
+    ident: idents.length ? (() => {
+      const top = idents[idents.length - 1];
+      return { clip: top.ident.clip, t: top.ident.t, opacity: top.opacity, text: layers[top.card].ident.frame.contentDocument.body.innerText };
+    })() : null,
+    chrome: +frame.querySelector(".vf-band").style.opacity,
   };
 };
 </script></body></html>`;

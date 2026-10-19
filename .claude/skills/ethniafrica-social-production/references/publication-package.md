@@ -300,6 +300,18 @@ plus the cards: the cards JSON is copy and layout, and the sequence only names
 it. `encodeSeriesVideo` records the sequence hash before drawing; an export
 made before it recorded one is re-encoded.
 
+**The series idents** (operator, 19 October 2026; `social/series-idents/`).
+Every series video carries them. The second beat is
+`{ "type": "intro", "chunks": [...] }`, voicing the intro sentence word for
+word (« Avec EthniAfrica, on part des noms qu'on emploie en français pour
+mieux comprendre l'Afrique et ses peuples. »), subtitled like any card. The
+input's `idents: { "outro": "<name>", "next": "…" }` puts the end card in
+place of the 1.10.0 ending: `<name>` names `social/series-idents/layers/<name>.json`,
+the answer of the episode's name copied from its live page (`peul` when the
+episode's name has no page online). The closing card still says the line and
+the invitation, one chunk per printed line, never subtitled. The ident pages
+belong to the engine's hash in the manifest.
+
 The on-screen text of a series video is every string its cards print, read
 from the loaded cards (chapter cards and the chapter kicker included), each
 subtitle chunk, and on the closing card the signature line and the search

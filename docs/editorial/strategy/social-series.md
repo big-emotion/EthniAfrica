@@ -64,6 +64,10 @@ episode 19). It applies to every video script from that date.
   l'Afrique et ses peuples. » The next sentence states the episode's concrete
   fact or question and leads straight into the first explanation. Keep the
   introduction to that one sentence; the series title may appear on screen.
+  In the video the opening sentence is said over the opener card and the
+  introduction over the intro bumper, its own beat right after it; the
+  closing is said over the end card (`social/series-idents/`, operator's
+  decision of 19 October 2026).
 - **Why the introduction says « en français »:** the starting point is the
   name used in French. It does not mean the name comes from French, always
   differs from local names, or is colonial. Each case is explained from its
