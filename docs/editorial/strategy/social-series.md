@@ -75,9 +75,12 @@ episode 19). It applies to every video script from that date.
   pensons » paragraph still comes just before it. The same closing ends every
   carousel and every caption, and « L'importance de connaître nos noms. »
   replaces the signature line in every account's bio. How the closing cards
-  print it is a design-system rule: until Claude Design delivers it (Cartes
-  1.10.0) and the renderer and video engine follow, both still require the old
-  ending.
+  and the video ending print it is a design-system rule (Cartes 1.10.0,
+  accepted on 2026-10-19). The carousel renderer and the series video engine
+  draw it since PR #1894: the closing card's chunks are the four printed
+  lines, and a closing card no longer prints a sentence of its own. The
+  satellite video and the clipped reels keep the old signature line until
+  their ending is decided.
 - **Long first, refined after:** the script tells the whole story the sources
   support, as a long video with chapters, then is reduced with the operator
   round by round. For a country name in series 1 the thread runs: the words of
