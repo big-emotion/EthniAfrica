@@ -19,6 +19,8 @@ import {
   patronymeDisplayName,
 } from "@/components/patronymes/PatronymeFicheTitle";
 import { PatronymeFicheView } from "@/components/patronymes/PatronymeFicheView";
+import { publicPatronymeSchema } from "@/api/v2/schemas/patronymes";
+import { serializePatronyme } from "@/api/v2/serializers/patronymes";
 
 // A literal on purpose: Next reads segment config statically. Held to
 // `CORPUS_AGGREGATE_REVALIDATE_SECONDS` (`PUBLIC_FLAGS_REVALIDATE_SECONDS` for
@@ -100,10 +102,12 @@ export default async function AppellationsSlugPage({
 }) {
   const { lang, slug } = await params;
 
-  const patronyme = await loadPatronymeFiche(decodeURIComponent(slug));
-  if (!patronyme) {
+  const aggregate = await loadPatronymeFiche(decodeURIComponent(slug));
+  if (!aggregate) {
     notFound();
   }
+
+  const patronyme = publicPatronymeSchema.parse(serializePatronyme(aggregate));
 
   const nextSteps = await loadPatronymeNextSteps(
     patronyme.alliances.map((alliance) => ({

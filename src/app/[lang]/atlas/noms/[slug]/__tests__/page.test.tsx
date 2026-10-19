@@ -14,15 +14,22 @@ import type { PatronymeSource } from "@/lib/patronymes/content";
  * it: indexability and identity are two different questions.
  */
 
-const { getPatronymeByIdMock } = vi.hoisted(() => ({
+const { getPatronymeByIdMock, loadPatronymeNextStepsMock } = vi.hoisted(() => ({
   getPatronymeByIdMock: vi.fn(),
+  loadPatronymeNextStepsMock: vi.fn(async () => []),
 }));
 
 vi.mock("@/api/v2/services/patronymes", () => ({
   getPatronymeById: getPatronymeByIdMock,
 }));
 
-import { generateMetadata } from "../page";
+vi.mock("@/lib/fiche/patronymeNextSteps", () => ({
+  loadPatronymeNextSteps: loadPatronymeNextStepsMock,
+}));
+
+import AppellationsSlugPage, { generateMetadata } from "../page";
+import { serializePatronyme } from "@/api/v2/serializers/patronymes";
+import type { PatronymeAggregate } from "@/api/v2/services/patronymes";
 
 const KEITA_ROUTE = `https://${CANONICAL_DOMAIN}${getPatronymeRoute(
   "fr",
@@ -53,6 +60,35 @@ const machineWritten = {
 
 function metadataFor(slug: string) {
   return generateMetadata({ params: Promise.resolve({ lang: "fr", slug }) });
+}
+
+function findElementByName(
+  node: unknown,
+  name: string
+): { props: Record<string, unknown> } | null {
+  if (Array.isArray(node)) {
+    for (const child of node) {
+      const match = findElementByName(child, name);
+      if (match) return match;
+    }
+    return null;
+  }
+
+  if (!node || typeof node !== "object") return null;
+
+  const element = node as {
+    type?: { name?: string };
+    props?: Record<string, unknown>;
+  };
+  if (element.type?.name === name && element.props) {
+    return { props: element.props };
+  }
+
+  for (const value of Object.values(element.props ?? {})) {
+    const match = findElementByName(value, name);
+    if (match) return match;
+  }
+  return null;
 }
 
 beforeEach(() => {
@@ -167,5 +203,56 @@ describe("the name fiche's indexing directive", () => {
 
     expect(metadata.robots).toBeUndefined();
     expect(metadata.alternates?.canonical).toBe(KEITA_ROUTE);
+  });
+});
+
+describe("the rendered name fiche's public projection", () => {
+  // @req REQ-133
+  it("renders the serializer projection, including its ordering and bearer field boundary", async () => {
+    const aggregate = {
+      id: "PAT_KEITA",
+      nameMain: "Keïta",
+      nameSystem: "clan_name",
+      casteOrSocialFunction: null,
+      content: {},
+      associatedPeoples: [
+        { id: "PPL_Z", nameMain: "Zulu", autonym: null, slug: "zulu" },
+        { id: "PPL_A", nameMain: "Alpha", autonym: null, slug: "alpha" },
+      ],
+      associatedCountries: [
+        { id: "CIV", nameFr: "Côte d’Ivoire" },
+        { id: "BEN", nameFr: "Bénin" },
+      ],
+      bearers: [
+        {
+          id: "person-1",
+          fullName: "A. Keïta",
+          roleCategory: "historian",
+          peopleLinks: ["PPL_SECRET"],
+          countryIds: ["CIV"],
+        },
+      ],
+      namedBearers: [{ displayName: "A. Keïta", status: "deceased" }],
+      alliances: [],
+    } as unknown as PatronymeAggregate;
+    getPatronymeByIdMock.mockResolvedValue(aggregate);
+
+    const page = await AppellationsSlugPage({
+      params: Promise.resolve({ lang: "fr", slug: "PAT_KEITA" }),
+    });
+    const fiche = findElementByName(page, "PatronymeFicheView");
+    const renderedPatronyme = fiche?.props.patronyme as
+      ReturnType<typeof serializePatronyme> | undefined;
+
+    expect(renderedPatronyme).toEqual(serializePatronyme(aggregate));
+    expect(renderedPatronyme?.bearers[0]).not.toHaveProperty("peopleLinks");
+    expect(renderedPatronyme?.associatedPeoples.map(({ id }) => id)).toEqual([
+      "PPL_A",
+      "PPL_Z",
+    ]);
+    expect(renderedPatronyme?.associatedCountries.map(({ id }) => id)).toEqual([
+      "BEN",
+      "CIV",
+    ]);
   });
 });
