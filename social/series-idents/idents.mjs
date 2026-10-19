@@ -61,23 +61,25 @@ export async function loadLayer() {
   return layer;
 }
 
+// The networks the project publishes on (operator, 19 October 2026: no X),
+// drawn as the site's footer draws them.
+export const NETWORKS = {
+  Instagram: `<rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>`,
+  TikTok: `<circle cx="9" cy="18" r="3"/><path d="M12 18V4a4 4 0 0 0 4 4"/>`,
+  Facebook: `<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>`,
+  YouTube: `<path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/>`,
+  LinkedIn: `<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/>`,
+};
+export const networkIcon = (name, size) =>
+  `<svg data-network="${name}" aria-label="${name}" role="img" width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${NETWORKS[name]}</svg>`;
+
 // The phone, 620 × 1240 at scale 1, its screen 588 px wide with a 38 px
-// gutter. `mini` is the same home page with type large enough to read when
-// the phone stands small among the other devices.
-export function phone(host, layer, { mini = false } = {}) {
+// gutter, the site's home page and its answer page drawn in it.
+export function phone(host, layer) {
   host.insertAdjacentHTML(
     "beforeend",
     `<div class="device" id="ph" style="width:620px;height:1240px;border-radius:72px">
       <div class="screen" style="left:16px;top:16px;width:588px;height:1208px;border-radius:58px">
-        ${
-          mini
-            ? `<div class="abs" id="phMini" style="left:38px;top:120px;width:512px">
-                <p class="site-title" data-role="site-ui" style="font-size:90px">D’où<br>vient ce<br>nom ?</p>
-                <div class="field" style="height:150px;margin-top:60px;padding:0 40px;color:var(--afh-color-text-soft)"><span style="width:70px;height:70px;display:block">${SEARCH_ICON}</span></div>
-                <div class="button" style="height:130px;margin-top:36px;font-size:80px">Rechercher</div>
-              </div>`
-            : ""
-        }
         <div class="abs" id="phFull" style="left:38px;top:0;width:512px;height:1208px">
           <div class="abs lockup" style="top:44px;gap:14px" data-role="wordmark"><img src="../brand/ethniafrica-logo.png" alt="" style="width:56px;height:56px"><span style="font-size:38px">EthniAfrica</span></div>
           <p class="abs site-title" id="phTitle" data-role="site-ui" style="top:170px;font-size:72px">D’où vient<br>ce nom ?</p>

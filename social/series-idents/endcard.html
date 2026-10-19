@@ -57,6 +57,13 @@
         height: 96px;
         color: var(--afh-color-terracotta);
       }
+      /* The five networks the project publishes on, under the cue. */
+      #networks {
+        left: 120px;
+        top: 1090px;
+        display: flex;
+        gap: 44px;
+      }
     </style>
   </head>
   <body>
@@ -87,6 +94,7 @@
         <path d="M15 17H7V9" /></svg
       ><span>@ethniafrica</span>
     </p>
+    <div class="abs" id="networks"></div>
 
     <script type="module">
       import {
@@ -105,10 +113,20 @@
         typeInto,
         loadLayer,
         start,
+        networkIcon,
       } from "./idents.mjs";
 
       const layer = await loadLayer();
       ground();
+      $("networks").innerHTML = [
+        "Instagram",
+        "TikTok",
+        "Facebook",
+        "YouTube",
+        "LinkedIn",
+      ]
+        .map((n) => networkIcon(n, 64))
+        .join("");
       phone($("phoneHost"), layer);
       const ph = $("ph");
       // Centred: the phone's text ends at x 764, left of the button column.
@@ -191,6 +209,7 @@
         rise("lockup", t, 6.75, 0.5, undefined, 0, 24);
         rise("url", t, 6.9, 0.5, undefined, 0, 24);
         rise("cue", t, 7.05, 0.5, undefined, 0, 24);
+        rise("networks", t, 7.15, 0.5, undefined, 0, 24);
       }
       const pressAt = (t, a) => Math.sin(P(t, a, a + 0.26) * Math.PI);
 

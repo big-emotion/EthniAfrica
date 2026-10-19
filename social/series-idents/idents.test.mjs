@@ -178,13 +178,48 @@ for (const clip of CLIPS) {
   }
 }
 
-test("the intro types the episode's name, whatever it is", async () => {
-  const page = await open("ident.html", "shot=i5-search&name=Lingala");
-  const typed = await page.evaluate(
-    () => document.querySelector("[data-layer=typed]").textContent
+test("the intro follows the account, then opens ethniafrica.com from the profile's link", async () => {
+  const read = async (shot) => {
+    const page = await open("ident.html", `shot=${shot}`);
+    const seen = await page.evaluate(() => {
+      const text = (sel) => document.querySelector(sel)?.textContent.trim();
+      return {
+        handle: text("[data-layer=handle]"),
+        link: text("[data-layer=link]"),
+        follow: text("[data-layer=follow]"),
+        address: text("[data-layer=address]"),
+        browser: +getComputedStyle(document.querySelector("#browser")).opacity,
+      };
+    });
+    await page.close();
+    return seen;
+  };
+  const profile = await read("i1-profile");
+  assert.equal(profile.handle, "@ethniafrica");
+  assert.equal(profile.link, "ethniafrica.com");
+  assert.equal(profile.follow, "S’abonner");
+  assert.equal(profile.browser, 0, "the browser is not open yet");
+  assert.match((await read("i2-follow")).follow, /^Abonné/);
+  const site = await read("i5-site");
+  assert.equal(site.browser, 1);
+  assert.equal(site.address, "ethniafrica.com");
+});
+
+test("the end card shows Instagram, TikTok, Facebook, YouTube and LinkedIn, and not X", async () => {
+  const page = await open("endcard.html", "shot=o5-end");
+  const networks = await page.evaluate(() =>
+    [...document.querySelectorAll("[data-network]")]
+      .filter((el) => +getComputedStyle(el.parentElement).opacity > 0.99)
+      .map((el) => el.dataset.network)
   );
   await page.close();
-  assert.equal(typed.trim(), "Lingala");
+  assert.deepEqual(networks, [
+    "Instagram",
+    "TikTok",
+    "Facebook",
+    "YouTube",
+    "LinkedIn",
+  ]);
 });
 
 test("the end card answers with the layer's name and its forms, the name searched kept whole", async () => {

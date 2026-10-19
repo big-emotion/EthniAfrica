@@ -12,17 +12,10 @@ const outDir =
   process.argv[2] ??
   fileURLToPath(new URL("./boards/frames/", import.meta.url));
 
-// The same shots with the feed safe zone and the button column drawn, and
-// the intro typing another episode's name.
+// The same shots with the feed safe zone and the button column drawn.
 const VARIANTS = [
-  { clip: "intro", shot: "i2-devices", suffix: "guides", query: "&guides=1" },
-  { clip: "intro", shot: "i4-typed", suffix: "guides", query: "&guides=1" },
-  {
-    clip: "intro",
-    shot: "i5-search",
-    suffix: "lingala",
-    query: "&name=Lingala",
-  },
+  { clip: "intro", shot: "i2-follow", suffix: "guides", query: "&guides=1" },
+  { clip: "intro", shot: "i5-site", suffix: "guides", query: "&guides=1" },
   { clip: "outro", shot: "o4-forms", suffix: "guides", query: "&guides=1" },
   { clip: "outro", shot: "o5-end", suffix: "guides", query: "&guides=1" },
 ];

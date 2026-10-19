@@ -66,8 +66,7 @@
     font-size: clamp(38px, 8vw, 64px);
     line-height: 1.02;
   }
-  h1 em,
-  h2 em {
+  h1 em {
     font-style: normal;
     color: var(--accent);
   }
@@ -215,27 +214,6 @@
   .notes .say {
     font: 600 20px/1.35 var(--display);
   }
-  .variants {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-  .variants figure {
-    margin: 0;
-    display: grid;
-    gap: 8px;
-    width: min(205px, 46%);
-  }
-  .variants img {
-    width: 100%;
-    border-radius: 8px;
-    display: block;
-    border: 1px solid var(--rule);
-  }
-  figcaption {
-    font-size: 13px;
-    color: var(--muted);
-  }
 
   .table {
     overflow-x: auto;
@@ -319,7 +297,7 @@
 
 <div class="wrap">
   <header>
-    <p class="kicker">Étape 1 sur 3 · révision 2</p>
+    <p class="kicker">Étape 1 sur 3 · révision 3</p>
     <h1>Génériques <em>de série</em></h1>
     <p>
       Le générique d'intro et le générique de fin, communs à toutes les vidéos
@@ -328,24 +306,16 @@
       largeur d'un téléphone dans le fil.
     </p>
     <p class="status"><b>À valider</b> avant l'animatic</p>
-    <h3>Ce qui change depuis la révision 1</h3>
+    <h3>Ce qui change depuis la révision 2</h3>
     <ul class="changes">
       <li>
-        Un seul décor pour les deux clips : le parchemin animé du film de
-        soutien (lueur qui dérive, grain qui bouge à chaque image). Plus jamais
-        l'image de la vidéo.
+        L'intro ne montre plus une recherche. Elle suit quelqu'un qui trouve
+        EthniAfrica sur un réseau social, s'abonne, touche le lien du profil et
+        arrive sur ethniafrica.com.
       </li>
       <li>
-        Le site n'est plus capturé : le formulaire de recherche est redessiné et
-        animé, avec les couleurs et les polices du site.
-      </li>
-      <li>
-        L'intro montre le site sur ordinateur, tablette et téléphone, puis une
-        personne qui cherche un nom sur son téléphone.
-      </li>
-      <li>
-        La fin reprend la même recherche dans le même téléphone et montre la
-        réponse : le nom que le peuple se donne, puis toutes ses appellations.
+        La fin reste la même. Sa dernière carte montre en plus les cinq réseaux
+        du projet : Instagram, TikTok, Facebook, YouTube et LinkedIn. Pas X.
       </li>
     </ul>
   </header>
@@ -358,26 +328,6 @@
     </p>
     <div class="ruler" data-clip="intro" aria-label="Minutage de l'intro"></div>
     <div class="shots" data-clip="intro"></div>
-    <div class="variants">
-      <figure>
-        <img
-          src="frames/i5-search-lingala.jpg"
-          alt="Le dernier plan de l'intro avec le nom Lingala tapé dans le champ"
-        />
-        <figcaption>
-          Le même plan pour un autre épisode : seul le nom change
-        </figcaption>
-      </figure>
-      <figure>
-        <img
-          src="frames/i2-devices-guides.jpg"
-          alt="Les trois appareils avec la zone sûre"
-        />
-        <figcaption>
-          Zone sûre en pointillés, colonne des boutons hachurée
-        </figcaption>
-      </figure>
-    </div>
   </section>
 
   <section id="outro">
@@ -418,61 +368,67 @@
             </td>
           </tr>
           <tr>
-            <td>5–23</td>
-            <td>0,15–0,75</td>
+            <td>5–24</td>
+            <td>0,15–0,80</td>
             <td>« Avec EthniAfrica »</td>
-            <td>Le logo et EthniAfrica montent en fondu.</td>
+            <td>
+              Le logo, puis le téléphone qui monte avec le profil EthniAfrica.
+            </td>
           </tr>
           <tr>
-            <td>29–59</td>
-            <td>0,95–1,95</td>
+            <td>27–51</td>
+            <td>0,90–1,70</td>
             <td>« on part des noms »</td>
             <td>
-              L'ordinateur, la tablette puis le téléphone se posent, 200 ms
-              d'écart, avec un léger rebond.
+              La pastille passe de TikTok à Instagram, puis à Facebook : le même
+              profil sur les trois réseaux.
             </td>
           </tr>
           <tr>
-            <td>83–101</td>
-            <td>2,75–3,35</td>
+            <td>45–63</td>
+            <td>1,50–2,10</td>
+            <td>« qu'on emploie »</td>
+            <td>
+              Le doigt arrive et touche « S'abonner », qui devient « Abonné ✓ ».
+            </td>
+          </tr>
+          <tr>
+            <td>66–85</td>
+            <td>2,20–2,85</td>
             <td>« en français »</td>
-            <td>
-              On plonge dans le téléphone ; l'ordinateur et la tablette
-              s'effacent en douceur.
-            </td>
+            <td>Le doigt glisse vers le lien ethniafrica.com et le touche.</td>
           </tr>
           <tr>
-            <td>99–107</td>
-            <td>3,30–3,55</td>
+            <td>83–96</td>
+            <td>2,75–3,20</td>
             <td>« pour mieux »</td>
-            <td>Le doigt arrive et touche le champ.</td>
+            <td>Le navigateur monte par-dessus le profil.</td>
           </tr>
           <tr>
-            <td>113–134</td>
-            <td>3,75–4,45</td>
-            <td>« comprendre l'Afrique »</td>
-            <td>Le nom se tape, lettre à lettre.</td>
-          </tr>
-          <tr>
-            <td>135–152</td>
-            <td>4,50–5,05</td>
-            <td>« et ses »</td>
-            <td>Le doigt glisse vers Rechercher et appuie.</td>
-          </tr>
-          <tr>
-            <td>153–175</td>
-            <td>5,10–5,83</td>
-            <td>« peuples. »</td>
+            <td>90–120</td>
+            <td>3,00–4,00</td>
+            <td>« comprendre »</td>
             <td>
-              Le champ monte, « D'où vient ce nom » apparaît, l'encadré de
-              réponse arrive encore vide.
+              ethniafrica.com dans la barre d'adresse, la barre de chargement
+              avance.
             </td>
           </tr>
           <tr>
-            <td>175–180</td>
-            <td>5,83–6,00</td>
-            <td>—</td>
-            <td>Image fixe, pour le changement de carte qui suit.</td>
+            <td>111–126</td>
+            <td>3,70–4,20</td>
+            <td>« l'Afrique »</td>
+            <td>
+              La page d'accueil du site apparaît : « D'où vient ce nom ? ».
+            </td>
+          </tr>
+          <tr>
+            <td>126–180</td>
+            <td>4,20–6,00</td>
+            <td>« et ses peuples. »</td>
+            <td>
+              Tenue sur le site. Les dernières images sont fixes, pour le
+              changement de carte qui suit.
+            </td>
           </tr>
         </tbody>
       </table>
@@ -540,17 +496,17 @@
             <td>Le téléphone redescend et s'efface.</td>
           </tr>
           <tr>
-            <td>197–227</td>
-            <td>6,55–7,55</td>
+            <td>197–230</td>
+            <td>6,55–7,65</td>
             <td>—</td>
             <td>
-              L'invitation, le logo, ethniafrica.com et le repère @ethniafrica
-              entrent sous la phrase.
+              L'invitation, le logo, ethniafrica.com, le repère @ethniafrica et
+              les cinq réseaux entrent sous la phrase.
             </td>
           </tr>
           <tr>
-            <td>227–240</td>
-            <td>7,55–8,00</td>
+            <td>230–240</td>
+            <td>7,65–8,00</td>
             <td>—</td>
             <td>Tenue.</td>
           </tr>
@@ -565,61 +521,57 @@
       <div>
         <b>Le même décor à chaque vidéo.</b>
         <p>
-          On reconnaît la série avant même de lire un mot. Le parchemin et la
-          recherche sont ceux du film de soutien, déjà publiés : le spectateur
-          retrouve un monde qu'il a vu.
+          On reconnaît la série avant même de lire un mot. Le parchemin est
+          celui du film de soutien, déjà publié.
         </p>
       </div>
       <div>
-        <b>Trois appareils, puis un seul.</b>
+        <b>L'intro montre le chemin que fait le spectateur.</b>
         <p>
-          L'ordinateur, la tablette et le téléphone disent en une seconde que le
-          site est ouvert à tous, partout. On entre ensuite dans le téléphone,
-          l'appareil sur lequel le spectateur regarde la vidéo : il se voit
-          faire la recherche.
+          Il regarde la vidéo sur un réseau social. Il y voit le profil
+          EthniAfrica, le geste pour s'abonner, puis le lien vers le site :
+          c'est le chemin qu'il peut refaire tout de suite. Un geste qu'on
+          reconnaît retient mieux qu'une explication.
         </p>
       </div>
       <div>
-        <b>Le nom de l'épisode tapé dans le champ.</b>
+        <b>L'abonnement est un geste rapide, pas une demande.</b>
         <p>
-          La voix vient de dire « l'origine du nom Burkina Faso » ; l'intro tape
-          « Burkina Faso ». La recherche est lancée, mais la réponse n'arrive
-          pas : l'encadré reste vide. C'est l'épisode qui répond. La question
-          est ouverte et refermée dans la même vidéo, rien n'est promis que la
-          vidéo ne tienne pas.
+          L'intro arrive à la troisième seconde, avant que l'épisode ait donné
+          quoi que ce soit. Demander de s'abonner à ce moment-là fait souvent
+          décrocher. Le bouton change donc d'état en une demi-seconde, sans
+          texte qui insiste, et l'image continue vers le site. Aucun chiffre
+          d'abonnés n'est affiché.
         </p>
       </div>
       <div>
-        <b>La fin reprend la même recherche.</b>
+        <b>Le même profil sur trois réseaux.</b>
         <p>
-          Le même téléphone revient avec le nom déjà tapé, et cette fois la
-          réponse s'affiche. Le spectateur voit ce qu'il trouvera en suivant le
-          lien : la promesse de « lien en profil » est montrée avant d'être
-          faite.
+          La pastille change, le profil reste : EthniAfrica est le même partout.
+          Le nom du compte, @ethniafrica, et la bio, « L'importance de connaître
+          nos noms. », sont les vrais.
         </p>
       </div>
       <div>
-        <b>Le nom cherché reste entier, au milieu des autres.</b>
+        <b>De vraies publications dans la grille.</b>
         <p>
-          « Peul » garde sa place parmi les appellations, marqué « votre
-          recherche ». Rien n'est barré : partir du nom employé en français ne
-          veut pas dire qu'il est faux. Un test le vérifie.
+          Les vignettes sont des photos de publications déjà parues, recadrées
+          au-dessus de leur titre pour ne garder aucun texte trop petit.
         </p>
       </div>
       <div>
-        <b>La phrase reste en haut.</b>
+        <b>La fin reprend la recherche et la montre jusqu'à la réponse.</b>
         <p>
-          « L'importance de connaître nos noms. » est lue pendant qu'elle est
-          dite, puis reste au-dessus de la recherche jusqu'à la fin : voir et
-          entendre la même phrase aide à la retenir.
+          Le spectateur voit ce qu'il trouvera en suivant le lien : la promesse
+          de « lien en profil » est montrée avant d'être faite.
         </p>
       </div>
       <div>
-        <b>La flèche vers le bas à gauche.</b>
+        <b>Les cinq réseaux sur la dernière carte.</b>
         <p>
-          Instagram, TikTok et YouTube Shorts affichent tous le nom du compte en
-          bas à gauche de la vidéo. La flèche dirige le regard vers ce nom, là
-          où se trouve le lien.
+          Ils disent où retrouver le projet. La flèche vers le bas à gauche
+          reste : c'est là que les trois applications affichent le nom du compte
+          et son lien.
         </p>
       </div>
     </div>
@@ -640,9 +592,9 @@
         <tbody>
           <tr>
             <td><code>name</code></td>
-            <td>Intro et fin</td>
+            <td>Fin</td>
             <td>Peul</td>
-            <td>Le nom de l'épisode, tapé dans le champ.</td>
+            <td>Le nom de l'épisode, déjà tapé dans le champ.</td>
           </tr>
           <tr>
             <td><code>layers/&lt;nom&gt;.json</code></td>
@@ -657,39 +609,36 @@
         </tbody>
       </table>
     </div>
+    <p>L'intro n'a plus aucun calque : elle est identique dans chaque vidéo.</p>
   </section>
 
   <section id="questions">
     <h2>À trancher avant l'animatic</h2>
     <ol class="questions">
       <li>
-        <strong>Le nom tapé.</strong
+        <strong>Le nom tapé dans la fin.</strong
         ><span
-          >Le nom de l'épisode, qui change à chaque vidéo, ou un nom fixe comme
-          « Afrique » ou « Bantou ».</span
+          >Le nom de l'épisode, qui change à chaque vidéo, ou un nom fixe.</span
         ><span class="reco"
-          >Recommandation : le nom de l'épisode. Il prolonge la phrase
-          d'ouverture, et la fin montre la vraie réponse à cette recherche. Pour
-          un épisode sans page en ligne, on prend « Afrique ».</span
+          >Recommandation : le nom de l'épisode, avec « Peul » quand l'épisode
+          n'a pas de page en ligne.</span
         >
       </li>
       <li>
-        <strong>La personne qui cherche.</strong
+        <strong>La personne.</strong
         ><span
           >Un doigt stylisé, comme sur les images, ou un vrai plan filmé d'une
-          main qui tient un téléphone, sur fond neutre, incrusté dans le
-          décor.</span
+          main qui tient un téléphone.</span
         ><span class="reco"
-          >Recommandation : commencer avec le doigt stylisé, qui ne demande
-          aucun tournage. Un plan filmé de 3 secondes peut le remplacer plus
-          tard sans rien changer d'autre.</span
+          >Recommandation : le doigt stylisé pour commencer ; un plan filmé de 3
+          secondes peut le remplacer plus tard.</span
         >
       </li>
       <li>
         <strong>Durée de la fin.</strong
         ><span
           >8 secondes : la voix finit vers 6 s, et les appellations ont besoin
-          d'une seconde de plus pour être lues.</span
+          d'une seconde de plus.</span
         ><span class="reco"
           >À confirmer, ou à ramener à 7 s en raccourcissant la tenue
           finale.</span
@@ -698,10 +647,8 @@
       <li>
         <strong>Les polices.</strong
         ><span
-          >Comme dans le film de soutien et sur le site : Fraunces pour les
-          titres de l'interface et la phrase, Nunito Sans pour le reste. Anton,
-          la police des titres des cartes de série, n'apparaît pas dans les
-          génériques.</span
+          >Celles du site et du film de soutien : Fraunces et Nunito Sans.
+          Anton, la police des titres des cartes, n'apparaît pas.</span
         ><span class="reco"
           >Recommandation : garder les polices du site, puisque c'est le site
           qu'on montre.</span
@@ -717,39 +664,39 @@
       duration: 6.0,
       shots: [
         {
-          id: "i1-brand",
-          t: 0.8,
+          id: "i1-profile",
+          t: 1.2,
           at: 0.0,
           say: "Avec EthniAfrica,",
-          does: "Le logo et le mot EthniAfrica se posent sur le parchemin.",
+          does: "Le profil EthniAfrica sur un réseau social ; la pastille passe de TikTok à Instagram, puis à Facebook.",
         },
         {
-          id: "i2-devices",
-          t: 2.2,
+          id: "i2-follow",
+          t: 2.3,
           at: 0.95,
-          say: "on part des noms qu'on emploie en français",
-          does: "Le site sur ordinateur, tablette et téléphone : la même page d'accueil, « D'où vient ce nom ? ».",
+          say: "on part des noms qu'on emploie",
+          does: "Un doigt touche « S'abonner », qui devient « Abonné ».",
         },
         {
-          id: "i3-tap",
-          t: 3.55,
+          id: "i3-link",
+          t: 2.7,
+          at: 2.2,
+          say: "en français",
+          does: "Le doigt touche le lien du profil, ethniafrica.com.",
+        },
+        {
+          id: "i4-browser",
+          t: 3.7,
           at: 2.9,
           say: "pour mieux comprendre",
-          does: "On entre dans le téléphone ; un doigt touche le champ de recherche.",
+          does: "Le navigateur s'ouvre : ethniafrica.com dans la barre d'adresse, la page se charge.",
         },
         {
-          id: "i4-typed",
-          t: 4.5,
-          at: 3.9,
-          say: "l'Afrique",
-          does: "Le nom de l'épisode se tape lettre à lettre.",
-        },
-        {
-          id: "i5-search",
-          t: 5.8,
-          at: 4.95,
-          say: "et ses peuples.",
-          does: "Le doigt appuie sur Rechercher ; la page commence à s'ouvrir. La réponse, c'est l'épisode.",
+          id: "i5-site",
+          t: 5.6,
+          at: 4.0,
+          say: "l'Afrique et ses peuples.",
+          does: "La page d'accueil du site : « D'où vient ce nom ? ». La recherche, c'est l'épisode qui la fait.",
         },
       ],
     },
@@ -789,12 +736,12 @@
           t: 7.6,
           at: 6.0,
           say: "(la voix est finie)",
-          does: "La phrase, l'invitation, le logo, ethniafrica.com et le repère vers le nom du compte.",
+          does: "La phrase, l'invitation, le logo, ethniafrica.com, le repère vers le nom du compte et les cinq réseaux.",
         },
       ],
     },
   };
-  const GUIDES = new Set(["i4-typed", "o4-forms", "o5-end"]);
+  const GUIDES = new Set(["i2-follow", "i5-site", "o4-forms", "o5-end"]);
   const sec = (n) => n.toFixed(2).replace(".", ",") + " s";
 
   for (const [clipId, clip] of Object.entries(CLIPS)) {

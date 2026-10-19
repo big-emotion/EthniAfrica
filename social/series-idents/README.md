@@ -4,7 +4,7 @@ The intro bumper and the end card shared by every EthniAfrica series video. Both
 
 ## Status
 
-- [x] Step 1: storyboard and style frames at 430 px (`boards/storyboard.html`). Revision 2 follows the operator's review of 19 October 2026; awaiting validation.
+- [x] Step 1: storyboard and style frames at 430 px (`boards/storyboard.html`). Revision 3 follows the operator's two reviews of 19 October 2026; awaiting validation.
 - [ ] Step 2: animatic, timed on the reel's real voice track.
 - [ ] Step 3: final animation and H.264 masters.
 
@@ -31,8 +31,9 @@ node social/series-idents/serve.mjs   # prints the board's local address
 
 - **One ground for both clips, never the episode's picture** (operator, 19 October 2026): the parchment world of the support film (`ethniafrica-cherche-des-partenaires`, from 15 s), a lit ground, a glow drifting slowly and a grain moving every frame. The series is recognised before a word is read.
 - **The site is redrawn, not captured.** The search form, the answer's lead and the forms are rebuilt with the site's tokens and faces, as in the support film, so they read at 12 px in the feed; a capture of the 430 px page cannot be both legible and inside the safe zone (revision 1).
-- **Desktop, tablet, then the phone.** The three devices say the site is open everywhere; the camera then enters the phone, the device the viewer is holding, and a finger searches the episode's name.
-- **The intro leaves the answer empty; the end card shows it.** The search is launched but the answer box stays empty: the episode answers. The end card brings the same phone back and shows the answer the profile link leads to, so it promises nothing the site does not hold. A layer file is needed for each name, and its page must be online before publication.
+- **The intro follows the viewer's own path** (operator, 19 October 2026, revision 3): the EthniAfrica profile on TikTok, Instagram and Facebook, a tap on « S'abonner », a tap on the profile's link, then ethniafrica.com in the browser. The profile is generic, not any app's interface; its handle and bio line are the real ones, and it shows no follower count. Following is one quick change of state, not an insistent call: the intro comes three seconds in, before the episode has given anything.
+- **The grid shows published posts,** cropped above their burned-in titles (`assets/posts/`, from the support film's thumbnails) so no text in them falls under 12 px.
+- **The end card shows the answer.** The same phone comes back with the episode's name typed and shows the answer the profile link leads to, so it promises nothing the site does not hold. A layer file is needed for each name, and its page must be online before publication. Its last card lists the five networks the project publishes on, X left out.
 - **The phone is centred, its text ends at x 764,** left of the apps' button column.
 - **The old end card is retired:** `social/brand/outro-reseaux-sociaux.mp4` says « Le vrai nom de chaque peuple », which crowns one name over the others, against the doctrine (§1).
 - **No music** until the operator agrees to it.
