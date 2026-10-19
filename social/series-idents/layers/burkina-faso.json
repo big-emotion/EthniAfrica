@@ -1,0 +1,13 @@
+{
+  "name": "Burkina Faso",
+  "page": "https://ethniafrica.com/fr/atlas/recherche/burkina%20faso",
+  "provenance": "The live answer page, read on 19 October 2026: its first sentence and its two forms with their labels, word for word.",
+  "lead": [
+    "Le nom <b>Burkina Faso</b> désigne un pays d’Afrique de l’Ouest,",
+    "qui le porte depuis le 4 août 1984."
+  ],
+  "forms": [
+    { "w": "Burkina Faso", "k": "cherché", "kind": "searched" },
+    { "w": "Haute-Volta", "k": "ancien" }
+  ]
+}
