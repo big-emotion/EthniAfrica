@@ -3,156 +3,330 @@
   <head>
     <meta charset="utf-8" />
     <title>Générique d'intro EthniAfrica</title>
+    <link rel="stylesheet" href="../../src/styles/tokens/color.css" />
     <link rel="stylesheet" href="idents.css" />
     <style>
-      /* Left-aligned on x 120: below y 840 the apps' buttons cover x 780 to 960,
-     so every line keeps to 660 px there. */
-      [data-part="brand"] {
+      /* Everything keeps to the left column from x 120: below y 840 the
+         apps' buttons cover x 780 to 960. */
+      #lockup {
         left: 120px;
-        top: 318px;
+        top: 300px;
       }
-      [data-part="employed"] {
-        left: 120px;
-        font: 400 220px/210px var(--display);
-        color: var(--ink);
-        white-space: nowrap;
+      #desk {
+        left: 200px;
+        top: 540px;
+        width: 680px;
+        height: 430px;
+        border-radius: 24px;
       }
-      [data-part="forms"] {
-        left: 120px;
-        width: 660px;
+      #deskStand {
+        left: 490px;
+        top: 968px;
+        width: 100px;
+        height: 54px;
+        background: var(--afh-color-text);
       }
-      [data-part="forms"] .label {
-        margin-bottom: 14px;
+      #deskBase {
+        left: 410px;
+        top: 1018px;
+        width: 260px;
+        height: 16px;
+        border-radius: 8px;
+        background: var(--afh-color-text);
       }
-      .forms {
+      #tab {
+        left: 640px;
+        top: 790px;
+        width: 360px;
+        height: 480px;
+        border-radius: 34px;
+      }
+      .mini-head {
         display: flex;
-        flex-wrap: wrap;
-        gap: 0 32px;
-      }
-      .forms span,
-      .row .name {
-        font: 400 76px/82px var(--display);
-        color: var(--ink);
-        white-space: nowrap;
-      }
-      [data-part="peoples"] {
-        left: 120px;
-        width: 660px;
-        display: grid;
+        align-items: center;
         gap: 10px;
+        font: 900 31px/1 var(--display);
       }
-      .row {
-        display: flex;
-        align-items: baseline;
-        gap: 20px;
-      }
-      .row .kind {
-        font: 700 32px/40px var(--text);
-        color: var(--ink-muted);
-      }
-      /* Peul's row keeps its place while the name itself moves there. */
-      .row .slot {
-        display: inline-block;
-        width: 138px;
-        height: 82px;
+      .mini-head img {
+        width: 36px;
+        height: 36px;
       }
     </style>
   </head>
   <body>
-    <main class="stage">
+    <div class="abs lockup" id="lockup" data-role="wordmark" data-essential>
+      <img src="../brand/ethniafrica-logo.png" alt="" /><span>EthniAfrica</span>
+    </div>
+
+    <div id="desktop">
+      <div class="abs" id="deskStand"></div>
+      <div class="abs" id="deskBase"></div>
+      <div class="device" id="desk">
+        <div
+          class="screen"
+          style="
+            left: 14px;
+            top: 14px;
+            width: 652px;
+            height: 402px;
+            border-radius: 12px;
+          "
+        >
+          <div
+            class="abs mini-head"
+            style="left: 28px; top: 20px"
+            data-role="wordmark"
+          >
+            <img src="../brand/ethniafrica-logo.png" alt="" />EthniAfrica
+          </div>
+          <p
+            class="abs site-title"
+            data-role="site-ui"
+            style="
+              left: 0;
+              right: 0;
+              top: 104px;
+              text-align: center;
+              font-size: 52px;
+            "
+          >
+            D’où vient ce nom ?
+          </p>
+          <div
+            class="abs field"
+            style="
+              left: 66px;
+              top: 196px;
+              width: 520px;
+              height: 72px;
+              padding: 0 22px;
+              font-size: 31px;
+              border-radius: 14px;
+            "
+          >
+            <span
+              style="
+                width: 30px;
+                height: 30px;
+                display: block;
+                color: var(--afh-color-text-soft);
+              "
+              id="deskIcon"
+            ></span>
+            <span
+              class="placeholder"
+              style="
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              "
+              >Un peuple, une langue…</span
+            >
+          </div>
+          <div
+            class="abs button"
+            style="
+              left: 216px;
+              top: 292px;
+              width: 220px;
+              height: 64px;
+              font-size: 31px;
+              border-radius: 12px;
+            "
+          >
+            Rechercher
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="device" id="tab">
       <div
-        data-part="brand"
-        class="wordmark t"
-        data-role="wordmark"
-        data-essential
+        class="screen"
+        style="
+          left: 16px;
+          top: 16px;
+          width: 328px;
+          height: 448px;
+          border-radius: 20px;
+        "
       >
-        <img src="../brand/ethniafrica-logo.png" alt="" />EthniAfrica
+        <div
+          class="abs mini-head"
+          style="left: 24px; top: 24px"
+          data-role="wordmark"
+        >
+          <img src="../brand/ethniafrica-logo.png" alt="" />EthniAfrica
+        </div>
+        <p
+          class="abs site-title"
+          data-role="site-ui"
+          style="left: 24px; top: 100px; font-size: 46px"
+        >
+          D’où vient<br />ce nom ?
+        </p>
+        <div
+          class="abs field"
+          style="
+            left: 24px;
+            top: 230px;
+            width: 280px;
+            height: 66px;
+            padding: 0 20px;
+            border-radius: 14px;
+          "
+        >
+          <span
+            style="
+              width: 30px;
+              height: 30px;
+              display: block;
+              color: var(--afh-color-text-soft);
+            "
+            id="tabIcon"
+          ></span>
+        </div>
+        <div
+          class="abs button"
+          style="
+            left: 24px;
+            top: 316px;
+            width: 280px;
+            height: 62px;
+            font-size: 31px;
+            border-radius: 12px;
+          "
+        >
+          Rechercher
+        </div>
       </div>
+    </div>
 
-      <p data-part="label" class="label t" data-essential>
-        Le nom employé en français
-      </p>
+    <div id="phoneHost"></div>
+    <div class="abs finger" id="finger"></div>
+    <div class="abs ripple" id="ripple"></div>
 
-      <p
-        data-part="employed"
-        class="t o13"
-        data-layer="employed"
-        data-essential
-      >
-        Peul
-      </p>
-
-      <div data-part="forms">
-        <p class="label t">Ses différents noms</p>
-        <p class="forms" data-essential>
-          <span class="t o8" data-form>Fulɓe</span
-          ><span class="t o8" data-form>Fula</span
-          ><span class="t o8" data-form>Fulani</span
-          ><span class="t o8" data-form>Haalpulaar'en</span
-          ><span class="t o8" data-form>Fellata</span
-          ><span class="t o8" data-form>Toucouleur</span>
-        </p>
-      </div>
-
-      <div data-part="peoples">
-        <p class="row">
-          <span class="slot"></span><span class="kind t">peuple</span>
-        </p>
-        <p class="row">
-          <span class="name t o8" data-form data-essential>Lingala</span
-          ><span class="kind t">langue</span>
-        </p>
-        <p class="row">
-          <span class="name t o8" data-form data-essential>Côte d’Ivoire</span
-          ><span class="kind t">pays</span>
-        </p>
-        <p class="row">
-          <span class="name t o8" data-form data-essential>Bantou</span
-          ><span class="kind t">famille de langues</span>
-        </p>
-        <p class="row">
-          <span class="name t o8" data-form data-essential>Traoré</span
-          ><span class="kind t">nom de famille</span>
-        </p>
-        <p class="row">
-          <span class="name t o8" data-form data-essential>Yamoussoukro</span
-          ><span class="kind t">lieu</span>
-        </p>
-      </div>
-    </main>
     <script type="module">
-      import { params, setUp, show, ready } from "./idents.mjs";
+      import {
+        $,
+        P,
+        lerp,
+        eo,
+        eo5,
+        eio,
+        back,
+        S,
+        rise,
+        ground,
+        moveGround,
+        phone,
+        typeInto,
+        loadLayer,
+        start,
+        SEARCH_ICON,
+      } from "./idents.mjs";
 
-      const SHOTS = {
-        "i1-brand": { brand: {} },
-        "i2-name": {
-          brand: {},
-          label: { left: "120px", top: "520px" },
-          employed: { top: "580px", fontSize: "220px", lineHeight: "210px" },
-        },
-        "i3-forms": {
-          brand: {},
-          label: { left: "120px", top: "460px" },
-          employed: { top: "512px", fontSize: "220px", lineHeight: "210px" },
-          forms: { top: "800px" },
-        },
-        // The name employed shrinks to the size of the others and takes the first
-        // row: one name among six, still whole and still first.
-        "i4-peoples": {
-          brand: {},
-          employed: {
-            top: "470px",
-            fontSize: "76px",
-            lineHeight: "82px",
-            left: "120px",
-          },
-          peoples: { top: "470px" },
-        },
-      };
+      const layer = await loadLayer();
+      ground();
+      phone($("phoneHost"), layer, { mini: true });
+      $("deskIcon").innerHTML = SEARCH_ICON;
+      $("tabIcon").innerHTML = SEARCH_ICON;
 
-      setUp();
-      show(SHOTS, params.get("shot") ?? "i3-forms");
-      await ready();
+      // The phone stands small among the devices, then fills the frame.
+      const LINEUP = { x: 120, y: 860, s: 0.387 };
+      // Centred: the phone's text ends at x 764, left of the button column.
+      const HELD = { x: 230, y: 410, s: 1 };
+      // Places on the held phone, in frame pixels.
+      const FIELD = { x: 230 + 16 + 38 + 256, y: 410 + 16 + 360 + 52 };
+      const BUTTON = { x: FIELD.x, y: 410 + 16 + 360 + 104 + 22 + 46 };
+
+      function render(t) {
+        moveGround(t);
+        rise("lockup", t, 0.15, 0.6);
+
+        // Devices land one after the other on « on part des noms ».
+        const zoom = eio(P(t, 2.75, 3.35));
+        const land = (id, a) => {
+          const k = back(P(t, a, a + 0.6));
+          const o = eo(P(t, a, a + 0.35));
+          return { k, o };
+        };
+        const d = land("desk", 0.95);
+        S("desktop", {
+          op: d.o * (1 - zoom),
+          y: lerp(60, 0, Math.min(d.k, 1)) - zoom * 40,
+          s: 1 - zoom * 0.06,
+          blur: zoom * 6,
+        });
+        const tb = land("tab", 1.15);
+        S("tab", {
+          op: tb.o * (1 - zoom),
+          y: lerp(60, 0, Math.min(tb.k, 1)) + zoom * 80,
+          x: zoom * 120,
+          blur: zoom * 6,
+        });
+
+        const m = land("ph", 1.35);
+        const ph = $("ph");
+        const s = lerp(LINEUP.s, HELD.s, zoom);
+        ph.style.opacity = m.o;
+        ph.style.left = lerp(LINEUP.x, HELD.x, zoom) + "px";
+        ph.style.top =
+          lerp(LINEUP.y, HELD.y, zoom) + lerp(60, 0, Math.min(m.k, 1)) + "px";
+        ph.style.transform = `scale(${s})`;
+        const full = eo(P(t, 3.0, 3.3));
+        S("phMini", { op: 1 - full });
+
+        // On the held phone: the home page, then the search.
+        const up = eio(P(t, 5.1, 5.6));
+        S("phFull", { op: full });
+        S("phTitle", { op: 1 - up, y: -up * 60 });
+        $("phSearch").style.top = lerp(360, 140, up) + "px";
+        S("phBtn", { op: 1 - up, s: 1 - pressAt(t, 4.85) * 0.07 });
+        $("phField").classList.toggle("focus", t > 3.55 && t < 5.1);
+        typeInto($("phQ"), t, layer.name, 3.75, 4.45, 5.1);
+        rise("phEyebrow", t, 5.3, 0.4, undefined, 0, 16);
+        const sk = eo(P(t, 5.4, 5.85));
+        S("phSkeleton", { op: sk, y: lerp(40, 0, sk) });
+        // The skeleton's shimmer stops for the last frames, so the series
+        // card change crossfades from a still picture.
+        $("phSkeleton").style.background =
+          `linear-gradient(100deg, var(--callout) 30%, var(--afh-color-card) ${lerp(-10, 110, P(t, 5.45, 5.83)) * 1}%, var(--callout) 70%)`;
+        for (const id of ["phCallout", "phFormsH", "phChips"]) S(id, { op: 0 });
+
+        // The finger: to the field, tap; to the button, press.
+        const fIn = eo(P(t, 3.3, 3.5)),
+          fOut = eio(P(t, 5.0, 5.2));
+        const toBtn = eio(P(t, 4.5, 4.8));
+        S("finger", {
+          op: fIn * (1 - fOut),
+          x: lerp(
+            FIELD.x + 120,
+            lerp(FIELD.x, BUTTON.x, toBtn),
+            eo(P(t, 3.3, 3.55))
+          ),
+          y: lerp(
+            FIELD.y + 160,
+            lerp(FIELD.y, BUTTON.y, toBtn),
+            eo(P(t, 3.3, 3.55))
+          ),
+          s: 1 - (tapAt(t, 3.55) + pressAt(t, 4.85)) * 0.15,
+        });
+        const r1 = P(t, 3.55, 3.95),
+          r2 = P(t, 4.85, 5.25);
+        const r = r2 > 0 ? r2 : r1;
+        const at = r2 > 0 ? BUTTON : FIELD;
+        S("ripple", {
+          op: r > 0 && r < 1 ? 1 - r : 0,
+          x: at.x,
+          y: at.y,
+          s: 1 + eo(r) * 1.4,
+        });
+      }
+      const tapAt = (t, a) => Math.sin(P(t, a, a + 0.2) * Math.PI);
+      const pressAt = (t, a) => Math.sin(P(t, a, a + 0.26) * Math.PI);
+
+      await start("intro", render);
     </script>
   </body>
 </html>

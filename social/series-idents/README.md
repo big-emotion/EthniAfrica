@@ -4,20 +4,22 @@ The intro bumper and the end card shared by every EthniAfrica series video. Both
 
 ## Status
 
-- [x] Step 1: storyboard and style frames, mounted at 430 px (`boards/storyboard.html`), awaiting the operator's validation.
+- [x] Step 1: storyboard and style frames at 430 px (`boards/storyboard.html`). Revision 2 follows the operator's review of 19 October 2026; awaiting validation.
 - [ ] Step 2: animatic, timed on the reel's real voice track.
-- [ ] Step 3: final animation, H.264 masters and the ProRes 4444 alpha master of the intro.
+- [ ] Step 3: final animation and H.264 masters.
 
 ## Files
 
-| File                         | Role                                                                                                                                                                                                                                                                                        |
-| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `shots.mjs`                  | The storyboard as data: shots, scratch voice timing, the feed safe zone and button column (from `social/video/sequence.mjs`), the 12 px floor and the site scale.                                                                                                                           |
-| `ident.html`, `endcard.html` | The two compositions, one state per shot (`?shot=`). Optional: `ground=image\|none`, `theme=parchemin`, `guides=1`; on the end card the replaceable layers `name`, `result`, `forms`.                                                                                                       |
-| `idents.css`, `idents.mjs`   | Cartes 1.9.0 tokens and fonts, the 1.9.0 double outline (the same SVG filter as `social/video/series-page.mjs`), guides, the ready signal.                                                                                                                                                  |
-| `idents.test.mjs`            | Every text at 12 px or more in a 430 px feed, essential text in the safe zone and out of the button column, Fraunces only on the wordmark and the project's sentence, the site at a 430 px phone's scale, the name layer, and the name employed in French never struck, dimmed or outsized. |
-| `frames.mjs`                 | Exports every shot as a review still to `boards/frames/`.                                                                                                                                                                                                                                   |
-| `serve.mjs`                  | A static server at the repository root: the end card types into the site mockups inside an iframe, which `file://` forbids.                                                                                                                                                                 |
+| File                         | Role                                                                                                                                                                                                                                                                                                 |
+| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `shots.mjs`                  | The storyboard as data: shots, scratch voice timing, the feed safe zone and button column (from `social/video/sequence.mjs`), the 12 px floor and the 4.5:1 contrast floor.                                                                                                                          |
+| `ident.html`, `endcard.html` | The two compositions. Each exposes `render(t)`; `?shot=<id>` or `?t=<s>` draws one time, `?guides=1` draws the safe zone, `?name=` and `?layers=` set the episode's name.                                                                                                                            |
+| `idents.css`, `idents.mjs`   | The parchment ground, the phone with the site's search redrawn in it, the easing and the ready signal. Colours are the site's own tokens, linked from `src/styles/tokens/color.css`.                                                                                                                 |
+| `layers/<name>.json`         | One per episode name: the answer page's lead and forms, copied from the live page. `peul.json` is the default.                                                                                                                                                                                       |
+| `assets/grain.png`           | The parchment grain of the support film of 10 October 2026.                                                                                                                                                                                                                                          |
+| `idents.test.mjs`            | Every text at 12 px or more in a 430 px feed and at 4.5:1 against what is behind it, essential text inside the safe zone and out of the button column, Fraunces only on the wordmark, the project's sentence and the site's interface, the name layer, and the name searched never struck or dimmed. |
+| `frames.mjs`                 | Exports every shot as a review still to `boards/frames/`.                                                                                                                                                                                                                                            |
+| `serve.mjs`                  | A static server at the repository root: the compositions load ES modules and the layer files, which `file://` refuses.                                                                                                                                                                               |
 
 ```sh
 node --test social/series-idents/idents.test.mjs
@@ -27,9 +29,10 @@ node social/series-idents/serve.mjs   # prints the board's local address
 
 ## Decisions and their reasons
 
-- **The site is drawn at a 430 px phone's scale (× 2.512).** Its smallest text, 13 CSS px, then reads at 13 px in the feed; inside the 840 px safe zone it would read at 10 px. The cost: the site's long lines run under the apps' button column. Only the vertical band and the button column bind the site's essential text (title, label, typed name, forms); its own 12 to 24 px gutter keeps it off the feed's 120 px left margin, which no app covers. Open question 1 on the board.
-- **The end card embeds the real mockup HTML** (`docs/design/mockups/site/`), not a redrawing, so it shows only screens that exist. In production, `result` should be a capture of the live answer page of the episode's name, taken on the day of the render, so the profile link keeps the end card's promise.
-- **The intro never strikes, dims or replaces « Peul ».** Starting from the name used in French does not mean that name is French, colonial or wrong (`social-series.md`); the other forms come in beside it, never larger. A test holds this.
-- **The ending sits where the series ending sits** (y 318 to 820), so it is recognised by repetition; the arrow points to the bottom left, where Instagram, TikTok and YouTube Shorts print the account name.
+- **One ground for both clips, never the episode's picture** (operator, 19 October 2026): the parchment world of the support film (`ethniafrica-cherche-des-partenaires`, from 15 s), a lit ground, a glow drifting slowly and a grain moving every frame. The series is recognised before a word is read.
+- **The site is redrawn, not captured.** The search form, the answer's lead and the forms are rebuilt with the site's tokens and faces, as in the support film, so they read at 12 px in the feed; a capture of the 430 px page cannot be both legible and inside the safe zone (revision 1).
+- **Desktop, tablet, then the phone.** The three devices say the site is open everywhere; the camera then enters the phone, the device the viewer is holding, and a finger searches the episode's name.
+- **The intro leaves the answer empty; the end card shows it.** The search is launched but the answer box stays empty: the episode answers. The end card brings the same phone back and shows the answer the profile link leads to, so it promises nothing the site does not hold. A layer file is needed for each name, and its page must be online before publication.
+- **The phone is centred, its text ends at x 764,** left of the apps' button column.
 - **The old end card is retired:** `social/brand/outro-reseaux-sociaux.mp4` says « Le vrai nom de chaque peuple », which crowns one name over the others, against the doctrine (§1).
 - **No music** until the operator agrees to it.

@@ -1,11 +1,11 @@
-/* EthniAfrica Cartes 1.9.0 tokens, fonts and the on-image text treatment,
-   as tokens.json and series.md set them. Nothing here is a new value: the
-   idents may only use the charter's colours, faces and logo. */
+/* The parchment world of the support film of 10 October 2026, built from
+   the site's own tokens (src/styles/tokens/color.css, linked before this
+   file): the idents redraw the site's search, they do not capture it. */
 
 @font-face {
-  font-family: Anton;
-  src: url(../design-system/fonts/Anton-Regular.ttf);
-  font-weight: 400;
+  font-family: Fraunces;
+  src: url(../design-system/fonts/Fraunces.ttf);
+  font-weight: 100 900;
 }
 @font-face {
   font-family: "Nunito Sans";
@@ -17,116 +17,196 @@
   src: url(../design-system/fonts/NotoSans-Variable.ttf);
   font-weight: 100 900;
 }
-@font-face {
-  font-family: Fraunces;
-  src: url(../design-system/fonts/Fraunces.ttf);
-  font-weight: 100 900;
-}
 
 :root {
-  --ground: #15100b;
-  --ground-raised: #251c13;
-  --ink: #f3e9da;
-  --ink-muted: #cbbba3;
-  --ink-faint: #a8977f;
-  --accent: #e8b96a;
-  --rule: #4a3c2c;
-  --on-image-ink: #f3e9da;
-  --on-image-muted: #cbbba3;
-  --on-image-accent: #e8b96a;
-  --on-image-stroke: rgba(11, 8, 6, 0.92);
-  --on-image-ring: rgba(11, 8, 6, 0.62);
-  --on-image-ring-soft: rgba(11, 8, 6, 0.45);
-  --display: Anton, "Noto Sans", sans-serif;
-  --text: "Nunito Sans", "Noto Sans", sans-serif;
-  --wordmark: Fraunces, Georgia, serif;
-}
-:root[data-theme="parchemin"] {
-  --ground: #f6f0e6;
-  --ground-raised: #ece3d4;
-  --ink: #2a1e15;
-  --ink-muted: #55463a;
-  --ink-faint: #655443;
-  --accent: #7f5212;
-  --rule: #d6c8b0;
+  --display: Fraunces, "Noto Sans", Georgia, serif;
+  --body: "Nunito Sans", "Noto Sans", sans-serif;
+  --callout: color-mix(
+    in srgb,
+    var(--afh-cat-teal-tint) 35%,
+    var(--afh-color-card)
+  );
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 html,
 body {
-  margin: 0;
   width: 1080px;
   height: 1920px;
   overflow: hidden;
 }
 body {
-  background: var(--ground);
-  color: var(--ink);
-  font-family: var(--text);
+  background: var(--afh-color-bg);
+  color: var(--afh-color-text);
+  font-family: var(--body);
+  -webkit-font-smoothing: antialiased;
   position: relative;
 }
-body[data-ground="none"] {
-  background: transparent;
-}
-body[data-ground="image"] {
-  background: #000 var(--picture) center / cover no-repeat;
-}
-
-.stage > * {
+.abs {
   position: absolute;
-  margin: 0;
-  transition: none;
-}
-[hidden-in-shot] {
-  opacity: 0;
 }
 
-/* On an image, or over the transparent ground of the alpha version, every
-   text takes the 1.4.0 outline under the letter and the 1.9.0 second contour
-   (series.md, « Legibility on light pictures »). */
-body[data-ground="image"] .t,
-body[data-ground="none"] .t {
-  -webkit-text-stroke: var(--outline, 4px) var(--on-image-stroke);
-  paint-order: stroke fill;
-  filter: url(#oi-ring-3);
+/* The animated ground, the same in both clips: a lit parchment, a warm glow
+   drifting slowly and a grain that moves every frame. Nothing flashes. */
+#parch {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    1300px 1000px at 50% 30%,
+    rgba(255, 255, 255, 0.55),
+    transparent 70%
+  );
 }
-body[data-ground="image"],
-body[data-ground="none"] {
-  --ink: var(--on-image-ink);
-  --ink-muted: var(--on-image-muted);
-  --accent: var(--on-image-accent);
+#glow {
+  position: absolute;
+  width: 1400px;
+  height: 1400px;
+  left: -160px;
+  top: 300px;
+  border-radius: 50%;
+  background: radial-gradient(
+    closest-side,
+    color-mix(in srgb, var(--afh-cat-ocre) 12%, transparent),
+    transparent
+  );
 }
-.o8 {
-  --outline: 8px;
-}
-.o8.t {
-  filter: url(#oi-ring-5) !important;
-}
-.o13 {
-  --outline: 13px;
-}
-.o13.t {
-  filter: url(#oi-ring-8) !important;
-}
-body[data-ground="ground"] .t {
-  filter: none;
+#grain {
+  position: absolute;
+  inset: -256px;
+  background: url(assets/grain.png);
+  opacity: 0.05;
+  mix-blend-mode: overlay;
 }
 
-.label {
-  font: 800 32px/40px var(--text);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--ink-muted);
-}
-.wordmark {
+.lockup {
   display: flex;
   align-items: center;
-  gap: 16px;
-  font: 600 44px/48px var(--wordmark);
-  color: var(--ink);
+  gap: 20px;
 }
-.wordmark img {
-  width: 56px;
-  height: 56px;
+.lockup img {
+  width: 84px;
+  height: 84px;
+}
+.lockup span {
+  font: 900 56px/1 var(--display);
+}
+
+/* Devices. The frame is the site's ink; the screen is the site's ground. */
+.device {
+  position: absolute;
+  background: var(--afh-color-text);
+  box-shadow: 0 40px 90px rgba(44, 32, 24, 0.22);
+  transform-origin: 0 0;
+}
+.screen {
+  position: absolute;
+  overflow: hidden;
+  background: var(--afh-color-bg);
+}
+.site-title {
+  font-family: var(--display);
+  font-weight: 900;
+  line-height: 1.05;
+  color: var(--afh-color-text);
+}
+.field {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: var(--afh-color-card);
+  border: 2px solid var(--afh-color-border);
+  border-radius: 20px;
+  box-shadow: 0 18px 50px rgba(44, 32, 24, 0.1);
+}
+.field.focus {
+  border-color: var(--afh-cat-ocre);
+  box-shadow: 0 0 0 6px color-mix(in srgb, var(--afh-cat-ocre) 22%, transparent);
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: var(--afh-cat-ocre);
+  color: var(--afh-color-text);
+  font-weight: 700;
+}
+.placeholder {
+  color: var(--afh-color-text-soft);
+  font-weight: 500;
+}
+.caret {
+  display: inline-block;
+  width: 4px;
+  background: var(--afh-color-text);
+  margin-left: 4px;
+  vertical-align: -6px;
+}
+.eyebrow {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--afh-cat-ocre-ink);
+}
+.callout {
+  background: var(--callout);
+  border: 2px solid var(--afh-cat-teal);
+  border-radius: 20px;
+}
+.callout b {
+  font-weight: 800;
+  color: var(--afh-cat-teal-ink);
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.chip {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  padding: 14px 24px;
+  border-radius: 999px;
+  background: var(--afh-color-card);
+  border: 2px solid var(--afh-color-border);
+}
+.chip .w {
+  font: 700 40px/1.1 var(--display);
+}
+.chip .k {
+  font-weight: 700;
+  font-size: 31px;
+  color: var(--afh-cat-ocre-ink);
+}
+.chip[data-kind="self"] {
+  background: var(--afh-cat-ocre-tint);
+  border-color: var(--afh-cat-ocre);
+}
+.chip[data-kind="searched"] {
+  border-color: var(--afh-cat-ocre);
+}
+
+/* A finger on the glass: a soft disc and the ring of its tap. */
+.finger {
+  width: 84px;
+  height: 84px;
+  margin: -42px 0 0 -42px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--afh-color-text) 22%, transparent);
+  border: 3px solid color-mix(in srgb, var(--afh-color-card) 80%, transparent);
+}
+.ripple {
+  width: 84px;
+  height: 84px;
+  margin: -42px 0 0 -42px;
+  border-radius: 50%;
+  border: 4px solid var(--afh-cat-ocre);
 }
 
 [data-guide] {
@@ -135,13 +215,13 @@ body[data-ground="ground"] .t {
   z-index: 99;
 }
 [data-guide="safe"] {
-  outline: 3px dashed #ff3b6b;
+  outline: 3px dashed var(--afh-color-terracotta);
 }
 [data-guide="buttons"] {
   background: repeating-linear-gradient(
     45deg,
-    #ff3b6b55 0 12px,
+    color-mix(in srgb, var(--afh-color-terracotta) 30%, transparent) 0 12px,
     transparent 12px 24px
   );
-  outline: 3px solid #ff3b6b;
+  outline: 3px solid var(--afh-color-terracotta);
 }

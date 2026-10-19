@@ -1,8 +1,10 @@
 // @req REQ-186
 // The series intro bumper and end card, shot by shot as the storyboard lists
-// them: every text readable at 12 px in a 430 px feed, the text a viewer must
-// read inside the feed safe zone, Fraunces kept to the word EthniAfrica and the
-// project's sentence, and the site drawn at the scale of a 430 px phone.
+// them: every text readable at 12 px in a 430 px feed and at 4.5:1 against
+// what is behind it, the text a viewer must read inside the feed safe zone,
+// Fraunces kept to the wordmark, the project's sentence and the site's own
+// interface, the episode's name replaceable, and the name searched never
+// struck or dimmed beside the others.
 import { test, before, after } from "node:test";
 import assert from "node:assert/strict";
 import { createRequire } from "node:module";
@@ -14,7 +16,7 @@ import {
   SAFE_ZONE,
   BUTTON_COLUMN,
   MIN_TEXT_PX,
-  SITE_SCALE,
+  MIN_CONTRAST,
 } from "./shots.mjs";
 
 const { chromium } = createRequire(import.meta.url)("playwright");
@@ -29,35 +31,69 @@ after(async () => {
   server?.close();
 });
 
-async function inspect(clip, shot, query = "") {
+async function open(file, query) {
   const page = await browser.newPage({
     viewport: { width: WIDTH, height: HEIGHT },
   });
-  await page.goto(
-    `${origin}/social/series-idents/${clip.file}?shot=${shot.id}${query}`
-  );
+  await page.goto(`${origin}/social/series-idents/${file}?${query}`);
   await page.waitForFunction(() => window.identReady === true, null, {
     timeout: 20000,
   });
+  return page;
+}
+
+async function inspect(clip, shot) {
+  const page = await open(clip.file, `shot=${shot.id}`);
   const facts = await page.evaluate(() => {
-    const shown = (el) => {
+    const opacity = (el) => {
+      let o = 1;
       for (let n = el; n; n = n.parentElement) {
         const s = getComputedStyle(n);
-        if (
-          s.display === "none" ||
-          s.visibility === "hidden" ||
-          +s.opacity === 0
-        )
-          return false;
+        if (s.display === "none" || s.visibility === "hidden") return 0;
+        o *= +s.opacity;
       }
-      return true;
+      return o;
     };
-    // The drawn text's box, not the element's: a heading is a full-width
-    // block, but only its letters can sit under the apps' buttons.
+    // Mixed colours come back as color(srgb r g b [/ a]) in 0 to 1.
+    const rgb = (c) => {
+      const v = c.match(/[\d.]+/g).map(Number);
+      return c.startsWith("color(srgb")
+        ? v.map((x, i) => (i < 3 ? x * 255 : x))
+        : v;
+    };
+    const lum = ([r, g, b]) => {
+      const f = (v) => {
+        v /= 255;
+        return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4;
+      };
+      return 0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(b);
+    };
+    const ground = getComputedStyle(document.documentElement)
+      .getPropertyValue("--afh-color-bg")
+      .trim();
+    const behind = (el) => {
+      for (let n = el; n; n = n.parentElement) {
+        const c = getComputedStyle(n).backgroundColor;
+        const v = rgb(c);
+        if (v.length === 3 || v[3] === 1) return v.slice(0, 3);
+      }
+      const h = ground.replace("#", "");
+      return [0, 2, 4].map((i) => parseInt(h.slice(i, i + 2), 16));
+    };
+    // The drawn text's box, not the element's.
     const inked = (el) => {
-      const range = el.ownerDocument.createRange();
+      const range = document.createRange();
       range.selectNodeContents(el);
-      return range.getBoundingClientRect();
+      const r = range.getBoundingClientRect();
+      // Text cut by its own box (an ellipsis) is not drawn past it.
+      const box = el.getBoundingClientRect();
+      const right = Math.min(r.right, box.right);
+      return {
+        left: r.left,
+        top: r.top,
+        width: right - r.left,
+        height: r.height,
+      };
     };
     const texts = [];
     const walker = document.createTreeWalker(
@@ -67,20 +103,25 @@ async function inspect(clip, shot, query = "") {
     while (walker.nextNode()) {
       const n = walker.currentNode,
         el = n.parentElement;
-      if (!n.textContent.trim() || !shown(el) || el.closest("[data-guide]"))
-        continue;
+      if (!n.textContent.trim() || el.closest("[data-guide]")) continue;
+      if (opacity(el) < 0.99) continue;
       const r = el.getBoundingClientRect();
+      if (r.bottom < 0 || r.top > 1920 || r.right < 0 || r.left > 1080)
+        continue;
       const scale = el.offsetWidth ? r.width / el.offsetWidth : 1;
       const s = getComputedStyle(el);
+      const a = lum(rgb(s.color)),
+        b = lum(behind(el));
       texts.push({
         text: n.textContent.trim().slice(0, 40),
         px: parseFloat(s.fontSize) * scale,
         family: s.fontFamily,
         role: el.closest("[data-role]")?.dataset.role ?? null,
+        contrast: (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05),
       });
     }
     const essential = [...document.querySelectorAll("[data-essential]")]
-      .filter(shown)
+      .filter((el) => opacity(el) >= 0.99)
       .map((el) => {
         const r = inked(el);
         return {
@@ -91,41 +132,7 @@ async function inspect(clip, shot, query = "") {
           h: r.height,
         };
       });
-    const frame = document.querySelector("iframe.site");
-    let site = null;
-    if (frame && shown(frame)) {
-      const doc = frame.contentDocument,
-        sizes = [];
-      const w = doc.createTreeWalker(doc.body, NodeFilter.SHOW_TEXT);
-      while (w.nextNode())
-        if (w.currentNode.textContent.trim())
-          sizes.push(
-            parseFloat(
-              frame.contentWindow.getComputedStyle(w.currentNode.parentElement)
-                .fontSize
-            )
-          );
-      const box = frame.getBoundingClientRect(),
-        k = box.width / frame.offsetWidth;
-      const port = frame.parentElement.getBoundingClientRect();
-      site = {
-        width: box.width,
-        cssWidth: frame.offsetWidth,
-        minPx: Math.min(...sizes),
-        essential: [...doc.querySelectorAll("[data-essential]")].map((el) => {
-          const r = inked(el);
-          return {
-            text: el.textContent.trim().slice(0, 40),
-            x: box.left + r.left * k,
-            y: box.top + r.top * k,
-            w: r.width * k,
-            h: r.height * k,
-            clipped: box.top + r.top * k < port.top,
-          };
-        }),
-      };
-    }
-    return { texts, essential, site };
+    return { texts, essential };
   });
   await page.close();
   return facts;
@@ -138,24 +145,25 @@ const overlaps = (b, z) =>
 
 for (const clip of CLIPS) {
   for (const shot of clip.shots) {
-    test(`${clip.id} ${shot.id}: legible, essential text in the safe zone, fonts as the charter says`, async () => {
-      const { texts, essential, site } = await inspect(clip, shot);
+    test(`${clip.id} ${shot.id}: legible, contrasted, essential text in the safe zone, Fraunces where the charter allows`, async () => {
+      const { texts, essential } = await inspect(clip, shot);
       assert.ok(texts.length > 0, "the shot shows some text");
       for (const t of texts) {
         assert.ok(
           t.px >= MIN_TEXT_PX - 0.5,
           `« ${t.text} » is ${t.px.toFixed(1)} px, under 12 px at 430`
         );
+        assert.ok(
+          t.contrast >= MIN_CONTRAST,
+          `« ${t.text} » reads at ${t.contrast.toFixed(2)}:1`
+        );
         if (/^"?Fraunces/.test(t.family))
           assert.ok(
-            ["wordmark", "project-line"].includes(t.role),
+            ["wordmark", "project-line", "site-ui"].includes(t.role),
             `« ${t.text} » is set in Fraunces`
           );
       }
-      assert.ok(
-        essential.length + (site?.essential.length ?? 0) > 0,
-        "the shot marks what must be read"
-      );
+      assert.ok(essential.length > 0, "the shot marks what must be read");
       for (const b of essential) {
         assert.ok(
           inside(b, SAFE_ZONE),
@@ -166,95 +174,45 @@ for (const clip of CLIPS) {
           `« ${b.text} » is under the button column`
         );
       }
-      if (site) {
-        assert.equal(site.cssWidth, 430, "the site is laid out at 430 px");
-        assert.ok(
-          Math.abs(site.width - 430 * SITE_SCALE) < 1,
-          "the site fills the frame's width"
-        );
-        assert.ok(
-          site.minPx * SITE_SCALE * (430 / WIDTH) >= 12,
-          "the site's smallest text reads at 12 px or more"
-        );
-        // The site keeps its own 12 to 24 px gutter at 430 px, so its text
-        // starts at x 30 to 60, not the feed's 120. No app covers the left
-        // edge between the top bar and the caption, so only the vertical band
-        // and the button column bind it.
-        const band = { x: 24, y: SAFE_ZONE.y, w: 1032, h: SAFE_ZONE.h };
-        assert.ok(
-          site.essential.length > 0,
-          "the site shot marks what must be read"
-        );
-        for (const b of site.essential) {
-          assert.ok(
-            !b.clipped && inside(b, band),
-            `site « ${b.text} » leaves the safe band (${Math.round(b.x)}, ${Math.round(b.y)}, ${Math.round(b.w)} × ${Math.round(b.h)})`
-          );
-          assert.ok(
-            !overlaps(b, BUTTON_COLUMN),
-            `site « ${b.text} » is under the button column`
-          );
-        }
-      }
     });
   }
 }
 
-test("the end card types the replaceable name and opens its own answer page", async () => {
-  const page = await browser.newPage({
-    viewport: { width: WIDTH, height: HEIGHT },
-  });
-  await page.goto(
-    `${origin}/social/series-idents/endcard.html?shot=o3-result&name=peul&result=search-peul-430`
+test("the intro types the episode's name, whatever it is", async () => {
+  const page = await open("ident.html", "shot=i5-search&name=Lingala");
+  const typed = await page.evaluate(
+    () => document.querySelector("[data-layer=typed]").textContent
   );
-  await page.waitForFunction(() => window.identReady === true, null, {
-    timeout: 20000,
-  });
-  const seen = await page.evaluate(() => ({
-    address: document.querySelector("[data-layer=address]").textContent,
-    field: document
-      .querySelector("iframe.site")
-      .contentDocument.querySelector("input[type=search]").value,
-  }));
   await page.close();
-  assert.equal(seen.address, "ethniafrica.com/fr/atlas/recherche/peul");
-  assert.equal(seen.field, "peul");
+  assert.equal(typed.trim(), "Lingala");
 });
 
-test("the intro never strikes, dims or replaces the name employed in French", async () => {
-  const page = await browser.newPage({
-    viewport: { width: WIDTH, height: HEIGHT },
-  });
-  for (const id of ["i3-forms", "i4-peoples"]) {
-    await page.goto(`${origin}/social/series-idents/ident.html?shot=${id}`);
-    await page.waitForFunction(() => window.identReady === true, null, {
-      timeout: 20000,
-    });
-    const employed = await page.evaluate(() => {
-      const el = document.querySelector("[data-layer=employed]");
-      const s = getComputedStyle(el);
-      return {
-        text: el.textContent.trim(),
-        opacity: +s.opacity,
-        decoration: s.textDecorationLine,
-        size: parseFloat(s.fontSize),
-        others: [...document.querySelectorAll("[data-form]")].map((f) =>
-          parseFloat(getComputedStyle(f).fontSize)
-        ),
-      };
-    });
-    assert.equal(employed.text, "Peul");
-    assert.equal(employed.opacity, 1, `${id}: Peul stays at full opacity`);
-    assert.equal(
-      employed.decoration,
-      "none",
-      `${id}: Peul is never struck through`
-    );
-    for (const size of employed.others)
-      assert.ok(
-        size <= employed.size,
-        `${id}: no other form is set larger than Peul`
-      );
-  }
+test("the end card answers with the layer's name and its forms, the name searched kept whole", async () => {
+  const page = await open("endcard.html", "shot=o4-forms&layers=peul");
+  const seen = await page.evaluate(() => ({
+    typed: document.querySelector("[data-layer=typed]").textContent.trim(),
+    lead: document.querySelector("[data-layer=lead]").textContent,
+    chips: [...document.querySelectorAll("[data-layer=forms] .chip")].map(
+      (c) => {
+        const s = getComputedStyle(c);
+        return {
+          w: c.querySelector(".w").textContent,
+          kind: c.dataset.kind,
+          opacity: +s.opacity,
+          decoration: getComputedStyle(c.querySelector(".w"))
+            .textDecorationLine,
+        };
+      }
+    ),
+  }));
   await page.close();
+  assert.equal(seen.typed, "Peul");
+  assert.match(seen.lead, /Vous avez cherché Peul\./);
+  const searched = seen.chips.find((c) => c.kind === "searched");
+  assert.equal(searched.w, "Peul");
+  assert.ok(seen.chips.some((c) => c.kind === "self"));
+  for (const c of seen.chips) {
+    assert.equal(c.opacity, 1, `${c.w} is fully shown`);
+    assert.equal(c.decoration, "none", `${c.w} is never struck through`);
+  }
 });

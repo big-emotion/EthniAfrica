@@ -3,49 +3,41 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link
   rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Anton&family=Fraunces:opsz,wght@9..144,600&family=Nunito+Sans:wght@400;700;800&display=swap"
+  href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&family=Nunito+Sans:wght@400;700;800&display=swap"
 />
 <style>
-  /* Layout: one column of 430 px frames, the width a viewer's phone shows
-     them, with the timing beside each from tablet width up.
-     Colours: EthniAfrica Cartes 1.9.0, Nuit as dark, Parchemin as light. */
+  /* Layout: one column of 430 px frames, the width a phone shows them in
+     the feed, with the notes beside each from tablet width up.
+     Colours: the site's parchment (light) and its night surface (dark). */
   :root {
-    --ground: #15100b;
-    --raised: #251c13;
-    --ink: #f3e9da;
-    --muted: #cbbba3;
-    --faint: #a8977f;
-    --accent: #e8b96a;
-    --rule: #4a3c2c;
-    --guide: #ff5d7d;
-    --display: Anton, "Arial Narrow", sans-serif;
+    --ground: #fbf7f2;
+    --raised: #ffffff;
+    --ink: #2c2018;
+    --muted: #746557;
+    --accent: #b64e27;
+    --rule: #e8dfd3;
+    --display: Fraunces, Georgia, serif;
     --text: "Nunito Sans", "Segoe UI", system-ui, sans-serif;
-    --word: Fraunces, Georgia, serif;
-    color-scheme: dark;
   }
-  @media (prefers-color-scheme: light) {
-    :root:not([data-theme="dark"]) {
-      --ground: #f6f0e6;
-      --raised: #ece3d4;
-      --ink: #2a1e15;
-      --muted: #55463a;
-      --faint: #655443;
-      --accent: #7f5212;
-      --rule: #d6c8b0;
-      --guide: #c2183f;
-      color-scheme: light;
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #120e0a;
+      --raised: #1d1710;
+      --ink: #f1e7d8;
+      --muted: #c9b99f;
+      --accent: #e8b96a;
+      --rule: #3a2e1f;
+      color-scheme: dark;
     }
   }
-  :root[data-theme="light"] {
-    --ground: #f6f0e6;
-    --raised: #ece3d4;
-    --ink: #2a1e15;
-    --muted: #55463a;
-    --faint: #655443;
-    --accent: #7f5212;
-    --rule: #d6c8b0;
-    --guide: #c2183f;
-    color-scheme: light;
+  :root[data-theme="dark"] {
+    --ground: #120e0a;
+    --raised: #1d1710;
+    --ink: #f1e7d8;
+    --muted: #c9b99f;
+    --accent: #e8b96a;
+    --rule: #3a2e1f;
+    color-scheme: dark;
   }
 
   body {
@@ -65,22 +57,27 @@
   h1,
   h2 {
     font-family: var(--display);
-    font-weight: 400;
-    letter-spacing: 0.01em;
+    font-weight: 900;
     text-wrap: balance;
     margin: 0;
+    letter-spacing: -0.01em;
   }
   h1 {
-    font-size: clamp(40px, 9vw, 72px);
-    line-height: 1;
+    font-size: clamp(38px, 8vw, 64px);
+    line-height: 1.02;
+  }
+  h1 em,
+  h2 em {
+    font-style: normal;
+    color: var(--accent);
   }
   h2 {
-    font-size: clamp(30px, 6vw, 44px);
-    line-height: 1.05;
+    font-size: clamp(28px, 5.4vw, 40px);
+    line-height: 1.08;
   }
   h3 {
-    font: 800 15px/1.3 var(--text);
-    letter-spacing: 0.1em;
+    font: 800 14px/1.3 var(--text);
+    letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--muted);
     margin: 0;
@@ -90,18 +87,15 @@
     max-width: 65ch;
   }
   .kicker {
-    font: 800 14px/1.3 var(--text);
-    letter-spacing: 0.12em;
+    font: 800 13px/1.3 var(--text);
+    letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--accent);
   }
-  .word {
-    font-family: var(--word);
-    font-weight: 600;
-  }
-  header {
+  header,
+  section {
     display: grid;
-    gap: 16px;
+    gap: 22px;
   }
   .status {
     display: inline-flex;
@@ -117,23 +111,24 @@
   .status b {
     color: var(--accent);
   }
-  section {
+  .changes {
     display: grid;
-    gap: 28px;
+    gap: 8px;
+    padding-left: 20px;
+    margin: 0;
   }
   .voice {
-    font: 600 clamp(20px, 3.4vw, 26px)/1.35 var(--word);
+    font: 600 clamp(19px, 3.2vw, 24px)/1.35 var(--display);
     border-left: 3px solid var(--accent);
     padding-left: 16px;
   }
 
-  /* The timing ruler: one tick a second, each shot a band at its time. */
   .ruler {
     position: relative;
     height: 72px;
     border-top: 1px solid var(--rule);
     font: 700 12px/1 var(--text);
-    color: var(--faint);
+    color: var(--muted);
     font-variant-numeric: tabular-nums;
   }
   .ruler span {
@@ -153,12 +148,12 @@
     height: 30px;
     border-radius: 6px;
     background: var(--raised);
-    color: var(--ink);
-    font: 800 12px/30px var(--text);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--accent);
+    font: 800 12px/28px var(--text);
     padding: 0 6px;
     overflow: hidden;
     white-space: nowrap;
-    border-left: 3px solid var(--accent);
   }
 
   .shots {
@@ -168,7 +163,6 @@
   .shot {
     display: grid;
     gap: 16px;
-    grid-template-columns: 1fr;
   }
   @media (min-width: 768px) {
     .shot {
@@ -183,8 +177,8 @@
     aspect-ratio: 9 / 16;
     border-radius: 10px;
     overflow: hidden;
-    background: #000;
     position: relative;
+    border: 1px solid var(--rule);
   }
   .frame img {
     width: 100%;
@@ -200,8 +194,8 @@
     padding: 9px 12px;
     border-radius: 999px;
     border: 0;
-    background: rgba(21, 16, 11, 0.86);
-    color: #f3e9da;
+    background: #2c2018;
+    color: #fbf7f2;
     cursor: pointer;
   }
   .frame button:focus-visible {
@@ -210,30 +204,16 @@
   }
   .notes {
     display: grid;
-    gap: 12px;
+    gap: 10px;
     min-width: 0;
   }
   .notes .t {
     font: 800 14px/1 var(--text);
-    color: var(--faint);
+    color: var(--muted);
     font-variant-numeric: tabular-nums;
   }
   .notes .say {
-    font: 600 20px/1.35 var(--word);
-  }
-  .notes dl {
-    display: grid;
-    grid-template-columns: max-content minmax(0, 1fr);
-    gap: 6px 14px;
-    margin: 4px 0 0;
-    font-size: 15px;
-  }
-  .notes dt {
-    color: var(--muted);
-    font-weight: 700;
-  }
-  .notes dd {
-    margin: 0;
+    font: 600 20px/1.35 var(--display);
   }
   .variants {
     display: flex;
@@ -250,6 +230,7 @@
     width: 100%;
     border-radius: 8px;
     display: block;
+    border: 1px solid var(--rule);
   }
   figcaption {
     font-size: 13px;
@@ -299,11 +280,12 @@
     gap: 4px 12px;
     padding: 18px;
     background: var(--raised);
+    border: 1px solid var(--rule);
     border-radius: 10px;
   }
   .questions li::before {
     content: counter(q);
-    font: 400 30px/1 var(--display);
+    font: 900 30px/1 var(--display);
     color: var(--accent);
     grid-row: span 3;
   }
@@ -325,6 +307,9 @@
   .why b {
     font-weight: 800;
   }
+  code {
+    font-size: 0.92em;
+  }
   @media (prefers-reduced-motion: reduce) {
     * {
       transition: none !important;
@@ -334,22 +319,39 @@
 
 <div class="wrap">
   <header>
-    <p class="kicker">Étape 1 sur 3 · storyboard et style frames</p>
-    <h1>Génériques de série</h1>
+    <p class="kicker">Étape 1 sur 3 · révision 2</p>
+    <h1>Génériques <em>de série</em></h1>
     <p>
       Le générique d'intro et le générique de fin, communs à toutes les vidéos
-      de série d'<span class="word">EthniAfrica</span>. Ce sont des clips muets
-      en 1080 × 1920 à 30 images par seconde : la voix du reel se pose dessus.
-      Chaque image est montrée ici à 430 px de large, la taille d'un téléphone
-      dans le fil.
+      de série. Ce sont des clips muets en 1080 × 1920 à 30 images par seconde :
+      la voix du reel se pose dessus. Les images sont montrées à 430 px, la
+      largeur d'un téléphone dans le fil.
     </p>
-    <p class="status">
-      <b>À valider</b> avant l'animatic · rien n'est animé à cette étape
-    </p>
+    <p class="status"><b>À valider</b> avant l'animatic</p>
+    <h3>Ce qui change depuis la révision 1</h3>
+    <ul class="changes">
+      <li>
+        Un seul décor pour les deux clips : le parchemin animé du film de
+        soutien (lueur qui dérive, grain qui bouge à chaque image). Plus jamais
+        l'image de la vidéo.
+      </li>
+      <li>
+        Le site n'est plus capturé : le formulaire de recherche est redessiné et
+        animé, avec les couleurs et les polices du site.
+      </li>
+      <li>
+        L'intro montre le site sur ordinateur, tablette et téléphone, puis une
+        personne qui cherche un nom sur son téléphone.
+      </li>
+      <li>
+        La fin reprend la même recherche dans le même téléphone et montre la
+        réponse : le nom que le peuple se donne, puis toutes ses appellations.
+      </li>
+    </ul>
   </header>
 
   <section id="intro">
-    <h2>Intro · environ 6 secondes</h2>
+    <h2>Intro · 6 secondes</h2>
     <p class="voice">
       « Avec EthniAfrica, on part des noms qu'on emploie en français pour mieux
       comprendre l'Afrique et ses peuples. »
@@ -359,78 +361,40 @@
     <div class="variants">
       <figure>
         <img
-          src="frames/i3-forms-image.jpg"
-          alt="Le plan des différents noms posé sur une photographie, texte avec contour double"
+          src="frames/i5-search-lingala.jpg"
+          alt="Le dernier plan de l'intro avec le nom Lingala tapé dans le champ"
         />
         <figcaption>
-          Version alpha posée sur la photo d'ouverture de l'épisode (contour
-          double 1.9.0)
+          Le même plan pour un autre épisode : seul le nom change
         </figcaption>
       </figure>
       <figure>
         <img
-          src="frames/i4-peoples-image.jpg"
-          alt="Les six noms posés sur une photographie"
-        />
-        <figcaption>La même, plan final</figcaption>
-      </figure>
-      <figure>
-        <img
-          src="frames/i3-forms-guides.jpg"
-          alt="Le plan des différents noms avec la zone sûre et la colonne des boutons"
+          src="frames/i2-devices-guides.jpg"
+          alt="Les trois appareils avec la zone sûre"
         />
         <figcaption>
-          Zone sûre en tirets, colonne des boutons hachurée
+          Zone sûre en pointillés, colonne des boutons hachurée
         </figcaption>
       </figure>
     </div>
   </section>
 
   <section id="outro">
-    <h2>Fin · environ 7 secondes</h2>
+    <h2>Fin · 8 secondes</h2>
     <p class="voice">
       « L'importance de connaître nos noms. Vous pouvez continuer la recherche
       sur EthniAfrica, lien en profil. »
     </p>
     <div class="ruler" data-clip="outro" aria-label="Minutage de la fin"></div>
     <div class="shots" data-clip="outro"></div>
-    <div class="variants">
-      <figure>
-        <img
-          src="frames/o3-result-guides.jpg"
-          alt="La page de résultat avec la zone sûre"
-        />
-        <figcaption>
-          Résultat : le titre, l'étiquette et le nom restent dans la bande sûre
-          ; les lignes longues du site passent sous les boutons
-        </figcaption>
-      </figure>
-      <figure>
-        <img
-          src="frames/o4-history-guides.jpg"
-          alt="Les formes du nom avec la zone sûre"
-        />
-        <figcaption>Formes et histoire, zone sûre</figcaption>
-      </figure>
-      <figure>
-        <img src="frames/o5-end-guides.jpg" alt="La fin avec la zone sûre" />
-        <figcaption>Fin, zone sûre</figcaption>
-      </figure>
-      <figure>
-        <img
-          src="frames/o5-end-parchemin.jpg"
-          alt="La fin en thème Parchemin"
-        />
-        <figcaption>Fin en Parchemin, si l'opérateur le souhaite</figcaption>
-      </figure>
-    </div>
   </section>
 
   <section id="minutage">
     <h2>Points de synchronisation</h2>
     <p>
-      Minutage estimé sur une voix à 16 caractères par seconde. Il sera recalé
-      sur la piste réelle du reel à l'étape de l'animatic. Une image = 33 ms.
+      Minutage estimé sur une voix à 16 caractères par seconde, à recaler sur la
+      piste réelle du reel à l'étape de l'animatic. Une image dure 33 ms.
     </p>
     <h3>Intro · 180 images</h3>
     <div class="table">
@@ -449,61 +413,71 @@
             <td>0,00–0,15</td>
             <td>—</td>
             <td>
-              Fond seul : la carte précédente part pendant les 150 premières ms
-              du changement de 300 ms.
+              Le parchemin seul : la carte précédente part pendant les 150
+              premières ms du changement de 300 ms.
             </td>
           </tr>
           <tr>
-            <td>5–14</td>
-            <td>0,15–0,45</td>
+            <td>5–23</td>
+            <td>0,15–0,75</td>
             <td>« Avec EthniAfrica »</td>
-            <td>Logo et EthniAfrica entrent en fondu.</td>
+            <td>Le logo et EthniAfrica montent en fondu.</td>
           </tr>
           <tr>
-            <td>29–44</td>
-            <td>0,95–1,45</td>
-            <td>« on part »</td>
-            <td>Libellé « Le nom employé en français ».</td>
-          </tr>
-          <tr>
-            <td>44–59</td>
-            <td>1,45–1,95</td>
-            <td>« des noms »</td>
+            <td>29–59</td>
+            <td>0,95–1,95</td>
+            <td>« on part des noms »</td>
             <td>
-              « Peul » monte lettre à lettre derrière un masque, 60 ms d'écart.
+              L'ordinateur, la tablette puis le téléphone se posent, 200 ms
+              d'écart, avec un léger rebond.
             </td>
           </tr>
           <tr>
-            <td>98–140</td>
-            <td>3,25–4,65</td>
-            <td>« pour mieux comprendre l'Afrique »</td>
+            <td>83–101</td>
+            <td>2,75–3,35</td>
+            <td>« en français »</td>
             <td>
-              Les différents noms entrent un à un, 120 ms d'écart, Fulɓe
-              d'abord.
+              On plonge dans le téléphone ; l'ordinateur et la tablette
+              s'effacent en douceur.
             </td>
           </tr>
           <tr>
-            <td>149–165</td>
-            <td>4,95–5,50</td>
-            <td>« et ses peuples »</td>
+            <td>99–107</td>
+            <td>3,30–3,55</td>
+            <td>« pour mieux »</td>
+            <td>Le doigt arrive et touche le champ.</td>
+          </tr>
+          <tr>
+            <td>113–134</td>
+            <td>3,75–4,45</td>
+            <td>« comprendre l'Afrique »</td>
+            <td>Le nom se tape, lettre à lettre.</td>
+          </tr>
+          <tr>
+            <td>135–152</td>
+            <td>4,50–5,05</td>
+            <td>« et ses »</td>
+            <td>Le doigt glisse vers Rechercher et appuie.</td>
+          </tr>
+          <tr>
+            <td>153–175</td>
+            <td>5,10–5,83</td>
+            <td>« peuples. »</td>
             <td>
-              Élargissement de 500 ms : Peul prend la taille des autres en
-              première ligne, cinq noms entrent.
+              Le champ monte, « D'où vient ce nom » apparaît, l'encadré de
+              réponse arrive encore vide.
             </td>
           </tr>
           <tr>
-            <td>165–180</td>
-            <td>5,50–6,00</td>
+            <td>175–180</td>
+            <td>5,83–6,00</td>
             <td>—</td>
-            <td>
-              Tenue. Les 5 dernières images ne bougent pas, pour le changement
-              de carte qui suit.
-            </td>
+            <td>Image fixe, pour le changement de carte qui suit.</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <h3>Fin · 210 images</h3>
+    <h3>Fin · 240 images</h3>
     <div class="table">
       <table>
         <thead>
@@ -516,72 +490,69 @@
         </thead>
         <tbody>
           <tr>
-            <td>0–9</td>
-            <td>0,00–0,30</td>
-            <td>« L'importance »</td>
-            <td>
-              Changement de 300 ms depuis la carte « Nous pensons » : la phrase
-              entre dans les 150 dernières ms.
-            </td>
-          </tr>
-          <tr>
-            <td>9–66</td>
-            <td>0,30–2,20</td>
-            <td>« de connaître nos noms. »</td>
-            <td>La phrase seule, lue pendant qu'elle est dite.</td>
-          </tr>
-          <tr>
-            <td>66–75</td>
-            <td>2,20–2,50</td>
+            <td>0–4</td>
+            <td>0,00–0,15</td>
             <td>—</td>
+            <td>Changement de 300 ms depuis la carte « Nous pensons ».</td>
+          </tr>
+          <tr>
+            <td>5–23</td>
+            <td>0,15–0,75</td>
+            <td>« L'importance de connaître nos noms. »</td>
+            <td>La phrase monte, seule, lue pendant qu'elle est dite.</td>
+          </tr>
+          <tr>
+            <td>66–92</td>
+            <td>2,20–3,05</td>
+            <td>« Vous pouvez continuer »</td>
             <td>
-              La phrase sort en 150 ms, l'adresse et le téléphone entrent en 150
-              ms : jamais deux plans à la fois.
+              La phrase rejoint le haut de l'image et y reste ; le téléphone
+              remonte avec le nom déjà tapé.
             </td>
           </tr>
           <tr>
-            <td>75–99</td>
-            <td>2,50–3,30</td>
-            <td>« continuer la recherche »</td>
-            <td>Frappe du nom, une lettre toutes les 4 images.</td>
+            <td>86–108</td>
+            <td>2,85–3,60</td>
+            <td>« la recherche »</td>
+            <td>Le doigt appuie sur Rechercher.</td>
           </tr>
           <tr>
-            <td>99–114</td>
-            <td>3,30–3,80</td>
+            <td>105–156</td>
+            <td>3,50–5,20</td>
             <td>« sur EthniAfrica »</td>
             <td>
-              Appui sur Rechercher, la page de résultat entre en fondu,
-              l'adresse prend le nom.
+              Le champ monte ; « Vous avez cherché… » puis « Ce peuple se nomme
+              lui-même… » entrent ligne à ligne.
             </td>
           </tr>
           <tr>
-            <td>114–141</td>
-            <td>3,80–4,70</td>
-            <td>—</td>
-            <td>Tenue sur l'origine du nom.</td>
-          </tr>
-          <tr>
-            <td>141–162</td>
-            <td>4,70–5,40</td>
-            <td>« lien en profil »</td>
+            <td>150–186</td>
+            <td>5,00–6,20</td>
+            <td>« lien en profil. »</td>
             <td>
-              Défilement doux de 700 ms vers les formes du nom et leur histoire.
+              « Les appellations », puis les noms un à un, 130 ms d'écart.
             </td>
           </tr>
           <tr>
-            <td>162–171</td>
-            <td>5,40–5,70</td>
+            <td>188–203</td>
+            <td>6,25–6,75</td>
             <td>—</td>
-            <td>Changement de 300 ms vers la fin.</td>
+            <td>Le téléphone redescend et s'efface.</td>
           </tr>
           <tr>
-            <td>171–210</td>
-            <td>5,70–7,00</td>
+            <td>197–227</td>
+            <td>6,55–7,55</td>
             <td>—</td>
             <td>
-              Phrase, invitation, pastille du site et repère vers le profil,
-              tenus jusqu'au bout.
+              L'invitation, le logo, ethniafrica.com et le repère @ethniafrica
+              entrent sous la phrase.
             </td>
+          </tr>
+          <tr>
+            <td>227–240</td>
+            <td>7,55–8,00</td>
+            <td>—</td>
+            <td>Tenue.</td>
           </tr>
         </tbody>
       </table>
@@ -592,53 +563,55 @@
     <h2>Pourquoi ces choix</h2>
     <div class="why">
       <div>
-        <b>Le nom employé reste entier, et premier.</b>
+        <b>Le même décor à chaque vidéo.</b>
         <p>
-          Le spectateur reconnaît le mot qu'il connaît, « Peul », et se sent
-          concerné. Les autres noms arrivent à côté, jamais à sa place : rien
-          n'est barré, assombri ou remplacé. On montre que le nom ouvre sur
-          d'autres noms, sans dire qu'il est faux, colonial ou français
-          d'origine. Un test le vérifie.
+          On reconnaît la série avant même de lire un mot. Le parchemin et la
+          recherche sont ceux du film de soutien, déjà publiés : le spectateur
+          retrouve un monde qu'il a vu.
         </p>
       </div>
       <div>
-        <b>Le mot écrit arrive avec le mot dit.</b>
+        <b>Trois appareils, puis un seul.</b>
         <p>
-          Voir et entendre la même chose au même moment aide à la retenir. C'est
-          la règle déjà retenue pour la ligne de signature en 1.6.0.
+          L'ordinateur, la tablette et le téléphone disent en une seconde que le
+          site est ouvert à tous, partout. On entre ensuite dans le téléphone,
+          l'appareil sur lequel le spectateur regarde la vidéo : il se voit
+          faire la recherche.
         </p>
       </div>
       <div>
-        <b>Six noms de six types pour finir l'intro.</b>
+        <b>Le nom de l'épisode tapé dans le champ.</b>
         <p>
-          Un peuple, une langue, un pays, une famille de langues, un nom de
-          famille, un lieu : ce sont les six types de la doctrine. Le spectateur
-          comprend que l'épisode n'est qu'un nom parmi beaucoup d'autres, et
-          donc qu'il y aura d'autres épisodes.
+          La voix vient de dire « l'origine du nom Burkina Faso » ; l'intro tape
+          « Burkina Faso ». La recherche est lancée, mais la réponse n'arrive
+          pas : l'encadré reste vide. C'est l'épisode qui répond. La question
+          est ouverte et refermée dans la même vidéo, rien n'est promis que la
+          vidéo ne tienne pas.
         </p>
       </div>
       <div>
-        <b>Le site à la taille d'un téléphone.</b>
+        <b>La fin reprend la même recherche.</b>
         <p>
-          La page est montrée exactement comme elle s'affiche sur un téléphone
-          de 430 px. Ce qu'on voit dans la vidéo est ce qu'on trouvera au bout
-          du lien : la promesse est tenue. C'est aussi la seule échelle où le
-          plus petit texte du site se lit à 12 px.
+          Le même téléphone revient avec le nom déjà tapé, et cette fois la
+          réponse s'affiche. Le spectateur voit ce qu'il trouvera en suivant le
+          lien : la promesse de « lien en profil » est montrée avant d'être
+          faite.
         </p>
       </div>
       <div>
-        <b>La frappe lettre à lettre.</b>
+        <b>Le nom cherché reste entier, au milieu des autres.</b>
         <p>
-          Un mot qui se complète crée une petite attente : on lit avant la fin.
-          Le mouvement reste local, dans le champ, jamais sur tout l'écran.
+          « Peul » garde sa place parmi les appellations, marqué « votre
+          recherche ». Rien n'est barré : partir du nom employé en français ne
+          veut pas dire qu'il est faux. Un test le vérifie.
         </p>
       </div>
       <div>
-        <b>La fin à la place de la fin de série.</b>
+        <b>La phrase reste en haut.</b>
         <p>
-          La phrase, l'invitation et la pastille occupent la même bande que la
-          fin de série actuelle, de y 318 à 820. On reconnaît la fin parce
-          qu'elle revient toujours au même endroit.
+          « L'importance de connaître nos noms. » est lue pendant qu'elle est
+          dite, puis reste au-dessus de la recherche jusqu'à la fin : voir et
+          entendre la même phrase aide à la retenir.
         </p>
       </div>
       <div>
@@ -667,101 +640,71 @@
         <tbody>
           <tr>
             <td><code>name</code></td>
-            <td>Fin</td>
-            <td>bassa</td>
-            <td>
-              Le nom tapé et la fin de l'adresse. La page de ce nom doit être en
-              ligne avant la publication.
-            </td>
+            <td>Intro et fin</td>
+            <td>Peul</td>
+            <td>Le nom de l'épisode, tapé dans le champ.</td>
           </tr>
           <tr>
-            <td><code>result</code></td>
+            <td><code>layers/&lt;nom&gt;.json</code></td>
             <td>Fin</td>
-            <td>maquette search-bassa-430</td>
+            <td><code>peul.json</code></td>
             <td>
-              La page de résultat de ce nom. En production : une capture de la
-              vraie page ethniafrica.com/fr/atlas/recherche/&lt;nom&gt; à 430
-              px, prise le jour du rendu.
-            </td>
-          </tr>
-          <tr>
-            <td><code>forms</code></td>
-            <td>Fin</td>
-            <td>2 pour Bassa, sinon la frise qui a le plus de formes</td>
-            <td>Quelle frise de noms le défilement montre.</td>
-          </tr>
-          <tr>
-            <td><code>ground</code></td>
-            <td>Les deux</td>
-            <td>Fond Nuit</td>
-            <td>
-              <code>none</code> pour le master alpha à poser sur l'image de
-              l'épisode.
+              La réponse de la page de ce nom : la phrase « Vous avez cherché… »
+              et les appellations, recopiées de la page en ligne. La page doit
+              exister avant la publication.
             </td>
           </tr>
         </tbody>
       </table>
     </div>
-    <p>
-      L'intro n'a aucun calque à changer : elle est identique dans chaque vidéo.
-    </p>
   </section>
 
   <section id="questions">
     <h2>À trancher avant l'animatic</h2>
     <ol class="questions">
       <li>
-        <strong>Échelle du site dans la fin.</strong
+        <strong>Le nom tapé.</strong
         ><span
-          >À la taille réelle d'un téléphone, tout le texte du site se lit à 12
-          px ou plus, mais les lignes longues passent sous la colonne des
-          boutons. Dans une fenêtre réduite à la zone sûre, tout tient, mais le
-          petit texte tombe à 10 px.</span
+          >Le nom de l'épisode, qui change à chaque vidéo, ou un nom fixe comme
+          « Afrique » ou « Bantou ».</span
         ><span class="reco"
-          >Recommandation : la taille réelle. Le titre, l'étiquette, le nom tapé
-          et les formes restent dans la zone sûre.</span
+          >Recommandation : le nom de l'épisode. Il prolonge la phrase
+          d'ouverture, et la fin montre la vraie réponse à cette recherche. Pour
+          un épisode sans page en ligne, on prend « Afrique ».</span
+        >
+      </li>
+      <li>
+        <strong>La personne qui cherche.</strong
+        ><span
+          >Un doigt stylisé, comme sur les images, ou un vrai plan filmé d'une
+          main qui tient un téléphone, sur fond neutre, incrusté dans le
+          décor.</span
+        ><span class="reco"
+          >Recommandation : commencer avec le doigt stylisé, qui ne demande
+          aucun tournage. Un plan filmé de 3 secondes peut le remplacer plus
+          tard sans rien changer d'autre.</span
         >
       </li>
       <li>
         <strong>Durée de la fin.</strong
         ><span
-          >À 7 s, les formes et l'histoire du nom ne restent que 0,7 s à
-          l'écran, défilement compris.</span
+          >8 secondes : la voix finit vers 6 s, et les appellations ont besoin
+          d'une seconde de plus pour être lues.</span
         ><span class="reco"
-          >Recommandation : 8 s. Le clip est muet et peut dépasser la voix d'une
-          seconde : l'histoire du nom reste alors 1,7 s à l'écran.</span
+          >À confirmer, ou à ramener à 7 s en raccourcissant la tenue
+          finale.</span
         >
       </li>
       <li>
-        <strong>Fond de l'intro.</strong
+        <strong>Les polices.</strong
         ><span
-          >Sur fond Nuit (la version montrée), ou posée sur la photo d'ouverture
-          de l'épisode avec le contour double.</span
+          >Comme dans le film de soutien et sur le site : Fraunces pour les
+          titres de l'interface et la phrase, Nunito Sans pour le reste. Anton,
+          la police des titres des cartes de série, n'apparaît pas dans les
+          génériques.</span
         ><span class="reco"
-          >Recommandation : livrer les deux. La version Nuit sert par défaut ;
-          la version alpha évite une coupure franche après la carte
-          d'ouverture.</span
-        >
-      </li>
-      <li>
-        <strong>Les noms de l'intro.</strong
-        ><span
-          >Peul, ses six autres noms tirés de la maquette search-peul, puis
-          Lingala, Côte d’Ivoire, Bantou, Traoré et Yamoussoukro, les exemples
-          de la doctrine.</span
-        ><span class="reco"
-          >À confirmer. Le ɓ de Fulɓe vient de Noto Sans, la police de secours
-          de la charte : il est un peu plus fin que les lettres d'Anton.</span
-        >
-      </li>
-      <li>
-        <strong>Thème.</strong
-        ><span
-          >Nuit pour les deux génériques ; la page du site garde son propre
-          thème clair, celui que voit un visiteur.</span
-        ><span class="reco"
-          >Recommandation : Nuit. La fin en Parchemin reste disponible (vignette
-          ci-dessus).</span
+          >Recommandation : garder les polices du site, puisque c'est le site
+          qu'on montre.</span
         >
       </li>
     </ol>
@@ -775,76 +718,83 @@
       shots: [
         {
           id: "i1-brand",
-          t: 0.6,
+          t: 0.8,
           at: 0.0,
           say: "Avec EthniAfrica,",
-          does: "Le logo et le mot EthniAfrica se posent en haut de la scène.",
+          does: "Le logo et le mot EthniAfrica se posent sur le parchemin.",
         },
         {
-          id: "i2-name",
-          t: 2.6,
+          id: "i2-devices",
+          t: 2.2,
           at: 0.95,
           say: "on part des noms qu'on emploie en français",
-          does: "« Peul » monte lettre à lettre sous le libellé « Le nom employé en français ».",
+          does: "Le site sur ordinateur, tablette et téléphone : la même page d'accueil, « D'où vient ce nom ? ».",
         },
         {
-          id: "i3-forms",
-          t: 4.2,
-          at: 3.25,
-          say: "pour mieux comprendre l'Afrique",
-          does: "Peul reste entier ; ses différents noms arrivent à côté, Fulɓe d'abord, aucun plus grand que les autres.",
+          id: "i3-tap",
+          t: 3.55,
+          at: 2.9,
+          say: "pour mieux comprendre",
+          does: "On entre dans le téléphone ; un doigt touche le champ de recherche.",
         },
         {
-          id: "i4-peoples",
-          t: 5.6,
+          id: "i4-typed",
+          t: 4.5,
+          at: 3.9,
+          say: "l'Afrique",
+          does: "Le nom de l'épisode se tape lettre à lettre.",
+        },
+        {
+          id: "i5-search",
+          t: 5.8,
           at: 4.95,
           say: "et ses peuples.",
-          does: "Le champ s'élargit : Peul devient un nom parmi six, de six types différents.",
+          does: "Le doigt appuie sur Rechercher ; la page commence à s'ouvrir. La réponse, c'est l'épisode.",
         },
       ],
     },
     outro: {
-      duration: 7.0,
+      duration: 8.0,
       shots: [
         {
           id: "o1-line",
-          t: 1.2,
+          t: 1.6,
           at: 0.0,
           say: "L'importance de connaître nos noms.",
-          does: "La phrase du projet, seule, en Fraunces, pendant que la voix la dit.",
+          does: "La phrase du projet, seule, pendant que la voix la dit.",
         },
         {
-          id: "o2-typing",
+          id: "o2-search",
           t: 3.3,
           at: 2.35,
           say: "Vous pouvez continuer la recherche",
-          does: "La page de recherche du site ; le nom se tape dans le champ, lettre à lettre.",
+          does: "La phrase monte ; le téléphone revient avec le nom déjà tapé, et le doigt appuie sur Rechercher.",
         },
         {
           id: "o3-result",
-          t: 4.3,
+          t: 4.9,
           at: 4.0,
           say: "sur EthniAfrica,",
-          does: "La page de résultat s'ouvre sur le nom : d'où il vient.",
+          does: "La réponse se construit : « Vous avez cherché… », puis le nom que le peuple se donne.",
         },
         {
-          id: "o4-history",
-          t: 5.3,
+          id: "o4-forms",
+          t: 6.2,
           at: 4.95,
           say: "lien en profil.",
-          does: "Défilement doux jusqu'aux formes du nom et à l'histoire de chacune, avec leurs sources.",
+          does: "Les appellations arrivent une à une, côte à côte.",
         },
         {
           id: "o5-end",
-          t: 6.5,
+          t: 7.6,
           at: 6.0,
           say: "(la voix est finie)",
-          does: "La phrase, l'invitation, la pastille du site et le repère vers le nom du compte, tenus jusqu'à la fin.",
+          does: "La phrase, l'invitation, le logo, ethniafrica.com et le repère vers le nom du compte.",
         },
       ],
     },
   };
-  const GUIDES = new Set(["i3-forms", "o3-result", "o4-history", "o5-end"]);
+  const GUIDES = new Set(["i4-typed", "o4-forms", "o5-end"]);
   const sec = (n) => n.toFixed(2).replace(".", ",") + " s";
 
   for (const [clipId, clip] of Object.entries(CLIPS)) {
@@ -863,7 +813,6 @@
         `<b style="left:${(shot.at / clip.duration) * 100}%;width:calc(${((end - shot.at) / clip.duration) * 100}% - 4px)" title="${shot.say}">${shot.id.split("-")[0]}</b>`
       );
     });
-
     const list = document.querySelector(`.shots[data-clip=${clipId}]`);
     for (const shot of clip.shots) {
       const guides = GUIDES.has(shot.id);
@@ -879,7 +828,7 @@
             <p class="t">${shot.id} · image ${Math.round(shot.t * 30)} · ${sec(shot.t)}</p>
             <p class="say">« ${shot.say} »</p>
             <p>${shot.does}</p>
-            <dl><dt>Voix</dt><dd>dès ${sec(shot.at)}</dd></dl>
+            <p class="t">Voix dès ${sec(shot.at)}</p>
           </div>
         </article>`
       );

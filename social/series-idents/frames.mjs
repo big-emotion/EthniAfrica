@@ -12,26 +12,19 @@ const outDir =
   process.argv[2] ??
   fileURLToPath(new URL("./boards/frames/", import.meta.url));
 
-// Variants drawn beside the plain shots: the intro over a picture, as the
-// alpha master will sit on an episode's opener, and the guides.
+// The same shots with the feed safe zone and the button column drawn, and
+// the intro typing another episode's name.
 const VARIANTS = [
-  { clip: "intro", shot: "i3-forms", suffix: "image", query: "&ground=image" },
+  { clip: "intro", shot: "i2-devices", suffix: "guides", query: "&guides=1" },
+  { clip: "intro", shot: "i4-typed", suffix: "guides", query: "&guides=1" },
   {
     clip: "intro",
-    shot: "i4-peoples",
-    suffix: "image",
-    query: "&ground=image",
+    shot: "i5-search",
+    suffix: "lingala",
+    query: "&name=Lingala",
   },
-  { clip: "intro", shot: "i3-forms", suffix: "guides", query: "&guides=1" },
-  { clip: "outro", shot: "o3-result", suffix: "guides", query: "&guides=1" },
-  { clip: "outro", shot: "o4-history", suffix: "guides", query: "&guides=1" },
+  { clip: "outro", shot: "o4-forms", suffix: "guides", query: "&guides=1" },
   { clip: "outro", shot: "o5-end", suffix: "guides", query: "&guides=1" },
-  {
-    clip: "outro",
-    shot: "o5-end",
-    suffix: "parchemin",
-    query: "&theme=parchemin",
-  },
 ];
 
 await mkdir(outDir, { recursive: true });
