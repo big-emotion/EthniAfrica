@@ -4,7 +4,7 @@ import { describe, expect, it } from "vitest";
 
 import type { PlaceRecord } from "@/api/v2/services/places";
 import { PlaceRecordView } from "@/components/place/PlaceRecordView";
-import { getNameAnswerRoute } from "@/lib/routing";
+import { getCountryRoute, getNameAnswerRoute } from "@/lib/routing";
 import type { NextStepCard } from "@/lib/search/nameClosing";
 
 import yamoussoukroFiche from "../../../../dataset/source/afrik/lieux/LOC_YAMOUSSOUKRO.json";
@@ -278,7 +278,7 @@ describe("PlaceRecordView", () => {
       ).toBeNull();
       expect(
         screen.getByRole("link", { name: "Côte d'Ivoire" })
-      ).toHaveAttribute("href", "/fr/atlas/pays/CIV");
+      ).toHaveAttribute("href", getCountryRoute("fr", "CIV"));
     }
   );
 
