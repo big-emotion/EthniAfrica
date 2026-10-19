@@ -6,15 +6,16 @@
   "content": {
     "appellations": {
       "mainName": "Margi",
-      "selfAppellation": "Margi (Màrgí)",
+      "selfAppellation": "Margi",
       "exonyms": ["Marghi", "Margyi", "Marghi Central"],
       "originOfExonyms": "Le terme Marghi est une variante orthographique utilisee par les administrateurs coloniaux britanniques. Marghi Central ou Marghi Central Language designe la variete linguistique principale dans les classifications linguistiques modernes (SIL Ethnologue, Glottolog). Les sous-groupes parlant des varietes proches sont parfois appeles Margi du Sud (Margi South) et Putai (Margi Ouest).",
       "whyProblematic": null,
-      "contemporaryUsage": "Margi est le terme usuel en anglais et en haoussa. Les locuteurs se designent comme Margi (Màrgí). Le groupe est reconnu comme entite ethnique distincte dans les etats d'Adamawa et de Borno au Nigeria. La langue Margi (mrt) est l'une des mieux documentees de la branche Biu-Mandara du tchadique.",
+      "contemporaryUsage": "Margi est le terme usuel en anglais et en haoussa. Les locuteurs se designent comme Margi (Màrgí). Le groupe est reconnu comme entite ethnique distincte dans les etats d'Adamawa et de Borno au Nigeria. La langue Margi (mrt) est l'une des mieux documentees de la branche Biu-Mandara du tchadique. Màrgí est une forme accentuée du nom Margi.",
       "linguisticFamily": "FLG_TCHADIQUE",
       "ethnoLinguisticGroup": "Tchadique Biu-Mandara (branche A.2, groupe Bura-Margi)",
       "historicalRegion": "Montagnes Mandara et plaines adjacentes du nord-est du Nigeria (Borno, Adamawa)",
-      "currentCountries": ["NGA"]
+      "currentCountries": ["NGA"],
+      "spellingAliases": ["Màrgí"]
     },
     "ethnicities": [
       "Margi Central (Margi babal, Margi de la plaine) — autour de Lasa, Borno State",

@@ -7,7 +7,7 @@
   "content": {
     "appellations": {
       "mainName": "Amhara",
-      "selfAppellation": "Amara (en amharique : አማራ)",
+      "selfAppellation": "Amara",
       "exonyms": [
         "Abyssins (terme historique occidental pour les Hautes Terres chrétiennes)",
         "Habesha (terme régional englobant Amhara et Tigréens)",
@@ -19,7 +19,8 @@
       "linguisticFamily": "FLG_SEMITIQUE",
       "ethnoLinguisticGroup": "Semitique ethiopien meridional (Ethio-semitique du sud, groupe afroasiatique)",
       "historicalRegion": "Hautes terres centrales et nord-ouest de l'Éthiopie : provinces historiques de Gojjam, Gondar (Begemder), Wollo (Bete Amhara), Lasta, Shewa, Semien, Angot, Wag",
-      "currentCountries": ["ETH"]
+      "currentCountries": ["ETH"],
+      "spellingAliases": ["አማራ"]
     },
     "ethnicities": [
       "Gojjam Amhara (province du Gojjam, au sud du lac Tana, inclut le sous-royaume historique de Gojjam)",

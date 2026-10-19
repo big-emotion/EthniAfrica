@@ -6,10 +6,12 @@
   "content": {
     "appellations": {
       "mainName": "Bakweri",
-      "selfAppellation": "Bakweri / Kwe (pour les locuteurs de la langue mokpwe)",
+      "selfAppellation": "Bakweri",
       "exonyms": [
         "Kwe people (terme basé sur le nom de la langue, Mokpwe / Kpwe)",
-        "Bakwiri, Bakwedi, Bakwele, Bakwiri (graphies coloniales allemandes et britanniques)",
+        "Bakwiri (graphie coloniale allemande ou britannique)",
+        "Bakwedi (graphie coloniale allemande ou britannique)",
+        "Bakwele (graphie coloniale allemande ou britannique)",
         "Mokpwe (désignation linguistique SIL)"
       ],
       "originOfExonyms": "Le terme Bakweri applique le préfixe bantou Ba- (les gens de) à la racine kweri. Kwe est l'auto-désignation des locuteurs. Mokpwe est le nom de la langue utilisé par SIL International (ISO 639-3 : bri). Les variations orthographiques coloniales (Bakwiri, Bakwedi) reflètent les conventions de transcription successives des administrateurs allemands puis britanniques.",

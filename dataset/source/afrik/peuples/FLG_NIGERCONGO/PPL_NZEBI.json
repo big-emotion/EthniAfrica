@@ -121,7 +121,7 @@
   "content": {
     "appellations": {
       "mainName": "Nzebi",
-      "selfAppellation": "Nzebi / Ndzébi",
+      "selfAppellation": "Nzebi",
       "exonyms": [
         "Bandjabi",
         "Bandzabi",
@@ -140,7 +140,8 @@
         "Ndjevi",
         "Njevi",
         "Yinjebi",
-        "Yinzebi"
+        "Yinzebi",
+        "Ndzébi"
       ],
       "originOfExonyms": "Le terme Bandjabi (ou Bandzabi) est le nom le plus courant donne par les administrateurs coloniaux francais et les peuples voisins. Il derive du prefixe bantou Ba- (pluriel de personnes) suivi du radical nzabi/njabi. Les variantes orthographiques nombreuses refletent les difficultes de transcription du nom par differents observateurs europeens.",
       "whyProblematic": "La multiplicite des graphies (Nzebi, Ndzébi, Njabi, Bandjabi...) engendre des confusions dans la litterature coloniale et ethnographique. Le groupe est parfois confondu avec les Tsaangi, population voisine avec laquelle les Nzebi ont fusionne au fil du temps, creant une identite composite.",

@@ -11,11 +11,12 @@
   "content": {
     "appellations": {
       "mainName": "Gamo",
-      "selfAppellation": "Gamo (Gaammo)",
+      "selfAppellation": "Gamo",
       "exonyms": ["Gemu"],
       "originOfExonyms": "Gamo ressemble au mot Gaammo, lion, dans la langue du peuple. Cette explication relie le nom à l'image héroïque que le groupe se donne. Certaines classifications de langues emploient Gemu.",
       "whyProblematic": null,
-      "contemporaryUsage": "Le terme Gamo est utilisé dans les documents officiels éthiopiens, dans la nomenclature administrative (zone Gamo) et dans les médias. La province de Gamo-Gofa, dont ils partageaient le nom avec les Gofa, a été réorganisée en 2019 lors de la séparation des Gofa."
+      "contemporaryUsage": "Le terme Gamo est utilisé dans les documents officiels éthiopiens, dans la nomenclature administrative (zone Gamo) et dans les médias. La province de Gamo-Gofa, dont ils partageaient le nom avec les Gofa, a été réorganisée en 2019 lors de la séparation des Gofa.",
+      "spellingAliases": ["Gaammo"]
     },
     "ethnicities": ["Gamo"],
     "origins": {

@@ -6,11 +6,12 @@
   "content": {
     "appellations": {
       "mainName": "Kumam",
-      "selfAppellation": "Kumam (ou Ikokolemu, Akokolemu)",
+      "selfAppellation": "Kumam",
+      "spellingAliases": ["Ikokolemu", "Akokolemu"],
       "exonyms": ["Kuman", "Kumum", "Akum", "Ikumama"],
       "originOfExonyms": "Kumam est à la fois le nom que le peuple se donne et le plus répandu à l'extérieur. Les sources coloniales britanniques emploient aussi Kuman et Ikumama. Les personnes concernées appellent leur langue Ikokolemu ou Akokolemu.",
       "whyProblematic": null,
-      "contemporaryUsage": "Le terme Kumam est universellement utilise en Ouganda pour designer ce peuple. L'autodesignation Ikokolemu fait reference a leur langue.",
+      "contemporaryUsage": "Le terme Kumam est universellement utilise en Ouganda pour designer ce peuple. L'autodesignation Ikokolemu fait reference a leur langue. Ikokolemu et Akokolemu sont aussi rapportés comme noms employés par les personnes concernées.",
       "linguisticFamily": "FLG_NILOTIQUE",
       "ethnoLinguisticGroup": "Nilotique occidental (groupe Luo-Ateker, sous-groupe Mabaan-Burun selon certaines classifications)",
       "historicalRegion": "Region du lac Kyoga (Teso sub-region, est de l'Ouganda) et bordure sud de la region Lango",

@@ -7,7 +7,7 @@
   "content": {
     "appellations": {
       "mainName": "Kpelle",
-      "selfAppellation": "Kpelleh / Kpɛlɛɛ",
+      "selfAppellation": "Kpelleh",
       "exonyms": [
         "Guerze (français, utilisé en Guinée)",
         "Kpwesi",
@@ -26,7 +26,8 @@
       "linguisticFamily": "FLG_MANDE",
       "ethnoLinguisticGroup": "Mandé méridional (Southern Mande)",
       "historicalRegion": "Région forestière de Guinée (Guinée Forestière, capitale Nzérékoré) et plateau central du Libéria (comté de Bong, comté de Lofa)",
-      "currentCountries": ["GIN", "LBR"]
+      "currentCountries": ["GIN", "LBR"],
+      "spellingAliases": ["Kpɛlɛɛ"]
     },
     "ethnicities": [
       "Kpelle du Libéria (comté de Bong — groupe le plus important)",

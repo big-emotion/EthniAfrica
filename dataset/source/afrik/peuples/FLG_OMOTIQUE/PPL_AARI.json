@@ -6,21 +6,16 @@
   "content": {
     "appellations": {
       "mainName": "Aari",
-      "selfAppellation": "Aari / Ari",
-      "exonyms": [
-        "Ari (variante orthographique commune)",
-        "Aare",
-        "Gayil (pour le sous-groupe Gayil)",
-        "Ara",
-        "Aro"
-      ],
+      "selfAppellation": "Aari",
+      "exonyms": ["Aare", "Gayil (pour le sous-groupe Gayil)", "Ara", "Aro"],
       "originOfExonyms": "Aari ou Ari est à la fois le nom que le peuple se donne et celui qu'emploient les personnes extérieures. Il désigne le groupe et sa langue dans les sources éthiopiennes, les recensements et les recherches sur ses modes de vie. Aari, Ari et Aare sont différentes manières de transcrire la même prononciation. Certains groupes portent aussi des noms locaux, comme Gayil (Galila), Bako ou Seyki. Le catalogue Glottolog donne aussi Ara et Aro parmi les autres noms de la langue.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Aari est utilisé de manière cohérente dans les recensements officiels éthiopiens (2007 : 289 835 Aari ethniques), dans la littérature scientifique et par les membres du groupe. Depuis la réforme fédérale éthiopienne de 1991, les Aari bénéficient d'une certaine autonomie dans la région SNNPR (Southern Nations, Nationalities and Peoples' Region) et ont pu revendiquer leur identité culturelle avec davantage de liberté.",
       "linguisticFamily": "FLG_OMOTIQUE",
       "ethnoLinguisticGroup": "Omotique méridional (South Omotic)",
       "historicalRegion": "Vallée de l'Omo et plateau de Mela — zone South Omo, Région des Nations, Nationalités et Peuples du Sud (SNNPR), Éthiopie",
-      "currentCountries": ["ETH"]
+      "currentCountries": ["ETH"],
+      "spellingAliases": ["Ari"]
     },
     "ethnicities": [
       "Kantsa — caste agricultrice privilégiée, majoritaire dans la société aari",

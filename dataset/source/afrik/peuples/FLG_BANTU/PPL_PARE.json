@@ -7,11 +7,11 @@
   "content": {
     "appellations": {
       "mainName": "Pare",
-      "selfAppellation": "Vaasu (pour les Pare du Sud) / Vaghonu (pour les Pare du Nord)",
+      "selfAppellation": null,
       "exonyms": ["Wapare (en swahili)", "Asu", "Chasu", "Gweno", "Vughonu"],
       "originOfExonyms": "Le terme Pare (prononce Pahray) est le nom donne par les voisins et repris dans la litterature coloniale et contemporaine. Le terme Asu (racine du nom Vaasu) designe le peuple du Sud-Pare et sa langue (Chasu ou Athu). Le terme Gweno (ou Kighonu) designe le peuple et la langue du Nord-Pare. L'explorateur allemand J.L. Krapf, lors de sa visite en Usambara en 1848, a appris l'existence des Pare et des Gweno. Wapare est la forme swahilie courante.",
       "whyProblematic": "Le nom Pare recouvre deux sous-groupes linguistiquement distincts : le Sud-Pare (Asu/Chasu) et le Nord-Pare (Gweno/Kighonu). Le processus historique de glissement du Nord-Pare vers la culture Asu a engendre une unite progressive mais incomplete.",
-      "contemporaryUsage": "Le terme Pare est universellement utilise dans les contextes tanzaniens contemporains. Les autochtones s'identifient aussi comme Wapare en swahili. La langue Chasu (Asu) est la designation linguistique standard.",
+      "contemporaryUsage": "Le terme Pare est universellement utilise dans les contextes tanzaniens contemporains. Les autochtones s'identifient aussi comme Wapare en swahili. La langue Chasu (Asu) est la designation linguistique standard. Les Pare du Sud se nomment Vaasu et ceux du Nord, Vaghonu.",
       "linguisticFamily": "FLG_BANTU",
       "ethnoLinguisticGroup": "Bantou du Nord-Est, groupe Shambaa-Pare",
       "historicalRegion": "Monts Pare (district de Same et district de Mwanga), region de Kilimanjaro, nord-est de la Tanzanie",

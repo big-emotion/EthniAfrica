@@ -7,7 +7,7 @@
   "content": {
     "appellations": {
       "mainName": "Sheko",
-      "selfAppellation": "Shekkocc / Shekka",
+      "selfAppellation": "Sheko",
       "exonyms": ["Sheko", "Shekko", "Shecca"],
       "originOfExonyms": "Sheko ou Shekko est le nom courant, employé par le peuple et par les personnes extérieures. Dans leur langue, les membres du peuple emploient aussi la forme Shekkocc. La zone administrative Bench Sheko, anciennement Bench Maji, tirerait son nom des Sheko. Les archives éthiopiennes utilisent parfois She pour leur langue, dont le code ISO est she.",
       "whyProblematic": "Le terme She, code ISO de la langue sheko, peut être confondu avec d'autres langues codées de façon similaire. La zone Bench Sheko prend son nom des Bench et des Sheko, deux peuples distincts. Les Sheko sont parfois regroupés avec les Dizi et les Nayi sous le terme Dizoid ou Maji (du nom de la ville de Maji), car les Sheko et les Nayi affirment que leurs ancêtres ont émigré depuis la région de Maji.",
@@ -15,7 +15,8 @@
       "linguisticFamily": "FLG_OMOTIQUE",
       "ethnoLinguisticGroup": "Omotique Dizoïde (branche Maji/Dizoid) — famille afro-asiatique",
       "historicalRegion": "Zone entre Tepi et Mizan Teferi, district Sheko, zone Bench Sheko (ex-Bench Maji), Etat régional du Sud-Ouest de l'Ethiopie",
-      "currentCountries": ["ETH"]
+      "currentCountries": ["ETH"],
+      "spellingAliases": ["Shekkocc", "Shekka"]
     },
     "ethnicities": [
       "Sheko de la zone de Tepi (zone ouest)",

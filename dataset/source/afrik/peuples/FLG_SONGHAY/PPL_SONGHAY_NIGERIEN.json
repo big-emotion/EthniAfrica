@@ -7,15 +7,11 @@
   "content": {
     "appellations": {
       "mainName": "Songhay Nigérien",
-      "selfAppellation": "Songhaiborai / Ayneha",
-      "exonyms": [
-        "Songhay de Gao du Niger",
-        "Koyraboro Senni nigerien",
-        "Songhay oriental"
-      ],
+      "selfAppellation": "Songhay",
+      "exonyms": ["Koyraboro Senni nigerien", "Songhay oriental"],
       "originOfExonyms": "Le terme Songhaiborai designe en songhay les membres de la classe aristocratique originaire de Gao, consideres comme les vrais Songhay. Ce terme s'oppose aux Zarma, qui bien que parents linguistiques, ont une histoire et une identite distinctes. Au Niger, les Songhay nigeriens sont distincts des Zarma et vivent principalement dans les regions de Tillabery et Dosso le long du fleuve Niger.",
       "whyProblematic": "Il existe une confusion frequente entre Songhay et Zarma au Niger, certains auteurs les regroupant sous le label Zarma-Songhay. Les Songhay du Niger se distinguent des Zarma par leurs origines historiques (lies directement a Gao et a l'empire Songhay) et par des dialectes differents. L'appellation Songhay Nigerien peut couvrir differents groupes : les Songhay stricto sensu de Tillabery et les Songhaiborai de la Sohance.",
-      "contemporaryUsage": "Les Songhay du Niger vivent principalement dans la region de Tillabery le long du fleuve Niger, et dans certaines parties des regions de Niamey et de Dosso. Ils constituent avec les Zarma le quatrieme groupe ethnique du Niger. Le terme Songhay est utilise en francais et en haoussa. En anglais, Songhai est frequent.",
+      "contemporaryUsage": "Les Songhay du Niger vivent principalement dans la region de Tillabery le long du fleuve Niger, et dans certaines parties des regions de Niamey et de Dosso. Ils constituent avec les Zarma le quatrieme groupe ethnique du Niger. Le terme Songhay est utilise en francais et en haoussa. En anglais, Songhai est frequent. La forme « Songhay de Gao du Niger » précise la région où vivent ces personnes.",
       "linguisticFamily": "FLG_SONGHAY",
       "ethnoLinguisticGroup": "Songhay meridional (Songhoyboro Ciine / Koyraboro Senni oriental)",
       "historicalRegion": "Vallee du Niger au Niger : regions de Tillabery, Say, Ayorou, Gothey, Karma — entre la frontiere malienne et Niamey",

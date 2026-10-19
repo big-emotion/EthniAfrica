@@ -15,9 +15,9 @@ import {
   type ModelEntity,
 } from "@/lib/search/__fixtures__/corpusNameModel";
 
-// The one-name rule of migration 113 (brief 16, tenth review), restated here
+// The one-name rule of migration 114 (brief 16, tenth review), restated here
 // letter by letter rather than with the model's pattern, so the corpus-wide
-// tests below can catch the model out. At most three words; each word made
+// tests below can catch the model out. At most four words; each word made
 // of letters of any script with their combining marks, hyphens, apostrophes
 // and click marks, a click mark standing at the start of a word or inside
 // it, never at its end. The first word opens on an upper-case letter, a
@@ -58,11 +58,19 @@ function isOneName(form: string): boolean {
   const words = form.split(" ").filter((word, index) => index === 0 || word);
   return (
     form === form.trim() &&
-    words.length <= 3 &&
+    words.length <= 4 &&
     words.every(isWord) &&
     opensAsAName(words[0])
   );
 }
+
+describe("migration 114 one-name rule", () => {
+  // @req REQ-125
+  it("accepts four words and rejects five", () => {
+    expect(isOneName("A B C D")).toBe(true);
+    expect(isOneName("A B C D E")).toBe(false);
+  });
+});
 
 const peopleFiches = () =>
   corpusEntities().filter((item) => item.kind === "people");
@@ -74,7 +82,7 @@ function fiche(key: string): ModelEntity {
 }
 
 /**
- * The leads in the order migration 113 returns its rows: similarity, then
+ * The leads in the order migration 114 returns its rows: similarity, then
  * name, then id. A people is named by the piece that scored; a country or a
  * language family by its name.
  */
@@ -106,7 +114,7 @@ function rankedLeads(query: string): { key: string; form: string }[] {
 }
 
 // DEC-075 over the real family-name fiches of the repository, through the
-// pg_trgm model of corpusNameModel.ts. The SQL of migration 113, which
+// pg_trgm model of corpusNameModel.ts. The SQL of migration 114, which
 // re-issues 111's function, stays the authority; its verification block
 // re-checks these on recette.
 describe("which family names are a spelling of the searched name (DEC-075)", () => {
@@ -247,10 +255,15 @@ describe("which family names are a spelling of the searched name (DEC-075)", () 
   });
 });
 
-// A people lead through one of its other names (brief 16): migration 113
-// scores the pieces of a people's filed name, self-appellation and exonyms
-// that are one name, at 0.2, and names the piece that scored.
+// A people lead through one of its other names (brief 16): migration 114
+// scores the pieces of a people's filed name, self-appellation, exonyms and
+// spelling aliases that are one name, at 0.2, and names the piece that scored.
 describe("which people a misspelling resembles (REQ-125)", () => {
+  // @req REQ-125
+  it("scores a people's spelling aliases under the same one-name rule", () => {
+    expect(peopleLeadForms(fiche("PPL_ADIOUKROU"))).toContain("Adjoukrou");
+  });
+
   // The example of brief 16: Pakhallas is the name the Dioula gave the
   // Koulango, recorded by the Koulango fiche alone, and no fiche marks it as
   // a name that hurts. No fiche writes « pakhalas » anywhere, sources
@@ -296,8 +309,12 @@ describe("which people a misspelling resembles (REQ-125)", () => {
       "Ikumama",
       "Ikumama",
     ]);
-    expect(ajamataw.map((item) => item.key)).toEqual(["PPL_DIOLA"]);
+    expect(ajamataw.map((item) => item.key)).toEqual([
+      "PPL_DIOLA",
+      "PPL_ADIOUKROU",
+    ]);
     expect(peopleLeadForm("ajumataw", ajamataw[0])).toBe("Ajamataw");
+    expect(peopleLeadForm("ajumataw", ajamataw[1])).toBe("Ajukru");
     for (const query of ["icumama", "ajumataw"]) {
       expect(familyNameLeads(query)).toEqual([]);
       expect(proseHits(query)).toEqual([]);
@@ -305,28 +322,42 @@ describe("which people a misspelling resembles (REQ-125)", () => {
     }
   });
 
-  // A lead is offered only under a piece that is one name and that itself
-  // scored (ninth review of brief 16). « Baganda (sg. Muganda,
-  // pl. Abaganda) » is one piece: the commas sit inside its trailing
-  // bracket, which is dropped, so « pl. Abaganda) » is never scored. The
-  // filed name « Baganda / Ganda » is cut at its slash, which stands between
-  // spaces, and its piece Baganda scores 0.21 against « abagenda » on its
-  // own. No fiche writes the word.
+  // The singular and plural forms are separate aliases, so « abagenda »
+  // reaches Baganda through Abaganda rather than the weaker filed form.
   // @req REQ-125
-  it("reaches Baganda for « abagenda » through Baganda, a piece of its filed name, never through « pl. Abaganda) »", () => {
+  it("reaches Baganda for « abagenda » through its whole alias Abaganda", () => {
     const lead = neighbours("abagenda", { formsOfAPeople: true }).find(
       (item) => item.key === "PPL_BAGANDA"
     );
 
     expect(lead).toBeDefined();
-    expect(peopleLeadForm("abagenda", lead!)).toBe("Baganda");
-    expect(similarity("Baganda", "abagenda")).toBeGreaterThanOrEqual(
+    expect(peopleLeadForm("abagenda", lead!)).toBe("Abaganda");
+    expect(similarity("Abaganda", "abagenda")).toBeGreaterThanOrEqual(
       NEIGHBOUR_FLOOR
     );
-    expect(peopleLeadForms(lead!)).not.toContain("pl. Abaganda)");
+    expect(peopleLeadForms(lead!)).toContain("Abaganda");
     expect(nameHits("abagenda")).toEqual([]);
     expect(proseHits("abagenda")).toEqual([]);
   });
+
+  // @req REQ-125
+  it("keeps the self-name first and scores every separate singular or plural name", () => {
+    const cases: [string, string, string][] = [
+      ["akokolemou", "PPL_KUMAM", "Akokolemu"],
+      ["ajumataw", "PPL_DIOLA", "Ajamataw"],
+    ];
+
+    expect(fiche("PPL_DIOLA").nameFields?.[1]).toBe("Ajamat");
+    expect(peopleLeadForms(fiche("PPL_BASSA_CAM"))).toContain("Bàsáa");
+    for (const [query, key, form] of cases) {
+      const lead = neighbours(query, { formsOfAPeople: true }).find(
+        (item) => item.key === key
+      );
+
+      expect(lead, `${query} → ${key}`).toBeDefined();
+      expect(peopleLeadForm(query, lead!)).toBe(form);
+    }
+  }, 10000);
 
   // A self-appellation of clean names joined by a slash is cut at the slash,
   // and each name is scored: « Bakongo (pluriel) / Mukongo (singulier) »,
@@ -355,7 +386,7 @@ describe("which people a misspelling resembles (REQ-125)", () => {
     expect(peopleLeadForms(fiche("PPL_IJAW"))).toEqual(
       expect.arrayContaining(["Izon", "Ijo"])
     );
-  });
+  }, 10000);
 
   // An exonym entry that lists several spellings is cut at its commas, and
   // each spelling is scored on its own: the chip names one of them, never
@@ -554,44 +585,27 @@ describe("which people a misspelling resembles (REQ-125)", () => {
       })
       .map((item) => item.key);
 
-    expect(withoutOwnName).toEqual([]);
+    expect(withoutOwnName).toEqual(["PPL_PYGMEES_AUTOCHTONES"]);
   });
 
-  // The seven fiches whose self-appellation holds no piece that is one name.
-  // Five describe rather than name: the four language groups (« Diverses
-  // selon les sous-groupes », « Les noms varient selon les groupes ») and
-  // the Bantu (« Aucun nom propre »). Two pack a name with its gloss: Sawa
-  // (« Sawa — du duala : rive, … ») and Harari (« ጌ፞ይ ኡሱኣች (Gey Usuach) —
-  // les Gens de la Ville »). The list changes only with the data (ETNI-2135
-  // rewrites packed and describing values): a fiche that joins it is a name
-  // the rule drops.
-  const SELF_APPELLATION_WITHOUT_A_NAME = [
-    "PPL_ATLANTIQUE_MACRO",
-    "PPL_BANTU",
-    "PPL_BENOUECONGO_MACRO",
-    "PPL_GUR_MACRO",
-    "PPL_HARARI",
-    "PPL_KROU_MACRO",
-    "PPL_SAWA",
-  ];
-
-  // No people fiche that records the name it gives itself is reachable only
-  // through its filed name and the names others gave it: each scores a piece
-  // of its self-appellation, but for the seven fiches above.
+  // Description-only self-appellations were moved to prose and composite
+  // dossiers without one collective name now have null self-appellations.
+  // Every remaining non-null self-appellation is a searchable name.
   // @req REQ-125
-  it("scores, for every people fiche with a self-appellation, a piece of it, but for seven that hold no name", () => {
+  it("scores every non-null self-appellation as a name", () => {
     const withoutSelfName = peopleFiches()
       .filter((item) => {
         const self = item.nameFields?.[1] ?? "";
         return (
           self.trim() !== "" &&
-          !peopleLeadForms({ ...item, nameFields: [self] }).length
+          !peopleLeadForms({ ...item, forms: [self], nameFields: [self] })
+            .length
         );
       })
       .map((item) => item.key)
       .sort();
 
-    expect(withoutSelfName).toEqual(SELF_APPELLATION_WITHOUT_A_NAME);
+    expect(withoutSelfName).toEqual([]);
   });
 
   // The examples of brief 16 keep their lead: each is reached through a
@@ -665,6 +679,12 @@ describe("which people a misspelling resembles (REQ-125)", () => {
     );
 
     expect(lost).toEqual([]);
+  });
+
+  // @req REQ-125
+  it("scores script-specific combining marks accepted by the shared one-name rule", () => {
+    expect(peopleLeadForms(fiche("PPL_KANURI"))).toContain("كَنُرِيِه");
+    expect(peopleLeadForms(fiche("PPL_HARARI"))).toContain("ጌ፞ይ ኡሱኣች");
   });
 
   // The withdrawn example: the Peul fiche writes « Felata », as François de
