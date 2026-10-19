@@ -130,57 +130,68 @@ test("every card is voiced once, while it is on screen alone", () => {
   }
 });
 
-// @req REQ-186
-test("the last two chunks are the search sentence, on the closing card", () => {
-  const seq = demo();
-  const last = seq.chunks.slice(-2);
-  assert.deepEqual(
-    last.map((c) => c.text.replace(/\s/gu, " ")),
-    ["Cherchez Burkina Faso sur EthniAfrica,", "lien en profil."]
-  );
-  assert.ok(last.every((c) => seq.cards[c.card].type === "closing"));
-});
-
-// The operator's words (essay 5.6), as the voice says them: one chunk per
-// printed line, broken after each comma (Cartes 1.6.0).
-const SIGNATURE_CHUNKS = [
-  "Connaître nos noms,",
-  "décoloniser leur emploi,",
-  "nous nommer nous-mêmes.",
+// The operator's words, decided on 19 October 2026 (Cartes 1.10.0), as the
+// voice says them: one chunk per printed line. Spelled out on purpose: the
+// test holds the engine's constants to the decision.
+const CLOSING_CHUNKS = [
+  "L’importance de",
+  "connaître nos noms.",
+  "Vous pouvez continuer la recherche",
+  "sur EthniAfrica, lien en profil.",
 ];
+const withClosing = (texts) => (beats) => {
+  beats.at(-1).chunks = texts.map((text) => ({ text, duration: 2 }));
+  return beats;
+};
 
 // @req REQ-186
-test("1.6.0: the closing card says the signature line in three chunks, then the search sentence", () => {
+test("1.10.0: the closing card says the closing line and the invitation, one chunk per printed line", () => {
   const seq = demo();
   const last = seq.cards.length - 1;
   const closing = seq.chunks.filter((c) => c.card === last);
   assert.deepEqual(
     closing.map((c) => c.text.replace(/\s/gu, " ")),
-    [
-      ...SIGNATURE_CHUNKS,
-      "Cherchez Burkina Faso sur EthniAfrica,",
-      "lien en profil.",
-    ]
+    CLOSING_CHUNKS
   );
+  assert.ok(closing.every((c) => c.hidden && !c.lines.length));
 });
 
 // @req REQ-186
-test("1.6.0: a closing card that does not say the line word for word is refused", () => {
-  const closingOf = (beats) => beats.at(-1).chunks;
-  for (const change of [
-    (chunks) => chunks.splice(0, 3),
-    (chunks) => (chunks[2].text = "nous nommer."),
-    (chunks) => chunks.splice(1, 1),
+test("1.10.0: the voice's ' and ’ are one letter, and spaces are normalised", () => {
+  const seq = demo({
+    script: withClosing([
+      "L'importance de",
+      "connaître  nos noms.",
+      "Vous pouvez continuer la\u00a0recherche",
+      "sur EthniAfrica, lien en profil.",
+    ]),
+  });
+  assert.equal(seq.cards.at(-1).type, "closing");
+});
+
+// @req REQ-186
+test("1.10.0: a closing card whose chunks are not the four printed lines is refused", () => {
+  for (const texts of [
+    [
+      "Connaître nos noms,",
+      "décoloniser leur emploi,",
+      "nous nommer nous-mêmes.",
+      "Cherchez Burkina Faso sur EthniAfrica,",
+      "lien en profil.",
+    ],
+    ["L’importance de connaître nos noms.", ...CLOSING_CHUNKS.slice(2)],
+    CLOSING_CHUNKS.slice(0, 3),
+    [...CLOSING_CHUNKS, "lien en profil."],
+    [
+      ...CLOSING_CHUNKS.slice(0, 2),
+      "Vous pouvez continuer la recherche sur EthniAfrica,",
+      "lien en profil.",
+    ],
+    ["L’importance de", "connaître vos noms.", ...CLOSING_CHUNKS.slice(2)],
   ])
     assert.throws(
-      () =>
-        demo({
-          script: (beats) => {
-            change(closingOf(beats));
-            return beats;
-          },
-        }),
-      /La ligne de signature n'est pas dite mot pour mot/
+      () => demo({ script: withClosing(texts) }),
+      /La fin n'est pas dite mot pour mot : « L’importance de \/ connaître nos noms\. \/ Vous pouvez continuer la recherche \/ sur EthniAfrica, lien en profil\. »/
     );
 });
 
@@ -210,20 +221,26 @@ test("the closing card holds until the voice ends plus 0.5 s, 2.5 s at least", (
 });
 
 // @req REQ-186
-test("the series ending is refused without pageOnline: true", () => {
-  for (const pageOnline of [undefined, false, "true"])
-    assert.throws(
-      () => demo({ edit: (input) => (input.ending.pageOnline = pageOnline) }),
-      /pageOnline: true/
+test("1.10.0: an ending input that still gives search, general or pageOnline loads and warns", () => {
+  const plain = demo();
+  assert.deepEqual(plain.ending, {});
+  assert.ok(!plain.warnings.some((w) => /search|general|pageOnline/.test(w)));
+  for (const ending of [
+    { search: "Burkina Faso", pageOnline: true },
+    { general: true },
+    { pageOnline: false },
+  ]) {
+    const seq = demo({ edit: (input) => (input.ending = ending) });
+    assert.deepEqual(seq.ending, {});
+    assert.ok(
+      seq.warnings.some((w) =>
+        /L'entrée de fin ne prend plus que next/.test(w)
+      ),
+      JSON.stringify(seq.warnings)
     );
-});
-
-// @req REQ-186
-test("the closing chunks must say the search sentence for the ending's name", () => {
-  assert.throws(
-    () => demo({ edit: (input) => (input.ending.search = "Haute-Volta") }),
-    /Cherchez Haute-Volta sur EthniAfrica,/
-  );
+  }
+  const none = demo({ edit: (input) => delete input.ending });
+  assert.deepEqual(none.ending, {});
 });
 
 // The length and reading-speed warnings; the series 1 demonstration has no

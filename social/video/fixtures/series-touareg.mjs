@@ -6,7 +6,7 @@
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { CARDS, signatureChunks, writeSyntheticVoice } from "./series-pays.mjs";
+import { CARDS, closingChunks, writeSyntheticVoice } from "./series-pays.mjs";
 
 const SOURCE =
   "fiche EthniAfrica Touareg ; aires approximatives d'après Salem Chaker (1986), Natural Earth et Glottolog 5.3";
@@ -133,12 +133,8 @@ export const TOUAREG_SCRIPT = [
   },
   {
     card: "serie-nom-recu-08",
-    chunks: [
-      // 1.6.0: the voice says the signature line before the search sentence.
-      ...signatureChunks(),
-      { text: "Cherchez Touareg sur EthniAfrica,", duration: 2.8 },
-      { text: "lien en profil.", duration: 1.4 },
-    ],
+    // 1.10.0: the voice says the closing line and the invitation.
+    chunks: closingChunks(),
   },
 ];
 
@@ -159,7 +155,7 @@ export function touaregDemo(dir, { edit = () => {}, script = (b) => b } = {}) {
       card: beat.card,
       chunks: beat.chunks.map(({ text }) => ({ text })),
     })),
-    ending: { search: "Touareg", pageOnline: true },
+    ending: {},
     voice: { audio: "voice.wav", words: "words.json" },
   };
 }

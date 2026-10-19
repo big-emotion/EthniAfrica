@@ -5,7 +5,7 @@
 // The texts are demonstration text: no claim here is a validated fact.
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { CARDS, signatureChunks, writeSyntheticVoice } from "./series-pays.mjs";
+import { CARDS, closingChunks, writeSyntheticVoice } from "./series-pays.mjs";
 
 const sample = JSON.parse(readFileSync(CARDS, "utf8"));
 const card = (id) => structuredClone(sample.cards.find((c) => c.id === id));
@@ -148,11 +148,7 @@ export const LONG_SCRIPT = [
   },
   {
     card: "serie-afrique-tout-07",
-    chunks: [
-      ...signatureChunks(),
-      { text: "Cherchez Afrique sur EthniAfrica,", duration: 2.8 },
-      { text: "lien en profil.", duration: 1.4 },
-    ],
+    chunks: closingChunks(),
   },
 ];
 export const LONG_CHAPTERS = [
@@ -183,7 +179,7 @@ export function longDemo(
         : { card: b.card, chunks: b.chunks.map(({ text }) => ({ text })) }
     ),
     reminder: "serie-afrique-tout-rappel",
-    ending: { search: "Afrique", pageOnline: true, next: "le pays des Noirs" },
+    ending: { next: "le pays des Noirs" },
     voice: { audio: "voice.wav", words: "words.json" },
   };
   edit(input);
