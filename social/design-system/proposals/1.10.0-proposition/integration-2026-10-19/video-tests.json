@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-19",
+  "design": "EthniAfrica Cartes 1.10.0-proposition",
+  "browser": "pinned Chromium 153.0.8010.12 (social/renderer/runtime.json)",
+  "runs": {
+    "test:social-video": "243 pass, 0 fail (the 1.10.0 checks in series.test, series-long.test, series.render.test, series-long.render.test and series-closing.render.test; on the 1.9.0 engine they failed)",
+    "test:social-video-acceptance (ETHNIAFRICA_VIDEO_ASSETS on the verified imagery)": "282 tests, 280 pass, 0 fail, 2 skipped (an areas mock-up comparison and an evidence writer, each behind its own variable)",
+    "test:social-renderer": "29 pass, 0 fail",
+    "test:social-production": "92 pass, 0 fail",
+    "test:social-clip": "32 pass, 0 fail",
+    "fidelity, 89 sample cards": "89 of 89 against design-system-1.10.0-accepted; the 79 cards that are not closing cards byte-identical with the 1.9.0 engine, alternative texts included"
+  },
+  "carousel": {
+    "what": "The ten closing cards rendered on the pinned browser against Claude Design's after boards (plein-ecran/cartes/*-n-1080.jpg, JPEG): share of pixels more than 16 levels apart and mean max-channel difference. Same text, line breaks and places; the residue is JPEG compression and the boards' Chromium 141.",
+    "cards": {
+      "seq-9": [0.674, 2.006],
+      "chr-5": [1.261, 2.19],
+      "seq-9-parchemin": [0.474, 1.906],
+      "serie-pays-07": [1.308, 2.19],
+      "serie-nom-recu-08": [0.648, 1.424],
+      "serie-nom-famille-07": [0.913, 2.206],
+      "serie-mots-07": [0.857, 1.887],
+      "serie-frontieres-07": [0.654, 2.073],
+      "serie-afrique-tout-07": [0.857, 2.065],
+      "serie-villes-06": [0.656, 2.09]
+    },
+    "lineTop": 760,
+    "lineLines": 2
+  },
+  "episode": {
+    "what": "The Burkina Faso episode (series 1, episode 19) from its archived 87 s cut: its sequence, cards and pictures, the cards' version moved to 1.10.0, and its voice voice-v16-final up to the closing card, then the four new lines voiced by social/video/voice.mjs (voice Paul K, eleven_multilingual_v2, seed 20261019), the first word where the old ending's first word was. Nothing in the episode folder was changed; the working copy is .local/research/social-production-2026-10-09/integration-1.10.0-bfa/.",
+    "length": "2536 frames, 84.5 s (87.0 s before)",
+    "endingVoice": {
+      "L’importance de": [77.397, 78.14],
+      "connaître nos noms.": [78.198, 79.58],
+      "Vous pouvez continuer la recherche": [79.88, 81.447],
+      "sur EthniAfrica, lien en profil.": [81.505, 84.013],
+      "spoken": "6.6 s, with the 0.3 s breath before the invitation"
+    },
+    "ending": {
+      "line": [318, 446],
+      "invitation": [474, 554],
+      "pill": [584, 658],
+      "next": [688, 728],
+      "credit": [1752, 1816],
+      "subtitledFrames": "0 of 219 from the closing card's first full frame (the 9 frames of the change into it still fade out the signed card's last subtitle, as before)"
+    },
+    "calm": {
+      "method": "the mean, over each zone (the text's extent grown by 16 px), of the standard deviation of L* in 9 × 9 px windows, on the card's first frame, the picture alone; after: the same on the picture blurred by 9 px",
+      "bfa-01 Tiébélé, opener": {
+        "measure": 11.33,
+        "applied": true,
+        "subtitles": [11.6, 2.44],
+        "foot": [11.05, 1.72]
+      },
+      "bfa-02 Bobo-Dioulasso": {
+        "measure": 5.28,
+        "applied": false,
+        "subtitles": [5.13, 1.21],
+        "foot": [5.42, 0.85]
+      },
+      "bfa-07 Tiébélé, ending": {
+        "measure": 11.49,
+        "applied": true,
+        "line": [11.9, 2.12],
+        "invitation": [12.05, 3.18],
+        "pill": [13.21, 3.18],
+        "next": [9.02, 3.16],
+        "ending-credit": [11.28, 1.65]
+      },
+      "boards": "Tiébélé's opener 12 and ending 11, brought to 2 to 3; Bobo-Dioulasso 5, no blur"
+    },
+    "frames": [
+      { "board": "add-ouv-apres.jpg", "frame": 209, "problems": [] },
+      { "board": "add-bobo-apres.jpg", "frame": 390, "problems": [] },
+      { "board": "fin-bfa.jpg", "frame": 2535, "problems": [] },
+      { "board": "add-fin-apres.jpg", "frame": 2535, "problems": [] }
+    ],
+    "differences": "fin-bfa.jpg was drawn before the addendum: it has no calm zones and the 22 px grey credit, where the engine draws both as accepted, as add-fin-apres.jpg does (so its credit also breaks at another word). Against the addendum's boards the engine's frames read the same: places, sizes, inks, line breaks and calm zones."
+  }
+}

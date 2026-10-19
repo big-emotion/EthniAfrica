@@ -25,8 +25,6 @@ import {
 import {
   loadSeriesVideo,
   seriesFrameCount,
-  searchSentence,
-  GENERAL_SENTENCE,
 } from "../../../../social/video/series.mjs";
 const TOOL_ROOT = fileURLToPath(new URL("../../../../", import.meta.url));
 const fail = (m) => {
@@ -312,16 +310,15 @@ function seriesScreenText(seq) {
       return Object.entries(value).flatMap(([k, v]) => strings(v, k));
     return [];
   };
-  const { signatureLine } = JSON.parse(
+  // Cartes 1.10.0: the ending prints the closing line and the fixed
+  // invitation, from the accepted design's constants.
+  const { signatureLine, invitation } = JSON.parse(
     readFileSync(join(TOOL_ROOT, "social/design-system/version.json"))
   );
-  const invitation = seq.ending.general
-    ? GENERAL_SENTENCE
-    : searchSentence(seq.ending.search);
   return seq.cards.flatMap((card, i) => [
     ...strings(card),
     ...seq.chunks.filter((c) => c.card === i && !c.hidden).map((c) => c.text),
-    ...(card.type === "closing" ? [signatureLine, invitation.join(" ")] : []),
+    ...(card.type === "closing" ? [signatureLine, invitation] : []),
   ]);
 }
 function seriesCredits(seq) {

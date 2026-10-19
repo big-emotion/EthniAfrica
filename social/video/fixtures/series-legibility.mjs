@@ -25,13 +25,16 @@ export function legibilityFrames(seq) {
   return [0, ...read, seq.frames - 1];
 }
 
-export function plainPictureDemo(dir, src) {
+// `change(deck)` edits the cards after their pictures are replaced (1.10.0:
+// a card's own `image.calm`, a longer title or foot).
+export function plainPictureDemo(dir, src, change = () => {}) {
   return seriesDemo(dir, {
     edit: (input) => {
       const deck = JSON.parse(readFileSync(CARDS, "utf8"));
       deck.cards = deck.cards.map((c) =>
         c.image ? { ...c, image: { src, ...PICTURE, focus: [0.5, 0.5] } } : c
       );
+      change(deck);
       writeFileSync(join(dir, "cards.json"), JSON.stringify(deck));
       input.cards = "cards.json";
     },

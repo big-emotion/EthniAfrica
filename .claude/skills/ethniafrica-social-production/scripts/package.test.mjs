@@ -610,8 +610,9 @@ test("a final series video package delivers the video, the words its cards and s
     "Florence Abena Dolphyne",
     "L'Afrique n'est pas un seul bloc.",
     "Le continent compte 54 pays,",
-    "Connaître nos noms, décoloniser leur emploi, nous nommer nous-mêmes.",
-    "Cherchez Afrique sur EthniAfrica, lien en profil.",
+    // 1.10.0: the closing line and the fixed invitation.
+    "L’importance de connaître nos noms.",
+    "Vous pouvez continuer la recherche sur EthniAfrica, lien en profil.",
     "le pays des Noirs",
   ])
     assert.ok(screen.includes(line), line);

@@ -1,7 +1,7 @@
 {
   "name": "ethniafrica",
   "private": true,
-  "version": "5.6.0",
+  "version": "5.7.1",
   "packageManager": "npm@10.8.2",
   "engines": {
     "node": "22.x"
@@ -82,7 +82,7 @@
     "social:check-design": "node social/renderer/fidelity.mjs",
     "test:social-renderer": "node --test social/renderer/*.test.mjs",
     "test:social-series-proposal": "node --test social/design-system/proposals/1.3.0-proposition/*.test.mjs",
-    "test:social-video": "node --test social/video/sequence.test.mjs social/video/chunks.test.mjs social/video/area-entries.test.mjs social/video/capture.test.mjs social/video/shoreline.test.mjs social/video/areas.test.mjs social/video/voiced.test.mjs social/video/voice.test.mjs social/video/series.test.mjs social/video/series-map.test.mjs social/video/series-sequence.test.mjs social/video/series-long.test.mjs social/video/series-documents.test.mjs social/video/series.render.test.mjs social/video/series-long.render.test.mjs social/video/series-documents.render.test.mjs social/video/series-legibility.render.test.mjs",
+    "test:social-video": "node --test social/video/sequence.test.mjs social/video/chunks.test.mjs social/video/area-entries.test.mjs social/video/capture.test.mjs social/video/shoreline.test.mjs social/video/areas.test.mjs social/video/voiced.test.mjs social/video/voice.test.mjs social/video/series.test.mjs social/video/series-map.test.mjs social/video/series-sequence.test.mjs social/video/series-long.test.mjs social/video/series-documents.test.mjs social/video/series.render.test.mjs social/video/series-long.render.test.mjs social/video/series-documents.render.test.mjs social/video/series-legibility.render.test.mjs social/video/series-closing.render.test.mjs",
     "test:social-video-acceptance": "node --test social/video/*.test.mjs",
     "social:package": "node .claude/skills/ethniafrica-social-production/scripts/package.mjs",
     "social:research": "node .claude/skills/ethniafrica-social-production/scripts/research.mjs",

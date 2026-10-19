@@ -81,11 +81,17 @@ cannot be located or the file cannot be read.
    source (the interview reels), **portrait** for a tall one (the « sauvage »
    reel). It writes `reel.mp4` (1080×1920, H.264/AAC), `sous-titres-<lang>.srt`,
    `cover.png` (when `thumbnail` is set) and a copy of `plan.json`. Every reel
-   ends on the project's signature line (Cartes 1.6.0, operator, 16 October
-   2026): the last picture held in silence for 3.6 s, the line where the
-   captions were. The reel is that much longer than its clips.
+   ends as the series video does (Cartes 1.10.0, operator, 19 October 2026):
+   the last picture held in silence for 5.3 s, with the closing line
+   « L’importance de / connaître nos noms. » and the invitation « Vous pouvez
+   continuer la recherche / sur EthniAfrica, lien en profil. » where the
+   captions were. The four lines come from
+   `social/design-system/version.json` (`signatureLines`, `invitationLines`),
+   in Fraunces 600 56/64 centred on y 1305 (y 1177 to 1433; the widest line
+   measures 911 px of the 960 px column). The reel is that much longer than
+   its clips.
 7. **Look**: at least four frames (start, a two-line caption, another
-   speaker or an overlay, and the ending with the signature line) and the
+   speaker or an overlay, and the ending with its four lines) and the
    cover. Check credit, watermark, the source's logo, an overlay fully
    covering its original, and no word cut at either end.
 8. **Captions for the networks**: `descriptions.md` following

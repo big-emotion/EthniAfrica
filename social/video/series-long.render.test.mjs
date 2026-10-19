@@ -101,13 +101,15 @@ test("1.7.0: the quoted person sits above the subtitles, bottom at y 1296", () =
 });
 
 // @req REQ-186
-test("1.7.0: the next episode under the pill, inside the ending block", () => {
+test("1.10.0: the next episode under the pill, the block ending at y 728", () => {
   const end = frames.at(-1);
   assert.match(flat(end.text), /Prochain épisode : le pays des Noirs/);
-  for (const b of end.boxes.filter(
+  const block = end.boxes.filter(
     (b) => b.kind === "ending" || b.kind === "pill"
-  ))
-    assert.ok(b.y + b.h <= 820.5, `${b.id}: ${b.y + b.h}`);
+  );
+  for (const b of block) assert.ok(b.y >= 317.5, `${b.id}: ${b.y}`);
+  const bottom = Math.max(...block.map((b) => b.y + b.h));
+  assert.ok(Math.abs(bottom - 728) <= 1, `the block ends at ${bottom}`);
 });
 
 // @req REQ-186

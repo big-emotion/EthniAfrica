@@ -12,7 +12,7 @@
 // the Speke page stands in for the « tribu » episode's documents.
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { CARDS, signatureChunks, writeSyntheticVoice } from "./series-pays.mjs";
+import { CARDS, closingChunks, writeSyntheticVoice } from "./series-pays.mjs";
 
 const sample = JSON.parse(readFileSync(CARDS, "utf8"));
 const card = (id) => structuredClone(sample.cards.find((c) => c.id === id));
@@ -111,15 +111,11 @@ export const DOCUMENT_SCRIPT = [
   },
   {
     card: "serie-mots-07",
-    chunks: [
-      ...signatureChunks(),
-      { text: "Cherchez barbare sur EthniAfrica,", duration: 2.8 },
-      { text: "lien en profil.", duration: 1.4 },
-    ],
+    chunks: closingChunks(),
   },
 ];
 
-function writeDemo(dir, cards, beats, ending) {
+function writeDemo(dir, cards, beats) {
   mkdirSync(dir, { recursive: true });
   writeFileSync(join(dir, "cards.json"), JSON.stringify(cards));
   writeSyntheticVoice(dir, beats);
@@ -131,7 +127,7 @@ function writeDemo(dir, cards, beats, ending) {
       card: b.card,
       chunks: b.chunks.map(({ text }) => ({ text })),
     })),
-    ending: { search: ending, pageOnline: true },
+    ending: {},
     voice: { audio: "voice.wav", words: "words.json" },
   };
 }
@@ -145,8 +141,7 @@ export function documentDemo(
   const input = writeDemo(
     dir,
     deck(documentDeck()),
-    script(structuredClone(DOCUMENT_SCRIPT)),
-    "barbare"
+    script(structuredClone(DOCUMENT_SCRIPT))
   );
   edit(input);
   return input;
@@ -299,11 +294,7 @@ export const TEACHING_SCRIPT = [
   },
   {
     card: "serie-nom-famille-07",
-    chunks: [
-      ...signatureChunks(),
-      { text: "Cherchez Yao sur EthniAfrica,", duration: 2.8 },
-      { text: "lien en profil.", duration: 1.4 },
-    ],
+    chunks: closingChunks(),
   },
 ];
 
@@ -314,8 +305,7 @@ export function teachingDemo(
   const input = writeDemo(
     dir,
     deck(teachingDeck()),
-    script(structuredClone(TEACHING_SCRIPT)),
-    "Yao"
+    script(structuredClone(TEACHING_SCRIPT))
   );
   edit(input);
   return input;
