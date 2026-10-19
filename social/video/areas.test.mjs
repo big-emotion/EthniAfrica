@@ -26,6 +26,199 @@ const PROPERTY_KEYS = [
   "source",
 ];
 
+// Towns of the Burkina Faso episode (its research's map-data/README.md, or
+// GeoNames centres rounded to 0.01°).
+const TOWN = {
+  ouagadougou: [-1.52, 12.37],
+  bobo: [-4.3, 11.18],
+  dori: [-0.04, 14.04],
+  djibo: [-1.63, 14.1],
+  ouahigouya: [-2.42, 13.58],
+  fada: [0.36, 12.06],
+  tenkodogo: [-0.37, 11.78],
+  gambaga: [-0.44, 10.53],
+  niani: [-8.38, 11.37],
+  gao: [-0.04, 16.27],
+  djenne: [-4.55, 13.9],
+  bamako: [-8.0, 12.65],
+  dakar: [-17.44, 14.69],
+  nouakchott: [-15.98, 18.08],
+  nema: [-7.25, 16.62],
+  kankan: [-9.3, 10.38],
+  bouake: [-5.03, 7.69],
+  parakou: [2.63, 9.34],
+  zinder: [8.99, 13.8],
+  say: [2.36, 13.1],
+};
+const BFA_BOX = { west: -6, east: 2.6, south: 9.2, north: 15.2 };
+const EPISODE_EXPECTED = {
+  "bfa-burkina-faso": {
+    kind: "certain",
+    category: "country",
+    box: BFA_BOX,
+    covers: [TOWN.ouagadougou, TOWN.bobo, TOWN.dori],
+    excludes: [TOWN.say, TOWN.bamako, TOWN.gambaga],
+  },
+  "bfa-haute-volta": {
+    kind: "certain",
+    category: "historical-name",
+    box: BFA_BOX,
+    covers: [TOWN.ouagadougou, TOWN.bobo, TOWN.dori],
+    excludes: [TOWN.say, TOWN.bamako],
+  },
+  "bfa-cercle-de-say": {
+    category: "historical-name",
+    box: { west: 0, east: 3.5, south: 11, north: 14.5 },
+    covers: [[1.9, 12.9]],
+    excludes: [TOWN.ouagadougou, TOWN.zinder],
+  },
+  "bfa-hv32-cote-divoire": {
+    category: "historical-name",
+    box: BFA_BOX,
+    covers: [TOWN.ouagadougou, TOWN.bobo],
+    excludes: [TOWN.dori, TOWN.ouahigouya, TOWN.fada],
+  },
+  "bfa-hv32-soudan": {
+    category: "historical-name",
+    box: BFA_BOX,
+    covers: [TOWN.ouahigouya],
+    excludes: [TOWN.ouagadougou, TOWN.dori],
+  },
+  "bfa-hv32-niger": {
+    category: "historical-name",
+    box: BFA_BOX,
+    covers: [TOWN.dori, TOWN.fada],
+    excludes: [TOWN.ouagadougou, TOWN.ouahigouya],
+  },
+  "bfa-mamprugu": {
+    category: "people",
+    box: { west: -2, east: 1, south: 9.5, north: 11.2 },
+    covers: [TOWN.gambaga],
+    excludes: [TOWN.ouagadougou],
+  },
+  "bfa-mossi-yatenga": {
+    category: "people",
+    box: { west: -3.6, east: -1.5, south: 12.8, north: 14.4 },
+    covers: [TOWN.ouahigouya],
+    excludes: [TOWN.ouagadougou],
+  },
+  "bfa-mossi-ouagadougou": {
+    category: "people",
+    box: { west: -2.8, east: -0.5, south: 11.2, north: 13.2 },
+    covers: [TOWN.ouagadougou],
+    excludes: [TOWN.ouahigouya, TOWN.tenkodogo],
+  },
+  "bfa-mossi-tenkodogo": {
+    category: "people",
+    box: { west: -1.2, east: 0.6, south: 11.0, north: 12.4 },
+    covers: [TOWN.tenkodogo],
+    excludes: [TOWN.ouagadougou],
+  },
+  "bfa-manden": {
+    category: "people",
+    box: { west: -10.5, east: -7, south: 10.5, north: 13.2 },
+    covers: [TOWN.niani],
+    excludes: [TOWN.bobo, TOWN.bamako],
+  },
+  "bfa-macina": {
+    category: "region",
+    box: { west: -6.5, east: -2.5, south: 13.3, north: 17.2 },
+    covers: [TOWN.djenne],
+    excludes: [TOWN.dori],
+  },
+  "bfa-liptako": {
+    category: "people",
+    box: { west: -1.5, east: 1.5, south: 13, north: 15.2 },
+    covers: [TOWN.dori],
+    excludes: [TOWN.djibo, TOWN.ouagadougou],
+  },
+  "bfa-jelgooji": {
+    category: "people",
+    box: { west: -2.5, east: -0.8, south: 13.5, north: 14.8 },
+    covers: [TOWN.djibo],
+    excludes: [TOWN.dori],
+  },
+  "bfa-songhay": {
+    category: "people",
+    box: { west: -4, east: 2.5, south: 13.8, north: 17.5 },
+    covers: [TOWN.gao],
+    excludes: [TOWN.ouagadougou],
+  },
+  "bfa-aof-senegal": {
+    kind: "certain",
+    category: "historical-name",
+    box: { west: -18, east: -11, south: 12, north: 17 },
+    covers: [[-15, 14.5]],
+    excludes: [TOWN.bamako],
+  },
+  "bfa-aof-mauritanie": {
+    kind: "certain",
+    category: "historical-name",
+    box: { west: -17.5, east: -4.5, south: 14.5, north: 27.5 },
+    covers: [[-12, 20]],
+    excludes: [TOWN.nema, TOWN.dakar],
+  },
+  "bfa-aof-hodh": {
+    category: "historical-name",
+    box: { west: -11.5, east: -5, south: 15, north: 21 },
+    covers: [TOWN.nema],
+    excludes: [TOWN.bamako],
+  },
+  "bfa-aof-soudan-francais": {
+    kind: "certain",
+    category: "historical-name",
+    box: { west: -12.5, east: 4.5, south: 10, north: 25.5 },
+    covers: [TOWN.bamako, TOWN.gao],
+    excludes: [TOWN.ouagadougou, TOWN.dakar],
+  },
+  "bfa-aof-guinee": {
+    kind: "certain",
+    category: "historical-name",
+    box: { west: -15.5, east: -7.5, south: 7, north: 13 },
+    covers: [TOWN.kankan],
+    excludes: [TOWN.bamako],
+  },
+  "bfa-aof-cote-divoire": {
+    kind: "certain",
+    category: "historical-name",
+    box: { west: -9, east: -2.4, south: 4, north: 11 },
+    covers: [TOWN.bouake],
+    excludes: [TOWN.bobo],
+  },
+  "bfa-aof-dahomey": {
+    kind: "certain",
+    category: "historical-name",
+    box: { west: 0.5, east: 4, south: 6, north: 12.5 },
+    covers: [TOWN.parakou],
+    excludes: [TOWN.zinder],
+  },
+  "bfa-aof-niger": {
+    kind: "certain",
+    category: "historical-name",
+    box: { west: 0, east: 16.2, south: 11.5, north: 23.6 },
+    covers: [TOWN.zinder],
+    excludes: [TOWN.ouagadougou, [1.9, 12.9]],
+  },
+  "bfa-langue-moore": {
+    category: "language",
+    box: { west: -3, east: 0.5, south: 11, north: 14 },
+    covers: [TOWN.ouagadougou],
+    excludes: [TOWN.bobo, TOWN.dori],
+  },
+  "bfa-langue-jula": {
+    category: "language",
+    box: { west: -5.5, east: -3, south: 10, north: 12.2 },
+    covers: [TOWN.bobo],
+    excludes: [TOWN.ouagadougou],
+  },
+  "bfa-langue-fulfulde": {
+    category: "language",
+    box: { west: -2, east: 1.5, south: 13.3, north: 15.2 },
+    covers: [TOWN.dori],
+    excludes: [TOWN.ouagadougou],
+  },
+};
+
 // Each area: its label category, a generous box it must stay inside, places
 // it must cover and places it must leave out. The boxes catch a leak (an
 // area spilling into Arabia or the ocean); the places catch a wrong rule.
@@ -156,6 +349,9 @@ const EXPECTED = {
       [-8, 21],
     ],
   },
+  // Series 1, episode 19, Burkina Faso (Cartes 1.11.0): the country from
+  // Natural Earth, the historical areas from the episode's pinned research.
+  ...EPISODE_EXPECTED,
 };
 
 const fileOf = (id) => new URL(`${id}.geojson`, OUTPUT_DIR);
@@ -346,7 +542,7 @@ for (const id of AREA_IDS) {
         typeof p[key] === "string" && p[key].trim().length > 0,
         `${id}: ${key} must be a non-empty string`
       );
-    assert.equal(p.kind, "approximate");
+    assert.equal(p.kind, expected.kind ?? "approximate");
     assert.equal(p.category, expected.category);
     assert.doesNotMatch(p.name, /[«»"]/, "no quotation marks in the label");
     assert.match(p.derivation, /social\/video\/areas\.mjs/);
