@@ -98,6 +98,29 @@ describe("Burkina Faso: the peoples and languages the name comes from", () => {
     expect(liptako.politicalCenters.join(" ")).toContain("Dori");
     citedWithTier(bfa, "Fülânîler");
   });
+
+  // The video says the region had « des sociétés sans roi » before the
+  // colony; the fiche called the Lobi, Dagara and Gurunsi « chefferies »,
+  // which its sources contradict.
+  // @req REQ-178
+  it("says, with who says it, that several peoples lived without a king, and no longer calls them chiefdoms", () => {
+    const { precolonial } = bfa.content.historicalNames;
+    expect(precolonial).toMatch(
+      /sans roi[^.]*Izard et Joseph Ki-Zerbo|Izard et Joseph Ki-Zerbo[^.]*sans roi/
+    );
+    expect(precolonial).toMatch(/Lobi[^.]*Fiéloux|Fiéloux[^.]*Lobi/);
+    expect(precolonial).not.toMatch(/chefferies bobo, lobi/);
+    expect(bfa.content.historicalFacts.precolonial).not.toMatch(
+      /chefferies gur \(Bobo, Gourounsi, Dagara, Lobi\)/
+    );
+    const gur = bfa.content.kingdoms.find((k: { dominantPeoples: string[] }) =>
+      k.dominantPeoples.includes("Lobi")
+    );
+    expect(gur.name).not.toBe("Chefferies Gur");
+    expect(gur.historicalRole).toMatch(/sans roi/);
+    citedWithTier(bfa, "Du Niger à la Volta");
+    citedWithTier(bfa, "Les sentiers de la nuit");
+  });
 });
 
 describe("Burkina Faso: the colony, its borders and its dissolution", () => {
