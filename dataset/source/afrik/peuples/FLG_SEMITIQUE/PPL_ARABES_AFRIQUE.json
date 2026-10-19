@@ -19,13 +19,14 @@
   "content": {
     "appellations": {
       "mainName": "Arabes d'Afrique",
-      "selfAppellation": "Al-Arab (العرب)",
+      "selfAppellation": "ʿArab",
       "exonyms": [
         "Arabes du Maghreb (désignation régionale)",
         "Maures (terme historique pour les Arabes et Berbères islamisés d'Afrique du Nord et d'Afrique de l'Ouest, notamment en Mauritanie)",
         "Shuwa (Arabes tchadiens et nigérians)",
         "Jallaba (Arabes commerçants du Soudan)",
-        "Somali Arab, Swahili Arab (Corne et côte est-africaine)"
+        "Somali Arab",
+        "Swahili Arab"
       ],
       "originOfExonyms": "Le terme Maure viendrait du latin Maurus (habitant de la Maurétanie antique) ; les Européens l'ont utilisé pour désigner l'ensemble des populations arabophones ou arabes d'Afrique du Nord et d'Espagne. En Mauritanie, Maure (Bidan) désigne les Arabes-Berbères arabophones. Jallaba désigne les commerçants arabes du Soudan. Le terme Shuwa (ou Chouwa) désigne les Arabes pasteurs du Tchad, du Cameroun et du Nigeria.",
       "whyProblematic": "La notion d'Arabes d'Afrique est une macro-catégorie regroupant des populations très diverses ayant en commun l'arabe comme langue et l'islam comme religion, mais dont les origines génétiques, les cultures et les histoires locales sont très différentes. Une grande partie des populations dites arabes d'Afrique du Nord sont en réalité de souche berbère ayant adopté la langue arabe et l'islam suite à l'islamisation (7e-11e siècles) et aux grandes migrations arabes (Banu Hilal, Banu Sulaym, 11e siècle).",
@@ -45,7 +46,8 @@
         "DJI",
         "SOM",
         "COM"
-      ]
+      ],
+      "spellingAliases": ["Al-Arab", "العرب"]
     },
     "ethnicities": [
       "Arabes du Maghreb : Banu Hilal et Banu Sulaym (11e siècle, installés en Tunisie, Algérie, Libye), Beni Hassan (Mauritanie, Sahara occidental, sud du Maroc), Ma'qil (Maroc, Algérie méridionale)",

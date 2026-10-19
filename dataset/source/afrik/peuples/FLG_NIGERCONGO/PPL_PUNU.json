@@ -7,11 +7,12 @@
   "content": {
     "appellations": {
       "mainName": "Punu",
-      "selfAppellation": "Bapunu / Bapounou",
+      "selfAppellation": "Bapunu",
       "exonyms": [
         "Punu (terme occidental issu de l'administration coloniale francaise du 19e siecle)",
         "Bapounou (variante orthographique francaise)",
-        "Sira / Ban Sira (denomination liee a la langue Yisira / Yipunu)",
+        "Sira",
+        "Ban Sira",
         "Ipunu (nom de la langue dans la denomination interne)"
       ],
       "originOfExonyms": "Le nom 'Punu' apparaît dans l'administration coloniale française du Gabon au XIXe siècle. Le premier contact documenté avec un Européen date de juin 1865. Sira ou Ban Sira renvoie à la langue Yipunu, aussi appelée Yisira, et rassemble des groupes proches, dont les Ghisir. Dans Bapunu, le début Ba- vient des langues bantoues et signifie 'peuple de'.",
@@ -20,7 +21,8 @@
       "linguisticFamily": "FLG_NIGERCONGO",
       "ethnoLinguisticGroup": "Bantou (Zone B, B.43, sous-groupe Shira-Punu)",
       "historicalRegion": "Bassin de la Ngounie et province de Nyanga au Gabon meridional ; departement du Niari en Republique du Congo. Centres historiques : Mouila, Ndende, Tchibanga (Gabon).",
-      "currentCountries": ["GAB", "COG"]
+      "currentCountries": ["GAB", "COG"],
+      "spellingAliases": ["Bapounou"]
     },
     "ethnicities": [
       "Bapunu proprement dits — groupe principal du sud du Gabon (provinces de Ngounie et Nyanga)",

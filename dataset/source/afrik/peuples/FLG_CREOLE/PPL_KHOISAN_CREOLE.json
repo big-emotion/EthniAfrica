@@ -7,10 +7,11 @@
   "content": {
     "appellations": {
       "mainName": "Khoisan Creole",
-      "selfAppellation": "Griqua, Baster, Rehobother selon le groupe",
+      "selfAppellation": null,
       "exonyms": [
         "Griqua (ZAF)",
-        "Rehoboth Basters ou Basters (NAM)",
+        "Rehoboth Basters",
+        "Basters",
         "Oorlam (terme historique pour les Khoekhoe christianises et afrikanophones du Cap)",
         "Cape Coloured (categorie administrative de l'apartheid, rejetee par certains)"
       ],

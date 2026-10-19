@@ -6,9 +6,10 @@
   "content": {
     "appellations": {
       "mainName": "Lulua",
-      "selfAppellation": "Bena-Lulua / Luluwa",
+      "selfAppellation": "Bena-Lulua",
       "exonyms": [
-        "Luba (Kasai) — variante Lulua",
+        "Luba",
+        "Lulua",
         "Lulua (terme geographique tire de la riviere Lulua)",
         "Luluwa (variante orthographique)",
         "Bena-Lulua (litteralement 'gens de la Lulua')",
@@ -19,7 +20,8 @@
       "linguisticFamily": "FLG_NIGERCONGO",
       "ethnoLinguisticGroup": "Bantou (Zone L, L31b — dialecte occidental du groupe luban)",
       "historicalRegion": "Vallee de la riviere Lulua, Kasai-Occidental (actuel Kasai-Central) — Province de Kananga, RDC",
-      "currentCountries": ["COD"]
+      "currentCountries": ["COD"],
+      "spellingAliases": ["Luluwa"]
     },
     "ethnicities": [
       "Bena-Lulua proprement dits — groupe central de la vallee de la Lulua (Kasai-Central)",

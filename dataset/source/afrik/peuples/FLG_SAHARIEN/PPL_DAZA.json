@@ -7,16 +7,17 @@
   "content": {
     "appellations": {
       "mainName": "Daza",
-      "selfAppellation": "Daza / Dazagra",
+      "selfAppellation": "Daza",
       "exonyms": [
-        "Gorane ou Gouran (terme arabe et francophone utilise au Tchad pour designer les Daza)",
+        "Gorane",
+        "Gouran",
         "Dazzaga (variante orthographique)",
         "Dazagara (autre variante)",
         "Dazagada (variante)"
       ],
       "originOfExonyms": "Les membres du groupe se nomment eux-mêmes Daza. Gorane ou Gouran est le nom arabe le plus répandu au Tchad pour les désigner ; l'administration tchadienne l'emploie aussi. Les Daza et les Teda forment ensemble le peuple Toubou, aussi écrit Tubu ou Tebu. Ce nom viendrait du vieux-tebu et signifierait gens des rochers, en référence aux montagnes du Tibesti.",
       "whyProblematic": "La confusion entre Toubou (terme generique englobant Teda et Daza) et Daza (sous-groupe specifique) est frequente dans la litterature. Le terme Gorane peut etre vecu comme reducteur car il efface la distinction entre Daza et Teda. Dans le contexte des guerres civiles tchadiennes, les affiliations ethniques Daza/Toubou ont ete instrumentalisees politiquement.",
-      "contemporaryUsage": "Daza est l'appellation propre du groupe. Gorane reste tres utilise au Tchad dans l'usage courant administratif et populaire. La distinction Teda/Daza est reconnue dans la recherche academique. Les Daza representent le sous-groupe numeriquement dominant des Toubou, concentre au sud et a l'est du massif du Tibesti, dans les regions de Borkou, Ennedi, Kanem et Bahr el-Ghazal.",
+      "contemporaryUsage": "Daza est l'appellation propre du groupe. Gorane reste tres utilise au Tchad dans l'usage courant administratif et populaire. La distinction Teda/Daza est reconnue dans la recherche academique. Les Daza representent le sous-groupe numeriquement dominant des Toubou, concentre au sud et a l'est du massif du Tibesti, dans les regions de Borkou, Ennedi, Kanem et Bahr el-Ghazal. Les sources rapportent aussi la forme Dazagra.",
       "linguisticFamily": "FLG_SAHARIEN",
       "ethnoLinguisticGroup": "Groupe saharien occidental, branche tebu (nilo-saharien); sous-groupe Daza (Dazaga) distinct du Tedaga (Teda)",
       "historicalRegion": "Region du Borkou (Faya-Largeau), desert du Djurab, nord du Kanem, Bahr el-Ghazal septentrional (Tchad central et nord), extensions au Niger oriental et en Libye meridionale",

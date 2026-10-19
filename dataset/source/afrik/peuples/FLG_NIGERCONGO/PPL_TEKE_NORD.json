@@ -7,7 +7,7 @@
   "content": {
     "appellations": {
       "mainName": "Teke du Nord",
-      "selfAppellation": "BaTeke (pluriel) / MuTeke (singulier)",
+      "selfAppellation": null,
       "exonyms": [
         "Northern Teke (anglais)",
         "Teke-Tege (désigne le sous-groupe et sa langue dans les sources linguistiques)",
@@ -131,12 +131,13 @@
     ]
   },
   "nameHistory": {
-    "summary": "Le nom Teke du Nord désigne un groupe teke du Congo et du Gabon, dont la langue est appelée latege, tege ou teke-tege. Ce groupe se nomme sans doute lui-même Tege, mais on ne le sait pas avec certitude, ni d'où viennent ses noms ; nous présentons plus bas ce que disent les sources que nous avons lues.",
+    "summary": "Le nom Teke du Nord désigne un groupe teke du Congo et du Gabon, dont la langue est appelée latege, tege ou teke-tege. Les sources consultées ne disent pas comment ce groupe se nomme lui-même ; nous présentons plus bas les noms qu'elles donnent et ce qu'elles en disent.",
+    "selfNameUnknown": true,
     "names": [
       {
         "nameText": "Tege",
         "nameStatus": "current",
-        "selfGiven": true,
+        "selfGiven": false,
         "languageOfOrigin": "teg",
         "namedBy": null,
         "shortLine": "Le nom de la langue, écrit tégé dans le titre d'un manuel de 1904.",

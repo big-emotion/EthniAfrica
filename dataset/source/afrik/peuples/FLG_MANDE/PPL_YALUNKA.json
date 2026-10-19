@@ -7,7 +7,7 @@
   "content": {
     "appellations": {
       "mainName": "Yalunka",
-      "selfAppellation": "Yalunka / Jalunga",
+      "selfAppellation": "Yalunka",
       "exonyms": [
         "Dialonke",
         "Djallonke",
@@ -24,7 +24,8 @@
       "linguisticFamily": "FLG_MANDE",
       "ethnoLinguisticGroup": "Mandingue (branche Mande du Niger-Congo)",
       "historicalRegion": "Fouta Djallon (Futa Jallon) : massif montagneux du centre de la Guinee, source des fleuves Gambie, Niger et Senegal",
-      "currentCountries": ["GIN", "SLE", "MLI", "SEN"]
+      "currentCountries": ["GIN", "SLE", "MLI", "SEN"],
+      "spellingAliases": ["Jalunga"]
     },
     "ethnicities": [
       "Solima Yalunka : groupe etabli dans le nord-est de la Sierra Leone, fonde la ville de Falaba au XIXe siecle",

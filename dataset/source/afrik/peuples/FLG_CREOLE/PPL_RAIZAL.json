@@ -12,12 +12,12 @@
   "content": {
     "appellations": {
       "mainName": "Raizales",
-      "selfAppellation": "Raizal (singulier), Raizales (pluriel) — auto-désignation ethnopolitique de la population afro-antillaise anglophone autochtone de l'archipel, de l'espagnol raíz (« racine »)",
+      "selfAppellation": "Raizal",
       "exonyms": ["Isleños"],
-      "spellingAliases": ["Raizal People"],
+      "spellingAliases": ["Raizal People", "Raizales"],
       "originOfExonyms": "« Isleño/a » (« insulaire ») est le terme générique employé en espagnol pour désigner tout habitant de l'archipel de San Andrés, Providencia et Santa Catalina, sans distinction ethnique ; le terme « Raizal » s'est imposé à partir des années 1990 pour affirmer l'autochtonie du groupe afro-antillais anglophone face à l'immigration continentale hispanophone croissante.",
       "whyProblematic": "Le terme générique « isleño » efface la spécificité ethnique, linguistique et religieuse (protestante et anglophone) des Raizales en les assimilant à l'ensemble de la population résidant sur l'archipel, y compris les migrants continentaux hispanophones et catholiques installés depuis les politiques de « colombianisation » engagées à partir de 1953.",
-      "contemporaryUsage": "« Raizal » est le terme officiellement reconnu depuis la Constitution colombienne de 1991, employé par le DANE dans ses recensements et revendiqué par les organisations politiques raizales, notamment l'Archipelago Movement for Ethnic Native Self-Determination (AMEN-SD).",
+      "contemporaryUsage": "« Raizal » est le terme officiellement reconnu depuis la Constitution colombienne de 1991, employé par le DANE dans ses recensements et revendiqué par les organisations politiques raizales, notamment l'Archipelago Movement for Ethnic Native Self-Determination (AMEN-SD). On dit Raizal au singulier et Raizales au pluriel ; le nom est une auto-désignation ethnopolitique de la population afro-antillaise anglophone autochtone de l'archipel. Il serait lié au mot espagnol raíz, qui signifie « racine ».",
       "peopleGroupId": null,
       "peopleGroupLabel": null
     },

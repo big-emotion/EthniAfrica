@@ -6,7 +6,7 @@
   "content": {
     "appellations": {
       "mainName": "Koorete",
-      "selfAppellation": "Koorete / Koreta",
+      "selfAppellation": "Koorete",
       "exonyms": [
         "Koore",
         "Amarro",
@@ -22,7 +22,8 @@
       "linguisticFamily": "FLG_OMOTIQUE",
       "ethnoLinguisticGroup": "Omotique central, sous-groupe Ometo oriental (East Ometo)",
       "historicalRegion": "Amaro Special Woreda, montagnes Amaro, est du lac Abaya, SNNPR, Ethiopie meridionale",
-      "currentCountries": ["ETH"]
+      "currentCountries": ["ETH"],
+      "spellingAliases": ["Koreta"]
     },
     "ethnicities": [
       "Koorese — groupe clan principal des Koore d'Amaro",

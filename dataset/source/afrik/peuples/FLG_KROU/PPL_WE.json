@@ -7,7 +7,7 @@
   "content": {
     "appellations": {
       "mainName": "We",
-      "selfAppellation": "We / Wee",
+      "selfAppellation": "We",
       "exonyms": [
         "Guere",
         "Guere",
@@ -25,7 +25,8 @@
       "linguisticFamily": "FLG_KROU",
       "ethnoLinguisticGroup": "Krou occidental (branche Wee)",
       "historicalRegion": "Ouest de la Cote d'Ivoire (regions Dix-Huit Montagnes et Moyen-Cavally) et est du Liberia (comtes de Grand Gedeh, Nimba, Sinoe)",
-      "currentCountries": ["CIV", "LBR"]
+      "currentCountries": ["CIV", "LBR"],
+      "spellingAliases": ["Wee"]
     },
     "ethnicities": [
       "We meridional (Guere) — CIV, region de Guiglo, Duekoe, Bangolo, Tai (We southern, code gxx)",

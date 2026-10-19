@@ -44,10 +44,10 @@ describe("PPL_FULA — the head and the result page write the self-name Fulɓe",
   const fula = read(join(AFRIK, FULA));
 
   // @req REQ-178
-  it("titles the fiche head with Fulɓe, and Pullo as written", () => {
+  it("titles the fiche head with the single self-name Fulɓe", () => {
     const hero = transformPeopleHero(asPeopleDetail(fula));
 
-    expect(hero.selfAppellation).toBe("Fulɓe (pluriel), Pullo (singulier)");
+    expect(hero.selfAppellation).toBe("Fulɓe");
   });
 
   // « Vous avez cherché peul. Ce peuple se nomme lui-même … »: the line reads

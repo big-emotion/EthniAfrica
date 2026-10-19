@@ -6,7 +6,8 @@
   "content": {
     "appellations": {
       "mainName": "Bassari",
-      "selfAppellation": "a-liyan (singulier), be-liyan (pluriel, signifiant ceux de la laterite)",
+      "selfAppellation": "a-liyan",
+      "spellingAliases": ["be-liyan"],
       "exonyms": [
         "Bassari",
         "Basari",
@@ -16,7 +17,7 @@
       ],
       "originOfExonyms": "Bassari est un nom donné au peuple de l'extérieur, probablement par des populations mandingues ou peules. Les administrateurs coloniaux l'ont employé et il a été repris en français. Les personnes concernées se nomment be-liyan, qui signifierait ceux de la latérite, en référence aux sols riches en fer de leur territoire dans le pays de Kédougou.",
       "whyProblematic": null,
-      "contemporaryUsage": "Le terme Bassari est utilise en français et en anglais. Au Senegal, les Bassari sont associes au Pays Bassari (region de Kedougou). En Guinee, ils habitent le groupe de villages appele Bokore (ceux du Kore, societe d'initiation).",
+      "contemporaryUsage": "Le terme Bassari est utilise en français et en anglais. Au Senegal, les Bassari sont associes au Pays Bassari (region de Kedougou). En Guinee, ils habitent le groupe de villages appele Bokore (ceux du Kore, societe d'initiation). Au singulier, les personnes se nomment a-liyan ; au pluriel, elles se nomment be-liyan, qui signifie « ceux de la latérite ».",
       "linguisticFamily": "FLG_NIGERCONGO",
       "ethnoLinguisticGroup": "Tenda (branche Fula-Tenda, famille Niger-Congo, sous-groupe Atlantique-Congo)",
       "historicalRegion": "Pays Bassari (liyan), region de Kedougou au Senegal et zone frontaliere Guinee-Senegal au sud-ouest de Kedougou",

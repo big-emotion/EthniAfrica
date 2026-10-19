@@ -7,13 +7,13 @@
   "content": {
     "appellations": {
       "mainName": "Dioula",
-      "selfAppellation": "Jula ou Dyula. Le mot jula désigne le marchand ; au pluriel, julaw. Julakan est le nom de la langue, le suffixe kan désignant en mandingue la langue et non les gens. Chikouna Cissé (2025), suivant Abdoulaye Bathily, attribue à Richard Jobson (1623, récit d'un voyage en Gambie) la première mention écrite du terme jula ; elle note aussi que les écrits d'Ibn Battuta, au XIVe siècle, servaient déjà à désigner la classe marchande mandingue, les Dioula, sans que nous ayons pu vérifier la forme du mot dans le texte arabe.",
+      "selfAppellation": "Jula",
       "exonyms": [
         "Dyula (graphie anglophone internationale)",
         "Jula (graphie phonologique adoptee par les linguistes)",
         "Juula",
-        "Wangara ou Wankara (terme utilisé en Afrique de l'Ouest anglophone, notamment au Ghana ; son rapport à Jula est débattu, voir originOfExonyms)",
-        "Diula, Djula, Doula, Dualas, Dyoula, Dyulanke (variantes orthographiques regionales)"
+        "Wangara",
+        "Wankara"
       ],
       "originOfExonyms": "Dioula est un nom commun mandingue qui voudrait dire commerçant ou marchand itinérant. Yaya Konaté (2016) rapporte que ses interlocuteurs, qui parlent plusieurs formes du mandingue en Côte d'Ivoire, traduisent jula par « commerçant ». Ce mot a aussi servi à nommer les communautés mandé musulmanes spécialisées dans le commerce à longue distance. Les sources ne s'accordent pas sur les liens entre Wangara et Jula. Fauvelle et Bazin, cités par Cissé (2025), présentent Wangara comme le nom d'un groupe du bord du Sahel. Au fil des siècles, ce nom aurait ensuite désigné des négociants installés dans toute l'Afrique de l'Ouest. Le sens de jula prolongerait aujourd'hui cette évolution. Lovejoy (1978) propose une autre lecture pour le Soudan central. Il distingue les Wangara des Jula et les décrit comme des communautés de commerçants liées à l'empire Songhaï, plutôt qu'aux réseaux mandé. Les Diola, ou Joola, du Sénégal et de Gambie sont un autre peuple, dont la langue appartient à la famille atlantique.",
       "whyProblematic": "La proximité des noms entraîne souvent une confusion entre les Dioula et les Diola, ou Joola, du Sénégal. Ces derniers parlent une langue atlantique et forment un peuple distinct des Dioula mandé. Le nom Dioula a plusieurs sens : il a désigné un métier, des commerçants musulmans et un peuple. Il a parfois été donné de l'extérieur à des communautés bambara ou mandingues. Une forme simplifiée du dioula sert aussi aux échanges entre personnes de langues différentes, bien au-delà des communautés dioula. Elle se distingue de la langue parlée dans les communautés d'origine.",
@@ -21,7 +21,15 @@
       "linguisticFamily": "FLG_MANDE",
       "ethnoLinguisticGroup": "Mande du Nord, groupe mandingue (proche du bambara et du malinke, avec intercomprehension partielle)",
       "historicalRegion": "Zone sahelo-soudanienne et forestiere de l'Afrique de l'Ouest, de la region du Manden (actuel Mali/Guinee) jusqu'aux forets de Cote d'Ivoire ; centree sur les royaumes de Kong et de Bobo-Dioulasso, et sur la région de Ségou (Mali)",
-      "currentCountries": ["CIV", "BFA", "MLI", "GHA", "GNB"]
+      "currentCountries": ["CIV", "BFA", "MLI", "GHA", "GNB"],
+      "spellingAliases": [
+        "Diula",
+        "Djula",
+        "Doula",
+        "Dualas",
+        "Dyoula",
+        "Dyulanke"
+      ]
     },
     "ethnicities": [
       "Dioula de Kong (Cote d'Ivoire)",

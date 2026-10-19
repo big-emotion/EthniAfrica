@@ -7,15 +7,16 @@
   "content": {
     "appellations": {
       "mainName": "Mofu",
-      "selfAppellation": "Mofu / Mofu-Gudur (variante sud) / Mofu-Diamare (variante nord)",
+      "selfAppellation": "Ndu ma ngwa-ay",
       "exonyms": [
         "Matakam (ancien nom colonial inexact et méprisant, employé par l'administration française pour les peuples des montagnes Mandara et rejeté aujourd'hui)",
-        "Muffu / Muffo (premiere orthographe europeenne, carte de Moisel 1912-1913)",
+        "Muffu",
+        "Muffo",
         "Mofu-Sud (synonyme de Mofu-Gudur dans la litterature linguistique)"
       ],
       "originOfExonyms": "Les Peuls, ou Fulɓe, auraient créé le nom Matakam. Les administrateurs coloniaux français l'ont repris pour l'ensemble des habitants des montagnes Mandara, sans distinguer les Mafa des Mofu. Mofu, ou Muffu, apparaît pour la première fois sur la carte de Moisel de 1912-1913. Selon Vincent (1991), ce nom désignait d'abord tous les habitants des montagnes au nord de la rivière Tsanaga.",
       "whyProblematic": "Le terme Matakam est rejete car il confondait sous une meme appellation des groupes ethniques distincts (Mafa, Mofu, Mada) et portait une connotation pejorative liee a la domination fulbe et coloniale. Les Mofu eux-memes se divisent en sous-groupes (Mofu-Gudur, Mofu-Diamare) dont les identites distinctes sont importantes.",
-      "contemporaryUsage": "Le terme Mofu est aujourd'hui utilise dans les publications scientifiques et administratives camerounaises pour designer les groupes apparentes de la region du Mandara. Les locuteurs se designent selon leur massif d'origine (Gudur, Mokong, Douvangar, Douroum, Meri, Wazang). Le code ISO distingue Mofu-Nord (mfk) et Mofu-Gudur/Sud (mif).",
+      "contemporaryUsage": "Le terme Mofu est aujourd'hui utilise dans les publications scientifiques et administratives camerounaises pour designer les groupes apparentes de la region du Mandara. Les locuteurs se designent selon leur massif d'origine (Gudur, Mokong, Douvangar, Douroum, Meri, Wazang). Le code ISO distingue Mofu-Nord (mfk) et Mofu-Gudur/Sud (mif). Mofu-Gudur désigne la variante du sud et Mofu-Diamare celle du nord. Des sources européennes ont écrit Muffu ou Muffo en 1912-1913.",
       "linguisticFamily": "FLG_TCHADIQUE",
       "ethnoLinguisticGroup": "Tchadique Biu-Mandara (branche A, sous-groupe A.5)",
       "historicalRegion": "Massifs du Mandara meridional, region de l'Extreme-Nord du Cameroun (departements Mayo-Tsanaga et Diamare)",

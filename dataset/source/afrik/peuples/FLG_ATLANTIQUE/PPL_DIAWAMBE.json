@@ -12,11 +12,12 @@
   "content": {
     "appellations": {
       "mainName": "Diawambé (Jaawambe / Diokoramé)",
-      "selfAppellation": "Diawando (singulier), Diawambé (pluriel), écrit aussi Jaawando et Jaawambe en pulaar ; forme employée par des membres du groupe, nos sources n'en donnent pas d'autre",
+      "selfAppellation": "Diawambé",
       "exonyms": [
         "Diokoramé (forme des pays malinké et bambara ; écrit aussi Diogoramé)",
         "Diavandous (forme notée en 1846 au Bondou)",
-        "Halobé (kalowo au singulier), mot peul du Macina que l'on donne le plus souvent pour des Diawambé"
+        "Halobé",
+        "kalowo"
       ],
       "spellingAliases": [
         "Diawambe",
@@ -34,7 +35,7 @@
       ],
       "originOfExonyms": "Diawambé est la forme dont les Peuls de l'ouest nomment le groupe, Diawando au singulier. Diokoramé est celle des pays malinké et bambara ; un témoin de 2018 donne Diogoramè comme l'appellation des Soninkés. Trois lectures de Diokoramé, ou du mot voisin Djogorani, circulent sans qu'aucune soit tranchée : une décomposition en dion, captif, orôn, homme libre, et bé, il y a, y lit « homme libre parmi les captifs ou issu des captifs » ; une autre y voit l'emprunt soninké d'un mot mandé, dyogoro, « affranchi », littéralement « esclave libéré » ; une troisième lit « gens du Diagha ». Des chroniques arabes du Soudan parlent des Zaghrâni, mot rapproché de Diokoramé, mais leur identification avec les Diawambé n'est pas démontrée. Aucune étymologie de Diawambé n'est donnée par nos sources.",
       "whyProblematic": "Deux images se sont attachées au nom. Des auteurs européens du XXe siècle ont rangé les Diawambé parmi les « courtiers et tisserands » ou les « tisserands peuls » ; une explication y voit une confusion avec les Maabube, griots des Peuls et souvent tisserands, alors que la tradition d'honneur des Diawambé leur interdit le tissage et les autres métiers d'artisan. D'autre part, la lecture « homme libre parmi les captifs » de Diokoramé, comme des légendes rapportées d'origine humble, rattachent le groupe à une position sociale basse : on ne peut pas dire si ces récits reposent sur une réalité ancienne ou sur une fable née de la rivalité. Un membre du groupe rapporte l'inverse : Diawando évoque pour lui noblesse, dignité et générosité. « Caste » et « métis », mots de cette littérature extérieure, sont des classements posés du dehors.",
-      "contemporaryUsage": "Diawambé et Diawando, écrits aussi Jaawambe et Jaawando en pulaar, sont les formes employées aujourd'hui par une association peule, qui range les Jaawanbe parmi les nobles courtisans, et par un membre du groupe qui s'en réclame dans un texte de 2018. En 1936 déjà, un auteur issu d'une famille diawambé titrait une étude avec les deux noms, Diawandos et Diogorames. Diokoramé et Diogoramé restent les formes des voisins mandé ; aucune source trouvée ne dit si elles sont ressenties comme neutres, valorisantes ou blessantes.",
+      "contemporaryUsage": "Diawambé et Diawando, écrits aussi Jaawambe et Jaawando en pulaar, sont les formes employées aujourd'hui par une association peule, qui range les Jaawanbe parmi les nobles courtisans, et par un membre du groupe qui s'en réclame dans un texte de 2018. En 1936 déjà, un auteur issu d'une famille diawambé titrait une étude avec les deux noms, Diawandos et Diogorames. Diokoramé et Diogoramé restent les formes des voisins mandé ; aucune source trouvée ne dit si elles sont ressenties comme neutres, valorisantes ou blessantes. Au singulier, la forme indiquée est Diawando. Les formes pulaar Jaawambe et Jaawando sont également rapportées.",
       "peopleGroupId": null,
       "peopleGroupLabel": null
     },

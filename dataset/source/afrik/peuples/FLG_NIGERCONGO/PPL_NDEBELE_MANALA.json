@@ -7,7 +7,8 @@
   "content": {
     "appellations": {
       "mainName": "Ndebele du Sud (Manala)",
-      "selfAppellation": "AmaNdebele / abakwaManala",
+      "selfAppellation": "AmaNdebele",
+      "spellingAliases": ["abakwaManala"],
       "exonyms": [
         "Manala Ndebele",
         "Northern Transvaal Ndebele (sous l'apartheid)",

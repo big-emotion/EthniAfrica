@@ -7,18 +7,22 @@
   "content": {
     "appellations": {
       "mainName": "Tswana",
-      "selfAppellation": "Batswana (pl.), Motswana (sg.)",
+      "selfAppellation": "Batswana",
       "exonyms": [
         "Tswana (terme europeen)",
-        "Bechuana / Bechuanas (forme coloniale archaique)",
-        "Chuana, Coana, Cuana, Sechuana (variantes coloniales)",
+        "Bechuana (forme coloniale archaïque)",
+        "Bechuanas (forme coloniale archaïque)",
+        "Chuana (variante coloniale)",
+        "Coana (variante coloniale)",
+        "Cuana (variante coloniale)",
+        "Sechuana (variante coloniale)",
         "Beetjuana",
         "Chwana",
         "Secwana"
       ],
       "originOfExonyms": "Le terme Bechuana fut utilise par les colonisateurs britanniques, donnant son nom au Bechuanaland (actuel Botswana). Setswana designe la langue, Batswana le peuple.",
       "whyProblematic": "Le terme Batswana designe aussi tous les citoyens du Botswana, independamment de leur ethnicite. Il convient de distinguer les Tswana ethniques des citoyens botswanais au sens civique.",
-      "contemporaryUsage": "Batswana est l'autodesignation ethnique courante. En Afrique du Sud, les sous-groupes s'identifient souvent par leur clan (Bakgatla, Barolong, Bafokeng, etc.).",
+      "contemporaryUsage": "Batswana est l'autodesignation ethnique courante. En Afrique du Sud, les sous-groupes s'identifient souvent par leur clan (Bakgatla, Barolong, Bafokeng, etc.). Au singulier, on dit Motswana.",
       "linguisticFamily": "FLG_BANTU",
       "ethnoLinguisticGroup": "Bantous de la zone S (Sotho-Tswana), groupe Sotho meridional",
       "historicalRegion": "Plateau du Kalahari, bassin du Vaal, hauts plateaux d'Afrique australe (Botswana, Afrique du Sud septentrional, Namibie orientale)",

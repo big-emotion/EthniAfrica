@@ -7,7 +7,7 @@
   "content": {
     "appellations": {
       "mainName": "Lomwe",
-      "selfAppellation": "Alomwe / M'Lomwe",
+      "selfAppellation": "Alomwe",
       "exonyms": [
         "Nguru (terme employe par certains voisins, surtout dans la litterature coloniale)",
         "Ngulu (variante orthographique)",
@@ -19,7 +19,8 @@
       "linguisticFamily": "FLG_NIGERCONGO",
       "ethnoLinguisticGroup": "Bantou (Zone P, sous-groupe Makhuwa-Lomwe)",
       "historicalRegion": "Province de Zambezia et de Nampula (Mozambique) ; districts du sud du Malawi (Mulanje, Phalombe, Thyolo, Chiradzulu, Zomba)",
-      "currentCountries": ["MOZ", "MWI"]
+      "currentCountries": ["MOZ", "MWI"],
+      "spellingAliases": ["M'Lomwe"]
     },
     "ethnicities": [
       "Lomwe du Mozambique (Elomwe) — etablis dans la province de Zambezia et les districts du sud de Nampula",

@@ -7,7 +7,7 @@
   "content": {
     "appellations": {
       "mainName": "Swahili d'Oman (Zanzibari Omanis)",
-      "selfAppellation": "Waswahili / Zanzibari",
+      "selfAppellation": null,
       "exonyms": [
         "Swahili Omanis",
         "Omani de retour (Back-from-Africa)",
@@ -132,12 +132,13 @@
     ]
   },
   "nameHistory": {
-    "summary": "Le nom Zanzibari désigne en Oman des familles d'origine omanaise qui ont vécu à Zanzibar et sur la côte d'Afrique de l'Est, puis sont revenues en Oman, surtout après 1964. On les appelle aussi Swahili. On ne sait pas avec certitude depuis quand ces noms servent en Oman, ni d'où ils viennent dans cet usage.",
+    "summary": "Le nom Zanzibari désigne en Oman des familles d'origine omanaise qui ont vécu à Zanzibar et sur la côte d'Afrique de l'Est, puis sont revenues en Oman, surtout après 1964. On les appelle aussi Swahili. L'article consulté emploie ces noms pour les désigner, mais ne dit pas comment elles se nomment elles-mêmes. On ne sait pas avec certitude depuis quand ces noms servent en Oman, ni d'où ils viennent dans cet usage.",
+    "selfNameUnknown": true,
     "names": [
       {
         "nameText": "Zanzibari",
         "nameStatus": "current",
-        "selfGiven": true,
+        "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
         "shortLine": "Le nom des familles omanaises revenues de Zanzibar et de la côte d'Afrique de l'Est.",

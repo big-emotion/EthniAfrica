@@ -6,13 +6,15 @@
   "content": {
     "appellations": {
       "mainName": "Bemba",
-      "selfAppellation": "Aɓemba (sg. Uɓemba ou Muɓemba)",
+      "selfAppellation": "Aɓemba",
       "exonyms": [
-        "Wemba (forme ancienne), Chibemba, Ichibemba (designe aussi la langue)"
+        "Wemba (forme ancienne)",
+        "Chibemba",
+        "Ichibemba (désigne aussi la langue)"
       ],
       "originOfExonyms": "Le terme Bemba dériverait du mot chibemba UluBemba ou Lubemba, qui désigne le territoire ancestral autour de Kasama (Zambie du Nord). Le nom Chitimukulu (grand Chiti) viendrait du premier dirigeant historique Chiti Muluba, qui aurait renommé son royaume en son honneur. Le terme Pemba existe en Luba (langue d'origine) avec une signification similaire.",
       "whyProblematic": null,
-      "contemporaryUsage": "Aɓemba est le nom officiel employé par le peuple lui-même. Bemba est utilisé en anglais et dans les travaux de recherche. IchiBemba ou Chibemba désigne la langue.",
+      "contemporaryUsage": "Aɓemba est le nom officiel employé par le peuple lui-même. Bemba est utilisé en anglais et dans les travaux de recherche. IchiBemba ou Chibemba désigne la langue. Au singulier, les formes indiquées sont Uɓemba et Muɓemba.",
       "linguisticFamily": "FLG_BANTU",
       "ethnoLinguisticGroup": "Bantous d'Afrique centrale-orientale (groupe M, zone M.42 selon la classification de Guthrie)",
       "historicalRegion": "Nord de la Zambie (Lubemba / UluBemba) — provinces du Nord, du Luapula, de Muchinga et du Centre-nord",

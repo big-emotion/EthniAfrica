@@ -306,7 +306,7 @@
   "content": {
     "appellations": {
       "mainName": "Chleuh",
-      "selfAppellation": "Išelḥiyen (Ichelhiyen)",
+      "selfAppellation": "Išelḥiyen",
       "exonyms": [
         "Chleuhs",
         "Shluh",
@@ -321,7 +321,8 @@
       "linguisticFamily": "FLG_BERBERE",
       "ethnoLinguisticGroup": "Berbere meridional (branche atlasique meridionale / tachelhit)",
       "historicalRegion": "Sud-Ouest marocain : Haut Atlas occidental, Anti-Atlas et plaine du Souss (regions de Souss-Massa, Guelmim-Oued Noun, parties du Haut Atlas)",
-      "currentCountries": ["MAR"]
+      "currentCountries": ["MAR"],
+      "spellingAliases": ["Ichelhiyen"]
     },
     "ethnicities": [
       "Masmuda (confederation historique dominante du Haut Atlas et du Souss)",

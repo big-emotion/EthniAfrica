@@ -60,7 +60,7 @@ export const READER_QUERIES: ReaderQuery[] = [
   {
     typed: "pigmée",
     problem: "variant spelling of Pygmée",
-    outcome: "widened",
+    outcome: "hit",
     answered: true,
   },
   {
@@ -73,7 +73,7 @@ export const READER_QUERIES: ReaderQuery[] = [
   {
     typed: "pigme",
     problem: "variant spelling, truncated",
-    outcome: "widened",
+    outcome: "hit",
     answered: true,
   },
   {
@@ -98,8 +98,8 @@ export const READER_QUERIES: ReaderQuery[] = [
     outcome: "hit",
   },
   { typed: "adjoukoi", problem: "typo of Adioukrou", outcome: "neighbour" },
-  { typed: "adjoukr", problem: "typo, partial", outcome: "widened" },
-  { typed: "adjoukrou", problem: "spelling of Adioukrou", outcome: "widened" },
+  { typed: "adjoukr", problem: "typo, partial", outcome: "hit" },
+  { typed: "adjoukrou", problem: "spelling of Adioukrou", outcome: "hit" },
 
   // Questions and punctuation
   {

@@ -8,8 +8,8 @@
  * one place so the SQL view over the column only unpacks it and never
  * re-derives a name type or an imposition.
  *
- * The block is the source of truth: a derived name whose (name, type) pair the
- * block already tells is left out, as the readers did with name_records rows.
+ * The block is the source of truth: a derived name whose spelling the block
+ * already tells is left out, as the readers did with name_records rows.
  */
 
 import { nameRecordsFromHistory } from "@/lib/afrik/nameHistoryRecords";
@@ -76,8 +76,8 @@ function ficheSources(sources: FicheSource[] | undefined): FicheSource[] {
   return [...byTitle.values()].sort((a, b) => a.title.localeCompare(b.title));
 }
 
-function pairKey(nameText: string, nameType: string): string {
-  return `${nameType}\u0000${nameText}`;
+function nameKey(nameText: string): string {
+  return nameText.toLocaleLowerCase("fr");
 }
 
 // @req REQ-196
@@ -108,22 +108,46 @@ export function peopleNameIndex(
   }));
 
   const appellations = people.content?.appellations;
-  const { entries: derivedNames, rejected } = deriveAppellations({
+  const { entries: declaredNames, rejected } = deriveAppellations({
     selfAppellation: appellations?.selfAppellation,
-    exonyms: appellations?.exonyms,
   });
+  const aliasResults = (appellations?.spellingAliases ?? []).map((alias) =>
+    deriveAppellations({ selfAppellation: alias })
+  );
+  // Keep aliases before exonyms so a name first reached through a slash
+  // variant retains its historical_spelling type after it leaves that field.
+  const { entries: exonymNames, rejected: rejectedExonyms } =
+    deriveAppellations({ exonyms: appellations?.exonyms });
+  let nextSortRank = declaredNames.length;
+  const derivedNames = [
+    ...declaredNames,
+    ...aliasResults.flatMap(({ entries }) =>
+      entries.map((entry) => ({
+        ...entry,
+        nameType: "historical_spelling" as const,
+        sortRank: nextSortRank++,
+      }))
+    ),
+    ...exonymNames,
+  ];
+  const allRejected = [
+    ...rejected,
+    ...aliasResults.flatMap(({ rejected: aliasRejected }) => aliasRejected),
+    ...rejectedExonyms,
+  ];
 
   const sources = ficheSources(people.content?.sources);
   const unsourced =
     derivedNames.length > 0 && !sources.some((source) => mayCarryAName(source));
-  if (unsourced) return { entries: told, rejected, unsourced };
+  if (unsourced) return { entries: told, rejected: allRejected, unsourced };
 
-  const toldPairs = new Set(
-    told.map((entry) => pairKey(entry.nameText, entry.nameType))
-  );
-  const derived: PeopleNameIndexEntry[] = derivedNames
-    .filter((name) => !toldPairs.has(pairKey(name.nameText, name.nameType)))
-    .map((name) => ({
+  const seenNames = new Set(told.map((entry) => nameKey(entry.nameText)));
+  const derived: PeopleNameIndexEntry[] = [];
+  for (const name of derivedNames) {
+    const key = nameKey(name.nameText);
+    if (seenNames.has(key)) continue;
+    seenNames.add(key);
+    derived.push({
       nameText: name.nameText,
       nameType: name.nameType,
       origin: "appellation",
@@ -150,7 +174,12 @@ export function peopleNameIndex(
         tier: isSourceTier(source.tier) ? source.tier : null,
         ...(source.source_kind ? { source_kind: source.source_kind } : {}),
       })),
-    }));
+    });
+  }
 
-  return { entries: [...told, ...derived], rejected, unsourced: false };
+  return {
+    entries: [...told, ...derived],
+    rejected: allRejected,
+    unsourced: false,
+  };
 }

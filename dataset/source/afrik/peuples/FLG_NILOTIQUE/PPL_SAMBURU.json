@@ -6,7 +6,7 @@
   "content": {
     "appellations": {
       "mainName": "Samburu",
-      "selfAppellation": "Lokop (ou Loikop : lo = possession, nkop = terre, soit proprietaires de la terre)",
+      "selfAppellation": "Lokop",
       "exonyms": [
         "Samburu (terme d'origine incertaine, utilise par les colonisateurs et voisins)",
         "Burkeneji (nom alternatif)",
@@ -14,11 +14,12 @@
       ],
       "originOfExonyms": "Le peuple se nomme lui-même Lokop ou Loikop, qui signifierait propriétaires de la terre. L'origine de Samburu reste discutée : certaines explications le rapprochent d'un lieu, d'autres d'une description du groupe. Au sein de la communauté maa, ou maasai, les Samburu sont présentés comme le troisième groupe le plus nombreux, après les Kisonko/Isikirari de Tanzanie et les Purko du Kenya et de Tanzanie. Burkeneji apparaît parfois dans les présentations de leur population.",
       "whyProblematic": null,
-      "contemporaryUsage": "Samburu est le terme universellement utilise dans les contextes administratifs, academiques et touristiques kenyans. La plupart des Samburu se designent eux-memes indifferemment comme Samburu ou comme faisant partie de la communaute Maa (Maasai au sens large). Des tensions identitaires existent entre ceux qui insistent sur la distinction Samburu/Maasai et ceux qui revendiquent une identite Maa unifiee.",
+      "contemporaryUsage": "Samburu est le terme universellement utilise dans les contextes administratifs, academiques et touristiques kenyans. La plupart des Samburu se designent eux-memes indifferemment comme Samburu ou comme faisant partie de la communaute Maa (Maasai au sens large). Des tensions identitaires existent entre ceux qui insistent sur la distinction Samburu/Maasai et ceux qui revendiquent une identite Maa unifiee. La forme Loikop est aussi rapportée ; le sens du nom reste discuté.",
       "linguisticFamily": "FLG_NILOTIQUE",
       "ethnoLinguisticGroup": "Nilotique oriental (groupe Maa, Plains Nilotes)",
       "historicalRegion": "Centre-nord du Kenya (comte de Samburu); territoire ancestral Woto (au nord du lac Turkana, identifie en Ethiopie meridionale)",
-      "currentCountries": ["KEN"]
+      "currentCountries": ["KEN"],
+      "spellingAliases": ["Loikop"]
     },
     "ethnicities": [
       "Samburu proprement dits (Lokop) : pasteurs semi-nomades du comte de Samburu, eleveurs de bovins, chameaux et petits ruminants",

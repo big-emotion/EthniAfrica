@@ -120,7 +120,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 2702 -> 2701 the same day: OvaKuvale left the exonyms of PPL_MUCUVAL, whose self-name field now reads Kuvale.
     // 2701 -> 2703 the same day: PPL_MUCUVAL is now headed Kuvale and PPL_WIYANA Winye, so their former
     // headlines, Mucuval and Wiyana, moved to the exonyms, where a reader who searches them still finds the fiche.
-    value: 2703,
+    // 2703 -> 2745 on 2026-10-19: ETNI-2135 split packed exonym entries into
+    // one entry per name, preserving the names and their existing glosses.
+    value: 2745,
     method:
       "somme de content.appellations.exonyms.length sur les fiches de peuple",
     countedOn: COUNTED_ON,
@@ -153,7 +155,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 653 -> 654 on 2026-10-18: the Lingala fiche's hero now prints « Bato ya
     // mangala », the self-name its name history already told.
     // 654 -> 647 on 2026-10-18: seven of the eight people fiches folded or withdrawn after wave 24 declared one.
-    value: 647,
+    // 647 -> 625 on 2026-10-19: ETNI-2135 moved 22 descriptions of composite
+    // identities out of self-appellation; the remaining fields name the people.
+    value: 625,
     method:
       "fiches dont content.appellations.selfAppellation est renseigné et non vide",
     countedOn: COUNTED_ON,

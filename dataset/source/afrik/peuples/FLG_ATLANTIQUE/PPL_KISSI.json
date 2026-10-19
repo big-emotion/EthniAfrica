@@ -148,15 +148,16 @@
   "content": {
     "appellations": {
       "mainName": "Kissi",
-      "selfAppellation": "Kissi (gizi dans certaines variantes phonétiques locales)",
+      "selfAppellation": "Kissi",
       "exonyms": [
         "Kissi (terme utilisé par les Européens et les populations voisines)",
-        "Gizi / Gissi (variante orthographique utilisée en Sierra Leone et au Libéria)",
+        "Gizi (variante orthographique utilisée en Sierra Leone et au Libéria)",
+        "Gissi (variante orthographique utilisée en Sierra Leone et au Libéria)",
         "Kisi (orthographe alternative présente dans la littérature anglophone)"
       ],
       "originOfExonyms": "Le terme Kissi est d'usage exogène, adopté par les colonisateurs européens et répandu dans la littérature ethnographique. Le nom est repris tel quel par les populations voisines mande (Mandingue, Soussou) et est aujourd'hui accepté par les locuteurs eux-mêmes.",
       "whyProblematic": null,
-      "contemporaryUsage": "Kissi est le terme standard utilisé en Guinée, en Sierra Leone et au Libéria, dans les langues officielles (français et anglais) comme dans les usages locaux. Le terme ne porte pas de connotation péjorative.",
+      "contemporaryUsage": "Kissi est le terme standard utilisé en Guinée, en Sierra Leone et au Libéria, dans les langues officielles (français et anglais) comme dans les usages locaux. Le terme ne porte pas de connotation péjorative. Gizi est également employé dans certaines variantes phonétiques locales.",
       "linguisticFamily": "FLG_ATLANTIQUE",
       "ethnoLinguisticGroup": "Mel (branche de la famille Niger-Congo, distincte du groupe atlantique au sens strict)",
       "historicalRegion": "Guinée forestière (préfectures de Kissidougou, Guékédou, Macenta), nord-est Sierra Leone, nord-ouest Libéria",

@@ -7,11 +7,8 @@
   "content": {
     "appellations": {
       "mainName": "Kreda",
-      "selfAppellation": "Kreda (Kréda)",
-      "exonyms": [
-        "Kréda (orthographe française)",
-        "Gorane ou Gourane (nom arabe donné aux Daza, dont les Kreda font partie)"
-      ],
+      "selfAppellation": "Kara",
+      "exonyms": ["Kréda (orthographe française)", "Gorane", "Gourane"],
       "originOfExonyms": "Gorane ou Gourane est un nom arabe donné aux Daza et aux groupes qui les composent, dont les Kreda. Il est courant en arabe tchadien, mais les personnes concernées lui préfèrent leurs propres noms. Kréda est la forme française de Kreda, employée dans les publications coloniales et contemporaines.",
       "whyProblematic": "Les Kreda sont souvent subsumés sous l'appellation générique Daza ou Toubou dans les sources, ce qui rend difficile leur identification statistique distincte. La frontière entre Kreda et autres sous-groupes Daza est parfois floue dans la littérature.",
       "contemporaryUsage": "Le terme Kreda est utilisé au Tchad pour désigner ce sous-groupe daza du Bahr el Ghazal. Les Kreda ne se reconnaissent pas nécessairement dans l'appellation générique Toubou, préférant leur identité spécifique de Daza ou Kreda.",

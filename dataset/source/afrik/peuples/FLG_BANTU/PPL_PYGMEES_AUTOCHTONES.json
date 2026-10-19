@@ -7,7 +7,7 @@
   "content": {
     "appellations": {
       "mainName": "Peuples autochtones des forêts / Chasseurs-cueilleurs forestiers",
-      "selfAppellation": "Baka (se disent Baka ou Bayaka), Bagyeli (se disent Bagyeli ou Bakola), Bedzan (se disent Bedzan ou Medzan)",
+      "selfAppellation": null,
       "exonyms": [
         "Pygmée",
         "Pygmées",
@@ -18,7 +18,7 @@
       "spellingAliases": ["Pigmée", "Pigmées"],
       "originOfExonyms": "Le mot Pygmée vient du latin Pygmaei, lui-même tiré du grec pugmaios, « homme grand comme le poing », de pugmê, le poing, puis la coudée, selon le Dictionnaire de l'Académie française. Chez Homère, il désigne déjà un peuple de légende, haut d'une coudée, que les grues attaquent en migrant, selon l'anthropologue Serge Bahuchet. À la fin du XIXe siècle, des explorateurs l'ont donné à des peuples de petite taille d'Afrique centrale, dont les chasseurs-cueilleurs des forêts, selon le même dictionnaire.",
       "whyProblematic": "Le terme Pygmee est considere comme devalorisant et colonial. Il est percu comme un attribut physique reducteur et nie l'identite culturelle et ethnique propre a chaque groupe. Il a ete utilise historiquement pour justifier discrimination et exclusion sociale. Les organisations de droits des peuples autochtones (Forest Peoples Programme, IWGIA) recommandent d'utiliser les noms propres de chaque groupe : Baka, Bagyeli, Bedzan, Aka, Mbuti, etc.",
-      "contemporaryUsage": "Le terme Pygmee est progressivement abandonne au profit des auto-appellations specifiques. Au Cameroun, les termes officiels et militants privilegient Peuples autochtones ou Chasseurs-cueilleurs forestiers. Les organisations internationales (ONU, UNESCO, Greenpeace Afrique) utilisent Peuples autochtones.",
+      "contemporaryUsage": "Le terme Pygmee est progressivement abandonne au profit des auto-appellations specifiques. Au Cameroun, les termes officiels et militants privilegient Peuples autochtones ou Chasseurs-cueilleurs forestiers. Les organisations internationales (ONU, UNESCO, Greenpeace Afrique) utilisent Peuples autochtones. Les Baka se nomment aussi Bayaka, les Bagyeli Bakola et les Bedzan Medzan.",
       "linguisticFamily": "Bantou (langues baka et bagyeli), avec influences de langues du bassin du Congo",
       "ethnoLinguisticGroup": "Chasseurs-cueilleurs forestiers d'Afrique centrale ; trois groupes principaux au Cameroun : Baka, Bagyeli/Bakola, Bedzan/Medzan",
       "historicalRegion": "Forets tropicales du bassin du Congo : sud-est et est du Cameroun, nord du Gabon, nord de la Republique du Congo, sud-ouest de la Republique centrafricaine",

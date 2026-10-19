@@ -7,7 +7,7 @@
   "content": {
     "appellations": {
       "mainName": "Wolayta",
-      "selfAppellation": "Wolaytta / Wolaita",
+      "selfAppellation": "Wolaitta",
       "exonyms": [
         "Welamo (anciennement utilise par les Ethiopiens du nord, aujourd'hui considere derogratoire)",
         "Wolamo (appellation coloniale, desuete)",
@@ -19,7 +19,8 @@
       "linguisticFamily": "FLG_OMOTIQUE",
       "ethnoLinguisticGroup": "Groupe omotique nord (Ometo)",
       "historicalRegion": "Wolayta Zone, sud de l'Ethiopie; anciennement royaume de Wolayta (ou Damot), vaste territoire s'etendant jusqu'au centre et au nord de l'Ethiopie actuelle",
-      "currentCountries": ["ETH"]
+      "currentCountries": ["ETH"],
+      "spellingAliases": ["Wolaytta", "Wolaita"]
     },
     "ethnicities": [
       "Malla (premiere grande tribu royale, liee aux dynasties des rois Kawo)",
