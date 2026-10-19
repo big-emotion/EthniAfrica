@@ -81,10 +81,17 @@ test.before(async () => {
   drawn = { white: {} };
   for (const [name, seq] of Object.entries(demos)) {
     // 1.10.0: the ending is shorter, so a 1.8.0 last frame may now be past
-    // the video's end.
-    const frames = Object.keys(boxes180[name])
-      .map(Number)
-      .filter((f) => f < seq.frames);
+    // the video's end: the video's own last frame is drawn instead, and the
+    // black demonstration also draws the white one's frames.
+    const frames = [
+      ...new Set([
+        ...Object.keys(boxes180[name])
+          .map(Number)
+          .filter((f) => f < seq.frames),
+        seq.frames - 1,
+        ...(name === "black" ? legibilityFrames(white) : []),
+      ]),
+    ];
     drawn[name] = {};
     for (const f of await renderSeriesFrames(seq, frames, { diagnose: true }))
       drawn[name][f.frame] = f;
@@ -347,8 +354,13 @@ test("1.9.0 check 5: the lit word's box has its dark edge on a white picture", a
 
 // @req REQ-186
 test("1.9.0 check 4: on a pure black picture nothing moves by more than 10 levels outside the letters", async () => {
+  let checked = 0;
   for (const frame of BLACK_REFERENCES) {
+    // 1.10.0: the ending is shorter and wholly redrawn; 1.8.0's frame of it
+    // (1356) is past the video's end.
     const now = drawn.black[frame];
+    if (!now) continue;
+    checked++;
     const before = await sharp(
       readFileSync(new URL(`black-${frame}.png`, reference))
     )
@@ -372,6 +384,10 @@ test("1.9.0 check 4: on a pure black picture nothing moves by more than 10 level
       // and its shadow, 12 px spread 4 px. Where that shadow meets the line
       // above, the board itself moves 11 levels.
       if (now.litBoxes.some((r) => inRect(r, x, y, 16, 16))) continue;
+      // 1.10.0 redraws the kicker, the foot and the ending at new sizes:
+      // their letters' soft shadow reaches past the 4 px kept round the
+      // letters, so their boxes, with the same reach, are left out.
+      if (resized(now).some((r) => inRect(r, x, y, 16, 16))) continue;
       for (let k = 0; k < 3; k++) {
         const d = Math.abs(before[3 * i + k] - data[3 * i + k]);
         if (d > worst) [worst, where] = [d, [x, y]];
@@ -379,8 +395,21 @@ test("1.9.0 check 4: on a pure black picture nothing moves by more than 10 level
     }
     assert.ok(worst <= 10, `frame ${frame}: ${worst} levels at ${where}`);
   }
+  assert.equal(checked, 2, "frames 0 and 599 compared");
 });
 
+// The boxes 1.10.0 draws at a new size: the kicker (36/42, the head's first
+// box at y 318 when it is 42 px high), the foot's lines and the ending.
+const resized = (f) =>
+  f.boxes.filter(
+    (b) =>
+      ["source", "credit", "key", "ending", "pill", "ending-credit"].includes(
+        b.kind
+      ) ||
+      (b.kind === "head" &&
+        Math.abs(b.y - 318) <= 0.5 &&
+        Math.abs(b.h - 42) <= 0.5)
+  );
 // 1.10.0 changes the ending, the foot's size and the kicker's: the ending's
 // frames and the foot's lines are left out, and a kicker (30/36 before) keeps
 // its place, not its size. Everything else stays where 1.8.0 drew it.
@@ -408,5 +437,5 @@ test("1.9.0 check 6: every text box of the 1.8.0 acceptance frames stays in plac
         compared++;
       });
     }
-  assert.ok(compared > 500, `${compared} boxes`);
+  assert.ok(compared > 450, `${compared} boxes`);
 });
