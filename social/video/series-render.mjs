@@ -222,11 +222,22 @@ async function openSeriesRenderer(
       });
     });
     await page.goto("http://ethnia.test/");
+    // 1.10.0: each card's subtitle lines and the zoom of its first frame,
+    // for the calm zones measured on the picture alone.
+    const subtitles = seq.cards.map((_, i) =>
+      seq.chunks.filter((c) => c.card === i && !c.hidden).map((c) => c.lines)
+    );
+    const zooms = seq.cardStarts.map(
+      (start, i) =>
+        seriesFrameState(seq, start).layers.find((l) => l.card === i)?.zoom ?? 1
+    );
     const ready = await page.evaluate((setup) => window.setup(setup), {
       tokens,
       cards,
       logo: seq.logo,
       demo: seq.demo,
+      subtitles,
+      zooms,
       maps: maps && {
         bounds: maps.bounds,
         views: maps.views,
@@ -262,6 +273,7 @@ async function openSeriesRenderer(
       runtime: { playwright: runtime.playwright, chromium: browser.version() },
       designVersion: ready.version,
       maps: maps?.record ?? null,
+      calm: ready.calm,
     };
   } catch (error) {
     await browser.close();
@@ -343,6 +355,9 @@ export async function encodeSeriesVideo(
     audio,
     // 1.4.1: the verified imagery and countries under the map cards.
     ...(renderer.maps && { maps: renderer.maps }),
+    // 1.10.0: each card's small-text zones, their busyness before and after
+    // the blur, and whether the card is calm.
+    calm: renderer.calm,
     demo: !!seq.demo,
     ...(seq.warnings.length && { warnings: seq.warnings }),
     // A diagnostic export lists the frames whose text left its band.

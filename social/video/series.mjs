@@ -89,16 +89,9 @@ const fail = (message) => {
   throw new Error(message);
 };
 
-export const searchSentence = (name) => [
-  `Cherchez ${name} sur EthniAfrica,`,
-  "lien en profil.",
-];
-// 1.7.0 (series.md, « Vidéo longue et chapitres »): the general invitation
-// names nothing and leads to the search page.
-export const GENERAL_SENTENCE = [
-  "Vous aussi, cherchez votre nom sur EthniAfrica,",
-  "lien en profil.",
-];
+// 1.10.0: the voice's transcript gives ' where the cards print ’, and
+// spaces may be doubled or unbreakable; neither changes what is said.
+const sameWords = (t) => t.replace(/['’]/gu, "’").replace(/\s+/gu, " ").trim();
 // A video over 90 s is long: 3 to 7 chapters of 15 s at least, 2 to 4 min
 // recommended. Lengths only warn; a missing chapter refuses.
 const LONG = {
@@ -201,8 +194,7 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     ]);
   const first = entries[0].card;
   if (!first.series) fail("A series video's cards carry the series band");
-  // A silent card (chapter, next episode) shows the band and theme of the
-  // episode, and by default the image of the card after it: a run of one
+  // A silent card (a chapter card) shows the band and theme of the episode, and by default the image of the card after it: a run of one
   // image, where only the head changes.
   const silent = (card, next) => {
     card.series = structuredClone(first.series);
@@ -218,56 +210,37 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
   if (entries.some((e) => key(e.card) !== key(first)))
     fail("A series video shows one series, one episode and one theme");
 
-  // The « série » ending (operator, decision 5 of 13 October 2026): it asks
-  // for a search, so like ending A it promises a page that must exist. Since
-  // 1.7.0 it may instead invite every viewer to search their own name.
-  const ending = input.ending;
-  if (ending?.pageOnline !== true)
-    fail("The « série » ending promises a page: it needs pageOnline: true");
-  const general = ending.general === true;
-  if (!general && (typeof ending.search !== "string" || !ending.search.trim()))
-    fail("The « série » ending names what to search");
-  const expected = general ? GENERAL_SENTENCE : searchSentence(ending.search);
-  const closingChunks = entries.at(-1).chunks;
-  const closing = closingChunks.slice(-2).map((c) => c.text);
-  const spaces = (t) => t.replace(/\s+/gu, " ");
+  // Cartes 1.10.0: the ending is fixed. The voice says the closing line and
+  // the invitation, one chunk per printed line, the same lines the cards'
+  // bundle draws (version.json). Nothing on the ending names a search, so
+  // the input only says the next episode; the 1.7.0 fields load and warn.
+  const ending = input.ending ?? {};
+  const retired = ["search", "general", "pageOnline"].filter((k) =>
+    Object.hasOwn(ending, k)
+  );
+  const printed = [...version.signatureLines, ...version.invitationLines];
+  const said = entries.at(-1).chunks.map((c) => sameWords(c.text));
   if (
-    closing.length !== 2 ||
-    closing.some((t, i) => spaces(t) !== spaces(expected[i]))
-  )
-    fail(`The closing card's last two chunks are « ${expected.join(" ")} »`);
-  // Cartes 1.6.0, decision 1: the voice says the signature line, one printed
-  // line per chunk, before the search sentence. The line is the accepted
-  // design's (version.json), the same text the cards' bundle draws.
-  const signature = version.signatureLine.split(/(?<=,) /u);
-  const said = closingChunks.map((c) => spaces(c.text));
-  if (
-    said.length !== signature.length + 2 ||
-    signature.some((t, i) => said[i] !== t)
+    said.length !== printed.length ||
+    printed.some((t, i) => said[i] !== sameWords(t))
   )
     fail(
-      `La ligne de signature n'est pas dite mot pour mot : la carte de clôture dit « ${signature.join(" ")} », puis la phrase de recherche`
+      `La fin n'est pas dite mot pour mot : « ${printed.join(" / ")} », un morceau par ligne imprimée`
     );
-  // 1.7.0: the next episode, printed under the pill after the named
-  // invitation (one line, measured on « Afrique »); after the general one,
-  // which takes two lines, on a silent card of its own before the ending.
-  if (typeof ending.next === "string" && ending.next.trim()) {
-    const closingCard = entries.at(-1).card;
-    if (general) {
-      const own = { id: "prochain-episode", type: "next", title: ending.next };
-      silent(own, closingCard);
-      entries.splice(-1, 0, { card: own, chunks: [] });
-    } else closingCard.next = ending.next;
-  }
+  // « Prochain épisode » always sits under the pill (the 1.7.0 card of its
+  // own is retired).
+  const next =
+    typeof ending.next === "string" && ending.next.trim() ? ending.next : null;
+  if (next) entries.at(-1).card.next = next;
   const last = entries.length - 1;
   const cards = entries.map((e) => e.card);
   const texts = entries.flatMap((e) => e.chunks.map((c) => c.text));
   const chunks = entries.flatMap((entry, card) =>
     entry.chunks.map(({ text }) => {
-      // 1.6.0: the ending prints the line and the invitation itself, so the
-      // closing card's chunks are voiced but never shown as subtitles; the
-      // subtitle rules (3 to 6 words, 900 px, reading speed) do not apply
-      // to them. The general invitation's first chunk has 7 words (1.7.0).
+      // The ending prints the line and the invitation itself (1.6.0, 1.10.0),
+      // so the closing card's chunks are voiced but never shown as
+      // subtitles; the subtitle rules (3 to 6 words, 900 px, reading speed)
+      // do not apply to them.
       const hidden = card === last;
       const lines = hidden ? [] : chunkLines(text);
       for (const line of lines) {
@@ -289,15 +262,15 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     logo: deck.logo,
     cards,
     band: { ...first.series },
-    ending: {
-      ...(general ? { general: true } : { search: ending.search }),
-      pageOnline: true,
-      ...(ending.next && { next: ending.next }),
-    },
+    ending: { ...(next && { next }) },
     voice,
     chunks,
   };
   schedule(seq, voice.chunks);
+  if (retired.length)
+    seq.warnings.push(
+      `L'entrée de fin ne prend plus que next : ${retired.join(", ")} ignoré (1.10.0, la fin est fixe)`
+    );
   // 1.5.0: consecutive map cards of one `map.sequence` share one map.
   seq.mapSequence = planMapSequences(seq, IMAGERY[MAP_IMAGERY]);
   planLongVideo(seq, input);
@@ -345,8 +318,8 @@ function schedule(seq, words) {
   const fastChunks = [];
   chunks.forEach((chunk, k) => {
     const next = chunks[k + 1];
-    // 1.7.0: before a silent card (a chapter, the next episode) the last
-    // chunk leaves after its last word, so the silence shows no subtitle.
+    // 1.7.0: before a silent card (a chapter card) the last chunk leaves
+    // after its last word, so the silence shows no subtitle.
     const silenceAfter = next && next.card - chunk.card > 1;
     chunk.fullFrom = k ? chunk.appear : chunk.appear + VOICE.fade;
     chunk.fullTo =
@@ -371,7 +344,7 @@ function schedule(seq, words) {
   // A card is fully in when its first chunk appears; the cross-fade that
   // brings it in takes the 300 ms before. A silent card is fully in when the
   // last chunk before it has gone.
-  const isSilent = (c) => c.type === "chapter" || c.type === "next";
+  const isSilent = (c) => c.type === "chapter";
   seq.cardStarts = [];
   seq.cards.forEach((card, i) => {
     if (!i) return seq.cardStarts.push(0);
@@ -388,20 +361,19 @@ function schedule(seq, words) {
         `Card ${seq.cards[i].id} comes before the cross-fade into the card before it ends`
       );
   });
-  // The silent card holds at full opacity until the next card's change
+  // A chapter card holds at full opacity until the next card's change
   // begins: long enough to read its title at 21 characters a second plus
-  // 0.3 s, and a chapter card 1.2 s at least.
+  // 0.3 s, and 1.2 s at least.
   seq.cards.forEach((card, i) => {
     if (!isSilent(card)) return;
-    const title = card.type === "chapter" ? card.chapter.title : card.title;
     const need = Math.max(
-      card.type === "chapter" ? CHAPTER_HOLD : 0,
-      Math.ceil(([...title].length / READ_CPS + 0.3) * FPS - 1e-9)
+      CHAPTER_HOLD,
+      Math.ceil(([...card.chapter.title].length / READ_CPS + 0.3) * FPS - 1e-9)
     );
     const full = seq.cardStarts[i + 1] - CROSS_FADE - seq.cardStarts[i];
     if (full < need)
       fail(
-        `${card.type === "chapter" ? `Chapitre ${card.chapter.n}` : "Prochain épisode"} : le silence est trop court de ${Math.ceil(((need - full) * 1000) / FPS)} ms; the voice script lengthens the pause`
+        `Chapitre ${card.chapter.n} : le silence est trop court de ${Math.ceil(((need - full) * 1000) / FPS)} ms; the voice script lengthens the pause`
       );
   });
   const voiceEnd = Math.ceil((seq.voice.duration + VOICE.tail) * FPS - 1e-9);
@@ -456,7 +428,7 @@ function planLongVideo(seq, input) {
   let chapter = null;
   seq.cards.forEach((card, i) => {
     if (card.type === "chapter") chapter = card.chapter;
-    if (["opener", "closing", "chapter", "next"].includes(card.type)) return;
+    if (["opener", "closing", "chapter"].includes(card.type)) return;
     if (card.signed) card.videoKicker = "Nous pensons";
     else if (chapter && !card.date)
       card.videoKicker = `${chapter.n} · ${chapter.title}`;

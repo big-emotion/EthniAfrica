@@ -6,12 +6,15 @@ import { readFileSync } from "node:fs";
 // carries the project's signature line in place of the motto « L'Afrique à
 // travers ses noms ». The line is the accepted design's (version.json), split
 // after each comma as the cards print it; the page keeps no copy of its own.
+// Cartes 1.10.0 replaces it on series videos and carousels only; the
+// satellite video's ending has no accepted 1.10.0 design yet, so it keeps the
+// 1.6.0 line, which version.json records as retired.
 const SIGNATURE_LINES = JSON.parse(
   readFileSync(
     new URL("../design-system/version.json", import.meta.url),
     "utf8"
   )
-).signatureLine.split(/(?<=,) /u);
+).retired.signatureLine.split(/(?<=,) /u);
 
 // The ending darkens the base to the design's brightness 0.45 (board 10),
 // which the end frames apply where a hold applies 0.84: hence their ratio.

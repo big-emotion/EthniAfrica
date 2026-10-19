@@ -2,6 +2,8 @@
 
 ## Acceptance and integration status
 
+**1.10.0-proposition, 19 October 2026, accepted by the operator the same day, with the designer's recommendations.** A new ending for every series video and every carousel: « L’importance de connaître nos noms. » and the fixed invitation « Vous pouvez continuer la recherche sur EthniAfrica, lien en profil. » replace the signature line and the « Cherchez [nom] » invitation. See « Renderer integration of 1.10.0 ».
+
 **1.9.0-proposition, 16 October 2026, accepted by the operator the same day, with the designer's recommendations.** A second contour under every text on the image of the series video, in place of the 1.4.0 soft shadow, and a dark edge on the lit word. See « Renderer integration of 1.9.0 ».
 
 **1.8.0-proposition, 15 October 2026, accepted by the operator the same day, with the designer's recommendations.** The document card (the quoted passage framed sharp and underlined, the rest of the page out of focus) and three teaching cards: the name-making formula, the side-by-side forms and the week table. See « Renderer integration of 1.8.0 ».
@@ -519,6 +521,44 @@ A chapter card is a card of the sequence, `{ "type": "chapter", "chapter": 2, "i
 
 **Boards and prototype.** `Video` group `video-190-*` (Series, « Boards (1.9.0) »), drawn by a scratch copy of `handoff/video-board-full.html` patched for the five treatments (`?legi=A` to `E`, `?mask=1` and `?bare=1` for the measures); the patch, the measure script and the demonstration cards are kept with the design package. Since the acceptance `handoff/video-board-full.html` on this page carries the patch and draws the double outline by default.
 
+## Renderer integration of 1.10.0
+
+**Status: accepted by the operator on 19 October 2026, with the designer's recommendations** (Series, « The closing (1.10.0) », decisions 1 to 9). It comes after 1.9.0 (in `recette` since PR #1800). `social-series.md` already carries the new closing for videos, carousels, captions and bios (PR #1887, PR #1888).
+
+**Cards bundle** (`components/bundle.js`, `bundle.css`):
+
+1. `SIGNATURE_LINE` becomes `['L’importance de', 'connaître nos noms.']` (the closing line) and `INVITATION_LINES` `['Vous pouvez continuer la recherche', 'sur EthniAfrica, lien en profil.']`, both exported (`signatureLine`, `signatureLines`, `invitation`, `invitationLines`, `closingText`). `SIGLINE_Y` stays 760.
+2. A closing card draws the line, then the invitation (`.ec-invite`, each line `display: block; white-space: nowrap`, the closing body's style), then the pill. Its `body` is not printed; the layout report warns « Phrase propre de la carte de clôture non imprimée ».
+3. The line count check reads the constant (two lines, not three).
+4. `altText` ends with `closingText` and no longer reads a closing card's `body`.
+5. `version.json`: `signatureLine` « L’importance de connaître nos noms. », `signatureLines`, `invitation`, `invitationLines`; `VERSION` `1.10.0-proposition`. `tools/patch1100.py` (mode `bundle`) is the exact change.
+
+**Series video** (`social/video`):
+
+1. `series-page.mjs`: the closing block draws the line and the invitation from the bundle's constants (never the card's body), then the pill, then « Prochain épisode : … » when there is one. `tools/patch1100.py` (mode `board`) is the board's version.
+2. `series.mjs`: the closing card's chunks are the four printed lines, word for word, ' and ’ compared as one letter, spaces normalised (« La fin n'est pas dite mot pour mot » otherwise). The ending input becomes `{ next? }`: `search`, `general` and `pageOnline` are no longer needed; a sequence that still gives them loads with a warning. `searchSentence` and `GENERAL_SENTENCE` are retired; « Prochain épisode » always goes under the pill (the 1.7.0 card of its own is retired).
+3. The subtitle band stays empty for the whole ending, as in 1.6.0; the hold is unchanged (the voice's end plus 0.5 s, at least 2.5 s).
+
+**Addendum: small text on the image** (`series-page.mjs`, `series.mjs`):
+
+1. **Busyness.** For each block of small text (the subtitle lines with the lit box, the ending block's four parts, the foot, the ending's credit), the zone is the text's extent grown by 16 px. On the card's first frame, the picture alone, the engine computes the mean of the 9 × 9 px local standard deviation of L* over each zone, then the mean over the card's zones; at 10 or more every small-text zone of the card is calm.
+2. **The calm zone**: a copy of the card's picture, with the same placement and zoom, blurred by 9 px, clipped to the zone grown by a further 40 px and masked by two linear gradients (horizontal and vertical, intersected) that fade it over those 40 px; drawn above the picture and under the text, and faded with its card in the 300 ms change. `image.calm: false` on a card turns it off. The manifest lists each calm zone and its measure.
+3. **The kicker**: Nunito Sans 800 36/42, outline 5 px (r 3), `margin-bottom: 4px`.
+4. **The foot**: source and credit at Nunito Sans 700 26/32, outline 5 px; the credit in `on-image-ink` (on content cards and on the ending). `on-image-muted` stays for the label « NOM EMPLOYÉ », « sur N » and the attribution's role.
+
+**Checks** (tests first):
+
+1. Carousel: the line's top at y 760 within 0.5 px on every closing card; two lines; the invitation's two lines as the constant; no closing card's body printed; nothing overlapping; the alternative text ending with `closingText`.
+2. The ten closing cards of the sample change; the 79 others pixel-identical with their 1.9.0 references, alternative texts included.
+3. Video: the line's top at y 318, the block inside y 318 to 820 with « Prochain épisode » (728 on the board), the subtitle band empty on every frame of the ending.
+4. A closing card whose chunks are not the four lines refuses with the expected text; ' and ’ accepted alike.
+5. An ending input with `search` or `general` loads and warns; without `next` the block ends at the pill.
+6. Everything accepted before holds: bands, the 300 ms change, the double outline, the signed card before the ending.
+7. Calm zones: the Tiébélé opener and ending measure 10 or more and every small-text zone is blurred, each measuring 3.5 or less after; on Bobo-Dioulasso none is; a card with `image.calm: false` has none; nothing outside the zones grown by 40 px changes.
+8. The head of a three-line opener still ends at y 700 with the 36 px kicker; the foot with a two-line source and a two-line credit starts at y 1652 or lower in the frame.
+
+**Boards and prototype.** `Video` group `video-1100-*`, `Lecture` group `cloture-1100-*` (Series, « Boards (1.10.0) »), drawn by scratch copies of `components/bundle.js` and `handoff/video-board-full.html` patched as described here; the patch and the demonstration cards are kept with the design package. Since the acceptance `components/bundle.js`, `bundle.css` and `handoff/video-board-full.html` on this page carry the patch, without the board-only switches of the bundle; their renders are pixel-identical to the boards.
+
 ## Required assets
 
 - Fonts: `fonts/Anton-Regular.ttf`, `fonts/NunitoSans.ttf`, `fonts/NotoSans-Variable.ttf`, `fonts/Fraunces.ttf`, `fonts/NotoSansEthiopic-Bold.ttf`, all under the SIL Open Font License 1.1.
@@ -608,3 +648,9 @@ A chapter card is a card of the sequence, `{ "type": "chapter", "chapter": 2, "i
 
 - From the Burkina Faso episode (series 1, episode 19), relayed by the coordinator: the cream text on the image reads only by its dark outline, and the operator finds it hard to read on light or busy pictures. Propose, without reopening the full screen without shadow zones decided on 14 October 2026, a legibility treatment of the text itself (a wider or double outline, a tight drop shadow, or a veil limited to each line's box), measured on the lightest and darkest pictures, with its effect on the subtitles and the lit word, the series band and the foot; recommend one. Also check the 1.8.0 document card under it. Not blocking any episode.
 - Proposed and accepted on 16 October 2026, with the designer's recommendations on the two questions.
+
+## Commissioned on 19 October 2026 (1.10.0)
+
+- From the operator's decision of 19 October 2026 on the Burkina Faso episode (series 1, episode 19): every series video and every carousel ends with « L'importance de connaître nos noms. Vous pouvez continuer la recherche sur EthniAfrica, lien en profil. », printed, and spoken in the video, in place of the signature line and the invitation. Seven questions to the designer (the line, the invitation, the pill, the next episode, the voice and the subtitles, what remains of the signature line, the carousel closing card) and boards of the Burkina Faso ending, a light photograph, the signed card then the ending, an ending without a next episode, and the carousel closing cards of series 1, series 6 and outside a series in Nuit and Parchemin, at 430 px.
+- Addendum the same day: busy pictures, the kicker and the credit (brief, questions 8 to 10).
+- Proposed and accepted on 19 October 2026, with the designer's recommendations on the nine questions.

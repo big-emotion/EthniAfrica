@@ -196,7 +196,8 @@ function expectedText(c) {
   const values = [
     "kicker",
     "title",
-    "body",
+    // 1.10.0: a closing card prints the fixed invitation, never its body.
+    ...(c.type === "closing" ? [] : ["body"]),
     "note",
     "source",
     "credit",
@@ -639,16 +640,24 @@ export async function verifyOutput(options) {
           "Atlas spacing outside the accepted limits"
         );
     }
-    // 1.6.0: the accepted design records the line (version.json); the engine
-    // draws it from its own constant, so the two must agree, at y 760.
+    // 1.10.0: the accepted design records the closing line and the
+    // invitation (version.json); the engine draws them from its own
+    // constants, so the two must agree: the line on its printed lines at
+    // y 760, the invitation line for line, nothing overlapping, and the
+    // alternative text ending with both.
     if (card.fit.type === "closing") {
-      const line = current.version.signatureLine;
+      const { signatureLine, signatureLines, invitation, invitationLines } =
+        current.version;
       required(
-        card.fit.sigline?.text === line &&
-          card.fit.sigline.lines === 3 &&
+        card.fit.sigline?.text === signatureLine &&
+          card.fit.sigline.lines === signatureLines.length &&
           Math.abs(card.fit.sigline.top - 760) <= 0.5 &&
-          card.alt.endsWith(line),
-        "Closing card without the signature line in its place"
+          JSON.stringify(card.closing?.invitation) ===
+            JSON.stringify(invitationLines) &&
+          card.closing.wrapped === 0 &&
+          card.closing.overlaps?.length === 0 &&
+          card.alt.endsWith(`${signatureLine} ${invitation}`),
+        "Closing card without the closing line and invitation in their place"
       );
     }
     if (report.mode === "final")

@@ -67,7 +67,9 @@ html,body{margin:0;background:#000}
 .vf-band{position:absolute;left:60px;top:250px;font:800 32px/40px var(--font-text);letter-spacing:.02em;--sw:4px;white-space:nowrap;z-index:3}
 .vf-band .vf-sep{color:var(--oi-faint)} .vf-band .vf-ep{color:var(--oi-accent)}
 .vf-head{position:absolute;left:60px;width:960px;top:318px;display:flex;flex-direction:column}
-.vf-kick{font:800 30px/36px var(--font-text);letter-spacing:.02em;color:var(--oi-accent);--sw:4px;margin-bottom:10px}
+/* 1.10.0: the kicker at 36/42 in the accent ink, 4 px above the title, so the
+   head keeps its height. */
+.vf-kick{font:800 36px/42px var(--font-text);letter-spacing:.02em;color:var(--oi-accent);--sw:5px;margin-bottom:4px}
 .vf-title{font:400 88px/90px var(--font-display);letter-spacing:.005em;margin:0;text-wrap:balance;--sw:10px}
 .vf-title--xl{font-size:116px;line-height:112px;--sw:13px}
 .vf-date{font:400 176px/156px var(--font-display);letter-spacing:.01em;color:var(--oi-accent);margin:0;--sw:14px;white-space:nowrap}
@@ -78,6 +80,8 @@ html,body{margin:0;background:#000}
 .vf-sigline span{display:block;white-space:nowrap}
 .vf-sent{font:700 32px/40px var(--font-text);--sw:4px;margin-top:28px;max-width:900px;text-wrap:balance}
 .vf-sent p{margin:0}
+/* 1.10.0: the fixed invitation, two lines set without wrapping. */
+.vf-sent span{display:block;white-space:nowrap}
 /* 1.7.0: the long series video (series.md, « Vidéo longue et chapitres »). */
 .vf-chapnum{display:flex;align-items:baseline;gap:18px}
 .vf-chapnum b{font:400 176px/140px var(--font-display);color:var(--oi-accent);--sw:14px}
@@ -128,8 +132,14 @@ html,body{margin:0;background:#000}
 .vf-foot{position:absolute;left:60px;width:960px;bottom:134px;display:flex;flex-direction:column;gap:4px}
 .vf-key{display:flex;align-items:center;gap:14px;font:800 26px/32px var(--font-text);--sw:4px;margin-bottom:10px}
 .vf-key i{width:34px;height:24px;border-radius:3px;flex:none;box-shadow:0 0 0 2px var(--oi-stroke)}
-.vf-src{font:700 24px/30px var(--font-text);--sw:4px}
-.vf-cred{font:700 22px/28px var(--font-text);color:var(--oi-muted);--sw:4px}
+/* 1.10.0: the source and the credit at 26/32, the credit in the cream ink;
+   on-image-muted stays for the fixed labels. */
+.vf-src{font:700 26px/32px var(--font-text);--sw:5px}
+.vf-cred{font:700 26px/32px var(--font-text);color:var(--oi-ink);--sw:5px}
+/* 1.10.0: a calm zone, the card's picture blurred by 9 px under a block of
+   small text, faded out over its outer 40 px by two intersected gradients. */
+.vf-calm{position:absolute;overflow:hidden;pointer-events:none;-webkit-mask-composite:source-in;mask-composite:intersect}
+.vf-calm img{position:absolute;max-width:none;display:block;filter:blur(9px)}
 .vf-sign{display:flex;align-items:center;gap:14px}
 .vf-sign img{width:44px;height:44px;display:block;filter:drop-shadow(0 0 2px rgba(11,8,6,.95)) drop-shadow(0 1px 6px rgba(11,8,6,.6))}
 .vf-sign b{font:600 32px/38px var(--font-wordmark);--sw:4px}
@@ -200,20 +210,15 @@ function noBreak(root) {
   });
 }
 
-// 1.7.0: a chapter card or the next episode's own card: the head only, over
-// the image of the card after it, and its credit in the foot.
+// 1.7.0: a chapter card: the head only, over the image of the card after it,
+// and its credit in the foot.
 function silentParts(parts) {
   const { spec, layer } = parts;
   const head = el("div", "vf-head");
-  if (spec.type === "chapter") {
-    head.append(el("div", "vf-chapnum", '<b class="oi oi-l">' + spec.chapter.n + '</b><span class="oi">sur ' + spec.chapter.of + "</span>"));
-    const title = el("h2", "vf-title vf-title--chap oi oi-l", esc(fr(spec.chapter.title)));
-    title.dataset.kind = "chapter-title";
-    head.append(title);
-  } else {
-    head.append(el("div", "vf-kick oi", "Prochain épisode"));
-    head.append(el("h2", "vf-title oi oi-l", esc(fr(spec.title))));
-  }
+  head.append(el("div", "vf-chapnum", '<b class="oi oi-l">' + spec.chapter.n + '</b><span class="oi">sur ' + spec.chapter.of + "</span>"));
+  const title = el("h2", "vf-title vf-title--chap oi oi-l", esc(fr(spec.chapter.title)));
+  title.dataset.kind = "chapter-title";
+  head.append(title);
   layer.append(head);
   const foot = el("div", "vf-foot");
   if (spec.credit) {
@@ -227,7 +232,7 @@ function silentParts(parts) {
 }
 
 function buildParts(spec, view) {
-  const silent = spec.type === "chapter" || spec.type === "next";
+  const silent = spec.type === "chapter";
   const card = silent ? null : EthniCards.render(spec, { context: "video", resolve: resolveAsset, demo: false });
   const pick = (sel) => card.querySelector(sel);
   const layer = el("div", "vf-layer");
@@ -269,13 +274,16 @@ function buildParts(spec, view) {
   if (silent) return silentParts(parts);
   if (parts.closing) {
     const close = el("div", "vf-close");
-    // 1.6.0: the signature line where the slogan was, from the cards' own
-    // constant: the video keeps no copy of the line.
+    // 1.10.0: the closing line and the fixed invitation, from the cards' own
+    // constants, never the card's body: the video keeps no copy of either.
     const line = el("div", "vf-sigline oi oi-l");
     line.setAttribute("lang", "fr");
     EthniCards.signatureLines.forEach((t) => line.append(el("span", "", esc(t))));
     close.append(line);
-    if (pick(".ec-body")) close.append(el("div", "vf-sent oi", pick(".ec-body").innerHTML));
+    const invitation = el("div", "vf-sent oi");
+    invitation.setAttribute("lang", "fr");
+    EthniCards.invitationLines.forEach((t) => invitation.append(el("span", "", esc(t))));
+    close.append(invitation);
     const pill = pick(".ec-cta-pill");
     close.append(el("div", "vf-pill oi", esc((pill ? pill.textContent : "ethniafrica.com").toUpperCase())));
     // 1.7.0: the next episode, printed 30 px under the pill, on one line.
@@ -736,6 +744,150 @@ function ringText(frame) {
   }
 }
 
+// 1.10.0, busy pictures (series.md, « Addendum »): under each block of small
+// text (the subtitle lines with the lit box, the ending's four parts, the
+// foot, the ending's credit) the zone is the text's extent grown by 16 px.
+// On the card's first frame, the picture alone, the busyness of a zone is
+// the mean of the 9 × 9 px local standard deviation of L*; when the mean of
+// the card's zones is 10 or more, every zone of the card is calm: a copy of
+// the picture blurred by 9 px, clipped to the zone grown by 40 px and faded
+// over those 40 px, above the picture and under the text.
+const CALM = { pad: 16, feather: 40, blur: 9, window: 9, busy: 10 };
+const LSTAR = (() => {
+  const t = new Float64Array(256);
+  for (let v = 0; v < 256; v++) {
+    const c = v / 255;
+    t[v] = c <= 0.04045 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4);
+  }
+  return t;
+})();
+// Local standard deviation of L* over a w × h window around each pixel, from
+// summed-area tables; the window is cut at the frame's edge.
+function localContrast(canvas) {
+  const W = 1080, H = 1920, px = canvas.getContext("2d").getImageData(0, 0, W, H).data;
+  const S = new Float64Array((W + 1) * (H + 1)), S2 = new Float64Array((W + 1) * (H + 1));
+  for (let y = 0; y < H; y++) {
+    let row = 0, row2 = 0;
+    for (let x = 0; x < W; x++) {
+      const i = 4 * (y * W + x);
+      const Y = 0.2126 * LSTAR[px[i]] + 0.7152 * LSTAR[px[i + 1]] + 0.0722 * LSTAR[px[i + 2]];
+      const L = Y > 0.008856 ? 116 * Math.cbrt(Y) - 16 : 903.3 * Y;
+      row += L; row2 += L * L;
+      S[(y + 1) * (W + 1) + x + 1] = S[y * (W + 1) + x + 1] + row;
+      S2[(y + 1) * (W + 1) + x + 1] = S2[y * (W + 1) + x + 1] + row2;
+    }
+  }
+  const r = (CALM.window - 1) / 2;
+  return (zone) => {
+    let sum = 0, n = 0;
+    for (let y = Math.max(0, Math.floor(zone.y)); y < Math.min(H, Math.ceil(zone.y + zone.h)); y++)
+      for (let x = Math.max(0, Math.floor(zone.x)); x < Math.min(W, Math.ceil(zone.x + zone.w)); x++) {
+        const x0 = Math.max(0, x - r), x1 = Math.min(W, x + r + 1), y0 = Math.max(0, y - r), y1 = Math.min(H, y + r + 1);
+        const k = (x1 - x0) * (y1 - y0);
+        const at = (T) => T[y1 * (W + 1) + x1] - T[y0 * (W + 1) + x1] - T[y1 * (W + 1) + x0] + T[y0 * (W + 1) + x0];
+        const m = at(S) / k;
+        sum += Math.sqrt(Math.max(0, at(S2) / k - m * m));
+        n++;
+      }
+    return n ? sum / n : 0;
+  };
+}
+// The text's own extent: the union of its text's boxes, a block's box would
+// span the frame. A subtitle line counts the lit box's 6 px sides.
+function textExtent(node, sides = 0) {
+  let r = null;
+  const add = (q) => {
+    if (!q.width) return;
+    r = r ? { l: Math.min(r.l, q.left - sides), t: Math.min(r.t, q.top), r: Math.max(r.r, q.right + sides), b: Math.max(r.b, q.bottom) } : { l: q.left - sides, t: q.top, r: q.right + sides, b: q.bottom };
+  };
+  if (node.classList.contains("vf-pill")) add(node.getBoundingClientRect());
+  else {
+    const walk = document.createTreeWalker(node, NodeFilter.SHOW_TEXT);
+    while (walk.nextNode()) {
+      if (!walk.currentNode.nodeValue.trim()) continue;
+      const range = document.createRange();
+      range.selectNodeContents(walk.currentNode);
+      add(range.getBoundingClientRect());
+    }
+  }
+  return r;
+}
+// Each small-text block of a card: [block, extent in frame pixels]. The
+// subtitle zone covers every chunk of the card, so it does not move while
+// the voice speaks.
+function smallText(parts, subtitles) {
+  const out = [];
+  const layer = parts.layer;
+  if (parts.closing) {
+    for (const [sel, block] of [[".vf-close > .vf-sigline", "line"], [".vf-close > .vf-sent", "invitation"], [".vf-close > .vf-pill", "pill"], [".vf-close > .vf-next", "next"], [".vf-close-foot .vf-cred", "ending-credit"]]) {
+      const n = layer.querySelector(sel);
+      const r = n && textExtent(n);
+      if (r) out.push([block, r]);
+    }
+    return out;
+  }
+  let sub = null;
+  for (const lines of subtitles) {
+    drawSubtitle({ lines, opacity: 1, highlight: null });
+    for (const t of document.querySelectorAll("#subtitles .sub-text")) {
+      const q = t.getBoundingClientRect();
+      if (!q.width) continue;
+      const r = { l: q.left - 6, t: q.top, r: q.right + 6, b: q.bottom };
+      sub = sub ? { l: Math.min(sub.l, r.l), t: Math.min(sub.t, r.t), r: Math.max(sub.r, r.r), b: Math.max(sub.b, r.b) } : r;
+    }
+  }
+  drawSubtitle(null);
+  if (sub) out.push(["subtitles", sub]);
+  const foot = layer.querySelector(".vf-foot");
+  const r = foot && textExtent(foot);
+  if (r) out.push(["foot", r]);
+  return out;
+}
+// The picture as the card's first frame shows it, alone, into a canvas.
+function pictureCanvas(parts, zoom, blur) {
+  const img = parts.photo, s = img.style;
+  const w = parseFloat(s.width), h = parseFloat(s.height), left = parseFloat(s.left), top = parseFloat(s.top);
+  const [fx, fy] = parts.focus;
+  const ox = left + fx * w, oy = top + fy * h;
+  const canvas = document.createElement("canvas");
+  canvas.width = 1080; canvas.height = 1920;
+  const ctx = canvas.getContext("2d");
+  if (blur) ctx.filter = "blur(" + blur + "px)";
+  ctx.drawImage(img, ox - fx * w * zoom, oy - fy * h * zoom, w * zoom, h * zoom);
+  return canvas;
+}
+const round2 = (n) => Math.round(n * 100) / 100;
+function calmZones(parts, subtitles, zoom) {
+  if (!parts.photo || parts.photo.tagName !== "IMG" || parts.doc || !parts.photo.naturalWidth) return null;
+  const off = parts.spec.image && parts.spec.image.calm === false;
+  const before = localContrast(pictureCanvas(parts, zoom, 0));
+  const after = localContrast(pictureCanvas(parts, zoom, CALM.blur));
+  const zones = smallText(parts, subtitles).map(([block, r]) => {
+    const x = Math.max(0, r.l - CALM.pad), y = r.t - CALM.pad, x1 = Math.min(1080, r.r + CALM.pad), y1 = r.b + CALM.pad;
+    const zone = { block, x: round2(x), y: round2(y), w: round2(x1 - x), h: round2(y1 - y) };
+    return { ...zone, before: round2(before(zone)), after: round2(after(zone)) };
+  });
+  if (!zones.length) return null;
+  const measure = round2(zones.reduce((n, z) => n + z.before, 0) / zones.length);
+  const applied = !off && measure >= CALM.busy;
+  parts.calmImages = [];
+  if (applied)
+    for (const z of zones) {
+      const x0 = Math.max(0, z.x - CALM.feather), y0 = z.y - CALM.feather, x1 = Math.min(1080, z.x + z.w + CALM.feather), y1 = z.y + z.h + CALM.feather;
+      const d = el("div", "vf-calm");
+      Object.assign(d.style, { left: x0 + "px", top: y0 + "px", width: x1 - x0 + "px", height: y1 - y0 + "px" });
+      const f = CALM.feather;
+      d.style.webkitMaskImage = d.style.maskImage = "linear-gradient(to right, transparent, #000 " + f + "px, #000 calc(100% - " + f + "px), transparent), linear-gradient(to bottom, transparent, #000 " + f + "px, #000 calc(100% - " + f + "px), transparent)";
+      const copy = parts.photo.cloneNode();
+      copy.style.left = parseFloat(parts.photo.style.left) - x0 + "px";
+      copy.style.top = parseFloat(parts.photo.style.top) - y0 + "px";
+      d.append(copy);
+      parts.pic.append(d);
+      parts.calmImages.push(copy);
+    }
+  return { card: parts.spec.id, measure, applied, ...(off && { off: true }), zones };
+}
+
 // Long dates: the largest size that holds on one line in 960 px, measured
 // on the drawn glyphs; else two balanced lines at 104/100.
 function setDate(parts) {
@@ -756,7 +908,7 @@ function setDate(parts) {
   parts.dateLines = Math.round(d.getBoundingClientRect().height / DATE_STEPS[i][1]);
 }
 
-window.setup = async ({ tokens, cards, logo, demo, maps }) => {
+window.setup = async ({ tokens, cards, logo, demo, maps, subtitles: cardLines, zooms }) => {
   await EthniCards.installTokens(tokens, "/design/");
   logoUrl = resolveAsset(logo);
   const frame = document.getElementById("frame");
@@ -806,15 +958,17 @@ window.setup = async ({ tokens, cards, logo, demo, maps }) => {
   logoImg.src = logoUrl;
   await logoImg.decode().catch(() => broken.push(logoUrl));
   await document.fonts.ready;
-  for (const parts of layers) {
+  for (const [i, parts] of layers.entries()) {
     parts.layer.style.display = "block";
     if (parts.photo && parts.photo.naturalWidth) placeImage(parts);
     if (parts.date) setDate(parts);
     if (parts.formula) setFormula(parts);
+    // 1.10.0: the calm zones, once the picture is placed and the text set.
+    parts.calm = calmZones(parts, (cardLines && cardLines[i]) || [], (zooms && zooms[i]) || 1);
     parts.layer.style.display = "none";
   }
   const fonts = ["400 40px Anton", "800 40px 'Nunito Sans'", "600 40px Fraunces"].map((f) => document.fonts.check(f));
-  return { broken, fonts, version: EthniCards.version };
+  return { broken, fonts, version: EthniCards.version, calm: layers.map((p) => p.calm).filter(Boolean) };
 };
 
 // Boxes of the text drawn: the ink's width and the line boxes' height, as the
@@ -913,7 +1067,7 @@ function legibility(frame) {
   const drawnText = [...frame.querySelectorAll(TEXT_ON_IMAGE)].filter((n) => n.getClientRects().length);
   const blocks = drawnText
     .filter((n) => !n.parentElement.closest(TEXT_ON_IMAGE))
-    .map((n) => ({ id: n.textContent.trim().slice(0, 40), cls: n.className, tag: n.tagName, parent: n.parentElement.className, outline: outlineOf(n), filter: getComputedStyle(n).filter }));
+    .map((n) => ({ id: n.textContent.trim().slice(0, 40), cls: n.className, tag: n.tagName, parent: n.parentElement.className, outline: outlineOf(n), filter: getComputedStyle(n).filter, size: getComputedStyle(n).fontSize, color: getComputedStyle(n).color }));
   const shadowed = [...frame.querySelectorAll(".oi, .oi *, .sub-line, .sub-line *")]
     .filter((n) => n.getClientRects().length && getComputedStyle(n).textShadow !== "none")
     .map((n) => n.className || n.tagName);
@@ -992,6 +1146,8 @@ window.drawFrame = (state) => {
     if (parts.photo) {
       if (parts.view) parts.photo.style.transformOrigin = "540px " + parts.view.camera.centreY + "px";
       parts.photo.style.transform = "scale(" + l.zoom + ")";
+      // 1.10.0: the calm zones' copies zoom with the picture.
+      (parts.calmImages || []).forEach((c) => (c.style.transform = parts.photo.style.transform));
     }
   });
   // The content cards' signature stays whole, except when the closing card,
@@ -1023,6 +1179,9 @@ window.drawFrame = (state) => {
     lit: frame.querySelectorAll("#subtitles .lit").length,
     litBoxes: [...frame.querySelectorAll("#subtitles .lit")].map(rect),
     legibility: legibility(frame),
+    // 1.10.0: the calm record of each card on screen, and the zones drawn.
+    calm: state.layers.map((l) => layers[l.card].calm).filter(Boolean),
+    calmDrawn: [...frame.querySelectorAll(".vf-calm")].filter((n) => n.getClientRects().length && +getComputedStyle(n.parentElement).opacity > 0).length,
     maps,
     pictures,
     backgrounds: backgrounds(frame),
