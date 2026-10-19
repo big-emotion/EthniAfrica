@@ -8,7 +8,7 @@ import { chromium } from "@playwright/test";
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
-import { extname, join, resolve, dirname } from "node:path";
+import { basename, extname, join, resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { SERIES_PAGE_HTML } from "./series-page.mjs";
 import {
@@ -426,6 +426,48 @@ async function encodeSlice(seq, { from, to }, target, sound, options, stopped) {
   return { renderer, problems };
 }
 
+// Joins the silent slices `parts` into `file` without re-encoding, through
+// the concat list `list`, and adds the voice once on the joined file with
+// the arguments of a single pass. The concat demuxer reads each entry
+// relative to the list's own folder, not to the working directory, so the
+// list names each slice by its file name: the slices sit beside it.
+export async function joinSlices(parts, list, file, voice, count) {
+  await writeFile(
+    list,
+    parts
+      .map((p) => `file '${basename(p).replaceAll("'", "'\\''")}'\n`)
+      .join("")
+  );
+  const sound = audioArgs(voice, 0, count / FPS);
+  execFileSync(
+    "ffmpeg",
+    [
+      "-hide_banner",
+      "-loglevel",
+      "error",
+      "-f",
+      "concat",
+      "-safe",
+      "0",
+      "-i",
+      list,
+      ...sound.input,
+      "-c:v",
+      "copy",
+      ...sound.output,
+      "-map_metadata",
+      "-1",
+      "-fflags",
+      "+bitexact",
+      "-movflags",
+      "+faststart",
+      "-y",
+      file,
+    ],
+    { stdio: ["ignore", "ignore", "pipe"] }
+  );
+}
+
 // The parallel final render (operator, 19 October 2026): each slice is
 // encoded without sound by its own browser, the slices are joined without
 // re-encoding, and the voice is added once on the joined file with the
@@ -448,38 +490,7 @@ async function encodeSlices(seq, slices, file, options) {
       )
     );
     if (failure) throw failure;
-    await writeFile(
-      list,
-      parts.map((p) => `file '${p.replaceAll("'", "'\\''")}'\n`).join("")
-    );
-    const sound = audioArgs(seq.voice, 0, seriesFrameCount(seq) / FPS);
-    execFileSync(
-      "ffmpeg",
-      [
-        "-hide_banner",
-        "-loglevel",
-        "error",
-        "-f",
-        "concat",
-        "-safe",
-        "0",
-        "-i",
-        list,
-        ...sound.input,
-        "-c:v",
-        "copy",
-        ...sound.output,
-        "-map_metadata",
-        "-1",
-        "-fflags",
-        "+bitexact",
-        "-movflags",
-        "+faststart",
-        "-y",
-        file,
-      ],
-      { stdio: ["ignore", "ignore", "pipe"] }
-    );
+    await joinSlices(parts, list, file, seq.voice, seriesFrameCount(seq));
     return {
       renderer: done[0].value.renderer,
       problems: done.flatMap((d) => d.value.problems),
@@ -537,6 +548,9 @@ export async function encodeSeriesVideo(
     );
   const audio = await checkVoice(seq.voice);
   const slices = seriesSlices(seq, workers);
+  // Resolved once: every path built from it then names the same file
+  // whichever tool reads it, and whatever folder that tool reads from.
+  outDir = resolve(outDir);
   await mkdir(outDir, { recursive: true });
   const file = join(outDir, "video.mp4");
   await rm(file, { force: true });
