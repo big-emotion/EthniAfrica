@@ -10,6 +10,40 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+## [5.8.0] - 2026-10-19
+
+### Added
+
+- Search: a people's spelling aliases are scored as people-name forms next to its filed
+  name, self-appellation and exonyms, when each alias is one name under the shared
+  four-word rule; the people appellations are split into searchable names. Two
+  migrations ship with this release, applied in order by the production deploy: `114`
+  re-issues `afrik_search_leads` with the aliases, and `115` adds the recorded-word
+  index below (REQ-125, DEC-075, ETNI-2135) (#1886).
+- Search: the name forms of the closing band are italicized (#1880).
+- Discoveries: related production subjects are resolved (ETNI-1982) (#1882).
+- Social: the EthniAfrica Cartes 1.10.0 design system is integrated, with the new
+  ending and small text on the image (#1894).
+- Docs: fixed opening, closing and long-first scripts for series videos, and the new
+  closing for carousels, captions and bios (#1887, #1888).
+
+### Changed
+
+- Search: the check « is this word written in a fiche? » reads an index instead of
+  walking every fiche. Migration `115` builds `afrik_recorded_words`, which keeps for
+  each fiche the folded words it records and the fields that record them, up to date
+  through triggers on the eight fiche tables and backfilled at migration time. On the
+  real corpus the check goes from 29 s to 188 ms in the worst case (« de », 1561
+  fiches) and 12 ms for « peul », with the same answers as before on the 15 queries
+  compared. A blank or punctuation-only query now answers no row. This replaces the
+  v5.7.1 stopgap as the way the check stays within the statement timeout; the stopgap
+  stays as a safety net (ETNI-2110) (#1893).
+
+### Fixed
+
+- Layout: the compact masthead is restored at 320 px (ETNI-2004) (#1878).
+- Family names: the patronyme fiche data is serialized (ETNI-1813) (#1881).
+
 ## [5.7.1] - 2026-10-19
 
 ### Fixed
@@ -1951,7 +1985,8 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.7.1...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.8.0...HEAD
+[5.8.0]: https://github.com/big-emotion/ethniafrica/compare/v5.7.1...v5.8.0
 [5.7.1]: https://github.com/big-emotion/ethniafrica/compare/v5.7.0...v5.7.1
 [5.7.0]: https://github.com/big-emotion/ethniafrica/compare/v5.6.0...v5.7.0
 [5.6.0]: https://github.com/big-emotion/ethniafrica/compare/v5.5.0...v5.6.0
