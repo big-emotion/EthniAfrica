@@ -8,7 +8,8 @@
  * must stay distinguishable for the life of the row (ETNI-1502).
  */
 import { describe, it, expect } from "vitest";
-import { mkdirSync, writeFileSync, rmSync } from "fs";
+import { mkdirSync, mkdtempSync, writeFileSync, rmSync } from "fs";
+import { tmpdir } from "os";
 import { join } from "path";
 
 import {
@@ -58,7 +59,7 @@ describe("loadLanguagesFromCsv", () => {
 
   // @req REQ-136
   it("parses a row from an arbitrary CSV path into a language record", () => {
-    const tmpDir = join(__dirname, `tmp_csv_${Date.now()}`);
+    const tmpDir = mkdtempSync(join(tmpdir(), "tmp_csv_"));
     mkdirSync(tmpDir, { recursive: true });
     const csvPath = join(tmpDir, "langue_par_famille.csv");
     writeFileSync(
@@ -155,7 +156,7 @@ describe("loadAllLanguages", () => {
   // AC: the loader returns the union of the CSV languages and any derived-only languages.
   // @req REQ-136
   it("returns the union of the CSV languages and the derived-only languages", () => {
-    const tmpDir = join(__dirname, `tmp_csv_${Date.now()}`);
+    const tmpDir = mkdtempSync(join(tmpdir(), "tmp_csv_"));
     mkdirSync(tmpDir, { recursive: true });
     const csvPath = join(tmpDir, "langue_par_famille.csv");
     const fichePath = join(tmpDir, "langues");
@@ -188,7 +189,7 @@ describe("loadAllLanguages", () => {
   // AC: a fiche replaces overlapping CSV/people data and remains unique.
   // @req REQ-136
   it("gives fiche data precedence by ISO 639-3 without creating duplicates", () => {
-    const tmpDir = join(__dirname, `tmp_languages_${Date.now()}`);
+    const tmpDir = mkdtempSync(join(tmpdir(), "tmp_languages_"));
     mkdirSync(tmpDir, { recursive: true });
     const csvPath = join(tmpDir, "langue_par_famille.csv");
     const fichePath = join(tmpDir, "langues");

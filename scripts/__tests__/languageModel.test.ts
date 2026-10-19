@@ -1,6 +1,7 @@
 // @req REQ-136
 import { describe, it, expect, beforeEach, afterEach } from "vitest";
 import { mkdirSync, writeFileSync, rmSync, existsSync } from "fs";
+import { tmpdir } from "os";
 import { join } from "path";
 import {
   checkLanguageModel,
@@ -68,7 +69,7 @@ describe("checkLanguageModel (ETNI-1503)", () => {
 
   beforeEach(() => {
     tmpDir = join(
-      __dirname,
+      tmpdir(),
       `tmp_test_${Date.now()}_${Math.random().toString(36).slice(2)}`
     );
     mkdirSync(tmpDir, { recursive: true });
@@ -159,7 +160,7 @@ describe("checkLanguageStrictSchema (ETNI-1503)", () => {
 
   beforeEach(() => {
     tmpDir = join(
-      __dirname,
+      tmpdir(),
       `tmp_test_${Date.now()}_${Math.random().toString(36).slice(2)}`
     );
     mkdirSync(tmpDir, { recursive: true });
