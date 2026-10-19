@@ -69,3 +69,21 @@ The first try failed on the first fact, with nothing on screen while it was said
   - `video-1110-430.jpg`: the plans at 430 px.
 
 The animated previews stay outside git, in `.local/research/social-production-2026-10-09/design-system-1.11.0-boards/videos/`: `ouverture.mp4`, `dioula.mp4`, `mossi.mp4`, `1932.mp4`, `1984.mp4` and the refused insert `pingpong.mp4` (540 × 960, 30 frames a second; they draw the text outline without the second contour, for speed). The full-size frames are in `plein-ecran/` of the same folder. The Mossi and 1896 plans are drawn closer than the 2 km file allows (1.9 and 1.75 times), soft on purpose, to show the framing the 500 m mosaic allows.
+
+## Integration, 19 October 2026
+
+**Engine** (`social/video`). The seven steps of the handoff: the opening globe (`page.mjs`), the timeline (`series-sequence.mjs`), inks, proportions and placement (`series-map.mjs`), the drawing (`series-page.mjs`), picture phases and the silent viewing check (`series.mjs`). The 500 m mosaic (tiles B1 and C1) is verified and pinned, so the closer views of the boards are allowed. A map card without the new fields keeps the 1.5.0 frame model. The checks are in `series-animated.test.mjs` (frame model) and `series-animated.acceptance.test.mjs` (drawn on the imagery).
+
+**Carousel.** No card changes: the 89 sample cards are byte-identical with 1.10.0, alternative texts included.
+
+**Choices left open by the handoff.**
+
+- Two moves are « 60 frames apart » from start to start.
+- A word made to go by a third word is not counted while it fades out.
+- The 12 px clearance is measured from half opacity, on still frames. It applies to arrowheads at rest, not to a head passing by while its arrow draws. For a drawing, it uses the drawing's own ink rather than its 160 × 132 box.
+- A drawing's label and the rename's three texts are each read as one group.
+- Some of the boards' anchors are less than 12 px apart, so the test fixture moves them.
+- The silent viewing check counts a mark only when it is on screen.
+- The board renderer's camera cubic used a different interior slope. The engine uses the standard Fritsch–Butland slope, with zero speed at both ends.
+
+**Not done yet.** The Burkina Faso episode as a whole is a separate task. Its working copy is outside git, in `.local/research/social-production-2026-10-09/integration-1.11.0-bfa/`. Its 15 map phases are written in the new card data, and its 58 facts pass the silent viewing check on the frame model. The full drawn sweep, the comparison with the boards at 430 px and `video-tests.json` are still to do.
