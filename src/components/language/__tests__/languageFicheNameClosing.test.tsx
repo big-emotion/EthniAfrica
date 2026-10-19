@@ -152,14 +152,19 @@ describe("LanguageDetailViewV2 — the language fiche of brief 3", () => {
     ).toBeInTheDocument();
     expect(container.querySelector("[data-readings]")).not.toBeNull();
     const band = container.querySelector("[data-name-closing]") as HTMLElement;
-    for (const line of [
+    const expectedLines = [
+      "Aucun récit transmis oralement n’est enregistré pour le nom Lingala.",
       "Aucune trace du nom Lingala plus ancienne que 1902 n’est connue du projet.",
       "Nous n'avons pas trouvé la date de la première grammaire.",
       "La vitalité du lingala n’est pas encore renseignée dans le projet.",
       "Les dialectes du lingala ne sont pas encore renseignés dans le projet.",
-    ]) {
-      expect(within(band).getByText(line)).toBeInTheDocument();
-    }
+    ];
+    const silenceLines = Array.from(band.querySelectorAll("li"));
+
+    expect(silenceLines.map((line) => line.textContent)).toEqual(expectedLines);
+    expect(silenceLines[0].querySelector("em")?.textContent).toBe("Lingala");
+    expect(silenceLines[3].querySelector("em")?.textContent).toBe("lingala");
+    expect(silenceLines[4].querySelector("em")?.textContent).toBe("lingala");
   });
 
   // @req REQ-198

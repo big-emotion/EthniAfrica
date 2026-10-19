@@ -267,6 +267,12 @@ export function LanguageDetailViewV2({
       {history ? (
         <NameClosingBand
           silences={silences}
+          italicForms={history.names.flatMap((name) => [
+            name.nameText,
+            ...name.accounts
+              .map((account) => account.formAsWritten)
+              .filter((form): form is string => Boolean(form)),
+          ])}
           contributionTarget={{
             type: "language",
             id: data.id,

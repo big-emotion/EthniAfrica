@@ -242,6 +242,97 @@ describe("SearchFeed — the closing band follows the open name (brief 11 §1d)"
     );
   });
 
+  // @req REQ-198
+  it("sets the open timeline name in italics inside the closing band", () => {
+    const { container } = renderPeul([]);
+
+    expect(container.querySelector("[data-name-closing] em")).toHaveTextContent(
+      "Peul"
+    );
+
+    fireEvent.click(screen.getByRole("button", { name: "Fulɓe" }));
+
+    expect(container.querySelector("[data-name-closing] em")).toHaveTextContent(
+      "Fulɓe"
+    );
+  });
+
+  // @req REQ-198
+  it("sets an unwritten subject name in italics in the shared timeline closing", () => {
+    const unwritten: SearchResult = {
+      ...peul,
+      id: "PPL_WOLOF",
+      name: "Wolof",
+      nameEn: "Wolof",
+    };
+    const { container } = render(
+      <SearchFeed
+        query="peul"
+        language="fr"
+        state="exact"
+        results={[peul, unwritten]}
+        subjects={[peul, unwritten]}
+        leads={[]}
+        companions={companionsWith([])}
+        nameHistories={[{ subject: peul, nameHistory: FULA }]}
+      />
+    );
+
+    expect(
+      Array.from(container.querySelectorAll("[data-name-closing] em")).some(
+        (name) => name.textContent === "Wolof"
+      )
+    ).toBe(true);
+  });
+
+  // @req REQ-198
+  it("sets the unknown searched name in italics in the standalone closing", () => {
+    const { container } = render(
+      <SearchFeed
+        query="zzqxv"
+        language="fr"
+        state="unknown"
+        results={[]}
+        subjects={[]}
+        leads={[]}
+        companions={companionsWith([])}
+      />
+    );
+
+    expect(container.querySelector("[data-name-closing] em")).toHaveTextContent(
+      "zzqxv"
+    );
+  });
+
+  // @req REQ-198
+  it("sets the unknown searched name in italics in the owed closing", () => {
+    const { container } = render(
+      <SearchFeed
+        query="zzqxv"
+        language="fr"
+        state="unknown"
+        results={[]}
+        subjects={[]}
+        leads={[]}
+        companions={companionsWith([])}
+        wordAnswers={[
+          {
+            kind: "word",
+            title: "zzqxv",
+            what: { facts: {} },
+            names: [],
+            sources: { count: 0 },
+            queries: ["zzqxv"],
+          },
+        ]}
+      />
+    );
+
+    expect(container.querySelector("[data-name-closing] em")).toHaveTextContent(
+      "zzqxv"
+    );
+  });
+
   // « Tout » unmounts the timeline: the page keeps the reader's choice, so
   // that coming back the chips and the band still name the same name.
   // @req REQ-198

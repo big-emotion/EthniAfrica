@@ -469,6 +469,12 @@ export function PeopleDetailViewV2({
       {nameHistory && nameHistory.names.length > 0 ? (
         <NameClosingBand
           silences={ficheSilences(nameHistory, "people", language)}
+          italicForms={nameHistory.names.flatMap((name) => [
+            name.nameText,
+            ...name.accounts
+              .map((account) => account.formAsWritten)
+              .filter((form): form is string => Boolean(form)),
+          ])}
           contributionTarget={{
             type: "people",
             id: people.id,

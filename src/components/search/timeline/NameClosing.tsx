@@ -635,6 +635,7 @@ export function NameFicheSourcesBlock({
 
 export interface NameClosingBandProps {
   silences: readonly string[];
+  italicForms?: readonly string[];
   /** Absent where the page already carries its invitation (an unknown name). */
   contributionTarget?: FlagFormTarget;
   language: Language;
@@ -644,6 +645,7 @@ export interface NameClosingBandProps {
 // @req REQ-198
 export function NameClosingBand({
   silences,
+  italicForms = [],
   contributionTarget,
   language,
 }: NameClosingBandProps) {
@@ -664,7 +666,13 @@ export function NameClosingBand({
               key={line}
               className="grid grid-cols-[14px_1fr] items-baseline gap-afh-lg text-afh-small leading-[1.6] text-afh-text before:size-2.5 before:translate-y-px before:rounded-full before:border-[1.5px] before:border-dashed before:border-[color:var(--afh-name-before-dash)] before:content-['']"
             >
-              {line}
+              {splitNamedText(line, italicForms).map((part, index) =>
+                part.name ? (
+                  <em key={index}>{part.text}</em>
+                ) : (
+                  <Fragment key={index}>{part.text}</Fragment>
+                )
+              )}
             </li>
           ))}
         </ul>

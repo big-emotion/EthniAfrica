@@ -175,6 +175,17 @@ describe("PeopleDetailViewV2 — the end of the fiche (brief 2)", () => {
   });
 
   // @req REQ-198
+  it("sets the name from its closing silence in italics", () => {
+    const { container } = render(
+      <PeopleDetailViewV2 people={people} language="fr" nameHistory={BASSA} />
+    );
+
+    expect(container.querySelector("[data-name-closing] em")?.textContent).toBe(
+      "Bassa"
+    );
+  });
+
+  // @req REQ-198
   it("keeps the amend band on a fiche without a name history", () => {
     const { container } = render(
       <PeopleDetailViewV2 people={people} language="fr" />

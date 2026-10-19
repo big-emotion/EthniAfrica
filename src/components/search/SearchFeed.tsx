@@ -1109,6 +1109,7 @@ export function SearchFeed({
                 silences={[
                   nameClosingCopy[language].silence.unknown(query.trim()),
                 ]}
+                italicForms={[query.trim()]}
                 language={language}
               />
             </SearchFeedBlock>
@@ -1121,6 +1122,7 @@ export function SearchFeed({
                 silences={[
                   nameClosingCopy[language].silence.unknown(query.trim()),
                 ]}
+                italicForms={[query.trim()]}
                 language={language}
               />
             ) : null}
@@ -1207,6 +1209,24 @@ export function SearchFeed({
       (subject) => !withHistory.has(`${subject.type}:${subject.id}`)
     );
     const keyOf = (subject: SearchResult) => `${subject.type}:${subject.id}`;
+    const openTimelineNames = nameHistories.map(({ subject, nameHistory }) => {
+      const { names } = buildNameTimeline(nameHistory, query);
+      return (
+        names.find(({ nameText }) => nameText === openNames[keyOf(subject)]) ??
+        names[0]
+      );
+    });
+    const unwrittenNameForms = unwritten.map((subject) =>
+      getLocalizedSearchResultName(subject, language)
+    );
+    const timelineSilences = deduceSilences(
+      openTimelineNames.map((name) => ({ name })),
+      unwritten.map((subject, index) => ({
+        label: getSearchEntityLabel(subject.type),
+        name: unwrittenNameForms[index],
+      })),
+      language
+    );
     // Brief 11 §2: the first piece made on the name, under the subject it is
     // about. An `exact` piece names its subject; a `word` piece has none, so
     // it goes under the first. The rest stay in the « Shorts » filter.
@@ -1345,22 +1365,11 @@ export function SearchFeed({
             key="timeline-closing"
             // The band speaks of the name each timeline has open (brief 11
             // §1d), as « Les sources du nom … » already does.
-            silences={deduceSilences(
-              nameHistories.map(({ subject, nameHistory }) => {
-                const { names } = buildNameTimeline(nameHistory, query);
-                return {
-                  name:
-                    names.find(
-                      ({ nameText }) => nameText === openNames[keyOf(subject)]
-                    ) ?? names[0],
-                };
-              }),
-              unwritten.map((subject) => ({
-                label: getSearchEntityLabel(subject.type),
-                name: getLocalizedSearchResultName(subject, language),
-              })),
-              language
-            )}
+            silences={timelineSilences}
+            italicForms={[
+              ...openTimelineNames.map(({ nameText }) => nameText),
+              ...unwrittenNameForms,
+            ]}
             contributionTarget={contributionTarget}
             language={language}
           />,
