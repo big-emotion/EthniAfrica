@@ -1,6 +1,6 @@
 # Series
 
-**1.9.0-proposition, 16 October 2026, accepted by the operator the same day:** a second contour under every text on the image of the series video (« Legibility on light pictures: the double outline » below). **1.8.0-proposition, 15 October 2026, accepted by the operator the same day:** the document card and three teaching cards in the series video (« Document and teaching cards » below). **1.7.0-proposition, 15 October 2026, accepted by the operator the same day:** the long series video, with chapters on screen (« Vidéo longue et chapitres » below). **1.6.0-proposition, 15 October 2026, accepted by the operator the same day:** the project's signature line at the end of every carousel and every series video (« The signature line » below). **1.5.0-proposition, 15 October 2026, accepted by the operator the same day:** a map sequence in the series video, areas and names entering on the word that says them, one map across several cards (« Map sequence » below). **1.4.1-proposition, 14 October 2026, accepted by the operator the same day:** in the series video, map cards are drawn on satellite imagery (« Map cards on satellite imagery » below); nothing else changes. **1.4.0-proposition, 14 October 2026, accepted by the operator the same day:** the series video in full screen replaces layout B (« Vidéo de série » below). **1.3.0-proposition, 13 October 2026, accepted by the operator on 14 October 2026 with video layout B, since withdrawn.** It adds three things to the accepted 1.2.0-proposition and changes nothing else: one series band, a carousel model for each of the seven series, and one 9:16 video model. A card without `series` renders exactly as in 1.2.0: the 37 non-series sample cards were rendered again with 1.3.0 and compared with the 1.2.0 references, pixel for pixel identical.
+**1.10.0-proposition, 19 October 2026, accepted by the operator the same day:** a new ending for every series video and every carousel, replacing the signature line and the invitation (« The closing (1.10.0) » below). **1.9.0-proposition, 16 October 2026, accepted by the operator the same day:** a second contour under every text on the image of the series video (« Legibility on light pictures: the double outline » below). **1.8.0-proposition, 15 October 2026, accepted by the operator the same day:** the document card and three teaching cards in the series video (« Document and teaching cards » below). **1.7.0-proposition, 15 October 2026, accepted by the operator the same day:** the long series video, with chapters on screen (« Vidéo longue et chapitres » below). **1.6.0-proposition, 15 October 2026, accepted by the operator the same day:** the project's signature line at the end of every carousel and every series video (« The signature line » below). **1.5.0-proposition, 15 October 2026, accepted by the operator the same day:** a map sequence in the series video, areas and names entering on the word that says them, one map across several cards (« Map sequence » below). **1.4.1-proposition, 14 October 2026, accepted by the operator the same day:** in the series video, map cards are drawn on satellite imagery (« Map cards on satellite imagery » below); nothing else changes. **1.4.0-proposition, 14 October 2026, accepted by the operator the same day:** the series video in full screen replaces layout B (« Vidéo de série » below). **1.3.0-proposition, 13 October 2026, accepted by the operator on 14 October 2026 with video layout B, since withdrawn.** It adds three things to the accepted 1.2.0-proposition and changes nothing else: one series band, a carousel model for each of the seven series, and one 9:16 video model. A card without `series` renders exactly as in 1.2.0: the 37 non-series sample cards were rendered again with 1.3.0 and compared with the 1.2.0 references, pixel for pixel identical.
 
 The editorial frame is `docs/editorial/strategy/social-series.md` (13 October 2026): seven series, a fixed question and fixed beats per series, a video every episode, and a carousel only when the episode takes apart an attested received idea. « The accepted card system, plus one band carrying the series name and the episode number. No separate design per series. »
 
@@ -448,6 +448,8 @@ Layout A centred the 1080 × 1350 carousel card in the frame (y 285 to 1635), su
 
 ## The signature line (1.6.0-proposition, accepted)
 
+**1.10.0-proposition (accepted) replaces the line and the invitation** by the closing of 19 October 2026; its place, face and order stay. See « The closing (1.10.0) » below.
+
 **Proposed and accepted by the operator on 15 October 2026, with the designer's recommendations on its four questions** (« Decided by the operator on 15 October 2026 » below). Brief: `proposals/1.6.0-proposition/claude-design-brief.md` (first numbered 1.5.0, renumbered the same day). It adds one rule to the accepted 1.5.0: the project's signature line at the end of every carousel and every series video. The content cards, the series band, the full-screen frame and its legibility rule, map cards, map sequences, the cover and the card change are unchanged.
 
 > Connaître nos noms, décoloniser leur emploi, nous nommer nous-mêmes.
@@ -525,6 +527,96 @@ The four questions were answered with the designer's recommendations:
 
 The three points the design raised against the brief stand as resolved: the line has 68 characters with spaces; no U+2011, each printed line set without wrapping instead; series 3 is counted among the series with no line of its own, and its closing card is the same either way. Durations use the 21 characters a second reading limit (PR #1778).
 
+## The closing (1.10.0-proposition, accepted)
+
+**Proposed and accepted by the operator on 19 October 2026, with the designer's recommendations on its nine questions** (« Decided by the operator » below). Brief: the operator's decision of 19 October 2026 on the Burkina Faso episode (series 1, episode 19), relayed by the episode session (`proposals/1.10.0-proposition/claude-design-brief.md` once deposited); the script rule is in `docs/editorial/strategy/social-series.md`, « Opening, closing and length of every video » (PR #1887). Every series video and every carousel now ends with:
+
+> L’importance de connaître nos noms. Vous pouvez continuer la recherche sur EthniAfrica, lien en profil.
+
+It replaces both the signature line « Connaître nos noms, décoloniser leur emploi, nous nommer nous-mêmes. » (« The signature line » above) and the invitation, named « Cherchez [nom] sur EthniAfrica, lien en profil. » or general « Vous aussi, cherchez votre nom sur EthniAfrica, lien en profil. » (1.7.0). The signed « Nous pensons » card still comes just before the ending, and a series' fixed closing keeps its own card (1.6.0, decision 3). Nothing else changes: the band, the head, the subtitles and the lit word, the double outline, map cards, chapters, document and teaching cards, the cover and the card change.
+
+**Two constants, never card fields.** The renderer draws the ending from two constants, like the signature line before them:
+
+| Constant         | Printed lines                                                                 | Characters |
+| ---------------- | ----------------------------------------------------------------------------- | ---------- |
+| The closing line | « L’importance de » / « connaître nos noms. »                                 | 35         |
+| The invitation   | « Vous pouvez continuer la recherche » / « sur EthniAfrica, lien en profil. » | 68         |
+
+The apostrophe is printed as ’ (U+2019), as in the cards' other text; a comparison with the voice's words treats ' and ’ as the same letter.
+
+### The line
+
+- **Face and look: those of the signature line.** Fraunces 600 56/64, `ink` on the card, `on-image-ink` on its 8 px outline and the 1.9.0 double outline in the video. The face of the word EthniAfrica stays the project's voice; Anton stays the episode's.
+- **Two lines, centred**: « L’importance de » (408 px) and « connaître nos noms. » (514 px). « connaître nos noms » stays whole, the words the signature line began with. On one line it is 932 px wide, nearly the whole frame, and reads as a heading rather than a voice (`video-1100-variantes.jpg`, `cloture-1100-place.jpg`).
+- **Same place.** Its top at y 318 in the video and at y 760 on every closing card, as in 1.6.0: the line never moves.
+
+### The invitation
+
+- **Fixed**, two lines broken after « recherche » (524 and 433 px in the video), each set without wrapping. Broken after « EthniAfrica, », as the voice may pause, the first line runs 762 px and the second has 15 characters (`video-1100-variantes.jpg`).
+- **Type unchanged**: Nunito Sans 700 32/40 in `on-image-ink` in the video; on the card the closing body's style, Nunito Sans 400 32/45 in `ink-muted`.
+- **A closing card's own sentence is no longer printed.** The ending is the same on every closing card, in a series or not. Outside a series, a card's sentence (« Sur ethniafrica.com, la fiche Ouganda présente… », `seq-9`; « Vous avez une histoire… Partagez-la sur EthniAfrica. », `chr-5`) goes on the last content card. A closing card that still gives `body` renders without it and warns.
+
+### Pill and next episode
+
+- **The pill keeps the site's address**, « ethniafrica.com », the ending's one accent. The invitation says where to tap (« lien en profil »); the pill says where it leads, for whoever types it. It never carried a searched name. Without it (`video-1100-variantes.jpg`) the ending loses its one written address.
+- **« Prochain épisode : … » always sits under the pill.** The video block now ends at y 728 with it (816 before), well inside 318 to 820, so the 1.7.0 card of its own after the general invitation is no longer needed. Without a next episode the block ends at the pill (y 658) and nothing else moves (`video-1100-sans-episode.jpg`).
+
+### Video: the ending
+
+- **The block**, from y 318: the line (318 to 446), the invitation (474 to 554), the pill (584 to 658), « Prochain épisode » (688 to 728). Band at y 250, the credit and the centred signature unchanged (y 1760 to 1884 with the episode's two-line credit) (`video-1100-fin.jpg`).
+- **The voice says the line, then the invitation**, in four chunks, one per printed line: « L’importance de », « connaître nos noms. », « Vous pouvez continuer la recherche », « sur EthniAfrica, lien en profil. ». **The subtitle band stays empty for the whole ending**, as in 1.6.0: every word said is already printed. The brief's chunking (the line in one chunk, the invitation cut after « EthniAfrica, ») would also do, since nothing is subtitled; one chunk per printed line keeps the voice and the page in step.
+- **Time.** About 6.7 s at 17 characters a second and 5.6 s at 21, with a breath of 0.3 s between the line and the invitation; the ending holds until the voice ends plus 0.5 s, and at least 2.5 s (`video-1100-temps.jpg`).
+- **Light pictures.** The line and the invitation take the 1.9.0 double outline like every text on the image (`video-1100-fin-claire.jpg`, the Place de la Révolution and Boulton's map).
+- **The order**: the signed card, the 300 ms card change, the ending (`video-1100-ordre.jpg`).
+
+### Carousel: the closing card
+
+- **The line stays at y 760**, its top, on every closing card; above it the kicker, the folio and the recap as before; below it the fixed invitation, the pill, the gap, the credit and the signature row (y 1262 to 1306). The panel's height and the image window do not change (632 px without a recap, 800 with series 1's).
+- **Where the freed space goes.** The line is 64 px shorter, the fixed invitation one line longer than most cards' body: the gap above the credit grows from 76 to 95 px (series cards), 51 to 70 (series 1 with its recap), 6 to 70 (`seq-9`). Lowering the line to y 824 would give the image 64 px but leave 6 px above the credit on series 1 and on `seq-9`, and move the line (`cloture-1100-place.jpg`).
+- **Alternative text** ends with the closing, word for word: « … ethniafrica.com. L’importance de connaître nos noms. Vous pouvez continuer la recherche sur EthniAfrica, lien en profil. » The card's own `body` is no longer read into it.
+- **The sample.** The ten closing cards change; the 79 other sample cards were rendered again with the patched bundle and compared with the 1.9.0 bundle: pixel for pixel identical, alternative texts included.
+
+### What remains of the signature line
+
+Nothing on videos or carousels, as the operator decided. Kept small in the foot it would be a second motto beside the closing, which 1.6.0 removed for « L'Afrique à travers ses noms » (`cloture-160-devise.jpg`). The account bios are an editorial matter (`docs/editorial/strategy/social-series.md`).
+
+### Addendum: busy pictures, the kicker and the credit
+
+Added to the brief the same day, after the operator reviewed frames of the Burkina Faso video on 1.9.0 (questions 8 to 10 of the brief). The 1.9.0 double outline solves light pictures; these three are about busy pictures and small lines.
+
+**Busy pictures (brief, question 8).** On Tiébélé's painted court the black and white triangles compete with the letters, even with the double outline. Measured as the mean local contrast behind a block of small text, the standard deviation of perceptual lightness (L*) in 9 × 9 px windows, averaged over the block's zone: Tiébélé 11 to 13, the boulevard's motorbikes under the subtitles 10, Boulton's map 8 to 9, the 1930 aerial view 5 to 6, Bobo-Dioulasso 5, a calm sky 2 (`video-1100-chargee.jpg`). Three ways were drawn on the opener and the ending (`video-1100-chargee-detail.jpg`):
+
+- **A framing rule only**: a calm zone under the text, checked at proof; no new element. On Tiébélé there is none: the pattern fills the frame.
+- **A dark gradient behind the text zones**: it reads, but it is a « zone d'ombre », the veil the operator removed on 14 October 2026 (« Vidéo de série », point 2).
+- **A local blur (accepted).** Under each block of small text, and only there, the picture is blurred by 9 px: the subtitle lines (with the lit word's box), the ending block (the line, the invitation, the pill, « Prochain épisode »), the foot and the ending's credit. Each zone is the text's own extent grown by 16 px and feathered over 40 px on every side. It darkens nothing: the picture keeps its tones and colours, only the pattern under the letters goes soft, as the 1.8.0 document card does with its page. It brings the busyness under the text from 11 to 13 down to 2 to 3.
+- **When.** The engine measures the card's small-text zones together on its first frame (the picture alone, before any text); when their mean is 10 or more, all of them are blurred, so a block never sits half on a calm patch and half on the pattern. It reports the measure. Tiébélé's opener measures 12 and its ending 11; the boulevard card 6, its motorbikes busy under the subtitles only; Bobo-Dioulasso 5. Titles in Anton, the band and the head are not blurred: large letters hold with the double outline. A card can refuse it (`image.calm: false`), the framing then being the remedy, as before.
+
+**The kicker (brief, question 9).** In `on-image-accent` (luminance 0.53) at 30 px, about 12 px on screen at 430 px, it fades on mid tones (the grey sky of Bobo-Dioulasso, dry earth). Accepted: **36/42 px**, still Nunito Sans 800 in the accent ink, its outline 5 px, so 14 px on screen; the gap under it goes from 10 to 4 px, so the head keeps its height and a three-line opener still ends at y 700. In the cream ink it would merge with the title and lose its role (`video-1100-surtitre.jpg`).
+
+**The credit (brief, question 10).** In `on-image-muted` (luminance 0.51) at 22 px, about 9 px on screen at 430 px, it is the weakest line, and the licences (CC BY-SA) require it. Accepted: **the credit in `on-image-ink` at 26/32 px**, and the source at the same size, so the foot stays one block (« Source : » and « Photo : » tell them apart): 10 px on screen. The foot, bottom-aligned at y 1786, still holds a two-line source and a two-line credit (top at y 1654 at worst, the band starting at 1652). On a busy picture the local blur is the credit's quiet band, with no band drawn (`video-1100-credit.jpg`). The ending's centred credit takes the same size and ink.
+
+Before and after at 430 px: `video-1100-lisibilite-430.jpg` (the Tiébélé opener, the Bobo-Dioulasso explanation card, which is not busy and gets no blur, and the Tiébélé ending).
+
+### Boards (1.10.0)
+
+`Video` group, `video-1100-*`: the Burkina Faso ending before and after, with its guides; the ending on light pictures; the signed card and the change into the ending; without a next episode; the variants (one line, no pill, the invitation cut as the voice may pause); the time; the 430 px strip; two frames at full size; and for the addendum, the busy pictures (`video-1100-chargee*.jpg`), the kicker, the credit, before and after at 430 px, and the opener and the ending at full size. `Lecture` group, `cloture-1100-*`: the closing cards of series 1 (with its recap), series 6 and outside a series, before and after, in Nuit and Parchemin; series 6's last content card and its closing card; where the freed space goes; the cards mounted at 430 px; two cards at full size. Drawn by scratch copies of the accepted `components/bundle.js` and `handoff/video-board-full.html`, patched for the closing; since the acceptance the bundle and the board renderer on this page carry the patch: the ten closing cards of the sample show the new ending, and the board draws the 36 px kicker and the 26 px foot by default (`?calm=blur` draws the calm zones, which the engine applies by measure). The cards are the sample's and the Burkina Faso episode's.
+
+#### Decided by the operator on 19 October 2026
+
+The nine questions were answered with the designer's recommendations (« je suis tes recommandations »):
+
+1. **The line on two lines**, « L’importance de » / « connaître nos noms. », in the signature line's face and place.
+2. **The invitation broken after « recherche »**.
+3. **The pill keeps « ethniafrica.com »**.
+4. **A closing card's own sentence moves to the last content card**; the closing card prints the fixed ending only.
+5. **The line stays at y 760 on the card**; the freed space goes above the credit.
+6. **The carousels change with the videos**, as the brief says; `social-series.md` already says so since PR #1888 (19 October 2026), captions and bios included.
+7. **Busy pictures: a local blur** of 9 px under each block of small text, when the card's small-text zones measure 10 or more together.
+8. **The kicker at 36/42 px in the accent ink**, the gap under it 4 px.
+9. **The source and the credit at 26/32 px**, the credit in `on-image-ink`.
+
+The answers 4 to 6 of the brief stand as given: « Prochain épisode » under the pill, the subtitle band empty for the whole ending, nothing left of the signature line.
+
 ## Checks
 
 - Band: one line (`report.series.lines` is 1); nothing within 12 px of it on a map; tape under it.
@@ -534,5 +626,7 @@ The three points the design raised against the brief stand as resolved: the line
 - Video, full screen (1.4.0): see « Renderer integration of 1.4.0 » in Handoff. Every text between x 60 and 1020 and inside its band; no element drawn over the image with a background, except the lit word, the pill's outline, the slot and the demo tape.
 - Closing card (1.6.0-proposition, accepted): the signature line drawn from the constant, top at y 760, no title; see « Renderer integration of 1.6.0 » in Handoff.
 - Long video (1.7.0-proposition, accepted): chapters from 90 s, the chapter card's title inside y 318 to 700, the chapter kicker composed by the engine, items and figures entering on their words, the signed card without a source line; see « Renderer integration of 1.7.0 » in Handoff.
+- Small text on the image (1.10.0-proposition, accepted): the local blur under each block of small text where the picture measures 10 or more, reported; the kicker at 36/42; source and credit at 26/32 in `on-image-ink`; see « Renderer integration of 1.10.0 » in Handoff.
+- Closing (1.10.0-proposition, accepted): the line and the invitation drawn from the two constants, the line's top at y 760 on every closing card and at y 318 in the video, no closing card's own body printed, the alternative text ending with both sentences, the closing card's four chunks the four printed lines, word for word; see « Renderer integration of 1.10.0 » in Handoff.
 - Text on the image (1.9.0-proposition, accepted): every outermost text block carries the second contour with r = max(3, round(0.6 × outline)), no text on the image keeps the 1.4.0 soft shadow, the lit word's box has its dark edge; see « Renderer integration of 1.9.0 » in Handoff.
 - Document and teaching cards (1.8.0-proposition, accepted): the passage inside y 700 to 1300 within 1.5 frame pixels per source pixel, the edge of the page at most 400 px, the underline entering on its word, the formula's lines in 960 px; see « Renderer integration of 1.8.0 » in Handoff.

@@ -9,3 +9,4 @@ The closing card ends every carousel, in a series or not, centred: the project's
 **Don't:** add a slogan or the motto « L'Afrique à travers ses noms » (both retired in 1.6.0); invent a link in bio; repeat the whole story; add a second call to action.
 
 Boards: `cloture-160-*` (Lecture). Rules: Series, « The signature line »; Handoff, « Renderer integration of 1.6.0 ».
+**Accepted in 1.10.0 (19 October 2026):** the line becomes « L’importance de connaître nos noms. » on two lines, same face and place (top at y 760), followed by the fixed invitation « Vous pouvez continuer la recherche sur EthniAfrica, lien en profil. » on two lines; a closing card's own `body` is no longer printed (it goes on the last content card); the alternative text ends with both sentences. Boards: `cloture-1100-*` (Lecture). Rules: Series, « The closing (1.10.0) »; Handoff, « Renderer integration of 1.10.0 ».
