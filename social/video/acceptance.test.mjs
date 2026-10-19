@@ -5,6 +5,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
+import { readFileSync } from "node:fs";
 import { mkdtemp, readFile, rm, symlink } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
@@ -311,14 +312,31 @@ test("an area named by a chunk is drawn once it has entered", async () => {
 });
 
 // @req REQ-186
-test("the ending carries the signature line in place of the motto (Cartes 1.6.0)", () => {
-  for (const line of [
-    "Connaître nos noms,",
-    "décoloniser leur emploi,",
-    "nous nommer nous-mêmes.",
-  ])
+test("the ending prints the series video's closing line and invitation (Cartes 1.10.0)", () => {
+  const design = JSON.parse(
+    readFileSync(
+      new URL("../design-system/version.json", import.meta.url),
+      "utf8"
+    )
+  );
+  for (const line of [...design.signatureLines, ...design.invitationLines])
     assert.ok(PAGE_HTML.includes(line), line);
+  assert.ok(!PAGE_HTML.includes("décoloniser"), "the 1.6.0 line has left");
   assert.ok(!/travers ses noms/.test(PAGE_HTML), "the motto has left");
+});
+
+// @req REQ-186
+test("ending B prints the invitation's two lines under the closing line", async () => {
+  const seq = sahara();
+  const [end] = await renderFrames(seq, [frameCount(seq) - 1], options());
+  // Block top 600: logo, word, the line's two rows to y 900, then the
+  // invitation 28 px lower, its second row 982 to 1022. The 1.6.0 block
+  // ended at y 964, so nothing was written on this row before.
+  const { data } = await sharp(end)
+    .extract({ left: 240, top: 996, width: 600, height: 8 })
+    .raw()
+    .toBuffer({ resolveWithObject: true });
+  assert.ok(Math.max(...data) > 200, "the invitation's second line is drawn");
 });
 
 // @req REQ-186

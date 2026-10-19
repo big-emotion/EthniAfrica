@@ -14,7 +14,7 @@ import {
 } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { renderClip } from "./render.mjs";
+import { renderClip, ENDING_LINES } from "./render.mjs";
 
 // The engine reads the source size before drawing, so even a refusal test
 // needs a real (tiny) video.
@@ -81,6 +81,17 @@ const pixel = (file, t, x, y) => [
 ];
 
 // @req REQ-186
+test("the ending prints the series video's closing line and invitation", () => {
+  const design = JSON.parse(
+    readFileSync("social/design-system/version.json", "utf8")
+  );
+  assert.deepEqual(ENDING_LINES, [
+    ...design.signatureLines,
+    ...design.invitationLines,
+  ]);
+});
+
+// @req REQ-186
 test("renders a framed, captioned vertical reel with its SRT and cover", async () => {
   const dir = mkdtempSync(join(tmpdir(), "translated-clip-"));
   try {
@@ -130,8 +141,9 @@ test("renders a framed, captioned vertical reel with its SRT and cover", async (
     const video = reel.streams.find((s) => s.codec_type === "video");
     assert.deepEqual([video.width, video.height], [1080, 1920]);
     assert.ok(reel.streams.some((s) => s.codec_type === "audio"));
-    // 4 s of clips, then the 3.6 s ending that holds the signature line.
-    assert.ok(Math.abs(Number(reel.format.duration) - 7.6) < 0.15);
+    // 4 s of clips, then the 5.3 s ending: the closing line and the
+    // invitation, 103 characters read at 21 a second, plus 0.3 s.
+    assert.ok(Math.abs(Number(reel.format.duration) - 9.3) < 0.15);
     assert.match(
       readFileSync(join(out, "sous-titres-fr.srt"), "utf8"),
       /00:00:02,100 --> 00:00:03,900\npuis la suite après la coupe\./
@@ -148,11 +160,15 @@ test("renders a framed, captioned vertical reel with its SRT and cover", async (
       !existsSync(join(out, "_layers")),
       "intermediate layers are removed"
     );
-    // The ending (Cartes 1.6.0): the last picture held, silent, with the
-    // signature line written where the captions were.
+    // The ending (Cartes 1.10.0, as the series video): the last picture
+    // held, silent, with the closing line and the invitation written where
+    // the captions were, four rows of 64 px centred on y 1305 (1177 to
+    // 1433), one row checked in each. The 1.6.0 line's three rows ran from
+    // 1209 to 1401, so rows 1200 and 1405 hold letters only with four lines.
     const reelFile = join(out, "reel.mp4");
-    assert.ok(brightest(reelFile, 6, 1305) > 230, "no line in the ending");
-    assert.ok(loudness(reelFile, 4.3, 3) < -80, "the ending is not silent");
+    for (const y of [1200, 1280, 1345, 1405])
+      assert.ok(brightest(reelFile, 7, y) > 230, `no text on row ${y}`);
+    assert.ok(loudness(reelFile, 4.3, 4.5) < -80, "the ending is not silent");
   } finally {
     rmSync(dir, { recursive: true, force: true });
   }
