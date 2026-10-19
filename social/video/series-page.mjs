@@ -10,7 +10,7 @@
 // Everything arrives from series-render.mjs; the page has no clock and no
 // network.
 import { FLAT_VERT, FLAT_FRAG, OVERLAY_SCRIPT } from "./page.mjs";
-import { flatProject } from "./series-map.mjs";
+import { flatProject, areaStyle, MARKS } from "./series-map.mjs";
 import { documentFrame } from "./series-document.mjs";
 
 export const SERIES_PAGE_HTML = `<!doctype html>
@@ -31,6 +31,7 @@ html,body{margin:0;background:#000}
 .vf-layer{position:absolute;inset:0;display:none}
 .vf-pic{position:absolute;inset:0;overflow:hidden}
 .vf-pic img{position:absolute;max-width:none;display:block}
+.vf-ident{position:absolute;left:0;top:0;width:1080px;height:1920px;border:0;display:block}
 /* 1.4.1: a map card on imagery, its overlays and names; all of it zooms. */
 .vf-map{position:absolute;left:0;top:0;width:1080px;height:1920px}
 .vf-map canvas,.vf-map svg{position:absolute;left:0;top:0;width:1080px;height:1920px;display:block}
@@ -46,6 +47,15 @@ html,body{margin:0;background:#000}
 .sm-place{position:absolute;left:0;top:0}
 .sm-dot{position:absolute;width:16px;height:16px;box-sizing:border-box;border-radius:999px;background:#f3e9da;border:3px solid rgba(11,8,6,.7)}
 .sm-place-name{position:absolute;font:800 28px/32px var(--font-text);color:#f3e9da;white-space:nowrap;text-shadow:0 0 2px rgba(11,8,6,.95),0 0 6px rgba(11,8,6,.8),0 1px 10px rgba(11,8,6,.6)}
+/* 1.11.0: words on the map (series.md, « 6 »), each with its outline and
+   its 1.9.0 second contour; the drawings' labels; the drawings. */
+.sm-wd{position:absolute;white-space:nowrap;transform:translate(-50%,-50%);text-align:center}
+.oi.sm-wd-phrase,.oi.sm-wd-name{font:800 40px/48px var(--font-text);color:var(--oi-text);--sw:6px}
+.oi.sm-wd-date{font:400 80px/80px var(--font-display);letter-spacing:.01em;color:var(--oi-text);--sw:9px}
+.oi.sm-wd-country{font:400 64px/70px var(--font-display);letter-spacing:.1em;text-indent:.1em;color:var(--oi-text);--sw:8px}
+.oi.sm-wd-dates{font:800 30px/36px var(--font-text);color:var(--oi-muted);--sw:4px}
+.oi.sm-lab{position:absolute;white-space:nowrap;transform:translate(-50%,0);font:800 28px/32px var(--font-text);color:var(--oi-ink);--sw:4px}
+.sm-ill{position:absolute;display:block;max-width:none}
 .vf-keys{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;margin-bottom:6px}
 .vf-keys .vf-key{font-size:24px;line-height:30px;margin-bottom:6px}
 .vf-key svg{width:36px;height:24px;flex:none;display:block}
@@ -165,6 +175,9 @@ html,body{margin:0;background:#000}
 <script>
 ${OVERLAY_SCRIPT}
 document.querySelector("#sm-defs defs").insertAdjacentHTML("beforeend", hatchDefs());
+// 1.11.0: an arrow in the key, in each ink and in the colonial power's cream.
+for (const [k, v] of Object.entries({ ...INK, w: ${JSON.stringify(MARKS.foreign)} }))
+  SWATCHES["arrow-" + k] = '<path d="M3 12 L28 12" stroke="#0b0806" stroke-opacity=".7" stroke-width="11" stroke-linecap="round"/><path d="M3 12 L28 12" stroke="' + v + '" stroke-width="5" stroke-linecap="round"/><path d="M41 12 L27 4 L30 12 L27 20 Z" fill="' + v + '" stroke="#0b0806" stroke-opacity=".7" stroke-width="3" stroke-linejoin="round" paint-order="stroke"/>';
 const SAT_VERT = ${JSON.stringify(FLAT_VERT)};
 const SAT_FRAG = ${JSON.stringify(FLAT_FRAG)};
 const el = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
@@ -231,7 +244,40 @@ function silentParts(parts) {
   return parts;
 }
 
+// The series idents (operator, 19 October 2026): the intro bumper and the
+// end card are drawn by their own page (social/series-idents) in a frame the
+// size of the video, which drawFrame moves to the ident's own time. The end
+// card replaces the closing card's 1.10.0 block, so nothing else is built.
+function identParts(spec) {
+  const layer = el("div", "vf-layer");
+  const pic = el("div", "vf-pic");
+  layer.append(pic);
+  const query = new URLSearchParams({ t: "0" });
+  if (spec.outro) {
+    query.set("layers", spec.outro.layers);
+    if (spec.outro.next) query.set("next", spec.outro.next);
+  }
+  const frame = document.createElement("iframe");
+  frame.className = "vf-ident";
+  frame.setAttribute("width", "1080");
+  frame.setAttribute("height", "1920");
+  frame.src = "/repo/social/series-idents/" + (spec.outro ? "endcard" : "ident") + ".html?" + query;
+  pic.append(frame);
+  return { spec, layer, pic, text: [], photo: null, map: null, date: null, slot: false, closing: spec.type === "closing", ident: { frame, clip: spec.outro ? "outro" : "intro" } };
+}
+const identReady = (parts) => new Promise((ok, fail) => {
+  const started = Date.now();
+  const check = () => {
+    const w = parts.ident.frame.contentWindow;
+    if (w && w.identReady === true) return ok();
+    if (Date.now() - started > 20000) return fail(new Error("The " + parts.ident.clip + " ident did not load"));
+    setTimeout(check, 50);
+  };
+  check();
+});
+
 function buildParts(spec, view) {
+  if (spec.type === "intro" || spec.outro) return identParts(spec);
   const silent = spec.type === "chapter";
   const card = silent ? null : EthniCards.render(spec, { context: "video", resolve: resolveAsset, demo: false });
   const pick = (sel) => card.querySelector(sel);
@@ -380,10 +426,17 @@ function buildParts(spec, view) {
       box.append(key);
     }
     const lines = [["vf-src", "source", view.credits.source && "Source : " + view.credits.source], ["vf-cred", "credit", view.credits.imagery]];
+    // 1.11.0: during the globe the credit names the imagery alone; the
+    // 1.4.1 line takes its place from the first mark on (drawFrame).
+    if (view.credits.globe) lines.push(["vf-cred", "credit", view.credits.globe]);
     for (const [cls, kind, text] of lines) {
       if (!text) continue;
       const line = el("div", cls + " oi", esc(fr(text)));
       line.dataset.kind = kind;
+      if (view.credits.globe && kind === "credit") {
+        line.dataset.credit = text === view.credits.globe ? "globe" : "map";
+        parts.credits = (parts.credits || []).concat(line);
+      }
       foot.append(line);
     }
   }
@@ -579,9 +632,11 @@ async function satellite(bounds) {
   gl.uniform1f(gl.getUniformLocation(program, "plain"), 1); // no vignette
   return { gl, program, canvas };
 }
-function paintImagery(target, camera) {
+function paintImagery(target, camera, grade = 1) {
   const { gl, program, canvas } = sat;
   gl.viewport(0, 0, 1080, 1920);
+  // 1.11.0: the globe runs at the base grade, then recedes (globeGrade).
+  gl.uniform1f(gl.getUniformLocation(program, "grade"), grade);
   gl.uniform2f(gl.getUniformLocation(program, "centre"), 540, camera.centreY);
   gl.uniform1f(gl.getUniformLocation(program, "radius"), camera.radius);
   gl.uniform2f(gl.getUniformLocation(program, "view"), camera.lon * Math.PI / 180, camera.lat * Math.PI / 180);
@@ -653,10 +708,20 @@ function runLayer(sequence, r) {
     svg.append(g);
     return g;
   });
+  const animated = !!sequence.runs[r].animated;
   const areas = {};
   for (const file of sequence.order) {
     const a = sequence.areas[file];
     if (a.sequence !== sequence.runs[r].sequence) continue;
+    if (animated) {
+      // 1.11.0: one layer per ink the area takes, all made here in the
+      // sequence's order. Made when first needed, they stacked in the order
+      // this browser had first drawn them, so a frame drawn first differed
+      // from the same frame drawn after others (operator, 19 October 2026).
+      areas[file] = { polygons: a.polygons, uncertain: a.uncertain, hatch: a.hatch, layers: {}, paths: [], group: fills };
+      for (const ink of a.inks) areaLayer(areas[file], ink);
+      continue;
+    }
     const spec = { d: "", ink: a.ink, uncertain: a.uncertain, hatch: a.hatch, opacity: 0 };
     const fill = areaFill(spec), edge = areaEdge(spec);
     fills.append(fill); edges.append(edge);
@@ -669,24 +734,34 @@ function runLayer(sequence, r) {
     lines.append(g);
     borderPaths = [...g.querySelectorAll("path")];
   }
+  let arrows = null;
+  if (animated) {
+    arrows = document.createElementNS(SVG, "g");
+    arrows.setAttribute("stroke-linecap", "round"); arrows.setAttribute("stroke-linejoin", "round");
+    svg.append(arrows);
+  }
   wrap.append(svg);
   const names = el("div");
   wrap.append(names);
-  return { wrap, canvas, areas, borderLines, borderPaths, names, key: null };
+  const ills = animated ? el("div") : null;
+  const marks = animated ? el("div") : null;
+  if (animated) wrap.append(ills, marks);
+  return { wrap, canvas, areas, borderLines, borderPaths, names, key: null, animated, arrows, ills, images: [], pool: {}, marks };
 }
-function paintRun(node, camera) {
-  const key = cameraKey(camera);
+function paintRun(node, camera, grade = 1) {
+  const key = cameraKey(camera) + (grade === 1 ? "" : "|" + grade);
   if (node.key === key) return;
   node.key = key;
   const cached = viewImagery.get(key);
   if (cached) {
     node.canvas.getContext("2d").drawImage(cached, 0, 0);
   } else {
-    paintImagery(node.canvas, camera);
+    paintImagery(node.canvas, camera, grade);
     imageryPaints++;
   }
   for (const a of Object.values(node.areas)) {
     const d = a.polygons.flatMap((p) => p.map((ring) => ringPath(camera, ring) + "Z")).join("");
+    a.d = d;
     a.paths.forEach((p) => p.setAttribute("d", d));
   }
   if (node.borderLines) {
@@ -707,6 +782,144 @@ function drawRun(node, map) {
     Object.assign(name.style, { left: n.box.x + n.box.w / 2 + "px", top: n.box.y + n.box.h / 2 + "px", color: INK[n.ink], opacity: n.opacity });
     if (n.lang) name.lastChild.style.opacity = n.opacity > 0 ? n.langOpacity / n.opacity : 0;
     node.names.append(name);
+  }
+  node.wrap.style.transformOrigin = "540px " + map.camera.centreY + "px";
+  node.wrap.style.transform = "scale(" + map.zoom + ")";
+}
+
+// 1.11.0, the animated satellite map (series.md « The animated satellite
+// map », 2 to 8): every value comes from the engine's frame state; the page
+// draws it. Area states by series-map.mjs's own areaStyle, sent as source.
+${areaStyle.toString()}
+const FOREIGN = ${JSON.stringify(MARKS.foreign)};
+const inkOf = (ink) => INK[ink] ?? FOREIGN;
+const svgEl = (tag, attrs) => {
+  const e = document.createElementNS(SVG, tag);
+  for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v);
+  return e;
+};
+function areaLayer(a, ink) {
+  const dash = a.uncertain ? { "stroke-dasharray": "16 10" } : {};
+  const g = svgEl("g", { opacity: 0 });
+  const fill = svgEl("path", a.uncertain ? { fill: "url(#hatch-" + ink + "-" + (a.hatch || 45) + ")", "fill-rule": "evenodd" } : { fill: inkOf(ink), "fill-rule": "evenodd" });
+  const keyline = svgEl("path", { fill: "none", stroke: "#0b0806", ...dash });
+  const edge = svgEl("path", { fill: "none", stroke: inkOf(ink), ...dash });
+  for (const p of [fill, keyline, edge]) { p.setAttribute("d", a.d || ""); a.paths.push(p); }
+  g.append(fill, keyline, edge);
+  a.group.append(g);
+  return (a.layers[ink] = { g, fill, keyline, edge });
+}
+const drawingInk = {};
+const ringed = (n, outline) => { n.style.filter = "url(#oi-ring-" + ringOf(outline) + ")"; return n; };
+const WORD_STYLE = { phrase: 6, name: 6, date: 9 };
+function drawAnimatedRun(node, map) {
+  paintRun(node, map.camera, map.grade);
+  for (const [file, a] of Object.entries(node.areas)) {
+    const shown = map.areas.find((x) => x.file === file);
+    const on = new Set((shown ? shown.inks : []).map((l) => l.ink));
+    for (const [ink, layer] of Object.entries(a.layers)) if (!on.has(ink)) layer.g.setAttribute("opacity", 0);
+    if (!shown) continue;
+    const s = areaStyle(shown.lit);
+    for (const l of shown.inks) {
+      const layer = a.layers[l.ink];
+      if (!layer) throw new Error("Ink " + l.ink + " of " + file + " has no layer made in setup");
+      layer.g.setAttribute("opacity", shown.opacity * l.w);
+      if (a.uncertain) layer.fill.setAttribute("opacity", s.hatch);
+      else layer.fill.setAttribute("fill-opacity", s.fill);
+      layer.keyline.setAttribute("stroke-width", s.keyline);
+      layer.keyline.setAttribute("stroke-opacity", s.keylineOpacity);
+      layer.edge.setAttribute("stroke-width", s.edge);
+      layer.edge.setAttribute("stroke-opacity", s.edgeOpacity);
+    }
+  }
+  node.names.replaceChildren();
+  for (const n of map.names) {
+    if (!(n.opacity > 0)) continue;
+    const name = n.style === "country"
+      ? el("div", "sm-name sm-name-box sm-region", esc(fr(n.text)))
+      : el("div", "sm-name sm-name-box sm-seq", '<span class="sm-self">' + esc(fr(n.text)) + "</span>");
+    Object.assign(name.style, { left: n.box.x + n.box.w / 2 + "px", top: n.box.y + n.box.h / 2 + "px", opacity: n.opacity });
+    if (n.style === "country") Object.assign(name.style, { fontSize: "44px", lineHeight: "52px" });
+    else name.style.color = INK[n.ink];
+    name.dataset.mark = "name";
+    node.names.append(name);
+  }
+  // Route arrows: the line over its keyline, the notched head on each tip.
+  node.arrows.replaceChildren();
+  for (const a of map.marks.arrows) {
+    if (!(a.opacity > 0)) continue;
+    const g = svgEl("g", { opacity: a.opacity });
+    if (a.d) {
+      g.append(svgEl("path", { d: a.d, fill: "none", stroke: "#0b0806", "stroke-opacity": 0.7, "stroke-width": a.w + 6 }));
+      g.append(svgEl("path", { d: a.d, fill: "none", stroke: inkOf(a.ink), "stroke-width": a.w }));
+    }
+    for (const h of a.heads) {
+      g.append(svgEl("path", { d: h.d, fill: "#0b0806", "fill-opacity": 0.7, stroke: "#0b0806", "stroke-opacity": 0.7, "stroke-width": 6 }));
+      const head = svgEl("path", { d: h.d, fill: inkOf(a.ink), stroke: inkOf(a.ink), "stroke-width": 1 });
+      head.dataset.head = a.id;
+      // Placement keeps words clear of a head at rest; a drawing head passes by.
+      head.dataset.drawn = a.k >= 1 ? "1" : "0";
+      g.append(head);
+    }
+    node.arrows.append(g);
+  }
+  node.marks.replaceChildren();
+  // Places: the 1.4.1 dot and name.
+  for (const p of map.marks.places) {
+    if (!(p.opacity > 0)) continue;
+    const dot = el("div", "sm-dot");
+    Object.assign(dot.style, { left: p.x - 8 + "px", top: p.y - 8 + "px", opacity: p.opacity });
+    node.marks.append(dot);
+    if (!(p.nameOpacity > 0)) continue;
+    const name = el("div", "sm-place-name sm-name-box", esc(fr(p.name)));
+    Object.assign(name.style, { top: p.y - 16 + "px", opacity: p.nameOpacity });
+    if (p.side === "left") Object.assign(name.style, { right: 1080 - (p.x - 14) + "px" });
+    else name.style.left = p.x + 14 + "px";
+    name.dataset.mark = "name";
+    node.marks.append(name);
+  }
+  // Drawings, their foot on their place, with the second contour; the label
+  // under each.
+  // The drawings' images are made and decoded in setup, three of each
+  // kind a run uses, and only placed here: a frame never waits for one.
+  node.images.forEach((img) => (img.style.display = "none"));
+  const taken = {};
+  for (const [n, d] of map.marks.drawings.entries()) {
+    const img = node.pool[d.kind][(taken[d.kind] = (taken[d.kind] ?? -1) + 1)];
+    const w = (d.h * 160) / 120, h = (d.h * 132) / 120;
+    Object.assign(img.style, { display: "block", left: d.x - w / 2 + "px", top: d.y + d.rise - (d.h * 124) / 120 + "px", width: w + "px", height: h + "px", opacity: d.opacity });
+    img.dataset.mark = "drawing";
+    img.dataset.kind = d.kind;
+    img.dataset.of = n;
+    if (!(d.labelOpacity > 0)) continue;
+    const label = el("div", "sm-lab oi", esc(fr(d.label)));
+    Object.assign(label.style, { left: d.x + "px", top: d.y + d.rise + 8 + "px", opacity: d.labelOpacity });
+    label.dataset.mark = "name";
+    label.dataset.of = n;
+    node.marks.append(ringed(label, 4));
+  }
+  // Words on the map: phrases, dates, a colony's name in its ink.
+  for (const w of map.marks.words) {
+    const word = el("div", "sm-wd sm-wd-" + w.kind + " oi", w.lines.map((l) => esc(fr(l))).join("<br>"));
+    Object.assign(word.style, { left: w.x + "px", top: w.y + "px", opacity: w.opacity });
+    if (w.ink) word.style.color = inkOf(w.ink);
+    word.dataset.mark = w.word ? "word" : "name";
+    if (w.leaving) word.dataset.leaving = "1";
+    node.marks.append(ringed(word, WORD_STYLE[w.kind]));
+  }
+  // A name that changes (series.md, « 8 », B): the old name steps aside
+  // with its dates; the new one takes the unchanged outline.
+  if (map.marks.rename) {
+    for (const [part, cls, outline] of [["from", "sm-wd-country", 8], ["dates", "sm-wd-dates", 4], ["to", "sm-wd-country", 8]]) {
+      const t = map.marks.rename[part];
+      if (!(t.opacity > 0)) continue;
+      const n = el("div", "sm-wd " + cls + " oi", esc(fr(t.text)));
+      Object.assign(n.style, { left: t.x + "px", top: t.y + "px", opacity: t.opacity, transform: "translate(-50%,-50%) translateY(" + t.dy + "px) scale(" + t.scale + ")" });
+      n.dataset.mark = "name";
+      // The old name, its dates and the new name read as one group.
+      n.dataset.of = "rename";
+      node.marks.append(ringed(n, outline));
+    }
   }
   node.wrap.style.transformOrigin = "540px " + map.camera.centreY + "px";
   node.wrap.style.transform = "scale(" + map.zoom + ")";
@@ -921,15 +1134,44 @@ window.setup = async ({ tokens, cards, logo, demo, maps, subtitles: cardLines, z
     layers.push(parts);
   }
   if (maps && maps.sequence) {
-    for (const v of Object.values(maps.sequence.views)) {
-      const key = cameraKey(v.camera);
-      if (viewImagery.has(key)) continue;
-      const still = document.createElement("canvas");
-      still.width = 1080; still.height = 1920;
-      paintImagery(still, v.camera);
-      viewImagery.set(key, still);
-    }
+    // Each still view, and since 1.11.0 the view after each move inside a card.
+    for (const v of Object.values(maps.sequence.views))
+      for (const camera of v.stops || [v.camera]) {
+        const key = cameraKey(camera);
+        if (viewImagery.has(key)) continue;
+        const still = document.createElement("canvas");
+        still.width = 1080; still.height = 1920;
+        paintImagery(still, camera);
+        viewImagery.set(key, still);
+      }
     maps.sequence.runs.forEach((_, r) => runs.push(runLayer(maps.sequence, r)));
+    // 1.11.0: the drawings, decoded before the first frame.
+    const decoding = [];
+    for (const node of runs.filter((n) => n.animated))
+      for (const kind of maps.sequence.illustrations || []) {
+        node.pool[kind] = [];
+        for (let k = 0; k < ${MARKS.maxDrawings}; k++) {
+          const img = ringed(el("img", "sm-ill"), 4);
+          img.alt = "";
+          img.decoding = "sync";
+          img.style.display = "none";
+          img.src = "/design/assets/Illustrations/" + kind + ".svg";
+          node.ills.append(img);
+          node.pool[kind].push(img);
+          node.images.push(img);
+          decoding.push(img.decode().catch(() => { throw new Error("Drawing not loaded: " + kind); }));
+        }
+      }
+    await Promise.all(decoding);
+    for (const kind of maps.sequence.illustrations || []) {
+      const box = el("div");
+      box.style.cssText = "position:absolute;left:-4000px;top:0";
+      box.innerHTML = await (await fetch("/design/assets/Illustrations/" + kind + ".svg")).text();
+      document.body.append(box);
+      const b = box.querySelector("svg").getBBox();
+      drawingInk[kind] = { x: b.x, y: b.y + 12, w: b.width, h: b.height };
+      box.remove();
+    }
   }
   // The band and the content cards' signature are drawn once: they never
   // fade, whatever the card change.
@@ -958,6 +1200,7 @@ window.setup = async ({ tokens, cards, logo, demo, maps, subtitles: cardLines, z
   logoImg.src = logoUrl;
   await logoImg.decode().catch(() => broken.push(logoUrl));
   await document.fonts.ready;
+  await Promise.all(layers.filter((p) => p.ident).map(identReady));
   for (const [i, parts] of layers.entries()) {
     parts.layer.style.display = "block";
     if (parts.photo && parts.photo.naturalWidth) placeImage(parts);
@@ -985,7 +1228,7 @@ const shown = (node) => +getComputedStyle(node).opacity > 0;
 function frameBoxes(frame, state) {
   const boxes = [];
   const add = (node, kind, extra) => {
-    if (!node.textContent.trim()) return;
+    if (!node.textContent.trim() || !node.getClientRects().length) return;
     boxes.push({ id: node.textContent.trim().slice(0, 40), kind, ...inkBox(node), ...extra });
   };
   add(frame.querySelector(".vf-band"), "band");
@@ -1007,7 +1250,23 @@ function frameBoxes(frame, state) {
       boxes.push({ id: parts.spec.id, kind: "image", x: 0, y: 0, w: 1080, h: 1920, scale: +(l.map.scale * l.zoom).toFixed(3) });
       const s = l.map.subject, z = l.zoom, cy = l.map.camera.centreY;
       if (s) boxes.push({ id: parts.spec.id, kind: "map-subject", x: 540 + (s.x - 540) * z, y: cy + (s.y - cy) * z, w: s.w * z, h: s.h * z });
-      runs[l.map.run].names.querySelectorAll(".sm-name-box").forEach((n) => boxes.push({ id: n.textContent, kind: "map-name", ...rect(n), ink: getComputedStyle(n).color }));
+      runs[l.map.run].names.querySelectorAll(".sm-name-box").forEach((n) => boxes.push({ id: n.textContent, kind: "map-name", ...rect(n), ink: getComputedStyle(n).color, ...(l.map.animated && { animated: true, moving: l.map.moving, opacity: +n.style.opacity }) }));
+      // 1.11.0: every text and drawing on the map, and the arrows' heads.
+      if (l.map.animated) {
+        const node = runs[l.map.run];
+        const flags = { animated: true, moving: l.map.moving };
+        node.marks.querySelectorAll("[data-mark]").forEach((n) => {
+          if (!(+n.style.opacity > 0)) return;
+          const r = rect(n);
+          boxes.push({ id: n.textContent, kind: n.dataset.mark === "word" ? "map-word" : "map-name", ...r, ...flags, opacity: +n.style.opacity, ...(n.dataset.leaving && { leaving: true }), ...(n.dataset.of !== undefined && { of: "drawing " + n.dataset.of }) });
+        });
+        node.images.forEach((n) => {
+          if (n.style.display === "none" || !(+n.style.opacity > 0)) return;
+          const r = rect(n), k = r.w / 160, ink = drawingInk[n.dataset.kind];
+          boxes.push({ id: n.dataset.kind, kind: "map-drawing", x: r.x + ink.x * k, y: r.y + ink.y * k, w: ink.w * k, h: ink.h * k, ...flags, opacity: +n.style.opacity, of: "drawing " + n.dataset.of });
+        });
+        node.arrows.querySelectorAll("[data-head][data-drawn='1']").forEach((n) => boxes.push({ id: n.dataset.head, kind: "map-head", ...rect(n), ...flags, opacity: +n.parentNode.getAttribute("opacity") }));
+      }
     }
     if (!(l.text > 0)) continue;
     const layer = parts.layer;
@@ -1115,7 +1374,7 @@ window.drawFrame = (state) => {
   for (const l of state.layers)
     if (l.map && (!hosts.has(l.map.run) || l.opacity > hosts.get(l.map.run).opacity)) hosts.set(l.map.run, l);
   for (const [r, l] of hosts) {
-    drawRun(runs[r], l.map);
+    (l.map.animated ? drawAnimatedRun : drawRun)(runs[r], l.map);
     if (runs[r].wrap.parentNode !== layers[l.card].pic) layers[l.card].pic.append(runs[r].wrap);
   }
   layers.forEach((parts, i) => {
@@ -1127,6 +1386,8 @@ window.drawFrame = (state) => {
     for (const t of parts.text) t.style.opacity = l.text;
     // A sequence card's key items follow their areas.
     if (l.map) parts.layer.querySelectorAll(".vf-key[data-file]").forEach((k) => (k.style.opacity = l.map.keys[k.dataset.file] ?? 0));
+    // 1.11.0: the opener's credit, the imagery alone during the globe.
+    if (parts.credits) parts.credits.forEach((c) => (c.style.display = c.dataset.credit === ((l.map && l.map.credit) || "map") ? "" : "none"));
     // 1.7.0: items and the quoted person enter on their word, inside the
     // card's own text fade.
     if (parts.items) parts.items.forEach((n, k) => (n.style.opacity = l.items ? l.items[k] : 1));
@@ -1155,6 +1416,14 @@ window.drawFrame = (state) => {
   const closing = state.layers.find((l) => layers[l.card].closing);
   const content = state.layers.find((l) => !layers[l.card].closing);
   document.getElementById("signature").style.opacity = !content ? 0 : closing ? content.text : 1;
+  // An ident draws its own frame; the band and the signature leave the
+  // parchment to it, fading with it.
+  const idents = state.layers.filter((l) => l.ident);
+  for (const l of idents) layers[l.card].ident.frame.contentWindow.render(l.ident.t);
+  const identOn = Math.max(0, ...idents.map((l) => l.opacity));
+  frame.querySelector(".vf-band").style.opacity = 1 - identOn;
+  const sig = document.getElementById("signature");
+  sig.style.opacity = +sig.style.opacity * (1 - identOn);
   drawSubtitle(state.subtitle);
   const visible = state.layers.map((l) => layers[l.card]);
   const maps = visible.filter((p) => p.map).map((p) => {
@@ -1189,6 +1458,30 @@ window.drawFrame = (state) => {
     imageryPaints: imageryPaints - paintsBefore,
     // 1.7.0: a hyphenated word drawn over two lines.
     hyphenBreaks: [...frame.querySelectorAll(".vf-nowrap")].filter((n) => n.getClientRects().length > 1).map((n) => n.textContent),
+    // The ident on top, its clock, its opacity and the words it shows.
+    ident: idents.length ? (() => {
+      const top = idents[idents.length - 1];
+      return { clip: top.ident.clip, t: top.ident.t, opacity: top.opacity, text: layers[top.card].ident.frame.contentDocument.body.innerText };
+    })() : null,
+    chrome: +frame.querySelector(".vf-band").style.opacity,
+    // 1.11.0: what the animated map drew, read back from the page.
+    animated: [...hosts].filter(([, l]) => l.map.animated).map(([r]) => {
+      const node = runs[r];
+      return {
+        areas: Object.entries(node.areas).map(([file, a]) => ({
+          file,
+          layers: Object.entries(a.layers).map(([ink, L]) => ({
+            ink, opacity: +L.g.getAttribute("opacity"),
+            fill: +L.fill.getAttribute(a.uncertain ? "opacity" : "fill-opacity"),
+            edge: +L.edge.getAttribute("stroke-width"), edgeOpacity: +L.edge.getAttribute("stroke-opacity"),
+            keyline: +L.keyline.getAttribute("stroke-width"),
+          })).filter((l) => l.opacity > 0),
+        })).filter((a) => a.layers.length),
+        heads: [...node.arrows.querySelectorAll("[data-head]")].map((h) => ({ id: h.dataset.head, ...rect(h) })),
+        drawings: node.images.filter((i) => i.style.display !== "none").map((i) => ({ kind: i.dataset.kind, filter: getComputedStyle(i).filter, complete: i.complete && i.naturalWidth > 0, ...rect(i) })),
+        texts: [...node.names.children, ...node.marks.querySelectorAll("[data-mark]")].map((n) => ({ text: n.textContent, mark: n.dataset.mark || "name", opacity: +n.style.opacity, filter: getComputedStyle(n).filter, ...rect(n) })),
+      };
+    }),
   };
 };
 </script></body></html>`;

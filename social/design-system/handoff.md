@@ -2,6 +2,8 @@
 
 ## Acceptance and integration status
 
+**1.11.0-proposition, 19 October 2026, accepted by the operator the same day, with the designer's recommendations.** The animated satellite map of the series video: the opening globe that becomes the first map, area states, route arrows, drawings on the map, words on the map, moves inside a card, a name that changes, map and picture phases, and a silent viewing check. See « Renderer integration of 1.11.0 ».
+
 **1.10.0-proposition, 19 October 2026, accepted by the operator the same day, with the designer's recommendations.** A new ending for every series video and every carousel: « L’importance de connaître nos noms. » and the fixed invitation « Vous pouvez continuer la recherche sur EthniAfrica, lien en profil. » replace the signature line and the « Cherchez [nom] » invitation. See « Renderer integration of 1.10.0 ».
 
 **1.9.0-proposition, 16 October 2026, accepted by the operator the same day, with the designer's recommendations.** A second contour under every text on the image of the series video, in place of the 1.4.0 soft shadow, and a dark edge on the lit word. See « Renderer integration of 1.9.0 ».
@@ -559,9 +561,64 @@ A chapter card is a card of the sequence, `{ "type": "chapter", "chapter": 2, "i
 
 **Boards and prototype.** `Video` group `video-1100-*`, `Lecture` group `cloture-1100-*` (Series, « Boards (1.10.0) »), drawn by scratch copies of `components/bundle.js` and `handoff/video-board-full.html` patched as described here; the patch and the demonstration cards are kept with the design package. Since the acceptance `components/bundle.js`, `bundle.css` and `handoff/video-board-full.html` on this page carry the patch, without the board-only switches of the bundle; their renders are pixel-identical to the boards.
 
+## Renderer integration of 1.11.0
+
+**Status: accepted by the operator on 19 October 2026, with the designer's recommendations** (Series, « The animated satellite map (1.11.0-proposition) », decisions 1 to 8). The 500 m Blue Marble mosaic is verified and pinned before a view closer than 1336 km is allowed (decision 1). It builds on `recette` with 1.10.0 and the series idents integrated (PR #1894, PR #1891). It extends the map sequence of 1.5.0; a map card without the new fields renders exactly as in 1.5.0, and no carousel card changes.
+
+**Card data.** The new fields live in the card's `map`, beside the 1.5.0 ones; every `say` names a unit of the card's own chunks (`chunkUnits`), first occurrence, as in 1.5.0. Inks are given per people once for the episode.
+
+```json
+"inks": { "mossi": "a", "dioula": "b", "peuls": "c", "songhay": "d" },
+"map": {
+  "sequence": "bfa-ch2",
+  "view": { "lon": -2.2, "lat": 11.6, "radius": 3300 },
+  "moves": [{ "say": "cavaliers", "lon": -1.2, "lat": 12.15, "radius": 6600 }],
+  "areas": [
+    { "file": "bfa-mamprugu.geojson", "name": "Royaume mamprusi", "people": "mossi", "say": "Ghana", "states": [{ "say": "XVe", "to": "context" }] },
+    { "file": "bfa-mossi-tenkodogo.geojson", "name": "Tenkodogo", "people": "mossi", "say": "royaumes" }
+  ],
+  "arrows": [{ "id": "gambaga-tenkodogo", "from": [-0.442, 10.53], "to": [-0.37, 11.6], "people": "mossi", "say": "royaumes", "bend": -0.3, "trace": "XVe" }],
+  "drawings": [{ "kind": "cavaliers", "at": [-1.05, 10.08], "say": "cavaliers" }],
+  "words": [{ "text": "princesse Yennenga", "at": [1.3, 10.1], "say": "Yennenga", "until": "royaumes" }],
+  "places": [{ "name": "Gambaga", "at": [-0.442, 10.53], "say": "Ghana" }],
+  "facts": [{ "say": "parlent le mooré", "shows": ["text:mooré"] }, { "say": "des cavaliers", "shows": ["illus:cavaliers"] }]
+}
+```
+
+`states` is a list of `{ say, to }` with `to` among `lit`, `context`, `ink:<a-d>` and `out`. `foreign: true` on an arrow draws it in cream outside the four inks. A territory without a people gives `ink`. A plan's name change is `"rename": { "from": "Haute-Volta", "to": "Burkina Faso", "dates": "de 1919 à 1984", "say": "nom" }`. The opener of a series video takes `"opening": "globe"`; its first view is its `map.view`.
+
+**Engine** (`social/video`), test first:
+
+1. **`page.mjs`, the globe.** The flat style already draws the orthographic globe with its limb, atmosphere and glow. The opener draws it from frame 0: camera keys at 0 s (subject longitude + 40°, latitude 2°, radius 300), 1.8 s (subject + 7.5°, subject − 3°, radius 430) and 4.4 s (the first view), one monotone cubic per channel through the keys (longitude, latitude, log radius), zero speed at both ends; `plain` on, the grade 0 until 3.4 s and 1 from 4.6 s (`mono` between). The view centre is the map card's (540, 1010). No tilt.
+2. **`series-sequence.mjs`, the timeline.** Each event at the start frame of its `say` word, 21 frames after the previous area event if later (1.5.0), except events named by one word, which start together. Durations in frames at 30 fps: area in 21 (`enter`), lit and context 15 (symmetric), ink change 18 (symmetric), out 15 (`leave`); arrow draw `clamp(length ÷ 20, 24, 48)` frames eased (0.4, 0, 0.2, 1), its stroke in over 5 frames, two arrow starts at least 21 frames apart, trace in 15 frames to 45 %; drawing in 12 frames rising 8 px, its label 5 frames later over 9; words in and out 9 frames; a move 48 frames on its `say`, through a monotone cubic like the globe. Moves: two per card at most, 60 frames apart at least, radius ratio 2.5 at most, never while an arrow draws; the slow zoom is off on a card with a move.
+3. **`series-map.mjs`, layout and inks.** Inks from `inks` by `people`, a territory's own `ink`, cream for `foreign`; four inks in a sequence at most. The proportion rule on each frame: s the shorter side of the bounding box of the smallest area lit above 0.5; arrow width `clamp(round(s / 14), 5, 10)`, head 3.6 w × 3.2 w; drawing height `clamp(round(1.1 s), 100, 150)`. Placement of words and labels in the map band (y 724 to 1296, x 60 to 1020), 12 px clear of every other text, drawing and arrow head; a word that does not fit near its anchor is refused, never moved under the subtitles. At most eight texts on the map, two of them words.
+4. **`series-page.mjs`, drawing.** Area states as Series, « 2. Area states » (fill, hatching, edge, keyline, name opacity interpolated between lit and context; an ink change as two layers cross-fading). Arrows as polylines along the sampled curve, the visible part `[start, start + k × length]` (or around the middle for two heads), the notched head at each tip on its keyline. Drawings from `social/design-system/assets/Illustrations/<kind>.svg`, with the second contour filter (r 3). Words in the four styles of Series, « 6. Words on the map », each with its 1.9.0 second contour. The rename as Series, « 8 », variant B.
+5. **Picture phases.** A picture card shorter than 180 frames between two map cards of a video is refused (« Image isolée de moins de 6 s entre deux cartes »).
+6. **The silent viewing check.** For every map card, every fact: sample every 3 frames from the first to the last frame of its words; a mark counts from 0.6 opacity, an arrow from half drawn, a text when it contains the given words. Pass at 80 % coverage or more and a first mark at most 21 frames after the first word. The manifest lists `silent` per fact (coverage, delay, pass). A proof warns; the final render refuses a failing fact.
+7. **Imagery.** The 1.4.1 scale limit on every frame of every move and of the globe's end. The 500 m mosaic (tiles B1 and C1, 21,600 × 21,600 px each, 86,400 px around the Earth) joins `IMAGERY` with its URL, size and SHA-256 once verified (decision 1); the region texture is then cut from it, and the limit becomes 360 km across. Until then a view closer than 1336 km across is refused, as now.
+
+**Assets.** `assets/Illustrations/`: `or.svg`, `kola.svg`, `eleveurs.svg`, `cavaliers.svg`, `commercants.svg`, `guerres.svg`, `colonne.svg`, `travailleurs.svg`, each a 160 × 132 box (viewBox `0 -12 160 132`), its foot at (80, 112), with a README naming the hand and the rules. Drawn for this proposal by Claude Design; no third-party material.
+
+**Checks** (tests first):
+
+1. Opening: frame 0 shows the whole disc (radius 300 ± 1 around (540, 1010)), the band and the opener's head, no subtitle; the camera passes its three keys; between consecutive frames the radius changes by at most 12 % and the centre by at most 40 px; at 4.4 s the frame equals the first map view's imagery within 2 levels; the first area enters at 4.4 s or later.
+2. Area states: on sample frames, the fill, edge width and name opacity of each state as in the table; the four durations; two area events 21 frames apart unless one word.
+3. Inks: one ink per people for the episode; four per sequence at most; a `foreign` arrow in cream and not counted.
+4. Arrows: the head at the tip from the first frame; the duration from the length; one drawing at a time; three at full strength at most; trace at 45 %.
+5. Proportions: arrow width, head and drawing height from s on every frame; a drawing over 150 px or an arrow over 10 px refused.
+6. Placement: every text and drawing inside the map band; eight texts and two words at most; no overlap, 12 px clear.
+7. Moves: two per card at most, 60 frames apart, ratio 2.5 at most, never during an arrow's draw; the slow zoom off; the scale limit on every frame.
+8. Rename: the outline's pixels unchanged across the rename; both names readable at the end (B).
+9. Phases: a picture card under 180 frames between two map cards refused with the expected text.
+10. The silent viewing check on the Mossi plan of the boards: six facts, all passing; with the « mooré » word removed, the first fact fails.
+11. Everything accepted holds: a map card without the new fields is pixel-identical with its 1.5.0 acceptance frames; bands, the 300 ms change, the double outline, the calm zones, the idents.
+
+**Boards and prototype.** `Video` group `video-1110-*` and the animated previews (Series, « Boards (1.11.0) »), drawn by a scratch board renderer (`tools/map111.html` with `scenes.js`, `illus.js` and the episode's map data), not the engine; the silent viewing check is `tools/silent.mjs`. They are kept with the design package, not deposited.
+
 ## Required assets
 
 - Fonts: `fonts/Anton-Regular.ttf`, `fonts/NunitoSans.ttf`, `fonts/NotoSans-Variable.ttf`, `fonts/Fraunces.ttf`, `fonts/NotoSansEthiopic-Bold.ttf`, all under the SIL Open Font License 1.1.
+- Illustrations (1.11.0-proposition, accepted): `assets/Illustrations/*.svg`, the eight drawings of series 1, drawn by Claude Design.
 - Logo: `Logo/ethniafrica-logo.png` (512 px PNG, from `social/brand/`).
 - Base maps: `assets/Cartes/grands-lacs.json` for the examples; `assets/Cartes/afrique.json` for the continent, which carries since 1.2.0 `africa` (union of African states), `centers` (one interior point per state) and `bordersMerged` (continuous borders for dotted lines); one file per region, built the same way from Natural Earth.
 - Per piece: the real photographs, documents and map data, with the credit, licence and source page of each.
@@ -654,3 +711,8 @@ A chapter card is a card of the sequence, `{ "type": "chapter", "chapter": 2, "i
 - From the operator's decision of 19 October 2026 on the Burkina Faso episode (series 1, episode 19): every series video and every carousel ends with « L'importance de connaître nos noms. Vous pouvez continuer la recherche sur EthniAfrica, lien en profil. », printed, and spoken in the video, in place of the signature line and the invitation. Seven questions to the designer (the line, the invitation, the pill, the next episode, the voice and the subtitles, what remains of the signature line, the carousel closing card) and boards of the Burkina Faso ending, a light photograph, the signed card then the ending, an ending without a next episode, and the carousel closing cards of series 1, series 6 and outside a series in Nuit and Parchemin, at 430 px.
 - Addendum the same day: busy pictures, the kicker and the credit (brief, questions 8 to 10).
 - Proposed and accepted on 19 October 2026, with the designer's recommendations on the nine questions.
+
+## Commissioned on 19 October 2026 (1.11.0)
+
+- From the operator's review of the animatic of the long Burkina Faso episode (series 1, episode 19, version 3): the map carries the video, understood without sound; satellite, not a flat printed map; an opening globe; drawn illustrations; closer views and true proportions; maps when the text situates, pictures when it does not. Ten questions (the opening globe, area states, route arrows, illustrations, proportions, words on the map, camera moves inside a card, a name that changes, map and picture phases, the silent viewing check) and boards of the opening, the Dioula, the Mossi, 1932 and 1947, 1984 and each illustration at 430 px. It replaces question 11 of the 1.10.0 brief.
+- Proposed and accepted on 19 October 2026, with the designer's recommendations on the eight questions.

@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Générique d'intro EthniAfrica</title>
+    <link rel="stylesheet" href="../../src/styles/tokens/color.css" />
+    <link rel="stylesheet" href="idents.css" />
+    <style>
+      #lockup {
+        left: 120px;
+        top: 300px;
+      }
+      .badge {
+        left: 0;
+        top: 34px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        font: 800 32px/1 var(--body);
+      }
+      #avatar {
+        left: 0;
+        top: 110px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: var(--afh-color-bg-warm);
+        border: 3px solid var(--afh-color-border);
+        display: grid;
+        place-items: center;
+      }
+      #avatar img {
+        width: 104px;
+        height: 104px;
+      }
+      #who {
+        left: 176px;
+        top: 136px;
+        display: grid;
+        gap: 10px;
+      }
+      #who .n {
+        font: 900 46px/1 var(--display);
+      }
+      #who .h {
+        font: 600 32px/1 var(--body);
+        color: var(--afh-color-text-soft);
+      }
+      #bio {
+        left: 0;
+        top: 292px;
+        width: 512px;
+        font: 600 36px/1.2 var(--display);
+      }
+      #link {
+        left: 0;
+        top: 396px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font: 800 34px/1 var(--body);
+        color: var(--afh-color-terracotta);
+      }
+      .follow {
+        left: 0;
+        top: 470px;
+        width: 512px;
+        height: 92px;
+        border-radius: 18px;
+        display: grid;
+        place-items: center;
+        font: 800 36px/1 var(--body);
+      }
+      #follow {
+        background: var(--afh-color-text);
+        color: var(--afh-color-card);
+      }
+      #follow.on {
+        background: var(--afh-color-card);
+        color: var(--afh-color-text);
+        border: 3px solid var(--afh-color-border);
+      }
+      #grid {
+        left: 0;
+        top: 600px;
+        width: 512px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 13px;
+      }
+      #grid img {
+        width: 100%;
+        aspect-ratio: 3 / 4;
+        display: block;
+        border-radius: 6px;
+        object-fit: cover;
+      }
+      #browser {
+        inset: 0;
+        background: var(--afh-color-bg);
+      }
+      #bar {
+        left: 38px;
+        top: 34px;
+        width: 512px;
+        height: 84px;
+        border-radius: 42px;
+        background: var(--afh-color-bg-warm);
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 0 30px;
+        font: 600 34px/1 var(--body);
+      }
+      #progress {
+        left: 38px;
+        top: 128px;
+        height: 6px;
+        border-radius: 3px;
+        background: var(--afh-cat-ocre);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="abs lockup" id="lockup" data-role="wordmark" data-essential>
+      <img src="../brand/ethniafrica-logo.png" alt="" /><span>EthniAfrica</span>
+    </div>
+    <div id="phoneHost"></div>
+    <div class="abs finger" id="finger"></div>
+    <div class="abs ripple" id="ripple"></div>
+
+    <script type="module">
+      import {
+        $,
+        P,
+        lerp,
+        eo,
+        eo5,
+        eio,
+        S,
+        rise,
+        ground,
+        moveGround,
+        phone,
+        typeInto,
+        loadLayer,
+        start,
+        networkIcon,
+      } from "./idents.mjs";
+
+      ground();
+      phone($("phoneHost"), await loadLayer());
+      const ph = $("ph");
+      const screen = ph.querySelector(".screen");
+
+      // The profile, as any of the three apps shows it: generic, with the
+      // project's own name, handle, bio line and link. No follower count.
+      const POSTS = ["post0", "post1", "post2", "post3", "post5", "post7"];
+      screen.insertAdjacentHTML(
+        "beforeend",
+        `<div class="abs" id="profile" style="left:38px;top:0;width:512px;height:1208px">
+          ${["TikTok", "Instagram", "Facebook"].map((n) => `<p class="abs badge" id="badge${n}">${networkIcon(n, 44)}<span>${n}</span></p>`).join("")}
+          <div class="abs" id="avatar"><img src="../brand/ethniafrica-logo.png" alt=""></div>
+          <div class="abs" id="who"><span class="n" data-role="wordmark" data-essential>EthniAfrica</span><span class="h" data-layer="handle" data-essential>@ethniafrica</span></div>
+          <p class="abs" id="bio" data-role="project-line" data-essential>L’importance de connaître nos noms.</p>
+          <p class="abs" id="link"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg><span data-layer="link" data-essential>ethniafrica.com</span></p>
+          <p class="abs follow" id="follow" data-layer="follow" data-essential>S’abonner</p>
+          <div class="abs" id="grid">${POSTS.map((p) => `<img src="assets/posts/${p}.jpg" alt="">`).join("")}</div>
+        </div>
+        <div class="abs" id="browser">
+          <div class="abs" id="bar"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span data-layer="address" data-essential>ethniafrica.com</span></div>
+          <div class="abs" id="progress"></div>
+        </div>`
+      );
+      // The site's home page opens under the address bar.
+      const site = $("phFull");
+      $("browser").append(site);
+      site.style.top = "120px";
+      for (const id of [
+        "phEyebrow",
+        "phCallout",
+        "phSkeleton",
+        "phFormsH",
+        "phChips",
+      ])
+        S(id, { op: 0 });
+      typeInto($("phQ"), 0, "", 1, 1, 0);
+
+      const PHONE = { x: 230, y: 410 };
+      ph.style.left = PHONE.x + "px";
+      const inScreen = (x, y) => ({
+        x: PHONE.x + 16 + 38 + x,
+        y: PHONE.y + 16 + y,
+      });
+      const FOLLOW = inScreen(256, 516);
+      const LINK = inScreen(150, 413);
+
+      function render(t) {
+        moveGround(t);
+        rise("lockup", t, 0.15, 0.6);
+        const pIn = eo5(P(t, 0.15, 0.8));
+        ph.style.opacity = pIn;
+        ph.style.top = PHONE.y + lerp(120, 0, pIn) + "px";
+
+        // The same profile on the three apps the reels run on.
+        const shown = (a, b) =>
+          eo(P(t, a, a + 0.2)) * (1 - eio(P(t, b, b + 0.2)));
+        S("badgeTikTok", { op: shown(-1, 0.9) });
+        S("badgeInstagram", { op: shown(0.9, 1.5) });
+        S("badgeFacebook", { op: shown(1.5, 99) });
+
+        // Follow, then the link.
+        const followed = t >= 2.0;
+        $("follow").textContent = followed ? "Abonné ✓" : "S’abonner";
+        $("follow").classList.toggle("on", followed);
+        S("follow", { s: 1 - tap(t, 1.85) * 0.06 + tap(t, 2.0) * 0.03 });
+        const toLink = eio(P(t, 2.2, 2.5));
+        const fIn = eo(P(t, 1.5, 1.7)),
+          fOut = eio(P(t, 2.7, 2.85));
+        S("finger", {
+          op: fIn * (1 - fOut),
+          x: lerp(
+            lerp(FOLLOW.x + 140, FOLLOW.x, eo(P(t, 1.5, 1.8))),
+            LINK.x,
+            toLink
+          ),
+          y: lerp(
+            lerp(FOLLOW.y + 180, FOLLOW.y, eo(P(t, 1.5, 1.8))),
+            LINK.y,
+            toLink
+          ),
+          s: 1 - (tap(t, 1.85) + tap(t, 2.55)) * 0.15,
+        });
+        const r1 = P(t, 1.85, 2.25),
+          r2 = P(t, 2.55, 2.95);
+        const r = r2 > 0 ? r2 : r1,
+          at = r2 > 0 ? LINK : FOLLOW;
+        S("ripple", {
+          op: r > 0 && r < 1 ? 1 - r : 0,
+          x: at.x,
+          y: at.y,
+          s: 1 + eo(r) * 1.4,
+        });
+
+        // The browser opens on ethniafrica.com and the page loads.
+        const b = eio(P(t, 2.75, 3.2));
+        S("browser", { op: b, y: lerp(300, 0, b) });
+        S("profile", { op: 1 - b });
+        $("progress").style.width = lerp(0, 512, eio(P(t, 3.0, 3.6))) + "px";
+        S("progress", { op: 1 - eo(P(t, 3.6, 3.8)) });
+        const home = eo(P(t, 3.4, 3.9));
+        S("phFull", { op: home, y: lerp(30, 0, home) });
+      }
+      const tap = (t, a) => Math.sin(P(t, a, a + 0.2) * Math.PI);
+
+      await start("intro", render);
+    </script>
+  </body>
+</html>

@@ -38,6 +38,16 @@ export const closingChunks = () =>
     duration: round([...text].length / 16),
   }));
 
+// The intro bumper's sentence (social/series-idents), in four subtitle
+// chunks, at about 16 characters a second.
+export const introChunks = () =>
+  [
+    "Avec EthniAfrica, on part des noms",
+    "qu'on emploie en français",
+    "pour mieux comprendre l'Afrique",
+    "et ses peuples.",
+  ].map((text) => ({ text, duration: round([...text].length / 16) }));
+
 // Generated silence whose word times spread each chunk's units over the
 // chunk's scripted duration, from 0.6 s in; writes voice.wav and words.json.
 // A beat's `silence` (seconds, 1.7.0) is a pause before its chunks, the one a
@@ -108,8 +118,9 @@ export function seriesDemo(dir, { edit = () => {}, script = (b) => b } = {}) {
       (c) => c.id === beats[0].card
     ).demo,
     cards: CARDS,
+    // A beat without a card (the intro bumper) keeps its type.
     beats: beats.map((beat) => ({
-      card: beat.card,
+      ...(beat.type ? { type: beat.type } : { card: beat.card }),
       chunks: beat.chunks.map(({ text }) => ({ text })),
     })),
     ending: {},
