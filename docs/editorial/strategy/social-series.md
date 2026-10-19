@@ -95,6 +95,42 @@ episode 19). It applies to every video script from that date.
   · the « nous pensons » paragraph · the closing. Unity, the operator's
   conviction, belongs to the « nous pensons » paragraph and stays distinct
   from the historical findings.
+- **Length follows the story, the same on every network** (operator,
+  2026-10-19): the Burkina Faso episode went out at 4 min 15 on TikTok,
+  Instagram, Facebook and YouTube. A video over 3 minutes is a regular video on
+  YouTube, not a Short; Instagram does not recommend reels over 3 minutes to new
+  audiences; TikTok's upload length is checked in the app before posting.
+- **The animated satellite map carries the video** (operator, 2026-10-19;
+  Cartes 1.11.0): whenever the narration situates something, the screen is a
+  map, opened by the satellite globe; it must be understood without sound.
+  Scripts are written in map phases and picture phases; a picture is a phase
+  of whole sentences (6 s at least), never a short insert between two maps, and
+  carries a fact the map cannot show.
+
+## What changed on 19 October 2026
+
+The Burkina Faso episode (series 1, episode 19) replaced a 87-second card video
+with a long episode and changed the production process. The full path is the
+skill's [long-episode recipe](../../../.claude/skills/ethniafrica-social-production/references/long-episode-recipe.md).
+
+**New moments in the process**, each before the step it protects:
+
+1. **An animatic artifact** of the whole cut, shot by shot, with what the
+   screen shows without sound, before any render.
+2. **A preview at one frame per second** with the real voice, in a few minutes.
+3. **A pre-flight of every package check** before the final render: design
+   label, no demo marker, idents, research dossier and destination, image
+   rights. The episode took four full renders for want of it.
+4. **The composed thumbnail**, delivered with the package.
+5. **One visible handover folder** for the operator after approval 3 (video,
+   thumbnail, one document with every text to paste), moved to the published
+   pieces once posted; then the URLs are recorded in the checkpoint and the
+   production ledger.
+
+**Rules changed:** the opening and closing above; long first and length
+following the story; the map-led video; captions with targeted hashtags; the
+thumbnail; the fiches corrected and released before posting so the profile link
+answers what the video says.
 
 ## Calendar
 
@@ -196,6 +232,18 @@ days).
   (since 2026-10-19): « L'importance de connaître nos noms. Vous pouvez
   continuer la recherche sur EthniAfrica, lien en profil. » It replaces
   « Cherchez [nom] sur EthniAfrica, lien en profil. ».
+- **A short line of targeted hashtags** (operator, 2026-10-19), on every
+  network, just before that closing sentence so the caption still ends with
+  it: four or five tags about the episode, always ending with `#EthniAfrica`
+  (Burkina Faso: `#BurkinaFaso #Afrique #HistoireAfricaine #Toponymie
+#EthniAfrica`). A few precise tags help a platform file the video for the
+  people who follow those subjects; a wall of them reads as advertising.
+- **Every video ships one composed thumbnail** (operator, 2026-10-19), the same
+  image for every network, 1080 × 1920 with its essentials inside the profile
+  grid's 3:4 crop: the series band, the episode's title, the subject drawn in
+  the series' world (for a country, its outline in its flag's colours on the
+  series' satellite imagery), the imagery credit and the EthniAfrica
+  signature. No personality photographs. The operator publishes it.
 - **Retired on 2026-10-19:** every reel and every carousel ended with the
   project's signature, word for word, and every account's bio carried it
   (decided 2026-10-15). The closing in « Opening, closing and length of every

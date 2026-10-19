@@ -78,8 +78,13 @@ under a fabricated name category or invent a site route.
   reader can follow one series without the others' numbers interrupting it.
 - **Every piece presents the project**, invites contribution, and explains why
   appellations are hard and why the word « ethnie » does not fit.
-- **Under three minutes**, and each platform's own format constraints
-  respected — see the network × format mapping below.
+- **A length that follows the story**, and each platform's own format
+  constraints respected — see the network × format mapping below. Pieces were
+  kept under three minutes until the operator's decision of 2026-10-19: series
+  videos are written long first and may run longer (the Burkina Faso episode,
+  `pays/019`, went out at 4 min 15 on every network;
+  `docs/editorial/strategy/social-series.md`, « Opening, closing and length of
+  every video »).
 - **Current events are a reason to schedule a subject** ahead of the queue —
   the operator's own example is Goma.
 
