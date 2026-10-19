@@ -2,19 +2,19 @@
 // payload computed by render.mjs; the page has no clock and no network.
 import { readFileSync } from "node:fs";
 
-// Cartes 1.6.0 (operator, 16 October 2026): the satellite video's ending
-// carries the project's signature line in place of the motto « L'Afrique à
-// travers ses noms ». The line is the accepted design's (version.json), split
-// after each comma as the cards print it; the page keeps no copy of its own.
-// Cartes 1.10.0 replaces it on series videos and carousels only; the
-// satellite video's ending has no accepted 1.10.0 design yet, so it keeps the
-// 1.6.0 line, which version.json records as retired.
-const SIGNATURE_LINES = JSON.parse(
-  readFileSync(
-    new URL("../design-system/version.json", import.meta.url),
-    "utf8"
-  )
-).retired.signatureLine.split(/(?<=,) /u);
+// The satellite video ends as the series video does (Cartes 1.10.0;
+// operator, 19 October 2026): the closing line on two lines in place of the
+// 1.6.0 signature line, then the fixed invitation on two lines. Both are the
+// accepted design's printed lines (version.json); the page keeps no copy.
+// They keep this ending's own sizes: the line in the line's Fraunces 600
+// 56/64, the invitation in ending A's sentence style, 700 30/40.
+const { signatureLines: SIGNATURE_LINES, invitationLines: INVITATION_LINES } =
+  JSON.parse(
+    readFileSync(
+      new URL("../design-system/version.json", import.meta.url),
+      "utf8"
+    )
+  );
 
 // The ending darkens the base to the design's brightness 0.45 (board 10),
 // which the end frames apply where a hold applies 0.84: hence their ratio.
@@ -191,6 +191,7 @@ html,body{margin:0;background:#070605}
 </div>
 <script>
 const SIGNATURE_LINES = ${JSON.stringify(SIGNATURE_LINES)};
+const INVITATION_LINES = ${JSON.stringify(INVITATION_LINES)};
 const END_GLSL = ${JSON.stringify(END_GLSL)};
 const VERT = ${JSON.stringify(FLAT_VERT)};
 const FRAG = ${JSON.stringify(FLAT_FRAG)};
@@ -417,10 +418,10 @@ const el = (tag, style, text) => {
   if (text !== undefined) e.textContent = text;
   return e;
 };
-const signatureLine = () => {
-  const line = el("span", "font-family:Fraunces,Georgia,serif;font-weight:600;font-size:56px;line-height:64px;color:#f3e9da");
-  for (const t of SIGNATURE_LINES) line.append(el("span", "display:block;white-space:nowrap", t));
-  return line;
+const printedLines = (style, lines) => {
+  const block = el("span", style);
+  for (const t of lines) block.append(el("span", "display:block;white-space:nowrap", t));
+  return block;
 };
 ${OVERLAY_SCRIPT}
 document.querySelector("#lines defs").insertAdjacentHTML("beforeend", hatchDefs());
@@ -652,8 +653,8 @@ window.drawFrame = async (f) => {
   }
   panel.append(legend, caption);
 
-  // Board 10's closing: signature and, since Cartes 1.6.0, the signature line in place of the slogan; ending A adds what the page
-  // holds and the bare domain. Neither asks the viewer for anything.
+  // Board 10's closing: signature, then since Cartes 1.10.0 the closing line and the invitation in place of the slogan; ending A
+  // adds what the page holds and the bare domain.
   const closing = document.getElementById("closing");
   closing.replaceChildren();
   const closingParts = [];
@@ -666,9 +667,8 @@ window.drawFrame = async (f) => {
     big.src = "/logo.png"; big.alt = "Logo EthniAfrica";
     closingParts.push(big,
       el("span", "font-family:Fraunces,Georgia,serif;font-weight:600;font-size:64px;line-height:72px;color:#f3e9da", "EthniAfrica"),
-      // Cartes 1.6.0: the signature line, three lines broken after each
-      // comma, in the cards' Fraunces 600 56/64.
-      signatureLine());
+      printedLines("font-family:Fraunces,Georgia,serif;font-weight:600;font-size:56px;line-height:64px;color:#f3e9da", SIGNATURE_LINES),
+      printedLines("margin-top:28px;font-size:30px;line-height:40px;font-weight:700;color:#f3e9da", INVITATION_LINES));
     if (a) closingParts.push(
       el("span", "margin-top:28px;font-size:30px;line-height:40px;font-weight:700;color:#f3e9da", f.closing.sentence),
       el("span", "margin-top:6px;padding:12px 28px;border-radius:999px;border:2px solid #e8b96a;color:#e8b96a;font-size:34px;line-height:40px;font-weight:800;letter-spacing:.04em", f.closing.address));
