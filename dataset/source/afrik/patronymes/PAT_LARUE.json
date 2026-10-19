@@ -6,7 +6,7 @@
   },
   "id": "PAT_LARUE",
   "nameMain": "Larue",
-  "nameSystem": "clan_name",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Larue",
@@ -19,17 +19,12 @@
     }
   ],
   "transmissionMode": "elective",
-  "designatedSocialUnit": "lineage",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le Dictionary of American Family Names décrit Larue comme un nom topographique français pour une personne vivant près d'une route ou d'un chemin, ou comme un nom d'habitation tiré d'un lieu La Rue. La branche seychelloise n'est pas localisée par cette seule notice.",
-        "claimStatus": "established",
-        "sourceRefs": ["dafn-larue-2022"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -92,5 +87,122 @@
       "fieldPath": "homonyms",
       "reason": "les résultats exacts « Larue », le catalogue des Seychelles National Archives, le Family Tree Project et les recherches patrimoniales décrites par O'Gorman n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Larue est un nom de famille porté aux Seychelles, où il figure dans les registres de mariage de Mahé dès 1820. Un lieu de Mahé, Pointe Larue, porte le nom d'une des premières habitantes de l'île. En français, le nom désignerait une personne qui habitait au bord d'une rue ou d'un chemin, ou qui venait d'un lieu appelé La Rue ; on ne sait pas avec certitude quelle explication vaut pour les familles seychelloises. Nous présentons ces explications plus bas.",
+    "names": [
+      {
+        "nameText": "Larue",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Un nom de famille des Seychelles, écrit à Mahé dès 1820, qui a donné son nom à Pointe Larue.",
+        "periodLabel": "Écrit à Mahé dès 1820",
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Rapporté en 2019"
+            },
+            "statement": "Le nom Larue est aussi celui d'un lieu de Mahé, Pointe Larue. Ce lieu a été nommé d'après une des premières habitantes de l'île, une Mme Larue, qui y possédait une grande concession, selon l'anthropologue Mairi O'Gorman, qui cite un livre de J. Durup sur les premiers propriétaires des Seychelles. La date de cette concession n'est pas donnée.",
+            "sources": [
+              {
+                "title": "Tree of Knowledge, Tree of Life: Materials, Intimacy and Being Creole in London and Seychelles",
+                "author": "Mairi O'Gorman",
+                "year": 2019,
+                "url": "https://era.ed.ac.uk/bitstream/handle/1842/36098/O%27Gorman2019.pdf?sequence=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 150",
+                "notes": "Thèse de doctorat en anthropologie sociale, université d'Édimbourg, 2019, lue le 18 octobre 2026 dans le dépôt de l'université. Page 150 : « Pointe Larue is named after one of the first settlers, a Mrs Larue, who owned a large concession there (Durup 2013:4) ». La bibliographie donne : J. Durup, 2013, The Seychelles Islands and its First Landowners, iMedia ; ce livre n'a pas été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "statement": "Le nom Larue désignerait, en français, une personne qui habitait au bord d'une rue ou d'un chemin : il viendrait de l'ancien mot rue, précédé de l'article la, selon le dictionnaire des noms de famille dirigé par Patrick Hanks.",
+            "hypothesisGroup": "origine du nom Larue",
+            "sources": [
+              {
+                "title": "Larue Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/larue?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e édition, Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 18 octobre 2026 dans la traduction française que le site affiche. La notice fait de Larue un nom français topographique, pour une personne qui vivait au bord d'une voie, de l'ancien français rue avec l'article la soudé, ou un nom d'habitation tiré de La Rue, nom de plusieurs lieux de France. Elle renvoie à Delarue et à Rue ; une dernière ligne, mal traduite, la rapproche de Leroux. Elle ne parle pas des Seychelles."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "statement": "Le nom Larue viendrait aussi de lieux appelés La Rue, dans plusieurs régions de France, et désignerait d'abord une personne qui en venait, selon le dictionnaire des noms de famille dirigé par Patrick Hanks.",
+            "hypothesisGroup": "origine du nom Larue",
+            "sources": [
+              {
+                "title": "Larue Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/larue?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e édition, Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 18 octobre 2026 dans la traduction française que le site affiche. La notice donne, à côté du nom topographique, un nom d'habitation tiré de La Rue, « le nom de plusieurs endroits dans diverses régions de France »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1820,
+              "to": 1820,
+              "label": "1820"
+            },
+            "era": "colonial",
+            "statement": "Le nom Larue figure comme nom de famille dans les tables des mariages de Mahé, aux Seychelles, à partir de 1820, selon le relevé du Cercle de généalogie Maurice-Rodrigues. C'est la plus ancienne trace de ce nom aux Seychelles que le projet connaît ; elle ne dit pas d'où venaient les familles qui le portaient.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Mahé [Seychelles] : mariages, table des patronymes en LAR",
+                "author": "Cercle de Généalogie Maurice-Rodrigues",
+                "year": null,
+                "url": "https://cgmrgenealogie.org/tab_mari.php/Mah%C3%A9+%5BSEYCHELLES%5D/_LAR",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Base de données d'une association de généalogie, qui dépouille les tables et actes d'état civil, les registres paroissiaux et les registres d'inhumation. Lue le 18 octobre 2026. Le patronyme LARUE y figure dans les mariages de Mahé pour la période 1820-1900, avec 14 et 12 mentions dans deux colonnes, « Intervenant 1 » et « Intervenant 2 », que la page ne définit pas. Le détail des actes n'a pas été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le Dictionary of American Family Names décrit Larue comme un nom topographique français pour une personne vivant près d'une route ou d'un chemin, ou comme un nom d'habitation tiré d'un lieu La Rue. La branche seychelloise n'est pas localisée par cette seule notice.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Larue Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/larue?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e édition, Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 18 octobre 2026 dans la traduction française que le site affiche. La notice fait de Larue un nom français topographique, pour une personne qui vivait au bord d'une voie, de l'ancien français rue avec l'article la soudé, ou un nom d'habitation tiré de La Rue, nom de plusieurs lieux de France. Elle renvoie à Delarue et à Rue ; une dernière ligne, mal traduite, la rapproche de Leroux. Elle ne parle pas des Seychelles."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

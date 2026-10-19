@@ -31,20 +31,9 @@
   "designatedSocialUnit": "lineage",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Le répertoire provisoire fait des Tapsoba les descendants de Naba Oubri et de Naba Weèga venus de Gambaga. Il rattache la naissance du nom à la promesse d'Oubri de tendre un arc au nom de son frère pour défendre leurs oncles à Guiloungou. Ce récit n'est pas attribué à un informateur et n'est pas corroboré par une étude historique dédiée.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["burkina-provisional-patronyme-register"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "La notice TAPSOBA traduit le nom par « détenteur de l'arc » dans le cadre de son récit d'Oubri et Weèga. Faute d'analyse morphologique publiée consultable, cette traduction reste une glose collectée.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["burkina-provisional-patronyme-register"]
-      }
-    ]
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -203,7 +192,8 @@
                 "page": "p. 199-200",
                 "notes": "Document de travail daté de mai 2025 et marqué « version provisoire », lu le 11 octobre 2026 dans une copie non officielle déposée sur PDFCoffee ; aucune publication officielle de ce répertoire n'a été trouvée. Les récits qu'il rapporte ne nomment pas de narrateur. Notice TAPSOBA, p. 199-200 : les Tapsoba descendraient de Naba Oubri et de Naba Weèga venus de Gambaga ; Oubri, venu défendre ses oncles à Guiloungou, aurait promis de « tendre un arc » au nom de son frère, « d'où la naissance du nom TAPSOBA qui veut dire « Détenteur de l'arc » ». La notice cite aussi les San comme parents à plaisanterie, et le hérisson, le lézard et le boulouboukou comme totems."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           },
           {
             "period": {
@@ -247,6 +237,27 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 42",
                 "notes": "Société internationale de linguistique, Ouagadougou, 2008. Lu dans le PDF le 11 octobre 2026. La section 6.4 cite la forme Tabsoba parmi les exemples de noms de famille mossi, sans en donner l'origine."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La notice TAPSOBA traduit le nom par « détenteur de l'arc » dans le cadre de son récit d'Oubri et Weèga. Faute d'analyse morphologique publiée consultable, cette traduction reste une glose collectée.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 199-200",
+                "notes": "Document de travail daté de mai 2025 et marqué « version provisoire », lu le 11 octobre 2026 dans une copie non officielle déposée sur PDFCoffee ; aucune publication officielle de ce répertoire n'a été trouvée. Les récits qu'il rapporte ne nomment pas de narrateur. Notice TAPSOBA, p. 199-200 : les Tapsoba descendraient de Naba Oubri et de Naba Weèga venus de Gambaga ; Oubri, venu défendre ses oncles à Guiloungou, aurait promis de « tendre un arc » au nom de son frère, « d'où la naissance du nom TAPSOBA qui veut dire « Détenteur de l'arc » ». La notice cite aussi les San comme parents à plaisanterie, et le hérisson, le lézard et le boulouboukou comme totems."
               }
             ]
           }

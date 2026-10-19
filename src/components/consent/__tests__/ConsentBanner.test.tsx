@@ -1,14 +1,14 @@
 // @req REQ-046
 // @req REQ-088
 import { describe, it, expect, vi, beforeEach } from "vitest";
-import { render, screen, fireEvent } from "@testing-library/react";
+import { render, screen, fireEvent, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { ConsentBanner } from "../ConsentBanner";
 import * as useConsentModule from "@/hooks/use-consent";
+import { consentCopy } from "@/lib/i18n/copy/consent";
 import { FALLBACK_LOCALE } from "@/lib/locale";
 import { getStaticPageRoute } from "@/lib/routing";
 
-// Mock the useConsent hook
 vi.mock("@/hooks/use-consent", () => ({
   useConsent: vi.fn(),
 }));
@@ -22,13 +22,34 @@ vi.mock("next/navigation", () => ({
   useParams: () => routeParams.current,
 }));
 
-// Mock ResizeObserver for any UI components that need it
+// Radix's switch measures itself.
 class ResizeObserverMock {
   observe = vi.fn();
   unobserve = vi.fn();
   disconnect = vi.fn();
 }
 global.ResizeObserver = ResizeObserverMock;
+
+const STRIP_NAME = "Gestion des cookies";
+
+// The order the strip is read in and tabbed through, at every width
+// (brief 12, approval record item 5).
+const CONTROL_ORDER = [
+  "Personnaliser",
+  "Politique de données",
+  "Refuser",
+  "Accepter",
+];
+
+function stripControls() {
+  const strip = screen.getByRole("dialog", { name: STRIP_NAME });
+  return [
+    within(strip).getByRole("button", { name: "Personnaliser" }),
+    within(strip).getByRole("link", { name: "Politique de données" }),
+    within(strip).getByRole("button", { name: "Refuser" }),
+    within(strip).getByRole("button", { name: "Accepter" }),
+  ];
+}
 
 describe("ConsentBanner", () => {
   const mockAcceptAll = vi.fn();
@@ -61,12 +82,7 @@ describe("ConsentBanner", () => {
     routeParams.current = { lang: "fr" };
   });
 
-  it("renders when showBanner is true", () => {
-    render(<ConsentBanner />);
-
-    expect(screen.getByText("Gestion des cookies")).toBeInTheDocument();
-  });
-
+  // @req REQ-046
   it("does not render when showBanner is false", () => {
     vi.mocked(useConsentModule.useConsent).mockReturnValue({
       ...defaultMockContext,
@@ -75,135 +91,200 @@ describe("ConsentBanner", () => {
 
     render(<ConsentBanner />);
 
-    expect(screen.queryByText("Gestion des cookies")).not.toBeInTheDocument();
+    expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
   });
 
-  it('has role="dialog"', () => {
+  // The strip has no visible title: it is named by the words of the footer
+  // button that reopens it.
+  it("is a dialog named « Gestion des cookies », with no heading", () => {
+    // @req REQ-046
     render(<ConsentBanner />);
 
-    const dialog = screen.getByRole("dialog");
-    expect(dialog).toBeInTheDocument();
+    const strip = screen.getByRole("dialog", { name: STRIP_NAME });
+    expect(strip).toHaveAttribute("aria-modal", "false");
+    expect(within(strip).queryByRole("heading")).not.toBeInTheDocument();
   });
 
-  it("has aria-labelledby attribute pointing to banner title", () => {
-    render(<ConsentBanner />);
-
-    const dialog = screen.getByRole("dialog");
-    const titleId = dialog.getAttribute("aria-labelledby");
-    expect(titleId).toBeTruthy();
-
-    const title = document.getElementById(titleId!);
-    expect(title).toBeInTheDocument();
-    expect(title?.textContent).toBe("Gestion des cookies");
-  });
-
-  it('calls acceptAll when "Accepter tout" button is clicked', async () => {
+  it("states what the measurement collects, and leaves the storage detail to « Personnaliser »", async () => {
+    // @req REQ-046
     const user = userEvent.setup();
     render(<ConsentBanner />);
 
-    const acceptButton = screen.getByRole("button", { name: /accepter tout/i });
-    await user.click(acceptButton);
+    const strip = screen.getByRole("dialog", { name: STRIP_NAME });
+    expect(within(strip).getByText(consentCopy.fr.strip)).toBeInTheDocument();
+    expect(within(strip).queryByText(/stockage local/)).not.toBeInTheDocument();
 
-    expect(mockAcceptAll).toHaveBeenCalledTimes(1);
+    await user.click(
+      within(strip).getByRole("button", { name: "Personnaliser" })
+    );
+
+    expect(within(strip).getByText(/stockage local/)).toBeInTheDocument();
   });
 
-  it('calls rejectAll when "Refuser" button is clicked', async () => {
-    const user = userEvent.setup();
+  // A pre-focused answer is the one a key press gives: refusing must be as
+  // easy as accepting, so the strip itself holds the focus.
+  it("takes the focus itself on arrival, not one of the two answers", () => {
+    // @req REQ-088
     render(<ConsentBanner />);
 
-    const rejectButton = screen.getByRole("button", { name: /refuser/i });
-    await user.click(rejectButton);
+    expect(screen.getByRole("dialog", { name: STRIP_NAME })).toHaveFocus();
+    expect(screen.getByRole("button", { name: "Accepter" })).not.toHaveFocus();
+    expect(screen.getByRole("button", { name: "Refuser" })).not.toHaveFocus();
+  });
+
+  it("refuses on Escape and gives the focus back to where it was", () => {
+    // @req REQ-088
+    const before = document.createElement("button");
+    document.body.appendChild(before);
+    before.focus();
+
+    render(<ConsentBanner />);
+    fireEvent.keyDown(screen.getByRole("dialog", { name: STRIP_NAME }), {
+      key: "Escape",
+      code: "Escape",
+    });
 
     expect(mockRejectAll).toHaveBeenCalledTimes(1);
+    expect(before).toHaveFocus();
+    before.remove();
   });
 
-  it('shows options panel when "Personnaliser" button is clicked', async () => {
+  it("puts « Personnaliser », « Politique de données », « Refuser », « Accepter » in that order", () => {
+    // @req REQ-046
+    render(<ConsentBanner />);
+
+    const controls = stripControls();
+    expect(controls.map((control) => control.textContent)).toEqual(
+      CONTROL_ORDER
+    );
+    for (let i = 1; i < controls.length; i += 1) {
+      expect(
+        controls[i - 1].compareDocumentPosition(controls[i]) &
+          Node.DOCUMENT_POSITION_FOLLOWING
+      ).toBeTruthy();
+    }
+  });
+
+  it("tabs from the strip through the four controls in their reading order", async () => {
+    // @req REQ-046
     const user = userEvent.setup();
     render(<ConsentBanner />);
 
-    // Initially, the customization panel should not be visible
-    expect(screen.queryByText("Cookies essentiels")).not.toBeInTheDocument();
+    const visited: (string | null)[] = [];
+    for (let i = 0; i < CONTROL_ORDER.length; i += 1) {
+      await user.tab();
+      visited.push(document.activeElement?.textContent ?? null);
+    }
 
-    const customizeButton = screen.getByRole("button", {
-      name: /personnaliser/i,
-    });
-    await user.click(customizeButton);
+    expect(visited).toEqual(CONTROL_ORDER);
+  });
 
-    // After clicking, the customization panel should be visible
-    expect(screen.getByText("Cookies essentiels")).toBeInTheDocument();
-    expect(screen.getByText("Cookies analytiques")).toBeInTheDocument();
+  // @req REQ-046
+  it("wraps Shift+Tab from the strip to the last control and Tab back to the first", async () => {
+    const user = userEvent.setup();
+    render(<ConsentBanner />);
+
+    await user.tab({ shift: true });
+    expect(screen.getByRole("button", { name: "Accepter" })).toHaveFocus();
+
+    await user.tab();
+    expect(screen.getByRole("button", { name: "Personnaliser" })).toHaveFocus();
+  });
+
+  // @req REQ-046
+  it("wraps focus around the controls when the « Personnaliser » panel is open", async () => {
+    const user = userEvent.setup();
+    render(<ConsentBanner />);
+
+    const strip = screen.getByRole("dialog", { name: STRIP_NAME });
+    await user.click(
+      within(strip).getByRole("button", { name: "Personnaliser" })
+    );
+    strip.focus();
+
+    await user.tab({ shift: true });
+    expect(
+      within(strip).getByRole("button", { name: "Accepter" })
+    ).toHaveFocus();
+
+    await user.tab();
+    expect(
+      within(strip).getByRole("switch", { name: "Cookies analytiques" })
+    ).toHaveFocus();
+  });
+
+  it("opens the « Personnaliser » panel above the two answers", async () => {
+    // @req REQ-046
+    const user = userEvent.setup();
+    render(<ConsentBanner />);
+
+    const customise = screen.getByRole("button", { name: "Personnaliser" });
+    expect(customise).toHaveAttribute("aria-expanded", "false");
+
+    await user.click(customise);
+
+    expect(customise).toHaveAttribute("aria-expanded", "true");
+    const panel = document.getElementById(
+      customise.getAttribute("aria-controls") ?? ""
+    );
+    expect(panel).toBeInTheDocument();
+    expect(
+      panel!.compareDocumentPosition(
+        screen.getByRole("button", { name: "Refuser" })
+      ) & Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+    expect(within(panel!).getByText("Cookies essentiels")).toBeInTheDocument();
+    expect(within(panel!).getByText("Cookies analytiques")).toBeInTheDocument();
     // The functional switch only ever cleared a Sentry user context, and no
     // Sentry runs: a switch that controls nothing is not offered.
     expect(screen.queryByText("Cookies fonctionnels")).not.toBeInTheDocument();
     expect(screen.queryByText(/Sentry/)).not.toBeInTheDocument();
   });
 
-  it("essential toggle is disabled", async () => {
+  // @req REQ-088
+  it("calls acceptAll when « Accepter » is pressed", async () => {
     const user = userEvent.setup();
     render(<ConsentBanner />);
 
-    // Open customization panel
-    const customizeButton = screen.getByRole("button", {
-      name: /personnaliser/i,
-    });
-    await user.click(customizeButton);
+    await user.click(screen.getByRole("button", { name: "Accepter" }));
 
-    // Essential switch should be disabled
-    const essentialSwitch = screen.getByRole("switch", {
-      name: /cookies essentiels/i,
-    });
-    expect(essentialSwitch).toBeDisabled();
+    expect(mockAcceptAll).toHaveBeenCalledTimes(1);
   });
 
-  it("calls rejectAll when Escape key is pressed", async () => {
+  // @req REQ-088
+  it("calls rejectAll when « Refuser » is pressed", async () => {
+    const user = userEvent.setup();
     render(<ConsentBanner />);
 
-    const dialog = screen.getByRole("dialog");
-    fireEvent.keyDown(dialog, { key: "Escape", code: "Escape" });
+    await user.click(screen.getByRole("button", { name: "Refuser" }));
 
     expect(mockRejectAll).toHaveBeenCalledTimes(1);
   });
 
-  it("allows keyboard navigation through interactive elements", async () => {
+  // @req REQ-046
+  it("keeps the essential switch locked on", async () => {
     const user = userEvent.setup();
     render(<ConsentBanner />);
 
-    // Start tabbing through elements
-    await user.tab();
+    await user.click(screen.getByRole("button", { name: "Personnaliser" }));
 
-    // Check that focus moves to interactive elements
-    const acceptButton = screen.getByRole("button", { name: /accepter tout/i });
-    const rejectButton = screen.getByRole("button", { name: /refuser/i });
-    const customizeButton = screen.getByRole("button", {
-      name: /personnaliser/i,
+    const essentialSwitch = screen.getByRole("switch", {
+      name: /cookies essentiels/i,
     });
-    const privacyLink = screen.getByRole("link", {
-      name: /politique de données/i,
-    });
-
-    // Verify all interactive elements are focusable (exist and are not disabled)
-    expect(acceptButton).not.toBeDisabled();
-    expect(rejectButton).not.toBeDisabled();
-    expect(customizeButton).not.toBeDisabled();
-    expect(privacyLink).toHaveAttribute(
-      "href",
-      getStaticPageRoute("fr", "dataPolicy")
-    );
+    expect(essentialSwitch).toBeDisabled();
+    expect(essentialSwitch).toBeChecked();
   });
 
   // The banner used to point at `/fr/confidentialite`, one of two hand-written
   // privacy pages that restated the canonical one. Those are gone; the link
   // names the page the footer and the site tree already name.
-  it("has a link to the privacy policy", () => {
+  // @req REQ-046
+  it("links to the data policy", () => {
     render(<ConsentBanner />);
 
-    const privacyLink = screen.getByRole("link", {
-      name: /politique de données/i,
-    });
-    expect(privacyLink).toHaveAttribute(
-      "href",
-      getStaticPageRoute("fr", "dataPolicy")
-    );
+    expect(
+      screen.getByRole("link", { name: "Politique de données" })
+    ).toHaveAttribute("href", getStaticPageRoute("fr", "dataPolicy"));
   });
 
   // @req REQ-140
@@ -212,34 +293,25 @@ describe("ConsentBanner", () => {
     render(<ConsentBanner />);
 
     expect(
-      screen.getByRole("link", { name: /politique de données/i })
+      screen.getByRole("link", { name: "Politique de données" })
     ).toHaveAttribute(
       "href",
       getStaticPageRoute(FALLBACK_LOCALE, "dataPolicy")
     );
   });
 
-  it("saves custom preferences when save button is clicked", async () => {
+  // @req REQ-046
+  it("saves custom preferences when « Enregistrer mes préférences » is pressed", async () => {
     const user = userEvent.setup();
     render(<ConsentBanner />);
 
-    // Open customization panel
-    const customizeButton = screen.getByRole("button", {
-      name: /personnaliser/i,
-    });
-    await user.click(customizeButton);
-
-    // Toggle analytics
-    const analyticsSwitch = screen.getByRole("switch", {
-      name: /cookies analytiques/i,
-    });
-    await user.click(analyticsSwitch);
-
-    // Save preferences
-    const saveButton = screen.getByRole("button", {
-      name: /enregistrer mes préférences/i,
-    });
-    await user.click(saveButton);
+    await user.click(screen.getByRole("button", { name: "Personnaliser" }));
+    await user.click(
+      screen.getByRole("switch", { name: /cookies analytiques/i })
+    );
+    await user.click(
+      screen.getByRole("button", { name: /enregistrer mes préférences/i })
+    );
 
     expect(mockUpdatePreferences).toHaveBeenCalledWith({
       essential: true,
@@ -270,7 +342,7 @@ describe("ConsentBanner", () => {
       screen.queryByRole("switch", { name: /vidéos tierces/i })
     ).not.toBeInTheDocument();
 
-    await user.click(screen.getByRole("button", { name: /personnaliser/i }));
+    await user.click(screen.getByRole("button", { name: "Personnaliser" }));
     const embedsSwitch = screen.getByRole("switch", {
       name: /vidéos tierces/i,
     });

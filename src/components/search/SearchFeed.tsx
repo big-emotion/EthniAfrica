@@ -16,14 +16,18 @@ import {
 import { FicheLinkBlock } from "@/components/search/feed/FicheLinkBlock";
 import { FurtherBlock } from "@/components/search/feed/FurtherBlock";
 import { LensesBlock } from "@/components/search/feed/LensesBlock";
+import { SeeAlso } from "@/components/search/feed/SeeAlso";
 import { OwedBlock } from "@/components/search/feed/OwedBlock";
 import {
   PlatesBlock,
   type FeedPlateItem,
 } from "@/components/search/feed/PlatesBlock";
 import { QuizBlock } from "@/components/search/feed/QuizBlock";
+import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
+import { SearchFeedContributionAction } from "@/components/search/feed/SearchFeedContributionAction";
 import { SearchFeedLayout } from "@/components/search/feed/SearchFeedLayout";
-import { ShortsBlock } from "@/components/search/feed/ShortsBlock";
+import { isOnName, ShortsBlock } from "@/components/search/feed/ShortsBlock";
+import { SpellingChoicesBlock } from "@/components/search/feed/SpellingChoicesBlock";
 import { OriginBlock } from "@/components/search/answer/OriginBlock";
 import { CountriesAnswer } from "@/components/search/feed/CountriesAnswer";
 import { SubjectAnswer } from "@/components/search/feed/SubjectAnswer";
@@ -35,6 +39,7 @@ import {
   type NextStepCard,
 } from "@/components/search/timeline/NameClosing";
 import { NameTimeline } from "@/components/search/timeline/NameTimeline";
+import { TimelineShortRow } from "@/components/search/timeline/TimelineShortRow";
 import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
 import { deduceSilences } from "@/lib/search/nameClosing";
 import { buildNameTimeline } from "@/lib/search/nameTimeline";
@@ -47,7 +52,7 @@ import { normalizeString } from "@/lib/normalize";
 import { ANSWER_BLOCKS, type FeedBlockId } from "@/lib/search/resultGrammar";
 import type { AnswerKind, WordAnswer } from "@/lib/search/answer";
 import type { NameAnswer } from "@/lib/search/nameAnswer";
-import type { NamingPresentationForm } from "@/lib/search/naming";
+import { formKey, type NamingPresentationForm } from "@/lib/search/naming";
 import { planAnswerSubjects } from "@/lib/search/answerSubjectPlan";
 import { buildRelationSearchHref } from "@/lib/search/relationSearch";
 import { resolveNameOpening } from "@/lib/search/resolveNameOpening";
@@ -63,7 +68,12 @@ import {
   type FeedLensId,
 } from "@/lib/search/searchLenses";
 import { getLocalizedSearchResultName } from "@/lib/search/localizedResult";
-import { orderForSearch, searchedFormIn } from "@/lib/search/searchedName";
+import {
+  orderForSearch,
+  searchedAmong,
+  searchedFormIn,
+} from "@/lib/search/searchedName";
+import { foldNameForm } from "@/lib/search/nameAddress";
 import type { SearchFeedPresentation } from "@/lib/search/searchFeedPresentation";
 import type {
   SearchLead,
@@ -135,7 +145,13 @@ export interface SearchFeedProps {
   ) => void;
 }
 
-export type SearchFeedSurface = "answer" | "timeline" | "next";
+export type SearchFeedSurface =
+  | "answer"
+  | "timeline"
+  | "next"
+  // The one video of « Histoire du nom » (brief 11 §2), apart from the
+  // timeline's fiche link so the audit can tell a video from a fiche.
+  | "timeline_short";
 
 export interface SubjectNameHistory {
   subject: SearchResult;
@@ -153,6 +169,45 @@ function normalizedQueryId(query: string): string {
   );
 }
 
+/**
+ * A lead's label without its trailing bracket, the regexp migrations 110 and
+ * 111 score a people's forms with. 36 people fiches are filed with one
+ * (« Diola (Joola / Jola) »), and `name` arrives as filed: compared as is
+ * with the form that scored, « Diola » read as another name and the page
+ * wrote that the fiche Diola (Joola / Jola) also gives the name Diola. The
+ * bracketed label is also the one doctrine §1.1 keeps off the page.
+ */
+function leadLabel(label: string): string {
+  return label.replace(/\s*\([^)]*\)\s*$/, "").trim();
+}
+
+/**
+ * The name a lead's chip says: the form that scored (migration 110), not the
+ * filed name. « jarra » reaches Diarra through its spelling Jara, and only
+ * Jara is written almost the same way; where the reader searched, the form
+ * nearest to what they typed comes first and leads to the fiche (doctrine
+ * §1.1). A database without the migration names no form: the filed name.
+ * Migration 111 scores a people only on the pieces of its name fields that
+ * are one name (« Baganda / Ganda » gives Baganda and Ganda, « Hai//om »
+ * stays whole, « pl. Abaganda) » is never scored), so no fragment reaches
+ * the chip or its line.
+ */
+function leadForm(lead: SearchLead): string {
+  return leadLabel(lead.matchedForm?.trim() || lead.name);
+}
+
+/** Said of every choice only when each one is a family-name lead (DEC-075). */
+function writtenAlike(
+  leads: readonly SearchLead[],
+  nameSuggestions: readonly string[]
+): boolean {
+  return (
+    nameSuggestions.length === 0 &&
+    leads.length > 0 &&
+    leads.every((lead) => lead.type === "patronyme")
+  );
+}
+
 function resultForms(
   state: SearchFeedAnswerState,
   query: string,
@@ -165,25 +220,31 @@ function resultForms(
   if (state === "typo") {
     // Each suggestion is a new search the reader chooses; none is marked as
     // the searched form, because nothing the reader typed matched it. Reviewed
-    // terms come first: they are spellings we hold an answer for.
-    return [...nameSuggestions, ...leads.map((lead) => lead.name)].map(
-      (name) => ({
-        form: name,
-        subjectId: undefined,
-        qualifier: undefined,
-        selfGiven: null,
-        problematic: undefined,
-        searched: false,
-        href: nameHref(name),
-      })
-    );
+    // terms come first: they are spellings we hold an answer for. A form two
+    // fiches record (Ikumama, Iteso and Kumam) is one search, so one chip.
+    const names = new Map<string, string>();
+    for (const name of [...nameSuggestions, ...leads.map(leadForm)]) {
+      if (!names.has(foldNameForm(name))) names.set(foldNameForm(name), name);
+    }
+    return [...names.values()].map((name) => ({
+      form: name,
+      subjectId: undefined,
+      qualifier: undefined,
+      selfGiven: null,
+      problematic: undefined,
+      searched: false,
+      href: nameHref(name),
+    }));
   }
 
-  const wanted = normalizeString(query.trim());
   const forms = subjects.flatMap((subject) => {
     const subjectId = `${subject.type}:${subject.id}`;
     const presentation = subject.naming?.presentation.forms ?? [];
     const filedName = getLocalizedSearchResultName(subject, language);
+    const isSearched = searchedAmong(
+      [filedName, ...presentation.map(({ form }) => form)],
+      query
+    );
     // Operator decision 2026-10-08 (doctrine §1.1): where the reader searched,
     // the searched form comes first, the name a people gives itself right
     // after it, then the filed name and the others in the fiche's order.
@@ -195,23 +256,22 @@ function resultForms(
           subjectId,
           selfGiven: subject.autonym === subject.name ? true : null,
           problematic: undefined,
-          searched: normalizeString(filedName) === wanted,
+          searched: isSearched(filedName),
         },
         ...presentation.map((form) => ({
           ...form,
           subjectId,
-          searched: normalizeString(form.form) === wanted,
+          searched: isSearched(form.form),
           detail: formDetail(form),
         })),
       ],
       (form) => form.searched
     );
   });
+  // One chip per spelling, not per comparison key: « Kono » and « Kɔnɔ »
+  // compare equal (REQ-135) and are still two spellings the corpus writes.
   const unique = new Map(
-    forms.map((form) => [
-      `${form.subjectId}:${normalizeString(form.form)}`,
-      form,
-    ])
+    forms.map((form) => [`${form.subjectId}:${foldNameForm(form.form)}`, form])
   );
   return [...unique.values()];
 }
@@ -236,6 +296,43 @@ function formDetail(
     .filter(Boolean)
     .join(" · ");
   return text ? { text, evidence: form.evidence[0] } : undefined;
+}
+
+/**
+ * A card's line in the « Fiches » lens: the corpus line of the form that bears
+ * the card's name (brief 12). With no such form, or no line, the card shows
+ * none rather than a generic one.
+ */
+function ficheOwnLine(entry: SearchResult, name: string): string | undefined {
+  const key = formKey(name);
+  return entry.naming?.presentation.forms.find(
+    (form) => formKey(form.form) === key
+  )?.shortLine;
+}
+
+function recordedFicheLine(
+  entry: SearchResult,
+  query: string,
+  name: string,
+  copy: (typeof searchFeedCopy)[Language]
+): string | undefined {
+  const queryKey = foldNameForm(query);
+  const evidence = (entry.recordedIn ?? [])
+    .filter(
+      ({ fieldPath, text }) =>
+        fieldPath.startsWith("content.") &&
+        foldNameForm(text)
+          .split(/[^\p{L}\p{N}]+/u)
+          .includes(queryKey)
+    )
+    .sort((left, right) => right.text.length - left.text.length)[0];
+  if (!evidence) return undefined;
+  if (evidence.fieldPath.includes("spellings[]")) {
+    return copy.answer.recordedSpelling(name, evidence.text);
+  }
+  return evidence.text.length > query.length
+    ? evidence.text
+    : copy.answer.recordedName(name, evidence.text);
 }
 
 // @req REQ-178
@@ -264,6 +361,10 @@ export function SearchFeed({
   );
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [validatedOption, setValidatedOption] = useState<number | null>(null);
+  // The name each timeline has open, by subject. It lives here, not in the
+  // timeline: « Tout » unmounts the timeline, and the closing band must keep
+  // naming what the chips show when the reader comes back.
+  const [openNames, setOpenNames] = useState<Record<string, string>>({});
   const copy = searchFeedCopy[language];
   const answerCopy = nameAnswerCopy[language];
   const nameHref = useNameSearchHref(language);
@@ -271,19 +372,23 @@ export function SearchFeed({
     state === "widened" && subjects.length === 0 && results.length > 0;
   // A related-only answer shows no shelf, so that nothing unrelated sits under
   // it. A piece found by the reader's own word is the exception: it answers the
-  // very word that was typed.
+  // very word that was typed. A misspelling shows none either: with nothing
+  // answering, the companions come from the first lead, and a « Jeux » lens
+  // titled with the reader's spelling over a game about that lead would treat
+  // two names as one before the reader chose it (brief 16).
   const wordShorts = loadedCompanions.shorts.items.filter(
     ({ match }) => match.relation === "word"
   );
-  const companions: SearchCompanionsData = relatedOnly
-    ? {
-        subjects: [],
-        shorts: { count: wordShorts.length, items: wordShorts },
-        anecdotes: { count: 0, items: [] },
-        proverbs: { count: 0, items: [] },
-        quiz: { count: 0, item: null },
-      }
-    : loadedCompanions;
+  const companions: SearchCompanionsData =
+    relatedOnly || state === "typo"
+      ? {
+          subjects: [],
+          shorts: { count: wordShorts.length, items: wordShorts },
+          anecdotes: { count: 0, items: [] },
+          proverbs: { count: 0, items: [] },
+          quiz: { count: 0, item: null },
+        }
+      : loadedCompanions;
   const derivedForms = resultForms(
     state,
     query,
@@ -294,6 +399,37 @@ export function SearchFeed({
     nameHref
   );
   const forms = presentation?.appellations?.forms ?? derivedForms;
+  // A family-name lead is written almost like the query by construction
+  // (DEC-075: first letter kept, 0.4 at least, named by the form that
+  // scored). A people, a country or a family scores at 0.2 with no
+  // first-letter rule, and a reviewed term for any of its terms: of those the
+  // page says only that they resemble the name searched.
+  const typoWording = writtenAlike(leads, nameSuggestions)
+    ? {
+        heading: copy.answer.typoWrittenAlike.heading(forms.length),
+        summary: (name: string) =>
+          copy.answer.typoWrittenAlike.summary(
+            name,
+            forms.map(({ form }) => form)
+          ),
+      }
+    : {
+        heading: copy.answer.typoResembling.heading(forms.length),
+        summary: (name: string) =>
+          copy.answer.typoResembling.summary(name, forms.length),
+      };
+  // Under the chips, the fiche that records each form when the chip does not
+  // bear its filed name, bracket aside: Jara, which the fiche Diarra records.
+  const choiceForms = leads.flatMap((lead) => {
+    const form = leadForm(lead);
+    const name = leadLabel(lead.name);
+    if (foldNameForm(form) === foldNameForm(name)) return [];
+    return [
+      lead.type === "patronyme"
+        ? copy.answer.typoFormOf.familyName(form, name)
+        : copy.answer.typoFormOf.other(form, name),
+    ];
+  });
 
   const combinedPlates: FeedPlateItem[] = [
     ...companions.anecdotes.items.map((item) => ({
@@ -316,8 +452,25 @@ export function SearchFeed({
             (plateOrder.get(right.id) ?? Number.MAX_SAFE_INTEGER)
         )
       : combinedPlates;
+  // A misspelling's leads are its choices, never fiches it found. The search
+  // also finds a family-name lead by its spelling (Tchicaya for « tchikaya »),
+  // and the chip's search already leads to that fiche: listed again under
+  // « Une autre fiche trouvée », it would be a second way to the same name,
+  // presented as tied to the spelling typed (brief 16, REQ-201).
+  const leadKeys = new Set(leads.map(({ type, id }) => `${type}:${id}`));
+  const listedResults =
+    state === "typo"
+      ? results.filter(({ type, id }) => !leadKeys.has(`${type}:${id}`))
+      : results;
+  const withheldLeads = results.length - listedResults.length;
   const ficheEntries =
-    results.length > 0 ? groupPeopleResults([...results]) : leads;
+    state === "recorded"
+      ? [...results]
+      : state === "typo"
+        ? groupPeopleResults([...listedResults])
+        : results.length > 0
+          ? groupPeopleResults([...results])
+          : leads;
   const derivedFicheRows = ficheEntries.map((entry, index): FeedFicheItem =>
     entry.type === "peopleGroup"
       ? {
@@ -333,12 +486,37 @@ export function SearchFeed({
       : {
           kind: getSearchEntityLabel(entry.type),
           name: getLocalizedSearchResultName(entry, language),
-          meta: copy.blocks.ficheMeta,
+          meta:
+            state === "recorded"
+              ? recordedFicheLine(
+                  entry as SearchResult,
+                  query,
+                  getLocalizedSearchResultName(entry, language),
+                  copy
+                )
+              : copy.blocks.ficheMeta,
+          ...(state === "recorded" && { highlight: query }),
           href: ficheHrefFor(entry as SearchResult, language, nameHref),
           onNavigate: () => onResultNavigate?.(entry.type, index + 1),
         }
   );
   const ficheRows = presentation?.fiches?.items ?? derivedFicheRows;
+  // The « Fiches » lens sets the fiches that answer to the searched name apart
+  // from the ones found around it (brief 12). Subjects arrive as their own
+  // objects, so they are matched by type and id.
+  const subjectKeys = new Set(subjects.map(({ type, id }) => `${type}:${id}`));
+  const answersToName = ({ type, id }: { type: string; id: string }) =>
+    subjectKeys.has(`${type}:${id}`);
+  const lensFicheRows = derivedFicheRows.map((row, index): FeedFicheItem => {
+    const entry = ficheEntries[index];
+    return entry.type === "peopleGroup"
+      ? { ...row, onName: entry.members.some(answersToName) }
+      : {
+          ...row,
+          meta: ficheOwnLine(entry as SearchResult, row.name),
+          onName: answersToName(entry),
+        };
+  });
 
   // A relation browse ("the peoples of the Krou family") only replaces the
   // name-search movement when there is no subject to answer — a query that
@@ -367,6 +545,7 @@ export function SearchFeed({
   // the page: the word is then only one more thing the name can mean.
   const wordPage = wordAnswers.length > 0 && subjects.length === 0 && !relation;
   const displayName =
+    (state === "recorded" ? query.trim() : undefined) ??
     presentation?.answer?.name ??
     relationLabel ??
     opening.title ??
@@ -395,40 +574,53 @@ export function SearchFeed({
     subjects.length === 0 &&
     opening.entries.length > 0 &&
     (state === "unknown" || state === "typo");
+  // The page that admits it does not know the name asks for it once, in its
+  // verdict, and owes no card after it (brief 12, part A, approved
+  // 2026-10-17). A word page shares the state but answers.
+  const confesses =
+    state === "unknown" &&
+    !wordPage &&
+    !answeredByWord &&
+    !answeredByReview &&
+    !presentation?.answer;
   const verdict =
     presentation?.answer?.verdict ??
-    (answeredByWord
-      ? answerCopy.wordName
-      : answeredByReview
-        ? copy.answer.exact
-        : state === "unknown"
-          ? answerCopy.unknownName
-          : state === "typo"
-            ? copy.answer.typo
-            : state === "widened"
-              ? relation?.kind === "family" && relationLabel
-                ? copy.answer.relationFamilyVerdict(relationLabel)
-                : relation?.kind === "country"
-                  ? copy.answer.relationCountryVerdict(
-                      inCountry(relation.id, displayName, language)
-                    )
-                  : copy.answer.relatedOnly
-              : copy.answer.exact);
+    (state === "recorded"
+      ? copy.answer.recorded(ficheRows.length)
+      : answeredByWord
+        ? answerCopy.wordName
+        : answeredByReview
+          ? copy.answer.exact
+          : state === "unknown"
+            ? answerCopy.unknownName
+            : state === "typo"
+              ? copy.answer.typo
+              : state === "widened"
+                ? relation?.kind === "family" && relationLabel
+                  ? copy.answer.relationFamilyVerdict(relationLabel)
+                  : relation?.kind === "country"
+                    ? copy.answer.relationCountryVerdict(
+                        inCountry(relation.id, displayName, language)
+                      )
+                    : copy.answer.relatedOnly
+                : copy.answer.exact);
   const summary =
     presentation?.answer?.summary ??
-    (answeredByReview
-      ? copy.answer.exactSummary
-      : state === "unknown"
-        ? hasWordPiece
-          ? answerCopy.wordNameBody
-          : answerCopy.unknownNameBody
-        : state === "typo"
-          ? copy.answer.typoSummary(displayName)
-          : state === "widened"
-            ? isRelationBrowse
-              ? copy.answer.relationSummary
-              : copy.answer.widenedSummary
-            : copy.answer.exactSummary);
+    (state === "recorded"
+      ? ""
+      : answeredByReview
+        ? copy.answer.exactSummary
+        : state === "unknown"
+          ? hasWordPiece
+            ? answerCopy.wordNameBody
+            : answerCopy.unknownNameBody
+          : state === "typo"
+            ? typoWording.summary(displayName)
+            : state === "widened"
+              ? isRelationBrowse
+                ? copy.answer.relationSummary
+                : copy.answer.widenedSummary
+              : copy.answer.exactSummary);
   const relationEyebrow = isRelationBrowse
     ? copy.answer.relationEyebrow
     : undefined;
@@ -454,7 +646,12 @@ export function SearchFeed({
       shorts: companions.shorts.items.length,
       stories: plates.length,
       quiz: companions.quiz.item ? 1 : 0,
-      fiches: ficheRows.length > 0 ? (resultCount ?? ficheRows.length) : 0,
+      fiches:
+        ficheRows.length > 0
+          ? resultCount === undefined
+            ? ficheRows.length
+            : resultCount - withheldLeads
+          : 0,
     },
     copy.filters
   );
@@ -473,6 +670,7 @@ export function SearchFeed({
       answers: answered.length > 0,
       appellations: forms.length > 0,
       fiches: ficheRows.length > 0,
+      shorts: hasWordPiece,
     },
     { relatedOnly, wordPage }
   );
@@ -676,6 +874,44 @@ export function SearchFeed({
       }
     />
   );
+  // The one way a reader with a name we do not hold says so (brief 12).
+  const proposeSource = (
+    <SearchFeedContributionAction
+      language={language}
+      // The form only displays fieldLabel; the request carries the type, id
+      // and fieldPath, which stay as they were. Without it the form no longer
+      // prints « Nous nous sommes trompés ? », the question brief 12 part A
+      // removed from this page.
+      target={{ ...contributionTarget, fieldLabel: undefined }}
+      label={answerCopy.invitationAction}
+      preferredKind="contribution"
+      variant="outline"
+      // Board search-unknown-430 (`.ea-owed-action`): the button's own medium
+      // weight, on the accent tint, in the accent fill's ink. The page's body
+      // ink turns light at night on a tint that stays light (1.12:1).
+      className="min-h-11 border-[color:var(--accent)] bg-[color:var(--accent-tint)] py-0 text-[color:var(--accent-foreground)] hover:bg-[color:var(--accent-tint)] hover:text-[color:var(--accent-foreground)] hover:brightness-95"
+    />
+  );
+  // The same invitation for a spelling we do not hold (brief 16). Under the
+  // choices it stays quiet: the choice is that page's one action, and the
+  // accented button would be a second one, larger than the chip.
+  const proposeSpellingSource = (describedBy: string | undefined) => (
+    <SearchFeedContributionAction
+      language={language}
+      // As on the unknown-name page: the form does not ask « Nous nous sommes
+      // trompés ? ». The reader is saying where their spelling is used.
+      target={{ ...contributionTarget, fieldLabel: undefined }}
+      label={answerCopy.invitationAction}
+      preferredKind="contribution"
+      variant="ghost"
+      describedBy={describedBy}
+      // Board search-state-typo (`.ea-choices-action`), the quiet link of
+      // `.ea-lens-back`: no fill, no border, no hover lift. It wraps like the
+      // board's link: held on one line, text enlarged to 200 % on a 320 px
+      // phone pushed the page sideways.
+      className="h-auto min-h-11 justify-start whitespace-normal px-0 py-0 text-left font-bold text-[color:var(--accent-ink)] underline underline-offset-4 hover:bg-transparent hover:text-[color:var(--accent-ink)] motion-safe:hover:shadow-none"
+    />
+  );
   const nextStep = (
     <NameNextStep
       cards={nextSteps}
@@ -709,15 +945,38 @@ export function SearchFeed({
             entries={presentation?.answer ? [] : opening.entries}
             unanswered={presentation?.answer ? [] : opening.unanswered}
             kind={presentation?.answer?.kind}
-            eyebrow={presentation?.answer?.eyebrow ?? relationEyebrow}
+            eyebrow={
+              state === "unknown" ||
+              state === "typo" ||
+              (relatedOnly && !relation)
+                ? null
+                : (presentation?.answer?.eyebrow ?? relationEyebrow)
+            }
             language={language}
             tone={
               presentation?.answer?.tone ??
               (state === "typo" || state === "unknown" ? "plain" : "answer")
             }
+            action={confesses ? proposeSource : undefined}
           />
         );
       case "appellations":
+        // A misspelling's choices: each is a new search the reader chooses,
+        // the page's one action. A reviewed presentation keeps its own block.
+        if (state === "typo" && !presentation?.appellations) {
+          return (
+            <SpellingChoicesBlock
+              choices={forms.map(({ form }) => ({
+                name: form,
+                href: nameHref(form),
+              }))}
+              title={typoWording.heading}
+              forms={choiceForms}
+              invitation={copy.answer.typoInvitation(displayName)}
+              action={proposeSpellingSource}
+            />
+          );
+        }
         return (
           <AppellationsBlock
             key={query}
@@ -730,7 +989,7 @@ export function SearchFeed({
             )}
             title={
               presentation?.appellations?.title ??
-              (state === "typo" ? copy.answer.typoChoices : undefined)
+              (state === "typo" ? typoWording.heading : undefined)
             }
             subtitle={
               presentation?.appellations
@@ -819,6 +1078,17 @@ export function SearchFeed({
           />
         ) : null;
       case "fiches":
+        // A misspelling's fiches bear another name than the one searched:
+        // each card says what its fiche is about, under the caution.
+        if (state === "typo" && !presentation?.fiches) {
+          return (
+            <FichesBlock
+              foundFor={displayName}
+              items={lensFicheRows}
+              language={language}
+            />
+          );
+        }
         return (
           <FichesBlock
             items={ficheRows}
@@ -826,9 +1096,24 @@ export function SearchFeed({
             title={presentation?.fiches?.title}
             subtitle={presentation?.fiches?.subtitle ?? undefined}
             language={language}
+            recorded={state === "recorded"}
           />
         );
       case "owed":
+        // The verdict holds the page's one invitation: the closing keeps the
+        // silence and the conviction, and no card speaks of names not shown.
+        if (confesses) {
+          return (
+            <SearchFeedBlock id="owed" zone="closing">
+              <NameClosingBand
+                silences={[
+                  nameClosingCopy[language].silence.unknown(query.trim()),
+                ]}
+                language={language}
+              />
+            </SearchFeedBlock>
+          );
+        }
         return (
           <>
             {state === "unknown" ? (
@@ -921,11 +1206,30 @@ export function SearchFeed({
     const unwritten = ficheSubjects.filter(
       (subject) => !withHistory.has(`${subject.type}:${subject.id}`)
     );
+    const keyOf = (subject: SearchResult) => `${subject.type}:${subject.id}`;
+    // Brief 11 §2: the first piece made on the name, under the subject it is
+    // about. An `exact` piece names its subject; a `word` piece has none, so
+    // it goes under the first. The rest stay in the « Shorts » filter.
+    const timelineShort = companions.shorts.items
+      .filter(isOnName)
+      .map((item) => ({
+        item,
+        host:
+          item.match.relation === "word"
+            ? nameHistories[0]?.subject
+            : nameHistories.find(
+                ({ subject }) =>
+                  "entityId" in item.match &&
+                  keyOf(subject) ===
+                    `${item.match.entityType}:${item.match.entityId}`
+              )?.subject,
+      }))
+      .find(({ host }) => host);
     return (
       <SearchFeedLayout
         className="text-afh-text"
         reviewed={Boolean(presentation)}
-        first={renderBlock("lenses")}
+        first={null}
         blocks={[
           ...(sharedName
             ? [
@@ -950,15 +1254,44 @@ export function SearchFeed({
               countryIds={
                 subject.type === "country" ? [subject.id] : subject.countryIds
               }
-              sourcesOpen={index === 0}
               // One subject: the fiche link stays right under its timeline,
-              // before « Les sources parlent » (board search-peul-430).
+              // before « Les sources du nom … » (board search-peul-430).
               ficheLink={
                 !sharedName && index === 0
                   ? ficheLinkBlock("timeline")
                   : undefined
               }
+              video={
+                timelineShort?.host === subject ? (
+                  <TimelineShortRow
+                    item={timelineShort.item}
+                    subjectType={subject.type}
+                    language={language}
+                    onNavigate={() =>
+                      onResultNavigate?.("short", 1, "timeline_short")
+                    }
+                  />
+                ) : undefined
+              }
+              openName={openNames[keyOf(subject)]}
+              onOpenNameChange={(nameText) =>
+                setOpenNames((open) => ({
+                  ...open,
+                  [keyOf(subject)]: nameText,
+                }))
+              }
               language={language}
+              seeAlso={
+                index === 0 ? (
+                  <SeeAlso
+                    language={language}
+                    reviewed={Boolean(presentation)}
+                    lenses={lenses}
+                    active={activeLens}
+                    onChange={setActiveLens}
+                  />
+                ) : undefined
+              }
             />
           )),
           ...(unwritten.length > 0
@@ -1010,10 +1343,18 @@ export function SearchFeed({
           // correct, then one or two names to read next.
           <NameClosingBand
             key="timeline-closing"
+            // The band speaks of the name each timeline has open (brief 11
+            // §1d), as « Les sources du nom … » already does.
             silences={deduceSilences(
-              nameHistories.map(({ nameHistory }) => ({
-                name: buildNameTimeline(nameHistory, query).names[0],
-              })),
+              nameHistories.map(({ subject, nameHistory }) => {
+                const { names } = buildNameTimeline(nameHistory, query);
+                return {
+                  name:
+                    names.find(
+                      ({ nameText }) => nameText === openNames[keyOf(subject)]
+                    ) ?? names[0],
+                };
+              }),
               unwritten.map((subject) => ({
                 label: getSearchEntityLabel(subject.type),
                 name: getLocalizedSearchResultName(subject, language),
@@ -1046,7 +1387,21 @@ export function SearchFeed({
       ),
       stories: renderBlock("plates"),
       quiz: renderBlock("quiz"),
-      fiches: renderBlock("fiches"),
+      fiches: presentation?.fiches?.items ? (
+        renderBlock("fiches")
+      ) : (
+        <FichesBlock
+          lens={isRelationBrowse ? "ungrouped" : "grouped"}
+          // A misspelling's fiches keep the caution of « Tout »: only the
+          // search ties them to the spelling typed (Onana to « konana », by
+          // its trigram score), and « Autour de ce nom » would call them
+          // linked.
+          foundFor={state === "typo" ? displayName : undefined}
+          items={lensFicheRows}
+          reviewed={Boolean(presentation)}
+          language={language}
+        />
+      ),
     };
     return (
       <SearchFeedLayout
@@ -1058,7 +1413,9 @@ export function SearchFeed({
             key="lens-title"
             className="font-afh-display text-afh-h1 font-black leading-[var(--afh-leading-h1)] text-afh-text [overflow-wrap:anywhere]"
           >
-            {copy.lens.title[activeLens](displayName)}
+            {state === "typo" && activeLens === "fiches"
+              ? copy.lens.fichesFoundTitle(displayName)
+              : copy.lens.title[activeLens](displayName)}
           </h1>,
           <Fragment key="lens-content">{lensBlock[activeLens]}</Fragment>,
           <div key="lens-back">

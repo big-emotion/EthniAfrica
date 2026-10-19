@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une liste de noms bété publiée par un média ivoirien présente Zadi comme un nom de jumeaux, et non comme un nom de clan.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["afriksoir-2021-noms-bete"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -189,7 +184,8 @@
                 "source_kind": "press",
                 "notes": "Article du 14 février 2021, relu le 11 octobre 2026. La liste donne « Zadi : Nom de jumeaux », sans citer de source ni dire qui a recueilli cette explication."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           },
           {
             "period": {

@@ -32,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une contribution utilisateur rattache El Fayoumi au gouvernorat égyptien du Fayoum. La proposition est cohérente avec la forme de nisba, mais demeure non vérifiée faute de référence savante propre au patronyme.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["forebears-el-fayoumi"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -209,6 +204,26 @@
                 "source_kind": "archive",
                 "page": "p. 202",
                 "notes": "Le Caire, Imprimerie nationale, 1888. Lu le 14 octobre 2026 sur la copie numérisée d'archive.org, aux pages indiquées. Page 202 : « En 1137 est mort le savant imam du Hadith cheikh Ibrahim, fils de Moussa el Fayoumi el Maleki, cheikh de la mosquée de El Azhar. » Le texte ne dit pas pourquoi il porte ce nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une contribution utilisateur rattache El Fayoumi au gouvernorat égyptien du Fayoum. La proposition est cohérente avec la forme de nisba, mais demeure non vérifiée faute de référence savante propre au patronyme.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "El Fayoumi Surname Origin, Meaning & Last Name History — Forebears",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://forebears.io/surnames/el_fayoumi",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Répertoire communautaire consulté le 2 septembre 2026. Il recense El Fayoumi principalement en Égypte et reproduit une proposition utilisateur le dérivant du gouvernorat du Fayoum, sans référence."
               }
             ]
           }

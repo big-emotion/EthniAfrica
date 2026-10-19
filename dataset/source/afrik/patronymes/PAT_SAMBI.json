@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -62,10 +63,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "la recherche web et bibliographique combinant « Sambi », « Comoros », « Comorian », « surname », « onomastics », « etymology », « Lozi » et « transmission », ainsi que la consultation directe de « Sambi Surname Origin, Meaning & Last Name History » n'ont livré aucune tradition attribuée, chronique ou étude linguistique établissant l'origine de Sambi. Les rapprochements fondés uniquement sur la géographie, une biographie ou une contribution non référencée ont été écartés."
-    },
     {
       "fieldPath": "nameSystem",
       "reason": "la recherche web et bibliographique combinant « Sambi », « Comoros », « Comorian », « surname », « onomastics », « etymology », « Lozi » et « transmission », ainsi que la consultation directe de « Sambi Surname Origin, Meaning & Last Name History » n'ont pas établi que la catégorie provisoire « non_hereditary_patronymic » décrive Sambi lui-même ; elle reste un classement de travail et non une origine démontrée."

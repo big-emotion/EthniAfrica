@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Aghali-Zakara décrit chez les Touaregs des noms individuels donnés à la naissance, simples ou complexes. L’étude de terrain de Grégoire et Scholze atteste Rhissa dans la chaîne Rhissa ag Boula au Niger ; le croisement établit ici un usage personnel touareg, sans fournir l’étymon de Rhissa.",
-        "claimStatus": "established",
-        "sourceRefs": ["rhissa-aghali-zakara", "rhissa-ird"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -147,6 +142,37 @@
             "formAsWritten": "Rhissa",
             "birth": true,
             "sources": [
+              {
+                "title": "Identité, imaginaire et tourisme en pays touareg au Niger",
+                "author": "Emmanuel Grégoire et Marko Scholze",
+                "year": 2012,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers18-04/010072521.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6-7",
+                "notes": "Via, n° 2, 2012. Lu en texte intégral le 12 octobre 2026 dans le dépôt de l'IRD. Pages 6 et 7 : Rhissa ag Boula, ancien comptable de Mano Dayak, à qui revient le rôle de chef militaire de la rébellion touarègue, puis ministre du Tourisme dans les années 2000."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Aghali-Zakara décrit chez les Touaregs des noms individuels donnés à la naissance, simples ou complexes. L’étude de terrain de Grégoire et Scholze atteste Rhissa dans la chaîne Rhissa ag Boula au Niger ; le croisement établit ici un usage personnel touareg, sans fournir l’étymon de Rhissa.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Anthroponymie touarègue : dénominations multiples des individualités",
+                "author": "Mohamed Aghali-Zakara",
+                "year": 2003,
+                "url": "https://www.persee.fr/doc/onoma_0755-7752_2003_num_41_1_1452",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 221",
+                "notes": "Nouvelle revue d'onomastique, n° 41-42, 2003, p. 221-229, DOI 10.3406/onoma.2003.1452. Lu le 12 octobre 2026 sur Persée, où la première page se lit en ligne. Page 221 : le nom donné au septième jour de la naissance de l'enfant touareg est soit un nom touareg, soit un nom arabo-musulman ; un surnom s'y ajoute souvent et peut le remplacer."
+              },
               {
                 "title": "Identité, imaginaire et tourisme en pays touareg au Niger",
                 "author": "Emmanuel Grégoire et Marko Scholze",

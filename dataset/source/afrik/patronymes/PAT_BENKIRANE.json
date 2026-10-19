@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -62,10 +63,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Les recherches exactes « Benkirane anthroponymie », « Benkirane onomastique » et « Benkirane surname etymology » ont été menées dans Persée, ASJP, CRASC, OpenEdition, Google Scholar et des dépôts universitaires nord-africains. Aucun travail savant consacré à l’origine ou à l’histoire d’une lignée portant exactement cette graphie n’a été trouvé. La source propre au nom n’établit qu’une graphie ou une distribution et ne permet d’énoncer ni étymologie ni origine de lignée."
-    },
     {
       "fieldPath": "peoples",
       "reason": "Les recherches exactes « Benkirane anthroponymie », « Benkirane onomastique » et « Benkirane surname etymology » ont été menées dans Persée, ASJP, CRASC, OpenEdition, Google Scholar et des dépôts universitaires nord-africains. Aucun travail savant consacré à l’origine ou à l’histoire d’une lignée portant exactement cette graphie n’a été trouvé. La source propre au nom ne démontre pas une association exclusive avec le peuple indiqué par la file d’attente ; ce rattachement reste au niveau non vérifié."

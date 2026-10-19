@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -62,10 +63,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Les catalogues de l’IRCAM, de l’UMMTO, Persée, OpenEdition et Google Scholar ont été interrogés avec « Akhannouch patronyme », « Akhannouch étymologie », « ⴰⵅⵏⵏⵓⵛ » et « أخنوش أصل اللقب » ; aucune étude anthroponymique ou tradition attribuée n’a été trouvée."
-    },
     {
       "fieldPath": "transmissionMode",
       "reason": "La page gouvernementale n’atteste qu’un usage contemporain du nom. Les recherches « Akhannouch filiation », « famille Akhannouch généalogie » et leurs équivalents arabes n’ont pas établi la règle de transmission."

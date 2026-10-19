@@ -6,7 +6,7 @@
   },
   "id": "PAT_COKER",
   "nameMain": "Coker",
-  "nameSystem": "clan_name",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Coker",
@@ -19,16 +19,11 @@
     }
   ],
   "transmissionMode": "patrilineal",
-  "designatedSocialUnit": "lineage",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Dupraz et Simson citent Coker parmi les patronymes krio courants qui correspondent aux noms de colons européens connus. Ils distinguent ce cas des noms européens adoptés ultérieurement par des Africains libérés ; l'article ne désigne toutefois pas un fondateur individuel de la lignée Coker.",
-        "claimStatus": "established",
-        "sourceRefs": ["dupraz-simson-2024-krio"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -84,5 +79,105 @@
       "fieldPath": "homonyms",
       "reason": "l'article de Dupraz et Simson, son appareil bibliographique et les recherches exactes « Coker » associées aux Krio n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Coker est un nom de famille krio de Sierra Leone, d'origine anglaise. Il serait le nom d'un colon européen pris par des Africains libérés. Le projet ne connaît pas encore de trace écrite ancienne de ce nom en Sierra Leone.",
+    "names": [
+      {
+        "nameText": "Coker",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille krio de Sierra Leone, d'origine anglaise.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Décrit en 2022"
+            },
+            "statement": "Le nom Coker est d'abord un nom de famille anglais, tiré de villages du Somerset appelés Coker, d'après un nom de rivière celtique qui voudrait dire « tortueux », selon le Dictionary of American Family Names.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Coker",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/coker?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue le 18 octobre 2026 (texte anglais de la page). L'entrée dit : « English (southeastern): see Cocker. Habitational name from a group of villages in Somerset named with Coker, from a Celtic river name meaning ‘crooked’ »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "Décrit en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Coker est l'un des noms de famille les plus courants chez les Krio de Sierra Leone, où il passe du père aux enfants, selon Yannick Dupraz et Rebecca Simson.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Elite Persistence in Sierra Leone: What can names tell us? (African Economic History Working Paper No. 71)",
+                "author": "Yannick Dupraz et Rebecca Simson",
+                "year": 2023,
+                "url": "https://www.aehnetwork.org/wp-content/uploads/2023/03/71_AEHNWP_Dupraz_Simson.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9 ; p. 15",
+                "notes": "African Economic History Network, mars 2023, document de travail non relu par des pairs, selon sa page de garde ; la version publiée en 2024 dans le Journal of Development Economics n'a pas été lue. Lu dans le PDF intégral le 18 octobre 2026. Page 9 : les Krio portent pour la plupart des noms anglo-saxons associés aux premiers colons venus des Amériques ou aux administrateurs et colons britanniques, « such as Cole, Davies, Johnson and Williams ». Page 15 : chez les Krio, le nom passe du père aux enfants ; « The liberated Africans in contrast, adopted European names on or after arrival. Many adopted the names of employers, foster families, or administrators. Some of the most common Krio surnames are names of known European settlers (Cole, Coker). »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "Proposé en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Coker serait, chez les Krio, celui d'un colon européen connu, que des Africains libérés ont pris à leur arrivée en Sierra Leone ou après, selon Yannick Dupraz et Rebecca Simson. Beaucoup prenaient alors le nom d'un employeur, d'une famille d'accueil ou d'un administrateur.",
+            "hypothesisGroup": "origine-coker",
+            "sources": [
+              {
+                "title": "Elite Persistence in Sierra Leone: What can names tell us? (African Economic History Working Paper No. 71)",
+                "author": "Yannick Dupraz et Rebecca Simson",
+                "year": 2023,
+                "url": "https://www.aehnetwork.org/wp-content/uploads/2023/03/71_AEHNWP_Dupraz_Simson.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9 ; p. 15",
+                "notes": "African Economic History Network, mars 2023, document de travail non relu par des pairs, selon sa page de garde ; la version publiée en 2024 dans le Journal of Development Economics n'a pas été lue. Lu dans le PDF intégral le 18 octobre 2026. Page 9 : les Krio portent pour la plupart des noms anglo-saxons associés aux premiers colons venus des Amériques ou aux administrateurs et colons britanniques, « such as Cole, Davies, Johnson and Williams ». Page 15 : chez les Krio, le nom passe du père aux enfants ; « The liberated Africans in contrast, adopted European names on or after arrival. Many adopted the names of employers, foster families, or administrators. Some of the most common Krio surnames are names of known European settlers (Cole, Coker). »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dupraz et Simson citent Coker parmi les patronymes krio courants qui correspondent aux noms de colons européens connus. Ils distinguent ce cas des noms européens adoptés ultérieurement par des Africains libérés ; l'article ne désigne toutefois pas un fondateur individuel de la lignée Coker.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Elite persistence in Sierra Leone: What can names tell us?",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.history.ox.ac.uk/publication/1532813/ora-hyrax",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Yannick Dupraz et Rebecca Simson, Journal of Development Economics 171 (2024), DOI 10.1016/j.jdeveco.2024.103333. La section sur les pratiques de dénomination indique que les patronymes krio passent du père aux enfants et cite Cole et Coker parmi les noms de colons européens connus. La page Oxford et le texte de l'article ont été contrôlés."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

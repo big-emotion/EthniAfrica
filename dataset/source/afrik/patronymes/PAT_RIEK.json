@@ -23,16 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Deux sources communautaires divergent : Wikinames donne à Riek le sens « problème », tandis que PaanLuel Wël rapporte « sanctuaire » ou « trouble ». Aucune analyse linguistique publiée n’a permis de départager ces propositions ; l’origine reste contested.",
-        "claimStatus": "contested",
-        "sourceRefs": [
-          "wikinames-south-sudan-2025",
-          "paanluel-riek-biography-2014"
-        ]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -235,6 +227,35 @@
                 "source_kind": "archive",
                 "page": "figure 5",
                 "notes": "Rapport de février 1986, déclassifié en 2012, lu sur la copie de la salle de lecture de la CIA mise en ligne par Internet Archive le 11 octobre 2026. La figure 5, organigramme du Mouvement populaire de libération du Soudan, nomme « Maj. Riek Marshar Teny » à la politique étrangère."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Deux sources communautaires divergent : Wikinames donne à Riek le sens « problème », tandis que PaanLuel Wël rapporte « sanctuaire » ou « trouble ». Aucune analyse linguistique publiée n’a permis de départager ces propositions ; l’origine reste contested.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "Wikinames South Sudan 2025",
+                "author": "Contributeurs de Wikinames South Sudan",
+                "year": 2025,
+                "url": "https://meta.wikimedia.org/wiki/Wikinames_South_Sudan_2025",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Collecte communautaire de noms sud-soudanais, relue le 11 octobre 2026. La ligne Riek porte : masculin, nuer, « Meaning problem ». Aucune source n'est donnée pour cette ligne."
+              },
+              {
+                "title": "Who is Dr. Riek Machar Teny?",
+                "author": "PaanLuel Wël Media",
+                "year": 2014,
+                "url": "https://paanluelwel2011.wordpress.com/2014/02/07/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Billet du 7 février 2014, relu le 11 octobre 2026 : « the boy was given the name Riek, which can either mean “shrine” or “trouble” ». Le billet ne cite ni linguiste ni informateur."
               }
             ]
           }

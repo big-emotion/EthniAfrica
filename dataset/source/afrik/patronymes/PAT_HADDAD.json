@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "La notice distingue au moins deux formations de Haddad : le nom de métier arabe signifiant « forgeron » et un patronyme tiré du nom personnel biblique Hadad. Ces voies indépendantes interdisent de réduire tous les porteurs à une seule origine.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["anu-haddad"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -237,6 +232,26 @@
                 "source_kind": "archive",
                 "page": "p. 87",
                 "notes": "Docteur L. Leclerc, médecin-major, chargé en 1857, après la soumission de la Grande Kabylie, de soigner les habitants du Djurdjura depuis Fort-Napoléon ; Paris, J.-B. Baillière ; exemplaire numérisé d'archive.org, dont la notice donne 1864. Page 87, lue sur l'image de la page imprimée : « Il en est qui doivent leur nom à cette industrie, ainsi le village de Taguemmount Haddâden, situé à quelques centaines de pas du Fort-Napoléon, dont le nom signifie la colline des forgerons. Une chose nous étonne, c'est que nous n'ayons pas ici une dénomination indigène, car haddad est arabe, et le fer se dit en kabyle ouzzal ». Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La notice distingue au moins deux formations de Haddad : le nom de métier arabe signifiant « forgeron » et un patronyme tiré du nom personnel biblique Hadad. Ces voies indépendantes interdisent de réduire tous les porteurs à une seule origine.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "HADDAD Origin of surname — ANU Museum of the Jewish People",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://dbs.anumuseum.org.il/skn/en/c6/e218199/Family_Name/HADDAD",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Notice de la base de recherche de l'ANU Museum of the Jewish People, consultée le 2 septembre 2026. Elle distingue une formation professionnelle arabe « forgeron » d'une formation patronymique sur le nom biblique Hadad et documente des attestations juives tunisiennes et marocaines. Elle ne confirme pas l'association générale aux Arabes d'Afrique."
               }
             ]
           }

@@ -17,9 +17,9 @@
         "accounts": [
           {
             "period": {
-              "from": null,
-              "to": null,
-              "label": "Classification exposée au présent par l'auteur"
+              "from": 1980,
+              "to": 1980,
+              "label": "Classification exposée en 1980"
             },
             "era": "modern",
             "aspect": "usage",
@@ -39,9 +39,9 @@
           },
           {
             "period": {
-              "from": null,
-              "to": null,
-              "label": "Usage décrit au présent par l'auteur"
+              "from": 1980,
+              "to": 1980,
+              "label": "Usage décrit en 1980"
             },
             "era": "modern",
             "aspect": "usage",
@@ -126,10 +126,11 @@
           {
             "period": {
               "from": 1949,
-              "to": 1963,
-              "label": "1949-1963"
+              "to": 1954,
+              "label": "1949-1954"
             },
-            "statement": "Le nom soudanique central sert à Joseph Greenberg, dans ses articles de 1949-1950, à nommer une famille à part. En 1954, il la range dans un ensemble macro-soudanique, puis, en 1963, dans le chari-nil, selon son propre tableau.",
+            "era": "colonial",
+            "statement": "Le nom soudanique central sert à Joseph Greenberg, dans ses articles de 1949-1950, à nommer une famille à part. En 1954, il la range dans un ensemble macro-soudanique, selon son propre tableau.",
             "actors": [
               {
                 "name": "Joseph H. Greenberg",

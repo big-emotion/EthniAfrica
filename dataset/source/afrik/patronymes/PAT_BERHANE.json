@@ -27,13 +27,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'entrée consultée présente Berhane, écrit ብርሃኔ, comme un nom personnel amharique signifiant « ma lumière ». La source ne permet pas de transformer cette glose en attribution ethnique exclusive.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["btn-berhane"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -181,6 +176,26 @@
                 "source_kind": "linguistic_reference",
                 "page": "col. 500",
                 "notes": "Leipzig, T. O. Weigel, 1865. Lu le 13 octobre 2026 sur l'exemplaire numérisé d'archive.org (bibliothèque de l'université de Toronto). Le dictionnaire est imprimé en colonnes. Colonne 500, entrée « ብርሃን » : « lux, lumen », avec des références bibliques ; le mot est aussi donné au pluriel et au sens de « splendeur ». Dillmann ne le donne pas comme nom de personne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'entrée consultée présente Berhane, écrit ብርሃኔ, comme un nom personnel amharique signifiant « ma lumière ». La source ne permet pas de transformer cette glose en attribution ethnique exclusive.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Berhane — Behind the Name",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.behindthename.com/name/berhane",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Entrée communautaire consultée le 2 septembre 2026 : elle donne la graphie amharique ብርሃኔ et la glose « my light ». Elle ne permet pas d'arbitrer entre usages amhariques et tigrinya ni d'établir un lignage."
               }
             ]
           }

@@ -31,13 +31,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Un récit publié en 2026, qui reproduit et résume un passage d'un ouvrage collectif de 1983 fondé sur des informations recueillies à Mvomeka'a auprès du patriarche Raymond Abondo, présente Biya'a comme le sobriquet d'Abondo Mengue, né d'une formule d'exaspération, puis transmis comme nom d'homonyme à Paul Biya. Cette chaîne indirecte reste revendiquée, non établie par consultation de l'ouvrage original.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["actu-cameroun-biya-2026"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -200,6 +195,27 @@
                 "source_kind": "intergovernmental",
                 "page": "notice du catalogue (titre et date)",
                 "notes": "Pétition T/PET.5/213, datée du 15 mai 1953 (2 pages), lue dans la notice de la bibliothèque numérique de l'ONU le 13 octobre 2026. Seuls le titre, la date et les mots-clés ont été lus, pas le texte de la pétition. Une notice T/PET.5/213/Add.1 la complète le 18 novembre 1953."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Un récit publié en 2026, qui reproduit et résume un passage d'un ouvrage collectif de 1983 fondé sur des informations recueillies à Mvomeka'a auprès du patriarche Raymond Abondo, présente Biya'a comme le sobriquet d'Abondo Mengue, né d'une formule d'exaspération, puis transmis comme nom d'homonyme à Paul Biya. Cette chaîne indirecte reste revendiquée, non établie par consultation de l'ouvrage original.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Origine du nom Biya : l'histoire méconnue révélée par Jean Paul Ntsengue",
+                "author": "Liliane Ndangue (actucameroun.com)",
+                "year": 2026,
+                "url": "https://actucameroun.com/2026/05/17/origine-du-nom-biya-lhistoire-meconnue-revelee-par-jean-paul-ntsengue/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "page": "article du 17 mai 2026, section « D'où vient le nom Biya ? »",
+                "notes": "Article de presse du 17 mai 2026, lu en entier le 13 octobre 2026. Jean Paul Ntsengue, qui se présente comme biographe du président, y reproduit un extrait de « Paul Biya ou l'incarnation de la rigueur », ouvrage collectif des Publications de l'Université de Yaoundé, Sopecam, 1983. L'extrait résume un récit recueilli à Mvomeka'a auprès du patriarche Raymond Abondo, oncle de Paul Biya. L'ouvrage de 1983 n'a pas été lu. La chaîne est donc : Raymond Abondo, puis l'ouvrage de 1983, puis Ntsengue, puis la presse."
               }
             ]
           }

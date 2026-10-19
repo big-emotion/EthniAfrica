@@ -41,13 +41,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "La notice YAMEOGO/NYAMEOGO associe le nom à la « force de la brousse » et le traduit par « chef de la brousse » ou « lion ». Aucune étude linguistique dédiée n'ayant été trouvée pour distinguer traduction, devise et interprétation symbolique, ces gloses restent contestées.",
-        "claimStatus": "contested",
-        "sourceRefs": ["burkina-provisional-patronyme-register"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -232,6 +227,27 @@
                 "source_kind": "archive",
                 "page": "p. 5",
                 "notes": "Bulletin de renseignement américain, déclassifié en 2020, lu sur la copie d'archive.org le 11 octobre 2026. Page 5 : « Upper Volta President Yameogo ». Document cité ici seulement pour la forme qu'il écrit."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La notice YAMEOGO/NYAMEOGO associe le nom à la « force de la brousse » et le traduit par « chef de la brousse » ou « lion ». Aucune étude linguistique dédiée n'ayant été trouvée pour distinguer traduction, devise et interprétation symbolique, ces gloses restent contestées.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 215",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de mai 2025 et marqué « version provisoire ». Lu le 11 octobre 2026 sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Notice YAMEOGO/NYAMEOGO : les Yaméogo « sont de la société des masques, originaires de Ziga, de Koupéla (Kourittengaa) » ; « Le patronyme YAMEOGO symbolise la force de la brousse et signifie « le chef de la brousse, le lion » »."
               }
             ]
           }

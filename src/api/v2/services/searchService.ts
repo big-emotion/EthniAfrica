@@ -29,6 +29,7 @@ import type {
   FtsSearchParams,
   FtsSearchResponse,
   RankedWord,
+  RecordedFieldEvidence,
 } from "@/types/afrik";
 
 type NamingRow = {
@@ -86,6 +87,44 @@ function projectWord(word: RankedWord): RankedWord {
   };
 }
 
+function stringsAtPath(value: unknown, path: string): string[] {
+  const segments = path.replace(/^content\./, "").split(".");
+  const visit = (current: unknown, index: number): string[] => {
+    if (index === segments.length) {
+      return typeof current === "string" ? [current] : [];
+    }
+    const segment = segments[index];
+    const array = segment.endsWith("[]");
+    const key = array ? segment.slice(0, -2) : segment;
+    if (!current || typeof current !== "object" || !(key in current)) return [];
+    const child = (current as Record<string, unknown>)[key];
+    if (array) {
+      return Array.isArray(child)
+        ? child.flatMap((item) => visit(item, index + 1))
+        : [];
+    }
+    return visit(child, index + 1);
+  };
+  return path.startsWith("content.") ? visit(value, 0) : [];
+}
+
+function recordedFieldEvidence(
+  kind: string,
+  id: string,
+  rows: { id: string; content?: unknown }[],
+  recordedTerms: FtsSearchResponse["recordedTerms"]
+): RecordedFieldEvidence[] {
+  const row = rows.find((candidate) => candidate.id === id);
+  if (!row?.content) return [];
+  const match = recordedTerms?.find(
+    (candidate) => candidate.kind === kind && candidate.id === id
+  );
+  return (match?.recordedIn ?? []).flatMap((fieldPath) => {
+    const text = stringsAtPath(row.content, fieldPath);
+    return text.map((value) => ({ fieldPath, text: value }));
+  });
+}
+
 // @req REQ-002
 export async function ftsSearch(
   params: FtsSearchParams
@@ -105,7 +144,16 @@ export async function ftsSearch(
     loadSearchNamingData(subjects),
     loadSearchAnswerExtras(subjects),
   ]);
-
+  const rowsByKind = {
+    people: result.peoples,
+    country: result.countries,
+    family: result.families,
+    person: result.persons,
+    patronyme: result.patronymes,
+    language: result.languages,
+    place: result.places ?? [],
+    word: result.words ?? [],
+  };
   return {
     ...result,
     peoples: projectRows("people", result.peoples, namingData, answerExtras),
@@ -134,5 +182,15 @@ export async function ftsSearch(
       answerExtras
     ),
     ...(result.words ? { words: result.words.map(projectWord) } : {}),
+    results: result.results.map((hit) => {
+      const kind = hit.kind === "languageFamily" ? "family" : hit.kind;
+      const recordedIn = recordedFieldEvidence(
+        kind,
+        hit.id,
+        rowsByKind[kind as keyof typeof rowsByKind] ?? [],
+        result.recordedTerms
+      );
+      return recordedIn.length > 0 ? { ...hit, recordedIn } : hit;
+    }),
   };
 }

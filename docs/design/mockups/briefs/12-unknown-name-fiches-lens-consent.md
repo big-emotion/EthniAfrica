@@ -2,7 +2,7 @@
 
 Read [`README.md`](README.md), [`01-result-page-timeline.md`](01-result-page-timeline.md)
 and [`../../mockup-first-workflow.md`](../../mockup-first-workflow.md) first.
-Written 2026-10-17. Status: **approved 2026-10-17 by delegation.** The
+Written 2026-10-17. Status: **brief 12 approved 2026-10-17 by delegation; the consent-strip order update approved by the operator in chat on 2026-10-18.** The
 operator asked Claude on 2026-10-17 to approve these boards on their behalf
 (« approuver les maquettes pour moi »). Claude approved them after an
 art-direction review whose blocking finding (the Siwi and Tchad reasons) was
@@ -30,6 +30,7 @@ Prompt: [`claude-design-prompt-12.md`](claude-design-prompt-12.md).
    768, 880 px at 1440).
 6. Left to a copy change, outside these boards: the « Cookies analytiques »
    switch is described « sans cookie ».
+7. On 2026-10-18, the operator approved the repository proposal in chat: quiet links on the left from 768 px, with the quiet pair above the answers at 430 px so the on-screen and keyboard orders match. The approved repository boards are the implementation reference for ETNI-2108; the Claude canvas was not synchronized in this run.
 
 This is **pass 3** of the three board passes the operator approved on
 2026-10-17. It starts once pass 2 ([brief 11](11-result-page-self-name-handoff.md))

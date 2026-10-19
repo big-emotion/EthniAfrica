@@ -40,20 +40,9 @@
   "designatedSocialUnit": "lineage",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Le répertoire provisoire raconte que, parmi deux frères, celui qui avait reçu les attributs de chasse aurait rapporté un éléphant à son frère devenu chef et aurait alors été qualifié de Nikièma. Ce récit collecté n'est pas attribué à un témoin et n'est pas corroboré par une étude historique.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["burkina-provisional-patronyme-register"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "La notice NIKIEMA/NITIEMA propose plusieurs gloses — « hommes forts », « bras valides », descendants de Rialé, personne bien portante ou digne, puis « brave homme » dans le récit du chasseur. Leur articulation linguistique n'étant pas démontrée, elles restent des interprétations collectées et contestées.",
-        "claimStatus": "contested",
-        "sourceRefs": ["burkina-provisional-patronyme-register"]
-      }
-    ]
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -126,5 +115,162 @@
       "fieldPath": "homonyms",
       "reason": "Les graphies Nikiéma, Nikiema et Nitiema ont été comparées dans la liste SIL, le répertoire et les catalogues savants ; aucune lignée distincte homonyme n'a été établie."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Nikiéma, qu'on écrit aussi Nitiema, est un nom de famille mossi du Burkina Faso. Son sens est discuté : un projet de répertoire officiel en donne plusieurs explications, que nous présentons plus bas. Le projet ne connaît pas encore de trace écrite ancienne de ce nom.",
+    "names": [
+      {
+        "nameText": "Nikiéma",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille mossi du Burkina Faso, écrit aussi Nitiema ; son sens est discuté.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "Décrit en 2008"
+            },
+            "era": "modern",
+            "statement": "Le nom Nikiéma est un nom de famille mossi, au Burkina Faso : Urs et Idda Niggli le citent parmi leurs exemples de noms de famille mossi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Noms des Kasena",
+                "author": "Urs et Idda Niggli",
+                "year": 2008,
+                "url": "https://sil-burkina.org/sites/default/files/Noms%20des%20Kassena.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 42",
+                "notes": "Société internationale de linguistique, Ouagadougou, 2008. Lu dans le PDF intégral le 18 octobre 2026. La section 6.4, « Exemples de noms de famille mossi », cite Nikiéma, sans en donner le sens."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Proposé en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Nikiéma voudrait dire « les hommes forts », « les bras valides » ou « une personne bien portante, digne », selon le projet de répertoire des patronymes du Burkina Faso.",
+            "hypothesisGroup": "sens-nikiema",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 157",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de mai 2025 et marqué « version provisoire » sur sa page de titre. Lu le 18 octobre 2026 dans le navigateur, sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Les pages sont celles du document, repérées par leurs numéros en bas de page. Notice n° 861, NIKIEMA/ NITIEMA : « Le patronyme NIKIEMA / NITIEMA signifie « les hommes forts », « les bras valides » descendants de Rialé ou « une personne bien portante, digne ». » Suit le récit de deux frères : l'un hérite du trône, l'autre des attributs de chasse de leur père ; le second ramène un éléphant au premier, et « le chef le qualifia en Moore de « Nikièma » qui veut dire « un brave homme » ». « Ce sont des Mosse » des provinces du Zoundwéogo et du Kadiogo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Proposé en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Nikiéma viendrait d'un mot moore qui veut dire « un brave homme » : un chef l'aurait donné à son frère, revenu de la chasse avec un éléphant, selon un récit du même projet de répertoire.",
+            "hypothesisGroup": "sens-nikiema",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 157",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de mai 2025 et marqué « version provisoire » sur sa page de titre. Lu le 18 octobre 2026 dans le navigateur, sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Les pages sont celles du document, repérées par leurs numéros en bas de page. Notice n° 861, NIKIEMA/ NITIEMA : « Le patronyme NIKIEMA / NITIEMA signifie « les hommes forts », « les bras valides » descendants de Rialé ou « une personne bien portante, digne ». » Suit le récit de deux frères : l'un hérite du trône, l'autre des attributs de chasse de leur père ; le second ramène un éléphant au premier, et « le chef le qualifia en Moore de « Nikièma » qui veut dire « un brave homme » ». « Ce sont des Mosse » des provinces du Zoundwéogo et du Kadiogo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le répertoire provisoire raconte que, parmi deux frères, celui qui avait reçu les attributs de chasse aurait rapporté un éléphant à son frère devenu chef et aurait alors été qualifié de Nikièma. Ce récit collecté n'est pas attribué à un témoin et n'est pas corroboré par une étude historique.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 157",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de mai 2025 et marqué « version provisoire » sur sa page de titre. Lu le 18 octobre 2026 dans le navigateur, sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Les pages sont celles du document, repérées par leurs numéros en bas de page. Notice n° 861, NIKIEMA/ NITIEMA : « Le patronyme NIKIEMA / NITIEMA signifie « les hommes forts », « les bras valides » descendants de Rialé ou « une personne bien portante, digne ». » Suit le récit de deux frères : l'un hérite du trône, l'autre des attributs de chasse de leur père ; le second ramène un éléphant au premier, et « le chef le qualifia en Moore de « Nikièma » qui veut dire « un brave homme » ». « Ce sont des Mosse » des provinces du Zoundwéogo et du Kadiogo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La notice NIKIEMA/NITIEMA propose plusieurs gloses — « hommes forts », « bras valides », descendants de Rialé, personne bien portante ou digne, puis « brave homme » dans le récit du chasseur. Leur articulation linguistique n'étant pas démontrée, elles restent des interprétations collectées et contestées.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 157",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de mai 2025 et marqué « version provisoire » sur sa page de titre. Lu le 18 octobre 2026 dans le navigateur, sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Les pages sont celles du document, repérées par leurs numéros en bas de page. Notice n° 861, NIKIEMA/ NITIEMA : « Le patronyme NIKIEMA / NITIEMA signifie « les hommes forts », « les bras valides » descendants de Rialé ou « une personne bien portante, digne ». » Suit le récit de deux frères : l'un hérite du trône, l'autre des attributs de chasse de leur père ; le second ramène un éléphant au premier, et « le chef le qualifia en Moore de « Nikièma » qui veut dire « un brave homme » ». « Ce sont des Mosse » des provinces du Zoundwéogo et du Kadiogo."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nitiema",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Usage contemporain",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Décrit en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Nitiema est une autre forme de Nikiéma : le projet de répertoire des patronymes du Burkina Faso les réunit dans une même notice.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 157",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de mai 2025 et marqué « version provisoire » sur sa page de titre. Lu le 18 octobre 2026 dans le navigateur, sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Les pages sont celles du document, repérées par leurs numéros en bas de page. Notice n° 861, NIKIEMA/ NITIEMA : « Le patronyme NIKIEMA / NITIEMA signifie « les hommes forts », « les bras valides » descendants de Rialé ou « une personne bien portante, digne ». » Suit le récit de deux frères : l'un hérite du trône, l'autre des attributs de chasse de leur père ; le second ramène un éléphant au premier, et « le chef le qualifia en Moore de « Nikièma » qui veut dire « un brave homme » ». « Ce sont des Mosse » des provinces du Zoundwéogo et du Kadiogo."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

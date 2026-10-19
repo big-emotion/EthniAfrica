@@ -32,18 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une source communautaire consacrée à Boubacar le donne comme variante ouest-africaine d'Aboubacar, lui-même rattaché à Abubakar. Ryan atteste Abubakar dans la nomenclature islamique haoussa, mais aucune étude consultée ne documente directement la chaîne graphique Boubacar > Aboubacar > Abubakar ; elle demeure donc une proposition.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["btn-boubacar", "ryan-1981-boubacar"]
-      },
-      {
-        "claim": "Dans le système haoussa décrit par Chamo, un nom personnel peut servir de patronyme au sens strict sans se transmettre comme nom de famille héréditaire.",
-        "claimStatus": "established",
-        "sourceRefs": ["chamo-2018-boubacar"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -208,6 +198,56 @@
                 "source_kind": "archive",
                 "page": "tome I, p. 163",
                 "notes": "Paris, Guillaume Cavelier, 1728, tome I. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Traduction d'un écrit en arabe qui confirme le traité de Portendic du 6 mars 1723 : « Bovali fils de Boubacar Maure, Maître de l'Escale de Portendic, & Maître de Langue »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une source communautaire consacrée à Boubacar le donne comme variante ouest-africaine d'Aboubacar, lui-même rattaché à Abubakar. Ryan atteste Abubakar dans la nomenclature islamique haoussa, mais aucune étude consultée ne documente directement la chaîne graphique Boubacar > Aboubacar > Abubakar ; elle demeure donc une proposition.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Boubacar — Behind the Name",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.behindthename.com/name/boubacar",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page communautaire consultée directement. Elle relie Boubacar à Aboubacar puis à Abubakar. Cette chaîne graphique n'étant pas documentée par une étude dédiée dans les résultats consultés, elle reste classée non vérifiée."
+              },
+              {
+                "title": "An Introduction to Hausa Personal Nomenclature",
+                "author": "Pauline M. Ryan",
+                "year": 1981,
+                "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 142",
+                "notes": "Names, 29(2), 1981, p. 139-164. Lu dans le PDF intégral le 11 octobre 2026. Le tableau I donne Abubakar : « First Islamic Caliph ». L'article ne cite ni Boubacar ni Aboubacar."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans le système haoussa décrit par Chamo, un nom personnel peut servir de patronyme au sens strict sans se transmettre comme nom de famille héréditaire.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Language and Identity in Africa: The Use of Place Names as Part of a Person’s Name in Hausa",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://auadamu.com/phocadownload/Books/%5B2018%5D%20Festschrift%20in%20Honour%20of%20Abdalla%20Uba%20Adamu%20-%20Media%20-Knowledge%20Transfer%20and%20African%20Identity.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Isa Yusuf Chamo, 2018, pp. 251-252 du chapitre consulté dans le volume intégral. Établit le fonctionnement non héréditaire du patronyme haoussa ; ne traite pas l'étymologie de Boubacar."
               }
             ]
           }

@@ -14,6 +14,7 @@ let afrikRoot: string;
 
 const nameHistory = {
   summary: "Le nom Kongo a plusieurs origines possibles, présentées plus bas.",
+  originExplained: true,
   names: [
     {
       nameText: "Kongo",

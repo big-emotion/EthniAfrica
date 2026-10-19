@@ -32,18 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Selon André Arcin (1907), le nom Bangoura « peut vouloir dire : les fils de la terre ou de la lance ». Il le note en bas de page, sans donner de raison, et ajoute seulement qu'un roi de la dynastie songhay des Askia portait le diamou de Bangoura.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["arcin-1907-guinee-francaise"]
-      },
-      {
-        "claim": "Selon André Arcin (1907), « Bangoura » serait le nom que les Soso se donnent, et « Sisokho » le nom que des étrangers auraient donné à la même famille. Il juge cela « admissible » et le dit suggéré par de nombreux exemples semblables.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["arcin-1907-guinee-francaise"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -264,7 +254,8 @@
                 "page": "p. 282",
                 "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026, au numéro de page imprimé. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 282 : « il est donc admissible […] que « Bangoura » est le nom Soso, tandis que le mot « Sisokho » a été donné par des étrangers à cette famille Soso ». Il s'appuie sur un mot entendu d'un Peul du Sénégal (« Sosokho, presque Sousoukho », chef soso en soninké) et d'un Khasonké."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           },
           {
             "period": {
@@ -286,7 +277,8 @@
                 "page": "p. 303",
                 "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 16 octobre 2026, au numéro de page imprimé. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 303, note 1 : « Ce nom peut vouloir dire : les fils de la terre ou de la lance. »"
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           }
         ]
       },

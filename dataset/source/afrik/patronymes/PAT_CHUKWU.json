@@ -23,18 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le Dictionary of American Family Names décrit Chukwu comme un nom personnel igbo, forme courte de noms tels que Nwachukwu, fondée sur Chukwu, nom de l'être suprême dans la religion igbo traditionnelle et du Dieu chrétien.",
-        "claimStatus": "established",
-        "sourceRefs": ["hanks-chukwu"]
-      },
-      {
-        "claim": "Une étude des noms igbo explique que chi et chukwu, dans un nom, renvoient à un être supérieur, le plus haut des dieux que reconnaissent les Igbo.",
-        "claimStatus": "established",
-        "sourceRefs": ["asadu-nzuanke-2014-chi-names"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -222,6 +212,46 @@
                 "source_kind": "archive",
                 "page": "p. 22",
                 "notes": "Londres, 1855 ; exemplaire numérisé sur archive.org. Journal du Rév. Samuel Crowther, page 22 (en-tête « The Gospel Preached ») : à Onitsha, le chef Tshukuma « frequently repeated the names, ‘Oparra Tshuku! Oparra Tshuku!’ Son of God! Son of God! ». Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le Dictionary of American Family Names décrit Chukwu comme un nom personnel igbo, forme courte de noms tels que Nwachukwu, fondée sur Chukwu, nom de l'être suprême dans la religion igbo traditionnelle et du Dieu chrétien.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Chukwu Name Meaning and Chukwu Family History at FamilySearch",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.familysearch.org/en/surname?surname=chukwu",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Entrée Chukwu du Dictionary of American Family Names de Patrick Hanks (2003, 2006), hébergée par FamilySearch et consultée directement. La fiche du dictionnaire identifie explicitement la forme comme nom igbo du Nigeria."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une étude des noms igbo explique que chi et chukwu, dans un nom, renvoient à un être supérieur, le plus haut des dieux que reconnaissent les Igbo.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Onomastics and Translation: The Case of Igbo→English Translation of Chi Names",
+                "author": "Oluchukwu Asadu et Samson Fabian Nzuanke",
+                "year": 2014,
+                "url": "https://www.ajol.info/index.php/lwati/article/view/119750",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lwati: A Journal of Contemporary Research, vol. 11, no 3, 2014, p. 122-140 ; résumé lu sur la page de la revue le 13 octobre 2026. Les éléments chi et chukwu des noms igbo y renvoient à un être supérieur, le plus haut des dieux que reconnaissent les Igbo. L'étude porte sur les noms de trente étudiants de l'université Nnamdi Azikiwe, à Awka ; elle ne traite pas des noms de famille."
               }
             ]
           }

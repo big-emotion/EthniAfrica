@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le Dictionary of American Family Names traite Yohannes comme un nom personnel éthiopien et érythréen équivalent à John. Il précise que son enregistrement comme surname dans la diaspora ne reflète pas un nom familial héréditaire dans ces systèmes.",
-        "claimStatus": "established",
-        "sourceRefs": ["dafn-yohannes"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -132,7 +127,8 @@
                 "source_kind": "repository",
                 "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 11 octobre 2026. La notice dit : éthiopien et érythréen, du nom de personne Yohannes, équivalent de John ; les Éthiopiens et les Érythréens n'ayant pas de nom de famille héréditaire, ce nom n'a été enregistré comme tel qu'après l'émigration de ses porteurs aux États-Unis. Elle signale aussi une forme américaine de l'allemand Johannes, sans lien avec ce nom."
               }
-            ]
+            ],
+            "claimStatus": "established"
           },
           {
             "period": {

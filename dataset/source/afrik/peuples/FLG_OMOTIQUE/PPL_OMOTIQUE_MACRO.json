@@ -148,6 +148,93 @@
         "tier": "official",
         "source_kind": "linguistic_reference"
       }
+    ],
+    "searchAnswer": {
+      "lead": "Un regroupement par la langue, pas un peuple : chaque peuple omotique porte son propre nom. L'histoire du nom Omotique comme nom de langues est racontée avec la famille omotique."
+    }
+  },
+  "nameHistory": {
+    "summary": "Le nom Omotiques, ou peuples omotiques, réunit des peuples du sud-ouest de l'Éthiopie, comme les Wolaita, les Gamo, les Kafa, les Dawro ou les Aari, dont les langues sont surtout parlées dans le bassin de l'Omo. Ce n'est pas le nom d'un peuple : aucune source que nous avons lue ne donne un nom que ces peuples se donneraient tous ensemble, et chacun porte le sien. C'est d'abord un nom de linguiste pour une famille de langues, proposé autour de 1970, appliqué ensuite aux peuples qui les parlent. Nous présentons son histoire plus bas.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Omotiques",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Le linguiste Harold C. Fleming, pour des langues",
+        "shortLine": "Un nom de linguiste pour des langues du bassin de l'Omo, appliqué ensuite aux peuples qui les parlent.",
+        "periodLabel": "Pour des peuples depuis 2011 au moins",
+        "accounts": [
+          {
+            "period": {
+              "from": 2011,
+              "to": 2011,
+              "label": "2011"
+            },
+            "era": "modern",
+            "statement": "Le nom Omotiques désigne des peuples dans le titre d'une thèse soutenue en 2011 à l'université de Californie à Los Angeles par Shiferaw Alemu Assefa, Omotic Peoples and the Early History of Agriculture in Southern Ethiopia. L'auteur veut y reconstituer l'histoire des « sociétés omotiques » du sud-ouest de l'Éthiopie, à partir de leurs langues. C'est la plus ancienne trace de ce nom pour des peuples que le projet connaît. Ces peuples existaient déjà avant lui.",
+            "formAsWritten": "Omotic Peoples",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Omotic Peoples and the Early History of Agriculture in Southern Ethiopia",
+                "author": "Shiferaw Alemu Assefa",
+                "year": 2011,
+                "url": "https://eric.ed.gov/?id=ED549340",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "notice ERIC ED549340, titre et résumé",
+                "notes": "Thèse de doctorat, University of California, Los Angeles, ProQuest, 2011, 294 p. Nous avons lu la notice et le résumé de la base ERIC le 18 octobre 2026, pas la thèse elle-même : « The primary objective of this dissertation is to reconstruct the history of the Omotic societies of southwestern Ethiopia »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Omotiques renvoie chez Tadesse Tamrat à des langues : l'omotique est une des trois branches de la famille afro-asiatique parlées en Éthiopie, longtemps appelée couchitique occidental. Il écrit que ces langues étaient sans doute parlées par les habitants du sud-ouest du pays, entre les gorges du Nil Bleu et le bassin de l'Omo, où la plupart se concentrent aujourd'hui.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 17 : La Corne de l'Afrique : les Salomonides en Éthiopie et les États de la Corne de l'Afrique",
+                "author": "Tadesse Tamrat",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 459-460"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1971,
+              "to": 1973,
+              "label": "Conférence de 1971, publiée en 1973"
+            },
+            "era": "modern",
+            "statement": "On parle alors de langues omotiques : le linguiste Harold C. Fleming écrit avoir rebaptisé omotique le couchitique occidental, et en faire une famille distincte du couchitique.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Sub-classification in Hamito-Semitic, dans Lexicostatistics in Genetic Linguistics",
+                "author": "Harold C. Fleming",
+                "year": 1973,
+                "url": "https://archive.org/details/fleming-subclassification-in-hamito-semitic-1973",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 88",
+                "notes": "La Haye et Paris, Mouton, 1973, actes dirigés par Isidore Dyen d'une conférence tenue à l'université Yale les 3 et 4 avril 1971. Lu dans une copie non officielle déposée sur Internet Archive, le 18 octobre 2026 ; le numéro de page imprimé a été lu sur l'image : « I have now renamed West Cushitic as Omotic and classified it as a separate family of Hamito-Semitic »."
+              }
+            ]
+          }
+        ]
+      }
     ]
   }
 }

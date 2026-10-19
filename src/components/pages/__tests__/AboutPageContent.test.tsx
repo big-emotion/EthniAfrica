@@ -108,6 +108,25 @@ describe("AboutPageContent (REQ-132)", () => {
     );
   });
 
+  // Brief 9 adds a route from the conviction without changing its wording.
+  // @req REQ-132
+  it("links from the unchanged conviction to the approach page", () => {
+    renderAbout();
+
+    const conviction = screen.getByTestId("about-conviction");
+    expect(
+      Array.from(conviction.querySelectorAll("p.leading-relaxed")).map(
+        (paragraph) => paragraph.textContent
+      )
+    ).toEqual([
+      "Nous pensons qu’une meilleure connaissance des histoires et des liens entre les populations d’Afrique peut nourrir la compréhension et la coopération.",
+      "Cette conviction guide le projet. Elle ne remplace pas les résultats de l’enquête et ne suppose ni une histoire unique ni l’absence de désaccords.",
+    ]);
+    expect(
+      within(conviction).getByRole("link", { name: "Lire notre démarche" })
+    ).toHaveAttribute("href", getLocalizedRoute("fr", "approach"));
+  });
+
   // The three destinations are the site's own routes, not paths spelled here.
   // @req REQ-132
   it("closes on three links: search, method, report an error", () => {

@@ -11,13 +11,19 @@
     {
       "spelling": "Diouf",
       "attestations": [
-        { "countryId": "SEN", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "SEN",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     },
     {
       "spelling": "Juuf",
       "attestations": [
-        { "countryId": "SEN", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "SEN",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -26,6 +32,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -58,10 +65,6 @@
   ],
   "gaps": [
     {
-      "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
       "fieldPath": "alliances",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
@@ -81,5 +84,114 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Diouf est un nom de famille du Sénégal, celui d'un clan des Sérères. Il est écrit Dhiouf dès 1853, dans le nom d'un roi du Sine. Son sens n'est pas expliqué : on ne sait pas avec certitude d'où il vient.",
+    "names": [
+      {
+        "nameText": "Diouf",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan sérère du Sénégal, écrit Dhiouf dès 1853 ; son sens n'est pas expliqué.",
+        "periodLabel": "Écrit Dhiouf dès 1853 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Diouf est le nom d'un clan des Sérères du Sénégal, selon le Dictionary of American Family Names. Le dictionnaire dit son étymologie inexpliquée ; on ne sait pas avec certitude d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Diouf",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/diouf?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue le 18 octobre 2026 (texte anglais de la page). L'entrée dit : « West African (Senegal): from the name of the Diouf clan of the Serer people of unexplained etymology »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Diouf figure, écrit D̤ûf, parmi les noms de famille du dictionnaire wolof d'Aloïse Kobès, revu par le père O. Abiven. Chaque nom y est suivi de l'animal que la famille évite de toucher, son mbagne, « l'ennemi » : pour ce nom, une espèce de biche.",
+            "formAsWritten": "D̤ûf",
+            "sources": [
+              {
+                "title": "Dictionnaire volof-français",
+                "author": "Aloïse Kobès ; nouvelle édition par O. Abiven",
+                "year": 1923,
+                "url": "https://archive.org/details/dictionnairevolo00kobs",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 383",
+                "notes": "Nouvelle édition revue et augmentée par le père O. Abiven, de la Congrégation du Saint-Esprit. Dakar, Mission catholique, 1923, selon la notice d'Internet Archive (l'adresse de l'éditeur est masquée par une étiquette). Lu le 18 octobre 2026, page 383 vue en image. Liste « Noms de famille (santa) » : « D̤ûf, D̤ip, espèce de biche », « Fal, Ténêv, tigre », « Fay, sanglier », « Gèy, Mbetă, gueule tapée », « Nd̤ay, Gaéndé, lion » (le D porte deux points souscrits). Note au bas de la page : les noms d'animaux placés après les noms de familles « désignent l'ennemi (mbagne) de cette famille », que l'on évite de toucher de peur de mourir ou de tomber malade. Missionnaires catholiques, cités pour les formes qu'ils écrivent et ce qu'ils rapportent."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1858,
+              "label": "1858"
+            },
+            "statement": "Le nom Diouf apparaît, écrit Dhioufe, dans la grammaire wolof de l'abbé David Boilat : c'est le sœnte de Galo, l'un de ses exemples. Boilat appelle sœnte le nom qui suit le prénom, et mbagne l'animal qui s'y rattache, que la personne et sa famille doivent respecter.",
+            "formAsWritten": "Dhioufe",
+            "sources": [
+              {
+                "title": "Grammaire de la langue woloffe",
+                "author": "David Boilat",
+                "year": 1858,
+                "url": "https://archive.org/details/grammairedelalan00boil",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 357-358",
+                "notes": "Paris, Imprimerie impériale, 1858. Lu le 18 octobre 2026 dans la numérisation d'Internet Archive, pages 357 et 358 vues en image. Chapitre « De la particule » : le nom d'une personne est souvent suivi d'une particule, le sœnte, « qu'on pourrait comparer à un titre plutôt qu'à un sobriquet » ; l'animal auquel elle se rapporte s'appelle mbagne, « ennemi », et « doit être respecté par lui et par sa famille ». Exemples, prénom puis sœnte : « Hœmet Fale », « Sambœ Ndhiaye », « Saigœ Sare » (p. 357) ; « Birœm Fay », « Galo Dhioufe » (p. 358). Page 358 encore : le lion, « Gayndé », porte le sœnte « Ndhiaye », le tigre, « Sègœ », le sœnte « Fale » ; « la particule ndhiaye et la particule fale sont souvent les sœnte des familles princières ». Abbé Boilat, missionnaire apostolique et ancien inspecteur de l'instruction publique au Sénégal selon la page de titre, cité pour les formes qu'il écrit et ce qu'il rapporte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1853,
+              "to": 1853,
+              "label": "Récit publié en 1853"
+            },
+            "era": "polity",
+            "statement": "Le nom Diouf apparaît par écrit, sous la forme Dhiouf, dans les Esquisses sénégalaises de l'abbé David Boilat : Ramat-Dhiouf est le nom du roi du Sine, que l'auteur rencontre dans sa capitale. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a écrit, pas depuis quand le nom est porté.",
+            "formAsWritten": "Dhiouf",
+            "birth": true,
+            "actors": [
+              {
+                "name": "David Boilat",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Esquisses sénégalaises",
+                "author": "David Boilat",
+                "year": 1853,
+                "url": "https://archive.org/details/esquissessngala01boilgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 145 ; voir aussi p. 141",
+                "notes": "Paris, P. Bertrand, 1853, chapitre sur les pays habités par les Sérères. Lu le 18 octobre 2026 dans la numérisation d'Internet Archive, page 145 vue en image : « Ramat-Dhiouf est le nom du roi », le roi de Sine, que l'auteur rencontre dans sa capitale. Page 141 : « un chef nommé Waly-Dhiouf », blessé dans les guerres du roi de Sine. L'ouvrage ne date pas ce voyage. Abbé Boilat, cité pour les formes qu'il écrit."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

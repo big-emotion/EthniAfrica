@@ -6,7 +6,7 @@
   },
   "id": "PAT_LOUSTAU_LALANNE",
   "nameMain": "Loustau-Lalanne",
-  "nameSystem": "clan_name",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Loustau-Lalanne",
@@ -22,10 +22,11 @@
     }
   ],
   "transmissionMode": "elective",
-  "designatedSocialUnit": "lineage",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -77,10 +78,6 @@
   ],
   "gaps": [
     {
-      "fieldPath": "origin",
-      "reason": "les résultats exacts « Loustau-Lalanne », le catalogue des Seychelles National Archives, le Family Tree Project et les recherches patrimoniales décrites par O'Gorman ont été consultés. Ils attestent le nom ou décrivent le fonds disponible, mais n'ont livré ni étymologie publiée ni chronique attribuable à une lignée précise ; l'origine reste donc vide."
-    },
-    {
       "fieldPath": "alliances",
       "reason": "les résultats exacts « Loustau-Lalanne », le catalogue des Seychelles National Archives, le Family Tree Project et les recherches patrimoniales décrites par O'Gorman, complétés par les termes « alliance », « cousinage » et « joking relationship », n'ont fait apparaître aucune paire nommée et sourcée reliant Loustau-Lalanne à un autre nom documenté ici."
     },
@@ -96,5 +93,92 @@
       "fieldPath": "homonyms",
       "reason": "les résultats exacts « Loustau-Lalanne », le catalogue des Seychelles National Archives, le Family Tree Project et les recherches patrimoniales décrites par O'Gorman n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Loustau-Lalanne est un nom de famille des Seychelles fait de deux noms joints. Il figure dans les registres de mariage de Mahé en 1901. Le second nom, Lalanne, viendrait de lieux du sud-ouest de la France ; on ne sait pas avec certitude d'où vient le premier, Loustau, ni quand les deux ont été réunis.",
+    "names": [
+      {
+        "nameText": "Loustau-Lalanne",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille des Seychelles fait de deux noms, écrit à Mahé en 1901 ; Loustau reste inexpliqué.",
+        "periodLabel": "Écrit à Mahé dès 1901 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "Décembre 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Loustau-Lalanne, avec un trait d'union, est celui de Maurice Loustau-Lalanne dans le communiqué de la présidence des Seychelles qui annonce son entrée au gouvernement. Le même communiqué l'appelle ensuite par le seul second nom, « Minister Lalanne ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Minister Loustau-Lalanne sworn into office",
+                "author": "Présidence de la République des Seychelles",
+                "year": 2016,
+                "url": "https://www.statehouse.gov.sc/news/3249/minister-loustau-lalanne-sworn-into-office",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Communiqué de State House, la présidence des Seychelles, du 30 décembre 2016, lu le 18 octobre 2026. Il nomme « Mr Maurice Loustau-Lalanne », nouveau ministre du Tourisme, de l'Aviation civile, des Ports et de la Marine, puis « Minister Loustau-Lalanne », et dans le dernier paragraphe « Minister Lalanne ». Il ne dit rien de l'origine du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1925,
+              "to": 2022,
+              "label": "Proposé en 1925, repris en 2022"
+            },
+            "statement": "Le nom Lalanne, second élément de Loustau-Lalanne, viendrait de lieux appelés Lalanne ou La Lanne dans le sud-ouest de la France, et désignerait d'abord une personne qui en venait, selon le dictionnaire des noms de famille dirigé par Patrick Hanks. Albert Dauzat le range parmi les noms de forme gasconne et le rapproche de « la lande ». Aucune de ces sources ne parle de Loustau.",
+            "sources": [
+              {
+                "title": "Lalanne Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/lalanne?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e édition, Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 18 octobre 2026 dans la traduction française que le site affiche. La notice fait de Lalanne un nom français d'habitation tiré de Lalanne ou de La Lanne, noms de plusieurs lieux du sud-ouest de la France, de même étymologie que Lalande. La page d'Ancestry pour Loustau ne donne pas de notice de ce dictionnaire : son texte, sans source, n'a pas été retenu."
+              },
+              {
+                "title": "Les noms de personnes : origine et évolution",
+                "author": "Albert Dauzat",
+                "year": 1925,
+                "url": "https://archive.org/details/dauzatlesnomsdepersonnesorigine",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 119",
+                "notes": "Paris, Librairie Delagrave, 1925, exemplaire numérisé par Google et déposé sur Internet Archive, lu le 18 octobre 2026. Page 119 : la phonétique du gascon permet de situer beaucoup de noms de famille, « comme Bonnehont (bonne font), Castets (château), Labat (la val), Haurillon (v. ci-dessus), Lalanne (la lande) ». L'auteur traite des noms de famille de France ; il ne parle pas des Seychelles."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "1901"
+            },
+            "era": "colonial",
+            "statement": "Le nom Loustau-Lalanne figure, écrit sans trait d'union, dans les tables des mariages de Mahé, aux Seychelles, en 1901, selon le relevé du Cercle de généalogie Maurice-Rodrigues. C'est la plus ancienne trace de ce nom aux Seychelles que le projet connaît ; elle ne dit pas d'où venait la famille.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Mahé [Seychelles] : mariages, table des patronymes en LOU",
+                "author": "Cercle de Généalogie Maurice-Rodrigues",
+                "year": null,
+                "url": "https://cgmrgenealogie.org/tab_mari.php/Mah%C3%A9+%5BSEYCHELLES%5D/_LOU",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Base de données d'une association de généalogie, qui dépouille les tables et actes d'état civil, les registres paroissiaux et les registres d'inhumation. Lue le 18 octobre 2026. Le patronyme « LOUSTAU LALANNE » y figure dans les mariages de Mahé pour l'année 1901, avec une mention dans la colonne « Intervenant 1 », que la page ne définit pas. Le détail de l'acte n'a pas été lu."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -32,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Pagnet décrit N'Guessan comme l'évolution de Gnissan, nom ordinal baoulé du troisième enfant lorsque celui-ci est du même sexe que ses deux aînés. La segmentation proposée, reprise de Koffi (2001), associe GNI à une personnalité puissante et NSAN à « trois ».",
-        "claimStatus": "claimed",
-        "sourceRefs": ["pagnet-2005-noms-baoule"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -134,7 +129,8 @@
                 "page": "p. 260",
                 "notes": "Thèse, Université d'Abidjan-Cocody, soutenue le 20 mai 2005. Lue dans le dépôt institutionnel DICAMES du CAMES le 12 octobre 2026 ; le titre original écrit « didactive ». Page 260 : « un enfant qui naît en troisième position, s'il est du même sexe que ses deux prédécesseurs, sera nommé Gnissan, qui est devenu N'guessan. GNI = être puissant, de forte personnalité, et NSAN, trois ». La note renvoie à Bernadette Koffi, L'univers des noms et prénoms baoulé en Côte d'Ivoire, Abidjan, N.E.I., 2001, p. 51, que nous n'avons pas lu."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           },
           {
             "period": {

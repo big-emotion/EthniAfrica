@@ -23,19 +23,22 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "La collecte communautaire Wikinames rapporte Machar/Nyachar comme un nom lié à la robe noire d’une vache ou d’un taureau aimé par l’oncle. Faute d’informateur individuel et d’étude linguistique dédiée, cette explication reste claimed.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["wikinames-south-sudan-2025"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
       "peopleId": "PPL_NUER",
       "status": "attested",
       "sourceRefs": ["wikinames-south-sudan-2025"]
+    },
+    {
+      "peopleId": "PPL_DINKA",
+      "status": "attested",
+      "sourceRefs": [
+        "lienhardt-african-personal-names-1988",
+        "seligman-pagan-tribes-1932"
+      ]
     }
   ],
   "countries": [
@@ -73,6 +76,22 @@
       "tier": "referenced",
       "source_kind": "linguistic_reference",
       "notes": "Grammaire pédagogique du Nuer Field Notes Project, Indiana University. La section Proper Names décrit les préfixes nya- « fille » et gat- « fils, enfant » et l’emploi du nom du père au génitif dans le nom complet."
+    },
+    {
+      "sourceKey": "lienhardt-african-personal-names-1988",
+      "title": "Social and cultural implications of some African personal names",
+      "url": "https://ora.ox.ac.uk/objects/uuid%3A29267519-7f9c-46c7-826d-75f043d7ce60",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Godfrey Lienhardt, Journal of the Anthropological Society of Oxford 19(2), 1988, p. 105-116. Aux pages 107 et 108, l'auteur explique le nom dinka Macar, « bœuf noir », porté par un homme, et les sens de cette robe de bœuf."
+    },
+    {
+      "sourceKey": "seligman-pagan-tribes-1932",
+      "title": "Pagan Tribes of the Nilotic Sudan",
+      "url": "https://archive.org/details/in.ernet.dli.2015.57118",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "C. G. Seligman et Brenda Z. Seligman, Londres, George Routledge & Sons, 1932. Page 169, chez les Dinka : le « nom de bétail » qu'un jeune homme prend d'après la robe de son bœuf, et, en note, macar pour un bœuf noir."
     }
   ],
   "gaps": [
@@ -100,5 +119,86 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches sur la graphie exacte « Machar » dans les index onomastiques et les tableaux Naath/Nuer de Wikinames, la grammaire nuer d’Indiana, l’article de Markó et les recherches bibliographiques par graphie exacte n’ont pas établi une seconde origine distincte disposant de sa propre provenance."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Machar est un nom de personne du Soudan du Sud. Chez les Dinka, il a une forme proche, Macar, qui désigne d'abord un bœuf noir : un homme peut porter le nom de la robe de son bœuf. Les sources que nous avons lues ne disent pas depuis quand le nom est porté par des personnes.",
+    "names": [
+      {
+        "nameText": "Machar",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "din",
+        "namedBy": null,
+        "shortLine": "Un nom de personne du Soudan du Sud ; chez les Dinka, Macar désigne un bœuf noir.",
+        "periodLabel": "Écrit macar dès 1932 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1988,
+              "to": 1988,
+              "label": "Rapporté en 1988"
+            },
+            "era": "modern",
+            "statement": "Le nom Machar a une forme proche, Macar, qui veut dire « bœuf noir » chez les Dinka et sert aussi de nom d'homme, selon l'anthropologue Godfrey Lienhardt. Le bœuf noir évoquerait une naissance tardive dans la vie de la mère, ou le souvenir d'une telle naissance.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Social and cultural implications of some African personal names",
+                "author": "Godfrey Lienhardt",
+                "year": 1988,
+                "url": "https://ora.ox.ac.uk/objects/uuid%3A29267519-7f9c-46c7-826d-75f043d7ce60",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 107-108",
+                "notes": "Journal of the Anthropological Society of Oxford 19(2), 1988, p. 105-116 ; texte intégral lu dans le fichier déposé à l'Oxford University Research Archive le 18 octobre 2026, pages vues sur l'image. Page 107 : le premier nom d'un Dinka, Macar, veut dire « Black Ox ». Page 108 : « if in a Dinka cattle-camp you say 'bring Macar', only the context will make clear whether you want a black ox (as distinct from an ox of some other colour) or whether you want to see a man called 'Macar' » ; « Macar, a black ox, is also a liturgical colour, but for different reasons. It suggests a birth late in the child-bearing life of the mother, or the historical memory of such a birth, and a black ox is the appropriate sacrifice for that aspect of God which presides over the ending of things »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1932,
+              "to": 1932,
+              "label": "Publié en 1932"
+            },
+            "era": "colonial",
+            "statement": "Le nom Machar a une forme proche, macar, dans le livre de Charles et Brenda Seligman sur les peuples du Soudan nilotique : chez les Dinka, c'est le nom d'un bœuf noir. Les auteurs écrivent aussi qu'un jeune homme prend un nom tiré de la robe de son bœuf. C'est la plus ancienne trace de cette forme que le projet connaît ; elle y désigne un bœuf, pas encore une personne.",
+            "formAsWritten": "macar",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Pagan Tribes of the Nilotic Sudan",
+                "author": "C. G. Seligman et Brenda Z. Seligman",
+                "year": 1932,
+                "url": "https://archive.org/details/in.ernet.dli.2015.57118",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 169",
+                "notes": "Londres, George Routledge & Sons, 1932 ; lu sur la numérisation d'Internet Archive le 18 octobre 2026, page vue sur l'image. Page 169 : le « cattle-name » est choisi par les hommes eux-mêmes d'après la robe ou une autre particularité de leur bœuf, celui que leur père leur donne quand ils entrent dans leur classe d'âge. En note, d'après Lord Raglan, des noms de robe pour ces bœufs : « red, malwal ; red with white spots, malek ; black, macar ; black with white spots, makwaic (kwaic, leopard) ; black with white face, mayon »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La collecte communautaire Wikinames rapporte Machar/Nyachar comme un nom lié à la robe noire d’une vache ou d’un taureau aimé par l’oncle. Faute d’informateur individuel et d’étude linguistique dédiée, cette explication reste claimed.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Wikinames South Sudan 2025",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://meta.wikimedia.org/wiki/Wikinames_South_Sudan_2025",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Collecte communautaire de noms sud-soudanais publiée sur Meta-Wiki. Le tableau Naath/Nuer donne séparément Chuol, Gatluaak et Machar avec une circonstance de nomination ; un premier tableau donne Riek « problem ». Les entrées ne donnent pas d'appareil critique individuel et ne permettent pas d'établir une étymologie."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

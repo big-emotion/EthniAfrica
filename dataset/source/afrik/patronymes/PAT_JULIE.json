@@ -6,7 +6,7 @@
   },
   "id": "PAT_JULIE",
   "nameMain": "Julie",
-  "nameSystem": "clan_name",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Julie",
@@ -19,17 +19,12 @@
     }
   ],
   "transmissionMode": "elective",
-  "designatedSocialUnit": "lineage",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Emily O'Gorman, s'appuyant sur les recherches patrimoniales seychelloises et Benedict & Benedict, cite Julie parmi les patronymes seychellois courants qui proviennent de prénoms, souvent de prénoms féminins. La source établit le mécanisme onomastique, sans identifier une Julie fondatrice unique.",
-        "claimStatus": "established",
-        "sourceRefs": ["ogorman-2019-seychelles-surnames"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -68,11 +63,11 @@
     },
     {
       "sourceKey": "ogorman-2019-seychelles-surnames",
-      "title": "Creole categories: Difference and diversity in contemporary Seychelles",
+      "title": "Tree of Knowledge, Tree of Life: Materials, Intimacy and Being Creole in London and Seychelles",
       "url": "https://era.ed.ac.uk/bitstream/handle/1842/36098/O%27Gorman2019.pdf?sequence=1",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Emily O'Gorman, thèse de doctorat, University of Edinburgh, 2019, p. 126-127. L'autrice décrit le projet de recherche du National Heritage Division et cite Julie parmi les noms seychellois issus de prénoms féminins."
+      "notes": "Mairi O'Gorman, thèse de doctorat, University of Edinburgh, 2019, p. 126-127. L'autrice décrit le projet de recherche du National Heritage Division et cite Julie parmi les noms seychellois issus de prénoms féminins."
     }
   ],
   "gaps": [
@@ -92,5 +87,85 @@
       "fieldPath": "homonyms",
       "reason": "les résultats exacts « Julie », le catalogue des Seychelles National Archives, le Family Tree Project et les recherches patrimoniales décrites par O'Gorman n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Julie est un nom de famille porté aux Seychelles, où il figure dans les registres de mariage de Mahé dès 1865. C'est aussi un prénom de femme : selon une anthropologue, beaucoup de noms de famille seychellois courants sont des prénoms, souvent de femme, et gardent ainsi une trace de l'histoire afro-créole du pays. On ne sait pas avec certitude comment ce prénom est devenu un nom de famille.",
+    "names": [
+      {
+        "nameText": "Julie",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Un nom de famille des Seychelles qui est aussi un prénom de femme ; écrit à Mahé dès 1865.",
+        "periodLabel": "Écrit à Mahé dès 1865 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Décrit en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Julie est l'un des noms de famille seychellois courants qui sont d'abord des prénoms, et plus précisément des prénoms de femme, comme Adelaide, Betsy, Ernesta ou Marie. L'anthropologue Mairi O'Gorman y voit une trace de l'histoire afro-créole des Seychelles, où les noms africains sont rares parce que la traite en a empêché la transmission.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Tree of Knowledge, Tree of Life: Materials, Intimacy and Being Creole in London and Seychelles",
+                "author": "Mairi O'Gorman",
+                "year": 2019,
+                "url": "https://era.ed.ac.uk/bitstream/handle/1842/36098/O%27Gorman2019.pdf?sequence=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 126-127",
+                "notes": "Thèse de doctorat en anthropologie sociale, université d'Édimbourg, 2019, lue le 18 octobre 2026 dans le dépôt de l'université. Page 126 : un artiste travaille avec la Division du patrimoine national à un projet sur l'origine des noms de famille seychellois. Page 127 : les noms africains sont rares, la traite ayant empêché leur transmission ; beaucoup de noms seychellois courants sont des prénoms, « often specifically women's first names: Adelaide, Betsy, Ernesta, Julie, Marie ». L'autrice s'appuie sur B. et M. Benedict (1982), dont le livre n'a pas été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1865,
+              "to": 1865,
+              "label": "1865"
+            },
+            "era": "colonial",
+            "statement": "Le nom Julie figure comme nom de famille dans les tables des mariages de Mahé, aux Seychelles, à partir de 1865, selon le relevé du Cercle de généalogie Maurice-Rodrigues. C'est la plus ancienne trace de ce nom de famille aux Seychelles que le projet connaît ; elle ne dit pas comment le prénom est devenu un nom de famille.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Mahé [Seychelles] : mariages, table des patronymes en JUL",
+                "author": "Cercle de Généalogie Maurice-Rodrigues",
+                "year": null,
+                "url": "https://cgmrgenealogie.org/tab_mari.php/Mah%C3%A9+%5BSEYCHELLES%5D/_JUL",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Base de données d'une association de généalogie, qui dépouille les tables et actes d'état civil, les registres paroissiaux et les registres d'inhumation. Lue le 18 octobre 2026. Le patronyme JULIE y figure dans les mariages de Mahé pour la période 1865-1903, avec 4 et 10 mentions dans deux colonnes, « Intervenant 1 » et « Intervenant 2 », que la page ne définit pas. La même table donne aussi JULIEN, JULIENNE et JULIETTE, qui sont d'autres noms. Le détail des actes n'a pas été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Mairi O'Gorman, s'appuyant sur les recherches patrimoniales seychelloises et Benedict & Benedict, cite Julie parmi les patronymes seychellois courants qui proviennent de prénoms, souvent de prénoms féminins. La source établit le mécanisme onomastique, sans identifier une Julie fondatrice unique.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Tree of Knowledge, Tree of Life: Materials, Intimacy and Being Creole in London and Seychelles",
+                "author": "Mairi O'Gorman",
+                "year": 2019,
+                "url": "https://era.ed.ac.uk/bitstream/handle/1842/36098/O%27Gorman2019.pdf?sequence=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 126-127",
+                "notes": "Thèse de doctorat en anthropologie sociale, université d'Édimbourg, 2019, lue le 18 octobre 2026 dans le dépôt de l'université. Page 126 : un artiste travaille avec la Division du patrimoine national à un projet sur l'origine des noms de famille seychellois. Page 127 : les noms africains sont rares, la traite ayant empêché leur transmission ; beaucoup de noms seychellois courants sont des prénoms, « often specifically women's first names: Adelaide, Betsy, Ernesta, Julie, Marie ». L'autrice s'appuie sur B. et M. Benedict (1982), dont le livre n'a pas été lu."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

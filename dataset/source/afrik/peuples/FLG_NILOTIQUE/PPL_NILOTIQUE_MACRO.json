@@ -184,6 +184,280 @@
         "tier": "unverified",
         "source_kind": "missionary_database"
       }
+    ],
+    "searchAnswer": {
+      "lead": "Un regroupement par la langue, pas un peuple : chaque peuple nilotique porte son propre nom. L'histoire du nom Nilotique comme nom de langues est racontée avec la famille nilotique."
+    }
+  },
+  "nameHistory": {
+    "summary": "Le nom Nilotes, ou peuples nilotiques, réunit des peuples du haut Nil et d'Afrique de l'Est, comme les Dinka, les Nuer, les Shilluk, les Luo ou les Maasaï. Ce n'est pas le nom d'un peuple : aucune source que nous avons lue ne donne un nom que ces peuples se donneraient tous ensemble, et chacun porte le sien. Venu de l'extérieur, ce nom a d'abord désigné les peuples du bassin du Nil, puis a servi à les classer par « race », avant de désigner un groupe de langues. On a aussi dit Nilo-Chamites pour une partie d'entre eux ; nous présentons ces noms plus bas.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Nilotes",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des auteurs britanniques de l'époque coloniale, d'après le nom du Nil",
+        "shortLine": "Un nom venu de l'extérieur : d'abord les peuples du Nil, puis une « race », puis des langues.",
+        "periodLabel": "Écrit dès 1899 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom Nilotes désigne pour J. E. G. Sutton plusieurs groupes de langues apparentées de loin, dont les locuteurs ont occupé une grande partie de l'Afrique orientale à l'âge du fer. Il écrit que, si leurs traits physiques diffèrent de ceux des Bantu, les Nilotes sont « très nettement des Noirs ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 23 : L'Afrique orientale avant le VIIe siècle",
+                "author": "J. E. G. Sutton",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 635"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "Critique publiée en 1980"
+            },
+            "statement": "Le nom Nilotes a servi dans des classements par « race » qui mettaient à part certains peuples d'Afrique. Joseph Ki-Zerbo écrit que des populations ont été « hâtivement baptisées « race brune » : Peul, Ethiopiens, Somali, Nilotes ». Il attribue la théorie hamitique, celle de Seligman et d'autres, en partie à « la volonté de justifier le système colonial ».",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, conclusion : De la nature brute à une humanité libérée",
+                "author": "Joseph Ki-Zerbo",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 777"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 10, partie II : Théories relatives aux « races » et histoire de l'Afrique",
+                "author": "Joseph Ki-Zerbo",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 297, note 10"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1932,
+              "to": 1932,
+              "label": "1932"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nilotes désigne chez C. G. et Brenda Seligman une « sous-race » du Soudan, la plus nombreuse selon eux : les Shilluk, les Dinka, les Nuer et les Anuak, qu'ils décrivent grands, à la tête allongée et à la peau très sombre. Ils les rangent parmi les « Noirs hamitisés », qu'ils croient nés d'un mélange avec des Hamites venus par vagues successives.",
+            "sources": [
+              {
+                "title": "Pagan Tribes of the Nilotic Sudan",
+                "author": "C. G. Seligman et Brenda Z. Seligman",
+                "year": 1932,
+                "url": "https://archive.org/details/in.ernet.dli.2015.57118",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4 et p. 12-13",
+                "notes": "Londres, Routledge, 1932. Lu dans la numérisation de la Digital Library of India sur Internet Archive le 18 octobre 2026 ; les numéros de page imprimés ont été lus sur l'image. « In the Sudan there are two great groups of hamiticized Negroes, (1) the Nilotes, and (2) the Nilo-Hamites » (p. 4) ; « The Nilotes, numerically the strongest of our sub-racial units » (p. 12)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "1930"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nilotes prend un sens racial chez C. G. Seligman : pour l'ethnologue, écrit-il, il désigne un type physique bien défini, lié à une culture. Il note que le linguiste Diedrich Westermann, lui, n'entend par nilotique que ce qui appartient au bassin du Nil.",
+            "sources": [
+              {
+                "title": "Races of Africa",
+                "author": "C. G. Seligman",
+                "year": 1930,
+                "url": "https://archive.org/details/dli.ernet.277097",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 172-173",
+                "notes": "Londres, Thornton Butterworth, 1930, première édition. Lu dans la numérisation de la Digital Library of India sur Internet Archive le 18 octobre 2026 ; les numéros de page imprimés ont été lus sur l'image. « he uses the word “Nilotic” to signify no more than “appertaining to the Nile basin”, while the ethnologist […] uses the term to signify a well-defined physical type associated with a particular culture » (p. 173). Texte d'un ethnologue britannique, qui classe les peuples d'Afrique par « race »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "1902"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nilotes s'écrit « Nilotic Negroes », les Noirs nilotiques, chez Harry Johnston, ancien commissaire spécial du protectorat britannique de l'Ouganda, qui leur consacre un chapitre de son livre sur ce protectorat. Il reconnaît qu'aucun groupe ne partage à la fois la même langue, les mêmes coutumes et les mêmes traits physiques, mais range ensemble les Noirs du bassin du Nil par commodité, pour décrire leur corps et leurs coutumes.",
+            "formAsWritten": "Nilotic Negroes",
+            "actors": [
+              {
+                "name": "Harry Johnston",
+                "role": "ancien commissaire spécial du protectorat de l'Ouganda, auteur du livre"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Uganda Protectorate, vol. II",
+                "author": "Harry Johnston",
+                "year": 1902,
+                "url": "https://archive.org/details/cu31924087982504",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "page de titre et p. 756",
+                "notes": "Londres, Hutchinson, 1902. Lu dans la numérisation d'Internet Archive le 18 octobre 2026 ; le numéro de page imprimé a été lu sur l'image. Chapitre XVIII, « Nilotic Negroes » : « The Negroes of the Nile basin […] may be, perhaps, conveniently classed together for the present purpose of discussing their physical features, manners, and customs ». La page de titre présente l'auteur comme « Formerly Special Commissioner to the Uganda Protectorate »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1899,
+              "to": 1899,
+              "label": "1899"
+            },
+            "statement": "Le nom Nilotes apparaît sous une forme proche, « Nilotic peoples », les peuples nilotiques, chez l'anthropologue britannique A. H. Keane. Il range sous ce nom tous les peuples du haut Nil, des Shilluk, des Dinka, des Bari et des Nuer jusqu'aux Bongo, aux Madi et aux Funj, et écrit que leur destin politique sera désormais décidé par les Britanniques, maîtres des terres du Nil. C'est la plus ancienne trace de ce nom que le projet connaît. Ces peuples existaient déjà avant lui, chacun sous son propre nom.",
+            "formAsWritten": "Nilotic peoples",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Man Past and Present",
+                "author": "A. H. Keane",
+                "year": 1899,
+                "url": "https://archive.org/details/in.ernet.dli.2015.280842",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 76",
+                "notes": "Cambridge, Cambridge University Press, 1899. Lu dans la numérisation de la Digital Library of India sur Internet Archive le 18 octobre 2026 ; le numéro de page imprimé a été lu sur l'image. « Nearly all the Nilotic peoples—the Shilluks and Dinkas […] » ; « the political destinies of the Nilotic tribes must henceforth be controlled by the British masters of the Nile lands ». Texte d'un anthropologue britannique de l'époque coloniale."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1932,
+              "label": "De 1912 à 1932"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nilotes réunit des peuples qui portent chacun leur propre nom. Les Shilluk se nomment eux-mêmes ocholo, selon Diedrich Westermann ; les Dinka se nomment Jang, au pluriel Jeng, et les Nuer Nath, selon C. G. et Brenda Seligman. Ces auteurs écrivent que les noms Shilluk et Dinka leur viennent des Arabes.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Shilluk People, Their Language and Folklore",
+                "author": "Diedrich Westermann",
+                "year": 1912,
+                "url": "https://archive.org/details/shillukpeoplethe00west",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. XX",
+                "notes": "Berlin, Dietrich Reimer, 1912. Lu dans la numérisation d'Internet Archive le 18 octobre 2026 ; le numéro de page imprimé a été lu sur l'image. « The inhabitants are called: óchôlô, “a Shilluk” […] The name “Shilluk” (singular Shilkawi) is given to them by the Arabs »."
+              },
+              {
+                "title": "Pagan Tribes of the Nilotic Sudan",
+                "author": "C. G. Seligman et Brenda Z. Seligman",
+                "year": 1932,
+                "url": "https://archive.org/details/in.ernet.dli.2015.57118",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 136 et p. 207",
+                "notes": "Londres, Routledge, 1932. Lu dans la numérisation de la Digital Library of India sur Internet Archive le 18 octobre 2026 ; les numéros de page imprimés ont été lus sur l'image. « call themselves Jang (pl. Jeng), corrupted by the Arabs into Denkawi, whence the English Dinka » (p. 136) ; « “homeland Nuer” (Nath cieng) » (p. 207)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nilo-Chamites",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des auteurs européens de l'époque coloniale",
+        "shortLine": "Un ancien nom racial pour les Masaï, les Bari et leurs voisins, déjà jugé mauvais en 1932.",
+        "periodLabel": "Écrit dès 1932 ; ancien",
+        "accounts": [
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom Nilo-Chamites désignait autrefois les Itunga, les Masaï, les Kalenjin et les Tatoga, selon J. E. G. Sutton. Il explique leurs traits propres par un mélange ancien avec la population qui vivait avant eux à l'est, mais leurs langues restent, écrit-il, foncièrement nilotiques.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 23 : L'Afrique orientale avant le VIIe siècle",
+                "author": "J. E. G. Sutton",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 635"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "Théorie rapportée en 1980"
+            },
+            "statement": "Le nom Nilo-Chamites vient d'une théorie raciale, selon P. Diagne, qui cite le linguiste Joseph Greenberg : il renvoie au livre Races of Africa de C. G. Seligman, pour qui ces peuples étaient « racialement à moitié hamites ».",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 10, partie I : Histoire et linguistique",
+                "author": "P. Diagne",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 272"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1932,
+              "to": 1932,
+              "label": "1932"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nilo-Chamites apparaît sous sa forme anglaise, Nilo-Hamites, chez C. G. et Brenda Seligman, pour les Bari, les Lotuko et leurs voisins du Soudan, ainsi que pour les Masai et les Suk. Ils notent que c'est le nom courant de ces peuples, mais le jugent mauvais : rien ne montre, écrivent-ils, qu'ils soient nés d'un mélange de Nilotes et de Hamites. C'est la plus ancienne trace de ce nom que le projet connaît. Ces peuples existaient déjà avant lui.",
+            "formAsWritten": "Nilo-Hamites",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Pagan Tribes of the Nilotic Sudan",
+                "author": "C. G. Seligman et Brenda Z. Seligman",
+                "year": 1932,
+                "url": "https://archive.org/details/in.ernet.dli.2015.57118",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4 et note 2",
+                "notes": "Londres, Routledge, 1932. Lu dans la numérisation de la Digital Library of India sur Internet Archive le 18 octobre 2026 ; le numéro de page imprimé a été lu sur l'image. « These tribes, including the Masai, Suk, etc., are commonly spoken of as Nilo-Hamites. […] it is a bad term, for there is no evidence that they arose from a mixture of Nilotes and Hamites »."
+              }
+            ]
+          }
+        ]
+      }
     ]
   }
 }

@@ -51,7 +51,11 @@ export interface FtsSearchData {
   placesTotal: number;
   wordsTotal: number;
   total: number;
-  /** Near-miss leads (REQ-125), populated only when `total` is 0. */
+  /**
+   * Near-miss leads (REQ-125): peoples, countries and families only when
+   * `total` is 0; a family name also beside results, as a spelling of the
+   * searched name, when nothing answers it exactly (DEC-075).
+   */
   leads: object[];
   /** Qualified similar names (REQ-180), populated only for a non-empty search. */
   nearNames: SearchNearName[];

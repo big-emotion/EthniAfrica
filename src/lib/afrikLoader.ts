@@ -23,6 +23,7 @@ import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
 import {
   firstSentence,
   nameFormOf,
+  namingReason,
   nextStepTargets,
   type NextStepCard,
   type NextStepKind,
@@ -180,7 +181,11 @@ export async function search(
 
 export interface SearchWithLeads {
   results: SearchResult[];
-  /** Near-miss leads (REQ-125) — non-empty only when the API's own total is 0. */
+  /**
+   * Near-miss leads (REQ-125). Peoples, countries and families come only when
+   * the API's own total is 0; a family name may also come beside results,
+   * when nothing answers the query exactly (DEC-075).
+   */
   leads: SearchLead[];
   /** Similar names qualified by the API for a non-empty search (REQ-180). */
   nearNames: SearchNearName[];
@@ -209,7 +214,8 @@ export interface SearchWithLeads {
 // @req REQ-125
 /**
  * Same single browser path as `search` (ETNI-1415, AC2), additionally carrying
- * zero-result leads and the qualified similar names of a non-empty search. A
+ * the near-miss leads (a family name may come beside results, DEC-075) and the
+ * qualified similar names of a non-empty search. A
  * distinct function rather than an added parameter keeps every existing
  * `search()` caller's `SearchResult[]` return type untouched; it takes the same
  * `SearchOptions`, so a surface that needs the projections and server-side
@@ -414,8 +420,11 @@ async function resolveNamer(
 /**
  * The names a page offers next (brief 1, block 8): the ones its subjects'
  * data already links to, each with the first sentence of its own summary as
- * the reason. A target whose fiche does not load, or has no summary, is left
- * out; a page with no subject offers the unknown name's two invitations.
+ * the reason. A namer's reason is the relation instead, as the searched
+ * name's account tells it (« Peul » from Wolof, board search-peul-430); the
+ * namer's summary stands in only when no account names it. A target whose
+ * fiche does not load, or has no summary, is left out; a page with no subject
+ * offers the unknown name's two invitations.
  */
 // @req REQ-198
 export async function loadNextSteps(
@@ -462,7 +471,10 @@ export async function loadNextSteps(
           entry.name,
           entry.nameHistory.names.map((name) => name.nameText)
         ),
-        reason: firstSentence(summary),
+        reason:
+          (target.relation === "namer" &&
+            namingReason(target.namingAccounts ?? [], entry.name)) ||
+          firstSentence(summary),
       },
     ];
   });

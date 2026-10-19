@@ -11,7 +11,23 @@
     {
       "spelling": "Baloyi",
       "attestations": [
-        { "countryId": "ZAF", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "ZAF",
+          "sourceRefs": ["afrik-candidate-queue", "junod-1912-life-1"]
+        },
+        {
+          "countryId": "MOZ",
+          "sourceRefs": ["junod-1912-life-1", "liesegang-2014-borders"]
+        }
+      ]
+    },
+    {
+      "spelling": "Valoyi",
+      "attestations": [
+        {
+          "countryId": "ZAF",
+          "sourceRefs": ["van-warmelo-1935-survey"]
+        }
       ]
     }
   ],
@@ -20,20 +36,34 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
     {
       "peopleId": "PPL_TSONGA",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": [
+        "afrik-candidate-queue",
+        "junod-1912-life-1",
+        "liesegang-2014-borders"
+      ]
     }
   ],
   "countries": [
     {
       "countryId": "ZAF",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": [
+        "afrik-candidate-queue",
+        "junod-1912-life-1",
+        "van-warmelo-1935-survey"
+      ]
+    },
+    {
+      "countryId": "MOZ",
+      "status": "attested",
+      "sourceRefs": ["junod-1912-life-1", "liesegang-2014-borders"]
     }
   ],
   "alliances": [],
@@ -48,13 +78,49 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "junod-1912-life-1",
+      "title": "The Life of a South African Tribe, vol. I : The Social Life",
+      "url": "https://archive.org/details/cu31924012891127",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Neuchâtel, Attinger, 1912 ; numérisation de l'université Cornell sur Internet Archive, lue le 18 octobre 2026. Henri-Alexandre Junod, missionnaire suisse, décrit les Thonga (Tsonga) du sud du Mozambique et du Transvaal ; il écrit dans le contexte colonial et est cité pour ce qu'il rapporte."
+    },
+    {
+      "sourceKey": "junod-1913-life-2",
+      "title": "The Life of a South African Tribe, vol. II : The Psychic Life",
+      "url": "https://archive.org/details/lifeofsouthafric02junouoft",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Neuchâtel, Imprimerie Attinger frères, 1913 ; numérisation de l'université de Toronto sur Internet Archive, lue le 18 octobre 2026. Second volume de l'ouvrage de Henri-Alexandre Junod, missionnaire suisse, cité pour ce qu'il rapporte."
+    },
+    {
+      "sourceKey": "liesegang-2014-borders",
+      "title": "East and Northeast of the Borders of the Southeastern Bantu: Partly visible population movements and invisible lineage states",
+      "url": "https://archive.org/details/borders-of-se-bantu-400-1900",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Manuscrit de juillet 2014, diffusé « without full revision of the bibliography and language » ; l'auteur, historien, enseigne au département d'histoire de l'université Eduardo Mondlane, à Maputo. Lu en texte intégral sur Internet Archive le 18 octobre 2026, aux pages imprimées du manuscrit."
+    },
+    {
+      "sourceKey": "torre-do-valle-1906-shironga",
+      "title": "Diccionarios shironga-portuguez e portuguez-shironga, precedidos de uns breves elementos de grammatica do dialecto shironga, falado pelos indigenas de Lourenço Marques",
+      "url": "https://archive.org/details/diccionariosshi00vallgoog",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Lourenço Marques, Imprensa nacional, 1906 ; exemplaire numérisé par Google, page lue en image sur Internet Archive le 18 octobre 2026. À la p. 38, l'auteur corrige une liste de noms que l'administration portugaise écrit mal : « X, por Y » veut dire que X est écrit pour Y."
+    },
+    {
+      "sourceKey": "van-warmelo-1935-survey",
+      "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+      "url": "https://repository.up.ac.za/handle/2263/77107",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Union of South Africa, Department of Native Affairs, Ethnological Publications, vol. V, Pretoria, 1935 ; scan de l'université de Pretoria, lu le 18 octobre 2026. P. 58 (district de Tzaneen, décembre 1934) et p. 93 (partie 3, Tonga du Nord) : le chef Nwamitwa, peuple « vakaValoyi (vaTonga) », 1 256 contribuables."
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
     {
       "fieldPath": "alliances",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
@@ -75,5 +141,247 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Baloyi est un nom de clan tsonga, porté en Afrique du Sud et au Mozambique, et écrit aussi Valoyi. Les sources le font remonter au moins au début du XVIIIe siècle. Elles ne s'accordent pas sur son origine : un récit transmis et deux lectures sont présentés plus bas.",
+    "names": [
+      {
+        "nameText": "Baloyi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan tsonga, connu dès 1729 ; son origine est discutée.",
+        "periodLabel": "Connu dès 1729 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Baloyi désigne un clan tsonga, appelé aussi Ba-ka-Baloyi ou Loyi. Les sources ne s'accordent pas sur son origine : un récit le fait venir du nord, et deux lectures du nom sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17",
+                "notes": "Neuchâtel, Attinger, 1912 ; numérisation de l'université Cornell sur Internet Archive, lue le 18 octobre 2026. Henri-Alexandre Junod, missionnaire suisse, décrit les Thonga (Tsonga) du sud du Mozambique et du Transvaal ; il écrit dans le contexte colonial et est cité pour ce qu'il rapporte. P. 17 : « first the Baloyi or Ba-ka-Baloyi »."
+              },
+              {
+                "title": "East and Northeast of the Borders of the Southeastern Bantu: Partly visible population movements and invisible lineage states",
+                "author": "Gerhard Liesegang",
+                "year": 2014,
+                "url": "https://archive.org/details/borders-of-se-bantu-400-1900",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 36",
+                "notes": "Manuscrit de juillet 2014, diffusé « without full revision of the bibliography and language » ; l'auteur, historien, enseigne au département d'histoire de l'université Eduardo Mondlane, à Maputo. Lu en texte intégral sur Internet Archive le 18 octobre 2026, aux pages imprimées du manuscrit. P. 36, section 4.5 « The Baloyi » : « the history of Baloyi, Ba-ka-Baloyi or Loyi »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Décrit en 1912"
+            },
+            "statement": "Le nom Baloyi est en 1912 celui d'un clan du groupe tsonga du nord, les Nwalungu, établi entre le Limpopo et l'Olifants, au Mozambique, selon Henri-Alexandre Junod. Deux colonies de Ba-ka-Baloyi, avec leurs propres chefs, vivent aussi au Transvaal, dans le pays de Modjadji.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17 et 18",
+                "notes": "Neuchâtel, Attinger, 1912 ; numérisation de l'université Cornell sur Internet Archive, lue le 18 octobre 2026. Henri-Alexandre Junod, missionnaire suisse, décrit les Thonga (Tsonga) du sud du Mozambique et du Transvaal ; il écrit dans le contexte colonial et est cité pour ce qu'il rapporte. P. 17 : « The Nwalungu group includes two different elements : first the Baloyi or Ba-ka-Baloyi, in the triangle formed by the two rivers northward of their confluence » ; p. 18 : « In the Modjadji country, we find two colonies of Ba-ka-Baloyi with their own chiefs »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1934,
+              "to": 1934,
+              "label": "Décembre 1934"
+            },
+            "era": "modern",
+            "statement": "Le nom Baloyi a en Afrique du Sud la forme Valoyi : en décembre 1934, le recensement de N. J. van Warmelo note dans le district de Tzaneen, au Transvaal, le chef Nwamitwa et les « vakaValoyi », des Tsonga, qui comptent 1 256 contribuables.",
+            "sources": [
+              {
+                "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+                "author": "N. J. van Warmelo",
+                "year": 1935,
+                "url": "https://repository.up.ac.za/handle/2263/77107",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 58 (partie 2, Transvaal, district de Tzaneen) et p. 93 (partie 3)",
+                "notes": "Union of South Africa, Department of Native Affairs, Ethnological Publications, vol. V, Pretoria, 1935 ; scan de l'université de Pretoria, lu le 18 octobre 2026. P. 58 : chef Nwamitwa, peuple « vakaValoyi (vaTonga) », Nwamitwa's Location, 1 256 contribuables. P. 93, section 25 « Northern Tonga », ligne 25-250 : même chef, même peuple, district de Tzaneen."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1729,
+              "to": 1731,
+              "label": "De 1729 à 1731"
+            },
+            "era": "polity",
+            "statement": "Le nom Baloyi est déjà connu de 1729 à 1731 : deux documents de ces années, l'un écrit à Inhambane, l'autre à la baie de Delagoa, parlent des Loyi du haut Limpopo et de l'Olifants, selon l'historien Gerhard Liesegang. C'est la plus ancienne trace de ce nom que le projet connaît ; le projet ne l'a lue qu'à travers Liesegang, qui ne cite pas la forme écrite alors.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "East and Northeast of the Borders of the Southeastern Bantu: Partly visible population movements and invisible lineage states",
+                "author": "Gerhard Liesegang",
+                "year": 2014,
+                "url": "https://archive.org/details/borders-of-se-bantu-400-1900",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 37",
+                "notes": "Manuscrit de juillet 2014, diffusé « without full revision of the bibliography and language » ; l'auteur, historien, enseigne au département d'histoire de l'université Eduardo Mondlane, à Maputo. Lu en texte intégral sur Internet Archive le 18 octobre 2026, aux pages imprimées du manuscrit. P. 37 : « Both the Loyi on the Mozambican upper Limpopo and lower Olifants were mentioned in 1729/1731 by two different sources, one from Inhambane and the other from Delagoa Bay » ; pour Bernardo de Castro Soares, à Inhambane en 1729, les Loyi sont des « Landins », c'est-à-dire des Tsonga."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Rapporté en 1912"
+            },
+            "statement": "Le clan Baloyi serait venu du nord, du pays des Ba-Nyai, avec ses alliés nwanati, selon des récits que des historiens tsonga ont confiés à Henri-Alexandre Junod. Les Baloyi auraient descendu la vallée du Limpopo par la « vieille route de Gwambe », jusqu'à la mer, puis, effrayés par elle, seraient remontés vers le nord.",
+            "hypothesisGroup": "origine du clan Baloyi",
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21 et 22",
+                "notes": "Neuchâtel, Attinger, 1912 ; numérisation de l'université Cornell sur Internet Archive, lue le 18 octobre 2026. Henri-Alexandre Junod, missionnaire suisse, décrit les Thonga (Tsonga) du sud du Mozambique et du Transvaal ; il écrit dans le contexte colonial et est cité pour ce qu'il rapporte. P. 21 : « The Ba-ka-Baloyi, they say, came down the valley of the Limpopo in very remote times » ; p. 22 : « According to some of the native historians, the Baloyi came from the Ba-Nyai country along with the Nwanati » ; la vue de la mer les effraie et ils repartent vers le nord. Les historiens qui racontent ce récit ne sont pas nommés."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "Proposé en 2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Baloyi serait la forme tsonga du nom Rozvi, celui d'un peuple du plateau du Zimbabwe, selon l'historien Gerhard Liesegang. Il rattache ainsi le clan à la tradition qui le lie à Changamire, un souverain de ce plateau.",
+            "hypothesisGroup": "origine du clan Baloyi",
+            "sources": [
+              {
+                "title": "East and Northeast of the Borders of the Southeastern Bantu: Partly visible population movements and invisible lineage states",
+                "author": "Gerhard Liesegang",
+                "year": 2014,
+                "url": "https://archive.org/details/borders-of-se-bantu-400-1900",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 37",
+                "notes": "Manuscrit de juillet 2014, diffusé « without full revision of the bibliography and language » ; l'auteur, historien, enseigne au département d'histoire de l'université Eduardo Mondlane, à Maputo. Lu en texte intégral sur Internet Archive le 18 octobre 2026, aux pages imprimées du manuscrit. P. 37 : « The name Baloyi, referred to as \"wizards\" in 1730, is the Tsonga version of Rozvi » ; la tradition d'origine des Loyi les relie à Changamire."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1730,
+              "to": 1730,
+              "label": "Rapporté pour 1730"
+            },
+            "era": "polity",
+            "statement": "Le nom Baloyi voudrait dire « sorciers » : un document de 1730 le rendait déjà par « wizards », selon Gerhard Liesegang, qui préfère pour sa part une autre lecture. En tsonga, baloyi est bien le mot qui désigne les sorciers chez Henri-Alexandre Junod.",
+            "hypothesisGroup": "origine du clan Baloyi",
+            "sources": [
+              {
+                "title": "East and Northeast of the Borders of the Southeastern Bantu: Partly visible population movements and invisible lineage states",
+                "author": "Gerhard Liesegang",
+                "year": 2014,
+                "url": "https://archive.org/details/borders-of-se-bantu-400-1900",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 37",
+                "notes": "Manuscrit de juillet 2014, diffusé « without full revision of the bibliography and language » ; l'auteur, historien, enseigne au département d'histoire de l'université Eduardo Mondlane, à Maputo. Lu en texte intégral sur Internet Archive le 18 octobre 2026, aux pages imprimées du manuscrit. P. 37 : « The name Baloyi, referred to as \"wizards\" in 1730, is the Tsonga version of Rozvi »."
+              },
+              {
+                "title": "The Life of a South African Tribe, vol. II : The Psychic Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1913,
+                "url": "https://archive.org/details/lifeofsouthafric02junouoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 30",
+                "notes": "Neuchâtel, Imprimerie Attinger frères, 1913 ; numérisation de l'université de Toronto sur Internet Archive, lue le 18 octobre 2026. Second volume de l'ouvrage de Henri-Alexandre Junod, missionnaire suisse, cité pour ce qu'il rapporte. P. 30 : « baloyi (wizards) can increase or diminish the product of the fields »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "Écrit en 1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Baloyi a la forme d'un pluriel de personnes, selon Ernesto Torre do Valle : le singulier est loye ou noye, le pluriel baloye. Il reproche à l'administration portugaise d'écrire la tribu Mabaloi, ce qui revient à « mettre un pluriel au pluriel ».",
+            "sources": [
+              {
+                "title": "Diccionarios shironga-portuguez e portuguez-shironga, precedidos de uns breves elementos de grammatica do dialecto shironga, falado pelos indigenas de Lourenço Marques",
+                "author": "Ernesto Torre do Valle",
+                "year": 1906,
+                "url": "https://archive.org/details/diccionariosshi00vallgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 38",
+                "notes": "Lourenço Marques, Imprensa nacional, 1906 ; exemplaire numérisé par Google, page lue en image sur Internet Archive le 18 octobre 2026. À la p. 38, l'auteur corrige une liste de noms que l'administration portugaise écrit mal : « X, por Y » veut dire que X est écrit pour Y. P. 38 : « Mabaloi, tribu, por Baloye. Cl. mu-ba. No sing. loye, ou noye ; no pl. baloye. Mabaloye seria pois o plural do plural ! Um cumulo ! »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Valoyi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre écriture du nom Baloyi, notée en 1934 au Transvaal.",
+        "periodLabel": "Écrit dès 1934",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1934,
+              "to": 1934,
+              "label": "Décembre 1934"
+            },
+            "era": "modern",
+            "statement": "Le nom Valoyi apparaît par écrit dans le recensement de N. J. van Warmelo, à la date de décembre 1934, sous la forme « vakaValoyi », pour les gens du chef Nwamitwa, dans le district de Tzaneen. C'est la plus ancienne trace de cette écriture que le projet connaît ; le clan existait déjà avant elle.",
+            "formAsWritten": "vakaValoyi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+                "author": "N. J. van Warmelo",
+                "year": 1935,
+                "url": "https://repository.up.ac.za/handle/2263/77107",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 58 (partie 2, Transvaal, district de Tzaneen)",
+                "notes": "Union of South Africa, Department of Native Affairs, Ethnological Publications, vol. V, Pretoria, 1935 ; scan de l'université de Pretoria, lu le 18 octobre 2026. P. 58 : chef Nwamitwa, peuple « vakaValoyi (vaTonga) », Nwamitwa's Location, 1 256 contribuables."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

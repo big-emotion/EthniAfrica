@@ -212,6 +212,36 @@ describe("the lead from the searched name to the self-name", () => {
     expect(lead(container)).toBeNull();
   });
 
+  // PPL_KONO writes its self-name « Kono » and the exonym « Kɔnɔ » apart. The
+  // search fold equates them so either reaches the fiche (REQ-135), but a
+  // reader who typed « Kɔnɔ » typed the other name and is owed the lead. Reads
+  // the real fiche, so the test fails if it stops writing both spellings.
+  // @req REQ-178
+  it("leads from « Kɔnɔ » to « Kono » on the real PPL_KONO fiche", () => {
+    const source = JSON.parse(
+      readFileSync(
+        join(
+          process.cwd(),
+          "dataset/source/afrik/peuples/FLG_MANDE/PPL_KONO.json"
+        ),
+        "utf8"
+      )
+    );
+    const kono = subjectOf(readAnswer("people", source.content, source), {
+      id: source.id,
+    });
+
+    const element = lead(renderAnswer("Kɔnɔ", [kono]).container);
+    expect(element).toHaveTextContent(
+      searchFeedCopy.fr.searchedLead.searched("Kɔnɔ")
+    );
+    expect(
+      within(element).getByRole("link", {
+        name: searchFeedCopy.fr.searchedLead.self.people("Kono"),
+      })
+    ).toHaveAttribute("href", expect.stringContaining("PPL_KONO"));
+  });
+
   // @req REQ-178
   it("names a language's self-given form with the speakers' wording", () => {
     const named = {

@@ -23,7 +23,10 @@
     {
       "spelling": "Issaca",
       "attestations": [
-        { "countryId": "NER", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "NER",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -32,13 +35,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Issaka est présenté comme une forme d'Ishaq employée dans l'Afrique de l'Ouest francophone.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["behindthename-issaka-submitted"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -113,5 +111,40 @@
       "fieldPath": "homonyms",
       "reason": "Les formes Issaka, Issaca et Ishaq ont été distinguées dans les recherches onomastiques ; aucune origine indépendante n'a été établie pour constituer un homonyme."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Les sources réunies dans ce dossier racontent l’histoire du nom Issaka.",
+    "originExplained": true,
+    "names": [
+      {
+        "nameText": "Issaka",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Issaka est présenté comme une forme d'Ishaq employée dans l'Afrique de l'Ouest francophone.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "User-submitted name Issaka",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.behindthename.com/name/issaka/submitted",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Contribution d'un utilisateur, consultée en anglais. Le site précise que son équipe éditoriale ne l'a pas vérifiée. Elle propose un lien entre Issaka et Ishaq en Afrique de l'Ouest francophone. Cette explication reste une hypothèse."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

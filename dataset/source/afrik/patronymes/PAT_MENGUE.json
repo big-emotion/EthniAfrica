@@ -6,7 +6,7 @@
   },
   "id": "PAT_MENGUE",
   "nameMain": "Mengue",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Mengue",
@@ -19,17 +19,12 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'étude des dictionnaires de noms gabonais atteste Mengue dans la construction Mengue Me Ngou, analysée comme « Mengue de Ngou ». Elle établit la structure relationnelle d'une dénomination bantoue gabonaise où la filiation peut être élidée, mais ne propose ni étymologie lexicale de Mengue ni preuve que toutes les lignées modernes suivent ce modèle.",
-        "claimStatus": "established",
-        "sourceRefs": ["ndinga-koumba-2025-mengue"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -70,7 +65,7 @@
   "gaps": [
     {
       "fieldPath": "nameSystem",
-      "reason": "la recherche web et bibliographique combinant « Mengue », « Fang », « Gabon », « nom personnel », « patronyme », « étymologie », « filiation », « clan » et « transmission », ainsi que l'article sur les dictionnaires anthroponymiques gabonais et la page Forebears dédiée n'ont pas établi que la catégorie provisoire « clan_name » décrive Mengue lui-même ; elle reste une hypothèse de classement, sans être transformée en affirmation."
+      "reason": "Aucune source consultée n'en fait un nom de clan : la source lue y voit un nom de personne fang. Chez les Fang, chacun reçoit un nom à lui, suivi de celui de son père, selon Bonifacio Nguema Obiang-Mikue. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant comme un nom de famille. La fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "alliances",
@@ -92,5 +87,63 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Mengue », « Fang », « Gabon », « nom personnel », « patronyme », « étymologie », « filiation », « clan » et « transmission », ainsi que l'article sur les dictionnaires anthroponymiques gabonais et la page Forebears dédiée n'ont établi aucune règle propre à Mengue permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mengue est un nom de personne fang, qu'un auteur écrit aussi Mangue. Il le range parmi les noms fang dont on ne trouve pas le sens : on ne sait pas avec certitude d'où vient Mengue, ni depuis quand il est écrit.",
+    "names": [
+      {
+        "nameText": "Mengue",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne fang, écrit aussi Mangue ; son sens reste inconnu.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "Écrit en 2005, cité en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Mengue, que Rosendo Ela Nsue Mibui écrit « Mangue (Mengue) », compte parmi les noms fang qu'il juge originaux : il n'y trouve ni dérivation ni composition qui en donnerait le sens. On ne sait donc pas avec certitude ce qu'il veut dire. Cet auteur est cité par Bonifacio Nguema Obiang-Mikue.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "La cultura para el reconocimiento de la identidad: caso de la cultura fang de Guinea Ecuatorial",
+                "author": "Bonifacio Nguema Obiang-Mikue",
+                "year": 2023,
+                "url": "https://doi.org/10.29166/catedra.v6i1.4282",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 179",
+                "notes": "Article de Revista Cátedra 6(1), 2023, pp. 171-186. Lu le 18 octobre 2026 dans le PDF en espagnol. Page 179 : l'auteur cite Rosendo Ela Nsue Mibui (2005, p. 102), pour qui certains noms fang « parece que son netamente originales y de los que no puede encontrarse posibilidad de derivación o de composición circunstancial como Mbomio (Mbomeyo), Esono, Edú, Elá, Mbá, Abeso, Nguema, Obono, Mibui, Angue, Mangue (Mengue) ». L'ouvrage de Nsue Mibui n'a pas été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'étude des dictionnaires de noms gabonais atteste Mengue dans la construction Mengue Me Ngou, analysée comme « Mengue de Ngou ». Elle établit la structure relationnelle d'une dénomination bantoue gabonaise où la filiation peut être élidée, mais ne propose ni étymologie lexicale de Mengue ni preuve que toutes les lignées modernes suivent ce modèle.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Dictionnaires des noms personnels gabonais : promesses d'un domaine de la lexicographie gabonaise",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.researchgate.net/publication/388322761_Dictionnaires_des_Noms_Personnels_Gabonais_Promesses_d'un_Domaine_de_la_Lexicographie_Gabonaise",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Article métalexicographique de Ndinga-Koumba-Binza consulté directement. Il donne Mengue Me Ngou comme exemple de dénomination bantoue gabonaise signifiant structurellement « Mengue de Ngou » et décrit l'élision cognitive de fils/fille ; il ne fournit pas le sens lexical de Mengue."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

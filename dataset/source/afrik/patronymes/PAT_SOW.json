@@ -40,6 +40,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -149,10 +150,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Aucune source lue ne dit d'où vient le nom Sow : André Arcin le rapproche des Soso sans aller plus loin, et la notice du Dictionary of American Family Names le rattache aux Fulani et aux Toucouleurs sans lui donner de sens. L'origine du nom n'est donc pas affirmée."
-    },
     {
       "fieldPath": "casteOrSocialFunction",
       "reason": "Les sources lues ne donnent au nom Sow ni fonction sociale ni métier héréditaire ; le dictionnaire des noms de clan note seulement que des griots attachés à des marabouts soninké le portent aussi."

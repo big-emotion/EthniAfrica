@@ -120,11 +120,6 @@
     "rationale": "« Kukuruku : nom donné par l'administration coloniale britannique », « rejeté par la communauté comme héritage colonial dévalorisant »."
   },
   {
-    "id": "PPL_AFRICAINS_D_ORIGINE_RECENTE",
-    "status": "reconstructive",
-    "rationale": "La fiche decrit une « construction administrative et statistique, non une identite ethnique » : designation portugaise des institutions capverdiennes que nul groupe ne revendique comme nom propre."
-  },
-  {
     "id": "PPL_AGAW",
     "status": "contested",
     "rationale": "La fiche dit l'identité agaw « davantage construite par des tierces parties (Amhara, Tigrinya) que vecue comme un identifiant primaire », les communautés se définissant par leurs sous-groupes."
@@ -228,11 +223,6 @@
     "id": "PPL_AUSTRO_MACRO",
     "status": "reconstructive",
     "rationale": "« Categorie analytique scientifique (linguistique et genetique) » dont « aucun de ces groupes ne se nomme lui-meme austronesien » : label savant sans communaute qui le porte."
-  },
-  {
-    "id": "PPL_AUTRES_PEUPLES_BANTOUS",
-    "status": "reconstructive",
-    "rationale": "« Categorie residuelle » d'agregation des recensements : « la categorisation autres efface les identites specifiques », alors que « chaque groupe possede sa propre auto-appellation »."
   },
   {
     "id": "PPL_BADE",
@@ -738,11 +728,6 @@
     "id": "PPL_GUR_MACRO",
     "status": "reconstructive",
     "rationale": "Gur est « une appellation academique forgee par les linguistes », « une categorie linguistique et non une identite ethnique partagee », sans auto-designation collective."
-  },
-  {
-    "id": "PPL_GUWA",
-    "status": "contested",
-    "rationale": "Prose mince : le nom « peut etre confondu avec d'autres groupes africains portant des appellations similaires » et la documentation manque ; Guwa reste « l'autodenomination du groupe »."
   },
   {
     "id": "PPL_GWANDARA",
@@ -1315,11 +1300,6 @@
     "rationale": "The fiche records that people commonly called Minyanka may self-identify as Bamana in the documented context, while warning against automatically conflating them with the separately catalogued Bambara people."
   },
   {
-    "id": "PPL_MOBE",
-    "status": "contested",
-    "rationale": "Le terme Kirdi est dit « stigmatisant », « rejete par les populations concernees » et employe par « les populations musulmanes voisines » ; aucun acteur colonial n'est nomme."
-  },
-  {
     "id": "PPL_MOCHA",
     "status": "contested",
     "rationale": "La fiche dit Mocha « percu comme un exonyme pejoratif par la communaute », qui « prefere l'appellation Shekkacho », terme repris du linguiste Wolf Leslau (1958-1959)."
@@ -1346,8 +1326,8 @@
   },
   {
     "id": "PPL_MUCUVAL",
-    "status": "contested",
-    "rationale": "La fiche invoque une « confusion possible avec les Mucubal » et un nom Cubal partagé qui « brouille les classifications », sans auteur colonial : le débat porte sur l'identification du groupe."
+    "status": "colonial-legacy",
+    "rationale": "Depuis que la fiche Mucubal y a été fusionnée (2026-10-18), la fiche dit que « le nom Mucubal vient des documents coloniaux portugais » et qu'il portait « chez beaucoup d'agents coloniaux » des accusations qui ont servi à fonder des politiques particulières : le nom en cause est attribué à un acteur colonial."
   },
   {
     "id": "PPL_MURSI",
@@ -1555,11 +1535,6 @@
     "rationale": "« L'administration britannique et boère a utilisé Northern Sotho pour regrouper une trentaine de dialectes distincts », et « Basotho ba Lebowa dérive du homeland de Lebowa créé sous l'apartheid en 1972 »."
   },
   {
-    "id": "PPL_PEUPLES_FORESTIERS_DU_SUD_ET_DE_L_EST",
-    "status": "reconstructive",
-    "rationale": "La fiche dit que c'est 'une categorisation geographique et ecologique, non ethnique', une 'denomination analytique' regroupant Makaa-Njem et Baka-Bagyeli, chaque peuple gardant son nom propre."
-  },
-  {
     "id": "PPL_PODOKO",
     "status": "colonial-legacy",
     "rationale": "« La grande variete des orthographes europeennes reflete les difficultes des transcriptions coloniales », et « le nom administratif francais Podoko a ete adopte dans les publications officielles »."
@@ -1572,7 +1547,7 @@
   {
     "id": "PPL_PYGMEES_AUTOCHTONES",
     "status": "colonial-legacy",
-    "rationale": "La fiche dit le terme Pygmee 'devalorisant et colonial', 'recupere par l'anthropologie coloniale au XIXe siecle' et utilise pour justifier discrimination et exclusion."
+    "rationale": "La fiche dit le terme Pygmee 'devalorisant et colonial' et utilise pour justifier discrimination et exclusion ; son origine, corrigée le 2026-10-18, rapporte que des explorateurs l'ont donné à ces peuples à la fin du XIXe siècle."
   },
   {
     "id": "PPL_QEMANT",
@@ -1967,7 +1942,7 @@
   {
     "id": "PPL_WIYANA",
     "status": "contested",
-    "rationale": "La fiche impute le nom problematique aux voisins africains : Gurunsi est un meta-terme pejoratif d'origine djerma utilise par les Mossi, sans auteur colonial ; il efface l'identite propre des Wiyana."
+    "rationale": "La fiche impute le nom problematique aux voisins africains : Gourounsi est un nom d'ensemble venu de l'exterieur, peut-etre un sobriquet en moore, la langue des Mossi, selon Jean-Pierre Jacob, sans auteur colonial ; il ne dit pas le nom que les Winye se donnent (rationale revue le 2026-10-18)."
   },
   {
     "id": "PPL_WOGO",

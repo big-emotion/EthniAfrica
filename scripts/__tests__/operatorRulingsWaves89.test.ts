@@ -114,9 +114,14 @@ describe("fiche errors found by waves 8 and 9", () => {
     expect(fiche.patronymicChainDepth).toBeUndefined();
     expect(serialized).not.toContain("familysearch");
     expect(serialized).not.toMatch(/grand-père servant/);
-    expect(fiche.origin.linguisticReconstructions[0].claimStatus).not.toBe(
-      "established"
+    const historyAccounts = fiche.nameHistory.names.flatMap(
+      (name: NameEntry) => name.accounts
     );
+    expect(
+      historyAccounts.find((account: Account) =>
+        /serviteur de Michel/.test(account.statement)
+      )?.claimStatus
+    ).not.toBe("established");
   });
 
   // @req REQ-133

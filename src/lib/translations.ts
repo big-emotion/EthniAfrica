@@ -14,6 +14,7 @@ import { consentCopy } from "@/lib/i18n/copy/consent";
 import { compareCopy } from "@/lib/i18n/copy/compare";
 import { contactCopy } from "@/lib/i18n/copy/contact";
 import { aboutCopy } from "@/lib/i18n/copy/about";
+import { approachCopy } from "@/lib/i18n/copy/approach";
 import { contributeCopy } from "@/lib/i18n/copy/contribute";
 import { facetsCopy } from "@/lib/i18n/copy/facets";
 import { fieldProvenanceCopy } from "@/lib/i18n/copy/fieldProvenance";
@@ -68,6 +69,7 @@ const fr = {
   facets: facetsCopy.fr,
   footer: footerCopy.fr,
   about: aboutCopy.fr,
+  approach: approachCopy.fr,
   games: gamesCopy.fr,
   sitemapPage: sitemapPageCopy.fr,
   publicFlags: publicFlagsCopy.fr,

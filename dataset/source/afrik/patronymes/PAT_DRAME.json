@@ -39,30 +39,10 @@
   "transmissionMode": "other",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [
-      {
-        "claim": "Dinga, l'ancêtre légendaire des Soninké à qui la tradition orale des griots attribue la fondation du Wagadou, serait l'ancêtre des Soninké qui portent les noms Cissé, Diané, Dramé, Khouma, Sakho, Soukhouna et Touré. Le récit est rapporté sans nommer de griot ni citer de source.",
-        "claimStatus": "claimed",
-        "collection": "not-stated",
-        "context": "Récit rapporté en français dans une encyclopédie en ligne, sans source citée pour cette liste",
-        "sourceRefs": ["wikipedia-soninkes"]
-      }
-    ],
+    "oralTraditions": [],
     "writtenChronicles": [],
-    "historicalSyntheses": [
-      {
-        "claim": "Les Dramé, écrits Drame, comptent parmi les plus anciens clans de la société songhay, tous d'origine soninké, avec les Ture, Sylla, Tunkara, Cissé, Jakhite et Jawara. La synthèse ne donne aucun sens au nom.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["hga-iv-cissoko"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le dictionnaire des noms de clan mandingues enregistre Daramɛ comme nom de clan, sans lui donner de sens. Son entrée Wago, l'une des trois grandes subdivisions des Soninké, rattachée au Wagadou, compte Drame parmi ses noms de clan.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["bamadaba-jamuw"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -228,6 +208,68 @@
             },
             "era": "modern",
             "statement": "Le nom Dramé, écrit Drame, figure parmi les noms de clan du Wago, l'une des trois grandes subdivisions des Soninké, dont le berceau serait le Wagadou, selon le dictionnaire des noms de clan mandingues.",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet lu le 9 octobre 2026. L'entrée Daramɛ l'enregistre comme nom de clan, sans variante, sans statut et sans sens. L'entrée Wago, dont la note est en russe, présente le Wago comme l'une des trois grandes subdivisions des Soninké, dont le berceau serait le Wagadou, et compte Drame parmi ses noms de clan ; la traduction de cette note est la nôtre. Le fichier ne donne pas la légende de ses abréviations de provenance, que nous ne lisons donc pas."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dinga, l'ancêtre légendaire des Soninké à qui la tradition orale des griots attribue la fondation du Wagadou, serait l'ancêtre des Soninké qui portent les noms Cissé, Diané, Dramé, Khouma, Sakho, Soukhouna et Touré. Le récit est rapporté sans nommer de griot ni citer de source.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Soninkés — Wikipédia",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://fr.wikipedia.org/wiki/Sonink%C3%A9s",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Article consulté le 9 octobre 2026. La section « Mythe des origines » attribue à la tradition orale des griots soninkés le récit de Dinga et la liste des noms de ses descendants, sans citer de source pour cette liste. La section sur les patronymes reprend une liste de Makhtar Diouf, chercheur à l'IFAN (Sénégal, les ethnies et la nation, Dakar, NEAS, 1998, p. 70-71), que nous n'avons pas lue.\nRécit rapporté en français dans une encyclopédie en ligne, sans source citée pour cette liste"
+              }
+            ],
+            "collection": "not-stated"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Les Dramé, écrits Drame, comptent parmi les plus anciens clans de la société songhay, tous d'origine soninké, avec les Ture, Sylla, Tunkara, Cissé, Jakhite et Jawara. La synthèse ne donne aucun sens au nom.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 8 : Les Songhay du XIIe au XVIe siècle",
+                "author": "Sékéné Mody Cissoko",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 230",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 230 : « Les plus anciens étaient d'origine soninke (Ture, Sylla, Tunkara, Sise, Jakite, Drame, Jawara) ». Le chapitre ne donne aucun sens au nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le dictionnaire des noms de clan mandingues enregistre Daramɛ comme nom de clan, sans lui donner de sens. Son entrée Wago, l'une des trois grandes subdivisions des Soninké, rattachée au Wagadou, compte Drame parmi ses noms de clan.",
+            "claimStatus": "claimed",
             "sources": [
               {
                 "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",

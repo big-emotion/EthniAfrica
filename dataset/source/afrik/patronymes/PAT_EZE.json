@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le Dictionary of American Family Names rattache Eze au titre igbo ezè, « roi, chef », également employé comme nom personnel et comme forme courte de composés tels que Ndubueze.",
-        "claimStatus": "established",
-        "sourceRefs": ["hanks-eze"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -148,6 +143,26 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 93",
                 "notes": "Paris, Librairie orientale et américaine, 1899, par le P. A. Ganot, de la Congrégation du Saint-Esprit ; exemplaire numérisé sur archive.org. Page 93, « Exercice V, Vocabulaire » : « ézè, roi ». Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le Dictionary of American Family Names rattache Eze au titre igbo ezè, « roi, chef », également employé comme nom personnel et comme forme courte de composés tels que Ndubueze.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Eze Name Meaning and Eze Family History at FamilySearch",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.familysearch.org/en/surname?surname=eze",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Entrée Eze du Dictionary of American Family Names de Patrick Hanks (2003, 2006), hébergée par FamilySearch et consultée directement. La fiche du dictionnaire identifie explicitement la forme comme nom igbo du Nigeria."
               }
             ]
           }

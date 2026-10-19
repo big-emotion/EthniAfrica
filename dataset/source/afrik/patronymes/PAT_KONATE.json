@@ -74,101 +74,10 @@
   "transmissionMode": "patrilineal",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [
-      {
-        "claim": "Le nom viendrait d'une femme qu'on disait stérile. Le texte raconte qu'une femme respectée n'arrivait pas à avoir d'enfant et tout le village l'appelait « kona mousso », la femme stérile ; quand elle en eut un, l'enfant prit le nom de Konatè, « il n'est pas stérile », en souvenir de ce qui avait précédé sa naissance. Aujourd'hui encore, quand une femme a un enfant tard, les anciennes la saluent d'un « i konatè », pour faire taire les mauvaises langues et honorer la mère.",
-        "claimStatus": "claimed",
-        "collection": "not-stated",
-        "context": "Texte écrit en français, cité sans indication de provenance dans un mémoire universitaire russe de 2017 ; on ne sait ni qui l'a raconté, ni où, ni quand",
-        "sourceRefs": ["bogacheva-2017-jamu"]
-      },
-      {
-        "claim": "Une légende fait des Konaté, des Coulibaly et des Keïta les descendants d'un même couple, Mahamadu Kanu et Mariatu, et elle connaît deux versions. Dans la première, l'aîné, Coulibaly, cède le pouvoir au cadet, Keïta, en échange de nourriture. Dans la seconde, trois frères vivent dans un village et Lawali Simbo est choisi comme chef à la place de l'aîné, Kanu, mais n'a pas d'enfant ; son frère Kanunyoro Simbo prend alors le nom de Konate, que le récit explique par kona, celui qui ne peut avoir d'enfant, suivi de la négation te : celui qui a des enfants. Quand Lawali a à son tour des enfants, il reçoit le nom de Keyita, « celui qui prend l'héritage ».",
-        "claimStatus": "claimed",
-        "collection": "mediated",
-        "collector": "V. Vydrin et A. Davydov, dont les notes ne disent pas qui l'a raconté ; reproduit par E. A. Bogacheva en 2017",
-        "context": "Récit rapporté en russe dans un mémoire universitaire, à l'entrée du nom Keïta",
-        "sourceRefs": ["bogacheva-2017-jamu"]
-      },
-      {
-        "claim": "L'épopée de Soundiata nomme Siara Kouman Konate, cousin de Soundiata, parmi les chefs venus le rejoindre avant la bataille contre le roi du Sosso, et en fait l'ancêtre des gens du pays de Toron. Elle raconte qu'à l'assemblée de Kouroukan Fougan les Konate du Toron devinrent les cadets des Keita, si bien qu'un Konate parvenu à l'âge mûr pouvait se faire appeler Keita.",
-        "claimStatus": "claimed",
-        "carrier": "Djeli Mamadou Kouyaté, griot de Djeliba Koro, près de Siguiri",
-        "collection": "mediated",
-        "collector": "Djibril Tamsir Niane, qui l'a traduit en français",
-        "context": "Épopée publiée en 1960",
-        "sourceRefs": ["niane-1960"]
-      },
-      {
-        "claim": "Dans l'épopée récitée à Kela, Konate revient comme un nom de louange de Soundiata : « Jata Konate » sert de refrain à ses éloges, et il est salué « Sirifiya Magan Konate ». Le même récit fait de Soma Jobi, salué comme « premier prêtre du Manden, et dernier prêtre du Manden », « l'ancêtre des Konate », et c'est chez lui que le jeune Soundiata trouve refuge quand il fuit son frère aîné.",
-        "claimStatus": "claimed",
-        "carrier": "Lansine Diabaté, chef de la parole (kumatigi) de Kela, au Mali",
-        "collection": "mediated",
-        "collector": "Jan Jansen, Esger Duintjer et Boubacar Tamboura",
-        "context": "Récit en maninka publié avec sa traduction française en 1995",
-        "sourceRefs": ["jansen-1995-lansine-diabate"]
-      },
-      {
-        "claim": "Avant l'empire du Mali, les traditions du Manding connaissent deux royaumes : le Do, habité par le clan Condé, et le Kiri, aussi appelé Manden, qu'occupaient les Konaté avec les Keïta. Elles comptent Siara Kuman Konate parmi les chefs d'armée ralliés à Soundiata avant la bataille de Kirina, et parmi les nombreux noms de Soundiata elles donnent celui de Nare Maghan Konate, « roi des Konate, fils de Nare Maghan ».",
-        "claimStatus": "claimed",
-        "collection": "mediated",
-        "collector": "Djibril Tamsir Niane, d'après les écoles de tradition orale du Manding",
-        "context": "Synthèse historique publiée par l'UNESCO en 1985",
-        "sourceRefs": ["hga-iv-niane"]
-      },
-      {
-        "claim": "Une tradition fait venir de l'est les fondateurs du Mali, conduits par Kabala Simbo Keïta, qui se seraient établis dans le Do, dont la capitale était Tabu. À Tabu, le chef aurait été un Konate ; une note du mémoire qui rapporte ce récit se demande si c'était avant l'arrivée des Keïta. Le même mémoire relève que le récit a pu être forgé à Kong, et bien après les siècles dont il parle.",
-        "claimStatus": "contested",
-        "collection": "mediated",
-        "collector": "Charles Monteil, administrateur colonial, dans un ouvrage de 1924 cité de seconde main",
-        "context": "Récit rapporté en russe dans un mémoire universitaire de 2017, à l'entrée du nom Keïta ; l'informateur n'est pas nommé",
-        "sourceRefs": ["bogacheva-2017-jamu"]
-      }
-    ],
-    "writtenChronicles": [
-      {
-        "claim": "Le nom viendrait d'une princesse sans enfant. Síyara Kétà, fille du souverain des Mansarén, est mariée à un homme du Toron ; parce qu'elle n'a pas d'enfant, une coépouse l'appelle « kòna móso », la femme stérile. Sa famille lui confie alors un garçon, Kòmán, et ceux qui la disaient stérile se mettent à l'appeler « kòna tɛ̀ móso », la femme qui n'est pas stérile. Les nombreux descendants de Kòmán sont appelés les gens de la femme Kònatɛ́, d'où leur nom ; Síyara devient leur nom d'honneur, et l'on peut encore aujourd'hui saluer un Konaté du nom de Kétà. L'ouvrage, écrit en n'ko par Souleymane Kanté, fait ainsi des Konaté une branche cadette des Mansarén.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["bogacheva-2017-jamu"]
-      }
-    ],
-    "historicalSyntheses": [
-      {
-        "claim": "Une synthèse historique avance, avec prudence, que les clans maninka des Kuruma et des Konaté du Toron se partageaient le pouvoir de Kankan à Odienné au plus tard au XVe siècle.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["hga-iv-person"]
-      },
-      {
-        "claim": "Au XIXe siècle, entre le Toron et le Konyan, la lignée des Berete organise une domination locale « au nom des traditionalistes konate », et Samori, né vers 1830, compte parmi ses ancêtres « plus de Kamara ou Konate, paysans traditionalistes, que de commerçants musulmans ».",
-        "claimStatus": "claimed",
-        "sourceRefs": ["hga-vi-person"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le dictionnaire des noms de clan mandingues définit le mot seulement comme un nom de clan et ne lui donne aucun sens. Il tient Konaté pour un équivalent de Keïta, et peut-être de Konaré.",
-        "claimStatus": "established",
-        "sourceRefs": ["bamadaba-jamuw"]
-      },
-      {
-        "claim": "Plusieurs récits rapprochent le nom de kona, qui désigne une personne sans enfant, et d'une négation, mais chacun à sa manière : le texte en français traduit Konatè par « il n'est pas stérile » ; la légende des trois frères le décompose en kona et te, « celui qui a des enfants » ; l'ouvrage de Souleymane Kanté ne découpe pas le nom, mais le tire de l'expression « kòna tɛ̀ móso », la femme qui n'est pas stérile, kòna désignant une femme qui ne peut avoir d'enfant ou dont les enfants meurent. Ces trois lectures nous parviennent par un même mémoire, et aucun travail de linguiste consulté ne les confirme ni ne les discute.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["bogacheva-2017-jamu"]
-      },
-      {
-        "claim": "Les éditeurs de l'épopée récitée à Kela décrivent Konate comme un nom de clan honorifique, lié aux Mansaren, la lignée royale des Keïta, et le donnent comme un titre d'honneur de Soundiata.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["jansen-1995-lansine-diabate"]
-      },
-      {
-        "claim": "Un administrateur colonial écrit en 1912 que le clan des Kounaté ou Konaté est originaire de Kouna ou Kona, à l'est du Macina, près du lac Débo ; il donne ce lieu comme point de départ du clan, sans en tirer le nom. Dans les listes de clans qu'il dresse la même année, il rapproche aussi le nom de Kounaré, de Kounari et de Koyaté, sans dire pourquoi.",
-        "claimStatus": "claimed",
-        "sourceRefs": [
-          "delafosse-1912-haut-senegal-niger",
-          "bogacheva-2017-jamu"
-        ]
-      }
-    ]
+    "oralTraditions": [],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -372,7 +281,8 @@
                 "page": "p. 89",
                 "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Kónatɛ̀."
               }
-            ]
+            ],
+            "claimStatus": "established"
           },
           {
             "period": {
@@ -479,9 +389,13 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 102 et 141",
-                "notes": "Présence Africaine, Paris, 1960. Mise par écrit du récit du griot Djeli Mamadou Kouyaté, de Djeliba Koro près de Siguiri. Lu sur une copie non officielle déposée sur Internet Archive (SoundjataOuLepopeeMandingue), recomposée et paginée autrement que l'imprimé ; la page donnée est celle de cette copie. Page 102, Siara Kouman Konaté parmi les chefs ralliés à Soundiata ; page 141, les Konaté du Toron cadets des Keïta. Pages vérifiées sur l'image de la copie."
+                "notes": "Présence Africaine, Paris, 1960. Mise par écrit du récit du griot Djeli Mamadou Kouyaté, de Djeliba Koro près de Siguiri. Lu sur une copie non officielle déposée sur Internet Archive (SoundjataOuLepopeeMandingue), recomposée et paginée autrement que l'imprimé ; la page donnée est celle de cette copie. Page 102, Siara Kouman Konaté parmi les chefs ralliés à Soundiata ; page 141, les Konaté du Toron cadets des Keïta. Pages vérifiées sur l'image de la copie.\nÉpopée publiée en 1960"
               }
-            ]
+            ],
+            "claimStatus": "claimed",
+            "carrier": "Djeli Mamadou Kouyaté, griot de Djeliba Koro, près de Siguiri",
+            "collection": "mediated",
+            "collector": "Djibril Tamsir Niane, qui l'a traduit en français"
           },
           {
             "period": {
@@ -500,9 +414,11 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 89",
-                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Kónatɛ̀ : un texte en français reproduit sans indication de provenance."
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Kónatɛ̀ : un texte en français reproduit sans indication de provenance.\nTexte écrit en français, cité sans indication de provenance dans un mémoire universitaire russe de 2017 ; on ne sait ni qui l'a raconté, ni où, ni quand"
               }
-            ]
+            ],
+            "claimStatus": "claimed",
+            "collection": "not-stated"
           },
           {
             "period": {
@@ -555,6 +471,210 @@
                 "source_kind": "academic",
                 "page": "p. 89-90",
                 "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Kónatɛ̀ : le récit tiré de l'ouvrage de Souleymane Kanté. Le texte original en n'ko de Souleymane Kanté n'a pas été lu ; seule sa traduction russe l'a été, et le français est le nôtre."
+              }
+            ],
+            "claimStatus": "claimed"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une légende fait des Konaté, des Coulibaly et des Keïta les descendants d'un même couple, Mahamadu Kanu et Mariatu, et elle connaît deux versions. Dans la première, l'aîné, Coulibaly, cède le pouvoir au cadet, Keïta, en échange de nourriture. Dans la seconde, trois frères vivent dans un village et Lawali Simbo est choisi comme chef à la place de l'aîné, Kanu, mais n'a pas d'enfant ; son frère Kanunyoro Simbo prend alors le nom de Konate, que le récit explique par kona, celui qui ne peut avoir d'enfant, suivi de la négation te : celui qui a des enfants. Quand Lawali a à son tour des enfants, il reçoit le nom de Keyita, « celui qui prend l'héritage ».",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 89",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Kónatɛ̀.\nRécit rapporté en russe dans un mémoire universitaire, à l'entrée du nom Keïta"
+              }
+            ],
+            "collection": "mediated",
+            "collector": "V. Vydrin et A. Davydov, dont les notes ne disent pas qui l'a raconté ; reproduit par E. A. Bogacheva en 2017"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans l'épopée récitée à Kela, Konate revient comme un nom de louange de Soundiata : « Jata Konate » sert de refrain à ses éloges, et il est salué « Sirifiya Magan Konate ». Le même récit fait de Soma Jobi, salué comme « premier prêtre du Manden, et dernier prêtre du Manden », « l'ancêtre des Konate », et c'est chez lui que le jeune Soundiata trouve refuge quand il fuit son frère aîné.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "L'Épopée de Sunjara, d'après Lansine Diabate de Kela (Mali)",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://hdl.handle.net/1887/2761",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Jansen, Jan, Duintjer, Esger, et Tamboura, Boubacar, CNWS, Leyde, 1995 ; récit du chef de la parole Lansine Diabaté de Kela, en maninka avec traduction ; lu sur la copie conservée par l'Internet Archive. Le refrain « Jata Konate » (p. 44, vers 083, et plus loin) ; « Sirifiya Magan Konate » (p. 51, vers 109) ; Soma Jobi, l'ancêtre des Konate, qui accueille Soundiata en exil (p. 98, vers 276), salué comme premier et dernier prêtre du Manden (p. 99, vers 279) ; note des éditeurs sur Konate, nom de clan honorifique lié aux Mansaren, la lignée royale des Keïta (p. 199, note 26) ; titre d'honneur de Soundiata (p. 207, note 174).\nRécit en maninka publié avec sa traduction française en 1995"
+              }
+            ],
+            "carrier": "Lansine Diabaté, chef de la parole (kumatigi) de Kela, au Mali",
+            "collection": "mediated",
+            "collector": "Jan Jansen, Esger Duintjer et Boubacar Tamboura"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Avant l'empire du Mali, les traditions du Manding connaissent deux royaumes : le Do, habité par le clan Condé, et le Kiri, aussi appelé Manden, qu'occupaient les Konaté avec les Keïta. Elles comptent Siara Kuman Konate parmi les chefs d'armée ralliés à Soundiata avant la bataille de Kirina, et parmi les nombreux noms de Soundiata elles donnent celui de Nare Maghan Konate, « roi des Konate, fils de Nare Maghan ».",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, dir. D. T. Niane, 1985 ; chapitre de D. T. Niane. Pages imprimées : d'après les sources orales, le Do peuplé par les Condé et le Kiri, ou Manden, occupé par les Konate et les Keita (p. 153) ; Mamadi Kani faisant appel aux chasseurs des clans kamara, keita, konate et traore (p. 154) ; Siara Kuman Konate parmi les chefs d'armée ralliés à Sunjata Keita (p. 155) ; Nare Maghan Konate, « roi des Konate, fils de Nare Maghan », parmi les noms de Sunjata Keita (p. 158). Le chapitre ne donne aucun sens au nom.\nSynthèse historique publiée par l'UNESCO en 1985"
+              }
+            ],
+            "collection": "mediated",
+            "collector": "Djibril Tamsir Niane, d'après les écoles de tradition orale du Manding"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une tradition fait venir de l'est les fondateurs du Mali, conduits par Kabala Simbo Keïta, qui se seraient établis dans le Do, dont la capitale était Tabu. À Tabu, le chef aurait été un Konate ; une note du mémoire qui rapporte ce récit se demande si c'était avant l'arrivée des Keïta. Le même mémoire relève que le récit a pu être forgé à Kong, et bien après les siècles dont il parle.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 89",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Kónatɛ̀.\nRécit rapporté en russe dans un mémoire universitaire de 2017, à l'entrée du nom Keïta ; l'informateur n'est pas nommé"
+              }
+            ],
+            "collection": "mediated",
+            "collector": "Charles Monteil, administrateur colonial, dans un ouvrage de 1924 cité de seconde main"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une synthèse historique avance, avec prudence, que les clans maninka des Kuruma et des Konaté du Toron se partageaient le pouvoir de Kankan à Odienné au plus tard au XVe siècle.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 12 : Les peuples côtiers, premiers contacts avec les Portugais, de la Casamance aux lagunes ivoiriennes",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, 1985 ; chapitre d'Yves Person. Page imprimée : dans un passage où l'auteur avance avec prudence (« il semble »), de grands lignages nobles se partageant le pouvoir, dont les clans maninka des Kuruma et des Konate du Toron, de Kankan à Odienné, « au plus tard au XVe siècle » (p. 341)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Au XIXe siècle, entre le Toron et le Konyan, la lignée des Berete organise une domination locale « au nom des traditionalistes konate », et Samori, né vers 1830, compte parmi ses ancêtres « plus de Kamara ou Konate, paysans traditionalistes, que de commerçants musulmans ».",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 24 : États et peuples de Sénégambie et de haute Guinée",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, dir. J. F. Ade Ajayi, 1996 ; chapitre d'Yves Person. Pages imprimées : sur la haute vallée du Milo, entre le Toron et le Konyan, la lignée des Berete organisant une hégémonie locale « au nom des traditionalistes konate » (p. 704) ; Samori, né vers 1830, comptant parmi ses ancêtres « plus de Kamara ou Konate, paysans traditionalistes, que de commerçants musulmans » (p. 705)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Plusieurs récits rapprochent le nom de kona, qui désigne une personne sans enfant, et d'une négation, mais chacun à sa manière : le texte en français traduit Konatè par « il n'est pas stérile » ; la légende des trois frères le décompose en kona et te, « celui qui a des enfants » ; l'ouvrage de Souleymane Kanté ne découpe pas le nom, mais le tire de l'expression « kòna tɛ̀ móso », la femme qui n'est pas stérile, kòna désignant une femme qui ne peut avoir d'enfant ou dont les enfants meurent. Ces trois lectures nous parviennent par un même mémoire, et aucun travail de linguiste consulté ne les confirme ni ne les discute.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 89",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Kónatɛ̀."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Les éditeurs de l'épopée récitée à Kela décrivent Konate comme un nom de clan honorifique, lié aux Mansaren, la lignée royale des Keïta, et le donnent comme un titre d'honneur de Soundiata.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "L'Épopée de Sunjara, d'après Lansine Diabate de Kela (Mali)",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://hdl.handle.net/1887/2761",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Jansen, Jan, Duintjer, Esger, et Tamboura, Boubacar, CNWS, Leyde, 1995 ; récit du chef de la parole Lansine Diabaté de Kela, en maninka avec traduction ; lu sur la copie conservée par l'Internet Archive. Le refrain « Jata Konate » (p. 44, vers 083, et plus loin) ; « Sirifiya Magan Konate » (p. 51, vers 109) ; Soma Jobi, l'ancêtre des Konate, qui accueille Soundiata en exil (p. 98, vers 276), salué comme premier et dernier prêtre du Manden (p. 99, vers 279) ; note des éditeurs sur Konate, nom de clan honorifique lié aux Mansaren, la lignée royale des Keïta (p. 199, note 26) ; titre d'honneur de Soundiata (p. 207, note 174).\nRécit en maninka publié avec sa traduction française en 1995"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Un administrateur colonial écrit en 1912 que le clan des Kounaté ou Konaté est originaire de Kouna ou Kona, à l'est du Macina, près du lac Débo ; il donne ce lieu comme point de départ du clan, sans en tirer le nom. Dans les listes de clans qu'il dresse la même année, il rapproche aussi le nom de Kounaré, de Kounari et de Koyaté, sans dire pourquoi.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 263",
+                "notes": "Émile Larose, Paris, 1912. L'auteur est un administrateur colonial en Afrique-Occidentale française. Lu sur l'édition du Projet Gutenberg, qui marque les pages de l'imprimé. Page 263."
+              },
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 89",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Kónatɛ̀."
               }
             ]
           }

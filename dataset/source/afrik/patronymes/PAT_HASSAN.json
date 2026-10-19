@@ -52,17 +52,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une étude de morphologie arabe identifie Hassan comme un nom personnel masculin arabe homophone de l'adjectif signifiant « beau », tout en avertissant que le nom propre ne porte pas automatiquement le sens lexical de son homophone. Une ressource onomastique communautaire distingue en outre deux graphies arabes que la translittération Hassan peut recouvrir et classe le patronyme comme issu du prénom ; cette filiation reste donc une attribution revendiquée plutôt qu'une reconstruction démontrée pour chaque lignée africaine.",
-        "claimStatus": "claimed",
-        "sourceRefs": [
-          "idrissi-prunet-beland-hassan",
-          "behind-name-hassan",
-          "behind-surname-hassan"
-        ]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -283,6 +274,45 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 428",
                 "notes": "Paris, Maisonneuve, 1860. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. « Beau, joli (et de là, n. pr. d'homme, Hassan) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une étude de morphologie arabe identifie Hassan comme un nom personnel masculin arabe homophone de l'adjectif signifiant « beau », tout en avertissant que le nom propre ne porte pas automatiquement le sens lexical de son homophone. Une ressource onomastique communautaire distingue en outre deux graphies arabes que la translittération Hassan peut recouvrir et classe le patronyme comme issu du prénom ; cette filiation reste donc une attribution revendiquée plutôt qu'une reconstruction démontrée pour chaque lignée africaine.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "On the Mental Representation of Arabic Roots",
+                "author": "Ali Idrissi, Jean-François Prunet et Renée Béland",
+                "year": 2008,
+                "url": "https://medfam.umontreal.ca/wp-content/uploads/sites/32/publicationsBelandR_representationArabic2008.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 242, 244-245",
+                "notes": "Linguistic Inquiry, vol. 39, n° 2, 2008. Lu en texte intégral le 11 octobre 2026. Page 242 : Hassan, nom d'homme arabe qui se prononce comme l'adjectif voulant dire « beau » ; un nom n'en garde pas pour autant le sens. Pages 244-245 : des arabophones le relient à « beau », d'autres à « bon », d'autres à rien."
+              },
+              {
+                "title": "Meaning, origin and history of the name Hassan",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.behindthename.com/name/hassan",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Ressource onomastique communautaire consultée intégralement. Elle présente Hassan comme translittération usuelle de حسن, mais aussi comme translittération possible du nom distinct حسّان, et donne Xasan comme forme somalie. Cette source ne permet pas d'établir les étymologies qu'elle propose."
+              },
+              {
+                "title": "Meaning, origin and history of the surname Hassan",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://surnames.behindthename.com/name/hassan",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Fiche communautaire du patronyme consultée intégralement. Elle classe Hassan comme nom de famille arabe issu du prénom Hassan, sans documenter séparément les lignées africaines portant cette graphie."
               }
             ]
           }

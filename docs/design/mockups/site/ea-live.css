@@ -1204,10 +1204,11 @@
   --afh-source-diamond-fill: var(--afh-source-other);
 }
 
-/* The button is the 24px target (WCAG 2.5.8); the negative block margin keeps
-   it from opening a gap in the line of prose it ends. The mark sits at the
-   start of the box, so the no-break space before it is the only gap after
-   the last word, as in the film; the rest of the target extends past it. */
+/* The diamond's own 24px box, as the colour swatches of the boards draw it;
+   the negative block margin keeps it from opening a gap in the line of prose
+   it ends. The mark sits at the start of the box, so the no-break space
+   before it is the only gap after the last word, as in the film. The sources
+   button grows this box into its labelled 44px target, below. */
 .afh-source-diamond {
   display: inline-flex;
   align-items: center;
@@ -1221,6 +1222,42 @@
   background: transparent;
   vertical-align: middle;
   cursor: pointer;
+}
+
+/* The sources button (brief 11 §3, charter §8 as amended 2026-10-17): the
+   diamond, then « Source » or « Sources », no count, in ink rather than the
+   family colour, for contrast. The label sits on the passage's baseline.
+   Ten pixels of padding above and below, cancelled by the same negative
+   margin, make a 44px target whose layout box is the label's 24px line:
+   shorter than the passage's own line, so the passage keeps its line
+   height. `button.` leaves the swatches, which are spans, as they are. */
+button.afh-source-diamond {
+  display: inline-block;
+  min-width: 44px;
+  margin-block: calc(-1 * var(--afh-space-base));
+  padding: var(--afh-space-base) var(--afh-space-xs) var(--afh-space-base) 2px;
+  font-size: var(--afh-text-small);
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--afh-text-soft);
+  white-space: nowrap;
+  text-align: start;
+  vertical-align: baseline;
+}
+
+button.afh-source-diamond .afh-source-diamond-mark {
+  margin-inline-end: var(--afh-space-sm);
+  vertical-align: middle;
+}
+
+/* A no-break space does not hold a button to the word before it: CSS keeps
+   a wrap opportunity on both sides of an atomic inline (CSS Text 3, 5.1).
+   The passage's last word and the button go in one inline block, which
+   moves to the next line whole. Unlike `nowrap`, it still breaks inside
+   when its column is narrower than word and button together (the readings
+   side by side on a fiche at 768), so it never widens that column. */
+.afh-source-tail {
+  display: inline-block;
 }
 
 .afh-source-diamond-mark {
@@ -1268,6 +1305,12 @@
 }
 
 /* ===== search-feed.css (verbatim) ===== */
+.search-feed-pill-group {
+  /* Approved brief 17 keeps the search controls at 14 px without adding a
+     tenth global text role. The value is limited to their shared group. */
+  --search-feed-text-pill: 0.875rem;
+}
+
 /* The reviewed boards publish rounded reference-width values for the three
    fluid editorial roles used by the search feed. Keep the scale fluid between
    its existing bounds while landing exactly on the approved 430 px rendering.
@@ -1343,10 +1386,28 @@
   white-space: nowrap;
 }
 
+/* Brief 11 §1a: the self-name's question under the sentence, in the same
+   button, so one tap still opens the self-name. */
+.afh-name-timeline-lead-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--afh-space-xs);
+  min-width: 0;
+}
+
+.afh-name-timeline-lead-line {
+  font-size: var(--afh-text-small);
+  line-height: 1.5;
+  color: var(--afh-text-soft);
+}
+
+/* The lead and the hand-off scroll the chips to the top of the screen; the
+   margin keeps them clear of the site header. */
 .afh-name-timeline-names {
   display: flex;
   flex-wrap: wrap;
   gap: var(--afh-space-sm);
+  scroll-margin-top: calc(var(--afh-header-height) + var(--afh-space-lg));
 }
 
 .afh-name-timeline-name {
@@ -1394,6 +1455,53 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--afh-space-md);
+}
+
+.ea-tl-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--afh-space-md);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.ea-tl-controls::-webkit-scrollbar {
+  display: none;
+}
+
+.ea-tl-controls > * {
+  flex: none;
+}
+
+.ea-tl-controls .afh-name-timeline-hint,
+.ea-tl-controls .afh-chronology-legend > li {
+  white-space: nowrap;
+}
+
+.ea-tl-controls .afh-chronology-legend {
+  flex-wrap: nowrap;
+  margin: 0;
+}
+
+.ea-tl-fold::after {
+  display: none;
+}
+
+.ea-tl-fold > .ea-fold {
+  margin-top: 0;
+}
+
+.ea-tl-folded {
+  margin-top: var(--afh-space-md);
+  padding: 0;
+}
+
+.ea-tl-folded > .afh-chronology-station:first-child::before {
+  top: -8px;
+}
+
+.ea-tl-folded > .afh-chronology-station:last-child::before {
+  bottom: -8px;
 }
 
 .afh-name-timeline-hint {
@@ -1538,7 +1646,7 @@
   color: var(--afh-text-soft);
 }
 
-/* ── Pendant ce temps, ailleurs ─────────────────────────────────────────── */
+/* ── Ailleurs à la même époque ─────────────────────────────────────────── */
 .afh-name-timeline-elsewhere {
   display: flex;
   flex-direction: column;
@@ -1555,6 +1663,134 @@
   color: var(--afh-text-soft);
 }
 
+/* ── Brief 11 (2026-10-17) ──────────────────────────────────────────────── */
+
+/* Consecutive tiles of one period: the period once, each statement kept,
+   parted by a hairline (§4). */
+.afh-name-timeline-join {
+  display: flex;
+  flex-direction: column;
+  gap: var(--afh-space-sm);
+  padding-top: var(--afh-space-md);
+  border-top: 1px solid var(--afh-border);
+}
+
+/* The hand-off after the end line: off the thread, no dot, no date (§1b). */
+.afh-name-timeline-handoff {
+  display: flex;
+  flex-direction: column;
+  gap: var(--afh-space-md);
+}
+
+.afh-name-timeline-handoff-name {
+  font-family: var(--afh-font-display);
+  font-weight: 900;
+  font-size: var(--afh-text-h2);
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+
+.afh-name-timeline-handoff-text {
+  font-size: var(--afh-text-small);
+  line-height: 1.6;
+}
+
+/* Outlined: the page keeps its one solid action. */
+.afh-name-timeline-handoff-action {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: var(--afh-space-xs);
+  padding: var(--afh-space-md) var(--afh-space-2xl);
+  border: 1px solid var(--accent);
+  border-radius: var(--afh-radius-lg);
+  background: var(--afh-surface);
+  color: var(--afh-text);
+  font-size: var(--afh-text-small);
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: start;
+}
+
+/* The one video made on the subject (§2): the whole row is the link, the
+   poster on the left at every width. */
+.afh-name-timeline-video {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr);
+  align-items: center;
+  gap: var(--afh-space-lg);
+  min-height: 44px;
+  padding: var(--afh-space-lg);
+  border: 1px solid var(--afh-border);
+  border-radius: var(--afh-radius-lg);
+  background: var(--afh-surface);
+  color: var(--afh-text);
+}
+
+.afh-name-timeline-video-poster {
+  position: relative;
+  display: block;
+  width: 64px;
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+  border-radius: var(--afh-radius-lg);
+  background: var(--afh-bg-warm);
+}
+
+.afh-name-timeline-video-poster img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.afh-name-timeline-video-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  transform: translate(-50%, -50%);
+}
+
+.afh-name-timeline-video-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--afh-space-xs);
+  min-width: 0;
+}
+
+.afh-name-timeline-video-eyebrow {
+  font-family: var(--afh-font-mono);
+  font-size: var(--afh-text-caption);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-ink);
+}
+
+.afh-name-timeline-video-title {
+  font-size: var(--afh-text-small);
+  font-weight: 700;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.afh-name-timeline-video-title svg {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-left: var(--afh-space-sm);
+  vertical-align: -3px;
+  color: var(--accent-ink);
+}
+
+.afh-name-timeline-video-meta {
+  font-size: var(--afh-text-caption);
+  line-height: 1.5;
+  color: var(--afh-text-soft);
+}
 /* ===== fiche-parchment.css (verbatim) ===== */
 /**
  * A fiche's parchment: the reading below the globe band.
@@ -3391,6 +3627,88 @@
   color: var(--afh-text-soft);
 }
 
+/* Brief 10 (2026-10-17): every fiche leads to its name's story, and a long
+   reference chapter folds what follows its first tile.
+
+   The story link is form A of the actions charter (label then arrow, 16 px,
+   weight 600, 44 px tall, no container); in the code `ActionLink` draws it and
+   its arrow, and `.ea-story-arrow` dresses the boards' hand-written one.
+
+   The fold reuses the tile control (« + en savoir plus » / « − replier »).
+   Its closed label names each tile it hides, which is what lets a chapter
+   fold without the chapter itself collapsing (REQ-153). The `>` combinators
+   keep an open fold from switching the labels of the closed tiles inside it. */
+.ea-story {
+  display: grid;
+  gap: var(--afh-space-xs);
+  margin-top: var(--afh-space-lg);
+}
+.fiche-name-story .ea-story {
+  margin: var(--afh-space-lg) 0;
+}
+.ea-story-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--afh-space-md);
+  justify-self: start;
+  min-height: 44px;
+  font-size: var(--afh-text-small);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--accent-ink);
+  text-decoration: none;
+  text-underline-offset: 4px;
+}
+.ea-story-link:hover,
+.ea-story-link:focus-visible {
+  text-decoration: underline;
+}
+.ea-story-link:focus-visible {
+  outline: none;
+  box-shadow: var(--afh-ring-focus);
+}
+.ea-story-arrow {
+  transition: transform var(--afh-duration-fast) var(--afh-ease-out);
+}
+.ea-story-link:hover .ea-story-arrow,
+.ea-story-link:focus-visible .ea-story-arrow {
+  transform: translateX(4px);
+}
+/* Two classes, so it outranks `.afh-parchment-section p`. */
+.ea-story .ea-story-hint {
+  margin: 0;
+  font-size: var(--afh-text-caption);
+  line-height: 1.45;
+  color: var(--afh-text-soft);
+}
+.ea-fold {
+  margin-top: var(--afh-space-lg);
+}
+.ea-fold > summary {
+  cursor: pointer;
+  list-style: none;
+}
+.ea-fold > summary::-webkit-details-marker {
+  display: none;
+}
+.ea-fold > summary:focus-visible {
+  outline: none;
+  box-shadow: var(--afh-ring-focus);
+}
+.ea-fold > summary [data-when="open"],
+.ea-fold[open] > summary [data-when="closed"] {
+  display: none;
+}
+.ea-fold[open] > summary [data-when="open"] {
+  display: inline;
+}
+.ea-fold > summary + * {
+  margin-top: var(--afh-space-xs);
+}
+.afh-names-group .ea-fold {
+  margin: 0;
+}
+
 /* ===== fiche-chapter-bar.css (verbatim) ===== */
 /**
  * The reading rail — atlas charter §7.
@@ -3811,6 +4129,11 @@ svg { display: block; }
   outline: none;
 }
 .ea-search-input::placeholder { color: var(--afh-text-muted); }
+.ea-search-input:focus-visible,
+.ea-search-input[data-board-focus] {
+  outline: none;
+  box-shadow: var(--afh-ring-focus);
+}
 .ea-search-clear {
   position: absolute; right: 4px; top: 2px;
   display: flex; align-items: center; justify-content: center;
@@ -3821,6 +4144,7 @@ svg { display: block; }
 /* Answer page */
 .afh-answer-page { max-width: 880px; margin-inline: auto; text-align: left; min-width: 0; }
 .ea-lenses {
+  --search-feed-text-pill: 0.875rem;
   display: flex; gap: 8px; margin-top: 12px;
   overflow-x: auto; scrollbar-width: none;
 }
@@ -3829,12 +4153,17 @@ svg { display: block; }
   min-height: 44px; padding: 0 16px;
   border: 1px solid var(--afh-border); border-radius: 9999px;
   background: var(--afh-surface);
-  font-size: 14px; font-weight: 700; line-height: 20px; color: var(--afh-text);
+  font-size: var(--search-feed-text-pill); font-weight: 700; line-height: 20px; color: var(--afh-text);
   white-space: nowrap;
 }
 .ea-lens-count { font-weight: 500; color: var(--afh-text-soft); }
 .ea-lens[aria-pressed="true"] {
   background: var(--afh-text); border-color: var(--afh-text); color: var(--afh-bg);
+}
+.ea-lens:focus-visible,
+.ea-lens[data-board-focus] {
+  outline: none;
+  box-shadow: var(--afh-ring-focus);
 }
 .ea-movement {
   display: flex; flex-direction: column; gap: var(--afh-section-gap);
@@ -3949,6 +4278,29 @@ svg { display: block; }
 .ds-mobile .sh-controls { margin-left: auto; }
 .ds-mobile .sh-bar { padding: 8px 12px; }
 .ds-mobile .sh-brand-name { font-size: 19.2px; }
+.ds-compact-320 .sh-bar { gap: 8px; padding: 8px 12px; }
+.ds-compact-320 .sh-brand { gap: 6px; min-width: 0; }
+.ds-compact-320 .sh-brand-mark { width: 32px; height: 32px; }
+.ds-compact-320 .sh-brand-name { font-size: var(--afh-text-small); line-height: 1.25; white-space: nowrap; }
+.ds-compact-320 .sh-brand-tagline { display: none; }
+.ds-compact-320 .sh-controls { gap: 2px; }
+@media (max-width: 359.98px) {
+  .sh-bar { gap: 8px; padding-inline: 12px; }
+  .sh-brand { gap: 6px; min-width: 0; }
+  .sh-brand-mark { width: 32px; height: 32px; }
+  .sh-brand-name { font-size: var(--afh-text-small); line-height: 1.25; white-space: nowrap; }
+  .sh-brand-tagline { display: none; }
+  .sh-controls { gap: 2px; }
+}
+@media (max-width: 239.98px) {
+  .sh-header { height: auto; min-height: 61px; }
+  .sh-bar { height: auto; min-height: 60px; flex-wrap: wrap; gap: 4px 8px; }
+  .sh-brand { flex: 1 1 100%; }
+  .sh-brand-mark { width: 24px; height: 24px; }
+  .sh-controls { flex: 1 1 100%; justify-content: flex-end; margin-left: 0; }
+  .ea-footer-brand { flex-direction: column; gap: 4px; text-align: center; }
+  .ea-footer-brand-text { text-align: center; }
+}
 
 /* Several fiche links: the outlined form (search-bassa, search-congo) */
 .ea-fiche-link[data-variant="outline"] {
@@ -3984,7 +4336,7 @@ svg { display: block; }
 .ea-verdict-name {
   margin-top: 4px;
   font-family: var(--afh-font-display); font-weight: 900;
-  font-size: var(--afh-text-hero); line-height: 1.05;
+  font-size: var(--afh-text-hero); line-height: 1.05; overflow-wrap: anywhere;
 }
 .ea-verdict-line {
   margin-top: 8px;
@@ -4009,16 +4361,23 @@ svg { display: block; }
 .ea-owed-card[data-tone="ask"] { background: var(--afh-surface); border: 1px solid var(--accent); }
 .ea-owed-title { font-weight: 700; }
 .ea-owed-text { margin-top: 4px; }
+/* The accent fill's own ink: the tint stays light at night, where the body
+   ink turns light too (1.12:1). Brief 16, proposed. */
 .ea-owed-action {
   display: inline-flex; align-items: center; min-height: 44px; margin-top: 12px;
   padding: 8px 16px; border: 1px solid var(--accent); border-radius: var(--afh-radius-lg);
-  background: var(--accent-tint); color: var(--afh-text); font-weight: 500;
+  background: var(--accent-tint); color: var(--accent-foreground); font-weight: 500;
 }
-.ea-further-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.ea-further-list { --search-feed-text-pill: 0.875rem; display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
 .ea-further-list a {
   display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px;
   border: 1px solid var(--afh-border); border-radius: 9999px; background: var(--afh-surface);
-  font-size: 14px; font-weight: 600; color: var(--afh-text);
+  font-size: var(--search-feed-text-pill); font-weight: 600; color: var(--afh-text);
+}
+.ea-further-list a:focus-visible,
+.ea-further-list a[data-board-focus] {
+  outline: none;
+  box-shadow: var(--afh-ring-focus);
 }
 
 /* ── Fiche pages (people, language, family, country, name, place) ── */
@@ -4405,7 +4764,7 @@ svg { display: block; }
    an existing board.
    ============================================================ */
 
-/* Block 3 · Les sources parlent */
+/* Block 3 · Les sources du nom */
 .ea-voices { display: flex; flex-direction: column; gap: var(--afh-space-2xl); }
 .ea-voices-title {
   font-family: var(--afh-font-display); font-weight: 900;
@@ -4570,7 +4929,7 @@ svg { display: block; }
 
 /* ============================================================
    Brief 2 (2026-10-15): on a fiche with several names,
-   « Les sources parlent » groups the accounts by name first,
+   « Les sources des noms » groups the accounts by name first,
    then by source family. New selectors only.
    ============================================================ */
 .ea-voice-person { background: var(--afh-surface); }
@@ -4676,136 +5035,6 @@ svg { display: block; }
 .ds-mobile .ea-footer-follow ul { margin: 12px auto 0; justify-content: center; }
 
 /* ============================================================
-   Brief 10 (2026-10-17): every fiche leads to its name's story,
-   and a long reference chapter folds what follows its first
-   tile. The story link is form A of the actions charter (label
-   then arrow, 16 px, weight 600, 44 px tall, no container), as
-   src/components/ui/ActionLink.tsx draws it. The fold reuses
-   the tile control (« + en savoir plus » / « − replier »): its
-   closed label names each tile it hides. New selectors only,
-   tokens only.
-   ============================================================ */
-.ea-story { display: grid; gap: var(--afh-space-xs); margin-top: var(--afh-space-lg); }
-.fiche-name-story .ea-story { margin: var(--afh-space-lg) 0; }
-.ea-story-link {
-  display: inline-flex; align-items: center; gap: var(--afh-space-md);
-  justify-self: start; min-height: 44px;
-  font-size: var(--afh-text-small); font-weight: 600; line-height: 1.4;
-  color: var(--accent-ink); text-decoration: none; text-underline-offset: 4px;
-}
-.ea-story-link:hover, .ea-story-link:focus-visible { text-decoration: underline; }
-.ea-story-link:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
-.ea-story-arrow { transition: transform var(--afh-duration-fast) var(--afh-ease-out); }
-.ea-story-link:hover .ea-story-arrow, .ea-story-link:focus-visible .ea-story-arrow { transform: translateX(4px); }
-/* Two classes, so it outranks `.afh-parchment-section p`. */
-.ea-story .ea-story-hint {
-  margin: 0; font-size: var(--afh-text-caption); line-height: 1.45; color: var(--afh-text-soft);
-}
-.ea-fold { margin-top: var(--afh-space-lg); }
-.ea-fold > summary { cursor: pointer; list-style: none; }
-.ea-fold > summary::-webkit-details-marker { display: none; }
-.ea-fold > summary:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
-.ea-fold > summary [data-when="open"],
-.ea-fold[open] > summary [data-when="closed"] { display: none; }
-.ea-fold[open] > summary [data-when="open"] { display: inline; }
-.ea-fold > summary + * { margin-top: var(--afh-space-xs); }
-.afh-names-group .ea-fold { margin: 0; }
-
-/* ============================================================
-   Brief 11 (2026-10-17): the result page hands the reader from
-   the searched name to the self-name (a line in the lead, a tile
-   after the end line), shows one video made on the subject, and
-   prints a period once over consecutive tiles that share it.
-   The sources button gains its visible label (« Source » /
-   « Sources ») and a 44 px target. Until the code catches up,
-   that restyle lives here and outranks the verbatim
-   source-diamond.css through `button.afh-source-diamond`, so the
-   colour swatches on Main, which are spans, keep their shape.
-   Tokens only.
-   ============================================================ */
-
-/* The lead: the self-name's question under the sentence, in the same button. */
-.ea-lead-text { display: flex; flex-direction: column; gap: var(--afh-space-xs); min-width: 0; }
-.ea-lead-line { font-size: var(--afh-text-small); line-height: 1.5; color: var(--afh-text-soft); }
-
-/* The hand-off tile: off the thread, no dot, no date. */
-.ea-handoff { display: flex; flex-direction: column; gap: var(--afh-space-md); }
-.ea-handoff-name {
-  font-family: var(--afh-font-display); font-weight: 900;
-  font-size: var(--afh-text-h2); line-height: 1.15; overflow-wrap: anywhere;
-}
-.ea-handoff-text { font-size: var(--afh-text-small); line-height: 1.6; }
-/* Form C, outlined: the page keeps its one solid action. */
-.ea-handoff-action {
-  align-self: flex-start; display: inline-flex; align-items: center;
-  min-height: 44px; margin-top: var(--afh-space-xs); padding: var(--afh-space-md) var(--afh-space-2xl);
-  border: 1px solid var(--accent); border-radius: var(--afh-radius-lg);
-  background: var(--afh-surface); color: var(--afh-text);
-  font-size: var(--afh-text-small); font-weight: 600; line-height: 1.4; text-align: start;
-}
-.ea-handoff-action:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
-
-/* One video made on the subject: the whole row is the link. */
-.ea-video-row {
-  display: grid; grid-template-columns: 64px minmax(0, 1fr); align-items: center;
-  gap: var(--afh-space-lg); min-height: 44px; padding: var(--afh-space-lg);
-  border: 1px solid var(--afh-border); border-radius: var(--afh-radius-lg);
-  background: var(--afh-surface); color: var(--afh-text);
-}
-.ea-video-row:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
-.ea-video-poster {
-  position: relative; display: block; width: 64px; aspect-ratio: 9 / 16;
-  overflow: hidden; border-radius: var(--afh-radius-lg); background: var(--afh-bg-warm);
-}
-.ea-video-poster img { display: block; width: 100%; height: 100%; object-fit: cover; }
-.ea-video-play {
-  position: absolute; left: 50%; top: 50%;
-  width: 24px; height: 24px; transform: translate(-50%, -50%);
-}
-.ea-video-text { display: flex; flex-direction: column; gap: var(--afh-space-xs); min-width: 0; }
-.ea-video-eyebrow {
-  font-family: var(--afh-font-mono); font-size: var(--afh-text-caption);
-  font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-ink);
-}
-.ea-video-title { font-size: var(--afh-text-small); font-weight: 700; line-height: 1.4; overflow-wrap: anywhere; }
-.ea-video-title svg {
-  display: inline-block; width: 18px; height: 18px;
-  margin-left: var(--afh-space-sm); vertical-align: -3px; color: var(--accent-ink);
-}
-.ea-video-meta { font-size: var(--afh-text-caption); line-height: 1.5; color: var(--afh-text-soft); }
-
-/* Consecutive tiles of one period: the period once, each statement kept. */
-.ea-period-join {
-  display: flex; flex-direction: column; gap: var(--afh-space-sm);
-  padding-top: var(--afh-space-md); border-top: 1px solid var(--afh-border);
-}
-
-/* The sources button: diamond, then « Source » or « Sources », no count.
-   The label sits on the passage's baseline. Ten pixels of padding above
-   and below, cancelled by the same negative margin, make a 44 px target
-   whose layout box is the label's 24 px line: shorter than the passage's
-   own line, so the passage keeps its line height. */
-button.afh-source-diamond {
-  display: inline-block; min-width: 44px;
-  margin-block: calc(-1 * var(--afh-space-base));
-  padding: var(--afh-space-base) var(--afh-space-xs) var(--afh-space-base) 2px;
-  font-size: var(--afh-text-small); font-weight: 600; line-height: 24px;
-  color: var(--afh-text-soft); white-space: nowrap; text-align: start;
-  vertical-align: baseline;
-}
-button.afh-source-diamond .afh-source-diamond-mark {
-  margin-inline-end: var(--afh-space-sm); vertical-align: middle;
-}
-button.afh-source-diamond:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
-/* A no-break space does not hold a button to the word before it: CSS keeps
-   a wrap opportunity on both sides of an atomic inline (CSS Text 3, 5.1).
-   The passage's last word and the button go in one inline block, which
-   moves to the next line whole. Unlike `nowrap`, it still breaks inside
-   when its column is narrower than word and button together (the readings
-   side by side on a fiche at 768), so it never widens that column. */
-.ea-source-tail { display: inline-block; }
-
-/* ============================================================
    Brief 12 (2026-10-17): the unknown-name page carries its one
    invitation in the verdict (it reuses .ea-owed-action, so no
    rule here); the « Fiches » lens sets the fiches that answer
@@ -4884,6 +5113,54 @@ a.ea-fiche-card:focus-visible { outline: none; box-shadow: var(--afh-ring-focus)
 .ds-mobile .ea-fiche-grid[data-cols] { grid-template-columns: minmax(0, 1fr); }
 .ds-mobile .ea-lens-title { font-size: var(--afh-text-h2); }
 
+/* Brief 16 (proposed): a misspelling, « tchikaya ». The verdict is the plain
+   one of search-unknown, with no rule of its own. The filters come first, as
+   on every approved board, when there are two. The choice is Main's name chip
+   (.afh-name-timeline-name) in the accent, the page's one action
+   (SpellingChoicesBlock), in the accent fill's ink so that it holds at night.
+   Its border is --accent-ink (6.01:1 on the parchment by day, the night ocre
+   after dark), not the --accent of .ea-owed-action (2.94:1 by day): the chip
+   sits between a heading and a link in accent ink, and its outline has to
+   hold its own beside them. Under it, the invitation is a note
+   (.ea-fiche-group-note) and a quiet link
+   (.ea-lens-back), never a second accented button. Its heading and the fiches
+   found reuse the « Fiches » lens of brief 12 (.ea-fiche-group-*,
+   .ea-fiche-grid[data-cols]). Every spacing holds at every width; tokens only,
+   apart from the 44 px target. */
+.ea-choices { padding-top: var(--afh-space-2xl); }
+.ea-choices-list { display: flex; flex-wrap: wrap; gap: var(--afh-space-sm); margin-top: var(--afh-space-lg); }
+.ea-choices-list li { display: flex; }
+.ea-choice {
+  display: inline-flex; align-items: center; min-height: 44px;
+  padding: var(--afh-space-xs) var(--afh-space-lg);
+  border: 1px solid var(--accent-ink); border-radius: var(--afh-radius-full);
+  background: var(--accent-tint);
+  font-size: var(--afh-text-small); font-weight: 700;
+  color: var(--accent-foreground);
+}
+.ea-choice:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
+/* A chip names the form that scored; when it is not its fiche's filed name,
+   this line says which fiche records it (« jarra » → Jara, of Diarra). */
+.ea-choice-form {
+  margin-top: var(--afh-space-md);
+  font-size: var(--afh-text-caption); line-height: var(--afh-leading-caption);
+  color: var(--afh-text-soft);
+}
+.ea-choices-invitation {
+  margin-top: var(--afh-space-2xl);
+  font-size: var(--afh-text-caption); line-height: var(--afh-leading-caption);
+  color: var(--afh-text-soft);
+}
+/* It wraps, left-aligned, when the text is enlarged: on one line at 200 %
+   text on a 320 px phone it would push the page sideways. */
+.ea-choices-action {
+  display: inline-flex; align-items: center; min-height: 44px;
+  padding: 0; border: 0; background: none; text-align: left;
+  font-size: var(--afh-text-small); font-weight: 700; color: var(--accent-ink);
+  text-decoration: underline; text-underline-offset: 4px;
+}
+.ea-choices-action:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
+
 /* The consent strip. Its layout follows its own width (a container query),
    which is the viewport's on the site, where it runs full width, and the
    frame's on Main. Steps at 768 and 1200, the site's breakpoints. */
@@ -4922,8 +5199,10 @@ a.ea-fiche-card:focus-visible { outline: none; box-shadow: var(--afh-ring-focus)
 .ea-consent-quiet > *:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
 @container ea-consent (min-width: 768px) {
   .ea-consent-inner { padding-inline: var(--afh-space-5xl); }
-  /* The source order stays « Refuser », « Accepter », then the quiet pair. */
-  .ea-consent-controls { flex-direction: row-reverse; justify-content: space-between; align-items: center; gap: var(--afh-space-2xl); }
+  /* The quiet pair comes before the answers in the source and on screen;
+     no reversed row splits reading order from keyboard order
+     (WCAG 2.4.3, brief 12 approval record item 5). */
+  .ea-consent-controls { flex-direction: row; justify-content: space-between; align-items: center; gap: var(--afh-space-2xl); }
   .ea-consent-choice { flex: none; }
   .ea-consent-button { padding-inline: var(--afh-space-5xl); }
 }
@@ -4976,3 +5255,200 @@ a.ea-fiche-card:focus-visible { outline: none; box-shadow: var(--afh-ring-focus)
 .ea-consent-stage { position: relative; width: 432px; height: 814px; overflow: hidden; }
 .ea-consent-stage > img { display: block; width: 430px; height: 812px; }
 .ea-consent-stage > .ea-consent { position: absolute; left: 0; right: 0; bottom: 0; }
+
+/* ============================================================
+   Brief 13 (2026-10-18): one search component, the same on the
+   home, in the header and on the search page; the header search
+   full screen below 768; the search page with no query. New
+   selectors only, tokens only.
+   ============================================================ */
+.ea-q { position: relative; display: flex; flex-wrap: wrap; gap: 8px; text-align: left; }
+.ea-q .ea-q-label { text-align: left; }
+.ea-q-field[data-focus] .ea-q-input { border-color: var(--accent); box-shadow: var(--afh-ring-focus); }
+.ea-q-input { padding-right: 48px; }
+.ea-q-clear {
+  position: absolute; right: 4px; top: 4px; width: 44px; height: 44px; border-radius: var(--afh-radius-lg);
+  background: none; color: var(--afh-text-soft);
+}
+.ea-q-clear::before, .ea-q-clear::after {
+  content: ""; position: absolute; left: 15px; top: 21px; width: 14px; height: 2px; border-radius: 1px; background: currentColor;
+}
+.ea-q-clear::before { transform: rotate(45deg); }
+.ea-q-clear::after { transform: rotate(-45deg); }
+.ea-q-pop {
+  position: absolute; left: 0; right: 0; top: calc(100% + var(--afh-space-sm)); z-index: 5;
+  margin: 0; padding: var(--afh-space-xs) 0; list-style: none;
+  background: var(--afh-surface); border: 1px solid var(--afh-border); border-radius: var(--afh-radius-lg);
+  box-shadow: var(--afh-elev-4);
+}
+.ea-q-opt a {
+  display: flex; flex-wrap: wrap; align-items: baseline; column-gap: var(--afh-space-md); row-gap: 2px;
+  min-height: 44px; padding: var(--afh-space-md) var(--afh-space-2xl);
+  color: var(--afh-text); font-size: var(--afh-text-small); line-height: 1.4;
+}
+.ea-q-opt[aria-selected="true"] a { background: var(--afh-bg-warm); }
+.ea-q-name { font-weight: 700; }
+.ea-q-note { flex: 1 1 auto; color: var(--afh-text-soft); }
+.ea-q-kind { margin-left: auto; font-family: var(--afh-font-mono); font-size: var(--afh-text-caption); color: var(--afh-text-soft); }
+.ea-q-all { border-top: 1px solid var(--afh-border); margin-top: var(--afh-space-xs); }
+.ea-q-all a, .ea-q-none a {
+  display: flex; align-items: center; min-height: 44px; padding: 0 var(--afh-space-2xl);
+  color: var(--accent-ink); font-size: var(--afh-text-small); font-weight: 600;
+  text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px;
+}
+.ea-q-pop-none { padding: var(--afh-space-md) 0; }
+.ea-q-none { margin: 0; padding: var(--afh-space-xs) var(--afh-space-2xl) 0; font-size: var(--afh-text-small); line-height: 1.5; color: var(--afh-text-soft); }
+.ea-q-none a { display: inline-flex; padding: 0; min-height: 44px; }
+.ea-q-close {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--afh-space-lg);
+  margin-left: auto; color: var(--accent-ink); font-weight: 600; background: none;
+}
+.ea-q-sheet { display: flex; flex-direction: column; gap: var(--afh-space-md); min-height: 100%; padding: var(--afh-space-md) var(--afh-page-padding) var(--afh-space-2xl); background: var(--afh-bg); }
+.ea-q-sheet, .ea-q-dialog { position: relative; }
+.ea-q-sheet-bar { position: absolute; top: var(--afh-space-md); right: var(--afh-page-padding); display: flex; }
+.ea-q-dialog .ea-q-sheet-bar { right: var(--afh-space-md); }
+.ea-q-sheet .ea-q-label, .ea-q-dialog .ea-q-label { display: flex; align-items: center; min-height: 44px; margin-bottom: 0; padding-right: 96px; }
+.ea-q-sheet .ea-q-pop { position: static; box-shadow: none; }
+.ea-q-dialog {
+  max-width: 640px; margin: var(--afh-space-6xl) auto; padding: var(--afh-space-md) var(--afh-space-2xl) var(--afh-space-2xl);
+  background: var(--afh-bg); border: 1px solid var(--afh-border); border-radius: var(--afh-radius-lg); box-shadow: var(--afh-elev-5);
+}
+.ea-q-dialog .ea-q-pop { position: static; }
+/* The search page with no query: the component, then two rows of chips. */
+.ea-entry { flex: 1 0 auto; padding-top: var(--afh-space-5xl); padding-bottom: var(--afh-space-7xl); }
+@media (min-width: 768px) { .ea-entry { padding-top: var(--afh-space-7xl); } }
+.ea-entry-col { display: flex; flex-direction: column; gap: var(--afh-space-6xl); max-width: 640px; margin-inline: auto; }
+.ea-entry-chips { margin-top: 0; justify-content: flex-start; flex-wrap: wrap; }
+.ea-entry-chips .home-hero-seeds-lead { flex: 0 0 100%; text-align: left; font-weight: 600; color: var(--afh-text); }
+.ea-entry-chips .home-hero-search-seeds { flex-wrap: wrap; justify-content: flex-start; margin: 0; padding: 0; }
+.ea-entry-chips .home-hero-more { margin-inline: 0; }
+/* Main board only: the component at phone width, and the page behind the dialog. */
+.ea-q-frame { padding: var(--afh-space-2xl); overflow: visible; }
+.ds-mobile.ea-q-frame { padding: var(--afh-space-2xl) 12px; }
+.ds-mobile .ea-q .home-hero-field, .ds-mobile .ea-q .home-hero-submit { flex: 1 1 100%; }
+.ea-q-frame:has(.ea-q-sheet) { padding: 0; display: flex; }
+.ea-q-frame-page { background: var(--afh-bg-warm); padding: 0; }
+.ds-mobile .ea-q-sheet { padding-inline: 12px; }
+.ds-mobile .ea-q-sheet-bar { right: 12px; }
+
+/* ============================================================
+   Brief 14 (2026-10-18): the Atlas page, « Les noms d'Afrique ».
+   The search component of brief 13, the 54 countries in one row
+   that scrolls sideways, the searched names as next-step cards,
+   the lists with their counts. New selectors only, tokens only.
+   ============================================================ */
+.ea-atlas { display: flex; flex-direction: column; gap: var(--afh-space-6xl); padding-top: var(--afh-space-5xl); padding-bottom: var(--afh-space-7xl); }
+@media (min-width: 768px) { .ea-atlas { padding-top: var(--afh-space-7xl); } }
+.ea-atlas-head .ed-h1 { margin-bottom: var(--afh-space-lg); }
+.ea-atlas-lead { margin: 0; max-width: var(--afh-measure-prose); font-size: var(--afh-text-body); line-height: 1.55; color: var(--afh-text-soft); }
+.ea-atlas-block { display: flex; flex-direction: column; gap: var(--afh-space-lg); }
+.ea-atlas-countries {
+  display: flex; gap: var(--afh-space-md); margin: 0; padding: 0 0 var(--afh-space-xs); list-style: none;
+  overflow-x: auto; scrollbar-width: none;
+}
+.ea-atlas-countries::-webkit-scrollbar { display: none; }
+.ea-atlas-countries li { flex: none; }
+.ea-atlas-countries .home-hero-seed { white-space: nowrap; }
+@media (min-width: 1200px) { .ea-atlas-cards { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.ea-atlas-browse { display: grid; grid-template-columns: minmax(0, 1fr); margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--afh-border); }
+@media (min-width: 1200px) { .ea-atlas-browse { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--afh-space-6xl); } }
+.ea-atlas-line {
+  display: flex; align-items: center; gap: var(--afh-space-lg); min-height: 56px;
+  border-bottom: 1px solid var(--afh-border); color: var(--afh-text); font-weight: 600;
+}
+.ea-atlas-line-name { flex: 1 1 auto; }
+.ea-atlas-line-count { font-family: var(--afh-font-mono); font-size: var(--afh-text-caption); font-weight: 500; color: var(--afh-text-soft); }
+.ea-atlas-line svg { width: 18px; height: 18px; flex: none; color: var(--accent-ink); }
+
+/* ============================================================
+   Brief 15 (2026-10-18): the result page tells each account
+   once and opens shorter. « Voir aussi » under the verdict, one
+   row of timeline controls that scrolls sideways, the accounts
+   after the three most recent folded with the brief 10 fold (the
+   origin tile and a tile of competing hypotheses stay open), and the sources block as one list of
+   sources, each with a link to the account it backs. New
+   selectors only, tokens only.
+   ============================================================ */
+.ea-seealso {
+  display: flex; align-items: center; flex-wrap: wrap; column-gap: var(--afh-space-sm);
+  width: 100%; min-height: 44px; padding: 0; border: 0; background: none;
+  font: inherit; font-size: var(--afh-text-small); line-height: 1.5; text-align: start;
+  color: var(--afh-text); cursor: pointer;
+}
+.ea-seealso:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
+.ea-seealso-label { font-weight: 700; }
+.ea-seealso-items { font-weight: 600; }
+.ea-seealso .ea-lens-count { font-weight: 500; color: var(--afh-text-soft); }
+.ea-seealso-caret { flex: none; width: 16px; height: 16px; color: var(--afh-text-soft); }
+.ea-seealso[aria-expanded="true"] .ea-seealso-caret { transform: rotate(180deg); }
+.ea-seealso + .ea-lenses { margin-top: 0; }
+
+.ea-tl-controls {
+  display: flex; align-items: center; gap: var(--afh-space-md);
+  overflow-x: auto; scrollbar-width: none;
+}
+.ea-tl-controls::-webkit-scrollbar { display: none; }
+.ea-tl-controls > * { flex: none; }
+.ea-tl-controls .afh-name-timeline-hint { white-space: nowrap; }
+.ea-tl-controls .afh-chronology-legend { flex-wrap: nowrap; margin: 0; }
+.ea-tl-controls .afh-chronology-legend > li { white-space: nowrap; }
+
+/* The fold sits on the thread without a dot: it is not a moment. */
+.ea-tl-fold::after { display: none; }
+.ea-tl-fold > .ea-fold { margin-top: 0; }
+.ea-tl-folded { margin-top: var(--afh-space-md); padding: 0; }
+.ea-tl-folded > .afh-chronology-station:first-child::before { top: -8px; }
+.ea-tl-folded > .afh-chronology-station:last-child::before { bottom: -8px; }
+
+.ea-src-list { display: flex; flex-direction: column; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--afh-border); }
+.ea-src {
+  display: grid; grid-template-columns: 10px minmax(0, 1fr); align-items: start;
+  column-gap: var(--afh-space-lg); row-gap: var(--afh-space-xs); padding: var(--afh-space-md) 0;
+  border-bottom: 1px solid var(--afh-border);
+}
+.ea-src > .ea-voice-mark { margin-top: 7px; }
+.ea-src-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.ea-src-title { font-size: var(--afh-text-small); font-weight: 700; line-height: 1.45; overflow-wrap: anywhere; color: var(--afh-text); }
+.ea-src-title a {
+  color: var(--accent-ink);
+  text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px;
+}
+.ea-src-by { font-size: var(--afh-text-caption); line-height: 1.5; color: var(--afh-text-soft); overflow-wrap: anywhere; }
+/* A 24 px line; ten pixels of padding above and below, cancelled by the
+   same negative margin, make the 44 px target without a taller row. */
+.ea-src-go {
+  grid-column: 2; justify-self: start; display: inline-block;
+  margin: calc(-1 * var(--afh-space-base)) 0; padding: var(--afh-space-base) 0;
+  font-size: var(--afh-text-small); font-weight: 600; line-height: 24px;
+  color: var(--accent-ink); text-decoration: none; white-space: nowrap;
+}
+.ea-src-go:hover { text-decoration: underline; text-underline-offset: 4px; }
+.ea-src-go:focus-visible { outline: none; box-shadow: var(--afh-ring-focus); }
+@media (min-width: 768px) {
+  .ea-src { grid-template-columns: 10px minmax(0, 1fr) auto; }
+  .ea-src-go { grid-column: 3; grid-row: 1; align-self: center; }
+}
+
+/* ============================================================
+   Brief 7 (2026-10-18): the place fiche, Yamoussoukro. The two
+   accounts of the change from N'Gokro to Yamoussoukro sit side
+   by side in the readings tile of brief 3 under the names, with
+   the family account after them. New selectors only, tokens only.
+   ============================================================ */
+.ea-readings-family { padding-top: var(--afh-space-md); border-top: 1px dashed var(--afh-border); }
+.pl-card .ea-readings p { margin: 0; }
+.pl-card .ea-readings .afh-name-timeline-statement { margin-top: var(--afh-space-xs); color: var(--afh-text); line-height: 1.6; }
+
+/* ============================================================
+   Brief 8 (2026-10-19): the free-word page, « Le mot race »,
+   /fr/atlas/mots/[slug]. The result page's timeline with the
+   brief 15 fold and sources list, the related families as fiche
+   links, and « Parcourir les mots » in the next-step cards, the
+   current word shown but not linked. New selectors only, tokens
+   only.
+   ============================================================ */
+.ea-word-related .afh-prose-list p { margin: var(--afh-space-xs) 0 0; }
+.ea-words .ea-next-card[aria-current="page"] { border-style: dashed; cursor: default; }
+.ea-words-noted { margin-top: var(--afh-space-2xl); }
+.ea-words-noted-lead { margin: 0 0 var(--afh-space-sm); font-size: var(--afh-text-small); line-height: 1.6; color: var(--afh-text-soft); }
+.ea-words-noted .afh-prose-list { font-size: var(--afh-text-small); line-height: 1.6; }

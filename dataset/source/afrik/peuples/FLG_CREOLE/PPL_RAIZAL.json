@@ -130,5 +130,142 @@
         "notes": "Article publié dans une revue académique universitaire ; documente la politique de « colombianisation » engagée en 1953 et la mobilisation identitaire raizale ayant abouti à la reconnaissance constitutionnelle de 1991."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Raizales désigne le peuple natif de l'archipel de San Andrés, Providencia et Santa Catalina, en Colombie, descendant surtout d'Africains réduits en esclavage, qui parle un créole anglais et se nomme lui-même Raizal depuis la fin des années 1980. La Constitution colombienne de 1991 reconnaît les « communautés raizales ». Nous présentons plus bas ce que les sources disent de ce nom.",
+    "names": [
+      {
+        "nameText": "Raizales",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "spa",
+        "namedBy": null,
+        "shortLine": "Le nom que s'est donné le peuple natif de l'archipel à la fin des années 1980.",
+        "usedIn": ["spa", "fra"],
+        "periodLabel": "Depuis la fin des années 1980",
+        "accounts": [
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "Recensement de 2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Raizal est l'une des réponses du recensement colombien de 2018 : on peut s'y déclarer « Raizal de l'archipel de San Andrés, Providencia et Santa Catalina ». Cette déclaration repose sur l'autoreconnaissance ethnique, le sentiment d'appartenance que chacun exprime envers un groupe, selon le rapport que l'institut national de la statistique a écrit avec l'instance de consultation de ces communautés.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Comunidades Negras, Afrocolombianas, Raizales y Palenqueras : resultados del Censo Nacional de Población y Vivienda 2018",
+                "author": "DANE et Comisión VII de l'Espacio Nacional de Consulta Previa",
+                "year": 2021,
+                "url": "https://www.dane.gov.co/files/investigaciones/boletines/grupos-etnicos/informe-resultados-comunidades-narp-cnpv2018.pdf",
+                "tier": "official",
+                "source_kind": "official_statistics",
+                "notes": "Rapport publié à Bogotá en 2021 par le Département administratif national de la statistique de Colombie avec la commission des communautés noires, afrocolombiennes, raizales et palenqueras, qui y parle à la première personne. Lu dans le PDF le 18 octobre 2026.",
+                "page": "p. 23 et p. 40"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1991,
+              "to": 1991,
+              "label": "1991"
+            },
+            "era": "modern",
+            "statement": "Le nom Raizal entre dans la Constitution colombienne de 1991 : son article 310 charge l'assemblée du département de San Andrés de garantir « l'expression institutionnelle des communautés raizales de San Andrés ». Cette reconnaissance reprend les demandes du mouvement Sons of the Soil, selon le politiste Miguel Andrés González Palacios.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitución Política de Colombia de 1991 (révisée en 2015), article 310",
+                "author": "République de Colombie",
+                "year": 1991,
+                "url": "https://www.constituteproject.org/constitution/Colombia_2015?lang=es",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Texte lu sur Constitute, en espagnol, le 18 octobre 2026.",
+                "page": "article 310"
+              },
+              {
+                "title": "Universidad Nacional de Colombia, Análisis Político — « Colombia insular: construcción de identidad y movilización del pueblo raizal del archipiélago de San Andrés y Providencia »",
+                "author": "Miguel Andrés González Palacios",
+                "year": 2016,
+                "url": "https://revistas.unal.edu.co/index.php/anpol/article/view/58047",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Análisis Político, n° 86, Bogotá, janvier-avril 2016, p. 141-158. Lu dans le PDF de la revue le 18 octobre 2026.",
+                "page": "p. 150"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1989,
+              "label": "Fin des années 1980"
+            },
+            "era": "modern",
+            "statement": "Le nom Raizal apparaît dans un projet de loi présenté à la Chambre des représentants à l'initiative de Sons of the Soil : le peuple natif des îles s'y nomme pour la première fois raizal, un nom qui porte en lui un lien ancestral avec la terre. Le projet n'a pas été adopté, selon Miguel Andrés González Palacios, qui s'appuie sur Ortiz (2013). C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Universidad Nacional de Colombia, Análisis Político — « Colombia insular: construcción de identidad y movilización del pueblo raizal del archipiélago de San Andrés y Providencia »",
+                "author": "Miguel Andrés González Palacios",
+                "year": 2016,
+                "url": "https://revistas.unal.edu.co/index.php/anpol/article/view/58047",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Análisis Político, n° 86, Bogotá, janvier-avril 2016, p. 141-158. Lu dans le PDF de la revue le 18 octobre 2026.",
+                "page": "p. 150"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Raizal n'apparaît pas encore dans les sources que nous avons lues quand de jeunes insulaires fondent Sons of the Soil, « les fils du sol », la première organisation créée pour défendre le peuple natif des îles. Elle invoque ses racines historiques et son lien ancestral avec le territoire, selon Miguel Andrés González Palacios.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Universidad Nacional de Colombia, Análisis Político — « Colombia insular: construcción de identidad y movilización del pueblo raizal del archipiélago de San Andrés y Providencia »",
+                "author": "Miguel Andrés González Palacios",
+                "year": 2016,
+                "url": "https://revistas.unal.edu.co/index.php/anpol/article/view/58047",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Análisis Político, n° 86, Bogotá, janvier-avril 2016, p. 141-158. Lu dans le PDF de la revue le 18 octobre 2026.",
+                "page": "p. 149"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1953,
+              "to": 1953,
+              "label": "Après 1953"
+            },
+            "era": "modern",
+            "statement": "Le nom Raizal n'apparaît pas encore dans les sources que nous avons lues : après que San Andrés est déclarée port franc en 1953, les natifs des îles appellent pañaman les nouveaux venus du continent et commencent à définir contre eux une identité collective d'insulaires, selon Miguel Andrés González Palacios.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Universidad Nacional de Colombia, Análisis Político — « Colombia insular: construcción de identidad y movilización del pueblo raizal del archipiélago de San Andrés y Providencia »",
+                "author": "Miguel Andrés González Palacios",
+                "year": 2016,
+                "url": "https://revistas.unal.edu.co/index.php/anpol/article/view/58047",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Análisis Político, n° 86, Bogotá, janvier-avril 2016, p. 141-158. Lu dans le PDF de la revue le 18 octobre 2026.",
+                "page": "p. 146-147"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

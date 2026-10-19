@@ -6,7 +6,7 @@
   },
   "id": "PAT_NCHAMA",
   "nameMain": "Nchama",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Nchama",
@@ -19,17 +19,12 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une étude de la culture fang cite Nchama parmi les noms féminins et reprend, en l’attribuant à Nsue-Mibui, la glose « femme destructrice ». Comme l’article relaie une source secondaire et ne décompose pas le terme, la glose reste une affirmation attribuée plutôt qu’une reconstruction établie.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["nguema-obiang-mikue-2023-nchama"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -70,7 +65,7 @@
   "gaps": [
     {
       "fieldPath": "nameSystem",
-      "reason": "la recherche web et bibliographique combinant « Nchama », « Fang », « la Guinée équatoriale », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la source dédiée « La cultura para el reconocimiento de la identidad: caso de la cultura fang de Guinea Ecuatorial » et la page Forebears propre au nom, consultées directement, n’a pas établi que la catégorie provisoire portée par la fiche décrive Nchama lui-même ; elle reste une hypothèse de classement technique, sans être transformée en affirmation historique."
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom de femme fang. Chez les Fang, chacun reçoit un nom à lui, suivi de celui de son père, et Günter Tessmann écrit en 1913 que les Fang n'ont pas de nom de famille au sens européen. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant comme un nom de famille. La fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "alliances",
@@ -92,5 +87,118 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Nchama », « Fang », « la Guinée équatoriale », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la source dédiée « La cultura para el reconocimiento de la identidad: caso de la cultura fang de Guinea Ecuatorial » et la page Forebears propre au nom, consultées directement, n’a établi aucune règle propre à Nchama permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Nchama est un nom de femme fang, porté en Guinée équatoriale. Il voudrait dire « femme destructrice », selon Bonifacio Nguema Obiang-Mikue ; on ne sait pas avec certitude d'où vient ce sens. Sa plus ancienne trace connue du projet est une forme proche, Ntsama, dans un chant fang publié en 1913.",
+    "names": [
+      {
+        "nameText": "Nchama",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de femme fang de Guinée équatoriale, qui voudrait dire « femme destructrice ».",
+        "periodLabel": "Écrit Ntsama dès 1913 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "Décrit en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Nchama est un nom de femme fang de Guinée équatoriale, selon Bonifacio Nguema Obiang-Mikue, qui le cite avec Ñengono, Angue ou Obono. Les Fang qu'il a interrogés le donnent aussi en exemple des noms qui font qu'on est fang, avec Nguema, Ondo ou Esono.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La cultura para el reconocimiento de la identidad: caso de la cultura fang de Guinea Ecuatorial",
+                "author": "Bonifacio Nguema Obiang-Mikue",
+                "year": 2023,
+                "url": "https://doi.org/10.29166/catedra.v6i1.4282",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 179 et 182",
+                "notes": "Article de Revista Cátedra 6(1), 2023, pp. 171-186. Lu le 18 octobre 2026 dans le PDF en espagnol. Page 179 : « nombres tales como Nchama, Ñengono, Angue, Obono, Mikue, Okomo, Ayang, Nfono, entre otros para identificar a las mujeres ». Page 182, résultats d'une enquête auprès de 102 personnes fang : être fang, c'est aussi « llevar nombres y apellidos de los fang, por ejemplo, Nguema, Mibuy, Ondo, Esono, Nchama »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "Proposé en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Nchama voudrait dire « femme destructrice », selon Bonifacio Nguema Obiang-Mikue, qui le range parmi les noms de femmes liés à des questions de la vie sociale. Il ne dit pas d'où vient ce sens.",
+            "hypothesisGroup": "origine du nom Nchama",
+            "sources": [
+              {
+                "title": "La cultura para el reconocimiento de la identidad: caso de la cultura fang de Guinea Ecuatorial",
+                "author": "Bonifacio Nguema Obiang-Mikue",
+                "year": 2023,
+                "url": "https://doi.org/10.29166/catedra.v6i1.4282",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 179",
+                "notes": "Article de Revista Cátedra 6(1), 2023, pp. 171-186. Lu le 18 octobre 2026 dans le PDF en espagnol. Page 179 : les noms de femmes « se relacionan a temas o cuestiones sociales », parmi lesquels « Nchama (mujer destructora) ». La phrase est de l'auteur lui-même ; la citation de Rosendo Ela Nsue Mibui (2005) ne commence qu'après elle."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1913,
+              "label": "Recherches de 1904-1909, ouvrage publié en 1913"
+            },
+            "statement": "Le nom Nchama apparaît par écrit sous une forme proche, Ntsama, dans un chant moqueur des Ntum, un groupe fang, que publie Günter Tessmann : une femme y parle des anneaux de laiton de « la belle Ntsama-Obiang ». Ntsama est ici le nom de la jeune femme, Obiang celui de son père. C'est la plus ancienne trace de cette forme que le projet connaît ; le nom est plus ancien qu'elle.",
+            "formAsWritten": "Ntsama-Obiang",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 2",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku02tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 314",
+                "notes": "Berlin, Ernst Wasmuth, 1913 ; exemplaire numérisé d'Internet Archive, page lue sur l'image le 18 octobre 2026. Page 314, « Spottlied der Ntum » (chant moqueur des Ntum) : texte fang « ntsáma-obiañ », traduit « Ntsama-Obiang », puis « gerade wie bei der schönen Ntsama-Obiang » (tout comme chez la belle Ntsama-Obiang). L'auteur ne dit pas où il a noté ce chant ; la page de titre donne ses recherches de 1904 à 1909."
+              },
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 2",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku02tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 285",
+                "notes": "Berlin, Ernst Wasmuth, 1913 ; exemplaire numérisé d'Internet Archive, lu le 18 octobre 2026. Page 285 : « Dem eigenen, vom Vater gegebenen Namen wird der des Vaters selbst angefügt » (au nom propre donné par le père s'ajoute celui du père lui-même) ; l'exemple de l'auteur est Boka-Essun, Boka fils d'Essun. Même page : « Familiennamen in unserem Sinne kennen die Pangwe nicht » (les Pangwe ne connaissent pas de noms de famille au sens où nous l'entendons)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une étude de la culture fang cite Nchama parmi les noms féminins et reprend, en l’attribuant à Nsue-Mibui, la glose « femme destructrice ». Comme l’article relaie une source secondaire et ne décompose pas le terme, la glose reste une affirmation attribuée plutôt qu’une reconstruction établie.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "La cultura para el reconocimiento de la identidad: caso de la cultura fang de Guinea Ecuatorial",
+                "author": "Bonifacio Nguema Obiang-Mikue",
+                "year": 2023,
+                "url": "https://doi.org/10.29166/catedra.v6i1.4282",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 179 et 182",
+                "notes": "Article de Revista Cátedra 6(1), 2023, pp. 171-186. Lu le 18 octobre 2026 dans le PDF en espagnol. Page 179 : « nombres tales como Nchama, Ñengono, Angue, Obono, Mikue, Okomo, Ayang, Nfono, entre otros para identificar a las mujeres ». Page 182, résultats d'une enquête auprès de 102 personnes fang : être fang, c'est aussi « llevar nombres y apellidos de los fang, por ejemplo, Nguema, Mibuy, Ondo, Esono, Nchama »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

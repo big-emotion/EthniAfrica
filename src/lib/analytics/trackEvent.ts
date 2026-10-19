@@ -26,8 +26,10 @@ export type AnalyticsEvent =
   | "fiche:source_click"
   /**
    * A reader continued from a fiche instead of leaving: to another fiche
-   * (FicheOnward, `to` an entity kind) or to another name's result page
-   * (« Poursuivre avec un autre nom », `to` the card's relation).
+   * (FicheOnward, `to` an entity kind), to another name's result page
+   * (« Poursuivre avec un autre nom », `to` the card's relation), or to the
+   * result page of the fiche's own name (« Suivre l'histoire du nom … »,
+   * `to: "name_story"`).
    */
   | "fiche:related_click"
   /** How far down a fiche the reader actually got. */

@@ -22,13 +22,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Le bureau du Premier ministre de Somalie atteste Jama comme dernier élément de la chaîne de noms Salah Ahmed Jama ; la notice ne qualifie pas la relation généalogique exprimée par cet élément.",
-        "claimStatus": "established",
-        "sourceRefs": ["jama-somalia-opm-2022"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -92,5 +87,137 @@
       "fieldPath": "homonyms",
       "reason": "Les sources consultées ne permettent pas encore de présenter un autre nom écrit comme Jama, mais d'origine différente."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Jama est un nom personnel somali. Chez les Somalis, il se transmet dans la chaîne des noms : on porte après son propre nom celui de son père, puis celui de son grand-père. Il viendrait d'un mot arabe ; nous présentons plus bas ce que les sources en disent.",
+    "names": [
+      {
+        "nameText": "Jama",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel somali, porté comme nom du père ou du grand-père, et à l'étranger comme nom de famille.",
+        "periodLabel": "Écrit dès 1856, sous une forme proche ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Jama est un nom personnel, non un nom de famille : chez les Somalis, chacun porte son propre nom, puis celui de son père et celui de son grand-père. Jama peut donc être le nom d'une personne, de son père ou de son grand-père, selon Cabdalla Cumar Mansuur.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Somali names and individual identity",
+                "author": "Cabdalla Cumar Mansuur",
+                "year": 2021,
+                "url": "https://web.archive.org/web/20210920113414/https://wardheernews.com/wp-content/uploads/2021/06/Somali-names-and-indvidual-identity-By-Abdalla-Mansuur.pdf",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 3",
+                "notes": "Article publié le 14 juin 2021 par WardheerNews. L'adresse d'origine ne répondait plus le 18 octobre 2026 ; le texte a été lu en entier dans la copie du 20 septembre 2021 qu'en garde la Wayback Machine, dont les pages sont numérotées. Page 3 : « The Somali naming system is based on the genealogical system, consisting of three names: 1. a personal name; 2. a father's name; 3. a grandfather's name. Since a system of name(s)-surname does not exist, the Somali names often resemble to each other »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Hors de Somalie, aujourd'hui"
+            },
+            "statement": "Le nom Jama peut devenir un nom de famille hors de Somalie : les pays d'accueil exigent un nom de famille et retiennent pour cela le nom du père ou celui du grand-père, selon Cabdalla Cumar Mansuur.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Somali names and individual identity",
+                "author": "Cabdalla Cumar Mansuur",
+                "year": 2021,
+                "url": "https://web.archive.org/web/20210920113414/https://wardheernews.com/wp-content/uploads/2021/06/Somali-names-and-indvidual-identity-By-Abdalla-Mansuur.pdf",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 4",
+                "notes": "Article publié le 14 juin 2021 par WardheerNews. L'adresse d'origine ne répondait plus le 18 octobre 2026 ; le texte a été lu en entier dans la copie du 20 septembre 2021 qu'en garde la Wayback Machine, dont les pages sont numérotées. Page 4 : à l'étranger, « the host country forces him to declare a surname » ; au Royaume-Uni et aux États-Unis, le troisième nom, celui du grand-père, est pris pour le nom de famille, en Suède le deuxième, celui du père."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Proposée en 2003"
+            },
+            "statement": "Le nom Jama viendrait d'un dérivé de l'arabe jāmiʿ, « auteur, écrivain », littéralement « celui qui rassemble des textes », selon le dictionnaire de Patrick Hanks.",
+            "hypothesisGroup": "origine du nom Jama",
+            "sources": [
+              {
+                "title": "Jama Name Meaning and Jama Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=jama",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée Jama du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch : « Muslim: from a derivative of Arabic jāmiʿ 'author, writer', literally 'gatherer (of texts)' » ; la même page donne aussi un nom slovène Jama, sans rapport, tiré de jama « grotte, trou ». Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Jama a une forme proche, Jami, chez l'explorateur Richard Burton : le cheikh Jami, des Somalis Berteri, savant et généalogiste, est l'un de ses informateurs. Le rapprochement est le nôtre, le nom Jama venant de l'arabe jāmiʿ selon le dictionnaire de Patrick Hanks. C'est la plus ancienne trace de ce nom que le projet connaît, sous une forme proche ; le nom est plus ancien qu'elle.",
+            "formAsWritten": "Jami",
+            "birth": true,
+            "sources": [
+              {
+                "title": "First Footsteps in East Africa; or, An Exploration of Harar",
+                "author": "Richard F. Burton",
+                "year": 1856,
+                "url": "https://archive.org/details/firstfootstepsi00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 76, note ; p. 101 ; p. 350",
+                "notes": "Londres, Longman, Brown, Green, and Longmans, 1856 ; exemplaire numérisé sur archive.org. Récit d'un voyage fait en 1854-1855 dans le pays somali et jusqu'à Harar. Voyageur britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Page 76, note : « upon the authority of the Shaykh Jami, most learned of the Somal » ; page 101 : « The Shaykh Jami, a celebrated genealogist, informed me » ; page 350 : « Shaykh Jami of the Berteri Somal ». Burton ne dit pas ce que veut dire ce nom. Lu le 18 octobre 2026."
+              },
+              {
+                "title": "Jama Name Meaning and Jama Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=jama",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée Jama du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch : « Muslim: from a derivative of Arabic jāmiʿ 'author, writer', literally 'gatherer (of texts)' » ; la même page donne aussi un nom slovène Jama, sans rapport, tiré de jama « grotte, trou ». Lu le 18 octobre 2026.",
+                "page": "entrée Jama"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le bureau du Premier ministre de Somalie atteste Jama comme dernier élément de la chaîne de noms Salah Ahmed Jama ; la notice ne qualifie pas la relation généalogique exprimée par cet élément.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "H.E. Salah Ahmed Jama — Deputy Prime Minister",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://opm.gov.so/prime-ministers/h-e-salah-ahmed-jama",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Bureau du Premier ministre de la République fédérale de Somalie, notice consultée intégralement. Elle donne la chaîne Salah Ahmed Jama et sa fonction à partir d'août 2022. Le porteur étant vivant, il n'est pas encodé dans bearers sans auto-identification conforme au schéma."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

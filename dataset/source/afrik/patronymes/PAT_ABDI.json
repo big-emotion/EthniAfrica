@@ -22,13 +22,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Le bureau du Premier ministre de Somalie atteste Abdi comme dernier élément de la chaîne de noms Jibril Abdirashid Haji Abdi ; la page ne précise pas si cet élément est une forme courte, un nom de père ou un nom familial administrativement stabilisé.",
-        "claimStatus": "established",
-        "sourceRefs": ["abdi-somalia-opm-2026"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -92,5 +87,157 @@
       "fieldPath": "homonyms",
       "reason": "Les sources consultées ne permettent pas encore de présenter un autre nom écrit comme Abdi, mais d'origine différente."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Abdi est un nom personnel somali, porté aussi en Éthiopie, au Kenya et à Djibouti. Chez les Somalis, il se transmet dans la chaîne des noms : on porte après son propre nom celui de son père, puis celui de son grand-père. Il viendrait d'une forme courte d'Abdulle ; nous présentons plus bas ce que les sources en disent.",
+    "names": [
+      {
+        "nameText": "Abdi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel somali, porté comme nom du père ou du grand-père, et à l'étranger comme nom de famille.",
+        "periodLabel": "Écrit dès 1848 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Abdi est un nom personnel, non un nom de famille : chez les Somalis, chacun porte son propre nom, puis celui de son père et celui de son grand-père. Abdi peut donc être le nom d'une personne, de son père ou de son grand-père, selon Cabdalla Cumar Mansuur.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Somali names and individual identity",
+                "author": "Cabdalla Cumar Mansuur",
+                "year": 2021,
+                "url": "https://web.archive.org/web/20210920113414/https://wardheernews.com/wp-content/uploads/2021/06/Somali-names-and-indvidual-identity-By-Abdalla-Mansuur.pdf",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 3",
+                "notes": "Article publié le 14 juin 2021 par WardheerNews. L'adresse d'origine ne répondait plus le 18 octobre 2026 ; le texte a été lu en entier dans la copie du 20 septembre 2021 qu'en garde la Wayback Machine, dont les pages sont numérotées. Page 3 : « The Somali naming system is based on the genealogical system, consisting of three names: 1. a personal name; 2. a father's name; 3. a grandfather's name. Since a system of name(s)-surname does not exist, the Somali names often resemble to each other »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Hors de Somalie, aujourd'hui"
+            },
+            "statement": "Le nom Abdi est devenu un nom de famille surtout hors de Somalie : les pays d'accueil exigent un nom de famille et retiennent pour cela le nom du père ou celui du grand-père, selon Cabdalla Cumar Mansuur. Aux États-Unis, Abdi a le plus souvent été enregistré comme nom de famille à l'arrivée de ceux qui le portent, selon le dictionnaire de Patrick Hanks.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Somali names and individual identity",
+                "author": "Cabdalla Cumar Mansuur",
+                "year": 2021,
+                "url": "https://web.archive.org/web/20210920113414/https://wardheernews.com/wp-content/uploads/2021/06/Somali-names-and-indvidual-identity-By-Abdalla-Mansuur.pdf",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 4",
+                "notes": "Article publié le 14 juin 2021 par WardheerNews. L'adresse d'origine ne répondait plus le 18 octobre 2026 ; le texte a été lu en entier dans la copie du 20 septembre 2021 qu'en garde la Wayback Machine, dont les pages sont numérotées. Page 4 : à l'étranger, « the host country forces him to declare a surname » ; au Royaume-Uni et aux États-Unis, le troisième nom, celui du grand-père, est pris pour le nom de famille, en Suède le deuxième, celui du père."
+              },
+              {
+                "title": "Abdi Name Meaning and Abdi Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=abdi",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée Abdi du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch : « Muslim: from the Arabic personal name Abdī, a short form of Abdul » ; « Somali: from a Somali Muslim personal name, a short form of Abdulle and thus a cognate of 1 above. It is also found in Ethiopia, Kenya, and Djibouti » ; « Since Somalis traditionally do not have hereditary surnames, this name was in most cases registered as such only after immigration of its bearers to the US » ; « Ethiopian: from the Oromo personal name Abdi, meaning 'hope' in the Oromo language ». Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Proposée en 2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Abdi serait la forme courte d'Abdulle, un nom personnel somali et musulman, apparenté à l'arabe Abdī, lui-même forme courte d'Abdul, selon le dictionnaire de Patrick Hanks.",
+            "hypothesisGroup": "origine du nom Abdi",
+            "sources": [
+              {
+                "title": "Abdi Name Meaning and Abdi Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=abdi",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée Abdi du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch : « Muslim: from the Arabic personal name Abdī, a short form of Abdul » ; « Somali: from a Somali Muslim personal name, a short form of Abdulle and thus a cognate of 1 above. It is also found in Ethiopia, Kenya, and Djibouti » ; « Since Somalis traditionally do not have hereditary surnames, this name was in most cases registered as such only after immigration of its bearers to the US » ; « Ethiopian: from the Oromo personal name Abdi, meaning 'hope' in the Oromo language ». Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Décrit en 2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Abdi est aussi, en Éthiopie, un nom personnel oromo qui voudrait dire « espoir », selon le même dictionnaire. C'est alors un autre nom, qui s'écrit de la même façon.",
+            "sources": [
+              {
+                "title": "Abdi Name Meaning and Abdi Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=abdi",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée Abdi du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch : « Muslim: from the Arabic personal name Abdī, a short form of Abdul » ; « Somali: from a Somali Muslim personal name, a short form of Abdulle and thus a cognate of 1 above. It is also found in Ethiopia, Kenya, and Djibouti » ; « Since Somalis traditionally do not have hereditary surnames, this name was in most cases registered as such only after immigration of its bearers to the US » ; « Ethiopian: from the Oromo personal name Abdi, meaning 'hope' in the Oromo language ». Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1848,
+              "to": 1848,
+              "label": "1848"
+            },
+            "era": "polity",
+            "statement": "Le nom Abdi apparaît par écrit en 1848, dans le mémoire de C. J. Cruttenden sur la côte somalie : un homme des Ahl Oor Singally, qu'il appelle Mahamonood Abdi, y salue la sagesse des Anglais. C'est la plus ancienne trace de ce nom chez les Somalis que le projet connaît ; le nom est plus ancien qu'elle.",
+            "formAsWritten": "Abdi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Memoir on the Western or Edoor Tribes, Inhabiting the Somali Coast of N.-E. Africa, with the Southern Branches of the Family of Darrood, Resident on the Banks of the Webbe Shebeyli, Commonly Called the River Webbe",
+                "author": "C. J. Cruttenden",
+                "year": 1849,
+                "url": "https://archive.org/details/jstor-1798086",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 71",
+                "notes": "Journal of the Royal Geographical Society of London, vol. 19, 1849, p. 49-76 ; mémoire daté d'Aden le 12 mai 1848 et lu le 13 novembre 1848, par le lieutenant C. J. Cruttenden, de la marine des Indes, agent politique adjoint à Aden. Lu en fac-similé (copie JSTOR Early Journal Content) sur archive.org. Officier britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Page 71, chez les Ahl Oor Singally : « You are the kings of this world in wisdom, said the solemn Mahamonood Abdi, \"And what are we in comparison! Thank heaven, our world is to come!\" » (orthographe de l'imprimé). Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le bureau du Premier ministre de Somalie atteste Abdi comme dernier élément de la chaîne de noms Jibril Abdirashid Haji Abdi ; la page ne précise pas si cet élément est une forme courte, un nom de père ou un nom familial administrativement stabilisé.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Hon. Jibril Abdirashid Haji Abdi — Second Deputy Prime Minister",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://cabinet.gov.so/prime-ministers/hon-jibril-abdirashid-haji-abdi",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Bureau du Premier ministre de la République fédérale de Somalie, page consultée intégralement. Elle identifie Jibril Abdirashid Haji Abdi comme homme d'État somalien et donne son mandat à partir de juin 2025. Le porteur étant vivant, il n'est pas ajouté à bearers sans auto-identification conforme au schéma."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -477,6 +477,120 @@ why. Counts by script: `hereditary_family_name` 28 to 41,
 `non_hereditary_patronymic` 277 to 282, `clan_name` 390 to 370 (two of them
 folded away).
 
+**Fourth pass, 2026-10-18 (wave 25).** The operator approved every
+recommendation of the wave 25 reports (#1838). Twenty fiches whose history
+shows the name borne as a family name and tells no clan took
+`hereditary_family_name`, unit `other`: the French names of the Seychelles and
+Mauritius (Michel, Faure, Larue, Barbe, Julie, Hoareau, Loustau-Lalanne,
+Duval, Bérenger), the Indian names of Mauritius (Gopaul, Beeharry, Appadoo),
+Kane, Bongo, do Espírito Santo, Letsie, and the Krio and Liberian names (Cole,
+Coker, Cooper, Freeman). Sixteen took `non_hereditary_patronymic`, unit
+`individual`: Ould Ahmed, a filiation like Ould Cheikh, with no `nameSystem`
+gap; Lado, a Bari personal name in Seligman (1932, read on the page images),
+which the fiche now cites: on p. 270 a son of Molodiong and a boy are called
+Lado alone, with their clan, Bekat, given apart; the chief of p. 268 is « Laro
+Lado » throughout and is not used for the reading, since Lado may there be his
+father's name; Kountché, the father's name in a Zarma
+genealogy; the Bemba names Bwalya, Chanda, Mulenga and Musonda; and, under the
+Fang ruling, Obame, Obiang, Nchama, Nsue, Ela, Mengue, Nzue and the Ewondo
+names Ndongo and Onana. Obame, Obiang, Nsue and Ndongo, whose histories say
+the father's name follows the child's, are `patrilineal`. Each of the fifteen
+`nameSystem` gaps says that the `hereditary_family_name` box exists. Thirteen
+add that no source read shows the name passed on as a family name. Nsue and
+Obiang cannot say so: their histories show every child of the man bearing his
+name. Their gaps give the reason instead: each child takes his own father's
+name as second name (Obiang-Mikue 2023, p. 179: the son called Nsue Nsue is
+the one who carries Nsue to his children; Tessmann vol. 2, p. 285, cited by
+Obiang only: the son of Boka-Essun is Ayong-Boka, and the Pangwe have no
+family names in our sense). A gap credits Tessmann only on a fiche that cites
+p. 285 (Obiang, Nchama). Ndong stays
+`clan_name`, unit `clan`: Tessmann (« Fam. Ndong ») and Obiang-Mikue call it a
+clan, and its gap now says it is also a man's name. The Swazi and Tsonga names
+keep `clan_name`, Moyo `totemic_clan`, Mabiala `non_hereditary_patronymic`. On
+the same fiches: the unsourced spellings Berenger and Barbé are dropped
+(search ignores accents, so both still find their fiche, and Barbe is now filed
+under the form its sources write); the Letsie Moshesh tile of 1847 takes
+`polity` (Basotho chiefs before 1868); the Pointe Larue account keeps no era.
+Counts by script: `hereditary_family_name` 41 to 61,
+`non_hereditary_patronymic` 281 to 297, `clan_name` 366 to 331, `nisba` 66 to 65.
+
+## Rulings of 2026-10-18: evidence questions of waves 24 and 25
+
+Waves 24 (peoples and groupings, #1837) and 25 (family names, #1838) of the
+long tail, and the arbitration of their duplicates (#1842), left evidence
+questions open, each with a recommendation. On 2026-10-18 the operator
+approved every recommendation. Each ruling below confirms what the fiches
+already do: no fiche changed for them. The era rulings of the same day are
+in [colonial-periods.md](colonial-periods.md).
+
+What may be a self-name:
+
+- **A census name is not a self-name by itself.** The Ethiopian censuses of
+  1994 and 2007, read through Hudson (2012), count « Fadashi » and
+  « Fedashe », names the respondents chose, but no source says the people
+  call themselves so. `PPL_FADASHI` keeps `selfNameUnknown` until a source
+  says it.
+- **Winye stays self-given on a thesis title** (`PPL_WIYANA`): the close form
+  Winien in the title of S. Damoué's maîtrise thesis (1983), read in the
+  bibliography of Jean-Pierre Jacob (2007, p. 252), who counts Damoué among
+  the young scholars « originaires de l'ethnie » (p. 24). The name is to go on
+  [the oral verification list](self-names-to-verify-orally.md), with Baka and
+  Bedzan.
+- **An own name may be self-given on a grouping fiche** when a source
+  documents it as one: Imazighen on `PPL_AMAZIGH_MACRO`, after Salem Chaker.
+- **A grouping label with no common self-name carries `selfNameUnknown`**,
+  its summary saying that each people uses its own name: `PPL_BANTU`, and the
+  macro fiches of wave 24 that tell a label laid on peoples.
+- **Kuvale stays self-given on a second-hand note**: Rafael Coca de Campos
+  (2021, p. 38 n. 48) reports, after Ruy Duarte de Carvalho and Carlos
+  Estermann, that the people the colonial documents called mucubais called
+  themselves kuvale (`PPL_MUCUVAL`). The summary attributes it to the
+  historian. Cite Estermann's Herero volume (1961) directly once it is read.
+
+What may be a birth:
+
+- **The close form « nanuus » stays the Nalu birth** (`PPL_NALU`): Duarte
+  Pacheco Pereira's _Esmeraldo_, about 1505-1508, read in the edition of 1892.
+  Had it been refused, Almada's « Naluns » (1594) would have taken its place.
+- **Pygmée keeps both dated points** (`PPL_PYGMEES_AUTOCHTONES`): Samuel
+  Purchas's « Pigmy » of 1625 as the oldest trace, the birth, and
+  Schweinfurth's use for the Akka, met in 1870 and published in 1873, as the
+  imposition the scholars call the first use of the word for these peoples.
+- **Close forms, each tile stating its limit**: Kagbo for Kargbo (Northcote
+  Thomas 1916, `PAT_KARGBO`), whose tile says no source read states that
+  Kagbo and Kargbo are the same name; Mathebula for Matsebula (van Warmelo
+  1935, `PAT_MATSEBULA`), whose tile says the census does not tell whether
+  the chief Nyakenye, a Mathebula in 1935, belonged to the same clan as the
+  Matsebula of 2002. The Kirundi
+  Havyarimana is not taken as a close form of Habyarimana: `PAT_HABYARIMANA`
+  stays unwritten until a source glosses Habyarimana or equates the two.
+- **A second-hand trace without the written form**: the Loyi of 1729-1731,
+  known only through Gerhard Liesegang (2014, p. 37), who does not quote the
+  form written then (`PAT_BALOYI`), under the second-hand ruling of the
+  pilots.
+- **A list naming a bearer**: the CIA note of 7 March 1962 that names Eduardo
+  Mondlane (`PAT_MONDLANE`), to be replaced if an older Portuguese record
+  turns up.
+
+Hypotheses and readings:
+
+- **Ferry's laterite explanation stays dated « Rapportée en 2019 »**
+  (`PPL_BASSARI`): Loïc-Michel Perrin reports it after a « Ferry 1981 » that
+  his bibliography does not list. The date moves once that text is
+  identified.
+- **The nisba links labelled as our own reading stay, as for Waberi**: Mejri
+  and the Majer tribe (`PAT_MEJRI`), Doukkali and the Doukkala
+  (`PAT_DOUKKALI`). Each account says the link is ours.
+
+Withdrawals and sources:
+
+- **The family names withdrawn as non-surnames stay withdrawn**: Kigozi,
+  Ngarlejy, Ngarta and Ahl Sidi, rather than kept as personal names. Kigozi
+  may come back as a Ganda personal name if a Luganda name source turns up.
+- **The Migration Partnership Facility page** (2024) that `CPV` cites for the
+  foreign residents of the 2021 census keeps tier `referenced`, kind
+  `intergovernmental`.
+
 # The long tail: wave order
 
 The priority core above is a short list picked by hand. The rest of the corpus

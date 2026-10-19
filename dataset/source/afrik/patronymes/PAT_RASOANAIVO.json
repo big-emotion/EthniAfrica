@@ -11,7 +11,10 @@
     {
       "spelling": "Rasoanaivo",
       "attestations": [
-        { "countryId": "MDG", "sourceRefs": ["twas-imra-rasoanaivo"] }
+        {
+          "countryId": "MDG",
+          "sourceRefs": ["twas-imra-rasoanaivo"]
+        }
       ]
     }
   ],
@@ -20,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -59,10 +63,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Les recherches exactes « Rasoanaivo etymology », « Rasoanaivo onomastics », leurs équivalents français et les résultats académiques n'ont livré ni tradition attribuée, ni chronique d'origine, ni reconstruction linguistique ; les gloses de sites génériques ont été rejetées faute de sources."
-    },
     {
       "fieldPath": "transmissionMode",
       "reason": "Le profil TWAS atteste un scientifique, pas une généalogie. Les recherches avec famille, père, fils et transmission n'ont pas établi le mode ; « other » maintient l'indétermination."
@@ -133,7 +133,11 @@
             ]
           },
           {
-            "period": { "from": 1931, "to": 1931, "label": "1931" },
+            "period": {
+              "from": 1931,
+              "to": 1931,
+              "label": "1931"
+            },
             "statement": "Le nom Rasoanaivo apparaît par écrit comme nom d'auteur d'un manuel de solfège en malgache de Charles Rasoanaivo, daté de 1931, selon le catalogue de la Bibliothèque nationale de France. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand il est donné.",
             "birth": true,
             "sources": [

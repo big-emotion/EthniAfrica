@@ -23,20 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Soilih, qui se prononce Swalihi à Mayotte, et Saleh sont deux formes d'un même nom. L'article range cette paire parmi les cas où le nom écrit sur les papiers officiels n'est pas celui qu'on dit sur place : pour Muhammadi, dit Mmadi ou Madi au village, la forme officielle est souvent Mohamed, que l'administration a dû reprendre de l'usage des documents coloniaux sur l'Afrique du Nord. Il écrit Soilih, sans i final.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["gueunier-1999-noms-mahorais"]
-      }
-    ],
-    "historicalSyntheses": [
-      {
-        "claim": "À Mayotte, et d'après les mêmes auteurs aux Comores en général, le nom complet d'une personne est son nom personnel suivi de celui de son père, que le mahorais appelle sheredzo. Ce second nom ne se transmet pas au-delà de deux générations, à la différence d'un nom de famille français ; le nom du grand-père n'apparaît qu'en troisième position, pour distinguer deux personnes. L'état civil des Comores est tardif : des textes de 1904 n'ont pas été appliqués, puis un arrêté de 1926 et des textes de 1950 et de 1961 l'ont organisé, inégalement appliqués. À Mayotte, les rubriques « Nom » et « Prénom » des pièces d'identité étaient remplies au gré des employés, tantôt avec le nom du père, tantôt avec le nom personnel. Un arrêté préfectoral de septembre 1996 a institué à Mayotte une commission sur les noms patronymiques, qui a proposé de fixer le nom du père comme nom de famille transmis à perpétuité, ou de laisser chacun choisir un nom. En 1999, la préfecture n'avait pas suivi ces propositions et s'en tenait à des instructions sur les rubriques « Nom » et « Prénom » ; ce qui s'est passé depuis n'est pas dans l'article. L'article ne dit ni depuis quand ni dans quelles familles Soilihi sert de nom de famille.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["gueunier-1999-noms-mahorais"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -75,10 +63,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Nous n'avons trouvé aucune tradition attribuée ni aucune étude qui dise d'où vient le nom Soilihi, ni quand il est devenu un nom de famille pour une famille précise. Seul un article sur les noms de Mayotte le cite, comme variante écrite de Saleh. Les rapprochements fondés uniquement sur la géographie, une biographie ou une contribution non référencée ont été écartés."
-    },
     {
       "fieldPath": "nameSystem",
       "reason": "la recherche web et bibliographique combinant « Soilihi », « Comoros », « Comorian », « surname », « onomastics », « etymology » et « transmission », ainsi que la consultation directe de « Soilihi Surname Origin, Meaning & Last Name History » n'ont pas établi que la catégorie provisoire « non_hereditary_patronymic » décrive Soilihi lui-même ; elle reste un classement de travail et non une origine démontrée."
@@ -196,6 +180,48 @@
                 "source_kind": "academic",
                 "page": "p. 1",
                 "notes": "Revue des Sciences Sociales de la France de l'Est, 26, 1999, p. 45-53, lu le 11 octobre 2026 dans la version déposée par les auteurs, dont la pagination de 15 pages ne suit pas celle de la revue ; les pages données ici sont celles de cette version. Deux des trois auteurs sont mahorais. Page 1 : la signature de l'article nomme ses trois auteurs, dont « Soilihi MOUHKTAR ». Le corps du texte écrit Soilih, sans i final."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "À Mayotte, et d'après les mêmes auteurs aux Comores en général, le nom complet d'une personne est son nom personnel suivi de celui de son père, que le mahorais appelle sheredzo. Ce second nom ne se transmet pas au-delà de deux générations, à la différence d'un nom de famille français ; le nom du grand-père n'apparaît qu'en troisième position, pour distinguer deux personnes. L'état civil des Comores est tardif : des textes de 1904 n'ont pas été appliqués, puis un arrêté de 1926 et des textes de 1950 et de 1961 l'ont organisé, inégalement appliqués. À Mayotte, les rubriques « Nom » et « Prénom » des pièces d'identité étaient remplies au gré des employés, tantôt avec le nom du père, tantôt avec le nom personnel. Un arrêté préfectoral de septembre 1996 a institué à Mayotte une commission sur les noms patronymiques, qui a proposé de fixer le nom du père comme nom de famille transmis à perpétuité, ou de laisser chacun choisir un nom. En 1999, la préfecture n'avait pas suivi ces propositions et s'en tenait à des instructions sur les rubriques « Nom » et « Prénom » ; ce qui s'est passé depuis n'est pas dans l'article. L'article ne dit ni depuis quand ni dans quelles familles Soilihi sert de nom de famille.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "« Nom, Prénom » : une étape vers l'uniformisation culturelle ? Identité et statut juridique à Mayotte (Océan Indien Occidental)",
+                "author": "Mohamed M'Trengouéni, Soilihi Mouhktar et Noël J. Gueunier",
+                "year": 1999,
+                "url": "https://www.migrantsoutremer.org/IMG/pdf/rss-france-est_1999_noms-mahorais.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3, 5",
+                "notes": "Revue des Sciences Sociales de la France de l'Est, 26, 1999, p. 45-53, lu le 11 octobre 2026 dans la version déposée par les auteurs, dont la pagination de 15 pages ne suit pas celle de la revue ; les pages données ici sont celles de cette version. Deux des trois auteurs sont mahorais. Page 3 : le nom du père dit après le nom personnel s'appelle sheredzo, « suite » ; les deux forment le nom complet. Page 5 : le sheredzo rattache à un père, non à une lignée, et ne passe pas à la génération suivante."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Soilih, qui se prononce Swalihi à Mayotte, et Saleh sont deux formes d'un même nom. L'article range cette paire parmi les cas où le nom écrit sur les papiers officiels n'est pas celui qu'on dit sur place : pour Muhammadi, dit Mmadi ou Madi au village, la forme officielle est souvent Mohamed, que l'administration a dû reprendre de l'usage des documents coloniaux sur l'Afrique du Nord. Il écrit Soilih, sans i final.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "« Nom, Prénom » : une étape vers l'uniformisation culturelle ? Identité et statut juridique à Mayotte (Océan Indien Occidental)",
+                "author": "Mohamed M'Trengouéni, Soilihi Mouhktar et Noël J. Gueunier",
+                "year": 1999,
+                "url": "https://www.migrantsoutremer.org/IMG/pdf/rss-france-est_1999_noms-mahorais.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3, 5",
+                "notes": "Revue des Sciences Sociales de la France de l'Est, 26, 1999, p. 45-53, lu le 11 octobre 2026 dans la version déposée par les auteurs, dont la pagination de 15 pages ne suit pas celle de la revue ; les pages données ici sont celles de cette version. Deux des trois auteurs sont mahorais. Page 3 : le nom du père dit après le nom personnel s'appelle sheredzo, « suite » ; les deux forment le nom complet. Page 5 : le sheredzo rattache à un père, non à une lignée, et ne passe pas à la génération suivante."
               }
             ]
           }

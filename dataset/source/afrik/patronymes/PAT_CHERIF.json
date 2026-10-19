@@ -32,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "La source identifie Cherif comme transcription maghrébine de l'arabe شريف, apparentée à Sharif, et signale son emploi dans l'Afrique du Nord et de l'Ouest sous influence française. La graphie seule ne prouve aucune filiation chérifienne.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["btn-cherif"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -292,6 +287,26 @@
                 "source_kind": "archive",
                 "page": "p. 23",
                 "notes": "Général E. Daumas, deuxième édition, Paris, Hachette, 1855 ; exemplaire numérisé d'archive.org. L'auteur est un officier français, conseiller d'État et directeur des affaires de l'Algérie : il est cité pour ce qu'il écrit et rapporte. Page 23, lue sur le texte numérisé : le titre est écrit « chérif », au pluriel « cheurfa ». Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La source identifie Cherif comme transcription maghrébine de l'arabe شريف, apparentée à Sharif, et signale son emploi dans l'Afrique du Nord et de l'Ouest sous influence française. La graphie seule ne prouve aucune filiation chérifienne.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Cherif — Behind the Name",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/cherif",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site collaboratif de prénoms, page lue en entier : « Alternate transcription of Arabic شريف (see Sharif) chiefly used in French-influenced North and West Africa » ; usage arabe (maghrébin) et ouest-africain ; racine « sharufa ». Contenu communautaire, sans source citée ; la page ne donne pas de sens explicite. Lu le 14 octobre 2026."
               }
             ]
           }

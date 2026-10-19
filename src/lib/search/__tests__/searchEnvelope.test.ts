@@ -123,6 +123,40 @@ describe("mapSearchEnvelope — English names (ETNI-1857)", () => {
 });
 
 describe("mapSearchEnvelope", () => {
+  // @req REQ-125
+  it("carries recorded field paths onto the page's result model", () => {
+    const [people] = mapSearchEnvelope({
+      data: {
+        peoples: [
+          {
+            id: "PPL_KURANKO",
+            nameMain: "Kuranko",
+            content: {},
+          },
+        ],
+        results: [
+          {
+            kind: "people",
+            id: "PPL_KURANKO",
+            recordedIn: [
+              {
+                fieldPath: "content.organization.clanOrganization",
+                text: "Les clans Kagbo, Sanoh, Kaloko et Koroma jouent également des rôles importants.",
+              },
+            ],
+          },
+        ],
+      },
+    });
+
+    expect(people.recordedIn).toEqual([
+      {
+        fieldPath: "content.organization.clanOrganization",
+        text: "Les clans Kagbo, Sanoh, Kaloko et Koroma jouent également des rôles importants.",
+      },
+    ]);
+  });
+
   const envelope = {
     data: {
       peoples: [
@@ -866,21 +900,85 @@ describe("mapSearchLeads", () => {
     expect(leads).toEqual([]);
   });
 
-  // ETNI-1463 AC3 (ETNI-1744): patronymes and persons are deliberately not
-  // lead candidates, the same way languages are not.
+  // ETNI-1463 AC3 (ETNI-1744): persons are deliberately not lead candidates,
+  // the same way languages are not.
   // @req REQ-125
-  it("drops a lead whose kind is patronyme or person", () => {
+  it("drops a lead whose kind is person", () => {
     const leads = mapSearchLeads({
       data: {
         total: 0,
-        leads: [
-          { kind: "patronyme", id: "PATR_X", name: "X", similarity: 0.5 },
-          { kind: "person", id: "PER_X", name: "X", similarity: 0.5 },
-        ],
+        leads: [{ kind: "person", id: "PER_X", name: "X", similarity: 0.5 }],
       },
     });
 
     expect(leads).toEqual([]);
+  });
+
+  // DEC-075: a family name is offered as a spelling of the searched name, and
+  // it comes with results, so the mapping cannot read `total`.
+  // @req REQ-125
+  it("maps a family-name lead to the patronyme type, even beside results", () => {
+    const leads = mapSearchLeads({
+      data: {
+        total: 2,
+        leads: [
+          {
+            kind: "patronyme",
+            id: "PAT_TCHICAYA",
+            name: "Tchicaya",
+            similarity: 0.5,
+          },
+        ],
+      },
+    });
+
+    expect(leads).toEqual([
+      {
+        type: "patronyme",
+        id: "PAT_TCHICAYA",
+        name: "Tchicaya",
+        similarity: 0.5,
+      },
+    ]);
+  });
+
+  // Migration 110 sends the form that scored beside the filed name: « jarra »
+  // reaches Diarra through its spelling Jara. A database without it sends
+  // none, and the lead keeps its filed name only.
+  // @req REQ-125
+  it("carries the form that scored, when the API sends one", () => {
+    const leads = mapSearchLeads({
+      data: {
+        total: 0,
+        leads: [
+          {
+            kind: "patronyme",
+            id: "PAT_DIARRA",
+            name: "Diarra",
+            matchedForm: "Jara",
+            similarity: 0.57,
+          },
+          { kind: "country", id: "MLI", name: "Mali", similarity: 0.25 },
+          {
+            kind: "people",
+            id: "PPL_X",
+            name: "X",
+            matchedForm: "  ",
+            similarity: 0.3,
+          },
+        ],
+      },
+    });
+
+    expect(leads[0]).toEqual({
+      type: "patronyme",
+      id: "PAT_DIARRA",
+      name: "Diarra",
+      matchedForm: "Jara",
+      similarity: 0.57,
+    });
+    expect(leads[1]).not.toHaveProperty("matchedForm");
+    expect(leads[2]).not.toHaveProperty("matchedForm");
   });
 
   // @req REQ-125
@@ -920,6 +1018,28 @@ describe("mapSearchNearNames", () => {
         similarity: 0.6,
       },
     ]);
+  });
+
+  // A family name is a lead or nothing: two names that sound alike are two
+  // names, so none is offered as a similar name (DEC-075).
+  // @req REQ-125
+  it("drops a family name from the similar names", () => {
+    expect(
+      mapSearchNearNames({
+        data: {
+          total: 1,
+          nearNames: [
+            {
+              kind: "patronyme",
+              id: "PAT_BELL",
+              name: "Bell",
+              similarity: 0.57,
+            },
+            { kind: "people", id: "PPL_BELLA", name: "Bella", similarity: 0.5 },
+          ],
+        },
+      }).map((name) => name.id)
+    ).toEqual(["PPL_BELLA"]);
   });
 
   // @req REQ-180
@@ -1126,6 +1246,8 @@ describe("mapSearchEnvelope — words", () => {
         answer,
         relevance: 1,
         exactMatch: true,
+        // The row sends no nameHistory, so it reads as a word without one.
+        historyNames: [],
       },
     ]);
   });
@@ -1135,5 +1257,102 @@ describe("mapSearchEnvelope — words", () => {
     expect(
       mapSearchCounts({ data: { peoplesTotal: 2, wordsTotal: 1 } })
     ).toMatchObject({ all: 3, word: 1 });
+  });
+});
+
+describe("mapSearchEnvelope — history names (ETNI-2093)", () => {
+  const historyNamesById = (results: SearchResult[]) =>
+    Object.fromEntries(
+      results.map((result) => [result.id, result.historyNames])
+    );
+
+  // @req REQ-135
+  it("carries the names each kind's history tells, in history order", () => {
+    const results = mapSearchEnvelope({
+      data: {
+        peoples: [
+          {
+            id: "PPL_FULA",
+            nameMain: "Peul",
+            historyNames: ["Fulɓe", "Peul", "Fulani"],
+          },
+        ],
+        countries: [
+          {
+            id: "CIV",
+            nameFr: "Côte d'Ivoire",
+            historyNames: ["Côte d'Ivoire"],
+          },
+        ],
+        families: [
+          {
+            id: "FLG_BERBERE",
+            nameFr: "Berbère",
+            historyNames: ["Berbère", "Amazigh"],
+          },
+        ],
+        languages: [{ id: "dyu", name: "Dioula", historyNames: ["Julakan"] }],
+        patronymes: [
+          { id: "PAT_TRAORE", nameMain: "Traore", historyNames: ["Traoré"] },
+        ],
+        words: [
+          {
+            id: "WRD_RACE",
+            nameMain: "race",
+            nameHistory: {
+              summary: "",
+              names: [{ nameText: "race" }, { nameText: "razza" }],
+            },
+          },
+        ],
+      },
+    });
+
+    expect(historyNamesById(results)).toEqual({
+      PPL_FULA: ["Fulɓe", "Peul", "Fulani"],
+      CIV: ["Côte d'Ivoire"],
+      FLG_BERBERE: ["Berbère", "Amazigh"],
+      dyu: ["Julakan"],
+      PAT_TRAORE: ["Traoré"],
+      WRD_RACE: ["race", "razza"],
+    });
+  });
+
+  // @req REQ-135
+  it("reads a row from a function not yet migrated as no history names", () => {
+    const results = mapSearchEnvelope({
+      data: {
+        peoples: [{ id: "PPL_BETE", nameMain: "Bété" }],
+        countries: [{ id: "TCD", nameFr: "Tchad", historyNames: null }],
+        families: [{ id: "FLG_KROU", nameFr: "Krou", historyNames: "Krou" }],
+        languages: [{ id: "bet", name: "Bété", historyNames: ["Bété", 3] }],
+        patronymes: [{ id: "PAT_KEITA", nameMain: "Keïta" }],
+        words: [{ id: "WRD_X", nameMain: "x" }],
+      },
+    });
+
+    expect(historyNamesById(results)).toEqual({
+      PPL_BETE: [],
+      TCD: [],
+      FLG_KROU: [],
+      bet: ["Bété"],
+      PAT_KEITA: [],
+      WRD_X: [],
+    });
+  });
+
+  // @req REQ-135
+  it("gives no history names to the kinds the page does not answer by name", () => {
+    const results = mapSearchEnvelope({
+      data: {
+        persons: [{ id: "PER_1", fullName: "Amadou Hampâté Bâ" }],
+        places: [{ id: "PLC_1", nameMain: "Tombouctou" }],
+      },
+    });
+
+    expect(results.map((result) => result.historyNames)).toEqual([
+      undefined,
+      undefined,
+    ]);
   });
 });

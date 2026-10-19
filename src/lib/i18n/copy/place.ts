@@ -19,9 +19,16 @@ const fr = {
     related: "Pays et peuples liés",
     gaps: "Ce que nous ne savons pas encore",
     sources: "Sources",
+    hypothesesLead:
+      "Deux explications existent du passage du nom N'Gokro au nom Yamoussoukro, sans que l'une l'emporte.",
+    familyAccount: "Récit de famille",
+    familyAccountPeriod: "Début du XXe siècle",
   },
   countryLabel: "Pays",
   peoplesLabel: "Peuples liés",
+  storyLinkLabel: (name: string) => `Lire l’histoire du nom ${name}`,
+  storyLinkHint:
+    "La page du nom présente ce que disent les sources : qui l’a donné, à qui, quand et pourquoi, du plus récent au plus ancien.",
 };
 
 export type PlaceCopy = typeof fr;

@@ -1,6 +1,6 @@
 # Site mockups — the reference for every visible change
 
-Eighty-five boards: a design-system board, the pages recorded at 430, 768 and
+One hundred and two boards: a design-system board, the pages recorded at 430, 768 and
 1440 px from release v5.2.0 (production, captured on 2026-10-14), and the
 approved changes listed under "Changes since the record". They are the reference every change a reader can see
 answers to, whoever makes it: the team, an agency, a contractor or an agent.
@@ -34,6 +34,7 @@ two is wrong, and the fix is decided, not improvised.
 | Group             | Page                                         | File stem            |
 | ----------------- | -------------------------------------------- | -------------------- |
 | Design system     | Tokens and components seen on the pages      | `Main`               |
+| 0 · Atlas         | Page Atlas : Les noms d'Afrique              | `atlas-names`        |
 | 1 · Search        | Résultat « peul » (timeline)                 | `search-peul`        |
 |                   | Résultat « bassa » (several subjects)        | `search-bassa`       |
 |                   | Résultat « congo » (two countries)           | `search-congo`       |
@@ -43,6 +44,10 @@ two is wrong, and the fix is decided, not improvised.
 |                   | État : origines concurrentes (« yamoussoukro ») | `search-state-competing` |
 |                   | État : origine non datée (exemple à remplacer) | `search-state-nodate` |
 |                   | État : « peul », le nom propre Fulɓe ouvert   | `search-state-peul-fulbe-open` |
+|                   | État : nom à onze récits (« traore ») | `search-state-long-traore` |
+|                   | Page de recherche (sans requête)             | `search-entry`       |
+|                   | État : « tchikaya », un nom qui s’écrit presque de la même façon | `search-state-typo` |
+|                   | État : fiches trouvées via un nom lié (« bukasa ») | `search-state-related` |
 | 2 · Peoples       | `PPL_FULA`                                   | `people-fula`        |
 |                   | `PPL_BASSA`                                  | `people-bassa`       |
 |                   | `PPL_ALABA`                                  | `people-thin-alaba`  |
@@ -57,11 +62,14 @@ two is wrong, and the fix is decided, not improvised.
 |                   | État mince : pays `GAB`                      | `country-state-thin-gab` |
 |                   | État : nom partagé, pays `COG`               | `country-state-shared-congo` |
 | 4 · Other pages   | Nom `PAT_TRAORE`                             | `name-traore`        |
+|                   | État mince : nom `PAT_KOLLO`                 | `name-state-thin-kollo` |
+|                   | État : sources faibles, nom `PAT_SARR`       | `name-state-weak-sarr` |
 |                   | Lieu `LOC_YAMOUSSOUKRO`                      | `place-yamoussoukro` |
 |                   | Glossaire                                    | `glossary`           |
 |                   | À propos                                     | `about`              |
 |                   | Notre démarche                               | `approach`           |
 |                   | Accueil                                      | `home`               |
+| 5 · Mots          | Mot `WRD_RACE`                               | `word-race`          |
 
 The three files of a page hold the same markup; the width alone changes the
 layout, through the same media and container queries the site uses. Long pages
@@ -81,6 +89,21 @@ are recorded whole, folded as the site folds them.
 | 2026-10-17 | [Brief 11, from the searched name to the self-name, one video, labelled sources](../briefs/11-result-page-self-name-handoff.md), approved 2026-10-17 by delegation | `search-peul`, `search-bassa` and `search-state-peul-fulbe-open` (new) for the hand-off, the video row and the period rule (also on `search-congo`); the labelled sources button on those and on `search-state-competing`, `search-state-thin`, `language-lingala`, `country-civ`, `country-state-civ-quaqua`; `Main` |
 | 2026-10-17 | [Brief 12, the unknown name, the « Fiches » lens and the consent strip](../briefs/12-unknown-name-fiches-lens-consent.md), approved 2026-10-17 by delegation | `search-unknown` (the invitation in the verdict, no empty shelf, no owed cards); `search-state-fiches` (new); `Main` (the fiche cards and the lens states, the consent strip at 430, 768 and 1440, closed and open, and over the first screen of `search-peul-430`) |
 | 2026-10-17 | Fixes from the art-direction review of briefs 10 to 12, approved with them by delegation | `search-unknown` (the Siwi and Tchad reasons restored as brief 1 approved them); the fold boards of brief 10 and their two state boards (each closed fold opens with « + »; on `country-civ` the naming-systems line folds with the 47 names); `country-state-civ-quaqua` (the readings stack below 1200 px); `search-state-fiches` (the lens bar drawn scrolled to « Fiches » at 430); `Main` (the locked consent switch in full ink, scale captions, the legend and lens-bar notes) |
+| 2026-10-18 | Brief 12 consent-strip order update, approved by the operator in chat on 2026-10-18; Claude canvas not synchronized | `Main` consent frames at 430, 768 and 1440 px, closed and open; quiet links before the answers in source order, above them on mobile and to their left from 768 px |
+| 2026-10-17 | [Brief 12](../briefs/12-unknown-name-fiches-lens-consent.md), approval record item 5: the consent strip reads and tabs in one order (WCAG 2.4.3), with the ETNI-2060 implementation; original order superseded by the 2026-10-18 update above | `Main` (originally, from 768 px the quiet pair followed « Refuser » and « Accepter » on the right; the reversed row was removed from the board layer of `ea-live.css`) |
+| 2026-10-18 | [Brief 6, the family-name fiche](../briefs/06-family-name.md) | `name-traore`, `name-state-thin-kollo` and `name-state-weak-sarr` (new); footer B now on `name-traore` too |
+| 2026-10-17 | The sources block renamed, approved by the operator in chat on 2026-10-17 (a wording change, no brief: the layout does not move). The eyebrow « Les sources parlent » goes; the question « Qui raconte le nom X ? » becomes « Les sources du nom X » (« Les sources des noms de ce peuple » on a fiche); the sentence under it counts sources, not accounts (« Plusieurs sources expliquent l'origine de ce nom. Voici leurs 4 récits, rangés par type de source. »). The rule behind it, no figure of style in a title, is in [`reader-facing-register.md`](../../../editorial/reader-facing-register.md) | every `search-*`, `people-*`, `language-*`, `family-*` and `country-*` board that draws the block; `Main` |
+| 2026-10-18 | The same rule on the timeline labels, under the operator's rule of 2026-10-17 (no figure of style on any page): « On remonte le temps » becomes « Du plus récent au plus ancien », « Pendant ce temps, ailleurs » becomes « Ailleurs à la même époque », « Naissance du nom X · origine la plus ancienne connue du projet » becomes « Origine la plus ancienne connue du nom X ». Off the boards, the header panel « Trois chemins » becomes « Menu » and « Le saviez-vous ? » becomes « À savoir » | every board that draws the timeline |
+| 2026-10-18 | [Brief 13, one search component and the search page](../briefs/13-search-entry.md) | `Main` (the search component in four states, the full-screen header search at 430, the dialog at 768); `search-entry` (new) |
+| 2026-10-18 | [Brief 14, the Atlas page « Les noms d'Afrique »](../briefs/14-atlas-names-page.md) | `atlas-names` (new, group « 0 · Atlas ») |
+| 2026-10-18 | [Brief 15, the result page tells each account once](../briefs/15-result-page-shorter.md) | `search-peul`, `search-bassa`, `search-congo`, `search-state-thin`, `search-state-competing`, `search-state-nodate`, `search-state-peul-fulbe-open` (« Voir aussi » under the verdict, one row of timeline controls, the accounts after the three most recent folded, the sources block as one list of sources); `search-state-long-traore` (new); `Main` |
+| 2026-10-18 | [Brief 7, the place fiche](../briefs/07-place.md) | `place-yamoussoukro` (the two accounts of the name change as « Hypothèse 1 » and « Hypothèse 2 » under the names, the family account apart, the story link, the fiche sources block, the closing band, « Poursuivre avec un autre nom ») |
+| 2026-10-19 | [Brief 8, the free-word page](../briefs/08-free-word.md) | `word-race` (new, group « 5 · Mots »): « Le mot race » at the proposed route /fr/atlas/mots/[slug], the twelve accounts with the brief 15 fold, the five origin hypotheses side by side, the related families, the sources listed once, the closing band and « Parcourir les mots » |
+| 2026-10-18 | [Brief 16, a misspelling that also finds related fiches](../briefs/16-typo-with-related-fiches.md), **approved 2026-10-18 by the operator** | `search-state-typo` (new): « tchikaya », the plain verdict of `search-unknown`, the accented choice Tchicaya as the page's one action, bordered in the accent ink, under it a note and the quiet link « Proposer une source », which wraps and which the note describes, « Aller plus loin »; the fiche Tchicaya is not listed again, so no fiches block and no filters; no video shelf, no sound-alike fiche; `Main` (the choice chip by day and by night, the invitation, the group heading in both numbers, the chip that names a form other than its fiche's filed name and its line, « jarra », which says only which fiche records the form; « tchikaya » with one choice, « konana » with two choices and a fiche found under a caution that says only that the search found it, and its « Fiches » filter, which keeps that caution and never says « lié »); a word a fiche writes in its text (« sanoh », a Kuranko clan) keeps the related-only page until the operator rules (DEC-075) |
+| 2026-10-18 | [Brief 17, the search chrome accessibility states](../briefs/17-search-chrome-accessibility.md), approved by the operator on 2026-10-18 | `search-unknown` and `search-state-typo` at 430/768/1440 (focus rings, « Aller plus loin » as a heading and list); new `search-unknown-320` and `search-unknown-215` (compact header, 200% zoom); `Main` (shared focus examples, the 320 px header, 14 px pills) |
+| 2026-10-18 | [Brief 18, related-only search results](../briefs/18-related-only-search-results.md), approved by the operator on 2026-10-18 | new `search-state-related` at 430/768/1440 (`bukasa`, the Mukasa fiche, factual singular title, no subtitle); `search-unknown` and `search-state-typo` (no origin eyebrow); `Main` (no-answer examples and both fiche title numbers) |
+| 2026-10-18 | [Brief 19, a recorded spelling answers the search](../briefs/19-recorded-search-term.md), approved by the operator for ETNI-2110 | `search-state-recorded` (new): « sanoh » with two equal fiches (Sanou and Kuranko), the spelling highlighted where each fiche records it, no source note, no « Cherchiez-vous… ? » lead |
+| 2026-10-18 | The name story of a fiche is titled once, « L'histoire des noms », approved by the operator in chat on 2026-10-18 (a wording change, no brief: the layout does not move). The eyebrow over the question « D'où viennent ces noms ? » goes, and the question with it; on the family boards, where the chapter already carries the title, only the question goes. The place boards drew it first (brief 7); this aligns the country and family boards and the code | `country-civ`, `country-state-civ-quaqua`, `country-state-shared-congo`, `country-state-thin-gab`, `family-bantu`, `family-mande` |
 
 The boards of a changed page no longer record v5.2.0: they are the approved
 target, and the code is behind them until the implementation lands.
@@ -132,3 +155,4 @@ a board and the live page seem to disagree.
   sticky header that captures stitch mid-page is drawn at the top.
 - Home: the hero copy widths (576 and 593 px), the seed pills' padding and the
   submit button's weight are measured values, not tokens.
+- 2026-10-18 — ETNI-2105, approved by the operator in chat: `name-traore` at 430, 768 and 1440 px (origin claim statuses shown in name-history periods; « Origine » points to the sourced name history in one sentence). See [Brief 6](../briefs/06-family-name.md).

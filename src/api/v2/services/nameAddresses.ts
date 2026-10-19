@@ -6,25 +6,23 @@ import { crawlableWordLabels } from "@/lib/productions/wordAnswer";
 import { nameAnswerSegment } from "@/lib/routing";
 import {
   addressSpellingOf,
+  addressedHistoryNames,
   buildNameAddressDirectory,
-  historyAddressSpelling,
 } from "@/lib/search/nameAddress";
 import {
   getAnsweredNameRows,
   type AnsweredNameRow,
 } from "@/lib/supabase/queries/afrik/nameAddressEntries";
 
-function spellingOf(row: AnsweredNameRow): string | undefined {
+function spellingsOf(row: AnsweredNameRow): string[] {
   const parsed = parseNameHistory(row.nameHistory);
-  return parsed.success
-    ? historyAddressSpelling(parsed.data, row.name)
-    : undefined;
+  return parsed.success ? addressedHistoryNames(parsed.data) : [];
 }
 
 /**
  * Every spelling that has a permanent address (REQ-200, DEC-074), one per
- * accent-and-case fold: the corpus forms that meet the crawler threshold,
- * then the published words of the production ledger.
+ * accent-and-case fold: the names the corpus histories tell that meet the
+ * crawler threshold, then the published words of the production ledger.
  *
  * One list for the sitemap, the address page and the search links, so the
  * three cannot disagree about which forms have an address or how each is
@@ -37,9 +35,7 @@ function spellingOf(row: AnsweredNameRow): string | undefined {
 // @req REQ-200
 export const getNameAddressSpellings = unstable_cache(
   async (): Promise<string[]> => {
-    const corpusSpellings = (await getAnsweredNameRows())
-      .map(spellingOf)
-      .filter((spelling): spelling is string => spelling !== undefined);
+    const corpusSpellings = (await getAnsweredNameRows()).flatMap(spellingsOf);
     const directory = buildNameAddressDirectory([
       ...corpusSpellings,
       ...crawlableWordLabels(),

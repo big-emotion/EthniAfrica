@@ -316,7 +316,7 @@
         "name": "Africains d'origine récente",
         "selfAppellation": "Variées selon les groupes d'origine",
         "exonyms": ["Migrants africains (terme descriptif)"],
-        "peopleId": "PPL_AFRICAINS_D_ORIGINE_RECENTE",
+        "peopleId": null,
         "mainRegion": "Zones urbaines, toutes les îles",
         "languages": [
           "Langues d'origine (wolof",
@@ -352,7 +352,7 @@
       "precolonial": "1456-1462 : Découverte des îles par les navigateurs portugais et génois. Nom donné : \"Ilhas de Cabo Verde\" (Îles du Cap Vert). 1462 : Début de la colonisation portugaise. Peuplement par les colons portugais et les esclaves africains (wolof, mandinka, balante, peul, bijagó). Formation d'une société créole métissée dès le XVe siècle.",
       "colonization": "XVIe-XVIIIe siècles : Les îles deviennent un centre majeur de la traite atlantique, notamment l'île de Santiago. Développement de Ribeira Grande comme centre commercial. Formation progressive de l'identité créole cap-verdienne. Période coloniale portugaise longue (1462-1975). XXe siècle : Développement du mouvement indépendantiste, formation du PAIGC (Parti africain pour l'indépendance de la Guinée et du Cap-Vert) en 1956.",
       "independenceStruggle": "1956-1975 : Lutte pour l'indépendance menée par le PAIGC (Parti africain pour l'indépendance de la Guinée et du Cap-Vert), dirigé par Amílcar Cabral. Lutte commune avec la Guinée-Bissau. 1975 : Indépendance du Cap-Vert (5 juillet 1975), proclamation de la République de Cabo Verde. Séparation du PAIGC en deux partis distincts (PAICV pour le Cap-Vert, PAIGC pour la Guinée-Bissau).",
-      "postIndependence": "1975-1990 : Régime de parti unique (PAICV). 1990 : Transition vers la démocratie multipartite, nouvelle constitution. Période de stabilité politique et de développement économique. Défis : pauvreté, dépendance aux importations, sécheresses récurrentes, émigration importante. Le Cap-Vert est considéré comme un modèle de démocratie et de stabilité en Afrique de l'Ouest. 2013 : Normalisation du nom officiel international en \"Cabo Verde\"."
+      "postIndependence": "1975-1990 : Régime de parti unique (PAICV). 1990 : Transition vers la démocratie multipartite, nouvelle constitution. Période de stabilité politique et de développement économique. Défis : pauvreté, dépendance aux importations, sécheresses récurrentes, émigration importante. Le Cap-Vert est considéré comme un modèle de démocratie et de stabilité en Afrique de l'Ouest. 2013 : Normalisation du nom officiel international en \"Cabo Verde\". Longtemps pays d'émigration, le Cap-Vert reçoit aussi de plus en plus d'immigrés, venus des pays voisins d'Afrique de l'Ouest, d'Europe et d'Asie. Selon l'enquête menée lors du recensement de 2021 par l'Autorité de l'immigration et l'Institut national de la statistique, 10 869 immigrés et étrangers vivent dans le pays, soit 2 % de la population, surtout dans les îles de Santiago, de Sal, de Boa Vista et de São Vicente."
     },
     "sources": [
       {
@@ -408,6 +408,13 @@
         "tier": "referenced",
         "source_kind": "press",
         "notes": "Article de presse relatant la demande de 2013 : le nom Cabo Verde n'est pas traduit dans les langues de l'ONU, la forme longue française étant République de Cabo Verde."
+      },
+      {
+        "title": "Answering the call: Cabo Verde's Local Immigration Units support migrants arriving by boat",
+        "url": "https://www.migrationpartnershipfacility.eu/news/answering-the-call-cabo-verdes-local-immigration-units-support-migrants-arriving-by-boat",
+        "tier": "referenced",
+        "source_kind": "intergovernmental",
+        "notes": "Page d'actualité de la Migration Partnership Facility, programme financé par l'Union européenne, 2024 ; lue le 18 octobre 2026. Elle cite l'enquête sur la population étrangère et immigrée (2022) menée par l'Autorité de l'immigration (AAI) et l'Institut national de la statistique (INE) du Cap-Vert à partir du recensement de 2021 : « 10,869 immigrants and foreigners residing in Cabo Verde, representing 2 per cent of the population », dont 44 % à Santiago, 21 % à Sal, 12 % à Boa Vista et 11 % à São Vicente."
       }
     ],
     "demographics": {
@@ -423,14 +430,6 @@
           "peopleId": "PPL_CREOLE_CABOVERDIEN",
           "region": "Toutes les îles du Cap-Vert",
           "languageFamily": "FLG_CREOLE"
-        },
-        {
-          "name": "Africains d'origine récente",
-          "population": 6000,
-          "referenceYear": 2025,
-          "percentageInCountry": 1,
-          "peopleId": "PPL_AFRICAINS_D_ORIGINE_RECENTE",
-          "region": ""
         }
       ]
     }

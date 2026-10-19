@@ -31,13 +31,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une notice rédigée par un membre d'un site communautaire rapproche Farah de l'arabe فرح, « joie, bonheur », et de la racine fariḥa, « être heureux ». Elle donne Faarax comme forme somalie. Cette explication reste une hypothèse : nous n'avons pas encore vérifié directement le dictionnaire imprimé qu'elle cite.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["farah-behindthename"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -187,6 +182,26 @@
                 "source_kind": "archive",
                 "page": "p. 57 et p. 114",
                 "notes": "Londres, Longman, Brown, Green et Longmans, 1856. Lu le 13 octobre 2026 sur l'exemplaire numérisé d'archive.org (bibliothèque de l'université Harvard, numérisation Google). Page 57 : « at Zayla I was shown a Bedouin, by name Farih Badaun ». Page 114, note : « Their names also are generally derived from their Pagan ancestors […] Men are called Rirash, Igah, Beuh, Fahi, Samattar, Farih, Madar… » ; la note suit un passage sur les Somal. Burton voyage en 1854-1855."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une notice rédigée par un membre d'un site communautaire rapproche Farah de l'arabe فرح, « joie, bonheur », et de la racine fariḥa, « être heureux ». Elle donne Faarax comme forme somalie. Cette explication reste une hypothèse : nous n'avons pas encore vérifié directement le dictionnaire imprimé qu'elle cite.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Farah",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.behindthename.com/name/farah",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Behind the Name, notice consultée intégralement le 2 septembre 2026. Elle donne le script arabe فرح, le sens « joy, happiness », la racine fariḥa et la forme somalie Faarax, en renvoyant au dictionnaire de Hans Wehr (1979, p. 822). Le dictionnaire cité n'a pas été consulté directement."
               }
             ]
           }

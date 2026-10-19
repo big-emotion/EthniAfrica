@@ -23,18 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le Dictionary of American Family Names décrit Nwachukwu comme un nom personnel igbo signifiant « enfant de Dieu ». Nkamigbo atteste séparément Nwachukwu comme résultat contemporain d'une substitution où certains porteurs abandonnent un élément ancien et ajoutent chukwu.",
-        "claimStatus": "established",
-        "sourceRefs": ["hanks-nwachukwu", "nkamigbo-2019-igbo-names"]
-      },
-      {
-        "claim": "Une étude des noms igbo explique que chi et chukwu, dans un nom, renvoient à un être supérieur, le plus haut des dieux que reconnaissent les Igbo.",
-        "claimStatus": "established",
-        "sourceRefs": ["asadu-nzuanke-2014-chi-names"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -207,6 +197,56 @@
                 "source_kind": "academic",
                 "page": "p. 174",
                 "notes": "Journal of Linguistics, Language and Culture, vol. 6, no 1, 2019, p. 158-178. Section « Name dropping » : « People who answered Nweke or Nwaagwụ will drop the eke or agwụ and add chukwu hence, Nwachukwu », un changement que l'autrice attribue à l'influence du christianisme. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le Dictionary of American Family Names décrit Nwachukwu comme un nom personnel igbo signifiant « enfant de Dieu ». Nkamigbo atteste séparément Nwachukwu comme résultat contemporain d'une substitution où certains porteurs abandonnent un élément ancien et ajoutent chukwu.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Nwachukwu Name Meaning and Nwachukwu Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=nwachukwu",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Entrée Nwachukwu du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch. Elle donne Nwachukwu comme un nom personnel igbo du Nigeria signifiant « God's child », « l'enfant de Dieu », et renvoie à l'entrée Chukwu. Lu le 11 octobre 2026."
+              },
+              {
+                "title": "The Sociolinguistics of Igbo Personal Names",
+                "author": "Linda Chinelo Nkamigbo",
+                "year": 2019,
+                "url": "https://www.nigerianjournalsonline.org/index.php/JOLLC/article/download/4155/3899/7523",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 166",
+                "notes": "Journal of Linguistics, Language and Culture, vol. 6, no 1, 2019, p. 158-178. Section « Market day names » : nwa y est glosé « child », dans le modèle des noms de jours de marché. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une étude des noms igbo explique que chi et chukwu, dans un nom, renvoient à un être supérieur, le plus haut des dieux que reconnaissent les Igbo.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Onomastics and Translation: The Case of Igbo→English Translation of Chi Names",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.ajol.info/index.php/lwati/article/view/119750",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Oluchukwu Asadu et Samson Fabian Nzuanke, Lwati: A Journal of Contemporary Research, vol. 11, no 3, 2014, p. 122-140 ; résumé lu sur la page de la revue. Les éléments chi et chukwu des noms igbo y renvoient à un être supérieur, le plus haut des dieux que reconnaissent les Igbo. L'étude porte sur les noms de trente étudiants de l'université Nnamdi Azikiwe, à Awka ; elle ne traite pas des noms de famille."
               }
             ]
           }

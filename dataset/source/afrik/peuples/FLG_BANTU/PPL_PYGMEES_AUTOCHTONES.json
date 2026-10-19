@@ -16,7 +16,7 @@
         "Aka (variante pour les Baka du Congo)"
       ],
       "spellingAliases": ["Pigmée", "Pigmées"],
-      "originOfExonyms": "Le terme Pygmees viendrait du grec pyrgme, qui désigne une mesure de longueur (de la phalange au coude), utilisée dans les textes antiques pour designer des peuples de petite taille. Herodote (~500 av. J.-C.) mentionne des Pygmees en Afrique de l'Ouest. Le terme a ete recupere par l'anthropologie coloniale au XIXe siecle pour designer l'ensemble des chasseurs-cueilleurs forestiers d'Afrique centrale.",
+      "originOfExonyms": "Le mot Pygmée vient du latin Pygmaei, lui-même tiré du grec pugmaios, « homme grand comme le poing », de pugmê, le poing, puis la coudée, selon le Dictionnaire de l'Académie française. Chez Homère, il désigne déjà un peuple de légende, haut d'une coudée, que les grues attaquent en migrant, selon l'anthropologue Serge Bahuchet. À la fin du XIXe siècle, des explorateurs l'ont donné à des peuples de petite taille d'Afrique centrale, dont les chasseurs-cueilleurs des forêts, selon le même dictionnaire.",
       "whyProblematic": "Le terme Pygmee est considere comme devalorisant et colonial. Il est percu comme un attribut physique reducteur et nie l'identite culturelle et ethnique propre a chaque groupe. Il a ete utilise historiquement pour justifier discrimination et exclusion sociale. Les organisations de droits des peuples autochtones (Forest Peoples Programme, IWGIA) recommandent d'utiliser les noms propres de chaque groupe : Baka, Bagyeli, Bedzan, Aka, Mbuti, etc.",
       "contemporaryUsage": "Le terme Pygmee est progressivement abandonne au profit des auto-appellations specifiques. Au Cameroun, les termes officiels et militants privilegient Peuples autochtones ou Chasseurs-cueilleurs forestiers. Les organisations internationales (ONU, UNESCO, Greenpeace Afrique) utilisent Peuples autochtones.",
       "linguisticFamily": "Bantou (langues baka et bagyeli), avec influences de langues du bassin du Congo",
@@ -97,7 +97,7 @@
         "tier": "needs_review"
       },
       {
-        "title": "Gardiens de la foret : les Baka et l'esprit vivant du Dja – UNESCO, 2025",
+        "title": "Gardiens de la forêt : les Baka et l'esprit vivant du Dja",
         "url": "https://www.unesco.org/fr/articles/gardiens-de-la-foret-les-baka-et-lesprit-vivant-du-dja",
         "tier": "official",
         "source_kind": "intergovernmental"
@@ -108,7 +108,7 @@
         "tier": "needs_review"
       },
       {
-        "title": "Les Baka : Territoires et Modes de Vie Traditionnels – IWGIA, Pyhala Aili",
+        "title": "Quel avenir pour les Baka ? Droits et moyens de subsistance des peuples autochtones dans le Sud-Est du Cameroun",
         "url": "https://iwgia.org/images/publications/0584_informe_13_fre_opt.pdf",
         "tier": "official",
         "source_kind": "ngo"
@@ -125,6 +125,548 @@
         "tier": "referenced",
         "source_kind": "linguistic_reference",
         "notes": "Atteste la graphie ancienne « pigmée »."
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le mot Pygmée réunit, de l'extérieur, plusieurs peuples des forêts d'Afrique centrale ; ce n'est pas le nom d'un peuple. Cette fiche parle de ceux du Cameroun et des pays voisins : les Baka, les Bedzan et les Bagyeli, qui se nomment eux-mêmes Bagyeli ou Bakola selon les régions. Le mot vient d'une légende grecque, et des Européens l'ont appliqué à ces peuples ; on lui préfère aujourd'hui le nom de chaque peuple ou l'expression « peuples autochtones ». Les sources que nous avons lues ne disent pas comment les Baka et les Bedzan se nomment eux-mêmes. Nous présentons plus bas l'histoire de ces noms.",
+    "names": [
+      {
+        "nameText": "Bagyeli",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "gyi",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Bagyeli du centre et du sud de leur pays, au Cameroun.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Aujourd'hui"
+            },
+            "era": "modern",
+            "statement": "Le nom Bagyeli est celui que se donnent, avec leur langue, les gens du centre et du sud de la région où l'on parle cette langue, au Cameroun ; au nord, ils se disent Bakola. On l'écrit aussi Bagyele, Bajele, Gyele, Bogyiel ou Bagieli, selon l'équipe du programme DOBES qui documente cette langue.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bagyeli/Bakola — Language",
+                "author": "Projet DOBES Bagyeli/Bakola (Emmanuel Ngué Um, Daniel Duke, Nadine Borchardt)",
+                "year": null,
+                "url": "https://dobes.mpi.nl/projects/bakola/language/",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Page du programme DOBES de documentation des langues menacées, hébergé par l'Institut Max Planck de psycholinguistique ; lue le 18 octobre 2026, sans date de publication. Le projet a travaillé sur place de 2010 à 2012, d'après les légendes des photos."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Bagyeli et le nom Bakola désignent, dans le tableau des chercheurs Marine Robillard et Serge Bahuchet, un seul peuple du Cameroun d'environ 4 000 personnes. Ils jugent d'ailleurs discutable la distinction entre Bagyeli et Bakola.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les Pygmées et les autres : terminologie, catégorisation et politique",
+                "author": "Marine Robillard et Serge Bahuchet",
+                "year": 2012,
+                "url": "https://journals.openedition.org/africanistes/4253",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "tableau 1 et note 3",
+                "notes": "Journal des africanistes, 82 (1-2), 2012 ; lu le 18 octobre 2026 sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée ; les paragraphes sont numérotés dans la marge."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bakola",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "gyi",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Bagyeli du nord de leur pays, au Cameroun.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Aujourd'hui"
+            },
+            "era": "modern",
+            "statement": "Le nom Bakola est celui que se donnent, avec leur langue, les gens du nord de la région où l'on parle le gyeli, au Cameroun, selon l'équipe du programme DOBES qui documente cette langue. Plus au sud, les mêmes gens se disent Bagyeli.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bagyeli/Bakola — Language",
+                "author": "Projet DOBES Bagyeli/Bakola (Emmanuel Ngué Um, Daniel Duke, Nadine Borchardt)",
+                "year": null,
+                "url": "https://dobes.mpi.nl/projects/bakola/language/",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Page du programme DOBES de documentation des langues menacées, hébergé par l'Institut Max Planck de psycholinguistique ; lue le 18 octobre 2026, sans date de publication. Le projet a travaillé sur place de 2010 à 2012, d'après les légendes des photos."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Pygmée",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "grc",
+        "namedBy": "Des voyageurs et des savants européens, d'après une légende grecque",
+        "shortLine": "Un mot venu d'une légende grecque, appliqué par des Européens à ces peuples ; beaucoup le jugent blessant.",
+        "periodLabel": "Écrit depuis 1625 pour ces peuples ; contesté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Pygmée est jugé péjoratif par beaucoup de gens, dont une grande partie des peuples concernés, selon le rapport d'Aili Pyhälä sur les Baka. Il fait croire à une seule culture pygmée et efface la diversité de ces peuples ; le terme le plus juste, écrit-elle, est le nom de chaque peuple, comme Baka, Bagyeli, Aka ou Mbuti.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Quel avenir pour les Baka ? Droits et moyens de subsistance des peuples autochtones dans le Sud-Est du Cameroun",
+                "author": "Aili Pyhälä",
+                "year": 2012,
+                "url": "https://iwgia.org/images/publications/0584_informe_13_fre_opt.pdf",
+                "tier": "official",
+                "source_kind": "ngo",
+                "page": "p. 14, note 3",
+                "notes": "IWGIA, Plan Finlande et Plan Cameroun, rapport 13, 2012, traduit de l'anglais par Madeleine Pérusse. Lu le 18 octobre 2026 ; la page a été vérifiée sur l'image du PDF."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Pygmée est, pour Marine Robillard et Serge Bahuchet, un mot « artificiellement créé par les Européens durant le 19e siècle ». Il réunit des peuples que leurs gènes, leurs langues et leurs cultures distinguent ; les explorateurs les appelaient d'ailleurs aussi bien nains, dwarfs ou Zwerge.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Les Pygmées et les autres : terminologie, catégorisation et politique",
+                "author": "Marine Robillard et Serge Bahuchet",
+                "year": 2012,
+                "url": "https://journals.openedition.org/africanistes/4253",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 3 et § 6",
+                "notes": "Journal des africanistes, 82 (1-2), 2012 ; lu le 18 octobre 2026 sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée ; les paragraphes sont numérotés dans la marge."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2011,
+              "to": 2011,
+              "label": "2011"
+            },
+            "era": "modern",
+            "statement": "Le nom Pygmée est interdit en république du Congo par la loi du 25 février 2011 sur les droits des populations autochtones : son emploi y est assimilé à une injure punie par le Code pénal.",
+            "aspect": "usage",
+            "formAsWritten": "pygmée",
+            "sources": [
+              {
+                "title": "Loi n° 5-2011 du 25 février 2011 portant promotion et protection des droits des populations autochtones",
+                "author": "République du Congo",
+                "year": 2011,
+                "url": "https://faolex.fao.org/docs/pdf/con105791.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 315",
+                "notes": "Journal officiel de la République du Congo n° 9, 3 mars 2011, p. 315-318, article premier. Lu dans la copie de la base FAOLEX de la FAO le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1889,
+              "label": "1888-1889"
+            },
+            "statement": "Le nom Pygmée gagne le Cameroun à la fin des années 1880. Kund, qui délimite la frontière en 1888-1889, puis Curt von Morgen en 1889 rencontrent des « Pygmées » près de la côte, et Crampel en voit dans l'intérieur, sur le Ntem, en 1888, selon Serge Bahuchet. Il y reconnaît les Gyeli ou Kola du sud-ouest et les Baka du sud-est du pays.",
+            "sources": [
+              {
+                "title": "L'invention des Pygmées",
+                "author": "Serge Bahuchet",
+                "year": 1993,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1993_num_33_129_2078",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 163 et note 28",
+                "notes": "Cahiers d'études africaines, 33 (129), 1993, p. 153-181. Lu sur Persée le 18 octobre 2026, page par page ; les numéros sont ceux de la revue imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1870,
+              "to": 1873,
+              "label": "1870, récit publié en 1873"
+            },
+            "era": "polity",
+            "statement": "Le nom Pygmée est donné à un peuple vivant par l'explorateur allemand Georg Schweinfurth, qui rencontre des Akka en 1870 à la cour de Mounza, roi des Mangbetu. Il propose d'employer ce mot, « dans le sens d'Aristote », pour « les races naines d'Afrique équatoriale ». Pour Serge Bahuchet, puis pour Marine Robillard et lui, c'est là le premier emploi du terme pour ces peuples.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "The Heart of Africa: Three Years' Travels and Adventures in the Unexplored Regions of Central Africa, from 1868 to 1871, vol. II",
+                "author": "Georg Schweinfurth",
+                "year": 1874,
+                "url": "https://archive.org/details/heartofafrica02schw_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 126-127",
+                "notes": "New York, Harper & Brothers, 1874, traduction anglaise d'Ellen E. Frewer. Lu dans la numérisation d'Internet Archive le 18 octobre 2026 ; la page 126 a été vérifiée sur l'image."
+              },
+              {
+                "title": "L'invention des Pygmées",
+                "author": "Serge Bahuchet",
+                "year": 1993,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1993_num_33_129_2078",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 153 et p. 163",
+                "notes": "Cahiers d'études africaines, 33 (129), 1993, p. 153-181. Lu sur Persée le 18 octobre 2026, page par page ; les numéros sont ceux de la revue imprimée."
+              },
+              {
+                "title": "Les Pygmées et les autres : terminologie, catégorisation et politique",
+                "author": "Marine Robillard et Serge Bahuchet",
+                "year": 2012,
+                "url": "https://journals.openedition.org/africanistes/4253",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 3",
+                "notes": "Journal des africanistes, 82 (1-2), 2012 ; lu le 18 octobre 2026 sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée ; les paragraphes sont numérotés dans la marge."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1694,
+              "to": 1694,
+              "label": "1694"
+            },
+            "statement": "Le nom Pygmée désigne en français, en 1694, un « petit homme qui n'a qu'une coudée de hauteur » ; selon les Anciens, les Pygmées combattaient les grues, d'après le Dictionnaire de l'Académie française.",
+            "sources": [
+              {
+                "title": "Dictionnaire de l'Académie française, 1re édition, entrée « pygmée »",
+                "author": "Académie française",
+                "year": null,
+                "url": "https://www.dictionnaire-academie.fr/article/A1P0524",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "tome 2, p. 346",
+                "notes": "Entrée lue sur le site du Dictionnaire de l'Académie française le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1625,
+              "to": 1625,
+              "label": "1625"
+            },
+            "era": "polity",
+            "statement": "Le nom Pygmée apparaît, sous la forme anglaise Pigmy, dans une note que l'éditeur anglais Samuel Purchas ajoute en 1625 au récit du marin Andrew Battell : il y parle de « Pigmy Pongo-killers », des Pygmées tueurs de pongos, c'est-à-dire de gorilles. Battell décrit dans le même récit les Matimbas, un « petit peuple » de chasseurs du pays de Loango, dont les femmes tuent les pongos à l'arc. C'est la plus ancienne trace de ce nom pour des peuples d'Afrique centrale que le projet connaît. Ces peuples existaient bien avant lui.",
+            "formAsWritten": "Pigmy",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Strange Adventures of Andrew Battell of Leigh, in Angola and the Adjoining Regions",
+                "author": "Andrew Battell, édité par E. G. Ravenstein",
+                "year": 1901,
+                "url": "https://archive.org/details/strangeadventure00battrich",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 55 et p. 59",
+                "notes": "Londres, Hakluyt Society, 1901. Réédition du récit que Samuel Purchas publie en 1625 dans Purchas his Pilgrimes, avec les notes que Purchas met dans la marge. Lu dans la numérisation d'Internet Archive le 18 octobre 2026 ; les pages 55 et 59 ont été vérifiées sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Antiquité grecque"
+            },
+            "statement": "Le nom Pygmée désigne d'abord, dans l'Iliade d'Homère, un peuple de légende, haut d'une coudée, que les grues attaquent en migrant, selon Serge Bahuchet. Plus tard, le philosophe grec Aristote place les Pygmées aux sources du Nil et affirme qu'ils ne sont pas une fable.",
+            "before": true,
+            "sources": [
+              {
+                "title": "L'invention des Pygmées",
+                "author": "Serge Bahuchet",
+                "year": 1993,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1993_num_33_129_2078",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 153-154",
+                "notes": "Cahiers d'études africaines, 33 (129), 1993, p. 153-181. Lu sur Persée le 18 octobre 2026, page par page ; les numéros sont ceux de la revue imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Pygmée vient du latin Pygmaei, lui-même tiré du grec pugmaios, « homme grand comme le poing, nain », de pugmê, le poing, puis la coudée, selon le Dictionnaire de l'Académie française. Le mot renvoie donc à la taille, comme le rappellent Marine Robillard et Serge Bahuchet.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionnaire de l'Académie française, 9e édition, entrée « pygmée »",
+                "author": "Académie française",
+                "year": null,
+                "url": "https://www.dictionnaire-academie.fr/article/A9P5144",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue sur le site du Dictionnaire de l'Académie française le 18 octobre 2026."
+              },
+              {
+                "title": "Les Pygmées et les autres : terminologie, catégorisation et politique",
+                "author": "Marine Robillard et Serge Bahuchet",
+                "year": 2012,
+                "url": "https://journals.openedition.org/africanistes/4253",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 6",
+                "notes": "Journal des africanistes, 82 (1-2), 2012 ; lu le 18 octobre 2026 sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée ; les paragraphes sont numérotés dans la marge."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Négrilles",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "E.-T. Hamy, devant la Société d'anthropologie de Paris",
+        "shortLine": "Un nom savant proposé à Paris en 1879, tiré du mot « nègre ».",
+        "periodLabel": "Écrit depuis 1879 ; ancien",
+        "accounts": [
+          {
+            "period": {
+              "from": 1879,
+              "to": 1879,
+              "label": "1879"
+            },
+            "statement": "Le nom Négrilles est un diminutif du mot « nègre », que Hamy choisit pour deux raisons : il rappelle la petite taille commune à ces peuples, et il ressemble au mot négrito, alors employé pour des peuples d'Asie du Sud-Est et d'Océanie.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Essai de coordination des matériaux récemment recueillis sur l'ethnologie des négrilles ou pygmées de l'Afrique équatoriale",
+                "author": "E.-T. Hamy",
+                "year": 1879,
+                "url": "https://www.persee.fr/doc/bmsap_0301-8644_1879_num_2_1_5206",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 100",
+                "notes": "Bulletins de la Société d'anthropologie de Paris, tome 2, 1879, p. 79-101, séance du 5 février 1879. Lu sur Persée le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1879,
+              "to": 1879,
+              "label": "5 février 1879"
+            },
+            "statement": "Le nom Négrilles apparaît dans une communication de E.-T. Hamy à la Société d'anthropologie de Paris : il le propose « pour désigner cet ensemble ethnique », les peuples de petite taille de l'Afrique équatoriale. C'est la plus ancienne trace de ce nom que le projet connaît. Ces peuples existaient bien avant lui.",
+            "formAsWritten": "négrilles",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Essai de coordination des matériaux récemment recueillis sur l'ethnologie des négrilles ou pygmées de l'Afrique équatoriale",
+                "author": "E.-T. Hamy",
+                "year": 1879,
+                "url": "https://www.persee.fr/doc/bmsap_0301-8644_1879_num_2_1_5206",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 100",
+                "notes": "Bulletins de la Société d'anthropologie de Paris, tome 2, 1879, p. 79-101, séance du 5 février 1879. Lu sur Persée le 18 octobre 2026."
+              },
+              {
+                "title": "L'invention des Pygmées",
+                "author": "Serge Bahuchet",
+                "year": 1993,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1993_num_33_129_2078",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 164",
+                "notes": "Cahiers d'études africaines, 33 (129), 1993, p. 153-181. Lu sur Persée le 18 octobre 2026, page par page ; les numéros sont ceux de la revue imprimée."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Quatre B",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Un nom employé au Cameroun pour les Baka, les Bagyeli, les Bakola et les Bedzan, à la place de Pygmée.",
+        "periodLabel": "Écrit depuis 2012",
+        "accounts": [
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Quatre B apparaît, sous les formes « BBBB » et « quatre B », chez Marine Robillard et Serge Bahuchet : au Cameroun, où le mot Pygmée est contesté, on désigne ainsi l'ensemble formé par les Baka, les Bagyeli, les Bakola et les Bedzan. C'est la plus ancienne trace de ce nom que le projet connaît. Ces peuples existaient bien avant lui.",
+            "formAsWritten": "BBBB",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les Pygmées et les autres : terminologie, catégorisation et politique",
+                "author": "Marine Robillard et Serge Bahuchet",
+                "year": 2012,
+                "url": "https://journals.openedition.org/africanistes/4253",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 5",
+                "notes": "Journal des africanistes, 82 (1-2), 2012 ; lu le 18 octobre 2026 sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée ; les paragraphes sont numérotés dans la marge."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Peuples autochtones",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Le nom qu'emploient aujourd'hui des lois, des ONG et l'UNESCO, à la place de Pygmée.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "2025"
+            },
+            "era": "modern",
+            "statement": "Le nom peuples autochtones est celui qu'emploie l'UNESCO en 2025 pour les Baka : « des peuples autochtones semi-nomades vivant dans la forêt », au Cameroun, au Gabon et en république du Congo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Gardiens de la forêt : les Baka et l'esprit vivant du Dja",
+                "author": "UNESCO",
+                "year": 2025,
+                "url": "https://www.unesco.org/fr/articles/gardiens-de-la-foret-les-baka-et-lesprit-vivant-du-dja",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "Article publié le 30 septembre 2025 et mis à jour le 10 novembre 2025, sans auteur indiqué ; lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "2012"
+            },
+            "era": "modern",
+            "statement": "Le nom peuples autochtones remplace peu à peu le mot Pygmée, qui disparaît des publications, selon Marine Robillard et Serge Bahuchet. On emploie à sa place des périphrases, comme « chasseurs-cueilleurs », et depuis peu « autochtones ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les Pygmées et les autres : terminologie, catégorisation et politique",
+                "author": "Marine Robillard et Serge Bahuchet",
+                "year": 2012,
+                "url": "https://journals.openedition.org/africanistes/4253",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 2",
+                "notes": "Journal des africanistes, 82 (1-2), 2012 ; lu le 18 octobre 2026 sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée ; les paragraphes sont numérotés dans la marge."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2011,
+              "to": 2011,
+              "label": "2011"
+            },
+            "era": "modern",
+            "statement": "Le nom populations autochtones est celui que retient la loi congolaise du 25 février 2011. Elle désigne ainsi les populations qui se distinguent des autres par leur identité culturelle, leur mode de vie et leur extrême vulnérabilité.",
+            "aspect": "usage",
+            "formAsWritten": "populations autochtones",
+            "sources": [
+              {
+                "title": "Loi n° 5-2011 du 25 février 2011 portant promotion et protection des droits des populations autochtones",
+                "author": "République du Congo",
+                "year": 2011,
+                "url": "https://faolex.fao.org/docs/pdf/con105791.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 315",
+                "notes": "Journal officiel de la République du Congo n° 9, 3 mars 2011, p. 315-318, article premier. Lu dans la copie de la base FAOLEX de la FAO le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": null,
+              "label": "Depuis 2003"
+            },
+            "era": "modern",
+            "statement": "Le nom peuples autochtones s'applique à ces peuples dans les instances internationales depuis 2003. Cette année-là, l'Union africaine examine les droits des populations autochtones en Afrique. Des représentants des Batwa et d'autres peuples dits pygmées participent aussi, depuis 2003, au groupe de travail des Nations unies sur les questions autochtones, à l'insistance du Groupe de travail international sur les affaires autochtones (IWGIA), selon Marine Robillard et Serge Bahuchet.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les Pygmées et les autres : terminologie, catégorisation et politique",
+                "author": "Marine Robillard et Serge Bahuchet",
+                "year": 2012,
+                "url": "https://journals.openedition.org/africanistes/4253",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 77 et § 86",
+                "notes": "Journal des africanistes, 82 (1-2), 2012 ; lu le 18 octobre 2026 sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée ; les paragraphes sont numérotés dans la marge."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1880,
+              "to": 1880,
+              "label": "1880"
+            },
+            "statement": "Le nom peuples autochtones reprend un mot déjà appliqué à ces peuples en 1880 : selon l'explorateur Lenz, cité dans Les Peuples de l'Afrique de Hartmann, ils seraient les restes d'un peuple qui est « peut-être le vrai peuple primitif, autochtone, de l'Afrique équatoriale », repoussé et dispersé par des tribus venues après lui. Serge Bahuchet rapporte ce passage.",
+            "sources": [
+              {
+                "title": "L'invention des Pygmées",
+                "author": "Serge Bahuchet",
+                "year": 1993,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1993_num_33_129_2078",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 165",
+                "notes": "Cahiers d'études africaines, 33 (129), 1993, p. 153-181. Lu sur Persée le 18 octobre 2026, page par page ; les numéros sont ceux de la revue imprimée."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

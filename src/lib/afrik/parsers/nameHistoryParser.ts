@@ -86,6 +86,7 @@ const actorSchema = z
 // search sheet find the meaning, the imposition and today's usage again
 // (REQ-190, REQ-191) without guessing from prose.
 const ACCOUNT_ASPECTS = ["meaning", "imposition", "usage"] as const;
+const CLAIM_STATUSES = ["claimed", "contested", "established"] as const;
 
 // The great era of the territory an account is about, at its period. A date
 // alone cannot tell it: Saint-Louis was French long before 1885, and Ethiopia
@@ -104,7 +105,12 @@ const accountSchema = z
         error: `era must be one of ${NAME_HISTORY_ERAS.join(", ")}`,
       })
       .optional(),
+    accountKind: z.enum(["family"]).optional(),
     statement: z.string().trim().min(1),
+    claimStatus: z.enum(CLAIM_STATUSES).optional(),
+    carrier: z.string().trim().min(1).optional(),
+    collection: z.enum(["direct", "mediated", "not-stated"]).optional(),
+    collector: z.string().trim().min(1).optional(),
     aspect: z
       .enum(ACCOUNT_ASPECTS, {
         error: `aspect must be one of ${ACCOUNT_ASPECTS.join(", ")}`,
@@ -187,6 +193,7 @@ const nameSchema = z
     // Another spelling of a name rather than a name of its own (Masai for
     // Maasai): the distinction the retired `historical_spelling` type made.
     variantSpelling: z.literal(true).optional(),
+    equivalents: z.array(z.string().trim().min(1)).optional(),
     accounts: z.array(accountSchema),
   })
   .strict()
@@ -220,6 +227,7 @@ const nameSchema = z
 export const nameHistorySchema = z
   .object({
     summary: z.string().trim().min(1),
+    originExplained: z.boolean().default(true),
     // No source gives the name some peoples use for themselves (Shua,
     // ǂHoan). The block says so rather than marking an outside name as
     // self-given; the validator then refuses any self-given name beside it.

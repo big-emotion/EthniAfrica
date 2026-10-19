@@ -13,13 +13,25 @@
  * self-given form first, the order `readNaming` builds.
  */
 
-const fold = (text: string): string =>
-  text.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase().trim();
+import { normalizeString } from "@/lib/normalize";
+import { foldNameForm } from "@/lib/search/nameAddress";
+
+type Fold = (text: string) => string;
+
+/**
+ * The shared comparison fold, so « Fulbe » finds « Fulɓe » here as it does in
+ * the subject selection. A form leads because the reader searched it; the
+ * fold compares and never decides which form comes first.
+ */
+const comparisonFold: Fold = (text) => normalizeString(text).trim();
 
 /**
  * Whether a form answers to what the reader typed. A fiche files one name in
  * several shapes — « Fulɓe · Pullo », « Fulbe (pluriel), Pullo (singulier) » —
  * so each part is compared, without its parenthesised gloss.
+ *
+ * It judges one form alone, so the fold makes « Kono » answer to « Kɔnɔ ». To
+ * tell which of a subject's forms the reader searched, use `searchedAmong`.
  */
 // @req REQ-178
 export function answersToSearch(form: string, searched?: string): boolean {
@@ -29,12 +41,24 @@ export function answersToSearch(form: string, searched?: string): boolean {
 /**
  * The part of a recorded form the reader typed, spelled as the fiche spells
  * it: « Fulani » for « fulani ». Where the reader searched, it titles the
- * page rather than the filed label (doctrine §1.1).
+ * page rather than the filed label (doctrine §1.1). A part spelt as typed, up
+ * to accents and case, wins over one only the comparison fold reaches.
  */
 // @req REQ-178
 export function searchedFormIn(
   forms: ReadonlyArray<{ form: string }>,
   searched?: string
+): string | undefined {
+  return (
+    partIn(forms, searched, foldNameForm) ??
+    partIn(forms, searched, comparisonFold)
+  );
+}
+
+function partIn(
+  forms: ReadonlyArray<{ form: string }>,
+  searched: string | undefined,
+  fold: Fold
 ): string | undefined {
   const target = searched ? fold(searched) : "";
   if (!target) return undefined;
@@ -47,6 +71,27 @@ export function searchedFormIn(
     if (part) return part;
   }
   return undefined;
+}
+
+/**
+ * Which of one subject's forms the reader searched. A form spelt as typed, up
+ * to accents and case, is the one; the comparison fold decides only when the
+ * subject writes no such form. So « Fulbe » still reaches « Fulɓe » on a
+ * subject that writes no « Fulbe », but « Kono » marks « Kono » alone and
+ * leaves « Kɔnɔ » a spelling of its own: the fold reaches a name, it never
+ * stands in for the spelling the reader typed (REQ-135, doctrine §1.1).
+ */
+// @req REQ-135
+export function searchedAmong(
+  forms: readonly string[],
+  searched?: string
+): (form: string) => boolean {
+  const fold = forms.some(
+    (form) => partIn([{ form }], searched, foldNameForm) !== undefined
+  )
+    ? foldNameForm
+    : comparisonFold;
+  return (form) => partIn([{ form }], searched, fold) !== undefined;
 }
 
 /**
@@ -72,6 +117,8 @@ export function orderForSearch<T extends { selfGiven?: boolean | null }>(
  * What the page says under its heading when the reader searched another name
  * than the self-given one: the query as typed, and the first self-given form.
  * Nothing when the fiche records no self-given form or the reader typed it.
+ * « Typed it » follows `searchedAmong`, as the names block does: « Kɔnɔ »
+ * still leads to the self-given « Kono » on a fiche that writes both.
  */
 // @req REQ-178
 export function selfNameLead(
@@ -82,7 +129,10 @@ export function selfNameLead(
   if (!query) return undefined;
   const selfGiven = names.filter((name) => name.selfGiven === true);
   if (selfGiven.length === 0) return undefined;
-  if (selfGiven.some((name) => answersToSearch(name.form, query)))
-    return undefined;
+  const isSearched = searchedAmong(
+    names.map(({ form }) => form),
+    query
+  );
+  if (selfGiven.some((name) => isSearched(name.form))) return undefined;
   return { searched: query, self: selfGiven[0].form };
 }

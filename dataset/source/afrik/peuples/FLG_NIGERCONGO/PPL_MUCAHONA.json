@@ -13,25 +13,26 @@
       "contemporaryUsage": "Le terme Hakaona est privilegie dans la litterature anglophone recente. Mucahona reste en usage dans les sources de langue portugaise et angolaises. Le terme Mucawana apparait frequemment dans les recits de voyageurs visitant la region d'Oncocua.",
       "linguisticFamily": "FLG_NIGERCONGO",
       "ethnoLinguisticGroup": "Herero (sous-groupe bantou)",
-      "historicalRegion": "Sud-Ouest Angola (province de Cunene)",
+      "historicalRegion": "Sud-ouest de l'Angola : municipalité de Virei, dans la province du Namibe, selon une dépêche de l'agence Lusa (2022) ; région d'Oncocua, dans la province du Cunene, selon des sites de voyage",
       "currentCountries": ["AGO"]
     },
     "ethnicities": ["Hakaona", "Ovahakaona"],
     "origins": {
-      "ancientOrigins": "Les Mucahona sont un sous-groupe des Herero, peuple bantou d'Afrique australe. Comme les autres groupes Herero d'Angola (Himba, Kuvale, Zemba), ils sont issus des migrations bantoues qui ont atteint l'Afrique du Sud-Ouest entre le XVe et le XVIIIe siecle. Leur territoire autour d'Oncocua est isole par les deserts et les montagnes du reste du pays, ce qui a preserve leur mode de vie traditionnel.",
+      "ancientOrigins": "Les Mucahona sont un sous-groupe des Herero, peuple bantou d'Afrique australe. Comme les autres groupes Herero d'Angola (Himba, Kuvale, Zemba), ils sont issus des migrations bantoues qui ont atteint l'Afrique du Sud-Ouest entre le XVe et le XVIIIe siecle. Selon des sites de voyage, leur territoire autour d'Oncocua, dans la province du Cunene, est isolé du reste du pays par des déserts et des montagnes, ce qui aurait préservé leur mode de vie.",
       "formationPeriod": "XVIIe-XVIIIe siecle, dans le contexte des migrations Herero depuis l'Afrique de l'Est vers l'Afrique australe.",
       "migrationRoutes": [
         "Migration depuis l'Afrique de l'Est via la region des Grands Lacs",
-        "Implantation dans la region d'Oncocua (Cunene) apres le franchissement de la riviere Cunene depuis le sud"
+        "Implantation dans la région d'Oncocua, près de la rivière Cunene, selon des sites de voyage"
       ],
       "historicalSettlementZones": [
-        "Region d'Oncocua (province de Cunene)",
-        "Villages de Soba, Elola et Moimba",
-        "Zones boisees et collines rocheuses autour d'Oncocua, pres de la riviere Cunene"
+        "Municipalité de Virei (province du Namibe), selon une dépêche de l'agence Lusa (2022)",
+        "Region d'Oncocua (province de Cunene), selon des sites de voyage",
+        "Villages de Soba, près d'Oncocua, d'Elola et de Moimba, selon des sites de voyage",
+        "Zones boisees et collines rocheuses autour d'Oncocua, pres de la riviere Cunene, selon des sites de voyage"
       ],
       "unificationsOrDivisions": "Les Mucahona font partie du vaste ensemble Herero aux cotes des Himba, Kuvale, Zemba, Tjavikwa et Tjimba. En Angola, ils occupent un territoire distinct de celui des Himba mais partagent des pratiques culturelles proches.",
-      "externalInfluences": "Influence des peuples voisins Himba et Mutua. Pression coloniale portugaise limitee en raison de l'isolement geographique de la region d'Oncocua. Influence croissante du tourisme depuis les annees 2000.",
-      "majorHistoricalEvents": "La region d'Oncocua a ete relativement epargnee par la guerre civile angolaise (1975-2002) en raison de son eloignement des zones de ressources minerales et petrolieres. La secheresse recurrente dans le Cunene depuis les annees 2000 constitue le principal defi contemporain."
+      "externalInfluences": "Influence des peuples voisins Himba et Mutua. Selon des sites de voyage, le tourisme se développe dans la région d'Oncocua.",
+      "majorHistoricalEvents": "Selon des sites de voyage, la sécheresse qui persiste dans la région d'Oncocua est aujourd'hui le principal défi de ce peuple. Selon une dépêche de l'agence Lusa de 2022, la sécheresse qui frappe l'Angola depuis 2012 pousse les éleveurs de la municipalité de Virei, où vivent aussi des Muhakaona, à chercher des pâturages de plus en plus loin."
     },
     "organization": {
       "traditionalPoliticalSystem": "Organisation tribale fondee sur des clans dirigés par l'homme le plus age du clan (soba). Systeme de bilateral descent: chaque membre appartient a deux clans, un par le pere et un par la mere.",
@@ -55,7 +56,7 @@
     "historicalRole": {
       "kingdomsOrChiefdoms": "Chefferies locales (sobas) integrees dans la structure plus large des Herero. Les Mucahona n'ont pas constitue un royaume independant mais participent au systeme politique Herero fonde sur les clans et le bétail.",
       "relationsWithNeighbors": "Relations ambivalentes avec les Himba: les Hakaona sont parfois employes pour garder les troupeaux Himba en signe de soumission sociale. Relations commerciales avec les Mutua voisins. Contacts avec les Mucubal dans la region de Namibe.",
-      "conflictsOrAlliances": "Tensions latentes liees au vol de bétail entre groupes voisins (Mucubal, Muhimba). La region d'Oncocua constitue un carrefour entre plusieurs groupes Herero qui traversent la frontiere angolo-namibienne.",
+      "conflictsOrAlliances": "Tensions latentes liees au vol de bétail entre groupes voisins (Mucubal, Muhimba).",
       "diaspora": null
     },
     "demography": {
@@ -96,6 +97,96 @@
         "url": "https://www.biorxiv.org/content/10.1101/162230v1.full",
         "tier": "referenced",
         "source_kind": "academic"
+      },
+      {
+        "title": "Seca no sul do país leva pastores cada vez mais longe em busca de pasto",
+        "url": "https://www.verangola.net/va/pt/112022/Ambiente/33520/Seca-no-sul-do-pa%C3%ADs-leva-pastores-cada-vez-mais-longe-em-busca-de-pasto.htm",
+        "tier": "referenced",
+        "source_kind": "press",
+        "notes": "Dépêche de l'agence Lusa du 28 novembre 2022, reprise par Ver Angola et lue le 18 octobre 2026 : « Ali vivem quase 43 mil pessoas, entre Mucubais, Cuisses, Muhakaona e Muílas », à propos de la municipalité de Virei, dans la province du Namibe."
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Hakavona désigne un peuple du sud-ouest de l'Angola que le père Carlos Estermann range en 1960 parmi les peuples du groupe herero. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. Une forme proche, Muhakaona, apparaît en 2022 dans la presse angolaise. Les formes Mucahona, Hakaona, Mucawana, Mucawama, Muhacaona et Ovahakaona, que la fiche relève, n'ont pas été retrouvées dans une source que nous avons ouverte. On ne sait pas d'où vient ce nom : aucune source que nous avons lue ne l'explique. Nous présentons plus bas ce que disent les sources.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Hakavona",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple du groupe herero d'Angola, écrit en 1960 ; on lit Muhakaona en 2022.",
+        "periodLabel": "Écrit dès 1960 ; une forme proche en 2022",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Hakavona a une forme proche, Muhakaona, dans une dépêche de l'agence Lusa reprise par Ver Angola : les Muhakaona y figurent parmi les quelque 43 000 habitants de la municipalité de Virei, dans la province du Namibe, avec les Mucubais, les Cuisses et les Muílas. L'article n'explique pas ce nom et ne dit pas s'il s'agit du même groupe que celui d'Estermann.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Seca no sul do país leva pastores cada vez mais longe em busca de pasto",
+                "author": "Lusa, repris par Ver Angola",
+                "year": 2022,
+                "url": "https://www.verangola.net/va/pt/112022/Ambiente/33520/Seca-no-sul-do-pa%C3%ADs-leva-pastores-cada-vez-mais-longe-em-busca-de-pasto.htm",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Dépêche de l'agence Lusa du 28 novembre 2022, lue le 18 octobre 2026 sur le site Ver Angola : « Ali vivem quase 43 mil pessoas, entre Mucubais, Cuisses, Muhakaona e Muílas »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "1960"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hakavona désigne, pour le père Carlos Estermann, l'un des peuples du groupe herero en Angola, avec les Ndimba, les Himba, les Kwanyoka, les Tyavikwa, les Kuvale et les Ngendelengo. Il écrit ces noms selon leur prononciation et ne publie aucune photo des Hakavona dans son album. Il n'explique pas ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Álbum de penteados do sudoeste de Angola",
+                "author": "Carlos Estermann",
+                "year": 1960,
+                "url": "https://archive.org/details/dli.ernet.535233",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 23-24",
+                "notes": "Lisbonne, 1960 ; préface datée de Sá da Bandeira, juin 1959. Lu dans la numérisation d'Internet Archive le 18 octobre 2026, pages vérifiées sur l'image. Texte français, p. 24 : « Le groupe héréro est représenté en Angola par les Ndimba, Himba, Kwanyoka, Tyavikwa, Hakavona, Kuvale et Ngendelengo » ; p. 23, note : « nous transcrivons tous les termes ethniques d'une manière strictement phonétique »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "1960"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hakavona apparaît sous la forme Hacavona dans l'album de coiffures du sud-ouest de l'Angola que publie le père Carlos Estermann en 1960, parmi les peuples du groupe herero. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Hacavona",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Álbum de penteados do sudoeste de Angola",
+                "author": "Carlos Estermann",
+                "year": 1960,
+                "url": "https://archive.org/details/dli.ernet.535233",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 8",
+                "notes": "Lisbonne, 1960 ; préface datée de Sá da Bandeira, juin 1959. Lu dans la numérisation d'Internet Archive le 18 octobre 2026, page vérifiée sur l'image. Texte portugais : « O grupo dos Hereros está representado em Angola pelas seguintes etnias: Dimba, Chimba, Cuvale, Cuanhoca, Chavícua, Hacavona e Guendelengo »."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

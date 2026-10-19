@@ -717,6 +717,12 @@ export interface FtsSearchParams {
 export interface RankedPeople extends People {
   naming?: NamingProjection;
   answer?: SearchAnswer;
+  /**
+   * The nameText values of the fiche's history, in history order, as the
+   * search function returns them (migration 109); [] without a block or from
+   * a function not yet migrated.
+   */
+  historyNames: string[];
   languageFamilyName: string | null;
   /**
    * The family's English name (migration 084), so a card served in English
@@ -735,6 +741,12 @@ export interface RankedPeople extends People {
 export interface RankedCountry extends Country {
   naming?: NamingProjection;
   answer?: SearchAnswer;
+  /**
+   * The nameText values of the fiche's history, in history order, as the
+   * search function returns them (migration 109); [] without a block or from
+   * a function not yet migrated.
+   */
+  historyNames: string[];
   relevance: number;
   exactMatch: boolean;
   normalizedScore: number;
@@ -744,6 +756,12 @@ export interface RankedCountry extends Country {
 export interface RankedLanguageFamily extends LanguageFamily {
   naming?: NamingProjection;
   answer?: SearchAnswer;
+  /**
+   * The nameText values of the fiche's history, in history order, as the
+   * search function returns them (migration 109); [] without a block or from
+   * a function not yet migrated.
+   */
+  historyNames: string[];
   relevance: number;
   exactMatch: boolean;
   normalizedScore: number;
@@ -781,6 +799,12 @@ export interface RankedPatronyme {
   content: Record<string, unknown>;
   naming?: NamingProjection;
   answer?: SearchAnswer;
+  /**
+   * The nameText values of the fiche's history, in history order, as the
+   * search function returns them (migration 109); [] without a block or from
+   * a function not yet migrated.
+   */
+  historyNames: string[];
   /**
    * The peoples of `content.peoples[]` whose fiche exists, resolved to their
    * main name in one batched lookup after ranking (ETNI-1859). Absent when
@@ -875,6 +899,8 @@ export interface RankedSearchHit {
   name: string;
   normalizedScore: number;
   snippet: string | null;
+  /** Counted content fields and their text when the fiche writes this query. */
+  recordedIn?: RecordedFieldEvidence[];
 }
 
 /**
@@ -893,6 +919,12 @@ export interface RankedLanguage {
   content: LanguageContent;
   naming?: NamingProjection;
   answer?: SearchAnswer;
+  /**
+   * The nameText values of the fiche's history, in history order, as the
+   * search function returns them (migration 109); [] without a block or from
+   * a function not yet migrated.
+   */
+  historyNames: string[];
   relevance: number;
   exactMatch: boolean;
   snippet: string | null;
@@ -901,29 +933,55 @@ export interface RankedLanguage {
 }
 
 /**
- * A near-miss lead (REQ-125): what the search engine almost understood,
- * shown only when the main search's `total` is 0. `kind` is scoped to the
- * three entities the search surface names to the reader (`SEARCH_LABEL`) —
- * languages, persons and patronymes are not candidates for a lead any more
- * than they are named in that label.
+ * A near-miss lead (REQ-125): what the search engine almost understood.
+ * Peoples, countries and families are offered when the main search's `total`
+ * is 0. A family name (`patronyme`) is offered as a spelling of the searched
+ * name (DEC-075) whenever nothing answers the query exactly, including when
+ * the search found related fiches. Languages and persons are never leads.
  */
 export interface SearchLead {
-  kind: "people" | "country" | "family";
+  kind: "people" | "country" | "family" | "patronyme";
   id: string;
+  /** The filed name. */
   name: string;
+  /**
+   * The form that scored `similarity` (migrations 110, 111 and 113). For a people,
+   * a piece of its filed name, self-appellation or an exonym that is one
+   * name (cut at « , », « ; », « ou » and a slash between spaces, trailing
+   * bracket dropped; « pl. Abaganda) » is never this form). For a family
+   * name, its filed name as filed or a recorded spelling that is one name
+   * (« jarra » reaches Diarra through Jara). For a country or a language
+   * family, its name as filed. Absent from a database without 110.
+   */
+  matchedForm?: string;
   similarity: number;
 }
 
 /**
  * A qualified similar name for an answered, non-empty search (REQ-180).
  * Unlike `SearchLead`, this never stands in for a missing result: its entity
- * is distinct from every returned people, country and family subject.
+ * is distinct from every returned people, country and family subject. A
+ * family name is never one: two names that sound alike are two names.
  */
 export interface SearchNearName {
-  kind: SearchLead["kind"];
+  kind: Exclude<SearchLead["kind"], "patronyme">;
   id: string;
   name: string;
   similarity: number;
+}
+
+/** A fiche whose counted text records the query as a whole word. */
+export interface RecordedTermMatch {
+  kind: SearchLead["kind"];
+  id: string;
+  /** Database paths; the service resolves their text for the public hit. */
+  recordedIn: string[];
+}
+
+/** A counted content field and the text the reader can see on the fiche. */
+export interface RecordedFieldEvidence {
+  fieldPath: string;
+  text: string;
 }
 
 export interface FtsSearchResponse {
@@ -961,6 +1019,8 @@ export interface FtsSearchResponse {
   leads: SearchLead[];
   /** Qualified similar names for a non-empty search; empty otherwise. */
   nearNames: SearchNearName[];
+  /** Matching fiche rows and the counted fields that contain the query. */
+  recordedTerms?: RecordedTermMatch[];
   /**
    * The cleaned query that found the results, when it differs from what was
    * typed (article, question frame or plural removed). Absent when the typed

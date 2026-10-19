@@ -32,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'étude de Tangaza College sur la nomination chez les Ganda classe Kizza parmi les noms circonstanciels et indique qu'il est attribué à l'enfant, garçon ou fille, qui vient après des jumeaux. Le nom encode donc une circonstance individuelle de naissance et n'est pas transmis comme nom de clan dans la pratique décrite.",
-        "claimStatus": "established",
-        "sourceRefs": ["tangaza-ganda-kizza"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -107,6 +102,27 @@
             "era": "modern",
             "statement": "Le nom Kizza fait partie des noms que les Baganda donnent selon les circonstances de la naissance : on le donne à l'enfant, garçon ou fille, qui naît après des jumeaux. Cet usage est décrit dans un travail d'étudiant de 1998, qui renvoie pour ces noms de circonstance au livre de M. B. Nsimbi sur les noms ganda, paru en 1980.",
             "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Naming Systems of the Baganda and Their Significance for Christian Baptism",
+                "author": "Willy Frank Lukati",
+                "year": 1998,
+                "url": "https://repository.tangaza.ac.ke/server/api/core/bitstreams/5b87969e-a6ef-48b5-8544-73e1d45e750b/content",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "p. 18",
+                "notes": "Travail de fin d'études en études religieuses, Tangaza College (université catholique d'Afrique de l'Est), Nairobi, février 1998, lu dans son texte intégral. Section 3.3.2, « Circumstantial Names », p. 18 : « KIZZA: This is a name given to a child (whether a boy or a girl) who follows the twins. » ; la note 45 renvoie à M. B. Nsimbi, Amannya Amaganda N'ennono zaago, Kampala, Longman, 1980, p. 5. Nous n'avons pas lu le livre de Nsimbi. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'étude de Tangaza College sur la nomination chez les Ganda classe Kizza parmi les noms circonstanciels et indique qu'il est attribué à l'enfant, garçon ou fille, qui vient après des jumeaux. Le nom encode donc une circonstance individuelle de naissance et n'est pas transmis comme nom de clan dans la pratique décrite.",
+            "claimStatus": "established",
             "sources": [
               {
                 "title": "The Naming Systems of the Baganda and Their Significance for Christian Baptism",

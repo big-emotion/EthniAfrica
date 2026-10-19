@@ -367,8 +367,10 @@ describe("small source and link corrections reported by waves 21 to 23", () => {
     expect(bank.notes).not.toMatch(/filiation matrilinéaire makonde/);
   });
 
+  // The caterpillar story came back on 2026-10-18 from Molony's own page
+  // (followupsWaves2425Additions.test.ts); what stays dropped is Wikipedia.
   // @req REQ-136
-  it("relinks nothing for PAT_NYERERE, and drops the Wikipedia-only caterpillar story", () => {
+  it("relinks nothing for PAT_NYERERE, and drops the Wikipedia source of the caterpillar story", () => {
     const nyerere = readPatronyme("PAT_NYERERE");
 
     expect(nyerere.peoples).toEqual([]);
@@ -378,7 +380,6 @@ describe("small source and link corrections reported by waves 21 to 23", () => {
       ).reason
     ).toMatch(/Zanaki/);
     expect(JSON.stringify(nyerere)).not.toMatch(/wikipedia/i);
-    expect(JSON.stringify(nyerere.origin)).not.toMatch(/chenille/);
     expect(parsePatronymeFile(nyerere).success).toBe(true);
   });
 

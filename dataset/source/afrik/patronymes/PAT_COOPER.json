@@ -6,7 +6,7 @@
   },
   "id": "PAT_COOPER",
   "nameMain": "Cooper",
-  "nameSystem": "clan_name",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Cooper",
@@ -19,16 +19,11 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "lineage",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "La base archivistique Virginia Emigrants to Liberia enregistre en 1829 Charles, Garret, Nancy, Randolph, Reed et Thomas Cooper parmi un groupe parti de Norfolk vers le Liberia. Elle établit une présence migratoire ancienne du patronyme, sans démontrer que tous les Cooper libériens descendent de ce groupe.",
-        "claimStatus": "established",
-        "sourceRefs": ["uva-liberia-cooper-1829"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -96,5 +91,85 @@
       "fieldPath": "transmissionMode",
       "reason": "les résultats exacts « Cooper », Virginia Emigrants to Liberia, les archives de l'American Colonization Society et les travaux sur les familles américano-libériennes décrivent des familles de lignage mais aussi l'intégration de conjoints, d'enfants placés et de personnes adoptant le nom. Aucune règle univoque patrilinéaire, matrilinéaire, bilatérale ou élective n'a donc pu être établie pour Cooper."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Cooper est un nom de famille du Liberia, d'origine anglaise : il désignait le tonnelier. Des émigrants de ce nom partent de Virginie pour le Liberia vers 1829. Nous présentons plus bas ce qu'en disent les sources.",
+    "names": [
+      {
+        "nameText": "Cooper",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille anglais, celui du tonnelier, porté au Liberia dès 1829 environ.",
+        "periodLabel": "Au Liberia dès 1829 environ ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Décrit en 2022"
+            },
+            "statement": "Le nom Cooper est d'abord un nom de famille anglais, qui désignait le tonnelier, l'artisan qui fabrique et répare les tonneaux, les seaux et les cuves, selon le Dictionary of American Family Names.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Cooper",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/cooper?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue le 18 octobre 2026 (texte anglais de la page). L'entrée dit : « English: occupational name for a maker and repairer of wooden vessels such as barrels, tubs, buckets, casks, and vats, from Middle English couper, cowper ». L'entrée ajoute des formes néerlandaises et juives ashkénazes, sans sens africain."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1829,
+              "to": 1829,
+              "label": "Vers 1829"
+            },
+            "era": "colonial",
+            "statement": "Le nom Cooper apparaît par écrit au Liberia dans la base Virginia Emigrants to Liberia : Charles, Garret, Nancy, Randolph, Reed, Thomas et William Cooper font partie d'un groupe parti de Norfolk, en Virginie, pour le Liberia, sur le navire Harriet. C'est la plus ancienne trace de ce nom au Liberia que le projet connaît ; le nom anglais est plus ancien.",
+            "formAsWritten": "Cooper",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Virginia Emigrants to Liberia — Event 261: 1829 emigration",
+                "author": "University of Virginia, Virginia Emigrants to Liberia",
+                "year": null,
+                "url": "https://virginians-to-liberia.iath.virginia.edu/events/261",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "événement n° 261",
+                "notes": "Édition numérique de l'University of Virginia, fondée sur les archives de l'American Colonization Society à la Library of Congress. Page lue le 18 octobre 2026 : émigration « circa 1829 », de Norfolk (Virginie) vers le Liberia, 18 personnes dont « Charles Cooper », « Garret Cooper », « Nancy Cooper », « Randolph Cooper », « Reed Cooper », « Thomas Cooper » et « William Cooper » ; source citée : « Ship Harriet, Jan 1829 », dossiers de l'American Colonization Society. La page ne donne ni leur âge ni leur statut."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La base archivistique Virginia Emigrants to Liberia enregistre en 1829 Charles, Garret, Nancy, Randolph, Reed et Thomas Cooper parmi un groupe parti de Norfolk vers le Liberia. Elle établit une présence migratoire ancienne du patronyme, sans démontrer que tous les Cooper libériens descendent de ce groupe.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Virginia Emigrants to Liberia — Event 261: 1829 emigration",
+                "author": "University of Virginia, Virginia Emigrants to Liberia",
+                "year": null,
+                "url": "https://virginians-to-liberia.iath.virginia.edu/events/261",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "événement n° 261",
+                "notes": "Édition numérique de l'University of Virginia, fondée sur les archives de l'American Colonization Society à la Library of Congress. Page lue le 18 octobre 2026 : émigration « circa 1829 », de Norfolk (Virginie) vers le Liberia, 18 personnes dont « Charles Cooper », « Garret Cooper », « Nancy Cooper », « Randolph Cooper », « Reed Cooper », « Thomas Cooper » et « William Cooper » ; source citée : « Ship Harriet, Jan 1829 », dossiers de l'American Colonization Society. La page ne donne ni leur âge ni leur statut."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

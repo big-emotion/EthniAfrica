@@ -97,6 +97,14 @@ describe("compare page type (ETNI-481)", () => {
   });
 });
 
+describe("Notre démarche page type (ETNI-2133)", () => {
+  // @req REQ-132
+  it("resolves the approved French slug in both directions", () => {
+    expect(getLocalizedRoute("fr", "approach")).toBe("/fr/notre-demarche");
+    expect(getPageFromRoute("/fr/notre-demarche")).toBe("approach");
+  });
+});
+
 describe("migrations page type (Epic 12, Story 12.8, ETNI-521)", () => {
   // @req REQ-101 FR81
   it("resolves the French slug for the migrations page type", () => {

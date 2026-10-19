@@ -100,14 +100,28 @@ const TRAORE_HISTORY = {
   names: [{ ...LINGALA_HISTORY.names[0], nameText: "Traoré" }],
 };
 
+/** PPL_FULA is filed « Peul »; its history tells « Fulɓe » first. */
+const FULA_HISTORY = {
+  ...LINGALA_HISTORY,
+  names: [
+    { ...LINGALA_HISTORY.names[0], nameText: "Fulɓe" },
+    { ...LINGALA_HISTORY.names[0], nameText: "Peul" },
+  ],
+};
+
 type SearchRow = Record<string, unknown>;
 
 function searchAnswering({
+  peoples = [],
   languages = [],
   patronymes = [],
-}: { languages?: SearchRow[]; patronymes?: SearchRow[] } = {}) {
+}: {
+  peoples?: SearchRow[];
+  languages?: SearchRow[];
+  patronymes?: SearchRow[];
+} = {}) {
   return {
-    peoples: [],
+    peoples,
     countries: [],
     families: [],
     persons: [],
@@ -117,7 +131,7 @@ function searchAnswering({
     places: [],
     words: [],
     results: [],
-    peoplesTotal: 0,
+    peoplesTotal: peoples.length,
     countriesTotal: 0,
     familiesTotal: 0,
     personsTotal: 0,
@@ -126,7 +140,7 @@ function searchAnswering({
     languagesTotal: languages.length,
     placesTotal: 0,
     wordsTotal: 0,
-    total: languages.length + patronymes.length,
+    total: peoples.length + languages.length + patronymes.length,
     leads: [],
     nearNames: [],
   } as unknown as FtsSearchResponse;
@@ -333,6 +347,65 @@ describe("the address of an answered name", () => {
       new Error("companions are down")
     );
     await expect(serverHtml("lingala")).rejects.toThrow();
+  });
+
+  // ETNI-2093: a name the history tells, not the filed one, gets its own
+  // address, and the page there reads the fiche that history belongs to.
+  // @req REQ-200
+  it("gives a name a history tells its own address, which reads that fiche", async () => {
+    vi.mocked(getAnsweredNameRows).mockResolvedValue([
+      { name: "Peul", nameHistory: FULA_HISTORY },
+    ]);
+    vi.mocked(ftsSearch).mockResolvedValue(
+      searchAnswering({
+        peoples: [
+          {
+            id: "PPL_FULA",
+            nameMain: "Peul",
+            content: {},
+            exactMatch: true,
+            relevance: 1,
+            historyNames: ["Fulɓe", "Peul"],
+            // What the search service builds from the history's names.
+            answer: {
+              kind: "people",
+              title: "Peul",
+              names: [
+                { form: "Fulɓe", selfGiven: true },
+                { form: "Peul", selfGiven: false },
+              ],
+              what: { facts: {} },
+              sources: { count: 1 },
+            },
+          },
+        ],
+      })
+    );
+
+    await expect(
+      NameAddressLayout({ children: "page", params: params("ful%C9%93e") })
+    ).resolves.toBe("page");
+    await expect(
+      NameAddressLayout({ children: null, params: params("FUL%C6%81E") })
+    ).rejects.toThrow(
+      `NEXT_PERMANENT_REDIRECT:${getNameAnswerRoute("fr", "Fulɓe")}`
+    );
+    // The address key folds accents and case only (DEC-074).
+    await expect(
+      NameAddressLayout({ children: null, params: params("fulbe") })
+    ).rejects.toThrow("NEXT_NOT_FOUND");
+
+    const html = await serverHtml("ful%C9%93e");
+    const head = await generateMetadata({ params: params("ful%C9%93e") });
+
+    expect(html).toMatch(/<h1[^>]*>Fulɓe<\/h1>/);
+    expect(html).not.toContain("sans établir qu’elles répondent à ce nom");
+    expect(ftsSearch).toHaveBeenCalledWith(
+      expect.objectContaining({ q: "Fulɓe" })
+    );
+    expect(head.alternates?.canonical).toBe(
+      `https://${CANONICAL_DOMAIN}/fr/atlas/recherche/ful%C9%93e`
+    );
   });
 
   // @req REQ-200

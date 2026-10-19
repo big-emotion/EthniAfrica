@@ -30,7 +30,7 @@
       "contemporaryUsage": "Le terme peuples atlantiques est utilise en linguistique et en ethnologie pour regrouper les communautes dont les langues appartiennent a la famille atlantique au sens large, recouvrant une diversite ethnique, culturelle et historique considerable.",
       "linguisticFamily": "FLG_ATLANTIQUE",
       "ethnoLinguisticGroup": "Groupe atlantique de la famille nigero-congolaise (Atlantic-Congo)",
-      "historicalRegion": "Cote atlantique ouest-africaine, du fleuve Senegal au Liberia, avec extensions saheliennes (Peuls)",
+      "historicalRegion": "Côte atlantique ouest-africaine, du fleuve Sénégal au Liberia, avec extensions sahéliennes (Peuls)",
       "currentCountries": [
         "SEN",
         "GMB",
@@ -186,6 +186,135 @@
         "url": "https://lgidf.cnrs.fr/sites/lgidf.cnrs.fr/files/images/Creissels.langues.afric.jan.%202017.pdf",
         "tier": "referenced",
         "source_kind": "academic"
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Un regroupement par la langue, pas un peuple : chaque peuple atlantique porte son propre nom. L'histoire du nom Atlantique comme nom de langues est racontée avec la famille atlantique."
+    }
+  },
+  "nameHistory": {
+    "summary": "Le nom Ouest-Atlantiques, ou peuples atlantiques, réunit des peuples de la côte ouest de l'Afrique, du Sénégal au Liberia, comme les Wolof, les Peuls, les Sérères, les Diola, les Temné ou les Kissi. Ce n'est pas le nom d'un peuple : aucune source que nous avons lue ne donne un nom que ces peuples se donneraient tous ensemble, et chacun porte le sien. C'est d'abord un nom de linguistes pour des langues, appliqué ensuite aux peuples qui les parlent ; des linguistes doutent même que ces langues forment un groupe. Nous présentons son histoire plus bas.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Ouest-Atlantiques",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des linguistes européens, d'abord pour des langues",
+        "shortLine": "Un nom de linguistes pour des langues de la côte, appliqué ensuite aux peuples qui les parlent.",
+        "periodLabel": "Pour des peuples depuis 1980 au moins",
+        "accounts": [
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "1999"
+            },
+            "era": "modern",
+            "statement": "Le nom Ouest-Atlantiques désigne chez Christophe Wondji les peuples les plus anciens de la côte, de la Casamance au Liberia, qui parlent des langues dites ouest-atlantiques. Il l'écrit entre guillemets, à côté des Mande du Sud et des Kru, et note que ces langues sont moins homogènes que les autres et reflètent la complexité des peuples de cette côte.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 13 : Les États et les cultures de la côte de haute Guinée",
+                "author": "Christophe Wondji",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 413, p. 417 et p. 419"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom Ouest-Atlantiques renvoie, pour le linguiste David Dalby, à l'un de ces grands groupes de langues, comme le kwa, le gur ou le bénoué-congo, dont l'unité n'a jamais été démontrée. Il compare le maintien de ces « divisions arbitraires » sur la carte des langues d'Afrique aux frontières coloniales arbitraires imposées à la carte politique du continent.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie II : Carte linguistique de l'Afrique",
+                "author": "David Dalby",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 344"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom Ouest-Atlantiques apparaît sous une forme proche, « les peuples de l'Ouest atlantique », chez Théophile Obenga. Il les cite parmi les peuples que la famille de langues niger-congo, « si jamais elle a été bien établie », relierait par des liens très anciens. C'est la plus ancienne trace de ce nom pour des peuples que le projet connaît. Ces peuples existaient déjà avant lui.",
+            "formAsWritten": "peuples de l'Ouest atlantique",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 4 : Sources et techniques spécifiques de l'histoire africaine : aperçu général",
+                "author": "Théophile Obenga",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 108"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "1928"
+            },
+            "statement": "On parle alors de langues ouest-atlantiques : le linguiste allemand Diedrich Westermann introduit ce nom en 1928, selon Joseph Greenberg. Il couvre à peu près les langues que Maurice Delafosse appelait sénégalo-guinéennes.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 333"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "statement": "On parle déjà de langues « nord-ouest atlantiques » : le missionnaire Sigismund Koelle range sous ce nom, à Freetown, les langues de ses informateurs venus de cette côte, comme le fulup ou le kisi.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://archive.org/details/polyglottaafrica00koel",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 1-2",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la numérisation d'Internet Archive le 18 octobre 2026. Introductory Remarks, partie I : « I. North-west Atlantic Languages, distinguishing themselves, like those of South Africa, by Prefixal Changes, or an Initial Inflection ». La première page ne porte pas de numéro ; la suivante, lue sur l'image, porte le numéro 2."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

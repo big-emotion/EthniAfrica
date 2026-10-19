@@ -8,10 +8,13 @@ import {
   deduceSilences,
   firstSentence,
   groupAccountsBySourceFamily,
+  sourceRowsForTimelineName,
   nameFormOf,
+  namingReason,
   nextStepTargets,
   otherVoiceKinds,
 } from "@/lib/search/nameClosing";
+import type { NameHistorySource } from "@/lib/search/nameClosing";
 import { sourceKindFamily } from "@/lib/sources/sourceKindFamily";
 import { buildNameTimeline } from "@/lib/search/nameTimeline";
 import type { SearchResult } from "@/types/afrik-frontend";
@@ -19,7 +22,7 @@ import type { SearchResult } from "@/types/afrik-frontend";
 const peul = buildNameTimeline(PEUL_HISTORY, "peul");
 const lingala = buildNameTimeline(LINGALA_HISTORY, "lingala");
 
-describe("groupAccountsBySourceFamily — block 3, « Les sources parlent »", () => {
+describe("groupAccountsBySourceFamily — block 3, « Les sources »", () => {
   // @req REQ-198
   it("groups the open name's accounts by source family, in the code's fixed order", () => {
     const groups = groupAccountsBySourceFamily(peul.names[0]);
@@ -61,6 +64,73 @@ describe("groupAccountsBySourceFamily — block 3, « Les sources parlent »", (
       );
       expect(group.sourceCount).toBe(titles.size);
     }
+  });
+});
+
+describe("sourceRowsForTimelineName — brief 15", () => {
+  // @req REQ-198
+  it("lists each source once, links it to every backed timeline account, and preserves the approved order", () => {
+    const accounts = peul.names[0].tiles
+      .flatMap((tile) => tile.accounts)
+      .slice(0, 3);
+    const oral = {
+      title: "Récit recueilli",
+      author: "",
+      year: null,
+      url: null,
+      tier: "unverified",
+      source_kind: "oral_tradition" as const,
+      carrier: "Moussa Diallo",
+      place: "Labé",
+    } satisfies NameHistorySource;
+    const book = {
+      title: "Histoire des Peuls",
+      author: "Aminata Barry",
+      year: 1988,
+      url: "https://example.test/book",
+      tier: "referenced",
+      source_kind: "academic" as const,
+    } satisfies NameHistorySource;
+    const press = {
+      title: "Les noms du Fouta",
+      author: "Mamadou Ba",
+      year: 2001,
+      url: "https://example.test/article",
+      tier: "referenced",
+      source_kind: "press" as const,
+    } satisfies NameHistorySource;
+    const timelineName = {
+      ...peul.names[0],
+      tiles: [
+        {
+          ...peul.names[0].tiles[0],
+          accounts: [
+            { ...accounts[0], sources: [press, oral] },
+            { ...accounts[1], sources: [book, oral] },
+            { ...accounts[2], sources: [book] },
+          ],
+        },
+      ],
+    };
+
+    const rows = sourceRowsForTimelineName(timelineName);
+
+    expect(rows.map((row) => row.source.title)).toEqual([
+      "Récit recueilli",
+      "Histoire des Peuls",
+      "Les noms du Fouta",
+    ]);
+    expect(rows[0].accounts.map(({ account }) => account)).toEqual([
+      timelineName.tiles[0].accounts[0],
+      timelineName.tiles[0].accounts[1],
+    ]);
+    expect(rows[1].accounts.map(({ account }) => account)).toEqual([
+      timelineName.tiles[0].accounts[1],
+      timelineName.tiles[0].accounts[2],
+    ]);
+    expect(rows[2].accounts.map(({ account }) => account)).toEqual([
+      timelineName.tiles[0].accounts[0],
+    ]);
   });
 });
 
@@ -231,6 +301,108 @@ describe("nextStepTargets — the next step", () => {
     };
     expect(namers(ownLanguage, "peul")).toEqual([]);
   });
+
+  // The fold equates « Kono » and « Kɔnɔ » (REQ-135). On a history that writes
+  // the self-name « Kono » and an outside « Kɔnɔ » apart, a reader who typed
+  // « Kɔnɔ » searched the outside name, whose language is still the namer.
+  // The language code is the fixture's, not a claim about the corpus.
+  // @req REQ-198
+  it("finds the namer of the spelling typed, not of a self-name the fold equates with it", () => {
+    const [selfName, outsideName] = PEUL_HISTORY.names;
+    const kono = {
+      ...PEUL_HISTORY,
+      names: [
+        { ...selfName, nameText: "Kono" },
+        { ...outsideName, nameText: "Kɔnɔ", languageOfOrigin: "tem" },
+      ],
+    };
+
+    expect(
+      nextStepTargets(
+        [people],
+        [{ subject: people, nameHistory: kono }],
+        "Kɔnɔ"
+      ).filter((target) => target.relation === "namer")
+    ).toMatchObject([
+      { type: "language", id: "tem", name: "tem", relation: "namer" },
+    ]);
+  });
+
+  // Doctrine §1.1: competing readings stand side by side, unranked. A card
+  // that quoted one of them would crown it, so a namer's reason is read only
+  // from the accounts no other reading contests (« Avatime », four readings).
+  // @req REQ-198
+  it("keeps the readings a hypothesis group sets side by side out of a namer's reason", () => {
+    const account = PEUL_HISTORY.names[0].accounts[0];
+    const told = (statement: string, hypothesisGroup?: string) => ({
+      ...account,
+      statement,
+      hypothesisGroup,
+    });
+    const history = {
+      ...PEUL_HISTORY,
+      names: PEUL_HISTORY.names.map((name) =>
+        name.nameText === "Peul"
+          ? {
+              ...name,
+              languageOfOrigin: "wol",
+              accounts: [
+                told("Le nom Peul viendrait du wolof pal.", "origine du nom"),
+                told("Le nom Peul viendrait du wolof pël.", "origine du nom"),
+                told("Le nom Peul a une seule lecture.", "lecture unique"),
+                told("Le nom Peul est employé en français."),
+              ],
+            }
+          : name
+      ),
+    };
+
+    const [namer] = nextStepTargets(
+      [people],
+      [{ subject: people, nameHistory: history }],
+      "peul"
+    );
+
+    expect(namer.namingAccounts).toEqual([
+      "Le nom Peul a une seule lecture.",
+      "Le nom Peul est employé en français.",
+    ]);
+  });
+});
+
+describe("namingReason — why a namer card is offered", () => {
+  // An initial is not the end of a sentence: the Nupe fiche attributes the
+  // name Tapa to « l'historien E. J. Alagoa », and the card cut him to « E. ».
+  // @req REQ-198
+  it("keeps an author's initials inside the sentence that names the namer", () => {
+    const tapa =
+      "Le nom Tapa est celui que les Yoruba donnent aux Nupe, voisins du royaume d'Oyo, selon l'historien E. J. Alagoa. Il le relève dans les récits d'Oyo.";
+
+    expect(namingReason([tapa], "Yoruba")).toBe(
+      "Le nom Tapa est celui que les Yoruba donnent aux Nupe, voisins du royaume d'Oyo, selon l'historien E. J. Alagoa."
+    );
+  });
+
+  // @req REQ-198
+  it("reads a page or an era reference as part of its sentence", () => {
+    const reference =
+      "Le nom Tapa apparaît vers 1500 apr. J.-C. chez les Yoruba, selon Niane (1985, p. 141). Le reste suit.";
+
+    expect(namingReason([reference], "Yoruba")).toBe(
+      "Le nom Tapa apparaît vers 1500 apr. J.-C. chez les Yoruba, selon Niane (1985, p. 141)."
+    );
+  });
+
+  // @req REQ-198
+  it("reads up to the sentence that names the namer, and no further", () => {
+    expect(
+      namingReason(
+        ["Forme française du nom. Les sources la font venir du wolof. Suite."],
+        "Wolof"
+      )
+    ).toBe("Forme française du nom. Les sources la font venir du wolof.");
+    expect(namingReason(["Aucun lien n'est dit."], "Wolof")).toBeUndefined();
+  });
 });
 
 describe("nameFormOf — the name a next-step card shows and searches", () => {
@@ -242,6 +414,16 @@ describe("nameFormOf — the name a next-step card shows and searches", () => {
       "Songhay"
     );
     expect(nameFormOf("Rwandais (Tutsi)", ["Tutsi", "Watusi"])).toBe("Tutsi");
+  });
+
+  // « al-Jaʿali » and « Al-Jaali » compare equal under the fold (REQ-135):
+  // the card keeps the spelling the label writes, not the history's last.
+  // @req REQ-135
+  it("keeps the history spelling the label writes when the fold equates two", () => {
+    const jaali = ["al-Jaʿali", "Jaali", "Al-Jaali"];
+    expect(nameFormOf("al-Jaʿali", jaali)).toBe("al-Jaʿali");
+    expect(nameFormOf("Al-Jaali", jaali)).toBe("Al-Jaali");
+    expect(nameFormOf("Fulbe", ["Fulɓe", "Pullo"])).toBe("Fulɓe");
   });
 
   // @req REQ-198

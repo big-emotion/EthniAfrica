@@ -6,7 +6,7 @@
   },
   "id": "PAT_FREEMAN",
   "nameMain": "Freeman",
-  "nameSystem": "clan_name",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Freeman",
@@ -19,16 +19,11 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "lineage",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "La base archivistique Virginia Emigrants to Liberia enregistre John R. Freeman, homme libre, dans un départ de Washington vers le Liberia en 1860. Ce document atteste le patronyme dans la migration de peuplement sans en faire l'origine de toutes les lignées Freeman du Liberia.",
-        "claimStatus": "established",
-        "sourceRefs": ["uva-liberia-freeman-1860"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -96,5 +91,105 @@
       "fieldPath": "transmissionMode",
       "reason": "les résultats exacts « Freeman », Virginia Emigrants to Liberia, les archives de l'American Colonization Society et les travaux sur les familles américano-libériennes décrivent des familles de lignage mais aussi l'intégration de conjoints, d'enfants placés et de personnes adoptant le nom. Aucune règle univoque patrilinéaire, matrilinéaire, bilatérale ou élective n'a donc pu être établie pour Freeman."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Freeman est un nom de famille du Liberia, d'origine anglaise : il veut dire « homme libre ». Chez les Afro-Américains, il a souvent été pris à la sortie de l'esclavage. Un émigrant de ce nom part de Washington pour le Liberia vers 1860.",
+    "names": [
+      {
+        "nameText": "Freeman",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille anglais, « homme libre », porté au Liberia dès 1860 environ.",
+        "periodLabel": "Au Liberia dès 1860 environ ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Décrit en 2022"
+            },
+            "statement": "Le nom Freeman est d'abord un nom de famille anglais, qui veut dire « homme libre, né libre », selon le Dictionary of American Family Names.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Freeman",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/freeman?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue le 18 octobre 2026 (texte anglais de la page). L'entrée dit : « English: from Middle English freman, fremon ‘freeman, free-born man’ [...], used also occasionally as a personal name. As an African American surname it was in many cases adopted as a name denoting a man freed of slavery »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Décrit en 2022"
+            },
+            "statement": "Le nom Freeman a souvent été pris par des Afro-Américains pour dire qu'un homme était sorti de l'esclavage, selon le même dictionnaire. Les sources lues ne disent pas si c'est le cas des Freeman du Liberia.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Freeman",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/freeman?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue le 18 octobre 2026 (texte anglais de la page). L'entrée dit : « English: from Middle English freman, fremon ‘freeman, free-born man’ [...], used also occasionally as a personal name. As an African American surname it was in many cases adopted as a name denoting a man freed of slavery »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "Vers 1860"
+            },
+            "era": "modern",
+            "statement": "Le nom Freeman apparaît par écrit au Liberia dans la base Virginia Emigrants to Liberia : John R. Freeman, un homme libre, part de Washington pour le Liberia vers 1860. C'est la plus ancienne trace de ce nom au Liberia que le projet connaît ; le nom anglais est plus ancien.",
+            "formAsWritten": "Freeman",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Virginia Emigrants to Liberia — Event 567: 1860 emigration",
+                "author": "University of Virginia, Virginia Emigrants to Liberia",
+                "year": null,
+                "url": "https://virginians-to-liberia.iath.virginia.edu/events/567",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "événement n° 567",
+                "notes": "Édition numérique de l'University of Virginia, fondée sur les archives de l'American Colonization Society. Page lue le 18 octobre 2026 : émigration « circa 1860 » de Washington vers le Liberia ; « John R. Freeman (emigrant) », « Free » ; sources citées : la liste des émigrants du navire M. C. Stevens, parti de Baltimore le 21 avril et de Savannah le 2 mai 1860, dans l'African Repository (vol. 36, n° 5, mai 1860, p. 140), et les archives de l'American Colonization Society."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La base archivistique Virginia Emigrants to Liberia enregistre John R. Freeman, homme libre, dans un départ de Washington vers le Liberia en 1860. Ce document atteste le patronyme dans la migration de peuplement sans en faire l'origine de toutes les lignées Freeman du Liberia.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Virginia Emigrants to Liberia — Event 567: 1860 emigration",
+                "author": "University of Virginia, Virginia Emigrants to Liberia",
+                "year": null,
+                "url": "https://virginians-to-liberia.iath.virginia.edu/events/567",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "événement n° 567",
+                "notes": "Édition numérique de l'University of Virginia, fondée sur les archives de l'American Colonization Society. Page lue le 18 octobre 2026 : émigration « circa 1860 » de Washington vers le Liberia ; « John R. Freeman (emigrant) », « Free » ; sources citées : la liste des émigrants du navire M. C. Stevens, parti de Baltimore le 21 avril et de Savannah le 2 mai 1860, dans l'African Repository (vol. 36, n° 5, mai 1860, p. 140), et les archives de l'American Colonization Society."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

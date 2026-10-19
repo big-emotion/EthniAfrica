@@ -6,34 +6,55 @@
   },
   "id": "PAT_LETSIE",
   "nameMain": "Letsie",
-  "nameSystem": "clan_name",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Letsie",
       "attestations": [
-        { "countryId": "LSO", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "LSO",
+          "sourceRefs": [
+            "afrik-candidate-queue",
+            "lesotho-times-2011-bnp",
+            "ellenberger-1912-history-basuto"
+          ]
+        }
+      ]
+    },
+    {
+      "spelling": "Letsié",
+      "attestations": [
+        {
+          "countryId": "LSO",
+          "sourceRefs": ["arbousset-daumas-1842-relation"]
+        }
       ]
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
     {
       "peopleId": "PPL_SOTHO",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "ellenberger-1912-history-basuto"]
     }
   ],
   "countries": [
     {
       "countryId": "LSO",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": [
+        "afrik-candidate-queue",
+        "lesotho-times-2011-bnp",
+        "ellenberger-1912-history-basuto"
+      ]
     }
   ],
   "alliances": [],
@@ -48,13 +69,41 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "ellenberger-1912-history-basuto",
+      "title": "History of the Basuto, Ancient and Modern",
+      "url": "https://emandulo.apc.uct.ac.za/collection/FHYA%20Depot/Ellenberger_F_History_of_the_Basuto_Ancient_and_Modern_1912.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Londres, Caxton, 1912 ; PDF du dépôt Emandulo de l'université du Cap, page lue en image le 18 octobre 2026. Ellenberger, missionnaire, a recueilli les traditions des Basotho ; il écrit dans le contexte colonial. P. 109 : « The first child of Moshesh was a son who was called Mohato, but who is better known by the name of Letsie, which he took in 1829 on the occasion of his circumcision in remembrance of Mohlomi, who was called Mohlomi-a-Matsie »."
+    },
+    {
+      "sourceKey": "arbousset-daumas-1842-relation",
+      "title": "Relation d'un voyage d'exploration au nord-est de la colonie du Cap de Bonne-Espérance",
+      "url": "https://archive.org/details/relationdunvoya00arbogoog",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Paris, 1842, publié par le comité de la Société des missions évangéliques de Paris ; exemplaire numérisé par Google, texte lu sur Internet Archive le 18 octobre 2026. L'explication des planches, en fin de volume, décrit la planche 10, « Morija, station fondée le 9 juillet 1833 », placée en regard de la p. 476 : « A. Village du chef Letsié, roi futur de la tribu. B. Village du chef Molapo, frère puîné de Letsié »."
+    },
+    {
+      "sourceKey": "basutoland-records-1",
+      "title": "Basutoland Records, vol. I (1833-1852)",
+      "url": "https://archive.org/details/basutolandrecord01basu",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Recueil de documents officiels publié en 1883 ; numérisation lue sur Internet Archive le 18 octobre 2026. P. 135 : pièces jointes à une lettre du résident britannique H. D. Warden, Bloemfontein, 30 avril 1847 ; une déclaration de Moshoeshoe sur les terres des Basotho porte comme témoins « Mark X of Letsie Moshesh, (Signed) Nehemiah Moshesh, Mark X of Jeremiah Moshesh »."
+    },
+    {
+      "sourceKey": "lesotho-times-2011-bnp",
+      "title": "BNP supporters barred from Jonathan's widow",
+      "url": "https://lestimes.com/?p=6841",
+      "tier": "referenced",
+      "source_kind": "press",
+      "notes": "Article du 11 août 2011, sans signature, lu le 18 octobre 2026 : « Over the years the BNP leadership has been dominated by the Molapo, Jonathan, Sekhonyana, ’Maseribane, Letsie… » familles."
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
     {
       "fieldPath": "alliances",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
@@ -73,7 +122,120 @@
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+      "reason": "Nous ne documentons pas encore comment le nom Letsie passe d'une génération à l'autre : les sources lues disent d'où il vient, pas la règle qui le transmet."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Letsie est un nom de famille du Lesotho. C'est d'abord le nom que prend en 1829, lors de son initiation, Mohato, le fils aîné du roi Moshoeshoe, en souvenir du sage Mohlomi. Il est écrit dès 1842. Les sources lues ne disent pas ce que veut dire ce nom.",
+    "names": [
+      {
+        "nameText": "Letsie",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille du Lesotho, d'abord nom d'initiation d'un fils de Moshoeshoe en 1829.",
+        "periodLabel": "Pris en 1829 ; écrit dès 1842 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1829,
+              "to": 1829,
+              "label": "En 1829"
+            },
+            "era": "polity",
+            "statement": "Le nom Letsie est d'abord un nom d'initiation : Mohato, le fils aîné du roi Moshoeshoe, le prend en 1829, lors de sa circoncision, en souvenir du sage Mohlomi, que l'on appelait Mohlomi-a-Matsie, selon D. Frédéric Ellenberger. Les sources lues ne disent ni ce que veut dire le mot ni comment il se rattache au surnom de Mohlomi.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "History of the Basuto, Ancient and Modern",
+                "author": "D. Frédéric Ellenberger, mis en anglais par J. C. Macgregor",
+                "year": 1912,
+                "url": "https://emandulo.apc.uct.ac.za/collection/FHYA%20Depot/Ellenberger_F_History_of_the_Basuto_Ancient_and_Modern_1912.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 109",
+                "notes": "Londres, Caxton, 1912 ; PDF du dépôt Emandulo de l'université du Cap, page lue en image le 18 octobre 2026. Ellenberger, missionnaire, a recueilli les traditions des Basotho ; il écrit dans le contexte colonial. P. 109 : « The first child of Moshesh was a son who was called Mohato, but who is better known by the name of Letsie, which he took in 1829 on the occasion of his circumcision in remembrance of Mohlomi, who was called Mohlomi-a-Matsie »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2011,
+              "to": 2011,
+              "label": "Écrit en 2011"
+            },
+            "era": "modern",
+            "statement": "Le nom Letsie est aujourd'hui celui d'une famille du Lesotho : en 2011, le Lesotho Times le cite parmi les familles qui ont longtemps dominé la direction du Basotho National Party, avec les Molapo, les Jonathan, les Sekhonyana et les 'Maseribane.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "BNP supporters barred from Jonathan's widow",
+                "author": "Lesotho Times",
+                "year": 2011,
+                "url": "https://lestimes.com/?p=6841",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article du 11 août 2011, sans signature, lu le 18 octobre 2026 : « Over the years the BNP leadership has been dominated by the Molapo, Jonathan, Sekhonyana, ’Maseribane, Letsie… » familles."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1847,
+              "to": 1847,
+              "label": "Avril 1847"
+            },
+            "era": "polity",
+            "statement": "Le nom Letsie est suivi du nom de son père dans une pièce de 1847 : une déclaration du roi Moshoeshoe sur les terres des Basotho porte comme témoins « Letsie Moshesh », « Nehemiah Moshesh » et « Jeremiah Moshesh », trois de ses fils.",
+            "sources": [
+              {
+                "title": "Basutoland Records, vol. I (1833-1852)",
+                "author": "George McCall Theal (compilateur)",
+                "year": 1883,
+                "url": "https://archive.org/details/basutolandrecord01basu",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 135",
+                "notes": "Recueil de documents officiels publié en 1883 ; numérisation lue sur Internet Archive le 18 octobre 2026. P. 135 : pièces jointes à une lettre du résident britannique H. D. Warden, Bloemfontein, 30 avril 1847 ; une déclaration de Moshoeshoe sur les terres des Basotho porte comme témoins « Mark X of Letsie Moshesh, (Signed) Nehemiah Moshesh, Mark X of Jeremiah Moshesh »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1842,
+              "to": 1842,
+              "label": "Publié en 1842"
+            },
+            "era": "polity",
+            "statement": "Le nom Letsie apparaît par écrit, sous la forme Letsié, dans la relation de voyage des missionnaires Thomas Arbousset et François Daumas, publiée en 1842 : la légende de la planche de la mission de Morija y signale le « village du chef Letsié, roi futur de la tribu ». C'est la plus ancienne trace écrite de ce nom que le projet connaît ; le nom existait déjà avant elle, depuis 1829 selon Ellenberger.",
+            "formAsWritten": "Letsié",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Thomas Arbousset",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "François Daumas",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Relation d'un voyage d'exploration au nord-est de la colonie du Cap de Bonne-Espérance",
+                "author": "Thomas Arbousset et François Daumas",
+                "year": 1842,
+                "url": "https://archive.org/details/relationdunvoya00arbogoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "explication des planches, planche 10 (Morija, en regard de la p. 476)",
+                "notes": "Paris, 1842, publié par le comité de la Société des missions évangéliques de Paris ; exemplaire numérisé par Google, texte lu sur Internet Archive le 18 octobre 2026. L'explication des planches, en fin de volume, décrit la planche 10, « Morija, station fondée le 9 juillet 1833 », placée en regard de la p. 476 : « A. Village du chef Letsié, roi futur de la tribu. B. Village du chef Molapo, frère puîné de Letsié »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

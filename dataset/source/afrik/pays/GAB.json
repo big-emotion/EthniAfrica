@@ -367,7 +367,7 @@
         "name": "Autres peuples bantous",
         "selfAppellation": "Variées selon les groupes",
         "exonyms": ["Variées selon les groupes"],
-        "peopleId": "PPL_AUTRES_PEUPLES_BANTOUS",
+        "peopleId": null,
         "mainRegion": "Diverses régions du Gabon",
         "languages": ["Langues bantoues diverses", "français"],
         "languageFamily": "FLG_BANTU",

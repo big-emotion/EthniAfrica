@@ -23,8 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [],
-    "historicalSyntheses": []
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [],
   "countries": [
@@ -46,13 +46,17 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Base de répartition patronymique consultée directement. Elle atteste Nyerere principalement en Tanzanie, mais n'en donne pas la signification et précise que la géographie ne suffit pas à attribuer une appartenance ethnique."
+    },
+    {
+      "sourceKey": "molony-nyerere-early-years-2014",
+      "title": "Nyerere: The Early Years",
+      "url": "https://books.google.com/books?id=qDE3BAAAQBAJ",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Thomas Molony, James Currey, 2014, biographie de Julius Nyerere jusqu'en 1952. Page 32, lue le 18 octobre 2026 dans l'aperçu de Google Livres : « The chief, Julius Nyerere's father, was born in 1860 to Burito Mazembe and Wakuru Malima, and was given the name 'Nyerere', meaning 'caterpillar' in Zanaki, after a plague of army worm caterpillars that attacked the countryside at the time of his birth ». L'auteur appuie ce passage sur une note, que nous n'avons pas lue."
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "L'explication par une invasion de chenilles à la naissance du chef Burito ne se lit que dans Wikipédia, qui renvoie à Thomas Molony (2014, p. 32), un ouvrage que nous n'avons pas pu consulter : nous ne la reprenons pas. Le Daily News écrit seulement que « Nyerere » veut dire « chenille » en zanaki, sans citer de source."
-    },
     {
       "fieldPath": "nameSystem",
       "reason": "la recherche web et bibliographique combinant « Nyerere », « Nyamwezi », « Tanzania », « surname », « personal names », « onomastics », « etymology », « clan », « transmission », « alliance », « caste », « homonym » et « obituary », le répertoire tanzanien de noms de personnes et les études nyamwezi repérées, ainsi que la page Forebears dédiée n'ont pas établi que la catégorie de système nominal portée par la fiche provisoire décrive ce nom lui-même ; elle reste une hypothèse de classement et n'est pas transformée en fait."
@@ -79,11 +83,11 @@
     },
     {
       "fieldPath": "peoples",
-      "reason": "Les sources lues situent le nom chez les Zanaki, dans le nord de la Tanzanie, mais notre atlas n'a pas encore de fiche sur les Zanaki. Aucune source consultée ne le relie aux Nyamwezi, auxquels la fiche le rattachait à l'origine : la fiche ne le rattache donc plus à un peuple."
+      "reason": "Les sources lues situent le nom chez les Zanaki, dans le nord de la Tanzanie, mais nous n'avons pas encore de fiche sur les Zanaki. Aucune source consultée ne le relie aux Nyamwezi, auxquels la fiche le rattachait à l'origine : la fiche ne le rattache donc plus à un peuple."
     }
   ],
   "nameHistory": {
-    "summary": "Le nom Nyerere est porté en Tanzanie, notamment par Julius Nyerere, premier président du pays, et par son père, le chef Nyerere Burito. Il voudrait dire « chenille » en zanaki, selon la presse tanzanienne. Les sources lues n'en donnent aucune trace écrite plus ancienne : on ne sait pas avec certitude depuis quand il est écrit.",
+    "summary": "Le nom Nyerere est porté en Tanzanie, notamment par Julius Nyerere, premier président du pays, et par son père, le chef Nyerere Burito. Il voudrait dire « chenille » en zanaki, selon la presse tanzanienne et l'historien Thomas Molony, qui rapporte que le père de Julius Nyerere a reçu ce nom à sa naissance, en 1860, au moment d'une invasion de chenilles. Les sources lues n'en donnent aucune trace écrite plus ancienne : on ne sait pas avec certitude depuis quand il est écrit.",
     "names": [
       {
         "nameText": "Nyerere",
@@ -91,7 +95,7 @@
         "selfGiven": true,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Un nom porté par un chef et par son fils, premier président ; « chenille » en zanaki, selon la presse.",
+        "shortLine": "Un nom porté par un chef et par son fils, premier président ; « chenille » en zanaki, selon la presse et un historien.",
         "periodLabel": "Porté aujourd'hui",
         "accounts": [
           {
@@ -135,6 +139,28 @@
                 "notes": "Article du Daily News (Tanzanie) du 14 octobre 2025, lu le 14 octobre 2026. Il écrit : « The name \"Nyerere\" in Zanaki translates to \"caterpillar\" », et dit que le nom complet de Julius Kambarage Nyerere « reflected his Zanaki heritage » et qu'il était l'un des enfants de Burito Nyerere, un chef local. L'article ne cite pas de source pour le sens."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "1860, selon un récit publié en 2014"
+            },
+            "statement": "Le nom Nyerere aurait été donné en 1860 au père de Julius Nyerere, le futur chef Nyerere Burito, à sa naissance : il veut dire « chenille » en zanaki, et une invasion de chenilles légionnaires ravageait alors la campagne, selon l'historien Thomas Molony.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Nyerere: The Early Years",
+                "author": "Thomas Molony",
+                "year": 2014,
+                "url": "https://books.google.com/books?id=qDE3BAAAQBAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 32",
+                "notes": "James Currey, 2014. Page 32, lue le 18 octobre 2026 dans l'aperçu de Google Livres : « The chief, Julius Nyerere's father, was born in 1860 to Burito Mazembe and Wakuru Malima, and was given the name 'Nyerere', meaning 'caterpillar' in Zanaki, after a plague of army worm caterpillars that attacked the countryside at the time of his birth ». L'auteur appuie ce passage sur une note, que nous n'avons pas lue."
+              }
+            ],
+            "claimStatus": "claimed"
           }
         ]
       }

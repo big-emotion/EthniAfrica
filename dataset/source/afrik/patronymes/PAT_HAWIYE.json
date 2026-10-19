@@ -22,13 +22,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "La synthèse de Hinds classe Hawiye parmi les quatre grandes familles claniques patrilinéaires auxquelles appartient la majorité somalie ; elle documente un principe de filiation, mais pas l'étymologie du nom.",
-        "claimStatus": "established",
-        "sourceRefs": ["hawiye-hinds-2013"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -88,5 +83,246 @@
       "fieldPath": "homonyms",
       "reason": "Les sources consultées ne permettent pas encore de présenter un autre nom écrit comme Hawiye, mais d'origine différente."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Hawiye est celui de l'une des grandes familles de clans somalies, qui se comptent par le père. Un géographe arabe le note déjà au XIIIe siècle, pour un peuple dont Merka est la capitale. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que les sources en disent.",
+    "names": [
+      {
+        "nameText": "Hawiye",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une grande famille de clans somalies, déjà nommée au XIIIe siècle par un géographe arabe.",
+        "periodLabel": "Écrit dès le XIIIe siècle ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2013,
+              "to": 2017,
+              "label": "Décrit en 2013 et 2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Hawiye désigne aujourd'hui l'une des grandes familles de clans de Somalie, avec les Darod, les Isaaq, les Dir et les Rahanweyn, selon un anthropologue que cite la Commission canadienne de l'immigration. La plupart des Somalis appartiennent à quatre familles de clans qui se comptent par le père, dont les Hawiye, selon Róisín Hinds.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Somalia: Information on the Ogaden clan in Somaliland, including distinguishing features, locations, occupations and position in the clan hierarchy; treatment by the Somaliland authorities and by al-Shabaab (2015-October 2017)",
+                "author": "Commission de l'immigration et du statut de réfugié du Canada",
+                "year": 2017,
+                "url": "https://www.ecoi.net/en/document/1428637.html",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 2",
+                "notes": "Réponse SOM106011.E de la direction des recherches de la Commission, publiée le 23 novembre 2017 selon ecoi.net, qui la reproduit. Section 2, un enseignant d'anthropologie sociale de l'université de Leipzig : « The main groups in Somalia (Darood, Hawiye, Isaaq, Dir, Rahanweyn) do not exhibit any specific physical differences. » Lu le 18 octobre 2026."
+              },
+              {
+                "title": "Somali networks — structures of clan and society",
+                "author": "Róisín Hinds",
+                "year": 2013,
+                "url": "https://gsdrc.org/publications/somali-networks-structures-of-clan-and-society/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "GSDRC, Helpdesk Research Report, juin 2013, page de présentation lue sur le site de l'éditeur (le PDF lié ne s'ouvrait plus). Résumé : « The Somali majority belong to four patrilineal clan families: the Darod, Hawiye, Dir, and Rahanweyn. » Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Hawiye désigne une famille de clans liés par la descendance en ligne paternelle. Les sources consultées ne disent pas ce que veut dire ce nom, et son origine reste discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Somali networks — structures of clan and society",
+                "author": "Róisín Hinds",
+                "year": 2013,
+                "url": "https://gsdrc.org/publications/somali-networks-structures-of-clan-and-society/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "GSDRC, Helpdesk Research Report, juin 2013, page de présentation lue sur le site de l'éditeur (le PDF lié ne s'ouvrait plus). Résumé : « The Somali majority belong to four patrilineal clan families: the Darod, Hawiye, Dir, and Rahanweyn. » Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "Proposée en 1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Hawiye serait celui d'une tribu très ancienne, présente dans le pays avant l'islam : on la trouve, écrit l'explorateur Richard Burton, dispersée du pays des Majerteen jusqu'aux collines de Harar.",
+            "hypothesisGroup": "origine du nom Hawiye",
+            "sources": [
+              {
+                "title": "First Footsteps in East Africa; or, An Exploration of Harar",
+                "author": "Richard F. Burton",
+                "year": 1856,
+                "url": "https://archive.org/details/firstfootstepsi00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 105",
+                "notes": "Londres, Longman, Brown, Green, and Longmans, 1856 ; exemplaire numérisé sur archive.org. Récit d'un voyage fait en 1854-1855 dans le pays somali et jusqu'à Harar, chapitre sur les Somalis. Voyageur britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Page 105 : « The Hawiyah are doubtless of ancient and pagan origin » ; « the antiquity, and consequently the Pagan origin of the Hawiyah are proved by its present widely scattered state ; it is a powerful tribe in the Mijjarthayn country, and yet is found in the hills of Harar ». Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "Récit publié en 1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Hawiye se rattacherait, pour certains Hawiye, au calife Abou Bakr, dont ils se disent descendants, comme les Shaykhash, selon ce que rapporte Richard Burton.",
+            "hypothesisGroup": "origine du nom Hawiye",
+            "sources": [
+              {
+                "title": "First Footsteps in East Africa; or, An Exploration of Harar",
+                "author": "Richard F. Burton",
+                "year": 1856,
+                "url": "https://archive.org/details/firstfootstepsi00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 105",
+                "notes": "Londres, Longman, Brown, Green, and Longmans, 1856 ; exemplaire numérisé sur archive.org. Récit d'un voyage fait en 1854-1855 dans le pays somali et jusqu'à Harar, chapitre sur les Somalis. Voyageur britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Page 105 : « Some attempt, as usual, to establish a holy origin, deriving themselves like the Shaykhash from the Caliph Abubekr ». Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Hawiyah, écrit ainsi par Richard Burton, est celui d'une tribu puissante du pays des Majerteen. Ses membres appellent Hashiyah tous les autres Somalis et se tiennent ainsi pour l'égal de tout le reste du peuple, écrit-il.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "First Footsteps in East Africa; or, An Exploration of Harar",
+                "author": "Richard F. Burton",
+                "year": 1856,
+                "url": "https://archive.org/details/firstfootstepsi00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 105",
+                "notes": "Londres, Longman, Brown, Green, and Longmans, 1856 ; exemplaire numérisé sur archive.org. Récit d'un voyage fait en 1854-1855 dans le pays somali et jusqu'à Harar, chapitre sur les Somalis. Voyageur britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Page 105 : « they call all Somal except themselves Hashiyah, and thus claim to be equivalent to the rest of the nation ». Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Haouiya figure chez l'officier de marine Charles Guillain, qui range les Soumal-Haouiya parmi les trois grandes familles des Somalis, avec les Soumal-Adji et les Soumal-Rahhan'ouine.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Documents sur l'histoire, la géographie et le commerce de l'Afrique orientale, deuxième partie, tome I",
+                "author": "Charles Guillain",
+                "year": 1856,
+                "url": "https://archive.org/details/documentssurlhis21guil",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 399, note 2",
+                "notes": "Paris, Arthus Bertrand, 1856, deuxième partie, tome premier : « Relation du voyage d'exploration à la côte orientale d'Afrique exécuté pendant les années 1846, 1847 et 1848 par le brick le Ducouëdic », lue en fac-similé sur archive.org. Officier de marine français, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Page 399, note 2 : la race des Soumal « comprend trois grandes familles principales : les Soumal-Adji, dont les Medjeurtine font partie ; les Soumal-Haouiya et les Soumal-Rahhan'ouine ». Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1848,
+              "to": 1848,
+              "label": "1848"
+            },
+            "era": "polity",
+            "statement": "Le nom Haweea désigne, chez C. J. Cruttenden, une tribu voisine des Marehan, qui tient une bande de côte entre la vallée du Nogal et la mer. Il la dit d'une autre « caste » que les Somalis.",
+            "sources": [
+              {
+                "title": "Memoir on the Western or Edoor Tribes, Inhabiting the Somali Coast of N.-E. Africa, with the Southern Branches of the Family of Darrood, Resident on the Banks of the Webbe Shebeyli, Commonly Called the River Webbe",
+                "author": "C. J. Cruttenden",
+                "year": 1849,
+                "url": "https://archive.org/details/jstor-1798086",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 66",
+                "notes": "Journal of the Royal Geographical Society of London, vol. 19, 1849, p. 49-76 ; mémoire daté d'Aden le 12 mai 1848 et lu le 13 novembre 1848, par le lieutenant C. J. Cruttenden, de la marine des Indes, agent politique adjoint à Aden. Lu en fac-similé (copie JSTOR Early Journal Content) sur archive.org. Officier britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Page 66 : « Of Murreyhan but little is known, bordering as it does on the Haweea tribe, who are a different caste of people to the Somalis » ; la vallée du Nogal « separated from the sea by a belt of country occupied by the tribe of the Haweea ». Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "Lecture proposée en 1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Hawiye se cacherait déjà sous la forme El-Hadyé, que le géographe Edrisi donne au XIIe siècle à des villages de la montagne de Hafoun : Charles Guillain propose d'y lire Haouiia, d'après Ibn Saïd et Aboulféda. Ce n'est qu'une lecture, car le texte d'Edrisi porte une autre forme.",
+            "sources": [
+              {
+                "title": "Documents sur l'histoire, la géographie et le commerce de l'Afrique orientale, première partie",
+                "author": "Charles Guillain",
+                "year": 1856,
+                "url": "https://archive.org/details/documentssurlhis01guil",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 191 et p. 203",
+                "notes": "Paris, Arthus Bertrand, 1856, première partie : « Exposé critique des diverses notions acquises sur l'Afrique orientale », lue en fac-similé sur archive.org. L'auteur, capitaine de vaisseau, y traduit et commente les géographes arabes. Page 191 : Edrisi, « géographe du XIIe siècle ». Page 203 : « Au lieu d'El-Hadyé, c'est El-Haouiié ou Haouiia qu'il faut lire, d'après Ibn-Sayd et Aboulféda ; Haouiia est le nom d'une population soumali, dont le territoire, au temps d'Edrisi, comprenait la presqu'île de Hhafoun ». Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1240,
+              "to": 1260,
+              "label": "Vers le milieu du XIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Hawiye apparaît, sous la forme Haouiia, chez le géographe arabe Ibn Saïd, qui écrit vers le milieu du XIIIe siècle : Merka, ville de musulmans au bord de la mer, est pour lui « la capitale du pays des Haouiia, qui forment plus de cinquante tribus ou bourgades ». Nous le lisons dans la traduction de Charles Guillain, parue en 1856. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple qui le porte existait avant elle.",
+            "formAsWritten": "Haouiia",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Documents sur l'histoire, la géographie et le commerce de l'Afrique orientale, première partie",
+                "author": "Charles Guillain",
+                "year": 1856,
+                "url": "https://archive.org/details/documentssurlhis01guil",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 236 et p. 238",
+                "notes": "Paris, Arthus Bertrand, 1856, première partie : « Exposé critique des diverses notions acquises sur l'Afrique orientale », lue en fac-similé sur archive.org. L'auteur, capitaine de vaisseau, y traduit et commente les géographes arabes. Page 236 : « Ibn-Sayd, géographe qui écrivait vers le milieu du XIIIe siècle », dont Guillain traduit le traité Djagrafya. Page 238 : « A l'orient de Hhafouny, parmi les villes des Berbers qui sont connues sur le bord de la mer, est celle de Meurka, dont les habitants sont musulmans […]. C'est la capitale du pays des Haouiia, qui forment plus de cinquante tribus ou bourgades ». Trace de seconde main : nous n'avons pas lu le texte arabe ; la forme Haouiia est la transcription de Guillain. Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La synthèse de Hinds classe Hawiye parmi les quatre grandes familles claniques patrilinéaires auxquelles appartient la majorité somalie ; elle documente un principe de filiation, mais pas l'étymologie du nom.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Somali networks — structures of clan and society",
+                "author": "Róisín Hinds",
+                "year": 2013,
+                "url": "https://gsdrc.org/publications/somali-networks-structures-of-clan-and-society/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "GSDRC, Helpdesk Research Report, juin 2013, page de présentation lue sur le site de l'éditeur (le PDF lié ne s'ouvrait plus). Résumé : « The Somali majority belong to four patrilineal clan families: the Darod, Hawiye, Dir, and Rahanweyn. » Lu le 18 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

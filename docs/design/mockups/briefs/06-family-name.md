@@ -1,12 +1,48 @@
 # Brief 6 — The family-name fiche (patronyme)
 
+### Approval record (2026-10-18, by the operator)
+
+Claude Design drew `name-traore` at 430, 768 and 1440 and two new state
+boards, `name-state-thin-kollo` and `name-state-weak-sarr`. The operator
+approved them on 2026-10-18 in chat, with eight decisions sent back to Claude
+Design to apply before the boards are recorded:
+
+1. The three boards are approved, subject to the changes below.
+2. **Length:** the sources list folds behind one line and the « Origine »
+   types fold to their title and number of accounts (about 8,400 px at 430
+   instead of about 15,900); the alliances sentence once, the six names as
+   links.
+3. **Merging « Origine » into the history of the names:** not now. It is
+   ETNI-2105, a data change; « Origine » stays, folded.
+4. **« Équivalents chez d'autres peuples »** in « Le nom », under the
+   spellings: Sane, Mane, Ouédraogo, Dembélé, Diouf, Touré à Ségou, and Diop en
+   pays wolof.
+5. **The page title, breadcrumb and first spelling read « Traoré »**, the
+   spelling of the history and of the name's address.
+6. **The sources block is titled « Les sources de ce nom de famille »**, with
+   « Plusieurs sources expliquent ce nom de famille. Voici leurs 14 récits,
+   rangés par forme, puis par type de source. » This is the code's wording
+   (PR #1830); it puts neither Traoré nor Tarawele forward. No figure of style
+   in any label (operator rule, 2026-10-17).
+7. **Kollo and Sarr** keep Claude Design's sentence for a name the sources
+   mention without explaining it: the third state of the sentence, to add to
+   the copy when the fiche is implemented.
+8. **Item 6 below, the link to the name's story,** is drawn on the three
+   boards with a plain label.
+
+Found while drawing, outside the boards: the griots' accounts in the history
+are filed as academic publications, so the code would say « aucun récit
+transmis oralement » about Traoré (ETNI-2104); and the copy said « les noms de
+ce nom de famille » (fixed in PR #1830).
+
 Read [`README.md`](README.md) first. Briefs 1 to 5 and 9 are approved and
 implemented or recorded; this brief reuses their components instead of
 redrawing them (see "Approved boards" in
 [`01-result-page-timeline.md`](01-result-page-timeline.md),
 [`02-people.md`](02-people.md), [`03-language.md`](03-language.md),
 [`04-language-family.md`](04-language-family.md) and
-[`05-country.md`](05-country.md)): the fiche variant of « Les sources parlent »,
+[`05-country.md`](05-country.md)): the fiche variant of the sources block
+(« Les sources des noms … », renamed on 2026-10-17),
 the closing band « Ce que nous ne savons pas encore », « Poursuivre avec un autre
 nom », the competing-readings grid, figures that carry their caveat, and the
 rule that an empty chapter disappears and its silence goes to the closing band.
@@ -68,7 +104,7 @@ social post (`traore-diop`) already points here.
 
 - **The page already has a sources-by-type chapter.** « Origine » groups the
   origin accounts by four types with carrier, collector and claim status; the
-  approved « Les sources parlent » groups accounts by the seven source-diamond
+  approved sources block groups accounts by the seven source-diamond
   families, oral first. They overlap. The fiche also holds a second set of
   accounts, the history of the names (*Traoré* 11, *Tarawele* 3), which the
   board does not show at all. Report what each one covers.
@@ -103,11 +139,12 @@ social post (`traore-diop`) already points here.
 
 ## What to change
 
-1. **Add « Les sources parlent »** in the fiche variant over the history of the
+1. **Add the sources block** in the fiche variant over the history of the
    names (*Traoré* 11 accounts, *Tarawele* 3): accounts grouped by name first,
    then by the seven source-diamond families, oral first, only the first name
-   open. Title it for a family name (propose « Qui raconte ce nom de
-   famille ? » and mark it as a proposal) and tell me where you place it and why.
+   open. Its title is « Les sources du nom Traoré » with one plain sentence
+   under it, as the operator fixed it on 2026-10-17 for every board (no
+   « Qui raconte … ? », no eyebrow); tell me where you place it and why.
    Keep « Origine » as it is; **propose**, without applying it, how the two
    could be merged.
 2. **Add the closing band** « Ce que nous ne savons pas encore » before
@@ -228,3 +265,77 @@ the same institution; no count of bearers.
   reliable » label on any source.
 - Redraw the approved components: reuse them from `Main`.
 - Put the thesis anywhere but the closing band.
+
+## Approved boards (2026-10-18)
+
+Recorded in `docs/design/mockups/site/`. The operator approved the three
+boards on 2026-10-18 with eight decisions, applied before recording.
+
+- `name-traore`, at 430, 768 and 1440:
+  - the title, the trail and the first spelling read « Traoré »; the rest of
+    the hero is unchanged;
+  - « Le nom » gains « Équivalents chez d'autres peuples » under the spellings
+    (Sane, Mane, Ouédraogo, Dembélé, Diouf, Touré à Ségou, et Diop en pays
+    wolof), then the link « Lire l'histoire du nom Traoré », with the hint
+    « La page du nom présente ce que disent les sources : qui l'a donné, à
+    qui, quand et pourquoi, du plus récent au plus ancien. »;
+  - the sources block follows « Le nom », titled « Les sources de ce nom de
+    famille », with « Plusieurs sources expliquent ce nom de famille. Voici
+    leurs 14 récits, rangés par forme, puis par type de source. »; Traoré open,
+    Tarawele folded;
+  - « Origine » is kept, each of its four types folded to its title and number
+    of accounts;
+  - « Alliances » gives the sentence once and the six names as links side by
+    side;
+  - « Homonymes » goes; its silence joins the closing band;
+  - the closing band: the oral traditions known only through E. A. Bogacheva,
+    Djibril Tamsir Niane and Youssouf Tata Cissé; no meaning for the word in
+    the dictionaries consulted; before the oldest trace; no homonym, the
+    spellings being one jamu; no count of bearers;
+  - « Poursuivre avec un autre nom »: Diarra, Diop, Touré, Diawara, each with
+    the first sentence of its summary; Abaza, Koné and Condé are left out;
+  - the sources list folds behind « La liste »;
+  - footer B.
+- `name-state-thin-kollo` (new): two forms, two accounts; no naming-system line
+  under the title and no « Le nom » rows the fiche declares unestablished;
+  « Homonymes » filled with the two places the fiche holds (Kollo in Niger,
+  Kolo-Mandouka in Cameroon), never merged; its silences in the closing band.
+- `name-state-weak-sarr` (new): the noindex page without alarm; the closing
+  band opens on the chapters not yet documented.
+
+The sources-block sentence has three states: several sources explain the name;
+one source explains it; the sources mention the name without explaining it
+(« Deux sources mentionnent ce nom, sans en expliquer l'origine. … »), the
+last one drawn on Kollo and Sarr.
+
+Measured at 430 px on a render without the Google fonts (about 2.6 % taller
+than the canvas): `name-traore` 15,885 px before the folds, 8,202 after;
+`name-state-thin-kollo` 7,474 then 5,947; `name-state-weak-sarr` 5,256 then
+5,228 (the link to the story adds what its folded list saves).
+
+Decided, not drawn:
+
+1. Merging « Origine » into the history of the names becomes a data ticket, ETNI-2105.
+2. The code's silence for a family name reads « les noms de ce nom de
+   famille », and on Traoré it would say that no oral account exists while
+   « Origine » holds four: the griots' accounts are typed as academic works in
+   the history. The board draws the line that names who wrote them down. The data fix is ETNI-2104; the copy is fixed in PR #1830.
+3. Point i: « Origine », « Sources », « Alliances », « Homonymes » and
+   « Porteurs » match the live page word for word on 2026-10-18; the live page
+   has a rewritten « Le nom » (plain social function, country names in full)
+   and lists Malinké before Bambara.
+
+### ETNI-2105 board amendment approved 2026-10-18
+
+The operator approved these amendments in chat on 2026-10-18. They are recorded
+in the canonical `name-traore` boards at 430, 768 and 1440 px:
+
+- Move the origin narratives into the name history and show each migrated
+  claim's status as plain text in its period line (including « Revendiquée »
+  and « Contestée »); statuses do not change the order or visual weight of an
+  account.
+- Replace the folded « Origine » account groups with one sentence directing
+  readers to the sourced narratives in the name history.
+
+This approval amends item 3 in the approval record above. The original record
+remains as the decision history; this section records the later approval.

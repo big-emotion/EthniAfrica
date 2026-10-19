@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "YorubaNames analyse Ogunbiyi comme ògún-bí-èyìí, « Ògún a enfanté celui-ci », et recommande les graphies phonétiques Ògúnbíyìí ou Ògúnbíìyí.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["yorubanames-ogunbiyi"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -92,5 +87,40 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches « Ogunbiyi homonym etymology » et « Ogunbiyi surname origin other language » n'ont pas établi une graphie identique d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Les sources réunies dans ce dossier racontent l’histoire du nom Ogunbiyi.",
+    "originExplained": true,
+    "names": [
+      {
+        "nameText": "Ogunbiyi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "YorubaNames analyse Ogunbiyi comme ògún-bí-èyìí, « Ògún a enfanté celui-ci », et recommande les graphies phonétiques Ògúnbíyìí ou Ògúnbíìyí.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Ògúnbíyìí — YorubaNames",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.yorubaname.com/entries/Ogunbiyi?lang=yo",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page de la base collaborative YorubaNames consultée directement pour Ogunbiyi. Elle fournit la forme tonale, une glose et une segmentation morphologique ; son contenu communautaire est conservé au niveau « unverified »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

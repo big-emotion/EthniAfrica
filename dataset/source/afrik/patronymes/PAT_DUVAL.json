@@ -6,7 +6,7 @@
   },
   "id": "PAT_DUVAL",
   "nameMain": "Duval",
-  "nameSystem": "clan_name",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Duval",
@@ -19,10 +19,11 @@
     }
   ],
   "transmissionMode": "patrilineal",
-  "designatedSocialUnit": "lineage",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -71,10 +72,6 @@
   ],
   "gaps": [
     {
-      "fieldPath": "origin",
-      "reason": "les résultats exacts « Duval », les Indian Immigration Archives du Mahatma Gandhi Institute, les publications de l'Aapravasi Ghat et les catalogues bibliographiques sur l'engagisme à Maurice ont été consultés. Ils attestent le nom ou décrivent le fonds disponible, mais n'ont livré ni étymologie publiée ni chronique attribuable à une lignée précise ; l'origine reste donc vide."
-    },
-    {
       "fieldPath": "alliances",
       "reason": "les résultats exacts « Duval », les Indian Immigration Archives du Mahatma Gandhi Institute, les publications de l'Aapravasi Ghat et les catalogues bibliographiques sur l'engagisme à Maurice, complétés par les termes « alliance », « cousinage » et « joking relationship », n'ont fait apparaître aucune paire nommée et sourcée reliant Duval à un autre nom documenté ici."
     },
@@ -90,5 +87,92 @@
       "fieldPath": "homonyms",
       "reason": "les résultats exacts « Duval », les Indian Immigration Archives du Mahatma Gandhi Institute, les publications de l'Aapravasi Ghat et les catalogues bibliographiques sur l'engagisme à Maurice n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Duval est un nom de famille porté à Maurice, où il figure dans les registres de mariage de Port-Louis dès 1728, sous la colonie française. En français, il désignerait une personne dont la maison se trouvait dans une vallée, ou qui venait d'un lieu appelé Val ; on ne sait pas avec certitude d'où venaient les familles mauriciennes qui le portent. Nous présentons ces explications plus bas.",
+    "names": [
+      {
+        "nameText": "Duval",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Un nom de famille de Maurice, écrit à Port-Louis dès 1728 ; en français, « de la vallée ».",
+        "periodLabel": "Écrit à Port-Louis dès 1728",
+        "accounts": [
+          {
+            "period": {
+              "from": 1925,
+              "to": 2022,
+              "label": "Proposé en 1925, repris en 2022"
+            },
+            "statement": "Le nom Duval désignerait, en français, une personne dont la maison se trouvait dans une vallée : il viendrait de l'ancien mot val, « vallée », précédé de du, selon le dictionnaire des noms de famille dirigé par Patrick Hanks. Albert Dauzat le range déjà parmi les noms, aussi nombreux que Vallée ou Laval, qui disent où se trouvait la maison de la famille.",
+            "hypothesisGroup": "origine du nom Duval",
+            "sources": [
+              {
+                "title": "Duval Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/duval?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e édition, Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 18 octobre 2026 dans la traduction française que le site affiche. La notice donne Duval comme nom breton, wallon, français et haïtien : un nom topographique pour une personne « de la vallée », de l'ancien français val avec du soudé, ou un nom d'habitation tiré de Val, nom de plusieurs lieux de France et de Wallonie. Elle note le nom en République dominicaine et, d'origine huguenote, en Angleterre, et donne pour l'anglais un autre sens possible, un diminutif d'un ancien prénom féminin. Elle ne parle pas de Maurice."
+              },
+              {
+                "title": "Les noms de personnes : origine et évolution",
+                "author": "Albert Dauzat",
+                "year": 1925,
+                "url": "https://archive.org/details/dauzatlesnomsdepersonnesorigine",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 88",
+                "notes": "Paris, Librairie Delagrave, 1925, exemplaire numérisé par Google et déposé sur Internet Archive, lu le 18 octobre 2026. Page 88, parmi les noms qui évoquent la situation de la maison familiale : « les Vallée, Laval, Duval, Delaval, Duvau, Desvaux, ne sont pas moins nombreux ». L'auteur traite des noms de famille de France ; il ne parle pas de Maurice."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "statement": "Le nom Duval viendrait aussi de lieux appelés Val, en France et en Wallonie, et désignerait d'abord une personne qui en venait, selon le dictionnaire des noms de famille dirigé par Patrick Hanks.",
+            "hypothesisGroup": "origine du nom Duval",
+            "sources": [
+              {
+                "title": "Duval Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/duval?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e édition, Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 18 octobre 2026 dans la traduction française que le site affiche. À côté du nom topographique, la notice donne un nom d'habitation pour quelqu'un du Val, « le nom de plusieurs endroits dans diverses régions de France et en Belgique (Wallonie) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1728,
+              "to": 1728,
+              "label": "1728"
+            },
+            "era": "colonial",
+            "statement": "Le nom Duval figure comme nom de famille dans les tables des mariages de Port-Louis, à l'île Maurice, à partir de 1728, selon le relevé du Cercle de généalogie Maurice-Rodrigues. C'est la plus ancienne trace de ce nom à Maurice que le projet connaît ; elle ne dit pas d'où venaient les familles qui le portaient.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Port-Louis [Ile Maurice] : mariages, table des patronymes en DUV",
+                "author": "Cercle de Généalogie Maurice-Rodrigues",
+                "year": null,
+                "url": "https://cgmrgenealogie.org/tab_mari.php/Port-Louis+%5BIle+Maurice%5D/_DUV",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Base de données d'une association de généalogie, qui dépouille les tables et actes d'état civil, les registres paroissiaux et les registres d'inhumation. Lue le 18 octobre 2026. Le patronyme DUVAL y figure dans les mariages de Port-Louis pour la période 1728-1807, avec 6 et 9 mentions dans deux colonnes, « Intervenant 1 » et « Intervenant 2 », que la page ne définit pas. Le détail des actes n'a pas été lu."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

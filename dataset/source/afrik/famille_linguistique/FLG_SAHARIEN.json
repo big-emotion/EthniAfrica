@@ -17,9 +17,9 @@
         "accounts": [
           {
             "period": {
-              "from": null,
-              "to": null,
-              "label": "Classification exposée au présent par l'auteur"
+              "from": 1980,
+              "to": 1980,
+              "label": "Classification exposée en 1980"
             },
             "era": "modern",
             "aspect": "usage",
@@ -39,9 +39,9 @@
           },
           {
             "period": {
-              "from": null,
-              "to": null,
-              "label": "Usage décrit au présent par les auteurs"
+              "from": 1990,
+              "to": 1990,
+              "label": "Usage décrit en 1990"
             },
             "era": "modern",
             "aspect": "usage",
@@ -138,6 +138,7 @@
               "to": 1950,
               "label": "1949-1950"
             },
+            "era": "colonial",
             "birth": true,
             "statement": "Le nom saharien apparaît sous la forme saharien central dans la série d'articles où Joseph Greenberg propose en 1949-1950 sa classification des langues d'Afrique, selon le tableau qu'il en donne lui-même. Il en fait alors une famille à part. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
             "actors": [

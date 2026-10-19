@@ -26,13 +26,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Le chapitre historique de Nthala présente Phiri, avec Banda, comme l'un des deux principaux clans autour desquels s'organisait la direction duale de la société chewa. Il établit ainsi le statut de nom de clan dans ce contexte, sans reconstruire son étymologie.",
-        "claimStatus": "established",
-        "sourceRefs": ["nthala-2009-phiri"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -234,6 +229,27 @@
                 "source_kind": "academic",
                 "page": "p. 11 ; p. 37-38",
                 "notes": "Woodbridge, James Currey, 2020. Lu sur une copie non officielle en ligne. Page 11 : le livre de Samuel Josia Ntara, Mbiri ya Achewa, paraît d'abord en 1944 ou en 1945 ; l'auteur le cite dans sa traduction anglaise de 1973. Pages 37-38 : l'auteur cite en entier la légende recueillie par Ntara sur la naissance des noms Phiri et Banda (Ntara 1973, p. 6), puis une autre légende rapportée par Ian Linden en 1972 (Linden 1972, p. 14) ; il juge que les Chewa avaient des noms de clan depuis toujours et que ces légendes expliquent une origine oubliée. Nous n'avons pas lu Ntara ni Linden eux-mêmes. Relu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le chapitre historique de Nthala présente Phiri, avec Banda, comme l'un des deux principaux clans autour desquels s'organisait la direction duale de la société chewa. Il établit ainsi le statut de nom de clan dans ce contexte, sans reconstruire son étymologie.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "The Chewa Art of Drumming and Its Influence on Modern Malawian Music",
+                "author": "Grant Macloly Moloko Nthala",
+                "year": 2009,
+                "url": "https://scholar.ufs.ac.za/server/api/core/bitstreams/e9174187-e670-478d-a826-bdb824b67f56/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 51",
+                "notes": "Mémoire, Université de l'État-Libre, 2009, lu dans le PDF intégral. Page 51 : la société chewa avait une direction double, à l'image de ses deux clans principaux, Banda et Phiri ; la direction des Phiri, à partir de 1400 environ, porte le titre de Kalonga. L'auteur s'appuie sur Boucher et sur Kings M. Phiri. Lu le 11 octobre 2026."
               }
             ]
           }

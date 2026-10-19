@@ -32,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Essizewa classe Kossi parmi les prénoms ewe attribués selon le jour de la semaine et l'associe aux garçons nés le dimanche.",
-        "claimStatus": "established",
-        "sourceRefs": ["essizewa-2006-kossi", "westermann-1907-ewe"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -147,6 +142,37 @@
             "formAsWritten": "Kosi",
             "birth": true,
             "sources": [
+              {
+                "title": "Grammatik der Ewe-Sprache",
+                "author": "Diedrich Westermann",
+                "year": 1907,
+                "url": "https://archive.org/details/grammatikderewes00westuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 49-50",
+                "notes": "Berlin, 1907. Lu sur l'exemplaire numérisé d'archive.org le 15 octobre 2026. Pages 49-50 : le tableau des noms de jour éwé ; l'auteur écrit que ces noms viennent du twi (« stammen aus dem Tschi »)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Essizewa classe Kossi parmi les prénoms ewe attribués selon le jour de la semaine et l'associe aux garçons nés le dimanche.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "A Sociolinguistic Survey of Language Contact in Togo: A Case Study of Kabiye and Ewe",
+                "author": "Komlan E. Essizewa",
+                "year": 2006,
+                "url": "https://journalofwestafricanlanguages.org/downloads?catid=92&id=448&m=0&task=download.send",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 41",
+                "notes": "Komlan E. Essizewa, Journal of West African Languages XXXIII (2006), PDF intégral consulté, p. 41. Le passage cite explicitement Kossi parmi les noms ewe donnés selon le jour de naissance et l'associe au dimanche ; aucune claim concernant un autre nom n'est transférée ici."
+              },
               {
                 "title": "Grammatik der Ewe-Sprache",
                 "author": "Diedrich Westermann",

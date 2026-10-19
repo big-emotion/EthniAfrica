@@ -116,6 +116,184 @@
         "url": "https://www.cia.gov/the-world-factbook/countries/nigeria/",
         "tier": "official",
         "source_kind": "government"
+      },
+      {
+        "title": "An Atlas of Nigerian Languages",
+        "url": "https://web.archive.org/web/20250528003305/https://www.rogerblench.info/Language/Africa/Nigeria/Atlas%20of%20Nigerian%20Languages%202020.pdf",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Roger Blench, édition de 2020, lue dans la copie qu'en garde la Wayback Machine. Pages 48 et 49 : le groupe jar, les entrées Zhar et Gwak, et le nom Jarawa."
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Jarawa désigne des groupes de l'État de Bauchi, au Nigeria, qui parlent le bankal et le gingwak. C'est un nom haoussa, employé aussi pour d'autres groupes de langues de la région. On ne sait pas comment ces groupes se nomment eux-mêmes : aucune source que nous avons lue ne le dit, même si les locuteurs du bankal appellent leur langue Zhar. D'autres noms existent, dont Nyamnyam, « cannibales », que leur donnaient les gens du Bornou au XIXe siècle. On ne sait pas avec certitude d'où vient le nom Jarawa ; nous présentons plus bas ce que disent les sources.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Jarawa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "hau",
+        "namedBy": null,
+        "shortLine": "Le nom de ces groupes de l'État de Bauchi dans les écrits depuis 1854 ; son origine n'est pas connue.",
+        "periodLabel": "Écrit Dṣā́rāwa en 1854 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Jarawa désigne, dans le catalogue de langues Glottolog, une langue du Nigeria dont le code ISO a été partagé en 2012 entre le gwak et le bankal. Le catalogue cite aussi les formes Jar, Jara, Jaranchi et Jarawan Kogi. On ne sait pas avec certitude d'où vient ce nom : aucune source que nous avons lue ne l'explique.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog — Jarawa (Nigeria)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/jara1263",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues, version 5.3, lu le 18 octobre 2026. Le code ISO jar a été retiré en 2012 et partagé entre Gwak (jgk) et Bankal (jjr). Autres noms, d'après Multitree : Jar, Jara, Jaranchi, Jarawa, Jarawan Kogi. Le catalogue n'explique pas leur origine."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "Rapporté en 2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Jarawa est un nom haoussa, que l'on emploie pour de nombreux groupes de langues du Nigeria : les parlers des Jarawa de Bauchi, mais aussi l'izere des Afizere et plusieurs autres, selon l'atlas des langues du Nigeria du linguiste Roger Blench. L'atlas note aussi que les locuteurs du bankal appellent leur langue Zhar. Il ne dit pas comment ces groupes se nomment eux-mêmes ; parmi les autres noms des locuteurs du bankal, il cite Bankalawa.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "An Atlas of Nigerian Languages",
+                "author": "Roger Blench",
+                "year": 2020,
+                "url": "https://web.archive.org/web/20250528003305/https://www.rogerblench.info/Language/Africa/Nigeria/Atlas%20of%20Nigerian%20Languages%202020.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "pp. 48-49",
+                "notes": "Édition de 2020 (version du 11 septembre 2020), diffusée par l'auteur, linguiste de l'université de Cambridge, sur son site. L'adresse d'origine refusait la connexion le 18 octobre 2026 ; le document a été lu ce jour-là dans la copie qu'en garde la Wayback Machine, pages vues sur l'image. Page 48, groupe jar (« Jar cluster »), entrée Zhar : « 1.B Zhar », le nom que le peuple donne à sa langue selon la clé des rubriques en tête de l'index ; « 2.A Ɓankal, Bankal, Bankala » ; « 2.C Bankalawa », un autre nom du peuple ; « 3. Dass town and northward to Bauchi town ». La rubrique 1.C, le nom que le peuple se donne, n'est remplie ni pour le zhar ni pour le gwak. Page 49 : « Jarawa – a Hausa name used to refer to many language groups: Izere, Ribina, Lame cluster, Ɓarawa […] and the languages of the Jarawan Bantu group including: the Jarawa cluster, Mbárù, Gùra, Rúhû, Gubi, Dulbu, Lábìr, Kulung, and Gwa »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Jarawa désigne en 1919, dans un recueil de rapports officiels britanniques, un grand peuple au sud de la ville de Bauchi, de quatre-vingt-dix à cent mille personnes, divisé en groupes aux parlers distincts. Le recueil sépare ceux des plaines, soumis à l'émir de Bauchi, de ceux des collines, restés indépendants, et juge leur origine obscure.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Notes on the Tribes, Provinces, Emirates and States of the Northern Provinces of Nigeria",
+                "author": "O. Temple, sous la direction de C. L. Temple",
+                "year": 1919,
+                "url": "https://archive.org/details/notesontribespro00tempuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 165",
+                "notes": "Le Cap, Argus Printing and Publishing, recueil établi d'après des rapports officiels. Lu le 18 octobre 2026 sur la numérisation de l'université de Toronto sur Internet Archive. Page 165 : « The Jarawa is a large tribe occupying a wide area to the south of Bauchi city » ; « The origin of the Jarawa is obscure »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Jarawa est celui que le linguiste Harry Johnston donne en 1919 à une langue de la région de Bauchi, dont il distingue deux parlers, le bununu et le zungur. Il y reconnaît la langue que Koelle écrivait Dsarawa et que Frederick Migeod écrivait Jara.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Comparative Study of the Bantu and Semi-Bantu Languages, vol. 1",
+                "author": "Harry H. Johnston",
+                "year": 1919,
+                "url": "https://archive.org/details/comparativestudy01johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 716",
+                "notes": "Oxford, Clarendon Press. Lu le 18 octobre 2026 dans la numérisation d'Internet Archive. Page d'ouverture des groupes B à G, sans numéro imprimé : le numéro 716 est déduit des pages voisines. Note 4 de la langue 253, Jarawa : « Koelle's 'Dsarawa' ; Migeod's 'Jara' » ; un agent de l'administration nigériane a recueilli un nouveau vocabulaire ; « two dialects : Bununu and Zuñgur »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Jarawa apparaît par écrit sous une forme proche, Dṣā́rāwa, dans la Polyglotta Africana du linguiste missionnaire Sigismund Koelle. Il y recueille à Freetown la langue d'Albarka, né à Garaka, la capitale du pays, et envoyé enfant à Bauchi comme tribut d'esclaves ; ce pays paie tribut au chef peul Yakuba, qui réside à Bauchi. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple existait déjà avant elle.",
+            "formAsWritten": "Dṣā́rāwa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://archive.org/details/polyglottaafrica00koel",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 18-19",
+                "notes": "Londres, Church Missionary House, 1854. Lu le 18 octobre 2026 dans la numérisation d'Internet Archive ; les pages sont lues sur l'image. Remarques introductives, langue 2 du groupe E : « Dṣā́rāwa, by the Bọ́rnuese and others called \"Nyamnyám,\" i. e. cannibals » ; l'informateur, Albarka, est né « in the town of Gárāka » et a été envoyé à « Bọ́uṣi » « as part of the annual tribute in slaves » ; « Gárāka, the Dṣā́rāwa capital, is three days' journey from Bọ́uṣi […] to whom Dṣā́rāwa is tributary »."
+              },
+              {
+                "title": "A Comparative Study of the Bantu and Semi-Bantu Languages, vol. 1",
+                "author": "Harry H. Johnston",
+                "year": 1919,
+                "url": "https://archive.org/details/comparativestudy01johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 716",
+                "notes": "Oxford, Clarendon Press. Lu le 18 octobre 2026 dans la numérisation d'Internet Archive ; page sans numéro imprimé, déduite des pages voisines. Note 4 : Johnston identifie la langue jarawa à « Koelle's 'Dsarawa' »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nyamnyam",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les gens du Bornou et d'autres, selon Sigismund Koelle",
+        "shortLine": "Un nom donné par les gens du Bornou, qui veut dire « cannibales », relevé en 1854.",
+        "periodLabel": "Relevé en 1854",
+        "accounts": [
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Nyamnyam, qui veut dire « cannibales », est celui que les gens du Bornou et d'autres voisins donnaient aux Dsarawa, selon le linguiste missionnaire Sigismund Koelle. Koelle l'emploie lui-même pour son informateur, qu'il dit être le seul Nyamnyam de Sierra Leone. C'est la plus ancienne trace de ce nom pour ce peuple que le projet connaît.",
+            "formAsWritten": "Nyamnyám",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://archive.org/details/polyglottaafrica00koel",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 18-19",
+                "notes": "Londres, Church Missionary House, 1854. Lu le 18 octobre 2026 dans la numérisation d'Internet Archive ; les pages sont lues sur l'image. « Dṣā́rāwa, by the Bọ́rnuese and others called \"Nyamnyám,\" i. e. cannibals » (p. 18-19) ; l'informateur « is the only Nyamnyám » en Sierra Leone (p. 19)."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

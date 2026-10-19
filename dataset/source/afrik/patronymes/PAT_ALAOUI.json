@@ -32,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L’étude classe al-Alaoui parmi les noms de famille marocains traditionnels dérivés du nom d’une dynastie arabe. Ce classement onomastique ne prouve pas que tous les porteurs actuels appartiennent à la dynastie alaouite.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["names-potter-alaoui"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -236,6 +231,27 @@
                 "source_kind": "archive",
                 "page": "p. 249-250",
                 "notes": "Paris, Ernest Leroux, 1907. Chronique marocaine du XIXe siècle, lue dans la traduction française sur l'exemplaire numérisé d'archive.org le 14 octobre 2026. Pages 249-250, sous le sultan Sidi Mohammed ben Abderrahmân : un agitateur se réfugie dans le mausolée de Moulay Idrîs ; « un certain nombre de chérîfs Idrîsis et 'Alaouis se massèrent autour de lui », puis « un chérîf 'Alaoui s'avança sur lui »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L’étude classe al-Alaoui parmi les noms de famille marocains traditionnels dérivés du nom d’une dynastie arabe. Ce classement onomastique ne prouve pas que tous les porteurs actuels appartiennent à la dynastie alaouite.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "« Si Mohammed! » : Names as Address Forms in Moroccan Arabic, Names, vol. 47, n° 2",
+                "author": "Terrence M. Potter",
+                "year": 1999,
+                "url": "https://ans-names.pitt.edu/ans/article/download/1544/1543/3090",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 158",
+                "notes": "American Name Society, juin 1999, p. 157-172. Lu en texte intégral le 14 octobre 2026. Page 158 : « Traditional family names may derive from prestigious Andalusian Muslim families […], Arab tribes […] or Arab dynasties (al-Alaoui, al-Idrissi) ». Les noms traditionnels étaient la règle avant 1950."
               }
             ]
           }

@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une contribution utilisateur propose pour Khelifi les sens arabes « progéniture », « héritier » ou « successeur ». Cette pluralité non référencée est conservée au niveau non vérifié et ne prouve aucune filiation.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["forebears-khelifi"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -104,5 +99,40 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les recherches « Khelifi lignée », « Khelifi clan », « Khelifi tribe » et « Khelifi place name » n’ont pas permis de déterminer si cette graphie désigne une lignée, un clan, une caste, une classe d’âge ou un établissement dans le contexte précis de la fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Les sources réunies dans ce dossier racontent l’histoire du nom Khelifi.",
+    "originExplained": true,
+    "names": [
+      {
+        "nameText": "Khelifi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une contribution utilisateur propose pour Khelifi les sens arabes « progéniture », « héritier » ou « successeur ». Cette pluralité non référencée est conservée au niveau non vérifié et ne prouve aucune filiation.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Khelifi Surname Origin, Meaning & Last Name History — Forebears",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://forebears.io/surnames/khelifi",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Répertoire communautaire consulté le 2 septembre 2026. Sa table atteste Khelifi en Tunisie et une contribution utilisateur propose plusieurs sens arabes sans bibliographie."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

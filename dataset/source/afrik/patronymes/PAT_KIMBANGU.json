@@ -22,13 +22,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "L'Encyclopaedia Africana identifie Simon Kimbangu comme appartenant au groupe kikongo et le situe à Nkamba, au Congo, avant sa mort en 1951. Cette notice établit l'ancrage historique du nom dans un milieu kongo congolais, sans proposer d'étymologie ni démontrer que Kimbangu désigne un clan.",
-        "claimStatus": "established",
-        "sourceRefs": ["encyclopaedia-africana-kimbangu"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -161,6 +156,26 @@
                 "source_kind": "academic",
                 "page": "annexe, notice 11",
                 "notes": "Courrier hebdomadaire du CRISP, n° 120, 1961, pages 1 à 24, lu sur Cairn.info. L'annexe donne des notices biographiques de responsables congolais de 1960-1961. La notice 11, « Kisolokele Charles », le dit né en 1914 à Kamba, Mukongo, « Fils aîné de Simon Kimbangu ». Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'Encyclopaedia Africana identifie Simon Kimbangu comme appartenant au groupe kikongo et le situe à Nkamba, au Congo, avant sa mort en 1951. Cette notice établit l'ancrage historique du nom dans un milieu kongo congolais, sans proposer d'étymologie ni démontrer que Kimbangu désigne un clan.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Kimbangu, Simon",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://encyclopaediaafricana.com/kimbangu-simon/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Encyclopaedia Africana consultée intégralement. Elle donne l'identité kikongo, le lieu de naissance, l'activité religieuse et la date de décès de Simon Kimbangu. Elle n'analyse pas le nom comme patronyme ou nom clanique."
               }
             ]
           }

@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
 import { InlineMarkup } from "@/components/search/feed/InlineMarkup";
 import {
@@ -15,13 +17,18 @@ export interface VerdictBlockProps {
   verdict: string;
   summary?: string;
   kind?: string;
-  eyebrow?: string;
+  eyebrow?: string | null;
   language?: Language;
   tone?: "answer" | "plain";
   /** Reviewed answers; when present they replace the generic verdict panel. */
   entries?: readonly NameAnswerEntry[];
   /** Matched subjects without a reviewed answer; each keeps a fiche link. */
   unanswered?: readonly SearchResult[];
+  /**
+   * The page's one invitation, when the verdict admits it does not know the
+   * name: asked where the reader reads first (brief 12, part A).
+   */
+  action?: ReactNode;
   className?: string;
 }
 
@@ -37,22 +44,34 @@ export function VerdictBlock({
   tone = "answer",
   entries = [],
   unanswered = [],
+  action,
   className,
 }: VerdictBlockProps) {
+  // The plain tone is drawn on the search-unknown boards with one rhythm at
+  // every width. Without the accented panel under it, the eyebrow set flush
+  // against the search field at 1200 px read as the field's caption.
+  const plain = entries.length === 0 && tone === "plain";
   return (
     <SearchFeedBlock
       id="verdict"
       zone="first"
-      className={cn("pt-afh-2xl min-[1200px]:pt-0", className)}
+      className={cn("pt-afh-2xl", !plain && "min-[1200px]:pt-0", className)}
     >
-      <p
-        data-testid="verdict-eyebrow"
-        className="text-afh-eyebrow font-semibold uppercase leading-[var(--afh-leading-eyebrow)] tracking-[var(--afh-eyebrow-tracking)] text-[color:var(--accent-ink)]"
+      {eyebrow === null ? null : (
+        <p
+          data-testid="verdict-eyebrow"
+          className="text-afh-eyebrow font-semibold uppercase leading-[var(--afh-leading-eyebrow)] tracking-[var(--afh-eyebrow-tracking)] text-[color:var(--accent-ink)]"
+        >
+          {eyebrow ?? nameAnswerCopy[language].eyebrow}
+          {kind ? <span className="text-afh-text-soft"> · {kind}</span> : null}
+        </p>
+      )}
+      <h1
+        className={cn(
+          "mt-afh-xs font-afh-display text-afh-hero font-black leading-[var(--afh-leading-hero)] text-afh-text [overflow-wrap:anywhere]",
+          !plain && "min-[1200px]:mt-afh-md"
+        )}
       >
-        {eyebrow ?? nameAnswerCopy[language].eyebrow}
-        {kind ? <span className="text-afh-text-soft"> · {kind}</span> : null}
-      </p>
-      <h1 className="mt-afh-xs font-afh-display text-afh-hero font-black leading-[var(--afh-leading-hero)] text-afh-text min-[1200px]:mt-afh-md">
         {name}
       </h1>
       {entries.length > 0 ? (
@@ -73,7 +92,7 @@ export function VerdictBlock({
           ) : null}
         </div>
       ) : (
-        <div data-verdict-panel="" className="mt-afh-lg text-afh-text">
+        <div data-verdict-panel="" className="mt-afh-md text-afh-text">
           <p className="font-afh-display text-afh-h3 font-bold leading-[var(--afh-leading-h3)]">
             <InlineMarkup text={verdict} />
           </p>
@@ -87,6 +106,7 @@ export function VerdictBlock({
       {unanswered.length > 0 ? (
         <UnansweredFicheLinks subjects={unanswered} language={language} />
       ) : null}
+      {action ? <div className="mt-afh-lg">{action}</div> : null}
     </SearchFeedBlock>
   );
 }

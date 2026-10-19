@@ -6,7 +6,7 @@
   },
   "id": "PAT_KOUNTCHE",
   "nameMain": "Kountché",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Kountché",
@@ -20,23 +20,19 @@
     {
       "spelling": "Kounche",
       "attestations": [
-        { "countryId": "NER", "sourceRefs": ["bornand-2004-kountche"] }
+        {
+          "countryId": "NER",
+          "sourceRefs": ["bornand-2004-kountche"]
+        }
       ]
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
-    "oralTraditions": [
-      {
-        "claim": "Dans le récit recueilli en 2000 auprès du jasare Jeliba Baje, la généalogie de Seyni Kountché remonte à Mali Bero, présenté comme le premier ancêtre de l'aristocratie zarma.",
-        "claimStatus": "claimed",
-        "griot": "Jeliba Baje (Djéliba Badjé)",
-        "transcription": "Zeneraal Seyni Kunce / Zarmakoy mo ga a hay / Zarmakoy Kunce / Sanda mo Maali [Beero] ize no.",
-        "sourceRefs": ["bornand-2004-kountche"]
-      }
-    ],
+    "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -111,8 +107,128 @@
       "reason": "Les graphies Kountché, Kounche et Kunce ont été recherchées dans les catalogues d'autorité et la bibliographie zarma ; aucune lignée homonyme d'origine distincte n'a été établie."
     },
     {
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait un nom de clan : dans la généalogie que rapporte Sandra Bornand, Kountché est le nom du père de Seyni Kountché, un nom de personne que le fils porte après le sien. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne dit que ce nom passe ensuite aux enfants de Seyni Kountché comme un nom de famille. La fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
+    },
+    {
       "fieldPath": "transmissionMode",
       "reason": "La tradition publiée établit une généalogie revendiquée de Seyni Kountché, mais ne décrit pas la règle de transmission du nom Kountché ; les recherches sur filiation, héritage et clan n'ont pas permis de remplacer « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kountché est connu au Niger comme celui de Seyni Kountché, président de 1974 à 1987. Dans la généalogie qu'un griot zarma récite pour lui, Kountché est le nom de son père : c'est d'abord un nom de personne. On ne sait pas ce qu'il veut dire, et le projet ne connaît pas encore de trace écrite ancienne de ce nom.",
+    "names": [
+      {
+        "nameText": "Kountché",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un père, porté par Seyni Kountché selon sa généalogie zarma ; son sens n'est pas connu.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": 2000,
+              "to": 2000,
+              "label": "Recueilli en 2000"
+            },
+            "era": "modern",
+            "statement": "Le nom Kountché est, dans la généalogie que le jasare zarma Jeliba Baje récite pour Seyni Kountché, le nom de son père, Kountché Karanta, lui-même fils de Karanta. C'est donc d'abord un nom de personne, celui du père, selon le récit que rapporte Sandra Bornand.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "L'idéologie de l'ostentation dans les sociétés zarma. L'exemple des relations entre nobles et jasare",
+                "author": "Sandra Bornand",
+                "year": 2004,
+                "url": "https://books.openedition.org/iheid/2375",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 18, 48-94, note 19",
+                "notes": "Dans Côté jardin, côté cour, Graduate Institute Publications, 2004, DOI 10.4000/books.iheid.2375. Lu le 18 octobre 2026 dans le navigateur, sur OpenEdition. § 18 : un récit de jasare dédié à « Seyni Kountché, un ancien Président de la République du Niger (1974-1987) », recueilli par l'autrice auprès de Jeliba Baje en 2000. § 48 : le jasare conclut par « l'énumération des ancêtres du président nigérien jusqu'à ses origines ultimes, Mali Bero, le père de l'aristocratie zarma ». Dans la traduction de la généalogie (§ 49-93), on lit « Zarmakoy Kountché », « Kountché Karanta », puis « Son père qui l'a engendré qui est Kountché Karanta » (§ 83) ; la note 19 donne le texte zarma, « Zeneraal Seyni Kunce / Zarmakoy mo ga a hay / Zarmakoy Kunce ». § 94 : la généalogie inscrit le président « dans la lignée des héros zarma dont il est le parent ». Les vers de louange sont résumés ici, non recopiés."
+              },
+              {
+                "title": "Généalogie récitée par le jasare Jeliba Baje",
+                "author": "Jeliba Baje (Djéliba Badjé), recueilli par Sandra Bornand",
+                "year": 2000,
+                "url": "https://books.openedition.org/iheid/2375",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "narrative": "La généalogie de Seyni Kountché remonte jusqu’à Mali Bero, présenté comme l’ancêtre de l’aristocratie zarma.",
+                "carrier": "Le jasare zarma Jeliba Baje (Djéliba Badjé)",
+                "place": "Niger",
+                "notes": "Généalogie recueillie par Sandra Bornand auprès de Jeliba Baje en 2000, transcrite en zarma et traduite dans son ouvrage publié en 2004. Le texte zarma figure en note 19."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2000,
+              "to": 2000,
+              "label": "Recueilli en 2000"
+            },
+            "era": "modern",
+            "statement": "Le nom Kountché se rattacherait, par la même généalogie, à Mali Bero, que le jasare présente comme l'ancêtre premier de l'aristocratie zarma. Sandra Bornand y voit une façon d'inscrire le président dans la lignée des héros zarma.",
+            "hypothesisGroup": "lignee-kountche",
+            "sources": [
+              {
+                "title": "L'idéologie de l'ostentation dans les sociétés zarma. L'exemple des relations entre nobles et jasare",
+                "author": "Sandra Bornand",
+                "year": 2004,
+                "url": "https://books.openedition.org/iheid/2375",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 18, 48-94, note 19",
+                "notes": "Dans Côté jardin, côté cour, Graduate Institute Publications, 2004, DOI 10.4000/books.iheid.2375. Lu le 18 octobre 2026 dans le navigateur, sur OpenEdition. § 18 : un récit de jasare dédié à « Seyni Kountché, un ancien Président de la République du Niger (1974-1987) », recueilli par l'autrice auprès de Jeliba Baje en 2000. § 48 : le jasare conclut par « l'énumération des ancêtres du président nigérien jusqu'à ses origines ultimes, Mali Bero, le père de l'aristocratie zarma ». Dans la traduction de la généalogie (§ 49-93), on lit « Zarmakoy Kountché », « Kountché Karanta », puis « Son père qui l'a engendré qui est Kountché Karanta » (§ 83) ; la note 19 donne le texte zarma, « Zeneraal Seyni Kunce / Zarmakoy mo ga a hay / Zarmakoy Kunce ». § 94 : la généalogie inscrit le président « dans la lignée des héros zarma dont il est le parent ». Les vers de louange sont résumés ici, non recopiés."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2000,
+              "to": 2000,
+              "label": "Écrit en 2000"
+            },
+            "era": "modern",
+            "statement": "Le nom Kountché s'écrit Kunce dans le texte zarma de cette généalogie, que Sandra Bornand publie en note.",
+            "formAsWritten": "Kunce",
+            "sources": [
+              {
+                "title": "L'idéologie de l'ostentation dans les sociétés zarma. L'exemple des relations entre nobles et jasare",
+                "author": "Sandra Bornand",
+                "year": 2004,
+                "url": "https://books.openedition.org/iheid/2375",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 18, 48-94, note 19",
+                "notes": "Dans Côté jardin, côté cour, Graduate Institute Publications, 2004, DOI 10.4000/books.iheid.2375. Lu le 18 octobre 2026 dans le navigateur, sur OpenEdition. § 18 : un récit de jasare dédié à « Seyni Kountché, un ancien Président de la République du Niger (1974-1987) », recueilli par l'autrice auprès de Jeliba Baje en 2000. § 48 : le jasare conclut par « l'énumération des ancêtres du président nigérien jusqu'à ses origines ultimes, Mali Bero, le père de l'aristocratie zarma ». Dans la traduction de la généalogie (§ 49-93), on lit « Zarmakoy Kountché », « Kountché Karanta », puis « Son père qui l'a engendré qui est Kountché Karanta » (§ 83) ; la note 19 donne le texte zarma, « Zeneraal Seyni Kunce / Zarmakoy mo ga a hay / Zarmakoy Kunce ». § 94 : la généalogie inscrit le président « dans la lignée des héros zarma dont il est le parent ». Les vers de louange sont résumés ici, non recopiés."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans le récit recueilli en 2000 auprès du jasare Jeliba Baje, la généalogie de Seyni Kountché remonte à Mali Bero, présenté comme le premier ancêtre de l'aristocratie zarma.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "L'idéologie de l'ostentation dans les sociétés zarma. L'exemple des relations entre nobles et jasare",
+                "author": "Sandra Bornand",
+                "year": 2004,
+                "url": "https://books.openedition.org/iheid/2375",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 18, 48-94, note 19",
+                "notes": "Dans Côté jardin, côté cour, Graduate Institute Publications, 2004, DOI 10.4000/books.iheid.2375. Lu le 18 octobre 2026 dans le navigateur, sur OpenEdition. § 18 : un récit de jasare dédié à « Seyni Kountché, un ancien Président de la République du Niger (1974-1987) », recueilli par l'autrice auprès de Jeliba Baje en 2000. § 48 : le jasare conclut par « l'énumération des ancêtres du président nigérien jusqu'à ses origines ultimes, Mali Bero, le père de l'aristocratie zarma ». Dans la traduction de la généalogie (§ 49-93), on lit « Zarmakoy Kountché », « Kountché Karanta », puis « Son père qui l'a engendré qui est Kountché Karanta » (§ 83) ; la note 19 donne le texte zarma, « Zeneraal Seyni Kunce / Zarmakoy mo ga a hay / Zarmakoy Kunce ». § 94 : la généalogie inscrit le président « dans la lignée des héros zarma dont il est le parent ». Les vers de louange sont résumés ici, non recopiés.\nZeneraal Seyni Kunce / Zarmakoy mo ga a hay / Zarmakoy Kunce / Sanda mo Maali [Beero] ize no."
+              }
+            ],
+            "carrier": "Jeliba Baje (Djéliba Badjé)"
+          }
+        ]
+      }
+    ]
+  }
 }

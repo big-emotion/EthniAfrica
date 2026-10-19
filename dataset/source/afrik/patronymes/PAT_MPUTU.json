@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -54,10 +55,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "la recherche web et bibliographique combinant « Mputu », « KONGO », « surname », « clan », « etymology », « transmission », « alliance » et « obituary », ainsi que la page Forebears dédiée n'ont livré aucune tradition attribuée, chronique datée ou étude linguistique établissant l'origine de Mputu. Les explications anonymes, les simples rapprochements lexicaux et la seule géographie ont été écartés."
-    },
     {
       "fieldPath": "nameSystem",
       "reason": "la recherche web et bibliographique combinant « Mputu », « KONGO », « surname », « clan », « etymology », « transmission », « alliance » et « obituary », ainsi que la page Forebears dédiée n'ont pas établi que la catégorie provisoire « clan_name » décrive le nom lui-même ; elle reste un classement de travail et non une origine démontrée."

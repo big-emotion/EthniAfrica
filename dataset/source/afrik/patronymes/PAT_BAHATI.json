@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "La notice communautaire consultée glose Bahati par « chance » ou « bonne fortune » en swahili et le rapproche du persan bakht ; faute de référence bibliographique propre, cette analyse reste revendiquée.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["behindthename-bahati"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -211,6 +206,26 @@
                 "source_kind": "archive",
                 "page": "p. 320",
                 "notes": "Londres, John Murray, 1874, volume II ; exemplaire numérisé sur archive.org. Page 320 : « Kaniki and Bahati, two of the women, expired in a few days ». Récit rédigé par Horace Waller d'après Susi et Chuma, en-tête de page « 1873 ». Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La notice communautaire consultée glose Bahati par « chance » ou « bonne fortune » en swahili et le rapproche du persan bakht ; faute de référence bibliographique propre, cette analyse reste revendiquée.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Bahati",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.behindthename.com/name/bahati/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice communautaire dédiée consultée intégralement. Elle donne l'usage swahili et la glose « chance, bonne fortune », avec un rapprochement au persan bakht, mais sans bibliographie propre à l'entrée. La glose reste donc une attribution revendiquée."
               }
             ]
           }

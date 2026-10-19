@@ -11,19 +11,28 @@
     {
       "spelling": "El Hawary",
       "attestations": [
-        { "countryId": "EGY", "sourceRefs": ["el-hawary-egypt-finearts"] }
+        {
+          "countryId": "EGY",
+          "sourceRefs": ["el-hawary-egypt-finearts"]
+        }
       ]
     },
     {
       "spelling": "al Hawary",
       "attestations": [
-        { "countryId": "EGY", "sourceRefs": ["el-hawary-egypt-finearts"] }
+        {
+          "countryId": "EGY",
+          "sourceRefs": ["el-hawary-egypt-finearts"]
+        }
       ]
     },
     {
       "spelling": "al-Hawari",
       "attestations": [
-        { "countryId": "DZA", "sourceRefs": ["al-hawari-local-sources"] }
+        {
+          "countryId": "DZA",
+          "sourceRefs": ["al-hawari-local-sources"]
+        }
       ]
     }
   ],
@@ -31,20 +40,9 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Une étude des sources locales consacrées au cheikh Muhammad ibn Umar al-Hawari rapporte des généalogies divergentes et cite une tradition savante qui le rattache à Hawwara ; cette divergence interdit d’en faire une généalogie certaine.",
-        "claimStatus": "contested",
-        "sourceRefs": ["al-hawari-local-sources"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "Dans le cas historique étudié, al-Hawari est explicitement analysé comme une nisba à Hawwara, groupe berbère. Ce résultat morphologique ne prouve pas que chaque famille égyptienne moderne El Hawary descend de ce groupe.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["al-hawari-local-sources"]
-      }
-    ]
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -199,6 +197,48 @@
                 "source_kind": "academic",
                 "page": "p. 211",
                 "notes": "Article universitaire (Université d'Oran 1) diffusé sur la plateforme algérienne ASJP, lu en texte intégral arabe le 12 octobre 2026. Page 211 : mort du cheikh à Oran, le 843 de l'hégire, soit le 29 septembre 1439, à 92 ans. L'article s'appuie surtout sur Ibn Sa'd al-Ansari al-Tilimsani, qu'il présente comme le plus ancien auteur à lui consacrer une notice."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une étude des sources locales consacrées au cheikh Muhammad ibn Umar al-Hawari rapporte des généalogies divergentes et cite une tradition savante qui le rattache à Hawwara ; cette divergence interdit d’en faire une généalogie certaine.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "الشيخ الهواري من خلال المصادر المحلية",
+                "author": "Dahou Faghrour et Taqi al-Din Boukaabar",
+                "year": null,
+                "url": "https://asjp.cerist.dz/en/downArticle/45/16/27/28166",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 207-208",
+                "notes": "Article universitaire (Université d'Oran 1) diffusé sur la plateforme algérienne ASJP, lu en texte intégral arabe le 12 octobre 2026. Pages 207-208 : le cheikh est Muhammad ibn Umar al-Hawari ; Abu Ras al-Nasir le dit nisba à Hawwara et à Awlad Hawwar, fils de Mazigh, fils de Burnus ; al-Mazari et al-Zayyani le disent au contraire chérif, descendant d'Ali ; l'article juge qu'il n'est pas chérif."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans le cas historique étudié, al-Hawari est explicitement analysé comme une nisba à Hawwara, groupe berbère. Ce résultat morphologique ne prouve pas que chaque famille égyptienne moderne El Hawary descend de ce groupe.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "الشيخ الهواري من خلال المصادر المحلية",
+                "author": "Dahou Faghrour et Taqi al-Din Boukaabar",
+                "year": null,
+                "url": "https://asjp.cerist.dz/en/downArticle/45/16/27/28166",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 207-208",
+                "notes": "Article universitaire (Université d'Oran 1) diffusé sur la plateforme algérienne ASJP, lu en texte intégral arabe le 12 octobre 2026. Pages 207-208 : le cheikh est Muhammad ibn Umar al-Hawari ; Abu Ras al-Nasir le dit nisba à Hawwara et à Awlad Hawwar, fils de Mazigh, fils de Burnus ; al-Mazari et al-Zayyani le disent au contraire chérif, descendant d'Ali ; l'article juge qu'il n'est pas chérif."
               }
             ]
           }

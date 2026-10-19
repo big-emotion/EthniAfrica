@@ -1,12 +1,54 @@
+// @req REQ-198
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
+
 import { fireEvent, render, screen, within } from "@testing-library/react";
-import { describe, expect, it, vi } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 
 import { NameTimeline } from "@/components/search/timeline/NameTimeline";
+import {
+  parseNameHistory,
+  type NameHistory,
+} from "@/lib/afrik/parsers/nameHistoryParser";
 import { getLocalizedRoute } from "@/lib/routing";
 import {
   LINGALA_HISTORY,
   PEUL_HISTORY,
 } from "@/lib/search/__fixtures__/nameTimelineFixtures";
+
+const historyOf = (path: string): NameHistory =>
+  parseNameHistory(
+    JSON.parse(readFileSync(resolve(process.cwd(), path), "utf8")).nameHistory
+  ).data!;
+const FULA = historyOf(
+  "dataset/source/afrik/peuples/FLG_ATLANTIQUE/PPL_FULA.json"
+);
+const BASSA_CAM = historyOf(
+  "dataset/source/afrik/peuples/FLG_BANTU/PPL_BASSA_CAM.json"
+);
+
+function longLingalaHistory(): NameHistory {
+  const history = structuredClone(LINGALA_HISTORY);
+  const lingala = history.names[0];
+  const recentAccount = lingala.accounts[1];
+
+  lingala.accounts.push(
+    ...[2005, 2004, 2003].map((year) => ({
+      ...recentAccount,
+      period: {
+        from: year,
+        to: year,
+        label: year > 2003 ? "2005–2004" : String(year),
+      },
+      statement: `Le nom lingala est relevé en ${year}.`,
+      sources: recentAccount.sources.map((source) => ({
+        ...source,
+        title: `Étude de ${year}`,
+      })),
+    }))
+  );
+  return history;
+}
 
 vi.mock("next/navigation", () => ({
   usePathname: () => getLocalizedRoute("fr", "search"),
@@ -25,9 +67,11 @@ function renderLingala() {
 }
 
 const tiles = () =>
-  within(
-    screen.getByRole("list", { name: /Histoire du nom Lingala/ })
-  ).getAllByRole("listitem");
+  Array.from(
+    screen
+      .getByRole("list", { name: /Histoire du nom Lingala/ })
+      .querySelectorAll<HTMLElement>(".afh-chronology-station")
+  );
 
 describe("NameTimeline — the head", () => {
   // @req REQ-198
@@ -111,14 +155,42 @@ describe("NameTimeline — the head", () => {
       )
     ).toBeInTheDocument();
   });
+
+  // @req REQ-198
+  it("places the optional related-lenses line between the summary and name chips", () => {
+    const { container } = render(
+      <NameTimeline
+        history={LINGALA_HISTORY}
+        searched="lingala"
+        subjectType="language"
+        language="fr"
+        seeAlso={<button type="button">Voir aussi : Récits 4</button>}
+      />
+    );
+    const summary = container.querySelector("[data-timeline-summary]")!;
+    const seeAlso = screen.getByRole("button", {
+      name: "Voir aussi : Récits 4",
+    });
+    const names = screen.getByRole("group", { name: "Les noms de Lingala" });
+
+    expect(
+      summary.compareDocumentPosition(seeAlso) &
+        Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+    expect(
+      seeAlso.compareDocumentPosition(names) & Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+  });
 });
 
 describe("NameTimeline — the tiles", () => {
   // @req REQ-198
-  it("goes back in time from today, the period set on each tile", () => {
+  it("goes back in time from today, with the period set on each tile", () => {
     renderLingala();
 
-    expect(screen.getByText("On remonte le temps")).toBeInTheDocument();
+    expect(
+      screen.getByText("Du plus récent au plus ancien")
+    ).toBeInTheDocument();
     expect(tiles().map((tile) => tile.getAttribute("data-placement"))).toEqual([
       "plain",
       "plain",
@@ -130,6 +202,22 @@ describe("NameTimeline — the tiles", () => {
     expect(tiles()[0]).toHaveTextContent(/^Depuis 2006/);
   });
 
+  // @req REQ-198
+  it("keeps the chronology direction, elsewhere control, and periods in one row", () => {
+    const { container } = renderLingala();
+    const controls = container.querySelector(".ea-tl-controls")!;
+
+    expect(controls).toContainElement(
+      screen.getByText("Du plus récent au plus ancien")
+    );
+    expect(controls).toContainElement(
+      screen.getByRole("button", { name: "Ailleurs à la même époque" })
+    );
+    expect(controls).toContainElement(
+      screen.getByRole("list", { name: "Époques" })
+    );
+  });
+
   // The birth is marked by a pill and a frame, never by colour alone.
   // @req REQ-198
   it("marks the birth of the name in words", () => {
@@ -137,7 +225,7 @@ describe("NameTimeline — the tiles", () => {
     const birth = tiles()[2];
 
     expect(birth).toHaveTextContent(
-      "Naissance du nom Lingala · origine la plus ancienne connue du projet"
+      "Origine la plus ancienne connue du nom Lingala"
     );
     expect(birth).toHaveTextContent("1902");
   });
@@ -145,6 +233,11 @@ describe("NameTimeline — the tiles", () => {
   // @req REQ-198
   it("marks what existed before the name", () => {
     renderLingala();
+    const fold = screen
+      .getAllByText("+ Voir les 2 autres récits")
+      .map((label) => label.closest("summary"))
+      .find(Boolean)!;
+    fireEvent.click(fold);
 
     for (const tile of tiles().slice(4)) {
       expect(tile).toHaveTextContent("Avant le nom Lingala");
@@ -202,12 +295,12 @@ describe("NameTimeline — the tiles", () => {
   });
 });
 
-describe("NameTimeline — « Pendant ce temps, ailleurs »", () => {
+describe("NameTimeline — « Ailleurs à la même époque »", () => {
   // @req REQ-198
   it("keeps the anchors hidden until the reader asks for them", () => {
     renderLingala();
     const toggle = screen.getByRole("button", {
-      name: "Pendant ce temps, ailleurs",
+      name: "Ailleurs à la même époque",
     });
 
     expect(toggle).toHaveAttribute("aria-pressed", "false");
@@ -241,13 +334,14 @@ describe("NameTimeline — « Pendant ce temps, ailleurs »", () => {
       />
     );
     fireEvent.click(
-      screen.getByRole("button", { name: "Pendant ce temps, ailleurs" })
+      screen.getByRole("button", { name: "Ailleurs à la même époque" })
     );
 
-    expect(
-      screen.getByText(/l'Organisation de l'unité africaine, en 1963\./)
-    ).toBeInTheDocument();
-    expect(screen.queryByText(/Liberia/)).not.toBeInTheDocument();
+    // The sentence's last word sits with its sources button, in a span.
+    expect(document.body).toHaveTextContent(
+      /l'Organisation de l'unité africaine, en 1963\./
+    );
+    expect(document.body).not.toHaveTextContent(/Liberia/);
   });
 });
 
@@ -257,23 +351,38 @@ describe("NameTimeline — the sources behind a passage", () => {
   it("ends each sourced passage with a diamond named by its source type, never its tier", () => {
     renderLingala();
     const diamond = within(tiles()[1]).getByRole("button", {
-      name: "Source : Archive — voir les sources",
+      name: "Source : Archive, voir les sources",
     });
 
     expect(diamond).toHaveAttribute("data-family", "archive");
-    expect(diamond).toHaveTextContent("");
+    expect(diamond.textContent).toBe("Source");
     expect(document.body).not.toHaveTextContent(
       /Référencée|Officielle|Non vérifiée|confiance/i
     );
   });
 
+  // A no-break space alone lets the button wrap without the word (CSS Text
+  // 3, 5.1): the last word and the button sit in one inline block.
   // @req REQ-198
-  it("keeps the diamond on the passage's last word", () => {
+  // @req REQ-194
+  it("keeps the sources button with the passage's last word", () => {
     renderLingala();
     const diamond = within(tiles()[1]).getByRole("button", {
       name: /voir les sources/,
     });
+    const tail = diamond.parentElement!;
+    const statement = tail.closest("p")!;
+
     expect(diamond.previousSibling?.textContent?.endsWith("\u00a0")).toBe(true);
+    expect(tail).toHaveClass("afh-source-tail");
+    expect(tail.textContent).toMatch(/^\S+\u00a0Source$/);
+    expect(statement.textContent).toBe(
+      `${
+        LINGALA_HISTORY.names[0].accounts.find((account) =>
+          statement.textContent!.startsWith(account.statement.slice(0, 20))
+        )!.statement
+      }\u00a0Source`
+    );
   });
 
   // @req REQ-194
@@ -297,5 +406,350 @@ describe("NameTimeline — the sources behind a passage", () => {
       })
     ).toBeInTheDocument();
     expect(sheet).not.toHaveTextContent(/Référencée|Officielle/);
+  });
+});
+
+describe("NameTimeline — from the searched name to the self-name (brief 11)", () => {
+  const originalScroll = HTMLElement.prototype.scrollIntoView;
+  afterEach(() => {
+    HTMLElement.prototype.scrollIntoView = originalScroll;
+  });
+
+  function renderPeul(searched = "peul", history = FULA) {
+    return render(
+      <NameTimeline
+        history={history}
+        searched={searched}
+        subjectType="people"
+        language="fr"
+      />
+    );
+  }
+  const lead = () => screen.getByRole("button", { name: /Vous avez cherché/ });
+  const handOff = () =>
+    screen.queryByRole("button", { name: /^Lire l'histoire du nom/ });
+
+  // @req REQ-197
+  // @req REQ-198
+  it("says in the lead how many explanations the self-name has, with Peul still open", () => {
+    renderPeul();
+
+    expect(lead()).toHaveTextContent(
+      "Vous avez cherché Peul. Ce peuple se nomme lui-même Fulɓe.D'où vient le nom Fulɓe ? Les sources proposent cinq explications, sans que l'une l'emporte.Voir"
+    );
+    expect(
+      screen.getByRole("button", { name: "Peul · cherché" })
+    ).toHaveAttribute("aria-pressed", "true");
+  });
+
+  // Two to six in words, higher in figures (brief 11 §1a).
+  // @req REQ-197
+  it("writes a count above six in figures", () => {
+    const history = structuredClone(FULA);
+    const fulbe = history.names.find((name) => name.nameText === "Fulɓe")!;
+    const group = fulbe.accounts.filter((account) => account.hypothesisGroup);
+    fulbe.accounts.push(structuredClone(group[0]), structuredClone(group[1]));
+    renderPeul("peul", history);
+
+    expect(lead()).toHaveTextContent("Les sources proposent 7 explications");
+  });
+
+  // @req REQ-197
+  it("draws no count line when the self-name has no explanations tile", () => {
+    render(
+      <NameTimeline
+        history={BASSA_CAM}
+        searched="bassa"
+        subjectType="people"
+        language="fr"
+      />
+    );
+
+    expect(lead()).toHaveTextContent(
+      /^Vous avez cherché Bassa\. Ce peuple se nomme lui-même Basaa\.Voir$/
+    );
+  });
+
+  // @req REQ-198
+  it("hands the reader on to the self-name after the searched name's end line, off the thread", () => {
+    renderPeul();
+    const end = screen.getByText(
+      "Fin de ce que nos recherches retracent pour le nom Peul."
+    );
+    const tile = handOff()!.closest("[data-handoff]") as HTMLElement;
+
+    expect(tile).toHaveTextContent(
+      "Leur nomFulɓeCe peuple se nomme lui-même Fulɓe. Ce nom a aussi son histoire : les sources proposent cinq explications de son origine, sans que l'une l'emporte.Lire l'histoire du nom Fulɓe"
+    );
+    expect(
+      end.compareDocumentPosition(tile) & Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+    expect(tile.closest("ol")).toBeNull();
+  });
+
+  // @req REQ-198
+  it("hands on without a count when the self-name has no explanations tile", () => {
+    render(
+      <NameTimeline
+        history={BASSA_CAM}
+        searched="bassa"
+        subjectType="people"
+        language="fr"
+      />
+    );
+
+    expect(handOff()!.closest("[data-handoff]")).toHaveTextContent(
+      "Leur nomBasaaCe peuple se nomme lui-même Basaa. Ce nom a aussi son histoire.Lire l'histoire du nom Basaa"
+    );
+  });
+
+  // The page introduces the name before it explains it (doctrine §1.1): the
+  // reader lands on the chips and the intro line, never on the explanations.
+  // @req REQ-198
+  it.each([
+    ["the hand-off", () => handOff()!],
+    ["the lead", () => lead()],
+  ])(
+    "opens the self-name from %s and brings the top of its timeline into view",
+    (_, action) => {
+      const scroll = vi.fn();
+      HTMLElement.prototype.scrollIntoView = scroll;
+      renderPeul();
+      fireEvent.click(action());
+
+      const fulbe = screen.getByRole("button", { name: "Fulɓe" });
+      expect(fulbe).toHaveAttribute("aria-pressed", "true");
+      expect(
+        screen.getByRole("button", { name: "Peul · cherché" })
+      ).toHaveAttribute("aria-pressed", "false");
+      expect(scroll).toHaveBeenCalledTimes(1);
+      expect(scroll.mock.contexts[0]).toBe(
+        screen.getByRole("group", { name: "Les noms de Peul" })
+      );
+      expect(fulbe).toHaveFocus();
+      // The intro line, its names in italics, opens Fulɓe's timeline.
+      expect(
+        screen.getByText(
+          (_, element) =>
+            element?.tagName === "P" &&
+            element.textContent ===
+              "Ils se nomment Fulɓe au pluriel et Pullo au singulier."
+        )
+      ).toBeInTheDocument();
+    }
+  );
+
+  // @req REQ-198
+  it("hands on no more once the self-name is open", () => {
+    renderPeul();
+    fireEvent.click(screen.getByRole("button", { name: "Fulɓe" }));
+
+    expect(handOff()).not.toBeInTheDocument();
+  });
+
+  // @req REQ-198
+  it("has no lead and no hand-off when the reader typed the self-name", () => {
+    renderPeul("Fulɓe");
+
+    expect(
+      screen.queryByRole("button", { name: /Vous avez cherché/ })
+    ).not.toBeInTheDocument();
+    expect(handOff()).not.toBeInTheDocument();
+  });
+
+  // The video row belongs to the subject: it follows the hand-off, and stays
+  // after the end line when another name is open (approval record, decision 2).
+  // @req REQ-180
+  it("sets the subject's video after the hand-off, whichever name is open", () => {
+    render(
+      <NameTimeline
+        history={FULA}
+        searched="peul"
+        subjectType="people"
+        language="fr"
+        video={<p>Une vidéo</p>}
+      />
+    );
+    const video = () => screen.getByText("Une vidéo");
+
+    expect(
+      handOff()!.compareDocumentPosition(video()) &
+        Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+
+    fireEvent.click(screen.getByRole("button", { name: "Fulɓe" }));
+    const end = screen.getByText(
+      "Fin de ce que nos recherches retracent pour le nom Fulɓe."
+    );
+    expect(
+      end.compareDocumentPosition(video()) & Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+  });
+
+  // @req REQ-198
+  it("reports the open name, so the closing band can speak of it", () => {
+    const onOpenNameChange = vi.fn();
+    render(
+      <NameTimeline
+        history={FULA}
+        searched="peul"
+        subjectType="people"
+        language="fr"
+        onOpenNameChange={onOpenNameChange}
+      />
+    );
+    fireEvent.click(screen.getByRole("button", { name: "Fulɓe" }));
+
+    expect(onOpenNameChange).toHaveBeenLastCalledWith("Fulɓe");
+  });
+});
+
+describe("NameTimeline — consecutive tiles of one period (brief 11 §4)", () => {
+  // @req REQ-198
+  it("prints « Usage contemporain » once over Peul's two statements, each with its own sources button", () => {
+    render(
+      <NameTimeline
+        history={FULA}
+        searched="peul"
+        subjectType="people"
+        language="fr"
+      />
+    );
+    const chronology = screen.getByRole("list", {
+      name: /Histoire du nom Peul/,
+    });
+    const stations = within(chronology).getAllByRole("listitem");
+    const peul = FULA.names.find((name) => name.nameText === "Peul")!;
+
+    expect(stations).toHaveLength(3);
+    expect(within(chronology).getAllByText("Usage contemporain")).toHaveLength(
+      1
+    );
+    expect(stations[0]).toHaveTextContent(peul.accounts[0].statement);
+    expect(stations[0]).toHaveTextContent(peul.accounts[1].statement);
+    expect(
+      within(stations[0]).getAllByRole("button", { name: /voir les sources/ })
+    ).toHaveLength(2);
+    expect(stations[2]).toHaveAttribute("data-placement", "birth");
+  });
+});
+
+describe("NameTimeline — folded account runs (brief 15)", () => {
+  const originalScroll = HTMLElement.prototype.scrollIntoView;
+  afterEach(() => {
+    HTMLElement.prototype.scrollIntoView = originalScroll;
+  });
+
+  // @req REQ-198
+  it("keeps the three newest accounts, the origin, and competing hypotheses open", () => {
+    render(
+      <NameTimeline
+        history={longLingalaHistory()}
+        searched="lingala"
+        subjectType="language"
+        language="fr"
+      />
+    );
+
+    const chronology = screen.getByRole("list", {
+      name: /Histoire du nom Lingala/,
+    });
+    expect(within(chronology).getByText("Depuis 2006")).toBeInTheDocument();
+    const recent2005 = within(chronology).getByText("2005–2004");
+    expect(recent2005).toBeInTheDocument();
+    const recentStatements = Array.from(
+      chronology.querySelectorAll(".afh-name-timeline-statement")
+    ).filter((statement) =>
+      ["relevé en 2005", "relevé en 2004"].some((year) =>
+        statement.textContent?.includes(year)
+      )
+    );
+    expect(recentStatements).toHaveLength(2);
+    expect(recentStatements[0].closest("li")).toBe(
+      recentStatements[1].closest("li")
+    );
+    expect(
+      within(chronology).getByText(
+        "Origine la plus ancienne connue du nom Lingala"
+      )
+    ).toBeInTheDocument();
+    expect(
+      chronology.querySelector(".afh-name-timeline-hypotheses")
+    ).toHaveTextContent("D'où vient le nom Lingala ?");
+    const foldedAccount = Array.from(
+      chronology.querySelectorAll(".afh-name-timeline-statement")
+    ).find((statement) => statement.textContent?.includes("relevé en 2003"));
+    expect(foldedAccount).toBeInTheDocument();
+    expect(foldedAccount?.closest("details")).not.toHaveAttribute("open");
+    expect(
+      screen
+        .getAllByText("+ Voir les 2 autres récits")
+        .map((label) => label.closest("summary"))
+    ).toHaveLength(2);
+  });
+
+  // @req REQ-198
+  it("opens only the folded run named by its control", () => {
+    render(
+      <NameTimeline
+        history={longLingalaHistory()}
+        searched="lingala"
+        subjectType="language"
+        language="fr"
+      />
+    );
+
+    const folds = screen
+      .getAllByText("+ Voir les 2 autres récits")
+      .map((label) => label.closest("summary") as HTMLElement);
+    fireEvent.click(folds[0]);
+
+    expect(folds[0].closest("details")).toHaveAttribute("open");
+    expect(folds[0]).toHaveTextContent("− replier");
+    expect(folds[1].closest("details")).not.toHaveAttribute("open");
+    expect(
+      Array.from(
+        screen
+          .getByRole("list", { name: /Histoire du nom Lingala/ })
+          .querySelectorAll(".afh-name-timeline-statement")
+      ).some((statement) => statement.textContent?.includes("relevé en 2003"))
+    ).toBe(true);
+    expect(
+      Array.from(
+        screen
+          .getByRole("list", { name: /Histoire du nom Lingala/ })
+          .querySelectorAll(".afh-name-timeline-statement")
+      ).some((statement) =>
+        statement.textContent?.includes("Le nom lingala figure")
+      )
+    ).toBe(true);
+  });
+
+  // @req REQ-198
+  it("opens and scrolls to a folded account when its source link is used", () => {
+    const scrollIntoView = vi.fn();
+    HTMLElement.prototype.scrollIntoView = scrollIntoView;
+    render(
+      <NameTimeline
+        history={longLingalaHistory()}
+        searched="lingala"
+        subjectType="language"
+        language="fr"
+      />
+    );
+
+    const sourceLink = screen
+      .getAllByRole("link", { name: "Voir le récit" })
+      .find((link) => link.getAttribute("href")?.endsWith("Lingala-10"));
+    expect(sourceLink).toBeDefined();
+    const target = document.getElementById(
+      sourceLink!.getAttribute("href")!.slice(1)
+    );
+    expect(target?.closest("details")).not.toHaveAttribute("open");
+
+    fireEvent.click(sourceLink!);
+
+    expect(target?.closest("details")).toHaveAttribute("open");
+    expect(scrollIntoView).toHaveBeenCalled();
   });
 });

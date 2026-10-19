@@ -1,12 +1,12 @@
 {
   "id": "PPL_AUSTRO_MACRO",
-  "nameMain": "Peuples Austronésiens de Madagascar (macro-groupe)",
+  "nameMain": "Malgaches",
   "languageFamilyId": "FLG_AUSTRONESIENNE",
   "currentCountries": ["MDG"],
   "classificationStatus": "reconstructive",
   "content": {
     "appellations": {
-      "mainName": "Peuples Austronésiens de Madagascar (macro-groupe)",
+      "mainName": "Malgaches",
       "selfAppellation": "Malagasy",
       "exonyms": ["Malgaches (français)", "Malagasy peoples (anglais)"],
       "originOfExonyms": "Malagasy désigne les peuples de Madagascar et leur langue commune, avec ses différentes variétés. Ce nom est utilisé sur l'île et à l'international. Au XIXe siècle, les missionnaires anglais ont fait connaître la distinction entre les habitants des hauts plateaux, appelés highlanders, et ceux du littoral, appelés côtiers.",
@@ -159,6 +159,201 @@
         "url": "https://www.instat.mg",
         "tier": "official",
         "source_kind": "official_statistics"
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Les Malgaches sont les peuples de Madagascar, qui se nomment ensemble Malagasy. L'histoire du nom Austronésien comme nom de langues est racontée avec la famille austronésienne."
+    }
+  },
+  "nameHistory": {
+    "summary": "Le nom Malgaches désigne les peuples de Madagascar, qui se nomment eux-mêmes Malagasy ; c'est la forme française de ce nom. Chacun de ces peuples porte aussi son propre nom, comme les Merina, les Betsileo ou les Sakalava. Le nom Austronésiens, appliqué à ces peuples, est un nom de savants : il rappelle que leur langue, le malgache, appartient à la famille austronésienne, et que des navigateurs venus d'Asie du Sud-Est ont été parmi les premiers à gagner l'île. Nous présentons ces noms plus bas.",
+    "names": [
+      {
+        "nameText": "Malagasy",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mlg",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent ensemble les peuples de Madagascar ; écrit Malagasy dès 1838.",
+        "periodLabel": "Écrit dès 1838 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1935,
+              "to": 1935,
+              "label": "1935"
+            },
+            "era": "colonial",
+            "statement": "Le nom Malagasy figure dans le titre d'un journal nationaliste qui paraît à Madagascar en 1935, Ni firenena malagasy, « la nation malgache », selon Manassé Esoavelomandroso. Avec d'autres journaux, il réclame la liberté de Madagascar, alors colonie française.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 10 : Madagascar de 1880 à 1939 : initiatives et réactions africaines à la conquête et à la domination coloniales",
+                "author": "Manassé Esoavelomandroso",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 270"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1885,
+              "to": 1885,
+              "label": "1885"
+            },
+            "era": "polity",
+            "statement": "Le nom Malagasy désigne, dans la langue même, les habitants de l'île comme une nation, à côté des Arabes et des Européens : le missionnaire James Richardson donne en exemple « Ny Malagásy, ny Talaòtra, ny Vazàha », les Malgaches, les Arabes et les Européens, pris comme des nations.",
+            "aspect": "usage",
+            "formAsWritten": "Malagásy",
+            "sources": [
+              {
+                "title": "A New Malagasy-English Dictionary",
+                "author": "James Richardson",
+                "year": 1885,
+                "url": "https://archive.org/details/anewmalagasyeng00richgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. xlviii",
+                "notes": "Antananarivo, London Missionary Society, 1885. Lu dans la numérisation d'Internet Archive le 18 octobre 2026 ; le numéro de page imprimé a été lu sur l'image. Dans l'esquisse de grammaire, au paragraphe sur l'article ny : « Ny Malagásy, ny Talaòtra, ny Vazàha, Malagasy, Arabs, and Europeans (i.e. as nations) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1838,
+              "to": 1838,
+              "label": "1838"
+            },
+            "era": "polity",
+            "statement": "Le nom Malagasy apparaît par écrit chez le missionnaire britannique William Ellis, qui l'emploie pour les habitants de l'île : le cap Saint-André, écrit-il, est « appelé par les Malagasy Jantsanira ». C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples de Madagascar existaient déjà avant lui.",
+            "formAsWritten": "Malagasy",
+            "birth": true,
+            "sources": [
+              {
+                "title": "History of Madagascar, vol. I",
+                "author": "William Ellis",
+                "year": 1838,
+                "url": "https://archive.org/details/historyofmadagas01elli",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 20",
+                "notes": "Londres, Fisher, Son & Co., 1838. Lu dans la numérisation d'Internet Archive le 18 octobre 2026 ; le numéro de page imprimé a été lu sur l'image. « Cape St. Andrew, called by the Malagasy, Jantsanira ». L'auteur, missionnaire de la London Missionary Society, compile les écrits des missionnaires installés à Antananarivo."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Malgaches",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "La forme française du nom Malagasy, qui a aussi servi de catégorie au droit colonial.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "1929"
+            },
+            "era": "colonial",
+            "statement": "Le nom Malgaches sert aussi au droit colonial français, qui parle de « sujets malgaches ». En mai 1929, une conférence prévue à Tananarive est interdite aux « sujets malgaches » ; elle se change en un défilé de milliers de personnes contre l'indigénat, selon Manassé Esoavelomandroso.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 10 : Madagascar de 1880 à 1939 : initiatives et réactions africaines à la conquête et à la domination coloniales",
+                "author": "Manassé Esoavelomandroso",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 270"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Austronésiens",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des savants, d'après le nom de famille de langues proposé par Wilhelm Schmidt",
+        "shortLine": "Un nom de savants, tiré d'une famille de langues, pour les premiers navigateurs venus à Madagascar.",
+        "periodLabel": "Pour des peuples depuis 1990 au moins",
+        "accounts": [
+          {
+            "period": {
+              "from": 1990,
+              "to": 1990,
+              "label": "1990"
+            },
+            "era": "modern",
+            "statement": "Le nom Austronésiens désigne pour Bakoly Domenichini-Ramiaramanana des peuples marins d'Asie du Sud-Est, qui ont sans doute été les premiers à naviguer vers Madagascar. Le peuplement, la langue et la culture de l'île en gardent les traces, écrit-elle. C'est la plus ancienne trace de ce nom pour des peuples que le projet connaît. Ces peuples existaient déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 25 : Madagascar",
+                "author": "Bakoly Domenichini-Ramiaramanana",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 742-743"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "statement": "On parle alors de langues austronésiennes : le linguiste Wilhelm Schmidt écrit avoir proposé ce nom, austronesisch en allemand, à la place de malayo-polynésien, parce que ce sont toutes des langues d'îles situées au sud-est de l'Asie.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Die Mon-Khmer-Völker, ein Bindeglied zwischen Völkern Zentralasiens und Austronesiens",
+                "author": "Wilhelm Schmidt",
+                "year": 1906,
+                "url": "https://archive.org/details/diemonkhmervlke00schmgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 69",
+                "notes": "Brunswick, Friedrich Vieweg und Sohn, 1906. Lu dans la numérisation d'Internet Archive le 18 octobre 2026 ; le numéro de page imprimé a été lu sur l'image. « hatte ich schon vor einiger Zeit die Bezeichnung „austronesisch“ vorgeschlagen »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1000,
+              "label": "Ier millénaire"
+            },
+            "statement": "On parle alors de Kun-lun : c'est le nom sous lequel les Chinois du Ier millénaire regroupaient des navigateurs d'Asie du Sud-Est, parmi lesquels les Austronésiens étaient sans doute les plus nombreux, selon Bakoly Domenichini-Ramiaramanana.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 25 : Madagascar",
+                "author": "Bakoly Domenichini-Ramiaramanana",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 742"
+              }
+            ]
+          }
+        ]
       }
     ]
   }

@@ -32,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Bossi atteste Chebeet comme nom personnel kipsigis et le rapproche orthographiquement de Chebet. Le modèle tugen décrit Chee-/Jee(p)- comme marque féminine et beet comme « jour » ; appliquer cette segmentation à Chebet reste une reconstruction comparative, non une étymologie directement établie pour la forme kipsigis.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["bossi-kipsigis-2023", "jerono-tugen-names-2019"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -162,6 +157,36 @@
                 "source_kind": "academic",
                 "page": "p. 57 du PDF, exemple (110)",
                 "notes": "Thèse, University of California, Berkeley, 2023, 174 pages du PDF. Exemple (110) : « Chebet hit herself » ; exemple (196), p. 83 : « Kibeet ‘Kibet’ and Cheebeet ‘Chebet’ ». Texte intégral lu ; la page indiquée est celle du PDF. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Bossi atteste Chebeet comme nom personnel kipsigis et le rapproche orthographiquement de Chebet. Le modèle tugen décrit Chee-/Jee(p)- comme marque féminine et beet comme « jour » ; appliquer cette segmentation à Chebet reste une reconstruction comparative, non une étymologie directement établie pour la forme kipsigis.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Epistemic modality across syntactic categories in Kipsigis",
+                "author": "Madeline Claire Bossi",
+                "year": 2023,
+                "url": "https://escholarship.org/uc/item/7d70r63x",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 57 du PDF, exemple (110)",
+                "notes": "Thèse, University of California, Berkeley, 2023, 174 pages du PDF. Exemple (110) : « Chebet hit herself » ; exemple (196), p. 83 : « Kibeet ‘Kibet’ and Cheebeet ‘Chebet’ ». Texte intégral lu ; la page indiquée est celle du PDF. Lu le 13 octobre 2026."
+              },
+              {
+                "title": "Names and Naming System of Tugen",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.researchgate.net/publication/333387134_Names_and_Naming_System_of_Tugen",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Prisca Jerono, International Journal of Linguistics and Communication 7(1), 2019. L’article décrit les noms tugen comme des noms individuels de naissance, analyse Chee-/Jee(p)- comme marque féminine et donne beet « jour » dans la forme Ki-beet. Il ne propose pas directement une étymologie de Chebet."
               }
             ]
           }

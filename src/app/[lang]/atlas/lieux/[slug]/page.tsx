@@ -5,6 +5,7 @@ import { PageLayout } from "@/components/layout/PageLayout";
 import { PlaceRecordView } from "@/components/place/PlaceRecordView";
 import { CANONICAL_DOMAIN } from "@/lib/brand";
 import { loadPlaceFiche } from "@/lib/fiche/ficheExistence";
+import { loadPlaceNextSteps } from "@/lib/fiche/placeNextSteps";
 import { placeSubtitle } from "@/lib/i18n/copy/place";
 import { getPlaceRoute } from "@/lib/routing";
 import { ficheHead } from "@/lib/seo/ficheHead";
@@ -45,6 +46,11 @@ export default async function PlacePage({
 
   const place = await loadPlaceFiche(decodeURIComponent(slug));
   if (!place) return null;
+  const nextSteps = await loadPlaceNextSteps({
+    countries: place.countries,
+    associatedPeoples: place.associatedPeoples,
+    language,
+  });
 
   return (
     <PageLayout
@@ -61,7 +67,11 @@ export default async function PlacePage({
           `https://${CANONICAL_DOMAIN}${getPlaceRoute(language, place.id)}`
         )}
       />
-      <PlaceRecordView place={place} language={language} />
+      <PlaceRecordView
+        place={place}
+        language={language}
+        nextSteps={nextSteps}
+      />
     </PageLayout>
   );
 }

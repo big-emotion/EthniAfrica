@@ -13,7 +13,7 @@ import { buildNameTimeline } from "@/lib/search/nameTimeline";
 
 /**
  * The end of the « Histoire du nom » page (brief 1, approved 2026-10-14):
- * the timeline, « Les sources parlent », the closing band and the next step,
+ * the timeline, « Les sources du nom … », the closing band and the next step,
  * as the boards docs/design/mockups/site/search-peul-*.dc.html draw them.
  */
 
@@ -33,7 +33,6 @@ function PageEnd() {
         history={PEUL_HISTORY}
         searched="peul"
         subjectType="people"
-        sourcesOpen
         language="fr"
       />
       <NameClosingBand

@@ -22,13 +22,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "La page mémorielle du clan Ngabi rapporte que le personnage tenu pour son fondateur portait d'abord le nom Lubega avant de recevoir le surnom Nsamba. Le récit relie donc Lubega à une histoire clanique baganda, mais il n'établit pas que Lubega soit lui-même un nom totémique ni ne permet de départager les généalogies concurrentes rapportées sur la page.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["obutaka-lubega"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -138,6 +133,26 @@
                 "source_kind": "community",
                 "page": "paragraphe sur les noms du clan",
                 "notes": "Article publié le 17 octobre 2024 sur le site des missionnaires comboniens d'Irlande ; il ne cite pas de source écrite et s'appuie sur ce que l'on croit et raconte dans le clan. Il écrit : « Some of the male names given to babies from the Ngabi clan are Bukenya, Kasozi, Jjengo, Kabitto, Kamoga, Lubega, and Lubinga ». Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La page mémorielle du clan Ngabi rapporte que le personnage tenu pour son fondateur portait d'abord le nom Lubega avant de recevoir le surnom Nsamba. Le récit relie donc Lubega à une histoire clanique baganda, mais il n'établit pas que Lubega soit lui-même un nom totémique ni ne permet de départager les généalogies concurrentes rapportées sur la page.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Ngabi Nsamba History",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.obutaka.com/clans/clan-history/ngabi-nsamba-history",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page mémorielle communautaire du clan Ngabi consultée directement. Elle rapporte plusieurs traditions incompatibles sur Nsamba, cite M. B. Nsimbi et présente Lubega comme un ancien nom du fondateur. Faute de témoin nommé et de transcription primaire, aucun élément n'est enregistré comme tradition orale au sens du schéma."
               }
             ]
           }

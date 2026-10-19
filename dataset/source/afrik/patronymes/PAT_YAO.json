@@ -68,26 +68,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Dans le système anthroponymique baoulé décrit par Pagnet, Yao est le nom attribué à un garçon né le vendredi, jour appelé ya.",
-        "claimStatus": "established",
-        "sourceRefs": [
-          "pagnet-2005-noms-baoule",
-          "etienne-1968-baoule-temps",
-          "delafosse-1900-agni"
-        ]
-      },
-      {
-        "claim": "En twi, au Ghana, Yaw est le nom du garçon né le jeudi, Yawda ; selon Christaller, ce serait aussi le nom de l'esprit de ce jour.",
-        "claimStatus": "claimed",
-        "sourceRefs": [
-          "christaller-1881-twi",
-          "agyekum-2006-akan-names",
-          "konadu-2012-akan-calendar"
-        ]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -458,8 +440,29 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 556",
                 "notes": "Bâle, Evangelical Missionary Society, 1881. Lu sur l'exemplaire numérisé d'archive.org. Annexe D, p. 662-663 : la liste des sept jours, des noms de garçons et de filles, et l'explication par les génies des jours, que l'auteur présente avec prudence."
+              },
+              {
+                "title": "Les noms Wè : valeur expressive et didactive, un exemple de créativité poétique dans la littérature orale africaine",
+                "author": "Doh Clément Pagnet",
+                "year": 2005,
+                "url": "https://hdl.handle.net/20.500.12177/1675",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 260",
+                "notes": "Thèse de Doh Clément Pagnet, Université de Cocody, soutenue le 20 mai 2005. Relue le 15 octobre 2026 dans le dépôt DICAMES du CAMES (le lien handle était alors inaccessible ; la page du dépôt est http://dicames.online/jspui/handle/20.500.12177/1675). Page 260 : les noms donnés selon le jour de naissance chez les Baoulé. L'auteur ne cite pas de source pour cette liste. Le titre original écrit « didactive »."
+              },
+              {
+                "title": "Essai de manuel de la langue agni, parlée dans la moitié orientale de la Côte d'Ivoire",
+                "author": "Maurice Delafosse",
+                "year": 1900,
+                "url": "https://archive.org/details/essaidemanuelde00delagoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 132, note 1 ; p. 133",
+                "notes": "Paris, J. André, 1900. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 133 : les garçons nés le « vendredi (ya) » sont appelés Yao ; les noms d'hommes sont formés du nom du jour précédé du préfixe Kwa, qui « dans Yao » a disparu, avec les formes Kwao, Kwau, Kwaw et Kwa. Page 132, note 1 : « Le nom Yao se prononce Yaw, Ya et même souvent A » après un autre nom. La préface compte le Baoulé dans le domaine de la langue agni. Auteur de l'époque coloniale, cité ici pour les formes qu'il relève."
               }
-            ]
+            ],
+            "claimStatus": "established"
           },
           {
             "period": {
@@ -587,8 +590,29 @@
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
                 "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 11 octobre 2026. La notice donne, parmi d'autres origines : Afrique de l'Ouest (Ghana), d'un nom de personne masculin akan désignant le garçon né le jeudi."
+              },
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "annexe D, p. 662-663",
+                "notes": "Bâle, Evangelical Missionary Society, 1881. Lu sur l'exemplaire numérisé d'archive.org. Annexe D, p. 662-663 : la liste des sept jours, des noms de garçons et de filles, et l'explication par les génies des jours, que l'auteur présente avec prudence."
+              },
+              {
+                "title": "The Calendrical Factor in Akan History",
+                "author": "Kwasi Konadu",
+                "year": 2012,
+                "url": "https://kwasi-konadu.squarespace.com/s/217-246_KONADU_Final-kp48.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 223",
+                "notes": "International Journal of African Historical Studies, vol. 45, n° 2, 2012, p. 217-246. PDF de l'auteur, lu le 15 octobre 2026. Page 223 : le tableau des jours, de leurs esprits, des noms de garçons et de filles et des surnoms d'éloge. Page 229 et note 43 : le préfixe kwa- et une forme ancienne de Yaw dans un registre néerlandais d'Elmina daté de 1781, que nous n'avons pas lu."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           },
           {
             "period": {

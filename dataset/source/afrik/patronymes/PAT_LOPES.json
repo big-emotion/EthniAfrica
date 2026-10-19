@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le Dictionary of American Family Names décrit Lopes comme un patronyme portugais formé sur le prénom médiéval Lopo, lui-même rattaché au latin lupus (« loup »). Cette analyse linguistique ne localise pas la branche capverdienne.",
-        "claimStatus": "established",
-        "sourceRefs": ["dafn-lopes-2022"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -271,6 +266,26 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 127",
                 "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 16 octobre 2026 sur l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image de la page. Page 127 : « Nas Inquiriçõe[s] de 1258 abundam genetivos em -i… Na 3.ª alçada (Beira) a fórma predominante é tambem a desinencia -i, raramente o sufixo -iz (Martinus Lopiz, p. 807). »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le Dictionary of American Family Names décrit Lopes comme un patronyme portugais formé sur le prénom médiéval Lopo, lui-même rattaché au latin lupus (« loup »). Cette analyse linguistique ne localise pas la branche capverdienne.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Lopes Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.ancestry.com/last-name-meaning/lopes?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Patrick Hanks et al., Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry. La notice est utilisée pour la morphologie patronymique portugaise, sans reconstruction de lignée."
               }
             ]
           }

@@ -34,13 +34,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Madubuike rapporte une tradition qui rattache les Fall wolof aux descendants du damel du Cayor ; l’entrée DAFN décrit cependant Fall d’abord comme un nom toucouleur d’étymologie inexpliquée, également porté chez les Wolof et les Soninké.",
-        "claimStatus": "contested",
-        "sourceRefs": ["madubuike-1994-african-names", "dafn-familysearch-fall"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -108,5 +103,207 @@
       "fieldPath": "bearers",
       "reason": "Madubuike et l’entrée DAFN/FamilySearch ont été vérifiés pour des porteurs historiques, mais aucun individu décédé n’y est documenté avec une auto-identification lignagère vérifiable."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Fall est un nom de famille du Sénégal, porté chez les Toucouleurs, les Wolof et les Soninké. Il est écrit Fale dès 1858. Son sens n'est pas expliqué ; un récit le rattache aux damels, les rois du Cayor. Un nom de famille européen s'écrit de la même façon ; il est distinct.",
+    "names": [
+      {
+        "nameText": "Fall",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille wolof et toucouleur du Sénégal, écrit Fale dès 1858.",
+        "periodLabel": "Écrit Fale dès 1858 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Fall est porté surtout au Sénégal, et aussi au Mali, en Mauritanie et en Guinée. Le Dictionary of American Family Names en fait un nom toucouleur, présent aussi chez les Wolof et les Soninké, et dit son étymologie inexpliquée ; on ne sait pas avec certitude d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Fall",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/fall?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue le 18 octobre 2026 (texte anglais de la page). L'entrée dit : « West African (mainly Senegal, also Mali, Mauritania, and Guinea): Tukulor name of unexplained etymology. It is also found among the Wolof and Soninke peoples ». La même entrée donne d'abord des noms écossais ou irlandais (forme courte de McFall), anglais et allemands, tirés de mots qui désignent une chute d'eau, une pente ou une clairière."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Décrit en 2022"
+            },
+            "statement": "Le nom Fall est aussi un nom de famille écossais, irlandais, anglais et allemand, que le même dictionnaire explique autrement. Ce nom européen est distinct du nom ouest-africain.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Fall",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/fall?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue le 18 octobre 2026 (texte anglais de la page). L'entrée dit : « West African (mainly Senegal, also Mali, Mauritania, and Guinea): Tukulor name of unexplained etymology. It is also found among the Wolof and Soninke peoples ». La même entrée donne d'abord des noms écossais ou irlandais (forme courte de McFall), anglais et allemands, tirés de mots qui désignent une chute d'eau, une pente ou une clairière."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1994,
+              "to": 1994,
+              "label": "Édition de 1994"
+            },
+            "era": "modern",
+            "statement": "Le nom Fall est, selon Ihechukwu Madubuike, l'un des noms de famille wolof les plus courants, que les enfants reçoivent de leur père.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Handbook of African Names",
+                "author": "Ihechukwu Madubuike",
+                "year": 1994,
+                "url": "https://dokumen.pub/a-handbook-of-african-names-2-revnbsped-0894104381-9780894104381-0894104373.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 111-112",
+                "notes": "2e éd., Three Continents Press, 1994. Lu le 18 octobre 2026 sur une copie non officielle, une transcription numérique miroir du volume imprimé, mal découpée par endroits. Section sur les Wolof, p. 111-112 : les enfants prennent le nom de famille du père ; les noms les plus courants, transmis par les hommes, sont « Diop, Ndiaye, Mbang, Fall, Gueye, Mbaye, Sek, Diao ». Parmi les noms qui rappellent les ancêtres : « The Fall are descendants of a powerful and large family — the Damel of Cayor, once the vassal of Boubou Djollof » ; « The N'Diaye are the descendants of Bouba Djollof or N'Diadia'u, the monarch who grouped the people of Wolof under his authority », ce qui leur vaut « the title of the most noble among the Wolofs ». L'auteur ne dit pas de qui il tient ces récits."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1994,
+              "to": 1994,
+              "label": "Rapporté en 1994"
+            },
+            "era": "modern",
+            "statement": "Le nom Fall serait celui des descendants d'une grande famille puissante, celle des damels, les rois du Cayor, selon Ihechukwu Madubuike. L'auteur rapporte ce récit sans dire de qui il le tient.",
+            "hypothesisGroup": "origine-fall",
+            "sources": [
+              {
+                "title": "A Handbook of African Names",
+                "author": "Ihechukwu Madubuike",
+                "year": 1994,
+                "url": "https://dokumen.pub/a-handbook-of-african-names-2-revnbsped-0894104381-9780894104381-0894104373.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 111-112",
+                "notes": "2e éd., Three Continents Press, 1994. Lu le 18 octobre 2026 sur une copie non officielle, une transcription numérique miroir du volume imprimé, mal découpée par endroits. Section sur les Wolof, p. 111-112 : les enfants prennent le nom de famille du père ; les noms les plus courants, transmis par les hommes, sont « Diop, Ndiaye, Mbang, Fall, Gueye, Mbaye, Sek, Diao ». Parmi les noms qui rappellent les ancêtres : « The Fall are descendants of a powerful and large family — the Damel of Cayor, once the vassal of Boubou Djollof » ; « The N'Diaye are the descendants of Bouba Djollof or N'Diadia'u, the monarch who grouped the people of Wolof under his authority », ce qui leur vaut « the title of the most noble among the Wolofs ». L'auteur ne dit pas de qui il tient ces récits."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Fall figure, écrit Fal, parmi les noms de famille du dictionnaire wolof d'Aloïse Kobès, revu par le père O. Abiven. L'animal que la famille évite de toucher, son mbagne, y est appelé ténêv et traduit « tigre ».",
+            "formAsWritten": "Fal",
+            "sources": [
+              {
+                "title": "Dictionnaire volof-français",
+                "author": "Aloïse Kobès ; nouvelle édition par O. Abiven",
+                "year": 1923,
+                "url": "https://archive.org/details/dictionnairevolo00kobs",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 383",
+                "notes": "Nouvelle édition revue et augmentée par le père O. Abiven, de la Congrégation du Saint-Esprit. Dakar, Mission catholique, 1923, selon la notice d'Internet Archive (l'adresse de l'éditeur est masquée par une étiquette). Lu le 18 octobre 2026, page 383 vue en image. Liste « Noms de famille (santa) » : « D̤ûf, D̤ip, espèce de biche », « Fal, Ténêv, tigre », « Fay, sanglier », « Gèy, Mbetă, gueule tapée », « Nd̤ay, Gaéndé, lion » (le D porte deux points souscrits). Note au bas de la page : les noms d'animaux placés après les noms de familles « désignent l'ennemi (mbagne) de cette famille », que l'on évite de toucher de peur de mourir ou de tomber malade. Missionnaires catholiques, cités pour les formes qu'ils écrivent et ce qu'ils rapportent."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1858,
+              "label": "1858"
+            },
+            "statement": "Le nom Fall, écrit fale, est pour l'abbé David Boilat l'un des sœnte les plus nobles : avec ndhiaye, c'est souvent celui des familles princières. Il note que le tigre, sègœ en wolof, porte lui aussi ce sœnte.",
+            "formAsWritten": "fale",
+            "sources": [
+              {
+                "title": "Grammaire de la langue woloffe",
+                "author": "David Boilat",
+                "year": 1858,
+                "url": "https://archive.org/details/grammairedelalan00boil",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 358",
+                "notes": "Paris, Imprimerie impériale, 1858. Lu le 18 octobre 2026 dans la numérisation d'Internet Archive, pages 357 et 358 vues en image. Chapitre « De la particule » : le nom d'une personne est souvent suivi d'une particule, le sœnte, « qu'on pourrait comparer à un titre plutôt qu'à un sobriquet » ; l'animal auquel elle se rapporte s'appelle mbagne, « ennemi », et « doit être respecté par lui et par sa famille ». Exemples, prénom puis sœnte : « Hœmet Fale », « Sambœ Ndhiaye », « Saigœ Sare » (p. 357) ; « Birœm Fay », « Galo Dhioufe » (p. 358). Page 358 encore : le lion, « Gayndé », porte le sœnte « Ndhiaye », le tigre, « Sègœ », le sœnte « Fale » ; « la particule ndhiaye et la particule fale sont souvent les sœnte des familles princières ». Abbé Boilat, missionnaire apostolique et ancien inspecteur de l'instruction publique au Sénégal selon la page de titre, cité pour les formes qu'il écrit et ce qu'il rapporte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1858,
+              "label": "1858"
+            },
+            "statement": "Le nom Fall apparaît par écrit, sous la forme Fale, dans la grammaire wolof de l'abbé David Boilat : c'est le sœnte d'Hœmet, le premier de ses exemples, c'est-à-dire le nom qui suit le prénom. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a écrit, pas depuis quand le nom est porté.",
+            "formAsWritten": "Fale",
+            "birth": true,
+            "actors": [
+              {
+                "name": "David Boilat",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Grammaire de la langue woloffe",
+                "author": "David Boilat",
+                "year": 1858,
+                "url": "https://archive.org/details/grammairedelalan00boil",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 357",
+                "notes": "Paris, Imprimerie impériale, 1858. Lu le 18 octobre 2026 dans la numérisation d'Internet Archive, pages 357 et 358 vues en image. Chapitre « De la particule » : le nom d'une personne est souvent suivi d'une particule, le sœnte, « qu'on pourrait comparer à un titre plutôt qu'à un sobriquet » ; l'animal auquel elle se rapporte s'appelle mbagne, « ennemi », et « doit être respecté par lui et par sa famille ». Exemples, prénom puis sœnte : « Hœmet Fale », « Sambœ Ndhiaye », « Saigœ Sare » (p. 357) ; « Birœm Fay », « Galo Dhioufe » (p. 358). Page 358 encore : le lion, « Gayndé », porte le sœnte « Ndhiaye », le tigre, « Sègœ », le sœnte « Fale » ; « la particule ndhiaye et la particule fale sont souvent les sœnte des familles princières ». Abbé Boilat, missionnaire apostolique et ancien inspecteur de l'instruction publique au Sénégal selon la page de titre, cité pour les formes qu'il écrit et ce qu'il rapporte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Madubuike rapporte une tradition qui rattache les Fall wolof aux descendants du damel du Cayor ; l’entrée DAFN décrit cependant Fall d’abord comme un nom toucouleur d’étymologie inexpliquée, également porté chez les Wolof et les Soninké.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "A Handbook of African Names",
+                "author": "Ihechukwu Madubuike",
+                "year": 1994,
+                "url": "https://dokumen.pub/a-handbook-of-african-names-2-revnbsped-0894104381-9780894104381-0894104373.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 111-112",
+                "notes": "2e éd., Three Continents Press, 1994. Lu le 18 octobre 2026 sur une copie non officielle, une transcription numérique miroir du volume imprimé, mal découpée par endroits. Section sur les Wolof, p. 111-112 : les enfants prennent le nom de famille du père ; les noms les plus courants, transmis par les hommes, sont « Diop, Ndiaye, Mbang, Fall, Gueye, Mbaye, Sek, Diao ». Parmi les noms qui rappellent les ancêtres : « The Fall are descendants of a powerful and large family — the Damel of Cayor, once the vassal of Boubou Djollof » ; « The N'Diaye are the descendants of Bouba Djollof or N'Diadia'u, the monarch who grouped the people of Wolof under his authority », ce qui leur vaut « the title of the most noble among the Wolofs ». L'auteur ne dit pas de qui il tient ces récits."
+              },
+              {
+                "title": "Dictionary of American Family Names — Fall entry",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.familysearch.org/en/surname?surname=fall",
+                "tier": "unverified",
+                "source_kind": "repository",
+                "notes": "Entrée FamilySearch reproduisant le Dictionary of American Family Names. Elle distingue plusieurs homonymes européens et un usage ouest-africain, principalement sénégalais, présenté comme toucouleur et aussi attesté chez les Wolof et les Soninké, d’étymologie inexpliquée."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

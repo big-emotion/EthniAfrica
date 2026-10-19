@@ -22,13 +22,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "La notice de l'Encyclopaedia Africana rapporte que, dans les traditions luba, Ilunga Mbidi reçut le titre Kalala, « général des armées royales », et fut ensuite connu comme Kalala Ilunga. Elle établit l'usage historique et titulaire de Kalala dans cette tradition, sans démontrer que toutes les lignées contemporaines Kalala en dérivent.",
-        "claimStatus": "established",
-        "sourceRefs": ["encyclopaedia-africana-kalala"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -137,7 +132,8 @@
                 "source_kind": "academic",
                 "notes": "Page web de l'Encyclopaedia Africana, sans date ni signature visibles sur la page lue ; elle dit que Nkongolo a donné à Ilunga Mbidi le titre de « Kalala, general of the royal armies » et qu'il devint Kalala Ilunga après ses succès militaires. Elle n'explique pas le mot Kalala. Lu le 13 octobre 2026."
               }
-            ]
+            ],
+            "claimStatus": "established"
           },
           {
             "period": {

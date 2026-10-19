@@ -47,23 +47,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le jamu est un nom de clan patrilinéaire : il désigne l'appartenance à un groupe de descendance, et non une filiation individuelle au père.",
-        "claimStatus": "established",
-        "sourceRefs": ["jansen-sunjata-paradigm"]
-      },
-      {
-        "claim": "Le dictionnaire des jamuw décrit les Bérété comme des marabouts ou, là où l'islam n'a pas pénétré, comme des guérisseurs-sorciers (bolotigiw), et comme des cultivateurs chez les Manden. Il les compte parmi les « cinq premiers musulmans ». Il donne aussi Sùwanun comme nom de louange de Bérété, rarement employé comme jamu à part.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["bamadaba-jamuw"]
-      },
-      {
-        "claim": "Le dictionnaire des jamuw range Bérété parmi les jamuw de la subdivision Wago, l'une des trois grandes divisions de la société soninké dont l'origine est rapportée au Wagadu, et rattache l'entrée aux Soninké comme aux Malinké. Le nom est aussi cité parmi les patronymes malinké du Mali. Aucune source consultée ne tranche entre ces rattachements : l'origine du nom n'est pas établie.",
-        "claimStatus": "contested",
-        "sourceRefs": ["bamadaba-jamuw", "interpeace-autoportrait-mali-2015"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -468,6 +453,78 @@
                 "source_kind": "academic",
                 "page": "p. 142",
                 "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov ; titre traduit du russe. Lu le 11 octobre 2026 dans le PDF déposé, pagination imprimée. Les données sans indication de provenance y viennent, selon l'autrice, des matériaux réunis par Valentin Vydrine et Artem Davydov. Un mémoire de licence n'est pas relu par des pairs : il est cité pour les témoignages qu'il transmet. Notice Wago : « une des trois grandes subdivisions des Soninké, dont le berceau est tenu pour être le Wagadou » ; Bèrete figure dans sa liste de noms de clan."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le jamu est un nom de clan patrilinéaire : il désigne l'appartenance à un groupe de descendance, et non une filiation individuelle au père.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Beyond the Mali Empire — A New Paradigm for the Sunjata Epic",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2952645/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Jansen, Jan, Universiteit Leiden. Travail critique sur la transmission de l'épopée et sur le jamu comme institution sociale plutôt que comme mémoire historique ; utilisé ici pour la nature du jamu, non pour dater un ancêtre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le dictionnaire des jamuw décrit les Bérété comme des marabouts ou, là où l'islam n'a pas pénétré, comme des guérisseurs-sorciers (bolotigiw), et comme des cultivateurs chez les Manden. Il les compte parmi les « cinq premiers musulmans ». Il donne aussi Sùwanun comme nom de louange de Bérété, rarement employé comme jamu à part.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrée Bèrete",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence. Fichier complet consulté le 11 octobre 2026 : l'entrée Bèrete, datée de 2010, donne les formes Bèrte et Bérete, le statut hɔ̀rɔn (homme libre), trois marqueurs de peuple et une note en russe sur les marabouts ; elle ne donne pas de sens au nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le dictionnaire des jamuw range Bérété parmi les jamuw de la subdivision Wago, l'une des trois grandes divisions de la société soninké dont l'origine est rapportée au Wagadu, et rattache l'entrée aux Soninké comme aux Malinké. Le nom est aussi cité parmi les patronymes malinké du Mali. Aucune source consultée ne tranche entre ces rattachements : l'origine du nom n'est pas établie.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrée Bèrete",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence. Fichier complet consulté le 11 octobre 2026 : l'entrée Bèrete, datée de 2010, donne les formes Bèrte et Bérete, le statut hɔ̀rɔn (homme libre), trois marqueurs de peuple et une note en russe sur les marabouts ; elle ne donne pas de sens au nom."
+              },
+              {
+                "title": "Autoportrait du Mali — Les Obstacles à la Paix",
+                "author": "Institut malien de recherche action pour la paix et Interpeace",
+                "year": 2015,
+                "url": "https://www.interpeace.org/wp-content/uploads/2015/03/2015_03_02_Mali_Autoportrait_FR.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 26",
+                "notes": "Rapport de recherche-action, mars 2015, lu le 11 octobre 2026. Page 26 : pour chaque grand groupe du Mali, quelques noms de famille suivis de « etc. ». La liste est illustrative et ne dit pas d'où viennent les noms."
               }
             ]
           }

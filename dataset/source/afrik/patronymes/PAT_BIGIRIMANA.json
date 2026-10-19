@@ -11,7 +11,10 @@
     {
       "spelling": "Bigirimana",
       "attestations": [
-        { "countryId": "BDI", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "BDI",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -20,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -52,10 +56,6 @@
   ],
   "gaps": [
     {
-      "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
       "fieldPath": "alliances",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
@@ -71,5 +71,94 @@
       "fieldPath": "homonyms",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Bigirimana est un nom du Burundi et du Rwanda. Il veut dire « Imana fait ainsi », Imana étant le nom de Dieu dans ces deux pays, selon la missionnaire Rosemary Guillebaud. Un père le donne à son enfant pour remercier Imana. Au Burundi, un tel nom reçu à la naissance devient souvent le nom de famille au baptême, selon une étude de 2009. On ne sait pas avec certitude depuis quand le nom est donné.",
+    "names": [
+      {
+        "nameText": "Bigirimana",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "run",
+        "namedBy": null,
+        "shortLine": "Un nom du Burundi et du Rwanda qui veut dire « Imana fait ainsi », selon une missionnaire en 1950.",
+        "periodLabel": "Écrit dès 1950",
+        "accounts": [
+          {
+            "period": {
+              "from": 2009,
+              "to": 2009,
+              "label": "Décrit en 2009"
+            },
+            "era": "modern",
+            "statement": "Le nom Bigirimana est un nom donné à la naissance. Au Burundi, la société traditionnelle n'a pas de noms de famille : quand un nom chrétien s'ajoute au baptême, le nom reçu à la naissance devient le nom de famille, selon Karen A. Duchaj et Jeanine Ntihirageza. Leur étude ne cite pas Bigirimana lui-même.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Survival by Loss of Identity: The Power of Names among Burundian Refugees in Tanzania",
+                "author": "Karen A. Duchaj et Jeanine Ntihirageza",
+                "year": 2009,
+                "url": "https://yorkspace.library.yorku.ca/items/9b20b57a-99b6-45b0-a212-95dfe823c88c",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 338",
+                "notes": "Actes du 23e Congrès international des sciences onomastiques (ICOS), 2009, p. 337-345 ; article lu en entier le 18 octobre 2026 sur le dépôt de l'université York. Page 338 : la société burundaise traditionnelle n'a pas de noms de famille ; quelques semaines après la naissance, l'enfant reçoit un nom qui a un sens ; au baptême s'ajoute un nom chrétien, le plus souvent français, et le nom d'origine devient alors le nom de famille. L'article ne cite pas Bigirimana."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1950,
+              "to": 1950,
+              "label": "Décrit en 1950"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bigirimana veut dire « Imana fait ainsi », Imana étant le nom de Dieu au Burundi et au Rwanda. C'est l'un des noms par lesquels un père remercie Imana pour une petite faveur, par exemple quand naît une fille alors qu'il attendait un garçon, ou l'inverse, selon la missionnaire Rosemary Guillebaud.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Idea of God in Ruanda-Urundi",
+                "author": "Rosemary Guillebaud",
+                "year": 1950,
+                "url": "https://archive.org/details/dli.ernet.233313",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 194-195",
+                "notes": "Chapitre 6 du livre African Ideas of God, dirigé par Edwin W. Smith, Londres, Edinburgh House Press, 1950. L'autrice, de la Church Missionary Society, a traduit la Bible en kirundi. Lu le 18 octobre 2026 dans la numérisation de la Digital Library of India hébergée par Internet Archive ; les pages 194 et 195 ont été vues en image. Page 194 : c'est le père qui nomme l'enfant ; dans chaque nom, « il » désigne Imana ; les noms en italique sont communs aux deux pays, les autres sont de l'Urundi. Page 195, parmi les noms qui remercient pour de petites faveurs (« You get a girl when you wanted a boy, and vice-versa ») : « Bigir-imana, ‘Imana does it so’ », en italique, le mot étant coupé en fin de ligne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1950,
+              "to": 1950,
+              "label": "1950"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bigirimana apparaît par écrit chez Rosemary Guillebaud, une missionnaire qui a traduit la Bible en kirundi. Elle le donne comme un nom porté à la fois en Urundi et au Ruanda, les actuels Burundi et Rwanda. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; elle dit quand une autrice l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Bigirimana",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Rosemary Guillebaud",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Idea of God in Ruanda-Urundi",
+                "author": "Rosemary Guillebaud",
+                "year": 1950,
+                "url": "https://archive.org/details/dli.ernet.233313",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 194-195",
+                "notes": "Chapitre 6 du livre African Ideas of God, dirigé par Edwin W. Smith, Londres, Edinburgh House Press, 1950. L'autrice, de la Church Missionary Society, a traduit la Bible en kirundi. Lu le 18 octobre 2026 dans la numérisation de la Digital Library of India hébergée par Internet Archive ; les pages 194 et 195 ont été vues en image. Page 194 : les noms en italique sont communs aux deux pays, les autres sont de l'Urundi. Page 195 : « Bigir-imana », en italique, donc commun à l'Urundi et au Ruanda ; le trait d'union est celui de la coupure en fin de ligne."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

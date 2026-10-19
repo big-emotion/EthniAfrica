@@ -23,18 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Idrissa est présenté comme une forme d'Idris courante en Afrique de l'Ouest.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["behindthename-idrissa"]
-      },
-      {
-        "claim": "Pour le nom-source Idris, le rapprochement traditionnel avec la racine arabe d-r-s, « étudier », est rejeté par l'étude, qui examine plusieurs hypothèses d'emprunt sans clore le débat.",
-        "claimStatus": "contested",
-        "sourceRefs": ["erder-1990-idris"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -198,6 +188,46 @@
                 "source_kind": "archive",
                 "page": "p. 267",
                 "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. L'auteur écrit, « si j'ai bien compris l'explication confuse de mon informateur », que les principales familles de griots (Yéli) sont divisées en quatre classes : « Anabi Yousoufa, Issaga, Yakouba, Idrissa ». Il ne dit pas d'où viennent ces noms."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Idrissa est présenté comme une forme d'Idris courante en Afrique de l'Ouest.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Idrissa",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.behindthename.com/name/idrissa/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice onomastique communautaire consultée en anglais. Elle présente Idrissa comme une forme d'Idris courante en Afrique de l'Ouest. Cette affirmation n'est pas établie par une étude linguistique indépendante."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Pour le nom-source Idris, le rapprochement traditionnel avec la racine arabe d-r-s, « étudier », est rejeté par l'étude, qui examine plusieurs hypothèses d'emprunt sans clore le débat.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "The Origin of the Name Idrīs in the Qurʾān: A Study of the Influence of Qumran Literature on Early Islam",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://cris.tau.ac.il/en/publications/the-origin-of-the-name-idr%C4%ABs-in-the-qur%CA%BE%C4%81n-a-study-of-the-influen/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Yoram Erder, Journal of Near Eastern Studies 49(4), 1990, p. 339-350. La notice institutionnelle de l'Université de Tel-Aviv et le texte intégral en anglais ont été consultés. L'article porte sur Idris, le nom-source d'Idrissa, et conteste l'analyse populaire par la racine arabe d-r-s."
               }
             ]
           }

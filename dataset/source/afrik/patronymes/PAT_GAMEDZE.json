@@ -11,7 +11,23 @@
     {
       "spelling": "Gamedze",
       "attestations": [
-        { "countryId": "SWZ", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "SWZ",
+          "sourceRefs": [
+            "afrik-candidate-queue",
+            "patricks-2002-swazi-surnames",
+            "van-warmelo-1935-survey"
+          ]
+        }
+      ]
+    },
+    {
+      "spelling": "Gamede",
+      "attestations": [
+        {
+          "countryId": "SWZ",
+          "sourceRefs": ["van-warmelo-1935-survey", "bryant-1929-olden-times"]
+        }
       ]
     }
   ],
@@ -20,20 +36,25 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
     {
       "peopleId": "PPL_SWAZI",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "patricks-2002-swazi-surnames"]
     }
   ],
   "countries": [
     {
       "countryId": "SWZ",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": [
+        "afrik-candidate-queue",
+        "patricks-2002-swazi-surnames",
+        "van-warmelo-1935-survey"
+      ]
     }
   ],
   "alliances": [],
@@ -48,13 +69,33 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "patricks-2002-swazi-surnames",
+      "title": "Tibongo Netinanatelo Temaswati : Swazi Surnames and Their Praisenames (copie non officielle)",
+      "url": "https://archive.org/details/tibongo-netinanatelo-temaswati-swazi-surnames-and-their-praisenames",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Première édition, Mbabane, 2002, publiée par le Conservation Trust of Swaziland, la Natural History Society of Swaziland et le Swaziland National Trust Commission ; l'auteur travaille au Musée national du Swaziland. Copie non officielle, téléversée sur Internet Archive par un particulier, lue le 18 octobre 2026 sur les images des pages. Les noms de famille et leurs noms de louange ont été recueillis surtout de 1976 à 1984, auprès de personnes dont l'auteur ne donne pas les noms. Le recueil range les noms de famille du Swaziland et des régions d'Afrique du Sud et du Mozambique jadis gouvernées par les rois swazis ; chaque entrée donne les lieux, les clans avec lesquels on ne se marie pas, les interdits alimentaires et le nom de louange."
+    },
+    {
+      "sourceKey": "van-warmelo-1935-survey",
+      "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+      "url": "https://repository.up.ac.za/handle/2263/77107",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Union of South Africa, Department of Native Affairs, Ethnological Publications, vol. V, Pretoria, 1935 ; scan de l'université de Pretoria, lu le 18 octobre 2026. La partie 2, « Swaziland » (p. 34-36), donne par district, à la date de janvier 1935, les chefs, leur nom de clan (isibongo), leur nom de louange (isinanatelo) et le nombre de contribuables adultes de sexe masculin. La partie 3, section 14 (p. 83-86), range ces chefs selon l'origine de leur famille ; p. 34, l'auteur précise que ce classement vaut pour le chef et sa famille, pas forcément pour tous ses gens."
+    },
+    {
+      "sourceKey": "bryant-1929-olden-times",
+      "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+      "url": "https://archive.org/details/bwb_KT-091-892",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Bryant, Alfred T., Longmans Green, 1929. Bryant écrit depuis la mission catholique du Natal, dans le contexte colonial. Lu sur l'image de la page dans la numérisation d'Internet Archive le 18 octobre 2026. P. 337 : « More likely is it that the emaLangeni Gumedes are related to the Gamedes (or Gamedzes) of Swaziland. »"
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
     {
       "fieldPath": "alliances",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
@@ -75,5 +116,251 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Gamedze est un nom de clan swazi, porté au Swaziland, l'actuel Eswatini. Il est écrit dès 1929, sous cette forme et sous sa forme zouloue, Gamede. On ne sait pas avec certitude d'où vient ce clan : deux lectures sont présentées plus bas.",
+    "names": [
+      {
+        "nameText": "Gamedze",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan swazi, écrit dès 1929 ; on ne sait pas avec certitude d'où vient ce clan.",
+        "periodLabel": "Écrit dès 1929 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1976,
+              "to": 2002,
+              "label": "Recueilli de 1976 à 2002"
+            },
+            "era": "modern",
+            "statement": "Le nom Gamedze désigne un clan swazi dont le nom de louange, le sinanatelo, commence par « gamedze, kunene, mntimandze ». Les sources lues ne disent pas ce que veut dire le mot gamedze, et l'origine du clan reste discutée ; deux lectures sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Tibongo Netinanatelo Temaswati : Swazi Surnames and Their Praisenames (copie non officielle)",
+                "author": "Richard Patricks",
+                "year": 2002,
+                "url": "https://archive.org/details/tibongo-netinanatelo-temaswati-swazi-surnames-and-their-praisenames",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18 (entrée GAMEDZE)",
+                "notes": "Première édition, Mbabane, 2002, publiée par le Conservation Trust of Swaziland, la Natural History Society of Swaziland et le Swaziland National Trust Commission ; l'auteur travaille au Musée national du Swaziland. Copie non officielle, téléversée sur Internet Archive par un particulier, lue le 18 octobre 2026 sur les images des pages. Les noms de famille et leurs noms de louange ont été recueillis surtout de 1976 à 1984, auprès de personnes dont l'auteur ne donne pas les noms. Dans chaque entrée, « X » désigne les clans avec lesquels le mariage est interdit et « XX » ce que les membres du clan ne mangent pas (guide de lecture, p. 10) ; les lettres H., M., L. et S. désignent les régions de Hhohho, Manzini, Lubombo et Shiselweni."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1976,
+              "to": 2002,
+              "label": "Recueilli de 1976 à 2002"
+            },
+            "era": "modern",
+            "statement": "Le nom Gamedze est porté par un clan établi à kaMkhweli, kaMadlenya, kaVikisijula et ePhonjwane, dans les régions de Manzini et de Lubombo, selon le recueil de noms swazis de Richard Patricks. Ses membres ne se marient pas avec les Hleta, les Kunene, les Madonsela, les Ngwenya, les Seyama, les Shongwe et les Sikhondze.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Tibongo Netinanatelo Temaswati : Swazi Surnames and Their Praisenames (copie non officielle)",
+                "author": "Richard Patricks",
+                "year": 2002,
+                "url": "https://archive.org/details/tibongo-netinanatelo-temaswati-swazi-surnames-and-their-praisenames",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18 (entrée GAMEDZE)",
+                "notes": "Première édition, Mbabane, 2002, publiée par le Conservation Trust of Swaziland, la Natural History Society of Swaziland et le Swaziland National Trust Commission ; l'auteur travaille au Musée national du Swaziland. Copie non officielle, téléversée sur Internet Archive par un particulier, lue le 18 octobre 2026 sur les images des pages. Les noms de famille et leurs noms de louange ont été recueillis surtout de 1976 à 1984, auprès de personnes dont l'auteur ne donne pas les noms. Dans chaque entrée, « X » désigne les clans avec lesquels le mariage est interdit et « XX » ce que les membres du clan ne mangent pas (guide de lecture, p. 10) ; les lettres H., M., L. et S. désignent les régions de Hhohho, Manzini, Lubombo et Shiselweni. Entrée GAMEDZE : « kaMkhweli M. kaMadlenya, kaVikisijula, ePhonjwane L. » ; « X Hleta X Kunene X Madonsela X Ngwenya X Seyama X Shongwe X Sikhondze »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1976,
+              "to": 2002,
+              "label": "Recueilli de 1976 à 2002"
+            },
+            "era": "modern",
+            "statement": "Le nom Gamedze compte dans les règles de mariage des Shongwe, selon Richard Patricks : les Shongwe dont le nom de louange contient mntimandze, comme celui des Gamedze, n'épousent pas de Gamedze, alors que les Shongwe-Mabhengeta le peuvent. Il explique que deux clans dont les noms de louange ont un mot en commun ne se marient pas entre eux.",
+            "sources": [
+              {
+                "title": "Tibongo Netinanatelo Temaswati : Swazi Surnames and Their Praisenames (copie non officielle)",
+                "author": "Richard Patricks",
+                "year": 2002,
+                "url": "https://archive.org/details/tibongo-netinanatelo-temaswati-swazi-surnames-and-their-praisenames",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 8-9 (introduction, section d)",
+                "notes": "Première édition, Mbabane, 2002, publiée par le Conservation Trust of Swaziland, la Natural History Society of Swaziland et le Swaziland National Trust Commission ; l'auteur travaille au Musée national du Swaziland. Copie non officielle, téléversée sur Internet Archive par un particulier, lue le 18 octobre 2026 sur les images des pages. Les noms de famille et leurs noms de louange ont été recueillis surtout de 1976 à 1984, auprès de personnes dont l'auteur ne donne pas les noms. Dans chaque entrée, « X » désigne les clans avec lesquels le mariage est interdit et « XX » ce que les membres du clan ne mangent pas (guide de lecture, p. 10) ; les lettres H., M., L. et S. désignent les régions de Hhohho, Manzini, Lubombo et Shiselweni. P. 8-9, introduction, section d : deux clans dont les noms de louange contiennent le même mot ou la même phrase ne se marient pas entre eux ; les clans dont le nom de louange commence par nkhosi, « lord or master », ont eu des ancêtres Dlamini. P. 9 : « the Shongwe-mntimandze are prevented from marrying the Gamedze and several other clans because of the similarity of their tinanatelo, while the Shongwe-mabhengeta may marry in any clan. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1935,
+              "to": 1935,
+              "label": "Janvier 1935"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gamedze est en 1935 celui de trois chefs du Swaziland, Mkhweli et Vikizijula dans le district de Bremersdorp, et Babili dans celui de Hlatikulu, selon le recensement de N. J. van Warmelo. Leur nom de louange y est Kunene. Deux des lieux que cite Richard Patricks en 2002, kaMkhweli et kaVikisijula, portent le nom de deux de ces chefs.",
+            "sources": [
+              {
+                "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+                "author": "N. J. van Warmelo",
+                "year": 1935,
+                "url": "https://repository.up.ac.za/handle/2263/77107",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 34 et 35 (partie 2, Swaziland)",
+                "notes": "Union of South Africa, Department of Native Affairs, Ethnological Publications, vol. V, Pretoria, 1935 ; scan de l'université de Pretoria, lu le 18 octobre 2026. La partie 2, « Swaziland » (p. 34-36), donne par district, à la date de janvier 1935, les chefs, leur nom de clan (isibongo), leur nom de louange (isinanatelo) et le nombre de contribuables adultes de sexe masculin. La partie 3, section 14 (p. 83-86), range ces chefs selon l'origine de leur famille ; p. 34, l'auteur précise que ce classement vaut pour le chef et sa famille, pas forcément pour tous ses gens. P. 34, district de Bremersdorp : Mkhweli, « Gamedze, abaka », Kunene, 239 contribuables ; Vikizijula, même clan et même nom de louange, 98. P. 35, district de Hlatikulu : Babili, « Gamedze, abaka », Kunene, 68."
+              },
+              {
+                "title": "Tibongo Netinanatelo Temaswati : Swazi Surnames and Their Praisenames (copie non officielle)",
+                "author": "Richard Patricks",
+                "year": 2002,
+                "url": "https://archive.org/details/tibongo-netinanatelo-temaswati-swazi-surnames-and-their-praisenames",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18 (entrée GAMEDZE)",
+                "notes": "Première édition, Mbabane, 2002, publiée par le Conservation Trust of Swaziland, la Natural History Society of Swaziland et le Swaziland National Trust Commission ; l'auteur travaille au Musée national du Swaziland. Copie non officielle, téléversée sur Internet Archive par un particulier, lue le 18 octobre 2026 sur les images des pages. Les noms de famille et leurs noms de louange ont été recueillis surtout de 1976 à 1984, auprès de personnes dont l'auteur ne donne pas les noms. Dans chaque entrée, « X » désigne les clans avec lesquels le mariage est interdit et « XX » ce que les membres du clan ne mangent pas (guide de lecture, p. 10) ; les lettres H., M., L. et S. désignent les régions de Hhohho, Manzini, Lubombo et Shiselweni."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Écrit en 1929"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gamedze apparaît par écrit en 1929 chez le missionnaire Alfred T. Bryant, qui parle « des Gamedes (ou Gamedzes) du Swaziland ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un livre l'a noté, pas depuis quand le clan existe. Le clan existait déjà avant elle.",
+            "formAsWritten": "Gamedzes",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Alfred T. Bryant",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 337",
+                "notes": "Bryant, Alfred T., Longmans Green, 1929. Bryant écrit depuis la mission catholique du Natal, dans le contexte colonial. Lu sur l'image de la page dans la numérisation d'Internet Archive le 18 octobre 2026. P. 337 : « More likely is it that the emaLangeni Gumedes are related to the Gamedes (or Gamedzes) of Swaziland. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1935,
+              "to": 1935,
+              "label": "Proposé en 1935"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gamedze serait celui d'un clan installé dans le pays avant l'arrivée des Swazis proprement dits, les amaNgwane, selon N. J. van Warmelo. Il range les chefs Gamedze parmi les amaKhandzambili, les clans plus anciens, dont beaucoup étaient selon lui des Basotho.",
+            "hypothesisGroup": "origine du clan Gamedze",
+            "sources": [
+              {
+                "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+                "author": "N. J. van Warmelo",
+                "year": 1935,
+                "url": "https://repository.up.ac.za/handle/2263/77107",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 85 (partie 3, section 14, amaKhandzambili)",
+                "notes": "Union of South Africa, Department of Native Affairs, Ethnological Publications, vol. V, Pretoria, 1935 ; scan de l'université de Pretoria, lu le 18 octobre 2026. La partie 2, « Swaziland » (p. 34-36), donne par district, à la date de janvier 1935, les chefs, leur nom de clan (isibongo), leur nom de louange (isinanatelo) et le nombre de contribuables adultes de sexe masculin. La partie 3, section 14 (p. 83-86), range ces chefs selon l'origine de leur famille ; p. 34, l'auteur précise que ce classement vaut pour le chef et sa famille, pas forcément pour tous ses gens. P. 85 : les amaKhandzambili sont les clans « in occupation of the country before the advent of the amaNgwane or true Swazis » ; « Very many, if not most, of the amaKhandzambili were baSotho ». Lignes 14-612 à 14-620 : Gamedze (Gamede), chefs Babili, Mkhweli et Vikizijula."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Proposé en 1929"
+            },
+            "statement": "Le nom Gamedze serait apparenté à celui des Gumede emaLangeni, un clan que Bryant range parmi les voisins des Swazis, selon Alfred T. Bryant. Il écarte un lien de ces Gumede avec les Qwabe, qui emploient aussi Gumede dans leur nom de louange, et juge plus probable leur parenté avec les Gamedze, sans dire sur quoi il la fonde.",
+            "hypothesisGroup": "origine du clan Gamedze",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 337",
+                "notes": "Bryant, Alfred T., Longmans Green, 1929. Bryant écrit depuis la mission catholique du Natal, dans le contexte colonial. Lu sur l'image de la page dans la numérisation d'Internet Archive le 18 octobre 2026. P. 337 : « More likely is it that the emaLangeni Gumedes are related to the Gamedes (or Gamedzes) of Swaziland. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gamede",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme zouloue du nom Gamedze, écrite dès 1929.",
+        "periodLabel": "Écrit dès 1929",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1935,
+              "to": 1935,
+              "label": "Janvier 1935"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gamede est la forme zouloue du nom Gamedze. N. J. van Warmelo l'écrit entre parenthèses, « Gamedze (Gamede) », dans la partie de son recensement où il donne la prononciation zouloue des noms swazis.",
+            "sources": [
+              {
+                "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+                "author": "N. J. van Warmelo",
+                "year": 1935,
+                "url": "https://repository.up.ac.za/handle/2263/77107",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 34 et 85",
+                "notes": "Union of South Africa, Department of Native Affairs, Ethnological Publications, vol. V, Pretoria, 1935 ; scan de l'université de Pretoria, lu le 18 octobre 2026. La partie 2, « Swaziland » (p. 34-36), donne par district, à la date de janvier 1935, les chefs, leur nom de clan (isibongo), leur nom de louange (isinanatelo) et le nombre de contribuables adultes de sexe masculin. La partie 3, section 14 (p. 83-86), range ces chefs selon l'origine de leur famille ; p. 34, l'auteur précise que ce classement vaut pour le chef et sa famille, pas forcément pour tous ses gens. P. 34 : les noms sont donnés dans la prononciation swazie, et les équivalents zoulous figurent dans le classement de la partie 3. P. 85, ligne 14-612 : « Gamedze (Gamede), abaka », chef Babili, district de Hlatikulu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Écrit en 1929"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gamede apparaît par écrit en 1929 chez Alfred T. Bryant, au pluriel anglais, dans l'expression « les Gamedes (ou Gamedzes) du Swaziland ». C'est la plus ancienne trace de cette forme que le projet connaît ; le clan existait déjà avant elle.",
+            "formAsWritten": "Gamedes",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Alfred T. Bryant",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 337",
+                "notes": "Bryant, Alfred T., Longmans Green, 1929. Bryant écrit depuis la mission catholique du Natal, dans le contexte colonial. Lu sur l'image de la page dans la numérisation d'Internet Archive le 18 octobre 2026. P. 337 : « More likely is it that the emaLangeni Gumedes are related to the Gamedes (or Gamedzes) of Swaziland. »"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

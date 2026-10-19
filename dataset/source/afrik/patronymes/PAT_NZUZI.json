@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une explication relie ce nom à la naissance de jumeaux : chez les Kongo, Nsimba et Nzuzi sont les noms donnés aux jumeaux, filles ou garçons. Celui qui naît le premier, Nsimba, « tient » l'autre (verbe simba, tenir) ; l'autre est ensuite « tiré » (zuta, zutua, tirer), mots que l'article donne comme sens du nom Nzuzi. Si une femme met des jumeaux au monde plusieurs fois, d'autres noms peuvent s'ajouter à ceux-là. Cette description porte sur le sud des Kongo et vaut, à quelques nuances près, pour l'ensemble.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["ndoma-1977-kongo-names"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -68,10 +63,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Une seule étude décrit Nzuzi comme nom de jumeau chez les Kongo ; elle ne dit pas comment il est devenu un nom de famille ni si tous ses porteurs actuels descendent de naissances gémellaires."
-    },
     {
       "fieldPath": "nameSystem",
       "reason": "la recherche web et bibliographique combinant « Nzuzi », « Kongo », « Congo », « twin name », « surname », « personal names », « onomastics », « etymology », « transmission », « alliance », « caste », « homonym » et « obituary », ainsi que la page Forebears dédiée ; l'étude déjà utilisée pour Nsimba a été écartée afin de ne pas partager une source entre fiches n'ont pas établi que la catégorie de système nominal portée par la fiche provisoire décrive ce nom lui-même ; elle reste une hypothèse de classement et n'est pas transformée en fait."
@@ -129,7 +120,8 @@
                 "page": "p. 89",
                 "notes": "Names: A Journal of Onomastics, vol. 25, n° 2, 1977, p. 88-98. Texte intégral lu. Page 89 : « NSIMBA and NZUZI: names for twins regardless of their sex. [...] The one who comes out first, NSIMBA, holds [...] the other twin who is then drawn out (zuta, zutua - 'to draw'). » L'auteur décrit surtout le sud des Kongo. Lu le 13 octobre 2026."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           },
           {
             "period": {

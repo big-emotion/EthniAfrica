@@ -69,34 +69,10 @@
   "transmissionMode": "patrilineal",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [
-      {
-        "claim": "Une tradition, mise par écrit par Doumbia en 2002, tient les Traoré, les Dembélé et les Diabaté pour des frères, et ces trois noms pour les partenaires de plaisanterie d'un autre groupe de frères : les Koné, les Diarra, les Kanté et les Condé. À Bamako, une partie des habitants interrogés en connaissaient l'existence et l'histoire ; d'autres ne les connaissaient pas.",
-        "claimStatus": "claimed",
-        "collection": "mediated",
-        "collector": "R. Jones, qui cite l'ouvrage de Doumbia et l'a confronté à ses entretiens à Bamako",
-        "context": "Étude en anglais publiée en 2007 sur la parenté à plaisanterie à Bamako, citée de seconde main dans un mémoire de 2017 ; les personnes interrogées n'y sont pas nommées",
-        "sourceRefs": ["bogacheva-2017-jamu"]
-      }
-    ],
+    "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Aucun dictionnaire consulté ne donne au mot un sens établi : le dictionnaire des noms de clan mandingues le définit seulement comme un nom de clan, et le mémoire de 2017 qui rapporte les deux explications ci-dessous n'en tient aucune pour acquise.",
-        "claimStatus": "established",
-        "sourceRefs": ["bamadaba-jamuw", "bogacheva-2017-jamu"]
-      },
-      {
-        "claim": "Une explication populaire découpe le nom en den, « enfant », et bele, « serpent » : Dembélé voudrait dire « le fils du serpent ». Elle a été notée en 1959 par un officier de la marine française, dans un dictionnaire des noms rédigé pour les Européens en poste en Afrique-Occidentale française. Il disait tenir ses données de griots, sans nommer celui qui lui a donné celle-ci.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["bogacheva-2017-jamu"]
-      },
-      {
-        "claim": "Une hypothèse cherche l'origine du nom dans les langues voltaïques. En sénoufo, plusieurs noms de groupes sociaux se terminent en -mbele : fonombele, les forgerons ; kpembele, les sculpteurs sur bois ; kwombele, les jeunes gens initiés. Ces groupes ne sont pas des parentés, les clans sénoufo portant des noms d'animaux. Le rang élevé d'un nom proche, Tembele, chez les Dogon, est avancé à l'appui. L'hypothèse est présentée comme probable, non comme établie.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["bogacheva-2017-jamu"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -340,9 +316,12 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 32",
-                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe, dirigé par A. Davydov et relu par V. Vydrin. Lu dans le PDF du dépôt de l'université le 11 octobre 2026 ; les passages cités sont traduits par nous. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages et les hypothèses qu'il transmet. Notice Denbele, page 32 : citation en anglais de l'étude de R. Jones, 2007, p. 60, qui renvoie à Doumbia 2002, p. 33. L'étude de Jones n'a pas été lue ; seule la citation qu'en donne le mémoire l'a été."
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe, dirigé par A. Davydov et relu par V. Vydrin. Lu dans le PDF du dépôt de l'université le 11 octobre 2026 ; les passages cités sont traduits par nous. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages et les hypothèses qu'il transmet. Notice Denbele, page 32 : citation en anglais de l'étude de R. Jones, 2007, p. 60, qui renvoie à Doumbia 2002, p. 33. L'étude de Jones n'a pas été lue ; seule la citation qu'en donne le mémoire l'a été.\nÉtude en anglais publiée en 2007 sur la parenté à plaisanterie à Bamako, citée de seconde main dans un mémoire de 2017 ; les personnes interrogées n'y sont pas nommées"
               }
-            ]
+            ],
+            "claimStatus": "claimed",
+            "collection": "mediated",
+            "collector": "R. Jones, qui cite l'ouvrage de Doumbia et l'a confronté à ses entretiens à Bamako"
           },
           {
             "period": {
@@ -535,7 +514,8 @@
                 "page": "p. 32-33",
                 "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe, dirigé par A. Davydov et relu par V. Vydrin. Lu dans le PDF du dépôt de l'université le 11 octobre 2026 ; les passages cités sont traduits par nous. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages et les hypothèses qu'il transmet. Notice Denbele, pages 32 et 33, rubrique « étymologie populaire », d'après le dictionnaire des noms rédigé en 1959 par Molinie pour les Européens en poste en Afrique-Occidentale française. Ce dictionnaire n'a pas été lu."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           },
           {
             "period": {
@@ -556,6 +536,37 @@
                 "source_kind": "academic",
                 "page": "p. 33",
                 "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe, dirigé par A. Davydov et relu par V. Vydrin. Lu dans le PDF du dépôt de l'université le 11 octobre 2026 ; les passages cités sont traduits par nous. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages et les hypothèses qu'il transmet. Notice Denbele, page 33, rubrique « étymologie scientifique probable », tirée sans source précisée du matériau réuni par V. Vydrin et A. Davydov."
+              }
+            ],
+            "claimStatus": "claimed"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Aucun dictionnaire consulté ne donne au mot un sens établi : le dictionnaire des noms de clan mandingues le définit seulement comme un nom de clan, et le mémoire de 2017 qui rapporte les deux explications ci-dessous n'en tient aucune pour acquise.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Fichier complet lu le 11 octobre 2026. Entrée Denbele : variante Danbɛlɛ, six groupes, aucun sens donné au nom."
+              },
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 31",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe, dirigé par A. Davydov et relu par V. Vydrin. Lu dans le PDF du dépôt de l'université le 11 octobre 2026 ; les passages cités sont traduits par nous. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages et les hypothèses qu'il transmet. Notice Denbele, page 31 : les graphies françaises et les groupes qui portent le nom."
               }
             ]
           }

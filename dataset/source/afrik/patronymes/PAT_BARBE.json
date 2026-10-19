@@ -5,18 +5,9 @@
     "directives": "Fiche approfondie selon docs/runbooks/anthroponym-fiche-research.md. Les analyses de forme ne doivent pas être transformées en généalogie de lignée sans archive dédiée."
   },
   "id": "PAT_BARBE",
-  "nameMain": "Barbé",
-  "nameSystem": "clan_name",
+  "nameMain": "Barbe",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
-    {
-      "spelling": "Barbé",
-      "attestations": [
-        {
-          "countryId": "SYC",
-          "sourceRefs": ["afrik-candidate-queue"]
-        }
-      ]
-    },
     {
       "spelling": "Barbe",
       "attestations": [
@@ -28,17 +19,12 @@
     }
   ],
   "transmissionMode": "elective",
-  "designatedSocialUnit": "lineage",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le Dictionary of American Family Names distingue pour Barbe ou Barbé plusieurs formations françaises : surnom lié à la barbe, variante de Barbier, ou formation sur le prénom féminin Barbe. Faute d'archive de lignée, aucune de ces possibilités n'est imposée à la branche seychelloise.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["dafn-barbe-2022"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -87,11 +73,11 @@
   "gaps": [
     {
       "fieldPath": "alliances",
-      "reason": "les résultats exacts « Barbé », le catalogue des Seychelles National Archives, le Family Tree Project et les recherches patrimoniales décrites par O'Gorman, complétés par les termes « alliance », « cousinage » et « joking relationship », n'ont fait apparaître aucune paire nommée et sourcée reliant Barbé à un autre nom documenté ici."
+      "reason": "les résultats exacts « Barbé », le catalogue des Seychelles National Archives, le Family Tree Project et les recherches patrimoniales décrites par O'Gorman, complétés par les termes « alliance », « cousinage » et « joking relationship », n'ont fait apparaître aucune paire nommée et sourcée reliant Barbe à un autre nom documenté ici."
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "les résultats exacts « Barbé », le catalogue des Seychelles National Archives, le Family Tree Project et les recherches patrimoniales décrites par O'Gorman, complétés par « caste », « statut héréditaire », « métier » et « social function », n'ont établi aucune fonction sociale héréditaire propre aux porteurs de Barbé. Une étymologie professionnelle éventuelle n'est pas assimilée à un statut contemporain."
+      "reason": "les résultats exacts « Barbé », le catalogue des Seychelles National Archives, le Family Tree Project et les recherches patrimoniales décrites par O'Gorman, complétés par « caste », « statut héréditaire », « métier » et « social function », n'ont établi aucune fonction sociale héréditaire propre aux porteurs de Barbe. Une étymologie professionnelle éventuelle n'est pas assimilée à un statut contemporain."
     },
     {
       "fieldPath": "bearers",
@@ -101,5 +87,102 @@
       "fieldPath": "homonyms",
       "reason": "les résultats exacts « Barbé », le catalogue des Seychelles National Archives, le Family Tree Project et les recherches patrimoniales décrites par O'Gorman n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Barbe est un nom de famille porté aux Seychelles, où il figure dans les registres de mariage de Mahé dès 1840. En français, il viendrait d'un surnom donné à un homme barbu, ou du prénom féminin Barbe ; on ne sait pas avec certitude quelle explication vaut pour les familles seychelloises. Nous présentons ces explications plus bas.",
+    "names": [
+      {
+        "nameText": "Barbe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Un nom de famille des Seychelles, écrit à Mahé dès 1840 ; son origine française reste discutée.",
+        "periodLabel": "Écrit à Mahé dès 1840",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "statement": "Le nom Barbe serait, en français, un surnom donné à un homme qui portait la barbe : il viendrait du mot barbe, tiré du latin barba, selon le dictionnaire des noms de famille dirigé par Patrick Hanks.",
+            "hypothesisGroup": "origine du nom Barbe",
+            "sources": [
+              {
+                "title": "Barbe / Barbé Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/barbe?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e édition, Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 18 octobre 2026 dans la traduction française que le site affiche. La notice donne pour Barbe, en français, un surnom pour une personne portant la barbe, de l'ancien français barbe, du latin barba, et un nom tiré d'un prénom féminin, forme française de Barbara. Pour Barbé, avec un accent, elle donne un dérivé du même mot et une variante de Barbier. Elle donne enfin une origine allemande, le nom d'un poisson, la barbe, d'où un nom de pêcheur ou de marchand de poisson. Elle ne parle pas des Seychelles."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "statement": "Le nom Barbe viendrait aussi d'un prénom féminin, Barbe, la forme française de Barbara, selon le dictionnaire des noms de famille dirigé par Patrick Hanks.",
+            "hypothesisGroup": "origine du nom Barbe",
+            "sources": [
+              {
+                "title": "Barbe / Barbé Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/barbe?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e édition, Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 18 octobre 2026 dans la traduction française que le site affiche : « Français : d'un nom personnel féminin Forme française de Barbara »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1840,
+              "to": 1840,
+              "label": "1840"
+            },
+            "era": "colonial",
+            "statement": "Le nom Barbe figure comme nom de famille dans les tables des mariages de Mahé, aux Seychelles, à partir de 1840, selon le relevé du Cercle de généalogie Maurice-Rodrigues. C'est la plus ancienne trace de ce nom aux Seychelles que le projet connaît ; elle ne dit pas d'où venaient les familles qui le portaient.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Mahé [Seychelles] : mariages, table des patronymes en BAR",
+                "author": "Cercle de Généalogie Maurice-Rodrigues",
+                "year": null,
+                "url": "https://cgmrgenealogie.org/tab_mari.php/Mah%C3%A9+%5BSEYCHELLES%5D/_BAR",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Base de données d'une association de généalogie, qui dépouille les tables et actes d'état civil, les registres paroissiaux et les registres d'inhumation. Lue le 18 octobre 2026. Le patronyme BARBE y figure dans les mariages de Mahé pour la période 1840-1904, avec 21 et 20 mentions dans deux colonnes, « Intervenant 1 » et « Intervenant 2 », que la page ne définit pas. Deux lignes notent des personnes inscrites BARBEIN (1896) et BARBIN (1899) qui ont signé « BARBE ». La table, en capitales, n'écrit pas d'accent. Le détail des actes n'a pas été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le Dictionary of American Family Names distingue pour Barbe ou Barbé plusieurs formations françaises : surnom lié à la barbe, variante de Barbier, ou formation sur le prénom féminin Barbe. Faute d'archive de lignée, aucune de ces possibilités n'est imposée à la branche seychelloise.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Barbe / Barbé Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/barbe?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e édition, Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 18 octobre 2026 dans la traduction française que le site affiche. La notice donne pour Barbe, en français, un surnom pour une personne portant la barbe, de l'ancien français barbe, du latin barba, et un nom tiré d'un prénom féminin, forme française de Barbara. Pour Barbé, avec un accent, elle donne un dérivé du même mot et une variante de Barbier. Elle donne enfin une origine allemande, le nom d'un poisson, la barbe, d'où un nom de pêcheur ou de marchand de poisson. Elle ne parle pas des Seychelles."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

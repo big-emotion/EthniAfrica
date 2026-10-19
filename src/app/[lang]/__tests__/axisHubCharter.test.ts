@@ -57,23 +57,34 @@ describe("the axis hubs — three addresses, one spread", () => {
   });
 
   /**
-   * Every spread hub reads the one page module, so a change to the spread
-   * reaches all of them. Hand-written pages is what let the retired hubs
-   * become different surfaces sharing a name.
+   * Every remaining spread hub reads the one page module, so a change to the
+   * spread reaches all of them. Hand-written pages let retired hubs become
+   * different surfaces sharing a name.
    *
-   * The dossiers axis left the spread on 30 September 2026: the operator
-   * turned it into the Articles listing (docs/plans/articles-refonte-2026-09-30.md,
-   * option A), which supersedes brand charter §8.6 for that section only. It
-   * is held by the next test instead, so the exception is a named one.
+   * The dossiers axis left the spread on 30 September 2026 for the Articles
+   * listing. The Atlas left it on 18 October 2026 for the approved names hub
+   * (brief 14). Each exception has its own route assertion below.
    */
   // @req REQ-114
   it("builds every spread hub from the shared axis-hub page", () => {
-    for (const axis of ACCESS_MODES.filter((mode) => mode !== "dossiers")) {
+    for (const axis of ACCESS_MODES.filter(
+      (mode) => mode !== "dossiers" && mode !== "atlas"
+    )) {
       const source = readFileSync(routePageFile(HUB_ROUTE_DIR[axis]), "utf8");
 
       expect(source, axis).toContain("@/components/hubs/axisHubPage");
       expect(source, axis).toContain(`axis="${axis}"`);
     }
+  });
+
+  // @req REQ-114
+  it("serves the approved names hub, not the spread, at the Atlas route", () => {
+    const source = readFileSync(
+      fromRoot("src/app/[lang]/atlas/(hub)/page.tsx"),
+      "utf8"
+    );
+    expect(source).toContain("@/components/atlas/AtlasNamesHub");
+    expect(source).not.toContain("@/components/hubs/axisHubPage");
   });
 
   // @req REQ-114

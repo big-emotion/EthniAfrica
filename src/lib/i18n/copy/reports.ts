@@ -31,6 +31,9 @@ const fr = {
       assertion: "Affirmation",
       source: "Source",
       general: "Signalement général",
+      // A name the search could not answer: the reader proposes a source
+      // for the word typed, which has no fiche to name it.
+      "search-query": "Recherche",
     },
     reason: "Qu'est-ce qui ne va pas ?",
     correctionDisclosure: "Vous connaissez la bonne réponse ?",

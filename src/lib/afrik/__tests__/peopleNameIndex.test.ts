@@ -65,6 +65,7 @@ describe("peopleNameIndex", () => {
       people({
         nameHistory: {
           summary: "Résumé.",
+          originExplained: true,
           names: [
             {
               nameText: "Testa",

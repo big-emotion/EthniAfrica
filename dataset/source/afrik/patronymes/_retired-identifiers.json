@@ -159,5 +159,68 @@
     "successorId": "PAT_BANGOURA",
     "reason": "Bangura is the Sierra Leone spelling of Bangoura: the Bamadaba clan-name dictionary gives Bàngura as one jamu in Malinke and Soussou, and Arcin (1907, p. 303) writes Bangoura among the Soso of Guinea. Folded in: the spelling Bangura in Sierra Leone, on Bamadaba; Sierra Leone as a country, marked supposed because only the candidate queue gives it; a Bangura entry in the name history that says neither source speaks of Sierra Leone; and the gap on the people. Not carried: the Bangoura spelling in Sierra Leone, which rested on the queue and on Arcin, who finds the name only in Guinea; the candidate-queue stub.",
     "decidedOn": "2026-10-16"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PAT_NJIE",
+    "successorId": "PAT_NDIAYE",
+    "reason": "Njie is the Gambian spelling of Ndiaye: the Dictionary of American Family Names (2003, 2006, on FamilySearch, reopened) gives « West African (Gambia): variant of Ndiaye », and the keeper's name history already tells Njie as that form. Folded in: the spelling Njie and the Gambia as a country, on that entry, and the homonym it records, a Njie of unexplained etymology among the Bakweri of Cameroon. Not carried: the spelling Ndiaye in the Gambia and the Wolof link, which rested on the candidate queue alone (the keeper has the Wolof on its own sources), and the candidate-queue stub.",
+    "decidedOn": "2026-10-18"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PAT_JALLOW",
+    "successorId": "PAT_DIALLO",
+    "reason": "Jallow is the Gambian spelling of Diallo: the Dictionary of American Family Names, 2nd edition (2022, on Geneanet, reopened), gives « West African (mainly Gambia): variant of Diallo », and the keeper already tells the spelling Jallow in the Gambia, with the Fula link, on that entry. Folded in: the same entry now also attests the keeper's Gambia country row. Not carried: the retired fiche's copy of that entry at a second address (a machine-translated German Geneanet page), and its spelling Diallo in the Gambia, which the entry does not state.",
+    "decidedOn": "2026-10-18"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PAT_JALLOH",
+    "successorId": "PAT_DIALLO",
+    "reason": "Jalloh is the Sierra Leone spelling of Diallo: the Dictionary of American Family Names (2003, 2006, on FamilySearch, reopened) gives « West African (mainly Sierra Leone): variant of Diallo », and the keeper already tells the spelling Jalloh in Sierra Leone, with the country and the Fula link. Nothing else to fold in. Not carried: the retired fiche's copy of the 2nd-edition entry at a second address (a machine-translated German Geneanet page), and its spelling Diallo in Sierra Leone, which the entry does not state.",
+    "decidedOn": "2026-10-18"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PAT_ADEN",
+    "successorId": "PAT_ADAM",
+    "reason": "Aden is a Somali form of Adam: the Dictionary of American Family Names (2003, 2006, on FamilySearch, reopened) gives Aden as « a variant of Adan 3 'Adam' », also found in Ethiopia, Kenya and Djibouti, and Adan as the Somali equivalent of Biblical Adam; Burton (First Footsteps in East Africa, 1856, p. 18, note, read on the page image) writes « Adan (i. e. Adam.) » in a Somali genealogy. Folded in: the spelling Aden in Djibouti, Djibouti as a country and the bearer Djama Guedi Aden, on the Présidence de Djibouti page of 22 June 2026, reopened, and the Somali as a people, on the dictionary. The keeper's name history now tells Adan and Aden from those sources, as it tells the Hausa Adamu. The same Aden entry gives two European family names spelled Aden, of other origins (East Frisian, from the personal name Ade; Scottish, from the lands of Auden or Aden in Old Deer, Aberdeenshire): the keeper records them as one homonym, as PAT_WOLDE does for the European Wolde, and its gap saying it had no homonym is removed. Not carried: the spelling Adan in Djibouti and the Djibouti country row as written, which rested on the candidate queue alone, and the candidate-queue stub.",
+    "decidedOn": "2026-10-18"
+  },
+  {
+    "decision": "withdrawn",
+    "retiredId": "PAT_EL_KENZI",
+    "successorId": null,
+    "reason": "No source attests El Kenzi as a family name: the spelling rested on the candidate queue alone. The fiche's one sourced claim is about a people, not a surname: Satzinger (Old Nubian, 2010, reopened; the fiche cited pp. 748-749, the passage is on p. 748) gives Kenzi or Kenûzi as the name of the Nubians from Aswan to Wadi el-Sebua, derives it from the Arabic title kanz al-dawla, and weighs two bearers of that title. Carried to PPL_NUBIENS, which lists the Kenzi (Mattokki) among its groups: a Kenzi entry in its name history on that page, telling what the name designated and the two bearers as two hypotheses of one group, and one sentence in its summary. No family-name fiche fits the name. Withdrawn with no successor; the candidate-queue stub is not carried.",
+    "decidedOn": "2026-10-18"
+  },
+  {
+    "decision": "withdrawn",
+    "retiredId": "PAT_NGARLEJY",
+    "successorId": null,
+    "reason": "Not a family name: the BnF authority record « Yorongar, Ngarlejy » (reopened) gives Ngarlejy as the given name of one Chadian politician, and the Méga-Tchad bulletin of 2004 writes « Ngarléjy Yorongar », the same person. No source opened shows the name borne as a surname or passed on. The rulings that kept a personal name and reclassified it (PAT_OWUSU, PAT_ZINSOU, PAT_KGOSI, the Fang names) rest on sources showing the name in the family-name position; none does here, so the precedent is PAT_FADICCA, withdrawn because its only sourced claim was not about a surname. Withdrawn with no successor.",
+    "decidedOn": "2026-10-18"
+  },
+  {
+    "decision": "withdrawn",
+    "retiredId": "PAT_NGARTA",
+    "successorId": null,
+    "reason": "Not a family name: the Library of Congress country study (reopened) and Champion (1996) show Ngarta as the first name François Tombalbaye took in place of his European one during the authenticity campaign of 1973; his family name stayed Tombalbaye. Champion's gloss, Sara ngar « chief », is about that chosen name. No source opened shows Ngarta borne as a surname. As for PAT_NGARLEJY, the reclassification rulings need the name in the family-name position, so the PAT_FADICCA precedent applies. Withdrawn with no successor.",
+    "decidedOn": "2026-10-18"
+  },
+  {
+    "decision": "withdrawn",
+    "retiredId": "PAT_KIGOZI",
+    "successorId": null,
+    "reason": "No source tells anything about the name Kigozi. Its only source, the 2016 ruling of the High Court of Uganda (reopened), names John Kigozi Ssebaggala, Prime Minister of the Fumbe clan. Its citation, Nakitende & Another v Kigozi & 2 Others, files him under Kigozi, as it files the first applicant, Nakitende Scovia, under Nakitende: that is the slot a law report keeps for a party's surname, and the one sign of Kigozi in a family-name position. It is one living person's name in one citation: the ruling does not say whether Kigozi is a personal name, a name of the Fumbe clan or a name passed on, and the totemic-clan class had no source. The Ganda personal names the corpus keeps and files as non-hereditary (PAT_LUBEGA, PAT_MUKASA, PAT_KATO) each rest on a source that describes the name; none does here, so the precedent is PAT_KOUM, withdrawn because nothing beyond one bare attestation backed it. Withdrawn with no successor; its Baganda link goes with it. Whether a citation's party name is enough to keep it as a Ganda personal name is left to the operator.",
+    "decidedOn": "2026-10-18"
+  },
+  {
+    "decision": "withdrawn",
+    "retiredId": "PAT_AHL_SIDI",
+    "successorId": null,
+    "reason": "Not a family name: the fiche rested on the candidate queue alone, and no source opened gives Ahl Sidi on its own. In Marty's Études sur l'Islam et les tribus maures: les Brakna (1921, reopened), Ahel Sidi only opens the names of tribal groups and fractions, the Ahel Sidi Mahmoud (pp. 85, 97) and the Kounta Ahel Sidi Amar (p. 91); ahel, « the people of », marks a house or a fraction, as the fiche's own gap said. The wave 25 report recommended retiring it in the same question as PAT_NGARLEJY and PAT_NGARTA. The fiche held no sourced claim to carry. Withdrawn with no successor; a fiche for one of those groups, if wanted, starts from a source.",
+    "decidedOn": "2026-10-18"
   }
 ]

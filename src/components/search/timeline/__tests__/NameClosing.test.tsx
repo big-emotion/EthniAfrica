@@ -3,6 +3,7 @@ import { describe, expect, it, vi } from "vitest";
 
 import {
   NameClosingBand,
+  NameFicheSourcesBlock,
   NameNextStep,
   NameSourcesBlock,
 } from "@/components/search/timeline/NameClosing";
@@ -11,6 +12,11 @@ import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
 import { getLocalizedRoute, getNameAnswerRoute } from "@/lib/routing";
 import { NameAddressProvider } from "@/components/search/NameAddressProvider";
 import { PEUL_HISTORY } from "@/lib/search/__fixtures__/nameTimelineFixtures";
+import {
+  groupAccountsBySourceFamily,
+  sourceRowsForTimelineName,
+  timelineTileAnchorId,
+} from "@/lib/search/nameClosing";
 import { buildNameTimeline } from "@/lib/search/nameTimeline";
 
 vi.mock("next/navigation", () => ({
@@ -21,22 +27,24 @@ vi.mock("next/navigation", () => ({
 const timeline = buildNameTimeline(PEUL_HISTORY, "peul");
 const name = timeline.names[0];
 
-describe("NameSourcesBlock — « Les sources parlent »", () => {
+describe("NameSourcesBlock — « Les sources »", () => {
   // @req REQ-198
-  it("asks who tells the open name and lists its source families", () => {
-    render(
-      <NameSourcesBlock
-        name={name}
-        forms={timeline.italicForms}
-        open
-        language="fr"
-      />
-    );
+  it("does not repeat account prose from the timeline", () => {
+    render(<NameSourcesBlock name={name} language="fr" />);
+
+    for (const account of name.tiles.flatMap((tile) => tile.accounts)) {
+      expect(screen.queryByText(account.statement)).toBeNull();
+    }
+  });
+
+  // @req REQ-198
+  it("keeps the block title, sentence, type strip, and lists source rows", () => {
+    render(<NameSourcesBlock name={name} language="fr" />);
 
     expect(
       screen.getByRole("heading", {
         level: 2,
-        name: `Qui raconte le nom ${name.nameText} ?`,
+        name: `Les sources du nom ${name.nameText}`,
       })
     ).toBeInTheDocument();
     expect(
@@ -47,36 +55,195 @@ describe("NameSourcesBlock — « Les sources parlent »", () => {
   });
 
   // @req REQ-198
-  it("opens the first family on the first subject and folds the rest", () => {
+  it("renders source rows without repeating account accordions", () => {
     const { container } = render(
-      <NameSourcesBlock
-        name={name}
-        forms={timeline.italicForms}
-        open
-        language="fr"
-      />
+      <NameSourcesBlock name={name} language="fr" />
     );
-    const families = container.querySelectorAll("details[data-family]");
+    expect(container.querySelectorAll("details[data-family]")).toHaveLength(0);
+    expect(container.querySelectorAll("[data-source-row]").length).toBe(
+      sourceRowsForTimelineName(name).length
+    );
+  });
 
-    expect((families[0] as HTMLDetailsElement).open).toBe(true);
-    for (const family of Array.from(families).slice(1)) {
-      expect((family as HTMLDetailsElement).open).toBe(false);
-    }
+  // @req REQ-198
+  it("links each source to its newest backed account and reveals folded accounts on click", () => {
+    const reveal = vi.fn();
+    const rows = sourceRowsForTimelineName(name);
+    const row = rows.find(({ accounts }) => accounts.length > 1)!;
+    const target = row.accounts[0];
+    render(
+      <NameSourcesBlock name={name} onRevealAccount={reveal} language="fr" />
+    );
+
+    const link = screen.getByRole("link", {
+      name: `Voir les ${row.accounts.length} récits`,
+    });
+    expect(link).toHaveAttribute(
+      "href",
+      `#${timelineTileAnchorId(name.nameText, target.tileKey)}`
+    );
+    fireEvent.click(link);
+    expect(reveal.mock.calls[0][0]).toBe(target.tileKey);
   });
 
   // @req REQ-161
   it("names each source by its type, never by a tier or a score", () => {
     const { container } = render(
-      <NameSourcesBlock
-        name={name}
-        forms={timeline.italicForms}
-        open
-        language="fr"
-      />
+      <NameSourcesBlock name={name} language="fr" />
     );
 
     expect(container.textContent).not.toMatch(
       /fiable|Officielle|Référencée|Non vérifiée|tier/i
+    );
+  });
+});
+
+describe("NameSourcesBlock — the plain title and its sentence", () => {
+  // @req REQ-198
+  it("titles the block « Les sources du nom … » with no eyebrow above it", () => {
+    const { container } = render(
+      <NameSourcesBlock name={name} language="fr" />
+    );
+
+    expect(container.querySelector("section > .afh-tile-label")).toBeNull();
+    expect(container.querySelector("h2")?.textContent).toBe(
+      `Les sources du nom ${name.nameText}`
+    );
+  });
+
+  // @req REQ-198
+  it("counts the sources that explain the name, not its accounts", () => {
+    const sources = groupAccountsBySourceFamily(name).reduce(
+      (sum, group) => sum + group.sourceCount,
+      0
+    );
+    const accounts = name.tiles.flatMap((tile) => tile.accounts).length;
+    // The Peul fixture cites one source for several accounts: the sentence
+    // must say so rather than count the accounts as sources.
+    expect(sources).toBe(1);
+    expect(accounts).toBeGreaterThan(1);
+    const { container } = render(
+      <NameSourcesBlock name={name} language="fr" />
+    );
+
+    expect(container.querySelector("h2 + p")?.textContent).toBe(
+      `Une seule source explique ce nom pour l’instant. Voici ses ${accounts} récits.`
+    );
+  });
+
+  // @req REQ-198
+  it("keeps the sentence true when a single source explains the name", () => {
+    const copy = nameClosingCopy.fr;
+
+    expect(copy.sourcesLead(1, 1, "Kollo")).toBe(
+      "Une seule source explique ce nom pour l’instant. Voici son récit."
+    );
+    expect(copy.sourcesLead(1, 2, "Kollo")).toBe(
+      "Une seule source explique ce nom pour l’instant. Voici ses 2 récits."
+    );
+    expect(copy.sourceAccounts(1)).toBe("Voir le récit");
+    expect(copy.sourceAccounts(2)).toBe("Voir les 2 récits");
+    expect(copy.fiche.sourcesLead(1, 2, 2, "people")).toBe(
+      "Une seule source explique les noms de ce peuple pour l’instant. Voici ses 2 récits, rangés par nom."
+    );
+    expect(copy.fiche.sourcesLead(3, 5, 2, "people")).toBe(
+      "Plusieurs sources expliquent les noms de ce peuple. Voici leurs 5 récits, rangés par nom, puis par type de source."
+    );
+  });
+
+  // @req REQ-198
+  it("says when sources mention a family name without explaining it", () => {
+    render(
+      <NameFicheSourcesBlock
+        history={{ ...PEUL_HISTORY, originExplained: false }}
+        subjectType="patronyme"
+        language="fr"
+      />
+    );
+
+    expect(
+      screen.getByText(
+        /sources mentionnent ce nom, sans en expliquer l’origine/
+      )
+    ).toBeInTheDocument();
+  });
+
+  // @req REQ-196
+  it("shows a claim status in the period line for patronyme accounts", () => {
+    const history = {
+      ...PEUL_HISTORY,
+      names: PEUL_HISTORY.names.map((item, nameIndex) =>
+        nameIndex === 0
+          ? {
+              ...item,
+              accounts: item.accounts.map((account, accountIndex) =>
+                accountIndex === 0
+                  ? { ...account, claimStatus: "contested" as const }
+                  : account
+              ),
+            }
+          : item
+      ),
+    };
+    const { container } = render(
+      <NameFicheSourcesBlock
+        history={history}
+        subjectType="patronyme"
+        language="fr"
+      />
+    );
+
+    expect(container.textContent).toContain("Contestée");
+    expect(container.textContent).toContain(" · Contestée");
+  });
+
+  // @req REQ-196
+  it("does not add patronyme claim statuses to other subject types", () => {
+    const history = {
+      ...PEUL_HISTORY,
+      names: PEUL_HISTORY.names.map((item, nameIndex) =>
+        nameIndex === 0
+          ? {
+              ...item,
+              accounts: item.accounts.map((account, accountIndex) =>
+                accountIndex === 0
+                  ? { ...account, claimStatus: "contested" as const }
+                  : account
+              ),
+            }
+          : item
+      ),
+    };
+    const { container } = render(
+      <NameFicheSourcesBlock
+        history={history}
+        subjectType="people"
+        language="fr"
+      />
+    );
+
+    expect(container.textContent).not.toContain("Contestée");
+  });
+});
+
+describe("NameClosing copy — a family name", () => {
+  // A family name is one name with several forms: « les noms de ce nom de
+  // famille » doubles the word (found on the brief 6 boards, 2026-10-18).
+  // @req REQ-198
+  it("speaks of « ce nom de famille », never of « les noms de ce nom de famille »", () => {
+    const copy = nameClosingCopy.fr;
+
+    expect(copy.fiche.sourcesTitle("patronyme")).toBe(
+      "Les sources de ce nom de famille"
+    );
+    expect(copy.fiche.sourcesLead(3, 14, 2, "patronyme")).toBe(
+      "Plusieurs sources expliquent ce nom de famille. Voici leurs 14 récits, rangés par forme, puis par type de source."
+    );
+    expect(copy.fiche.noOral("patronyme")).toBe(
+      "Aucun récit transmis oralement n’est enregistré pour ce nom de famille."
+    );
+    expect(copy.otherVoices("patronyme", ["archive"])).toBe(
+      "Pour les autres formes de ce nom de famille, d’autres sources existent : des archives. Choisissez un nom plus haut pour les lire."
     );
   });
 });
@@ -87,7 +254,6 @@ describe("NameSourcesBlock — the other names' voices", () => {
     const { container } = render(
       <NameSourcesBlock
         name={name}
-        forms={timeline.italicForms}
         otherKinds={[
           "linguistic_reference",
           "press",
@@ -100,18 +266,14 @@ describe("NameSourcesBlock — the other names' voices", () => {
     );
 
     expect(container.querySelector("[data-other-voices]")?.textContent).toBe(
-      "Pour les autres noms de ce peuple, d’autres voix parlent aussi : des références linguistiques, des articles de presse, des organisations intergouvernementales et des archives. Choisissez un nom plus haut pour les lire."
+      "Pour les autres noms de ce peuple, d’autres sources existent : des références linguistiques, des articles de presse, des organisations intergouvernementales et des archives. Choisissez un nom plus haut pour les lire."
     );
   });
 
   // @req REQ-198
   it("draws no note when no other name brings another voice", () => {
     const { container } = render(
-      <NameSourcesBlock
-        name={name}
-        forms={timeline.italicForms}
-        language="fr"
-      />
+      <NameSourcesBlock name={name} language="fr" />
     );
 
     expect(container.querySelector("[data-other-voices]")).toBeNull();
@@ -171,6 +333,25 @@ describe("NameClosingBand — silences, conviction, invitation", () => {
     expect(
       screen.queryByRole("button", { name: "Signaler une erreur" })
     ).toBeNull();
+  });
+
+  // The accent tint stays light at night while --afh-text turns light: the
+  // report button sat at 1.12:1 there. Text on the tint takes the ink
+  // color.css keeps dark in both themes.
+  // @req REQ-198
+  it("writes the report button in the ink that stays readable on its tint at night", () => {
+    render(
+      <NameClosingBand
+        silences={["Une absence."]}
+        contributionTarget={target}
+        language="fr"
+      />
+    );
+
+    const report = screen.getByRole("button", { name: "Signaler une erreur" });
+    expect(report).toHaveClass("bg-[color:var(--accent-tint)]");
+    expect(report).toHaveClass("text-[color:var(--accent-foreground)]");
+    expect(report).not.toHaveClass("text-afh-text");
   });
 });
 

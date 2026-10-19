@@ -6,7 +6,7 @@
   },
   "id": "PAT_APPADOO",
   "nameMain": "Appadoo",
-  "nameSystem": "clan_name",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Appadoo",
@@ -19,10 +19,11 @@
     }
   ],
   "transmissionMode": "patrilineal",
-  "designatedSocialUnit": "lineage",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -71,10 +72,6 @@
   ],
   "gaps": [
     {
-      "fieldPath": "origin",
-      "reason": "les résultats exacts « Appadoo », les Indian Immigration Archives du Mahatma Gandhi Institute, les publications de l'Aapravasi Ghat et les catalogues bibliographiques sur l'engagisme à Maurice ont été consultés. Ils attestent le nom ou décrivent le fonds disponible, mais n'ont livré ni étymologie publiée ni chronique attribuable à une lignée précise ; l'origine reste donc vide."
-    },
-    {
       "fieldPath": "alliances",
       "reason": "les résultats exacts « Appadoo », les Indian Immigration Archives du Mahatma Gandhi Institute, les publications de l'Aapravasi Ghat et les catalogues bibliographiques sur l'engagisme à Maurice, complétés par les termes « alliance », « cousinage » et « joking relationship », n'ont fait apparaître aucune paire nommée et sourcée reliant Appadoo à un autre nom documenté ici."
     },
@@ -90,5 +87,62 @@
       "fieldPath": "homonyms",
       "reason": "les résultats exacts « Appadoo », les Indian Immigration Archives du Mahatma Gandhi Institute, les publications de l'Aapravasi Ghat et les catalogues bibliographiques sur l'engagisme à Maurice n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Appadoo est un nom de famille porté à Maurice. Il serait d'origine télougoue, une langue du sud de l'Inde, et viendrait de appa, « père », selon un dictionnaire des noms de famille. On ne sait pas avec certitude depuis quand il est porté à Maurice : les sources que nous avons pu lire n'en disent rien.",
+    "names": [
+      {
+        "nameText": "Appadoo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille de Maurice, d'origine télougoue selon un dictionnaire, formé sur appa, « père ».",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "19 novembre 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Appadoo est porté à Maurice : la Gazette officielle du pays l'écrit dans un avis de nomination au ministère de l'Éducation et, plusieurs fois, dans ses listes de sociétés et de marques du même numéro.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Government Gazette of Mauritius, n° 101 du 19 novembre 2016",
+                "author": "Gouvernement de Maurice",
+                "year": 2016,
+                "url": "https://archive.gazettes.africa/archive/mu/2016/mu-government-gazette-dated-2016-11-19-no-101.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 4567, 4578, 4592",
+                "notes": "Gazette publiée à Port-Louis le samedi 19 novembre 2016, lue le 18 octobre 2026 dans l'exemplaire numérisé de Gazettes.Africa. Page 4567, General Notice No. 1723 of 2016, nominations : une fonctionnaire du ministère de l'Éducation dont le nom est écrit « APPADOO ». Pages 4578 et 4592 : le nom revient dans la liste des sociétés et dans celle des marques. La gazette ne dit rien de l'origine du nom ; les personnes nommées ne sont pas reprises ici."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "Proposé en 2016"
+            },
+            "statement": "Le nom Appadoo serait un nom hindou d'origine télougoue, formé de appa, « père », et d'un suffixe du singulier, -ḍu, selon le dictionnaire des noms de famille de Grande-Bretagne et d'Irlande. Ce dictionnaire le trouve aussi dans les Caraïbes et ne parle pas de Maurice.",
+            "sources": [
+              {
+                "title": "Appadoo Surname Meaning — The Oxford Dictionary of Family Names in Britain and Ireland",
+                "author": "Patrick Hanks, Richard Coates et Peter McClure",
+                "year": 2016,
+                "url": "https://www.ancestry.com/last-name-meaning/appadoo?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "The Oxford Dictionary of Family Names in Britain and Ireland, Oxford University Press, 2016, notice reproduite par Ancestry et lue le 18 octobre 2026 dans la traduction française que le site affiche : un nom hindou d'origine télougoue, de appa, « père », et du suffixe du singulier -ḍu, qui se trouve aussi dans les Caraïbes."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

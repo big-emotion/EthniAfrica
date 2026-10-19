@@ -1,12 +1,16 @@
-import { render, screen } from "@testing-library/react";
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+
+import { render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
+import { describe, expect, it, onTestFinished, vi } from "vitest";
 
 import type { SearchCompanionsData } from "@/api/v2/schemas/searchCompanions";
 import { SearchFeed } from "@/components/search/SearchFeed";
 import { getFamilyRoute } from "@/lib/routing";
 import { ANSWER_FIXTURES } from "@/lib/search/__fixtures__/answerFixtures";
 import { FEED_CASES } from "@/lib/search/__fixtures__/feedCases";
+import { readNaming } from "@/lib/search/naming";
 import type { SearchResult } from "@/types/afrik-frontend";
 
 function fixture(id: string) {
@@ -53,6 +57,9 @@ function namedResult(overrides: Partial<SearchResult> = {}): SearchResult {
 
 // @req REQ-180
 describe("SearchFeed", () => {
+  // The fixture's companions carry three recent shorts that are not about the
+  // name: they are no reason to draw a shelf under the confession (brief 12,
+  // part A).
   // @req REQ-180
   it("renders the deterministic unknown-name movement without substitute shelves", () => {
     const value = fixture("inconnu");
@@ -71,7 +78,6 @@ describe("SearchFeed", () => {
     expect(blockIds(container)).toEqual([
       "verdict",
       "lenses",
-      "shorts",
       "owed",
       "further",
     ]);
@@ -114,6 +120,154 @@ describe("SearchFeed", () => {
     expect(
       screen.getByText(/n'est pas un nom que ces peuples se donnent/)
     ).toBeInTheDocument();
+  });
+
+  // Brief 12, part A (approved 2026-10-17): a reader who came with a name we
+  // do not hold is asked for it once, under the confession, and nothing empty
+  // is drawn after it.
+  // @req REQ-180
+  it("asks for an unknown name once, in the verdict, with no empty shelf or owed card", () => {
+    const { container } = render(
+      <SearchFeed
+        query="voundou"
+        language="fr"
+        state="unknown"
+        results={[]}
+        subjects={[]}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+
+    expect(screen.queryByText("Pas encore de short")).toBeNull();
+    expect(screen.queryByText("Tout voir")).toBeNull();
+    expect(screen.queryByText("Plusieurs noms peuvent coexister.")).toBeNull();
+    expect(screen.queryByText("Nous nous sommes trompés ?")).toBeNull();
+    expect(container.querySelector('[data-feed-part="invitation"]')).toBeNull();
+    const actions = screen.getAllByRole("button", {
+      name: "Proposer une source",
+    });
+    expect(actions).toHaveLength(1);
+    expect(actions[0].closest('[data-feed-block="verdict"]')).not.toBeNull();
+    expect(actions[0]).toHaveAttribute("data-flag-kind", "contribution");
+  });
+
+  // The verdict's button is the confessing page's one call to action, so what
+  // it opens matters as much as where it sits: a form about the searched name,
+  // without the « Nous nous sommes trompés ? » that brief 12 part A removed.
+  // @req REQ-180
+  it("opens the contribution form on the searched name from the verdict", async () => {
+    // The form's proof of work asks the API for a challenge on mount; refused
+    // here, it fails quietly instead of reaching for a server on :3000.
+    vi.stubGlobal("fetch", vi.fn().mockResolvedValue({ ok: false }));
+    onTestFinished(() => {
+      vi.unstubAllGlobals();
+    });
+    render(
+      <SearchFeed
+        query="voundou"
+        language="fr"
+        state="unknown"
+        results={[]}
+        subjects={[]}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+
+    await userEvent.click(
+      screen.getByRole("button", { name: "Proposer une source" })
+    );
+
+    const dialog = await screen.findByRole("dialog");
+    expect(within(dialog).getByText(/voundou/)).toBeInTheDocument();
+    expect(within(dialog).queryByText("Nous nous sommes trompés ?")).toBeNull();
+  });
+
+  // The night theme keeps the ocre tint light and turns --afh-text light too:
+  // that pair measured 1.12:1. Text on an accent fill takes
+  // --accent-foreground, the dark ink color.css keeps dark in both themes
+  // (colorTokens.test.ts proves it clears AA on the tint by day and night).
+  // @req REQ-180
+  it("writes the verdict's action in the ink that stays readable on its tint at night", () => {
+    render(
+      <SearchFeed
+        query="voundou"
+        language="fr"
+        state="unknown"
+        results={[]}
+        subjects={[]}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+
+    const action = screen.getByRole("button", { name: "Proposer une source" });
+    expect(action).toHaveClass("bg-[color:var(--accent-tint)]");
+    expect(action).toHaveClass("text-[color:var(--accent-foreground)]");
+    expect(action).toHaveClass("hover:text-[color:var(--accent-foreground)]");
+    expect(action).not.toHaveClass("text-afh-text");
+    expect(action).not.toHaveClass("hover:text-afh-text");
+  });
+
+  // The accent tint stays light at night while the page's body ink turns
+  // light too (1.12:1 measured on the board). The accent fill's own ink
+  // holds in both themes, as on OwedBlock.
+  // @req REQ-180
+  it("keeps the unknown name's button legible by night: the accent fill's ink on its tint", () => {
+    render(
+      <SearchFeed
+        query="voundou"
+        language="fr"
+        state="unknown"
+        results={[]}
+        subjects={[]}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+
+    const action = screen.getByRole("button", { name: "Proposer une source" });
+    expect(action).toHaveClass(
+      "bg-[color:var(--accent-tint)]",
+      "text-[color:var(--accent-foreground)]"
+    );
+    expect(action).not.toHaveClass("text-afh-text");
+  });
+
+  // « pigmée » does not confess: its verdict answers, so it carries no button,
+  // and its closing card stays the page's one invitation. The empty shelf goes
+  // with the state, as for any unknown name.
+  // @req REQ-180
+  it("keeps the closing card as the one invitation of a reviewed answer with no fiche", () => {
+    render(
+      <SearchFeed
+        query="pigmée"
+        language="fr"
+        state="unknown"
+        results={[]}
+        subjects={[]}
+        leads={[]}
+        companions={emptyCompanions}
+        nameAnswers={[
+          {
+            term: "Pygmée",
+            subjects: [{ type: "people", id: "PPL_TWA" }],
+            paragraphs: [
+              "« Pygmée » n'est pas un nom que ces peuples se donnent.",
+            ],
+            sources: [],
+          },
+        ]}
+      />
+    );
+
+    expect(screen.queryByText("Pas encore de short")).toBeNull();
+    const actions = screen.getAllByRole("button", {
+      name: "Proposer une source",
+    });
+    expect(actions).toHaveLength(1);
+    expect(actions[0].closest('[data-feed-block="verdict"]')).toBeNull();
   });
 
   // No entity answers to « zombie », but we made a piece on the word. The page
@@ -387,7 +541,33 @@ describe("SearchFeed", () => {
     expect(
       screen.queryByText(recentCompanions.shorts.items[0].name)
     ).toBeNull();
+    expect(screen.queryByText("D’où vient ce nom")).toBeNull();
   });
+
+  // @req REQ-180
+  it.each([
+    ["unknown", "voundou", []],
+    ["typo", "tchikaya", [namedResult()]],
+    ["widened", "sahel", [namedResult()]],
+  ] as const)(
+    "omits the verdict eyebrow for unresolved %s searches",
+    (state, query, results) => {
+      render(
+        <SearchFeed
+          query={query}
+          language="fr"
+          state={state}
+          results={results}
+          subjects={[]}
+          leads={[]}
+          companions={emptyCompanions}
+        />
+      );
+
+      expect(screen.queryByTestId("verdict-eyebrow")).toBeNull();
+      expect(screen.queryByText("D’où vient ce nom")).toBeNull();
+    }
+  );
 
   // @req REQ-178
   it("names the family being browsed, rather than confessing an unmatched name search", () => {
@@ -413,6 +593,9 @@ describe("SearchFeed", () => {
     );
 
     expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Krou");
+    expect(screen.getByTestId("verdict-eyebrow")).toHaveTextContent(
+      "Résultats liés"
+    );
     expect(
       screen.getByText("Les peuples de la famille Krou.")
     ).toBeInTheDocument();
@@ -669,6 +852,78 @@ describe("SearchFeed", () => {
     ).toHaveLength(2);
   });
 
+  // The comparison fold makes « Kono » and « Kɔnɔ » compare equal so that a
+  // reader typing either reaches the fiche (REQ-135). It must never merge them
+  // on screen: each spelling the corpus writes keeps its chip, and only the
+  // one the reader typed is marked as their search. Reads the real fiches, so
+  // the test fails if a fiche stops writing both spellings.
+  // @req REQ-135
+  it.each([
+    {
+      fiche: "FLG_MANDE/PPL_KONO.json",
+      query: "Kono",
+      expected: [
+        { form: "Kono", searched: true, selfGiven: true },
+        { form: "Konnoh", searched: false, selfGiven: false },
+        { form: "Kɔnɔ", searched: false, selfGiven: false },
+      ],
+    },
+    {
+      fiche: "FLG_KWA/PPL_LARTEH.json",
+      query: "Lete",
+      expected: [
+        { form: "Lete", searched: true, selfGiven: false },
+        { form: "Gua", searched: false, selfGiven: true },
+        { form: "Larteh", searched: false, selfGiven: false },
+        { form: "Kyerepong", searched: false, selfGiven: false },
+        { form: "Okere", searched: false, selfGiven: false },
+        { form: "Late", searched: false, selfGiven: false },
+        { form: "Lɛtɛ", searched: false, selfGiven: false },
+      ],
+    },
+  ])(
+    "keeps every spelling $fiche writes when « $query » is searched",
+    ({ fiche, query, expected }) => {
+      const source = JSON.parse(
+        readFileSync(
+          join(process.cwd(), "dataset/source/afrik/peuples", fiche),
+          "utf8"
+        )
+      );
+      const subject = namedResult({
+        type: "people",
+        id: source.id,
+        name: source.nameMain,
+        nameEn: undefined,
+        autonym: source.content.appellations.selfAppellation,
+        naming: readNaming("people", source.content),
+      });
+      const { container } = render(
+        <SearchFeed
+          query={query}
+          language="fr"
+          state="exact"
+          results={[subject]}
+          subjects={[subject]}
+          leads={[]}
+          companions={emptyCompanions}
+        />
+      );
+
+      const chips = Array.from(
+        container.querySelectorAll<HTMLElement>(
+          '[data-testid="appellations-list"] [data-appellation]'
+        ),
+        (chip) => ({
+          form: chip.querySelector("span")?.textContent,
+          searched: chip.dataset.searched === "true",
+          selfGiven: chip.dataset.selfGiven === "true",
+        })
+      );
+      expect(chips).toEqual(expected);
+    }
+  );
+
   // @req REQ-002
   it("groups split people fiches and preserves privacy-safe click analytics", async () => {
     const onResultNavigate = vi.fn();
@@ -699,5 +954,326 @@ describe("SearchFeed", () => {
       screen.getByRole("link", { name: "Peul du Massina" })
     );
     expect(onResultNavigate).toHaveBeenCalledWith("peopleGroup", 1);
+  });
+});
+
+/** A fiche whose filed name carries the corpus line of that same form. */
+function ficheWithLine(
+  type: SearchResult["type"],
+  id: string,
+  name: string,
+  shortLine?: string,
+  overrides: Partial<SearchResult> = {}
+): SearchResult {
+  return namedResult({
+    type,
+    id,
+    name,
+    nameEn: undefined,
+    exactMatch: false,
+    naming: {
+      forms: [],
+      eras: [],
+      presentation: {
+        forms: shortLine
+          ? [
+              {
+                form: name,
+                selfGiven: null,
+                shortLine,
+                attestations: [],
+                evidence: [],
+              },
+            ]
+          : [],
+        eras: [],
+        disagreements: [],
+        evidence: [],
+      },
+    },
+    ...overrides,
+  });
+}
+
+const BELLO_LINE =
+  "Un nom personnel musulman des Haoussa, qu'une étude dit venu du peul.";
+const KROUMEN_LINE =
+  "Un nom d'abord donné aux marins de la côte, que des peuples de Côte d'Ivoire ont fait leur.";
+
+async function openFichesLens() {
+  await userEvent.click(screen.getByRole("button", { name: /^Fiches/ }));
+}
+
+// Brief 12 part B (approved 2026-10-17): the lens sets the fiches that answer
+// to the searched name apart from the ones found around it, and each card says
+// in its own line what the fiche is about.
+// @req REQ-180
+describe("SearchFeed « Fiches » lens", () => {
+  // @req REQ-180
+  it("lists the fiches on the searched name first, then the ones around it, each with its own line", async () => {
+    const fulbe = { peopleGroupId: "PGRP_FULANI" };
+    const peul = ficheWithLine("people", "PPL_FULA", "Peul", undefined, {
+      ...fulbe,
+      peopleGroupLabel: "Fulbe (Peul / Fulani)",
+      exactMatch: true,
+    });
+    const massina = ficheWithLine(
+      "people",
+      "PPL_FULANI_MASSINA",
+      "Fulbe du Massina (Peuls du Massina / Macina)",
+      undefined,
+      { ...fulbe, peopleGroupLabel: "Fulbe (Peul / Fulani)" }
+    );
+    const bello = ficheWithLine("patronyme", "PAT_BELLO", "Bello", BELLO_LINE);
+    const abdi = ficheWithLine("patronyme", "PAT_ABDI", "Abdi");
+    // Subjects reach the feed as their own objects: they are matched to the
+    // rows by type and id, never by identity.
+    render(
+      <SearchFeed
+        query="peul"
+        language="fr"
+        state="exact"
+        results={[peul, massina, bello, abdi]}
+        subjects={[{ ...peul }, { ...massina }]}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+    await openFichesLens();
+
+    const onName = screen.getByRole("heading", { name: "Sur ce nom · 1" });
+    const around = screen.getByRole("heading", {
+      name: "Autour de ce nom · 2",
+    });
+    expect(
+      onName.compareDocumentPosition(around) & Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+    const note = screen.getByText("Un contexte lié, pas le même nom.");
+    expect(
+      around.compareDocumentPosition(note) & Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
+
+    const onNameGroup = screen.getByRole("region", { name: "Sur ce nom · 1" });
+    const group = within(onNameGroup).getByTestId("feed-people-group");
+    expect(group).toHaveTextContent("Fulbe (Peul / Fulani)");
+    expect(group).toHaveTextContent("2 fiches");
+    expect(within(group).getByRole("link", { name: "Peul" })).toBeVisible();
+    expect(
+      within(group).getByRole("link", {
+        name: "Fulbe du Massina (Peuls du Massina / Macina)",
+      })
+    ).toBeVisible();
+
+    const aroundGroup = screen.getByRole("region", {
+      name: "Autour de ce nom · 2",
+    });
+    expect(
+      within(aroundGroup).getByRole("link", { name: /Bello/ })
+    ).toHaveTextContent(BELLO_LINE);
+    expect(
+      within(aroundGroup).getByRole("link", { name: /Abdi/ })
+    ).toHaveTextContent(/^NomAbdi$/);
+
+    expect(screen.queryByText("Fiche EthniAfrica")).toBeNull();
+    expect(
+      screen.queryByText(
+        "Pour aller au fond : chaque fiche, avec toutes ses sources."
+      )
+    ).toBeNull();
+    expect(screen.queryByRole("heading", { name: "Découvrir" })).toBeNull();
+  });
+
+  // @req REQ-180
+  it("shows « Sur ce nom » alone when no other fiche is found", async () => {
+    const kroumen = ficheWithLine(
+      "people",
+      "PPL_KROUMEN",
+      "Kroumen",
+      KROUMEN_LINE,
+      { exactMatch: true }
+    );
+    render(
+      <SearchFeed
+        query="kroumen"
+        language="fr"
+        state="exact"
+        results={[kroumen]}
+        subjects={[kroumen]}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+    await openFichesLens();
+
+    expect(
+      screen.getByRole("heading", { name: "Sur ce nom · 1" })
+    ).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: /Kroumen/ })).toHaveTextContent(
+      KROUMEN_LINE
+    );
+    expect(screen.queryByText(/Autour de ce nom/)).toBeNull();
+    expect(screen.queryByText("Un contexte lié, pas le même nom.")).toBeNull();
+  });
+
+  // A widened search has no subject: « Sur ce nom · 0 » would be a heading
+  // over nothing.
+  // @req REQ-180
+  it("shows « Autour de ce nom » alone on a widened search, never « Sur ce nom · 0 »", async () => {
+    render(
+      <SearchFeed
+        query="wassoulou"
+        language="fr"
+        state="widened"
+        results={[
+          ficheWithLine(
+            "patronyme",
+            "PAT_DIAKITE",
+            "Diakité",
+            "Un des quatre noms de clan des Peuls du Wassoulou ; son origine est incertaine."
+          ),
+          ficheWithLine(
+            "patronyme",
+            "PAT_COULIBALY",
+            "Coulibaly",
+            "Un nom de clan mandingue, écrit Kulibali en bambara ; son origine est discutée."
+          ),
+        ]}
+        subjects={[]}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+    await openFichesLens();
+
+    expect(
+      screen.getByRole("heading", { name: "Autour de ce nom · 2" })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText("Un contexte lié, pas le même nom.")
+    ).toBeInTheDocument();
+    expect(screen.queryByText(/Sur ce nom/)).toBeNull();
+  });
+
+  // No name was searched on a relation browse, so there is nothing to set
+  // apart: one grid, each card with its own line.
+  // @req REQ-180
+  it("lists a relation browse in one ungrouped grid, each card with its own line", async () => {
+    const krou = { languageFamilyName: "Krou" };
+    const peoples = [
+      ficheWithLine(
+        "people",
+        "PPL_BETE",
+        "Bété",
+        "Un nom écrit pour la première fois vers 1901 ; son origine reste discutée.",
+        krou
+      ),
+      ficheWithLine(
+        "people",
+        "PPL_DIDA",
+        "Dida",
+        "Un nom écrit en 1904 sous la forme Dyida ou Dida ; son origine reste inconnue.",
+        krou
+      ),
+      ficheWithLine(
+        "people",
+        "PPL_GODIE",
+        "Godié",
+        "Le nom d'un peuple krou du sud-ouest ivoirien, écrit Godyé dès 1904 ; son origine est discutée.",
+        krou
+      ),
+    ];
+    render(
+      <SearchFeed
+        query=""
+        language="fr"
+        state="widened"
+        results={peoples}
+        subjects={[]}
+        leads={[]}
+        companions={emptyCompanions}
+        relation={{ kind: "family", id: "FLG_KROU" }}
+      />
+    );
+    await openFichesLens();
+
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
+      "Fiches sur Krou"
+    );
+    expect(screen.queryByText(/Sur ce nom/)).toBeNull();
+    expect(screen.queryByText(/Autour de ce nom/)).toBeNull();
+    expect(screen.queryByText("Un contexte lié, pas le même nom.")).toBeNull();
+    expect(screen.queryByRole("heading", { name: "Découvrir" })).toBeNull();
+    expect(screen.getByRole("link", { name: /Bété/ })).toHaveTextContent(
+      "Un nom écrit pour la première fois vers 1901 ; son origine reste discutée."
+    );
+    expect(screen.getByRole("link", { name: /Dida/ })).toHaveTextContent(
+      "Un nom écrit en 1904 sous la forme Dyida ou Dida ; son origine reste inconnue."
+    );
+    expect(screen.getByRole("link", { name: /Godié/ })).toHaveTextContent(
+      "Le nom d'un peuple krou du sud-ouest ivoirien, écrit Godyé dès 1904 ; son origine est discutée."
+    );
+  });
+
+  // @req REQ-180
+  it("titles the related-only fiche block by its count", () => {
+    render(
+      <SearchFeed
+        query="wassoulou"
+        language="fr"
+        state="widened"
+        results={[ficheWithLine("patronyme", "PAT_DIAKITE", "Diakité", "x")]}
+        subjects={[]}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+
+    expect(
+      screen.getByRole("heading", { name: "La fiche trouvée" })
+    ).toBeInTheDocument();
+  });
+
+  // @req REQ-180
+  it("uses the plural title for multiple related-only fiches", () => {
+    render(
+      <SearchFeed
+        query="wassoulou"
+        language="fr"
+        state="widened"
+        results={[
+          ficheWithLine("patronyme", "PAT_DIAKITE", "Diakité", "x"),
+          ficheWithLine("patronyme", "PAT_COULIBALY", "Coulibaly", "y"),
+        ]}
+        subjects={[]}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+
+    expect(
+      screen.getByRole("heading", { name: "Les fiches trouvées" })
+    ).toBeInTheDocument();
+  });
+
+  // @req REQ-180
+  it("does not render figure-style fiche labels on a related-only search page", () => {
+    render(
+      <SearchFeed
+        query="wassoulou"
+        language="fr"
+        state="widened"
+        results={[ficheWithLine("patronyme", "PAT_DIAKITE", "Diakité", "x")]}
+        subjects={[]}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+
+    expect(screen.queryByText("Découvrir")).toBeNull();
+    expect(
+      screen.queryByText(
+        "Pour aller au fond : chaque fiche, avec toutes ses sources."
+      )
+    ).toBeNull();
   });
 });

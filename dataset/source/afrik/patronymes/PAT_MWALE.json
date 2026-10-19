@@ -27,13 +27,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une monographie de 1906 atteste Amwale/Mwale comme nom de clan chez les Yao et les Anyanja et donne mwale au sens de « fille » en nyanja. Elle décrit des enfants recevant le clan Mwale de leur mère ; cette donnée historique ne permet pas de généraliser à toutes les lignées contemporaines de Zambie et du Malawi.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["werner-1906-mwale"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -180,7 +175,8 @@
                 "page": "p. 252",
                 "notes": "Londres, Archibald Constable, 1906 ; lu dans la transcription intégrale du Projet Gutenberg, dont les numéros de page sont donnés entre crochets. Page 252 : l'auteure cite R. S. Hynde, selon qui les Yao se divisent en clans portant chacun son nom, « e.g. the Amwale, the Asomba, the Apiri clan » ; elle ajoute que « mwale » veut dire « une fille », « somba » « un poisson » et que « piri » veut dire « montagne » en nyanja ; l'exemple de mariage qui suit écrit « Mwale ». Page 253 : la filiation se compte par la mère. Page 254 : le chef yao Kapeni appartenait au clan des Abanda et eut pour successeur le fils de sa sœur. L'index du livre renvoie à la page 253 pour Abanda ; la transcription place cette phrase après le repère de la page 254. Lu le 12 octobre 2026."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           },
           {
             "period": {

@@ -173,6 +173,7 @@ describe("ftsSearchEntities", () => {
   let languagesPayload: { total: number; rows: unknown[] };
   let leadsPayload: { rows: unknown[] };
   let leadsError: { message: string } | null;
+  let recordedTermsPayload: { rows: unknown[] };
   let personPeoplesRows: Record<string, unknown>[];
 
   beforeEach(() => {
@@ -193,6 +194,7 @@ describe("ftsSearchEntities", () => {
     languagesPayload = { total: 0, rows: [] };
     leadsPayload = { rows: [] };
     leadsError = null;
+    recordedTermsPayload = { rows: [] };
     personPeoplesRows = [];
 
     rpc = vi.fn((fn: string, args: Record<string, unknown> = {}) => {
@@ -229,6 +231,8 @@ describe("ftsSearchEntities", () => {
         return Promise.resolve({ data: languagesPayload, error: null });
       if (fn === "afrik_search_leads")
         return Promise.resolve({ data: leadsPayload, error: leadsError });
+      if (fn === "afrik_search_recorded_term")
+        return Promise.resolve({ data: recordedTermsPayload, error: null });
       throw new Error(`unexpected rpc ${fn}`);
     });
 
@@ -639,6 +643,79 @@ describe("ftsSearchEntities", () => {
     });
 
     expect(result.countries[0].nameEn).toBeUndefined();
+  });
+
+  // @req REQ-135
+  it("carries each kind's history names in history order, as the function returns them", async () => {
+    peoplesPayload = {
+      total: 1,
+      rows: [
+        peopleRow("PPL_FULA", "Peul", {
+          exactMatch: true,
+          historyNames: ["Fulɓe", "Peul", "Fulani"],
+        }),
+      ],
+    };
+    countriesPayload = {
+      total: 1,
+      rows: [
+        countryRow("CIV", "Côte d'Ivoire", { historyNames: ["Côte d'Ivoire"] }),
+      ],
+    };
+    familiesPayload = {
+      total: 1,
+      rows: [
+        familyRow("FLG_BERBERE", "Berbère", { historyNames: ["Berbère"] }),
+      ],
+    };
+    languagesPayload = {
+      total: 1,
+      rows: [languageRow("dyu", "Dioula", { historyNames: ["Julakan"] })],
+    };
+    patronymesPayload = {
+      total: 1,
+      rows: [
+        patronymeRow("PAT_TRAORE", "Traore", { historyNames: ["Traoré"] }),
+      ],
+    };
+
+    const result = await ftsSearchEntities({
+      q: "Fulɓe",
+      limit: 20,
+      offset: 0,
+    });
+
+    expect(result.peoples[0].historyNames).toEqual(["Fulɓe", "Peul", "Fulani"]);
+    expect(result.countries[0].historyNames).toEqual(["Côte d'Ivoire"]);
+    expect(result.families[0].historyNames).toEqual(["Berbère"]);
+    expect(result.languages[0].historyNames).toEqual(["Julakan"]);
+    expect(result.patronymes[0].historyNames).toEqual(["Traoré"]);
+  });
+
+  // @req REQ-135
+  it("reads a row from a function not yet migrated as no history names", async () => {
+    peoplesPayload = { total: 1, rows: [peopleRow("PPL_BETE", "Bété")] };
+    countriesPayload = {
+      total: 1,
+      rows: [countryRow("TCD", "Tchad", { historyNames: null })],
+    };
+    familiesPayload = { total: 1, rows: [familyRow("FLG_KROU", "Krou")] };
+    languagesPayload = {
+      total: 1,
+      rows: [languageRow("bet", "Bété", { historyNames: ["Bété", 3] })],
+    };
+    patronymesPayload = {
+      total: 1,
+      rows: [patronymeRow("PAT_KEITA", "Keïta")],
+    };
+
+    const result = await ftsSearchEntities({ q: "bété", limit: 20, offset: 0 });
+
+    expect(result.peoples[0].historyNames).toEqual([]);
+    expect(result.countries[0].historyNames).toEqual([]);
+    expect(result.families[0].historyNames).toEqual([]);
+    expect(result.languages[0].historyNames).toEqual(["Bété"]);
+    expect(result.patronymes[0].historyNames).toEqual([]);
   });
 
   // @req REQ-002
@@ -2038,6 +2115,772 @@ describe("ftsSearchEntities", () => {
     );
   });
 
+  // DEC-075: a family name is offered as a lead when it is a spelling of the
+  // searched name. Which family names qualify (first letter, >= 0.4) is the
+  // SQL's (migration 110); whether one is offered — nothing answers exactly —
+  // is decided here, with REQ-201's test.
+  describe("family-name leads (DEC-075)", () => {
+    const tchicayaLead = {
+      kind: "patronyme",
+      id: "PAT_TCHICAYA",
+      name: "Tchicaya",
+      similarity: 0.5,
+    };
+
+    // GWT tchikaya
+    // @req REQ-125
+    it("offers Tchicaya for « tchikaya », although the search found it among related fiches", async () => {
+      patronymesPayload = {
+        total: 2,
+        rows: [
+          patronymeRow("PAT_CHUKWU", "Chukwu"),
+          patronymeRow("PAT_TCHICAYA", "Tchicaya"),
+        ],
+      };
+      leadsPayload = { rows: [tchicayaLead] };
+
+      const result = await ftsSearchEntities({
+        q: "tchikaya",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(result.total).toBe(2);
+      expect(result.leads).toEqual([tchicayaLead]);
+      expect(result.nearNames).toEqual([]);
+    });
+
+    // Chukwu reaches « tchikaya » only through the shared phonetic key, and
+    // nothing in the data links it to Tchicaya. Listed under « Cherchiez-
+    // vous… ? » it would read as a fiche about the name (brief 16). The lead
+    // already offers the spelling the key was bridging.
+    // @req REQ-201
+    it("withholds the family names reached only by their sound when it offers a lead beside them", async () => {
+      patronymesPayload = {
+        total: 2,
+        rows: [
+          patronymeRow("PAT_CHUKWU", "Chukwu"),
+          patronymeRow("PAT_TCHICAYA", "Tchicaya"),
+        ],
+      };
+      phoneticOnlyIds.add("PAT_CHUKWU");
+      leadsPayload = { rows: [tchicayaLead] };
+
+      const result = await ftsSearchEntities({
+        q: "tchikaya",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(result.patronymes.map((p) => p.id)).toEqual(["PAT_TCHICAYA"]);
+      expect(result.patronymesTotal).toBe(1);
+      expect(result.total).toBe(1);
+      expect(result.results.map((hit) => hit.id)).toEqual(["PAT_TCHICAYA"]);
+      expect(result.leads).toEqual([tchicayaLead]);
+    });
+
+    // Withheld, the sound-alikes may have been all the search found: the
+    // page is then a misspelling with no result, whose leads mix every kind.
+    // @req REQ-201
+    it("turns a search that found only sound-alikes into a zero-result misspelling", async () => {
+      patronymesPayload = {
+        total: 1,
+        rows: [patronymeRow("PAT_CHUKWU", "Chukwu")],
+      };
+      phoneticOnlyIds.add("PAT_CHUKWU");
+      leadsPayload = {
+        rows: [
+          tchicayaLead,
+          {
+            kind: "people",
+            id: "PPL_TCHOKWE",
+            name: "Tchokwe",
+            similarity: 0.3,
+          },
+        ],
+      };
+
+      const result = await ftsSearchEntities({
+        q: "tchikaya",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(result.total).toBe(0);
+      expect(result.results).toEqual([]);
+      expect(result.leads.map((lead) => lead.id)).toEqual([
+        "PAT_TCHICAYA",
+        "PPL_TCHOKWE",
+      ]);
+      expect(result.nearNames).toEqual([]);
+    });
+
+    // GWT bello: Bell begins with b and scores 0.57, yet Bello answers.
+    // @req REQ-125
+    it("offers no family name, as a lead or as a similar name, when one answers exactly", async () => {
+      patronymesPayload = {
+        total: 1,
+        rows: [patronymeRow("PAT_BELLO", "Bello", { exactMatch: true })],
+      };
+      leadsPayload = {
+        rows: [
+          { kind: "patronyme", id: "PAT_BELL", name: "Bell", similarity: 0.57 },
+        ],
+      };
+
+      const result = await ftsSearchEntities({
+        q: "bello",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(result.leads).toEqual([]);
+      expect(result.nearNames).toEqual([]);
+    });
+
+    // @req REQ-125
+    it("offers no family name when a people answers the query exactly", async () => {
+      peoplesPayload = {
+        total: 1,
+        rows: [peopleRow("PPL_FULA", "Peul", { exactMatch: true })],
+      };
+      leadsPayload = {
+        rows: [
+          {
+            kind: "patronyme",
+            id: "PAT_PEULH",
+            name: "Peulh",
+            similarity: 0.6,
+          },
+        ],
+      };
+
+      const result = await ftsSearchEntities({
+        q: "peul",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(result.leads).toEqual([]);
+      expect(result.nearNames).toEqual([]);
+    });
+
+    // A published word answers « griot » on the page even with no fiche.
+    // @req REQ-125
+    it("offers no family name when a published word answers the query", async () => {
+      leadsPayload = {
+        rows: [
+          {
+            kind: "patronyme",
+            id: "PAT_GRIOTTE",
+            name: "Griotte",
+            similarity: 0.5,
+          },
+          { kind: "people", id: "PPL_GRIO", name: "Grio", similarity: 0.4 },
+        ],
+      };
+
+      const result = await ftsSearchEntities({
+        q: "griot",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(result.total).toBe(0);
+      expect(result.leads.map((lead) => lead.id)).toEqual(["PPL_GRIO"]);
+    });
+
+    // @req REQ-125
+    it("mixes family names into the zero-result leads by similarity, three at most", async () => {
+      leadsPayload = {
+        rows: [
+          {
+            kind: "patronyme",
+            id: "PAT_MUTOMBO",
+            name: "Mutombo",
+            similarity: 0.45,
+          },
+          { kind: "people", id: "PPL_MBOSI", name: "Mbosi", similarity: 0.3 },
+          { kind: "country", id: "MOZ", name: "Mozambique", similarity: 0.25 },
+          { kind: "people", id: "PPL_MOSSI", name: "Mossi", similarity: 0.22 },
+        ],
+      };
+
+      const result = await ftsSearchEntities({
+        q: "muzomb",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(result.total).toBe(0);
+      expect(result.leads.map((lead) => lead.id)).toEqual([
+        "PAT_MUTOMBO",
+        "PPL_MBOSI",
+        "MOZ",
+      ]);
+    });
+
+    // Peoples outscoring a family name share the rows with it: they go to
+    // the similar-names shelf, and the family name to the leads.
+    // @req REQ-125
+    it("keeps family names out of the similar-names shelf and finds them past higher-scoring peoples", async () => {
+      peoplesPayload = {
+        total: 1,
+        rows: [peopleRow("PPL_TCHOKWE", "Tchokwe")],
+      };
+      leadsPayload = {
+        rows: [
+          { kind: "people", id: "PPL_TIKAR", name: "Tikar", similarity: 0.6 },
+          { kind: "people", id: "PPL_TIV", name: "Tiv", similarity: 0.55 },
+          { kind: "people", id: "PPL_TEKE", name: "Teke", similarity: 0.52 },
+          tchicayaLead,
+          {
+            kind: "patronyme",
+            id: "PAT_TCHIKAYI",
+            name: "Tchikayi",
+            similarity: 0.45,
+          },
+        ],
+      };
+
+      const result = await ftsSearchEntities({
+        q: "tchikaya",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(result.leads.map((lead) => lead.id)).toEqual([
+        "PAT_TCHICAYA",
+        "PAT_TCHIKAYI",
+      ]);
+      expect(result.nearNames.map((name) => name.id)).toEqual([
+        "PPL_TIKAR",
+        "PPL_TIV",
+        "PPL_TEKE",
+      ]);
+      expect(result.nearNames.map((name) => name.kind)).not.toContain(
+        "patronyme"
+      );
+    });
+
+    // Every kind ranks its exact rows first: on a later page the exact family
+    // name is out of sight, yet page two must agree with page one.
+    // @req REQ-125
+    it("offers no family name on a later page when page one answers exactly", async () => {
+      rpc.mockImplementation(
+        (fn: string, args: Record<string, unknown> = {}) => {
+          if (fn === "afrik_search_patronymes") {
+            const rows =
+              args.p_offset === 0
+                ? [patronymeRow("PAT_BELLO", "Bello", { exactMatch: true })]
+                : [patronymeRow("PAT_BELLOW", "Bellow")];
+            return Promise.resolve({
+              data: { total: 21, rows },
+              error: null,
+            });
+          }
+          if (fn === "afrik_search_leads")
+            return Promise.resolve({
+              data: {
+                rows: [
+                  {
+                    kind: "patronyme",
+                    id: "PAT_BELL",
+                    name: "Bell",
+                    similarity: 0.57,
+                  },
+                ],
+              },
+              error: null,
+            });
+          return Promise.resolve({ data: { total: 0, rows: [] }, error: null });
+        }
+      );
+
+      const result = await ftsSearchEntities({
+        q: "bello",
+        limit: 20,
+        offset: 20,
+      });
+
+      expect(result.patronymes.map((p) => p.id)).toEqual(["PAT_BELLOW"]);
+      expect(result.leads).toEqual([]);
+    });
+
+    // A reader keeps the « Peuples du pays » chip and types a name. The page
+    // titles a scoped search with its filter, so a misspelling verdict there
+    // would say no name matches « Congo-Brazzaville ». A relation browse keeps
+    // its own page, as before DEC-075.
+    // @req REQ-125
+    it.each([
+      { scope: "a country", relation: { countryId: "COG" } },
+      { scope: "a language family", relation: { familyId: "FLG_BANTU" } },
+    ])(
+      "offers no family-name lead when the search is scoped to $scope",
+      async ({ relation }) => {
+        patronymesPayload = {
+          total: 2,
+          rows: [
+            patronymeRow("PAT_CHUKWU", "Chukwu"),
+            patronymeRow("PAT_TCHICAYA", "Tchicaya"),
+          ],
+        };
+        // With no lead offered, nothing stands in for the phonetic bridge.
+        phoneticOnlyIds.add("PAT_CHUKWU");
+        leadsPayload = { rows: [tchicayaLead] };
+
+        const result = await ftsSearchEntities({
+          q: "tchikaya",
+          ...relation,
+          limit: 20,
+          offset: 0,
+        });
+
+        expect(result.total).toBe(2);
+        expect(result.leads).toEqual([]);
+      }
+    );
+
+    // Past page one, the sound-alike withholding and the family-name leads
+    // both ask whether page one answers exactly. Each probe is a whole
+    // ranking, so a request asks it once.
+    // @req REQ-125
+    it("ranks page one once on a later page, for the sound-alikes and the leads together", async () => {
+      rpc.mockImplementation(
+        (fn: string, args: Record<string, unknown> = {}) => {
+          if (fn === "afrik_search_patronymes")
+            return Promise.resolve({
+              data: {
+                total: 21,
+                rows: [
+                  args.p_offset === 0
+                    ? patronymeRow("PAT_CHUKWU", "Chukwu")
+                    : patronymeRow("PAT_TCHIKAYI", "Tchikayi"),
+                ],
+              },
+              error: null,
+            });
+          if (fn === "afrik_search_leads")
+            return Promise.resolve({
+              data: { rows: [tchicayaLead] },
+              error: null,
+            });
+          return Promise.resolve({ data: { total: 0, rows: [] }, error: null });
+        }
+      );
+
+      const result = await ftsSearchEntities({
+        q: "tchikaya",
+        limit: 20,
+        offset: 20,
+      });
+
+      const pageOneRankings = rpc.mock.calls.filter(
+        ([fn, args]) =>
+          fn === "afrik_search_peoples" &&
+          (args as Record<string, unknown>).p_offset === 0
+      );
+      expect(pageOneRankings).toHaveLength(1);
+      expect(result.leads).toEqual([tchicayaLead]);
+    });
+
+    // « Aboubakar » is a recorded spelling of Abubakar. afrik_search_patronymes
+    // compares only the filed name, so its row is not flagged exact, while the
+    // leads score the spelling 1. The reader typed a form the fiche records,
+    // not a misspelling of it (doctrine §1.1).
+    const abubakarLead = {
+      kind: "patronyme",
+      id: "PAT_ABUBAKAR",
+      name: "Abubakar",
+      similarity: 1,
+    };
+
+    // @req REQ-125
+    it("offers no family name for « aboubakar », a recorded spelling of the Abubakar the search found", async () => {
+      patronymesPayload = {
+        total: 1,
+        rows: [
+          patronymeRow("PAT_ABUBAKAR", "Abubakar", {
+            content: { spellings: [{ spelling: "Aboubakar" }] },
+          }),
+        ],
+      };
+      leadsPayload = { rows: [abubakarLead] };
+
+      const result = await ftsSearchEntities({
+        q: "aboubakar",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(result.patronymes.map((p) => p.id)).toEqual(["PAT_ABUBAKAR"]);
+      expect(result.leads).toEqual([]);
+    });
+
+    // With no result, the lead is the reader's only way to the fiche.
+    // @req REQ-125
+    it("keeps the family name a recorded spelling reaches as a lead when the search found nothing", async () => {
+      leadsPayload = { rows: [abubakarLead] };
+
+      const result = await ftsSearchEntities({
+        q: "aboubakar",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(result.total).toBe(0);
+      expect(result.leads).toEqual([abubakarLead]);
+    });
+
+    // Source notes do not count as exact recorded terms.
+    const sanohLeads = [
+      {
+        kind: "patronyme",
+        id: "PAT_SANOGO",
+        name: "Sanogo",
+        similarity: 0.56,
+      },
+      { kind: "patronyme", id: "PAT_SANOU", name: "Sanou", similarity: 0.5 },
+    ];
+
+    // A source note records provenance, so its occurrence does not count.
+    // @req REQ-125
+    it("does not treat a source note as an exact recorded term", async () => {
+      peoplesPayload = {
+        total: 1,
+        rows: [peopleRow("PPL_KURANKO", "Kuranko", { normalizedScore: 0.62 })],
+      };
+      patronymesPayload = {
+        total: 2,
+        rows: [
+          patronymeRow("PAT_SANOGO", "Sanogo", { normalizedScore: 0.28 }),
+          patronymeRow("PAT_SANOU", "Sanou", { normalizedScore: 0.25 }),
+        ],
+      };
+      leadsPayload = { rows: sanohLeads };
+
+      const result = await ftsSearchEntities({
+        q: "sanoh",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(result.total).toBe(3);
+      expect(result.leads).toEqual(sanohLeads);
+      expect(result.recordedTerms).toEqual([]);
+      expect(result.nearNames).toEqual([]);
+    });
+
+    // @req REQ-125
+    it("treats a name in a clan list as an exact recorded term", async () => {
+      peoplesPayload = {
+        total: 1,
+        rows: [peopleRow("PPL_KURANKO", "Kuranko", { normalizedScore: 0.62 })],
+      };
+      patronymesPayload = {
+        total: 2,
+        rows: [
+          patronymeRow("PAT_SANOGO", "Sanogo", { normalizedScore: 0.28 }),
+          patronymeRow("PAT_SANOU", "Sanou", { normalizedScore: 0.25 }),
+        ],
+      };
+      recordedTermsPayload = {
+        rows: [
+          {
+            kind: "people",
+            id: "PPL_KURANKO",
+            recorded_in: ["content.appellations.clans[]"],
+          },
+        ],
+      };
+      leadsPayload = { rows: sanohLeads };
+
+      const result = await ftsSearchEntities({
+        q: "sanoh",
+        limit: 1,
+        offset: 0,
+      });
+
+      expect(rpc).toHaveBeenCalledWith("afrik_search_recorded_term", {
+        p_q: "sanoh",
+      });
+      expect(result.leads).toEqual([]);
+    });
+
+    // @req REQ-125
+    it("checks recorded terms across matched rows beyond the result page", async () => {
+      peoplesPayload = {
+        total: 2,
+        rows: [
+          peopleRow("PPL_KURANKO_TOP", "Kuranko", { normalizedScore: 0.62 }),
+        ],
+      };
+      patronymesPayload = {
+        total: 2,
+        rows: [patronymeRow("PAT_SANOGO", "Sanogo", { normalizedScore: 0.28 })],
+      };
+      recordedTermsPayload = {
+        rows: [
+          {
+            kind: "people",
+            id: "PPL_KURANKO_BEYOND_PAGE",
+            recorded_in: ["content.organization"],
+          },
+        ],
+      };
+      leadsPayload = { rows: sanohLeads };
+
+      const result = await ftsSearchEntities({
+        q: "sanoh",
+        limit: 1,
+        offset: 0,
+      });
+
+      expect(result.peoples).toHaveLength(1);
+      expect(result.leads).toEqual([]);
+    });
+
+    // @req REQ-125
+    it("returns the matching field paths for every recorded fiche", async () => {
+      peoplesPayload = {
+        total: 2,
+        rows: [
+          peopleRow("PPL_KURANKO", "Kuranko"),
+          peopleRow("PPL_KORANKO", "Koranko"),
+        ],
+      };
+      recordedTermsPayload = {
+        rows: [
+          {
+            kind: "people",
+            id: "PPL_KURANKO",
+            recorded_in: ["content.appellations.clans[]"],
+          },
+          {
+            kind: "people",
+            id: "PPL_KORANKO",
+            recorded_in: ["content.historicalRole"],
+          },
+        ],
+      };
+      leadsPayload = { rows: sanohLeads };
+
+      const result = await ftsSearchEntities({
+        q: "sanoh",
+        limit: 1,
+        offset: 0,
+      });
+
+      expect(result.recordedTerms).toEqual([
+        {
+          kind: "people",
+          id: "PPL_KURANKO",
+          recordedIn: ["content.appellations.clans[]"],
+        },
+        {
+          kind: "people",
+          id: "PPL_KORANKO",
+          recordedIn: ["content.historicalRole"],
+        },
+      ]);
+    });
+
+    // The source note is excluded even when it is stored on the family fiche.
+    // @req REQ-125
+    it("does not treat a source note in a family-name fiche as an exact recorded term", async () => {
+      patronymesPayload = {
+        total: 2,
+        rows: [
+          patronymeRow("PAT_SANOGO", "Sanogo", { normalizedScore: 0.28 }),
+          patronymeRow("PAT_SANOU", "Sanou", {
+            normalizedScore: 0.25,
+            content: {
+              nameHistory: {
+                names: [
+                  {
+                    nameText: "Sanou",
+                    accounts: [
+                      {
+                        sources: [
+                          {
+                            notes:
+                              "Notice SANOU / SANOH / SANON. Lu le 11 octobre 2026.",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              },
+            },
+          }),
+        ],
+      };
+      leadsPayload = { rows: sanohLeads };
+
+      const result = await ftsSearchEntities({
+        q: "sanoh",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(result.leads).toEqual(sanohLeads);
+    });
+
+    // Chukwu sits in the lexical band through its phonetic key alone, and
+    // Tchicaya's text writes Tschikaya, never « tchikaya » as a word.
+    // @req REQ-125
+    it("still offers the lead when the fiches found reach the word only by sound or by letters", async () => {
+      patronymesPayload = {
+        total: 2,
+        rows: [
+          patronymeRow("PAT_CHUKWU", "Chukwu", {
+            normalizedScore: 0.7,
+            content: { nameMain: "Chukwu" },
+          }),
+          patronymeRow("PAT_TCHICAYA", "Tchicaya", {
+            normalizedScore: 0.3,
+            content: {
+              nameHistory: { names: [{ nameText: "Tschikaya" }] },
+              origin: "Tchikayaville est un nom inventé pour ce test.",
+            },
+          }),
+        ],
+      };
+      leadsPayload = { rows: [tchicayaLead] };
+
+      const result = await ftsSearchEntities({
+        q: "tchikaya",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(result.leads).toEqual([tchicayaLead]);
+    });
+
+    // Every kind ranks its text matches before its spelling matches: on a
+    // later page the Kuranko fiche is out of sight, yet page two must agree
+    // with page one.
+    // @req REQ-125
+    it("offers no family name on a later page when any fiche records the word", async () => {
+      rpc.mockImplementation(
+        (fn: string, args: Record<string, unknown> = {}) => {
+          if (fn === "afrik_search_peoples")
+            return Promise.resolve({
+              data: {
+                total: 21,
+                rows: [
+                  args.p_offset === 0
+                    ? peopleRow("PPL_KURANKO", "Kuranko", {
+                        normalizedScore: 0.62,
+                      })
+                    : peopleRow("PPL_SAN", "San", { normalizedScore: 0.3 }),
+                ],
+              },
+              error: null,
+            });
+          if (fn === "afrik_search_leads")
+            return Promise.resolve({
+              data: { rows: sanohLeads },
+              error: null,
+            });
+          if (fn === "afrik_search_recorded_term")
+            return Promise.resolve({
+              data: {
+                rows: [
+                  {
+                    kind: "people",
+                    id: "PPL_KURANKO",
+                    recorded_in: ["content.appellations.clans[]"],
+                  },
+                ],
+              },
+              error: null,
+            });
+          return Promise.resolve({ data: { total: 0, rows: [] }, error: null });
+        }
+      );
+
+      const result = await ftsSearchEntities({
+        q: "sanoh",
+        limit: 20,
+        offset: 20,
+      });
+
+      expect(result.peoples.map((p) => p.id)).toEqual(["PPL_SAN"]);
+      expect(result.leads).toEqual([]);
+    });
+
+    // Migration 110 returns the form that scored beside the filed name:
+    // « jarra » reaches Diarra through its spelling Jara, and « pakhalas » the
+    // Koulango fiche through its exonym Pakhallas. The page names that form.
+    // @req REQ-125
+    it("carries the form that scored as matchedForm on a lead, never on a similar name", async () => {
+      leadsPayload = {
+        rows: [
+          {
+            kind: "patronyme",
+            id: "PAT_DIARRA",
+            name: "Diarra",
+            matched_form: "Jara",
+            similarity: 0.57,
+          },
+          {
+            kind: "people",
+            id: "PPL_KOULANGO",
+            name: "Koulango",
+            matched_form: "Pakhallas",
+            similarity: 0.73,
+          },
+          { kind: "country", id: "MLI", name: "Mali", similarity: 0.25 },
+        ],
+      };
+
+      const zero = await ftsSearchEntities({
+        q: "jarra",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(zero.leads).toEqual([
+        {
+          kind: "patronyme",
+          id: "PAT_DIARRA",
+          name: "Diarra",
+          matchedForm: "Jara",
+          similarity: 0.57,
+        },
+        {
+          kind: "people",
+          id: "PPL_KOULANGO",
+          name: "Koulango",
+          matchedForm: "Pakhallas",
+          similarity: 0.73,
+        },
+        { kind: "country", id: "MLI", name: "Mali", similarity: 0.25 },
+      ]);
+      expect(zero.leads[2]).not.toHaveProperty("matchedForm");
+
+      peoplesPayload = {
+        total: 1,
+        rows: [peopleRow("PPL_TOUCOULEUR", "Toucouleur")],
+      };
+      const answered = await ftsSearchEntities({
+        q: "pakhalas",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(answered.nearNames.map((name) => name.id)).toEqual([
+        "PPL_KOULANGO",
+        "MLI",
+      ]);
+      for (const name of answered.nearNames) {
+        expect(name).not.toHaveProperty("matchedForm");
+      }
+    });
+  });
+
   // ── the cross-kind ordered list (ETNI-1710) ───────────────────────────────
 
   // @req REQ-002
@@ -2281,6 +3124,32 @@ describe("ftsSearchEntities", () => {
       expect(result.total).toBe(2);
       expect(result.widenedFrom).toEqual(["hausa", "egypte"]);
       expect(result.matchedQuery).toBeUndefined();
+    });
+
+    // A widening answers each name apart; a family name close to the whole
+    // phrase is no spelling of what the reader typed (DEC-075).
+    // @req REQ-125
+    it("offers no family-name lead on a multi-name widening", async () => {
+      corpusHolds({ hausa: "people", egypte: "country" });
+      leadsPayload = {
+        rows: [
+          {
+            kind: "patronyme",
+            id: "PAT_HAUSSAGE",
+            name: "Haussage",
+            similarity: 0.42,
+          },
+        ],
+      };
+
+      const result = await ftsSearchEntities({
+        q: "hausa egypte",
+        limit: 20,
+        offset: 0,
+      });
+
+      expect(result.widenedFrom).toEqual(["hausa", "egypte"]);
+      expect(result.leads).toEqual([]);
     });
 
     // @req REQ-178

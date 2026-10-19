@@ -20,7 +20,10 @@
     {
       "spelling": "Soulé",
       "attestations": [
-        { "countryId": "NER", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "NER",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -29,13 +32,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Souley est présenté comme une forme abrégée ou une variante de Souleymane en Afrique de l'Ouest.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["wisdomlib-souley"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -198,6 +196,26 @@
                 "source_kind": "academic",
                 "page": "p. 72-73",
                 "notes": "Niamey, Centre nigérien de recherche en sciences humaines, 1972. Les zamu sont des poèmes sur les noms que récitent les femmes songhay-zarma ; Jeanne Bisilliat les a recueillis au village de Sarando à partir de 1966, avec l'interprète Halimatu Sibiri, puis les a traduits avec Diouldé Laya. Lu dans le dépôt DICAMES du CAMES le 11 octobre 2026. Pages 72-73 : le zamu féminin « Kadiijatu » dit « Alkaali Suley wande », traduit « épouse du juge Suley »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Souley est présenté comme une forme abrégée ou une variante de Souleymane en Afrique de l'Ouest.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Souley : signification, origine et popularité",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.wisdomlib.org/fr/names/souley",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page communautaire tertiaire consultée en français. Elle propose un lien entre Souley et Souleymane sans citer de travail linguistique identifiable ; ce rapprochement reste à confirmer."
               }
             ]
           }

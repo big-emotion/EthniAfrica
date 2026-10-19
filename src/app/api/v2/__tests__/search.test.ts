@@ -33,9 +33,11 @@ vi.mock("@/lib/search/searchQueryLog", () => ({
 import { ftsSearchHandler } from "@/api/v2/handlers/search";
 import { evaluateRateLimit } from "@/lib/api/rate-limit";
 import { searchQueryLog } from "@/lib/search/searchQueryLog";
+import { selectNameSubject } from "@/lib/search/nameSubject";
 import {
   buildSearchParams,
   mapSearchEnvelope,
+  mapSearchLeads,
 } from "@/lib/search/searchEnvelope";
 
 const mockEnvelope = {
@@ -84,6 +86,51 @@ describe("GET /api/v2/search (route)", () => {
     expect(typeof body.data.total).toBe("number");
     expect(body.meta.license).toBe("CC-BY-SA-4.0");
     expect(Array.isArray(body.errors)).toBe(true);
+  });
+
+  // @req REQ-125
+  it("returns recorded field evidence from the handler", async () => {
+    (ftsSearchHandler as ReturnType<typeof vi.fn>).mockResolvedValue({
+      ...mockEnvelope,
+      data: {
+        ...mockEnvelope.data,
+        results: [
+          {
+            kind: "people",
+            id: "PPL_KURANKO",
+            name: "Kuranko",
+            normalizedScore: 1,
+            snippet: null,
+            recordedIn: [
+              {
+                fieldPath: "content.organization.clanOrganization",
+                text: "Les clans Kagbo, Sanoh, Kaloko et Koroma jouent également des rôles importants.",
+              },
+            ],
+          },
+        ],
+      },
+    });
+
+    const res = await GET(
+      new NextRequest("http://localhost/api/v2/search?q=sanoh")
+    );
+
+    expect((await res.json()).data.results).toEqual([
+      {
+        kind: "people",
+        id: "PPL_KURANKO",
+        name: "Kuranko",
+        normalizedScore: 1,
+        snippet: null,
+        recordedIn: [
+          {
+            fieldPath: "content.organization.clanOrganization",
+            text: "Les clans Kagbo, Sanoh, Kaloko et Koroma jouent également des rôles importants.",
+          },
+        ],
+      },
+    ]);
   });
 
   it("happy path — passes q, limit, offset to handler", async () => {
@@ -500,6 +547,42 @@ describe("GET /api/v2/search (route)", () => {
     expect(body.data.languagesTotal).toBe(1);
   });
 
+  // ETNI-2093: a row answered by a name its history tells carries those
+  // names, and the page reading the response counts it among its subjects.
+  // @req REQ-135
+  it("carries a row's history names to the page, whose subjects then include it", async () => {
+    (ftsSearchHandler as ReturnType<typeof vi.fn>).mockResolvedValue({
+      ...mockEnvelope,
+      data: {
+        ...mockEnvelope.data,
+        peoples: [
+          {
+            id: "PPL_FULA",
+            nameMain: "Peul",
+            content: {},
+            exactMatch: true,
+            historyNames: ["Fulɓe", "Peul", "Fulani"],
+          },
+        ],
+      },
+    });
+
+    const req = new NextRequest(
+      `http://localhost/api/v2/search?${buildSearchParams("Fulɓe")}`
+    );
+    const res = await GET(req);
+    const body = await res.json();
+
+    expect(body.data.peoples[0].historyNames).toEqual([
+      "Fulɓe",
+      "Peul",
+      "Fulani",
+    ]);
+    expect(
+      selectNameSubject(mapSearchEnvelope(body), "Fulɓe").map(({ id }) => id)
+    ).toEqual(["PPL_FULA"]);
+  });
+
   // REQ-125: a zero-result search surfaces near-miss leads in the envelope.
   // @req REQ-125
   it("returns near-miss leads in the response envelope on a zero-result search", async () => {
@@ -528,6 +611,47 @@ describe("GET /api/v2/search (route)", () => {
     expect(body.data.total).toBe(0);
     expect(body.data.leads).toEqual([
       expect.objectContaining({ kind: "people", id: "PPL_BAMBARA" }),
+    ]);
+  });
+
+  // DEC-075: a family name comes as a lead beside the results that did not
+  // answer « tchikaya » exactly, and the site's own client must read it.
+  // @req REQ-125
+  it("carries a family-name lead beside results, and the site's client maps it", async () => {
+    (ftsSearchHandler as ReturnType<typeof vi.fn>).mockResolvedValue({
+      ...mockEnvelope,
+      data: {
+        ...mockEnvelope.data,
+        peoples: [],
+        patronymes: [
+          { id: "PAT_CHUKWU", nameMain: "Chukwu" },
+          { id: "PAT_TCHICAYA", nameMain: "Tchicaya" },
+        ],
+        total: 2,
+        leads: [
+          {
+            kind: "patronyme",
+            id: "PAT_TCHICAYA",
+            name: "Tchicaya",
+            similarity: 0.5,
+          },
+        ],
+      },
+    });
+
+    const req = new NextRequest("http://localhost/api/v2/search?q=tchikaya");
+    const res = await GET(req);
+    const body = await res.json();
+
+    expect(res.status).toBe(200);
+    expect(body.data.total).toBe(2);
+    expect(mapSearchLeads(body)).toEqual([
+      {
+        type: "patronyme",
+        id: "PAT_TCHICAYA",
+        name: "Tchicaya",
+        similarity: 0.5,
+      },
     ]);
   });
 

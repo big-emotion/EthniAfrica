@@ -83,6 +83,7 @@ const OVER_BROAD_GROUPS = {
   peoples: [
     {
       id: "PPL_YORUBA",
+      historyNames: [],
       nameMain: "Yoruba",
       languageFamilyId: "FLG_NIGER_CONGO",
       languageFamilyName: "Niger-Congo",
@@ -100,6 +101,7 @@ const OVER_BROAD_GROUPS = {
   countries: [
     {
       id: "NGA",
+      historyNames: [],
       nameFr: "Nigéria",
       content: {},
       relevance: 0.7,
@@ -111,6 +113,7 @@ const OVER_BROAD_GROUPS = {
   families: [
     {
       id: "FLG_NIGER_CONGO",
+      historyNames: [],
       nameFr: "Niger-Congo",
       classificationStatus: null,
       content: {},
@@ -135,6 +138,7 @@ const OVER_BROAD_GROUPS = {
   patronymes: [
     {
       id: "PAT_ADEBAYO",
+      historyNames: [],
       nameMain: "Adébayo",
       nameSystem: "patronymic",
       casteOrSocialFunction: null,
@@ -148,6 +152,7 @@ const OVER_BROAD_GROUPS = {
   languages: [
     {
       id: "yor",
+      historyNames: [],
       name: "Yoruba",
       nameEn: "Yoruba",
       familyId: "FLG_NIGER_CONGO",
@@ -204,6 +209,47 @@ describe("ftsSearchHandler — unified results", () => {
     expect(envelope.data.results).toEqual(
       RANKED_HITS.filter((hit) => hit.kind !== "quiz")
     );
+  });
+
+  // @req REQ-125
+  it("publishes recorded-field evidence on hits without exposing the lookup", async () => {
+    vi.mocked(ftsSearch).mockResolvedValue(
+      serviceResponse({
+        results: [
+          {
+            ...RANKED_HITS[0],
+            recordedIn: [
+              {
+                fieldPath: "content.organization.clanOrganization",
+                text: "Les clans Kagbo, Sanoh, Kaloko et Koroma jouent également des rôles importants.",
+              },
+            ],
+          },
+        ],
+        recordedTerms: [
+          {
+            kind: "people",
+            id: "PPL_YORUBA",
+            recordedIn: ["content.organization.clanOrganization"],
+          },
+        ],
+      })
+    );
+
+    const envelope = await ftsSearchHandler(QUERY);
+
+    expect(envelope.data.results).toEqual([
+      {
+        ...RANKED_HITS[0],
+        recordedIn: [
+          {
+            fieldPath: "content.organization.clanOrganization",
+            text: "Les clans Kagbo, Sanoh, Kaloko et Koroma jouent également des rôles importants.",
+          },
+        ],
+      },
+    ]);
+    expect(envelope.data).not.toHaveProperty("recordedTerms");
   });
 
   // @req REQ-121
@@ -394,7 +440,7 @@ describe("ftsSearchHandler — words", () => {
     wordLanguage: "fra",
     definition: "Un mot.",
     content: {},
-    nameHistory: { summary: "s", names: [] },
+    nameHistory: { summary: "s", originExplained: true, names: [] },
     relevance: 1,
     exactMatch: true,
     normalizedScore: 1,

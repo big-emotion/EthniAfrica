@@ -20,6 +20,15 @@
           "sourceRefs": ["seychelles-state-house-2026-ziggy-adam"]
         }
       ]
+    },
+    {
+      "spelling": "Aden",
+      "attestations": [
+        {
+          "countryId": "DJI",
+          "sourceRefs": ["aden-presidence-djibouti-2026"]
+        }
+      ]
     }
   ],
   "transmissionMode": "non_hereditary",
@@ -27,24 +36,19 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Dans l'usage soudanais documenté, Adam peut occuper l'un des éléments d'une chaîne de noms personnels formée par le nom du porteur, celui du père et celui du grand-père ; ce n'est pas un nom de famille héréditaire.",
-        "claimStatus": "established",
-        "sourceRefs": ["verney-2019-sudan-names"]
-      },
-      {
-        "claim": "Pour le patronyme européen, le Dictionary of American Family Names rattache Adam au prénom biblique Adam, lui-même expliqué par l'hébreu générique pour « homme » et rapproché de adama (« terre »). Cette analyse ne doit pas être transférée au système non héréditaire associé aux Four/Fur dans la même fiche.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["dafn-adam-2022"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
       "peopleId": "PPL_FOUR",
       "status": "attested",
       "sourceRefs": ["harvard-2018-guy-adam"]
+    },
+    {
+      "peopleId": "PPL_SOMALI",
+      "status": "attested",
+      "sourceRefs": ["dafn-familysearch-adan", "dafn-familysearch-aden"]
     }
   ],
   "countries": [
@@ -57,12 +61,31 @@
       "countryId": "SYC",
       "status": "attested",
       "sourceRefs": ["seychelles-state-house-2026-ziggy-adam"]
+    },
+    {
+      "countryId": "DJI",
+      "status": "attested",
+      "sourceRefs": ["aden-presidence-djibouti-2026"]
     }
   ],
   "alliances": [],
   "casteOrSocialFunction": null,
-  "bearers": [],
-  "homonyms": [],
+  "bearers": [
+    {
+      "status": "deceased",
+      "displayName": "Djama Guedi Aden",
+      "sourceRefs": ["aden-presidence-djibouti-2026"]
+    }
+  ],
+  "homonyms": [
+    {
+      "label": "Aden frison oriental et écossais",
+      "entityType": "patronyme",
+      "entityId": null,
+      "distinction": "Le Dictionary of American Family Names distingue de la forme somalie d'Adam deux noms de famille européens écrits Aden, d'une autre origine : en Frise orientale, un nom formé sur le nom de personne Ade, et en Écosse, un nom tiré des anciennes terres d'Auden ou Aden, à Old Deer, dans l'Aberdeenshire.",
+      "sourceRefs": ["dafn-familysearch-aden"]
+    }
+  ],
   "sources": [
     {
       "sourceKey": "verney-2019-sudan-names",
@@ -103,6 +126,30 @@
       "tier": "referenced",
       "source_kind": "linguistic_reference",
       "notes": "Patrick Hanks et al., Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry. La notice couvre le patronyme européen ; elle ne caractérise pas le patronyme non héréditaire associé aux Four/Fur."
+    },
+    {
+      "sourceKey": "aden-presidence-djibouti-2026",
+      "title": "Le Président Guelleh salue la mémoire de feu Djama Guedi Aden, Parlementaire djiboutien",
+      "url": "https://www.presidence.dj/article/le-president-guelleh-salue-la-memoire-de-feu-djama-guedi-aden-parlementaire-djiboutien-1634",
+      "tier": "official",
+      "source_kind": "government",
+      "notes": "Présidence de la République de Djibouti, 22 juin 2026, relue le 18 octobre 2026. Le titre, l'ouverture et la conclusion donnent Djama Guedi Aden, membre de l'Assemblée nationale depuis 2018, et annoncent son décès ; une phrase du milieu écrit « Djama Guedi Ahmed ». La page ne dit pas si Aden est le nom de son père, celui de son grand-père ou un nom de famille."
+    },
+    {
+      "sourceKey": "dafn-familysearch-adan",
+      "title": "Adan Name Meaning and Adan Family History at FamilySearch",
+      "url": "https://www.familysearch.org/en/surname?surname=adan",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Entrée du Dictionary of American Family Names de Patrick Hanks (Oxford University Press, 2003 et 2006), reproduite par FamilySearch et lue le 18 octobre 2026 : « Somali: from a Somali Muslim personal name, an equivalent of Biblical Adam. Compare Aden 3 » ; « Since Somalis traditionally do not have hereditary surnames, this name was in most cases registered as such only after immigration of its bearers to the US »."
+    },
+    {
+      "sourceKey": "dafn-familysearch-aden",
+      "title": "Aden Name Meaning and Aden Family History at FamilySearch",
+      "url": "https://www.familysearch.org/en/surname?surname=aden",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Entrée du Dictionary of American Family Names de Patrick Hanks (Oxford University Press, 2003 et 2006), reproduite par FamilySearch et lue le 18 octobre 2026 : « Somali: from a Somali Muslim personal name, a variant of Adan 3 'Adam'. It is also found in Ethiopia, Kenya, and Djibouti » ; l'entrée ajoute que les Somalis n'ont pas, en général, de nom de famille transmis. Elle donne avant ce sens deux origines européennes : « East Frisian: patronymic from the personal name Ade » et « Scottish: habitational name from the old lands and barony of Auden or Aden in Old Deer, Aberdeenshire »."
     }
   ],
   "gaps": [
@@ -129,14 +176,6 @@
     {
       "fieldPath": "casteOrSocialFunction",
       "reason": "Les travaux consultés sur les chaînes de noms soudanaises et les résultats seychellois n'attestent aucune fonction sociale héréditaire attachée à Adam."
-    },
-    {
-      "fieldPath": "bearers",
-      "reason": "Les sources dédiées consultées attestent des porteurs vivants ; ils ne sont pas ajoutés comme porteurs historiques."
-    },
-    {
-      "fieldPath": "homonyms",
-      "reason": "Les recherches ont confirmé deux contextes géographiques sans établir deux origines distinctes et sourcées ; aucune homonymie autonome n'est donc enregistrée."
     }
   ],
   "patronymicChainDepth": {
@@ -144,7 +183,7 @@
     "sourceRefs": ["verney-2019-sudan-names"]
   },
   "nameHistory": {
-    "summary": "Le nom Adam est un nom personnel tiré du Coran, porté notamment au Darfour, au Soudan. Il s'y transmet dans une chaîne de noms, où chacun porte aussi le nom de son père et de son grand-père, plutôt que comme un nom de famille fixe. En haoussa, il se dit Adamu. Les sources lues ne disent pas quand il est devenu un nom de famille.",
+    "summary": "Le nom Adam est un nom personnel tiré du Coran, porté notamment au Darfour, au Soudan. Il s'y transmet dans une chaîne de noms, où chacun porte aussi le nom de son père et de son grand-père, plutôt que comme un nom de famille fixe. En haoussa, il se dit Adamu ; en somali, Adan, que l'on écrit aussi Aden. Les sources lues ne disent pas quand il est devenu un nom de famille.",
     "names": [
       {
         "nameText": "Adam",
@@ -207,6 +246,47 @@
                 "notes": "Sudan Studies, no 59, janvier 2019. Lu le 11 octobre 2026 dans une copie archivée du numéro, le lien d'origine ne répondant plus. L'auteur écrit que, dans le système soudanais, fils et filles prennent aussi les noms de leur père et de leur grand-père paternel, ce qui déroute souvent les fonctionnaires européens, et cite le cas d'un Darfouri nommé Adam Suleiman."
               }
             ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans l'usage soudanais documenté, Adam peut occuper l'un des éléments d'une chaîne de noms personnels formée par le nom du porteur, celui du père et celui du grand-père ; ce n'est pas un nom de famille héréditaire.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Tongue-tied: How interpreting errors hurt Sudanese asylum cases",
+                "author": "Peter Verney",
+                "year": 2019,
+                "url": "https://sssuk.org/sites/default/files/sudanStudies/SS59.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 68",
+                "notes": "Sudan Studies, no 59, janvier 2019. Lu le 11 octobre 2026 dans une copie archivée du numéro, le lien d'origine ne répondant plus. L'auteur écrit que, dans le système soudanais, fils et filles prennent aussi les noms de leur père et de leur grand-père paternel, ce qui déroute souvent les fonctionnaires européens, et cite le cas d'un Darfouri nommé Adam Suleiman."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Pour le patronyme européen, le Dictionary of American Family Names rattache Adam au prénom biblique Adam, lui-même expliqué par l'hébreu générique pour « homme » et rapproché de adama (« terre »). Cette analyse ne doit pas être transférée au système non héréditaire associé aux Four/Fur dans la même fiche.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Adam Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.ancestry.com/last-name-meaning/adam?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Patrick Hanks et al., Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry. La notice couvre le patronyme européen ; elle ne caractérise pas le patronyme non héréditaire associé aux Four/Fur."
+              }
+            ]
           }
         ]
       },
@@ -260,6 +340,113 @@
                 "source_kind": "academic",
                 "page": "p. 149, 158",
                 "notes": "Names, vol. 29, no 2, 1981, p. 139-164. Lu dans le PDF intégral le 11 octobre 2026. L'étude porte sur les noms des Haoussa du nord du Nigeria, musulmans pour la plupart ; la majorité des noms donnés lors de la cérémonie du nom y sont tirés du Coran. Tableau VII : Adamu pour le garçon de jumeaux de sexes différents. Tableau des noms de jour : Adamu parmi les noms des garçons nés le vendredi ; la note 1 précise « Adamu » pour le jumeau garçon."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Adan",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "som",
+        "namedBy": null,
+        "shortLine": "La forme somalie du nom Adam.",
+        "periodLabel": "Écrit dès 1856 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Décrit en 2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Adan est un nom personnel somali et musulman, qui correspond à l'Adam de la Bible, selon le dictionnaire de Patrick Hanks. Les Somalis n'ont pas, en général, de nom de famille transmis : aux États-Unis, Adan n'a le plus souvent été enregistré comme nom de famille qu'à l'arrivée de ceux qui le portent.",
+            "sources": [
+              {
+                "title": "Adan Name Meaning and Adan Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=adan",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée du Dictionary of American Family Names de Patrick Hanks (Oxford University Press, 2003 et 2006), reproduite par FamilySearch et lue le 18 octobre 2026 : « Somali: from a Somali Muslim personal name, an equivalent of Biblical Adam. Compare Aden 3 » ; « Since Somalis traditionally do not have hereditary surnames, this name was in most cases registered as such only after immigration of its bearers to the US »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Adan apparaît chez l'explorateur Richard Burton dans la généalogie du gouverneur de Zeila, le hadj Sharmarkay, que lui donne Mohammed Sharmarkay : l'un des ancêtres de la lignée s'y appelle Adan, et Burton précise qu'il s'agit d'Adam. C'est la plus ancienne trace de cette forme que le projet connaît ; le nom est bien plus ancien qu'elle.",
+            "formAsWritten": "Adan",
+            "birth": true,
+            "sources": [
+              {
+                "title": "First Footsteps in East Africa; or, An Exploration of Harar",
+                "author": "Richard F. Burton",
+                "year": 1856,
+                "url": "https://archive.org/details/firstfootstepsi00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 18, note",
+                "notes": "Londres, Longman, Brown, Green, and Longmans, 1856 ; exemplaire numérisé sur archive.org. Récit d'un voyage fait en 1854-1855 dans le pays somali et jusqu'à Harar. Voyageur britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Page 17 : « The governor of Zayla, El Hajj Sharmarkay bin Ali Salih ». Page 18, note, lue sur l'image : « The following genealogical table was given to me by Mohammed Sharmarkay », avec, au rang 8, « Adan (i. e. Adam.) ». Lu le 18 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Aden",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Usage contemporain",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Aden est une autre forme somalie d'Adan, c'est-à-dire Adam, selon le dictionnaire de Patrick Hanks, qui le trouve aussi en Éthiopie, au Kenya et à Djibouti.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Aden Name Meaning and Aden Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=aden",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée du Dictionary of American Family Names de Patrick Hanks (Oxford University Press, 2003 et 2006), reproduite par FamilySearch et lue le 18 octobre 2026 : « Somali: from a Somali Muslim personal name, a variant of Adan 3 'Adam'. It is also found in Ethiopia, Kenya, and Djibouti » ; l'entrée ajoute que les Somalis n'ont pas, en général, de nom de famille transmis."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2026,
+              "to": 2026,
+              "label": "2026"
+            },
+            "era": "modern",
+            "statement": "Le nom Aden est le dernier des trois noms du député djiboutien Djama Guedi Aden, mort en juin 2026, selon la présidence de la République de Djibouti. Elle ne dit pas si c'est le nom de son père, celui de son grand-père ou un nom de famille.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Le Président Guelleh salue la mémoire de feu Djama Guedi Aden, Parlementaire djiboutien",
+                "author": "Présidence de la République de Djibouti",
+                "year": 2026,
+                "url": "https://www.presidence.dj/article/le-president-guelleh-salue-la-memoire-de-feu-djama-guedi-aden-parlementaire-djiboutien-1634",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Présidence de la République de Djibouti, 22 juin 2026, relue le 18 octobre 2026. Le titre, l'ouverture et la conclusion donnent Djama Guedi Aden, membre de l'Assemblée nationale depuis 2018, et annoncent son décès ; une phrase du milieu écrit « Djama Guedi Ahmed ». La page ne dit pas si Aden est le nom de son père, celui de son grand-père ou un nom de famille."
               }
             ]
           }

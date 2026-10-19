@@ -27,13 +27,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "La source décrit le nom de famille Ibrahim comme formé sur le nom personnel homographe et atteste la graphie arabe إبراهيم. Elle ne permet pas de choisir entre les usages arabes, haoussa et autres pour une lignée donnée.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["btn-surname-ibrahim"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -253,6 +248,26 @@
                 "tier": "referenced",
                 "source_kind": "press",
                 "notes": "Article du 13 août 2025, lu le 12 octobre 2026 : « Egyptian novelist Sonallah Ibrahim », né au Caire en 1937. Il n'indique pas de qui Ibrahim est le nom dans cette suite."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La source décrit le nom de famille Ibrahim comme formé sur le nom personnel homographe et atteste la graphie arabe إبراهيم. Elle ne permet pas de choisir entre les usages arabes, haoussa et autres pour une lignée donnée.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the surname Ibrahim — Behind the Name",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://surnames.behindthename.com/name/ibrahim",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Entrée communautaire consultée le 2 septembre 2026. Elle classe Ibrahim comme nom de famille arabe, ourdou et haoussa issu du nom personnel Ibrahim, avec la graphie إبراهيم. Elle ne documente pas une lignée africaine particulière."
               }
             ]
           }

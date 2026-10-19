@@ -27,30 +27,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "En kirundi, Manirakiza se comprend « Imana guérit, enrichit ». C'est l'un des noms qui disent la bonté et la providence d'Imana, l'Être suprême en qui les Burundais croient traditionnellement.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["simbananiye-2005-noms-burundi"]
-      },
-      {
-        "claim": "Une liste de noms de réfugiés burundais en Tanzanie donne la même lecture : « Dieu guérit / Dieu procure la richesse ». Cette liste traduit le nom sans l'analyser.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["duchaj-ntihirageza-2009-noms-burundais"]
-      }
-    ],
-    "historicalSyntheses": [
-      {
-        "claim": "Le système traditionnel de nomination, où chacun porte un nom différent de celui de son père, coexiste aujourd'hui au Burundi avec un système patronymique introduit par la colonisation et le christianisme. Ce dernier montre ses limites : un nom de rang, par exemple, ne peut passer du père aux enfants sans perdre son sens.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["simbananiye-2005-noms-burundi"]
-      },
-      {
-        "claim": "Au baptême, un nom chrétien s'ajoute au nom donné à la naissance, et ce dernier devient le nom de famille.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["duchaj-ntihirageza-2009-noms-burundais"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -106,10 +84,6 @@
   ],
   "gaps": [
     {
-      "fieldPath": "origin",
-      "reason": "Les explications ci-dessus portent sur le sens du nom en kirundi. Nous n'avons trouvé aucune source sur l'histoire de familles précises qui le portent."
-    },
-    {
       "fieldPath": "alliances",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
@@ -158,7 +132,8 @@
                 "page": "p. 173-174",
                 "notes": "Anthropologie et Sociétés, 29(1), 2005, p. 167-181, lu en entier sur la page de l'éditeur Érudit et sur le PDF de la revue le 14 octobre 2026. L'auteur s'appuie sur des entretiens menés en 1999 au Burundi et sur des noms relevés dans des registres paroissiaux, des écoles et l'état civil. Page 174 : Manirakiza, « Imana guérit, enrichit », parmi les noms de la bonté et de la providence d'Imana ; page 173 : Imana est l'Être suprême, créateur et bienfaiteur, en qui les Burundais croient."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           },
           {
             "period": {
@@ -180,7 +155,8 @@
                 "page": "p. 339",
                 "notes": "Article lu en entier le 14 octobre 2026 dans le dépôt de l'université York, pagination du volume (p. 337-345). Page 339 : tableau « Sample names originally from The Kinasi camp », dont la légende cite une page de l'UNICEF pour l'échantillon ; ligne 6, nom de famille Manirakiza, langue kirundi, sens « God cures/God provides wealth »."
               }
-            ]
+            ],
+            "claimStatus": "claimed"
           },
           {
             "period": {
@@ -246,6 +222,48 @@
                 "source_kind": "academic",
                 "page": "p. 174",
                 "notes": "Anthropologie et Sociétés, 29(1), 2005, p. 167-181, lu en entier sur la page de l'éditeur Érudit et sur le PDF de la revue le 14 octobre 2026. L'auteur s'appuie sur des entretiens menés en 1999 au Burundi et sur des noms relevés dans des registres paroissiaux, des écoles et l'état civil. Page 174 : « Manirakiza : Imana guérit, enrichit » dans la liste des noms qui expriment la bonté et la providence d'Imana."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le système traditionnel de nomination, où chacun porte un nom différent de celui de son père, coexiste aujourd'hui au Burundi avec un système patronymique introduit par la colonisation et le christianisme. Ce dernier montre ses limites : un nom de rang, par exemple, ne peut passer du père aux enfants sans perdre son sens.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Les noms de personnes au Burundi : un support du lien social (Léandre Simbananiye, Anthropologie et Sociétés, 29(1), 2005, p. 167-181)",
+                "author": "Léandre Simbananiye",
+                "year": 2005,
+                "url": "https://doi.org/10.7202/011745ar",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 173-174",
+                "notes": "Anthropologie et Sociétés, 29(1), 2005, p. 167-181, lu en entier sur la page de l'éditeur Érudit et sur le PDF de la revue le 14 octobre 2026. L'auteur s'appuie sur des entretiens menés en 1999 au Burundi et sur des noms relevés dans des registres paroissiaux, des écoles et l'état civil. Page 174 : Manirakiza, « Imana guérit, enrichit », parmi les noms de la bonté et de la providence d'Imana ; page 173 : Imana est l'Être suprême, créateur et bienfaiteur, en qui les Burundais croient."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Au baptême, un nom chrétien s'ajoute au nom donné à la naissance, et ce dernier devient le nom de famille.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Survival by Loss of Identity: The Power of Names among Burundian Refugees in Tanzania (Karen A. Duchaj et Jeanine Ntihirageza, 2009, p. 337-345)",
+                "author": "Karen A. Duchaj et Jeanine Ntihirageza",
+                "year": 2009,
+                "url": "https://yorkspace.library.yorku.ca/items/9b20b57a-99b6-45b0-a212-95dfe823c88c",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 339",
+                "notes": "Article lu en entier le 14 octobre 2026 dans le dépôt de l'université York, pagination du volume (p. 337-345). Page 339 : tableau « Sample names originally from The Kinasi camp », dont la légende cite une page de l'UNICEF pour l'échantillon ; ligne 6, nom de famille Manirakiza, langue kirundi, sens « God cures/God provides wealth »."
               }
             ]
           }

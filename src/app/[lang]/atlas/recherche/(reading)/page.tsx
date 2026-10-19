@@ -8,6 +8,7 @@ import { pickDidYouKnowFact } from "@/lib/home/didYouKnowFacts";
 import { getLocalizedRoute } from "@/lib/routing";
 import { pageHead } from "@/lib/seo/pageHead";
 import { getTranslation } from "@/lib/translations";
+import { readSearchedThisWeek } from "@/lib/search/searchedThisWeekData";
 import type { Language } from "@/types/shared";
 
 // Search pages are dynamic — filters change per request.
@@ -41,6 +42,7 @@ export default async function RecherchePage() {
   // The links of the reading go to a name's address when it has one. A list
   // that cannot be read costs the addresses, never the page.
   const spellings = await getNameAddressSpellings().catch(() => []);
+  const weeklyNames = await readSearchedThisWeek();
   return (
     <NameAddressProvider spellings={spellings}>
       {/*
@@ -63,7 +65,7 @@ export default async function RecherchePage() {
           </div>
         }
       >
-        <RecherchePageContent />
+        <RecherchePageContent weeklyNames={weeklyNames} />
       </Suspense>
     </NameAddressProvider>
   );

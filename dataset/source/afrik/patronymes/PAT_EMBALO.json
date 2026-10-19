@@ -31,13 +31,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Dans l’organisation fula du Gabú décrite par Sadjo, Embaló est un nom de famille noble associé à des lignages exerçant la fonction de régulo ; la même étude décrit la prééminence de la ligne paternelle.",
-        "claimStatus": "established",
-        "sourceRefs": ["sadjo-2019-kaabu"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -145,6 +140,27 @@
                 "source_kind": "academic",
                 "page": "p. 102, 110",
                 "notes": "Africana Studia, n° 9, 2006, p. 99-125, Centre d'études africaines de l'Université de Porto, lu en texte intégral le 13 octobre 2026. Page 102 : « Monjour Meta [Em]Bâlo, régulo do Gabú entre 1906 e 1927 ». Page 110, note 24 : situation de 1914 dans la circonscription du Geba, avec « o fula forro Monjour Meta Balô (Magalhães, 1916: 3) ». Le rapport de Magalhães lui-même n'a pas été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans l’organisation fula du Gabú décrite par Sadjo, Embaló est un nom de famille noble associé à des lignages exerçant la fonction de régulo ; la même étude décrit la prééminence de la ligne paternelle.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Fulas e Mandingas na luta pelo poder e conquista do Império de Kaabu: causas e consequências (século XVI-XIX)",
+                "author": "Ibu Sadjo",
+                "year": 2019,
+                "url": "https://repositorio.unilab.edu.br/jspui/bitstream/123456789/3467/1/ibu%20djalo_tcc.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21",
+                "notes": "Mémoire de bacharelado, UNILAB, 2019, lu en texte intégral le 12 octobre 2026. À la p. 21, le mémoire cite le même ouvrage de Tcherno Djaló : en haut de la société fula de Guinée-Bissau se trouvent « os Régulos com os apelidos Embalo e Baldé », et « Baldé e Embaló são nobres »."
               }
             ]
           }

@@ -16,6 +16,15 @@
           "sourceRefs": ["afrik-candidate-queue"]
         }
       ]
+    },
+    {
+      "spelling": "Sanoh",
+      "attestations": [
+        {
+          "countryId": "BFA",
+          "sourceRefs": ["burkina-patronym-project-2025"]
+        }
+      ]
     }
   ],
   "transmissionMode": "other",
@@ -23,6 +32,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [],
@@ -45,13 +55,17 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "burkina-patronym-project-2025",
+      "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+      "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+      "tier": "unverified",
+      "source_kind": "government",
+      "notes": "Direction du patrimoine culturel, Burkina Faso, 2025, p. 180. Document de travail daté de mai 2025 et marqué « version provisoire », sans validation finale visible, lu sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle de ce répertoire n'a été trouvée. Notice SANOU / SANOH / SANON. Lu le 11 octobre 2026."
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
     {
       "fieldPath": "alliances",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."

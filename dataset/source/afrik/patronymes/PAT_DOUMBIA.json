@@ -48,23 +48,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Le jamu est un nom de clan patrilinéaire : il désigne l'appartenance à un groupe de descendance, et non une filiation individuelle au père.",
-        "claimStatus": "established",
-        "sourceRefs": ["jansen-sunjata-paradigm"]
-      },
-      {
-        "claim": "Les nyamakalaw — groupes endogames d'artisans et de musiciens — sont attestés chez les Malinké au plus tard vers 1300 et se retrouvent chez plus de quinze peuples ouest-africains. Le statut se transmet avec le jamu, ce qui fait du nom de clan le support de la position sociale autant que de la descendance.",
-        "claimStatus": "established",
-        "sourceRefs": ["tamari-1991-caste"]
-      },
-      {
-        "claim": "Le dictionnaire des jamuw a une entrée Sakiliba, qu'il glose comme le jamu féminin qui correspond à Dunbuya (Doumbia). La même forme y figure aussi, à l'entrée Sisoko, comme jamu féminin des familles libres (hɔ́rɔn), là où Danba est le jamu féminin des familles de griots (jèli) : c'est un nom porté par les femmes, distinct du nom des hommes de la lignée.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["bamadaba-jamuw"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -338,6 +323,66 @@
                 "source_kind": "academic",
                 "page": "p. 38",
                 "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Dunbiya : la mention de Fakoli comme ancêtre, sans source indiquée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le jamu est un nom de clan patrilinéaire : il désigne l'appartenance à un groupe de descendance, et non une filiation individuelle au père.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Beyond the Mali Empire — A New Paradigm for the Sunjata Epic",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2952645/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Jansen, Jan, Universiteit Leiden. Travail critique sur la transmission de l'épopée et sur le jamu comme institution sociale plutôt que comme mémoire historique ; utilisé ici pour la nature du jamu, non pour dater un ancêtre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Les nyamakalaw — groupes endogames d'artisans et de musiciens — sont attestés chez les Malinké au plus tard vers 1300 et se retrouvent chez plus de quinze peuples ouest-africains. Le statut se transmet avec le jamu, ce qui fait du nom de clan le support de la position sociale autant que de la descendance.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "The Development of Caste Systems in West Africa",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://shs.hal.science/halshs-00690180v1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Tamari, Tal, The Journal of African History 32(2), 1991, p. 221-250 ; dépôt ouvert HAL-SHS. Établit que les groupes endogames d'artisans et de musiciens se rencontrent chez plus de quinze peuples ouest-africains et qu'ils sont attestés chez les Malinké au plus tard vers 1300. Utilisé pour l'institution de la caste, jamais pour rattacher un clan nommé à une caste : cette attribution-là vient d'une autre source."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le dictionnaire des jamuw a une entrée Sakiliba, qu'il glose comme le jamu féminin qui correspond à Dunbuya (Doumbia). La même forme y figure aussi, à l'entrée Sisoko, comme jamu féminin des familles libres (hɔ́rɔn), là où Danba est le jamu féminin des familles de griots (jèli) : c'est un nom porté par les femmes, distinct du nom des hommes de la lignée.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Fichier complet lu. Entrée Dunbiya : variantes, groupes et équivalents ; aucun sens ni statut donné au nom."
               }
             ]
           }

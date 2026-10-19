@@ -22,6 +22,7 @@ import type {
   CultureSection,
   HistoricalFactsSection,
   DemographicsSection,
+  RecordedFieldEvidence,
 } from "./afrik";
 import type { PersonPeopleLink } from "./persons";
 import type { SearchAnswer } from "@/lib/search/answer";
@@ -153,6 +154,8 @@ export interface SearchResult {
   type: SearchEntityType;
   id: string;
   name: string;
+  /** Counted fiche fields where this query is recorded as a whole word. */
+  recordedIn?: RecordedFieldEvidence[];
   /**
    * Extrait expliquant la correspondance, termes appariés encadrés par
    * `[[` et `]]` (voir `src/lib/search/highlight.ts`).
@@ -206,6 +209,15 @@ export interface SearchResult {
    * (persons, quizzes), reads as before.
    */
   answer?: SearchAnswer;
+  /**
+   * Every name the fiche's history tells (`nameHistory.names[].nameText`), in
+   * history order, as the corpus spells them (REQ-135, ETNI-2093). The search
+   * answers a fiche exactly under any of them, so the page's subject selection
+   * reads them beside the filed name. `[]` on a fiche without a history, and
+   * on a row from a search function not yet migrated; absent on the kinds the
+   * page does not answer by name (persons, places).
+   */
+  historyNames?: string[];
   /** Autonyme (selfAppellation) du peuple, quand le corpus le porte. */
   autonym?: string;
   /** Exonymes connus, dans l'ordre de la fiche. */
@@ -283,27 +295,34 @@ export interface SearchResult {
 }
 
 /**
- * Near-miss lead (REQ-125): what the search engine almost understood, shown
- * only when a search's `total` is 0. `type` reuses `SearchEntityType`'s
+ * Near-miss lead (REQ-125): what the search engine almost understood. A
+ * people, country or family lead comes only when a search's `total` is 0; a
+ * family name (`patronyme`) comes as a spelling of the searched name whenever
+ * nothing answers it exactly (DEC-075). `type` reuses `SearchEntityType`'s
  * naming (`languageFamily`, not the API's `family`) so a lead can share
  * `SEARCH_ENTITY_ACCENT`'s accent and label with a real result of the same
- * kind — languages and persons are not candidates for a lead any more than
- * they are named in `SEARCH_LABEL`.
+ * kind. Languages and persons are never leads.
  */
 export interface SearchLead {
-  type: Extract<SearchEntityType, "people" | "country" | "languageFamily">;
+  type: Extract<
+    SearchEntityType,
+    "people" | "country" | "languageFamily" | "patronyme"
+  >;
   id: string;
+  /** The filed name. */
   name: string;
+  /** The form that scored, when the API names one (migration 110). */
+  matchedForm?: string;
   similarity: number;
 }
 
 /**
  * A similar name explicitly qualified by the API for a non-empty search.
- * Kept separate from `SearchLead`, whose suggestions exist only when the
- * corpus found no result at all.
+ * Kept separate from `SearchLead`, whose suggestions stand in for a missing
+ * answer. A family name is never a similar name (DEC-075).
  */
 export interface SearchNearName {
-  type: SearchLead["type"];
+  type: Exclude<SearchLead["type"], "patronyme">;
   id: string;
   name: string;
   similarity: number;

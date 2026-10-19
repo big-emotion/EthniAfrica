@@ -1,43 +1,43 @@
 {
   "id": "PPL_MUCUVAL",
-  "nameMain": "Mucuval",
+  "nameMain": "Kuvale",
   "languageFamilyId": "FLG_NIGERCONGO",
   "currentCountries": ["AGO"],
-  "classificationStatus": "contested",
+  "classificationStatus": "colonial-legacy",
   "content": {
     "appellations": {
-      "mainName": "Mucuval",
-      "selfAppellation": "OvaKuvale",
-      "exonyms": ["Kuvale", "OvaKuvale", "Cubal", "Mukuval"],
-      "originOfExonyms": "Le terme Mucuval est la romanisation portugaise du nom bantou OvaKuvale. La forme Kuvale est privilegiee dans les etudes linguistiques (langue Kuvale, ISO olu). Le terme Cubal est aussi employe pour designer le meme groupe dans certaines sources ethnographiques anglophones. OvaKuvale est la forme autochtone en Otjiherero.",
-      "whyProblematic": "Confusion possible avec les Mucubal (OvaMucubal), groupe Herero distinct bien qu'apparente. Le nom Cubal est partage entre les deux groupes dans certaines sources, ce qui brouille les classifications. Le terme OvaKuvale s'est impose recemment dans la litterature specialisee pour les distinguer.",
-      "contemporaryUsage": "OvaKuvale est le terme academique et autochtone prefere. Mucuval reste en usage dans les classifications administratives angolaises. Kuvale est utilise en linguistique (langue Kuvale, code ISO olu).",
+      "mainName": "Kuvale",
+      "selfAppellation": "Kuvale",
+      "exonyms": ["Mucuval", "Cubal", "Mukuval", "Mucubal"],
+      "originOfExonyms": "Le nom Mucubal vient des documents coloniaux portugais, qui désignaient ainsi ce peuple, selon l'historien Rafael Coca de Campos ; il est encore employé en Angola. La forme Kuvale apparaît dès 1960 chez le père Carlos Estermann, et le linguiste Jouni Filip Maho range la langue kuvale sous le code R101. Les formes Mucuval, Mukuval et Cubal, que la fiche relève aussi, n'ont pas été retrouvées dans une source que nous avons ouverte.",
+      "whyProblematic": "Le nom Mucubal vient des documents coloniaux portugais. Selon l'historien Rafael Coca de Campos, les populations ainsi nommées se désignaient elles-mêmes comme Kuvale, et ce nom portait, chez beaucoup d'agents coloniaux, des accusations qui ont servi à fonder des politiques particulières.",
+      "contemporaryUsage": "Le nom Kuvale désigne aussi la langue de ce peuple, code ISO olu, dans les catalogues de langues. Le nom Mucubal reste employé en Angola : une dépêche de l'agence Lusa l'emploie en 2022.",
       "linguisticFamily": "FLG_NIGERCONGO",
       "ethnoLinguisticGroup": "Herero (sous-groupe bantou)",
       "historicalRegion": "Sud-Ouest Angola (province de Namibe, region de Bibala et Camucuio)",
       "currentCountries": ["AGO"]
     },
-    "ethnicities": ["OvaKuvale", "Kuvale"],
+    "ethnicities": ["Kuvale"],
     "origins": {
-      "ancientOrigins": "Les Mucuval (OvaKuvale) sont un sous-groupe des Herero, peuple bantou d'Afrique australe. Comme les Mucubal, ils descendent des migrations Herero depuis l'Afrique de l'Est, qui les auraient amenes dans le sud-ouest africain entre le XVIe et le XVIIIe siecle. Leur langue, le Kuvale, a traditionnellement ete consideree comme un dialecte de l'Herero (zone Bantu R.30), bien que Maho (2009) l'ait reclassee en zone R.10 aux cotes de l'Umbundu. Les OvaKuvale sont l'un des deux groupes pastoraux dominants (avec les Himba) du desert du Namib angolais.",
-      "formationPeriod": "XVIe-XVIIIe siecle, lors de la migration Herero vers l'Afrique australe.",
+      "ancientOrigins": "Les Kuvale sont un sous-groupe des Herero, peuple bantou d'Afrique australe. Comme les autres groupes herero, ils descendent des migrations Herero depuis l'Afrique de l'Est, qui les auraient amenés dans le sud-ouest africain entre le XVIe et le XVIIIe siècle. Leur langue, le Kuvale, a traditionnellement été considérée comme un dialecte de l'Herero (zone Bantu R.30), bien que Maho (2009) l'ait reclassée en zone R.10 aux côtés de l'Umbundu. Les Kuvale sont l'un des deux groupes pastoraux dominants (avec les Himba) du désert du Namib angolais.",
+      "formationPeriod": "XVIe-XVIIIe siècle, lors de la migration Herero vers l'Afrique australe.",
       "migrationRoutes": [
         "Migration depuis l'Afrique de l'Est vers l'Afrique du Sud-Ouest",
         "Implantation dans la zone du Namib angolais (actuelles provinces de Namibe et Cunene)",
         "Migrations saisonnieres transfrontalieres entre l'Angola et la Namibie"
       ],
       "historicalSettlementZones": [
-        "Province de Namibe (region de Bibala, Camucuio, Tombua)",
+        "Province de Namibe (région de Bibala, Camucuio, Tombua)",
         "Province de Cunene (nord du Cunene)",
         "Frange du desert du Namib angolais",
         "Zones frontieres Angola-Namibie"
       ],
-      "unificationsOrDivisions": "Les OvaKuvale sont etroitement lies aux Himba et aux autres sous-groupes Herero d'Angola (Zemba, Mucubal, Hakaona). Leur langue Kuvale (Otjikuvale) est l'un des dialectes de l'Otjiherero, mutellement comprehensible avec les autres dialectes Herero bien que classe separement par certains linguistes.",
+      "unificationsOrDivisions": "Les Kuvale sont etroitement lies aux Himba et aux autres sous-groupes Herero d'Angola (Zemba, Hakaona). Leur langue Kuvale (Otjikuvale) est l'un des dialectes de l'Otjiherero, mutellement comprehensible avec les autres dialectes Herero bien que classe separement par certains linguistes.",
       "externalInfluences": "Contact avec les communautes pre-bantoues peripatetiques du Namib (Kwepe, Kwisi, Twa, Tjimba) qui ont adopte la langue Kuvale. Influence coloniale portugaise dans les zones proches de la cote (port de Porto Aleixandre/Tombwa). Contacts avec les Ovimbundu du plateau central.",
-      "majorHistoricalEvents": "La region du Namib angolais a ete relativement preservee des conflits de la guerre civile (1975-2002) en l'absence de ressources petrolieres ou minieres. La secheresse chronique depuis les annees 2000 perturbe les cycles pastoraux traditionnels et contraint les OvaKuvale a des deplacements plus importants."
+      "majorHistoricalEvents": "La région du Namib angolais a été relativement préservée des conflits de la guerre civile (1975-2002) en l'absence de ressources pétrolières ou minières. La sécheresse chronique depuis les années 2000 perturbe les cycles pastoraux traditionnels et contraint les Kuvale à des déplacements plus importants."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Organisation tribale clanique dirigee par des sobas (chefs locaux). Les OvaKuvale sont en haut de la pyramide sociale de la region du Namib angolais en raison du nombre de leur bétail. Systeme de bilateral descent partage avec les autres groupes Herero.",
+      "traditionalPoliticalSystem": "Organisation tribale clanique dirigee par des sobas (chefs locaux). Les Kuvale sont en haut de la pyramide sociale de la region du Namib angolais en raison du nombre de leur bétail. Systeme de bilateral descent partage avec les autres groupes Herero.",
       "clanOrganization": "Organisation bilineaire: appartenance a deux clans (paternel et maternel). L'heritage de la richesse (betail) suit la ligne maternelle (heritage de l'oncle maternel). Les fils vivent dans le clan paternel; les filles rejoignent le clan du mari.",
       "ageClassSystems": "Rites de passage lies a la puberte et au mariage. Le mariage marque l'acces au statut d'homme adulte. La richesse en betail determine le statut social.",
       "roleOfLineages": "Les lignages determinent l'heritage, le mariage et la residence. La polygamie est courante. Le mariage implique une transaction en betail entre les familles.",
@@ -50,18 +50,18 @@
         "Otjikuvale (dialecte principal)",
         "Ngendelengo (dialecte possiblement distinct)"
       ],
-      "vehicularRole": "Le Kuvale est la langue maternelle et vehiculaire du groupe. Il est aussi parle par les communautes peripatetiques marginalisees (Kwisi, Twa, Kwepe) qui l'ont adopte en remplacement de leurs langues originales. Le portugais est utilise pour les contacts administratifs. Le Kuvale est mutellement comprehensible avec l'Otjiherero des Himba et des Mucubal."
+      "vehicularRole": "Le Kuvale est la langue maternelle et vehiculaire du groupe. Il est aussi parle par les communautes peripatetiques marginalisees (Kwisi, Twa, Kwepe) qui l'ont adopte en remplacement de leurs langues originales. Le portugais est utilise pour les contacts administratifs. Le Kuvale est mutellement comprehensible avec l'Otjiherero des Himba."
     },
     "culture": {
       "majorRites": "Rites de passage marques par la richesse en betail. Ceremonies de mariage impliquant des transactions en bovins. Funerailles accompagnees de sacrifices animaux. Culte du feu sacre (okuruuo) comme lien avec les ancetres, commun aux Herero.",
-      "symbols": "Betail: la richesse et le statut social sont mesures au nombre de tetes de bétail possedees. La race bovine OvaKuvale (nommee Mucubal dans les sources agronomiques) est une race adaptee au semi-aride a longues pattes et grandes cornes courbes. Tissus de couleurs vives portes par les femmes. Colliers et bracelets ornes de perles.",
-      "artsAndMusic": "Les femmes OvaKuvale sont reconnaissables a leurs tissus colores et a leurs ornements en perles. Traditions musicales communes aux Herero: percussions et chants lors des ceremonies. Artisanat en cuir et en corne.",
+      "symbols": "Bétail : la richesse et le statut social sont mesurés au nombre de têtes de bétail possédées. La race bovine kuvale (nommée Mucubal dans les sources agronomiques) est une race adaptée au semi-aride, à longues pattes et grandes cornes courbes. Tissus de couleurs vives portés par les femmes. Colliers et bracelets ornés de perles.",
+      "artsAndMusic": "Les femmes kuvale sont reconnaissables a leurs tissus colores et a leurs ornements en perles. Traditions musicales communes aux Herero: percussions et chants lors des ceremonies. Artisanat en cuir et en corne.",
       "spiritualities": "Croyances animistes centrees sur le culte des ancetres et le feu sacre (okuruuo). Dieu supreme Mukuru commun aux groupes Herero. Influence croissante du christianisme (catholicisme et lutheranisme), avec un syncrétisme frequent entre croyances ancestrales et pratiques chretiennes."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Chefferies locales (sobas) sans royaume centralise. Les OvaKuvale font partie du vaste ensemble Herero, dont les subdivisions principales sont les Himba, Tjimba, Mbanderu, Kwandu et les groupes angolais (OvaKuvale, Zemba, Mucubal, Hakaona).",
-      "relationsWithNeighbors": "Les OvaKuvale sont la force pastorale dominante du Namib angolais. Les groupes peripatetiques (Kwisi, Twa, Kwepe, Tjimba) ont une relation de dependance sociale et economique vis-a-vis des OvaKuvale, adoptant leur langue et leurs pratiques culturelles. Relations commerciales et parfois conflictuelles avec les Ovimbundu du plateau.",
-      "conflictsOrAlliances": "Les groupes peripatetiques du Namib (Kwisi, Twa) travaillent souvent pour les OvaKuvale en echange de biens et de protection, dans un systeme de clientelisme. Tensions liees au vol de betail entre groupes pastoraux voisins.",
+      "kingdomsOrChiefdoms": "Chefferies locales (sobas) sans royaume centralise. Les Kuvale font partie du vaste ensemble Herero, dont les subdivisions principales sont les Himba, Tjimba, Mbanderu, Kwandu et les groupes angolais (Kuvale, Zemba, Hakaona).",
+      "relationsWithNeighbors": "Les Kuvale sont la force pastorale dominante du Namib angolais. Les groupes peripatetiques (Kwisi, Twa, Kwepe, Tjimba) ont une relation de dependance sociale et economique vis-a-vis des Kuvale, adoptant leur langue et leurs pratiques culturelles. Relations commerciales et parfois conflictuelles avec les Ovimbundu du plateau.",
+      "conflictsOrAlliances": "Les groupes peripatetiques du Namib (Kwisi, Twa) travaillent souvent pour les Kuvale en echange de biens et de protection, dans un systeme de clientelisme. Tensions liees au vol de betail entre groupes pastoraux voisins.",
       "diaspora": null
     },
     "demography": {
@@ -83,7 +83,7 @@
         "source_kind": "missionary_database"
       },
       {
-        "title": "Rull et al. – Genome-wide variation in the Angolan Namib Desert reveals unique Pre-Bantu ancestry, Science Advances (2023)",
+        "title": "Genome-wide variation in the Angolan Namib Desert reveals unique pre-Bantu ancestry",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10516492/",
         "tier": "referenced",
         "source_kind": "academic"
@@ -113,17 +113,16 @@
     ]
   },
   "nameHistory": {
-    "summary": "Le nom Kuvale désigne un peuple d'éleveurs du sud-ouest de l'Angola, dans le désert du Namibe, dont la langue est proche de celle des Herero. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. Les formes Mucuval, OvaKuvale et Cubal, que la fiche relève aussi, n'ont pas été retrouvées dans une source que nous avons ouverte : nous n'en disons donc rien ici. On ne sait pas avec certitude d'où vient le nom Kuvale.",
-    "selfNameUnknown": true,
+    "summary": "Le nom Kuvale désigne un peuple d'éleveurs du sud-ouest de l'Angola, dans le désert du Namibe, dont la langue est proche de celle des Herero. Selon l'historien Rafael Coca de Campos, qui s'appuie sur l'anthropologue Ruy Duarte de Carvalho et sur le père Carlos Estermann, ce peuple se désignait lui-même comme Kuvale. Les documents coloniaux portugais l'appelaient Mucubal, un nom encore employé en Angola. Les formes Mucuval, Mukuval et Cubal, que la fiche relève aussi, n'ont pas été retrouvées dans une source que nous avons ouverte : nous n'en disons donc rien ici. On ne sait pas avec certitude d'où vient le nom Kuvale.",
     "names": [
       {
         "nameText": "Kuvale",
         "nameStatus": "current",
-        "selfGiven": false,
+        "selfGiven": true,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le nom que les chercheurs emploient pour ce peuple d'éleveurs et pour sa langue.",
-        "periodLabel": "En usage aujourd'hui",
+        "shortLine": "Le nom de ces éleveurs du désert du Namibe et de leur langue, qu'ils se donnaient selon un historien.",
+        "periodLabel": "Écrit dès 1960 ; en usage aujourd'hui",
         "accounts": [
           {
             "period": {
@@ -164,6 +163,124 @@
                 "tier": "official",
                 "source_kind": "linguistic_reference",
                 "notes": "Page du catalogue Glottolog, lue le 12 octobre 2026 à partir du code ISO olu. Elle ne donne que le nom Kuvale."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Rapporté en 2021"
+            },
+            "statement": "Le nom Kuvale est celui que se donnaient les populations que les documents coloniaux portugais appelaient mucubais, selon l'historien Rafael Coca de Campos, qui s'appuie sur l'anthropologue Ruy Duarte de Carvalho et sur le père Carlos Estermann.",
+            "sources": [
+              {
+                "title": "Kakombola : o genocídio dos Mucubais na Angola colonial, 1930-1943",
+                "author": "Rafael Coca de Campos",
+                "year": 2021,
+                "url": "https://archive.org/details/Kakombola",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 38, note 48",
+                "notes": "Ponta Grossa, Atena Editora, 2021, ISBN 978-65-5983-766-3, en libre accès ; lu le 18 octobre 2026 dans l'exemplaire d'Internet Archive, page vérifiée sur l'image (p. 38 imprimée). Note 48 : « De acordo com Ruy Duarte de Carvalho, bem como com fontes contemporâneas, como o padre Espiritiano Carlos Estermann, as populações designadas mucubais se referiam a si mesmas como kuvale » ; l'auteur ajoute que le terme mucubal portait, chez beaucoup d'agents coloniaux, « uma série de suposições e imputações fundamentais para a elaboração de políticas específicas, vide a chamada Questão Mucubal »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2009,
+              "to": 2009,
+              "label": "2009"
+            },
+            "era": "modern",
+            "statement": "Le nom Kuvale figure dans la classification des langues bantoues de Jouni Filip Maho, sous le code R101.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "New Updated Guthrie List Online (NUGL Online), version du 4 juin 2009",
+                "author": "Jouni Filip Maho",
+                "year": 2009,
+                "url": "https://web.archive.org/web/20180203191542/http://goto.glocalnet.net/mahopapers/nuglonline.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 86",
+                "notes": "Liste de classification des langues bantoues, lue le 18 octobre 2026 dans la copie du 3 février 2018 conservée par la Wayback Machine. Page 86 : « R101 Kuvale », première entrée de la zone R10."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "1960"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kuvale apparaît chez le père Carlos Estermann, qui range les Kuvale parmi les peuples du groupe herero en Angola, avec les Himba et les Hakavona notamment. Il écrit Kuvale dans le texte français et Cuvale dans le texte portugais du même album. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Kuvale",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Álbum de penteados do sudoeste de Angola",
+                "author": "Carlos Estermann",
+                "year": 1960,
+                "url": "https://archive.org/details/dli.ernet.535233",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 8, 24",
+                "notes": "Lisbonne, 1960 ; préface datée de Sá da Bandeira, juin 1959. Lu dans la numérisation d'Internet Archive le 18 octobre 2026, pages vérifiées sur l'image. Texte portugais, p. 8 : « O grupo dos Hereros está representado em Angola pelas seguintes etnias: Dimba, Chimba, Cuvale, Cuanhoca, Chavícua, Hacavona e Guendelengo » ; texte français, p. 24 : « Le groupe héréro est représenté en Angola par les Ndimba, Himba, Kwanyoka, Tyavikwa, Hakavona, Kuvale et Ngendelengo »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mucubal",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les documents coloniaux portugais donnent à ce peuple, encore employé en Angola.",
+        "periodLabel": "Époque coloniale ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Rapporté en 2021"
+            },
+            "statement": "Le nom Mucubal est celui que les documents coloniaux portugais donnent à ce peuple. Pour l'historien Rafael Coca de Campos, ce nom portait, chez beaucoup d'agents coloniaux, des suppositions et des accusations qui ont servi à fonder des politiques particulières, ce qu'on appelait la « question mucubal ».",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Kakombola : o genocídio dos Mucubais na Angola colonial, 1930-1943",
+                "author": "Rafael Coca de Campos",
+                "year": 2021,
+                "url": "https://archive.org/details/Kakombola",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 38, note 48",
+                "notes": "Ponta Grossa, Atena Editora, 2021, ISBN 978-65-5983-766-3, en libre accès ; lu le 18 octobre 2026 dans l'exemplaire d'Internet Archive, page vérifiée sur l'image (p. 38 imprimée). Note 48 : « De acordo com Ruy Duarte de Carvalho, bem como com fontes contemporâneas, como o padre Espiritiano Carlos Estermann, as populações designadas mucubais se referiam a si mesmas como kuvale » ; l'auteur ajoute que le terme mucubal portait, chez beaucoup d'agents coloniaux, « uma série de suposições e imputações fundamentais para a elaboração de políticas específicas, vide a chamada Questão Mucubal »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Mucubal reste en usage aujourd'hui : en 2022, une dépêche de l'agence Lusa compte les Mucubais parmi les habitants de la municipalité de Virei, dans la province du Namibe, et les décrit comme des éleveurs qui se déplacent avec leurs bœufs.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Seca no sul do país leva pastores cada vez mais longe em busca de pasto",
+                "author": "Lusa, repris par Ver Angola",
+                "year": 2022,
+                "url": "https://www.verangola.net/va/pt/112022/Ambiente/33520/Seca-no-sul-do-pa%C3%ADs-leva-pastores-cada-vez-mais-longe-em-busca-de-pasto.htm",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Dépêche de l'agence Lusa de novembre 2022, lue le 18 octobre 2026 sur le site Ver Angola : « Ali vivem quase 43 mil pessoas, entre Mucubais, Cuisses, Muhakaona e Muílas » ; « Criadores de gado transumantes, os Mucubais têm nos bois a sua identidade »."
               }
             ]
           }

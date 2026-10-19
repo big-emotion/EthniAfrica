@@ -22,13 +22,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Opio est documenté dans le système lango comme le nom masculin du premier jumeau ; Apio est la forme féminine correspondante. La graphie Opiyo n’est pas attestée par la source lango consultée : nous ne la retenons pas.",
-        "claimStatus": "established",
-        "sourceRefs": ["agea-eton-lango-naming-2026"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -186,6 +181,27 @@
                 "source_kind": "academic",
                 "page": "p. 795",
                 "notes": "Londres, Hutchinson, 1902 ; numérisation d'Internet Archive. Page 795, section sur les Nilotiques de la région du lac Victoria, à propos des Ja-luo : « Men and women have the same names. But in many instances… “Opio” is a male name, and “Apio” is a female name. » Administrateur britannique, cité pour ce qu'il écrit. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Opio est documenté dans le système lango comme le nom masculin du premier jumeau ; Apio est la forme féminine correspondante. La graphie Opiyo n’est pas attestée par la source lango consultée : nous ne la retenons pas.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Naming as Cultural Epistemology: Knowledge, Belief, and Identity in Lango Personal Naming",
+                "author": "Jacob Godfrey Agea et Marus Eton",
+                "year": 2026,
+                "url": "https://doi.org/10.37284/eajtcr.9.1.5010",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 266",
+                "notes": "East African Journal of Traditions, Culture and Religion 9(1), 2026, p. 251-273. Tableau 8 : Opio/Apio, « The firstborn twin, holding special cultural significance… symbolic primacy within twinship traditions ». Étude de 131 noms recueillis auprès de 78 détenteurs de savoir langi. PDF de la revue lu en entier. Lu le 13 octobre 2026."
               }
             ]
           }

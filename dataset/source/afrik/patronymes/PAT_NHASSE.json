@@ -31,13 +31,8 @@
   "designatedSocialUnit": "lineage",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "La thèse linguistique d’Intumbo atteste la graphie Nhassé dans le nom de l’actrice Male Nhassé, explicitement présentée comme locutrice native balante ; elle ne propose toutefois aucune étymologie du patronyme.",
-        "claimStatus": "established",
-        "sourceRefs": ["intumbo-2007-guinean-creole-balanta"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -101,5 +96,40 @@
       "fieldPath": "homonyms",
       "reason": "Les graphies Nhassé et Nhasse ont été recherchées dans Intumbo et Biifa ; aucune origine homonyme distincte n’y est documentée."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Les sources réunies dans ce dossier racontent l’histoire du nom Nhassé.",
+    "originExplained": true,
+    "names": [
+      {
+        "nameText": "Nhassé",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La thèse linguistique d’Intumbo atteste la graphie Nhassé dans le nom de l’actrice Male Nhassé, explicitement présentée comme locutrice native balante ; elle ne propose toutefois aucune étymologie du patronyme.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Estudo comparativo da morfossintaxe do crioulo guineense, do balanta e do português",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.uc.pt/ciuc/creolistics/research/guine/intumbo_2007",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Incanha Intumbo, mémoire de master en linguistique descriptive, Université de Coimbra, 2007. À la p. 11, l’auteur cite l’actrice Male Nhassé comme exemple de locutrice native balante dans le film Mortu Nega."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

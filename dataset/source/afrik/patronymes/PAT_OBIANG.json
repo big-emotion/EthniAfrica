@@ -6,7 +6,7 @@
   },
   "id": "PAT_OBIANG",
   "nameMain": "Obiang",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Obiang",
@@ -18,11 +18,12 @@
       ]
     }
   ],
-  "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "transmissionMode": "patrilineal",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -55,12 +56,8 @@
   ],
   "gaps": [
     {
-      "fieldPath": "origin",
-      "reason": "la recherche web et bibliographique combinant « Obiang », « Fang », « Guinée équatoriale », « apellido », « onomástica », « etimología », « clan », « transmisión », « alianza », « casta », « homónimo » et « obituario », ainsi que la page Forebears dédiée ; l'article général fang déjà employé par une autre fiche n'a pas été reporté ici n'ont livré aucune tradition attribuée, chronique ou étude linguistique propre à ce nom qui en établirait l'origine ; les rapprochements fondés sur la seule ressemblance ou la seule géographie ont été écartés."
-    },
-    {
       "fieldPath": "nameSystem",
-      "reason": "la recherche web et bibliographique combinant « Obiang », « Fang », « Guinée équatoriale », « apellido », « onomástica », « etimología », « clan », « transmisión », « alianza », « casta », « homónimo » et « obituario », ainsi que la page Forebears dédiée ; l'article général fang déjà employé par une autre fiche n'a pas été reporté ici n'ont pas établi que la catégorie de système nominal portée par la fiche provisoire décrive ce nom lui-même ; elle reste une hypothèse de classement et n'est pas transformée en fait."
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom d'homme fang. Chez les Fang, le nom du père devient le second nom de tous ses enfants, comme dans Ntsama-Obiang. Le modèle a une case pour un nom de famille héréditaire, mais la fiche ne l'utilise pas : chaque enfant prend pour second nom le nom de son propre père, si bien que ce second nom change d'une génération à l'autre. Günter Tessmann en donne un exemple en 1913 : le fils de Boka-Essun s'appelle Ayong-Boka, et non Ayong-Essun. Il écrit aussi que les Fang n'ont pas de nom de famille au sens européen. La fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "alliances",
@@ -77,10 +74,98 @@
     {
       "fieldPath": "homonyms",
       "reason": "la recherche web et bibliographique combinant « Obiang », « Fang », « Guinée équatoriale », « apellido », « onomástica », « etimología », « clan », « transmisión », « alianza », « casta », « homónimo » et « obituario », ainsi que la page Forebears dédiée ; l'article général fang déjà employé par une autre fiche n'a pas été reporté ici n'ont pas établi de lignée homonyme d'origine distincte documentable ; une diffusion dans plusieurs pays ou une graphie voisine ne suffit pas à créer un homonyme."
-    },
-    {
-      "fieldPath": "transmissionMode",
-      "reason": "la recherche web et bibliographique combinant « Obiang », « Fang », « Guinée équatoriale », « apellido », « onomástica », « etimología », « clan », « transmisión », « alianza », « casta », « homónimo » et « obituario », ainsi que la page Forebears dédiée ; l'article général fang déjà employé par une autre fiche n'a pas été reporté ici n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Obiang est un nom d'homme fang, porté en Guinée équatoriale et au Gabon. Chez les Fang, le nom du père devient le second nom de ses enfants. Les sources lues ne disent pas ce que veut dire Obiang : on ne sait pas avec certitude d'où il vient. Sa plus ancienne trace connue du projet est un chant fang publié en 1913.",
+    "names": [
+      {
+        "nameText": "Obiang",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom d'homme fang, que le père transmet à ses enfants ; on ne sait pas ce qu'il veut dire.",
+        "periodLabel": "Écrit dès 1913 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "Décrit en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Obiang est un nom d'homme fang de Guinée équatoriale, selon Bonifacio Nguema Obiang-Mikue, qui le cite avec Nguema, Ndong ou Esono. Chez les Fang, écrit-il, le nom du père devient le nom commun de tous ses enfants.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La cultura para el reconocimiento de la identidad: caso de la cultura fang de Guinea Ecuatorial",
+                "author": "Bonifacio Nguema Obiang-Mikue",
+                "year": 2023,
+                "url": "https://doi.org/10.29166/catedra.v6i1.4282",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 178-179",
+                "notes": "Article de Revista Cátedra 6(1), 2023, pp. 171-186. Lu le 18 octobre 2026 dans le PDF en espagnol. Page 178 : l'auteur cite Rosendo Ela Nsue Mibui (2005, p. 92) : le nom du père « pasaba a ser el apellido común de todos sus hijos e hijas ». Page 179 : « existen nombres que son netamente utilizados para los hombres, tal es el caso de Nguema, Ndong, Nze, Ondo, Ngomo, Esono, Obiang, Tomo, Bituga »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Obiang figure aussi parmi les noms de personnes fang du Gabon que relève le chercheur Fabrice Agyune Ndone. Il ne dit pas ce que ce nom veut dire.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Anthroponymie comparée makina, fang et saké : quelques spécificités sur les noms de personnes chez les Makina du Gabon",
+                "author": "Fabrice Agyune Ndone",
+                "year": 2006,
+                "url": "http://www.ddl.cnrs.fr/fulltext/fflac/Agyune%20Ndone_2006.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5 (tableau n° 1)",
+                "notes": "Article d'un doctorant en anthropologie (université Omar Bongo et université Lumière Lyon 2), non daté, mis en ligne par le laboratoire Dynamique du langage ; il cite des travaux de 2005 et 2006. Lu le 18 octobre 2026 ; les pages sont celles du PDF. Page 5, tableau n° 1 : Obiang figure dans la colonne des noms fang. L'article ne donne pas le sens de Obiang."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1913,
+              "label": "Recherches de 1904-1909, ouvrage publié en 1913"
+            },
+            "statement": "Le nom Obiang apparaît par écrit dans un chant moqueur des Ntum, un groupe fang, que publie Günter Tessmann : une femme y parle des anneaux de laiton de « la belle Ntsama-Obiang ». D'après la règle que décrit Tessmann, Obiang est ici le nom du père de Ntsama. C'est la plus ancienne trace de ce nom que le projet connaît ; le nom est plus ancien qu'elle.",
+            "formAsWritten": "Ntsama-Obiang",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 2",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku02tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 314",
+                "notes": "Berlin, Ernst Wasmuth, 1913 ; exemplaire numérisé d'Internet Archive, page lue sur l'image le 18 octobre 2026. Page 314, « Spottlied der Ntum » (chant moqueur des Ntum) : texte fang « ntsáma-obiañ », traduit « Ntsama-Obiang », puis « gerade wie bei der schönen Ntsama-Obiang » (tout comme chez la belle Ntsama-Obiang). L'auteur ne dit pas où il a noté ce chant ; la page de titre donne ses recherches de 1904 à 1909."
+              },
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 2",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku02tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 285",
+                "notes": "Berlin, Ernst Wasmuth, 1913 ; exemplaire numérisé d'Internet Archive, lu le 18 octobre 2026. Page 285 : « Dem eigenen, vom Vater gegebenen Namen wird der des Vaters selbst angefügt » (au nom propre donné par le père s'ajoute celui du père lui-même) ; l'exemple de l'auteur est Boka-Essun, Boka fils d'Essun, dont le fils Ayong s'appelle Ayong-Boka. Même page : « Familiennamen in unserem Sinne kennen die Pangwe nicht » (les Pangwe ne connaissent pas de noms de famille au sens où nous l'entendons)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

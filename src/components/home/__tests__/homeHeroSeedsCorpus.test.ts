@@ -45,9 +45,12 @@ function corpusNames(): Set<string> {
     add(fiche.content?.appellations?.selfAppellation);
     // Fulbe is the explicitly attested plural form, curated in the fallback;
     // production never derives short names by stripping parenthetical prose.
+    // PPL_FULA writes it with its ɓ (2026-10-18); the chip keeps the form a
+    // reader types, which the search folds onto Fulɓe.
     if (
-      fiche.content?.appellations?.selfAppellation ===
-      "Fulbe (pluriel), Pullo (singulier)"
+      /^Ful[bɓ]e \(pluriel\), Pullo \(singulier\)$/.test(
+        fiche.content?.appellations?.selfAppellation ?? ""
+      )
     )
       add("Fulbe");
   }

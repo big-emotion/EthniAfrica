@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -63,10 +64,6 @@
   ],
   "gaps": [
     {
-      "fieldPath": "origin",
-      "reason": "Les recherches « Mehari anthroponymie », « Mehari onomastique », « Mehari etymology » et les résultats des catalogues Persée, OpenEdition, Oxford Academic et des dépôts universitaires éthiopiens n'ont livré aucun travail savant consacré à cette fiche. Les pages exactes consultées n'apportent qu'une attestation de forme ou de répartition ; aucune étymologie n'est donc ajoutée."
-    },
-    {
       "fieldPath": "peoples",
       "reason": "Les recherches « Mehari anthroponymie », « Mehari onomastique », « Mehari etymology » et les résultats des catalogues Persée, OpenEdition, Oxford Academic et des dépôts universitaires éthiopiens n'ont livré aucun travail savant consacré à cette fiche. La source propre au nom ne démontre pas une association exclusive avec le peuple indiqué ; ce rattachement reste au niveau non vérifié."
     },
@@ -86,5 +83,125 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches exactes « Mehari homonym surname », « Mehari homonyme patronyme » et les variantes graphiques de la fiche n'ont pas établi deux origines distinctes et documentées pour la même forme."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mehari est un nom personnel d'Érythrée et d'Éthiopie, qui voudrait dire « miséricordieux ». Ces pays n'ont pas de nom de famille héréditaire : Mehari est devenu un nom de famille surtout chez ceux qui sont partis vivre ailleurs. Nous présentons plus bas ce que les sources disent de son sens.",
+    "names": [
+      {
+        "nameText": "Mehari",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel d'Érythrée et d'Éthiopie, « miséricordieux », devenu nom de famille à l'étranger.",
+        "periodLabel": "Écrit dès 1912, sous une forme proche ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Aujourd'hui"
+            },
+            "statement": "Le nom Mehari est un nom personnel, non un nom de famille : les Érythréens et les Éthiopiens n'ont pas de nom de famille héréditaire. Aux États-Unis, Mehari n'a été enregistré comme nom de famille qu'après l'arrivée de ceux qui le portent, selon le dictionnaire de Patrick Hanks.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Mehari Name Meaning and Mehari Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=mehari",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée Mehari du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch : « Ethiopian and Eritrean: from the personal name Mehari, meaning e.g. 'merciful' in the Ge'ez, Amharic or related languages » ; « Since Ethiopians and Eritreans do not have hereditary surnames, this name was registered as such only after immigration of its bearers to the US ». Lu le 18 octobre 2026."
+              },
+              {
+                "title": "The Self-Colonizing Mission: Names and Naming in Eritrea — Asmarino Independent Media",
+                "author": "Yosief Ghebrehiwet",
+                "year": 2013,
+                "url": "https://www.asmarino.com/articles/1826-i-the-self-colonizing-mission-names-and-naming-in-eritrea",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Essai publié le 25 juillet 2013 sur le site érythréen Asmarino : « If it was a difficult birth, the child would be named either after the patron saint of the day or another secular name that reflected that event, such as Mehari or Mihret » ; et : « there are no last names in the habesha culture ». Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Proposée en 2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Mehari voudrait dire « miséricordieux » en guèze, en amharique ou dans des langues voisines, selon le dictionnaire de Patrick Hanks. Le mot guèze maḥāri, « miséricordieux, compatissant », figure dans le dictionnaire de Wolf Leslau.",
+            "hypothesisGroup": "sens du nom Mehari",
+            "sources": [
+              {
+                "title": "Mehari Name Meaning and Mehari Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=mehari",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée Mehari du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch : « Ethiopian and Eritrean: from the personal name Mehari, meaning e.g. 'merciful' in the Ge'ez, Amharic or related languages » ; « Since Ethiopians and Eritreans do not have hereditary surnames, this name was registered as such only after immigration of its bearers to the US ». Lu le 18 octobre 2026."
+              },
+              {
+                "title": "Comparative Dictionary of Geʿez (Classical Ethiopic)",
+                "author": "Wolf Leslau",
+                "year": 1987,
+                "url": "https://archive.org/details/leslau-comparative-dictionary-of-geez-1987",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 336",
+                "notes": "Wiesbaden, Otto Harrassowitz, 1987. Lu dans une copie non officielle déposée sur Internet Archive par un particulier, page vérifiée sur l'image. Page 336, entrée maḥara, « have compassion, show mercy » : « maḥāri 'merciful, compassionate, gracious, one who has pity' » ; en tigrigna, mäḥarä veut dire « pardonner ». Le dictionnaire donne le mot, pas le nom de personne. Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "Rapporté en 2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Mehari se donnerait après une naissance difficile, comme Mihret, pour en garder le souvenir, selon Yosief Ghebrehiwet, qui écrit sur les noms érythréens.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Self-Colonizing Mission: Names and Naming in Eritrea — Asmarino Independent Media",
+                "author": "Yosief Ghebrehiwet",
+                "year": 2013,
+                "url": "https://www.asmarino.com/articles/1826-i-the-self-colonizing-mission-names-and-naming-in-eritrea",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Essai publié le 25 juillet 2013 sur le site érythréen Asmarino : « If it was a difficult birth, the child would be named either after the patron saint of the day or another secular name that reflected that event, such as Mehari or Mihret » ; et : « there are no last names in the habesha culture ». Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mehari apparaît sous une forme proche, Mahari, dans le bulletin officiel de l'armée italienne de 1912 : un ascari d'Anghela, dans l'Akele Guzay, en Érythrée, y est inscrit sous le nom de « Garenchiel Mahari », parmi des soldats tombés à Sidi Saïd, en Libye, en juin 1912. C'est la plus ancienne trace de ce nom que le projet connaît, sous une forme proche ; le nom est plus ancien qu'elle.",
+            "formAsWritten": "Mahari",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Bollettino ufficiale delle nomine, promozioni e destinazioni negli ufficiali del R. Esercito italiano, 1912",
+                "author": "Ministero della Guerra",
+                "year": 1912,
+                "url": "https://archive.org/details/bollettino_ufficiale_RE-1901-20",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1051",
+                "notes": "Bulletin officiel de l'armée italienne, volume de 1912 de la collection 1901-1920 numérisée sur archive.org ; page 1051 vérifiée sur l'image. Liste d'ascari, soldats érythréens de l'armée coloniale, cités pour leur conduite au combat de Sidi Saïd, en Libye, les 27 et 28 juin 1912, où ils sont morts : « GARENCHIEL Mahari, da Anghela (Acchelè Guzai), id., n. 11999 id. ». La liste écrit en capitales un nom que l'armée tient pour nom de famille. Lu le 18 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

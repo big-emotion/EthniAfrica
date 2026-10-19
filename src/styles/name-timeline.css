@@ -58,10 +58,28 @@
   white-space: nowrap;
 }
 
+/* Brief 11 §1a: the self-name's question under the sentence, in the same
+   button, so one tap still opens the self-name. */
+.afh-name-timeline-lead-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--afh-space-xs);
+  min-width: 0;
+}
+
+.afh-name-timeline-lead-line {
+  font-size: var(--afh-text-small);
+  line-height: 1.5;
+  color: var(--afh-text-soft);
+}
+
+/* The lead and the hand-off scroll the chips to the top of the screen; the
+   margin keeps them clear of the site header. */
 .afh-name-timeline-names {
   display: flex;
   flex-wrap: wrap;
   gap: var(--afh-space-sm);
+  scroll-margin-top: calc(var(--afh-header-height) + var(--afh-space-lg));
 }
 
 .afh-name-timeline-name {
@@ -109,6 +127,53 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--afh-space-md);
+}
+
+.ea-tl-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--afh-space-md);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.ea-tl-controls::-webkit-scrollbar {
+  display: none;
+}
+
+.ea-tl-controls > * {
+  flex: none;
+}
+
+.ea-tl-controls .afh-name-timeline-hint,
+.ea-tl-controls .afh-chronology-legend > li {
+  white-space: nowrap;
+}
+
+.ea-tl-controls .afh-chronology-legend {
+  flex-wrap: nowrap;
+  margin: 0;
+}
+
+.ea-tl-fold::after {
+  display: none;
+}
+
+.ea-tl-fold > .ea-fold {
+  margin-top: 0;
+}
+
+.ea-tl-folded {
+  margin-top: var(--afh-space-md);
+  padding: 0;
+}
+
+.ea-tl-folded > .afh-chronology-station:first-child::before {
+  top: -8px;
+}
+
+.ea-tl-folded > .afh-chronology-station:last-child::before {
+  bottom: -8px;
 }
 
 .afh-name-timeline-hint {
@@ -253,7 +318,7 @@
   color: var(--afh-text-soft);
 }
 
-/* ── Pendant ce temps, ailleurs ─────────────────────────────────────────── */
+/* ── Ailleurs à la même époque ─────────────────────────────────────────── */
 .afh-name-timeline-elsewhere {
   display: flex;
   flex-direction: column;
@@ -267,5 +332,134 @@
 .afh-name-timeline-end {
   margin: 0;
   font-size: var(--afh-text-small);
+  color: var(--afh-text-soft);
+}
+
+/* ── Brief 11 (2026-10-17) ──────────────────────────────────────────────── */
+
+/* Consecutive tiles of one period: the period once, each statement kept,
+   parted by a hairline (§4). */
+.afh-name-timeline-join {
+  display: flex;
+  flex-direction: column;
+  gap: var(--afh-space-sm);
+  padding-top: var(--afh-space-md);
+  border-top: 1px solid var(--afh-border);
+}
+
+/* The hand-off after the end line: off the thread, no dot, no date (§1b). */
+.afh-name-timeline-handoff {
+  display: flex;
+  flex-direction: column;
+  gap: var(--afh-space-md);
+}
+
+.afh-name-timeline-handoff-name {
+  font-family: var(--afh-font-display);
+  font-weight: 900;
+  font-size: var(--afh-text-h2);
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+
+.afh-name-timeline-handoff-text {
+  font-size: var(--afh-text-small);
+  line-height: 1.6;
+}
+
+/* Outlined: the page keeps its one solid action. */
+.afh-name-timeline-handoff-action {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: var(--afh-space-xs);
+  padding: var(--afh-space-md) var(--afh-space-2xl);
+  border: 1px solid var(--accent);
+  border-radius: var(--afh-radius-lg);
+  background: var(--afh-surface);
+  color: var(--afh-text);
+  font-size: var(--afh-text-small);
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: start;
+}
+
+/* The one video made on the subject (§2): the whole row is the link, the
+   poster on the left at every width. */
+.afh-name-timeline-video {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr);
+  align-items: center;
+  gap: var(--afh-space-lg);
+  min-height: 44px;
+  padding: var(--afh-space-lg);
+  border: 1px solid var(--afh-border);
+  border-radius: var(--afh-radius-lg);
+  background: var(--afh-surface);
+  color: var(--afh-text);
+}
+
+.afh-name-timeline-video-poster {
+  position: relative;
+  display: block;
+  width: 64px;
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+  border-radius: var(--afh-radius-lg);
+  background: var(--afh-bg-warm);
+}
+
+.afh-name-timeline-video-poster img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.afh-name-timeline-video-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  transform: translate(-50%, -50%);
+}
+
+.afh-name-timeline-video-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--afh-space-xs);
+  min-width: 0;
+}
+
+.afh-name-timeline-video-eyebrow {
+  font-family: var(--afh-font-mono);
+  font-size: var(--afh-text-caption);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-ink);
+}
+
+.afh-name-timeline-video-title {
+  font-size: var(--afh-text-small);
+  font-weight: 700;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.afh-name-timeline-video-title svg {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-left: var(--afh-space-sm);
+  vertical-align: -3px;
+  color: var(--accent-ink);
+}
+
+.afh-name-timeline-video-meta {
+  font-size: var(--afh-text-caption);
+  line-height: 1.5;
   color: var(--afh-text-soft);
 }

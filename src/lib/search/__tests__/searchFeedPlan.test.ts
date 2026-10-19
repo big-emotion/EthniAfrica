@@ -23,6 +23,15 @@ describe("search-feed plan", () => {
     expect(plan.closing).toEqual(["owed"]);
   });
 
+  // @req REQ-125
+  it("opens a recorded-term page on its verdict and equal fiche shelf", () => {
+    expect(buildSearchFeedPlan("recorded", { fiches: true })).toEqual({
+      first: ["verdict"],
+      primary: ["fiches"],
+      closing: [],
+    });
+  });
+
   // A search that only widened still answers the name it found: the answer
   // does not change because the companions around it are related, not exact.
   // @req REQ-178
@@ -42,35 +51,84 @@ describe("search-feed plan", () => {
     expect(plan.closing).toEqual(["owed"]);
   });
 
+  // The page asks which name the reader meant, so it draws no shelf: the
+  // pieces it holds are about a nearest name, which the Shorts filter keeps,
+  // and an empty one would only say it is empty. The filters stay where every
+  // approved board draws them, first in the column, so the choices are not
+  // read as one more filter (brief 16, proposed: Main's « konana » frame).
   // @req REQ-178
-  it("opens with the verdict and the choices when no answer can be given", () => {
+  it("opens on the filters, then the verdict and the choices, when no answer can be given, and draws no shelf", () => {
     const plan = buildSearchFeedPlan("typo", {
       appellations: true,
       fiches: true,
     });
 
-    expect(plan.first).toEqual(["verdict", "appellations", "lenses", "shorts"]);
+    expect(plan.first).toEqual(["lenses", "verdict", "appellations"]);
     expect(plan.primary).toEqual(["fiches"]);
     expect(plan.closing).toEqual(["further"]);
   });
 
+  // A page that admits it does not know the name draws no empty shelf under
+  // its confession (brief 12, part A, approved 2026-10-17); its closing keeps
+  // what is owed, then a way out.
   // @req REQ-178
-  it("keeps the unknown-name closing: what is owed, then a way out", () => {
-    expect(buildSearchFeedPlan("unknown", {}).closing).toEqual([
-      "owed",
-      "further",
+  it("opens an unknown name on the verdict with no shelf, and keeps its closing", () => {
+    const plan = buildSearchFeedPlan("unknown", {});
+
+    expect(plan.first).toEqual(["verdict", "lenses"]);
+    expect(plan.closing).toEqual(["owed", "further"]);
+  });
+
+  // The shelf comes back only for a piece found by the reader's own word,
+  // never for the recent shorts the companions carry around any query.
+  // @req REQ-178
+  it("keeps the shelf of an unknown name when a piece matches the reader's word", () => {
+    expect(buildSearchFeedPlan("unknown", { shorts: true }).first).toEqual([
+      "verdict",
+      "lenses",
+      "shorts",
     ]);
   });
 
-  // @req REQ-178
+  // @req REQ-180
   it("does not add an owed closing for related-only results", () => {
     expect(
       buildSearchFeedPlan("widened", { fiches: true }, { relatedOnly: true })
     ).toEqual({
-      first: ["verdict", "lenses", "shorts"],
+      first: ["lenses", "verdict"],
       primary: ["fiches"],
       closing: [],
     });
+  });
+
+  // Related-only results open with the filters, then the verdict; this data
+  // has no appellations to list. The fiches stay in the main block, with no
+  // owed closing because none answers the searched name.
+  // @req REQ-180
+  it("opens a related-only result on filters before the verdict and keeps its fiches in the primary block", () => {
+    const plan = buildSearchFeedPlan(
+      "widened",
+      { fiches: true },
+      { relatedOnly: true }
+    );
+
+    expect(plan.first.slice(0, 2)).toEqual(["lenses", "verdict"]);
+    expect(plan.first).not.toContain("appellations");
+    expect(plan.primary).toEqual(["fiches"]);
+    expect(plan.closing).not.toContain("owed");
+  });
+
+  // @req REQ-180
+  it("places available appellations after the verdict in related-only results", () => {
+    const plan = buildSearchFeedPlan(
+      "widened",
+      { appellations: true, fiches: true },
+      { relatedOnly: true }
+    );
+
+    expect(plan.first).toEqual(["lenses", "verdict", "appellations"]);
+    expect(plan.primary).toEqual(["fiches"]);
+    expect(plan.closing).toEqual([]);
   });
 
   // @req REQ-180
@@ -84,6 +142,32 @@ describe("search-feed plan", () => {
     expect(classifySearchFeed(widened.production)).toBe("widened");
     expect(classifySearchFeed(typo.production)).toBe("typo");
     expect(classifySearchFeed(unknown.production)).toBe("unknown");
+  });
+
+  // @req REQ-125
+  it("classifies counted fiche text as a recorded-term answer", () => {
+    const exact = FEED_CASES.find(({ id }) => id === "mande")!;
+    const [result] = exact.production.search.results;
+
+    expect(
+      classifySearchFeed({
+        ...exact.production,
+        search: {
+          ...exact.production.search,
+          results: [
+            {
+              ...result,
+              recordedIn: [
+                {
+                  fieldPath: "content.organization.clanOrganization",
+                  text: "Les clans Kagbo, Sanoh, Kaloko et Koroma jouent également des rôles importants.",
+                },
+              ],
+            },
+          ],
+        },
+      })
+    ).toBe("recorded");
   });
 
   // A reviewed term a near spelling may have meant is as good a suggestion as a
@@ -130,6 +214,101 @@ describe("search-feed plan", () => {
     expect(
       classifySearchFeed({
         ...exact.production,
+        subjects: [],
+      })
+    ).toBe("widened");
+  });
+
+  // DEC-075: « tchikaya » finds Chukwu and Tchicaya, neither answering it,
+  // and the API offers Tchicaya as the spelling the reader probably meant.
+  // @req REQ-125
+  it("asks « Cherchiez-vous… ? » when related fiches come with a lead", () => {
+    const widened = FEED_CASES.find(({ id }) => id === "mande")!;
+    const tchicaya = {
+      type: "patronyme" as const,
+      id: "PAT_TCHICAYA",
+      name: "Tchicaya",
+      similarity: 0.5,
+    };
+
+    expect(
+      classifySearchFeed({
+        ...widened.production,
+        search: {
+          results: widened.production.search.results,
+          leads: [tchicaya],
+        },
+        subjects: [],
+      })
+    ).toBe("typo");
+  });
+
+  // @req REQ-125
+  it("keeps related fiches with no lead as a widened page", () => {
+    const widened = FEED_CASES.find(({ id }) => id === "mande")!;
+
+    expect(
+      classifySearchFeed({
+        ...widened.production,
+        search: { results: widened.production.search.results, leads: [] },
+        subjects: [],
+      })
+    ).toBe("widened");
+  });
+
+  // A scoped search is titled with its filter: a misspelling verdict there
+  // would say no name matches « Congo-Brazzaville », whatever the API sends.
+  // @req REQ-125
+  it("keeps related fiches with a lead as a widened page when the search is scoped", () => {
+    const widened = FEED_CASES.find(({ id }) => id === "mande")!;
+
+    expect(
+      classifySearchFeed({
+        ...widened.production,
+        search: {
+          results: widened.production.search.results,
+          leads: [
+            {
+              type: "patronyme",
+              id: "PAT_TCHICAYA",
+              name: "Tchicaya",
+              similarity: 0.5,
+            },
+          ],
+        },
+        subjects: [],
+        relation: { kind: "country", id: "COG" },
+      })
+    ).toBe("widened");
+  });
+
+  // A piece found by the reader's own word answers it: no spelling is asked.
+  // @req REQ-125
+  it("does not ask for a spelling when a piece answers the reader's word", () => {
+    const widened = FEED_CASES.find(({ id }) => id === "mande")!;
+    const [short] = FEED_CASES.find(({ id }) => id === "inconnu")!.production
+      .companions.shorts.items;
+
+    expect(
+      classifySearchFeed({
+        search: {
+          results: widened.production.search.results,
+          leads: [
+            {
+              type: "patronyme",
+              id: "PAT_TCHICAYA",
+              name: "Tchicaya",
+              similarity: 0.5,
+            },
+          ],
+        },
+        companions: {
+          ...widened.production.companions,
+          shorts: {
+            count: 1,
+            items: [{ ...short, match: { relation: "word", word: "zombie" } }],
+          },
+        },
         subjects: [],
       })
     ).toBe("widened");

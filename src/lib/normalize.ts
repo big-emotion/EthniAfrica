@@ -1,14 +1,48 @@
 /**
- * Normalise une chaîne de caractères en enlevant les accents
- * pour permettre les comparaisons insensibles aux accents
+ * Letters Unicode decomposition does not split, folded to the Latin letter a
+ * reader types in their place (REQ-135). Lower case only: the fold lowers
+ * first, and every capital of these letters lowers to its small letter.
+ *
+ * It is the table `afrik_name_key` applies in the database (migration 109):
+ * `extensions.unaccent` folds ɓ ɗ ɛ ŋ ʋ ƴ ɖ ɨ, and the key adds ɔ and drops
+ * ʿ ʾ. A letter the database folds and this table does not would let « Fulbe »
+ * answer in one layer and not in the other. ɣ, the click letters and ː stay as
+ * they are in both: they name a sound no Latin letter stands for.
+ */
+const UNSPLIT_LETTERS: Readonly<Record<string, string>> = {
+  ɓ: "b",
+  ɗ: "d",
+  ɛ: "e",
+  ɔ: "o",
+  ŋ: "n",
+  ʋ: "v",
+  ƴ: "y",
+  ɖ: "d",
+  ɨ: "i",
+  ʿ: "",
+  ʾ: "",
+};
+
+const UNSPLIT_LETTER = new RegExp(
+  `[${Object.keys(UNSPLIT_LETTERS).join("")}]`,
+  "gu"
+);
+
+/**
+ * The comparison fold: what the reader typed and every stored form are
+ * compared under it, never shown in it. It drops case, every combining mark
+ * (Latin accents, and the Arabic vowel signs some forms carry) and folds the
+ * letters above. Apostrophes are kept, unlike `afrik_unaccent`.
  */
 // @req REQ-002
+// @req REQ-135
 export const normalizeString = (str: string | undefined | null): string => {
   if (!str) return "";
   return str
     .toLowerCase()
     .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "");
+    .replace(/\p{M}/gu, "")
+    .replace(UNSPLIT_LETTER, (letter) => UNSPLIT_LETTERS[letter]);
 };
 
 /**

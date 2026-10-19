@@ -11,8 +11,14 @@
     {
       "spelling": "Dlamini",
       "attestations": [
-        { "countryId": "SWZ", "sourceRefs": ["corpus-ppl-swazi-organisation"] },
-        { "countryId": "ZAF", "sourceRefs": ["corpus-ppl-swazi-organisation"] }
+        {
+          "countryId": "SWZ",
+          "sourceRefs": ["corpus-ppl-swazi-organisation"]
+        },
+        {
+          "countryId": "ZAF",
+          "sourceRefs": ["corpus-ppl-swazi-organisation"]
+        }
       ]
     }
   ],
@@ -20,25 +26,9 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Les Nkosi Dlamini se sont détachés du courant migratoire nguni conduit par le chef Ngwane et se sont installés dans la région de la Pongolo, absorbant les clans nguni et sotho présents.",
-        "claimStatus": "established",
-        "sourceRefs": ["un-eswatini-country-facts"]
-      }
-    ],
-    "linguisticReconstructions": [
-      {
-        "claim": "Chez les Nguni, l'isibongo (patronyme) et les izithakazelo (louanges de clan) sont deux objets distincts : le second dit l'ascendance et gouverne l'exogamie, le premier sert d'identifiant d'état civil.",
-        "claimStatus": "established",
-        "sourceRefs": ["nomina-africana-nguni-naming"]
-      },
-      {
-        "claim": "Analysé morphémiquement, Dlamini se décompose en un verbe et un adjectif : dla, « manger », et emini, « à midi », soudés par élision de la voyelle initiale, d'où la lecture « manger à midi ». Le nom de clan est ici formé sur une pratique observée, comme nombre d'isibongo zoulou construits sur verbe et adjectif.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["zwane-2020-zulu-clan-names"]
-      }
-    ]
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -291,6 +281,67 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 89",
                 "notes": "Pinetown (Natal), Mariannhill Mission Press, 1905. Le dictionnaire s'ouvre sur une courte histoire du peuple zoulou, paginée à part avec un astérisque. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 89, à l'article Dabuka : « abakwa'Dhlamini badabuka eSwazini, those of the Dhlamini stock had their origin in Swaziland »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Les Nkosi Dlamini se sont détachés du courant migratoire nguni conduit par le chef Ngwane et se sont installés dans la région de la Pongolo, absorbant les clans nguni et sotho présents.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "ESwatini — Country Facts",
+                "author": "Mission permanente du Royaume d'Eswatini auprès des Nations unies",
+                "year": null,
+                "url": "https://www.un.int/eswatini/swaziland/country-facts",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Page de la mission permanente de l'Eswatini auprès des Nations unies, lue le 11 octobre 2026, rubrique « History of the Kingdom of Eswatini ». Elle dit que les ancêtres des Swazi, les Nkosi Dlamini, se sont séparés du courant migratoire nguni conduit par Ngwane, et que Dlamini reste le nom de famille de la famille royale."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Chez les Nguni, l'isibongo (patronyme) et les izithakazelo (louanges de clan) sont deux objets distincts : le second dit l'ascendance et gouverne l'exogamie, le premier sert d'identifiant d'état civil.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Derivation of given names from ethnonyms, surnames and clan praises: unveiling gendered naming trends in Nguni",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://journals.co.za/doi/10.10520/ejc-nomina_v39_n1_a3",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Nomina Africana: Journal of African Onomastics, vol. 39 n° 1. Établit l'articulation entre patronyme (isibongo) et louanges de clan (izithakazelo) chez les Nguni."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Analysé morphémiquement, Dlamini se décompose en un verbe et un adjectif : dla, « manger », et emini, « à midi », soudés par élision de la voyelle initiale, d'où la lecture « manger à midi ». Le nom de clan est ici formé sur une pratique observée, comme nombre d'isibongo zoulou construits sur verbe et adjectif.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "The Morphological Analysis of Zulu Clan Names",
+                "author": "Celani Lucky Zwane",
+                "year": 2020,
+                "url": "https://doi.org/10.5430/elr.v9n3p36",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 43",
+                "notes": "English Linguistics Research, vol. 9, n° 3, Sciedu Press, 2020, p. 36-49. Analyse des noms de clan zoulous à partir de cinquante entretiens menés près de Ladysmith, au KwaZulu-Natal. Lu dans le PDF de l'éditeur le 11 octobre 2026. Paragraphe 6.4.1, Dlamini."
               }
             ]
           }

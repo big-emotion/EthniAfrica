@@ -1,10 +1,13 @@
 import type { ReactNode } from "react";
 
+import { FicheFold } from "@/components/fiche/FicheFold";
+import { foldAfterFirst } from "@/lib/fiche/fold";
 import {
   parseFicheProse,
   type ProseBlock,
   type ProseInline,
 } from "@/lib/prose/ficheProse";
+import { normalizeFrenchSpacing } from "@/lib/prose/frenchSpacing";
 import { ficheCopy } from "@/lib/i18n/copy/fiche";
 import { FALLBACK_LOCALE } from "@/lib/locale";
 import type { Language } from "@/types/shared";
@@ -25,9 +28,10 @@ import type { Language } from "@/types/shared";
 function renderInline(inline: ProseInline[]): ReactNode[] {
   return inline.map((run, index) => {
     const key = `${run.kind}-${index}`;
-    if (run.kind === "strong") return <strong key={key}>{run.value}</strong>;
-    if (run.kind === "em") return <em key={key}>{run.value}</em>;
-    return <span key={key}>{run.value}</span>;
+    const value = normalizeFrenchSpacing(run.value);
+    if (run.kind === "strong") return <strong key={key}>{value}</strong>;
+    if (run.kind === "em") return <em key={key}>{value}</em>;
+    return <span key={key}>{value}</span>;
   });
 }
 
@@ -37,7 +41,9 @@ function renderInline(inline: ProseInline[]): ReactNode[] {
  * assertion that matches a field by its exact text depends on that.
  */
 function renderChildren(inline: ProseInline[]): ReactNode {
-  if (inline.length === 1 && inline[0].kind === "text") return inline[0].value;
+  if (inline.length === 1 && inline[0].kind === "text") {
+    return normalizeFrenchSpacing(inline[0].value);
+  }
   return renderInline(inline);
 }
 
@@ -130,6 +136,12 @@ export interface FicheFieldListProps {
   className?: string;
   /** Carried by the paragraphs inside each definition. */
   paragraphClassName?: string;
+  /**
+   * A long reference chapter keeps its first field and folds the rest behind
+   * one control that names them (brief 10 §2). Opt-in: the chapters about a
+   * fiche's own names never fold, and they read through this list too.
+   */
+  fold?: boolean;
   language?: Language;
 }
 
@@ -148,6 +160,7 @@ export function FicheFieldList({
   fields,
   className,
   paragraphClassName,
+  fold = false,
   language = FALLBACK_LOCALE,
 }: FicheFieldListProps) {
   const filled = fields.filter(
@@ -155,13 +168,55 @@ export function FicheFieldList({
   );
   if (filled.length === 0) return null;
 
+  const { shown, folded } = fold
+    ? foldAfterFirst(filled)
+    : { shown: filled, folded: [] };
+
+  return (
+    <>
+      <FieldDefinitions
+        fields={shown}
+        className={className}
+        paragraphClassName={paragraphClassName}
+        language={language}
+      />
+      {folded.length > 0 ? (
+        <FicheFold
+          label={ficheCopy[language].fold.seeAlso(
+            folded.map((field) => field.label)
+          )}
+          language={language}
+        >
+          <FieldDefinitions
+            fields={folded}
+            className={className}
+            paragraphClassName={paragraphClassName}
+            language={language}
+          />
+        </FicheFold>
+      ) : null}
+    </>
+  );
+}
+
+function FieldDefinitions({
+  fields,
+  className,
+  paragraphClassName,
+  language,
+}: {
+  fields: readonly FicheField[];
+  className?: string;
+  paragraphClassName?: string;
+  language: Language;
+}) {
   return (
     <dl
       className={
         className ? `afh-prose-fields ${className}` : "afh-prose-fields"
       }
     >
-      {filled.map((field) => (
+      {fields.map((field) => (
         <div key={field.label}>
           <dt className="afh-prose-term">{field.label}</dt>
           <dd className="afh-prose-def" lang={field.lang}>

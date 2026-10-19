@@ -17,6 +17,7 @@
 
 import { createServerClient } from "@/lib/supabase/server";
 import { logger } from "@/lib/api/logger";
+import { normalizeString } from "@/lib/normalize";
 import { getConfidenceMap } from "@/lib/supabase/queries/afrik/module-zero-batch";
 import { parseNameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
 import { nameRecordsFromHistory } from "@/lib/afrik/nameHistoryRecords";
@@ -403,17 +404,18 @@ export async function listNames(
 /**
  * Folds a reader's query the same way `afrik_name_forms.form_key` is folded.
  *
- * The view groups on `lower(afrik_unaccent(name_text))`, so a query that is
- * not folded identically can only match by luck — "Traoré" would miss the
- * corpus's own "Traore". `%` and `_` are escaped because they are `ILIKE`
- * wildcards, and a reader typing one means the character, not the operator.
+ * The view groups on `afrik_name_key(name_text)` (migration 109), the key
+ * `normalizeString` gives in the application, so a query that is not folded
+ * identically can only match by luck — "Traoré" would miss the corpus's own
+ * "Traore", and "Fulbe" its "Fulɓe". `%` and `_` are escaped because they are
+ * `ILIKE` wildcards, and a reader typing one means the character, not the
+ * operator.
  */
 function foldNameQuery(value: string): string {
-  return value
-    .normalize("NFD")
-    .replace(/\p{Diacritic}/gu, "")
-    .toLowerCase()
-    .replace(/[\\%_]/g, (character) => `\\${character}`);
+  return normalizeString(value).replace(
+    /[\\%_]/g,
+    (character) => `\\${character}`
+  );
 }
 
 export interface ListNameFormsResult {

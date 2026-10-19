@@ -3,6 +3,7 @@ import type {
   SearchCompanionsData,
 } from "@/api/v2/schemas/searchCompanions";
 import type { SearchWithLeads } from "@/lib/afrikLoader";
+import type { SearchRelation } from "@/lib/search/relationSearch";
 import {
   ANSWER_BLOCKS,
   type FeedBlockId,
@@ -12,7 +13,7 @@ import type { SearchLead, SearchResult } from "@/types/afrik-frontend";
 
 export type SearchFeedAnswerState = Extract<
   SearchResultState,
-  "exact" | "widened" | "typo" | "unknown"
+  "exact" | "widened" | "typo" | "unknown" | "recorded"
 >;
 
 export interface SearchFeedAvailability {
@@ -21,6 +22,11 @@ export interface SearchFeedAvailability {
   /** The misspelling choices, or the forms of a related-only page. */
   appellations?: boolean;
   fiches?: boolean;
+  /**
+   * A piece found by the reader's own word. Not the companions' shorts: they
+   * carry recent pieces around any query, which say nothing about the name.
+   */
+  shorts?: boolean;
 }
 
 /** The blocks « Tout » draws, by the zone of the page they belong to. */
@@ -50,6 +56,13 @@ export function buildSearchFeedPlan(
   availability: SearchFeedAvailability,
   options: SearchFeedPlanOptions = {}
 ): SearchFeedPlan {
+  if (state === "recorded") {
+    return {
+      first: ["verdict"],
+      primary: availability.fiches ? ["fiches"] : [],
+      closing: [],
+    };
+  }
   if (options.wordPage) {
     return {
       first: ["lenses"],
@@ -65,9 +78,33 @@ export function buildSearchFeedPlan(
     };
   }
 
-  const first: FeedBlockId[] = ["verdict"];
+  if (options.relatedOnly) {
+    const first: FeedBlockId[] = ["lenses", "verdict"];
+    if (availability.appellations) first.push("appellations");
+    if (availability.shorts) first.push("shorts");
+
+    return {
+      first,
+      primary: availability.fiches ? ["fiches"] : [],
+      closing: [],
+    };
+  }
+
+  // A misspelling opens on the filters, where every approved board draws
+  // them: set after the choices, the pressed « Tout » read as the selected
+  // option of a set holding the name (Main, brief 16, proposed: the filters
+  // show once a misspelling finds a fiche other than its choices).
+  const first: FeedBlockId[] = state === "typo" ? ["lenses"] : [];
+  first.push("verdict");
   if (availability.appellations) first.push("appellations");
-  first.push("lenses", "shorts");
+  if (state !== "typo") first.push("lenses");
+  // A page that admits it does not know the name draws no empty shelf under
+  // the confession (brief 12, part A, approved 2026-10-17). A page that asks
+  // which name the reader meant draws none either: its pieces are about a
+  // nearest name the reader has not chosen yet (brief 16, proposed).
+  if ((state !== "unknown" && state !== "typo") || availability.shorts) {
+    first.push("shorts");
+  }
 
   const closing: FeedBlockId[] = [];
   if (
@@ -92,6 +129,8 @@ type SearchFeedClassificationInput = {
   subjects?: readonly SearchResult[];
   /** Reviewed terms a near spelling may have meant; they count as suggestions. */
   termSuggestions?: readonly string[];
+  /** The family or country the search is scoped to, when the reader kept one. */
+  relation?: SearchRelation | null;
 };
 
 function companionRelations(data: SearchCompanionsData): string[] {
@@ -109,14 +148,30 @@ export function classifySearchFeed({
   companions,
   subjects,
   termSuggestions = [],
+  relation,
 }: SearchFeedClassificationInput): SearchFeedAnswerState {
+  const foundByWord = companions.shorts.items.some(
+    ({ match }) => match.relation === "word"
+  );
+  if (
+    search.results.some((result) =>
+      result.recordedIn?.some(({ fieldPath }) =>
+        fieldPath.startsWith("content.")
+      )
+    )
+  ) {
+    return "recorded";
+  }
+  // Related fiches with a lead: the API offers a lead beside results only as
+  // a spelling of the searched name (DEC-075), so the page asks which name
+  // the reader meant before it lists them. A scoped search stays a relation
+  // browse: the page titles it with the filter, which no spelling is about.
   if (subjects && subjects.length === 0 && search.results.length > 0) {
-    return "widened";
+    return search.leads.length > 0 && !foundByWord && !relation
+      ? "typo"
+      : "widened";
   }
   if (search.results.length === 0) {
-    const foundByWord = companions.shorts.items.some(
-      ({ match }) => match.relation === "word"
-    );
     const hasSuggestion = search.leads.length + termSuggestions.length > 0;
     return hasSuggestion && !foundByWord ? "typo" : "unknown";
   }

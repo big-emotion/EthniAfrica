@@ -1,9 +1,46 @@
 import type { PublicPatronyme } from "@/api/v2/schemas/patronymes";
-import { readNameStanding, type NameStanding } from "@/lib/patronymes/content";
+import {
+  readNameStanding,
+  readSpellings,
+  type NameStanding,
+} from "@/lib/patronymes/content";
+import {
+  addressSpellingOf,
+  addressedHistoryNames,
+  buildNameAddressDirectory,
+} from "@/lib/search/nameAddress";
+import { readGaps } from "@/lib/patronymes/content";
 import { getTranslation } from "@/lib/translations";
 import type { Language } from "@/types/shared";
 
 type PatronymeCopy = ReturnType<typeof getTranslation>["patronymes"];
+
+/** An accented corpus spelling is the name readers see on this fiche. */
+// @req REQ-133
+export function patronymeDisplayName(patronyme: PublicPatronyme): string {
+  const historySpelling = addressSpellingOf(
+    buildNameAddressDirectory(addressedHistoryNames(patronyme.nameHistory)),
+    patronyme.nameMain
+  );
+  if (historySpelling) return historySpelling;
+
+  const plainMainName = patronyme.nameMain
+    .normalize("NFD")
+    .replace(/\p{Diacritic}/gu, "")
+    .toLocaleLowerCase("fr");
+  return (
+    readSpellings(patronyme.content).find((form) => {
+      const plainSpelling = form.spelling
+        .normalize("NFD")
+        .replace(/\p{Diacritic}/gu, "")
+        .toLocaleLowerCase("fr");
+      return (
+        plainSpelling === plainMainName &&
+        /\p{Diacritic}/u.test(form.spelling.normalize("NFD"))
+      );
+    })?.spelling ?? patronyme.nameMain
+  );
+}
 
 /** How many sources the fiche cites, and how many of those a machine wrote. */
 function standingSentence(standing: NameStanding, t: PatronymeCopy): string {
@@ -53,14 +90,21 @@ export function PatronymeFicheTitle({
 }) {
   const t = getTranslation(language).patronymes;
   const standing = readNameStanding(patronyme.content);
+  const displayedName = patronymeDisplayName(patronyme);
+  const hasNameSystemGap = readGaps(patronyme.content).some(
+    (gap) => gap.fieldPath === "nameSystem"
+  );
 
   return (
     <header className="afh-parchment-head">
       <p className="afh-parchment-eyebrow">{t.eyebrow}</p>
-      <h1>{patronyme.nameMain}</h1>
-      <p className="afh-parchment-lede">
-        {t.nameSystemStatementPrefix} {t.nameSystemLabels[patronyme.nameSystem]}
-      </p>
+      <h1>{displayedName}</h1>
+      {!hasNameSystemGap ? (
+        <p className="afh-parchment-lede">
+          {t.nameSystemStatementPrefix}{" "}
+          {t.nameSystemLabels[patronyme.nameSystem]}
+        </p>
+      ) : null}
       <p className="afh-parchment-note">
         {standing === null
           ? t.sourceStanding.assembling

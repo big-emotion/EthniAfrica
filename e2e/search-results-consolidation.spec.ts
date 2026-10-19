@@ -121,6 +121,21 @@ test.describe("SERP title and answer rule (REQ-178, DEC-057)", () => {
     await expect(
       page.getByText("Nous ne connaissons pas ce nom.")
     ).toBeVisible();
+    // Brief 12, part A: the page asks once, in the verdict, above its closing,
+    // and draws no empty shelf (it sat at y 1,119 px at 430 on 2026-10-16).
+    const invitation = page.getByRole("button", {
+      name: "Proposer une source",
+    });
+    await expect(invitation).toHaveCount(1);
+    await expect(
+      page.locator('[data-feed-block="verdict"]').getByRole("button", {
+        name: "Proposer une source",
+      })
+    ).toBeVisible();
+    const invitationBox = await invitation.boundingBox();
+    const closingBox = await page.locator("[data-name-closing]").boundingBox();
+    expect(invitationBox!.y).toBeLessThan(closingBox!.y);
+    await expect(page.getByText("Pas encore de short")).toHaveCount(0);
   });
 });
 

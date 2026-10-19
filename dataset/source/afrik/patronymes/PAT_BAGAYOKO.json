@@ -51,29 +51,10 @@
   "transmissionMode": "other",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [
-      {
-        "claim": "Le nom viendrait d'un pèlerinage. À Faragouaran, village du Wasulu peuplé de Baghayogho, de forgerons (noumou) et de nobles (horon), on rapporte que leurs ancêtres, pèlerins de La Mecque, auraient rendu visite au calife à Bagdad et pris à cette occasion le nom de Bagadaji, ou Baga-yoro, « le lieu de Bagdad ». Un manuscrit local sur l'installation des Baghayogho au Wasulu donne le nom comme « Bagadaji, gens de Bagdad » et les fait descendre d'Arabes.",
-        "claimStatus": "claimed",
-        "carrier": "Chefs et anciens de Faragouaran, canton de N'tentou, Wasulu (Mali)",
-        "collection": "direct",
-        "collector": "Andreas W. Massing, lors d'un entretien",
-        "context": "Entretien du 17 août 1997 à Faragouaran, avec des témoins nommés dans la source",
-        "sourceRefs": ["massing-2004-baghayogho"]
-      },
-      {
-        "claim": "Les Baghayogho seraient des Soninké. À Tombouctou, Hasseye Mahmoud Baghayogho se dit dernier descendant des Wangara et des Baghayogho, et dit que ses ancêtres étaient des Soninké venus du Ghana et installés à Kong. Cette tradition porte sur l'origine de la famille, non sur le sens du nom.",
-        "claimStatus": "claimed",
-        "carrier": "Hasseye Mahmoud Baghayogho, de Tombouctou",
-        "collection": "direct",
-        "collector": "Andreas W. Massing, lors d'un entretien",
-        "context": "Entretien à Tombouctou, début 1997",
-        "sourceRefs": ["massing-2004-baghayogho"]
-      }
-    ],
+    "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [],
-    "historicalSyntheses": []
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -154,10 +135,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Aucun sens du nom Bagayoko n'est établi dans les sources que nous avons consultées : les deux récits ci-dessus sont des pistes attribuées, rapportées par un chercheur extérieur, et aucune n'est retenue comme la bonne. L'une explique le nom par Bagdad, l'autre parle de l'origine de la famille sans dire ce que le mot signifie."
-    },
     {
       "fieldPath": "casteOrSocialFunction",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
@@ -246,6 +223,18 @@
                 "source_kind": "academic",
                 "page": "§ 1, 35, 37",
                 "notes": "Cahiers d'études africaines, no 176, 2004, p. 887-922. Lu en ligne sur OpenEdition le 11 octobre 2026, où le texte est numéroté par paragraphes et non par pages imprimées : les renvois sont donnés au paragraphe. L'auteur suit l'écriture Baghayogho du Tarikh es-Soudan (note 1). Paragraphe 1 : les sources sont claires sur l'origine wangara-soninké de la famille. Paragraphe 35 : Faragouaran, au Wassoulou, est un village entièrement peuplé de Baghayogho. Paragraphe 37 : à la fin du XIXe siècle, des Baghayogho sont établis à Koro, Séguéla, Kani et Sarhala."
+              },
+              {
+                "title": "Témoignage de Hasseye Mahmoud Baghayogho sur ses ancêtres",
+                "author": "Hasseye Mahmoud Baghayogho, interrogé par Andreas W. Massing",
+                "year": 1997,
+                "url": "https://journals.openedition.org/etudesafricaines/4850",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "narrative": "Ses ancêtres auraient été des Soninké venus du Ghana et installés à Kong.",
+                "carrier": "Hasseye Mahmoud Baghayogho",
+                "place": "Tombouctou, Mali",
+                "notes": "Entretien rapporté au paragraphe 34 de l’article « Baghayogho : A Soninke Muslim Diaspora in the Mande World » d’Andreas W. Massing, publié en 2004."
               }
             ]
           },
@@ -296,9 +285,49 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "§ 35 et note 53",
-                "notes": "Cahiers d'études africaines, no 176, 2004, p. 887-922. Lu en ligne sur OpenEdition le 11 octobre 2026, où le texte est numéroté par paragraphes et non par pages imprimées : les renvois sont donnés au paragraphe. L'auteur suit l'écriture Baghayogho du Tarikh es-Soudan (note 1). Paragraphe 35 et note 53 : entretien du 17 août 1997 à Faragouaran (canton de N'tentou, Wassoulou, Mali) avec des chefs et des anciens, et manuscrit local qui donne le nom comme « Bagadaji, gens de Bagdad »."
+                "notes": "Cahiers d'études africaines, no 176, 2004, p. 887-922. Lu en ligne sur OpenEdition le 11 octobre 2026, où le texte est numéroté par paragraphes et non par pages imprimées : les renvois sont donnés au paragraphe. L'auteur suit l'écriture Baghayogho du Tarikh es-Soudan (note 1). Paragraphe 35 et note 53 : entretien du 17 août 1997 à Faragouaran (canton de N'tentou, Wassoulou, Mali) avec des chefs et des anciens, et manuscrit local qui donne le nom comme « Bagadaji, gens de Bagdad ».\nEntretien du 17 août 1997 à Faragouaran, avec des témoins nommés dans la source"
+              },
+              {
+                "title": "Récit des anciens de Faragouaran sur le nom Bagayoko",
+                "author": "Chefs et anciens de Faragouaran, interrogés par Andreas W. Massing",
+                "year": 1997,
+                "url": "https://journals.openedition.org/etudesafricaines/4850",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "narrative": "Des ancêtres pèlerins auraient pris le nom de Bagadaji après un voyage à Bagdad.",
+                "carrier": "Chefs et anciens de Faragouaran, canton de N’tentou",
+                "place": "Faragouaran, Wassoulou, Mali",
+                "notes": "Entretien du 17 août 1997 rapporté par Andreas W. Massing dans son article « Baghayogho : A Soninke Muslim Diaspora in the Mande World », publié en 2004, paragraphe 35 et note 53."
               }
-            ]
+            ],
+            "claimStatus": "claimed",
+            "carrier": "Chefs et anciens de Faragouaran, canton de N'tentou, Wasulu (Mali)",
+            "collection": "direct",
+            "collector": "Andreas W. Massing, lors d'un entretien"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Les Baghayogho seraient des Soninké. À Tombouctou, Hasseye Mahmoud Baghayogho se dit dernier descendant des Wangara et des Baghayogho, et dit que ses ancêtres étaient des Soninké venus du Ghana et installés à Kong. Cette tradition porte sur l'origine de la famille, non sur le sens du nom.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Baghayogho : A Soninke Muslim Diaspora in the Mande World",
+                "author": "Andreas W. Massing",
+                "year": 2004,
+                "url": "https://journals.openedition.org/etudesafricaines/4850",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1, 35, 37",
+                "notes": "Cahiers d'études africaines, no 176, 2004, p. 887-922. Lu en ligne sur OpenEdition le 11 octobre 2026, où le texte est numéroté par paragraphes et non par pages imprimées : les renvois sont donnés au paragraphe. L'auteur suit l'écriture Baghayogho du Tarikh es-Soudan (note 1). Paragraphe 1 : les sources sont claires sur l'origine wangara-soninké de la famille. Paragraphe 35 : Faragouaran, au Wassoulou, est un village entièrement peuplé de Baghayogho. Paragraphe 37 : à la fin du XIXe siècle, des Baghayogho sont établis à Koro, Séguéla, Kani et Sarhala.\nEntretien à Tombouctou, début 1997"
+              }
+            ],
+            "carrier": "Hasseye Mahmoud Baghayogho, de Tombouctou",
+            "collection": "direct",
+            "collector": "Andreas W. Massing, lors d'un entretien"
           }
         ]
       },

@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "YorubaNames donne deux analyses de Adéyẹmí : adé-yẹ-mí (« la couronne me sied ») et a-dé-yẹ-mí (« celui ou celle qui arrive pour me convenir »).",
-        "claimStatus": "claimed",
-        "sourceRefs": ["yorubanames-adeyemi"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -258,6 +253,26 @@
                 "source_kind": "archive",
                 "page": "p. 317",
                 "notes": "Londres, Religious Tract Society ; exemplaire numérisé sur archive.org, dont la fiche donne 1877 (la page de titre ne porte pas d'année lisible). Page 317, chapitre « Last Years in Ibadan » (en-tête 1868) : journal du 30 novembre, huit adultes baptisés le dimanche de l'Avent, dont un très vieil homme de la famille royale d'Oyo : « his name Adeyemi, signifies, ‘a crown fits me’ ». Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "YorubaNames donne deux analyses de Adéyẹmí : adé-yẹ-mí (« la couronne me sied ») et a-dé-yẹ-mí (« celui ou celle qui arrive pour me convenir »).",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Adéyẹmí — YorubaNames",
+                "author": "YorubaNames",
+                "year": null,
+                "url": "https://www.yorubaname.com/entries/Ade%CD%81y%E1%BA%B9mi%CD%81",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Base collaborative de noms yoruba, lue le 13 octobre 2026. Elle donne la forme tonale Adéyẹmí, deux sens, « The crown is befitting of me » et « One who arrives to befit me », deux découpages, adé-yẹ-mí et a-dé-yẹ-mí, et les variantes Adé, Déyẹmí et Yẹmí. Contenu communautaire, sans date de rédaction."
               }
             ]
           }

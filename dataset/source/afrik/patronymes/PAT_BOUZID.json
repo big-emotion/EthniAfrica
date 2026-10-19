@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une étude sur les noms de Touggourt propose le sens de « père de Zaid » pour Bouzid. Cette explication locale ne signifie pas que toutes les familles Bouzid ont les mêmes ancêtres.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["ouargla-bouzid"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -191,6 +186,27 @@
                 "source_kind": "archive",
                 "page": "p. 79",
                 "notes": "Docteur L. Leclerc, médecin-major, chargé en 1857, après la soumission de la Grande Kabylie, de soigner les habitants du Djurdjura depuis Fort-Napoléon ; Paris, J.-B. Baillière ; exemplaire numérisé d'archive.org, dont la notice donne 1864. Page 79, lue sur l'image de la page imprimée : acte de vente de Tala Hamou « en présence des assesseurs agréés […] parmi les gens de Tâla hamou, El hadj Mohammed Amzyân de la famille Bouzid (nits Bouzid), Arab ben Ismaïl, el hossein ou Cassi » ; l'acte porte la signature du scribe Mohammed ben Errebi ben Yahya. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une étude sur les noms de Touggourt propose le sens de « père de Zaid » pour Bouzid. Cette explication locale ne signifie pas que toutes les familles Bouzid ont les mêmes ancêtres.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Étude étymo-sémantique des patronymes de la région de Touggourt",
+                "author": "Siham Messaoudi",
+                "year": 2021,
+                "url": "https://dspace.univ-ouargla.dz/jspui/bitstream/123456789/32616/1/%25D9%2585%25D8%25B3%25D8%25B9%25D9%2588%25D8%25AF%25D9%258A%2520%25D8%25B3%25D9%2587%25D8%25A7%25D9%2585_compressed.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 34",
+                "notes": "Mémoire de master en sciences du langage, Université Kasdi Merbah Ouargla, 2020-2021, dirigé par Nadjah Henka ; texte intégral lu dans le fichier déposé par l'université (pages numérotées de l'imprimé). L'autrice a choisi 215 noms de famille représentatifs dans le registre de l'état civil de la mairie de Touggourt (p. 3). Page 34 : « BOUZID : nom composé, masculin singulier, d'origine arabe, « père de Zaid » ; Zaid « il est né, il vient (accroitre « la famille) » en L'islem il est l'un des prophètes ». Page 56 : la liste des patronymes recensés écrit BOUZIDE. Lu le 14 octobre 2026."
               }
             ]
           }

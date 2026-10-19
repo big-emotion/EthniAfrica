@@ -11,7 +11,10 @@
     {
       "spelling": "Kamil",
       "attestations": [
-        { "countryId": "DJI", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "DJI",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -20,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'entrée lexicographique communautaire analyse l'afar Káamil comme un prénom masculin emprunté à l'arabe kāmil ; faute de vérification indépendante dans la thèse citée par l'entrée, cette analyse demeure une proposition.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["kamil-wiktionary-afar"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -85,5 +83,84 @@
       "fieldPath": "homonyms",
       "reason": "Les sources consultées ne permettent pas encore de présenter un autre nom écrit comme Kamil, mais d'origine différente."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kamil est un nom personnel d'origine arabe, noté dès 1842 sur la route de Tadjourah. Il viendrait de l'arabe kāmil, « parfait, complet ». Les sources lues ne disent pas quand il est devenu un nom de famille à Djibouti.",
+    "names": [
+      {
+        "nameText": "Kamil",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel d'origine arabe, « parfait », noté dès 1842 sur la route de Tadjourah.",
+        "periodLabel": "Écrit dès 1842 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Proposée en 2003"
+            },
+            "statement": "Le nom Kamil viendrait d'un nom personnel tiré de l'arabe kāmil, « parfait, complet » ; il est porté par des musulmans comme par des chrétiens, selon le dictionnaire de Patrick Hanks.",
+            "hypothesisGroup": "origine du nom Kamil",
+            "sources": [
+              {
+                "title": "Kamil Name Meaning and Kamil Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=kamil",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée Kamil du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch : « Arabic: from a personal name based on Arabic kāmil 'perfect, complete'. Bearers of this surname are both Muslims and Christians. » Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1842,
+              "to": 1842,
+              "label": "1842"
+            },
+            "era": "polity",
+            "statement": "Le nom Kamil apparaît dans le récit du lieutenant W. C. Barker, de la marine des Indes, daté d'Aden en février 1842 et publié en annexe par Richard Burton : au départ d'une caravane pour Tadjourah, on recommande Barker aux soins de Mahomed ibn Buraitoo et de Dorranu ibn Kamil. C'est la plus ancienne trace de ce nom dans la région que le projet connaît ; le nom est plus ancien qu'elle.",
+            "formAsWritten": "Kamil",
+            "birth": true,
+            "sources": [
+              {
+                "title": "First Footsteps in East Africa; or, An Exploration of Harar",
+                "author": "Richard F. Burton",
+                "year": 1856,
+                "url": "https://archive.org/details/firstfootstepsi00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 599-601",
+                "notes": "Londres, Longman, Brown, Green, and Longmans, 1856 ; exemplaire numérisé sur archive.org. Récit d'un voyage fait en 1854-1855 dans le pays somali et jusqu'à Harar. Voyageur britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Annexe V, « A condensed account of an attempt to reach Harar from Ankobar », récit du lieutenant Barker de la marine des Indes, daté « Aden, February 28, 1842 » (p. 599). Page 601 : quittant Farri avec une caravane « bound for Tajoorah », il est recommandé « to the care of Mahomed ibn Buraitoo and Dorranu ibn Kamil ». Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'entrée lexicographique communautaire analyse l'afar Káamil comme un prénom masculin emprunté à l'arabe kāmil ; faute de vérification indépendante dans la thèse citée par l'entrée, cette analyse demeure une proposition.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Kaamil — Wiktionary, Afar entry",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://en.wiktionary.org/wiki/Kaamil",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Entrée lexicographique collaborative consultée dans sa section afar : elle donne Káamil comme prénom masculin et propose un emprunt à l'arabe kāmil. Elle renvoie à une thèse de Mohamed Hassan Kamil (2015), mais le texte de cette thèse n'a pas pu être vérifié ; la proposition n'est donc pas promue au niveau référencé."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

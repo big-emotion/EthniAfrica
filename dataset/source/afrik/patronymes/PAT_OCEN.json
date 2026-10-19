@@ -22,13 +22,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Ocen est documenté dans le système lango comme le nom masculin du second jumeau ; Acen est la forme féminine correspondante, non une simple variante graphique du même nom.",
-        "claimStatus": "established",
-        "sourceRefs": ["agea-eton-lango-naming-2026"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -166,6 +161,27 @@
                 "source_kind": "academic",
                 "page": "p. 152",
                 "notes": "Londres, T. Fisher Unwin, 1923. Page 152 : tableau des noms de jumeaux : « Name of younger : Odongo or Ochyen », « Ochyen », « Achyen », « Adongo ». Administrateur colonial britannique, cité pour ce qu'il écrit des Langi. Numérisation de la Digital Library of India hébergée par Internet Archive ; page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Ocen est documenté dans le système lango comme le nom masculin du second jumeau ; Acen est la forme féminine correspondante, non une simple variante graphique du même nom.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Naming as Cultural Epistemology: Knowledge, Belief, and Identity in Lango Personal Naming",
+                "author": "Jacob Godfrey Agea et Marus Eton",
+                "year": 2026,
+                "url": "https://doi.org/10.37284/eajtcr.9.1.5010",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 266",
+                "notes": "East African Journal of Traditions, Culture and Religion 9(1), 2026, p. 251-273. Tableau 8 : Ocen/Acen, « The second-born twin. Some people ironically consider the second-born twin the ‘older’ twin because he/she is thought to have pushed the first twin out ». Étude de 131 noms recueillis auprès de 78 détenteurs de savoir langi. PDF de la revue lu en entier. Lu le 13 octobre 2026."
               }
             ]
           }

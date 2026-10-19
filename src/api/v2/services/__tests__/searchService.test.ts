@@ -39,6 +39,7 @@ function response(): FtsSearchResponse {
     peoples: [
       {
         id: "PPL_FANG",
+        historyNames: [],
         nameMain: "Fang",
         languageFamilyId: "FLG_BANTU",
         currentCountries: ["GAB"],
@@ -62,6 +63,7 @@ function response(): FtsSearchResponse {
     countries: [
       {
         id: "NGA",
+        historyNames: [],
         nameFr: "Nigeria",
         nameEn: "Nigeria",
         etymology: "Niger and -ia.",
@@ -76,6 +78,7 @@ function response(): FtsSearchResponse {
     families: [
       {
         id: "FLG_BANTU",
+        historyNames: [],
         nameFr: "Bantu",
         nameEn: "Bantu",
         classificationStatus: null,
@@ -103,6 +106,7 @@ function response(): FtsSearchResponse {
     patronymes: [
       {
         id: "PAT_TRAORE",
+        historyNames: [],
         nameMain: "Traoré",
         nameSystem: "clan_name",
         casteOrSocialFunction: null,
@@ -129,6 +133,7 @@ function response(): FtsSearchResponse {
     languages: [
       {
         id: "lin",
+        historyNames: [],
         name: "Lingala",
         nameEn: "Lingala",
         familyId: "FLG_BANTU",
@@ -163,6 +168,26 @@ describe("search naming projection", () => {
   // @req REQ-180
   it("enriches the five naming classes once and leaves ranking untouched", async () => {
     const raw = response();
+    raw.peoples[0].content.organization = {
+      clanOrganization:
+        "Les clans Kagbo, Sanoh, Kaloko et Koroma jouent également des rôles importants.",
+    };
+    raw.results = [
+      {
+        kind: "people",
+        id: "PPL_FANG",
+        name: "Fang",
+        normalizedScore: 1,
+        snippet: null,
+      },
+    ];
+    raw.recordedTerms = [
+      {
+        kind: "people",
+        id: "PPL_FANG",
+        recordedIn: ["content.organization.clanOrganization"],
+      },
+    ];
     vi.mocked(ftsSearchEntities).mockResolvedValue(raw);
     vi.mocked(loadSearchNamingData).mockResolvedValue(
       new Map([
@@ -216,7 +241,18 @@ describe("search naming projection", () => {
     expect(result.persons[0]).not.toHaveProperty("naming");
     expect(result.quizzes[0]).not.toHaveProperty("naming");
     expect(result.total).toBe(7);
-    expect(result.results).toBe(raw.results);
+    expect(result.results).toEqual([
+      {
+        ...raw.results[0],
+        recordedIn: [
+          {
+            fieldPath: "content.organization.clanOrganization",
+            text: "Les clans Kagbo, Sanoh, Kaloko et Koroma jouent également des rôles importants.",
+          },
+        ],
+      },
+    ]);
+    expect(result.peoples[0]).not.toHaveProperty("recordedIn");
   });
 
   // @req REQ-180

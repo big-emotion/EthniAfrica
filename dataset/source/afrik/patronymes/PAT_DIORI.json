@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -76,10 +77,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Les recherches ciblées sur « Diori » dans les travaux d'anthroponymie songhay-zarma, les catalogues bibliographiques et les notices d'autorité n'ont livré ni étymologie étayée, ni tradition orale attribuée, ni chronique consacrée à l'origine du nom."
-    },
     {
       "fieldPath": "alliances",
       "reason": "Les recherches associant « Diori » à parenté à plaisanterie, alliance, cousinage et sanankuya n'ont identifié aucune paire documentée entre deux fiches PAT existantes."

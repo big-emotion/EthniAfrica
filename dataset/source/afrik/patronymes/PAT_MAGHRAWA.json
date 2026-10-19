@@ -31,18 +31,8 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Ahmed M’Charek relève Maghrawa parmi les principales branches zénètes attestées dans les chapitres berbères du Kitāb al-ʿIbar d’Ibn Khaldûn.",
-        "claimStatus": "established",
-        "sourceRefs": ["maghrawa-mcharek"]
-      },
-      {
-        "claim": "Une étude historique consacrée au groupe situe son territoire d’origine dans le Maghreb central et documente son rôle politique et militaire du VIIe au XIe siècle.",
-        "claimStatus": "established",
-        "sourceRefs": ["maghrawa-asjp"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -147,7 +137,8 @@
                 "page": "p. 33",
                 "notes": "Revue des études historiques militaires 6(1), 2024, p. 33-47, Université d'Alger 2. Seul le résumé anglais a été lu : le texte arabe du fichier PDF ne se laisse pas extraire. Page 33 : résumé anglais : la tribu Maghrawa « imposed itself as a political and military force in the Middle Maghreb » du VIIe au XIe siècle ; les attaques fatimides l'obligent à quitter son pays d'origine et à fonder son État hors de ses limites géographiques connues."
               }
-            ]
+            ],
+            "claimStatus": "established"
           },
           {
             "period": {
@@ -234,6 +225,26 @@
                 "source_kind": "archive",
                 "page": "p. 227",
                 "notes": "Alger, Imprimerie du gouvernement, lu sur sa numérisation le 14 octobre 2026. Ibn Khaldoun a vécu de 1332 à 1406, selon l'Histoire générale de l'Afrique. Page 227, titre de la notice : « Notice des Maghraoua, peuple zenatien de la première race, origine et vicissitudes des dynasties qu'ils fondèrent en Maghreb ». Le texte arabe d'Ibn Khaldoun n'a pas été lu, ni les auteurs arabes plus anciens."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Ahmed M’Charek relève Maghrawa parmi les principales branches zénètes attestées dans les chapitres berbères du Kitāb al-ʿIbar d’Ibn Khaldûn.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Ibn Khaldûn, une source historique majeure : l’apport du Kitâb al-‘Ibar à la connaissance de l’ethnonymie berbère",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.researchgate.net/publication/382346129_Ibn_Khaldun_une_source_historique_majeure_l%27apport_du_Kitab_al-%27Ibar_a_la_connaissance_de_l%27ethnonymie_berbere",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Ahmed M’Charek, Études et Documents Berbères 49(1), 2024, p. 223-244, DOI 10.3917/edb.049.0223. Le résumé éditorial intégral a été vérifié ; il nomme Maghrawa parmi les branches zénètes attestées par Ibn Khaldûn. La source n’est pas réutilisée dans une autre fiche de cette vague."
               }
             ]
           }

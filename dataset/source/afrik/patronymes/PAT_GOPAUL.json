@@ -6,7 +6,7 @@
   },
   "id": "PAT_GOPAUL",
   "nameMain": "Gopaul",
-  "nameSystem": "clan_name",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Gopaul",
@@ -22,10 +22,11 @@
     }
   ],
   "transmissionMode": "patrilineal",
-  "designatedSocialUnit": "lineage",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -77,10 +78,6 @@
   ],
   "gaps": [
     {
-      "fieldPath": "origin",
-      "reason": "les résultats exacts « Gopaul », les Indian Immigration Archives du Mahatma Gandhi Institute, les publications de l'Aapravasi Ghat et les catalogues bibliographiques sur l'engagisme à Maurice ont été consultés. Ils attestent le nom ou décrivent le fonds disponible, mais n'ont livré ni étymologie publiée ni chronique attribuable à une lignée précise ; l'origine reste donc vide."
-    },
-    {
       "fieldPath": "alliances",
       "reason": "les résultats exacts « Gopaul », les Indian Immigration Archives du Mahatma Gandhi Institute, les publications de l'Aapravasi Ghat et les catalogues bibliographiques sur l'engagisme à Maurice, complétés par les termes « alliance », « cousinage » et « joking relationship », n'ont fait apparaître aucune paire nommée et sourcée reliant Gopaul à un autre nom documenté ici."
     },
@@ -96,5 +93,83 @@
       "fieldPath": "homonyms",
       "reason": "les résultats exacts « Gopaul », les Indian Immigration Archives du Mahatma Gandhi Institute, les publications de l'Aapravasi Ghat et les catalogues bibliographiques sur l'engagisme à Maurice n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Gopaul est un nom de famille d'origine indienne, porté notamment à Maurice. Selon un dictionnaire des noms de famille, c'est une variante du nom indien Gopal, un nom donné au dieu Krishna, et cette forme se trouve surtout dans les pays où sont partis des travailleurs indiens sous contrat, dont Maurice. En 1858, on l'écrit comme le prénom d'émigrants indiens partis pour Maurice.",
+    "names": [
+      {
+        "nameText": "Gopaul",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille de Maurice, variante du nom indien Gopal ; écrit dès 1858 comme prénom d'émigrant.",
+        "periodLabel": "Écrit dès 1858 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Gopaul est une variante du nom indien Gopal, selon le dictionnaire des noms de famille dirigé par Patrick Hanks. Ce dictionnaire le trouve surtout en Afrique du Sud, à Maurice, à Trinité-et-Tobago, au Guyana et en Jamaïque, et le dit très rare en Inde.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Gopaul Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/gopaul?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e édition, Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 18 octobre 2026 dans la traduction française que le site affiche. La notice fait de Gopaul une variante indienne de Gopal, que l'on trouve surtout en Afrique du Sud, à l'île Maurice, à Trinité-et-Tobago, au Guyana et en Jamaïque, et qui est très rare en Inde."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "statement": "Le nom Gopal, dont Gopaul serait une variante, viendrait du sanskrit gopāla, fait de go, « vache », et de pāla, « protecteur » ; c'est un nom donné au dieu Krishna, selon le dictionnaire des noms de famille dirigé par Patrick Hanks.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Gopal Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/gopal?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e édition, Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 18 octobre 2026 dans la traduction française que le site affiche, qui est approximative : la notice fait de Gopal un nom indien tiré du sanskrit gopāla, de go, « vache », et pāla, « protecteur », un nom du dieu Krishna. Elle ne parle pas de Gopaul."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1858,
+              "label": "1858"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gopaul apparaît comme prénom dans la fiche d'un émigrant de 26 ans, venu du district de Muzaffarpur et parti en 1858 pour Maurice sur le navire Calliope, selon la base de données du projet de recherche Becoming Coolies. Le registre ne lui connaît pas de nom de famille. C'est la plus ancienne trace de ce nom que le projet connaît ; c'est alors un prénom, pas un nom de famille.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Coolitude — fiche d'émigrant « Gopaul »",
+                "author": "Projet Becoming Coolies, universités d'Édimbourg et de Leeds",
+                "year": null,
+                "url": "https://www.coolitude.shca.ed.ac.uk/person/gopaul-unknown",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Base de données d'un projet de recherche financé par l'Arts and Humanities Research Council, sur les migrations de travailleurs sous contrat venus d'Asie du Sud au XIXe siècle. Lue le 18 octobre 2026. La fiche donne « Gopaul » comme prénom et un nom de famille inconnu, 26 ans, pergunnah de Baleea, district de Muzaffarpur, parti en 1858 pour Maurice sur le navire Calliope. La même base compte d'autres émigrants prénommés Gopaul, partis pour Maurice en 1858 et en 1859."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -34,13 +34,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "La Présidence de Djibouti atteste Robleh comme dernier élément de la chaîne de noms Nima Moussa Robleh ; la notice ne documente ni son étymologie ni la relation généalogique exprimée.",
-        "claimStatus": "established",
-        "sourceRefs": ["robleh-presidence-djibouti-2020"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -133,7 +128,7 @@
                 "title": "Somali names and individual identity",
                 "author": "Cabdalla Cumar Mansuur",
                 "year": 2021,
-                "url": "https://wardheernews.com/wp-content/uploads/2021/06/Somali-names-and-indvidual-identity-By-Abdalla-Mansuur.pdf",
+                "url": "https://web.archive.org/web/20210920113414/https://wardheernews.com/wp-content/uploads/2021/06/Somali-names-and-indvidual-identity-By-Abdalla-Mansuur.pdf",
                 "tier": "referenced",
                 "source_kind": "press",
                 "page": "p. 3",
@@ -154,7 +149,7 @@
                 "title": "Somali names and individual identity",
                 "author": "Cabdalla Cumar Mansuur",
                 "year": 2021,
-                "url": "https://wardheernews.com/wp-content/uploads/2021/06/Somali-names-and-indvidual-identity-By-Abdalla-Mansuur.pdf",
+                "url": "https://web.archive.org/web/20210920113414/https://wardheernews.com/wp-content/uploads/2021/06/Somali-names-and-indvidual-identity-By-Abdalla-Mansuur.pdf",
                 "tier": "referenced",
                 "source_kind": "press",
                 "page": "p. 4",
@@ -224,6 +219,26 @@
                 "source_kind": "archive",
                 "page": "p. 174",
                 "notes": "Londres, Longman, Brown, Green, and Longmans, 1856 ; exemplaire numérisé sur archive.org. Récit d'un voyage fait en 1854-1855 dans le pays somali et jusqu'à Harar. Page 174, sur les Issa : leur chef, l'ugaz, « is generally called “Roblay” — Prince Rainy, — the name or rather title being one of good omen ». Page 243 : « Their late chief, Ugaz Roblay », chez les Gudabirsi. Voyageur britannique, cité pour les formes qu'il écrit et ce qu'on lui rapporte. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La Présidence de Djibouti atteste Robleh comme dernier élément de la chaîne de noms Nima Moussa Robleh ; la notice ne documente ni son étymologie ni la relation généalogique exprimée.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Hommage du Président de la République à la mémoire de feu Nima Moussa Robleh",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.presidence.dj/index.php/article/hommage-du-president-de-la-republique-a-la-memoire-de-feu-nima-moussa-robleh-850",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Présidence de la République de Djibouti, 7 décembre 2020. La page complète a été vérifiée : elle donne à plusieurs reprises Nima Moussa Robleh, précise son origine régionale à Ali-Sabieh et confirme son décès."
               }
             ]
           }

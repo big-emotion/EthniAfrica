@@ -11,7 +11,10 @@
     {
       "spelling": "Sonko",
       "attestations": [
-        { "countryId": "GMB", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "GMB",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -20,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -64,10 +68,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Une seule étude a été lue, celle de Donald Wright (1978) : elle sert ici à rattacher le nom aux Mandingues du Niumi, en Gambie. Nous ne documentons pas encore l'origine du nom."
-    },
     {
       "fieldPath": "alliances",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."

@@ -11,7 +11,14 @@
     {
       "spelling": "Ginindza",
       "attestations": [
-        { "countryId": "SWZ", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "SWZ",
+          "sourceRefs": [
+            "afrik-candidate-queue",
+            "patricks-2002-swazi-surnames",
+            "van-warmelo-1935-survey"
+          ]
+        }
       ]
     }
   ],
@@ -20,20 +27,25 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
     {
       "peopleId": "PPL_SWAZI",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "patricks-2002-swazi-surnames"]
     }
   ],
   "countries": [
     {
       "countryId": "SWZ",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": [
+        "afrik-candidate-queue",
+        "patricks-2002-swazi-surnames",
+        "van-warmelo-1935-survey"
+      ]
     }
   ],
   "alliances": [],
@@ -48,13 +60,25 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "patricks-2002-swazi-surnames",
+      "title": "Tibongo Netinanatelo Temaswati : Swazi Surnames and Their Praisenames (copie non officielle)",
+      "url": "https://archive.org/details/tibongo-netinanatelo-temaswati-swazi-surnames-and-their-praisenames",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Première édition, Mbabane, 2002, publiée par le Conservation Trust of Swaziland, la Natural History Society of Swaziland et le Swaziland National Trust Commission ; l'auteur travaille au Musée national du Swaziland. Copie non officielle, téléversée sur Internet Archive par un particulier, lue le 18 octobre 2026 sur les images des pages. Les noms de famille et leurs noms de louange ont été recueillis surtout de 1976 à 1984, auprès de personnes dont l'auteur ne donne pas les noms. Le recueil range les noms de famille du Swaziland et des régions d'Afrique du Sud et du Mozambique jadis gouvernées par les rois swazis ; chaque entrée donne les lieux, les clans avec lesquels on ne se marie pas, les interdits alimentaires et le nom de louange."
+    },
+    {
+      "sourceKey": "van-warmelo-1935-survey",
+      "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+      "url": "https://repository.up.ac.za/handle/2263/77107",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Union of South Africa, Department of Native Affairs, Ethnological Publications, vol. V, Pretoria, 1935 ; scan de l'université de Pretoria, lu le 18 octobre 2026. La partie 2, « Swaziland » (p. 34-36), donne par district, à la date de janvier 1935, les chefs, leur nom de clan (isibongo), leur nom de louange (isinanatelo) et le nombre de contribuables adultes de sexe masculin. La partie 3, section 14 (p. 83-86), range ces chefs selon l'origine de leur famille ; p. 34, l'auteur précise que ce classement vaut pour le chef et sa famille, pas forcément pour tous ses gens."
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
     {
       "fieldPath": "alliances",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
@@ -75,5 +99,172 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ginindza est un nom de clan swazi, porté au Swaziland, l'actuel Eswatini, et écrit dès 1935. Il est lié au nom Mamba, un autre clan swazi. On ne sait pas avec certitude d'où vient ce clan : deux lectures, qui le rattachent aux Swazis de la famille royale, sont présentées plus bas.",
+    "names": [
+      {
+        "nameText": "Ginindza",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan swazi, écrit dès 1935 et lié au clan Mamba ; son origine reste discutée.",
+        "periodLabel": "Écrit dès 1935 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1976,
+              "to": 2002,
+              "label": "Recueilli de 1976 à 2002"
+            },
+            "era": "modern",
+            "statement": "Le nom Ginindza désigne un clan swazi dont le nom de louange, le sinanatelo, commence par « nkhosi, ginindza », nkhosi voulant dire « seigneur ». Les sources lues ne disent pas ce que veut dire le mot ginindza, et l'origine du clan reste discutée ; deux lectures sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Tibongo Netinanatelo Temaswati : Swazi Surnames and Their Praisenames (copie non officielle)",
+                "author": "Richard Patricks",
+                "year": 2002,
+                "url": "https://archive.org/details/tibongo-netinanatelo-temaswati-swazi-surnames-and-their-praisenames",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 19 (entrée GININDZA) ; p. 9",
+                "notes": "Première édition, Mbabane, 2002, publiée par le Conservation Trust of Swaziland, la Natural History Society of Swaziland et le Swaziland National Trust Commission ; l'auteur travaille au Musée national du Swaziland. Copie non officielle, téléversée sur Internet Archive par un particulier, lue le 18 octobre 2026 sur les images des pages. Les noms de famille et leurs noms de louange ont été recueillis surtout de 1976 à 1984, auprès de personnes dont l'auteur ne donne pas les noms. Dans chaque entrée, « X » désigne les clans avec lesquels le mariage est interdit et « XX » ce que les membres du clan ne mangent pas (guide de lecture, p. 10) ; les lettres H., M., L. et S. désignent les régions de Hhohho, Manzini, Lubombo et Shiselweni. P. 8-9, introduction, section d : deux clans dont les noms de louange contiennent le même mot ou la même phrase ne se marient pas entre eux ; les clans dont le nom de louange commence par nkhosi, « lord or master », ont eu des ancêtres Dlamini."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1976,
+              "to": 2002,
+              "label": "Recueilli de 1976 à 2002"
+            },
+            "era": "modern",
+            "statement": "Le nom Ginindza est porté par un clan établi à eMoneni, dans la région de Hhohho, et à eLundzi, eMbekelweni, kuMahlanya et eMdonjane, dans celle de Manzini, selon le recueil de noms swazis de Richard Patricks. Ses membres ne se marient pas avec les Mamba.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Tibongo Netinanatelo Temaswati : Swazi Surnames and Their Praisenames (copie non officielle)",
+                "author": "Richard Patricks",
+                "year": 2002,
+                "url": "https://archive.org/details/tibongo-netinanatelo-temaswati-swazi-surnames-and-their-praisenames",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 19 (entrée GININDZA)",
+                "notes": "Première édition, Mbabane, 2002, publiée par le Conservation Trust of Swaziland, la Natural History Society of Swaziland et le Swaziland National Trust Commission ; l'auteur travaille au Musée national du Swaziland. Copie non officielle, téléversée sur Internet Archive par un particulier, lue le 18 octobre 2026 sur les images des pages. Les noms de famille et leurs noms de louange ont été recueillis surtout de 1976 à 1984, auprès de personnes dont l'auteur ne donne pas les noms. Dans chaque entrée, « X » désigne les clans avec lesquels le mariage est interdit et « XX » ce que les membres du clan ne mangent pas (guide de lecture, p. 10) ; les lettres H., M., L. et S. désignent les régions de Hhohho, Manzini, Lubombo et Shiselweni. Entrée GININDZA : « eMoneni H., eLundzi, eMbekelweni, kuMahlanya, eMdonjane M. » ; « X Mamba »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1935,
+              "to": 2002,
+              "label": "Noté en 1935 et en 2002"
+            },
+            "statement": "Le nom Ginindza est lié au nom Mamba dans les deux sources lues. En 1935, le recensement de van Warmelo écrit « Mamba, abaka or Ginindza, abaka » pour un même chef, Bulawako. Dans le recueil de Patricks, le nom de louange des Ginindza reprend le vers « mamba lendze leseNsokonsokweni », et les deux clans ne se marient pas entre eux. Ces sources ne disent pas si les deux clans ont une origine commune.",
+            "sources": [
+              {
+                "title": "Tibongo Netinanatelo Temaswati : Swazi Surnames and Their Praisenames (copie non officielle)",
+                "author": "Richard Patricks",
+                "year": 2002,
+                "url": "https://archive.org/details/tibongo-netinanatelo-temaswati-swazi-surnames-and-their-praisenames",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 19 (entrée GININDZA) ; p. 8-9",
+                "notes": "Première édition, Mbabane, 2002, publiée par le Conservation Trust of Swaziland, la Natural History Society of Swaziland et le Swaziland National Trust Commission ; l'auteur travaille au Musée national du Swaziland. Copie non officielle, téléversée sur Internet Archive par un particulier, lue le 18 octobre 2026 sur les images des pages. Les noms de famille et leurs noms de louange ont été recueillis surtout de 1976 à 1984, auprès de personnes dont l'auteur ne donne pas les noms. Dans chaque entrée, « X » désigne les clans avec lesquels le mariage est interdit et « XX » ce que les membres du clan ne mangent pas (guide de lecture, p. 10) ; les lettres H., M., L. et S. désignent les régions de Hhohho, Manzini, Lubombo et Shiselweni. P. 8-9, introduction, section d : deux clans dont les noms de louange contiennent le même mot ou la même phrase ne se marient pas entre eux ; les clans dont le nom de louange commence par nkhosi, « lord or master », ont eu des ancêtres Dlamini. Entrée GININDZA : « X Mamba » ; nom de louange : « nkhosi, ginindza, lomphofu netinyawo takhe, mamba lendze leseNsokonsokweni […] »."
+              },
+              {
+                "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+                "author": "N. J. van Warmelo",
+                "year": 1935,
+                "url": "https://repository.up.ac.za/handle/2263/77107",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 34 (partie 2, Swaziland)",
+                "notes": "Union of South Africa, Department of Native Affairs, Ethnological Publications, vol. V, Pretoria, 1935 ; scan de l'université de Pretoria, lu le 18 octobre 2026. La partie 2, « Swaziland » (p. 34-36), donne par district, à la date de janvier 1935, les chefs, leur nom de clan (isibongo), leur nom de louange (isinanatelo) et le nombre de contribuables adultes de sexe masculin. La partie 3, section 14 (p. 83-86), range ces chefs selon l'origine de leur famille ; p. 34, l'auteur précise que ce classement vaut pour le chef et sa famille, pas forcément pour tous ses gens. P. 34, district de Bremersdorp : chef Bulawako, colonne « Isibongo » : « Mamba, abaka or Ginindza, abaka » ; colonne « Isinanatelo » : Lendze ; 105 contribuables."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1935,
+              "to": 1935,
+              "label": "Janvier 1935"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ginindza apparaît par écrit dans le recensement des chefs du Swaziland que l'ethnologue N. J. van Warmelo publie en 1935 : le chef Bulawako, du district de Bremersdorp, y porte le nom de clan « Mamba, abaka or Ginindza, abaka », avec le nom de louange Lendze. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un recensement l'a noté, pas depuis quand le clan existe. Le clan existait déjà avant elle.",
+            "formAsWritten": "Ginindza",
+            "birth": true,
+            "actors": [
+              {
+                "name": "N. J. van Warmelo",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Bulawako",
+                "role": "chef recensé sous ce nom de clan"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+                "author": "N. J. van Warmelo",
+                "year": 1935,
+                "url": "https://repository.up.ac.za/handle/2263/77107",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 34 (partie 2, Swaziland)",
+                "notes": "Union of South Africa, Department of Native Affairs, Ethnological Publications, vol. V, Pretoria, 1935 ; scan de l'université de Pretoria, lu le 18 octobre 2026. La partie 2, « Swaziland » (p. 34-36), donne par district, à la date de janvier 1935, les chefs, leur nom de clan (isibongo), leur nom de louange (isinanatelo) et le nombre de contribuables adultes de sexe masculin. La partie 3, section 14 (p. 83-86), range ces chefs selon l'origine de leur famille ; p. 34, l'auteur précise que ce classement vaut pour le chef et sa famille, pas forcément pour tous ses gens. P. 34, district de Bremersdorp : chef Bulawako, colonne « Isibongo » : « Mamba, abaka or Ginindza, abaka » ; colonne « Isinanatelo » : Lendze ; 105 contribuables."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2002,
+              "to": 2002,
+              "label": "Proposé en 2002"
+            },
+            "era": "modern",
+            "statement": "Le nom Ginindza serait celui d'un clan détaché de la famille royale Dlamini, selon Richard Patricks. Il donne le mot nkhosi, au début du nom de louange des Ginindza, comme l'exemple d'un nom de louange qui rappelle une séparation d'avec les Dlamini, et il écrit que les clans dont la louange commence par nkhosi ont eu des ancêtres Dlamini.",
+            "hypothesisGroup": "origine du clan Ginindza",
+            "sources": [
+              {
+                "title": "Tibongo Netinanatelo Temaswati : Swazi Surnames and Their Praisenames (copie non officielle)",
+                "author": "Richard Patricks",
+                "year": 2002,
+                "url": "https://archive.org/details/tibongo-netinanatelo-temaswati-swazi-surnames-and-their-praisenames",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 7 (introduction, section b) et p. 9 (section d)",
+                "notes": "Première édition, Mbabane, 2002, publiée par le Conservation Trust of Swaziland, la Natural History Society of Swaziland et le Swaziland National Trust Commission ; l'auteur travaille au Musée national du Swaziland. Copie non officielle, téléversée sur Internet Archive par un particulier, lue le 18 octobre 2026 sur les images des pages. Les noms de famille et leurs noms de louange ont été recueillis surtout de 1976 à 1984, auprès de personnes dont l'auteur ne donne pas les noms. Dans chaque entrée, « X » désigne les clans avec lesquels le mariage est interdit et « XX » ce que les membres du clan ne mangent pas (guide de lecture, p. 10) ; les lettres H., M., L. et S. désignent les régions de Hhohho, Manzini, Lubombo et Shiselweni. P. 8-9, introduction, section d : deux clans dont les noms de louange contiennent le même mot ou la même phrase ne se marient pas entre eux ; les clans dont le nom de louange commence par nkhosi, « lord or master », ont eu des ancêtres Dlamini. P. 7 : parmi les sortes de mots d'un nom de louange, « (10) reference to the clan having split from the Dlamini », avec pour exemple « \"Nkhosi\" (Ginindza) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1935,
+              "to": 1935,
+              "label": "Proposé en 1935"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ginindza serait celui d'un clan des Swazis proprement dits, les amaNgwane, venus avec la famille royale, selon N. J. van Warmelo. Il range le chef Bulawako, Mamba ou Ginindza, parmi eux, en précisant que ce classement vaut pour la famille du chef, pas forcément pour tous ses gens.",
+            "hypothesisGroup": "origine du clan Ginindza",
+            "sources": [
+              {
+                "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+                "author": "N. J. van Warmelo",
+                "year": 1935,
+                "url": "https://repository.up.ac.za/handle/2263/77107",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 84 (partie 3, section 14) ; p. 34",
+                "notes": "Union of South Africa, Department of Native Affairs, Ethnological Publications, vol. V, Pretoria, 1935 ; scan de l'université de Pretoria, lu le 18 octobre 2026. La partie 2, « Swaziland » (p. 34-36), donne par district, à la date de janvier 1935, les chefs, leur nom de clan (isibongo), leur nom de louange (isinanatelo) et le nombre de contribuables adultes de sexe masculin. La partie 3, section 14 (p. 83-86), range ces chefs selon l'origine de leur famille ; p. 34, l'auteur précise que ce classement vaut pour le chef et sa famille, pas forcément pour tous ses gens. P. 84, sous le titre « amaSWAZI (amaNGWANE) PROPER », ligne 14-344 : « Mamba, abaka or Ginindza, abaka », chef Bulawako, district de Bremersdorp."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

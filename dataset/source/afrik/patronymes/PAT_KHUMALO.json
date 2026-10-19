@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "L'analyse morphologique de Celani Lucky Zwane classe Khumalo parmi les noms de clan zoulous et rapporte deux explications concurrentes : une composition de khuma (« manger non cuit ») et lo (« celui-ci »), associée par les informateurs à la rapidité guerrière, ou une référence à une espèce d'arbre épineux présente dans l'ancien lieu d'établissement. Comme l'article transmet ces récits sans les départager, l'étymologie reste contestée.",
-        "claimStatus": "contested",
-        "sourceRefs": ["zwane-2020-khumalo"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -281,6 +276,27 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 28*",
                 "notes": "Pinetown (Natal), Mariannhill Mission Press, 1905. Lu dans la numérisation d'Internet Archive le 16 octobre 2026, page vue en image. Page 28* de l'histoire placée en tête du dictionnaire : « Beyond the Black Mfolozi [...] were the large tribe of Ndwandwes or Nxumalos, with its off-shoot the Kumalos, under the famous chief, Zwide. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'analyse morphologique de Celani Lucky Zwane classe Khumalo parmi les noms de clan zoulous et rapporte deux explications concurrentes : une composition de khuma (« manger non cuit ») et lo (« celui-ci »), associée par les informateurs à la rapidité guerrière, ou une référence à une espèce d'arbre épineux présente dans l'ancien lieu d'établissement. Comme l'article transmet ces récits sans les départager, l'étymologie reste contestée.",
+            "claimStatus": "contested",
+            "sources": [
+              {
+                "title": "The Morphological Analysis of Zulu Clan Names",
+                "author": "Celani Lucky Zwane",
+                "year": 2020,
+                "url": "https://doi.org/10.5430/elr.v9n3p36",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 44",
+                "notes": "English Linguistics Research 9(3), 2020, lu en texte intégral le 16 octobre 2026. L'auteur combine analyse de documents et entretiens à Kwahlathi (Ladysmith, KwaZulu-Natal). Page 44, § 6.5.1 et § 6.7.1 : Khumalo est analysé comme clan zoulou ; l'auteur glose le verbe khuma tantôt « mâcher à sec », tantôt « manger cru », et ne départage pas les explications."
               }
             ]
           }

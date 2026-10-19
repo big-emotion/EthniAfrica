@@ -22,13 +22,8 @@
   "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Bates et Carter retracent Moheeth Ramgoolam, parti du district de Saran au Bihar en 1896 pour rejoindre son frère à Maurice, devenu sirdar à l'usine sucrière Queen Victoria, puis père de Seewoosagur Ramgoolam. Cette chronique documente cette lignée précise sans servir d'étymologie au nom.",
-        "claimStatus": "established",
-        "sourceRefs": ["bates-carter-2017-ramgoolam"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -205,6 +200,27 @@
                 "source_kind": "archive",
                 "page": "cote PCAP 6/109/2",
                 "notes": "Notice du catalogue des Archives nationales britanniques, lue le 11 octobre 2026. Parmi les intimés figure « Ramgoolam Sahoo », fils mineur de Hurnundun Lall Sahoo : Ramgoolam y est le prénom, Sahoo le nom de famille. L'affaire vient du Bengale, en Inde."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Bates et Carter retracent Moheeth Ramgoolam, parti du district de Saran au Bihar en 1896 pour rejoindre son frère à Maurice, devenu sirdar à l'usine sucrière Queen Victoria, puis père de Seewoosagur Ramgoolam. Cette chronique documente cette lignée précise sans servir d'étymologie au nom.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Sirdars as intermediaries in nineteenth century Indian Ocean indentured labour migration",
+                "author": "Crispin Bates et Marina Carter",
+                "year": 2017,
+                "url": "https://www.pure.ed.ac.uk/ws/portalfiles/portal/25061873/crispin_bates_accepted.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 13 de la version acceptée",
+                "notes": "Modern Asian Studies 51(2), 2017 ; version acceptée relue le 11 octobre 2026. « Moheeth Ramgoolam migrated from the Saran district of Bihar in 1896 » ; son fils Kewal est « later to be known as Seewoosagur Ramgoolam ». Le texte ne donne pas le sens du nom."
               }
             ]
           }

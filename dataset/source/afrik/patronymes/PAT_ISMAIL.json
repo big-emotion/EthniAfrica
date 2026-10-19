@@ -11,7 +11,10 @@
     {
       "spelling": "Ismail",
       "attestations": [
-        { "countryId": "DJI", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "DJI",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -20,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "La notice consultée présente Ismail (إسماعيل) comme la forme arabe d'Ishmael et Ismaaciil comme forme somalie. Ce rapprochement vient d'une contribution communautaire et reste une hypothèse.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["ismail-behindthename"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -85,5 +83,148 @@
       "fieldPath": "homonyms",
       "reason": "Les sources consultées ne permettent pas encore de présenter un autre nom écrit comme Ismail, mais d'origine différente."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ismail est un nom personnel musulman, celui du prophète Ismaël, fils d'Abraham. Chez les Somalis, il se transmet dans la chaîne des noms : on porte après son propre nom celui de son père, puis celui de son grand-père. Les sources lues ne disent pas quand il est devenu un nom de famille à Djibouti.",
+    "names": [
+      {
+        "nameText": "Ismail",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom musulman du prophète Ismaël, porté chez les Somalis comme nom du père ou du grand-père.",
+        "periodLabel": "Écrit dès 1856 chez les Somalis ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ismail est un nom personnel musulman : c'est le nom arabe d'Ismaël, que le Coran présente comme un messager et un prophète. Il correspond à l'Ismaël de la Bible, fils d'Abraham et d'Agar, selon le dictionnaire de Patrick Hanks.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Le Coran, sourate 19, verset 54 — traduction de Muhammad Hamidullah",
+                "author": "Muhammad Hamidullah (traduction)",
+                "year": null,
+                "url": "https://quran.com/fr/19:54?translations=31",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "sourate 19, verset 54",
+                "notes": "Traduction française de Muhammad Hamidullah, lue sur le site Quran.com le 18 octobre 2026 : « Et mentionne Ismaël, dans le Livre. Il était fidèle à ses promesses ; et c'était un Messager et un Prophète. »"
+              },
+              {
+                "title": "Ismail Name Meaning and Ismail Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=ismail",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée Ismail du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch : « Arabic: from a personal name, 'Ismāʿīl, corresponding to Biblical Ishmael » ; en islam, c'est le nom d'un prophète, fils d'Ibrahim (Abraham) et de sa seconde épouse Hajar (Agar). Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ismail est un nom personnel, non un nom de famille : chez les Somalis, chacun porte son propre nom, puis celui de son père et celui de son grand-père. Ismail peut donc être le nom d'une personne, de son père ou de son grand-père, selon Cabdalla Cumar Mansuur.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Somali names and individual identity",
+                "author": "Cabdalla Cumar Mansuur",
+                "year": 2021,
+                "url": "https://web.archive.org/web/20210920113414/https://wardheernews.com/wp-content/uploads/2021/06/Somali-names-and-indvidual-identity-By-Abdalla-Mansuur.pdf",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 3",
+                "notes": "Article publié le 14 juin 2021 par WardheerNews. L'adresse d'origine ne répondait plus le 18 octobre 2026 ; le texte a été lu en entier dans la copie du 20 septembre 2021 qu'en garde la Wayback Machine, dont les pages sont numérotées. Page 3 : « The Somali naming system is based on the genealogical system, consisting of three names: 1. a personal name; 2. a father's name; 3. a grandfather's name. Since a system of name(s)-surname does not exist, the Somali names often resemble to each other »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "Rapporté en 1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Ismail figure dans la généalogie que les Darod donnent à leur ancêtre : Darud Jabarti, fils d'Ismail, chez l'explorateur Richard Burton, et le cheikh Abd er-Rahman ben Djabarti ben Ismaël chez l'officier de marine Charles Guillain.",
+            "sources": [
+              {
+                "title": "First Footsteps in East Africa; or, An Exploration of Harar",
+                "author": "Richard F. Burton",
+                "year": 1856,
+                "url": "https://archive.org/details/firstfootstepsi00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 103",
+                "notes": "Londres, Longman, Brown, Green, and Longmans, 1856 ; exemplaire numérisé sur archive.org. Récit d'un voyage fait en 1854-1855 dans le pays somali et jusqu'à Harar. Voyageur britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Page 103 : « Darud Jabarti bin Ismail bin Akil (or Ukayl) is supposed by his descendants to have been a noble Arab ». Lu le 18 octobre 2026."
+              },
+              {
+                "title": "Documents sur l'histoire, la géographie et le commerce de l'Afrique orientale, deuxième partie, tome I",
+                "author": "Charles Guillain",
+                "year": 1856,
+                "url": "https://archive.org/details/documentssurlhis21guil",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 400, note",
+                "notes": "Paris, Arthus Bertrand, 1856, deuxième partie, tome premier : relation du voyage du brick le Ducouëdic (1846-1848), lue en fac-similé sur archive.org. Page 400, note : « cet Arabe, désigné sous le nom de Daroud par les Soumal, s'appelait Cheikh-abd-er-Rhaman-ben-Djabarti-ben-Ismaël ». Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Ismail apparaît chez l'explorateur Richard Burton dans la généalogie du gouverneur de Zeila, le hadj Sharmarkay, que lui donne son fils Mohammed : Ismail y est le fils aîné d'Arrah, l'un des ancêtres de la lignée. C'est la plus ancienne trace de ce nom chez les Somalis que le projet connaît ; le nom est bien plus ancien qu'elle.",
+            "formAsWritten": "Ismail",
+            "birth": true,
+            "sources": [
+              {
+                "title": "First Footsteps in East Africa; or, An Exploration of Harar",
+                "author": "Richard F. Burton",
+                "year": 1856,
+                "url": "https://archive.org/details/firstfootstepsi00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 17-18",
+                "notes": "Londres, Longman, Brown, Green, and Longmans, 1856 ; exemplaire numérisé sur archive.org. Récit d'un voyage fait en 1854-1855 dans le pays somali et jusqu'à Harar. Voyageur britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Page 17 : « The governor of Zayla, El Hajj Sharmarkay bin Ali Salih ». Page 18, note : « The following genealogical table was given to me by Mohammed Sharmarkay », avec, au rang 5, « Musa (the third son : the eldest was Ismail ; then, in succession, Ishak, Misa, Mikahil, Gambah, Dandan, &c.) », fils d'Arrah. Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La notice consultée présente Ismail (إسماعيل) comme la forme arabe d'Ishmael et Ismaaciil comme forme somalie. Ce rapprochement vient d'une contribution communautaire et reste une hypothèse.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Ismail",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://www.behindthename.com/name/ismail",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Behind the Name, notice consultée intégralement le 2 septembre 2026. Elle donne le script arabe إسماعيل, décrit Ismail comme forme arabe d'Ishmael et répertorie Ismaaciil en somali. Aucun ouvrage savant n'est cité directement dans la notice."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

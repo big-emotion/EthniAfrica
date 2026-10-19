@@ -142,9 +142,9 @@ describe("ETNI-1684 first clan-name dossiers", () => {
         ).toContain(source.tier);
       }
 
-      // Every declared source is cited and every citation resolves — the two
-      // halves of the same invariant, which is what keeps a fiche's advertised
-      // provenance equal to the provenance it actually uses.
+      // Source references that remain in the dossier must resolve. Migrated
+      // name-history accounts carry their source metadata directly, so they do
+      // not retain the old sourceRefs key.
       const cited = new Set(
         JSON.stringify(raw)
           .match(/"sourceRefs":\[[^\]]*\]/g)
@@ -155,18 +155,20 @@ describe("ETNI-1684 first clan-name dossiers", () => {
       const declared = new Set(
         (raw.sources as Source[]).map(({ sourceKey }) => sourceKey)
       );
-      expect([...cited].sort(), `${id}: citations resolve`).toEqual(
-        [...declared].sort()
-      );
+      for (const sourceKey of cited) {
+        expect(declared.has(sourceKey), `${id}: ${sourceKey} resolves`).toBe(
+          true
+        );
+      }
 
       // A gap is declared for an empty field and for nothing else.
       const gapPaths = (raw.gaps as Array<{ fieldPath: string }>).map(
         ({ fieldPath }) => fieldPath
       );
       const emptyFields = [
-        raw.origin.oralTraditions.length === 0 &&
-        raw.origin.writtenChronicles.length === 0 &&
-        raw.origin.linguisticReconstructions.length === 0
+        !raw.nameHistory?.names.some(
+          (name: { accounts: unknown[] }) => name.accounts.length > 0
+        )
           ? "origin"
           : null,
         raw.alliances.length === 0 ? "alliances" : null,

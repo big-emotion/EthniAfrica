@@ -7,6 +7,7 @@ import type { NameHistory } from "../nameHistoryParser";
 // @req REQ-196
 export const VALID_NAME_HISTORY: NameHistory = {
   summary: "Le nom Yoruba a plusieurs origines possibles, présentées plus bas.",
+  originExplained: true,
   names: [
     {
       nameText: "Yoruba",

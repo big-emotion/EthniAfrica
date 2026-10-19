@@ -343,3 +343,82 @@ describe("a word fiche as a subject", () => {
     ).toEqual(["PAT_RACE", "WRD_RACE"]);
   });
 });
+
+describe("a name the fiche's history tells (ETNI-2093)", () => {
+  const fula: SearchResult = {
+    ...people("PPL_FULA", "Peul"),
+    historyNames: ["Fulɓe", "Peul", "Fulani"],
+  };
+  const ids = (results: SearchResult[]) => results.map(({ id }) => id);
+
+  // @req REQ-135
+  it("answers to a history name the fiche is not filed under", () => {
+    const konkomba: SearchResult = {
+      ...people("PPL_KONKOMBA", "Konkomba"),
+      historyNames: ["Bikpakpaam", "Konkomba"],
+    };
+
+    expect(ids(selectNameSubject([fula], "Fulɓe"))).toEqual(["PPL_FULA"]);
+    expect(ids(selectNameSubject([konkomba], "Bikpakpaam"))).toEqual([
+      "PPL_KONKOMBA",
+    ]);
+  });
+
+  // @req REQ-135
+  it("answers to a history name typed without its letters", () => {
+    const toura: SearchResult = {
+      ...people("PPL_TOURA", "Toura"),
+      historyNames: ["Wɛɛmɛɛbo"],
+    };
+    const arb: SearchResult = {
+      type: "language",
+      id: "arb",
+      name: "Arabe standard",
+      historyNames: ["Al-ʿarabiyya al-fuṣḥā"],
+    };
+
+    expect(ids(selectNameSubject([fula], "Fulbe"))).toEqual(["PPL_FULA"]);
+    expect(ids(selectNameSubject([toura], "Weemeebo"))).toEqual(["PPL_TOURA"]);
+    expect(ids(selectNameSubject([arb], "Al-arabiyya al-fusha"))).toEqual([
+      "arb",
+    ]);
+  });
+
+  // @req REQ-135
+  it("still answers a Latin filed name as before", () => {
+    expect(ids(selectNameSubject([fula], "Peul"))).toEqual(["PPL_FULA"]);
+  });
+
+  // « Bambara » files a people and a language, and the Senufo history tells
+  // it too. Each answers; the page asks which one (REQ-178, DEC-057).
+  // @req REQ-178
+  it("adds the fiche whose history tells the name beside those filed under it, crowning none", () => {
+    const senufo: SearchResult = {
+      ...people("PPL_SENUFO", "Sénoufo"),
+      historyNames: ["Senufo", "Bambara"],
+    };
+    const bambara = people("PPL_BAMBARA", "Bambara");
+    const bam: SearchResult = { type: "language", id: "bam", name: "Bambara" };
+
+    expect(ids(selectNameSubject([senufo, bambara, bam], "Bambara"))).toEqual([
+      "PPL_SENUFO",
+      "PPL_BAMBARA",
+      "bam",
+    ]);
+  });
+
+  // @req REQ-135
+  it("answers a fiche without a history by its filed name, as before", () => {
+    expect(
+      ids(selectNameSubject([people("PPL_BETE", "Bété")], "Bété"))
+    ).toEqual(["PPL_BETE"]);
+    expect(
+      ids(
+        selectNameSubject(
+          [{ ...people("PPL_BETE", "Bété"), historyNames: [] }],
+          "Bété"
+        )
+      )
+    ).toEqual(["PPL_BETE"]);
+  });
+});

@@ -61,6 +61,33 @@ describe("a reviewed answer", () => {
       screen.queryByRole("button", { name: "Voir les sources" })
     ).toBeNull();
   });
+
+  // @req REQ-178
+  it("keeps French punctuation and guillemets together in reviewed answers", () => {
+    const { container } = render(
+      <NameAnswerEntries
+        language="fr"
+        entries={[
+          {
+            answer: {
+              ...answer,
+              paragraphs: ["Un nom : « Fulɓe ! » ; une autre forme ?"],
+              uncertainty: "À vérifier : une piste.",
+            },
+            subjects: [],
+          },
+        ]}
+      />
+    );
+
+    const paragraphs = Array.from(
+      container.querySelectorAll("[data-answer-subject] p")
+    ).map((paragraph) => paragraph.textContent);
+    expect(paragraphs).toEqual([
+      "Un nom\u00a0: «\u00a0Fulɓe\u00a0!\u00a0»\u00a0; une autre forme\u00a0?",
+      "À vérifier\u00a0: une piste.",
+    ]);
+  });
 });
 
 describe("ReviewedOrigin", () => {

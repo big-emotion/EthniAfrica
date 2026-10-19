@@ -6,7 +6,7 @@
   },
   "id": "PAT_NSUE",
   "nameMain": "Nsue",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Nsue",
@@ -18,11 +18,12 @@
       ]
     }
   ],
-  "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "transmissionMode": "patrilineal",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -55,12 +56,8 @@
   ],
   "gaps": [
     {
-      "fieldPath": "origin",
-      "reason": "la recherche web et bibliographique combinant « Nsue », « Fang », « Guinée équatoriale », « apellido », « onomástica », « etimología », « clan », « transmisión », « alianza », « casta », « homónimo » et « obituario », ainsi que la page Forebears dédiée ; l'article fang déjà mobilisé par une autre fiche a été écarté afin de ne pas partager une source entre dossiers n'ont livré aucune tradition attribuée, chronique ou étude linguistique propre à ce nom qui en établirait l'origine ; les rapprochements fondés sur la seule ressemblance ou la seule géographie ont été écartés."
-    },
-    {
       "fieldPath": "nameSystem",
-      "reason": "la recherche web et bibliographique combinant « Nsue », « Fang », « Guinée équatoriale », « apellido », « onomástica », « etimología », « clan », « transmisión », « alianza », « casta », « homónimo » et « obituario », ainsi que la page Forebears dédiée ; l'article fang déjà mobilisé par une autre fiche a été écarté afin de ne pas partager une source entre dossiers n'ont pas établi que la catégorie de système nominal portée par la fiche provisoire décrive ce nom lui-même ; elle reste une hypothèse de classement et n'est pas transformée en fait."
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom d'homme fang. Dans l'exemple de Rosendo Ela Nsue Mibui, les enfants d'un homme appelé Nsue portent tous ce nom après le leur. Le modèle a une case pour un nom de famille héréditaire, mais la fiche ne l'utilise pas : chez les Fang, chaque enfant prend pour second nom le nom de son propre père. Bonifacio Nguema Obiang-Mikue précise que c'est le fils appelé lui aussi Nsue, Nsue Nsue, qui portera ce nom à ses propres enfants. La fiche range donc ce nom parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "alliances",
@@ -77,10 +74,44 @@
     {
       "fieldPath": "homonyms",
       "reason": "la recherche web et bibliographique combinant « Nsue », « Fang », « Guinée équatoriale », « apellido », « onomástica », « etimología », « clan », « transmisión », « alianza », « casta », « homónimo » et « obituario », ainsi que la page Forebears dédiée ; l'article fang déjà mobilisé par une autre fiche a été écarté afin de ne pas partager une source entre dossiers n'ont pas établi de lignée homonyme d'origine distincte documentable ; une diffusion dans plusieurs pays ou une graphie voisine ne suffit pas à créer un homonyme."
-    },
-    {
-      "fieldPath": "transmissionMode",
-      "reason": "la recherche web et bibliographique combinant « Nsue », « Fang », « Guinée équatoriale », « apellido », « onomástica », « etimología », « clan », « transmisión », « alianza », « casta », « homónimo » et « obituario », ainsi que la page Forebears dédiée ; l'article fang déjà mobilisé par une autre fiche a été écarté afin de ne pas partager une source entre dossiers n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Nsue est un nom d'homme fang, porté en Guinée équatoriale. Chez les Fang, le nom du père devient le second nom de ses enfants, et deux auteurs prennent justement Nsue pour exemple. Les sources lues ne disent ni ce que veut dire Nsue ni depuis quand il est écrit : on ne sait pas avec certitude d'où il vient.",
+    "names": [
+      {
+        "nameText": "Nsue",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom d'homme fang de Guinée équatoriale, que le père transmet à ses enfants ; son sens reste inconnu.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2005,
+              "to": 2023,
+              "label": "Écrit en 2005, repris en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Nsue sert d'exemple à Rosendo Ela Nsue Mibui pour expliquer comment les Fang se nomment : les enfants d'un homme appelé Nsue portent tous Nsue comme nom de famille. Bonifacio Nguema Obiang-Mikue, qui le cite, ajoute qu'un fils qui reçoit lui aussi le nom Nsue s'appelle alors Nsue Nsue.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La cultura para el reconocimiento de la identidad: caso de la cultura fang de Guinea Ecuatorial",
+                "author": "Bonifacio Nguema Obiang-Mikue",
+                "year": 2023,
+                "url": "https://doi.org/10.29166/catedra.v6i1.4282",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 179",
+                "notes": "Article de Revista Cátedra 6(1), 2023, pp. 171-186. Lu le 18 octobre 2026 dans le PDF en espagnol. Page 179 : l'auteur cite Rosendo Ela Nsue Mibui (2005, p. 92) : « una persona que se llamase -NSUE- todos tendrán como apellidos el nombre de su padre -NSUE- ». Il ajoute son propre exemple : un père nommé Nsue a quatre enfants, Nguema Nsue, Ondo Nsue, Nsue Nsue et Obono Nsue ; Nsue Nsue est « el representante onomástico de su padre que llevaría el nombre a sus hijos ». L'ouvrage de Nsue Mibui n'a pas été lu."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

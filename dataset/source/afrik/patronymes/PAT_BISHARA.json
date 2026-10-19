@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [],
@@ -51,10 +52,6 @@
     {
       "fieldPath": "nameSystem",
       "reason": "Le Dictionary of American Family Names fait de Bishara un nom personnel ; aucune source consultée n'en fait un nom de clan. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant. La fiche reste donc parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
-    },
-    {
-      "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
       "fieldPath": "alliances",

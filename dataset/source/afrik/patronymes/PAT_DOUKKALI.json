@@ -32,6 +32,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -72,10 +73,6 @@
   ],
   "gaps": [
     {
-      "fieldPath": "origin",
-      "reason": "Les recherches exactes « Doukkali anthroponymie », « Doukkali onomastique » et « Doukkali surname etymology » ont été menées dans Persée, ASJP, CRASC, OpenEdition, Google Scholar et des dépôts universitaires nord-africains. Aucun travail savant consacré à l’origine ou à l’histoire d’une lignée portant exactement cette graphie n’a été trouvé. La source propre au nom n’établit qu’une graphie ou une distribution et ne permet d’énoncer ni étymologie ni origine de lignée."
-    },
-    {
       "fieldPath": "peoples",
       "reason": "Les recherches exactes « Doukkali anthroponymie », « Doukkali onomastique » et « Doukkali surname etymology » ont été menées dans Persée, ASJP, CRASC, OpenEdition, Google Scholar et des dépôts universitaires nord-africains. Aucun travail savant consacré à l’origine ou à l’histoire d’une lignée portant exactement cette graphie n’a été trouvé. La source propre au nom ne démontre pas une association exclusive avec le peuple indiqué par la file d’attente ; ce rattachement reste au niveau non vérifié."
     },
@@ -107,5 +104,97 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les recherches « Doukkali lignée », « Doukkali clan », « Doukkali tribe » et « Doukkali place name » n’ont pas permis de déterminer si cette graphie désigne une lignée, un clan, une caste, une classe d’âge ou un établissement dans le contexte précis de la fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Doukkali a la forme d'une nisba, un nom qui rattache une personne à un groupe ou à un lieu ; il renverrait aux Doukkala, une région et une population du Maroc. Un saint enterré à Safi, Abû Muhammad Sâlih, né vers 1155, le porte déjà sous la forme ed-Dukkâlî. On ne sait pas avec certitude comment les familles Doukkali d'aujourd'hui l'ont reçu.",
+    "names": [
+      {
+        "nameText": "Doukkali",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "shortLine": "Un nom de relation qui renverrait aux Doukkala, au Maroc ; un saint de Safi le porte au XIIe siècle.",
+        "periodLabel": "Écrit dès le XIIe ou le XIIIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Lecture d'après des travaux de 1926 et de 1991"
+            },
+            "statement": "Le nom Doukkali a la forme d'une nisba, un nom de relation qui rattache une personne à une tribu, à une ethnie, à un ancêtre ou à un lieu, selon Khaled Kchir, qui résume l'étude de Jacqueline Sublet sur le nom arabe. Il renverrait aux Doukkala, que G. S. Colin écrit Dukkâla et cite à côté de la région de Marrakech et du Tadla. Ce rapprochement est le nôtre : ces sources ne parlent pas du nom de famille.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Le voile du nom de J. Sublet",
+                "author": "Khaled Kchir",
+                "year": 1991,
+                "url": "https://irmcmaghreb.org/wp-content/uploads/2022/11/Correspondances31-32-1.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Compte rendu de Jacqueline Sublet, Le voile du nom. Essai sur le nom propre arabe (Paris, PUF, 1991), dans Correspondances, n° 31-32, mai-juin 1991, p. 2-3, bulletin du Centre de documentation Tunisie-Maghreb, mis en ligne par l'IRMC ; lu le 18 octobre 2026. Page 3 : « La Nisba ou nom de relation est l'élément du nom qui caractérise l'état et la situation. La nisba rattache soit verticalement (à un ascendant, une ethnie, un ancêtre éponyme, une tribu, un toponyme hérité) soit horizontalement (à un toponyme acquis, un maître, un événement [...]) »."
+              },
+              {
+                "title": "El-Maqsad (vies des saints du Rîf) de Abd el-Haqq el-Bâdisî, traduction annotée",
+                "author": "G. S. Colin",
+                "year": 1926,
+                "url": "https://archive.org/details/ARCHIVESMAROCAINES1926.AbdelhakkAlBadisi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 12",
+                "notes": "Archives marocaines, volume XXVI, Paris, Librairie ancienne Honoré Champion, 1926 ; reproduction numérique de Gallica (BnF) déposée sur archive.org par un particulier (copie non officielle), lue le 18 octobre 2026. Page 12 (introduction de Colin) : « la région de Marrâkech, le Tâdla, la Tâmasnâ et chez les Dukkâla ». "
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1407,
+              "label": "Avant 1407"
+            },
+            "era": "polity",
+            "statement": "Le nom Doukkali se lit au pluriel, Dukkâlîyîn, chez Ibn Qunfud, mort en 1407 : les Dukkâlîyîn font partie du groupement mystique des disciples d'Abû Muhammad Sâlih, selon le passage que traduit G. S. Colin.",
+            "formAsWritten": "Dukkâlîyîn",
+            "sources": [
+              {
+                "title": "El-Maqsad (vies des saints du Rîf) de Abd el-Haqq el-Bâdisî, traduction annotée",
+                "author": "G. S. Colin",
+                "year": 1926,
+                "url": "https://archive.org/details/ARCHIVESMAROCAINES1926.AbdelhakkAlBadisi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 207",
+                "notes": "Archives marocaines, volume XXVI, Paris, Librairie ancienne Honoré Champion, 1926 ; reproduction numérique de Gallica (BnF) déposée sur archive.org par un particulier (copie non officielle), lue le 18 octobre 2026. Page 207, d'après Ibn Qunfud (mort en 810/1407) : « 3e les Mâgirîyîn, groupement d'Abû Muhammad Sâlih (cf. p. 92, n. 295) ; les Dukkâlîyîn en font partie »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1155,
+              "to": 1233,
+              "label": "Vers 1155-1233"
+            },
+            "era": "polity",
+            "statement": "Le nom Doukkali apparaît, sous la forme ed-Dukkâlî, dans le nom d'Abû Muhammad Sâlih, un saint né vers 1155, mort vers 1233 et enterré au ribât de Safi, selon les notes de G. S. Colin sur les vies des saints du Rif d'Abd el-Haqq el-Bâdisî. C'est la plus ancienne trace de ce nom que le projet connaît ; elle nomme un homme, pas encore une famille.",
+            "formAsWritten": "ed-Dukkâlî",
+            "birth": true,
+            "sources": [
+              {
+                "title": "El-Maqsad (vies des saints du Rîf) de Abd el-Haqq el-Bâdisî, traduction annotée",
+                "author": "G. S. Colin",
+                "year": 1926,
+                "url": "https://archive.org/details/ARCHIVESMAROCAINES1926.AbdelhakkAlBadisi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 195",
+                "notes": "Archives marocaines, volume XXVI, Paris, Librairie ancienne Honoré Champion, 1926 ; reproduction numérique de Gallica (BnF) déposée sur archive.org par un particulier (copie non officielle), lue le 18 octobre 2026. Page 195, note 295 : « Abû Muhammad Sâlih b. Yansâran (Yanzâran) b. Gafiyân ed-Dukkâlî el-Mâgirî, l'un des disciples d'Abû Madyan [...]. Né vers 550/1155 [...] Ce saint personnage mourut vers 631/1233 et fut enseveli au ribât d'Âsfî ». "
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

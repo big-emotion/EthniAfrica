@@ -40,6 +40,13 @@ export interface FicheNameStoryProps {
    * country-*.dc.html), keyed by the form they explain.
    */
   foldedReadings?: ReadonlyMap<string, { count: number; node: ReactNode }>;
+  /**
+   * The link to the story of the fiche's name (brief 10 §1), drawn under the
+   * lead and its « Lire la suite », before the name rows: the families and
+   * countries place it there. The language fiche passes it as a child
+   * instead, since its chapter has no lead and the link closes it.
+   */
+  storyLink?: ReactNode;
 }
 
 function cutAtWord(sentence: string): string {
@@ -158,6 +165,7 @@ export function FicheNameStory({
   caution,
   children,
   foldedReadings,
+  storyLink,
 }: FicheNameStoryProps) {
   const words = ficheNameStoryCopy[language];
   const origin = naming.origin?.trim();
@@ -183,13 +191,10 @@ export function FicheNameStory({
   const body = (
     <div className="fiche-name-story" data-testid="fiche-name-story">
       {chapter ? null : (
-        <p className="fiche-name-story__eyebrow">{words.eyebrow}</p>
+        <h3 className="fiche-name-story__ask">{words.title}</h3>
       )}
       {origin ? (
         <>
-          <h3 className="fiche-name-story__ask">
-            {forms.length > 1 ? words.askSeveral : words.askOne}
-          </h3>
           <p className="fiche-name-story__lead" data-testid="name-story-lead">
             {shownLead}
           </p>
@@ -204,6 +209,7 @@ export function FicheNameStory({
           ) : null}
         </>
       ) : null}
+      {storyLink}
       {forms.length > 0 ? (
         <ul className="fiche-name-story__forms">
           {visible.map((form) => (
@@ -249,7 +255,7 @@ export function FicheNameStory({
   );
 
   return chapter ? (
-    <FicheSection title={words.eyebrow}>
+    <FicheSection title={words.title}>
       {body}
       {children}
     </FicheSection>

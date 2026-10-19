@@ -23,6 +23,7 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -54,10 +55,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "la recherche web et bibliographique combinant « Mulumba », « Luba », « la RDC », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la page Forebears propre au nom consultée directement, n’a livré aucune tradition attribuée, chronique ou étude linguistique établissant l’origine de Mulumba. Les homonymes d’autres langues et les déductions tirées de la seule distribution ont été écartés."
-    },
     {
       "fieldPath": "nameSystem",
       "reason": "la recherche web et bibliographique combinant « Mulumba », « Luba », « la RDC », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la page Forebears propre au nom consultée directement, n’a pas établi que la catégorie provisoire portée par la fiche décrive Mulumba lui-même ; elle reste une hypothèse de classement technique, sans être transformée en affirmation historique."

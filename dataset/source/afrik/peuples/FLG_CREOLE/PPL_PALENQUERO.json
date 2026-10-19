@@ -116,5 +116,154 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Palenqueros désigne les habitants de San Basilio de Palenque, un village fondé par des esclaves en fuite près de Cartagena, en Colombie, et qui se nomment eux-mêmes Palenqueros. Ils appellent leur langue Lengua. Le nom vient de celui du village, Palenque, dont l'origine est présentée plus bas avec les sources.",
+    "names": [
+      {
+        "nameText": "Palenqueros",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "spa",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les habitants de San Basilio de Palenque, écrit dès 1948.",
+        "usedIn": ["spa", "fra"],
+        "periodLabel": "Écrit dès 1948 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "Recensement de 2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Palenquero est l'une des réponses du recensement colombien de 2018 : on peut s'y déclarer « Palenquero de San Basilio ». Cette déclaration repose sur l'autoreconnaissance ethnique, le sentiment d'appartenance que chacun exprime envers un groupe, selon le rapport que l'institut national de la statistique a écrit avec l'instance de consultation de ces communautés.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Comunidades Negras, Afrocolombianas, Raizales y Palenqueras : resultados del Censo Nacional de Población y Vivienda 2018",
+                "author": "DANE et Comisión VII de l'Espacio Nacional de Consulta Previa",
+                "year": 2021,
+                "url": "https://www.dane.gov.co/files/investigaciones/boletines/grupos-etnicos/informe-resultados-comunidades-narp-cnpv2018.pdf",
+                "tier": "official",
+                "source_kind": "official_statistics",
+                "notes": "Rapport publié à Bogotá en 2021 par le Département administratif national de la statistique de Colombie avec la commission des communautés noires, afrocolombiennes, raizales et palenqueras, qui y parle à la première personne. Lu dans le PDF le 18 octobre 2026.",
+                "page": "p. 23 et p. 40"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Palenqueros désigne les habitants du village, qui appellent leur langue Lengua. Longtemps jugée « arriérée », même par des Palenqueros, cette langue a cessé d'être transmise à beaucoup d'enfants vers 1960, avant un retournement : de nombreux adolescents prennent aujourd'hui plaisir à l'apprendre, selon le linguiste Armin Schwegler.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Survey chapter: Palenquero",
+                "author": "Armin Schwegler",
+                "year": 2013,
+                "url": "https://apics-online.info/surveys/48",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Atlas of Pidgin and Creole Language Structures Online, lu le 18 octobre 2026. « autoglossonym: Lengua »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1948,
+              "to": 1948,
+              "label": "13 mars 1948"
+            },
+            "era": "modern",
+            "statement": "Le nom Palenqueros apparaît dans le récit que l'écrivain colombien Manuel Zapata Olivella publie dans la revue Cromos, à Bogotá, sur sa première visite au village : il y raconte « l'histoire des Noirs palenqueros » et note que « les palenqueros ont deux langues », l'une pour la vie du village, l'autre l'espagnol pour parler aux voisins. C'est la plus ancienne trace de ce nom que le projet connaît. Le village et ses habitants existaient bien avant lui.",
+            "formAsWritten": "negros palenqueros",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Por los senderos de sus ancestros : textos escogidos 1940-2000",
+                "author": "Manuel Zapata Olivella (textes réunis par Alfonso Múnera)",
+                "year": 2010,
+                "url": "https://archive.org/details/por-los-senderos-de-sus-ancestros",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Bogotá, ministère de la Culture, Biblioteca de literatura afrocolombiana, tome XVIII, 2010. Le livre reprend l'article « Los negros palenqueros », paru dans la revue Cromos, vol. LXV, n° 1622, Bogotá, 13 mars 1948, p. 30-31 et 45-46. Lu dans une numérisation d'Internet Archive déposée par un particulier (copie non officielle) ; numéros de page lus sur l'image.",
+                "page": "p. 76-77 et p. 80"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1713,
+              "to": 1717,
+              "label": "De 1713 à 1717"
+            },
+            "era": "colonial",
+            "statement": "Le nom Palenqueros n'apparaît pas encore dans les sources que nous avons lues quand l'évêque de Cartagena Antonio María Casiani obtient la soumission du palenque de San Basilio, en échange d'un pardon général et de la liberté de ses habitants. C'est de cette époque que date la première preuve historique de ce palenque, selon l'historienne María Cristina Navarrete.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Cimarrones y palenques en las provincias al norte del Nuevo Reino de Granada siglo XVII",
+                "author": "María Cristina Navarrete",
+                "year": 2001,
+                "url": "https://www.redalyc.org/pdf/833/83306004.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Fronteras de la Historia, n° 6, Bogotá, 2001, p. 97-122. Lu dans le PDF de Redalyc le 18 octobre 2026.",
+                "page": "p. 112"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2001,
+              "to": 2001,
+              "label": "Proposée en 2001"
+            },
+            "era": "modern",
+            "statement": "Le nom Palenqueros vient de Palenque, le nom du village. Le mot palenque viendrait des palissades, les empalizadas, qui fortifiaient souvent les villages d'esclaves en fuite et leur auraient donné leur nom commun de palenques, selon María Cristina Navarrete.",
+            "hypothesisGroup": "origine du nom Palenque",
+            "sources": [
+              {
+                "title": "Cimarrones y palenques en las provincias al norte del Nuevo Reino de Granada siglo XVII",
+                "author": "María Cristina Navarrete",
+                "year": 2001,
+                "url": "https://www.redalyc.org/pdf/833/83306004.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Fronteras de la Historia, n° 6, Bogotá, 2001, p. 97-122. Lu dans le PDF de Redalyc le 18 octobre 2026.",
+                "page": "p. 98"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2001,
+              "to": 2001,
+              "label": "Proposée en 2001"
+            },
+            "era": "modern",
+            "statement": "Le nom Palenqueros renvoie au village de San Basilio de Palenque, qui tiendrait son nom de l'ordre religieux de l'évêque Casiani, celui de saint Basile. Le village serait l'ancien palenque de San Miguel, dont l'église garda le patron, selon María Cristina Navarrete, qui présente ce lien comme presque prouvé.",
+            "hypothesisGroup": "origine du nom San Basilio",
+            "sources": [
+              {
+                "title": "Cimarrones y palenques en las provincias al norte del Nuevo Reino de Granada siglo XVII",
+                "author": "María Cristina Navarrete",
+                "year": 2001,
+                "url": "https://www.redalyc.org/pdf/833/83306004.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Fronteras de la Historia, n° 6, Bogotá, 2001, p. 97-122. Lu dans le PDF de Redalyc le 18 octobre 2026.",
+                "page": "p. 113"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

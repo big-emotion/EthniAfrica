@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "La presse publique néerlandaise explique Kiprotich comme un nom kalenjin lié au moment où le bétail est ramené. Faute d’étude linguistique dédiée trouvée, cette explication reste claimed.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["nos-kalenjin-kip-names-2014"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -202,6 +197,26 @@
                 "source_kind": "archive",
                 "page": "p. 120",
                 "notes": "Londres, 1956. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; page vue en image. Page 120, parc national de Nairobi : en mars, trois gardes à bicyclette sont attaqués par deux lionnes ; « The Head Ranger, Kiprotich arap Marasin », fait front aux lionnes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "La presse publique néerlandaise explique Kiprotich comme un nom kalenjin lié au moment où le bétail est ramené. Faute d’étude linguistique dédiée trouvée, cette explication reste claimed.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Waarom heten ze allemaal Kip?",
+                "author": "NOS (radiodiffuseur public néerlandais)",
+                "year": 2014,
+                "url": "https://nos.nl/artikel/635315-waarom-heten-ze-allemaal-kip",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article de la rubrique sport de NOS, 13 avril 2014. Lu le 13 octobre 2026. L'article range Kiprotich parmi les noms de coureurs kalenjin qui commencent par Kip- et précise que le nom renvoie à la circonstance de la naissance."
               }
             ]
           }

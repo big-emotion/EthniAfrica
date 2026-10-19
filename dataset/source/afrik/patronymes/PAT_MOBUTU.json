@@ -25,13 +25,8 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [
-      {
-        "claim": "Un portrait publié du vivant de Mobutu rapporte que son père avait choisi pour lui le nom Mobutu et le glose « Poussière ». Cette étymologie journalistique n'est pas élevée au rang de reconstruction linguistique.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["lemonde-1997-mobutu-poussiere"]
-      }
-    ],
+    "writtenChronicles": [],
+    "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
   "peoples": [
@@ -201,6 +196,27 @@
             "statement": "Le nom Mobutu apparaît dans le récit de Catherine Simon pour janvier 1956, quand le patron d'un journal belge propose au « sergent Mobutu » d'écrire des actualités africaines. C'est la plus ancienne trace de ce nom que le projet connaît ; elle est de seconde main, rapportée quarante ans plus tard, et le même portrait dit que le père avait choisi le nom bien avant.",
             "formAsWritten": "Mobutu",
             "birth": true,
+            "sources": [
+              {
+                "title": "Le crépuscule du maréchal « Poussière »",
+                "author": "Catherine Simon",
+                "year": 1997,
+                "url": "https://www.lemonde.fr/archives/article/1997/05/06/le-crepuscule-du-marechal-poussiere_3757478_1819218.html",
+                "tier": "unverified",
+                "source_kind": "press",
+                "page": "article du 6 mai 1997",
+                "notes": "Portrait publié dans Le Monde le 6 mai 1997, lu en entier. Il dit que le président du Zaïre rejoindra les chefs d'État déchus « sous le nom de Mobutu, « Poussière », choisi par son père », distingue ce nom de son prénom chrétien Joseph-Désiré et du nom qu'il se donne en 1972, Sese Seko Kuku Ngbendu wa za Banga, et rapporte qu'en janvier 1956 le « sergent Mobutu » reçoit une proposition de collaboration à un journal. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Un portrait publié du vivant de Mobutu rapporte que son père avait choisi pour lui le nom Mobutu et le glose « Poussière ». Cette étymologie journalistique n'est pas élevée au rang de reconstruction linguistique.",
+            "claimStatus": "claimed",
             "sources": [
               {
                 "title": "Le crépuscule du maréchal « Poussière »",

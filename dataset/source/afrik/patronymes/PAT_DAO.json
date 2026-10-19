@@ -56,51 +56,10 @@
   "transmissionMode": "other",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [
-      {
-        "claim": "À Kong, on racontait à la fin des années 1880 que les familles Daou, comme les Ouattara, les Barou, les Kérou et les Touré, seraient venues du nord, de la région de Ségou et de Djenné, par petits groupes et non en une seule migration. Un des sept quartiers de la ville portait leur nom : Daoura, « le quartier des Daou ».",
-        "claimStatus": "claimed",
-        "collection": "mediated",
-        "collector": "Louis-Gustave Binger, officier et explorateur français, arrivé à Kong en février 1888",
-        "context": "Informations recueillies à Kong, dans l'actuelle Côte d'Ivoire, auprès d'informateurs qu'il ne nomme pas, et publiées en français en 1892 dans son récit de voyage",
-        "sourceRefs": ["binger-1892-kong"]
-      },
-      {
-        "claim": "Le même récit fait des Daou une des familles mandé-dioula installées d'abord à Ténenguéra, près de Kong, avec les Ouattara et les Barou. Alliés des Ouattara conduits par Sékou, et de connivence avec les Kouroubari, les Daou et les Barou auraient pris Kong par surprise un jour de grand marché, massacré les chefs des Falafalla et remplacé le pouvoir des premiers habitants par le leur.",
-        "claimStatus": "claimed",
-        "collection": "mediated",
-        "collector": "Louis-Gustave Binger, officier et explorateur français",
-        "context": "Récit recueilli à Kong en 1888 et 1889 et publié en français en 1892",
-        "sourceRefs": ["binger-1892-kong"]
-      }
-    ],
+    "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Aucun dictionnaire ni travail consulté ne donne de sens au mot. Le dictionnaire des noms de clan mandingues définit Dawu seulement comme un nom de clan, et le récit de 1892 qui nomme les Daou de Kong n'en propose aucune explication.",
-        "claimStatus": "established",
-        "sourceRefs": ["bamadaba-jamuw", "binger-1892-kong"]
-      },
-      {
-        "claim": "Le nom s'écrit de plusieurs façons. Le dictionnaire des noms de clan mandingues donne Dawu, avec la variante Dawo, et le situe chez les Minyanka, autour de Sikasso et de Ségou ; un rapport malien de 2015 cite Dao parmi les noms de famille minyanka, avec Goïta, Dembélé et Sogoba ; le récit de voyage de 1892 écrit Daou pour les familles de Kong. Aucune de ces sources ne dit que ces formes désignent une seule et même lignée.",
-        "claimStatus": "claimed",
-        "sourceRefs": [
-          "bamadaba-jamuw",
-          "interpeace-autoportrait-mali-2015",
-          "binger-1892-kong"
-        ]
-      },
-      {
-        "claim": "Un historien qui relit en 2000 le récit de 1892 range Daou parmi les noms de clan bambara de Kong, venus semble-t-il de la région de Ségou et de San. C'est son interprétation : le récit de 1892 parle de familles mandé-dioula venues de la région de Ségou et de Djenné, et ne nomme pas San.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["massing-2000-wangara", "binger-1892-kong"]
-      },
-      {
-        "claim": "L'explorateur qui visite Kong en 1888 traduit le nom du quartier Daoura par « le quartier des Daou », en expliquant que -ra y signifie « des ». C'est le nom du quartier qu'il explique, non celui du clan.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["binger-1892-kong"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -333,6 +292,176 @@
                 "source_kind": "archive",
                 "page": "p. 283",
                 "notes": "Paris, Challamel, 1907. Lu le 11 octobre 2026 sur l'exemplaire numérisé d'archive.org. L'auteur est un administrateur colonial, à lire comme tel. Page 283 : certaines familles « sont tout à fait particulières aux Dioula ; les Daou, Barou, Kérou ; Daou se retrouve dans un prénom très fréquent, aussi bien chez les Soninké que chez les Soso : Daouda. Cependant ce nom pourrait vouloir dire David » ; l'auteur voit aussi des Daou dans les dynasties songhay des Za et des Sonni."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "À Kong, on racontait à la fin des années 1880 que les familles Daou, comme les Ouattara, les Barou, les Kérou et les Touré, seraient venues du nord, de la région de Ségou et de Djenné, par petits groupes et non en une seule migration. Un des sept quartiers de la ville portait leur nom : Daoura, « le quartier des Daou ».",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74720",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 1, p. 291",
+                "notes": "Hachette, Paris, 1892, deux tomes. Lu le 11 octobre 2026 dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée. L'auteur est un officier français en mission d'exploration de 1887 à 1889, qui prépare l'expansion coloniale : il est cité pour ce qu'il a noté et pour ce qu'on lui a dit. Page 291, à l'arrivée à Kong : Karamokho-Oulé met à la disposition de l'auteur « un de ses hommes, nommé Bafotigué Daou ».\nInformations recueillies à Kong, dans l'actuelle Côte d'Ivoire, auprès d'informateurs qu'il ne nomme pas, et publiées en français en 1892 dans son récit de voyage"
+              }
+            ],
+            "collection": "mediated",
+            "collector": "Louis-Gustave Binger, officier et explorateur français, arrivé à Kong en février 1888"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le même récit fait des Daou une des familles mandé-dioula installées d'abord à Ténenguéra, près de Kong, avec les Ouattara et les Barou. Alliés des Ouattara conduits par Sékou, et de connivence avec les Kouroubari, les Daou et les Barou auraient pris Kong par surprise un jour de grand marché, massacré les chefs des Falafalla et remplacé le pouvoir des premiers habitants par le leur.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74720",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 1, p. 291",
+                "notes": "Hachette, Paris, 1892, deux tomes. Lu le 11 octobre 2026 dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée. L'auteur est un officier français en mission d'exploration de 1887 à 1889, qui prépare l'expansion coloniale : il est cité pour ce qu'il a noté et pour ce qu'on lui a dit. Page 291, à l'arrivée à Kong : Karamokho-Oulé met à la disposition de l'auteur « un de ses hommes, nommé Bafotigué Daou ».\nInformations recueillies à Kong, dans l'actuelle Côte d'Ivoire, auprès d'informateurs qu'il ne nomme pas, et publiées en français en 1892 dans son récit de voyage\nRécit recueilli à Kong en 1888 et 1889 et publié en français en 1892"
+              }
+            ],
+            "collection": "mediated",
+            "collector": "Louis-Gustave Binger, officier et explorateur français"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Aucun dictionnaire ni travail consulté ne donne de sens au mot. Le dictionnaire des noms de clan mandingues définit Dawu seulement comme un nom de clan, et le récit de 1892 qui nomme les Daou de Kong n'en propose aucune explication.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrée Dawu",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence. Fichier complet consulté le 11 octobre 2026 : l'entrée Dawu, datée de 2010, donne la variante Dawo, le marqueur mny (minianka), les régions de Sikasso et de Ségou et le statut jèli suivi d'un point d'interrogation ; elle ne donne pas de sens au nom."
+              },
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74720",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 1, p. 291",
+                "notes": "Hachette, Paris, 1892, deux tomes. Lu le 11 octobre 2026 dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée. L'auteur est un officier français en mission d'exploration de 1887 à 1889, qui prépare l'expansion coloniale : il est cité pour ce qu'il a noté et pour ce qu'on lui a dit. Page 291, à l'arrivée à Kong : Karamokho-Oulé met à la disposition de l'auteur « un de ses hommes, nommé Bafotigué Daou ».\nInformations recueillies à Kong, dans l'actuelle Côte d'Ivoire, auprès d'informateurs qu'il ne nomme pas, et publiées en français en 1892 dans son récit de voyage"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom s'écrit de plusieurs façons. Le dictionnaire des noms de clan mandingues donne Dawu, avec la variante Dawo, et le situe chez les Minyanka, autour de Sikasso et de Ségou ; un rapport malien de 2015 cite Dao parmi les noms de famille minyanka, avec Goïta, Dembélé et Sogoba ; le récit de voyage de 1892 écrit Daou pour les familles de Kong. Aucune de ces sources ne dit que ces formes désignent une seule et même lignée.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrée Dawu",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence. Fichier complet consulté le 11 octobre 2026 : l'entrée Dawu, datée de 2010, donne la variante Dawo, le marqueur mny (minianka), les régions de Sikasso et de Ségou et le statut jèli suivi d'un point d'interrogation ; elle ne donne pas de sens au nom."
+              },
+              {
+                "title": "Autoportrait du Mali — Les Obstacles à la Paix",
+                "author": "Institut malien de recherche action pour la paix et Interpeace",
+                "year": 2015,
+                "url": "https://www.interpeace.org/wp-content/uploads/2015/03/2015_03_02_Mali_Autoportrait_FR.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 26",
+                "notes": "Rapport de recherche-action, mars 2015, lu le 11 octobre 2026. Page 26 : pour chaque grand groupe du Mali, quelques noms de famille suivis de « etc. ». La liste est illustrative et ne dit pas d'où viennent les noms."
+              },
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74720",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 1, p. 291",
+                "notes": "Hachette, Paris, 1892, deux tomes. Lu le 11 octobre 2026 dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée. L'auteur est un officier français en mission d'exploration de 1887 à 1889, qui prépare l'expansion coloniale : il est cité pour ce qu'il a noté et pour ce qu'on lui a dit. Page 291, à l'arrivée à Kong : Karamokho-Oulé met à la disposition de l'auteur « un de ses hommes, nommé Bafotigué Daou ».\nInformations recueillies à Kong, dans l'actuelle Côte d'Ivoire, auprès d'informateurs qu'il ne nomme pas, et publiées en français en 1892 dans son récit de voyage"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Un historien qui relit en 2000 le récit de 1892 range Daou parmi les noms de clan bambara de Kong, venus semble-t-il de la région de Ségou et de San. C'est son interprétation : le récit de 1892 parle de familles mandé-dioula venues de la région de Ségou et de Djenné, et ne nomme pas San.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "The Wangara, an Old Soninke Diaspora in West Africa?",
+                "author": "Andreas W. Massing",
+                "year": 2000,
+                "url": "https://journals.openedition.org/etudesafricaines/175",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "paragraphe 58",
+                "notes": "Cahiers d'études africaines, n° 158, 2000, p. 281-308. Relu le 11 octobre 2026 dans une copie archivée de l'édition OpenEdition, qui numérote les paragraphes. Paragraphe 58 : « Bambara dyamou which apparently came from the Segou-San area, namely Baro, Daou, Balo, Cissé, Touré ». Sa note 38 cite Binger."
+              },
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74720",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 1, p. 291",
+                "notes": "Hachette, Paris, 1892, deux tomes. Lu le 11 octobre 2026 dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée. L'auteur est un officier français en mission d'exploration de 1887 à 1889, qui prépare l'expansion coloniale : il est cité pour ce qu'il a noté et pour ce qu'on lui a dit. Page 291, à l'arrivée à Kong : Karamokho-Oulé met à la disposition de l'auteur « un de ses hommes, nommé Bafotigué Daou ».\nInformations recueillies à Kong, dans l'actuelle Côte d'Ivoire, auprès d'informateurs qu'il ne nomme pas, et publiées en français en 1892 dans son récit de voyage"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "L'explorateur qui visite Kong en 1888 traduit le nom du quartier Daoura par « le quartier des Daou », en expliquant que -ra y signifie « des ». C'est le nom du quartier qu'il explique, non celui du clan.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74720",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 1, p. 291",
+                "notes": "Hachette, Paris, 1892, deux tomes. Lu le 11 octobre 2026 dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée. L'auteur est un officier français en mission d'exploration de 1887 à 1889, qui prépare l'expansion coloniale : il est cité pour ce qu'il a noté et pour ce qu'on lui a dit. Page 291, à l'arrivée à Kong : Karamokho-Oulé met à la disposition de l'auteur « un de ses hommes, nommé Bafotigué Daou ».\nInformations recueillies à Kong, dans l'actuelle Côte d'Ivoire, auprès d'informateurs qu'il ne nomme pas, et publiées en français en 1892 dans son récit de voyage"
               }
             ]
           }

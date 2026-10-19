@@ -23,20 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Selon l'article de Wikipédia sur la famille Abaza, le nom vient de l'ethnonyme Abaza, celui des Abazins du Caucase du Nord-Ouest, et fait partie des noms de lieu ou de peuple d'origine que portent des familles musulmanes. L'article rapporte que l'historienne Afaf Lutfi al-Sayyid-Marsot y voit plutôt l'hommage à « une grand-mère aimée » ou à son lieu de naissance.",
-        "claimStatus": "contested",
-        "sourceRefs": ["wikipedia-en-abaza-family"]
-      }
-    ],
-    "historicalSyntheses": [
-      {
-        "claim": "Selon l'article de Wikipédia, le nom vient d'une aïeule connue seulement sous le nom d'Abaza, d'origine abazine. Elle épouse le cheikh Muhammad al-Ayedi, chef de la famille al-Ayed, avant le règne de Muhammad Ali. Ses descendants se distinguent ensuite en « Awlad al-Aydeh » et « Awlad al-Abazyya ». L'article donne la région de Charqiya, dans le delta du Nil, comme base de la famille.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["wikipedia-en-abaza-family"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [],
   "countries": [
@@ -159,6 +147,44 @@
             "era": "modern",
             "aspect": "meaning",
             "statement": "L'article de Wikipédia rapporte deux lectures du nom : un ethnonyme, comme d'autres noms musulmans qui disent un peuple d'origine, ou, selon l'historienne Afaf Lutfi al-Sayyid-Marsot, l'hommage à une grand-mère aimée ou à son lieu de naissance. Ni l'article ni nous ne tranchons.",
+            "sources": [
+              {
+                "title": "Abaza family",
+                "author": "Wikipedia (anglais)",
+                "year": 2026,
+                "url": "https://en.wikipedia.org/wiki/Abaza_family",
+                "tier": "unverified",
+                "source_kind": "encyclopedia"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Selon l'article de Wikipédia, le nom vient d'une aïeule connue seulement sous le nom d'Abaza, d'origine abazine. Elle épouse le cheikh Muhammad al-Ayedi, chef de la famille al-Ayed, avant le règne de Muhammad Ali. Ses descendants se distinguent ensuite en « Awlad al-Aydeh » et « Awlad al-Abazyya ». L'article donne la région de Charqiya, dans le delta du Nil, comme base de la famille.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Abaza family",
+                "author": "Wikipedia (anglais)",
+                "year": 2026,
+                "url": "https://en.wikipedia.org/wiki/Abaza_family",
+                "tier": "unverified",
+                "source_kind": "encyclopedia"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Selon l'article de Wikipédia sur la famille Abaza, le nom vient de l'ethnonyme Abaza, celui des Abazins du Caucase du Nord-Ouest, et fait partie des noms de lieu ou de peuple d'origine que portent des familles musulmanes. L'article rapporte que l'historienne Afaf Lutfi al-Sayyid-Marsot y voit plutôt l'hommage à « une grand-mère aimée » ou à son lieu de naissance.",
+            "claimStatus": "contested",
             "sources": [
               {
                 "title": "Abaza family",

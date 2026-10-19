@@ -7,10 +7,11 @@ import { createServerClient } from "../../server";
  * The rows the name addresses are decided from (REQ-200): each answered
  * subject's filed name and its name history, and nothing else.
  *
- * The filed name is the form the search answers exactly for every kind
- * (`exactMatch` folds it against the query), so it is the form an address
- * can be offered for. The history is read because the threshold reads its
- * accounts' tiers and the address spells the form as the history tells it.
+ * The directory reads the history: every name it tells is an exact answer
+ * for its subject (migration 109), the threshold reads its accounts' tiers,
+ * and the address spells each form as the history tells it. The filed name
+ * is kept beside it as the row's label; a filed name the history does not
+ * tell has no account to read, so it has no address.
  *
  * The history is still most of what this walk costs: about 8.7 MB across the
  * six kinds' fiches, of which the threshold reads some 0.4 MB (name texts and
@@ -39,6 +40,68 @@ const NAMED_TABLES = [
   ["afrik_patronymes", "name_main"],
   ["afrik_words", "name_main"],
 ] as const;
+
+const SUGGESTION_TABLES = [
+  ["people", "afrik_peoples", "name_main"],
+  ["country", "afrik_countries", "name_fr"],
+  ["family", "afrik_language_families", "name_fr"],
+  ["language", "afrik_languages", "name"],
+  ["patronyme", "afrik_patronymes", "name_main"],
+  ["place", "afrik_places", "name_main"],
+] as const;
+
+export interface NameSuggestionRow {
+  id: string;
+  type: (typeof SUGGESTION_TABLES)[number][0];
+  name: string;
+  nameHistory: unknown;
+}
+
+/** The six subject kinds requested for name-prefix suggestions. */
+// @req REQ-200
+export async function getNameSuggestionRows(): Promise<NameSuggestionRow[]> {
+  const supabase = createServerClient();
+  const results = await Promise.all(
+    SUGGESTION_TABLES.map(async ([type, table, nameColumn]) => {
+      const walk = await walkRanges<{
+        id: string;
+        name: string;
+        name_history: unknown;
+      }>(
+        async (from, to) => {
+          const { data, error } = (await supabase
+            .from(table)
+            .select(`id, name:${nameColumn}, name_history`)
+            .range(from, to)) as unknown as {
+            data: Array<{
+              id: string;
+              name: string;
+              name_history: unknown;
+            }> | null;
+            error: unknown;
+          };
+          if (error) throw error;
+          return data ?? [];
+        },
+        { pageSize: PAGE_SIZE, maxPages: MAX_PAGES }
+      );
+      if (walk.truncated) {
+        throw new Error(
+          `Name suggestions: ${table} exceeded ${MAX_PAGES} pages`
+        );
+      }
+      return walk.rows
+        .filter((row) => typeof row.name === "string" && row.name.trim())
+        .map((row) => ({
+          id: row.id,
+          type,
+          name: row.name,
+          nameHistory: row.name_history,
+        }));
+    })
+  );
+  return results.flat();
+}
 
 export interface AnsweredNameRow {
   /** The name the subject is filed under, as the corpus spells it. */

@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Gnanguenon rapporte une histoire familiale attribuée à Côme Adjovi : au XVIIe siècle, l'annonce du premier garçon de Dâh Ayihou pendant une danse au tambour « ADJO » aurait produit la formule ADJO-VI-VI, ensuite abrégée en Adjovi. Le récit présente ce fils comme garant de la postérité et transmetteur du nom aux générations suivantes.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["gnanguenon-2017-adjovi"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -84,5 +79,129 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches « Adjovi homonym etymology » et « Adjovi surname origin other language » n'ont pas établi une graphie identique d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Adjovi est celui d'une vieille famille houéda de Ouidah, au Bénin, organisée en collectivité autour d'un chef. Elle se dit descendante du fondateur de la ville, ce que d'autres lignages contestent. Les sources que nous avons pu lire ne disent pas ce que veut dire le nom ni où il apparaît pour la première fois par écrit.",
+    "names": [
+      {
+        "nameText": "Adjovi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une vieille famille houéda de Ouidah, au Bénin, qui se dit issue du fondateur de la ville.",
+        "periodLabel": "Porté au XIXe siècle ; aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1995,
+              "to": 1995,
+              "label": "Décrit en 1995"
+            },
+            "era": "modern",
+            "statement": "Le nom Adjovi désigne à Ouidah une collectivité familiale houéda qui a un chef : chaque nouveau chef est intronisé dans le bois sacré de Kpassè, l'ancien roi houéda, où il reste enfermé plusieurs semaines, selon Alain Sinou.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Le comptoir de Ouidah : une ville africaine singulière",
+                "author": "Alain Sinou",
+                "year": 1995,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers17-09/010009109.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 68",
+                "notes": "Paris, Karthala, 1995, ouvrage d'Alain Sinou avec la collaboration de chercheurs béninois et de l'ORSTOM ; lu en entier dans la copie numérisée du dépôt documentaire de l'IRD, les pages imprimées étant vérifiées sur l'image. Page 68 : le bâtiment du bois sacré de Kpassè a été bâti « vers les années 1920 par un membre de la collectivité Adjovi, une ancienne famille houédah » ; une des cérémonies « consacre l'intronisation du chef de la collectivité Adjovi : chaque nouvel élu doit demeurer enfermé dans la maison pendant plusieurs semaines ». Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1995,
+              "to": 1995,
+              "label": "Rapporté en 1995"
+            },
+            "era": "modern",
+            "statement": "Le nom Adjovi serait celui d'une des plus anciennes familles houéda du quartier Tové, qui se dit descendante du fondateur de Ouidah ; d'autres lignages contestent cette version, selon Alain Sinou.",
+            "hypothesisGroup": "origine de la famille Adjovi",
+            "sources": [
+              {
+                "title": "Le comptoir de Ouidah : une ville africaine singulière",
+                "author": "Alain Sinou",
+                "year": 1995,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers17-09/010009109.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 37",
+                "notes": "Paris, Karthala, 1995, ouvrage d'Alain Sinou avec la collaboration de chercheurs béninois et de l'ORSTOM ; lu en entier dans la copie numérisée du dépôt documentaire de l'IRD, les pages imprimées étant vérifiées sur l'image. Page 37 : dans le quartier Tové, « plusieurs familles houédahs, comme par exemple celle des Adjovi, considérée comme une des plus anciennes et qui se réclame comme la descendante du fondateur de la ville (version évidemment contestée par d'autres lignages) ». Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1846,
+              "to": 1891,
+              "label": "XIXe siècle, selon un récit de 1995"
+            },
+            "era": "polity",
+            "statement": "Le nom Adjovi est, au XIXe siècle, celui de l'une des familles de dignitaires à qui le roi confie les nouvelles palmeraies, quand l'huile de palme prend le relais de la traite des esclaves. Les Adjovi et les Quenum sont alors particulièrement entreprenants, selon Alain Sinou.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Le comptoir de Ouidah : une ville africaine singulière",
+                "author": "Alain Sinou",
+                "year": 1995,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers17-09/010009109.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 105",
+                "notes": "Paris, Karthala, 1995, ouvrage d'Alain Sinou avec la collaboration de chercheurs béninois et de l'ORSTOM ; lu en entier dans la copie numérisée du dépôt documentaire de l'IRD, les pages imprimées étant vérifiées sur l'image. Page 105, après les exportations d'huile vers la France de 1846 : « Progressivement des autochtones se lancent dans l'agriculture, encouragés par le roi qui confie la gestion des nouvelles palmeraies à des dignitaires (les familles Adjovi et Quenum sont particulièrement entreprenantes) ». Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "1892"
+            },
+            "era": "colonial",
+            "statement": "Le nom Adjovi figure en 1892 dans la demande de la collectivité Adjovi, qui veut faire reconnaître ses droits sur des terres, dont le bois sacré de l'ancien roi Kpassè. Les tribunaux ne les reconnaissent qu'au début du XXe siècle, selon Alain Sinou, qui s'appuie sur l'historien Patrick Manning.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Le comptoir de Ouidah : une ville africaine singulière",
+                "author": "Alain Sinou",
+                "year": 1995,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers17-09/010009109.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 142",
+                "notes": "Paris, Karthala, 1995, ouvrage d'Alain Sinou avec la collaboration de chercheurs béninois et de l'ORSTOM ; lu en entier dans la copie numérisée du dépôt documentaire de l'IRD, les pages imprimées étant vérifiées sur l'image. Page 142 : « La collectivité Adjovi demande dès 1892 la reconnaissance de ses droits sur plusieurs terrains, en particulier celui occupé par le bois où sont célébrés les rituels en l'honneur de l'ancien roi houédah Kpassé. Ce n'est qu'au début du siècle que les tribunaux accepteront ses revendications (P. Manning, 1983). » Nous n'avons pas lu Manning. Lu le 18 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Gnanguenon rapporte une histoire familiale attribuée à Côme Adjovi : au XVIIe siècle, l'annonce du premier garçon de Dâh Ayihou pendant une danse au tambour « ADJO » aurait produit la formule ADJO-VI-VI, ensuite abrégée en Adjovi. Le récit présente ce fils comme garant de la postérité et transmetteur du nom aux générations suivantes.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Le dictionnaire étymologique des noms propres de personne au Bénin : langues fon et français",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://fr.scribd.com/document/728470135/Le-Dictionnaire-Etymologique-Des-Noms-Propres-de-Personnes-Au-Benin-Langues-Fon-Et-Francais-Cossi-Boniface-Gnanguenon-Z-lib-org-1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Cossi Boniface Gnanguenon, L’Harmattan, 2017, ISBN 978-2-343-12064-5, pp. 223-224 de l'édition numérisée consultée. L'auteur attribue explicitement la petite histoire à Côme Adjovi, porteur du nom ; cette attribution impose de conserver le récit au statut « claimed »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

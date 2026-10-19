@@ -27,13 +27,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Une entrée lexicale propose prudemment pour Idris un rapprochement avec la racine arabe درس, « étudier, apprendre ». L'existence d'un article savant consacré à l'origine coranique du nom confirme que l'étymologie est discutée ; aucune conclusion lignagère beja ou tigré n'est retenue.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["btn-idris", "erder-idris-1990"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -328,6 +323,36 @@
                 "tier": "unverified",
                 "source_kind": "press",
                 "notes": "Page du site Awate.com, sans date lue, consultée le 12 octobre 2026 : elle nomme « Hamid Idris Awate » et le présente comme le chef de la petite troupe qui lance la lutte armée érythréenne le 1er septembre 1961 au mont Adal. Elle ne dit pas de qui Idris est le nom dans cette suite."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Une entrée lexicale propose prudemment pour Idris un rapprochement avec la racine arabe درس, « étudier, apprendre ». L'existence d'un article savant consacré à l'origine coranique du nom confirme que l'étymologie est discutée ; aucune conclusion lignagère beja ou tigré n'est retenue.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Idris — Behind the Name",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/idris-1",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Entrée communautaire relue le 12 octobre 2026 : « Possibly means 'interpreter, teacher' in Arabic », rapprochée de la racine arabe darasa, « étudier » ; références citées : Hans Wehr, A Dictionary of Modern Written Arabic, 1979, p. 321, et Salahuddin Ahmed, A Dictionary of Muslim Names, 1999, p. 77 (non relus). Formes liées : Idriss, Driss, Idrissa."
+              },
+              {
+                "title": "The Origin of the Name Idrīs in the Qurʾān: A Study of the Influence of Qumran Literature on Early Islam",
+                "author": "Yoram Erder",
+                "year": 1990,
+                "url": "https://cris.tau.ac.il/en/publications/the-origin-of-the-name-idr%C4%ABs-in-the-qur%CA%BE%C4%81n-a-study-of-the-influen/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 339-350",
+                "notes": "Journal of Near Eastern Studies 49(4), 1990. Seule la notice de l'université de Tel-Aviv a été lue le 12 octobre 2026 (titre, auteur, revue, pages, mots-clés dont onomastique) ; ni l'article ni son résumé n'ont été lus."
               }
             ]
           }

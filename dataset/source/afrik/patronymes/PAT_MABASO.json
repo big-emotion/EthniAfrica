@@ -23,13 +23,8 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": [
-      {
-        "claim": "Dans un témoignage publié et archivé par Wits, Emanuel Sokhaya Mabasa présente Mabaso comme son nom de clan zoulou et le traduit par « celui qui aime faire du feu ». Il raconte aussi une migration ancienne du clan hors du royaume zoulou puis son retour. Ces éléments sont conservés comme une explication revendiquée par un porteur, non comme une étymologie linguistique démontrée.",
-        "claimStatus": "claimed",
-        "sourceRefs": ["wits-mabaso-testimony"]
-      }
-    ]
+    "historicalSyntheses": [],
+    "linguisticReconstructions": []
   },
   "peoples": [
     {
@@ -229,6 +224,26 @@
                 "source_kind": "academic",
                 "page": "p. 244",
                 "notes": "Londres, Longmans, Green, 1929, lu le 12 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 244 : le chef témbu s'éprend d'une « tribal-sister, daughter of a clansman named Mabaso » ; les Mabaso se proclament ensuite un clan à part."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Dans un témoignage publié et archivé par Wits, Emanuel Sokhaya Mabasa présente Mabaso comme son nom de clan zoulou et le traduit par « celui qui aime faire du feu ». Il raconte aussi une migration ancienne du clan hors du royaume zoulou puis son retour. Ces éléments sont conservés comme une explication revendiquée par un porteur, non comme une étymologie linguistique démontrée.",
+            "claimStatus": "claimed",
+            "sources": [
+              {
+                "title": "What's in a Name?",
+                "author": "Auteur non précisé",
+                "year": null,
+                "url": "https://wiredspace.wits.ac.za/bitstreams/62ac74fc-766c-4e38-b05a-79ed3995467d/download",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Document pédagogique archivé par l'University of the Witwatersrand, consulté intégralement. Un témoin nommé Emanuel Sokhaya Mabasa y décrit Mabaso comme son nom de clan zoulou, rapporte le sens transmis par sa famille et signale plusieurs interdits matrimoniaux. Le témoignage n'est pas converti en tradition orale structurée, car la publication ne fournit ni rôle de griot ni transcription d'entretien complète."
               }
             ]
           }
