@@ -10,6 +10,60 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+## [5.7.0] - 2026-10-19
+
+### Added
+
+- Search: five migrations ship with this release, applied in order by the production
+  deploy. `109` answers exactly from a fiche's name history, typed with or without its
+  letters (ETNI-2093); `110` offers a family name under « Cherchiez-vous… ? » when it is a
+  spelling of the searched name (ETNI-2092); `111` scores people leads on one-name
+  pieces only; `112` treats a word recorded in a fiche as an exact answer (ETNI-2110);
+  `113` widens the class prefix to eight letters (`abakwaManala`, `abakwaNdzundza`).
+- Search: related-only results are improved (ETNI-2111), long name result pages are
+  compacted (ETNI-2117), the entry points are unified (ETNI-2115), the self-name
+  explanations are counted and same-period runs found (ETNI-2068), the reader is handed
+  on to the self-name with one video (ETNI-2071–2073), an unknown name is asked for once
+  in the verdict (ETNI-2064), and the « Fiches » lens is grouped by the searched name
+  (ETNI-2088–2090).
+- Atlas: the « Les noms d'Afrique » hub (ETNI-2116) and the « Notre démarche » page with
+  footer links (ETNI-2112).
+- API: names are suggested by prefix (ETNI-2114).
+- Fiches: every fiche links to the story of its own name (ETNI-2061); a long chapter
+  folds after its first tile (ETNI-2045); family-name fiches follow the approved boards
+  (ETNI-2113); place fiches are rebuilt from brief 7 (ETNI-2167); family name-history
+  accounts are distinguished (ETNI-2168); patronym origin accounts move to the name
+  history (ETNI-2105).
+- Consent: a strip where refusing is as easy as accepting (ETNI-2060), with link and
+  keyboard order aligned (ETNI-2108).
+- Corpus: name histories written for waves 24 and 25 (the last peoples and family
+  names), with the Maka and Njem fiches and the sourced follow-ups of both waves
+  (ETNI-2011).
+- Copy: the name story of a fiche is titled once, « L'histoire des noms »; the sources
+  button reads « Source » / « Sources »; no figure of style in reader labels.
+
+### Changed
+
+- Corpus: waves 24 and 25 receive their structural and factual corrections, duplicates
+  and unattested fiches are arbitrated, the 2026-10-17 triage follow-ups are applied
+  (self-names, Zarma origin, namer reason, period labels, accents), and the Peul
+  self-name is written Fulɓe (ETNI-2011).
+- Result page: the brief 11 rules ship, and the story link leads to the name's own
+  address when it has one.
+- Fiche code: the grid and list builders are named for what they draw (ETNI-2045).
+
+### Fixed
+
+- Search: people leads score only on one-name pieces (migration `111`), and the class
+  prefix cap is renumbered to `113` after a numbering clash (ETNI-2092). Known
+  limitation, left to an editorial decision: eight family-name spellings with a particle
+  (da Costa, da Silva, al-Hawari…) are no longer scored by the one-name rule.
+- Search: accessible result chrome (ETNI-2107), a readable unknown-name action at night
+  (ETNI-2064), the open name kept through a lens round trip, and Shorts traced and
+  counted (ETNI-2062).
+- Typography: French punctuation stays attached to its word (ETNI-2109).
+- Data: transcribed oral traditions are surfaced (ETNI-2104).
+
 ## [5.6.0] - 2026-10-17
 
 ### Added
@@ -1886,7 +1940,8 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.6.0...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.7.0...HEAD
+[5.7.0]: https://github.com/big-emotion/ethniafrica/compare/v5.6.0...v5.7.0
 [5.6.0]: https://github.com/big-emotion/ethniafrica/compare/v5.5.0...v5.6.0
 [5.5.0]: https://github.com/big-emotion/ethniafrica/compare/v5.4.0...v5.5.0
 [5.4.0]: https://github.com/big-emotion/ethniafrica/compare/v5.3.0...v5.4.0
