@@ -17,13 +17,19 @@ import {
   leave,
   IMAGERY,
 } from "./sequence.mjs";
-import { MAP_FRAME, MAP_IMAGERY, checkSeriesMapCard } from "./series-map.mjs";
+import {
+  MAP_FRAME,
+  MAP_IMAGERY,
+  MARKS,
+  checkSeriesMapCard,
+} from "./series-map.mjs";
 import { INTRO, OUTRO } from "../series-idents/shots.mjs";
 import {
   planMapSequences,
   mapRunState,
   runOfCard,
   wordOf,
+  silentCheck,
 } from "./series-sequence.mjs";
 import {
   checkDocumentCard,
@@ -183,7 +189,8 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     if (!input.demo && /(^|\/)a-trouver-[^/]*$/.test(card.image?.src ?? ""))
       fail(`Card ${card.id} still shows « image à trouver »`);
     // A map card is drawn on satellite imagery; an atlas card is refused.
-    if (card.type === "map") checkSeriesMapCard(card);
+    if (card.type === "map" || card.opening !== undefined)
+      checkSeriesMapCard(card);
     checkLongCardFields(card);
     // 1.8.0: the document card and the teaching cards.
     if (card.image?.document) checkDocumentCard(card);
@@ -304,16 +311,55 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     ending: { ...(next && { next }) },
     voice,
     chunks,
+    // 1.11.0: one ink per people for the whole episode.
+    ...(input.inks && { inks: { ...input.inks } }),
+    // The imagery under the map cards; the scale limit reads its width
+    // (decision 1 of 1.11.0: the 500 m mosaic once verified and pinned).
+    mapImagery: input.mapImagery ?? MAP_IMAGERY,
   };
+  if (!IMAGERY[seq.mapImagery]?.width)
+    fail(`No verified imagery « ${seq.mapImagery} » for the map cards`);
   schedule(seq, voice.chunks);
   if (retired.length)
     seq.warnings.push(
       `L'entrée de fin ne prend plus que next : ${retired.join(", ")} ignoré (1.10.0, la fin est fixe)`
     );
   // 1.5.0: consecutive map cards of one `map.sequence` share one map.
-  seq.mapSequence = planMapSequences(seq, IMAGERY[MAP_IMAGERY]);
+  seq.mapSequence = planMapSequences(seq, IMAGERY[seq.mapImagery]);
+  checkPicturePhases(seq);
+  // 1.11.0: every fact of a map phase has its mark on screen while it is
+  // said. A proof warns; the final export refuses (series-render.mjs).
+  seq.silent = silentCheck(seq);
+  for (const f of seq.silent.filter((f) => !f.pass))
+    seq.warnings.push(
+      `Fait sans marque à l'écran : « ${f.say} » (${f.card}, ${Math.round(f.coverage * 100)} % du temps, ${f.delay === null ? "aucune marque" : `première marque après ${Math.round((f.delay * 1000) / FPS)} ms`})`
+    );
   planLongVideo(seq, input);
   return seq;
+}
+
+// 1.11.0, « 9. Map phases and picture phases »: a picture between two map
+// cards of an animated sequence is a phase of its own, 6 s at least.
+function checkPicturePhases(seq) {
+  const plan = seq.mapSequence;
+  if (!plan) return;
+  const animatedMap = (i) => {
+    const r = runOfCard(plan, i);
+    return r >= 0 && plan.animated[plan.runs[r].sequence];
+  };
+  const isMap = (i) =>
+    seq.cards[i].type === "map" || seq.cards[i].opening === "globe";
+  for (let i = 1; i + 1 < seq.cards.length; i++) {
+    // A chapter card and the intro are titles, not pictures.
+    if (["chapter", "intro"].includes(seq.cards[i].type)) continue;
+    if (isMap(i) || !isMap(i - 1) || !isMap(i + 1)) continue;
+    if (!animatedMap(i - 1) && !animatedMap(i + 1)) continue;
+    const frames = seq.cardStarts[i + 1] - seq.cardStarts[i];
+    if (frames < 180)
+      fail(
+        `Card ${seq.cards[i].id}: Image isolée de moins de 6 s entre deux cartes (${(frames / FPS).toFixed(1)} s)`
+      );
+  }
 }
 
 // 1.7.0: what a video card may carry, checked before anything is timed.
@@ -729,25 +775,60 @@ const X_BANDS = { slot: LAYOUT.slot.x, "chapter-title": [60, 960] };
 export function checkSeriesLayout(boxes, { demo = false } = {}) {
   const problems = [];
   const near = 0.5;
-  const names = boxes.filter((b) => b.kind === "map-name");
-  if (names.length > MAP_FRAME.maxNames)
+  // 1.11.0: on an animated map, eight texts at most, two of them words, 12 px
+  // clear of each other, of the drawings and of the arrows' heads.
+  const animated = boxes.some((b) => b.animated);
+  const names = boxes.filter(
+    (b) => b.kind === "map-name" || b.kind === "map-word"
+  );
+  const words = names.filter((b) => b.kind === "map-word");
+  if (animated && names.length > MARKS.maxTexts)
+    problems.push(
+      `${names.length} texts on the map: ${MARKS.maxTexts} at most (1.11.0)`
+    );
+  else if (!animated && names.length > MAP_FRAME.maxNames)
     problems.push(
       `${names.length} names on the map: more than six names, ${MAP_FRAME.maxNames} at most`
     );
-  names.forEach((a, i) =>
-    names.slice(i + 1).forEach((b) => {
+  if (words.length > MARKS.maxWords)
+    problems.push(
+      `${words.length} words on the map: ${MARKS.maxWords} at most`
+    );
+  const marks = animated
+    ? [
+        ...names,
+        ...boxes.filter(
+          (b) => b.kind === "map-drawing" || b.kind === "map-head"
+        ),
+        // A mark fading in or out over another, in a change, is not yet or
+        // no longer read: clearance is checked from half strength.
+      ].filter((b) => !b.moving && (b.opacity ?? 1) >= 0.5)
+    : names;
+  const clear = animated ? MARKS.clearance : 0;
+  marks.forEach((a, i) =>
+    marks.slice(i + 1).forEach((b) => {
+      // A drawing and its own label, a head and another head.
+      if (a.of !== undefined && a.of === b.of) return;
+      if (a.kind === "map-head" && b.kind === "map-head") return;
       if (
-        a.x < b.x + b.w &&
-        b.x < a.x + a.w &&
-        a.y < b.y + b.h &&
-        b.y < a.y + a.h
+        a.x - clear < b.x + b.w &&
+        b.x - clear < a.x + a.w &&
+        a.y - clear < b.y + b.h &&
+        b.y - clear < a.y + a.h
       )
-        problems.push(`${a.id}: overlaps ${b.id}`);
+        problems.push(
+          clear
+            ? `${a.id}: within ${clear} px of ${b.id}`
+            : `${a.id}: overlaps ${b.id}`
+        );
     })
   );
   for (const b of boxes) {
     const [left, right, top, bottom] = [b.x, b.x + b.w, b.y, b.y + b.h];
     const say = (what) => problems.push(`${b.id}: ${what}`);
+    // An arrow's head is checked for clearance only; a mark moving with the
+    // camera is checked once the view is still.
+    if (b.kind === "map-head" || (b.animated && b.moving)) continue;
     if (b.kind === "image") {
       if (b.scale > LAYOUT.maxImageScale + 1e-9 && !demo)
         say(
@@ -780,7 +861,7 @@ export function checkSeriesLayout(boxes, { demo = false } = {}) {
       continue;
     }
     const band =
-      b.kind === "map-name"
+      b.kind === "map-name" || b.kind === "map-word" || b.kind === "map-drawing"
         ? LAYOUT.mapNames.y
         : b.map && BANDS[b.kind] === LAYOUT.foot
           ? LAYOUT.mapFoot

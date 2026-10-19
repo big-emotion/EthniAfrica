@@ -43,6 +43,7 @@ const MIME = {
   ".css": "text/css",
   ".ttf": "font/ttf",
   ".png": "image/png",
+  ".svg": "image/svg+xml",
   ".jpg": "image/jpeg",
   ".jpeg": "image/jpeg",
   ".mjs": "text/javascript",
@@ -93,8 +94,22 @@ async function routesFor(seq) {
       );
     cards.push(spec);
   }
+  // 1.11.0: the drawings the animated map cards use.
+  for (const kind of illustrationsOf(seq))
+    await add(
+      `/design/assets/Illustrations/${kind}.svg`,
+      `assets/Illustrations/${kind}.svg`
+    );
   return { routes, tokens, cards };
 }
+
+const illustrationsOf = (seq) => [
+  ...new Set(
+    Object.values(seq.mapSequence?.cards ?? {}).flatMap((c) =>
+      c.drawings.map((d) => d.kind)
+    )
+  ),
+];
 
 // The world texture is MAX_TEXTURE pixels around the Earth: a frame whose
 // world texture would be enlarged past the scale limit at the end of the
@@ -118,7 +133,9 @@ async function prepareMaps(seq, cards, routes, assets) {
     );
   const world = await readVerified(assets, "countries");
   const countries = countryIndex(world);
-  const imagery = IMAGERY[MAP_IMAGERY];
+  // The imagery in use; 1.11.0 may draw on the 500 m mosaic (decision 1).
+  const imageryId = seq.mapImagery ?? MAP_IMAGERY;
+  const imagery = IMAGERY[imageryId];
   const views = {};
   for (const i of indices)
     views[i] = seriesMapView(
@@ -156,10 +173,21 @@ async function prepareMaps(seq, cards, routes, assets) {
           },
         ])
       ),
-      runs: plan.runs.map((r) => ({ sequence: r.sequence, cards: r.cards })),
+      runs: plan.runs.map((r) => ({
+        sequence: r.sequence,
+        cards: r.cards,
+        animated: !!plan.animated?.[r.sequence],
+      })),
       views: Object.fromEntries(
-        Object.entries(plan.views).map(([i, v]) => [i, { camera: v.camera }])
+        Object.entries(plan.views).map(([i, v]) => [
+          i,
+          {
+            camera: v.camera,
+            ...(v.stops && { stops: v.stops.map((s) => s.camera) }),
+          },
+        ])
       ),
+      illustrations: illustrationsOf(seq),
       borders: plan.runs.map((r) => {
         const kind = plan.views[r.cards[0]].borders;
         return kind === "none"
@@ -177,16 +205,50 @@ async function prepareMaps(seq, cards, routes, assets) {
     Math.min(...all.map((b) => b[2])),
     Math.max(...all.map((b) => b[3])),
   ];
-  const prepared = await prepareImageryRegion(MAP_IMAGERY, bounds, assets);
+  const prepared = await prepareImageryRegion(imageryId, bounds, assets);
   routes.set("/imagery/world.jpg", prepared.world);
   routes.set("/imagery/region.jpg", prepared.region);
+  // 1.11.0: the scale limit reads the file in use. A region too large for
+  // one texture is reduced, so every view of an animated map that draws on
+  // it is checked against the region's own resolution.
+  if (plan)
+    for (const { camera, bounds: ground } of plan.cameras.filter(needsRegion)) {
+      const scale = (camera.radius * 2 * Math.PI) / prepared.regionWidth;
+      const km = Math.round((1080 / camera.radius) * 6371);
+      if (scale > MAP_FRAME.maxScale + 1e-9)
+        throw new Error(
+          `Vue plus proche que l'imagerie préparée : the region is ${Math.round(prepared.regionWidth)} px around the Earth, so a view ${km} km across enlarges it ${scale.toFixed(2)} times`
+        );
+      // Closer than the 2 km file allows: every pixel must be a tile's.
+      const base = IMAGERY[imagery.world ?? imageryId].width;
+      // B1 and C1 meet at the prime meridian: their union is one box.
+      const cover = prepared.cover ?? [];
+      const covered =
+        cover.length > 0 &&
+        ground[0] >= Math.min(...cover.map((c) => c[0])) &&
+        ground[1] <= Math.max(...cover.map((c) => c[1])) &&
+        ground[2] >= Math.min(...cover.map((c) => c[2])) &&
+        ground[3] <= Math.max(...cover.map((c) => c[3]));
+      if (
+        (camera.radius * 2 * Math.PI) / base > MAP_FRAME.maxScale + 1e-9 &&
+        !covered
+      )
+        throw new Error(
+          `Vue plus proche que l'imagerie vérifiée hors des tuiles à 500 m : ${km} km across, ground ${ground.join(", ")}`
+        );
+    }
   const spans = { ...views, ...(plan?.views ?? {}) };
   return {
     bounds,
     views,
     sequence,
     record: {
-      imagery: { id: MAP_IMAGERY, sha256: prepared.imageryHash },
+      imagery: {
+        id: imageryId,
+        sha256: prepared.imageryHash,
+        ...(prepared.tiles && { tiles: prepared.tiles }),
+        regionPixelsAroundEarth: Math.round(prepared.regionWidth),
+      },
       countries: DOWNLOADS.countries.sha256,
       cards: Object.keys(spans)
         .map(Number)
@@ -334,6 +396,12 @@ export async function encodeSeriesVideo(
   // compares, so a sequence edited after encoding needs a new encode.
   const sequence = sha256(JSON.stringify(seq));
   const count = seriesFrameCount(seq);
+  // 1.11.0: a fact said on a map phase with no mark on screen.
+  const failing = (seq.silent ?? []).filter((f) => !f.pass);
+  if (failing.length && !seq.demo && !diagnose)
+    throw new Error(
+      `Fait sans marque à l'écran, refusé à l'export final : ${failing.map((f) => `« ${f.say} » (${f.card})`).join(", ")}`
+    );
   const audio = await checkVoice(seq.voice);
   const sound = audioArgs(seq.voice, 0, count / FPS);
   await mkdir(outDir, { recursive: true });
@@ -393,6 +461,8 @@ export async function encodeSeriesVideo(
     // 1.10.0: each card's small-text zones, their busyness before and after
     // the blur, and whether the card is calm.
     calm: renderer.calm,
+    // 1.11.0: each fact of a map phase, its marks' coverage and delay.
+    ...(seq.silent?.length && { silent: seq.silent }),
     demo: !!seq.demo,
     ...(seq.warnings.length && { warnings: seq.warnings }),
     // A diagnostic export lists the frames whose text left its band.

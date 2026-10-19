@@ -207,6 +207,7 @@ async function prepareImagery(seq, assets) {
 // series video's map cards (Cartes 1.4.1) use it too.
 export async function prepareImageryRegion(id, bounds, assets) {
   const entry = IMAGERY[id];
+  if (entry.tiles) return prepareTiledRegion(entry, bounds, assets);
   if (!entry.file) throw new Error(`No verified local imagery file for ${id}`);
   const path = join(assets, entry.file);
   const bytes = await readFile(path).catch(() => {
@@ -241,11 +242,88 @@ export async function prepareImageryRegion(id, bounds, assets) {
       crop = crop.resize(MAX_TEXTURE, MAX_TEXTURE, { fit: "inside" });
     await crop.jpeg({ quality: 95 }).toFile(region);
   }
+  const [lonMin, lonMax, latMin, latMax] = bounds;
+  const cropWidth = ((lonMax - lonMin) / 360) * width;
+  const cropHeight = ((latMax - latMin) / 180) * height;
   return {
     bounds,
     imageryHash: entry.sha256,
     world: await readFile(world),
     region: await readFile(region),
+    // The region texture's pixels around the Earth, after any reduction to
+    // the largest texture: what the scale limit of its views must read.
+    regionWidth:
+      width * Math.min(1, MAX_TEXTURE / Math.max(cropWidth, cropHeight)),
+  };
+}
+
+// Cartes 1.11.0, decision 1: the 500 m mosaic. The region texture is the
+// 2 km file's crop of `bounds`, brought to the mosaic's grid, with the
+// verified tiles laid over it wherever they cover (each 90° square, 240 px
+// a degree). The globe's dive needs a wide region that may cross the
+// equator, where B1 and C1 stop; there the 2 km file shows, as it does
+// outside the region. `cover` says where the 500 m pixels are, so the
+// renderer can refuse a close view whose ground leaves them.
+async function prepareTiledRegion(entry, bounds, assets) {
+  const base = await prepareImageryRegion(entry.world, bounds, assets);
+  const [lonMin, lonMax, latMin, latMax] = bounds;
+  const tiles = [];
+  for (const t of entry.tiles) {
+    const bytes = await readFile(join(assets, t.file)).catch(() => {
+      throw new Error(`Verified imagery file is missing: ${t.file}`);
+    });
+    if (bytes.length !== t.bytes || sha256(bytes) !== t.sha256)
+      throw new Error(`Imagery file differs from the verified one: ${t.file}`);
+    tiles.push({ ...t, bytes });
+  }
+  const hash = sha256(
+    [IMAGERY[entry.world].sha256, ...entry.tiles.map((t) => t.sha256)].join("")
+  );
+  const cache = join(assets, ".cache", `tiles-${hash.slice(0, 16)}`);
+  await mkdir(cache, { recursive: true });
+  const region = join(cache, `region_${bounds.join("_")}.jpg`);
+  const ppd = entry.width / 360;
+  const W = Math.round((lonMax - lonMin) * ppd);
+  const H = Math.round((latMax - latMin) * ppd);
+  const scale = Math.min(1, MAX_TEXTURE / Math.max(W, H));
+  const size = (n) => Math.max(1, Math.round(n * scale));
+  if (!(await exists(region))) {
+    const parts = [];
+    for (const t of tiles) {
+      const [w0, e0, s0, n0] = t.bounds;
+      const [a, b] = [Math.max(lonMin, w0), Math.min(lonMax, e0)];
+      const [c, d] = [Math.max(latMin, s0), Math.min(latMax, n0)];
+      if (a >= b || c >= d) continue;
+      const input = await sharp(t.bytes, { limitInputPixels: false })
+        .extract({
+          left: Math.round((a - w0) * ppd),
+          top: Math.round((n0 - d) * ppd),
+          width: Math.round((b - a) * ppd),
+          height: Math.round((d - c) * ppd),
+        })
+        .resize(size((b - a) * ppd), size((d - c) * ppd))
+        .png()
+        .toBuffer();
+      parts.push({
+        input,
+        left: Math.round((a - lonMin) * ppd * scale),
+        top: Math.round((latMax - d) * ppd * scale),
+      });
+    }
+    await sharp(base.region, { limitInputPixels: false })
+      .resize(size(W), size(H), { fit: "fill" })
+      .composite(parts)
+      .jpeg({ quality: 95 })
+      .toFile(region);
+  }
+  return {
+    bounds,
+    imageryHash: hash,
+    tiles: entry.tiles.map((t) => ({ file: t.file, sha256: t.sha256 })),
+    cover: entry.tiles.map((t) => t.bounds),
+    world: base.world,
+    region: await readFile(region),
+    regionWidth: entry.width * scale,
   };
 }
 
