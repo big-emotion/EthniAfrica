@@ -45,6 +45,11 @@ export const BROWSER_ARGS = [
   "--use-angle=swiftshader",
   "--enable-unsafe-swiftshader",
 ];
+// The series video's opt-in `--gpu` (operator, 19 October 2026): ANGLE on
+// Metal draws WebGL on the Mac's GPU. Its frames are the same run after run
+// on one machine but not SwiftShader's to the pixel, so SwiftShader stays
+// the reference (README, « GPU render »).
+export const GPU_BROWSER_ARGS = ["--use-angle=metal"];
 // Largest texture side SwiftShader accepts; the world mosaic is reduced to it.
 export const MAX_TEXTURE = 8192;
 
