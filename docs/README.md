@@ -35,6 +35,8 @@ were referenced by nothing at all, two of them written that same week.
 - [Brief 15 — The result page, each account told once](design/mockups/briefs/15-result-page-shorter.md)
 - [Brief 16 — A misspelling that also finds related fiches](design/mockups/briefs/16-typo-with-related-fiches.md)
 - [Brief 17 — Search chrome: focus, list structure and the 320 px header](design/mockups/briefs/17-search-chrome-accessibility.md)
+- [Brief 18 — Related-only search results](design/mockups/briefs/18-related-only-search-results.md)
+- [Brief 19 — A recorded spelling answers the search](design/mockups/briefs/19-recorded-search-term.md)
 - [Name-page mockup briefs — one per type of name](design/mockups/briefs/README.md)
 - [Claude Design prompt, step 1 — shared rules and brief 1](design/mockups/briefs/claude-design-prompt-01.md)
 - [Claude Design prompt, step 2 — brief 2, the people fiche](design/mockups/briefs/claude-design-prompt-02.md)
@@ -42,6 +44,8 @@ were referenced by nothing at all, two of them written that same week.
 - [Claude Design prompt, step 4 — brief 4, the language-family fiche](design/mockups/briefs/claude-design-prompt-04.md)
 - [Claude Design prompt, step 5 — brief 5, the country fiche](design/mockups/briefs/claude-design-prompt-05.md)
 - [Claude Design prompt, step 6 — brief 6, the family-name fiche](design/mockups/briefs/claude-design-prompt-06.md)
+- [Claude Design prompt 07 — the place fiche](design/mockups/briefs/claude-design-prompt-07.md)
+- [Claude Design prompt 08 — the free-word fiche](design/mockups/briefs/claude-design-prompt-08.md)
 - [Claude Design prompt — brief 9, « Notre démarche »](design/mockups/briefs/claude-design-prompt-09.md)
 - [Claude Design prompt, step 10 — brief 10, the fiche boards (pass 1)](design/mockups/briefs/claude-design-prompt-10.md)
 - [Claude Design prompt, step 11 — brief 11, the result page (pass 2)](design/mockups/briefs/claude-design-prompt-11.md)
@@ -70,6 +74,7 @@ were referenced by nothing at all, two of them written that same week.
 - [EthniAfrica doctrine](editorial/doctrine.md)
 - [Essays](editorial/essais/README.md)
 - [« L'Afrique n'est pas un tout » — the ideological base of the series](editorial/essais/afrique-nest-pas-un-tout-2026-10-13.md)
+- [« L'Afrique est diverse et égale à sa société » — the thesis of the site](editorial/essais/these-du-site-2026-10-18.md)
 - [Peul: three plain-language tones](editorial/examples/peul-tones.md)
 - [Family restoration tracking](editorial/family-restoration/README.md)
 - [Plain-language checks](editorial/plain-language-checks.md)
@@ -101,6 +106,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Reader demand journal — 2026-10-16](audience/demand/2026-10-16.md)
 - [Reader demand journal — 2026-10-17](audience/demand/2026-10-17.md)
 - [Reader demand journal — 2026-10-18](audience/demand/2026-10-18.md)
+- [Reader demand journal — 2026-10-19](audience/demand/2026-10-19.md)
 
 ## Runbooks — procedures, and records of ones already run
 
