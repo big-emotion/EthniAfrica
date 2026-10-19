@@ -81,6 +81,9 @@ A reviewed fiche changed only by approved corrections recorded as
 a `reason` recovers a proof saved as stale before those records existed. The
 rule, its limits and the destination exception are in
 [Research and corpus alignment](research-and-corpus.md#integrated-corrections-keep-the-proof-current).
+A fiche changed in any other way is
+[re-reviewed in the dossier](research-and-corpus.md#re-reviewing-a-changed-record),
+never restored in the corpus; approval 2 then needs a new review.
 
 ## Final delivery
 

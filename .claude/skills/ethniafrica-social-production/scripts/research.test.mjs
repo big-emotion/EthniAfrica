@@ -18,6 +18,7 @@ import {
   assessResearch,
   discoverCorpus,
   prepareResearch,
+  rereviewRecords,
   verifyProgress,
 } from "./research.mjs";
 const hash = (text) => createHash("sha256").update(text).digest("hex");
@@ -344,4 +345,182 @@ test("a changed record whose reviewed version was never committed stays unprovab
     birthDate: null,
   });
   assert.throws(() => assessResearch(f.root, input), /Corpus record changed/);
+});
+
+// A second finding on a field nobody changed, to show re-review leaves it alone.
+function withUntouchedFinding(f) {
+  f.input.findings.push({
+    id: "f2",
+    claim: "c1",
+    file: f.fiche,
+    pointer: "/birthDate",
+    before: { exists: true, value: null },
+    kind: "confirmation",
+    rationale: "No birth date is known.",
+  });
+  return f.save();
+}
+const corpusBytes = (f) => readFileSync(join(f.root, f.fiche), "utf8");
+
+// @req REQ-186
+test("a fiche changed after review fails until a person re-reviews it with a reason", (t) => {
+  const f = fixture(t);
+  const input = withUntouchedFinding(f);
+  const changed = JSON.stringify({
+    id: "EXAMPLE",
+    nameFr: "Testland (edited by another session)",
+    etymology: "Earlier account. Recorded in 1880.",
+    birthDate: null,
+  });
+  f.file(f.fiche, changed);
+  assert.throws(() => assessResearch(f.root, input), /Corpus record changed/);
+  assert.throws(() => rereviewRecords(f.root, input, [f.fiche], " "), /reason/);
+  const summary = rereviewRecords(f.root, input, [f.fiche], "Merged PR #1");
+  assert.equal(corpusBytes(f), changed);
+  assert.deepEqual(summary, [
+    { file: f.fiche, integrated: ["f1"], superseded: [], unchanged: ["f2"] },
+  ]);
+  const dossier = JSON.parse(readFileSync(join(f.root, input), "utf8"));
+  const record = dossier.records[0];
+  assert.equal(record.sha256, hash(changed));
+  assert.equal(record.history.length, 1);
+  assert.equal(record.history[0].sha256, hash(f.original));
+  assert.equal(record.history[0].reason, "Merged PR #1");
+  assert.ok(Number.isFinite(Date.parse(record.history[0].at)));
+  assert.deepEqual(dossier.findings[0].rereview, {
+    sha256: hash(changed),
+    outcome: "integrated",
+  });
+  assert.equal(dossier.findings[1].rereview, undefined);
+  const r = assessResearch(f.root, input, { forDelivery: true });
+  assert.equal(r.corrections.length, 0);
+  assert.equal(r.dependencies[f.fiche], hash(changed));
+});
+
+// @req REQ-186
+test("a re-reviewed field holding neither value is superseded with the reason", (t) => {
+  const f = fixture(t);
+  const input = withUntouchedFinding(f);
+  const changed = JSON.stringify({
+    id: "EXAMPLE",
+    nameFr: "Testland",
+    etymology: "A third account written later.",
+    birthDate: null,
+  });
+  f.file(f.fiche, changed);
+  const [summary] = rereviewRecords(f.root, input, [f.fiche], "Later fix");
+  assert.deepEqual(summary.superseded, ["f1"]);
+  const dossier = JSON.parse(readFileSync(join(f.root, input), "utf8"));
+  assert.deepEqual(dossier.findings[0].rereview, {
+    sha256: hash(changed),
+    outcome: "superseded",
+    reason: "Later fix",
+  });
+  assert.equal(assessResearch(f.root, input).corrections.length, 0);
+  assert.equal(corpusBytes(f), changed);
+});
+
+// @req REQ-186
+test("a change after re-review fails again; a second re-review keeps the whole history", (t) => {
+  const f = fixture(t);
+  const input = f.save();
+  assert.throws(
+    () => rereviewRecords(f.root, input, [f.fiche], "Nothing changed"),
+    /unchanged/
+  );
+  assert.throws(
+    () =>
+      rereviewRecords(
+        f.root,
+        input,
+        ["dataset/source/afrik/pays/OTHER.json"],
+        "Not in the dossier"
+      ),
+    /not a reviewed record/
+  );
+  const first = JSON.stringify({
+    id: "EXAMPLE",
+    nameFr: "Testland",
+    etymology: "Earlier account. Recorded in 1880.",
+    birthDate: null,
+  });
+  f.file(f.fiche, first);
+  rereviewRecords(f.root, input, [f.fiche], "First");
+  const second = first.replace('"Testland"', '"Otherland"');
+  f.file(f.fiche, second);
+  assert.throws(() => assessResearch(f.root, input), /Corpus record changed/);
+  rereviewRecords(f.root, input, [f.fiche], "Second");
+  const dossier = JSON.parse(readFileSync(join(f.root, input), "utf8"));
+  assert.deepEqual(
+    dossier.records[0].history.map((h) => [h.sha256, h.reason]),
+    [
+      [hash(f.original), "First"],
+      [hash(first), "Second"],
+    ]
+  );
+  assert.equal(dossier.findings[0].rereview.outcome, "integrated");
+  assert.equal(dossier.findings[0].rereview.sha256, hash(second));
+  assert.doesNotThrow(() => assessResearch(f.root, input));
+});
+
+// @req REQ-186
+test("a re-review mark must describe the reviewed version honestly", (t) => {
+  const f = fixture(t);
+  const input = f.save();
+  f.file(f.fiche, {
+    id: "EXAMPLE",
+    nameFr: "Testland",
+    etymology: "A third account written later.",
+    birthDate: null,
+  });
+  rereviewRecords(f.root, input, [f.fiche], "Later fix");
+  const dossier = JSON.parse(readFileSync(join(f.root, input), "utf8"));
+  const save = () => f.file(input, dossier);
+  dossier.findings[0].rereview.outcome = "integrated";
+  save();
+  assert.throws(() => assessResearch(f.root, input), /integrated/);
+  dossier.findings[0].rereview = { outcome: "superseded", sha256: "0" };
+  save();
+  assert.throws(() => assessResearch(f.root, input), /re-review/i);
+  dossier.findings[0].rereview = {
+    outcome: "superseded",
+    sha256: dossier.records[0].sha256,
+  };
+  save();
+  assert.throws(() => assessResearch(f.root, input), /reason/);
+  dossier.findings[0].rereview.reason = "Later fix";
+  dossier.records[0].history[0].reason = "";
+  save();
+  assert.throws(() => assessResearch(f.root, input), /reason/);
+});
+
+// @req REQ-186
+test("a re-reviewed field whose place no longer exists is superseded", (t) => {
+  const f = fixture(t);
+  const reviewed = JSON.stringify({
+    id: "EXAMPLE",
+    nameFr: "Testland",
+    etymology: "Earlier account",
+    birthDate: null,
+    gaps: [{ reason: "First gap" }, { reason: "Second gap" }],
+  });
+  f.file(f.fiche, reviewed);
+  f.input.records[0].sha256 = hash(reviewed);
+  f.input.findings.push({
+    id: "f2",
+    claim: "c1",
+    file: f.fiche,
+    pointer: "/gaps/1/reason",
+    before: { exists: true, value: "Second gap" },
+    kind: "confirmation",
+    rationale: "The gap is still open.",
+  });
+  const input = f.save();
+  const changed = JSON.stringify({ ...JSON.parse(reviewed), gaps: [] });
+  f.file(f.fiche, changed);
+  const [summary] = rereviewRecords(f.root, input, [f.fiche], "Gaps closed");
+  assert.deepEqual(summary.superseded, ["f2"]);
+  assert.deepEqual(summary.unchanged, ["f1"]);
+  assert.doesNotThrow(() => assessResearch(f.root, input));
+  assert.equal(corpusBytes(f), changed);
 });

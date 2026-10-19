@@ -95,6 +95,23 @@ function pointer(document, path) {
     value: parent[key],
   };
 }
+// A later edit may remove the place a finding pointed at (an array shortened,
+// an object dropped). That field is then absent rather than an invalid pointer.
+const PLACE_GONE = [
+  "Missing pointer parent",
+  "Array pointer must address an existing item",
+];
+function field(document, path) {
+  try {
+    return pointer(document, path);
+  } catch (error) {
+    if (PLACE_GONE.includes(error.message)) return { exists: false };
+    throw error;
+  }
+}
+const asReviewed = (finding, p) =>
+  finding.before?.exists === p.exists &&
+  (!p.exists || equal(finding.before.value, p.value));
 // The dossier keeps only the reviewed fiche's sha256. Re-serialising JSON does
 // not reproduce the repository's formatting, so the exact reviewed bytes are
 // recovered from version history; an uncommitted reviewed version is unprovable.
@@ -151,7 +168,7 @@ export function reviewedRecord(root, file, sha256, applied) {
 function presentProposals(root, input, file) {
   const document = JSON.parse(readFileSync(inside(root, file), "utf8"));
   return (input.findings ?? []).flatMap((f) => {
-    if (f.file !== file || !f.proposal) return [];
+    if (f.file !== file || !f.proposal || f.rereview) return [];
     try {
       const p = pointer(document, f.pointer);
       return p.exists && equal(p.value, f.proposal.value)
@@ -196,6 +213,52 @@ export function discoverCorpus(root, terms) {
   walk(inside(root, CORPUS));
   return found;
 }
+// A reviewed fiche that changed for any other reason (a later correction PR, an
+// unrelated session's edit) cannot be recognised automatically. A person
+// re-reads it and pins the current version instead, keeping the earlier hash
+// and the reason in the record's history. Each finding on that file is then
+// re-judged against its original `before`: still current, already integrated
+// (the proposed value is in the fiche) or superseded (with the reason). Only
+// the dossier is written; corpus files are read, never changed.
+export function rereviewRecords(root, dossierFile, files, reason) {
+  need(reason, "Re-review reason");
+  list(files, "Re-reviewed files");
+  const dossierPath = inside(root, dossierFile);
+  const dossier = JSON.parse(readFileSync(dossierPath, "utf8"));
+  const at = new Date().toISOString();
+  const summary = files.map((file) => {
+    const record = (dossier.records ?? []).find((r) => r.file === file);
+    if (!record) fail(`${file} is not a reviewed record of this dossier`);
+    const text = readFileSync(inside(root, file), "utf8");
+    const current = sha(text);
+    if (current === record.sha256) fail(`Record unchanged: ${file}`);
+    const document = JSON.parse(text);
+    record.history = [
+      ...(record.history ?? []),
+      { sha256: record.sha256, reason, at },
+    ];
+    record.sha256 = current;
+    const outcome = { file, integrated: [], superseded: [], unchanged: [] };
+    for (const f of dossier.findings ?? []) {
+      if (f.file !== file) continue;
+      delete f.rereview;
+      const p = field(document, f.pointer);
+      if (asReviewed(f, p)) outcome.unchanged.push(f.id);
+      else if (f.proposal && p.exists && equal(f.proposal.value, p.value)) {
+        f.rereview = { sha256: current, outcome: "integrated" };
+        outcome.integrated.push(f.id);
+      } else {
+        f.rereview = { sha256: current, outcome: "superseded", reason };
+        outcome.superseded.push(f.id);
+      }
+    }
+    return outcome;
+  });
+  const staging = `${dossierPath}.tmp-${randomUUID()}`;
+  writeFileSync(staging, JSON.stringify(dossier, null, 2) + "\n");
+  renameSync(staging, dossierPath);
+  return summary;
+}
 export function assessResearch(
   root,
   inputFile,
@@ -230,6 +293,10 @@ export function assessResearch(
   for (const r of records) {
     if (!r.file.startsWith(CORPUS) || !r.file.endsWith(".json"))
       fail("Record must be a corpus JSON file");
+    for (const h of list(r.history ?? [], "Record history", true)) {
+      need(h.sha256, "Re-reviewed hash");
+      need(h.reason, "Re-review reason");
+    }
     const text = read(r.file);
     const reviewed =
       sha(text) === r.sha256
@@ -327,12 +394,24 @@ export function assessResearch(
     )
       fail("Invalid finding kind");
     need(f.rationale, "Finding rationale");
+    if (f.rereview) {
+      const p = field(documents.get(f.file), f.pointer);
+      const record = records.find((r) => r.file === f.file);
+      if (f.rereview.sha256 !== record.sha256)
+        fail("Finding re-review does not match the reviewed record version");
+      if (f.rereview.outcome === "integrated") {
+        if (!f.proposal || !p.exists || !equal(f.proposal.value, p.value))
+          fail("An integrated finding needs its proposed value in the corpus");
+      } else if (f.rereview.outcome === "superseded") {
+        need(f.rereview.reason, "Superseded finding reason");
+        if (asReviewed(f, p))
+          fail("A superseded finding still matches the corpus");
+      } else fail("Re-review outcome must be integrated or superseded");
+      // Already resolved in the fiche: nothing remains to correct.
+      continue;
+    }
     const p = pointer(documents.get(f.file), f.pointer);
-    if (
-      !f.before ||
-      f.before.exists !== p.exists ||
-      (p.exists && !equal(f.before.value, p.value))
-    )
+    if (!asReviewed(f, p))
       fail("Finding before value does not match the corpus");
     if (f.proposal) {
       if (f.kind === "confirmation")
@@ -443,7 +522,7 @@ export function prepareResearch(root, inputFile, output) {
     );
     const sections = report.findings.map(
       (f) =>
-        `## ${f.id}: ${f.kind}\n\nFile: ${f.file}\nField: ${f.pointer}\nClaim: ${f.claim}\n\n${f.rationale}\n\nBefore:\n\n\`\`\`json\n${JSON.stringify(f.before, null, 2)}\n\`\`\`\n\nProposed:\n\n\`\`\`json\n${JSON.stringify(f.proposal ?? null, null, 2)}\n\`\`\``
+        `## ${f.id}: ${f.kind}\n\nFile: ${f.file}\nField: ${f.pointer}\nClaim: ${f.claim}${f.rereview ? `\nRe-review: ${f.rereview.outcome}${f.rereview.reason ? ` (${f.rereview.reason})` : ""}` : ""}\n\n${f.rationale}\n\nBefore:\n\n\`\`\`json\n${JSON.stringify(f.before, null, 2)}\n\`\`\`\n\nProposed:\n\n\`\`\`json\n${JSON.stringify(f.proposal ?? null, null, 2)}\n\`\`\``
     );
     writeFileSync(
       join(staging, "corpus.md"),
@@ -520,6 +599,17 @@ if (
   try {
     const [command, input, output, ...terms] = process.argv.slice(2);
     const root = process.cwd();
+    const rereview = () => {
+      const args = [output, ...terms];
+      const at = args.indexOf("--reason");
+      if (at < 0) fail("Re-review needs --reason");
+      return rereviewRecords(
+        root,
+        input,
+        args.filter((_, i) => i !== at && i !== at + 1),
+        args[at + 1]
+      );
+    };
     const result =
       command === "discover"
         ? discoverCorpus(root, [input, output, ...terms].filter(Boolean))
@@ -529,9 +619,11 @@ if (
             })
           : command === "prepare"
             ? prepareResearch(root, input, output)
-            : fail(
-                "Usage: research.mjs discover TERM... | check INPUT [--delivery] | prepare INPUT OUTPUT"
-              );
+            : command === "rereview"
+              ? rereview()
+              : fail(
+                  'Usage: research.mjs discover TERM... | check INPUT [--delivery] | prepare INPUT OUTPUT | rereview INPUT FILE... --reason "..."'
+                );
     console.log(JSON.stringify(result, null, 2));
   } catch (error) {
     console.error(error.message);
