@@ -6,12 +6,17 @@ import { CANONICAL_DOMAIN } from "@/lib/brand";
 import { getCountryRoute, getPeopleRoute, getPlaceRoute } from "@/lib/routing";
 import type { PlaceRecord } from "@/api/v2/services/places";
 
-const { getPlaceByIdMock } = vi.hoisted(() => ({
+const { getPlaceByIdMock, loadPlaceNextStepsMock } = vi.hoisted(() => ({
   getPlaceByIdMock: vi.fn(),
+  loadPlaceNextStepsMock: vi.fn(async () => []),
 }));
 
 vi.mock("@/api/v2/services/places", () => ({
   getPlaceById: getPlaceByIdMock,
+}));
+
+vi.mock("@/lib/fiche/placeNextSteps", () => ({
+  loadPlaceNextSteps: loadPlaceNextStepsMock,
 }));
 
 vi.mock("next/navigation", () => ({
@@ -161,8 +166,11 @@ describe("the place page", () => {
   it("lists its sources with their type and never their tier", async () => {
     const { container } = render(await PlacePage(params("LOC_GAGNOA")));
 
-    const source = screen.getByRole("link", { name: "La société bété" });
-    expect(source).toHaveAttribute("href", DOZON.url);
+    expect(
+      screen
+        .getAllByRole("link", { name: "La société bété" })
+        .some((source) => source.getAttribute("href") === DOZON.url)
+    ).toBe(true);
     expect(
       container.querySelector('[data-source-kind="academic"]')
     ).not.toBeNull();

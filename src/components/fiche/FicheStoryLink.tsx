@@ -16,9 +16,11 @@ export interface FicheStoryLinkProps {
    */
   story: NameStoryLink | null | undefined;
   /** The kind of fiche the reader leaves, recorded with the click. */
-  from: FicheEntityType;
+  from: FicheEntityType | "place";
   language: Language;
   familyName?: boolean;
+  /** Override the generic wording on fiches with an approved local label. */
+  copyOverride?: { linkLabel: string; hint: string };
 }
 
 /**
@@ -41,6 +43,7 @@ export function FicheStoryLink({
   from,
   language,
   familyName = false,
+  copyOverride,
 }: FicheStoryLinkProps) {
   if (!story) return null;
 
@@ -55,12 +58,14 @@ export function FicheStoryLink({
           trackEvent("fiche:related_click", { from, to: "name_story" })
         }
       >
-        {familyName
-          ? copy.familyNameStoryLink(story.name)
-          : copy.storyLink(story.name)}
+        {copyOverride?.linkLabel ??
+          (familyName
+            ? copy.familyNameStoryLink(story.name)
+            : copy.storyLink(story.name))}
       </ActionLink>
       <p className="ea-story-hint">
-        {familyName ? copy.familyNameStoryHint : copy.storyLinkHint}
+        {copyOverride?.hint ??
+          (familyName ? copy.familyNameStoryHint : copy.storyLinkHint)}
       </p>
     </div>
   );
