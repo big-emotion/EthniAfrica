@@ -237,6 +237,37 @@ test("check 8: across the rename the outline's pixels do not move; both names st
 });
 
 // @req REQ-186
+test("a frame is a function of its number: drawn first, or after the frames before it", async (t) => {
+  if (!assets) return t.skip("no imagery");
+  // Frame 621, the Haute-Volta outline over the Mossi kingdoms, once stacked
+  // its areas in the order this browser had first drawn them: drawn after
+  // frame 321, or after the 30 frames before it, 36,737 pixels differed
+  // from the same frame drawn first. A parallel render's slice starts in a
+  // fresh browser, so the frame must not depend on what came before.
+  const at = 621;
+  const before = Array.from({ length: 30 }, (_, k) => at - 30 + k);
+  const drawn = async (frames) =>
+    (
+      await pixels(
+        (await renderSeriesFrames(seq, frames, { diagnose: true })).at(-1).png
+      )
+    ).data;
+  const fresh = await drawn([at]);
+  for (const history of [[321], before]) {
+    const after = await drawn([...history, at]);
+    let differ = 0;
+    for (let i = 0; i < fresh.length; i += 3)
+      if (
+        fresh[i] !== after[i] ||
+        fresh[i + 1] !== after[i + 1] ||
+        fresh[i + 2] !== after[i + 2]
+      )
+        differ++;
+    assert.equal(differ, 0, `after frame ${history[0]}: ${differ} px differ`);
+  }
+});
+
+// @req REQ-186
 test("the frame model drives the drawn page: one state per frame, nothing replays", (t) => {
   if (!assets) return t.skip("no imagery");
   for (const f of [FRAMES.mossiStill, FRAMES.split])

@@ -635,6 +635,48 @@ function planTeachingCard(seq, i) {
 
 export const seriesFrameCount = (seq) => seq.frames;
 
+// The parallel final render (operator, 19 October 2026): `workers` slices
+// [from, to) covering the video, each drawn by its own browser from its
+// first frame. A map or photo card draws each frame from its number alone,
+// so a cut falls inside one, outside a card change. An ident does not: its
+// glyphs' anti-aliasing depends on its own earlier frames, so no cut falls
+// in an ident nor in the IDENT_LEAD frames before it. Each cut is the
+// allowed frame nearest an even share; with fewer allowed frames than
+// workers, the video has fewer slices.
+const IDENT_LEAD = 30;
+export function seriesSlices(seq, workers) {
+  if (!Number.isInteger(workers) || workers < 1)
+    fail(`workers: a whole number from 1, not ${workers}`);
+  const count = seq.frames;
+  const starts = seq.cardStarts;
+  const end = (i) => starts[i + 1] ?? count;
+  const idents = seq.cards.flatMap((c, i) =>
+    c.type === "intro" || c.outro
+      ? [[starts[i] - CROSS_FADE - IDENT_LEAD, end(i)]]
+      : []
+  );
+  const allowed = [];
+  for (const [i, card] of seq.cards.entries()) {
+    if (card.type !== "map" && !card.image) continue;
+    for (let f = Math.max(1, starts[i]); f <= end(i) - CROSS_FADE; f++)
+      if (!idents.some(([a, b]) => f >= a && f < b)) allowed.push(f);
+  }
+  const cuts = [];
+  for (let k = 1; k < workers; k++) {
+    const target = (k * count) / workers;
+    let best;
+    for (const f of allowed)
+      if (
+        f > (cuts.at(-1) ?? 0) &&
+        (best === undefined || Math.abs(f - target) < Math.abs(best - target))
+      )
+        best = f;
+    if (best !== undefined) cuts.push(best);
+  }
+  const bounds = [0, ...cuts, count];
+  return cuts.concat(count).map((to, k) => ({ from: bounds[k], to }));
+}
+
 export function seriesFrameState(seq, frame) {
   if (!Number.isInteger(frame) || frame < 0 || frame >= seq.frames)
     fail(`Frame ${frame} is outside the video, 0 to ${seq.frames - 1}`);
