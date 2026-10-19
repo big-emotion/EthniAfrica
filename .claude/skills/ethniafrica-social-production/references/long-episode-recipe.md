@@ -98,6 +98,8 @@ render runs once.
     tagged link (the channel has advanced features, so description links are clickable).
     Facebook carries the tagged link in a first comment. Instagram gets an alternative text. The
     story carries a link sticker to the name address with the campaign tags, and a question.
+    Every caption carries a line of four or five targeted hashtags ending with `#EthniAfrica`,
+    just before the closing sentence (`docs/editorial/strategy/social-series.md`).
 23. The same duration on every network when the operator decides so; record the account evidence
     and what is still to check in the app (TikTok's upload length).
 24. `npm run social:package -- create` then `verify`; present `post.md`, the video and the
@@ -107,3 +109,15 @@ render runs once.
 
 25. Record each operator decision in the piece's checkpoint with the operator's own words
     ([checkpoint operations](checkpoint-operations.md)).
+
+## 10. Handover and after posting
+
+26. Right after approval 3, gather in one visible folder outside the repository (the operator's
+    social-media « à valider » folder, one dated folder per piece) the video, the thumbnail and
+    one `publication.md` generated from the package input, so every text is the approved string:
+    per network the caption, alternative text, first comment, YouTube title and description,
+    the story stickers, and the checks to do before posting.
+27. When the operator reports the URLs, record one `publication` event per network, add the
+    piece to the production ledger (`docs/productions/<typologie>/`, checked by
+    `npm run check:production-ledger`) in a PR, and move the handover folder to the published
+    pieces.
