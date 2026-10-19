@@ -10,6 +10,17 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+## [5.7.1] - 2026-10-19
+
+### Fixed
+
+- Search: every search answered 500 on production after v5.7.0. The recorded-term
+  check (`afrik_search_recorded_term`, migration `112`) walks every fiche and ran past
+  the statement timeout on each query. After one timeout the check is now skipped for a
+  minute, so the search answers without recorded terms and the check comes back by
+  itself; any other error still fails. The check itself is still slow and gets its own
+  fix (ETNI-2110) (#1889).
+
 ## [5.7.0] - 2026-10-19
 
 ### Added
@@ -1940,7 +1951,8 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.7.0...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.7.1...HEAD
+[5.7.1]: https://github.com/big-emotion/ethniafrica/compare/v5.7.0...v5.7.1
 [5.7.0]: https://github.com/big-emotion/ethniafrica/compare/v5.6.0...v5.7.0
 [5.6.0]: https://github.com/big-emotion/ethniafrica/compare/v5.5.0...v5.6.0
 [5.5.0]: https://github.com/big-emotion/ethniafrica/compare/v5.4.0...v5.5.0
