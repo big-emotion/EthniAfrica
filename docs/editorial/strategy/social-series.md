@@ -79,8 +79,9 @@ episode 19). It applies to every video script from that date.
   accepted on 2026-10-19). The carousel renderer and the series video engine
   draw it since PR #1894: the closing card's chunks are the four printed
   lines, and a closing card no longer prints a sentence of its own. The
-  satellite video and the clipped reels keep the old signature line until
-  their ending is decided.
+  satellite map videos and the clipped reels end the same way since the
+  operator's decision of 2026-10-19: they print the same closing line and
+  invitation, each in its own ending's sizes and place.
 - **Long first, refined after:** the script tells the whole story the sources
   support, as a long video with chapters, then is reduced with the operator
   round by round. For a country name in series 1 the thread runs: the words of
