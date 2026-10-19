@@ -1,5 +1,6 @@
 import { describe, it, expect, beforeEach, afterEach } from "vitest";
 import { mkdirSync, writeFileSync, readFileSync, rmSync, existsSync } from "fs";
+import { tmpdir } from "os";
 import { join } from "path";
 
 import {
@@ -81,7 +82,7 @@ describe("checkNameHistoryBlocks", () => {
 
   beforeEach(() => {
     tmpDir = join(
-      __dirname,
+      tmpdir(),
       `tmp_test_nh_${Date.now()}_${Math.random().toString(36).slice(2)}`
     );
     mkdirSync(tmpDir, { recursive: true });
@@ -351,7 +352,7 @@ describe("strict-model key checks treat nameHistory as optional", () => {
 
   beforeEach(() => {
     tmpDir = join(
-      __dirname,
+      tmpdir(),
       `tmp_test_nhkeys_${Date.now()}_${Math.random().toString(36).slice(2)}`
     );
     datasetRoot = join(tmpDir, "afrik");

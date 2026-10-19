@@ -5,6 +5,7 @@ import {
   rmSync,
   writeFileSync,
 } from "node:fs";
+import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
 
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
@@ -42,7 +43,7 @@ describe("strict PAT_* fiche model", () => {
 
   beforeEach(() => {
     datasetRoot = join(
-      __dirname,
+      tmpdir(),
       `tmp_patronyme_model_${Date.now()}_${Math.random().toString(36).slice(2)}`
     );
     mkdirSync(join(datasetRoot, "patronymes"), { recursive: true });

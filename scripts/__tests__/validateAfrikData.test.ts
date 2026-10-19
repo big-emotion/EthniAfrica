@@ -9,6 +9,7 @@
 // @req REQ-196
 import { describe, it, expect, beforeEach, afterEach } from "vitest";
 import { mkdirSync, writeFileSync, rmSync, existsSync, readFileSync } from "fs";
+import { tmpdir } from "os";
 import { join, resolve } from "path";
 import {
   checkFlgFolderMatch,
@@ -193,7 +194,7 @@ describe("validateAfrikData – new integrity checks", () => {
 
   beforeEach(() => {
     tmpDir = join(
-      __dirname,
+      tmpdir(),
       `tmp_test_${Date.now()}_${Math.random().toString(36).slice(2)}`
     );
     mkdirSync(tmpDir, { recursive: true });
