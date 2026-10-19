@@ -83,12 +83,12 @@ historical assertions or operator approvals. Fields:
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `schema`, `subject` | `1` and the subject.                                                                                                                                                                                                                                                                                                     |
 | `search`            | Nonempty `terms`; `excluded` entries each have `file` and `reason`. Every discovered match is reviewed or explicitly excluded.                                                                                                                                                                                           |
-| `records`           | Entries with canonical project-relative corpus `file` and its current `sha256`. Empty only with `noCorpusReason`.                                                                                                                                                                                                        |
+| `records`           | Entries with canonical project-relative corpus `file` and its current `sha256`. Empty only with `noCorpusReason`. A [re-reviewed](#re-reviewing-a-changed-record) record also has `history`: the earlier `sha256` values, each with its `reason` and date.                                                               |
 | `sources`           | Unique `id`, `kind` (`written` or `oral`), `citation`, `locator`, short exact `passage`, local `recordFile`, `basis`. Oral sources also need `consent`.                                                                                                                                                                  |
 | Source `basis`      | `attestation`, `creation`, `adoption`, `context`, `hypothesis` or `unknown`: what this passage supports. Split passages with different roles into separate records.                                                                                                                                                      |
 | `claims`            | Unique `id`, `text`, `certainty` (`supported`, `hypothesis`, `unknown`, `contested`), nonempty source IDs in `sources`, and `limits`. Contested claims need distinct source IDs.                                                                                                                                         |
 | Name-event claim    | Additionally `event` (`attestation`, `creation`, `adoption`, `antecedent`), `date` and `actor`, explicitly null when unknown. An unknown claim cannot invent either. A supported creation needs a creation source; attestation alone is refused.                                                                         |
-| `findings`          | Unique `id`, `claim` ID, corpus `file`, JSON `pointer`, `before: {exists, value}`, `kind` (`confirmation`, `missing`, `contradiction`, `uncertain`), and `rationale`. Every reviewed file needs a finding.                                                                                                               |
+| `findings`          | Unique `id`, `claim` ID, corpus `file`, JSON `pointer`, `before: {exists, value}`, `kind` (`confirmation`, `missing`, `contradiction`, `uncertain`), and `rationale`. Every reviewed file needs a finding. `rereview` is written only by the re-review command.                                                          |
 | Finding `proposal`  | Optional `{value, certainty, retainedAccounts}`. Certainty matches the claim. Contradictions, hypotheses and competing accounts need an explanation of what is retained. Confirmations have no correction. Nonoverlapping additions/replacements only; no deletion operation.                                            |
 | `images`            | Selected assets with `file`, exact item `sourcePage`, `creator`, `description`, `reuseBasis`, `credit`, `crop` and local `rightsEvidence`. Empty while none selected; fill it for all images used in the proof.                                                                                                          |
 | `destination`       | `status`, exact `invitation`; `no-link` needs `reason`, `pending` needs HTTPS `url`, `verified` needs `url`, `checkedAt`, `support` observation and local `evidence` file. The `url` is the bare page, without `utm_` parameters: the package adds each network's [campaign tags](publication-package.md#campaign-tags). |
@@ -151,7 +151,8 @@ Any other change reopens approval 2 and downstream delivery while preserving
 approval 1: a later unrelated edit to the same fiche, a corrected field
 reverted or changed again, or an edit recorded without its `locally-checked`
 progress. A change of meaning still needs a revised proof. Never rewrite hashes
-to hide a change.
+to hide a change: [re-review the record](#re-reviewing-a-changed-record)
+instead, which keeps the earlier hash and says why.
 
 The checkpoint stores only the reviewed fiche's sha256, not its bytes. Writing
 the JSON again does not reproduce the repository's formatting (prettier output
@@ -177,6 +178,52 @@ review.
 
 A newly searched name or other substantive new research also needs a revised
 proof.
+
+### Re-reviewing a changed record
+
+The rule above only recognises the corrections recorded in the current
+checkpoint. A fiche also changes in other ways: a later correction PR made for
+the same piece, a reconciled merge, another session's unrelated edit. Then
+`check`, `social:package create/verify` and the workflow fail with « Corpus
+record changed: FILE » or « Finding before value does not match the corpus »,
+and the approvals stay stale even after publication. Never put the reviewed
+version back in the corpus with `git show` to get past this. Re-read the
+current fiche instead, then record that re-review:
+
+```sh
+node .claude/skills/ethniafrica-social-production/scripts/research.mjs rereview PIECE/research.json FILE... --reason "What changed and why it is accepted"
+node .claude/skills/ethniafrica-social-production/scripts/research.mjs check PIECE/research.json --delivery
+```
+
+Run it from the project root. For each `FILE`, the command writes only the
+dossier; it reads the corpus and never changes it. It:
+
+- moves the record's earlier `sha256` into its `history`, with the `reason` and
+  the date, and records the current file's `sha256` as the reviewed version;
+- judges again each finding on that file against its original `before`. A field
+  that still holds `before` keeps the finding as it was. A field that holds the
+  finding's proposed value is marked `rereview: {outcome: "integrated"}`. Any
+  other field, including one whose place no longer exists in the fiche, is
+  marked `superseded` with the reason;
+- refuses an unchanged record, a file that is not a record of the dossier and an
+  empty reason.
+
+`check` then accepts the record at its new hash only. A later edit fails again
+and needs another re-review; each one adds to `history`. Integrated and
+superseded findings produce no correction, since nothing remains to apply.
+`check` refuses an `integrated` mark whose proposed value is absent, a
+`superseded` mark without a reason or whose field still holds `before`, and a
+mark made for another version of the record. It cannot judge whether the new
+wording is right: that is the person's re-reading, stated in the reason.
+
+The dossier changes, so the workflow reopens approval 2 (and downstream
+delivery): that is the safety. Present the re-reviewed dossier at a new review 2
+with `researchFile`, record the operator's approval, then review and approve 3
+again. These events pass without touching the corpus. Approval 1 is kept.
+Corrections approved under the earlier dossier keep their `corpusProposals`
+keys and their progress records; closure still needs them `verified-live`.
+Superseded findings and a meaning that changed in the fiche must be shown to
+the operator at that review, not only recorded.
 
 ### Verifying a pending destination
 
