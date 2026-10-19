@@ -52,6 +52,27 @@ const ruleBody = (selector: string): string =>
     .map((match) => match[1])
     .join("\n");
 
+const ruleBodyIn = (css: string, selector: string): string =>
+  css.match(new RegExp(`\\${selector}\\s*\\{([^}]*)\\}`))?.[1] ?? "";
+
+const mediaRuleBody = (maxWidth: number): string | undefined => {
+  const css = source();
+  const query = new RegExp(
+    `@media\\s*\\(max-width:\\s*${maxWidth}px\\)\\s*\\{`
+  );
+  const start = css.search(query);
+  if (start === -1) return undefined;
+
+  const open = css.indexOf("{", start);
+  let depth = 0;
+  for (let index = open; index < css.length; index += 1) {
+    if (css[index] === "{") depth += 1;
+    if (css[index] === "}") depth -= 1;
+    if (depth === 0) return css.slice(open + 1, index);
+  }
+  return undefined;
+};
+
 describe("the brand lockup — the mark, the name, and what the site is (REQ-114)", () => {
   // @req REQ-114
   it("says what EthniAfrica is, beside the name", () => {
@@ -68,6 +89,51 @@ describe("the brand lockup — the mark, the name, and what the site is (REQ-114
     expect(
       within(brand).getByText(chromeCopy.fr.headerTagline)
     ).toBeInTheDocument();
+  });
+
+  // @req REQ-114
+  it("keeps the complete product name visible at phone widths", () => {
+    const name = ruleBody(".sh-brand-name");
+
+    expect(name).not.toMatch(/text-overflow:\s*ellipsis/);
+    expect(name).not.toMatch(/overflow:\s*hidden/);
+    expect(name).toMatch(/white-space:\s*nowrap/);
+  });
+
+  // The tagline remains useful on wider screens, but at 320px it competes
+  // with the name and controls for space. It should be removed as a whole,
+  // rather than clipped into an ellipsis.
+  // @req REQ-114
+  it("hides the tagline at phone widths instead of truncating it", () => {
+    const css = source();
+    const narrowRule = css.match(
+      /@media\s*\(max-width:\s*375px\)[\s\S]*?\.sh-brand-tagline\s*\{([^}]*)\}/
+    )?.[1];
+
+    expect(narrowRule).toBeDefined();
+    expect(narrowRule).toMatch(/display:\s*none/);
+    expect(ruleBody(".sh-brand-tagline")).not.toMatch(
+      /text-overflow:\s*ellipsis/
+    );
+  });
+
+  // The approved 320px board gives the mark and name a compact scale while
+  // keeping the full product name readable without a hand-picked font size.
+  // @req REQ-114
+  it("uses the compact mark and typography at widths through 375px", () => {
+    const compact = mediaRuleBody(375);
+    const mark = ruleBodyIn(compact ?? "", ".sh-brand-mark");
+    const name = ruleBodyIn(compact ?? "", ".sh-brand-name");
+
+    expect({
+      markWidth: mark.match(/width:\s*(\d+px)/)?.[1],
+      markHeight: mark.match(/height:\s*(\d+px)/)?.[1],
+      nameFontSize: name.match(/font-size:\s*([^;]+)/)?.[1].trim(),
+    }).toEqual({
+      markWidth: "32px",
+      markHeight: "32px",
+      nameFontSize: "var(--afh-text-small)",
+    });
   });
 
   /**
