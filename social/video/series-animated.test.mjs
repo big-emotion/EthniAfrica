@@ -538,6 +538,41 @@ test("check 10: the silent viewing check on the Mossi plan: six facts pass; with
   assert.equal(first.pass, false);
   assert.equal(first.coverage, 0);
   assert.ok(without.warnings.some((w) => /Fait sans marque à l'écran/.test(w)));
+  // A mark counts only on screen: the Libyan desert, lit far east of the
+  // frame, does not.
+  const away = episode(
+    editCard("carte-animee-mossi", (c) => {
+      c.map.words = c.map.words.filter((w) => !w.text.startsWith("mooré"));
+      c.map.areas.push({
+        file: "libyque.geojson",
+        id: "libyque",
+        name: "Désert libyque",
+        ink: "d",
+        label: "none",
+        say: "Mossi",
+      });
+      c.map.facts[0].shows = ["area:libyque"];
+    })
+  );
+  assert.equal(
+    away.silent.find((f) => f.say === "parlent le mooré").pass,
+    false
+  );
+});
+
+// @req REQ-186
+test("check 7: a move inside a card waits for the change of view between cards", () => {
+  // The 1932 card comes after the Mossi plan's closer view: its first word
+  // falls inside the 27-frame change of view.
+  assert.throws(
+    () =>
+      episode(
+        editCard("carte-animee-1932", (c) => {
+          c.map.moves = [{ say: "En", lon: -2.0, lat: 11.8, radius: 3250 }];
+        })
+      ),
+    /pendant le changement de vue/
+  );
 });
 
 // @req REQ-186

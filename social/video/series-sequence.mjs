@@ -1007,6 +1007,16 @@ function planAnimatedCard(seq, plan, run, k) {
     });
   }
   checkMoves(spec, moves);
+  // A move inside the card starts once the change of view into the card,
+  // 27 frames from its change, is over: two camera paths never overlap.
+  const before = k ? plan.cards[run.cards[k - 1]] : null;
+  if (before && !sameCamera(before.endCamera, view.camera)) {
+    const free = seq.cardStarts[i] - CROSS_FADE + SEQUENCE_TIMING.move;
+    if (moves.some((m) => m.start < free))
+      fail(
+        `${what}: un mouvement commence pendant le changement de vue entre deux cartes (avant l'image ${free})`
+      );
+  }
   const cp = { card: i, start, end, view: view.camera, globe, moves };
   const cameraAt = (f) => cardCamera(cp, f).camera;
   // Arrows in the order of their words, one drawing at a time.
@@ -1635,17 +1645,29 @@ function factSpan(seq, card, say) {
     `Card ${seq.cards[card].id}: Fait absent du sous-titre (« ${say} »)`
   );
 }
+// A mark counts on screen only: in the frame, from 60 % opacity, an arrow
+// from half drawn.
+const onScreen = (b) =>
+  b.x < 1080 && b.x + b.w > 0 && b.y < 1920 && b.y + b.h > 0;
+const pointOn = ([x, y]) => onScreen({ x, y, w: 0, h: 0 });
 function markOn(map, mark) {
   const [kind, ...rest] = mark.split(":");
   const value = rest.join(":");
   if (kind === "area")
-    return map.areas.some((a) => a.id === value && a.opacity >= 0.6);
+    return map.areas.some(
+      (a) => a.id === value && a.opacity >= 0.6 && onScreen(a.box)
+    );
   if (kind === "arrow")
-    return map.marks.arrows.some((a) => a.id === value && a.k >= 0.5);
+    return map.marks.arrows.some(
+      (a) => a.id === value && a.k >= 0.5 && pointOn(a.tip)
+    );
   if (kind === "illus")
-    return map.marks.drawings.some((d) => d.kind === value && d.opacity >= 0.6);
+    return map.marks.drawings.some(
+      (d) => d.kind === value && d.opacity >= 0.6 && pointOn([d.x, d.y])
+    );
   return map.texts.some(
-    (t) => t.opacity >= 0.6 && norm(t.text).includes(norm(value))
+    (t) =>
+      t.opacity >= 0.6 && onScreen(t.box) && norm(t.text).includes(norm(value))
   );
 }
 export function silentCheck(seq) {
