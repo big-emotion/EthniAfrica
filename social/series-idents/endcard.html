@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Générique de fin EthniAfrica</title>
+    <link rel="stylesheet" href="idents.css" />
+    <style>
+      [data-part="line"] {
+        left: 120px;
+        width: 840px;
+        text-align: center;
+        font: 600 56px/64px var(--wordmark);
+        color: var(--ink);
+      }
+      [data-part="address"] {
+        left: 120px;
+        top: 296px;
+        width: 840px;
+        box-sizing: border-box;
+        height: 64px;
+        padding: 0 28px;
+        border-radius: 999px;
+        background: var(--ground-raised);
+        color: var(--ink-muted);
+        font: 700 32px/64px var(--text);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+      }
+      /* The phone: a 430 px page at the scale of a phone filling the frame's
+     width, under the address. Its top corners are the screen's. */
+      [data-part="phone"] {
+        left: 0;
+        top: 384px;
+        width: 1080px;
+        height: 1536px;
+        overflow: hidden;
+        border-radius: 44px 44px 0 0;
+      }
+      iframe.site {
+        border: 0;
+        width: 430px;
+        height: 612px;
+        transform: scale(calc(1080 / 430));
+        transform-origin: 0 0;
+        display: block;
+      }
+      [data-part="caret"] {
+        width: 6px;
+        height: 56px;
+        background: #2a1e15;
+      }
+      [data-part="invite"] {
+        left: 120px;
+        width: 840px;
+        text-align: center;
+        text-wrap: balance;
+        font: 700 32px/40px var(--text);
+        color: var(--ink-muted);
+      }
+      [data-part="pill"] {
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 14px 32px;
+        border: 3px solid var(--accent);
+        border-radius: 999px;
+        font: 800 34px/40px var(--text);
+        letter-spacing: 0.04em;
+        color: var(--accent);
+      }
+      [data-part="cue"] {
+        left: 120px;
+        display: flex;
+        align-items: flex-end;
+        gap: 18px;
+        font: 800 32px/40px var(--text);
+        color: var(--ink);
+      }
+      [data-part="cue"] svg {
+        width: 88px;
+        height: 88px;
+      }
+      [data-part="signature"] {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 1828px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="stage">
+      <p data-part="line" class="t" data-role="project-line" data-essential>
+        L’importance de<br />connaître nos noms.
+      </p>
+      <p data-part="address" data-layer="address" data-essential></p>
+      <div data-part="phone">
+        <iframe
+          class="site"
+          title="Page de recherche d'EthniAfrica"
+          scrolling="no"
+        ></iframe>
+      </div>
+      <div data-part="caret"></div>
+      <p data-part="invite" class="t" data-essential>
+        Vous pouvez continuer la recherche sur EthniAfrica, lien en profil.
+      </p>
+      <p data-part="pill" class="t" data-essential>ETHNIAFRICA.COM</p>
+      <!-- Instagram, TikTok and YouTube Shorts all print the account's name at
+       the bottom left of a playing video: the arrow points there. -->
+      <p data-part="cue" data-essential>
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M17 7 7 17" />
+          <path d="M15 17H7V9" /></svg
+        ><span class="t">@ethniafrica</span>
+      </p>
+      <div data-part="signature" class="wordmark t" data-role="wordmark">
+        <img src="../brand/ethniafrica-logo.png" alt="" />EthniAfrica
+      </div>
+    </main>
+    <script type="module">
+      import { params, setUp, show, ready } from "./idents.mjs";
+
+      // Replaceable layers, one set per episode: the name typed, the answer page
+      // that name opens, and which of its name timelines shows the forms.
+      const MOCKUPS = "../../docs/design/mockups/site/";
+      const name = params.get("name") ?? "bassa";
+      const result = params.get("result") ?? "search-bassa-430";
+      const forms = params.has("forms")
+        ? +params.get("forms")
+        : name === "bassa"
+          ? 2
+          : null;
+      const typed = params.get("typed") ?? name.slice(0, 3);
+
+      const PHONE_TOP = 384,
+        SCALE = 1080 / 430;
+
+      const SHOTS = {
+        "o1-line": { line: { top: "700px" } },
+        "o2-typing": { address: {}, phone: {}, caret: {} },
+        "o3-result": { address: {}, phone: {} },
+        "o4-history": { address: {}, phone: {} },
+        "o5-end": {
+          line: { top: "330px" },
+          invite: { top: "494px" },
+          pill: { top: "606px" },
+          cue: { top: "1120px" },
+          signature: {},
+        },
+      };
+      const shot = params.get("shot") ?? "o3-result";
+
+      setUp();
+      show(SHOTS, shot);
+
+      const address = document.querySelector("[data-layer=address]");
+      const frame = document.querySelector("iframe.site");
+      const onEntry = shot === "o2-typing";
+      address.textContent =
+        "ethniafrica.com/fr/atlas/recherche" + (onEntry ? "" : "/" + name);
+
+      if (SHOTS[shot].phone) {
+        frame.src =
+          MOCKUPS + (onEntry ? "search-entry-430" : result) + ".dc.html";
+        await new Promise((resolve) =>
+          frame.addEventListener("load", resolve, { once: true })
+        );
+        const doc = frame.contentDocument;
+        await doc.fonts.ready;
+        const input = doc.querySelector("input[type=search]");
+        input.style.caretColor = "transparent";
+        const mark = (el) => el && el.setAttribute("data-essential", "");
+
+        if (onEntry) {
+          input.value = typed;
+          mark(doc.querySelector(".ea-q-label"));
+          placeCaret(input);
+        } else {
+          input.value = name;
+          if (shot === "o3-result") {
+            mark(doc.querySelector(".ea-feed-title"));
+            mark(doc.querySelector(".afh-tile-label"));
+            mark(doc.querySelector(".afh-name-timeline-title"));
+          } else {
+            const timelines = [...doc.querySelectorAll(".afh-name-timeline")];
+            const chips = (t) =>
+              t.querySelectorAll(".afh-name-timeline-name").length;
+            const section =
+              forms != null
+                ? timelines[forms]
+                : timelines.reduce((a, b) => (chips(b) > chips(a) ? b : a));
+            const lead = section.querySelector(".afh-name-timeline-lead");
+            const names = section.querySelector(".afh-name-timeline-names");
+            // The lead (or the forms) lands just under the site's sticky header.
+            const anchor = lead ?? names;
+            const header = doc.querySelector(".sh-header")?.offsetHeight ?? 0;
+            frame.contentWindow.scrollTo(
+              0,
+              anchor.getBoundingClientRect().top +
+                frame.contentWindow.scrollY -
+                header -
+                16
+            );
+            mark(lead);
+            mark(names);
+          }
+        }
+      }
+
+      function placeCaret(input) {
+        const s = frame.contentWindow.getComputedStyle(input);
+        const ctx = document.createElement("canvas").getContext("2d");
+        ctx.font = `${s.fontWeight} ${s.fontSize} ${s.fontFamily}`;
+        const r = input.getBoundingClientRect();
+        const x =
+          r.left +
+          parseFloat(s.paddingLeft) +
+          ctx.measureText(input.value).width;
+        const caret = document.querySelector("[data-part=caret]");
+        caret.style.left = `${x * SCALE + 2}px`;
+        caret.style.top = `${PHONE_TOP + (r.top + r.height / 2) * SCALE - 28}px`;
+      }
+
+      await ready();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+/* EthniAfrica Cartes 1.9.0 tokens, fonts and the on-image text treatment,
+   as tokens.json and series.md set them. Nothing here is a new value: the
+   idents may only use the charter's colours, faces and logo. */
+
+@font-face {
+  font-family: Anton;
+  src: url(../design-system/fonts/Anton-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Nunito Sans";
+  src: url(../design-system/fonts/NunitoSans.ttf);
+  font-weight: 200 1000;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url(../design-system/fonts/NotoSans-Variable.ttf);
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: Fraunces;
+  src: url(../design-system/fonts/Fraunces.ttf);
+  font-weight: 100 900;
+}
+
+:root {
+  --ground: #15100b;
+  --ground-raised: #251c13;
+  --ink: #f3e9da;
+  --ink-muted: #cbbba3;
+  --ink-faint: #a8977f;
+  --accent: #e8b96a;
+  --rule: #4a3c2c;
+  --on-image-ink: #f3e9da;
+  --on-image-muted: #cbbba3;
+  --on-image-accent: #e8b96a;
+  --on-image-stroke: rgba(11, 8, 6, 0.92);
+  --on-image-ring: rgba(11, 8, 6, 0.62);
+  --on-image-ring-soft: rgba(11, 8, 6, 0.45);
+  --display: Anton, "Noto Sans", sans-serif;
+  --text: "Nunito Sans", "Noto Sans", sans-serif;
+  --wordmark: Fraunces, Georgia, serif;
+}
+:root[data-theme="parchemin"] {
+  --ground: #f6f0e6;
+  --ground-raised: #ece3d4;
+  --ink: #2a1e15;
+  --ink-muted: #55463a;
+  --ink-faint: #655443;
+  --accent: #7f5212;
+  --rule: #d6c8b0;
+}
+
+html,
+body {
+  margin: 0;
+  width: 1080px;
+  height: 1920px;
+  overflow: hidden;
+}
+body {
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--text);
+  position: relative;
+}
+body[data-ground="none"] {
+  background: transparent;
+}
+body[data-ground="image"] {
+  background: #000 var(--picture) center / cover no-repeat;
+}
+
+.stage > * {
+  position: absolute;
+  margin: 0;
+  transition: none;
+}
+[hidden-in-shot] {
+  opacity: 0;
+}
+
+/* On an image, or over the transparent ground of the alpha version, every
+   text takes the 1.4.0 outline under the letter and the 1.9.0 second contour
+   (series.md, « Legibility on light pictures »). */
+body[data-ground="image"] .t,
+body[data-ground="none"] .t {
+  -webkit-text-stroke: var(--outline, 4px) var(--on-image-stroke);
+  paint-order: stroke fill;
+  filter: url(#oi-ring-3);
+}
+body[data-ground="image"],
+body[data-ground="none"] {
+  --ink: var(--on-image-ink);
+  --ink-muted: var(--on-image-muted);
+  --accent: var(--on-image-accent);
+}
+.o8 {
+  --outline: 8px;
+}
+.o8.t {
+  filter: url(#oi-ring-5) !important;
+}
+.o13 {
+  --outline: 13px;
+}
+.o13.t {
+  filter: url(#oi-ring-8) !important;
+}
+body[data-ground="ground"] .t {
+  filter: none;
+}
+
+.label {
+  font: 800 32px/40px var(--text);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+.wordmark {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font: 600 44px/48px var(--wordmark);
+  color: var(--ink);
+}
+.wordmark img {
+  width: 56px;
+  height: 56px;
+}
+
+[data-guide] {
+  position: absolute;
+  pointer-events: none;
+  z-index: 99;
+}
+[data-guide="safe"] {
+  outline: 3px dashed #ff3b6b;
+}
+[data-guide="buttons"] {
+  background: repeating-linear-gradient(
+    45deg,
+    #ff3b6b55 0 12px,
+    transparent 12px 24px
+  );
+  outline: 3px solid #ff3b6b;
+}

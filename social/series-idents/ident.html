@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Générique d'intro EthniAfrica</title>
+    <link rel="stylesheet" href="idents.css" />
+    <style>
+      /* Left-aligned on x 120: below y 840 the apps' buttons cover x 780 to 960,
+     so every line keeps to 660 px there. */
+      [data-part="brand"] {
+        left: 120px;
+        top: 318px;
+      }
+      [data-part="employed"] {
+        left: 120px;
+        font: 400 220px/210px var(--display);
+        color: var(--ink);
+        white-space: nowrap;
+      }
+      [data-part="forms"] {
+        left: 120px;
+        width: 660px;
+      }
+      [data-part="forms"] .label {
+        margin-bottom: 14px;
+      }
+      .forms {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 32px;
+      }
+      .forms span,
+      .row .name {
+        font: 400 76px/82px var(--display);
+        color: var(--ink);
+        white-space: nowrap;
+      }
+      [data-part="peoples"] {
+        left: 120px;
+        width: 660px;
+        display: grid;
+        gap: 10px;
+      }
+      .row {
+        display: flex;
+        align-items: baseline;
+        gap: 20px;
+      }
+      .row .kind {
+        font: 700 32px/40px var(--text);
+        color: var(--ink-muted);
+      }
+      /* Peul's row keeps its place while the name itself moves there. */
+      .row .slot {
+        display: inline-block;
+        width: 138px;
+        height: 82px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="stage">
+      <div
+        data-part="brand"
+        class="wordmark t"
+        data-role="wordmark"
+        data-essential
+      >
+        <img src="../brand/ethniafrica-logo.png" alt="" />EthniAfrica
+      </div>
+
+      <p data-part="label" class="label t" data-essential>
+        Le nom employé en français
+      </p>
+
+      <p
+        data-part="employed"
+        class="t o13"
+        data-layer="employed"
+        data-essential
+      >
+        Peul
+      </p>
+
+      <div data-part="forms">
+        <p class="label t">Ses différents noms</p>
+        <p class="forms" data-essential>
+          <span class="t o8" data-form>Fulɓe</span
+          ><span class="t o8" data-form>Fula</span
+          ><span class="t o8" data-form>Fulani</span
+          ><span class="t o8" data-form>Haalpulaar'en</span
+          ><span class="t o8" data-form>Fellata</span
+          ><span class="t o8" data-form>Toucouleur</span>
+        </p>
+      </div>
+
+      <div data-part="peoples">
+        <p class="row">
+          <span class="slot"></span><span class="kind t">peuple</span>
+        </p>
+        <p class="row">
+          <span class="name t o8" data-form data-essential>Lingala</span
+          ><span class="kind t">langue</span>
+        </p>
+        <p class="row">
+          <span class="name t o8" data-form data-essential>Côte d’Ivoire</span
+          ><span class="kind t">pays</span>
+        </p>
+        <p class="row">
+          <span class="name t o8" data-form data-essential>Bantou</span
+          ><span class="kind t">famille de langues</span>
+        </p>
+        <p class="row">
+          <span class="name t o8" data-form data-essential>Traoré</span
+          ><span class="kind t">nom de famille</span>
+        </p>
+        <p class="row">
+          <span class="name t o8" data-form data-essential>Yamoussoukro</span
+          ><span class="kind t">lieu</span>
+        </p>
+      </div>
+    </main>
+    <script type="module">
+      import { params, setUp, show, ready } from "./idents.mjs";
+
+      const SHOTS = {
+        "i1-brand": { brand: {} },
+        "i2-name": {
+          brand: {},
+          label: { left: "120px", top: "520px" },
+          employed: { top: "580px", fontSize: "220px", lineHeight: "210px" },
+        },
+        "i3-forms": {
+          brand: {},
+          label: { left: "120px", top: "460px" },
+          employed: { top: "512px", fontSize: "220px", lineHeight: "210px" },
+          forms: { top: "800px" },
+        },
+        // The name employed shrinks to the size of the others and takes the first
+        // row: one name among six, still whole and still first.
+        "i4-peoples": {
+          brand: {},
+          employed: {
+            top: "470px",
+            fontSize: "76px",
+            lineHeight: "82px",
+            left: "120px",
+          },
+          peoples: { top: "470px" },
+        },
+      };
+
+      setUp();
+      show(SHOTS, params.get("shot") ?? "i3-forms");
+      await ready();
+    </script>
+  </body>
+</html>
