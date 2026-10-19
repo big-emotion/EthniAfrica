@@ -451,7 +451,7 @@ export function planMapSequences(seq, imagery) {
   for (const run of runs) {
     for (const [k, i] of run.cards.entries()) {
       if (animated[run.sequence])
-        plan.cards[i] = planAnimatedCard(seq, plan, run, k, imagery);
+        plan.cards[i] = planAnimatedCard(seq, plan, run, k);
       const before = k
         ? (plan.cards[run.cards[k - 1]]?.endCamera ??
           views[run.cards[k - 1]].camera)

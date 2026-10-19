@@ -302,6 +302,22 @@ test("map names stay between y 724 and 1296, six at most, and never touch", () =
     checkSeriesLayout([name(0, 800, 100), name(1, 820, 150)]).join(),
     /overlaps/
   );
+  // 1.11.0: two words at most on an animated map; a word on its way out,
+  // made to go by the third, is not counted.
+  const word = (i, extra) => ({
+    ...name(i, 760 + i * 80, 100),
+    kind: "map-word",
+    animated: true,
+    ...extra,
+  });
+  assert.match(
+    checkSeriesLayout([word(0), word(1), word(2)]).join(),
+    /3 words on the map/
+  );
+  assert.deepEqual(
+    checkSeriesLayout([word(0, { leaving: true }), word(1), word(2)]),
+    []
+  );
 });
 
 // @req REQ-186

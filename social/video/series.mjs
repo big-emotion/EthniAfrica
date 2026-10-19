@@ -30,6 +30,7 @@ import {
   runOfCard,
   wordOf,
   silentCheck,
+  MAP_TIMING,
 } from "./series-sequence.mjs";
 import {
   checkDocumentCard,
@@ -355,7 +356,7 @@ function checkPicturePhases(seq) {
     if (isMap(i) || !isMap(i - 1) || !isMap(i + 1)) continue;
     if (!animatedMap(i - 1) && !animatedMap(i + 1)) continue;
     const frames = seq.cardStarts[i + 1] - seq.cardStarts[i];
-    if (frames < 180)
+    if (frames < MAP_TIMING.pictureMin)
       fail(
         `Card ${seq.cards[i].id}: Image isolée de moins de 6 s entre deux cartes (${(frames / FPS).toFixed(1)} s)`
       );
@@ -781,10 +782,12 @@ export function checkSeriesLayout(boxes, { demo = false } = {}) {
   const names = boxes.filter(
     (b) => b.kind === "map-name" || b.kind === "map-word"
   );
-  const words = names.filter((b) => b.kind === "map-word");
-  if (animated && names.length > MARKS.maxTexts)
+  // A word made to go by a third is not counted while it fades out.
+  const words = names.filter((b) => b.kind === "map-word" && !b.leaving);
+  const counted = names.filter((b) => !b.leaving).length;
+  if (animated && counted > MARKS.maxTexts)
     problems.push(
-      `${names.length} texts on the map: ${MARKS.maxTexts} at most (1.11.0)`
+      `${counted} texts on the map: ${MARKS.maxTexts} at most (1.11.0)`
     );
   else if (!animated && names.length > MAP_FRAME.maxNames)
     problems.push(

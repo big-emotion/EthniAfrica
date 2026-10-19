@@ -900,6 +900,7 @@ function drawAnimatedRun(node, map) {
     Object.assign(word.style, { left: w.x + "px", top: w.y + "px", opacity: w.opacity });
     if (w.ink) word.style.color = inkOf(w.ink);
     word.dataset.mark = w.word ? "word" : "name";
+    if (w.leaving) word.dataset.leaving = "1";
     node.marks.append(ringed(word, WORD_STYLE[w.kind]));
   }
   // A name that changes (series.md, « 8 », B): the old name steps aside
@@ -1253,7 +1254,7 @@ function frameBoxes(frame, state) {
         node.marks.querySelectorAll("[data-mark]").forEach((n) => {
           if (!(+n.style.opacity > 0)) return;
           const r = rect(n);
-          boxes.push({ id: n.textContent, kind: n.dataset.mark === "word" ? "map-word" : "map-name", ...r, ...flags, opacity: +n.style.opacity, ...(n.dataset.of !== undefined && { of: "drawing " + n.dataset.of }) });
+          boxes.push({ id: n.textContent, kind: n.dataset.mark === "word" ? "map-word" : "map-name", ...r, ...flags, opacity: +n.style.opacity, ...(n.dataset.leaving && { leaving: true }), ...(n.dataset.of !== undefined && { of: "drawing " + n.dataset.of }) });
         });
         node.images.forEach((n) => {
           if (n.style.display === "none" || !(+n.style.opacity > 0)) return;
