@@ -53,6 +53,7 @@ test.after(() =>
 const identAt = (seq, frame) =>
   seriesFrameState(seq, frame).layers.filter((l) => l.ident);
 
+// @req REQ-186
 test("the intro comes right after the opener, voiced and subtitled", () => {
   const seq = demo();
   assert.equal(seq.cards[1].type, "intro");
@@ -64,6 +65,7 @@ test("the intro comes right after the opener, voiced and subtitled", () => {
   );
 });
 
+// @req REQ-186
 test("the intro says the fixed sentence word for word", () => {
   assert.throws(
     () =>
@@ -87,6 +89,7 @@ test("the intro says the fixed sentence word for word", () => {
   );
 });
 
+// @req REQ-186
 test("the intro is refused anywhere but after the opener", () => {
   assert.throws(
     () => demo({ script: (b) => [b[0], b[2], b[1], ...b.slice(3)] }),
@@ -94,6 +97,7 @@ test("the intro is refused anywhere but after the opener", () => {
   );
 });
 
+// @req REQ-186
 test("the intro runs on its own clock from the first frame of its card change", () => {
   const seq = demo();
   const start = seq.cardStarts[1];
@@ -111,6 +115,7 @@ test("the intro runs on its own clock from the first frame of its card change", 
   );
 });
 
+// @req REQ-186
 test("the end card replaces the 1.10.0 ending and carries the episode's name and the next episode", () => {
   const seq = demo();
   const last = seq.cards.at(-1);
@@ -126,12 +131,14 @@ test("the end card replaces the 1.10.0 ending and carries the episode's name and
   );
 });
 
+// @req REQ-186
 test("the video lasts long enough for the whole end card", () => {
   const seq = demo();
   const from = seq.cardStarts.at(-1) - CROSS_FADE;
   assert.ok(seriesFrameCount(seq) >= from + Math.round(OUTRO.duration * FPS));
 });
 
+// @req REQ-186
 test("an end card needs the answer of its name, in a layer file", () => {
   assert.throws(
     () => demo({ idents: { outro: "nom-sans-page" } }),
@@ -139,6 +146,7 @@ test("an end card needs the answer of its name, in a layer file", () => {
   );
 });
 
+// @req REQ-186
 test("without idents the video keeps the 1.10.0 ending, unchanged", () => {
   const seq = demo({ intro: false, idents: null });
   assert.equal(seq.cards[1].type === "intro", false);

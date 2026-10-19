@@ -11,6 +11,7 @@ import { execFileSync } from "node:child_process";
 import { renderClip } from "./render.mjs";
 import { INTRO } from "./shots.mjs";
 
+// @req REQ-186
 test("an excerpt is encoded at the series format, frame for frame", async () => {
   const dir = await mkdtemp(join(tmpdir(), "idents-"));
   try {

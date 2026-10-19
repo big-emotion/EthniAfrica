@@ -43,6 +43,7 @@ test.before(async () => {
 });
 const at = (f) => frames.find((x) => x.frame === f);
 
+// @req REQ-186
 test("the intro is drawn over its card change, then fills the frame under its subtitle", () => {
   const entering = at(introStart - 4);
   assert.equal(entering.ident.clip, "intro");
@@ -63,6 +64,7 @@ test("the intro is drawn over its card change, then fills the frame under its su
   );
 });
 
+// @req REQ-186
 test("the end card closes the video in place of the 1.10.0 ending", () => {
   const end = at(last);
   assert.equal(end.ident.clip, "outro");
