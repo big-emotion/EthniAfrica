@@ -7,7 +7,7 @@
 import { chromium } from "@playwright/test";
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import { extname, join, resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { SERIES_PAGE_HTML } from "./series-page.mjs";
@@ -16,6 +16,7 @@ import {
   seriesFrameState,
   seriesFrameCount,
   checkSeriesLayout,
+  seriesSlices,
 } from "./series.mjs";
 import { FPS, WIDTH, HEIGHT, IMAGERY } from "./sequence.mjs";
 import {
@@ -389,10 +390,140 @@ export async function renderSeriesFrames(seq, frames, options) {
   }
 }
 
+// One slice [from, to) in its own browser, encoded into `target` with the
+// satellite video's FFmpeg step. `stopped()` returns another slice's error
+// once one has failed, so this one stops at its next frame. A browser's
+// first frame anti-aliases a few edges otherwise than the frames after it,
+// so a slice first draws the WARM_UP frames before it, unkept, as a single
+// pass has drawn them (5 pixels differed at a cut without it).
+const WARM_UP = 30;
+async function encodeSlice(seq, { from, to }, target, sound, options, stopped) {
+  const renderer = await openSeriesRenderer(seq, options);
+  const problems = [];
+  try {
+    for (let f = Math.max(0, from - WARM_UP); f < from; f++) {
+      const failure = stopped();
+      if (failure) throw failure;
+      await renderer.draw(f);
+      await renderer.capture();
+    }
+    await encodeFrames(target, {
+      from,
+      to,
+      render: async (f) => {
+        const failure = stopped();
+        if (failure) throw failure;
+        const drawn = await renderer.draw(f);
+        if (drawn.problems?.length)
+          problems.push({ frame: f, problems: drawn.problems });
+        return renderer.capture();
+      },
+      sound,
+    });
+  } finally {
+    await renderer.close();
+  }
+  return { renderer, problems };
+}
+
+// The parallel final render (operator, 19 October 2026): each slice is
+// encoded without sound by its own browser, the slices are joined without
+// re-encoding, and the voice is added once on the joined file with the
+// arguments of a single pass. A failed slice stops the others, and no
+// video.mp4 nor slice file remains.
+async function encodeSlices(seq, slices, file, options) {
+  const parts = slices.map((_, k) => `${file}.part-${k}.mp4`);
+  const list = `${file}.parts.txt`;
+  let failure = null;
+  const silent = audioArgs(null);
+  try {
+    const done = await Promise.allSettled(
+      slices.map((slice, k) =>
+        encodeSlice(seq, slice, parts[k], silent, options, () => failure).catch(
+          (error) => {
+            failure ??= error;
+            throw error;
+          }
+        )
+      )
+    );
+    if (failure) throw failure;
+    await writeFile(
+      list,
+      parts.map((p) => `file '${p.replaceAll("'", "'\\''")}'\n`).join("")
+    );
+    const sound = audioArgs(seq.voice, 0, seriesFrameCount(seq) / FPS);
+    execFileSync(
+      "ffmpeg",
+      [
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-f",
+        "concat",
+        "-safe",
+        "0",
+        "-i",
+        list,
+        ...sound.input,
+        "-c:v",
+        "copy",
+        ...sound.output,
+        "-map_metadata",
+        "-1",
+        "-fflags",
+        "+bitexact",
+        "-movflags",
+        "+faststart",
+        "-y",
+        file,
+      ],
+      { stdio: ["ignore", "ignore", "pipe"] }
+    );
+    return {
+      renderer: done[0].value.renderer,
+      problems: done.flatMap((d) => d.value.problems),
+    };
+  } catch (error) {
+    await rm(file, { force: true });
+    throw error;
+  } finally {
+    await Promise.all([...parts, list].map((p) => rm(p, { force: true })));
+  }
+}
+
+// The joined file must hold every frame at 30 frames a second, as the
+// package checks it (package.mjs, probeVideo).
+function checkEncoded(file, count) {
+  const [stream] = JSON.parse(
+    execFileSync("ffprobe", [
+      "-v",
+      "error",
+      "-select_streams",
+      "v:0",
+      "-show_entries",
+      "stream=nb_frames,avg_frame_rate",
+      "-of",
+      "json",
+      file,
+    ]).toString()
+  ).streams;
+  if (
+    Number(stream?.nb_frames) !== count ||
+    stream.avg_frame_rate !== `${FPS}/1`
+  )
+    throw new Error(
+      `video.mp4 holds ${stream?.nb_frames} frames at ${stream?.avg_frame_rate}, not ${count} at ${FPS}/1`
+    );
+}
+
+// `workers` browsers render the video in as many slices (seriesSlices); one
+// worker is the single pass. Each worker holds about 2.7 to 2.9 GB at its
+// peak (Chromium, Node and FFmpeg): three is the default on a 16 GB machine.
 export async function encodeSeriesVideo(
   seq,
   outDir,
-  { diagnose = false, assets } = {}
+  { diagnose = false, assets, workers = 3 } = {}
 ) {
   // Hashed before drawing, as loaded: the package loads the sequence again and
   // compares, so a sequence edited after encoding needs a new encode.
@@ -405,29 +536,28 @@ export async function encodeSeriesVideo(
       `Fait sans marque à l'écran, refusé à l'export final : ${failing.map((f) => `« ${f.say} » (${f.card})`).join(", ")}`
     );
   const audio = await checkVoice(seq.voice);
-  const sound = audioArgs(seq.voice, 0, count / FPS);
+  const slices = seriesSlices(seq, workers);
   await mkdir(outDir, { recursive: true });
   const file = join(outDir, "video.mp4");
-  const renderer = await openSeriesRenderer(seq, {
-    diagnose,
-    ...(assets && { assets }),
-  });
-  const problems = [];
+  await rm(file, { force: true });
+  const options = { diagnose, ...(assets && { assets }) };
   const ffmpeg = execFileSync("ffmpeg", ["-version"]).toString().split("\n")[0];
+  const { renderer, problems } =
+    slices.length === 1
+      ? await encodeSlice(
+          seq,
+          slices[0],
+          file,
+          audioArgs(seq.voice, 0, count / FPS),
+          options,
+          () => null
+        )
+      : await encodeSlices(seq, slices, file, options);
   try {
-    await encodeFrames(file, {
-      from: 0,
-      to: count,
-      render: async (f) => {
-        const drawn = await renderer.draw(f);
-        if (drawn.problems?.length)
-          problems.push({ frame: f, problems: drawn.problems });
-        return renderer.capture();
-      },
-      sound,
-    });
-  } finally {
-    await renderer.close();
+    checkEncoded(file, count);
+  } catch (error) {
+    await rm(file, { force: true });
+    throw error;
   }
   const engine = await Promise.all(
     [
@@ -469,6 +599,10 @@ export async function encodeSeriesVideo(
     ...(seq.warnings.length && { warnings: seq.warnings }),
     // A diagnostic export lists the frames whose text left its band.
     ...(diagnose && { diagnostic: true, layoutProblems: problems }),
+    // The parallel render: the browsers that drew it, and the first frame of
+    // each slice after the first.
+    workers: slices.length,
+    cuts: slices.slice(1).map((s) => s.from),
     // Mechanical export only: editorial approvals live in the checkpoint.
     productionReady: false,
     runtime: { ...renderer.runtime, ffmpeg },
@@ -500,7 +634,9 @@ export async function encodeSeriesVideo(
 
 // node social/video/series-render.mjs --sequence FILE --out DIR
 //   [--frames 0,120,…] writes those frames as PNG instead of the video;
-//   [--diagnose] records layout problems instead of refusing the frame.
+//   [--diagnose] records layout problems instead of refusing the frame;
+//   [--workers N] renders the video in N slices in parallel (3 by
+//   default; 1 is the single pass).
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const arg = (name) => {
     const at = process.argv.indexOf(name);
@@ -510,7 +646,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const out = arg("--out");
   if (!file || !out)
     throw new Error(
-      "Usage: series-render.mjs --sequence FILE --out DIR [--frames N,N] [--diagnose]"
+      "Usage: series-render.mjs --sequence FILE --out DIR [--frames N,N] [--diagnose] [--workers N]"
     );
   const seq = loadSeriesVideo(JSON.parse(await readFile(file, "utf8")), {
     dir: dirname(resolve(file)),
@@ -525,5 +661,10 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
         join(out, `frame-${String(r.frame).padStart(4, "0")}.png`),
         r.png
       );
-  } else console.log((await encodeSeriesVideo(seq, out, { diagnose })).file);
+  } else {
+    const workers = Number(arg("--workers") ?? 3);
+    console.log(
+      (await encodeSeriesVideo(seq, out, { diagnose, workers })).file
+    );
+  }
 }
