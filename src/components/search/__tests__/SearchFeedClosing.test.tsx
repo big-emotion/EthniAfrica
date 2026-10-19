@@ -179,12 +179,11 @@ describe("SearchFeed — the page no longer ends on the timeline", () => {
       />
     );
 
-    expect(
-      screen.getByText(
-        "Aucune source sur le nom zzqxv n’est enregistrée dans le projet."
-      )
-    ).toBeInTheDocument();
     const closing = container.querySelector("[data-name-closing]")!;
+    expect(closing).toHaveTextContent(
+      "Aucune source sur le nom zzqxv n’est enregistrée dans le projet."
+    );
+    expect(closing.querySelector("li em")?.textContent).toBe("zzqxv");
     expect(closing).toHaveTextContent(nameClosingCopy.fr.conviction);
     // The verdict's « Proposer une source » is the page's one invitation, so
     // the band asks for nothing (brief 12, part A).
