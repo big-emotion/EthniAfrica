@@ -47,3 +47,19 @@ The spoken ending lasts about 6.7 s at 17 characters a second. Busyness is the m
   - Video, `video-1100-*`: the Burkina Faso ending (`fin`), on light pictures (`fin-claire`), the signed card then the ending (`ordre`), without a next episode (`sans-episode`), the variants that were not kept (`variantes`), the time (`temps`), the feed at 430 px (`430`), and full frames (`plein-fin-bfa`, `plein-fin-place`).
   - Video addendum: the busy pictures (`chargee`, `chargee-detail`), the kicker (`surtitre`), the credit (`credit`), before and after at 430 px (`lisibilite-430`), and the opener and the ending at full size (`plein-ouv-apres`, `plein-fin-apres`).
   - Carousel, `cloture-1100-*`: the closing cards before and after (`avant-apres`), in Nuit and Parchemin (`themes`), series 6's last content card and its closing card (`serie-6`), where the freed space goes (`place`), the cards at 430 px (`430`), and two cards at full size (`plein-serie-pays-07`, `plein-seq-9-parchemin`).
+- `integration-2026-10-19/`: the integration evidence.
+  - `planches-et-moteur-430.jpg` shows Claude Design's frames (left of each pair) beside the integrated engine's frames of the Burkina Faso episode (right) at 430 px: the Tiébélé opener (`add-ouv-apres`), the Bobo-Dioulasso explanation card (`add-bobo-apres`), and the ending twice, against `fin-bfa` (drawn before the addendum, so without the calm zones and with the 22 px grey credit) and against `add-fin-apres`. The engine's frames come from the episode's own sequence, cards, pictures and voice, its closing card voiced again with the four new lines.
+  - `cartes-planches-et-moteur-430.jpg` shows four of the ten closing cards, Claude Design's after board beside the pinned browser's render.
+  - `video-tests.json` records the test runs, the calm zones' measures before and after on the episode, the ending's place and the closing cards' comparison.
+
+## Integration, 19 October 2026
+
+**Carousel** (`social/renderer`). The ten closing cards change; the 79 others render byte-identical with the 1.9.0 engine, alternative texts included. The alternative text of a closing card ends with the line and the invitation, and `verify` checks the line, the invitation line for line, the absence of overlap and that ending. A closing card that still gives a body warns, so final and proof modes refuse it. The accepted references are `design-system-1.10.0-accepted/`; a complete render passes 89 of 89.
+
+**Video** (`social/video`). The closing card's chunks are the four printed lines, the ending input is `{ next? }`, the ending block is drawn from the bundle's constants, the kicker and the foot take their new sizes and inks, and the calm zones are measured and drawn as the addendum says. On the episode, Tiébélé's opener measures 11.3 and its ending 11.5, so every small-text zone is blurred and reads 1.7 to 3.2 after; Bobo-Dioulasso measures 5.3 and gets no blur.
+
+**Choices left open by the handoff.**
+
+- The subtitle zone covers every chunk of its card, so it stays still while the voice speaks; the board drew one frame's subtitle.
+- Calm zones are drawn on photographs only. Map cards, document cards (their page is already out of focus) and « image à trouver » slots have none.
+- The satellite video's ending and the clipped reels also print the signature line. 1.10.0 covers series videos and carousels only, so they keep the 1.6.0 line, now recorded under `retired` in `version.json`, until the operator decides their ending.
