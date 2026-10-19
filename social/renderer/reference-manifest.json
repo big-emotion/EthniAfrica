@@ -850,5 +850,9 @@
       "serie-afrique-tout-07",
       "serie-villes-06"
     ]
+  },
+  "integration-1.11.0": {
+    "date": "2026-10-19",
+    "decision": "Operator accepted EthniAfrica Cartes 1.11.0-proposition (the animated satellite map of the series video). It changes no card: its two tokens (map-foreign, illustration-line) and its eight drawings are used by the video only. Rendered in diagnostic mode on the pinned browser, the 89 sample cards are byte-identical with the 1.10.0 design (bundle version string only), alternative texts and visible text included, and pass 89 of 89 against design-system-1.10.0-accepted. The 89 reference hashes are therefore unchanged; only designVersion moves. No tolerance change; the animated map is integrated in social/video."
   }
 }
