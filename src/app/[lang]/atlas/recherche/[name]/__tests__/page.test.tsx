@@ -3,6 +3,9 @@
  * envelopes, the real loaders map them, the real result page renders them to
  * HTML. Only the database services are replaced.
  */
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+
 import { renderToString } from "react-dom/server";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
@@ -89,6 +92,8 @@ import { VALID_NAME_HISTORY } from "@/lib/afrik/parsers/__tests__/fixtures";
 import { CANONICAL_DOMAIN } from "@/lib/brand";
 import { getNameAnswerRoute } from "@/lib/routing";
 import { LINGALA_HISTORY } from "@/lib/search/__fixtures__/nameTimelineFixtures";
+import { readAnswer } from "@/lib/search/answer";
+import { wordNamingData } from "@/lib/supabase/queries/afrik/searchNaming";
 import { searchQueryLog } from "@/lib/search/searchQueryLog";
 import { getAnsweredNameRows } from "@/lib/supabase/queries/afrik/nameAddressEntries";
 import { createServerClient } from "@/lib/supabase/server";
@@ -115,10 +120,12 @@ function searchAnswering({
   peoples = [],
   languages = [],
   patronymes = [],
+  words = [],
 }: {
   peoples?: SearchRow[];
   languages?: SearchRow[];
   patronymes?: SearchRow[];
+  words?: SearchRow[];
 } = {}) {
   return {
     peoples,
@@ -129,7 +136,7 @@ function searchAnswering({
     quizzes: [],
     languages,
     places: [],
-    words: [],
+    words,
     results: [],
     peoplesTotal: peoples.length,
     countriesTotal: 0,
@@ -139,8 +146,8 @@ function searchAnswering({
     quizzesTotal: 0,
     languagesTotal: languages.length,
     placesTotal: 0,
-    wordsTotal: 0,
-    total: peoples.length + languages.length + patronymes.length,
+    wordsTotal: words.length,
+    total: peoples.length + languages.length + patronymes.length + words.length,
     leads: [],
     nearNames: [],
   } as unknown as FtsSearchResponse;
@@ -263,6 +270,64 @@ describe("the address of an answered name", () => {
     expect(head.alternates?.canonical).toBe(
       `https://${CANONICAL_DOMAIN}${getNameAnswerRoute("fr", "ethnie")}`
     );
+  });
+
+  // ETNI-2110 regression: « tribu » is used in the prose of many fiches. The
+  // word fiche answers it; the prose hits never turn the page into the
+  // « N fiches donnent cette écriture » verdict, and nothing on the page
+  // leads back to the page itself.
+  // @req REQ-200
+  it("answers « tribu » with its word fiche even when fiche prose uses the word", async () => {
+    const tribu = JSON.parse(
+      readFileSync(
+        join(process.cwd(), "dataset/source/afrik/mots/WRD_TRIBU.json"),
+        "utf8"
+      )
+    );
+    const naming = wordNamingData(tribu.id, tribu.nameHistory);
+    const proseRow = (id: string, nameMain: string) => ({
+      id,
+      nameMain,
+      content: {},
+      relevance: 0.2,
+      exactMatch: false,
+      recordedIn: [
+        {
+          fieldPath: "content.history.colonialClassification",
+          text: `Les administrateurs coloniaux ont classé les ${nameMain} comme une tribu.`,
+        },
+      ],
+    });
+    vi.mocked(getAnsweredNameRows).mockResolvedValue([
+      { name: "tribu", nameHistory: tribu.nameHistory },
+    ]);
+    vi.mocked(ftsSearch).mockResolvedValue(
+      searchAnswering({
+        peoples: [
+          proseRow("PPL_KIKUYU", "Kikuyu"),
+          proseRow("PPL_ZULU", "Zoulou"),
+        ],
+        words: [
+          {
+            ...tribu,
+            relevance: 1,
+            exactMatch: true,
+            answer: readAnswer("word", {}, tribu, {
+              nameRecords: naming.records,
+              evidence: naming.evidence,
+            }),
+          },
+        ],
+      })
+    );
+
+    const html = await serverHtml("tribu");
+    const text = html.replace(/<[^>]+>/g, "").replace(/&#x27;/g, "'");
+
+    expect(text).toContain(tribu.definition);
+    expect(text).not.toMatch(/fiches donnent cette écriture/);
+    expect(html).not.toContain(`href="${getNameAnswerRoute("fr", "tribu")}"`);
+    expect(html).not.toContain("/fr/atlas/recherche?q=tribu");
   });
 
   // The variant's redirect lands on a page headed as the corpus writes the

@@ -82,6 +82,16 @@ export function ficheHrefFor(
   return getPeopleRoute(language, result.id);
 }
 
+/**
+ * A word has no fiche page (REQ-196): its only page is the search reading of
+ * its name, the page that already answers it. A « see the fiche » link to it
+ * would lead the reader back to where they are.
+ */
+// @req REQ-196
+export function hasFichePage(result: Pick<SearchResult, "type">): boolean {
+  return result.type !== "word";
+}
+
 export interface SearchResultCardProps {
   result: SearchResult;
   language: Language;
