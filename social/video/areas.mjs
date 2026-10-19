@@ -822,6 +822,9 @@ export const AREA_IDS = [
   "amazigh",
   // Series 1, episode 19, Burkina Faso (Cartes 1.11.0).
   ...Object.keys(EPISODE_AREAS),
+  // Series 4, episode 1, « tribu » (Cartes 1.11.0).
+  "tribu-afrique",
+  "tribu-kenya",
 ];
 
 const GLOTTOLOG_CITATION =
@@ -1037,6 +1040,47 @@ function definitions(sources) {
         derivation: `${SCRIPT_RULE}: the Natural Earth region polygon LIBYAN DESERT, kept inside the Sahara and west of the Nile (Natural Earth's label region runs south into the savanna to 9° N, which the Sahara clip removes); ${saharaRule}; ${nileRule}; ${RASTER_RULE}. Natural Earth draws generalized regions for labelling, not surveyed limits.`,
         licence: both,
         date: "Present day (Natural Earth 5.1.2, 2022; Ecoregions 2017)",
+      },
+    },
+    // Series 4, episode 1, « tribu »: Morgan files « Africa » whole (1877),
+    // so the area is the continent, not a region of it.
+    "tribu-afrique": {
+      mask: africa,
+      maxParts: 1,
+      exteriorOnly: true,
+      properties: {
+        kind: "certain",
+        name: "Afrique",
+        category: "region",
+        source: cite("countries"),
+        citation:
+          "Lewis H. Morgan, Ancient Society, 1877, part I, chapter I: Africa as « an ethnical chaos of savagery and barbarism ». The area is the continent the sentence names.",
+        derivation: `${SCRIPT_RULE}: Africa's land, mainland only (islands such as Madagascar are dropped), exterior ring only; ${landRule}; ${RASTER_RULE}.`,
+        licence: `Geometry: ${NATURAL_EARTH_LICENCE}`,
+        date: "1877 (Morgan); present-day coastline",
+      },
+    },
+    // The colony counted in the 1948 census, drawn with today's border: the
+    // colony's border already ran there after Jubaland went to Italy (1925);
+    // later changes (the Ilemi triangle) are under a few pixels at this scale.
+    "tribu-kenya": {
+      mask: rasterize(
+        grid,
+        only(countries.features, (f) => f.properties.ADM0_A3 === "KEN", "Kenya")
+          .geometry
+      ),
+      maxParts: 1,
+      exteriorOnly: true,
+      properties: {
+        kind: "certain",
+        name: "Kenya colonial",
+        category: "historical-name",
+        source: cite("countries"),
+        citation:
+          "Colony and Protectorate of Kenya, Statistical Abstract 1960, Nairobi, p. vii and Table 16 « Population Census, 1948 — Main Tribes » (Kikuyu 1,026,341), Kenya National Bureau of Statistics scan. Natural Earth, Admin 0 Countries, feature KEN.",
+        derivation: `${SCRIPT_RULE}: the Natural Earth 1:50m polygon of Kenya (ADM0_A3 KEN), exterior ring only; ${RASTER_RULE}. The colony of 1948 had this border on the scale of the map; the Ilemi triangle's changes are under a few pixels.`,
+        licence: `Geometry: ${NATURAL_EARTH_LICENCE}`,
+        date: "1948 (census of the colony); present-day border",
       },
     },
     // Cartes 1.5.0: one area per Tuareg self-name, one name one outline.
