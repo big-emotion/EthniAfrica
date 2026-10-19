@@ -72,9 +72,12 @@ episode 19). It applies to every video script from that date.
   continuer la recherche sur EthniAfrica, lien en profil. » It replaces, at the
   end of the video, both the signature line and the search sentence
   « Cherchez [nom] sur EthniAfrica, lien en profil. ». The signed « nous
-  pensons » paragraph still comes just before it. How the closing card prints
-  it is a design-system rule: until Claude Design delivers it and the video
-  engine follows, the engine still requires the old ending.
+  pensons » paragraph still comes just before it. The same closing ends every
+  carousel and every caption, and « L'importance de connaître nos noms. »
+  replaces the signature line in every account's bio. How the closing cards
+  print it is a design-system rule: until Claude Design delivers it (Cartes
+  1.10.0) and the renderer and video engine follow, both still require the old
+  ending.
 - **Long first, refined after:** the script tells the whole story the sources
   support, as a long video with chapters, then is reduced with the operator
   round by round. For a country name in series 1 the thread runs: the words of
@@ -84,9 +87,6 @@ episode 19). It applies to every video script from that date.
   · the « nous pensons » paragraph · the closing. Unity, the operator's
   conviction, belongs to the « nous pensons » paragraph and stays distinct
   from the historical findings.
-
-Captions, carousels and account bios keep their current endings (see « Leading
-readers to the site ») until the operator decides otherwise.
 
 ## Calendar
 
@@ -184,11 +184,14 @@ consented visitors from all networks in the last week, 0 link clicks on the
 biggest posts. The one link that converts is the profile link (105 taps in 30
 days).
 
-- **Every caption ends with the same sentence, no link block, no hashtag wall:**
-  « Cherchez [nom] sur EthniAfrica, lien en profil. »
-- **Every carousel ends with the project's signature, word for word, and every
-  account's bio carries it** (decided 2026-10-15; since 2026-10-19 videos end
-  with the closing in « Opening, closing and length of every video »):
+- **Every caption ends with the same sentence, no link block, no hashtag wall**
+  (since 2026-10-19): « L'importance de connaître nos noms. Vous pouvez
+  continuer la recherche sur EthniAfrica, lien en profil. » It replaces
+  « Cherchez [nom] sur EthniAfrica, lien en profil. ».
+- **Retired on 2026-10-19:** every reel and every carousel ended with the
+  project's signature, word for word, and every account's bio carried it
+  (decided 2026-10-15). The closing in « Opening, closing and length of every
+  video » replaces it on videos, carousels, captions and bios:
   « Connaître nos noms, décoloniser leur emploi, nous nommer nous-mêmes. »
   It comes after the series' fixed closing line, never in its place, and
   repeats nothing of it. Its meaning, its limits and the four kinds of use
