@@ -37,6 +37,7 @@ function PageEnd() {
       />
       <NameClosingBand
         silences={deduceSilences([{ name: timeline.names[0] }])}
+        italicForms={timeline.italicForms}
         contributionTarget={{ type: "people", id: "PPL_FULA", name: "Peul" }}
         language="fr"
       />
@@ -90,6 +91,12 @@ export const FichePeuple: Story = {
       />
       <NameClosingBand
         silences={ficheSilences(PEUL_HISTORY, "people")}
+        italicForms={PEUL_HISTORY.names.flatMap((name) => [
+          name.nameText,
+          ...name.accounts
+            .map((account) => account.formAsWritten)
+            .filter((form): form is string => Boolean(form)),
+        ])}
         contributionTarget={{ type: "people", id: "PPL_FULA", name: "Peul" }}
         language="fr"
       />

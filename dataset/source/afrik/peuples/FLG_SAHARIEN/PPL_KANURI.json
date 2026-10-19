@@ -7,7 +7,7 @@
   "content": {
     "appellations": {
       "mainName": "Kanuri",
-      "selfAppellation": "Kanuri (endonymie : Kanuri / كَنُرِيِه en ajami)",
+      "selfAppellation": "Kanuri",
       "exonyms": [
         "Barebari (nom haoussa employé au Niger)",
         "Beriberi (nom haoussa jugé méprisant par les personnes concernées)",
@@ -22,7 +22,8 @@
       "linguisticFamily": "FLG_SAHARIEN",
       "ethnoLinguisticGroup": "Saharien occidental (branche kanuri-kanembu, Nilo-Saharien)",
       "historicalRegion": "Bornou (Nigeria nord-est, autour du lac Tchad), Kanem (Tchad), Diffa et Zinder (Niger), Nord-Cameroun",
-      "currentCountries": ["NGA", "NER", "TCD", "CMR"]
+      "currentCountries": ["NGA", "NER", "TCD", "CMR"],
+      "spellingAliases": ["كَنُرِيِه"]
     },
     "ethnicities": [
       "Yerwa (Kanuri central, dialecte de Maiduguri, Borno State, Nigeria)",

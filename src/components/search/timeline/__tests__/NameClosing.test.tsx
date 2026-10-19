@@ -304,6 +304,43 @@ describe("NameClosingBand — silences, conviction, invitation", () => {
   });
 
   // @req REQ-198
+  it("sets quoted name forms in italics and leaves unnamed silences alone", () => {
+    const { container } = render(
+      <NameClosingBand
+        silences={[
+          "Aucune trace du nom Fulɓe plus ancienne que 1842 n'est connue du projet.",
+          "Aucun récit transmis oralement n'est enregistré pour les noms de ce peuple.",
+        ]}
+        italicForms={["Fulɓe"]}
+        language="fr"
+      />
+    );
+
+    const band = container.querySelector("[data-name-closing]");
+    expect(band).toHaveTextContent(
+      "Aucune trace du nom Fulɓe plus ancienne que 1842 n'est connue du projet."
+    );
+    expect(band?.querySelector("li:first-child em")?.textContent).toBe("Fulɓe");
+    expect(band?.querySelector("li:last-child em")).toBeNull();
+  });
+
+  // @req REQ-198
+  it("keeps every silence plain when no italic forms are provided", () => {
+    const { container } = render(
+      <NameClosingBand
+        silences={["Aucune trace du nom Peul plus ancienne que 1842."]}
+        language="fr"
+      />
+    );
+
+    const band = container.querySelector("[data-name-closing]");
+    expect(band?.querySelector("em")).toBeNull();
+    expect(band).toHaveTextContent(
+      "Aucune trace du nom Peul plus ancienne que 1842."
+    );
+  });
+
+  // @req REQ-198
   it("draws no thesis line while its wording is not fixed", () => {
     const { container } = render(
       <NameClosingBand silences={["Une absence."]} language="fr" />

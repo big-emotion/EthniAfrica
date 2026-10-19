@@ -6,7 +6,7 @@
   "content": {
     "appellations": {
       "mainName": "Shilluk",
-      "selfAppellation": "Chollo (Cøllø)",
+      "selfAppellation": "Chollo",
       "exonyms": [
         "Shilluk (terme européen, déformation de Cøllø)",
         "Chol",
@@ -18,7 +18,8 @@
       "linguisticFamily": "FLG_NILOTIQUE",
       "ethnoLinguisticGroup": "Nilotique occidental, groupe Luo septentrional",
       "historicalRegion": "Royaume Shilluk (Pödh Cøllø) — rive occidentale du Nil Blanc, région de Fashoda (Kodok), État du Nil Supérieur, Soudan du Sud",
-      "currentCountries": ["SSD", "SDN"]
+      "currentCountries": ["SSD", "SDN"],
+      "spellingAliases": ["Cøllø"]
     },
     "ethnicities": [
       "Kwareth — clan royal, descendants de Nyikang, fournissant le Reth",

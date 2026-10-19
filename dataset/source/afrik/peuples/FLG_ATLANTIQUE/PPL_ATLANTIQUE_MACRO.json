@@ -19,7 +19,7 @@
   "content": {
     "appellations": {
       "mainName": "Peuples atlantiques",
-      "selfAppellation": "Diverses appellations selon les sous-groupes (Peul, Wolof, Sereer, Diola, Balanta, Baga, Bijago, Temne, Kissi, Limba, etc.)",
+      "selfAppellation": null,
       "exonyms": [
         "West Atlantic peoples",
         "Atlantic-speaking peoples",
@@ -27,7 +27,7 @@
       ],
       "originOfExonyms": "Le terme anglais West Atlantic languages a ete introduit par le linguiste Sigismund Koelle en 1854, puis repris et formalise par Joseph Greenberg dans sa classification des langues africaines (1963). Il designe les langues du groupe atlantique de la famille Niger-Congo, parlees principalement sur la facade occidentale de l'Afrique.",
       "whyProblematic": "L'unite de la famille atlantique est debattue : des linguistes comme Dalby (1965) et Merrill (2021) contestent que ces langues forment un groupe genetique coherent. Les langues du groupe meridional (Mel, Gola, Limba) sont parfois exclues de la definition stricte. Le terme macro-groupe reste une convention commode pour designer les peuples partageant des traits linguistiques communs sans necessairement impliquer une unite ethnique.",
-      "contemporaryUsage": "Le terme peuples atlantiques est utilise en linguistique et en ethnologie pour regrouper les communautes dont les langues appartiennent a la famille atlantique au sens large, recouvrant une diversite ethnique, culturelle et historique considerable.",
+      "contemporaryUsage": "Le terme peuples atlantiques est utilise en linguistique et en ethnologie pour regrouper les communautes dont les langues appartiennent a la famille atlantique au sens large, recouvrant une diversite ethnique, culturelle et historique considerable. Les peuples regroupés dans cette famille emploient chacun leur propre nom.",
       "linguisticFamily": "FLG_ATLANTIQUE",
       "ethnoLinguisticGroup": "Groupe atlantique de la famille nigero-congolaise (Atlantic-Congo)",
       "historicalRegion": "Côte atlantique ouest-africaine, du fleuve Sénégal au Liberia, avec extensions sahéliennes (Peuls)",

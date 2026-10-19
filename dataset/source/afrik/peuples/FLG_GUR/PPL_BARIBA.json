@@ -7,17 +7,20 @@
   "content": {
     "appellations": {
       "mainName": "Bariba",
-      "selfAppellation": "Baatonu (singulier) / Baatombu (pluriel) ; leur langue : Baatonum",
+      "selfAppellation": "Baatombu",
       "exonyms": [
         "Bariba (nom employé par les Yoruba et les Européens, dont le sens est inconnu en Baatonum)",
         "Baruba (variante du terme Bariba en usage chez les Yoruba du Nigeria)",
         "Borgawa (nom haoussa qui renvoie à Borgu, région historique du peuple)",
-        "Borgu ou Borgunya (termes en langues Busa et Boko)",
-        "Baatonu, Batonu, Batonum (variantes orthographiques)"
+        "Borgu (terme en langue Busa ou Boko)",
+        "Borgunya (terme en langue Busa ou Boko)",
+        "Baatonu (variante orthographique)",
+        "Batonu (variante orthographique)",
+        "Batonum (variante orthographique)"
       ],
       "originOfExonyms": "Les Yoruba emploient Bariba pour désigner le peuple et sa langue. Ce nom n'a pas de sens en Baatonum et certaines personnes concernées le jugent offensant. Borgawa viendrait du haoussa et renverrait à Borgu, leur région historique. Pour se nommer eux-mêmes, les membres du peuple emploient Baatonu et Baatombu.",
       "whyProblematic": "Le terme Bariba, d'origine yoruba, est celui sous lequel le peuple est universellement connu dans les sources coloniales françaises et dans la littérature internationale. Il efface l'autoappellation Baatonu/Baatombu et peut être perçu comme stigmatisant. L'usage académique contemporain recommande d'utiliser Baatonu ou Baatombu.",
-      "contemporaryUsage": "Bariba reste le terme dominant dans les sources officielles béninoises, les médias et la littérature internationale. Baatonu/Baatombu est utilisé dans les contextes académiques et locaux. Les deux termes coexistent. La langue est officiellement désignée Baatonum par Ethnologue (code bba).",
+      "contemporaryUsage": "Bariba reste le terme dominant dans les sources officielles béninoises, les médias et la littérature internationale. Baatonu/Baatombu est utilisé dans les contextes académiques et locaux. Les deux termes coexistent. La langue est officiellement désignée Baatonum par Ethnologue (code bba). Au singulier, on dit Baatonu. Baatonum est le nom de la langue.",
       "linguisticFamily": "FLG_GUR",
       "ethnoLinguisticGroup": "Gur (Niger-Congo, Voltaïque)",
       "historicalRegion": "Borgou (Bénin nord-est), Alibori, royaume de Nikki ; Baruten LGA (Kwara State, Nigeria), Borgu LGA (Niger State, Nigeria)",

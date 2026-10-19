@@ -6,7 +6,8 @@
   "content": {
     "appellations": {
       "mainName": "Kavango",
-      "selfAppellation": "vaKavango / haKavango",
+      "selfAppellation": "vaKavango",
+      "spellingAliases": ["haKavango"],
       "exonyms": ["Kavango", "Okavango people"],
       "originOfExonyms": "Le terme Kavango (ou Okavango) deriverait du nom de la riviere Kavango (Okavango) qui constitue la frontiere naturelle entre la Namibie et l'Angola dans la region. Le peuple est nomme d'apres son territoire riverain. vaKavango est le pluriel en rukwangali (prefixe va-). haKavango est l'auto-designation alternative. La region administrative namibienne Kavango (divisee en Kavango Est et Kavango Ouest en 2013) porte leur nom.",
       "whyProblematic": null,

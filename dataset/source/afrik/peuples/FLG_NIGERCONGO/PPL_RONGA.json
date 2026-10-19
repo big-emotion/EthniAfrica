@@ -7,11 +7,12 @@
   "content": {
     "appellations": {
       "mainName": "Ronga",
-      "selfAppellation": "Varhonga / Varonga",
+      "selfAppellation": "Varhonga",
       "exonyms": [
         "Ronga (terme utilise par les linguistes et administrateurs europeens depuis le 19e siecle)",
         "XiRonga (nom de la langue, parfois utilise par extension pour le peuple)",
-        "Thonga / Tonga (designation ancienne generique des groupes Tsonga du sud-Mozambique, utilisee par les sources portugaises et les premiers ethnographes)",
+        "Thonga",
+        "Tonga",
         "Rhonga (variante orthographique ancienne, utilisee par Henri-Alexandre Junod)",
         "Maputo people (designation informelle liee a la capitale)"
       ],
@@ -21,7 +22,8 @@
       "linguisticFamily": "FLG_NIGERCONGO",
       "ethnoLinguisticGroup": "Bantou Tsonga-Ronga (Zone S, S.53), sous-groupe de la famille tsonga",
       "historicalRegion": "Region de Delagoa Bay (baie de Maputo) et ses arriere-pays, comprenant l'actuelle province de Maputo (Mozambique), la cote nord du KwaZulu-Natal (Afrique du Sud, Maputaland / Amathongaland), et le sud de la province de Gaza (Mozambique). Les Portugais documentent les chefferies ronga (Mpfumo, Tembe, Nyaka, Lebombo) des le 16e siecle dans cette region.",
-      "currentCountries": ["MOZ", "ZAF"]
+      "currentCountries": ["MOZ", "ZAF"],
+      "spellingAliases": ["Rhonga"]
     },
     "ethnicities": [
       "Varhonga de Maputo (Mozambique) — groupe principal autour de l'actuelle capitale mozambicaine",

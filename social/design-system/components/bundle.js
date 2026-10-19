@@ -27,12 +27,24 @@
     band.innerHTML = '<div class="ec-series-text"><span class="ec-series-name">' + fr(sr.name) + '</span><span class="ec-series-sep"> · </span><span class="ec-series-episode">n° ' + esc(String(sr.episode)) + '</span></div>';
     return band;
   }
-  var VERSION = '1.9.0-proposition';
+  var VERSION = '1.10.0-proposition';
   /* 1.6.0: the project's signature line, one constant, never a card field.
      Three lines, broken after each comma; « nous-mêmes » keeps the ordinary
      hyphen U+002D inside a no-wrap line (none of the three faces draws U+2011). */
-  var SIGNATURE_LINE = ['Connaître nos noms,', 'décoloniser leur emploi,', 'nous nommer nous-mêmes.'];
+ /* 1.10.0: the closing line and the closing invitation replace the 1.6.0
+     signature line and the « Cherchez [nom] » invitation. Two constants, never
+     card fields; each printed line set without wrapping. */
+  var SIGNATURE_LINE = ['L’importance de', 'connaître nos noms.'];
   var SIGNATURE_TEXT = SIGNATURE_LINE.join(' ');
+  var INVITATION_LINES = ['Vous pouvez continuer la recherche', 'sur EthniAfrica, lien en profil.'];
+  var INVITATION_TEXT = INVITATION_LINES.join(' ');
+  var CLOSING_TEXT = SIGNATURE_TEXT + ' ' + INVITATION_TEXT;
+  function invitation() {
+    var d = el('div', 'ec-body ec-body--center ec-invite');
+    d.setAttribute('lang', 'fr');
+    INVITATION_LINES.forEach(function (t) { d.appendChild(el('span', '', esc(t))); });
+    return d;
+  }
   var SIGLINE_Y = 760; /* top of the line's first line box on every closing card */
   function sigLine() {
     var d = el('div', 'ec-sigline');
@@ -718,7 +730,7 @@
       p.appendChild(el('div', dcls, fr(spec.date.display)));
     }
     if (spec.recap) p.appendChild(recap(spec.recap));
-    if (type === 'closing') p.appendChild(sigLine());
+    if (type === 'closing') { p.appendChild(sigLine()); p.appendChild(invitation()); }
     else if (spec.title) p.appendChild(el('h2', 'ec-title' + (type === 'opener' ? ' ec-title--xl' : (type === 'map' ? ' ec-title--m' : '')), fr(spec.title)));
     if (spec.date && spec.date.branches) {
       var br = el('div', 'ec-branches');
@@ -744,7 +756,7 @@
       if (cols.children.length) p.appendChild(cols);
     }
     if (spec.map) { var lg = legend(spec.map); if (lg) p.appendChild(lg); }
-    if (spec.body) p.appendChild(body(spec.body, type === 'closing' ? 'ec-body--center' : (spec.date || spec.map ? 'ec-body--after' : '')));
+    if (spec.body && type !== 'closing') p.appendChild(body(spec.body, spec.date || spec.map ? 'ec-body--after' : '')); /* 1.10.0: a closing card prints the fixed invitation, never its own body */
     if (spec.forms) { var fm = forms(spec.forms); fm.classList.add('ec-block'); p.appendChild(fm); }
     if (spec.note) { var nb = body(spec.note); nb.classList.add('ec-block'); p.appendChild(nb); }
     if (spec.quote) { var q = quote(spec.quote); q.classList.add('ec-block'); p.appendChild(q); }
@@ -799,6 +811,7 @@
     var pmax = card._bandH ? PANEL_MAX_SERIES : PANEL_MAX;
     report.panelMax = pmax;
     var sl = spec.type === 'closing' ? p.querySelector('.ec-sigline') : null;
+    if (spec.type === 'closing' && spec.body) report.warnings.push('Phrase propre de la carte de clôture non imprimée : la fin est fixe (1.10.0). La placer sur la dernière carte de contenu.');
     if (sl) {
       /* 1.6.0: the line's top sits at SIGLINE_Y on every closing card. The gap
          between the pill and the credit takes up what the invitation and the
@@ -880,7 +893,8 @@
       report.sigline.lines = Math.round((lb.bottom - lb.top) / 64);
       report.sigline.overlaps = overlaps;
       if (Math.abs(lb.top - SIGLINE_Y) > 0.5 && report.sigline.gap >= 0 && report.warnings.every(function (w) { return w.indexOf('Ligne de signature') < 0; })) report.warnings.push('Ligne de signature hors de sa place (' + report.sigline.top + ' px au lieu de ' + SIGLINE_Y + ').');
-      if (report.sigline.lines !== 3) report.warnings.push('Ligne de signature sur ' + report.sigline.lines + ' lignes au lieu de trois.');
+      var expected = SIGNATURE_LINE.length;
+      if (report.sigline.lines !== expected) report.warnings.push('Ligne de fin sur ' + report.sigline.lines + ' lignes au lieu de ' + expected + '.');
       if (overlaps) report.warnings.push('Un texte chevauche la ligne de signature.');
     }
     report.ok = !report.overflow && report.warnings.length === 0;
@@ -1036,20 +1050,20 @@
     if (spec.map && spec.map.areas) parts.push('Légende : ' + spec.map.areas.map(function (a) { return plain(a.legend || a.label); }).join(', '));
     if (spec.timeline && spec.timeline.steps) parts.push('Repère de période : ' + spec.timeline.steps[spec.timeline.current] + ', étape ' + (spec.timeline.current + 1) + ' sur ' + spec.timeline.steps.length + ', de ' + (spec.timeline.from || spec.timeline.steps[0]) + ' à ' + (spec.timeline.to || spec.timeline.steps[spec.timeline.steps.length - 1]));
     if (spec.map) parts = parts.concat(mapAlt(spec.map));
-    if (spec.body) parts.push(plain([].concat(spec.body).join(' ')));
+    if (spec.body && spec.type !== 'closing') parts.push(plain([].concat(spec.body).join(' ')));
     if (spec.forms && spec.forms.rows) parts.push(spec.forms.rows.map(function (r) { return plain(r[0]) + ', ' + plain(r[1]); }).join(' ; '));
     if (spec.forms && spec.forms.layout === 'pair') parts.push(plain(spec.forms.searchedLabel) + ' ' + plain(spec.forms.searched) + '. ' + plain(spec.forms.selfLabel) + ' ' + plain(spec.forms.self));
     if (spec.note) parts.push(plain(spec.note));
     if (spec.recap) parts.push(spec.recap.map(function (r) { return plain(r.date) + ' : ' + plain(r.name); }).join(' ; '));
     if (spec.cta) parts.push(plain(spec.cta.domain || 'ethniafrica.com'));
-    if (spec.type === 'closing') parts.push(SIGNATURE_TEXT); /* 1.6.0: the alternative text ends with the line, word for word */
+    if (spec.type === 'closing') parts.push(CLOSING_TEXT); /* 1.10.0: the alternative text ends with the closing line and the invitation, word for word */
     return parts.join('. ').replace(/\.\s*\./g, '.');
   }
 
   window.EthniCards = {
     version: VERSION, W: W, H: H, PANEL_MAX: PANEL_MAX, PANEL_MAX_SERIES: PANEL_MAX_SERIES, BAND_H: BAND_H, SERIES: SERIES, seriesOf: seriesOf,
     render: render, layout: layout, mount: mount,
-    tokensToCss: tokensToCss, installTokens: installTokens, altText: altText, signatureLine: SIGNATURE_TEXT, signatureLines: SIGNATURE_LINE, SIGLINE_Y: SIGLINE_Y,
+    tokensToCss: tokensToCss, installTokens: installTokens, altText: altText, signatureLine: SIGNATURE_TEXT, signatureLines: SIGNATURE_LINE, invitation: INVITATION_TEXT, invitationLines: INVITATION_LINES, closingText: CLOSING_TEXT, SIGLINE_Y: SIGLINE_Y,
     statusLabels: STATUS_LABEL, statusMark: statusMark, recap: recap, timeline: timeline, atlasLayout: atlasLayout
   };
 })();

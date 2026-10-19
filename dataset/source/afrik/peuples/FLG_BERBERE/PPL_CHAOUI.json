@@ -6,7 +6,7 @@
   "content": {
     "appellations": {
       "mainName": "Chaoui",
-      "selfAppellation": "Ishawiyen / Icawiyen",
+      "selfAppellation": "Icawiyen",
       "exonyms": ["Shawiya", "Chaouia", "Shawia", "Shawi"],
       "originOfExonyms": "Le terme Chaoui ou Chaouia viendrait de l'arabe et voudrait dire « berger » ou « gardien de troupeaux ». Le nom designe les Berberes Zenata et renvoie a la pratique ancestrale du pastoralisme, selon le traducteur de Ibn Khaldoun (de Slane). L'orthographe francaise Chaouia a ete fixee par l'administration coloniale.",
       "whyProblematic": null,
@@ -14,7 +14,8 @@
       "linguisticFamily": "FLG_BERBERE",
       "ethnoLinguisticGroup": "Berbere oriental (branche zenetique / chaouie)",
       "historicalRegion": "Massif de l'Aures (Awras en tamazight) — Algerie orientale, encompassing the provinces de Batna, Khenchela, Sétif, Oum El Bouaghi, Souk Ahras, Tébessa et Biskra nord",
-      "currentCountries": ["DZA"]
+      "currentCountries": ["DZA"],
+      "spellingAliases": ["Ishawiyen"]
     },
     "ethnicities": [
       "Ifren (clan historique mentionne par Ibn Khaldoun)",

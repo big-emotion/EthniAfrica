@@ -6,7 +6,7 @@
   "content": {
     "appellations": {
       "mainName": "Chenoua",
-      "selfAppellation": "Icenwiyen / Ichenwiyen",
+      "selfAppellation": "Icenwiyen",
       "exonyms": [
         "Chenouis",
         "Shenwa",
@@ -19,7 +19,8 @@
       "linguisticFamily": "FLG_BERBERE",
       "ethnoLinguisticGroup": "Berbere nord-algerien (branche Zenati)",
       "historicalRegion": "Mont Chenoua et sa region (Tipaza, wilaya de Tipaza), entre Fouka a l'est et Tenes a l'ouest, nord de l'Algerie",
-      "currentCountries": ["DZA"]
+      "currentCountries": ["DZA"],
+      "spellingAliases": ["Ichenwiyen"]
     },
     "ethnicities": [
       "Communautes berberophones de Tipaza et du Mont Chenoua",

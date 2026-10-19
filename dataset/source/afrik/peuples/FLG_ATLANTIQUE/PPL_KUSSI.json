@@ -7,11 +7,11 @@
   "content": {
     "appellations": {
       "mainName": "Kasanga",
-      "selfAppellation": "Gu-haaca (nom de la langue dans l'autonymie des locuteurs)",
+      "selfAppellation": null,
       "exonyms": ["Cassanga", "Kussi", "Kassanga", "Haal"],
       "originOfExonyms": "Cassanga est la forme portugaise du nom, utilisee dans les sources coloniales. Haal est une designation alternative utilisee par Joshua Project. Kussi est une variante attestee dans certaines sources ethnographiques de Casamance.",
       "whyProblematic": "La designation Kussi est parfois confondue avec d'autres groupes. Le nom Cassanga renvoie egalement au royaume historique de Kasa (ou Kasanga) de Casamance, qui etait domine par des elites mandinguisees.",
-      "contemporaryUsage": "Kasanga (ou Cassanga) est le terme le plus utilise dans la litterature linguistique et ethnographique contemporaine.",
+      "contemporaryUsage": "Kasanga (ou Cassanga) est le terme le plus utilise dans la litterature linguistique et ethnographique contemporaine. Gu-haaca est le nom de la langue dans l’autonymie des locuteurs.",
       "linguisticFamily": "FLG_ATLANTIQUE",
       "ethnoLinguisticGroup": "Groupe Bak (sous-groupe Buy ou Kobiana-Kasanga-Banhum) de la famille atlantique du Niger-Congo",
       "historicalRegion": "Quelques villages de Guinee-Bissau (region de Cacheu) et Casamance meridionale (Senegal)",

@@ -7,7 +7,7 @@
   "content": {
     "appellations": {
       "mainName": "Nyabwa",
-      "selfAppellation": "Nyabwa / Nyaboua",
+      "selfAppellation": "Nyabwa",
       "exonyms": [
         "Niaboua",
         "Nyaboa",
@@ -21,7 +21,8 @@
       "linguisticFamily": "FLG_KROU",
       "ethnoLinguisticGroup": "Krou occidental (branche Wee-Nyabwa)",
       "historicalRegion": "Centre-ouest de la Cote d'Ivoire, entre le Sassandra et le Bandama",
-      "currentCountries": ["CIV"]
+      "currentCountries": ["CIV"],
+      "spellingAliases": ["Nyaboua"]
     },
     "ethnicities": [
       "Bliabo — tribu installée dans la partie meridionale du pays nyabwa",

@@ -736,8 +736,6 @@ export function SiteHeader({
           line-height: 1.15;
           letter-spacing: -0.01em;
           white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
         }
         /* The qualifier production carries and the app had dropped, in the
            gradient production sets it in. Declared once as --gradient-warm;
@@ -750,8 +748,6 @@ export function SiteHeader({
           line-height: 1.2;
           letter-spacing: 0.005em;
           white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
           color: var(--afh-display-accent);
         }
         @supports (background-clip: text) or (-webkit-background-clip: text) {
@@ -850,6 +846,32 @@ export function SiteHeader({
           flex: none;
           margin-left: auto;
         }
+
+        /* Match the approved compact masthead at small phone widths. */
+        @media (max-width: 375px) {
+          .sh-bar {
+            gap: 8px;
+            padding: 8px 12px;
+          }
+          .sh-brand {
+            gap: 6px;
+          }
+          .sh-brand-mark {
+            width: 32px;
+            height: 32px;
+          }
+          .sh-brand-name {
+            font-size: var(--afh-text-small);
+            line-height: 1.25;
+          }
+          .sh-brand-tagline {
+            display: none;
+          }
+          .sh-controls {
+            gap: 2px;
+          }
+        }
+
         /* Découvertes wears the axes' pill but takes no accent: the ink stands
            in wherever an axis reads --accent, so the row teaches no fourth hue.
            Declared after the axis rules so each override wins by order. */

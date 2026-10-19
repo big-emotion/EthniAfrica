@@ -7,14 +7,14 @@
   "content": {
     "appellations": {
       "mainName": "Shona",
-      "selfAppellation": "Shona (chiShona)",
+      "selfAppellation": "Shona",
       "exonyms": [
         "Mashona (terme colonial britannique, parfois percu comme pejoratif)",
         "Karanga (pour le sous-groupe dominant du plateau)"
       ],
       "originOfExonyms": "Le terme Mashona fut impose par les colons britanniques et les Ndebele voisins pour designer l'ensemble des peuples du plateau zimbabween. Le linguiste Clement Doke reconcilia en 1931 les dialectes en un standard nomme Shona.",
       "whyProblematic": "Mashona est considere pejoratif car il fut utilise par les colonisateurs pour effacer les identites claniques distinctes (Karanga, Zezuru, Korekore, Manyika, Ndau, Kalanga).",
-      "contemporaryUsage": "Shona est aujourd'hui largement accepte comme terme d'auto-identification collectif au Zimbabwe et au Mozambique.",
+      "contemporaryUsage": "Shona est aujourd'hui largement accepte comme terme d'auto-identification collectif au Zimbabwe et au Mozambique. ChiShona est le nom de la langue.",
       "linguisticFamily": "FLG_BANTU",
       "ethnoLinguisticGroup": "Bantou meridional (Zone S, Shona cluster S10-S15)",
       "historicalRegion": "Plateau du Zimbabwe, royaume de Great Zimbabwe, empire Mutapa, empire Rozvi (actuel Zimbabwe et Mozambique occidental)",

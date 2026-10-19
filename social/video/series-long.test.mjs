@@ -255,64 +255,28 @@ test("1.7.0: the reminder shows the opener's image and comes between 75 and 120 
 });
 
 // @req REQ-186
-test("1.7.0: the general invitation, word for word, after the signature line", () => {
-  const general = (texts) =>
-    long({
-      script: (beats) => {
-        beats
-          .at(-1)
-          .chunks.splice(
-            3,
-            2,
-            ...texts.map((text) => ({ text, duration: 2.6 }))
-          );
-        return beats;
-      },
-      edit: (input) => {
-        delete input.ending.search;
-        input.ending.general = true;
-        delete input.ending.next;
-      },
-    });
-  const seq = general([
-    "Vous aussi, cherchez votre nom sur EthniAfrica,",
-    "lien en profil.",
-  ]);
-  assert.equal(seq.ending.general, true);
-  assert.throws(
-    () => general(["Cherchez votre nom sur EthniAfrica,", "lien en profil."]),
-    /« Vous aussi, cherchez votre nom sur EthniAfrica, lien en profil. »/
+test("1.10.0: the next episode always sits under the pill, never on a card of its own", () => {
+  const named = long();
+  assert.deepEqual(named.ending, { next: "le pays des Noirs" });
+  assert.equal(named.cards.at(-1).next, "le pays des Noirs");
+  assert.ok(!named.cards.some((c) => c.type === "next"));
+  const general = long({
+    edit: (input) => (input.ending.general = true),
+  });
+  assert.equal(general.cards.at(-1).next, "le pays des Noirs");
+  assert.ok(!general.cards.some((c) => c.type === "next"));
+  assert.ok(
+    general.warnings.some((w) =>
+      /L'entrée de fin ne prend plus que next/.test(w)
+    )
   );
 });
 
 // @req REQ-186
-test("1.7.0: the next episode sits under the pill, or on its own card after the general invitation", () => {
-  const named = long();
-  assert.equal(named.cards.at(-1).next, "le pays des Noirs");
-  assert.ok(!named.cards.some((c) => c.type === "next"));
-  const general = long({
-    script: (beats) => {
-      beats.at(-1).silence = 2.4;
-      beats.at(-1).chunks.splice(
-        3,
-        2,
-        {
-          text: "Vous aussi, cherchez votre nom sur EthniAfrica,",
-          duration: 2.8,
-        },
-        { text: "lien en profil.", duration: 1.4 }
-      );
-      return beats;
-    },
-    edit: (input) => {
-      delete input.ending.search;
-      input.ending.general = true;
-    },
-  });
-  const own = general.cards.at(-2);
-  assert.equal(own.type, "next");
-  assert.equal(own.title, "le pays des Noirs");
-  assert.equal(general.cards.at(-1).next, undefined);
+test("1.10.0: the retired search and general sentences are no longer exported", async () => {
+  const series = await import("./series.mjs");
+  assert.equal(series.searchSentence, undefined);
+  assert.equal(series.GENERAL_SENTENCE, undefined);
 });
 
 // @req REQ-186

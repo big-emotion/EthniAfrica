@@ -131,6 +131,27 @@ wording that keeps the operator's intent. The operator accepted each of these:
 - Keep every version (`narration-v2.md`, `-v3`, …) so that a cut can be undone.
 - Run `npm run check:publication` on the narration after every round.
 
+## 11. The series frame of 19 October 2026 (Burkina Faso)
+
+Since 2026-10-19 every video script opens and closes with the operator's fixed sentences and is
+written long first. The wording and the thread are in
+`docs/editorial/strategy/social-series.md`, « Opening, closing and length of every video ».
+What the Burkina Faso rounds taught:
+
+- **Climb back from the name to the peoples.** A country name built from several languages
+  needs each language's people: where they came from, and when, with the dates attributed
+  (« selon l'historien Michel Izard ») when historians disagree.
+- **Then go back in time from the present name to the kingdoms**, and say who held each place
+  (« la capitale du royaume mossi »), which colony a territory belonged to (« une colonie de
+  l'Afrique-Occidentale française »), where its borders came from, and who led the independent
+  state.
+- **Name colonies as colonies.** « La colonie de Côte d'Ivoire », « le Soudan français, l'actuel
+  Mali »: a viewer must not read a colonial territory as today's state.
+- **A contested name gets both forms.** « L'empire du Mali, que ses habitants appelaient aussi le
+  Manden », consistent with what EthniAfrica already published.
+- **Summarise the name's origin before the reframe.** After a long detour through history, the
+  viewer needs the words of the name restated in one short paragraph.
+
 ## The approved script (v6.1, 2026-10-15)
 
 Chapter titles in brackets are on-screen cards, not spoken. About 3 min 30.

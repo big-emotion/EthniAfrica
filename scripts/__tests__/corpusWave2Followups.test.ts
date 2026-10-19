@@ -140,6 +140,21 @@ describe("validator — the hero and the name history agree on the self-name", (
   });
 
   // @req REQ-178
+  it("allows a composite people fiche with several self-given names and no single collective appellation", () => {
+    writeJson(tmpDir, "peuples/FLG_TEST/PPL_TEST.json", {
+      id: "PPL_TEST",
+      nameHistory: block([name("Ganta", true), name("Koto", true)]),
+      content: { appellations: { selfAppellation: null } },
+    });
+
+    expect(
+      checkNameHistoryBlocks(tmpDir).errors.filter((error) =>
+        /selfAppellation/.test(error)
+      )
+    ).toEqual([]);
+  });
+
+  // @req REQ-178
   it("passes the same history once the hero names the self-name", () => {
     writeJson(tmpDir, "famille_linguistique/FLG_TEST.json", {
       id: "FLG_TEST",
@@ -174,6 +189,25 @@ describe("validator — the hero and the name history agree on the self-name", (
 
     expect(errors.filter((error) => /selfAppellation/.test(error))).toEqual([]);
     expect(errors.filter((error) => /au présent par/.test(error))).toEqual([]);
+  });
+
+  // Glottolog lists Tege as a language name, while the fiche says no source
+  // identifies it as the group's self-name.
+  // @req REQ-178
+  it("does not mark catalog-listed Tege as a self-name for the northern Teke", () => {
+    const relative = "peuples/FLG_NIGERCONGO/PPL_TEKE_NORD.json";
+    const fiche = read(relative);
+    const tege = fiche.nameHistory.names.find(
+      (entry: { nameText: string }) => entry.nameText === "Tege"
+    );
+
+    expect(tege?.selfGiven).toBe(false);
+    expect(fiche.nameHistory.selfNameUnknown).toBe(true);
+    expect(
+      checkNameHistoryBlocks(AFRIK).errors.filter((error) =>
+        error.includes("PPL_TEKE_NORD.json")
+      )
+    ).toEqual([]);
   });
 });
 

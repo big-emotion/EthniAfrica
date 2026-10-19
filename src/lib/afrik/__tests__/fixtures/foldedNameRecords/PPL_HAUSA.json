@@ -8,7 +8,7 @@
   "entityType": "people",
   "names": [
     {
-      "nameText": "Hausawa (pluriel) ; Bahaushe (singulier masculin) ; Bahaushiya (singulier féminin)",
+      "nameText": "Hausawa",
       "nameType": "endonym",
       "languageOfOrigin": "hau",
       "meaning": null,
@@ -36,7 +36,7 @@
           "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane. Page 295 : le mot Hawsa désignait d'abord la langue ; les gens du pays hawsa s'appelaient eux-mêmes Hausawa, « ceux qui parlent hawsa »."
         }
       ],
-      "shortLine": "Le nom que les Haoussa se donnent au pluriel : ceux qui parlent haoussa."
+      "shortLine": "Le nom que les Haoussa se donnent au pluriel ; ceux qui parlent haoussa."
     }
   ]
 }

@@ -7,7 +7,8 @@
   "content": {
     "appellations": {
       "mainName": "Ndebele du Sud (Ndzundza)",
-      "selfAppellation": "AmaNdebele / abakwaNdzundza",
+      "selfAppellation": "AmaNdebele",
+      "spellingAliases": ["abakwaNdzundza"],
       "exonyms": [
         "Transvaal Ndebele",
         "Southern Ndebele",

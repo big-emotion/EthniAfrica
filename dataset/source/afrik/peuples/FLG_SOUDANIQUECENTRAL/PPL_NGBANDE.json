@@ -7,7 +7,7 @@
   "content": {
     "appellations": {
       "mainName": "Ngbande",
-      "selfAppellation": "Ngbandi (ou Ngbande selon la translittération)",
+      "selfAppellation": "Ngbandi",
       "exonyms": [
         "Mongbandi",
         "Mongwandi (termes populaires utilisés par les Blancs de la région belge)",
@@ -20,7 +20,8 @@
       "linguisticFamily": "FLG_SOUDANIQUECENTRAL",
       "ethnoLinguisticGroup": "Famille Oubanghienne (Adamawa-Ubangi), sous-groupe Ngbandique (Niger-Congo) — bien que classés ici dans le soudanique central",
       "historicalRegion": "Bassin du fleuve Ubangi supérieur : province de l'Équateur (nord-ouest de la RDC) et sud de la République Centrafricaine",
-      "currentCountries": ["CAF", "COD"]
+      "currentCountries": ["CAF", "COD"],
+      "spellingAliases": ["Ngbande"]
     },
     "ethnicities": [
       "Ngbandi propre (population principale de la RDC, province de l'Équateur, autour d'Abumombazi, Libenge, Mobayi)",

@@ -56,6 +56,20 @@ describe("peopleNameIndex on the corpus", () => {
     expect(fellata.origin).toBe("nameHistory");
     expect(fellata.sources.length).toBeGreaterThan(0);
   });
+
+  // @req REQ-196
+  it("keeps the existing Bijago appellation as one historical spelling", async () => {
+    const bidyogo = await fiche("PPL_BIDYOGO");
+    const bijagoEntries = peopleNameIndex(bidyogo).entries.filter(
+      (entry) => entry.nameText === "Bijago"
+    );
+
+    expect(bijagoEntries).toHaveLength(1);
+    expect(bijagoEntries[0]).toMatchObject({
+      nameType: "historical_spelling",
+      origin: "appellation",
+    });
+  });
 });
 
 describe("peopleNameIndex", () => {
@@ -89,6 +103,42 @@ describe("peopleNameIndex", () => {
     ).toEqual([
       { nameText: "Testa", nameType: "endonym", origin: "nameHistory" },
       { nameText: "Tosti", nameType: "exonym", origin: "appellation" },
+    ]);
+  });
+
+  // @req REQ-196
+  it("keeps spelling aliases typed as historical spellings before repeated exonyms", () => {
+    const index = peopleNameIndex(
+      people({
+        content: {
+          appellations: {
+            selfAppellation: "Testa",
+            exonyms: ["Tosti"],
+            spellingAliases: ["Testa", "Tosti", "Teste"],
+          },
+          sources: [...SOURCED],
+        } as People["content"],
+      })
+    );
+
+    expect(
+      index.entries.map(({ nameText, nameType, origin }) => ({
+        nameText,
+        nameType,
+        origin,
+      }))
+    ).toEqual([
+      { nameText: "Testa", nameType: "endonym", origin: "appellation" },
+      {
+        nameText: "Tosti",
+        nameType: "historical_spelling",
+        origin: "appellation",
+      },
+      {
+        nameText: "Teste",
+        nameType: "historical_spelling",
+        origin: "appellation",
+      },
     ]);
   });
 

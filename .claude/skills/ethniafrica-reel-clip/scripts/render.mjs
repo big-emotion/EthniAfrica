@@ -34,8 +34,13 @@ const FPS = 30;
 // signature line, here on the last picture held in silence, so no caption,
 // box or replaced text can cover it. The line comes from the accepted design
 // (version.json), split after each comma as the cards print it. It holds the
-// time to read it at 21 characters a second plus 0.3 s.
-const { signatureLine: SIGNATURE_LINE } = JSON.parse(
+// time to read it at 21 characters a second plus 0.3 s. Cartes 1.10.0
+// replaces it on series videos and carousels only; a clipped reel's ending
+// has no accepted 1.10.0 design yet, so it keeps the 1.6.0 line, which
+// version.json records as retired.
+const {
+  retired: { signatureLine: SIGNATURE_LINE },
+} = JSON.parse(
   await readFile(resolve("social/design-system/version.json"), "utf8")
 );
 const ENDING_SECONDS =

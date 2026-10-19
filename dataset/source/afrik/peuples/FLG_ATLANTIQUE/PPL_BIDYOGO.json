@@ -7,7 +7,8 @@
   "content": {
     "appellations": {
       "mainName": "Bidyogo",
-      "selfAppellation": "Bidyogo / Bijago",
+      "selfAppellation": "Bidyogo",
+      "spellingAliases": ["Bijago"],
       "exonyms": [
         "Bijago (portugais)",
         "Bijagos",

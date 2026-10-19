@@ -6,15 +6,16 @@
   "content": {
     "appellations": {
       "mainName": "Kuba",
-      "selfAppellation": "Bakuba (pluriel) / Mukuba (singulier)",
+      "selfAppellation": "Bakuba",
       "exonyms": [
         "Kuba (denomination europeenne, nom du royaume)",
         "Bakuba (forme plurielle avec prefixe bantou ba-)",
-        "Bushongo / Bashi-Bushongo (nom des Bushoong dominants, signifiant peuple du couteau de jet)"
+        "Bushongo (nom des Bushoong dominants)",
+        "Bashi-Bushongo (nom des Bushoong dominants)"
       ],
       "originOfExonyms": "Le terme Kuba est d'origine europeenne, utilise par les explorateurs et administrateurs belges pour designer le royaume et ses habitants. Le nom Bushongo (ou Bashi-Bushongo) est le nom que les Europeens donnaient au peuple dominant du royaume (les Bushoong). En langue propre, Bakuba designe l'ensemble de la confederation de peuples du royaume.",
       "whyProblematic": null,
-      "contemporaryUsage": "Les termes Kuba et Bakuba sont couramment utilises dans les contextes academiques et artistiques internationaux. Le roi actuel (nyim) Kot-a-Mbweeky III (en fonction depuis 1968) est chef du royaume Kuba, qui existe toujours en tant qu'entite culturelle au sein de la province du Kasai en RDC.",
+      "contemporaryUsage": "Les termes Kuba et Bakuba sont couramment utilises dans les contextes academiques et artistiques internationaux. Le roi actuel (nyim) Kot-a-Mbweeky III (en fonction depuis 1968) est chef du royaume Kuba, qui existe toujours en tant qu'entite culturelle au sein de la province du Kasai en RDC. Au singulier, on dit Mukuba.",
       "linguisticFamily": "FLG_BANTU",
       "ethnoLinguisticGroup": "Bantou de la zone C (Kasai, Guthrie C.83)",
       "historicalRegion": "Triangle forme par les fleuves Sankuru, Lulua et Kasai au coeur de la RDC (province du Kasai)",

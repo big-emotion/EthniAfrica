@@ -6,7 +6,8 @@
   "content": {
     "appellations": {
       "mainName": "Kongo",
-      "selfAppellation": "Bakongo (pluriel) / Mukongo (singulier)",
+      "selfAppellation": "Bakongo",
+      "spellingAliases": ["Mukongo"],
       "exonyms": [
         "Kongo (denomination europeenne, devenue standard)",
         "Bakongo (forme plurielle avec prefixe bantou ba-)",
@@ -16,7 +17,7 @@
       ],
       "originOfExonyms": "Le terme Kongo designait a l'origine le royaume fonde au XIVe siecle dont la capitale etait Mbanza Kongo (actuel Angola). Les Portugais, premiers Europeens a entrer en contact en 1483, adopteent ce nom pour designer le peuple et la langue. Le prefixe Ba- (peuple de) donne Bakongo.",
       "whyProblematic": null,
-      "contemporaryUsage": "Bakongo et Kongo sont utilises indifferemment selon les contextes. La langue est officellement appelee Kikongo (ki- designant la langue en bantou). Le terme Kongo est aussi le nom du fleuve Congo, du royaume historique et de la province RDC du Kongo Central.",
+      "contemporaryUsage": "Bakongo et Kongo sont utilises indifferemment selon les contextes. La langue est officellement appelee Kikongo (ki- designant la langue en bantou). Le terme Kongo est aussi le nom du fleuve Congo, du royaume historique et de la province RDC du Kongo Central. Au singulier, on dit Mukongo.",
       "peopleGroupId": "PGRP_KONGO",
       "peopleGroupLabel": "Kongo (Bakongo)",
       "linguisticFamily": "FLG_BANTU",
