@@ -246,9 +246,9 @@
         const b = eio(P(t, 2.75, 3.2));
         S("browser", { op: b, y: lerp(300, 0, b) });
         S("profile", { op: 1 - b });
-        $("progress").style.width = lerp(0, 512, eio(P(t, 3.0, 3.8))) + "px";
-        S("progress", { op: 1 - eo(P(t, 3.8, 4.0)) });
-        const home = eo(P(t, 3.7, 4.2));
+        $("progress").style.width = lerp(0, 512, eio(P(t, 3.0, 3.6))) + "px";
+        S("progress", { op: 1 - eo(P(t, 3.6, 3.8)) });
+        const home = eo(P(t, 3.4, 3.9));
         S("phFull", { op: home, y: lerp(30, 0, home) });
       }
       const tap = (t, a) => Math.sin(P(t, a, a + 0.2) * Math.PI);

@@ -4,26 +4,32 @@ The intro bumper and the end card shared by every EthniAfrica series video. Both
 
 ## Status
 
-- [x] Step 1: storyboard and style frames at 430 px (`boards/storyboard.html`). Revision 3 follows the operator's two reviews of 19 October 2026; awaiting validation.
-- [ ] Step 2: animatic, timed on the reel's real voice track.
-- [ ] Step 3: final animation and H.264 masters.
+- [x] Step 1: storyboard and style frames at 430 px (`boards/storyboard.html`), revision 3, validated by the operator on 19 October 2026 with the designer's four recommendations: the episode's name typed in the end card (Peul when the episode has no page online), a stylised finger, an 8 s end card, the site's faces.
+- [x] Step 2: animatic, `renders/intro.mp4` (6 s) and `renders/outro.mp4` (8 s), H.264 1080 × 1920 at 30 fps, on scratch voice timing.
+- [ ] Step 3: re-time on the first edited reel's voice track and re-render; wiring the idents into the series video engine waits for Cartes 1.10.0 and the operator's go-ahead.
 
 ## Files
 
-| File                         | Role                                                                                                                                                                                                                                                                                                 |
-| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `shots.mjs`                  | The storyboard as data: shots, scratch voice timing, the feed safe zone and button column (from `social/video/sequence.mjs`), the 12 px floor and the 4.5:1 contrast floor.                                                                                                                          |
-| `ident.html`, `endcard.html` | The two compositions. Each exposes `render(t)`; `?shot=<id>` or `?t=<s>` draws one time, `?guides=1` draws the safe zone, `?name=` and `?layers=` set the episode's name.                                                                                                                            |
-| `idents.css`, `idents.mjs`   | The parchment ground, the phone with the site's search redrawn in it, the easing and the ready signal. Colours are the site's own tokens, linked from `src/styles/tokens/color.css`.                                                                                                                 |
-| `layers/<name>.json`         | One per episode name: the answer page's lead and forms, copied from the live page. `peul.json` is the default.                                                                                                                                                                                       |
-| `assets/grain.png`           | The parchment grain of the support film of 10 October 2026.                                                                                                                                                                                                                                          |
-| `idents.test.mjs`            | Every text at 12 px or more in a 430 px feed and at 4.5:1 against what is behind it, essential text inside the safe zone and out of the button column, Fraunces only on the wordmark, the project's sentence and the site's interface, the name layer, and the name searched never struck or dimmed. |
-| `frames.mjs`                 | Exports every shot as a review still to `boards/frames/`.                                                                                                                                                                                                                                            |
-| `serve.mjs`                  | A static server at the repository root: the compositions load ES modules and the layer files, which `file://` refuses.                                                                                                                                                                               |
+| File                            | Role                                                                                                                                                                                                                                                                                                 |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `shots.mjs`                     | The storyboard as data: shots, scratch voice timing, the feed safe zone and button column (from `social/video/sequence.mjs`), the 12 px floor and the 4.5:1 contrast floor.                                                                                                                          |
+| `ident.html`, `endcard.html`    | The two compositions. Each exposes `render(t)`; `?shot=<id>` or `?t=<s>` draws one time, `?guides=1` draws the safe zone, `?name=` and `?layers=` set the episode's name.                                                                                                                            |
+| `idents.css`, `idents.mjs`      | The parchment ground, the phone with the site's search redrawn in it, the easing and the ready signal. Colours are the site's own tokens, linked from `src/styles/tokens/color.css`.                                                                                                                 |
+| `layers/<name>.json`            | One per episode name: the answer page's lead and forms, copied from the live page. `peul.json` is the default.                                                                                                                                                                                       |
+| `assets/grain.png`              | The parchment grain of the support film of 10 October 2026.                                                                                                                                                                                                                                          |
+| `idents.test.mjs`               | Every text at 12 px or more in a 430 px feed and at 4.5:1 against what is behind it, essential text inside the safe zone and out of the button column, Fraunces only on the wordmark, the project's sentence and the site's interface, the name layer, and the name searched never struck or dimmed. |
+| `render.mjs`, `render.test.mjs` | Encodes a clip from `render(t)`, one screenshot per frame piped into FFmpeg (H.264, CRF 16, yuv420p), the way the support film was made.                                                                                                                                                             |
+| `renders/`                      | The rendered masters, about 1 MB each.                                                                                                                                                                                                                                                               |
+| `frames.mjs`                    | Exports every shot as a review still to `boards/frames/`.                                                                                                                                                                                                                                            |
+| `serve.mjs`                     | A static server at the repository root: the compositions load ES modules and the layer files, which `file://` refuses.                                                                                                                                                                               |
 
 ```sh
-node --test social/series-idents/idents.test.mjs
+node --test social/series-idents/*.test.mjs
 node social/series-idents/frames.mjs
+node social/series-idents/render.mjs intro social/series-idents/renders/intro.mp4
+node social/series-idents/render.mjs outro social/series-idents/renders/outro.mp4 peul
+# another episode: add layers/<name>.json, then
+node social/series-idents/render.mjs outro OUT.mp4 <name>
 node social/series-idents/serve.mjs   # prints the board's local address
 ```
 
