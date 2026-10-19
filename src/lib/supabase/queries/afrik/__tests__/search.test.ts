@@ -6,7 +6,7 @@
  * the order coming back is preserved rather than re-sorted here, and that the
  * cross-kind `results` list merges the six kinds on the one score they share.
  */
-import { describe, it, expect, vi, beforeEach } from "vitest";
+import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 
 vi.mock("../../../server", () => ({
   createServerClient: vi.fn(),
@@ -174,6 +174,7 @@ describe("ftsSearchEntities", () => {
   let leadsPayload: { rows: unknown[] };
   let leadsError: { message: string } | null;
   let recordedTermsPayload: { rows: unknown[] };
+  let recordedTermsError: { code: string; message: string } | null;
   let personPeoplesRows: Record<string, unknown>[];
 
   beforeEach(() => {
@@ -195,6 +196,7 @@ describe("ftsSearchEntities", () => {
     leadsPayload = { rows: [] };
     leadsError = null;
     recordedTermsPayload = { rows: [] };
+    recordedTermsError = null;
     personPeoplesRows = [];
 
     rpc = vi.fn((fn: string, args: Record<string, unknown> = {}) => {
@@ -232,7 +234,10 @@ describe("ftsSearchEntities", () => {
       if (fn === "afrik_search_leads")
         return Promise.resolve({ data: leadsPayload, error: leadsError });
       if (fn === "afrik_search_recorded_term")
-        return Promise.resolve({ data: recordedTermsPayload, error: null });
+        return Promise.resolve({
+          data: recordedTermsError ? null : recordedTermsPayload,
+          error: recordedTermsError,
+        });
       throw new Error(`unexpected rpc ${fn}`);
     });
 
@@ -2542,6 +2547,66 @@ describe("ftsSearchEntities", () => {
       },
       { kind: "patronyme", id: "PAT_SANOU", name: "Sanou", similarity: 0.5 },
     ];
+
+    // The corpus-wide check ran past the statement timeout on production
+    // (v5.7.0) and took every search down with it. A search that answers
+    // without recorded terms is worth more than one that waits for them.
+    describe("when the recorded-term check runs out of time", () => {
+      const statementTimeout = {
+        code: "57014",
+        message: "canceling statement due to statement timeout",
+      };
+      const search = () =>
+        ftsSearchEntities({ q: "sanoh", limit: 20, offset: 0 });
+      const recordedTermCalls = () =>
+        rpc.mock.calls.filter(([fn]) => fn === "afrik_search_recorded_term")
+          .length;
+
+      // The pause lives in the module, so each test starts an hour after the
+      // last one, and in the past: whatever pause is left is over by the time
+      // the real clock comes back for the tests that follow.
+      let testClock = Date.parse("2020-01-01T00:00:00Z");
+
+      beforeEach(() => {
+        testClock += 3_600_000;
+        vi.useFakeTimers({ toFake: ["Date"] });
+        vi.setSystemTime(testClock);
+        leadsPayload = { rows: sanohLeads };
+      });
+
+      afterEach(() => {
+        vi.useRealTimers();
+      });
+
+      // @req REQ-125
+      it("answers the search without recorded terms", async () => {
+        recordedTermsError = statementTimeout;
+
+        const result = await search();
+
+        expect(result.recordedTerms).toEqual([]);
+      });
+
+      // @req REQ-125
+      it("does not ask again during the pause, and asks again once it is over", async () => {
+        recordedTermsError = statementTimeout;
+        await search();
+        await search();
+        expect(recordedTermCalls()).toBe(1);
+
+        vi.setSystemTime(testClock + 10 * 60_000);
+        recordedTermsError = null;
+        await search();
+        expect(recordedTermCalls()).toBe(2);
+      });
+
+      // @req REQ-125
+      it("still fails on an error that is not a timeout", async () => {
+        recordedTermsError = { code: "XX000", message: "internal error" };
+
+        await expect(search()).rejects.toMatchObject({ code: "XX000" });
+      });
+    });
 
     // A source note records provenance, so its occurrence does not count.
     // @req REQ-125
