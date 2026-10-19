@@ -105,6 +105,7 @@
         "Du Fouta Toro vers l'est, Hausaland et Bornou — XIe au XIVe siècle",
         "Vers le Fouta Djallon (Guinée) - deux vagues distinctes : éleveurs animistes à partir du XIVe siècle, puis musulmans aux XVIIe et XVIIIe siècles, qui fondent la théocratie",
         "Vers le Hausaland et Bornou — XVe siècle, flux constant",
+        "Du Macina et de la boucle du Niger (Mali actuel) vers le nord de l'actuel Burkina Faso : les Peuls Djelgôbé se seraient installés dans le Djelgôdji vers la fin du XVIIe siècle, selon une notice des archives sonores du CNRS ; les Ferobe venus du Macina fondent l'émirat du Liptako, selon l'encyclopédie TDV",
         "Vers le Baghirmi — début XVIe siècle",
         "Vers la vallée de la Bénoué et l'Adamaoua — fin XVIIIe siècle",
         "Vers le Soudan oriental (Fellata en route vers La Mecque) — XVIIIe-XIXe siècle",
@@ -117,6 +118,8 @@
         "Fouta Toro (Sénégal/Mauritanie méridionale) — zone originelle",
         "Fouta Djallon (Guinée centrale) - haute altitude ; Peul éleveurs et animistes à partir du XIVe siècle, puis musulmans aux XVIIe et XVIIIe siècles",
         "Massina/Macina (delta intérieur du Niger, Mali) — siècles XII-XIX",
+        "Djelgôdji (Jelgooji), autour de Djibo, nord du Burkina Faso — à partir de la fin du XVIIe siècle",
+        "Liptako, autour de Dori, nord-est du Burkina Faso — émirat à partir de 1810",
         "Hausaland (nord Nigeria/sud Niger) — emirats du Califat de Sokoto",
         "Adamaoua (Nigeria nord-est, Cameroun) — XIXe siècle",
         "Bornou (Nigeria, Tchad, Niger) — à partir du XVe siècle",
@@ -128,7 +131,7 @@
       ],
       "unificationsOrDivisions": "Formation d'États théocratiques islamiques successifs : Bundu (1690), Fouta Djallon (XVIIIe siècle), Fouta Toro (1776), Califat de Sokoto (1804), Empire de Macina (1818), Empire toucouleur (El Hadj Oumar Tall). Diversification entre groupes sédentaires (Fulbe Wuro) et nomades (Mbororo). Maintien d'une identité culturelle et linguistique commune malgré la dispersion.",
       "externalInfluences": "Influence profonde de l'islam depuis le XIe siècle, avec rôle majeur dans les réseaux islamiques sahéliens. Contacts intensifs avec les peuples mandé, haoussa, wolof, touareg. Présence de composantes génétiques ouest-africaines et nord-africaines/ibériques (admixture eurasienne de ~21%).",
-      "majorHistoricalEvents": "1690 : fondation du Bundu par Malick Sy, premier État fula islamique. 1725 : jihad de Futa Jallon (Guinée) ; création de l'Imamat de Futa Jallon. 1769-1776 : jihad de Futa Toro (Sénégal) ; création de l'Almamat sous Sulayman Bal et Abd al-Qadir. 1804 : jihad d'Usman dan Fodio au Hausaland ; fondation du Califat de Sokoto (le plus grand État ouest-africain de l'époque). 1818 : jihad de Seku Amadu ; fondation de l'Empire de Massina (capitale Hamdullahi). 1862 : chute de Massina devant El Hadj Umar Tall. 1903 : destruction du Califat de Sokoto par les Britanniques."
+      "majorHistoricalEvents": "1690 : fondation du Bundu par Malick Sy, premier État fula islamique. 1725 : jihad de Futa Jallon (Guinée) ; création de l'Imamat de Futa Jallon. 1769-1776 : jihad de Futa Toro (Sénégal) ; création de l'Almamat sous Sulayman Bal et Abd al-Qadir. 1804 : jihad d'Usman dan Fodio au Hausaland ; fondation du Califat de Sokoto (le plus grand État ouest-africain de l'époque). Avril 1810 : bataille de Dori ; les Peuls du Liptako battent les chefs gourmantché, et Brahima Seydou fonde l'émirat du Liptako. 1818 : jihad de Seku Amadu ; fondation de l'Empire de Massina (capitale Hamdullahi). 1862 : chute de Massina devant El Hadj Umar Tall. 1903 : destruction du Califat de Sokoto par les Britanniques."
     },
     "organization": {
       "traditionalPoliticalSystem": "Organisation en chefferies dirigees par des Ardo (chefs pastoraux) ou des Almami (chefs religieux-politiques). Les Etats theocratiques historiques (emirats, imamates, califats) sont structures selon la loi islamique malekite. Le code Pulaaku regle les comportements : Munyal (patience), Gacce (pudeur), Hakkille (sagesse et hospitalite), Sagata (courage).",
@@ -157,7 +160,7 @@
       "spiritualities": "Islam sunnite majoritaire (école malékite). Rôle central de l'islam dans la culture fula depuis le XIe siècle. Grande tradition islamique savante, particulièrement chez les Torobe (fondateurs des jihads des XVIIIe et XIXe siècles). Confréries soufies (Qadiriyya, Tijaniyya) influentes. Minorité chrétienne et animiste subsistant dans certaines communautés périphériques. Certaines pratiques préislamiques maintenues (rituels pastoraux, médecine traditionnelle)."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Royaume de Tekrur (IXe siècle, vallée du Sénégal). Grande Fulo de Koli Tenguella (XVIe siècle). Royaume du Bundu (1690, Malick Sy). Imamat du Fouta Djallon (XVIIIe siècle, Guinée). Almamat du Fouta Toro (1776, Sulayman Bal). Califat de Sokoto (1804, Usman dan Fodio) — plus grand empire d'Afrique de l'Ouest jusqu'en 1903. Empire de Macina (1818, Seku Amadu). Empire toucouleur (El Hadj Oumar Tall, milieu XIXe).",
+      "kingdomsOrChiefdoms": "Royaume de Tekrur (IXe siècle, vallée du Sénégal). Grande Fulo de Koli Tenguella (XVIe siècle). Royaume du Bundu (1690, Malick Sy). Imamat du Fouta Djallon (XVIIIe siècle, Guinée). Almamat du Fouta Toro (1776, Sulayman Bal). Califat de Sokoto (1804, Usman dan Fodio) — plus grand empire d'Afrique de l'Ouest jusqu'en 1903. Émirat du Liptako (1810, Dori, Brahima Seydou), que l'encyclopédie TDV range parmi les émirats de l'État d'Ousmane dan Fodio, le califat de Sokoto. Empire de Macina (1818, Seku Amadu). Empire toucouleur (El Hadj Oumar Tall, milieu XIXe).",
       "relationsWithNeighbors": "Relations complexes avec les peuples mandé, haoussa, wolof, serer, touareg et les populations sedentaires d'Afrique centrale. Conflits persistants entre eleveurs nomades fula et agriculteurs sedentaires (plateau de Jos, Nigeria; Burkina Faso; Mali; RCA). En Fouta Djallon : les Jalonke ont perdu leur statut noble, les Pulli non-islamises ont ete sedentarises de force. Alliance avec le Ghana medieval (partage du territoire).",
       "conflictsOrAlliances": "Jihads réformateurs successifs aux XVIIIe-XIXe siècles : Bundu (1690), Fouta Toro (1769-1776), Sokoto (1804), Macina (1818), Toucouleur (années 1850). Accord de 1785 avec la France (interdiction de la traite sur le fleuve Sénégal). Résistance contre les Almohades (XIe siècle) et les puissances coloniales européennes (conquête française du Fouta Toro en 1893 ; conquête britannique de Sokoto en 1903). Conflits éleveurs-agriculteurs contemporains (Nigeria, Mali, CAF, RDC, Cameroun).",
       "diaspora": "Dispersion sur toute la bande sahélienne, de l'Atlantique à la mer Rouge. Fellata : communauté de plus de 2 millions de Fula installés au Soudan oriental au retour de pèlerinages à La Mecque (XIXe siècle). Diaspora dans les grandes métropoles africaines et occidentales (Paris, Londres, New York). Leaders politiques contemporains issus des Fula : Muhammadu Buhari (Nigeria), Macky Sall (Sénégal), Adama Barrow (Gambie), Umaro Sissoco Embalo (Guinée-Bissau)."
@@ -431,6 +434,20 @@
         "url": "https://www.cia.gov/the-world-factbook/countries/cote-divoire/",
         "tier": "official",
         "source_kind": "government"
+      },
+      {
+        "title": "TDV İslâm Ansiklopedisi, vol. 13 — « Fülânîler »",
+        "url": "https://cdn2.islamansiklopedisi.org.tr/dosya/13/C13004742.pdf",
+        "tier": "referenced",
+        "source_kind": "encyclopedia",
+        "notes": "Encyclopédie de l'islam publiée en turc par la fondation TDV, article lu dans le PDF le 19 octobre 2026, p. 216. L'émirat du Liptako est fondé par Birmali Sala Pate, chef des Ferobe « venus du Macina » ; à la bataille de Dori, en avril 1810, son petit-fils Brahima bi Saidu bat les Gourma ; l'article range le Liptako parmi les émirats de l'État fondé par Ousmane dan Fodio."
+      },
+      {
+        "title": "Archives sonores du CNRS – Musée de l'Homme (CREM), collection CNRSMH_E_1997_007_001, Peuls Djelgôbé",
+        "url": "https://archives.crem-cnrs.fr/archives/collections/CNRSMH_E_1997_007_001/related/2/view",
+        "tier": "unverified",
+        "source_kind": "archive",
+        "notes": "Notice d'une collection d'enregistrements de 1997. La page n'a pas pu être ouverte le 19 octobre 2026 : la phrase reprise ici vient de l'aperçu du moteur de recherche. « Les Peuls Djelgôbé à proprement parler, provenant de la boucle du Niger (Mali actuel), ne se seraient implantés dans le Djelgôdji que vers la fin du XVII° siècle. »"
       }
     ]
   },
