@@ -10,6 +10,21 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+## [5.9.0] - 2026-10-19
+
+### Changed
+
+- Corpus: the fiches answer every fact of the Burkina Faso long video — the country
+  fiche `BFA` and the people fiches `PPL_MOSSI`, `PPL_DIOULA` and `PPL_FULA` gain the
+  missing items (#1900).
+- Corpus: Burkina Faso's societies without a king are filed, with their sources (#1901).
+- Social: the series intro bumper and end card are wired into the series video engine,
+  the satellite video and the reel clips end with the 1.10.0 closing, the end card gains
+  its Burkina Faso answer layer, and EthniAfrica Cartes 1.11.0 (the animated satellite
+  map) is integrated; the series video now stacks from the frame number and renders its
+  final pass in parallel (#1891, #1898, #1899, #1902, #1903, #1904). None of this changes
+  the site.
+
 ## [5.8.0] - 2026-10-19
 
 ### Added
@@ -1985,7 +2000,8 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.8.0...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.9.0...HEAD
+[5.9.0]: https://github.com/big-emotion/ethniafrica/compare/v5.8.0...v5.9.0
 [5.8.0]: https://github.com/big-emotion/ethniafrica/compare/v5.7.1...v5.8.0
 [5.7.1]: https://github.com/big-emotion/ethniafrica/compare/v5.7.0...v5.7.1
 [5.7.0]: https://github.com/big-emotion/ethniafrica/compare/v5.6.0...v5.7.0
