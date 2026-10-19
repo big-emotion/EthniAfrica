@@ -73,6 +73,21 @@ function campaignCode(value) {
 // network, utm_content naming what carried the link.
 const LINK_CONTENT = { "photo-carousel": "carrousel", video: "video" };
 function campaignLink(destination, { network, campaign, content }) {
+  return taggedLink(
+    destination,
+    `utm_source=${network}&utm_medium=social&utm_campaign=${campaign}&utm_content=${content}`
+  );
+}
+// The story link is written exactly as the series doc gives it
+// (docs/editorial/strategy/social-series.md, « Leading readers to the site »):
+// the medium alone tells it from the post, so it carries no utm_content.
+function storyLink(destination, campaign) {
+  return taggedLink(
+    destination,
+    `utm_source=instagram&utm_medium=story&utm_campaign=${campaign}`
+  );
+}
+function taggedLink(destination, tags) {
   // The tags are appended as the destination stands: its own utm_ parameters
   // would give the link two sets, and a #fragment would carry them where
   // Plausible never reads them.
@@ -85,7 +100,6 @@ function campaignLink(destination, { network, campaign, content }) {
     fail(
       "Verified destination must be the bare page, without utm_ parameters or a #fragment"
     );
-  const tags = `utm_source=${network}&utm_medium=social&utm_campaign=${campaign}&utm_content=${content}`;
   return `${destination}${destination.includes("?") ? "&" : "?"}${tags}`;
 }
 // Since v5.6.0 a name the corpus answers has its own address under the search
@@ -379,12 +393,82 @@ function extractCover(file, frame) {
     rmSync(scratch, { recursive: true, force: true });
   }
 }
+// The composed thumbnail (operator, 19 October 2026) is a designed image, not
+// a frame, so it cannot be re-extracted: its bytes are fingerprinted instead,
+// and its printed words join the language check. It must keep the video's
+// shape because the operator uses one image on every network.
+const THUMBNAIL_FORMATS = { png: "png", mjpeg: "jpg" };
+function composedThumbnail(root, configFile, thumbnail, manifest, read) {
+  const file = text(thumbnail?.file, "Thumbnail file");
+  if (!file.startsWith(`${dirname(configFile)}/`))
+    fail("The thumbnail must sit inside the piece folder");
+  if (!Array.isArray(thumbnail.text) || !thumbnail.text.length)
+    fail("Thumbnail text is required: every line the thumbnail prints");
+  for (const line of thumbnail.text) text(line, "Thumbnail text");
+  if (thumbnail.credit !== undefined)
+    text(thumbnail.credit, "Thumbnail credit");
+  if (thumbnail.sources !== undefined && !Array.isArray(thumbnail.sources))
+    fail("Thumbnail sources must be a list of files");
+  for (const source of thumbnail.sources ?? []) read(source);
+  const bytes = read(file);
+  let stream;
+  try {
+    [stream] = JSON.parse(
+      execFileSync(
+        "ffprobe",
+        [
+          "-v",
+          "error",
+          "-show_entries",
+          "stream=codec_name,width,height",
+          "-of",
+          "json",
+          path(root, file),
+        ],
+        { stdio: ["ignore", "pipe", "ignore"] }
+      )
+    ).streams;
+  } catch {
+    // An unreadable file is refused below, like any other format.
+  }
+  // FFprobe names a file by its extension even when its bytes are not an
+  // image, so the signature decides the format and FFprobe only the size.
+  const signature = bytes.subarray(0, 8).toString("hex");
+  const extension = signature.startsWith("89504e470d0a1a0a")
+    ? "png"
+    : signature.startsWith("ffd8ff")
+      ? "jpg"
+      : undefined;
+  if (
+    !extension ||
+    THUMBNAIL_FORMATS[stream?.codec_name] !== extension ||
+    !(stream.width > 0 && stream.height > 0)
+  )
+    fail("The thumbnail must be a PNG or JPEG image");
+  if (stream.width * manifest.height !== stream.height * manifest.width)
+    fail(
+      `The thumbnail must have the video's shape, ${manifest.width} × ${manifest.height}`
+    );
+  return {
+    file: `thumbnail.${extension}`,
+    bytes,
+    text: thumbnail.text,
+    credit: thumbnail.credit,
+    size: `${stream.width} × ${stream.height}`,
+  };
+}
+// YouTube shows a vertical thumbnail inside a 16:9 frame on some surfaces;
+// the operator keeps one image everywhere and checks the preview instead.
+function coverInstruction(network, file) {
+  const choose = `Choisir ${file} comme couverture au moment de la publication.`;
+  return `\n\n### Couverture\n\n${choose}${network === "youtube" ? " YouTube préfère une miniature 16:9 : vérifier l'aperçu avant de publier." : ""}`;
+}
 const ALT_ROUTE = {
   native: "la plateforme propose un champ dédié",
   description: "il figure dans la légende",
   unavailable: "la plateforme n'en propose pas",
 };
-function videoDelivery(root, config, read) {
+function videoDelivery(root, configFile, config, read) {
   const design = JSON.parse(read(config.design));
   if (design.status !== "accepted")
     fail("The video design must be accepted by the operator");
@@ -482,7 +566,35 @@ function videoDelivery(root, config, read) {
     });
     coverLine = `\n- [cover.png](cover.png) : image de couverture, image ${frame} de la vidéo`;
   }
+  let thumbnail;
+  if (config.thumbnail !== undefined) {
+    // One cover per piece: two would leave the operator to pick at posting time.
+    if (config.cover !== undefined)
+      fail(
+        "A video delivers either a frame cover or a composed thumbnail, not both"
+      );
+    thumbnail = composedThumbnail(
+      root,
+      configFile,
+      config.thumbnail,
+      manifest,
+      read
+    );
+    payload[thumbnail.file] = thumbnail.bytes;
+    media.push({
+      id: "thumbnail",
+      file: thumbnail.file,
+      sha256: sha(thumbnail.bytes),
+      alt: null,
+    });
+    coverLine = `\n- [${thumbnail.file}](${thumbnail.file}) : vignette composée, ${thumbnail.size}, la même couverture pour tous les réseaux`;
+  }
   const screen = series ? seriesScreenText(seq) : screenText(seq);
+  const credits = series
+    ? seriesCredits(seq)
+    : [...new Set(screen.filter((line) => line.startsWith("Source : ")))].join(
+        "\n\n"
+      );
   const seconds = String(Math.round(duration * 10) / 10).replace(".", ",");
   return {
     ...records,
@@ -508,15 +620,48 @@ function videoDelivery(root, config, read) {
     },
     accessibility: (c) =>
       `Les sous-titres sont incrustés dans la vidéo.\n\nTexte alternatif : ${ALT_ROUTE[c.altRoute]}.\n\nSous-titres automatiques : ${c.autoCaptions === "available" ? "la plateforme en propose" : "la plateforme n'en propose pas"}.\n\n`,
-    publicCopy: { screen },
+    // Without a thumbnail, these stay exactly as before so that revisions
+    // delivered earlier still verify against their post.md and public copy.
+    publicCopy: thumbnail
+      ? {
+          screen,
+          thumbnail: {
+            text: thumbnail.text,
+            ...(thumbnail.credit === undefined
+              ? {}
+              : { credit: thumbnail.credit }),
+          },
+        }
+      : { screen },
+    coverSection: (network) =>
+      thumbnail ? coverInstruction(network, thumbnail.file) : "",
     mediaOrder: `- [video.mp4](video.mp4) : ${seconds} s, ${manifest.width} × ${manifest.height}, ${seq.voice ? "voix incluse" : "sans voix"}${coverLine}`,
-    screenSection: `## On-screen text\n\n${screen.map((line) => `- ${line.replaceAll("\n", " ")}`).join("\n")}\n\n`,
-    credits: series
-      ? seriesCredits(seq)
-      : [
-          ...new Set(screen.filter((line) => line.startsWith("Source : "))),
-        ].join("\n\n"),
+    screenSection: `## On-screen text\n\n${screen.map((line) => `- ${line.replaceAll("\n", " ")}`).join("\n")}\n\n${thumbnail ? `## Thumbnail text\n\n${thumbnail.text.map((line) => `- ${line}`).join("\n")}\n\n` : ""}`,
+    credits: [credits, thumbnail?.credit && `Vignette : ${thumbnail.credit}`]
+      .filter(Boolean)
+      .join("\n\n"),
   };
+}
+// The series sends each episode's readers through the Instagram story link
+// sticker while the profile link stays fixed (social-series.md, « Leading
+// readers to the site »). Like a post link, its route must be verified on the
+// account, here as `story` in `linkPlacements`.
+function instagramStory(adaptation, capability, campaign, destination) {
+  if (adaptation.network !== "instagram")
+    fail("A story is delivered only on Instagram");
+  const story = adaptation.story ?? {};
+  https(story.linkSticker);
+  if (campaign === undefined) fail("A story link needs the piece's campaign");
+  if (destination.status !== "verified")
+    fail("Story link does not match the verified destination");
+  const expected = storyLink(destination.url, campaign);
+  if (story.linkSticker !== expected)
+    fail(`Story link sticker lacks its campaign tag; expected ${expected}`);
+  if (!capability.linkPlacements?.includes("story"))
+    fail("Account story route was not verified");
+  if (story.questionSticker !== undefined)
+    text(story.questionSticker, "Story question sticker");
+  return story;
 }
 // `applied` lists the approved corrections the checkpoint knows were integrated.
 function assemble(root, configFile, networks, applied) {
@@ -553,8 +698,10 @@ function assemble(root, configFile, networks, applied) {
   Object.assign(dependencies, research.dependencies);
   const delivery =
     config.kind === "video"
-      ? videoDelivery(root, config, read)
-      : cardDelivery(root, config, read);
+      ? videoDelivery(root, configFile, config, read)
+      : config.thumbnail === undefined
+        ? cardDelivery(root, config, read)
+        : fail("A composed thumbnail belongs to a video piece");
   const { dossier, creditUrls, media } = delivery;
   const blocks = [];
   const publicCopy = { ...delivery.publicCopy, networks: [] };
@@ -659,14 +806,21 @@ function assemble(root, configFile, networks, applied) {
         !(link.placement !== "none" && url === link.url)
       )
         fail("Copy includes an undocumented URL or declares no link route");
+    const story =
+      n.story === undefined
+        ? undefined
+        : instagramStory(n, c, config.campaign, research.destination);
     const described = adaptedMedia.filter((m) => m.alt);
     blocks.push(
-      `## ${n.network}\n\n### Légende\n\n${n.caption}\n\n### Premier commentaire\n\n${n.firstComment ?? "Aucun"}\n\n### Placement du lien\n\n${instruction}\n\n### Accessibility\n\n${delivery.accessibility(c)}${c.altInstruction}${described.length ? "\n\n" : ""}${described.map((m) => `**${m.file}**\n\n${m.alt}`).join("\n\n")}`
+      `## ${n.network}\n\n### Légende\n\n${n.caption}\n\n### Premier commentaire\n\n${n.firstComment ?? "Aucun"}\n\n### Placement du lien\n\n${instruction}\n\n### Accessibility\n\n${delivery.accessibility(c)}${c.altInstruction}${described.length ? "\n\n" : ""}${described.map((m) => `**${m.file}**\n\n${m.alt}`).join("\n\n")}${delivery.coverSection?.(n.network) ?? ""}${story ? `\n\n### Story\n\nAutocollant lien : ${story.linkSticker}\n\nAutocollant question : ${story.questionSticker ?? "aucun"}` : ""}`
     );
     publicCopy.networks.push({
       caption: n.caption,
       comment: n.firstComment ?? "Aucun",
       alternativeText: described.map((m) => m.alt),
+      ...(story?.questionSticker === undefined
+        ? {}
+        : { story: { question: story.questionSticker } }),
     });
   }
   const bibliography = dossier.sources

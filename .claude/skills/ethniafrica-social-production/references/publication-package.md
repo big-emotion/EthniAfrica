@@ -18,7 +18,9 @@ changes an account. The operator still gives approval 3 for the exact delivery.
    evidence inside the piece. Use current account UI or authoritative platform
    information where applicable; do not inherit assumed limits from this guide.
    YouTube or X is included only when selected and a suitable image route is
-   actually verified. No Stories or pinned-comment dependency is generated.
+   actually verified. No pinned-comment dependency is generated. The only
+   story the package carries is a series episode's
+   [Instagram story](#instagram-story).
 3. Write each network's exact caption and optional first comment in French.
    Instagram/Facebook can share the same suitable caption; supply the same text
    for both when intended. The tool never silently copies it to another network.
@@ -58,20 +60,20 @@ inside the existing piece folder; shared design/fonts/assets remain shared. The
 renderer and package helpers must run from the installed project with its Node,
 Playwright and Vale dependencies. No new rendering framework is installed.
 
-| Field                    | Meaning                                                                                                                                                                                                                                                                                                            |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `schema`                 | `1`.                                                                                                                                                                                                                                                                                                               |
-| `input`, `render`        | The exact card JSON and final renderer output directory. Proof/diagnostic media are refused.                                                                                                                                                                                                                       |
-| `design`, `assets`       | The same design and asset directories used for rendering.                                                                                                                                                                                                                                                          |
-| `research`               | The dossier approved at gate 2. It must pass delivery checks. Every rendered photograph/document/inset must have a matching `images[].file` and rights record. Shared brand provenance remains an agent review responsibility.                                                                                     |
-| `campaign`               | Required for a new revision: the `campaign` of the piece's entry in `docs/productions/`, or a series piece's code `<series>-<episode>`. Lowercase letters, digits and single hyphens only.                                                                                                                         |
-| `networks`               | Exactly one adaptation per selected network, with no omitted or extra target.                                                                                                                                                                                                                                      |
-| Adaptation               | `network`, nonempty `caption`, explicit `firstComment` string or null, `link`, `capability`; TikTok also requires `captionPreference`. Optional `alternativeText` is a complete array of `{file, text}` entries, one per exported image.                                                                           |
-| `link`                   | `placement`: `none`, `profile`, `first-comment` or `caption`; every non-none route needs `url`, the verified destination with this network's [campaign tags](#campaign-tags).                                                                                                                                      |
-| `capability`             | `account`, `checkedAt`, `observation`, local `evidence`, `format: "photo-carousel"`, positive `maxCards`, `captionMax`; `commentMax` when a first comment exists.                                                                                                                                                  |
-| Accessibility capability | `altRoute`: `native`, `description` or `unavailable`; `altInstruction` for the operator. Native insertion requires `altMax`. Description insertion requires every exact image description already in the caption. Unavailable insertion retains descriptions and the verified limitation in the delivery document. |
-| Link capability          | `linkPlacements`: verified supported routes. This workflow allows first-comment links only for Facebook and does not rely on clickable caption links on Instagram, Facebook or TikTok.                                                                                                                             |
-| TikTok preference        | `{maxLength, evidence}`: the operator's recorded caption preference, distinct from the platform limit.                                                                                                                                                                                                             |
+| Field                    | Meaning                                                                                                                                                                                                                                                                                                             |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `schema`                 | `1`.                                                                                                                                                                                                                                                                                                                |
+| `input`, `render`        | The exact card JSON and final renderer output directory. Proof/diagnostic media are refused.                                                                                                                                                                                                                        |
+| `design`, `assets`       | The same design and asset directories used for rendering.                                                                                                                                                                                                                                                           |
+| `research`               | The dossier approved at gate 2. It must pass delivery checks. Every rendered photograph/document/inset must have a matching `images[].file` and rights record. Shared brand provenance remains an agent review responsibility.                                                                                      |
+| `campaign`               | Required for a new revision: the `campaign` of the piece's entry in `docs/productions/`, or a series piece's code `<series>-<episode>`. Lowercase letters, digits and single hyphens only.                                                                                                                          |
+| `networks`               | Exactly one adaptation per selected network, with no omitted or extra target.                                                                                                                                                                                                                                       |
+| Adaptation               | `network`, nonempty `caption`, explicit `firstComment` string or null, `link`, `capability`; TikTok also requires `captionPreference`. Optional `alternativeText` is a complete array of `{file, text}` entries, one per exported image. Instagram only: optional `story`, see [Instagram story](#instagram-story). |
+| `link`                   | `placement`: `none`, `profile`, `first-comment` or `caption`; every non-none route needs `url`, the verified destination with this network's [campaign tags](#campaign-tags).                                                                                                                                       |
+| `capability`             | `account`, `checkedAt`, `observation`, local `evidence`, `format: "photo-carousel"`, positive `maxCards`, `captionMax`; `commentMax` when a first comment exists.                                                                                                                                                   |
+| Accessibility capability | `altRoute`: `native`, `description` or `unavailable`; `altInstruction` for the operator. Native insertion requires `altMax`. Description insertion requires every exact image description already in the caption. Unavailable insertion retains descriptions and the verified limitation in the delivery document.  |
+| Link capability          | `linkPlacements`: verified supported routes. This workflow allows first-comment links only for Facebook and does not rely on clickable caption links on Instagram, Facebook or TikTok. `story` records a verified Instagram story link sticker.                                                                     |
+| TikTok preference        | `{maxLength, evidence}`: the operator's recorded caption preference, distinct from the platform limit.                                                                                                                                                                                                              |
 
 Lengths are counted in Unicode code points. Verify how the publishing interface
 counts its limits and review its final preview; the helper cannot establish
@@ -124,7 +126,9 @@ at a checkpoint does not reopen; its next revision needs a campaign.
 
 **Limits.** In this workflow a link travels with the post only in a Facebook
 first comment or a YouTube or X caption; Instagram and TikTok rely on the
-profile link. A profile link is shared by every post while it stays in place,
+profile link, and a series episode adds its tagged link to an
+[Instagram story](#instagram-story) (`utm_medium=story`, no `utm_content`).
+A profile link is shared by every post while it stays in place,
 so its visits go to the campaign it was tagged with. Plausible loads
 only after a reader accepts analytics, so campaign counts are a floor.
 
@@ -184,9 +188,14 @@ Each revision contains:
 - `package.json`: the integrity manifest used for resumption and final approval.
 
 A video revision holds `video.mp4` instead of the PNG cards: a byte-identical
-copy of the checked export. It can also hold `cover.png`. Its `post.md` adds
+copy of the checked export. It can also hold either `cover.png` or the
+composed `thumbnail.png` (or `thumbnail.jpg`), never both. Its `post.md` adds
 the duration, the accessibility routes and the complete on-screen text, and its
-`public-copy.json` lists that text under `screen`.
+`public-copy.json` lists that text under `screen`. With a thumbnail, `post.md`
+gives each network a **Couverture** instruction and lists the thumbnail's
+words, and `public-copy.json` holds them under `thumbnail`. With an Instagram
+story, the Instagram block of `post.md` ends with a **Story** section and the
+question is in that network's `story.question`.
 
 `post.md` is the operator-facing document. The other text files support checks;
 they are not additional documents for the operator to complete. Captions and
@@ -234,14 +243,15 @@ differ. The operator decided this on 13 October 2026.
 }
 ```
 
-| Field      | Meaning                                                                                                                                                                                              |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `kind`     | `"video"`. Left out, the package is a card carousel as above.                                                                                                                                        |
-| `sequence` | The sequence file the video was encoded from. Its areas, outline and voice resolve from its own folder, as `encodeVideo` resolved them.                                                              |
-| `video`    | The folder `encodeVideo` wrote: `video.mp4` and `manifest.json`.                                                                                                                                     |
-| `design`   | The accepted video design record, `{ name, version, status: "accepted" }`. The sequence's `design` must read `name version`, for example `EthniAfrica Vidéo carte 0.4.0-proposition`.                |
-| `cover`    | Optional. `{ frame }` delivers `cover.png`, that frame of the video, for networks whose upload asks for a cover.                                                                                     |
-| Capability | `format: "video"`, positive `maxDurationSeconds`, `aspect` such as `"9:16"`, `captionMax`, `commentMax` when a first comment exists, `altRoute`, `altInstruction`, `autoCaptions`, `linkPlacements`. |
+| Field       | Meaning                                                                                                                                                                                              |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `kind`      | `"video"`. Left out, the package is a card carousel as above.                                                                                                                                        |
+| `sequence`  | The sequence file the video was encoded from. Its areas, outline and voice resolve from its own folder, as `encodeVideo` resolved them.                                                              |
+| `video`     | The folder `encodeVideo` wrote: `video.mp4` and `manifest.json`.                                                                                                                                     |
+| `design`    | The accepted video design record, `{ name, version, status: "accepted" }`. The sequence's `design` must read `name version`, for example `EthniAfrica Vidéo carte 0.4.0-proposition`.                |
+| `cover`     | Optional. `{ frame }` delivers `cover.png`, that frame of the video, for networks whose upload asks for a cover. Not with `thumbnail`.                                                               |
+| `thumbnail` | Optional. `{ file, text, credit?, sources? }` delivers the operator's composed thumbnail as `thumbnail.png` or `thumbnail.jpg`; see [Composed thumbnail](#composed-thumbnail). Not with `cover`.     |
+| Capability  | `format: "video"`, positive `maxDurationSeconds`, `aspect` such as `"9:16"`, `captionMax`, `commentMax` when a first comment exists, `altRoute`, `altInstruction`, `autoCaptions`, `linkPlacements`. |
 
 There is no `voice` field: the sequence already names its audio and words
 file, and a second declaration could disagree with the one the video was
@@ -324,7 +334,82 @@ imagery or to a voice. The on-screen Source line names the imagery, and the
 dossier keeps its reuse record. Watch the delivered `video.mp4` with sound at
 phone size before approval 3. A cover is extracted from the video again at
 each verification, so a retouched cover cannot pass; choose another frame
-instead.
+instead, or deliver a [composed thumbnail](#composed-thumbnail).
+
+### Composed thumbnail
+
+**The decision** (operator, 19 October 2026). Every video ships one composed
+thumbnail, the same image on every network: 1080 × 1920, the series band, the
+title, the country in its flag's colours on the satellite imagery, the imagery
+credit and the signature.
+
+```json
+"thumbnail": {
+  "file": "PIECE/thumbnail/thumbnail.png",
+  "text": ["Pays · épisode 19", "D'où vient le nom Burkina Faso ?", "EthniAfrica"],
+  "credit": "Image satellite : …",
+  "sources": ["PIECE/thumbnail/thumbnail.html"]
+}
+```
+
+| Field     | Meaning                                                                                                                                      |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `file`    | The finished image, inside the piece folder (the folder of `package-input.json`). PNG or JPEG, read from its first bytes, not its extension. |
+| `text`    | Every line the thumbnail prints except the credit: band, kicker, title, country, signature. Nonempty strings.                                |
+| `credit`  | Optional. The imagery credit printed on the thumbnail. It is also added to the credits of `post.md`.                                         |
+| `sources` | Optional. Project files the thumbnail was composed from, such as its page or the satellite image. They are fingerprinted, not copied.        |
+
+The helper copies the file byte for byte as `thumbnail.png` or
+`thumbnail.jpg` and records its hash in the manifest's `media` and `files`
+and, with each `sources` file, in its dependencies. `verify` refuses the
+revision when the delivered copy or the source file changed. The image must
+have the video's shape (9:16 for a 1080 × 1920 video); a larger image of the
+same shape is accepted.
+
+**Why bytes and not a frame.** A composed thumbnail is a designed image, not
+a moment of the video, so it cannot be extracted again. Its fingerprint plays
+the part the re-extraction plays for `cover`: what the operator approved at
+approval 3 is what gets uploaded.
+
+**Why not both with `cover`.** Two cover images in one revision would leave
+the choice to the moment of posting. A revision carries one or the other;
+`cover` keeps working for a piece without a composed thumbnail.
+
+**Why the words go into `public-copy.json`.** The strict language check reads
+only that file. Text drawn into an image is invisible to it, so the input
+declares it. The helper cannot read the image: check that `text` and `credit`
+match what it prints.
+
+**Per network.** `post.md` tells the operator to choose the thumbnail as the
+cover on each network. On YouTube, which prefers a 16:9 thumbnail, it adds to
+check the preview before publishing. The operator keeps one vertical image
+everywhere.
+
+## Instagram story
+
+**The decision.** Every series episode has an Instagram story with a link
+sticker and a question sticker. The profile link stays fixed on the search
+page; the episode's link goes into the story link sticker
+(`docs/editorial/strategy/social-series.md`, « Leading readers to the site »).
+
+```json
+"story": {
+  "linkSticker": "https://ethniafrica.com/fr/atlas/recherche/lingala?utm_source=instagram&utm_medium=story&utm_campaign=langue-07",
+  "questionSticker": "Connaissiez-vous ce nom ?"
+}
+```
+
+`story` is optional and goes on the Instagram adaptation only; without it,
+nothing changes. The link sticker must be exactly the verified destination
+followed by `utm_source=instagram&utm_medium=story&utm_campaign=<campaign>`,
+the form the series document gives. It carries no `utm_content`: the medium
+already tells the story from the post. The destination follows the
+[name address](#name-addresses) rule, the piece must have its `campaign`, and
+the account capability must list `story` in `linkPlacements`, as evidence that
+the account can add a link sticker. The question is optional; when present it
+is a nonempty string and goes into the language check. The helper refuses a
+story link tagged for another medium, campaign or network, or with
+`utm_content`, and its error prints the expected link.
 
 ## Changes and recovery
 
