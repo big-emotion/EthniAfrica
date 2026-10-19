@@ -42,6 +42,19 @@
         font: 800 46px/1 var(--body);
         color: var(--afh-color-terracotta);
       }
+      /* Cartes 1.10.0: « Prochain épisode » sits under the site's address. */
+      #next {
+        left: 120px;
+        top: 866px;
+        width: 840px;
+        font: 700 36px/1.2 var(--body);
+        color: var(--afh-color-text-soft);
+      }
+      #next em {
+        font-style: normal;
+        font-weight: 800;
+        color: var(--afh-color-text);
+      }
       /* Instagram, TikTok and YouTube Shorts all print the account's name
          at the bottom left of a playing video: the arrow points there. */
       #cue {
@@ -80,6 +93,7 @@
       <img src="../brand/ethniafrica-logo.png" alt="" /><span>EthniAfrica</span>
     </div>
     <p class="abs" id="url" data-essential>ethniafrica.com</p>
+    <p class="abs" id="next" data-layer="next" data-essential></p>
     <p class="abs" id="cue" data-essential>
       <svg
         viewBox="0 0 24 24"
@@ -114,9 +128,15 @@
         loadLayer,
         start,
         networkIcon,
+        params,
       } from "./idents.mjs";
 
       const layer = await loadLayer();
+      const next = params.get("next");
+      if (next) {
+        $("next").innerHTML = "<em>Prochain épisode :</em> ";
+        $("next").append(next);
+      }
       ground();
       $("networks").innerHTML = [
         "Instagram",
@@ -208,6 +228,8 @@
         rise("invite", t, 6.55, 0.5, undefined, 0, 24);
         rise("lockup", t, 6.75, 0.5, undefined, 0, 24);
         rise("url", t, 6.9, 0.5, undefined, 0, 24);
+        if (next) rise("next", t, 6.95, 0.5, undefined, 0, 24);
+        else S("next", { op: 0 });
         rise("cue", t, 7.05, 0.5, undefined, 0, 24);
         rise("networks", t, 7.15, 0.5, undefined, 0, 24);
       }

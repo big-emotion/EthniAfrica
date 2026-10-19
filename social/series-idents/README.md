@@ -6,7 +6,8 @@ The intro bumper and the end card shared by every EthniAfrica series video. Both
 
 - [x] Step 1: storyboard and style frames at 430 px (`boards/storyboard.html`), revision 3, validated by the operator on 19 October 2026 with the designer's four recommendations: the episode's name typed in the end card (Peul when the episode has no page online), a stylised finger, an 8 s end card, the site's faces.
 - [x] Step 2: animatic, `renders/intro.mp4` (6 s) and `renders/outro.mp4` (8 s), H.264 1080 × 1920 at 30 fps, on scratch voice timing.
-- [ ] Step 3: re-time on the first edited reel's voice track and re-render; wiring the idents into the series video engine waits for Cartes 1.10.0 and the operator's go-ahead.
+- [x] Step 3a: wired into the series video engine (operator's go-ahead, 19 October 2026): the intro is the second beat (`{ "type": "intro" }`), the end card replaces the 1.10.0 video ending (`idents: { outro, next }`); recorded in `social/design-system/series.md`, « The series idents in the video ». The engine draws each ident from its page in a frame the size of the video, under the subtitles, on the ident's own clock; tests in `social/video/series-idents*.test.mjs`.
+- [ ] Step 3b: re-time the idents on the first real episode's voice track.
 
 ## Files
 

@@ -4,7 +4,7 @@
 // Vidéo carte 0.4.0's chunks, highlight and voice timing. The same cards as
 // the carousel, on the operator's voice; every value is a function of the
 // frame number, with no clock.
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import {
   FPS,
@@ -18,6 +18,7 @@ import {
   IMAGERY,
 } from "./sequence.mjs";
 import { MAP_FRAME, MAP_IMAGERY, checkSeriesMapCard } from "./series-map.mjs";
+import { INTRO, OUTRO } from "../series-idents/shots.mjs";
 import {
   planMapSequences,
   mapRunState,
@@ -135,6 +136,19 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
   const chapters = input.chapters ?? [];
   const seen = new Set();
   const entries = beats.map((beat, i) => {
+    // The intro bumper (social/series-idents), operator, 19 October 2026:
+    // right after the opener, voiced with the fixed sentence and subtitled.
+    if (beat.type === "intro") {
+      if (i !== 1)
+        fail("L'intro vient juste après la carte d'ouverture, jamais ailleurs");
+      const said = sameWords((beat.chunks ?? []).map((c) => c.text).join(" "));
+      if (said !== sameWords(INTRO.voice))
+        fail(`L'intro n'est pas dite mot pour mot : « ${INTRO.voice} »`);
+      return {
+        card: { id: "generique-intro", type: "intro" },
+        chunks: beat.chunks,
+      };
+    }
     if (beat.type === "chapter") {
       const n = beat.chapter;
       const title =
@@ -206,6 +220,11 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
   };
   entries.forEach((e, i) => {
     if (e.card.type === "chapter") silent(e.card, entries[i + 1].card);
+    // The intro draws its own parchment, but belongs to the episode.
+    if (e.card.type === "intro") {
+      e.card.series = structuredClone(first.series);
+      if (first.theme) e.card.theme = first.theme;
+    }
   });
   if (entries.some((e) => key(e.card) !== key(first)))
     fail("A series video shows one series, one episode and one theme");
@@ -232,6 +251,26 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
   const next =
     typeof ending.next === "string" && ending.next.trim() ? ending.next : null;
   if (next) entries.at(-1).card.next = next;
+  // The end card (social/series-idents) in place of the 1.10.0 ending: the
+  // same words, said the same way, over the search of the episode's name.
+  // Its answer comes from a layer file copied from the name's live page.
+  const idents = input.idents ?? {};
+  if (idents.outro) {
+    const layers = String(idents.outro);
+    const file = new URL(
+      `../series-idents/layers/${layers}.json`,
+      import.meta.url
+    );
+    if (!existsSync(file))
+      fail(
+        `La fin n'a pas la réponse de ce nom : layers/${layers}.json manque dans social/series-idents`
+      );
+    const outroNext = idents.next ?? next;
+    entries.at(-1).card.outro = {
+      layers,
+      ...(outroNext && { next: outroNext }),
+    };
+  }
   const last = entries.length - 1;
   const cards = entries.map((e) => e.card);
   const texts = entries.flatMap((e) => e.chunks.map((c) => c.text));
@@ -377,10 +416,15 @@ function schedule(seq, words) {
       );
   });
   const voiceEnd = Math.ceil((seq.voice.duration + VOICE.tail) * FPS - 1e-9);
+  // The end card plays whole, from the first frame of its card change.
+  const outro = seq.cards.at(-1).outro
+    ? seq.cardStarts.at(-1) - CROSS_FADE + Math.round(OUTRO.duration * FPS)
+    : 0;
   seq.frames = Math.max(
     seq.cardStarts.at(-1) + CLOSING_HOLD,
     voiceEnd,
-    chunks.at(-1).gone
+    chunks.at(-1).gone,
+    outro
   );
   seq.warnings = [];
   if (fastChunks.length)
@@ -428,7 +472,7 @@ function planLongVideo(seq, input) {
   let chapter = null;
   seq.cards.forEach((card, i) => {
     if (card.type === "chapter") chapter = card.chapter;
-    if (["opener", "closing", "chapter"].includes(card.type)) return;
+    if (["opener", "closing", "chapter", "intro"].includes(card.type)) return;
     if (card.signed) card.videoKicker = "Nous pensons";
     else if (chapter && !card.date)
       card.videoKicker = `${chapter.n} · ${chapter.title}`;
@@ -628,6 +672,15 @@ export function seriesFrameState(seq, frame) {
     l.map = mapRunState(seq, runs[i], frame);
     l.zoom = l.map.zoom;
     if (i && runs[i] === runs[i - 1]) l.opacity = 0;
+  }
+  // An ident runs on its own clock, from the first frame of the change that
+  // brings it in, and holds its last frame.
+  for (const l of layers) {
+    const card = seq.cards[l.card];
+    const clip = card.type === "intro" ? INTRO : card.outro ? OUTRO : null;
+    if (!clip) continue;
+    const t = (frame - (starts[l.card] - CROSS_FADE)) / FPS;
+    l.ident = { clip: clip.id, t: Math.min(clip.duration, Math.max(0, t)) };
   }
   const chunk = seq.chunks.find(
     (c) => !c.hidden && frame >= c.appear && frame < c.gone

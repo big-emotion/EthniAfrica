@@ -205,6 +205,25 @@ test("the intro follows the account, then opens ethniafrica.com from the profile
   assert.equal(site.address, "ethniafrica.com");
 });
 
+test("the end card prints the next episode under the address, when there is one", async () => {
+  const read = async (query) => {
+    const page = await open("endcard.html", `shot=o5-end${query}`);
+    const next = await page.evaluate(() => {
+      const el = document.querySelector("[data-layer=next]");
+      return el && +getComputedStyle(el).opacity > 0.99
+        ? el.textContent.replace(/\s+/g, " ").trim()
+        : null;
+    });
+    await page.close();
+    return next;
+  };
+  assert.equal(
+    await read("&next=Le%20nom%20Burkina%20Faso"),
+    "Prochain épisode : Le nom Burkina Faso"
+  );
+  assert.equal(await read(""), null);
+});
+
 test("the end card shows Instagram, TikTok, Facebook, YouTube and LinkedIn, and not X", async () => {
   const page = await open("endcard.html", "shot=o5-end");
   const networks = await page.evaluate(() =>

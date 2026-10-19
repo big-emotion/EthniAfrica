@@ -45,7 +45,27 @@ const MIME = {
   ".png": "image/png",
   ".jpg": "image/jpeg",
   ".jpeg": "image/jpeg",
+  ".mjs": "text/javascript",
+  ".json": "application/json",
+  ".html": "text/html",
 };
+
+// The series idents are pages of their own (social/series-idents) that link
+// the site's colour tokens, the design system's fonts and the brand's logo by
+// relative paths; they are served under /repo/, from these folders only.
+const repoRoot = fileURLToPath(new URL("../../", import.meta.url));
+const IDENT_FOLDERS = [
+  "social/series-idents/",
+  "social/design-system/fonts/",
+  "social/brand/",
+  "src/styles/tokens/",
+];
+async function identFile(pathname) {
+  const path = decodeURIComponent(pathname.slice("/repo/".length));
+  if (path.includes("..") || !IDENT_FOLDERS.some((f) => path.startsWith(f)))
+    return null;
+  return readFile(join(repoRoot, path)).catch(() => null);
+}
 
 // Design files, fonts and the images the cards use, read once; a map card's
 // geometry is attached to its spec as the card renderer does.
@@ -206,7 +226,7 @@ async function openSeriesRenderer(
       timezoneId: "UTC",
     });
     page.setDefaultTimeout(60000);
-    await page.route("**/*", (route) => {
+    await page.route("**/*", async (route) => {
       const url = new URL(route.request().url());
       if (url.origin !== "http://ethnia.test") return route.abort();
       if (url.pathname === "/")
@@ -214,6 +234,15 @@ async function openSeriesRenderer(
           contentType: "text/html",
           body: SERIES_PAGE_HTML,
         });
+      if (url.pathname.startsWith("/repo/")) {
+        const file = await identFile(url.pathname);
+        if (!file) return route.abort();
+        return route.fulfill({
+          contentType:
+            MIME[extname(url.pathname)] ?? "application/octet-stream",
+          body: file,
+        });
+      }
       const body = routes.get(decodeURIComponent(url.pathname));
       if (!body) return route.abort();
       return route.fulfill({
@@ -340,6 +369,12 @@ export async function encodeSeriesVideo(
       "sequence.mjs",
       "render.mjs",
       "page.mjs",
+      // The series idents draw the intro and the ending.
+      "../series-idents/ident.html",
+      "../series-idents/endcard.html",
+      "../series-idents/idents.mjs",
+      "../series-idents/idents.css",
+      "../series-idents/shots.mjs",
     ].map((f) => readFile(new URL(f, import.meta.url)))
   );
   const manifest = {
@@ -370,6 +405,18 @@ export async function encodeSeriesVideo(
       cards: sha256(await readFile(seq.cardsFile)),
       engine: sha256(Buffer.concat(engine)),
       video: sha256(await readFile(file)),
+      // The end card's answer, copied from the name's live page.
+      ...(seq.cards.at(-1).outro && {
+        identLayer: sha256(
+          await readFile(
+            join(
+              repoRoot,
+              "social/series-idents/layers",
+              `${seq.cards.at(-1).outro.layers}.json`
+            )
+          )
+        ),
+      }),
     },
   };
   await writeFile(
