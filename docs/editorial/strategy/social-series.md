@@ -53,6 +53,41 @@ others exist, attributed, never ranked by origin (`docs/productions/README.md`,
 researched before it is scripted (for example `PAT_KOFI`, `PAT_KWAME` and
 `PAT_KONE` on 2026-10-13).
 
+## Opening, closing and length of every video
+
+Decided by the operator on 2026-10-19, on the Burkina Faso episode (series 1,
+episode 19). It applies to every video script from that date.
+
+- **Opening, spoken first:** « Aujourd'hui, nous allons parler de l'origine du
+  nom [nom]. » followed at once by the recurring introduction « Avec
+  EthniAfrica, on part des noms qu'on emploie en français pour mieux comprendre
+  l'Afrique et ses peuples. » The next sentence states the episode's concrete
+  fact or question and leads straight into the first explanation. Keep the
+  introduction to that one sentence; the series title may appear on screen.
+- **Why the introduction says « en français »:** the starting point is the
+  name used in French. It does not mean the name comes from French, always
+  differs from local names, or is colonial. Each case is explained from its
+  sources, pejorative, racialising or political uses included.
+- **Closing, spoken last:** « L'importance de connaître nos noms. Vous pouvez
+  continuer la recherche sur EthniAfrica, lien en profil. » It replaces, at the
+  end of the video, both the signature line and the search sentence
+  « Cherchez [nom] sur EthniAfrica, lien en profil. ». The signed « nous
+  pensons » paragraph still comes just before it. How the closing card prints
+  it is a design-system rule: until Claude Design delivers it and the video
+  engine follows, the engine still requires the old ending.
+- **Long first, refined after:** the script tells the whole story the sources
+  support, as a long video with chapters, then is reduced with the operator
+  round by round. For a country name in series 1 the thread runs: the words of
+  the name · the peoples behind each word and how they came to the region ·
+  what existed before the colony · how the colony drew the frame · how the
+  present name was chosen · a short summary of the name's origin · the reframe
+  · the « nous pensons » paragraph · the closing. Unity, the operator's
+  conviction, belongs to the « nous pensons » paragraph and stays distinct
+  from the historical findings.
+
+Captions, carousels and account bios keep their current endings (see « Leading
+readers to the site ») until the operator decides otherwise.
+
 ## Calendar
 
 Approved by the operator on 2026-10-13. The series start on Monday 2026-10-19.
@@ -151,8 +186,9 @@ days).
 
 - **Every caption ends with the same sentence, no link block, no hashtag wall:**
   « Cherchez [nom] sur EthniAfrica, lien en profil. »
-- **Every reel and every carousel ends with the project's signature, word for
-  word, and every account's bio carries it** (decided 2026-10-15):
+- **Every carousel ends with the project's signature, word for word, and every
+  account's bio carries it** (decided 2026-10-15; since 2026-10-19 videos end
+  with the closing in « Opening, closing and length of every video »):
   « Connaître nos noms, décoloniser leur emploi, nous nommer nous-mêmes. »
   It comes after the series' fixed closing line, never in its place, and
   repeats nothing of it. Its meaning, its limits and the four kinds of use
