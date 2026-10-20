@@ -48,7 +48,9 @@ export const MOSSI_MAP = {
       name: "Royaume mamprusi",
       people: "mossi",
       say: "venus",
-      nameAt: [0.3, 9.9],
+      // The board placed it at 9.9° N, at the map band's edge; 0.15° further
+      // north the 1.13.0 push keeps it in the band to the end of the plan.
+      nameAt: [0.3, 10.05],
       states: [{ say: "XVe", to: "context" }],
     },
     {
@@ -258,7 +260,8 @@ export const SPLIT_MAP = {
       text: "Soudan français",
       kind: "name",
       ink: "d",
-      at: [-4.5, 16.15],
+      // 0.15° south of the board's place, for the 1.13.0 push.
+      at: [-4.5, 16],
       say: "Soudan",
       until: "1947",
     },

@@ -860,7 +860,8 @@ function setMovingFormula(parts) {
     });
   }
 }
-// The moves ease out on the chapter card's cubic (easeOut), never past rest.
+// The moves run on ease-move (the engine gives their eased progress t),
+// never past rest.
 function drawMovingFormula(parts, state) {
   const fx = parts.paFormula;
   if (fx.day) fx.day.style.opacity = state.day;
@@ -871,7 +872,7 @@ function drawMovingFormula(parts, state) {
     const A = s.from >= 0 ? line.rest[s.from] : {};
     const B = s.to >= 0 ? line.rest[s.to] : {};
     const move = s.to >= 0 ? parts.spec.formula.lines[n].states[s.to].move : null;
-    const e = easeOut(s.t);
+    const e = s.t;
     for (const [key, span] of Object.entries(line.spans)) {
       const a = A[key], b = B[key];
       let p = null;
@@ -880,7 +881,7 @@ function drawMovingFormula(parts, state) {
       // Appearing: 9 frames rising 12 px; a change of form cross-fades in place.
       else if (b) p = { ...b, y: b.y + (move === "become" ? 0 : 12 * (1 - e)), opacity: b.opacity * e };
       // Leaving: the « + » of a join goes in its first 5 frames.
-      else if (a) p = { ...a, opacity: a.opacity * (move === "join" && span.classList.contains("pf-op") ? Math.max(0, 1 - (s.t * 14) / 5) : 1 - e) };
+      else if (a) p = { ...a, opacity: a.opacity * (move === "join" && span.classList.contains("pf-op") ? Math.max(0, 1 - (s.p * 14) / 5) : 1 - e) };
       if (!p || p.opacity <= 0) { span.style.opacity = "0"; span.style.visibility = "hidden"; continue; }
       span.style.visibility = "visible";
       span.style.opacity = p.opacity;
@@ -1039,7 +1040,7 @@ function runLayer(sequence, r) {
     const spec = { d: "", ink: a.ink, uncertain: a.uncertain, hatch: a.hatch, opacity: 0 };
     const fill = areaFill(spec), edge = areaEdge(spec);
     fills.append(fill); edges.append(edge);
-    areas[file] = { polygons: a.polygons, groups: [fill, edge], paths: [...fill.querySelectorAll("path"), ...edge.querySelectorAll("path")] };
+    areas[file] = { polygons: a.polygons, uncertain: a.uncertain, fill: fill.querySelector("path"), groups: [fill, edge], paths: [...fill.querySelectorAll("path"), ...edge.querySelectorAll("path")] };
   }
   const borderLines = sequence.borders[r];
   let borderPaths = [];
@@ -1088,12 +1089,19 @@ function drawRun(node, map) {
   for (const [file, a] of Object.entries(node.areas)) {
     const shown = map.areas.find((x) => x.file === file);
     a.groups.forEach((g) => g.setAttribute("opacity", shown ? shown.opacity : 0));
+    // 1.13.0: the swell raises the fill past its level as the area enters;
+    // the outline does not move.
+    if (shown) {
+      if (a.uncertain) a.fill.setAttribute("opacity", Math.min(1, shown.swell));
+      else a.fill.setAttribute("fill-opacity", 0.3 * shown.swell);
+    }
   }
   node.names.replaceChildren();
   for (const n of map.names) {
     if (!(n.opacity > 0)) continue;
     const name = el("div", "sm-name sm-name-box sm-seq", '<span class="sm-self">' + esc(fr(n.text)) + "</span>" + (n.lang ? '<span class="sm-lang">' + esc(fr(n.lang)) + "</span>" : ""));
     Object.assign(name.style, { left: n.box.x + n.box.w / 2 + "px", top: n.box.y + n.box.h / 2 + "px", color: INK[n.ink], opacity: n.opacity });
+    if (n.scale !== 1) name.style.transform = "translate(-50%,-50%) scale(" + n.scale + ")";
     if (n.lang) name.lastChild.style.opacity = n.opacity > 0 ? n.langOpacity / n.opacity : 0;
     node.names.append(name);
   }
@@ -1138,8 +1146,9 @@ function drawAnimatedRun(node, map) {
       const layer = a.layers[l.ink];
       if (!layer) throw new Error("Ink " + l.ink + " of " + file + " has no layer made in setup");
       layer.g.setAttribute("opacity", shown.opacity * l.w);
-      if (a.uncertain) layer.fill.setAttribute("opacity", s.hatch);
-      else layer.fill.setAttribute("fill-opacity", s.fill);
+      // 1.13.0: the swell raises the fill past its level as the area enters.
+      if (a.uncertain) layer.fill.setAttribute("opacity", Math.min(1, s.hatch * shown.swell));
+      else layer.fill.setAttribute("fill-opacity", s.fill * shown.swell);
       layer.keyline.setAttribute("stroke-width", s.keyline);
       layer.keyline.setAttribute("stroke-opacity", s.keylineOpacity);
       layer.edge.setAttribute("stroke-width", s.edge);
@@ -1153,6 +1162,7 @@ function drawAnimatedRun(node, map) {
       ? el("div", "sm-name sm-name-box sm-region", esc(fr(n.text)))
       : el("div", "sm-name sm-name-box sm-seq", '<span class="sm-self">' + esc(fr(n.text)) + "</span>");
     Object.assign(name.style, { left: n.box.x + n.box.w / 2 + "px", top: n.box.y + n.box.h / 2 + "px", opacity: n.opacity });
+    if (n.scale !== 1) name.style.transform = "translate(-50%,-50%) scale(" + n.scale + ")";
     if (n.style === "country") Object.assign(name.style, { fontSize: "44px", lineHeight: "52px" });
     else name.style.color = INK[n.ink];
     name.dataset.mark = "name";
@@ -1183,10 +1193,13 @@ function drawAnimatedRun(node, map) {
     if (!(p.opacity > 0)) continue;
     const dot = el("div", "sm-dot");
     Object.assign(dot.style, { left: p.x - 8 + "px", top: p.y - 8 + "px", opacity: p.opacity });
+    if (p.scale !== 1) dot.style.transform = "scale(" + p.scale + ")";
     node.marks.append(dot);
     if (!(p.nameOpacity > 0)) continue;
     const name = el("div", "sm-place-name sm-name-box", esc(fr(p.name)));
     Object.assign(name.style, { top: p.y - 16 + "px", opacity: p.nameOpacity });
+    // The name grows from the side of its point.
+    if (p.nameScale !== 1) Object.assign(name.style, { transform: "scale(" + p.nameScale + ")", transformOrigin: p.side === "left" ? "100% 50%" : "0 50%" });
     if (p.side === "left") Object.assign(name.style, { right: 1080 - (p.x - 14) + "px" });
     else name.style.left = p.x + 14 + "px";
     name.dataset.mark = "name";
@@ -1208,6 +1221,7 @@ function drawAnimatedRun(node, map) {
     if (!(d.labelOpacity > 0)) continue;
     const label = el("div", "sm-lab oi", esc(fr(d.label)));
     Object.assign(label.style, { left: d.x + "px", top: d.y + d.rise + 8 + "px", opacity: d.labelOpacity });
+    if (d.labelScale !== 1) Object.assign(label.style, { transform: "translate(-50%,0) scale(" + d.labelScale + ")", transformOrigin: "50% 0" });
     label.dataset.mark = "name";
     label.dataset.of = n;
     node.marks.append(ringed(label, 4));
@@ -1216,6 +1230,7 @@ function drawAnimatedRun(node, map) {
   for (const w of map.marks.words) {
     const word = el("div", "sm-wd sm-wd-" + w.kind + " oi", w.lines.map((l) => esc(fr(l))).join("<br>"));
     Object.assign(word.style, { left: w.x + "px", top: w.y + "px", opacity: w.opacity });
+    if (w.scale !== 1) word.style.transform = "translate(-50%,-50%) scale(" + w.scale + ")";
     if (w.ink) word.style.color = inkOf(w.ink);
     word.dataset.mark = w.word ? "word" : "name";
     if (w.leaving) word.dataset.leaving = "1";
@@ -1571,7 +1586,7 @@ function frameBoxes(frame, state) {
   if (shown(sign)) boxes.push({ id: "signature", kind: "signature", ...rect(sign) });
   for (const l of state.layers) {
     const parts = layers[l.card];
-    if (l.opacity > 0 && parts.scale) boxes.push({ id: parts.spec.id, kind: "image", ...rect(parts.photo), scale: +(parts.scale * l.zoom).toFixed(3) });
+    if (l.opacity > 0 && parts.scale) boxes.push({ id: parts.spec.id, kind: "image", ...rect(parts.photo), scale: +(parts.scale * (parts.zoomNow ?? l.zoom)).toFixed(3) });
     if (l.opacity > 0 && parts.doc) boxes.push({ id: parts.spec.id, kind: "document", passage: rect(parts.doc.passage), sharp: rect(parts.doc.band) });
     if (l.opacity > 0 && parts.view) {
       // The subject and the names zoom with the map around (540, 1010).
@@ -1734,6 +1749,9 @@ function drawParchment(parts, l) {
       d.img.style.transform = "translateY(" + s.rise + "px)";
       d.name.style.opacity = s.name;
       d.quality.style.opacity = s.quality;
+      // 1.13.0: they pop from their centre.
+      d.name.style.transform = s.nameScale === 1 ? "" : "scale(" + s.nameScale + ")";
+      d.quality.style.transform = s.qualityScale === 1 ? "" : "scale(" + s.qualityScale + ")";
     });
   if (parts.paDate) {
     for (const n of [parts.paDate, parts.paLabel]) if (n) n.style.opacity = l.date.opacity;
@@ -1748,8 +1766,12 @@ function drawParchment(parts, l) {
   if (parts.paWords)
     parts.paWords.forEach((n, k) => {
       n.style.opacity = l.words[k].opacity;
-      n.style.transform = "translateY(" + l.words[k].rise + "px)";
+      n.style.transform = l.words[k].scale === 1 ? "" : "scale(" + l.words[k].scale + ")";
     });
+  // 1.13.0: the content pushes in 3 % every 10 s around (540, 1000); the
+  // ground, head, band, foot and subtitles do not move.
+  parts.paBox.style.transformOrigin = "540px 1000px";
+  parts.paBox.style.transform = l.push === 1 ? "" : "scale(" + l.push + ")";
 }
 
 // What a parchment card drew, for the checks of the handoff.
@@ -1815,7 +1837,12 @@ window.drawFrame = (state) => {
     if (parts.pa) drawParchment(parts, l);
     if (parts.photo) {
       if (parts.view) parts.photo.style.transformOrigin = "540px " + parts.view.camera.centreY + "px";
-      parts.photo.style.transform = "scale(" + l.zoom + ")";
+      // 1.13.0 (decision 3): a picture that its push would enlarge past 1.5
+      // by the end of its card holds still, and the frame says so.
+      parts.held = !parts.view && parts.scale * l.zoomEnd > 1.5 + 1e-9;
+      parts.zoomNow = parts.held ? 1 : l.zoom;
+      parts.photo.style.transform = "scale(" + parts.zoomNow + ")";
+      if (parts.doc) parts.doc.blurred.style.transform = parts.photo.style.transform;
       // 1.10.0: the calm zones' copies zoom with the picture.
       (parts.calmImages || []).forEach((c) => (c.style.transform = parts.photo.style.transform));
     }
@@ -1863,7 +1890,15 @@ window.drawFrame = (state) => {
     };
   });
   const pictures = state.layers.filter((l) => l.opacity > 0).map((l) => ({ id: layers[l.card].spec.id, ...rect(layers[l.card].pic.firstElementChild || layers[l.card].pic) }));
-  return {
+  // 1.13.0: a parchment card's content is measured at rest. Its push is a
+  // camera move of 3 % every 10 s around (540, 1000); the band and the
+  // placement rules hold for the content as laid out, as a map's marks are
+  // checked on still views.
+  const pushed = layers.filter((p) => p.paBox && p.paBox.style.transform);
+  const restTransforms = pushed.map((p) => p.paBox.style.transform);
+  pushed.forEach((p) => (p.paBox.style.transform = ""));
+  const result = {
+    pushes: Object.fromEntries(pushed.map((p, k) => [p.spec.id, restTransforms[k]])),
     boxes: frameBoxes(frame, state),
     text: frame.innerText,
     lit: frame.querySelectorAll("#subtitles .lit").length,
@@ -1877,6 +1912,8 @@ window.drawFrame = (state) => {
     backgrounds: backgrounds(frame),
     documents,
     imageryPaints: imageryPaints - paintsBefore,
+    // 1.13.0: the pictures too small to push, held still.
+    held: state.layers.filter((l) => layers[l.card].held).map((l) => layers[l.card].spec.id),
     // 1.7.0: a hyphenated word drawn over two lines.
     hyphenBreaks: [...frame.querySelectorAll(".vf-nowrap")].filter((n) => n.getClientRects().length > 1).map((n) => n.textContent),
     // The ident on top, its clock, its opacity and the words it shows.
@@ -1916,5 +1953,7 @@ window.drawFrame = (state) => {
       };
     }),
   };
+  pushed.forEach((p, k) => (p.paBox.style.transform = restTransforms[k]));
+  return result;
 };
 </script></body></html>`;

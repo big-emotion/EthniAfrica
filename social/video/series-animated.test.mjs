@@ -16,6 +16,7 @@ import { flatProject, areaStyle, MARKS } from "./series-map.mjs";
 import { MAP_TIMING } from "./series-sequence.mjs";
 import { globeCamera, globeGrade } from "./page.mjs";
 import { FPS, IMAGERY } from "./sequence.mjs";
+import { pushAt } from "./series-motion.mjs";
 import { animatedDemo } from "./fixtures/series-carte-animee.mjs";
 import { touaregDemo } from "./fixtures/series-touareg.mjs";
 
@@ -52,6 +53,14 @@ const wordFrame = (s, i, unit) => {
   throw new Error(`no ${unit}`);
 };
 const area = (map, id) => map.areas.find((a) => a.id === id);
+// 1.13.0: the camera as its card framed it, the continuous push taken out.
+const atRest = (f, i) => {
+  const c = mapAt(f, i).camera;
+  return {
+    ...c,
+    radius: c.radius / pushAt(f - seq.mapSequence.shots[i].from),
+  };
+};
 const close = (a, b, eps = 1e-6) => Math.abs(a - b) <= eps;
 
 // @req REQ-186
@@ -401,8 +410,12 @@ test("check 7: two moves inside a card at most, 60 frames apart, a ratio of 2.5,
   const m = plan.moves[0];
   assert.equal(m.end - m.start, 48);
   assert.equal(m.start, wordFrame(seq, MOSSI, "cavaliers"));
-  const camera = (f) => mapAt(f, MOSSI).camera;
-  assert.deepEqual(camera(m.start), { ...plan.view, centreY: 1010 });
+  const camera = (f) => atRest(f, MOSSI);
+  assert.ok(close(camera(m.start).radius, plan.view.radius));
+  assert.deepEqual(
+    [camera(m.start).lon, camera(m.start).lat, camera(m.start).centreY],
+    [plan.view.lon, plan.view.lat, 1010]
+  );
   assert.ok(close(camera(m.end).radius, 6600));
   // Zero speed at both ends: the first frame barely moves.
   assert.ok(
@@ -447,10 +460,11 @@ test("check 7: two moves inside a card at most, 60 frames apart, a ratio of 2.5,
       ),
     /pendant qu'une flèche se trace/
   );
-  // The 2 km file's limit holds on every frame of a move.
+  // The 2 km file's limit holds on every frame of a move; since 1.13.0 the
+  // opener, framed just inside it at rest, is refused first for its push.
   assert.throws(
     () => episode({ input: (i) => delete i.mapImagery }),
-    /Vue plus proche que l'imagerie vérifiée/
+    /Vue plus proche que l'imagerie vérifiée|Poussée au-delà de la limite de l'imagerie/
   );
   assert.equal(IMAGERY["bmng-2004-07-topo-bathy-500m"].width, 86400);
 });
@@ -473,11 +487,17 @@ test("check 8: the old name steps aside with its dates, the new one takes the un
   assert.equal(texts(r.start + 15).to.opacity, 0);
   assert.ok(texts(r.start + 20).to.opacity > 0);
   assert.equal(texts(r.start + 24).dates.opacity, 0);
-  // The outline does not move: same area, same camera, same state.
+  // The outline does not move: same area, same camera, same state, the
+  // continuous push (1.13.0) aside.
   const a = mapAt(r.start - 1, RENAME);
   const b = mapAt(r.start + 40, RENAME);
-  assert.deepEqual(a.camera, b.camera);
-  assert.deepEqual(area(a, "burkina-faso"), area(b, "burkina-faso"));
+  const [ra, rb] = [atRest(r.start - 1, RENAME), atRest(r.start + 40, RENAME)];
+  assert.deepEqual([ra.lon, ra.lat], [rb.lon, rb.lat]);
+  assert.ok(close(ra.radius, rb.radius, 1e-6));
+  const { box: boxA, ...stateA } = area(a, "burkina-faso");
+  const { box: boxB, ...stateB } = area(b, "burkina-faso");
+  assert.deepEqual(stateA, stateB);
+  assert.ok(boxB.w > boxA.w);
 });
 
 // @req REQ-186

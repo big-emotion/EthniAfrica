@@ -13,10 +13,9 @@ import {
   subtitleCharacters,
   highlightAt,
   loadVoice,
-  enter,
-  leave,
   IMAGERY,
 } from "./sequence.mjs";
+import { EASE, PUSH, pushAt } from "./series-motion.mjs";
 import {
   MAP_FRAME,
   MAP_IMAGERY,
@@ -79,7 +78,6 @@ export const DATE_STEPS = [
   [104, 100],
 ];
 const CROSS_FADE = 9; // 300 ms
-const ZOOM = 0.04; // 100 → 104 %
 const CLOSING_HOLD = 75; // 2.5 s
 // Seconds. A recommendation, not a refusal (operator, 15 October 2026): an
 // episode may run longer when the research needs it; the warning keeps the
@@ -703,9 +701,11 @@ export function seriesFrameState(seq, frame) {
   let current = 0;
   while (current + 1 < starts.length && frame >= starts[current + 1]) current++;
   // 1.7.0: a run of one image zooms once, from its first card's first frame
-  // to its last card's end.
+  // to its last card's end. 1.13.0 (decision 3): the zoom is the maps'
+  // push, 6 % every 10 s; `zoomEnd` is where it stands on the run's last
+  // frame, so the page can hold a picture too small to push still.
   const imageRun = (i) => seq.imageRuns?.[i] ?? -1;
-  const zoom = (i) => {
+  const zoomSpan = (i) => {
     let a = i;
     let b = i;
     if (imageRun(i) >= 0) {
@@ -714,14 +714,22 @@ export function seriesFrameState(seq, frame) {
     }
     const from = a ? starts[a] - CROSS_FADE + 1 : 0; // first frame drawn
     const to = b + 1 < starts.length ? starts[b + 1] - 1 : null;
-    if (to === null) return 1; // the ending shows no photograph
-    return 1 + (ZOOM * (frame - from)) / (to - from);
+    return { from, to };
+  };
+  const zooms = (i) => {
+    const { from, to } = zoomSpan(i);
+    // The ending shows no photograph.
+    if (to === null) return { zoom: 1, zoomEnd: 1 };
+    return {
+      zoom: pushAt(frame - from, PUSH.picture),
+      zoomEnd: pushAt(to - from, PUSH.picture),
+    };
   };
   // `opacity` is the image's, `text` the card's own text (head, foot): the
   // images cross-fade over the whole change while the heads swap inside it,
   // out in the first half and in during the second, never both at once
   // (operator, 14 October 2026).
-  const layers = [{ card: current, opacity: 1, zoom: zoom(current), text: 1 }];
+  const layers = [{ card: current, opacity: 1, ...zooms(current), text: 1 }];
   const next = current + 1;
   let change = 0;
   if (next < starts.length && frame > starts[next] - CROSS_FADE) {
@@ -731,7 +739,7 @@ export function seriesFrameState(seq, frame) {
     layers.push({
       card: next,
       opacity: p,
-      zoom: zoom(next),
+      ...zooms(next),
       text: Math.max(0, 2 * p - 1),
     });
   }
@@ -755,7 +763,7 @@ export function seriesFrameState(seq, frame) {
       ? 0
       : frame >= from + CROSS_FADE
         ? 1
-        : enter((frame - from) / CROSS_FADE);
+        : EASE.enter((frame - from) / CROSS_FADE);
   for (const l of layers) {
     const card = seq.cards[l.card];
     if (card.itemFrames) l.items = card.itemFrames.map(arrive);
@@ -786,6 +794,7 @@ export function seriesFrameState(seq, frame) {
     if (runs[i] < 0) continue;
     l.map = mapRunState(seq, runs[i], frame);
     l.zoom = l.map.zoom;
+    l.zoomEnd = l.map.zoom;
     if (i && runs[i] === runs[i - 1]) l.opacity = 0;
   }
   // An ident runs on its own clock, from the first frame of the change that
@@ -809,10 +818,10 @@ export function seriesFrameState(seq, frame) {
         lines: chunk.lines,
         opacity:
           frame < chunk.fullFrom
-            ? enter((frame - chunk.appear) / VOICE.fade)
+            ? EASE.enter((frame - chunk.appear) / VOICE.fade)
             : frame < chunk.fullTo
               ? 1
-              : 1 - leave((frame - chunk.fullTo) / VOICE.fade),
+              : 1 - EASE.exit((frame - chunk.fullTo) / VOICE.fade),
         highlight: highlightAt(chunk.words, frame / FPS),
         // 1.12.0: said over a parchment card, in its ink without outline.
         ...(parchment(chunk.card) && { parchment: true }),

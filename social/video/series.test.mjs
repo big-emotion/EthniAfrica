@@ -37,7 +37,9 @@ const states = (seq) =>
 test("frame 0 is the cover: the opener alone, with its band, and no subtitle", () => {
   const seq = demo();
   const cover = seriesFrameState(seq, 0);
-  assert.deepEqual(cover.layers, [{ card: 0, opacity: 1, zoom: 1, text: 1 }]);
+  assert.deepEqual(cover.layers, [
+    { card: 0, opacity: 1, zoom: 1, zoomEnd: cover.layers[0].zoomEnd, text: 1 },
+  ]);
   assert.equal(seq.cards[0].type, "opener");
   assert.deepEqual(seq.band, { id: "pays", episode: 1 });
   assert.equal(cover.subtitle, null);
@@ -94,20 +96,23 @@ test("each card change is one 300 ms cross-fade and nothing else moves", () => {
 });
 
 // @req REQ-186
-test("the photograph zooms from 100 to 104 % while its card is on screen", () => {
+// 1.13.0 (decision 3): the photograph pushes in 6 % every 10 s, the maps'
+// push, in place of 1.4.0's 100 to 104 % over the card.
+test("the photograph pushes in 6 % every 10 s while its card is on screen", () => {
   const seq = demo();
   const zooms = new Map();
   states(seq).forEach((s) =>
     s.layers.forEach((l) =>
-      zooms.set(l.card, [...(zooms.get(l.card) ?? []), l.zoom])
+      zooms.set(l.card, [...(zooms.get(l.card) ?? []), [l.zoom, l.zoomEnd]])
     )
   );
-  for (const [card, list] of zooms) {
+  for (const [card, pairs] of zooms) {
+    const list = pairs.map(([z]) => z);
     assert.equal(list[0], 1, `card ${card} starts at 100 %`);
     if (card < seq.cards.length - 1)
       assert.ok(
-        Math.abs(list.at(-1) - 1.04) < 1e-9,
-        `card ${card} ends at 104 %`
+        Math.abs(list.at(-1) - pairs.at(-1)[1]) < 1e-9,
+        `card ${card} ends at its zoomEnd`
       );
     list.forEach((z, i) => assert.ok(i === 0 || z >= list[i - 1]));
   }

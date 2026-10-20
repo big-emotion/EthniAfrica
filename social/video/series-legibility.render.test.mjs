@@ -429,6 +429,9 @@ test("1.9.0 check 6: every text box of the 1.8.0 acceptance frames stays in plac
         // A chapter card no longer shares the next picture (operator, 20
         // October 2026), so that picture's slow zoom starts on its own card.
         if (demo === "series-long" && b.kind === "image") return;
+        // 1.13.0: a picture pushes in 6 % every 10 s (decision 3), in place
+        // of the slow zoom, so its box grows otherwise; the text stays.
+        if (b.kind === "image") return;
         const kicker = b.kind === "head" && b.y === 318 && b.h === 36;
         for (const k of kicker ? ["x", "y"] : ["x", "y", "w", "h"])
           assert.ok(
@@ -438,5 +441,6 @@ test("1.9.0 check 6: every text box of the 1.8.0 acceptance frames stays in plac
         compared++;
       });
     }
-  assert.ok(compared > 450, `${compared} boxes`);
+  // 450 and more before 1.13.0; the pictures' boxes are now left out.
+  assert.ok(compared > 400, `${compared} boxes`);
 });

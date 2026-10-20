@@ -5,7 +5,8 @@
 // The page (series-page.mjs) measures and draws; every time here is a frame
 // number, every place there a function of these states.
 import { existsSync } from "node:fs";
-import { FPS, enter } from "./sequence.mjs";
+import { FPS } from "./sequence.mjs";
+import { EASE, PUSH, pushAt, popAt } from "./series-motion.mjs";
 import { wordOf } from "./series-sequence.mjs";
 import { groundMotion } from "../series-idents/ground.mjs";
 
@@ -274,7 +275,7 @@ const progress = (frame, from, frames) =>
     ? 0
     : frame >= from + frames
       ? 1
-      : enter((frame - from) / frames);
+      : EASE.enter((frame - from) / frames);
 const linear = (frame, from, frames) =>
   frame <= from ? 0 : frame >= from + frames ? 1 : (frame - from) / frames;
 
@@ -291,6 +292,10 @@ export function teachingLayer(seq, l, frame, crossFade) {
   const card = seq.cards[l.card];
   if (!isParchment(card)) return;
   l.ground = groundMotion((frame - runClock(seq, l.card, crossFade)) / FPS);
+  // 1.13.0: its content pushes in 3 % every 10 s from the card's first
+  // frame; the ground keeps its own clock.
+  const first = l.card ? seq.cardStarts[l.card] - crossFade + 1 : 0;
+  l.push = pushAt(frame - first, PUSH.parchment);
   const plan = card.teachingPlan;
   if (plan.week) {
     const { entry, lights } = plan.week;
@@ -337,7 +342,9 @@ export function teachingLayer(seq, l, frame, crossFade) {
             to < 0 ? 0 : progress(frame, frames[0], TEACHING.appear.frames),
           from: to < 0 ? -1 : to - 1,
           to,
-          t: to < 0 ? 0 : linear(frame, frames[to], durations[to]),
+          // `p` runs linearly over the move, `t` is its progress on `ease-move`.
+          p: to < 0 ? 0 : linear(frame, frames[to], durations[to]),
+          t: to < 0 ? 0 : EASE.move(linear(frame, frames[to], durations[to])),
         };
       }),
       notes: notes.map(
@@ -350,15 +357,16 @@ export function teachingLayer(seq, l, frame, crossFade) {
   if (plan.drawings)
     l.drawings = plan.drawings.map(({ frame: f, quality }) => {
       const p = progress(frame, f, TEACHING.drawing.frames);
+      // 1.13.0: the drawing's name and quality pop under it.
+      const name = popAt(frame - f - TEACHING.drawing.name);
+      const said = popAt(frame - quality);
       return {
         opacity: p,
         rise: TEACHING.drawing.rise * (1 - p),
-        name: progress(
-          frame,
-          f + TEACHING.drawing.name,
-          TEACHING.drawing.label
-        ),
-        quality: progress(frame, quality, TEACHING.drawing.label),
+        name: name.opacity,
+        nameScale: name.scale,
+        quality: said.opacity,
+        qualityScale: said.scale,
       };
     });
   if (plan.date !== undefined) {
@@ -380,8 +388,9 @@ export function teachingLayer(seq, l, frame, crossFade) {
     };
   }
   if (plan.words)
+    // 1.13.0: free words pop on their word, from their centre.
     l.words = plan.words.map((f) => {
-      const p = progress(frame, f, TEACHING.words.frames);
-      return { opacity: p, rise: TEACHING.words.rise * (1 - p) };
+      const { opacity, scale } = popAt(frame - f);
+      return { opacity, scale };
     });
 }

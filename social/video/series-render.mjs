@@ -148,7 +148,10 @@ async function prepareMaps(seq, cards, routes, assets) {
       cards[i].map.data,
       countries,
       world,
-      imagery
+      imagery,
+      // 1.13.0: framed for its push on its last frame.
+      seriesFrameState(seq, seq.cardStarts[i]).layers.find((l) => l.card === i)
+        .zoomEnd
     );
   const all = Object.values(views).map((v) => v.bounds);
   let sequence = null;
@@ -374,11 +377,14 @@ export async function openSeriesRenderer(
       throw new Error("A required font is not loaded");
     const last = seriesFrameCount(seq) - 1;
     const captured = new Set();
+    // 1.13.0: the pictures held still, too small for their push.
+    const held = new Set();
     // The text boxes are checked on the cover, the last frame and every frame
     // where a subtitle is fully drawn, so every card and the ending are seen.
     const draw = async (frame) => {
       const state = seriesFrameState(seq, frame);
       const drawn = await page.evaluate((s) => window.drawFrame(s), state);
+      for (const id of drawn.held ?? []) held.add(id);
       if (frame === 0 || frame === last || state.subtitle?.opacity === 1) {
         // A demonstration only reports images too small for the frame: the
         // library holds web renditions; a final video refuses them.
@@ -396,6 +402,7 @@ export async function openSeriesRenderer(
       // What each capture asked for, so the manifest says how the frames
       // FFmpeg received were taken.
       captured,
+      held,
       capture: (options = {}) => {
         captured.add(options.fast ? "png-fast" : "png");
         return captureFrame(page, options);
@@ -468,7 +475,7 @@ async function encodeSlice(seq, { from, to }, target, sound, options, stopped) {
   } finally {
     await renderer.close();
   }
-  return { renderer, problems };
+  return { renderer, problems, held: [...renderer.held] };
 }
 
 // Joins the silent slices `parts` into `file` without re-encoding, through
@@ -539,6 +546,7 @@ async function encodeSlices(seq, slices, file, options) {
     return {
       renderer: done[0].value.renderer,
       problems: done.flatMap((d) => d.value.problems),
+      held: [...new Set(done.flatMap((d) => d.value.held))],
     };
   } catch (error) {
     await rm(file, { force: true });
@@ -601,7 +609,7 @@ export async function encodeSeriesVideo(
   await rm(file, { force: true });
   const options = { diagnose, gpu, ...(assets && { assets }) };
   const ffmpeg = execFileSync("ffmpeg", ["-version"]).toString().split("\n")[0];
-  const { renderer, problems } =
+  const { renderer, problems, held } =
     slices.length === 1
       ? await encodeSlice(
           seq,
@@ -656,6 +664,8 @@ export async function encodeSeriesVideo(
     ...(seq.silent?.length && { silent: seq.silent }),
     demo: !!seq.demo,
     ...(seq.warnings.length && { warnings: seq.warnings }),
+    // 1.13.0: the pictures too small to push, held still (decision 3).
+    ...(held.length && { stillPictures: held }),
     // A diagnostic export lists the frames whose text left its band.
     ...(diagnose && { diagnostic: true, layoutProblems: problems }),
     // The parallel render: the browsers that drew it, and the first frame of
