@@ -182,3 +182,9 @@ The approved titles are « Noms de personnes rattachés à ce pays », « Noms d
 personnes associés à ce peuple » and « Noms de personnes associés à cette langue ».
 The language label is reserved for a personal-name section; it does not rename
 alternate appellations or create a new association that the data does not hold.
+
+The operator also approved the [source-group state](../drafts/fiche-source-groups.html)
+on 2026-10-20: on a fiche that lists several names, each name and its count of
+accounts stay visible while its source accounts start closed. This lets a reader
+choose which name's accounts to open. The `ea-voice-person` groups in the site
+boards now show that initial state.

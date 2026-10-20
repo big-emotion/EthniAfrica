@@ -65,6 +65,28 @@ test.describe("approved long-name lists", () => {
         const entries = group.locator(
           path.includes("/pays/") ? ".afh-name-pills li" : "[data-name-row]"
         );
+        const sourceGroups = page.locator(
+          "[data-name-sources] details[data-name-group]"
+        );
+        for (const sourceGroup of await sourceGroups.all()) {
+          await expect(sourceGroup).not.toHaveAttribute("open");
+        }
+        if ((await sourceGroups.count()) > 0) {
+          const sourceSection = page.locator("[data-name-sources]");
+          const firstSourceGroup = sourceGroups.first();
+          await testInfo.attach("sources-closed", {
+            body: await sourceSection.screenshot(),
+            contentType: "image/png",
+          });
+          await firstSourceGroup.locator(":scope > summary").click();
+          await expect(firstSourceGroup).toHaveAttribute("open");
+          await testInfo.attach("sources-open", {
+            body: await sourceSection.screenshot(),
+            contentType: "image/png",
+          });
+          await firstSourceGroup.locator(":scope > summary").click();
+          await expect(firstSourceGroup).not.toHaveAttribute("open");
+        }
         const count = await entries.count();
         expect(count).toBeGreaterThan(0);
         await expect(fold).not.toHaveAttribute("open");
