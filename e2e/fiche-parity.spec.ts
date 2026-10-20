@@ -41,10 +41,10 @@ const MATRIX = Object.keys(baseline.heights);
 const HEIGHT_DEBT: readonly string[] = [];
 
 const DISCLOSURE_ROUTES = [
-  "/fr/atlas/pays/NAM",
-  "/fr/atlas/pays/BDI",
-  "/fr/atlas/peuples/PPL_MINYANKA",
-  "/fr/atlas/peuples/PPL_FULA",
+  getCountryRoute(LOCALE, "NAM"),
+  getCountryRoute(LOCALE, "BDI"),
+  getPeopleRoute(LOCALE, "PPL_MINYANKA"),
+  getPeopleRoute(LOCALE, "PPL_FULA"),
 ];
 
 test.describe("approved long-name lists", () => {
