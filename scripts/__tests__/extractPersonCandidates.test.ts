@@ -1,5 +1,6 @@
 // @req REQ-126
 import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "fs";
+import { tmpdir } from "os";
 import { join } from "path";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 
@@ -12,7 +13,7 @@ describe("extractPersonCandidatesToArtifact (ETNI-1387)", () => {
 
   beforeEach(() => {
     fixtureRoot = join(
-      __dirname,
+      tmpdir(),
       `tmp_person_candidates_${Date.now()}_${Math.random().toString(36).slice(2)}`
     );
     peopleRoot = join(fixtureRoot, "dataset/source/afrik/peuples");

@@ -26,6 +26,7 @@ import {
   encodeFrames,
   prepareImageryRegion,
   BROWSER_ARGS,
+  GPU_BROWSER_ARGS,
   MAX_TEXTURE,
 } from "./render.mjs";
 import { DOWNLOADS, readVerified } from "./areas.mjs";
@@ -265,21 +266,47 @@ async function prepareMaps(seq, cards, routes, assets) {
   };
 }
 
+// How far a GPU frame may sit from SwiftShader's, measured on 19 October
+// 2026 on the parallel render's 716-frame test sequence: worst 40.9 dB and
+// 0.21 % of pixels beyond 16 levels, on the globe's zoom (README, « GPU
+// render »).
+export const GPU_TOLERANCE = { psnr: 38, levels: 16, far: 0.005 };
+
+// The WebGL renderer string the page reports, and whether it is SwiftShader.
+// A GPU render that fell back to SwiftShader is refused, not recorded as GPU.
+async function webglRuntime(page, gpu) {
+  const renderer = await page.evaluate(() => {
+    const gl = document.createElement("canvas").getContext("webgl");
+    const info = gl?.getExtension("WEBGL_debug_renderer_info");
+    return info ? gl.getParameter(info.UNMASKED_RENDERER_WEBGL) : "none";
+  });
+  const backend = /SwiftShader/.test(renderer) ? "swiftshader" : "gpu";
+  if (gpu && backend !== "gpu")
+    throw new Error(`GPU render asked, but WebGL runs on ${renderer}`);
+  return { backend, renderer };
+}
+
 // `diagnose` records layout problems on each result instead of refusing the
-// frame, for a proof that shows a defect; an export made so says it.
-async function openSeriesRenderer(
+// frame, for a proof that shows a defect; an export made so says it. `gpu`
+// draws WebGL on the GPU instead of SwiftShader.
+export async function openSeriesRenderer(
   seq,
-  { diagnose = false, assets = process.env.ETHNIAFRICA_VIDEO_ASSETS } = {}
+  {
+    diagnose = false,
+    gpu = false,
+    assets = process.env.ETHNIAFRICA_VIDEO_ASSETS,
+  } = {}
 ) {
   const runtime = JSON.parse(
     await readFile(new URL("../renderer/runtime.json", import.meta.url))
   );
   const { routes, tokens, cards } = await routesFor(seq);
   const maps = await prepareMaps(seq, cards, routes, assets);
-  // A map card's WebGL runs on SwiftShader, as in the satellite video.
+  // A map card's WebGL runs on SwiftShader, as in the satellite video,
+  // unless the GPU was asked for.
   const browser = await chromium.launch({
     headless: true,
-    ...(maps && { args: BROWSER_ARGS }),
+    ...(gpu ? { args: GPU_BROWSER_ARGS } : maps && { args: BROWSER_ARGS }),
   });
   try {
     if (browser.version() !== runtime.chromium)
@@ -316,6 +343,7 @@ async function openSeriesRenderer(
       });
     });
     await page.goto("http://ethnia.test/");
+    const webgl = await webglRuntime(page, gpu);
     // 1.10.0: each card's subtitle lines and the zoom of its first frame,
     // for the calm zones measured on the picture alone.
     const subtitles = seq.cards.map((_, i) =>
@@ -343,6 +371,7 @@ async function openSeriesRenderer(
     if (ready.fonts.some((ok) => !ok))
       throw new Error("A required font is not loaded");
     const last = seriesFrameCount(seq) - 1;
+    const captured = new Set();
     // The text boxes are checked on the cover, the last frame and every frame
     // where a subtitle is fully drawn, so every card and the ending are seen.
     const draw = async (frame) => {
@@ -362,9 +391,19 @@ async function openSeriesRenderer(
     };
     return {
       draw,
-      capture: () => captureFrame(page),
+      // What each capture asked for, so the manifest says how the frames
+      // FFmpeg received were taken.
+      captured,
+      capture: (options = {}) => {
+        captured.add(options.fast ? "png-fast" : "png");
+        return captureFrame(page, options);
+      },
       close: () => browser.close(),
-      runtime: { playwright: runtime.playwright, chromium: browser.version() },
+      runtime: {
+        playwright: runtime.playwright,
+        chromium: browser.version(),
+        webgl,
+      },
       designVersion: ready.version,
       maps: maps?.record ?? null,
       calm: ready.calm,
@@ -396,7 +435,11 @@ export async function renderSeriesFrames(seq, frames, options) {
 // first frame anti-aliases a few edges otherwise than the frames after it,
 // so a slice first draws the WARM_UP frames before it, unkept, as a single
 // pass has drawn them (5 pixels differed at a cut without it).
+// The encoder takes the fast capture: the same pixels as the normal one,
+// about five times sooner (README, « Fast capture »). Proofs and tests keep
+// the normal capture, the one their references were made with.
 const WARM_UP = 30;
+const ENCODER_CAPTURE = { fast: true };
 async function encodeSlice(seq, { from, to }, target, sound, options, stopped) {
   const renderer = await openSeriesRenderer(seq, options);
   const problems = [];
@@ -405,7 +448,7 @@ async function encodeSlice(seq, { from, to }, target, sound, options, stopped) {
       const failure = stopped();
       if (failure) throw failure;
       await renderer.draw(f);
-      await renderer.capture();
+      await renderer.capture(ENCODER_CAPTURE);
     }
     await encodeFrames(target, {
       from,
@@ -416,7 +459,7 @@ async function encodeSlice(seq, { from, to }, target, sound, options, stopped) {
         const drawn = await renderer.draw(f);
         if (drawn.problems?.length)
           problems.push({ frame: f, problems: drawn.problems });
-        return renderer.capture();
+        return renderer.capture(ENCODER_CAPTURE);
       },
       sound,
     });
@@ -534,7 +577,7 @@ function checkEncoded(file, count) {
 export async function encodeSeriesVideo(
   seq,
   outDir,
-  { diagnose = false, assets, workers = 3 } = {}
+  { diagnose = false, assets, workers = 3, gpu = false } = {}
 ) {
   // Hashed before drawing, as loaded: the package loads the sequence again and
   // compares, so a sequence edited after encoding needs a new encode.
@@ -554,7 +597,7 @@ export async function encodeSeriesVideo(
   await mkdir(outDir, { recursive: true });
   const file = join(outDir, "video.mp4");
   await rm(file, { force: true });
-  const options = { diagnose, ...(assets && { assets }) };
+  const options = { diagnose, gpu, ...(assets && { assets }) };
   const ffmpeg = execFileSync("ffmpeg", ["-version"]).toString().split("\n")[0];
   const { renderer, problems } =
     slices.length === 1
@@ -619,7 +662,11 @@ export async function encodeSeriesVideo(
     cuts: slices.slice(1).map((s) => s.from),
     // Mechanical export only: editorial approvals live in the checkpoint.
     productionReady: false,
-    runtime: { ...renderer.runtime, ffmpeg },
+    runtime: {
+      ...renderer.runtime,
+      capture: [...renderer.captured].join(", "),
+      ffmpeg,
+    },
     hashes: {
       sequence,
       cards: sha256(await readFile(seq.cardsFile)),
@@ -650,7 +697,8 @@ export async function encodeSeriesVideo(
 //   [--frames 0,120,…] writes those frames as PNG instead of the video;
 //   [--diagnose] records layout problems instead of refusing the frame;
 //   [--workers N] renders the video in N slices in parallel (3 by
-//   default; 1 is the single pass).
+//   default; 1 is the single pass);
+//   [--gpu] draws WebGL on the Mac's GPU instead of SwiftShader.
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const arg = (name) => {
     const at = process.argv.indexOf(name);
@@ -660,17 +708,18 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const out = arg("--out");
   if (!file || !out)
     throw new Error(
-      "Usage: series-render.mjs --sequence FILE --out DIR [--frames N,N] [--diagnose] [--workers N]"
+      "Usage: series-render.mjs --sequence FILE --out DIR [--frames N,N] [--diagnose] [--workers N] [--gpu]"
     );
   const seq = loadSeriesVideo(JSON.parse(await readFile(file, "utf8")), {
     dir: dirname(resolve(file)),
   });
   seq.warnings.forEach((w) => console.warn(`Warning: ${w}`));
   const diagnose = process.argv.includes("--diagnose");
+  const gpu = process.argv.includes("--gpu");
   if (arg("--frames")) {
     await mkdir(out, { recursive: true });
     const frames = arg("--frames").split(",").map(Number);
-    for (const r of await renderSeriesFrames(seq, frames, { diagnose }))
+    for (const r of await renderSeriesFrames(seq, frames, { diagnose, gpu }))
       await writeFile(
         join(out, `frame-${String(r.frame).padStart(4, "0")}.png`),
         r.png
@@ -678,7 +727,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   } else {
     const workers = Number(arg("--workers") ?? 3);
     console.log(
-      (await encodeSeriesVideo(seq, out, { diagnose, workers })).file
+      (await encodeSeriesVideo(seq, out, { diagnose, workers, gpu })).file
     );
   }
 }

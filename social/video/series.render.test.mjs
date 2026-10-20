@@ -15,7 +15,8 @@ import {
   checkSeriesLayout,
   LAYOUT,
 } from "./series.mjs";
-import { renderSeriesFrames } from "./series-render.mjs";
+import sharp from "sharp";
+import { openSeriesRenderer, renderSeriesFrames } from "./series-render.mjs";
 import { seriesDemo } from "./fixtures/series-pays.mjs";
 
 const dir = mkdtempSync(join(tmpdir(), "series-render-"));
@@ -208,4 +209,23 @@ test("1.10.0: the subtitle band is empty on every drawn frame of the ending", ()
   assert.ok(ending.length >= 4, `${ending.length} ending frames`);
   for (const f of ending)
     assert.ok(!f.boxes.some((b) => b.kind === "subtitle"), `frame ${f.frame}`);
+});
+
+// @req REQ-186
+test("a fast capture of a drawn frame decodes to the normal capture's pixels", async () => {
+  const renderer = await openSeriesRenderer(seq, { diagnose: true });
+  const rgba = (png) => sharp(png).ensureAlpha().raw().toBuffer();
+  try {
+    for (const frame of [0, seq.chunks[0].fullFrom]) {
+      await renderer.draw(frame);
+      const normal = await renderer.capture();
+      const fast = await renderer.capture({ fast: true });
+      assert.ok(!fast.equals(normal), `frame ${frame}: the same PNG bytes`);
+      const [a, b] = await Promise.all([rgba(normal), rgba(fast)]);
+      assert.ok(b.equals(a), `frame ${frame}: pixels differ`);
+    }
+    assert.deepEqual([...renderer.captured].sort(), ["png", "png-fast"]);
+  } finally {
+    await renderer.close();
+  }
 });

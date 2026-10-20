@@ -8,6 +8,7 @@ import {
   readdirSync,
   readFileSync,
 } from "fs";
+import { tmpdir } from "os";
 import { join } from "path";
 import { validateMigrationEvents } from "../validateAfrikData";
 
@@ -116,7 +117,7 @@ describe("validateMigrationEvents (FR80, Story 12.1)", () => {
 
   beforeEach(() => {
     tmpDir = join(
-      __dirname,
+      tmpdir(),
       `tmp_test_${Date.now()}_${Math.random().toString(36).slice(2)}`
     );
     mkdirSync(tmpDir, { recursive: true });

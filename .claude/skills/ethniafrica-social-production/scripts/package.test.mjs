@@ -8,8 +8,10 @@ import {
   existsSync,
   copyFileSync,
   appendFileSync,
+  mkdirSync,
 } from "node:fs";
-import { join } from "node:path";
+import { execFileSync } from "node:child_process";
+import { dirname, join } from "node:path";
 import { createPackage, inspectPackage } from "./package.mjs";
 import { packageFixture } from "./package.fixture.mjs";
 import { videoPackageFixture } from "./package-video.fixture.mjs";
@@ -983,5 +985,276 @@ test("a revision written before campaigns keeps its bare link only when it is th
   assert.throws(
     () => inspectPackage(other.root, other.output, both),
     /verified destination/i
+  );
+});
+
+// A composed still drawn by FFmpeg, standing in for the operator's thumbnail.
+function drawThumbnail(f, file, size = "1080x1920") {
+  const target = join(f.root, file);
+  mkdirSync(dirname(target), { recursive: true });
+  execFileSync("ffmpeg", [
+    "-v",
+    "error",
+    "-f",
+    "lavfi",
+    "-i",
+    `color=c=0x1d3557:s=${size}`,
+    "-frames:v",
+    "1",
+    "-y",
+    target,
+  ]);
+  return file;
+}
+const THUMBNAIL_TEXT = [
+  "Pays · épisode 19",
+  "D'où vient le nom Burkina Faso ?",
+  "EthniAfrica",
+];
+
+// @req REQ-186
+test("a composed thumbnail is copied byte for byte, fingerprinted and named in every network's instructions", (t) => {
+  const networks = ["instagram", "youtube"];
+  const f = videoPackageFixture(t, networks);
+  const source = drawThumbnail(f, "piece/thumbnail/vignette.png");
+  f.config.thumbnail = {
+    file: source,
+    text: THUMBNAIL_TEXT,
+    credit: "Image satellite : NASA",
+    sources: [f.sequence],
+  };
+  f.save();
+  const r = createPackage(f.root, f.configPath, f.output, networks);
+  assert.deepEqual(
+    r.media.map((m) => m.file),
+    ["video.mp4", "thumbnail.png"]
+  );
+  const bytes = readFileSync(join(f.root, source));
+  assert.deepEqual(
+    readFileSync(join(f.root, f.output, "thumbnail.png")),
+    bytes
+  );
+  const manifest = JSON.parse(
+    readFileSync(join(f.root, f.output, "package.json"), "utf8")
+  );
+  const digest = createHash("sha256").update(bytes).digest("hex");
+  assert.equal(manifest.files["thumbnail.png"], digest);
+  assert.equal(manifest.dependencies[source], digest);
+  const post = readFileSync(join(f.root, f.output, "post.md"), "utf8");
+  assert.match(post, /\[thumbnail\.png\]\(thumbnail\.png\)/);
+  assert.equal((post.match(/### Couverture/g) || []).length, 2);
+  assert.match(post, /choisir thumbnail\.png comme couverture/i);
+  assert.match(post, /16:9/);
+  assert.ok(post.includes("Image satellite : NASA"));
+  const copy = JSON.parse(
+    readFileSync(join(f.root, f.output, "public-copy.json"), "utf8")
+  );
+  assert.deepEqual(copy.thumbnail, {
+    text: THUMBNAIL_TEXT,
+    credit: "Image satellite : NASA",
+  });
+  assert.doesNotThrow(() => inspectPackage(f.root, f.output, networks));
+});
+
+// @req REQ-186
+test("a retouched thumbnail fails verification, in the revision or at its source", (t) => {
+  const f = videoPackageFixture(t);
+  f.config.thumbnail = {
+    file: drawThumbnail(f, "piece/vignette.png"),
+    text: THUMBNAIL_TEXT,
+  };
+  f.save();
+  createPackage(f.root, f.configPath, f.output, both);
+  appendFileSync(join(f.root, f.output, "thumbnail.png"), "x");
+  assert.throws(() => inspectPackage(f.root, f.output, both), /changed/i);
+  const other = videoPackageFixture(t);
+  other.config.thumbnail = {
+    file: drawThumbnail(other, "piece/vignette.png"),
+    text: THUMBNAIL_TEXT,
+  };
+  other.save();
+  createPackage(other.root, other.configPath, other.output, both);
+  drawThumbnail(other, "piece/vignette.png", "540x960");
+  assert.throws(
+    () => inspectPackage(other.root, other.output, both),
+    /changed/i
+  );
+});
+
+// @req REQ-186
+test("a thumbnail must be a PNG or JPEG of the video's shape, inside the piece folder", (t) => {
+  for (const [prepare, pattern] of [
+    [() => "piece/missing.png", /ENOENT|no such file/i],
+    [(f) => drawThumbnail(f, "elsewhere/vignette.png"), /piece folder/i],
+    [(f) => drawThumbnail(f, "piece/wide.png", "1920x1080"), /shape/i],
+    [
+      (f) => {
+        writeFileSync(join(f.root, "piece/fake.png"), "not an image");
+        return "piece/fake.png";
+      },
+      /PNG or JPEG/,
+    ],
+  ]) {
+    const f = videoPackageFixture(t);
+    f.config.thumbnail = { file: prepare(f), text: THUMBNAIL_TEXT };
+    f.save();
+    assert.throws(
+      () => createPackage(f.root, f.configPath, f.output, both),
+      pattern
+    );
+    assert.equal(existsSync(join(f.root, f.output)), false);
+  }
+});
+
+// @req REQ-186
+test("a JPEG thumbnail keeps its format, and a thumbnail needs its printed words", (t) => {
+  const f = videoPackageFixture(t);
+  f.config.thumbnail = {
+    file: drawThumbnail(f, "piece/vignette.jpg", "2160x3840"),
+    text: THUMBNAIL_TEXT,
+  };
+  f.save();
+  const r = createPackage(f.root, f.configPath, f.output, both);
+  assert.deepEqual(
+    r.media.map((m) => m.file),
+    ["video.mp4", "thumbnail.jpg"]
+  );
+  for (const words of [undefined, [], [""]]) {
+    f.config.thumbnail.text = words;
+    f.save();
+    assert.throws(
+      () => createPackage(f.root, f.configPath, "piece/words", both),
+      /thumbnail text/i
+    );
+  }
+});
+
+// @req REQ-186
+test("a piece delivers either a frame cover or a composed thumbnail, not both", (t) => {
+  const f = videoPackageFixture(t);
+  f.config.cover = { frame: 30 };
+  f.config.thumbnail = {
+    file: drawThumbnail(f, "piece/vignette.png"),
+    text: THUMBNAIL_TEXT,
+  };
+  f.save();
+  assert.throws(
+    () => createPackage(f.root, f.configPath, f.output, both),
+    /either/i
+  );
+});
+
+// @req REQ-186
+test("a carousel takes no thumbnail", (t) => {
+  const f = packageFixture(t);
+  f.config.thumbnail = { file: "piece/cards.json", text: THUMBNAIL_TEXT };
+  f.save();
+  assert.throws(
+    () => createPackage(f.root, f.configPath, f.output, both),
+    /video/i
+  );
+});
+
+const STORY = `${LINGALA}?utm_source=instagram&utm_medium=story&utm_campaign=langue-07`;
+// The Lingala carousel with its Instagram story, on an account whose story
+// link route was verified.
+function storyPiece(t, story) {
+  const f = lingalaPiece(
+    t,
+    `${LINGALA}?utm_source=facebook&utm_medium=social&utm_campaign=langue-07&utm_content=carrousel`
+  );
+  const instagram = f.config.networks[0];
+  instagram.capability.linkPlacements = ["none", "story"];
+  instagram.story = story;
+  f.save();
+  return f;
+}
+
+// @req REQ-186
+test("an Instagram story carries the episode's tagged link and its question in post.md and public-copy.json", (t) => {
+  const question = "Connaissiez-vous ce nom ?";
+  const f = storyPiece(t, { linkSticker: STORY, questionSticker: question });
+  createPackage(f.root, f.configPath, f.output, both);
+  const post = readFileSync(join(f.root, f.output, "post.md"), "utf8");
+  const instagram = post.slice(
+    post.indexOf("## instagram"),
+    post.indexOf("## facebook")
+  );
+  assert.match(instagram, /### Story/);
+  assert.ok(instagram.includes(STORY));
+  assert.ok(instagram.includes(question));
+  assert.ok(!post.slice(post.indexOf("## facebook")).includes("### Story"));
+  const copy = JSON.parse(
+    readFileSync(join(f.root, f.output, "public-copy.json"), "utf8")
+  );
+  assert.deepEqual(copy.networks[0].story, { question });
+  assert.equal(copy.networks[1].story, undefined);
+  assert.doesNotThrow(() => inspectPackage(f.root, f.output, both));
+});
+
+// @req REQ-186
+test("a story without a question only carries its link", (t) => {
+  const f = storyPiece(t, { linkSticker: STORY });
+  createPackage(f.root, f.configPath, f.output, both);
+  const post = readFileSync(join(f.root, f.output, "post.md"), "utf8");
+  assert.match(post, /Autocollant question : aucun/i);
+  const copy = JSON.parse(
+    readFileSync(join(f.root, f.output, "public-copy.json"), "utf8")
+  );
+  assert.equal(copy.networks[0].story, undefined);
+});
+
+// @req REQ-186
+test("a story link tagged for another medium, campaign or network, or with utm_content, is refused", (t) => {
+  for (const url of [
+    LINGALA,
+    STORY.replace("utm_medium=story", "utm_medium=social"),
+    STORY.replace("langue-07", "langue-08"),
+    STORY.replace("utm_source=instagram", "utm_source=facebook"),
+    `${STORY}&utm_content=story`,
+    "http://ethniafrica.com/fr/atlas/recherche/lingala",
+  ]) {
+    const f = storyPiece(t, { linkSticker: url });
+    assert.throws(
+      () => createPackage(f.root, f.configPath, f.output, both),
+      (error) => error.message.includes(STORY) || /HTTPS/.test(error.message),
+      url
+    );
+    assert.equal(existsSync(join(f.root, f.output)), false);
+  }
+});
+
+// @req REQ-186
+test("a story needs Instagram, a verified story route and a nonempty question", (t) => {
+  const elsewhere = storyPiece(t, undefined);
+  elsewhere.config.networks[1].story = { linkSticker: STORY };
+  elsewhere.save();
+  assert.throws(
+    () =>
+      createPackage(
+        elsewhere.root,
+        elsewhere.configPath,
+        elsewhere.output,
+        both
+      ),
+    /Instagram/
+  );
+  const unverified = storyPiece(t, { linkSticker: STORY });
+  unverified.config.networks[0].capability.linkPlacements = ["none"];
+  unverified.save();
+  assert.throws(
+    () =>
+      createPackage(
+        unverified.root,
+        unverified.configPath,
+        unverified.output,
+        both
+      ),
+    /story route/i
+  );
+  const blank = storyPiece(t, { linkSticker: STORY, questionSticker: " " });
+  assert.throws(
+    () => createPackage(blank.root, blank.configPath, blank.output, both),
+    /question/i
   );
 });

@@ -3,6 +3,7 @@
 // @req REQ-131
 import { describe, it, expect, beforeEach, afterEach } from "vitest";
 import { mkdirSync, writeFileSync, rmSync } from "fs";
+import { tmpdir } from "os";
 import { join } from "path";
 import {
   AFRICAN_REFERENCE_COUNTRY_CODES,
@@ -41,7 +42,7 @@ describe("FR28 demographics band (DEC-055: warns, never fails)", () => {
 
   beforeEach(() => {
     tmpDir = join(
-      __dirname,
+      tmpdir(),
       `tmp_summary_${Date.now()}_${Math.random().toString(36).slice(2)}`
     );
     mkdirSync(tmpDir, { recursive: true });
@@ -133,7 +134,7 @@ describe("FR28/FR28-strict scope to the 54-country African reference set (REQ-13
 
   beforeEach(() => {
     tmpDir = join(
-      __dirname,
+      tmpdir(),
       `tmp_scope_${Date.now()}_${Math.random().toString(36).slice(2)}`
     );
     mkdirSync(tmpDir, { recursive: true });
