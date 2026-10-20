@@ -76,7 +76,7 @@ const fr = {
   chapterBar: {
     aria: "Chapitres de la page",
     summary: "Sommaire",
-    toggle: (title: string) => `Sommaire de la page — ${title}`,
+    toggle: (title: string) => `${title} — Sommaire de la page`,
     report: "Signaler",
   },
 };

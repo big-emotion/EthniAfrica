@@ -238,6 +238,9 @@ describe("FicheChapterBar", () => {
 
     const toggle = screen.getByTestId("fiche-chapter-bar-toggle");
     expect(toggle).toHaveAttribute("aria-expanded", "false");
+    expect(toggle.getAttribute("aria-label")).toMatch(
+      /^Le nom porté — Sommaire de la page$/
+    );
     expect(toggle.getAttribute("aria-controls")).toBe(
       screen.getByTestId("fiche-chapter-bar-summary").id
     );

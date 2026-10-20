@@ -96,15 +96,19 @@ describe("SourceReviewChip", () => {
   });
 
   describe("aria-label", () => {
-    it("matches the exact French template using a long French date", () => {
+    // @req REQ-019
+    it("starts with the visible pill text before the longer French label", () => {
       render(
         <SourceReviewChip sourceCount={4} lastHumanAuditAt="2025-09-21" />
       );
 
       const button = screen.getByRole("button");
-      expect(button).toHaveAttribute(
-        "aria-label",
-        "consulter les sources de cette information (4 références, dernière relecture le 21 septembre 2025)"
+      const visibleLabel = screen.getByText(/4 références · revu 2025-09-21/);
+      expect(button.getAttribute("aria-label")).toMatch(
+        new RegExp(`^${visibleLabel.textContent}`)
+      );
+      expect(button.getAttribute("aria-label")).toContain(
+        "consulter les sources de cette information"
       );
     });
 

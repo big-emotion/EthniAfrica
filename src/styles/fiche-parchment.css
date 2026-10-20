@@ -912,7 +912,7 @@
 
 .afh-chronology-legend > [data-regime="polity"],
 .afh-chronology > [data-regime="polity"] {
-  --afh-regime-ink: var(--afh-gold);
+  --afh-regime-ink: var(--afh-chronology-polity-ink);
 }
 
 .afh-chronology-legend > [data-regime="colonial"],
@@ -922,7 +922,7 @@
 
 .afh-chronology-legend > [data-regime="modern"],
 .afh-chronology > [data-regime="modern"] {
-  --afh-regime-ink: var(--afh-conf-high);
+  --afh-regime-ink: var(--afh-chronology-modern-ink);
 }
 
 .afh-chronology {
