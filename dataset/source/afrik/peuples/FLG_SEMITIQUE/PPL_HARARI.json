@@ -7,18 +7,20 @@
   "content": {
     "appellations": {
       "mainName": "Harari",
-      "selfAppellation": "ጌ፞ይ ኡሱኣች (Gey Usuach) — les Gens de la Ville",
+      "selfAppellation": "ጌ፞ይ ኡሱኣች",
       "exonyms": [
-        "Adare / Adere (terme utilise par les Oromo, Somali, Argobba et Amhara voisins)",
+        "Adare",
+        "Adere",
         "Adarinya (nom de la langue en usage externe)"
       ],
       "originOfExonyms": "Les Harari se nomment Gey Usuach, les Gens de la Ville. Ils appellent leur ville Gey, la Ville, et leur mode de vie ge'ada, les règles de conduite de la ville. Leurs voisins oromo, somali et argobba emploient Adare ou Adere. Les locuteurs nomment leur langue Gey Sinan ou Gey Ritma, Langue de la Ville. Les sources extérieures l'appellent Adarinya ou Aderinya.",
       "whyProblematic": "Les Harari sont aujourd'hui minoritaires dans leur propre region : la Harari People's National Regional State est dominee demographiquement par les Amhara et les Oromo installes dans la ville nouvelle de Harar. L'identite harari est definie de facon endogame et exclusive — le mariage avec des non-Harari est fortement deconseille, ce qui a maintenu une identite distincte mais reduit le nombre de membres. Les Harari ont historiquement limite l'acces a leur langue (Gey Sinan) aux membres de la communaute.",
-      "contemporaryUsage": "Le terme Harari est utilise en amharique, en anglais et dans la litterature academique. Les membres de la communaute se designent comme Gey Usuach. La Region Harari est la plus petite des regions federales ethiopiennes. Sous l'administration de Meles Zenawi, les Harari ont retrouve le controle de leur region et beneficient de droits speciaux.",
+      "contemporaryUsage": "Le terme Harari est utilise en amharique, en anglais et dans la litterature academique. Les membres de la communaute se designent comme Gey Usuach. La Region Harari est la plus petite des regions federales ethiopiennes. Sous l'administration de Meles Zenawi, les Harari ont retrouve le controle de leur region et beneficient de droits speciaux. Gey Usuach est la transcription latine du nom ; il signifie « les gens de la ville ».",
       "linguisticFamily": "FLG_SEMITIQUE",
       "ethnoLinguisticGroup": "Semitique ethiopien oriental (Ethio-semitique du Sud, groupe oriental avec le Silte et le Zay)",
       "historicalRegion": "Ville historique fortifiee de Harar (Gey) — hauts plateaux de l'est ethiopien (Hararghe)",
-      "currentCountries": ["ETH"]
+      "currentCountries": ["ETH"],
+      "spellingAliases": ["Gey Usuach"]
     },
     "ethnicities": [
       "Harari de l'interieur de la cite (Harar Jugol) — population historique vivant dans les murs de la cite fortifiee, detenteurs des maisons traditionnelles (ge dar) et des traditions artisanales",

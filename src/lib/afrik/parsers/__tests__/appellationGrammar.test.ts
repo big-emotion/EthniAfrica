@@ -1,6 +1,9 @@
 import { describe, expect, it } from "vitest";
 
-import { deriveAppellations } from "../appellationGrammar";
+import {
+  deriveAppellations,
+  isSingleNameAppellation,
+} from "../appellationGrammar";
 
 describe("deriveAppellations", () => {
   // @req REQ-057
@@ -170,5 +173,114 @@ describe("deriveAppellations — separators inside a parenthesis", () => {
       "Bilé",
       "Maasai",
     ]);
+  });
+});
+
+describe("isSingleNameAppellation", () => {
+  // @req REQ-178
+  it.each(["Wolof / Ouolof", "Wolof, Peul", "Wolof; Peul"])(
+    "rejects packed appellations: %s",
+    (value) => {
+      expect(isSingleNameAppellation(value)).toBe(false);
+    }
+  );
+
+  // @req REQ-178
+  it.each([
+    "Wolof: Peul",
+    "« Wolof »",
+    "Wolof 123",
+    "Wolof = Peul",
+    "Wolof ou Peul",
+    "Wolof or Peul",
+    "Wolof and Peul",
+  ])("rejects packed separators and connector markers: %s", (value) => {
+    expect(isSingleNameAppellation(value)).toBe(false);
+  });
+
+  // @req REQ-178
+  it.each(["Gullah/Geechee", "Hai//om", "=|Hoa", "Nǀuu", "ǃXoon"])(
+    "keeps a slash or click character inside one name: %s",
+    (value) => {
+      expect(isSingleNameAppellation(value)).toBe(true);
+    }
+  );
+
+  // @req REQ-178
+  it("keeps a name-internal slash as part of the appellation", () => {
+    expect(
+      deriveAppellations({
+        selfAppellation: "Gullah/Geechee",
+        exonyms: [],
+      }).entries.map((entry) => entry.nameText)
+    ).toEqual(["Gullah/Geechee"]);
+  });
+
+  // @req REQ-178
+  it.each([
+    "Un peuple de la région",
+    "Nom composé avec trop de mots ici",
+    "Diverses appellations selon les groupes",
+  ])("rejects prose, long phrases, and qualifier markers: %s", (value) => {
+    expect(isSingleNameAppellation(value, { allowTrailingGloss: true })).toBe(
+      false
+    );
+  });
+
+  // @req REQ-178
+  it("allows one trailing non-name gloss only when the field permits it", () => {
+    expect(
+      isSingleNameAppellation("Ndyuka tongo (nom courant de la langue)", {
+        allowTrailingGloss: true,
+      })
+    ).toBe(true);
+    expect(
+      isSingleNameAppellation("Ndyuka tongo (nom courant de la langue)")
+    ).toBe(false);
+    expect(
+      isSingleNameAppellation("Wolof (note) (autre note)", {
+        allowTrailingGloss: true,
+      })
+    ).toBe(false);
+    expect(
+      isSingleNameAppellation("Dalianke (Guinee)", {
+        allowTrailingGloss: true,
+      })
+    ).toBe(true);
+    expect(
+      isSingleNameAppellation("Wamakonde (pluriel swahili)", {
+        allowTrailingGloss: true,
+      })
+    ).toBe(true);
+    expect(
+      isSingleNameAppellation(
+        "Vezo (terme signifiant ceux qui rament ou ceux qui luttent contre la mer)",
+        { allowTrailingGloss: true }
+      )
+    ).toBe(true);
+    expect(
+      isSingleNameAppellation("Koyraboro Senni (orthographe SIL/Ethnologue)", {
+        allowTrailingGloss: true,
+      })
+    ).toBe(true);
+  });
+
+  // @req REQ-178
+  it.each(["Wolof (pluriel)", "Wolof [note]", "Wolof (note)"])(
+    "rejects brackets in self-appellations: %s",
+    (value) => {
+      expect(isSingleNameAppellation(value)).toBe(false);
+    }
+  );
+
+  // @req REQ-178
+  it("rejects qualifier markers when they are not isolated as an allowed gloss", () => {
+    expect(isSingleNameAppellation("Wolof pluriel")).toBe(false);
+    expect(
+      isSingleNameAppellation("Wolof (pluriel)", { allowTrailingGloss: true })
+    ).toBe(false);
+    expect(
+      isSingleNameAppellation("Dei (ou Dey)", { allowTrailingGloss: true })
+    ).toBe(false);
   });
 });

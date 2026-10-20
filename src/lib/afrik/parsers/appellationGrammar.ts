@@ -38,6 +38,8 @@ const DESCRIPTION_MARKERS = [
   "employé",
   "terme",
   "sous-groupe",
+  "pluriel",
+  "singulier",
 ];
 
 /**
@@ -123,7 +125,13 @@ function splitOutsideParens(value: string, separator: string): string[] {
       // Floored rather than allowed to go negative: a stray closing
       // parenthesis must not make every later separator look nested.
       depth = Math.max(0, depth - 1);
-    } else if (character === separator && depth === 0) {
+    } else if (
+      character === separator &&
+      depth === 0 &&
+      (separator !== "/" ||
+        /\s/.test(value[index - 1] ?? "") ||
+        /\s/.test(value[index + 1] ?? ""))
+    ) {
       segments.push(value.slice(start, index));
       start = index + 1;
     }
@@ -180,22 +188,61 @@ function peelGloss(segment: string): { head: string; gloss: string | null } {
 }
 
 function readsAsName(candidate: string): boolean {
-  if (!candidate) {
-    return false;
+  return isSingleNameAppellation(candidate);
+}
+
+/**
+ * Checks whether a field contains one name atom. Exonyms and spelling aliases
+ * may opt into one trailing parenthetical gloss; delimiters and explanatory
+ * prose are never interpreted as multiple names.
+ */
+// @req REQ-178
+export function isSingleNameAppellation(
+  value: unknown,
+  options: { allowTrailingGloss?: boolean } = {}
+): value is string {
+  if (typeof value !== "string") return false;
+
+  let candidate = value.trim();
+  if (!candidate) return false;
+
+  if (options.allowTrailingGloss) {
+    const gloss = candidate.match(/^(.*?)\s+\(([^()]*)\)$/);
+    if (gloss && gloss[1].trim() && isNonNameGloss(gloss[2])) {
+      candidate = gloss[1].trim();
+    }
   }
 
-  // A parenthesis that survived `peelGloss` means the source left one
-  // unclosed. The segment is prose the grammar failed to read, not a name,
-  // and publishing it is how "Abaha (endonyme" reached the atlas.
-  if (candidate.includes("(") || candidate.includes(")")) {
-    return false;
-  }
+  // Any bracket left after the optional gloss peel is part of the name field.
+  if (/[()[\]{}]/.test(candidate)) return false;
+  if (/[:,;«»\d]/u.test(candidate)) return false;
+  if (/\s=\s/.test(candidate)) return false;
+  // A slash can belong to a spelling (`Gullah/Geechee`), while whitespace
+  // around it marks two packed appellations (`Wolof / Peul`).
+  if (/\s\/|\/\s/.test(candidate)) return false;
+  if (/\s+(?:ou|or|and|et)\s+/iu.test(candidate)) return false;
 
   const words = candidate.split(/\s+/).filter(Boolean);
-  if (words.length > MAX_NAME_WORDS) {
-    return false;
-  }
+  if (words.length > MAX_NAME_WORDS) return false;
 
   const folded = candidate.toLocaleLowerCase("fr");
   return !DESCRIPTION_MARKERS.some((marker) => folded.includes(marker));
+}
+
+function isNonNameGloss(value: string): boolean {
+  const folded = value.trim().toLocaleLowerCase("fr");
+  if (!folded || /^(?:ou|or|and|et|alias)\b/.test(folded)) return false;
+  if (/^(?:pluriel|singulier)$/.test(folded)) return false;
+
+  // Delimiters are meaningful inside a short gloss only when they join
+  // names. Longer explanatory notes commonly contain commas, slashes and
+  // conjunctions, so they are kept as a gloss rather than split or refused.
+  const descriptiveText =
+    /\b(?:appellation|désignation|denomination|dénomination|graphie|orthographe|nom|terme|traduction|utilisé|utilisée|utilise|variante|forme|mot|selon|référence|reference|langue|dialecte|historique|ancien|ancienne|pluriel|singulier|français|swahili)\b/.test(
+      folded
+    ) || folded.split(/\s+/).length >= 3;
+  if (!descriptiveText && /[\/;,]|\b(?:ou|or|and|et)\b/.test(folded)) {
+    return false;
+  }
+  return true;
 }

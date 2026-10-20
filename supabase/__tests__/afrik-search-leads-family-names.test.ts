@@ -81,8 +81,8 @@ function familyNameBranch(): string {
 
 describe("near-miss leads, as the latest migration re-issues them", () => {
   // @req REQ-125
-  it("is migration 113 or a later one, so the prefix cap correction is never dropped", () => {
-    expect(Number.parseInt(latest.slice(0, 3), 10)).toBeGreaterThanOrEqual(113);
+  it("is migration 114 or a later one, so alias leads and the four-word rule are retained", () => {
+    expect(Number.parseInt(latest.slice(0, 3), 10)).toBeGreaterThanOrEqual(114);
   });
 
   // @req REQ-125
@@ -186,6 +186,10 @@ describe("near-miss leads, as the latest migration re-issues them", () => {
     expect(people).toContain("p.name_main AS value");
     expect(people).toContain("'{appellations,selfAppellation}'");
     expect(people).toContain("'{appellations,exonyms}'");
+    expect(people).toContain("'{appellations,spellingAliases}'");
+    expect(people).toMatch(
+      /jsonb_typeof\(p\.content #> '\{appellations,spellingAliases\}'\) = 'array'/
+    );
     expect(people).toContain(
       `regexp_split_to_table(field.value, ${literal(NAME_PIECE_SEPARATOR)})`
     );
@@ -234,7 +238,7 @@ describe("near-miss leads, as the latest migration re-issues them", () => {
     expect(comment).toMatch(
       /class prefix of up to eight lower-case letters before a capital/
     );
-    expect(comment).toMatch(/Migration 113, which supersedes migration 111/);
+    expect(comment).toMatch(/Migration 114, which supersedes migration 113/);
     expect(comment).not.toMatch(/Besides its filed name/);
   });
 

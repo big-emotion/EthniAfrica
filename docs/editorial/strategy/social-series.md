@@ -53,6 +53,85 @@ others exist, attributed, never ranked by origin (`docs/productions/README.md`,
 researched before it is scripted (for example `PAT_KOFI`, `PAT_KWAME` and
 `PAT_KONE` on 2026-10-13).
 
+## Opening, closing and length of every video
+
+Decided by the operator on 2026-10-19, on the Burkina Faso episode (series 1,
+episode 19). It applies to every video script from that date.
+
+- **Opening, spoken first:** « Aujourd'hui, nous allons parler de l'origine du
+  nom [nom]. » followed at once by the recurring introduction « Avec
+  EthniAfrica, on part des noms qu'on emploie en français pour mieux comprendre
+  l'Afrique et ses peuples. » The next sentence states the episode's concrete
+  fact or question and leads straight into the first explanation. Keep the
+  introduction to that one sentence; the series title may appear on screen.
+  In the video the opening sentence is said over the opener card and the
+  introduction over the intro bumper, its own beat right after it; the
+  closing is said over the end card (`social/series-idents/`, operator's
+  decision of 19 October 2026).
+- **Why the introduction says « en français »:** the starting point is the
+  name used in French. It does not mean the name comes from French, always
+  differs from local names, or is colonial. Each case is explained from its
+  sources, pejorative, racialising or political uses included.
+- **Closing, spoken last:** « L'importance de connaître nos noms. Vous pouvez
+  continuer la recherche sur EthniAfrica, lien en profil. » It replaces, at the
+  end of the video, both the signature line and the search sentence
+  « Cherchez [nom] sur EthniAfrica, lien en profil. ». The signed « nous
+  pensons » paragraph still comes just before it. The same closing ends every
+  carousel and every caption, and « L'importance de connaître nos noms. »
+  replaces the signature line in every account's bio. How the closing cards
+  and the video ending print it is a design-system rule (Cartes 1.10.0,
+  accepted on 2026-10-19). The carousel renderer and the series video engine
+  draw it since PR #1894: the closing card's chunks are the four printed
+  lines, and a closing card no longer prints a sentence of its own. The
+  satellite map videos and the clipped reels end the same way since the
+  operator's decision of 2026-10-19: they print the same closing line and
+  invitation, each in its own ending's sizes and place.
+- **Long first, refined after:** the script tells the whole story the sources
+  support, as a long video with chapters, then is reduced with the operator
+  round by round. For a country name in series 1 the thread runs: the words of
+  the name · the peoples behind each word and how they came to the region ·
+  what existed before the colony · how the colony drew the frame · how the
+  present name was chosen · a short summary of the name's origin · the reframe
+  · the « nous pensons » paragraph · the closing. Unity, the operator's
+  conviction, belongs to the « nous pensons » paragraph and stays distinct
+  from the historical findings.
+- **Length follows the story, the same on every network** (operator,
+  2026-10-19): the Burkina Faso episode went out at 4 min 15 on TikTok,
+  Instagram, Facebook and YouTube. A video over 3 minutes is a regular video on
+  YouTube, not a Short; Instagram does not recommend reels over 3 minutes to new
+  audiences; TikTok's upload length is checked in the app before posting.
+- **The animated satellite map carries the video** (operator, 2026-10-19;
+  Cartes 1.11.0): whenever the narration situates something, the screen is a
+  map, opened by the satellite globe; it must be understood without sound.
+  Scripts are written in map phases and picture phases; a picture is a phase
+  of whole sentences (6 s at least), never a short insert between two maps, and
+  carries a fact the map cannot show.
+
+## What changed on 19 October 2026
+
+The Burkina Faso episode (series 1, episode 19) replaced a 87-second card video
+with a long episode and changed the production process. The full path is the
+skill's [long-episode recipe](../../../.claude/skills/ethniafrica-social-production/references/long-episode-recipe.md).
+
+**New moments in the process**, each before the step it protects:
+
+1. **An animatic artifact** of the whole cut, shot by shot, with what the
+   screen shows without sound, before any render.
+2. **A preview at one frame per second** with the real voice, in a few minutes.
+3. **A pre-flight of every package check** before the final render: design
+   label, no demo marker, idents, research dossier and destination, image
+   rights. The episode took four full renders for want of it.
+4. **The composed thumbnail**, delivered with the package.
+5. **One visible handover folder** for the operator after approval 3 (video,
+   thumbnail, one document with every text to paste), moved to the published
+   pieces once posted; then the URLs are recorded in the checkpoint and the
+   production ledger.
+
+**Rules changed:** the opening and closing above; long first and length
+following the story; the map-led video; captions with targeted hashtags; the
+thumbnail; the fiches corrected and released before posting so the profile link
+answers what the video says.
+
 ## Calendar
 
 Approved by the operator on 2026-10-13. The series start on Monday 2026-10-19.
@@ -149,10 +228,26 @@ consented visitors from all networks in the last week, 0 link clicks on the
 biggest posts. The one link that converts is the profile link (105 taps in 30
 days).
 
-- **Every caption ends with the same sentence, no link block, no hashtag wall:**
-  « Cherchez [nom] sur EthniAfrica, lien en profil. »
-- **Every reel and every carousel ends with the project's signature, word for
-  word, and every account's bio carries it** (decided 2026-10-15):
+- **Every caption ends with the same sentence, no link block, no hashtag wall**
+  (since 2026-10-19): « L'importance de connaître nos noms. Vous pouvez
+  continuer la recherche sur EthniAfrica, lien en profil. » It replaces
+  « Cherchez [nom] sur EthniAfrica, lien en profil. ».
+- **A short line of targeted hashtags** (operator, 2026-10-19), on every
+  network, just before that closing sentence so the caption still ends with
+  it: four or five tags about the episode, always ending with `#EthniAfrica`
+  (Burkina Faso: `#BurkinaFaso #Afrique #HistoireAfricaine #Toponymie
+#EthniAfrica`). A few precise tags help a platform file the video for the
+  people who follow those subjects; a wall of them reads as advertising.
+- **Every video ships one composed thumbnail** (operator, 2026-10-19), the same
+  image for every network, 1080 × 1920 with its essentials inside the profile
+  grid's 3:4 crop: the series band, the episode's title, the subject drawn in
+  the series' world (for a country, its outline in its flag's colours on the
+  series' satellite imagery), the imagery credit and the EthniAfrica
+  signature. No personality photographs. The operator publishes it.
+- **Retired on 2026-10-19:** every reel and every carousel ended with the
+  project's signature, word for word, and every account's bio carried it
+  (decided 2026-10-15). The closing in « Opening, closing and length of every
+  video » replaces it on videos, carousels, captions and bios:
   « Connaître nos noms, décoloniser leur emploi, nous nommer nous-mêmes. »
   It comes after the series' fixed closing line, never in its place, and
   repeats nothing of it. Its meaning, its limits and the four kinds of use

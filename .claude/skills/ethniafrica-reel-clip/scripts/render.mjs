@@ -30,16 +30,20 @@ import {
 } from "./layout.mjs";
 
 const FPS = 30;
-// Cartes 1.6.0 (operator, 16 October 2026): every reel ends on the project's
-// signature line, here on the last picture held in silence, so no caption,
-// box or replaced text can cover it. The line comes from the accepted design
-// (version.json), split after each comma as the cards print it. It holds the
-// time to read it at 21 characters a second plus 0.3 s.
-const { signatureLine: SIGNATURE_LINE } = JSON.parse(
+// Every reel ends as the series video does (Cartes 1.10.0; operator, 19
+// October 2026): the closing line and the invitation, on the last picture
+// held in silence, so no caption, box or replaced text can cover them. The
+// four printed lines come from the accepted design (version.json); the reel
+// keeps no copy. They stay in the 1.6.0 line's face, size and centre (y
+// 1305), one row more: no reel design gives the invitation a style of its
+// own. The ending holds the time to read it at 21 characters a second plus
+// 0.3 s.
+const { signatureLines, invitationLines } = JSON.parse(
   await readFile(resolve("social/design-system/version.json"), "utf8")
 );
+export const ENDING_LINES = [...signatureLines, ...invitationLines];
 const ENDING_SECONDS =
-  Math.ceil(([...SIGNATURE_LINE].length / 21 + 0.3) * 10) / 10;
+  Math.ceil(([...ENDING_LINES.join(" ")].length / 21 + 0.3) * 10) / 10;
 const brandFonts = resolve("social/brand/fonts");
 const logo = resolve("social/design-system/assets/Logo/ethniafrica-logo.png");
 const FONTS = {
@@ -126,12 +130,12 @@ ${styles(layout, rect)}
 </style></head><body><div class="layer" id="layer"></div></body></html>`;
 
 // The motto « L'Afrique à travers ses noms » left the signature with 1.6.0:
-// the signature line now speaks for the project, once, at the end.
+// the ending's closing line speaks for the project, once, at the end.
 const signature = `<div class="signature"><img src="/logo.png" alt=""><div>
 <b>EthniAfrica</b></div></div>`;
-const endingHtml = `<div class="ending">${SIGNATURE_LINE.split(/(?<=,) /u)
-  .map((line) => `<span>${escape(line)}</span>`)
-  .join("")}</div>`;
+const endingHtml = `<div class="ending">${ENDING_LINES.map(
+  (line) => `<span>${escape(line)}</span>`
+).join("")}</div>`;
 
 const captionHtml = (text) =>
   `<div class="caption"><span>${escape(text)}</span></div>`;

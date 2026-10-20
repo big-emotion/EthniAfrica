@@ -26,6 +26,7 @@ import { installPackageFixture } from "./package.fixture.mjs";
 import { installVideoPackageFixture } from "./package-video.fixture.mjs";
 import { archivePiece } from "./history.mjs";
 import { commitCorpus } from "./corpus.fixture.mjs";
+import { rereviewRecords } from "./research.mjs";
 
 function fixture(t) {
   const root = mkdtempSync(join(tmpdir(), "social-workflow-"));
@@ -776,7 +777,7 @@ function correctedPiece(t, destination) {
     .replace('"source": {}', '"source": { "page": "p. 2" }');
   const integrate = (text = corrected) =>
     writeFileSync(join(f.root, fiche), text);
-  return { ...f, path, dossier, corrected, integrate, record };
+  return { ...f, path, fiche, dossier, corrected, integrate, record };
 }
 
 const approval = (f, gate) => loadPiece(f.root, f.id).approvals[gate]?.status;
@@ -934,4 +935,34 @@ test("a checkpoint saved before the reviewed destination was recorded keeps the 
   assert.equal(approval(f, 2), "approved");
   verifyDestination(f);
   assert.equal(approval(f, 2), "stale");
+});
+
+// @req REQ-186
+test("a re-reviewed fiche reopens the proof, then passes review and approval without corpus edits", (t) => {
+  const f = correctedPiece(t);
+  const changed = f.corrected.replace('"Kept"', '"Changed by another PR"');
+  f.integrate(changed);
+  assert.equal(approval(f, 2), "stale");
+  rereviewRecords(
+    f.root,
+    f.path,
+    [f.fiche],
+    "Correction PR merged with a later edit"
+  );
+  f.event({
+    type: "review",
+    gate: 2,
+    researchFile: f.path,
+    files: [f.file("proof.png")],
+    summary: "Review the re-reviewed fiche",
+  });
+  f.approve(2);
+  const state = loadPiece(f.root, f.id);
+  assert.equal(state.approvals[2].status, "approved");
+  assert.deepEqual(state.research.corrections, []);
+  f.review(3, [f.file("post.md")]);
+  f.approve(3);
+  assert.equal(approval(f, 3), "approved");
+  assert.equal(approval(f, 2), "approved");
+  assert.equal(readFileSync(join(f.root, f.fiche), "utf8"), changed);
 });

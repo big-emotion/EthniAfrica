@@ -57,6 +57,72 @@ test("any other failure is not retried", async () => {
   assert.equal(p.calls.length, 1);
 });
 
+// A stand-in for a page reached through the DevTools protocol, the way a
+// fast capture asks for its frame: answers each CDP request from `replies`.
+function cdpPage(replies) {
+  const calls = [];
+  const sessions = [];
+  return {
+    calls,
+    sessions,
+    viewportSize: () => ({ width: 1080, height: 1920 }),
+    context: () => ({
+      newCDPSession: async (target) => {
+        sessions.push(target);
+        return {
+          send: (method, params) => {
+            calls.push({ method, params });
+            const reply = replies[calls.length - 1];
+            if (reply instanceof Error) return Promise.reject(reply);
+            if (reply === "never") return new Promise(() => {});
+            return Promise.resolve({ data: reply.toString("base64") });
+          },
+        };
+      },
+    }),
+  };
+}
+
+// @req REQ-186
+test("a fast capture asks Chromium for a lossless PNG of the whole frame, encoded for speed", async () => {
+  const p = cdpPage([Buffer.from("png")]);
+  const png = await captureFrame(p, { fast: true });
+  assert.equal(png.toString(), "png");
+  assert.deepEqual(p.calls, [
+    {
+      method: "Page.captureScreenshot",
+      params: {
+        format: "png",
+        optimizeForSpeed: true,
+        clip: { x: 0, y: 0, width: 1080, height: 1920, scale: 1 },
+        captureBeyondViewport: false,
+      },
+    },
+  ]);
+});
+
+// @req REQ-186
+test("a page keeps one DevTools session for all its fast captures", async () => {
+  const p = cdpPage([Buffer.from("a"), Buffer.from("b")]);
+  await captureFrame(p, { fast: true });
+  await captureFrame(p, { fast: true });
+  assert.equal(p.sessions.length, 1);
+});
+
+// @req REQ-186
+test("a dropped fast capture is requested again, three times at most", async () => {
+  const again = cdpPage(["never", Buffer.from("png")]);
+  const png = await captureFrame(again, { fast: true, timeout: 20 });
+  assert.equal(png.toString(), "png");
+  assert.equal(again.calls.length, 2);
+  const lost = cdpPage(["never", "never", "never", Buffer.from("never")]);
+  await assert.rejects(
+    captureFrame(lost, { fast: true, timeout: 20 }),
+    /Timeout/
+  );
+  assert.equal(lost.calls.length, 3);
+});
+
 // @req REQ-186
 test("a frame refused during an export leaves no video behind", async () => {
   const dir = mkdtempSync(join(tmpdir(), "encode-"));

@@ -56,8 +56,10 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * people fiches withdrawn after wave 24 (two of « Africains d'origine
  * récente », two of « Peuples forestiers du Sud et de l'Est »); the one
  * carried to the Cabo Verde fiche is cited at the referenced tier.
+ * 874 -> 873 on 2026-10-19: the Burkina Faso fiche's Ethnologue country
+ * page now carries its address and the catalogue's official tier.
  */
-export const NEEDS_REVIEW_RATCHET = 874;
+export const NEEDS_REVIEW_RATCHET = 873;
 
 /** The doctrine's three tiers, plus the numeric tiers the name/relation/migration fiches still carry. */
 const TIERS_WITH_AUTHORITY = new Set<unknown>([

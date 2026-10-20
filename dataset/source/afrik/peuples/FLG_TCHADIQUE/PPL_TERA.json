@@ -7,15 +7,16 @@
   "content": {
     "appellations": {
       "mainName": "Tera",
-      "selfAppellation": "Nyimatli (ou Nymalti)",
+      "selfAppellation": "Nyimatli",
       "exonyms": ["Tera", "Terawa (pluriel en haoussa)", "Nyimatli"],
       "originOfExonyms": "Les voisins et l'administration coloniale britannique emploient Tera. Les personnes concernées se nomment Nyimatli, aussi écrit Nymalti, un nom qui désigne le peuple et sa langue. Tera reste courant dans les études sur ce peuple et les documents administratifs.",
       "whyProblematic": "La classification du tera comme unique langue ou comme ensemble dialectal est debattue. Roger Blench (2006) considere le dialecte Pidlimdi (Hinna) comme une langue distincte. Le terme Terawa, forme plurielle en haoussa, est parfois utilise pour designer le groupe.",
-      "contemporaryUsage": "Le terme Tera est utilise en anglais et dans la litterature scientifique. Les locuteurs utilisent Nyimatli pour se designer eux-memes. La langue est enseignee sous le nom de Tera dans les programmes de developpement de la langue maternelle.",
+      "contemporaryUsage": "Le terme Tera est utilise en anglais et dans la litterature scientifique. Les locuteurs utilisent Nyimatli pour se designer eux-memes. La langue est enseignee sous le nom de Tera dans les programmes de developpement de la langue maternelle. Nymalti est une autre graphie de Nyimatli.",
       "linguisticFamily": "FLG_TCHADIQUE",
       "ethnoLinguisticGroup": "Tchadique biu-mandara (branche occidentale de la famille afro-asiatique tchadique)",
       "historicalRegion": "Gombe et Borno, nord-est du Nigeria (basin de la riviere Gongola, terre de Tera)",
-      "currentCountries": ["NGA"]
+      "currentCountries": ["NGA"],
+      "spellingAliases": ["Nymalti"]
     },
     "ethnicities": [
       "Nyimatli (groupe principal du nord de l'Etat de Gombe : Yamaltu/Deba, Funakaye, Akko)",

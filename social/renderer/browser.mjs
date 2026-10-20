@@ -77,8 +77,11 @@ export function inspectCard() {
     spec.map && window.EthniCards?.altText
       ? window.EthniCards.altText({ map: spec.map, timeline: spec.timeline })
       : "";
+  // 1.10.0: the closing line and the fixed invitation are read once, at the
+  // end, as the design system's altText reads them.
   const blocks = [...panel.children].filter(
-    (node) => !node.matches(".ec-source,.ec-credit,.ec-sign,.ec-sigline")
+    (node) =>
+      !node.matches(".ec-source,.ec-credit,.ec-sign,.ec-sigline,.ec-invite")
   );
   const reading = blocks.map((node) => {
     const copy = node.cloneNode(true);
@@ -90,21 +93,54 @@ export function inspectCard() {
   // system's wording (« D'où vient le nom de mon pays ?, n° 1 »).
   const series = spec.series ? window.EthniCards.seriesOf(spec) : null;
   const band = series ? `${series.name}, n° ${series.episode}` : "";
-  // 1.6.0: on a closing card the alternative text ends with the signature
-  // line, word for word, although the card prints it above the invitation.
-  const signature =
-    spec.type === "closing" ? window.EthniCards.signatureLine : "";
+  // 1.10.0: a closing card's alternative text ends with the closing line and
+  // the invitation, word for word, although the card prints them above the
+  // pill.
+  const ending = spec.type === "closing" ? window.EthniCards.closingText : "";
   const alt =
     spec.alt ||
-    [band, spec.imageAlt, mapDescription, ...mapText, ...reading, signature]
+    [band, spec.imageAlt, mapDescription, ...mapText, ...reading, ending]
       .filter(Boolean)
       .join(". ");
+  // 1.10.0: the invitation as printed, one line per span, and the boxes of
+  // the panel's blocks, none of which may overlap another.
+  let closing = null;
+  if (spec.type === "closing") {
+    const invite = panel.querySelector(".ec-invite");
+    const spans = invite ? [...invite.children] : [];
+    const lineHeight = invite
+      ? parseFloat(getComputedStyle(invite).lineHeight)
+      : 0;
+    const boxes = [...panel.children]
+      .filter((n) => n.getClientRects().length && n.textContent.trim())
+      .map((n) => ({ cls: n.className, r: n.getBoundingClientRect() }));
+    const overlaps = [];
+    boxes.forEach((a, i) =>
+      boxes.slice(i + 1).forEach((b) => {
+        if (
+          a.r.bottom > b.r.top + 0.5 &&
+          b.r.bottom > a.r.top + 0.5 &&
+          a.r.right > b.r.left + 0.5 &&
+          b.r.right > a.r.left + 0.5
+        )
+          overlaps.push(a.cls + " / " + b.cls);
+      })
+    );
+    closing = {
+      invitation: spans.map(text),
+      wrapped: spans.filter(
+        (n) => Math.round(n.getBoundingClientRect().height / lineHeight) !== 1
+      ).length,
+      overlaps,
+    };
+  }
   return {
     fit: card._report,
     errors: [...new Set(errors)],
     fonts,
     visibleText: [text(panel), ...mapText].join(" "),
     alt,
+    ...(closing && { closing }),
     demo: Boolean(card.querySelector(".ec-demo")),
   };
 }

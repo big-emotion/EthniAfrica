@@ -7,7 +7,7 @@
   "content": {
     "appellations": {
       "mainName": "Zarma",
-      "selfAppellation": "Zarma (ou Zerma)",
+      "selfAppellation": "Zarma",
       "exonyms": [
         "Djerma",
         "Dyerma",
@@ -22,7 +22,8 @@
       "linguisticFamily": "FLG_SONGHAY",
       "ethnoLinguisticGroup": "Songhay méridional — Zarma, groupe le plus large de la famille songhay",
       "historicalRegion": "Niger occidental : régions de Niamey, Dosso, Tillabéri, Zarmaganda (plateau de Zarma nord) et Dallol Bosso — le long du fleuve Niger au Niger",
-      "currentCountries": ["NER", "NGA", "BEN", "BFA", "GHA"]
+      "currentCountries": ["NER", "NGA", "BEN", "BFA", "GHA"],
+      "spellingAliases": ["Zerma"]
     },
     "ethnicities": [
       "Zarma proprement dits (Niger occidental) — groupe majoritaire autour de Niamey, Dosso et Tillabéri",

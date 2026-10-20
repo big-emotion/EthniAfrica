@@ -4,7 +4,7 @@
 // Vidéo carte 0.4.0's chunks, highlight and voice timing. The same cards as
 // the carousel, on the operator's voice; every value is a function of the
 // frame number, with no clock.
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import {
   FPS,
@@ -17,12 +17,20 @@ import {
   leave,
   IMAGERY,
 } from "./sequence.mjs";
-import { MAP_FRAME, MAP_IMAGERY, checkSeriesMapCard } from "./series-map.mjs";
+import {
+  MAP_FRAME,
+  MAP_IMAGERY,
+  MARKS,
+  checkSeriesMapCard,
+} from "./series-map.mjs";
+import { INTRO, OUTRO } from "../series-idents/shots.mjs";
 import {
   planMapSequences,
   mapRunState,
   runOfCard,
   wordOf,
+  silentCheck,
+  MAP_TIMING,
 } from "./series-sequence.mjs";
 import {
   checkDocumentCard,
@@ -30,6 +38,13 @@ import {
   checkSideBySide,
   weekCharacters,
 } from "./series-document.mjs";
+import {
+  checkTeachingCard,
+  planTeaching,
+  checkParchmentPhases,
+  teachingLayer,
+  isParchment,
+} from "./series-teaching.mjs";
 
 // The full-screen bands in frame pixels (series.md and handoff.md,
 // « Renderer integration of 1.4.0 »). The image fills the frame; only text
@@ -89,16 +104,9 @@ const fail = (message) => {
   throw new Error(message);
 };
 
-export const searchSentence = (name) => [
-  `Cherchez ${name} sur EthniAfrica,`,
-  "lien en profil.",
-];
-// 1.7.0 (series.md, « Vidéo longue et chapitres »): the general invitation
-// names nothing and leads to the search page.
-export const GENERAL_SENTENCE = [
-  "Vous aussi, cherchez votre nom sur EthniAfrica,",
-  "lien en profil.",
-];
+// 1.10.0: the voice's transcript gives ' where the cards print ’, and
+// spaces may be doubled or unbreakable; neither changes what is said.
+const sameWords = (t) => t.replace(/['’]/gu, "’").replace(/\s+/gu, " ").trim();
 // A video over 90 s is long: 3 to 7 chapters of 15 s at least, 2 to 4 min
 // recommended. Lengths only warn; a missing chapter refuses.
 const LONG = {
@@ -111,6 +119,10 @@ const LONG = {
 // chapter card's least full-opacity span, 1.2 s.
 const READ_CPS = 21;
 const CHAPTER_HOLD = 36;
+// The animated chapter card (operator, 20 October 2026): the line and the
+// dots come first, the title enters 1.25 s into the card; the hold counts
+// from there, so the title is still read for as long as before.
+export const CHAPTER_TITLE_IN = 38;
 const REMINDER = [75, 120];
 const SOURCE_LABELS = ["Source", "Sources", "Hypothèses"];
 
@@ -142,6 +154,19 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
   const chapters = input.chapters ?? [];
   const seen = new Set();
   const entries = beats.map((beat, i) => {
+    // The intro bumper (social/series-idents), operator, 19 October 2026:
+    // right after the opener, voiced with the fixed sentence and subtitled.
+    if (beat.type === "intro") {
+      if (i !== 1)
+        fail("L'intro vient juste après la carte d'ouverture, jamais ailleurs");
+      const said = sameWords((beat.chunks ?? []).map((c) => c.text).join(" "));
+      if (said !== sameWords(INTRO.voice))
+        fail(`L'intro n'est pas dite mot pour mot : « ${INTRO.voice} »`);
+      return {
+        card: { id: "generique-intro", type: "intro" },
+        chunks: beat.chunks,
+      };
+    }
     if (beat.type === "chapter") {
       const n = beat.chapter;
       const title =
@@ -149,15 +174,17 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
         fail(`Beat ${i + 1}: chapter ${n} has no title in chapters`);
       if (beat.chunks?.length)
         fail(`Chapter ${n}: a chapter card is not voiced; the voice is silent`);
+      // Operator, 20 October 2026: the chapter card is text on the dark
+      // ground, for every series video.
+      if (beat.image || beat.credit)
+        fail(
+          `Chapitre ${n} : une carte de chapitre ne montre que son texte, sans image (décision opérateur du 20 octobre 2026)`
+        );
       return {
         card: {
           id: `chapitre-${n}`,
           type: "chapter",
           chapter: { n, of: chapters.length, title },
-          // An image of its own brings its own credit: a CC BY-SA picture
-          // shown without its attribution breaks its licence.
-          ...(beat.image && { image: structuredClone(beat.image) }),
-          ...(beat.image && beat.credit && { credit: beat.credit }),
         },
         chunks: [],
       };
@@ -176,12 +203,15 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     if (!input.demo && /(^|\/)a-trouver-[^/]*$/.test(card.image?.src ?? ""))
       fail(`Card ${card.id} still shows « image à trouver »`);
     // A map card is drawn on satellite imagery; an atlas card is refused.
-    if (card.type === "map") checkSeriesMapCard(card);
+    if (card.type === "map" || card.opening !== undefined)
+      checkSeriesMapCard(card);
     checkLongCardFields(card);
     // 1.8.0: the document card and the teaching cards.
     if (card.image?.document) checkDocumentCard(card);
-    if (card.formula) checkFormula(card);
+    if (card.formula && !card.formula.lines) checkFormula(card);
     if (card.sbs) checkSideBySide(card);
+    // 1.12.0: the parchment card and the teaching cards in motion.
+    checkTeachingCard(card);
     return { card: structuredClone(card), chunks: beat.chunks };
   });
   const numbers = entries.flatMap((e) =>
@@ -201,73 +231,74 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     ]);
   const first = entries[0].card;
   if (!first.series) fail("A series video's cards carry the series band");
-  // A silent card (chapter, next episode) shows the band and theme of the
-  // episode, and by default the image of the card after it: a run of one
-  // image, where only the head changes.
-  const silent = (card, next) => {
+  // A silent card (a chapter card) belongs to the episode's series and theme;
+  // it draws its own dark ground, no picture.
+  const silent = (card) => {
     card.series = structuredClone(first.series);
     if (first.theme) card.theme = first.theme;
-    if (!card.image && next.image) {
-      card.image = structuredClone(next.image);
-      if (next.credit) card.credit = next.credit;
-    }
   };
-  entries.forEach((e, i) => {
-    if (e.card.type === "chapter") silent(e.card, entries[i + 1].card);
+  entries.forEach((e) => {
+    if (e.card.type === "chapter") silent(e.card);
+    // The intro draws its own parchment, but belongs to the episode.
+    if (e.card.type === "intro") {
+      e.card.series = structuredClone(first.series);
+      if (first.theme) e.card.theme = first.theme;
+    }
   });
   if (entries.some((e) => key(e.card) !== key(first)))
     fail("A series video shows one series, one episode and one theme");
 
-  // The « série » ending (operator, decision 5 of 13 October 2026): it asks
-  // for a search, so like ending A it promises a page that must exist. Since
-  // 1.7.0 it may instead invite every viewer to search their own name.
-  const ending = input.ending;
-  if (ending?.pageOnline !== true)
-    fail("The « série » ending promises a page: it needs pageOnline: true");
-  const general = ending.general === true;
-  if (!general && (typeof ending.search !== "string" || !ending.search.trim()))
-    fail("The « série » ending names what to search");
-  const expected = general ? GENERAL_SENTENCE : searchSentence(ending.search);
-  const closingChunks = entries.at(-1).chunks;
-  const closing = closingChunks.slice(-2).map((c) => c.text);
-  const spaces = (t) => t.replace(/\s+/gu, " ");
+  // Cartes 1.10.0: the ending is fixed. The voice says the closing line and
+  // the invitation, one chunk per printed line, the same lines the cards'
+  // bundle draws (version.json). Nothing on the ending names a search, so
+  // the input only says the next episode; the 1.7.0 fields load and warn.
+  const ending = input.ending ?? {};
+  const retired = ["search", "general", "pageOnline"].filter((k) =>
+    Object.hasOwn(ending, k)
+  );
+  const printed = [...version.signatureLines, ...version.invitationLines];
+  const said = entries.at(-1).chunks.map((c) => sameWords(c.text));
   if (
-    closing.length !== 2 ||
-    closing.some((t, i) => spaces(t) !== spaces(expected[i]))
-  )
-    fail(`The closing card's last two chunks are « ${expected.join(" ")} »`);
-  // Cartes 1.6.0, decision 1: the voice says the signature line, one printed
-  // line per chunk, before the search sentence. The line is the accepted
-  // design's (version.json), the same text the cards' bundle draws.
-  const signature = version.signatureLine.split(/(?<=,) /u);
-  const said = closingChunks.map((c) => spaces(c.text));
-  if (
-    said.length !== signature.length + 2 ||
-    signature.some((t, i) => said[i] !== t)
+    said.length !== printed.length ||
+    printed.some((t, i) => said[i] !== sameWords(t))
   )
     fail(
-      `La ligne de signature n'est pas dite mot pour mot : la carte de clôture dit « ${signature.join(" ")} », puis la phrase de recherche`
+      `La fin n'est pas dite mot pour mot : « ${printed.join(" / ")} », un morceau par ligne imprimée`
     );
-  // 1.7.0: the next episode, printed under the pill after the named
-  // invitation (one line, measured on « Afrique »); after the general one,
-  // which takes two lines, on a silent card of its own before the ending.
-  if (typeof ending.next === "string" && ending.next.trim()) {
-    const closingCard = entries.at(-1).card;
-    if (general) {
-      const own = { id: "prochain-episode", type: "next", title: ending.next };
-      silent(own, closingCard);
-      entries.splice(-1, 0, { card: own, chunks: [] });
-    } else closingCard.next = ending.next;
+  // « Prochain épisode » always sits under the pill (the 1.7.0 card of its
+  // own is retired).
+  const next =
+    typeof ending.next === "string" && ending.next.trim() ? ending.next : null;
+  if (next) entries.at(-1).card.next = next;
+  // The end card (social/series-idents) in place of the 1.10.0 ending: the
+  // same words, said the same way, over the search of the episode's name.
+  // Its answer comes from a layer file copied from the name's live page.
+  const idents = input.idents ?? {};
+  if (idents.outro) {
+    const layers = String(idents.outro);
+    const file = new URL(
+      `../series-idents/layers/${layers}.json`,
+      import.meta.url
+    );
+    if (!existsSync(file))
+      fail(
+        `La fin n'a pas la réponse de ce nom : layers/${layers}.json manque dans social/series-idents`
+      );
+    const outroNext = idents.next ?? next;
+    entries.at(-1).card.outro = {
+      layers,
+      ...(outroNext && { next: outroNext }),
+    };
   }
   const last = entries.length - 1;
   const cards = entries.map((e) => e.card);
   const texts = entries.flatMap((e) => e.chunks.map((c) => c.text));
   const chunks = entries.flatMap((entry, card) =>
     entry.chunks.map(({ text }) => {
-      // 1.6.0: the ending prints the line and the invitation itself, so the
-      // closing card's chunks are voiced but never shown as subtitles; the
-      // subtitle rules (3 to 6 words, 900 px, reading speed) do not apply
-      // to them. The general invitation's first chunk has 7 words (1.7.0).
+      // The ending prints the line and the invitation itself (1.6.0, 1.10.0),
+      // so the closing card's chunks are voiced but never shown as
+      // subtitles; the subtitle rules (3 to 6 words, 900 px, reading speed)
+      // do not apply to them.
       const hidden = card === last;
       const lines = hidden ? [] : chunkLines(text);
       for (const line of lines) {
@@ -289,19 +320,59 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     logo: deck.logo,
     cards,
     band: { ...first.series },
-    ending: {
-      ...(general ? { general: true } : { search: ending.search }),
-      pageOnline: true,
-      ...(ending.next && { next: ending.next }),
-    },
+    ending: { ...(next && { next }) },
     voice,
     chunks,
+    // 1.11.0: one ink per people for the whole episode.
+    ...(input.inks && { inks: { ...input.inks } }),
+    // The imagery under the map cards; the scale limit reads its width
+    // (decision 1 of 1.11.0: the 500 m mosaic once verified and pinned).
+    mapImagery: input.mapImagery ?? MAP_IMAGERY,
   };
+  if (!IMAGERY[seq.mapImagery]?.width)
+    fail(`No verified imagery « ${seq.mapImagery} » for the map cards`);
   schedule(seq, voice.chunks);
+  if (retired.length)
+    seq.warnings.push(
+      `L'entrée de fin ne prend plus que next : ${retired.join(", ")} ignoré (1.10.0, la fin est fixe)`
+    );
   // 1.5.0: consecutive map cards of one `map.sequence` share one map.
-  seq.mapSequence = planMapSequences(seq, IMAGERY[MAP_IMAGERY]);
+  seq.mapSequence = planMapSequences(seq, IMAGERY[seq.mapImagery]);
+  checkPicturePhases(seq);
+  // 1.11.0: every fact of a map phase has its mark on screen while it is
+  // said. A proof warns; the final export refuses (series-render.mjs).
+  seq.silent = silentCheck(seq);
+  for (const f of seq.silent.filter((f) => !f.pass))
+    seq.warnings.push(
+      `Fait sans marque à l'écran : « ${f.say} » (${f.card}, ${Math.round(f.coverage * 100)} % du temps, ${f.delay === null ? "aucune marque" : `première marque après ${Math.round((f.delay * 1000) / FPS)} ms`})`
+    );
   planLongVideo(seq, input);
+  checkParchmentPhases(seq);
   return seq;
+}
+
+// 1.11.0, « 9. Map phases and picture phases »: a picture between two map
+// cards of an animated sequence is a phase of its own, 6 s at least.
+function checkPicturePhases(seq) {
+  const plan = seq.mapSequence;
+  if (!plan) return;
+  const animatedMap = (i) => {
+    const r = runOfCard(plan, i);
+    return r >= 0 && plan.animated[plan.runs[r].sequence];
+  };
+  const isMap = (i) =>
+    seq.cards[i].type === "map" || seq.cards[i].opening === "globe";
+  for (let i = 1; i + 1 < seq.cards.length; i++) {
+    // A chapter card and the intro are titles, not pictures.
+    if (["chapter", "intro"].includes(seq.cards[i].type)) continue;
+    if (isMap(i) || !isMap(i - 1) || !isMap(i + 1)) continue;
+    if (!animatedMap(i - 1) && !animatedMap(i + 1)) continue;
+    const frames = seq.cardStarts[i + 1] - seq.cardStarts[i];
+    if (frames < MAP_TIMING.pictureMin)
+      fail(
+        `Card ${seq.cards[i].id}: Image isolée de moins de 6 s entre deux cartes (${(frames / FPS).toFixed(1)} s)`
+      );
+  }
 }
 
 // 1.7.0: what a video card may carry, checked before anything is timed.
@@ -345,8 +416,8 @@ function schedule(seq, words) {
   const fastChunks = [];
   chunks.forEach((chunk, k) => {
     const next = chunks[k + 1];
-    // 1.7.0: before a silent card (a chapter, the next episode) the last
-    // chunk leaves after its last word, so the silence shows no subtitle.
+    // 1.7.0: before a silent card (a chapter card) the last chunk leaves
+    // after its last word, so the silence shows no subtitle.
     const silenceAfter = next && next.card - chunk.card > 1;
     chunk.fullFrom = k ? chunk.appear : chunk.appear + VOICE.fade;
     chunk.fullTo =
@@ -371,7 +442,7 @@ function schedule(seq, words) {
   // A card is fully in when its first chunk appears; the cross-fade that
   // brings it in takes the 300 ms before. A silent card is fully in when the
   // last chunk before it has gone.
-  const isSilent = (c) => c.type === "chapter" || c.type === "next";
+  const isSilent = (c) => c.type === "chapter";
   seq.cardStarts = [];
   seq.cards.forEach((card, i) => {
     if (!i) return seq.cardStarts.push(0);
@@ -388,27 +459,35 @@ function schedule(seq, words) {
         `Card ${seq.cards[i].id} comes before the cross-fade into the card before it ends`
       );
   });
-  // The silent card holds at full opacity until the next card's change
+  // A chapter card holds at full opacity until the next card's change
   // begins: long enough to read its title at 21 characters a second plus
-  // 0.3 s, and a chapter card 1.2 s at least.
+  // 0.3 s, and 1.2 s at least.
   seq.cards.forEach((card, i) => {
     if (!isSilent(card)) return;
-    const title = card.type === "chapter" ? card.chapter.title : card.title;
-    const need = Math.max(
-      card.type === "chapter" ? CHAPTER_HOLD : 0,
-      Math.ceil(([...title].length / READ_CPS + 0.3) * FPS - 1e-9)
-    );
+    const need =
+      CHAPTER_TITLE_IN +
+      Math.max(
+        CHAPTER_HOLD,
+        Math.ceil(
+          ([...card.chapter.title].length / READ_CPS + 0.3) * FPS - 1e-9
+        )
+      );
     const full = seq.cardStarts[i + 1] - CROSS_FADE - seq.cardStarts[i];
     if (full < need)
       fail(
-        `${card.type === "chapter" ? `Chapitre ${card.chapter.n}` : "Prochain épisode"} : le silence est trop court de ${Math.ceil(((need - full) * 1000) / FPS)} ms; the voice script lengthens the pause`
+        `Chapitre ${card.chapter.n} : le silence est trop court de ${Math.ceil(((need - full) * 1000) / FPS)} ms; the voice script lengthens the pause`
       );
   });
   const voiceEnd = Math.ceil((seq.voice.duration + VOICE.tail) * FPS - 1e-9);
+  // The end card plays whole, from the first frame of its card change.
+  const outro = seq.cards.at(-1).outro
+    ? seq.cardStarts.at(-1) - CROSS_FADE + Math.round(OUTRO.duration * FPS)
+    : 0;
   seq.frames = Math.max(
     seq.cardStarts.at(-1) + CLOSING_HOLD,
     voiceEnd,
-    chunks.at(-1).gone
+    chunks.at(-1).gone,
+    outro
   );
   seq.warnings = [];
   if (fastChunks.length)
@@ -456,7 +535,7 @@ function planLongVideo(seq, input) {
   let chapter = null;
   seq.cards.forEach((card, i) => {
     if (card.type === "chapter") chapter = card.chapter;
-    if (["opener", "closing", "chapter", "next"].includes(card.type)) return;
+    if (["opener", "closing", "chapter", "intro"].includes(card.type)) return;
     if (card.signed) card.videoKicker = "Nous pensons";
     else if (chapter && !card.date)
       card.videoKicker = `${chapter.n} · ${chapter.title}`;
@@ -532,7 +611,7 @@ function planTeachingCard(seq, i) {
   const end = seq.cardStarts[i + 1] ?? seq.frames;
   if (card.image?.document)
     card.markFrame = wordOf(seq, i, card.image.document.say).frame;
-  if (card.formula) {
+  if (card.formula && !card.formula.lines) {
     card.formulaFrames = card.formula.steps.map(
       (step) => wordOf(seq, i, step.say).frame
     );
@@ -553,7 +632,9 @@ function planTeachingCard(seq, i) {
       ...(note && { note: noteSay ? wordOf(seq, i, noteSay).frame : start }),
     };
   }
-  if (card.week) {
+  // 1.12.0: a parchment card's parts move on their words.
+  if (isParchment(card)) planTeaching(seq, i);
+  if (card.week && card.week.people === undefined) {
     // A day the voice names enters on its word; the others with the card.
     card.weekFrames = card.week.rows.map(([day]) => {
       try {
@@ -571,6 +652,48 @@ function planTeachingCard(seq, i) {
 }
 
 export const seriesFrameCount = (seq) => seq.frames;
+
+// The parallel final render (operator, 19 October 2026): `workers` slices
+// [from, to) covering the video, each drawn by its own browser from its
+// first frame. A map or photo card draws each frame from its number alone,
+// so a cut falls inside one, outside a card change. An ident does not: its
+// glyphs' anti-aliasing depends on its own earlier frames, so no cut falls
+// in an ident nor in the IDENT_LEAD frames before it. Each cut is the
+// allowed frame nearest an even share; with fewer allowed frames than
+// workers, the video has fewer slices.
+const IDENT_LEAD = 30;
+export function seriesSlices(seq, workers) {
+  if (!Number.isInteger(workers) || workers < 1)
+    fail(`workers: a whole number from 1, not ${workers}`);
+  const count = seq.frames;
+  const starts = seq.cardStarts;
+  const end = (i) => starts[i + 1] ?? count;
+  const idents = seq.cards.flatMap((c, i) =>
+    c.type === "intro" || c.outro
+      ? [[starts[i] - CROSS_FADE - IDENT_LEAD, end(i)]]
+      : []
+  );
+  const allowed = [];
+  for (const [i, card] of seq.cards.entries()) {
+    if (card.type !== "map" && !card.image) continue;
+    for (let f = Math.max(1, starts[i]); f <= end(i) - CROSS_FADE; f++)
+      if (!idents.some(([a, b]) => f >= a && f < b)) allowed.push(f);
+  }
+  const cuts = [];
+  for (let k = 1; k < workers; k++) {
+    const target = (k * count) / workers;
+    let best;
+    for (const f of allowed)
+      if (
+        f > (cuts.at(-1) ?? 0) &&
+        (best === undefined || Math.abs(f - target) < Math.abs(best - target))
+      )
+        best = f;
+    if (best !== undefined) cuts.push(best);
+  }
+  const bounds = [0, ...cuts, count];
+  return cuts.concat(count).map((to, k) => ({ from: bounds[k], to }));
+}
 
 export function seriesFrameState(seq, frame) {
   if (!Number.isInteger(frame) || frame < 0 || frame >= seq.frames)
@@ -600,8 +723,10 @@ export function seriesFrameState(seq, frame) {
   // (operator, 14 October 2026).
   const layers = [{ card: current, opacity: 1, zoom: zoom(current), text: 1 }];
   const next = current + 1;
+  let change = 0;
   if (next < starts.length && frame > starts[next] - CROSS_FADE) {
     const p = (frame - (starts[next] - CROSS_FADE)) / CROSS_FADE;
+    change = p;
     layers[0].text = Math.max(0, 1 - 2 * p);
     layers.push({
       card: next,
@@ -617,6 +742,11 @@ export function seriesFrameState(seq, frame) {
     imageRun(current) >= 0 &&
     imageRun(current) === imageRun(next)
   )
+    layers[1].opacity = 0;
+  // 1.12.0: two parchment cards in a row keep their ground, drawn by the
+  // outgoing card; only the head and the content change.
+  const parchment = (i) => i < seq.cards.length && isParchment(seq.cards[i]);
+  if (layers.length === 2 && parchment(current) && parchment(next))
     layers[1].opacity = 0;
   // Items and the quoted person enter on their word, over 9 frames, their
   // place kept from the card's first frame.
@@ -646,6 +776,7 @@ export function seriesFrameState(seq, frame) {
         l.note = arrive(card.sbsFrames.note);
     }
     if (card.weekFrames) l.rows = card.weekFrames.map(arrive);
+    teachingLayer(seq, l, frame, CROSS_FADE);
   }
   // A map sequence's card shows its run's map, zoomed once over the run.
   // Between two cards of one run the map is drawn once, by the outgoing
@@ -657,6 +788,19 @@ export function seriesFrameState(seq, frame) {
     l.zoom = l.map.zoom;
     if (i && runs[i] === runs[i - 1]) l.opacity = 0;
   }
+  // An ident runs on its own clock, from the first frame of the change that
+  // brings it in, and holds its last frame.
+  for (const l of layers) {
+    const card = seq.cards[l.card];
+    const clip = card.type === "intro" ? INTRO : card.outro ? OUTRO : null;
+    if (!clip) continue;
+    const t = (frame - (starts[l.card] - CROSS_FADE)) / FPS;
+    l.ident = { clip: clip.id, t: Math.min(clip.duration, Math.max(0, t)) };
+  }
+  // The chapter card's animation runs from its own first frame.
+  for (const l of layers)
+    if (seq.cards[l.card].type === "chapter")
+      l.chapter = { t: Math.max(0, (frame - starts[l.card]) / FPS) };
   const chunk = seq.chunks.find(
     (c) => !c.hidden && frame >= c.appear && frame < c.gone
   );
@@ -670,9 +814,16 @@ export function seriesFrameState(seq, frame) {
               ? 1
               : 1 - leave((frame - chunk.fullTo) / VOICE.fade),
         highlight: highlightAt(chunk.words, frame / FPS),
+        // 1.12.0: said over a parchment card, in its ink without outline.
+        ...(parchment(chunk.card) && { parchment: true }),
       }
     : null;
-  return { layers, subtitle };
+  if (!seq.cards.some(isParchment)) return { layers, subtitle };
+  // 1.12.0: how much of the frame is parchment, for the band's and the
+  // signature's two inkings.
+  const weight =
+    (parchment(current) ? 1 - change : 0) + (parchment(next) ? change : 0);
+  return { layers, subtitle, parchment: weight };
 }
 
 // Problems with the boxes the browser drew on one frame. `boxes` are
@@ -693,36 +844,82 @@ const BANDS = {
   signature: LAYOUT.signature,
   slot: LAYOUT.slot.y,
   // 1.7.0: readings and figures end above y 1290; the quoted person above
-  // the subtitle band; a chapter title in the head, at most 900 px wide.
+  // the subtitle band.
   items: [LAYOUT.head[0], 1290],
   attribution: [LAYOUT.head[0], 1300],
-  "chapter-title": LAYOUT.head,
+  // The chapter card (operator, 20 October 2026): the line, the dots and
+  // « n sur N » above the centre, the title centred under them.
+  "chapter-count": [720, 940],
+  "chapter-title": [940, 1300],
   // 1.8.0: the formula in the clear zone, ending above y 1290.
   formula: [LAYOUT.clear[0], 1290],
+  // 1.12.0: a parchment card's content, between the head and y 1300.
+  parchment: [LAYOUT.head[0], 1300],
 };
-const X_BANDS = { slot: LAYOUT.slot.x, "chapter-title": [60, 960] };
+const X_BANDS = {
+  slot: LAYOUT.slot.x,
+  "chapter-count": [60, 1020],
+  "chapter-title": [60, 1020],
+};
 export function checkSeriesLayout(boxes, { demo = false } = {}) {
   const problems = [];
   const near = 0.5;
-  const names = boxes.filter((b) => b.kind === "map-name");
-  if (names.length > MAP_FRAME.maxNames)
+  // 1.11.0: on an animated map, eight texts at most, two of them words, 12 px
+  // clear of each other, of the drawings and of the arrows' heads.
+  const animated = boxes.some((b) => b.animated);
+  const names = boxes.filter(
+    (b) => b.kind === "map-name" || b.kind === "map-word"
+  );
+  // A word made to go by a third is not counted while it fades out.
+  const words = names.filter((b) => b.kind === "map-word" && !b.leaving);
+  const counted = names.filter((b) => !b.leaving).length;
+  if (animated && counted > MARKS.maxTexts)
+    problems.push(
+      `${counted} texts on the map: ${MARKS.maxTexts} at most (1.11.0)`
+    );
+  else if (!animated && names.length > MAP_FRAME.maxNames)
     problems.push(
       `${names.length} names on the map: more than six names, ${MAP_FRAME.maxNames} at most`
     );
-  names.forEach((a, i) =>
-    names.slice(i + 1).forEach((b) => {
+  if (words.length > MARKS.maxWords)
+    problems.push(
+      `${words.length} words on the map: ${MARKS.maxWords} at most`
+    );
+  const marks = animated
+    ? [
+        ...names,
+        ...boxes.filter(
+          (b) => b.kind === "map-drawing" || b.kind === "map-head"
+        ),
+        // A mark fading in or out over another, in a change, is not yet or
+        // no longer read: clearance is checked from half strength.
+      ].filter((b) => !b.moving && (b.opacity ?? 1) >= 0.5)
+    : names;
+  const clear = animated ? MARKS.clearance : 0;
+  marks.forEach((a, i) =>
+    marks.slice(i + 1).forEach((b) => {
+      // A drawing and its own label, a head and another head.
+      if (a.of !== undefined && a.of === b.of) return;
+      if (a.kind === "map-head" && b.kind === "map-head") return;
       if (
-        a.x < b.x + b.w &&
-        b.x < a.x + a.w &&
-        a.y < b.y + b.h &&
-        b.y < a.y + a.h
+        a.x - clear < b.x + b.w &&
+        b.x - clear < a.x + a.w &&
+        a.y - clear < b.y + b.h &&
+        b.y - clear < a.y + a.h
       )
-        problems.push(`${a.id}: overlaps ${b.id}`);
+        problems.push(
+          clear
+            ? `${a.id}: within ${clear} px of ${b.id}`
+            : `${a.id}: overlaps ${b.id}`
+        );
     })
   );
   for (const b of boxes) {
     const [left, right, top, bottom] = [b.x, b.x + b.w, b.y, b.y + b.h];
     const say = (what) => problems.push(`${b.id}: ${what}`);
+    // An arrow's head is checked for clearance only; a mark moving with the
+    // camera is checked once the view is still.
+    if (b.kind === "map-head" || (b.animated && b.moving)) continue;
     if (b.kind === "image") {
       if (b.scale > LAYOUT.maxImageScale + 1e-9 && !demo)
         say(
@@ -755,7 +952,7 @@ export function checkSeriesLayout(boxes, { demo = false } = {}) {
       continue;
     }
     const band =
-      b.kind === "map-name"
+      b.kind === "map-name" || b.kind === "map-word" || b.kind === "map-drawing"
         ? LAYOUT.mapNames.y
         : b.map && BANDS[b.kind] === LAYOUT.foot
           ? LAYOUT.mapFoot

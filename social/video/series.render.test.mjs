@@ -15,7 +15,8 @@ import {
   checkSeriesLayout,
   LAYOUT,
 } from "./series.mjs";
-import { renderSeriesFrames } from "./series-render.mjs";
+import sharp from "sharp";
+import { openSeriesRenderer, renderSeriesFrames } from "./series-render.mjs";
 import { seriesDemo } from "./fixtures/series-pays.mjs";
 
 const dir = mkdtempSync(join(tmpdir(), "series-render-"));
@@ -174,18 +175,57 @@ test("the ending: block from y 318, centred signature ending on y 1884", () => {
 });
 
 // @req REQ-186
-test("1.6.0: the ending draws the signature line, three lines from y 318, and no slogan", () => {
+test("1.10.0: the ending draws the closing line on two lines from y 318, then the invitation and the pill", () => {
   const end = frames.at(-1);
-  assert.ok(
-    end.text
-      .replace(/\s+/gu, " ")
-      .includes(
-        "Connaître nos noms, décoloniser leur emploi, nous nommer nous-mêmes."
-      ),
-    end.text
+  const flat = end.text.replace(/\s+/gu, " ");
+  for (const text of [
+    "L’importance de connaître nos noms.",
+    "Vous pouvez continuer la recherche sur EthniAfrica, lien en profil.",
+  ])
+    assert.ok(flat.includes(text), `${text}: ${flat}`);
+  assert.doesNotMatch(
+    flat,
+    /décoloniser|Cherchez|raconter l.origine des noms/i
   );
-  assert.doesNotMatch(end.text, /raconter l.origine des noms/i);
-  const line = end.boxes.find((b) => b.kind === "ending");
-  assert.ok(Math.abs(line.h - 3 * 64) <= 1, `three lines of 64 px: ${line.h}`);
-  assert.ok(line.y + line.h <= 820, "inside the ending block");
+  const [line, invitation] = end.boxes.filter((b) => b.kind === "ending");
+  assert.ok(Math.abs(line.y - 318) <= 0.5, `line at ${line.y}`);
+  assert.ok(Math.abs(line.h - 2 * 64) <= 1, `two lines of 64 px: ${line.h}`);
+  assert.ok(Math.abs(invitation.y - 474) <= 1, `invitation at ${invitation.y}`);
+  assert.ok(Math.abs(invitation.h - 2 * 40) <= 1, `two lines: ${invitation.h}`);
+  // Without a next episode the block ends at the pill (series.md, 1.10.0).
+  const pill = end.boxes.find((b) => b.kind === "pill");
+  assert.ok(
+    Math.abs(pill.y + pill.h - 658) <= 1,
+    `pill ends at ${pill.y + pill.h}`
+  );
+  assert.doesNotMatch(flat, /Prochain épisode/);
+});
+
+// @req REQ-186
+test("1.10.0: the subtitle band is empty on every drawn frame of the ending", () => {
+  const ending = frames.filter((f) =>
+    f.state.layers.every((l) => l.card === seq.cards.length - 1)
+  );
+  assert.ok(ending.length >= 4, `${ending.length} ending frames`);
+  for (const f of ending)
+    assert.ok(!f.boxes.some((b) => b.kind === "subtitle"), `frame ${f.frame}`);
+});
+
+// @req REQ-186
+test("a fast capture of a drawn frame decodes to the normal capture's pixels", async () => {
+  const renderer = await openSeriesRenderer(seq, { diagnose: true });
+  const rgba = (png) => sharp(png).ensureAlpha().raw().toBuffer();
+  try {
+    for (const frame of [0, seq.chunks[0].fullFrom]) {
+      await renderer.draw(frame);
+      const normal = await renderer.capture();
+      const fast = await renderer.capture({ fast: true });
+      assert.ok(!fast.equals(normal), `frame ${frame}: the same PNG bytes`);
+      const [a, b] = await Promise.all([rgba(normal), rgba(fast)]);
+      assert.ok(b.equals(a), `frame ${frame}: pixels differ`);
+    }
+    assert.deepEqual([...renderer.captured].sort(), ["png", "png-fast"]);
+  } finally {
+    await renderer.close();
+  }
 });

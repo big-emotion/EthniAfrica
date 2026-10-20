@@ -6,7 +6,8 @@
   "content": {
     "appellations": {
       "mainName": "Baganda / Ganda",
-      "selfAppellation": "Baganda (sg. Muganda, pl. Abaganda)",
+      "selfAppellation": "Baganda",
+      "spellingAliases": ["Muganda", "Abaganda"],
       "exonyms": [
         "Ganda (forme abrégée utilisée en linguistique)",
         "Buganda tribe (terme colonial administratif britannique)",
@@ -17,7 +18,7 @@
       ],
       "originOfExonyms": "Baganda serait lié à obuganda, « solidarité » ou « fraternité ». L'image de fagots de tiges liées ensemble sert souvent à expliquer ce nom comme un symbole d'unité. Ba- désigne les personnes : les gens du Buganda. Ganda est la partie commune aux noms du peuple, Baganda, et de la langue, Luganda. Les explorateurs arabes et swahilis ont employé Waganda, puis les Européens l'ont repris.",
       "whyProblematic": "La confusion entre le Buganda (royaume banto) et l'Uganda (etat national) est source de tensions politiques persistantes, les Baganda revendiquant une autonomie et des droits speciaux au sein de l'Etat ougandais. Le terme tribe, impose par l'administration coloniale, est rejete par de nombreux Baganda qui preferent le terme nation ou peuple.",
-      "contemporaryUsage": "Baganda reste l'appellation standard en ougandais et en anglais. Muganda est la forme singulière courante ; l'adjectif culturel est kiganda. Le terme Ganda est utilisé dans les contextes académiques et linguistiques.",
+      "contemporaryUsage": "Baganda reste l'appellation standard en ougandais et en anglais. Muganda est la forme singulière courante ; l'adjectif culturel est kiganda. Le terme Ganda est utilisé dans les contextes académiques et linguistiques. Au singulier, on dit Muganda. Abaganda est une autre forme plurielle.",
       "linguisticFamily": "FLG_BANTU",
       "ethnoLinguisticGroup": "Bantous des Grands Lacs (Zone J, sous-groupe Ganda-Soga)",
       "historicalRegion": "Royaume du Buganda, rive nord et nord-ouest du lac Victoria (Ouganda central)",

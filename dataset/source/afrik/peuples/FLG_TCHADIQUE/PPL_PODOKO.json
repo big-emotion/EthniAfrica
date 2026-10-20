@@ -7,17 +7,23 @@
   "content": {
     "appellations": {
       "mainName": "Podoko",
-      "selfAppellation": "Podokwa / Parekwa",
+      "selfAppellation": "Podokwa",
       "exonyms": [
         "Podokwo (forme preferee par Lembezat 1952, Boulet et al 1984, Barreteau 1984)",
         "Podogo (orthographe de la carte ethnique de Lembezat 1950)",
         "Parkwa (denomination SIL/Ethnologue, du mot parekwa — donne aussi le nom de la langue)",
-        "Gwadi Parekwa / Padakwa / Padogo / Padoko / Padokwa / Paduko / Pawdawkwa (autres noms alternatifs documentes)",
+        "Gwadi Parekwa",
+        "Padakwa",
+        "Padogo",
+        "Padoko",
+        "Padokwa",
+        "Paduko",
+        "Pawdawkwa",
         "Kudala (autre appellation documentee par SIL)"
       ],
       "originOfExonyms": "L'etymologie du nom Podokwa est inconnue selon toutes les sources disponibles (Lembezat 1952, Muller-Kosack 1999). Muller-Kosack (1999) propose que la terminaison 'kwa' se refere a la pierre ou au rocher (kwa = pierre/rocher en mafa ; kwire = pierre/rocher en dughwede), le nom designant ainsi les 'gens des pierres' ou 'gens des montagnes'. Le nom administratif francais 'Podoko' a ete adopte dans les publications officielles (Hallaire 1991). Les traditions orales des Dughwede et des Guduf (massifs de Gwoza, Nigeria) evoquent que les 'Padakwa' vecurent autrefois sur leur territoire — lien historique qui n'a pas encore ete pleinement etudie.",
       "whyProblematic": "Le nom Podoko/Podokwa designe a la fois un peuple et sa langue (Parkwa, ISO pbi), ce qui cree une confusion dans les sources. La grande variete des orthographes europeennes (Podogo, Podokwo, Parekwa, Parkwa) reflete les difficultes des transcriptions coloniales.",
-      "contemporaryUsage": "Podoko est l'appellation administrative officielle au Cameroun. Les linguistes utilisent Parkwa ou Parekwa pour designer la langue (ISO 639-3 : pbi). Les habitants se designent comme Podokwa ou Parekwa. Le chieftancy d'Oudjila (l'une des quatre sections principales) est connu dans la region de Mora.",
+      "contemporaryUsage": "Podoko est l'appellation administrative officielle au Cameroun. Les linguistes utilisent Parkwa ou Parekwa pour designer la langue (ISO 639-3 : pbi). Les habitants se designent comme Podokwa ou Parekwa. Le chieftancy d'Oudjila (l'une des quatre sections principales) est connu dans la region de Mora. Gwadi Parekwa, Padakwa, Padogo, Padoko, Padokwa, Paduko et Pawdawkwa sont aussi rapportés comme noms du groupe.",
       "linguisticFamily": "FLG_TCHADIQUE",
       "ethnoLinguisticGroup": "Tchadique Biu-Mandara (branche A, sous-groupe A.4 — Mandara Proper, sous-groupe Podoko)",
       "historicalRegion": "Massif nord-occidental de Mora, region du Mandara septentrional (Extreme-Nord du Cameroun)",

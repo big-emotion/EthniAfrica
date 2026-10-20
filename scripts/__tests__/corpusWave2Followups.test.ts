@@ -5,6 +5,7 @@ import {
   rmSync,
   writeFileSync,
 } from "node:fs";
+import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
 
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
@@ -101,7 +102,7 @@ describe("validator — the hero and the name history agree on the self-name", (
 
   beforeEach(() => {
     tmpDir = join(
-      __dirname,
+      tmpdir(),
       `tmp_test_wave2_${Date.now()}_${Math.random().toString(36).slice(2)}`
     );
     mkdirSync(tmpDir, { recursive: true });
@@ -140,6 +141,21 @@ describe("validator — the hero and the name history agree on the self-name", (
   });
 
   // @req REQ-178
+  it("allows a composite people fiche with several self-given names and no single collective appellation", () => {
+    writeJson(tmpDir, "peuples/FLG_TEST/PPL_TEST.json", {
+      id: "PPL_TEST",
+      nameHistory: block([name("Ganta", true), name("Koto", true)]),
+      content: { appellations: { selfAppellation: null } },
+    });
+
+    expect(
+      checkNameHistoryBlocks(tmpDir).errors.filter((error) =>
+        /selfAppellation/.test(error)
+      )
+    ).toEqual([]);
+  });
+
+  // @req REQ-178
   it("passes the same history once the hero names the self-name", () => {
     writeJson(tmpDir, "famille_linguistique/FLG_TEST.json", {
       id: "FLG_TEST",
@@ -174,6 +190,25 @@ describe("validator — the hero and the name history agree on the self-name", (
 
     expect(errors.filter((error) => /selfAppellation/.test(error))).toEqual([]);
     expect(errors.filter((error) => /au présent par/.test(error))).toEqual([]);
+  });
+
+  // Glottolog lists Tege as a language name, while the fiche says no source
+  // identifies it as the group's self-name.
+  // @req REQ-178
+  it("does not mark catalog-listed Tege as a self-name for the northern Teke", () => {
+    const relative = "peuples/FLG_NIGERCONGO/PPL_TEKE_NORD.json";
+    const fiche = read(relative);
+    const tege = fiche.nameHistory.names.find(
+      (entry: { nameText: string }) => entry.nameText === "Tege"
+    );
+
+    expect(tege?.selfGiven).toBe(false);
+    expect(fiche.nameHistory.selfNameUnknown).toBe(true);
+    expect(
+      checkNameHistoryBlocks(AFRIK).errors.filter((error) =>
+        error.includes("PPL_TEKE_NORD.json")
+      )
+    ).toEqual([]);
   });
 });
 
@@ -467,7 +502,7 @@ describe("French prose keeps its accents", () => {
 
   beforeEach(() => {
     tmpDir = join(
-      __dirname,
+      tmpdir(),
       `tmp_test_accents_${Date.now()}_${Math.random().toString(36).slice(2)}`
     );
     mkdirSync(tmpDir, { recursive: true });

@@ -21,6 +21,7 @@ import { parseRelationFile } from "../src/lib/afrik/parsers/relationParser";
 import { parseDossierFile } from "../src/lib/afrik/parsers/dossierParser";
 import { parsePlaceFile } from "../src/lib/afrik/parsers/placeParser";
 import { parseNameHistory } from "../src/lib/afrik/parsers/nameHistoryParser";
+import { isSingleNameAppellation } from "../src/lib/afrik/parsers/appellationGrammar";
 import { parsePatronymeFile } from "../src/lib/afrik/parsers/patronymeParser";
 import { SOURCE_KINDS, type SourceTier } from "../src/types/sources";
 // The same resolver the globe uses, so this gate and the rendering can never
@@ -4187,8 +4188,18 @@ export function checkNameHistoryBlocks(datasetRoot: string): ValidationResult {
       // non renseigné » when it is empty) while the result page marks a
       // self-given name « le nom qu'ils se donnent »: the two must not
       // disagree (FLG_MANDE, triage of 2026-10-17).
-      if (recordsNoSelfAppellation(fiche, directory)) {
-        for (const { nameText } of names.filter((name) => name.selfGiven)) {
+      const selfGivenNames = names.filter((name) => name.selfGiven);
+      // A composite people fiche can preserve several names that distinct
+      // communities give themselves without having one collective
+      // self-appellation. An empty single-name field is valid in that case;
+      // choosing one would claim it names the whole composite.
+      const compositeHasSeveralSelfNames =
+        directory === "peuples" && selfGivenNames.length > 1;
+      if (
+        recordsNoSelfAppellation(fiche, directory) &&
+        !compositeHasSeveralSelfNames
+      ) {
+        for (const { nameText } of selfGivenNames) {
           errors.push(
             `REQ-178: ${file}: "${nameText}" is self-given in nameHistory, but the fiche's selfAppellation is empty — name the self-name in both, or mark neither`
           );
@@ -4236,6 +4247,56 @@ export function checkNameHistoryBlocks(datasetRoot: string): ValidationResult {
   }
 
   return { ok: errors.length === 0, errors, warnings };
+}
+
+/** REQ-178 — name fields hold one appellation atom, not packed notes or lists. */
+export function checkSingleNameAppellations(
+  datasetRoot: string
+): ValidationResult {
+  const errors: string[] = [];
+
+  for (const { flgFolder, file, fullPath } of collectPplFiles(datasetRoot)) {
+    const fiche = readFiche(fullPath);
+    if (!fiche) continue;
+
+    const appellations = (fiche.content as Record<string, unknown> | undefined)
+      ?.appellations;
+    if (!appellations || typeof appellations !== "object") continue;
+
+    const section = appellations as Record<string, unknown>;
+    const fichePath = `peuples/${flgFolder}/${file}`;
+    const selfAppellation = section.selfAppellation;
+    if (
+      selfAppellation !== undefined &&
+      selfAppellation !== null &&
+      selfAppellation !== "" &&
+      !isSingleNameAppellation(selfAppellation)
+    ) {
+      errors.push(
+        `REQ-178: ${fichePath}: content.appellations.selfAppellation contains more than one name or a note: ${JSON.stringify(selfAppellation)}`
+      );
+    }
+
+    for (const field of ["exonyms", "spellingAliases"] as const) {
+      const values = section[field];
+      if (values === undefined || values === null) continue;
+      if (!Array.isArray(values)) {
+        errors.push(
+          `REQ-178: ${fichePath}: content.appellations.${field} must be an array of single names: ${JSON.stringify(values)}`
+        );
+        continue;
+      }
+      values.forEach((value, index) => {
+        if (!isSingleNameAppellation(value, { allowTrailingGloss: true })) {
+          errors.push(
+            `REQ-178: ${fichePath}: content.appellations.${field}[${index}] contains more than one name or a note: ${JSON.stringify(value)}`
+          );
+        }
+      });
+    }
+  }
+
+  return { ok: errors.length === 0, errors, warnings: [] };
 }
 
 // ─── French accents in fiche prose (triage of 2026-10-17) ────────────────────
@@ -4798,7 +4859,9 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // Each omits `historicalAffiliation`, which the model says to leave out for
   // a people with a defensible linguistic family, and `classificationStatus`,
   // which it says to leave out until the fiche has been reviewed.
-  peuple: 5968,
+  // 5968 -> 5920 on 2026-10-19: ETNI-2135 records `spellingAliases` on 48
+  // people fiches whose sources already attest those forms.
+  peuple: 5920,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next
@@ -5788,6 +5851,12 @@ async function main() {
   newChecks.push({
     name: "REQ-196 nameHistory block",
     result: checkNameHistoryBlocks(datasetRoot),
+  });
+
+  console.log("REQ-178 - One-name appellation fields...");
+  newChecks.push({
+    name: "REQ-178 single-name appellations",
+    result: checkSingleNameAppellations(datasetRoot),
   });
 
   console.log("REQ-178 - French accents in fiche prose (backlog ratchet)...");

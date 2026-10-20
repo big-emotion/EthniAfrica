@@ -153,7 +153,7 @@
   "content": {
     "appellations": {
       "mainName": "Makua",
-      "selfAppellation": "WaMakua / Amakhua",
+      "selfAppellation": "WaMakua",
       "exonyms": [
         "Makhuwa (graphie alternative courante)",
         "Macua (graphie portugaise)",
@@ -166,7 +166,8 @@
       "linguisticFamily": "FLG_NIGERCONGO",
       "ethnoLinguisticGroup": "Bantou (zone P, groupe P.30-P.31)",
       "historicalRegion": "Mozambique septentrional (nord du fleuve Zambèze) : provinces de Nampula, Cabo Delgado, Niassa, Zambezia",
-      "currentCountries": ["MOZ", "TZA", "MWI"]
+      "currentCountries": ["MOZ", "TZA", "MWI"],
+      "spellingAliases": ["Amakhua"]
     },
     "ethnicities": [
       "Makhua-Makhuwana (Makua central, Nampula — dialecte de référence)",

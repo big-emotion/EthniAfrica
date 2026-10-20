@@ -52,6 +52,36 @@ export const IMAGERY = {
     width: 21600,
     sha256: "d225f1f35a6448a4d1d8f6de6e48f3433e470085b70a35800e64f384f269a7b0",
   },
+  // Cartes 1.11.0, decision 1: the same mosaic at 500 m, tiles B1 and C1 (the
+  // northern hemisphere from 90° W to 90° E), verified on 19 October 2026
+  // (video-assets SOURCES.md). The region under a closer view is cut from
+  // the tiles; the world texture of the globe still comes from the 2 km file.
+  "bmng-2004-07-topo-bathy-500m": {
+    credit: "NASA Earth Observatory",
+    short: "NASA",
+    world: "bmng-2004-07-topo-bathy",
+    tiles: [
+      {
+        file: "imagery/world.topo.bathy.200407.3x21600x21600.B1.jpg",
+        url: "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/bmng/bmng-topography-bathymetry/july/world.topo.bathy.200407.3x21600x21600.B1.jpg",
+        bytes: 54665612,
+        sha256:
+          "15d8ceb55676e6b3e7fdcd72217d1edd665b5e7f7396c606e7b98c427b28558e",
+        // lon west, lon east, lat south, lat north
+        bounds: [-90, 0, 0, 90],
+      },
+      {
+        file: "imagery/world.topo.bathy.200407.3x21600x21600.C1.jpg",
+        url: "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/bmng/bmng-topography-bathymetry/july/world.topo.bathy.200407.3x21600x21600.C1.jpg",
+        bytes: 87763762,
+        sha256:
+          "ee8490ab1eb35d620d8d1ad8e69b3234c0b050e4eddb80e7232a2d165e475aa0",
+        bounds: [0, 90, 0, 90],
+      },
+    ],
+    // 21,600 px over 90° of each tile: 86,400 px around the Earth.
+    width: 86400,
+  },
   "s2cloudless-2016": {
     credit: "Sentinel-2 cloudless 2016, EOX",
     attribution:
@@ -60,7 +90,7 @@ export const IMAGERY = {
   },
 };
 
-function cubicBezier(x1, y1, x2, y2) {
+export function cubicBezier(x1, y1, x2, y2) {
   const cx = 3 * x1;
   const bx = 3 * (x2 - x1) - cx;
   const ax = 1 - cx - bx;
@@ -87,7 +117,7 @@ function cubicBezier(x1, y1, x2, y2) {
 // Exported for the series video (series.mjs), whose subtitles fade as here.
 export const enter = cubicBezier(0.2, 0, 0, 1);
 export const leave = cubicBezier(0.4, 0, 1, 1);
-const symmetric = cubicBezier(0.45, 0, 0.55, 1);
+export const symmetric = cubicBezier(0.45, 0, 0.55, 1);
 const descent = cubicBezier(0.45, 0, 0.15, 1);
 const span = (t, start, duration, ease) => ease((t - start) / duration);
 

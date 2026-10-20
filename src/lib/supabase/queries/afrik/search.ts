@@ -375,15 +375,32 @@ async function answeredExactly(
   return rankedHits(await pageOne(text)).some((hit) => hit.exactMatch);
 }
 
+const STATEMENT_TIMEOUT = "57014";
+/**
+ * afrik_search_recorded_term walks every fiche of the corpus, and on v5.7.0 it
+ * outran production's statement timeout on every query, which turned each
+ * search into a 500. After one timeout the check is skipped for a minute: the
+ * search answers without recorded terms instead of paying the timeout again,
+ * and the check comes back by itself once the database can answer it.
+ */
+const RECORDED_TERM_PAUSE_MS = 60_000;
+let recordedTermPausedUntil = 0;
+
 /** Returns every fiche with the query as a whole word, excluding source notes. */
 async function findRecordedTerms(
   supabase: ReturnType<typeof createServerClient>,
   text: string
 ): Promise<RecordedTermMatch[]> {
+  if (Date.now() < recordedTermPausedUntil) return [];
   const { data, error } = await supabase.rpc("afrik_search_recorded_term", {
     p_q: text,
   });
   if (isMissingFunction(error)) return [];
+  if (error?.code === STATEMENT_TIMEOUT) {
+    logger.error("Recorded search term check timed out; pausing it", error);
+    recordedTermPausedUntil = Date.now() + RECORDED_TERM_PAUSE_MS;
+    return [];
+  }
   if (error) {
     logger.error("Error checking recorded search term", error);
     throw error;

@@ -7,21 +7,21 @@
   "content": {
     "appellations": {
       "mainName": "Crioulo de Guinée-Bissau",
-      "selfAppellation": "Crioulo / Kriyol",
+      "selfAppellation": "Crioulo",
       "exonyms": [
         "Anafro Crioulo",
         "Upper Guinea Creole (anglais)",
-        "Crioulo, Upper Guinea (Ethnologue)",
         "Guinensi",
         "Purtuguis (terme local pour les Creoles catholiques de souche portugaise)"
       ],
       "originOfExonyms": "Le terme Crioulo viendrait du portugais crioulo, désignant à l'origine les esclaves africains nés dans les colonies portugaises, puis étendu aux personnes de descendance mixte africaine et portugaise. Le terme Anafro Crioulo désigne spécifiquement la communauté créole présente en Guinée (Conakry) issue des migrations depuis la Guinée-Bissau.",
       "whyProblematic": "Le terme Crioulo est ambigu car il désigne à la fois une identité ethnique (les Créoles, métis d'origine afro-portugaise) et une pratique linguistique (tous les locuteurs du créole de Guinée-Bissau, quelle que soit leur origine). Les Créoles ethniques ne représentent qu'environ 1% de la population, mais leur langue est parlée par 90% des Bissau-Guinéens.",
-      "contemporaryUsage": "Les Créoles ethniques se désignent comme Crioulo et constituent une minorité instruite, souvent catholique, historiquement liée à l'administration coloniale portugaise. En Guinée-Conakry, les Anafro Crioulo sont une petite communauté issue de l'immigration bissau-guinéenne.",
+      "contemporaryUsage": "Les Créoles ethniques se désignent comme Crioulo et constituent une minorité instruite, souvent catholique, historiquement liée à l'administration coloniale portugaise. En Guinée-Conakry, les Anafro Crioulo sont une petite communauté issue de l'immigration bissau-guinéenne. Ethnologue répertorie aussi cette entrée sous le nom « Crioulo, Upper Guinea ».",
       "linguisticFamily": "FLG_CREOLE",
       "ethnoLinguisticGroup": "Créole afro-portugais de Haute-Guinée",
       "historicalRegion": "Guinée-Bissau côtière et fluviale (Bissau, Cacheu, Bolama, Farim, Bafata)",
-      "currentCountries": ["GNB"]
+      "currentCountries": ["GNB"],
+      "spellingAliases": ["Kriyol"]
     },
     "ethnicities": [
       "Filhos da Terra (fils de la terre, métis de première génération)",

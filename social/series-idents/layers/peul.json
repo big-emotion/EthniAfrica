@@ -1,0 +1,17 @@
+{
+  "name": "Peul",
+  "page": "https://ethniafrica.com/fr/atlas/recherche/peul",
+  "provenance": "The search-peul-430 mockup and the support film of 10 October 2026, as approved by the operator.",
+  "lead": [
+    "Vous avez cherché Peul.",
+    "Ce peuple se nomme lui-même <b>Fulɓe</b>."
+  ],
+  "forms": [
+    { "w": "Fulɓe", "k": "le nom qu’ils se donnent", "kind": "self" },
+    { "w": "Pullo", "k": "au singulier", "kind": "self" },
+    { "w": "Peul", "k": "votre recherche", "kind": "searched" },
+    { "w": "Fula" },
+    { "w": "Fulani" },
+    { "w": "Fellata" }
+  ]
+}

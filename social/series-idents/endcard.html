@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Générique de fin EthniAfrica</title>
+    <link rel="stylesheet" href="../../src/styles/tokens/color.css" />
+    <link rel="stylesheet" href="idents.css" />
+    <style>
+      #line {
+        left: 120px;
+        top: 640px;
+        width: 860px;
+        font: 900 90px/1.06 var(--display);
+        transform-origin: 0 0;
+      }
+      #line em {
+        font-style: normal;
+        color: var(--afh-color-terracotta);
+      }
+      #invite {
+        left: 120px;
+        top: 470px;
+        width: 840px;
+        font: 700 40px/1.3 var(--body);
+        color: var(--afh-color-text-soft);
+        text-wrap: balance;
+      }
+      #lockup {
+        left: 120px;
+        top: 630px;
+      }
+      #lockup img {
+        width: 120px;
+        height: 120px;
+      }
+      #lockup span {
+        font-size: 72px;
+      }
+      #url {
+        left: 120px;
+        top: 790px;
+        font: 800 46px/1 var(--body);
+        color: var(--afh-color-terracotta);
+      }
+      /* Cartes 1.10.0: « Prochain épisode » sits under the site's address. */
+      #next {
+        left: 120px;
+        top: 866px;
+        width: 840px;
+        font: 700 36px/1.2 var(--body);
+        color: var(--afh-color-text-soft);
+      }
+      #next em {
+        font-style: normal;
+        font-weight: 800;
+        color: var(--afh-color-text);
+      }
+      /* Instagram, TikTok and YouTube Shorts all print the account's name
+         at the bottom left of a playing video: the arrow points there. */
+      #cue {
+        left: 120px;
+        top: 960px;
+        display: flex;
+        align-items: flex-end;
+        gap: 18px;
+        font: 800 40px/1 var(--body);
+      }
+      #cue svg {
+        width: 96px;
+        height: 96px;
+        color: var(--afh-color-terracotta);
+      }
+      /* The five networks the project publishes on, under the cue. */
+      #networks {
+        left: 120px;
+        top: 1090px;
+        display: flex;
+        gap: 44px;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="abs" id="line" data-role="project-line" data-essential>
+      L’importance de<br />connaître <em>nos noms.</em>
+    </p>
+    <div id="phoneHost"></div>
+    <div class="abs finger" id="finger"></div>
+    <div class="abs ripple" id="ripple"></div>
+    <p class="abs" id="invite" data-essential>
+      Vous pouvez continuer la recherche sur EthniAfrica, lien en profil.
+    </p>
+    <div class="abs lockup" id="lockup" data-role="wordmark">
+      <img src="../brand/ethniafrica-logo.png" alt="" /><span>EthniAfrica</span>
+    </div>
+    <p class="abs" id="url" data-essential>ethniafrica.com</p>
+    <p class="abs" id="next" data-layer="next" data-essential></p>
+    <p class="abs" id="cue" data-essential>
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.4"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <path d="M17 7 7 17" />
+        <path d="M15 17H7V9" /></svg
+      ><span>@ethniafrica</span>
+    </p>
+    <div class="abs" id="networks"></div>
+
+    <script type="module">
+      import {
+        $,
+        P,
+        lerp,
+        eo,
+        eo5,
+        eio,
+        back,
+        S,
+        rise,
+        ground,
+        moveGround,
+        phone,
+        typeInto,
+        loadLayer,
+        start,
+        networkIcon,
+        params,
+      } from "./idents.mjs";
+
+      const layer = await loadLayer();
+      const next = params.get("next");
+      if (next) {
+        $("next").innerHTML = "<em>Prochain épisode :</em> ";
+        $("next").append(next);
+      }
+      ground();
+      $("networks").innerHTML = [
+        "Instagram",
+        "TikTok",
+        "Facebook",
+        "YouTube",
+        "LinkedIn",
+      ]
+        .map((n) => networkIcon(n, 64))
+        .join("");
+      phone($("phoneHost"), layer);
+      const ph = $("ph");
+      // Centred: the phone's text ends at x 764, left of the button column.
+      ph.style.left = "230px";
+
+      const PHONE_Y = 440;
+      const BUTTON = {
+        x: 230 + 16 + 38 + 256,
+        y: PHONE_Y + 16 + 360 + 104 + 22 + 46,
+      };
+      const chips = [...$("phChips").children];
+
+      function render(t) {
+        moveGround(t);
+
+        // The sentence alone, then up to the top, where it stays.
+        const lIn = eo5(P(t, 0.15, 0.75));
+        const lUp = eio(P(t, 2.2, 2.8));
+        $("line").style.opacity = lIn;
+        $("line").style.transform =
+          `translate(0, ${lerp(lerp(40, 0, lIn), 300 - 640, lUp)}px) scale(${lerp(1, 0.62, lUp)})`;
+
+        // The phone comes back with the name already typed: the search the
+        // intro began. The finger presses Rechercher; the answer builds.
+        const pIn = eo5(P(t, 2.4, 3.05)),
+          pOut = eio(P(t, 6.25, 6.75));
+        ph.style.opacity = pIn * (1 - pOut);
+        ph.style.top = lerp(1920, PHONE_Y, pIn) + pOut * 300 + "px";
+        S("phFull", { op: 1 });
+        typeInto($("phQ"), t, layer.name, 0, 0.01, 0);
+        const up = eio(P(t, 3.5, 4.0));
+        S("phTitle", { op: 1 - up, y: -up * 60 });
+        $("phSearch").style.top = lerp(360, 140, up) + "px";
+        S("phBtn", { op: 1 - up, s: 1 - pressAt(t, 3.2) * 0.07 });
+        rise("phEyebrow", t, 3.85, 0.4, undefined, 0, 16);
+        S("phSkeleton", { op: 0 });
+        const cIn = eo(P(t, 3.95, 4.45));
+        S("phCallout", { op: cIn, y: lerp(40, 0, cIn) });
+        $("phCallout")
+          .querySelectorAll("[id^=phL]")
+          .forEach((l, i) =>
+            rise(l, t, 4.15 + i * 0.55, 0.5, undefined, 0, 18)
+          );
+
+        // The forms, side by side, under the answer.
+        const below = $("phCallout").offsetTop + $("phCallout").offsetHeight;
+        $("phFormsH").style.top = below + 36 + "px";
+        $("phChips").style.top = below + 110 + "px";
+        rise("phFormsH", t, 5.0, 0.4, undefined, 0, 20);
+        chips.forEach((c, i) => {
+          const a = 5.1 + i * 0.13;
+          const k = back(P(t, a, a + 0.45)),
+            o = eo(P(t, a, a + 0.3));
+          S(c, {
+            op: o,
+            s: lerp(0.7, 1, Math.min(k, 1)) + (k > 1 ? (k - 1) * 0.3 : 0),
+            y: lerp(20, 0, o),
+          });
+        });
+
+        const fIn = eo(P(t, 2.85, 3.05)),
+          fOut = eio(P(t, 3.45, 3.65));
+        S("finger", {
+          op: fIn * (1 - fOut),
+          x: BUTTON.x,
+          y: lerp(BUTTON.y + 140, BUTTON.y, eo(P(t, 2.85, 3.15))),
+          s: 1 - pressAt(t, 3.2) * 0.15,
+        });
+        const r = P(t, 3.2, 3.6);
+        S("ripple", {
+          op: r > 0 && r < 1 ? 1 - r : 0,
+          x: BUTTON.x,
+          y: BUTTON.y,
+          s: 1 + eo(r) * 1.4,
+        });
+
+        // The ending: the sentence stays; the invitation, the wordmark, the
+        // address and the cue come in under it.
+        rise("invite", t, 6.55, 0.5, undefined, 0, 24);
+        rise("lockup", t, 6.75, 0.5, undefined, 0, 24);
+        rise("url", t, 6.9, 0.5, undefined, 0, 24);
+        if (next) rise("next", t, 6.95, 0.5, undefined, 0, 24);
+        else S("next", { op: 0 });
+        rise("cue", t, 7.05, 0.5, undefined, 0, 24);
+        rise("networks", t, 7.15, 0.5, undefined, 0, 24);
+      }
+      const pressAt = (t, a) => Math.sin(P(t, a, a + 0.26) * Math.PI);
+
+      await start("outro", render);
+    </script>
+  </body>
+</html>

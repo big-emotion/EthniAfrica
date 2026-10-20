@@ -7,7 +7,7 @@
   "content": {
     "appellations": {
       "mainName": "Créole Cap-Verdien",
-      "selfAppellation": "Crioulo / Kriolu / Kabuverdianu",
+      "selfAppellation": "Kriolu",
       "exonyms": [
         "Cape Verdean Creole (anglais)",
         "Crioulo cabo-verdiano (portugais)",
@@ -20,7 +20,8 @@
       "linguisticFamily": "FLG_CREOLE",
       "ethnoLinguisticGroup": "Créole afro-portugais",
       "historicalRegion": "Archipel du Cap-Vert (9 îles habitées), Atlantique, à 500 km à l'ouest de la côte sénégalaise",
-      "currentCountries": ["CPV"]
+      "currentCountries": ["CPV"],
+      "spellingAliases": ["Crioulo", "Kabuverdianu"]
     },
     "ethnicities": [
       "Créole de Santiago (Badiu, île principale, Santiago)",

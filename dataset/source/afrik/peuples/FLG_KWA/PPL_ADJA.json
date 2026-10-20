@@ -121,7 +121,7 @@
   "content": {
     "appellations": {
       "mainName": "Adja",
-      "selfAppellation": "Adja / Adyá",
+      "selfAppellation": "Aja",
       "exonyms": ["Aja", "Aja-Tado", "Adyá"],
       "originOfExonyms": "Le nom Aja est la forme abrégée utilisée en anglais et dans la littérature scientifique; Adja est la graphie francophone. Le nom viendrait de la ville ancestrale de Tado, sur le fleuve Mono, berceau du peuple.",
       "whyProblematic": null,
@@ -129,7 +129,8 @@
       "linguisticFamily": "FLG_BENOUECONGO",
       "ethnoLinguisticGroup": "Gbe (sous-groupe Volta-Niger, famille Niger-Congo)",
       "historicalRegion": "Royaume de Tado sur le fleuve Mono (sud du Togo actuel) — zone frontalière Togo-Bénin sur une bande d'environ 50 km de long et 30 km de large",
-      "currentCountries": ["TGO", "BEN"]
+      "currentCountries": ["TGO", "BEN"],
+      "spellingAliases": ["Adja", "Adyá"]
     },
     "ethnicities": [
       "Alu — premiers habitants documentés de la région de Tado, ironforgerons traditionnels",

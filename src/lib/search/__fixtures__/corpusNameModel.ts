@@ -34,10 +34,10 @@ export interface ModelEntity {
   /**
    * A family name's `spellings[].spelling`, qualifier removed. `forms` holds
    * every string under `spellings`, attestations included; the leads read
-   * only these, as migrations 110, 111 and 113 do.
+   * only these, as migrations 110, 111, 113 and 114 do.
    */
   spellings?: string[];
-  /** A people's filed name, self-appellation and each exonym, as written. */
+  /** A people's filed name, self-appellation, exonyms and spelling aliases. */
   nameFields?: string[];
 }
 
@@ -93,23 +93,32 @@ function peopleEntities(): ModelEntity[] {
       const fiche = readJson(path) as {
         nameMain: string;
         content?: {
-          appellations?: { selfAppellation?: string; exonyms?: string[] };
+          appellations?: {
+            selfAppellation?: string;
+            exonyms?: string[];
+            spellingAliases?: string[];
+          };
         };
       };
       const appellations = fiche.content?.appellations;
       const exonyms = Array.isArray(appellations?.exonyms)
         ? appellations.exonyms
         : [];
+      const spellingAliases = Array.isArray(appellations?.spellingAliases)
+        ? appellations.spellingAliases
+        : [];
       return {
         ...entity("people", fiche, fiche.nameMain, [
           fiche.nameMain,
           ...(appellations?.selfAppellation ?? "").split(","),
           ...exonyms,
+          ...spellingAliases,
         ]),
         nameFields: [
           fiche.nameMain,
           appellations?.selfAppellation ?? "",
           ...exonyms,
+          ...spellingAliases,
         ],
       };
     })
@@ -329,10 +338,10 @@ export function neighbours(
 // @req REQ-125
 export const NAME_PIECE_SEPARATOR = String.raw`\s*(?:[,;]|\s/\s|\sou\s)\s*(?![^(]*\))`;
 
-// The parts of ONE_NAME, in POSIX classes as migration 113 writes them. The
+// The parts of ONE_NAME, in POSIX classes as migration 114 writes them. The
 // combining accents are written as escapes: they do not show on their own.
 const CLICK_MARK = "[!|ǀǁǂǃ=/]";
-const LETTER = "[[:alpha:]\\u0300-\\u036f]";
+const LETTER = "[[:alpha:]\\u0300-\\u036f\\u064b-\\u065f\\u135d-\\u135f]";
 // A click mark, an apostrophe or a hyphen, each followed in its word by a
 // letter; only an apostrophe or a hyphen may end a word.
 const BEFORE_A_LETTER = "[!|ǀǁǂǃ=/'’-]";
@@ -343,7 +352,7 @@ const REST_OF_WORD = `(?:${BEFORE_A_LETTER}*${LETTER})*['’-]*`;
 const NAME_OPENING = `(?:(?![[:lower:]])[[:alpha:]]|${CLICK_MARK}+[[:alpha:]]|[[:lower:]]{1,8}[[:upper:]]|[[:lower:]]{1,2}-[[:lower:]])`;
 
 /**
- * What makes a piece one name (migration 113): three words at most, each made
+ * What makes a piece one name (migration 114): four words at most, each made
  * of letters of any script with their accents, hyphens, apostrophes, and click
  * marks (! | ǀ ǁ ǂ ǃ = /) at the start of a word or inside it, never at its
  * end. The first word opens on an upper-case letter, a letter with no case
@@ -358,11 +367,11 @@ const NAME_OPENING = `(?:(?![[:lower:]])[[:alpha:]]|${CLICK_MARK}+[[:alpha:]]|[[
  * classes.
  */
 // @req REQ-125
-export const ONE_NAME = `^${NAME_OPENING}${REST_OF_WORD}(?: +${BEFORE_A_LETTER}*${LETTER}${REST_OF_WORD}){0,2}$`;
+export const ONE_NAME = `^${NAME_OPENING}${REST_OF_WORD}(?: +${BEFORE_A_LETTER}*${LETTER}${REST_OF_WORD}){0,3}$`;
 
 // PostgreSQL reads the POSIX classes with the database's character type, the
 // model with Unicode's: the same letters as long as that type is not C
-// (verification 6 of migration 113 checks it on each database).
+// (verification 6 of migration 114 checks it on each database).
 const oneName = new RegExp(
   ONE_NAME.replaceAll("[:alpha:]", String.raw`\p{L}`)
     .replaceAll("[:upper:]", String.raw`\p{Lu}`)
@@ -376,7 +385,7 @@ const pieceSeparator = new RegExp(NAME_PIECE_SEPARATOR, "u");
 export const FAMILY_NAME_LEAD_FLOOR = 0.4;
 
 /**
- * The family-name branch of the leads (migrations 110, 111 and 113, DEC-075): a
+ * The family-name branch of the leads (migrations 110, 111, 113 and 114, DEC-075): a
  * family name qualifies through its filed name or a recorded spelling that begins with
  * the query's first letter, both folded, at the family-name search's own
  * threshold. Whether it is offered —
@@ -396,7 +405,7 @@ export function familyNameLeads(query: string): ModelEntity[] {
 }
 
 /**
- * The forms migration 113 scores for a family name, among those sharing the
+ * The forms migration 114 scores for a family name, among those sharing the
  * query's first letter: its filed name, as filed, and each recorded spelling
  * that is one name (« da Costa » is not).
  */
@@ -408,7 +417,7 @@ function leadForms(item: ModelEntity, foldedQuery: string): string[] {
 }
 
 /**
- * The `matched_form` migration 113 returns for a family-name lead: its best
+ * The `matched_form` migration 114 returns for a family-name lead: its best
  * scoring form, the filed name first on a tie.
  */
 // @req REQ-125
@@ -429,8 +438,8 @@ export function familyNameLeadForm(
 }
 
 /**
- * The forms migration 113 scores for a people: each piece of its filed name,
- * its self-appellation and each exonym that is one name, without its
+ * The forms migration 114 scores for a people: each piece of its filed name,
+ * its self-appellation, each exonym and each spelling alias that is one name, without its
  * trailing bracket. « Baganda / Ganda » gives Baganda and Ganda, « Hai//om »
  * stays whole, « Diula, Djula, … » gives each spelling. No other form is
  * scored, the filed name included: a people none of whose pieces scores is
@@ -444,7 +453,7 @@ export function peopleLeadForms(item: ModelEntity): string[] {
 }
 
 /**
- * The `matched_form` migration 113 returns for a people lead: the best
+ * The `matched_form` migration 114 returns for a people lead: the best
  * scoring of the forms it scores, the filed name first on a tie. Undefined
  * when none reaches the floor: the people is then no lead.
  */

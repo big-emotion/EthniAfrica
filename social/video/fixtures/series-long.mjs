@@ -5,7 +5,7 @@
 // The texts are demonstration text: no claim here is a validated fact.
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { CARDS, signatureChunks, writeSyntheticVoice } from "./series-pays.mjs";
+import { CARDS, closingChunks, writeSyntheticVoice } from "./series-pays.mjs";
 
 const sample = JSON.parse(readFileSync(CARDS, "utf8"));
 const card = (id) => structuredClone(sample.cards.find((c) => c.id === id));
@@ -103,7 +103,7 @@ export const LONG_SCRIPT = [
       5
     ),
   },
-  { chapter: 1, silence: 2.4 },
+  { chapter: 1, silence: 3.2 },
   {
     card: "serie-afrique-tout-02",
     chunks: chunks(
@@ -122,7 +122,7 @@ export const LONG_SCRIPT = [
       7
     ),
   },
-  { chapter: 2, silence: 2.4 },
+  { chapter: 2, silence: 3.2 },
   {
     card: "serie-afrique-tout-02-cite",
     chunks: chunks(
@@ -138,7 +138,7 @@ export const LONG_SCRIPT = [
     card: "serie-afrique-tout-05",
     chunks: chunks(["Le nom s'étend,", "de province en continent."], 8),
   },
-  { chapter: 3, silence: 2.4 },
+  { chapter: 3, silence: 3.2 },
   {
     card: "serie-afrique-tout-06",
     chunks: chunks(
@@ -148,11 +148,7 @@ export const LONG_SCRIPT = [
   },
   {
     card: "serie-afrique-tout-07",
-    chunks: [
-      ...signatureChunks(),
-      { text: "Cherchez Afrique sur EthniAfrica,", duration: 2.8 },
-      { text: "lien en profil.", duration: 1.4 },
-    ],
+    chunks: closingChunks(),
   },
 ];
 export const LONG_CHAPTERS = [
@@ -183,7 +179,7 @@ export function longDemo(
         : { card: b.card, chunks: b.chunks.map(({ text }) => ({ text })) }
     ),
     reminder: "serie-afrique-tout-rappel",
-    ending: { search: "Afrique", pageOnline: true, next: "le pays des Noirs" },
+    ending: { next: "le pays des Noirs" },
     voice: { audio: "voice.wav", words: "words.json" },
   };
   edit(input);

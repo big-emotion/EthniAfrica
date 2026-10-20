@@ -1,0 +1,845 @@
+<title>Génériques de série EthniAfrica</title>
+<meta name="claude:viewport-fit-sides" content="cover" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&family=Nunito+Sans:wght@400;700;800&display=swap"
+/>
+<style>
+  /* Layout: one column of 430 px frames, the width a phone shows them in
+     the feed, with the notes beside each from tablet width up.
+     Colours: the site's parchment (light) and its night surface (dark). */
+  :root {
+    --ground: #fbf7f2;
+    --raised: #ffffff;
+    --ink: #2c2018;
+    --muted: #746557;
+    --accent: #b64e27;
+    --rule: #e8dfd3;
+    --display: Fraunces, Georgia, serif;
+    --text: "Nunito Sans", "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #120e0a;
+      --raised: #1d1710;
+      --ink: #f1e7d8;
+      --muted: #c9b99f;
+      --accent: #e8b96a;
+      --rule: #3a2e1f;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #120e0a;
+    --raised: #1d1710;
+    --ink: #f1e7d8;
+    --muted: #c9b99f;
+    --accent: #e8b96a;
+    --rule: #3a2e1f;
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font: 400 16px/1.55 var(--text);
+  }
+  .wrap {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding-block: 40px 80px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    display: grid;
+    gap: 56px;
+  }
+  h1,
+  h2 {
+    font-family: var(--display);
+    font-weight: 900;
+    text-wrap: balance;
+    margin: 0;
+    letter-spacing: -0.01em;
+  }
+  h1 {
+    font-size: clamp(38px, 8vw, 64px);
+    line-height: 1.02;
+  }
+  h1 em {
+    font-style: normal;
+    color: var(--accent);
+  }
+  h2 {
+    font-size: clamp(28px, 5.4vw, 40px);
+    line-height: 1.08;
+  }
+  h3 {
+    font: 800 14px/1.3 var(--text);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0;
+  }
+  p {
+    margin: 0;
+    max-width: 65ch;
+  }
+  .kicker {
+    font: 800 13px/1.3 var(--text);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  header,
+  section {
+    display: grid;
+    gap: 22px;
+  }
+  .status {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    font: 700 14px/1 var(--text);
+    color: var(--muted);
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    padding: 8px 14px;
+    width: fit-content;
+  }
+  .status b {
+    color: var(--accent);
+  }
+  .changes {
+    display: grid;
+    gap: 8px;
+    padding-left: 20px;
+    margin: 0;
+  }
+  .voice {
+    font: 600 clamp(19px, 3.2vw, 24px)/1.35 var(--display);
+    border-left: 3px solid var(--accent);
+    padding-left: 16px;
+  }
+
+  .ruler {
+    position: relative;
+    height: 72px;
+    border-top: 1px solid var(--rule);
+    font: 700 12px/1 var(--text);
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+  .ruler span {
+    position: absolute;
+    top: 6px;
+    transform: translateX(-50%);
+  }
+  .ruler i {
+    position: absolute;
+    top: 0;
+    height: 10px;
+    border-left: 1px solid var(--rule);
+  }
+  .ruler b {
+    position: absolute;
+    top: 30px;
+    height: 30px;
+    border-radius: 6px;
+    background: var(--raised);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--accent);
+    font: 800 12px/28px var(--text);
+    padding: 0 6px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .shots {
+    display: grid;
+    gap: 40px;
+  }
+  .shot {
+    display: grid;
+    gap: 16px;
+  }
+  @media (min-width: 768px) {
+    .shot {
+      grid-template-columns: 430px minmax(0, 1fr);
+      gap: 32px;
+      align-items: start;
+    }
+  }
+  .frame {
+    width: 430px;
+    max-width: 100%;
+    aspect-ratio: 9 / 16;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--rule);
+  }
+  .frame img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  .frame button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font: 800 13px/1 var(--text);
+    padding: 9px 12px;
+    border-radius: 999px;
+    border: 0;
+    background: #2c2018;
+    color: #fbf7f2;
+    cursor: pointer;
+  }
+  .frame button:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
+  }
+  .notes {
+    display: grid;
+    gap: 10px;
+    min-width: 0;
+  }
+  .notes .t {
+    font: 800 14px/1 var(--text);
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+  .notes .say {
+    font: 600 20px/1.35 var(--display);
+  }
+
+  .table {
+    overflow-x: auto;
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 620px;
+    font-size: 14px;
+    font-variant-numeric: tabular-nums;
+  }
+  th,
+  td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 800;
+    color: var(--muted);
+    background: var(--raised);
+  }
+  tr:last-child td {
+    border-bottom: 0;
+  }
+
+  .questions {
+    display: grid;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    counter-reset: q;
+  }
+  .questions li {
+    counter-increment: q;
+    display: grid;
+    grid-template-columns: 40px minmax(0, 1fr);
+    gap: 4px 12px;
+    padding: 18px;
+    background: var(--raised);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+  }
+  .questions li::before {
+    content: counter(q);
+    font: 900 30px/1 var(--display);
+    color: var(--accent);
+    grid-row: span 3;
+  }
+  .questions strong {
+    font-weight: 800;
+  }
+  .questions .reco {
+    color: var(--muted);
+    font-size: 15px;
+  }
+  .videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .videos figure {
+    margin: 0;
+    display: grid;
+    gap: 8px;
+    width: min(260px, 100%);
+  }
+  .videos video {
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    border-radius: 10px;
+    border: 1px solid var(--rule);
+    background: var(--raised);
+  }
+  .videos figcaption {
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .why {
+    display: grid;
+    gap: 18px;
+  }
+  .why div {
+    display: grid;
+    gap: 4px;
+  }
+  .why b {
+    font-weight: 800;
+  }
+  code {
+    font-size: 0.92em;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      transition: none !important;
+    }
+  }
+</style>
+
+<div class="wrap">
+  <header>
+    <p class="kicker">Étape 2 sur 3 · animatic</p>
+    <h1>Génériques <em>de série</em></h1>
+    <p>
+      Le générique d'intro et le générique de fin, communs à toutes les vidéos
+      de série. Ce sont des clips muets en 1080 × 1920 à 30 images par seconde :
+      la voix du reel se pose dessus. Les images sont montrées à 430 px, la
+      largeur d'un téléphone dans le fil.
+    </p>
+    <p class="status">
+      <b>Animatic rendu</b> · à recaler sur la vraie voix du premier reel
+    </p>
+    <h3>Les deux vidéos</h3>
+    <div class="videos">
+      <figure>
+        <video
+          src="videos/intro.mp4"
+          controls
+          muted
+          playsinline
+          loop
+          preload="metadata"
+        ></video>
+        <figcaption>Intro, 6 s, 180 images</figcaption>
+      </figure>
+      <figure>
+        <video
+          src="videos/outro.mp4"
+          controls
+          muted
+          playsinline
+          loop
+          preload="metadata"
+        ></video>
+        <figcaption>Fin, 8 s, 240 images</figcaption>
+      </figure>
+    </div>
+    <h3>Décidé le 19 octobre 2026</h3>
+    <ul class="changes">
+      <li>
+        Le nom tapé dans la fin est celui de l'épisode ; « Peul » quand
+        l'épisode n'a pas de page en ligne.
+      </li>
+      <li>
+        La personne est un doigt stylisé ; un plan filmé pourra le remplacer
+        plus tard.
+      </li>
+      <li>La fin dure 8 secondes.</li>
+      <li>
+        Les génériques gardent les polices du site, Fraunces et Nunito Sans.
+      </li>
+    </ul>
+    <h3>Ce qui a changé depuis la révision 2</h3>
+    <ul class="changes">
+      <li>
+        L'intro ne montre plus une recherche. Elle suit quelqu'un qui trouve
+        EthniAfrica sur un réseau social, s'abonne, touche le lien du profil et
+        arrive sur ethniafrica.com.
+      </li>
+      <li>
+        La fin reste la même. Sa dernière carte montre en plus les cinq réseaux
+        du projet : Instagram, TikTok, Facebook, YouTube et LinkedIn. Pas X.
+      </li>
+    </ul>
+  </header>
+
+  <section id="intro">
+    <h2>Intro · 6 secondes</h2>
+    <p class="voice">
+      « Avec EthniAfrica, on part des noms qu'on emploie en français pour mieux
+      comprendre l'Afrique et ses peuples. »
+    </p>
+    <div class="ruler" data-clip="intro" aria-label="Minutage de l'intro"></div>
+    <div class="shots" data-clip="intro"></div>
+  </section>
+
+  <section id="outro">
+    <h2>Fin · 8 secondes</h2>
+    <p class="voice">
+      « L'importance de connaître nos noms. Vous pouvez continuer la recherche
+      sur EthniAfrica, lien en profil. »
+    </p>
+    <div class="ruler" data-clip="outro" aria-label="Minutage de la fin"></div>
+    <div class="shots" data-clip="outro"></div>
+  </section>
+
+  <section id="minutage">
+    <h2>Points de synchronisation</h2>
+    <p>
+      Minutage estimé sur une voix à 16 caractères par seconde, à recaler sur la
+      piste réelle du premier reel monté. Une image dure 33 ms.
+    </p>
+    <h3>Intro · 180 images</h3>
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th>Images</th>
+            <th>Secondes</th>
+            <th>Mot dit</th>
+            <th>À l'écran</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>0–4</td>
+            <td>0,00–0,15</td>
+            <td>—</td>
+            <td>
+              Le parchemin seul : la carte précédente part pendant les 150
+              premières ms du changement de 300 ms.
+            </td>
+          </tr>
+          <tr>
+            <td>5–24</td>
+            <td>0,15–0,80</td>
+            <td>« Avec EthniAfrica »</td>
+            <td>
+              Le logo, puis le téléphone qui monte avec le profil EthniAfrica.
+            </td>
+          </tr>
+          <tr>
+            <td>27–51</td>
+            <td>0,90–1,70</td>
+            <td>« on part des noms »</td>
+            <td>
+              La pastille passe de TikTok à Instagram, puis à Facebook : le même
+              profil sur les trois réseaux.
+            </td>
+          </tr>
+          <tr>
+            <td>45–63</td>
+            <td>1,50–2,10</td>
+            <td>« qu'on emploie »</td>
+            <td>
+              Le doigt arrive et touche « S'abonner », qui devient « Abonné ✓ ».
+            </td>
+          </tr>
+          <tr>
+            <td>66–85</td>
+            <td>2,20–2,85</td>
+            <td>« en français »</td>
+            <td>Le doigt glisse vers le lien ethniafrica.com et le touche.</td>
+          </tr>
+          <tr>
+            <td>83–96</td>
+            <td>2,75–3,20</td>
+            <td>« pour mieux »</td>
+            <td>Le navigateur monte par-dessus le profil.</td>
+          </tr>
+          <tr>
+            <td>90–114</td>
+            <td>3,00–3,80</td>
+            <td>« comprendre »</td>
+            <td>
+              ethniafrica.com dans la barre d'adresse, la barre de chargement
+              avance.
+            </td>
+          </tr>
+          <tr>
+            <td>102–117</td>
+            <td>3,40–3,90</td>
+            <td>« l'Afrique »</td>
+            <td>
+              La page d'accueil du site apparaît : « D'où vient ce nom ? ».
+            </td>
+          </tr>
+          <tr>
+            <td>117–180</td>
+            <td>3,90–6,00</td>
+            <td>« et ses peuples. »</td>
+            <td>
+              Tenue sur le site. Les dernières images sont fixes, pour le
+              changement de carte qui suit.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>Fin · 240 images</h3>
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th>Images</th>
+            <th>Secondes</th>
+            <th>Mot dit</th>
+            <th>À l'écran</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>0–4</td>
+            <td>0,00–0,15</td>
+            <td>—</td>
+            <td>Changement de 300 ms depuis la carte « Nous pensons ».</td>
+          </tr>
+          <tr>
+            <td>5–23</td>
+            <td>0,15–0,75</td>
+            <td>« L'importance de connaître nos noms. »</td>
+            <td>La phrase monte, seule, lue pendant qu'elle est dite.</td>
+          </tr>
+          <tr>
+            <td>66–92</td>
+            <td>2,20–3,05</td>
+            <td>« Vous pouvez continuer »</td>
+            <td>
+              La phrase rejoint le haut de l'image et y reste ; le téléphone
+              remonte avec le nom déjà tapé.
+            </td>
+          </tr>
+          <tr>
+            <td>86–108</td>
+            <td>2,85–3,60</td>
+            <td>« la recherche »</td>
+            <td>Le doigt appuie sur Rechercher.</td>
+          </tr>
+          <tr>
+            <td>105–156</td>
+            <td>3,50–5,20</td>
+            <td>« sur EthniAfrica »</td>
+            <td>
+              Le champ monte ; « Vous avez cherché… » puis « Ce peuple se nomme
+              lui-même… » entrent ligne à ligne.
+            </td>
+          </tr>
+          <tr>
+            <td>150–186</td>
+            <td>5,00–6,20</td>
+            <td>« lien en profil. »</td>
+            <td>
+              « Les appellations », puis les noms un à un, 130 ms d'écart.
+            </td>
+          </tr>
+          <tr>
+            <td>188–203</td>
+            <td>6,25–6,75</td>
+            <td>—</td>
+            <td>Le téléphone redescend et s'efface.</td>
+          </tr>
+          <tr>
+            <td>197–230</td>
+            <td>6,55–7,65</td>
+            <td>—</td>
+            <td>
+              L'invitation, le logo, ethniafrica.com, le repère @ethniafrica et
+              les cinq réseaux entrent sous la phrase.
+            </td>
+          </tr>
+          <tr>
+            <td>230–240</td>
+            <td>7,65–8,00</td>
+            <td>—</td>
+            <td>Tenue.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="pourquoi">
+    <h2>Pourquoi ces choix</h2>
+    <div class="why">
+      <div>
+        <b>Le même décor à chaque vidéo.</b>
+        <p>
+          On reconnaît la série avant même de lire un mot. Le parchemin est
+          celui du film de soutien, déjà publié.
+        </p>
+      </div>
+      <div>
+        <b>L'intro montre le chemin que fait le spectateur.</b>
+        <p>
+          Il regarde la vidéo sur un réseau social. Il y voit le profil
+          EthniAfrica, le geste pour s'abonner, puis le lien vers le site :
+          c'est le chemin qu'il peut refaire tout de suite. Un geste qu'on
+          reconnaît retient mieux qu'une explication.
+        </p>
+      </div>
+      <div>
+        <b>L'abonnement est un geste rapide, pas une demande.</b>
+        <p>
+          L'intro arrive à la troisième seconde, avant que l'épisode ait donné
+          quoi que ce soit. Demander de s'abonner à ce moment-là fait souvent
+          décrocher. Le bouton change donc d'état en une demi-seconde, sans
+          texte qui insiste, et l'image continue vers le site. Aucun chiffre
+          d'abonnés n'est affiché.
+        </p>
+      </div>
+      <div>
+        <b>Le même profil sur trois réseaux.</b>
+        <p>
+          La pastille change, le profil reste : EthniAfrica est le même partout.
+          Le nom du compte, @ethniafrica, et la bio, « L'importance de connaître
+          nos noms. », sont les vrais.
+        </p>
+      </div>
+      <div>
+        <b>De vraies publications dans la grille.</b>
+        <p>
+          Les vignettes sont des photos de publications déjà parues, recadrées
+          au-dessus de leur titre pour ne garder aucun texte trop petit.
+        </p>
+      </div>
+      <div>
+        <b>La fin reprend la recherche et la montre jusqu'à la réponse.</b>
+        <p>
+          Le spectateur voit ce qu'il trouvera en suivant le lien : la promesse
+          de « lien en profil » est montrée avant d'être faite.
+        </p>
+      </div>
+      <div>
+        <b>Les cinq réseaux sur la dernière carte.</b>
+        <p>
+          Ils disent où retrouver le projet. La flèche vers le bas à gauche
+          reste : c'est là que les trois applications affichent le nom du compte
+          et son lien.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="calques">
+    <h2>Calques remplaçables</h2>
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th>Calque</th>
+            <th>Générique</th>
+            <th>Valeur par défaut</th>
+            <th>Règle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>name</code></td>
+            <td>Fin</td>
+            <td>Peul</td>
+            <td>Le nom de l'épisode, déjà tapé dans le champ.</td>
+          </tr>
+          <tr>
+            <td><code>layers/&lt;nom&gt;.json</code></td>
+            <td>Fin</td>
+            <td><code>peul.json</code></td>
+            <td>
+              La réponse de la page de ce nom : la phrase « Vous avez cherché… »
+              et les appellations, recopiées de la page en ligne. La page doit
+              exister avant la publication.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>L'intro n'a plus aucun calque : elle est identique dans chaque vidéo.</p>
+  </section>
+
+  <section id="questions">
+    <h2>La suite</h2>
+    <ol class="questions">
+      <li>
+        <strong>Recaler sur la vraie voix.</strong
+        ><span
+          >Au premier reel monté, on mesure où tombent les mots de l'intro et de
+          la fin, et on ajuste les temps du minutage.</span
+        ><span class="reco"
+          >Une commande refait les deux vidéos en une minute environ.</span
+        >
+      </li>
+      <li>
+        <strong>Un fichier de réponse par épisode.</strong
+        ><span
+          >Pour chaque nouveau nom, la phrase « Vous avez cherché… » et les
+          appellations sont recopiées de la page en ligne dans
+          <code>layers/&lt;nom&gt;.json</code>, puis la fin est rendue pour ce
+          nom.</span
+        ><span class="reco">Sans page en ligne, la fin garde Peul.</span>
+      </li>
+      <li>
+        <strong
+          >Brancher les génériques dans le moteur vidéo de la série.</strong
+        ><span
+          >L'ancien générique de fin reste dans le moteur jusqu'à ce que les
+          cartes 1.10.0 soient livrées et acceptées.</span
+        ><span class="reco"
+          >Cette étape demande ton accord avant de commencer.</span
+        >
+      </li>
+    </ol>
+  </section>
+</div>
+
+<script>
+  const CLIPS = {
+    intro: {
+      duration: 6.0,
+      shots: [
+        {
+          id: "i1-profile",
+          t: 1.2,
+          at: 0.0,
+          say: "Avec EthniAfrica,",
+          does: "Le profil EthniAfrica sur un réseau social ; la pastille passe de TikTok à Instagram, puis à Facebook.",
+        },
+        {
+          id: "i2-follow",
+          t: 2.3,
+          at: 0.95,
+          say: "on part des noms qu'on emploie",
+          does: "Un doigt touche « S'abonner », qui devient « Abonné ».",
+        },
+        {
+          id: "i3-link",
+          t: 2.7,
+          at: 2.2,
+          say: "en français",
+          does: "Le doigt touche le lien du profil, ethniafrica.com.",
+        },
+        {
+          id: "i4-browser",
+          t: 3.7,
+          at: 2.9,
+          say: "pour mieux comprendre",
+          does: "Le navigateur s'ouvre : ethniafrica.com dans la barre d'adresse, la page se charge.",
+        },
+        {
+          id: "i5-site",
+          t: 5.6,
+          at: 4.0,
+          say: "l'Afrique et ses peuples.",
+          does: "La page d'accueil du site : « D'où vient ce nom ? ». La recherche, c'est l'épisode qui la fait.",
+        },
+      ],
+    },
+    outro: {
+      duration: 8.0,
+      shots: [
+        {
+          id: "o1-line",
+          t: 1.6,
+          at: 0.0,
+          say: "L'importance de connaître nos noms.",
+          does: "La phrase du projet, seule, pendant que la voix la dit.",
+        },
+        {
+          id: "o2-search",
+          t: 3.3,
+          at: 2.35,
+          say: "Vous pouvez continuer la recherche",
+          does: "La phrase monte ; le téléphone revient avec le nom déjà tapé, et le doigt appuie sur Rechercher.",
+        },
+        {
+          id: "o3-result",
+          t: 4.9,
+          at: 4.0,
+          say: "sur EthniAfrica,",
+          does: "La réponse se construit : « Vous avez cherché… », puis le nom que le peuple se donne.",
+        },
+        {
+          id: "o4-forms",
+          t: 6.2,
+          at: 4.95,
+          say: "lien en profil.",
+          does: "Les appellations arrivent une à une, côte à côte.",
+        },
+        {
+          id: "o5-end",
+          t: 7.6,
+          at: 6.0,
+          say: "(la voix est finie)",
+          does: "La phrase, l'invitation, le logo, ethniafrica.com, le repère vers le nom du compte et les cinq réseaux.",
+        },
+      ],
+    },
+  };
+  const GUIDES = new Set(["i2-follow", "i5-site", "o4-forms", "o5-end"]);
+  const sec = (n) => n.toFixed(2).replace(".", ",") + " s";
+
+  for (const [clipId, clip] of Object.entries(CLIPS)) {
+    const ruler = document.querySelector(`.ruler[data-clip=${clipId}]`);
+    for (let s = 0; s <= clip.duration; s++) {
+      const x = (s / clip.duration) * 100;
+      ruler.insertAdjacentHTML(
+        "beforeend",
+        `<i style="left:${x}%"></i><span style="left:${x}%">${s} s</span>`
+      );
+    }
+    clip.shots.forEach((shot, i) => {
+      const end = clip.shots[i + 1]?.at ?? clip.duration;
+      ruler.insertAdjacentHTML(
+        "beforeend",
+        `<b style="left:${(shot.at / clip.duration) * 100}%;width:calc(${((end - shot.at) / clip.duration) * 100}% - 4px)" title="${shot.say}">${shot.id.split("-")[0]}</b>`
+      );
+    });
+    const list = document.querySelector(`.shots[data-clip=${clipId}]`);
+    for (const shot of clip.shots) {
+      const guides = GUIDES.has(shot.id);
+      list.insertAdjacentHTML(
+        "beforeend",
+        `
+        <article class="shot">
+          <div class="frame">
+            <img src="frames/${shot.id}.jpg" alt="${shot.does}" data-plain="frames/${shot.id}.jpg" data-guides="frames/${shot.id}-guides.jpg">
+            ${guides ? `<button type="button" id="g-${shot.id}" aria-pressed="false">Zone sûre</button>` : ""}
+          </div>
+          <div class="notes">
+            <p class="t">${shot.id} · image ${Math.round(shot.t * 30)} · ${sec(shot.t)}</p>
+            <p class="say">« ${shot.say} »</p>
+            <p>${shot.does}</p>
+            <p class="t">Voix dès ${sec(shot.at)}</p>
+          </div>
+        </article>`
+      );
+    }
+  }
+  document.addEventListener("click", (e) => {
+    const btn = e.target.closest(".frame button");
+    if (!btn) return;
+    const img = btn.parentElement.querySelector("img");
+    const on = btn.getAttribute("aria-pressed") !== "true";
+    btn.setAttribute("aria-pressed", String(on));
+    img.src = on ? img.dataset.guides : img.dataset.plain;
+  });
+</script>

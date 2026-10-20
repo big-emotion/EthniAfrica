@@ -21,9 +21,9 @@ const model = JSON.parse(
 export const CARDS = fileURLToPath(
   new URL("../../design-system/handoff/cards.sample.json", import.meta.url)
 );
-// The accepted signature line (Cartes 1.6.0), voiced one printed line per
-// chunk, at about 16 characters a second, as the design's timing board has it.
-const { signatureLine } = JSON.parse(
+// The accepted ending (Cartes 1.10.0): the closing line and the invitation,
+// voiced one printed line per chunk, at about 16 characters a second.
+const { signatureLines, invitationLines } = JSON.parse(
   readFileSync(
     new URL("../../design-system/version.json", import.meta.url),
     "utf8"
@@ -32,10 +32,21 @@ const { signatureLine } = JSON.parse(
 // The first word is said 0.6 s in, so the cover (frame 0) has no subtitle.
 const LEAD = 0.6;
 const round = (s) => Math.round(s * 1000) / 1000;
-export const signatureChunks = () =>
-  signatureLine
-    .split(/(?<=,) /u)
-    .map((text) => ({ text, duration: round([...text].length / 16) }));
+export const closingChunks = () =>
+  [...signatureLines, ...invitationLines].map((text) => ({
+    text,
+    duration: round([...text].length / 16),
+  }));
+
+// The intro bumper's sentence (social/series-idents), in four subtitle
+// chunks, at about 16 characters a second.
+export const introChunks = () =>
+  [
+    "Avec EthniAfrica, on part des noms",
+    "qu'on emploie en français",
+    "pour mieux comprendre l'Afrique",
+    "et ses peuples.",
+  ].map((text) => ({ text, duration: round([...text].length / 16) }));
 
 // Generated silence whose word times spread each chunk's units over the
 // chunk's scripted duration, from 0.6 s in; writes voice.wav and words.json.
@@ -90,11 +101,12 @@ export function seriesDemo(dir, { edit = () => {}, script = (b) => b } = {}) {
   const beats = script(
     model.beats.map((beat, i) => ({
       card: `serie-${beat.card}`,
-      chunks: [
-        // 1.6.0: the voice says the signature line before the search sentence.
-        ...(i === model.beats.length - 1 ? signatureChunks() : []),
-        ...beat.chunks.map(({ text, duration }) => ({ text, duration })),
-      ],
+      // 1.10.0: the closing card says the closing line and the invitation,
+      // in place of the 1.3.0 script's search sentence.
+      chunks:
+        i === model.beats.length - 1
+          ? closingChunks()
+          : beat.chunks.map(({ text, duration }) => ({ text, duration })),
     }))
   );
   writeSyntheticVoice(dir, beats);
@@ -106,11 +118,12 @@ export function seriesDemo(dir, { edit = () => {}, script = (b) => b } = {}) {
       (c) => c.id === beats[0].card
     ).demo,
     cards: CARDS,
+    // A beat without a card (the intro bumper) keeps its type.
     beats: beats.map((beat) => ({
-      card: beat.card,
+      ...(beat.type ? { type: beat.type } : { card: beat.card }),
       chunks: beat.chunks.map(({ text }) => ({ text })),
     })),
-    ending: { search: "Burkina Faso", pageOnline: true },
+    ending: {},
     voice: { audio: "voice.wav", words: "words.json" },
   };
   edit(input);

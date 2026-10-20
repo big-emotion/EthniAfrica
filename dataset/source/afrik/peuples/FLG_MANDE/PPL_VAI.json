@@ -6,7 +6,7 @@
   "content": {
     "appellations": {
       "mainName": "Vai",
-      "selfAppellation": "Vai / Vy",
+      "selfAppellation": "Vai",
       "exonyms": [
         "Gallinas (terme portugais, 15e-17e siecles)",
         "Liberian (nom historique de la langue)"
@@ -17,7 +17,8 @@
       "linguisticFamily": "FLG_MANDE",
       "ethnoLinguisticGroup": "Mande meridional (Southern Mande)",
       "historicalRegion": "Cote atlantique du Liberia (Grand Cape Mount County) et sud-est de la Sierra Leone (district de Pujehun)",
-      "currentCountries": ["LBR", "SLE"]
+      "currentCountries": ["LBR", "SLE"],
+      "spellingAliases": ["Vy"]
     },
     "ethnicities": [
       "Vai de Liberia — Grand Cape Mount County (groupe majoritaire)",

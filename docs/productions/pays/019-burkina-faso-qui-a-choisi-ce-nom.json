@@ -1,0 +1,47 @@
+{
+  "campaign": "pays-19",
+  "typologie": "pays",
+  "episode": 19,
+  "question": {
+    "fr": "Qui a choisi le nom Burkina Faso ?"
+  },
+  "myth": {
+    "fr": "Le nom Burkina Faso est-il né avec l'indépendance de 1960 ?"
+  },
+  "subjects": [
+    {
+      "kind": "country",
+      "id": "BFA",
+      "label": {
+        "fr": "Burkina Faso"
+      }
+    }
+  ],
+  "sitePath": "/fr/atlas/pays/BFA",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7698476459140189462",
+      "publishedAt": "2026-10-19"
+    },
+    {
+      "network": "instagram",
+      "format": "video",
+      "url": "https://www.instagram.com/p/DesG1Ydq490/",
+      "publishedAt": "2026-10-19"
+    },
+    {
+      "network": "facebook",
+      "format": "video",
+      "url": "https://www.facebook.com/reel/1638139228042921",
+      "publishedAt": "2026-10-19"
+    },
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://youtu.be/nc0XY9-8Jsg",
+      "publishedAt": "2026-10-19"
+    }
+  ]
+}

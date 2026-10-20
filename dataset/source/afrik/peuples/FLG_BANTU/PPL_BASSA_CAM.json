@@ -7,7 +7,7 @@
   "content": {
     "appellations": {
       "mainName": "Bassa du Cameroun",
-      "selfAppellation": "Basaa (Bàsáa)",
+      "selfAppellation": "Basaa",
       "exonyms": [
         "Bassa (transcription coloniale)",
         "Basa",
@@ -20,7 +20,7 @@
       "ethnoLinguisticGroup": "Bantous du littoral et du centre camerounais (groupe A, zone A40 selon la classification de Guthrie)",
       "historicalRegion": "Littoral et Centre du Cameroun (Sanaga-Maritime, Nkam, Nyong-et-Kelle, region d'Edea, Eseka, Yabassi)",
       "currentCountries": ["CMR"],
-      "spellingAliases": ["Basaá", "Basa'a", "Basa-um", "Basaeg"]
+      "spellingAliases": ["Basaá", "Basa'a", "Basa-um", "Basaeg", "Bàsáa"]
     },
     "ethnicities": [
       "Bassa de Nyong-et-Kelle — groupe central, region d'Eseka et Makak",

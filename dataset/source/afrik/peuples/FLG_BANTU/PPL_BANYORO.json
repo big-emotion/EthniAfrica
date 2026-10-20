@@ -6,16 +6,19 @@
   "content": {
     "appellations": {
       "mainName": "Banyoro",
-      "selfAppellation": "Banyoro (sg. Munyoro)",
+      "selfAppellation": "Banyoro",
       "exonyms": [
         "Nyoro (forme abrégée utilisée en linguistique et dans la littérature coloniale)",
-        "Bakitara, Kitara (en référence à l'Empire de Kitara dont les Banyoro sont les héritiers)",
-        "Ouanyoro, Vouanyoro, Wanyoro (transcriptions swahili et arabisées)",
+        "Bakitara (en référence à l'Empire de Kitara)",
+        "Kitara (en référence à l'Empire de Kitara)",
+        "Ouanyoro (transcription swahilie ou arabisée)",
+        "Vouanyoro (transcription swahilie ou arabisée)",
+        "Wanyoro (transcription swahilie ou arabisée)",
         "Bunyoro (désignation du royaume, utilisée par métonymie pour le peuple)"
       ],
       "originOfExonyms": "Banyoro applique le préfixe bantou Ba- (les gens de) au nom du territoire Nyoro ou du royaume Bunyoro (Bu- = pays de). Bakitara est un nom historique lié à l'Empire de Kitara dont le Bunyoro est l'héritier direct. Les formes Ouanyoro et Wanyoro sont des transcriptions phonétiques de l'arabe et du swahili, utilisées par les premiers explorateurs européens.",
       "whyProblematic": null,
-      "contemporaryUsage": "Banyoro est l'appellation standard en anglais et en ougandais. Nyoro est utilisé dans les contextes linguistiques. L'identité banyoro est étroitement liée à l'appartenance au royaume Bunyoro-Kitara, dont le souverain (Omukama) est actuellement Solomon Gafabusa Iguru I, 27e Omukama.",
+      "contemporaryUsage": "Banyoro est l'appellation standard en anglais et en ougandais. Nyoro est utilisé dans les contextes linguistiques. L'identité banyoro est étroitement liée à l'appartenance au royaume Bunyoro-Kitara, dont le souverain (Omukama) est actuellement Solomon Gafabusa Iguru I, 27e Omukama. Au singulier, on dit Munyoro.",
       "linguisticFamily": "FLG_BANTU",
       "ethnoLinguisticGroup": "Bantous des Grands Lacs (Zone J, sous-groupe Nyoro-Tooro-Ganda)",
       "historicalRegion": "Royaume de Bunyoro (ouest de l'Ouganda actuel), incluant les districts de Masindi, Hoima, Kibaale, Buliisa, Kiryandongo, Kakumiro et Kagadi",

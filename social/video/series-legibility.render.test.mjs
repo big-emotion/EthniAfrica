@@ -80,7 +80,18 @@ test.before(async () => {
   };
   drawn = { white: {} };
   for (const [name, seq] of Object.entries(demos)) {
-    const frames = Object.keys(boxes180[name]).map(Number);
+    // 1.10.0: the ending is shorter, so a 1.8.0 last frame may now be past
+    // the video's end: the video's own last frame is drawn instead, and the
+    // black demonstration also draws the white one's frames.
+    const frames = [
+      ...new Set([
+        ...Object.keys(boxes180[name])
+          .map(Number)
+          .filter((f) => f < seq.frames),
+        seq.frames - 1,
+        ...(name === "black" ? legibilityFrames(white) : []),
+      ]),
+    ];
     drawn[name] = {};
     for (const f of await renderSeriesFrames(seq, frames, { diagnose: true }))
       drawn[name][f.frame] = f;
@@ -102,7 +113,6 @@ const RING = {
   "vf-kick": 3,
   "vf-title": 6,
   "vf-title--xl": 8,
-  "vf-title--chap": 8,
   "vf-date": 8,
   "vf-label": 3,
   "vf-name": 5,
@@ -114,8 +124,6 @@ const RING = {
   "vf-sent": 3,
   "vf-pill": 3,
   "vf-next": 3,
-  "chapter-number": 8,
-  "chapter-of": 3,
   "vf-rlab": 3,
   "vf-txt": 4,
   "vf-by": 3,
@@ -141,10 +149,9 @@ const RING = {
 const blockKind = (b) => {
   const cls = b.cls.split(/\s+/u);
   if (b.tag === "B" && b.parent.includes("vf-sign")) return "wordmark";
-  if (b.tag === "B" && b.parent.includes("vf-chapnum")) return "chapter-number";
-  if (b.tag === "SPAN" && b.parent.includes("vf-chapnum")) return "chapter-of";
-  for (const k of ["vf-title--xl", "vf-title--chap"])
-    if (cls.includes(k)) return k;
+  // The chapter card's text sits on its own dark ground, not on a picture
+  // (operator, 20 October 2026): it carries no outline.
+  if (cls.includes("vf-title--xl")) return "vf-title--xl";
   return cls.find((c) => c in RING);
 };
 
@@ -274,8 +281,9 @@ function nearContrast(white, black, box, size, lit) {
 const MEASURED = {
   subtitle: { size: 56, least: 7.5 },
   band: { size: 32, least: 6 },
-  source: { size: 24, least: 6 },
-  credit: { size: 22, least: 4 },
+  // 1.10.0: the source and the credit at 26 px.
+  source: { size: 26, least: 6 },
+  credit: { size: 26, least: 4 },
 };
 
 // @req REQ-186
@@ -342,8 +350,13 @@ test("1.9.0 check 5: the lit word's box has its dark edge on a white picture", a
 
 // @req REQ-186
 test("1.9.0 check 4: on a pure black picture nothing moves by more than 10 levels outside the letters", async () => {
+  let checked = 0;
   for (const frame of BLACK_REFERENCES) {
+    // 1.10.0: the ending is shorter and wholly redrawn; 1.8.0's frame of it
+    // (1356) is past the video's end.
     const now = drawn.black[frame];
+    if (!now) continue;
+    checked++;
     const before = await sharp(
       readFileSync(new URL(`black-${frame}.png`, reference))
     )
@@ -367,6 +380,10 @@ test("1.9.0 check 4: on a pure black picture nothing moves by more than 10 level
       // and its shadow, 12 px spread 4 px. Where that shadow meets the line
       // above, the board itself moves 11 levels.
       if (now.litBoxes.some((r) => inRect(r, x, y, 16, 16))) continue;
+      // 1.10.0 redraws the kicker, the foot and the ending at new sizes:
+      // their letters' soft shadow reaches past the 4 px kept round the
+      // letters, so their boxes, with the same reach, are left out.
+      if (resized(now).some((r) => inRect(r, x, y, 16, 16))) continue;
       for (let k = 0; k < 3; k++) {
         const d = Math.abs(before[3 * i + k] - data[3 * i + k]);
         if (d > worst) [worst, where] = [d, [x, y]];
@@ -374,21 +391,46 @@ test("1.9.0 check 4: on a pure black picture nothing moves by more than 10 level
     }
     assert.ok(worst <= 10, `frame ${frame}: ${worst} levels at ${where}`);
   }
+  assert.equal(checked, 2, "frames 0 and 599 compared");
 });
 
+// The boxes 1.10.0 draws at a new size: the kicker (36/42, the head's first
+// box at y 318 when it is 42 px high), the foot's lines and the ending.
+const resized = (f) =>
+  f.boxes.filter(
+    (b) =>
+      ["source", "credit", "key", "ending", "pill", "ending-credit"].includes(
+        b.kind
+      ) ||
+      (b.kind === "head" &&
+        Math.abs(b.y - 318) <= 0.5 &&
+        Math.abs(b.h - 42) <= 0.5)
+  );
+// 1.10.0 changes the ending, the foot's size and the kicker's: the ending's
+// frames and the foot's lines are left out, and a kicker (30/36 before) keeps
+// its place, not its size. Everything else stays where 1.8.0 drew it.
+const CHANGED_BY_1_10_0 = new Set(["source", "credit", "key"]);
 // @req REQ-186
 test("1.9.0 check 6: every text box of the 1.8.0 acceptance frames stays in place within 0.5 px", () => {
   let compared = 0;
   for (const [demo, frames] of Object.entries(boxes180))
     for (const [frame, before] of Object.entries(frames)) {
+      if (!drawn[demo][frame]) continue;
+      if (before.some((b) => b.kind === "pill")) continue;
+      // The chapter card was redrawn on 20 October 2026 (operator).
+      if (before.some((b) => b.kind === "chapter-title")) continue;
       const now = drawn[demo][frame].boxes;
       assert.equal(now.length, before.length, `${demo} ${frame}`);
       before.forEach((b, i) => {
         const n = now[i];
         assert.equal(n.id, b.id, `${demo} ${frame}`);
         // A document's entry carries its passage, not a text box.
-        if (b.kind === "document") return;
-        for (const k of ["x", "y", "w", "h"])
+        if (b.kind === "document" || CHANGED_BY_1_10_0.has(b.kind)) return;
+        // A chapter card no longer shares the next picture (operator, 20
+        // October 2026), so that picture's slow zoom starts on its own card.
+        if (demo === "series-long" && b.kind === "image") return;
+        const kicker = b.kind === "head" && b.y === 318 && b.h === 36;
+        for (const k of kicker ? ["x", "y"] : ["x", "y", "w", "h"])
           assert.ok(
             Math.abs(n[k] - b[k]) <= 0.5,
             `${demo} ${frame} ${b.kind} « ${b.id} » ${k}: ${b[k]} → ${n[k]}`
@@ -396,5 +438,5 @@ test("1.9.0 check 6: every text box of the 1.8.0 acceptance frames stays in plac
         compared++;
       });
     }
-  assert.ok(compared > 500, `${compared} boxes`);
+  assert.ok(compared > 450, `${compared} boxes`);
 });

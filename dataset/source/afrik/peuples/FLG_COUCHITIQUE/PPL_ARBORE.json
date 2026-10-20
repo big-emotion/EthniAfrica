@@ -7,7 +7,7 @@
   "content": {
     "appellations": {
       "mainName": "Arbore",
-      "selfAppellation": "Hor ou Hoor (auto-désignation par les habitants des villages d'Eegude et Murale). Les habitants de Gandarab et Kulama utilisent Arbore.",
+      "selfAppellation": null,
       "exonyms": [
         "Erbore",
         "Irbore",
@@ -17,7 +17,7 @@
       ],
       "originOfExonyms": "Arbore est le terme adopte par les anthropologues et le gouvernement éthiopien, issu des deux villages de Gandarab et Kulama. Marle est l'auto-désignation des deux autres villages (Eegude et Murale). Hor/Hoor est le terme pan-communautaire utilisé par le peuple lui-meme.",
       "whyProblematic": "Le terme Arbore ne recouvre pas l'ensemble du peuple : les habitants de deux des quatre villages (Eegude et Murale) se désignent comme Marle et non comme Arbore. Cette dualité reflète une fragmentation identitaire interne.",
-      "contemporaryUsage": "Arbore est le terme officiel utilise par le gouvernement éthiopien et dans la litterature anthropologique. Hor est l'auto-appellation la plus inclusive. Le terme Erbore est également courant dans la litterature touristique.",
+      "contemporaryUsage": "Arbore est le terme officiel utilise par le gouvernement éthiopien et dans la litterature anthropologique. Hor est l'auto-appellation la plus inclusive. Le terme Erbore est également courant dans la litterature touristique. Les habitants d’Eegude et de Murale emploient Hor ou Hoor. Ceux de Gandarab et Kulama emploient Arbore.",
       "linguisticFamily": "FLG_COUCHITIQUE",
       "ethnoLinguisticGroup": "Couchitique de l'Est des basses terres (Lowland East Cushitic), groupe Omo-Tana",
       "historicalRegion": "Sud de l'Éthiopie, delta de la rivière Limo (aussi appelée Dullay ou Weito), zone du Sud-Omo",

@@ -7,7 +7,7 @@
   "content": {
     "appellations": {
       "mainName": "Dida",
-      "selfAppellation": "Dida / Dita",
+      "selfAppellation": "Dida",
       "exonyms": [
         "Dida (terme accepté et utilisé par la communauté elle-même)",
         "Lakota Dida (sous-groupe)",
@@ -20,7 +20,8 @@
       "linguisticFamily": "FLG_KROU",
       "ethnoLinguisticGroup": "Krou oriental",
       "historicalRegion": "Sud-ouest et centre-sud de la Côte d'Ivoire : régions de Divo, Lakota, Hiré-Watta, Guitry, Zikisso, Yocoboué, Fresco et Grand-Lahou",
-      "currentCountries": ["CIV"]
+      "currentCountries": ["CIV"],
+      "spellingAliases": ["Dita"]
     },
     "ethnicities": [
       "Dida de Lakota – sous-groupe principal, région de Lakota",

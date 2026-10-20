@@ -2,16 +2,19 @@
 // payload computed by render.mjs; the page has no clock and no network.
 import { readFileSync } from "node:fs";
 
-// Cartes 1.6.0 (operator, 16 October 2026): the satellite video's ending
-// carries the project's signature line in place of the motto « L'Afrique à
-// travers ses noms ». The line is the accepted design's (version.json), split
-// after each comma as the cards print it; the page keeps no copy of its own.
-const SIGNATURE_LINES = JSON.parse(
-  readFileSync(
-    new URL("../design-system/version.json", import.meta.url),
-    "utf8"
-  )
-).signatureLine.split(/(?<=,) /u);
+// The satellite video ends as the series video does (Cartes 1.10.0;
+// operator, 19 October 2026): the closing line on two lines in place of the
+// 1.6.0 signature line, then the fixed invitation on two lines. Both are the
+// accepted design's printed lines (version.json); the page keeps no copy.
+// They keep this ending's own sizes: the line in the line's Fraunces 600
+// 56/64, the invitation in ending A's sentence style, 700 30/40.
+const { signatureLines: SIGNATURE_LINES, invitationLines: INVITATION_LINES } =
+  JSON.parse(
+    readFileSync(
+      new URL("../design-system/version.json", import.meta.url),
+      "utf8"
+    )
+  );
 
 // The ending darkens the base to the design's brightness 0.45 (board 10),
 // which the end frames apply where a hold applies 0.84: hence their ratio.
@@ -49,18 +52,21 @@ void main() {
   float glow = exp(-max(d, 0.0) / max(0.045 * radius, 1.0)) * 0.55;
   vec3 space = mix(SPACE, ATMOS, glow);
   vec3 land = space;
+  // Both images are sampled here, outside any branch: texture() picks its mip
+  // level from its neighbours' coordinates, which are undefined inside a
+  // branch some of them skip. On SwiftShader that made the limb and the
+  // region's edge differ from run to run (README, « Determinism »). cc is
+  // clamped so the coordinates stay finite off the disc.
+  float cc = sqrt(max(1.0 - rho * rho, 0.0));
+  float lat0 = view.y, lon0 = view.x;
+  float lat = rho > 0.0 ? asin(clamp(cc * sin(lat0) + y * rho * cos(lat0) / rho, -1.0, 1.0)) : lat0;
+  float lon = lon0 + (rho > 0.0 ? atan(x * rho, rho * cc * cos(lat0) - y * rho * sin(lat0)) : 0.0);
+  float lonD = degrees(lon), latD = degrees(lat);
+  lonD = mod(lonD + 180.0, 360.0) - 180.0;
+  vec3 inRegion = texture(region, vec2((lonD - bounds.x) / (bounds.y - bounds.x), (bounds.w - latD) / (bounds.w - bounds.z))).rgb;
+  vec3 inWorld = texture(world, vec2((lonD + 180.0) / 360.0, (90.0 - latD) / 180.0)).rgb;
   if (rho < 1.0) {
-    float cc = sqrt(1.0 - rho * rho);
-    float lat0 = view.y, lon0 = view.x;
-    float lat = rho > 0.0 ? asin(clamp(cc * sin(lat0) + y * rho * cos(lat0) / rho, -1.0, 1.0)) : lat0;
-    float lon = lon0 + (rho > 0.0 ? atan(x * rho, rho * cc * cos(lat0) - y * rho * sin(lat0)) : 0.0);
-    float lonD = degrees(lon), latD = degrees(lat);
-    lonD = mod(lonD + 180.0, 360.0) - 180.0;
-    vec3 c;
-    if (lonD >= bounds.x && lonD <= bounds.y && latD >= bounds.z && latD <= bounds.w)
-      c = texture(region, vec2((lonD - bounds.x) / (bounds.y - bounds.x), (bounds.w - latD) / (bounds.w - bounds.z))).rgb;
-    else
-      c = texture(world, vec2((lonD + 180.0) / 360.0, (90.0 - latD) / 180.0)).rgb;
+    vec3 c = lonD >= bounds.x && lonD <= bounds.y && latD >= bounds.z && latD <= bounds.w ? inRegion : inWorld;
     c = graded(c) * (0.62 + 0.38 * sqrt(cc));
     float haze = 0.28 * pow(1.0 - cc, 3.0);
     land = c * (1.0 - haze) + ATMOS * haze * mix(0.55, 0.4, grade);
@@ -72,6 +78,76 @@ void main() {
   float t = smoothstep(0.0, 1.0, clamp((sqrt(nx * nx * 0.8 + ny * ny) - 0.6) / 0.75, 0.0, 1.0));
   colour = vec4(c * (1.0 - 0.24 * t * (1.0 - plain)) * ending(dim), 1.0);
 }`;
+
+// Cartes 1.11.0, the opening globe of the series video (series.md, « 1. The
+// opening globe »): the same orthographic globe as above, from frame 0. Its
+// camera passes three keys, 0 s (the subject's longitude + 40°, latitude
+// 2°, radius 300), 1.8 s (+ 7.5°, the subject's latitude − 3°, 430) and
+// 4.4 s (the first map view), on one monotone cubic per channel with zero
+// speed at both ends, the radius in log; the view centre is the map card's
+// (540, 1010), with no tilt. When it stops, the globe is the flat map.
+export const GLOBE = { keys: [0, 54, 132], grade: [102, 138], centreY: 1010 };
+
+// Fritsch–Carlson through the keys, zero slope at the first and last key:
+// no overshoot between keys, no stop at the middle one.
+export function monotonePath(times, values) {
+  const n = times.length;
+  const d = [];
+  for (let i = 0; i < n - 1; i++)
+    d.push((values[i + 1] - values[i]) / (times[i + 1] - times[i]));
+  const m = [0];
+  for (let i = 1; i < n - 1; i++) {
+    const [h0, h1] = [times[i] - times[i - 1], times[i + 1] - times[i]];
+    m.push(
+      d[i - 1] * d[i] <= 0
+        ? 0
+        : (3 * (h0 + h1)) / ((2 * h1 + h0) / d[i - 1] + (h1 + 2 * h0) / d[i])
+    );
+  }
+  m.push(0);
+  return (t) => {
+    if (t <= times[0]) return values[0];
+    if (t >= times[n - 1]) return values[n - 1];
+    let k = 0;
+    while (t > times[k + 1]) k++;
+    const h = times[k + 1] - times[k];
+    const s = (t - times[k]) / h;
+    const s2 = s * s;
+    const s3 = s2 * s;
+    return (
+      (2 * s3 - 3 * s2 + 1) * values[k] +
+      (s3 - 2 * s2 + s) * h * m[k] +
+      (-2 * s3 + 3 * s2) * values[k + 1] +
+      (s3 - s2) * h * m[k + 1]
+    );
+  };
+}
+
+export function globeCamera(view, frame) {
+  const keys = [
+    { lon: view.lon + 40, lat: 2, radius: 300 },
+    { lon: view.lon + 7.5, lat: view.lat - 3, radius: 430 },
+    view,
+  ];
+  if (frame >= GLOBE.keys[2])
+    return {
+      lon: view.lon,
+      lat: view.lat,
+      radius: view.radius,
+      centreY: GLOBE.centreY,
+    };
+  const at = (channel) => monotonePath(GLOBE.keys, keys.map(channel))(frame);
+  return {
+    lon: at((k) => k.lon),
+    lat: at((k) => k.lat),
+    radius: Math.exp(at((k) => Math.log(k.radius))),
+    centreY: GLOBE.centreY,
+  };
+}
+
+// The base grade during the globe, the recede grade from 4.6 s, `mono`
+// between them from 3.4 s, as overlays are about to enter.
+export const globeGrade = (frame) => monotonePath(GLOBE.grade, [0, 1])(frame);
 
 // The satellite overlays (boards 2 and 3): inks, hatching, areas, borders
 // and legend swatches, shared with the series video's map cards (1.4.1).
@@ -188,6 +264,7 @@ html,body{margin:0;background:#070605}
 </div>
 <script>
 const SIGNATURE_LINES = ${JSON.stringify(SIGNATURE_LINES)};
+const INVITATION_LINES = ${JSON.stringify(INVITATION_LINES)};
 const END_GLSL = ${JSON.stringify(END_GLSL)};
 const VERT = ${JSON.stringify(FLAT_VERT)};
 const FRAG = ${JSON.stringify(FLAT_FRAG)};
@@ -414,10 +491,10 @@ const el = (tag, style, text) => {
   if (text !== undefined) e.textContent = text;
   return e;
 };
-const signatureLine = () => {
-  const line = el("span", "font-family:Fraunces,Georgia,serif;font-weight:600;font-size:56px;line-height:64px;color:#f3e9da");
-  for (const t of SIGNATURE_LINES) line.append(el("span", "display:block;white-space:nowrap", t));
-  return line;
+const printedLines = (style, lines) => {
+  const block = el("span", style);
+  for (const t of lines) block.append(el("span", "display:block;white-space:nowrap", t));
+  return block;
 };
 ${OVERLAY_SCRIPT}
 document.querySelector("#lines defs").insertAdjacentHTML("beforeend", hatchDefs());
@@ -649,8 +726,8 @@ window.drawFrame = async (f) => {
   }
   panel.append(legend, caption);
 
-  // Board 10's closing: signature and, since Cartes 1.6.0, the signature line in place of the slogan; ending A adds what the page
-  // holds and the bare domain. Neither asks the viewer for anything.
+  // Board 10's closing: signature, then since Cartes 1.10.0 the closing line and the invitation in place of the slogan; ending A
+  // adds what the page holds and the bare domain.
   const closing = document.getElementById("closing");
   closing.replaceChildren();
   const closingParts = [];
@@ -663,9 +740,8 @@ window.drawFrame = async (f) => {
     big.src = "/logo.png"; big.alt = "Logo EthniAfrica";
     closingParts.push(big,
       el("span", "font-family:Fraunces,Georgia,serif;font-weight:600;font-size:64px;line-height:72px;color:#f3e9da", "EthniAfrica"),
-      // Cartes 1.6.0: the signature line, three lines broken after each
-      // comma, in the cards' Fraunces 600 56/64.
-      signatureLine());
+      printedLines("font-family:Fraunces,Georgia,serif;font-weight:600;font-size:56px;line-height:64px;color:#f3e9da", SIGNATURE_LINES),
+      printedLines("margin-top:28px;font-size:30px;line-height:40px;font-weight:700;color:#f3e9da", INVITATION_LINES));
     if (a) closingParts.push(
       el("span", "margin-top:28px;font-size:30px;line-height:40px;font-weight:700;color:#f3e9da", f.closing.sentence),
       el("span", "margin-top:6px;padding:12px 28px;border-radius:999px;border:2px solid #e8b96a;color:#e8b96a;font-size:34px;line-height:40px;font-weight:800;letter-spacing:.04em", f.closing.address));

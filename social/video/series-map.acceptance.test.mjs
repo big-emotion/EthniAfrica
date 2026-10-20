@@ -14,7 +14,7 @@ import { join } from "node:path";
 import sharp from "sharp";
 import { loadSeriesVideo, checkSeriesLayout, LAYOUT } from "./series.mjs";
 import { renderSeriesFrames } from "./series-render.mjs";
-import { seriesDemo, signatureChunks } from "./fixtures/series-pays.mjs";
+import { seriesDemo, closingChunks } from "./fixtures/series-pays.mjs";
 
 const assets = process.env.ETHNIAFRICA_VIDEO_ASSETS;
 const dirs = [];
@@ -33,16 +33,8 @@ function familleVideo(card2 = "serie-nom-famille-02", theme) {
         beats.map((beat, i) => ({
           ...beat,
           card: `serie-nom-famille-0${i + 1}`,
-          chunks:
-            i === beats.length - 1
-              ? [
-                  ...signatureChunks(),
-                  { text: "Cherchez Kouassi sur EthniAfrica,", duration: 2.8 },
-                  { text: "lien en profil.", duration: 1.4 },
-                ]
-              : beat.chunks,
+          chunks: i === beats.length - 1 ? closingChunks() : beat.chunks,
         })),
-      edit: (input) => (input.ending.search = "Kouassi"),
     }),
     { dir }
   );

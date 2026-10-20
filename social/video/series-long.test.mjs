@@ -45,36 +45,41 @@ test("1.7.0: a long video carries its chapters, each opened by a chapter card", 
       [3, 3, "Ce que nous pensons"],
     ]
   );
-  // The chapter card shows the chapter's first image by default.
+  // Operator, 20 October 2026: a chapter card shows nothing but its text, on
+  // the dark ground; it no longer borrows the next card's image.
   const first = indexOf(seq, "chapitre-1");
-  assert.deepEqual(seq.cards[first].image, seq.cards[first + 1].image);
+  assert.equal(seq.cards[first].image, undefined);
+  assert.equal(seq.cards[first].credit, undefined);
   assert.deepEqual(seq.warnings, []);
 });
 
 // @req REQ-186
-test("1.7.0: a chapter card given its own image carries that image's credit", () => {
-  const image = {
-    src: "Series/tifinagh-algeria.jpg",
-    w: 900,
-    h: 529,
-    focus: [0.5, 0.5],
-    anchor: [0.5, 0.5],
-    zoom: 1,
-  };
-  const credit =
-    "Photo : Patrick Gruban, inscriptions en tifinagh (Algérie), 2006, Wikimedia Commons, CC BY-SA 2.0";
-  const seq = long({
-    edit: (input) => {
-      const beat = input.beats.find(
-        (b) => b.type === "chapter" && b.chapter === 2
-      );
-      beat.image = image;
-      beat.credit = credit;
-    },
-  });
-  const chapter = seq.cards[indexOf(seq, "chapitre-2")];
-  assert.deepEqual(chapter.image, image);
-  assert.equal(chapter.credit, credit);
+test("a chapter card given an image is refused: it shows nothing but its text", () => {
+  assert.throws(
+    () =>
+      long({
+        edit: (input) => {
+          const beat = input.beats.find(
+            (b) => b.type === "chapter" && b.chapter === 2
+          );
+          beat.image = { src: "Series/tifinagh-algeria.jpg", w: 900, h: 529 };
+        },
+      }),
+    /Chapitre 2 : une carte de chapitre ne montre que son texte/
+  );
+});
+
+// @req REQ-186
+test("a chapter card runs on its own clock, from its first frame", () => {
+  const seq = long();
+  const i = indexOf(seq, "chapitre-1");
+  const at = (f) =>
+    seriesFrameState(seq, f).layers.find((l) => l.card === i).chapter.t;
+  assert.equal(at(seq.cardStarts[i]), 0);
+  assert.equal(at(seq.cardStarts[i] + 30), 1);
+  // Content cards carry no chapter clock.
+  const content = seriesFrameState(seq, seq.cardStarts[i + 1] + 30);
+  assert.ok(content.layers.every((l) => l.chapter === undefined));
 });
 
 // @req REQ-186
@@ -121,7 +126,9 @@ test("1.7.0: the chapter card fills the voice's silence; a short silence is refu
   const seq = long();
   const i = indexOf(seq, "chapitre-1");
   const full = seq.cardStarts[i + 1] - 9 - seq.cardStarts[i];
-  assert.ok(full >= 36, `${full} frames at full opacity`);
+  // The title enters 1.25 s into the card (38 frames), then holds long
+  // enough to be read, 1.2 s at least.
+  assert.ok(full >= 38 + 36, `${full} frames at full opacity`);
   // No subtitle while the chapter card is on screen alone.
   for (let f = seq.cardStarts[i]; f < seq.cardStarts[i + 1] - 9; f++)
     assert.equal(seriesFrameState(seq, f).subtitle, null, `frame ${f}`);
@@ -255,64 +262,28 @@ test("1.7.0: the reminder shows the opener's image and comes between 75 and 120 
 });
 
 // @req REQ-186
-test("1.7.0: the general invitation, word for word, after the signature line", () => {
-  const general = (texts) =>
-    long({
-      script: (beats) => {
-        beats
-          .at(-1)
-          .chunks.splice(
-            3,
-            2,
-            ...texts.map((text) => ({ text, duration: 2.6 }))
-          );
-        return beats;
-      },
-      edit: (input) => {
-        delete input.ending.search;
-        input.ending.general = true;
-        delete input.ending.next;
-      },
-    });
-  const seq = general([
-    "Vous aussi, cherchez votre nom sur EthniAfrica,",
-    "lien en profil.",
-  ]);
-  assert.equal(seq.ending.general, true);
-  assert.throws(
-    () => general(["Cherchez votre nom sur EthniAfrica,", "lien en profil."]),
-    /« Vous aussi, cherchez votre nom sur EthniAfrica, lien en profil. »/
+test("1.10.0: the next episode always sits under the pill, never on a card of its own", () => {
+  const named = long();
+  assert.deepEqual(named.ending, { next: "le pays des Noirs" });
+  assert.equal(named.cards.at(-1).next, "le pays des Noirs");
+  assert.ok(!named.cards.some((c) => c.type === "next"));
+  const general = long({
+    edit: (input) => (input.ending.general = true),
+  });
+  assert.equal(general.cards.at(-1).next, "le pays des Noirs");
+  assert.ok(!general.cards.some((c) => c.type === "next"));
+  assert.ok(
+    general.warnings.some((w) =>
+      /L'entrée de fin ne prend plus que next/.test(w)
+    )
   );
 });
 
 // @req REQ-186
-test("1.7.0: the next episode sits under the pill, or on its own card after the general invitation", () => {
-  const named = long();
-  assert.equal(named.cards.at(-1).next, "le pays des Noirs");
-  assert.ok(!named.cards.some((c) => c.type === "next"));
-  const general = long({
-    script: (beats) => {
-      beats.at(-1).silence = 2.4;
-      beats.at(-1).chunks.splice(
-        3,
-        2,
-        {
-          text: "Vous aussi, cherchez votre nom sur EthniAfrica,",
-          duration: 2.8,
-        },
-        { text: "lien en profil.", duration: 1.4 }
-      );
-      return beats;
-    },
-    edit: (input) => {
-      delete input.ending.search;
-      input.ending.general = true;
-    },
-  });
-  const own = general.cards.at(-2);
-  assert.equal(own.type, "next");
-  assert.equal(own.title, "le pays des Noirs");
-  assert.equal(general.cards.at(-1).next, undefined);
+test("1.10.0: the retired search and general sentences are no longer exported", async () => {
+  const series = await import("./series.mjs");
+  assert.equal(series.searchSentence, undefined);
+  assert.equal(series.GENERAL_SENTENCE, undefined);
 });
 
 // @req REQ-186
@@ -340,17 +311,15 @@ test("1.7.0: a source labelled in its own text is refused; `sourceLabel` names i
 });
 
 // @req REQ-186
-test("1.7.0: a run of one image changes the head only, under one zoom", () => {
+test("the change out of a chapter card cross-fades its dark ground into the next picture", () => {
   const seq = long();
   const i = indexOf(seq, "chapitre-1");
-  // Mid-change from the chapter card to its first card: one image, one zoom.
   const mid = seriesFrameState(seq, seq.cardStarts[i + 1] - 4);
   const incoming = mid.layers.find((l) => l.card === i + 1);
   const outgoing = mid.layers.find((l) => l.card === i);
-  assert.equal(incoming.opacity, 0);
+  assert.ok(
+    incoming.opacity > 0 && incoming.opacity < 1,
+    `${incoming.opacity}`
+  );
   assert.equal(outgoing.opacity, 1);
-  // The zoom goes on across the run rather than restarting.
-  const after = seriesFrameState(seq, seq.cardStarts[i + 1]);
-  const z = after.layers.find((l) => l.card === i + 1).zoom;
-  assert.ok(z > 1.0005, `zoom ${z} at the second card of the run`);
 });

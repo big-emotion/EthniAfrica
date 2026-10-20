@@ -10,6 +10,120 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+## [5.9.0] - 2026-10-19
+
+### Changed
+
+- Corpus: the fiches answer every fact of the Burkina Faso long video — the country
+  fiche `BFA` and the people fiches `PPL_MOSSI`, `PPL_DIOULA` and `PPL_FULA` gain the
+  missing items (#1900).
+- Corpus: Burkina Faso's societies without a king are filed, with their sources (#1901).
+- Social: the series intro bumper and end card are wired into the series video engine,
+  the satellite video and the reel clips end with the 1.10.0 closing, the end card gains
+  its Burkina Faso answer layer, and EthniAfrica Cartes 1.11.0 (the animated satellite
+  map) is integrated; the series video now stacks from the frame number and renders its
+  final pass in parallel (#1891, #1898, #1899, #1902, #1903, #1904). None of this changes
+  the site.
+
+## [5.8.0] - 2026-10-19
+
+### Added
+
+- Search: a people's spelling aliases are scored as people-name forms next to its filed
+  name, self-appellation and exonyms, when each alias is one name under the shared
+  four-word rule; the people appellations are split into searchable names. Two
+  migrations ship with this release, applied in order by the production deploy: `114`
+  re-issues `afrik_search_leads` with the aliases, and `115` adds the recorded-word
+  index below (REQ-125, DEC-075, ETNI-2135) (#1886).
+- Search: the name forms of the closing band are italicized (#1880).
+- Discoveries: related production subjects are resolved (ETNI-1982) (#1882).
+- Social: the EthniAfrica Cartes 1.10.0 design system is integrated, with the new
+  ending and small text on the image (#1894).
+- Docs: fixed opening, closing and long-first scripts for series videos, and the new
+  closing for carousels, captions and bios (#1887, #1888).
+
+### Changed
+
+- Search: the check « is this word written in a fiche? » reads an index instead of
+  walking every fiche. Migration `115` builds `afrik_recorded_words`, which keeps for
+  each fiche the folded words it records and the fields that record them, up to date
+  through triggers on the eight fiche tables and backfilled at migration time. On the
+  real corpus the check goes from 29 s to 188 ms in the worst case (« de », 1561
+  fiches) and 12 ms for « peul », with the same answers as before on the 15 queries
+  compared. A blank or punctuation-only query now answers no row. This replaces the
+  v5.7.1 stopgap as the way the check stays within the statement timeout; the stopgap
+  stays as a safety net (ETNI-2110) (#1893).
+
+### Fixed
+
+- Layout: the compact masthead is restored at 320 px (ETNI-2004) (#1878).
+- Family names: the patronyme fiche data is serialized (ETNI-1813) (#1881).
+
+## [5.7.1] - 2026-10-19
+
+### Fixed
+
+- Search: every search answered 500 on production after v5.7.0. The recorded-term
+  check (`afrik_search_recorded_term`, migration `112`) walks every fiche and ran past
+  the statement timeout on each query. After one timeout the check is now skipped for a
+  minute, so the search answers without recorded terms and the check comes back by
+  itself; any other error still fails. The check itself is still slow and gets its own
+  fix (ETNI-2110) (#1889).
+
+## [5.7.0] - 2026-10-19
+
+### Added
+
+- Search: five migrations ship with this release, applied in order by the production
+  deploy. `109` answers exactly from a fiche's name history, typed with or without its
+  letters (ETNI-2093); `110` offers a family name under « Cherchiez-vous… ? » when it is a
+  spelling of the searched name (ETNI-2092); `111` scores people leads on one-name
+  pieces only; `112` treats a word recorded in a fiche as an exact answer (ETNI-2110);
+  `113` widens the class prefix to eight letters (`abakwaManala`, `abakwaNdzundza`).
+- Search: related-only results are improved (ETNI-2111), long name result pages are
+  compacted (ETNI-2117), the entry points are unified (ETNI-2115), the self-name
+  explanations are counted and same-period runs found (ETNI-2068), the reader is handed
+  on to the self-name with one video (ETNI-2071–2073), an unknown name is asked for once
+  in the verdict (ETNI-2064), and the « Fiches » lens is grouped by the searched name
+  (ETNI-2088–2090).
+- Atlas: the « Les noms d'Afrique » hub (ETNI-2116) and the « Notre démarche » page with
+  footer links (ETNI-2112).
+- API: names are suggested by prefix (ETNI-2114).
+- Fiches: every fiche links to the story of its own name (ETNI-2061); a long chapter
+  folds after its first tile (ETNI-2045); family-name fiches follow the approved boards
+  (ETNI-2113); place fiches are rebuilt from brief 7 (ETNI-2167); family name-history
+  accounts are distinguished (ETNI-2168); patronym origin accounts move to the name
+  history (ETNI-2105).
+- Consent: a strip where refusing is as easy as accepting (ETNI-2060), with link and
+  keyboard order aligned (ETNI-2108).
+- Corpus: name histories written for waves 24 and 25 (the last peoples and family
+  names), with the Maka and Njem fiches and the sourced follow-ups of both waves
+  (ETNI-2011).
+- Copy: the name story of a fiche is titled once, « L'histoire des noms »; the sources
+  button reads « Source » / « Sources »; no figure of style in reader labels.
+
+### Changed
+
+- Corpus: waves 24 and 25 receive their structural and factual corrections, duplicates
+  and unattested fiches are arbitrated, the 2026-10-17 triage follow-ups are applied
+  (self-names, Zarma origin, namer reason, period labels, accents), and the Peul
+  self-name is written Fulɓe (ETNI-2011).
+- Result page: the brief 11 rules ship, and the story link leads to the name's own
+  address when it has one.
+- Fiche code: the grid and list builders are named for what they draw (ETNI-2045).
+
+### Fixed
+
+- Search: people leads score only on one-name pieces (migration `111`), and the class
+  prefix cap is renumbered to `113` after a numbering clash (ETNI-2092). Known
+  limitation, left to an editorial decision: eight family-name spellings with a particle
+  (da Costa, da Silva, al-Hawari…) are no longer scored by the one-name rule.
+- Search: accessible result chrome (ETNI-2107), a readable unknown-name action at night
+  (ETNI-2064), the open name kept through a lens round trip, and Shorts traced and
+  counted (ETNI-2062).
+- Typography: French punctuation stays attached to its word (ETNI-2109).
+- Data: transcribed oral traditions are surfaced (ETNI-2104).
+
 ## [5.6.0] - 2026-10-17
 
 ### Added
@@ -1886,7 +2000,11 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.6.0...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.9.0...HEAD
+[5.9.0]: https://github.com/big-emotion/ethniafrica/compare/v5.8.0...v5.9.0
+[5.8.0]: https://github.com/big-emotion/ethniafrica/compare/v5.7.1...v5.8.0
+[5.7.1]: https://github.com/big-emotion/ethniafrica/compare/v5.7.0...v5.7.1
+[5.7.0]: https://github.com/big-emotion/ethniafrica/compare/v5.6.0...v5.7.0
 [5.6.0]: https://github.com/big-emotion/ethniafrica/compare/v5.5.0...v5.6.0
 [5.5.0]: https://github.com/big-emotion/ethniafrica/compare/v5.4.0...v5.5.0
 [5.4.0]: https://github.com/big-emotion/ethniafrica/compare/v5.3.0...v5.4.0
