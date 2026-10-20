@@ -184,6 +184,9 @@ test("three slices: the manifest describes the joined file and every slice's pro
     cuts: null,
   });
   assert.deepEqual(record(three.manifest), record(one.manifest));
+  // Every frame FFmpeg received was a fast capture (README, « Fast capture »).
+  assert.equal(one.manifest.runtime.capture, "png-fast");
+  assert.equal(three.manifest.runtime.capture, "png-fast");
   // The slices are deleted once joined.
   assert.deepEqual(readdirSync(join(root, "three")).sort(), [
     "manifest.json",

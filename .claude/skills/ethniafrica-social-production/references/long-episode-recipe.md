@@ -88,8 +88,11 @@ render runs once.
 21. Every video ships one composed thumbnail for every network, 1080 × 1920, the essentials
     inside the 3:4 grid crop: the series band, the kicker, the title in the Cartes faces, the
     country in its flag's colours on the series' satellite imagery, the imagery credit and the
-    EthniAfrica signature. No personality photographs. The operator publishes it; the package
-    cannot carry a composed image, so it is delivered next to the package.
+    EthniAfrica signature. No personality photographs. Save it inside the piece folder and name
+    it in the package input's `thumbnail` (`file`, every printed line in `text`, the imagery
+    `credit`, the files it was composed from in `sources`), in place of `cover`
+    ([composed thumbnail](publication-package.md#composed-thumbnail)). The package copies it,
+    fingerprints it and tells each network to choose it as the cover.
 
 ## 8. Captions and package
 
@@ -97,13 +100,16 @@ render runs once.
     takes the short caption. YouTube takes the title and the long description plus the episode's
     tagged link (the channel has advanced features, so description links are clickable).
     Facebook carries the tagged link in a first comment. Instagram gets an alternative text. The
-    story carries a link sticker to the name address with the campaign tags, and a question.
+    story carries a link sticker to the name address with the campaign tags, and a question:
+    the Instagram adaptation's `story` (`linkSticker` tagged `utm_medium=story`,
+    `questionSticker`), with `story` in its verified `linkPlacements`
+    ([Instagram story](publication-package.md#instagram-story)).
     Every caption carries a line of four or five targeted hashtags ending with `#EthniAfrica`,
     just before the closing sentence (`docs/editorial/strategy/social-series.md`).
 23. The same duration on every network when the operator decides so; record the account evidence
     and what is still to check in the app (TikTok's upload length).
-24. `npm run social:package -- create` then `verify`; present `post.md`, the video and the
-    thumbnail for approval 3. Never post.
+24. `npm run social:package -- create` then `verify`; present `post.md`, the video, the
+    thumbnail and the story from the delivered revision for approval 3. Never post.
 
 ## 9. Checkpoint
 
