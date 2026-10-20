@@ -4,7 +4,10 @@ import { cn } from "@/lib/utils";
 import { ANSWER_BLOCK } from "@/components/search/answer/answerStyle";
 import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
 import { getSearchEntityLabel } from "@/components/search/searchEntityAccent";
-import { ficheHrefFor } from "@/components/search/SearchResultCard";
+import {
+  ficheHrefFor,
+  hasFichePage,
+} from "@/components/search/SearchResultCard";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
 import { getLocalizedSearchResultName } from "@/lib/search/localizedResult";
 import type { SearchResult } from "@/types/afrik-frontend";
@@ -24,11 +27,12 @@ export interface FicheLinkBlockProps {
  */
 // @req REQ-178
 export function FicheLinkBlock({
-  subjects,
+  subjects: answeredSubjects,
   language,
   onNavigate,
 }: FicheLinkBlockProps) {
   const copy = searchFeedCopy[language].blocks;
+  const subjects = answeredSubjects.filter(hasFichePage);
   if (subjects.length === 0) return null;
 
   const nameOf = (subject: SearchResult) =>
