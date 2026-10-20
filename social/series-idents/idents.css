@@ -2,6 +2,8 @@
    the site's own tokens (src/styles/tokens/color.css, linked before this
    file): the idents redraw the site's search, they do not capture it. */
 
+@import url(ground.css);
+
 @font-face {
   font-family: Fraunces;
   src: url(../design-system/fonts/Fraunces.ttf);
@@ -48,38 +50,6 @@ body {
 }
 .abs {
   position: absolute;
-}
-
-/* The animated ground, the same in both clips: a lit parchment, a warm glow
-   drifting slowly and a grain that moves every frame. Nothing flashes. */
-#parch {
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(
-    1300px 1000px at 50% 30%,
-    rgba(255, 255, 255, 0.55),
-    transparent 70%
-  );
-}
-#glow {
-  position: absolute;
-  width: 1400px;
-  height: 1400px;
-  left: -160px;
-  top: 300px;
-  border-radius: 50%;
-  background: radial-gradient(
-    closest-side,
-    color-mix(in srgb, var(--afh-cat-ocre) 12%, transparent),
-    transparent
-  );
-}
-#grain {
-  position: absolute;
-  inset: -256px;
-  background: url(assets/grain.png);
-  opacity: 0.05;
-  mix-blend-mode: overlay;
 }
 
 .lockup {

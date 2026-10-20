@@ -2,6 +2,8 @@
 
 ## Acceptance and integration status
 
+**1.12.0-proposition, 20 October 2026, accepted by the operator the same day, with the designer's recommendations.** Teaching cards in motion on the idents' parchment ground: the week table one people per table with lit rows, the formula built by moves, drawings for what a name says, and the parchment text card. See « Renderer integration of 1.12.0 ».
+
 **1.11.0-proposition, 19 October 2026, accepted by the operator the same day, with the designer's recommendations.** The animated satellite map of the series video: the opening globe that becomes the first map, area states, route arrows, drawings on the map, words on the map, moves inside a card, a name that changes, map and picture phases, and a silent viewing check. See « Renderer integration of 1.11.0 ».
 
 **1.10.0-proposition, 19 October 2026, accepted by the operator the same day, with the designer's recommendations.** A new ending for every series video and every carousel: « L’importance de connaître nos noms. » and the fixed invitation « Vous pouvez continuer la recherche sur EthniAfrica, lien en profil. » replace the signature line and the « Cherchez [nom] » invitation. See « Renderer integration of 1.10.0 ».
@@ -615,6 +617,57 @@ A chapter card is a card of the sequence, `{ "type": "chapter", "chapter": 2, "i
 
 **Boards and prototype.** `Video` group `video-1110-*` and the animated previews (Series, « Boards (1.11.0) »), drawn by a scratch board renderer (`tools/map111.html` with `scenes.js`, `illus.js` and the episode's map data), not the engine; the silent viewing check is `tools/silent.mjs`. They are kept with the design package, not deposited.
 
+## Renderer integration of 1.12.0
+
+**Status: accepted by the operator on 20 October 2026, with the designer's recommendations and the three drawings as drawn** (Series, « Teaching cards in motion and the parchment card (1.12.0-proposition) », decisions 1 to 8). It builds on `recette` with 1.11.0 integrated (PR #1902). A card without the new fields renders exactly as before, and no carousel card changes.
+
+**Card data.** Every `say` names a unit of the card's own chunks (`chunkUnits`), first occurrence, as in 1.5.0.
+
+```json
+{ "ground": "parchment",
+  "week": { "people": "Baoulé", "region": "Côte d’Ivoire", "say": "jour",
+            "rows": [["lundi", "kissié", "Akissi", "Kouassi"], "…"],
+            "highlights": [{ "day": "lundi", "say": "lundi" }] } }
+{ "ground": "parchment",
+  "formula": { "day": { "html": "vendredi se dit <r>ya</r>", "say": "ya" },
+               "lines": [{ "label": "garçon", "states": [
+                 { "say": "Kwa", "items": [{ "id": "K", "text": "Kwa" }] },
+                 { "say": "jour", "items": [{ "id": "K", "text": "Kwa" }, { "op": "+" }, { "id": "ya", "text": "ya", "day": true }] },
+                 { "say": "ya", "move": "join", "items": ["K", "ya"] },
+                 { "say": "tombé", "move": "fall", "items": ["K"] },
+                 { "say": "Yao", "move": "become", "items": [{ "id": "ya", "text": "Yao", "day": [0, 2] }] } ] }],
+               "notes": [{ "html": "on entend encore Kw<r>a</r>o", "say": "Kwao", "hold": 2 }] } }
+{ "ground": "parchment",
+  "drawings": [{ "kind": "courageux", "name": "Yaw", "quality": "le courageux", "say": "Yaw" }],
+  "attribution": { "name": "Kofi Agyekum", "role": "linguiste, université du Ghana", "say": "Agyekum" } }
+{ "ground": "parchment", "date": "7 octobre 1964", "dateLabel": "Loi sur le nom", "kicker": "Côte d’Ivoire",
+  "quote": { "lines": ["…"], "source": "…", "say": "famille", "marks": [{ "words": "son nom patronymique", "say": "famille" }] },
+  "words": [{ "html": "un jour de <r>naissance</r>", "say": "naissance" }] }
+```
+
+**Engine** (`social/video`), test first:
+
+1. **The ground** (`series-page.mjs`). A card with `ground: "parchment"` draws the idents' ground under its content: the same CSS values and `grain.png` as `social/series-idents/idents.css` (import them, do not copy them), the grain offset `((f × 73) mod 256 − 128, (f × 151) mod 256 − 128)` and the glow `(60 sin 0.35 t, 50 cos 0.27 t)` from the card's own clock. Its texts take the Parchemin inks without outline or second contour; the subtitle on a parchment card takes `ink` without outline and the lit word an `accent` box in #fffaf0 (question 8). The band and the signature cross-fade between their two inkings during the 300 ms change. Two consecutive parchment cards keep their ground; only the head and content change.
+2. **The week table** (`series-page.mjs`, `series.mjs`). One people per card, the columns and types of Series, « 1. The week table ». Entry in frames at 30 fps: people and labels 9 frames with the card; on `say`, rows in a cascade, each 9 frames rising 16 px, 3 frames apart. A highlight on its `say`, 12 frames: the band and the other rows to 40 %; two lit at most. The reading check: the table's characters ÷ 21 must fit in the card's time, otherwise the loader refuses the card (« Tableau trop long pour sa carte : le couper en deux ») and names the split.
+3. **The formula** (`series-page.mjs`, `series-sequence.mjs`). Lines are states; each state's layout is measured and centred at x 540; between two states the pieces present in both move from their old to their new place, new ones appear (9 frames, rising 12 px), dropped ones leave or fall. Moves: join 14 frames (the « + » out in 5), fall 15 frames (104 px down, scale 0.55, opacity 0.3, kept), become 9 frames (cross-fade in place). Two moves of one line at least 21 frames apart. A static formula (carousel) keeps 1.8.0.
+4. **Drawings** from `social/design-system/assets/Illustrations/<kind>.svg` (`courageux.svg`, `agile.svg`, `serviteur.svg` added), at 470 px wide two by two or 560 px alone; entry 12 frames rising 8 px; name 5 frames later, quality 9 frames later or on its own `say`. Refused on a card that is not parchment (« Dessin hors de la carte parchemin »), except map cards (1.11.0).
+5. **The parchment text card:** the dated head of 1.7.0 in Parchemin inks, the date growing from 0.94 to 1 in 15 frames; quotation lines 9 frames, 8 frames apart; underlines drawn left to right in 12 frames; free words 12 frames rising 12 px; three blocks at most under the head.
+6. **Phases.** A run of parchment cards is a picture phase: at least 180 frames (1.11.0).
+
+**Assets.** `assets/Illustrations/courageux.svg`, `agile.svg` and `serviteur.svg`, with the README updated; drawn by Claude Design, no third-party material. The grain stays in `social/series-idents/assets/grain.png`.
+
+**Checks** (tests first):
+
+1. Parchment ground: the grain and the glow at the given offsets on sample frames; no outline on any text of a parchment card; band and signature at their 1.4.0 places in Parchemin inks; consecutive parchment cards keep their ground pixel for pixel away from their text.
+2. Week table: girl | day | boy, one people; the cascade's timing; at most two lit rows, the others at 40 %; every row between y 590 and 1262 with a one-line title; the refusal of a table too long for its card.
+3. Formula: each move starts on its word and lasts its frames; the joined pieces touch (gap 0) and stay centred; a fallen part ends 104 px lower at 55 % and 30 %; nothing outside x 60 to 1020; the last state holds.
+4. Drawings: on parchment only; no text overlaps a drawing; the attribution box ends at y 1296.
+5. Text card: three blocks at most; the underlines under their words within 2 px; everything inside the head's bottom and y 1300.
+6. Subtitles on parchment in `ink`, no outline; on every other card unchanged.
+7. Everything accepted holds: a card without `ground` is pixel-identical with its 1.11.0 render; the carousel's 89 cards unchanged.
+
+**Boards and prototype.** `Video` group `video-1120-*` and the previews (Series, « Boards (1.12.0) »), drawn by a scratch board renderer (`tools/card112.html` with `cards112.js` and `illus.js`), not the engine; kept with the design package, not deposited.
+
 ## Required assets
 
 - Fonts: `fonts/Anton-Regular.ttf`, `fonts/NunitoSans.ttf`, `fonts/NotoSans-Variable.ttf`, `fonts/Fraunces.ttf`, `fonts/NotoSansEthiopic-Bold.ttf`, all under the SIL Open Font License 1.1.
@@ -716,3 +769,8 @@ A chapter card is a card of the sequence, `{ "type": "chapter", "chapter": 2, "i
 
 - From the operator's review of the animatic of the long Burkina Faso episode (series 1, episode 19, version 3): the map carries the video, understood without sound; satellite, not a flat printed map; an opening globe; drawn illustrations; closer views and true proportions; maps when the text situates, pictures when it does not. Ten questions (the opening globe, area states, route arrows, illustrations, proportions, words on the map, camera moves inside a card, a name that changes, map and picture phases, the silent viewing check) and boards of the opening, the Dioula, the Mossi, 1932 and 1947, 1984 and each illustration at 430 px. It replaces question 11 of the 1.10.0 brief.
 - Proposed and accepted on 19 October 2026, with the designer's recommendations on the eight questions.
+
+## Commissioned on 20 October 2026 (1.12.0)
+
+- From the operator's review of the narration v8 of « Kouassi et Yao » (series 3, episode 1): the week table girl | day | boy, one people per table, animated; the name formulas animated more visibly; drawings in the series' hand for what a name says; a parchment card with motion-design text for a passage with nothing to show but words. Six questions and boards at 1080 × 1920 with the 3:4 grid crop and the timings.
+- Proposed and accepted on 20 October 2026, with the designer's recommendations on the eight questions and the three drawings as drawn.

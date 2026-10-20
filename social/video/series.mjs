@@ -38,6 +38,13 @@ import {
   checkSideBySide,
   weekCharacters,
 } from "./series-document.mjs";
+import {
+  checkTeachingCard,
+  planTeaching,
+  checkParchmentPhases,
+  teachingLayer,
+  isParchment,
+} from "./series-teaching.mjs";
 
 // The full-screen bands in frame pixels (series.md and handoff.md,
 // « Renderer integration of 1.4.0 »). The image fills the frame; only text
@@ -201,8 +208,10 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     checkLongCardFields(card);
     // 1.8.0: the document card and the teaching cards.
     if (card.image?.document) checkDocumentCard(card);
-    if (card.formula) checkFormula(card);
+    if (card.formula && !card.formula.lines) checkFormula(card);
     if (card.sbs) checkSideBySide(card);
+    // 1.12.0: the parchment card and the teaching cards in motion.
+    checkTeachingCard(card);
     return { card: structuredClone(card), chunks: beat.chunks };
   });
   const numbers = entries.flatMap((e) =>
@@ -338,6 +347,7 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
       `Fait sans marque à l'écran : « ${f.say} » (${f.card}, ${Math.round(f.coverage * 100)} % du temps, ${f.delay === null ? "aucune marque" : `première marque après ${Math.round((f.delay * 1000) / FPS)} ms`})`
     );
   planLongVideo(seq, input);
+  checkParchmentPhases(seq);
   return seq;
 }
 
@@ -601,7 +611,7 @@ function planTeachingCard(seq, i) {
   const end = seq.cardStarts[i + 1] ?? seq.frames;
   if (card.image?.document)
     card.markFrame = wordOf(seq, i, card.image.document.say).frame;
-  if (card.formula) {
+  if (card.formula && !card.formula.lines) {
     card.formulaFrames = card.formula.steps.map(
       (step) => wordOf(seq, i, step.say).frame
     );
@@ -622,7 +632,9 @@ function planTeachingCard(seq, i) {
       ...(note && { note: noteSay ? wordOf(seq, i, noteSay).frame : start }),
     };
   }
-  if (card.week) {
+  // 1.12.0: a parchment card's parts move on their words.
+  if (isParchment(card)) planTeaching(seq, i);
+  if (card.week && card.week.people === undefined) {
     // A day the voice names enters on its word; the others with the card.
     card.weekFrames = card.week.rows.map(([day]) => {
       try {
@@ -711,8 +723,10 @@ export function seriesFrameState(seq, frame) {
   // (operator, 14 October 2026).
   const layers = [{ card: current, opacity: 1, zoom: zoom(current), text: 1 }];
   const next = current + 1;
+  let change = 0;
   if (next < starts.length && frame > starts[next] - CROSS_FADE) {
     const p = (frame - (starts[next] - CROSS_FADE)) / CROSS_FADE;
+    change = p;
     layers[0].text = Math.max(0, 1 - 2 * p);
     layers.push({
       card: next,
@@ -728,6 +742,11 @@ export function seriesFrameState(seq, frame) {
     imageRun(current) >= 0 &&
     imageRun(current) === imageRun(next)
   )
+    layers[1].opacity = 0;
+  // 1.12.0: two parchment cards in a row keep their ground, drawn by the
+  // outgoing card; only the head and the content change.
+  const parchment = (i) => i < seq.cards.length && isParchment(seq.cards[i]);
+  if (layers.length === 2 && parchment(current) && parchment(next))
     layers[1].opacity = 0;
   // Items and the quoted person enter on their word, over 9 frames, their
   // place kept from the card's first frame.
@@ -757,6 +776,7 @@ export function seriesFrameState(seq, frame) {
         l.note = arrive(card.sbsFrames.note);
     }
     if (card.weekFrames) l.rows = card.weekFrames.map(arrive);
+    teachingLayer(seq, l, frame, CROSS_FADE);
   }
   // A map sequence's card shows its run's map, zoomed once over the run.
   // Between two cards of one run the map is drawn once, by the outgoing
@@ -794,9 +814,16 @@ export function seriesFrameState(seq, frame) {
               ? 1
               : 1 - leave((frame - chunk.fullTo) / VOICE.fade),
         highlight: highlightAt(chunk.words, frame / FPS),
+        // 1.12.0: said over a parchment card, in its ink without outline.
+        ...(parchment(chunk.card) && { parchment: true }),
       }
     : null;
-  return { layers, subtitle };
+  if (!seq.cards.some(isParchment)) return { layers, subtitle };
+  // 1.12.0: how much of the frame is parchment, for the band's and the
+  // signature's two inkings.
+  const weight =
+    (parchment(current) ? 1 - change : 0) + (parchment(next) ? change : 0);
+  return { layers, subtitle, parchment: weight };
 }
 
 // Problems with the boxes the browser drew on one frame. `boxes` are
@@ -826,6 +853,8 @@ const BANDS = {
   "chapter-title": [940, 1300],
   // 1.8.0: the formula in the clear zone, ending above y 1290.
   formula: [LAYOUT.clear[0], 1290],
+  // 1.12.0: a parchment card's content, between the head and y 1300.
+  parchment: [LAYOUT.head[0], 1300],
 };
 const X_BANDS = {
   slot: LAYOUT.slot.x,

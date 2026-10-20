@@ -1,6 +1,6 @@
 # Series
 
-**1.11.0-proposition, 19 October 2026, accepted by the operator the same day:** the animated satellite map of the series video, its opening globe, area states, route arrows, drawings and words on the map (« The animated satellite map (1.11.0-proposition) » below). **Series idents, 19 October 2026, the operator's decision:** the intro bumper after the opener and the end card in place of the 1.10.0 video ending (« The series idents in the video » below). **1.10.0-proposition, 19 October 2026, accepted by the operator the same day:** a new ending for every series video and every carousel, replacing the signature line and the invitation (« The closing (1.10.0) » below). **1.9.0-proposition, 16 October 2026, accepted by the operator the same day:** a second contour under every text on the image of the series video (« Legibility on light pictures: the double outline » below). **1.8.0-proposition, 15 October 2026, accepted by the operator the same day:** the document card and three teaching cards in the series video (« Document and teaching cards » below). **1.7.0-proposition, 15 October 2026, accepted by the operator the same day:** the long series video, with chapters on screen (« Vidéo longue et chapitres » below). **1.6.0-proposition, 15 October 2026, accepted by the operator the same day:** the project's signature line at the end of every carousel and every series video (« The signature line » below). **1.5.0-proposition, 15 October 2026, accepted by the operator the same day:** a map sequence in the series video, areas and names entering on the word that says them, one map across several cards (« Map sequence » below). **1.4.1-proposition, 14 October 2026, accepted by the operator the same day:** in the series video, map cards are drawn on satellite imagery (« Map cards on satellite imagery » below); nothing else changes. **1.4.0-proposition, 14 October 2026, accepted by the operator the same day:** the series video in full screen replaces layout B (« Vidéo de série » below). **1.3.0-proposition, 13 October 2026, accepted by the operator on 14 October 2026 with video layout B, since withdrawn.** It adds three things to the accepted 1.2.0-proposition and changes nothing else: one series band, a carousel model for each of the seven series, and one 9:16 video model. A card without `series` renders exactly as in 1.2.0: the 37 non-series sample cards were rendered again with 1.3.0 and compared with the 1.2.0 references, pixel for pixel identical.
+**1.12.0-proposition, 20 October 2026, accepted by the operator the same day:** the parchment card, the week table one people per table, the formula in motion, drawings on teaching cards and the parchment text card (« Teaching cards in motion and the parchment card (1.12.0-proposition) » below). **1.11.0-proposition, 19 October 2026, accepted by the operator the same day:** the animated satellite map of the series video, its opening globe, area states, route arrows, drawings and words on the map (« The animated satellite map (1.11.0-proposition) » below). **Series idents, 19 October 2026, the operator's decision:** the intro bumper after the opener and the end card in place of the 1.10.0 video ending (« The series idents in the video » below). **1.10.0-proposition, 19 October 2026, accepted by the operator the same day:** a new ending for every series video and every carousel, replacing the signature line and the invitation (« The closing (1.10.0) » below). **1.9.0-proposition, 16 October 2026, accepted by the operator the same day:** a second contour under every text on the image of the series video (« Legibility on light pictures: the double outline » below). **1.8.0-proposition, 15 October 2026, accepted by the operator the same day:** the document card and three teaching cards in the series video (« Document and teaching cards » below). **1.7.0-proposition, 15 October 2026, accepted by the operator the same day:** the long series video, with chapters on screen (« Vidéo longue et chapitres » below). **1.6.0-proposition, 15 October 2026, accepted by the operator the same day:** the project's signature line at the end of every carousel and every series video (« The signature line » below). **1.5.0-proposition, 15 October 2026, accepted by the operator the same day:** a map sequence in the series video, areas and names entering on the word that says them, one map across several cards (« Map sequence » below). **1.4.1-proposition, 14 October 2026, accepted by the operator the same day:** in the series video, map cards are drawn on satellite imagery (« Map cards on satellite imagery » below); nothing else changes. **1.4.0-proposition, 14 October 2026, accepted by the operator the same day:** the series video in full screen replaces layout B (« Vidéo de série » below). **1.3.0-proposition, 13 October 2026, accepted by the operator on 14 October 2026 with video layout B, since withdrawn.** It adds three things to the accepted 1.2.0-proposition and changes nothing else: one series band, a carousel model for each of the seven series, and one 9:16 video model. A card without `series` renders exactly as in 1.2.0: the 37 non-series sample cards were rendered again with 1.3.0 and compared with the 1.2.0 references, pixel for pixel identical.
 
 The editorial frame is `docs/editorial/strategy/social-series.md` (13 October 2026): seven series, a fixed question and fixed beats per series, a video every episode, and a carousel only when the episode takes apart an attested received idea. « The accepted card system, plus one band carrying the series name and the episode number. No separate design per series. »
 
@@ -414,7 +414,7 @@ The same rule serves the Isidore page of « Afrique » (a printed page around a 
 
 #### Name-making formula
 
-The formula sits in the clear zone, centred, built word by word with the voice (`video-180-formule.jpg`):
+1.12.0-proposition (accepted) sets the formula on the parchment card and builds it by moves: see « Teaching cards in motion and the parchment card ». The formula sits in the clear zone, centred, built word by word with the voice (`video-180-formule.jpg`):
 
 - **Lines.** The day (« vendredi se dit ya »), Nunito Sans 800 40/48 in `on-image-ink`; for each child, a label (« fille », « garçon ») in Nunito Sans 800 32/38, then the formula line in Anton 120/124, or 104 or 88 when it needs them to hold in 960 px. Operators « + », « = » and « → » in Nunito Sans 800, `on-image-muted`.
 - **Colour carries the day.** The day word is in `on-image-accent` everywhere it appears, in the formula and inside the name (A**ya**, **Ya**o, Koua**ssi**): the eye follows what stays. Girl and boy are told apart by their labels, not by colours.
@@ -428,7 +428,7 @@ Two columns under the title, « Côte d'Ivoire (baoulé) » and « Ghana (twi) �
 
 #### Week table
 
-Seven rows (the days, in French) and two sides (« Baoulé » and « Twi (ashanti) »), each cell the boy's and the girl's names (Nunito Sans 800 38/44) over the day's own word (Nunito Sans 700 24/28, `on-image-muted`), with « garçon · fille » under each side's heading (`video-180-semaine.jpg`). It reads at 430 px (names at 15 px) and ends at y 1124. Its 28 names and 14 day words take about 10 s to read at 21 characters a second. Rule: one card when the voice leaves it 10 s; otherwise two cards, Monday to Thursday and Friday to Sunday, each held its own reading time. The rule is accepted (decision 4); whether the table enters this episode stays the operator's call (« on attend un peu pour ça »). Data: Pagnet 2005 for Baoulé, Christaller 1881 and Agyekum 2006 for Twi, as in the episode's notes; no cell is filled from another people's table.
+1.12.0-proposition (accepted) sets the week table one people per card, girl | day | boy, on the parchment card, and animates it: see « Teaching cards in motion and the parchment card ». Seven rows (the days, in French) and two sides (« Baoulé » and « Twi (ashanti) »), each cell the boy's and the girl's names (Nunito Sans 800 38/44) over the day's own word (Nunito Sans 700 24/28, `on-image-muted`), with « garçon · fille » under each side's heading (`video-180-semaine.jpg`). It reads at 430 px (names at 15 px) and ends at y 1124. Its 28 names and 14 day words take about 10 s to read at 21 characters a second. Rule: one card when the voice leaves it 10 s; otherwise two cards, Monday to Thursday and Friday to Sunday, each held its own reading time. The rule is accepted (decision 4); whether the table enters this episode stays the operator's call (« on attend un peu pour ça »). Data: Pagnet 2005 for Baoulé, Christaller 1881 and Agyekum 2006 for Twi, as in the episode's notes; no cell is filled from another people's table.
 
 #### Boards (1.8.0)
 
@@ -794,6 +794,111 @@ The eight questions were answered with the designer's recommendations (« j'acce
 7. **Eight texts on the map** at once, two of them words, in place of 1.4.1's six names.
 8. **The colonial power in cream** (`map-foreign`), outside the four inks.
 
+## Teaching cards in motion and the parchment card (1.12.0-proposition)
+
+**Proposed by Claude Design and accepted by the operator on 20 October 2026, with the designer's recommendations on its eight questions and the three drawings as drawn** (« Decided by the operator on 20 October 2026 » below). Brief: `proposals/1.12.0-proposition/claude-design-brief.md`, from the operator's review of the narration v8 of « Kouassi et Yao » (series 3, episode 1) on 20 October 2026. It builds on the accepted 1.11.0 and the series idents. Every accepted rule stays: the head, the band, the subtitles, the foot, the chapters (1.7.0), the ending (1.10.0), the map grammar (1.11.0), picture phases of 6 s at least, the reading speed (17 characters a second recommended, 21 at most).
+
+The operator's decisions, not to reopen: the week table reads girl | day | boy, one people per table, and its presentation is animated; the name formulas are animated more visibly than a cross-fade; drawings in the series' hand illustrate what a name says, never photographs; a passage with nothing to show but words is a parchment card with motion-design text, like the idents.
+
+Boards: `video-1120-*` in the `Video` group, with eight animated previews, drawn by a scratch board renderer (`card112.html`, not the engine) from the narration v8 and the episode's week table. Times are estimated at the voice's pace; the engine takes them from the voice's word file.
+
+### The parchment card
+
+Most of the episode explains how a name is made, which neither a map nor a photograph can show. Today those cards sit on a photograph of the Akan gold weights, and the letters mix with the object (`video-1120-avant.jpg`). 1.12.0 gives them a ground of their own: the idents' parchment.
+
+- **The ground** is the idents' (`social/series-idents/idents.css`): the site's `bg` #fbf7f2, a white light (radial, 1300 × 1000 px at 50 % 30 %, 55 %), an ochre glow (#c9821f at 12 %, 1400 px) drifting slowly (60 px by sin 0.35 t, 50 px by cos 0.27 t) and the support film's grain (`grain.png`, 5 %, overlay) moving every frame. The same ground, not a calmer copy: the grain is too fine to be seen under a letter, and the glow moves a few pixels a second (question 5).
+- **What sits on it:** the week table, the name formula, the side-by-side forms (1.8.0), drawings, and words. Photographs, documents (1.8.0's document card) and maps keep their image.
+- **Inks: the Cartes Parchemin theme**, without outline or second contour, since the ground is calm and light: `ink` #2a1e15, `accent` #7f5212, `ink-muted` #55463a, `ink-faint` #655443, `rule` #d6c8b0.
+- **The band, the head, the foot and the signature stay** (question 6), at their places and sizes (1.4.0, 1.10.0), in those inks. The band and the signature are drawn once for the video; during the change into or out of a parchment card they cross-fade between their two inkings, in place.
+- **Subtitles** keep their band, size and timing. On parchment, recommended: the subtitle in `ink` without outline, the lit word on an `accent` box in #fffaf0 (`video-1120-sous-titres.jpg`). The image subtitle (light letters on a 9 px dark outline) reads too, but makes a dark patch on the light paper.
+- **Changes.** A change into or out of a parchment card is the ordinary 300 ms change (1.4.0): images cross-fade, the old head leaves in the first 150 ms and the new one enters in the last 150 ms. Two parchment cards in a row keep their ground, as cards of one map sequence keep their map (1.5.0): only the head and the content change.
+- **Length.** A run of parchment cards is a picture phase (1.11.0): whole sentences, 6 s at least.
+- **The 3:4 grid crop** (y 240 to 1680) keeps the head, the table, the formula, the drawings, the quotation and the subtitles; the foot and the signature fall outside it, as on every series card (`video-1120-grille.jpg`).
+
+### 1. The week table
+
+One people per table (`video-1120-semaine.jpg`).
+
+| Element                                       | Type                                             | Ink                               | Place                          |
+| --------------------------------------------- | ------------------------------------------------ | --------------------------------- | ------------------------------ |
+| People and country                            | Nunito Sans 800 40/48, the country 700 30        | `accent`, the country `ink-muted` | centred, top 490               |
+| Column labels « fille », « jour », « garçon » | Nunito Sans 800 22/28 capitals, tracked 0.12 em  | `ink-muted`                       | y 550                          |
+| Girl's name                                   | Nunito Sans 800 48/56                            | `ink`                             | right-aligned, ending at x 400 |
+| French day, the people's word under it        | Nunito Sans 800 32/38; the word 700 italic 28/32 | `ink`; the word `accent`          | centred between x 400 and 680  |
+| Boy's name                                    | Nunito Sans 800 48/56                            | `ink`                             | left-aligned from x 680        |
+| Rows                                          | 96 px apart, a 1 px `rule` under each            |                                   | from y 590 to 1262             |
+
+- **Reading.** Seven rows hold 152 characters (Baoulé and Twi alike): 7.2 s at 21 characters a second, 8.9 s at 17. **One card per people when the voice leaves it 7.2 s or more**, 9 s recommended; otherwise two cards, Monday to Thursday and Friday to Sunday, each held its own reading time (question 1). In v8, chapter 1 leaves the Baoulé table about 8.5 s and chapter 3 the Twi table about 12 s: one card each. At 430 px a name is 19 px high; the longest, Kwabena and Akosua, are 220 px wide at 1080, Memeneda 130 px in its column of 280.
+- **Entry.** The people and the column labels enter with the card (300 ms). On the word that announces the days (« jour », « Sept jours »), the seven rows arrive in a cascade from the top, each in 300 ms rising 16 px, 90 ms apart: the whole table is there in 0.9 s, and the voice never waits for a row it does not say. A table that comes back (the summary) enters whole.
+- **The row the voice dwells on.** On its day's word, in 400 ms, the row lights: an ochre band behind it (#c9821f at 16 %, a 2 px edge of `accent` at 35 %, radius 14 px, 14 px wider than the table on each side), and the other rows recede to 40 % (question 2). No change of size, no frame alone, no colour on the names. Two rows lit at most (the voice compares two days); a third lit row makes the first go back. A lit row stays until the card ends.
+- **Data.** The episode's table as the brief gives it; no cell is filled from another people's table (1.8.0).
+
+### 2. The formula in motion
+
+The 1.8.0 formula, set on parchment, now built by moves that teach the construction (`video-1120-formule.jpg`, `video-1120-formule-lundi.jpg`). Types as 1.8.0: the day line in Nunito Sans 800 44/52 with the day's word in `accent`; « fille » and « garçon » in Nunito Sans 800 26/32 capitals over their lines; the pieces in Anton 120/124 (104 or 88 when a line needs it to hold in 960 px); the day's part in `accent` wherever it goes; « + » in Nunito Sans 800 64, `ink-muted`.
+
+Four moves, each starting on the word that says it (question 3):
+
+| Move   | What it shows                                     | Length | How                                                                                                                  |
+| ------ | ------------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------- |
+| Appear | a piece is said                                   | 300 ms | fades in, rising 12 px                                                                                               |
+| Join   | the pieces make the name (A + ya = Aya)           | 450 ms | the « + » fades in the first 150 ms; the pieces slide towards each other until they touch, the group staying centred |
+| Fall   | a part drops out (Kwa, the é of kissié, (ki), da) | 500 ms | it goes 104 px down, shrinks to 55 % and fades to 30 %, and stays there, under where it was                          |
+| Become | a form changes (ya → Yao, Kwa → Koua)             | 300 ms | the letters cross-fade in place; the group re-centres                                                                |
+
+- **What the signs said, the moves now show.** The joining is the « = » of 1.8.0; the fall and the change of form are its « → »; dropped parts stay visible at 30 %, as in 1.8.0, smaller and under the line. No « = » or « → » is printed in a formula in motion. A static formula (a carousel card) keeps the 1.8.0 signs.
+- **A form still heard, or a spelling,** goes on one line under the formula, Nunito Sans 800 40/48 in `ink-muted`, its day part in `accent`: « on entend encore Kwao » for 2 s, « Kwa s'écrit Koua en français » to the end of the card. It enters and leaves in 300 ms.
+- **Pace.** Two moves on one line at least 700 ms apart; nothing bounces, turns or overshoots. The last state holds to the end of the card.
+- **The cases of v8.** Friday: « A », « + ya », join (Aya); « Kwa », « + ya », join, Kwa falls, ya becomes Yao, then « Kwao » under it. Monday: « A + kissié », é falls as A and kissi join (Akissi); « Kwa + kissié », (ki) and é fall, Kwa becomes Koua and joins ssi (Kouassi). Twi: Kwasida, da falls (Kwasi); « A + kosua », join (Akosua); Yawda, da falls (Yaw), Yaa.
+
+### 3. Drawings on teaching cards
+
+Three new drawings in the hand of the eight of 1.11.0, set on parchment (`video-1120-dessins.jpg`): full figures in a small scene, not objects (question 4).
+
+- **Yaw, « le courageux »:** a man wading across a river in spate, a bundle on his head, his staff planted. **Kwasi, « l'agile »:** a man climbing an oil palm with his rope loop. **Kwa, « le serviteur »** (Kwasi Konadu's hypothesis): a young man sweeping the yard at sunrise, the day's first task.
+- **What they never are.** Never evidence: the foot says « Dessins : illustrations d'EthniAfrica, pas des documents ». No face (the heads carry no features), no caricature, no Adinkra or other symbol, no named cloth pattern (plain cloth with one border stripe), no ritual: the river, the palm and the yard are everyday scenes. The figures are generic.
+- **Size.** Two drawings side by side, 470 px wide each (388 px high), from y 610; one alone, 560 px wide (462 px high), centred, from y 600. On parchment a drawing needs no second contour; its ground fades out at both sides, so it reads as a vignette, not a box.
+- **Words.** Under each drawing its name in Anton 72/76 (`ink`) and its quality in Nunito Sans 800 36/42 (`accent`), as one says them: « Yaw · le courageux ». A hypothesis keeps its question mark: « serviteur de l'esprit de son jour ? ».
+- **Entry.** On its name's word, 400 ms, rising 8 px; the name 150 ms later; the quality 300 ms later or on its own word. It leaves with its card. No idle motion.
+- **Attribution.** As 1.7.0 (« A person quoted by role »): the name in Nunito Sans 800 34/40, the role in 700 26/32 `ink-muted`, its box ending at y 1296, entering on the name's word.
+
+### 4. The parchment text card
+
+For a passage with nothing to show but words: the 1964 law (`video-1120-loi.jpg`).
+
+- **Head:** the dated head of 1.7.0 in Parchemin inks: the place as kicker (« Côte d'Ivoire »), the date set large in Anton 148/136 `accent` (1.4.0 « Long dates »), the label in capitals (« Loi sur le nom »). Each enters on its word; the date also grows from 94 to 100 % in 500 ms.
+- **A quotation:** Nunito Sans 700 46/60 in `ink`, a hanging « in Anton 150 `accent` and its closing » in `accent`; lines enter one by one (300 ms, 250 ms apart) on the word that brings the quotation; its source under it, Nunito Sans 700 26/32 `ink-muted` (« Loi n° 64-381 du 7 octobre 1964, article 3 »; the boards print « relative au nom », which is not the law's title). Its key words are underlined as 1.8.0 underlines a passage (7 px `accent`), the line now drawing from left to right in 400 ms on its spoken word.
+- **Free words:** Nunito Sans 800 54/64, `ink`, key words in `accent`, an arrow in `ink-muted`; each line on its word, 400 ms rising 12 px (« un jour de naissance » / « → le nom d'une lignée »).
+- **How many.** Three blocks at most under the head (here the quotation, its source, the conclusion); everything stays to the end of the card.
+
+### Boards (1.12.0)
+
+`Video` group, `video-1120-*`: today's cards on the photograph; the week table (Baoulé entering, Twi with its two lit rows, the summary); the Friday formula; the Monday formula and the Twi one; the drawings; the 1964 law; the subtitles on parchment; the change from a map; the 3:4 grid crop; the measures; the 430 px strip. Animated previews: `semaine-baoule.mp4`, `semaine-twi.mp4`, `formule-vendredi.mp4`, `formule-lundi.mp4`, `formule-twi.mp4`, `dessins-qualites.mp4`, `dessin-kwa.mp4`, `loi-1964.mp4` (540 × 960, 15 frames a second; the grain without its blend mode, for speed). The text is the narration v8's; the timings are estimates.
+
+### For the operator to decide (answered on 20 October 2026)
+
+1. **The week table:** one card per people when the voice leaves it 7.2 s or more, two cards otherwise (recommended).
+2. **The lit row:** an ochre band, the other rows receding to 40 % (recommended); no change of size.
+3. **The formula's moves:** appear, join, fall, become, with the lengths above (recommended); the printed « = » and « → » give way to the moves.
+4. **The drawings:** full figures in a scene (recommended); the three of the boards as drawn.
+5. **The ground:** the idents' ground and grain, unchanged (recommended).
+6. **Band and head** kept on parchment cards, in Parchemin inks (recommended).
+7. **Teaching cards on parchment:** the week table, the formula and the side-by-side forms leave the photograph for the parchment card (recommended).
+8. **Subtitles on parchment** in `ink` without outline (recommended), or the image subtitle.
+
+#### Decided by the operator on 20 October 2026
+
+The eight questions were answered with the designer's recommendations, and the three drawings stay as drawn, the Kwa drawing (« serviteur ») included (« oui j’accepte mais rajoute le dessin », in reply to a proposal to drop it):
+
+1. **The week table:** one card per people when the voice leaves it 7.2 s or more, two cards otherwise.
+2. **The lit row:** an ochre band, the other rows receding to 40 %; no change of size.
+3. **The formula's moves:** appear, join, fall, become, with their lengths; the printed « = » and « → » give way to the moves.
+4. **The drawings:** full figures in a scene; the three of the boards as drawn (`courageux`, `agile`, `serviteur`).
+5. **The ground:** the idents' ground and grain, unchanged.
+6. **Band and head** kept on parchment cards, in Parchemin inks.
+7. **Teaching cards on parchment:** the week table, the formula and the side-by-side forms leave the photograph for the parchment card.
+8. **Subtitles on parchment** in `ink` without outline, the lit word on an `accent` box in #fffaf0.
+
 ## Checks
 
 - Band: one line (`report.series.lines` is 1); nothing within 12 px of it on a map; tape under it.
@@ -805,6 +910,7 @@ The eight questions were answered with the designer's recommendations (« j'acce
 - Long video (1.7.0-proposition, accepted): chapters from 90 s, the chapter card's title inside y 318 to 700, the chapter kicker composed by the engine, items and figures entering on their words, the signed card without a source line; see « Renderer integration of 1.7.0 » in Handoff.
 - Small text on the image (1.10.0-proposition, accepted): the local blur under each block of small text where the picture measures 10 or more, reported; the kicker at 36/42; source and credit at 26/32 in `on-image-ink`; see « Renderer integration of 1.10.0 » in Handoff.
 - Closing (1.10.0-proposition, accepted): the line and the invitation drawn from the two constants, the line's top at y 760 on every closing card and at y 318 in the video, no closing card's own body printed, the alternative text ending with both sentences, the closing card's four chunks the four printed lines, word for word; see « Renderer integration of 1.10.0 » in Handoff.
+- Teaching cards and the parchment card (1.12.0-proposition, accepted): the idents' ground under a parchment card, its texts in Parchemin inks without outline; the week table one people per card, girl | day | boy, read in its card's time; at most two lit rows; formula moves on their words; drawings on parchment only; three blocks at most on a text card; see « Renderer integration of 1.12.0 » in Handoff.
 - Animated satellite map (1.11.0-proposition, accepted): the opening globe becomes the first map without a cut; area states and arrows on their times; arrow width and drawing size from the smallest lit area; every text and drawing in the map band, eight texts at most; moves inside a card on a word, two at most; no picture under 6 s between two map cards; every fact of a map phase with its mark on screen; see « Renderer integration of 1.11.0 » in Handoff.
 - Text on the image (1.9.0-proposition, accepted): every outermost text block carries the second contour with r = max(3, round(0.6 × outline)), no text on the image keeps the 1.4.0 soft shadow, the lit word's box has its dark edge; see « Renderer integration of 1.9.0 » in Handoff.
 - Document and teaching cards (1.8.0-proposition, accepted): the passage inside y 700 to 1300 within 1.5 frame pixels per source pixel, the edge of the page at most 400 px, the underline entering on its word, the formula's lines in 960 px; see « Renderer integration of 1.8.0 » in Handoff.

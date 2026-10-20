@@ -16,6 +16,11 @@ import { documentFrame } from "./series-document.mjs";
 export const SERIES_PAGE_HTML = `<!doctype html>
 <html lang="fr"><head><meta charset="utf-8">
 <link rel="stylesheet" href="/design/components/bundle.css">
+<!-- 1.12.0: the parchment card's ground is the idents', with the site's colour
+     tokens it is built from; the design's own tokens, installed after, keep
+     their names. -->
+<link rel="stylesheet" href="/repo/src/styles/tokens/color.css">
+<link rel="stylesheet" href="/repo/social/series-idents/ground.css">
 <script src="/design/components/bundle.js"></script>
 <style>
 /* As in the 0.4.0 page: Nunito Sans draws ʾ and ʿ in the middle of half an
@@ -150,6 +155,53 @@ html,body{margin:0;background:#000}
 .vf-week .wk-dn{font:800 30px/36px var(--font-text);color:var(--oi-muted);--sw:4px}
 .vf-week .wk-nm{font:800 38px/44px var(--font-text);color:var(--oi-text);--sw:5px;white-space:nowrap}
 .vf-week .wk-dw{font:700 24px/28px var(--font-text);color:var(--oi-muted);--sw:4px;display:block}
+/* 1.12.0: the parchment card (series.md, « Teaching cards in motion and the
+   parchment card »): the idents' ground, its texts in the Cartes Parchemin
+   inks without outline or second contour. */
+.vf-ground{position:absolute;inset:0;overflow:hidden;background:var(--afh-color-bg)}
+.vf-pa{--oi-ink:var(--ink);--oi-text:var(--ink);--oi-muted:var(--ink-muted);--oi-faint:var(--ink-faint);--oi-accent:var(--accent)}
+.vf-pa .oi,.vf-pa.oi{-webkit-text-stroke-width:0!important;filter:none!important}
+.vf-pa .vf-sign img{filter:none}
+.pa-abs{position:absolute;left:0;top:0;width:1080px;height:1920px;pointer-events:none}
+.pa-abs>*{position:absolute}
+.pw-people{left:60px;width:960px;top:490px;text-align:center;font:800 40px/48px var(--font-text);color:var(--oi-accent)}
+.pw-people span{font:700 30px/48px var(--font-text);color:var(--oi-muted)}
+.pw-lab{top:550px;font:800 22px/28px var(--font-text);letter-spacing:.12em;text-transform:uppercase;color:var(--oi-muted);white-space:nowrap}
+.pw-row{left:0;width:1080px;height:96px}
+.pw-row>*{position:absolute;white-space:nowrap}
+.pw-band{left:60px;width:960px;top:4px;height:88px;box-sizing:border-box;border-radius:14px;background:var(--row-highlight);border:2px solid color-mix(in srgb,var(--accent) 35%,transparent)}
+.pw-name{top:20px;font:800 48px/56px var(--font-text);color:var(--oi-ink)}
+.pw-girl{right:680px;text-align:right}
+.pw-boy{left:680px}
+.pw-day{left:400px;width:280px;top:13px;text-align:center}
+.pw-dn{font:800 32px/38px var(--font-text);color:var(--oi-ink)}
+.pw-dw{font:italic 700 28px/32px var(--font-text);color:var(--oi-accent)}
+.pw-rule{left:74px;width:932px;top:95px;height:1px;background:var(--rule)}
+.pf-day{left:60px;width:960px;top:590px;text-align:center;font:800 44px/52px var(--font-text);color:var(--oi-ink)}
+.pf-r,.pf-day-part{color:var(--oi-accent)}
+.pf-lab{left:60px;width:960px;text-align:center;font:800 26px/32px var(--font-text);letter-spacing:.12em;text-transform:uppercase;color:var(--oi-muted)}
+.pf-piece{left:0;top:0;white-space:nowrap;font:400 120px/124px var(--font-display);color:var(--oi-ink);transform-origin:50% 50%}
+.pf-op{font:800 64px/64px var(--font-text);color:var(--oi-muted);padding:0 22px}
+.pf-note{left:60px;width:960px;top:1226px;text-align:center;font:800 40px/48px var(--font-text);color:var(--oi-muted)}
+.pd-img{display:block;max-width:none}
+.pd-name{text-align:center;font:400 72px/76px var(--font-display);color:var(--oi-ink);white-space:nowrap}
+.pd-q{text-align:center;font:800 36px/42px var(--font-text);color:var(--oi-accent);white-space:nowrap}
+.vf-pa .vf-date--pa{font-size:148px;line-height:136px;transform-origin:0 100%}
+.pq{left:60px;width:960px;top:720px}
+.pq-open{position:absolute;left:0;top:-40px;font:400 150px/150px var(--font-display);color:var(--oi-accent)}
+.pq-line{margin-left:100px;font:700 46px/60px var(--font-text);color:var(--oi-ink);white-space:nowrap}
+.pq-close{color:var(--oi-accent)}
+.pq-w{position:relative}
+.pq-u{position:absolute;left:0;right:0;bottom:-2px;height:7px;background:var(--oi-accent);transform-origin:0 50%}
+.pq-src{margin:14px 0 0 100px;font:700 26px/32px var(--font-text);color:var(--oi-muted)}
+.pwds{left:60px;width:960px;top:1044px;text-align:center}
+.pwd{font:800 54px/64px var(--font-text);color:var(--oi-ink);white-space:nowrap}
+.pwd-arrow{color:var(--oi-muted)}
+/* Subtitles on parchment (decision 8): ink without outline, the lit word on
+   an accent box in #fffaf0. */
+#subtitles.sub-pa .sub-line{color:var(--ink);filter:none}
+#subtitles.sub-pa .sub-text{-webkit-text-stroke-width:0}
+#subtitles.sub-pa .lit{background:var(--accent);color:#fffaf0;box-shadow:6px 0 0 var(--accent),-6px 0 0 var(--accent)}
 .vf-pill{margin-top:30px;display:inline-block;font:800 34px/40px var(--font-text);letter-spacing:.04em;text-transform:uppercase;color:var(--oi-accent);--sw:4px;border:3px solid var(--oi-accent);border-radius:999px;padding:14px 40px;box-shadow:0 0 0 2px var(--oi-stroke),inset 0 0 0 2px var(--oi-stroke)}
 .vf-foot{position:absolute;left:60px;width:960px;bottom:134px;display:flex;flex-direction:column;gap:4px}
 .vf-key{display:flex;align-items:center;gap:14px;font:800 26px/32px var(--font-text);--sw:4px;margin-bottom:10px}
@@ -327,14 +379,22 @@ const identReady = (parts) => new Promise((ok, fail) => {
 function buildParts(spec, view) {
   if (spec.type === "intro" || spec.outro) return identParts(spec);
   const silent = spec.type === "chapter";
-  const card = silent ? null : EthniCards.render(spec, { context: "video", resolve: resolveAsset, demo: false });
+  // 1.12.0: a parchment text card's date is a string the video sets itself.
+  const pa = spec.ground === "parchment";
+  const textCard = pa && typeof spec.date === "string";
+  const card = silent ? null : EthniCards.render(textCard ? { ...spec, date: undefined } : spec, { context: "video", resolve: resolveAsset, demo: false });
   const pick = (sel) => card.querySelector(sel);
   const layer = el("div", "vf-layer");
   const pic = el("div", "vf-pic");
   layer.append(pic);
   const parts = { spec, layer, pic, text: [], photo: null, map: null, date: null, slot: false, closing: spec.type === "closing" };
-  const src = (spec.image && spec.image.src) || "";
-  if (view && view.sequence) {
+  const src = pa ? "" : (spec.image && spec.image.src) || "";
+  if (pa) {
+    parts.pa = true;
+    layer.classList.add("vf-pa");
+    layer.dataset.theme = "parchemin";
+    parts.ground = groundLayer(pic);
+  } else if (view && view.sequence) {
     // 1.5.0: the card's map is its run's, drawn by drawRun; the card brings
     // its head and foot.
     parts.seqView = view;
@@ -396,7 +456,15 @@ function buildParts(spec, view) {
   const kicker = pick(".ec-kicker");
   if (spec.videoKicker) head.append(el("div", "vf-kick oi", esc(fr(spec.videoKicker))));
   else if (kicker && kicker.textContent.trim()) head.append(el("div", "vf-kick oi", kicker.innerHTML));
-  if (spec.date) {
+  if (textCard) {
+    // 1.12.0: the dated head of 1.7.0 in Parchemin inks, the date at 148/136.
+    parts.paDate = el("div", "vf-date vf-date--pa oi", esc(spec.date).replace(/ /g, "\\u00a0"));
+    head.append(parts.paDate);
+    if (spec.dateLabel) {
+      parts.paLabel = el("div", "vf-label oi", esc(fr(spec.dateLabel)));
+      head.append(parts.paLabel);
+    }
+  } else if (spec.date) {
     // A date is one group: day, month and year never part.
     const html = pick(".ec-date").innerHTML
       .replace(new RegExp("(\\\\d+(?:er|<sup>er</sup>)?) " + MONTHS + " (\\\\d{3,4})", "g"), "$1\\u00a0$2\\u00a0$3")
@@ -439,9 +507,10 @@ function buildParts(spec, view) {
     parts.items = [...grid.children];
   }
   if (spec.sbs) head.append(sideBySide(spec.sbs, parts));
-  if (spec.week) head.append(weekTable(spec.week, parts));
+  if (spec.week && !pa) head.append(weekTable(spec.week, parts));
   layer.append(head);
-  if (spec.formula) {
+  if (pa) parchmentContent(spec, parts);
+  else if (spec.formula) {
     parts.formula = formulaLayer(spec.formula);
     layer.append(parts.formula.box);
     parts.text.push(parts.formula.box);
@@ -488,10 +557,17 @@ function buildParts(spec, view) {
       foot.append(line);
     }
   }
+  // 1.12.0: drawings are illustrations, never evidence; the foot says so.
+  if (pa && spec.drawings) {
+    const line = el("div", "vf-src oi", fr(spec.drawings.length > 1 ? "Dessins : illustrations d’EthniAfrica, pas des documents" : "Dessin : illustration d’EthniAfrica, pas un document"));
+    line.dataset.kind = "source";
+    foot.append(line);
+  }
   for (const [sel, cls, kind] of [[".ec-source", "vf-src", "source"], [".ec-credit", "vf-cred", "credit"]]) {
     const line = pick(sel);
-    // A slot's credit only says the image is missing: the slot says it.
-    if (line && !(kind === "credit" && parts.slot)) {
+    // A slot's credit only says the image is missing: the slot says it. A
+    // parchment card shows no picture, so it credits none.
+    if (line && !(kind === "credit" && (parts.slot || pa))) {
       // 1.7.0: « Sources » or « Hypothèses » in place of the default label.
       const html = kind === "source" && spec.sourceLabel ? line.innerHTML.replace(/^Source/, esc(spec.sourceLabel)) : line.innerHTML;
       const div = el("div", cls + " oi", html);
@@ -621,6 +697,193 @@ function weekTable(week, parts) {
   });
   parts.week = { rows };
   return grid;
+}
+
+// 1.12.0: the idents' ground (social/series-idents/ground.css), moved by the
+// engine with the idents' own numbers (ground.mjs).
+function groundLayer(pic) {
+  const g = el("div", "vf-ground");
+  const parch = el("div", "ground-parch"), glow = el("div", "ground-glow"), grain = el("div", "ground-grain");
+  g.append(parch, glow, grain);
+  pic.append(g);
+  return { glow, grain };
+}
+// « <r>ya</r> » marks the day's part in the card data, as the handoff writes it.
+const dayParts = (html) => esc(fr(html.replace(/<\\/?r>/g, "\\u0001"))).replace(/\\u0001([^\\u0001]*)\\u0001/g, '<span class="pf-r">$1</span>');
+
+// The week table one people per card, the formula in motion, drawings, the
+// quotation and free words: each in the layer at the places of the boards.
+function parchmentContent(spec, parts) {
+  const box = el("div", "pa-abs");
+  parts.layer.append(box);
+  parts.text.push(box);
+  parts.paBox = box;
+  if (spec.week) {
+    const w = spec.week;
+    box.append(el("div", "pw-people oi", esc(fr(w.people)) + (w.region ? "<span> · " + esc(fr(w.region)) + "</span>" : "")));
+    const lab = (text, css) => { const n = el("div", "pw-lab oi", esc(text)); n.style.cssText = css; box.append(n); };
+    lab("fille", "right:680px");
+    lab("jour", "left:400px;width:280px;text-align:center");
+    lab("garçon", "left:680px");
+    parts.paWeek = w.rows.map(([day, word, girl, boy], k) => {
+      const row = el("div", "pw-row");
+      row.style.top = 590 + 96 * k + "px";
+      const band = el("div", "pw-band");
+      const cells = [el("div", "pw-name pw-girl oi", esc(fr(girl))), el("div", "pw-day", '<div class="pw-dn oi">' + esc(fr(day)) + '</div><div class="pw-dw oi">' + esc(fr(word)) + "</div>"), el("div", "pw-name pw-boy oi", esc(fr(boy)))];
+      row.append(band, ...cells, el("div", "pw-rule"));
+      box.append(row);
+      return { row, band, cells };
+    });
+  }
+  if (spec.formula && spec.formulaPlan) {
+    const plan = spec.formulaPlan;
+    const fx = { day: null, lines: [], notes: [] };
+    if (plan.day) { fx.day = el("div", "pf-day oi", dayParts(plan.day.html)); box.append(fx.day); }
+    plan.lines.forEach((line, n) => {
+      const top = FORMULA_LINES[n];
+      const label = el("div", "pf-lab oi", esc(fr(line.label || "")));
+      label.style.top = top - 42 + "px";
+      box.append(label);
+      // One span per piece and per text it takes, so a change of form
+      // cross-fades two spans in place.
+      const spans = {};
+      for (const snap of line.snapshots)
+        for (const p of snap.pieces) {
+          const key = pieceKey(p);
+          if (spans[key]) continue;
+          const s = el("span", "pf-piece oi" + (p.op ? " pf-op" : ""), p.op ? esc(p.op) : pieceHtml(p));
+          s.style.opacity = "0";
+          box.append(s);
+          spans[key] = s;
+        }
+      fx.lines.push({ top, label, spans, snapshots: line.snapshots, rest: null });
+    });
+    for (const note of plan.notes) { const n = el("div", "pf-note oi", dayParts(note.html)); box.append(n); fx.notes.push(n); }
+    parts.paFormula = fx;
+  }
+  if (spec.drawings) {
+    const two = spec.drawings.length === 2;
+    const W = two ? 470 : 560, H = Math.round((W * 132) / 160), top = two ? 610 : 600;
+    parts.paDrawings = spec.drawings.map((d, k) => {
+      const left = two ? (k ? 550 : 60) : 260;
+      const img = el("img", "pd-img");
+      img.alt = "";
+      img.decoding = "sync";
+      img.src = "/design/assets/Illustrations/" + d.kind + ".svg";
+      Object.assign(img.style, { left: left + "px", top: top + "px", width: W + "px", height: H + "px" });
+      const name = el("div", "pd-name oi", esc(fr(d.name)));
+      const quality = el("div", "pd-q oi", esc(fr(d.quality)));
+      // Centred under the drawing; a long quality may pass its width.
+      for (const [n, y] of [[name, top + H + 6], [quality, top + H + 82]]) Object.assign(n.style, { left: left + W / 2 - 480 + "px", width: "960px", top: y + "px" });
+      box.append(img, name, quality);
+      return { img, name, quality };
+    });
+  }
+  if (spec.quote && spec.quote.lines) {
+    const q = el("div", "pq");
+    q.append(el("div", "pq-open oi", "«"));
+    const marks = (spec.quote.marks || []).map(() => null);
+    const lines = spec.quote.lines.map((text, k) => {
+      let html = esc(fr(text));
+      (spec.quote.marks || []).forEach((m, j) => {
+        const words = esc(fr(m.words));
+        if (marks[j] === null && html.includes(words)) {
+          html = html.replace(words, '<span class="pq-w" data-mark="' + j + '"><span>' + words + '</span><span class="pq-u"></span></span>');
+          marks[j] = k;
+        }
+      });
+      if (k === spec.quote.lines.length - 1) html += '<span class="pq-close">\\u202f»</span>';
+      const line = el("div", "pq-line oi", html);
+      q.append(line);
+      return line;
+    });
+    const source = spec.quote.source ? el("div", "pq-src oi", esc(fr(spec.quote.source))) : null;
+    if (source) q.append(source);
+    box.append(q);
+    parts.paQuote = { box: q, lines, source, marks: [...q.querySelectorAll(".pq-w")].sort((a, b) => a.dataset.mark - b.dataset.mark) };
+  }
+  if (spec.words) {
+    const w = el("div", "pwds");
+    parts.paWords = spec.words.map((word) => {
+      const line = el("div", "pwd oi", dayParts(word.html).replace(/→/g, '<span class="pwd-arrow">→</span>'));
+      w.append(line);
+      return line;
+    });
+    box.append(w);
+  }
+}
+
+// 1.12.0: the formula in motion. Lines at y 760 and 980; each state's pieces
+// laid out on their line and centred at x 540, a joined piece touching the
+// one before it, a fallen one 104 px under where it was, at 55 % and 30 %.
+const FORMULA_LINES = [760, 980];
+const FALL = { drop: 104, scale: 0.55, opacity: 0.3 };
+const pieceKey = (p) => (p.op ? p.id : p.id + "|" + p.text);
+function pieceHtml(p) {
+  const t = [...p.text];
+  const [a, b] = p.day === true ? [0, t.length] : Array.isArray(p.day) ? p.day : [0, 0];
+  return esc(t.slice(0, a).join("")) + (b > a ? '<span class="pf-day-part">' + esc(t.slice(a, b).join("")) + "</span>" : "") + esc(t.slice(b).join(""));
+}
+function setMovingFormula(parts) {
+  for (const line of parts.paFormula.lines) {
+    const spans = Object.values(line.spans);
+    const widths = () => line.snapshots.map((s) => s.pieces.filter((p) => !p.fallen).reduce((w, p) => w + line.spans[pieceKey(p)].getBoundingClientRect().width, 0));
+    for (const [size, height, op] of FORMULA_STEPS) {
+      spans.forEach((s) => {
+        s.style.fontSize = (s.classList.contains("pf-op") ? op : size) + "px";
+        s.style.lineHeight = (s.classList.contains("pf-op") ? op : height) + "px";
+      });
+      line.size = size;
+      if (Math.max(...widths()) <= 960) break;
+    }
+    // Each state's resting place: standing pieces side by side, centred; a
+    // fallen piece where it fell.
+    line.rest = [];
+    line.snapshots.forEach((snap, k) => {
+      const rest = {};
+      const standing = snap.pieces.filter((p) => !p.fallen);
+      const w = (p) => line.spans[pieceKey(p)].getBoundingClientRect().width;
+      let x = 540 - standing.reduce((n, p) => n + w(p), 0) / 2;
+      for (const p of standing) {
+        const op = !!p.op;
+        rest[pieceKey(p)] = { x, y: line.top + (op ? (line.size + 4 - parseFloat(line.spans[pieceKey(p)].style.lineHeight)) / 2 : 0), scale: 1, opacity: 1 };
+        x += w(p);
+      }
+      for (const p of snap.pieces.filter((p) => p.fallen)) {
+        const before = line.rest[k - 1] && line.rest[k - 1][pieceKey(p)];
+        rest[pieceKey(p)] = before && before.scale === 1 ? { x: before.x, y: before.y + FALL.drop, scale: FALL.scale, opacity: FALL.opacity } : before;
+      }
+      line.rest.push(rest);
+    });
+  }
+}
+// The moves ease out on the chapter card's cubic (easeOut), never past rest.
+function drawMovingFormula(parts, state) {
+  const fx = parts.paFormula;
+  if (fx.day) fx.day.style.opacity = state.day;
+  state.notes.forEach((o, k) => (fx.notes[k].style.opacity = o));
+  fx.lines.forEach((line, n) => {
+    const s = state.lines[n];
+    line.label.style.opacity = s.label;
+    const A = s.from >= 0 ? line.rest[s.from] : {};
+    const B = s.to >= 0 ? line.rest[s.to] : {};
+    const move = s.to >= 0 ? parts.spec.formula.lines[n].states[s.to].move : null;
+    const e = easeOut(s.t);
+    for (const [key, span] of Object.entries(line.spans)) {
+      const a = A[key], b = B[key];
+      let p = null;
+      const lerp = (u, v) => u + (v - u) * e;
+      if (a && b) p = { x: lerp(a.x, b.x), y: lerp(a.y, b.y), scale: lerp(a.scale, b.scale), opacity: lerp(a.opacity, b.opacity) };
+      // Appearing: 9 frames rising 12 px; a change of form cross-fades in place.
+      else if (b) p = { ...b, y: b.y + (move === "become" ? 0 : 12 * (1 - e)), opacity: b.opacity * e };
+      // Leaving: the « + » of a join goes in its first 5 frames.
+      else if (a) p = { ...a, opacity: a.opacity * (move === "join" && span.classList.contains("pf-op") ? Math.max(0, 1 - (s.t * 14) / 5) : 1 - e) };
+      if (!p || p.opacity <= 0) { span.style.opacity = "0"; span.style.visibility = "hidden"; continue; }
+      span.style.visibility = "visible";
+      span.style.opacity = p.opacity;
+      span.style.transform = "translate(" + p.x + "px," + p.y + "px) scale(" + p.scale + ")";
+    }
+  });
 }
 
 // The photograph covers the frame: its focal point brought to (540, 1000),
@@ -1229,13 +1492,33 @@ window.setup = async ({ tokens, cards, logo, demo, maps, subtitles: cardLines, z
   const sign = signature();
   sign.id = "signature";
   frame.append(sign);
+  // 1.12.0: their Parchemin inking, drawn once in the same places.
+  if (cards.some((c) => c.ground === "parchment")) {
+    const bandPa = band.cloneNode(true);
+    bandPa.id = "band-pa";
+    const signPa = signature();
+    signPa.id = "signature-pa";
+    for (const n of [bandPa, signPa]) {
+      n.classList.add("vf-pa");
+      n.dataset.theme = "parchemin";
+      n.style.opacity = "0";
+    }
+    signPa.style.cssText += ";position:absolute;left:60px;top:1836px;height:48px;z-index:3";
+    frame.append(bandPa, signPa);
+  }
   const subtitles = el("div");
   subtitles.id = "subtitles";
   frame.append(subtitles);
   if (demo) frame.append(el("div", "vf-demo", esc(fr(demo))));
   ringFilters();
   ringText(frame);
-  const images = [...frame.querySelectorAll(".vf-pic img")];
+  const images = [...frame.querySelectorAll(".vf-pic img, .pd-img")];
+  // 1.12.0: the ground's grain, decoded before the first frame.
+  if (layers.some((p) => p.pa)) {
+    const grain = new Image();
+    grain.src = "/repo/social/series-idents/assets/grain.png";
+    images.push(grain);
+  }
   await Promise.all(images.map((i) => i.decode().catch(() => null)));
   const broken = images.filter((i) => !i.naturalWidth).map((i) => i.getAttribute("src"));
   // 1.8.0: a document is framed from its card's image.w and h.
@@ -1254,6 +1537,7 @@ window.setup = async ({ tokens, cards, logo, demo, maps, subtitles: cardLines, z
     if (parts.photo && parts.photo.naturalWidth) placeImage(parts);
     if (parts.date) setDate(parts);
     if (parts.formula) setFormula(parts);
+    if (parts.paFormula) setMovingFormula(parts);
     // 1.10.0: the calm zones, once the picture is placed and the text set.
     parts.calm = calmZones(parts, (cardLines && cardLines[i]) || [], (zooms && zooms[i]) || 1);
     parts.layer.style.display = "none";
@@ -1330,6 +1614,12 @@ function frameBoxes(frame, state) {
       add(n, n.dataset.kind || "head", { card: l.card, ...(n === parts.date && { date: { size: parts.dateSize, lines: parts.dateLines } }) });
     });
     layer.querySelectorAll(".vf-attr > *").forEach((n) => add(n, "attribution", { card: l.card }));
+    // 1.12.0: every text and drawing of a parchment card, while it shows.
+    if (parts.paBox) {
+      const showing = (n) => n.style.visibility !== "hidden" && +getComputedStyle(n).opacity > 0 && +getComputedStyle(n.closest(".pw-row") || n).opacity > 0;
+      parts.paBox.querySelectorAll(".oi").forEach((n) => { if (!n.parentElement.closest(".oi") && showing(n)) add(n, "parchment", { card: l.card }); });
+      parts.paBox.querySelectorAll(".pd-img").forEach((n) => { if (showing(n)) boxes.push({ id: n.getAttribute("src"), kind: "parchment", ...rect(n), card: l.card }); });
+    }
     // 1.8.0: the formula's lines of every step on screen.
     if (parts.formula)
       parts.formula.steps.forEach((st, k) => {
@@ -1358,7 +1648,8 @@ function frameBoxes(frame, state) {
 // Anything that paints a background over the image, besides the lit word,
 // the « image à trouver » slot, a map's place dots and the demo tape.
 function backgrounds(frame) {
-  const allowed = (n) => n.closest(".lit, .vf-slot, .vf-demo, .vf-key, .sm-dot, .vf-doc") || n.classList.contains("vf-pic");
+  // A parchment card is its own ground, not a picture (1.12.0).
+  const allowed = (n) => n.closest(".lit, .vf-slot, .vf-demo, .vf-key, .sm-dot, .vf-doc, .vf-pa") || n.classList.contains("vf-pic");
   return [...frame.querySelectorAll("*")]
     .filter((n) => n.getClientRects().length && !allowed(n))
     .filter((n) => {
@@ -1392,6 +1683,10 @@ function drawSubtitle(subtitle) {
   band.replaceChildren();
   if (!subtitle || subtitle.opacity <= 0) return;
   band.style.opacity = subtitle.opacity;
+  // 1.12.0: on a parchment card, the Parchemin ink.
+  band.classList.toggle("sub-pa", !!subtitle.parchment);
+  if (subtitle.parchment) band.dataset.theme = "parchemin";
+  else delete band.dataset.theme;
   for (const line of subtitle.lines) {
     const row = el("div", "sub-line"), text = el("span", "sub-text");
     let unitNode = null;
@@ -1415,6 +1710,63 @@ function drawSubtitle(subtitle) {
     row.append(text);
     band.append(row);
   }
+}
+
+// 1.12.0: a parchment card on one frame, from its layer's state.
+function drawParchment(parts, l) {
+  const g = parts.ground;
+  g.grain.style.transform = "translate(" + l.ground.grain[0] + "px," + l.ground.grain[1] + "px)";
+  g.glow.style.transform = "translate(" + l.ground.glow[0] + "px," + l.ground.glow[1] + "px)";
+  if (parts.paWeek)
+    parts.paWeek.forEach((r, k) => {
+      r.row.style.opacity = l.week.rows[k].opacity;
+      r.row.style.transform = "translateY(" + l.week.rows[k].rise + "px)";
+      r.band.style.opacity = l.week.lit[k];
+    });
+  if (parts.paFormula) drawMovingFormula(parts, l.formula);
+  if (parts.paDrawings)
+    parts.paDrawings.forEach((d, k) => {
+      const s = l.drawings[k];
+      d.img.style.opacity = s.opacity;
+      d.img.style.transform = "translateY(" + s.rise + "px)";
+      d.name.style.opacity = s.name;
+      d.quality.style.opacity = s.quality;
+    });
+  if (parts.paDate) {
+    for (const n of [parts.paDate, parts.paLabel]) if (n) n.style.opacity = l.date.opacity;
+    parts.paDate.style.transform = "scale(" + l.date.scale + ")";
+  }
+  if (parts.paQuote) {
+    parts.paQuote.lines.forEach((n, k) => (n.style.opacity = l.quote.lines[k]));
+    parts.paQuote.box.firstChild.style.opacity = l.quote.lines[0];
+    if (parts.paQuote.source) parts.paQuote.source.style.opacity = l.quote.source;
+    parts.paQuote.marks.forEach((m, k) => (m.lastChild.style.transform = "scaleX(" + l.quote.marks[k] + ")"));
+  }
+  if (parts.paWords)
+    parts.paWords.forEach((n, k) => {
+      n.style.opacity = l.words[k].opacity;
+      n.style.transform = "translateY(" + l.words[k].rise + "px)";
+    });
+}
+
+// What a parchment card drew, for the checks of the handoff.
+function parchmentReport(parts, l) {
+  const op = (n) => +getComputedStyle(n).opacity;
+  const f = parts.paFormula;
+  return {
+    id: parts.spec.id,
+    picture: +parts.pic.style.opacity,
+    ground: { grain: parts.ground.grain.style.transform, glow: parts.ground.glow.style.transform },
+    head: rect(parts.layer.querySelector(".vf-head")),
+    rows: (parts.paWeek || []).map((r) => ({ ...rect(r.row), opacity: op(r.row), band: op(r.band), cells: r.cells.map((c) => inkBox(c)) })),
+    pieces: f ? f.lines.map((line) => Object.entries(line.spans).filter(([, s]) => s.style.visibility === "visible" && op(s) > 0).map(([key, s]) => ({ key, text: s.textContent, ...rect(s), opacity: op(s), scale: +(s.style.transform.match(/scale\\(([^)]+)\\)/) || [0, 1])[1] }))) : [],
+    drawings: (parts.paDrawings || []).map((d) => ({ ...rect(d.img), opacity: op(d.img), complete: d.img.complete && d.img.naturalWidth > 0, name: inkBox(d.name), quality: inkBox(d.quality) })),
+    attribution: parts.attribution ? rect(parts.attribution) : null,
+    marks: parts.paQuote ? parts.paQuote.marks.map((m) => ({ words: inkBox(m.firstChild), underline: rect(m.lastChild) })) : [],
+    quote: parts.paQuote ? rect(parts.paQuote.box) : null,
+    words: (parts.paWords || []).map(inkBox),
+    texts: [...parts.layer.querySelectorAll(".vf-pa .oi, .vf-pa.oi")].filter((n) => n.getClientRects().length).map((n) => ({ text: n.textContent.trim().slice(0, 30), stroke: getComputedStyle(n).webkitTextStrokeWidth, filter: getComputedStyle(n).filter, color: getComputedStyle(n).color })),
+  };
 }
 
 window.drawFrame = (state) => {
@@ -1457,6 +1809,7 @@ window.drawFrame = (state) => {
       if (parts.sbs.note) parts.sbs.note.style.opacity = l.note ?? 1;
     }
     if (parts.week) parts.week.rows.forEach((cells, k) => cells.forEach((c) => (c.style.opacity = l.rows ? l.rows[k] : 1)));
+    if (parts.pa) drawParchment(parts, l);
     if (parts.photo) {
       if (parts.view) parts.photo.style.transformOrigin = "540px " + parts.view.camera.centreY + "px";
       parts.photo.style.transform = "scale(" + l.zoom + ")";
@@ -1477,9 +1830,18 @@ window.drawFrame = (state) => {
   // out under it as under an ident.
   const chapters = state.layers.filter((l) => l.chapter);
   const identOn = Math.max(0, ...idents.map((l) => l.opacity), ...chapters.map((l) => l.opacity));
-  frame.querySelector(".vf-band").style.opacity = 1 - identOn;
+  // 1.12.0: the band and the signature in their two inkings, cross-faded in
+  // place during a change into or out of a parchment card.
+  const pw = state.parchment || 0;
+  frame.querySelector(".vf-band").style.opacity = (1 - identOn) * (1 - pw);
   const sig = document.getElementById("signature");
-  sig.style.opacity = +sig.style.opacity * (1 - identOn);
+  const sigOn = +sig.style.opacity * (1 - identOn);
+  sig.style.opacity = sigOn * (1 - pw);
+  const bandPa = document.getElementById("band-pa");
+  if (bandPa) {
+    bandPa.style.opacity = (1 - identOn) * pw;
+    document.getElementById("signature-pa").style.opacity = sigOn * pw;
+  }
   drawSubtitle(state.subtitle);
   const visible = state.layers.map((l) => layers[l.card]);
   const maps = visible.filter((p) => p.map).map((p) => {
@@ -1520,6 +1882,18 @@ window.drawFrame = (state) => {
       return { clip: top.ident.clip, t: top.ident.t, opacity: top.opacity, text: layers[top.card].ident.frame.contentDocument.body.innerText };
     })() : null,
     chrome: +frame.querySelector(".vf-band").style.opacity,
+    // 1.12.0: the parchment cards drawn, and the band and signature inkings.
+    parchment: state.layers.filter((l) => layers[l.card].pa).map((l) => parchmentReport(layers[l.card], l)),
+    inkings: document.getElementById("band-pa") ? ["vf-band", "band-pa", "signature", "signature-pa"].map((id) => {
+      const n = id === "vf-band" ? frame.querySelector(".vf-band") : document.getElementById(id);
+      const t = n.matches(".vf-band") ? n : n.querySelector("b");
+      return { id, ...rect(n), opacity: +n.style.opacity, color: getComputedStyle(t).color, stroke: getComputedStyle(t).webkitTextStrokeWidth, filter: getComputedStyle(t).filter };
+    }) : null,
+    subtitleInk: (() => {
+      const t = frame.querySelector("#subtitles .sub-text");
+      const lit = frame.querySelector("#subtitles .lit");
+      return t ? { color: getComputedStyle(t).color, stroke: getComputedStyle(t).webkitTextStrokeWidth, filter: getComputedStyle(t.parentElement).filter, lit: lit && { background: getComputedStyle(lit).backgroundColor, color: getComputedStyle(lit).color } } : null;
+    })(),
     // 1.11.0: what the animated map drew, read back from the page.
     animated: [...hosts].filter(([, l]) => l.map.animated).map(([r]) => {
       const node = runs[r];
