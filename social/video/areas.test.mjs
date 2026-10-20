@@ -6,6 +6,7 @@
 // files stay outside git.
 import { test } from "node:test";
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import {
   AREA_IDS,
@@ -219,6 +220,66 @@ const EPISODE_EXPECTED = {
   },
 };
 
+// Towns of the « Kouassi et Yao » episode (GeoNames centres rounded to 0.01°).
+const YK_TOWN = {
+  bouake: [-5.03, 7.69],
+  abengourou: [-3.5, 6.73],
+  bondoukou: [-2.8, 8.04],
+  abidjan: [-4.01, 5.32],
+  korhogo: [-5.63, 9.46],
+  man: [-7.55, 7.41],
+  kumasi: [-1.62, 6.69],
+  sunyani: [-2.33, 7.34],
+  // Fante country; Cape Coast itself sits on the simplified coastline.
+  mankessim: [-1.02, 5.27],
+  accra: [-0.19, 5.56],
+  tamale: [-0.84, 9.4],
+  ho: [0.47, 6.6],
+  lome: [1.22, 6.13],
+};
+const CIV_BOX = { west: -8.7, east: -2.4, south: 4.3, north: 10.8 };
+const GHA_BOX = { west: -3.3, east: 1.3, south: 4.7, north: 11.2 };
+const YK_EXPECTED = {
+  "yk-baoule": {
+    category: "people",
+    box: CIV_BOX,
+    covers: [YK_TOWN.bouake],
+    excludes: [YK_TOWN.abidjan, YK_TOWN.korhogo, YK_TOWN.abengourou],
+  },
+  "yk-akan-civ": {
+    category: "people",
+    box: CIV_BOX,
+    covers: [YK_TOWN.bouake, YK_TOWN.abengourou, YK_TOWN.bondoukou],
+    excludes: [YK_TOWN.korhogo, YK_TOWN.man, YK_TOWN.kumasi],
+  },
+  "yk-twi": {
+    category: "language",
+    box: GHA_BOX,
+    covers: [YK_TOWN.kumasi, YK_TOWN.sunyani],
+    excludes: [YK_TOWN.accra, YK_TOWN.tamale, YK_TOWN.bouake],
+  },
+  "yk-akan-gha": {
+    category: "people",
+    box: GHA_BOX,
+    covers: [YK_TOWN.kumasi, YK_TOWN.sunyani, YK_TOWN.mankessim],
+    excludes: [YK_TOWN.tamale, YK_TOWN.ho, YK_TOWN.accra, YK_TOWN.bouake],
+  },
+  "yk-cote-divoire": {
+    kind: "certain",
+    category: "country",
+    box: CIV_BOX,
+    covers: [YK_TOWN.abidjan, YK_TOWN.bouake, YK_TOWN.korhogo],
+    excludes: [YK_TOWN.kumasi, YK_TOWN.accra],
+  },
+  "yk-ghana": {
+    kind: "certain",
+    category: "country",
+    box: GHA_BOX,
+    covers: [YK_TOWN.accra, YK_TOWN.kumasi, YK_TOWN.tamale],
+    excludes: [YK_TOWN.abidjan, YK_TOWN.lome],
+  },
+};
+
 // Each area: its label category, a generous box it must stay inside, places
 // it must cover and places it must leave out. The boxes catch a leak (an
 // area spilling into Arabia or the ocean); the places catch a wrong rule.
@@ -385,6 +446,10 @@ const EXPECTED = {
       [38.74, 9.03], // Addis Ababa
     ],
   },
+  // Series 3, episode 1, « Kouassi et Yao » (Cartes 1.12.0): four
+  // approximate areas from the episode's pinned research, kept inside their
+  // country, and the two countries from Natural Earth.
+  ...YK_EXPECTED,
 };
 
 const fileOf = (id) => new URL(`${id}.geojson`, OUTPUT_DIR);
@@ -610,5 +675,98 @@ test("every expected area is built, and nothing else sits in the folder", () => 
   assert.deepEqual(
     readdirSync(OUTPUT_DIR).sort(),
     AREA_IDS.map((id) => `${id}.geojson`).sort()
+  );
+});
+
+const YK_NAMES = {
+  "yk-baoule": "Baoulé",
+  "yk-akan-civ": "Akan de Côte d'Ivoire",
+  "yk-twi": "Twi",
+  "yk-akan-gha": "Akan du Ghana",
+  "yk-cote-divoire": "Côte d'Ivoire",
+  "yk-ghana": "Ghana",
+};
+const featureOf = (id) => JSON.parse(readFileSync(fileOf(id), "utf8"));
+
+// @req REQ-186
+test("the « Kouassi et Yao » areas carry their names, and the Ghana side its licence caveat", () => {
+  for (const [id, name] of Object.entries(YK_NAMES))
+    assert.equal(featureOf(id).properties.name, name, id);
+  for (const id of ["yk-twi", "yk-akan-gha"]) {
+    const p = featureOf(id).properties;
+    assert.match(p.citation, /Murdock/);
+    assert.match(p.citation, /Nunn/);
+    assert.match(p.licence, /no licence stated by the digitiser/i);
+  }
+  for (const id of ["yk-baoule", "yk-akan-civ"])
+    assert.match(featureOf(id).properties.citation, /Vennetier/);
+});
+
+function distanceToSegment([x, y], [[x1, y1], [x2, y2]]) {
+  const dx = x2 - x1;
+  const dy = y2 - y1;
+  const t = Math.max(
+    0,
+    Math.min(1, ((x - x1) * dx + (y - y1) * dy) / (dx * dx + dy * dy || 1))
+  );
+  return Math.hypot(x - (x1 + t * dx), y - (y1 + t * dy));
+}
+
+// The approximate areas are traced back from grid cells whose centre lies in
+// the country, so their edge may stand off the border by half a cell, the
+// Douglas–Peucker tolerance and the rounding: 0.08° at most.
+const BORDER_SLACK_DEG = 0.08;
+for (const [id, countryId] of [
+  ["yk-baoule", "yk-cote-divoire"],
+  ["yk-akan-civ", "yk-cote-divoire"],
+  ["yk-twi", "yk-ghana"],
+  ["yk-akan-gha", "yk-ghana"],
+]) {
+  // @req REQ-186
+  test(`area ${id} lies inside ${countryId}`, () => {
+    const country = featureOf(countryId).geometry;
+    const border = polygons(country)
+      .flat()
+      .flatMap((ring) => ring.slice(1).map((p, i) => [ring[i], p]));
+    for (const vertex of polygons(featureOf(id).geometry).flat(2))
+      assert.ok(
+        covers(country, vertex) ||
+          border.some((s) => distanceToSegment(vertex, s) <= BORDER_SLACK_DEG),
+        `${id}: ${vertex} lies outside ${countryId}`
+      );
+  });
+}
+
+// @req REQ-186
+test("Côte d'Ivoire and Ghana share one border line, vertex for vertex", () => {
+  const key = ([lon, lat]) => `${lon},${lat}`;
+  const civ = new Set(
+    polygons(featureOf("yk-cote-divoire").geometry).flat(2).map(key)
+  );
+  const shared = polygons(featureOf("yk-ghana").geometry)
+    .flat(2)
+    .filter((v) => civ.has(key(v)));
+  const lats = shared.map(([, lat]) => lat);
+  assert.ok(shared.length >= 20, `only ${shared.length} shared vertices`);
+  // From the coast to the tripoint with Burkina Faso.
+  assert.ok(Math.min(...lats) < 5.2, `border starts at ${Math.min(...lats)}`);
+  assert.ok(Math.max(...lats) > 9.4, `border ends at ${Math.max(...lats)}`);
+});
+
+// The country rule was generalised for this episode: the Burkina Faso files
+// it already wrote must keep their bytes.
+// @req REQ-186
+test("the Burkina Faso country areas keep their bytes", () => {
+  const sha = (id) =>
+    createHash("sha256")
+      .update(readFileSync(fileOf(id)))
+      .digest("hex");
+  assert.equal(
+    sha("bfa-burkina-faso"),
+    "b3c2825b68b1551639d47d7da1fad9ec42308a3b07f53816ef3d4e1b65db49a5"
+  );
+  assert.equal(
+    sha("bfa-haute-volta"),
+    "57d6d035de2063f69e992f7f3d48638ea582677749032488ce3a3951d0492951"
   );
 });
