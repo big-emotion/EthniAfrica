@@ -1,6 +1,7 @@
 // @req REQ-052
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { existsSync, mkdirSync, rmSync, writeFileSync } from "fs";
+import { tmpdir } from "os";
 import { join } from "path";
 import { checkTreeCoverage, checkTreeIntegrity } from "../validateAfrikData";
 
@@ -60,7 +61,7 @@ describe("FR52 tree integrity", () => {
 
   beforeEach(() => {
     datasetRoot = join(
-      __dirname,
+      tmpdir(),
       `tmp_tree_integrity_${Date.now()}_${Math.random().toString(36).slice(2)}`
     );
     mkdirSync(datasetRoot, { recursive: true });

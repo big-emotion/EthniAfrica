@@ -1,5 +1,6 @@
 import { describe, it, expect, beforeEach, afterEach } from "vitest";
 import { mkdirSync, writeFileSync, rmSync, existsSync, readFileSync } from "fs";
+import { tmpdir } from "os";
 import { join } from "path";
 import {
   checkNameHistoryBlocks,
@@ -73,7 +74,7 @@ describe("word fiche validator (REQ-196)", () => {
 
   beforeEach(() => {
     tmpDir = join(
-      __dirname,
+      tmpdir(),
       `tmp_test_wrd_${Date.now()}_${Math.random().toString(36).slice(2)}`
     );
     mkdirSync(join(tmpDir, "peuples", "FLG_TEST"), { recursive: true });

@@ -103,6 +103,13 @@ test.describe("@nfr-a11y people fiche — axe-core", () => {
 
 const SEARCH_URL = getLocalizedRoute(LOCALE, "search");
 
+async function openSearchFilters(page: Page): Promise<void> {
+  await page
+    .getByRole("button", { name: /^Voir aussi/ })
+    .first()
+    .click();
+}
+
 async function tabTo(page: Page, target: Locator): Promise<void> {
   for (let index = 0; index < 60; index += 1) {
     if (
@@ -152,6 +159,9 @@ test.describe("search page keyboard access and narrow widths", () => {
     await tabTo(page, input);
     await expectCharterFocusRing(page, input);
 
+    // Opening the disclosure moves focus past the answer's many source links.
+    // Check the input first so reaching it never depends on a full-page wrap.
+    await openSearchFilters(page);
     await tabTo(page, filters);
     await expectCharterFocusRing(page, filters);
     await expect(filters).toHaveCSS("font-size", "14px");
@@ -175,6 +185,7 @@ test.describe("search page keyboard access and narrow widths", () => {
     for (const width of [430, 768, 1440]) {
       await page.setViewportSize({ width, height: 900 });
       await page.goto(`${SEARCH_URL}?q=peul`);
+      await openSearchFilters(page);
 
       const filters = page
         .getByRole("navigation", { name: searchFeedCopy.fr.filters.label })

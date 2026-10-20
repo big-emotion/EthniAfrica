@@ -1,0 +1,16 @@
+{
+  "name": "Touareg",
+  "page": "https://ethniafrica.com/fr/atlas/recherche/touareg",
+  "provenance": "The live answer page, read on 20 October 2026: its two sentences under the searched name and its forms with their labels, word for word.",
+  "lead": [
+    "Vous avez cherché Touareg.",
+    "Ce peuple se nomme lui-même <b>Imuhagh</b>."
+  ],
+  "forms": [
+    { "w": "Touareg", "k": "cherché", "kind": "searched" },
+    { "w": "Imuhagh", "kind": "self" },
+    { "w": "Kel Tamasheq", "kind": "self" },
+    { "w": "Kandin", "k": "ancien" },
+    { "w": "Mulatthamin", "k": "ancien" }
+  ]
+}

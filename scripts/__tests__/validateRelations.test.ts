@@ -1,6 +1,7 @@
 // @req REQ-032
 import { describe, it, expect, beforeEach, afterEach } from "vitest";
 import { mkdirSync, writeFileSync, rmSync, existsSync } from "fs";
+import { tmpdir } from "os";
 import { join } from "path";
 import {
   checkRelationModel,
@@ -67,7 +68,7 @@ describe("relation validator (REL-1..REL-7, Story 11.3)", () => {
 
   beforeEach(() => {
     tmpDir = join(
-      __dirname,
+      tmpdir(),
       `tmp_test_rel_${Date.now()}_${Math.random().toString(36).slice(2)}`
     );
     mkdirSync(tmpDir, { recursive: true });

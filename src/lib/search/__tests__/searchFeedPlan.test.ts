@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 
+import { ANSWER_FIXTURES } from "@/lib/search/__fixtures__/answerFixtures";
 import { FEED_CASES } from "@/lib/search/__fixtures__/feedCases";
 import { ANSWER_BLOCKS } from "@/lib/search/resultGrammar";
 import {
@@ -8,6 +9,7 @@ import {
   companionSubjectsForSearch,
   isSearchFeedSubject,
 } from "@/lib/search/searchFeedPlan";
+import type { SearchResult } from "@/types/afrik-frontend";
 
 // @req REQ-180
 describe("search-feed plan", () => {
@@ -144,30 +146,87 @@ describe("search-feed plan", () => {
     expect(classifySearchFeed(unknown.production)).toBe("unknown");
   });
 
+  // Brief 19 was drawn for « sanoh »: no name answers it, only fiche prose
+  // uses it. That is the one page the recorded verdict describes.
+  const proseHit = (result: SearchResult): SearchResult => ({
+    ...result,
+    recordedIn: [
+      {
+        fieldPath: "content.organization.clanOrganization",
+        text: "Les clans Kagbo, Sanoh, Kaloko et Koroma jouent également des rôles importants.",
+      },
+    ],
+  });
+
   // @req REQ-125
-  it("classifies counted fiche text as a recorded-term answer", () => {
+  it("classifies counted fiche text as a recorded-term answer when nothing answers the name", () => {
     const exact = FEED_CASES.find(({ id }) => id === "mande")!;
     const [result] = exact.production.search.results;
 
     expect(
       classifySearchFeed({
         ...exact.production,
-        search: {
-          ...exact.production.search,
-          results: [
-            {
-              ...result,
-              recordedIn: [
-                {
-                  fieldPath: "content.organization.clanOrganization",
-                  text: "Les clans Kagbo, Sanoh, Kaloko et Koroma jouent également des rôles importants.",
-                },
-              ],
-            },
-          ],
-        },
+        search: { ...exact.production.search, results: [proseHit(result)] },
+        subjects: [],
       })
     ).toBe("recorded");
+  });
+
+  // ETNI-2110 regression: an exact name answering the query is the page, even
+  // when other fiches' prose also uses the word.
+  // @req REQ-125
+  it("lets an exact subject win over prose hits", () => {
+    const exact = FEED_CASES.find(({ id }) => id === "mande")!;
+    const [result] = exact.production.search.results;
+    const hit = proseHit(result);
+
+    expect(
+      classifySearchFeed({
+        ...exact.production,
+        search: { ...exact.production.search, results: [hit] },
+        subjects: [hit],
+      })
+    ).toBe("exact");
+  });
+
+  // « tribu » is used in 48 fiches' prose; WRD_TRIBU still answers it.
+  // @req REQ-125
+  it("lets the word fiche WRD_TRIBU win over the fiches whose prose uses it", () => {
+    const exact = FEED_CASES.find(({ id }) => id === "mande")!;
+    const [result] = exact.production.search.results;
+    const tribu: SearchResult = {
+      ...result,
+      type: "word",
+      id: "WRD_TRIBU",
+      name: "tribu",
+    };
+
+    expect(
+      classifySearchFeed({
+        ...exact.production,
+        search: {
+          ...exact.production.search,
+          results: [tribu, proseHit(result)],
+        },
+        subjects: [tribu],
+      })
+    ).not.toBe("recorded");
+  });
+
+  // « ethnie » reaches no fiche: the published word answers it.
+  // @req REQ-125
+  it("lets a published word answer win over prose hits", () => {
+    const exact = FEED_CASES.find(({ id }) => id === "mande")!;
+    const [result] = exact.production.search.results;
+
+    expect(
+      classifySearchFeed({
+        ...exact.production,
+        search: { ...exact.production.search, results: [proseHit(result)] },
+        subjects: [],
+        wordAnswers: ANSWER_FIXTURES.pharaon.wordAnswers,
+      })
+    ).not.toBe("recorded");
   });
 
   // A reviewed term a near spelling may have meant is as good a suggestion as a

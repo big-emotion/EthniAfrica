@@ -24,9 +24,13 @@ const seq = loadSeriesVideo(longDemo(dir), { dir });
 const at = (id) => seq.cards.findIndex((c) => c.id === id);
 // A card at full opacity near its end, once everything has entered.
 const late = (id) => seq.cardStarts[at(id) + 1] - 12;
-const chapterFrame = seq.cardStarts[at("chapitre-1")] + 6;
+// Two seconds in: the dots, « 1 sur 3 » and the title have all entered.
+const chapterFrame = seq.cardStarts[at("chapitre-1")] + 60;
+// Before the title's entrance: the line and the dots only.
+const chapterEarly = seq.cardStarts[at("chapitre-1")] + 15;
 const keyFrames = [
   chapterFrame,
+  chapterEarly,
   late("serie-afrique-tout-02"),
   late("serie-afrique-tout-04"),
   late("serie-afrique-tout-02-cite"),
@@ -53,15 +57,34 @@ test("1.7.0: every text of the long video stays in its band", () => {
 });
 
 // @req REQ-186
-test("1.7.0: the chapter card: the number, « sur 3 » and the title in x 60 to 960, y 318 to 700, no subtitle", () => {
+test("the chapter card (operator, 20 October 2026): « 1 sur 3 » then the title, centred on the dark ground, nothing else", () => {
   const f = frameAt(chapterFrame);
   const title = f.boxes.find((b) => b.kind === "chapter-title");
   assert.ok(title, "no chapter title box");
-  assert.ok(title.x >= 59.5 && title.x + title.w <= 960.5, `x ${title.x}`);
-  assert.ok(title.y >= 317.5 && title.y + title.h <= 700.5, `y ${title.y}`);
+  const centre = title.x + title.w / 2;
+  assert.ok(Math.abs(centre - 540) <= 3, `title centred at ${centre}`);
+  assert.ok(title.x >= 59.5 && title.x + title.w <= 1020.5, `x ${title.x}`);
+  assert.ok(title.y >= 940 && title.y + title.h <= 1300, `y ${title.y}`);
+  const count = f.boxes.find((b) => b.kind === "chapter-count");
+  assert.ok(count, "no « 1 sur 3 » box");
+  // The title sits well clear of « 1 sur 3 », never against it.
+  assert.ok(title.y - (count.y + count.h) >= 60, "title against the count");
   assert.match(flat(f.text), /1 sur 3/);
   assert.match(flat(f.text), /Un continent entier/);
-  assert.ok(!f.boxes.some((b) => b.kind === "subtitle" || b.kind === "source"));
+  assert.ok(
+    !f.boxes.some((b) =>
+      ["subtitle", "source", "credit", "image"].includes(b.kind)
+    )
+  );
+  // The band and the signature leave the frame to the chapter card.
+  assert.equal(f.chrome, 0);
+});
+
+// @req REQ-186
+test("the chapter card animates: the title is not yet in 0.5 s after the card starts", () => {
+  const f = frameAt(chapterEarly);
+  const title = f.boxes.find((b) => b.kind === "chapter-title");
+  assert.ok(!title, "the title is already visible");
 });
 
 // @req REQ-186

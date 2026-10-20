@@ -1,6 +1,7 @@
 // @req REQ-088
 import { describe, it, expect, beforeEach, afterEach } from "vitest";
 import { mkdirSync, writeFileSync, rmSync, existsSync } from "fs";
+import { tmpdir } from "os";
 import { join } from "path";
 import {
   checkColonialEventCr3,
@@ -124,7 +125,7 @@ describe("validateAfrikData – colonial-event checks (CR3-CR5)", () => {
 
   beforeEach(() => {
     tmpDir = join(
-      __dirname,
+      tmpdir(),
       `tmp_test_ce_${Date.now()}_${Math.random().toString(36).slice(2)}`
     );
     mkdirSync(tmpDir, { recursive: true });

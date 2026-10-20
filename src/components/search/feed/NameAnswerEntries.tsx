@@ -3,7 +3,10 @@ import {
   ANSWER_HEADING,
 } from "@/components/search/answer/answerStyle";
 import { SourcesLine } from "@/components/search/answer/SourcesLine";
-import { ficheHrefFor } from "@/components/search/SearchResultCard";
+import {
+  ficheHrefFor,
+  hasFichePage,
+} from "@/components/search/SearchResultCard";
 import { getSearchEntityLabel } from "@/components/search/searchEntityAccent";
 import { ActionLink } from "@/components/ui/ActionLink";
 import { nameAnswerCopy } from "@/lib/i18n/copy/nameAnswer";
@@ -33,9 +36,11 @@ export function UnansweredFicheLinks({
 }) {
   const copy = nameAnswerCopy[language];
   const single = subjects.length === 1;
+  const withFiche = subjects.filter(hasFichePage);
+  if (withFiche.length === 0) return null;
   return (
     <div className="mt-afh-md flex flex-wrap items-center gap-x-afh-2xl">
-      {subjects.map((subject) => {
+      {withFiche.map((subject) => {
         const kind = getSearchEntityLabel(subject.type);
         return (
           <ActionLink
@@ -98,7 +103,7 @@ export function NameAnswerEntries({
               ) : null}
             </div>
             <div className="mt-afh-md flex flex-wrap items-center gap-x-afh-2xl">
-              {subjects.map((subject) => {
+              {subjects.filter(hasFichePage).map((subject) => {
                 const kindLabel = getSearchEntityLabel(subject.type);
                 return (
                   <ActionLink

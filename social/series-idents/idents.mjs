@@ -2,7 +2,8 @@
 // parchment ground, the phone with the site's search redrawn in it, the
 // episode's layer and the ready signal. Every value comes from render(t):
 // the same time gives the same pixels, as in the series video engine.
-import { CLIPS, SAFE_ZONE, BUTTON_COLUMN, FPS } from "./shots.mjs";
+import { CLIPS, SAFE_ZONE, BUTTON_COLUMN } from "./shots.mjs";
+import { groundMotion } from "./ground.mjs";
 
 export const params = new URLSearchParams(location.search);
 export const $ = (id) => document.getElementById(id);
@@ -40,16 +41,17 @@ export const SEARCH_ICON = `<svg viewBox="0 0 24 24" fill="none" stroke="current
 export function ground() {
   document.body.insertAdjacentHTML(
     "afterbegin",
-    `<div id="parch"></div><div id="glow"></div>`
+    `<div id="parch" class="ground-parch"></div><div id="glow" class="ground-glow"></div>`
   );
-  document.body.insertAdjacentHTML("beforeend", `<div id="grain"></div>`);
+  document.body.insertAdjacentHTML(
+    "beforeend",
+    `<div id="grain" class="ground-grain"></div>`
+  );
 }
 export function moveGround(t) {
-  const f = Math.floor(t * FPS);
-  $("grain").style.transform =
-    `translate(${((f * 73) % 256) - 128}px,${((f * 151) % 256) - 128}px)`;
-  $("glow").style.transform =
-    `translate(${Math.sin(t * 0.35) * 60}px,${Math.cos(t * 0.27) * 50}px)`;
+  const { grain, glow } = groundMotion(t);
+  $("grain").style.transform = `translate(${grain[0]}px,${grain[1]}px)`;
+  $("glow").style.transform = `translate(${glow[0]}px,${glow[1]}px)`;
 }
 
 // The episode's name. The intro needs only the name; the end card needs the

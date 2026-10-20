@@ -91,6 +91,9 @@ export function AtlasTargetPicker({
   };
 
   const chosen = targets.find((t) => t.countryId === chosenCountryId) ?? null;
+  const chosenName = chosen
+    ? (getAdmin0Name(chosen.countryId, language) ?? chosen.nameFr)
+    : null;
 
   /** Arrow keys wrap, so the last option is one keystroke from the first. */
   const moveFocus = (from: HTMLElement, delta: number) => {
@@ -111,12 +114,9 @@ export function AtlasTargetPicker({
         type="button"
         aria-haspopup="listbox"
         aria-expanded={open}
-        // The visible text becomes the chosen country, as in the mockup, but
-        // the accessible name must not: a control named only by its current
-        // value stops saying what it does, so a screen-reader user who lands
-        // on it after choosing hears "Bénin, button" and nothing about what
-        // pressing it would do.
-        aria-label={chooseLabel}
+        // Keep the action in the name and include the visible country so the
+        // accessible name still matches the text on the control.
+        aria-label={chosenName ? `${chooseLabel}, ${chosenName}` : chooseLabel}
         onClick={() => {
           shouldFocusFirst.current = !open;
           setOpen(!open);
@@ -139,9 +139,7 @@ export function AtlasTargetPicker({
           cursor: "pointer",
         }}
       >
-        {chosen
-          ? (getAdmin0Name(chosen.countryId, language) ?? chosen.nameFr)
-          : chooseLabel}
+        {chosenName ?? chooseLabel}
         <span aria-hidden="true">▾</span>
       </button>
 

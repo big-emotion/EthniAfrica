@@ -184,6 +184,9 @@ test("three slices: the manifest describes the joined file and every slice's pro
     cuts: null,
   });
   assert.deepEqual(record(three.manifest), record(one.manifest));
+  // Every frame FFmpeg received was a fast capture (README, « Fast capture »).
+  assert.equal(one.manifest.runtime.capture, "png-fast");
+  assert.equal(three.manifest.runtime.capture, "png-fast");
   // The slices are deleted once joined.
   assert.deepEqual(readdirSync(join(root, "three")).sort(), [
     "manifest.json",
@@ -233,6 +236,19 @@ test("at each cut, the encoded frames match the single pass's within x264's loss
       t.diagnostic(`frame ${f}: PSNR ${psnr.toFixed(1)} dB, ${worst} at most`);
       assert.ok(psnr > 40, `frame ${f}: PSNR ${psnr.toFixed(1)} dB`);
     }
+});
+
+// @req REQ-186
+test("three slices encoded again: the same video, byte for byte", async (t) => {
+  if (!assets) return t.skip("no imagery");
+  // The package binds the video's exact bytes (README, « Determinism »):
+  // before 20 October 2026 the globe's limb changed from run to run on
+  // SwiftShader, and so did the file.
+  const again = await encodeSeriesVideo(seq, join(root, "three-again"), {
+    diagnose: true,
+    workers: 3,
+  });
+  assert.equal(again.manifest.hashes.video, three.manifest.hashes.video);
 });
 
 // @req REQ-186

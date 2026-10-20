@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Proposition provisoire · fiches plus lisibles</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #33291f;
+        --muted: #74675b;
+        --paper: #f5eee2;
+        --card: #fffdfa;
+        --line: #e3d8c9;
+        --accent: #8c4f00;
+        --soft: #fff8ea;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--paper); color: var(--ink); }
+      header { padding: 22px 16px; background: var(--card); border-bottom: 1px solid var(--line); }
+      header > div, main { width: min(100%, 1440px); margin: 0 auto; }
+      .status { margin: 0 0 8px; color: var(--accent); font-size: .78rem; font-weight: 700; }
+      h1 { margin: 0; font-family: Georgia, serif; font-size: clamp(1.7rem, 4vw, 2.5rem); line-height: 1.1; }
+      header p { margin: 8px 0 0; color: var(--muted); line-height: 1.45; }
+      main { padding: 16px 12px 36px; }
+      .boards { display: grid; grid-template-columns: 1fr; gap: 14px; }
+      article { overflow: hidden; border: 1px solid var(--line); border-radius: 16px; background: var(--card); }
+      .board-head { padding: 14px 16px; border-bottom: 1px solid var(--line); }
+      .board-head h2 { margin: 0; font-family: Georgia, serif; font-size: 1.35rem; }
+      .measure { margin: 4px 0 0; color: var(--muted); font-size: .82rem; }
+      .viewport { padding: 14px 16px 18px; }
+      .viewport-label { display: flex; justify-content: space-between; margin: 0 0 12px; color: var(--muted); font-size: .75rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+      .viewport-label span:first-child::before { content: "Mobile · 430 px"; }
+      .page { min-height: 220px; padding: 18px; border: 1px solid var(--line); border-radius: 12px; background: #faf6ee; }
+      .page h3 { margin: 0 0 18px; font-family: Georgia, serif; font-size: 1.15rem; line-height: 1.25; }
+      .list-row { padding: 14px 0; border-top: 1px solid var(--line); }
+      .list-row:first-of-type { border-top: 0; }
+      .list-label { margin: 0 0 8px; color: var(--muted); font-size: .86rem; }
+      details.names { border-radius: 9px; background: var(--soft); }
+      details.names summary { min-height: 48px; padding: 14px; color: var(--accent); font-weight: 700; line-height: 1.3; cursor: pointer; }
+      details.names summary::marker { content: ""; }
+      details.names summary::before { content: "+  "; }
+      details.names[open] summary::before { content: "−  "; }
+      .name-list { display: grid; grid-template-columns: 1fr; gap: 0; margin: 0; padding: 0 14px 12px; list-style: none; }
+      .name-list li { padding: 9px 0; border-top: 1px solid var(--line); }
+      .secondary { margin: 0; color: var(--muted); font-size: .86rem; line-height: 1.45; }
+
+      @media (min-width: 768px) {
+        .viewport-label span:first-child::before { content: "Tablette · 768 px"; }
+        header { padding: 26px 24px; }
+        main { padding: 24px; }
+        .boards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+        .page { min-height: 250px; padding: 20px; }
+        .name-list { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 18px; }
+      }
+      @media (min-width: 1200px) {
+        .viewport-label span:first-child::before { content: "Bureau · 1 440 px"; }
+        header { padding-inline: 32px; }
+        main { padding: 30px 32px 44px; }
+        .boards { gap: 22px; }
+        .board-head, .viewport { padding-inline: 20px; }
+        .page { min-height: 270px; padding: 22px; }
+        .name-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Operator-approved personal-name section labels:
+      Country: "Noms de personnes rattachés à ce pays".
+      People: "Noms de personnes associés à ce peuple".
+      Language: "Noms de personnes associés à cette langue".
+      These labels do not apply to alternate names of the people or language.
+    -->
+    <header>
+      <div>
+        <p class="status">Brouillon simplifié · à valider</p>
+        <h1>Fiches plus lisibles</h1>
+        <p>Un titre, un compte, puis une liste que l’on ouvre si on en a besoin.</p>
+      </div>
+    </header>
+    <main>
+      <div class="boards">
+        <article>
+          <div class="board-head"><h2>Namibie</h2><p class="measure">356 px à réduire · fiche pays</p></div>
+          <div class="viewport">
+            <p class="viewport-label"><span></span><span>Liste fermée</span></p>
+            <div class="page">
+              <h3>Noms de personnes rattachés à ce pays</h3>
+              <div class="list-row">
+                <p class="list-label">Attestés dans le pays · 12 noms</p>
+                <details class="names"><summary>Afficher les 12 noms</summary><ul class="name-list"><li>Amadhila</li><li>Geingob</li><li>Hamutenya</li><li>Iipumbu</li><li>Kaapanda</li><li>Nghidinwa</li><li>Nujoma</li><li>Pohamba</li><li>Riruako</li><li>Shikongo</li><li>Tjiriange</li><li>Witbooi</li></ul></details>
+              </div>
+              <div class="list-row"><p class="secondary">Autres noms associés · 14</p></div>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <div class="board-head"><h2>Burundi</h2><p class="measure">236 px à réduire · fiche pays</p></div>
+          <div class="viewport">
+            <p class="viewport-label"><span></span><span>Liste fermée</span></p>
+            <div class="page">
+              <h3>Noms de personnes rattachés à ce pays</h3>
+              <div class="list-row">
+                <p class="list-label">Attestés dans le pays · 12 noms</p>
+                <details class="names"><summary>Afficher les 12 noms</summary><ul class="name-list"><li>Bigirimana</li><li>Bukuru</li><li>Hakizimana</li><li>Irakoze</li><li>Manirakiza</li><li>Ndayizeye</li><li>Ndikumana</li><li>Nduwimana</li><li>Niyonkuru</li><li>Nkurunziza</li><li>Nsabimana</li><li>Ntibantunganya</li></ul></details>
+              </div>
+              <div class="list-row"><p class="secondary">Autres noms associés · 11</p></div>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <div class="board-head"><h2>Minyanka</h2><p class="measure">1 273 px à réduire · fiche peuple</p></div>
+          <div class="viewport">
+            <p class="viewport-label"><span></span><span>Liste fermée</span></p>
+            <div class="page">
+              <h3>Les autres noms</h3>
+              <div class="list-row">
+                <p class="list-label">7 noms</p>
+                <details class="names"><summary>Afficher les 7 noms</summary><ul class="name-list"><li>Mianka</li><li>Minianka</li><li>Mamara</li><li>Miniyanka</li><li>Minya</li><li>Myanka</li><li>Tupiire</li></ul></details>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <div class="board-head"><h2>Fulɓe</h2><p class="measure">1 798 px à réduire · fiche peuple</p></div>
+          <div class="viewport">
+            <p class="viewport-label"><span></span><span>Liste fermée</span></p>
+            <div class="page">
+              <h3>Les autres noms</h3>
+              <div class="list-row">
+                <p class="list-label">7 noms</p>
+                <details class="names"><summary>Afficher les 7 noms</summary><ul class="name-list"><li>Haalpulaar'en</li><li>Futankooɓe</li><li>Peul</li><li>Fula</li><li>Fulani</li><li>Fellata</li><li>Toucouleur</li></ul></details>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>

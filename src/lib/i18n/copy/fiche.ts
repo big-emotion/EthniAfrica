@@ -53,7 +53,7 @@ const fr = {
   fold: {
     seeAlso: (titles: readonly string[]) =>
       `+ Voir aussi : ${titles.join(", ")}`,
-    seeNames: (count: number) => `+ Voir les ${count} noms`,
+    seeNames: (count: number) => `+ Afficher les ${count} noms`,
   },
   amendable: {
     lead: "Vous connaissez un nom, une date ou une source que cette page n'a pas ? Elle est faite pour être complétée.",
@@ -76,7 +76,7 @@ const fr = {
   chapterBar: {
     aria: "Chapitres de la page",
     summary: "Sommaire",
-    toggle: (title: string) => `Sommaire de la page — ${title}`,
+    toggle: (title: string) => `${title} — Sommaire`,
     report: "Signaler",
   },
 };

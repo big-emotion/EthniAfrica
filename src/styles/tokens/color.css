@@ -65,6 +65,7 @@
   --afh-night-ocre: #c9821f;
   --afh-night-ocre-soft: #e8b96a;
   --afh-night-teal: #33a390;
+  --afh-night-green: #91d5ac;
   --afh-night-terre: #c4573f;
   --afh-night-perv: #7a8ce8;
   /* The colonial tone lightened for a dark ground. #9b3030 is a day ink and
@@ -75,12 +76,12 @@
   --afh-night-colonial: #d98a7a;
 
   /* Charter categorical accents (V2, ETNI-798 · FR104) — the CVD-validated
-     set promoted to first-class tokens. Base hexes match the dormant
-     --afh-night-{ocre,teal,terre,perv} above; the -tint variants are new.
-     The --afh-night-* group stays otherwise dormant. DEC-022 (ETNI-1284)
-     lifted that for one surface: the atlas globe stage on a fiche is
-     --afh-night-ground/-ink* regardless of the fiche's own accent — see
-     src/components/atlas/AtlasGlobe.tsx. No other component may consume it. */
+     set promoted to first-class tokens. Base hexes match the
+     --afh-night-{ocre,teal,terre,perv} group above; the -tint variants are
+     new. The chronology uses the night ocre and green inks. DEC-022
+     (ETNI-1284) also lifted the night ground and inks for the atlas globe
+     stage on a fiche, regardless of the fiche's own accent — see
+     src/components/atlas/AtlasGlobe.tsx. */
   /* ─── The brand mark's two stops ──────────────────────────────
      The warm gradient paints the masthead tagline on every page and
      the title of each axis hub. It is the most visible colour in the
@@ -258,6 +259,10 @@
      reads the accent declarations with a regex over this file, and a comment
      shaped like a declaration is captured as one. */
   --afh-conf-low-ink: var(--afh-color-earth);
+
+  /* Chronology regime inks follow the page theme. */
+  --afh-chronology-polity-ink: var(--afh-gold);
+  --afh-chronology-modern-ink: var(--afh-conf-high);
 
   /* Classification state — fiche-level editorial status */
   --afh-classification-stable: var(--afh-color-green);
@@ -478,6 +483,8 @@
      pair takes text-soft rather than text-muted. */
   --afh-muted: var(--afh-night-surface);
   --afh-fg-muted: var(--afh-night-ink-2);
+  --afh-chronology-polity-ink: var(--afh-night-ocre-soft);
+  --afh-chronology-modern-ink: var(--afh-night-green);
 
   /* An accent fill is a light patch on a dark page, so the text on it
      flips to the dark ink for the same reason terre needs it in day. */
