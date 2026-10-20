@@ -26,6 +26,13 @@ const DISAMBIGUATED_QUERY = "Yoruba";
 // know the name instead of presenting a zero-result count as its answer.
 const NO_MATCH_QUERY = "zzzznonexistentqueryxyz12345";
 
+async function openSearchFilters(page: import("@playwright/test").Page) {
+  await page
+    .getByRole("button", { name: /^Voir aussi/ })
+    .first()
+    .click();
+}
+
 test.beforeEach(async ({ page }) => {
   // Same consent bypass as e2e/home-search-first.spec.ts: this is a headless
   // run against a local dev server, not a human meeting the cookie banner —
@@ -72,6 +79,7 @@ test.describe("SERP title and answer rule (REQ-178, DEC-057)", () => {
     page,
   }) => {
     await page.goto(`${SERP_URL}?q=${encodeURIComponent(DISAMBIGUATED_QUERY)}`);
+    await openSearchFilters(page);
     const headings = page.getByRole("heading", { level: 1 });
     // The page opens on « Histoire du nom » once the Yoruba people carries a
     // name history (#1622, REQ-198). That lens must not crown the subject it
@@ -161,6 +169,7 @@ test.describe("SERP one-column answer rule (REQ-178, DEC-057)", () => {
       await expect(layout).toBeVisible();
       expect(await noHorizontalScroll(page)).toBe(true);
 
+      await openSearchFilters(page);
       await openAnswerLens(page);
       const answer = page.locator('[data-feed-block="answer-what"]').first();
       await expect(answer).toBeVisible();
