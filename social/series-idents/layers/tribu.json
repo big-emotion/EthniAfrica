@@ -1,14 +1,14 @@
 {
   "name": "tribu",
   "page": "https://ethniafrica.com/fr/atlas/recherche/tribu",
-  "provenance": "The word answer's definition, word for word, and its two forms, from dataset/source/afrik/mots/WRD_TRIBU.json, which the fixed address page prints (PR #1916, its test « answers « tribu » with its word fiche »). Provisional: the live page showed a list of fiches instead on 20 October 2026 (regression of ETNI-2110); to be checked against the live page once the fix is released.",
+  "provenance": "The live answer page, read on 21 October 2026 after v5.10.0: its definition and its two forms with their labels, word for word (« tribu · votre recherche », « tribe »).",
   "lead": [
     "Un mot qui désignait une division du peuple romain",
     "et qui a servi ensuite à nommer, de l'extérieur,",
     "des peuples que l'on disait sans État."
   ],
   "forms": [
-    { "w": "tribu", "k": "cherché", "kind": "searched" },
-    { "w": "tribe", "k": "anglais" }
+    { "w": "tribu", "k": "votre recherche", "kind": "searched" },
+    { "w": "tribe" }
   ]
 }
