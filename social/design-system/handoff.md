@@ -2,6 +2,8 @@
 
 ## Acceptance and integration status
 
+**1.13.0-proposition, 20 October 2026, accepted by the operator on 21 October 2026, with the designer's recommendations.** Motion and sound of every series video: the motion tokens, the pop and the swell, the continuous camera, the whip zoom and the warm flash for the story's turns, the era map and its date counter, drawn marks, flags only inside a state existing on the date shown, the headline band, three format tiers, the subject key and the recap card, episodes about a word, and the sound cues as a specification. Not yet integrated: see « Renderer integration of 1.13.0 ».
+
 **1.12.0-proposition, 20 October 2026, accepted by the operator the same day, with the designer's recommendations.** Teaching cards in motion on the idents' parchment ground: the week table one people per table with lit rows, the formula built by moves, drawings for what a name says, and the parchment text card. See « Renderer integration of 1.12.0 ».
 
 **1.11.0-proposition, 19 October 2026, accepted by the operator the same day, with the designer's recommendations.** The animated satellite map of the series video: the opening globe that becomes the first map, area states, route arrows, drawings on the map, words on the map, moves inside a card, a name that changes, map and picture phases, and a silent viewing check. See « Renderer integration of 1.11.0 ».
@@ -774,3 +776,70 @@ A chapter card is a card of the sequence, `{ "type": "chapter", "chapter": 2, "i
 
 - From the operator's review of the narration v8 of « Kouassi et Yao » (series 3, episode 1): the week table girl | day | boy, one people per table, animated; the name formulas animated more visibly; drawings in the series' hand for what a name says; a parchment card with motion-design text for a passage with nothing to show but words. Six questions and boards at 1080 × 1920 with the 3:4 grid crop and the timings.
 - Proposed and accepted on 20 October 2026, with the designer's recommendations on the eight questions and the three drawings as drawn.
+
+## Renderer integration of 1.13.0
+
+**Status: accepted by the operator on 21 October 2026, with the designer's recommendations** (Series, « Motion and sound (1.13.0-proposition) », « Decided by the operator on 21 October 2026 »). Not yet integrated in the engine. It builds on `recette` with 1.12.0 integrated (PR #1922). A piece without the new fields renders exactly as before, except for the motion tokens, the pop and the continuous push, which apply to every series video once accepted (steps 1 to 3).
+
+**Piece data.** Every `say` names a unit of the card's own chunks (`chunkUnits`), first occurrence, as in 1.5.0; the engine places the motion and its cue on that word's frame.
+
+```json
+{ "subject": { "id": "BFA", "ink": "a", "view": { "lon": -1.57, "lat": 12.25, "r": 4865 },
+               "formula": "Burkina Faso · épisode {n}", "episode": 2 },
+  "tier": "short | medium | long",
+  "recap": { "map": "<the previous episode's last map card>", "title": "La Haute-Volta devient le Burkina Faso",
+             "marks": ["area:haute-volta-1919", "text:HAUTE-VOLTA", "text:BURKINA FASO"], "chunks": ["…"] } }
+{ "type": "map", "era": { "date": 1970, "label": "République de Haute-Volta", "say": "1970" },
+  "flags": [{ "area": "country:BFA", "flag": "hv", "from": "1959-12-09", "to": "1984-08-04", "say": "noir" }],
+  "marks": [{ "kind": "river", "path": "niger", "say": "Niger" },
+            { "kind": "route", "via": ["bamako", "sikasso", "kong", "bobo", "ouaga"], "say": "Binger" },
+            { "kind": "circle", "at": "ouaga", "say": "Ouagadougou" },
+            { "kind": "cross", "at": "kong", "say": "détruite" },
+            { "kind": "pin", "at": "paris", "say": "Paris" },
+            { "kind": "exchange", "between": ["ouaga", "salaga"], "say": "Salaga" }],
+  "headline": { "lines": ["Un nom choisi", "en [[1984]]"], "say": "choisi", "until": "révolution" },
+  "whip": { "to": { "lon": 2.35, "lat": 48.86, "r": 3200 }, "say": "Paris" } }
+{ "type": "word", "ground": "parchment", "word": "Burkina Faso",
+  "parts": [{ "text": "Burkina", "lang": "mooré", "sense": "l’intégrité", "say": "Burkina" },
+            { "text": "Faso", "lang": "dioula", "sense": "la patrie", "say": "Faso" }],
+  "join": { "base": "Burkina", "add": "bè", "lang": "fulfulde", "sense": "les gens de", "say": "bè" },
+  "forms": [{ "text": "Burkinabé", "kind": "variante", "say": "Burkinabé" }],
+  "stamp": { "date": "4 août 1984", "label": "premier emploi officiel", "say": "1984" } }
+```
+
+**Engine** (`social/video`), test first:
+
+1. **Motion tokens** (`series-motion.mjs`, new, imported by `series-page.mjs`, `series-map.mjs` and `series-teaching.mjs`): the five curves and the lengths of Series, « 1. Motion tokens », in frames at 30 fps (`micro` 5, `pop` 9, `exit` 6, `stamp` 5, `change` 9, `band` 12 in and 8 out, `flash` 15, `whip` 21, `swell` 21, `move` 48). Every existing ease in the series modules is replaced by its token; 1.11.0's and 1.12.0's lengths are unchanged.
+2. **The pop and the swell** (`series-map.mjs`, `series-teaching.mjs`): names, words, labels, pins, tags and forms enter by the pop (70 → 106 → 100 %, 110 % under 60 px, from their anchor) and leave by the exit; areas by the swell (fill to 135 % at 55 %, then to their level). The head, the band, the subtitles, the foot and the signature keep 1.4.0's change.
+3. **The continuous push** (`series-map.mjs`, `series-page.mjs`): the globe's radius times 1.06 every 10 s from the card's first frame, multiplied with any camera move; a card is framed at the limit divided by its push, and the loader refuses a card whose push would pass the 1.5 enlargement limit (« Poussée au-delà de la limite de l'imagerie : cadrer plus large »). Parchment cards push their content 3 % every 10 s around (540, 1000). Picture phases push 6 % every 10 s within their picture's enlargement limit (question 3).
+4. **The whip zoom** (`series-map.mjs`): `whip` on a map card builds one camera path (out to radius 900 in 7 frames, across in 7, in in 7), zero speed at both ends; the frame is blurred by averaged copies following the camera's speed on screen (radial up to 35 %, directional up to 160 px); marks leave 6 frames before; refused between two views less than 2,000 km apart (« Lancer rapide entre deux lieux proches : un mouvement de caméra suffit ») and within 120 frames of another.
+5. **The flash and the era map** (`series-map.mjs`, `page.mjs`): `era` on a map card starts the flash on its `say` (15 frames, peak 92 % at frame 4), switches the shader's `paper` uniform from 0 to 1 between frames 3 and 9 and the inks at frame 4. The paper treatment is in the satellite shader (Series, « 5. The era map »: map-land, its relief and olive, map-water), the coast's three lines and its line drawn from the shoreline data (`shoreline.mjs`), the paper texture an asset (`assets/Paper/paper.png`, 512 px, tiled). No modern border is drawn on an era card. A card without `era` is today, on the satellite.
+6. **The date counter** (`series-page.mjs`): with `era`, the counter rolls from the previous card's date (or today) to `era.date` on `ease-land` in 36, 48 or 60 frames, odometer digits 0.5 em wide, the 4 % settle in 6 frames, the label 9 frames after landing; it replaces the head's kicker and title on that card.
+7. **Drawn marks** (`series-map.mjs`): `river`, `route`, `circle`, `cross`, `pin`, `exchange` with the widths, inks and speeds of Series, « 7. Drawn marks », all scaled from the arrow width W of 1.11.0; at most three on screen besides areas and arrows (« Trop de traits à la fois »); a circle on an area or a cross on a people is refused. River paths come from a pinned data file (`data/rivers/*.geojson`, Natural Earth, public domain).
+8. **Flags** (`series-map.mjs`, flag drawings in `assets/Flags/<id>.svg`): a flag needs `from` and `to` (or none) bracketing the card's date, an area of kind `state`, and its state's name among the card's words; otherwise the loader refuses it (« Drapeau hors de la période de l'État » / « Drapeau sur une aire qui n'est pas un État »). Clipped to the area, 86 % (73 % on paper), the wave and shading of the boards; unrolls in 18 frames, rolls back in 12. Under a rolling counter, a flag starts rolling back 12 frames before the counter shows the end of its period and the next unrolls on the frame it shows its start; a period crossed in less than 30 frames shows no flag.
+9. **The headline band** (`series-page.mjs`): two lines at most, 18 characters each, every word among the voice's words of the chunks from `say` to `until`; two bands a video at most (« Bandeau de titre : deux par vidéo »); never on a card with a counter. The head fades out in 5 frames before it and back after it; the lines slide with a horizontal blur from their speed; the key word stamps once its line lands.
+10. **Format tiers** (`series.mjs`): `tier` sets the targets of Series, « 10. Format tiers »; the plan's report gives every change's frame, the median gap and the longest gap (picture phases and chapter cards left out), and warns past the tier's longest gap (`warnings`, as 1.4.0's length). Strong transitions and bands past the tier's counts are refused.
+11. **Subject key and recap** (`series.mjs`, `series-page.mjs`, new `social/series/subjects/<id>.json`): the subject's ink and base view override the piece's; the kicker formula is composed by the engine; the band never carries the episode. `recap` inserts the recap card after the intro ident: the given map card at saturation 0.3, its marks popping 18 frames apart, 180 frames at most (120 on a short).
+12. **Word cards** (`series-teaching.mjs`): the word, its parts lifting apart, tags and senses popping in, the join (1.12.0), forms as pills, the stamp (from 140 % in 5 frames). The parchment's run of word cards is checked against the tier (20 s or 30 s alone).
+13. **The sound** (`render.mjs` `audioArgs`, new `social/video/mix.mjs`): the plan lists every cue with its family, frame and level (Series, « 13. Sound cues »); `mix.mjs` builds one FFmpeg filter graph: the voice; the cues (`social/sound/cues/<family>/*.wav`, the operator's files) delayed to their frames with their gains; the series' bed (`social/sound/beds/<series>.wav`) looped and ducked under the voice by `sidechaincompress` to 17 dB under it; then `loudnorm` in two passes to −16 LUFS integrated, −1 dBTP, LRA 8. The manifest records the measured loudness and true peak. Without cue or bed files the engine muxes the voice alone, as today.
+
+**Assets.** `assets/Paper/paper.png` (generated by Claude Design, no third-party material); `assets/Flags/bfa.svg` and `hv.svg` (drawn from the flags' official descriptions); the cues and beds are the operator's.
+
+**Checks** (tests first):
+
+1. Tokens: every move of the series modules resolves to a token; the lengths of 1.11.0 and 1.12.0 unchanged.
+2. Pop: the scale at frames 0, 5 and 9 is 70, 106 and 100 % (110 % for a mark under 60 px), from its anchor; an exit ends at 92 % and 0.
+3. Push: the radius at frame f is r × 1.06^(f / 300); never past the limit; band, head, subtitles and foot pixel-identical between frames of a card away from their changes.
+4. Whip: 21 frames; zero speed at both ends; no mark drawn during it; refused under 2,000 km.
+5. Flash: one per 60 frames at most; the luminance pair counted by a flash detector (WCAG 2.3.1: never three in a second); the paper switch inside its frames 3 to 9.
+6. Era map: no modern border on an era card; Parchemin inks for every text; the coast lines on the sea side only.
+7. Counter: the digits never shift horizontally; the landing frame shows the target year; one tick per displayed year, 25 a second at most.
+8. Marks: widths from W; three at most; the refused cases.
+9. Flags: the refused cases (a people, a colony, a date out of period); the wave's amplitude at the hoist and the fly.
+10. Headline band: two at most; its words among the voice's; never with a counter.
+11. Tiers: the report's gaps on the boards' plans; the warnings and refusals.
+12. Recap: 180 frames at most; saturation 0.3; marks 18 frames apart.
+13. Sound: the cue frames; the bed 17 ± 1 dB under the voice in speech (short-term loudness); the final mix −16 ± 0.5 LUFS and true peak ≤ −1 dBTP; the video identical without its audio track.
+14. Everything accepted holds: the carousels unchanged; a piece without the new fields differs from its 1.12.0 render only by the push and the pop.
+
+**Boards and prototype.** `Video` group `video-1130-*` and the seven previews (Series, « Boards (1.13.0) »), drawn by a scratch board renderer (`tools/motion113.html` with `scenes113.js`, `illus.js`) and the cue synthesizer (`tools/cues113.py`), not the engine; kept with the design package, not deposited.
