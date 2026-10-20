@@ -40,6 +40,57 @@ const MATRIX = Object.keys(baseline.heights);
 // included. EGY sits 22 px under: the next addition to it must be weighed.
 const HEIGHT_DEBT: readonly string[] = [];
 
+const DISCLOSURE_ROUTES = [
+  "/fr/atlas/pays/NAM",
+  "/fr/atlas/pays/BDI",
+  "/fr/atlas/peuples/PPL_MINYANKA",
+  "/fr/atlas/peuples/PPL_FULA",
+];
+
+test.describe("approved long-name lists", () => {
+  for (const width of [430, 768, 1440]) {
+    for (const path of DISCLOSURE_ROUTES) {
+      // @req REQ-133 REQ-153 REQ-190
+      test(`${path} reveals every name at ${width}px`, async ({
+        page,
+      }, testInfo) => {
+        await page.setViewportSize({ width, height: 932 });
+        await openRecord(page, path);
+        const group = page.locator(
+          path.includes("/pays/")
+            ? '[data-names-register="attested"]'
+            : ".afh-name-others"
+        );
+        const fold = group.locator("details.ea-fold").first();
+        const entries = group.locator(
+          path.includes("/pays/") ? ".afh-name-pills li" : "[data-name-row]"
+        );
+        const count = await entries.count();
+        expect(count).toBeGreaterThan(0);
+        await expect(fold).not.toHaveAttribute("open");
+        await expect(entries.first()).toBeHidden();
+        await expect(fold.locator(":scope > summary")).toContainText(
+          `Afficher les ${count} noms`
+        );
+        await testInfo.attach("closed-list", {
+          body: await group.screenshot(),
+          contentType: "image/png",
+        });
+        await fold.locator(":scope > summary").click();
+        for (const entry of await entries.all()) {
+          await expect(entry).toBeVisible();
+        }
+        await testInfo.attach("open-list", {
+          body: await group.screenshot(),
+          contentType: "image/png",
+        });
+        await fold.locator(":scope > summary").click();
+        await expect(entries.first()).toBeHidden();
+      });
+    }
+  }
+});
+
 function corpusIds(directory: string, pattern: RegExp): string[] {
   return (
     readdirSync(join(process.cwd(), directory), { recursive: true }) as string[]
