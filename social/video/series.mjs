@@ -119,6 +119,10 @@ const LONG = {
 // chapter card's least full-opacity span, 1.2 s.
 const READ_CPS = 21;
 const CHAPTER_HOLD = 36;
+// The animated chapter card (operator, 20 October 2026): the line and the
+// dots come first, the title enters 1.25 s into the card; the hold counts
+// from there, so the title is still read for as long as before.
+export const CHAPTER_TITLE_IN = 38;
 const REMINDER = [75, 120];
 const SOURCE_LABELS = ["Source", "Sources", "Hypothèses"];
 
@@ -170,15 +174,17 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
         fail(`Beat ${i + 1}: chapter ${n} has no title in chapters`);
       if (beat.chunks?.length)
         fail(`Chapter ${n}: a chapter card is not voiced; the voice is silent`);
+      // Operator, 20 October 2026: the chapter card is text on the dark
+      // ground, for every series video.
+      if (beat.image || beat.credit)
+        fail(
+          `Chapitre ${n} : une carte de chapitre ne montre que son texte, sans image (décision opérateur du 20 octobre 2026)`
+        );
       return {
         card: {
           id: `chapitre-${n}`,
           type: "chapter",
           chapter: { n, of: chapters.length, title },
-          // An image of its own brings its own credit: a CC BY-SA picture
-          // shown without its attribution breaks its licence.
-          ...(beat.image && { image: structuredClone(beat.image) }),
-          ...(beat.image && beat.credit && { credit: beat.credit }),
         },
         chunks: [],
       };
@@ -225,18 +231,14 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     ]);
   const first = entries[0].card;
   if (!first.series) fail("A series video's cards carry the series band");
-  // A silent card (a chapter card) shows the band and theme of the episode, and by default the image of the card after it: a run of one
-  // image, where only the head changes.
-  const silent = (card, next) => {
+  // A silent card (a chapter card) belongs to the episode's series and theme;
+  // it draws its own dark ground, no picture.
+  const silent = (card) => {
     card.series = structuredClone(first.series);
     if (first.theme) card.theme = first.theme;
-    if (!card.image && next.image) {
-      card.image = structuredClone(next.image);
-      if (next.credit) card.credit = next.credit;
-    }
   };
-  entries.forEach((e, i) => {
-    if (e.card.type === "chapter") silent(e.card, entries[i + 1].card);
+  entries.forEach((e) => {
+    if (e.card.type === "chapter") silent(e.card);
     // The intro draws its own parchment, but belongs to the episode.
     if (e.card.type === "intro") {
       e.card.series = structuredClone(first.series);
@@ -462,10 +464,14 @@ function schedule(seq, words) {
   // 0.3 s, and 1.2 s at least.
   seq.cards.forEach((card, i) => {
     if (!isSilent(card)) return;
-    const need = Math.max(
-      CHAPTER_HOLD,
-      Math.ceil(([...card.chapter.title].length / READ_CPS + 0.3) * FPS - 1e-9)
-    );
+    const need =
+      CHAPTER_TITLE_IN +
+      Math.max(
+        CHAPTER_HOLD,
+        Math.ceil(
+          ([...card.chapter.title].length / READ_CPS + 0.3) * FPS - 1e-9
+        )
+      );
     const full = seq.cardStarts[i + 1] - CROSS_FADE - seq.cardStarts[i];
     if (full < need)
       fail(
@@ -791,6 +797,10 @@ export function seriesFrameState(seq, frame) {
     const t = (frame - (starts[l.card] - CROSS_FADE)) / FPS;
     l.ident = { clip: clip.id, t: Math.min(clip.duration, Math.max(0, t)) };
   }
+  // The chapter card's animation runs from its own first frame.
+  for (const l of layers)
+    if (seq.cards[l.card].type === "chapter")
+      l.chapter = { t: Math.max(0, (frame - starts[l.card]) / FPS) };
   const chunk = seq.chunks.find(
     (c) => !c.hidden && frame >= c.appear && frame < c.gone
   );
@@ -834,16 +844,23 @@ const BANDS = {
   signature: LAYOUT.signature,
   slot: LAYOUT.slot.y,
   // 1.7.0: readings and figures end above y 1290; the quoted person above
-  // the subtitle band; a chapter title in the head, at most 900 px wide.
+  // the subtitle band.
   items: [LAYOUT.head[0], 1290],
   attribution: [LAYOUT.head[0], 1300],
-  "chapter-title": LAYOUT.head,
+  // The chapter card (operator, 20 October 2026): the line, the dots and
+  // « n sur N » above the centre, the title centred under them.
+  "chapter-count": [720, 940],
+  "chapter-title": [940, 1300],
   // 1.8.0: the formula in the clear zone, ending above y 1290.
   formula: [LAYOUT.clear[0], 1290],
   // 1.12.0: a parchment card's content, between the head and y 1300.
   parchment: [LAYOUT.head[0], 1300],
 };
-const X_BANDS = { slot: LAYOUT.slot.x, "chapter-title": [60, 960] };
+const X_BANDS = {
+  slot: LAYOUT.slot.x,
+  "chapter-count": [60, 1020],
+  "chapter-title": [60, 1020],
+};
 export function checkSeriesLayout(boxes, { demo = false } = {}) {
   const problems = [];
   const near = 0.5;

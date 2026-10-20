@@ -103,7 +103,7 @@ export const LONG_SCRIPT = [
       5
     ),
   },
-  { chapter: 1, silence: 2.4 },
+  { chapter: 1, silence: 3.2 },
   {
     card: "serie-afrique-tout-02",
     chunks: chunks(
@@ -122,7 +122,7 @@ export const LONG_SCRIPT = [
       7
     ),
   },
-  { chapter: 2, silence: 2.4 },
+  { chapter: 2, silence: 3.2 },
   {
     card: "serie-afrique-tout-02-cite",
     chunks: chunks(
@@ -138,7 +138,7 @@ export const LONG_SCRIPT = [
     card: "serie-afrique-tout-05",
     chunks: chunks(["Le nom s'étend,", "de province en continent."], 8),
   },
-  { chapter: 3, silence: 2.4 },
+  { chapter: 3, silence: 3.2 },
   {
     card: "serie-afrique-tout-06",
     chunks: chunks(

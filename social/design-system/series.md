@@ -316,6 +316,8 @@ A short series video stays 35 to 75 seconds, a recommendation (unchanged). A vid
 5. **During the chapter**, every content card's kicker is « 3 · Le nom s'étend »: the number, a middle dot, the title, as the chapter marker of Vidéo carte 0.3.0 wrote it. The engine composes it from the sequence's chapters; it is never stored in the card, so the same card in a carousel keeps its own kicker. Two cards keep their own kicker: a dated card's marker label (« Le nom d'avant », 1.4.0) and a signed card (« Nous pensons », below).
 6. **Why not the other two ways** (`video-170-chapitre-trois-facons.jpg`). A title held in the head over the chapter's first image puts two titles in one head, or changes the head in the middle of a card. The chapter in the kicker alone makes a new chapter a few words changing in a line read at 12 px on a phone: it passes unnoticed. A chapter card that writes « Chapitre 1 sur 7 » above an opener-size title reads as a second opener.
 
+**Replaced on 20 October 2026 by the operator's chapter card** (« The chapter card (operator's decision, 20 October 2026) » below): points 1 and 4 no longer apply; points 2, 3 (with the title's entrance added), 5 and 6 still do.
+
 #### Where the viewer stands
 
 « sur 7 » on the chapter card, and the chapter in the kicker of every card of the chapter. No bar, no « 3 / 7 », no line that fills: they read as a player's controls. The chapter marker stays out of the subtitle band and inside the part of the frame the apps leave clear (`video-170-430.jpg`).
@@ -626,6 +628,18 @@ The answers 4 to 6 of the brief stand as given: « Prochain épisode » under th
 - **The band and the signature** fade out under an ident and back in after it: an ident fills the frame.
 - **Each ident runs on its own clock** from the first frame of the change that brings it in, and holds its last frame; the end card plays whole (8 s), so the video lasts at least that long after the signed card.
 - **Engine.** A beat `{ "type": "intro", "chunks": [...] }`, second in the sequence; `idents: { "outro": "<name>", "next": "…" }` in the input, `<name>` naming the answer's layer file in `social/series-idents/layers/`. Without them the engine still draws the 1.10.0 ending, for older pieces.
+
+## The chapter card (operator's decision, 20 October 2026)
+
+**Decided by the operator on 20 October 2026, without a Claude Design proposal** (« décision opérateur »), on the 1 fps preview of « tribu » (series 4, episode 1): the title stood against « 1 sur 5 », and the card borrowed the next picture. The board « Carte de chapitre animée » (<https://claude.ai/artifact/NtxUtXfkt19YRQ5TYTkRFA>) was approved the same day (« oui je valide »). It replaces points 1 and 4 of 1.7.0's chapter rule for every series video.
+
+- **Nothing but text** on the dark ground (`ground`, Nuit), with a slow golden glow: no picture, no credit, no subtitle. The band and the signature fade out under it, as under an ident.
+- **The chapter's place** first: a 4 px line in `rule` grows from the left (0.25 s, 0.7 s long), then one 24 px dot per chapter enters (from 0.3 s, one every 0.12 s): past chapters filled in `on-image-faint`, the current one in `on-image-accent` with a ring that widens and fades (1.0 s), chapters to come empty. The row is centred, top at y 770.
+- **« n sur N »** centred under it in Nunito Sans 800 44/52, `on-image-muted`, the number in `on-image-accent`, top at y 850, entering at 1.0 s over 0.4 s.
+- **The title** centred in Anton 112/112, `on-image-text`, between x 90 and 990, top at y 986, two lines at most; it rises 24 px as it fades in at 1.25 s over 0.6 s. 82 px clear of « n sur N ».
+- **Time.** The card's clock starts on its first frame. The hold rule of 1.7.0 counts from the title's entrance: the card stays at full opacity 1.25 s plus the time to read its title (21 characters a second plus 0.3 s, 1.2 s at least). A chapter beat that gives an image is refused.
+- **Enter and leave** by the ordinary 300 ms change: its ground cross-fades with the pictures around it.
+- **Engine.** `social/video/series.mjs` (the clock `chapter.t`, the hold, the bands `chapter-count` y 720 to 940 and `chapter-title` y 940 to 1300, x 60 to 1020) and `series-page.mjs` (`silentParts`, `drawChapter`); tests in `series-long.test.mjs` and `series-long.render.test.mjs`.
 
 ## The animated satellite map (1.11.0-proposition)
 

@@ -98,10 +98,22 @@ html,body{margin:0;background:#000}
 /* 1.10.0: the fixed invitation, two lines set without wrapping. */
 .vf-sent span{display:block;white-space:nowrap}
 /* 1.7.0: the long series video (series.md, « Vidéo longue et chapitres »). */
-.vf-chapnum{display:flex;align-items:baseline;gap:18px}
-.vf-chapnum b{font:400 176px/140px var(--font-display);color:var(--oi-accent);--sw:14px}
-.vf-chapnum span{font:800 30px/36px var(--font-text);color:var(--oi-muted);--sw:4px;letter-spacing:.02em}
-.vf-title--chap{font-size:116px;line-height:112px;--sw:13px;max-width:900px}
+/* The chapter card (operator, 20 October 2026; board « Carte de chapitre
+   animée »): text on the dark ground, a slow golden glow, a line and one dot
+   per chapter, « n sur N », then the centred title. Nothing else. */
+.vf-chapground{position:absolute;inset:0;background:var(--ground);overflow:hidden}
+.vf-chapglow{position:absolute;width:1400px;height:1400px;left:-160px;top:260px;border-radius:50%;background:radial-gradient(closest-side,rgba(232,185,106,.16),rgba(232,185,106,0))}
+.vf-chap{position:absolute;inset:0}
+.vf-chaptrack{position:absolute;left:0;right:0;top:770px;display:flex;justify-content:center}
+.vf-chapdots{position:relative;display:flex;gap:84px;align-items:center}
+.vf-chapline{position:absolute;left:12px;right:12px;top:50%;height:4px;margin-top:-2px;background:var(--rule);transform-origin:left center}
+.vf-chapdot{position:relative;width:24px;height:24px;box-sizing:border-box;border-radius:50%;border:4px solid var(--oi-faint);background:var(--ground)}
+.vf-chapdot.done{background:var(--oi-faint)}
+.vf-chapdot.now{border-color:var(--oi-accent);background:var(--oi-accent)}
+.vf-chapring{position:absolute;inset:-18px;border-radius:50%;border:4px solid var(--oi-accent);opacity:0}
+.vf-chapcount{position:absolute;left:0;right:0;top:850px;text-align:center;font:800 44px/52px var(--font-text);color:var(--oi-muted)}
+.vf-chapcount b{color:var(--oi-accent);font-weight:800}
+.vf-chaptitle{position:absolute;left:90px;right:90px;top:986px;margin:0;text-align:center;font:400 112px/112px var(--font-display);color:var(--oi-text);text-wrap:balance}
 .vf-list{width:960px;display:flex;flex-direction:column;margin-top:30px}
 .vf-row+.vf-row{margin-top:22px}
 .vf-rlab{font:800 26px/32px var(--font-text);letter-spacing:.02em;color:var(--oi-accent);--sw:4px}
@@ -275,25 +287,61 @@ function noBreak(root) {
   });
 }
 
-// 1.7.0: a chapter card: the head only, over the image of the card after it,
-// and its credit in the foot.
+// The chapter card (operator, 20 October 2026): its dark ground and glow are
+// its picture, so they cross-fade like one; its text animates on the card's
+// own clock (drawChapter).
 function silentParts(parts) {
-  const { spec, layer } = parts;
-  const head = el("div", "vf-head");
-  head.append(el("div", "vf-chapnum", '<b class="oi oi-l">' + spec.chapter.n + '</b><span class="oi">sur ' + spec.chapter.of + "</span>"));
-  const title = el("h2", "vf-title vf-title--chap oi oi-l", esc(fr(spec.chapter.title)));
-  title.dataset.kind = "chapter-title";
-  head.append(title);
-  layer.append(head);
-  const foot = el("div", "vf-foot");
-  if (spec.credit) {
-    const credit = el("div", "vf-cred oi", fr(spec.credit));
-    credit.dataset.kind = "credit";
-    foot.append(credit);
+  const { spec, layer, pic } = parts;
+  const ground = el("div", "vf-chapground");
+  const glow = el("div", "vf-chapglow");
+  ground.append(glow);
+  pic.append(ground);
+  const box = el("div", "vf-chap");
+  const dots = el("div", "vf-chapdots");
+  const line = el("span", "vf-chapline");
+  dots.append(line);
+  const marks = [];
+  for (let k = 1; k <= spec.chapter.of; k++) {
+    const dot = el("span", "vf-chapdot" + (k < spec.chapter.n ? " done" : k === spec.chapter.n ? " now" : ""));
+    if (k === spec.chapter.n) dot.append(el("span", "vf-chapring"));
+    dots.append(dot);
+    marks.push(dot);
   }
-  layer.append(foot);
-  parts.text.push(head, foot);
+  const track = el("div", "vf-chaptrack");
+  track.append(dots);
+  const count = el("div", "vf-chapcount", "<b>" + spec.chapter.n + "</b> sur " + spec.chapter.of);
+  count.dataset.kind = "chapter-count";
+  const title = el("h2", "vf-chaptitle", esc(fr(spec.chapter.title)));
+  title.dataset.kind = "chapter-title";
+  box.append(track, count, title);
+  layer.append(box);
+  parts.chapter = { glow, line, dots: marks, ring: dots.querySelector(".vf-chapring"), count, title };
   return parts;
+}
+
+// The board's timings, in seconds from the card's first frame: the line, the
+// dots one by one, the ring on the current dot, « n sur N », the title.
+const CHAPTER_STEPS = { line: [0.25, 0.7], dot0: 0.3, dotStep: 0.12, dot: 0.32, ring: [1.0, 0.7], count: [1.0, 0.4], title: [1.25, 0.6] };
+const easeOut = (p) => 1 - Math.pow(1 - p, 3);
+const span = (t, [from, length]) => Math.min(1, Math.max(0, (t - from) / length));
+function drawChapter(c, t, fade) {
+  const S = CHAPTER_STEPS;
+  c.glow.style.transform = "translate(" + (-60 + 14 * t).toFixed(1) + "px," + (-30 + 7 * t).toFixed(1) + "px)";
+  c.line.style.transform = "scaleX(" + easeOut(span(t, S.line)).toFixed(4) + ")";
+  c.dots.forEach((d, k) => {
+    const p = easeOut(span(t, [S.dot0 + k * S.dotStep, S.dot]));
+    d.style.opacity = (p * fade).toFixed(4);
+    d.style.transform = "scale(" + (0.4 + 0.6 * p).toFixed(4) + ")";
+  });
+  if (c.ring) {
+    const p = span(t, S.ring);
+    c.ring.style.opacity = p > 0 && p < 1 ? (0.9 * (1 - p)).toFixed(4) : "0";
+    c.ring.style.transform = "scale(" + (0.6 + 0.9 * p).toFixed(4) + ")";
+  }
+  c.count.style.opacity = (span(t, S.count) * fade).toFixed(4);
+  const p = easeOut(span(t, S.title));
+  c.title.style.opacity = (p * fade).toFixed(4);
+  c.title.style.transform = "translateY(" + (24 * (1 - p)).toFixed(2) + "px)";
 }
 
 // The series idents (operator, 19 October 2026): the intro bumper and the
@@ -809,7 +857,7 @@ function setMovingFormula(parts) {
     });
   }
 }
-const easeOut = (t) => 1 - Math.pow(1 - t, 3);
+// The moves ease out on the chapter card's cubic (easeOut), never past rest.
 function drawMovingFormula(parts, state) {
   const fx = parts.paFormula;
   if (fx.day) fx.day.style.opacity = state.day;
@@ -1554,6 +1602,10 @@ function frameBoxes(frame, state) {
     }
     if (!(l.text > 0)) continue;
     const layer = parts.layer;
+    // The chapter card's texts count once they have entered.
+    if (parts.chapter)
+      for (const n of [parts.chapter.count, parts.chapter.title])
+        if (+n.style.opacity > 0) add(n, n.dataset.kind, { card: l.card });
     layer.querySelectorAll(".vf-head > *").forEach((n) => {
       // 1.7.0: readings and figures flow below the head, down to y 1290.
       if (n.matches(".vf-list, .vf-figs, .vf-week")) return [...n.children].forEach((c) => add(c, "items", { card: l.card }));
@@ -1736,6 +1788,7 @@ window.drawFrame = (state) => {
     parts.layer.style.zIndex = state.layers.indexOf(l) + 1;
     parts.pic.style.opacity = l.opacity;
     for (const t of parts.text) t.style.opacity = l.text;
+    if (parts.chapter && l.chapter) drawChapter(parts.chapter, l.chapter.t, l.text);
     // A sequence card's key items follow their areas.
     if (l.map) parts.layer.querySelectorAll(".vf-key[data-file]").forEach((k) => (k.style.opacity = l.map.keys[k.dataset.file] ?? 0));
     // 1.11.0: the opener's credit, the imagery alone during the globe.
@@ -1773,7 +1826,10 @@ window.drawFrame = (state) => {
   // parchment to it, fading with it.
   const idents = state.layers.filter((l) => l.ident);
   for (const l of idents) layers[l.card].ident.frame.contentWindow.render(l.ident.t);
-  const identOn = Math.max(0, ...idents.map((l) => l.opacity));
+  // The chapter card, too, is text alone: the band and the signature fade
+  // out under it as under an ident.
+  const chapters = state.layers.filter((l) => l.chapter);
+  const identOn = Math.max(0, ...idents.map((l) => l.opacity), ...chapters.map((l) => l.opacity));
   // 1.12.0: the band and the signature in their two inkings, cross-faded in
   // place during a change into or out of a parchment card.
   const pw = state.parchment || 0;
