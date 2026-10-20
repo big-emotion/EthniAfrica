@@ -52,18 +52,21 @@ void main() {
   float glow = exp(-max(d, 0.0) / max(0.045 * radius, 1.0)) * 0.55;
   vec3 space = mix(SPACE, ATMOS, glow);
   vec3 land = space;
+  // Both images are sampled here, outside any branch: texture() picks its mip
+  // level from its neighbours' coordinates, which are undefined inside a
+  // branch some of them skip. On SwiftShader that made the limb and the
+  // region's edge differ from run to run (README, « Determinism »). cc is
+  // clamped so the coordinates stay finite off the disc.
+  float cc = sqrt(max(1.0 - rho * rho, 0.0));
+  float lat0 = view.y, lon0 = view.x;
+  float lat = rho > 0.0 ? asin(clamp(cc * sin(lat0) + y * rho * cos(lat0) / rho, -1.0, 1.0)) : lat0;
+  float lon = lon0 + (rho > 0.0 ? atan(x * rho, rho * cc * cos(lat0) - y * rho * sin(lat0)) : 0.0);
+  float lonD = degrees(lon), latD = degrees(lat);
+  lonD = mod(lonD + 180.0, 360.0) - 180.0;
+  vec3 inRegion = texture(region, vec2((lonD - bounds.x) / (bounds.y - bounds.x), (bounds.w - latD) / (bounds.w - bounds.z))).rgb;
+  vec3 inWorld = texture(world, vec2((lonD + 180.0) / 360.0, (90.0 - latD) / 180.0)).rgb;
   if (rho < 1.0) {
-    float cc = sqrt(1.0 - rho * rho);
-    float lat0 = view.y, lon0 = view.x;
-    float lat = rho > 0.0 ? asin(clamp(cc * sin(lat0) + y * rho * cos(lat0) / rho, -1.0, 1.0)) : lat0;
-    float lon = lon0 + (rho > 0.0 ? atan(x * rho, rho * cc * cos(lat0) - y * rho * sin(lat0)) : 0.0);
-    float lonD = degrees(lon), latD = degrees(lat);
-    lonD = mod(lonD + 180.0, 360.0) - 180.0;
-    vec3 c;
-    if (lonD >= bounds.x && lonD <= bounds.y && latD >= bounds.z && latD <= bounds.w)
-      c = texture(region, vec2((lonD - bounds.x) / (bounds.y - bounds.x), (bounds.w - latD) / (bounds.w - bounds.z))).rgb;
-    else
-      c = texture(world, vec2((lonD + 180.0) / 360.0, (90.0 - latD) / 180.0)).rgb;
+    vec3 c = lonD >= bounds.x && lonD <= bounds.y && latD >= bounds.z && latD <= bounds.w ? inRegion : inWorld;
     c = graded(c) * (0.62 + 0.38 * sqrt(cc));
     float haze = 0.28 * pow(1.0 - cc, 3.0);
     land = c * (1.0 - haze) + ATMOS * haze * mix(0.55, 0.4, grade);
