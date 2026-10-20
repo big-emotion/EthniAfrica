@@ -771,19 +771,66 @@ async function openRenderer(seq, assets) {
 // of them in the next): waiting longer does not help, while a new request
 // returns at once. So a request gets 20 s, and a timed-out one is made again,
 // three times at most; the page is not redrawn, so no pixel can change.
+//
+// `fast` asks the DevTools protocol for the same PNG with `optimizeForSpeed`:
+// Chromium then compresses it less, which is most of a frame's cost (416 ms
+// against 85 ms on the GPU, 19 October 2026). PNG stays lossless, so the
+// decoded pixels are the same (README, « Fast capture »); only the file is
+// bigger. Playwright's own screenshot does not offer the option.
 const CAPTURE = { attempts: 3, timeout: 20000 };
-export async function captureFrame(page) {
+export async function captureFrame(
+  page,
+  { fast = false, timeout = CAPTURE.timeout } = {}
+) {
   for (let attempt = 1; ; attempt++) {
     try {
+      if (fast) return await fastPng(page, timeout);
       return await page.screenshot({
         type: "png",
         animations: "disabled",
-        timeout: CAPTURE.timeout,
+        timeout,
       });
     } catch (error) {
       if (error.name !== "TimeoutError" || attempt >= CAPTURE.attempts)
         throw error;
     }
+  }
+}
+
+const sessions = new WeakMap();
+async function fastPng(page, timeout) {
+  if (!sessions.has(page))
+    sessions.set(page, page.context().newCDPSession(page));
+  const cdp = await sessions.get(page);
+  const { width, height } = page.viewportSize();
+  let timer;
+  const expired = new Promise((_, reject) => {
+    timer = setTimeout(
+      () =>
+        reject(
+          Object.assign(
+            new Error(`Fast capture: Timeout ${timeout}ms exceeded.`),
+            {
+              name: "TimeoutError",
+            }
+          )
+        ),
+      timeout
+    );
+  });
+  try {
+    const { data } = await Promise.race([
+      cdp.send("Page.captureScreenshot", {
+        format: "png",
+        optimizeForSpeed: true,
+        clip: { x: 0, y: 0, width, height, scale: 1 },
+        captureBeyondViewport: false,
+      }),
+      expired,
+    ]);
+    return Buffer.from(data, "base64");
+  } finally {
+    clearTimeout(timer);
   }
 }
 

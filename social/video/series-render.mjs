@@ -97,8 +97,10 @@ async function routesFor(seq) {
       );
     cards.push(spec);
   }
-  // 1.11.0: the drawings the animated map cards use.
-  for (const kind of illustrationsOf(seq))
+  // 1.11.0: the drawings the animated map cards use; 1.12.0: the parchment
+  // cards' drawings.
+  const drawn = seq.cards.flatMap((c) => (c.drawings ?? []).map((d) => d.kind));
+  for (const kind of new Set([...illustrationsOf(seq), ...drawn]))
     await add(
       `/design/assets/Illustrations/${kind}.svg`,
       `assets/Illustrations/${kind}.svg`
@@ -371,6 +373,7 @@ export async function openSeriesRenderer(
     if (ready.fonts.some((ok) => !ok))
       throw new Error("A required font is not loaded");
     const last = seriesFrameCount(seq) - 1;
+    const captured = new Set();
     // The text boxes are checked on the cover, the last frame and every frame
     // where a subtitle is fully drawn, so every card and the ending are seen.
     const draw = async (frame) => {
@@ -390,7 +393,13 @@ export async function openSeriesRenderer(
     };
     return {
       draw,
-      capture: () => captureFrame(page),
+      // What each capture asked for, so the manifest says how the frames
+      // FFmpeg received were taken.
+      captured,
+      capture: (options = {}) => {
+        captured.add(options.fast ? "png-fast" : "png");
+        return captureFrame(page, options);
+      },
       close: () => browser.close(),
       runtime: {
         playwright: runtime.playwright,
@@ -428,7 +437,11 @@ export async function renderSeriesFrames(seq, frames, options) {
 // first frame anti-aliases a few edges otherwise than the frames after it,
 // so a slice first draws the WARM_UP frames before it, unkept, as a single
 // pass has drawn them (5 pixels differed at a cut without it).
+// The encoder takes the fast capture: the same pixels as the normal one,
+// about five times sooner (README, « Fast capture »). Proofs and tests keep
+// the normal capture, the one their references were made with.
 const WARM_UP = 30;
+const ENCODER_CAPTURE = { fast: true };
 async function encodeSlice(seq, { from, to }, target, sound, options, stopped) {
   const renderer = await openSeriesRenderer(seq, options);
   const problems = [];
@@ -437,7 +450,7 @@ async function encodeSlice(seq, { from, to }, target, sound, options, stopped) {
       const failure = stopped();
       if (failure) throw failure;
       await renderer.draw(f);
-      await renderer.capture();
+      await renderer.capture(ENCODER_CAPTURE);
     }
     await encodeFrames(target, {
       from,
@@ -448,7 +461,7 @@ async function encodeSlice(seq, { from, to }, target, sound, options, stopped) {
         const drawn = await renderer.draw(f);
         if (drawn.problems?.length)
           problems.push({ frame: f, problems: drawn.problems });
-        return renderer.capture();
+        return renderer.capture(ENCODER_CAPTURE);
       },
       sound,
     });
@@ -651,7 +664,11 @@ export async function encodeSeriesVideo(
     cuts: slices.slice(1).map((s) => s.from),
     // Mechanical export only: editorial approvals live in the checkpoint.
     productionReady: false,
-    runtime: { ...renderer.runtime, ffmpeg },
+    runtime: {
+      ...renderer.runtime,
+      capture: [...renderer.captured].join(", "),
+      ffmpeg,
+    },
     hashes: {
       sequence,
       cards: sha256(await readFile(seq.cardsFile)),
