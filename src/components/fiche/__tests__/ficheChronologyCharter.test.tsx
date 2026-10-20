@@ -159,13 +159,13 @@ describe("fiche chronology charter", () => {
   // @req REQ-148
   it("inks each regime from its token, never a literal", () => {
     expect(stylesheet).toMatch(
-      /\.afh-chronology\s*>\s*\[data-regime="polity"\]\s*\{[^}]*--afh-regime-ink:\s*var\(--afh-gold\)/
+      /\.afh-chronology\s*>\s*\[data-regime="polity"\]\s*\{[^}]*--afh-regime-ink:\s*var\(--afh-chronology-polity-ink\)/
     );
     expect(stylesheet).toMatch(
       /\.afh-chronology\s*>\s*\[data-regime="colonial"\]\s*\{[^}]*--afh-regime-ink:\s*var\(--afh-colonial-ink\)/
     );
     expect(stylesheet).toMatch(
-      /\.afh-chronology\s*>\s*\[data-regime="modern"\]\s*\{[^}]*--afh-regime-ink:\s*var\(--afh-conf-high\)/
+      /\.afh-chronology\s*>\s*\[data-regime="modern"\]\s*\{[^}]*--afh-regime-ink:\s*var\(--afh-chronology-modern-ink\)/
     );
   });
 });
