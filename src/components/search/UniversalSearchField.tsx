@@ -316,7 +316,7 @@ export function UniversalSearchField({
           border: 0;
           border-radius: var(--afh-radius-lg);
           background: var(--accent);
-          color: var(--afh-text);
+          color: var(--accent-foreground);
           font-weight: 600;
         }
         .universal-search-panel {

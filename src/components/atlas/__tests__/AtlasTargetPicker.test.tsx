@@ -138,6 +138,15 @@ describe("AtlasTargetPicker", () => {
   });
 
   // @req REQ-117
+  it("keeps the visible country name in the trigger's accessible name", () => {
+    renderPicker({ chosenCountryId: "BEN" });
+
+    expect(trigger()).toHaveAccessibleName(
+      /Choisir un pays de l'empreinte.*Bénin/
+    );
+  });
+
+  // @req REQ-117
   it("reports the choice and closes", () => {
     const { onChoose } = renderPicker();
     fireEvent.click(trigger());
