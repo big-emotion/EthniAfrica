@@ -134,4 +134,5 @@ test("a GPU render in three slices records the GPU and its WebGL renderer", (t) 
   assert.equal(video.manifest.frames, seq.frames);
   assert.equal(video.manifest.runtime.webgl.backend, "gpu");
   assert.match(video.manifest.runtime.webgl.renderer, /Metal/);
+  assert.equal(video.manifest.runtime.capture, "png-fast");
 });
