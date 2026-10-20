@@ -4,10 +4,8 @@ import { describe, expect, it } from "vitest";
 
 describe("night color tokens", () => {
   // @req REQ-091
-  // Dormant since ETNI-798: the categorical ocre/teal/terre/perv values are
-  // superseded by the first-class --afh-cat-* tokens (charterTokens.test.ts)
-  // and must no longer be consumed by components. This group is kept
-  // unchanged pending the epics 7–13 decision — see color.css.
+  // The four categorical values remain reserved for existing surfaces; the
+  // chronology also uses its explicit night green alongside night ocre.
   it("defines the complete night palette with exact values", () => {
     const colorCss = readFileSync(
       join(process.cwd(), "src/styles/tokens/color.css"),
@@ -30,6 +28,7 @@ describe("night color tokens", () => {
       "--afh-night-ocre": "#C9821F",
       "--afh-night-ocre-soft": "#E8B96A",
       "--afh-night-teal": "#33A390",
+      "--afh-night-green": "#91D5AC",
       "--afh-night-terre": "#C4573F",
       "--afh-night-perv": "#7A8CE8",
       // Not dormant, unlike the four categorical values above: the parchment's

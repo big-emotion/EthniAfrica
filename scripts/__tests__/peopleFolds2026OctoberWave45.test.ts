@@ -17,6 +17,10 @@ const REFERENCE_ROOTS: Array<[string, RegExp]> = [
   ["docs/editorial", /\.json$/],
   ["src", /\.(ts|tsx)$/],
 ];
+const HISTORICAL_MIGRATION_LOGS = resolve(
+  process.cwd(),
+  "dataset/source/afrik/logs"
+);
 
 interface Fold {
   retired: string[];
@@ -225,7 +229,11 @@ const ALL_RETIRED = FOLDS.flatMap((fold) => fold.retired);
 function filesUnder(directory: string, pattern: RegExp): string[] {
   return readdirSync(directory).flatMap((entry) => {
     const path = join(directory, entry);
-    if (statSync(path).isDirectory()) return filesUnder(path, pattern);
+    if (statSync(path).isDirectory()) {
+      // Archived migration errors preserve historical IDs, not live references.
+      if (resolve(path) === HISTORICAL_MIGRATION_LOGS) return [];
+      return filesUnder(path, pattern);
+    }
     return pattern.test(entry) && entry !== REDIRECT_REGISTRY ? [path] : [];
   });
 }
