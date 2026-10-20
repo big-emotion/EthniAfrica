@@ -59,3 +59,20 @@ The law card's boards print its source as « Loi n° 64-381 du 7 octobre 1964 re
   - `video-1120-430.jpg`: the cards at 430 px.
 
 The animated previews stay outside git, in `.local/research/social-production-2026-10-09/design-system-1.12.0-boards/videos/` (540 × 960, 15 frames a second, the grain without its blend mode), with the full-size frames in `plein-ecran/`. Not deposited: `design-system.json`, the component's `preview.html` and the board renderer in `tools/`.
+
+## Integration, 20 October 2026
+
+**Engine** (`social/video`). The six steps of the handoff: the ground (`series-page.mjs` with `social/series-idents/ground.css` and `ground.mjs`, now shared with the idents), the week table, the formula's moves, the drawings, the parchment text card and parchment phases (`series-teaching.mjs`, wired into `series.mjs`). A card without `ground` keeps its frame model and its pixels. The checks are in `series-teaching.test.mjs` (frame model) and `series-teaching.render.test.mjs` (drawn), on `fixtures/series-teaching.mjs`.
+
+**Carousel.** No card changes: the bundle's version string is the only change to the design system's code.
+
+**Choices left open by the handoff.**
+
+- The text card takes the handoff's `date` as a string, with `dateLabel`; an optional `dateSay` brings the date on its word, otherwise it enters with the card. A drawing's quality takes an optional `qualitySay`. A week table without `say` is a summary and enters whole.
+- A state without a move lists its line; it may name an earlier piece by its id. `join`, `fall` and `become` name the pieces they act on. A fallen piece stays under where it stood before it fell, while the rest of the line re-centres.
+- A formula holds two lines at most, the boards' y 760 and 980.
+- The frame model gives each move's progress linearly; the page eases it out (a cubic), so nothing overshoots.
+- The blocks under the head are the week table, the formula, the drawings, the quotation, its source and the free words; the attribution is not counted.
+- Every run of parchment cards lasts 180 frames at least, not only one between two map cards.
+- A parchment card prints no picture credit: it shows no picture.
+- Two parchment cards in a row keep one ground: the incoming card draws none during the change and the clock runs from the run's first frame. The render test checks this on the page (one ground drawn, the same offsets), not by a pixel difference, since the grain moves every frame.

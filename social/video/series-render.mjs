@@ -97,8 +97,10 @@ async function routesFor(seq) {
       );
     cards.push(spec);
   }
-  // 1.11.0: the drawings the animated map cards use.
-  for (const kind of illustrationsOf(seq))
+  // 1.11.0: the drawings the animated map cards use; 1.12.0: the parchment
+  // cards' drawings.
+  const drawn = seq.cards.flatMap((c) => (c.drawings ?? []).map((d) => d.kind));
+  for (const kind of new Set([...illustrationsOf(seq), ...drawn]))
     await add(
       `/design/assets/Illustrations/${kind}.svg`,
       `assets/Illustrations/${kind}.svg`
