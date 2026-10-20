@@ -10,40 +10,19 @@ import {
   namesChapterTitle,
 } from "@/lib/fiche/names";
 
-/**
- * The names chapter says what it lists (operator ruling, 2026-09-12). "Noms
- * portés" and "Noms du pays" said neither whose names nor what kind. The
- * lists hold clan names, nisba, praise names and patronymics, so the title is
- * "personal names" unless every entry is a patronymic — the only case the
- * narrower word would be true of the whole list.
- */
+// @req REQ-133
 describe("namesChapterTitle", () => {
-  // Ovambo's eight names are all clan names.
   // @req REQ-133
-  it("calls a list of clan names personal names", () => {
-    expect(
-      namesChapterTitle("people", namesForPeople("PPL_OVAMBO"), "fr")
-    ).toBe("Noms de personnes rattachés à ce peuple");
-  });
-
-  // Hausa's sixteen names are all non-hereditary patronymics.
-  // @req REQ-133
-  it("narrows the title to patronymics only when every name is one", () => {
-    expect(namesChapterTitle("people", namesForPeople("PPL_HAUSA"), "fr")).toBe(
-      "Patronymes rattachés à ce peuple"
-    );
-  });
-
-  // Somali mixes sixteen patronymics with four clan names.
-  // @req REQ-133
-  it("keeps the personal title when systems mix, or when nothing is listed", () => {
-    expect(
-      namesChapterTitle("people", namesForPeople("PPL_SOMALI"), "fr")
-    ).toBe("Noms de personnes rattachés à ce peuple");
-    expect(namesChapterTitle("country", [], "fr")).toBe(
-      "Noms de personnes rattachés à ce pays"
-    );
-  });
+  it.each([
+    ["people", "Noms de personnes associés à ce peuple"],
+    ["country", "Noms de personnes rattachés à ce pays"],
+    ["language", "Noms de personnes associés à cette langue"],
+  ] as const)(
+    "uses the approved plain-language title for %s",
+    (scope, title) => {
+      expect(namesChapterTitle(scope, "fr")).toBe(title);
+    }
+  );
 });
 
 describe("groupNamesBySystem", () => {

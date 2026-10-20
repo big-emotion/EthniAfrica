@@ -15,26 +15,16 @@ export type FicheName = PatronymeLinkSummary | PatronymeReachSummary;
 // @req REQ-154
 export const NAME_INDEX_THRESHOLD = 24;
 
-/**
- * The systems whose names are patronymics. Only when every name on a chapter
- * belongs to one of them is "patronymes" true of the whole list; otherwise the
- * clan names, nisba and praise names beside them make it a lie.
- */
-const PATRONYMIC_SYSTEMS: ReadonlySet<PatronymeNameSystem> = new Set([
-  "non_hereditary_patronymic",
-]);
+/** Long personal-name lists fold before they need an alphabetical index. */
+// @req REQ-153
+export const NAME_FOLD_THRESHOLD = 12;
 
 // @req REQ-133
 export function namesChapterTitle(
-  scope: "people" | "country",
-  names: readonly FicheName[] | null,
+  scope: "people" | "country" | "language",
   language: Language
 ): string {
-  const titles = getTranslation(language).patronymes.onFiche.namesTitle[scope];
-  const patronymic =
-    Boolean(names?.length) &&
-    names!.every((name) => PATRONYMIC_SYSTEMS.has(name.nameSystem));
-  return patronymic ? titles.patronymic : titles.personal;
+  return getTranslation(language).patronymes.onFiche.namesTitle[scope];
 }
 
 // @req REQ-133

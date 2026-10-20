@@ -379,3 +379,12 @@ opening adds content, and a chapter never itself collapses ». Proposed:
   them (REQ-153, as amended); the people chapter order test unchanged
   (REQ-155).
 - Compare at 430, 768 and 1440 against the recorded boards before merging.
+
+
+### Operator amendment — 2026-10-20
+
+The operator approved [long-list relief](../site/README.md#approved-long-list-relief--2026-10-20):
+personal-name groups fold from 12 entries; an alternate-name list folds from seven
+entries, while its chapter heading remains visible. This supersedes the prohibition
+on folding « Les autres noms » for those long lists. The answer, the source accounts,
+short lists and the existing chapter order keep their previous state.
