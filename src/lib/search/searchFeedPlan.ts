@@ -153,7 +153,11 @@ export function classifySearchFeed({
   const foundByWord = companions.shorts.items.some(
     ({ match }) => match.relation === "word"
   );
+  // A name that answers the query is the page; prose that happens to hold the
+  // word never displaces it.
+  const answersAName = Boolean(subjects && subjects.length > 0);
   if (
+    !answersAName &&
     search.results.some((result) =>
       result.recordedIn?.some(({ fieldPath }) =>
         fieldPath.startsWith("content.")
