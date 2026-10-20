@@ -23,6 +23,8 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ### Changed
 
+- Fiches: personal-name sections use plain-language headings, and long name lists
+  start collapsed so readers can open them when needed (#1931).
 - Social video: series rendering can use GPU acceleration and lossless PNG
   frame captures (#1915, #1920).
 
@@ -34,6 +36,8 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
   chapter cards use the dark ground in every series (#1923, #1925).
 - Accessibility: night chronology inks meet contrast requirements, and the
   chapter toggle's accessible name includes its visible text (#1926–1928).
+- Accessibility: the country picker has a descriptive accessible name, and
+  search controls meet contrast and keyboard-access requirements (#1930).
 
 ## [5.9.0] - 2026-10-19
 
