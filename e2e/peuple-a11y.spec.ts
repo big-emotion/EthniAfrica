@@ -151,7 +151,6 @@ test.describe("search page keyboard access and narrow widths", () => {
     await page.goto(`${SEARCH_URL}?q=peul`);
 
     const input = page.getByRole("combobox", { name: getSearchLabel(LOCALE) });
-    await openSearchFilters(page);
     const filters = page
       .getByRole("navigation", { name: searchFeedCopy.fr.filters.label })
       .getByRole("button")
@@ -160,6 +159,9 @@ test.describe("search page keyboard access and narrow widths", () => {
     await tabTo(page, input);
     await expectCharterFocusRing(page, input);
 
+    // Opening the disclosure moves focus past the answer's many source links.
+    // Check the input first so reaching it never depends on a full-page wrap.
+    await openSearchFilters(page);
     await tabTo(page, filters);
     await expectCharterFocusRing(page, filters);
     await expect(filters).toHaveCSS("font-size", "14px");

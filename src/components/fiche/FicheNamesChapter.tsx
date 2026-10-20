@@ -10,6 +10,7 @@ import { FicheSection } from "@/components/fiche/FicheSection";
 import { FicheTile } from "@/components/fiche/FicheTile";
 import { FieldProvenanceMarker } from "@/components/fiche/FieldProvenanceMarker";
 import {
+  NAME_FOLD_THRESHOLD,
   NAME_INDEX_THRESHOLD,
   groupNamesBySystem,
   initialOf,
@@ -63,7 +64,7 @@ function NameLinks({
 
 /**
  * A long list of names folds behind its count (brief 10 §2, REQ-153 as
- * extended 2026-10-17), past the same threshold that gives it an index: the
+ * extended 2026-10-20), from twelve entries, independently of the index: the
  * title and the tally above stay in view, so the closed control repeats a
  * fact the reader already sees rather than hiding one. The CIV list went from
  * 2,557 px to 524 px on the boards.
@@ -77,7 +78,7 @@ function NamesFold({
   language: Language;
   children: ReactNode;
 }) {
-  if (count <= NAME_INDEX_THRESHOLD) return <>{children}</>;
+  if (count < NAME_FOLD_THRESHOLD) return <>{children}</>;
   return (
     <FicheFold
       label={ficheCopy[language].fold.seeNames(count)}
@@ -150,9 +151,9 @@ function NameList({
 /**
  * The names chapter both records share (REQ-133, operator ruling 2026-09-12).
  *
- * Titled for what it lists — personal names, or patronymics when every entry
- * is one. A people's names are filed by naming system. A country keeps its two
- * registers apart: what a source attests here stays open, and what its
+ * Titled as personal names in plain language. A people's names are filed by
+ * naming system. A country keeps its two registers apart: what a source
+ * attests here has its own heading and count, and what its
  * peoples carry without an attestation here folds behind a tile that names
  * those peoples, so the second is never read as the first.
  *
@@ -169,7 +170,7 @@ export function FicheNamesChapter(props: FicheNamesChapterProps) {
     const { names } = props;
     return (
       <FicheSection
-        title={namesChapterTitle("people", names, language)}
+        title={namesChapterTitle("people", language)}
         id={"chapitre-noms-portes"}
       >
         {names === null || names.length === 0 ? (
@@ -222,11 +223,7 @@ export function FicheNamesChapter(props: FicheNamesChapterProps) {
 
   return (
     <FicheSection
-      title={namesChapterTitle(
-        "country",
-        patronymes ? [...attested, ...carried] : null,
-        language
-      )}
+      title={namesChapterTitle("country", language)}
       id={"chapitre-noms-attestes"}
     >
       {patronymes === null ||

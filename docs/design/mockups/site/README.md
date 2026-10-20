@@ -158,3 +158,27 @@ a board and the live page seem to disagree.
 - Home: the hero copy widths (576 and 593 px), the seed pills' padding and the
   submit button's weight are measured values, not tokens.
 - 2026-10-18 — ETNI-2105, approved by the operator in chat: `name-traore` at 430, 768 and 1440 px (origin claim statuses shown in name-history periods; « Origine » points to the sourced name history in one sentence). See [Brief 6](../briefs/06-family-name.md).
+
+
+## Approved long-list relief — 2026-10-20
+
+The operator approved the [simplified local draft](../drafts/fiche-height-relief.html) and then specified the personal-name
+headings in chat. The source boards `country-nam-names`, `country-bdi-names`,
+`people-minyanka-names` and `people-fula-names` record the affected sections at
+430, 768 and 1440 px. Each native disclosure can be opened on the board to review
+all names and their attached explanations. The full Fulɓe boards carry the same
+state. The current corpus supplies the names and counts; the exploratory draft's
+sample list is not a data source.
+
+Personal-name groups fold from 12 entries; their alphabetical index still starts
+above 24 entries. The long list in « Les autres noms » folds from seven entries.
+This explicitly supersedes brief 10's no-fold rule for this list only. Its chapter
+heading stays visible, and every name, explanation, badge and written trace remains
+inside the disclosure. The name's answer and source accounts keep their existing state.
+The existing Main disclosure is reused, with « + Afficher les N noms ». Personal-name
+groups lose their extra card border and background to reduce nesting.
+
+The approved titles are « Noms de personnes rattachés à ce pays », « Noms de
+personnes associés à ce peuple » and « Noms de personnes associés à cette langue ».
+The language label is reserved for a personal-name section; it does not rename
+alternate appellations or create a new association that the data does not hold.
