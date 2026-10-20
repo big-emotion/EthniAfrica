@@ -352,6 +352,39 @@ const EXPECTED = {
   // Series 1, episode 19, Burkina Faso (Cartes 1.11.0): the country from
   // Natural Earth, the historical areas from the episode's pinned research.
   ...EPISODE_EXPECTED,
+  // Series 4, episode 1, « tribu » (Cartes 1.11.0): Morgan's « Africa » of
+  // 1877 is the whole mainland; the 1948 census is the colony of Kenya.
+  "tribu-afrique": {
+    kind: "certain",
+    category: "region",
+    box: { west: -18, east: 52, south: -35.5, north: 38 },
+    covers: [
+      [-16.93, 14.79], // Thiès (Dakar's peninsula is thinner than a cell)
+      [31.24, 30.04], // Cairo: Egypt is part of the continent here
+      [18.42, -33.92], // Cape Town
+      [43.65, 3.11], // Baidoa, Somalia (coastal towns sit on the simplified edge)
+    ],
+    excludes: [
+      [46.9, -19], // Madagascar: the mainland only
+      [45, 24], // Arabia
+      [14, 37.5], // Sicily
+    ],
+  },
+  "tribu-kenya": {
+    kind: "certain",
+    category: "historical-name",
+    box: { west: 33.5, east: 42, south: -5, north: 5.5 },
+    covers: [
+      [36.82, -1.29], // Nairobi
+      [36.95, -0.42], // Nyeri, Kikuyu country
+      [39.67, -4.05], // Mombasa
+    ],
+    excludes: [
+      [32.58, 0.35], // Kampala
+      [39.28, -6.79], // Dar es Salaam
+      [38.74, 9.03], // Addis Ababa
+    ],
+  },
 };
 
 const fileOf = (id) => new URL(`${id}.geojson`, OUTPUT_DIR);
