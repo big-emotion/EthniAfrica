@@ -10,6 +10,8 @@
  */
 
 import type { ReactNode } from "react";
+import { FicheFold } from "@/components/fiche/FicheFold";
+import { ficheCopy } from "@/lib/i18n/copy/fiche";
 
 import type { Language } from "@/types/shared";
 import type { AnsweredName, NameBadge, SelfName } from "@/lib/fiche/nameAnswer";
@@ -179,6 +181,22 @@ export function OtherNamesList({
   problem?: string;
   language: Language;
 }) {
+  const list = (
+    <ul>
+      {names.map((name) => (
+        <li key={name.form} data-name-row={name.form}>
+          <p className="afh-name-others__form">
+            <span data-name-form lang={name.lang}>
+              {name.form}
+            </span>
+          </p>
+          {name.line ? <p>{name.line}</p> : null}
+          <Badges badges={name.badges} language={language} />
+          <Traces name={name} language={language} />
+        </li>
+      ))}
+    </ul>
+  );
   return (
     <div className="afh-name-others">
       {note ? <p>{note}</p> : null}
@@ -188,20 +206,16 @@ export function OtherNamesList({
           <p>{problem}</p>
         </details>
       ) : null}
-      <ul>
-        {names.map((name) => (
-          <li key={name.form} data-name-row={name.form}>
-            <p className="afh-name-others__form">
-              <span data-name-form lang={name.lang}>
-                {name.form}
-              </span>
-            </p>
-            {name.line ? <p>{name.line}</p> : null}
-            <Badges badges={name.badges} language={language} />
-            <Traces name={name} language={language} />
-          </li>
-        ))}
-      </ul>
+      {names.length >= 7 ? (
+        <FicheFold
+          label={ficheCopy[language].fold.seeNames(names.length)}
+          language={language}
+        >
+          {list}
+        </FicheFold>
+      ) : (
+        list
+      )}
     </div>
   );
 }

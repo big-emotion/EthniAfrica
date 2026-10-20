@@ -133,7 +133,7 @@ describe("people fiche parity with the mockup", () => {
         "Où vit ce peuple",
         "Langue",
         "Histoire",
-        "Noms de personnes rattachés à ce peuple",
+        "Noms de personnes associés à ce peuple",
         "Culture et société",
         "Poursuivre",
         "Sources",
@@ -589,9 +589,9 @@ describe("people fiche — the answer card (DEC-068)", () => {
 
 /**
  * Brief 10 §2 (REQ-153 as amended 2026-10-17), board people-fula: the long
- * reference chapters fold after their first tile, and nothing about the
- * people's own names, nor the map, the closing band, the way on or the
- * sources, ever does. The chapter order above is the one REQ-155 fixes.
+ * reference chapters fold after their first tile. The 2026-10-20 amendment
+ * also folds long alternate-name lists. The answer, map, closing band, way
+ * on and sources keep their state. REQ-155 fixes the chapter order.
  */
 describe("people fiche — what folds and what never does", () => {
   afterEach(cleanup);
@@ -646,7 +646,6 @@ describe("people fiche — what folds and what never does", () => {
 
     for (const title of [
       "D'où vient le nom ?",
-      "Les autres noms",
       "Où vit ce peuple",
       "Poursuivre",
       "Sources",

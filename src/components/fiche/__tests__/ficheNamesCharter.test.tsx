@@ -33,7 +33,7 @@ describe("fiche names charter", () => {
     render(<FicheNamesChapter scope="people" names={names} language="fr" />);
 
     const chapter = screen.getByRole("region", {
-      name: "Noms de personnes rattachés à ce peuple",
+      name: "Noms de personnes associés à ce peuple",
     });
     expect(chapter).toHaveAttribute("id", "chapitre-noms-portes");
     expect(
@@ -67,7 +67,7 @@ describe("fiche names charter", () => {
   });
 
   // @req REQ-133
-  it("switches to the patronymic title when every name is one", () => {
+  it("uses personal names even when every entry is a patronymic", () => {
     render(
       <FicheNamesChapter
         scope="people"
@@ -76,7 +76,9 @@ describe("fiche names charter", () => {
       />
     );
     expect(
-      screen.getByRole("region", { name: "Patronymes rattachés à ce peuple" })
+      screen.getByRole("region", {
+        name: "Noms de personnes associés à ce peuple",
+      })
     ).toHaveAttribute("id", "chapitre-noms-portes");
   });
 
@@ -222,7 +224,7 @@ describe("fiche names — a long list folds behind its count", () => {
     expect(fold.open).toBe(false);
     expect(
       fold.querySelector(':scope > summary [data-when="closed"]')
-    ).toHaveTextContent(`+ Voir les ${count} noms`);
+    ).toHaveTextContent(`+ Afficher les ${count} noms`);
     expect(
       fold.querySelector(':scope > summary [data-when="open"]')
     ).toHaveTextContent("− replier");
@@ -247,8 +249,8 @@ describe("fiche names — a long list folds behind its count", () => {
   });
 
   // @req REQ-153
-  it("leaves a list of 24 names or fewer open", () => {
-    const few = Array.from({ length: 24 }, (_, index) =>
+  it("leaves a list of fewer than 12 names open", () => {
+    const few = Array.from({ length: 11 }, (_, index) =>
       clan(`PAT_F${index}`, `Nom ${index}`)
     );
     const { container } = render(
@@ -261,4 +263,42 @@ describe("fiche names — a long list folds behind its count", () => {
 
     expect(container.querySelector("details.ea-fold")).toBeNull();
   });
+});
+
+// @req REQ-133 REQ-153
+describe("approved country name disclosures", () => {
+  afterEach(cleanup);
+
+  // @req REQ-133 REQ-153
+  it.each(["NAM", "BDI"])(
+    "keeps all %s names available behind their count",
+    (country) => {
+      const attested = namesForCountry(country);
+      const { container } = render(
+        <FicheNamesChapter
+          scope="country"
+          patronymes={{ attested, borneByPeoples: [] }}
+          language="fr"
+        />
+      );
+      const disclosure = container.querySelector<HTMLDetailsElement>(
+        '[data-names-register="attested"] details'
+      );
+      expect(disclosure).not.toBeNull();
+      expect(disclosure).not.toHaveAttribute("open");
+      expect(disclosure!.querySelector("summary")).toHaveTextContent(
+        `Afficher les ${attested.length} noms`
+      );
+      expect(disclosure!.querySelectorAll("li a")).toHaveLength(
+        attested.length
+      );
+      for (const name of attested)
+        expect(disclosure).toHaveTextContent(name.nameMain);
+      expect(
+        screen.getByRole("region", {
+          name: "Noms de personnes rattachés à ce pays",
+        })
+      ).toBeInTheDocument();
+    }
+  );
 });

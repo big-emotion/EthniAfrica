@@ -2851,10 +2851,7 @@ button.afh-source-diamond .afh-source-diamond-mark {
 }
 
 .afh-names-group {
-  padding: 16px;
-  border: 1px solid var(--afh-border);
-  border-radius: var(--afh-radius-lg);
-  background: var(--afh-surface);
+  padding: 12px 0;
   text-align: start;
 }
 
