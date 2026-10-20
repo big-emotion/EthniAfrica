@@ -211,7 +211,7 @@ export function FicheChapterBar({
             data-testid="fiche-chapter-bar-current"
           >
             {current.title}
-          </span>
+          </span>{" "}
           <span className="afh-chapter-bar-cue" aria-hidden="true">
             <span className="afh-chapter-bar-cue-label">{copy.summary}</span>
             <ChevronDown className="afh-chapter-bar-caret" />
