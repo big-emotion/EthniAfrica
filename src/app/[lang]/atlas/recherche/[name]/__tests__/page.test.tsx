@@ -93,6 +93,7 @@ import { CANONICAL_DOMAIN } from "@/lib/brand";
 import { getNameAnswerRoute } from "@/lib/routing";
 import { LINGALA_HISTORY } from "@/lib/search/__fixtures__/nameTimelineFixtures";
 import { readAnswer } from "@/lib/search/answer";
+import { nameSearchHref } from "@/lib/search/nameAddress";
 import { wordNamingData } from "@/lib/supabase/queries/afrik/searchNaming";
 import { searchQueryLog } from "@/lib/search/searchQueryLog";
 import { getAnsweredNameRows } from "@/lib/supabase/queries/afrik/nameAddressEntries";
@@ -327,7 +328,7 @@ describe("the address of an answered name", () => {
     expect(text).toContain(tribu.definition);
     expect(text).not.toMatch(/fiches donnent cette écriture/);
     expect(html).not.toContain(`href="${getNameAnswerRoute("fr", "tribu")}"`);
-    expect(html).not.toContain("/fr/atlas/recherche?q=tribu");
+    expect(html).not.toContain(nameSearchHref("fr", "tribu"));
   });
 
   // The variant's redirect lands on a page headed as the corpus writes the
