@@ -158,8 +158,9 @@ waiting. Technical reuse from Uganda must adapt to it, not impose the old look.
 
 Select networks before final approval. Instagram/Facebook can share a caption
 that works without a clickable caption link; give the verified Facebook comment
-route explicitly. No Stories, no reliance on pinned comments, no invented bio
-link. Confirm current account capabilities rather than inheriting dated platform
+route explicitly. A series episode adds its Instagram story (link sticker and
+question sticker) through the package's `story` field; no other story, no
+reliance on pinned comments, no invented bio link. Confirm current account capabilities rather than inheriting dated platform
 claims. Keep TikTok copy short; ask for a preferred example when its length is
 unsettled. Adding a network later reopens delivery for that adaptation, not the
 whole research process.
