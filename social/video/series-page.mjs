@@ -292,6 +292,9 @@ function noBreak(root) {
 // own clock (drawChapter).
 function silentParts(parts) {
   const { spec, layer, pic } = parts;
+  // The dark ground is Nuit's in every series, a Parchemin one included: the
+  // card's tokens (ground, on-image inks) resolve on the Nuit theme.
+  layer.dataset.theme = "nuit";
   const ground = el("div", "vf-chapground");
   const glow = el("div", "vf-chapglow");
   ground.append(glow);
