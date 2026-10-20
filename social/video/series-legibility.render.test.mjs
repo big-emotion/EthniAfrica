@@ -113,7 +113,6 @@ const RING = {
   "vf-kick": 3,
   "vf-title": 6,
   "vf-title--xl": 8,
-  "vf-title--chap": 8,
   "vf-date": 8,
   "vf-label": 3,
   "vf-name": 5,
@@ -125,8 +124,6 @@ const RING = {
   "vf-sent": 3,
   "vf-pill": 3,
   "vf-next": 3,
-  "chapter-number": 8,
-  "chapter-of": 3,
   "vf-rlab": 3,
   "vf-txt": 4,
   "vf-by": 3,
@@ -152,10 +149,9 @@ const RING = {
 const blockKind = (b) => {
   const cls = b.cls.split(/\s+/u);
   if (b.tag === "B" && b.parent.includes("vf-sign")) return "wordmark";
-  if (b.tag === "B" && b.parent.includes("vf-chapnum")) return "chapter-number";
-  if (b.tag === "SPAN" && b.parent.includes("vf-chapnum")) return "chapter-of";
-  for (const k of ["vf-title--xl", "vf-title--chap"])
-    if (cls.includes(k)) return k;
+  // The chapter card's text sits on its own dark ground, not on a picture
+  // (operator, 20 October 2026): it carries no outline.
+  if (cls.includes("vf-title--xl")) return "vf-title--xl";
   return cls.find((c) => c in RING);
 };
 
@@ -421,6 +417,8 @@ test("1.9.0 check 6: every text box of the 1.8.0 acceptance frames stays in plac
     for (const [frame, before] of Object.entries(frames)) {
       if (!drawn[demo][frame]) continue;
       if (before.some((b) => b.kind === "pill")) continue;
+      // The chapter card was redrawn on 20 October 2026 (operator).
+      if (before.some((b) => b.kind === "chapter-title")) continue;
       const now = drawn[demo][frame].boxes;
       assert.equal(now.length, before.length, `${demo} ${frame}`);
       before.forEach((b, i) => {
@@ -428,6 +426,9 @@ test("1.9.0 check 6: every text box of the 1.8.0 acceptance frames stays in plac
         assert.equal(n.id, b.id, `${demo} ${frame}`);
         // A document's entry carries its passage, not a text box.
         if (b.kind === "document" || CHANGED_BY_1_10_0.has(b.kind)) return;
+        // A chapter card no longer shares the next picture (operator, 20
+        // October 2026), so that picture's slow zoom starts on its own card.
+        if (demo === "series-long" && b.kind === "image") return;
         const kicker = b.kind === "head" && b.y === 318 && b.h === 36;
         for (const k of kicker ? ["x", "y"] : ["x", "y", "w", "h"])
           assert.ok(
