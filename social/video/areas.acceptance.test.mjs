@@ -11,7 +11,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
-import { AREA_IDS, OUTPUT_DIR, buildAreas } from "./areas.mjs";
+import { AREA_IDS, OUTPUT_DIR, buildAreas, readVerified } from "./areas.mjs";
 
 const verticesOf = (geometry) =>
   geometry.coordinates.flat(geometry.type === "MultiPolygon" ? 2 : 1);
@@ -30,6 +30,45 @@ test("the committed areas are what the pinned sources give, byte for byte", asyn
   assert.deepEqual([...built.keys()].sort(), [...AREA_IDS].sort());
   for (const id of AREA_IDS)
     assert.equal(built.get(id), await committed(id), id);
+});
+
+// The CIV/GHA border must be Natural Earth's line in both country areas, so
+// it is the same line wherever the episode draws it.
+// @req REQ-186
+test("Côte d'Ivoire and Ghana are Natural Earth's polygons, rounded to 0.01°", async () => {
+  const assets = process.env.ETHNIAFRICA_VIDEO_ASSETS;
+  assert.ok(
+    assets,
+    "Set ETHNIAFRICA_VIDEO_ASSETS to the verified assets folder"
+  );
+  const countries = await readVerified(assets, "countries");
+  const round = (x) => Math.round(x * 100) / 100;
+  // Rounding can make neighbouring vertices equal; the file keeps one.
+  const roundedRing = (ring) =>
+    ring
+      .map(([lon, lat]) => [round(lon), round(lat)])
+      .filter(
+        (p, i, all) =>
+          i === 0 || p[0] !== all[i - 1][0] || p[1] !== all[i - 1][1]
+      );
+  const rounded = ({ type, coordinates }) =>
+    type === "Polygon"
+      ? coordinates.map(roundedRing)
+      : coordinates.map((p) => p.map(roundedRing));
+  for (const [id, a3] of [
+    ["yk-cote-divoire", "CIV"],
+    ["yk-ghana", "GHA"],
+  ]) {
+    const ne = countries.features.find((f) => f.properties.ADM0_A3 === a3);
+    const { geometry } = JSON.parse(await committed(id));
+    assert.equal(geometry.type, ne.geometry.type, id);
+    // Compared as JSON text: the file cannot hold -0, which rounding yields.
+    assert.equal(
+      JSON.stringify(geometry.coordinates),
+      JSON.stringify(rounded(ne.geometry)),
+      id
+    );
+  }
 });
 
 // @req REQ-186

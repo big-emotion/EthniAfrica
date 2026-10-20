@@ -564,13 +564,15 @@ const EPISODE_LICENCE =
 const citeEpisode = (key) =>
   `${EPISODE_RESEARCH}, ${EPISODE_SOURCES[key].file}, SHA-256 ${EPISODE_SOURCES[key].sha256}`;
 
-async function readEpisode(assets, key) {
-  const { file, sha256 } = EPISODE_SOURCES[key];
-  const bytes = await readFile(join(assets, EPISODE_DIR, file));
+async function readPinned(assets, dir, { file, sha256 }) {
+  const bytes = await readFile(join(assets, dir, file));
   if (createHash("sha256").update(bytes).digest("hex") !== sha256)
-    throw new Error(
-      `${EPISODE_DIR}/${file} differs from the pinned research file`
-    );
+    throw new Error(`${dir}/${file} differs from the pinned research file`);
+  return bytes;
+}
+
+async function readEpisode(assets, key) {
+  const bytes = await readPinned(assets, EPISODE_DIR, EPISODE_SOURCES[key]);
   return JSON.parse(bytes.toString("utf8"));
 }
 
@@ -723,7 +725,10 @@ function languageArea(def, card) {
   };
 }
 
-function countryArea(def, country, research) {
+// `label` is the country's English name in the texts; the feature's ADM0_A3
+// names it in Natural Earth.
+function countryArea(def, country, research, label) {
+  const a3 = country.properties.ADM0_A3;
   const p = def.from && research(def.from).properties;
   return {
     geometry: passThrough(country.geometry),
@@ -734,8 +739,8 @@ function countryArea(def, country, research) {
       source: `${cite("countries")}${p ? `; ${researchCitation(p.source)}; ${citeEpisode(def.from[0])}` : ""}`,
       citation: p
         ? `${researchCitation(p.source)}. ${p.note}`
-        : "Natural Earth, Admin 0 Countries, feature BFA (Burkina Faso).",
-      derivation: `${SCRIPT_RULE}: the Natural Earth 1:50m polygon of Burkina Faso (ADM0_A3 BFA), rounded to 0.01°.${p ? " The research takes today's border for the colony: the 1947 law restored the limits of 5 September 1932, which the present state keeps; the cercle de Say, in Haute-Volta until 1927, is the separate area bfa-cercle-de-say." : ""}`,
+        : `Natural Earth, Admin 0 Countries, feature ${a3} (${label}).`,
+      derivation: `${SCRIPT_RULE}: the Natural Earth 1:50m polygon of ${label} (ADM0_A3 ${a3}), rounded to 0.01°.${p ? " The research takes today's border for the colony: the 1947 law restored the limits of 5 September 1932, which the present state keeps; the cercle de Say, in Haute-Volta until 1927, is the separate area bfa-cercle-de-say." : ""}`,
       licence: `Geometry: ${NATURAL_EARTH_LICENCE}`,
       date: def.date,
     },
@@ -798,13 +803,187 @@ async function buildEpisodeAreas(assets, countries) {
       def.rule === "language"
         ? languageArea(def, languages)
         : def.rule === "country"
-          ? countryArea(def, country, research)
+          ? countryArea(def, country, research, "Burkina Faso")
           : researchArea(def, research(def.from), countryMask);
     built.set(
       id,
       `${JSON.stringify({ type: "Feature", properties, geometry })}\n`
     );
   }
+  return built;
+}
+
+// Cartes 1.12.0: the summary map of « Kouassi et Yao » (series 3, episode 1)
+// lights the Baoulé, the Akan of Côte d'Ivoire, the Twi and the Akan of
+// Ghana, then both countries. The research drew the four areas from two
+// sources of unequal standing (its README.md, pinned with them): an
+// EthniAfrica tracing of a CC BY-SA map after Vennetier for Côte d'Ivoire,
+// Murdock's 1959 tribal map as digitised by Nunn for Ghana. Each is kept
+// inside its Natural Earth country, so the border between the two areas is
+// the countries' line.
+const YK_DIR = "areas/yk-2026-10-20";
+export const YK_SOURCES = {
+  readme: {
+    file: "README.md",
+    sha256: "dd5c80b8937c31c3e4af0e65960041852599e6e499eff008b2e75681efbfcb05",
+  },
+  baoule: {
+    file: "yk-baoule.geojson",
+    sha256: "fd85e247cc0e22b1b0c1f408f2b5f1e23012246da0af95dc691606c50b97a30a",
+  },
+  akanCiv: {
+    file: "yk-akan-civ.geojson",
+    sha256: "8c3f2e291b8cea34044ecfc1ea4948fc9ff1d205c924c78259612e31b51b7884",
+  },
+  twi: {
+    file: "yk-twi.geojson",
+    sha256: "0cd41b96049e0c5a3c825a0c0f52fda16b20281c7907454cfdb75e4a42c5c0e9",
+  },
+  akanGha: {
+    file: "yk-akan-gha.geojson",
+    sha256: "b29b21e8768388cc3581769da9b98d61de8cb16b39d0cf171a4f062f42ae71b4",
+  },
+};
+const YK_RESEARCH =
+  "EthniAfrica, « Kouassi et Yao » episode (series 3, episode 1), map research of 20 October 2026";
+const citeYk = (key) =>
+  [key, "readme"]
+    .map((k) => `${YK_SOURCES[k].file}, SHA-256 ${YK_SOURCES[k].sha256}`)
+    .join("; ");
+
+const YK_COUNTRIES = {
+  CIV: {
+    label: "Côte d'Ivoire",
+    date: "1978 (Vennetier's atlas); present-day border",
+    citation:
+      "Traced by EthniAfrica (20 October 2026) after Spiridon Ion Cepleanu, « Groupes ethniques de Côte d'Ivoire », Wikimedia Commons, CC BY-SA 3.0, https://commons.wikimedia.org/wiki/File:IvoryCoastEthno.jpg, itself after P. Vennetier, Atlas de la Côte d'Ivoire, Éditions du Jaguar, 1978, map 34b; checked against G. P. Murdock, Tribal Map of Africa (1959), digitised by Nathan Nunn.",
+    licence: `Geometry: EthniAfrica, CC BY-SA 4.0, traced after a CC BY-SA 3.0 map (S. I. Cepleanu, Wikimedia Commons). Outer edge: ${NATURAL_EARTH_LICENCE}`,
+  },
+  GHA: {
+    label: "Ghana",
+    date: "1959 (Murdock's map); present-day border",
+    citation:
+      "G. P. Murdock, Africa: Its Peoples and Their Culture History, McGraw-Hill, 1959, « Tribal Map of Africa »; polygons digitised by Nathan Nunn (https://scholar.harvard.edu/nunn/pages/data-0, murdock_shapefile.zip); copy used: https://github.com/sboysel/murdock/blob/master/data-raw/Murdock_EA_2011_vkZ.geojson.",
+    licence: `Geometry: G. P. Murdock (1959), digitised by Nathan Nunn. No licence stated by the digitiser; the sboysel/murdock package that redistributes the file declares CC BY-NC-SA 3.0; academic citation of Murdock 1959 and Nunn required. Outer edge: ${NATURAL_EARTH_LICENCE}`,
+  },
+};
+
+// `from` is the research file; `a3` the country the area is kept inside;
+// `selection` says what the polygon holds, `limit` what it cannot show.
+const YK_AREAS = {
+  "yk-baoule": {
+    from: "baoule",
+    a3: "CIV",
+    name: "Baoulé",
+    category: "people",
+    selection: "The polygon of the Baoulé.",
+    limit:
+      "The Baoulé have since settled far beyond this area (west-central cocoa belt, Abidjan); the area shows where the sources place the people, not where Baoulé people live today.",
+  },
+  "yk-akan-civ": {
+    from: "akanCiv",
+    a3: "CIV",
+    name: "Akan de Côte d'Ivoire",
+    category: "people",
+    selection:
+      "The Akan of Côte d'Ivoire by language: Baoulé, Agni (Moronou, Indénié, Diabé, Sanwi, Bettié), Abron, Nzema.",
+    limit:
+      "Vennetier's « Groupe Akan » also holds the lagoon peoples (Abé, Attié, Ébrié, Adioukrou, Abidji…); they are left out because the episode's sources attest the day names for the Baoulé, Agni and Nzema (Dolphyne 1986), not for them.",
+  },
+  "yk-twi": {
+    from: "twi",
+    a3: "GHA",
+    name: "Twi",
+    category: "language",
+    selection:
+      "Murdock's polygons ASHANTI, AKYEM and BRONG, as a proxy for the Twi-speaking groups (Asante, Akyem, Akuapem, Kwahu, Bono).",
+    limit:
+      "The weakest of the four: Murdock has no polygon for Twi as a language, and his ASHANTI reaches the coast at Cape Three Points, so the area also covers the Ahanta and Wassa coast. His names are the colonial ethnonyms of 1959.",
+  },
+  "yk-akan-gha": {
+    from: "akanGha",
+    a3: "GHA",
+    name: "Akan du Ghana",
+    category: "people",
+    selection:
+      "Murdock's polygons ASHANTI, AKYEM, BRONG, FANTI, ASSINI and the Ghana part of ANYI; GA, ADELE and GUANG are left out.",
+    limit: "Murdock's names are the colonial ethnonyms of 1959.",
+  },
+};
+
+/** The episode's areas as the exact text of their GeoJSON files. */
+async function buildYkAreas(assets, countries) {
+  await readPinned(assets, YK_DIR, YK_SOURCES.readme);
+  const country = {};
+  for (const a3 of Object.keys(YK_COUNTRIES))
+    country[a3] = only(
+      countries.features,
+      (f) => f.properties.ADM0_A3 === a3,
+      `country ${a3}`
+    );
+  const built = new Map();
+  const write = (id, { properties, geometry }) =>
+    built.set(
+      id,
+      `${JSON.stringify({ type: "Feature", properties, geometry })}\n`
+    );
+  for (const [id, def] of Object.entries(YK_AREAS)) {
+    const research = JSON.parse(
+      (await readPinned(assets, YK_DIR, YK_SOURCES[def.from])).toString("utf8")
+    );
+    const f =
+      research.type === "FeatureCollection"
+        ? only(research.features, () => true, `${def.from} feature`)
+        : research;
+    const c = YK_COUNTRIES[def.a3];
+    const { file } = YK_SOURCES[def.from];
+    write(id, {
+      geometry: traceMask(
+        GRID,
+        and(
+          rasterize(GRID, f.geometry),
+          rasterize(GRID, country[def.a3].geometry)
+        ),
+        { maxParts: 1 }
+      ),
+      properties: {
+        kind: "approximate",
+        name: def.name,
+        category: def.category,
+        source: `${c.citation} ${YK_RESEARCH}, ${citeYk(def.from)}; ${cite("countries")}`,
+        citation: `${c.citation} ${def.selection}`,
+        derivation: `${SCRIPT_RULE}: the research's polygon ${file}, kept inside the Natural Earth 1:50m polygon of ${c.label} (ADM0_A3 ${def.a3}) so its outer edge is the country's; ${RASTER_RULE}. ${def.limit}`,
+        licence: c.licence,
+        date: c.date,
+      },
+    });
+  }
+  write(
+    "yk-cote-divoire",
+    countryArea(
+      {
+        name: "Côte d'Ivoire",
+        category: "country",
+        date: "Since 7 August 1960 (independence)",
+      },
+      country.CIV,
+      null,
+      "Côte d'Ivoire"
+    )
+  );
+  write(
+    "yk-ghana",
+    countryArea(
+      {
+        name: "Ghana",
+        category: "country",
+        date: "Since 6 March 1957 (independence)",
+      },
+      country.GHA,
+      null,
+      "Ghana"
+    )
+  );
   return built;
 }
 
@@ -825,6 +1004,10 @@ export const AREA_IDS = [
   // Series 4, episode 1, « tribu » (Cartes 1.11.0).
   "tribu-afrique",
   "tribu-kenya",
+  // Series 3, episode 1, « Kouassi et Yao » (Cartes 1.12.0).
+  ...Object.keys(YK_AREAS),
+  "yk-cote-divoire",
+  "yk-ghana",
 ];
 
 const GLOTTOLOG_CITATION =
@@ -1173,7 +1356,10 @@ export async function buildAreas(assets) {
   for (const key of Object.keys(DOWNLOADS))
     sources[key] = await readVerified(assets, key);
   const defined = definitions(sources);
-  const built = await buildEpisodeAreas(assets, sources.countries);
+  const built = new Map([
+    ...(await buildEpisodeAreas(assets, sources.countries)),
+    ...(await buildYkAreas(assets, sources.countries)),
+  ]);
   for (const id of AREA_IDS) {
     if (built.has(id)) continue;
     const { mask, maxParts, exteriorOnly, properties } = defined[id];
