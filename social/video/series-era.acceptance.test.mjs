@@ -6,9 +6,11 @@
 // vertex of the sequence's coast, on screen or not, three times up to 81.5 px
 // wide under masks, on every frame of the push.
 //
-// The budget is 5 s per era frame: about four satellite frames on the
-// operator's machine (0.6 to 1.4 s each) and a quarter of the capture
-// timeout, so a render running several workers keeps its margin. The views
+// The budget is 10 s per era frame, half the capture timeout. On the
+// operator's machine an era frame now takes 1 to 2 s alone (a satellite
+// frame 0.6 to 1.4 s) and up to about 7 s while three other acceptance files
+// render beside it (`node --test` runs files at once); before the fix it
+// took 19 to 23 s alone, so the budget still catches the regression. The views
 // are the « tribu » piece's coastal era cards, set on the boards' fixture:
 // northern Algeria (the Mediterranean coast in frame) and Kenya (the Indian
 // Ocean coast). Needs ETHNIAFRICA_VIDEO_ASSETS; a missing folder skips.
@@ -29,7 +31,7 @@ const dir = mkdtempSync(join(tmpdir(), "series-era-"));
 // @req REQ-186
 test.after(() => rmSync(dir, { recursive: true, force: true }));
 
-const ERA_FRAME_BUDGET_MS = 5000;
+const ERA_FRAME_BUDGET_MS = 10000;
 // Two era cards of the fixture moved onto coasts; the 1970 and 1925 cards
 // stay on paper (the 2026 card is today's satellite).
 const COASTAL_VIEWS = {
@@ -39,7 +41,7 @@ const COASTAL_VIEWS = {
 
 // @req REQ-186
 test(
-  "an era frame with the coast in view captures within 5 s",
+  "an era frame with the coast in view captures within 10 s",
   { skip, timeout: 600000 },
   async () => {
     const seq = loadSeriesVideo(
