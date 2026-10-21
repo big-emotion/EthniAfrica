@@ -62,12 +62,40 @@ export function soundLibrary(root = new URL("../sound/", import.meta.url)) {
       file,
     ])
   );
-  return { cues, beds };
+  // Operator, 21 October 2026: a default bed per series, named in
+  // beds/series.json, and an episode's own bed chosen from beds/library/.
+  const library = Object.fromEntries(
+    wavs(join(base, "beds", "library")).map((file) => [
+      file
+        .split("/")
+        .at(-1)
+        .replace(/\.wav$/iu, ""),
+      file,
+    ])
+  );
+  const seriesFile = join(base, "beds", "series.json");
+  const series = existsSync(seriesFile)
+    ? JSON.parse(readFileSync(seriesFile, "utf8"))
+    : {};
+  return { cues, beds, library, series };
 }
 
-export const mixAvailable = (library, series) =>
+// The bed of one video: the episode's own, else its series' default from
+// beds/series.json, else beds/<series>.wav, else none. A name the library
+// lacks is refused rather than silently replaced by another bed.
+export function bedFor(lib, series, episodeBed) {
+  const named = (name, where) =>
+    lib.library?.[name] ??
+    fail(`Fond sonore « ${name} » absent de beds/library (${where})`);
+  if (episodeBed !== undefined) return named(episodeBed, "fond de l'épisode");
+  if (lib.series?.[series] !== undefined)
+    return named(lib.series[series], `défaut de la série ${series}`);
+  return lib.beds[series] ?? null;
+}
+
+export const mixAvailable = (library, series, episodeBed) =>
   Object.values(library.cues).some((files) => files.length > 0) ||
-  !!library.beds[series];
+  !!bedFor(library, series, episodeBed);
 
 // The voice speaks from a word's start to the last word's end; a gap shorter
 // than `pauseMin` is not a pause (the bed would pump between words).

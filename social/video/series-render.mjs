@@ -42,6 +42,7 @@ import { coastOf } from "./shoreline.mjs";
 import {
   soundLibrary,
   mixAvailable,
+  bedFor,
   assignCueFiles,
   mixSound,
 } from "./mix.mjs";
@@ -608,7 +609,7 @@ async function mixVoice(seq, sound, outDir, count) {
     voice: seq.voice.audio,
     words: seq.voice.chunks.flat(),
     cues: placed,
-    bed: sound.beds[seq.band.id] ?? null,
+    bed: bedFor(sound, seq.band.id, seq.bed),
     seconds: count / FPS,
     out: join(outDir, "mix.wav"),
   });
@@ -652,7 +653,7 @@ export async function encodeSeriesVideo(
   // 1.13.0: with the operator's cue files or the series' bed, the voice is
   // mixed with them (mix.mjs) and the mix is measured; without any, the
   // voice alone, as before. The picture is the same either way.
-  const mixed = mixAvailable(sound, seq.band.id)
+  const mixed = mixAvailable(sound, seq.band.id, seq.bed)
     ? await mixVoice(seq, sound, outDir, count)
     : null;
   const voice = mixed ? { ...seq.voice, audio: mixed.file } : seq.voice;

@@ -6,7 +6,13 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
-import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
+import {
+  mkdirSync,
+  mkdtempSync,
+  readFileSync,
+  rmSync,
+  writeFileSync,
+} from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import {
@@ -19,6 +25,7 @@ import {
   mixAvailable,
   readWav,
   loudnessLog,
+  bedFor,
 } from "./mix.mjs";
 
 const dir = mkdtempSync(join(tmpdir(), "series-mix-"));
@@ -374,4 +381,61 @@ test("the mix is -16 LUFS integrated within 0.5 and its true peak is at most -1 
   assert.equal(w.channels, 2);
   assert.ok(Math.abs(w.data.length / 2 / 48000 - SECONDS) < 0.01);
   writeFileSync(join(dir, "result.json"), JSON.stringify(result));
+});
+
+// A bed library (operator, 21 October 2026): one default bed per series named
+// in beds/series.json, and an episode's own bed chosen by name from
+// beds/library/. A bed at beds/<series>.wav still serves its series.
+const lib2 = join(dir, "sound-library");
+mkdirSync(join(lib2, "beds", "library"), { recursive: true });
+for (const name of ["mandingue", "rumba-congolaise"])
+  writeFileSync(
+    join(lib2, "beds", "library", `${name}.wav`),
+    readFileSync(bed)
+  );
+writeFileSync(join(lib2, "beds", "villes.wav"), readFileSync(bed));
+writeFileSync(
+  join(lib2, "beds", "series.json"),
+  JSON.stringify({ pays: "mandingue", "nom-recu": "rumba-congolaise" })
+);
+
+// @req REQ-186
+test("a series takes its default bed from beds/series.json", () => {
+  const library = soundLibrary(lib2);
+  assert.equal(
+    bedFor(library, "pays"),
+    join(lib2, "beds", "library", "mandingue.wav")
+  );
+  assert.equal(mixAvailable(library, "pays"), true);
+});
+
+// @req REQ-186
+test("an episode's own bed replaces its series' default", () => {
+  assert.equal(
+    bedFor(soundLibrary(lib2), "pays", "rumba-congolaise"),
+    join(lib2, "beds", "library", "rumba-congolaise.wav")
+  );
+});
+
+// @req REQ-186
+test("an episode bed missing from the library is refused, by name", () => {
+  assert.throws(() => bedFor(soundLibrary(lib2), "pays", "kora"), /« kora »/u);
+});
+
+// @req REQ-186
+test("a series without a default keeps beds/<series>.wav, or no bed", () => {
+  const library = soundLibrary(lib2);
+  assert.equal(bedFor(library, "villes"), join(lib2, "beds", "villes.wav"));
+  assert.equal(bedFor(library, "mots"), null);
+});
+
+// @req REQ-186
+test("a default naming a bed the library lacks is refused", () => {
+  const broken = join(dir, "sound-broken");
+  mkdirSync(join(broken, "beds", "library"), { recursive: true });
+  writeFileSync(
+    join(broken, "beds", "series.json"),
+    JSON.stringify({ pays: "absent" })
+  );
+  assert.throws(() => bedFor(soundLibrary(broken), "pays"), /« absent »/u);
 });

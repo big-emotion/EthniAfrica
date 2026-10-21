@@ -375,6 +375,8 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     mapImagery: input.mapImagery ?? MAP_IMAGERY,
     // 1.13.0: the year the satellite shows, for the counter and the flags.
     ...(input.today !== undefined && { today: input.today }),
+    // The episode's own bed, by name in social/sound/beds/library (mix.mjs bedFor).
+    ...(input.bed !== undefined && { bed: input.bed }),
   };
   if (!IMAGERY[seq.mapImagery]?.width)
     fail(`No verified imagery « ${seq.mapImagery} » for the map cards`);
