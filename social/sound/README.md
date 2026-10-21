@@ -1,6 +1,8 @@
 # Series video sound
 
-The cues and music beds of the series video (EthniAfrica Cartes 1.13.0, `social/design-system/series.md`, « 13. Sound cues »). The operator produces and chooses every sound here (decision 10 of 21 October 2026): one cue palette shared by every series, one bed per series. Nothing in this folder is downloaded from a sound library or chosen in the operator's place; an agent never fills it.
+The cues and music beds of the series video (EthniAfrica Cartes 1.13.0, `social/design-system/series.md`, « 13. Sound cues »). The operator produces and chooses every sound here (decision 10 of 21 October 2026): one cue palette shared by every series, one bed per series. Nothing in this folder is downloaded from a sound library or chosen in the operator's place: an agent may generate candidates at the operator's request, and only the takes the operator keeps after listening come in.
+
+The first palette and beds came in on 21 October 2026: generated with ElevenLabs on the operator's account (« ok pour eleven labs »), takes b and c of every cue family kept after listening (« b et c »), and the six beds kept under a narration sample (« chaque fond musical à garder »). Each folder's `LICENCE.md` records the source and the choice. The series `villes` has no bed yet.
 
 `social/video/mix.mjs` reads this folder. While it holds no file, the engine muxes the voice alone, as before 1.13.0, and the video is complete: every cue doubles a visible event.
 
