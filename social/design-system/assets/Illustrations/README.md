@@ -28,3 +28,15 @@ Three scenes for what a name says, in the same hand, set on the parchment card (
 | `serviteur.svg` | a young man sweeping the yard at sunrise | Kwa · serviteur de l’esprit de son jour ? |
 
 No face, no symbol, no named cloth pattern, no ritual; generic figures in everyday scenes. Their ground fades out at both sides, so on parchment they read as vignettes. They are illustrations, never evidence: the card's foot says so. The operator kept the three as drawn, `serviteur.svg` included (« oui j’accepte mais rajoute le dessin »).
+
+## Added in 1.14.0-proposition (accepted on 21 October 2026)
+
+Drawings that encode a figure on the series video's map (Series, « Figures and facts drawn on the map »), in the same hand, never flat pictograms:
+
+| File | What it shows | Used for |
+| --- | --- | --- |
+| `personne-1.svg` … `personne-6.svg` | six standing figures: a woman in a head wrap, a man in a shirt, a child, an elder in a long robe with a cane, a young woman, a young man; three skin washes | one unit of people (1 personnage = 100 millions on the episode « Afrique »); the row of five, four of them in the muted wash `unit-muted` |
+| `bulle.svg` | a speech bubble, cream paper, three ochre voice strokes | one unit of languages (1 bulle = 100 langues) |
+| `livre.svg` | a leather codex with a tooled frame and a clasp, no symbol | a book that travels (Léon l'Africain's description) |
+
+**Format.** The figures: viewBox `0 -4 48 104`, foot at (24, 96), 92 px tall on the map at 1080 × 1920. The bubble: viewBox `0 0 44 38`, its tail's tip at (12, 36), 40 px tall. The book: viewBox `0 0 160 120`, foot at (80, 112), as the scenes. No face, no symbol; generic figures, never a portrait. They are units, never evidence: the foot gives the unit and the source.

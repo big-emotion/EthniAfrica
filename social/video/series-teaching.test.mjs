@@ -200,13 +200,14 @@ test("1.12.0: each formula move starts on its word and lasts its frames: appear 
     label: 0,
     from: -1,
     to: -1,
+    p: 0,
     t: 0,
   });
   for (const [k, n] of boy.durations.entries()) {
     const f = boy.frames[k];
     assert.deepEqual(
       line(f),
-      { label: line(f).label, from: k - 1, to: k, t: 0 },
+      { label: line(f).label, from: k - 1, to: k, p: 0, t: 0 },
       `state ${k} start`
     );
     assert.equal(line(f + n).t, 1, `state ${k} end`);
@@ -217,6 +218,7 @@ test("1.12.0: each formula move starts on its word and lasts its frames: appear 
     label: 1,
     from: 3,
     to: 4,
+    p: 1,
     t: 1,
   });
   // The day line on its word, the note for its 2 s.
@@ -347,7 +349,14 @@ test("1.12.0: a drawing is refused off the parchment card", () => {
 test("1.12.0: a drawing enters on its word in 12 frames rising 8 px; its name 5 frames later, its quality 9 frames later or on its own word", () => {
   const yaw = word(seq, PAIR, "Yaw");
   const d = (f) => layerOf(seq, f, PAIR).drawings[0];
-  assert.deepEqual(d(yaw), { opacity: 0, rise: 8, name: 0, quality: 0 });
+  assert.deepEqual(d(yaw), {
+    opacity: 0,
+    rise: 8,
+    name: 0,
+    nameScale: 0.7,
+    quality: 0,
+    qualityScale: 0.7,
+  });
   assert.equal(d(yaw + 12).opacity, 1);
   assert.equal(d(yaw + 12).rise, 0);
   assert.equal(d(yaw + 5).name, 0);
@@ -378,8 +387,9 @@ test("1.12.0: the parchment text card's date grows from 94 to 100 % in 15 frames
   assert.equal(l(quote + 12).quote.marks[0], 1);
   assert.ok(l(quote + 6).quote.marks[0] > 0 && l(quote + 6).quote.marks[0] < 1);
   const lignee = word(seq, LAW, "lignée");
-  assert.deepEqual(l(lignee).words[1], { opacity: 0, rise: 12 });
-  assert.deepEqual(l(lignee + 12).words[1], { opacity: 1, rise: 0 });
+  // 1.13.0: free words pop on their word.
+  assert.deepEqual(l(lignee).words[1], { opacity: 0, scale: 0.7 });
+  assert.deepEqual(l(lignee + 9).words[1], { opacity: 1, scale: 1 });
   // Everything stays to the end of the card.
   const end = l(seq.cardStarts[LAW + 1] - 10);
   assert.deepEqual(

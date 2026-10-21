@@ -19,19 +19,52 @@ import {
   isAnimatedCard,
   loadSequenceArea,
   markInk,
+  pushedBand,
   sequenceCredits,
 } from "./series-map.mjs";
-import {
-  FPS,
-  chunkUnits,
-  cubicBezier,
-  enter,
-  leave,
-  symmetric,
-  estimateWidth,
-  placeLabels,
-} from "./sequence.mjs";
+import { FPS, chunkUnits, estimateWidth, placeLabels } from "./sequence.mjs";
 import { GLOBE, globeCamera, globeGrade } from "./page.mjs";
+import {
+  EASE,
+  DUR,
+  popAt,
+  exitAt,
+  popExit,
+  swellAt,
+  pushAt,
+} from "./series-motion.mjs";
+import {
+  viewOf,
+  planWhip,
+  whipCamera,
+  whipBlur,
+  checkWhipGaps,
+  planFlags,
+  flagUnroll,
+  eraAt,
+  FLAGS,
+} from "./series-turns.mjs";
+import { loadRiver } from "./rivers.mjs";
+import {
+  FIGURES,
+  FIGURE_MARKS,
+  planFigures,
+  figuresAt,
+  figureTexts,
+  figureMarkOn,
+  figureHeadAt,
+  letteringFits,
+  unitBox,
+} from "./series-figures.mjs";
+import {
+  arrowCurve,
+  cumulative,
+  pointAt,
+  polyline,
+  arrowHead,
+} from "./series-paths.mjs";
+import { RECAP } from "./series-subject.mjs";
+import { dirname } from "node:path";
 
 // Frames at 30 fps (handoff.md, « Timing » and « Change of view »).
 export const SEQUENCE_TIMING = {
@@ -43,18 +76,17 @@ export const SEQUENCE_TIMING = {
   nameSwap: 5, // names leave in the move's first 5 frames, return 5 after
 };
 const CROSS_FADE = 9;
-const ZOOM = 0.04;
 const MAX_NAMES = 4;
 const fail = (message) => {
   throw new Error(message);
 };
 const toFrame = (seconds) => Math.round(seconds * FPS);
 // Progress over `duration` frames, eased as an entry (0.4.0).
-const span = (frames, duration) => enter(frames / duration);
+const span = (frames, duration) => EASE.enter(frames / duration);
 // The first frame after an entry's start at which its area is at 0.6.
 const NAME_DELAY = (() => {
   let k = 0;
-  while (enter(k / SEQUENCE_TIMING.entry) < SEQUENCE_TIMING.nameAt) k++;
+  while (EASE.enter(k / SEQUENCE_TIMING.entry) < SEQUENCE_TIMING.nameAt) k++;
   return k;
 })();
 
@@ -145,6 +177,10 @@ export function moveCamera(from, to, t) {
   };
 }
 
+// The key an area is planned under: its file, or for the recap card (1.13.0)
+// the file in the recap's own sequence.
+const areaKey = (card, a) => (card.isRecap ? `rappel|${a.file}` : a.file);
+
 // Every area of every sequence, once, with what the cards say of it: one
 // name, one ink, one language, entered once.
 function collectAreas(seq, runs, animated) {
@@ -166,11 +202,15 @@ function collectAreas(seq, runs, animated) {
               ),
             }
           : entry;
-        if (owner[a.file] && owner[a.file] !== run.sequence)
+        // 1.13.0: the recap card shows the previous episode's areas, which
+        // this episode may draw again in its own sequence: keyed apart.
+        const key = areaKey(seq.cards[card], a);
+        if (owner[key] && owner[key] !== run.sequence)
           fail(`Area ${a.file} is in two map sequences of one video`);
-        owner[a.file] = run.sequence;
-        const area = (areas[a.file] ??= {
+        owner[key] = run.sequence;
+        const area = (areas[key] ??= {
           ...loadSequenceArea(a.file),
+          file: key,
           sequence: run.sequence,
           name: a.name,
           ink: a.ink,
@@ -182,10 +222,10 @@ function collectAreas(seq, runs, animated) {
             fail(`Area ${a.file}: one id across the sequence`);
           if (
             ids[`${run.sequence}:${id}`] &&
-            ids[`${run.sequence}:${id}`] !== a.file
+            ids[`${run.sequence}:${id}`] !== key
           )
             fail(`Two areas of sequence ${run.sequence} share the id ${id}`);
-          ids[`${run.sequence}:${id}`] = a.file;
+          ids[`${run.sequence}:${id}`] = key;
           area.id = id;
           area.people ??= a.people;
           for (const s of a.states ?? [])
@@ -206,9 +246,13 @@ function collectAreas(seq, runs, animated) {
         )
           fail(`Area ${a.file}: one language across the sequence`);
         area.lang ??= a.lang;
-        if (a.say !== undefined) {
+        if (a.say !== undefined || a.sayFrame !== undefined) {
           if (area.say) fail(`Area ${a.file} enters once: nothing replays`);
-          area.say = { card, ...wordOf(seq, card, a.say) };
+          // 1.13.0: the recap card's marks enter on frames of their own.
+          area.say =
+            a.sayFrame !== undefined
+              ? { card, frame: a.sayFrame, at: `frame ${a.sayFrame}` }
+              : { card, ...wordOf(seq, card, a.say) };
         }
         if (a.langSay !== undefined) {
           if (area.langSay) fail(`Area ${a.file}: its language enters once`);
@@ -267,10 +311,12 @@ const entryOrder = (areas, entries) =>
 
 // One card's still view: fitted as in 1.4.1 on the areas it frames, its
 // names placed once for the whole card, its key and credits.
-function sequenceView(spec, areas, order, imagery) {
-  const files = order.filter((f) => spec.map.areas.some((a) => a.file === f));
+function sequenceView(spec, areas, order, imagery, push) {
+  const files = order.filter((f) =>
+    spec.map.areas.some((a) => areaKey(spec, a) === f)
+  );
   const points = files.flatMap((f) => outerPoints(areas[f]));
-  const fitted = fitMapCamera(extent(points), imagery, points);
+  const fitted = fitMapCamera(extent(points), imagery, points, push);
   const camera = {
     lon: fitted.lon,
     lat: fitted.lat,
@@ -293,7 +339,7 @@ function sequenceView(spec, areas, order, imagery) {
       `Card ${spec.id}: ${labels.length} names on the map, ${MAP_FRAME.maxNames} at most (a stack counts one)`
     );
   const placed = placeLabels(labels, [], {
-    band: MAP_FRAME.names,
+    band: pushedBand(MAP_FRAME.names, push),
     styles: LABEL_STYLES,
   });
   // A name with no room stays in the key, where every name is listed (0.4.0).
@@ -342,18 +388,18 @@ function sequenceView(spec, areas, order, imagery) {
       h: Math.max(...ys) - Math.min(...ys),
     },
   };
-  checkView(spec, view);
+  checkView(spec, view, push);
   return view;
 }
 
-// Check 4 on each view, at 100 % and at the end of the slow zoom around
-// (540, 1010): the subject between y 724 and the foot, the scale limit, the
-// names in the map band.
-function checkView(spec, view) {
+// Check 4 on each view, at 100 % and at the end of its push around
+// (540, 1010) (1.13.0; the slow zoom before): the subject between y 724 and
+// the foot, the scale limit, the names in the map band.
+function checkView(spec, view, push) {
   const s = view.subject;
   const cy = view.camera.centreY;
-  const top = cy + (s.y - cy) * MAP_FRAME.maxZoom;
-  const bottom = cy + (s.y + s.h - cy) * MAP_FRAME.maxZoom;
+  const top = cy + (s.y - cy) * push;
+  const bottom = cy + (s.y + s.h - cy) * push;
   if (top < 724)
     fail(
       `Card ${spec.id}: Le sujet de la carte passe sous la tête (y ${Math.round(top)})`
@@ -362,8 +408,10 @@ function checkView(spec, view) {
     fail(
       `Card ${spec.id}: the map's subject runs into the foot (y ${Math.round(bottom)})`
     );
-  if (view.scale * MAP_FRAME.maxZoom > MAP_FRAME.maxScale + 1e-9)
-    fail(`Card ${spec.id}: the imagery is enlarged past ${MAP_FRAME.maxScale}`);
+  if (view.scale * push > MAP_FRAME.maxScale + 1e-9)
+    fail(
+      `Card ${spec.id}: Poussée au-delà de la limite de l'imagerie : cadrer plus large`
+    );
   const [x0, x1] = MAP_FRAME.names.x;
   const [y0, y1] = MAP_FRAME.names.y;
   for (const { text, box } of view.names)
@@ -423,19 +471,112 @@ export function planMapSequences(seq, imagery) {
     const [first, last] = [run.cards[0], run.cards.at(-1)];
     run.from = first ? starts[first] - CROSS_FADE + 1 : 0;
     run.to = last + 1 < starts.length ? starts[last + 1] - 1 : seq.frames - 1;
-    // 1.11.0: the slow zoom does not run on a card that moves, nor on the
-    // globe; a run that holds one keeps its scale.
-    run.zoomOff = run.cards.some(
-      (i) => seq.cards[i].opening === "globe" || seq.cards[i].map.moves?.length
-    );
+    run.globe = run.cards.some((i) => seq.cards[i].opening === "globe");
   }
+  // 1.13.0, the continuous camera: every map card pushes in from its first
+  // frame to its last, multiplied with every move; it replaces the slow zoom
+  // of 1.4.0 and its exceptions of 1.11.0. A card's span runs from its change
+  // of view (a run's first card from its first frame; the opener on the
+  // globe from the dive's landing, the dive being its camera move) to the
+  // frame before the next card's change. Each card is framed for its own
+  // push, so the push of a card stays its own (series.md « 3 »).
+  const span = (run, k) => {
+    const i = run.cards[k];
+    const from = k
+      ? starts[i] - CROSS_FADE
+      : run.globe
+        ? Math.max(run.from, GLOBE.keys[2])
+        : run.from;
+    const to =
+      k + 1 < run.cards.length
+        ? starts[run.cards[k + 1]] - CROSS_FADE - 1
+        : run.to;
+    return { from, to };
+  };
+  // A 1.5.0 card frames the areas it lists, so consecutive cards listing the
+  // same areas keep one view and one push: they are framed together, for
+  // the push of all of them.
+  const listed = (i) =>
+    JSON.stringify(seq.cards[i].map.areas.map((a) => a.file).sort());
+  const framedFor = (run, k) => {
+    if (animated[run.sequence]) return span(run, k);
+    let [a, b] = [k, k];
+    while (a > 0 && listed(run.cards[a - 1]) === listed(run.cards[k])) a--;
+    while (
+      b + 1 < run.cards.length &&
+      listed(run.cards[b + 1]) === listed(run.cards[k])
+    )
+      b++;
+    return { from: span(run, a).from, to: span(run, b).to };
+  };
+  // A return to the same areas after a picture shows the same view: cards
+  // listing the same areas are framed for the largest push among them.
+  const pushes = {};
+  const framing = (run, i) =>
+    animated[run.sequence] ? `card ${i}` : `${run.sequence} ${listed(i)}`;
+  for (const run of runs)
+    run.cards.forEach((i, k) => {
+      const { from, to } = framedFor(run, k);
+      const key = framing(run, i);
+      pushes[key] = Math.max(pushes[key] ?? 1, pushAt(to - from));
+    });
   const views = {};
   for (const run of runs)
-    for (const i of run.cards)
+    run.cards.forEach((i) => {
+      const push = pushes[framing(run, i)];
       views[i] = animated[run.sequence]
-        ? animatedView(seq.cards[i], areas, order, imagery, run.zoomOff)
-        : sequenceView(seq.cards[i], areas, order, imagery);
-  const cameras = Object.values(views).map((v) => v.camera);
+        ? animatedView(seq.cards[i], areas, order, imagery, push)
+        : sequenceView(seq.cards[i], areas, order, imagery, push);
+    });
+  // Cards that keep one camera make one shot and continue one push, so
+  // nothing jumps at their change; a change of view starts the next card's
+  // own push, which the move between the two views blends in.
+  // A whip zoom lands on a new place: the push starts again from its landing
+  // (`landings`), the place before it having been left (1.13.0).
+  const shots = {};
+  const landings = {};
+  for (const run of runs) {
+    let shot = null;
+    run.cards.forEach((i, k) => {
+      const { from, to } = span(run, k);
+      const before = k ? views[run.cards[k - 1]] : null;
+      const endOfBefore =
+        before && (before.stops?.at(-1).camera ?? before.camera);
+      if (shot && sameCamera(endOfBefore, views[i].camera)) shot.to = to;
+      else shot = { from, to };
+      shots[i] = shot;
+      const whip = seq.cards[i].whip;
+      if (whip) {
+        const start = wordOf(seq, i, whip.say).frame;
+        shot.to = start;
+        shot = { from: start + DUR.whip, to };
+        landings[i] = shot;
+      }
+    });
+  }
+  for (const shot of new Set([
+    ...Object.values(shots),
+    ...Object.values(landings),
+  ]))
+    shot.end = pushAt(shot.to - shot.from);
+  const pushEnd = (i) => Math.max(shots[i].end, landings[i]?.end ?? 1);
+  // A shot of several cards pushes further than each card alone: its views
+  // are checked again at the shot's end.
+  for (const run of runs)
+    for (const i of run.cards) {
+      if (animated[run.sequence])
+        for (const stop of views[i].stops)
+          checkScale(seq.cards[i], stop.camera, imagery, pushEnd(i));
+      else checkView(seq.cards[i], views[i], shots[i].end);
+    }
+  // The still views, and each pushed as far as its shot goes.
+  const cameras = runs.flatMap((run) =>
+    run.cards.flatMap((i) =>
+      (views[i].stops?.map((s) => s.camera) ?? [views[i].camera]).flatMap(
+        (c) => [c, { ...c, radius: c.radius * pushEnd(i) }]
+      )
+    )
+  );
   const plan = {
     runs,
     imageryWidth: imagery.width,
@@ -445,6 +586,8 @@ export function planMapSequences(seq, imagery) {
     eventsByFile: byFile,
     order,
     views,
+    shots,
+    landings,
     animated,
     cards: {},
   };
@@ -470,11 +613,68 @@ export function planMapSequences(seq, imagery) {
     bounds: frameBounds(camera),
   }));
   seq.mapSequence = plan;
+  // 1.13.0: never two whips within 4 s.
+  checkWhipGaps(
+    Object.entries(plan.cards).flatMap(([i, cp]) =>
+      cp.moves
+        .filter((m) => m.whip)
+        .map((m) => ({ card: seq.cards[i].id, start: m.start }))
+    )
+  );
   for (const run of runs)
     if (animated[run.sequence])
       for (const i of run.cards) checkAnimatedCard(seq, i);
   return plan;
 }
+
+// 1.13.0, around a whip zoom: what was on the map leaves in the 6 frames
+// before it (`ease-exit`) and does not come back, the new place being far
+// away; what comes after enters once it has landed (series.md « 4 »).
+function whipShown(cp, frame, start) {
+  const whip = cp.moves.find((m) => m.whip);
+  if (!whip) return 1;
+  if (start >= whip.start) return frame < whip.end ? 0 : 1;
+  const leave = whip.start - DUR.exit;
+  if (frame < leave) return 1;
+  if (frame >= whip.start) return 0;
+  return 1 - EASE.exit((frame - leave) / DUR.exit);
+}
+
+// An animated card's camera at `frame`, pushed (1.13.0): its moves under the
+// push of its shot; a whip from where that push had brought the camera to
+// the new place, which then pushes from the landing.
+function cameraOfCard(plan, i, frame) {
+  const cp = plan.cards[i];
+  const whip = cp.moves.find((m) => m.whip);
+  if (whip && frame >= whip.start) {
+    if (frame >= whip.end)
+      return {
+        camera: pushedCamera(whip.to, plan.landings[i], frame),
+        moving: false,
+      };
+    const from = pushedCamera(whip.from, plan.shots[i], whip.start);
+    return {
+      camera: whipCamera({ ...whip, from }, frame),
+      moving: frame > whip.start,
+    };
+  }
+  const { camera, moving } = cardCamera(cp, frame);
+  return { camera: pushedCamera(camera, plan.shots[i], frame), moving };
+}
+
+// A camera pushed as far as its shot has gone at `frame` (1.13.0).
+const pushedCamera = (camera, shot, frame) => ({
+  ...camera,
+  radius: camera.radius * pushAt(frame - shot.from),
+});
+
+// A box drawn at rest, grown `push` times around the map's centre.
+const pushedBox = (b, push, centreY) => ({
+  x: 540 + (b.x - 540) * push,
+  y: centreY + (b.y - centreY) * push,
+  w: b.w * push,
+  h: b.h * push,
+});
 
 export const runOfCard = (plan, card) =>
   plan ? plan.runs.findIndex((r) => r.cards.includes(card)) : -1;
@@ -493,9 +693,17 @@ export function mapRunState(seq, r, frame) {
   const t = before ? frame - changeStart(run.cards[k]) : Infinity;
   const moved = !!before && !sameCamera(before.camera, view.camera);
   const moving = moved && t < SEQUENCE_TIMING.move;
+  // 1.13.0: the continuous push of the card's shot; a change of view blends
+  // the outgoing shot's push into the incoming one's.
+  const shot = plan.shots[run.cards[k]];
+  const push = pushAt(frame - shot.from);
   const camera = moving
-    ? moveCamera(before.camera, view.camera, enter(t / SEQUENCE_TIMING.move))
-    : { ...view.camera };
+    ? moveCamera(
+        pushedCamera(before.camera, plan.shots[run.cards[k - 1]], frame),
+        pushedCamera(view.camera, shot, frame),
+        EASE.enter(t / SEQUENCE_TIMING.move)
+      )
+    : pushedCamera(view.camera, shot, frame);
   const { entries } = plan;
   const newcomer = (f) => before && !before.files.includes(f);
   const leaving = before
@@ -514,26 +722,29 @@ export function mapRunState(seq, r, frame) {
   const opacity = (f) =>
     view.files.includes(f)
       ? entered(f)
-      : entered(f) * (1 - leave(t / SEQUENCE_TIMING.move));
+      : entered(f) * (1 - EASE.exit(t / SEQUENCE_TIMING.move));
   const shown = plan.order.filter(
     (f) => view.files.includes(f) || leaving.includes(f)
   );
   const swap = !moved
     ? 1
     : t <= SEQUENCE_TIMING.nameSwap
-      ? 1 - leave(t / SEQUENCE_TIMING.nameSwap)
+      ? 1 - EASE.exit(t / SEQUENCE_TIMING.nameSwap)
       : t < SEQUENCE_TIMING.move
         ? 0
-        : enter((t - SEQUENCE_TIMING.move) / SEQUENCE_TIMING.nameSwap);
-  const nameOpacity = (f) => {
+        : EASE.enter((t - SEQUENCE_TIMING.move) / SEQUENCE_TIMING.nameSwap);
+  // 1.13.0: a said area's name pops once its area is at 0.6 (the 1.5.0
+  // name's 9 frames are the pop's).
+  const namePop = (f) => {
     const e = entries[f];
-    const own =
+    const pop =
       e?.start === undefined
-        ? entered(f)
-        : span(frame - e.start - NAME_DELAY, SEQUENCE_TIMING.name);
-    return (
-      own * (leaving.includes(f) ? 1 - leave(t / SEQUENCE_TIMING.move) : 1)
-    );
+        ? { opacity: entered(f), scale: 1 }
+        : popAt(frame - e.start - NAME_DELAY);
+    const out = leaving.includes(f)
+      ? 1 - EASE.exit(t / SEQUENCE_TIMING.move)
+      : 1;
+    return { opacity: pop.opacity * out, scale: pop.scale };
   };
   // Until the move ends the names are the outgoing view's, carried by their
   // area's anchor under the moving camera; then the new view's.
@@ -544,21 +755,19 @@ export function mapRunState(seq, r, frame) {
       ? before.names.filter((n) => leaving.includes(n.file))
       : []),
   ].map((n) => {
-    const own = nameOpacity(n.file);
+    const { opacity: own, scale } = namePop(n.file);
     const lang = n.lang
       ? Math.min(
           own,
           entries[n.file]?.lang === undefined
             ? 1
-            : span(frame - entries[n.file].lang, SEQUENCE_TIMING.lang)
+            : popAt(frame - entries[n.file].lang).opacity
         )
       : 0;
-    let box = n.box;
-    if (moving) {
-      const [x, y] = flatProject(camera, ...n.anchor);
-      const [x0, y0] = flatProject(before.camera, ...n.anchor);
-      box = { ...box, x: box.x + x - x0, y: box.y + y - y0 };
-    }
+    // A name keeps its pixel size and follows its anchor under the camera.
+    const [x, y] = flatProject(camera, ...n.anchor);
+    const [x0, y0] = flatProject(source.camera, ...n.anchor);
+    const box = { ...n.box, x: n.box.x + x - x0, y: n.box.y + y - y0 };
     return {
       file: n.file,
       text: n.text,
@@ -567,6 +776,7 @@ export function mapRunState(seq, r, frame) {
       box,
       opacity: own * swap,
       langOpacity: lang * swap,
+      scale,
     };
   });
   // A key item follows its area.
@@ -576,13 +786,21 @@ export function mapRunState(seq, r, frame) {
     run: r,
     camera,
     moving,
-    zoom: 1 + (ZOOM * (frame - run.from)) / (run.to - run.from),
+    zoom: 1,
+    push,
     scale: (camera.radius * 2 * Math.PI) / plan.imageryWidth,
-    areas: shown.map((f) => ({ file: f, opacity: opacity(f) })),
+    areas: shown.map((f) => ({
+      file: f,
+      opacity: opacity(f),
+      // 1.13.0: a said area swells as it enters.
+      swell:
+        entries[f]?.start === undefined ? 1 : swellAt(frame - entries[f].start),
+    })),
     names,
     keys,
-    // The subject is checked on each still view, never in a move.
-    subject: moving ? null : view.subject,
+    // The subject is checked on each still view, never in a move; it grows
+    // with the push around the map's centre.
+    subject: moving ? null : pushedBox(view.subject, push, camera.centreY),
   };
 }
 
@@ -625,9 +843,8 @@ export const MAP_TIMING = {
   silentCoverage: 0.8,
   silentDelay: 21,
 };
-const drawEase = cubicBezier(0.4, 0, 0.2, 1);
 const clamp01 = (x) => Math.min(1, Math.max(0, x));
-const ramp = (frames, duration, ease = symmetric) =>
+const ramp = (frames, duration, ease = EASE.move) =>
   ease(clamp01(frames / duration));
 const round2 = (n) => Math.round(n * 100) / 100;
 
@@ -696,33 +913,37 @@ const ANIMATED_LABELS = {
   },
 };
 const kmAcross = (radius) => (1080 / radius) * 6371;
-function checkScale(spec, camera, imagery, zoom) {
-  const scale = ((camera.radius * 2 * Math.PI) / imagery.width) * zoom;
-  if (scale > MAP_FRAME.maxScale + 1e-9) {
-    const limit = (MAP_FRAME.maxScale * imagery.width) / (2 * Math.PI) / zoom;
+// The scale limit at rest, then at the end of the run's push (1.13.0): a view
+// the push would carry past the limit is framed wider.
+function checkScale(spec, camera, imagery, push) {
+  const scale = (camera.radius * 2 * Math.PI) / imagery.width;
+  const limit = (MAP_FRAME.maxScale * imagery.width) / (2 * Math.PI);
+  if (scale > MAP_FRAME.maxScale + 1e-9)
     fail(
       `Card ${spec.id}: Vue plus proche que l'imagerie vérifiée : ${Math.round(kmAcross(camera.radius))} km de large, ${Math.round(kmAcross(limit))} km au moins`
     );
-  }
+  if (scale * push > MAP_FRAME.maxScale + 1e-9)
+    fail(
+      `Card ${spec.id}: Poussée au-delà de la limite de l'imagerie : cadrer plus large (${Math.round(kmAcross(camera.radius))} km de large, ${Math.round(kmAcross(limit / push))} km au moins pour une poussée de ${Math.round((push - 1) * 100)} %)`
+    );
 }
 
 // One animated card's views: its own view, then the view after each move,
 // with the area names placed once for each; its key and credits.
-function animatedView(spec, areas, order, imagery, zoomOff) {
+function animatedView(spec, areas, order, imagery, push) {
   const map = spec.map;
   if (!map.view)
     fail(`Card ${spec.id}: an animated map card frames its plan (map.view)`);
-  const entry = (f) => map.areas.find((a) => a.file === f);
+  const entry = (f) => map.areas.find((a) => areaKey(spec, a) === f);
   const files = order.filter((f) => entry(f));
   const centreY = MAP_FRAME.centre[1];
-  const cams = [map.view, ...(map.moves ?? [])].map(({ lon, lat, radius }) => ({
-    lon,
-    lat,
-    radius,
-    centreY,
-  }));
-  const zoom = zoomOff ? 1 : MAP_FRAME.maxZoom;
-  for (const c of cams) checkScale(spec, c, imagery, zoom);
+  // 1.13.0: a whip lands on a view of its own, after the card's moves.
+  const cams = [
+    map.view,
+    ...(map.moves ?? []),
+    ...(spec.whip ? [viewOf(spec.whip.to, `Card ${spec.id}, whip`)] : []),
+  ].map(({ lon, lat, radius }) => ({ lon, lat, radius, centreY }));
+  for (const c of cams) checkScale(spec, c, imagery, push);
   const labelled = files.filter((f) => (entry(f).label ?? "area") !== "none");
   const place = (camera) => {
     const at = (p) => flatProject(camera, ...p);
@@ -757,7 +978,7 @@ function animatedView(spec, areas, order, imagery, zoomOff) {
       free,
       fixed.map((n) => n.box),
       {
-        band: MAP_FRAME.names,
+        band: pushedBand(MAP_FRAME.names, push),
         styles: ANIMATED_LABELS,
       }
     );
@@ -804,10 +1025,17 @@ function animatedView(spec, areas, order, imagery, zoomOff) {
     scale: (stops[0].camera.radius * 2 * Math.PI) / imagery.width,
     key,
     borders: map.borders ?? "none",
-    credits:
-      spec.opening === "globe"
-        ? { ...credits, globe: `Imagerie : ${imagery.credit}` }
-        : credits,
+    credits: {
+      ...credits,
+      ...(spec.opening === "globe" && {
+        globe: `Imagerie : ${imagery.credit}`,
+      }),
+      // 1.13.0: the era map is the imagery re-inked, its coast Natural
+      // Earth's.
+      ...(spec.era && {
+        era: "Carte d’époque : imagerie NASA retraitée, Natural Earth",
+      }),
+    },
     subject: null,
   };
 }
@@ -824,8 +1052,11 @@ function cardCamera(cp, frame) {
       camera = m.to;
       continue;
     }
+    // 1.13.0: the whip zoom runs its own path, out to the globe and in.
+    if (m.whip)
+      return { camera: whipCamera(m, frame), moving: frame > m.start };
     const s = (frame - m.start) / (m.end - m.start);
-    const h = s * s * (3 - 2 * s);
+    const h = EASE.move(s);
     return {
       camera: {
         lon: m.from.lon + (m.to.lon - m.from.lon) * h,
@@ -840,101 +1071,6 @@ function cardCamera(cp, frame) {
     };
   }
   return { camera: { ...camera }, moving: false };
-}
-
-// An arrow's path on screen: a quadratic curve bent by `bend` of its length
-// to one side, or a Catmull-Rom curve through its via points.
-function arrowCurve(a, camera) {
-  const pts = [a.from, ...(a.via ?? []), a.to].map((p) =>
-    flatProject(camera, ...p)
-  );
-  const out = [];
-  if (pts.length === 2) {
-    const [A, B] = pts;
-    const [dx, dy] = [B[0] - A[0], B[1] - A[1]];
-    const C = [
-      (A[0] + B[0]) / 2 - dy * a.bend,
-      (A[1] + B[1]) / 2 + dx * a.bend,
-    ];
-    for (let i = 0; i <= 80; i++) {
-      const s = i / 80;
-      const u = 1 - s;
-      out.push([
-        u * u * A[0] + 2 * u * s * C[0] + s * s * B[0],
-        u * u * A[1] + 2 * u * s * C[1] + s * s * B[1],
-      ]);
-    }
-    return out;
-  }
-  for (let k = 0; k < pts.length - 1; k++) {
-    const [p0, p1, p2, p3] = [
-      pts[Math.max(0, k - 1)],
-      pts[k],
-      pts[k + 1],
-      pts[Math.min(pts.length - 1, k + 2)],
-    ];
-    for (let j = 0; j < 40; j++) {
-      const u = j / 40;
-      const [u2, u3] = [u * u, u * u * u];
-      out.push(
-        [0, 1].map(
-          (c) =>
-            0.5 *
-            (2 * p1[c] +
-              (-p0[c] + p2[c]) * u +
-              (2 * p0[c] - 5 * p1[c] + 4 * p2[c] - p3[c]) * u2 +
-              (-p0[c] + 3 * p1[c] - 3 * p2[c] + p3[c]) * u3)
-        )
-      );
-    }
-  }
-  out.push(pts.at(-1));
-  return out;
-}
-const cumulative = (pts) => {
-  const c = [0];
-  for (let i = 1; i < pts.length; i++)
-    c.push(
-      c[i - 1] +
-        Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1])
-    );
-  return c;
-};
-function pointAt(pts, cum, length) {
-  const L = Math.min(Math.max(length, 0), cum.at(-1));
-  let i = 1;
-  while (i < cum.length - 1 && cum[i] < L) i++;
-  const s = (L - cum[i - 1]) / Math.max(1e-6, cum[i] - cum[i - 1]);
-  const [a, b] = [pts[i - 1], pts[i]];
-  return {
-    x: a[0] + (b[0] - a[0]) * s,
-    y: a[1] + (b[1] - a[1]) * s,
-    angle: Math.atan2(b[1] - a[1], b[0] - a[0]),
-  };
-}
-const xy = (p) => `${p[0].toFixed(1)},${p[1].toFixed(1)}`;
-function polyline(pts, cum, a, b) {
-  const p = pointAt(pts, cum, a);
-  const q = pointAt(pts, cum, b);
-  const inner = pts.filter((_, i) => cum[i] > a && cum[i] < b);
-  return "M" + [[p.x, p.y], ...inner, [q.x, q.y]].map(xy).join("L");
-}
-// The notched head, 3.6 w long and 3.2 w wide, its point on the tip.
-function arrowHead(p, w) {
-  const [L, W] = [3.6 * w, 3.2 * w];
-  const [c, s] = [Math.cos(p.angle), Math.sin(p.angle)];
-  const P = (f, g) => [p.x + c * f - s * g, p.y + s * f + c * g];
-  return {
-    x: p.x,
-    y: p.y,
-    angle: p.angle,
-    d:
-      "M" +
-      [P(0, 0), P(-L, W / 2), P(-L * 0.72, 0), P(-L, -W / 2)]
-        .map(xy)
-        .join("L") +
-      "Z",
-  };
 }
 
 // A phrase on the map: 26 characters a line, two lines at most.
@@ -1007,6 +1143,16 @@ function planAnimatedCard(seq, plan, run, k) {
     });
   }
   checkMoves(spec, moves);
+  if (spec.whip)
+    moves.push(
+      planWhip(
+        spec,
+        word(spec.whip.say),
+        view.stops.at(-2).camera,
+        view.stops.at(-1).camera,
+        moves
+      )
+    );
   // A move inside the card starts once the change of view into the card,
   // 27 frames from its change, is over: two camera paths never overlap.
   const before = k ? plan.cards[run.cards[k - 1]] : null;
@@ -1019,9 +1165,30 @@ function planAnimatedCard(seq, plan, run, k) {
   }
   const cp = { card: i, start, end, view: view.camera, globe, moves };
   const cameraAt = (f) => cardCamera(cp, f).camera;
+  // 1.13.0 and 1.14.0: a place by its id among the run's places, or a point.
+  const placeAt = placeFinder(seq, run, what);
+  // 1.14.0: a pin is a reading's name popped where its language comes from,
+  // with a teal arrow (ink b) to the place the word named; it steps back to
+  // 35 % on its `dim`.
+  const pins = (spec.pins ?? []).map((p) => ({
+    id: p.id,
+    from: p.at,
+    to: placeAt(p.to),
+    say: p.say,
+    bend: p.bend ?? 0.12,
+    pin: true,
+    ...(typeof p.to === "string" && {
+      place: {
+        name: placeAt.places[p.to].name,
+        at: placeAt.places[p.to].at,
+        side: placeAt.places[p.to].side ?? "right",
+      },
+    }),
+    ...(p.dim !== undefined && { dim: p.dim }),
+  }));
   // Arrows in the order of their words, one drawing at a time.
   const arrows = [];
-  const said = (map.arrows ?? [])
+  const said = [...(map.arrows ?? []), ...pins]
     .map((a) => ({ a, at: word(a.say) }))
     .sort((x, y) => x.at - y.at);
   for (const { a, at } of said) {
@@ -1032,7 +1199,7 @@ function planAnimatedCard(seq, plan, run, k) {
     );
     const shape = { from: a.from, to: a.to, via: a.via, bend: a.bend ?? 0.18 };
     const length = cumulative(arrowCurve(shape, cameraAt(s))).at(-1);
-    const [lo, hi] = MAP_TIMING.arrow;
+    const [lo, hi] = a.pin ? FIGURES.pinArrow : MAP_TIMING.arrow;
     const dur = Math.min(
       hi,
       Math.max(lo, Math.round(length / MAP_TIMING.arrowPx))
@@ -1041,7 +1208,10 @@ function planAnimatedCard(seq, plan, run, k) {
       id: a.id,
       ...shape,
       both: !!a.both,
-      ink: markInk(a, seq.inks, `${what}, arrow ${a.id}`),
+      ink: a.pin ? "b" : markInk(a, seq.inks, `${what}, arrow ${a.id}`),
+      ...(a.pin && { pin: true }),
+      ...(a.place && { place: a.place }),
+      ...(a.dim !== undefined && { dim: word(a.dim) }),
       start: s,
       dur,
       length,
@@ -1062,18 +1232,34 @@ function planAnimatedCard(seq, plan, run, k) {
     end: d.until !== undefined ? word(d.until) : Infinity,
     label: d.label ?? ILLUSTRATIONS[d.kind],
   }));
-  const words = (map.words ?? [])
+  // 1.14.0: a pin's name under its point, in the reading arrow's ink.
+  const pinWords = (spec.pins ?? []).map((p) => ({
+    text: p.name,
+    kind: "name",
+    at: p.at,
+    // Under its point (above with `side: "above"`), or `dy` px from it.
+    offset: p.dy ?? (p.side === "above" ? -38 : 40),
+    say: p.say,
+    ink: "b",
+    ...(p.dim !== undefined && { dim: p.dim }),
+  }));
+  const words = [...(map.words ?? []), ...pinWords]
     .map((w) => {
       const kind = w.kind ?? "phrase";
       return {
         text: w.text,
         kind,
         // A colony's name set as a word counts among the names, not the words.
-        word: kind !== "name",
-        lines: kind === "date" ? [w.text] : wrapPhrase(spec, w.text),
+        word: kind !== "name" && kind !== "country",
+        lines:
+          kind === "date" || kind === "country" || kind === "century"
+            ? [w.text]
+            : wrapPhrase(spec, w.text),
+        ...(w.offset && { offset: w.offset }),
         at: w.at,
-        start: word(w.say),
+        start: w.sayFrame ?? word(w.say),
         ...(w.until !== undefined && { until: word(w.until) }),
+        ...(w.dim !== undefined && { dim: word(w.dim) }),
         ink:
           w.people !== undefined || w.ink !== undefined
             ? markInk(w, seq.inks, `${what}, « ${w.text} »`)
@@ -1097,12 +1283,43 @@ function planAnimatedCard(seq, plan, run, k) {
     start: p.say !== undefined ? word(p.say) : start,
   }));
   const rename = map.rename && { ...map.rename, start: word(map.rename.say) };
+  // 1.13.0: flags inside a state, following the counter; drawn marks.
+  const areaById = (ref) =>
+    Object.values(plan.areas).find(
+      (a) => a.sequence === run.sequence && a.id === ref
+    );
+  const flags = seq.eras
+    ? planFlags(
+        seq,
+        i,
+        (j, unit) => wordOf(seq, j, unit).frame,
+        areaById,
+        seq.eras.cards[i]?.from === undefined ? null : seq.eras.cards[i],
+        end + CROSS_FADE
+      )
+    : [];
+  const marks = planMarks(seq, i, run, cameraAt, areaById);
+  const pushed = (c, f) => pushedCamera(c, plan.shots[i], f);
+  // 1.14.0: the figures drawn on the map, on the camera as pushed; units
+  // are placed in the band the rest of the card's push leaves them.
+  const shotPush = (f) => pushAt(f - plan.shots[i].from);
+  const figures = planFigures(seq, i, {
+    word,
+    end,
+    dir: dirname(seq.cardsFile),
+    cameraAt: (f) => pushed(cameraAt(f), f),
+    pushFrom: (f) => shotPush(end) / shotPush(f),
+    placeAt,
+    areaOf: (id) => areaById(id),
+    arrowOf: (id) => arrows.find((a) => a.id === id),
+  });
   // The frames the imagery shows: the globe's dive and every move.
   const cameras = [];
   if (globe)
     for (let f = 6; f < GLOBE.keys[2]; f += 6) cameras.push(cameraAt(f));
   for (const m of moves)
-    for (let f = m.start + 6; f < m.end; f += 6) cameras.push(cameraAt(f));
+    for (let f = m.start + 6; f < m.end; f += 6)
+      cameras.push(pushed(cameraAt(f), f));
   const firstMark = Math.min(
     ...view.files.map((f) => plan.entries[f]?.start ?? Infinity),
     Infinity
@@ -1114,6 +1331,11 @@ function planAnimatedCard(seq, plan, run, k) {
     words,
     places,
     rename,
+    flags,
+    marks,
+    figures,
+    // 1.13.0: the recap card's map is a memory, desaturated.
+    recap: !!spec.isRecap,
     facts: map.facts ?? [],
     endCamera: moves.at(-1)?.to ?? view.camera,
     cameras,
@@ -1128,17 +1350,20 @@ function areaState(plan, file, frame, base) {
   let opacity = base ?? 0;
   let lit = 1;
   let inks = [{ ink: plan.areas[file].ink, w: 1 }];
+  // 1.13.0: the fill swells as the area enters; the outline does not move.
+  let swell = 1;
   for (const e of plan.eventsByFile[file] ?? []) {
     if (e.start > frame) break;
     const p = frame - e.start;
-    if (e.to === "enter")
-      opacity = Math.max(opacity, ramp(p, MAP_TIMING.enter, enter));
-    else if (e.to === "lit") {
+    if (e.to === "enter") {
+      opacity = Math.max(opacity, ramp(p, MAP_TIMING.enter, EASE.enter));
+      swell = swellAt(p);
+    } else if (e.to === "lit") {
       if (opacity < 1)
-        opacity = Math.max(opacity, ramp(p, MAP_TIMING.enter, enter));
+        opacity = Math.max(opacity, ramp(p, MAP_TIMING.enter, EASE.enter));
       lit += (1 - lit) * ramp(p, MAP_TIMING.state);
     } else if (e.to === "context") lit -= lit * ramp(p, MAP_TIMING.state);
-    else if (e.to === "out") opacity *= 1 - ramp(p, MAP_TIMING.out, leave);
+    else if (e.to === "out") opacity *= 1 - ramp(p, MAP_TIMING.out, EASE.exit);
     else {
       const q = ramp(p, MAP_TIMING.ink);
       inks = [
@@ -1147,7 +1372,7 @@ function areaState(plan, file, frame, base) {
       ].filter((l) => l.w > 0.001);
     }
   }
-  return { opacity, lit, inks };
+  return { opacity, lit, inks, swell };
 }
 // Every ink an area takes over its sequence: its own first, then each ink
 // change in the order of its events, as areaState reads them. The page makes
@@ -1184,7 +1409,7 @@ function nameStop(cp, frame) {
   for (const [n, m] of cp.moves.entries()) {
     if (frame < m.start - fade) break;
     if (frame < m.start) {
-      factor = 1 - leave((frame - (m.start - fade)) / fade);
+      factor = 1 - EASE.exit((frame - (m.start - fade)) / fade);
       break;
     }
     if (frame < m.end) {
@@ -1192,7 +1417,7 @@ function nameStop(cp, frame) {
       break;
     }
     stop = n + 1;
-    factor = frame < m.end + fade ? enter((frame - m.end) / fade) : 1;
+    factor = frame < m.end + fade ? EASE.enter((frame - m.end) / fade) : 1;
   }
   return { stop, factor };
 }
@@ -1210,32 +1435,324 @@ const styleBox = (style, lines) => {
   ];
 };
 
+// ---------------------------------------------------------------------------
+// 1.13.0, drawn marks (series.md « 7. Drawn marks »): a river named by the
+// voice, a dotted route for one journey, a hand-drawn circle round a place,
+// a cross for what ended, a pin, a curved double arrow for an exchange.
+// Their widths scale with the arrow width W of 1.11.0, the table's values
+// standing at W = 7, the boards' width.
+export const DRAWN = {
+  maxOnScreen: 3,
+  pxPerFrame: 500 / 30,
+  river: [45, 60],
+  route: [24, 75],
+  circle: 14,
+  cross: { stroke: 4, apart: 4, half: 22 },
+  exchange: 24,
+  exchangeBend: 0.25,
+  exchangeGap: 13,
+  circleBox: { rx: 150, ry: 62, dx: 92, overshoot: 0.45 },
+  boardWidth: 7,
+};
+const KINDS = ["river", "route", "circle", "cross", "pin", "exchange"];
+const isPoint = (p) =>
+  Array.isArray(p) && p.length === 2 && p.every(Number.isFinite);
+const clampFrames = (length, [lo, hi]) =>
+  Math.min(hi, Math.max(lo, Math.round(length / DRAWN.pxPerFrame)));
+
+// A place by its id among the run's places (1.13.0), or a [lon, lat] point.
+function placeFinder(seq, run, what) {
+  const places = {};
+  for (const j of run.cards)
+    for (const p of seq.cards[j].map.places ?? []) if (p.id) places[p.id] = p;
+  const placeAt = (ref) => {
+    if (isPoint(ref)) return ref;
+    const p = places[ref];
+    if (!p) fail(`${what}: lieu inconnu pour un trait : « ${ref} »`);
+    return p.at;
+  };
+  placeAt.places = places;
+  return placeAt;
+}
+
+function planMarks(seq, i, run, cameraAt, areaById) {
+  const card = seq.cards[i];
+  const what = `Card ${card.id}`;
+  const word = (w) => wordOf(seq, i, w).frame;
+  const placeAt = placeFinder(seq, run, what);
+  const places = placeAt.places;
+  return (card.marks ?? []).map((m) => {
+    if (!KINDS.includes(m.kind))
+      fail(`${what}: un trait est ${KINDS.join(", ")} (« ${m.kind} »)`);
+    if (typeof m.say !== "string" || !m.say)
+      fail(`${what}: un trait nomme son mot (say)`);
+    const start = word(m.say);
+    const end = m.until === undefined ? Infinity : word(m.until);
+    const base = { kind: m.kind, start, end };
+    const ink = () => markInk(m, seq.inks, `${what}, ${m.kind}`) ?? "w";
+    if (m.kind === "river") {
+      const river = loadRiver(m.path);
+      const length = cumulative(
+        river.points.map((p) => flatProject(cameraAt(start), ...p))
+      ).at(-1);
+      return {
+        ...base,
+        points: river.points,
+        dur: clampFrames(length, DRAWN.river),
+      };
+    }
+    if (m.kind === "route") {
+      const via = (m.via ?? []).map(placeAt);
+      if (via.length < 2)
+        fail(`${what}: une route passe par deux lieux au moins`);
+      const shape = {
+        from: via[0],
+        to: via.at(-1),
+        via: via.slice(1, -1),
+        bend: 0,
+      };
+      const length = cumulative(arrowCurve(shape, cameraAt(start))).at(-1);
+      return {
+        ...base,
+        shape,
+        ink: ink(),
+        dur: clampFrames(length, DRAWN.route),
+      };
+    }
+    if (m.kind === "exchange") {
+      const [a, b] = (m.between ?? []).map(placeAt);
+      if (!a || !b) fail(`${what}: un échange relie deux lieux (between)`);
+      return { ...base, a, b, ink: ink(), dur: DRAWN.exchange };
+    }
+    // A circle surrounds a place and a cross marks one: never an area, a
+    // people or a person (series.md « 7 »).
+    if (typeof m.at === "string" && areaById(m.at))
+      fail(
+        m.kind === "cross"
+          ? `${what}: Une croix ne marque jamais un peuple ni une aire (« ${m.at} »)`
+          : `${what}: Un cercle entoure un lieu, jamais une aire (« ${m.at} »)`
+      );
+    if (typeof m.at === "string" && Object.hasOwn(seq.inks ?? {}, m.at))
+      fail(`${what}: Une croix ne marque jamais un peuple (« ${m.at} »)`);
+    const at = placeAt(m.at);
+    const side =
+      typeof m.at === "string" ? (places[m.at]?.side ?? "right") : "right";
+    if (m.kind === "circle") return { ...base, at, side, dur: DRAWN.circle };
+    if (m.kind === "cross")
+      return { ...base, at, dur: DRAWN.cross.apart + DRAWN.cross.stroke };
+    return { ...base, at, dur: DUR.pop };
+  });
+}
+
+const offsetPoints = (pts, by) =>
+  pts.map((p, n) => {
+    const [q1, q2] = [
+      pts[Math.max(0, n - 1)],
+      pts[Math.min(pts.length - 1, n + 1)],
+    ];
+    const ang = Math.atan2(q2[1] - q1[1], q2[0] - q1[0]);
+    return [p[0] - Math.sin(ang) * by, p[1] + Math.cos(ang) * by];
+  });
+
+// The drawn marks of a card at a frame, in frame pixels.
+function drawnMarks(cp, frame, camera, proportion, fade, shown) {
+  const W = proportion.w;
+  const k = W / DRAWN.boardWidth;
+  return cp.marks.flatMap((m) => {
+    if (frame < m.start) return [];
+    const out =
+      frame >= m.end ? exitAt(frame - m.end) : { opacity: 1, scale: 1 };
+    const opacity = out.opacity * fade * shown(m.start);
+    if (!(opacity > 0)) return [];
+    const drawn = EASE.draw(clamp01((frame - m.start) / m.dur));
+    const mark = { kind: m.kind, opacity, k: drawn, start: m.start };
+    if (m.kind === "river") {
+      const pts = m.points.map((p) => flatProject(camera, ...p));
+      const cum = cumulative(pts);
+      const L = cum.at(-1) * drawn;
+      const tip = pointAt(pts, cum, L);
+      return [
+        {
+          ...mark,
+          d: L > 0 ? polyline(pts, cum, 0, L) : "",
+          tip: drawn < 1 ? [tip.x, tip.y] : null,
+          widths: { core: 5 * k, keyline: 9 * k, glow: 16 * k },
+          // The glow breathes ±12 % at 0.5 Hz.
+          glow: 0.6 + 0.12 * Math.sin((2 * Math.PI * 0.5 * frame) / 30),
+        },
+      ];
+    }
+    if (m.kind === "route") {
+      const pts = arrowCurve(m.shape, camera);
+      const cum = cumulative(pts);
+      const L = cum.at(-1) * drawn;
+      const headW = 0.8 * W;
+      const dots = [];
+      for (let s = 6; s <= L - 3.6 * headW; s += 2.4 * W) {
+        const p = pointAt(pts, cum, s);
+        dots.push([+p.x.toFixed(1), +p.y.toFixed(1)]);
+      }
+      const tip = pointAt(pts, cum, Math.max(L, 1));
+      return [
+        {
+          ...mark,
+          ink: m.ink,
+          r: W / 2,
+          dots,
+          heads: [arrowHead(tip, headW)],
+          w: W,
+        },
+      ];
+    }
+    if (m.kind === "exchange") {
+      const lanes = [
+        [m.a, m.b],
+        [m.b, m.a],
+      ].map(([from, to]) => {
+        const pts = offsetPoints(
+          arrowCurve({ from, to, bend: DRAWN.exchangeBend }, camera),
+          DRAWN.exchangeGap / 2
+        );
+        const cum = cumulative(pts);
+        const w = 0.85 * W;
+        const s1 = 10 + (cum.at(-1) - 22) * drawn;
+        const lineEnd = s1 - 3.6 * w * 0.7;
+        return {
+          d: lineEnd > 10 ? polyline(pts, cum, 10, lineEnd) : "",
+          head: arrowHead(pointAt(pts, cum, s1), w),
+          w,
+        };
+      });
+      return [{ ...mark, ink: m.ink, lanes }];
+    }
+    const [x, y] = flatProject(camera, ...m.at);
+    if (m.kind === "circle") {
+      const { rx, ry, dx, overshoot } = DRAWN.circleBox;
+      const cx = x + (m.side === "left" ? -dx : dx);
+      const pts = [];
+      const span = 2 * Math.PI + overshoot;
+      for (let n = 0; n <= 64; n++) {
+        const u = n / 64;
+        const a = -2.2 + span * u;
+        const wob =
+          1 + 0.04 * Math.sin(3 * a + 1.3) + 0.025 * Math.sin(5 * a) - 0.05 * u;
+        pts.push([
+          cx + rx * wob * Math.cos(a),
+          y + ry * wob * Math.sin(a) - 4 * u,
+        ]);
+      }
+      const cum = cumulative(pts);
+      const L = cum.at(-1) * drawn;
+      return [
+        {
+          ...mark,
+          d: L > 0 ? polyline(pts, cum, 0, L) : "",
+          widths: { line: 7 * k, keyline: 13 * k },
+        },
+      ];
+    }
+    if (m.kind === "cross") {
+      const s = DRAWN.cross.half * k;
+      const strokes = [
+        [-1, -1, 1, 1, 0],
+        [1, -1, -1, 1, DRAWN.cross.apart],
+      ].flatMap(([ax, ay, bx, by, delay]) => {
+        const q = EASE.draw(
+          clamp01((frame - m.start - delay) / DRAWN.cross.stroke)
+        );
+        if (q <= 0) return [];
+        const [x1, y1] = [x + ax * s, y + ay * s];
+        return [[x1, y1, x1 + (bx - ax) * s * q, y1 + (by - ay) * s * q]];
+      });
+      return [{ ...mark, strokes, width: 9 * k }];
+    }
+    // A pin pops from its tip as a small mark, to 110 %.
+    const pop = popAt(frame - m.start, { small: true });
+    return [
+      {
+        ...mark,
+        x,
+        y,
+        scale: pop.scale * out.scale,
+        opacity: opacity * pop.opacity,
+      },
+    ];
+  });
+}
+
+// 1.14.0: a reading steps back to 35 % from its `dim` frame.
+const dimmed = (frame, dim) =>
+  dim === undefined || frame < dim
+    ? 1
+    : 1 - (1 - FIGURES.dim) * ramp(frame - dim, FIGURES.dimFrames);
+
 // The marks of one card at a frame, faded by `fade` (the card change).
 function cardMarks(cp, frame, camera, proportion, fade, names) {
   const at = (p) => flatProject(camera, ...p);
+  // 1.13.0: around a whip zoom, a mark's own visibility.
+  const shown = (start) => whipShown(cp, frame, start);
   const arrows = cp.arrows.flatMap((a) => {
     if (frame < a.start) return [];
     const pts = arrowCurve(a, camera);
     const cum = cumulative(pts);
     const L = cum.at(-1);
-    const k = drawEase(clamp01((frame - a.start) / a.dur));
+    const k = EASE.draw(clamp01((frame - a.start) / a.dur));
     const traced =
       a.trace !== undefined && frame >= a.trace
         ? ramp(frame - a.trace, MAP_TIMING.trace)
         : 0;
     const out =
       a.out !== undefined && frame >= a.out
-        ? ramp(frame - a.out, MAP_TIMING.out, leave)
+        ? ramp(frame - a.out, MAP_TIMING.out, EASE.exit)
         : 0;
     const opacity =
       Math.min(1, (frame - a.start) / MAP_TIMING.arrowFade) *
       (1 - (1 - MAP_TIMING.traceTo) * traced) *
       (1 - out) *
-      fade;
+      dimmed(frame, a.dim) *
+      fade *
+      shown(a.start);
     if (opacity <= 0 && frame > a.start) return [];
     const w = proportion.w;
     const Lh = 3.6 * w;
-    const [lo, hi] = [8, L - 14];
+    // A reading's arrow stops where its head is 12 px clear of its place's
+    // dot and name (1.14.0): several readings meet on one named place.
+    const lo = 8;
+    let hi = L - 14;
+    if (a.place) {
+      const [px, py] = flatProject(camera, ...a.place.at);
+      const wn = estimateWidth(a.place.name, 28, MARKS.styles.place.ratio);
+      const clear = [
+        { x: px - 8, y: py - 8, w: 16, h: 16 },
+        {
+          x: a.place.side === "left" ? px - 14 - wn : px + 14,
+          y: py - 16,
+          w: wn,
+          h: 32,
+        },
+      ];
+      const near = (h) => {
+        const xs = h.d.match(/-?[\d.]+/gu).map(Number);
+        const [hx, hy] = [
+          xs.filter((_, n) => !(n % 2)),
+          xs.filter((_, n) => n % 2),
+        ];
+        const b = {
+          x: Math.min(...hx),
+          y: Math.min(...hy),
+          w: Math.max(...hx) - Math.min(...hx),
+          h: Math.max(...hy) - Math.min(...hy),
+        };
+        return clear.some(
+          (c) =>
+            b.x - 12 < c.x + c.w &&
+            c.x - 12 < b.x + b.w &&
+            b.y - 12 < c.y + c.h &&
+            c.y - 12 < b.y + b.h
+        );
+      };
+      while (hi > lo + 40 && near(arrowHead(pointAt(pts, cum, hi), w))) hi -= 3;
+    }
     let [s0, s1] = [lo, lo + (hi - lo) * k];
     if (a.both) {
       const [mid, half] = [(lo + hi) / 2, ((hi - lo) / 2) * k];
@@ -1255,8 +1772,10 @@ function cardMarks(cp, frame, camera, proportion, fade, names) {
         w,
         k,
         opacity,
-        // Once it starts to trace or leave, it no longer counts as full.
+        // Once it starts to trace or leave, it no longer counts as full;
+        // a pin's arrow belongs to its reading (1.14.0), not to the routes.
         full:
+          !a.pin &&
           !(a.trace !== undefined && frame >= a.trace) &&
           !(a.out !== undefined && frame >= a.out),
         d: lineB > lineA ? polyline(pts, cum, lineA, lineB) : "",
@@ -1268,9 +1787,11 @@ function cardMarks(cp, frame, camera, proportion, fade, names) {
   const drawings = cp.drawings.flatMap((d) => {
     if (frame < d.start) return [];
     const inOut =
-      ramp(frame - d.start, MAP_TIMING.drawing, enter) *
-      (frame >= d.end ? 1 - ramp(frame - d.end, MAP_TIMING.drawing, leave) : 1);
-    const opacity = inOut * fade;
+      ramp(frame - d.start, MAP_TIMING.drawing, EASE.enter) *
+      (frame >= d.end
+        ? 1 - ramp(frame - d.end, MAP_TIMING.drawing, EASE.exit)
+        : 1);
+    const opacity = inOut * fade * shown(d.start);
     if (opacity <= 0) return [];
     const [x, y] = at(d.at);
     const h = proportion.h;
@@ -1284,26 +1805,24 @@ function cardMarks(cp, frame, camera, proportion, fade, names) {
         opacity,
         rise:
           MAP_TIMING.rise *
-          (1 - ramp(frame - d.start, MAP_TIMING.drawing, enter)),
+          (1 - ramp(frame - d.start, MAP_TIMING.drawing, EASE.enter)),
         label: d.label,
+        // 1.13.0: the label pops under its drawing.
         labelOpacity:
-          opacity *
-          ramp(
-            frame - d.start - MAP_TIMING.labelDelay,
-            MAP_TIMING.label,
-            enter
-          ),
+          opacity * popAt(frame - d.start - MAP_TIMING.labelDelay).opacity,
+        labelScale: popAt(frame - d.start - MAP_TIMING.labelDelay).scale,
       },
     ];
   });
   const words = cp.words.flatMap((w) => {
     if (frame < w.start) return [];
-    const opacity =
-      ramp(frame - w.start, MAP_TIMING.word, enter) *
-      (frame >= w.end ? 1 - ramp(frame - w.end, MAP_TIMING.word, leave) : 1) *
-      fade;
+    // 1.13.0: a word pops on its word and leaves by the exit.
+    const pop = popExit(frame, w.start, w.end);
+    const opacity = pop.opacity * dimmed(frame, w.dim) * fade * shown(w.start);
     if (opacity <= 0) return [];
-    const [x, y] = at(w.at);
+    const [x, y0] = at(w.at);
+    // Two recap texts named at one place stand one under the other.
+    const y = y0 + (w.offset ?? 0);
     return [
       {
         text: w.text,
@@ -1314,6 +1833,7 @@ function cardMarks(cp, frame, camera, proportion, fade, names) {
         x,
         y,
         opacity,
+        scale: pop.scale,
         // Leaving: a third word made it go, or its own `until` came.
         leaving: frame >= w.end,
       },
@@ -1321,7 +1841,11 @@ function cardMarks(cp, frame, camera, proportion, fade, names) {
   });
   const places = cp.places.flatMap((p) => {
     if (frame < p.start) return [];
-    const opacity = ramp(frame - p.start, MAP_TIMING.place, enter) * fade;
+    // 1.13.0: the dot pops as a small mark, to 110 %, its name to 106 %
+    // from the side of its point.
+    const dot = popAt(frame - p.start, { small: true });
+    const label = popAt(frame - p.start);
+    const opacity = dot.opacity * fade * shown(p.start);
     const [x, y] = at(p.at);
     return [
       {
@@ -1330,7 +1854,9 @@ function cardMarks(cp, frame, camera, proportion, fade, names) {
         x,
         y,
         opacity,
-        nameOpacity: opacity * names,
+        scale: dot.scale,
+        nameOpacity: label.opacity * fade * names * shown(p.start),
+        nameScale: label.scale,
       },
     ];
   });
@@ -1338,8 +1864,9 @@ function cardMarks(cp, frame, camera, proportion, fade, names) {
   if (cp.rename) {
     const r = cp.rename;
     const s = clamp01((frame - r.start) / MAP_TIMING.rename);
-    const h = s * s * (3 - 2 * s);
+    const h = EASE.move(s);
     const [x, y] = at(r.at);
+    const fadeR = fade * shown(cp.start);
     rename = {
       from: {
         text: r.from,
@@ -1347,7 +1874,7 @@ function cardMarks(cp, frame, camera, proportion, fade, names) {
         y,
         dy: -118 * h + 0,
         scale: 1 - 0.38 * h,
-        opacity: (1 - 0.15 * h) * fade,
+        opacity: (1 - 0.15 * h) * fadeR,
       },
       to: {
         text: r.to,
@@ -1356,8 +1883,11 @@ function cardMarks(cp, frame, camera, proportion, fade, names) {
         dy: 0,
         scale: 1,
         opacity:
-          ramp(frame - r.start - MAP_TIMING.renameNew, MAP_TIMING.word, enter) *
-          fade,
+          ramp(
+            frame - r.start - MAP_TIMING.renameNew,
+            MAP_TIMING.word,
+            EASE.enter
+          ) * fadeR,
       },
       dates: {
         text: r.dates,
@@ -1369,12 +1899,17 @@ function cardMarks(cp, frame, camera, proportion, fade, names) {
           ramp(
             frame - r.start - MAP_TIMING.renameDates,
             MAP_TIMING.word,
-            enter
-          ) * fade,
+            EASE.enter
+          ) * fadeR,
       },
     };
   }
-  return { arrows, drawings, words, places, rename };
+  const drawn = drawnMarks(cp, frame, camera, proportion, fade, shown);
+  // 1.14.0: the figures drawn on the map.
+  const figures = cp.figures
+    ? [figuresAt(cp.figures, frame, camera, fade, shown)]
+    : [];
+  return { arrows, drawings, words, places, rename, drawn, figures };
 }
 
 // The texts on the map at a frame, with their estimated boxes: what the
@@ -1417,7 +1952,14 @@ function mapTexts(names, marks) {
       ),
     });
   for (const w of marks.words) {
-    const [bw, bh] = styleBox(w.kind === "date" ? "date" : "phrase", w.lines);
+    const [bw, bh] = styleBox(
+      w.kind === "century"
+        ? "dates"
+        : w.kind === "date" || w.kind === "country"
+          ? w.kind
+          : "phrase",
+      w.lines
+    );
     texts.push({
       text: w.text,
       kind: "word",
@@ -1443,6 +1985,9 @@ function mapTexts(names, marks) {
         box: textBox(t.x, t.y + t.dy, bw * t.scale, bh * t.scale),
       });
     }
+  // 1.14.0: letterings, stamps, the glasses' ages and names, a name brought
+  // into its frame, a word that travels.
+  for (const f of marks.figures ?? []) texts.push(...figureTexts(f));
   return texts;
 }
 
@@ -1460,16 +2005,20 @@ function animatedRunState(seq, r, frame) {
   const prev = k ? plan.cards[prevCard] : null;
   const t = prev ? frame - changeStart(i) : Infinity;
   const changing = !!prev && !sameCamera(prev.endCamera, cp.view);
+  // 1.13.0: the continuous push of the card's shot, multiplied with every
+  // camera move; a change of view blends the two shots' pushes.
+  const shot = plan.shots[i];
   let camera;
   let moving;
   if (changing && t < SEQUENCE_TIMING.move) {
     camera = moveCamera(
-      prev.endCamera,
-      cp.view,
-      enter(t / SEQUENCE_TIMING.move)
+      cameraOfCard(plan, prevCard, frame).camera,
+      pushedCamera(cp.view, shot, frame),
+      EASE.enter(t / SEQUENCE_TIMING.move)
     );
     moving = true;
-  } else ({ camera, moving } = cardCamera(cp, frame));
+  } else ({ camera, moving } = cameraOfCard(plan, i, frame));
+  const push = camera.radius / cardCamera(cp, frame).camera.radius;
   const before = prev ? plan.views[prevCard] : null;
   const leaving = before
     ? before.files.filter(
@@ -1489,15 +2038,19 @@ function animatedRunState(seq, r, frame) {
           : 1
         : null;
     const st = areaState(plan, f, frame, base);
-    const opacity = leaving.includes(f)
-      ? st.opacity * (1 - leave(t / SEQUENCE_TIMING.move))
-      : st.opacity;
+    const opacity =
+      (leaving.includes(f)
+        ? st.opacity * (1 - EASE.exit(t / SEQUENCE_TIMING.move))
+        : st.opacity) *
+      // 1.13.0: an area on before a whip leaves with the other marks.
+      whipShown(cp, frame, plan.entries[f]?.start ?? -Infinity);
     return {
       file: f,
       id: a.id,
       opacity,
       lit: st.lit,
       inks: st.inks,
+      swell: st.swell,
       box: screenBox(a, camera),
     };
   });
@@ -1511,10 +2064,10 @@ function animatedRunState(seq, r, frame) {
   const swap = !changing
     ? 1
     : t <= SEQUENCE_TIMING.nameSwap
-      ? 1 - leave(t / SEQUENCE_TIMING.nameSwap)
+      ? 1 - EASE.exit(t / SEQUENCE_TIMING.nameSwap)
       : t < SEQUENCE_TIMING.move
         ? 0
-        : enter((t - SEQUENCE_TIMING.move) / SEQUENCE_TIMING.nameSwap);
+        : EASE.enter((t - SEQUENCE_TIMING.move) / SEQUENCE_TIMING.nameSwap);
   const { stop, factor } =
     changing && t < SEQUENCE_TIMING.move + SEQUENCE_TIMING.nameSwap
       ? { stop: 0, factor: 1 }
@@ -1527,7 +2080,17 @@ function animatedRunState(seq, r, frame) {
   const names = source.names.flatMap((n) => {
     const a = areas.find((x) => x.file === n.file);
     if (!a) return [];
-    const own = clamp01((a.opacity - 0.6) / 0.4) * areaStyle(a.lit).name;
+    // 1.13.0: while its area enters, a name pops once the area is at 0.6;
+    // then it follows its area's state as in 1.11.0.
+    const entry = plan.entries[n.file]?.start;
+    const pop =
+      entry !== undefined && frame < entry + MAP_TIMING.enter
+        ? popAt(frame - entry - NAME_DELAY)
+        : { opacity: clamp01((a.opacity - 0.6) / 0.4), scale: 1 };
+    const own =
+      pop.opacity *
+      areaStyle(a.lit).name *
+      whipShown(cp, frame, entry ?? -Infinity);
     let box = n.box;
     if (source.camera !== camera) {
       const [x, y] = flatProject(camera, ...n.anchor);
@@ -1542,11 +2105,12 @@ function animatedRunState(seq, r, frame) {
         ink: a.inks.at(-1)?.ink ?? n.ink,
         box,
         opacity: own * swap * factor * (globeOn ? 0 : 1),
+        scale: pop.scale,
       },
     ];
   });
   // The card's marks; the outgoing card's fade out during the change.
-  const fadeIn = prev ? ramp(t, CROSS_FADE, enter) : 1;
+  const fadeIn = prev ? ramp(t, CROSS_FADE, EASE.enter) : 1;
   const marks = cardMarks(cp, frame, camera, proportion, fadeIn, swap * factor);
   if (prev && t < CROSS_FADE) {
     const old = cardMarks(
@@ -1557,20 +2121,56 @@ function animatedRunState(seq, r, frame) {
       1 - t / CROSS_FADE,
       0
     );
-    for (const key of ["arrows", "drawings", "words", "places"])
+    for (const key of [
+      "arrows",
+      "drawings",
+      "words",
+      "places",
+      "drawn",
+      "figures",
+    ])
       marks[key] = [...old[key], ...marks[key]];
     marks.rename ??= old.rename;
   }
+  const whipping = cp.moves.some(
+    (m) => m.whip && frame > m.start && frame <= m.end
+  );
+  // 1.13.0: the card's flags, unrolled from the hoist, and the era map.
+  const flagsOf = (card, fade) =>
+    card.flags.flatMap((f) => {
+      const unroll = flagUnroll(f, frame) * fade;
+      return unroll > 0 ? [{ file: f.file, flag: f.flag, unroll }] : [];
+    });
+  const flags = [
+    ...(prev && t < CROSS_FADE ? flagsOf(prev, 1 - t / CROSS_FADE) : []),
+    ...flagsOf(cp, prev ? ramp(t, CROSS_FADE, EASE.enter) : 1),
+  ];
+  // A flag replaces its area's fill, under its outline.
+  for (const a of areas)
+    a.flag = Math.max(
+      0,
+      ...flags.filter((f) => f.file === a.file).map((f) => f.unroll)
+    );
+  const era = seq.eras ? eraAt(seq.eras, frame) : null;
   const keys = {};
   for (const a of areas) keys[a.file] = a.opacity;
   return {
+    ...(flags.length && {
+      flags: flags.map((f) => ({
+        ...f,
+        opacity: era?.inks ? FLAGS.paperOpacity : FLAGS.opacity,
+        // The cloth's wave and its moving light, on the video's clock.
+        t: frame / FPS,
+      })),
+    }),
+    ...(era && { paper: era.paper, paperInks: era.inks }),
+    ...(cp.recap && { desat: RECAP.desat }),
     run: r,
     camera,
     grade: cp.globe ? globeGrade(frame) : 1,
     moving,
-    zoom: run.zoomOff
-      ? 1
-      : 1 + (ZOOM * (frame - run.from)) / (run.to - run.from),
+    zoom: 1,
+    push,
     scale: (camera.radius * 2 * Math.PI) / plan.imageryWidth,
     areas,
     names,
@@ -1583,6 +2183,14 @@ function animatedRunState(seq, r, frame) {
     // The opener's credit: the imagery alone during the globe, then the
     // 1.4.1 line from the first mark on.
     credit: cp.globe && frame < cp.firstMark ? "globe" : "map",
+    // 1.13.0: the whip's blur, from the camera's speed on screen.
+    ...(whipping && {
+      whip: whipBlur(
+        cameraOfCard(plan, i, frame - 1).camera,
+        camera,
+        flatProject
+      ),
+    }),
   };
 }
 
@@ -1615,11 +2223,16 @@ function checkAnimatedCard(seq, i) {
       fail(`${what}: ${map.marks.drawings.length} dessins : trois au plus`);
     if (map.marks.arrows.filter((a) => a.full).length > MARKS.maxArrowsFull)
       fail(`${what}: Trois flèches au plus à pleine intensité`);
+    // 1.13.0: three drawn marks at most besides areas and arrows.
+    if (map.marks.drawn.length > DRAWN.maxOnScreen)
+      fail(
+        `${what}: Trop de traits à la fois (${map.marks.drawn.map((m) => m.kind).join(", ")}, image ${f})`
+      );
     if (map.moving) continue;
-    for (const t of shown)
+    for (const t of shown.filter((x) => !x.moving))
       if (!inside(t.box, MARKS.band))
         fail(
-          `${what}: « ${t.text} » hors de la bande de la carte (y ${Math.round(t.box.y)} à ${Math.round(t.box.y + t.box.h)})`
+          `${what}: « ${t.text} » hors de la bande de la carte (x ${Math.round(t.box.x)} à ${Math.round(t.box.x + t.box.w)}, y ${Math.round(t.box.y)} à ${Math.round(t.box.y + t.box.h)}, image ${f})`
         );
     for (const d of map.marks.drawings) {
       const box = {
@@ -1630,6 +2243,18 @@ function checkAnimatedCard(seq, i) {
       };
       if (!inside(box, MARKS.band))
         fail(`${what}: le dessin ${d.kind} hors de la bande de la carte`);
+    }
+    // 1.14.0: units in the map band, every letter of a lettering on its
+    // path.
+    for (const fig of map.marks.figures) {
+      for (const u of fig.units)
+        if (!inside(unitBox(u.kind, u.x, u.y), MARKS.band))
+          fail(
+            `${what}: une unité ${u.id} hors de la bande de la carte (image ${f})`
+          );
+      for (const l of fig.letterings)
+        if (!letteringFits(l))
+          fail(`${what}: « ${l.text} » déborde de son tracé`);
     }
   }
 }
@@ -1643,8 +2268,16 @@ const bare = (unit) => unit.replace(/^[\p{P}\s]+|[\p{P}\s]+$/gu, "");
 function factSpan(seq, card, say) {
   const words = seq.chunks
     .filter((c) => c.card === card)
+    // A unit written with a space (« 2 000 ») is read as its words, each
+    // with the unit's times, so a fact can name it as the subtitle shows it.
     .flatMap((c) =>
-      c.words.map((w, n) => ({ ...w, unit: chunkUnits(c.text)[n] }))
+      c.words.flatMap((w, n) =>
+        chunkUnits(c.text)
+          [n].split(/[\s  ]+/u)
+          // « Éthiopie » keeps its word, not its guillemets.
+          .filter((unit, k, all) => bare(unit) || all.length === 1)
+          .map((unit) => ({ ...w, unit }))
+      )
     );
   const wanted = say.split(/\s+/u).map((w) => norm(bare(w)));
   for (let a = 0; a + wanted.length <= words.length; a++)
@@ -1662,9 +2295,12 @@ function factSpan(seq, card, say) {
 const onScreen = (b) =>
   b.x < 1080 && b.x + b.w > 0 && b.y < 1920 && b.y + b.h > 0;
 const pointOn = ([x, y]) => onScreen({ x, y, w: 0, h: 0 });
-function markOn(map, mark) {
+function markOn(map, mark, head) {
   const [kind, ...rest] = mark.split(":");
   const value = rest.join(":");
+  // 1.14.0: the figure head and the figures on the map.
+  if (FIGURE_MARKS.includes(kind))
+    return figureMarkOn(map.marks.figures, head, mark);
   if (kind === "area")
     return map.areas.some(
       (a) => a.id === value && a.opacity >= 0.6 && onScreen(a.box)
@@ -1696,7 +2332,9 @@ export function silentCheck(seq) {
       let first = null;
       for (let f = from; f <= to; f += MAP_TIMING.silentStep) {
         total++;
-        if (fact.shows.some((m) => markOn(mapRunState(seq, r, f), m))) {
+        const map = mapRunState(seq, r, f);
+        const head = cp.figures ? figureHeadAt(cp.figures, f) : null;
+        if (fact.shows.some((m) => markOn(map, m, head))) {
           covered++;
           first ??= f;
         }

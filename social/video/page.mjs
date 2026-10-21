@@ -30,12 +30,29 @@ precision highp float;
 uniform vec2 centre; uniform float radius; uniform vec2 view;
 uniform sampler2D world; uniform sampler2D region; uniform vec4 bounds;
 uniform float grade, dim, plain;
+// Cartes 1.13.0, the series video's era map: paper (0 to 1) re-inks the
+// imagery as a printed map; desat (0 to 1) takes its colour away (the recap
+// card). Both are 0 everywhere else, which leaves every pixel as it was.
+uniform float paper, desat;
 out vec4 colour;
 const float PI = 3.141592653589793;
 ${END_GLSL}
 const vec3 SPACE = vec3(7.0, 6.0, 5.0) / 255.0;
 const vec3 ATMOS = vec3(143.0, 184.0, 204.0) / 255.0;
 const vec3 WARM = vec3(255.0, 238.0, 221.0) / 255.0;
+// The atlas's map-land, darkened towards its relief where the imagery is
+// dark and towards an olive where it is green (series.md « 5 »). The sea is
+// painted over it from Natural Earth's coast by the page.
+const vec3 PAPER_LAND = vec3(239.0, 230.0, 214.0) / 255.0;
+const vec3 PAPER_RELIEF = vec3(214.0, 196.0, 160.0) / 255.0;
+const vec3 PAPER_OLIVE = vec3(205.0, 198.0, 156.0) / 255.0;
+vec3 papered(vec3 t) {
+  float lum = dot(t, vec3(0.2126, 0.7152, 0.0722));
+  float green = clamp((t.g - t.r) * 5.0 + 0.2, 0.0, 1.0);
+  vec3 land = mix(PAPER_LAND, PAPER_RELIEF, clamp((0.62 - lum) * 2.2, 0.0, 1.0));
+  land = mix(land, PAPER_OLIVE, green * 0.75);
+  return land * (0.94 + 0.12 * smoothstep(0.15, 0.7, lum));
+}
 vec3 graded(vec3 c) {
   float sat = mix(0.85, 0.70, grade), expo = mix(0.90, 0.76, grade);
   float con = mix(1.06, 0.96, grade), warm = mix(0.35, 0.45, grade);
@@ -66,10 +83,13 @@ void main() {
   vec3 inRegion = texture(region, vec2((lonD - bounds.x) / (bounds.y - bounds.x), (bounds.w - latD) / (bounds.w - bounds.z))).rgb;
   vec3 inWorld = texture(world, vec2((lonD + 180.0) / 360.0, (90.0 - latD) / 180.0)).rgb;
   if (rho < 1.0) {
-    vec3 c = lonD >= bounds.x && lonD <= bounds.y && latD >= bounds.z && latD <= bounds.w ? inRegion : inWorld;
-    c = graded(c) * (0.62 + 0.38 * sqrt(cc));
+    vec3 t = lonD >= bounds.x && lonD <= bounds.y && latD >= bounds.z && latD <= bounds.w ? inRegion : inWorld;
+    vec3 c = graded(t);
+    c = mix(c, vec3(dot(c, vec3(0.2126, 0.7152, 0.0722))), desat);
+    c = c * (0.62 + 0.38 * sqrt(cc));
     float haze = 0.28 * pow(1.0 - cc, 3.0);
     land = c * (1.0 - haze) + ATMOS * haze * mix(0.55, 0.4, grade);
+    land = mix(land, papered(t), paper);
   }
   // Antialiased limb: blend over one pixel instead of a hard edge.
   vec3 c = mix(land, space, smoothstep(-0.5, 0.5, d));

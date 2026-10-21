@@ -442,6 +442,207 @@ export async function readChadGrid(assets) {
   };
 }
 
+// Cartes 1.13.0, the era map's coast (series.md « 5. The era map »): the
+// present-day coastline, as the series video's era map engraves it, taken
+// from Natural Earth's countries rather than from the imagery's colours.
+// Natural Earth's countries share their border vertices exactly, so an edge
+// that belongs to one country only is a coast (the complement of
+// series-map.mjs's sharedBorders). `land` is every polygon ring touching
+// `bounds`, for the sea to be painted around. Edges are joined into lines.
+// Islets and lakes smaller than this in both directions (degrees, about
+// 90 px on a 1336 km view) are left out: engraved, they read as targets.
+export const ISLET = 0.9;
+const small = (ring) => {
+  const lons = ring.map((p) => p[0]);
+  const lats = ring.map((p) => p[1]);
+  return (
+    Math.max(...lons) - Math.min(...lons) < ISLET &&
+    Math.max(...lats) - Math.min(...lats) < ISLET
+  );
+};
+export function coastOf(world, [west, east, south, north]) {
+  const inside = ([lon, lat]) =>
+    lon >= west && lon <= east && lat >= south && lat <= north;
+  const polygons = (g) =>
+    g.type === "Polygon"
+      ? [g.coordinates]
+      : g.type === "MultiPolygon"
+        ? g.coordinates
+        : [];
+  const owners = new Map();
+  const point = new Map();
+  const land = [];
+  const key = (p) => {
+    const k = `${p[0]},${p[1]}`;
+    point.set(k, p);
+    return k;
+  };
+  for (const f of world.features)
+    for (const polygon of polygons(f.geometry))
+      for (const ring of polygon) {
+        if (!ring.some(inside) || small(ring)) continue;
+        land.push(ring);
+        for (let i = 0; i + 1 < ring.length; i++) {
+          const [a, b] = [key(ring[i]), key(ring[i + 1])];
+          if (a === b) continue;
+          const edge = a < b ? `${a}|${b}` : `${b}|${a}`;
+          owners.set(edge, (owners.get(edge) ?? 0) + 1);
+        }
+      }
+  const next = new Map();
+  for (const [edge, n] of owners) {
+    if (n !== 1) continue;
+    const [a, b] = edge.split("|");
+    if (!inside(point.get(a)) && !inside(point.get(b))) continue;
+    for (const [p, q] of [
+      [a, b],
+      [b, a],
+    ]) {
+      if (!next.has(p)) next.set(p, []);
+      next.get(p).push(q);
+    }
+  }
+  const used = new Set();
+  const edgeKey = (a, b) => (a < b ? `${a}|${b}` : `${b}|${a}`);
+  const lines = [];
+  const walk = (start) => {
+    for (const first of next.get(start)) {
+      if (used.has(edgeKey(start, first))) continue;
+      const line = [start];
+      let [from, to] = [start, first];
+      for (;;) {
+        used.add(edgeKey(from, to));
+        line.push(to);
+        if (next.get(to).length !== 2) break;
+        const after = next.get(to).find((n) => n !== from);
+        if (used.has(edgeKey(to, after))) break;
+        [from, to] = [to, after];
+      }
+      lines.push(line.map((k) => point.get(k)));
+    }
+  };
+  const nodes = [...next.keys()].sort();
+  nodes.filter((n) => next.get(n).length !== 2).forEach(walk);
+  nodes.forEach(walk);
+  return { lines, land };
+}
+
+// The era map strokes its coast up to 81.5 px wide, several times, under
+// masks; on SwiftShader each vertex costs whether it lands on screen or not,
+// and a sequence's coast spans every view of the sequence (a frame took 20 to
+// 40 s). So each frame draws only what can reach `frame` ([x0, y0, x1, y1],
+// projected pixels): a segment whose box lies farther than `margin` past one
+// side is dropped and the line is cut there. With `margin` past the farthest
+// a stroke reaches from its line (miter joins included), no dropped segment
+// nor any new cut end paints a pixel of the frame. Both functions are written with no outside reference: the
+// page runs them as they are (series-page.mjs).
+export function coastRunsInFrame(points, frame, margin) {
+  const [x0, y0, x1, y1] = frame;
+  const runs = [];
+  let run = null;
+  for (let i = 1; i < points.length; i++) {
+    const [a, b] = [points[i - 1], points[i]];
+    const near = !(
+      Math.max(a[0], b[0]) < x0 - margin ||
+      Math.min(a[0], b[0]) > x1 + margin ||
+      Math.max(a[1], b[1]) < y0 - margin ||
+      Math.min(a[1], b[1]) > y1 + margin
+    );
+    if (!near) run = null;
+    else if (run) run.push(b);
+    else runs.push((run = [a, b]));
+  }
+  return runs;
+}
+// A land ring is filled whole, so it is kept or dropped whole.
+export function landRingInFrame(points, frame, margin) {
+  const [x0, y0, x1, y1] = frame;
+  const xs = points.map((p) => p[0]);
+  const ys = points.map((p) => p[1]);
+  return !(
+    Math.max(...xs) < x0 - margin ||
+    Math.min(...xs) > x1 + margin ||
+    Math.max(...ys) < y0 - margin ||
+    Math.min(...ys) > y1 + margin
+  );
+}
+
+// The era map projects orthographically and never checks the hemisphere, so
+// a coast behind the globe came out mirrored inside it (on a whole-globe
+// view, more than half the coast's points, and half the frame's cost).
+// Operator, 21 October 2026: the far side is not drawn. These take
+// [lon, lat] points and the camera's centre, and return near-side points
+// unchanged (a view with nothing behind it draws the very same path). A
+// limb crossing is found on the chord between two unit vectors, where their
+// dot with the view direction is 0: that point projects onto the limb.
+// Written with no outside reference: the page runs them as they are.
+export function nearSideRuns(points, camera) {
+  const rad = Math.PI / 180;
+  const unit = ([lon, lat]) => [
+    Math.cos(lat * rad) * Math.cos(lon * rad),
+    Math.cos(lat * rad) * Math.sin(lon * rad),
+    Math.sin(lat * rad),
+  ];
+  const view = unit([camera.lon, camera.lat]);
+  const facing = (u) => u[0] * view[0] + u[1] * view[1] + u[2] * view[2];
+  const limb = (ua, ub, da, db) => {
+    const t = da / (da - db);
+    const v = ua.map((c, k) => c + t * (ub[k] - c));
+    return [
+      Math.atan2(v[1], v[0]) / rad,
+      Math.atan2(v[2], Math.hypot(v[0], v[1])) / rad,
+    ];
+  };
+  const runs = [];
+  let run = null;
+  let ua = unit(points[0]);
+  let da = facing(ua);
+  if (da >= 0) runs.push((run = [points[0]]));
+  for (let i = 1; i < points.length; i++) {
+    const ub = unit(points[i]);
+    const db = facing(ub);
+    if (da >= 0 && db >= 0) run.push(points[i]);
+    else if (da >= 0) {
+      run.push(limb(ua, ub, da, db));
+      run = null;
+    } else if (db >= 0) runs.push((run = [limb(ua, ub, da, db), points[i]]));
+    [ua, da] = [ub, db];
+  }
+  return runs.filter((r) => r.length > 1);
+}
+// A land ring is filled, so its far points are not dropped (the chord across
+// the gap would fill the wrong area): each moves straight onto the limb, the
+// point of the limb it hides behind, after the crossing where the ring went
+// behind. A ring with no point in front is dropped (null).
+export function nearSideRing(points, camera) {
+  const rad = Math.PI / 180;
+  const unit = ([lon, lat]) => [
+    Math.cos(lat * rad) * Math.cos(lon * rad),
+    Math.cos(lat * rad) * Math.sin(lon * rad),
+    Math.sin(lat * rad),
+  ];
+  const view = unit([camera.lon, camera.lat]);
+  const facing = (u) => u[0] * view[0] + u[1] * view[1] + u[2] * view[2];
+  const lonLat = (v) => [
+    Math.atan2(v[1], v[0]) / rad,
+    Math.atan2(v[2], Math.hypot(v[0], v[1])) / rad,
+  ];
+  const units = points.map(unit);
+  const dots = units.map(facing);
+  if (!dots.some((d) => d >= 0)) return null;
+  const ring = [];
+  units.forEach((ub, i) => {
+    const db = dots[i];
+    if (i > 0 && dots[i - 1] >= 0 !== db >= 0) {
+      const [ua, da] = [units[i - 1], dots[i - 1]];
+      const t = da / (da - db);
+      ring.push(lonLat(ua.map((c, k) => c + t * (ub[k] - c))));
+    }
+    ring.push(db >= 0 ? points[i] : lonLat(ub.map((c, k) => c - db * view[k])));
+  });
+  return ring;
+}
+
 export const OUTPUT = new URL("./data/megachad-325m.geojson", import.meta.url);
 
 export async function buildMegaChad(assets, generated) {
