@@ -325,6 +325,17 @@ jobs:
 
           cd /srv/ethniafrica
 
+          # Without the Upstash pair the API limiter fails closed in production: every
+          # /api/v2 call answers 500 while the pages still render. The pair lives in the
+          # host's .env, so refuse before touching the running release. Only the names
+          # are reported, never the values.
+          for UPSTASH_VAR in UPSTASH_REDIS_REST_URL UPSTASH_REDIS_REST_TOKEN; do
+            if ! grep -Eq "^${UPSTASH_VAR}=[\"']?[^\"'[:space:]]" .env; then
+              echo "$UPSTASH_VAR is unset or empty in the host .env — refusing to deploy"
+              exit 1
+            fi
+          done
+
           # A detached checkout of the exact released tag. Not `git pull`: that would
           # deploy whatever main has drifted to since the Release was cut, which is the
           # opposite of what publishing a Release is supposed to mean.
@@ -408,6 +419,19 @@ jobs:
             }
           }
           console.log("French-only locale smoke passed");
+
+          // A missing limiter configuration makes every /api/v2 call answer 500
+          // while the pages above still pass.
+          const apiResponse = await fetch(
+            "http://127.0.0.1:3000/api/v2/countries?perPage=1"
+          );
+          const apiBody = await apiResponse.text();
+          if (apiResponse.status !== 200 || apiBody.trim() === "") {
+            throw new Error(
+              `/api/v2/countries expected 200 with a body, got ${apiResponse.status}`
+            );
+          }
+          console.log("API smoke passed");
           NODE
           REMOTE
 
