@@ -118,30 +118,30 @@ describe("People Service", () => {
 
   describe("getPeopleNameIndex", () => {
     /**
-     * A PostgREST builder stub that resolves on `range()` — the index is read
-     * with an explicit window, so a stub resolving on `select()` would never
-     * be awaited by the code under test.
+     * A PostgREST builder stub that honours `range()` the way the server does,
+     * including its silent cap on rows per answer.
      */
-    function indexTable(response: {
-      data?: Array<Record<string, unknown>> | null;
-      error?: { message: string } | null;
-    }) {
-      type RangeRead = (
-        start: number,
-        end: number
-      ) => Promise<{
-        data: Array<Record<string, unknown>> | null;
-        error: { message: string } | null;
-      }>;
-      const range = vi.fn<RangeRead>(() =>
+    function indexTable(
+      response: {
+        data?: Array<Record<string, unknown>> | null;
+        error?: { message: string } | null;
+      },
+      serverCap = 1000
+    ) {
+      const rows = response.data ?? [];
+      const range = vi.fn((start: number, end: number) =>
         Promise.resolve({
-          data: response.data ?? null,
+          data: response.error
+            ? null
+            : rows.slice(start, Math.min(end + 1, start + serverCap)),
           error: response.error ?? null,
         })
       );
       const select = vi.fn();
-      const builder = { select, range };
+      const order = vi.fn();
+      const builder = { select, order, range };
       select.mockReturnValue(builder);
+      order.mockReturnValue(builder);
       return builder;
     }
 
@@ -182,18 +182,17 @@ describe("People Service", () => {
     });
 
     // @req REQ-150
-    it("reads a window wider than the silent 1000-row cap", async () => {
-      const table = indexTable({ data: [] });
-      fromMock.mockReturnValue(table);
+    it("returns every people when the corpus exceeds the 1000-row server cap", async () => {
+      const everyPeople = Array.from({ length: 2300 }, (_, i) => ({
+        id: `PPL_${i}`,
+        name_main: `Name ${i}`,
+      }));
+      fromMock.mockReturnValue(indexTable({ data: everyPeople }));
 
-      await getPeopleNameIndex();
+      const index = await getPeopleNameIndex();
 
-      // Without an explicit range PostgREST truncates at 1000 rows and reports
-      // no error; the corpus holds 776 peoples today.
-      expect(table.range).toHaveBeenCalledTimes(1);
-      const [start, end] = table.range.mock.calls[0];
-      expect(start).toBe(0);
-      expect(end).toBeGreaterThan(1000);
+      expect(index).toHaveLength(2300);
+      expect(index[2299]).toEqual({ id: "PPL_2299", nameMain: "Name 2299" });
     });
 
     // @req REQ-150
