@@ -108,9 +108,12 @@ test(
             .raw()
             .toBuffer()
         );
-      const { most, flashes } = flashesPerSecond(frames, 1080, 1920);
+      // A turn changes the ground (satellite to paper or back): the flash
+      // is one transition of WCAG's pair, the change's other side never
+      // returning to where it was. Seen, and far from three a second.
+      const { most, transitions } = flashesPerSecond(frames, 1080, 1920);
       assert.ok(most < 3, `${most} flashes in a second`);
-      assert.ok(flashes >= 1, "the flash is seen");
+      assert.ok(transitions.length >= 1, "the flash is seen");
     }
   }
 );
@@ -172,7 +175,8 @@ test(
     await before();
     const era = seq.eras.cards[at("motion-1970")];
     const xs = [];
-    for (let k = 0; k <= era.frames + 12; k += 4) {
+    // While it rolls; the landing's 4 % settle is a scale, not a slide.
+    for (let k = 0; k < era.frames; k += 4) {
       const c = frameOf(era.start + k).counters.find(
         (c) => c.card === "motion-1970"
       );
@@ -199,8 +203,8 @@ test(
       const flag = frameOf(hv.shows[0][0] + k).animated[0].flags.find(
         (f) => f.flag === "hv"
       );
-      first.push(flag.stripsY[0]);
-      last.push(flag.stripsY.at(-1));
+      first.push(flag.waves[0]);
+      last.push(flag.waves.at(-1));
     }
     const amplitude = (ys) => (Math.max(...ys) - Math.min(...ys)) / 2;
     // 7 px at the fly, about a third of it at the hoist (the boards' wave).
@@ -229,8 +233,9 @@ test(
         .toBuffer({ resolveWithObject: true });
       let s = 0;
       let n = 0;
-      // The map band, away from the texts.
-      for (let y = 800; y < 1250; y += 7)
+      // The sea under the subtitles: imagery only. The recalled marks keep
+      // their inks, as on the board.
+      for (let y = 1470; y < 1640; y += 7)
         for (let x = 80; x < 1000; x += 7) {
           const i = 3 * (y * 1080 + x);
           const [r, g, b] = [data[i], data[i + 1], data[i + 2]];

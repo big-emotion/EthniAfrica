@@ -1494,7 +1494,9 @@ function drawCoast(coast, camera, paper) {
 // at 16 %, the area's outline redrawn over it. The drawing is the flag's
 // file, cut in 12 px strips that the wave lifts.
 const FLAG_W = 300, FLAG_H = 200;
-const wave = (x, t, bb) => 7 * Math.sin(2 * Math.PI * (x / 380 - 0.6 * t)) * (0.35 + 0.65 * (x - bb.x) / Math.max(1, bb.w));
+// The cloth overhangs the area's box by 30 px a side: past the fly the wave
+// stays at its 7 px.
+const wave = (x, t, bb) => 7 * Math.sin(2 * Math.PI * (x / 380 - 0.6 * t)) * Math.min(1, 0.35 + 0.65 * (x - bb.x) / Math.max(1, bb.w));
 function areaBox(a) {
   let [x0, y0, x1, y1] = [Infinity, Infinity, -Infinity, -Infinity];
   for (const m of a.d.matchAll(/(-?[\\d.]+),(-?[\\d.]+)/g)) {
@@ -1521,7 +1523,8 @@ function drawFlags(node, map, onPaper) {
     const ox = bb.x + bb.w / 2 - (FLAG_W * s) / 2, oy = bb.y + bb.h / 2 - (FLAG_H * s) / 2;
     for (let x = bb.x - 30; x <= bb.x + bb.w + 30; x += 12) {
       const u0 = (x - ox) / s;
-      const strip = svgEl("svg", { x: x, y: oy + wave(x, f.t, bb), width: 12.6, height: FLAG_H * s, viewBox: u0 + " 0 " + 12.6 / s + " " + FLAG_H, preserveAspectRatio: "none", overflow: "hidden" });
+      const lift = wave(x, f.t, bb);
+      const strip = svgEl("svg", { "data-wave": lift, x: x, y: oy + lift, width: 12.6, height: FLAG_H * s, viewBox: u0 + " 0 " + 12.6 / s + " " + FLAG_H, preserveAspectRatio: "none", overflow: "hidden" });
       // The drawing at its own size inside the strip's view of it.
       strip.append(svgEl("use", { href: "#flag-" + f.flag, width: FLAG_W, height: FLAG_H }));
       cloth.append(strip);
@@ -2494,7 +2497,7 @@ window.drawFrame = (state) => {
         })).filter((a) => a.layers.length),
         heads: [...node.arrows.querySelectorAll("[data-head]")].map((h) => ({ id: h.dataset.head, ...rect(h) })),
         // 1.13.0: the flags and the drawn marks as drawn.
-        flags: [...node.flags.querySelectorAll("[data-flag]")].map((g) => ({ flag: g.dataset.flag, strips: g.querySelectorAll("svg").length, stripsY: [...g.querySelectorAll("svg")].map((s) => +s.getAttribute("y")), ...rect(g) })),
+        flags: [...node.flags.querySelectorAll("[data-flag]")].map((g) => ({ flag: g.dataset.flag, strips: g.querySelectorAll("svg").length, waves: [...g.querySelectorAll("svg")].map((s) => +s.dataset.wave), ...rect(g) })),
         borders: +node.borderGroup.getAttribute("opacity"),
         drawn: [...node.drawn.children].map((g) => ({ kind: g.dataset.drawn, opacity: +g.getAttribute("opacity"), ...rect(g) })),
         paper: +node.paperfx.style.opacity,
