@@ -527,6 +527,46 @@ export function coastOf(world, [west, east, south, north]) {
   return { lines, land };
 }
 
+// The era map strokes its coast up to 81.5 px wide, several times, under
+// masks; on SwiftShader each vertex costs whether it lands on screen or not,
+// and a sequence's coast spans every view of the sequence (a frame took 20 to
+// 40 s). So each frame draws only what can reach `frame` ([x0, y0, x1, y1],
+// projected pixels): a segment whose box lies farther than `margin` past one
+// side is dropped and the line is cut there. With `margin` past the farthest
+// a stroke reaches from its line (miter joins included), no dropped segment
+// nor any new cut end paints a pixel of the frame. Both functions are written with no outside reference: the
+// page runs them as they are (series-page.mjs).
+export function coastRunsInFrame(points, frame, margin) {
+  const [x0, y0, x1, y1] = frame;
+  const runs = [];
+  let run = null;
+  for (let i = 1; i < points.length; i++) {
+    const [a, b] = [points[i - 1], points[i]];
+    const near = !(
+      Math.max(a[0], b[0]) < x0 - margin ||
+      Math.min(a[0], b[0]) > x1 + margin ||
+      Math.max(a[1], b[1]) < y0 - margin ||
+      Math.min(a[1], b[1]) > y1 + margin
+    );
+    if (!near) run = null;
+    else if (run) run.push(b);
+    else runs.push((run = [a, b]));
+  }
+  return runs;
+}
+// A land ring is filled whole, so it is kept or dropped whole.
+export function landRingInFrame(points, frame, margin) {
+  const [x0, y0, x1, y1] = frame;
+  const xs = points.map((p) => p[0]);
+  const ys = points.map((p) => p[1]);
+  return !(
+    Math.max(...xs) < x0 - margin ||
+    Math.min(...xs) > x1 + margin ||
+    Math.max(...ys) < y0 - margin ||
+    Math.min(...ys) > y1 + margin
+  );
+}
+
 export const OUTPUT = new URL("./data/megachad-325m.geojson", import.meta.url);
 
 export async function buildMegaChad(assets, generated) {
