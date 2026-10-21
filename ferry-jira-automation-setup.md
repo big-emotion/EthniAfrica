@@ -11,6 +11,8 @@ Jira Automation rules in the Jira UI.
 ## How dispatch works here
 
 One workflow, `.github/workflows/ferry-router.yml`, handles every Ferry transition.
+The reconciler and the daily cost check were retired on 2026-10-22 because they did nothing
+on this repository.
 **One Jira rule feeds it**: on a status change it sends a `repository_dispatch` of
 type `ferry-transition` carrying the new status as `to_status`. The router compares
 `to_status` case-insensitively against the `trigger_column` values in

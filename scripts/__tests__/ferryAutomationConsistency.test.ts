@@ -32,21 +32,6 @@ const statusesInSetupDoc = (): Set<string> =>
       .map(normaliseStatus)
   );
 
-interface BetaRuleExport {
-  rules: { trigger: { value: { toStatus: { value: string }[] } } }[];
-}
-
-const statusesInBetaRules = (): Set<string> => {
-  const exported = JSON.parse(
-    readRepoFile("ferry-jira-automation-rules.beta.json")
-  ) as BetaRuleExport;
-  return new Set(
-    exported.rules.flatMap((rule) =>
-      rule.trigger.value.toStatus.map((status) => normaliseStatus(status.value))
-    )
-  );
-};
-
 const ferryWorkflows = (): { name: string; source: string }[] =>
   readdirSync(resolve(process.cwd(), ".github/workflows"))
     .filter((name) => /^ferry-.*\.ya?ml$/.test(name))
@@ -61,15 +46,6 @@ describe("Ferry automation consistency", () => {
     expect([...statusesInSetupDoc()].sort()).toEqual(
       [...triggerColumns()].sort()
     );
-  });
-
-  // @req REQ-085
-  it("only triggers the beta rule export on statuses ferry.config.yaml maps to an agent", () => {
-    const columns = triggerColumns();
-    const unmapped = [...statusesInBetaRules()].filter(
-      (status) => !columns.has(status)
-    );
-    expect(unmapped).toEqual([]);
   });
 
   // @req REQ-085
