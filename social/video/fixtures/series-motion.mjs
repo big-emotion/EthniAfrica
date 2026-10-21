@@ -565,7 +565,7 @@ export const WORD_SCRIPT = [
   {
     card: "motion-mot",
     chunks: chunks([
-      ["Trois langues, un seul nom.", 2.4],
+      ["Trois langues, un seul nom.", 2.0],
       ["Burkina, en mooré, l'intégrité,", 2.6],
       ["Faso, en dioula, la patrie.", 2.4],
       ["Pour l'habitant, on ajoute bè,", 2.6],
@@ -597,6 +597,24 @@ export function wordDemo(
     script(structuredClone(WORD_SCRIPT)),
     edit,
     { tier: "medium" }
+  );
+}
+
+// The word card alone between the opener and the closing: no map, so it
+// renders without the imagery.
+export function wordCardDemo(
+  dir,
+  { deck = (d) => d, script = (b) => b, edit = () => {} } = {}
+) {
+  const keep = ["serie-pays-01", "motion-mot", "serie-pays-07"];
+  const cards = wordCards();
+  cards.cards = cards.cards.filter((c) => keep.includes(c.id));
+  return write(
+    dir,
+    deck(cards),
+    script(structuredClone(WORD_SCRIPT).filter((b) => keep.includes(b.card))),
+    edit,
+    {}
   );
 }
 

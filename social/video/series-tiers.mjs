@@ -148,7 +148,19 @@ export function tierReport(seq, tierName, crossFade) {
     strong,
     bands: seq.headlines?.length ?? 0,
   };
-  if (!tier) return { report, warnings: [] };
+  // The parchment carries one word alone 20 s on a short, 30 s otherwise
+  // (decision 11); then a map, a picture or a new word.
+  const alone = tier?.wordAlone ?? TIERS.medium.wordAlone;
+  const wordWarnings = seq.cards.flatMap((card, i) => {
+    if (card.type !== "word") return [];
+    const frames = (seq.cardStarts[i + 1] ?? seq.frames) - seq.cardStarts[i];
+    return frames > alone
+      ? [
+          `Le mot seul sur le parchemin dure ${(frames / FPS).toFixed(1)} s : ${alone / FPS} s au plus, puis une carte, une image ou un nouveau mot (${card.id})`,
+        ]
+      : [];
+  });
+  if (!tier) return { report, warnings: wordWarnings };
   const chapters = seq.cards.filter((c) => c.type === "chapter").length;
   const strongMax = tier.strong ?? chapters + 1;
   if (strong > strongMax)
@@ -159,7 +171,7 @@ export function tierReport(seq, tierName, crossFade) {
     fail(
       `Bandeau de titre : ${report.bands} pour une vidéo ${tier.name}, ${tier.bands} au plus`
     );
-  const warnings = [];
+  const warnings = [...wordWarnings];
   if (report.longest > tier.longest)
     warnings.push(
       `Intervalle sans changement de ${report.longest} s : ${tier.longest} s au plus pour une vidéo ${tier.name}`

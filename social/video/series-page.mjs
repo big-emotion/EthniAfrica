@@ -257,6 +257,17 @@ html,body{margin:0;background:#000}
 .vf-hb{position:absolute;left:0;top:318px;z-index:3;display:flex;flex-direction:column;align-items:flex-start;gap:10px}
 .vf-hbl{background:var(--headline-band,#0b0806);padding:10px 34px 4px 60px;font:400 104px/112px var(--font-display);letter-spacing:.01em;color:#fffaf2;white-space:nowrap;text-transform:uppercase}
 .vf-hbk{color:#e8b96a;display:inline-block;transform-origin:50% 60%}
+/* 1.13.0: the word card on the parchment (series.md « 12 »). */
+.pwo{position:absolute;left:0;top:0;white-space:nowrap;text-align:center;transform-origin:50% 50%}
+.pwo-part{font:400 170px/170px var(--font-display);letter-spacing:.005em;color:var(--oi-ink)}
+.pwo-add{color:var(--oi-accent)}
+.pwo-tag{font:800 26px/32px var(--font-text);letter-spacing:.14em;text-transform:uppercase;color:var(--oi-muted)}
+.pwo-sense{font:italic 700 38px/44px var(--font-text);color:var(--oi-accent)}
+.pwo-form{font:800 44px/52px var(--font-text);color:var(--oi-ink);background:rgba(255,250,240,.7);border:2px solid #d6c8b0;border-radius:999px;padding:6px 26px}
+.pwo-form i{font-style:normal;color:var(--oi-muted);font-weight:700;font-size:28px;margin-left:10px}
+.pwo-stamp{border:6px double var(--stamp-ink,#a3462a);color:var(--stamp-ink,#a3462a);padding:12px 30px 10px;border-radius:10px;background:rgba(251,247,242,.4)}
+.pwo-stamp b{display:block;font:400 76px/80px var(--font-display);letter-spacing:.02em}
+.pwo-stamp span{display:block;font:800 24px/30px var(--font-text);letter-spacing:.14em;text-transform:uppercase}
 /* 1.13.0: the warm flash, one light from the centre over the whole frame. */
 #flash{position:absolute;inset:0;z-index:8;pointer-events:none;display:none}
 /* 1.13.0: the era map, the satellite re-inked on paper: texts without
@@ -451,7 +462,9 @@ function buildParts(spec, view) {
   // 1.12.0: a parchment text card's date is a string the video sets itself.
   const pa = spec.ground === "parchment";
   const textCard = pa && typeof spec.date === "string";
-  const card = silent ? null : EthniCards.render(textCard ? { ...spec, date: undefined } : spec, { context: "video", resolve: resolveAsset, demo: false });
+  // 1.13.0: a word card's head and foot are an explanation card's.
+  const rendered = textCard ? { ...spec, date: undefined } : spec.type === "word" ? { ...spec, type: "explanation" } : spec;
+  const card = silent ? null : EthniCards.render(rendered, { context: "video", resolve: resolveAsset, demo: false });
   const pick = (sel) => card.querySelector(sel);
   const layer = el("div", "vf-layer");
   const pic = el("div", "vf-pic");
@@ -813,6 +826,7 @@ function parchmentContent(spec, parts) {
   parts.layer.append(box);
   parts.text.push(box);
   parts.paBox = box;
+  if (spec.type === "word") parts.paWord = wordContent(spec, box);
   if (spec.week) {
     const w = spec.week;
     box.append(el("div", "pw-people oi", esc(fr(w.people)) + (w.region ? "<span> · " + esc(fr(w.region)) + "</span>" : "")));
@@ -1904,6 +1918,7 @@ window.setup = async ({ tokens, cards, logo, demo, maps, subtitles: cardLines, z
     if (parts.date) setDate(parts);
     if (parts.formula) setFormula(parts);
     if (parts.paFormula) setMovingFormula(parts);
+    if (parts.paWord) setWord(parts.paWord);
     // 1.10.0: the calm zones, once the picture is placed and the text set.
     parts.calm = calmZones(parts, (cardLines && cardLines[i]) || [], (zooms && zooms[i]) || 1);
     parts.layer.style.display = "none";
@@ -2080,6 +2095,119 @@ function drawSubtitle(subtitle) {
   }
 }
 
+// 1.13.0, a word card: the word in Anton 170/170 on one line within 960 px
+// (120 when longer), centred at y 930; its parts lift apart to 80 %, 150 px
+// apart, at y 860, their language at y 975 and sense at y 1025 under each;
+// the joined form back at y 930; the forms as pills from y 1200; the stamp
+// at (540, 760), turned -6°.
+const WORD_AT = { y: 930, split: 860, scale: 0.8, gap: 150, tag: 975, sense: 1025, addTag: 1050, addSense: 1098, addPop: 82, forms: 1200, formGap: 40, formRow: 80, stamp: [540, 760, -6] };
+function wordContent(spec, box) {
+  const node = (cls, html) => {
+    const n = el("div", "pwo " + cls, html);
+    box.append(n);
+    return n;
+  };
+  const w = {
+    spec,
+    parts: spec.parts.map((p) => ({
+      part: node("pwo-part oi", esc(fr(p.text))),
+      tag: node("pwo-tag oi", esc(fr(p.lang))),
+      sense: node("pwo-sense oi", esc(fr(p.sense))),
+    })),
+    forms: (spec.forms || []).map((f) => node("pwo-form oi", esc(fr(f.text)) + "<i>" + esc(fr(f.kind)) + "</i>")),
+  };
+  if (spec.join)
+    w.add = {
+      part: node("pwo-part pwo-add oi", esc(fr(spec.join.add))),
+      tag: node("pwo-tag oi", esc(fr(spec.join.lang))),
+      sense: node("pwo-sense oi", esc(fr(spec.join.sense))),
+    };
+  if (spec.stamp) w.stamp = node("pwo-stamp oi", "<b>" + esc(fr(spec.stamp.date)) + "</b><span>" + esc(fr(spec.stamp.label)) + "</span>");
+  return w;
+}
+function setWord(w) {
+  const width = (n) => n.getBoundingClientRect().width;
+  const parts = [...w.parts.map((p) => p.part), ...(w.add ? [w.add.part] : [])];
+  const space = () => {
+    const probe = el("div", "pwo pwo-part", "\\u00a0");
+    w.parts[0].part.parentNode.append(probe);
+    const s = width(probe);
+    probe.remove();
+    return s;
+  };
+  let sp = space();
+  let widths = w.parts.map((p) => width(p.part));
+  if (widths.reduce((a, b) => a + b, 0) + sp * (widths.length - 1) > 960) {
+    parts.forEach((n) => (n.style.fontSize = n.style.lineHeight = "120px"));
+    sp = (sp * 120) / 170;
+    widths = w.parts.map((p) => width(p.part));
+  }
+  const total = widths.reduce((a, b) => a + b, 0) + sp * (widths.length - 1);
+  let x = 540 - total / 2;
+  w.rest = widths.map((wd) => {
+    const c = x + wd / 2;
+    x += wd + sp;
+    return c;
+  });
+  const lifted = widths.reduce((a, b) => a + b * WORD_AT.scale, 0) + WORD_AT.gap * (widths.length - 1);
+  x = 540 - lifted / 2;
+  w.split = widths.map((wd) => {
+    const c = x + (wd * WORD_AT.scale) / 2;
+    x += wd * WORD_AT.scale + WORD_AT.gap;
+    return c;
+  });
+  if (w.add) {
+    const base = w.spec.parts.findIndex((p) => p.text === w.spec.join.base);
+    const [wb, wa] = [widths[base], width(w.add.part)];
+    const left = 540 - (wb + wa) / 2;
+    w.joined = { base: left + wb / 2, add: left + wb + wa / 2 };
+  }
+  // The pills, two to a row, centred.
+  const pills = w.forms.map(width);
+  w.formAt = pills.map((pw, k) => {
+    const row = Math.floor(k / 2);
+    const mates = pills.slice(row * 2, row * 2 + 2);
+    const rowWidth = mates.reduce((a, b) => a + b, 0) + WORD_AT.formGap * (mates.length - 1);
+    const before = k % 2 ? mates[0] + WORD_AT.formGap : 0;
+    return [540 - rowWidth / 2 + before + pw / 2, WORD_AT.forms + WORD_AT.formRow * row];
+  });
+}
+const place = (n, x, y, scale, opacity, rotate = 0) => {
+  if (!(opacity > 0)) {
+    n.style.visibility = "hidden";
+    return;
+  }
+  n.style.visibility = "visible";
+  Object.assign(n.style, { left: x + "px", top: y + "px", opacity });
+  n.style.transform = "translate(-50%,-50%)" + (rotate ? " rotate(" + rotate + "deg)" : "") + " scale(" + scale + ")";
+};
+function drawWord(w, s) {
+  const lerp = (a, b, k) => a + (b - a) * k;
+  w.parts.forEach((p, k) => {
+    const st = s.parts[k];
+    let x = lerp(w.rest[k], w.split[k], s.split);
+    let y = lerp(WORD_AT.y, WORD_AT.split, s.split);
+    let scale = lerp(1, WORD_AT.scale, s.split);
+    if (k === s.base && s.join > 0) {
+      x = lerp(x, w.joined.base, s.join);
+      y = lerp(y, WORD_AT.y, s.join);
+      scale = lerp(scale, 1, s.join);
+    }
+    place(p.part, x, y, scale, st.opacity);
+    place(p.tag, w.split[k], WORD_AT.tag, st.tag.scale, st.tag.opacity);
+    place(p.sense, w.split[k], WORD_AT.sense, st.sense.scale, st.sense.opacity);
+  });
+  if (w.add) {
+    const a = s.add;
+    const x = lerp(w.joined.add + WORD_AT.addPop, w.joined.add, a.move);
+    place(w.add.part, x, WORD_AT.y, a.scale, a.opacity);
+    place(w.add.tag, w.joined.add, WORD_AT.addTag, a.tag.scale, a.tag.opacity);
+    place(w.add.sense, w.joined.add, WORD_AT.addSense, a.sense.scale, a.sense.opacity);
+  }
+  w.forms.forEach((n, k) => place(n, w.formAt[k][0], w.formAt[k][1], s.forms[k].scale, s.forms[k].opacity));
+  if (w.stamp) place(w.stamp, WORD_AT.stamp[0], WORD_AT.stamp[1], s.stamp.scale, s.stamp.opacity, WORD_AT.stamp[2]);
+}
+
 // 1.13.0: the date counter, an odometer: each digit slides vertically as the
 // value runs through it, the digits half an em wide so it never shifts.
 function drawCounter(c, s, text) {
@@ -2143,6 +2271,7 @@ function drawParchment(parts, l) {
       r.band.style.opacity = l.week.lit[k];
     });
   if (parts.paFormula) drawMovingFormula(parts, l.formula);
+  if (parts.paWord) drawWord(parts.paWord, l.word);
   if (parts.paDrawings)
     parts.paDrawings.forEach((d, k) => {
       const s = l.drawings[k];
