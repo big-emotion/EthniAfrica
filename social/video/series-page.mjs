@@ -263,7 +263,7 @@ html,body{margin:0;background:#000}
    map the glasses' ages and names, stamps, letterings, a name that travels;
    the units' key in the foot. */
 .vf-fhead{position:absolute;left:60px;top:318px;z-index:2;display:flex;flex-direction:column;align-items:flex-start}
-.vf-fpre{font:800 36px/42px var(--font-text);color:var(--oi-accent);--sw:5px;white-space:nowrap}
+.vf-fpre{font:800 36px/42px var(--font-text);color:var(--oi-accent);--sw:5px;white-space:nowrap;margin-bottom:24px}
 .vf-fnum{font:400 176px/156px var(--font-display);color:var(--oi-accent);--sw:13px;white-space:nowrap;font-variant-numeric:tabular-nums}
 .vf-funit{font:800 44px/52px var(--font-text);color:var(--oi-ink);--sw:6px;white-space:nowrap;margin-top:6px}
 .oi.sm-gl{position:absolute;white-space:nowrap;font:400 72px/84px var(--font-display);color:var(--oi-accent);--sw:10px;transform-origin:50% 100%}
@@ -2315,6 +2315,12 @@ function frameBoxes(frame, state) {
     }
     if (!(l.text > 0)) continue;
     const layer = parts.layer;
+    // 1.14.0: the figure head's lines, checked against each other.
+    if (parts.figHead && +parts.figHead.box.style.opacity > 0) {
+      if (parts.figHead.pre.style.display !== "none") add(parts.figHead.pre, "figure-pre", { card: l.card });
+      add(parts.figHead.num, "figure-number", { card: l.card });
+      add(parts.figHead.unit, "figure-unit", { card: l.card });
+    }
     // The chapter card's texts count once they have entered.
     if (parts.chapter)
       for (const n of [parts.chapter.count, parts.chapter.title])

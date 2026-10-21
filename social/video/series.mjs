@@ -973,6 +973,10 @@ const BANDS = {
   attribution: [LAYOUT.head[0], 1300],
   // The chapter card (operator, 20 October 2026): the line, the dots and
   // « n sur N » above the centre, the title centred under them.
+  // 1.14.0: the figure head's three lines sit in the head's place.
+  "figure-pre": LAYOUT.head,
+  "figure-number": LAYOUT.head,
+  "figure-unit": LAYOUT.head,
   "chapter-count": [720, 940],
   "chapter-title": [940, 1300],
   // 1.8.0: the formula in the clear zone, ending above y 1290.
@@ -985,9 +989,20 @@ const X_BANDS = {
   "chapter-count": [60, 1020],
   "chapter-title": [60, 1020],
 };
+// The figure head (1.14.0): Anton 176 on a 156 px line overflows its line box
+// by about 10 px at the top and its outline adds 13 px, so « plus de » keeps
+// this much clearance above the number's line box (operator, 21 October 2026:
+// « le million cache le plus de »).
+export const FIGURE_PRE_GAP = 24;
 export function checkSeriesLayout(boxes, { demo = false } = {}) {
   const problems = [];
   const near = 0.5;
+  const pre = boxes.find((b) => b.kind === "figure-pre");
+  const num = boxes.find((b) => b.kind === "figure-number");
+  if (pre && num && num.y - (pre.y + pre.h) < FIGURE_PRE_GAP - near)
+    problems.push(
+      `« plus de » touche le chiffre : ${Math.round(num.y - (pre.y + pre.h))} px, ${FIGURE_PRE_GAP} au moins`
+    );
   // 1.11.0: on an animated map, eight texts at most, two of them words, 12 px
   // clear of each other, of the drawings and of the arrows' heads.
   const animated = boxes.some((b) => b.animated);
