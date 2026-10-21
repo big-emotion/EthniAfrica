@@ -10,6 +10,26 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+## [5.11.0] - 2026-10-21
+
+### Added
+
+- Social video: EthniAfrica Cartes 1.13.0 (motion and sound of the series video)
+  and 1.14.0 (figures drawn on the map) (#1935, #1939).
+- Social: series sound palette, regional African bed library and an episode's
+  own bed (#1936).
+
+### Changed
+
+- Fiche `PPL_TUAREG` (`FLG_BERBERE`): the Abrous 1993 quotation is now located
+  in the fiche (#1932).
+
+### Fixed
+
+- Social video: the era coast is no longer drawn behind the globe, and only the
+  coast that can reach the frame is drawn (#1937, #1938).
+- Social: the « tribu » end-card layer is copied from the live page (#1933).
+
 ## [5.10.0] - 2026-10-20
 
 ### Added
@@ -2029,7 +2049,8 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.10.0...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.11.0...HEAD
+[5.11.0]: https://github.com/big-emotion/ethniafrica/compare/v5.10.0...v5.11.0
 [5.10.0]: https://github.com/big-emotion/ethniafrica/compare/v5.9.0...v5.10.0
 [5.9.0]: https://github.com/big-emotion/ethniafrica/compare/v5.8.0...v5.9.0
 [5.8.0]: https://github.com/big-emotion/ethniafrica/compare/v5.7.1...v5.8.0
