@@ -84,6 +84,22 @@ describe("the name Touareg", () => {
   });
 
   // @req REQ-196
+  it("locates the 1990s self-use quotation where Abrous 1993 prints it", () => {
+    // Re-read on OpenEdition (2026-10-20): § 22 is about the Niger letters;
+    // the association texts are listed in § 9 and the quotation stands
+    // between § 24 and § 25.
+    const account = nameOf("Touareg").accounts.find((a) =>
+      a.statement.includes("Nous entendons rester profondément touaregs")
+    );
+    const abrous = account.sources.find(
+      (s) => s.author === "Dahbia Abrous"
+    ) as {
+      page?: string;
+    };
+    expect(abrous.page).toBe("§ 9 et citation entre les § 24 et 25");
+  });
+
+  // @req REQ-196
   it("no longer cites al-Bakri through an unsourced page", () => {
     const text = tuareg.content.appellations.originOfExonyms as string;
     expect(text).not.toContain("al-Bakri");
