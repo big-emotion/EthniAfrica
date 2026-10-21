@@ -14,7 +14,10 @@ import {
   ISLET,
   coastRunsInFrame,
   landRingInFrame,
+  nearSideRuns,
+  nearSideRing,
 } from "./shoreline.mjs";
+import { flatProject } from "./series-map.mjs";
 
 const artefact = JSON.parse(
   readFileSync(new URL("./data/megachad-325m.geojson", import.meta.url))
@@ -353,4 +356,124 @@ test("1.13.0: the era land keeps every ring whose box meets the frame", () => {
   assert.equal(landRingInFrame(ring(-100, 500, 70), FRAME, 42), true);
   assert.equal(landRingInFrame(ring(-200, 500, 70), FRAME, 42), false);
   assert.equal(landRingInFrame(ring(500, 1970, 70), FRAME, 42), false);
+});
+
+// The era map's projection is orthographic and never checks the hemisphere:
+// a coast on the far side of the globe was drawn mirrored inside it (on a
+// whole-globe view, 25,153 of the coast's 46,648 points). Operator, 21
+// October 2026: « je valide l'option a », the far side is not drawn. A line
+// is cut where it crosses the limb; a land ring keeps its far points, moved
+// onto the limb, so that its fill stops at the edge of the globe.
+const GLOBE = { lon: 0, lat: 0, radius: 465, centreY: 960 };
+const fromCentre = ([lon, lat]) => {
+  const [x, y] = flatProject(GLOBE, lon, lat);
+  return Math.hypot(x - 540, y - GLOBE.centreY);
+};
+const near = (actual, expected) =>
+  assert.ok(
+    actual.length === expected.length &&
+      actual.every(
+        (p, i) =>
+          Math.abs(p[0] - expected[i][0]) < 1e-9 &&
+          Math.abs(p[1] - expected[i][1]) < 1e-9
+      ),
+    `${JSON.stringify(actual)} is not ${JSON.stringify(expected)}`
+  );
+
+// @req REQ-186
+test("1.13.0: the era coast is cut at the limb and its far side is not drawn", () => {
+  const line = [
+    [0, 0],
+    [60, 0],
+    [120, 0],
+    [180, 0],
+  ];
+  const out = nearSideRuns(line, GLOBE);
+  assert.equal(out.length, 1);
+  near(out[0], [
+    [0, 0],
+    [60, 0],
+    [90, 0],
+  ]);
+  // The near-side points are the same points, so a view with nothing on the
+  // far side draws the same path.
+  assert.equal(out[0][1], line[1]);
+  // From the far side, across, and back.
+  const across = nearSideRuns(
+    [
+      [150, 0],
+      [0, 0],
+      [-150, 0],
+    ],
+    GLOBE
+  );
+  assert.equal(across.length, 1);
+  near(across[0], [
+    [90, 0],
+    [0, 0],
+    [-90, 0],
+  ]);
+  // Two visits to the near side make two runs.
+  assert.equal(
+    nearSideRuns(
+      [
+        [-30, 0],
+        [-150, 0],
+        [150, 0],
+        [30, 0],
+      ],
+      GLOBE
+    ).length,
+    2
+  );
+  // All of it behind the globe: nothing.
+  assert.deepEqual(
+    nearSideRuns(
+      [
+        [150, 10],
+        [170, 0],
+        [-170, -5],
+      ],
+      GLOBE
+    ),
+    []
+  );
+});
+
+// @req REQ-186
+test("1.13.0: a land ring on both sides keeps its far points on the limb", () => {
+  const ring = [
+    [80, -10],
+    [100, -10],
+    [100, 10],
+    [80, 10],
+    [80, -10],
+  ];
+  const out = nearSideRing(ring, GLOBE);
+  assert.ok(out.includes(ring[0]) && out.includes(ring[3]));
+  for (const p of out)
+    assert.ok(fromCentre(p) <= GLOBE.radius + 1e-6, `${p} inside the globe`);
+  const moved = out.filter((p) => !ring.includes(p));
+  // Two far points moved onto the limb, and the two crossings.
+  assert.equal(moved.length, 4);
+  for (const p of moved)
+    assert.ok(
+      Math.abs(fromCentre(p) - GLOBE.radius) < 1e-6,
+      `${p} on the limb`
+    );
+  // A ring wholly on the near side is the same ring; wholly behind, none.
+  const front = [
+    [0, 0],
+    [10, 0],
+    [10, 10],
+    [0, 0],
+  ];
+  assert.deepEqual(nearSideRing(front, GLOBE), front);
+  assert.equal(
+    nearSideRing(
+      front.map(([lon, lat]) => [lon + 170, lat]),
+      GLOBE
+    ),
+    null
+  );
 });

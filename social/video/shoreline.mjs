@@ -567,6 +567,82 @@ export function landRingInFrame(points, frame, margin) {
   );
 }
 
+// The era map projects orthographically and never checks the hemisphere, so
+// a coast behind the globe came out mirrored inside it (on a whole-globe
+// view, more than half the coast's points, and half the frame's cost).
+// Operator, 21 October 2026: the far side is not drawn. These take
+// [lon, lat] points and the camera's centre, and return near-side points
+// unchanged (a view with nothing behind it draws the very same path). A
+// limb crossing is found on the chord between two unit vectors, where their
+// dot with the view direction is 0: that point projects onto the limb.
+// Written with no outside reference: the page runs them as they are.
+export function nearSideRuns(points, camera) {
+  const rad = Math.PI / 180;
+  const unit = ([lon, lat]) => [
+    Math.cos(lat * rad) * Math.cos(lon * rad),
+    Math.cos(lat * rad) * Math.sin(lon * rad),
+    Math.sin(lat * rad),
+  ];
+  const view = unit([camera.lon, camera.lat]);
+  const facing = (u) => u[0] * view[0] + u[1] * view[1] + u[2] * view[2];
+  const limb = (ua, ub, da, db) => {
+    const t = da / (da - db);
+    const v = ua.map((c, k) => c + t * (ub[k] - c));
+    return [
+      Math.atan2(v[1], v[0]) / rad,
+      Math.atan2(v[2], Math.hypot(v[0], v[1])) / rad,
+    ];
+  };
+  const runs = [];
+  let run = null;
+  let ua = unit(points[0]);
+  let da = facing(ua);
+  if (da >= 0) runs.push((run = [points[0]]));
+  for (let i = 1; i < points.length; i++) {
+    const ub = unit(points[i]);
+    const db = facing(ub);
+    if (da >= 0 && db >= 0) run.push(points[i]);
+    else if (da >= 0) {
+      run.push(limb(ua, ub, da, db));
+      run = null;
+    } else if (db >= 0) runs.push((run = [limb(ua, ub, da, db), points[i]]));
+    [ua, da] = [ub, db];
+  }
+  return runs.filter((r) => r.length > 1);
+}
+// A land ring is filled, so its far points are not dropped (the chord across
+// the gap would fill the wrong area): each moves straight onto the limb, the
+// point of the limb it hides behind, after the crossing where the ring went
+// behind. A ring with no point in front is dropped (null).
+export function nearSideRing(points, camera) {
+  const rad = Math.PI / 180;
+  const unit = ([lon, lat]) => [
+    Math.cos(lat * rad) * Math.cos(lon * rad),
+    Math.cos(lat * rad) * Math.sin(lon * rad),
+    Math.sin(lat * rad),
+  ];
+  const view = unit([camera.lon, camera.lat]);
+  const facing = (u) => u[0] * view[0] + u[1] * view[1] + u[2] * view[2];
+  const lonLat = (v) => [
+    Math.atan2(v[1], v[0]) / rad,
+    Math.atan2(v[2], Math.hypot(v[0], v[1])) / rad,
+  ];
+  const units = points.map(unit);
+  const dots = units.map(facing);
+  if (!dots.some((d) => d >= 0)) return null;
+  const ring = [];
+  units.forEach((ub, i) => {
+    const db = dots[i];
+    if (i > 0 && dots[i - 1] >= 0 !== db >= 0) {
+      const [ua, da] = [units[i - 1], dots[i - 1]];
+      const t = da / (da - db);
+      ring.push(lonLat(ua.map((c, k) => c + t * (ub[k] - c))));
+    }
+    ring.push(db >= 0 ? points[i] : lonLat(ub.map((c, k) => c - db * view[k])));
+  });
+  return ring;
+}
+
 export const OUTPUT = new URL("./data/megachad-325m.geojson", import.meta.url);
 
 export async function buildMegaChad(assets, generated) {

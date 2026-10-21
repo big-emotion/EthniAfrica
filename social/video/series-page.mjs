@@ -14,7 +14,12 @@ import { FLAT_VERT, FLAT_FRAG, OVERLAY_SCRIPT } from "./page.mjs";
 import { flatProject, areaStyle, MARKS } from "./series-map.mjs";
 import { documentFrame } from "./series-document.mjs";
 import { TURNS } from "./series-turns.mjs";
-import { coastRunsInFrame, landRingInFrame } from "./shoreline.mjs";
+import {
+  coastRunsInFrame,
+  landRingInFrame,
+  nearSideRuns,
+  nearSideRing,
+} from "./shoreline.mjs";
 
 // Cartes 1.13.0: the inks of the era map and of the drawn marks, from the
 // design's tokens. The lilac fourth ink and the colonial power's deep ink
@@ -1414,6 +1419,8 @@ const PAPER = ${JSON.stringify(PAPER_INKS)};
 let coastData = null;
 ${coastRunsInFrame.toString()}
 ${landRingInFrame.toString()}
+${nearSideRuns.toString()}
+${nearSideRing.toString()}
 // The engraved lines: distance from the coast (px) and opacity.
 const ENGRAVED = [[11, 0.38], [24, 0.24], [40, 0.14]];
 // How far past the frame a dropped stretch may lie. The masks' strokes sit
@@ -1497,8 +1504,8 @@ function drawCoast(coast, camera, paper) {
   coast.key = key;
   const project = (ring) => ring.map(([lon, lat]) => flatProject(camera, lon, lat).map((n) => +n.toFixed(1)));
   const path = (points) => "M" + points.map((p) => p.join(",")).join("L");
-  const land = coastData.land.map(project).filter((r) => landRingInFrame(r, COAST_FRAME, COAST_MARGIN)).map((r) => path(r) + "Z").join("");
-  const lines = coastData.lines.flatMap((l) => coastRunsInFrame(project(l), COAST_FRAME, COAST_MARGIN)).map(path).join("");
+  const land = coastData.land.map((r) => nearSideRing(r, camera)).filter(Boolean).map(project).filter((r) => landRingInFrame(r, COAST_FRAME, COAST_MARGIN)).map((r) => path(r) + "Z").join("");
+  const lines = coastData.lines.flatMap((l) => nearSideRuns(l, camera)).flatMap((l) => coastRunsInFrame(project(l), COAST_FRAME, COAST_MARGIN)).map(path).join("");
   coast.lands.forEach((p) => p.setAttribute("d", land));
   coast.lines.forEach((p) => p.setAttribute("d", lines));
 }
