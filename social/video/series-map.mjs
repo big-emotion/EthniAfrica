@@ -77,7 +77,8 @@ const ANIMATED_DRAWN = {
   ],
   drawings: ["kind", "at", "say", "until", "label"],
   words: ["text", "kind", "at", "say", "until", "people", "ink"],
-  places: ["name", "at", "say", "side"],
+  // 1.13.0: a place may carry an id, which drawn marks name.
+  places: ["id", "name", "at", "say", "side"],
   facts: ["say", "shows"],
   rename: ["from", "to", "dates", "at", "say"],
   // The foot's key, when the plan groups its marks (« Royaumes », « Chemin
@@ -147,6 +148,18 @@ export function areaStyle(lit) {
     keylineOpacity: r(0.55 * (0.6 + 0.4 * lit)),
     hatch: r(0.35 + 0.65 * lit),
     name: r(0.6 + 0.4 * lit),
+  };
+}
+
+// The band names are placed in so that, pushed `push` times around the map's
+// centre (540, 1010) by the end of their card, they are still inside `band`:
+// marks keep their pixel size while the map grows under them (1.13.0).
+export function pushedBand(band, push) {
+  const [cx, cy] = MAP_FRAME.centre;
+  const inward = (v, c) => c + (v - c) / push;
+  return {
+    x: [inward(band.x[0], cx), inward(band.x[1], cx)],
+    y: [inward(band.y[0], cy), inward(band.y[1], cy)],
   };
 }
 
@@ -379,6 +392,8 @@ export function loadSequenceArea(file) {
   return {
     file,
     uncertain: p.kind !== "certain",
+    // 1.13.0: a flag fills only an area that is a state (category country).
+    category: p.category,
     polygons: polygonRings(feature.geometry),
   };
 }
@@ -557,8 +572,9 @@ export function sharedBorders(geojson, [west, east, south, north]) {
 // The still top-down view: centred on the middle of the subject's longitude
 // and latitude box at (540, 1010); the largest radius that keeps every
 // subject point within 840 × 520 around it; capped by the imagery's scale
-// limit at the end of the card's zoom.
-export function fitMapCamera(box, imagery, points) {
+// limit at the end of the card's zoom or, since 1.13.0, of its push: a card
+// is framed at the limit divided by its push.
+export function fitMapCamera(box, imagery, points, push = MAP_FRAME.maxZoom) {
   const lon = (box.west + box.east) / 2;
   const lat = (box.south + box.north) / 2;
   const centreY = MAP_FRAME.centre[1];
@@ -579,9 +595,10 @@ export function fitMapCamera(box, imagery, points) {
     if (dx > 0) fit = Math.min(fit, MAP_FRAME.box[0] / 2 / dx);
     if (dy > 0) fit = Math.min(fit, MAP_FRAME.box[1] / 2 / dy);
   }
-  const limit =
-    (MAP_FRAME.maxScale * imagery.width) / (2 * Math.PI) / MAP_FRAME.maxZoom;
-  const radius = Math.min(fit, limit);
+  const limit = (MAP_FRAME.maxScale * imagery.width) / (2 * Math.PI) / push;
+  // A push past the slow zoom's 4 % frames the subject smaller, so that at
+  // the end of the card it still stands where the 1.4.1 box put it.
+  const radius = Math.min(fit * Math.min(1, MAP_FRAME.maxZoom / push), limit);
   const camera = { lon, lat, radius, centreY };
   const xs = [];
   const ys = [];
@@ -660,7 +677,16 @@ const within = (a, b) =>
 // One map card as the series frame draws it: camera, overlays and names in
 // frame pixels at 100 % (the slow zoom scales them around (540, 1010)), the
 // key, the credits, the subject's box and the imagery's enlargement.
-export function seriesMapView(card, data, countries, world, imagery) {
+// `push` is the card's zoom on its last frame (1.13.0: the push of a
+// picture), which the framing leaves room for.
+export function seriesMapView(
+  card,
+  data,
+  countries,
+  world,
+  imagery,
+  push = MAP_FRAME.maxZoom
+) {
   checkSeriesMapCard(card);
   const map = card.map;
   const proj = baseMapProjection(data.meta);
@@ -683,7 +709,7 @@ export function seriesMapView(card, data, countries, world, imagery) {
       map.view ?? data.meta.viewBox.split(/[ ,]+/).map(Number);
     subject = [fromCard([x, y]), fromCard([x + w, y + h])];
   }
-  const camera = fitMapCamera(extent(subject), imagery, subject);
+  const camera = fitMapCamera(extent(subject), imagery, subject, push);
   const at = (lon, lat) => {
     const p = project(camera, lon, lat);
     return [p.x, p.y];

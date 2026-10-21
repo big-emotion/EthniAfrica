@@ -5,7 +5,8 @@
 // The page (series-page.mjs) measures and draws; every time here is a frame
 // number, every place there a function of these states.
 import { existsSync } from "node:fs";
-import { FPS, enter } from "./sequence.mjs";
+import { FPS } from "./sequence.mjs";
+import { EASE, DUR, PUSH, pushAt, popAt, exitAt } from "./series-motion.mjs";
 import { wordOf } from "./series-sequence.mjs";
 import { groundMotion } from "../series-idents/ground.mjs";
 
@@ -56,6 +57,8 @@ export function checkTeachingCard(card) {
   ])
     if (used && !isParchment(card))
       fail(`Card ${id}: ${field} en mouvement hors de la carte parchemin`);
+  // 1.13.0: an episode about a word, on the parchment.
+  if (card.type === "word") return checkWordCard(card);
   if (!isParchment(card)) return;
   const blocks = [
     movingWeek(card),
@@ -248,6 +251,19 @@ export function planTeaching(seq, i) {
       marks: (card.quote.marks ?? []).map((m) => said(m.say)),
     };
   if (card.words) plan.words = card.words.map((w) => said(w.say));
+  // 1.13.0: a word card's parts, forms and stamp.
+  if (card.type === "word") {
+    plan.word = planWord(card, said);
+    plan.changes = [
+      plan.word.split,
+      ...plan.word.parts.flatMap((p) => [p.tag, p.sense]),
+      plan.word.join,
+      plan.word.addPop,
+      plan.word.addMove,
+      ...plan.word.forms,
+      plan.word.stamp,
+    ];
+  }
   card.teachingPlan = plan;
 }
 
@@ -274,7 +290,7 @@ const progress = (frame, from, frames) =>
     ? 0
     : frame >= from + frames
       ? 1
-      : enter((frame - from) / frames);
+      : EASE.enter((frame - from) / frames);
 const linear = (frame, from, frames) =>
   frame <= from ? 0 : frame >= from + frames ? 1 : (frame - from) / frames;
 
@@ -291,6 +307,10 @@ export function teachingLayer(seq, l, frame, crossFade) {
   const card = seq.cards[l.card];
   if (!isParchment(card)) return;
   l.ground = groundMotion((frame - runClock(seq, l.card, crossFade)) / FPS);
+  // 1.13.0: its content pushes in 3 % every 10 s from the card's first
+  // frame; the ground keeps its own clock.
+  const first = l.card ? seq.cardStarts[l.card] - crossFade + 1 : 0;
+  l.push = pushAt(frame - first, PUSH.parchment);
   const plan = card.teachingPlan;
   if (plan.week) {
     const { entry, lights } = plan.week;
@@ -337,7 +357,9 @@ export function teachingLayer(seq, l, frame, crossFade) {
             to < 0 ? 0 : progress(frame, frames[0], TEACHING.appear.frames),
           from: to < 0 ? -1 : to - 1,
           to,
-          t: to < 0 ? 0 : linear(frame, frames[to], durations[to]),
+          // `p` runs linearly over the move, `t` is its progress on `ease-move`.
+          p: to < 0 ? 0 : linear(frame, frames[to], durations[to]),
+          t: to < 0 ? 0 : EASE.move(linear(frame, frames[to], durations[to])),
         };
       }),
       notes: notes.map(
@@ -350,15 +372,16 @@ export function teachingLayer(seq, l, frame, crossFade) {
   if (plan.drawings)
     l.drawings = plan.drawings.map(({ frame: f, quality }) => {
       const p = progress(frame, f, TEACHING.drawing.frames);
+      // 1.13.0: the drawing's name and quality pop under it.
+      const name = popAt(frame - f - TEACHING.drawing.name);
+      const said = popAt(frame - quality);
       return {
         opacity: p,
         rise: TEACHING.drawing.rise * (1 - p),
-        name: progress(
-          frame,
-          f + TEACHING.drawing.name,
-          TEACHING.drawing.label
-        ),
-        quality: progress(frame, quality, TEACHING.drawing.label),
+        name: name.opacity,
+        nameScale: name.scale,
+        quality: said.opacity,
+        qualityScale: said.scale,
       };
     });
   if (plan.date !== undefined) {
@@ -380,8 +403,138 @@ export function teachingLayer(seq, l, frame, crossFade) {
     };
   }
   if (plan.words)
+    // 1.13.0: free words pop on their word, from their centre.
     l.words = plan.words.map((f) => {
-      const p = progress(frame, f, TEACHING.words.frames);
-      return { opacity: p, rise: TEACHING.words.rise * (1 - p) };
+      const { opacity, scale } = popAt(frame - f);
+      return { opacity, scale };
     });
+  if (plan.word) l.word = wordAt(plan.word, frame);
+}
+
+// ---------------------------------------------------------------------------
+// Cartes 1.13.0, « 12. Episodes about a word »: the word in Anton 170, its
+// parts lifting apart (450 ms, ease-move, to 80 %, 150 px apart) with their
+// language and sense popping in under each; a part joining to make a derived
+// form (1.12.0's join, 450 ms); the forms as pills; the first attestation as
+// a stamp dropping from 140 % in 180 ms. The page lays them out; here, when.
+export const WORD = {
+  lift: TEACHING.moves.join,
+  senseAfter: TEACHING.appear.frames,
+  // The added part pops just after the join starts, then moves against its
+  // base once the others have gone.
+  addPop: 6,
+  addMove: 21,
+  stampFrom: 1.4,
+  stampOpaque: 2.4,
+};
+
+function checkWordCard(card) {
+  const id = card.id;
+  if (!isParchment(card))
+    fail(`Card ${id}: Carte de mot hors du parchemin (ground: "parchment")`);
+  const { word, parts, join, forms, stamp } = card;
+  if (typeof word !== "string" || !word.trim())
+    fail(`Card ${id}: une carte de mot donne son mot (word)`);
+  if (!Array.isArray(parts) || parts.length < 1 || parts.length > 3)
+    fail(`Card ${id}: un mot a une à trois parties`);
+  for (const p of parts)
+    if (![p.text, p.lang, p.sense, p.say].every((v) => typeof v === "string"))
+      fail(`Card ${id}: une partie donne text, lang, sense et say`);
+  if (parts.map((p) => p.text).join(" ") !== word)
+    fail(`Card ${id}: Les parties ne refont pas le mot « ${word} »`);
+  if (join) {
+    if (!parts.some((p) => p.text === join.base))
+      fail(
+        `Card ${id}: la jonction part d'une partie du mot (« ${join.base} »)`
+      );
+    if (
+      ![join.add, join.lang, join.sense, join.say].every(
+        (v) => typeof v === "string"
+      )
+    )
+      fail(`Card ${id}: la jonction donne add, lang, sense et say`);
+  }
+  for (const f of forms ?? [])
+    if (![f.text, f.kind, f.say].every((v) => typeof v === "string"))
+      fail(`Card ${id}: une forme donne text, kind et say`);
+  if ((forms ?? []).length > 4) fail(`Card ${id}: quatre formes au plus`);
+  if (
+    stamp &&
+    ![stamp.date, stamp.label, stamp.say].every((v) => typeof v === "string")
+  )
+    fail(`Card ${id}: le tampon donne date, label et say`);
+}
+
+// When each part of a word card moves, after the schedule.
+export function planWord(card, said) {
+  const split = said(card.parts[0].say);
+  const parts = card.parts.map((p) => {
+    const tag = Math.max(said(p.say), split + WORD.lift);
+    return { tag, sense: tag + WORD.senseAfter };
+  });
+  const join = card.join && said(card.join.say);
+  return {
+    split,
+    parts,
+    base: card.join
+      ? card.parts.findIndex((p) => p.text === card.join.base)
+      : -1,
+    ...(card.join && {
+      join,
+      addPop: join + WORD.addPop,
+      addMove: join + WORD.addMove,
+      addTag: join + WORD.addMove + WORD.lift,
+    }),
+    forms: (card.forms ?? []).map((f) => said(f.say)),
+    ...(card.stamp && { stamp: said(card.stamp.say) }),
+  };
+}
+
+const exitFrom = (frame, from) => exitAt(frame - from);
+export function wordAt(w, frame) {
+  const ease = (from, frames) =>
+    EASE.move(Math.min(1, Math.max(0, (frame - from) / frames)));
+  const joined = w.join !== undefined ? ease(w.join, WORD.lift) : 0;
+  const leaving =
+    w.join !== undefined ? exitFrom(frame, w.join) : { opacity: 1, scale: 1 };
+  const parts = w.parts.map((p, k) => {
+    const pop = (from) => {
+      const s = popAt(frame - from);
+      return {
+        opacity: s.opacity * leaving.opacity,
+        scale: s.scale * leaving.scale,
+      };
+    };
+    // The base stays and comes back to rest; the other parts leave.
+    const own = k === w.base || w.join === undefined ? 1 : leaving.opacity;
+    return { opacity: own, tag: pop(p.tag), sense: pop(p.sense) };
+  });
+  const stampK =
+    w.stamp === undefined
+      ? 0
+      : EASE.enter(Math.min(1, Math.max(0, (frame - w.stamp) / DUR.stamp)));
+  return {
+    split: ease(w.split, WORD.lift),
+    parts,
+    join: joined,
+    base: w.base,
+    ...(w.join !== undefined && {
+      add: {
+        ...popAt(frame - w.addPop),
+        move: ease(w.addMove, WORD.lift),
+        tag: popAt(frame - w.addTag),
+        sense: popAt(frame - w.addTag - WORD.senseAfter),
+      },
+    }),
+    forms: w.forms.map((f) => popAt(frame - f)),
+    ...(w.stamp !== undefined && {
+      stamp: {
+        scale:
+          frame < w.stamp
+            ? WORD.stampFrom
+            : WORD.stampFrom + (1 - WORD.stampFrom) * stampK,
+        opacity: Math.min(1, Math.max(0, (frame - w.stamp) / WORD.stampOpaque)),
+      },
+    }),
+  };
 }

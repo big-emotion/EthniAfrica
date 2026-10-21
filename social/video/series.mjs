@@ -13,10 +13,21 @@ import {
   subtitleCharacters,
   highlightAt,
   loadVoice,
-  enter,
-  leave,
   IMAGERY,
 } from "./sequence.mjs";
+import { EASE, PUSH, pushAt } from "./series-motion.mjs";
+import { tierReport } from "./series-tiers.mjs";
+import { planCues } from "./series-cues.mjs";
+import { loadSubject, recapCard, RECAP } from "./series-subject.mjs";
+import {
+  checkTurnFields,
+  planEras,
+  planHeadlines,
+  eraAt,
+  counterAt,
+  headlineAt,
+  isMapCard,
+} from "./series-turns.mjs";
 import {
   MAP_FRAME,
   MAP_IMAGERY,
@@ -79,7 +90,6 @@ export const DATE_STEPS = [
   [104, 100],
 ];
 const CROSS_FADE = 9; // 300 ms
-const ZOOM = 0.04; // 100 → 104 %
 const CLOSING_HOLD = 75; // 2.5 s
 // Seconds. A recommendation, not a refusal (operator, 15 October 2026): an
 // episode may run longer when the research needs it; the warning keeps the
@@ -152,6 +162,8 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
   // 1.7.0: a long video's chapters. A chapter card is a beat of the sequence,
   // not a card of the deck: it has no chunks, and its title is the script's.
   const chapters = input.chapters ?? [];
+  // 1.13.0: the subject key, fixed for every episode on one subject.
+  const subject = input.subject ? loadSubject(input.subject) : null;
   const seen = new Set();
   const entries = beats.map((beat, i) => {
     // The intro bumper (social/series-idents), operator, 19 October 2026:
@@ -212,8 +224,35 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     if (card.sbs) checkSideBySide(card);
     // 1.12.0: the parchment card and the teaching cards in motion.
     checkTeachingCard(card);
-    return { card: structuredClone(card), chunks: beat.chunks };
+    // 1.13.0: the story's turns (whip, era, flags, headline band).
+    checkTurnFields(card);
+    const own = structuredClone(card);
+    // 1.13.0: the globe lands on the subject's base view; the opener's
+    // kicker is the subject's formula.
+    if (subject && own.type === "opener") {
+      own.videoKicker = subject.kicker;
+      if (own.opening === "globe") own.map.view = { ...subject.view };
+    }
+    return { card: own, chunks: beat.chunks };
   });
+  // 1.13.0: the recap card, after the intro, on the previous episode's
+  // last map (a card of the deck that is not voiced as a beat of its own).
+  if (input.recap) {
+    if (!subject || subject.episode < 2)
+      fail(
+        "Le rappel suit un épisode précédent : pas de rappel au premier épisode"
+      );
+    if (entries[1]?.card.type !== "intro")
+      fail("Le rappel vient juste après l'intro");
+    const source =
+      deck.cards.find((c) => c.id === input.recap.map) ??
+      fail(`Le rappel nomme une carte absente : ${input.recap.map}`);
+    checkSeriesMapCard(source);
+    entries.splice(2, 0, {
+      card: recapCard(source, input.recap),
+      chunks: input.recap.chunks,
+    });
+  }
   const numbers = entries.flatMap((e) =>
     e.card.type === "chapter" ? [e.card.chapter.n] : []
   );
@@ -325,19 +364,33 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     chunks,
     // 1.11.0: one ink per people for the whole episode.
     ...(input.inks && { inks: { ...input.inks } }),
+    // 1.13.0: the subject's own ink, wherever the piece inks the subject.
+    ...(subject &&
+      input.inks?.[subject.id] !== undefined && {
+        inks: { ...input.inks, [subject.id]: subject.ink },
+      }),
+    ...(subject && { subject }),
     // The imagery under the map cards; the scale limit reads its width
     // (decision 1 of 1.11.0: the 500 m mosaic once verified and pinned).
     mapImagery: input.mapImagery ?? MAP_IMAGERY,
+    // 1.13.0: the year the satellite shows, for the counter and the flags.
+    ...(input.today !== undefined && { today: input.today }),
   };
   if (!IMAGERY[seq.mapImagery]?.width)
     fail(`No verified imagery « ${seq.mapImagery} » for the map cards`);
   schedule(seq, voice.chunks);
+  placeRecapMarks(seq, input.tier);
   if (retired.length)
     seq.warnings.push(
       `L'entrée de fin ne prend plus que next : ${retired.join(", ")} ignoré (1.10.0, la fin est fixe)`
     );
   // 1.5.0: consecutive map cards of one `map.sequence` share one map.
+  // 1.13.0: the eras, their flashes and counters, before the maps that
+  // draw them; the headline bands.
+  const word = (i, unit) => wordOf(seq, i, unit).frame;
+  seq.eras = planEras(seq, word, CROSS_FADE);
   seq.mapSequence = planMapSequences(seq, IMAGERY[seq.mapImagery]);
+  seq.headlines = planHeadlines(seq, word);
   checkPicturePhases(seq);
   // 1.11.0: every fact of a map phase has its mark on screen while it is
   // said. A proof warns; the final export refuses (series-render.mjs).
@@ -348,7 +401,30 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     );
   planLongVideo(seq, input);
   checkParchmentPhases(seq);
+  // 1.13.0: the change rate against the piece's format tier.
+  const tiers = tierReport(seq, input.tier, CROSS_FADE);
+  seq.tierReport = tiers.report;
+  seq.warnings.push(...tiers.warnings);
+  // 1.13.0: the sound cues on their frames, for mix.mjs.
+  seq.cues = planCues(seq, CROSS_FADE);
   return seq;
+}
+
+// 1.13.0, the recap card: 6 s at most (4 s on a short); its marks pop on
+// their own frames, 18 apart, once the card has come in.
+function placeRecapMarks(seq, tier) {
+  const i = seq.cards.findIndex((c) => c.isRecap);
+  if (i < 0) return;
+  const start = seq.cardStarts[i];
+  const frames = seq.cardStarts[i + 1] - start;
+  const most = tier === "short" ? 120 : 180;
+  if (frames > most)
+    fail(
+      `Rappel de plus de ${most / FPS} s : ${(frames / FPS).toFixed(1)} s (une phrase, la carte et ses marques)`
+    );
+  const map = seq.cards[i].map;
+  for (const mark of [...map.areas, ...map.words])
+    mark.sayFrame = start + RECAP.first + RECAP.apart * mark.recapMark;
 }
 
 // 1.11.0, « 9. Map phases and picture phases »: a picture between two map
@@ -703,9 +779,11 @@ export function seriesFrameState(seq, frame) {
   let current = 0;
   while (current + 1 < starts.length && frame >= starts[current + 1]) current++;
   // 1.7.0: a run of one image zooms once, from its first card's first frame
-  // to its last card's end.
+  // to its last card's end. 1.13.0 (decision 3): the zoom is the maps'
+  // push, 6 % every 10 s; `zoomEnd` is where it stands on the run's last
+  // frame, so the page can hold a picture too small to push still.
   const imageRun = (i) => seq.imageRuns?.[i] ?? -1;
-  const zoom = (i) => {
+  const zoomSpan = (i) => {
     let a = i;
     let b = i;
     if (imageRun(i) >= 0) {
@@ -714,14 +792,22 @@ export function seriesFrameState(seq, frame) {
     }
     const from = a ? starts[a] - CROSS_FADE + 1 : 0; // first frame drawn
     const to = b + 1 < starts.length ? starts[b + 1] - 1 : null;
-    if (to === null) return 1; // the ending shows no photograph
-    return 1 + (ZOOM * (frame - from)) / (to - from);
+    return { from, to };
+  };
+  const zooms = (i) => {
+    const { from, to } = zoomSpan(i);
+    // The ending shows no photograph.
+    if (to === null) return { zoom: 1, zoomEnd: 1 };
+    return {
+      zoom: pushAt(frame - from, PUSH.picture),
+      zoomEnd: pushAt(to - from, PUSH.picture),
+    };
   };
   // `opacity` is the image's, `text` the card's own text (head, foot): the
   // images cross-fade over the whole change while the heads swap inside it,
   // out in the first half and in during the second, never both at once
   // (operator, 14 October 2026).
-  const layers = [{ card: current, opacity: 1, zoom: zoom(current), text: 1 }];
+  const layers = [{ card: current, opacity: 1, ...zooms(current), text: 1 }];
   const next = current + 1;
   let change = 0;
   if (next < starts.length && frame > starts[next] - CROSS_FADE) {
@@ -731,7 +817,7 @@ export function seriesFrameState(seq, frame) {
     layers.push({
       card: next,
       opacity: p,
-      zoom: zoom(next),
+      ...zooms(next),
       text: Math.max(0, 2 * p - 1),
     });
   }
@@ -755,7 +841,7 @@ export function seriesFrameState(seq, frame) {
       ? 0
       : frame >= from + CROSS_FADE
         ? 1
-        : enter((frame - from) / CROSS_FADE);
+        : EASE.enter((frame - from) / CROSS_FADE);
   for (const l of layers) {
     const card = seq.cards[l.card];
     if (card.itemFrames) l.items = card.itemFrames.map(arrive);
@@ -786,6 +872,7 @@ export function seriesFrameState(seq, frame) {
     if (runs[i] < 0) continue;
     l.map = mapRunState(seq, runs[i], frame);
     l.zoom = l.map.zoom;
+    l.zoomEnd = l.map.zoom;
     if (i && runs[i] === runs[i - 1]) l.opacity = 0;
   }
   // An ident runs on its own clock, from the first frame of the change that
@@ -801,6 +888,23 @@ export function seriesFrameState(seq, frame) {
   for (const l of layers)
     if (seq.cards[l.card].type === "chapter")
       l.chapter = { t: Math.max(0, (frame - starts[l.card]) / FPS) };
+  // 1.13.0: an era card's counter in its head; a headline band in the head's
+  // place; the era map's flash and paper inks.
+  for (const l of layers) {
+    const era = seq.eras?.cards[l.card];
+    if (era?.from !== undefined) {
+      l.counter = counterAt(era, frame);
+      l.head = l.counter.head;
+    }
+    const band = seq.headlines?.find((b) => b.card === l.card);
+    if (band) {
+      l.headline = headlineAt(band, frame);
+      l.head = l.headline.head;
+    }
+  }
+  const era = seq.eras ? eraAt(seq.eras, frame) : null;
+  // The paper inks hold for the map on screen, not for a picture after it.
+  const paperInks = !!era?.inks && isMapCard(seq.cards[current]);
   const chunk = seq.chunks.find(
     (c) => !c.hidden && frame >= c.appear && frame < c.gone
   );
@@ -809,21 +913,28 @@ export function seriesFrameState(seq, frame) {
         lines: chunk.lines,
         opacity:
           frame < chunk.fullFrom
-            ? enter((frame - chunk.appear) / VOICE.fade)
+            ? EASE.enter((frame - chunk.appear) / VOICE.fade)
             : frame < chunk.fullTo
               ? 1
-              : 1 - leave((frame - chunk.fullTo) / VOICE.fade),
+              : 1 - EASE.exit((frame - chunk.fullTo) / VOICE.fade),
         highlight: highlightAt(chunk.words, frame / FPS),
-        // 1.12.0: said over a parchment card, in its ink without outline.
-        ...(parchment(chunk.card) && { parchment: true }),
+        // 1.12.0: said over a parchment card, in its ink without outline;
+        // 1.13.0: over the era map too.
+        ...((parchment(chunk.card) || paperInks) && { parchment: true }),
       }
     : null;
-  if (!seq.cards.some(isParchment)) return { layers, subtitle };
+  const turns = {
+    ...(era?.flash > 0 && { flash: era.flash }),
+    ...(paperInks && { paperInks: true }),
+  };
+  if (!seq.cards.some(isParchment) && !paperInks)
+    return { layers, subtitle, ...turns };
   // 1.12.0: how much of the frame is parchment, for the band's and the
-  // signature's two inkings.
-  const weight =
-    (parchment(current) ? 1 - change : 0) + (parchment(next) ? change : 0);
-  return { layers, subtitle, parchment: weight };
+  // signature's two inkings; the era map takes the Parchemin inks too.
+  const weight = paperInks
+    ? 1
+    : (parchment(current) ? 1 - change : 0) + (parchment(next) ? change : 0);
+  return { layers, subtitle, parchment: weight, ...turns };
 }
 
 // Problems with the boxes the browser drew on one frame. `boxes` are

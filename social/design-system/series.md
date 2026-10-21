@@ -1,6 +1,6 @@
 # Series
 
-**1.12.0-proposition, 20 October 2026, accepted by the operator the same day:** the parchment card, the week table one people per table, the formula in motion, drawings on teaching cards and the parchment text card (« Teaching cards in motion and the parchment card (1.12.0-proposition) » below). **1.11.0-proposition, 19 October 2026, accepted by the operator the same day:** the animated satellite map of the series video, its opening globe, area states, route arrows, drawings and words on the map (« The animated satellite map (1.11.0-proposition) » below). **Series idents, 19 October 2026, the operator's decision:** the intro bumper after the opener and the end card in place of the 1.10.0 video ending (« The series idents in the video » below). **1.10.0-proposition, 19 October 2026, accepted by the operator the same day:** a new ending for every series video and every carousel, replacing the signature line and the invitation (« The closing (1.10.0) » below). **1.9.0-proposition, 16 October 2026, accepted by the operator the same day:** a second contour under every text on the image of the series video (« Legibility on light pictures: the double outline » below). **1.8.0-proposition, 15 October 2026, accepted by the operator the same day:** the document card and three teaching cards in the series video (« Document and teaching cards » below). **1.7.0-proposition, 15 October 2026, accepted by the operator the same day:** the long series video, with chapters on screen (« Vidéo longue et chapitres » below). **1.6.0-proposition, 15 October 2026, accepted by the operator the same day:** the project's signature line at the end of every carousel and every series video (« The signature line » below). **1.5.0-proposition, 15 October 2026, accepted by the operator the same day:** a map sequence in the series video, areas and names entering on the word that says them, one map across several cards (« Map sequence » below). **1.4.1-proposition, 14 October 2026, accepted by the operator the same day:** in the series video, map cards are drawn on satellite imagery (« Map cards on satellite imagery » below); nothing else changes. **1.4.0-proposition, 14 October 2026, accepted by the operator the same day:** the series video in full screen replaces layout B (« Vidéo de série » below). **1.3.0-proposition, 13 October 2026, accepted by the operator on 14 October 2026 with video layout B, since withdrawn.** It adds three things to the accepted 1.2.0-proposition and changes nothing else: one series band, a carousel model for each of the seven series, and one 9:16 video model. A card without `series` renders exactly as in 1.2.0: the 37 non-series sample cards were rendered again with 1.3.0 and compared with the 1.2.0 references, pixel for pixel identical.
+**1.13.0-proposition, 20 October 2026, accepted by the operator on 21 October 2026 with the designer's recommendations:** one way of moving and one way of sounding for every series video, short to long, one subject over many episodes (« Motion and sound (1.13.0-proposition) » below). **1.12.0-proposition, 20 October 2026, accepted by the operator the same day:** the parchment card, the week table one people per table, the formula in motion, drawings on teaching cards and the parchment text card (« Teaching cards in motion and the parchment card (1.12.0-proposition) » below). **1.11.0-proposition, 19 October 2026, accepted by the operator the same day:** the animated satellite map of the series video, its opening globe, area states, route arrows, drawings and words on the map (« The animated satellite map (1.11.0-proposition) » below). **Series idents, 19 October 2026, the operator's decision:** the intro bumper after the opener and the end card in place of the 1.10.0 video ending (« The series idents in the video » below). **1.10.0-proposition, 19 October 2026, accepted by the operator the same day:** a new ending for every series video and every carousel, replacing the signature line and the invitation (« The closing (1.10.0) » below). **1.9.0-proposition, 16 October 2026, accepted by the operator the same day:** a second contour under every text on the image of the series video (« Legibility on light pictures: the double outline » below). **1.8.0-proposition, 15 October 2026, accepted by the operator the same day:** the document card and three teaching cards in the series video (« Document and teaching cards » below). **1.7.0-proposition, 15 October 2026, accepted by the operator the same day:** the long series video, with chapters on screen (« Vidéo longue et chapitres » below). **1.6.0-proposition, 15 October 2026, accepted by the operator the same day:** the project's signature line at the end of every carousel and every series video (« The signature line » below). **1.5.0-proposition, 15 October 2026, accepted by the operator the same day:** a map sequence in the series video, areas and names entering on the word that says them, one map across several cards (« Map sequence » below). **1.4.1-proposition, 14 October 2026, accepted by the operator the same day:** in the series video, map cards are drawn on satellite imagery (« Map cards on satellite imagery » below); nothing else changes. **1.4.0-proposition, 14 October 2026, accepted by the operator the same day:** the series video in full screen replaces layout B (« Vidéo de série » below). **1.3.0-proposition, 13 October 2026, accepted by the operator on 14 October 2026 with video layout B, since withdrawn.** It adds three things to the accepted 1.2.0-proposition and changes nothing else: one series band, a carousel model for each of the seven series, and one 9:16 video model. A card without `series` renders exactly as in 1.2.0: the 37 non-series sample cards were rendered again with 1.3.0 and compared with the 1.2.0 references, pixel for pixel identical.
 
 The editorial frame is `docs/editorial/strategy/social-series.md` (13 October 2026): seven series, a fixed question and fixed beats per series, a video every episode, and a carousel only when the episode takes apart an attested received idea. « The accepted card system, plus one band carrying the series name and the episode number. No separate design per series. »
 
@@ -899,8 +899,271 @@ The eight questions were answered with the designer's recommendations, and the t
 7. **Teaching cards on parchment:** the week table, the formula and the side-by-side forms leave the photograph for the parchment card.
 8. **Subtitles on parchment** in `ink` without outline, the lit word on an `accent` box in #fffaf0.
 
+## Motion and sound (1.13.0-proposition)
+
+**Proposed by Claude Design on 20 October 2026 and accepted by the operator on 21 October 2026, with the designer's recommendations on its twelve questions** (« Decided by the operator on 21 October 2026 » below). Brief: `proposals/1.13.0-proposition/claude-design-brief.md`, from the operator's review of a La Minute Géographie Short on the Caprivi Strip (« je la trouve parfaite sur la forme […] Mon objectif est d'arriver à ce niveau de qualité, même sur les publications longues de plus de 4 min »). Videos will have different lengths, and several videos will cover the same country or the same people; some episodes will be about a word.
+
+Everything accepted stays: the full-screen frame (1.4.0), the map sequence (1.5.0), chapters (1.7.0) and the operator's chapter card, the double outline (1.9.0), the closing (1.10.0) and the series idents, the animated satellite map (1.11.0), the parchment card and the teaching cards (1.12.0), the head, the band, the subtitles with their lit word, the foot with its sources, the silent viewing check and the reading speed (21 characters a second at most). 1.13.0 gives all of them **one way of moving and one way of sounding**. Where it changes an accepted rule, the rule is named.
+
+Boards: `video-1130-*` in the `Video` group, with seven animated previews carrying their cues, drawn on the verified Blue Marble file by a scratch board renderer (`motion113.html`, not the engine). The example is one subject over several episodes, the Burkina Faso of series 1, its episode 2 (« Trois langues dans un nom »). Its text is demonstration text, to be checked by the episode session.
+
+**What 1.13.0 does not take** from the reference, as the brief proposes (question 12): a 1.5 s footage insert between maps; sensational wording on screen; a question as the spoken hook; a video without sources; plain subtitles; the loop ending; flashes and whip zooms everywhere; flags on peoples, or on a date when their state did not exist; a change every 1 to 2 s on a long video.
+
+### 1. Motion tokens
+
+**One family for the whole series, map and parchment alike** (question 1). Every element that arrives decelerates, every element that leaves accelerates, every move between two rests is symmetric, and every mark is drawn like a pen. Nothing moves at constant speed except the continuous camera, which grows at a constant rate.
+
+| Token        | Curve                          | Used for                                                                                 |
+| ------------ | ------------------------------ | ---------------------------------------------------------------------------------------- |
+| `ease-enter` | cubic-bezier(0.2, 0, 0, 1)     | the pop's rise, an area's swell, a flag unrolling, the headline band sliding in, a stamp |
+| `ease-exit`  | cubic-bezier(0.4, 0, 1, 1)     | a mark leaving, the band leaving, the flash's fall                                       |
+| `ease-move`  | cubic-bezier(0.45, 0, 0.55, 1) | the pop's settle, parts lifting apart and joining, the card change                       |
+| `ease-draw`  | cubic-bezier(0.4, 0, 0.2, 1)   | arrows, the dotted route, the river, the hand-drawn circle, the cross                    |
+| `ease-land`  | 1 − (1 − x)⁴                   | the date counter, which runs fast and slows as it lands                                  |
+
+| Token         | Length             | Used for                                                                |
+| ------------- | ------------------ | ----------------------------------------------------------------------- |
+| `dur-micro`   | 150 ms             | each half of a head change; the head stepping aside for a headline band |
+| `dur-pop`     | 300 ms             | the pop                                                                 |
+| `dur-exit`    | 200 ms             | a mark leaving                                                          |
+| `dur-stamp`   | 180 ms             | the key word of a headline band; the attestation stamp                  |
+| `dur-change`  | 300 ms             | the card change (1.4.0, unchanged)                                      |
+| `dur-band`    | 400 ms in, 250 out | the headline band                                                       |
+| `dur-flash`   | 500 ms             | the warm flash                                                          |
+| `dur-whip`    | 700 ms             | the whip zoom                                                           |
+| `dur-swell`   | 700 ms             | an area entering (1.11.0's length)                                      |
+| `dur-move`    | 1.6 s              | a camera move on a word (1.11.0, unchanged)                             |
+| `dur-counter` | 1.2, 1.6 or 2.0 s  | the counter: up to 20 years, up to 150 years, beyond                    |
+
+The lengths accepted before keep their values and take these curve names: 1.11.0's area (0.7 s), camera move (1.6 s) and arrows (0.8 to 1.6 s), 1.12.0's formula moves (join 450 ms, fall 500 ms, become 300 ms) and cascade. An exit takes about two thirds of its entry. Nothing bounces twice.
+
+### 2. The pop
+
+- **Entry, 300 ms.** From 70 % to 106 % in 180 ms (`ease-enter`), then down to 100 % by 300 ms (`ease-move`); opacity from 0 to 1 in the first 120 ms. It grows **from its anchor**: a place name from the side of its point, a word from its centre, a pin from its tip.
+- **Small marks** (a pin, a place dot, a badge under 60 px) rise to 110 %, so the overshoot is seen at all.
+- **No shadow added.** On the image, a text keeps the 1.9.0 double outline, which scales with it; a pin keeps a ground shadow (an ellipse at 35 %) that widens as it grows. On parchment and on the era map, texts have no outline (1.12.0).
+- **Leaving, 200 ms**: down to 92 % and out (`ease-exit`), or with its card's change. Never a reversed pop.
+- **At 430 px** (question 2): 6 % of a 40 px word is about one pixel on the phone at the top of the pop. That reads as life; past 10 %, or with a second bounce, it reads as a toy. Above 60 px (a country name in Anton 64, a stamp) the overshoot stays at 6 %.
+- **What never pops**: the head, the subtitles, the series band, the foot and the signature (they keep 1.4.0's change); areas (they swell); arrows and drawn marks (they draw); the counter (it rolls).
+
+**The swell, for areas (700 ms).** The fill rises to 135 % of its level at 55 % of the time and settles to its level at 700 ms; the outline comes in with `ease-enter`. The borders never move and never scale: an area is a fact of geography, not a sticker. Hatched areas swell through their hatching. A flag unrolls from its hoist (the left) in 600 ms.
+
+Board: `video-1130-pop.jpg`.
+
+### 3. The continuous camera
+
+- **Every map card pushes in**, 6 % of the globe's radius every 10 s, at a constant rate, towards the focal point (540, 1010), from its first frame to its last. At 430 px it moves the edge of the frame by about 1.5 px a second: felt more than seen. Marks move with the map and keep their pixel size (1.11.0).
+- **The imagery limit holds at the end of the push.** A card is framed at the limit divided by its push: a 10 s card of Burkina Faso at 5157 ÷ 1.06 = 4865. The push of one card never passes 12 %; a longer map card frames wider.
+- **A camera move on a word** (1.11.0, 1.6 s) runs over the push, which never stops: the move is multiplied with it, so there is no seam. The map does not stop on a word; the word stops the eye.
+- **Every parchment card pushes in** 3 % every 10 s, its content only, around (540, 1000). The ground's grain and glow keep their own clock (1.12.0). Band, head, subtitles, foot and signature never move.
+- **Picture phases** (question 3): **yes.** 1.4.0's slow zoom (100 to 104 % over the card) becomes the same push as the maps, 6 % every 10 s, within the picture's enlargement limit. A picture too small to push holds still and is flagged.
+- **Never static**: the chapter card and the idents move by their own glow and layers.
+
+Board: `video-1130-camera.jpg`.
+
+### 4. Transitions for the story's turns
+
+**The whip zoom, 700 ms**, between two places that one view cannot hold (more than about 2,000 km apart: Ouagadougou to Paris is 4,000 km). One camera path with zero speed at both ends: out to the globe (radius 900) in 250 ms, across in 230 ms, in to the new view in 220 ms. The blur follows the camera's speed on screen: a radial blur up to 35 % for the zoom and a directional blur up to 160 px for the pan, as averaged copies of the frame. The marks leave in the 200 ms before it; the new card's marks enter after it lands. Never inside one region (that is 1.11.0's camera move), never two within 4 s.
+
+**The warm flash, 500 ms**: one light from the centre of the frame in the brand's golds (#fff7e6 at the centre, #f0c882 at 42 %, #c9821f at the edge), rising to 92 % in 150 ms (`ease-enter`) and falling in 350 ms (`ease-exit`). What changes under it changes between 100 and 300 ms. It is **one flash**, a single light-and-dark pair: at most one in any 2 s, far under the WCAG 2.3.1 limit of three a second. Never on a chapter card or an ident.
+
+**When each is allowed:**
+
+| Turn of the story               | Transition                                        | Cue                       |
+| ------------------------------- | ------------------------------------------------- | ------------------------- |
+| a new era (a date before today) | the flash, the era map and the counter            | rise, ticks, impact       |
+| back to today                   | the flash, the satellite and the counter          | rise, ticks, impact       |
+| a new place, far away           | the whip zoom                                     | whoosh, impact on landing |
+| the twist (once a video)        | the flash, then the headline band                 | rise, whoosh, impact      |
+| a new chapter                   | the operator's chapter card, by the 300 ms change | chapter drum              |
+| anything else                   | the 300 ms change or a 1.11.0 camera move         | none                      |
+
+**One flash for every turn** (question 4). What tells an era from a twist is what follows it (the counter, or the band) and its sound, not a second light.
+
+Board: `video-1130-passages.jpg`; previews `video-1130-whip.mp4`, `video-1130-epoque.mp4`.
+
+### 5. The era map
+
+**The satellite's own imagery, re-inked as a printed map** (question 5, recommended): same projection, same view, same areas.
+
+- **Land** in `map-land` #efe6d6, darkened towards #d6c4a0 where the imagery is dark (relief) and towards an olive #cdc69c where it is green; **sea** in `map-water` #bcd3d6; **the coast** in a 3 px line of #4a3b2e at 80 %, with three engraved lines in the sea about 11, 24 and 40 px from it, at 38, 24 and 14 % of #3f5a5e; a paper texture of sepia fibres at about 8 %.
+- **No modern border** on the era map: only the areas of the period.
+- **Inks: the atlas inks of 1.2.0.** Areas in `area-a`, `area-b`, `area-c` at 34 % with their `-deep` edges, no dark keyline; texts in the Parchemin inks without outline, as on the parchment card; band, head, foot, signature and subtitles in Parchemin inks (1.12.0); a colonial power's marks in `map-ink-muted` #6e5d4c, the paper counterpart of 1.11.0's cream `map-foreign`.
+- **The switch.** The flash; under its peak, between 100 and 300 ms, the imagery turns from satellite to paper and the inks change; the counter enters with the flash. Back to today, the same flash, the counter rolls forward and the satellite returns.
+- **The rule.** The satellite is today; paper is any date before it; the date on screen says which. A period map that the episode quotes stays a document card (1.8.0).
+
+Why not a separate paper texture or a scanned old map: the coast, the rivers and the relief would no longer sit where the satellite showed them, every zoom would need its own drawing, the areas a second geometry, and an old map its licence. The toned imagery keeps one geography for every date.
+
+Board: `video-1130-epoque.jpg`.
+
+### 6. The date counter
+
+- **In the dated head's place** (1.4.0, « Long dates »): x 60, top at y 318, Anton 176/156, in `on-image-accent` with its outline on the satellite, in Parchemin `accent` #7f5212 on paper. The band stays at y 250 above it; the head's kicker and title give way to it (one head at a time). A headline band never shows with the counter.
+- **Odometer digits**, each 0.5 em wide so the number never shifts; the turning digit slides vertically.
+- **Rolls on `ease-land`**: 1.2 s up to 20 years, 1.6 s up to 150, 2.0 s beyond; it lands with a 4 % settle in 200 ms.
+- **Under it**, 300 ms after it lands, the name of the place at that date in Nunito Sans 800 36/42 (« République de Haute-Volta », « Colonie de Haute-Volta »).
+- **Its sound**: one tick per year shown, 25 a second at most, and an impact on landing.
+
+Board: `video-1130-compteur.jpg`.
+
+### 7. Drawn marks
+
+| Mark                | Says                                                            | Look                                                                                                                           | Drawn                                       |
+| ------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------- |
+| Dotted route        | one journey (a traveller, an envoy, a caravan)                  | dots of the arrow width W (5 to 10 px, 1.11.0), every 2.4 W, a 3 px dark keyline, a chevron head at 0.8 W                      | by its pen at about 500 px/s (0.8 to 2.5 s) |
+| River               | the river named by the voice                                    | core 5 px #bff0ff on a 9 px keyline at 45 %, glow 16 px #8fd8f2 blurred 7 px, breathing ±12 % at 0.5 Hz; on paper 5 px #3f6f8f | source to mouth, 1.5 to 2 s, a bright tip   |
+| Hand-drawn circle   | this place (and its name)                                       | 7 px #ffd36b on a 13 px keyline; #a3462a on paper; a slight wobble                                                             | 450 ms, overshooting its start by 25°       |
+| Cross               | a place or a thing that ended (a town destroyed, a treaty void) | two 9 px strokes, 44 px, `area-c` inks (#e3876a, #8a361f on paper)                                                             | 120 ms each, 140 ms apart                   |
+| Pin                 | here, one place at a time                                       | a 58 px drop, cream with a dark edge (#a3462a on paper)                                                                        | pops from its tip at 110 %                  |
+| Curved double arrow | an exchange                                                     | two lanes of 0.85 W, 13 px apart, bend 0.22 to 0.3, each with its head                                                         | both at once, 800 ms                        |
+
+- **1.11.0's solid arrow stays a people's movement**; the dotted route is one journey. A colonial agent's route takes the cream `map-foreign` (1.11.0).
+- **A river is ground**, like an area: it may cross out of the clear zone; its name stays inside it.
+- **They stay under the areas**: no mark is wider than the arrow width, none fills, none covers a name, at most three drawn marks on screen besides areas and arrows. A circle surrounds a place, never an area or a people; a cross never marks a people or a person.
+
+Board: `video-1130-traits.jpg`; preview `video-1130-traits.mp4`.
+
+### 8. A flag inside a territory
+
+**The rule** (question 6). A flag fills an area only when the three hold:
+
+1. the area is a state on the date shown, sovereign or self-governing with its own flag;
+2. the flag is the one in use on that date, its adoption date sourced in the script;
+3. the voice names that state.
+
+Then the flag is clipped to the area at 86 % (73 % on paper), waving (7 px, growing from the hoist, 0.6 Hz) with moving light and dark bands at 16 %; it unrolls from the hoist in 600 ms, rolls back in 400 ms when the date leaves its period, and replaces the area's fill under its outline.
+
+**A flag follows the counter.** When the date rolls, a flag rolls back as the counter passes the end of its period, and the next one unrolls as the counter passes the start of its own: on the board, Burkina Faso's flag leaves as the counter passes 1984, Upper Volta's comes in at once and leaves as it passes 1959. A period the counter crosses in less than 1 s shows no flag; only the landing date's flag stays.
+
+**Never**: on a people, a language, a kingdom whose flag is not documented for that date, a colony, nor a colonial power's flag over African land. **The line between showing and glorifying**: a colony is shown by its outline in its area's ink, its name and its dates in words, and the colonial power's marks in `map-foreign` (cream, 1.11.0) or `map-ink-muted` on paper. A conqueror's flag waving over the land says « this is ours », and that gesture is the glorification. The board shows the three cases on Burkina Faso: today's flag (since 4 August 1984), the black, white and red of Upper Volta in 1970 (1959 to 1984), and the colony in 1925 with no flag.
+
+Board: `video-1130-drapeaux.jpg`; preview `video-1130-epoque.mp4`.
+
+### 9. The headline band
+
+- **Each line its own black strip** #0b0806, from the left edge of the frame (it bleeds out), 60 px in, 34 px of padding on the right; Anton 104/112 in capitals, `on-image-text`; **the key word** in `on-image-accent`. Two lines at most, 18 characters each at most.
+- **In the head's place**, top at y 318: the head steps aside in 150 ms before it and comes back 150 ms after it. The series band stays at y 250.
+- **Slides in from the left** in 400 ms (`ease-enter`), the second line 60 ms after the first, with a horizontal motion blur that follows its speed (34 px at most); the key word stamps (118 % to 100 % in 180 ms) once its line has landed; it holds; it leaves to the right in 250 ms (`ease-exit`). The same on paper.
+- **At most two a video**: the hook's fact and the twist's number. **Only words the voice says** in that chunk, compared with the voice's words like the subtitles, and only a fact the script's sources support: no superlative that is not sourced.
+
+Board: `video-1130-bandeau.jpg`; preview `video-1130-bandeau.mp4`.
+
+### 10. Format tiers
+
+The same grammar at three lengths (question 7).
+
+| Tier   | Length        | A change every (median) | Longest gap | Whip zooms and flashes       | Headline bands | Chapters          | Recap | Intro ident | End card    |
+| ------ | ------------- | ----------------------- | ----------- | ---------------------------- | -------------- | ----------------- | ----- | ----------- | ----------- |
+| Short  | 30 s to 60 s  | 2 s                     | 3.5 s       | 3 at most                    | 1, 2 at most   | none              | 4 s   | whole       | short (5 s) |
+| Medium | 60 s to 3 min | 2.5 s                   | 4.5 s       | 5 at most                    | 2 at most      | from 90 s, 2 to 4 | 6 s   | whole       | whole (8 s) |
+| Long   | 3 to 6 min    | 3 s                     | 6 s         | one a chapter, and the twist | 2 at most      | 3 to 7, always    | 6 s   | whole       | whole (8 s) |
+
+- **A change** is a mark that enters or leaves, a camera move, a whip zoom, a flash, a card change, a headline band, a counter roll, a part's move on a word card. Not a change: a subtitle chunk, the lit word, the continuous push.
+- **Picture phases** (6 s at least, 1.11.0) and chapter cards are left out of the longest gap: they move by their push or their glow.
+- **The short end card** keeps the closing line, the invitation, the address and « Prochain épisode », without the phone searching the name. The intro ident stays whole in every tier: its fixed sentence sets its length.
+- **No loop ending** in any tier: every video ends on the series closing and the end card.
+
+Board: `video-1130-formats.jpg`.
+
+### 11. One subject over many episodes
+
+**The subject key**, fixed for every episode on the same country or people (question 8):
+
+| Fixed for the subject                                                                         | Changes with the episode                   |
+| --------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| its id (`BFA`, `PPL_…`)                                                                       | its title                                  |
+| its ink: one area ink, the subject's own area always in it (Burkina Faso: `a`)                | the areas it lights, its era, its pictures |
+| its base view (lon, lat, radius): the globe lands there and the opener frames it              | its chapters                               |
+| its title formula, the kicker « Burkina Faso · épisode 2 »                                    | its number in the series (« n° 23 »)       |
+| its thumbnail family: base view, its area lit in its ink, the formula, the title in Anton 116 | the thumbnail's title and lit area         |
+
+- **The band keeps the series and its number** (« n° 23 »). The subject's episode number goes in the kicker, never in the band: two numbers in one band read as a score.
+- **The recap card**, for episodes 2 and later, after the intro ident and before the first content card, **6 s at most** (4 s on a short), map and words (question 9): the previous episode's last map, desaturated to 30 % (a memory, not today); the kicker « Dans l'épisode précédent » and one title, the previous episode's conclusion; two or three of its marks pop again, at least 0.6 s apart; the voice says one sentence. Then the 300 ms change, and the colour comes back.
+- **The profile grid** reads as one subject: same view, same ink, same formula; only the title and the lit area change (`video-1130-vignettes.jpg`).
+
+Board: `video-1130-rappel.jpg`; preview `video-1130-rappel.mp4`.
+
+### 12. Episodes about a word
+
+The same grammar on the parchment card (1.12.0):
+
+- **The word** in Anton 170/170, centred at y 930, on one line within 960 px (a longer word at 120).
+- **Its parts lift apart** (450 ms, `ease-move`, to 80 %, 150 px apart); under each, its language as a tag (Nunito Sans 800 26 in capitals, `ink-muted`) and its sense (Nunito Sans italic 700 38, `accent`) pop in.
+- **A part joins** to make a derived form: 1.12.0's join (450 ms).
+- **Its forms** in other spellings or languages pop in around it as pills (Nunito Sans 800 44, the form's kind in 28 `ink-muted`).
+- **Its first written attestation**, a dated stamp: a double 6 px rule in #a3462a, turned −6°, the date in Anton 76 and a label in 24 px capitals; it drops from 140 % in 180 ms with an impact. One stamp per word.
+- **The map only when the word is placed**: a card change to the map, each part on its language's area (« Burkina » on Mooré, « Faso » on Dioula, « -bè » on Fulfulde).
+- **The change rate** holds with four to six moves every 10 s. **How far the parchment carries alone** (question 11): about 20 s of one word on a short, 30 s on a medium or long video. Past that, a map if the word has a place, a picture phase if not, or a new word card, not more moves on the same word.
+
+Board: `video-1130-mot.jpg`; preview `video-1130-mot.mp4`.
+
+### 13. Sound cues (a specification; the operator produces the sounds)
+
+| Motion                                                                       | Family        | Length                              | Peak under the voice's peak |
+| ---------------------------------------------------------------------------- | ------------- | ----------------------------------- | --------------------------- |
+| a pop (name, word, pin, tag, form)                                           | pop           | 60 to 90 ms                         | −20 dB                      |
+| the counter, each year shown                                                 | pop (tick)    | 30 ms, 25/s at most                 | −26 dB                      |
+| an area's swell, a flag unrolling                                            | swell         | 0.6 to 0.7 s                        | −20 dB (a flag −23)         |
+| the whip zoom                                                                | whoosh        | 0.55 s, peak on its fastest frame   | −16 dB                      |
+| the flash                                                                    | whoosh (rise) | 0.6 s, peak on the flash's peak     | −16 dB                      |
+| the headline band                                                            | whoosh        | 0.4 s in, 0.3 s out                 | −18 dB in, −24 dB out       |
+| a word's parts lifting apart; the recap card's entry (reversed)              | whoosh        | 0.3 to 0.35 s                       | −24 dB, −22 dB              |
+| a drawn mark                                                                 | draw          | the drawing's length                | −22 dB (circle, cross −20)  |
+| the stamp, the counter's landing, the band's key word, the whip's landing    | impact        | 0.45 s                              | −17 dB (whip −21)           |
+| the chapter card                                                             | chapter drum  | 1.4 s, on the current chapter's dot | −16 dB                      |
+| « S'abonner » in the intro, the networks of the end card                     | ding          | 0.9 s                               | −18 dB                      |
+| a mark leaving, the card change, the camera's push, a subtitle, the lit word | none          |                                     |                             |
+
+- **Each cue on the frame of its motion**: a pop on its first frame, a whoosh centred on the fastest frame, an impact on the landing frame, a draw for the length of the drawing.
+- **Density**: two cues in any second at most; a mark that pops within 150 ms of an impact shares it; a part and its tag share one pop.
+- **The music bed**: 17 dB under the voice, −33 LUFS short-term while the voice speaks, rising 4 dB in a pause of 0.8 s or more (attack 150 ms, release 500 ms); it plays on under chapter cards and stops with the end card.
+- **The mix**: −16 LUFS integrated (ITU-R BS.1770, EBU R128 gating), true peak −1 dBTP, loudness range 8 LU at most. The voice alone sits at −16 to −17 LUFS before the bed and cues.
+- **One palette** (question 10): the same cues for every series, the EthniAfrica way of moving; **one bed per series**, its colour, the same for every episode of a subject.
+- **Complete without sound**: every cue doubles a visible event; nothing is said by a sound alone. The silent viewing check (1.11.0) does not change.
+
+The previews carry placeholder cues synthesized for these boards and a placeholder bed, placed at these levels against a nominal voice at −16 LUFS. The voice is absent, so they are raised by 12 dB to be heard; the relations between cues and bed hold.
+
+Board: `video-1130-son.jpg`.
+
+### Boards (1.13.0)
+
+`video-1130-*` in the `Video` group: the motion tokens, the pop, the camera, the transitions, the era map, the counter, the marks, the flags, the headline band, the formats, the recap and the thumbnails, the word, the sound, the 3:4 grid crop and the frames at 430 px. Previews at 540 × 960, 30 frames a second, with their cues: `video-1130-pop.mp4`, `-whip.mp4`, `-epoque.mp4`, `-traits.mp4`, `-bandeau.mp4`, `-rappel.mp4`, `-mot.mp4`, and all seven in one (`-suite.mp4`).
+
+### For the operator to decide (answered on 21 October 2026)
+
+1. **Easing:** one family for map and parchment (recommended), or two.
+2. **The pop's overshoot:** 6 % for texts, 10 % for small marks, one bounce (recommended).
+3. **Picture phases:** the same slow push as the maps, 6 % every 10 s (recommended), or 1.4.0's 4 % kept.
+4. **The flash:** one warm flash for every turn, told apart by what follows and by its cue (recommended), or a second flash for twists.
+5. **The era map:** the satellite imagery re-inked as a printed map with the atlas tokens (recommended), or a separate paper texture.
+6. **Flags:** only a state existing on the date shown, with that date's flag, named by the voice; never a people, a colony or a colonial power's flag over African land (recommended).
+7. **Format tiers** and their targets: a change every 2, 2.5 and 3 s; the strong transitions, bands, chapters and end cards of the table (recommended).
+8. **The subject key:** id, ink, base view, title formula and thumbnail family fixed; title, areas, era, pictures and chapters per episode; the episode number in the kicker, not the band (recommended).
+9. **The recap card:** map and one line, 6 s at most (recommended), or map only, or words only.
+10. **Sound:** one cue palette for all series and one bed per series (recommended), or a palette per series.
+11. **Word episodes:** the parchment alone for about 20 s on a short and 30 s on a longer video, then a map, a picture or a new word (recommended).
+12. **What is left out**, as the brief lists it: confirmed (recommended).
+
+#### Decided by the operator on 21 October 2026
+
+The twelve questions were answered with the designer's recommendations (« j’accepte toutes les recommandations »):
+
+1. **Easing:** one family for map and parchment.
+2. **The pop:** 6 % for texts, 10 % for small marks, one bounce.
+3. **Picture phases:** the same push as the maps, 6 % every 10 s; this replaces 1.4.0's slow zoom of 4 %.
+4. **The flash:** one warm flash for every turn, told apart by what follows and by its cue.
+5. **The era map:** the satellite imagery re-inked as a printed map with the atlas tokens.
+6. **Flags:** only a state existing on the date shown, with that date's flag, named by the voice; never a people, a colony or a colonial power's flag over African land. This narrows the brief, which allowed a colony's flag.
+7. **Format tiers:** a change every 2, 2.5 and 3 s, and the strong transitions, bands, chapters, recap and end cards of the table.
+8. **The subject key:** id, ink, base view, title formula and thumbnail family fixed; the episode number in the kicker, never in the band.
+9. **The recap card:** map and one line, 6 s at most (4 s on a short).
+10. **Sound:** one cue palette for all series, one bed per series.
+11. **Word episodes:** the parchment alone for about 20 s on a short and 30 s on a longer video, then a map, a picture or a new word.
+12. **What is left out**, as the brief lists it: confirmed.
+
 ## Checks
 
+- Motion and sound (1.13.0-proposition, accepted): every move resolves to a motion token; the pop, the swell and the continuous push on their frames; whip zooms and flashes only on the story's turns, one flash in any 2 s; the era map without modern borders; flags only for a state existing on the date shown; two headline bands at most, their words among the voice's; the tier's change rate reported; the mix at −16 LUFS and −1 dBTP, and the video complete without its sound; see « Renderer integration of 1.13.0 » in Handoff.
 - Band: one line (`report.series.lines` is 1); nothing within 12 px of it on a map; tape under it.
 - Panel: 828 px at most on a series card (`report.panelMax`), credit line included.
 - Image: focal point between the band and the panel.
