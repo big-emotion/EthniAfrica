@@ -1,15 +1,17 @@
 # Series video sound
 
-The cues and music beds of the series video (EthniAfrica Cartes 1.13.0, `social/design-system/series.md`, « 13. Sound cues »). The operator produces and chooses every sound here (decision 10 of 21 October 2026): one cue palette shared by every series, one bed per series. Nothing in this folder is downloaded from a sound library or chosen in the operator's place: an agent may generate candidates at the operator's request, and only the takes the operator keeps after listening come in.
+The cues and music beds of the series video (EthniAfrica Cartes 1.13.0, `social/design-system/series.md`, « 13. Sound cues »). The operator produces and chooses every sound here (decision 10 of 21 October 2026): one cue palette shared by every series, and a default bed per series that an episode may replace with the bed of its own people's area (operator, 21 October 2026: « un fond par série par défaut, et si possible un son par épisode »). Nothing in this folder is downloaded from a sound library or chosen in the operator's place: an agent may generate candidates at the operator's request, and only the takes the operator keeps after listening come in.
 
-The first palette and beds came in on 21 October 2026: generated with ElevenLabs on the operator's account (« ok pour eleven labs »), takes b and c of every cue family kept after listening (« b et c »), and the six beds kept under a narration sample (« chaque fond musical à garder »). Each folder's `LICENCE.md` records the source and the choice. The series `villes` has no bed yet.
+The first palette and beds came in on 21 October 2026, generated with ElevenLabs on the operator's account (« ok pour eleven labs »): takes b and c of every cue family kept after listening (« b et c »), and eight beds in the style of African musical areas kept after listening alone and under narration (« je garde tous les fonds »). The operator asked for the Mande and Congolese rumba beds on the series with the most episodes. Each folder's `LICENCE.md` records the source and the choice.
 
 `social/video/mix.mjs` reads this folder. While it holds no file, the engine muxes the voice alone, as before 1.13.0, and the video is complete: every cue doubles a visible event.
 
 ## What goes where
 
 - `cues/<family>/*.wav`: any number of takes per family. The engine rotates through a family's files in name order, so a run of pops does not repeat one sample and the same plan always picks the same files.
-- `beds/<series>.wav`: one bed per series, named by the series id the band uses. It is looped to the video's length, so it should loop without a seam.
+- `beds/library/<name>.wav`: the beds, one per musical area (`akan`, `mandingue`, `touareg`, `amazigh`, `rumba-congolaise`, `afrique-du-sud`, `nigeria`, `afrique-centrale`). Each is looped to the video's length, so it loops without a seam.
+- `beds/series.json`: each series' default bed, by name (`pays` → `mandingue`, `nom-recu` → `rumba-congolaise`, `nom-famille` → `akan`, `mots` → `afrique-centrale`, `frontieres` → `touareg`, `afrique-tout` → `afrique-du-sud`, `villes` → `nigeria`).
+- An episode chooses its own bed with `"bed": "<name>"` in its sequence, from the area of the people it is about; a name the library lacks is refused. Without it, the series' default plays. A file at `beds/<series>.wav` still serves a series that `series.json` does not name.
 - A licence for every file, recorded beside it: `cues/<family>/LICENCE.md` and `beds/LICENCE.md`, naming the author, the licence and where the file comes from.
 
 WAV, PCM 16, 24 or 32-bit integer or 32-bit float, mono or stereo. Levels in the file do not matter: the engine sets each cue's peak from the voice's peak and the bed's loudness from the voice's loudness.
