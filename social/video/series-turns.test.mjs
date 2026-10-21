@@ -298,6 +298,24 @@ test("check 9: a flag on a people, on a colony or out of its state's period is r
   );
 });
 
+// The operator's answer 6 (21 October 2026): a flag's state is « named by
+// the voice ». Printed on the card is not enough: the Burkina Faso episode's
+// 1984 card shows « BURKINA FASO » as its rename while the voice says « un
+// nouveau nom », and takes no flag.
+// @req REQ-186
+test("check 9: a flag's state must be named by the voice, printed on the card is not enough", () => {
+  const flagOnPop = editCard("motion-pop", (c) => {
+    c.flags = [
+      { area: "burkina-faso", flag: "bfa", from: "1984-08-04", say: "hommes" },
+    ];
+    c.map.words.push({ text: "BURKINA FASO", at: [-1.57, 14.2], say: "nom" });
+  });
+  assert.throws(
+    () => load(motionDemo, { recap: false, ...flagOnPop }),
+    /Drapeau d'un État que la voix ne nomme pas \(« Burkina Faso »\)/
+  );
+});
+
 // Check 8: drawn marks.
 const TRAITS = at(words, "motion-traits");
 // @req REQ-186
