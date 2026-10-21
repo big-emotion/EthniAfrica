@@ -11,6 +11,7 @@ import {
   shorelineFeature,
   ringAreaKm2,
   coastOf,
+  ISLET,
 } from "./shoreline.mjs";
 
 const artefact = JSON.parse(
@@ -239,4 +240,35 @@ test("1.13.0: the era map's coast is every edge one country owns, never a shared
   assert.ok(!edges.includes("1,0|1,1"), "the shared border is no coast");
   // Outside the bounds, nothing.
   assert.deepEqual(coastOf(world, [5, 6, 5, 6]), { lines: [], land: [] });
+});
+
+// On the fixture's era cards, islets and small lakes under a degree drew
+// three engraved lines around a speck (a target in the sea) that the boards
+// never draw: a ring smaller than ISLET in both directions is neither land to
+// paint the sea around nor coast.
+// @req REQ-186
+test("1.13.0: the era map leaves out islets and lakes smaller than ISLET degrees", () => {
+  const ring = (x0, y0, size) => [
+    [x0, y0],
+    [x0 + size, y0],
+    [x0 + size, y0 + size],
+    [x0, y0 + size],
+    [x0, y0],
+  ];
+  const world = {
+    type: "FeatureCollection",
+    features: [
+      {
+        type: "Feature",
+        properties: {},
+        geometry: {
+          type: "MultiPolygon",
+          coordinates: [[ring(0, 0, 4)], [ring(5, 1, ISLET * 0.9)]],
+        },
+      },
+    ],
+  };
+  const { lines, land } = coastOf(world, [-1, 10, -1, 6]);
+  assert.equal(land.length, 1);
+  assert.ok(lines.flat().every(([lon]) => lon <= 4));
 });

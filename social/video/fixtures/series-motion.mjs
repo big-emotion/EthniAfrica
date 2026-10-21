@@ -129,7 +129,9 @@ function motionCards() {
         "Où se trouve le pays",
         {
           view: { ...VIEW },
-          areas: [{ ...BURKINA }],
+          // As on the board: the country unnamed, Ouagadougou's pin sits
+          // where its name would be.
+          areas: [{ ...BURKINA, label: "none" }],
           places: [
             place("ouaga", "Ouagadougou"),
             place("bobo", "Bobo-Dioulasso"),

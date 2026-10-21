@@ -449,6 +449,17 @@ export async function readChadGrid(assets) {
 // that belongs to one country only is a coast (the complement of
 // series-map.mjs's sharedBorders). `land` is every polygon ring touching
 // `bounds`, for the sea to be painted around. Edges are joined into lines.
+// Islets and lakes smaller than this in both directions (degrees, about
+// 90 px on a 1336 km view) are left out: engraved, they read as targets.
+export const ISLET = 0.9;
+const small = (ring) => {
+  const lons = ring.map((p) => p[0]);
+  const lats = ring.map((p) => p[1]);
+  return (
+    Math.max(...lons) - Math.min(...lons) < ISLET &&
+    Math.max(...lats) - Math.min(...lats) < ISLET
+  );
+};
 export function coastOf(world, [west, east, south, north]) {
   const inside = ([lon, lat]) =>
     lon >= west && lon <= east && lat >= south && lat <= north;
@@ -469,7 +480,7 @@ export function coastOf(world, [west, east, south, north]) {
   for (const f of world.features)
     for (const polygon of polygons(f.geometry))
       for (const ring of polygon) {
-        if (!ring.some(inside)) continue;
+        if (!ring.some(inside) || small(ring)) continue;
         land.push(ring);
         for (let i = 0; i + 1 < ring.length; i++) {
           const [a, b] = [key(ring[i]), key(ring[i + 1])];
