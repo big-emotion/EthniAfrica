@@ -12,6 +12,8 @@ import {
   ringAreaKm2,
   coastOf,
   ISLET,
+  coastRunsInFrame,
+  landRingInFrame,
 } from "./shoreline.mjs";
 
 const artefact = JSON.parse(
@@ -271,4 +273,84 @@ test("1.13.0: the era map leaves out islets and lakes smaller than ISLET degrees
   const { lines, land } = coastOf(world, [-1, 10, -1, 6]);
   assert.equal(land.length, 1);
   assert.ok(lines.flat().every(([lon]) => lon <= 4));
+});
+
+// The era map strokes the coast up to 81.5 px wide, three times, under masks:
+// on SwiftShader every vertex costs, on screen or not (a frame took 20 to
+// 40 s). Only the stretches that can reach the frame are drawn: a segment
+// whose box stays farther than the margin from the frame is dropped, and the
+// line is cut there. What reaches the frame is drawn from the same points.
+const FRAME = [0, 0, 1080, 1920];
+// @req REQ-186
+test("1.13.0: the era coast keeps the stretches within the margin of the frame, from the same points", () => {
+  const inside = [
+    [100, 100],
+    [200, 150],
+    [300, 120],
+  ];
+  assert.deepEqual(coastRunsInFrame(inside, FRAME, 42), [inside]);
+  // Out past the left edge and back: the far stretch is dropped, the line cut.
+  const line = [
+    [100, 500],
+    [-30, 500],
+    [-500, 520],
+    [-900, 700],
+    [-40, 900],
+    [200, 900],
+  ];
+  assert.deepEqual(coastRunsInFrame(line, FRAME, 42), [
+    [
+      [100, 500],
+      [-30, 500],
+      [-500, 520],
+    ],
+    [
+      [-900, 700],
+      [-40, 900],
+      [200, 900],
+    ],
+  ]);
+  // A segment that only crosses a corner of the frame stays.
+  assert.deepEqual(
+    coastRunsInFrame(
+      [
+        [-200, 100],
+        [100, -200],
+      ],
+      FRAME,
+      42
+    ).length,
+    1
+  );
+  // All of it far off the frame: nothing.
+  assert.deepEqual(
+    coastRunsInFrame(
+      [
+        [2000, 0],
+        [3000, 50],
+        [2500, 4000],
+      ],
+      FRAME,
+      42
+    ),
+    []
+  );
+});
+
+// A land ring is filled whole, so it is kept or dropped whole: dropped only
+// when its box lies past the margin on one side.
+// @req REQ-186
+test("1.13.0: the era land keeps every ring whose box meets the frame", () => {
+  const ring = (x0, y0, size) => [
+    [x0, y0],
+    [x0 + size, y0],
+    [x0 + size, y0 + size],
+    [x0, y0 + size],
+    [x0, y0],
+  ];
+  assert.equal(landRingInFrame(ring(500, 500, 10), FRAME, 42), true);
+  assert.equal(landRingInFrame(ring(-3000, -3000, 6000), FRAME, 42), true);
+  assert.equal(landRingInFrame(ring(-100, 500, 70), FRAME, 42), true);
+  assert.equal(landRingInFrame(ring(-200, 500, 70), FRAME, 42), false);
+  assert.equal(landRingInFrame(ring(500, 1970, 70), FRAME, 42), false);
 });

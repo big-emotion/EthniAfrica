@@ -14,6 +14,7 @@ import { FLAT_VERT, FLAT_FRAG, OVERLAY_SCRIPT } from "./page.mjs";
 import { flatProject, areaStyle, MARKS } from "./series-map.mjs";
 import { documentFrame } from "./series-document.mjs";
 import { TURNS } from "./series-turns.mjs";
+import { coastRunsInFrame, landRingInFrame } from "./shoreline.mjs";
 
 // Cartes 1.13.0: the inks of the era map and of the drawn marks, from the
 // design's tokens. The lilac fourth ink and the colonial power's deep ink
@@ -1411,6 +1412,17 @@ function drawAnimatedRun(node, map) {
 // flags and drawn marks. Every value comes from the frame state.
 const PAPER = ${JSON.stringify(PAPER_INKS)};
 let coastData = null;
+${coastRunsInFrame.toString()}
+${landRingInFrame.toString()}
+// The engraved lines: distance from the coast (px) and opacity.
+const ENGRAVED = [[11, 0.38], [24, 0.24], [40, 0.14]];
+// How far past the frame a dropped stretch may lie. The masks' strokes sit
+// outside the group's round joins, so they keep SVG's miter joins: a spike
+// reaches up to the miter limit (4) times the widest half width, 39.25 px,
+// 157 px. At 42 px (the round strokes' reach) a few pixels at the frame's
+// edge changed.
+const COAST_MARGIN = 160;
+const COAST_FRAME = [0, 0, 1080, 1920];
 
 // Copies of the imagery averaged along the camera's speed: radial up to
 // 35 % for the zoom, directional up to 160 px for the pan (the boards').
@@ -1460,7 +1472,7 @@ function eraCoastLayer(r) {
   sea.append(seaLand);
   lands.push(seaLand);
   g.append(svgEl("rect", { width: 1080, height: 1920, fill: PAPER.water, mask: "url(#" + id("sea") + ")" }));
-  for (const [d, o] of [[11, 0.38], [24, 0.24], [40, 0.14]]) {
+  for (const [d, o] of ENGRAVED) {
     const m = mask("line-" + d);
     const land = svgEl("path", { d: "", fill: "#000" });
     const inner = svgEl("path", { d: "", fill: "none", stroke: "#000", "stroke-width": 2 * d - 1.5 });
@@ -1483,8 +1495,10 @@ function drawCoast(coast, camera, paper) {
   const key = cameraKey(camera);
   if (coast.key === key) return;
   coast.key = key;
-  const land = coastData.land.map((ring) => ringPath(camera, ring) + "Z").join("");
-  const lines = coastData.lines.map((l) => ringPath(camera, l)).join("");
+  const project = (ring) => ring.map(([lon, lat]) => flatProject(camera, lon, lat).map((n) => +n.toFixed(1)));
+  const path = (points) => "M" + points.map((p) => p.join(",")).join("L");
+  const land = coastData.land.map(project).filter((r) => landRingInFrame(r, COAST_FRAME, COAST_MARGIN)).map((r) => path(r) + "Z").join("");
+  const lines = coastData.lines.flatMap((l) => coastRunsInFrame(project(l), COAST_FRAME, COAST_MARGIN)).map(path).join("");
   coast.lands.forEach((p) => p.setAttribute("d", land));
   coast.lines.forEach((p) => p.setAttribute("d", lines));
 }
