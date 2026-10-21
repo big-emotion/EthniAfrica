@@ -39,7 +39,7 @@ test("the script is cut into requests at each pause, with the spoken forms", () 
   assert.deepEqual(
     segments.map((s) => [s.pauseBeforeMs, s.text]),
     [
-      [7400, `Sahara vient de l'arabe sahrâ, «${NBSP}désert${NBSP}».`],
+      [7400, "Sahara vient de l'arabe sahrâ, désert."],
       [2500, "Vers 1154, al-Idrissi"],
       [0, "Il y a quatorze mille cinq cents ans environ,"],
     ]
@@ -53,6 +53,38 @@ test("the script is cut into requests at each pause, with the spoken forms", () 
   // Neighbouring requests are passed as context for the prosody.
   assert.equal(segments[1].previousText, first.text);
   assert.equal(segments[1].nextText, segments[2].text);
+});
+
+// @req REQ-186
+// Operator, 21 October 2026: a quoted word read with its guillemets came out
+// stilted, and spoiled the words around it (« écrivent « tribu » »).
+test("the voice reads a quoted word as a plain word: guillemets stay on screen only", () => {
+  const quoted = {
+    chunks: [
+      { text: `ses traducteurs écrivent «${NBSP}tribu${NBSP}» pour qabīla,` },
+      {
+        text: `en «${NBSP}tribus primitives${NBSP}»`,
+        units: [
+          "en",
+          { text: `«${NBSP}tribus`, spoken: "«tribusse" },
+          `primitives${NBSP}»`,
+        ],
+      },
+    ],
+  };
+  const [segment] = voiceSegments(quoted);
+  assert.equal(
+    segment.text,
+    "ses traducteurs écrivent tribu pour qabīla, en tribusse primitives"
+  );
+  const tribu = segment.units[3];
+  assert.equal(
+    tribu.text,
+    `«${NBSP}tribu${NBSP}»`,
+    "the screen keeps its guillemets"
+  );
+  assert.equal(segment.text.slice(tribu.from, tribu.to), "tribu");
+  assert.equal(segment.units[7].spoken, "tribusse");
 });
 
 // @req REQ-186

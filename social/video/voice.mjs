@@ -50,6 +50,12 @@ function scriptUnits(chunk, what) {
   });
 }
 
+// Guillemets are for the eye. Read aloud they made the model stiffen on the
+// quoted word and on its neighbours (operator, 21 October 2026), so the voice
+// gets the sentence plain; the screen keeps them.
+const withoutGuillemets = (text) =>
+  text.replace(/[  ]?[«»“”"][  ]?/gu, "").trim();
+
 // One request per run of chunks without a pause: a sentence keeps its
 // prosody, and a pause is silence of an exact length rather than a break tag
 // whose length the model may stretch. A chunk with `pauseBeforeMs`, even 0,
@@ -70,9 +76,12 @@ export function voiceSegments(script) {
       segments.push({ pauseBeforeMs: pause ?? 0, text: "", units: [] });
     const segment = segments.at(-1);
     for (const unit of scriptUnits(chunk, what)) {
+      const said = withoutGuillemets(unit.spoken ?? unit.text);
+      if (!said) fail(`${what}: « ${unit.text} » has nothing left to say`);
       if (segment.text) segment.text += " ";
       const from = segment.text.length;
-      segment.text += unit.spoken ?? unit.text;
+      segment.text += said;
+      if (unit.spoken) unit.spoken = said;
       segment.units.push({ chunk: c, ...unit, from, to: segment.text.length });
     }
   });
