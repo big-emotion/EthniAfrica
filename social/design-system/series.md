@@ -1,6 +1,6 @@
 # Series
 
-**1.13.0-proposition, 20 October 2026, accepted by the operator on 21 October 2026 with the designer's recommendations:** one way of moving and one way of sounding for every series video, short to long, one subject over many episodes (« Motion and sound (1.13.0-proposition) » below). **1.12.0-proposition, 20 October 2026, accepted by the operator the same day:** the parchment card, the week table one people per table, the formula in motion, drawings on teaching cards and the parchment text card (« Teaching cards in motion and the parchment card (1.12.0-proposition) » below). **1.11.0-proposition, 19 October 2026, accepted by the operator the same day:** the animated satellite map of the series video, its opening globe, area states, route arrows, drawings and words on the map (« The animated satellite map (1.11.0-proposition) » below). **Series idents, 19 October 2026, the operator's decision:** the intro bumper after the opener and the end card in place of the 1.10.0 video ending (« The series idents in the video » below). **1.10.0-proposition, 19 October 2026, accepted by the operator the same day:** a new ending for every series video and every carousel, replacing the signature line and the invitation (« The closing (1.10.0) » below). **1.9.0-proposition, 16 October 2026, accepted by the operator the same day:** a second contour under every text on the image of the series video (« Legibility on light pictures: the double outline » below). **1.8.0-proposition, 15 October 2026, accepted by the operator the same day:** the document card and three teaching cards in the series video (« Document and teaching cards » below). **1.7.0-proposition, 15 October 2026, accepted by the operator the same day:** the long series video, with chapters on screen (« Vidéo longue et chapitres » below). **1.6.0-proposition, 15 October 2026, accepted by the operator the same day:** the project's signature line at the end of every carousel and every series video (« The signature line » below). **1.5.0-proposition, 15 October 2026, accepted by the operator the same day:** a map sequence in the series video, areas and names entering on the word that says them, one map across several cards (« Map sequence » below). **1.4.1-proposition, 14 October 2026, accepted by the operator the same day:** in the series video, map cards are drawn on satellite imagery (« Map cards on satellite imagery » below); nothing else changes. **1.4.0-proposition, 14 October 2026, accepted by the operator the same day:** the series video in full screen replaces layout B (« Vidéo de série » below). **1.3.0-proposition, 13 October 2026, accepted by the operator on 14 October 2026 with video layout B, since withdrawn.** It adds three things to the accepted 1.2.0-proposition and changes nothing else: one series band, a carousel model for each of the seven series, and one 9:16 video model. A card without `series` renders exactly as in 1.2.0: the 37 non-series sample cards were rendered again with 1.3.0 and compared with the 1.2.0 references, pixel for pixel identical.
+**1.14.0-proposition, 21 October 2026, accepted by the operator the same day with the designer's recommendations:** figures and facts drawn on the map, not written: a figure head that counts what the map shows, units drawn as illustrated people and speech bubbles, two glasses for the age, names lettered across the lands they named, stamps, an empty name frame; no sentence on the map (« Figures and facts drawn on the map (1.14.0-proposition) » below). **1.13.0-proposition, 20 October 2026, accepted by the operator on 21 October 2026 with the designer's recommendations:** one way of moving and one way of sounding for every series video, short to long, one subject over many episodes (« Motion and sound (1.13.0-proposition) » below). **1.12.0-proposition, 20 October 2026, accepted by the operator the same day:** the parchment card, the week table one people per table, the formula in motion, drawings on teaching cards and the parchment text card (« Teaching cards in motion and the parchment card (1.12.0-proposition) » below). **1.11.0-proposition, 19 October 2026, accepted by the operator the same day:** the animated satellite map of the series video, its opening globe, area states, route arrows, drawings and words on the map (« The animated satellite map (1.11.0-proposition) » below). **Series idents, 19 October 2026, the operator's decision:** the intro bumper after the opener and the end card in place of the 1.10.0 video ending (« The series idents in the video » below). **1.10.0-proposition, 19 October 2026, accepted by the operator the same day:** a new ending for every series video and every carousel, replacing the signature line and the invitation (« The closing (1.10.0) » below). **1.9.0-proposition, 16 October 2026, accepted by the operator the same day:** a second contour under every text on the image of the series video (« Legibility on light pictures: the double outline » below). **1.8.0-proposition, 15 October 2026, accepted by the operator the same day:** the document card and three teaching cards in the series video (« Document and teaching cards » below). **1.7.0-proposition, 15 October 2026, accepted by the operator the same day:** the long series video, with chapters on screen (« Vidéo longue et chapitres » below). **1.6.0-proposition, 15 October 2026, accepted by the operator the same day:** the project's signature line at the end of every carousel and every series video (« The signature line » below). **1.5.0-proposition, 15 October 2026, accepted by the operator the same day:** a map sequence in the series video, areas and names entering on the word that says them, one map across several cards (« Map sequence » below). **1.4.1-proposition, 14 October 2026, accepted by the operator the same day:** in the series video, map cards are drawn on satellite imagery (« Map cards on satellite imagery » below); nothing else changes. **1.4.0-proposition, 14 October 2026, accepted by the operator the same day:** the series video in full screen replaces layout B (« Vidéo de série » below). **1.3.0-proposition, 13 October 2026, accepted by the operator on 14 October 2026 with video layout B, since withdrawn.** It adds three things to the accepted 1.2.0-proposition and changes nothing else: one series band, a carousel model for each of the seven series, and one 9:16 video model. A card without `series` renders exactly as in 1.2.0: the 37 non-series sample cards were rendered again with 1.3.0 and compared with the 1.2.0 references, pixel for pixel identical.
 
 The editorial frame is `docs/editorial/strategy/social-series.md` (13 October 2026): seven series, a fixed question and fixed beats per series, a video every episode, and a carousel only when the episode takes apart an attested received idea. « The accepted card system, plus one band carrying the series name and the episode number. No separate design per series. »
 
@@ -1161,8 +1161,154 @@ The twelve questions were answered with the designer's recommendations (« j’a
 11. **Word episodes:** the parchment alone for about 20 s on a short and 30 s on a longer video, then a map, a picture or a new word.
 12. **What is left out**, as the brief lists it: confirmed.
 
+## Figures and facts drawn on the map (1.14.0-proposition)
+
+**Proposed by Claude Design and accepted by the operator on 21 October 2026, with the designer's recommendations on its eight questions** (« Decided by the operator on 21 October 2026 » below). Brief: `proposals/1.14.0-proposition/claude-design-brief.md`, from the operator's review on 21 October 2026 of the episode « Afrique » (series 6 « L'Afrique n'est pas un tout », n° 1), rendered on Cartes 1.13.0: « Ça ne sert à rien d'avoir une carte représentative et d'afficher du texte. […] Si on affiche une carte, à ce moment-là, il faut insérer des choses dans la carte pour représenter ce qu'on veut montrer. »
+
+**The problem.** 1.11.0 decided that the map says the key facts in words, so the video reads without sound. With the subtitles burned in, the map repeated them: the episode wrote 22 texts on its maps, five on its figures card alone, most of them the subtitle's own words, stacked over the continent (`video-1140-avant.jpg`).
+
+**The principle.** The subtitles carry the words; the map carries the facts.
+
+1. **A figure the voice says becomes a drawing** on the map or beside it, never a sentence on the map.
+2. **Text on the map is kept for names and dates**: a place, an area, a people, a language, a person, a year or a century. A number is written once, in the figure head (below), with its unit word.
+3. **Every drawing states its unit and its source** in the foot (« 1 personnage = 100 millions d'habitants », with the drawing beside it), and the number it shows is the number the voice says.
+4. **Units are placed by the source's own breakdown** (by region), never as decoration. When the source gives no breakdown, the units stand in a row in the map band, off the land.
+5. **Nothing is drawn that the narration and its sources do not say**: no invented name, no city the voice does not name, no stamp the narration does not pronounce.
+6. **The silent viewing check counts the new drawings as marks of a fact**, so the video still reads without sound.
+
+Everything accepted stays: the motion and sound of 1.13.0 (the pop, the swell, the push, the headline bands, drawn marks, the cue palette), the subtitles with their lit word, the head and the band, the foot with its sources, the reading speed, the double outline, the map band (y 724 to 1296), eight texts at most on the map. **1.11.0's « Words on the map » changes**: the free phrase on the map is retired (question 4); a map word is a name, a date or a century.
+
+Boards: `video-1140-*` in the `Video` group, with five animated previews of the episode's own cards on its own voice, mixed with the operator's cue palette and the series' bed (« afrique-du-sud ») at −16 LUFS, drawn by a scratch board renderer (`motion114.html`, not the engine). The units' placement by region is demonstration, to be checked against the sources' breakdown.
+
+### 1. The figure head
+
+The number the voice says sits in the head's place, as 1.13.0's date counter: x 60, top at y 318.
+
+- **Number** in Anton 176/156, `on-image-accent`; **unit word** under it in Nunito Sans 800 44/52, `on-image-ink` (« pays », « d'habitants », « dans le monde », « langues »); an optional line above in Nunito Sans 800 36/42, `on-image-accent` (« plus de »).
+- **It counts what the map shows.** The number is the count of the drawings on screen: 54 when the 54th state has swelled, « 1,5 milliard » when the 15th figure has popped. It never runs ahead of the drawing.
+- **One head at a time**: the card's kicker and title step aside while a figure shows; figures replace one another by 1.4.0's head change (150 ms out, 150 ms in).
+- **In the head's place, not on the continent** (question 3): the map stays clear for the drawings, and a figure reads like the dated head of 1.4.0. The variant anchored on the continent covers the units it counts (`video-1140-ancre.jpg`).
+
+### 2. The states' cascade
+
+« De 54 pays »: the 54 states swell one by one, west to east, in 1.5 s, each with 1.13.0's swell (700 ms), while the figure head counts them to 54. They step back to context (fill at 40 %) when the next figure comes. Territories the source does not count (Western Sahara, Somaliland) keep a dashed outline, unlit and unnamed; the episode's source decides the list, not the design (question 6). Sound: a tick per state (25 a second at most), an impact when the count lands.
+
+### 3. People as units
+
+« D'un milliard et demi d'habitants »: **1 personnage = 100 millions** (question 2), 15 figures.
+
+- **The figures** are drawn in 1.11.0's hand, not flat pictograms: six variants (a woman in a head wrap, a man in a shirt, a child, an elder in a long robe with a cane, a young woman, a young man), three skin washes, no face, no symbol. 92 px tall at 1080 (37 px at 430).
+- **Placed by region** from the source's breakdown (on the boards, demonstration: East 5, West 4, North 3, Centre 2, South 1), west to east, one every 90 ms, each by the pop from its feet (110 %).
+- They step back to 35 % when the next fact comes, and leave with it.
+- The foot gives the unit with a small figure: « 1 personnage = 100 millions d'habitants ».
+- Sound: a tick per figure, a pop on the last.
+
+### 4. One in five
+
+« Près d'une personne sur cinq dans le monde »: a row of five figures stands in the map band (118 px tall, 116 px apart, feet at y 1240), four in a muted wash for the world, and on « cinq » the middle one takes its colours and an accent ring at its feet. The figure head reads « 1 sur 5 », « dans le monde ».
+
+### 5. Two glasses for the age
+
+« La moitié des Africains a moins de 20 ans ; dans le monde, la moitié a moins de 31 ans. »
+
+- **Recommended** (question 1): two separate glasses in the map band, the silhouette of Africa and a globe, each with an age scale on its side (0, 20, 40, 60 ans). Each fills to its median age with `ease-land` over 1.2 s, Africa on « moitié » to 20, the world on « monde » to 31, so each fact has its mark within 0.7 s of its first word. The age is written on the waterline inside the glass (Anton 72, `on-image-accent`), the name under it (« Afrique », « monde »). The difference shows as two water levels.
+- **The operator's version** (`video-1140-age.jpg`, right): the map of Africa filled halfway from the bottom, « 20 ans » beside it. It reads as geography: « the south is younger », which the figure does not say.
+- The glasses come in on « moitié » and leave before the next fact; the people and the row are gone by then.
+
+### 6. Languages as bubbles
+
+« Et de plus de 2 000 langues »: **1 bulle = 100 langues**, 20 speech bubbles drawn in the same hand (cream paper, ink line, three ochre voice strokes), placed by region from the source's breakdown (demonstration: West 9, Centre 5, East 3, South 2, North 1), one every 50 ms; the figure head reads « plus de », « 2 000 », « langues ». Sound: a tick per bubble, a pop on the last.
+
+### 7. Readings pinned where they come from
+
+« D'autres lectures existent : berbère, phénicienne, latine, grecque. »
+
+- The view pulls back to the Mediterranean (1.11.0's camera move, 1.6 s).
+- Each reading's language name (a name, so allowed) pops where the language comes from: the Aurès, Tyre, Rome, Athens. A teal arrow draws from it to Carthage, the place the word named (0.6 to 0.8 s, `ease-draw`).
+
+### 8. The unknown origin, stamped
+
+« Et l'origine du mot reste inconnue »: the readings step back to 35 %; the word as the Romans wrote it, « AFRICA », is lettered above Carthage, and a stamped « ? » drops beside it (180 ms, impact).
+
+### 9. Names lettered across the lands they named
+
+« Libye », « Éthiopie », « Alkebulan », « Kemet »:
+
+- Each name is set across the region it named, in old-atlas capitals: Fraunces 700, tracked 0.26 em, 50 to 64 px, cream with an 11 px dark outline, along a gentle arc. It appears letter by letter, 50 to 70 ms apart (a `draw` cue for its length).
+- « LIBYE » over the north, « ÉTHIOPIE » over the south, « ALKEBULAN » across the whole continent, « KEMET » over Egypt after the camera moves there (Egypt's area swells).
+- An earlier name steps back to 35 % when the next comes.
+- « A. Thevet, 1575 » stays a name and a date.
+
+### 10. A stamp: a verdict the narration says
+
+« … l'appellent « Alkebulan », sans citer de source »: a stamp « sans source » drops on the continent under the name. A map stamp holds two words at most, a verdict the narration pronounces (« sans source », « ? »): cream paper (#f6efe2 at 94 %), a double 6 px rule and text in `stamp-ink` #a3462a, turned −6 to −8°, from 140 % to 100 % in 180 ms, with an impact.
+
+### 11. An empty name frame, and a name brought from outside
+
+« Les sources que nous avons lues ne montrent pas de nom commun, venu de l'intérieur, pour tout le continent. »
+
+- An empty old-map cartouche draws itself over the continent (900 ms, as a pen, cream on a dark keyline), with a dashed line breathing where a name would be. No name is invented to fill it.
+- On « étendu depuis l'extérieur », 1.13.0's cream arrow from the north is already drawn. The name « AFRIQUE » travels along it, from 55 % to full size in 950 ms (`ease-move`), and settles into the frame as the voice says « l'extérieur ».
+- The headline band of the episode (« Étendu depuis l'extérieur ») stays.
+
+### 12. A drawing that travels
+
+« … écrit une description de l'Afrique qui sera longtemps la principale source de l'Europe »:
+
+- A drawn book (the series' hand: a leather codex with a tooled frame, no symbol) pops at Fès on « description ».
+- On « longtemps » it travels along a dotted route to Italy (1.9 s, `ease-move`).
+- « Europe » (a name) pops as it arrives.
+- No city is named that the voice does not say.
+
+### 13. The silent viewing check, extended
+
+1.11.0's check (every fact said during a map phase has a mark on screen 80 % of its time, the first within 700 ms) counts the new marks:
+
+| Mark                                      | Counts when                                          |
+| ----------------------------------------- | ---------------------------------------------------- |
+| `count:<id>` (the figure head)            | it shows the spoken number or is counting towards it |
+| `cascade:<id>`, `units:<id>`, `row:<id>`  | the first unit has popped                            |
+| `gauge:<id>`                              | its fill has started                                 |
+| `lettering:<text>`                        | half its letters show                                |
+| `stamp:<id>`, `frame:<id>`, `travel:<id>` | at 60 % opacity                                      |
+
+Measured on the boards' plans: the figures card passes its six facts with no text on the map (before: five texts), each first mark within 0.5 s of its first word; the world's glass starts filling on « monde » so its fact is marked within 0.35 s. On the five cards drawn, the 1.13.0 render wrote 19 texts on the maps, 16 of them sentences; this proposal writes no sentence, only names, dates and the figure head.
+
+### Boards (1.14.0)
+
+`video-1140-*` in the `Video` group:
+
+- the boards: before, the figure head, the cascade, people and one in five, the age (both versions), languages, readings, lettering, the empty frame, the travelling book, the units' foot keys, the 3:4 grid crop and the frames at 430 px;
+- the drawings sheet;
+- five previews at 540 × 960, 30 frames a second, on the episode's voice: `video-1140-chiffres.mp4`, `-lectures.mp4`, `-livre.mp4`, `-noms.mp4`, `-cadre.mp4`, and all five in one (`-suite.mp4`).
+
+### For the operator to decide (answered on 21 October 2026)
+
+1. **The age figure:** two glasses with an age scale, each filled to its median age (recommended), or the map of Africa filled halfway from the bottom.
+2. **The people unit:** 1 figure for 100 million, 15 on the continent (recommended); 50 million gives 30 figures, too many at 430 px; 200 million does not divide 1.5 billion.
+3. **The figure head:** in the head's place (recommended), or anchored on the continent.
+4. **Sentences on the map:** never (recommended). A sentence the video must show goes into the headline band (1.13.0, two a video, the voice's words) or onto a parchment card; the signed position stays a picture phase with « Nous pensons » (1.7.0).
+5. **Placing the units:** by region from the source's breakdown, or in a row off the land when the source has none (recommended); never scattered for decoration.
+6. **Territories the source does not count** (Western Sahara, Somaliland): a dashed outline, unlit and unnamed (recommended).
+7. **The new drawings** (six people, the speech bubble, the book): as drawn (recommended).
+8. **Stamps on the map:** only a verdict the narration says, two words at most (recommended).
+
+#### Decided by the operator on 21 October 2026
+
+The eight questions were answered with the designer's recommendations (« ok pour tes recommandations »):
+
+1. **The age:** two glasses with an age scale, each filled to its median age; not the map filled from the bottom.
+2. **The people unit:** 1 figure for 100 million, 15 on the continent.
+3. **The figure head:** in the head's place.
+4. **Sentences on the map:** never; a sentence goes to the headline band or a parchment card, and the signed position stays a picture phase.
+5. **Placing units:** by the source's regional breakdown, or in a row off the land when the source has none; never scattered for decoration.
+6. **Territories the source does not count** (Western Sahara, Somaliland): a dashed outline, unlit and unnamed.
+7. **The new drawings** (six people, the speech bubble, the book): as drawn.
+8. **Stamps on the map:** only a verdict the narration says, two words at most.
+
 ## Checks
 
+- Figures drawn on the map (1.14.0-proposition, accepted): the figure head counts the drawings on screen and lands on the spoken figure; units divide the figure and are placed by the source's breakdown, their unit in the foot; no phrase on a map, only names, dates and centuries; stamps only for a verdict the narration says; the new marks counted by the silent viewing check; see « Renderer integration of 1.14.0 » in Handoff.
 - Motion and sound (1.13.0-proposition, accepted): every move resolves to a motion token; the pop, the swell and the continuous push on their frames; whip zooms and flashes only on the story's turns, one flash in any 2 s; the era map without modern borders; flags only for a state existing on the date shown; two headline bands at most, their words among the voice's; the tier's change rate reported; the mix at −16 LUFS and −1 dBTP, and the video complete without its sound; see « Renderer integration of 1.13.0 » in Handoff.
 - Band: one line (`report.series.lines` is 1); nothing within 12 px of it on a map; tape under it.
 - Panel: 828 px at most on a series card (`report.panelMax`), credit line included.

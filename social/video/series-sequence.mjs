@@ -45,7 +45,26 @@ import {
   FLAGS,
 } from "./series-turns.mjs";
 import { loadRiver } from "./rivers.mjs";
+import {
+  FIGURES,
+  FIGURE_MARKS,
+  planFigures,
+  figuresAt,
+  figureTexts,
+  figureMarkOn,
+  figureHeadAt,
+  letteringFits,
+  unitBox,
+} from "./series-figures.mjs";
+import {
+  arrowCurve,
+  cumulative,
+  pointAt,
+  polyline,
+  arrowHead,
+} from "./series-paths.mjs";
 import { RECAP } from "./series-subject.mjs";
+import { dirname } from "node:path";
 
 // Frames at 30 fps (handoff.md, « Timing » and « Change of view »).
 export const SEQUENCE_TIMING = {
@@ -1054,101 +1073,6 @@ function cardCamera(cp, frame) {
   return { camera: { ...camera }, moving: false };
 }
 
-// An arrow's path on screen: a quadratic curve bent by `bend` of its length
-// to one side, or a Catmull-Rom curve through its via points.
-function arrowCurve(a, camera) {
-  const pts = [a.from, ...(a.via ?? []), a.to].map((p) =>
-    flatProject(camera, ...p)
-  );
-  const out = [];
-  if (pts.length === 2) {
-    const [A, B] = pts;
-    const [dx, dy] = [B[0] - A[0], B[1] - A[1]];
-    const C = [
-      (A[0] + B[0]) / 2 - dy * a.bend,
-      (A[1] + B[1]) / 2 + dx * a.bend,
-    ];
-    for (let i = 0; i <= 80; i++) {
-      const s = i / 80;
-      const u = 1 - s;
-      out.push([
-        u * u * A[0] + 2 * u * s * C[0] + s * s * B[0],
-        u * u * A[1] + 2 * u * s * C[1] + s * s * B[1],
-      ]);
-    }
-    return out;
-  }
-  for (let k = 0; k < pts.length - 1; k++) {
-    const [p0, p1, p2, p3] = [
-      pts[Math.max(0, k - 1)],
-      pts[k],
-      pts[k + 1],
-      pts[Math.min(pts.length - 1, k + 2)],
-    ];
-    for (let j = 0; j < 40; j++) {
-      const u = j / 40;
-      const [u2, u3] = [u * u, u * u * u];
-      out.push(
-        [0, 1].map(
-          (c) =>
-            0.5 *
-            (2 * p1[c] +
-              (-p0[c] + p2[c]) * u +
-              (2 * p0[c] - 5 * p1[c] + 4 * p2[c] - p3[c]) * u2 +
-              (-p0[c] + 3 * p1[c] - 3 * p2[c] + p3[c]) * u3)
-        )
-      );
-    }
-  }
-  out.push(pts.at(-1));
-  return out;
-}
-const cumulative = (pts) => {
-  const c = [0];
-  for (let i = 1; i < pts.length; i++)
-    c.push(
-      c[i - 1] +
-        Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1])
-    );
-  return c;
-};
-function pointAt(pts, cum, length) {
-  const L = Math.min(Math.max(length, 0), cum.at(-1));
-  let i = 1;
-  while (i < cum.length - 1 && cum[i] < L) i++;
-  const s = (L - cum[i - 1]) / Math.max(1e-6, cum[i] - cum[i - 1]);
-  const [a, b] = [pts[i - 1], pts[i]];
-  return {
-    x: a[0] + (b[0] - a[0]) * s,
-    y: a[1] + (b[1] - a[1]) * s,
-    angle: Math.atan2(b[1] - a[1], b[0] - a[0]),
-  };
-}
-const xy = (p) => `${p[0].toFixed(1)},${p[1].toFixed(1)}`;
-function polyline(pts, cum, a, b) {
-  const p = pointAt(pts, cum, a);
-  const q = pointAt(pts, cum, b);
-  const inner = pts.filter((_, i) => cum[i] > a && cum[i] < b);
-  return "M" + [[p.x, p.y], ...inner, [q.x, q.y]].map(xy).join("L");
-}
-// The notched head, 3.6 w long and 3.2 w wide, its point on the tip.
-function arrowHead(p, w) {
-  const [L, W] = [3.6 * w, 3.2 * w];
-  const [c, s] = [Math.cos(p.angle), Math.sin(p.angle)];
-  const P = (f, g) => [p.x + c * f - s * g, p.y + s * f + c * g];
-  return {
-    x: p.x,
-    y: p.y,
-    angle: p.angle,
-    d:
-      "M" +
-      [P(0, 0), P(-L, W / 2), P(-L * 0.72, 0), P(-L, -W / 2)]
-        .map(xy)
-        .join("L") +
-      "Z",
-  };
-}
-
 // A phrase on the map: 26 characters a line, two lines at most.
 function wrapPhrase(spec, text) {
   const lines = [];
@@ -1241,9 +1165,30 @@ function planAnimatedCard(seq, plan, run, k) {
   }
   const cp = { card: i, start, end, view: view.camera, globe, moves };
   const cameraAt = (f) => cardCamera(cp, f).camera;
+  // 1.13.0 and 1.14.0: a place by its id among the run's places, or a point.
+  const placeAt = placeFinder(seq, run, what);
+  // 1.14.0: a pin is a reading's name popped where its language comes from,
+  // with a teal arrow (ink b) to the place the word named; it steps back to
+  // 35 % on its `dim`.
+  const pins = (spec.pins ?? []).map((p) => ({
+    id: p.id,
+    from: p.at,
+    to: placeAt(p.to),
+    say: p.say,
+    bend: p.bend ?? 0.12,
+    pin: true,
+    ...(typeof p.to === "string" && {
+      place: {
+        name: placeAt.places[p.to].name,
+        at: placeAt.places[p.to].at,
+        side: placeAt.places[p.to].side ?? "right",
+      },
+    }),
+    ...(p.dim !== undefined && { dim: p.dim }),
+  }));
   // Arrows in the order of their words, one drawing at a time.
   const arrows = [];
-  const said = (map.arrows ?? [])
+  const said = [...(map.arrows ?? []), ...pins]
     .map((a) => ({ a, at: word(a.say) }))
     .sort((x, y) => x.at - y.at);
   for (const { a, at } of said) {
@@ -1254,7 +1199,7 @@ function planAnimatedCard(seq, plan, run, k) {
     );
     const shape = { from: a.from, to: a.to, via: a.via, bend: a.bend ?? 0.18 };
     const length = cumulative(arrowCurve(shape, cameraAt(s))).at(-1);
-    const [lo, hi] = MAP_TIMING.arrow;
+    const [lo, hi] = a.pin ? FIGURES.pinArrow : MAP_TIMING.arrow;
     const dur = Math.min(
       hi,
       Math.max(lo, Math.round(length / MAP_TIMING.arrowPx))
@@ -1263,7 +1208,10 @@ function planAnimatedCard(seq, plan, run, k) {
       id: a.id,
       ...shape,
       both: !!a.both,
-      ink: markInk(a, seq.inks, `${what}, arrow ${a.id}`),
+      ink: a.pin ? "b" : markInk(a, seq.inks, `${what}, arrow ${a.id}`),
+      ...(a.pin && { pin: true }),
+      ...(a.place && { place: a.place }),
+      ...(a.dim !== undefined && { dim: word(a.dim) }),
       start: s,
       dur,
       length,
@@ -1284,7 +1232,18 @@ function planAnimatedCard(seq, plan, run, k) {
     end: d.until !== undefined ? word(d.until) : Infinity,
     label: d.label ?? ILLUSTRATIONS[d.kind],
   }));
-  const words = (map.words ?? [])
+  // 1.14.0: a pin's name under its point, in the reading arrow's ink.
+  const pinWords = (spec.pins ?? []).map((p) => ({
+    text: p.name,
+    kind: "name",
+    at: p.at,
+    // Under its point (above with `side: "above"`), or `dy` px from it.
+    offset: p.dy ?? (p.side === "above" ? -38 : 40),
+    say: p.say,
+    ink: "b",
+    ...(p.dim !== undefined && { dim: p.dim }),
+  }));
+  const words = [...(map.words ?? []), ...pinWords]
     .map((w) => {
       const kind = w.kind ?? "phrase";
       return {
@@ -1293,13 +1252,14 @@ function planAnimatedCard(seq, plan, run, k) {
         // A colony's name set as a word counts among the names, not the words.
         word: kind !== "name" && kind !== "country",
         lines:
-          kind === "date" || kind === "country"
+          kind === "date" || kind === "country" || kind === "century"
             ? [w.text]
             : wrapPhrase(spec, w.text),
         ...(w.offset && { offset: w.offset }),
         at: w.at,
         start: w.sayFrame ?? word(w.say),
         ...(w.until !== undefined && { until: word(w.until) }),
+        ...(w.dim !== undefined && { dim: word(w.dim) }),
         ink:
           w.people !== undefined || w.ink !== undefined
             ? markInk(w, seq.inks, `${what}, « ${w.text} »`)
@@ -1340,6 +1300,19 @@ function planAnimatedCard(seq, plan, run, k) {
     : [];
   const marks = planMarks(seq, i, run, cameraAt, areaById);
   const pushed = (c, f) => pushedCamera(c, plan.shots[i], f);
+  // 1.14.0: the figures drawn on the map, on the camera as pushed; units
+  // are placed in the band the rest of the card's push leaves them.
+  const shotPush = (f) => pushAt(f - plan.shots[i].from);
+  const figures = planFigures(seq, i, {
+    word,
+    end,
+    dir: dirname(seq.cardsFile),
+    cameraAt: (f) => pushed(cameraAt(f), f),
+    pushFrom: (f) => shotPush(end) / shotPush(f),
+    placeAt,
+    areaOf: (id) => areaById(id),
+    arrowOf: (id) => arrows.find((a) => a.id === id),
+  });
   // The frames the imagery shows: the globe's dive and every move.
   const cameras = [];
   if (globe)
@@ -1360,6 +1333,7 @@ function planAnimatedCard(seq, plan, run, k) {
     rename,
     flags,
     marks,
+    figures,
     // 1.13.0: the recap card's map is a memory, desaturated.
     recap: !!spec.isRecap,
     facts: map.facts ?? [],
@@ -1486,10 +1460,8 @@ const isPoint = (p) =>
 const clampFrames = (length, [lo, hi]) =>
   Math.min(hi, Math.max(lo, Math.round(length / DRAWN.pxPerFrame)));
 
-function planMarks(seq, i, run, cameraAt, areaById) {
-  const card = seq.cards[i];
-  const what = `Card ${card.id}`;
-  const word = (w) => wordOf(seq, i, w).frame;
+// A place by its id among the run's places (1.13.0), or a [lon, lat] point.
+function placeFinder(seq, run, what) {
   const places = {};
   for (const j of run.cards)
     for (const p of seq.cards[j].map.places ?? []) if (p.id) places[p.id] = p;
@@ -1499,6 +1471,16 @@ function planMarks(seq, i, run, cameraAt, areaById) {
     if (!p) fail(`${what}: lieu inconnu pour un trait : « ${ref} »`);
     return p.at;
   };
+  placeAt.places = places;
+  return placeAt;
+}
+
+function planMarks(seq, i, run, cameraAt, areaById) {
+  const card = seq.cards[i];
+  const what = `Card ${card.id}`;
+  const word = (w) => wordOf(seq, i, w).frame;
+  const placeAt = placeFinder(seq, run, what);
+  const places = placeAt.places;
   return (card.marks ?? []).map((m) => {
     if (!KINDS.includes(m.kind))
       fail(`${what}: un trait est ${KINDS.join(", ")} (« ${m.kind} »)`);
@@ -1698,6 +1680,12 @@ function drawnMarks(cp, frame, camera, proportion, fade, shown) {
   });
 }
 
+// 1.14.0: a reading steps back to 35 % from its `dim` frame.
+const dimmed = (frame, dim) =>
+  dim === undefined || frame < dim
+    ? 1
+    : 1 - (1 - FIGURES.dim) * ramp(frame - dim, FIGURES.dimFrames);
+
 // The marks of one card at a frame, faded by `fade` (the card change).
 function cardMarks(cp, frame, camera, proportion, fade, names) {
   const at = (p) => flatProject(camera, ...p);
@@ -1721,12 +1709,50 @@ function cardMarks(cp, frame, camera, proportion, fade, names) {
       Math.min(1, (frame - a.start) / MAP_TIMING.arrowFade) *
       (1 - (1 - MAP_TIMING.traceTo) * traced) *
       (1 - out) *
+      dimmed(frame, a.dim) *
       fade *
       shown(a.start);
     if (opacity <= 0 && frame > a.start) return [];
     const w = proportion.w;
     const Lh = 3.6 * w;
-    const [lo, hi] = [8, L - 14];
+    // A reading's arrow stops where its head is 12 px clear of its place's
+    // dot and name (1.14.0): several readings meet on one named place.
+    const lo = 8;
+    let hi = L - 14;
+    if (a.place) {
+      const [px, py] = flatProject(camera, ...a.place.at);
+      const wn = estimateWidth(a.place.name, 28, MARKS.styles.place.ratio);
+      const clear = [
+        { x: px - 8, y: py - 8, w: 16, h: 16 },
+        {
+          x: a.place.side === "left" ? px - 14 - wn : px + 14,
+          y: py - 16,
+          w: wn,
+          h: 32,
+        },
+      ];
+      const near = (h) => {
+        const xs = h.d.match(/-?[\d.]+/gu).map(Number);
+        const [hx, hy] = [
+          xs.filter((_, n) => !(n % 2)),
+          xs.filter((_, n) => n % 2),
+        ];
+        const b = {
+          x: Math.min(...hx),
+          y: Math.min(...hy),
+          w: Math.max(...hx) - Math.min(...hx),
+          h: Math.max(...hy) - Math.min(...hy),
+        };
+        return clear.some(
+          (c) =>
+            b.x - 12 < c.x + c.w &&
+            c.x - 12 < b.x + b.w &&
+            b.y - 12 < c.y + c.h &&
+            c.y - 12 < b.y + b.h
+        );
+      };
+      while (hi > lo + 40 && near(arrowHead(pointAt(pts, cum, hi), w))) hi -= 3;
+    }
     let [s0, s1] = [lo, lo + (hi - lo) * k];
     if (a.both) {
       const [mid, half] = [(lo + hi) / 2, ((hi - lo) / 2) * k];
@@ -1746,8 +1772,10 @@ function cardMarks(cp, frame, camera, proportion, fade, names) {
         w,
         k,
         opacity,
-        // Once it starts to trace or leave, it no longer counts as full.
+        // Once it starts to trace or leave, it no longer counts as full;
+        // a pin's arrow belongs to its reading (1.14.0), not to the routes.
         full:
+          !a.pin &&
           !(a.trace !== undefined && frame >= a.trace) &&
           !(a.out !== undefined && frame >= a.out),
         d: lineB > lineA ? polyline(pts, cum, lineA, lineB) : "",
@@ -1790,7 +1818,7 @@ function cardMarks(cp, frame, camera, proportion, fade, names) {
     if (frame < w.start) return [];
     // 1.13.0: a word pops on its word and leaves by the exit.
     const pop = popExit(frame, w.start, w.end);
-    const opacity = pop.opacity * fade * shown(w.start);
+    const opacity = pop.opacity * dimmed(frame, w.dim) * fade * shown(w.start);
     if (opacity <= 0) return [];
     const [x, y0] = at(w.at);
     // Two recap texts named at one place stand one under the other.
@@ -1877,7 +1905,11 @@ function cardMarks(cp, frame, camera, proportion, fade, names) {
     };
   }
   const drawn = drawnMarks(cp, frame, camera, proportion, fade, shown);
-  return { arrows, drawings, words, places, rename, drawn };
+  // 1.14.0: the figures drawn on the map.
+  const figures = cp.figures
+    ? [figuresAt(cp.figures, frame, camera, fade, shown)]
+    : [];
+  return { arrows, drawings, words, places, rename, drawn, figures };
 }
 
 // The texts on the map at a frame, with their estimated boxes: what the
@@ -1921,7 +1953,11 @@ function mapTexts(names, marks) {
     });
   for (const w of marks.words) {
     const [bw, bh] = styleBox(
-      w.kind === "date" || w.kind === "country" ? w.kind : "phrase",
+      w.kind === "century"
+        ? "dates"
+        : w.kind === "date" || w.kind === "country"
+          ? w.kind
+          : "phrase",
       w.lines
     );
     texts.push({
@@ -1949,6 +1985,9 @@ function mapTexts(names, marks) {
         box: textBox(t.x, t.y + t.dy, bw * t.scale, bh * t.scale),
       });
     }
+  // 1.14.0: letterings, stamps, the glasses' ages and names, a name brought
+  // into its frame, a word that travels.
+  for (const f of marks.figures ?? []) texts.push(...figureTexts(f));
   return texts;
 }
 
@@ -2082,7 +2121,14 @@ function animatedRunState(seq, r, frame) {
       1 - t / CROSS_FADE,
       0
     );
-    for (const key of ["arrows", "drawings", "words", "places", "drawn"])
+    for (const key of [
+      "arrows",
+      "drawings",
+      "words",
+      "places",
+      "drawn",
+      "figures",
+    ])
       marks[key] = [...old[key], ...marks[key]];
     marks.rename ??= old.rename;
   }
@@ -2183,10 +2229,10 @@ function checkAnimatedCard(seq, i) {
         `${what}: Trop de traits à la fois (${map.marks.drawn.map((m) => m.kind).join(", ")}, image ${f})`
       );
     if (map.moving) continue;
-    for (const t of shown)
+    for (const t of shown.filter((x) => !x.moving))
       if (!inside(t.box, MARKS.band))
         fail(
-          `${what}: « ${t.text} » hors de la bande de la carte (y ${Math.round(t.box.y)} à ${Math.round(t.box.y + t.box.h)}, image ${f})`
+          `${what}: « ${t.text} » hors de la bande de la carte (x ${Math.round(t.box.x)} à ${Math.round(t.box.x + t.box.w)}, y ${Math.round(t.box.y)} à ${Math.round(t.box.y + t.box.h)}, image ${f})`
         );
     for (const d of map.marks.drawings) {
       const box = {
@@ -2197,6 +2243,18 @@ function checkAnimatedCard(seq, i) {
       };
       if (!inside(box, MARKS.band))
         fail(`${what}: le dessin ${d.kind} hors de la bande de la carte`);
+    }
+    // 1.14.0: units in the map band, every letter of a lettering on its
+    // path.
+    for (const fig of map.marks.figures) {
+      for (const u of fig.units)
+        if (!inside(unitBox(u.kind, u.x, u.y), MARKS.band))
+          fail(
+            `${what}: une unité ${u.id} hors de la bande de la carte (image ${f})`
+          );
+      for (const l of fig.letterings)
+        if (!letteringFits(l))
+          fail(`${what}: « ${l.text} » déborde de son tracé`);
     }
   }
 }
@@ -2210,8 +2268,16 @@ const bare = (unit) => unit.replace(/^[\p{P}\s]+|[\p{P}\s]+$/gu, "");
 function factSpan(seq, card, say) {
   const words = seq.chunks
     .filter((c) => c.card === card)
+    // A unit written with a space (« 2 000 ») is read as its words, each
+    // with the unit's times, so a fact can name it as the subtitle shows it.
     .flatMap((c) =>
-      c.words.map((w, n) => ({ ...w, unit: chunkUnits(c.text)[n] }))
+      c.words.flatMap((w, n) =>
+        chunkUnits(c.text)
+          [n].split(/[\s  ]+/u)
+          // « Éthiopie » keeps its word, not its guillemets.
+          .filter((unit, k, all) => bare(unit) || all.length === 1)
+          .map((unit) => ({ ...w, unit }))
+      )
     );
   const wanted = say.split(/\s+/u).map((w) => norm(bare(w)));
   for (let a = 0; a + wanted.length <= words.length; a++)
@@ -2229,9 +2295,12 @@ function factSpan(seq, card, say) {
 const onScreen = (b) =>
   b.x < 1080 && b.x + b.w > 0 && b.y < 1920 && b.y + b.h > 0;
 const pointOn = ([x, y]) => onScreen({ x, y, w: 0, h: 0 });
-function markOn(map, mark) {
+function markOn(map, mark, head) {
   const [kind, ...rest] = mark.split(":");
   const value = rest.join(":");
+  // 1.14.0: the figure head and the figures on the map.
+  if (FIGURE_MARKS.includes(kind))
+    return figureMarkOn(map.marks.figures, head, mark);
   if (kind === "area")
     return map.areas.some(
       (a) => a.id === value && a.opacity >= 0.6 && onScreen(a.box)
@@ -2263,7 +2332,9 @@ export function silentCheck(seq) {
       let first = null;
       for (let f = from; f <= to; f += MAP_TIMING.silentStep) {
         total++;
-        if (fact.shows.some((m) => markOn(mapRunState(seq, r, f), m))) {
+        const map = mapRunState(seq, r, f);
+        const head = cp.figures ? figureHeadAt(cp.figures, f) : null;
+        if (fact.shows.some((m) => markOn(map, m, head))) {
           covered++;
           first ??= f;
         }

@@ -318,8 +318,9 @@ function checkAnimatedFields(card) {
     say(`word « ${w.text} »`, w.say);
     if (typeof w.text !== "string" || !w.text.trim() || !isPoint(w.at))
       fail(`Card ${card.id}: a word gives its text and where it sits`);
-    if (!["phrase", "date", "name", undefined].includes(w.kind))
-      fail(`Card ${card.id}: word « ${w.text} » is a phrase, a date or a name`);
+    // 1.14.0 (question 4): the free phrase is retired; a map word is a
+    // name, a date or a century.
+    checkMapWord(card, w);
     if (w.people !== undefined && w.ink !== undefined)
       fail(
         `Card ${card.id}: word « ${w.text} » gives its people or ink, not both`
@@ -332,10 +333,15 @@ function checkAnimatedFields(card) {
     say("a fact", f.say);
     if (!Array.isArray(f.shows) || !f.shows.length)
       fail(`Card ${card.id}: the fact « ${f.say} » names its marks`);
+    // 1.14.0: the figures on the map are marks of a fact too.
     for (const s of f.shows)
-      if (!/^(area|arrow|illus|text):\S/u.test(s))
+      if (
+        !/^(area|arrow|illus|text|count|cascade|units|row|gauge|lettering|stamp|frame|travel):\S/u.test(
+          s
+        )
+      )
         fail(
-          `Card ${card.id}: the mark « ${s} » is area:, arrow:, illus: or text:`
+          `Card ${card.id}: the mark « ${s} » is area:, arrow:, illus:, text: or a figure's (count:, cascade:, units:, row:, gauge:, lettering:, stamp:, frame:, travel:)`
         );
   }
   if (map.rename) {
@@ -349,6 +355,51 @@ function checkAnimatedFields(card) {
     )
       fail(`Card ${card.id}: a rename gives from, to, dates and at`);
   }
+}
+
+// ---------------------------------------------------------------------------
+// Words on the map (series.md « 1.11.0 Words on the map », changed by
+// 1.14.0, question 4): the free phrase is retired. A map word is a name, a
+// date or a century; a word with more than four words, a colon or a verb the
+// loader knows is a sentence, to be drawn or put in the headline band.
+export const MAP_WORD_KINDS = ["name", "date", "century"];
+// The verbs the loader can detect: the forms the series' narrations use
+// (être, avoir and the verbs of naming, saying and becoming). A list, not a
+// grammar: a sentence it misses still fails the operator's review.
+const VERBS = new Set(
+  (
+    "est sont était étaient fut a ont avait avaient devient deviennent devenu " +
+    "devenue nomme nomment nommait nommé désigne désignent désignait reste " +
+    "restent existe existent existait signifie signifiait veut voulait dit " +
+    "disent disaient disait appelle appellent appelait écrit écrivent montre " +
+    "montrent fonde fondent fondé vient viennent venait parle parlent " +
+    "circule circulent circulaient impose imposé étend étendu étendent"
+  ).split(" ")
+);
+const PHRASE =
+  "Phrase sur la carte : la dessiner, ou la mettre dans le bandeau";
+export function checkMapWord(card, w) {
+  const what = `Card ${card.id}`;
+  if (w.kind === "phrase")
+    fail(`${what}: ${PHRASE} (« ${w.text} », la phrase libre est retirée)`);
+  if (w.kind !== undefined && !MAP_WORD_KINDS.includes(w.kind))
+    fail(
+      `${what}: un mot sur la carte est un nom, une date ou un siècle (« ${w.text} »)`
+    );
+  const words = w.text.split(/\s+/u).filter(Boolean);
+  // An initial (« A. Thevet ») is a name, not the verb « a ».
+  const verb = words.find(
+    (x) =>
+      !/^\p{Lu}\.$/u.test(x) &&
+      VERBS.has(
+        x
+          .toLowerCase()
+          .replace(/^\p{L}['’]/u, "")
+          .replace(/[\p{P}]+$/u, "")
+      )
+  );
+  if (words.length > 4 || w.text.includes(":") || verb)
+    fail(`${what}: ${PHRASE} (« ${w.text} »)`);
 }
 
 // The ink of a mark: its people's (input.inks), a territory's own, or cream

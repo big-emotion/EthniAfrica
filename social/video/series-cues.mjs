@@ -8,6 +8,7 @@ import { FPS } from "./sequence.mjs";
 import { DUR } from "./series-motion.mjs";
 import { counterTicks } from "./series-turns.mjs";
 import { MAP_TIMING } from "./series-sequence.mjs";
+import { FIGURES } from "./series-figures.mjs";
 
 // The table's rows: the family a motion takes and its level.
 export const CUES = {
@@ -95,6 +96,50 @@ export function planCues(seq, crossFade) {
       }
       if (seq.cards[i].isRecap)
         add("recap", start, { align: "peak", reverse: true });
+      // 1.14.0 (series.md « Figures and facts drawn on the map »): a tick per
+      // state or unit, 25 a second at most, an impact when the count lands,
+      // a pop on the last unit; the glasses swell, a lettering draws for its
+      // length, a stamp and a filled frame land, a drawing travels.
+      const fp = cp.figures;
+      if (fp) {
+        const ticks = (frames) => {
+          let last = -Infinity;
+          for (const f of frames)
+            if (f - last >= FPS / 25) {
+              add("tick", f);
+              last = f;
+            }
+        };
+        if (fp.cascade) {
+          ticks(fp.cascade.states.map((s) => s.start));
+          add("impact", fp.cascade.states.at(-1).start + 1);
+        }
+        for (const u of fp.units) {
+          ticks(u.items.slice(0, -1).map((it) => it.start));
+          add("pop", u.items.at(-1).start + 1);
+        }
+        if (fp.row) add("pop", fp.row.light);
+        for (const g of fp.gauges) {
+          add("swell", g.start);
+          add("pop", g.start + FIGURES.gauge.fill);
+        }
+        for (const l of fp.letterings)
+          add("draw", l.start, {
+            length: [...l.text].length * FIGURES.lettering.step,
+          });
+        for (const s of fp.stamps) add("impact", s.start + DUR.stamp);
+        if (fp.frame) {
+          add("draw", fp.frame.start, { length: FIGURES.frame.draw });
+          if (fp.frame.fill) {
+            add("whoosh", fp.frame.fill.start, { align: "peak" });
+            add("impact", fp.frame.fill.start + FIGURES.frame.fill);
+          }
+        }
+        for (const t of fp.travel) {
+          add("pop", t.start);
+          add("draw", t.move, { length: FIGURES.travel.drawing });
+        }
+      }
     }
   }
   for (const f of seq.eras?.flashes ?? [])

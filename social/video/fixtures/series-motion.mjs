@@ -138,7 +138,7 @@ function motionCards() {
           ],
           words: [
             {
-              text: "le pays des hommes intègres",
+              text: "pays des hommes intègres",
               at: [-1.57, 10.1],
               say: "hommes",
             },

@@ -2,6 +2,8 @@
 
 ## Acceptance and integration status
 
+**1.14.0-proposition, 21 October 2026, accepted by the operator the same day, with the designer's recommendations.** Figures and facts drawn on the map, not written: the figure head, the states' cascade, people and speech bubbles as units, the row of five, two glasses for the age, pins and letterings, stamps, an empty name frame, a travelling drawing; the free phrase on the map retired. Integrated in `social/video` on 21 October 2026: see « Renderer integration of 1.14.0 ».
+
 **1.13.0-proposition, 20 October 2026, accepted by the operator on 21 October 2026, with the designer's recommendations.** Motion and sound of every series video: the motion tokens, the pop and the swell, the continuous camera, the whip zoom and the warm flash for the story's turns, the era map and its date counter, drawn marks, flags only inside a state existing on the date shown, the headline band, three format tiers, the subject key and the recap card, episodes about a word, and the sound cues as a specification. Integrated in `social/video` on 21 October 2026: see « Renderer integration of 1.13.0 ».
 
 **1.12.0-proposition, 20 October 2026, accepted by the operator the same day, with the designer's recommendations.** Teaching cards in motion on the idents' parchment ground: the week table one people per table with lit rows, the formula built by moves, drawings for what a name says, and the parchment text card. See « Renderer integration of 1.12.0 ».
@@ -843,3 +845,64 @@ A chapter card is a card of the sequence, `{ "type": "chapter", "chapter": 2, "i
 14. Everything accepted holds: the carousels unchanged; a piece without the new fields differs from its 1.12.0 render only by the push and the pop.
 
 **Boards and prototype.** `Video` group `video-1130-*` and the seven previews (Series, « Boards (1.13.0) »), drawn by a scratch board renderer (`tools/motion113.html` with `scenes113.js`, `illus.js`) and the cue synthesizer (`tools/cues113.py`), not the engine; kept with the design package, not deposited.
+
+## Renderer integration of 1.14.0
+
+**Status: accepted by the operator on 21 October 2026, with the designer's recommendations** (Series, « Figures and facts drawn on the map (1.14.0-proposition) », « Decided by the operator on 21 October 2026 »). Integrated in the engine on 21 October 2026 (`social/video`, `series-figures.mjs`; evidence in `proposals/1.14.0-proposition/integration-2026-10-21/`). It builds on `recette` with 1.13.0 integrated (PR #1935) and the sound palette (PR #1936).
+
+**Card data.** Every `say` names a unit of the card's own chunks (`chunkUnits`), first occurrence, as in 1.5.0; every drawing starts on that word's frame.
+
+```json
+{ "type": "map",
+  "figures": [
+    { "count": "cascade:etats", "unit": "pays", "say": "54", "until": "milliard" },
+    { "count": "units:habitants", "per": 100000000, "format": "population", "unit": "d’habitants", "say": "milliard" },
+    { "text": "1 sur 5", "unit": "dans le monde", "say": "personne", "until": "moitié" },
+    { "pre": "plus de", "count": "units:langues", "per": 100, "unit": "langues", "say": "plus" } ],
+  "cascade": { "id": "etats", "states": "afr-etats-onu.json", "order": "west-east", "say": "54", "context": "milliard" },
+  "units": [
+    { "id": "habitants", "kind": "person", "value": 1500000000, "per": 100000000, "byRegion": "afr-population-regions.json", "say": "milliard", "dim": "près", "out": "moitié",
+      "key": "1 personnage = 100 millions d’habitants" },
+    { "id": "langues", "kind": "bubble", "value": 2000, "per": 100, "byRegion": "afr-langues-regions.json", "say": "plus", "key": "1 bulle = 100 langues" } ],
+  "row": { "id": "un-sur-cinq", "of": 5, "lit": 2, "say": "personne", "light": "cinq", "out": "moitié" },
+  "gauges": [
+    { "id": "age-afrique", "shape": "africa", "value": 20, "scale": 60, "label": "20 ans", "name": "Afrique", "say": "moitié", "out": "Et" },
+    { "id": "age-monde", "shape": "world", "value": 31, "scale": 60, "label": "31 ans", "name": "monde", "say": "monde", "out": "Et" } ] }
+{ "type": "map",
+  "pins": [{ "id": "berbere", "name": "berbère", "at": [6.5, 35.3], "to": "carthage", "say": "berbère", "dim": "Et" }],
+  "letterings": [{ "text": "AFRICA", "from": [6.5, 39.4], "to": [14.5, 39.4], "bend": 0.04, "say": "l'origine" }],
+  "stamps": [{ "id": "inconnue", "text": "?", "at": [17.2, 42.6], "say": "inconnue" }] }
+{ "type": "map",
+  "frame": { "id": "cadre", "at": "continent", "say": "montrent", "fill": { "text": "AFRIQUE", "along": "arrow:dehors", "say": "étendu" } },
+  "travel": [{ "id": "livre", "drawing": "livre", "from": "fes", "via": [[3, 39.5]], "to": "italie", "say": "description", "move": "longtemps" }] }
+```
+
+**Engine** (`social/video`), test first:
+
+1. **The figure head** (`series-page.mjs`): `figures` draw in the head's place, the number Anton 176/156 in `on-image-accent`, the unit Nunito Sans 800 44/52 in `on-image-ink`, `pre` in 800 36/42; a counted figure shows the count of its drawings on screen times `per` (`population` format: « 100 millions » … « 1 milliard », « 1,5 milliard »; integers grouped with a narrow no-break space); the card's kicker and title step aside (5 frames) while a figure shows; figures change by 1.4.0's head change. The last count must equal the spoken figure, or the loader refuses the card (« Le décompte ne tombe pas sur le chiffre dit »).
+2. **The cascade** (`series-map.mjs`): the listed states, ordered by centroid longitude, each with 1.13.0's swell, spread over 45 frames; at `context` they go to the context fill (40 %); territories of the continent outside the list keep a dashed outline. Ticks per state (25 a second at most), an impact when the count lands.
+3. **Units** (`series-map.mjs`, drawings from `assets/Illustrations/personne-1.svg` to `personne-6.svg` and `bulle.svg`): `value / per` units, a whole number or the card is refused (« Unité qui ne divise pas le chiffre »); placed by region from `byRegion` (largest remainder, units spread inside each region's land by a fixed seed), or, without it, in a row in the map band; persons 92 px tall, 3 frames apart (bubbles 40 px, 1.5 frames apart), each by the pop from its feet (110 %); `dim` to 35 %, `out` with `ease-exit`. The unit key goes into the foot with its drawing at 22 × 44 px.
+4. **The row** (`series-map.mjs`): `of` figures 118 px tall, 116 px apart, feet at y 1240, muted wash; `lit` takes its colours and an accent ring on `light` (9 frames).
+5. **Gauges** (`series-map.mjs`): a glass in the map band (Africa's silhouette from the continent outline, or a globe), its age scale on the left (0, 20, 40, 60), the fill to `value / scale` with `ease-land` in 36 frames from `say`, the label on the waterline inside the glass (Anton 72), the name under it; the glass body opaque (#1b1510) so no border shows through.
+6. **Pins and letterings** (`series-map.mjs`): a pin is a name popped at its point with a teal arrow (1.11.0 arrow, ink `b`) drawn to `to`; a lettering is set along a quadratic between `from` and `to`, Fraunces 700, tracked 0.26 em, 50 to 64 px, cream with an 11 px dark outline, letter by letter 2 frames apart; `dim` to 35 %.
+7. **Stamps** (`series-page.mjs` over the map): two words at most, cream paper with the double rule in `stamp-ink`, from 140 % in 5 frames, an impact; refused when its words are not among the voice's words of its chunk (« Tampon hors de la narration »), except « ? » on a chunk that says « inconnu » or « inconnue ».
+8. **The frame and travel** (`series-map.mjs`): the cartouche drawn in 27 frames over `at`, its dashed baseline breathing until filled; a travelling word or drawing moves along its path or arrow with `ease-move` from 55 % to 100 %; a travelling drawing leaves a dotted trail (1.13.0 dots).
+9. **Words on the map** (`series.mjs`): the free phrase kind is retired; a map word is `name`, `date` or `century`. A map word with more than four words, a colon or a verb the loader can detect is refused (« Phrase sur la carte : la dessiner, ou la mettre dans le bandeau »).
+10. **The silent viewing check** (`series.mjs`): the new marks of Series, « 13. The silent viewing check, extended », with the times they count from.
+
+**Assets.** `assets/Illustrations/personne-1.svg` to `personne-6.svg`, `bulle.svg`, `livre.svg`, with the README updated; drawn by Claude Design in 1.11.0's hand, no third-party material. Region breakdowns are data of each episode (`map-data/`), with their sources.
+
+**Checks** (tests first):
+
+1. Figure head: the number on screen equals the count of drawings times `per` on sampled frames; the last count equals the spoken figure; never with the card's title.
+2. Cascade: 54 states lit in 45 frames, west to east; the uncounted territories dashed and unnamed.
+3. Units: 15 persons for 1.5 billion at 100 million; each region's units on its land; the refusals; the foot key present while they show.
+4. Row: five figures, one lit on its word.
+5. Gauges: the fill heights at 20/60 and 31/60 of the glass; the label on the waterline; nothing of the map through the glass.
+6. Letterings: every letter on its path (no clipping), inside the map band.
+7. Stamps: two words at most, the refusals.
+8. Words on the map: no phrase on any map of the episode « Afrique »; eight texts at most.
+9. The silent viewing check passes every fact of the five cards, as measured on the boards.
+10. Everything accepted holds: a card without the new fields renders as in 1.13.0; the carousel's 89 cards unchanged.
+
+**Boards and prototype.** `Video` group `video-1140-*` and the five previews (Series, « Boards (1.14.0) »), drawn by a scratch board renderer (`tools/motion114.html` with `scenes114.js`, `illus114.js`) and mixed by `tools/mix114.py` from the episode's voice and the operator's palette, not the engine; kept with the design package, not deposited.

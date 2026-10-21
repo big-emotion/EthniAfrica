@@ -107,7 +107,7 @@ html,body{margin:0;background:#000}
 .oi.sm-wd-phrase,.oi.sm-wd-name{font:800 40px/48px var(--font-text);color:var(--oi-text);--sw:6px}
 .oi.sm-wd-date{font:400 80px/80px var(--font-display);letter-spacing:.01em;color:var(--oi-text);--sw:9px}
 .oi.sm-wd-country{font:400 64px/70px var(--font-display);letter-spacing:.1em;text-indent:.1em;color:var(--oi-text);--sw:8px}
-.oi.sm-wd-dates{font:800 30px/36px var(--font-text);color:var(--oi-muted);--sw:4px}
+.oi.sm-wd-dates,.oi.sm-wd-century{font:800 30px/36px var(--font-text);color:var(--oi-muted);--sw:4px}
 .oi.sm-lab{position:absolute;white-space:nowrap;transform:translate(-50%,0);font:800 28px/32px var(--font-text);color:var(--oi-ink);--sw:4px}
 .sm-ill{position:absolute;display:block;max-width:none}
 .vf-keys{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;margin-bottom:6px}
@@ -258,6 +258,25 @@ html,body{margin:0;background:#000}
 .vf-dg{display:block;width:.5em;height:156px;overflow:hidden;position:relative;text-align:center}
 .vf-dg span{position:absolute;left:0;right:0;display:block;height:156px}
 .vf-clab{font:800 36px/42px var(--font-text);color:var(--oi-ink);--sw:5px;margin-top:10px;white-space:nowrap}
+/* 1.14.0: the figure head in the head's place (Anton 176/156 in the accent,
+   its unit in Nunito Sans 800 44/52, « plus de » 800 36/42 above it); on the
+   map the glasses' ages and names, stamps, letterings, a name that travels;
+   the units' key in the foot. */
+.vf-fhead{position:absolute;left:60px;top:318px;z-index:2;display:flex;flex-direction:column;align-items:flex-start}
+.vf-fpre{font:800 36px/42px var(--font-text);color:var(--oi-accent);--sw:5px;white-space:nowrap}
+.vf-fnum{font:400 176px/156px var(--font-display);color:var(--oi-accent);--sw:13px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.vf-funit{font:800 44px/52px var(--font-text);color:var(--oi-ink);--sw:6px;white-space:nowrap;margin-top:6px}
+.oi.sm-gl{position:absolute;white-space:nowrap;font:400 72px/84px var(--font-display);color:var(--oi-accent);--sw:10px;transform-origin:50% 100%}
+.oi.sm-gn{position:absolute;white-space:nowrap;font:800 32px/38px var(--font-text);color:var(--oi-ink);--sw:5px;transform:translate(-50%,0)}
+.sm-stamp{position:absolute;white-space:nowrap;background:var(--stamp-paper,#f6efe2f0);border:6px double var(--stamp-ink,#a3462a);color:var(--stamp-ink,#a3462a);border-radius:10px;padding:8px 22px 6px;text-align:center;box-shadow:0 4px 14px rgba(11,8,6,.45)}
+.sm-stamp b{display:block;font:400 120px/118px var(--font-display);letter-spacing:.02em}
+.sm-stamp span{display:block;font:800 22px/28px var(--font-text);letter-spacing:.14em;text-transform:uppercase}
+.oi.sm-trw{position:absolute;white-space:nowrap;font:600 64px/70px var(--font-wordmark);letter-spacing:.24em;text-indent:.24em;color:#f3e9da;--sw:8px}
+.sm-letters{position:absolute;left:0;top:0;width:1080px;height:1920px;overflow:visible}
+.sm-unit{position:absolute;display:block}
+.vf-ukeys{display:grid}
+.vf-ukeys > .vf-key{grid-area:1/1}
+.vf-ukey img{width:22px;height:44px;flex:none;display:block;object-fit:contain}
 /* 1.13.0: the headline band, each line its own black strip from the left
    edge, Anton 104/112 in capitals, the key word in the accent. */
 .vf-hb{position:absolute;left:0;top:318px;z-index:3;display:flex;flex-direction:column;align-items:flex-start;gap:10px}
@@ -469,7 +488,11 @@ function buildParts(spec, view) {
   const pa = spec.ground === "parchment";
   const textCard = pa && typeof spec.date === "string";
   // 1.13.0: a word card's head and foot are an explanation card's.
-  const rendered = textCard ? { ...spec, date: undefined } : spec.type === "word" ? { ...spec, type: "explanation" } : spec;
+  let rendered = textCard ? { ...spec, date: undefined } : spec.type === "word" ? { ...spec, type: "explanation" } : spec;
+  // 1.14.0: the figures on the map are the video's; the card's bundle draws
+  // the 1.7.0 head figures (an object), never these.
+  const onMap = Array.isArray(spec.figures);
+  if (onMap) rendered = { ...rendered, figures: undefined };
   const card = silent ? null : EthniCards.render(rendered, { context: "video", resolve: resolveAsset, demo: false });
   const pick = (sel) => card.querySelector(sel);
   const layer = el("div", "vf-layer");
@@ -581,7 +604,7 @@ function buildParts(spec, view) {
     head.append(list);
     parts.items = [...list.children];
   }
-  if (spec.figures) {
+  if (spec.figures && !onMap) {
     const grid = el("div", "vf-figs");
     for (const it of spec.figures.items) {
       const cell = el("div", "vf-fig");
@@ -606,6 +629,17 @@ function buildParts(spec, view) {
     box.append(num, label);
     layer.append(box);
     parts.counter = { box, num, label, digits: [] };
+  }
+  // 1.14.0: the figure head, in the head's place.
+  if (onMap) {
+    const box = el("div", "vf-fhead");
+    const pre = el("div", "vf-fpre oi");
+    const num = el("div", "vf-fnum oi oi-l");
+    const unit = el("div", "vf-funit oi");
+    box.append(pre, num, unit);
+    box.style.opacity = 0;
+    layer.append(box);
+    parts.figHead = { box, pre, num, unit };
   }
   // 1.13.0: the headline band, each line its own strip, blurred along its
   // slide by a filter of its own.
@@ -653,6 +687,19 @@ function buildParts(spec, view) {
       key.dataset.kind = "key";
       if (item.file) key.dataset.file = item.file;
       box.append(key);
+    }
+    // 1.14.0: every unit drawn on the map gives its unit in the foot, its
+    // drawing beside it, in one place while each shows.
+    if (spec.units && spec.units.length) {
+      const keys = el("div", "vf-ukeys");
+      for (const u of spec.units) {
+        const key = el("div", "vf-key vf-ukey oi", '<img alt="" src="/design/assets/Illustrations/' + (u.kind === "person" ? "personne-1" : "bulle") + '.svg"><span>' + esc(fr(u.key)) + "</span>");
+        key.dataset.kind = "key";
+        key.dataset.unit = u.id;
+        key.style.opacity = 0;
+        keys.append(key);
+      }
+      foot.append(keys);
     }
     const lines = [["vf-src", "source", view.credits.source && "Source : " + view.credits.source], ["vf-cred", "credit", view.credits.imagery]];
     // 1.11.0: during the globe the credit names the imagery alone; the
@@ -1188,13 +1235,21 @@ function runLayer(sequence, r) {
     paperfx = el("div", "vf-paperfx");
     wrap.append(paperfx);
   }
+  // 1.14.0: the large outlines (the cascade's states) on a canvas under the
+  // areas, the glasses, the name frame and the trails on one over them: the
+  // same look as SVG strokes, far cheaper on a continent.
+  const figUnder = animated ? figureCanvas() : null;
+  const figOver = animated ? figureCanvas() : null;
+  if (animated) wrap.append(figUnder);
   wrap.append(svg);
+  if (animated) wrap.append(figOver);
   const names = el("div");
   wrap.append(names);
   const ills = animated ? el("div") : null;
+  const units = animated ? el("div") : null;
   const marks = animated ? el("div") : null;
-  if (animated) wrap.append(ills, marks);
-  return { wrap, canvas, areas, borderLines, borderPaths, borderGroup: lines, names, key: null, animated, arrows, flags, drawn, coast, paperfx, ills, images: [], pool: {}, marks };
+  if (animated) wrap.append(ills, units, marks);
+  return { wrap, canvas, areas, borderLines, borderPaths, borderGroup: lines, names, key: null, animated, arrows, flags, drawn, coast, paperfx, ills, images: [], pool: {}, marks, figUnder, figOver, units, unitPool: {} };
 }
 // The paper (1.13.0, the era map) tones the imagery as a printed map; desat
 // takes its colour down (the recap card's memory).
@@ -1268,7 +1323,7 @@ function areaLayer(a, ink) {
 }
 const drawingInk = {};
 const ringed = (n, outline) => { n.style.filter = "url(#oi-ring-" + ringOf(outline) + ")"; return n; };
-const WORD_STYLE = { phrase: 6, name: 6, date: 9 };
+const WORD_STYLE = { phrase: 6, name: 6, date: 9, century: 4 };
 function drawAnimatedRun(node, map) {
   const paper = map.paper || 0;
   const onPaper = !!map.paperInks;
@@ -1408,6 +1463,8 @@ function drawAnimatedRun(node, map) {
       node.marks.append(ringed(n, outline));
     }
   }
+  // 1.14.0: the figures drawn on the map.
+  drawFigures(node, map);
   node.wrap.style.transformOrigin = "540px " + map.camera.centreY + "px";
   node.wrap.style.transform = "scale(" + map.zoom + ")";
 }
@@ -1616,6 +1673,237 @@ function drawDrawnMarks(node, map, onPaper) {
     }
     node.drawn.append(g);
   }
+}
+
+// ---------------------------------------------------------------------------
+// Cartes 1.14.0, the figures drawn on the map (series.md « Figures and facts
+// drawn on the map »). Every value comes from the frame state; the states'
+// outlines and the unit drawings come once, in setup.
+let figureGeo = { states: {} };
+function figureCanvas() {
+  const c = document.createElement("canvas");
+  c.width = 1080; c.height = 1920;
+  return c;
+}
+const rgba = (hex, a) => "rgba(" + rgbOf(hex) + "," + a + ")";
+function statePath(polygons, camera) {
+  const p = new Path2D();
+  for (const poly of polygons)
+    for (const ring of poly) {
+      ring.forEach(([lon, lat], k) => {
+        const [x, y] = flatProject(camera, lon, lat);
+        if (k) p.lineTo(x, y); else p.moveTo(x, y);
+      });
+      p.closePath();
+    }
+  return p;
+}
+// A unit's box from its foot, as the boards draw it.
+function unitRect(kind, x, y, h) {
+  if (kind === "person" || kind === "row") return { x: x - 0.24 * h, y: y - 0.96 * h, w: 0.48 * h, h: 1.04 * h };
+  if (kind === "book") { const w = (h * 160) / 120; return { x: x - w / 2, y: y - (h * 112) / 120, w, h }; }
+  const w = (h * 44) / 38;
+  return { x: x - (w * 12) / 44, y: y - (h * 36) / 38, w, h };
+}
+function placeUnit(img, kind, x, y, h, opacity, scale) {
+  const r = unitRect(kind, x, y, h);
+  Object.assign(img.style, { display: "block", left: r.x + "px", top: r.y + "px", width: r.w + "px", height: r.h + "px", opacity, transformOrigin: (x - r.x).toFixed(1) + "px " + (y - r.y).toFixed(1) + "px", transform: scale === 1 ? "" : "scale(" + scale.toFixed(4) + ")" });
+}
+function drawGlass(x2, g) {
+  const PV = new Path2D(g.d);
+  const sxl = g.cx - g.w / 2 - 22, y0 = g.top, H = g.height;
+  x2.save();
+  x2.globalAlpha = g.opacity;
+  x2.strokeStyle = "rgba(11,8,6,.75)"; x2.lineWidth = 12; x2.stroke(PV);
+  x2.strokeStyle = "${token("on-image-ink")}"; x2.lineWidth = 7; x2.stroke(PV);
+  x2.fillStyle = "${token("gauge-glass")}"; x2.fill(PV);
+  x2.save(); x2.clip(PV);
+  if (g.d.indexOf("a") > 0) {
+    // The globe's meridians and parallels, faint.
+    x2.strokeStyle = "rgba(243,233,218,.35)"; x2.lineWidth = 1.5;
+    for (let k = -2; k <= 2; k++) {
+      x2.beginPath(); x2.ellipse(g.cx, g.cy, Math.abs(k) * H / 5 + 0.1, H / 2, 0, 0, 2 * Math.PI); x2.stroke();
+      x2.beginPath(); x2.moveTo(g.cx - H / 2, g.cy + k * H / 5); x2.lineTo(g.cx + H / 2, g.cy + k * H / 5); x2.stroke();
+    }
+  }
+  const amp = g.fill > 0 && g.fill < 1 ? 4 : 1.6;
+  const wave = (xx) => g.waterline + amp * Math.sin(xx / 30 - 3 * g.t);
+  const [xa, xb] = [g.cx - g.w / 2 - 10, g.cx + g.w / 2 + 10];
+  if (g.fill > 0) {
+    x2.beginPath();
+    for (let xx = xa; xx <= xb; xx += 8) if (xx === xa) x2.moveTo(xx, wave(xx)); else x2.lineTo(xx, wave(xx));
+    x2.lineTo(xb, y0 + H + 10); x2.lineTo(xa, y0 + H + 10); x2.closePath();
+    x2.fillStyle = rgba("${token("on-image-accent")}", 0.88); x2.fill();
+    x2.beginPath();
+    for (let xx = xa; xx <= xb; xx += 8) if (xx === xa) x2.moveTo(xx, wave(xx)); else x2.lineTo(xx, wave(xx));
+    x2.strokeStyle = "${token("on-image-text")}"; x2.lineWidth = 3; x2.stroke();
+  }
+  x2.restore();
+  // The age scale on the glass's left side.
+  x2.strokeStyle = "rgba(11,8,6,.7)"; x2.lineWidth = 7; x2.beginPath(); x2.moveTo(sxl, y0); x2.lineTo(sxl, y0 + H); x2.stroke();
+  x2.strokeStyle = "${token("on-image-ink")}"; x2.lineWidth = 3; x2.stroke();
+  for (const tk of g.ticks) {
+    const ty = y0 + H * (1 - tk / g.scale);
+    x2.beginPath(); x2.moveTo(sxl - 10, ty); x2.lineTo(sxl, ty); x2.stroke();
+    x2.save();
+    x2.font = "800 24px 'Nunito Sans'"; x2.textAlign = "center"; x2.textBaseline = "middle";
+    x2.lineWidth = 5; x2.strokeStyle = "rgba(11,8,6,.92)"; x2.strokeText(String(tk), sxl - 34, ty);
+    x2.fillStyle = "${token("on-image-ink")}"; x2.fillText(String(tk), sxl - 34, ty);
+    x2.restore();
+  }
+  // The median age's level, dashed, as the water reaches it.
+  x2.globalAlpha = g.opacity * g.fill;
+  x2.setLineDash([8, 8]); x2.strokeStyle = "${token("on-image-text")}"; x2.lineWidth = 3;
+  x2.beginPath(); x2.moveTo(sxl, g.target); x2.lineTo(g.cx + g.w / 2 + 30, g.target); x2.stroke();
+  x2.setLineDash([]);
+  x2.restore();
+}
+// The empty name frame: an old map's cartouche drawn as a pen, its dashed
+// baseline breathing where a name would be.
+function drawCartouche(x2, f) {
+  const [fx0, fx1, fy0, fy1] = [f.x - f.w / 2, f.x + f.w / 2, f.y - f.h / 2, f.y + f.h / 2];
+  const cr = f.h * 0.22;
+  const d = "M" + (fx0 + cr) + "," + fy0 + "L" + (fx1 - cr) + "," + fy0 + "C" + (fx1 + cr) + "," + fy0 + " " + (fx1 + cr * 1.6) + "," + (fy0 + cr * 1.2) + " " + (fx1 + cr * 0.4) + "," + (fy0 + cr * 1.4) +
+    "C" + (fx1 - cr * 0.3) + "," + (fy0 + cr * 1.5) + " " + (fx1 - cr * 0.2) + "," + (fy0 + cr * 0.6) + " " + (fx1 + cr * 0.2) + "," + (fy0 + cr * 0.5) +
+    "M" + fx1 + "," + (fy0 + cr) + "L" + fx1 + "," + (fy1 - cr) + "C" + fx1 + "," + (fy1 + cr * 0.6) + " " + (fx1 - cr * 0.5) + "," + fy1 + " " + (fx1 - cr) + "," + fy1 +
+    "L" + (fx0 + cr) + "," + fy1 + "C" + (fx0 - cr) + "," + fy1 + " " + (fx0 - cr * 1.6) + "," + (fy1 - cr * 1.2) + " " + (fx0 - cr * 0.4) + "," + (fy1 - cr * 1.4) +
+    "C" + (fx0 + cr * 0.3) + "," + (fy1 - cr * 1.5) + " " + (fx0 + cr * 0.2) + "," + (fy1 - cr * 0.6) + " " + (fx0 - cr * 0.2) + "," + (fy1 - cr * 0.5) +
+    "M" + fx0 + "," + (fy1 - cr) + "L" + fx0 + "," + (fy0 + cr) + "C" + fx0 + "," + (fy0 - cr * 0.6) + " " + (fx0 + cr * 0.5) + "," + fy0 + " " + (fx0 + cr) + "," + fy0;
+  const length = 4 * (f.w + f.h) + 8 * cr;
+  const P = new Path2D(d);
+  x2.save();
+  x2.globalAlpha = f.opacity;
+  x2.setLineDash([length, length]); x2.lineDashOffset = length * (1 - f.drawn);
+  x2.strokeStyle = "rgba(11,8,6,.7)"; x2.lineWidth = 11; x2.stroke(P);
+  x2.strokeStyle = "${token("on-image-ink")}"; x2.lineWidth = 5; x2.stroke(P);
+  x2.setLineDash([]); x2.lineDashOffset = 0;
+  if (f.baseline > 0) {
+    x2.globalAlpha = f.opacity * f.baseline;
+    x2.setLineDash([4, 14]); x2.lineCap = "round"; x2.lineWidth = 4;
+    x2.beginPath(); x2.moveTo(fx0 + 40, f.y + 18); x2.lineTo(fx1 - 40, f.y + 18); x2.stroke();
+  }
+  x2.restore();
+}
+function drawFigures(node, map) {
+  const under = node.figUnder.getContext("2d"), over = node.figOver.getContext("2d");
+  under.clearRect(0, 0, 1080, 1920);
+  over.clearRect(0, 0, 1080, 1920);
+  for (const list of Object.values(node.unitPool)) for (const img of list) img.style.display = "none";
+  const taken = {};
+  const take = (key) => {
+    const k = (taken[key] = (taken[key] ?? -1) + 1);
+    const img = node.unitPool[key] && node.unitPool[key][k];
+    if (!img) throw new Error("Drawing " + key + " has no image left in setup's pool");
+    return img;
+  };
+  for (const f of map.marks.figures || []) {
+    if (f.cascade) {
+      const c = f.cascade, geo = figureGeo.states[c.file];
+      under.save();
+      for (const s of c.states) {
+        const P = statePath(geo[s.id], map.camera);
+        under.globalAlpha = c.opacity * s.opacity;
+        under.fillStyle = rgba(INK.a, c.fill * s.swell); under.fill(P, "evenodd");
+        under.strokeStyle = "rgba(11,8,6,.5)"; under.lineWidth = 3.5; under.stroke(P);
+        under.strokeStyle = rgba(INK.a, c.edge); under.lineWidth = 1.8; under.stroke(P);
+      }
+      // The territories the source does not count: dashed, unlit, unnamed.
+      under.globalAlpha = c.opacity * c.uncountedOpacity;
+      under.setLineDash([6, 6]); under.strokeStyle = rgba(INK.a, 0.45); under.lineWidth = 1.6;
+      for (const id of c.uncounted) under.stroke(statePath(geo[id], map.camera));
+      under.restore();
+    }
+    for (const u of f.units) placeUnit(take(u.drawing), u.kind, u.x, u.y, u.h, u.opacity, u.scale);
+    if (f.row)
+      for (const it of f.row.items) {
+        if (it.ring > 0) {
+          over.save(); over.globalAlpha = it.opacity * it.ring;
+          over.strokeStyle = INK.a; over.lineWidth = 5;
+          over.beginPath(); over.ellipse(it.x, it.y + 2, 0.48 * it.h * 0.9 * (0.8 + 0.2 * it.ring), 12, 0, 0, 2 * Math.PI); over.stroke();
+          over.restore();
+        }
+        if (it.colour < 1) placeUnit(take(it.drawing + "|muted"), "row", it.x, it.y, it.h, it.opacity * (1 - it.colour), it.scale);
+        if (it.colour > 0) placeUnit(take(it.drawing), "row", it.x, it.y, it.h, it.opacity * it.colour, it.scale);
+      }
+    for (const g of f.gauges) {
+      drawGlass(over, g);
+      if (g.name) {
+        const n = el("div", "sm-gn oi", esc(fr(g.name)));
+        Object.assign(n.style, { left: g.cx + "px", top: g.top + g.height + 14 + "px", opacity: g.opacity });
+        n.dataset.mark = "name";
+        node.marks.append(ringed(n, 5));
+      }
+      if (g.labelOpacity > 0) {
+        const n = el("div", "sm-gl oi", esc(fr(g.label)));
+        Object.assign(n.style, { left: g.cx + "px", top: g.target - 80 + "px", opacity: g.labelOpacity, transform: "translate(-50%,0) scale(" + g.labelScale.toFixed(4) + ")" });
+        n.dataset.mark = "name";
+        n.dataset.of = "gauge " + g.id;
+        node.marks.append(ringed(n, 10));
+      }
+    }
+    if (f.letterings.length) {
+      const svg = svgEl("svg", { class: "sm-letters", width: 1080, height: 1920, viewBox: "0 0 1080 1920" });
+      f.letterings.forEach((l, k) => {
+        const id = "lt-" + f.card + "-" + k;
+        const e0 = [l.a[0] - (l.c[0] - l.a[0]) * 0.8, l.a[1] - (l.c[1] - l.a[1]) * 0.8];
+        const e1 = [l.b[0] + (l.b[0] - l.c[0]) * 0.8, l.b[1] + (l.b[1] - l.c[1]) * 0.8];
+        svg.append(svgEl("path", { id, fill: "none", d: "M" + e0.join(",") + "L" + l.a.join(",") + "Q" + l.c.join(",") + " " + l.b.join(",") + "L" + e1.join(",") }));
+        const text = svgEl("text", { "font-family": "Fraunces", "font-weight": 700, "font-size": l.size, "letter-spacing": "0.26em", fill: "${token("on-image-ink")}", stroke: "rgba(11,8,6,.88)", "stroke-width": 11, "paint-order": "stroke fill", "stroke-linejoin": "round", opacity: l.opacity.toFixed(4), "data-mark": "name" });
+        const path = svgEl("textPath", { href: "#" + id, startOffset: "50%", "text-anchor": "middle" });
+        [...l.text].forEach((ch, n) => {
+          const t = svgEl("tspan", { opacity: l.letters[n].toFixed(4) });
+          t.textContent = ch;
+          path.append(t);
+        });
+        text.append(path);
+        svg.append(text);
+      });
+      node.marks.append(svg);
+    }
+    for (const s of f.stamps) {
+      const n = el("div", "sm-stamp", s.text === "?" ? "<b>?</b>" : "<span>" + esc(fr(s.text)) + "</span>");
+      Object.assign(n.style, { left: s.x + "px", top: s.y + "px", opacity: s.opacity, transform: "translate(-50%,-50%) rotate(" + s.rotate + "deg) scale(" + s.scale.toFixed(4) + ")" });
+      n.dataset.mark = "name";
+      node.marks.append(n);
+    }
+    if (f.frame) {
+      drawCartouche(over, f.frame);
+      const fill = f.frame.fill;
+      if (fill && fill.opacity > 0) {
+        const n = el("div", "sm-trw oi", esc(fr(fill.text)));
+        Object.assign(n.style, { left: fill.x + "px", top: fill.y + "px", opacity: fill.opacity, transform: "translate(-50%,-50%) scale(" + fill.scale.toFixed(4) + ")" });
+        n.dataset.mark = "name";
+        // On its way in, it is checked in the band once it has landed.
+        if (fill.k < 1) n.dataset.moving = "1";
+        node.marks.append(ringed(n, 8));
+      }
+    }
+    for (const t of f.travel) {
+      // The dotted trail of 1.13.0's routes, behind the drawing.
+      over.save(); over.globalAlpha = t.opacity;
+      for (const [x, y] of t.dots) {
+        over.fillStyle = "rgba(11,8,6,.7)"; over.beginPath(); over.arc(x, y, 6, 0, 2 * Math.PI); over.fill();
+        over.fillStyle = INK[t.ink]; over.beginPath(); over.arc(x, y, 3.5, 0, 2 * Math.PI); over.fill();
+      }
+      over.restore();
+      if (t.drawing) placeUnit(take(t.drawing), "book", t.x, t.y, t.h, t.opacity, t.scale);
+      else {
+        const n = el("div", "sm-trw oi", esc(fr(t.text)));
+        Object.assign(n.style, { left: t.x + "px", top: t.y + "px", opacity: t.opacity, transform: "translate(-50%,-50%)" });
+        n.dataset.mark = "name";
+        if (t.k > 0 && t.k < 1) n.dataset.moving = "1";
+        node.marks.append(ringed(n, 8));
+      }
+    }
+  }
+}
+// The muted wash of the row's four (token unit-muted, its shadow #9e9482):
+// the drawing's gradients turned to the two muted stops, its ink line at 55 %.
+function mutedDrawing(svg) {
+  let stop = 0;
+  return svg
+    .replace(/stop-color="#[0-9a-fA-F]{6}"/g, () => 'stop-color="' + (stop++ % 2 ? "#9e9482" : "${token("unit-muted")}") + '"')
+    .replace(/stroke="#23170d"/g, 'stroke="#23170d" stroke-opacity=".55"');
 }
 
 // 1.9.0, the double outline (series.md, « Legibility on light pictures »):
@@ -1872,6 +2160,26 @@ window.setup = async ({ tokens, cards, logo, demo, maps, subtitles: cardLines, z
           decoding.push(img.decode().catch(() => { throw new Error("Drawing not loaded: " + kind); }));
         }
       }
+    // 1.14.0: the units' drawings, as many of each as a frame shows at
+    // most; the row's world figures in the muted wash.
+    figureGeo = maps.sequence.figures || { states: {}, pool: {} };
+    for (const node of runs.filter((n) => n.animated))
+      for (const [key, count] of Object.entries(figureGeo.pool)) {
+        const [name, muted] = key.split("|");
+        let src = "/design/assets/Illustrations/" + name + ".svg";
+        if (muted) src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(mutedDrawing(await (await fetch(src)).text()));
+        node.unitPool[key] = [];
+        for (let k = 0; k < count; k++) {
+          const img = ringed(el("img", "sm-unit"), 5);
+          img.alt = "";
+          img.decoding = "sync";
+          img.style.display = "none";
+          img.src = src;
+          node.units.append(img);
+          node.unitPool[key].push(img);
+          decoding.push(img.decode().catch(() => { throw new Error("Drawing not loaded: " + key); }));
+        }
+      }
     await Promise.all(decoding);
     for (const kind of maps.sequence.illustrations || []) {
       const box = el("div");
@@ -1916,7 +2224,7 @@ window.setup = async ({ tokens, cards, logo, demo, maps, subtitles: cardLines, z
   frame.append(flash);
   ringFilters();
   ringText(frame);
-  const images = [...frame.querySelectorAll(".vf-pic img, .pd-img")];
+  const images = [...frame.querySelectorAll(".vf-pic img, .pd-img, .vf-ukey img")];
   // 1.12.0: the ground's grain, decoded before the first frame.
   if (layers.some((p) => p.pa)) {
     const grain = new Image();
@@ -1995,7 +2303,7 @@ function frameBoxes(frame, state) {
         node.marks.querySelectorAll("[data-mark]").forEach((n) => {
           if (!(+n.style.opacity > 0)) return;
           const r = rect(n);
-          boxes.push({ id: n.textContent, kind: n.dataset.mark === "word" ? "map-word" : "map-name", ...r, ...flags, opacity: +n.style.opacity, ...(n.dataset.leaving && { leaving: true }), ...(n.dataset.of !== undefined && { of: "drawing " + n.dataset.of }) });
+          boxes.push({ id: n.textContent, kind: n.dataset.mark === "word" ? "map-word" : "map-name", ...r, ...flags, ...(n.dataset.moving && { moving: true }), opacity: +n.style.opacity, ...(n.dataset.leaving && { leaving: true }), ...(n.dataset.of !== undefined && { of: "drawing " + n.dataset.of }) });
         });
         node.images.forEach((n) => {
           if (n.style.display === "none" || !(+n.style.opacity > 0)) return;
@@ -2055,8 +2363,8 @@ function frameBoxes(frame, state) {
 function backgrounds(frame) {
   // A parchment card is its own ground, not a picture (1.12.0).
   // 1.13.0: the headline band's black strips, the warm flash and the era
-  // map's paper are the design's own grounds.
-  const allowed = (n) => n.closest(".lit, .vf-slot, .vf-demo, .vf-key, .sm-dot, .vf-doc, .vf-pa, .vf-hb, #flash, .vf-paperfx") || n.classList.contains("vf-pic");
+  // map's paper are the design's own grounds; 1.14.0: so is a stamp's paper.
+  const allowed = (n) => n.closest(".lit, .vf-slot, .vf-demo, .vf-key, .sm-dot, .vf-doc, .vf-pa, .vf-hb, #flash, .vf-paperfx, .sm-stamp") || n.classList.contains("vf-pic");
   return [...frame.querySelectorAll("*")]
     .filter((n) => n.getClientRects().length && !allowed(n))
     .filter((n) => {
@@ -2255,6 +2563,19 @@ function drawCounter(c, s, text) {
   c.label.style.opacity = s.labelOpacity;
 }
 
+// 1.14.0: the figure head, its number counting the drawings on screen.
+function drawFigureHead(h, f, text) {
+  if (!f) {
+    h.box.style.opacity = 0;
+    return;
+  }
+  h.box.style.opacity = text * f.opacity;
+  h.pre.style.display = f.pre ? "" : "none";
+  if (f.pre) h.pre.textContent = fr(f.pre);
+  h.num.textContent = f.num;
+  h.unit.textContent = fr(f.unit);
+}
+
 // 1.13.0: the headline band's lines sliding with their blur, the key word
 // stamping once its line has landed.
 function drawHeadline(h, s, text) {
@@ -2382,6 +2703,15 @@ window.drawFrame = (state) => {
     // 1.13.0: the counter and the headline band take the head's place.
     if (parts.counter) drawCounter(parts.counter, l.counter, l.text);
     if (parts.headline) drawHeadline(parts.headline, l.headline, l.text);
+    // 1.14.0: the figure head, and the units' key in the foot.
+    if (parts.figHead) drawFigureHead(parts.figHead, l.figure, l.text);
+    if (l.map) {
+      const fig = (l.map.marks?.figures || []).find((f) => f.card === i);
+      parts.layer.querySelectorAll(".vf-ukey[data-unit]").forEach((k) => {
+        const key = fig && fig.unitKeys.find((u) => u.id === k.dataset.unit);
+        k.style.opacity = key ? key.opacity : 0;
+      });
+    }
     if (l.head !== undefined) parts.head.style.opacity = l.text * l.head;
     // 1.7.0: items and the quoted person enter on their word, inside the
     // card's own text fade.
