@@ -141,7 +141,7 @@ Workflows that run after a merge, on a schedule or on demand, and so can never b
 - `storybook-deploy.yml` — a push to `main`.
 - `seed-moderation-allowlist.yml` and `deploy-preview-recette.yml` — run by hand.
 - The Ferry automation: `ferry-router.yml` (repository dispatch from Jira transitions, one
-  workflow for every agent), `ferry-reconcile.yml` (every 30 minutes) and `ferry-cost-daily.yml`.
+  workflow for every agent).
 - `claude.yml` (Claude on issues and review comments) and `claude-code-review.yml` (an automated
   review on each pull request — advisory, not a gate).
 
