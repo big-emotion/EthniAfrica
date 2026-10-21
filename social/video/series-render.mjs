@@ -38,6 +38,7 @@ import {
   sharedBorders,
 } from "./series-map.mjs";
 import { areaInks } from "./series-sequence.mjs";
+import { figureAssets } from "./series-figures.mjs";
 import { coastOf } from "./shoreline.mjs";
 import {
   soundLibrary,
@@ -112,7 +113,13 @@ async function routesFor(seq) {
   for (const id of flagsOf(seq))
     await add(`/design/assets/Flags/${id}.svg`, `assets/Flags/${id}.svg`);
   const drawn = seq.cards.flatMap((c) => (c.drawings ?? []).map((d) => d.kind));
-  for (const kind of new Set([...illustrationsOf(seq), ...drawn]))
+  // 1.14.0: the units' drawings, the travelling book and the foot's keys.
+  const figures = Object.keys(figureAssetsOf(seq).pool).map(
+    (k) => k.split("|")[0]
+  );
+  if (seq.cards.some((c) => c.units?.length))
+    figures.push("personne-1", "bulle");
+  for (const kind of new Set([...illustrationsOf(seq), ...drawn, ...figures]))
     await add(
       `/design/assets/Illustrations/${kind}.svg`,
       `assets/Illustrations/${kind}.svg`
@@ -123,6 +130,13 @@ async function routesFor(seq) {
 const flagsOf = (seq) => [
   ...new Set(seq.cards.flatMap((c) => (c.flags ?? []).map((f) => f.flag))),
 ];
+
+const figureAssetsOf = (seq) =>
+  figureAssets(
+    Object.values(seq.mapSequence?.cards ?? {}).flatMap((c) =>
+      c.figures ? [c.figures] : []
+    )
+  );
 
 const illustrationsOf = (seq) => [
   ...new Set(
@@ -213,6 +227,8 @@ async function prepareMaps(seq, cards, routes, assets) {
         ])
       ),
       illustrations: illustrationsOf(seq),
+      // 1.14.0: the cascade's outlines and the units' images.
+      figures: figureAssetsOf(seq),
       // 1.13.0: the coast and the land the era map draws, from Natural
       // Earth's countries.
       ...(seq.eras?.flashes.length && { coast: coastOf(world, shown) }),

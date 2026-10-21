@@ -2,7 +2,7 @@
 
 ## Acceptance and integration status
 
-**1.14.0-proposition, 21 October 2026, accepted by the operator the same day, with the designer's recommendations.** Figures and facts drawn on the map, not written: the figure head, the states' cascade, people and speech bubbles as units, the row of five, two glasses for the age, pins and letterings, stamps, an empty name frame, a travelling drawing; the free phrase on the map retired. Not yet integrated: see « Renderer integration of 1.14.0 ».
+**1.14.0-proposition, 21 October 2026, accepted by the operator the same day, with the designer's recommendations.** Figures and facts drawn on the map, not written: the figure head, the states' cascade, people and speech bubbles as units, the row of five, two glasses for the age, pins and letterings, stamps, an empty name frame, a travelling drawing; the free phrase on the map retired. Integrated in `social/video` on 21 October 2026: see « Renderer integration of 1.14.0 ».
 
 **1.13.0-proposition, 20 October 2026, accepted by the operator on 21 October 2026, with the designer's recommendations.** Motion and sound of every series video: the motion tokens, the pop and the swell, the continuous camera, the whip zoom and the warm flash for the story's turns, the era map and its date counter, drawn marks, flags only inside a state existing on the date shown, the headline band, three format tiers, the subject key and the recap card, episodes about a word, and the sound cues as a specification. Integrated in `social/video` on 21 October 2026: see « Renderer integration of 1.13.0 ».
 
@@ -848,7 +848,7 @@ A chapter card is a card of the sequence, `{ "type": "chapter", "chapter": 2, "i
 
 ## Renderer integration of 1.14.0
 
-**Status: accepted by the operator on 21 October 2026, with the designer's recommendations** (Series, « Figures and facts drawn on the map (1.14.0-proposition) », « Decided by the operator on 21 October 2026 »). Not yet integrated in the engine. It builds on `recette` with 1.13.0 integrated (PR #1935) and the sound palette (PR #1936).
+**Status: accepted by the operator on 21 October 2026, with the designer's recommendations** (Series, « Figures and facts drawn on the map (1.14.0-proposition) », « Decided by the operator on 21 October 2026 »). Integrated in the engine on 21 October 2026 (`social/video`, `series-figures.mjs`; evidence in `proposals/1.14.0-proposition/integration-2026-10-21/`). It builds on `recette` with 1.13.0 integrated (PR #1935) and the sound palette (PR #1936).
 
 **Card data.** Every `say` names a unit of the card's own chunks (`chunkUnits`), first occurrence, as in 1.5.0; every drawing starts on that word's frame.
 

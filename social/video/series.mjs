@@ -34,6 +34,7 @@ import {
   MARKS,
   checkSeriesMapCard,
 } from "./series-map.mjs";
+import { checkFigureFields, figureHeadAt } from "./series-figures.mjs";
 import { INTRO, OUTRO } from "../series-idents/shots.mjs";
 import {
   planMapSequences,
@@ -226,6 +227,8 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     checkTeachingCard(card);
     // 1.13.0: the story's turns (whip, era, flags, headline band).
     checkTurnFields(card);
+    // 1.14.0: figures and facts drawn on the map.
+    checkFigureFields(card);
     const own = structuredClone(card);
     // 1.13.0: the globe lands on the subject's base view; the opener's
     // kicker is the subject's formula.
@@ -902,6 +905,14 @@ export function seriesFrameState(seq, frame) {
     if (band) {
       l.headline = headlineAt(band, frame);
       l.head = l.headline.head;
+    }
+    // 1.14.0: the figure head in the head's place; the kicker and the title
+    // step aside while a figure shows.
+    const figures = seq.mapSequence?.cards[l.card]?.figures;
+    const fig = figures ? figureHeadAt(figures, frame) : null;
+    if (fig) {
+      l.figure = fig.figure;
+      l.head = Math.min(l.head ?? 1, fig.head);
     }
   }
   const era = seq.eras ? eraAt(seq.eras, frame) : null;
