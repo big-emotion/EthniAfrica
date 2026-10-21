@@ -3,7 +3,10 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import { NextRequest } from "next/server";
 
-vi.mock("@/api/v2/handlers/feedRevisionsHandler", () => ({
+vi.mock("@/api/v2/handlers/feedRevisionsHandler", async (importActual) => ({
+  ...(await importActual<
+    typeof import("@/api/v2/handlers/feedRevisionsHandler")
+  >()),
   listFeedRevisionsHandler: vi.fn(),
 }));
 
