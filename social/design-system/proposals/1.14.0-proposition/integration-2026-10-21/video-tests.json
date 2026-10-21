@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-21",
+  "design": "EthniAfrica Cartes 1.14.0-proposition",
+  "browser": "pinned Chromium 153 (social/renderer/runtime.json), WebGL on SwiftShader",
+  "runs": {
+    "test:social-video": "458 pass, 0 fail",
+    "series-figures.acceptance.test.mjs (ETHNIAFRICA_VIDEO_ASSETS on the verified imagery)": "4 pass, 0 fail (no layout problem; the head's counts; nothing of the map through the glasses; letterings and stamps in the map band, eight texts at most)",
+    "test:social-video-acceptance (all files, ETHNIAFRICA_VIDEO_ASSETS set)": "527 tests: 509 pass, 15 fail, 2 skipped. One failure was this branch's (the drawn head test's regular expression), fixed and passing since. 13 fail identically on recette at 4fb96e5 run on the same machine the same day: series-animated.acceptance checks 6, 1 and 8; series-gpu.acceptance (the loudnorm of a silent voice, and the four GPU tests after it); series-parallel.acceptance « a failing slice fails the whole render »; series-sequence.acceptance beats 2 and 3 and check 5; series-era.acceptance « whole globe » and « continent » (TODO). The last, series-era « coast in view captures within 10 s », passed on recette and failed here: a capture timing, alone 10.4 s against 10 s on this shared machine while other sessions rendered; « whole globe » passed here and failed on recette",
+    "test:social-renderer": "29 pass, 0 fail",
+    "fidelity, 89 sample cards": "89 of 89 against design-system-1.10.0-accepted; PNG and alternative texts byte-identical between the 1.13.0 and 1.14.0 design files"
+  },
+  "episode": {
+    "what": "« Afrique » (series 6, n° 1) rendered on 1.14.0 from cards-114.json and series-114.sequence.json (outside git), on its adjusted voice, mixed as 1.13.0 specifies, two workers, no diagnose: the layout check passed on every frame",
+    "duration": "243.4 s, 7302 frames",
+    "sound": "mixed, 113 cues, the series bed, -16 LUFS integrated, -1 dBTP true peak, LRA 5.6",
+    "silentViewing": "36 facts on the map cards, 36 pass (80 % of their time, first mark within 700 ms)",
+    "breakdowns": "people: UN, World Population Prospects 2024, 2025 by M49 region (eastern 5, western 4, northern 3, middle 2, southern 1); languages: Glottolog 5.3 points by region (western 8, middle 6, eastern 4, northern 1, southern 1); the engine's largest remainder gives the same units. The 54 states and the two uncounted territories from Natural Earth 5.1.2",
+    "textsOnMaps": {
+      "before (1.13.0 words)": "27 words on nine map cards, most of them sentences",
+      "after": {
+        "afr-03": "EthniAfrica (the band carries « tout un continent »)",
+        "afr-05": "Afrique, 20 ans, monde, 31 ans (the glasses); figures in the head",
+        "afr-07": "146 av. J.-C., Carthage, Afri, berbère, phénicienne, latine, grecque, AFRICA, ? (eight at most at once)",
+        "afr-09": "Léon l'Africain, XVIe siècle, Grenade, Fès, Europe",
+        "afr-13": "LIBYE, ÉTHIOPIE, ALKEBULAN, KEMET, A. Thevet, 1575, sans source",
+        "afr-15": "AFRIQUE (brought into the frame)",
+        "afr-17": "1914",
+        "afr-17b": "1963, Addis-Abeba",
+        "afr-19": "AFRICA, ?, Carthage"
+      },
+      "phrases": 0
+    },
+    "boards": "planches-et-episode-430.jpg: boards (top, plein-ecran/) against the episode's own frames (bottom) at 430 px: people, one in five, the two glasses, the bubbles, the readings, the book, Alkebulan stamped, Kemet, the filled frame. Differences: the units stand by the sourced breakdown, not the boards' demonstration; the readings' view is 1500 px wide of radius (the boards' 1750 put « phénicienne » out of the band); LIBYE sits at 22° N (at 27.5° the push carried it out of the band); the province's and the Latins' names leave the map on the closer views (the foot's key names them); the 1.13.0 cross and circle on Carthage leave on « D'autres »."
+  }
+}

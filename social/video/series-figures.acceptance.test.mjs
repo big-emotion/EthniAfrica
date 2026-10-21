@@ -71,7 +71,7 @@ test(
     assert.match(text(0), /54 pays/u);
     assert.match(text(1), /1,5 milliard d’habitants/u);
     assert.match(text(2), /1 sur 5 dans le monde/u);
-    assert.match(text(4), /plus de 2 000 langues/u);
+    assert.match(text(4), /plus de 2\s000 langues/u);
   }
 );
 

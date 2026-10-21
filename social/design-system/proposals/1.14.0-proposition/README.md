@@ -61,3 +61,10 @@ The units' placement by region on the boards is demonstration (people: East 5, W
   - `video-1140-430.jpg`: the frames at 430 px.
 
 The five animated previews stay outside git, in `.local/research/social-production-2026-10-09/design-system-1.14.0-boards/videos/` (540 × 960, 30 frames a second, on the episode's own voice, mixed with the operator's cue palette and the bed « afrique-du-sud » at −16 LUFS): `video-1140-chiffres.mp4`, `video-1140-lectures.mp4`, `video-1140-livre.mp4`, `video-1140-noms.mp4`, `video-1140-cadre.mp4`, and all five in `video-1140-suite.mp4`; each with its `*.cues.json`. The full-size frames are in `plein-ecran/` with `report.json`. Not deposited: `design-system.json`, the component's `preview.html` and the board renderer and mixer in `tools/`.
+
+## Integration (21 October 2026)
+
+The engine integration and its evidence are in [`integration-2026-10-21/`](integration-2026-10-21/video-tests.json):
+
+- `video-tests.json`: the runs, the episode « Afrique » rendered on 1.14.0 (sound, silent viewing check, texts on each map before and after), the sourced breakdowns;
+- `planches-et-episode-430.jpg`: board | episode at 430 px, nine frames of the five cards.
