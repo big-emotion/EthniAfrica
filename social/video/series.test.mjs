@@ -442,3 +442,25 @@ test("an image enlarged past 1.5 is refused, except in a demonstration", () => {
   assert.deepEqual(checkSeriesLayout([image], { demo: true }), []);
   assert.deepEqual(checkSeriesLayout([{ ...image, scale: 1.5 }]), []);
 });
+
+// @req REQ-186
+test("the figure head keeps « plus de » clear of the number's digits and outline", () => {
+  // Anton 176 on a 156 px line overflows its box by about 10 px at the top,
+  // and its outline adds 13 px: « plus de » needs 24 px of clearance above
+  // the number's line box, or the digits cover it (operator, 21 October 2026).
+  const fig = (kind, y, h) => ({ id: kind, kind, x: 60, y, w: 500, h });
+  assert.match(
+    checkSeriesLayout([
+      fig("figure-pre", 318, 42),
+      fig("figure-number", 360, 156),
+    ]).join(),
+    /« plus de » touche le chiffre/
+  );
+  assert.deepEqual(
+    checkSeriesLayout([
+      fig("figure-pre", 318, 42),
+      fig("figure-number", 384, 156),
+    ]),
+    []
+  );
+});
