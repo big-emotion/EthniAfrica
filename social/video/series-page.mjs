@@ -2454,6 +2454,9 @@ window.drawFrame = (state) => {
     backgrounds: backgrounds(frame),
     documents,
     imageryPaints: imageryPaints - paintsBefore,
+    // 1.13.0: the counter's digits as drawn, and the headline band's lines.
+    counters: state.layers.filter((l) => layers[l.card].counter && l.counter).map((l) => ({ card: layers[l.card].spec.id, digits: [...layers[l.card].counter.num.children].map(rect), text: layers[l.card].counter.num.textContent })),
+    headlines: state.layers.filter((l) => layers[l.card].headline).map((l) => layers[l.card].headline.lines.map((L) => ({ ...rect(L.line), filter: L.line.style.filter, visible: L.line.style.visibility !== "hidden" }))),
     // 1.13.0: the pictures too small to push, held still.
     held: state.layers.filter((l) => layers[l.card].held).map((l) => layers[l.card].spec.id),
     // 1.7.0: a hyphenated word drawn over two lines.
@@ -2491,7 +2494,8 @@ window.drawFrame = (state) => {
         })).filter((a) => a.layers.length),
         heads: [...node.arrows.querySelectorAll("[data-head]")].map((h) => ({ id: h.dataset.head, ...rect(h) })),
         // 1.13.0: the flags and the drawn marks as drawn.
-        flags: [...node.flags.querySelectorAll("[data-flag]")].map((g) => ({ flag: g.dataset.flag, strips: g.querySelectorAll("svg").length, ...rect(g) })),
+        flags: [...node.flags.querySelectorAll("[data-flag]")].map((g) => ({ flag: g.dataset.flag, strips: g.querySelectorAll("svg").length, stripsY: [...g.querySelectorAll("svg")].map((s) => +s.getAttribute("y")), ...rect(g) })),
+        borders: +node.borderGroup.getAttribute("opacity"),
         drawn: [...node.drawn.children].map((g) => ({ kind: g.dataset.drawn, opacity: +g.getAttribute("opacity"), ...rect(g) })),
         paper: +node.paperfx.style.opacity,
         drawings: node.images.filter((i) => i.style.display !== "none").map((i) => ({ kind: i.dataset.kind, filter: getComputedStyle(i).filter, complete: i.complete && i.naturalWidth > 0, ...rect(i) })),

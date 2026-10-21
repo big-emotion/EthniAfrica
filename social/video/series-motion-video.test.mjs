@@ -221,3 +221,40 @@ test("check 2: on parchment, free words and a drawing's labels pop", () => {
   assert.ok(close(d(yaw + 5 + 5).nameScale, popAt(5).scale));
   assert.equal(d(yaw + 5 + 9).name, 1);
 });
+
+// Check 14: a piece without the new fields gets nothing of 1.13.0 but the
+// motion tokens, the pop, the swell and the push: no era, no flash, no
+// counter, no band, no flag, no whip, no drawn mark, no recap, no tier
+// warning. Its pixels are compared with the 1.12.0 engine's in the
+// integration record (proposals/1.13.0-proposition/).
+// @req REQ-186
+test("check 14: a piece without the new fields takes only the pop, the swell and the push", () => {
+  for (const demo of [
+    seriesDemo,
+    touaregDemo,
+    teachingCardsDemo,
+    animatedDemo,
+  ]) {
+    const s = load(demo);
+    assert.equal(s.eras, null);
+    assert.deepEqual(s.headlines, []);
+    assert.equal(s.tierReport.tier, null);
+    assert.ok(s.cards.every((c) => !c.isRecap && c.type !== "word"));
+    for (let f = 0; f < s.frames; f += 11) {
+      const state = seriesFrameState(s, f);
+      assert.equal(state.flash, undefined);
+      assert.equal(state.paperInks, undefined);
+      for (const l of state.layers) {
+        assert.equal(l.counter, undefined);
+        assert.equal(l.headline, undefined);
+        assert.equal(l.word, undefined);
+        if (!l.map) continue;
+        assert.equal(l.map.flags, undefined);
+        assert.equal(l.map.whip, undefined);
+        assert.equal(l.map.paper, undefined);
+        assert.equal(l.map.desat, undefined);
+        assert.deepEqual(l.map.marks?.drawn ?? [], []);
+      }
+    }
+  }
+});

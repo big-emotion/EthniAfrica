@@ -39,6 +39,12 @@ import {
 } from "./series-map.mjs";
 import { areaInks } from "./series-sequence.mjs";
 import { coastOf } from "./shoreline.mjs";
+import {
+  soundLibrary,
+  mixAvailable,
+  assignCueFiles,
+  mixSound,
+} from "./mix.mjs";
 
 const designRoot = fileURLToPath(new URL("../design-system/", import.meta.url));
 const sha256 = (bytes) => createHash("sha256").update(bytes).digest("hex");
@@ -538,7 +544,7 @@ export async function joinSlices(parts, list, file, voice, count) {
 // re-encoding, and the voice is added once on the joined file with the
 // arguments of a single pass. A failed slice stops the others, and no
 // video.mp4 nor slice file remains.
-async function encodeSlices(seq, slices, file, options) {
+async function encodeSlices(seq, slices, file, options, voice) {
   const parts = slices.map((_, k) => `${file}.part-${k}.mp4`);
   const list = `${file}.parts.txt`;
   let failure = null;
@@ -555,7 +561,7 @@ async function encodeSlices(seq, slices, file, options) {
       )
     );
     if (failure) throw failure;
-    await joinSlices(parts, list, file, seq.voice, seriesFrameCount(seq));
+    await joinSlices(parts, list, file, voice, seriesFrameCount(seq));
     return {
       renderer: done[0].value.renderer,
       problems: done.flatMap((d) => d.value.problems),
@@ -594,13 +600,34 @@ function checkEncoded(file, count) {
     );
 }
 
+// 1.13.0: the voice, the planned cues on the operator's files and the
+// series' bed, mixed and normalised (mix.mjs) into the export's folder.
+async function mixVoice(seq, sound, outDir, count) {
+  const { placed, missing } = assignCueFiles(seq.cues ?? [], sound);
+  const result = await mixSound({
+    voice: seq.voice.audio,
+    words: seq.voice.chunks.flat(),
+    cues: placed,
+    bed: sound.beds[seq.band.id] ?? null,
+    seconds: count / FPS,
+    out: join(outDir, "mix.wav"),
+  });
+  return { ...result, missing: missing.length };
+}
+
 // `workers` browsers render the video in as many slices (seriesSlices); one
 // worker is the single pass. Each worker holds about 2.7 to 2.9 GB at its
 // peak (Chromium, Node and FFmpeg): three is the default on a 16 GB machine.
 export async function encodeSeriesVideo(
   seq,
   outDir,
-  { diagnose = false, assets, workers = 3, gpu = false } = {}
+  {
+    diagnose = false,
+    assets,
+    workers = 3,
+    gpu = false,
+    sound = soundLibrary(),
+  } = {}
 ) {
   // Hashed before drawing, as loaded: the package loads the sequence again and
   // compares, so a sequence edited after encoding needs a new encode.
@@ -622,17 +649,25 @@ export async function encodeSeriesVideo(
   await rm(file, { force: true });
   const options = { diagnose, gpu, ...(assets && { assets }) };
   const ffmpeg = execFileSync("ffmpeg", ["-version"]).toString().split("\n")[0];
+  // 1.13.0: with the operator's cue files or the series' bed, the voice is
+  // mixed with them (mix.mjs) and the mix is measured; without any, the
+  // voice alone, as before. The picture is the same either way.
+  const mixed = mixAvailable(sound, seq.band.id)
+    ? await mixVoice(seq, sound, outDir, count)
+    : null;
+  const voice = mixed ? { ...seq.voice, audio: mixed.file } : seq.voice;
   const { renderer, problems, held } =
     slices.length === 1
       ? await encodeSlice(
           seq,
           slices[0],
           file,
-          audioArgs(seq.voice, 0, count / FPS),
+          audioArgs(voice, 0, count / FPS),
           options,
           () => null
         )
-      : await encodeSlices(seq, slices, file, options);
+      : await encodeSlices(seq, slices, file, options, voice);
+  if (mixed) await rm(mixed.file, { force: true });
   try {
     checkEncoded(file, count);
   } catch (error) {
@@ -646,6 +681,13 @@ export async function encodeSeriesVideo(
       "series-render.mjs",
       "series-map.mjs",
       "series-sequence.mjs",
+      // 1.13.0: the motion and the sound.
+      "series-motion.mjs",
+      "series-turns.mjs",
+      "series-tiers.mjs",
+      "series-subject.mjs",
+      "series-cues.mjs",
+      "mix.mjs",
       "sequence.mjs",
       "render.mjs",
       "page.mjs",
@@ -677,6 +719,20 @@ export async function encodeSeriesVideo(
     ...(seq.silent?.length && { silent: seq.silent }),
     demo: !!seq.demo,
     ...(seq.warnings.length && { warnings: seq.warnings }),
+    // 1.13.0: the sound cues planned, and the mix as measured when it was
+    // made (loudness, true peak, range), or the voice alone.
+    cues: seq.cues?.length ?? 0,
+    sound: mixed
+      ? {
+          mixed: true,
+          cues: mixed.cues,
+          missing: mixed.missing,
+          bed: mixed.bed,
+          integrated: mixed.integrated,
+          truePeak: mixed.truePeak,
+          lra: mixed.lra,
+        }
+      : { mixed: false },
     // 1.13.0: the pictures too small to push, held still (decision 3).
     ...(held.length && { stillPictures: held }),
     // A diagnostic export lists the frames whose text left its band.

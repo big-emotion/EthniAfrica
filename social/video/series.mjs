@@ -17,6 +17,7 @@ import {
 } from "./sequence.mjs";
 import { EASE, PUSH, pushAt } from "./series-motion.mjs";
 import { tierReport } from "./series-tiers.mjs";
+import { planCues } from "./series-cues.mjs";
 import { loadSubject, recapCard, RECAP } from "./series-subject.mjs";
 import {
   checkTurnFields,
@@ -404,6 +405,8 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
   const tiers = tierReport(seq, input.tier, CROSS_FADE);
   seq.tierReport = tiers.report;
   seq.warnings.push(...tiers.warnings);
+  // 1.13.0: the sound cues on their frames, for mix.mjs.
+  seq.cues = planCues(seq, CROSS_FADE);
   return seq;
 }
 
