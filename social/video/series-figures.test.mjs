@@ -106,6 +106,8 @@ test("check 1: the last count lands on the spoken figure, written as French numb
       ...editCard("fig-chiffres", (card) => {
         card.figures[0].say = "53";
         card.cascade.say = "53";
+        card.map.areas[0].states[0].say = "53";
+        card.map.facts[0].say = "53 pays";
       }),
     },
     /Le décompte ne tombe pas sur le chiffre dit/
@@ -264,6 +266,33 @@ test("check 6: every letter on its path, inside the map band; a lettering too lo
     editCard("fig-noms", (card) => (card.letterings[0].size = 80)),
     /un nom posé tient entre 50 et 64 px/
   );
+});
+
+// @req REQ-186
+test("pins: each reading's arrow, in the reading ink, stops 12 px clear of the place it names", () => {
+  const i = cardOf("fig-lectures");
+  const cp = seq.mapSequence.cards[i];
+  const pins = cp.arrows.filter((a) => a.pin);
+  assert.equal(pins.length, 4);
+  assert.ok(pins.every((a) => a.ink === "b"));
+  const frame = Math.max(...pins.map((a) => a.start + a.dur)) + 3;
+  const map = mapAt(frame, i);
+  const name = map.texts.find((t) => t.text === "Carthage").box;
+  for (const a of map.marks.arrows.filter((x) =>
+    pins.some((p) => p.id === x.id)
+  )) {
+    const xs = a.heads[0].d.match(/-?[\d.]+/gu).map(Number);
+    const hx = xs.filter((_, n) => !(n % 2));
+    const hy = xs.filter((_, n) => n % 2);
+    const clear =
+      Math.min(...hx) - 12 >= name.x + name.w ||
+      Math.max(...hx) + 12 <= name.x ||
+      Math.min(...hy) - 12 >= name.y + name.h ||
+      Math.max(...hy) + 12 <= name.y;
+    assert.ok(clear, a.id);
+    // Not among the three routes at full strength.
+    assert.equal(a.full, false);
+  }
 });
 
 // @req REQ-186

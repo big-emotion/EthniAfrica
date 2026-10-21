@@ -81,7 +81,7 @@ const FIELDS = {
   units: ["id", "kind", "value", "per", "byRegion", "say", "dim", "out", "key"],
   row: ["id", "of", "lit", "say", "light", "out"],
   gauges: ["id", "shape", "value", "scale", "label", "name", "say", "out"],
-  pins: ["id", "name", "at", "to", "say", "dim", "side", "bend"],
+  pins: ["id", "name", "at", "to", "say", "dim", "side", "dy", "bend"],
   letterings: ["text", "from", "to", "bend", "say", "dim", "out", "size"],
   stamps: ["id", "text", "at", "say", "out"],
   frame: ["id", "at", "w", "h", "say", "fill", "out"],

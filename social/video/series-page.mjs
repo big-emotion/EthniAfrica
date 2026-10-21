@@ -1873,6 +1873,8 @@ function drawFigures(node, map) {
         const n = el("div", "sm-trw oi", esc(fr(fill.text)));
         Object.assign(n.style, { left: fill.x + "px", top: fill.y + "px", opacity: fill.opacity, transform: "translate(-50%,-50%) scale(" + fill.scale.toFixed(4) + ")" });
         n.dataset.mark = "name";
+        // On its way in, it is checked in the band once it has landed.
+        if (fill.k < 1) n.dataset.moving = "1";
         node.marks.append(ringed(n, 8));
       }
     }
@@ -1889,6 +1891,7 @@ function drawFigures(node, map) {
         const n = el("div", "sm-trw oi", esc(fr(t.text)));
         Object.assign(n.style, { left: t.x + "px", top: t.y + "px", opacity: t.opacity, transform: "translate(-50%,-50%)" });
         n.dataset.mark = "name";
+        if (t.k > 0 && t.k < 1) n.dataset.moving = "1";
         node.marks.append(ringed(n, 8));
       }
     }
@@ -2300,7 +2303,7 @@ function frameBoxes(frame, state) {
         node.marks.querySelectorAll("[data-mark]").forEach((n) => {
           if (!(+n.style.opacity > 0)) return;
           const r = rect(n);
-          boxes.push({ id: n.textContent, kind: n.dataset.mark === "word" ? "map-word" : "map-name", ...r, ...flags, opacity: +n.style.opacity, ...(n.dataset.leaving && { leaving: true }), ...(n.dataset.of !== undefined && { of: "drawing " + n.dataset.of }) });
+          boxes.push({ id: n.textContent, kind: n.dataset.mark === "word" ? "map-word" : "map-name", ...r, ...flags, ...(n.dataset.moving && { moving: true }), opacity: +n.style.opacity, ...(n.dataset.leaving && { leaving: true }), ...(n.dataset.of !== undefined && { of: "drawing " + n.dataset.of }) });
         });
         node.images.forEach((n) => {
           if (n.style.display === "none" || !(+n.style.opacity > 0)) return;

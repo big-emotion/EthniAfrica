@@ -1177,6 +1177,13 @@ function planAnimatedCard(seq, plan, run, k) {
     say: p.say,
     bend: p.bend ?? 0.12,
     pin: true,
+    ...(typeof p.to === "string" && {
+      place: {
+        name: placeAt.places[p.to].name,
+        at: placeAt.places[p.to].at,
+        side: placeAt.places[p.to].side ?? "right",
+      },
+    }),
     ...(p.dim !== undefined && { dim: p.dim }),
   }));
   // Arrows in the order of their words, one drawing at a time.
@@ -1203,6 +1210,7 @@ function planAnimatedCard(seq, plan, run, k) {
       both: !!a.both,
       ink: a.pin ? "b" : markInk(a, seq.inks, `${what}, arrow ${a.id}`),
       ...(a.pin && { pin: true }),
+      ...(a.place && { place: a.place }),
       ...(a.dim !== undefined && { dim: word(a.dim) }),
       start: s,
       dur,
@@ -1229,7 +1237,8 @@ function planAnimatedCard(seq, plan, run, k) {
     text: p.name,
     kind: "name",
     at: p.at,
-    offset: p.side === "above" ? -38 : 40,
+    // Under its point (above with `side: "above"`), or `dy` px from it.
+    offset: p.dy ?? (p.side === "above" ? -38 : 40),
     say: p.say,
     ink: "b",
     ...(p.dim !== undefined && { dim: p.dim }),
@@ -1706,7 +1715,44 @@ function cardMarks(cp, frame, camera, proportion, fade, names) {
     if (opacity <= 0 && frame > a.start) return [];
     const w = proportion.w;
     const Lh = 3.6 * w;
-    const [lo, hi] = [8, L - 14];
+    // A reading's arrow stops where its head is 12 px clear of its place's
+    // dot and name (1.14.0): several readings meet on one named place.
+    const lo = 8;
+    let hi = L - 14;
+    if (a.place) {
+      const [px, py] = flatProject(camera, ...a.place.at);
+      const wn = estimateWidth(a.place.name, 28, MARKS.styles.place.ratio);
+      const clear = [
+        { x: px - 8, y: py - 8, w: 16, h: 16 },
+        {
+          x: a.place.side === "left" ? px - 14 - wn : px + 14,
+          y: py - 16,
+          w: wn,
+          h: 32,
+        },
+      ];
+      const near = (h) => {
+        const xs = h.d.match(/-?[\d.]+/gu).map(Number);
+        const [hx, hy] = [
+          xs.filter((_, n) => !(n % 2)),
+          xs.filter((_, n) => n % 2),
+        ];
+        const b = {
+          x: Math.min(...hx),
+          y: Math.min(...hy),
+          w: Math.max(...hx) - Math.min(...hx),
+          h: Math.max(...hy) - Math.min(...hy),
+        };
+        return clear.some(
+          (c) =>
+            b.x - 12 < c.x + c.w &&
+            c.x - 12 < b.x + b.w &&
+            b.y - 12 < c.y + c.h &&
+            c.y - 12 < b.y + b.h
+        );
+      };
+      while (hi > lo + 40 && near(arrowHead(pointAt(pts, cum, hi), w))) hi -= 3;
+    }
     let [s0, s1] = [lo, lo + (hi - lo) * k];
     if (a.both) {
       const [mid, half] = [(lo + hi) / 2, ((hi - lo) / 2) * k];
