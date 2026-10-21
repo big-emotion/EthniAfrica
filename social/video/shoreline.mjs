@@ -442,6 +442,80 @@ export async function readChadGrid(assets) {
   };
 }
 
+// Cartes 1.13.0, the era map's coast (series.md « 5. The era map »): the
+// present-day coastline, as the series video's era map engraves it, taken
+// from Natural Earth's countries rather than from the imagery's colours.
+// Natural Earth's countries share their border vertices exactly, so an edge
+// that belongs to one country only is a coast (the complement of
+// series-map.mjs's sharedBorders). `land` is every polygon ring touching
+// `bounds`, for the sea to be painted around. Edges are joined into lines.
+export function coastOf(world, [west, east, south, north]) {
+  const inside = ([lon, lat]) =>
+    lon >= west && lon <= east && lat >= south && lat <= north;
+  const polygons = (g) =>
+    g.type === "Polygon"
+      ? [g.coordinates]
+      : g.type === "MultiPolygon"
+        ? g.coordinates
+        : [];
+  const owners = new Map();
+  const point = new Map();
+  const land = [];
+  const key = (p) => {
+    const k = `${p[0]},${p[1]}`;
+    point.set(k, p);
+    return k;
+  };
+  for (const f of world.features)
+    for (const polygon of polygons(f.geometry))
+      for (const ring of polygon) {
+        if (!ring.some(inside)) continue;
+        land.push(ring);
+        for (let i = 0; i + 1 < ring.length; i++) {
+          const [a, b] = [key(ring[i]), key(ring[i + 1])];
+          if (a === b) continue;
+          const edge = a < b ? `${a}|${b}` : `${b}|${a}`;
+          owners.set(edge, (owners.get(edge) ?? 0) + 1);
+        }
+      }
+  const next = new Map();
+  for (const [edge, n] of owners) {
+    if (n !== 1) continue;
+    const [a, b] = edge.split("|");
+    if (!inside(point.get(a)) && !inside(point.get(b))) continue;
+    for (const [p, q] of [
+      [a, b],
+      [b, a],
+    ]) {
+      if (!next.has(p)) next.set(p, []);
+      next.get(p).push(q);
+    }
+  }
+  const used = new Set();
+  const edgeKey = (a, b) => (a < b ? `${a}|${b}` : `${b}|${a}`);
+  const lines = [];
+  const walk = (start) => {
+    for (const first of next.get(start)) {
+      if (used.has(edgeKey(start, first))) continue;
+      const line = [start];
+      let [from, to] = [start, first];
+      for (;;) {
+        used.add(edgeKey(from, to));
+        line.push(to);
+        if (next.get(to).length !== 2) break;
+        const after = next.get(to).find((n) => n !== from);
+        if (used.has(edgeKey(to, after))) break;
+        [from, to] = [to, after];
+      }
+      lines.push(line.map((k) => point.get(k)));
+    }
+  };
+  const nodes = [...next.keys()].sort();
+  nodes.filter((n) => next.get(n).length !== 2).forEach(walk);
+  nodes.forEach(walk);
+  return { lines, land };
+}
+
 export const OUTPUT = new URL("./data/megachad-325m.geojson", import.meta.url);
 
 export async function buildMegaChad(assets, generated) {

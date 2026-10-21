@@ -6,7 +6,12 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { traceShoreline, shorelineFeature, ringAreaKm2 } from "./shoreline.mjs";
+import {
+  traceShoreline,
+  shorelineFeature,
+  ringAreaKm2,
+  coastOf,
+} from "./shoreline.mjs";
 
 const artefact = JSON.parse(
   readFileSync(new URL("./data/megachad-325m.geojson", import.meta.url))
@@ -194,4 +199,44 @@ test("the recorded area and vertex count match the geometry", () => {
     .flat()
     .reduce((n, ring) => n + ring.length - 1, 0);
   assert.equal(p.vertices, vertices);
+});
+
+// Cartes 1.13.0, the era map's coast: two countries side by side on a sea.
+// Their shared border is no coast; the six outer edges are, joined.
+// @req REQ-186
+test("1.13.0: the era map's coast is every edge one country owns, never a shared border", () => {
+  const square = (x0, x1) => ({
+    type: "Feature",
+    properties: {},
+    geometry: {
+      type: "Polygon",
+      coordinates: [
+        [
+          [x0, 0],
+          [x1, 0],
+          [x1, 1],
+          [x0, 1],
+          [x0, 0],
+        ],
+      ],
+    },
+  });
+  const world = {
+    type: "FeatureCollection",
+    features: [square(0, 1), square(1, 2)],
+  };
+  const { lines, land } = coastOf(world, [-1, 3, -1, 2]);
+  assert.equal(land.length, 2);
+  const edges = lines.flatMap((l) =>
+    l.slice(1).map((p, i) =>
+      [l[i], p]
+        .map((q) => q.join(","))
+        .sort()
+        .join("|")
+    )
+  );
+  assert.equal(edges.length, 6);
+  assert.ok(!edges.includes("1,0|1,1"), "the shared border is no coast");
+  // Outside the bounds, nothing.
+  assert.deepEqual(coastOf(world, [5, 6, 5, 6]), { lines: [], land: [] });
 });

@@ -77,7 +77,8 @@ const ANIMATED_DRAWN = {
   ],
   drawings: ["kind", "at", "say", "until", "label"],
   words: ["text", "kind", "at", "say", "until", "people", "ink"],
-  places: ["name", "at", "say", "side"],
+  // 1.13.0: a place may carry an id, which drawn marks name.
+  places: ["id", "name", "at", "say", "side"],
   facts: ["say", "shows"],
   rename: ["from", "to", "dates", "at", "say"],
   // The foot's key, when the plan groups its marks (« Royaumes », « Chemin
@@ -391,6 +392,8 @@ export function loadSequenceArea(file) {
   return {
     file,
     uncertain: p.kind !== "certain",
+    // 1.13.0: a flag fills only an area that is a state (category country).
+    category: p.category,
     polygons: polygonRings(feature.geometry),
   };
 }

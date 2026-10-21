@@ -9,9 +9,52 @@
 // wider contour that follows the letters; nothing darkens the image.
 // Everything arrives from series-render.mjs; the page has no clock and no
 // network.
+import { readFileSync } from "node:fs";
 import { FLAT_VERT, FLAT_FRAG, OVERLAY_SCRIPT } from "./page.mjs";
 import { flatProject, areaStyle, MARKS } from "./series-map.mjs";
 import { documentFrame } from "./series-document.mjs";
+import { TURNS } from "./series-turns.mjs";
+
+// Cartes 1.13.0: the inks of the era map and of the drawn marks, from the
+// design's tokens. The lilac fourth ink and the colonial power's deep ink
+// have no atlas token; they take the boards' values.
+const TOKENS = JSON.parse(
+  readFileSync(new URL("../design-system/tokens.json", import.meta.url), "utf8")
+);
+const token = (name) =>
+  TOKENS.color.tokens.find((t) => t.name === name)?.value ??
+  (() => {
+    throw new Error(`No colour token ${name}`);
+  })();
+export const PAPER_INKS = {
+  fill: {
+    a: token("area-a"),
+    b: token("area-b"),
+    c: token("area-c"),
+    d: "#7a5fb0",
+    w: token("map-ink-muted"),
+  },
+  deep: {
+    a: token("area-a-deep"),
+    b: token("area-b-deep"),
+    c: token("area-c-deep"),
+    d: "#4e3a80",
+    w: "#55463a",
+  },
+  water: token("map-water"),
+  coast: token("era-coast"),
+  engraving: token("era-engraving"),
+  river: token("map-river-paper"),
+  riverCore: token("map-river"),
+  riverGlow: token("map-river-glow"),
+  circle: token("mark-circle"),
+  crossInk: token("area-c-ink").nuit,
+  flash: [
+    token("flash-warm-centre"),
+    token("flash-warm-mid"),
+    token("flash-warm-edge"),
+  ],
+};
 
 export const SERIES_PAGE_HTML = `<!doctype html>
 <html lang="fr"><head><meta charset="utf-8">
@@ -202,6 +245,29 @@ html,body{margin:0;background:#000}
 #subtitles.sub-pa .sub-line{color:var(--ink);filter:none}
 #subtitles.sub-pa .sub-text{-webkit-text-stroke-width:0}
 #subtitles.sub-pa .lit{background:var(--accent);color:#fffaf0;box-shadow:6px 0 0 var(--accent),-6px 0 0 var(--accent)}
+/* 1.13.0: the date counter in the dated head's place, odometer digits half
+   an em wide so the number never shifts, the place's name under it. */
+.vf-counter{position:absolute;left:60px;top:318px;transform-origin:0 100%;z-index:2}
+.vf-cnum{display:flex;font:400 176px/156px var(--font-display);color:var(--oi-accent);--sw:13px}
+.vf-dg{display:block;width:.5em;height:156px;overflow:hidden;position:relative;text-align:center}
+.vf-dg span{position:absolute;left:0;right:0;display:block;height:156px}
+.vf-clab{font:800 36px/42px var(--font-text);color:var(--oi-ink);--sw:5px;margin-top:10px;white-space:nowrap}
+/* 1.13.0: the headline band, each line its own black strip from the left
+   edge, Anton 104/112 in capitals, the key word in the accent. */
+.vf-hb{position:absolute;left:0;top:318px;z-index:3;display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+.vf-hbl{background:var(--headline-band,#0b0806);padding:10px 34px 4px 60px;font:400 104px/112px var(--font-display);letter-spacing:.01em;color:#fffaf2;white-space:nowrap;text-transform:uppercase}
+.vf-hbk{color:#e8b96a;display:inline-block;transform-origin:50% 60%}
+/* 1.13.0: the warm flash, one light from the centre over the whole frame. */
+#flash{position:absolute;inset:0;z-index:8;pointer-events:none;display:none}
+/* 1.13.0: the era map, the satellite re-inked on paper: texts without
+   outline in the map's inks, the paper's fibres over land and sea. */
+.vf-paperfx{position:absolute;left:0;top:0;width:1080px;height:1920px;background:url(/design/assets/Paper/paper.png) repeat;opacity:0;pointer-events:none}
+.sm-paper .sm-name{text-shadow:none}
+.sm-paper .sm-self,.sm-paper .sm-lang{-webkit-text-stroke-width:0}
+.sm-paper .sm-region{color:var(--map-ink,#2a1e15)}
+.sm-paper .sm-place-name{color:var(--map-ink,#2a1e15);text-shadow:none}
+.sm-paper .sm-dot{background:var(--map-ink,#2a1e15);border-color:#fbf7f2}
+.sm-paper .oi{-webkit-text-stroke-width:0!important;filter:none!important;--oi-text:var(--map-ink,#2a1e15);--oi-ink:var(--map-ink,#2a1e15);--oi-muted:var(--map-ink-muted,#6e5d4c)}
 .vf-pill{margin-top:30px;display:inline-block;font:800 34px/40px var(--font-text);letter-spacing:.04em;text-transform:uppercase;color:var(--oi-accent);--sw:4px;border:3px solid var(--oi-accent);border-radius:999px;padding:14px 40px;box-shadow:0 0 0 2px var(--oi-stroke),inset 0 0 0 2px var(--oi-stroke)}
 .vf-foot{position:absolute;left:60px;width:960px;bottom:134px;display:flex;flex-direction:column;gap:4px}
 .vf-key{display:flex;align-items:center;gap:14px;font:800 26px/32px var(--font-text);--sw:4px;margin-bottom:10px}
@@ -512,6 +578,30 @@ function buildParts(spec, view) {
   if (spec.sbs) head.append(sideBySide(spec.sbs, parts));
   if (spec.week && !pa) head.append(weekTable(spec.week, parts));
   layer.append(head);
+  parts.head = head;
+  // 1.13.0: an era card's date counter, in the dated head's place.
+  if (spec.era) {
+    const box = el("div", "vf-counter");
+    const num = el("div", "vf-cnum oi oi-l");
+    const label = el("div", "vf-clab oi", esc(fr(spec.era.label)));
+    box.append(num, label);
+    layer.append(box);
+    parts.counter = { box, num, label, digits: [] };
+  }
+  // 1.13.0: the headline band, each line its own strip, blurred along its
+  // slide by a filter of its own.
+  if (spec.headline) {
+    const box = el("div", "vf-hb");
+    const lines = spec.headline.lines.map((text, n) => {
+      const line = el("div", "vf-hbl", esc(fr(text)).replace(/\\[\\[(.+?)\\]\\]/, '<span class="vf-hbk">$1</span>'));
+      const id = "hb-" + spec.id + "-" + n;
+      document.querySelector("#sm-defs defs").insertAdjacentHTML("beforeend", '<filter id="' + id + '" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur in="SourceGraphic" stdDeviation="0 0"/></filter>');
+      box.append(line);
+      return { line, key: line.querySelector(".vf-hbk"), filter: id };
+    });
+    layer.append(box);
+    parts.headline = { box, lines };
+  }
   if (pa) parchmentContent(spec, parts);
   else if (spec.formula) {
     parts.formula = formulaLayer(spec.formula);
@@ -549,12 +639,14 @@ function buildParts(spec, view) {
     // 1.11.0: during the globe the credit names the imagery alone; the
     // 1.4.1 line takes its place from the first mark on (drawFrame).
     if (view.credits.globe) lines.push(["vf-cred", "credit", view.credits.globe]);
+    // 1.13.0: on the era map, the re-inked imagery is credited as such.
+    if (view.credits.era) lines.push(["vf-cred", "credit", view.credits.era]);
     for (const [cls, kind, text] of lines) {
       if (!text) continue;
       const line = el("div", cls + " oi", esc(fr(text)));
       line.dataset.kind = kind;
-      if (view.credits.globe && kind === "credit") {
-        line.dataset.credit = text === view.credits.globe ? "globe" : "map";
+      if ((view.credits.globe || view.credits.era) && kind === "credit") {
+        line.dataset.credit = text === view.credits.globe ? "globe" : text === view.credits.era ? "era" : "map";
         parts.credits = (parts.credits || []).concat(line);
       }
       foot.append(line);
@@ -947,11 +1039,13 @@ async function satellite(bounds) {
   gl.uniform1f(gl.getUniformLocation(program, "plain"), 1); // no vignette
   return { gl, program, canvas };
 }
-function paintImagery(target, camera, grade = 1) {
+function paintImagery(target, camera, grade = 1, paper = 0, desat = 0) {
   const { gl, program, canvas } = sat;
   gl.viewport(0, 0, 1080, 1920);
   // 1.11.0: the globe runs at the base grade, then recedes (globeGrade).
   gl.uniform1f(gl.getUniformLocation(program, "grade"), grade);
+  gl.uniform1f(gl.getUniformLocation(program, "paper"), paper);
+  gl.uniform1f(gl.getUniformLocation(program, "desat"), desat);
   gl.uniform2f(gl.getUniformLocation(program, "centre"), 540, camera.centreY);
   gl.uniform1f(gl.getUniformLocation(program, "radius"), camera.radius);
   gl.uniform2f(gl.getUniformLocation(program, "view"), camera.lon * Math.PI / 180, camera.lat * Math.PI / 180);
@@ -1050,10 +1144,29 @@ function runLayer(sequence, r) {
     borderPaths = [...g.querySelectorAll("path")];
   }
   let arrows = null;
+  let flags = null;
+  let drawn = null;
+  let coast = null;
+  let paperfx = null;
   if (animated) {
+    // 1.13.0: flags over the fills, the outline redrawn over them; then the
+    // arrows and the drawn marks.
+    flags = svgEl("g", {});
+    svg.append(flags);
     arrows = document.createElementNS(SVG, "g");
     arrows.setAttribute("stroke-linecap", "round"); arrows.setAttribute("stroke-linejoin", "round");
     svg.append(arrows);
+    drawn = svgEl("g", { "stroke-linecap": "round", "stroke-linejoin": "round", fill: "none" });
+    svg.append(drawn);
+    // 1.13.0, the era map: the sea, its engraved lines and the coast drawn
+    // from Natural Earth's countries over the paper-toned imagery, under the
+    // paper's fibres and the marks.
+    if (sequence.coast) {
+      coast = eraCoastLayer(r);
+      wrap.append(coast.svg);
+    }
+    paperfx = el("div", "vf-paperfx");
+    wrap.append(paperfx);
   }
   wrap.append(svg);
   const names = el("div");
@@ -1061,17 +1174,19 @@ function runLayer(sequence, r) {
   const ills = animated ? el("div") : null;
   const marks = animated ? el("div") : null;
   if (animated) wrap.append(ills, marks);
-  return { wrap, canvas, areas, borderLines, borderPaths, names, key: null, animated, arrows, ills, images: [], pool: {}, marks };
+  return { wrap, canvas, areas, borderLines, borderPaths, borderGroup: lines, names, key: null, animated, arrows, flags, drawn, coast, paperfx, ills, images: [], pool: {}, marks };
 }
-function paintRun(node, camera, grade = 1) {
-  const key = cameraKey(camera) + (grade === 1 ? "" : "|" + grade);
+// The paper (1.13.0, the era map) tones the imagery as a printed map; desat
+// takes its colour down (the recap card's memory).
+function paintRun(node, camera, grade = 1, paper = 0, desat = 0) {
+  const key = cameraKey(camera) + (grade === 1 ? "" : "|" + grade) + (paper || desat ? "|" + paper + "|" + desat : "");
   if (node.key === key) return;
   node.key = key;
   const cached = viewImagery.get(key);
   if (cached) {
     node.canvas.getContext("2d").drawImage(cached, 0, 0);
   } else {
-    paintImagery(node.canvas, camera, grade);
+    paintImagery(node.canvas, camera, grade, paper, desat);
     imageryPaints++;
   }
   for (const a of Object.values(node.areas)) {
@@ -1135,26 +1250,48 @@ const drawingInk = {};
 const ringed = (n, outline) => { n.style.filter = "url(#oi-ring-" + ringOf(outline) + ")"; return n; };
 const WORD_STYLE = { phrase: 6, name: 6, date: 9 };
 function drawAnimatedRun(node, map) {
-  paintRun(node, map.camera, map.grade);
+  const paper = map.paper || 0;
+  const onPaper = !!map.paperInks;
+  paintRun(node, map.camera, map.grade, paper, map.desat || 0);
+  // 1.13.0: the whip's blur, copies of the imagery averaged along the
+  // camera's speed on screen; the next frame paints afresh.
+  if (map.whip) blurImagery(node, map.whip);
+  if (node.coast) drawCoast(node.coast, map.camera, paper);
+  node.paperfx.style.opacity = paper;
+  // No modern border on the era map.
+  node.borderGroup.setAttribute("opacity", 1 - paper);
+  node.wrap.classList.toggle("sm-paper", onPaper);
   for (const [file, a] of Object.entries(node.areas)) {
     const shown = map.areas.find((x) => x.file === file);
     const on = new Set((shown ? shown.inks : []).map((l) => l.ink));
     for (const [ink, layer] of Object.entries(a.layers)) if (!on.has(ink)) layer.g.setAttribute("opacity", 0);
     if (!shown) continue;
     const s = areaStyle(shown.lit);
+    // A flag replaces the fill under its outline.
+    const under = 1 - (shown.flag || 0);
     for (const l of shown.inks) {
       const layer = a.layers[l.ink];
       if (!layer) throw new Error("Ink " + l.ink + " of " + file + " has no layer made in setup");
       layer.g.setAttribute("opacity", shown.opacity * l.w);
       // 1.13.0: the swell raises the fill past its level as the area enters.
-      if (a.uncertain) layer.fill.setAttribute("opacity", Math.min(1, s.hatch * shown.swell));
-      else layer.fill.setAttribute("fill-opacity", s.fill * shown.swell);
+      // On the era map, the atlas inks: the area ink at 34 %, its deep ink
+      // on the edge, no dark keyline.
+      if (a.uncertain) {
+        layer.fill.setAttribute("fill", "url(#hatch-" + (onPaper ? "p-" : "") + l.ink + "-" + (a.hatch || 45) + ")");
+        layer.fill.setAttribute("opacity", Math.min(1, s.hatch * shown.swell) * under);
+      } else {
+        layer.fill.setAttribute("fill", onPaper ? PAPER.fill[l.ink] : inkOf(l.ink));
+        layer.fill.setAttribute("fill-opacity", (onPaper ? 0.34 * (s.fill / 0.3) : s.fill) * shown.swell * under);
+      }
       layer.keyline.setAttribute("stroke-width", s.keyline);
-      layer.keyline.setAttribute("stroke-opacity", s.keylineOpacity);
-      layer.edge.setAttribute("stroke-width", s.edge);
+      layer.keyline.setAttribute("stroke-opacity", onPaper ? 0 : s.keylineOpacity);
+      layer.edge.setAttribute("stroke", onPaper ? PAPER.deep[l.ink] : inkOf(l.ink));
+      layer.edge.setAttribute("stroke-width", onPaper ? 3.5 * (s.edge / 4) : s.edge);
       layer.edge.setAttribute("stroke-opacity", s.edgeOpacity);
     }
   }
+  drawFlags(node, map, onPaper);
+  drawDrawnMarks(node, map, onPaper);
   node.names.replaceChildren();
   for (const n of map.names) {
     if (!(n.opacity > 0)) continue;
@@ -1164,7 +1301,7 @@ function drawAnimatedRun(node, map) {
     Object.assign(name.style, { left: n.box.x + n.box.w / 2 + "px", top: n.box.y + n.box.h / 2 + "px", opacity: n.opacity });
     if (n.scale !== 1) name.style.transform = "translate(-50%,-50%) scale(" + n.scale + ")";
     if (n.style === "country") Object.assign(name.style, { fontSize: "44px", lineHeight: "52px" });
-    else name.style.color = INK[n.ink];
+    else name.style.color = onPaper ? PAPER.deep[n.ink] : INK[n.ink];
     name.dataset.mark = "name";
     node.names.append(name);
   }
@@ -1174,12 +1311,13 @@ function drawAnimatedRun(node, map) {
     if (!(a.opacity > 0)) continue;
     const g = svgEl("g", { opacity: a.opacity });
     if (a.d) {
-      g.append(svgEl("path", { d: a.d, fill: "none", stroke: "#0b0806", "stroke-opacity": 0.7, "stroke-width": a.w + 6 }));
-      g.append(svgEl("path", { d: a.d, fill: "none", stroke: inkOf(a.ink), "stroke-width": a.w }));
+      if (!onPaper) g.append(svgEl("path", { d: a.d, fill: "none", stroke: "#0b0806", "stroke-opacity": 0.7, "stroke-width": a.w + 6 }));
+      g.append(svgEl("path", { d: a.d, fill: "none", stroke: onPaper ? PAPER.deep[a.ink] : inkOf(a.ink), "stroke-width": a.w }));
     }
     for (const h of a.heads) {
-      g.append(svgEl("path", { d: h.d, fill: "#0b0806", "fill-opacity": 0.7, stroke: "#0b0806", "stroke-opacity": 0.7, "stroke-width": 6 }));
-      const head = svgEl("path", { d: h.d, fill: inkOf(a.ink), stroke: inkOf(a.ink), "stroke-width": 1 });
+      if (!onPaper) g.append(svgEl("path", { d: h.d, fill: "#0b0806", "fill-opacity": 0.7, stroke: "#0b0806", "stroke-opacity": 0.7, "stroke-width": 6 }));
+      const headInk = onPaper ? PAPER.deep[a.ink] : inkOf(a.ink);
+      const head = svgEl("path", { d: h.d, fill: headInk, stroke: headInk, "stroke-width": 1 });
       head.dataset.head = a.id;
       // Placement keeps words clear of a head at rest; a drawing head passes by.
       head.dataset.drawn = a.k >= 1 ? "1" : "0";
@@ -1231,7 +1369,7 @@ function drawAnimatedRun(node, map) {
     const word = el("div", "sm-wd sm-wd-" + w.kind + " oi", w.lines.map((l) => esc(fr(l))).join("<br>"));
     Object.assign(word.style, { left: w.x + "px", top: w.y + "px", opacity: w.opacity });
     if (w.scale !== 1) word.style.transform = "translate(-50%,-50%) scale(" + w.scale + ")";
-    if (w.ink) word.style.color = inkOf(w.ink);
+    if (w.ink) word.style.color = onPaper ? PAPER.deep[w.ink] : inkOf(w.ink);
     word.dataset.mark = w.word ? "word" : "name";
     if (w.leaving) word.dataset.leaving = "1";
     node.marks.append(ringed(word, WORD_STYLE[w.kind]));
@@ -1252,6 +1390,194 @@ function drawAnimatedRun(node, map) {
   }
   node.wrap.style.transformOrigin = "540px " + map.camera.centreY + "px";
   node.wrap.style.transform = "scale(" + map.zoom + ")";
+}
+
+// ---------------------------------------------------------------------------
+// Cartes 1.13.0 on the map: the whip's blur, the era map's sea and coast,
+// flags and drawn marks. Every value comes from the frame state.
+const PAPER = ${JSON.stringify(PAPER_INKS)};
+let coastData = null;
+
+// Copies of the imagery averaged along the camera's speed: radial up to
+// 35 % for the zoom, directional up to 160 px for the pan (the boards').
+const whipFrame = document.createElement("canvas");
+whipFrame.width = 1080; whipFrame.height = 1920;
+function blurImagery(node, whip) {
+  const pan = Math.hypot(whip.pan[0], whip.pan[1]);
+  if (!(whip.zoom > 0.02 || pan > 14)) return;
+  const zs = Math.min(whip.zoom * 1.2, ${TURNS.blurZoom});
+  const ps = Math.min(pan, ${TURNS.blurPan});
+  const src = whipFrame.getContext("2d");
+  src.clearRect(0, 0, 1080, 1920);
+  src.drawImage(node.canvas, 0, 0);
+  const ctx = node.canvas.getContext("2d");
+  const N = 9;
+  for (let i = 0; i < N; i++) {
+    const f = i / (N - 1), sc = 1 + zs * f;
+    const ox = pan ? (-whip.pan[0] / pan) * ps * f : 0, oy = pan ? (-whip.pan[1] / pan) * ps * f : 0;
+    ctx.globalAlpha = 1 / (i + 1);
+    ctx.drawImage(whipFrame, (1080 - 1080 * sc) / 2 + ox, 1010 * (1 - sc) + oy, 1080 * sc, 1920 * sc);
+  }
+  ctx.globalAlpha = 1;
+  node.key = null;
+}
+
+// The sea in map-water around Natural Earth's land, three lines engraved in
+// it about 11, 24 and 40 px from the coast, and the coast's own line. Each
+// engraved line is the coast's stroke at twice its distance, masked by the
+// land and by a narrower stroke, so it lies on the sea side only.
+function eraCoastLayer(r) {
+  const svg = svgEl("svg", { width: 1080, height: 1920, viewBox: "0 0 1080 1920" });
+  svg.style.cssText = "position:absolute;left:0;top:0;width:1080px;height:1920px;display:block";
+  const defs = svgEl("defs", {});
+  svg.append(defs);
+  const id = (s) => "era-" + r + "-" + s;
+  const mask = (name) => {
+    const m = svgEl("mask", { id: id(name), maskUnits: "userSpaceOnUse", x: 0, y: 0, width: 1080, height: 1920 });
+    m.append(svgEl("rect", { width: 1080, height: 1920, fill: "#fff" }));
+    defs.append(m);
+    return m;
+  };
+  const lands = [];
+  const lines = [];
+  const g = svgEl("g", { opacity: 0, "stroke-linejoin": "round", "stroke-linecap": "round" });
+  const sea = mask("sea");
+  const seaLand = svgEl("path", { d: "", fill: "#000" });
+  sea.append(seaLand);
+  lands.push(seaLand);
+  g.append(svgEl("rect", { width: 1080, height: 1920, fill: PAPER.water, mask: "url(#" + id("sea") + ")" }));
+  for (const [d, o] of [[11, 0.38], [24, 0.24], [40, 0.14]]) {
+    const m = mask("line-" + d);
+    const land = svgEl("path", { d: "", fill: "#000" });
+    const inner = svgEl("path", { d: "", fill: "none", stroke: "#000", "stroke-width": 2 * d - 1.5 });
+    m.append(land, inner);
+    lands.push(land);
+    lines.push(inner);
+    const ring = svgEl("path", { d: "", fill: "none", stroke: PAPER.engraving, "stroke-opacity": o, "stroke-width": 2 * d + 1.5, mask: "url(#" + id("line-" + d) + ")" });
+    g.append(ring);
+    lines.push(ring);
+  }
+  const line = svgEl("path", { d: "", fill: "none", stroke: PAPER.coast, "stroke-opacity": 0.8, "stroke-width": 3 });
+  g.append(line);
+  lines.push(line);
+  svg.append(g);
+  return { svg, g, lands, lines, key: null };
+}
+function drawCoast(coast, camera, paper) {
+  coast.g.setAttribute("opacity", paper);
+  if (!(paper > 0)) return;
+  const key = cameraKey(camera);
+  if (coast.key === key) return;
+  coast.key = key;
+  const land = coastData.land.map((ring) => ringPath(camera, ring) + "Z").join("");
+  const lines = coastData.lines.map((l) => ringPath(camera, l)).join("");
+  coast.lands.forEach((p) => p.setAttribute("d", land));
+  coast.lines.forEach((p) => p.setAttribute("d", lines));
+}
+
+// A flag inside its state's area: clipped to the area, unrolled from the
+// hoist, waving (7 px at the fly, 0.6 Hz) with moving light and dark bands
+// at 16 %, the area's outline redrawn over it. The drawing is the flag's
+// file, cut in 12 px strips that the wave lifts.
+const FLAG_W = 300, FLAG_H = 200;
+const wave = (x, t, bb) => 7 * Math.sin(2 * Math.PI * (x / 380 - 0.6 * t)) * (0.35 + 0.65 * (x - bb.x) / Math.max(1, bb.w));
+function areaBox(a) {
+  let [x0, y0, x1, y1] = [Infinity, Infinity, -Infinity, -Infinity];
+  for (const m of a.d.matchAll(/(-?[\\d.]+),(-?[\\d.]+)/g)) {
+    const [x, y] = [+m[1], +m[2]];
+    x0 = Math.min(x0, x); y0 = Math.min(y0, y); x1 = Math.max(x1, x); y1 = Math.max(y1, y);
+  }
+  return { x: x0, y: y0, w: x1 - x0, h: y1 - y0 };
+}
+function drawFlags(node, map, onPaper) {
+  node.flags.replaceChildren();
+  for (const [n, f] of (map.flags || []).entries()) {
+    const a = node.areas[f.file];
+    if (!a || !a.d) continue;
+    const bb = areaBox(a);
+    const clip = svgEl("clipPath", { id: "flag-clip-" + n });
+    clip.append(svgEl("path", { d: a.d, "clip-rule": "evenodd" }));
+    const unroll = svgEl("clipPath", { id: "flag-unroll-" + n });
+    unroll.append(svgEl("rect", { x: bb.x - 20, y: bb.y - 40, width: Math.max(0, (bb.w + 40) * f.unroll), height: bb.h + 80 }));
+    node.flags.append(clip, unroll);
+    const g = svgEl("g", { "clip-path": "url(#flag-clip-" + n + ")", opacity: f.opacity, "data-flag": f.flag });
+    const cloth = svgEl("g", { "clip-path": "url(#flag-unroll-" + n + ")" });
+    // The flag covers the area's box, its proportions kept.
+    const s = Math.max((bb.w + 60) / FLAG_W, (bb.h + 80) / FLAG_H);
+    const ox = bb.x + bb.w / 2 - (FLAG_W * s) / 2, oy = bb.y + bb.h / 2 - (FLAG_H * s) / 2;
+    for (let x = bb.x - 30; x <= bb.x + bb.w + 30; x += 12) {
+      const u0 = (x - ox) / s;
+      const strip = svgEl("svg", { x: x, y: oy + wave(x, f.t, bb), width: 12.6, height: FLAG_H * s, viewBox: u0 + " 0 " + 12.6 / s + " " + FLAG_H, preserveAspectRatio: "none", overflow: "hidden" });
+      // The drawing at its own size inside the strip's view of it.
+      strip.append(svgEl("use", { href: "#flag-" + f.flag, width: FLAG_W, height: FLAG_H }));
+      cloth.append(strip);
+    }
+    for (let x = bb.x - 30; x <= bb.x + bb.w + 30; x += 20) {
+      const shade = Math.cos(2 * Math.PI * (x / 380 - 0.6 * f.t)) * (0.35 + 0.65 * (x - bb.x) / Math.max(1, bb.w));
+      cloth.append(svgEl("rect", { x, y: bb.y - 40, width: 21, height: bb.h + 80, fill: shade > 0 ? "#ffffff" : "#000000", "fill-opacity": (Math.abs(shade) * 0.16).toFixed(3) }));
+    }
+    g.append(cloth);
+    node.flags.append(g);
+    // The outline over the flag, as the area draws it.
+    const layer = Object.values(a.layers).find((L) => +L.g.getAttribute("opacity") > 0);
+    if (layer) {
+      const over = svgEl("g", { opacity: layer.g.getAttribute("opacity") });
+      for (const p of [layer.keyline, layer.edge]) over.append(p.cloneNode());
+      node.flags.append(over);
+    }
+  }
+}
+
+// Drawn marks (series.md « 7 »): on the satellite each over a dark
+// keyline; on paper in its paper ink, without it.
+const KEYLINE = "#0b0806";
+function drawDrawnMarks(node, map, onPaper) {
+  node.drawn.replaceChildren();
+  for (const m of map.marks.drawn || []) {
+    const g = svgEl("g", { opacity: m.opacity, "data-drawn": m.kind });
+    if (m.kind === "river") {
+      if (onPaper) g.append(svgEl("path", { d: m.d, stroke: PAPER.river, "stroke-width": m.widths.core }));
+      else {
+        g.append(svgEl("path", { d: m.d, stroke: PAPER.riverGlow, "stroke-opacity": m.glow, "stroke-width": m.widths.glow, filter: "url(#drawn-glow)" }));
+        g.append(svgEl("path", { d: m.d, stroke: KEYLINE, "stroke-opacity": 0.45, "stroke-width": m.widths.keyline }));
+        g.append(svgEl("path", { d: m.d, stroke: PAPER.riverCore, "stroke-width": m.widths.core }));
+      }
+      if (m.tip) g.append(svgEl("circle", { cx: m.tip[0], cy: m.tip[1], r: 7, fill: onPaper ? PAPER.river : "#e9fbff" }));
+    } else if (m.kind === "route") {
+      const ink = onPaper ? PAPER.deep[m.ink] : inkOf(m.ink);
+      for (const [x, y] of m.dots) {
+        if (!onPaper) g.append(svgEl("circle", { cx: x, cy: y, r: m.r + 3, fill: KEYLINE, "fill-opacity": 0.7 }));
+        g.append(svgEl("circle", { cx: x, cy: y, r: m.r, fill: ink }));
+      }
+      for (const h of m.heads) {
+        if (!onPaper) g.append(svgEl("path", { d: h.d, fill: KEYLINE, "fill-opacity": 0.7, stroke: KEYLINE, "stroke-opacity": 0.7, "stroke-width": 6 }));
+        g.append(svgEl("path", { d: h.d, fill: ink, stroke: ink, "stroke-width": 1 }));
+      }
+    } else if (m.kind === "exchange") {
+      const ink = onPaper ? PAPER.deep[m.ink] : inkOf(m.ink);
+      for (const lane of m.lanes) {
+        if (lane.d && !onPaper) g.append(svgEl("path", { d: lane.d, stroke: KEYLINE, "stroke-opacity": 0.7, "stroke-width": lane.w + 6 }));
+        if (lane.d) g.append(svgEl("path", { d: lane.d, stroke: ink, "stroke-width": lane.w }));
+        if (!onPaper) g.append(svgEl("path", { d: lane.head.d, fill: KEYLINE, "fill-opacity": 0.7, stroke: KEYLINE, "stroke-opacity": 0.7, "stroke-width": 6 }));
+        g.append(svgEl("path", { d: lane.head.d, fill: ink, stroke: ink, "stroke-width": 1 }));
+      }
+    } else if (m.kind === "circle") {
+      if (!onPaper) g.append(svgEl("path", { d: m.d, stroke: KEYLINE, "stroke-opacity": 0.65, "stroke-width": m.widths.keyline }));
+      g.append(svgEl("path", { d: m.d, stroke: onPaper ? PAPER.circle.parchemin : PAPER.circle.nuit, "stroke-width": m.widths.line }));
+    } else if (m.kind === "cross") {
+      for (const [x1, y1, x2, y2] of m.strokes) {
+        if (!onPaper) g.append(svgEl("line", { x1, y1, x2, y2, stroke: KEYLINE, "stroke-opacity": 0.7, "stroke-width": m.width + 7 }));
+        g.append(svgEl("line", { x1, y1, x2, y2, stroke: onPaper ? PAPER.deep.c : PAPER.crossInk, "stroke-width": m.width }));
+      }
+    } else if (m.kind === "pin") {
+      const pin = svgEl("g", { transform: "translate(" + m.x + "," + m.y + ") scale(" + m.scale + ")" });
+      pin.append(svgEl("ellipse", { cx: 0, cy: 2, rx: 10 * m.scale, ry: 4, fill: KEYLINE, "fill-opacity": 0.35 }));
+      pin.append(svgEl("path", { d: "M0,0 C-6,-14 -20,-26 -20,-38 A20,20 0 1 1 20,-38 C20,-26 6,-14 0,0 Z", fill: onPaper ? PAPER.circle.parchemin : "#f3e9da", stroke: KEYLINE, "stroke-opacity": onPaper ? 0.4 : 0.85, "stroke-width": 4, "stroke-linejoin": "round" }));
+      pin.append(svgEl("circle", { cx: 0, cy: -38, r: 7.5, fill: onPaper ? "#fbf7f2" : KEYLINE, "fill-opacity": 0.85 }));
+      g.append(pin);
+    }
+    node.drawn.append(g);
+  }
 }
 
 // 1.9.0, the double outline (series.md, « Legibility on light pictures »):
@@ -1450,7 +1776,23 @@ function setDate(parts) {
   parts.dateLines = Math.round(d.getBoundingClientRect().height / DATE_STEPS[i][1]);
 }
 
-window.setup = async ({ tokens, cards, logo, demo, maps, subtitles: cardLines, zooms }) => {
+window.setup = async ({ tokens, cards, logo, demo, maps, subtitles: cardLines, zooms, flags }) => {
+  // 1.13.0: the era map's hatching in the paper inks, the river's glow and
+  // the flags' drawings, as symbols the cloth's strips use.
+  const defs = document.querySelector("#sm-defs defs");
+  let paperDefs = '<filter id="drawn-glow" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="7"/></filter>';
+  for (const [k, v] of Object.entries(PAPER.fill))
+    for (const angle of [45, 135])
+      paperDefs += '<pattern id="hatch-p-' + k + "-" + angle + '" patternUnits="userSpaceOnUse" width="16" height="16" patternTransform="rotate(' + angle + ')"><rect width="16" height="16" fill="' + v + '" fill-opacity="0.1"/><line x1="2" y1="0" x2="2" y2="16" stroke="' + v + '" stroke-width="3"/></pattern>';
+  defs.insertAdjacentHTML("beforeend", paperDefs);
+  for (const id of flags || []) {
+    const svg = new DOMParser().parseFromString(await (await fetch("/design/assets/Flags/" + id + ".svg")).text(), "image/svg+xml").documentElement;
+    const symbol = document.createElementNS(SVG, "symbol");
+    symbol.id = "flag-" + id;
+    symbol.setAttribute("viewBox", svg.getAttribute("viewBox"));
+    symbol.append(...svg.childNodes);
+    defs.append(symbol);
+  }
   await EthniCards.installTokens(tokens, "/design/");
   logoUrl = resolveAsset(logo);
   const frame = document.getElementById("frame");
@@ -1473,6 +1815,7 @@ window.setup = async ({ tokens, cards, logo, demo, maps, subtitles: cardLines, z
         paintImagery(still, camera);
         viewImagery.set(key, still);
       }
+    coastData = maps.sequence.coast || null;
     maps.sequence.runs.forEach((_, r) => runs.push(runLayer(maps.sequence, r)));
     // 1.11.0: the drawings, decoded before the first frame.
     const decoding = [];
@@ -1510,8 +1853,9 @@ window.setup = async ({ tokens, cards, logo, demo, maps, subtitles: cardLines, z
   const sign = signature();
   sign.id = "signature";
   frame.append(sign);
-  // 1.12.0: their Parchemin inking, drawn once in the same places.
-  if (cards.some((c) => c.ground === "parchment")) {
+  // 1.12.0: their Parchemin inking, drawn once in the same places; 1.13.0:
+  // the era map takes it too.
+  if (cards.some((c) => c.ground === "parchment" || c.era)) {
     const bandPa = band.cloneNode(true);
     bandPa.id = "band-pa";
     const signPa = signature();
@@ -1528,6 +1872,10 @@ window.setup = async ({ tokens, cards, logo, demo, maps, subtitles: cardLines, z
   subtitles.id = "subtitles";
   frame.append(subtitles);
   if (demo) frame.append(el("div", "vf-demo", esc(fr(demo))));
+  // 1.13.0: the warm flash, over everything but the demo tape.
+  const flash = el("div");
+  flash.id = "flash";
+  frame.append(flash);
   ringFilters();
   ringText(frame);
   const images = [...frame.querySelectorAll(".vf-pic img, .pd-img")];
@@ -1667,7 +2015,9 @@ function frameBoxes(frame, state) {
 // the « image à trouver » slot, a map's place dots and the demo tape.
 function backgrounds(frame) {
   // A parchment card is its own ground, not a picture (1.12.0).
-  const allowed = (n) => n.closest(".lit, .vf-slot, .vf-demo, .vf-key, .sm-dot, .vf-doc, .vf-pa") || n.classList.contains("vf-pic");
+  // 1.13.0: the headline band's black strips, the warm flash and the era
+  // map's paper are the design's own grounds.
+  const allowed = (n) => n.closest(".lit, .vf-slot, .vf-demo, .vf-key, .sm-dot, .vf-doc, .vf-pa, .vf-hb, #flash, .vf-paperfx") || n.classList.contains("vf-pic");
   return [...frame.querySelectorAll("*")]
     .filter((n) => n.getClientRects().length && !allowed(n))
     .filter((n) => {
@@ -1728,6 +2078,57 @@ function drawSubtitle(subtitle) {
     row.append(text);
     band.append(row);
   }
+}
+
+// 1.13.0: the date counter, an odometer: each digit slides vertically as the
+// value runs through it, the digits half an em wide so it never shifts.
+function drawCounter(c, s, text) {
+  if (!s) {
+    c.box.style.opacity = 0;
+    return;
+  }
+  c.box.style.opacity = text * s.opacity;
+  c.box.style.transform = s.settle === 1 ? "" : "scale(" + s.settle + ")";
+  let html = "";
+  for (let p = s.digits - 1; p >= 0; p--) {
+    const base = Math.pow(10, p), whole = Math.floor(s.value / base), lower = s.value - whole * base;
+    const frac = lower > base - 1 ? lower - (base - 1) : 0;
+    const d0 = ((whole % 10) + 10) % 10, d1 = (d0 + 1) % 10;
+    html += '<span class="vf-dg"><span style="top:' + (-frac * 156).toFixed(1) + 'px">' + d0 + '</span><span style="top:' + ((1 - frac) * 156).toFixed(1) + 'px">' + d1 + "</span></span>";
+  }
+  if (c.html !== html) {
+    c.num.innerHTML = html;
+    c.html = html;
+  }
+  c.label.style.opacity = s.labelOpacity;
+}
+
+// 1.13.0: the headline band's lines sliding with their blur, the key word
+// stamping once its line has landed.
+function drawHeadline(h, s, text) {
+  h.box.style.opacity = text;
+  h.lines.forEach((L, n) => {
+    const st = s.lines[n];
+    L.line.style.visibility = st.shown ? "visible" : "hidden";
+    L.line.style.transform = "translateX(" + st.x.toFixed(1) + "px)";
+    document.getElementById(L.filter).firstChild.setAttribute("stdDeviation", st.blur.toFixed(1) + " 0");
+    L.line.style.filter = st.blur > 0.02 ? "url(#" + L.filter + ")" : "none";
+    if (L.key) L.key.style.transform = st.keyScale === 1 ? "" : "scale(" + st.keyScale + ")";
+  });
+}
+
+// 1.13.0: the warm flash, one light from the centre in the brand's golds,
+// its edge at 78 % and its middle at 92 % of the centre's strength.
+const rgbOf = (hex) => [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16)).join(",");
+function drawFlash(a) {
+  const f = document.getElementById("flash");
+  if (!(a > 0)) {
+    f.style.display = "none";
+    return;
+  }
+  const [centre, mid, edge] = PAPER.flash.map(rgbOf);
+  f.style.display = "block";
+  f.style.background = "radial-gradient(circle at 50% 52%, rgba(" + centre + "," + a.toFixed(3) + ") 0%, rgba(" + mid + "," + (a * 0.92).toFixed(3) + ") 42%, rgba(" + edge + "," + (a * 0.78).toFixed(3) + ") 100%)";
 }
 
 // 1.12.0: a parchment card on one frame, from its layer's state.
@@ -1817,7 +2218,18 @@ window.drawFrame = (state) => {
     // A sequence card's key items follow their areas.
     if (l.map) parts.layer.querySelectorAll(".vf-key[data-file]").forEach((k) => (k.style.opacity = l.map.keys[k.dataset.file] ?? 0));
     // 1.11.0: the opener's credit, the imagery alone during the globe.
-    if (parts.credits) parts.credits.forEach((c) => (c.style.display = c.dataset.credit === ((l.map && l.map.credit) || "map") ? "" : "none"));
+    if (parts.credits) parts.credits.forEach((c) => (c.style.display = c.dataset.credit === (state.paperInks && parts.spec.era ? "era" : (l.map && l.map.credit) || "map") ? "" : "none"));
+    // 1.13.0: on the era map the card's head and foot take the Parchemin
+    // inks, without outline.
+    if (parts.seqView) {
+      parts.layer.classList.toggle("vf-pa", !!state.paperInks);
+      if (state.paperInks) parts.layer.dataset.theme = "parchemin";
+      else delete parts.layer.dataset.theme;
+    }
+    // 1.13.0: the counter and the headline band take the head's place.
+    if (parts.counter) drawCounter(parts.counter, l.counter, l.text);
+    if (parts.headline) drawHeadline(parts.headline, l.headline, l.text);
+    if (l.head !== undefined) parts.head.style.opacity = l.text * l.head;
     // 1.7.0: items and the quoted person enter on their word, inside the
     // card's own text fade.
     if (parts.items) parts.items.forEach((n, k) => (n.style.opacity = l.items ? l.items[k] : 1));
@@ -1873,6 +2285,7 @@ window.drawFrame = (state) => {
     document.getElementById("signature-pa").style.opacity = sigOn * pw;
   }
   drawSubtitle(state.subtitle);
+  drawFlash(state.flash || 0);
   const visible = state.layers.map((l) => layers[l.card]);
   const maps = visible.filter((p) => p.map).map((p) => {
     const r = p.map.getBoundingClientRect();
@@ -1948,6 +2361,10 @@ window.drawFrame = (state) => {
           })).filter((l) => l.opacity > 0),
         })).filter((a) => a.layers.length),
         heads: [...node.arrows.querySelectorAll("[data-head]")].map((h) => ({ id: h.dataset.head, ...rect(h) })),
+        // 1.13.0: the flags and the drawn marks as drawn.
+        flags: [...node.flags.querySelectorAll("[data-flag]")].map((g) => ({ flag: g.dataset.flag, strips: g.querySelectorAll("svg").length, ...rect(g) })),
+        drawn: [...node.drawn.children].map((g) => ({ kind: g.dataset.drawn, opacity: +g.getAttribute("opacity"), ...rect(g) })),
+        paper: +node.paperfx.style.opacity,
         drawings: node.images.filter((i) => i.style.display !== "none").map((i) => ({ kind: i.dataset.kind, filter: getComputedStyle(i).filter, complete: i.complete && i.naturalWidth > 0, ...rect(i) })),
         texts: [...node.names.children, ...node.marks.querySelectorAll("[data-mark]")].map((n) => ({ text: n.textContent, mark: n.dataset.mark || "name", opacity: +n.style.opacity, filter: getComputedStyle(n).filter, ...rect(n) })),
       };

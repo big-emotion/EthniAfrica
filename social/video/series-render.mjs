@@ -38,6 +38,7 @@ import {
   sharedBorders,
 } from "./series-map.mjs";
 import { areaInks } from "./series-sequence.mjs";
+import { coastOf } from "./shoreline.mjs";
 
 const designRoot = fileURLToPath(new URL("../design-system/", import.meta.url));
 const sha256 = (bytes) => createHash("sha256").update(bytes).digest("hex");
@@ -99,6 +100,10 @@ async function routesFor(seq) {
   }
   // 1.11.0: the drawings the animated map cards use; 1.12.0: the parchment
   // cards' drawings.
+  // 1.13.0: the era map's paper and the flags.
+  await add("/design/assets/Paper/paper.png", "assets/Paper/paper.png");
+  for (const id of flagsOf(seq))
+    await add(`/design/assets/Flags/${id}.svg`, `assets/Flags/${id}.svg`);
   const drawn = seq.cards.flatMap((c) => (c.drawings ?? []).map((d) => d.kind));
   for (const kind of new Set([...illustrationsOf(seq), ...drawn]))
     await add(
@@ -107,6 +112,10 @@ async function routesFor(seq) {
     );
   return { routes, tokens, cards };
 }
+
+const flagsOf = (seq) => [
+  ...new Set(seq.cards.flatMap((c) => (c.flags ?? []).map((f) => f.flag))),
+];
 
 const illustrationsOf = (seq) => [
   ...new Set(
@@ -197,6 +206,9 @@ async function prepareMaps(seq, cards, routes, assets) {
         ])
       ),
       illustrations: illustrationsOf(seq),
+      // 1.13.0: the coast and the land the era map draws, from Natural
+      // Earth's countries.
+      ...(seq.eras?.flashes.length && { coast: coastOf(world, shown) }),
       borders: plan.runs.map((r) => {
         const kind = plan.views[r.cards[0]].borders;
         return kind === "none"
@@ -365,6 +377,7 @@ export async function openSeriesRenderer(
       demo: seq.demo,
       subtitles,
       zooms,
+      flags: flagsOf(seq),
       maps: maps && {
         bounds: maps.bounds,
         views: maps.views,
