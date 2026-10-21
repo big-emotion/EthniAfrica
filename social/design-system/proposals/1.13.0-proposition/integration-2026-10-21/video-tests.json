@@ -1,0 +1,126 @@
+{
+  "date": "2026-10-21",
+  "design": "EthniAfrica Cartes 1.13.0-proposition",
+  "browser": "pinned Chromium 153 (social/renderer/runtime.json), WebGL on SwiftShader",
+  "runs": {
+    "test:social-video": "433 pass, 0 fail",
+    "series-motion.acceptance.test.mjs (ETHNIAFRICA_VIDEO_ASSETS on the verified imagery)": "6 pass, 0 fail (checks 3, 5, 6, 7, 9, 12 drawn); rivers.acceptance 1 pass. The other acceptance files of test:social-video-acceptance were not run",
+    "series-sound.acceptance.test.mjs": "1 pass, 0 fail: the mix on synthesized cues and bed at -16 +/- 0.5 LUFS integrated, true peak at or under -1 dBTP; the picture of the two encodes (with and without sound) identical",
+    "test:social-renderer": "29 pass, 0 fail",
+    "fidelity, 89 sample cards": "89 of 89 against design-system-1.10.0-accepted; PNG and alternative texts byte-identical between the 1.12.0 and 1.13.0 design files"
+  },
+  "fixture": {
+    "what": "fixtures/series-motion.mjs (motion piece: pop, whip, era, recap; word piece: marks, band, word), the boards' seven scenes in the new piece data on a silent synthetic voice. Each board still of plein-ecran/ is set beside the engine's frame at the same time after one shared cue (pop, whoosh, rise, draw), at 430 px: planches-et-moteur-430.jpg. The voice's pace differs from the boards', so the pairs show the same phase, not the same word.",
+    "pairs": 21,
+    "drawnProblems": 0,
+    "differences": [
+      "the subject's kicker formula (« Burkina Faso · épisode 2 ») is on the opener only; the boards also print it on content cards",
+      "the era map draws lakes over 0.9 degree (Lake Volta) in map-water; the boards draw none",
+      "rendering beside the boards found two defects, fixed: three engraved lines around every islet and small lake (coastOf now leaves out rings under 0.9 degree), and the fixture's country name on Ouagadougou's pin"
+    ],
+    "tiers": {
+      "motion piece (medium, 66.5 s)": {
+        "changes": 30,
+        "median": 1.47,
+        "longest": 4.43,
+        "strong": 4,
+        "bands": 0
+      },
+      "word piece (medium, 66.8 s)": {
+        "changes": 27,
+        "median": 2.03,
+        "longest": 4.47,
+        "strong": 0,
+        "bands": 1
+      },
+      "limits (medium)": {
+        "median": 2.5,
+        "longest": 4.5,
+        "strong": 5,
+        "bands": 2
+      }
+    }
+  },
+  "cues": {
+    "what": "The engine's cue plan (seq.cues) beside the boards' cue sheets (videos/*.cues.json), aligned on one cue each; ticks aside.",
+    "families": {
+      "pop": { "board": { "swell": 1, "pop": 3 }, "engine": { "pop": 4 } },
+      "whip": {
+        "board": { "pop": 2, "whoosh": 2, "impact": 2, "swell": 1 },
+        "engine": { "whoosh": 2, "impact": 2, "pop": 1 }
+      },
+      "epoque": {
+        "board": { "swell": 3, "rise": 2, "impact": 3, "pop": 1 },
+        "engine": { "swell": 5, "rise": 2, "impact": 3 }
+      },
+      "rappel": {
+        "board": { "whoosh": 1, "swell": 1, "pop": 3 },
+        "engine": { "whoosh": 1, "swell": 1, "pop": 1 }
+      },
+      "traits": {
+        "board": { "draw": 5, "pop": 6 },
+        "engine": { "draw": 5, "pop": 5 }
+      },
+      "bandeau": {
+        "board": { "whoosh": 2, "impact": 1 },
+        "engine": { "whoosh": 2, "impact": 1 }
+      },
+      "mot": {
+        "board": { "pop": 8, "whoosh": 1, "impact": 1, "swell": 2 },
+        "engine": { "whoosh": 1, "pop": 5, "impact": 1 }
+      }
+    },
+    "notes": [
+      "the whoosh's frame is its peak, on the whip's fastest frame (series.md section 13); the sheets list a sound's start, so the whoosh-to-landing gap reads 0.37 s against 0.7 s",
+      "the counter's roll: rise on its first frame, impact on its landing, as the sheets (1.47 s for 56 years, sheet 1.6 s: the engine's 48 frames for 21 to 150 years)",
+      "fewer pops than the sheets where they exceed two cues a second (the recap's three marks 0.6 s apart, the word card's parts): series.md's density rule, which the sheets do not apply"
+    ]
+  },
+  "burkinaFaso": {
+    "what": "The archived 1.11.0 card data of series 1, episode 19 (integration-1.11.0-bfa/episode, outside git): cards at 1.13.0, today 2026, tier long, era on 1919 and 1932 with the cards' own titles as labels. The silent synthetic voice was 1 s short of each chapter's silence (a rule since 1.7.0): 1.2 s added after each chapter. The signed card's photograph went with the deleted production folder; a design-system sample stands in on two cards not rendered. Seven anchors the push carried out of the map band were moved a quarter of the way to their card's centre. Rendered: the opening (6 frames), every frame around both flashes, the counter's rolls, 1984. burkina-faso-1130.jpg.",
+    "frames": 99,
+    "drawnProblems": 0,
+    "flashDetector": [
+      {
+        "turn": "to paper on 1919",
+        "transitions": 1,
+        "flashes": 0,
+        "mostInOneSecond": 0
+      },
+      {
+        "turn": "back to today on 1960",
+        "transitions": 1,
+        "flashes": 0,
+        "mostInOneSecond": 0
+      }
+    ],
+    "flag1984": "refused: « Drapeau d'un État que la voix ne nomme pas (« Burkina Faso ») ». The card prints BURKINA FASO as its rename; the voice says « un nouveau nom » (the operator's answer 6: named by the voice). 1984 is rendered without its flag.",
+    "tier": {
+      "declared": "long",
+      "length": 238.9,
+      "changes": 110,
+      "median": 1.4,
+      "longest": 8.63,
+      "warning": "Intervalle sans changement de 8.63 s : 6 s au plus pour une vidéo longue"
+    }
+  },
+  "kouassiYao": {
+    "what": "« Kouassi et Yao » (series 3, episode 1): sequence v8, cards v8, voice v8h, copied out of its production folder (unchanged). The same 20 frames by the 1.12.0 engine (recette 709b98685) on the piece as it is, and by the 1.13.0 engine. kouassi-yao-1120-1130-430.jpg.",
+    "loads": "refused by 1.13.0 as it is, twice: « dimanche · Kwasi · jeudi · Yaw » carried out of the map band by the push (one anchor moved), and its map views at radius 5100 (1349 km across) pushed past the 2 km file's 1336 km outside the 500 m tiles (each map card framed wider by its own push: 5100 to between 4136 and 4891)",
+    "tier": {
+      "declared": null,
+      "length": 284,
+      "changes": 93,
+      "median": 1.93,
+      "longest": 10.97
+    },
+    "identical": [
+      "intro ident (300)",
+      "chapter card (840)",
+      "parchment cards before their content moves (2140, 6350, 6650)",
+      "end card (8400)"
+    ],
+    "parchment": "0.25 % to 5.3 % of pixels changed, growing with the card's push (3 % every 10 s) and the pops; head, band and foot identical",
+    "maps": "27 % to 37 % changed: the push and the wider framing"
+  }
+}

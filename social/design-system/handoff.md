@@ -2,7 +2,7 @@
 
 ## Acceptance and integration status
 
-**1.13.0-proposition, 20 October 2026, accepted by the operator on 21 October 2026, with the designer's recommendations.** Motion and sound of every series video: the motion tokens, the pop and the swell, the continuous camera, the whip zoom and the warm flash for the story's turns, the era map and its date counter, drawn marks, flags only inside a state existing on the date shown, the headline band, three format tiers, the subject key and the recap card, episodes about a word, and the sound cues as a specification. Not yet integrated: see « Renderer integration of 1.13.0 ».
+**1.13.0-proposition, 20 October 2026, accepted by the operator on 21 October 2026, with the designer's recommendations.** Motion and sound of every series video: the motion tokens, the pop and the swell, the continuous camera, the whip zoom and the warm flash for the story's turns, the era map and its date counter, drawn marks, flags only inside a state existing on the date shown, the headline band, three format tiers, the subject key and the recap card, episodes about a word, and the sound cues as a specification. Integrated in `social/video` on 21 October 2026: see « Renderer integration of 1.13.0 ».
 
 **1.12.0-proposition, 20 October 2026, accepted by the operator the same day, with the designer's recommendations.** Teaching cards in motion on the idents' parchment ground: the week table one people per table with lit rows, the formula built by moves, drawings for what a name says, and the parchment text card. See « Renderer integration of 1.12.0 ».
 
@@ -779,7 +779,7 @@ A chapter card is a card of the sequence, `{ "type": "chapter", "chapter": 2, "i
 
 ## Renderer integration of 1.13.0
 
-**Status: accepted by the operator on 21 October 2026, with the designer's recommendations** (Series, « Motion and sound (1.13.0-proposition) », « Decided by the operator on 21 October 2026 »). Not yet integrated in the engine. It builds on `recette` with 1.12.0 integrated (PR #1922). A piece without the new fields renders exactly as before, except for the motion tokens, the pop and the continuous push, which apply to every series video once accepted (steps 1 to 3).
+**Status: accepted by the operator on 21 October 2026, with the designer's recommendations** (Series, « Motion and sound (1.13.0-proposition) », « Decided by the operator on 21 October 2026 »). Integrated in the engine on 21 October 2026 (`social/video`; evidence in `proposals/1.13.0-proposition/`). It builds on `recette` with 1.12.0 integrated (PR #1922). A piece without the new fields renders exactly as before, except for the motion tokens, the pop and the continuous push, which apply to every series video once accepted (steps 1 to 3).
 
 **Piece data.** Every `say` names a unit of the card's own chunks (`chunkUnits`), first occurrence, as in 1.5.0; the engine places the motion and its cue on that word's frame.
 

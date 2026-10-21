@@ -69,3 +69,14 @@ The brief came from the operator's review of a La Minute Géographie Short on th
   - `video-1130-430.jpg`: the frames at 430 px.
 
 The seven animated previews stay outside git, in `.local/research/social-production-2026-10-09/design-system-1.13.0-boards/videos/` (540 × 960, 30 frames a second, with placeholder cues synthesized for the boards and their cue lists): `video-1130-pop.mp4`, `video-1130-whip.mp4`, `video-1130-epoque.mp4`, `video-1130-traits.mp4`, `video-1130-bandeau.mp4`, `video-1130-rappel.mp4`, `video-1130-mot.mp4`, and all seven in `video-1130-suite.mp4`; each with its `*.cues.json`. The full-size frames are in `plein-ecran/`. Not deposited: `design-system.json`, the component's `preview.html` and the board renderer and cue synthesizer in `tools/`.
+
+## Integration (21 October 2026)
+
+The engine integration and its evidence are in [`integration-2026-10-21/`](integration-2026-10-21/video-tests.json):
+
+- `video-tests.json`: the runs, the fixture against the boards, the cue plan against the boards' cue sheets, the Burkina Faso episode (series 1, n° 19) and « Kouassi et Yao » (series 3, n° 1) with the 1.12.0 and 1.13.0 engines;
+- `planches-et-moteur-430.jpg`: board | engine at 430 px, eight scenes;
+- `burkina-faso-1130.jpg`: the episode's opening, the 1919 and 1932 era cards with the counter, the way back to today and 1984;
+- `kouassi-yao-1120-1130-430.jpg`: 1.12.0 | 1.13.0 at 430 px, a map card and three parchment cards.
+
+What it found in pieces made before 1.13.0: the continuous push carries texts set near the map band's edge out of it, and views framed at the imagery's limit past it; both pieces load once those cards are re-anchored or framed wider. The Burkina Faso 1984 card takes no flag: its voice does not say « Burkina Faso ».
