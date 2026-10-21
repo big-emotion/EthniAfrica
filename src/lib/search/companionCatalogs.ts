@@ -7,10 +7,7 @@ import {
   videoPublications,
   type DiscoveryVideoRecord,
 } from "@/lib/discoveries/videos";
-import {
-  formatProductionNameQuestion,
-  formatProductionPosterAlt,
-} from "@/lib/editorial/productionNameQuestion";
+import { formatProductionPosterAlt } from "@/lib/editorial/productionNameQuestion";
 import {
   DID_YOU_KNOW_FACTS,
   type DidYouKnowFact,
@@ -72,8 +69,6 @@ export const SEARCH_SHORTS: readonly SearchShort[] = searchShortsFrom(
 function hasText(value: string | undefined): boolean {
   return Boolean(value?.trim());
 }
-
-export { formatProductionNameQuestion };
 
 // @req REQ-180
 export function searchShortPosterAlt(

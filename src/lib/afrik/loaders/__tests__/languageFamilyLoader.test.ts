@@ -1,8 +1,6 @@
 import { describe, it, expect } from "vitest";
-import {
-  loadLanguageFamily,
-  loadAllLanguageFamilies,
-} from "../languageFamilyLoader";
+import { loadLanguageFamily } from "../familyJsonLoader";
+import { loadAllLanguageFamilies } from "../languageFamilyLoader";
 
 /**
  * TDD Phase: RED

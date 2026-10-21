@@ -5,10 +5,8 @@ import {
   relatedEntityKey,
   resolveRelatedEntities,
   resolveRelatedProductions,
-} from "../catalog";
-import type {
-  RelatedEntityAssociation,
-  RelatedEntityIndex,
+  type RelatedEntityAssociation,
+  type RelatedEntityIndex,
 } from "../relatedEntities";
 
 function result(
