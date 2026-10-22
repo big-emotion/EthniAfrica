@@ -1,0 +1,52 @@
+{
+  "campaign": "nom-famille-01",
+  "typologie": "patronyme",
+  "episode": 7,
+  "question": {
+    "fr": "D'où viennent les noms Kouassi et Yao ?"
+  },
+  "myth": {
+    "fr": "Kouassi tombe-t-il le même jour en Côte d'Ivoire et au Ghana ?"
+  },
+  "subjects": [
+    {
+      "kind": "patronyme",
+      "id": "PAT_KOUASSI",
+      "label": {
+        "fr": "Kouassi"
+      }
+    },
+    {
+      "kind": "patronyme",
+      "id": "PAT_YAO",
+      "label": {
+        "fr": "Yao"
+      }
+    }
+  ],
+  "sitePath": "/fr/atlas/noms/PAT_KOUASSI",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7699061082891111702",
+      "publishedAt": "2026-10-22"
+    },
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=CYOvsMjd-ss",
+      "publishedAt": "2026-10-22"
+    },
+    {
+      "network": "instagram",
+      "format": "video",
+      "publishedAt": "2026-10-22"
+    },
+    {
+      "network": "facebook",
+      "format": "video",
+      "publishedAt": "2026-10-22"
+    }
+  ]
+}
