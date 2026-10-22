@@ -59,8 +59,11 @@ render runs once.
 
 ## 4. Voice
 
-15. Paul K (`MBIQRZjHPU6xEjGuB3b8`), `eleven_multilingual_v2`, normal speed. Spoken forms:
-    « Faso » as « Fasso », « EthniAfrica » as « Ethni Africa », years in words.
+15. The house voice (`M4ZqLOXSFqxSkn9RDxFO`), `eleven_multilingual_v2`, neutral rhythm:
+    stability 0.9, style 0, speed 0.95 — `voice.mjs` applies both when the script sets
+    nothing (operator, 22 October 2026). Voice the whole narration in one take; never
+    splice words from another take. Spoken forms: « Faso » as « Fasso », « EthniAfrica » as
+    « Ethni Africa », « akan » as « a-camp », years in words. Guillemets are never spoken.
 16. Subtitles read at 21 characters a second at most. Put the pauses that buy reading time at
     sentence ends: mid-sentence pauses break the rhythm. A chapter card needs about 2.5 s of
     silence; the globe opening holds at least 5.5 s.
