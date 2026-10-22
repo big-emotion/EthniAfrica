@@ -1,7 +1,10 @@
 // Voices a video script with ElevenLabs and writes the audio and the word
 // times the renderer reads (Vidéo carte 0.4.0, highlight.withVoice).
 //
-//   node social/video/voice.mjs --script SCRIPT.json --voice VOICE_ID --out DIR
+//   node social/video/voice.mjs --script SCRIPT.json [--voice VOICE_ID] --out DIR
+//
+// Without --voice, the house voice; without `voiceSettings` in the script,
+// its neutral rhythm (see HOUSE_VOICE below).
 //
 // Writes DIR/voice.wav (16-bit mono PCM, 48 kHz) and DIR/words.json. Every
 // request is billed: the tests run the pure steps on fixtures and never call
@@ -223,22 +226,40 @@ async function apiKey() {
   return key;
 }
 
+// The house voice, chosen by the operator on « tribu » (22 October 2026).
+// At the default stability (0.5) voices trembled and hesitated; this one,
+// held steady with no style, reads plainly without lifting sentence ends.
+// 0.95 keeps the subtitles under 21 characters a second without pauses
+// inside sentences.
+export const HOUSE_VOICE = "M4ZqLOXSFqxSkn9RDxFO";
+const HOUSE_VOICE_SETTINGS = {
+  stability: 0.9,
+  similarity_boost: 0.8,
+  style: 0,
+  use_speaker_boost: true,
+  speed: 0.95,
+};
+
 // eleven_multilingual_v2 refuses `language_code` (only the Turbo and Flash
 // v2.5 models take it): the French comes from the text itself.
+export function requestBody(segment, script) {
+  return {
+    text: segment.text,
+    model_id: script.model ?? MODEL,
+    ...(script.seed !== undefined && { seed: script.seed }),
+    voice_settings: script.voiceSettings ?? HOUSE_VOICE_SETTINGS,
+    ...(segment.previousText && { previous_text: segment.previousText }),
+    ...(segment.nextText && { next_text: segment.nextText }),
+  };
+}
+
 async function synthesize(segment, script, voiceId, key) {
   const response = await fetch(
     `https://api.elevenlabs.io/v1/text-to-speech/${encodeURIComponent(voiceId)}/with-timestamps?output_format=${OUTPUT_FORMAT}`,
     {
       method: "POST",
       headers: { "xi-api-key": key, "content-type": "application/json" },
-      body: JSON.stringify({
-        text: segment.text,
-        model_id: script.model ?? MODEL,
-        ...(script.seed !== undefined && { seed: script.seed }),
-        ...(script.voiceSettings && { voice_settings: script.voiceSettings }),
-        ...(segment.previousText && { previous_text: segment.previousText }),
-        ...(segment.nextText && { next_text: segment.nextText }),
-      }),
+      body: JSON.stringify(requestBody(segment, script)),
     }
   );
   if (!response.ok)
@@ -281,13 +302,13 @@ async function main() {
   const { values } = parseArgs({
     options: {
       script: { type: "string" },
-      voice: { type: "string" },
+      voice: { type: "string", default: HOUSE_VOICE },
       out: { type: "string" },
     },
   });
-  if (!values.script || !values.voice || !values.out)
+  if (!values.script || !values.out)
     fail(
-      "Usage: node social/video/voice.mjs --script SCRIPT.json --voice VOICE_ID --out DIR"
+      "Usage: node social/video/voice.mjs --script SCRIPT.json [--voice VOICE_ID] --out DIR"
     );
   const script = JSON.parse(await readFile(resolve(values.script), "utf8"));
   const segments = voiceSegments(script);

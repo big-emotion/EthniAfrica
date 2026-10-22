@@ -93,7 +93,7 @@ The chunks run in video order: the intro, every chapter, the outro. Each word is
 `voice.mjs` makes the two files from a script:
 
 ```sh
-node social/video/voice.mjs --script SCRIPT.json --voice VOICE_ID --out DIR
+node social/video/voice.mjs --script SCRIPT.json [--voice VOICE_ID] --out DIR
 ```
 
 ```json
@@ -124,6 +124,8 @@ node social/video/voice.mjs --script SCRIPT.json --voice VOICE_ID --out DIR
 
 The chunks are the sequence's, in the same order; `units` is optional and, when given, lists the chunk's own units, each with an optional `spoken` form for a word the voice must say differently from the screen (a transcription, a number in letters, « ethniafrica point com »). `pauseBeforeMs` inserts that much silence and starts a new request; chunks without it are read in one request, so a sentence keeps its prosody. The script calls `POST /v1/text-to-speech/{voice_id}/with-timestamps` once per request, with the neighbouring requests as context.
 
+- **House voice.** Without `--voice`, the script uses `M4ZqLOXSFqxSkn9RDxFO`; without `voiceSettings`, its neutral rhythm (stability 0.9, style 0, speaker boost, speed 0.95). The operator chose both on « tribu » (22 October 2026): at stability 0.5 the voice hesitated, trembled and lifted sentence ends. A script's own `voiceSettings` replace the whole default.
+- **Guillemets stay on screen.** The voice never receives « », “ ” or `"`: read aloud they made it stiffen on the quoted word and its neighbours.
 - **Silence, not break tags.** A pause is generated silence, exact to the sample, rather than a `<break>` tag: the tag's length is the model's to interpret and its characters would sit in the alignment, while the schedule needs pauses it can count on.
 - **Alignment back to the screen.** The text sent is the spoken forms joined by spaces; the script records where each unit's spoken form sits, and the character times map back to one word per screen unit. An answer whose alignment does not spell the text sent is refused.
 - **Formats.** Requests ask for MP3 at 44.1 kHz, which every plan returns; FFmpeg decodes each to 48 kHz mono PCM and the script writes a WAV. `eleven_multilingual_v2` refuses the `language_code` parameter (only the Turbo and Flash v2.5 models take it), so the French comes from the text.
