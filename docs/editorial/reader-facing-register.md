@@ -20,6 +20,14 @@ where they occur. Prefer “the name they use for themselves” to “autonym”
 the term is itself useful. Simple language must not erase a disagreement, a place,
 a date or a distinction necessary to understand the subject.
 
+Write for someone encountering EthniAfrica and the subject for the first time.
+Introduce a country, place, people or person before referring to it as though the
+reader already knows it. Lead from a familiar starting point to each new detail
+in a clear order; do not require the reader to know the research behind the text.
+Keep only sentences that explain the subject, a sourced reading or a consequence
+the reader needs. Do not repeat what sources fail to say when that silence adds
+no useful information.
+
 The research notes record how the project was made. Published prose explains the
 subject, what supports it and what remains unsettled. Keep those registers apart.
 
