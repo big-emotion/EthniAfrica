@@ -56,7 +56,9 @@ researched before it is scripted (for example `PAT_KOFI`, `PAT_KWAME` and
 ## Opening, closing and length of every video
 
 Decided by the operator on 2026-10-19, on the Burkina Faso episode (series 1,
-episode 19). It applies to every video script from that date.
+episode 19). The fixed spoken opening, closing and long-first method apply to
+every video script from that date. Visual and network-cut choices may have
+later episode decisions.
 
 - **Opening, spoken first:** « Aujourd'hui, nous allons parler de l'origine du
   nom [nom]. » followed at once by the recurring introduction « Avec
@@ -64,10 +66,10 @@ episode 19). It applies to every video script from that date.
   l'Afrique et ses peuples. » The next sentence states the episode's concrete
   fact or question and leads straight into the first explanation. Keep the
   introduction to that one sentence; the series title may appear on screen.
-  In the video the opening sentence is said over the opener card and the
-  introduction over the intro bumper, its own beat right after it; the
-  closing is said over the end card (`social/series-idents/`, operator's
-  decision of 19 October 2026).
+  In the Burkina Faso video the opening sentence was said over the opener
+  card and the introduction over the intro bumper, its own beat right after
+  it; the closing was said over the end card (`social/series-idents/`,
+  operator's decision of 19 October 2026).
 - **Why the introduction says « en français »:** the starting point is the
   name used in French. It does not mean the name comes from French, always
   differs from local names, or is colonial. Each case is explained from its
@@ -95,17 +97,43 @@ episode 19). It applies to every video script from that date.
   · the « nous pensons » paragraph · the closing. Unity, the operator's
   conviction, belongs to the « nous pensons » paragraph and stays distinct
   from the historical findings.
-- **Length follows the story, the same on every network** (operator,
-  2026-10-19): the Burkina Faso episode went out at 4 min 15 on TikTok,
-  Instagram, Facebook and YouTube. A video over 3 minutes is a regular video on
+- **Length follows the story.** For Burkina Faso, the operator chose the same
+  4 min 15 cut on TikTok, Instagram, Facebook and YouTube. A video over 3 minutes is a regular video on
   YouTube, not a Short; Instagram does not recommend reels over 3 minutes to new
   audiences; TikTok's upload length is checked in the app before posting.
-- **The animated satellite map carries the video** (operator, 2026-10-19;
-  Cartes 1.11.0): whenever the narration situates something, the screen is a
+- **For Burkina Faso, the animated satellite map carries the video**
+  (operator, 2026-10-19; Cartes 1.11.0): whenever the narration situates something, the screen is a
   map, opened by the satellite globe; it must be understood without sound.
   Scripts are written in map phases and picture phases; a picture is a phase
   of whole sentences (6 s at least), never a short insert between two maps, and
   carries a fact the map cannot show.
+
+### Episode 20: Togo format decision
+
+The operator revised the Togo episode for TikTok, Instagram and Facebook in
+October 2026. The fixed spoken opening, introduction, signed paragraph and
+closing still apply. The opening sentence plays over checked footage of
+Togoville rather than a globe or opener card. Claude Design must approve that
+visual change before production.
+
+The three networks have separate scripts, chapter sequences and estimated
+durations:
+
+| Network   | Estimated duration   | Chapter progression                                                                                                                                                                                                                   |
+| --------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| TikTok    | 1 min 40 to 1 min 50 | Locate Togo, Lake Togo and Togoville; compare two attributed meanings; trace the name from the 1884 agreement through the colony to the independent country; show that other peoples have their own histories.                        |
+| Instagram | 2 min 35 to 2 min 45 | Locate the village; compare three local explanations; introduce families living there before the colony; trace the colonial use; explain the British and French outcomes; show that the country's history extends beyond the village. |
+| Facebook  | 3 min 35 to 3 min 50 | Locate the village; give more room to competing readings; introduce the families and other peoples before colonisation; trace the German colony, the two later administrations and independence; return to Togoville today.           |
+
+Each cut then has its separate signed « nous pensons » paragraph and the fixed closing.
+These are editorial estimates and episode chapters, not platform limits or a
+template for later episodes. Keep the long sourced narrative as their base.
+
+For these cuts, use a precise, verified present-day map only to locate the
+country, lake, village or another place the narration needs to situate. Show
+dated documents, source cards, footage and motion text for the naming accounts
+and political steps. Do not depict an approximate historical border or route
+as exact. Every visual phase must carry its meaning without sound.
 
 ## What changed on 19 October 2026
 

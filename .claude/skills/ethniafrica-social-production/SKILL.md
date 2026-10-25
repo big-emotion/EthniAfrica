@@ -52,9 +52,11 @@ the reference example.
 
 For a long series video, follow [the long-episode recipe](references/long-episode-recipe.md)
 from research to approval 3. It records the operator's corrections on the Burkina
-Faso episode (19 October 2026): the animated satellite map carries the video,
-script written in map and picture phases, an animatic before any render, a
-pre-flight of every package check, one parallel render, and a composed thumbnail.
+Faso episode (19 October 2026): map and picture phases, an animatic before any
+render, a pre-flight of every package check, one parallel render, and a composed
+thumbnail. Its map-led opening and shared network duration are episode choices;
+use the current approved brief and later decisions in the series strategy for
+another episode.
 
 ## Start or resume
 
