@@ -157,32 +157,6 @@ test("renders a framed, captioned vertical reel with its SRT and cover", async (
   }
 });
 
-// The brightest channel along row `y` between x 100 and 980, at `t` seconds.
-function brightest(file, t, y) {
-  const row = spawnSync(
-    "ffmpeg",
-    [
-      "-v",
-      "error",
-      "-ss",
-      String(t),
-      "-i",
-      file,
-      "-frames:v",
-      "1",
-      "-vf",
-      `format=rgb24,crop=880:2:100:${y}`,
-      "-f",
-      "rawvideo",
-      "-pix_fmt",
-      "rgb24",
-      "-",
-    ],
-    { encoding: "buffer" }
-  ).stdout;
-  return Math.max(0, ...row);
-}
-
 // Mean volume in dB of `seconds` of audio from `t`.
 function loudness(file, t, seconds) {
   const out = spawnSync(
