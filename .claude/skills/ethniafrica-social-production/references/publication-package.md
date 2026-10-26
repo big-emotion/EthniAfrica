@@ -187,11 +187,14 @@ Each revision contains:
 - `editorial-check.txt`: the strict checker output, including review warnings.
 - `package.json`: the integrity manifest used for resumption and final approval.
 
-A video revision holds `video.mp4` instead of the PNG cards: a byte-identical
-copy of the checked export. It can also hold either `cover.png` or the
+A video revision holds one `video-<network>.mp4` per network instead of the
+PNG cards (`video.mp4` for a revision that shares one cut, see
+[One video per network](#one-video-per-network)): each a byte-identical copy
+of that network's checked export. It can also hold either `cover.png` or the
 composed `thumbnail.png` (or `thumbnail.jpg`), never both. Its `post.md` adds
-the duration, the accessibility routes and the complete on-screen text, and its
-`public-copy.json` lists that text under `screen`. With a thumbnail, `post.md`
+each cut's duration, the accessibility routes and each cut's complete
+on-screen text and credits, and its `public-copy.json` lists that text under
+each network's `screen` (under the top-level `screen` for a shared cut). With a thumbnail, `post.md`
 gives each network a **Couverture** instruction and lists the thumbnail's
 words, and `public-copy.json` holds them under `thumbnail`. With an Instagram
 story, the Instagram block of `post.md` ends with a **Story** section and the
@@ -207,20 +210,22 @@ instead of hand-editing the generated post.
 A vertical video from `social/video` goes through approval 3 the same way: same
 command, same networks, link rules, research dossier, strict language check,
 staging and integrity manifest. Only the media checks and the account route
-differ. The operator decided this on 13 October 2026.
+differ. The operator decided this on 13 October 2026. A video piece has one
+video per network, each network's own cut of the subject; see
+[One video per network](#one-video-per-network).
 
 ```json
 {
   "schema": 1,
   "kind": "video",
-  "sequence": "PIECE/video/sequence.json",
-  "video": "PIECE/video/final-v1",
   "design": "PIECE/video/design-version.json",
-  "cover": { "frame": 210 },
+  "thumbnail": { "file": "PIECE/thumbnail/thumbnail.png", "text": ["…"] },
   "research": "PIECE/research.json",
   "networks": [
     {
       "network": "instagram",
+      "sequence": "PIECE/video/instagram/sequence.json",
+      "video": "PIECE/video/instagram/final-v1",
       "caption": "…",
       "firstComment": null,
       "link": { "placement": "none" },
@@ -246,10 +251,10 @@ differ. The operator decided this on 13 October 2026.
 | Field       | Meaning                                                                                                                                                                                              |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `kind`      | `"video"`. Left out, the package is a card carousel as above.                                                                                                                                        |
-| `sequence`  | The sequence file the video was encoded from. Its areas, outline and voice resolve from its own folder, as `encodeVideo` resolved them.                                                              |
-| `video`     | The folder `encodeVideo` wrote: `video.mp4` and `manifest.json`.                                                                                                                                     |
+| `sequence`  | In each network's adaptation: the sequence file that network's cut was encoded from. Its areas, outline and voice resolve from its own folder, as `encodeVideo` resolved them.                       |
+| `video`     | In each network's adaptation: the folder `encodeVideo` wrote for that cut, `video.mp4` and `manifest.json`.                                                                                          |
 | `design`    | The accepted video design record, `{ name, version, status: "accepted" }`. The sequence's `design` must read `name version`, for example `EthniAfrica Vidéo carte 0.4.0-proposition`.                |
-| `cover`     | Optional. `{ frame }` delivers `cover.png`, that frame of the video, for networks whose upload asks for a cover. Not with `thumbnail`.                                                               |
+| `cover`     | Optional, shared cut only. `{ frame }` delivers `cover.png`, that frame of the video, for networks whose upload asks for a cover. Not with `thumbnail`.                                              |
 | `thumbnail` | Optional. `{ file, text, credit?, sources? }` delivers the operator's composed thumbnail as `thumbnail.png` or `thumbnail.jpg`; see [Composed thumbnail](#composed-thumbnail). Not with `cover`.     |
 | Capability  | `format: "video"`, positive `maxDurationSeconds`, `aspect` such as `"9:16"`, `captionMax`, `commentMax` when a first comment exists, `altRoute`, `altInstruction`, `autoCaptions`, `linkPlacements`. |
 
@@ -285,8 +290,9 @@ network, record whether the platform offers a description field
 (`altRoute`) and automatic captions (`autoCaptions`). Write the operator's
 instruction in `altInstruction`, for example not to add automatic captions over
 the burned-in ones. With `native` or `description`, the adaptation supplies
-`alternativeText: [{ "file": "video.mp4", "text": "…" }]`; with `unavailable`,
-none is required.
+`alternativeText: [{ "file": "video-instagram.mp4", "text": "…" }]`, naming
+that network's delivered file (`video.mp4` for a shared cut); with
+`unavailable`, none is required.
 
 **Links.** The rules do not change with the format. Each placement must
 appear in the account's verified `linkPlacements`. Instagram, Facebook and
@@ -295,6 +301,60 @@ first-comment link. A YouTube description link is accepted only when its
 capability lists `caption`. Record that placement only when the evidence shows
 the description link is clickable for that video format. A Short may differ
 from a long video, so the account route decides, not the network name.
+
+### One video per network
+
+**The rule** (operator, 26 October 2026). A subject is always cut once per
+network: TikTok, Instagram and Facebook get different lengths and edits of
+the same approved script and research. One piece, one package and one
+approval 3 carry every cut, so each adaptation in `networks` names its own
+`sequence` and `video`. Two adaptations may name the same folders when the
+operator really posts the same cut twice; each network still gets its own
+file.
+
+**Why one package and not one piece per network.** The Togo episode was split
+into three pieces, one `suivi.md` each, because the package took a single
+video. That repeated the brief, the research, approvals 1 and 2 and the
+history three times for one subject, and let the three drift apart. The cuts
+share everything but their media, so they share the piece.
+
+**What each cut is held to.** Every check above runs on each cut against its
+own files: the manifest's video, sequence, cards and audio hashes, the frame
+count, FFprobe's size, rate and audio track, and the research and rights
+record of every image and footage source it shows. The account route of a
+network bounds that network's cut only: a 50-second Facebook cut is refused
+by a 40-second Facebook limit even when the Instagram cut fits. A refusal
+names the network (`facebook cut: …`).
+
+**What is delivered.** Each cut is copied byte for byte as
+`video-<network>.mp4`, flat in the revision folder: the integrity check lists
+one folder, and the name keeps saying which network a file is for once it has
+been sent to a phone for upload. Each network's media entry in `package.json`
+records its `network`. `post.md` gives one media line per cut (network,
+duration, size, voice), then the on-screen text and the sources and credits
+under one heading per network, since each cut prints and shows its own.
+`public-copy.json` holds each cut's on-screen text in that network's
+`screen`, so the strict language check reads every cut. A native or
+description alternative text names that network's file
+(`{ "file": "video-instagram.mp4", "text": "…" }`). The bibliography and the
+image reuse records stay one list: they are the subject's research, shared by
+every cut.
+
+**What stays shared.** The design, the research dossier, the campaign and
+the composed thumbnail, which must have the shape of every cut. A frame
+`cover` is refused: frame 210 of one cut is not a frame of another, so a
+per-network piece uses the composed thumbnail.
+
+**The publication record.** Recording the publication on one network keeps
+that network's cut and its on-screen text in the history, with the shared
+thumbnail; not the other networks' cuts.
+
+**Revisions delivered before the rule.** A revision whose input names one
+top-level `sequence` and `video` still verifies and keeps its `video.mp4`,
+`post.md` and `public-copy.json` exactly as delivered. A new input may still
+share one cut that way when the piece really has a single cut, but it never
+mixes the two forms: a network without its own cut would silently inherit
+another network's.
 
 ### Series videos (Cartes)
 
@@ -340,8 +400,8 @@ credit names only the first shot of a montage and shortens the address.
 
 **What remains manual.** The helper does not judge the rights to the satellite
 imagery or to a voice. The on-screen Source line names the imagery, and the
-dossier keeps its reuse record. Watch the delivered `video.mp4` with sound at
-phone size before approval 3. A cover is extracted from the video again at
+dossier keeps its reuse record. Watch every delivered `video-<network>.mp4`
+with sound at phone size before approval 3. A cover is extracted from the video again at
 each verification, so a retouched cover cannot pass; choose another frame
 instead, or deliver a [composed thumbnail](#composed-thumbnail).
 

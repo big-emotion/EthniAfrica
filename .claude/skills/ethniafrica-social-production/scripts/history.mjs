@@ -120,8 +120,15 @@ export function capturePublication(root, state, network) {
   const dossier = readJSON(delivery.researchFile);
   const copy = readJSON(`${state.package.directory}/public-copy.json`);
   const adaptation = config.networks.find((n) => n.network === network);
+  const networkCopy = copy.networks[config.networks.indexOf(adaptation)];
+  // A video cut for one network is what that network published; shared
+  // media (cards, a shared video, the thumbnail) carry no network.
+  const screen = networkCopy.screen ?? copy.screen;
   const destination = join(work, ".published");
-  const media = delivery.media.map((m) => ({
+  const published = delivery.media.filter(
+    (m) => m.network === undefined || m.network === network
+  );
+  const media = published.map((m) => ({
     ...m,
     ...retainFile(
       root,
@@ -154,7 +161,7 @@ export function capturePublication(root, state, network) {
     // A video package has on-screen text instead of cards, and its
     // description comes from the network adaptation, not from the media.
     cards: copy.cards ?? [],
-    ...(copy.screen && { screen: copy.screen }),
+    ...(screen && { screen }),
     copy: {
       caption: adaptation.caption,
       firstComment: adaptation.firstComment,
@@ -162,10 +169,10 @@ export function capturePublication(root, state, network) {
       accessibility: {
         route: adaptation.capability.altRoute,
         instruction: adaptation.capability.altInstruction,
-        alternativeText: copy.screen
-          ? copy.networks[config.networks.indexOf(adaptation)].alternativeText
+        alternativeText: screen
+          ? networkCopy.alternativeText
           : media.map((m) => m.alt),
-        ...(copy.screen && {
+        ...(screen && {
           autoCaptions: adaptation.capability.autoCaptions,
         }),
       },
