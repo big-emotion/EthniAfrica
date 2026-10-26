@@ -7,7 +7,7 @@
   "etymology": "La République démocratique du Congo tirerait son nom du fleuve Congo, selon la fiche de toponymie britannique Toponymic Factfile. Le nom Congo/Kongo du fleuve est historiquement lié au royaume Kongo. L'origine lexicale plus ancienne de Kongo demeure incertaine et ne peut être réduite à une signification unique.",
   "nameOriginActor": "Le nom de l'État a été repris de celui du fleuve Congo, lui-même historiquement associé au royaume Kongo. Les sources disponibles ne permettent pas d'attribuer avec certitude l'origine lexicale de Kongo à un acteur ou à une traduction unique.",
   "nameHistory": {
-    "summary": "Le nom République démocratique du Congo désigne un pays d'Afrique centrale, qui tient son nom du fleuve Congo ; on l'appelle aussi RD Congo ou Congo-Kinshasa. Le pays a d'abord porté d'autres noms : État indépendant du Congo, Congo belge, République du Congo, puis Zaïre de 1971 à 1997. Le nom Zaïre viendrait du nom que les riverains donnent au fleuve, selon le missionnaire W. Holman Bentley ; nous présentons son explication plus bas.",
+    "summary": "Le nom République démocratique du Congo désigne un pays d'Afrique centrale, qui tient son nom du fleuve Congo ; on l'appelle aussi RD Congo ou Congo-Kinshasa. Le pays a d'abord porté d'autres noms : État indépendant du Congo, Congo belge, République du Congo, puis Zaïre de 1971 à 1997. Le nom Zaïre est choisi le 27 octobre 1971 par le parti au pouvoir et le gouvernement de Mobutu, mais il est bien plus ancien : des écrits portugais l'emploient pour le fleuve dès le XVIe siècle. Il viendrait de nzadi, un mot kikongo pour un fleuve, selon Bentley et l'historien Isidore Ndaywel è Nziem ; nous présentons ces explications plus bas.",
     "names": [
       {
         "nameText": "République démocratique du Congo",
@@ -298,6 +298,198 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. vii",
                 "notes": "Baptist Missionary Society et Trübner, Londres, 1886 ; lu sur la numérisation de la Bibliothèque du Congrès. Missionnaire baptiste installé à San Salvador, l'auteur écrit que le fleuve est appelé par ses habitants « Nzadi, or some equivalent term », qu'il traduit « the Great River », et que les Européens en ont fait Zaire ; que le nom Zaire tombe en désuétude au profit de Congo ; que le nom du fleuve vient de Kongo ou Ekongo, nom d'un ancien royaume dont la capitale était Mbanza Ekongo ; et qu'on ne peut rien dire avec certitude de l'origine du mot Kongo lui-même. Il cite ensuite konga, nkongo et kinkongo sans dire qu'ils expliquent le nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1971,
+              "to": 1971,
+              "label": "27 octobre 1971"
+            },
+            "era": "modern",
+            "statement": "Le nom Zaïre devient celui de l'État le 27 octobre 1971 : ce jour-là, le bureau politique du Mouvement populaire de la révolution, le parti au pouvoir, et le gouvernement du président Mobutu décident d'appeler le pays République du Zaïre. L'Assemblée nationale adopte la loi le 28 octobre ; le président la promulgue le 29, avec effet au 27. La Banque centrale du Congo relie ce changement au « recours à l'authenticité ».",
+            "actors": [
+              {
+                "name": "Bureau politique du Mouvement populaire de la révolution",
+                "role": "direction du parti au pouvoir"
+              },
+              {
+                "name": "Joseph-Désiré Mobutu",
+                "role": "président de la République ; il prend le nom de Mobutu Sese Seko en 1972"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Congo (Kinshasa): Polity Style, 1960–",
+                "author": "Archontology.org",
+                "year": null,
+                "url": "https://www.archontology.org/nations/congo_k/01_polity_1960_td.php",
+                "tier": "unverified",
+                "source_kind": "repository",
+                "page": "tableau, 29 octobre 1971, et note",
+                "notes": "Lu le 26 octobre 2026. La notice écrit que la décision de changer le nom de l'État est prise lors d'une réunion commune du bureau politique du Mouvement populaire de la révolution et du gouvernement le 27 octobre 1971, que l'Assemblée nationale adopte la loi le 28 octobre et que le président la promulgue le 29, avec effet au 27 octobre (Moniteur congolais n° 21, 1er novembre 1971, p. 967, non consulté)."
+              },
+              {
+                "title": "Historique de la Banque centrale du Congo",
+                "author": "Banque centrale du Congo",
+                "year": null,
+                "url": "https://www.bcc.cd/la-banque/histoire/historique-de-la-banque-centrale",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Lu le 26 octobre 2026. La banque écrit que l'État change de nom pour République du Zaïre le 27 octobre 1971, « dans le cadre de la politique du recours à l'authenticité »."
+              },
+              {
+                "title": "Zaire: A Country Study",
+                "author": "Library of Congress, Federal Research Division",
+                "year": 1994,
+                "url": "https://tile.loc.gov/storage-services/master/frd/frdcstdy/za/zairecountrystud00medi_0/zairecountrystud00medi_0.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Lu le 26 octobre 2026. La chronologie date le changement de nom d'octobre 1971 ; le chapitre politique écrit qu'en 1971 le parti promeut l'« authenticity » et rejette les influences culturelles étrangères."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1967,
+              "to": 1967,
+              "label": "24 juin 1967"
+            },
+            "era": "modern",
+            "statement": "Le mot zaïre nomme déjà la monnaie du pays depuis la réforme monétaire de l'ordonnance-loi du 24 juin 1967, qui remplace les billets en francs, selon la Banque centrale du Congo. En 1971, le nom de l'État reprend donc un mot déjà employé officiellement.",
+            "sources": [
+              {
+                "title": "Histoire des signes monétaires congolais",
+                "author": "Banque centrale du Congo",
+                "year": null,
+                "url": "https://www.bcc.cd/la-banque/histoire/histoire-des-signes-monetaires-congolais",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Lu le 26 octobre 2026. En 1967, les billets en francs sont remplacés par ceux du zaïre, selon l'ordonnance-loi n° 264 du 24 juin 1967 portant réforme monétaire."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1529,
+              "to": 1529,
+              "label": "1529"
+            },
+            "era": "polity",
+            "statement": "Le nom Zaïre s'écrit « Rio Zayre » (« fleuve Zayre » en portugais) dans une lettre de 1529 du roi Jean III de Portugal au roi du Kongo, que cite l'historien congolais Isidore Ndaywel è Nziem. Nous n'avons pas lu cette lettre. Ndaywel y voit la première mention écrite du mot ; le projet connaît une forme plus ancienne et différente, Enzaze, vers 1505-1508.",
+            "formAsWritten": "Rio Zayre",
+            "sources": [
+              {
+                "title": "Histoire générale du Congo, introduction « Le Congo et son histoire »",
+                "author": "Isidore Ndaywel è Nziem",
+                "year": 1998,
+                "url": "https://bokundoli.org/doc/histoire-generale-du-congo-2/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "introduction et note 6",
+                "notes": "Introduction reproduite par Bokundoli, lue le 26 octobre 2026. L'historien écrit que « Zaïre » relève d'une mauvaise audition du mot « nzadi », qui désigne un fleuve, et, en note, que la première mention écrite du mot date de 1529, dans une lettre du roi Jean III de Portugal au roi du Kongo où le fleuve est appelé « Rio Zayre » (Brásio, 1952-1954, p. 521-539 ; Jadin et Dicorato, 1974, p. 171-182). Nous n'avons pas lu la lettre ni ces éditions."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1998,
+              "to": 1998,
+              "label": "Proposée en 1998"
+            },
+            "era": "modern",
+            "statement": "Le nom Zaïre viendrait d'une mauvaise audition de nzadi, un mot kikongo qui désigne un fleuve, selon l'historien congolais Isidore Ndaywel è Nziem. Dans un entretien publié par le KADOC, le Congolais Antoine Lumenganeso Kiobe donne la même explication. Les marins portugais arrivent au large du royaume du Kongo en 1483, selon le Musée royal de l'Afrique centrale, mais personne n'a noté le mot entendu lors de ces premiers contacts.",
+            "hypothesisGroup": "origine du nom Zaïre",
+            "sources": [
+              {
+                "title": "Histoire générale du Congo, introduction « Le Congo et son histoire »",
+                "author": "Isidore Ndaywel è Nziem",
+                "year": 1998,
+                "url": "https://bokundoli.org/doc/histoire-generale-du-congo-2/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "introduction et note 6",
+                "notes": "Introduction reproduite par Bokundoli, lue le 26 octobre 2026. L'historien écrit que « Zaïre » relève d'une mauvaise audition du mot « nzadi », qui désigne un fleuve, et, en note, que la première mention écrite du mot date de 1529, dans une lettre du roi Jean III de Portugal au roi du Kongo où le fleuve est appelé « Rio Zayre » (Brásio, 1952-1954, p. 521-539 ; Jadin et Dicorato, 1974, p. 171-182). Nous n'avons pas lu la lettre ni ces éditions."
+              },
+              {
+                "title": "Entretien avec Antoine Lumenganeso Kiobe, projet Congo 2010, entretien 036",
+                "author": "KADOC, KU Leuven",
+                "year": 2010,
+                "url": "https://kadoc.kuleuven.be/8_projecten/2010/congo2010/pdf/int-036-fr.pdf/@@download/file/int_036_fr.pdf",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 2",
+                "notes": "Transcription publiée d'un entretien oral, lue le 26 octobre 2026. Le témoin dit que « le mot Zaïre vient de Nzadi qui signifie fleuve » et raconte une scène à Pinda, à l'embouchure ; c'est son récit, non un document de l'époque."
+              },
+              {
+                "title": "The Kongo kingdom",
+                "author": "Musée royal de l’Afrique centrale (Tervuren)",
+                "year": null,
+                "url": "https://www.africamuseum.be/en/discover/history_articles/kongo-kingdom",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lu le 26 octobre 2026. Le musée écrit que des marins portugais arrivent au large de la côte du royaume du Kongo en 1483 et que le royaume est alors un État puissant et centralisé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1572,
+              "to": 1818,
+              "label": "De 1572 à 1818"
+            },
+            "era": "polity",
+            "statement": "Le nom Zaïre s'écrit « Zaire » dans Les Lusiades de Luís de Camões, poème portugais imprimé en 1572. Des sources écrites et des cartes européennes des XVIe et XVIIe siècles l'emploient aussi, selon l'historien Igor Roland Matonda. En 1818 encore, le titre du récit de l'expédition de James Hingston Tuckey parle du fleuve « Zaire, usually called the Congo » : les deux noms circulent ensemble.",
+            "sources": [
+              {
+                "title": "Os Lusíadas, chant V, strophe 13",
+                "author": "Luís de Camões",
+                "year": 1572,
+                "url": "https://oslusiadas.org/v/13.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "chant V, strophe 13",
+                "notes": "Texte lu le 26 octobre 2026 : « Por onde o Zaire passa, claro e longo »."
+              },
+              {
+                "title": "Les lacs Tumba et Maï-Ndombe dans la cartographie européenne du 16e-18e siècle",
+                "author": "Igor Roland Matonda",
+                "year": 2026,
+                "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/les-lacs-tumba-et-maindombe-dans-la-cartographie-europeenne-du-16e18e-siecle/AAC043348D006E524E0DA4C7AA778F5C",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "résumé",
+                "notes": "Résumé lu le 26 octobre 2026 : l'article étudie les références aux lacs Zembre et Zaïre dans les sources écrites et cartographiques européennes des XVIe et XVIIe siècles."
+              },
+              {
+                "title": "Narrative of an expedition to explore the river Zaire, usually called the Congo, in South Africa, in 1816, under the direction of Captain J. K. Tuckey, R. N.",
+                "author": "James Hingston Tuckey",
+                "year": 1818,
+                "url": "https://archive.org/details/narrativeofexped01tuck",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Édition de New York, W. B. Gilley, 1818 (exemplaire de la Library of Congress) ; notice d'archive.org lue le 26 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Explication rapportée"
+            },
+            "statement": "Le nom Zaïre est aussi expliqué par la phrase « le fleuve qui avale les fleuves ». Une note de langue de Kia Kongo rapporte que beaucoup de gens le disent de nzadi ou de nzere, et remarque que nzere sert rarement à nommer un fleuve. Rien ne montre que cette phrase soit celle qui a donné le mot portugais.",
+            "hypothesisGroup": "origine du nom Zaïre",
+            "sources": [
+              {
+                "title": "Nzadi",
+                "author": "Patricio Mamona, Kia Kongo",
+                "year": null,
+                "url": "https://www.kiakongo.com/nzadi/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Note de langue lue le 26 octobre 2026. Elle rapporte que beaucoup de gens disent que nzadi ou nzere signifie « fleuve qui avale tous les fleuves » et remarque que nzere est rare pour désigner un fleuve."
               }
             ]
           }
