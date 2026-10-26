@@ -515,9 +515,30 @@ function videoDelivery(root, configFile, config, read) {
     if (manifest.hashes?.cards !== sha(read(cardsFile)))
       fail("The video manifest does not match the cards");
     text(config.assets, "Series video assets folder");
+    // A clip card shows footage, not a dossier image: its stills carry no
+    // record of their own; each shot names the source video it was cut from,
+    // and that video must have its research and rights record.
+    const rawCards = JSON.parse(read(cardsFile)).cards;
+    for (const card of rawCards)
+      for (const shot of card.image?.clips ??
+        [card.image?.clip].filter(Boolean))
+        if (
+          !records.dossier.images.some(
+            (i) => i.sourcePage === shot.rights?.sourceUrl
+          )
+        )
+          fail(
+            `Video footage has no research/rights record: ${shot.rights?.sourceUrl}`
+          );
+    const clipped = new Set(
+      seq.cards
+        .map((c) => c.image?.src)
+        .filter((src) => src?.startsWith("clip/"))
+    );
     for (const src of new Set(seq.cards.map((c) => c.image?.src)))
       if (
         src &&
+        !clipped.has(src) &&
         !records.dossier.images.some(
           (i) => i.file === `${config.assets}/${src}`
         )
