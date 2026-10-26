@@ -305,7 +305,13 @@ by `social/video/series-render.mjs`; the same package takes it, loaded by
 since the loader refuses cards of any other version. The input also names
 `assets`, the folder the research dossier's image records sit under: every
 image a card or a chapter card shows needs its research and rights record
-there, as a carousel card does. The manifest binds the same things as above
+there, as a carousel card does. A clip card (Cartes 1.15.0) shows stills the
+loader cuts from footage (`clip/<card>/<n>.jpg`); they have no record of their
+own. Instead each shot's `rights` needs an `author` and a `licence` (the
+loader refuses the sequence otherwise), and its `rights.sourceUrl` must match
+the `sourcePage` of a dossier image record for the source video. Only a card
+the loader cut from footage is exempt: a dossier image filed under `clip/`
+still needs its own record. The manifest binds the same things as above
 plus the cards: the cards JSON is copy and layout, and the sequence only names
 it. `encodeSeriesVideo` records the sequence hash before drawing; an export
 made before it recorded one is re-encoded.
@@ -327,7 +333,10 @@ from the loaded cards (chapter cards and the chapter kicker included), each
 subtitle chunk, and on the closing card the signature line and the search
 invitation, which the card prints while the voice says them. Image fields,
 identifiers, map file names and `say` are left out. Credits list each card's
-source line, its map caption's source and its image credit.
+source line, its map caption's source and its image credit. A clip card is
+credited by its footage instead: one line per distinct source video across
+its shots, `Images : <author> · <licence> · <sourceUrl>`, since the on-screen
+credit names only the first shot of a montage and shortens the address.
 
 **What remains manual.** The helper does not judge the rights to the satellite
 imagery or to a voice. The on-screen Source line names the imagery, and the
