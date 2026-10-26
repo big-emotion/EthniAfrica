@@ -30,6 +30,7 @@ import {
   MAX_TEXTURE,
 } from "./render.mjs";
 import { DOWNLOADS, readVerified } from "./areas.mjs";
+import { ensureClipFrames } from "./series-clip-frames.mjs";
 import {
   MAP_FRAME,
   MAP_IMAGERY,
@@ -98,7 +99,7 @@ async function routesFor(seq) {
   const cards = [];
   for (const card of seq.cards) {
     const spec = structuredClone(card);
-    if (spec.image)
+    if (spec.image && !spec.image.clip)
       await add(`/assets/${spec.image.src}`, `assets/${spec.image.src}`);
     if (spec.map?.dataRef)
       spec.map.data = JSON.parse(
@@ -341,6 +342,11 @@ export async function openSeriesRenderer(
     await readFile(new URL("../renderer/runtime.json", import.meta.url))
   );
   const { routes, tokens, cards } = await routesFor(seq);
+  // 1.15.0: the stills of every clip card, served to the page by card.
+  const clipDirs = new Map();
+  for (const card of seq.cards)
+    if (card.image?.clip)
+      clipDirs.set(card.id, (await ensureClipFrames(card.image.clip)).dir);
   const maps = await prepareMaps(seq, cards, routes, assets);
   // A map card's WebGL runs on SwiftShader, as in the satellite video,
   // unless the GPU was asked for.
@@ -373,6 +379,15 @@ export async function openSeriesRenderer(
           contentType:
             MIME[extname(url.pathname)] ?? "application/octet-stream",
           body: file,
+        });
+      }
+      if (url.pathname.startsWith("/clip/")) {
+        const [, , id, name] = url.pathname.split("/");
+        const dir = clipDirs.get(decodeURIComponent(id));
+        if (!dir || !/^\d{4}\.jpg$/.test(name)) return route.abort();
+        return route.fulfill({
+          contentType: "image/jpeg",
+          body: await readFile(join(dir, name)),
         });
       }
       const body = routes.get(decodeURIComponent(url.pathname));
@@ -419,6 +434,13 @@ export async function openSeriesRenderer(
     // where a subtitle is fully drawn, so every card and the ending are seen.
     const draw = async (frame) => {
       const state = seriesFrameState(seq, frame);
+      // 1.15.0: a clip card draws the still of its frame, decoded before the
+      // frame is drawn.
+      const stills = state.layers
+        .filter((l) => l.clipFrame !== undefined)
+        .map((l) => ({ id: seq.cards[l.card].id, n: l.clipFrame + 1 }));
+      if (stills.length)
+        await page.evaluate((list) => window.setClipStills(list), stills);
       const drawn = await page.evaluate((s) => window.drawFrame(s), state);
       for (const id of drawn.held ?? []) held.add(id);
       if (frame === 0 || frame === last || state.subtitle?.opacity === 1) {

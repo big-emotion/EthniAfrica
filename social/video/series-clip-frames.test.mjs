@@ -10,7 +10,11 @@ import { mkdtempSync, readdirSync, readFileSync, rmSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import sharp from "sharp";
-import { extractClipFrames, probeSource } from "./series-clip-frames.mjs";
+import {
+  extractClipFrames,
+  ensureClipFrames,
+  probeSource,
+} from "./series-clip-frames.mjs";
 
 const root = mkdtempSync(join(tmpdir(), "series-clip-frames-"));
 // @req REQ-186
@@ -82,4 +86,24 @@ test("extracting twice gives the same bytes", async () => {
 test("an existing folder is refused, never overwritten", async () => {
   await extract("g");
   await assert.rejects(extract("g"), /existe déjà/);
+});
+
+test("slices asking for one clip at once share one extraction", async () => {
+  const cache = join(root, "cache");
+  const clip = { src: SOURCE, in: 0.5, out: 1.5, fx: 0.5 };
+  const [a, b, c] = await Promise.all([
+    ensureClipFrames(clip, cache),
+    ensureClipFrames(clip, cache),
+    ensureClipFrames(clip, cache),
+  ]);
+  assert.equal(a.dir, b.dir);
+  assert.equal(b.dir, c.dir);
+  assert.equal(a.count, 30);
+  // One finished folder and no half-written one left beside it.
+  assert.equal(readdirSync(cache).length, 1);
+  assert.equal(readdirSync(a.dir).filter((f) => f.endsWith(".jpg")).length, 30);
+  // A later request reuses it; another focal point is another extraction.
+  assert.equal((await ensureClipFrames(clip, cache)).dir, a.dir);
+  const other = await ensureClipFrames({ ...clip, fx: 0.2 }, cache);
+  assert.notEqual(other.dir, a.dir);
 });

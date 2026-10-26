@@ -36,6 +36,7 @@ import {
 } from "./series-map.mjs";
 import { checkFigureFields, figureHeadAt } from "./series-figures.mjs";
 import { INTRO, OUTRO } from "../series-idents/shots.mjs";
+import { prepareClipCard } from "./series-clip-frames.mjs";
 import {
   planMapSequences,
   mapRunState,
@@ -230,6 +231,8 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     // 1.14.0: figures and facts drawn on the map.
     checkFigureFields(card);
     const own = structuredClone(card);
+    // 1.15.0: a card whose picture is an external clip.
+    if (own.image?.clip) prepareClipCard(own, dir);
     // 1.13.0: the globe lands on the subject's base view; the opener's
     // kicker is the subject's formula.
     if (subject && own.type === "opener") {
@@ -570,7 +573,7 @@ function schedule(seq, words) {
     chunks.at(-1).gone,
     outro
   );
-  seq.warnings = [];
+  seq.warnings = seq.cards.flatMap((c) => c.image?.clip?.warnings ?? []);
   if (fastChunks.length)
     seq.warnings.push(
       `${fastChunks.length} chunk(s) read faster than the recommended ${VOICE.recommendedCps} characters a second: ${fastChunks.map((t) => `« ${t} »`).join(", ")}`
@@ -616,6 +619,15 @@ function planLongVideo(seq, input) {
   let chapter = null;
   seq.cards.forEach((card, i) => {
     if (card.type === "chapter") chapter = card.chapter;
+    // 1.15.0: a clip card shows one still per frame, so the footage must last
+    // as long as the card; a shorter one would freeze on its last still.
+    if (card.image?.clip) {
+      const span = (seq.cardStarts[i + 1] ?? seq.frames) - seq.cardStarts[i];
+      if (card.image.clip.count < span)
+        fail(
+          `Card ${card.id}: le plan dure ${card.image.clip.count} images, il est plus court que sa carte (${span} images) : allonger out ou raccourcir la carte`
+        );
+    }
     if (["opener", "closing", "chapter", "intro"].includes(card.type)) return;
     if (card.signed) card.videoKicker = "Nous pensons";
     else if (chapter && !card.date)
@@ -801,8 +813,9 @@ export function seriesFrameState(seq, frame) {
   };
   const zooms = (i) => {
     const { from, to } = zoomSpan(i);
-    // The ending shows no photograph.
-    if (to === null) return { zoom: 1, zoomEnd: 1 };
+    // The ending shows no photograph, and footage is never pushed in
+    // (1.15.0, §2: a push is allowed on a static source only).
+    if (to === null || seq.cards[i].image?.clip) return { zoom: 1, zoomEnd: 1 };
     return {
       zoom: pushAt(frame - from, PUSH.picture),
       zoomEnd: pushAt(to - from, PUSH.picture),
@@ -849,6 +862,11 @@ export function seriesFrameState(seq, frame) {
         : EASE.enter((frame - from) / CROSS_FADE);
   for (const l of layers) {
     const card = seq.cards[l.card];
+    if (card.image?.clip)
+      l.clipFrame = Math.min(
+        Math.max(frame - starts[l.card], 0),
+        card.image.clip.count - 1
+      );
     if (card.itemFrames) l.items = card.itemFrames.map(arrive);
     if (card.attributionFrame !== undefined)
       l.attribution = arrive(card.attributionFrame);
