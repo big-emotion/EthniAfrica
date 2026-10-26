@@ -347,7 +347,7 @@ for (const [k, v] of Object.entries({ ...INK, w: ${JSON.stringify(MARKS.foreign)
 const SAT_VERT = ${JSON.stringify(FLAT_VERT)};
 const SAT_FRAG = ${JSON.stringify(FLAT_FRAG)};
 const el = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
-const resolveAsset = (name) => "/assets/" + name;
+const resolveAsset = (name) => (name.startsWith("clip/") ? "/" + name : "/assets/" + name);
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;");
 // The cards' French spacing (EthniCards' fr): a narrow no-break space before
 // ; : ! ? » and after «.
@@ -2675,6 +2675,25 @@ function parchmentReport(parts, l) {
   };
 }
 
+// 1.15.0: the still of each clip card's frame, set and decoded before the
+// frame is drawn (drawFrame itself stays synchronous).
+window.setClipStills = (list) =>
+  Promise.all(list.map(async ({ id, shot, n, credit }) => {
+    const parts = layers.find((p) => p.spec.id === id);
+    if (!parts) return;
+    const key = shot + "-" + n;
+    if (parts.clipStill !== key) {
+      parts.photo.src = resolveAsset("clip/" + id + "/" + shot + "-" + String(n).padStart(4, "0") + ".jpg");
+      await parts.photo.decode();
+      parts.clipStill = key;
+    }
+    // The credit follows the shot on screen: a cut changes place and author.
+    const line = parts.layer.querySelector(".vf-cred");
+    if (line && parts.clipCredit !== credit) {
+      line.textContent = credit;
+      parts.clipCredit = credit;
+    }
+  }));
 window.drawFrame = (state) => {
   const frame = document.getElementById("frame");
   const paintsBefore = imageryPaints;

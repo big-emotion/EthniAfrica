@@ -36,6 +36,7 @@ import {
 } from "./series-map.mjs";
 import { checkFigureFields, figureHeadAt } from "./series-figures.mjs";
 import { INTRO, OUTRO } from "../series-idents/shots.mjs";
+import { prepareClipCard, clipShots } from "./series-clip-frames.mjs";
 import {
   planMapSequences,
   mapRunState,
@@ -230,6 +231,9 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     // 1.14.0: figures and facts drawn on the map.
     checkFigureFields(card);
     const own = structuredClone(card);
+    // 1.15.0: a card whose picture is an external clip.
+    if (own.image?.clip || own.image?.clips)
+      prepareClipCard(own, dir, { proof: !!input.demo });
     // 1.13.0: the globe lands on the subject's base view; the opener's
     // kicker is the subject's formula.
     if (subject && own.type === "opener") {
@@ -570,7 +574,9 @@ function schedule(seq, words) {
     chunks.at(-1).gone,
     outro
   );
-  seq.warnings = [];
+  seq.warnings = seq.cards.flatMap((c) =>
+    clipShots(c).flatMap((s) => s.warnings)
+  );
   if (fastChunks.length)
     seq.warnings.push(
       `${fastChunks.length} chunk(s) read faster than the recommended ${VOICE.recommendedCps} characters a second: ${fastChunks.map((t) => `« ${t} »`).join(", ")}`
@@ -616,6 +622,12 @@ function planLongVideo(seq, input) {
   let chapter = null;
   seq.cards.forEach((card, i) => {
     if (card.type === "chapter") chapter = card.chapter;
+    // 1.15.0: a clip card shows one still per frame, so each shot's footage
+    // must last as long as the shot stays on screen. A shot after the first
+    // enters on a word of the voice (`say`), or when the footage before it
+    // runs out; a montage cuts at 2 s a shot at least, 2.5 s for the last.
+    const shots = clipShots(card);
+    if (shots.length) planClipCuts(seq, i, shots);
     if (["opener", "closing", "chapter", "intro"].includes(card.type)) return;
     if (card.signed) card.videoKicker = "Nous pensons";
     else if (chapter && !card.date)
@@ -801,8 +813,10 @@ export function seriesFrameState(seq, frame) {
   };
   const zooms = (i) => {
     const { from, to } = zoomSpan(i);
-    // The ending shows no photograph.
-    if (to === null) return { zoom: 1, zoomEnd: 1 };
+    // The ending shows no photograph, and footage is never pushed in
+    // (1.15.0, §2: a push is allowed on a static source only).
+    if (to === null || clipShots(seq.cards[i]).length)
+      return { zoom: 1, zoomEnd: 1 };
     return {
       zoom: pushAt(frame - from, PUSH.picture),
       zoomEnd: pushAt(to - from, PUSH.picture),
@@ -849,6 +863,18 @@ export function seriesFrameState(seq, frame) {
         : EASE.enter((frame - from) / CROSS_FADE);
   for (const l of layers) {
     const card = seq.cards[l.card];
+    const shots = clipShots(card);
+    if (shots.length) {
+      // The shot on screen is the last one whose cut has passed.
+      const at = frame - starts[l.card];
+      let shot = shots.length - 1;
+      while (shot > 0 && at < shots[shot].cut) shot--;
+      l.clipShot = shot;
+      l.clipFrame = Math.min(
+        Math.max(at - shots[shot].cut, 0),
+        shots[shot].count - 1
+      );
+    }
     if (card.itemFrames) l.items = card.itemFrames.map(arrive);
     if (card.attributionFrame !== undefined)
       l.attribution = arrive(card.attributionFrame);
@@ -1119,4 +1145,40 @@ export function checkSeriesLayout(boxes, { demo = false } = {}) {
       say(`${b.lines} lines, ${b.maxLines} at most`);
   }
   return problems;
+}
+
+// Where each shot of a clip card starts, in frames from the card's first, and
+// the checks of §2: its time on screen against its footage and the cut rules.
+function planClipCuts(seq, i, shots) {
+  const card = seq.cards[i];
+  const span = (seq.cardStarts[i + 1] ?? seq.frames) - seq.cardStarts[i];
+  shots.forEach((shot, k) => {
+    shot.cut = !k
+      ? 0
+      : shot.say
+        ? wordOf(seq, i, shot.say).frame - seq.cardStarts[i]
+        : shots[k - 1].cut + shots[k - 1].count;
+  });
+  shots.forEach((shot, k) => {
+    const shown = (shots[k + 1]?.cut ?? span) - shot.cut;
+    const last = k === shots.length - 1;
+    if (shown <= 0)
+      fail(
+        `Card ${card.id}: les coupes ne se suivent pas dans l'ordre de la voix (plan ${k + 1})`
+      );
+    if (shots.length > 1 && last && shown < 75)
+      fail(
+        `Card ${card.id}: le dernier plan reste moins de 2,5 s à l'écran (${shown} images)`
+      );
+    if (shots.length > 1 && shown < 60)
+      fail(
+        `Card ${card.id}: le plan ${k + 1} reste moins de 2 s à l'écran (${shown} images)`
+      );
+    if (shot.count < shown)
+      fail(
+        shots.length === 1
+          ? `Card ${card.id}: le plan dure ${shot.count} images, il est plus court que sa carte (${span} images) : allonger out ou raccourcir la carte`
+          : `Card ${card.id}: le plan ${k + 1} dure ${shot.count} images, plus court que son temps à l'écran (${shown} images)`
+      );
+  });
 }

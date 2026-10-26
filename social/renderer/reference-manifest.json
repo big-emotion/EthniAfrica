@@ -1,5 +1,5 @@
 {
-  "designVersion": "1.14.0-proposition",
+  "designVersion": "1.15.0-proposition",
   "source": "Operator-supplied Claude Design references received 10 October 2026; two map references reconciled to the unchanged accepted engine by explicit operator decision on the same date. Version 1.2.0-proposition accepted by the operator on 12 October 2026: 28 references of 1.1.0 kept unchanged, three 1.1 cards whose sample label moved re-rendered on the pinned browser, seven atlas cards added from the pinned browser after comparison with Claude Design's 1.2.0 references. Version 1.3.0-proposition accepted by the operator on 14 October 2026 with series video layout B: the 38 references of 1.2.0 kept unchanged, 51 series cards added from the pinned browser after comparison with Claude Design's 1.3.0 references. Version 1.4.0-proposition accepted by the operator on 14 October 2026: the series video in full screen and eight on-image-* tokens for it; the 89 references are unchanged. Version 1.4.1-proposition accepted by the operator on 14 October 2026: the series video's map cards on satellite imagery; the 89 references are unchanged.",
   "files": [
     {
@@ -862,5 +862,9 @@
   "integration-1.14.0": {
     "date": "2026-10-21",
     "decision": "Operator accepted EthniAfrica Cartes 1.14.0-proposition (figures and facts drawn on the map of the series video, not written) on 21 October 2026 with the designer's recommendations. It changes no card: its four colour tokens, five durations, three sizes and eight drawings (personne-1 to personne-6, bulle, livre) are used by the video only. Rendered in diagnostic mode on the pinned browser with the 1.13.0 and the 1.14.0 design files, the 89 sample cards are byte-identical (bundle version string only), alternative texts included, and pass 89 of 89 against design-system-1.10.0-accepted. The 89 reference hashes are therefore unchanged; only designVersion moves. No tolerance change; the figures on the map are integrated in social/video."
+  },
+  "integration-1.15.0": {
+    "date": "2026-10-26",
+    "decision": "Operator accepted EthniAfrica Cartes 1.15.0-proposition (external video in the series video) on 26 October 2026: « j'accepte la proposition, elle peut être validée ». It changes no card, token or component: the carousel's 89 references are unchanged. The clip and the montage are drawn by social/video only."
   }
 }

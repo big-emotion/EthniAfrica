@@ -2,6 +2,8 @@
 
 ## Acceptance and integration status
 
+**1.15.0-proposition, 26 October 2026, accepted by the operator the same day.** External video in the series video: the clip (a full-screen picture phase with in and out points and an audio mode), the montage of two or three clips under one narrated phase, footage with or without one designed overlay, per-network framing with a landscape window, the credit and rights lines, the renderer field for an external MP4 and the footage-first opener. Changes no card, token or component. Partly integrated in `social/video` on 26 October 2026: see « Renderer integration of 1.15.0 ».
+
 **1.14.0-proposition, 21 October 2026, accepted by the operator the same day, with the designer's recommendations.** Figures and facts drawn on the map, not written: the figure head, the states' cascade, people and speech bubbles as units, the row of five, two glasses for the age, pins and letterings, stamps, an empty name frame, a travelling drawing; the free phrase on the map retired. Integrated in `social/video` on 21 October 2026: see « Renderer integration of 1.14.0 ».
 
 **1.13.0-proposition, 20 October 2026, accepted by the operator on 21 October 2026, with the designer's recommendations.** Motion and sound of every series video: the motion tokens, the pop and the swell, the continuous camera, the whip zoom and the warm flash for the story's turns, the era map and its date counter, drawn marks, flags only inside a state existing on the date shown, the headline band, three format tiers, the subject key and the recap card, episodes about a word, and the sound cues as a specification. Integrated in `social/video` on 21 October 2026: see « Renderer integration of 1.13.0 ».
@@ -77,6 +79,16 @@ renderer integration. The full roadmap remains in the
 [canonical production specification](https://big-emotion.atlassian.net/wiki/spaces/ETHNIAFRIC/pages/212795394).
 
 For the production coordinator (`ethniafrica-social-production`) once the operator accepts this system. Record the version **1.1.0-proposition** and the date of acceptance; any later change to a token, a font or `bundle.css` is a new version and reopens the visual proof of pieces in progress.
+
+### Renderer integration of 1.15.0
+
+Spec: [proposals/1.15.0-proposition/README.md](proposals/1.15.0-proposition/README.md). Integrated in `social/video`:
+
+- **The card.** A series card whose `image` is `{ clip }` (one shot) or `{ clips }` (two or three) is a clip card. A shot gives `src` (relative to the piece folder), `in`, `out`, `fx`, `audio`, `place`, `rights` (`author`, `licence`, `sourceUrl`), and, after the first, `say`: the word of the voice on which it enters. The loader checks the file with ffprobe (H.264 or H.265, 1920×1080 at least), the cut rules (2 s a shot, 2.5 s for the last, three at most, six seconds in all) and that each shot's footage lasts as long as it stays on screen. A 720p source is a warning in a demonstration and a refusal in a final video.
+- **The drawing.** The footage is cut into one 1080×1920 still per frame by FFmpeg, shared by the render's slices, and Chromium draws the still of each frame; footage is never pushed in. The foot shows the shot's place, author, licence and source domain, and changes at each cut.
+- **Engine adaptations of the designer's numbers.** The credit sits in the card's existing foot, not at the designer's y 1392 and 1440, which fall in the subtitles' band of the engine; the clip's stills are 1080×1920 only.
+
+Not integrated yet: the audio modes (the source is never played), the overlays (figure, present-day date, word), the landscape window of the opener, the 4:5 frame of Facebook, and the 2-frame tolerance of a cut to a word (a cut falls on the word's first frame). The tests are `series-clip.test.mjs`, `series-clip-frames.test.mjs` and `series-clip-card.test.mjs`.
 
 ## In the repository
 
