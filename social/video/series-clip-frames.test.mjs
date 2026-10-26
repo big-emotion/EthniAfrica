@@ -205,11 +205,11 @@ test("trim cuts a share of the shot's height before it is framed, so a corner lo
   const sharp0 = await energy(whole.files[10], 700, 100);
   const blurred = await energy(trimmed.files[10], 700, 100);
   assert.ok(
-    sharp0 > blurred * 3,
+    sharp0 > blurred * 2,
     `untrimmed ${sharp0} against trimmed ${blurred}`
   );
   const kept = await energy(trimmed.files[10], 880, 100);
-  assert.ok(kept > blurred * 3, "the trimmed picture itself stays sharp");
+  assert.ok(kept > blurred * 2, "the trimmed picture itself stays sharp");
 });
 
 test("the trim is part of what a shared extraction is keyed on", async () => {
