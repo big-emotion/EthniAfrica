@@ -12,6 +12,7 @@ const roster = JSON.parse(
   readFileSync(new URL("./voices.json", import.meta.url), "utf8")
 );
 
+// @req REQ-186
 test("every voice has an id, a name, a kind and a use", () => {
   assert.ok(roster.voices.length >= 7);
   for (const voice of roster.voices) {
@@ -24,17 +25,20 @@ test("every voice has an id, a name, a kind and a use", () => {
   assert.equal(new Set(ids).size, ids.length, "a voice is listed twice");
 });
 
+// @req REQ-186
 test("the house voice of voice.mjs is the roster's house voice", () => {
   const house = roster.voices.filter((v) => v.role === "house");
   assert.equal(house.length, 1);
   assert.equal(house[0].id, HOUSE_VOICE);
 });
 
+// @req REQ-186
 test("a cloned voice carries its warning", () => {
   for (const voice of roster.voices.filter((v) => v.kind === "cloned"))
     assert.match(voice.note, /accord/, voice.name);
 });
 
+// @req REQ-186
 test("a voice is cast by the kind of passage, never twice in one role", () => {
   const roles = roster.voices.map((v) => v.role);
   assert.equal(new Set(roles).size, roles.length);

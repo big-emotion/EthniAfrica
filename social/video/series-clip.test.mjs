@@ -30,6 +30,7 @@ const clip = (over = {}) => ({
 const probe = probeOf({ "media/a.mp4": HD_SOURCE, "media/b.mp4": HD_SOURCE });
 const check = (phase) => checkClipPhase(phase, probe);
 
+// @req REQ-186
 test("a time snaps to the 30 fps grid", () => {
   assert.equal(FRAME_SECONDS, 1 / 30);
   assert.equal(snapToFrame(12.4), 12.4);
@@ -37,6 +38,7 @@ test("a time snaps to the 30 fps grid", () => {
   assert.ok(Math.abs(snapToFrame(12.43) - 12.4333333333) < 1e-6);
 });
 
+// @req REQ-186
 test("the 9:16 window covers 0.316 of a 16:9 source and stays inside it", () => {
   const w = cropWindow(0.5, "tiktok");
   assert.ok(Math.abs(w.width - 0.316) < 1e-9);
@@ -45,6 +47,7 @@ test("the 9:16 window covers 0.316 of a 16:9 source and stays inside it", () => 
   assert.ok(Math.abs(cropWindow(1, "tiktok").left - 0.684) < 1e-9);
 });
 
+// @req REQ-186
 test("the 4:5 window covers 0.45 of the source", () => {
   const w = cropWindow(0.5, "facebook");
   assert.equal(w.width, 0.45);
@@ -52,6 +55,7 @@ test("the 4:5 window covers 0.45 of the source", () => {
   assert.ok(Math.abs(cropWindow(1, "facebook").left - 0.55) < 1e-9);
 });
 
+// @req REQ-186
 test("source sound is off unless speech is transcribed and attributed", () => {
   assert.deepEqual(resolveAudio({ mode: "off" }), {
     mode: "off",
@@ -79,12 +83,14 @@ test("source sound is off unless speech is transcribed and attributed", () => {
   assert.equal(allowed.mode, "on");
 });
 
+// @req REQ-186
 test("a clip of six seconds from a full HD H.264 file passes", () => {
   const r = check({ kind: "clip", id: "p03", minHold: 6, ...clip() });
   assert.deepEqual(r.errors, []);
   assert.deepEqual(r.warnings, []);
 });
 
+// @req REQ-186
 test("a single clip under six seconds cannot be a phase", () => {
   const r = check({
     kind: "clip",
@@ -95,6 +101,7 @@ test("a single clip under six seconds cannot be a phase", () => {
   assert.match(r.errors.join("\n"), /moins de 6 s/);
 });
 
+// @req REQ-186
 test("a missing, small or odd-codec source is refused", () => {
   const phase = (src) => ({
     kind: "clip",
@@ -120,6 +127,7 @@ test("a missing, small or odd-codec source is refused", () => {
   assert.deepEqual(hevc.errors, []);
 });
 
+// @req REQ-186
 test("in and out stay inside the source", () => {
   const phase = (over) => ({
     kind: "clip",
@@ -135,6 +143,7 @@ test("in and out stay inside the source", () => {
   assert.match(check(phase({ in: -1, out: 6 })).errors.join(), /in < out/);
 });
 
+// @req REQ-186
 test("a montage holds six seconds with two or three shots of two seconds", () => {
   const montage = (shots) => ({
     kind: "montage",
@@ -166,6 +175,7 @@ test("a montage holds six seconds with two or three shots of two seconds", () =>
   assert.match(one.errors.join(), /2 ou 3 plans/);
 });
 
+// @req REQ-186
 test("rights need an author and a licence", () => {
   const noLicence = check({
     kind: "clip",
@@ -183,6 +193,7 @@ test("rights need an author and a licence", () => {
   assert.match(noAuthor.errors.join(), /auteur/);
 });
 
+// @req REQ-186
 test("an overlay date must be a present-day date", () => {
   const withOverlay = (overlay) =>
     check({ kind: "clip", id: "p", minHold: 6, ...clip({ overlay }) });
@@ -205,6 +216,7 @@ test("an overlay date must be a present-day date", () => {
   );
 });
 
+// @req REQ-186
 test("a focal point outside the source is refused and a speech clip falls back to silence with a warning", () => {
   const off = check({
     kind: "clip",
@@ -223,6 +235,7 @@ test("a focal point outside the source is refused and a speech clip falls back t
   assert.match(speech.warnings.join(), /transcri/);
 });
 
+// @req REQ-186
 test("a 720p source is refused in a final video and only reported in a proof", () => {
   const small = probeOf({
     "media/s.mp4": { ...HD_SOURCE, width: 1280, height: 720 },
@@ -241,6 +254,7 @@ test("a 720p source is refused in a final video and only reported in a proof", (
   assert.match(proof.warnings.join(), /preuve/);
 });
 
+// @req REQ-186
 test("blur mode asks for 1080 px of width, so a 720p source is clean", () => {
   const small = probeOf({
     "media/s.mp4": { ...HD_SOURCE, width: 1280, height: 720 },
@@ -261,6 +275,7 @@ test("blur mode asks for 1080 px of width, so a 720p source is clean", () => {
   assert.match(refused.errors.join(), /1080 px de large/);
 });
 
+// @req REQ-186
 test("trim is a share of the height, never most of the picture", () => {
   const phase = (trim) => ({
     kind: "clip",

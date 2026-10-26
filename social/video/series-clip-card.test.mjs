@@ -51,6 +51,7 @@ const build = (options) => {
 };
 const indexOfClip = (seq) => seq.cards.findIndex((c) => c.id === CLIP_CARD);
 
+// @req REQ-186
 test("a clip card is loaded with its stills and its length in frames", () => {
   const seq = build();
   const card = seq.cards[indexOfClip(seq)];
@@ -60,6 +61,7 @@ test("a clip card is loaded with its stills and its length in frames", () => {
   assert.equal(card.image.calm, false);
 });
 
+// @req REQ-186
 test("each frame of the card shows the matching still, held at the ends", () => {
   const seq = build();
   const i = indexOfClip(seq);
@@ -71,6 +73,7 @@ test("each frame of the card shows the matching still, held at the ends", () => 
   assert.equal(clipFrame(start + 100), 100);
 });
 
+// @req REQ-186
 test("footage is never pushed in: its zoom stays at 1", () => {
   const seq = build();
   const i = indexOfClip(seq);
@@ -82,6 +85,7 @@ test("footage is never pushed in: its zoom stays at 1", () => {
   }
 });
 
+// @req REQ-186
 test("a clip shorter than its card is refused", () => {
   assert.throws(
     () => build({ clip: { in: 0, out: 6 } }),
@@ -89,11 +93,13 @@ test("a clip shorter than its card is refused", () => {
   );
 });
 
+// @req REQ-186
 test("a missing source and a missing licence are refused", () => {
   assert.throws(() => build({ clip: { src: "absent.mp4" } }), /introuvable/);
   assert.throws(() => build({ clip: { rights: { author: "X" } } }), /licence/);
 });
 
+// @req REQ-186
 test("Chromium draws a different still on each frame of the clip", async () => {
   const seq = build();
   const i = indexOfClip(seq);
@@ -114,11 +120,13 @@ test("Chromium draws a different still on each frame of the clip", async () => {
   );
 });
 
+// @req REQ-186
 test("a 720p source loads in a demonstration, with the upscale reported", () => {
   const seq = build({ clip: { src: "small.mp4" } });
   assert.match(seq.warnings.join("\n"), /1280×720.*agrandie 2,7 fois/);
 });
 
+// @req REQ-186
 test("the card's credit is the clip's own place and rights, never the old photo's", () => {
   const seq = build();
   const { credit } = seq.cards[indexOfClip(seq)];
@@ -149,6 +157,7 @@ const montage = (extra = []) => [
 const stateOf = (seq, frame) =>
   seriesFrameState(seq, frame).layers.find((l) => l.card === indexOfClip(seq));
 
+// @req REQ-186
 test("a montage cuts to its next shot on the word that says it", () => {
   const seq = build({ clips: montage() });
   const i = indexOfClip(seq);
@@ -162,6 +171,7 @@ test("a montage cuts to its next shot on the word that says it", () => {
   assert.equal(stateOf(seq, cut + 50).clipFrame, 50);
 });
 
+// @req REQ-186
 test("a shot without a word follows the footage of the one before", () => {
   const seq = build({
     clips: [SHOT({ out: 3 }), SHOT({ in: 4, out: 9, place: "KPALIMÉ" })],
@@ -172,6 +182,7 @@ test("a shot without a word follows the footage of the one before", () => {
   assert.equal(stateOf(seq, start + 90).clipShot, 1);
 });
 
+// @req REQ-186
 test("a montage refuses a last shot under 2.5 s and a fourth shot", () => {
   const three = [
     SHOT(),
@@ -183,6 +194,7 @@ test("a montage refuses a last shot under 2.5 s and a fourth shot", () => {
   assert.throws(() => build({ clips: four }), /3 plans/);
 });
 
+// @req REQ-186
 test("a shot under two seconds on screen is refused", () => {
   const quick = [
     SHOT({ out: 3 }),
@@ -191,11 +203,13 @@ test("a shot under two seconds on screen is refused", () => {
   assert.throws(() => build({ clips: quick }), /moins de 2 s à l'écran/);
 });
 
+// @req REQ-186
 test("a shot too short for its time on screen is refused", () => {
   const short = [SHOT({ out: 2 }), SHOT({ in: 4, out: 9, say: "Burkina" })];
   assert.throws(() => build({ clips: short }), /plus court que son temps/);
 });
 
+// @req REQ-186
 test("Chromium cuts between the shots and changes the credit with them", async () => {
   const seq = build({ clips: montage() });
   const i = indexOfClip(seq);

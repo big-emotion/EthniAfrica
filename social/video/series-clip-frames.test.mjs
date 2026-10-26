@@ -42,6 +42,7 @@ const extract = (name, options) =>
     ...options,
   });
 
+// @req REQ-186
 test("the probe reports codec, size and duration of the source", () => {
   const info = probeSource(SOURCE);
   assert.equal(info.codec, "h264");
@@ -51,6 +52,7 @@ test("the probe reports codec, size and duration of the source", () => {
   assert.equal(probeSource(join(root, "absent.mp4")), null);
 });
 
+// @req REQ-186
 test("one second of source gives thirty stills of 1080×1920", async () => {
   const { count, files } = await extract("a");
   assert.equal(count, 30);
@@ -60,11 +62,13 @@ test("one second of source gives thirty stills of 1080×1920", async () => {
   assert.deepEqual([meta.width, meta.height], [1080, 1920]);
 });
 
+// @req REQ-186
 test("the stills follow the footage: frame 0 and frame 20 differ", async () => {
   const { files } = await extract("b");
   assert.notDeepEqual(readFileSync(files[0]), readFileSync(files[20]));
 });
 
+// @req REQ-186
 test("the focal point moves the window across the source", async () => {
   const left = await extract("c", { fx: 0 });
   const right = await extract("d", { fx: 1 });
@@ -74,6 +78,7 @@ test("the focal point moves the window across the source", async () => {
   );
 });
 
+// @req REQ-186
 test("extracting twice gives the same bytes", async () => {
   const first = await extract("e");
   const second = await extract("f");
@@ -83,11 +88,13 @@ test("extracting twice gives the same bytes", async () => {
   );
 });
 
+// @req REQ-186
 test("an existing folder is refused, never overwritten", async () => {
   await extract("g");
   await assert.rejects(extract("g"), /existe déjà/);
 });
 
+// @req REQ-186
 test("slices asking for one clip at once share one extraction", async () => {
   const cache = join(root, "cache");
   const clip = { src: SOURCE, in: 0.5, out: 1.5, fx: 0.5 };
@@ -132,6 +139,7 @@ const energy = async (png, top, height) => {
   return sum / raw.length;
 };
 
+// @req REQ-186
 test("blur mode keeps the whole width sharp on a blurred copy of the shot", async () => {
   const { files } = await extractClipFrames({
     src: SMALL,
@@ -149,6 +157,7 @@ test("blur mode keeps the whole width sharp on a blurred copy of the shot", asyn
   assert.ok(middle > above * 3, `middle ${middle} against blurred ${above}`);
 });
 
+// @req REQ-186
 test("blur mode shows what fill mode cuts off", async () => {
   const fill = await extractClipFrames({
     src: SMALL,
@@ -175,6 +184,7 @@ test("blur mode shows what fill mode cuts off", async () => {
   );
 });
 
+// @req REQ-186
 test("the mode is part of what a shared extraction is keyed on", async () => {
   const cache = join(root, "cache-mode");
   const base = { src: SMALL, in: 0.5, out: 1.5 };
@@ -183,6 +193,7 @@ test("the mode is part of what a shared extraction is keyed on", async () => {
   assert.notEqual(a.dir, b.dir);
 });
 
+// @req REQ-186
 test("trim cuts a share of the shot's height before it is framed, so a corner logo goes", async () => {
   const whole = await extractClipFrames({
     src: SMALL,
@@ -212,6 +223,7 @@ test("trim cuts a share of the shot's height before it is framed, so a corner lo
   assert.ok(kept > blurred * 2, "the trimmed picture itself stays sharp");
 });
 
+// @req REQ-186
 test("the trim is part of what a shared extraction is keyed on", async () => {
   const cache = join(root, "cache-trim");
   const base = { src: SMALL, in: 0.5, out: 1.5, mode: "blur" };
