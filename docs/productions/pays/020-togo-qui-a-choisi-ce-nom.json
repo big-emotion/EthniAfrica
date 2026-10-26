@@ -1,0 +1,41 @@
+{
+  "campaign": "pays-20",
+  "typologie": "pays",
+  "episode": 20,
+  "question": {
+    "fr": "Qui a choisi le nom Togo ?"
+  },
+  "myth": {
+    "fr": "Le nom Togo est-il une invention coloniale ?"
+  },
+  "subjects": [
+    {
+      "kind": "country",
+      "id": "TGO",
+      "label": {
+        "fr": "Togo"
+      }
+    }
+  ],
+  "sitePath": "/fr/atlas/pays/TGO",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7701016019317394710",
+      "publishedAt": "2026-10-26"
+    },
+    {
+      "network": "instagram",
+      "format": "video",
+      "url": "https://www.instagram.com/p/De9ukpeKsoY/",
+      "publishedAt": "2026-10-26"
+    },
+    {
+      "network": "facebook",
+      "format": "video",
+      "url": "https://www.facebook.com/reel/1440204794920784",
+      "publishedAt": "2026-10-26"
+    }
+  ]
+}
