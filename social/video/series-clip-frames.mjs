@@ -48,18 +48,37 @@ export function probeSource(src) {
 // `fx` is the focal point across the source, 0 to 1 (spec §4); the window is
 // 1080 px wide on a source scaled to 1920 px tall, so its left edge is
 // clamped inside the picture.
-export async function extractClipFrames({ src, in: from, out, fx = 0.5, dir }) {
+export async function extractClipFrames({
+  src,
+  in: from,
+  out,
+  fx = 0.5,
+  mode = "fill",
+  dir,
+}) {
   if (existsSync(dir))
     throw new Error(`Le dossier d'images existe déjà : ${dir}`);
   await mkdir(dir, { recursive: true });
   const count = Math.round(
     (snapToFrame(out) - snapToFrame(from)) / FRAME_SECONDS
   );
-  const crop = `crop=${WIDTH}:${HEIGHT}:x='min(max(iw*${fx}-${WIDTH / 2},0),iw-${WIDTH})':y=0`;
+  // fill: the shot fills the frame's height and a 1080 px window is cut on
+  // the focal point, which magnifies a 720p source 2.7 times. blur: the whole
+  // width of the shot, 1080 px, sits across the middle on a blurred and
+  // darkened copy of itself, so a 720p source is shrunk, never magnified.
+  const filter =
+    mode === "blur"
+      ? [
+          "fps=30,split=2[a][b]",
+          `[a]scale=${WIDTH}:${HEIGHT}:force_original_aspect_ratio=increase,crop=${WIDTH}:${HEIGHT},boxblur=40:2,eq=brightness=-0.12[bg]`,
+          `[b]scale=${WIDTH}:-2:flags=lanczos[fg]`,
+          "[bg][fg]overlay=(W-w)/2:(H-h)/2",
+        ].join(";")
+      : `fps=30,scale=-2:${HEIGHT}:flags=lanczos,crop=${WIDTH}:${HEIGHT}:x='min(max(iw*${fx}-${WIDTH / 2},0),iw-${WIDTH})':y=0`;
   await run("ffmpeg", [
     ...["-v", "error", "-y", "-ss", String(snapToFrame(from))],
     ...["-i", src],
-    ...["-vf", `fps=30,scale=-2:${HEIGHT}:flags=lanczos,${crop}`],
+    ...[mode === "blur" ? "-filter_complex" : "-vf", filter],
     ...["-frames:v", String(count)],
     // Bit-exact output, so two runs on one source give the same files.
     ...["-fflags", "+bitexact", "-flags:v", "+bitexact", "-q:v", "2"],
@@ -79,12 +98,12 @@ export async function extractClipFrames({ src, in: from, out, fx = 0.5, dir }) {
 // and its focal point) and appears whole by a rename, so a slice that comes
 // second finds a finished folder or loses the race harmlessly.
 export async function ensureClipFrames(
-  { src, in: from, out, fx = 0.5 },
+  { src, in: from, out, fx = 0.5, mode = "fill" },
   root = join(tmpdir(), "ethnia-clip-frames")
 ) {
   const { size, mtimeMs } = statSync(src);
   const key = createHash("sha256")
-    .update(JSON.stringify([src, size, mtimeMs, from, out, fx]))
+    .update(JSON.stringify([src, size, mtimeMs, from, out, fx, mode]))
     .digest("hex")
     .slice(0, 16);
   const dir = join(root, key);
@@ -95,7 +114,7 @@ export async function ensureClipFrames(
   await mkdir(root, { recursive: true });
   const part = `${dir}.part-${process.pid}-${Math.random().toString(36).slice(2)}`;
   try {
-    await extractClipFrames({ src, in: from, out, fx, dir: part });
+    await extractClipFrames({ src, in: from, out, fx, mode, dir: part });
     writeFileSync(join(part, "done"), "");
     await rename(part, dir);
   } catch (error) {

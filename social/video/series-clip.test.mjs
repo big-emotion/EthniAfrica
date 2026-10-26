@@ -240,3 +240,23 @@ test("a 720p source is refused in a final video and only reported in a proof", (
   assert.match(proof.warnings.join(), /agrandie 2,7 fois/);
   assert.match(proof.warnings.join(), /preuve/);
 });
+
+test("blur mode asks for 1080 px of width, so a 720p source is clean", () => {
+  const small = probeOf({
+    "media/s.mp4": { ...HD_SOURCE, width: 1280, height: 720 },
+  });
+  const phase = {
+    kind: "clip",
+    id: "p",
+    minHold: 6,
+    ...clip({ src: "media/s.mp4", mode: "blur" }),
+  };
+  const r = checkClipPhase(phase, small);
+  assert.deepEqual(r.errors, []);
+  assert.deepEqual(r.warnings, []);
+  const tiny = probeOf({
+    "media/t.mp4": { ...HD_SOURCE, width: 854, height: 480 },
+  });
+  const refused = checkClipPhase({ ...phase, src: "media/t.mp4" }, tiny);
+  assert.match(refused.errors.join(), /1080 px de large/);
+});

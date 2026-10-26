@@ -107,3 +107,78 @@ test("slices asking for one clip at once share one extraction", async () => {
   const other = await ensureClipFrames({ ...clip, fx: 0.2 }, cache);
   assert.notEqual(other.dir, a.dir);
 });
+
+// A 1280×720 source, like the captures the operator supplied.
+const SMALL = join(root, "small.mp4");
+execFileSync(
+  "ffmpeg",
+  [
+    ...["-v", "error", "-y", "-f", "lavfi"],
+    ...["-i", "testsrc2=size=1280x720:rate=30:duration=2"],
+    ...["-c:v", "libx264", "-pix_fmt", "yuv420p", SMALL],
+  ],
+  { stdio: "inherit" }
+);
+
+// Sum of horizontal pixel differences: more edges, more energy.
+const energy = async (png, top, height) => {
+  const raw = await sharp(png)
+    .greyscale()
+    .extract({ left: 0, top, width: 1080, height })
+    .raw()
+    .toBuffer();
+  let sum = 0;
+  for (let i = 1; i < raw.length; i++) sum += Math.abs(raw[i] - raw[i - 1]);
+  return sum / raw.length;
+};
+
+test("blur mode keeps the whole width sharp on a blurred copy of the shot", async () => {
+  const { files } = await extractClipFrames({
+    src: SMALL,
+    in: 0.5,
+    out: 1.5,
+    mode: "blur",
+    dir: join(root, "blur"),
+  });
+  assert.equal(files.length, 30);
+  const meta = await sharp(files[0]).metadata();
+  assert.deepEqual([meta.width, meta.height], [1080, 1920]);
+  // The picture sits across the middle (1080×608 on 1920), the copy above.
+  const middle = await energy(files[10], 800, 300);
+  const above = await energy(files[10], 100, 300);
+  assert.ok(middle > above * 3, `middle ${middle} against blurred ${above}`);
+});
+
+test("blur mode shows what fill mode cuts off", async () => {
+  const fill = await extractClipFrames({
+    src: SMALL,
+    in: 0.5,
+    out: 1.5,
+    fx: 0,
+    dir: join(root, "fill0"),
+  });
+  const blur = await extractClipFrames({
+    src: SMALL,
+    in: 0.5,
+    out: 1.5,
+    mode: "blur",
+    dir: join(root, "blur0"),
+  });
+  // Fill at fx 0 keeps the left 31 % of the picture, so its middle is far
+  // sharper per pixel than the whole picture shrunk into the same width.
+  assert.notDeepEqual(readFileSync(fill.files[0]), readFileSync(blur.files[0]));
+  const a = await energy(fill.files[0], 800, 300);
+  const b = await energy(blur.files[0], 800, 300);
+  assert.ok(
+    a < b,
+    "the whole picture packs more detail per pixel than 31 % of it magnified"
+  );
+});
+
+test("the mode is part of what a shared extraction is keyed on", async () => {
+  const cache = join(root, "cache-mode");
+  const base = { src: SMALL, in: 0.5, out: 1.5 };
+  const a = await ensureClipFrames(base, cache);
+  const b = await ensureClipFrames({ ...base, mode: "blur" }, cache);
+  assert.notEqual(a.dir, b.dir);
+});

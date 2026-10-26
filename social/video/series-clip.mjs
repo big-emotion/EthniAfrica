@@ -55,7 +55,13 @@ function checkSource(id, clip, probe, { errors, warnings }, proof) {
     errors.push(
       `Phase ${id}: ${clip.src} : le codec doit être H.264 ou H.265 (reçu ${info.codec})`
     );
-  if (info.width < 1920 || info.height < 1080) {
+  if (clip.mode === "blur") {
+    // The whole width is shown at 1080 px, so width is what limits sharpness.
+    if (info.width < 1080)
+      errors.push(
+        `Phase ${id}: ${clip.src} : le mode fond flou demande 1080 px de large au moins (reçu ${info.width})`
+      );
+  } else if (info.width < 1920 || info.height < 1080) {
     // The frame is 1920 px tall, so a 720p source is magnified by 1920 ÷ 720
     // when it fills it. A proof may show that; a final video may not.
     const magnification = (1920 / info.height).toFixed(1).replace(".", ",");
