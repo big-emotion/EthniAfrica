@@ -740,6 +740,113 @@ test("a clip card's footage needs the research and rights record of its source v
   );
 });
 
+function editJson(f, file, change) {
+  const p = join(f.root, file);
+  const json = JSON.parse(readFileSync(p, "utf8"));
+  change(json);
+  writeFileSync(p, JSON.stringify(json));
+}
+
+// Puts `shots` on the series fixture's fourth card, cut from one generated
+// footage file, each shot's source video recorded in the dossier (#1972).
+function withClipCard(f, shots, { montage = shots.length > 1 } = {}) {
+  const inputDir = join(f.root, "piece/series-input");
+  execFileSync("ffmpeg", [
+    ...["-v", "error", "-y", "-f", "lavfi"],
+    ...["-i", "testsrc2=size=1920x1080:rate=30:duration=30"],
+    ...["-c:v", "libx264", "-pix_fmt", "yuv420p"],
+    join(inputDir, "footage.mp4"),
+  ]);
+  const clips = shots.map((shot) => ({
+    src: "footage.mp4",
+    fx: 0.5,
+    audio: { mode: "off", speech: false },
+    ...shot,
+  }));
+  editJson(f, f.cards, (deck) => {
+    deck.cards.find((c) => c.id === "serie-afrique-tout-04").image = montage
+      ? { clips }
+      : { clip: clips[0] };
+  });
+  const p = join(f.root, f.config.research);
+  const research = JSON.parse(readFileSync(p, "utf8"));
+  for (const sourcePage of new Set(clips.map((c) => c.rights?.sourceUrl)))
+    research.images.push({
+      ...research.images[0],
+      file: "piece/series-input/footage.mp4",
+      sourcePage,
+    });
+  writeFileSync(p, JSON.stringify(research));
+  f.writeManifest();
+}
+const CLIP_RIGHTS = {
+  author: "Chaîne d'essai",
+  licence: "licence d'essai",
+  sourceUrl: "https://example.org/essai-video",
+};
+
+// @req REQ-186
+test("a clip without a licence is refused before anything is packaged", (t) => {
+  const f = seriesPackageFixture(t);
+  withClipCard(f, [{ in: 0, out: 22, rights: CLIP_RIGHTS }]);
+  editJson(f, f.cards, (deck) => {
+    delete deck.cards.find((c) => c.id === "serie-afrique-tout-04").image.clip
+      .rights.licence;
+  });
+  assert.throws(
+    () => createPackage(f.root, f.configPath, f.output, both),
+    /rights\.licence/
+  );
+  assert.equal(existsSync(join(f.root, f.output)), false);
+});
+
+// @req REQ-186
+test("post.md credits every clip of a montage once per source", (t) => {
+  const f = seriesPackageFixture(t);
+  const other = {
+    author: "Autre chaîne",
+    licence: "CC BY 4.0",
+    sourceUrl: "https://example.net/autre-video",
+  };
+  withClipCard(f, [
+    { in: 0, out: 8, rights: CLIP_RIGHTS },
+    { in: 8, out: 15, rights: other },
+    { in: 15, out: 22, rights: CLIP_RIGHTS },
+  ]);
+  createPackage(f.root, f.configPath, f.output, both);
+  const post = readFileSync(join(f.root, f.output, "post.md"), "utf8");
+  const credits = post.split("## Sources and credits")[1].split("\n## ")[0];
+  for (const credit of [
+    "Images : Chaîne d'essai · licence d'essai · https://example.org/essai-video",
+    "Images : Autre chaîne · CC BY 4.0 · https://example.net/autre-video",
+  ])
+    assert.equal(credits.split(credit).length - 1, 1, credit);
+});
+
+// @req REQ-186
+test("an image filed under clip/ still needs its record when no clip made it", (t) => {
+  const f = seriesPackageFixture(t);
+  const p = join(f.root, f.config.research);
+  const research = JSON.parse(readFileSync(p, "utf8"));
+  const [first] = research.images;
+  const moved = first.file.replace(`${f.config.assets}/`, "");
+  mkdirSync(join(f.root, f.config.assets, "clip"), { recursive: true });
+  copyFileSync(
+    join(f.root, first.file),
+    join(f.root, f.config.assets, "clip", moved.split("/").pop())
+  );
+  editJson(f, f.cards, (deck) => {
+    for (const card of deck.cards)
+      if (card.image?.src === moved)
+        card.image.src = `clip/${moved.split("/").pop()}`;
+  });
+  f.writeManifest();
+  assert.throws(
+    () => createPackage(f.root, f.configPath, f.output, both),
+    /Video image has no research\/rights record: clip\//
+  );
+});
+
 // The Lingala answer at its name address (REQ-200), and the search page's
 // reading of the same name that packages sent readers to before it.
 const LINGALA = "https://ethniafrica.com/fr/atlas/recherche/lingala";

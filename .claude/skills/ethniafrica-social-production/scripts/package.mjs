@@ -335,16 +335,38 @@ function seriesScreenText(seq) {
     ...(card.type === "closing" ? [signatureLine, invitation] : []),
   ]);
 }
+// The shots a loaded clip card was cut from (Cartes 1.15.0): one for a clip,
+// several for a montage. Its stills are generated, so these, not the image
+// path, say a card shows footage.
+function clipShotsOf(card) {
+  return card.image?.clips ?? (card.image?.clip ? [card.image.clip] : []);
+}
+// A clip card's on-screen credit names its place and only the first shot of a
+// montage, so post.md credits each source video instead, once, with its full
+// address: the reader of post.md needs the locator the screen shortens.
+function clipCredits(shots) {
+  const bySource = new Map();
+  for (const { rights } of shots)
+    if (!bySource.has(rights.sourceUrl))
+      bySource.set(
+        rights.sourceUrl,
+        [`Images : ${rights.author}`, rights.licence, rights.sourceUrl]
+          .filter(Boolean)
+          .join(" · ")
+      );
+  return [...bySource.values()];
+}
 function seriesCredits(seq) {
   return [
     ...new Set(
-      seq.cards.flatMap((c) =>
-        [
+      seq.cards.flatMap((c) => {
+        const shots = clipShotsOf(c);
+        return [
           c.source && `${c.sourceLabel ?? "Source"} : ${c.source}`,
           c.map?.caption?.source && `Source : ${c.map.caption.source}`,
-          c.credit,
-        ].filter(Boolean)
-      )
+          ...(shots.length ? clipCredits(shots) : [c.credit]),
+        ].filter(Boolean);
+      })
     ),
   ].join("\n\n");
 }
@@ -530,10 +552,10 @@ function videoDelivery(root, configFile, config, read) {
           fail(
             `Video footage has no research/rights record: ${shot.rights?.sourceUrl}`
           );
+    // A dossier image filed under clip/ is still a dossier image: only a card
+    // the loader cut from footage is exempt.
     const clipped = new Set(
-      seq.cards
-        .map((c) => c.image?.src)
-        .filter((src) => src?.startsWith("clip/"))
+      seq.cards.filter((c) => clipShotsOf(c).length).map((c) => c.image.src)
     );
     for (const src of new Set(seq.cards.map((c) => c.image?.src)))
       if (
