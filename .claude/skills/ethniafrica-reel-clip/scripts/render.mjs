@@ -55,6 +55,7 @@ function styles(layout, rect) {
 .box{position:absolute;left:50%;transform:translateX(-50%);bottom:${HEIGHT - rect.y + 36}px;
   width:max-content;max-width:900px;padding:18px 30px;background:#fff;color:#000;
   text-align:center;font:52px/64px Caption;text-transform:uppercase}
+.box.context{font:44px/56px Caption;text-transform:none}
 .title{position:absolute;left:60px;width:960px;top:1190px;transform:translateY(-50%);
   text-align:center;font:118px/1.05 Title;color:#fff;text-transform:uppercase;
   text-shadow:0 4px 18px rgba(0,0,0,.7)}
@@ -185,8 +186,8 @@ async function openPage(html) {
   };
   // Measures the element just drawn: a box's padding is not a line, and a
   // single word wider than the column overflows instead of wrapping.
-  const fitsTwoLines = () =>
-    tab.evaluate(() => {
+  const fitsLines = (maxLines = 2) =>
+    tab.evaluate((maxLines) => {
       const node = document.getElementById("layer").firstElementChild;
       const style = getComputedStyle(node);
       const text =
@@ -194,9 +195,9 @@ async function openPage(html) {
         parseFloat(style.paddingTop) -
         parseFloat(style.paddingBottom);
       const lines = Math.round(text / parseFloat(style.lineHeight));
-      return lines <= 2 && node.scrollWidth <= node.clientWidth + 1;
-    });
-  return { browser, draw, fitsTwoLines };
+      return lines <= maxLines && node.scrollWidth <= node.clientWidth + 1;
+    }, maxLines);
+  return { browser, draw, fitsLines };
 }
 
 function ffmpeg(args) {
@@ -248,7 +249,7 @@ export async function renderClip(planFile, outDir) {
   await mkdir(layers, { recursive: true });
 
   const overlayStretches = overlayTrack(overlays, duration);
-  const { browser, draw, fitsTwoLines } = await openPage(page(layout, rect));
+  const { browser, draw, fitsLines } = await openPage(page(layout, rect));
   try {
     await draw(
       `<div class="credit">${escape(plan.credit_line)}</div>${signature}`,
@@ -258,22 +259,27 @@ export async function renderClip(planFile, outDir) {
     const tooLong = [];
     for (const [i, p] of phrases.entries()) {
       await draw(captionHtml(p.text));
-      if (!(await fitsTwoLines())) tooLong.push(`phrase ${i + 1}: «${p.text}»`);
+      if (!(await fitsLines())) tooLong.push(`phrase ${i + 1}: «${p.text}»`);
       else await draw(captionHtml(p.text), join(layers, `caption-${i}.png`));
     }
     if (tooLong.length)
       throw new Error(`Captions over two lines:\n- ${tooLong.join("\n- ")}`);
-    // The published boxes never exceed two lines: a third one pushes the
-    // plate into the top of the frame, where feeds overlay their own UI.
+    // Labels never exceed two lines: a third one pushes the plate into the top
+    // of the frame, where feeds overlay their own UI. Context prose gets three
+    // smaller rows, which still stay below that margin.
     const tallBoxes = [];
     for (const [i, b] of boxes.entries()) {
-      const html = `<div class="box">${escape(b.text)}</div>`;
+      const context = b.style === "context";
+      const html = `<div class="box${context ? " context" : ""}">${escape(b.text)}</div>`;
       await draw(html);
-      if (!(await fitsTwoLines())) tallBoxes.push(`box ${i + 1}: «${b.text}»`);
+      if (!(await fitsLines(context ? 3 : 2)))
+        tallBoxes.push(`box ${i + 1}: «${b.text}»`);
       else await draw(html, join(layers, `box-${i}.png`));
     }
     if (tallBoxes.length)
-      throw new Error(`Boxes over two lines:\n- ${tallBoxes.join("\n- ")}`);
+      throw new Error(
+        `Boxes over two lines (three for context):\n- ${tallBoxes.join("\n- ")}`
+      );
     for (const [k, stretch] of overlayStretches.entries()) {
       if (!stretch.active.length) continue;
       const html = stretch.active
