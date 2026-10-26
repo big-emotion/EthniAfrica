@@ -687,6 +687,59 @@ test("each image a series video shows needs a research and rights record", (t) =
   );
 });
 
+// @req REQ-186
+test("a clip card's footage needs the research and rights record of its source video", (t) => {
+  const f = seriesPackageFixture(t);
+  const inputDir = join(f.root, "piece/series-input");
+  execFileSync("ffmpeg", [
+    ...["-v", "error", "-y", "-f", "lavfi"],
+    ...["-i", "testsrc2=size=1920x1080:rate=30:duration=30"],
+    ...[
+      "-c:v",
+      "libx264",
+      "-pix_fmt",
+      "yuv420p",
+      join(inputDir, "footage.mp4"),
+    ],
+  ]);
+  const cardsPath = join(f.root, f.cards);
+  const deck = JSON.parse(readFileSync(cardsPath, "utf8"));
+  const sourceUrl = "https://example.org/essai-video";
+  deck.cards.find((c) => c.id === "serie-afrique-tout-04").image = {
+    clip: {
+      src: "footage.mp4",
+      in: 0,
+      out: 22,
+      fx: 0.5,
+      audio: { mode: "off", speech: false },
+      place: "ESSAI",
+      rights: {
+        author: "Chaîne d'essai",
+        licence: "licence d'essai",
+        sourceUrl,
+      },
+    },
+  };
+  writeFileSync(cardsPath, JSON.stringify(deck));
+  f.writeManifest();
+  // The stills of a clip carry no record of their own: the source video must.
+  assert.throws(
+    () => createPackage(f.root, f.configPath, f.output, both),
+    /Video footage has no research\/rights record/
+  );
+  const p = join(f.root, f.config.research);
+  const research = JSON.parse(readFileSync(p, "utf8"));
+  research.images.push({
+    ...research.images[0],
+    file: "piece/series-input/footage.mp4",
+    sourcePage: sourceUrl,
+  });
+  writeFileSync(p, JSON.stringify(research));
+  assert.doesNotThrow(() =>
+    createPackage(f.root, f.configPath, f.output, both)
+  );
+});
+
 // The Lingala answer at its name address (REQ-200), and the search page's
 // reading of the same name that packages sent readers to before it.
 const LINGALA = "https://ethniafrica.com/fr/atlas/recherche/lingala";
