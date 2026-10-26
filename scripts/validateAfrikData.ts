@@ -4869,7 +4869,9 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   famille_linguistique: 104,
   // 13 -> 9 on 2026-09-29: `culture.mainLanguages` added on Mali, Senegal,
   // Burundi and the Republic of the Congo from an official toponymic factfile.
-  pays: 9,
+  // 9 -> 8 on 2026-10-26: `culture.mainLanguages` added on the DR Congo, its
+  // four constitutional national languages beside French.
+  pays: 8,
 };
 
 // Authoring blocks no model declares: `_meta` is curator metadata, exempt

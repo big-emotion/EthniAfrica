@@ -714,6 +714,29 @@
       }
     ],
     "culture": {
+      "mainLanguages": [
+        {
+          "name": "Français",
+          "isoCode": "fra",
+          "isPrimary": true
+        },
+        {
+          "name": "Kikongo (kikongo ya leta)",
+          "isoCode": "ktu"
+        },
+        {
+          "name": "Lingala",
+          "isoCode": "lin"
+        },
+        {
+          "name": "Swahili",
+          "isoCode": "swc"
+        },
+        {
+          "name": "Tshiluba",
+          "isoCode": "lua"
+        }
+      ],
       "culturalTraditions": "Les arts de cour luba et lunda se sont développés dans des contextes politiques et historiques propres aux savanes du sud de l'Afrique centrale. Un objet de prestige associé à l'autorité fournit un exemple documenté de l'art de cour chokwe. Inscrite par l'UNESCO en 2021, la rumba congolaise est une pratique urbaine partagée avec la République du Congo. Ces exemples situés ne résument pas les traditions de toutes les communautés de la RDC. Dans son rapport à la Commission africaine des droits de l'homme et des peuples couvrant 2003-2007, l'État déclare une population divisée en plus de 450 « tribus » ; ce décompte est celui de l'État, selon son propre critère, et ne se compare pas à ceux d'autres pays.",
       "dominantReligions": "Dans l'enquête démographique et de santé de 2013-2014, menée auprès de femmes et hommes de 15 à 49 ans, les affiliations chrétiennes prédominaient parmi les personnes interrogées, réparties entre plusieurs catégories catholiques, protestantes, kimbanguistes, salutistes et autres chrétiennes. Des réponses musulmanes, animistes, sans religion et autres étaient également recensées. Cet échantillon ne constitue pas un recensement religieux de toute la population.",
       "lifestyles": "Les moyens de subsistance agricoles et les conditions de sécurité alimentaire varient fortement selon les régions et sont affectés par les conflits, les déplacements, les marchés et les chocs climatiques. Le secteur extractif occupe une place majeure dans l'économie nationale, mais cet agrégat ne décrit pas à lui seul les moyens de subsistance des ménages.",
