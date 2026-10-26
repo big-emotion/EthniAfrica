@@ -589,6 +589,191 @@ test("an optional cover is the video's own declared frame", (t) => {
   );
 });
 
+// Instagram keeps the shared cut's length; Facebook's cut runs 19 s longer.
+function cutPerNetwork(t) {
+  const f = videoPackageFixture(t);
+  const cuts = {
+    instagram: f.cutFor("instagram"),
+    facebook: f.cutFor("facebook", { tail: 20 }),
+  };
+  return { f, cuts };
+}
+const postOf = (f, output = f.output) =>
+  readFileSync(join(f.root, output, "post.md"), "utf8");
+const section = (post, heading) =>
+  post.split(`## ${heading}\n\n`)[1].split("\n## ")[0];
+
+// @req REQ-186
+test("a video piece delivers each network's own cut as its own file, with its own media line, screen text and credits", (t) => {
+  const { f, cuts } = cutPerNetwork(t);
+  editJson(f, cuts.facebook.sequence, (seq) => {
+    seq.chapters[0].title = "Le nom du désert";
+  });
+  cuts.facebook.writeManifest();
+  const r = createPackage(f.root, f.configPath, f.output, both);
+  assert.deepEqual(
+    r.media.map((m) => [m.file, m.network]),
+    [
+      ["video-instagram.mp4", "instagram"],
+      ["video-facebook.mp4", "facebook"],
+    ]
+  );
+  for (const network of both)
+    assert.deepEqual(
+      readFileSync(join(f.root, f.output, `video-${network}.mp4`)),
+      readFileSync(join(f.root, cuts[network].final, "video.mp4")),
+      network
+    );
+  assert.equal(existsSync(join(f.root, f.output, "video.mp4")), false);
+  const post = postOf(f);
+  const order = section(post, "Media order");
+  assert.match(
+    order,
+    /\[video-instagram\.mp4\]\(video-instagram\.mp4\) : instagram, 32,7 s/
+  );
+  assert.match(
+    order,
+    /\[video-facebook\.mp4\]\(video-facebook\.mp4\) : facebook, 51,7 s/
+  );
+  const screen = section(post, "On-screen text");
+  const [instagram, facebook] = screen.split("### facebook");
+  assert.ok(instagram.startsWith("### instagram"));
+  assert.ok(facebook.includes("Le nom du désert"));
+  assert.ok(!instagram.includes("Le nom du désert"));
+  const credits = section(post, "Sources and credits").split("### facebook");
+  assert.ok(credits[0].startsWith("### instagram"));
+  for (const cut of credits)
+    assert.ok(cut.includes("Source : al-Idrīsī, 1154"), cut);
+  const copy = JSON.parse(
+    readFileSync(join(f.root, f.output, "public-copy.json"), "utf8")
+  );
+  assert.equal(copy.screen, undefined);
+  assert.ok(copy.networks[1].screen.includes("Le nom du désert"));
+  assert.ok(!copy.networks[0].screen.includes("Le nom du désert"));
+  assert.doesNotThrow(() => inspectPackage(f.root, f.output, both));
+  appendFileSync(join(f.root, f.output, "video-facebook.mp4"), "x");
+  assert.throws(() => inspectPackage(f.root, f.output, both), /changed/i);
+});
+
+// @req REQ-186
+test("each network's cut is held to its own manifest, sequence and account limits", (t) => {
+  for (const [mutate, pattern] of [
+    [
+      (f, cuts) =>
+        appendFileSync(join(f.root, cuts.facebook.final, "video.mp4"), "x"),
+      /video manifest does not match/,
+    ],
+    [
+      (f, cuts) =>
+        editJson(f, cuts.facebook.sequence, (seq) => {
+          seq.chapters[0].title = "Le nom du désert";
+        }),
+      /does not match the sequence/,
+    ],
+    [
+      (f, cuts) => cuts.facebook.writeManifest((m) => (m.frames -= 30)),
+      /frame/i,
+    ],
+    [(f, cuts) => cuts.facebook.writeManifest((m) => (m.demo = true)), /demo/i],
+    [
+      // Within Instagram's limit, the longer Facebook cut is over its own.
+      (f) => {
+        for (const n of f.config.networks) n.capability.maxDurationSeconds = 40;
+        f.save();
+      },
+      /duration exceeds/i,
+    ],
+  ]) {
+    const { f, cuts } = cutPerNetwork(t);
+    mutate(f, cuts);
+    assert.throws(
+      () => createPackage(f.root, f.configPath, f.output, both),
+      pattern
+    );
+  }
+  const { f } = cutPerNetwork(t);
+  f.config.networks[0].capability.maxDurationSeconds = 40;
+  f.save();
+  assert.doesNotThrow(() =>
+    createPackage(f.root, f.configPath, f.output, both)
+  );
+});
+
+// @req REQ-186
+test("a video package shares one cut or gives every network its own, never a mix", (t) => {
+  for (const [mutate, pattern] of [
+    [
+      (f) => {
+        f.cutFor("instagram");
+        f.config.sequence = f.sequence;
+        f.config.video = f.final;
+        f.save();
+      },
+      /every network/i,
+    ],
+    [(f) => f.cutFor("instagram"), /every network/i],
+    [
+      (f) => {
+        f.cutFor("instagram");
+        f.cutFor("facebook");
+        delete f.config.networks[1].sequence;
+        f.save();
+      },
+      /every network/i,
+    ],
+    [
+      (f) => {
+        f.cutFor("instagram");
+        f.cutFor("facebook");
+        f.config.cover = { frame: 30 };
+        f.save();
+      },
+      /cover/i,
+    ],
+  ]) {
+    const f = videoPackageFixture(t);
+    mutate(f);
+    assert.throws(
+      () => createPackage(f.root, f.configPath, f.output, both),
+      pattern
+    );
+  }
+});
+
+// @req REQ-186
+test("one composed thumbnail serves every network's cut, and alternative text names that network's file", (t) => {
+  const { f } = cutPerNetwork(t);
+  f.config.thumbnail = {
+    file: drawThumbnail(f, "piece/vignette.png"),
+    text: THUMBNAIL_TEXT,
+  };
+  const instagram = f.config.networks[0];
+  instagram.capability.altRoute = "native";
+  instagram.capability.altMax = 100;
+  instagram.alternativeText = [
+    {
+      file: "video.mp4",
+      text: "Une carte du Sahara montre trois bandes de terre.",
+    },
+  ];
+  f.save();
+  assert.throws(
+    () => createPackage(f.root, f.configPath, f.output, both),
+    /alternative text/i
+  );
+  instagram.alternativeText[0].file = "video-instagram.mp4";
+  f.save();
+  const r = createPackage(f.root, f.configPath, f.output, both);
+  assert.deepEqual(
+    r.media.map((m) => m.file),
+    ["video-instagram.mp4", "video-facebook.mp4", "thumbnail.png"]
+  );
+  const post = postOf(f);
+  assert.equal((post.match(/### Couverture/g) || []).length, 2);
+  assert.ok(post.includes(instagram.alternativeText[0].text));
+  assert.doesNotThrow(() => inspectPackage(f.root, f.output, both));
+});
+
 // @req REQ-186
 test("a final series video package delivers the video, the words its cards and subtitles print, and each network's copy", (t) => {
   const f = seriesPackageFixture(t);
@@ -821,6 +1006,50 @@ test("post.md credits every clip of a montage once per source", (t) => {
     "Images : Autre chaîne · CC BY 4.0 · https://example.net/autre-video",
   ])
     assert.equal(credits.split(credit).length - 1, 1, credit);
+});
+
+// @req REQ-186
+test("a series cut's footage needs its record, and only that network's credits name it", (t) => {
+  const f = seriesPackageFixture(t);
+  const { facebook } = f.cutPerNetwork();
+  execFileSync("ffmpeg", [
+    ...["-v", "error", "-y", "-f", "lavfi"],
+    ...["-i", "testsrc2=size=1920x1080:rate=30:duration=30"],
+    ...["-c:v", "libx264", "-pix_fmt", "yuv420p"],
+    join(f.root, facebook.input, "footage.mp4"),
+  ]);
+  editJson(f, facebook.cards, (deck) => {
+    deck.cards.find((c) => c.id === "serie-afrique-tout-04").image = {
+      clip: {
+        src: "footage.mp4",
+        in: 0,
+        out: 22,
+        fx: 0.5,
+        audio: { mode: "off", speech: false },
+        rights: CLIP_RIGHTS,
+      },
+    };
+  });
+  facebook.writeManifest();
+  assert.throws(
+    () => createPackage(f.root, f.configPath, f.output, both),
+    /facebook cut: Video footage has no research\/rights record/
+  );
+  editJson(f, f.config.research, (research) => {
+    research.images.push({
+      ...research.images[0],
+      file: `${facebook.input}/footage.mp4`,
+      sourcePage: CLIP_RIGHTS.sourceUrl,
+    });
+  });
+  createPackage(f.root, f.configPath, f.output, both);
+  const [instagram, facebookCredits] = postOf(f)
+    .split("## Sources and credits\n\n")[1]
+    .split("\n## ")[0]
+    .split("### facebook");
+  const credit = `Images : ${CLIP_RIGHTS.author}`;
+  assert.ok(facebookCredits.includes(credit));
+  assert.ok(!instagram.includes(credit));
 });
 
 // @req REQ-186
