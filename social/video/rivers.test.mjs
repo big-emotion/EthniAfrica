@@ -37,6 +37,24 @@ test("the Niger's path is its main stem, over 30° long", () => {
   assert.ok(length > 30, `${length.toFixed(1)}°`);
 });
 
+// The Congo is the Lualaba from Katanga, then the Congo past Kisangani:
+// one chain, its long arc crossing the equator twice.
+// @req REQ-186
+test("the Congo's path runs from the Lualaba's source to the Congo's mouth, over 25° long", () => {
+  const { points, name } = loadRiver("congo");
+  assert.equal(name, "Congo");
+  const length = points.reduce(
+    (n, p, i) =>
+      i ? n + Math.hypot(p[0] - points[i - 1][0], p[1] - points[i - 1][1]) : 0,
+    0
+  );
+  assert.ok(length > 25, `${length.toFixed(1)}°`);
+  assert.ok(
+    points.some(([, lat]) => lat > 0),
+    "north of the equator"
+  );
+});
+
 // @req REQ-186
 test("an unknown river is refused", () => {
   assert.throws(

@@ -300,6 +300,24 @@ const TGO_EXPECTED = {
     excludes: [YK_TOWN.accra, YK_TOWN.abidjan, [2.43, 6.37]], // Cotonou
   },
 };
+// Series 1, hors-série « Zaïre » (Cartes 1.15.0): the country the names
+// Congo, Zaïre and again Congo designate, in today's border.
+const COD_EXPECTED = {
+  "cod-rdc": {
+    kind: "certain",
+    category: "country",
+    box: { west: 12.1, east: 31.4, south: -13.5, north: 5.4 },
+    covers: [
+      [15.31, -4.33], // Kinshasa
+      [25.19, 0.52], // Kisangani
+      [27.48, -11.66], // Lubumbashi
+    ],
+    excludes: [
+      [15.28, -4.27], // Brazzaville
+      [13.23, -8.84], // Luanda
+    ],
+  },
+};
 const EXPECTED = {
   // Series 2, episode 1 (Cartes 1.5.0): one area per self-name, one per name.
   "touareg-imuhagh": {
@@ -468,6 +486,7 @@ const EXPECTED = {
   // country, and the two countries from Natural Earth.
   ...YK_EXPECTED,
   ...TGO_EXPECTED,
+  ...COD_EXPECTED,
 };
 
 const fileOf = (id) => new URL(`${id}.geojson`, OUTPUT_DIR);
@@ -712,6 +731,15 @@ test("the Togo area is Natural Earth's polygon, named Togo, in today's border", 
   assert.equal(p.name, "Togo");
   assert.match(p.citation, /feature TGO/);
   assert.match(p.derivation, /ADM0_A3 TGO/);
+  assert.match(p.date, /1960/);
+});
+
+// @req REQ-186
+test("the DR Congo area is Natural Earth's polygon, in today's border", () => {
+  const p = featureOf("cod-rdc").properties;
+  assert.equal(p.name, "République démocratique du Congo");
+  assert.match(p.citation, /feature COD/);
+  assert.match(p.derivation, /ADM0_A3 COD/);
   assert.match(p.date, /1960/);
 });
 
