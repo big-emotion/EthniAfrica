@@ -52,6 +52,15 @@ export const RIVERS = [
     source: [-0.98, 8.66],
     mouth: [0.67, 5.76],
   },
+  // Natural Earth names the upper course Lualaba, as the river is called
+  // upstream of Kisangani; the chain is the Congo from its source.
+  {
+    id: "congo",
+    name: "Congo",
+    match: ["Lualaba", "Congo"],
+    source: [26.25, -11.74],
+    mouth: [13.18, -5.86],
+  },
 ];
 
 // Two segment ends closer than this are one point: Natural Earth's river

@@ -1014,6 +1014,38 @@ function buildTogoAreas(countries) {
   ]);
 }
 
+// Series 1, hors-série « Zaïre » (Cartes 1.15.0): the country called
+// Congo, then Zaïre (1971–1997), then Congo again, in today's border. The
+// border is the same through the three names, which is what the map says.
+function buildCodAreas(countries) {
+  const cod = only(
+    countries.features,
+    (f) => f.properties.ADM0_A3 === "COD",
+    "Democratic Republic of the Congo"
+  );
+  const { geometry, properties } = countryArea(
+    {
+      name: "République démocratique du Congo",
+      category: "country",
+      date: "Since 30 June 1960 (independence); Zaïre from 1971 to 1997; present-day border",
+    },
+    cod,
+    null,
+    "Democratic Republic of the Congo"
+  );
+  return new Map([
+    [
+      "cod-rdc",
+      `${JSON.stringify({ type: "Feature", properties, geometry })}\n`,
+    ],
+  ]);
+}
+
+/** Only the DR Congo area, which needs Natural Earth's countries and nothing else. */
+export async function buildCodOnly(assets) {
+  return buildCodAreas(await readVerified(assets, "countries"));
+}
+
 /** Only the Togo area, which needs Natural Earth's countries and nothing else. */
 export async function buildTogoOnly(assets) {
   return buildTogoAreas(await readVerified(assets, "countries"));
@@ -1042,6 +1074,8 @@ export const AREA_IDS = [
   "yk-ghana",
   // Series 1, episode 20, Togo (Cartes 1.15.0).
   "tgo-togo",
+  // Series 1, hors-série « Zaïre » (Cartes 1.15.0).
+  "cod-rdc",
 ];
 
 const GLOTTOLOG_CITATION =
@@ -1394,6 +1428,7 @@ export async function buildAreas(assets) {
     ...(await buildEpisodeAreas(assets, sources.countries)),
     ...(await buildYkAreas(assets, sources.countries)),
     ...buildTogoAreas(sources.countries),
+    ...buildCodAreas(sources.countries),
   ]);
   for (const id of AREA_IDS) {
     if (built.has(id)) continue;
@@ -1415,10 +1450,13 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
       "Set ETHNIAFRICA_VIDEO_ASSETS to the verified assets folder"
     );
   await mkdir(OUTPUT_DIR, { recursive: true });
-  // `--togo` writes the Togo area alone, from Natural Earth's countries.
+  // `--togo` (or `--cod`) writes that one country's area alone, from
+  // Natural Earth's countries.
   const built = process.argv.includes("--togo")
     ? await buildTogoOnly(assets)
-    : await buildAreas(assets);
+    : process.argv.includes("--cod")
+      ? await buildCodOnly(assets)
+      : await buildAreas(assets);
   for (const [id, text] of built) {
     await writeFile(new URL(`${id}.geojson`, OUTPUT_DIR), text);
     const { geometry } = JSON.parse(text);
