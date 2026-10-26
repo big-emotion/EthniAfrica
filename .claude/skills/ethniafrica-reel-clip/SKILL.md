@@ -63,6 +63,10 @@ cannot be located or the file cannot be read.
    it, never infer it from a video title), then one per key argument, always
    attributed (« POUR ELLE, … », « SELON LUI, … »). Two lines at most; no
    overlap.
+   For operator-approved narrative context, set `style: "context"` on the
+   box: up to 140 characters, three lines in sentence case at 44/56 px.
+   Give each sentence enough reading time and end the boxes at the agreed
+   point; they do not have to run throughout the excerpt.
 5. **On-screen text** (tall source, or any burned-in text in the author's
    language): look at a contact sheet,
    ```sh

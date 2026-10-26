@@ -312,6 +312,43 @@ test("refuses a box that would wrap past two lines", async () => {
 });
 
 // @req REQ-186
+test("a context box prints three lines of prose and leaves at its end time", async () => {
+  const dir = mkdtempSync(join(tmpdir(), "clip-context-"));
+  try {
+    const planFile = join(dir, "plan.json");
+    writeFileSync(
+      planFile,
+      JSON.stringify({
+        source: wideSource(dir),
+        clips: [[0, 4]],
+        credit_line: "Crédit",
+        phrases: [{ start: 0, end: 1, text: "Bonjour." }],
+        boxes: [
+          {
+            start: 0,
+            end: 2,
+            style: "context",
+            text: "« C’est le fonds qui manque le moins » est un vers du Laboureur et ses Enfants, de Jean de La Fontaine.",
+          },
+        ],
+      })
+    );
+    const file = join(dir, "out", "reel.mp4");
+    await renderClip(planFile, join(dir, "out"));
+    assert.ok(
+      pixel(file, 0.5, 540, 285).every((c) => c > 235),
+      "box shown"
+    );
+    assert.ok(
+      pixel(file, 3.5, 540, 285).every((c) => c < 200),
+      "box gone"
+    );
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
+});
+
+// @req REQ-186
 test("refuses a caption that would wrap past two lines", async () => {
   const dir = mkdtempSync(join(tmpdir(), "translated-clip-"));
   try {
