@@ -2678,12 +2678,21 @@ function parchmentReport(parts, l) {
 // 1.15.0: the still of each clip card's frame, set and decoded before the
 // frame is drawn (drawFrame itself stays synchronous).
 window.setClipStills = (list) =>
-  Promise.all(list.map(async ({ id, n }) => {
+  Promise.all(list.map(async ({ id, shot, n, credit }) => {
     const parts = layers.find((p) => p.spec.id === id);
-    if (!parts || parts.clipStill === n) return;
-    parts.photo.src = resolveAsset("clip/" + id + "/" + String(n).padStart(4, "0") + ".jpg");
-    await parts.photo.decode();
-    parts.clipStill = n;
+    if (!parts) return;
+    const key = shot + "-" + n;
+    if (parts.clipStill !== key) {
+      parts.photo.src = resolveAsset("clip/" + id + "/" + shot + "-" + String(n).padStart(4, "0") + ".jpg");
+      await parts.photo.decode();
+      parts.clipStill = key;
+    }
+    // The credit follows the shot on screen: a cut changes place and author.
+    const line = parts.layer.querySelector(".vf-cred");
+    if (line && parts.clipCredit !== credit) {
+      line.textContent = credit;
+      parts.clipCredit = credit;
+    }
   }));
 window.drawFrame = (state) => {
   const frame = document.getElementById("frame");

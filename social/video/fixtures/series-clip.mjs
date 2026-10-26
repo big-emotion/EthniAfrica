@@ -14,23 +14,28 @@ export const RIGHTS = {
 };
 
 // `clip` overrides the clip's fields; `change(deck)` edits the cards after.
-export function clipDemo(dir, { clip = {}, change = () => {} } = {}) {
+export function clipDemo(
+  dir,
+  { clip = {}, clips = null, change = () => {} } = {}
+) {
   return seriesDemo(dir, {
     edit: (input) => {
       const deck = JSON.parse(readFileSync(CARDS, "utf8"));
       const card = deck.cards.find((c) => c.id === CLIP_CARD);
-      card.image = {
-        clip: {
-          src: "source.mp4",
-          in: 0,
-          out: 8,
-          fx: 0.5,
-          audio: { mode: "off", speech: false },
-          place: "ESSAI, TOGO",
-          rights: RIGHTS,
-          ...clip,
-        },
-      };
+      card.image = clips
+        ? { clips }
+        : {
+            clip: {
+              src: "source.mp4",
+              in: 0,
+              out: 8,
+              fx: 0.5,
+              audio: { mode: "off", speech: false },
+              place: "ESSAI, TOGO",
+              rights: RIGHTS,
+              ...clip,
+            },
+          };
       change(deck);
       writeFileSync(join(dir, "cards.json"), JSON.stringify(deck));
       input.cards = "cards.json";

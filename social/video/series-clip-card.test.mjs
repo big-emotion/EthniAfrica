@@ -11,8 +11,9 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import sharp from "sharp";
 import { loadSeriesVideo, seriesFrameState } from "./series.mjs";
+import { wordOf } from "./series-sequence.mjs";
 import { renderSeriesFrames } from "./series-render.mjs";
-import { clipDemo, CLIP_CARD } from "./fixtures/series-clip.mjs";
+import { clipDemo, CLIP_CARD, RIGHTS } from "./fixtures/series-clip.mjs";
 
 const root = mkdtempSync(join(tmpdir(), "series-clip-card-"));
 // @req REQ-186
@@ -54,7 +55,7 @@ test("a clip card is loaded with its stills and its length in frames", () => {
   const seq = build();
   const card = seq.cards[indexOfClip(seq)];
   assert.equal(card.image.clip.count, 240);
-  assert.equal(card.image.src, `clip/${CLIP_CARD}/0001.jpg`);
+  assert.equal(card.image.src, `clip/${CLIP_CARD}/0-0001.jpg`);
   assert.deepEqual([card.image.w, card.image.h], [1080, 1920]);
   assert.equal(card.image.calm, false);
 });
@@ -127,4 +128,82 @@ test("the card's credit is the clip's own place and rights, never the old photo'
     /Images : Chaîne d'essai · licence d'essai · example\.org/
   );
   assert.doesNotMatch(credit, /Bobo-Dioulasso/);
+});
+
+// A montage: two shots of the card, the second entering on a word of the voice.
+const SHOT = (over) => ({
+  src: "source.mp4",
+  in: 0,
+  out: 3,
+  fx: 0.5,
+  audio: { mode: "off", speech: false },
+  place: "LOMÉ, GRAND MARCHÉ",
+  rights: RIGHTS,
+  ...over,
+});
+const montage = (extra = []) => [
+  SHOT({ place: "LOMÉ, GRAND MARCHÉ" }),
+  SHOT({ in: 4, out: 9, place: "KPALIMÉ, COLLINES", say: "Burkina" }),
+  ...extra,
+];
+const stateOf = (seq, frame) =>
+  seriesFrameState(seq, frame).layers.find((l) => l.card === indexOfClip(seq));
+
+test("a montage cuts to its next shot on the word that says it", () => {
+  const seq = build({ clips: montage() });
+  const i = indexOfClip(seq);
+  const start = seq.cardStarts[i];
+  const cut = wordOf(seq, i, "Burkina").frame;
+  assert.equal(cut - start, 77);
+  const before = stateOf(seq, cut - 1);
+  assert.deepEqual([before.clipShot, before.clipFrame], [0, 76]);
+  const after = stateOf(seq, cut);
+  assert.deepEqual([after.clipShot, after.clipFrame], [1, 0]);
+  assert.equal(stateOf(seq, cut + 50).clipFrame, 50);
+});
+
+test("a shot without a word follows the footage of the one before", () => {
+  const seq = build({
+    clips: [SHOT({ out: 3 }), SHOT({ in: 4, out: 9, place: "KPALIMÉ" })],
+  });
+  const i = indexOfClip(seq);
+  const start = seq.cardStarts[i];
+  assert.equal(stateOf(seq, start + 89).clipShot, 0);
+  assert.equal(stateOf(seq, start + 90).clipShot, 1);
+});
+
+test("a montage refuses a last shot under 2.5 s and a fourth shot", () => {
+  const three = [
+    SHOT(),
+    SHOT({ in: 4, out: 8, say: "Burkina", place: "KPALIMÉ" }),
+    SHOT({ in: 9, out: 12, say: "Faso", place: "KARA" }),
+  ];
+  assert.throws(() => build({ clips: three }), /dernier plan.*2,5 s/);
+  const four = [...three, SHOT({ in: 0, out: 3, place: "ANÉHO" })];
+  assert.throws(() => build({ clips: four }), /3 plans/);
+});
+
+test("a shot under two seconds on screen is refused", () => {
+  const quick = [
+    SHOT({ out: 3 }),
+    SHOT({ in: 4, out: 9, say: "mots", place: "KPALIMÉ" }),
+  ];
+  assert.throws(() => build({ clips: quick }), /moins de 2 s à l'écran/);
+});
+
+test("a shot too short for its time on screen is refused", () => {
+  const short = [SHOT({ out: 2 }), SHOT({ in: 4, out: 9, say: "Burkina" })];
+  assert.throws(() => build({ clips: short }), /plus court que son temps/);
+});
+
+test("Chromium cuts between the shots and changes the credit with them", async () => {
+  const seq = build({ clips: montage() });
+  const i = indexOfClip(seq);
+  const cut = wordOf(seq, i, "Burkina").frame;
+  const [a, b] = await renderSeriesFrames(seq, [cut - 2, cut + 2]);
+  assert.match(a.text, /LOMÉ, GRAND MARCHÉ/);
+  assert.doesNotMatch(a.text, /KPALIMÉ/);
+  assert.match(b.text, /KPALIMÉ, COLLINES/);
+  assert.doesNotMatch(b.text, /LOMÉ, GRAND MARCHÉ/);
+  assert.notDeepEqual(a.png, b.png);
 });

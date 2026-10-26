@@ -73,10 +73,6 @@ export async function extractClipFrames({ src, in: from, out, fx = 0.5, dir }) {
   return { count, files };
 }
 
-// A clip card as the loader keeps it: the source checked against the spec's
-// rules, the stills' names and the 1080×1920 size the page expects, the
-// footage held at its own zoom and never blurred (the calm zones measure one
-// picture, not a moving one). The check's warnings stay on the clip.
 // The stills of one clip, extracted once and shared: the parallel render's
 // slices each open their own browser, and all of them ask for the same
 // frames. The folder is named by what decides the pixels (the file, its cut
@@ -110,35 +106,55 @@ export async function ensureClipFrames(
   return { dir, count };
 }
 
-export function prepareClipCard(card, dir, { proof = false } = {}) {
-  const clip = card.image.clip;
-  const src = resolve(dir, clip.src);
-  const { errors, warnings } = checkClipPhase(
-    { kind: "clip", id: card.id, ...clip, src },
-    probeSource,
-    { proof }
-  );
-  if (errors.length) throw new Error(errors.join("\n"));
-  const count = Math.round(
-    (snapToFrame(clip.out) - snapToFrame(clip.in)) / FRAME_SECONDS
-  );
-  // The credit is the footage's own (spec §5: place, author, licence, source
-  // domain), so a card never keeps the credit of the photo it replaced.
+// The shots of a clip card: one for a clip, two or three for a montage.
+export const clipShots = (card) =>
+  card.image?.clips ?? (card.image?.clip ? [card.image.clip] : []);
+
+// The credit line of one shot (spec §5): its place, then author, licence and
+// source domain, so a card never keeps the credit of the photo it replaced.
+function creditOf(clip) {
   const host = clip.rights.sourceUrl
     ? new URL(clip.rights.sourceUrl).hostname.replace(/^www\./, "")
     : null;
-  card.credit = [
+  return [
     clip.place ? `● ${clip.place}` : null,
     `Images : ${clip.rights.author} · ${clip.rights.licence}${host ? ` · ${host}` : ""}`,
   ]
     .filter(Boolean)
     .join(" — ");
+}
+
+// A clip card as the loader keeps it: its footage checked against the spec's
+// rules, the stills' names and the 1080×1920 size the page expects, the
+// footage held at its own zoom and never blurred (the calm zones measure one
+// picture, not a moving one). The check's warnings stay on the first shot; the
+// cuts between shots are placed later, once the voice's words are timed.
+export function prepareClipCard(card, dir, { proof = false } = {}) {
+  const montage = Array.isArray(card.image.clips);
+  const resolved = (card.image.clips ?? [card.image.clip]).map((clip) => ({
+    ...clip,
+    src: resolve(dir, clip.src),
+  }));
+  const phase = montage
+    ? { kind: "montage", id: card.id, clips: resolved }
+    : { kind: "clip", id: card.id, ...resolved[0] };
+  const { errors, warnings } = checkClipPhase(phase, probeSource, { proof });
+  if (errors.length) throw new Error(errors.join("\n"));
+  const shots = resolved.map((clip, k) => ({
+    ...clip,
+    count: Math.round(
+      (snapToFrame(clip.out) - snapToFrame(clip.in)) / FRAME_SECONDS
+    ),
+    credit: creditOf(clip),
+    warnings: k ? [] : warnings,
+  }));
+  card.credit = shots[0].credit;
   card.image = {
-    src: `clip/${card.id}/0001.jpg`,
+    src: `clip/${card.id}/0-0001.jpg`,
     w: WIDTH,
     h: HEIGHT,
     focus: [0.5, 0.5],
     calm: false,
-    clip: { ...clip, src, count, warnings },
+    ...(montage ? { clips: shots } : { clip: shots[0] }),
   };
 }

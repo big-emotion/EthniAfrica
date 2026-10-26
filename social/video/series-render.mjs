@@ -30,7 +30,7 @@ import {
   MAX_TEXTURE,
 } from "./render.mjs";
 import { DOWNLOADS, readVerified } from "./areas.mjs";
-import { ensureClipFrames } from "./series-clip-frames.mjs";
+import { ensureClipFrames, clipShots } from "./series-clip-frames.mjs";
 import {
   MAP_FRAME,
   MAP_IMAGERY,
@@ -99,7 +99,7 @@ async function routesFor(seq) {
   const cards = [];
   for (const card of seq.cards) {
     const spec = structuredClone(card);
-    if (spec.image && !spec.image.clip)
+    if (spec.image && !spec.image.clip && !spec.image.clips)
       await add(`/assets/${spec.image.src}`, `assets/${spec.image.src}`);
     if (spec.map?.dataRef)
       spec.map.data = JSON.parse(
@@ -342,11 +342,16 @@ export async function openSeriesRenderer(
     await readFile(new URL("../renderer/runtime.json", import.meta.url))
   );
   const { routes, tokens, cards } = await routesFor(seq);
-  // 1.15.0: the stills of every clip card, served to the page by card.
+  // 1.15.0: the stills of every shot of every clip card, served to the page
+  // by card and shot.
   const clipDirs = new Map();
   for (const card of seq.cards)
-    if (card.image?.clip)
-      clipDirs.set(card.id, (await ensureClipFrames(card.image.clip)).dir);
+    clipDirs.set(
+      card.id,
+      await Promise.all(
+        clipShots(card).map(async (shot) => (await ensureClipFrames(shot)).dir)
+      )
+    );
   const maps = await prepareMaps(seq, cards, routes, assets);
   // A map card's WebGL runs on SwiftShader, as in the satellite video,
   // unless the GPU was asked for.
@@ -382,9 +387,10 @@ export async function openSeriesRenderer(
         });
       }
       if (url.pathname.startsWith("/clip/")) {
-        const [, , id, name] = url.pathname.split("/");
-        const dir = clipDirs.get(decodeURIComponent(id));
-        if (!dir || !/^\d{4}\.jpg$/.test(name)) return route.abort();
+        const [, , id, file] = url.pathname.split("/");
+        const [, shot, name] = /^(\d)-(\d{4}\.jpg)$/.exec(file) ?? [];
+        const dir = clipDirs.get(decodeURIComponent(id))?.[shot];
+        if (!dir) return route.abort();
         return route.fulfill({
           contentType: "image/jpeg",
           body: await readFile(join(dir, name)),
@@ -438,7 +444,12 @@ export async function openSeriesRenderer(
       // frame is drawn.
       const stills = state.layers
         .filter((l) => l.clipFrame !== undefined)
-        .map((l) => ({ id: seq.cards[l.card].id, n: l.clipFrame + 1 }));
+        .map((l) => ({
+          id: seq.cards[l.card].id,
+          shot: l.clipShot,
+          n: l.clipFrame + 1,
+          credit: clipShots(seq.cards[l.card])[l.clipShot].credit,
+        }));
       if (stills.length)
         await page.evaluate((list) => window.setClipStills(list), stills);
       const drawn = await page.evaluate((s) => window.drawFrame(s), state);
