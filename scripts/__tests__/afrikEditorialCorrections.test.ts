@@ -207,6 +207,9 @@ describe("AFRIK editorial corrections from community review", () => {
 });
 
 interface TogoFiche {
+  content: {
+    historicalFacts: { independenceStruggle: string; postIndependence: string };
+  };
   summary: string;
   etymology: string;
   nameOriginActor: string;
@@ -239,6 +242,18 @@ describe("AFRIK Togo fiche, name history", () => {
 
     expect(etymology).not.toContain("officialisé par les colonisateurs");
     expect(nameOriginActor).not.toContain("officialisé par les colonisateurs");
+  });
+
+  // @req REQ-023
+  it("dates Olympio's presidency from 1961, not from independence", () => {
+    const { independenceStruggle, postIndependence } =
+      togo().content.historicalFacts;
+
+    expect(independenceStruggle).not.toContain("devient premier président");
+    expect(independenceStruggle).toContain("premier ministre");
+    expect(postIndependence).toContain(
+      "présidence de Sylvanus Olympio (1961-1963"
+    );
   });
 
   // @req REQ-023
