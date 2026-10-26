@@ -232,7 +232,7 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     checkFigureFields(card);
     const own = structuredClone(card);
     // 1.15.0: a card whose picture is an external clip.
-    if (own.image?.clip) prepareClipCard(own, dir);
+    if (own.image?.clip) prepareClipCard(own, dir, { proof: !!input.demo });
     // 1.13.0: the globe lands on the subject's base view; the opener's
     // kicker is the subject's formula.
     if (subject && own.type === "opener") {

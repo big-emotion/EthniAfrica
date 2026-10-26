@@ -45,7 +45,7 @@ const MIN_LAST_SHOT = 2.5;
 const MAX_SHOTS = 3;
 const onGrid = (t) => Math.abs(t - snapToFrame(t)) < 1e-6;
 
-function checkSource(id, clip, probe, errors) {
+function checkSource(id, clip, probe, { errors, warnings }, proof) {
   const info = probe(clip.src);
   if (!info) {
     errors.push(`Phase ${id}: Source introuvable : ${clip.src}`);
@@ -55,10 +55,17 @@ function checkSource(id, clip, probe, errors) {
     errors.push(
       `Phase ${id}: ${clip.src} : le codec doit être H.264 ou H.265 (reçu ${info.codec})`
     );
-  if (info.width < 1920 || info.height < 1080)
-    errors.push(
-      `Phase ${id}: ${clip.src} : la source doit faire au moins 1920×1080 (reçu ${info.width}×${info.height})`
-    );
+  if (info.width < 1920 || info.height < 1080) {
+    // The frame is 1920 px tall, so a 720p source is magnified by 1920 ÷ 720
+    // when it fills it. A proof may show that; a final video may not.
+    const magnification = (1920 / info.height).toFixed(1).replace(".", ",");
+    const found = `${clip.src} : la source doit faire au moins 1920×1080 (reçu ${info.width}×${info.height})`;
+    if (proof)
+      warnings.push(
+        `Phase ${id}: ${found} ; agrandie ${magnification} fois pour remplir l'image, acceptable pour une preuve, refusée dans un export final`
+      );
+    else errors.push(`Phase ${id}: ${found}`);
+  }
   if (!(clip.in >= 0 && clip.in < clip.out))
     errors.push(
       `Phase ${id}: ${clip.src} : in et out doivent respecter 0 ≤ in < out`
@@ -94,7 +101,7 @@ function checkClipFields(id, clip, errors, warnings) {
     );
 }
 
-export function checkClipPhase(phase, probe) {
+export function checkClipPhase(phase, probe, { proof = false } = {}) {
   const errors = [];
   const warnings = [];
   const id = phase.id;
@@ -112,7 +119,7 @@ export function checkClipPhase(phase, probe) {
     );
 
   for (const clip of clips) {
-    checkSource(id, clip, probe, errors);
+    checkSource(id, clip, probe, { errors, warnings }, proof);
     checkClipFields(id, clip, errors, warnings);
     for (const t of [clip.in, clip.out])
       if (!onGrid(t))

@@ -110,12 +110,13 @@ export async function ensureClipFrames(
   return { dir, count };
 }
 
-export function prepareClipCard(card, dir) {
+export function prepareClipCard(card, dir, { proof = false } = {}) {
   const clip = card.image.clip;
   const src = resolve(dir, clip.src);
   const { errors, warnings } = checkClipPhase(
     { kind: "clip", id: card.id, ...clip, src },
-    probeSource
+    probeSource,
+    { proof }
   );
   if (errors.length) throw new Error(errors.join("\n"));
   const count = Math.round(

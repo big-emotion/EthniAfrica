@@ -222,3 +222,21 @@ test("a focal point outside the source is refused and a speech clip falls back t
   assert.deepEqual(speech.errors, []);
   assert.match(speech.warnings.join(), /transcri/);
 });
+
+test("a 720p source is refused in a final video and only reported in a proof", () => {
+  const small = probeOf({
+    "media/s.mp4": { ...HD_SOURCE, width: 1280, height: 720 },
+  });
+  const phase = {
+    kind: "clip",
+    id: "p",
+    minHold: 6,
+    ...clip({ src: "media/s.mp4" }),
+  };
+  const final = checkClipPhase(phase, small);
+  assert.match(final.errors.join(), /1920×1080/);
+  const proof = checkClipPhase(phase, small, { proof: true });
+  assert.deepEqual(proof.errors, []);
+  assert.match(proof.warnings.join(), /agrandie 2,7 fois/);
+  assert.match(proof.warnings.join(), /preuve/);
+});

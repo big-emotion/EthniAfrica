@@ -29,11 +29,23 @@ execFileSync(
   { stdio: "inherit" }
 );
 
+const SMALL = join(root, "small.mp4");
+execFileSync(
+  "ffmpeg",
+  [
+    ...["-v", "error", "-y", "-f", "lavfi"],
+    ...["-i", "testsrc2=size=1280x720:rate=30:duration=12"],
+    ...["-c:v", "libx264", "-pix_fmt", "yuv420p", SMALL],
+  ],
+  { stdio: "inherit" }
+);
+
 let runs = 0;
 const build = (options) => {
   const dir = join(root, `run-${runs++}`);
   execFileSync("mkdir", [dir]);
   execFileSync("cp", [SOURCE, join(dir, "source.mp4")]);
+  execFileSync("cp", [SMALL, join(dir, "small.mp4")]);
   return loadSeriesVideo(clipDemo(dir, options), { dir });
 };
 const indexOfClip = (seq) => seq.cards.findIndex((c) => c.id === CLIP_CARD);
@@ -99,4 +111,9 @@ test("Chromium draws a different still on each frame of the clip", async () => {
     differing > 10000,
     `the two frames hold the same picture (${differing} pixels differ)`
   );
+});
+
+test("a 720p source loads in a demonstration, with the upscale reported", () => {
+  const seq = build({ clip: { src: "small.mp4" } });
+  assert.match(seq.warnings.join("\n"), /1280×720.*agrandie 2,7 fois/);
 });
