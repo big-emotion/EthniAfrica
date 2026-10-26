@@ -987,6 +987,38 @@ async function buildYkAreas(assets, countries) {
   return built;
 }
 
+// Series 1, episode 20, Togo (Cartes 1.15.0): the country the name now
+// designates, as Natural Earth draws it today. The border of the German and
+// French colonies is not drawn: the episode's research gives no geometry for it.
+function buildTogoAreas(countries) {
+  const togo = only(
+    countries.features,
+    (f) => f.properties.ADM0_A3 === "TGO",
+    "Togo"
+  );
+  const { geometry, properties } = countryArea(
+    {
+      name: "Togo",
+      category: "country",
+      date: "Since 27 April 1960 (independence); present-day border",
+    },
+    togo,
+    null,
+    "Togo"
+  );
+  return new Map([
+    [
+      "tgo-togo",
+      `${JSON.stringify({ type: "Feature", properties, geometry })}\n`,
+    ],
+  ]);
+}
+
+/** Only the Togo area, which needs Natural Earth's countries and nothing else. */
+export async function buildTogoOnly(assets) {
+  return buildTogoAreas(await readVerified(assets, "countries"));
+}
+
 export const AREA_IDS = [
   "sahara",
   "desert",
@@ -1008,6 +1040,8 @@ export const AREA_IDS = [
   ...Object.keys(YK_AREAS),
   "yk-cote-divoire",
   "yk-ghana",
+  // Series 1, episode 20, Togo (Cartes 1.15.0).
+  "tgo-togo",
 ];
 
 const GLOTTOLOG_CITATION =
@@ -1359,6 +1393,7 @@ export async function buildAreas(assets) {
   const built = new Map([
     ...(await buildEpisodeAreas(assets, sources.countries)),
     ...(await buildYkAreas(assets, sources.countries)),
+    ...buildTogoAreas(sources.countries),
   ]);
   for (const id of AREA_IDS) {
     if (built.has(id)) continue;
@@ -1380,7 +1415,11 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
       "Set ETHNIAFRICA_VIDEO_ASSETS to the verified assets folder"
     );
   await mkdir(OUTPUT_DIR, { recursive: true });
-  for (const [id, text] of await buildAreas(assets)) {
+  // `--togo` writes the Togo area alone, from Natural Earth's countries.
+  const built = process.argv.includes("--togo")
+    ? await buildTogoOnly(assets)
+    : await buildAreas(assets);
+  for (const [id, text] of built) {
     await writeFile(new URL(`${id}.geojson`, OUTPUT_DIR), text);
     const { geometry } = JSON.parse(text);
     const rings =

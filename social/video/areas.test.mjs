@@ -283,6 +283,23 @@ const YK_EXPECTED = {
 // Each area: its label category, a generous box it must stay inside, places
 // it must cover and places it must leave out. The boxes catch a leak (an
 // area spilling into Arabia or the ocean); the places catch a wrong rule.
+// Series 1, episode 20, Togo (Cartes 1.15.0): the country the name now
+// designates, in today's border.
+const TGO_BOX = { west: -0.2, east: 1.9, south: 5.8, north: 11.2 };
+const TGO_EXPECTED = {
+  "tgo-togo": {
+    kind: "certain",
+    category: "country",
+    box: TGO_BOX,
+    covers: [
+      YK_TOWN.lome,
+      [1.48, 6.23], // Togoville, on the lake
+      [1.13, 8.98], // Sokodé
+      [0.2, 10.87], // Dapaong
+    ],
+    excludes: [YK_TOWN.accra, YK_TOWN.abidjan, [2.43, 6.37]], // Cotonou
+  },
+};
 const EXPECTED = {
   // Series 2, episode 1 (Cartes 1.5.0): one area per self-name, one per name.
   "touareg-imuhagh": {
@@ -450,6 +467,7 @@ const EXPECTED = {
   // approximate areas from the episode's pinned research, kept inside their
   // country, and the two countries from Natural Earth.
   ...YK_EXPECTED,
+  ...TGO_EXPECTED,
 };
 
 const fileOf = (id) => new URL(`${id}.geojson`, OUTPUT_DIR);
@@ -687,6 +705,15 @@ const YK_NAMES = {
   "yk-ghana": "Ghana",
 };
 const featureOf = (id) => JSON.parse(readFileSync(fileOf(id), "utf8"));
+
+// @req REQ-186
+test("the Togo area is Natural Earth's polygon, named Togo, in today's border", () => {
+  const p = featureOf("tgo-togo").properties;
+  assert.equal(p.name, "Togo");
+  assert.match(p.citation, /feature TGO/);
+  assert.match(p.derivation, /ADM0_A3 TGO/);
+  assert.match(p.date, /1960/);
+});
 
 // @req REQ-186
 test("the « Kouassi et Yao » areas carry their names, and the Ghana side its licence caveat", () => {
