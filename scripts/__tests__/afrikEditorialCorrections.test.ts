@@ -205,3 +205,63 @@ describe("AFRIK editorial corrections from community review", () => {
     expect(demographicCsv).not.toContain("PPL_DIDA,Dida,FLG_NIGERCONGO");
   });
 });
+
+interface TogoFiche {
+  content: {
+    historicalFacts: { independenceStruggle: string; postIndependence: string };
+  };
+  summary: string;
+  etymology: string;
+  nameOriginActor: string;
+  nameHistory: {
+    names: Array<{ accounts: Array<{ statement: string }> }>;
+  };
+}
+
+// The Togo episode (pays-20, 26 October 2026) compared the fiche with its
+// sources: the name first designated a lakeside locality, its first meaning
+// stays disputed, and no source names who coined it.
+describe("AFRIK Togo fiche, name history", () => {
+  const togo = () => readJson<TogoFiche>("dataset/source/afrik/pays/TGO.json");
+
+  // @req REQ-023
+  it("does not give the name one settled meaning or one namer", () => {
+    const { summary, etymology, nameOriginActor } = togo();
+
+    expect(summary).not.toContain("au-delà de l'eau");
+    expect(summary).toContain("1884");
+    expect(etymology).toContain("plusieurs lectures");
+    expect(etymology).not.toContain("viendrait de");
+    expect(nameOriginActor).not.toContain("nommé par les peuples locaux");
+    expect(nameOriginActor).toContain("ne donnent pas le nom");
+  });
+
+  // @req REQ-023
+  it("keeps the German adoption after the locality, not before it", () => {
+    const { etymology, nameOriginActor } = togo();
+
+    expect(etymology).not.toContain("officialisé par les colonisateurs");
+    expect(nameOriginActor).not.toContain("officialisé par les colonisateurs");
+  });
+
+  // @req REQ-023
+  it("dates Olympio's presidency from 1961, not from independence", () => {
+    const { independenceStruggle, postIndependence } =
+      togo().content.historicalFacts;
+
+    expect(independenceStruggle).not.toContain("devient premier président");
+    expect(independenceStruggle).toContain("premier ministre");
+    expect(postIndependence).toContain(
+      "présidence de Sylvanus Olympio (1961-1963"
+    );
+  });
+
+  // @req REQ-023
+  it("gives Olympio's office on independence day, prime minister", () => {
+    const statement = togo().nameHistory.names[0].accounts[0].statement;
+
+    expect(statement).toContain("Sylvanus Olympio");
+    expect(statement).toContain("premier ministre");
+    expect(statement).not.toContain("premier président");
+  });
+});
