@@ -117,3 +117,14 @@ test("a 720p source loads in a demonstration, with the upscale reported", () => 
   const seq = build({ clip: { src: "small.mp4" } });
   assert.match(seq.warnings.join("\n"), /1280×720.*agrandie 2,7 fois/);
 });
+
+test("the card's credit is the clip's own place and rights, never the old photo's", () => {
+  const seq = build();
+  const { credit } = seq.cards[indexOfClip(seq)];
+  assert.match(credit, /ESSAI, TOGO/);
+  assert.match(
+    credit,
+    /Images : Chaîne d'essai · licence d'essai · example\.org/
+  );
+  assert.doesNotMatch(credit, /Bobo-Dioulasso/);
+});

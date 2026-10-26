@@ -122,6 +122,17 @@ export function prepareClipCard(card, dir, { proof = false } = {}) {
   const count = Math.round(
     (snapToFrame(clip.out) - snapToFrame(clip.in)) / FRAME_SECONDS
   );
+  // The credit is the footage's own (spec §5: place, author, licence, source
+  // domain), so a card never keeps the credit of the photo it replaced.
+  const host = clip.rights.sourceUrl
+    ? new URL(clip.rights.sourceUrl).hostname.replace(/^www\./, "")
+    : null;
+  card.credit = [
+    clip.place ? `● ${clip.place}` : null,
+    `Images : ${clip.rights.author} · ${clip.rights.licence}${host ? ` · ${host}` : ""}`,
+  ]
+    .filter(Boolean)
+    .join(" — ");
   card.image = {
     src: `clip/${card.id}/0001.jpg`,
     w: WIDTH,
