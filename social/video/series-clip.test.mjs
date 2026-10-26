@@ -260,3 +260,20 @@ test("blur mode asks for 1080 px of width, so a 720p source is clean", () => {
   const refused = checkClipPhase({ ...phase, src: "media/t.mp4" }, tiny);
   assert.match(refused.errors.join(), /1080 px de large/);
 });
+
+test("trim is a share of the height, never most of the picture", () => {
+  const phase = (trim) => ({
+    kind: "clip",
+    id: "p",
+    minHold: 6,
+    ...clip({ mode: "blur", trim }),
+  });
+  assert.deepEqual(check(phase({ top: 0.14 })).errors, []);
+  assert.deepEqual(check(phase({ top: 0.1, bottom: 0.2 })).errors, []);
+  assert.match(check(phase({ top: -0.1 })).errors.join(), /rognage/);
+  assert.match(
+    check(phase({ top: 0.4, bottom: 0.4 })).errors.join(),
+    /rognage/
+  );
+  assert.match(check(phase({ left: 0.1 })).errors.join(), /rognage/);
+});

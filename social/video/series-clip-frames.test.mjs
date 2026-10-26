@@ -182,3 +182,40 @@ test("the mode is part of what a shared extraction is keyed on", async () => {
   const b = await ensureClipFrames({ ...base, mode: "blur" }, cache);
   assert.notEqual(a.dir, b.dir);
 });
+
+test("trim cuts a share of the shot's height before it is framed, so a corner logo goes", async () => {
+  const whole = await extractClipFrames({
+    src: SMALL,
+    in: 0.5,
+    out: 1.5,
+    mode: "blur",
+    dir: join(root, "trim-0"),
+  });
+  const trimmed = await extractClipFrames({
+    src: SMALL,
+    in: 0.5,
+    out: 1.5,
+    mode: "blur",
+    trim: { top: 0.5 },
+    dir: join(root, "trim-top"),
+  });
+  // Untrimmed, the picture is 608 px tall across the middle (rows 656 to 1264);
+  // half trimmed it is 304 px (rows 808 to 1112), so rows 700 to 800 are the
+  // blurred copy instead of the sharp picture.
+  const sharp0 = await energy(whole.files[10], 700, 100);
+  const blurred = await energy(trimmed.files[10], 700, 100);
+  assert.ok(
+    sharp0 > blurred * 3,
+    `untrimmed ${sharp0} against trimmed ${blurred}`
+  );
+  const kept = await energy(trimmed.files[10], 880, 100);
+  assert.ok(kept > blurred * 3, "the trimmed picture itself stays sharp");
+});
+
+test("the trim is part of what a shared extraction is keyed on", async () => {
+  const cache = join(root, "cache-trim");
+  const base = { src: SMALL, in: 0.5, out: 1.5, mode: "blur" };
+  const a = await ensureClipFrames(base, cache);
+  const b = await ensureClipFrames({ ...base, trim: { top: 0.14 } }, cache);
+  assert.notEqual(a.dir, b.dir);
+});

@@ -83,6 +83,22 @@ function checkSource(id, clip, probe, { errors, warnings }, proof) {
 }
 
 function checkClipFields(id, clip, errors, warnings) {
+  // The trim is a share of the shot's height, cut before framing; a side is
+  // never cut, and most of the picture is never thrown away.
+  const trim = clip.trim;
+  if (trim !== undefined) {
+    const sides = Object.keys(trim);
+    const top = trim.top ?? 0;
+    const bottom = trim.bottom ?? 0;
+    if (
+      sides.some((k) => !["top", "bottom"].includes(k)) ||
+      ![top, bottom].every((n) => Number.isFinite(n) && n >= 0) ||
+      top + bottom > 0.5
+    )
+      errors.push(
+        `Phase ${id}: ${clip.src} : le rognage est une part de la hauteur, en haut et en bas seulement, au plus la moitié en tout`
+      );
+  }
   const rights = clip.rights ?? {};
   if (!rights.author)
     errors.push(

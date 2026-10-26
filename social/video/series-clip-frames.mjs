@@ -54,6 +54,7 @@ export async function extractClipFrames({
   out,
   fx = 0.5,
   mode = "fill",
+  trim = {},
   dir,
 }) {
   if (existsSync(dir))
@@ -71,7 +72,9 @@ export async function extractClipFrames({
       ? [
           "fps=30,split=2[a][b]",
           `[a]scale=${WIDTH}:${HEIGHT}:force_original_aspect_ratio=increase,crop=${WIDTH}:${HEIGHT},boxblur=40:2,eq=brightness=-0.12[bg]`,
-          `[b]scale=${WIDTH}:-2:flags=lanczos[fg]`,
+          // A share of the shot's height is cut first, so a logo in a corner of
+          // the source does not reach the frame.
+          `[b]crop=iw:ih*${1 - (trim.top ?? 0) - (trim.bottom ?? 0)}:0:ih*${trim.top ?? 0},scale=${WIDTH}:-2:flags=lanczos[fg]`,
           "[bg][fg]overlay=(W-w)/2:(H-h)/2",
         ].join(";")
       : `fps=30,scale=-2:${HEIGHT}:flags=lanczos,crop=${WIDTH}:${HEIGHT}:x='min(max(iw*${fx}-${WIDTH / 2},0),iw-${WIDTH})':y=0`;
@@ -98,12 +101,12 @@ export async function extractClipFrames({
 // and its focal point) and appears whole by a rename, so a slice that comes
 // second finds a finished folder or loses the race harmlessly.
 export async function ensureClipFrames(
-  { src, in: from, out, fx = 0.5, mode = "fill" },
+  { src, in: from, out, fx = 0.5, mode = "fill", trim = {} },
   root = join(tmpdir(), "ethnia-clip-frames")
 ) {
   const { size, mtimeMs } = statSync(src);
   const key = createHash("sha256")
-    .update(JSON.stringify([src, size, mtimeMs, from, out, fx, mode]))
+    .update(JSON.stringify([src, size, mtimeMs, from, out, fx, mode, trim]))
     .digest("hex")
     .slice(0, 16);
   const dir = join(root, key);
@@ -114,7 +117,7 @@ export async function ensureClipFrames(
   await mkdir(root, { recursive: true });
   const part = `${dir}.part-${process.pid}-${Math.random().toString(36).slice(2)}`;
   try {
-    await extractClipFrames({ src, in: from, out, fx, mode, dir: part });
+    await extractClipFrames({ src, in: from, out, fx, mode, trim, dir: part });
     writeFileSync(join(part, "done"), "");
     await rename(part, dir);
   } catch (error) {
