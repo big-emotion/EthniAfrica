@@ -547,7 +547,8 @@ function buildParts(spec, view) {
     close.append(line);
     const invitation = el("div", "vf-sent oi");
     invitation.setAttribute("lang", "fr");
-    EthniCards.invitationLines.forEach((t) => invitation.append(el("span", "", esc(t))));
+    // The sequence's own lines only when it dropped the profile link (series.mjs).
+    (spec.invitationLines || EthniCards.invitationLines).forEach((t) => invitation.append(el("span", "", esc(t))));
     close.append(invitation);
     const pill = pick(".ec-cta-pill");
     close.append(el("div", "vf-pill oi", esc((pill ? pill.textContent : "ethniafrica.com").toUpperCase())));

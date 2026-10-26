@@ -302,7 +302,29 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
   const retired = ["search", "general", "pageOnline"].filter((k) =>
     Object.hasOwn(ending, k)
   );
-  const printed = [...version.signatureLines, ...version.invitationLines];
+  // `profileLink: false` drops « lien en profil » from the fixed invitation
+  // for a piece whose answer page is not online yet (operator, 26 October
+  // 2026). Only the link goes: the invitation's words stay the design
+  // system's, so no sequence can write a closing of its own.
+  if (Object.hasOwn(ending, "profileLink") && ending.profileLink !== false)
+    fail(
+      "ending.profileLink only takes false: the default ending keeps the link"
+    );
+  const withoutLink = ending.profileLink === false;
+  if (withoutLink && input.idents?.outro)
+    fail(
+      "ending.profileLink: false cannot go with idents.outro: the end card prints « lien en profil »"
+    );
+  const invitationLines = withoutLink
+    ? version.invitationLines.map((t, i, all) =>
+        i === all.length - 1 ? t.replace(/, lien en profil\.$/u, ".") : t
+      )
+    : version.invitationLines;
+  if (withoutLink && invitationLines.at(-1) === version.invitationLines.at(-1))
+    fail(
+      "The design system's invitation no longer ends on « , lien en profil. »"
+    );
+  const printed = [...version.signatureLines, ...invitationLines];
   const said = entries.at(-1).chunks.map((c) => sameWords(c.text));
   if (
     said.length !== printed.length ||
@@ -316,6 +338,7 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
   const next =
     typeof ending.next === "string" && ending.next.trim() ? ending.next : null;
   if (next) entries.at(-1).card.next = next;
+  if (withoutLink) entries.at(-1).card.invitationLines = invitationLines;
   // The end card (social/series-idents) in place of the 1.10.0 ending: the
   // same words, said the same way, over the search of the episode's name.
   // Its answer comes from a layer file copied from the name's live page.

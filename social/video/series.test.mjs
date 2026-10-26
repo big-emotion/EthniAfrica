@@ -200,6 +200,75 @@ test("1.10.0: a closing card whose chunks are not the four printed lines is refu
     );
 });
 
+// An invitation without « lien en profil » (operator, 26 October 2026, on
+// « Zaïre comme prénom et nom de famille »: « invitation sans lien en
+// profil »), for a piece whose answer page is not yet online. The sequence
+// asks for it with `ending.profileLink: false`; the words stay the fixed
+// invitation's, only the profile link is dropped.
+const WITHOUT_PROFILE_LINK = [
+  ...CLOSING_CHUNKS.slice(0, 3),
+  "sur EthniAfrica.",
+];
+const noProfileLink = (input) => {
+  input.ending = { ...input.ending, profileLink: false };
+};
+
+// @req REQ-186
+test("an ending without the profile link is said and printed without « lien en profil »", () => {
+  const seq = demo({
+    edit: noProfileLink,
+    script: withClosing(WITHOUT_PROFILE_LINK),
+  });
+  const last = seq.cards.length - 1;
+  assert.deepEqual(seq.cards[last].invitationLines, [
+    "Vous pouvez continuer la recherche",
+    "sur EthniAfrica.",
+  ]);
+  assert.ok(seq.chunks.filter((c) => c.card === last).every((c) => c.hidden));
+});
+
+// @req REQ-186
+test("an ending without the profile link refuses a voice that still says it", () => {
+  assert.throws(
+    () => demo({ edit: noProfileLink }),
+    /La fin n'est pas dite mot pour mot : « L’importance de \/ connaître nos noms\. \/ Vous pouvez continuer la recherche \/ sur EthniAfrica\. »/
+  );
+});
+
+// @req REQ-186
+test("the default ending keeps « lien en profil », said and printed by the cards' own lines", () => {
+  const seq = demo();
+  assert.equal(seq.cards.at(-1).invitationLines, undefined);
+  assert.throws(
+    () => demo({ script: withClosing(WITHOUT_PROFILE_LINK) }),
+    /sur EthniAfrica, lien en profil\. »/
+  );
+});
+
+// @req REQ-186
+test("profileLink accepts only false, and not with the end card that prints the link", () => {
+  assert.throws(
+    () =>
+      demo({
+        edit: (input) => {
+          input.ending = { profileLink: "non" };
+        },
+      }),
+    /ending\.profileLink/
+  );
+  assert.throws(
+    () =>
+      demo({
+        edit: (input) => {
+          noProfileLink(input);
+          input.idents = { outro: "anything" };
+        },
+        script: withClosing(WITHOUT_PROFILE_LINK),
+      }),
+    /ending\.profileLink/
+  );
+});
+
 // @req REQ-186
 test("1.6.0: the subtitle band stays empty for the whole ending", () => {
   const seq = demo();
