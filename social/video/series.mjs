@@ -658,8 +658,16 @@ function planLongVideo(seq, input) {
     const i = seq.cards.findIndex((c) => c.id === input.reminder);
     if (i < 0)
       fail(`The reminder names no card of the video: ${input.reminder}`);
-    const frame = (c) =>
-      JSON.stringify([c.image?.src, c.image?.focus, c.image?.video]);
+    // A clip's stills are filed under its own card, so two cards showing the
+    // same shot are compared by the shot itself (1.15.0 footage-first opener).
+    const frame = (c) => {
+      const shot = c.image?.clip;
+      return JSON.stringify(
+        shot
+          ? ["clip", shot.src, shot.in, shot.fx, shot.mode ?? "fill", shot.trim]
+          : [c.image?.src, c.image?.focus, c.image?.video]
+      );
+    };
     if (frame(seq.cards[i]) !== frame(seq.cards[0]))
       fail(
         `Le rappel ne montre pas l'image d'ouverture: ${input.reminder} shows another image or framing`

@@ -221,3 +221,44 @@ test("Chromium cuts between the shots and changes the credit with them", async (
   assert.doesNotMatch(b.text, /LOMÉ, GRAND MARCHÉ/);
   assert.notDeepEqual(a.png, b.png);
 });
+
+// A footage-first opener (1.15.0 §7) still owes the 1.7.0 hook reminder its
+// own image: the reminder repeats the opener when both show the same shot.
+const reminderOfClipOpener = (reminderClip) => {
+  const dir = join(root, `run-${runs++}`);
+  execFileSync("mkdir", [dir]);
+  execFileSync("cp", [SOURCE, join(dir, "source.mp4")]);
+  const shot = {
+    src: "source.mp4",
+    in: 0,
+    out: 8,
+    fx: 0.5,
+    audio: { mode: "off", speech: false },
+    place: "ESSAI, TOGO",
+    rights: RIGHTS,
+  };
+  const input = clipDemo(dir, {
+    clip: reminderClip(shot),
+    change: (deck) => {
+      deck.cards.find((c) => c.id === "serie-pays-01").image = {
+        clip: { ...shot },
+      };
+    },
+  });
+  input.reminder = CLIP_CARD;
+  return loadSeriesVideo(input, { dir });
+};
+
+// @req REQ-186
+test("a reminder repeats a clip opener when it shows the same shot", () => {
+  const seq = reminderOfClipOpener((shot) => shot);
+  assert.equal(seq.cards[0].image.clip.in, 0);
+});
+
+// @req REQ-186
+test("a reminder showing other footage than the clip opener is refused", () => {
+  assert.throws(
+    () => reminderOfClipOpener((shot) => ({ ...shot, in: 2, out: 10 })),
+    /Le rappel ne montre pas l'image d'ouverture/
+  );
+});
