@@ -29,8 +29,23 @@ function longDeck() {
       ],
     },
   };
+  // The 1.3.0 sample card still says « lecture » for an interpretation; the
+  // public-copy check bans it (27 October 2026), so the demo rewords the
+  // inherited text rather than editing the accepted sample.
+  const sampleReadings = card("serie-afrique-tout-04");
   const readings = {
-    ...card("serie-afrique-tout-04"),
+    ...sampleReadings,
+    kicker: "Les autres explications",
+    forms: {
+      ...sampleReadings.forms,
+      rows: sampleReadings.forms.rows.map(([, by], i) => [
+        `[explication ${i + 1}]`,
+        by,
+      ]),
+    },
+    note: "Les sources ne s'accordent pas, et aucune explication n'est classée selon son origine.",
+    provenance:
+      "Les autres explications, attribuées, jamais classées par origine. Modèle afrique-tout-04 de la proposition 1.3.0.",
     title: "D'où vient le mot ?",
     sourceLabel: "Hypothèses",
     readings: {
@@ -38,7 +53,7 @@ function longDeck() {
         {
           label: "berbère",
           text: "la terre des Afri",
-          by: "lecture souvent reprise",
+          by: "explication souvent reprise",
           say: "Afri",
         },
         {
