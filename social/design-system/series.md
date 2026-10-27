@@ -1306,8 +1306,76 @@ The eight questions were answered with the designer's recommendations (« ok pou
 7. **The new drawings** (six people, the speech bubble, the book): as drawn.
 8. **Stamps on the map:** only a verdict the narration says, two words at most.
 
+## 1.16.0-proposition (accepted 27 October 2026): symbols, not words
+
+**Proposed by Claude Design and accepted by the operator on 27 October 2026.** Canvas « Zaïre — symboles des cartes », <https://claude.ai/artifact/5eUf5zVorYqaSky3ZebWoT> (version 1793101283-3869): a symbol lexicon and seven scene boards at 1080 × 1920, each with its animation note. The operator's words: « lorsqu'on présente une carte, il faut avoir le moins d'écriture possible, surtout en français, et le plus de symboles, de schémas, de directions et d'effets pour que ça soit universel », « une personne qui n'est pas française doit comprendre le message de la carte ». The Zaïre money is shown as a note or a symbol, the Congo by the Zaïre flag, France by the French flag, Brazil or Martinique by symbols rather than words.
+
+Everything accepted stays. 1.16.0 narrows 1.14.0's « text on the map is kept for names and dates »: on a universal map, **names go too**.
+
+### 1. The rule
+
+A map is understood without reading French. Every fact the voice says during a map phase has a symbol, a flag or a movement on screen (the silent viewing check of 1.11.0 and 1.14.0 is unchanged and counts them).
+
+**What may still be written on the map:** dates and numbers (« 1482 », « 1971 », « ≤ 1400 »), a century in figures (« XVe »), and the episode's studied word or words (« nzadi », « Zaïre »). **What is never written on it:** place names, area names, people's names, drawing labels, sentences. **Outside the map nothing changes:** the subtitles in their band, the head (kicker, title, counter, figure head), the headline band and the foot (sources, key, credits) keep their words.
+
+**How an episode takes it.** The series video declares its studied words: `"studiedWords": ["nzadi", "Zaïre"]`. Its maps are then universal, and the engine enforces the rule (below). An episode without the field keeps the 1.14.0 writing: the rule is accepted for the series, and episodes made before it are not re-cut.
+
+### 2. The symbols
+
+In `assets/Illustrations/`, in the 1.11.0 hand (ink line, watercolour wash, contact shadow, viewBox `0 -12 160 132`, foot at (80, 112)), placed by a card's `map.drawings` at `[lon, lat]` on their word, at the drawings' size, at most three on screen. **They carry no label.**
+
+| Symbol                                               | Kind                  | Says                            |
+| ---------------------------------------------------- | --------------------- | ------------------------------- |
+| Portuguese caravel, red cross of the Order of Christ | `caravelle`           | the Portuguese, a ship arriving |
+| stone pillar with its cross                          | `padrao`              | a padrão                        |
+| whitewashed fort                                     | `fort`                | a fort on the coast (Elmina)    |
+| seated king, cap and stool                           | `roi`                 | the king (mani Kongo)           |
+| standing lord                                        | `seigneur`            | a province lord (mani)          |
+| ring of figures                                      | `conseil`             | the electing council            |
+| shells                                               | `nzimbu`              | the nzimbu money                |
+| gold struck out                                      | `or-barre`            | « gold buys nothing »           |
+| raffia, ivory, leopard skin                          | `tribut`              | tribute in kind                 |
+| bolt of cloth; ivory tusk                            | `tissu`, `ivoire`     | what is exchanged               |
+| speech bubble, cream; the same in gold               | `parole`, `parole-or` | a word said; the word it became |
+| open register, one line lit                          | `registre`            | a name in an archive            |
+| curtain and mask                                     | `theatre`             | a theatre                       |
+| sugar cane                                           | `canne`               | sugar, the plantations          |
+| sack of spices                                       | `epices`              | spices, the Indies              |
+| three figures                                        | `peuple`              | a people, the inhabitants       |
+| grey figures walking in file, no chains, no faces    | `traversee`           | the forced crossing             |
+
+**Flags** (`assets/Flags/`, 3:2): the Zaïre flag of 1971–1997 (green field, yellow disc, a brown arm and hand holding a torch with a red flame, « dessin d'après la description officielle », credited so in the foot), the DR Congo flag of 2006, France, Brazil. Each can fill a state's area (1.13.0, « 8 », unchanged) or be planted on its place (below).
+
+### 3. The animations (from the canvas notes)
+
+| Mark                                | Card field                                                                     | Motion                                                                                                          | Time                                                                      |
+| ----------------------------------- | ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| Planted flag                        | `{ "flag": "zar", "at": [lon, lat], "say": "Zaïre" }` in `map.drawings`        | the pole pops from its foot (the pop, one bounce: the note's « rebond »), then the cloth unrolls from the hoist | pole 300 ms; cloth from 130 ms, over 600 ms (`ease-enter`): 730 ms in all |
+| Flag swap (1971 → 1997)             | `"swap": { "flag": "cod", "say": "1997" }` on the planted flag                 | the flag folds back to the hoist, then the next one rises from the foot to the top of the pole                  | fold 400 ms (`ease-exit`), rise 600 ms (`ease-enter`): 1 s in all         |
+| Word bubble                         | `{ "kind": "parole", "word": "nzadi", "at": …, "say": … }`                     | enters as a drawing; the studied word is written inside in Anton, ink #23170d                                   | 400 ms, rising 8 px                                                       |
+| A word that changes (nzadi → Zaïre) | `"morph": { "word": "Zaïre", "say": "Zaïre", "to": [lon, lat] }` on the bubble | glides towards its listener (the ship), then turns gold with its new word; without `to` it turns in place       | glide 950 ms (`ease-move`), the turn over its last 300 ms                 |
+| Symbol                              | `{ "kind": "roi", "at": …, "say": … }`                                         | the drawing's entry, no label                                                                                   | 400 ms, rising 8 px; out 400 ms                                           |
+
+Sizes: a planted flag's pole is the drawing height h (100 to 150 px, 1.11.0 « Proportions »), its cloth 0.72 h wide at 3:2, with the ink line round it and the second contour; it is a drawing (three at most on screen, in the map band, 12 px clear of other marks). The other notes of the canvas use existing marks: the river drawing itself, the dotted journey and the double arrow (1.13.0, « 7 »), the halo round the king (the hand-drawn circle), the lords linked to the king (dotted routes), a lit country (an area's swell).
+
+### 4. What the engine enforces
+
+On an episode with `studiedWords`:
+
+- a map word that is not a date or a century must be a studied word, otherwise « Carte universelle (1.16.0) : « … » s'écrit en français ; le montrer par un symbole (map.drawings) ou un drapeau »;
+- the same for an explicit drawing label, an area labelled `area` or `country`, a place labelled `name`, a rename, a 1.14.0 pin, lettering or stamp (a stamp « ? » or a number passes);
+- by default areas and places are not named and drawings carry no label; the dots, outlines and drawings stay;
+- a word bubble carries one of the studied words, and so does its morph; a bubble on an episode without `studiedWords` is refused.
+
+On every episode: a planted flag is a drawing with `flag`, never with `kind` too; its flags and its swap's are files of `assets/Flags/`; the card's voice names each flag's state (1.13.0's rule 3); the swap comes after the flag is planted; the facts take `flag:<id>` as a mark, counted from 60 % opacity once its cloth shows. **Left to the operator's review:** that a planted colonial power's flag never stands on African land (1.13.0, « 8 »), and that the flag's period matches the date the voice gives (a planted flag does not follow the counter).
+
+The design version stays 1.15.0-proposition: the engine reads the new fields without a version check, and moving `version.json` would move every carousel deck with it. The 1.16.0 deposit (`proposals/1.16.0-proposition/`, tokens, bundle) is the next step.
+
+Test plan: `social/video/fixtures/series-zaire.mjs` (boards S1 and S6), `series-symbols.test.mjs` (model) and `series-symbols.acceptance.test.mjs` (drawn frames, with the verified imagery).
+
 ## Checks
 
+- Symbols, not words (1.16.0-proposition, accepted): on an episode with `studiedWords`, nothing written on a map but dates, centuries and the studied words; symbols without labels; planted flags and their swaps on their words, the voice naming each flag's state; the bubble's words among the studied words.
 - Figures drawn on the map (1.14.0-proposition, accepted): the figure head counts the drawings on screen and lands on the spoken figure; units divide the figure and are placed by the source's breakdown, their unit in the foot; no phrase on a map, only names, dates and centuries; stamps only for a verdict the narration says; the new marks counted by the silent viewing check; see « Renderer integration of 1.14.0 » in Handoff.
 - Motion and sound (1.13.0-proposition, accepted): every move resolves to a motion token; the pop, the swell and the continuous push on their frames; whip zooms and flashes only on the story's turns, one flash in any 2 s; the era map without modern borders; flags only for a state existing on the date shown; two headline bands at most, their words among the voice's; the tier's change rate reported; the mix at −16 LUFS and −1 dBTP, and the video complete without its sound; see « Renderer integration of 1.13.0 » in Handoff.
 - Band: one line (`report.series.lines` is 1); nothing within 12 px of it on a map; tape under it.
