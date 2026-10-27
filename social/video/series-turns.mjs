@@ -128,7 +128,27 @@ export const isMapCard = (card) =>
 
 // The flag drawings of assets/Flags/ and the state each one belongs to, by the
 // name the voice must say (series.md « 8 », rule 3).
-export const FLAG_STATES = { bfa: "Burkina Faso", hv: "Haute-Volta" };
+// 1.16.0: the DR Congo's name is said « Congo » as often as in full, so the
+// voice naming « Congo » names it.
+export const FLAG_STATES = {
+  bfa: "Burkina Faso",
+  hv: "Haute-Volta",
+  zar: "Zaïre",
+  cod: "Congo",
+  fra: "France",
+  bra: "Brésil",
+};
+// Whether the card's voice names a flag's state (series.md « 8 », rule 3).
+export function voiceNamesState(seq, i, flag) {
+  const fold = (s) => s.replace(/[’']/gu, "'").toLowerCase();
+  const text = fold(
+    seq.chunks
+      .filter((c) => c.card === i)
+      .map((c) => c.text)
+      .join(" ")
+  );
+  return text.includes(fold(FLAG_STATES[flag]));
+}
 
 const yearOf = (date, what) => {
   const year = Number(String(date).slice(0, 4));
@@ -332,12 +352,6 @@ export const FLAGS = {
 export function planFlags(seq, i, word, areaOf, counter, end) {
   const card = seq.cards[i];
   const what = `Card ${card.id}`;
-  const text = seq.chunks
-    .filter((c) => c.card === i)
-    .map((c) => c.text)
-    .join(" ")
-    .replace(/[’']/gu, "'")
-    .toLowerCase();
   const shown = counter
     ? [Math.min(counter.from, counter.to), Math.max(counter.from, counter.to)]
     : [seq.today, seq.today];
@@ -353,10 +367,9 @@ export function planFlags(seq, i, word, areaOf, counter, end) {
       fail(
         `${what}: Drapeau hors de la période de l'État (${f.flag}, ${f.from} à ${f.to ?? "aujourd'hui"})`
       );
-    const state = FLAG_STATES[f.flag];
-    if (!text.includes(state.toLowerCase().replace(/[’']/gu, "'")))
+    if (!voiceNamesState(seq, i, f.flag))
       fail(
-        `${what}: Drapeau d'un État que la voix ne nomme pas (« ${state} »)`
+        `${what}: Drapeau d'un État que la voix ne nomme pas (« ${FLAG_STATES[f.flag]} »)`
       );
     const say = word(i, f.say);
     // The intervals in which the card's date is in the flag's period.

@@ -33,6 +33,8 @@ import {
   MAP_IMAGERY,
   MARKS,
   checkSeriesMapCard,
+  checkStudiedWords,
+  checkUniversalCard,
 } from "./series-map.mjs";
 import { checkFigureFields, figureHeadAt } from "./series-figures.mjs";
 import { INTRO, OUTRO } from "../series-idents/shots.mjs";
@@ -166,6 +168,9 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
   const chapters = input.chapters ?? [];
   // 1.13.0: the subject key, fixed for every episode on one subject.
   const subject = input.subject ? loadSubject(input.subject) : null;
+  // 1.16.0: the words under study, the only words its maps may write.
+  const studied = input.studiedWords ?? null;
+  if (studied !== null) checkStudiedWords(studied);
   const seen = new Set();
   const entries = beats.map((beat, i) => {
     // The intro bumper (social/series-idents), operator, 19 October 2026:
@@ -217,8 +222,15 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     if (!input.demo && /(^|\/)a-trouver-[^/]*$/.test(card.image?.src ?? ""))
       fail(`Card ${card.id} still shows « image à trouver »`);
     // A map card is drawn on satellite imagery; an atlas card is refused.
-    if (card.type === "map" || card.opening !== undefined)
+    if (card.type === "map" || card.opening !== undefined) {
       checkSeriesMapCard(card);
+      // 1.16.0: an episode with studied words has universal maps.
+      if (studied) checkUniversalCard(card, studied);
+      else if ((card.map?.drawings ?? []).some((d) => d.word !== undefined))
+        fail(
+          `Card ${card.id}: une bulle porte le mot étudié : le déclarer dans studiedWords`
+        );
+    }
     checkLongCardFields(card);
     // 1.8.0: the document card and the teaching cards.
     if (card.image?.document) checkDocumentCard(card);
@@ -231,6 +243,13 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     // 1.14.0: figures and facts drawn on the map.
     checkFigureFields(card);
     const own = structuredClone(card);
+    // 1.16.0: on a universal map nothing is named by default; a studied
+    // word is written only where the script asks for it.
+    if (studied && own.map) {
+      for (const a of own.map.areas ?? []) a.label ??= "none";
+      for (const p of own.map.places ?? []) p.label ??= "none";
+      for (const d of own.map.drawings ?? []) if (!d.flag) d.label ??= false;
+    }
     // 1.15.0: a card whose picture is an external clip.
     if (own.image?.clip || own.image?.clips)
       prepareClipCard(own, dir, { proof: !!input.demo });
@@ -382,6 +401,7 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     mapImagery: input.mapImagery ?? MAP_IMAGERY,
     // 1.13.0: the year the satellite shows, for the counter and the flags.
     ...(input.today !== undefined && { today: input.today }),
+    ...(studied && { studiedWords: [...studied] }),
     // The episode's own bed, by name in social/sound/beds/library (mix.mjs bedFor).
     ...(input.bed !== undefined && { bed: input.bed }),
   };

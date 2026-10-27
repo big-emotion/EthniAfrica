@@ -128,8 +128,17 @@ async function routesFor(seq) {
   return { routes, tokens, cards };
 }
 
+// The flags inside a territory (1.13.0) and the planted ones, with the flag
+// each is swapped for (1.16.0).
 const flagsOf = (seq) => [
-  ...new Set(seq.cards.flatMap((c) => (c.flags ?? []).map((f) => f.flag))),
+  ...new Set([
+    ...seq.cards.flatMap((c) => (c.flags ?? []).map((f) => f.flag)),
+    ...Object.values(seq.mapSequence?.cards ?? {}).flatMap((c) =>
+      c.drawings.flatMap((d) =>
+        d.kind === "flag" ? [d.flag, d.swap?.flag].filter(Boolean) : []
+      )
+    ),
+  ]),
 ];
 
 const figureAssetsOf = (seq) =>
@@ -142,7 +151,7 @@ const figureAssetsOf = (seq) =>
 const illustrationsOf = (seq) => [
   ...new Set(
     Object.values(seq.mapSequence?.cards ?? {}).flatMap((c) =>
-      c.drawings.map((d) => d.kind)
+      c.drawings.flatMap((d) => d.images)
     )
   ),
 ];
