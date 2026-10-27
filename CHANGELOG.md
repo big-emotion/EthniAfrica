@@ -10,6 +10,55 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+## [5.11.0] - 2026-10-21
+
+### Added
+
+- Social video: EthniAfrica Cartes 1.13.0 (motion and sound of the series video)
+  and 1.14.0 (figures drawn on the map) (#1935, #1939).
+- Social: series sound palette, regional African bed library and an episode's
+  own bed (#1936).
+
+### Changed
+
+- Fiche `PPL_TUAREG` (`FLG_BERBERE`): the Abrous 1993 quotation is now located
+  in the fiche (#1932).
+
+### Fixed
+
+- Social video: the era coast is no longer drawn behind the globe, and only the
+  coast that can reach the frame is drawn (#1937, #1938).
+- Social: the « tribu » end-card layer is copied from the live page (#1933).
+
+## [5.10.0] - 2026-10-20
+
+### Added
+
+- Social: maps and closing answer layers for “Tribu” (series 4, episode 1) and
+  “Kouassi et Yao” (series 3, episode 1), plus the Touareg answer layer (#1917,
+  #1918, #1924).
+- Social: animated chapter cards, EthniAfrica Cartes 1.12.0 teaching cards,
+  and a composed thumbnail and Instagram story for publication (#1913, #1921,
+  #1922).
+
+### Changed
+
+- Fiches: personal-name sections use plain-language headings, and long name lists
+  start collapsed so readers can open them when needed (#1931).
+- Social video: series rendering can use GPU acceleration and lossless PNG
+  frame captures (#1915, #1920).
+
+### Fixed
+
+- Search: an exact recorded-word answer now takes priority over prose matches,
+  restoring the fiche result for “tribu”, “race” and “ethnie” (ETNI-2110, #1916).
+- Social video: globe imagery stays consistent across SwiftShader frames, and
+  chapter cards use the dark ground in every series (#1923, #1925).
+- Accessibility: night chronology inks meet contrast requirements, and the
+  chapter toggle's accessible name includes its visible text (#1926–1928).
+- Accessibility: the country picker has a descriptive accessible name, and
+  search controls meet contrast and keyboard-access requirements (#1930).
+
 ## [5.9.0] - 2026-10-19
 
 ### Changed
@@ -2000,7 +2049,9 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.9.0...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.11.0...HEAD
+[5.11.0]: https://github.com/big-emotion/ethniafrica/compare/v5.10.0...v5.11.0
+[5.10.0]: https://github.com/big-emotion/ethniafrica/compare/v5.9.0...v5.10.0
 [5.9.0]: https://github.com/big-emotion/ethniafrica/compare/v5.8.0...v5.9.0
 [5.8.0]: https://github.com/big-emotion/ethniafrica/compare/v5.7.1...v5.8.0
 [5.7.1]: https://github.com/big-emotion/ethniafrica/compare/v5.7.0...v5.7.1

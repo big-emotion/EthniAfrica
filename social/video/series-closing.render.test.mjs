@@ -166,10 +166,11 @@ test("1.10.0 check 7: nothing outside the zones grown by 40 px changes", async (
       }
     }
     // The calm zones' layers move the compositing of the text over them: a
-    // few hundred pixels outside the zones round one level differently,
-    // which no eye sees. Anything more is a change.
+    // few hundred pixels outside the zones round one or two levels
+    // differently (two since the 1.13.0 push scales the picture by a factor
+    // that is no longer round), which no eye sees. Anything more is a change.
     assert.ok(
-      outside <= 1 && moved < 1000,
+      outside <= 2 && moved < 1000,
       `frame ${busy.frame}: ${outside} levels outside, ${moved} pixels`
     );
     assert.ok(

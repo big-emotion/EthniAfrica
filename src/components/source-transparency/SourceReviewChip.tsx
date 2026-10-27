@@ -182,9 +182,9 @@ export function SourceReviewChip({
   const references = copy.references(sourceCount);
   const pillText = copy.pill(references, shortDate);
   const baseAriaLabel = copy.openSources(references, longDate);
-  const ariaLabel = ariaSuffix
-    ? `${baseAriaLabel} ${ariaSuffix}`
-    : baseAriaLabel;
+  const ariaLabel = [pillText, baseAriaLabel, ariaSuffix]
+    .filter(Boolean)
+    .join(". ");
 
   const variantClasses: Record<SourceReviewChipVariant, string> = {
     inline:

@@ -3,6 +3,7 @@ import type {
   SearchCompanionsData,
 } from "@/api/v2/schemas/searchCompanions";
 import type { SearchWithLeads } from "@/lib/afrikLoader";
+import type { WordAnswer } from "@/lib/search/answer";
 import type { SearchRelation } from "@/lib/search/relationSearch";
 import {
   ANSWER_BLOCKS,
@@ -127,6 +128,8 @@ type SearchFeedClassificationInput = {
   companions: SearchCompanionsData;
   /** Exact name subjects, when the caller has already resolved them. */
   subjects?: readonly SearchResult[];
+  /** Published words answering the query (REQ-184); they have no fiche. */
+  wordAnswers?: readonly WordAnswer[];
   /** Reviewed terms a near spelling may have meant; they count as suggestions. */
   termSuggestions?: readonly string[];
   /** The family or country the search is scoped to, when the reader kept one. */
@@ -147,17 +150,19 @@ export function classifySearchFeed({
   search,
   companions,
   subjects,
+  wordAnswers = [],
   termSuggestions = [],
   relation,
 }: SearchFeedClassificationInput): SearchFeedAnswerState {
   const foundByWord = companions.shorts.items.some(
     ({ match }) => match.relation === "word"
   );
-  // A name that answers the query is the page; prose that happens to hold the
-  // word never displaces it.
-  const answersAName = Boolean(subjects && subjects.length > 0);
+  // Prose hits come from any fiche whose text uses the word, so they speak
+  // only when nothing answers the name (brief 19, « sanoh »). Read first,
+  // they replaced the word answers of « tribu », « race » and « ethnie ».
+  const answeredByName = (subjects?.length ?? 0) > 0 || wordAnswers.length > 0;
   if (
-    !answersAName &&
+    !answeredByName &&
     search.results.some((result) =>
       result.recordedIn?.some(({ fieldPath }) =>
         fieldPath.startsWith("content.")

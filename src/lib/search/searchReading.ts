@@ -141,6 +141,7 @@ export async function loadSearchReading(
       search: { results: searchEnvelope.results, leads: searchEnvelope.leads },
       companions,
       subjects,
+      wordAnswers: reading.wordAnswers,
       termSuggestions: reading.nameSuggestions,
       relation,
     }),

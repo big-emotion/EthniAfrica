@@ -6,6 +6,7 @@
 // view, in frame pixels, with no browser. series-page.mjs draws it.
 import { readFileSync } from "node:fs";
 import { project, unproject, placeLabels, estimateWidth } from "./sequence.mjs";
+import { FLAG_STATES } from "./series-turns.mjs";
 
 export const MAP_FRAME = {
   // The subject's box, centred on the target: x 120 to 960, y 750 to 1270.
@@ -75,9 +76,25 @@ const ANIMATED_DRAWN = {
     "trace",
     "out",
   ],
-  drawings: ["kind", "at", "say", "until", "label"],
+  // 1.16.0: a drawing is a symbol (`kind`) or a planted flag (`flag`, and
+  // the `swap` that folds it for another); a word bubble carries its studied
+  // `word` and may `morph` into another; `label: false` writes nothing.
+  drawings: [
+    "kind",
+    "flag",
+    "at",
+    "say",
+    "until",
+    "label",
+    "swap",
+    "word",
+    "morph",
+  ],
   words: ["text", "kind", "at", "say", "until", "people", "ink"],
-  places: ["name", "at", "say", "side"],
+  // 1.13.0: a place may carry an id, which drawn marks name.
+  // 1.16.0: `label: "none"` keeps the dot and writes no name; a universal
+  // map writes a place's name only when `label: "name"` and it is studied.
+  places: ["id", "name", "at", "say", "side", "label"],
   facts: ["say", "shows"],
   rename: ["from", "to", "dates", "at", "say"],
   // The foot's key, when the plan groups its marks (« Royaumes », « Chemin
@@ -89,8 +106,9 @@ const AREA_FIELDS = ["file", "name", "ink", "lang", "say", "langSay"];
 export const AREA_INKS = ["a", "b", "c", "d"];
 const AREA_DIR = new URL("./data/areas/", import.meta.url);
 
-// The eight drawings of series 1 (assets/Illustrations/README.md) and the
-// label each takes under it on the map.
+// The map drawings (assets/Illustrations/README.md) and the label each takes
+// under it on the map. The eight of series 1 carry a French word; the
+// symbols of 1.16.0 carry none, so a map reads without French.
 export const ILLUSTRATIONS = {
   or: "or",
   kola: "kola",
@@ -100,7 +118,29 @@ export const ILLUSTRATIONS = {
   guerres: "guerres",
   colonne: "colonne française",
   travailleurs: "travailleurs",
+  caravelle: null,
+  padrao: null,
+  fort: null,
+  roi: null,
+  seigneur: null,
+  conseil: null,
+  nzimbu: null,
+  "or-barre": null,
+  tribut: null,
+  tissu: null,
+  ivoire: null,
+  parole: null,
+  "parole-or": null,
+  registre: null,
+  theatre: null,
+  canne: null,
+  epices: null,
+  peuple: null,
+  traversee: null,
 };
+// The word bubble's two states: the people's word on cream paper, the word
+// it became in gold (reached by a morph).
+export const BUBBLE_KINDS = { from: "parole", to: "parole-or" };
 
 // 1.11.0, the marks on the map (series.md, « Where the marks sit », 4 to 6).
 export const MARKS = {
@@ -147,6 +187,18 @@ export function areaStyle(lit) {
     keylineOpacity: r(0.55 * (0.6 + 0.4 * lit)),
     hatch: r(0.35 + 0.65 * lit),
     name: r(0.6 + 0.4 * lit),
+  };
+}
+
+// The band names are placed in so that, pushed `push` times around the map's
+// centre (540, 1010) by the end of their card, they are still inside `band`:
+// marks keep their pixel size while the map grows under them (1.13.0).
+export function pushedBand(band, push) {
+  const [cx, cy] = MAP_FRAME.centre;
+  const inward = (v, c) => c + (v - c) / push;
+  return {
+    x: [inward(band.x[0], cx), inward(band.x[1], cx)],
+    y: [inward(band.y[0], cy), inward(band.y[1], cy)],
   };
 }
 
@@ -292,37 +344,38 @@ function checkAnimatedFields(card) {
     if (a.foreign !== undefined && a.foreign !== true)
       fail(`Card ${card.id}: arrow ${a.id}: foreign is true or absent`);
   }
-  for (const d of map.drawings ?? []) {
-    say(`drawing ${d.kind}`, d.say);
-    if (!Object.hasOwn(ILLUSTRATIONS, d.kind))
-      fail(
-        `Card ${card.id}: no drawing « ${d.kind} » in assets/Illustrations/ (${Object.keys(ILLUSTRATIONS).join(", ")})`
-      );
-    if (!isPoint(d.at))
-      fail(`Card ${card.id}: drawing ${d.kind} sits at [lon, lat]`);
-  }
+  for (const d of map.drawings ?? []) checkDrawing(card, d, say);
   for (const w of map.words ?? []) {
     say(`word « ${w.text} »`, w.say);
     if (typeof w.text !== "string" || !w.text.trim() || !isPoint(w.at))
       fail(`Card ${card.id}: a word gives its text and where it sits`);
-    if (!["phrase", "date", "name", undefined].includes(w.kind))
-      fail(`Card ${card.id}: word « ${w.text} » is a phrase, a date or a name`);
+    // 1.14.0 (question 4): the free phrase is retired; a map word is a
+    // name, a date or a century.
+    checkMapWord(card, w);
     if (w.people !== undefined && w.ink !== undefined)
       fail(
         `Card ${card.id}: word « ${w.text} » gives its people or ink, not both`
       );
   }
-  for (const p of map.places ?? [])
+  for (const p of map.places ?? []) {
     if (typeof p.name !== "string" || !p.name.trim() || !isPoint(p.at))
       fail(`Card ${card.id}: a place gives its name and where it is`);
+    if (!["name", "none", undefined].includes(p.label))
+      fail(`Card ${card.id}: place ${p.name}'s label is name or none`);
+  }
   for (const f of map.facts ?? []) {
     say("a fact", f.say);
     if (!Array.isArray(f.shows) || !f.shows.length)
       fail(`Card ${card.id}: the fact « ${f.say} » names its marks`);
+    // 1.14.0: the figures on the map are marks of a fact too.
     for (const s of f.shows)
-      if (!/^(area|arrow|illus|text):\S/u.test(s))
+      if (
+        !/^(area|arrow|illus|flag|text|count|cascade|units|row|gauge|lettering|stamp|frame|travel):\S/u.test(
+          s
+        )
+      )
         fail(
-          `Card ${card.id}: the mark « ${s} » is area:, arrow:, illus: or text:`
+          `Card ${card.id}: the mark « ${s} » is area:, arrow:, illus:, flag:, text: or a figure's (count:, cascade:, units:, row:, gauge:, lettering:, stamp:, frame:, travel:)`
         );
   }
   if (map.rename) {
@@ -336,6 +389,159 @@ function checkAnimatedFields(card) {
     )
       fail(`Card ${card.id}: a rename gives from, to, dates and at`);
   }
+}
+
+// A drawing of the animated map: a symbol of assets/Illustrations/ or, since
+// 1.16.0, a flag of assets/Flags/ planted on its place.
+function checkDrawing(card, d, say) {
+  const what = `Card ${card.id}`;
+  if ((d.kind === undefined) === (d.flag === undefined))
+    fail(
+      `${what}: un dessin ou un drapeau planté, l'un des deux (kind ou flag)`
+    );
+  const name = d.kind ?? `drapeau ${d.flag}`;
+  say(`drawing ${name}`, d.say);
+  if (!isPoint(d.at)) fail(`${what}: drawing ${name} sits at [lon, lat]`);
+  if (d.label !== undefined && d.label !== false && typeof d.label !== "string")
+    fail(`${what}: drawing ${name}: label is a word or false`);
+  if (d.flag !== undefined) {
+    const known = (id) => {
+      if (!Object.hasOwn(FLAG_STATES, id))
+        fail(
+          `${what}: pas de drapeau « ${id} » dans assets/Flags (${Object.keys(FLAG_STATES).join(", ")})`
+        );
+    };
+    known(d.flag);
+    if (d.swap !== undefined) {
+      if (typeof d.swap !== "object" || !d.swap.flag || !d.swap.say)
+        fail(
+          `${what}: un drapeau en remplace un autre par swap: { flag, say }`
+        );
+      known(d.swap.flag);
+    }
+    if (d.word !== undefined || d.morph !== undefined || d.label !== undefined)
+      fail(`${what}: un drapeau planté n'écrit rien (word, morph, label)`);
+    return;
+  }
+  if (!Object.hasOwn(ILLUSTRATIONS, d.kind))
+    fail(
+      `${what}: no drawing « ${d.kind} » in assets/Illustrations/ (${Object.keys(ILLUSTRATIONS).join(", ")})`
+    );
+  if (d.swap !== undefined)
+    fail(`${what}: seul un drapeau planté se remplace (swap)`);
+  if (d.kind === BUBBLE_KINDS.from) {
+    if (typeof d.word !== "string" || !d.word.trim())
+      fail(`${what}: une bulle porte le mot étudié (word)`);
+    if (d.morph !== undefined) {
+      const { word, say: on, to, ...rest } = d.morph;
+      if (
+        typeof word !== "string" ||
+        !word.trim() ||
+        !on ||
+        Object.keys(rest).length
+      )
+        fail(`${what}: une bulle change de mot par morph: { word, say, to? }`);
+      if (to !== undefined && !isPoint(to))
+        fail(`${what}: la bulle glisse vers [lon, lat] (morph.to)`);
+    }
+  } else if (d.word !== undefined || d.morph !== undefined)
+    fail(`${what}: seule une bulle (parole) porte un mot`);
+}
+
+// ---------------------------------------------------------------------------
+// Cartes 1.16.0, symbols not words (series.md « 1.16.0 »). An episode that
+// declares its studied words (`studiedWords` on the series video) has
+// universal maps: a text on the map is a date or a century, or one of those
+// words; everything else is a symbol, a flag or a movement. The foot
+// (sources, key) and the subtitles are not the map.
+export function checkStudiedWords(words) {
+  if (
+    !Array.isArray(words) ||
+    !words.length ||
+    words.some((w) => typeof w !== "string" || !w.trim())
+  )
+    fail("studiedWords liste les mots étudiés de l'épisode, non vides");
+}
+const folded = (text) =>
+  String(text).trim().normalize("NFC").toLocaleLowerCase("fr");
+export const isStudiedWord = (studied, text) =>
+  studied.some((w) => folded(w) === folded(text));
+// A date or a century is written in figures, not in French: « 1482 »,
+// « 1971–1997 », « ≤ 1400 », « XVe ». A number with a unit word (« 2 000
+// langues ») is a phrase.
+const FIGURES_ONLY = /^[\d\s\p{Pd}/.,?≤≥~]+$|^[IVXLC]+e$/u;
+export const writtenOnUniversalMap = (studied, text) =>
+  FIGURES_ONLY.test(String(text).trim()) || isStudiedWord(studied, text);
+export function checkUniversalCard(card, studied) {
+  const map = card.map ?? {};
+  const written = (text) => {
+    if (!writtenOnUniversalMap(studied, text))
+      fail(
+        `Card ${card.id}: Carte universelle (1.16.0) : « ${text} » s'écrit en français ; le montrer par un symbole (map.drawings) ou un drapeau. Sur la carte ne s'écrivent que les dates et le mot étudié (${studied.join(", ")})`
+      );
+  };
+  for (const w of map.words ?? [])
+    if (w.kind !== "date" && w.kind !== "century") written(w.text);
+  for (const d of map.drawings ?? []) {
+    if (typeof d.label === "string") written(d.label);
+    for (const word of [d.word, d.morph?.word])
+      if (word !== undefined && !isStudiedWord(studied, word))
+        fail(
+          `Card ${card.id}: une bulle porte le mot étudié de l'épisode (${studied.join(", ")}), pas « ${word} »`
+        );
+  }
+  for (const a of map.areas ?? [])
+    if (a.label === "area" || a.label === "country") written(a.name);
+  for (const p of map.places ?? []) if (p.label === "name") written(p.name);
+  if (map.rename) for (const k of ["from", "to"]) written(map.rename[k]);
+  for (const p of card.pins ?? []) written(p.name);
+  for (const l of card.letterings ?? []) written(l.text);
+  for (const s of card.stamps ?? []) written(s.text);
+}
+
+// ---------------------------------------------------------------------------
+// Words on the map (series.md « 1.11.0 Words on the map », changed by
+// 1.14.0, question 4): the free phrase is retired. A map word is a name, a
+// date or a century; a word with more than four words, a colon or a verb the
+// loader knows is a sentence, to be drawn or put in the headline band.
+export const MAP_WORD_KINDS = ["name", "date", "century"];
+// The verbs the loader can detect: the forms the series' narrations use
+// (être, avoir and the verbs of naming, saying and becoming). A list, not a
+// grammar: a sentence it misses still fails the operator's review.
+const VERBS = new Set(
+  (
+    "est sont était étaient fut a ont avait avaient devient deviennent devenu " +
+    "devenue nomme nomment nommait nommé désigne désignent désignait reste " +
+    "restent existe existent existait signifie signifiait veut voulait dit " +
+    "disent disaient disait appelle appellent appelait écrit écrivent montre " +
+    "montrent fonde fondent fondé vient viennent venait parle parlent " +
+    "circule circulent circulaient impose imposé étend étendu étendent"
+  ).split(" ")
+);
+const PHRASE =
+  "Phrase sur la carte : la dessiner, ou la mettre dans le bandeau";
+export function checkMapWord(card, w) {
+  const what = `Card ${card.id}`;
+  if (w.kind === "phrase")
+    fail(`${what}: ${PHRASE} (« ${w.text} », la phrase libre est retirée)`);
+  if (w.kind !== undefined && !MAP_WORD_KINDS.includes(w.kind))
+    fail(
+      `${what}: un mot sur la carte est un nom, une date ou un siècle (« ${w.text} »)`
+    );
+  const words = w.text.split(/\s+/u).filter(Boolean);
+  // An initial (« A. Thevet ») is a name, not the verb « a ».
+  const verb = words.find(
+    (x) =>
+      !/^\p{Lu}\.$/u.test(x) &&
+      VERBS.has(
+        x
+          .toLowerCase()
+          .replace(/^\p{L}['’]/u, "")
+          .replace(/[\p{P}]+$/u, "")
+      )
+  );
+  if (words.length > 4 || w.text.includes(":") || verb)
+    fail(`${what}: ${PHRASE} (« ${w.text} »)`);
 }
 
 // The ink of a mark: its people's (input.inks), a territory's own, or cream
@@ -379,6 +585,8 @@ export function loadSequenceArea(file) {
   return {
     file,
     uncertain: p.kind !== "certain",
+    // 1.13.0: a flag fills only an area that is a state (category country).
+    category: p.category,
     polygons: polygonRings(feature.geometry),
   };
 }
@@ -557,8 +765,9 @@ export function sharedBorders(geojson, [west, east, south, north]) {
 // The still top-down view: centred on the middle of the subject's longitude
 // and latitude box at (540, 1010); the largest radius that keeps every
 // subject point within 840 × 520 around it; capped by the imagery's scale
-// limit at the end of the card's zoom.
-export function fitMapCamera(box, imagery, points) {
+// limit at the end of the card's zoom or, since 1.13.0, of its push: a card
+// is framed at the limit divided by its push.
+export function fitMapCamera(box, imagery, points, push = MAP_FRAME.maxZoom) {
   const lon = (box.west + box.east) / 2;
   const lat = (box.south + box.north) / 2;
   const centreY = MAP_FRAME.centre[1];
@@ -579,9 +788,10 @@ export function fitMapCamera(box, imagery, points) {
     if (dx > 0) fit = Math.min(fit, MAP_FRAME.box[0] / 2 / dx);
     if (dy > 0) fit = Math.min(fit, MAP_FRAME.box[1] / 2 / dy);
   }
-  const limit =
-    (MAP_FRAME.maxScale * imagery.width) / (2 * Math.PI) / MAP_FRAME.maxZoom;
-  const radius = Math.min(fit, limit);
+  const limit = (MAP_FRAME.maxScale * imagery.width) / (2 * Math.PI) / push;
+  // A push past the slow zoom's 4 % frames the subject smaller, so that at
+  // the end of the card it still stands where the 1.4.1 box put it.
+  const radius = Math.min(fit * Math.min(1, MAP_FRAME.maxZoom / push), limit);
   const camera = { lon, lat, radius, centreY };
   const xs = [];
   const ys = [];
@@ -660,7 +870,16 @@ const within = (a, b) =>
 // One map card as the series frame draws it: camera, overlays and names in
 // frame pixels at 100 % (the slow zoom scales them around (540, 1010)), the
 // key, the credits, the subject's box and the imagery's enlargement.
-export function seriesMapView(card, data, countries, world, imagery) {
+// `push` is the card's zoom on its last frame (1.13.0: the push of a
+// picture), which the framing leaves room for.
+export function seriesMapView(
+  card,
+  data,
+  countries,
+  world,
+  imagery,
+  push = MAP_FRAME.maxZoom
+) {
   checkSeriesMapCard(card);
   const map = card.map;
   const proj = baseMapProjection(data.meta);
@@ -683,7 +902,7 @@ export function seriesMapView(card, data, countries, world, imagery) {
       map.view ?? data.meta.viewBox.split(/[ ,]+/).map(Number);
     subject = [fromCard([x, y]), fromCard([x + w, y + h])];
   }
-  const camera = fitMapCamera(extent(subject), imagery, subject);
+  const camera = fitMapCamera(extent(subject), imagery, subject, push);
   const at = (lon, lat) => {
     const p = project(camera, lon, lat);
     return [p.x, p.y];

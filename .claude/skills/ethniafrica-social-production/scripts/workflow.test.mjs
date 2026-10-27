@@ -275,6 +275,42 @@ test("approval 3 verifies and fingerprints a video package like a card package",
 });
 
 // @req REQ-186
+test("approval 3 of a video piece covers every network's own cut", (t) => {
+  const f = fixture(t);
+  f.review(1, [f.file("brief.md")]);
+  f.approve(1);
+  f.design();
+  f.review(2, [f.file("proof.png")]);
+  f.approve(2);
+  const video = installVideoPackageFixture(
+    f.root,
+    `.local/productions/${f.id}`
+  );
+  const cuts = ["instagram", "facebook"].map((n) => video.cutFor(n));
+  const packageDir = `.local/productions/${f.id}/delivery-video`;
+  createPackage(f.root, video.configPath, packageDir, [
+    "instagram",
+    "facebook",
+  ]);
+  f.event({
+    type: "review",
+    gate: 3,
+    files: [`${packageDir}/post.md`],
+    packageDir,
+    summary: "Synthetic video delivery, one cut per network",
+  });
+  const files = loadPiece(f.root, f.id).reviews[3].files;
+  for (const file of [
+    `${packageDir}/video-instagram.mp4`,
+    `${packageDir}/video-facebook.mp4`,
+    ...cuts.flatMap((c) => [`${c.final}/video.mp4`, c.sequence]),
+  ])
+    assert.ok(files[file], file);
+  appendFileSync(join(f.root, cuts[1].final, "video.mp4"), "x");
+  assert.throws(() => f.approve(3), /changed/i);
+});
+
+// @req REQ-186
 test("an approval needs an explicit recorded decision and an existing review", (t) => {
   const f = fixture(t);
   assert.throws(() => f.approve(1), /review/i);

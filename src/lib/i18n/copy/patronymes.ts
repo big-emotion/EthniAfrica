@@ -132,14 +132,9 @@ const fr = {
   // second as an attestation the corpus never made.
   onFiche: {
     namesTitle: {
-      people: {
-        personal: "Noms de personnes rattachés à ce peuple",
-        patronymic: "Patronymes rattachés à ce peuple",
-      },
-      country: {
-        personal: "Noms de personnes rattachés à ce pays",
-        patronymic: "Patronymes rattachés à ce pays",
-      },
+      people: "Noms de personnes associés à ce peuple",
+      country: "Noms de personnes rattachés à ce pays",
+      language: "Noms de personnes associés à cette langue",
     },
     nameCount: (count: number) => `${count} ${count === 1 ? "nom" : "noms"}`,
 

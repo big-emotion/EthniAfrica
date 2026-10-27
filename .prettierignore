@@ -40,3 +40,6 @@ social/video/data/megachad-325m.geojson
 # Written byte-for-byte by social/video/areas.mjs; the acceptance run
 # regenerates them from the pinned downloads, so Prettier must not touch them.
 social/video/data/areas/
+
+# Written byte-for-byte by social/video/rivers.mjs (Cartes 1.13.0), likewise.
+social/video/data/rivers/*.geojson

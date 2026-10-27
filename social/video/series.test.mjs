@@ -37,7 +37,9 @@ const states = (seq) =>
 test("frame 0 is the cover: the opener alone, with its band, and no subtitle", () => {
   const seq = demo();
   const cover = seriesFrameState(seq, 0);
-  assert.deepEqual(cover.layers, [{ card: 0, opacity: 1, zoom: 1, text: 1 }]);
+  assert.deepEqual(cover.layers, [
+    { card: 0, opacity: 1, zoom: 1, zoomEnd: cover.layers[0].zoomEnd, text: 1 },
+  ]);
   assert.equal(seq.cards[0].type, "opener");
   assert.deepEqual(seq.band, { id: "pays", episode: 1 });
   assert.equal(cover.subtitle, null);
@@ -94,20 +96,23 @@ test("each card change is one 300 ms cross-fade and nothing else moves", () => {
 });
 
 // @req REQ-186
-test("the photograph zooms from 100 to 104 % while its card is on screen", () => {
+// 1.13.0 (decision 3): the photograph pushes in 6 % every 10 s, the maps'
+// push, in place of 1.4.0's 100 to 104 % over the card.
+test("the photograph pushes in 6 % every 10 s while its card is on screen", () => {
   const seq = demo();
   const zooms = new Map();
   states(seq).forEach((s) =>
     s.layers.forEach((l) =>
-      zooms.set(l.card, [...(zooms.get(l.card) ?? []), l.zoom])
+      zooms.set(l.card, [...(zooms.get(l.card) ?? []), [l.zoom, l.zoomEnd]])
     )
   );
-  for (const [card, list] of zooms) {
+  for (const [card, pairs] of zooms) {
+    const list = pairs.map(([z]) => z);
     assert.equal(list[0], 1, `card ${card} starts at 100 %`);
     if (card < seq.cards.length - 1)
       assert.ok(
-        Math.abs(list.at(-1) - 1.04) < 1e-9,
-        `card ${card} ends at 104 %`
+        Math.abs(list.at(-1) - pairs.at(-1)[1]) < 1e-9,
+        `card ${card} ends at its zoomEnd`
       );
     list.forEach((z, i) => assert.ok(i === 0 || z >= list[i - 1]));
   }
@@ -436,4 +441,26 @@ test("an image enlarged past 1.5 is refused, except in a demonstration", () => {
   );
   assert.deepEqual(checkSeriesLayout([image], { demo: true }), []);
   assert.deepEqual(checkSeriesLayout([{ ...image, scale: 1.5 }]), []);
+});
+
+// @req REQ-186
+test("the figure head keeps « plus de » clear of the number's digits and outline", () => {
+  // Anton 176 on a 156 px line overflows its box by about 10 px at the top,
+  // and its outline adds 13 px: « plus de » needs 24 px of clearance above
+  // the number's line box, or the digits cover it (operator, 21 October 2026).
+  const fig = (kind, y, h) => ({ id: kind, kind, x: 60, y, w: 500, h });
+  assert.match(
+    checkSeriesLayout([
+      fig("figure-pre", 318, 42),
+      fig("figure-number", 360, 156),
+    ]).join(),
+    /« plus de » touche le chiffre/
+  );
+  assert.deepEqual(
+    checkSeriesLayout([
+      fig("figure-pre", 318, 42),
+      fig("figure-number", 384, 156),
+    ]),
+    []
+  );
 });

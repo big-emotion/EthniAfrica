@@ -507,7 +507,8 @@ export interface NameFicheSourcesBlockProps {
  * Block 3 on a fiche (brief 2, boards people-*.dc.html): every name of the
  * subject, grouped by name first, then by the type of its sources. The first
  * name (the self-name, first in the fiche) is open, the others folded. A
- * fiche with one name keeps the search page's form.
+ * fiche with one name keeps the search page's form. On a fiche with several
+ * names, each source group starts closed so the reader can choose what to open.
  */
 // @req REQ-198
 // @req REQ-161
@@ -583,7 +584,7 @@ export function NameFicheSourcesBlock({
           {names.map((name, index) => (
             <details
               key={name.nameText}
-              open={index === 0}
+              open={false}
               data-name-group=""
               className="group/name rounded-afh-lg border border-afh-border bg-afh-surface"
             >

@@ -30,6 +30,7 @@ import {
   MAX_TEXTURE,
 } from "./render.mjs";
 import { DOWNLOADS, readVerified } from "./areas.mjs";
+import { ensureClipFrames, clipShots } from "./series-clip-frames.mjs";
 import {
   MAP_FRAME,
   MAP_IMAGERY,
@@ -38,6 +39,15 @@ import {
   sharedBorders,
 } from "./series-map.mjs";
 import { areaInks } from "./series-sequence.mjs";
+import { figureAssets } from "./series-figures.mjs";
+import { coastOf } from "./shoreline.mjs";
+import {
+  soundLibrary,
+  mixAvailable,
+  bedFor,
+  assignCueFiles,
+  mixSound,
+} from "./mix.mjs";
 
 const designRoot = fileURLToPath(new URL("../design-system/", import.meta.url));
 const sha256 = (bytes) => createHash("sha256").update(bytes).digest("hex");
@@ -89,7 +99,7 @@ async function routesFor(seq) {
   const cards = [];
   for (const card of seq.cards) {
     const spec = structuredClone(card);
-    if (spec.image)
+    if (spec.image && !spec.image.clip && !spec.image.clips)
       await add(`/assets/${spec.image.src}`, `assets/${spec.image.src}`);
     if (spec.map?.dataRef)
       spec.map.data = JSON.parse(
@@ -97,8 +107,20 @@ async function routesFor(seq) {
       );
     cards.push(spec);
   }
-  // 1.11.0: the drawings the animated map cards use.
-  for (const kind of illustrationsOf(seq))
+  // 1.11.0: the drawings the animated map cards use; 1.12.0: the parchment
+  // cards' drawings.
+  // 1.13.0: the era map's paper and the flags.
+  await add("/design/assets/Paper/paper.png", "assets/Paper/paper.png");
+  for (const id of flagsOf(seq))
+    await add(`/design/assets/Flags/${id}.svg`, `assets/Flags/${id}.svg`);
+  const drawn = seq.cards.flatMap((c) => (c.drawings ?? []).map((d) => d.kind));
+  // 1.14.0: the units' drawings, the travelling book and the foot's keys.
+  const figures = Object.keys(figureAssetsOf(seq).pool).map(
+    (k) => k.split("|")[0]
+  );
+  if (seq.cards.some((c) => c.units?.length))
+    figures.push("personne-1", "bulle");
+  for (const kind of new Set([...illustrationsOf(seq), ...drawn, ...figures]))
     await add(
       `/design/assets/Illustrations/${kind}.svg`,
       `assets/Illustrations/${kind}.svg`
@@ -106,10 +128,30 @@ async function routesFor(seq) {
   return { routes, tokens, cards };
 }
 
+// The flags inside a territory (1.13.0) and the planted ones, with the flag
+// each is swapped for (1.16.0).
+const flagsOf = (seq) => [
+  ...new Set([
+    ...seq.cards.flatMap((c) => (c.flags ?? []).map((f) => f.flag)),
+    ...Object.values(seq.mapSequence?.cards ?? {}).flatMap((c) =>
+      c.drawings.flatMap((d) =>
+        d.kind === "flag" ? [d.flag, d.swap?.flag].filter(Boolean) : []
+      )
+    ),
+  ]),
+];
+
+const figureAssetsOf = (seq) =>
+  figureAssets(
+    Object.values(seq.mapSequence?.cards ?? {}).flatMap((c) =>
+      c.figures ? [c.figures] : []
+    )
+  );
+
 const illustrationsOf = (seq) => [
   ...new Set(
     Object.values(seq.mapSequence?.cards ?? {}).flatMap((c) =>
-      c.drawings.map((d) => d.kind)
+      c.drawings.flatMap((d) => d.images)
     )
   ),
 ];
@@ -146,7 +188,10 @@ async function prepareMaps(seq, cards, routes, assets) {
       cards[i].map.data,
       countries,
       world,
-      imagery
+      imagery,
+      // 1.13.0: framed for its push on its last frame.
+      seriesFrameState(seq, seq.cardStarts[i]).layers.find((l) => l.card === i)
+        .zoomEnd
     );
   const all = Object.values(views).map((v) => v.bounds);
   let sequence = null;
@@ -192,6 +237,11 @@ async function prepareMaps(seq, cards, routes, assets) {
         ])
       ),
       illustrations: illustrationsOf(seq),
+      // 1.14.0: the cascade's outlines and the units' images.
+      figures: figureAssetsOf(seq),
+      // 1.13.0: the coast and the land the era map draws, from Natural
+      // Earth's countries.
+      ...(seq.eras?.flashes.length && { coast: coastOf(world, shown) }),
       borders: plan.runs.map((r) => {
         const kind = plan.views[r.cards[0]].borders;
         return kind === "none"
@@ -301,6 +351,16 @@ export async function openSeriesRenderer(
     await readFile(new URL("../renderer/runtime.json", import.meta.url))
   );
   const { routes, tokens, cards } = await routesFor(seq);
+  // 1.15.0: the stills of every shot of every clip card, served to the page
+  // by card and shot.
+  const clipDirs = new Map();
+  for (const card of seq.cards)
+    clipDirs.set(
+      card.id,
+      await Promise.all(
+        clipShots(card).map(async (shot) => (await ensureClipFrames(shot)).dir)
+      )
+    );
   const maps = await prepareMaps(seq, cards, routes, assets);
   // A map card's WebGL runs on SwiftShader, as in the satellite video,
   // unless the GPU was asked for.
@@ -335,6 +395,16 @@ export async function openSeriesRenderer(
           body: file,
         });
       }
+      if (url.pathname.startsWith("/clip/")) {
+        const [, , id, file] = url.pathname.split("/");
+        const [, shot, name] = /^(\d)-(\d{4}\.jpg)$/.exec(file) ?? [];
+        const dir = clipDirs.get(decodeURIComponent(id))?.[shot];
+        if (!dir) return route.abort();
+        return route.fulfill({
+          contentType: "image/jpeg",
+          body: await readFile(join(dir, name)),
+        });
+      }
       const body = routes.get(decodeURIComponent(url.pathname));
       if (!body) return route.abort();
       return route.fulfill({
@@ -360,6 +430,7 @@ export async function openSeriesRenderer(
       demo: seq.demo,
       subtitles,
       zooms,
+      flags: flagsOf(seq),
       maps: maps && {
         bounds: maps.bounds,
         views: maps.views,
@@ -372,11 +443,26 @@ export async function openSeriesRenderer(
       throw new Error("A required font is not loaded");
     const last = seriesFrameCount(seq) - 1;
     const captured = new Set();
+    // 1.13.0: the pictures held still, too small for their push.
+    const held = new Set();
     // The text boxes are checked on the cover, the last frame and every frame
     // where a subtitle is fully drawn, so every card and the ending are seen.
     const draw = async (frame) => {
       const state = seriesFrameState(seq, frame);
+      // 1.15.0: a clip card draws the still of its frame, decoded before the
+      // frame is drawn.
+      const stills = state.layers
+        .filter((l) => l.clipFrame !== undefined)
+        .map((l) => ({
+          id: seq.cards[l.card].id,
+          shot: l.clipShot,
+          n: l.clipFrame + 1,
+          credit: clipShots(seq.cards[l.card])[l.clipShot].credit,
+        }));
+      if (stills.length)
+        await page.evaluate((list) => window.setClipStills(list), stills);
       const drawn = await page.evaluate((s) => window.drawFrame(s), state);
+      for (const id of drawn.held ?? []) held.add(id);
       if (frame === 0 || frame === last || state.subtitle?.opacity === 1) {
         // A demonstration only reports images too small for the frame: the
         // library holds web renditions; a final video refuses them.
@@ -394,6 +480,7 @@ export async function openSeriesRenderer(
       // What each capture asked for, so the manifest says how the frames
       // FFmpeg received were taken.
       captured,
+      held,
       capture: (options = {}) => {
         captured.add(options.fast ? "png-fast" : "png");
         return captureFrame(page, options);
@@ -466,7 +553,7 @@ async function encodeSlice(seq, { from, to }, target, sound, options, stopped) {
   } finally {
     await renderer.close();
   }
-  return { renderer, problems };
+  return { renderer, problems, held: [...renderer.held] };
 }
 
 // Joins the silent slices `parts` into `file` without re-encoding, through
@@ -516,7 +603,7 @@ export async function joinSlices(parts, list, file, voice, count) {
 // re-encoding, and the voice is added once on the joined file with the
 // arguments of a single pass. A failed slice stops the others, and no
 // video.mp4 nor slice file remains.
-async function encodeSlices(seq, slices, file, options) {
+async function encodeSlices(seq, slices, file, options, voice) {
   const parts = slices.map((_, k) => `${file}.part-${k}.mp4`);
   const list = `${file}.parts.txt`;
   let failure = null;
@@ -533,10 +620,11 @@ async function encodeSlices(seq, slices, file, options) {
       )
     );
     if (failure) throw failure;
-    await joinSlices(parts, list, file, seq.voice, seriesFrameCount(seq));
+    await joinSlices(parts, list, file, voice, seriesFrameCount(seq));
     return {
       renderer: done[0].value.renderer,
       problems: done.flatMap((d) => d.value.problems),
+      held: [...new Set(done.flatMap((d) => d.value.held))],
     };
   } catch (error) {
     await rm(file, { force: true });
@@ -571,13 +659,34 @@ function checkEncoded(file, count) {
     );
 }
 
+// 1.13.0: the voice, the planned cues on the operator's files and the
+// series' bed, mixed and normalised (mix.mjs) into the export's folder.
+async function mixVoice(seq, sound, outDir, count) {
+  const { placed, missing } = assignCueFiles(seq.cues ?? [], sound);
+  const result = await mixSound({
+    voice: seq.voice.audio,
+    words: seq.voice.chunks.flat(),
+    cues: placed,
+    bed: bedFor(sound, seq.band.id, seq.bed),
+    seconds: count / FPS,
+    out: join(outDir, "mix.wav"),
+  });
+  return { ...result, missing: missing.length };
+}
+
 // `workers` browsers render the video in as many slices (seriesSlices); one
 // worker is the single pass. Each worker holds about 2.7 to 2.9 GB at its
 // peak (Chromium, Node and FFmpeg): three is the default on a 16 GB machine.
 export async function encodeSeriesVideo(
   seq,
   outDir,
-  { diagnose = false, assets, workers = 3, gpu = false } = {}
+  {
+    diagnose = false,
+    assets,
+    workers = 3,
+    gpu = false,
+    sound = soundLibrary(),
+  } = {}
 ) {
   // Hashed before drawing, as loaded: the package loads the sequence again and
   // compares, so a sequence edited after encoding needs a new encode.
@@ -599,17 +708,25 @@ export async function encodeSeriesVideo(
   await rm(file, { force: true });
   const options = { diagnose, gpu, ...(assets && { assets }) };
   const ffmpeg = execFileSync("ffmpeg", ["-version"]).toString().split("\n")[0];
-  const { renderer, problems } =
+  // 1.13.0: with the operator's cue files or the series' bed, the voice is
+  // mixed with them (mix.mjs) and the mix is measured; without any, the
+  // voice alone, as before. The picture is the same either way.
+  const mixed = mixAvailable(sound, seq.band.id, seq.bed)
+    ? await mixVoice(seq, sound, outDir, count)
+    : null;
+  const voice = mixed ? { ...seq.voice, audio: mixed.file } : seq.voice;
+  const { renderer, problems, held } =
     slices.length === 1
       ? await encodeSlice(
           seq,
           slices[0],
           file,
-          audioArgs(seq.voice, 0, count / FPS),
+          audioArgs(voice, 0, count / FPS),
           options,
           () => null
         )
-      : await encodeSlices(seq, slices, file, options);
+      : await encodeSlices(seq, slices, file, options, voice);
+  if (mixed) await rm(mixed.file, { force: true });
   try {
     checkEncoded(file, count);
   } catch (error) {
@@ -623,6 +740,13 @@ export async function encodeSeriesVideo(
       "series-render.mjs",
       "series-map.mjs",
       "series-sequence.mjs",
+      // 1.13.0: the motion and the sound.
+      "series-motion.mjs",
+      "series-turns.mjs",
+      "series-tiers.mjs",
+      "series-subject.mjs",
+      "series-cues.mjs",
+      "mix.mjs",
       "sequence.mjs",
       "render.mjs",
       "page.mjs",
@@ -654,6 +778,22 @@ export async function encodeSeriesVideo(
     ...(seq.silent?.length && { silent: seq.silent }),
     demo: !!seq.demo,
     ...(seq.warnings.length && { warnings: seq.warnings }),
+    // 1.13.0: the sound cues planned, and the mix as measured when it was
+    // made (loudness, true peak, range), or the voice alone.
+    cues: seq.cues?.length ?? 0,
+    sound: mixed
+      ? {
+          mixed: true,
+          cues: mixed.cues,
+          missing: mixed.missing,
+          bed: mixed.bed,
+          integrated: mixed.integrated,
+          truePeak: mixed.truePeak,
+          lra: mixed.lra,
+        }
+      : { mixed: false },
+    // 1.13.0: the pictures too small to push, held still (decision 3).
+    ...(held.length && { stillPictures: held }),
     // A diagnostic export lists the frames whose text left its band.
     ...(diagnose && { diagnostic: true, layoutProblems: problems }),
     // The parallel render: the browsers that drew it, and the first frame of

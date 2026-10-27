@@ -152,6 +152,36 @@ What the Burkina Faso rounds taught:
 - **Summarise the name's origin before the reframe.** After a long detour through history, the
   viewer needs the words of the name restated in one short paragraph.
 
+## 12. Start with a viewer who knows nothing about the episode
+
+The Togo episode (series 1, episode 20, October 2026) exposed a recurring mistake:
+the script began with “the village” before the viewer knew which village. Write
+for someone who has never seen the account, the research or the earlier episodes.
+
+- Establish the subject before asking a question about one of its details. For
+  Togo, the useful order is country, lake, named village, then the village's
+  earlier name. Choose the equivalent clear path for another subject.
+- Introduce each new place, people and person in plain words on first use.
+  Recheck every pronoun and shorthand from a first-time viewer's perspective.
+- Give each chapter or scene a concrete job: a fact, an attributed explanation
+  or a consequence. Remove a beat that only comments on the research process.
+- Let the viewer hear competing explanations, each with its source. There is no
+  need to announce that they differ if the comparison already shows it. State a
+  gap only when knowing that gap changes the answer.
+- Use direct, connected sentences and familiar words. Keep the source's actual
+  uncertainty and attribution; move supporting detail to source cards or the
+  research dossier when it would burden the spoken line.
+- Write the picture plan for viewing without sound. Use a map when a verified
+  location or geographic relation needs showing. Show source cards, documents,
+  footage or readable motion text for claims that a map cannot explain. Do not
+  draw an uncertain historical boundary or migration route as a precise fact.
+
+Write the complete source narrative first. Then make each selected network cut
+serve its own viewers and available duration. The Togo TikTok cut follows the
+name in four chapters; Instagram adds the families and political outcomes;
+Facebook gives more room to the competing readings and present-day Togoville.
+These chapter counts and durations belong to that episode, not to every series.
+
 ## The approved script (v6.1, 2026-10-15)
 
 Chapter titles in brackets are on-screen cards, not spoken. About 3 min 30.

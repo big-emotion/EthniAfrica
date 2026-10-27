@@ -7,6 +7,8 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import {
   voiceSegments,
+  requestBody,
+  HOUSE_VOICE,
   assembleVoice,
   joinVoice,
   wavBytes,
@@ -39,7 +41,7 @@ test("the script is cut into requests at each pause, with the spoken forms", () 
   assert.deepEqual(
     segments.map((s) => [s.pauseBeforeMs, s.text]),
     [
-      [7400, `Sahara vient de l'arabe sahrâ, «${NBSP}désert${NBSP}».`],
+      [7400, "Sahara vient de l'arabe sahrâ, désert."],
       [2500, "Vers 1154, al-Idrissi"],
       [0, "Il y a quatorze mille cinq cents ans environ,"],
     ]
@@ -53,6 +55,38 @@ test("the script is cut into requests at each pause, with the spoken forms", () 
   // Neighbouring requests are passed as context for the prosody.
   assert.equal(segments[1].previousText, first.text);
   assert.equal(segments[1].nextText, segments[2].text);
+});
+
+// @req REQ-186
+// Operator, 21 October 2026: a quoted word read with its guillemets came out
+// stilted, and spoiled the words around it (« écrivent « tribu » »).
+test("the voice reads a quoted word as a plain word: guillemets stay on screen only", () => {
+  const quoted = {
+    chunks: [
+      { text: `ses traducteurs écrivent «${NBSP}tribu${NBSP}» pour qabīla,` },
+      {
+        text: `en «${NBSP}tribus primitives${NBSP}»`,
+        units: [
+          "en",
+          { text: `«${NBSP}tribus`, spoken: "«tribusse" },
+          `primitives${NBSP}»`,
+        ],
+      },
+    ],
+  };
+  const [segment] = voiceSegments(quoted);
+  assert.equal(
+    segment.text,
+    "ses traducteurs écrivent tribu pour qabīla, en tribusse primitives"
+  );
+  const tribu = segment.units[3];
+  assert.equal(
+    tribu.text,
+    `«${NBSP}tribu${NBSP}»`,
+    "the screen keeps its guillemets"
+  );
+  assert.equal(segment.text.slice(tribu.from, tribu.to), "tribu");
+  assert.equal(segment.units[7].spoken, "tribusse");
 });
 
 // @req REQ-186
@@ -160,4 +194,25 @@ test("the WAV header says 16-bit mono PCM at 48 kHz", () => {
   assert.equal(wav.readUInt32LE(24), 48000);
   assert.equal(wav.readUInt16LE(34), 16);
   assert.equal(wav.readUInt32LE(40), 96000);
+});
+
+// @req REQ-186
+// Operator, 22 October 2026: the « tribu » voice and its neutral rhythm are
+// the house default, so a script that sets nothing sounds like that episode.
+test("a script without voice settings gets the house voice's neutral rhythm", () => {
+  const [segment] = voiceSegments({ chunks: [{ text: "Du latin tribus." }] });
+  const plain = requestBody(segment, {});
+  assert.equal(plain.model_id, "eleven_multilingual_v2");
+  assert.deepEqual(plain.voice_settings, {
+    stability: 0.9,
+    similarity_boost: 0.8,
+    style: 0,
+    use_speaker_boost: true,
+    speed: 0.95,
+  });
+  const own = requestBody(segment, {
+    voiceSettings: { speed: 1, stability: 0.5 },
+  });
+  assert.deepEqual(own.voice_settings, { speed: 1, stability: 0.5 });
+  assert.equal(HOUSE_VOICE, "M4ZqLOXSFqxSkn9RDxFO");
 });

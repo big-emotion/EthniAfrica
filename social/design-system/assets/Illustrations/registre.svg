@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -12 160 132" width="160" height="132">
+<title>registre</title>
+<filter id="registre-soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter><defs><linearGradient id="registre-left" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#efe3c6"/><stop offset="1" stop-color="#d8c9a8"/></linearGradient><linearGradient id="registre-right" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbf3e2"/><stop offset="1" stop-color="#e6d6b4"/></linearGradient><linearGradient id="registre-cover" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7a4a24"/><stop offset="1" stop-color="#3e220c"/></linearGradient></defs><ellipse cx="80" cy="112" rx="70" ry="5" fill="#0b0806" opacity="0.55" filter="url(#registre-soft)"/><path d="M8 104 L80 110 L152 104 L152 98 L8 98 Z" fill="url(#registre-cover)" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.6"/>
+<path d="M80 30 C60 20 34 20 12 26 L12 98 C34 92 60 92 80 102 Z" fill="url(#registre-left)" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.9"/>
+<path d="M80 30 C100 20 126 20 148 26 L148 98 C126 92 100 92 80 102 Z" fill="url(#registre-right)" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.9"/>
+<path d="M22 42 L70 42 M22 52 L70 52 M22 72 L70 72 M22 82 L70 82 M90 42 L138 42 M90 52 L138 52 M90 62 L138 62 M90 72 L138 72 M90 82 L138 82" fill="none" stroke="#8a7458" stroke-width="1.6"/>
+<rect x="20" y="57" width="52" height="10" fill="#e8b96a" opacity="0.9"/><path d="M22 62 L70 62" stroke="#5e3d04" stroke-width="1.8"/>
+</svg>

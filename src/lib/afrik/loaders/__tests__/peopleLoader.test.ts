@@ -1,5 +1,6 @@
 import { describe, it, expect } from "vitest";
-import { loadPeople, loadAllPeoples } from "../peopleLoader";
+import { loadPeople } from "../peopleJsonLoader";
+import { loadAllPeoples } from "../peopleLoader";
 
 /**
  * TDD Phase: RED

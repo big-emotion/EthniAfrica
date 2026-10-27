@@ -1,21 +1,22 @@
 # Runbook — Supabase migration state
 
-**Last verified:** 2026-10-03 — both ledgers read through `check:migration-state`, which
-reconciles every file under `supabase/migrations/` by name, each inside the CI job that
-applies migrations to that database
+**Last verified:** 2026-10-20 — production ledger read by the Release v5.10.0 `migrate` job
+(Actions run `39512649677`); recette not re-measured since the 2026-10-19 plan
 **Applies to:** every file under `supabase/migrations/`
 
-> **Measured 2026-10-03: recette has `001` → `097` applied; production has `001` → `095`.
-> Migrations `096` and `097` are on recette and in no Release yet.**
+> **Measured 2026-10-20: production has `001` → `115` applied with nothing pending. Recette was
+> last measured on 2026-10-19, before migration `115` was applied; its ledger has not been
+> re-measured since.**
 >
-> | Database               | How it was read                                                                                           | Result                                                                                |
-> | ---------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-> | Recette application    | `check:migration-state` inside `migrate-recette.yml` (Actions run `37115838551`, 2026-10-03 10:15 UTC)    | applied 97 · pending 0 · orphaned 0 · drifted 0                                       |
-> | Production application | `check:migration-state:production` after the v4.22.0 Release applied its plan (Actions run `36827759480`) | applied 95 · pending 0 · orphaned 0 · drifted 0 after applying migrations 094 and 095 |
+> | Database               | How it was read                                                                                                 | Result                                                                                                       |
+> | ---------------------- | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+> | Recette application    | `check:migration-state` plan inside `migrate-recette.yml` (Actions run `39211338503`, 2026-10-19)               | 114 applied · 1 pending in the logged plan; that run then applied migration `115`. Not re-measured after it. |
+> | Production application | `check:migration-state:production` in the Release v5.10.0 `migrate` job (Actions run `39512649677`, 2026-10-20) | applied 115 · pending 0 · orphaned 0 · drifted 0                                                             |
 >
-> Both figures are the deployment jobs' own ledger reads, not local inference. Anything merged
-> after those runs is **unmeasured** on the corresponding database until its migration job reads
-> the ledger again.
+> The production figure is the deployment job's own ledger read, not local inference. The recette
+> row is a logged plan, not a post-apply ledger read: the post-apply line was not captured.
+> Anything merged after those runs is **unmeasured** on the corresponding database until its
+> migration job reads the ledger again.
 
 There are two Supabase projects, and both look like "production" for a structural reason: **a
 Supabase project has exactly one environment, and Supabase itself calls that environment

@@ -1,5 +1,6 @@
 import { describe, it, expect } from "vitest";
-import { loadCountry, loadAllCountries } from "../countryLoader";
+import { loadCountry } from "../countryJsonLoader";
+import { loadAllCountries } from "../countryLoader";
 
 /**
  * TDD Phase: RED

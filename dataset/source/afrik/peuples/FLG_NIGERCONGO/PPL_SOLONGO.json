@@ -40,7 +40,7 @@
         "Plaine côtière sèche entre l'embouchure du Congo et Luanda"
       ],
       "unificationsOrDivisions": "Les Solongo faisaient partie des provinces périphériques du Royaume de Kongo. Avec la dislocation du royaume au 18e siècle (suite aux guerres civiles et à l'impact de la traite négrière), les différents sous-groupes Bakongo, dont les Solongo, développèrent des identités locales plus marquées. Lors des guerres d'indépendance angolaises, les Bakongo (dont les Solongo) formèrent l'essentiel du soutien au FNLA (Front National de Libération de l'Angola).",
-      "externalInfluences": "Contact avec les explorateurs et marchands portugais depuis la fin du 15e siècle (Diogo Cão atteignit l'embouchure du Congo en 1482-1483). Evangélisation catholique précoce du Royaume de Kongo (roi Nzinga a Ntinu converti vers 1491). Traite transatlantique des esclaves (16e-19e siècles). Colonisation portugaise intense à partir du 19e siècle. Indépendance de l'Angola en 1975; guerre civile angolaise (1975-2002) perturbant fortement les communautés du nord-ouest."
+      "externalInfluences": "Contact avec les explorateurs et marchands portugais depuis la fin du 15e siècle (Diogo Cão atteignit l'embouchure du Congo en 1482-1483). Evangélisation catholique précoce du Royaume de Kongo (le roi Nzinga a Nkuwu est baptisé en 1491 sous le nom de João Ier). Traite transatlantique des esclaves (16e-19e siècles). Colonisation portugaise intense à partir du 19e siècle. Indépendance de l'Angola en 1975; guerre civile angolaise (1975-2002) perturbant fortement les communautés du nord-ouest."
     },
     "organization": {
       "traditionalPoliticalSystem": "Organisation en chefferies et sous-chefferies relevant du système politique kongo. Le chef (mfumu ou ntinu au niveau du clan, lukeni au niveau provincial) détient une autorité politico-religieuse. Le village (kanda) constitue l'unité de base, dirigé par son chef de clan. La succession était traditionnellement matrilinéaire dans le système kongo classique, contrairement à la plupart des peuples bantous.",
@@ -63,7 +63,7 @@
     "culture": {
       "majorRites": "Kindoki (rite de protection et de purification contre la sorcellerie, avec intervention du nganga). Funzi (initiation des jeunes dans certaines communautés kongo voisines). Rites funéraires élaborés incluant veillées, danses et repas communautaires (inkuni ya mfumu). Mariage traditionnel avec lobola (compensation matrimoniale). Rites de la pêche : cérémonies propitiatoires avant les sorties de pêche maritime, invocations aux esprits des eaux (nkisi ya mbu).",
       "symbols": "Nkisi (fétiches/objets de pouvoir spirituel, tradition kongo centrale). Mbumba (serpent arc-en-ciel, divinité des eaux dans la cosmologie kongo). Filets de pêche (symbole identitaire, seuls pêcheurs maritimes africains avec les Ashiluanda dans la région). Kimpasi (société initiatique kongo). Drapeau angolais avec machette et roue dentée (contexte post-indépendance).",
-      "artsAndMusic": "Musique kongo : tambours ngoma, sanza (lamellophone), chants polyphoniques. Danse traditionnelle kikosi et nkumba. Sculpture sur bois : statuettes nkisi nkondi (figures à clous, tradition kongo, renommée dans l'art africain mondial). Tissage de raphia (nzimbu, paniers). Poterie féminine traditionnelle. Art de la pêche : construction de pirogues et fabrication de filets, savoir-faire distinctif des Solongo côtiers.",
+      "artsAndMusic": "Musique kongo : tambours ngoma, sanza (lamellophone), chants polyphoniques. Danse traditionnelle kikosi et nkumba. Sculpture sur bois : statuettes nkisi nkondi (figures à clous, tradition kongo, renommée dans l'art africain mondial). Tissage du raphia (étoffes, paniers). Poterie féminine traditionnelle. Art de la pêche : construction de pirogues et fabrication de filets, savoir-faire distinctif des Solongo côtiers.",
       "spiritualities": "Cosmologie kongo centrée sur le concept de nza yayi (monde des vivants et des morts reliés). Les bakulu (esprits ancestraux) sont des intermédiaires actifs. Les nkisi (objets de pouvoir spirituel, contenants d'esprits) constituent l'une des traditions religieuses les plus élaborées d'Afrique centrale. Le nganga (guérisseur-devin) est le spécialiste rituel central. Le christianisme catholique, présent depuis le 16e siècle, est aujourd'hui dominant; de nombreuses Eglises indépendantes africaines (kimbanguisme notamment) sont également actives."
     },
     "historicalRole": {
@@ -118,6 +118,13 @@
         "title": "Reddit Angola — Bakongo subgroups including Solongo (Soyo)",
         "url": "https://www.reddit.com/r/Angola/comments/1k0opk0/bakongo_angolans/",
         "tier": "unverified"
+      },
+      {
+        "title": "UNESCO, Histoire générale de l'Afrique, vol. V : L'Afrique du XVIe au XVIIIe siècle (dir. B. A. Ogot), 1999 — chap. 19, « Le Royaume du Kongo et ses voisins » (J. Vansina, à partir d'une contribution de T. Obenga), p. 601-642",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Lu dans l'exemplaire numérisé le 27 octobre 2026. Le roi Nzinga Nkuwu, père d'Afonso Ier : p. 606. Les nzimbu sont des coquillages servant de monnaie, « coquillages d'Olivancilaria nana, appelés nzimbu, provenant des pêcheries de l'île de Luanda » : p. 610."
       }
     ]
   },

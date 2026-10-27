@@ -239,6 +239,19 @@ test("at each cut, the encoded frames match the single pass's within x264's loss
 });
 
 // @req REQ-186
+test("three slices encoded again: the same video, byte for byte", async (t) => {
+  if (!assets) return t.skip("no imagery");
+  // The package binds the video's exact bytes (README, « Determinism »):
+  // before 20 October 2026 the globe's limb changed from run to run on
+  // SwiftShader, and so did the file.
+  const again = await encodeSeriesVideo(seq, join(root, "three-again"), {
+    diagnose: true,
+    workers: 3,
+  });
+  assert.equal(again.manifest.hashes.video, three.manifest.hashes.video);
+});
+
+// @req REQ-186
 test("a failing slice fails the whole render and leaves no video", async (t) => {
   if (!assets) return t.skip("no imagery");
   // The closing card asks to scroll, which every frame refuses: the last

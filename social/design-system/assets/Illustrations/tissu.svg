@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -12 160 132" width="160" height="132">
+<title>tissu</title>
+<filter id="tissu-soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter><defs><linearGradient id="tissu-cloth" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5a6aa0"/><stop offset="0.55" stop-color="#2c3a72"/><stop offset="1" stop-color="#141c40"/></linearGradient><linearGradient id="tissu-end" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e6d6b4"/><stop offset="1" stop-color="#a98d5f"/></linearGradient></defs><ellipse cx="80" cy="112" rx="52" ry="5" fill="#0b0806" opacity="0.55" filter="url(#tissu-soft)"/><path d="M30 96 L112 62 L130 84 L48 118 Z" fill="url(#tissu-cloth)" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.9"/>
+<path d="M36 100 L118 66 M42 106 L124 72 M46 112 L128 78" fill="none" stroke="#b3261e" stroke-width="2.6"/>
+<ellipse cx="121" cy="73" rx="10" ry="14" transform="rotate(-22 121 73)" fill="url(#tissu-end)" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.7"/>
+<path d="M118 68 C122 70 124 74 122 78" fill="none" stroke="#7a5a32" stroke-width="1.2"/>
+<path d="M30 96 C20 100 18 108 26 112 C34 116 44 116 48 118" fill="url(#tissu-cloth)" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.6"/>
+<g stroke="#23170d" stroke-width="1" stroke-linecap="round" opacity="0.3"><line x1="60" y1="104" x2="66" y2="96"/><line x1="72" y1="99" x2="78" y2="91"/><line x1="84" y1="94" x2="90" y2="86"/></g>
+</svg>

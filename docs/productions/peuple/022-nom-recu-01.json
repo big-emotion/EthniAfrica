@@ -1,0 +1,47 @@
+{
+  "campaign": "nom-recu-01",
+  "typologie": "peuple",
+  "episode": 22,
+  "question": {
+    "fr": "Comment s'appellent-ils eux-mêmes ?"
+  },
+  "myth": {
+    "fr": "Touareg est-il le nom que ce peuple se donne ?"
+  },
+  "subjects": [
+    {
+      "kind": "people",
+      "id": "PPL_TUAREG",
+      "label": {
+        "fr": "Touareg"
+      }
+    }
+  ],
+  "sitePath": "/fr/atlas/peuples/PPL_TUAREG",
+  "publications": [
+    {
+      "network": "instagram",
+      "format": "video",
+      "url": "https://www.instagram.com/p/DevxL49TRIf/",
+      "publishedAt": "2026-10-21"
+    },
+    {
+      "network": "facebook",
+      "format": "video",
+      "url": "https://www.facebook.com/reel/1086885264154486",
+      "publishedAt": "2026-10-21"
+    },
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=MBH6xaEMrqA",
+      "publishedAt": "2026-10-21"
+    },
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7698899753777614102",
+      "publishedAt": "2026-10-21"
+    }
+  ]
+}

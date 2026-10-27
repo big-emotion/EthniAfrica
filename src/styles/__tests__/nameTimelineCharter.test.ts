@@ -8,12 +8,14 @@ const read = (path: string) =>
 const colorCss = read("src/styles/tokens/color.css");
 const timelineCss = read("src/styles/name-timeline.css");
 
-function hexOf(token: string): string {
+function hexOf(token: string, overrides = ""): string {
   let current = token;
   for (let hop = 0; hop < 6; hop += 1) {
-    const match = colorCss.match(
-      new RegExp(`${current}:\\s*(#[0-9a-f]{6}|var\\(--[a-z0-9-]+\\))`, "i")
+    const declaration = new RegExp(
+      `${current}:\\s*(#[0-9a-f]{6}|var\\(--[a-z0-9-]+\\))`,
+      "i"
     );
+    const match = overrides.match(declaration) ?? colorCss.match(declaration);
     if (!match) throw new Error(`Missing token ${current}`);
     if (match[1].startsWith("#")) return match[1];
     current = match[1].slice(4, -1);
@@ -30,10 +32,14 @@ function luminance(hex: string): number {
   return 0.2126 * r + 0.7152 * g + 0.0722 * b;
 }
 
-function contrast(foreground: string, background: string): number {
+function contrast(
+  foreground: string,
+  background: string,
+  overrides = ""
+): number {
   const [light, dark] = [
-    luminance(hexOf(foreground)),
-    luminance(hexOf(background)),
+    luminance(hexOf(foreground, overrides)),
+    luminance(hexOf(background, overrides)),
   ].sort((a, b) => b - a);
   return (light + 0.05) / (dark + 0.05);
 }
@@ -75,5 +81,34 @@ describe("name-history timeline palette (ETNI-2012)", () => {
     const night = colorCss.slice(colorCss.indexOf(".dark,"));
     expect(night).toMatch(/--afh-name-birth-bg:/);
     expect(night).toMatch(/--afh-name-birth-ink:/);
+  });
+
+  // @req REQ-198
+  it("keeps precolonial and contemporary inks AA-readable on night surfaces", () => {
+    const night = colorCss.slice(colorCss.indexOf(".dark,"));
+    expect(
+      contrast("--afh-chronology-polity-ink", "--afh-night-ground", night)
+    ).toBeGreaterThanOrEqual(4.5);
+    expect(
+      contrast("--afh-chronology-polity-ink", "--afh-night-surface-2", night)
+    ).toBeGreaterThanOrEqual(4.5);
+    expect(
+      contrast("--afh-chronology-modern-ink", "--afh-night-ground", night)
+    ).toBeGreaterThanOrEqual(4.5);
+    expect(
+      contrast("--afh-chronology-modern-ink", "--afh-night-surface-2", night)
+    ).toBeGreaterThanOrEqual(4.5);
+  });
+
+  // @req REQ-198
+  it("binds the night chronology inks to the approved palette", () => {
+    const night = colorCss.slice(colorCss.indexOf(".dark,"));
+    expect(night).toMatch(
+      /--afh-chronology-polity-ink:\s*var\(--afh-night-ocre-soft\)/
+    );
+    expect(night).toMatch(
+      /--afh-chronology-modern-ink:\s*var\(--afh-night-green\)/
+    );
+    expect(hexOf("--afh-night-green")).toBe("#91d5ac");
   });
 });

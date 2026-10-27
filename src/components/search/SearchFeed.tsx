@@ -7,7 +7,10 @@ import { getSearchEntityLabel } from "@/components/search/searchEntityAccent";
 import { inCountry } from "@/lib/atlas/countryPreposition";
 import { getCountryCommonName } from "@/lib/countryNames";
 import { useNameSearchHref } from "@/components/search/NameAddressProvider";
-import { ficheHrefFor } from "@/components/search/SearchResultCard";
+import {
+  ficheHrefFor,
+  hasFichePage,
+} from "@/components/search/SearchResultCard";
 import { AppellationsBlock } from "@/components/search/feed/AppellationsBlock";
 import {
   FichesBlock,
@@ -458,19 +461,25 @@ export function SearchFeed({
   // « Une autre fiche trouvée », it would be a second way to the same name,
   // presented as tied to the spelling typed (brief 16, REQ-201).
   const leadKeys = new Set(leads.map(({ type, id }) => `${type}:${id}`));
-  const listedResults =
-    state === "typo"
-      ? results.filter(({ type, id }) => !leadKeys.has(`${type}:${id}`))
-      : results;
-  const withheldLeads = results.length - listedResults.length;
+  // A word the page answers has no fiche (REQ-196): its card could only lead
+  // back to this very page.
+  const answeredWordKeys = new Set(
+    subjects
+      .filter((subject) => !hasFichePage(subject))
+      .map(({ type, id }) => `${type}:${id}`)
+  );
+  const listedResults = results.filter(
+    ({ type, id }) =>
+      !answeredWordKeys.has(`${type}:${id}`) &&
+      (state !== "typo" || !leadKeys.has(`${type}:${id}`))
+  );
+  const withheldResults = results.length - listedResults.length;
   const ficheEntries =
     state === "recorded"
-      ? [...results]
-      : state === "typo"
+      ? [...listedResults]
+      : state === "typo" || results.length > 0
         ? groupPeopleResults([...listedResults])
-        : results.length > 0
-          ? groupPeopleResults([...results])
-          : leads;
+        : leads;
   const derivedFicheRows = ficheEntries.map((entry, index): FeedFicheItem =>
     entry.type === "peopleGroup"
       ? {
@@ -650,7 +659,7 @@ export function SearchFeed({
         ficheRows.length > 0
           ? resultCount === undefined
             ? ficheRows.length
-            : resultCount - withheldLeads
+            : resultCount - withheldResults
           : 0,
     },
     copy.filters

@@ -40,6 +40,79 @@ const MATRIX = Object.keys(baseline.heights);
 // included. EGY sits 22 px under: the next addition to it must be weighed.
 const HEIGHT_DEBT: readonly string[] = [];
 
+const DISCLOSURE_ROUTES = [
+  getCountryRoute(LOCALE, "NAM"),
+  getCountryRoute(LOCALE, "BDI"),
+  getPeopleRoute(LOCALE, "PPL_MINYANKA"),
+  getPeopleRoute(LOCALE, "PPL_FULA"),
+];
+
+test.describe("approved long-name lists", () => {
+  for (const width of [430, 768, 1440]) {
+    for (const path of DISCLOSURE_ROUTES) {
+      // @req REQ-133 REQ-153 REQ-190
+      test(`${path} reveals every name at ${width}px`, async ({
+        page,
+      }, testInfo) => {
+        await page.setViewportSize({ width, height: 932 });
+        await openRecord(page, path);
+        const group = page.locator(
+          path.includes("/pays/")
+            ? '[data-names-register="attested"]'
+            : ".afh-name-others"
+        );
+        const fold = group.locator("details.ea-fold").first();
+        const entries = group.locator(
+          path.includes("/pays/") ? ".afh-name-pills li" : "[data-name-row]"
+        );
+        const sourceGroups = page.locator(
+          "[data-name-sources] details[data-name-group]"
+        );
+        for (const sourceGroup of await sourceGroups.all()) {
+          await expect(sourceGroup).not.toHaveAttribute("open");
+        }
+        if ((await sourceGroups.count()) > 0) {
+          const sourceSection = page.locator("[data-name-sources]");
+          const firstSourceGroup = sourceGroups.first();
+          await testInfo.attach("sources-closed", {
+            body: await sourceSection.screenshot(),
+            contentType: "image/png",
+          });
+          await firstSourceGroup.locator(":scope > summary").click();
+          await expect(firstSourceGroup).toHaveAttribute("open");
+          await testInfo.attach("sources-open", {
+            body: await sourceSection.screenshot(),
+            contentType: "image/png",
+          });
+          await firstSourceGroup.locator(":scope > summary").click();
+          await expect(firstSourceGroup).not.toHaveAttribute("open");
+        }
+        const count = await entries.count();
+        expect(count).toBeGreaterThan(0);
+        await expect(fold).not.toHaveAttribute("open");
+        await expect(entries.first()).toBeHidden();
+        await expect(fold.locator(":scope > summary")).toContainText(
+          `Afficher les ${count} noms`
+        );
+        await testInfo.attach("closed-list", {
+          body: await group.screenshot(),
+          contentType: "image/png",
+        });
+        await fold.locator(":scope > summary").click();
+        for (const entry of await entries.all()) {
+          await expect(entry).toBeVisible();
+        }
+        await testInfo.attach("open-list", {
+          body: await group.screenshot(),
+          contentType: "image/png",
+        });
+        await fold.locator(":scope > summary").click();
+        await expect(entries.first()).toBeHidden();
+      });
+    }
+  }
+});
+
 function corpusIds(directory: string, pattern: RegExp): string[] {
   return (
     readdirSync(join(process.cwd(), directory), { recursive: true }) as string[]

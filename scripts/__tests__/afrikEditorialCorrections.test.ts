@@ -205,3 +205,245 @@ describe("AFRIK editorial corrections from community review", () => {
     expect(demographicCsv).not.toContain("PPL_DIDA,Dida,FLG_NIGERCONGO");
   });
 });
+
+interface TogoFiche {
+  content: {
+    historicalFacts: { independenceStruggle: string; postIndependence: string };
+  };
+  summary: string;
+  etymology: string;
+  nameOriginActor: string;
+  nameHistory: {
+    names: Array<{ accounts: Array<{ statement: string }> }>;
+  };
+}
+
+// The Togo episode (pays-20, 26 October 2026) compared the fiche with its
+// sources: the name first designated a lakeside locality, its first meaning
+// stays disputed, and no source names who coined it.
+describe("AFRIK Togo fiche, name history", () => {
+  const togo = () => readJson<TogoFiche>("dataset/source/afrik/pays/TGO.json");
+
+  // @req REQ-023
+  it("does not give the name one settled meaning or one namer", () => {
+    const { summary, etymology, nameOriginActor } = togo();
+
+    expect(summary).not.toContain("au-delà de l'eau");
+    expect(summary).toContain("1884");
+    expect(etymology).toContain("plusieurs lectures");
+    expect(etymology).not.toContain("viendrait de");
+    expect(nameOriginActor).not.toContain("nommé par les peuples locaux");
+    expect(nameOriginActor).toContain("ne donnent pas le nom");
+  });
+
+  // @req REQ-023
+  it("keeps the German adoption after the locality, not before it", () => {
+    const { etymology, nameOriginActor } = togo();
+
+    expect(etymology).not.toContain("officialisé par les colonisateurs");
+    expect(nameOriginActor).not.toContain("officialisé par les colonisateurs");
+  });
+
+  // @req REQ-023
+  it("dates Olympio's presidency from 1961, not from independence", () => {
+    const { independenceStruggle, postIndependence } =
+      togo().content.historicalFacts;
+
+    expect(independenceStruggle).not.toContain("devient premier président");
+    expect(independenceStruggle).toContain("premier ministre");
+    expect(postIndependence).toContain(
+      "présidence de Sylvanus Olympio (1961-1963"
+    );
+  });
+
+  // @req REQ-023
+  it("gives Olympio's office on independence day, prime minister", () => {
+    const statement = togo().nameHistory.names[0].accounts[0].statement;
+
+    expect(statement).toContain("Sylvanus Olympio");
+    expect(statement).toContain("premier ministre");
+    expect(statement).not.toContain("premier président");
+  });
+});
+
+interface ZaireAccount {
+  statement: string;
+  formAsWritten?: string;
+  hypothesisGroup?: string;
+  actors?: Array<{ name: string; role: string }>;
+}
+
+interface CongoKinshasaFiche {
+  nameHistory: {
+    summary: string;
+    names: Array<{ accounts: ZaireAccount[] }>;
+  };
+}
+
+interface PeopleOrigins {
+  content: {
+    origins: {
+      ancientOrigins: string;
+      majorHistoricalEvents: string;
+      migrationRoutes: string[];
+    };
+  };
+}
+
+// The Zaïre episode (2026-10-21-zaire-1971-exceptionnel, approved on
+// 26 October 2026) compared the fiches with their sources: the state took the
+// name on 27 October 1971, the word is centuries older, its nzadi reading has
+// more than one attributed source, and Zaïre is not the country's name today.
+describe("AFRIK Zaïre name history", () => {
+  const congoKinshasa = () =>
+    readJson<CongoKinshasaFiche>("dataset/source/afrik/pays/COD.json");
+  const zaireAccounts = () => congoKinshasa().nameHistory.names[1].accounts;
+  const peopleOrigins = (path: string) =>
+    readJson<PeopleOrigins>(`dataset/source/afrik/peuples/${path}`).content
+      .origins;
+
+  // @req REQ-023
+  it("says who chose the state name, and that the word is older", () => {
+    const { summary } = congoKinshasa().nameHistory;
+
+    expect(summary).toContain("choisi le 27 octobre 1971");
+    expect(summary).toContain("dès le XVIe siècle");
+    expect(summary).toContain("Isidore Ndaywel è Nziem");
+  });
+
+  // @req REQ-023
+  it("records the 1971 decision with its actors and the steps that followed", () => {
+    const decision = zaireAccounts().find((account) =>
+      account.statement.includes("le 27 octobre 1971 : ce jour-là")
+    );
+
+    expect(decision?.actors?.map((actor) => actor.name)).toEqual([
+      "Bureau politique du Mouvement populaire de la révolution",
+      "Joseph-Désiré Mobutu",
+    ]);
+    expect(decision?.statement).toContain("promulgue le 29");
+  });
+
+  // @req REQ-023
+  it("keeps the earlier accounts first and adds the older written forms", () => {
+    const accounts = zaireAccounts();
+
+    expect(accounts).toHaveLength(11);
+    expect(accounts[3].formAsWritten).toBe("Enzaze");
+    expect(accounts.map((account) => account.formAsWritten)).toContain(
+      "Rio Zayre"
+    );
+    expect(
+      accounts.some((account) => account.statement.includes("24 juin 1967"))
+    ).toBe(true);
+  });
+
+  // @req REQ-023
+  it("leaves the origin of the word as three attributed readings", () => {
+    const readings = zaireAccounts().filter(
+      (account) => account.hypothesisGroup === "origine du nom Zaïre"
+    );
+
+    expect(readings).toHaveLength(3);
+    expect(readings.at(-1)?.statement).toContain("Rien ne montre");
+  });
+
+  // @req REQ-023
+  it("does not call the country Zaïre before 1971 or after 1997", () => {
+    const ngbande = peopleOrigins(
+      "FLG_SOUDANIQUECENTRAL/PPL_NGBANDE.json"
+    ).majorHistoricalEvents;
+    const bakigaRoute = peopleOrigins("FLG_NIGERCONGO/PPL_BAKIGA.json")
+      .migrationRoutes[1];
+    const zande = peopleOrigins(
+      "FLG_SOUDANIQUECENTRAL/PPL_ZANDE.json"
+    ).ancientOrigins;
+
+    expect(ngbande).not.toContain("prend le pouvoir au Zaïre");
+    expect(ngbande).toContain("qui devient le Zaïre en 1971");
+    expect(bakigaRoute).not.toContain("Zaire actuel");
+    expect(bakigaRoute).toContain("actuelle République démocratique du Congo");
+    expect(zande).not.toContain("Zaire actuel");
+    expect(zande).toContain("de l'actuelle République démocratique du Congo");
+  });
+});
+
+interface KongoAreaFiche {
+  content: {
+    origins: {
+      ancientOrigins: string;
+      majorHistoricalEvents: string;
+      externalInfluences?: string;
+    };
+    historicalRole: { kingdomsOrChiefdoms: string };
+    culture: { artsAndMusic?: string };
+    sources: Array<{ title?: string; notes?: string; page?: string }>;
+  };
+}
+
+// The Zaïre fusion research (27 October 2026) checked the Kongo-area fiches
+// against UNESCO's Histoire générale de l'Afrique, Pigafetta (1591) and
+// Ravenstein (1900): nzimbu are shells, not raffia; the king baptised in 1491
+// is Nzinga a Nkuwu; Kongo's claim over Loango, Kakongo and Ngoyo was probably
+// fictive; Afonso tried to abolish the trade in 1526; first contact is 1482-83.
+describe("AFRIK Kongo-area fiches against their sources", () => {
+  const fiche = (path: string) =>
+    readJson<KongoAreaFiche>(`dataset/source/afrik/peuples/${path}`).content;
+  const solongo = () => fiche("FLG_NIGERCONGO/PPL_SOLONGO.json");
+  const kongo = () => fiche("FLG_BANTU/PPL_KONGO.json");
+  const cabinda = () => fiche("FLG_NIGERCONGO/PPL_KONGO_CABINDA.json");
+  const citesVansinaOnKongoSuzerainty = (
+    sources: KongoAreaFiche["content"]["sources"]
+  ) =>
+    sources.some(
+      (source) =>
+        source.title?.includes("IV, ch. 22") &&
+        `${source.page ?? ""} ${source.notes ?? ""}`.includes("621")
+    );
+
+  // @req REQ-023
+  it("does not file nzimbu shell money under raffia weaving", () => {
+    expect(solongo().culture.artsAndMusic).not.toContain("nzimbu");
+  });
+
+  // @req REQ-023
+  it("names the king baptised in 1491 Nzinga a Nkuwu", () => {
+    const { externalInfluences } = solongo().origins;
+
+    expect(externalInfluences).not.toContain("Nzinga a Ntinu");
+    expect(externalInfluences).toContain("Nzinga a Nkuwu");
+  });
+
+  // @req REQ-023
+  it("does not present Loango, Kakongo and Ngoyo as Kongo's vassals", () => {
+    const kingdoms = kongo().historicalRole.kingdomsOrChiefdoms;
+
+    expect(kingdoms).not.toMatch(/vassaux ou affilies/);
+    expect(kingdoms).toContain("sans doute fictive");
+    expect(kingdoms).toContain("pas son vassal");
+    expect(citesVansinaOnKongoSuzerainty(kongo().sources)).toBe(true);
+  });
+
+  // @req REQ-023
+  it("dates Afonso's attempt to abolish the slave trade to 1526", () => {
+    const events = kongo().origins.majorHistoricalEvents;
+
+    expect(events).not.toContain("1514 : lettres");
+    expect(events).toContain("1526");
+  });
+
+  // @req REQ-023
+  it("dates first contact at the Congo mouth to 1482-1483, not 1485", () => {
+    const { origins, historicalRole } = cabinda();
+
+    expect(origins.majorHistoricalEvents).not.toContain(
+      "1485 : premier contact"
+    );
+    expect(origins.majorHistoricalEvents).toContain("1482-1483");
+    expect(origins.ancientOrigins).not.toContain("vassaux du Royaume du Kongo");
+    expect(historicalRole.kingdomsOrChiefdoms).not.toContain(
+      "vassaux du Royaume du Kongo"
+    );
+    expect(citesVansinaOnKongoSuzerainty(cabinda().sources)).toBe(true);
+  });
+});

@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -12 160 132" width="160" height="132">
+<title>parole-or</title>
+<filter id="parole-or-soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter><defs><linearGradient id="parole-or-gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbe2a6"/><stop offset="0.55" stop-color="#e8b96a"/><stop offset="1" stop-color="#b9822a"/></linearGradient></defs><ellipse cx="80" cy="112" rx="12" ry="5" fill="#0b0806" opacity="0.55" filter="url(#parole-or-soft)"/><path d="M24 -2 L136 -2 C146 -2 152 4 152 14 L152 62 C152 72 146 78 136 78 L96 78 L80 110 L72 78 L24 78 C14 78 8 72 8 62 L8 14 C8 4 14 -2 24 -2 Z" fill="url(#parole-or-gold)" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="2.2"/><path d="M16 8 L16 30" stroke="#fff4d6" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+</svg>

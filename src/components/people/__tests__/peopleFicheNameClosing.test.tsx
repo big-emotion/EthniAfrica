@@ -90,7 +90,7 @@ const BASSA: NameHistory = {
 // Brief 2, approved 2026-10-15: docs/design/mockups/site/people-*.dc.html.
 describe("NameFicheSourcesBlock — « Les sources » on a fiche", () => {
   // @req REQ-198
-  it("groups the accounts by name first, the first name open and marked as theirs", () => {
+  it("groups accounts by name and keeps every source group closed initially", () => {
     const { container } = render(
       <NameFicheSourcesBlock
         history={PEUL_HISTORY}
@@ -109,8 +109,7 @@ describe("NameFicheSourcesBlock — « Les sources » on a fiche", () => {
     expect(groups.length).toBe(
       PEUL_HISTORY.names.filter((name) => name.accounts.length > 0).length
     );
-    expect((groups[0] as HTMLDetailsElement).open).toBe(true);
-    for (const group of Array.from(groups).slice(1)) {
+    for (const group of Array.from(groups)) {
       expect((group as HTMLDetailsElement).open).toBe(false);
     }
     if (PEUL_HISTORY.names[0].selfGiven) {

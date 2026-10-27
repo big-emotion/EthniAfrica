@@ -6,7 +6,18 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { traceShoreline, shorelineFeature, ringAreaKm2 } from "./shoreline.mjs";
+import {
+  traceShoreline,
+  shorelineFeature,
+  ringAreaKm2,
+  coastOf,
+  ISLET,
+  coastRunsInFrame,
+  landRingInFrame,
+  nearSideRuns,
+  nearSideRing,
+} from "./shoreline.mjs";
+import { flatProject } from "./series-map.mjs";
 
 const artefact = JSON.parse(
   readFileSync(new URL("./data/megachad-325m.geojson", import.meta.url))
@@ -194,4 +205,275 @@ test("the recorded area and vertex count match the geometry", () => {
     .flat()
     .reduce((n, ring) => n + ring.length - 1, 0);
   assert.equal(p.vertices, vertices);
+});
+
+// Cartes 1.13.0, the era map's coast: two countries side by side on a sea.
+// Their shared border is no coast; the six outer edges are, joined.
+// @req REQ-186
+test("1.13.0: the era map's coast is every edge one country owns, never a shared border", () => {
+  const square = (x0, x1) => ({
+    type: "Feature",
+    properties: {},
+    geometry: {
+      type: "Polygon",
+      coordinates: [
+        [
+          [x0, 0],
+          [x1, 0],
+          [x1, 1],
+          [x0, 1],
+          [x0, 0],
+        ],
+      ],
+    },
+  });
+  const world = {
+    type: "FeatureCollection",
+    features: [square(0, 1), square(1, 2)],
+  };
+  const { lines, land } = coastOf(world, [-1, 3, -1, 2]);
+  assert.equal(land.length, 2);
+  const edges = lines.flatMap((l) =>
+    l.slice(1).map((p, i) =>
+      [l[i], p]
+        .map((q) => q.join(","))
+        .sort()
+        .join("|")
+    )
+  );
+  assert.equal(edges.length, 6);
+  assert.ok(!edges.includes("1,0|1,1"), "the shared border is no coast");
+  // Outside the bounds, nothing.
+  assert.deepEqual(coastOf(world, [5, 6, 5, 6]), { lines: [], land: [] });
+});
+
+// On the fixture's era cards, islets and small lakes under a degree drew
+// three engraved lines around a speck (a target in the sea) that the boards
+// never draw: a ring smaller than ISLET in both directions is neither land to
+// paint the sea around nor coast.
+// @req REQ-186
+test("1.13.0: the era map leaves out islets and lakes smaller than ISLET degrees", () => {
+  const ring = (x0, y0, size) => [
+    [x0, y0],
+    [x0 + size, y0],
+    [x0 + size, y0 + size],
+    [x0, y0 + size],
+    [x0, y0],
+  ];
+  const world = {
+    type: "FeatureCollection",
+    features: [
+      {
+        type: "Feature",
+        properties: {},
+        geometry: {
+          type: "MultiPolygon",
+          coordinates: [[ring(0, 0, 4)], [ring(5, 1, ISLET * 0.9)]],
+        },
+      },
+    ],
+  };
+  const { lines, land } = coastOf(world, [-1, 10, -1, 6]);
+  assert.equal(land.length, 1);
+  assert.ok(lines.flat().every(([lon]) => lon <= 4));
+});
+
+// The era map strokes the coast up to 81.5 px wide, three times, under masks:
+// on SwiftShader every vertex costs, on screen or not (a frame took 20 to
+// 40 s). Only the stretches that can reach the frame are drawn: a segment
+// whose box stays farther than the margin from the frame is dropped, and the
+// line is cut there. What reaches the frame is drawn from the same points.
+const FRAME = [0, 0, 1080, 1920];
+// @req REQ-186
+test("1.13.0: the era coast keeps the stretches within the margin of the frame, from the same points", () => {
+  const inside = [
+    [100, 100],
+    [200, 150],
+    [300, 120],
+  ];
+  assert.deepEqual(coastRunsInFrame(inside, FRAME, 42), [inside]);
+  // Out past the left edge and back: the far stretch is dropped, the line cut.
+  const line = [
+    [100, 500],
+    [-30, 500],
+    [-500, 520],
+    [-900, 700],
+    [-40, 900],
+    [200, 900],
+  ];
+  assert.deepEqual(coastRunsInFrame(line, FRAME, 42), [
+    [
+      [100, 500],
+      [-30, 500],
+      [-500, 520],
+    ],
+    [
+      [-900, 700],
+      [-40, 900],
+      [200, 900],
+    ],
+  ]);
+  // A segment that only crosses a corner of the frame stays.
+  assert.deepEqual(
+    coastRunsInFrame(
+      [
+        [-200, 100],
+        [100, -200],
+      ],
+      FRAME,
+      42
+    ).length,
+    1
+  );
+  // All of it far off the frame: nothing.
+  assert.deepEqual(
+    coastRunsInFrame(
+      [
+        [2000, 0],
+        [3000, 50],
+        [2500, 4000],
+      ],
+      FRAME,
+      42
+    ),
+    []
+  );
+});
+
+// A land ring is filled whole, so it is kept or dropped whole: dropped only
+// when its box lies past the margin on one side.
+// @req REQ-186
+test("1.13.0: the era land keeps every ring whose box meets the frame", () => {
+  const ring = (x0, y0, size) => [
+    [x0, y0],
+    [x0 + size, y0],
+    [x0 + size, y0 + size],
+    [x0, y0 + size],
+    [x0, y0],
+  ];
+  assert.equal(landRingInFrame(ring(500, 500, 10), FRAME, 42), true);
+  assert.equal(landRingInFrame(ring(-3000, -3000, 6000), FRAME, 42), true);
+  assert.equal(landRingInFrame(ring(-100, 500, 70), FRAME, 42), true);
+  assert.equal(landRingInFrame(ring(-200, 500, 70), FRAME, 42), false);
+  assert.equal(landRingInFrame(ring(500, 1970, 70), FRAME, 42), false);
+});
+
+// The era map's projection is orthographic and never checks the hemisphere:
+// a coast on the far side of the globe was drawn mirrored inside it (on a
+// whole-globe view, 25,153 of the coast's 46,648 points). Operator, 21
+// October 2026: « je valide l'option a », the far side is not drawn. A line
+// is cut where it crosses the limb; a land ring keeps its far points, moved
+// onto the limb, so that its fill stops at the edge of the globe.
+const GLOBE = { lon: 0, lat: 0, radius: 465, centreY: 960 };
+const fromCentre = ([lon, lat]) => {
+  const [x, y] = flatProject(GLOBE, lon, lat);
+  return Math.hypot(x - 540, y - GLOBE.centreY);
+};
+const near = (actual, expected) =>
+  assert.ok(
+    actual.length === expected.length &&
+      actual.every(
+        (p, i) =>
+          Math.abs(p[0] - expected[i][0]) < 1e-9 &&
+          Math.abs(p[1] - expected[i][1]) < 1e-9
+      ),
+    `${JSON.stringify(actual)} is not ${JSON.stringify(expected)}`
+  );
+
+// @req REQ-186
+test("1.13.0: the era coast is cut at the limb and its far side is not drawn", () => {
+  const line = [
+    [0, 0],
+    [60, 0],
+    [120, 0],
+    [180, 0],
+  ];
+  const out = nearSideRuns(line, GLOBE);
+  assert.equal(out.length, 1);
+  near(out[0], [
+    [0, 0],
+    [60, 0],
+    [90, 0],
+  ]);
+  // The near-side points are the same points, so a view with nothing on the
+  // far side draws the same path.
+  assert.equal(out[0][1], line[1]);
+  // From the far side, across, and back.
+  const across = nearSideRuns(
+    [
+      [150, 0],
+      [0, 0],
+      [-150, 0],
+    ],
+    GLOBE
+  );
+  assert.equal(across.length, 1);
+  near(across[0], [
+    [90, 0],
+    [0, 0],
+    [-90, 0],
+  ]);
+  // Two visits to the near side make two runs.
+  assert.equal(
+    nearSideRuns(
+      [
+        [-30, 0],
+        [-150, 0],
+        [150, 0],
+        [30, 0],
+      ],
+      GLOBE
+    ).length,
+    2
+  );
+  // All of it behind the globe: nothing.
+  assert.deepEqual(
+    nearSideRuns(
+      [
+        [150, 10],
+        [170, 0],
+        [-170, -5],
+      ],
+      GLOBE
+    ),
+    []
+  );
+});
+
+// @req REQ-186
+test("1.13.0: a land ring on both sides keeps its far points on the limb", () => {
+  const ring = [
+    [80, -10],
+    [100, -10],
+    [100, 10],
+    [80, 10],
+    [80, -10],
+  ];
+  const out = nearSideRing(ring, GLOBE);
+  assert.ok(out.includes(ring[0]) && out.includes(ring[3]));
+  for (const p of out)
+    assert.ok(fromCentre(p) <= GLOBE.radius + 1e-6, `${p} inside the globe`);
+  const moved = out.filter((p) => !ring.includes(p));
+  // Two far points moved onto the limb, and the two crossings.
+  assert.equal(moved.length, 4);
+  for (const p of moved)
+    assert.ok(
+      Math.abs(fromCentre(p) - GLOBE.radius) < 1e-6,
+      `${p} on the limb`
+    );
+  // A ring wholly on the near side is the same ring; wholly behind, none.
+  const front = [
+    [0, 0],
+    [10, 0],
+    [10, 10],
+    [0, 0],
+  ];
+  assert.deepEqual(nearSideRing(front, GLOBE), front);
+  assert.equal(
+    nearSideRing(
+      front.map(([lon, lat]) => [lon + 170, lat]),
+      GLOBE
+    ),
+    null
+  );
 });

@@ -52,9 +52,11 @@ the reference example.
 
 For a long series video, follow [the long-episode recipe](references/long-episode-recipe.md)
 from research to approval 3. It records the operator's corrections on the Burkina
-Faso episode (19 October 2026): the animated satellite map carries the video,
-script written in map and picture phases, an animatic before any render, a
-pre-flight of every package check, one parallel render, and a composed thumbnail.
+Faso episode (19 October 2026): map and picture phases, an animatic before any
+render, a pre-flight of every package check, one parallel render, and a composed
+thumbnail. Its map-led opening and shared network duration are episode choices;
+use the current approved brief and later decisions in the series strategy for
+another episode.
 
 ## Start or resume
 
@@ -198,8 +200,11 @@ assemble a new delivery revision. Use `packageDir` at review 3. The helper check
 all media, copy, rights records and dependencies and rejects missing networks or
 an unsupported link route. Present `post.md` and the exact numbered images;
 never infer publication authorization from successful generation or approval 3.
-A video piece uses the same package with `kind: "video"`. Present `post.md`
-and the exact `video.mp4`.
+A video piece uses the same package with `kind: "video"` and always has one
+video per network: each network's cut of the subject, named by its
+adaptation, travels in the same piece, package and approval 3, never as a
+separate piece per network. Present `post.md` and each exact
+`video-<network>.mp4`.
 
 ## Retention
 

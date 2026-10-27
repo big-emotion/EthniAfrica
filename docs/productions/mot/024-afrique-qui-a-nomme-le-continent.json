@@ -1,0 +1,39 @@
+{
+  "campaign": "afrique-tout-01",
+  "typologie": "mot",
+  "episode": 24,
+  "question": {
+    "fr": "Qui a donné à tout le continent le nom Afrique ?"
+  },
+  "myth": {
+    "fr": "Le nom Afrique est-il venu de l'intérieur du continent ?"
+  },
+  "subjects": [],
+  "sitePath": "/fr/atlas/recherche/afrique",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7699153026358988054",
+      "publishedAt": "2026-10-22"
+    },
+    {
+      "network": "instagram",
+      "format": "video",
+      "url": "https://www.instagram.com/p/DeyV8woz3OK/",
+      "publishedAt": "2026-10-22"
+    },
+    {
+      "network": "facebook",
+      "format": "video",
+      "url": "https://www.facebook.com/reel/1871788940923994",
+      "publishedAt": "2026-10-22"
+    },
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=kstx3OGH-MI",
+      "publishedAt": "2026-10-22"
+    }
+  ]
+}

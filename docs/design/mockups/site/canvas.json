@@ -866,6 +866,114 @@
       "h": 4870,
       "expand": "fill",
       "title": "Mot race · 1440"
+    },
+    "search-peul-night-430.dc.html": {
+      "x": 5050,
+      "y": 0,
+      "w": 430,
+      "h": 5875,
+      "expand": "fill",
+      "title": "Résultat peul · mode nuit · 430"
+    },
+    "search-peul-night-768.dc.html": {
+      "x": 5510,
+      "y": 0,
+      "w": 768,
+      "h": 4109,
+      "expand": "fill",
+      "title": "Résultat peul · mode nuit · 768"
+    },
+    "search-peul-night-1440.dc.html": {
+      "x": 6318,
+      "y": 0,
+      "w": 1440,
+      "h": 3768,
+      "expand": "fill",
+      "title": "Résultat peul · mode nuit · 1440"
+    },
+    "country-nam-names-430.dc.html": {
+      "x": 0,
+      "y": 180000,
+      "w": 430,
+      "h": 900,
+      "expand": "fill"
+    },
+    "country-nam-names-768.dc.html": {
+      "x": 510,
+      "y": 180000,
+      "w": 768,
+      "h": 900,
+      "expand": "fill"
+    },
+    "country-nam-names-1440.dc.html": {
+      "x": 1358,
+      "y": 180000,
+      "w": 1440,
+      "h": 900,
+      "expand": "fill"
+    },
+    "country-bdi-names-430.dc.html": {
+      "x": 0,
+      "y": 181200,
+      "w": 430,
+      "h": 900,
+      "expand": "fill"
+    },
+    "country-bdi-names-768.dc.html": {
+      "x": 510,
+      "y": 181200,
+      "w": 768,
+      "h": 900,
+      "expand": "fill"
+    },
+    "country-bdi-names-1440.dc.html": {
+      "x": 1358,
+      "y": 181200,
+      "w": 1440,
+      "h": 900,
+      "expand": "fill"
+    },
+    "people-minyanka-names-430.dc.html": {
+      "x": 0,
+      "y": 182400,
+      "w": 430,
+      "h": 900,
+      "expand": "fill"
+    },
+    "people-minyanka-names-768.dc.html": {
+      "x": 510,
+      "y": 182400,
+      "w": 768,
+      "h": 900,
+      "expand": "fill"
+    },
+    "people-minyanka-names-1440.dc.html": {
+      "x": 1358,
+      "y": 182400,
+      "w": 1440,
+      "h": 900,
+      "expand": "fill"
+    },
+    "people-fula-names-430.dc.html": {
+      "x": 0,
+      "y": 183600,
+      "w": 430,
+      "h": 900,
+      "expand": "fill"
+    },
+    "people-fula-names-768.dc.html": {
+      "x": 510,
+      "y": 183600,
+      "w": 768,
+      "h": 900,
+      "expand": "fill"
+    },
+    "people-fula-names-1440.dc.html": {
+      "x": 1358,
+      "y": 183600,
+      "w": 1440,
+      "h": 900,
+      "expand": "fill"
     }
   },
   "order": [
@@ -876,6 +984,9 @@
     "search-peul-430.dc.html",
     "search-peul-768.dc.html",
     "search-peul-1440.dc.html",
+    "search-peul-night-430.dc.html",
+    "search-peul-night-768.dc.html",
+    "search-peul-night-1440.dc.html",
     "search-bassa-430.dc.html",
     "search-bassa-768.dc.html",
     "search-bassa-1440.dc.html",

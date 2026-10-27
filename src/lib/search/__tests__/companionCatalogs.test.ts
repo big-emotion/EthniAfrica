@@ -8,7 +8,6 @@ import type { Proverb } from "@/lib/proverbs/proverbs";
 import {
   anecdotesForTargets,
   eligibleSearchShorts,
-  formatProductionNameQuestion,
   proverbsForTargets,
   quizForTargets,
   searchShortPosterAlt,
@@ -17,6 +16,7 @@ import {
   shortsForWord,
   type SearchShort,
 } from "../companionCatalogs";
+import { formatProductionNameQuestion } from "@/lib/editorial/productionNameQuestion";
 import type { CompanionMatch, CompanionSubject } from "../companionRelations";
 
 const exactPeople: CompanionMatch[] = [

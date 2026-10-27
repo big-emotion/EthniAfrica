@@ -24,6 +24,7 @@ import {
 } from "./series-map.mjs";
 import { SEQUENCE_TIMING, moveCamera } from "./series-sequence.mjs";
 import { FPS, enter, project } from "./sequence.mjs";
+import { popAt, pushAt } from "./series-motion.mjs";
 import { OVERLAY_SCRIPT } from "./page.mjs";
 import { touaregDemo } from "./fixtures/series-touareg.mjs";
 
@@ -200,7 +201,12 @@ test("a name waits until its area is at 0.6, then takes 9 frames; its key item f
   while (areaOpacity(at, 1, IMUHAGH) < 0.6) at++;
   assert.equal(name(at), 0);
   assert.ok(areaOpacity(at - 1, 1, IMUHAGH) < 0.6);
-  assert.equal(name(at + 4), enter(4 / 9));
+  // 1.13.0: the 9 frames are the pop's.
+  assert.equal(name(at + 2), popAt(2).opacity);
+  assert.equal(
+    mapOf(at + 5, 1).names.find((n) => n.file === IMUHAGH).scale,
+    popAt(5).scale
+  );
   assert.equal(name(at + 9), 1);
   assert.equal(
     mapOf(start + 7, 1).keys[IMUHAGH],
@@ -214,9 +220,11 @@ test("a language enters on its own word over 9 frames, under its name, which nev
   const stack = (f) => mapOf(f, 3).names.find((n) => n.file === IMUHAGH);
   assert.equal(seq.mapSequence.entries[IMUHAGH].lang, word);
   assert.equal(stack(word - 1).langOpacity, 0);
-  assert.equal(stack(word + 4).langOpacity, enter(4 / 9));
+  assert.equal(stack(word + 2).langOpacity, popAt(2).opacity);
   assert.equal(stack(word + 9).langOpacity, 1);
-  assert.deepEqual(stack(word - 1).box, stack(word + 9).box);
+  // Its box follows its anchor under the push (1.13.0), never jumps.
+  assert.equal(stack(word - 1).box.h, stack(word + 9).box.h);
+  assert.ok(Math.abs(stack(word + 9).box.y - stack(word - 1).box.y) < 2);
   // In beat 1 the language is not said yet: its line is reserved, empty.
   const beat1 = mapOf(seq.cardStarts[2] - 10, 1).names;
   assert.ok(beat1.every((n) => n.lang && n.langOpacity === 0));
@@ -259,17 +267,28 @@ test("check 5: between two cards of one run the map is drawn once, never cross-f
 });
 
 // @req REQ-186
-test("the slow zoom runs once over the run, 100 to 104 %, not once per card", () => {
+test("1.13.0: no slow zoom; each still view pushes in 6 % every 10 s from its card's first frame", () => {
   const run = seq.mapSequence.runs[0];
-  const zoom = (f) => seriesFrameState(seq, f).layers.find((l) => l.map).zoom;
+  const layer = (f) => seriesFrameState(seq, f).layers.find((l) => l.map);
   assert.equal(run.from, seq.cardStarts[1] - 8);
   assert.equal(run.to, seq.cardStarts[4] - 1);
-  for (const f of [run.from, seq.cardStarts[2], seq.cardStarts[3], run.to])
+  for (const f of [
+    run.from,
+    seq.cardStarts[2] + 30,
+    seq.cardStarts[3] + 30,
+    run.to,
+  ]) {
+    const l = layer(f);
+    const shot = seq.mapSequence.shots[l.card];
+    assert.equal(l.zoom, 1);
     assert.ok(
-      Math.abs(zoom(f) - (1 + (0.04 * (f - run.from)) / (run.to - run.from))) <
-        1e-12,
+      Math.abs(
+        l.map.camera.radius -
+          seq.mapSequence.views[l.card].camera.radius * pushAt(f - shot.from)
+      ) < 1e-9,
       `frame ${f}`
     );
+  }
 });
 
 // @req REQ-186
@@ -278,10 +297,16 @@ test("check 6: the camera moves only during a card change, 27 frames, eased and 
   const views = seq.mapSequence.views;
   const camera = (f) =>
     seriesFrameState(seq, f).layers.find((l) => l.map).map.camera;
+  // Where the camera looks: its radius grows with the push (1.13.0).
   const moving = [];
   for (let f = run.from + 1; f <= run.to; f++)
-    if (JSON.stringify(camera(f)) !== JSON.stringify(camera(f - 1)))
+    if (
+      camera(f).lon !== camera(f - 1).lon ||
+      camera(f).lat !== camera(f - 1).lat
+    )
       moving.push(f);
+  const pushed = (card, f) =>
+    views[card].camera.radius * pushAt(f - seq.mapSequence.shots[card].from);
   const expected = [2, 3].flatMap((card) =>
     Array.from({ length: 27 }, (_, k) => changeStart(card) + 1 + k)
   );
@@ -293,10 +318,9 @@ test("check 6: the camera moves only during a card change, 27 frames, eased and 
     const [a, b] = [views[1].camera, views[2].camera];
     assert.ok(Math.abs(c.lon - (a.lon + (b.lon - a.lon) * t)) < 1e-9);
     assert.ok(Math.abs(c.lat - (a.lat + (b.lat - a.lat) * t)) < 1e-9);
+    const [ra, rb] = [pushed(1, cs + k), pushed(2, cs + k)];
     assert.ok(
-      Math.abs(
-        Math.log(c.radius) - Math.log(a.radius * (b.radius / a.radius) ** t)
-      ) < 1e-9
+      Math.abs(Math.log(c.radius) - Math.log(ra * (rb / ra) ** t)) < 1e-9
     );
     assert.equal(c.centreY, 1010);
     assert.equal(c.pitch, undefined);
@@ -306,8 +330,14 @@ test("check 6: the camera moves only during a card change, 27 frames, eased and 
     views[2].camera
   );
   // The return after the photograph is a cross-fade, not a move.
-  for (let f = changeStart(5) + 1; f <= seq.cardStarts[5] + 30; f++)
-    assert.deepEqual(mapOf(f, 5).camera, views[5].camera);
+  for (let f = changeStart(5) + 1; f <= seq.cardStarts[5] + 30; f++) {
+    const c = mapOf(f, 5).camera;
+    assert.deepEqual(
+      [c.lon, c.lat],
+      [views[5].camera.lon, views[5].camera.lat]
+    );
+    assert.ok(Math.abs(c.radius - pushed(5, f)) < 1e-9);
+  }
 });
 
 // @req REQ-186
