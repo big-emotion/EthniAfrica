@@ -87,8 +87,8 @@ later episode decisions.
   « L'importance de connaître nos noms. » replaces the signature line in every
   account's bio. How the closing cards and the video ending print it is a
   design-system rule (Cartes 1.10.0, accepted on 2026-10-19, words of
-  2026-10-27): the cards print the line above the invitation, in the 1.10.0
-  places, while the voice says the invitation first. The carousel renderer and
+  2026-10-27): the invitation first, on screen as in the voice, then the line,
+  the block in its 1.10.0 place. The carousel renderer and
   the series video engine draw it since PR #1894: the closing card's chunks
   are the five printed lines, the invitation's three first, and a closing card
   no longer prints a sentence of its own. The

@@ -45,7 +45,7 @@
     {
       "id": "seq-9",
       "file": "seq-9.png",
-      "sha256": "c31ac3ed371a78e67e622038d16df7750e932706b5592f113dae06eeb3c9cee4",
+      "sha256": "0a3afba746382e500cd7be64c1a8a9c89d7179b4fae5ccf1634defe2007ce9ed",
       "previousSha256": "21818b2242dca559c57d27d65915a3d62aea4112a84bea5f3fa0b1b7c795f731"
     },
     {
@@ -71,7 +71,7 @@
     {
       "id": "chr-5",
       "file": "chr-5.png",
-      "sha256": "e67917593d81c61bc944ae62a6e83471eb9e77b12b1b6de7f46d0b955be1bf1b",
+      "sha256": "56de306e52cd4b3189c8c0cba5330c85c7638fb86634ea6b3994201401a02788",
       "previousSha256": "f5e01a123236b425275a6b82d6d60c9b6ae755c7c0bb7e2f828de665bc891566"
     },
     {
@@ -127,7 +127,7 @@
     {
       "id": "seq-9-parchemin",
       "file": "seq-9-parchemin.png",
-      "sha256": "177fc5f70c53ca83688fc2d9335bc59dedd522729377adb98100331bccde9a5a",
+      "sha256": "840e172b17779966c6248cd96e43cd61a3bf022b00b2feb693731867cbfc1423",
       "previousSha256": "3dca3d8c34cf4cade0010d60c188a210302de00da9d2a6b8d6f991c99f1b0d67"
     },
     {
@@ -228,7 +228,7 @@
     {
       "id": "serie-pays-07",
       "file": "serie-pays-07.png",
-      "sha256": "69252f2305c8cf4bae072b8d9aa664bdddced353f87fea2652086bd9d1967b38",
+      "sha256": "4d7ec6ce0e0dd398484284e61cc288c8dfcc1663011a69e6392d1f7a6aead933",
       "previousSha256": "e47d1edf021549d84280e687315b9ef390ff21a4ca62fd476f4fa18ff8b72767"
     },
     {
@@ -269,7 +269,7 @@
     {
       "id": "serie-nom-recu-08",
       "file": "serie-nom-recu-08.png",
-      "sha256": "1e1f0b85687b1170b16dc05b3ed02cecd2af5a0c3221ef169c45532dcc85dcfd",
+      "sha256": "b2427db31eb8ed495c94a38d4ace720db639f69a070f70be487211741c5f92f8",
       "previousSha256": "80e2a09a72a238b67c35adcb1b5e478c5206908bf6821d3fca846bd9b1a160b1"
     },
     {
@@ -305,7 +305,7 @@
     {
       "id": "serie-nom-famille-07",
       "file": "serie-nom-famille-07.png",
-      "sha256": "abbcdfae351e4bc2a72284dc8f3e4c5622f8ff81a08159b4ca3821dd69c79c3d",
+      "sha256": "c7f338523c0380268304a5fc166d90ca2adde7d505b8954dc1d76cb6217e5aa8",
       "previousSha256": "f363720d98c08313df32e64796d29f5abb2fb7f19094d24019e7dc9525e71b3f"
     },
     {
@@ -341,7 +341,7 @@
     {
       "id": "serie-mots-07",
       "file": "serie-mots-07.png",
-      "sha256": "d9e46051ca9d9248fb3251694d317775cf368c9d1c12c32d687474b5bbaab098",
+      "sha256": "52758ccef77e502fe7f2c9fa82e586192d37f04ecf7335ab6b08973d447730df",
       "previousSha256": "d1fc627dbea8abe1cc7b45e89f325564b54244707ee21629bee2508b8eb224a4"
     },
     {
@@ -377,7 +377,7 @@
     {
       "id": "serie-frontieres-07",
       "file": "serie-frontieres-07.png",
-      "sha256": "f7f3501c70c5628102f773677bea7f9c54942a95f42123c6b6de1e38910b1d60",
+      "sha256": "ed8161eba0ff09c3ac26e3091a1b4b079af466a12cda19204f4ed01ca1c8ab97",
       "previousSha256": "189eb2d6669630f59c5ac936e70ceded4c575ae800a76b4345ddb5bac9d5ea88"
     },
     {
@@ -413,7 +413,7 @@
     {
       "id": "serie-afrique-tout-07",
       "file": "serie-afrique-tout-07.png",
-      "sha256": "77a4b7c26f6d78d3045b0f914e8aebb3bcb49d358eb88d3a7dc2cbc9c320d08e",
+      "sha256": "b9b784a8bcea3a15d696d38b3e5b6d388fa2c0bcf72599559f3de0e8125e2a50",
       "previousSha256": "84b816863dea5801f17606bc698f176125c325763177f036ee6e53ca0eba8539"
     },
     {
@@ -444,7 +444,7 @@
     {
       "id": "serie-villes-06",
       "file": "serie-villes-06.png",
-      "sha256": "19a0c9fe4a7d2e53691ff48259781399379fa84375a01c543f237856aa26697c",
+      "sha256": "0af43d0a5a9255aae5fc188b69458bf72124d54b8acca83bf2716e61640976c3",
       "previousSha256": "71dff916b45c44a794999b2e8c47e80e40fd2fe1026d2cce9c3cf9b583b472bf"
     },
     {
@@ -869,7 +869,7 @@
   },
   "closing-words-2026-10-27": {
     "date": "2026-10-27",
-    "decision": "Operator: « Tu changes la formule pour toutes les vidéos, oui ». The closing line becomes « EthniAfrica : l’importance de connaître nos noms. » (two lines, top still at y 760) and the invitation « Vous pouvez continuer la recherche sur EthniAfrica et vous abonner pour découvrir de nouvelles publications. » (three lines); words only, same places, faces and sizes, no design version. Rendered in diagnostic mode on the pinned browser: the 79 cards that are not closing cards pass against design-system-1.10.0-accepted, so their references and hashes stay; the ten closing cards change by design, fit without warning (panel 632 to 806 px, under 828 or 900) and take the new renders. Each records its previous hash. No tolerance changed.",
+    "decision": "Operator: « Tu changes la formule pour toutes les vidéos, oui ». Every closing card prints first the invitation « Vous pouvez continuer la recherche sur EthniAfrica et vous abonner pour découvrir de nouvelles publications. » (three lines, its top at y 760, the closing block's 1.10.0 place), then the closing line « EthniAfrica : l’importance de connaître nos noms. » (two lines, top at y 923); the alternative text ends with both in that order. Same faces and sizes, no design version. Rendered in diagnostic mode on the pinned browser: the 79 cards that are not closing cards pass against design-system-1.10.0-accepted, so their references and hashes stay; the ten closing cards change by design, fit without warning (panel 632 to 806 px, under 828 or 900) and take the new renders. Each records its previous hash. No tolerance changed.",
     "references": ".local/research/social-production-2026-10-09/design-system-closing-2026-10-27-accepted/",
     "changed": [
       "seq-9",

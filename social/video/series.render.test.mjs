@@ -174,29 +174,34 @@ test("the ending: block from y 318, centred signature ending on y 1884", () => {
   assert.match(end.text, /ETHNIAFRICA\.COM/);
 });
 
-// The closing words of 27 October 2026 in the 1.10.0 places: the line first,
-// in the signature line's face, then the invitation, now on three lines.
+// The closing of 27 October 2026, printed in the order the voice says it:
+// the invitation from y 318 on three lines, then the closing line in the
+// signature line's face, 28 px under it, then the pill.
 // @req REQ-186
-test("1.10.0: the ending draws the closing line on two lines from y 318, then the invitation and the pill", () => {
+test("the ending draws the invitation from y 318, then the closing line on two lines and the pill", () => {
   const end = frames.at(-1);
   const flat = end.text.replace(/\s+/gu, " ");
-  for (const text of [
-    "EthniAfrica : l’importance de connaître nos noms.",
+  const said = [
     "Vous pouvez continuer la recherche sur EthniAfrica et vous abonner pour découvrir de nouvelles publications.",
-  ])
-    assert.ok(flat.includes(text), `${text}: ${flat}`);
+    "EthniAfrica : l’importance de connaître nos noms.",
+  ];
+  for (const text of said) assert.ok(flat.includes(text), `${text}: ${flat}`);
+  assert.ok(flat.indexOf(said[0]) < flat.indexOf(said[1]), flat);
   assert.doesNotMatch(
     flat,
     /décoloniser|Cherchez|raconter l.origine des noms|lien en profil/i
   );
-  const [line, invitation] = end.boxes.filter((b) => b.kind === "ending");
-  assert.ok(Math.abs(line.y - 318) <= 0.5, `line at ${line.y}`);
-  assert.ok(Math.abs(line.h - 2 * 64) <= 1, `two lines of 64 px: ${line.h}`);
-  assert.ok(Math.abs(invitation.y - 474) <= 1, `invitation at ${invitation.y}`);
+  const [invitation, line] = end.boxes.filter((b) => b.kind === "ending");
+  assert.ok(
+    Math.abs(invitation.y - 318) <= 0.5,
+    `invitation at ${invitation.y}`
+  );
   assert.ok(
     Math.abs(invitation.h - 3 * 40) <= 1,
     `three lines: ${invitation.h}`
   );
+  assert.ok(Math.abs(line.y - 466) <= 1, `line at ${line.y}`);
+  assert.ok(Math.abs(line.h - 2 * 64) <= 1, `two lines of 64 px: ${line.h}`);
   // Without a next episode the block ends at the pill (series.md, 1.10.0),
   // 40 px lower than in 1.10.0: the invitation's third line.
   const pill = end.boxes.find((b) => b.kind === "pill");

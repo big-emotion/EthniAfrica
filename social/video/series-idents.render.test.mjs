@@ -78,6 +78,10 @@ test("the end card closes the video in place of the 1.10.0 ending", () => {
     /Vous pouvez continuer la recherche sur EthniAfrica et vous abonner pour découvrir de nouvelles publications\./
   );
   assert.doesNotMatch(end.ident.text, /lien en profil/);
+  assert.ok(
+    end.ident.text.indexOf("Vous pouvez") < end.ident.text.indexOf("connaître"),
+    "the end card prints the invitation before the line"
+  );
   assert.match(end.ident.text, /Prochain épisode\s*:\s*Le nom Burkina Faso/);
   assert.match(end.ident.text, /@ethniafrica/);
   assert.doesNotMatch(

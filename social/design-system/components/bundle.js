@@ -34,20 +34,23 @@
  /* 1.10.0: the closing line and the closing invitation replace the 1.6.0
      signature line and the « Cherchez [nom] » invitation. Two constants, never
      card fields; each printed line set without wrapping.
-     Operator, 27 October 2026: new words in the same places. The voice says
-     the invitation first, then the line; the card keeps the line above. */
+     Operator, 27 October 2026: new words. The voice says
+     the invitation first, then the line, and the card prints them in that
+     order; the block keeps the 1.10.0 place (its top at y 760). */
   var SIGNATURE_LINE = ['EthniAfrica : l’importance de', 'connaître nos noms.'];
   var SIGNATURE_TEXT = SIGNATURE_LINE.join(' ');
   var INVITATION_LINES = ['Vous pouvez continuer la recherche', 'sur EthniAfrica et vous abonner', 'pour découvrir de nouvelles publications.'];
   var INVITATION_TEXT = INVITATION_LINES.join(' ');
-  var CLOSING_TEXT = SIGNATURE_TEXT + ' ' + INVITATION_TEXT;
+  var CLOSING_TEXT = INVITATION_TEXT + ' ' + SIGNATURE_TEXT;
   function invitation() {
     var d = el('div', 'ec-body ec-body--center ec-invite');
     d.setAttribute('lang', 'fr');
     INVITATION_LINES.forEach(function (t) { d.appendChild(el('span', '', esc(t))); });
     return d;
   }
-  var SIGLINE_Y = 760; /* top of the line's first line box on every closing card */
+  /* Top of the closing block on every closing card: the line's until 27
+     October 2026, the invitation's since (the block keeps its place). */
+  var SIGLINE_Y = 760;
   function sigLine() {
     var d = el('div', 'ec-sigline');
     d.setAttribute('lang', 'fr');
@@ -732,7 +735,7 @@
       p.appendChild(el('div', dcls, fr(spec.date.display)));
     }
     if (spec.recap) p.appendChild(recap(spec.recap));
-    if (type === 'closing') { p.appendChild(sigLine()); p.appendChild(invitation()); }
+    if (type === 'closing') { p.appendChild(invitation()); p.appendChild(sigLine()); }
     else if (spec.title) p.appendChild(el('h2', 'ec-title' + (type === 'opener' ? ' ec-title--xl' : (type === 'map' ? ' ec-title--m' : '')), fr(spec.title)));
     if (spec.date && spec.date.branches) {
       var br = el('div', 'ec-branches');
@@ -814,12 +817,14 @@
     report.panelMax = pmax;
     var sl = spec.type === 'closing' ? p.querySelector('.ec-sigline') : null;
     if (spec.type === 'closing' && spec.body) report.warnings.push('Phrase propre de la carte de clôture non imprimée : la fin est fixe (1.10.0). La placer sur la dernière carte de contenu.');
+    var block = sl ? p.querySelector('.ec-invite') || sl : null;
     if (sl) {
-      /* 1.6.0: the line's top sits at SIGLINE_Y on every closing card. The gap
-         between the pill and the credit takes up what the invitation and the
+      /* 1.6.0: the closing block's top sits at SIGLINE_Y on every closing card
+         (the line's top until 27 October 2026, the invitation's since). The
+         gap between the pill and the credit takes up what the block and the
          credit leave; the kicker and the recap grow the panel upwards. The
-         panel is bottom-anchored, so the line's top is H - panel + offset. */
-      var lineTop = function () { return H - measure() + (sl.getBoundingClientRect().top - p.getBoundingClientRect().top) / sc; };
+         panel is bottom-anchored, so the block's top is H - panel + offset. */
+      var lineTop = function () { return H - measure() + (block.getBoundingClientRect().top - p.getBoundingClientRect().top) / sc; };
       var natural = lineTop(), gap = Math.round(natural - SIGLINE_Y);
       if (gap < 0) report.warnings.push('Ligne de signature poussée hors de sa place (' + Math.round(natural) + ' px au lieu de ' + SIGLINE_Y + ') : l’invitation ou le crédit est trop long.');
       card._gap.style.height = Math.max(0, gap) + 'px';
@@ -888,13 +893,16 @@
         var b = box(n);
         if (b.bottom > lb.top + 0.5 && b.top < lb.bottom - 0.5) overlaps++;
       });
+      var bb = box(block);
+      report.sigline.blockTop = Math.round(bb.top * 10) / 10;
       report.sigline.top = Math.round(lb.top * 10) / 10;
       report.sigline.left = Math.round(lb.left);
       report.sigline.right = Math.round(lb.right);
       report.sigline.text = Array.prototype.map.call(spans, function (s) { return s.textContent; }).join(' ');
       report.sigline.lines = Math.round((lb.bottom - lb.top) / 64);
       report.sigline.overlaps = overlaps;
-      if (Math.abs(lb.top - SIGLINE_Y) > 0.5 && report.sigline.gap >= 0 && report.warnings.every(function (w) { return w.indexOf('Ligne de signature') < 0; })) report.warnings.push('Ligne de signature hors de sa place (' + report.sigline.top + ' px au lieu de ' + SIGLINE_Y + ').');
+      if (block !== sl && lb.top < bb.bottom) report.warnings.push('Ligne de fin au-dessus de l’invitation : l’invitation vient d’abord.');
+      if (Math.abs(bb.top - SIGLINE_Y) > 0.5 && report.sigline.gap >= 0 && report.warnings.every(function (w) { return w.indexOf('Ligne de signature') < 0; })) report.warnings.push('Ligne de signature hors de sa place (' + report.sigline.blockTop + ' px au lieu de ' + SIGLINE_Y + ').');
       var expected = SIGNATURE_LINE.length;
       if (report.sigline.lines !== expected) report.warnings.push('Ligne de fin sur ' + report.sigline.lines + ' lignes au lieu de ' + expected + '.');
       if (overlaps) report.warnings.push('Un texte chevauche la ligne de signature.');
@@ -1058,7 +1066,7 @@
     if (spec.note) parts.push(plain(spec.note));
     if (spec.recap) parts.push(spec.recap.map(function (r) { return plain(r.date) + ' : ' + plain(r.name); }).join(' ; '));
     if (spec.cta) parts.push(plain(spec.cta.domain || 'ethniafrica.com'));
-    if (spec.type === 'closing') parts.push(CLOSING_TEXT); /* 1.10.0: the alternative text ends with the closing line and the invitation, word for word */
+    if (spec.type === 'closing') parts.push(CLOSING_TEXT); /* the alternative text ends with the invitation and the closing line, word for word, in the printed order (27 October 2026) */
     return parts.join('. ').replace(/\.\s*\./g, '.');
   }
 

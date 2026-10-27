@@ -391,8 +391,8 @@ belong to the engine's hash in the manifest.
 
 The on-screen text of a series video is every string its cards print, read
 from the loaded cards (chapter cards and the chapter kicker included), each
-subtitle chunk, and on the closing card the signature line and the search
-invitation, which the card prints while the voice says them. Image fields,
+subtitle chunk, and on the closing card the fixed invitation and the closing
+line, in that order, which the card prints while the voice says them. Image fields,
 identifiers, map file names and `say` are left out. Credits list each card's
 source line, its map caption's source and its image credit. A clip card is
 credited by its footage instead: one line per distinct source video across
