@@ -120,8 +120,12 @@ located attestation, official adoption and diffusion. A recorded author is not
 necessarily the inventor. State an unknown date plainly, but never add a
 sentence announcing that nobody knows who chose a name or why (« on ne sait pas
 pourquoi ses parents ont choisi ce prénom »): say what the traces show and who
-proposes which reading. `check:publication` blocks it; see
-[script lessons §13](references/script-lessons.md).
+proposes which explanation. `check:publication` blocks it; see
+[script lessons §13](references/script-lessons.md). Never use « lecture » for an
+interpretation (« la lecture la plus ancienne »); introduce every person in a few
+words on first mention; cite archives for showing the name, never the
+individuals' full names; settle content and sources beat by beat before style
+([§14](references/script-lessons.md)).
 Explain antecedent names and older entities without confusing their age with the
 birth of today's name. Uganda's connection to Buganda is a research question,
 not proof that Buganda's own origin is fully explained.

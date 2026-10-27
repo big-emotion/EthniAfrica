@@ -110,7 +110,7 @@ describe("plain-language editorial contract", () => {
       "On ignore qui a donné ce nom à l'enfant.",
     ];
     const allowed = [
-      "Cette lecture est attribuée à un missionnaire.",
+      "Cette explication est attribuée à un missionnaire.",
       "Cette explication reste une hypothèse non établie par les sources.",
       // About a word's attested form, not a family's motive: the sources
       // describe the form, they do not withhold a choice.
@@ -140,6 +140,64 @@ describe("plain-language editorial contract", () => {
     );
     expect(avowed.filter((text) => !flagged.has(text))).toEqual([]);
     expect(allowed.filter((text) => flagged.has(text))).toEqual([]);
+  });
+
+  // The operator, 27 October 2026: « C'est la lecture la plus ancienne =>
+  // j'interdis à tout jamais l'usage de ce terme, "la lecture". » The ban is
+  // total by default, so a new phrasing cannot slip through; only fixed
+  // collocations where « lecture » is the act of reading or playback pass.
+  // @req REQ-178
+  it("blocks « lecture » as an interpretation and keeps the act of reading", () => {
+    const interpretive = [
+      "C'est la lecture la plus ancienne.",
+      "Une lecture attribuée à un missionnaire relie le nom au fleuve.",
+      "Selon la lecture de Ndaywel, le mot vient de nzadi.",
+      "Selon cette lecture, le nom désigne le fleuve.",
+      "Il existe deux lectures du mot.",
+      "Les lectures proposées ne s'accordent pas.",
+      "Une deuxième lecture le fait venir de l'expression amazighe.",
+      "La contre-lecture",
+      "Le mot vient d'une grille de lecture biblique.",
+      "Le classement repose sur notre lecture des fiches.",
+      "LECTURE RETENUE : le fleuve.",
+    ];
+    const actOfReading = [
+      "Les missions ont enseigné la lecture et l'écriture.",
+      "Peu utilisé pour la lecture et l'écriture jusqu'à récemment.",
+      "Apprendre la lecture et l'écriture en kikongo.",
+      "Article de revue à comité de lecture.",
+      "Revue a comite de lecture, OpenEdition.",
+      "Guide de lecture scolaire qui cite la phrase.",
+      "Lu sur la copie de la salle de lecture de la CIA.",
+      "Il propose qu'une erreur de lecture ait été recopiée.",
+      "Elle l'enseigne avec un livre de lecture en nǀuu.",
+      "À la suite d'un article de Lectures pour tous d'octobre 1899.",
+      "Lecture seule",
+      "Lecture de vidéos tierces",
+      "Lorsque vous demandez la lecture d’une production sur le site.",
+      "Lecture du registre…",
+      "Le lien de la barre de lecture de cette page vise le chapitre.",
+      "Le hub de lecture",
+      "Lectures courtes",
+      "Les peuples sont regroupés pour faciliter la lecture.",
+      "Le lecteur de YouTube se charge après votre clic.",
+    ];
+    const units = [...interpretive, ...actOfReading].map((text, i) => ({
+      file: "script.txt",
+      location: String(i),
+      text,
+    }));
+    const flagged = new Set(
+      lintCopy(units)
+        .filter(
+          (f) =>
+            f.rule === "Ethniafrica.NoLectureForInterpretation" &&
+            f.severity === "error"
+        )
+        .map((f) => f.unit.text)
+    );
+    expect(interpretive.filter((text) => !flagged.has(text))).toEqual([]);
+    expect(actOfReading.filter((text) => flagged.has(text))).toEqual([]);
   });
 
   // @req REQ-178

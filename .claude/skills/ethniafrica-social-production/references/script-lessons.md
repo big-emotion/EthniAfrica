@@ -198,13 +198,13 @@ Lines the operator struck from a script:
 
 Why: the sentence adds nothing the viewer can use, closes the beat on an empty
 hand, and makes the episode sound unfinished. The trace itself is the answer:
-who records the name, where, when, and which reading someone proposes.
+who records the name, where, when, and which explanation someone proposes.
 
 - Write what the sources show: « Les actes de [lieu, années] montrent que
   [nombre] familles ont donné le prénom « Zaïre » à un enfant. »
-- An attributed reading or an unproven hypothesis is still said as such
-  (« selon… », « une lecture attribuée à… », « une hypothèse »). What goes is the
-  extra sentence announcing what nobody knows about the choice.
+- An attributed explanation or an unproven hypothesis is still said as such
+  (« selon… », « une explication attribuée à… », « une hypothèse »). What goes is
+  the extra sentence announcing what nobody knows about the choice.
 - If the motive is the subject and no source gives one, cut the beat or change
   the question; do not fill it with the absence.
 
@@ -212,6 +212,35 @@ who records the name, where, when, and which reading someone proposes.
 (`Ethniafrica.NamingMotiveIgnorance`, `.vale/styles/Ethniafrica/`). The check
 looks for a naming context (choisi, choix, donné ce nom, porte ce nom…), so it
 misses paraphrases: reread for the intent, not only the words.
+
+## 14. Four rules from the « Zaïre » script (27 October 2026)
+
+**a. Never « lecture » for an interpretation.** On « C'est la lecture la plus
+ancienne », the operator: « j'interdis à tout jamais l'usage de ce terme, "la
+lecture" ». Say « l'explication la plus ancienne », « une hypothèse », or name who
+proposes it (« en 1887, le missionnaire William Holman Bentley écrit que les
+Européens ont déformé nzadi, « le grand fleuve », en Zaïre »). This also rules out « selon cette lecture », « deux lectures du mot »,
+« une lecture attribuée à… ». « Lecture » as the act of reading (« apprendre la
+lecture et l'écriture ») stays. `npm run check:publication` refuses every other
+use (`Ethniafrica.NoLectureForInterpretation`).
+
+**b. Introduce every person the first time, in a few words.** « Qui est
+Afonso ? Merci de faire attention à présenter les gens un minimum. » A king, a
+navigator or a historian gets a role on first mention: « Afonso Ier, roi du Kongo
+à partir de 1506 », « le navigateur portugais Diogo Cão ». This extends §5 to
+every name, not only the scholars whose claims are quoted.
+
+**c. Archives are cited for showing the name, not the people.** « En
+Martinique, des archives font apparaître le nom… sans présenter les prénoms et
+noms en entier. » When civil records show that families gave a name, say where
+and when the records show it. Do not read out or display the full first and last
+names of the individuals in them.
+
+**d. Build the narration step by step: content and sources first, style
+afterwards.** Settle what each beat says and which saved passage supports it
+before working on the hook, rhythm or wording. A polished line on an unchecked
+fact has to be rewritten anyway. Present the beats with their sources, then the
+styled version.
 
 ## The approved script (v6.1, 2026-10-15)
 

@@ -32,6 +32,13 @@ choisi ce prénom », « on n'a pas de piste »; operator, 2026-10-27): state th
 attested trace and the attributed readings. The Vale rule
 `Ethniafrica.NamingMotiveIgnorance` blocks the common forms.
 
+Never write « lecture » for an interpretation of a word or name (« la lecture la
+plus ancienne », « selon cette lecture », « deux lectures du mot »; operator,
+2026-10-27: « j'interdis à tout jamais l'usage de ce terme »). Write
+« explication », « hypothèse », or name who proposes it. « Lecture » as the act
+of reading (« la lecture et l'écriture », « comité de lecture ») stays. The Vale
+rule `Ethniafrica.NoLectureForInterpretation` blocks every other use.
+
 The research notes record how the project was made. Published prose explains the
 subject, what supports it and what remains unsettled. Keep those registers apart.
 
