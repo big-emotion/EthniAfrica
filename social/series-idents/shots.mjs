@@ -67,42 +67,47 @@ export const OUTRO = {
   id: "outro",
   file: "endcard.html",
   duration: 8.0,
+  // The operator's closing of 27 October 2026: the invitation first, then the
+  // line. Said at 16 characters a second it lasts about 9.8 s, longer than
+  // the 8 s card, which holds its last frame (social/video/series.mjs) until
+  // the voice ends. The pictures keep their 19 October order (the line
+  // first); re-timing them on the real voice is step 3b of the README.
   voice:
-    "L'importance de connaître nos noms. Vous pouvez continuer la recherche sur EthniAfrica, lien en profil.",
+    "Vous pouvez continuer la recherche sur EthniAfrica et vous abonner pour découvrir de nouvelles publications. EthniAfrica : l'importance de connaître nos noms.",
   shots: [
     {
       id: "o1-line",
       t: 1.6,
       at: 0.0,
-      say: "L'importance de connaître nos noms.",
-      does: "La phrase du projet, seule, pendant que la voix la dit.",
+      say: "Vous pouvez continuer la recherche",
+      does: "La phrase du projet, seule, pendant que la voix commence l'invitation.",
     },
     {
       id: "o2-search",
       t: 3.3,
-      at: 2.35,
-      say: "Vous pouvez continuer la recherche",
+      at: 2.15,
+      say: "sur EthniAfrica et vous abonner",
       does: "La phrase monte ; le téléphone revient avec le nom déjà tapé, et le doigt appuie sur Rechercher.",
     },
     {
       id: "o3-result",
       t: 4.9,
-      at: 4.0,
-      say: "sur EthniAfrica,",
+      at: 4.1,
+      say: "pour découvrir de nouvelles publications.",
       does: "La réponse se construit : « Vous avez cherché… », puis le nom que le peuple se donne.",
     },
     {
       id: "o4-forms",
       t: 6.2,
-      at: 4.95,
-      say: "lien en profil.",
-      does: "Les appellations arrivent une à une, côte à côte.",
+      at: 6.7,
+      say: "EthniAfrica : l'importance de connaître nos noms.",
+      does: "Les appellations arrivent une à une, côte à côte ; la voix redit la phrase du projet.",
     },
     {
       id: "o5-end",
       t: 7.6,
-      at: 6.0,
-      say: "(la voix est finie)",
+      at: 9.8,
+      say: "(la voix finit sur l'image tenue)",
       does: "La phrase, l'invitation, le logo, ethniafrica.com et le repère vers le nom du compte.",
     },
   ],

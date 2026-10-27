@@ -21,8 +21,9 @@ const model = JSON.parse(
 export const CARDS = fileURLToPath(
   new URL("../../design-system/handoff/cards.sample.json", import.meta.url)
 );
-// The accepted ending (Cartes 1.10.0): the closing line and the invitation,
-// voiced one printed line per chunk, at about 16 characters a second.
+// The accepted ending (Cartes 1.10.0, words of 27 October 2026): the
+// invitation, then the closing line, voiced one printed line per chunk, at
+// about 16 characters a second.
 const { signatureLines, invitationLines } = JSON.parse(
   readFileSync(
     new URL("../../design-system/version.json", import.meta.url),
@@ -33,7 +34,7 @@ const { signatureLines, invitationLines } = JSON.parse(
 const LEAD = 0.6;
 const round = (s) => Math.round(s * 1000) / 1000;
 export const closingChunks = () =>
-  [...signatureLines, ...invitationLines].map((text) => ({
+  [...invitationLines, ...signatureLines].map((text) => ({
     text,
     duration: round([...text].length / 16),
   }));

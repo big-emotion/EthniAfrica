@@ -74,17 +74,24 @@ later episode decisions.
   name used in French. It does not mean the name comes from French, always
   differs from local names, or is colonial. Each case is explained from its
   sources, pejorative, racialising or political uses included.
-- **Closing, spoken last:** « L'importance de connaître nos noms. Vous pouvez
-  continuer la recherche sur EthniAfrica, lien en profil. » It replaces, at the
-  end of the video, both the signature line and the search sentence
-  « Cherchez [nom] sur EthniAfrica, lien en profil. ». The signed « nous
-  pensons » paragraph still comes just before it. The same closing ends every
-  carousel and every caption, and « L'importance de connaître nos noms. »
-  replaces the signature line in every account's bio. How the closing cards
-  and the video ending print it is a design-system rule (Cartes 1.10.0,
-  accepted on 2026-10-19). The carousel renderer and the series video engine
-  draw it since PR #1894: the closing card's chunks are the four printed
-  lines, and a closing card no longer prints a sentence of its own. The
+- **Closing, spoken last** (operator, 2026-10-27: « Tu changes la formule pour
+  toutes les vidéos, oui »), in this order: « Vous pouvez continuer la
+  recherche sur EthniAfrica et vous abonner pour découvrir de nouvelles
+  publications. EthniAfrica : l'importance de connaître nos noms. » From
+  2026-10-19 to 2026-10-26 it was « L'importance de connaître nos noms. Vous
+  pouvez continuer la recherche sur EthniAfrica, lien en profil. »; pieces
+  published then keep it. It replaces, at the end of the video, both the
+  signature line and the search sentence « Cherchez [nom] sur EthniAfrica,
+  lien en profil. ». The signed « nous pensons » paragraph still comes just
+  before it. The same closing ends every carousel and every caption, and
+  « L'importance de connaître nos noms. » replaces the signature line in every
+  account's bio. How the closing cards and the video ending print it is a
+  design-system rule (Cartes 1.10.0, accepted on 2026-10-19, words of
+  2026-10-27): the cards print the line above the invitation, in the 1.10.0
+  places, while the voice says the invitation first. The carousel renderer and
+  the series video engine draw it since PR #1894: the closing card's chunks
+  are the five printed lines, the invitation's three first, and a closing card
+  no longer prints a sentence of its own. The
   satellite map videos and the clipped reels end the same way since the
   operator's decision of 2026-10-19: they print the same closing line and
   invitation, each in its own ending's sizes and place.
@@ -257,9 +264,12 @@ biggest posts. The one link that converts is the profile link (105 taps in 30
 days).
 
 - **Every caption ends with the same sentence, no link block, no hashtag wall**
-  (since 2026-10-19): « L'importance de connaître nos noms. Vous pouvez
-  continuer la recherche sur EthniAfrica, lien en profil. » It replaces
-  « Cherchez [nom] sur EthniAfrica, lien en profil. ».
+  (since 2026-10-27): « Vous pouvez continuer la recherche sur EthniAfrica et
+  vous abonner pour découvrir de nouvelles publications. EthniAfrica :
+  l'importance de connaître nos noms. » From 2026-10-19 to 2026-10-26 it was
+  « L'importance de connaître nos noms. Vous pouvez continuer la recherche sur
+  EthniAfrica, lien en profil. », which replaced « Cherchez [nom] sur
+  EthniAfrica, lien en profil. ».
 - **A short line of targeted hashtags** (operator, 2026-10-19), on every
   network, just before that closing sentence so the caption still ends with
   it: four or five tags about the episode, always ending with `#EthniAfrica`

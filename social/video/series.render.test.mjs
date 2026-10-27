@@ -174,28 +174,34 @@ test("the ending: block from y 318, centred signature ending on y 1884", () => {
   assert.match(end.text, /ETHNIAFRICA\.COM/);
 });
 
+// The closing words of 27 October 2026 in the 1.10.0 places: the line first,
+// in the signature line's face, then the invitation, now on three lines.
 // @req REQ-186
 test("1.10.0: the ending draws the closing line on two lines from y 318, then the invitation and the pill", () => {
   const end = frames.at(-1);
   const flat = end.text.replace(/\s+/gu, " ");
   for (const text of [
-    "L’importance de connaître nos noms.",
-    "Vous pouvez continuer la recherche sur EthniAfrica, lien en profil.",
+    "EthniAfrica : l’importance de connaître nos noms.",
+    "Vous pouvez continuer la recherche sur EthniAfrica et vous abonner pour découvrir de nouvelles publications.",
   ])
     assert.ok(flat.includes(text), `${text}: ${flat}`);
   assert.doesNotMatch(
     flat,
-    /décoloniser|Cherchez|raconter l.origine des noms/i
+    /décoloniser|Cherchez|raconter l.origine des noms|lien en profil/i
   );
   const [line, invitation] = end.boxes.filter((b) => b.kind === "ending");
   assert.ok(Math.abs(line.y - 318) <= 0.5, `line at ${line.y}`);
   assert.ok(Math.abs(line.h - 2 * 64) <= 1, `two lines of 64 px: ${line.h}`);
   assert.ok(Math.abs(invitation.y - 474) <= 1, `invitation at ${invitation.y}`);
-  assert.ok(Math.abs(invitation.h - 2 * 40) <= 1, `two lines: ${invitation.h}`);
-  // Without a next episode the block ends at the pill (series.md, 1.10.0).
+  assert.ok(
+    Math.abs(invitation.h - 3 * 40) <= 1,
+    `three lines: ${invitation.h}`
+  );
+  // Without a next episode the block ends at the pill (series.md, 1.10.0),
+  // 40 px lower than in 1.10.0: the invitation's third line.
   const pill = end.boxes.find((b) => b.kind === "pill");
   assert.ok(
-    Math.abs(pill.y + pill.h - 658) <= 1,
+    Math.abs(pill.y + pill.h - 698) <= 1,
     `pill ends at ${pill.y + pill.h}`
   );
   assert.doesNotMatch(flat, /Prochain épisode/);

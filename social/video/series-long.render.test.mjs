@@ -123,8 +123,10 @@ test("1.7.0: the quoted person sits above the subtitles, bottom at y 1296", () =
   assert.match(flat(f.text), /Florence Abena Dolphyne/);
 });
 
+// 40 px lower than 1.10.0's y 728: the invitation's third line (27 October
+// 2026).
 // @req REQ-186
-test("1.10.0: the next episode under the pill, the block ending at y 728", () => {
+test("1.10.0: the next episode under the pill, the block ending at y 768", () => {
   const end = frames.at(-1);
   assert.match(flat(end.text), /Prochain épisode : le pays des Noirs/);
   const block = end.boxes.filter(
@@ -132,7 +134,7 @@ test("1.10.0: the next episode under the pill, the block ending at y 728", () =>
   );
   for (const b of block) assert.ok(b.y >= 317.5, `${b.id}: ${b.y}`);
   const bottom = Math.max(...block.map((b) => b.y + b.h));
-  assert.ok(Math.abs(bottom - 728) <= 1, `the block ends at ${bottom}`);
+  assert.ok(Math.abs(bottom - 768) <= 1, `the block ends at ${bottom}`);
 });
 
 // @req REQ-186

@@ -21,19 +21,31 @@
   "videoLayout": "full",
   "videoMapCards": "satellite",
   "videoMapSequence": true,
-  "signatureLine": "L’importance de connaître nos noms.",
-  "signatureLines": ["L’importance de", "connaître nos noms."],
-  "invitation": "Vous pouvez continuer la recherche sur EthniAfrica, lien en profil.",
+  "signatureLine": "EthniAfrica : l’importance de connaître nos noms.",
+  "signatureLines": ["EthniAfrica : l’importance de", "connaître nos noms."],
+  "invitation": "Vous pouvez continuer la recherche sur EthniAfrica et vous abonner pour découvrir de nouvelles publications.",
   "invitationLines": [
     "Vous pouvez continuer la recherche",
-    "sur EthniAfrica, lien en profil."
+    "sur EthniAfrica et vous abonner",
+    "pour découvrir de nouvelles publications."
   ],
+  "closingWords": {
+    "date": "2026-10-27",
+    "by": "operator",
+    "decision": "« Tu changes la formule pour toutes les vidéos, oui » (27 October 2026): every series video and every carousel ends with « Vous pouvez continuer la recherche sur EthniAfrica et vous abonner pour découvrir de nouvelles publications. » then « EthniAfrica : l’importance de connaître nos noms. ». The voice says the invitation first, then the line; the cards keep the 1.10.0 places (the line at y 760 in the signature line's face, the invitation under it). Words only: no design version, no new token.",
+    "spokenOrder": ["invitation", "signatureLine"]
+  },
   "retired": {
     "signatureLine": "Connaître nos noms, décoloniser leur emploi, nous nommer nous-mêmes.",
     "invitations": [
       "Cherchez [nom] sur EthniAfrica, lien en profil.",
       "Vous aussi, cherchez votre nom sur EthniAfrica, lien en profil."
-    ]
+    ],
+    "closing1100": {
+      "retiredOn": "2026-10-27",
+      "signatureLine": "L’importance de connaître nos noms.",
+      "invitation": "Vous pouvez continuer la recherche sur EthniAfrica, lien en profil."
+    }
   },
   "videoLong": true,
   "videoDocuments": true,

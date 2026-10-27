@@ -45,8 +45,9 @@ render runs once.
 8. Accuracy beats the dictated wording: propose the correction in one line and apply it once
    accepted (« le nom du pays et celui de ses habitants réunissent trois langues »).
 9. End with a short summary of the name's origin, the reframe sentence, the signed « Nous
-   pensons » paragraph, then the fixed closing « L'importance de connaître nos noms. Vous pouvez
-   continuer la recherche sur EthniAfrica, lien en profil. ».
+   pensons » paragraph, then the fixed closing, in this order (operator, 27 October 2026):
+   « Vous pouvez continuer la recherche sur EthniAfrica et vous abonner pour découvrir de
+   nouvelles publications. EthniAfrica : l'importance de connaître nos noms. ».
 10. Run `npm run check:publication` on every version.
 
 ## 3. Picture plan: the animatic first

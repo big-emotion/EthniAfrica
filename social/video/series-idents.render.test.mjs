@@ -69,7 +69,15 @@ test("the end card closes the video in place of the 1.10.0 ending", () => {
   const end = at(last);
   assert.equal(end.ident.clip, "outro");
   assert.equal(end.ident.opacity, 1);
-  assert.match(end.ident.text, /L’importance de\s*connaître nos noms\./);
+  assert.match(
+    end.ident.text,
+    /EthniAfrica\s*:\s*l’importance de\s*connaître nos noms\./
+  );
+  assert.match(
+    end.ident.text.replace(/\s+/gu, " "),
+    /Vous pouvez continuer la recherche sur EthniAfrica et vous abonner pour découvrir de nouvelles publications\./
+  );
+  assert.doesNotMatch(end.ident.text, /lien en profil/);
   assert.match(end.ident.text, /Prochain épisode\s*:\s*Le nom Burkina Faso/);
   assert.match(end.ident.text, /@ethniafrica/);
   assert.doesNotMatch(

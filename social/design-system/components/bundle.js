@@ -33,10 +33,12 @@
      hyphen U+002D inside a no-wrap line (none of the three faces draws U+2011). */
  /* 1.10.0: the closing line and the closing invitation replace the 1.6.0
      signature line and the « Cherchez [nom] » invitation. Two constants, never
-     card fields; each printed line set without wrapping. */
-  var SIGNATURE_LINE = ['L’importance de', 'connaître nos noms.'];
+     card fields; each printed line set without wrapping.
+     Operator, 27 October 2026: new words in the same places. The voice says
+     the invitation first, then the line; the card keeps the line above. */
+  var SIGNATURE_LINE = ['EthniAfrica : l’importance de', 'connaître nos noms.'];
   var SIGNATURE_TEXT = SIGNATURE_LINE.join(' ');
-  var INVITATION_LINES = ['Vous pouvez continuer la recherche', 'sur EthniAfrica, lien en profil.'];
+  var INVITATION_LINES = ['Vous pouvez continuer la recherche', 'sur EthniAfrica et vous abonner', 'pour découvrir de nouvelles publications.'];
   var INVITATION_TEXT = INVITATION_LINES.join(' ');
   var CLOSING_TEXT = SIGNATURE_TEXT + ' ' + INVITATION_TEXT;
   function invitation() {

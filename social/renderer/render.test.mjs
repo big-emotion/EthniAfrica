@@ -434,12 +434,14 @@ test("1.3.0: every series sample fits, on a one-line band, under 828 px, with th
   }
 });
 
-// The operator's words, decided on 19 October 2026 (Cartes 1.10.0). Spelled
+// The operator's words, decided on 27 October 2026 in place of the 1.10.0
+// ones, printed in the 1.10.0 places (the line, then the invitation). Spelled
 // out here on purpose: the test holds the engine's constants to the decision.
-const CLOSING_LINE = "L’importance de connaître nos noms.";
+const CLOSING_LINE = "EthniAfrica : l’importance de connaître nos noms.";
 const INVITATION_LINES = [
   "Vous pouvez continuer la recherche",
-  "sur EthniAfrica, lien en profil.",
+  "sur EthniAfrica et vous abonner",
+  "pour découvrir de nouvelles publications.",
 ];
 const CLOSING_TEXT = `${CLOSING_LINE} ${INVITATION_LINES.join(" ")}`;
 const closings = () => samples.cards.filter((c) => c.type === "closing");
@@ -473,7 +475,9 @@ test("1.10.0: every closing card ends on the closing line and the fixed invitati
     assert.ok(card.alt.endsWith(CLOSING_TEXT), `${card.id}: ${card.alt}`);
     assert.equal(card.alt.split(INVITATION_LINES[0]).length, 2, card.id);
     assert.ok(
-      !/décoloniser|Cherchez|travers ses noms/.test(card.visibleText),
+      !/décoloniser|Cherchez|travers ses noms|lien en profil/.test(
+        card.visibleText
+      ),
       card.id
     );
   }
