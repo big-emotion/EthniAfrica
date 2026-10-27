@@ -60,6 +60,7 @@ import {
   teachingLayer,
   isParchment,
 } from "./series-teaching.mjs";
+import { checkSceneCard } from "./series-scenes.mjs";
 
 // The full-screen bands in frame pixels (series.md and handoff.md,
 // « Renderer integration of 1.4.0 »). The image fills the frame; only text
@@ -139,6 +140,22 @@ const CHAPTER_HOLD = 36;
 export const CHAPTER_TITLE_IN = 38;
 const REMINDER = [75, 120];
 const SOURCE_LABELS = ["Source", "Sources", "Hypothèses"];
+
+// The continent's outline from the design system's Africa base map (Natural
+// Earth, projected for the carousel cards), read once.
+let africa = null;
+const africaBackdrop = () => {
+  if (!africa) {
+    const base = JSON.parse(
+      readFileSync(
+        new URL("../design-system/assets/Cartes/afrique.json", import.meta.url),
+        "utf8"
+      )
+    );
+    africa = { d: base.africa, viewBox: base.meta.viewBox };
+  }
+  return africa;
+};
 
 // `input.cards` is the cards JSON (the carousel's), resolved from `dir`.
 export function loadSeriesVideo(input, { dir = "." } = {}) {
@@ -238,6 +255,8 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     if (card.sbs) checkSideBySide(card);
     // 1.12.0: the parchment card and the teaching cards in motion.
     checkTeachingCard(card);
+    // Narration v4 of « Zaïre »: an illustrated scene on the parchment.
+    checkSceneCard(card, studied);
     // 1.13.0: the story's turns (whip, era, flags, headline band).
     checkTurnFields(card);
     // 1.14.0: figures and facts drawn on the map.
@@ -302,6 +321,22 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     card.series = structuredClone(first.series);
     if (first.theme) card.theme = first.theme;
   };
+  // The enriched chapter card (« Zaïre », board S14, approved 27 October
+  // 2026, for every series video with chapters): the video's title as a
+  // reminder at the top, the chapters before and after the current one, and
+  // the EthniAfrica map of Africa dimmed behind.
+  const chapterOf = (n) =>
+    n >= 1 && n <= chapters.length ? { n, title: chapters[n - 1].title } : null;
+  entries.forEach((e) => {
+    if (e.card.type !== "chapter") return;
+    const c = e.card.chapter;
+    Object.assign(c, {
+      video: first.title,
+      prev: chapterOf(c.n - 1),
+      next: chapterOf(c.n + 1),
+      backdrop: africaBackdrop(),
+    });
+  });
   entries.forEach((e) => {
     if (e.card.type === "chapter") silent(e.card);
     // The intro draws its own parchment, but belongs to the episode.
@@ -650,7 +685,9 @@ function planLongVideo(seq, input) {
     if (shots.length) planClipCuts(seq, i, shots);
     if (["opener", "closing", "chapter", "intro"].includes(card.type)) return;
     if (card.signed) card.videoKicker = "Nous pensons";
-    else if (chapter && !card.date)
+    // A scene's date is its head's figure, not a dated card's marker: it
+    // keeps the chapter (board S12, « 3 · Le royaume du Kongo » over 1491).
+    else if (chapter && (!card.date || card.scene))
       card.videoKicker = `${chapter.n} · ${chapter.title}`;
     // Items and the quoted person enter on the word that says them, and the
     // card holds long enough to read its items at 21 characters a second.
@@ -1032,6 +1069,9 @@ const BANDS = {
   "figure-number": LAYOUT.head,
   "figure-unit": LAYOUT.head,
   "chapter-count": [720, 940],
+  // Board S14: the video's title at the top, the chapters around the title.
+  "chapter-video": [290, 460],
+  "chapter-near": [720, 1300],
   "chapter-title": [940, 1300],
   // 1.8.0: the formula in the clear zone, ending above y 1290.
   formula: [LAYOUT.clear[0], 1290],
@@ -1042,6 +1082,8 @@ const X_BANDS = {
   slot: LAYOUT.slot.x,
   "chapter-count": [60, 1020],
   "chapter-title": [60, 1020],
+  "chapter-video": [60, 1020],
+  "chapter-near": [60, 1020],
 };
 // The figure head (1.14.0): Anton 176 on a 156 px line overflows its line box
 // by about 10 px at the top and its outline adds 13 px, so « plus de » keeps

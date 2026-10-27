@@ -167,13 +167,364 @@ export function zaireDemo(
   return input;
 }
 
-// node social/video/fixtures/series-zaire.mjs --out DIR writes the piece,
-// ready for series-render.mjs.
+// ---------------------------------------------------------------------------
+// Narration v4 (approved 27 October 2026), boards S8 to S14 of the same
+// canvas: the sea route to the Indies stopping at the Congo's mouth, the six
+// provinces with their lords linked to the king, four illustrated scenes on
+// parchment, and the enriched chapter card. Demonstration voice, the
+// narration's own sentences.
+
+// Board S8: Lisbon to Calicut round Africa, every stop at sea; the stop at
+// the Congo's mouth stands off Soyo, in the estuary.
+export const ROUTE_PLACES = [
+  { id: "lisbonne", name: "Lisbonne", at: [-9.14, 38.72] },
+  { id: "embouchure", name: "Embouchure du Congo", at: [11.95, -6.05] },
+  { id: "calicut", name: "Calicut", at: [75.78, 11.25] },
+];
+export const SEA_ROUTE = {
+  kind: "route",
+  sea: true,
+  via: [
+    "lisbonne",
+    [-12, 37],
+    [-15.5, 33.5],
+    [-19.5, 30],
+    [-20.5, 25],
+    [-19.5, 18],
+    [-20.5, 13],
+    [-17, 8],
+    [-10, 3.5],
+    [-2, 3],
+    [2, 2],
+    [4, -3],
+    [9, -4],
+    [10.8, -5.5],
+    "embouchure",
+    [11.2, -9],
+    [10.5, -16],
+    [12.5, -24],
+    [15.5, -33],
+    [19.5, -36.5],
+    [27, -35.5],
+    [34, -29],
+    [39, -24],
+    [41.3, -17],
+    [41.8, -12.5],
+    [42.5, -6],
+    [44, -1],
+    [53, 8],
+    [62, 11],
+    [70, 11.5],
+    "calicut",
+  ],
+  say: "Portugal",
+  ink: "a",
+  highlight: {
+    to: "embouchure",
+    say: "navigateurs",
+    until: "embouchure",
+    ship: "caravelle",
+  },
+};
+export const ROUTE_MAP = {
+  view: { lon: 32, lat: 23, radius: 430 },
+  // The view closes in on the stop in two moves, 2.5 times each at most.
+  moves: [
+    { say: "fleuve", lon: 18, lat: 0, radius: 1075 },
+    { say: "océan", lon: 12.6, lat: -6.0, radius: 2687 },
+  ],
+  areas: [],
+  places: structuredClone(ROUTE_PLACES),
+  drawings: [{ kind: "epices", at: [77, 14], say: "route", until: "fleuve" }],
+  // The date once the camera turns to the stop, clear of the ship.
+  words: [{ text: "1482", kind: "date", at: [5, -10], say: "Congo" }],
+  facts: [
+    { say: "route vers les Indes", shows: ["illus:epices"] },
+    { say: "en caravelle", shows: ["illus:caravelle"] },
+    { say: "atteint l'embouchure", shows: ["illus:caravelle"] },
+  ],
+  caption: {
+    source:
+      "route maritime schématique, le long des côtes ; Natural Earth (domaine public)",
+  },
+};
+// The hand-drawn circle round the stop, once the ship has reached it.
+export const STOP_CIRCLE = { kind: "circle", at: "embouchure", say: "Congo" };
+
+// Board S9: the six provinces (areas.mjs, estimation) in six inks, the king
+// at Mbanza Kongo and a lord on each province, linked to him in gold.
+const PROVINCE_INKS = {
+  "kongo-soyo": ["Soyo", "a"],
+  "kongo-mbamba": ["Mbamba", "b"],
+  "kongo-mpemba": ["Mpemba", "c"],
+  "kongo-nsundi": ["Nsundi", "d"],
+  "kongo-mpangu": ["Mpangu", "e"],
+  "kongo-mbata": ["Mbata", "f"],
+};
+export const MBANZA_KONGO = [14.24, -6.27];
+export const PROVINCES_MAP = {
+  view: { lon: 14.7, lat: -6.4, radius: 4900 },
+  areas: Object.entries(PROVINCE_INKS).map(([id, [name, ink]]) => ({
+    file: `${id}.geojson`,
+    id,
+    name,
+    ink,
+    say: "compte",
+  })),
+  drawings: [{ kind: "roi", at: MBANZA_KONGO, say: "royaume" }],
+  key: [{ swatch: "approximate", label: "Provinces (estimation)" }],
+  facts: [
+    { say: "six provinces", shows: ["area:kongo-soyo"] },
+    { say: "Chacune est dirigée par un seigneur", shows: ["lords:seigneurs"] },
+    { say: "nommé par le roi", shows: ["illus:roi"] },
+  ],
+  caption: {
+    source:
+      "zones approximatives (estimation) d'après J. Vansina, Histoire générale de l'Afrique, UNESCO, vol. IV p. 621",
+  },
+};
+export const LORDS = {
+  kind: "lords",
+  id: "seigneurs",
+  king: MBANZA_KONGO,
+  areas: [
+    "kongo-soyo",
+    "kongo-mbamba",
+    "kongo-nsundi",
+    "kongo-mpangu",
+    "kongo-mbata",
+  ],
+  say: "Chacune",
+  linkSay: "nommé",
+};
+
+// Boards S10 to S13: the scenes, on parchment, each part moving on its word.
+const parchmentCard = (id, kicker, fields) => ({
+  id,
+  type: "explanation",
+  theme: "nuit",
+  series: { id: "pays", episode: 1 },
+  kicker,
+  demo: DEMO,
+  ground: "parchment",
+  ...fields,
+});
+export const SCENES = {
+  conseil: {
+    kind: "conseil",
+    say: "roi",
+    beats: { hands: "conseil", crown: "membres" },
+  },
+  nzimbu: {
+    kind: "nzimbu",
+    say: "Pour",
+    beats: { give: "commercer", receive: "coquillages" },
+  },
+  bapteme: {
+    kind: "bapteme",
+    say: "1491",
+    beats: { cross: "Portugal", water: "baptiser" },
+  },
+  echanges: {
+    kind: "echanges",
+    say: "Commencent",
+    beats: { ships: "alors" },
+  },
+};
+
+export const V4_TITLE = "D'où vient le nom *Zaïre* ?";
+export const V4_CHAPTERS = [
+  { title: "La route des Indes" },
+  { title: "Le royaume du Kongo" },
+  { title: "Le nom du fleuve" },
+];
+
+export function zaireV4Cards() {
+  const deck = JSON.parse(readFileSync(CARDS, "utf8"));
+  const sample = (id) => structuredClone(deck.cards.find((c) => c.id === id));
+  const opener = sample("serie-pays-01");
+  opener.title = V4_TITLE;
+  opener.kicker = "Hors-série";
+  const route = mapCard(
+    "zaire-route",
+    "XVe siècle",
+    "La route des Indes",
+    structuredClone(ROUTE_MAP)
+  );
+  route.map.sequence = "route";
+  route.marks = [structuredClone(SEA_ROUTE), structuredClone(STOP_CIRCLE)];
+  const provinces = mapCard(
+    "zaire-provinces",
+    "Le royaume du Kongo",
+    "Six provinces",
+    structuredClone(PROVINCES_MAP)
+  );
+  provinces.map.sequence = "kongo";
+  provinces.marks = [structuredClone(LORDS)];
+  return {
+    version: deck.version,
+    logo: deck.logo,
+    cards: [
+      opener,
+      route,
+      provinces,
+      parchmentCard("zaire-conseil", "Le conseil", {
+        date: "12",
+        dateSay: "douze",
+        scene: structuredClone(SCENES.conseil),
+        source:
+          "Histoire générale de l'Afrique, UNESCO, vol. V p. 606, d'après A. Hilton",
+      }),
+      parchmentCard("zaire-nzimbu", "Le marché", {
+        date: "nzimbu",
+        dateSay: "nzimbu",
+        scene: structuredClone(SCENES.nzimbu),
+        source: "Histoire générale de l'Afrique, UNESCO, vol. V p. 610",
+      }),
+      parchmentCard("zaire-bapteme", "Mbanza Kongo", {
+        date: "1491",
+        dateSay: "1491",
+        scene: structuredClone(SCENES.bapteme),
+        source: "R. de Pina et G. de Resende (Brásio, Monumenta, I)",
+      }),
+      parchmentCard("zaire-echanges", "Deux royaumes", {
+        scene: structuredClone(SCENES.echanges),
+        source: "E. G. Ravenstein, 1900",
+      }),
+      mapCard(
+        "zaire-mot",
+        "Le fleuve",
+        "Un mot entendu",
+        structuredClone(WORD_MAP)
+      ),
+      sample("serie-pays-07"),
+    ],
+  };
+}
+
+// About 15 characters a second, the narration v4's sentences.
+const said = (texts) =>
+  texts.map((text) => ({
+    text,
+    duration: Math.round(([...text].length / 15) * 100) / 100,
+  }));
+export const ZAIRE_V4_SCRIPT = [
+  {
+    card: "serie-pays-01",
+    chunks: said(["Le 27 octobre 1971,", "le Congo devient le Zaïre."]),
+  },
+  { chapter: 1, silence: 3.2 },
+  {
+    card: "zaire-route",
+    chunks: said([
+      "Au XVe siècle, le Portugal",
+      "cherche une route vers les Indes.",
+      "Ses navigateurs longent les côtes",
+      "de l'Afrique en caravelle.",
+      "Vers 1482-1483, l'un d'eux,",
+      "Diogo Cão, atteint l'embouchure",
+      "du fleuve Congo, là où",
+      "le fleuve se jette",
+      "dans l'océan Atlantique.",
+    ]),
+  },
+  { chapter: 2, silence: 3.2 },
+  {
+    card: "zaire-provinces",
+    chunks: said([
+      "Le royaume compte six provinces.",
+      "Chacune est dirigée par un seigneur,",
+      "appelé le mani,",
+      "nommé par le roi.",
+    ]),
+  },
+  {
+    card: "zaire-conseil",
+    chunks: said([
+      "Le roi lui-même est élu",
+      "par un conseil royal",
+      "de douze membres,",
+      "dont quatre femmes.",
+    ]),
+  },
+  {
+    card: "zaire-nzimbu",
+    chunks: said([
+      "Pour commercer, on paie",
+      "avec des coquillages, les nzimbu.",
+    ]),
+  },
+  {
+    card: "zaire-bapteme",
+    chunks: said([
+      "En 1491, il s'allie",
+      "au Portugal et se fait baptiser",
+      "dans sa capitale, Mbanza Kongo.",
+    ]),
+  },
+  {
+    card: "zaire-echanges",
+    chunks: said([
+      "Commencent alors de nombreux échanges",
+      "entre les deux royaumes.",
+    ]),
+  },
+  { chapter: 3, silence: 3.2 },
+  {
+    card: "zaire-mot",
+    chunks: said([
+      "Au royaume du Kongo,",
+      "les Portugais arrivent en 1482.",
+      "Les habitants disent nzadi,",
+      "le grand fleuve.",
+      "Les Portugais entendent Zaïre.",
+      "Le nom part sur leurs cartes,",
+      "et le fleuve garde ce nom",
+      "pendant des siècles.",
+    ]),
+  },
+  { card: "serie-pays-07", chunks: closingChunks() },
+];
+
+export function zaireV4Demo(
+  dir,
+  { deck = (d) => d, script = (b) => b, edit = () => {} } = {}
+) {
+  mkdirSync(dir, { recursive: true });
+  writeFileSync(
+    join(dir, "cards.json"),
+    JSON.stringify(deck(zaireV4Cards()), null, 2)
+  );
+  const beats = script(structuredClone(ZAIRE_V4_SCRIPT));
+  writeSyntheticVoice(dir, beats);
+  const input = {
+    design:
+      "EthniAfrica Cartes 1.16.0-proposition, narration v4 (démonstration)",
+    demo: DEMO,
+    cards: "cards.json",
+    studiedWords: ["nzadi", "Zaïre", "nzimbu"],
+    chapters: structuredClone(V4_CHAPTERS),
+    beats: beats.map((b) =>
+      b.chapter
+        ? { type: "chapter", chapter: b.chapter }
+        : { card: b.card, chunks: b.chunks.map(({ text }) => ({ text })) }
+    ),
+    ending: {},
+    voice: { audio: "voice.wav", words: "words.json" },
+  };
+  edit(input);
+  return input;
+}
+
+// node social/video/fixtures/series-zaire.mjs --out DIR [--v4] writes the
+// piece, ready for series-render.mjs.
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const at = process.argv.indexOf("--out");
-  if (at < 0) throw new Error("Usage: series-zaire.mjs --out DIR");
+  if (at < 0) throw new Error("Usage: series-zaire.mjs --out DIR [--v4]");
   const dir = resolve(process.argv[at + 1]);
-  const input = zaireDemo(dir);
+  const input = process.argv.includes("--v4")
+    ? zaireV4Demo(dir)
+    : zaireDemo(dir);
   writeFileSync(
     join(dir, "series.sequence.json"),
     JSON.stringify(input, null, 2) + "\n"

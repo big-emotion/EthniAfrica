@@ -81,6 +81,24 @@ test("the chapter card (operator, 20 October 2026): « 1 sur 3 » then the title
 });
 
 // @req REQ-186
+test("the enriched chapter card (board S14): the video's title on top, the next chapter under the title", () => {
+  const f = frameAt(chapterFrame);
+  const video = f.boxes.find((b) => b.kind === "chapter-video");
+  assert.ok(video, "no reminder of the video's title");
+  assert.ok(video.y >= 290 && video.y + video.h <= 460, `y ${video.y}`);
+  assert.ok(
+    flat(f.text).includes(flat(seq.cards[0].title.replace(/\*/gu, ""))),
+    "the opener's title"
+  );
+  const near = f.boxes.filter((b) => b.kind === "chapter-near");
+  // Chapter 1 of 3: no chapter before it, « 2 · D'où vient le mot » after.
+  assert.equal(near.length, 1);
+  assert.match(flat(f.text), /2 · D’où vient le mot|2 · D'où vient le mot/u);
+  const title = f.boxes.find((b) => b.kind === "chapter-title");
+  assert.ok(near[0].y >= title.y + title.h + 20, "under the title");
+});
+
+// @req REQ-186
 test("the chapter card animates: the title is not yet in 0.5 s after the card starts", () => {
   const f = frameAt(chapterEarly);
   const title = f.boxes.find((b) => b.kind === "chapter-title");

@@ -14,7 +14,8 @@ import { FLAT_VERT, FLAT_FRAG, OVERLAY_SCRIPT } from "./page.mjs";
 import { flatProject, areaStyle, MARKS } from "./series-map.mjs";
 import { documentFrame } from "./series-document.mjs";
 import { TURNS } from "./series-turns.mjs";
-import { PLANTED, BUBBLE } from "./series-sequence.mjs";
+import { SCENE } from "./series-scenes.mjs";
+import { PLANTED, BUBBLE, VOYAGE, LORDS_TIMING } from "./series-sequence.mjs";
 import {
   coastRunsInFrame,
   landRingInFrame,
@@ -39,6 +40,9 @@ export const PAPER_INKS = {
     b: token("area-b"),
     c: token("area-c"),
     d: "#7a5fb0",
+    // The zone inks e and f on paper, darkened as d is.
+    e: "#5f8a32",
+    f: "#a8527a",
     w: token("map-ink-muted"),
   },
   deep: {
@@ -46,6 +50,8 @@ export const PAPER_INKS = {
     b: token("area-b-deep"),
     c: token("area-c-deep"),
     d: "#4e3a80",
+    e: "#3f5f1f",
+    f: "#7a3456",
     w: "#55463a",
   },
   water: token("map-water"),
@@ -166,9 +172,18 @@ html,body{margin:0;background:#000}
 .vf-chapdot.done{background:var(--oi-faint)}
 .vf-chapdot.now{border-color:var(--oi-accent);background:var(--oi-accent)}
 .vf-chapring{position:absolute;inset:-18px;border-radius:50%;border:4px solid var(--oi-accent);opacity:0}
-.vf-chapcount{position:absolute;left:0;right:0;top:850px;text-align:center;font:800 44px/52px var(--font-text);color:var(--oi-muted)}
+.vf-chapcount{position:absolute;left:0;right:0;top:864px;text-align:center;font:800 44px/52px var(--font-text);color:var(--oi-muted)}
 .vf-chapcount b{color:var(--oi-accent);font-weight:800}
-.vf-chaptitle{position:absolute;left:90px;right:90px;top:986px;margin:0;text-align:center;font:400 112px/112px var(--font-display);color:var(--oi-text);text-wrap:balance}
+.vf-chaptitle{margin:0;width:100%;text-align:center;font:400 112px/112px var(--font-display);color:var(--oi-text);text-wrap:balance}
+/* The enriched chapter card (« Zaïre », board S14, 27 October 2026): the
+   video's title as a reminder at the top, the chapters before and after
+   the current one small around it, Africa dimmed behind. */
+.vf-chapafrica{position:absolute;left:0;top:470px;width:1080px;height:1350px}
+.vf-chapvideo{position:absolute;left:60px;right:60px;top:300px;font:400 64px/68px var(--font-display);color:var(--oi-muted);text-wrap:balance}
+.vf-chapvideo em{font-style:normal;color:var(--oi-accent)}
+.vf-chapnear{font:800 30px/36px var(--font-text);color:var(--oi-muted);text-align:center;white-space:nowrap}
+.vf-chapprev{position:absolute;left:60px;right:60px;top:812px}
+.vf-chapbody{position:absolute;left:90px;right:90px;top:986px;display:flex;flex-direction:column;align-items:center;gap:34px}
 .vf-list{width:960px;display:flex;flex-direction:column;margin-top:30px}
 .vf-row+.vf-row{margin-top:22px}
 .vf-rlab{font:800 26px/32px var(--font-text);letter-spacing:.02em;color:var(--oi-accent);--sw:4px}
@@ -406,6 +421,11 @@ function silentParts(parts) {
   const ground = el("div", "vf-chapground");
   const glow = el("div", "vf-chapglow");
   ground.append(glow);
+  // Africa, dimmed, fading out from its centre: the series' ground.
+  const africa = svgEl("svg", { class: "vf-chapafrica", viewBox: spec.chapter.backdrop.viewBox });
+  africa.innerHTML = '<defs><radialGradient id="chap-africa-' + spec.chapter.n + '" cx="50%" cy="40%" r="60%"><stop offset="0" stop-color="#8a7f6c" stop-opacity="0.34"/><stop offset="1" stop-color="#8a7f6c" stop-opacity="0.08"/></radialGradient></defs>';
+  africa.append(svgEl("path", { d: spec.chapter.backdrop.d, fill: "url(#chap-africa-" + spec.chapter.n + ")", stroke: "#8a7f6c", "stroke-opacity": 0.3, "stroke-width": 2 }));
+  ground.append(africa);
   pic.append(ground);
   const box = el("div", "vf-chap");
   const dots = el("div", "vf-chapdots");
@@ -424,15 +444,30 @@ function silentParts(parts) {
   count.dataset.kind = "chapter-count";
   const title = el("h2", "vf-chaptitle", esc(fr(spec.chapter.title)));
   title.dataset.kind = "chapter-title";
-  box.append(track, count, title);
+  const near = (c, css) => {
+    if (!c) return null;
+    const n = el("div", "vf-chapnear " + css, c.n + " · " + esc(fr(c.title)));
+    n.dataset.kind = "chapter-near";
+    return n;
+  };
+  const video = el("div", "vf-chapvideo", esc(fr(spec.chapter.video || "")).replace(/\\*([^*]+)\\*/g, "<em>$1</em>"));
+  video.dataset.kind = "chapter-video";
+  const prev = near(spec.chapter.prev, "vf-chapprev");
+  const next = near(spec.chapter.next, "");
+  const body = el("div", "vf-chapbody");
+  body.append(title);
+  if (next) body.append(next);
+  box.append(video, track, ...(prev ? [prev] : []), count, body);
   layer.append(box);
-  parts.chapter = { glow, line, dots: marks, ring: dots.querySelector(".vf-chapring"), count, title };
+  parts.chapter = { glow, line, dots: marks, ring: dots.querySelector(".vf-chapring"), count, title, video, prev, next };
   return parts;
 }
 
 // The board's timings, in seconds from the card's first frame: the line, the
 // dots one by one, the ring on the current dot, « n sur N », the title.
-const CHAPTER_STEPS = { line: [0.25, 0.7], dot0: 0.3, dotStep: 0.12, dot: 0.32, ring: [1.0, 0.7], count: [1.0, 0.4], title: [1.25, 0.6] };
+// The chapter before enters with « n sur N », the one after once the title
+// is in (board S14); the video's title stands from the card's first frame.
+const CHAPTER_STEPS = { line: [0.25, 0.7], dot0: 0.3, dotStep: 0.12, dot: 0.32, ring: [1.0, 0.7], count: [1.0, 0.4], title: [1.25, 0.6], next: [1.55, 0.4] };
 const easeOut = (p) => 1 - Math.pow(1 - p, 3);
 const span = (t, [from, length]) => Math.min(1, Math.max(0, (t - from) / length));
 function drawChapter(c, t, fade) {
@@ -450,6 +485,9 @@ function drawChapter(c, t, fade) {
     c.ring.style.transform = "scale(" + (0.6 + 0.9 * p).toFixed(4) + ")";
   }
   c.count.style.opacity = (span(t, S.count) * fade).toFixed(4);
+  c.video.style.opacity = fade.toFixed(4);
+  if (c.prev) c.prev.style.opacity = (span(t, S.count) * fade).toFixed(4);
+  if (c.next) c.next.style.opacity = (easeOut(span(t, S.next)) * fade).toFixed(4);
   const p = easeOut(span(t, S.title));
   c.title.style.opacity = (p * fade).toFixed(4);
   c.title.style.transform = "translateY(" + (24 * (1 - p)).toFixed(2) + "px)";
@@ -593,7 +631,7 @@ function buildParts(spec, view) {
       head.append(el("div", "vf-label oi", pick(".ec-field .ec-label").innerHTML));
       head.append(el("div", "vf-name oi oi-l", name.innerHTML));
     }
-  } else {
+  } else if (!spec.scene) {
     head.append(el("h2", "vf-title oi oi-l" + (spec.type === "opener" ? " vf-title--xl" : ""), pick(".ec-title").innerHTML));
   }
   // 1.7.0: readings and figures flow under the title, each item in place
@@ -886,6 +924,15 @@ function parchmentContent(spec, parts) {
   parts.text.push(box);
   parts.paBox = box;
   if (spec.type === "word") parts.paWord = wordContent(spec, box);
+  // Narration v4 of « Zaïre »: an illustrated scene, every moving part a
+  // group placed from the layer's state.
+  if (spec.sceneSvg) {
+    const scene = el("div", "ps-scene");
+    Object.assign(scene.style, { left: "${SCENE.box.x}px", top: "${SCENE.box.y}px", width: "${SCENE.box.w}px", height: "${SCENE.box.h}px" });
+    scene.innerHTML = spec.sceneSvg;
+    box.append(scene);
+    parts.paScene = { box: scene, parts: Object.fromEntries([...scene.querySelectorAll("[data-part]")].map((g) => [g.dataset.part, { g, origin: g.dataset.origin || null }])) };
+  }
   if (spec.week) {
     const w = spec.week;
     box.append(el("div", "pw-people oi", esc(fr(w.people)) + (w.region ? "<span> · " + esc(fr(w.region)) + "</span>" : "")));
@@ -1443,7 +1490,7 @@ function drawAnimatedRun(node, map) {
       Object.assign(img.style, { display: "block", left: d.x - w / 2 + "px", top: top + "px", width: w + "px", height: h + "px", opacity });
       img.dataset.mark = "drawing";
       img.dataset.kind = kind;
-      img.dataset.of = n;
+      img.dataset.of = d.of ?? n;
     };
     // 1.16.0: a bubble turning gold cross-fades its two papers and words.
     if (d.before !== undefined) {
@@ -1703,6 +1750,12 @@ function drawDrawnMarks(node, map, onPaper) {
       if (m.tip) g.append(svgEl("circle", { cx: m.tip[0], cy: m.tip[1], r: 7, fill: onPaper ? PAPER.river : "#e9fbff" }));
     } else if (m.kind === "route") {
       const ink = onPaper ? PAPER.deep[m.ink] : inkOf(m.ink);
+      // A voyage's way on, in grey, under its lit part.
+      if (m.context)
+        for (const [x, y] of m.context.dots) {
+          if (!onPaper) g.append(svgEl("circle", { cx: x, cy: y, r: m.context.r + 2, fill: KEYLINE, "fill-opacity": 0.5 }));
+          g.append(svgEl("circle", { cx: x, cy: y, r: m.context.r, fill: onPaper ? PAPER.deep.w : "${VOYAGE.contextInk}", "fill-opacity": ${VOYAGE.contextOpacity} }));
+        }
       for (const [x, y] of m.dots) {
         if (!onPaper) g.append(svgEl("circle", { cx: x, cy: y, r: m.r + 3, fill: KEYLINE, "fill-opacity": 0.7 }));
         g.append(svgEl("circle", { cx: x, cy: y, r: m.r, fill: ink }));
@@ -1718,6 +1771,13 @@ function drawDrawnMarks(node, map, onPaper) {
         if (lane.d) g.append(svgEl("path", { d: lane.d, stroke: ink, "stroke-width": lane.w }));
         if (!onPaper) g.append(svgEl("path", { d: lane.head.d, fill: KEYLINE, "fill-opacity": 0.7, stroke: KEYLINE, "stroke-opacity": 0.7, "stroke-width": 6 }));
         g.append(svgEl("path", { d: lane.head.d, fill: ink, stroke: ink, "stroke-width": 1 }));
+      }
+    } else if (m.kind === "lords") {
+      // Each lord linked to the king by a gold line, under the figures.
+      for (const l of m.links) {
+        if (!l.d) continue;
+        if (!onPaper) g.append(svgEl("path", { d: l.d, stroke: KEYLINE, "stroke-opacity": 0.55, "stroke-width": m.widths.keyline }));
+        g.append(svgEl("path", { d: l.d, stroke: onPaper ? PAPER.deep.a : "${LORDS_TIMING.ink}", "stroke-width": m.widths.line }));
       }
     } else if (m.kind === "circle") {
       if (!onPaper) g.append(svgEl("path", { d: m.d, stroke: KEYLINE, "stroke-opacity": 0.65, "stroke-width": m.widths.keyline }));
@@ -2211,7 +2271,7 @@ window.setup = async ({ tokens, cards, logo, demo, maps, subtitles: cardLines, z
     for (const node of runs.filter((n) => n.animated))
       for (const kind of maps.sequence.illustrations || []) {
         node.pool[kind] = [];
-        for (let k = 0; k < ${MARKS.maxDrawings}; k++) {
+        for (let k = 0; k < Math.max(${MARKS.maxDrawings}, (maps.sequence.illustrationCounts || {})[kind] || 0); k++) {
           const img = ringed(el("img", "sm-ill"), 4);
           img.alt = "";
           img.decoding = "sync";
@@ -2391,8 +2451,8 @@ function frameBoxes(frame, state) {
     }
     // The chapter card's texts count once they have entered.
     if (parts.chapter)
-      for (const n of [parts.chapter.count, parts.chapter.title])
-        if (+n.style.opacity > 0) add(n, n.dataset.kind, { card: l.card });
+      for (const n of [parts.chapter.count, parts.chapter.title, parts.chapter.video, parts.chapter.prev, parts.chapter.next])
+        if (n && +n.style.opacity > 0) add(n, n.dataset.kind, { card: l.card, ...(n === parts.chapter.video && { lines: Math.round(n.getBoundingClientRect().height / 68), maxLines: 2 }) });
     layer.querySelectorAll(".vf-head > *").forEach((n) => {
       // 1.7.0: readings and figures flow below the head, down to y 1290.
       if (n.matches(".vf-list, .vf-figs, .vf-week")) return [...n.children].forEach((c) => add(c, "items", { card: l.card }));
@@ -2406,6 +2466,7 @@ function frameBoxes(frame, state) {
       const showing = (n) => n.style.visibility !== "hidden" && +getComputedStyle(n).opacity > 0 && +getComputedStyle(n.closest(".pw-row") || n).opacity > 0;
       parts.paBox.querySelectorAll(".oi").forEach((n) => { if (!n.parentElement.closest(".oi") && showing(n)) add(n, "parchment", { card: l.card }); });
       parts.paBox.querySelectorAll(".pd-img").forEach((n) => { if (showing(n)) boxes.push({ id: n.getAttribute("src"), kind: "parchment", ...rect(n), card: l.card }); });
+      if (parts.paScene && showing(parts.paScene.box)) boxes.push({ id: "scene " + parts.spec.scene.kind, kind: "parchment", ...rect(parts.paScene.box), card: l.card });
     }
     // 1.8.0: the formula's lines of every step on screen.
     if (parts.formula)
@@ -2691,6 +2752,13 @@ function drawParchment(parts, l) {
     });
   if (parts.paFormula) drawMovingFormula(parts, l.formula);
   if (parts.paWord) drawWord(parts.paWord, l.word);
+  if (parts.paScene)
+    for (const [id, s] of Object.entries(l.scene)) {
+      const p = parts.paScene.parts[id];
+      if (!p) continue;
+      p.g.setAttribute("opacity", s.opacity.toFixed(4));
+      p.g.setAttribute("transform", "translate(" + s.x.toFixed(2) + " " + s.y.toFixed(2) + ")" + (s.rotate && p.origin ? " rotate(" + s.rotate.toFixed(2) + " " + p.origin.replace(",", " ") + ")" : ""));
+    }
   if (parts.paDrawings)
     parts.paDrawings.forEach((d, k) => {
       const s = l.drawings[k];
@@ -2739,6 +2807,7 @@ function parchmentReport(parts, l) {
     marks: parts.paQuote ? parts.paQuote.marks.map((m) => ({ words: inkBox(m.firstChild), underline: rect(m.lastChild) })) : [],
     quote: parts.paQuote ? rect(parts.paQuote.box) : null,
     words: (parts.paWords || []).map(inkBox),
+    scene: parts.paScene ? { kind: parts.spec.scene.kind, ...rect(parts.paScene.box), parts: Object.entries(parts.paScene.parts).map(([id, p]) => ({ id, opacity: +p.g.getAttribute("opacity"), transform: p.g.getAttribute("transform"), ...rect(p.g) })) } : null,
     texts: [...parts.layer.querySelectorAll(".vf-pa .oi, .vf-pa.oi")].filter((n) => n.getClientRects().length).map((n) => ({ text: n.textContent.trim().slice(0, 30), stroke: getComputedStyle(n).webkitTextStrokeWidth, filter: getComputedStyle(n).filter, color: getComputedStyle(n).color })),
   };
 }

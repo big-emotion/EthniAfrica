@@ -54,6 +54,32 @@ test("1.7.0: a long video carries its chapters, each opened by a chapter card", 
 });
 
 // @req REQ-186
+test("the enriched chapter card (board S14): the video's title, the chapters around it, Africa behind", () => {
+  const seq = long();
+  const chapters = seq.cards.filter((c) => c.type === "chapter");
+  const opener = seq.cards[0];
+  for (const c of chapters) {
+    // The video's title as a reminder: the opener's own title.
+    assert.equal(c.chapter.video, opener.title);
+    // Africa from the EthniAfrica base map, one path in its 1080 × 1350 box.
+    assert.match(c.chapter.backdrop.d, /^M[\d.-]+[ ,][\d.-]+/u);
+    assert.equal(c.chapter.backdrop.viewBox, "0 0 1080 1350");
+  }
+  // The previous and the next chapter, by number and title; none before
+  // the first, none after the last.
+  assert.equal(chapters[0].chapter.prev, null);
+  assert.deepEqual(chapters[0].chapter.next, {
+    n: 2,
+    title: "D'où vient le mot",
+  });
+  assert.deepEqual(chapters[1].chapter.prev, {
+    n: 1,
+    title: "Un continent entier",
+  });
+  assert.equal(chapters[2].chapter.next, null);
+});
+
+// @req REQ-186
 test("a chapter card given an image is refused: it shows nothing but its text", () => {
   assert.throws(
     () =>
