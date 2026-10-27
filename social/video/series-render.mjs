@@ -39,6 +39,7 @@ import {
   sharedBorders,
 } from "./series-map.mjs";
 import { areaInks } from "./series-sequence.mjs";
+import { landPolygons, checkSeaRoute } from "./series-sea.mjs";
 import { figureAssets } from "./series-figures.mjs";
 import { coastOf } from "./shoreline.mjs";
 import {
@@ -148,13 +149,56 @@ const figureAssetsOf = (seq) =>
     )
   );
 
+// The drawings a run uses: its symbols, a voyage's ship and a kingdom's
+// lords (narration v4 of « Zaïre »).
+const marksDrawings = (c) =>
+  c.marks.flatMap((m) =>
+    m.highlight
+      ? [m.highlight.ship]
+      : m.kind === "lords"
+        ? m.lords.map(() => "seigneur")
+        : []
+  );
 const illustrationsOf = (seq) => [
   ...new Set(
-    Object.values(seq.mapSequence?.cards ?? {}).flatMap((c) =>
-      c.drawings.flatMap((d) => d.images)
-    )
+    Object.values(seq.mapSequence?.cards ?? {}).flatMap((c) => [
+      ...c.drawings.flatMap((d) => d.images),
+      ...marksDrawings(c),
+    ])
   ),
 ];
+// How many of each drawing a frame may show at most, when more than the
+// three drawings: a kingdom's lords.
+const illustrationCounts = (seq) => {
+  const counts = {};
+  for (const c of Object.values(seq.mapSequence?.cards ?? {})) {
+    const own = {};
+    for (const kind of [
+      ...c.drawings.flatMap((d) => d.images),
+      ...marksDrawings(c),
+    ])
+      own[kind] = (own[kind] ?? 0) + 1;
+    for (const [kind, n] of Object.entries(own))
+      counts[kind] = Math.max(counts[kind] ?? 0, n);
+  }
+  return counts;
+};
+
+// A sea voyage never crosses land, in any view its card shows it.
+function checkSeaVoyages(seq, world) {
+  const land = landPolygons(world);
+  for (const [i, cp] of Object.entries(seq.mapSequence?.cards ?? {})) {
+    const cameras = [
+      cp.view,
+      ...cp.moves.filter((m) => !m.whip).map((m) => m.to),
+    ];
+    const what = `Card ${seq.cards[i].id}`;
+    for (const m of cp.marks.filter((m) => m.kind === "route" && m.sea))
+      checkSeaRoute(`${what}, route`, m.shape, cameras, land);
+    for (const a of cp.arrows.filter((a) => a.sea))
+      checkSeaRoute(`${what}, arrow ${a.id}`, a, cameras, land);
+  }
+}
 
 // The world texture is MAX_TEXTURE pixels around the Earth: a frame whose
 // world texture would be enlarged past the scale limit at the end of the
@@ -177,6 +221,7 @@ async function prepareMaps(seq, cards, routes, assets) {
       "A map card is drawn on the verified imagery: set ETHNIAFRICA_VIDEO_ASSETS"
     );
   const world = await readVerified(assets, "countries");
+  checkSeaVoyages(seq, world);
   const countries = countryIndex(world);
   // The imagery in use; 1.11.0 may draw on the 500 m mosaic (decision 1).
   const imageryId = seq.mapImagery ?? MAP_IMAGERY;
@@ -237,6 +282,7 @@ async function prepareMaps(seq, cards, routes, assets) {
         ])
       ),
       illustrations: illustrationsOf(seq),
+      illustrationCounts: illustrationCounts(seq),
       // 1.14.0: the cascade's outlines and the units' images.
       figures: figureAssetsOf(seq),
       // 1.13.0: the coast and the land the era map draws, from Natural

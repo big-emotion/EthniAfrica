@@ -75,6 +75,8 @@ const ANIMATED_DRAWN = {
     "both",
     "trace",
     "out",
+    // A sea voyage, checked against the land when the map renders.
+    "sea",
   ],
   // 1.16.0: a drawing is a symbol (`kind`) or a planted flag (`flag`, and
   // the `swap` that folds it for another); a word bubble carries its studied
@@ -104,6 +106,13 @@ const ANIMATED_DRAWN = {
 const ANIMATED_AREA = ["id", "people", "states", "nameAt", "label"];
 const AREA_FIELDS = ["file", "name", "ink", "lang", "say", "langSay"];
 export const AREA_INKS = ["a", "b", "c", "d"];
+// Narration v4 of « Zaïre », board S9 (approved 27 October 2026): six
+// provinces of one kingdom, each in its own colour, need two more inks than
+// the four of a sequence. They are the board's green and pink, kept for
+// approximate zones only, which are hatched and dashed: on a filled certain
+// area, an arrow or a word, four inks stay the rule, so a people's ink never
+// competes with them.
+export const ZONE_INKS = ["e", "f"];
 const AREA_DIR = new URL("./data/areas/", import.meta.url);
 
 // The map drawings (assets/Illustrations/README.md) and the label each takes
@@ -261,9 +270,13 @@ function checkSequenceAreas(card) {
     // 1.11.0: the ink follows the people; a territory gives its own.
     if (a.people !== undefined && a.ink !== undefined)
       fail(`${what}: an area gives its people or ink, not both`);
-    if (a.people === undefined && !AREA_INKS.includes(a.ink))
+    if (
+      a.people === undefined &&
+      !AREA_INKS.includes(a.ink) &&
+      !ZONE_INKS.includes(a.ink)
+    )
       fail(
-        `${what}: ink « ${a.ink} » is not one of the four area inks, a to d`
+        `${what}: ink « ${a.ink} » is not one of the four area inks, a to d (e and f for approximate zones)`
       );
   }
 }
@@ -343,6 +356,8 @@ function checkAnimatedFields(card) {
       fail(`Card ${card.id}: arrow ${a.id}'s ink is a to d`);
     if (a.foreign !== undefined && a.foreign !== true)
       fail(`Card ${card.id}: arrow ${a.id}: foreign is true or absent`);
+    if (a.sea !== undefined && a.sea !== true)
+      fail(`Card ${card.id}: arrow ${a.id}: sea est true ou absent`);
   }
   for (const d of map.drawings ?? []) checkDrawing(card, d, say);
   for (const w of map.words ?? []) {
@@ -370,12 +385,12 @@ function checkAnimatedFields(card) {
     // 1.14.0: the figures on the map are marks of a fact too.
     for (const s of f.shows)
       if (
-        !/^(area|arrow|illus|flag|text|count|cascade|units|row|gauge|lettering|stamp|frame|travel):\S/u.test(
+        !/^(area|arrow|illus|flag|lords|text|count|cascade|units|row|gauge|lettering|stamp|frame|travel):\S/u.test(
           s
         )
       )
         fail(
-          `Card ${card.id}: the mark « ${s} » is area:, arrow:, illus:, flag:, text: or a figure's (count:, cascade:, units:, row:, gauge:, lettering:, stamp:, frame:, travel:)`
+          `Card ${card.id}: the mark « ${s} » is area:, arrow:, illus:, flag:, lords:, text: or a figure's (count:, cascade:, units:, row:, gauge:, lettering:, stamp:, frame:, travel:)`
         );
   }
   if (map.rename) {

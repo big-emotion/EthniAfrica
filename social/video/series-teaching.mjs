@@ -9,6 +9,7 @@ import { FPS } from "./sequence.mjs";
 import { EASE, DUR, PUSH, pushAt, popAt, exitAt } from "./series-motion.mjs";
 import { wordOf } from "./series-sequence.mjs";
 import { groundMotion } from "../series-idents/ground.mjs";
+import { planScene, sceneAt, sceneMarkup } from "./series-scenes.mjs";
 
 // Frames at 30 fps, as the handoff gives them in milliseconds.
 export const TEACHING = {
@@ -251,6 +252,11 @@ export function planTeaching(seq, i) {
       marks: (card.quote.marks ?? []).map((m) => said(m.say)),
     };
   if (card.words) plan.words = card.words.map((w) => said(w.say));
+  // Narration v4 of « Zaïre »: an illustrated scene, drawn once by the page.
+  if (card.scene) {
+    plan.scene = planScene(card, said, end);
+    card.sceneSvg = sceneMarkup(card.scene.kind);
+  }
   // 1.13.0: a word card's parts, forms and stamp.
   if (card.type === "word") {
     plan.word = planWord(card, said);
@@ -409,6 +415,7 @@ export function teachingLayer(seq, l, frame, crossFade) {
       return { opacity, scale };
     });
   if (plan.word) l.word = wordAt(plan.word, frame);
+  if (plan.scene) l.scene = sceneAt(plan.scene, frame);
 }
 
 // ---------------------------------------------------------------------------

@@ -1041,6 +1041,218 @@ function buildCodAreas(countries) {
   ]);
 }
 
+// Series 1, hors-série « Zaïre », narration v4 (board S9 of the canvas
+// https://claude.ai/artifact/5eUf5zVorYqaSky3ZebWoT): the six provinces of
+// the Kongo kingdom about 1500. No source gives their limits, only where each
+// lies: « Soyo entre le fleuve et l'Océan, Mbamba au sud de Soyo ; Nsundi et
+// le Nord-Est, Mbangu [Mpangu] au sud de Nsundi, Mbata dans l'Est et Mbenba
+// [Mpemba] avec la capitale au centre » (HGA IV p. 621), and the kingdom's
+// northern border c. 1500, the river from its mouth to the Inkisi confluence
+// (HGA V p. 605). Each zone is therefore an estimation by the approximate
+// zone rule (maps.md, « Approximate zones »): an anchor placed from that
+// description, and the land nearest to it within one step, so the six
+// partition the kingdom without overlapping and without a traced limit.
+const KONGO_CITATION =
+  "J. Vansina, « Le royaume du Kongo et ses voisins », Histoire générale de l'Afrique, vol. IV, UNESCO, 1985, p. 621: « Soyo entre le fleuve et l'Océan, Mbamba au sud de Soyo ; Nsundi et le Nord-Est, Mbangu [Mpangu] au sud de Nsundi, Mbata dans l'Est et Mbenba [Mpemba] avec la capitale au centre »; Histoire générale de l'Afrique, vol. V, UNESCO, 1999, p. 605: about 1500 the border followed the river from its mouth to the Inkisi confluence.";
+// One step is one degree (about 110 km): six zones a step across fill the
+// land between the ocean and the Inkisi, which is what « au centre », « au
+// sud de » and « dans l'Est » can place.
+const KONGO_STEP = 1;
+// `place`: a Natural Earth populated place; `from` and `by`: another
+// province's anchor moved by steps east and north. Mbamba is half a step
+// inland so its anchor is on land, not off Soyo's coast.
+export const KONGO_PROVINCES = {
+  "kongo-mpemba": {
+    name: "Mpemba",
+    place: "Mbanza-Congo",
+    says: "« Mbenba avec la capitale au centre »: the capital, Mbanza-Congo",
+  },
+  "kongo-soyo": {
+    name: "Soyo",
+    place: "Soyo",
+    says: "« Soyo entre le fleuve et l'Océan »: the town of Soyo, on the estuary",
+  },
+  "kongo-mbamba": {
+    name: "Mbamba",
+    from: "kongo-soyo",
+    by: [0.5, -1],
+    says: "« Mbamba au sud de Soyo »: one step south of Soyo, half a step inland",
+  },
+  "kongo-nsundi": {
+    name: "Nsundi",
+    from: "kongo-mpemba",
+    by: [1, 1],
+    says: "« Nsundi et le Nord-Est »: one step east and one north of the capital",
+  },
+  "kongo-mpangu": {
+    name: "Mpangu",
+    from: "kongo-nsundi",
+    by: [0, -1],
+    says: "« Mbangu au sud de Nsundi »: one step south of Nsundi",
+  },
+  "kongo-mbata": {
+    name: "Mbata",
+    from: "kongo-mpemba",
+    by: [2, 0],
+    says: "« Mbata dans l'Est »: two steps east of the capital",
+  },
+};
+const KONGO_GRID = {
+  west: 11,
+  north: -3.5,
+  cell: 0.05,
+  width: 160,
+  height: 110,
+};
+// Finer than the Sahara's 0.05°: the zones are a few hundred kilometres
+// across, and the wobble would be simplified away.
+const KONGO_TOLERANCE = 0.02;
+
+function kongoAnchors(places) {
+  const anchors = {};
+  const placeAt = (name) =>
+    only(
+      places.features,
+      (f) => f.properties.name === name && f.properties.adm0_a3 === "AGO",
+      name
+    ).geometry.coordinates;
+  for (const [id, p] of Object.entries(KONGO_PROVINCES))
+    anchors[id] = p.place
+      ? placeAt(p.place).map(round2)
+      : [
+          round2(anchors[p.from][0] + p.by[0] * KONGO_STEP),
+          round2(anchors[p.from][1] + p.by[1] * KONGO_STEP),
+        ];
+  return anchors;
+}
+
+// The land north of the kingdom's border c. 1500: north of the Congo from
+// its mouth (between Moanda and Soyo, the two Natural Earth towns facing each
+// other across the estuary, where the river line stops short of the sea) to
+// the Inkisi confluence, and north of the confluence's latitude beyond it.
+function kongoNorth(congo, inkisi, places) {
+  const town = (name, a3) =>
+    only(
+      places.features,
+      (f) => f.properties.name === name && f.properties.adm0_a3 === a3,
+      name
+    ).geometry.coordinates;
+  const [moanda, soyo] = [town("Moanda", "COD"), town("Soyo", "AGO")];
+  const mouth = [(moanda[0] + soyo[0]) / 2, (moanda[1] + soyo[1]) / 2];
+  const confluence = inkisi.at(-1);
+  // The river downstream of the point nearest the confluence.
+  const nearest = congo.reduce(
+    (best, p, i) =>
+      Math.hypot(p[0] - confluence[0], p[1] - confluence[1]) <
+      Math.hypot(congo[best][0] - confluence[0], congo[best][1] - confluence[1])
+        ? i
+        : best,
+    0
+  );
+  const border = [confluence, ...congo.slice(nearest + 1), mouth];
+  const ring = [
+    ...border,
+    [mouth[0] - 5, mouth[1]],
+    [mouth[0] - 5, 5],
+    [confluence[0] + 10, 5],
+    [confluence[0] + 10, confluence[1]],
+    confluence,
+  ];
+  return { ring, mouth, confluence };
+}
+
+function buildKongoAreas(countries, places, rivers, congoFile) {
+  const congo = JSON.parse(congoFile).geometry.coordinates;
+  const inkisiFeature = only(
+    rivers.features,
+    (f) => f.properties.name === "Inkisi",
+    "Inkisi"
+  );
+  const inkisi =
+    inkisiFeature.geometry.type === "LineString"
+      ? inkisiFeature.geometry.coordinates
+      : inkisiFeature.geometry.coordinates.flat();
+  const anchors = kongoAnchors(places);
+  const north = kongoNorth(congo, inkisi, places);
+  const land = rasterize(KONGO_GRID, {
+    type: "MultiPolygon",
+    coordinates: countries.features
+      .filter((f) => ["AGO", "COD", "COG"].includes(f.properties.ADM0_A3))
+      .flatMap((f) =>
+        f.geometry.type === "Polygon"
+          ? [f.geometry.coordinates]
+          : f.geometry.coordinates
+      ),
+  });
+  // Distance in steps, a degree of longitude shortened by the latitude, with
+  // the approximate zone rule's deterministic wobble seeded by the name, so
+  // no limit between two zones reads as a surveyed straight line.
+  const seed = (id) =>
+    [...KONGO_PROVINCES[id].name].reduce((s, c) => s + c.charCodeAt(0), 0);
+  const steps = ([lon, lat], id) => {
+    const [x, y] = anchors[id];
+    const dx = (lon - x) * Math.cos((lat * Math.PI) / 180);
+    const dy = lat - y;
+    const a = Math.atan2(dy, dx);
+    const s = seed(id);
+    const wobble =
+      1 + 0.07 * Math.sin(3 * a + s) + 0.04 * Math.sin(5 * a + 2 * s);
+    return (Math.hypot(dx, dy) * wobble) / KONGO_STEP;
+  };
+  const nearestOf = (point) =>
+    Object.keys(anchors).reduce((a, b) =>
+      steps(point, b) < steps(point, a) ? b : a
+    );
+  const inLand = (lon, lat) => {
+    const x = Math.floor((lon - KONGO_GRID.west) / KONGO_GRID.cell);
+    const y = Math.floor((KONGO_GRID.north - lat) / KONGO_GRID.cell);
+    return land[y * KONGO_GRID.width + x] === 1;
+  };
+  const built = new Map();
+  for (const [id, p] of Object.entries(KONGO_PROVINCES)) {
+    const mask = maskWhere(
+      KONGO_GRID,
+      (lon, lat) =>
+        inLand(lon, lat) &&
+        !insideRing([lon, lat], north.ring) &&
+        nearestOf([lon, lat]) === id &&
+        steps([lon, lat], id) <= 1
+    );
+    const properties = {
+      kind: "approximate",
+      name: p.name,
+      category: "province",
+      source: `${KONGO_CITATION.split(":")[0]}; ${cite("places")}; ${cite("rivers")}; ${cite("countries")}`,
+      citation: KONGO_CITATION,
+      derivation: `${SCRIPT_RULE}, an estimation (approximate zone rule): the anchor ${p.says}, at ${anchors[id].join(", ")}; the land of Natural Earth's countries within one step (${KONGO_STEP}°) of it and nearer to it than to the five other anchors, south of the kingdom's border c. 1500 (the Congo of social/video/data/rivers/congo.geojson from the Inkisi confluence, the last point of Natural Earth's Inkisi at ${north.confluence.map(round2).join(", ")}, to its mouth at ${north.mouth.map(round2).join(", ")}, midway between Moanda and Soyo; north of the confluence's latitude east of it), each distance given a wobble of ±11 % seeded by the name; on a ${KONGO_GRID.cell}° grid (cells whose centre falls inside), traced back as the cell boundary, simplified by Douglas–Peucker at ${KONGO_TOLERANCE}° and rounded to 0.01°, the largest part kept. No limit of the source is traced: the zone says where the province lay, not its border.`,
+      licence: `Geometry: ${NATURAL_EARTH_LICENCE}`,
+      date: "About 1500 (HGA V p. 605); the provinces as HGA IV p. 621 lists them",
+    };
+    const geometry = traceMask(KONGO_GRID, mask, {
+      maxParts: 1,
+      tolerance: KONGO_TOLERANCE,
+    });
+    built.set(
+      id,
+      `${JSON.stringify({ type: "Feature", properties, geometry })}\n`
+    );
+  }
+  return built;
+}
+
+/** Only the Kongo provinces: Natural Earth's countries, places and rivers. */
+export async function buildKongoOnly(assets) {
+  return buildKongoAreas(
+    await readVerified(assets, "countries"),
+    await readVerified(assets, "places"),
+    await readVerified(assets, "rivers"),
+    await readFile(
+      new URL("./data/rivers/congo.geojson", import.meta.url),
+      "utf8"
+    )
+  );
+}
+
 /** Only the DR Congo area, which needs Natural Earth's countries and nothing else. */
 export async function buildCodOnly(assets) {
   return buildCodAreas(await readVerified(assets, "countries"));
@@ -1076,6 +1288,8 @@ export const AREA_IDS = [
   "tgo-togo",
   // Series 1, hors-série « Zaïre » (Cartes 1.15.0).
   "cod-rdc",
+  // The same, narration v4: the Kongo's six provinces c. 1500 (board S9).
+  ...Object.keys(KONGO_PROVINCES),
 ];
 
 const GLOTTOLOG_CITATION =
@@ -1429,6 +1643,15 @@ export async function buildAreas(assets) {
     ...(await buildYkAreas(assets, sources.countries)),
     ...buildTogoAreas(sources.countries),
     ...buildCodAreas(sources.countries),
+    ...buildKongoAreas(
+      sources.countries,
+      sources.places,
+      sources.rivers,
+      await readFile(
+        new URL("./data/rivers/congo.geojson", import.meta.url),
+        "utf8"
+      )
+    ),
   ]);
   for (const id of AREA_IDS) {
     if (built.has(id)) continue;
@@ -1451,12 +1674,14 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     );
   await mkdir(OUTPUT_DIR, { recursive: true });
   // `--togo` (or `--cod`) writes that one country's area alone, from
-  // Natural Earth's countries.
+  // Natural Earth's countries; `--kongo` the Kongo's six provinces.
   const built = process.argv.includes("--togo")
     ? await buildTogoOnly(assets)
     : process.argv.includes("--cod")
       ? await buildCodOnly(assets)
-      : await buildAreas(assets);
+      : process.argv.includes("--kongo")
+        ? await buildKongoOnly(assets)
+        : await buildAreas(assets);
   for (const [id, text] of built) {
     await writeFile(new URL(`${id}.geojson`, OUTPUT_DIR), text);
     const { geometry } = JSON.parse(text);

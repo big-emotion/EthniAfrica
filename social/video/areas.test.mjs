@@ -318,6 +318,43 @@ const COD_EXPECTED = {
     ],
   },
 };
+// Series 1, hors-série « Zaïre », narration v4 (board S9): the six
+// provinces of the Kongo c. 1500 as approximate zones, each round its
+// anchor, south of the river from its mouth to the Inkisi confluence.
+const KONGO_TOWN = {
+  kinshasa: [15.31, -4.33],
+  brazzaville: [15.28, -4.26],
+  cabinda: [12.19, -5.56],
+  luanda: [13.23, -8.84],
+  boma: [13.05, -5.83],
+};
+// A point inside each province, near its anchor (an anchor on the coast is
+// a cell from the traced edge).
+const KONGO_POINT = {
+  "kongo-soyo": [12.7, -6.3],
+  "kongo-mbamba": [13.1, -7.2],
+  "kongo-mpemba": [14.24, -6.27], // Mbanza Kongo, the capital
+  "kongo-nsundi": [15.1, -5.3],
+  "kongo-mpangu": [15.24, -6.27],
+  "kongo-mbata": [16.24, -6.27],
+};
+const KONGO_EXPECTED = Object.fromEntries(
+  Object.entries(KONGO_POINT).map(([id, point]) => [
+    id,
+    {
+      category: "province",
+      box: { west: 11.8, east: 17.5, south: -8.5, north: -4.5 },
+      covers: [point],
+      // North of the river, outside the kingdom, and the other provinces.
+      excludes: [
+        ...Object.values(KONGO_TOWN),
+        ...Object.entries(KONGO_POINT)
+          .filter(([other]) => other !== id)
+          .map(([, p]) => p),
+      ],
+    },
+  ])
+);
 const EXPECTED = {
   // Series 2, episode 1 (Cartes 1.5.0): one area per self-name, one per name.
   "touareg-imuhagh": {
@@ -487,6 +524,7 @@ const EXPECTED = {
   ...YK_EXPECTED,
   ...TGO_EXPECTED,
   ...COD_EXPECTED,
+  ...KONGO_EXPECTED,
 };
 
 const fileOf = (id) => new URL(`${id}.geojson`, OUTPUT_DIR);
@@ -713,6 +751,29 @@ test("every expected area is built, and nothing else sits in the folder", () => 
     readdirSync(OUTPUT_DIR).sort(),
     AREA_IDS.map((id) => `${id}.geojson`).sort()
   );
+});
+
+// @req REQ-186
+test("the Kongo provinces are estimations from HGA's description, c. 1500", () => {
+  const names = {
+    "kongo-soyo": "Soyo",
+    "kongo-mbamba": "Mbamba",
+    "kongo-mpemba": "Mpemba",
+    "kongo-nsundi": "Nsundi",
+    "kongo-mpangu": "Mpangu",
+    "kongo-mbata": "Mbata",
+  };
+  for (const [id, name] of Object.entries(names)) {
+    const p = JSON.parse(readFileSync(fileOf(id), "utf8")).properties;
+    assert.equal(p.name, name, id);
+    assert.match(
+      p.citation,
+      /Histoire générale de l'Afrique, vol\. IV, [^;]*p\. 621/
+    );
+    assert.match(p.citation, /vol\. V, [^:]*p\. 605/);
+    assert.match(p.derivation, /estimation/);
+    assert.match(p.date, /1500/);
+  }
 });
 
 const YK_NAMES = {

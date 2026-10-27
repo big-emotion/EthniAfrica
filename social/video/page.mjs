@@ -174,7 +174,9 @@ export const globeGrade = (frame) => monotonePath(GLOBE.grade, [0, 1])(frame);
 export const OVERLAY_SCRIPT = `const SVG = "http://www.w3.org/2000/svg";
 // d, lilac, is the series map sequence's fourth name (Cartes 1.5.0); the
 // satellite video draws three inks and never references it.
-const INK = { a: "#e8b96a", b: "#6cc3b5", c: "#e3876a", d: "#c4a8f2" };
+// e, green, and f, pink, are the series map's inks for approximate zones beyond
+// four (« Zaïre », board S9); the satellite video never references them.
+const INK = { a: "#e8b96a", b: "#6cc3b5", c: "#e3876a", d: "#c4a8f2", e: "#9fd36b", f: "#f2a6c8" };
 // The neutral ink of the « Zone approximative » swatch (0.4.0).
 const NOTE_INK = "#a8977f";
 // Hatching for each ink at 45° and, for an area inside an earlier one, at
