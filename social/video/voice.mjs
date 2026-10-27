@@ -59,15 +59,48 @@ function scriptUnits(chunk, what) {
 const withoutGuillemets = (text) =>
   text.replace(/[  ]?[«»“”"][  ]?/gu, "").trim();
 
-// One request per run of chunks without a pause: a sentence keeps its
-// prosody, and a pause is silence of an exact length rather than a break tag
-// whose length the model may stretch. A chunk with `pauseBeforeMs`, even 0,
-// starts a new request.
+// A unit ends its sentence when its spoken form ends on . ! ? or … and the
+// next unit opens a new one (a capital or a digit): « après… rien » goes on,
+// and so do « av. » and a single initial, whatever follows them.
+const SENTENCE_END = /[.!?…]["'’)\]]*$/u;
+const ABBREVIATION = /^(?:\p{Lu}|av|apr|cf|env|ibid|Mme|St)\.$/u;
+const SENTENCE_START = /^["'‘(\[]*[\p{Lu}\p{N}]/u;
+const endsSentence = (said, next) =>
+  SENTENCE_END.test(said) &&
+  !ABBREVIATION.test(said) &&
+  SENTENCE_START.test(next);
+
+// Silence after each sentence that has no pause of its own. Read as separate
+// requests, sentences otherwise follow each other with only the few
+// milliseconds of room the model leaves at either end, which sounds like one
+// sentence running into the next. Operator-tuned range: 350 to 450 ms.
+export const SENTENCE_PAUSE_MS = 400;
+
+// What each request is told of its neighbours. `previous` (the default) sends
+// the sentence before as `previous_text`: the model then opens on the same
+// pitch and pace, and that text says nothing about how this sentence ends.
+// `next_text` does, and it made eleven_multilingual_v2 read every full stop as
+// a continuation (operator, 27 October 2026); `both` keeps it reachable for a
+// comparison, `none` sends no context at all.
+const CONTEXTS = ["previous", "none", "both"];
+
+// One request per sentence: a sentence keeps its prosody and ends on its own
+// punctuation, with nothing after it to rise towards. A pause is silence of
+// an exact length rather than a break tag whose length the model may
+// stretch. A chunk with `pauseBeforeMs`, even 0, starts a new request with
+// exactly that silence; a sentence end without one gets `sentencePauseMs`.
 export function voiceSegments(script) {
   const chunks = script.chunks;
   if (!Array.isArray(chunks) || !chunks.length)
     fail("A voice script needs chunks");
+  const sentencePause = script.sentencePauseMs ?? SENTENCE_PAUSE_MS;
+  if (!(Number.isInteger(sentencePause) && sentencePause >= 0))
+    fail("A sentence pause is a whole number of milliseconds, 0 or more");
+  const context = script.context ?? "previous";
+  if (!CONTEXTS.includes(context))
+    fail(`The voice context is one of ${CONTEXTS.join(", ")}, not ${context}`);
   const segments = [];
+  let lastSaid = null;
   chunks.forEach((chunk, c) => {
     const what = `Chunk ${c + 1}`;
     if (typeof chunk.text !== "string" || !chunk.text.trim())
@@ -75,22 +108,28 @@ export function voiceSegments(script) {
     const pause = chunk.pauseBeforeMs;
     if (pause !== undefined && !(Number.isInteger(pause) && pause >= 0))
       fail(`${what}: a pause is a whole number of milliseconds, 0 or more`);
-    if (!segments.length || pause !== undefined)
-      segments.push({ pauseBeforeMs: pause ?? 0, text: "", units: [] });
-    const segment = segments.at(-1);
-    for (const unit of scriptUnits(chunk, what)) {
+    scriptUnits(chunk, what).forEach((unit, u) => {
       const said = withoutGuillemets(unit.spoken ?? unit.text);
       if (!said) fail(`${what}: « ${unit.text} » has nothing left to say`);
+      if (u === 0 && pause !== undefined)
+        segments.push({ pauseBeforeMs: pause, text: "", units: [] });
+      else if (lastSaid === null)
+        segments.push({ pauseBeforeMs: 0, text: "", units: [] });
+      else if (endsSentence(lastSaid, said))
+        segments.push({ pauseBeforeMs: sentencePause, text: "", units: [] });
+      const segment = segments.at(-1);
       if (segment.text) segment.text += " ";
       const from = segment.text.length;
       segment.text += said;
       if (unit.spoken) unit.spoken = said;
       segment.units.push({ chunk: c, ...unit, from, to: segment.text.length });
-    }
+      lastSaid = said;
+    });
   });
   segments.forEach((segment, i) => {
-    if (i) segment.previousText = segments[i - 1].text;
-    if (i < segments.length - 1) segment.nextText = segments[i + 1].text;
+    if (i && context !== "none") segment.previousText = segments[i - 1].text;
+    if (i < segments.length - 1 && context === "both")
+      segment.nextText = segments[i + 1].text;
   });
   return segments;
 }
