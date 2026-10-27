@@ -154,7 +154,9 @@ html,body{margin:0;background:#000}
 .vf-close{position:absolute;left:60px;width:960px;top:318px;text-align:center;display:flex;flex-direction:column;align-items:center}
 .vf-sigline{font:600 56px/64px var(--font-wordmark);color:var(--oi-ink);--sw:8px}
 .vf-sigline span{display:block;white-space:nowrap}
-.vf-sent{font:700 32px/40px var(--font-text);--sw:4px;margin-top:28px;max-width:900px;text-wrap:balance}
+/* 27 October 2026: the invitation comes first, the line 28 px under it. */
+.vf-sent + .vf-sigline{margin-top:28px}
+.vf-sent{font:700 32px/40px var(--font-text);--sw:4px;max-width:900px;text-wrap:balance}
 .vf-sent p{margin:0}
 /* 1.10.0: the fixed invitation, two lines set without wrapping. */
 .vf-sent span{display:block;white-space:nowrap}
@@ -585,14 +587,15 @@ function buildParts(spec, view) {
     const close = el("div", "vf-close");
     // 1.10.0: the closing line and the fixed invitation, from the cards' own
     // constants, never the card's body: the video keeps no copy of either.
-    const line = el("div", "vf-sigline oi oi-l");
-    line.setAttribute("lang", "fr");
-    EthniCards.signatureLines.forEach((t) => line.append(el("span", "", esc(t))));
-    close.append(line);
+    // Since 27 October 2026 the invitation comes first, as the voice says it.
     const invitation = el("div", "vf-sent oi");
     invitation.setAttribute("lang", "fr");
     EthniCards.invitationLines.forEach((t) => invitation.append(el("span", "", esc(t))));
     close.append(invitation);
+    const line = el("div", "vf-sigline oi oi-l");
+    line.setAttribute("lang", "fr");
+    EthniCards.signatureLines.forEach((t) => line.append(el("span", "", esc(t))));
+    close.append(line);
     const pill = pick(".ec-cta-pill");
     close.append(el("div", "vf-pill oi", esc((pill ? pill.textContent : "ethniafrica.com").toUpperCase())));
     // 1.7.0: the next episode, printed 30 px under the pill, on one line.

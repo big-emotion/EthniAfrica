@@ -348,22 +348,24 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
   if (entries.some((e) => key(e.card) !== key(first)))
     fail("A series video shows one series, one episode and one theme");
 
-  // Cartes 1.10.0: the ending is fixed. The voice says the closing line and
-  // the invitation, one chunk per printed line, the same lines the cards'
-  // bundle draws (version.json). Nothing on the ending names a search, so
-  // the input only says the next episode; the 1.7.0 fields load and warn.
+  // Cartes 1.10.0: the ending is fixed, one chunk per printed line, the same
+  // lines the cards' bundle draws (version.json). Since the operator's words
+  // of 27 October 2026 the voice says the invitation first, then the closing
+  // line, though the card prints the line above the invitation. Nothing on
+  // the ending names a search, so the input only says the next episode; the
+  // 1.7.0 fields load and warn.
   const ending = input.ending ?? {};
   const retired = ["search", "general", "pageOnline"].filter((k) =>
     Object.hasOwn(ending, k)
   );
-  const printed = [...version.signatureLines, ...version.invitationLines];
+  const spoken = [...version.invitationLines, ...version.signatureLines];
   const said = entries.at(-1).chunks.map((c) => sameWords(c.text));
   if (
-    said.length !== printed.length ||
-    printed.some((t, i) => said[i] !== sameWords(t))
+    said.length !== spoken.length ||
+    spoken.some((t, i) => said[i] !== sameWords(t))
   )
     fail(
-      `La fin n'est pas dite mot pour mot : « ${printed.join(" / ")} », un morceau par ligne imprimée`
+      `La fin n'est pas dite mot pour mot : « ${spoken.join(" / ")} », un morceau par ligne imprimée`
     );
   // « Prochain épisode » always sits under the pill (the 1.7.0 card of its
   // own is retired).

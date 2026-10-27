@@ -797,12 +797,18 @@ test("a final series video package delivers the video, the words its cards and s
     "Florence Abena Dolphyne",
     "L'Afrique n'est pas un seul bloc.",
     "Le continent compte 54 pays,",
-    // 1.10.0: the closing line and the fixed invitation.
-    "L’importance de connaître nos noms.",
-    "Vous pouvez continuer la recherche sur EthniAfrica, lien en profil.",
+    // The fixed invitation and the closing line (operator, 27 October 2026).
+    "Vous pouvez continuer la recherche sur EthniAfrica et vous abonner pour découvrir de nouvelles publications.",
+    "EthniAfrica : l’importance de connaître nos noms.",
     "le pays des Noirs",
   ])
     assert.ok(screen.includes(line), line);
+  // Printed in that order: the invitation, then the line.
+  assert.ok(
+    screen.lastIndexOf(
+      "Vous pouvez continuer la recherche sur EthniAfrica et vous abonner pour découvrir de nouvelles publications."
+    ) < screen.lastIndexOf("EthniAfrica : l’importance de connaître nos noms.")
+  );
   // File names, identifiers and the voice's spoken forms are not on screen.
   assert.ok(!screen.some((s) => /\.jpg$|^serie-afrique|^nuit$/.test(s)));
   const post = readFileSync(join(f.root, f.output, "post.md"), "utf8");

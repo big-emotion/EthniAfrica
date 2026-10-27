@@ -45,8 +45,8 @@
     {
       "id": "seq-9",
       "file": "seq-9.png",
-      "sha256": "21818b2242dca559c57d27d65915a3d62aea4112a84bea5f3fa0b1b7c795f731",
-      "previousSha256": "1530ab12d49c8072c170178a939486093e116f4e2c3e1e44cba74d9d76f0410a"
+      "sha256": "0a3afba746382e500cd7be64c1a8a9c89d7179b4fae5ccf1634defe2007ce9ed",
+      "previousSha256": "21818b2242dca559c57d27d65915a3d62aea4112a84bea5f3fa0b1b7c795f731"
     },
     {
       "id": "chr-1",
@@ -71,8 +71,8 @@
     {
       "id": "chr-5",
       "file": "chr-5.png",
-      "sha256": "f5e01a123236b425275a6b82d6d60c9b6ae755c7c0bb7e2f828de665bc891566",
-      "previousSha256": "3b835ff619d9cc109734312a1f6c8eeb778e388c9d3c5f57942e53feeeecde95"
+      "sha256": "56de306e52cd4b3189c8c0cba5330c85c7638fb86634ea6b3994201401a02788",
+      "previousSha256": "f5e01a123236b425275a6b82d6d60c9b6ae755c7c0bb7e2f828de665bc891566"
     },
     {
       "id": "chr-branch",
@@ -127,8 +127,8 @@
     {
       "id": "seq-9-parchemin",
       "file": "seq-9-parchemin.png",
-      "sha256": "3dca3d8c34cf4cade0010d60c188a210302de00da9d2a6b8d6f991c99f1b0d67",
-      "previousSha256": "a0cd86d74d52a349aaf0f10d660c674c266c602fe361c4e7dfd83c4def321848"
+      "sha256": "840e172b17779966c6248cd96e43cd61a3bf022b00b2feb693731867cbfc1423",
+      "previousSha256": "3dca3d8c34cf4cade0010d60c188a210302de00da9d2a6b8d6f991c99f1b0d67"
     },
     {
       "id": "map-fula",
@@ -228,8 +228,8 @@
     {
       "id": "serie-pays-07",
       "file": "serie-pays-07.png",
-      "sha256": "e47d1edf021549d84280e687315b9ef390ff21a4ca62fd476f4fa18ff8b72767",
-      "previousSha256": "d3f122920016e7f98d721b607b7a48782251333ff3ea296fa31567a33bd972c4"
+      "sha256": "4d7ec6ce0e0dd398484284e61cc288c8dfcc1663011a69e6392d1f7a6aead933",
+      "previousSha256": "e47d1edf021549d84280e687315b9ef390ff21a4ca62fd476f4fa18ff8b72767"
     },
     {
       "id": "serie-nom-recu-01",
@@ -269,8 +269,8 @@
     {
       "id": "serie-nom-recu-08",
       "file": "serie-nom-recu-08.png",
-      "sha256": "80e2a09a72a238b67c35adcb1b5e478c5206908bf6821d3fca846bd9b1a160b1",
-      "previousSha256": "d09d54278423e13d3129fc3806785d611772d1cd33e73dab6f9ba4b5a9035f19"
+      "sha256": "b2427db31eb8ed495c94a38d4ace720db639f69a070f70be487211741c5f92f8",
+      "previousSha256": "80e2a09a72a238b67c35adcb1b5e478c5206908bf6821d3fca846bd9b1a160b1"
     },
     {
       "id": "serie-nom-famille-01",
@@ -305,8 +305,8 @@
     {
       "id": "serie-nom-famille-07",
       "file": "serie-nom-famille-07.png",
-      "sha256": "f363720d98c08313df32e64796d29f5abb2fb7f19094d24019e7dc9525e71b3f",
-      "previousSha256": "57701e6472a8f6fd09884ad295aac004162c837768db4a7406a6319789e55f59"
+      "sha256": "c7f338523c0380268304a5fc166d90ca2adde7d505b8954dc1d76cb6217e5aa8",
+      "previousSha256": "f363720d98c08313df32e64796d29f5abb2fb7f19094d24019e7dc9525e71b3f"
     },
     {
       "id": "serie-mots-01",
@@ -341,8 +341,8 @@
     {
       "id": "serie-mots-07",
       "file": "serie-mots-07.png",
-      "sha256": "d1fc627dbea8abe1cc7b45e89f325564b54244707ee21629bee2508b8eb224a4",
-      "previousSha256": "1f5cf1ddfb1d9e6a015cf2cc28c2058855ae70990346e17e3e5d44f0d12029bd"
+      "sha256": "52758ccef77e502fe7f2c9fa82e586192d37f04ecf7335ab6b08973d447730df",
+      "previousSha256": "d1fc627dbea8abe1cc7b45e89f325564b54244707ee21629bee2508b8eb224a4"
     },
     {
       "id": "serie-frontieres-01",
@@ -377,8 +377,8 @@
     {
       "id": "serie-frontieres-07",
       "file": "serie-frontieres-07.png",
-      "sha256": "189eb2d6669630f59c5ac936e70ceded4c575ae800a76b4345ddb5bac9d5ea88",
-      "previousSha256": "33094e580a439eca53ae72165939294991b0c787d3703933cd286b2450c1eb3e"
+      "sha256": "ed8161eba0ff09c3ac26e3091a1b4b079af466a12cda19204f4ed01ca1c8ab97",
+      "previousSha256": "189eb2d6669630f59c5ac936e70ceded4c575ae800a76b4345ddb5bac9d5ea88"
     },
     {
       "id": "serie-afrique-tout-01",
@@ -413,8 +413,8 @@
     {
       "id": "serie-afrique-tout-07",
       "file": "serie-afrique-tout-07.png",
-      "sha256": "84b816863dea5801f17606bc698f176125c325763177f036ee6e53ca0eba8539",
-      "previousSha256": "5564fb46d8456e5dce3b905810289fdc3ffe5660fd435d26f08454ef6f5150b5"
+      "sha256": "b9b784a8bcea3a15d696d38b3e5b6d388fa2c0bcf72599559f3de0e8125e2a50",
+      "previousSha256": "84b816863dea5801f17606bc698f176125c325763177f036ee6e53ca0eba8539"
     },
     {
       "id": "serie-villes-01",
@@ -444,8 +444,8 @@
     {
       "id": "serie-villes-06",
       "file": "serie-villes-06.png",
-      "sha256": "71dff916b45c44a794999b2e8c47e80e40fd2fe1026d2cce9c3cf9b583b472bf",
-      "previousSha256": "a65e967daad40a4fafd4fc8b24681d02b94e2feb946d0086c05e236b8e021304"
+      "sha256": "0af43d0a5a9255aae5fc188b69458bf72124d54b8acca83bf2716e61640976c3",
+      "previousSha256": "71dff916b45c44a794999b2e8c47e80e40fd2fe1026d2cce9c3cf9b583b472bf"
     },
     {
       "id": "serie-atlas-1880",
@@ -866,5 +866,22 @@
   "integration-1.15.0": {
     "date": "2026-10-26",
     "decision": "Operator accepted EthniAfrica Cartes 1.15.0-proposition (external video in the series video) on 26 October 2026: « j'accepte la proposition, elle peut être validée ». It changes no card, token or component: the carousel's 89 references are unchanged. The clip and the montage are drawn by social/video only."
+  },
+  "closing-words-2026-10-27": {
+    "date": "2026-10-27",
+    "decision": "Operator: « Tu changes la formule pour toutes les vidéos, oui ». Every closing card prints first the invitation « Vous pouvez continuer la recherche sur EthniAfrica et vous abonner pour découvrir de nouvelles publications. » (three lines, its top at y 760, the closing block's 1.10.0 place), then the closing line « EthniAfrica : l’importance de connaître nos noms. » (two lines, top at y 923); the alternative text ends with both in that order. Same faces and sizes, no design version. Rendered in diagnostic mode on the pinned browser: the 79 cards that are not closing cards pass against design-system-1.10.0-accepted, so their references and hashes stay; the ten closing cards change by design, fit without warning (panel 632 to 806 px, under 828 or 900) and take the new renders. Each records its previous hash. No tolerance changed.",
+    "references": ".local/research/social-production-2026-10-09/design-system-closing-2026-10-27-accepted/",
+    "changed": [
+      "seq-9",
+      "chr-5",
+      "seq-9-parchemin",
+      "serie-pays-07",
+      "serie-nom-recu-08",
+      "serie-nom-famille-07",
+      "serie-mots-07",
+      "serie-frontieres-07",
+      "serie-afrique-tout-07",
+      "serie-villes-06"
+    ]
   }
 }

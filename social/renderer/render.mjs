@@ -642,21 +642,24 @@ export async function verifyOutput(options) {
     }
     // 1.10.0: the accepted design records the closing line and the
     // invitation (version.json); the engine draws them from its own
-    // constants, so the two must agree: the line on its printed lines at
-    // y 760, the invitation line for line, nothing overlapping, and the
-    // alternative text ending with both.
+    // constants, so the two must agree: since 27 October 2026 the invitation
+    // first, its top at y 760, line for line, then the line on its printed
+    // lines under it, nothing overlapping, and the alternative text ending
+    // with both in that order.
     if (card.fit.type === "closing") {
       const { signatureLine, signatureLines, invitation, invitationLines } =
         current.version;
+      const line = card.fit.sigline;
       required(
-        card.fit.sigline?.text === signatureLine &&
-          card.fit.sigline.lines === signatureLines.length &&
-          Math.abs(card.fit.sigline.top - 760) <= 0.5 &&
+        line?.text === signatureLine &&
+          line.lines === signatureLines.length &&
+          Math.abs(line.blockTop - 760) <= 0.5 &&
+          line.top > line.blockTop + 0.5 &&
           JSON.stringify(card.closing?.invitation) ===
             JSON.stringify(invitationLines) &&
           card.closing.wrapped === 0 &&
           card.closing.overlaps?.length === 0 &&
-          card.alt.endsWith(`${signatureLine} ${invitation}`),
+          card.alt.endsWith(`${invitation} ${signatureLine}`),
         "Closing card without the closing line and invitation in their place"
       );
     }

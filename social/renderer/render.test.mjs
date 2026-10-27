@@ -434,18 +434,21 @@ test("1.3.0: every series sample fits, on a one-line band, under 828 px, with th
   }
 });
 
-// The operator's words, decided on 19 October 2026 (Cartes 1.10.0). Spelled
-// out here on purpose: the test holds the engine's constants to the decision.
-const CLOSING_LINE = "L’importance de connaître nos noms.";
+// The operator's words, decided on 27 October 2026 in place of the 1.10.0
+// ones, printed in the order the voice says them: the invitation from y 760,
+// where the 1.10.0 line began, then the line 28 px under it. Spelled out here
+// on purpose: the test holds the engine's constants to the decision.
+const CLOSING_LINE = "EthniAfrica : l’importance de connaître nos noms.";
 const INVITATION_LINES = [
   "Vous pouvez continuer la recherche",
-  "sur EthniAfrica, lien en profil.",
+  "sur EthniAfrica et vous abonner",
+  "pour découvrir de nouvelles publications.",
 ];
-const CLOSING_TEXT = `${CLOSING_LINE} ${INVITATION_LINES.join(" ")}`;
+const CLOSING_TEXT = `${INVITATION_LINES.join(" ")} ${CLOSING_LINE}`;
 const closings = () => samples.cards.filter((c) => c.type === "closing");
 
 // @req REQ-186
-test("1.10.0: every closing card ends on the closing line and the fixed invitation, in place, with nothing over them", async (t) => {
+test("every closing card ends on the fixed invitation, then the closing line, in place, with nothing over them", async (t) => {
   const cards = closings();
   assert.equal(cards.length, 10);
   const f = await fixture(t, {
@@ -459,7 +462,20 @@ test("1.10.0: every closing card ends on the closing line and the fixed invitati
     assert.ok(line, `${card.id}: no closing line`);
     assert.equal(line.text, CLOSING_LINE, card.id);
     assert.equal(line.lines, 2, `${card.id}: a printed line wrapped`);
-    assert.ok(Math.abs(line.top - 760) <= 0.5, `${card.id}: top ${line.top}`);
+    assert.ok(
+      Math.abs(line.blockTop - 760) <= 0.5,
+      `${card.id}: the invitation's top at ${line.blockTop}`
+    );
+    // Three invitation lines of 45 px, then 28 px.
+    assert.ok(
+      Math.abs(line.top - (760 + 3 * 45 + 28)) <= 1,
+      `${card.id}: line top ${line.top}`
+    );
+    assert.ok(
+      card.visibleText.indexOf(INVITATION_LINES[2]) <
+        card.visibleText.indexOf("connaître nos noms."),
+      `${card.id}: the invitation is printed before the line`
+    );
     assert.ok(line.left >= 72 && line.right <= 1008, card.id);
     assert.equal(line.overlaps, 0, `${card.id}: a box overlaps the line`);
     assert.deepEqual(card.closing.invitation, INVITATION_LINES, card.id);
@@ -473,7 +489,9 @@ test("1.10.0: every closing card ends on the closing line and the fixed invitati
     assert.ok(card.alt.endsWith(CLOSING_TEXT), `${card.id}: ${card.alt}`);
     assert.equal(card.alt.split(INVITATION_LINES[0]).length, 2, card.id);
     assert.ok(
-      !/décoloniser|Cherchez|travers ses noms/.test(card.visibleText),
+      !/décoloniser|Cherchez|travers ses noms|lien en profil/.test(
+        card.visibleText
+      ),
       card.id
     );
   }
@@ -519,7 +537,9 @@ test("1.10.0: recovery refuses a closing card whose report lacks the ending or m
   const original = structuredClone(r);
   for (const change of [
     (c) => delete c.fit.sigline,
-    (c) => (c.fit.sigline.top = 790),
+    (c) => (c.fit.sigline.blockTop = 790),
+    // The line back above the invitation, as in 1.10.0.
+    (c) => (c.fit.sigline.top = 760),
     (c) => (c.fit.sigline.lines = 3),
     (c) =>
       (c.fit.sigline.text =
@@ -531,6 +551,10 @@ test("1.10.0: recovery refuses a closing card whose report lacks the ending or m
         "lien en profil.",
       ]),
     (c) => (c.alt = c.alt.slice(0, -CLOSING_TEXT.length) + CLOSING_LINE),
+    (c) =>
+      (c.alt =
+        c.alt.slice(0, -CLOSING_TEXT.length) +
+        `${CLOSING_LINE} ${INVITATION_LINES.join(" ")}`),
   ]) {
     const altered = structuredClone(original);
     change(altered.cards[0]);
