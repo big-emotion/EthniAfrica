@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -12 160 132" width="160" height="132">
+<title>parole</title>
+<filter id="parole-soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter><defs><linearGradient id="parole-paper" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbf3e2"/><stop offset="0.55" stop-color="#efe3c6"/><stop offset="1" stop-color="#d8c9a8"/></linearGradient></defs><ellipse cx="80" cy="112" rx="12" ry="5" fill="#0b0806" opacity="0.55" filter="url(#parole-soft)"/><path d="M24 -2 L136 -2 C146 -2 152 4 152 14 L152 62 C152 72 146 78 136 78 L96 78 L80 110 L72 78 L24 78 C14 78 8 72 8 62 L8 14 C8 4 14 -2 24 -2 Z" fill="url(#parole-paper)" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="2.2"/><path d="M16 8 L16 30" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+</svg>

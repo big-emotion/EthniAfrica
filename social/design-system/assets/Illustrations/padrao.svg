@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -12 160 132" width="160" height="132">
+<title>padrao</title>
+<filter id="padrao-soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter><defs><linearGradient id="padrao-stone" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ece4d4"/><stop offset="0.55" stop-color="#b9ad97"/><stop offset="1" stop-color="#7d7260"/></linearGradient></defs><ellipse cx="80" cy="112" rx="30" ry="5" fill="#0b0806" opacity="0.55" filter="url(#padrao-soft)"/><path d="M56 112 L104 112 L100 102 L60 102 Z" fill="url(#padrao-stone)" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.9"/>
+<path d="M68 102 L68 40 L92 40 L92 102 Z" fill="url(#padrao-stone)" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.9"/>
+<path d="M60 40 L100 40 L98 26 L62 26 Z" fill="url(#padrao-stone)" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.9"/>
+<path d="M76 26 L76 14 L68 14 L68 6 L76 6 L76 -4 L84 -4 L84 6 L92 6 L92 14 L84 14 L84 26 Z" fill="url(#padrao-stone)" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.7"/>
+<g stroke="#23170d" stroke-width="1" stroke-linecap="round" opacity="0.35"><line x1="84" y1="50" x2="90" y2="46"/><line x1="84" y1="62" x2="90" y2="58"/><line x1="84" y1="74" x2="90" y2="70"/><line x1="84" y1="86" x2="90" y2="82"/><line x1="84" y1="98" x2="90" y2="94"/></g>
+<path d="M72 56 L88 56 M72 64 L86 64 M72 72 L88 72" fill="none" stroke="#6e6252" stroke-width="1.2" opacity="0.6"/>
+</svg>

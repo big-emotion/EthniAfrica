@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -12 160 132" width="160" height="132">
+<title>or-barre</title>
+<filter id="or-barre-soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter><defs><radialGradient id="or-barre-au" cx="0.32" cy="0.26" r="0.9"><stop offset="0" stop-color="#fff4c0"/><stop offset="0.25" stop-color="#f4cf55"/><stop offset="0.6" stop-color="#c48c16"/><stop offset="1" stop-color="#5e3d04"/></radialGradient></defs><ellipse cx="80" cy="112" rx="40" ry="5" fill="#0b0806" opacity="0.55" filter="url(#or-barre-soft)"/><path d="M46 96 C44 86 50 76 58 70 C64 64 72 60 82 62 C92 60 102 64 108 72 C116 80 118 92 110 98 C100 104 86 104 76 102 C64 104 50 104 46 96 Z" fill="url(#or-barre-au)" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.9"/>
+<ellipse cx="66" cy="74" rx="5" ry="2.6" fill="#fffbe6" opacity="0.85" transform="rotate(-30 66 74)"/>
+<g stroke="#23170d" stroke-width="1" stroke-linecap="round" opacity="0.32"><line x1="94" y1="98" x2="102" y2="88"/><line x1="100" y1="98" x2="108" y2="90"/></g>
+<circle cx="80" cy="66" r="48" fill="none" stroke="#23170d" stroke-width="13" opacity="0.6"/>
+<circle cx="80" cy="66" r="48" fill="none" stroke="#e3876a" stroke-width="8"/>
+<path d="M46 100 L114 32" stroke="#23170d" stroke-width="13" stroke-linecap="round" opacity="0.6"/>
+<path d="M46 100 L114 32" stroke="#e3876a" stroke-width="8" stroke-linecap="round"/>
+</svg>
