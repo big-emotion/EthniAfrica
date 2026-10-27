@@ -10,6 +10,47 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+## [5.12.0] - 2026-10-28
+
+### Added
+
+- Social video: external clips and montage phases (Cartes 1.15.0), symbols
+  instead of words on the series maps (Cartes 1.16.0), the Congo river and the
+  DR Congo area, and the Zaïre v4 scenes: sea voyages, Kongo provinces,
+  parchment scenes and the enriched chapter card (#1970, #1987, #1981, #1990).
+- Social: every ending closes with the subscribe invitation, then the project
+  line; one video per network in a single video package (#1989, #1977).
+- Editorial: public copy may no longer avow ignorance about why a name was
+  chosen, nor call an interpretation a « lecture » (#1985).
+- Reel clip: context boxes for operator-approved narrative prose (#1969).
+- Social voice: the « tribu » voice and neutral rhythm are the default (#1956).
+
+### Changed
+
+- Fiches `PPL_KONGO` (`FLG_BANTU`), `PPL_KONGO_CABINDA` and `PPL_SOLONGO`
+  (`FLG_NIGERCONGO`) corrected against their sources (#1986).
+- The Zaïre name history in `COD`, `PPL_BAKIGA`, `PPL_NGBANDE` and `PPL_ZANDE`,
+  and the Togo name history in `TGO`, corrected against their sources (#1978,
+  #1974).
+- National languages of `COD`, `TZA` and `CAF` (#1971).
+- `PPL_ASANTE` (`FLG_KWA`): the Adae and Akwasidae frequency is corrected; the
+  Boaten 1970 source in `REL_COMMERCIAL_ASANTE_FANTE` points to its Internet
+  Archive copy (#1959, #1952).
+- Search and API internals: name index paging, the feed handler and dead
+  exports from the architecture audit (#1953).
+- Reel clips no longer end on a closing card (#1963).
+
+### Fixed
+
+- Search: a recognised name, such as « amazigh » for « Amazigh (Berbères) »,
+  outranks fiches that only mention the word in their text (#1944).
+- Social voice: one sentence per request, so full stops end low; guillemets are
+  never sent to the voice (#1988, #1947).
+- Social: a series video credits every clip source and packages its clip
+  footage by its source video record; the hook reminder may repeat a clip
+  opener; « plus de » stays clear of the figure head's number (#1975, #1972,
+  #1976, #1946).
+
 ## [5.11.0] - 2026-10-21
 
 ### Added
@@ -2049,7 +2090,8 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.11.0...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.12.0...HEAD
+[5.12.0]: https://github.com/big-emotion/ethniafrica/compare/v5.11.0...v5.12.0
 [5.11.0]: https://github.com/big-emotion/ethniafrica/compare/v5.10.0...v5.11.0
 [5.10.0]: https://github.com/big-emotion/ethniafrica/compare/v5.9.0...v5.10.0
 [5.9.0]: https://github.com/big-emotion/ethniafrica/compare/v5.8.0...v5.9.0
