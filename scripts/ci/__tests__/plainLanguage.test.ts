@@ -92,6 +92,114 @@ describe("plain-language editorial contract", () => {
     }
   });
 
+  // The operator's complaint of 27 October 2026: scripts kept adding a
+  // sentence confessing that nobody knows why a family or parents chose a
+  // name. Public copy states the attested trace instead.
+  // @req REQ-178
+  it("blocks sentences that avow ignorance of why or by whom a name was chosen", () => {
+    const avowed = [
+      "Mais les actes de ces familles ne disent pas qui a choisi « Zaïre », ni pourquoi.",
+      "On ne sait pas pourquoi ses parents ont choisi ce prénom.",
+      "Pour comprendre le choix de chaque famille, il faut encore lire ses actes et écouter ses récits.",
+      "Choix familial précis : inconnu",
+      "Sur ce nom, on n'a pas de piste.",
+      "Nul ne sait pourquoi cette famille a choisi de prendre ce nom.",
+      "Les registres ne précisent pas pourquoi les parents lui ont donné ce prénom.",
+      "Le choix des parents reste inconnu.",
+      "Les raisons de ce choix demeurent inconnues.",
+      "On ignore qui a donné ce nom à l'enfant.",
+    ];
+    const allowed = [
+      "Cette explication est attribuée à un missionnaire.",
+      "Cette explication reste une hypothèse non établie par les sources.",
+      // About a word's attested form, not a family's motive: the sources
+      // describe the form, they do not withhold a choice.
+      "La forme exacte entendue reste inconnue.",
+      "Les actes de 1972 montrent que plusieurs familles ont choisi « Zaïre » comme prénom.",
+      "Le document ne précise pas quand ce nom est apparu.",
+      "Ses parents ont choisi ce prénom l'année de l'indépendance.",
+      "On ne sait pas encore lire cette inscription.",
+      // The register's own model sentence for an uncertain oldest trace.
+      "Les sources ne disent pas s'il s'agit du même royaume.",
+      // An unknown autonym is not a naming motive.
+      "On ne sait pas comment ce peuple se nomme lui-même.",
+    ];
+    const units = [...avowed, ...allowed].map((text, i) => ({
+      file: "script.txt",
+      location: String(i),
+      text,
+    }));
+    const flagged = new Set(
+      lintCopy(units)
+        .filter(
+          (f) =>
+            f.rule === "Ethniafrica.NamingMotiveIgnorance" &&
+            f.severity === "error"
+        )
+        .map((f) => f.unit.text)
+    );
+    expect(avowed.filter((text) => !flagged.has(text))).toEqual([]);
+    expect(allowed.filter((text) => flagged.has(text))).toEqual([]);
+  });
+
+  // The operator, 27 October 2026: « C'est la lecture la plus ancienne =>
+  // j'interdis à tout jamais l'usage de ce terme, "la lecture". » The ban is
+  // total by default, so a new phrasing cannot slip through; only fixed
+  // collocations where « lecture » is the act of reading or playback pass.
+  // @req REQ-178
+  it("blocks « lecture » as an interpretation and keeps the act of reading", () => {
+    const interpretive = [
+      "C'est la lecture la plus ancienne.",
+      "Une lecture attribuée à un missionnaire relie le nom au fleuve.",
+      "Selon la lecture de Ndaywel, le mot vient de nzadi.",
+      "Selon cette lecture, le nom désigne le fleuve.",
+      "Il existe deux lectures du mot.",
+      "Les lectures proposées ne s'accordent pas.",
+      "Une deuxième lecture le fait venir de l'expression amazighe.",
+      "La contre-lecture",
+      "Le mot vient d'une grille de lecture biblique.",
+      "Le classement repose sur notre lecture des fiches.",
+      "LECTURE RETENUE : le fleuve.",
+    ];
+    const actOfReading = [
+      "Les missions ont enseigné la lecture et l'écriture.",
+      "Peu utilisé pour la lecture et l'écriture jusqu'à récemment.",
+      "Apprendre la lecture et l'écriture en kikongo.",
+      "Article de revue à comité de lecture.",
+      "Revue a comite de lecture, OpenEdition.",
+      "Guide de lecture scolaire qui cite la phrase.",
+      "Lu sur la copie de la salle de lecture de la CIA.",
+      "Il propose qu'une erreur de lecture ait été recopiée.",
+      "Elle l'enseigne avec un livre de lecture en nǀuu.",
+      "À la suite d'un article de Lectures pour tous d'octobre 1899.",
+      "Lecture seule",
+      "Lecture de vidéos tierces",
+      "Lorsque vous demandez la lecture d’une production sur le site.",
+      "Lecture du registre…",
+      "Le lien de la barre de lecture de cette page vise le chapitre.",
+      "Le hub de lecture",
+      "Lectures courtes",
+      "Les peuples sont regroupés pour faciliter la lecture.",
+      "Le lecteur de YouTube se charge après votre clic.",
+    ];
+    const units = [...interpretive, ...actOfReading].map((text, i) => ({
+      file: "script.txt",
+      location: String(i),
+      text,
+    }));
+    const flagged = new Set(
+      lintCopy(units)
+        .filter(
+          (f) =>
+            f.rule === "Ethniafrica.NoLectureForInterpretation" &&
+            f.severity === "error"
+        )
+        .map((f) => f.unit.text)
+    );
+    expect(interpretive.filter((text) => !flagged.has(text))).toEqual([]);
+    expect(actOfReading.filter((text) => flagged.has(text))).toEqual([]);
+  });
+
   // @req REQ-178
   it("checks nested public JSON prose while preserving bibliography, quotes, language names and internal notes", () => {
     const units = extractCopy(

@@ -404,3 +404,42 @@ name filters from mobile (320 and 430) through tablet (820) to desktop (1,440),
 and the method link card at 320 and 430 pixels. Checked pages have no horizontal
 overflow. The pinned-version banner preview did not complete; its unit tests
 pass, but this pass does not claim visual verification for that story.
+
+## Naming-motive rule — 2026-10-27
+
+The operator asked that public copy stop announcing what nobody knows about why
+a family or parents chose a name. `Ethniafrica.NamingMotiveIgnorance` reports an
+error when an avowal of ignorance (« on ne sait pas », « nul ne sait », « ne
+disent pas qui/pourquoi », « reste inconnu », « on n'a pas de piste ») sits in
+the same sentence as a naming-choice word (choisi, choix, nommé, baptisé, donné
+ce nom, porte ce nom). An attributed reading, an unproven hypothesis, an unknown
+word form or an unknown autonym (« comment ce peuple se nomme ») stays allowed.
+
+At adoption the rule matched 21 times in 19 fiche fields (name histories,
+`nameOriginActor` and source notes) and nothing under `docs/productions/`. Those
+exact fields were added to the legacy baseline (44 → 63 entries) so CI stays
+green; `npm run audit:editorial` lists them for a reviewed rewrite. New or
+changed text gets no allowance, and `check:publication` ignores the baseline.
+
+## « Lecture » rule — 2026-10-27
+
+On « C'est la lecture la plus ancienne », the operator banned the word for good:
+« j'interdis à tout jamais l'usage de ce terme, "la lecture" ».
+`Ethniafrica.NoLectureForInterpretation` reports an error on every « lecture »,
+« lectures » or « contre-lecture ». The ban is total by default because the
+interpretive sense has no fixed shape (« la lecture de Ndaywel », « selon cette
+lecture », « deux lectures du mot », « la lecture retenue »): a list of patterns
+would let the next phrasing through. Only fixed collocations where the word means
+the act of reading, a cited title or media playback are exceptions (« la lecture
+et l'écriture », « comité de lecture », « guide de lecture », « erreur de
+lecture », « Lectures pour tous », « lecture seule », « lecture d'une
+production »). A new legitimate collocation goes into the rule's exceptions with
+a test, not into the baseline.
+
+At adoption the rule matched 417 times in 402 fields of 178 files: 260 fields in
+102 patronym fiches, 72 in 40 people fiches, 33 in 13 country fiches, 8 in 3
+language fiches, 4 in 3 dossiers, 3 in 3 language-family fiches, 2 in one
+migration file, 17 in 10 `src/` files and 3 in 3 `docs/productions/` files. Those
+exact fields were added to the legacy baseline (63 → 465 entries) so CI stays
+green; `npm run audit:editorial` lists them for a reviewed rewrite. New or
+changed text gets no allowance, and `check:publication` ignores the baseline.
