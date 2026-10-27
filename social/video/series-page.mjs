@@ -14,6 +14,7 @@ import { FLAT_VERT, FLAT_FRAG, OVERLAY_SCRIPT } from "./page.mjs";
 import { flatProject, areaStyle, MARKS } from "./series-map.mjs";
 import { documentFrame } from "./series-document.mjs";
 import { TURNS } from "./series-turns.mjs";
+import { PLANTED, BUBBLE } from "./series-sequence.mjs";
 import {
   coastRunsInFrame,
   landRingInFrame,
@@ -110,6 +111,11 @@ html,body{margin:0;background:#000}
 .oi.sm-wd-dates,.oi.sm-wd-century{font:800 30px/36px var(--font-text);color:var(--oi-muted);--sw:4px}
 .oi.sm-lab{position:absolute;white-space:nowrap;transform:translate(-50%,0);font:800 28px/32px var(--font-text);color:var(--oi-ink);--sw:4px}
 .sm-ill{position:absolute;display:block;max-width:none}
+/* 1.16.0: the studied word written inside its bubble, in the ink line's
+   colour on the bubble's paper (no outline: the bubble is its ground); a
+   flag planted on its place. */
+.sm-bubble-word{position:absolute;white-space:nowrap;transform:translate(-50%,-50%);font-family:var(--font-display);font-weight:400;color:#23170d}
+.sm-plant{position:absolute;overflow:visible}
 .vf-keys{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;margin-bottom:6px}
 .vf-keys .vf-key{font-size:24px;line-height:30px;margin-bottom:6px}
 .vf-key svg{width:36px;height:24px;flex:none;display:block}
@@ -1425,12 +1431,34 @@ function drawAnimatedRun(node, map) {
   node.images.forEach((img) => (img.style.display = "none"));
   const taken = {};
   for (const [n, d] of map.marks.drawings.entries()) {
-    const img = node.pool[d.kind][(taken[d.kind] = (taken[d.kind] ?? -1) + 1)];
+    // 1.16.0: a flag planted on its place.
+    if (d.kind === "flag") {
+      node.marks.append(ringed(plantedFlag(d, n), 4));
+      continue;
+    }
     const w = (d.h * 160) / 120, h = (d.h * 132) / 120;
-    Object.assign(img.style, { display: "block", left: d.x - w / 2 + "px", top: d.y + d.rise - (d.h * 124) / 120 + "px", width: w + "px", height: h + "px", opacity: d.opacity });
-    img.dataset.mark = "drawing";
-    img.dataset.kind = d.kind;
-    img.dataset.of = n;
+    const top = d.y + d.rise - (d.h * 124) / 120;
+    const place = (kind, opacity) => {
+      const img = node.pool[kind][(taken[kind] = (taken[kind] ?? -1) + 1)];
+      Object.assign(img.style, { display: "block", left: d.x - w / 2 + "px", top: top + "px", width: w + "px", height: h + "px", opacity });
+      img.dataset.mark = "drawing";
+      img.dataset.kind = kind;
+      img.dataset.of = n;
+    };
+    // 1.16.0: a bubble turning gold cross-fades its two papers and words.
+    if (d.before !== undefined) {
+      place("parole", d.opacity * (1 - d.gold));
+      place("parole-or", d.opacity * d.gold);
+    } else place(d.kind, d.opacity);
+    const words = d.before !== undefined ? [[d.before, 1 - d.gold], [d.after, d.gold]] : d.word !== undefined ? [[d.word, 1]] : [];
+    for (const [text, k] of words) {
+      if (!(d.opacity * k > 0)) continue;
+      const t = el("div", "sm-bubble-word", esc(fr(text)));
+      Object.assign(t.style, { left: d.x + "px", top: top + (d.h * 50) / 120 + "px", fontSize: (d.h * ${BUBBLE.text}).toFixed(2) + "px", lineHeight: "1", opacity: d.opacity * k });
+      t.dataset.mark = "word";
+      t.dataset.of = n;
+      node.marks.append(t);
+    }
     if (!(d.labelOpacity > 0)) continue;
     const label = el("div", "sm-lab oi", esc(fr(d.label)));
     Object.assign(label.style, { left: d.x + "px", top: d.y + d.rise + 8 + "px", opacity: d.labelOpacity });
@@ -1621,6 +1649,41 @@ function drawFlags(node, map, onPaper) {
       node.flags.append(over);
     }
   }
+}
+
+// 1.16.0: a flag planted on its place: the pole stands on the place, ink
+// line under a cream core, and pops from its foot; the cloth flies at its
+// top, unrolled from the hoist by a clip, hoisted from the foot when it
+// rises in a swap. Drawn in the box the model gives, so the layout checks
+// measure what the frame shows.
+let plantSeq = 0;
+function plantedFlag(d, n) {
+  const b = d.box;
+  const svg = svgEl("svg", { class: "sm-plant", width: b.w, height: b.h, viewBox: [b.x, b.y, b.w, b.h].join(" ") });
+  // Inline sizes: the map's own svg rule would stretch it to the frame.
+  Object.assign(svg.style, { left: b.x + "px", top: b.y + "px", width: b.w + "px", height: b.h + "px", opacity: d.opacity });
+  svg.dataset.planted = d.flag;
+  svg.dataset.of = n;
+  const poleTop = d.y - d.h * d.pole;
+  svg.append(
+    svgEl("line", { x1: d.x, y1: d.y, x2: d.x, y2: poleTop, stroke: "#23170d", "stroke-width": d.poleWidth + 4, "stroke-linecap": "round" }),
+    svgEl("line", { x1: d.x, y1: d.y - 2, x2: d.x, y2: poleTop + 2, stroke: "#e9e1d1", "stroke-width": d.poleWidth, "stroke-linecap": "round" })
+  );
+  if (d.cloth > 0) {
+    const W = d.w, H = W * ${PLANTED.ratio};
+    const x0 = d.x + d.poleWidth / 2;
+    const y0 = poleTop + 2 + (1 - d.hoist) * (d.h - H - 4);
+    const id = "plant-unroll-" + plantSeq++;
+    const clip = svgEl("clipPath", { id });
+    clip.append(svgEl("rect", { x: x0 - 2, y: y0 - 2, width: (W + 4) * d.cloth, height: H + 4 }));
+    const cloth = svgEl("g", { "clip-path": "url(#" + id + ")" });
+    cloth.append(
+      svgEl("use", { href: "#flag-" + d.flag, x: x0, y: y0, width: W, height: H }),
+      svgEl("rect", { x: x0, y: y0, width: W, height: H, fill: "none", stroke: "#23170d", "stroke-width": 3 })
+    );
+    svg.append(clip, cloth);
+  }
+  return svg;
 }
 
 // Drawn marks (series.md « 7 »): on the satellite each over a dark
@@ -2310,6 +2373,11 @@ function frameBoxes(frame, state) {
           const r = rect(n), k = r.w / 160, ink = drawingInk[n.dataset.kind];
           boxes.push({ id: n.dataset.kind, kind: "map-drawing", x: r.x + ink.x * k, y: r.y + ink.y * k, w: ink.w * k, h: ink.h * k, ...flags, opacity: +n.style.opacity, of: "drawing " + n.dataset.of });
         });
+        // 1.16.0: planted flags, as drawings.
+        node.marks.querySelectorAll("[data-planted]").forEach((n) => {
+          if (!(+n.style.opacity > 0)) return;
+          boxes.push({ id: "drapeau " + n.dataset.planted, kind: "map-drawing", ...rect(n), ...flags, opacity: +n.style.opacity, of: "drawing " + n.dataset.of });
+        });
         node.arrows.querySelectorAll("[data-head][data-drawn='1']").forEach((n) => boxes.push({ id: n.dataset.head, kind: "map-head", ...rect(n), ...flags, opacity: +n.parentNode.getAttribute("opacity") }));
       }
     }
@@ -2877,7 +2945,9 @@ window.drawFrame = (state) => {
         borders: +node.borderGroup.getAttribute("opacity"),
         drawn: [...node.drawn.children].map((g) => ({ kind: g.dataset.drawn, opacity: +g.getAttribute("opacity"), ...rect(g) })),
         paper: +node.paperfx.style.opacity,
-        drawings: node.images.filter((i) => i.style.display !== "none").map((i) => ({ kind: i.dataset.kind, filter: getComputedStyle(i).filter, complete: i.complete && i.naturalWidth > 0, ...rect(i) })),
+        drawings: node.images.filter((i) => i.style.display !== "none").map((i) => ({ kind: i.dataset.kind, opacity: +i.style.opacity, filter: getComputedStyle(i).filter, complete: i.complete && i.naturalWidth > 0, ...rect(i) })),
+        // 1.16.0: planted flags as drawn: the flag flying and its cloth.
+        planted: [...node.marks.querySelectorAll("[data-planted]")].map((s) => ({ flag: s.dataset.planted, opacity: +s.style.opacity, filter: getComputedStyle(s).filter, cloth: s.querySelector("use") && { flag: s.querySelector("use").getAttribute("href").slice(6), clip: +s.querySelector("clipPath rect").getAttribute("width"), y: +s.querySelector("use").getAttribute("y") }, ...rect(s) })),
         texts: [...node.names.children, ...node.marks.querySelectorAll("[data-mark]")].map((n) => ({ text: n.textContent, mark: n.dataset.mark || "name", opacity: +n.style.opacity, filter: getComputedStyle(n).filter, ...rect(n) })),
       };
     }),

@@ -10,6 +10,7 @@ import {
   MARKS,
   AREA_INKS,
   ILLUSTRATIONS,
+  BUBBLE_KINDS,
   areaStyle,
   arrowWidth,
   drawingHeight,
@@ -43,6 +44,8 @@ import {
   flagUnroll,
   eraAt,
   FLAGS,
+  FLAG_STATES,
+  voiceNamesState,
 } from "./series-turns.mjs";
 import { loadRiver } from "./rivers.mjs";
 import {
@@ -843,6 +846,24 @@ export const MAP_TIMING = {
   silentCoverage: 0.8,
   silentDelay: 21,
 };
+// 1.16.0, a flag planted on its place (series.md « 1.16.0 », 3): the pole
+// pops from its foot (the pop's one bounce, the canvas's « rebond ») and
+// the cloth unrolls from the hoist as a territory's flag does (600 ms);
+// swapped, the cloth folds back to the hoist (400 ms) and the next flag
+// rises from the foot to the top of the pole (600 ms). Its size follows
+// the drawings' height h: the pole is h tall, the cloth 0.72 h wide, 3:2.
+export const PLANTED = {
+  unrollFrom: 4,
+  unroll: FLAGS.unroll,
+  fold: FLAGS.rollBack,
+  rise: FLAGS.unroll,
+  cloth: 0.72,
+  ratio: 2 / 3,
+};
+// 1.16.0, the word bubble: it glides towards its listener in 950 ms (the
+// 1.14.0 name brought from outside) and turns gold with its new word over
+// the last 300 ms; without a destination it turns in place.
+export const BUBBLE = { glide: 28, morph: 9, text: 40 / 120 };
 const clamp01 = (x) => Math.min(1, Math.max(0, x));
 const ramp = (frames, duration, ease = EASE.move) =>
   ease(clamp01(frames / duration));
@@ -1225,13 +1246,51 @@ function planAnimatedCard(seq, plan, run, k) {
         fail(
           `${what}: un mouvement tombe pendant qu'une flèche se trace (${a.id})`
         );
-  const drawings = (map.drawings ?? []).map((d) => ({
-    kind: d.kind,
-    at: d.at,
-    start: word(d.say),
-    end: d.until !== undefined ? word(d.until) : Infinity,
-    label: d.label ?? ILLUSTRATIONS[d.kind],
-  }));
+  const drawings = (map.drawings ?? []).map((d) => {
+    const start = word(d.say);
+    const base = {
+      at: d.at,
+      start,
+      end: d.until !== undefined ? word(d.until) : Infinity,
+    };
+    // 1.16.0: a flag planted on its place, and the one it is swapped for.
+    if (d.flag !== undefined) {
+      for (const flag of [d.flag, d.swap?.flag].filter(Boolean))
+        if (!voiceNamesState(seq, i, flag))
+          fail(
+            `${what}: Drapeau d'un État que la voix ne nomme pas (« ${FLAG_STATES[flag]} »)`
+          );
+      const swap = d.swap && { flag: d.swap.flag, start: word(d.swap.say) };
+      if (swap && swap.start < start + PLANTED.unrollFrom + PLANTED.unroll)
+        fail(
+          `${what}: le drapeau ${d.flag} se replie avant d'être planté (swap)`
+        );
+      return {
+        ...base,
+        kind: "flag",
+        flag: d.flag,
+        ...(swap && { swap }),
+        label: null,
+        images: [],
+      };
+    }
+    // 1.16.0: the word bubble, and the word it becomes on its morph.
+    const morph = d.morph && {
+      word: d.morph.word,
+      start: word(d.morph.say),
+      ...(d.morph.to && { to: d.morph.to }),
+    };
+    if (morph && morph.start <= start)
+      fail(`${what}: la bulle change de mot après être apparue (morph)`);
+    return {
+      ...base,
+      kind: d.kind,
+      label: d.label === false ? null : (d.label ?? ILLUSTRATIONS[d.kind]),
+      ...(d.word !== undefined && { word: d.word }),
+      ...(morph && { morph }),
+      images: morph ? [d.kind, BUBBLE_KINDS.to] : [d.kind],
+    };
+  });
   // 1.14.0: a pin's name under its point, in the reading arrow's ink.
   const pinWords = (spec.pins ?? []).map((p) => ({
     text: p.name,
@@ -1281,6 +1340,7 @@ function planAnimatedCard(seq, plan, run, k) {
     at: p.at,
     side: p.side ?? "right",
     start: p.say !== undefined ? word(p.say) : start,
+    written: p.label !== "none",
   }));
   const rename = map.rename && { ...map.rename, start: word(map.rename.say) };
   // 1.13.0: flags inside a state, following the counter; drawn marks.
@@ -1687,6 +1747,63 @@ const dimmed = (frame, dim) =>
     : 1 - (1 - FIGURES.dim) * ramp(frame - dim, FIGURES.dimFrames);
 
 // The marks of one card at a frame, faded by `fade` (the card change).
+// 1.16.0: a planted flag at `frame`: the pole's pop, how far the cloth is
+// unrolled from the hoist (`cloth`), how high it flies (`hoist`, 1 at the
+// top of the pole) and which flag it is. Its box holds the pole and the
+// cloth at the top: the rising flag never leaves it.
+function plantedAt(d, frame, [x, y], h, opacity) {
+  const k = frame - d.start;
+  let flag = d.flag;
+  let cloth = ramp(k - PLANTED.unrollFrom, PLANTED.unroll, EASE.enter);
+  let hoist = 1;
+  if (d.swap && frame >= d.swap.start) {
+    const s = frame - d.swap.start;
+    if (s < PLANTED.fold) cloth *= 1 - ramp(s, PLANTED.fold, EASE.exit);
+    else {
+      flag = d.swap.flag;
+      cloth = 1;
+      hoist = ramp(s - PLANTED.fold, PLANTED.rise, EASE.enter);
+    }
+  }
+  const w = h * PLANTED.cloth;
+  const pole = Math.max(4, Math.round(h / 18));
+  return {
+    kind: "flag",
+    flag,
+    x,
+    y,
+    h,
+    w,
+    pole: popAt(k).scale,
+    poleWidth: pole,
+    cloth,
+    hoist,
+    opacity,
+    box: { x: x - pole, y: y - h, w: w + 2 * pole, h },
+    rise: 0,
+    label: null,
+    labelOpacity: 0,
+    labelScale: 1,
+  };
+}
+
+// 1.16.0: the word bubble on its morph: where it is as it glides, its word
+// (the new one from half way through the turn) and how gold it is.
+function bubbleAt(d, frame, at) {
+  const from = at(d.at);
+  const k = frame - d.morph.start;
+  if (k < 0) return { at: from, word: d.word, gold: 0 };
+  const glide = d.morph.to ? BUBBLE.glide : BUBBLE.morph;
+  const to = d.morph.to ? at(d.morph.to) : from;
+  const g = ramp(k, glide, EASE.move);
+  const gold = ramp(k - (glide - BUBBLE.morph), BUBBLE.morph, EASE.move);
+  return {
+    at: [from[0] + (to[0] - from[0]) * g, from[1] + (to[1] - from[1]) * g],
+    word: gold >= 0.5 ? d.morph.word : d.word,
+    gold,
+  };
+}
+
 function cardMarks(cp, frame, camera, proportion, fade, names) {
   const at = (p) => flatProject(camera, ...p);
   // 1.13.0: around a whip zoom, a mark's own visibility.
@@ -1793,8 +1910,10 @@ function cardMarks(cp, frame, camera, proportion, fade, names) {
         : 1);
     const opacity = inOut * fade * shown(d.start);
     if (opacity <= 0) return [];
-    const [x, y] = at(d.at);
     const h = proportion.h;
+    if (d.kind === "flag") return [plantedAt(d, frame, at(d.at), h, opacity)];
+    const bubble = d.morph ? bubbleAt(d, frame, at) : null;
+    const [x, y] = bubble ? bubble.at : at(d.at);
     return [
       {
         kind: d.kind,
@@ -1802,6 +1921,17 @@ function cardMarks(cp, frame, camera, proportion, fade, names) {
         y,
         h,
         w: (h * 4) / 3,
+        box: {
+          x: x - (h * 2) / 3,
+          y: y - (h * 124) / 120,
+          w: (h * 4) / 3,
+          h: (h * 124) / 120,
+        },
+        ...(d.word !== undefined && {
+          word: bubble?.word ?? d.word,
+          gold: bubble?.gold ?? 0,
+          ...(bubble && { before: d.word, after: d.morph.word }),
+        }),
         opacity,
         rise:
           MAP_TIMING.rise *
@@ -1809,7 +1939,9 @@ function cardMarks(cp, frame, camera, proportion, fade, names) {
         label: d.label,
         // 1.13.0: the label pops under its drawing.
         labelOpacity:
-          opacity * popAt(frame - d.start - MAP_TIMING.labelDelay).opacity,
+          d.label === null
+            ? 0
+            : opacity * popAt(frame - d.start - MAP_TIMING.labelDelay).opacity,
         labelScale: popAt(frame - d.start - MAP_TIMING.labelDelay).scale,
       },
     ];
@@ -1855,7 +1987,10 @@ function cardMarks(cp, frame, camera, proportion, fade, names) {
         y,
         opacity,
         scale: dot.scale,
-        nameOpacity: label.opacity * fade * names * shown(p.start),
+        nameOpacity:
+          p.written !== false
+            ? label.opacity * fade * names * shown(p.start)
+            : 0,
         nameScale: label.scale,
       },
     ];
@@ -1938,7 +2073,25 @@ function mapTexts(names, marks) {
         h: 32,
       },
     });
-  for (const d of marks.drawings)
+  for (const d of marks.drawings) {
+    // 1.16.0: the bubble's studied word is written inside it, a word on
+    // the map like the others.
+    if (d.word !== undefined) {
+      const top = d.y + d.rise - (d.h * 124) / 120;
+      texts.push({
+        text: d.word,
+        kind: "word",
+        word: true,
+        opacity: d.opacity,
+        box: textBox(
+          d.x,
+          top + (d.h * 50) / 120,
+          estimateWidth(d.word, d.h * BUBBLE.text, 0.5),
+          d.h * BUBBLE.text
+        ),
+      });
+    }
+    if (d.label === null) continue;
     texts.push({
       text: d.label,
       kind: "label",
@@ -1951,6 +2104,7 @@ function mapTexts(names, marks) {
         32
       ),
     });
+  }
   for (const w of marks.words) {
     const [bw, bh] = styleBox(
       w.kind === "century"
@@ -2234,16 +2388,11 @@ function checkAnimatedCard(seq, i) {
         fail(
           `${what}: « ${t.text} » hors de la bande de la carte (x ${Math.round(t.box.x)} à ${Math.round(t.box.x + t.box.w)}, y ${Math.round(t.box.y)} à ${Math.round(t.box.y + t.box.h)}, image ${f})`
         );
-    for (const d of map.marks.drawings) {
-      const box = {
-        x: d.x - d.w / 2,
-        y: d.y - (d.h * 124) / 120,
-        w: d.w,
-        h: (d.h * 124) / 120,
-      };
-      if (!inside(box, MARKS.band))
-        fail(`${what}: le dessin ${d.kind} hors de la bande de la carte`);
-    }
+    for (const d of map.marks.drawings)
+      if (!inside(d.box, MARKS.band))
+        fail(
+          `${what}: le dessin ${d.flag ? `drapeau ${d.flag}` : d.kind} hors de la bande de la carte`
+        );
     // 1.14.0: units in the map band, every letter of a lettering on its
     // path.
     for (const fig of map.marks.figures) {
@@ -2312,6 +2461,16 @@ function markOn(map, mark, head) {
   if (kind === "illus")
     return map.marks.drawings.some(
       (d) => d.kind === value && d.opacity >= 0.6 && pointOn([d.x, d.y])
+    );
+  // 1.16.0: a planted flag counts from 60 % opacity once its cloth shows:
+  // the planting is the mark, as an arrow counts while it draws.
+  if (kind === "flag")
+    return map.marks.drawings.some(
+      (d) =>
+        d.flag === value &&
+        d.opacity >= 0.6 &&
+        d.cloth > 0 &&
+        pointOn([d.x, d.y])
     );
   return map.texts.some(
     (t) =>
