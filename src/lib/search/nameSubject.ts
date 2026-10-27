@@ -50,7 +50,8 @@ export function selectNameSubject(
       break;
     }
   }
-  if (exact.length === 0) return [];
+  if (exact.length === 0)
+    return wholeWordSubjects(results, candidates, language);
 
   // Bassa is three peoples filed « Bassa », « Bassa du Cameroun » and « Bassa
   // Nge »; the exact match alone answered about one of them. So an entry whose
@@ -137,4 +138,28 @@ function namesOf(result: SearchResult, language: Language): string[] {
     ...forms,
     ...(result.historyNames ?? []),
   ];
+}
+
+/**
+ * No form is exactly what was typed, but the name a fiche is filed under opens
+ * with it ahead of a parenthesis: « amazigh » in « Amazigh (Berbères) ». The
+ * name is recognised as filed. The parenthesis is not split into an alias: the
+ * qualifier is not a name, and a fragment such as « amazig » stays unknown.
+ */
+function wholeWordSubjects(
+  results: SearchResult[],
+  candidates: string[],
+  language: Language
+): SearchResult[] {
+  for (const candidate of candidates) {
+    if (candidate.length < 3) continue;
+    const found = results.filter((result) => {
+      const filed = normalizeString(
+        getLocalizedSearchResultName(result, language)
+      );
+      return filed.startsWith(`${candidate} (`);
+    });
+    if (found.length > 0) return found;
+  }
+  return [];
 }
