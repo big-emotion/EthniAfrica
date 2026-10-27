@@ -141,7 +141,7 @@ Workflows that run after a merge, on a schedule or on demand, and so can never b
 - `storybook-deploy.yml` — a push to `main`.
 - `seed-moderation-allowlist.yml` and `deploy-preview-recette.yml` — run by hand.
 - The Ferry automation: `ferry-router.yml` (repository dispatch from Jira transitions, one
-  workflow for every agent), `ferry-reconcile.yml` (every 30 minutes) and `ferry-cost-daily.yml`.
+  workflow for every agent).
 - `claude.yml` (Claude on issues and review comments) and `claude-code-review.yml` (an automated
   review on each pull request — advisory, not a gate).
 
@@ -250,6 +250,11 @@ Required in production, whatever their reputation as an optional extra:
   unlimited traffic — a deliberate choice, since failing open would silently remove all rate
   limiting. Outside production it logs a warning and lets the request through.
 
+  If Upstash is configured but unreachable or erroring, the read quotas fail **open** on
+  purpose, logged and sent to Sentry, so a blip costs a quota rather than the API. Key
+  issuance refuses with a **503** instead. The report and contact limiters are separate (see
+  below) and fail open whenever Upstash is missing or erroring, in production too.
+
   What decides "production" changed with the move off Vercel. `isProductionDeployment()`
   prefers `VERCEL_ENV`, which no longer exists, and falls back to `NODE_ENV` — which the
   Docker image sets to `production`. So on the VPS these two are mandatory: without them
@@ -279,7 +284,9 @@ reads. Run it after adding any `process.env` reference.
 ### Rate limiting `/api/v2/*`
 
 `src/proxy.ts` applies Upstash rate limiting. Without `UPSTASH_REDIS_REST_URL` and
-`UPSTASH_REDIS_REST_TOKEN`, the limiter is disabled — acceptable locally, not in production.
+`UPSTASH_REDIS_REST_TOKEN`, a production deployment answers **500** on every `/api/v2/*`
+request (with a Sentry capture); outside production the limiter is skipped with a warning.
+See the Upstash entry under the required variables for the outage behaviour.
 
 | Variable                 | Meaning                                                        | Default |
 | ------------------------ | -------------------------------------------------------------- | ------- |
@@ -302,7 +309,8 @@ address never pools every reader into one bucket.
 ### Report and contact form tunables
 
 Each is optional; a malformed or non-positive value keeps the default rather than failing. The
-limiters need the same Upstash pair as above and fail open without it.
+report and contact limiters need the same Upstash pair as above. Unlike the `/api/v2` limiter,
+they fail open without it in every environment, production included, and log a warning.
 
 | Variable                        | Meaning                                                     | Default  |
 | ------------------------------- | ----------------------------------------------------------- | -------- |

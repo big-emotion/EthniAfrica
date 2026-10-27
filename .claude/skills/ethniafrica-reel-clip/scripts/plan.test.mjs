@@ -188,6 +188,28 @@ test("boxes move to the reel clock without bridging", () => {
 });
 
 // @req REQ-186
+test("a context box takes up to 140 characters, a label box 70, and no other style exists", () => {
+  const prose =
+    "« C’est le fonds qui manque le moins » est un vers du Laboureur et ses Enfants, de Jean de La Fontaine.";
+  const box = (over) => ({ start: 10, end: 14, text: prose, ...over });
+  assert.deepEqual(
+    validatePlan(plan({ boxes: [box({ style: "context" })] })),
+    []
+  );
+  assert.match(validatePlan(plan({ boxes: [box()] })).join(), /at most 70/);
+  assert.match(
+    validatePlan(
+      plan({ boxes: [box({ style: "context", text: prose.repeat(2) })] })
+    ).join(),
+    /at most 140/
+  );
+  assert.match(
+    validatePlan(plan({ boxes: [box({ style: "quote" })] })).join(),
+    /box 1: unknown style/
+  );
+});
+
+// @req REQ-186
 test("a plan without boxes has none", () => {
   assert.deepEqual(reelBoxes(plan()), []);
 });

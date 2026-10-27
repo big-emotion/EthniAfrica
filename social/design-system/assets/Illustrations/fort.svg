@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -12 160 132" width="160" height="132">
+<title>fort</title>
+<filter id="fort-soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter><defs><linearGradient id="fort-wall" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbf6ec"/><stop offset="0.55" stop-color="#ddd2bd"/><stop offset="1" stop-color="#a89a80"/></linearGradient><linearGradient id="fort-roof" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c98a5a"/><stop offset="1" stop-color="#7a3f1d"/></linearGradient></defs><ellipse cx="80" cy="112" rx="64" ry="5" fill="#0b0806" opacity="0.55" filter="url(#fort-soft)"/><path d="M18 108 L18 52 L28 52 L28 44 L38 44 L38 52 L48 52 L48 44 L58 44 L58 52 L102 52 L102 44 L112 44 L112 52 L122 52 L122 44 L132 44 L132 52 L142 52 L142 108 Z" fill="url(#fort-wall)" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.9"/>
+<path d="M96 52 L96 22 L128 22 L128 52" fill="url(#fort-wall)" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.9"/>
+<path d="M92 22 L112 8 L132 22 Z" fill="url(#fort-roof)" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.9"/>
+<path d="M70 108 L70 86 C70 76 90 76 90 86 L90 108 Z" fill="#3a2a17" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.6"/>
+<path d="M36 68 L36 78 M60 68 L60 78 M106 32 L106 40 M118 32 L118 40 M124 68 L124 78" fill="none" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="2.2"/>
+<g stroke="#23170d" stroke-width="1" stroke-linecap="round" opacity="0.3"><line x1="120" y1="104" x2="128" y2="94"/><line x1="128" y1="104" x2="136" y2="94"/><line x1="134" y1="100" x2="140" y2="92"/><line x1="116" y1="46" x2="124" y2="36"/></g>
+<path d="M112 8 L112 -6" fill="none" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.6"/><path d="M112 -6 L128 -2 L112 3 Z" fill="#b3261e" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.2"/>
+</svg>

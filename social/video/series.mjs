@@ -33,9 +33,12 @@ import {
   MAP_IMAGERY,
   MARKS,
   checkSeriesMapCard,
+  checkStudiedWords,
+  checkUniversalCard,
 } from "./series-map.mjs";
 import { checkFigureFields, figureHeadAt } from "./series-figures.mjs";
 import { INTRO, OUTRO } from "../series-idents/shots.mjs";
+import { prepareClipCard, clipShots } from "./series-clip-frames.mjs";
 import {
   planMapSequences,
   mapRunState,
@@ -57,6 +60,7 @@ import {
   teachingLayer,
   isParchment,
 } from "./series-teaching.mjs";
+import { checkSceneCard } from "./series-scenes.mjs";
 
 // The full-screen bands in frame pixels (series.md and handoff.md,
 // « Renderer integration of 1.4.0 »). The image fills the frame; only text
@@ -137,6 +141,22 @@ export const CHAPTER_TITLE_IN = 38;
 const REMINDER = [75, 120];
 const SOURCE_LABELS = ["Source", "Sources", "Hypothèses"];
 
+// The continent's outline from the design system's Africa base map (Natural
+// Earth, projected for the carousel cards), read once.
+let africa = null;
+const africaBackdrop = () => {
+  if (!africa) {
+    const base = JSON.parse(
+      readFileSync(
+        new URL("../design-system/assets/Cartes/afrique.json", import.meta.url),
+        "utf8"
+      )
+    );
+    africa = { d: base.africa, viewBox: base.meta.viewBox };
+  }
+  return africa;
+};
+
 // `input.cards` is the cards JSON (the carousel's), resolved from `dir`.
 export function loadSeriesVideo(input, { dir = "." } = {}) {
   const cardsFile = resolve(
@@ -165,6 +185,9 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
   const chapters = input.chapters ?? [];
   // 1.13.0: the subject key, fixed for every episode on one subject.
   const subject = input.subject ? loadSubject(input.subject) : null;
+  // 1.16.0: the words under study, the only words its maps may write.
+  const studied = input.studiedWords ?? null;
+  if (studied !== null) checkStudiedWords(studied);
   const seen = new Set();
   const entries = beats.map((beat, i) => {
     // The intro bumper (social/series-idents), operator, 19 October 2026:
@@ -216,8 +239,15 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     if (!input.demo && /(^|\/)a-trouver-[^/]*$/.test(card.image?.src ?? ""))
       fail(`Card ${card.id} still shows « image à trouver »`);
     // A map card is drawn on satellite imagery; an atlas card is refused.
-    if (card.type === "map" || card.opening !== undefined)
+    if (card.type === "map" || card.opening !== undefined) {
       checkSeriesMapCard(card);
+      // 1.16.0: an episode with studied words has universal maps.
+      if (studied) checkUniversalCard(card, studied);
+      else if ((card.map?.drawings ?? []).some((d) => d.word !== undefined))
+        fail(
+          `Card ${card.id}: une bulle porte le mot étudié : le déclarer dans studiedWords`
+        );
+    }
     checkLongCardFields(card);
     // 1.8.0: the document card and the teaching cards.
     if (card.image?.document) checkDocumentCard(card);
@@ -225,11 +255,23 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     if (card.sbs) checkSideBySide(card);
     // 1.12.0: the parchment card and the teaching cards in motion.
     checkTeachingCard(card);
+    // Narration v4 of « Zaïre »: an illustrated scene on the parchment.
+    checkSceneCard(card, studied);
     // 1.13.0: the story's turns (whip, era, flags, headline band).
     checkTurnFields(card);
     // 1.14.0: figures and facts drawn on the map.
     checkFigureFields(card);
     const own = structuredClone(card);
+    // 1.16.0: on a universal map nothing is named by default; a studied
+    // word is written only where the script asks for it.
+    if (studied && own.map) {
+      for (const a of own.map.areas ?? []) a.label ??= "none";
+      for (const p of own.map.places ?? []) p.label ??= "none";
+      for (const d of own.map.drawings ?? []) if (!d.flag) d.label ??= false;
+    }
+    // 1.15.0: a card whose picture is an external clip.
+    if (own.image?.clip || own.image?.clips)
+      prepareClipCard(own, dir, { proof: !!input.demo });
     // 1.13.0: the globe lands on the subject's base view; the opener's
     // kicker is the subject's formula.
     if (subject && own.type === "opener") {
@@ -279,6 +321,22 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     card.series = structuredClone(first.series);
     if (first.theme) card.theme = first.theme;
   };
+  // The enriched chapter card (« Zaïre », board S14, approved 27 October
+  // 2026, for every series video with chapters): the video's title as a
+  // reminder at the top, the chapters before and after the current one, and
+  // the EthniAfrica map of Africa dimmed behind.
+  const chapterOf = (n) =>
+    n >= 1 && n <= chapters.length ? { n, title: chapters[n - 1].title } : null;
+  entries.forEach((e) => {
+    if (e.card.type !== "chapter") return;
+    const c = e.card.chapter;
+    Object.assign(c, {
+      video: first.title,
+      prev: chapterOf(c.n - 1),
+      next: chapterOf(c.n + 1),
+      backdrop: africaBackdrop(),
+    });
+  });
   entries.forEach((e) => {
     if (e.card.type === "chapter") silent(e.card);
     // The intro draws its own parchment, but belongs to the episode.
@@ -290,22 +348,24 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
   if (entries.some((e) => key(e.card) !== key(first)))
     fail("A series video shows one series, one episode and one theme");
 
-  // Cartes 1.10.0: the ending is fixed. The voice says the closing line and
-  // the invitation, one chunk per printed line, the same lines the cards'
-  // bundle draws (version.json). Nothing on the ending names a search, so
-  // the input only says the next episode; the 1.7.0 fields load and warn.
+  // Cartes 1.10.0: the ending is fixed, one chunk per printed line, the same
+  // lines the cards' bundle draws (version.json). Since the operator's words
+  // of 27 October 2026 the voice says the invitation first, then the closing
+  // line, though the card prints the line above the invitation. Nothing on
+  // the ending names a search, so the input only says the next episode; the
+  // 1.7.0 fields load and warn.
   const ending = input.ending ?? {};
   const retired = ["search", "general", "pageOnline"].filter((k) =>
     Object.hasOwn(ending, k)
   );
-  const printed = [...version.signatureLines, ...version.invitationLines];
+  const spoken = [...version.invitationLines, ...version.signatureLines];
   const said = entries.at(-1).chunks.map((c) => sameWords(c.text));
   if (
-    said.length !== printed.length ||
-    printed.some((t, i) => said[i] !== sameWords(t))
+    said.length !== spoken.length ||
+    spoken.some((t, i) => said[i] !== sameWords(t))
   )
     fail(
-      `La fin n'est pas dite mot pour mot : « ${printed.join(" / ")} », un morceau par ligne imprimée`
+      `La fin n'est pas dite mot pour mot : « ${spoken.join(" / ")} », un morceau par ligne imprimée`
     );
   // « Prochain épisode » always sits under the pill (the 1.7.0 card of its
   // own is retired).
@@ -378,6 +438,7 @@ export function loadSeriesVideo(input, { dir = "." } = {}) {
     mapImagery: input.mapImagery ?? MAP_IMAGERY,
     // 1.13.0: the year the satellite shows, for the counter and the flags.
     ...(input.today !== undefined && { today: input.today }),
+    ...(studied && { studiedWords: [...studied] }),
     // The episode's own bed, by name in social/sound/beds/library (mix.mjs bedFor).
     ...(input.bed !== undefined && { bed: input.bed }),
   };
@@ -570,7 +631,9 @@ function schedule(seq, words) {
     chunks.at(-1).gone,
     outro
   );
-  seq.warnings = [];
+  seq.warnings = seq.cards.flatMap((c) =>
+    clipShots(c).flatMap((s) => s.warnings)
+  );
   if (fastChunks.length)
     seq.warnings.push(
       `${fastChunks.length} chunk(s) read faster than the recommended ${VOICE.recommendedCps} characters a second: ${fastChunks.map((t) => `« ${t} »`).join(", ")}`
@@ -616,9 +679,17 @@ function planLongVideo(seq, input) {
   let chapter = null;
   seq.cards.forEach((card, i) => {
     if (card.type === "chapter") chapter = card.chapter;
+    // 1.15.0: a clip card shows one still per frame, so each shot's footage
+    // must last as long as the shot stays on screen. A shot after the first
+    // enters on a word of the voice (`say`), or when the footage before it
+    // runs out; a montage cuts at 2 s a shot at least, 2.5 s for the last.
+    const shots = clipShots(card);
+    if (shots.length) planClipCuts(seq, i, shots);
     if (["opener", "closing", "chapter", "intro"].includes(card.type)) return;
     if (card.signed) card.videoKicker = "Nous pensons";
-    else if (chapter && !card.date)
+    // A scene's date is its head's figure, not a dated card's marker: it
+    // keeps the chapter (board S12, « 3 · Le royaume du Kongo » over 1491).
+    else if (chapter && (!card.date || card.scene))
       card.videoKicker = `${chapter.n} · ${chapter.title}`;
     // Items and the quoted person enter on the word that says them, and the
     // card holds long enough to read its items at 21 characters a second.
@@ -646,8 +717,16 @@ function planLongVideo(seq, input) {
     const i = seq.cards.findIndex((c) => c.id === input.reminder);
     if (i < 0)
       fail(`The reminder names no card of the video: ${input.reminder}`);
-    const frame = (c) =>
-      JSON.stringify([c.image?.src, c.image?.focus, c.image?.video]);
+    // A clip's stills are filed under its own card, so two cards showing the
+    // same shot are compared by the shot itself (1.15.0 footage-first opener).
+    const frame = (c) => {
+      const shot = c.image?.clip;
+      return JSON.stringify(
+        shot
+          ? ["clip", shot.src, shot.in, shot.fx, shot.mode ?? "fill", shot.trim]
+          : [c.image?.src, c.image?.focus, c.image?.video]
+      );
+    };
     if (frame(seq.cards[i]) !== frame(seq.cards[0]))
       fail(
         `Le rappel ne montre pas l'image d'ouverture: ${input.reminder} shows another image or framing`
@@ -801,8 +880,10 @@ export function seriesFrameState(seq, frame) {
   };
   const zooms = (i) => {
     const { from, to } = zoomSpan(i);
-    // The ending shows no photograph.
-    if (to === null) return { zoom: 1, zoomEnd: 1 };
+    // The ending shows no photograph, and footage is never pushed in
+    // (1.15.0, §2: a push is allowed on a static source only).
+    if (to === null || clipShots(seq.cards[i]).length)
+      return { zoom: 1, zoomEnd: 1 };
     return {
       zoom: pushAt(frame - from, PUSH.picture),
       zoomEnd: pushAt(to - from, PUSH.picture),
@@ -849,6 +930,18 @@ export function seriesFrameState(seq, frame) {
         : EASE.enter((frame - from) / CROSS_FADE);
   for (const l of layers) {
     const card = seq.cards[l.card];
+    const shots = clipShots(card);
+    if (shots.length) {
+      // The shot on screen is the last one whose cut has passed.
+      const at = frame - starts[l.card];
+      let shot = shots.length - 1;
+      while (shot > 0 && at < shots[shot].cut) shot--;
+      l.clipShot = shot;
+      l.clipFrame = Math.min(
+        Math.max(at - shots[shot].cut, 0),
+        shots[shot].count - 1
+      );
+    }
     if (card.itemFrames) l.items = card.itemFrames.map(arrive);
     if (card.attributionFrame !== undefined)
       l.attribution = arrive(card.attributionFrame);
@@ -973,7 +1066,14 @@ const BANDS = {
   attribution: [LAYOUT.head[0], 1300],
   // The chapter card (operator, 20 October 2026): the line, the dots and
   // « n sur N » above the centre, the title centred under them.
+  // 1.14.0: the figure head's three lines sit in the head's place.
+  "figure-pre": LAYOUT.head,
+  "figure-number": LAYOUT.head,
+  "figure-unit": LAYOUT.head,
   "chapter-count": [720, 940],
+  // Board S14: the video's title at the top, the chapters around the title.
+  "chapter-video": [290, 460],
+  "chapter-near": [720, 1300],
   "chapter-title": [940, 1300],
   // 1.8.0: the formula in the clear zone, ending above y 1290.
   formula: [LAYOUT.clear[0], 1290],
@@ -984,10 +1084,23 @@ const X_BANDS = {
   slot: LAYOUT.slot.x,
   "chapter-count": [60, 1020],
   "chapter-title": [60, 1020],
+  "chapter-video": [60, 1020],
+  "chapter-near": [60, 1020],
 };
+// The figure head (1.14.0): Anton 176 on a 156 px line overflows its line box
+// by about 10 px at the top and its outline adds 13 px, so « plus de » keeps
+// this much clearance above the number's line box (operator, 21 October 2026:
+// « le million cache le plus de »).
+export const FIGURE_PRE_GAP = 24;
 export function checkSeriesLayout(boxes, { demo = false } = {}) {
   const problems = [];
   const near = 0.5;
+  const pre = boxes.find((b) => b.kind === "figure-pre");
+  const num = boxes.find((b) => b.kind === "figure-number");
+  if (pre && num && num.y - (pre.y + pre.h) < FIGURE_PRE_GAP - near)
+    problems.push(
+      `« plus de » touche le chiffre : ${Math.round(num.y - (pre.y + pre.h))} px, ${FIGURE_PRE_GAP} au moins`
+    );
   // 1.11.0: on an animated map, eight texts at most, two of them words, 12 px
   // clear of each other, of the drawings and of the arrows' heads.
   const animated = boxes.some((b) => b.animated);
@@ -1104,4 +1217,40 @@ export function checkSeriesLayout(boxes, { demo = false } = {}) {
       say(`${b.lines} lines, ${b.maxLines} at most`);
   }
   return problems;
+}
+
+// Where each shot of a clip card starts, in frames from the card's first, and
+// the checks of §2: its time on screen against its footage and the cut rules.
+function planClipCuts(seq, i, shots) {
+  const card = seq.cards[i];
+  const span = (seq.cardStarts[i + 1] ?? seq.frames) - seq.cardStarts[i];
+  shots.forEach((shot, k) => {
+    shot.cut = !k
+      ? 0
+      : shot.say
+        ? wordOf(seq, i, shot.say).frame - seq.cardStarts[i]
+        : shots[k - 1].cut + shots[k - 1].count;
+  });
+  shots.forEach((shot, k) => {
+    const shown = (shots[k + 1]?.cut ?? span) - shot.cut;
+    const last = k === shots.length - 1;
+    if (shown <= 0)
+      fail(
+        `Card ${card.id}: les coupes ne se suivent pas dans l'ordre de la voix (plan ${k + 1})`
+      );
+    if (shots.length > 1 && last && shown < 75)
+      fail(
+        `Card ${card.id}: le dernier plan reste moins de 2,5 s à l'écran (${shown} images)`
+      );
+    if (shots.length > 1 && shown < 60)
+      fail(
+        `Card ${card.id}: le plan ${k + 1} reste moins de 2 s à l'écran (${shown} images)`
+      );
+    if (shot.count < shown)
+      fail(
+        shots.length === 1
+          ? `Card ${card.id}: le plan dure ${shot.count} images, il est plus court que sa carte (${span} images) : allonger out ou raccourcir la carte`
+          : `Card ${card.id}: le plan ${k + 1} dure ${shot.count} images, plus court que son temps à l'écran (${shown} images)`
+      );
+  });
 }

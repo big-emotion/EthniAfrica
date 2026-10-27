@@ -90,9 +90,10 @@
  */
 
 import { NextRequest, NextResponse } from "next/server";
-import { listFeedRevisionsHandler } from "@/api/v2/handlers/feedRevisionsHandler";
-import { listFeedRevisions } from "@/api/v2/services/feedRevisions";
-import { buildAtomFeed } from "@/lib/api/atomSerializer";
+import {
+  listFeedRevisionsHandler,
+  listFeedRevisionsAtomHandler,
+} from "@/api/v2/handlers/feedRevisionsHandler";
 import { createApiError } from "@/api/v2/utils/response";
 import {
   jsonWithCors,
@@ -105,7 +106,6 @@ import {
   MAX_PAGE_SIZE as MAX_LIMIT,
 } from "@/api/v2/schemas/pagination";
 import { REVISIONS_FEED_CACHE_CONTROL as CACHE_CONTROL } from "@/api/v2/services/corpusCache";
-import { resolveSiteUrl } from "@/lib/siteUrl";
 
 function validateIso8601(value: string): boolean {
   return !isNaN(Date.parse(value));
@@ -165,17 +165,7 @@ export async function GET(request: NextRequest) {
     });
 
     if (rawFormat === "atom") {
-      const { items } = await listFeedRevisions(limitNum, since, cursor);
-      const baseUrl = resolveSiteUrl();
-      const feedUrl = `${baseUrl}/api/v2/feed/revisions`;
-
-      // NFR32: updated is derived from data, never from Date.now()
-      const updated =
-        items.length > 0 && items[0].published_at
-          ? items[0].published_at
-          : "1970-01-01T00:00:00.000Z";
-
-      const xml = buildAtomFeed(items, { baseUrl, feedUrl, updated });
+      const xml = await listFeedRevisionsAtomHandler(limitNum, since, cursor);
 
       const response = new NextResponse(xml, {
         status: 200,

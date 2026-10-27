@@ -532,3 +532,42 @@ test("a published video keeps the exact final video and its on-screen text in hi
   assert.match(text, /### On-screen text/);
   assert.doesNotThrow(() => inspectHistory(f.root, f.id));
 });
+
+// @req REQ-186
+test("a network's publication keeps that network's cut and its screen text, not another network's", (t) => {
+  const f = fixture(t, { video: true, deliver: false });
+  f.cutFor("instagram");
+  const facebook = f.cutFor("facebook");
+  const p = join(f.root, facebook.sequence);
+  const seq = JSON.parse(readFileSync(p, "utf8"));
+  seq.chapters[0].title = "Le nom du désert";
+  writeFileSync(p, JSON.stringify(seq));
+  facebook.writeManifest();
+  f.delivery();
+  const facebookCut = readFileSync(join(f.root, facebook.final, "video.mp4"));
+  f.publish("instagram");
+  f.publish("facebook");
+  const h = f.archive();
+  const [instagramShot, facebookShot] = h.publications.map((x) => x.snapshot);
+  assert.deepEqual(
+    instagramShot.media.map((m) => m.file),
+    ["video-instagram.mp4"]
+  );
+  assert.deepEqual(
+    facebookShot.media.map((m) => m.file),
+    ["video-facebook.mp4"]
+  );
+  assert.ok(facebookShot.screen.includes("Le nom du désert"));
+  assert.ok(!instagramShot.screen.includes("Le nom du désert"));
+  cleanupPiece(f.root, f.id);
+  assert.deepEqual(
+    readFileSync(
+      join(
+        f.root,
+        `.local/publications/${f.id}`,
+        facebookShot.media[0].retained
+      )
+    ),
+    facebookCut
+  );
+});

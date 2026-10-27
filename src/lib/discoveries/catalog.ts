@@ -14,13 +14,6 @@ export interface DiscoverySubjectReference {
   id: string;
 }
 
-// @req REQ-183
-export {
-  relatedEntityKey,
-  resolveRelatedEntities,
-  resolveRelatedProductions,
-} from "./relatedEntities";
-
 export interface DiscoveryPublication {
   id: string;
   kind: "anecdote" | "proverb" | "carousel" | "video";

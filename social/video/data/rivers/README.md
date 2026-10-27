@@ -2,12 +2,13 @@
 
 The river paths of the series video's drawn marks (EthniAfrica Cartes 1.13.0, `social/design-system/series.md`, « 7. Drawn marks »): a river the voice names is drawn from its source to its mouth, so each file is one GeoJSON `LineString` ordered that way.
 
-| File                    | River         | Natural Earth features           |
-| ----------------------- | ------------- | -------------------------------- |
-| `niger.geojson`         | Niger         | « Niger », river and lake pieces |
-| `volta-noire.geojson`   | Volta Noire   | « Mouhoun » (Black Volta)        |
-| `volta-blanche.geojson` | Volta Blanche | « Nakanbé » (White Volta)        |
-| `volta.geojson`         | Volta         | « Volta », from the confluence   |
+| File                    | River         | Natural Earth features                                  |
+| ----------------------- | ------------- | ------------------------------------------------------- |
+| `niger.geojson`         | Niger         | « Niger », river and lake pieces                        |
+| `volta-noire.geojson`   | Volta Noire   | « Mouhoun » (Black Volta)                               |
+| `volta-blanche.geojson` | Volta Blanche | « Nakanbé » (White Volta)                               |
+| `volta.geojson`         | Volta         | « Volta », from the confluence                          |
+| `congo.geojson`         | Congo         | « Lualaba » then « Congo », from Katanga to the estuary |
 
 The Red Volta (Nazinon) is not in the source file, so it has no path.
 

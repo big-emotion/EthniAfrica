@@ -814,10 +814,17 @@
       "middleAges": "Développement des cités-États swahili sur la côte (VIIIe-XIXe siècles). Commerce avec les Arabes, les Indiens et les Perses. Civilisation swahili ancienne.",
       "precolonial": "Sultanat de Zanzibar (XIXe siècle) : commerce d'esclaves et d'épices. Royaumes bantous de l'intérieur. Pas d'unification politique.",
       "colonization": "1885 : Afrique orientale allemande. Résistance tanzanienne (guerre Maji Maji, 1905-1907). 1919 : Mandat britannique (Tanganyika). 1890 : Protectorat britannique de Zanzibar.",
-      "independenceStruggle": "Mouvements nationalistes dans les années 1950. Indépendance du Tanganyika en 1961. Indépendance de Zanzibar en 1963. Julius Nyerere devient premier président.",
+      "independenceStruggle": "Mouvements nationalistes dans les années 1950. Indépendance du Tanganyika en 1961. Indépendance de Zanzibar en 1963. Julius Nyerere devient premier président. Sous sa direction, le swahili est déclaré langue nationale ; la Tanzanie est le premier pays d'Afrique à faire d'une langue africaine sa langue nationale, selon Malin Petzell (2012).",
       "postIndependence": "1964 : Unification du Tanganyika et de Zanzibar. Première République (1964-1992) : parti unique, socialisme africain (Ujamaa). Deuxième République depuis 1992 : multipartisme, développement économique, stabilité politique, hub est-africain."
     },
     "sources": [
+      {
+        "title": "Malin Petzell, « The linguistic situation in Tanzania », Moderna Språk 106 (1), 2012, p. 136-144",
+        "url": "https://publicera.kb.se/mosp/article/view/8233",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Swahili déclaré langue nationale sous Nyerere ; la Tanzanie, premier pays d'Afrique à faire d'une langue africaine sa langue nationale : section 2, p. 137. L'article date la déclaration de 1964, d'autres travaux de 1962 ou 1967 : la fiche ne fixe pas d'année."
+      },
       {
         "title": "CIA World Factbook – Tanzania",
         "url": null,

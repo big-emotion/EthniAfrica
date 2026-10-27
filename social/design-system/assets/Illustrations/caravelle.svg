@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -12 160 132" width="160" height="132">
+<title>caravelle</title>
+<filter id="caravelle-soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter><defs><linearGradient id="caravelle-hull" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a87442"/><stop offset="0.55" stop-color="#6b3f1c"/><stop offset="1" stop-color="#3e220c"/></linearGradient><linearGradient id="caravelle-sail" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbf3e2"/><stop offset="0.55" stop-color="#e8dbbf"/><stop offset="1" stop-color="#c9b48c"/></linearGradient></defs><ellipse cx="80" cy="112" rx="58" ry="5" fill="#0b0806" opacity="0.55" filter="url(#caravelle-soft)"/><path d="M14 108 C36 102 58 112 80 106 C102 100 124 110 146 104" fill="none" stroke="#8fd8f2" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+<path d="M22 86 L140 86 C136 96 128 104 116 108 L46 108 C34 104 26 96 22 86 Z" fill="url(#caravelle-hull)" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.9"/>
+<path d="M30 92 L132 92" fill="none" stroke="#23170d" stroke-width="1.1" opacity="0.45"/>
+<g stroke="#23170d" stroke-width="1" stroke-linecap="round" opacity="0.3"><line x1="96" y1="104" x2="104" y2="94"/><line x1="104" y1="104" x2="112" y2="94"/><line x1="112" y1="102" x2="120" y2="93"/></g>
+<path d="M62 6 L62 86 M104 22 L104 86 M128 40 L128 86" fill="none" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="2.4"/>
+<path d="M64 10 C88 24 96 52 92 80 L64 80 Z" fill="url(#caravelle-sail)" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.9"/>
+<path d="M106 26 C122 38 126 58 122 80 L106 80 Z" fill="url(#caravelle-sail)" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.9"/>
+<path d="M130 44 C140 54 142 66 138 80 L130 80 Z" fill="url(#caravelle-sail)" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.6"/>
+<path d="M72 36 L82 36 L80 44 L88 42 L88 52 L80 50 L82 58 L72 58 L74 50 L66 52 L66 42 L74 44 Z" fill="#b3261e" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.2"/>
+<path d="M77 40 L77 54 M70 47 L84 47" stroke="#fbf3e2" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M62 6 L50 10 L62 14 Z" fill="#b3261e" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.2"/>
+</svg>

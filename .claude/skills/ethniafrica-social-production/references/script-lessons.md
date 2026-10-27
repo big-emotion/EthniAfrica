@@ -152,6 +152,96 @@ What the Burkina Faso rounds taught:
 - **Summarise the name's origin before the reframe.** After a long detour through history, the
   viewer needs the words of the name restated in one short paragraph.
 
+## 12. Start with a viewer who knows nothing about the episode
+
+The Togo episode (series 1, episode 20, October 2026) exposed a recurring mistake:
+the script began with “the village” before the viewer knew which village. Write
+for someone who has never seen the account, the research or the earlier episodes.
+
+- Establish the subject before asking a question about one of its details. For
+  Togo, the useful order is country, lake, named village, then the village's
+  earlier name. Choose the equivalent clear path for another subject.
+- Introduce each new place, people and person in plain words on first use.
+  Recheck every pronoun and shorthand from a first-time viewer's perspective.
+- Give each chapter or scene a concrete job: a fact, an attributed explanation
+  or a consequence. Remove a beat that only comments on the research process.
+- Let the viewer hear competing explanations, each with its source. There is no
+  need to announce that they differ if the comparison already shows it. State a
+  gap only when knowing that gap changes the answer.
+- Use direct, connected sentences and familiar words. Keep the source's actual
+  uncertainty and attribution; move supporting detail to source cards or the
+  research dossier when it would burden the spoken line.
+- Write the picture plan for viewing without sound. Use a map when a verified
+  location or geographic relation needs showing. Show source cards, documents,
+  footage or readable motion text for claims that a map cannot explain. Do not
+  draw an uncertain historical boundary or migration route as a precise fact.
+
+Write the complete source narrative first. Then make each selected network cut
+serve its own viewers and available duration. The Togo TikTok cut follows the
+name in four chapters; Instagram adds the families and political outcomes;
+Facebook gives more room to the competing readings and present-day Togoville.
+These chapter counts and durations belong to that episode, not to every series.
+
+## 13. No avowed ignorance about why a name was chosen
+
+Operator, 27 October 2026: scripts kept ending a beat by confessing that nobody
+knows why a family or parents chose a name — « dire qu'on ne sait pas pourquoi
+cette famille a choisi de prendre ce nom », « on n'a pas de piste », « cette
+ignorance avouée ». « Il faudrait que ça arrête de revenir. »
+
+Lines the operator struck from a script:
+
+- « Mais les actes de ces familles ne disent pas qui a choisi « Zaïre », ni pourquoi. »
+- « On ne sait pas pourquoi ses parents ont choisi ce prénom. »
+- « Pour comprendre le choix de chaque famille, il faut encore lire ses actes et écouter ses récits. »
+- On screen: « Choix familial précis : inconnu ».
+
+Why: the sentence adds nothing the viewer can use, closes the beat on an empty
+hand, and makes the episode sound unfinished. The trace itself is the answer:
+who records the name, where, when, and which explanation someone proposes.
+
+- Write what the sources show: « Les actes de [lieu, années] montrent que
+  [nombre] familles ont donné le prénom « Zaïre » à un enfant. »
+- An attributed explanation or an unproven hypothesis is still said as such
+  (« selon… », « une explication attribuée à… », « une hypothèse »). What goes is
+  the extra sentence announcing what nobody knows about the choice.
+- If the motive is the subject and no source gives one, cut the beat or change
+  the question; do not fill it with the absence.
+
+`npm run check:publication` refuses these sentences
+(`Ethniafrica.NamingMotiveIgnorance`, `.vale/styles/Ethniafrica/`). The check
+looks for a naming context (choisi, choix, donné ce nom, porte ce nom…), so it
+misses paraphrases: reread for the intent, not only the words.
+
+## 14. Four rules from the « Zaïre » script (27 October 2026)
+
+**a. Never « lecture » for an interpretation.** On « C'est la lecture la plus
+ancienne », the operator: « j'interdis à tout jamais l'usage de ce terme, "la
+lecture" ». Say « l'explication la plus ancienne », « une hypothèse », or name who
+proposes it (« en 1887, le missionnaire William Holman Bentley écrit que les
+Européens ont déformé nzadi, « le grand fleuve », en Zaïre »). This also rules out « selon cette lecture », « deux lectures du mot »,
+« une lecture attribuée à… ». « Lecture » as the act of reading (« apprendre la
+lecture et l'écriture ») stays. `npm run check:publication` refuses every other
+use (`Ethniafrica.NoLectureForInterpretation`).
+
+**b. Introduce every person the first time, in a few words.** « Qui est
+Afonso ? Merci de faire attention à présenter les gens un minimum. » A king, a
+navigator or a historian gets a role on first mention: « Afonso Ier, roi du Kongo
+à partir de 1506 », « le navigateur portugais Diogo Cão ». This extends §5 to
+every name, not only the scholars whose claims are quoted.
+
+**c. Archives are cited for showing the name, not the people.** « En
+Martinique, des archives font apparaître le nom… sans présenter les prénoms et
+noms en entier. » When civil records show that families gave a name, say where
+and when the records show it. Do not read out or display the full first and last
+names of the individuals in them.
+
+**d. Build the narration step by step: content and sources first, style
+afterwards.** Settle what each beat says and which saved passage supports it
+before working on the hook, rhythm or wording. A polished line on an unchecked
+fact has to be rewritten anyway. Present the beats with their sources, then the
+styled version.
+
 ## The approved script (v6.1, 2026-10-15)
 
 Chapter titles in brackets are on-screen cards, not spoken. About 3 min 30.

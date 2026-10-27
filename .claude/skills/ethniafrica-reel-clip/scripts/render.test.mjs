@@ -14,7 +14,7 @@ import {
 } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { renderClip, ENDING_LINES } from "./render.mjs";
+import { renderClip } from "./render.mjs";
 
 // The engine reads the source size before drawing, so even a refusal test
 // needs a real (tiny) video.
@@ -81,17 +81,6 @@ const pixel = (file, t, x, y) => [
 ];
 
 // @req REQ-186
-test("the ending prints the series video's closing line and invitation", () => {
-  const design = JSON.parse(
-    readFileSync("social/design-system/version.json", "utf8")
-  );
-  assert.deepEqual(ENDING_LINES, [
-    ...design.signatureLines,
-    ...design.invitationLines,
-  ]);
-});
-
-// @req REQ-186
 test("renders a framed, captioned vertical reel with its SRT and cover", async () => {
   const dir = mkdtempSync(join(tmpdir(), "translated-clip-"));
   try {
@@ -141,9 +130,7 @@ test("renders a framed, captioned vertical reel with its SRT and cover", async (
     const video = reel.streams.find((s) => s.codec_type === "video");
     assert.deepEqual([video.width, video.height], [1080, 1920]);
     assert.ok(reel.streams.some((s) => s.codec_type === "audio"));
-    // 4 s of clips, then the 5.3 s ending: the closing line and the
-    // invitation, 103 characters read at 21 a second, plus 0.3 s.
-    assert.ok(Math.abs(Number(reel.format.duration) - 9.3) < 0.15);
+    assert.ok(Math.abs(Number(reel.format.duration) - 4) < 0.15);
     assert.match(
       readFileSync(join(out, "sous-titres-fr.srt"), "utf8"),
       /00:00:02,100 --> 00:00:03,900\npuis la suite après la coupe\./
@@ -160,45 +147,15 @@ test("renders a framed, captioned vertical reel with its SRT and cover", async (
       !existsSync(join(out, "_layers")),
       "intermediate layers are removed"
     );
-    // The ending (Cartes 1.10.0, as the series video): the last picture
-    // held, silent, with the closing line and the invitation written where
-    // the captions were, four rows of 64 px centred on y 1305 (1177 to
-    // 1433), one row checked in each. The 1.6.0 line's three rows ran from
-    // 1209 to 1401, so rows 1200 and 1405 hold letters only with four lines.
     const reelFile = join(out, "reel.mp4");
-    for (const y of [1200, 1280, 1345, 1405])
-      assert.ok(brightest(reelFile, 7, y) > 230, `no text on row ${y}`);
-    assert.ok(loudness(reelFile, 4.3, 4.5) < -80, "the ending is not silent");
+    assert.ok(
+      loudness(reelFile, 3.5, 0.3) > -40,
+      "source audio reaches the end"
+    );
   } finally {
     rmSync(dir, { recursive: true, force: true });
   }
 });
-
-// The brightest channel along row `y` between x 100 and 980, at `t` seconds.
-function brightest(file, t, y) {
-  const row = spawnSync(
-    "ffmpeg",
-    [
-      "-v",
-      "error",
-      "-ss",
-      String(t),
-      "-i",
-      file,
-      "-frames:v",
-      "1",
-      "-vf",
-      `format=rgb24,crop=880:2:100:${y}`,
-      "-f",
-      "rawvideo",
-      "-pix_fmt",
-      "rgb24",
-      "-",
-    ],
-    { encoding: "buffer" }
-  ).stdout;
-  return Math.max(0, ...row);
-}
 
 // Mean volume in dB of `seconds` of audio from `t`.
 function loudness(file, t, seconds) {
@@ -348,6 +305,43 @@ test("refuses a box that would wrap past two lines", async () => {
     await assert.rejects(
       renderClip(planFile, join(dir, "out")),
       /Boxes over two lines/
+    );
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
+});
+
+// @req REQ-186
+test("a context box prints three lines of prose and leaves at its end time", async () => {
+  const dir = mkdtempSync(join(tmpdir(), "clip-context-"));
+  try {
+    const planFile = join(dir, "plan.json");
+    writeFileSync(
+      planFile,
+      JSON.stringify({
+        source: wideSource(dir),
+        clips: [[0, 4]],
+        credit_line: "Crédit",
+        phrases: [{ start: 0, end: 1, text: "Bonjour." }],
+        boxes: [
+          {
+            start: 0,
+            end: 2,
+            style: "context",
+            text: "« C’est le fonds qui manque le moins » est un vers du Laboureur et ses Enfants, de Jean de La Fontaine.",
+          },
+        ],
+      })
+    );
+    const file = join(dir, "out", "reel.mp4");
+    await renderClip(planFile, join(dir, "out"));
+    assert.ok(
+      pixel(file, 0.5, 540, 285).every((c) => c > 235),
+      "box shown"
+    );
+    assert.ok(
+      pixel(file, 3.5, 540, 285).every((c) => c < 200),
+      "box gone"
     );
   } finally {
     rmSync(dir, { recursive: true, force: true });

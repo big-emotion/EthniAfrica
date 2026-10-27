@@ -30,6 +30,7 @@ import {
   MAX_TEXTURE,
 } from "./render.mjs";
 import { DOWNLOADS, readVerified } from "./areas.mjs";
+import { ensureClipFrames, clipShots } from "./series-clip-frames.mjs";
 import {
   MAP_FRAME,
   MAP_IMAGERY,
@@ -38,6 +39,7 @@ import {
   sharedBorders,
 } from "./series-map.mjs";
 import { areaInks } from "./series-sequence.mjs";
+import { landPolygons, checkSeaRoute } from "./series-sea.mjs";
 import { figureAssets } from "./series-figures.mjs";
 import { coastOf } from "./shoreline.mjs";
 import {
@@ -98,7 +100,7 @@ async function routesFor(seq) {
   const cards = [];
   for (const card of seq.cards) {
     const spec = structuredClone(card);
-    if (spec.image)
+    if (spec.image && !spec.image.clip && !spec.image.clips)
       await add(`/assets/${spec.image.src}`, `assets/${spec.image.src}`);
     if (spec.map?.dataRef)
       spec.map.data = JSON.parse(
@@ -127,8 +129,17 @@ async function routesFor(seq) {
   return { routes, tokens, cards };
 }
 
+// The flags inside a territory (1.13.0) and the planted ones, with the flag
+// each is swapped for (1.16.0).
 const flagsOf = (seq) => [
-  ...new Set(seq.cards.flatMap((c) => (c.flags ?? []).map((f) => f.flag))),
+  ...new Set([
+    ...seq.cards.flatMap((c) => (c.flags ?? []).map((f) => f.flag)),
+    ...Object.values(seq.mapSequence?.cards ?? {}).flatMap((c) =>
+      c.drawings.flatMap((d) =>
+        d.kind === "flag" ? [d.flag, d.swap?.flag].filter(Boolean) : []
+      )
+    ),
+  ]),
 ];
 
 const figureAssetsOf = (seq) =>
@@ -138,13 +149,56 @@ const figureAssetsOf = (seq) =>
     )
   );
 
+// The drawings a run uses: its symbols, a voyage's ship and a kingdom's
+// lords (narration v4 of « Zaïre »).
+const marksDrawings = (c) =>
+  c.marks.flatMap((m) =>
+    m.highlight
+      ? [m.highlight.ship]
+      : m.kind === "lords"
+        ? m.lords.map(() => "seigneur")
+        : []
+  );
 const illustrationsOf = (seq) => [
   ...new Set(
-    Object.values(seq.mapSequence?.cards ?? {}).flatMap((c) =>
-      c.drawings.map((d) => d.kind)
-    )
+    Object.values(seq.mapSequence?.cards ?? {}).flatMap((c) => [
+      ...c.drawings.flatMap((d) => d.images),
+      ...marksDrawings(c),
+    ])
   ),
 ];
+// How many of each drawing a frame may show at most, when more than the
+// three drawings: a kingdom's lords.
+const illustrationCounts = (seq) => {
+  const counts = {};
+  for (const c of Object.values(seq.mapSequence?.cards ?? {})) {
+    const own = {};
+    for (const kind of [
+      ...c.drawings.flatMap((d) => d.images),
+      ...marksDrawings(c),
+    ])
+      own[kind] = (own[kind] ?? 0) + 1;
+    for (const [kind, n] of Object.entries(own))
+      counts[kind] = Math.max(counts[kind] ?? 0, n);
+  }
+  return counts;
+};
+
+// A sea voyage never crosses land, in any view its card shows it.
+function checkSeaVoyages(seq, world) {
+  const land = landPolygons(world);
+  for (const [i, cp] of Object.entries(seq.mapSequence?.cards ?? {})) {
+    const cameras = [
+      cp.view,
+      ...cp.moves.filter((m) => !m.whip).map((m) => m.to),
+    ];
+    const what = `Card ${seq.cards[i].id}`;
+    for (const m of cp.marks.filter((m) => m.kind === "route" && m.sea))
+      checkSeaRoute(`${what}, route`, m.shape, cameras, land);
+    for (const a of cp.arrows.filter((a) => a.sea))
+      checkSeaRoute(`${what}, arrow ${a.id}`, a, cameras, land);
+  }
+}
 
 // The world texture is MAX_TEXTURE pixels around the Earth: a frame whose
 // world texture would be enlarged past the scale limit at the end of the
@@ -167,6 +221,7 @@ async function prepareMaps(seq, cards, routes, assets) {
       "A map card is drawn on the verified imagery: set ETHNIAFRICA_VIDEO_ASSETS"
     );
   const world = await readVerified(assets, "countries");
+  checkSeaVoyages(seq, world);
   const countries = countryIndex(world);
   // The imagery in use; 1.11.0 may draw on the 500 m mosaic (decision 1).
   const imageryId = seq.mapImagery ?? MAP_IMAGERY;
@@ -227,6 +282,7 @@ async function prepareMaps(seq, cards, routes, assets) {
         ])
       ),
       illustrations: illustrationsOf(seq),
+      illustrationCounts: illustrationCounts(seq),
       // 1.14.0: the cascade's outlines and the units' images.
       figures: figureAssetsOf(seq),
       // 1.13.0: the coast and the land the era map draws, from Natural
@@ -341,6 +397,16 @@ export async function openSeriesRenderer(
     await readFile(new URL("../renderer/runtime.json", import.meta.url))
   );
   const { routes, tokens, cards } = await routesFor(seq);
+  // 1.15.0: the stills of every shot of every clip card, served to the page
+  // by card and shot.
+  const clipDirs = new Map();
+  for (const card of seq.cards)
+    clipDirs.set(
+      card.id,
+      await Promise.all(
+        clipShots(card).map(async (shot) => (await ensureClipFrames(shot)).dir)
+      )
+    );
   const maps = await prepareMaps(seq, cards, routes, assets);
   // A map card's WebGL runs on SwiftShader, as in the satellite video,
   // unless the GPU was asked for.
@@ -373,6 +439,16 @@ export async function openSeriesRenderer(
           contentType:
             MIME[extname(url.pathname)] ?? "application/octet-stream",
           body: file,
+        });
+      }
+      if (url.pathname.startsWith("/clip/")) {
+        const [, , id, file] = url.pathname.split("/");
+        const [, shot, name] = /^(\d)-(\d{4}\.jpg)$/.exec(file) ?? [];
+        const dir = clipDirs.get(decodeURIComponent(id))?.[shot];
+        if (!dir) return route.abort();
+        return route.fulfill({
+          contentType: "image/jpeg",
+          body: await readFile(join(dir, name)),
         });
       }
       const body = routes.get(decodeURIComponent(url.pathname));
@@ -419,6 +495,18 @@ export async function openSeriesRenderer(
     // where a subtitle is fully drawn, so every card and the ending are seen.
     const draw = async (frame) => {
       const state = seriesFrameState(seq, frame);
+      // 1.15.0: a clip card draws the still of its frame, decoded before the
+      // frame is drawn.
+      const stills = state.layers
+        .filter((l) => l.clipFrame !== undefined)
+        .map((l) => ({
+          id: seq.cards[l.card].id,
+          shot: l.clipShot,
+          n: l.clipFrame + 1,
+          credit: clipShots(seq.cards[l.card])[l.clipShot].credit,
+        }));
+      if (stills.length)
+        await page.evaluate((list) => window.setClipStills(list), stills);
       const drawn = await page.evaluate((s) => window.drawFrame(s), state);
       for (const id of drawn.held ?? []) held.add(id);
       if (frame === 0 || frame === last || state.subtitle?.opacity === 1) {

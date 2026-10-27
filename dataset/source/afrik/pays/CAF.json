@@ -3,7 +3,7 @@
   "nameFr": "République centrafricaine",
   "nameEn": "Central African Republic",
   "nameOfficial": "République centrafricaine (République centrafricaine, Ködörösêse tî Bêafrîka)",
-  "summary": "La République centrafricaine porte un nom purement géographique, adopté à l'indépendance en 1960 ; elle s'appelait auparavant Oubangui-Chari, du nom de deux cours d'eau. Son territoire réunit les chefferies banda, gbaya, ngbande et sango. Le sango, d'abord langue d'échange, y est devenu langue nationale.",
+  "summary": "La République centrafricaine porte un nom purement géographique, adopté à l'indépendance en 1960 ; elle s'appelait auparavant Oubangui-Chari, du nom de deux cours d'eau. Son territoire réunit les chefferies banda, gbaya, ngbande et sango. Le sango, d'abord langue d'échange, y est devenu langue nationale, puis, depuis 1991, langue officielle avec le français.",
   "etymology": "Le nom \"Centrafrique\" ou \"République centrafricaine\" viendrait de la position géographique du pays au centre de l'Afrique. Le nom a été adopté lors de l'indépendance en 1960. Auparavant, le territoire était appelé \"Oubangui-Chari\" pendant la colonisation française (1903-1960), du nom des deux fleuves principaux (Oubangui et Chari).",
   "nameOriginActor": "Le nom \"République centrafricaine\" a été adopté lors de l'indépendance (1960) pour remplacer \"Oubangui-Chari\" (nom colonial français). Le nom fait référence à la position géographique du pays au centre de l'Afrique.",
   "nameHistory": {
@@ -715,6 +715,13 @@
       "postIndependence": "République centrafricaine (1960), présidence de David Dacko (1960-1966, 1979-1981), dictature de Jean-Bédel Bokassa (1966-1979, empire centrafricain, 1976-1979), coups d'État (1979, 1981, 2003, 2013), présidence d'André Kolingba (1981-1993), Ange-Félix Patassé (1993-2003), François Bozizé (2003-2013), Michel Djotodia (2013-2014), Catherine Samba-Panza (2014-2016), Faustin-Archange Touadéra (depuis 2016). Conflits récurrents (guerres civiles, 2012-2013, 2013-2014, 2014-présent), instabilité politique, violences intercommunautaires. Défis : pauvreté, développement économique, sécurité (conflits récurrents, groupes armés), VIH/sida. La RCA est l'un des pays les plus pauvres d'Afrique, avec des défis de développement importants et des conflits récurrents."
     },
     "sources": [
+      {
+        "title": "Jacques Leclerc, « République centrafricaine », L'aménagement linguistique dans le monde, CEFAN, Université Laval — loi n°91/003 du 8 mars 1991",
+        "url": "https://axl.cefan.ulaval.ca/afrique/centrafrique.htm",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "La loi n°91/003 du 8 mars 1991 proclame que « les langues officielles sont le sango et le français » (§ 3.2). Le texte de la loi lui-même n'a pas été lu ; l'article premier de la Constitution du 30 août 2023, déjà cité, confirme le statut actuel."
+      },
       {
         "title": "ONU – World Population Prospects 2025",
         "url": null,

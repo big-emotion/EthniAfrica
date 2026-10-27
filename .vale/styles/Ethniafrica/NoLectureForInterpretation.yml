@@ -1,0 +1,34 @@
+# Operator decision, 27 October 2026: « C'est la lecture la plus ancienne =>
+# j'interdis à tout jamais l'usage de ce terme, "la lecture". » Public copy
+# says « explication », « interprétation », « hypothèse » or names who says
+# what. The ban is total by default: a list of interpretive patterns would let
+# the next phrasing through. Only fixed collocations where « lecture » is the
+# act of reading, a cited title or media playback are exceptions.
+extends: existence
+message: "Do not use '%s' for an interpretation of a word or name. Say « explication » or « hypothèse », or name who proposes it. See docs/editorial/reader-facing-register.md."
+level: error
+scope: text
+ignorecase: true
+tokens:
+  - "(?:contre-)?lectures?"
+
+exceptions:
+  # Learning to read and write.
+  - "(?i)lecture et (?:l[’'])?[ée]criture"
+  - "(?i)[ée]criture et (?:la )?lecture"
+  - "(?i)(?:enseignement|apprentissage) de la lecture"
+  # Peer review and reading aids named in source notes.
+  - "(?i)comit[ée] de lecture"
+  - "(?i)(?:guide|livre|salle)s? de lecture"
+  # A misreading of a document is still the act of reading it.
+  - "(?i)erreurs? de lecture"
+  # A cited magazine title (1899).
+  - "Lectures pour tous"
+  # Interface and media playback.
+  - "(?i)lecture seule"
+  - "(?i)lecture de vid[ée]os?"
+  - "(?i)lecture d[’']une production"
+  - "(?i)lecture du registre"
+  - "(?i)(?:barre|hub|rep[èe]res|contexte) de lecture"
+  - "(?i)lectures courtes"
+  - "(?i)faciliter la lecture"

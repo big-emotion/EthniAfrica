@@ -1,3 +1,4 @@
+// @req REQ-038
 import { describe, it, expect, vi, beforeEach } from "vitest";
 
 vi.mock("../../services/feedRevisions", () => ({
@@ -5,7 +6,10 @@ vi.mock("../../services/feedRevisions", () => ({
 }));
 
 import { listFeedRevisions } from "../../services/feedRevisions";
-import { listFeedRevisionsHandler } from "../feedRevisionsHandler";
+import {
+  listFeedRevisionsHandler,
+  listFeedRevisionsAtomHandler,
+} from "../feedRevisionsHandler";
 
 const ITEMS = [
   {
@@ -80,5 +84,35 @@ describe("listFeedRevisionsHandler", () => {
     expect(result.data).toEqual([]);
     expect(result.meta.pagination.next_cursor).toBeNull();
     expect(result.errors).toEqual([]);
+  });
+});
+
+describe("listFeedRevisionsAtomHandler", () => {
+  beforeEach(() => vi.clearAllMocks());
+
+  // @req REQ-038
+  it("serialises the revisions as an Atom feed updated at the newest publication", async () => {
+    vi.mocked(listFeedRevisions).mockResolvedValue({
+      items: ITEMS,
+      next_cursor: null,
+    });
+
+    const xml = await listFeedRevisionsAtomHandler(20);
+
+    expect(listFeedRevisions).toHaveBeenCalledWith(20, undefined, undefined);
+    expect(xml).toContain("<feed");
+    expect(xml).toContain("<updated>2026-05-21T12:00:00.000Z</updated>");
+  });
+
+  // @req REQ-038
+  it("falls back to the epoch rather than the clock when there is no revision", async () => {
+    vi.mocked(listFeedRevisions).mockResolvedValue({
+      items: [],
+      next_cursor: null,
+    });
+
+    const xml = await listFeedRevisionsAtomHandler(20);
+
+    expect(xml).toContain("<updated>1970-01-01T00:00:00.000Z</updated>");
   });
 });

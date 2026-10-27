@@ -118,35 +118,40 @@ export function seriesPackageFixture(t, networks = ["instagram", "facebook"]) {
     rightsEvidence: rights,
   }));
   f.file("research.json", research);
-  const writeManifest = (change = () => {}) => {
-    const raw = JSON.parse(readFileSync(join(root, sequence)));
-    const seq = loadSeriesVideo(raw, { dir: join(root, inputDir) });
-    const manifest = {
-      schema: 1,
-      design: seq.design,
-      designVersion: version,
-      layout: "full",
-      width: 1080,
-      height: 1920,
-      fps: 30,
-      frames: seq.frames,
-      cards: seq.cards.map((c) => c.id),
-      audio: { sha256: seq.voice.sha256, duration: seq.voice.duration },
-      demo: false,
-      productionReady: false,
-      runtime: { note: "Synthetic test manifest" },
-      hashes: {
-        sequence: sha(JSON.stringify(seq)),
-        cards: sha(readFileSync(seq.cardsFile)),
-        video: sha(readFileSync(join(root, final, "video.mp4"))),
-      },
+  const manifestWriter =
+    (cutInput, cutFinal) =>
+    (change = () => {}) => {
+      const raw = JSON.parse(
+        readFileSync(join(root, cutInput, "series.sequence.json"))
+      );
+      const seq = loadSeriesVideo(raw, { dir: join(root, cutInput) });
+      const manifest = {
+        schema: 1,
+        design: seq.design,
+        designVersion: version,
+        layout: "full",
+        width: 1080,
+        height: 1920,
+        fps: 30,
+        frames: seq.frames,
+        cards: seq.cards.map((c) => c.id),
+        audio: { sha256: seq.voice.sha256, duration: seq.voice.duration },
+        demo: false,
+        productionReady: false,
+        runtime: { note: "Synthetic test manifest" },
+        hashes: {
+          sequence: sha(JSON.stringify(seq)),
+          cards: sha(readFileSync(seq.cardsFile)),
+          video: sha(readFileSync(join(root, cutFinal, "video.mp4"))),
+        },
+      };
+      change(manifest);
+      writeFileSync(
+        join(root, cutFinal, "manifest.json"),
+        JSON.stringify(manifest, null, 2) + "\n"
+      );
     };
-    change(manifest);
-    writeFileSync(
-      join(root, final, "manifest.json"),
-      JSON.stringify(manifest, null, 2) + "\n"
-    );
-  };
+  const writeManifest = manifestWriter(inputDir, final);
   writeManifest();
   const design = f.file("video-design.json", {
     name,
@@ -188,6 +193,29 @@ export function seriesPackageFixture(t, networks = ["instagram", "facebook"]) {
   const configPath = "piece/package-input.json";
   const save = () => f.file("package-input.json", config);
   save();
+  // Gives every network its own cut, a copy of the shared one in its own
+  // folders, so a test can change one network's cards alone.
+  const cutPerNetwork = () => {
+    const cuts = {};
+    for (const n of config.networks) {
+      const cutInput = `${inputDir}-${n.network}`;
+      const cutFinal = `${final}-${n.network}`;
+      cpSync(join(root, inputDir), join(root, cutInput), { recursive: true });
+      cpSync(join(root, final), join(root, cutFinal), { recursive: true });
+      n.sequence = `${cutInput}/series.sequence.json`;
+      n.video = cutFinal;
+      cuts[n.network] = {
+        input: cutInput,
+        cards: `${cutInput}/cards.json`,
+        writeManifest: manifestWriter(cutInput, cutFinal),
+      };
+      cuts[n.network].writeManifest();
+    }
+    delete config.sequence;
+    delete config.video;
+    save();
+    return cuts;
+  };
   return {
     ...f,
     config,
@@ -197,5 +225,6 @@ export function seriesPackageFixture(t, networks = ["instagram", "facebook"]) {
     cards: `${inputDir}/cards.json`,
     final,
     writeManifest,
+    cutPerNetwork,
   };
 }

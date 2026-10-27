@@ -2,8 +2,15 @@
 
 The steps that produced the long Burkina Faso episode (series 1, episode 19, 19 October 2026),
 drawn from every change the operator asked for on the way. Follow them in order, so the next
-episode runs straight through with one render. [Script lessons](script-lessons.md) holds the
+episode can avoid the same avoidable renders. [Script lessons](script-lessons.md) holds the
 writing lessons in detail; this file is the whole path from research to approval 3.
+
+The map-led opener, single duration across networks and other Burkina Faso
+visual choices below describe that episode. Check the current approved brief
+and the dated decisions in `docs/editorial/strategy/social-series.md` before
+applying them to another one. The Togo episode uses footage first, three
+different cuts and maps only for verified geographic orientation. Its visual
+change still needs Claude Design approval before production.
 
 **Why it exists.** That episode took four full renders for one video: a leftover demo marker, a
 decision taken mid-way, a path bug in the new parallel join (fixed by PR #1904), and a design
@@ -38,8 +45,9 @@ render runs once.
 8. Accuracy beats the dictated wording: propose the correction in one line and apply it once
    accepted (« le nom du pays et celui de ses habitants réunissent trois langues »).
 9. End with a short summary of the name's origin, the reframe sentence, the signed « Nous
-   pensons » paragraph, then the fixed closing « L'importance de connaître nos noms. Vous pouvez
-   continuer la recherche sur EthniAfrica, lien en profil. ».
+   pensons » paragraph, then the fixed closing, in this order (operator, 27 October 2026):
+   « Vous pouvez continuer la recherche sur EthniAfrica et vous abonner pour découvrir de
+   nouvelles publications. EthniAfrica : l'importance de connaître nos noms. ».
 10. Run `npm run check:publication` on every version.
 
 ## 3. Picture plan: the animatic first
@@ -59,8 +67,11 @@ render runs once.
 
 ## 4. Voice
 
-15. Paul K (`MBIQRZjHPU6xEjGuB3b8`), `eleven_multilingual_v2`, normal speed. Spoken forms:
-    « Faso » as « Fasso », « EthniAfrica » as « Ethni Africa », years in words.
+15. The house voice (`M4ZqLOXSFqxSkn9RDxFO`), `eleven_multilingual_v2`, neutral rhythm:
+    stability 0.9, style 0, speed 0.95 — `voice.mjs` applies both when the script sets
+    nothing (operator, 22 October 2026). Voice the whole narration in one take; never
+    splice words from another take. Spoken forms: « Faso » as « Fasso », « EthniAfrica » as
+    « Ethni Africa », « akan » as « a-camp », years in words. Guillemets are never spoken.
 16. Subtitles read at 21 characters a second at most. Put the pauses that buy reading time at
     sentence ends: mid-sentence pauses break the rhythm. A chapter card needs about 2.5 s of
     silence; the globe opening holds at least 5.5 s.

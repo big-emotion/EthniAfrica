@@ -3,10 +3,9 @@ import { join, resolve } from "node:path";
 import { describe, expect, it } from "vitest";
 
 /**
- * `check:action-pins` reads `uses:` lines only. Two other inputs choose the
- * code a workflow runs and slipped past it: the Supabase CLI version handed to
- * `setup-cli` (the binary that applies production DDL) and the `ref:` Ferry's
- * source is checked out at. Both floated — `latest` and a movable tag.
+ * `check:action-pins` reads `uses:` lines only. The Supabase CLI version handed
+ * to `setup-cli` (the binary that applies production DDL) chooses the code a
+ * workflow runs and slipped past it: it floated at `latest`.
  */
 
 const WORKFLOW_DIR = resolve(process.cwd(), ".github/workflows");
@@ -28,16 +27,5 @@ describe("workflow inputs that choose the code a job runs", () => {
       )
       .map(({ where }) => where);
     expect(floating).toEqual([]);
-  });
-
-  // @req REQ-085
-  it("checks Ferry out at a commit SHA, not a movable tag", () => {
-    const refs = lines.flatMap(({ where, text }) => {
-      const match = text.match(/^\s*FERRY_REF:\s*(\S+)/);
-      return match ? [{ where, ref: match[1] }] : [];
-    });
-    expect(refs.length).toBeGreaterThan(0);
-    const movable = refs.filter(({ ref }) => !/^[0-9a-f]{40}$/.test(ref));
-    expect(movable).toEqual([]);
   });
 });

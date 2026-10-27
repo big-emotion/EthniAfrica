@@ -81,6 +81,24 @@ test("the chapter card (operator, 20 October 2026): « 1 sur 3 » then the title
 });
 
 // @req REQ-186
+test("the enriched chapter card (board S14): the video's title on top, the next chapter under the title", () => {
+  const f = frameAt(chapterFrame);
+  const video = f.boxes.find((b) => b.kind === "chapter-video");
+  assert.ok(video, "no reminder of the video's title");
+  assert.ok(video.y >= 290 && video.y + video.h <= 460, `y ${video.y}`);
+  assert.ok(
+    flat(f.text).includes(flat(seq.cards[0].title.replace(/\*/gu, ""))),
+    "the opener's title"
+  );
+  const near = f.boxes.filter((b) => b.kind === "chapter-near");
+  // Chapter 1 of 3: no chapter before it, « 2 · D'où vient le mot » after.
+  assert.equal(near.length, 1);
+  assert.match(flat(f.text), /2 · D’où vient le mot|2 · D'où vient le mot/u);
+  const title = f.boxes.find((b) => b.kind === "chapter-title");
+  assert.ok(near[0].y >= title.y + title.h + 20, "under the title");
+});
+
+// @req REQ-186
 test("the chapter card animates: the title is not yet in 0.5 s after the card starts", () => {
   const f = frameAt(chapterEarly);
   const title = f.boxes.find((b) => b.kind === "chapter-title");
@@ -123,8 +141,10 @@ test("1.7.0: the quoted person sits above the subtitles, bottom at y 1296", () =
   assert.match(flat(f.text), /Florence Abena Dolphyne/);
 });
 
+// 40 px lower than 1.10.0's y 728: the invitation's third line (27 October
+// 2026).
 // @req REQ-186
-test("1.10.0: the next episode under the pill, the block ending at y 728", () => {
+test("1.10.0: the next episode under the pill, the block ending at y 768", () => {
   const end = frames.at(-1);
   assert.match(flat(end.text), /Prochain épisode : le pays des Noirs/);
   const block = end.boxes.filter(
@@ -132,7 +152,7 @@ test("1.10.0: the next episode under the pill, the block ending at y 728", () =>
   );
   for (const b of block) assert.ok(b.y >= 317.5, `${b.id}: ${b.y}`);
   const bottom = Math.max(...block.map((b) => b.y + b.h));
-  assert.ok(Math.abs(bottom - 728) <= 1, `the block ends at ${bottom}`);
+  assert.ok(Math.abs(bottom - 768) <= 1, `the block ends at ${bottom}`);
 });
 
 // @req REQ-186

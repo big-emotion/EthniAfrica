@@ -63,6 +63,10 @@ cannot be located or the file cannot be read.
    it, never infer it from a video title), then one per key argument, always
    attributed (« POUR ELLE, … », « SELON LUI, … »). Two lines at most; no
    overlap.
+   For operator-approved narrative context, set `style: "context"` on the
+   box: up to 140 characters, three lines in sentence case at 44/56 px.
+   Give each sentence enough reading time and end the boxes at the agreed
+   point; they do not have to run throughout the excerpt.
 5. **On-screen text** (tall source, or any burned-in text in the author's
    language): look at a contact sheet,
    ```sh
@@ -80,18 +84,11 @@ cannot be located or the file cannot be read.
    The engine reads the source size and picks the gabarit: **band** for a wide
    source (the interview reels), **portrait** for a tall one (the « sauvage »
    reel). It writes `reel.mp4` (1080×1920, H.264/AAC), `sous-titres-<lang>.srt`,
-   `cover.png` (when `thumbnail` is set) and a copy of `plan.json`. Every reel
-   ends as the series video does (Cartes 1.10.0, operator, 19 October 2026):
-   the last picture held in silence for 5.3 s, with the closing line
-   « L’importance de / connaître nos noms. » and the invitation « Vous pouvez
-   continuer la recherche / sur EthniAfrica, lien en profil. » where the
-   captions were. The four lines come from
-   `social/design-system/version.json` (`signatureLines`, `invitationLines`),
-   in Fraunces 600 56/64 centred on y 1305 (y 1177 to 1433; the widest line
-   measures 911 px of the 960 px column). The reel is that much longer than
-   its clips.
+   `cover.png` (when `thumbnail` is set) and a copy of `plan.json`. The reel
+   ends with the last source picture and its live audio. Do not add a closing
+   card, text or silent hold to a reel clip.
 7. **Look**: at least four frames (start, a two-line caption, another
-   speaker or an overlay, and the ending with its four lines) and the
+   speaker or an overlay, and the final live frame) and the
    cover. Check credit, watermark, the source's logo, an overlay fully
    covering its original, and no word cut at either end.
 8. **Captions for the networks**: `descriptions.md` following

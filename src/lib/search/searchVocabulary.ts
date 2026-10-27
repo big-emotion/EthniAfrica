@@ -73,10 +73,6 @@ const SEARCH_LABELS: Record<Language, string> = { fr: SEARCH_LABEL };
 const SEARCH_PLACEHOLDERS: Record<Language, string> = {
   fr: SEARCH_PLACEHOLDER,
 };
-const SEARCH_RESULT_GROUPS_BY_LANGUAGE: Record<
-  Language,
-  typeof SEARCH_RESULT_GROUPS
-> = { fr: SEARCH_RESULT_GROUPS };
 
 // @req REQ-140
 export function getSearchLabel(language: Language): string {
@@ -86,11 +82,4 @@ export function getSearchLabel(language: Language): string {
 // @req REQ-140
 export function getSearchPlaceholder(language: Language): string {
   return SEARCH_PLACEHOLDERS[language];
-}
-
-// @req REQ-140
-export function getSearchResultGroups(
-  language: Language
-): typeof SEARCH_RESULT_GROUPS {
-  return SEARCH_RESULT_GROUPS_BY_LANGUAGE[language];
 }

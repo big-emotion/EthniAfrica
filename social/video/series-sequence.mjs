@@ -9,7 +9,9 @@ import {
   MAP_FRAME,
   MARKS,
   AREA_INKS,
+  ZONE_INKS,
   ILLUSTRATIONS,
+  BUBBLE_KINDS,
   areaStyle,
   arrowWidth,
   drawingHeight,
@@ -43,6 +45,8 @@ import {
   flagUnroll,
   eraAt,
   FLAGS,
+  FLAG_STATES,
+  voiceNamesState,
 } from "./series-turns.mjs";
 import { loadRiver } from "./rivers.mjs";
 import {
@@ -216,6 +220,10 @@ function collectAreas(seq, runs, animated) {
           ink: a.ink,
           lang: a.lang,
         });
+        if (ZONE_INKS.includes(area.ink) && !area.uncertain)
+          fail(
+            `Area ${a.file}: Encre ${area.ink} : réservée aux zones approximatives (hachurées), quatre encres sinon`
+          );
         if (animated[run.sequence]) {
           const id = a.id ?? a.file.replace(/\.geojson$/u, "");
           if (area.id !== undefined && area.id !== id)
@@ -843,6 +851,24 @@ export const MAP_TIMING = {
   silentCoverage: 0.8,
   silentDelay: 21,
 };
+// 1.16.0, a flag planted on its place (series.md « 1.16.0 », 3): the pole
+// pops from its foot (the pop's one bounce, the canvas's « rebond ») and
+// the cloth unrolls from the hoist as a territory's flag does (600 ms);
+// swapped, the cloth folds back to the hoist (400 ms) and the next flag
+// rises from the foot to the top of the pole (600 ms). Its size follows
+// the drawings' height h: the pole is h tall, the cloth 0.72 h wide, 3:2.
+export const PLANTED = {
+  unrollFrom: 4,
+  unroll: FLAGS.unroll,
+  fold: FLAGS.rollBack,
+  rise: FLAGS.unroll,
+  cloth: 0.72,
+  ratio: 2 / 3,
+};
+// 1.16.0, the word bubble: it glides towards its listener in 950 ms (the
+// 1.14.0 name brought from outside) and turns gold with its new word over
+// the last 300 ms; without a destination it turns in place.
+export const BUBBLE = { glide: 28, morph: 9, text: 40 / 120 };
 const clamp01 = (x) => Math.min(1, Math.max(0, x));
 const ramp = (frames, duration, ease = EASE.move) =>
   ease(clamp01(frames / duration));
@@ -1208,6 +1234,7 @@ function planAnimatedCard(seq, plan, run, k) {
       id: a.id,
       ...shape,
       both: !!a.both,
+      ...(a.sea && { sea: true }),
       ink: a.pin ? "b" : markInk(a, seq.inks, `${what}, arrow ${a.id}`),
       ...(a.pin && { pin: true }),
       ...(a.place && { place: a.place }),
@@ -1225,13 +1252,51 @@ function planAnimatedCard(seq, plan, run, k) {
         fail(
           `${what}: un mouvement tombe pendant qu'une flèche se trace (${a.id})`
         );
-  const drawings = (map.drawings ?? []).map((d) => ({
-    kind: d.kind,
-    at: d.at,
-    start: word(d.say),
-    end: d.until !== undefined ? word(d.until) : Infinity,
-    label: d.label ?? ILLUSTRATIONS[d.kind],
-  }));
+  const drawings = (map.drawings ?? []).map((d) => {
+    const start = word(d.say);
+    const base = {
+      at: d.at,
+      start,
+      end: d.until !== undefined ? word(d.until) : Infinity,
+    };
+    // 1.16.0: a flag planted on its place, and the one it is swapped for.
+    if (d.flag !== undefined) {
+      for (const flag of [d.flag, d.swap?.flag].filter(Boolean))
+        if (!voiceNamesState(seq, i, flag))
+          fail(
+            `${what}: Drapeau d'un État que la voix ne nomme pas (« ${FLAG_STATES[flag]} »)`
+          );
+      const swap = d.swap && { flag: d.swap.flag, start: word(d.swap.say) };
+      if (swap && swap.start < start + PLANTED.unrollFrom + PLANTED.unroll)
+        fail(
+          `${what}: le drapeau ${d.flag} se replie avant d'être planté (swap)`
+        );
+      return {
+        ...base,
+        kind: "flag",
+        flag: d.flag,
+        ...(swap && { swap }),
+        label: null,
+        images: [],
+      };
+    }
+    // 1.16.0: the word bubble, and the word it becomes on its morph.
+    const morph = d.morph && {
+      word: d.morph.word,
+      start: word(d.morph.say),
+      ...(d.morph.to && { to: d.morph.to }),
+    };
+    if (morph && morph.start <= start)
+      fail(`${what}: la bulle change de mot après être apparue (morph)`);
+    return {
+      ...base,
+      kind: d.kind,
+      label: d.label === false ? null : (d.label ?? ILLUSTRATIONS[d.kind]),
+      ...(d.word !== undefined && { word: d.word }),
+      ...(morph && { morph }),
+      images: morph ? [d.kind, BUBBLE_KINDS.to] : [d.kind],
+    };
+  });
   // 1.14.0: a pin's name under its point, in the reading arrow's ink.
   const pinWords = (spec.pins ?? []).map((p) => ({
     text: p.name,
@@ -1281,6 +1346,7 @@ function planAnimatedCard(seq, plan, run, k) {
     at: p.at,
     side: p.side ?? "right",
     start: p.say !== undefined ? word(p.say) : start,
+    written: p.label !== "none",
   }));
   const rename = map.rename && { ...map.rename, start: word(map.rename.say) };
   // 1.13.0: flags inside a state, following the counter; drawn marks.
@@ -1299,6 +1365,14 @@ function planAnimatedCard(seq, plan, run, k) {
       )
     : [];
   const marks = planMarks(seq, i, run, cameraAt, areaById);
+  // The camera closes in on a voyage's stop once the ship is there: a ship
+  // and the ground moving at once lose the route.
+  for (const mk of marks.filter((x) => x.highlight))
+    for (const mv of moves.filter((x) => !x.whip))
+      if (mv.start < mk.highlight.end && mk.highlight.start < mv.end)
+        fail(
+          `${what}: un mouvement commence pendant que le navire fait route (images ${mk.highlight.start} à ${mk.highlight.end})`
+        );
   const pushed = (c, f) => pushedCamera(c, plan.shots[i], f);
   // 1.14.0: the figures drawn on the map, on the camera as pushed; units
   // are placed in the band the rest of the card's push leaves them.
@@ -1452,9 +1526,38 @@ export const DRAWN = {
   exchangeBend: 0.25,
   exchangeGap: 13,
   circleBox: { rx: 150, ry: 62, dx: 92, overshoot: 0.45 },
+  // Round a place whose name is not written (a universal map, 1.16.0): the
+  // circle has no name to take in, so it rings the dot alone (board S8).
+  circleBare: 46,
   boardWidth: 7,
 };
-const KINDS = ["river", "route", "circle", "cross", "pin", "exchange"];
+const KINDS = ["river", "route", "circle", "cross", "pin", "exchange", "lords"];
+// Narration v4 of « Zaïre », board S8: a long sea route is first shown whole
+// in grey (its context: where the voyage leads), then its part up to a stop
+// lights in its ink while the ship sails on its tip, from its word to the
+// stop's word, eased (`ease-move`), and stays there. The ship is a symbol at
+// three quarters of a drawing's height, the board's 110 px at h = 150.
+export const VOYAGE = {
+  ship: 0.75,
+  contextInk: "#cfc4b2",
+  contextOpacity: 0.75,
+  contextR: 0.4,
+};
+// Board S9: the lords of a kingdom's provinces, each on its province, pop
+// one by one (200 ms apart, the drawings' 400 ms entry) at 60 % of a
+// drawing's height (the board's 82 px lords beside a 122 px king); on the
+// king's word a gold line draws from him to each of them in 400 ms, as
+// they were named by him. One mark, however many lords: they read as one
+// figure, the kingdom, so they count once among the drawn marks and never
+// among the three drawings.
+export const LORDS_TIMING = {
+  apart: 6,
+  link: 12,
+  lord: 0.6,
+  ink: "#ffd36b",
+  width: 4,
+  keyline: 9,
+};
 const isPoint = (p) =>
   Array.isArray(p) && p.length === 2 && p.every(Number.isFinite);
 const clampFrames = (length, [lo, hi]) =>
@@ -1502,6 +1605,8 @@ function planMarks(seq, i, run, cameraAt, areaById) {
       };
     }
     if (m.kind === "route") {
+      if (m.sea !== undefined && m.sea !== true)
+        fail(`${what}: sea est true ou absent`);
       const via = (m.via ?? []).map(placeAt);
       if (via.length < 2)
         fail(`${what}: une route passe par deux lieux au moins`);
@@ -1512,11 +1617,57 @@ function planMarks(seq, i, run, cameraAt, areaById) {
         bend: 0,
       };
       const length = cumulative(arrowCurve(shape, cameraAt(start))).at(-1);
+      const dur = clampFrames(length, DRAWN.route);
+      let highlight = null;
+      if (m.highlight) {
+        const h = m.highlight;
+        if (!m.sea) fail(`${what}: seule une route maritime (sea) a un navire`);
+        const [lon, lat] = placeAt(h.to);
+        const stop = via.findIndex(
+          (p, k) => k > 0 && p[0] === lon && p[1] === lat
+        );
+        if (stop < 1)
+          fail(
+            `${what}: la partie éclairée s'arrête à une étape de la route (highlight.to)`
+          );
+        if (!Object.hasOwn(ILLUSTRATIONS, h.ship))
+          fail(`${what}: no drawing « ${h.ship} » for the ship`);
+        const [from, to] = [word(h.say), word(h.until)];
+        if (to <= from)
+          fail(`${what}: le navire arrive après son départ (highlight.until)`);
+        if (from < start + dur)
+          fail(`${what}: le navire part une fois la route tracée en gris`);
+        highlight = { stop, start: from, end: to, ship: h.ship };
+      }
       return {
         ...base,
         shape,
         ink: ink(),
-        dur: clampFrames(length, DRAWN.route),
+        dur,
+        sea: !!m.sea,
+        ...(highlight && { highlight }),
+      };
+    }
+    if (m.kind === "lords") {
+      const lords = (m.areas ?? []).map((id) => {
+        const onCard = (card.map.areas ?? []).some(
+          (a) => (a.id ?? a.file.replace(/\.geojson$/u, "")) === id
+        );
+        const area = onCard && areaById(id);
+        if (!area)
+          fail(
+            `${what}: un seigneur se tient sur une aire de la carte (« ${id} »)`
+          );
+        return { area: id, at: area.anchor };
+      });
+      if (!lords.length) fail(`${what}: des seigneurs sur leurs aires (areas)`);
+      return {
+        ...base,
+        id: m.id ?? "lords",
+        king: placeAt(m.king),
+        lords,
+        links: m.linkSay === undefined ? start : word(m.linkSay),
+        dur: (lords.length - 1) * LORDS_TIMING.apart + MAP_TIMING.drawing,
       };
     }
     if (m.kind === "exchange") {
@@ -1537,7 +1688,10 @@ function planMarks(seq, i, run, cameraAt, areaById) {
     const at = placeAt(m.at);
     const side =
       typeof m.at === "string" ? (places[m.at]?.side ?? "right") : "right";
-    if (m.kind === "circle") return { ...base, at, side, dur: DRAWN.circle };
+    if (m.kind === "circle") {
+      const bare = typeof m.at === "string" && places[m.at]?.label === "none";
+      return { ...base, at, side, ...(bare && { bare }), dur: DRAWN.circle };
+    }
     if (m.kind === "cross")
       return { ...base, at, dur: DRAWN.cross.apart + DRAWN.cross.stroke };
     return { ...base, at, dur: DUR.pop };
@@ -1587,20 +1741,93 @@ function drawnMarks(cp, frame, camera, proportion, fade, shown) {
       const cum = cumulative(pts);
       const L = cum.at(-1) * drawn;
       const headW = 0.8 * W;
-      const dots = [];
-      for (let s = 6; s <= L - 3.6 * headW; s += 2.4 * W) {
-        const p = pointAt(pts, cum, s);
-        dots.push([+p.x.toFixed(1), +p.y.toFixed(1)]);
+      const dotsTo = (from, to) => {
+        const out = [];
+        for (let s = 6; s <= to; s += 2.4 * W)
+          if (s > from) {
+            const p = pointAt(pts, cum, s);
+            out.push([+p.x.toFixed(1), +p.y.toFixed(1)]);
+          }
+        return out;
+      };
+      if (m.highlight) {
+        // The lit part ends at the stop, the 40th sample of each segment.
+        const h = m.highlight;
+        const stopAt = m.shape.via.length === 0 ? cum.at(-1) : cum[40 * h.stop];
+        const sailed =
+          frame < h.start
+            ? 0
+            : EASE.move(clamp01((frame - h.start) / (h.end - h.start)));
+        const lit = stopAt * sailed;
+        const tip = pointAt(pts, cum, lit);
+        return [
+          {
+            ...mark,
+            ink: m.ink,
+            sea: true,
+            r: W / 2,
+            dots: frame < h.start ? [] : dotsTo(-1, lit),
+            heads: [],
+            w: W,
+            tip: [+tip.x.toFixed(1), +tip.y.toFixed(1)],
+            context: {
+              dots: dotsTo(frame < h.start ? -1 : lit, L),
+              r: W * VOYAGE.contextR,
+            },
+            ship:
+              frame < h.start
+                ? null
+                : { kind: h.ship, x: tip.x, y: tip.y, start: h.start },
+          },
+        ];
       }
+      const dots = dotsTo(-1, L - 3.6 * headW);
       const tip = pointAt(pts, cum, Math.max(L, 1));
       return [
         {
           ...mark,
           ink: m.ink,
+          ...(m.sea && { sea: true }),
           r: W / 2,
           dots,
           heads: [arrowHead(tip, headW)],
           w: W,
+        },
+      ];
+    }
+    if (m.kind === "lords") {
+      const king = flatProject(camera, ...m.king);
+      return [
+        {
+          ...mark,
+          id: m.id,
+          links: m.lords.map((l, n) => {
+            const to = flatProject(camera, ...l.at);
+            const from = Math.max(m.links, m.start + n * LORDS_TIMING.apart);
+            const k = EASE.draw(clamp01((frame - from) / LORDS_TIMING.link));
+            const end = [
+              king[0] + (to[0] - king[0]) * k,
+              king[1] + (to[1] - king[1]) * k,
+            ];
+            return {
+              area: l.area,
+              from: king,
+              to,
+              k,
+              d:
+                k > 0
+                  ? `M${king.map((v) => v.toFixed(1)).join(",")}L${end.map((v) => v.toFixed(1)).join(",")}`
+                  : "",
+            };
+          }),
+          widths: {
+            line: LORDS_TIMING.width * k,
+            keyline: LORDS_TIMING.keyline * k,
+          },
+          lords: m.lords.map((l, n) => ({
+            at: flatProject(camera, ...l.at),
+            start: m.start + n * LORDS_TIMING.apart,
+          })),
         },
       ];
     }
@@ -1627,7 +1854,10 @@ function drawnMarks(cp, frame, camera, proportion, fade, shown) {
     }
     const [x, y] = flatProject(camera, ...m.at);
     if (m.kind === "circle") {
-      const { rx, ry, dx, overshoot } = DRAWN.circleBox;
+      const { overshoot } = DRAWN.circleBox;
+      const [rx, ry, dx] = m.bare
+        ? [DRAWN.circleBare, DRAWN.circleBare, 0]
+        : [DRAWN.circleBox.rx, DRAWN.circleBox.ry, DRAWN.circleBox.dx];
       const cx = x + (m.side === "left" ? -dx : dx);
       const pts = [];
       const span = 2 * Math.PI + overshoot;
@@ -1687,6 +1917,63 @@ const dimmed = (frame, dim) =>
     : 1 - (1 - FIGURES.dim) * ramp(frame - dim, FIGURES.dimFrames);
 
 // The marks of one card at a frame, faded by `fade` (the card change).
+// 1.16.0: a planted flag at `frame`: the pole's pop, how far the cloth is
+// unrolled from the hoist (`cloth`), how high it flies (`hoist`, 1 at the
+// top of the pole) and which flag it is. Its box holds the pole and the
+// cloth at the top: the rising flag never leaves it.
+function plantedAt(d, frame, [x, y], h, opacity) {
+  const k = frame - d.start;
+  let flag = d.flag;
+  let cloth = ramp(k - PLANTED.unrollFrom, PLANTED.unroll, EASE.enter);
+  let hoist = 1;
+  if (d.swap && frame >= d.swap.start) {
+    const s = frame - d.swap.start;
+    if (s < PLANTED.fold) cloth *= 1 - ramp(s, PLANTED.fold, EASE.exit);
+    else {
+      flag = d.swap.flag;
+      cloth = 1;
+      hoist = ramp(s - PLANTED.fold, PLANTED.rise, EASE.enter);
+    }
+  }
+  const w = h * PLANTED.cloth;
+  const pole = Math.max(4, Math.round(h / 18));
+  return {
+    kind: "flag",
+    flag,
+    x,
+    y,
+    h,
+    w,
+    pole: popAt(k).scale,
+    poleWidth: pole,
+    cloth,
+    hoist,
+    opacity,
+    box: { x: x - pole, y: y - h, w: w + 2 * pole, h },
+    rise: 0,
+    label: null,
+    labelOpacity: 0,
+    labelScale: 1,
+  };
+}
+
+// 1.16.0: the word bubble on its morph: where it is as it glides, its word
+// (the new one from half way through the turn) and how gold it is.
+function bubbleAt(d, frame, at) {
+  const from = at(d.at);
+  const k = frame - d.morph.start;
+  if (k < 0) return { at: from, word: d.word, gold: 0 };
+  const glide = d.morph.to ? BUBBLE.glide : BUBBLE.morph;
+  const to = d.morph.to ? at(d.morph.to) : from;
+  const g = ramp(k, glide, EASE.move);
+  const gold = ramp(k - (glide - BUBBLE.morph), BUBBLE.morph, EASE.move);
+  return {
+    at: [from[0] + (to[0] - from[0]) * g, from[1] + (to[1] - from[1]) * g],
+    word: gold >= 0.5 ? d.morph.word : d.word,
+    gold,
+  };
+}
+
 function cardMarks(cp, frame, camera, proportion, fade, names) {
   const at = (p) => flatProject(camera, ...p);
   // 1.13.0: around a whip zoom, a mark's own visibility.
@@ -1793,8 +2080,10 @@ function cardMarks(cp, frame, camera, proportion, fade, names) {
         : 1);
     const opacity = inOut * fade * shown(d.start);
     if (opacity <= 0) return [];
-    const [x, y] = at(d.at);
     const h = proportion.h;
+    if (d.kind === "flag") return [plantedAt(d, frame, at(d.at), h, opacity)];
+    const bubble = d.morph ? bubbleAt(d, frame, at) : null;
+    const [x, y] = bubble ? bubble.at : at(d.at);
     return [
       {
         kind: d.kind,
@@ -1802,6 +2091,17 @@ function cardMarks(cp, frame, camera, proportion, fade, names) {
         y,
         h,
         w: (h * 4) / 3,
+        box: {
+          x: x - (h * 2) / 3,
+          y: y - (h * 124) / 120,
+          w: (h * 4) / 3,
+          h: (h * 124) / 120,
+        },
+        ...(d.word !== undefined && {
+          word: bubble?.word ?? d.word,
+          gold: bubble?.gold ?? 0,
+          ...(bubble && { before: d.word, after: d.morph.word }),
+        }),
         opacity,
         rise:
           MAP_TIMING.rise *
@@ -1809,7 +2109,9 @@ function cardMarks(cp, frame, camera, proportion, fade, names) {
         label: d.label,
         // 1.13.0: the label pops under its drawing.
         labelOpacity:
-          opacity * popAt(frame - d.start - MAP_TIMING.labelDelay).opacity,
+          d.label === null
+            ? 0
+            : opacity * popAt(frame - d.start - MAP_TIMING.labelDelay).opacity,
         labelScale: popAt(frame - d.start - MAP_TIMING.labelDelay).scale,
       },
     ];
@@ -1855,7 +2157,10 @@ function cardMarks(cp, frame, camera, proportion, fade, names) {
         y,
         opacity,
         scale: dot.scale,
-        nameOpacity: label.opacity * fade * names * shown(p.start),
+        nameOpacity:
+          p.written !== false
+            ? label.opacity * fade * names * shown(p.start)
+            : 0,
         nameScale: label.scale,
       },
     ];
@@ -1905,6 +2210,56 @@ function cardMarks(cp, frame, camera, proportion, fade, names) {
     };
   }
   const drawn = drawnMarks(cp, frame, camera, proportion, fade, shown);
+  // The voyage's ship and a kingdom's lords are drawings that belong to
+  // their drawn mark.
+  const figure = (kind, [x, y], h, opacity, rise, extra) => ({
+    kind,
+    x,
+    y,
+    h,
+    w: (h * 4) / 3,
+    box: {
+      x: x - (h * 2) / 3,
+      y: y + rise - (h * 124) / 120,
+      w: (h * 4) / 3,
+      h: (h * 124) / 120,
+    },
+    opacity,
+    rise,
+    label: null,
+    labelOpacity: 0,
+    labelScale: 1,
+    ...extra,
+  });
+  for (const m of drawn) {
+    if (m.ship)
+      drawings.push(
+        figure(
+          m.ship.kind,
+          [m.ship.x, m.ship.y],
+          Math.round(VOYAGE.ship * proportion.h),
+          m.opacity *
+            ramp(frame - m.ship.start, MAP_TIMING.drawing, EASE.enter),
+          0,
+          { ship: true }
+        )
+      );
+    if (m.kind === "lords")
+      for (const l of m.lords) {
+        const p = ramp(frame - l.start, MAP_TIMING.drawing, EASE.enter);
+        if (!(p > 0)) continue;
+        drawings.push(
+          figure(
+            "seigneur",
+            l.at,
+            Math.round(LORDS_TIMING.lord * proportion.h),
+            m.opacity * p,
+            MAP_TIMING.rise * (1 - p),
+            { lord: m.id, of: `lords ${m.id}` }
+          )
+        );
+      }
+  }
   // 1.14.0: the figures drawn on the map.
   const figures = cp.figures
     ? [figuresAt(cp.figures, frame, camera, fade, shown)]
@@ -1938,7 +2293,25 @@ function mapTexts(names, marks) {
         h: 32,
       },
     });
-  for (const d of marks.drawings)
+  for (const d of marks.drawings) {
+    // 1.16.0: the bubble's studied word is written inside it, a word on
+    // the map like the others.
+    if (d.word !== undefined) {
+      const top = d.y + d.rise - (d.h * 124) / 120;
+      texts.push({
+        text: d.word,
+        kind: "word",
+        word: true,
+        opacity: d.opacity,
+        box: textBox(
+          d.x,
+          top + (d.h * 50) / 120,
+          estimateWidth(d.word, d.h * BUBBLE.text, 0.5),
+          d.h * BUBBLE.text
+        ),
+      });
+    }
+    if (d.label === null) continue;
     texts.push({
       text: d.label,
       kind: "label",
@@ -1951,6 +2324,7 @@ function mapTexts(names, marks) {
         32
       ),
     });
+  }
   for (const w of marks.words) {
     const [bw, bh] = styleBox(
       w.kind === "century"
@@ -2219,8 +2593,9 @@ function checkAnimatedCard(seq, i) {
       );
     if (shown.filter((t) => t.word).length > MARKS.maxWords)
       fail(`${what}: trois mots sur la carte : deux au plus`);
-    if (map.marks.drawings.length > MARKS.maxDrawings)
-      fail(`${what}: ${map.marks.drawings.length} dessins : trois au plus`);
+    const drawings = map.marks.drawings.filter((d) => !d.lord);
+    if (drawings.length > MARKS.maxDrawings)
+      fail(`${what}: ${drawings.length} dessins : trois au plus`);
     if (map.marks.arrows.filter((a) => a.full).length > MARKS.maxArrowsFull)
       fail(`${what}: Trois flèches au plus à pleine intensité`);
     // 1.13.0: three drawn marks at most besides areas and arrows.
@@ -2234,16 +2609,11 @@ function checkAnimatedCard(seq, i) {
         fail(
           `${what}: « ${t.text} » hors de la bande de la carte (x ${Math.round(t.box.x)} à ${Math.round(t.box.x + t.box.w)}, y ${Math.round(t.box.y)} à ${Math.round(t.box.y + t.box.h)}, image ${f})`
         );
-    for (const d of map.marks.drawings) {
-      const box = {
-        x: d.x - d.w / 2,
-        y: d.y - (d.h * 124) / 120,
-        w: d.w,
-        h: (d.h * 124) / 120,
-      };
-      if (!inside(box, MARKS.band))
-        fail(`${what}: le dessin ${d.kind} hors de la bande de la carte`);
-    }
+    for (const d of map.marks.drawings)
+      if (!inside(d.box, MARKS.band))
+        fail(
+          `${what}: le dessin ${d.flag ? `drapeau ${d.flag}` : d.kind} hors de la bande de la carte`
+        );
     // 1.14.0: units in the map band, every letter of a lettering on its
     // path.
     for (const fig of map.marks.figures) {
@@ -2312,6 +2682,21 @@ function markOn(map, mark, head) {
   if (kind === "illus")
     return map.marks.drawings.some(
       (d) => d.kind === value && d.opacity >= 0.6 && pointOn([d.x, d.y])
+    );
+  // A kingdom's lords count from their first lord at 60 %.
+  if (kind === "lords")
+    return map.marks.drawings.some(
+      (d) => d.lord === value && d.opacity >= 0.6 && pointOn([d.x, d.y])
+    );
+  // 1.16.0: a planted flag counts from 60 % opacity once its cloth shows:
+  // the planting is the mark, as an arrow counts while it draws.
+  if (kind === "flag")
+    return map.marks.drawings.some(
+      (d) =>
+        d.flag === value &&
+        d.opacity >= 0.6 &&
+        d.cloth > 0 &&
+        pointOn([d.x, d.y])
     );
   return map.texts.some(
     (t) =>

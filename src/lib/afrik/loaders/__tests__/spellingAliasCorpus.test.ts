@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { loadPeople } from "../peopleLoader";
+import { loadPeople } from "../peopleJsonLoader";
 
 /**
  * REQ-002 already requires alternate-spelling search; DEC-034 (ETNI-1408)

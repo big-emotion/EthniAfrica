@@ -589,6 +589,191 @@ test("an optional cover is the video's own declared frame", (t) => {
   );
 });
 
+// Instagram keeps the shared cut's length; Facebook's cut runs 19 s longer.
+function cutPerNetwork(t) {
+  const f = videoPackageFixture(t);
+  const cuts = {
+    instagram: f.cutFor("instagram"),
+    facebook: f.cutFor("facebook", { tail: 20 }),
+  };
+  return { f, cuts };
+}
+const postOf = (f, output = f.output) =>
+  readFileSync(join(f.root, output, "post.md"), "utf8");
+const section = (post, heading) =>
+  post.split(`## ${heading}\n\n`)[1].split("\n## ")[0];
+
+// @req REQ-186
+test("a video piece delivers each network's own cut as its own file, with its own media line, screen text and credits", (t) => {
+  const { f, cuts } = cutPerNetwork(t);
+  editJson(f, cuts.facebook.sequence, (seq) => {
+    seq.chapters[0].title = "Le nom du désert";
+  });
+  cuts.facebook.writeManifest();
+  const r = createPackage(f.root, f.configPath, f.output, both);
+  assert.deepEqual(
+    r.media.map((m) => [m.file, m.network]),
+    [
+      ["video-instagram.mp4", "instagram"],
+      ["video-facebook.mp4", "facebook"],
+    ]
+  );
+  for (const network of both)
+    assert.deepEqual(
+      readFileSync(join(f.root, f.output, `video-${network}.mp4`)),
+      readFileSync(join(f.root, cuts[network].final, "video.mp4")),
+      network
+    );
+  assert.equal(existsSync(join(f.root, f.output, "video.mp4")), false);
+  const post = postOf(f);
+  const order = section(post, "Media order");
+  assert.match(
+    order,
+    /\[video-instagram\.mp4\]\(video-instagram\.mp4\) : instagram, 32,7 s/
+  );
+  assert.match(
+    order,
+    /\[video-facebook\.mp4\]\(video-facebook\.mp4\) : facebook, 51,7 s/
+  );
+  const screen = section(post, "On-screen text");
+  const [instagram, facebook] = screen.split("### facebook");
+  assert.ok(instagram.startsWith("### instagram"));
+  assert.ok(facebook.includes("Le nom du désert"));
+  assert.ok(!instagram.includes("Le nom du désert"));
+  const credits = section(post, "Sources and credits").split("### facebook");
+  assert.ok(credits[0].startsWith("### instagram"));
+  for (const cut of credits)
+    assert.ok(cut.includes("Source : al-Idrīsī, 1154"), cut);
+  const copy = JSON.parse(
+    readFileSync(join(f.root, f.output, "public-copy.json"), "utf8")
+  );
+  assert.equal(copy.screen, undefined);
+  assert.ok(copy.networks[1].screen.includes("Le nom du désert"));
+  assert.ok(!copy.networks[0].screen.includes("Le nom du désert"));
+  assert.doesNotThrow(() => inspectPackage(f.root, f.output, both));
+  appendFileSync(join(f.root, f.output, "video-facebook.mp4"), "x");
+  assert.throws(() => inspectPackage(f.root, f.output, both), /changed/i);
+});
+
+// @req REQ-186
+test("each network's cut is held to its own manifest, sequence and account limits", (t) => {
+  for (const [mutate, pattern] of [
+    [
+      (f, cuts) =>
+        appendFileSync(join(f.root, cuts.facebook.final, "video.mp4"), "x"),
+      /video manifest does not match/,
+    ],
+    [
+      (f, cuts) =>
+        editJson(f, cuts.facebook.sequence, (seq) => {
+          seq.chapters[0].title = "Le nom du désert";
+        }),
+      /does not match the sequence/,
+    ],
+    [
+      (f, cuts) => cuts.facebook.writeManifest((m) => (m.frames -= 30)),
+      /frame/i,
+    ],
+    [(f, cuts) => cuts.facebook.writeManifest((m) => (m.demo = true)), /demo/i],
+    [
+      // Within Instagram's limit, the longer Facebook cut is over its own.
+      (f) => {
+        for (const n of f.config.networks) n.capability.maxDurationSeconds = 40;
+        f.save();
+      },
+      /duration exceeds/i,
+    ],
+  ]) {
+    const { f, cuts } = cutPerNetwork(t);
+    mutate(f, cuts);
+    assert.throws(
+      () => createPackage(f.root, f.configPath, f.output, both),
+      pattern
+    );
+  }
+  const { f } = cutPerNetwork(t);
+  f.config.networks[0].capability.maxDurationSeconds = 40;
+  f.save();
+  assert.doesNotThrow(() =>
+    createPackage(f.root, f.configPath, f.output, both)
+  );
+});
+
+// @req REQ-186
+test("a video package shares one cut or gives every network its own, never a mix", (t) => {
+  for (const [mutate, pattern] of [
+    [
+      (f) => {
+        f.cutFor("instagram");
+        f.config.sequence = f.sequence;
+        f.config.video = f.final;
+        f.save();
+      },
+      /every network/i,
+    ],
+    [(f) => f.cutFor("instagram"), /every network/i],
+    [
+      (f) => {
+        f.cutFor("instagram");
+        f.cutFor("facebook");
+        delete f.config.networks[1].sequence;
+        f.save();
+      },
+      /every network/i,
+    ],
+    [
+      (f) => {
+        f.cutFor("instagram");
+        f.cutFor("facebook");
+        f.config.cover = { frame: 30 };
+        f.save();
+      },
+      /cover/i,
+    ],
+  ]) {
+    const f = videoPackageFixture(t);
+    mutate(f);
+    assert.throws(
+      () => createPackage(f.root, f.configPath, f.output, both),
+      pattern
+    );
+  }
+});
+
+// @req REQ-186
+test("one composed thumbnail serves every network's cut, and alternative text names that network's file", (t) => {
+  const { f } = cutPerNetwork(t);
+  f.config.thumbnail = {
+    file: drawThumbnail(f, "piece/vignette.png"),
+    text: THUMBNAIL_TEXT,
+  };
+  const instagram = f.config.networks[0];
+  instagram.capability.altRoute = "native";
+  instagram.capability.altMax = 100;
+  instagram.alternativeText = [
+    {
+      file: "video.mp4",
+      text: "Une carte du Sahara montre trois bandes de terre.",
+    },
+  ];
+  f.save();
+  assert.throws(
+    () => createPackage(f.root, f.configPath, f.output, both),
+    /alternative text/i
+  );
+  instagram.alternativeText[0].file = "video-instagram.mp4";
+  f.save();
+  const r = createPackage(f.root, f.configPath, f.output, both);
+  assert.deepEqual(
+    r.media.map((m) => m.file),
+    ["video-instagram.mp4", "video-facebook.mp4", "thumbnail.png"]
+  );
+  const post = postOf(f);
+  assert.equal((post.match(/### Couverture/g) || []).length, 2);
+  assert.ok(post.includes(instagram.alternativeText[0].text));
+  assert.doesNotThrow(() => inspectPackage(f.root, f.output, both));
+});
+
 // @req REQ-186
 test("a final series video package delivers the video, the words its cards and subtitles print, and each network's copy", (t) => {
   const f = seriesPackageFixture(t);
@@ -612,12 +797,18 @@ test("a final series video package delivers the video, the words its cards and s
     "Florence Abena Dolphyne",
     "L'Afrique n'est pas un seul bloc.",
     "Le continent compte 54 pays,",
-    // 1.10.0: the closing line and the fixed invitation.
-    "L’importance de connaître nos noms.",
-    "Vous pouvez continuer la recherche sur EthniAfrica, lien en profil.",
+    // The fixed invitation and the closing line (operator, 27 October 2026).
+    "Vous pouvez continuer la recherche sur EthniAfrica et vous abonner pour découvrir de nouvelles publications.",
+    "EthniAfrica : l’importance de connaître nos noms.",
     "le pays des Noirs",
   ])
     assert.ok(screen.includes(line), line);
+  // Printed in that order: the invitation, then the line.
+  assert.ok(
+    screen.lastIndexOf(
+      "Vous pouvez continuer la recherche sur EthniAfrica et vous abonner pour découvrir de nouvelles publications."
+    ) < screen.lastIndexOf("EthniAfrica : l’importance de connaître nos noms.")
+  );
   // File names, identifiers and the voice's spoken forms are not on screen.
   assert.ok(!screen.some((s) => /\.jpg$|^serie-afrique|^nuit$/.test(s)));
   const post = readFileSync(join(f.root, f.output, "post.md"), "utf8");
@@ -684,6 +875,210 @@ test("each image a series video shows needs a research and rights record", (t) =
   assert.throws(
     () => createPackage(f.root, f.configPath, f.output, both),
     /research\/rights record/
+  );
+});
+
+// @req REQ-186
+test("a clip card's footage needs the research and rights record of its source video", (t) => {
+  const f = seriesPackageFixture(t);
+  const inputDir = join(f.root, "piece/series-input");
+  execFileSync("ffmpeg", [
+    ...["-v", "error", "-y", "-f", "lavfi"],
+    ...["-i", "testsrc2=size=1920x1080:rate=30:duration=30"],
+    ...[
+      "-c:v",
+      "libx264",
+      "-pix_fmt",
+      "yuv420p",
+      join(inputDir, "footage.mp4"),
+    ],
+  ]);
+  const cardsPath = join(f.root, f.cards);
+  const deck = JSON.parse(readFileSync(cardsPath, "utf8"));
+  const sourceUrl = "https://example.org/essai-video";
+  deck.cards.find((c) => c.id === "serie-afrique-tout-04").image = {
+    clip: {
+      src: "footage.mp4",
+      in: 0,
+      out: 22,
+      fx: 0.5,
+      audio: { mode: "off", speech: false },
+      place: "ESSAI",
+      rights: {
+        author: "Chaîne d'essai",
+        licence: "licence d'essai",
+        sourceUrl,
+      },
+    },
+  };
+  writeFileSync(cardsPath, JSON.stringify(deck));
+  f.writeManifest();
+  // The stills of a clip carry no record of their own: the source video must.
+  assert.throws(
+    () => createPackage(f.root, f.configPath, f.output, both),
+    /Video footage has no research\/rights record/
+  );
+  const p = join(f.root, f.config.research);
+  const research = JSON.parse(readFileSync(p, "utf8"));
+  research.images.push({
+    ...research.images[0],
+    file: "piece/series-input/footage.mp4",
+    sourcePage: sourceUrl,
+  });
+  writeFileSync(p, JSON.stringify(research));
+  assert.doesNotThrow(() =>
+    createPackage(f.root, f.configPath, f.output, both)
+  );
+});
+
+function editJson(f, file, change) {
+  const p = join(f.root, file);
+  const json = JSON.parse(readFileSync(p, "utf8"));
+  change(json);
+  writeFileSync(p, JSON.stringify(json));
+}
+
+// Puts `shots` on the series fixture's fourth card, cut from one generated
+// footage file, each shot's source video recorded in the dossier (#1972).
+function withClipCard(f, shots, { montage = shots.length > 1 } = {}) {
+  const inputDir = join(f.root, "piece/series-input");
+  execFileSync("ffmpeg", [
+    ...["-v", "error", "-y", "-f", "lavfi"],
+    ...["-i", "testsrc2=size=1920x1080:rate=30:duration=30"],
+    ...["-c:v", "libx264", "-pix_fmt", "yuv420p"],
+    join(inputDir, "footage.mp4"),
+  ]);
+  const clips = shots.map((shot) => ({
+    src: "footage.mp4",
+    fx: 0.5,
+    audio: { mode: "off", speech: false },
+    ...shot,
+  }));
+  editJson(f, f.cards, (deck) => {
+    deck.cards.find((c) => c.id === "serie-afrique-tout-04").image = montage
+      ? { clips }
+      : { clip: clips[0] };
+  });
+  const p = join(f.root, f.config.research);
+  const research = JSON.parse(readFileSync(p, "utf8"));
+  for (const sourcePage of new Set(clips.map((c) => c.rights?.sourceUrl)))
+    research.images.push({
+      ...research.images[0],
+      file: "piece/series-input/footage.mp4",
+      sourcePage,
+    });
+  writeFileSync(p, JSON.stringify(research));
+  f.writeManifest();
+}
+const CLIP_RIGHTS = {
+  author: "Chaîne d'essai",
+  licence: "licence d'essai",
+  sourceUrl: "https://example.org/essai-video",
+};
+
+// @req REQ-186
+test("a clip without a licence is refused before anything is packaged", (t) => {
+  const f = seriesPackageFixture(t);
+  withClipCard(f, [{ in: 0, out: 22, rights: CLIP_RIGHTS }]);
+  editJson(f, f.cards, (deck) => {
+    delete deck.cards.find((c) => c.id === "serie-afrique-tout-04").image.clip
+      .rights.licence;
+  });
+  assert.throws(
+    () => createPackage(f.root, f.configPath, f.output, both),
+    /rights\.licence/
+  );
+  assert.equal(existsSync(join(f.root, f.output)), false);
+});
+
+// @req REQ-186
+test("post.md credits every clip of a montage once per source", (t) => {
+  const f = seriesPackageFixture(t);
+  const other = {
+    author: "Autre chaîne",
+    licence: "CC BY 4.0",
+    sourceUrl: "https://example.net/autre-video",
+  };
+  withClipCard(f, [
+    { in: 0, out: 8, rights: CLIP_RIGHTS },
+    { in: 8, out: 15, rights: other },
+    { in: 15, out: 22, rights: CLIP_RIGHTS },
+  ]);
+  createPackage(f.root, f.configPath, f.output, both);
+  const post = readFileSync(join(f.root, f.output, "post.md"), "utf8");
+  const credits = post.split("## Sources and credits")[1].split("\n## ")[0];
+  for (const credit of [
+    "Images : Chaîne d'essai · licence d'essai · https://example.org/essai-video",
+    "Images : Autre chaîne · CC BY 4.0 · https://example.net/autre-video",
+  ])
+    assert.equal(credits.split(credit).length - 1, 1, credit);
+});
+
+// @req REQ-186
+test("a series cut's footage needs its record, and only that network's credits name it", (t) => {
+  const f = seriesPackageFixture(t);
+  const { facebook } = f.cutPerNetwork();
+  execFileSync("ffmpeg", [
+    ...["-v", "error", "-y", "-f", "lavfi"],
+    ...["-i", "testsrc2=size=1920x1080:rate=30:duration=30"],
+    ...["-c:v", "libx264", "-pix_fmt", "yuv420p"],
+    join(f.root, facebook.input, "footage.mp4"),
+  ]);
+  editJson(f, facebook.cards, (deck) => {
+    deck.cards.find((c) => c.id === "serie-afrique-tout-04").image = {
+      clip: {
+        src: "footage.mp4",
+        in: 0,
+        out: 22,
+        fx: 0.5,
+        audio: { mode: "off", speech: false },
+        rights: CLIP_RIGHTS,
+      },
+    };
+  });
+  facebook.writeManifest();
+  assert.throws(
+    () => createPackage(f.root, f.configPath, f.output, both),
+    /facebook cut: Video footage has no research\/rights record/
+  );
+  editJson(f, f.config.research, (research) => {
+    research.images.push({
+      ...research.images[0],
+      file: `${facebook.input}/footage.mp4`,
+      sourcePage: CLIP_RIGHTS.sourceUrl,
+    });
+  });
+  createPackage(f.root, f.configPath, f.output, both);
+  const [instagram, facebookCredits] = postOf(f)
+    .split("## Sources and credits\n\n")[1]
+    .split("\n## ")[0]
+    .split("### facebook");
+  const credit = `Images : ${CLIP_RIGHTS.author}`;
+  assert.ok(facebookCredits.includes(credit));
+  assert.ok(!instagram.includes(credit));
+});
+
+// @req REQ-186
+test("an image filed under clip/ still needs its record when no clip made it", (t) => {
+  const f = seriesPackageFixture(t);
+  const p = join(f.root, f.config.research);
+  const research = JSON.parse(readFileSync(p, "utf8"));
+  const [first] = research.images;
+  const moved = first.file.replace(`${f.config.assets}/`, "");
+  mkdirSync(join(f.root, f.config.assets, "clip"), { recursive: true });
+  copyFileSync(
+    join(f.root, first.file),
+    join(f.root, f.config.assets, "clip", moved.split("/").pop())
+  );
+  editJson(f, f.cards, (deck) => {
+    for (const card of deck.cards)
+      if (card.image?.src === moved)
+        card.image.src = `clip/${moved.split("/").pop()}`;
+  });
+  f.writeManifest();
+  assert.throws(
+    () => createPackage(f.root, f.configPath, f.output, both),
+    /Video image has no research\/rights record: clip\//
   );
 });
 

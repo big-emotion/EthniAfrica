@@ -13,6 +13,7 @@ import {
   readFileSync,
   rmSync,
   copyFileSync,
+  cpSync,
 } from "node:fs";
 import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
@@ -23,6 +24,7 @@ import {
 import {
   writeVoice,
   voicedInput,
+  SPOKEN,
 } from "../../../../social/video/fixtures/voiced.mjs";
 import { installPackageFixture } from "./package.fixture.mjs";
 
@@ -51,39 +53,44 @@ const frames = frameCount(
     { dir: DATA }
   )
 );
-const seconds = frames / 30;
-execFileSync("ffmpeg", [
-  "-v",
-  "error",
-  "-f",
-  "lavfi",
-  "-i",
-  "color=c=0x56606a:s=1080x1920:r=30",
-  "-i",
-  voice.audio,
-  "-frames:v",
-  String(frames),
-  "-c:v",
-  "libx264",
-  "-preset",
-  "ultrafast",
-  "-pix_fmt",
-  "yuv420p",
-  "-c:a",
-  "aac",
-  "-ar",
-  "48000",
-  "-af",
-  `apad=whole_dur=${seconds}`,
-  "-t",
-  String(seconds),
-  "-map_metadata",
-  "-1",
-  "-fflags",
-  "+bitexact",
-  "-y",
-  join(template, "video.mp4"),
-]);
+// A plain-colour 9:16 export of `frames` frames on `audio`, as encodeVideo
+// would deliver it for a sequence of that length.
+function encode(frames, audio, file) {
+  const seconds = frames / 30;
+  execFileSync("ffmpeg", [
+    "-v",
+    "error",
+    "-f",
+    "lavfi",
+    "-i",
+    "color=c=0x56606a:s=1080x1920:r=30",
+    "-i",
+    audio,
+    "-frames:v",
+    String(frames),
+    "-c:v",
+    "libx264",
+    "-preset",
+    "ultrafast",
+    "-pix_fmt",
+    "yuv420p",
+    "-c:a",
+    "aac",
+    "-ar",
+    "48000",
+    "-af",
+    `apad=whole_dur=${seconds}`,
+    "-t",
+    String(seconds),
+    "-map_metadata",
+    "-1",
+    "-fflags",
+    "+bitexact",
+    "-y",
+    file,
+  ]);
+}
+encode(frames, voice.audio, join(template, "video.mp4"));
 
 export function installVideoPackageFixture(
   root,
@@ -111,32 +118,37 @@ export function installVideoPackageFixture(
   });
   // The manifest binds the sequence as encodeVideo does: the hash of the
   // loaded sequence, whose voice paths resolve inside this root.
-  const writeManifest = (change = () => {}) => {
-    const raw = JSON.parse(readFileSync(join(root, input, "sequence.json")));
-    const seq = loadSequence(raw, { dir: join(root, input) });
-    const manifest = {
-      schema: 1,
-      design: seq.design,
-      style: seq.style,
-      width: 1080,
-      height: 1920,
-      fps: 30,
-      frames: frameCount(seq),
-      audio: { sha256: seq.voice.sha256, duration: seq.voice.duration },
-      demo: false,
-      productionReady: false,
-      runtime: { note: "Synthetic test manifest" },
-      hashes: {
-        sequence: sha(JSON.stringify(seq)),
-        video: sha(readFileSync(join(root, final, "video.mp4"))),
-      },
+  const manifestWriter =
+    (inputDir, finalDir) =>
+    (change = () => {}) => {
+      const raw = JSON.parse(
+        readFileSync(join(root, inputDir, "sequence.json"))
+      );
+      const seq = loadSequence(raw, { dir: join(root, inputDir) });
+      const manifest = {
+        schema: 1,
+        design: seq.design,
+        style: seq.style,
+        width: 1080,
+        height: 1920,
+        fps: 30,
+        frames: frameCount(seq),
+        audio: { sha256: seq.voice.sha256, duration: seq.voice.duration },
+        demo: false,
+        productionReady: false,
+        runtime: { note: "Synthetic test manifest" },
+        hashes: {
+          sequence: sha(JSON.stringify(seq)),
+          video: sha(readFileSync(join(root, finalDir, "video.mp4"))),
+        },
+      };
+      change(manifest);
+      writeFileSync(
+        join(root, finalDir, "manifest.json"),
+        JSON.stringify(manifest, null, 2) + "\n"
+      );
     };
-    change(manifest);
-    writeFileSync(
-      join(root, final, "manifest.json"),
-      JSON.stringify(manifest, null, 2) + "\n"
-    );
-  };
+  const writeManifest = manifestWriter(input, final);
   writeManifest();
   const config = {
     schema: 1,
@@ -172,6 +184,44 @@ export function installVideoPackageFixture(
   const configPath = `${piece}/package-input.json`;
   const save = () => f.file("package-input.json", config);
   save();
+  // Gives `network` its own cut, a copy of the shared one in its own folders,
+  // and moves the package to one video per network once every network has one.
+  // With `tail`, the cut's voice ends that many seconds after its last word,
+  // so the cut is longer than the shared one and is encoded again.
+  const cutFor = (network, { tail } = {}) => {
+    const cutInput = `${input}-${network}`;
+    const cutFinal = `${final}-${network}`;
+    cpSync(join(root, input), join(root, cutInput), { recursive: true });
+    cpSync(join(root, final), join(root, cutFinal), { recursive: true });
+    if (tail !== undefined) {
+      const longer = writeVoice(template, SPOKEN, { tail });
+      copyFileSync(longer.audio, join(root, cutInput, "voice.wav"));
+      copyFileSync(longer.words, join(root, cutInput, "words.json"));
+      const raw = JSON.parse(
+        readFileSync(join(root, cutInput, "sequence.json"))
+      );
+      encode(
+        frameCount(loadSequence(raw, { dir: join(root, cutInput) })),
+        join(root, cutInput, "voice.wav"),
+        join(root, cutFinal, "video.mp4")
+      );
+    }
+    const adaptation = config.networks.find((n) => n.network === network);
+    adaptation.sequence = `${cutInput}/sequence.json`;
+    adaptation.video = cutFinal;
+    if (config.networks.every((n) => n.video)) {
+      delete config.sequence;
+      delete config.video;
+    }
+    save();
+    const writeCutManifest = manifestWriter(cutInput, cutFinal);
+    writeCutManifest();
+    return {
+      sequence: adaptation.sequence,
+      final: cutFinal,
+      writeManifest: writeCutManifest,
+    };
+  };
   return {
     ...f,
     config,
@@ -180,6 +230,7 @@ export function installVideoPackageFixture(
     sequence: `${input}/sequence.json`,
     final,
     writeManifest,
+    cutFor,
   };
 }
 

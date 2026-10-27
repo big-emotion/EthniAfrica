@@ -244,7 +244,7 @@
    from Anton, the episode's titles. Three lines broken after each comma. */
 .ec-sigline { font: 600 56px/64px var(--font-wordmark, Fraunces, serif); color: var(--ink, #f3e9da); text-align: center; margin: 0; letter-spacing: -.005em; }
 .ec-sigline span { display: block; white-space: nowrap; }
-.ec-card--closing .ec-sigline + .ec-body--center { margin-top: 28px; }
+.ec-card--closing .ec-sigline + .ec-body--center, .ec-card--closing .ec-invite + .ec-sigline { margin-top: 28px; }
 /* 1.10.0: the fixed invitation, two lines set without wrapping. */
 .ec-invite span { display: block; white-space: nowrap; }
 .ec-close-gap { flex: none; }

@@ -619,12 +619,32 @@ The nine questions were answered with the designer's recommendations (« je suis
 
 The answers 4 to 6 of the brief stand as given: « Prochain épisode » under the pill, the subtitle band empty for the whole ending, nothing left of the signature line.
 
+### New words, 27 October 2026 (operator's decision)
+
+**Decided by the operator on 27 October 2026, without a Claude Design proposal**: « Tu changes la formule pour toutes les vidéos, oui ». Every series video and every carousel now ends with, in this order:
+
+> Vous pouvez continuer la recherche sur EthniAfrica et vous abonner pour découvrir de nouvelles publications. EthniAfrica : l’importance de connaître nos noms.
+
+The 1.10.0 words above (« L’importance de connaître nos noms. Vous pouvez continuer la recherche sur EthniAfrica, lien en profil. ») are kept in this section as history; `version.json` records them under `retired.closing1100` and the decision under `closingWords`. Pieces published before this date keep their words: their records are not rewritten.
+
+| Constant         | Printed lines                                                                                                                | Characters |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| The closing line | « EthniAfrica : l’importance de » / « connaître nos noms. »                                                                  | 49         |
+| The invitation   | « Vous pouvez continuer la recherche » / « sur EthniAfrica et vous abonner » / « pour découvrir de nouvelles publications. » | 107        |
+
+- **The invitation first, on screen as in the voice** (operator: « On peut plutôt commencer par : « Vous pouvez continuer la recherche sur EthniAfrica et vous abonner… ». Ensuite, on dit : « EthniAfrica, l'importance de connaître nos noms » »). The voice says the five printed lines as five chunks, the invitation's three first; the engine refuses any other words or order (`social/video/series.mjs`). Every ending prints the invitation, then the line 28 px under it.
+- **Same faces, sizes, inks and block.** No design version, no new token. The closing block keeps its 1.10.0 place: its top, now the invitation's, at y 318 in the video and y 760 on the card. The line keeps the signature line's face (Fraunces 600 56/64). The colon takes the French narrow no-break space (U+202F) before it. « connaître nos noms. » stays whole on the second line, as in 1.10.0; the first line is 722 px wide on the card (x 179 to 901), inside 72 to 1008.
+- **« Lien en profil » is gone.** The invitation names the site and the subscription; the pill still prints « ethniafrica.com ». So the open question of a closing « without a profile link » (PR #1982, still open on this date) no longer arises for the fixed ending: that pull request must be rebased on these words or closed.
+- **Video.** The block is the invitation (318 to 438, three lines), the line (466 to 594), the pill (624 to 698), « Prochain épisode » (728 to 768), still inside 318 to 820. Said at 16 characters a second the ending lasts about 9.8 s instead of about 6.7 s. The satellite map video's ending (`social/video/page.mjs`) prints them in the same order under its wordmark.
+- **Carousel.** The invitation's top sits at y 760 on every closing card, the line's at y 923; the engine warns when the line is not under the invitation, and `verify` refuses it. The block is one invitation line taller than in 1.10.0, which comes out of the gap above the credit: 50 px on series cards, 25 px on series 1 (with its recap) and on `seq-9`. No card warns or overflows; the panel heights do not change. The alternative text ends with the invitation, then the line. The ten closing cards of the sample take new references (`social/renderer/reference-manifest.json`, `closing-words-2026-10-27`); the 79 others pass unchanged.
+- **The end card** (`social/series-idents/endcard.html`) is re-timed to that order. The invitation enters alone (0.15 s) while the voice begins it, at y 600, rises to y 280 (2.2 to 2.8 s) as the phone comes back with the episode's name, and stays there. The line, Fraunces 900 50 px on three lines (« EthniAfrica : » / « l’importance de » / « connaître nos noms. »), comes in at y 462 at 6.7 s, when the scratch voice reaches it, followed by the wordmark, the address, « Prochain épisode », the cue and the networks (unchanged at 7.15 s, where the sound cue rings). At about 9.8 s the voice outlasts the 8 s card, which holds its last frame; re-timing on a real voice track is still the README's step 3b.
+
 ## The series idents in the video (operator's decision, 19 October 2026)
 
 **Decided by the operator on 19 October 2026, without a Claude Design proposal** (« décision opérateur »): the intro bumper and the end card designed and approved in `social/series-idents/` (PR #1891, board <https://claude.ai/artifact/FH2aH5LZG7r7P32pYNvbsu>) are part of every series video. They are drawn by their own pages, on their own parchment ground, never on the episode's picture. Nothing in the cards or the carousels changes: the carousel's closing card stays 1.10.0's.
 
 - **The intro**, right after the opener card, entered and left by the 300 ms card change: a generic social profile, « S'abonner », the profile's link, ethniafrica.com. The voice says the fixed sentence of the script rule (`docs/editorial/strategy/social-series.md`, « Opening, closing and length of every video »), word for word, subtitled in the usual band.
-- **The end card, in place of the 1.10.0 video ending**, after the signed card: the closing line, the same phone searching the episode's name and its answer, then the invitation, ethniafrica.com, « Prochain épisode », the cue towards the account's name and the five networks the project publishes on (Instagram, TikTok, Facebook, YouTube, LinkedIn; never X). The voice still says the line and the invitation, one chunk per printed line, never subtitled (1.10.0). The 1.10.0 ending block on the picture is not drawn under it.
+- **The end card, in place of the 1.10.0 video ending**, after the signed card: the closing line, the same phone searching the episode's name and its answer, then the invitation, ethniafrica.com, « Prochain épisode », the cue towards the account's name and the five networks the project publishes on (Instagram, TikTok, Facebook, YouTube, LinkedIn; never X). The voice still says the line and the invitation, one chunk per printed line, never subtitled (1.10.0); since 27 October 2026, the invitation first (« New words, 27 October 2026 » above). The 1.10.0 ending block on the picture is not drawn under it.
 - **The band and the signature** fade out under an ident and back in after it: an ident fills the frame.
 - **Each ident runs on its own clock** from the first frame of the change that brings it in, and holds its last frame; the end card plays whole (8 s), so the video lasts at least that long after the signed card.
 - **Engine.** A beat `{ "type": "intro", "chunks": [...] }`, second in the sequence; `idents: { "outro": "<name>", "next": "…" }` in the input, `<name>` naming the answer's layer file in `social/series-idents/layers/`. Without them the engine still draws the 1.10.0 ending, for older pieces.
@@ -1306,8 +1326,147 @@ The eight questions were answered with the designer's recommendations (« ok pou
 7. **The new drawings** (six people, the speech bubble, the book): as drawn.
 8. **Stamps on the map:** only a verdict the narration says, two words at most.
 
+## 1.16.0-proposition (accepted 27 October 2026): symbols, not words
+
+**Proposed by Claude Design and accepted by the operator on 27 October 2026.** Canvas « Zaïre — symboles des cartes », <https://claude.ai/artifact/5eUf5zVorYqaSky3ZebWoT> (version 1793101283-3869): a symbol lexicon and seven scene boards at 1080 × 1920, each with its animation note. The operator's words: « lorsqu'on présente une carte, il faut avoir le moins d'écriture possible, surtout en français, et le plus de symboles, de schémas, de directions et d'effets pour que ça soit universel », « une personne qui n'est pas française doit comprendre le message de la carte ». The Zaïre money is shown as a note or a symbol, the Congo by the Zaïre flag, France by the French flag, Brazil or Martinique by symbols rather than words.
+
+Everything accepted stays. 1.16.0 narrows 1.14.0's « text on the map is kept for names and dates »: on a universal map, **names go too**.
+
+### 1. The rule
+
+A map is understood without reading French. Every fact the voice says during a map phase has a symbol, a flag or a movement on screen (the silent viewing check of 1.11.0 and 1.14.0 is unchanged and counts them).
+
+**What may still be written on the map:** dates and numbers (« 1482 », « 1971 », « ≤ 1400 »), a century in figures (« XVe »), and the episode's studied word or words (« nzadi », « Zaïre »). **What is never written on it:** place names, area names, people's names, drawing labels, sentences. **Outside the map nothing changes:** the subtitles in their band, the head (kicker, title, counter, figure head), the headline band and the foot (sources, key, credits) keep their words.
+
+**How an episode takes it.** The series video declares its studied words: `"studiedWords": ["nzadi", "Zaïre"]`. Its maps are then universal, and the engine enforces the rule (below). An episode without the field keeps the 1.14.0 writing: the rule is accepted for the series, and episodes made before it are not re-cut.
+
+### 2. The symbols
+
+In `assets/Illustrations/`, in the 1.11.0 hand (ink line, watercolour wash, contact shadow, viewBox `0 -12 160 132`, foot at (80, 112)), placed by a card's `map.drawings` at `[lon, lat]` on their word, at the drawings' size, at most three on screen. **They carry no label.**
+
+| Symbol                                               | Kind                  | Says                            |
+| ---------------------------------------------------- | --------------------- | ------------------------------- |
+| Portuguese caravel, red cross of the Order of Christ | `caravelle`           | the Portuguese, a ship arriving |
+| stone pillar with its cross                          | `padrao`              | a padrão                        |
+| whitewashed fort                                     | `fort`                | a fort on the coast (Elmina)    |
+| seated king, cap and stool                           | `roi`                 | the king (mani Kongo)           |
+| standing lord                                        | `seigneur`            | a province lord (mani)          |
+| ring of figures                                      | `conseil`             | the electing council            |
+| shells                                               | `nzimbu`              | the nzimbu money                |
+| gold struck out                                      | `or-barre`            | « gold buys nothing »           |
+| raffia, ivory, leopard skin                          | `tribut`              | tribute in kind                 |
+| bolt of cloth; ivory tusk                            | `tissu`, `ivoire`     | what is exchanged               |
+| speech bubble, cream; the same in gold               | `parole`, `parole-or` | a word said; the word it became |
+| open register, one line lit                          | `registre`            | a name in an archive            |
+| curtain and mask                                     | `theatre`             | a theatre                       |
+| sugar cane                                           | `canne`               | sugar, the plantations          |
+| sack of spices                                       | `epices`              | spices, the Indies              |
+| three figures                                        | `peuple`              | a people, the inhabitants       |
+| grey figures walking in file, no chains, no faces    | `traversee`           | the forced crossing             |
+
+**Flags** (`assets/Flags/`, 3:2): the Zaïre flag of 1971–1997 (green field, yellow disc, a brown arm and hand holding a torch with a red flame, « dessin d'après la description officielle », credited so in the foot), the DR Congo flag of 2006, France, Brazil. Each can fill a state's area (1.13.0, « 8 », unchanged) or be planted on its place (below).
+
+### 3. The animations (from the canvas notes)
+
+| Mark                                | Card field                                                                     | Motion                                                                                                          | Time                                                                      |
+| ----------------------------------- | ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| Planted flag                        | `{ "flag": "zar", "at": [lon, lat], "say": "Zaïre" }` in `map.drawings`        | the pole pops from its foot (the pop, one bounce: the note's « rebond »), then the cloth unrolls from the hoist | pole 300 ms; cloth from 130 ms, over 600 ms (`ease-enter`): 730 ms in all |
+| Flag swap (1971 → 1997)             | `"swap": { "flag": "cod", "say": "1997" }` on the planted flag                 | the flag folds back to the hoist, then the next one rises from the foot to the top of the pole                  | fold 400 ms (`ease-exit`), rise 600 ms (`ease-enter`): 1 s in all         |
+| Word bubble                         | `{ "kind": "parole", "word": "nzadi", "at": …, "say": … }`                     | enters as a drawing; the studied word is written inside in Anton, ink #23170d                                   | 400 ms, rising 8 px                                                       |
+| A word that changes (nzadi → Zaïre) | `"morph": { "word": "Zaïre", "say": "Zaïre", "to": [lon, lat] }` on the bubble | glides towards its listener (the ship), then turns gold with its new word; without `to` it turns in place       | glide 950 ms (`ease-move`), the turn over its last 300 ms                 |
+| Symbol                              | `{ "kind": "roi", "at": …, "say": … }`                                         | the drawing's entry, no label                                                                                   | 400 ms, rising 8 px; out 400 ms                                           |
+
+Sizes: a planted flag's pole is the drawing height h (100 to 150 px, 1.11.0 « Proportions »), its cloth 0.72 h wide at 3:2, with the ink line round it and the second contour; it is a drawing (three at most on screen, in the map band, 12 px clear of other marks). The other notes of the canvas use existing marks: the river drawing itself, the dotted journey and the double arrow (1.13.0, « 7 »), the halo round the king (the hand-drawn circle), the lords linked to the king (dotted routes), a lit country (an area's swell).
+
+### 4. What the engine enforces
+
+On an episode with `studiedWords`:
+
+- a map word that is not a date or a century must be a studied word, otherwise « Carte universelle (1.16.0) : « … » s'écrit en français ; le montrer par un symbole (map.drawings) ou un drapeau »;
+- the same for an explicit drawing label, an area labelled `area` or `country`, a place labelled `name`, a rename, a 1.14.0 pin, lettering or stamp (a stamp « ? » or a number passes);
+- by default areas and places are not named and drawings carry no label; the dots, outlines and drawings stay;
+- a word bubble carries one of the studied words, and so does its morph; a bubble on an episode without `studiedWords` is refused.
+
+On every episode: a planted flag is a drawing with `flag`, never with `kind` too; its flags and its swap's are files of `assets/Flags/`; the card's voice names each flag's state (1.13.0's rule 3); the swap comes after the flag is planted; the facts take `flag:<id>` as a mark, counted from 60 % opacity once its cloth shows. **Left to the operator's review:** that a planted colonial power's flag never stands on African land (1.13.0, « 8 »), and that the flag's period matches the date the voice gives (a planted flag does not follow the counter).
+
+The design version stays 1.15.0-proposition: the engine reads the new fields without a version check, and moving `version.json` would move every carousel deck with it. The 1.16.0 deposit (`proposals/1.16.0-proposition/`, tokens, bundle) is the next step.
+
+Test plan: `social/video/fixtures/series-zaire.mjs` (boards S1 and S6), `series-symbols.test.mjs` (model) and `series-symbols.acceptance.test.mjs` (drawn frames, with the verified imagery).
+
+## Narration v4 of « Zaïre »: sea voyages, provinces, scenes and the enriched chapter card (approved 27 October 2026)
+
+**Approved by the operator on 27 October 2026** (« oui je valide, intègre au moteur ») on boards S8 to S14 of the same canvas, <https://claude.ai/artifact/5eUf5zVorYqaSky3ZebWoT>, drawn for the narration v4 of the hors-série « Zaïre ». Everything accepted stays; what follows extends the map's drawn marks (1.13.0), its areas (1.5.0, 1.11.0), the parchment card (1.12.0) and the chapter card (operator's decision of 20 October 2026).
+
+### 1. A sea voyage never crosses land
+
+The operator, on the first Portuguese route: « le chemin traverse la terre africaine ». **The rule:** a route or an arrow that stands for a voyage by sea says so (`"sea": true`, on a `route` mark or a `map.arrows` item) and never crosses land. When the map renders, its path is checked as it is drawn, in every view its card shows it (the card's view and the view after each move): the curve on screen sampled every 2 px, each sample brought back to the ground and tested against Natural Earth's 1:50m countries (the file the map cards already verify, `DOWNLOADS.countries`). Only its two ends may touch the coast, within 60 km (a port on an estuary or a cape lies a few dozen kilometres inside the 1:50m coast). A route that crosses land is refused with its segment, counted from 1 between two of its stops: « Card zaire-route, route: Route maritime sur la terre : le segment 15 (11.95, -6.05 → 40, -5) traverse la terre près de <lon, lat> ; la faire passer en mer par des points de passage (via) ». The fix is a stop at sea (`via`). A `foreign` arrow is not a voyage by itself: the French column of the Burkina episode marched overland. Engine: `social/video/series-sea.mjs`, called by `series-render.mjs`; tests `series-sea.test.mjs` and `series-zaire-v4.acceptance.test.mjs`.
+
+### 2. A long voyage, its stop and the zoom (board S8)
+
+A sea route may light its part up to a stop, with the ship sailing on it (`highlight`):
+
+```json
+{
+  "kind": "route",
+  "sea": true,
+  "via": ["lisbonne", [-12, 37], "…", "embouchure", "…", "calicut"],
+  "say": "Portugal",
+  "ink": "a",
+  "highlight": {
+    "to": "embouchure",
+    "say": "navigateurs",
+    "until": "embouchure",
+    "ship": "caravelle"
+  }
+}
+```
+
+- **The whole route first, in grey**, on its word, drawn by its pen as any dotted route (500 px a second, 0.8 to 2.5 s): the context, where the voyage leads (dots in #cfc4b2 at 75 % on a dark keyline, 0.4 W, no head).
+- **Then the part up to the stop lights** in the route's ink: from `highlight.say` to `highlight.until`, eased (`ease-move`), the ship riding its tip, and the ship stops there and stays. Under the lit part the grey goes on beyond the stop. The ship is a symbol of `assets/Illustrations` at three quarters of a drawing's height (the board's 110 px ship at h = 150), with no label; it counts among the three drawings. The stop is one of the route's stops; the ship leaves once the grey route is drawn and arrives after it leaves.
+- **The zoom is the camera's move inside the card** (1.11.0, « 7 »), on a word, once the ship has arrived: a move during the sailing is refused (« un mouvement commence pendant que le navire fait route »). From the Portugal-to-India frame (the board's, 430 px of globe radius) to the stop at 2 687 px takes two moves of 2.5 times, the most a move allows. **Why the move, not the board's round inset:** the inset needs a second imagery render inside a circle, a new layer of the page with its own scale-limit checks, while the move is already drawn, timed and checked; the two moves read as an approach to the coast, and every mark keeps its place on the ground.
+- **A circle round a place with no written name** (a universal map, 1.16.0) rings the dot alone (46 px), as the board's gold ring at the mouth; a named place keeps the 1.13.0 circle that takes in its name.
+- **A long route is ground**, like a river (1.13.0): its grey part may run under the subtitles; the ship and every symbol stay in the map band.
+
+### 3. Six provinces as approximate zones, and their lords (board S9)
+
+- **The zones** are files of `data/areas/` built by `areas.mjs` (`kongo-soyo`, `kongo-mbamba`, `kongo-mpemba`, `kongo-nsundi`, `kongo-mpangu`, `kongo-mbata`) by the approximate zone rule (`maps.md`, « Approximate zones », operator's ruling of 12 October): no source gives the provinces' limits, only where each lies, « Soyo entre le fleuve et l'Océan, Mbamba au sud de Soyo ; Nsundi et le Nord-Est, Mbangu [Mpangu] au sud de Nsundi, Mbata dans l'Est et Mbenba [Mpemba] avec la capitale au centre » (J. Vansina, HGA IV p. 621), and the kingdom's border about 1500, the river from its mouth to the Inkisi confluence (HGA V p. 605). Each anchor is placed from that description, one step (1°) at a time from two Natural Earth towns (Mpemba at Mbanza-Congo, Soyo at Soyo; Mbamba a step south of Soyo, half a step inland; Nsundi a step east and north of the capital; Mpangu a step south of Nsundi; Mbata two steps east of the capital); a zone is the land within one step of its anchor and nearer to it than to the other five, south of that border, with the rule's wobble seeded by the name. They partition the kingdom without overlapping, hatched, dashed, `kind: "approximate"`, `category: "province"`, each file's derivation saying « estimation »; the key reads « Provinces (estimation) » and the source line the passage.
+- **Six inks.** Four inks are a sequence's rule (1.5.0); six provinces of one kingdom need two more. **Proposed and applied:** the board's own green `e` #9fd36b and pink `f` #f2a6c8, for approximate zones only: hatched and dashed, they never fill a certain area, and an arrow, a word or a people keeps the four inks, so a people's ink never competes with them (« Encre e : réservée aux zones approximatives (hachurées), quatre encres sinon »). On the era map's paper they are #5f8a32 and #a8527a (deep #3f5f1f, #7a3456). The other way, four inks with two hatching angles, was not taken: at 430 px two provinces in one ink read as one province.
+- **The lords** are one drawn mark, `{ "kind": "lords", "id": "seigneurs", "king": [14.24, -6.27], "areas": ["kongo-soyo", …], "say": "Chacune", "linkSay": "nommé" }`: a lord (`seigneur`, 60 % of a drawing's height, no label) pops on each area's interior point, one every 200 ms; on `linkSay` a gold line (#ffd36b, 4 px over a 9 px keyline at 55 %) draws from the king to each in 400 ms, under the figures. The king is an ordinary drawing (`roi`) on his place. A kingdom's lords read as one figure: they count once among the drawn marks and never among the three drawings, and keep their 12 px clearance with every other mark but not among themselves. A lord stands on an area of the card, never elsewhere. The silent viewing check takes `lords:<id>`, counted from the first lord at 60 %.
+
+### 4. Illustrated scenes on parchment (boards S10 to S13)
+
+A passage with nothing to place is played as a scene on the parchment card (1.12.0): `"scene": { "kind": "conseil", "say": "roi", "beats": { "hands": "conseil", "crown": "membres" } }`, on a card with `ground: "parchment"`.
+
+| Kind       | What it shows                                                                                    | Gestures and their words                                                                                                                       |
+| ---------- | ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| `conseil`  | the royal council round the seated king: twelve members, four of them women in head wraps        | `hands`: the hands rise (400 ms, 60 ms apart); `crown`: the crown comes down on the king (800 ms, `ease-move`)                                 |
+| `nzimbu`   | a market: a buyer and a seller, a woven mat; shells (`nzimbu.svg`), a basket of goods, no gold   | `give`: the arms reach out (300 ms) and the shells cross to the seller (700 ms); `receive`: the basket crosses to the buyer, lifted on its way |
+| `bapteme`  | the Kongo court: the crowned king, a priest holding a vessel over him, the crowd in a muted wash | `cross`: a cross enters above (400 ms); `water`: the vessel tips (300 ms), three drops fall once on the king's head (500 ms each)              |
+| `echanges` | a Portuguese building and a Kongo house, two lanes over the sea                                  | `ships`: two caravels cross at once (2 s), books and a priest one way, ivory and cloth the other                                               |
+
+- **The hand** is the drawings' (1.11.0, 1.12.0): an ink line #23170d over a wash lit from the top left, rounded semi-realistic figures with one border stripe on plain cloth, a soft contact shadow; generic people with no face, never a portrait. The objects are the symbols of `assets/Illustrations/` (caravel, book, ivory, cloth, shells) nested in the scene with their ids prefixed. The figures are drawn by `social/video/series-scenes.mjs`, one SVG of 960 × 720 at (60, 540), each moving part a group.
+- **Timing.** The parts enter on the scene's word, 400 ms rising 8 px, 90 ms apart (the week table's cascade); each gesture starts on its word and ends while its card is on screen, else the card is refused with the frames missing. No idle motion, no loop: the water falls once, the ships cross once.
+- **Words.** A scene writes nothing. Its card's head may carry a date in figures (« 1491 », « 12 ») or one of the episode's studied words (« nzimbu »), in the dated head of the parchment text card (Anton 148/136, `accent`), never another word (« une scène porte une date en chiffres ou un mot étudié »); no `dateLabel`. The kicker is the chapter's (« 2 · Le royaume du Kongo »), even under a date. The sources go in the foot as on every card. A scene is the card's whole content: no table, formula, drawing, quotation or free words beside it.
+
+### 5. The enriched chapter card (board S14), for every series video with chapters
+
+The operator's chapter card of 20 October 2026 stays (dark ground, slow glow, line and dots, « n sur N », the title; the band and the signature fade out under it) and gains:
+
+- **the video's title as a reminder** at the top: the opener's title, Anton 64/68 in `on-image-muted`, its emphasised word in `on-image-accent`, top at y 300, two lines at most (band `chapter-video`, y 290 to 460), from the card's first frame;
+- **the chapters around it:** the previous chapter (« 1 · La route des Indes ») in Nunito Sans 800 30/36, `on-image-muted`, centred at y 812 between the dots and « n sur N » (now at y 864), entering with « n sur N »; the next chapter under the title, 34 px below it, entering at 1.55 s over 0.4 s (band `chapter-near`). The first chapter has none before it, the last none after it;
+- **the EthniAfrica map of Africa dimmed behind**: the continent's outline from `assets/Cartes/afrique.json` (Natural Earth), in #8a7f6c fading from 34 % at its centre to 8 %, part of the ground, cross-fading with it.
+
+The title keeps its place (top at y 986) and its hold rule. Engine: `series.mjs` (`chapter.video`, `prev`, `next`, `backdrop`) and `series-page.mjs` (`silentParts`, `drawChapter`).
+
+### Test plan
+
+`social/video/fixtures/series-zaire.mjs` (`zaireV4Demo`, boards S8 to S14 on the narration's sentences), `series-sea.test.mjs`, `series-voyage.test.mjs` and `series-scenes.test.mjs` (model), `series-zaire-v4.render.test.mjs` (the scenes and the chapter card drawn), `series-zaire-v4.acceptance.test.mjs` (the voyage and the provinces drawn on the verified imagery, and a route across Africa refused), `areas.test.mjs` (the six zones), `series-long.test.mjs` and `series-long.render.test.mjs` (the enriched chapter card on another episode).
+
 ## Checks
 
+- Narration v4 of « Zaïre » (approved 27 October 2026): a sea route or arrow never crosses land between its two ends; a voyage's ship sails from its word to its stop and the camera closes in only once it has arrived; inks e and f on approximate zones only; a kingdom's lords on its areas, linked to the king on his word; a scene on parchment writes nothing, its head a date in figures or a studied word, every gesture ending on its card; every chapter card carries the video's title, the chapters before and after, and Africa behind.
+
+- Symbols, not words (1.16.0-proposition, accepted): on an episode with `studiedWords`, nothing written on a map but dates, centuries and the studied words; symbols without labels; planted flags and their swaps on their words, the voice naming each flag's state; the bubble's words among the studied words.
 - Figures drawn on the map (1.14.0-proposition, accepted): the figure head counts the drawings on screen and lands on the spoken figure; units divide the figure and are placed by the source's breakdown, their unit in the foot; no phrase on a map, only names, dates and centuries; stamps only for a verdict the narration says; the new marks counted by the silent viewing check; see « Renderer integration of 1.14.0 » in Handoff.
 - Motion and sound (1.13.0-proposition, accepted): every move resolves to a motion token; the pop, the swell and the continuous push on their frames; whip zooms and flashes only on the story's turns, one flash in any 2 s; the era map without modern borders; flags only for a state existing on the date shown; two headline bands at most, their words among the voice's; the tier's change rate reported; the mix at −16 LUFS and −1 dBTP, and the video complete without its sound; see « Renderer integration of 1.13.0 » in Handoff.
 - Band: one line (`report.series.lines` is 1); nothing within 12 px of it on a map; tape under it.

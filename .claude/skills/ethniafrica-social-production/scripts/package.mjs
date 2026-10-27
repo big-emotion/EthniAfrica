@@ -247,7 +247,7 @@ function cardDelivery(root, config, read) {
     ...records,
     media,
     payload,
-    describable: media,
+    describable: () => media,
     format: "photo-carousel",
     checkCapability(c) {
       if (!Number.isInteger(c.maxCards) || c.maxCards < media.length)
@@ -324,27 +324,50 @@ function seriesScreenText(seq) {
       return Object.entries(value).flatMap(([k, v]) => strings(v, k));
     return [];
   };
-  // Cartes 1.10.0: the ending prints the closing line and the fixed
-  // invitation, from the accepted design's constants.
+  // Cartes 1.10.0: the ending prints the fixed invitation and the closing
+  // line, from the accepted design's constants, in that order since
+  // 27 October 2026.
   const { signatureLine, invitation } = JSON.parse(
     readFileSync(join(TOOL_ROOT, "social/design-system/version.json"))
   );
   return seq.cards.flatMap((card, i) => [
     ...strings(card),
     ...seq.chunks.filter((c) => c.card === i && !c.hidden).map((c) => c.text),
-    ...(card.type === "closing" ? [signatureLine, invitation] : []),
+    ...(card.type === "closing" ? [invitation, signatureLine] : []),
   ]);
+}
+// The shots a loaded clip card was cut from (Cartes 1.15.0): one for a clip,
+// several for a montage. Its stills are generated, so these, not the image
+// path, say a card shows footage.
+function clipShotsOf(card) {
+  return card.image?.clips ?? (card.image?.clip ? [card.image.clip] : []);
+}
+// A clip card's on-screen credit names its place and only the first shot of a
+// montage, so post.md credits each source video instead, once, with its full
+// address: the reader of post.md needs the locator the screen shortens.
+function clipCredits(shots) {
+  const bySource = new Map();
+  for (const { rights } of shots)
+    if (!bySource.has(rights.sourceUrl))
+      bySource.set(
+        rights.sourceUrl,
+        [`Images : ${rights.author}`, rights.licence, rights.sourceUrl]
+          .filter(Boolean)
+          .join(" · ")
+      );
+  return [...bySource.values()];
 }
 function seriesCredits(seq) {
   return [
     ...new Set(
-      seq.cards.flatMap((c) =>
-        [
+      seq.cards.flatMap((c) => {
+        const shots = clipShotsOf(c);
+        return [
           c.source && `${c.sourceLabel ?? "Source"} : ${c.source}`,
           c.map?.caption?.source && `Source : ${c.map.caption.source}`,
-          c.credit,
-        ].filter(Boolean)
-      )
+          ...(shots.length ? clipCredits(shots) : [c.credit]),
+        ].filter(Boolean);
+      })
     ),
   ].join("\n\n");
 }
@@ -396,9 +419,10 @@ function extractCover(file, frame) {
 // The composed thumbnail (operator, 19 October 2026) is a designed image, not
 // a frame, so it cannot be re-extracted: its bytes are fingerprinted instead,
 // and its printed words join the language check. It must keep the video's
-// shape because the operator uses one image on every network.
+// shape because the operator uses one image on every network, and so on
+// every network's cut.
 const THUMBNAIL_FORMATS = { png: "png", mjpeg: "jpg" };
-function composedThumbnail(root, configFile, thumbnail, manifest, read) {
+function composedThumbnail(root, configFile, thumbnail, manifests, read) {
   const file = text(thumbnail?.file, "Thumbnail file");
   if (!file.startsWith(`${dirname(configFile)}/`))
     fail("The thumbnail must sit inside the piece folder");
@@ -445,10 +469,11 @@ function composedThumbnail(root, configFile, thumbnail, manifest, read) {
     !(stream.width > 0 && stream.height > 0)
   )
     fail("The thumbnail must be a PNG or JPEG image");
-  if (stream.width * manifest.height !== stream.height * manifest.width)
-    fail(
-      `The thumbnail must have the video's shape, ${manifest.width} × ${manifest.height}`
-    );
+  for (const manifest of manifests)
+    if (stream.width * manifest.height !== stream.height * manifest.width)
+      fail(
+        `The thumbnail must have the video's shape, ${manifest.width} × ${manifest.height}`
+      );
   return {
     file: `thumbnail.${extension}`,
     bytes,
@@ -468,12 +493,37 @@ const ALT_ROUTE = {
   description: "il figure dans la légende",
   unavailable: "la plateforme n'en propose pas",
 };
-function videoDelivery(root, configFile, config, read) {
-  const design = JSON.parse(read(config.design));
-  if (design.status !== "accepted")
-    fail("The video design must be accepted by the operator");
-  const sequenceDir = dirname(path(root, config.sequence));
-  const raw = JSON.parse(read(config.sequence));
+// A subject is cut once per network (operator, 26 October 2026): TikTok,
+// Instagram and Facebook get different lengths and edits of one approved
+// script. Each adaptation then names its own `sequence` and `video`, and one
+// piece, one package and one approval 3 carry them all. The top-level pair
+// stays for revisions delivered before the rule; a mix is refused because a
+// network without its own cut would silently inherit another network's.
+function cutsOf(config) {
+  const own = config.networks.filter(
+    (n) => n.sequence !== undefined || n.video !== undefined
+  );
+  if (!own.length) return [{ sequence: config.sequence, video: config.video }];
+  if (
+    own.length !== config.networks.length ||
+    own.some((n) => n.sequence === undefined || n.video === undefined) ||
+    config.sequence !== undefined ||
+    config.video !== undefined
+  )
+    fail(
+      "Give every network its own sequence and video, or share one top-level cut; never a mix"
+    );
+  return config.networks.map((n) => ({
+    network: n.network,
+    sequence: n.sequence,
+    video: n.video,
+  }));
+}
+// Verifies one cut, `sequence` and the `video` folder encoded from it, as
+// the operator will upload it; every check binds this cut's own files.
+function verifyCut(root, config, design, records, read, cut) {
+  const sequenceDir = dirname(path(root, cut.sequence));
+  const raw = JSON.parse(read(cut.sequence));
   if (raw.demo)
     fail("A demo sequence is a proof; only a final sequence may be packaged");
   // A series video (Cartes) is told on its cards' beats; a map video on chapters of areas.
@@ -486,13 +536,12 @@ function videoDelivery(root, configFile, config, read) {
   } catch (error) {
     fail(`Sequence refused: ${error.message}`);
   }
-  const records = researchRecords(read, config);
   // The sequence names its own voice; a second input field would be a
   // second source of truth for the same files.
   for (const file of raw.voice ? [raw.voice.audio, raw.voice.words] : [])
     read(relative(root, resolve(sequenceDir, file)).split(sep).join("/"));
-  const manifest = JSON.parse(read(`${config.video}/manifest.json`));
-  const videoFile = `${config.video}/video.mp4`;
+  const manifest = JSON.parse(read(`${cut.video}/manifest.json`));
+  const videoFile = `${cut.video}/video.mp4`;
   const bytes = read(videoFile);
   if (manifest.schema !== 1) fail("Unsupported video manifest");
   if (manifest.demo !== false)
@@ -515,9 +564,30 @@ function videoDelivery(root, configFile, config, read) {
     if (manifest.hashes?.cards !== sha(read(cardsFile)))
       fail("The video manifest does not match the cards");
     text(config.assets, "Series video assets folder");
+    // A clip card shows footage, not a dossier image: its stills carry no
+    // record of their own; each shot names the source video it was cut from,
+    // and that video must have its research and rights record.
+    const rawCards = JSON.parse(read(cardsFile)).cards;
+    for (const card of rawCards)
+      for (const shot of card.image?.clips ??
+        [card.image?.clip].filter(Boolean))
+        if (
+          !records.dossier.images.some(
+            (i) => i.sourcePage === shot.rights?.sourceUrl
+          )
+        )
+          fail(
+            `Video footage has no research/rights record: ${shot.rights?.sourceUrl}`
+          );
+    // A dossier image filed under clip/ is still a dossier image: only a card
+    // the loader cut from footage is exempt.
+    const clipped = new Set(
+      seq.cards.filter((c) => clipShotsOf(c).length).map((c) => c.image.src)
+    );
     for (const src of new Set(seq.cards.map((c) => c.image?.src)))
       if (
         src &&
+        !clipped.has(src) &&
         !records.dossier.images.some(
           (i) => i.file === `${config.assets}/${src}`
         )
@@ -543,17 +613,62 @@ function videoDelivery(root, configFile, config, read) {
     fail("video.mp4 differs from its manifest's size, frame count or rate");
   if (probe.audio !== !!seq.voice)
     fail("The video audio track does not match the sequence voice");
-  const duration = manifest.frames / manifest.fps;
-  const video = {
-    id: "video",
-    file: "video.mp4",
-    sha256: sha(bytes),
-    alt: null,
+  const screen = series ? seriesScreenText(seq) : screenText(seq);
+  return {
+    network: cut.network,
+    // The network names the file so the operator cannot upload one
+    // network's cut on another, even once the file has left the folder.
+    file: cut.network ? `video-${cut.network}.mp4` : "video.mp4",
+    bytes,
+    videoFile,
+    manifest,
+    voiced: !!seq.voice,
+    duration: manifest.frames / manifest.fps,
+    screen,
+    credits: series
+      ? seriesCredits(seq)
+      : [
+          ...new Set(screen.filter((line) => line.startsWith("Source : "))),
+        ].join("\n\n"),
   };
-  const media = [video];
-  const payload = { "video.mp4": bytes };
+}
+const lines = (strings) =>
+  strings.map((line) => `- ${line.replaceAll("\n", " ")}`).join("\n");
+function videoDelivery(root, configFile, config, read) {
+  const design = JSON.parse(read(config.design));
+  if (design.status !== "accepted")
+    fail("The video design must be accepted by the operator");
+  const records = researchRecords(read, config);
+  const cuts = cutsOf(config).map((cut) => {
+    try {
+      return verifyCut(root, config, design, records, read, cut);
+    } catch (error) {
+      if (!cut.network) throw error;
+      fail(`${cut.network} cut: ${error.message}`);
+    }
+  });
+  const shared = !cuts[0].network;
+  const cutOf = (network) =>
+    shared ? cuts[0] : cuts.find((c) => c.network === network);
+  // Before one video per network, the only video kept the id and the media
+  // fields it had, so earlier revisions still match their manifest.
+  const videos = cuts.map((c) => ({
+    id: shared ? "video" : `video-${c.network}`,
+    file: c.file,
+    sha256: sha(c.bytes),
+    alt: null,
+    ...(shared ? {} : { network: c.network }),
+  }));
+  const media = [...videos];
+  const payload = Object.fromEntries(cuts.map((c) => [c.file, c.bytes]));
   let coverLine = "";
   if (config.cover !== undefined) {
+    // A frame number means nothing across cuts of different lengths and edits.
+    if (!shared)
+      fail(
+        "A frame cover needs one shared video; give each network's cut the composed thumbnail instead"
+      );
+    const { manifest, videoFile } = cuts[0];
     const frame = config.cover?.frame;
     if (!Number.isInteger(frame) || frame < 0 || frame >= manifest.frames)
       fail("The cover frame must be a frame of the video");
@@ -577,7 +692,7 @@ function videoDelivery(root, configFile, config, read) {
       root,
       configFile,
       config.thumbnail,
-      manifest,
+      cuts.map((c) => c.manifest),
       read
     );
     payload[thumbnail.file] = thumbnail.bytes;
@@ -589,27 +704,35 @@ function videoDelivery(root, configFile, config, read) {
     });
     coverLine = `\n- [${thumbnail.file}](${thumbnail.file}) : vignette composée, ${thumbnail.size}, la même couverture pour tous les réseaux`;
   }
-  const screen = series ? seriesScreenText(seq) : screenText(seq);
-  const credits = series
-    ? seriesCredits(seq)
-    : [...new Set(screen.filter((line) => line.startsWith("Source : ")))].join(
-        "\n\n"
-      );
-  const seconds = String(Math.round(duration * 10) / 10).replace(".", ",");
+  const mediaLine = (c) =>
+    `- [${c.file}](${c.file}) : ${c.network ? `${c.network}, ` : ""}${String(Math.round(c.duration * 10) / 10).replace(".", ",")} s, ${c.manifest.width} × ${c.manifest.height}, ${c.voiced ? "voix incluse" : "sans voix"}`;
+  const thumbnailCredit = thumbnail?.credit && `Vignette : ${thumbnail.credit}`;
+  const thumbnailSection = thumbnail
+    ? `## Thumbnail text\n\n${lines(thumbnail.text)}\n\n`
+    : "";
+  const thumbnailCopy = thumbnail && {
+    thumbnail: {
+      text: thumbnail.text,
+      ...(thumbnail.credit === undefined ? {} : { credit: thumbnail.credit }),
+    },
+  };
   return {
     ...records,
     media,
     payload,
-    describable: [video],
+    describable: (network) => [videos[cuts.indexOf(cutOf(network))]],
     format: "video",
-    checkCapability(c) {
+    checkCapability(c, network) {
+      const { duration, manifest } = cutOf(network);
       if (
         typeof c.maxDurationSeconds !== "number" ||
         !(c.maxDurationSeconds > 0)
       )
         fail("Verified video duration limit is required");
       if (duration > c.maxDurationSeconds)
-        fail("Video duration exceeds the verified account limit");
+        fail(
+          `${network ? `The ${network} cut's` : "Video"} duration exceeds the verified account limit`
+        );
       const [w, h] = (/^(\d+):(\d+)$/.exec(c.aspect ?? "") ?? [])
         .slice(1)
         .map(Number);
@@ -620,26 +743,27 @@ function videoDelivery(root, configFile, config, read) {
     },
     accessibility: (c) =>
       `Les sous-titres sont incrustés dans la vidéo.\n\nTexte alternatif : ${ALT_ROUTE[c.altRoute]}.\n\nSous-titres automatiques : ${c.autoCaptions === "available" ? "la plateforme en propose" : "la plateforme n'en propose pas"}.\n\n`,
-    // Without a thumbnail, these stay exactly as before so that revisions
-    // delivered earlier still verify against their post.md and public copy.
-    publicCopy: thumbnail
-      ? {
-          screen,
-          thumbnail: {
-            text: thumbnail.text,
-            ...(thumbnail.credit === undefined
-              ? {}
-              : { credit: thumbnail.credit }),
-          },
-        }
-      : { screen },
+    // A shared video keeps exactly the copy and post.md it had, so revisions
+    // delivered earlier still verify; one video per network moves the screen
+    // text and the credits under each network, since each cut prints its own.
+    publicCopy: shared
+      ? { screen: cuts[0].screen, ...thumbnailCopy }
+      : { ...thumbnailCopy },
+    networkCopy: (network) => (shared ? {} : { screen: cutOf(network).screen }),
     coverSection: (network) =>
       thumbnail ? coverInstruction(network, thumbnail.file) : "",
-    mediaOrder: `- [video.mp4](video.mp4) : ${seconds} s, ${manifest.width} × ${manifest.height}, ${seq.voice ? "voix incluse" : "sans voix"}${coverLine}`,
-    screenSection: `## On-screen text\n\n${screen.map((line) => `- ${line.replaceAll("\n", " ")}`).join("\n")}\n\n${thumbnail ? `## Thumbnail text\n\n${thumbnail.text.map((line) => `- ${line}`).join("\n")}\n\n` : ""}`,
-    credits: [credits, thumbnail?.credit && `Vignette : ${thumbnail.credit}`]
-      .filter(Boolean)
-      .join("\n\n"),
+    mediaOrder: `${cuts.map(mediaLine).join("\n")}${coverLine}`,
+    screenSection: shared
+      ? `## On-screen text\n\n${lines(cuts[0].screen)}\n\n${thumbnailSection}`
+      : `## On-screen text\n\n${cuts.map((c) => `### ${c.network}\n\n${lines(c.screen)}`).join("\n\n")}\n\n${thumbnailSection}`,
+    credits: shared
+      ? [cuts[0].credits, thumbnailCredit].filter(Boolean).join("\n\n")
+      : cuts
+          .map(
+            (c) =>
+              `### ${c.network}\n\n${[c.credits, thumbnailCredit].filter(Boolean).join("\n\n") || "Aucun crédit à l'écran."}`
+          )
+          .join("\n\n"),
   };
 }
 // The series sends each episode's readers through the Instagram story link
@@ -706,7 +830,10 @@ function assemble(root, configFile, networks, applied) {
   const blocks = [];
   const publicCopy = { ...delivery.publicCopy, networks: [] };
   for (const n of config.networks) {
-    const adaptedMedia = networkMedia(delivery.describable, n.alternativeText);
+    const adaptedMedia = networkMedia(
+      delivery.describable(n.network),
+      n.alternativeText
+    );
     if (
       !["instagram", "facebook", "tiktok", "youtube", "x"].includes(n.network)
     )
@@ -720,7 +847,7 @@ function assemble(root, configFile, networks, applied) {
     date(c.checkedAt);
     text(c.observation, "Account observation");
     read(c.evidence);
-    delivery.checkCapability(c);
+    delivery.checkCapability(c, n.network);
     limit(n.caption, c.captionMax, "caption");
     if (n.firstComment !== null) limit(n.firstComment, c.commentMax, "comment");
     if (!["native", "description", "unavailable"].includes(c.altRoute))
@@ -821,6 +948,7 @@ function assemble(root, configFile, networks, applied) {
       ...(story?.questionSticker === undefined
         ? {}
         : { story: { question: story.questionSticker } }),
+      ...delivery.networkCopy?.(n.network),
     });
   }
   const bibliography = dossier.sources

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -12 160 132" width="160" height="132">
+<title>epices</title>
+<filter id="epices-soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter><defs><linearGradient id="epices-sack" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e2c98e"/><stop offset="0.55" stop-color="#b9955a"/><stop offset="1" stop-color="#7a5a2e"/></linearGradient><linearGradient id="epices-pile" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c86a2a"/><stop offset="1" stop-color="#7a3410"/></linearGradient></defs><ellipse cx="80" cy="112" rx="60" ry="5" fill="#0b0806" opacity="0.55" filter="url(#epices-soft)"/><path d="M40 110 C30 92 34 62 50 50 L46 42 L94 42 L90 50 C106 62 110 92 100 110 Z" fill="url(#epices-sack)" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.9"/>
+<path d="M46 42 C56 48 84 48 94 42" fill="none" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5"/>
+<path d="M50 50 C60 34 82 34 90 50 Z" fill="url(#epices-pile)" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5"/>
+<g fill="#3a2a17"><circle cx="56" cy="46" r="2"/><circle cx="64" cy="42" r="2"/><circle cx="72" cy="40" r="2"/><circle cx="80" cy="42" r="2"/><circle cx="86" cy="46" r="2"/><circle cx="68" cy="46" r="2"/><circle cx="76" cy="46" r="2"/></g>
+<g stroke="#23170d" stroke-width="1" stroke-linecap="round" opacity="0.3"><line x1="88" y1="104" x2="96" y2="90"/><line x1="94" y1="104" x2="100" y2="94"/><line x1="84" y1="96" x2="90" y2="84"/></g>
+<path d="M108 104 L140 96 M110 110 L142 102" fill="none" stroke="#23170d" stroke-width="7" stroke-linecap="round"/><path d="M108 104 L140 96 M110 110 L142 102" fill="none" stroke="#a0582a" stroke-width="4" stroke-linecap="round"/>
+<g fill="#5a2a12" stroke="#23170d" stroke-linejoin="round" stroke-linecap="round" stroke-width="1"><path d="M22 106 l3 -6 l3 6 Z"/><path d="M30 100 l3 -6 l3 6 Z"/><path d="M18 98 l3 -6 l3 6 Z"/></g>
+</svg>

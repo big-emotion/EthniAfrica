@@ -174,7 +174,9 @@ export const globeGrade = (frame) => monotonePath(GLOBE.grade, [0, 1])(frame);
 export const OVERLAY_SCRIPT = `const SVG = "http://www.w3.org/2000/svg";
 // d, lilac, is the series map sequence's fourth name (Cartes 1.5.0); the
 // satellite video draws three inks and never references it.
-const INK = { a: "#e8b96a", b: "#6cc3b5", c: "#e3876a", d: "#c4a8f2" };
+// e, green, and f, pink, are the series map's inks for approximate zones beyond
+// four (« Zaïre », board S9); the satellite video never references them.
+const INK = { a: "#e8b96a", b: "#6cc3b5", c: "#e3876a", d: "#c4a8f2", e: "#9fd36b", f: "#f2a6c8" };
 // The neutral ink of the « Zone approximative » swatch (0.4.0).
 const NOTE_INK = "#a8977f";
 // Hatching for each ink at 45° and, for an area inside an earlier one, at
@@ -760,8 +762,9 @@ window.drawFrame = async (f) => {
     big.src = "/logo.png"; big.alt = "Logo EthniAfrica";
     closingParts.push(big,
       el("span", "font-family:Fraunces,Georgia,serif;font-weight:600;font-size:64px;line-height:72px;color:#f3e9da", "EthniAfrica"),
-      printedLines("font-family:Fraunces,Georgia,serif;font-weight:600;font-size:56px;line-height:64px;color:#f3e9da", SIGNATURE_LINES),
-      printedLines("margin-top:28px;font-size:30px;line-height:40px;font-weight:700;color:#f3e9da", INVITATION_LINES));
+      // 27 October 2026: the invitation first, then the line, as the voice says them.
+      printedLines("font-size:30px;line-height:40px;font-weight:700;color:#f3e9da", INVITATION_LINES),
+      printedLines("margin-top:28px;font-family:Fraunces,Georgia,serif;font-weight:600;font-size:56px;line-height:64px;color:#f3e9da", SIGNATURE_LINES));
     if (a) closingParts.push(
       el("span", "margin-top:28px;font-size:30px;line-height:40px;font-weight:700;color:#f3e9da", f.closing.sentence),
       el("span", "margin-top:6px;padding:12px 28px;border-radius:999px;border:2px solid #e8b96a;color:#e8b96a;font-size:34px;line-height:40px;font-weight:800;letter-spacing:.04em", f.closing.address));

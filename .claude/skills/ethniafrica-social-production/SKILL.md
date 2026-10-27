@@ -52,9 +52,11 @@ the reference example.
 
 For a long series video, follow [the long-episode recipe](references/long-episode-recipe.md)
 from research to approval 3. It records the operator's corrections on the Burkina
-Faso episode (19 October 2026): the animated satellite map carries the video,
-script written in map and picture phases, an animatic before any render, a
-pre-flight of every package check, one parallel render, and a composed thumbnail.
+Faso episode (19 October 2026): map and picture phases, an animatic before any
+render, a pre-flight of every package check, one parallel render, and a composed
+thumbnail. Its map-led opening and shared network duration are episode choices;
+use the current approved brief and later decisions in the series strategy for
+another episode.
 
 ## Start or resume
 
@@ -115,7 +117,15 @@ routine gate for corpus work or repeatedly ask for approval of unchanged work.
 Make the origin milestone visible: identify the studied form, what the sources
 say about its emergence, and where the trace ends. Distinguish invention, first
 located attestation, official adoption and diffusion. A recorded author is not
-necessarily the inventor. State an unknown date or naming actor plainly.
+necessarily the inventor. State an unknown date plainly, but never add a
+sentence announcing that nobody knows who chose a name or why (« on ne sait pas
+pourquoi ses parents ont choisi ce prénom »): say what the traces show and who
+proposes which explanation. `check:publication` blocks it; see
+[script lessons §13](references/script-lessons.md). Never use « lecture » for an
+interpretation (« la lecture la plus ancienne »); introduce every person in a few
+words on first mention; cite archives for showing the name, never the
+individuals' full names; settle content and sources beat by beat before style
+([§14](references/script-lessons.md)).
 Explain antecedent names and older entities without confusing their age with the
 birth of today's name. Uganda's connection to Buganda is a research question,
 not proof that Buganda's own origin is fully explained.
@@ -198,8 +208,11 @@ assemble a new delivery revision. Use `packageDir` at review 3. The helper check
 all media, copy, rights records and dependencies and rejects missing networks or
 an unsupported link route. Present `post.md` and the exact numbered images;
 never infer publication authorization from successful generation or approval 3.
-A video piece uses the same package with `kind: "video"`. Present `post.md`
-and the exact `video.mp4`.
+A video piece uses the same package with `kind: "video"` and always has one
+video per network: each network's cut of the subject, named by its
+adaptation, travels in the same piece, package and approval 3, never as a
+separate piece per network. Present `post.md` and each exact
+`video-<network>.mp4`.
 
 ## Retention
 

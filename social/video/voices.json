@@ -1,0 +1,56 @@
+{
+  "note": "Voices the operator chose on 26 October 2026 for the series video. Cast by the kind of passage, not sentence by sentence, so each stretch of speech keeps its rhythm. Names as ElevenLabs gives them; the gender and accent of a voice are not recorded here. Listen before relying on a role.",
+  "voices": [
+    {
+      "id": "M4ZqLOXSFqxSkn9RDxFO",
+      "name": "Tony - Warm, Dynamic Podcast Narrator",
+      "kind": "professional",
+      "role": "house",
+      "use": "The series' own voice: the fixed opening, the series introduction and the closing sentence. The default of voice.mjs."
+    },
+    {
+      "id": "ojsdYNTmnPdf7yAl8rI5",
+      "name": "Loïc - Calm, clear & pleasant French voice.",
+      "kind": "professional",
+      "role": "geography",
+      "use": "Passages that place something on a map: where a country, a lake, a village or a region lies."
+    },
+    {
+      "id": "MBIQRZjHPU6xEjGuB3b8",
+      "name": "Paul K - Deep Engaging Storyteller",
+      "kind": "professional",
+      "role": "meaning",
+      "use": "Passages that explain what a name means and who proposed it: accounts, traditions, attributed readings."
+    },
+    {
+      "id": "aQROLel5sQbj1vuIVi6B",
+      "name": "Nicolas - Narrator",
+      "kind": "professional",
+      "role": "history",
+      "use": "Dated passages: treaties, colonies, partitions, the chain of who named what and when."
+    },
+    {
+      "id": "YwEKgPNrswweXodAZi29",
+      "name": "Jérôme - Confident, Clear and Proud",
+      "kind": "professional",
+      "role": "independence",
+      "use": "Passages on a name becoming a state's own: independence, official adoption."
+    },
+    {
+      "id": "5PSrS7wEjM6KbIBWNHPj",
+      "name": "Marie-victoire",
+      "kind": "cloned",
+      "role": "position",
+      "use": "The signed « Nous pensons » position, which is EthniAfrica's own and is not a sourced fact.",
+      "note": "Cloned voice of a person: use only with their accord."
+    },
+    {
+      "id": "yoQMyIYN96ajwFGKgjd8",
+      "name": "issa sagna",
+      "kind": "cloned",
+      "role": "local",
+      "use": "A local, human register for passages about people and communities, if the operator wants one.",
+      "note": "Cloned voice of a person: use only with their accord."
+    }
+  ]
+}

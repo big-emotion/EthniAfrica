@@ -208,9 +208,9 @@ jobs:
           model: ${{ vars[needs.route.outputs.model_var] || (contains(fromJSON('["refiner","reviewer","merger"]'), needs.route.outputs.role) && 'claude-opus-4-8' || 'claude-sonnet-5') }}
           outcome: ${{ needs.run-agent.result }}
           # claude-code path does cost tracking best-effort by design — it emits no token/cost outputs.
-          # Consequence: every audit line this router writes says cost_eur 0, and
-          # ferry-cost-daily.yml sums those lines, so FERRY_SPEND_CAP_EUR can never
-          # trip on this path. Subscription usage is capped by the Claude plan, not by Ferry.
+          # Consequence: every audit line this router writes says cost_eur 0, so no
+          # spend cap can trip on this path (the daily cost check was retired for that
+          # reason). Subscription usage is capped by the Claude plan, not by Ferry.
           input_tokens: "0"
           output_tokens: "0"
           cost_eur: "0"

@@ -14,6 +14,8 @@ import { FLAT_VERT, FLAT_FRAG, OVERLAY_SCRIPT } from "./page.mjs";
 import { flatProject, areaStyle, MARKS } from "./series-map.mjs";
 import { documentFrame } from "./series-document.mjs";
 import { TURNS } from "./series-turns.mjs";
+import { SCENE } from "./series-scenes.mjs";
+import { PLANTED, BUBBLE, VOYAGE, LORDS_TIMING } from "./series-sequence.mjs";
 import {
   coastRunsInFrame,
   landRingInFrame,
@@ -38,6 +40,9 @@ export const PAPER_INKS = {
     b: token("area-b"),
     c: token("area-c"),
     d: "#7a5fb0",
+    // The zone inks e and f on paper, darkened as d is.
+    e: "#5f8a32",
+    f: "#a8527a",
     w: token("map-ink-muted"),
   },
   deep: {
@@ -45,6 +50,8 @@ export const PAPER_INKS = {
     b: token("area-b-deep"),
     c: token("area-c-deep"),
     d: "#4e3a80",
+    e: "#3f5f1f",
+    f: "#7a3456",
     w: "#55463a",
   },
   water: token("map-water"),
@@ -110,6 +117,11 @@ html,body{margin:0;background:#000}
 .oi.sm-wd-dates,.oi.sm-wd-century{font:800 30px/36px var(--font-text);color:var(--oi-muted);--sw:4px}
 .oi.sm-lab{position:absolute;white-space:nowrap;transform:translate(-50%,0);font:800 28px/32px var(--font-text);color:var(--oi-ink);--sw:4px}
 .sm-ill{position:absolute;display:block;max-width:none}
+/* 1.16.0: the studied word written inside its bubble, in the ink line's
+   colour on the bubble's paper (no outline: the bubble is its ground); a
+   flag planted on its place. */
+.sm-bubble-word{position:absolute;white-space:nowrap;transform:translate(-50%,-50%);font-family:var(--font-display);font-weight:400;color:#23170d}
+.sm-plant{position:absolute;overflow:visible}
 .vf-keys{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;margin-bottom:6px}
 .vf-keys .vf-key{font-size:24px;line-height:30px;margin-bottom:6px}
 .vf-key svg{width:36px;height:24px;flex:none;display:block}
@@ -142,7 +154,9 @@ html,body{margin:0;background:#000}
 .vf-close{position:absolute;left:60px;width:960px;top:318px;text-align:center;display:flex;flex-direction:column;align-items:center}
 .vf-sigline{font:600 56px/64px var(--font-wordmark);color:var(--oi-ink);--sw:8px}
 .vf-sigline span{display:block;white-space:nowrap}
-.vf-sent{font:700 32px/40px var(--font-text);--sw:4px;margin-top:28px;max-width:900px;text-wrap:balance}
+/* 27 October 2026: the invitation comes first, the line 28 px under it. */
+.vf-sent + .vf-sigline{margin-top:28px}
+.vf-sent{font:700 32px/40px var(--font-text);--sw:4px;max-width:900px;text-wrap:balance}
 .vf-sent p{margin:0}
 /* 1.10.0: the fixed invitation, two lines set without wrapping. */
 .vf-sent span{display:block;white-space:nowrap}
@@ -160,9 +174,18 @@ html,body{margin:0;background:#000}
 .vf-chapdot.done{background:var(--oi-faint)}
 .vf-chapdot.now{border-color:var(--oi-accent);background:var(--oi-accent)}
 .vf-chapring{position:absolute;inset:-18px;border-radius:50%;border:4px solid var(--oi-accent);opacity:0}
-.vf-chapcount{position:absolute;left:0;right:0;top:850px;text-align:center;font:800 44px/52px var(--font-text);color:var(--oi-muted)}
+.vf-chapcount{position:absolute;left:0;right:0;top:864px;text-align:center;font:800 44px/52px var(--font-text);color:var(--oi-muted)}
 .vf-chapcount b{color:var(--oi-accent);font-weight:800}
-.vf-chaptitle{position:absolute;left:90px;right:90px;top:986px;margin:0;text-align:center;font:400 112px/112px var(--font-display);color:var(--oi-text);text-wrap:balance}
+.vf-chaptitle{margin:0;width:100%;text-align:center;font:400 112px/112px var(--font-display);color:var(--oi-text);text-wrap:balance}
+/* The enriched chapter card (« Zaïre », board S14, 27 October 2026): the
+   video's title as a reminder at the top, the chapters before and after
+   the current one small around it, Africa dimmed behind. */
+.vf-chapafrica{position:absolute;left:0;top:470px;width:1080px;height:1350px}
+.vf-chapvideo{position:absolute;left:60px;right:60px;top:300px;font:400 64px/68px var(--font-display);color:var(--oi-muted);text-wrap:balance}
+.vf-chapvideo em{font-style:normal;color:var(--oi-accent)}
+.vf-chapnear{font:800 30px/36px var(--font-text);color:var(--oi-muted);text-align:center;white-space:nowrap}
+.vf-chapprev{position:absolute;left:60px;right:60px;top:812px}
+.vf-chapbody{position:absolute;left:90px;right:90px;top:986px;display:flex;flex-direction:column;align-items:center;gap:34px}
 .vf-list{width:960px;display:flex;flex-direction:column;margin-top:30px}
 .vf-row+.vf-row{margin-top:22px}
 .vf-rlab{font:800 26px/32px var(--font-text);letter-spacing:.02em;color:var(--oi-accent);--sw:4px}
@@ -263,7 +286,7 @@ html,body{margin:0;background:#000}
    map the glasses' ages and names, stamps, letterings, a name that travels;
    the units' key in the foot. */
 .vf-fhead{position:absolute;left:60px;top:318px;z-index:2;display:flex;flex-direction:column;align-items:flex-start}
-.vf-fpre{font:800 36px/42px var(--font-text);color:var(--oi-accent);--sw:5px;white-space:nowrap}
+.vf-fpre{font:800 36px/42px var(--font-text);color:var(--oi-accent);--sw:5px;white-space:nowrap;margin-bottom:24px}
 .vf-fnum{font:400 176px/156px var(--font-display);color:var(--oi-accent);--sw:13px;white-space:nowrap;font-variant-numeric:tabular-nums}
 .vf-funit{font:800 44px/52px var(--font-text);color:var(--oi-ink);--sw:6px;white-space:nowrap;margin-top:6px}
 .oi.sm-gl{position:absolute;white-space:nowrap;font:400 72px/84px var(--font-display);color:var(--oi-accent);--sw:10px;transform-origin:50% 100%}
@@ -347,7 +370,7 @@ for (const [k, v] of Object.entries({ ...INK, w: ${JSON.stringify(MARKS.foreign)
 const SAT_VERT = ${JSON.stringify(FLAT_VERT)};
 const SAT_FRAG = ${JSON.stringify(FLAT_FRAG)};
 const el = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
-const resolveAsset = (name) => "/assets/" + name;
+const resolveAsset = (name) => (name.startsWith("clip/") ? "/" + name : "/assets/" + name);
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;");
 // The cards' French spacing (EthniCards' fr): a narrow no-break space before
 // ; : ! ? » and after «.
@@ -400,6 +423,11 @@ function silentParts(parts) {
   const ground = el("div", "vf-chapground");
   const glow = el("div", "vf-chapglow");
   ground.append(glow);
+  // Africa, dimmed, fading out from its centre: the series' ground.
+  const africa = svgEl("svg", { class: "vf-chapafrica", viewBox: spec.chapter.backdrop.viewBox });
+  africa.innerHTML = '<defs><radialGradient id="chap-africa-' + spec.chapter.n + '" cx="50%" cy="40%" r="60%"><stop offset="0" stop-color="#8a7f6c" stop-opacity="0.34"/><stop offset="1" stop-color="#8a7f6c" stop-opacity="0.08"/></radialGradient></defs>';
+  africa.append(svgEl("path", { d: spec.chapter.backdrop.d, fill: "url(#chap-africa-" + spec.chapter.n + ")", stroke: "#8a7f6c", "stroke-opacity": 0.3, "stroke-width": 2 }));
+  ground.append(africa);
   pic.append(ground);
   const box = el("div", "vf-chap");
   const dots = el("div", "vf-chapdots");
@@ -418,15 +446,30 @@ function silentParts(parts) {
   count.dataset.kind = "chapter-count";
   const title = el("h2", "vf-chaptitle", esc(fr(spec.chapter.title)));
   title.dataset.kind = "chapter-title";
-  box.append(track, count, title);
+  const near = (c, css) => {
+    if (!c) return null;
+    const n = el("div", "vf-chapnear " + css, c.n + " · " + esc(fr(c.title)));
+    n.dataset.kind = "chapter-near";
+    return n;
+  };
+  const video = el("div", "vf-chapvideo", esc(fr(spec.chapter.video || "")).replace(/\\*([^*]+)\\*/g, "<em>$1</em>"));
+  video.dataset.kind = "chapter-video";
+  const prev = near(spec.chapter.prev, "vf-chapprev");
+  const next = near(spec.chapter.next, "");
+  const body = el("div", "vf-chapbody");
+  body.append(title);
+  if (next) body.append(next);
+  box.append(video, track, ...(prev ? [prev] : []), count, body);
   layer.append(box);
-  parts.chapter = { glow, line, dots: marks, ring: dots.querySelector(".vf-chapring"), count, title };
+  parts.chapter = { glow, line, dots: marks, ring: dots.querySelector(".vf-chapring"), count, title, video, prev, next };
   return parts;
 }
 
 // The board's timings, in seconds from the card's first frame: the line, the
 // dots one by one, the ring on the current dot, « n sur N », the title.
-const CHAPTER_STEPS = { line: [0.25, 0.7], dot0: 0.3, dotStep: 0.12, dot: 0.32, ring: [1.0, 0.7], count: [1.0, 0.4], title: [1.25, 0.6] };
+// The chapter before enters with « n sur N », the one after once the title
+// is in (board S14); the video's title stands from the card's first frame.
+const CHAPTER_STEPS = { line: [0.25, 0.7], dot0: 0.3, dotStep: 0.12, dot: 0.32, ring: [1.0, 0.7], count: [1.0, 0.4], title: [1.25, 0.6], next: [1.55, 0.4] };
 const easeOut = (p) => 1 - Math.pow(1 - p, 3);
 const span = (t, [from, length]) => Math.min(1, Math.max(0, (t - from) / length));
 function drawChapter(c, t, fade) {
@@ -444,6 +487,9 @@ function drawChapter(c, t, fade) {
     c.ring.style.transform = "scale(" + (0.6 + 0.9 * p).toFixed(4) + ")";
   }
   c.count.style.opacity = (span(t, S.count) * fade).toFixed(4);
+  c.video.style.opacity = fade.toFixed(4);
+  if (c.prev) c.prev.style.opacity = (span(t, S.count) * fade).toFixed(4);
+  if (c.next) c.next.style.opacity = (easeOut(span(t, S.next)) * fade).toFixed(4);
   const p = easeOut(span(t, S.title));
   c.title.style.opacity = (p * fade).toFixed(4);
   c.title.style.transform = "translateY(" + (24 * (1 - p)).toFixed(2) + "px)";
@@ -541,14 +587,15 @@ function buildParts(spec, view) {
     const close = el("div", "vf-close");
     // 1.10.0: the closing line and the fixed invitation, from the cards' own
     // constants, never the card's body: the video keeps no copy of either.
-    const line = el("div", "vf-sigline oi oi-l");
-    line.setAttribute("lang", "fr");
-    EthniCards.signatureLines.forEach((t) => line.append(el("span", "", esc(t))));
-    close.append(line);
+    // Since 27 October 2026 the invitation comes first, as the voice says it.
     const invitation = el("div", "vf-sent oi");
     invitation.setAttribute("lang", "fr");
     EthniCards.invitationLines.forEach((t) => invitation.append(el("span", "", esc(t))));
     close.append(invitation);
+    const line = el("div", "vf-sigline oi oi-l");
+    line.setAttribute("lang", "fr");
+    EthniCards.signatureLines.forEach((t) => line.append(el("span", "", esc(t))));
+    close.append(line);
     const pill = pick(".ec-cta-pill");
     close.append(el("div", "vf-pill oi", esc((pill ? pill.textContent : "ethniafrica.com").toUpperCase())));
     // 1.7.0: the next episode, printed 30 px under the pill, on one line.
@@ -587,7 +634,7 @@ function buildParts(spec, view) {
       head.append(el("div", "vf-label oi", pick(".ec-field .ec-label").innerHTML));
       head.append(el("div", "vf-name oi oi-l", name.innerHTML));
     }
-  } else {
+  } else if (!spec.scene) {
     head.append(el("h2", "vf-title oi oi-l" + (spec.type === "opener" ? " vf-title--xl" : ""), pick(".ec-title").innerHTML));
   }
   // 1.7.0: readings and figures flow under the title, each item in place
@@ -880,6 +927,15 @@ function parchmentContent(spec, parts) {
   parts.text.push(box);
   parts.paBox = box;
   if (spec.type === "word") parts.paWord = wordContent(spec, box);
+  // Narration v4 of « Zaïre »: an illustrated scene, every moving part a
+  // group placed from the layer's state.
+  if (spec.sceneSvg) {
+    const scene = el("div", "ps-scene");
+    Object.assign(scene.style, { left: "${SCENE.box.x}px", top: "${SCENE.box.y}px", width: "${SCENE.box.w}px", height: "${SCENE.box.h}px" });
+    scene.innerHTML = spec.sceneSvg;
+    box.append(scene);
+    parts.paScene = { box: scene, parts: Object.fromEntries([...scene.querySelectorAll("[data-part]")].map((g) => [g.dataset.part, { g, origin: g.dataset.origin || null }])) };
+  }
   if (spec.week) {
     const w = spec.week;
     box.append(el("div", "pw-people oi", esc(fr(w.people)) + (w.region ? "<span> · " + esc(fr(w.region)) + "</span>" : "")));
@@ -1425,12 +1481,34 @@ function drawAnimatedRun(node, map) {
   node.images.forEach((img) => (img.style.display = "none"));
   const taken = {};
   for (const [n, d] of map.marks.drawings.entries()) {
-    const img = node.pool[d.kind][(taken[d.kind] = (taken[d.kind] ?? -1) + 1)];
+    // 1.16.0: a flag planted on its place.
+    if (d.kind === "flag") {
+      node.marks.append(ringed(plantedFlag(d, n), 4));
+      continue;
+    }
     const w = (d.h * 160) / 120, h = (d.h * 132) / 120;
-    Object.assign(img.style, { display: "block", left: d.x - w / 2 + "px", top: d.y + d.rise - (d.h * 124) / 120 + "px", width: w + "px", height: h + "px", opacity: d.opacity });
-    img.dataset.mark = "drawing";
-    img.dataset.kind = d.kind;
-    img.dataset.of = n;
+    const top = d.y + d.rise - (d.h * 124) / 120;
+    const place = (kind, opacity) => {
+      const img = node.pool[kind][(taken[kind] = (taken[kind] ?? -1) + 1)];
+      Object.assign(img.style, { display: "block", left: d.x - w / 2 + "px", top: top + "px", width: w + "px", height: h + "px", opacity });
+      img.dataset.mark = "drawing";
+      img.dataset.kind = kind;
+      img.dataset.of = d.of ?? n;
+    };
+    // 1.16.0: a bubble turning gold cross-fades its two papers and words.
+    if (d.before !== undefined) {
+      place("parole", d.opacity * (1 - d.gold));
+      place("parole-or", d.opacity * d.gold);
+    } else place(d.kind, d.opacity);
+    const words = d.before !== undefined ? [[d.before, 1 - d.gold], [d.after, d.gold]] : d.word !== undefined ? [[d.word, 1]] : [];
+    for (const [text, k] of words) {
+      if (!(d.opacity * k > 0)) continue;
+      const t = el("div", "sm-bubble-word", esc(fr(text)));
+      Object.assign(t.style, { left: d.x + "px", top: top + (d.h * 50) / 120 + "px", fontSize: (d.h * ${BUBBLE.text}).toFixed(2) + "px", lineHeight: "1", opacity: d.opacity * k });
+      t.dataset.mark = "word";
+      t.dataset.of = n;
+      node.marks.append(t);
+    }
     if (!(d.labelOpacity > 0)) continue;
     const label = el("div", "sm-lab oi", esc(fr(d.label)));
     Object.assign(label.style, { left: d.x + "px", top: d.y + d.rise + 8 + "px", opacity: d.labelOpacity });
@@ -1623,6 +1701,41 @@ function drawFlags(node, map, onPaper) {
   }
 }
 
+// 1.16.0: a flag planted on its place: the pole stands on the place, ink
+// line under a cream core, and pops from its foot; the cloth flies at its
+// top, unrolled from the hoist by a clip, hoisted from the foot when it
+// rises in a swap. Drawn in the box the model gives, so the layout checks
+// measure what the frame shows.
+let plantSeq = 0;
+function plantedFlag(d, n) {
+  const b = d.box;
+  const svg = svgEl("svg", { class: "sm-plant", width: b.w, height: b.h, viewBox: [b.x, b.y, b.w, b.h].join(" ") });
+  // Inline sizes: the map's own svg rule would stretch it to the frame.
+  Object.assign(svg.style, { left: b.x + "px", top: b.y + "px", width: b.w + "px", height: b.h + "px", opacity: d.opacity });
+  svg.dataset.planted = d.flag;
+  svg.dataset.of = n;
+  const poleTop = d.y - d.h * d.pole;
+  svg.append(
+    svgEl("line", { x1: d.x, y1: d.y, x2: d.x, y2: poleTop, stroke: "#23170d", "stroke-width": d.poleWidth + 4, "stroke-linecap": "round" }),
+    svgEl("line", { x1: d.x, y1: d.y - 2, x2: d.x, y2: poleTop + 2, stroke: "#e9e1d1", "stroke-width": d.poleWidth, "stroke-linecap": "round" })
+  );
+  if (d.cloth > 0) {
+    const W = d.w, H = W * ${PLANTED.ratio};
+    const x0 = d.x + d.poleWidth / 2;
+    const y0 = poleTop + 2 + (1 - d.hoist) * (d.h - H - 4);
+    const id = "plant-unroll-" + plantSeq++;
+    const clip = svgEl("clipPath", { id });
+    clip.append(svgEl("rect", { x: x0 - 2, y: y0 - 2, width: (W + 4) * d.cloth, height: H + 4 }));
+    const cloth = svgEl("g", { "clip-path": "url(#" + id + ")" });
+    cloth.append(
+      svgEl("use", { href: "#flag-" + d.flag, x: x0, y: y0, width: W, height: H }),
+      svgEl("rect", { x: x0, y: y0, width: W, height: H, fill: "none", stroke: "#23170d", "stroke-width": 3 })
+    );
+    svg.append(clip, cloth);
+  }
+  return svg;
+}
+
 // Drawn marks (series.md « 7 »): on the satellite each over a dark
 // keyline; on paper in its paper ink, without it.
 const KEYLINE = "#0b0806";
@@ -1640,6 +1753,12 @@ function drawDrawnMarks(node, map, onPaper) {
       if (m.tip) g.append(svgEl("circle", { cx: m.tip[0], cy: m.tip[1], r: 7, fill: onPaper ? PAPER.river : "#e9fbff" }));
     } else if (m.kind === "route") {
       const ink = onPaper ? PAPER.deep[m.ink] : inkOf(m.ink);
+      // A voyage's way on, in grey, under its lit part.
+      if (m.context)
+        for (const [x, y] of m.context.dots) {
+          if (!onPaper) g.append(svgEl("circle", { cx: x, cy: y, r: m.context.r + 2, fill: KEYLINE, "fill-opacity": 0.5 }));
+          g.append(svgEl("circle", { cx: x, cy: y, r: m.context.r, fill: onPaper ? PAPER.deep.w : "${VOYAGE.contextInk}", "fill-opacity": ${VOYAGE.contextOpacity} }));
+        }
       for (const [x, y] of m.dots) {
         if (!onPaper) g.append(svgEl("circle", { cx: x, cy: y, r: m.r + 3, fill: KEYLINE, "fill-opacity": 0.7 }));
         g.append(svgEl("circle", { cx: x, cy: y, r: m.r, fill: ink }));
@@ -1655,6 +1774,13 @@ function drawDrawnMarks(node, map, onPaper) {
         if (lane.d) g.append(svgEl("path", { d: lane.d, stroke: ink, "stroke-width": lane.w }));
         if (!onPaper) g.append(svgEl("path", { d: lane.head.d, fill: KEYLINE, "fill-opacity": 0.7, stroke: KEYLINE, "stroke-opacity": 0.7, "stroke-width": 6 }));
         g.append(svgEl("path", { d: lane.head.d, fill: ink, stroke: ink, "stroke-width": 1 }));
+      }
+    } else if (m.kind === "lords") {
+      // Each lord linked to the king by a gold line, under the figures.
+      for (const l of m.links) {
+        if (!l.d) continue;
+        if (!onPaper) g.append(svgEl("path", { d: l.d, stroke: KEYLINE, "stroke-opacity": 0.55, "stroke-width": m.widths.keyline }));
+        g.append(svgEl("path", { d: l.d, stroke: onPaper ? PAPER.deep.a : "${LORDS_TIMING.ink}", "stroke-width": m.widths.line }));
       }
     } else if (m.kind === "circle") {
       if (!onPaper) g.append(svgEl("path", { d: m.d, stroke: KEYLINE, "stroke-opacity": 0.65, "stroke-width": m.widths.keyline }));
@@ -2148,7 +2274,7 @@ window.setup = async ({ tokens, cards, logo, demo, maps, subtitles: cardLines, z
     for (const node of runs.filter((n) => n.animated))
       for (const kind of maps.sequence.illustrations || []) {
         node.pool[kind] = [];
-        for (let k = 0; k < ${MARKS.maxDrawings}; k++) {
+        for (let k = 0; k < Math.max(${MARKS.maxDrawings}, (maps.sequence.illustrationCounts || {})[kind] || 0); k++) {
           const img = ringed(el("img", "sm-ill"), 4);
           img.alt = "";
           img.decoding = "sync";
@@ -2310,15 +2436,26 @@ function frameBoxes(frame, state) {
           const r = rect(n), k = r.w / 160, ink = drawingInk[n.dataset.kind];
           boxes.push({ id: n.dataset.kind, kind: "map-drawing", x: r.x + ink.x * k, y: r.y + ink.y * k, w: ink.w * k, h: ink.h * k, ...flags, opacity: +n.style.opacity, of: "drawing " + n.dataset.of });
         });
+        // 1.16.0: planted flags, as drawings.
+        node.marks.querySelectorAll("[data-planted]").forEach((n) => {
+          if (!(+n.style.opacity > 0)) return;
+          boxes.push({ id: "drapeau " + n.dataset.planted, kind: "map-drawing", ...rect(n), ...flags, opacity: +n.style.opacity, of: "drawing " + n.dataset.of });
+        });
         node.arrows.querySelectorAll("[data-head][data-drawn='1']").forEach((n) => boxes.push({ id: n.dataset.head, kind: "map-head", ...rect(n), ...flags, opacity: +n.parentNode.getAttribute("opacity") }));
       }
     }
     if (!(l.text > 0)) continue;
     const layer = parts.layer;
+    // 1.14.0: the figure head's lines, checked against each other.
+    if (parts.figHead && +parts.figHead.box.style.opacity > 0) {
+      if (parts.figHead.pre.style.display !== "none") add(parts.figHead.pre, "figure-pre", { card: l.card });
+      add(parts.figHead.num, "figure-number", { card: l.card });
+      add(parts.figHead.unit, "figure-unit", { card: l.card });
+    }
     // The chapter card's texts count once they have entered.
     if (parts.chapter)
-      for (const n of [parts.chapter.count, parts.chapter.title])
-        if (+n.style.opacity > 0) add(n, n.dataset.kind, { card: l.card });
+      for (const n of [parts.chapter.count, parts.chapter.title, parts.chapter.video, parts.chapter.prev, parts.chapter.next])
+        if (n && +n.style.opacity > 0) add(n, n.dataset.kind, { card: l.card, ...(n === parts.chapter.video && { lines: Math.round(n.getBoundingClientRect().height / 68), maxLines: 2 }) });
     layer.querySelectorAll(".vf-head > *").forEach((n) => {
       // 1.7.0: readings and figures flow below the head, down to y 1290.
       if (n.matches(".vf-list, .vf-figs, .vf-week")) return [...n.children].forEach((c) => add(c, "items", { card: l.card }));
@@ -2332,6 +2469,7 @@ function frameBoxes(frame, state) {
       const showing = (n) => n.style.visibility !== "hidden" && +getComputedStyle(n).opacity > 0 && +getComputedStyle(n.closest(".pw-row") || n).opacity > 0;
       parts.paBox.querySelectorAll(".oi").forEach((n) => { if (!n.parentElement.closest(".oi") && showing(n)) add(n, "parchment", { card: l.card }); });
       parts.paBox.querySelectorAll(".pd-img").forEach((n) => { if (showing(n)) boxes.push({ id: n.getAttribute("src"), kind: "parchment", ...rect(n), card: l.card }); });
+      if (parts.paScene && showing(parts.paScene.box)) boxes.push({ id: "scene " + parts.spec.scene.kind, kind: "parchment", ...rect(parts.paScene.box), card: l.card });
     }
     // 1.8.0: the formula's lines of every step on screen.
     if (parts.formula)
@@ -2617,6 +2755,13 @@ function drawParchment(parts, l) {
     });
   if (parts.paFormula) drawMovingFormula(parts, l.formula);
   if (parts.paWord) drawWord(parts.paWord, l.word);
+  if (parts.paScene)
+    for (const [id, s] of Object.entries(l.scene)) {
+      const p = parts.paScene.parts[id];
+      if (!p) continue;
+      p.g.setAttribute("opacity", s.opacity.toFixed(4));
+      p.g.setAttribute("transform", "translate(" + s.x.toFixed(2) + " " + s.y.toFixed(2) + ")" + (s.rotate && p.origin ? " rotate(" + s.rotate.toFixed(2) + " " + p.origin.replace(",", " ") + ")" : ""));
+    }
   if (parts.paDrawings)
     parts.paDrawings.forEach((d, k) => {
       const s = l.drawings[k];
@@ -2665,10 +2810,30 @@ function parchmentReport(parts, l) {
     marks: parts.paQuote ? parts.paQuote.marks.map((m) => ({ words: inkBox(m.firstChild), underline: rect(m.lastChild) })) : [],
     quote: parts.paQuote ? rect(parts.paQuote.box) : null,
     words: (parts.paWords || []).map(inkBox),
+    scene: parts.paScene ? { kind: parts.spec.scene.kind, ...rect(parts.paScene.box), parts: Object.entries(parts.paScene.parts).map(([id, p]) => ({ id, opacity: +p.g.getAttribute("opacity"), transform: p.g.getAttribute("transform"), ...rect(p.g) })) } : null,
     texts: [...parts.layer.querySelectorAll(".vf-pa .oi, .vf-pa.oi")].filter((n) => n.getClientRects().length).map((n) => ({ text: n.textContent.trim().slice(0, 30), stroke: getComputedStyle(n).webkitTextStrokeWidth, filter: getComputedStyle(n).filter, color: getComputedStyle(n).color })),
   };
 }
 
+// 1.15.0: the still of each clip card's frame, set and decoded before the
+// frame is drawn (drawFrame itself stays synchronous).
+window.setClipStills = (list) =>
+  Promise.all(list.map(async ({ id, shot, n, credit }) => {
+    const parts = layers.find((p) => p.spec.id === id);
+    if (!parts) return;
+    const key = shot + "-" + n;
+    if (parts.clipStill !== key) {
+      parts.photo.src = resolveAsset("clip/" + id + "/" + shot + "-" + String(n).padStart(4, "0") + ".jpg");
+      await parts.photo.decode();
+      parts.clipStill = key;
+    }
+    // The credit follows the shot on screen: a cut changes place and author.
+    const line = parts.layer.querySelector(".vf-cred");
+    if (line && parts.clipCredit !== credit) {
+      line.textContent = credit;
+      parts.clipCredit = credit;
+    }
+  }));
 window.drawFrame = (state) => {
   const frame = document.getElementById("frame");
   const paintsBefore = imageryPaints;
@@ -2852,7 +3017,9 @@ window.drawFrame = (state) => {
         borders: +node.borderGroup.getAttribute("opacity"),
         drawn: [...node.drawn.children].map((g) => ({ kind: g.dataset.drawn, opacity: +g.getAttribute("opacity"), ...rect(g) })),
         paper: +node.paperfx.style.opacity,
-        drawings: node.images.filter((i) => i.style.display !== "none").map((i) => ({ kind: i.dataset.kind, filter: getComputedStyle(i).filter, complete: i.complete && i.naturalWidth > 0, ...rect(i) })),
+        drawings: node.images.filter((i) => i.style.display !== "none").map((i) => ({ kind: i.dataset.kind, opacity: +i.style.opacity, filter: getComputedStyle(i).filter, complete: i.complete && i.naturalWidth > 0, ...rect(i) })),
+        // 1.16.0: planted flags as drawn: the flag flying and its cloth.
+        planted: [...node.marks.querySelectorAll("[data-planted]")].map((s) => ({ flag: s.dataset.planted, opacity: +s.style.opacity, filter: getComputedStyle(s).filter, cloth: s.querySelector("use") && { flag: s.querySelector("use").getAttribute("href").slice(6), clip: +s.querySelector("clipPath rect").getAttribute("width"), y: +s.querySelector("use").getAttribute("y") }, ...rect(s) })),
         texts: [...node.names.children, ...node.marks.querySelectorAll("[data-mark]")].map((n) => ({ text: n.textContent, mark: n.dataset.mark || "name", opacity: +n.style.opacity, filter: getComputedStyle(n).filter, ...rect(n) })),
       };
     }),

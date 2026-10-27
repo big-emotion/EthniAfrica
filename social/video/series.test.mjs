@@ -135,14 +135,16 @@ test("every card is voiced once, while it is on screen alone", () => {
   }
 });
 
-// The operator's words, decided on 19 October 2026 (Cartes 1.10.0), as the
-// voice says them: one chunk per printed line. Spelled out on purpose: the
-// test holds the engine's constants to the decision.
+// The operator's words, decided on 27 October 2026 (« Tu changes la formule
+// pour toutes les vidéos »), as the voice says them: the invitation first,
+// then the closing line, one chunk per printed line. Spelled out on purpose:
+// the test holds the engine's constants to the decision.
 const CLOSING_CHUNKS = [
-  "L’importance de",
-  "connaître nos noms.",
   "Vous pouvez continuer la recherche",
-  "sur EthniAfrica, lien en profil.",
+  "sur EthniAfrica et vous abonner",
+  "pour découvrir de nouvelles publications.",
+  "EthniAfrica\u202f: l’importance de",
+  "connaître nos noms.",
 ];
 const withClosing = (texts) => (beats) => {
   beats.at(-1).chunks = texts.map((text) => ({ text, duration: 2 }));
@@ -150,13 +152,13 @@ const withClosing = (texts) => (beats) => {
 };
 
 // @req REQ-186
-test("1.10.0: the closing card says the closing line and the invitation, one chunk per printed line", () => {
+test("2026-10-27: the closing card says the invitation, then the closing line, one chunk per printed line", () => {
   const seq = demo();
   const last = seq.cards.length - 1;
   const closing = seq.chunks.filter((c) => c.card === last);
   assert.deepEqual(
     closing.map((c) => c.text.replace(/\s/gu, " ")),
-    CLOSING_CHUNKS
+    CLOSING_CHUNKS.map((t) => t.replace(/\s/gu, " "))
   );
   assert.ok(closing.every((c) => c.hidden && !c.lines.length));
 });
@@ -165,38 +167,39 @@ test("1.10.0: the closing card says the closing line and the invitation, one chu
 test("1.10.0: the voice's ' and ’ are one letter, and spaces are normalised", () => {
   const seq = demo({
     script: withClosing([
-      "L'importance de",
-      "connaître  nos noms.",
       "Vous pouvez continuer la\u00a0recherche",
-      "sur EthniAfrica, lien en profil.",
+      "sur EthniAfrica  et vous abonner",
+      "pour découvrir de nouvelles publications.",
+      "EthniAfrica : l'importance de",
+      "connaître nos noms.",
     ]),
   });
   assert.equal(seq.cards.at(-1).type, "closing");
 });
 
 // @req REQ-186
-test("1.10.0: a closing card whose chunks are not the four printed lines is refused", () => {
+test("a closing card whose chunks are not the five printed lines, invitation first, is refused", () => {
   for (const texts of [
+    // The 1.10.0 closing, retired on 27 October 2026.
     [
-      "Connaître nos noms,",
-      "décoloniser leur emploi,",
-      "nous nommer nous-mêmes.",
-      "Cherchez Burkina Faso sur EthniAfrica,",
-      "lien en profil.",
+      "L’importance de",
+      "connaître nos noms.",
+      "Vous pouvez continuer la recherche",
+      "sur EthniAfrica, lien en profil.",
     ],
-    ["L’importance de connaître nos noms.", ...CLOSING_CHUNKS.slice(2)],
-    CLOSING_CHUNKS.slice(0, 3),
+    // The right words in the old order: the line before the invitation.
+    [...CLOSING_CHUNKS.slice(3), ...CLOSING_CHUNKS.slice(0, 3)],
+    CLOSING_CHUNKS.slice(0, 4),
     [...CLOSING_CHUNKS, "lien en profil."],
     [
-      ...CLOSING_CHUNKS.slice(0, 2),
-      "Vous pouvez continuer la recherche sur EthniAfrica,",
-      "lien en profil.",
+      "Vous pouvez continuer la recherche sur EthniAfrica et vous abonner",
+      ...CLOSING_CHUNKS.slice(2),
     ],
-    ["L’importance de", "connaître vos noms.", ...CLOSING_CHUNKS.slice(2)],
+    [...CLOSING_CHUNKS.slice(0, 3), "L’importance de", "connaître nos noms."],
   ])
     assert.throws(
       () => demo({ script: withClosing(texts) }),
-      /La fin n'est pas dite mot pour mot : « L’importance de \/ connaître nos noms\. \/ Vous pouvez continuer la recherche \/ sur EthniAfrica, lien en profil\. »/
+      /La fin n'est pas dite mot pour mot : « Vous pouvez continuer la recherche \/ sur EthniAfrica et vous abonner \/ pour découvrir de nouvelles publications\. \/ EthniAfrica\s: l’importance de \/ connaître nos noms\. »/
     );
 });
 
@@ -441,4 +444,26 @@ test("an image enlarged past 1.5 is refused, except in a demonstration", () => {
   );
   assert.deepEqual(checkSeriesLayout([image], { demo: true }), []);
   assert.deepEqual(checkSeriesLayout([{ ...image, scale: 1.5 }]), []);
+});
+
+// @req REQ-186
+test("the figure head keeps « plus de » clear of the number's digits and outline", () => {
+  // Anton 176 on a 156 px line overflows its box by about 10 px at the top,
+  // and its outline adds 13 px: « plus de » needs 24 px of clearance above
+  // the number's line box, or the digits cover it (operator, 21 October 2026).
+  const fig = (kind, y, h) => ({ id: kind, kind, x: 60, y, w: 500, h });
+  assert.match(
+    checkSeriesLayout([
+      fig("figure-pre", 318, 42),
+      fig("figure-number", 360, 156),
+    ]).join(),
+    /« plus de » touche le chiffre/
+  );
+  assert.deepEqual(
+    checkSeriesLayout([
+      fig("figure-pre", 318, 42),
+      fig("figure-number", 384, 156),
+    ]),
+    []
+  );
 });

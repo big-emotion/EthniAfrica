@@ -124,4 +124,30 @@ describe("production deploy workflow", () => {
     expect(deployJob).not.toContain("PRODUCTION_SUPABASE_DB_URL");
     expect(deployJob).not.toContain("SERVICE_ROLE_KEY");
   });
+
+  // Without the Upstash pair the API limiter fails closed: every /api/v2 call
+  // answers 500 while the pages render, so the deploy stayed green on a broken
+  // API. The pair lives in the host's .env, not in GitHub secrets, so the
+  // preflight reads it there, before the image is built, and never prints it.
+  // @req REQ-032
+  it("refuses to build when the host env lacks the Upstash pair", () => {
+    const workflow = readWorkflow();
+    const deployJob = workflow.slice(workflow.indexOf("\n  deploy:"));
+
+    const preflight = deployJob.indexOf("UPSTASH_REDIS_REST_URL");
+    expect(preflight).toBeGreaterThan(-1);
+    expect(deployJob).toContain("UPSTASH_REDIS_REST_TOKEN");
+    expect(preflight).toBeLessThan(deployJob.indexOf("docker compose build"));
+    expect(deployJob).not.toMatch(/echo[^\n]*\$\{?UPSTASH_REDIS/);
+  });
+
+  // @req REQ-032
+  it("smoke-tests a public /api/v2 endpoint after the deploy", () => {
+    const workflow = readWorkflow();
+    const deployJob = workflow.slice(workflow.indexOf("\n  deploy:"));
+
+    expect(deployJob).toContain("/api/v2/countries?perPage=1");
+    expect(deployJob).toContain("API smoke passed");
+    expect(deployJob).toMatch(/apiResponse\.status !== 200/);
+  });
 });

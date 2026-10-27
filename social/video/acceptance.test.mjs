@@ -326,17 +326,17 @@ test("the ending prints the series video's closing line and invitation (Cartes 1
 });
 
 // @req REQ-186
-test("ending B prints the invitation's two lines under the closing line", async () => {
+test("ending B prints the closing line's two rows under the invitation", async () => {
   const seq = sahara();
   const [end] = await renderFrames(seq, [frameCount(seq) - 1], options());
-  // Block top 600: logo, word, the line's two rows to y 900, then the
-  // invitation 28 px lower, its second row 982 to 1022. The 1.6.0 block
-  // ended at y 964, so nothing was written on this row before.
+  // Block top 600: logo, word, then (27 October 2026) the invitation's three
+  // rows and the line 28 px lower, its second row about 1000 to 1060. The
+  // 1.6.0 block ended at y 964, so nothing was written on this row before.
   const { data } = await sharp(end)
     .extract({ left: 240, top: 996, width: 600, height: 8 })
     .raw()
     .toBuffer({ resolveWithObject: true });
-  assert.ok(Math.max(...data) > 200, "the invitation's second line is drawn");
+  assert.ok(Math.max(...data) > 200, "the line's second row is drawn");
 });
 
 // @req REQ-186
