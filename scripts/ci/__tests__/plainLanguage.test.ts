@@ -92,6 +92,56 @@ describe("plain-language editorial contract", () => {
     }
   });
 
+  // The operator's complaint of 27 October 2026: scripts kept adding a
+  // sentence confessing that nobody knows why a family or parents chose a
+  // name. Public copy states the attested trace instead.
+  // @req REQ-178
+  it("blocks sentences that avow ignorance of why or by whom a name was chosen", () => {
+    const avowed = [
+      "Mais les actes de ces familles ne disent pas qui a choisi « Zaïre », ni pourquoi.",
+      "On ne sait pas pourquoi ses parents ont choisi ce prénom.",
+      "Pour comprendre le choix de chaque famille, il faut encore lire ses actes et écouter ses récits.",
+      "Choix familial précis : inconnu",
+      "Sur ce nom, on n'a pas de piste.",
+      "Nul ne sait pourquoi cette famille a choisi de prendre ce nom.",
+      "Les registres ne précisent pas pourquoi les parents lui ont donné ce prénom.",
+      "Le choix des parents reste inconnu.",
+      "Les raisons de ce choix demeurent inconnues.",
+      "On ignore qui a donné ce nom à l'enfant.",
+    ];
+    const allowed = [
+      "Cette lecture est attribuée à un missionnaire.",
+      "Cette explication reste une hypothèse non établie par les sources.",
+      // About a word's attested form, not a family's motive: the sources
+      // describe the form, they do not withhold a choice.
+      "La forme exacte entendue reste inconnue.",
+      "Les actes de 1972 montrent que plusieurs familles ont choisi « Zaïre » comme prénom.",
+      "Le document ne précise pas quand ce nom est apparu.",
+      "Ses parents ont choisi ce prénom l'année de l'indépendance.",
+      "On ne sait pas encore lire cette inscription.",
+      // The register's own model sentence for an uncertain oldest trace.
+      "Les sources ne disent pas s'il s'agit du même royaume.",
+      // An unknown autonym is not a naming motive.
+      "On ne sait pas comment ce peuple se nomme lui-même.",
+    ];
+    const units = [...avowed, ...allowed].map((text, i) => ({
+      file: "script.txt",
+      location: String(i),
+      text,
+    }));
+    const flagged = new Set(
+      lintCopy(units)
+        .filter(
+          (f) =>
+            f.rule === "Ethniafrica.NamingMotiveIgnorance" &&
+            f.severity === "error"
+        )
+        .map((f) => f.unit.text)
+    );
+    expect(avowed.filter((text) => !flagged.has(text))).toEqual([]);
+    expect(allowed.filter((text) => flagged.has(text))).toEqual([]);
+  });
+
   // @req REQ-178
   it("checks nested public JSON prose while preserving bibliography, quotes, language names and internal notes", () => {
     const units = extractCopy(

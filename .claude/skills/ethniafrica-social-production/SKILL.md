@@ -117,7 +117,11 @@ routine gate for corpus work or repeatedly ask for approval of unchanged work.
 Make the origin milestone visible: identify the studied form, what the sources
 say about its emergence, and where the trace ends. Distinguish invention, first
 located attestation, official adoption and diffusion. A recorded author is not
-necessarily the inventor. State an unknown date or naming actor plainly.
+necessarily the inventor. State an unknown date plainly, but never add a
+sentence announcing that nobody knows who chose a name or why (« on ne sait pas
+pourquoi ses parents ont choisi ce prénom »): say what the traces show and who
+proposes which reading. `check:publication` blocks it; see
+[script lessons §13](references/script-lessons.md).
 Explain antecedent names and older entities without confusing their age with the
 birth of today's name. Uganda's connection to Buganda is a research question,
 not proof that Buganda's own origin is fully explained.

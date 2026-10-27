@@ -404,3 +404,19 @@ name filters from mobile (320 and 430) through tablet (820) to desktop (1,440),
 and the method link card at 320 and 430 pixels. Checked pages have no horizontal
 overflow. The pinned-version banner preview did not complete; its unit tests
 pass, but this pass does not claim visual verification for that story.
+
+## Naming-motive rule — 2026-10-27
+
+The operator asked that public copy stop announcing what nobody knows about why
+a family or parents chose a name. `Ethniafrica.NamingMotiveIgnorance` reports an
+error when an avowal of ignorance (« on ne sait pas », « nul ne sait », « ne
+disent pas qui/pourquoi », « reste inconnu », « on n'a pas de piste ») sits in
+the same sentence as a naming-choice word (choisi, choix, nommé, baptisé, donné
+ce nom, porte ce nom). An attributed reading, an unproven hypothesis, an unknown
+word form or an unknown autonym (« comment ce peuple se nomme ») stays allowed.
+
+At adoption the rule matched 21 times in 19 fiche fields (name histories,
+`nameOriginActor` and source notes) and nothing under `docs/productions/`. Those
+exact fields were added to the legacy baseline (44 → 63 entries) so CI stays
+green; `npm run audit:editorial` lists them for a reviewed rewrite. New or
+changed text gets no allowance, and `check:publication` ignores the baseline.

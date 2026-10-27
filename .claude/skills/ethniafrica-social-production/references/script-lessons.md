@@ -182,6 +182,37 @@ name in four chapters; Instagram adds the families and political outcomes;
 Facebook gives more room to the competing readings and present-day Togoville.
 These chapter counts and durations belong to that episode, not to every series.
 
+## 13. No avowed ignorance about why a name was chosen
+
+Operator, 27 October 2026: scripts kept ending a beat by confessing that nobody
+knows why a family or parents chose a name — « dire qu'on ne sait pas pourquoi
+cette famille a choisi de prendre ce nom », « on n'a pas de piste », « cette
+ignorance avouée ». « Il faudrait que ça arrête de revenir. »
+
+Lines the operator struck from a script:
+
+- « Mais les actes de ces familles ne disent pas qui a choisi « Zaïre », ni pourquoi. »
+- « On ne sait pas pourquoi ses parents ont choisi ce prénom. »
+- « Pour comprendre le choix de chaque famille, il faut encore lire ses actes et écouter ses récits. »
+- On screen: « Choix familial précis : inconnu ».
+
+Why: the sentence adds nothing the viewer can use, closes the beat on an empty
+hand, and makes the episode sound unfinished. The trace itself is the answer:
+who records the name, where, when, and which reading someone proposes.
+
+- Write what the sources show: « Les actes de [lieu, années] montrent que
+  [nombre] familles ont donné le prénom « Zaïre » à un enfant. »
+- An attributed reading or an unproven hypothesis is still said as such
+  (« selon… », « une lecture attribuée à… », « une hypothèse »). What goes is the
+  extra sentence announcing what nobody knows about the choice.
+- If the motive is the subject and no source gives one, cut the beat or change
+  the question; do not fill it with the absence.
+
+`npm run check:publication` refuses these sentences
+(`Ethniafrica.NamingMotiveIgnorance`, `.vale/styles/Ethniafrica/`). The check
+looks for a naming context (choisi, choix, donné ce nom, porte ce nom…), so it
+misses paraphrases: reread for the intent, not only the words.
+
 ## The approved script (v6.1, 2026-10-15)
 
 Chapter titles in brackets are on-screen cards, not spoken. About 3 min 30.

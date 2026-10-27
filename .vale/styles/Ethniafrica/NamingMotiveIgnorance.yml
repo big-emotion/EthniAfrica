@@ -1,0 +1,25 @@
+# Operator decision, 27 October 2026: public copy must stop announcing what
+# nobody knows about why a family or parents chose a name ("on ne sait pas
+# pourquoi cette famille a choisi ce nom", "on n'a pas de piste"). Each token
+# needs a naming-choice context, so an attributed reading, an unproven
+# hypothesis or an unknown word form ("la forme exacte reste inconnue") stays
+# allowed. `[^.!?;]` keeps a match inside one sentence.
+extends: existence
+message: "Do not announce what nobody knows about a name's choice ('%s'). State the attested trace instead: who records the name, where, when, and any attributed reading. See docs/editorial/reader-facing-register.md."
+level: error
+scope: text
+ignorecase: true
+tokens:
+  # "On ne sait pas pourquoi ses parents ont choisi ce prénom."
+  - "(?:on ne sait pas|on ignore|nul ne sait|personne ne sait|on ne conna[iî]t pas)[^.!?;]{0,80}?(?:choisi[rs]?|choisie|choix|nommée?s?|baptisée?s?|(?:donn[ée]|donner|pris|prendre|port[ée]|porter) (?:ce|le|son|leur|un tel) (?:pr[ée])?nom)"
+  # "Les actes ne disent pas qui a choisi « Zaïre », ni pourquoi."
+  - "ne (?:disent|dit|pr[ée]cisent|pr[ée]cise|indiquent|indique|expliquent|explique|r[ée]v[èe]lent|r[ée]v[èe]le|mentionnent|mentionne) pas (?:qui|pourquoi|pour quelle raison)[^.!?;]{0,80}?(?:choisi[rs]?|choisie|choix|nommée?s?|baptisée?s?|(?:donn[ée]|donner|pris|prendre|port[ée]|porter) (?:ce|le|son|leur|un tel) (?:pr[ée])?nom)"
+  # "Pour comprendre le choix de chaque famille, il faut encore lire ses actes."
+  - "pour comprendre (?:le|les|leur|leurs|ce|ces) choix[^.!?;]{0,100}?il (?:faut|faudra|faudrait) encore"
+  # "Choix familial précis : inconnu" / "Le choix des parents reste inconnu."
+  - "choix[^.!?;:]{0,40}? ?(?::|reste|restent|demeure|demeurent|est|sont) (?:encore |toujours )?(?:inconnue?s?|ignor[ée]e?s?)"
+  # "Les raisons de ce nom restent inconnues."
+  - "(?:raisons?|motifs?|motivations?) (?:de|du|d[’']un|d[’']une) (?:ce |cette |leur |son |sa )?(?:pr[ée]nom|nom|appellation)[^.!?;:]{0,30}? (?:reste|restent|demeure|demeurent|est|sont) (?:encore |toujours )?(?:inconnue?s?|ignor[ée]e?s?)"
+  # "On n'a pas de piste."
+  - "(?:on n[’']a|nous n[’']avons) (?:pas de|aucune) pistes?"
+  - "ignorance avou[ée]e"
