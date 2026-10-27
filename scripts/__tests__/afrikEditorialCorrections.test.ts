@@ -367,3 +367,83 @@ describe("AFRIK Zaïre name history", () => {
     expect(zande).toContain("de l'actuelle République démocratique du Congo");
   });
 });
+
+interface KongoAreaFiche {
+  content: {
+    origins: {
+      ancientOrigins: string;
+      majorHistoricalEvents: string;
+      externalInfluences?: string;
+    };
+    historicalRole: { kingdomsOrChiefdoms: string };
+    culture: { artsAndMusic?: string };
+    sources: Array<{ title?: string; notes?: string; page?: string }>;
+  };
+}
+
+// The Zaïre fusion research (27 October 2026) checked the Kongo-area fiches
+// against UNESCO's Histoire générale de l'Afrique, Pigafetta (1591) and
+// Ravenstein (1900): nzimbu are shells, not raffia; the king baptised in 1491
+// is Nzinga a Nkuwu; Kongo's claim over Loango, Kakongo and Ngoyo was probably
+// fictive; Afonso tried to abolish the trade in 1526; first contact is 1482-83.
+describe("AFRIK Kongo-area fiches against their sources", () => {
+  const fiche = (path: string) =>
+    readJson<KongoAreaFiche>(`dataset/source/afrik/peuples/${path}`).content;
+  const solongo = () => fiche("FLG_NIGERCONGO/PPL_SOLONGO.json");
+  const kongo = () => fiche("FLG_BANTU/PPL_KONGO.json");
+  const cabinda = () => fiche("FLG_NIGERCONGO/PPL_KONGO_CABINDA.json");
+  const citesVansinaOnKongoSuzerainty = (
+    sources: KongoAreaFiche["content"]["sources"]
+  ) =>
+    sources.some(
+      (source) =>
+        source.title?.includes("IV, ch. 22") &&
+        `${source.page ?? ""} ${source.notes ?? ""}`.includes("621")
+    );
+
+  // @req REQ-023
+  it("does not file nzimbu shell money under raffia weaving", () => {
+    expect(solongo().culture.artsAndMusic).not.toContain("nzimbu");
+  });
+
+  // @req REQ-023
+  it("names the king baptised in 1491 Nzinga a Nkuwu", () => {
+    const { externalInfluences } = solongo().origins;
+
+    expect(externalInfluences).not.toContain("Nzinga a Ntinu");
+    expect(externalInfluences).toContain("Nzinga a Nkuwu");
+  });
+
+  // @req REQ-023
+  it("does not present Loango, Kakongo and Ngoyo as Kongo's vassals", () => {
+    const kingdoms = kongo().historicalRole.kingdomsOrChiefdoms;
+
+    expect(kingdoms).not.toMatch(/vassaux ou affilies/);
+    expect(kingdoms).toContain("sans doute fictive");
+    expect(kingdoms).toContain("pas son vassal");
+    expect(citesVansinaOnKongoSuzerainty(kongo().sources)).toBe(true);
+  });
+
+  // @req REQ-023
+  it("dates Afonso's attempt to abolish the slave trade to 1526", () => {
+    const events = kongo().origins.majorHistoricalEvents;
+
+    expect(events).not.toContain("1514 : lettres");
+    expect(events).toContain("1526");
+  });
+
+  // @req REQ-023
+  it("dates first contact at the Congo mouth to 1482-1483, not 1485", () => {
+    const { origins, historicalRole } = cabinda();
+
+    expect(origins.majorHistoricalEvents).not.toContain(
+      "1485 : premier contact"
+    );
+    expect(origins.majorHistoricalEvents).toContain("1482-1483");
+    expect(origins.ancientOrigins).not.toContain("vassaux du Royaume du Kongo");
+    expect(historicalRole.kingdomsOrChiefdoms).not.toContain(
+      "vassaux du Royaume du Kongo"
+    );
+    expect(citesVansinaOnKongoSuzerainty(cabinda().sources)).toBe(true);
+  });
+});
