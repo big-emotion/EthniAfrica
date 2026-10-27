@@ -60,11 +60,11 @@ test("the script is cut into requests at each pause, with the spoken forms", () 
   assert.equal(segments[1].nextText, undefined);
 });
 
-// @req REQ-186
 // Operator, 27 October 2026: several sentences in one request, with the text
 // after them sent as `next_text`, ended every full stop high, as if the
 // sentence went on (« … arrive à son embouchure. Le Portugal cherche la route
 // des Indes. »).
+// @req REQ-186
 test("each request carries exactly one sentence, ending on its own punctuation", () => {
   const segments = voiceSegments({
     chunks: [
