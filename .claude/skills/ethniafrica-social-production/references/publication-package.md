@@ -384,14 +384,15 @@ mieux comprendre l'Afrique et ses peuples. »), subtitled like any card. The
 input's `idents: { "outro": "<name>", "next": "…" }` puts the end card in
 place of the 1.10.0 ending: `<name>` names `social/series-idents/layers/<name>.json`,
 the answer of the episode's name copied from its live page (`peul` when the
-episode's name has no page online). The closing card still says the line and
-the invitation, one chunk per printed line, never subtitled. The ident pages
+episode's name has no page online). The closing card still says the
+invitation, then the line (operator, 27 October 2026), one chunk per printed
+line, never subtitled. The ident pages
 belong to the engine's hash in the manifest.
 
 The on-screen text of a series video is every string its cards print, read
 from the loaded cards (chapter cards and the chapter kicker included), each
-subtitle chunk, and on the closing card the signature line and the search
-invitation, which the card prints while the voice says them. Image fields,
+subtitle chunk, and on the closing card the fixed invitation and the closing
+line, in that order, which the card prints while the voice says them. Image fields,
 identifiers, map file names and `say` are left out. Credits list each card's
 source line, its map caption's source and its image credit. A clip card is
 credited by its footage instead: one line per distinct source video across

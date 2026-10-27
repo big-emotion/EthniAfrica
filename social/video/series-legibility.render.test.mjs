@@ -391,7 +391,9 @@ test("1.9.0 check 4: on a pure black picture nothing moves by more than 10 level
     }
     assert.ok(worst <= 10, `frame ${frame}: ${worst} levels at ${where}`);
   }
-  assert.equal(checked, 2, "frames 0 and 599 compared");
+  // The closing words of 27 October 2026 lengthen the ending again, so
+  // 1.8.0's frame 1356 is back inside the video, in the redrawn ending.
+  assert.equal(checked, 3, "frames 0, 599 and 1356 compared");
 });
 
 // The boxes 1.10.0 draws at a new size: the kicker (36/42, the head's first

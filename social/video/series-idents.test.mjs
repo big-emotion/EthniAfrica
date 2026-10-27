@@ -153,3 +153,18 @@ test("without idents the video keeps the 1.10.0 ending, unchanged", () => {
   assert.equal(seq.cards.at(-1).outro, undefined);
   assert.equal(identAt(seq, seriesFrameCount(seq) - 1).length, 0);
 });
+
+// The operator's closing of 27 October 2026, spelled out: the invitation,
+// then the closing line. The end card's storyboard times its shots on it.
+// @req REQ-186
+test("the end card's scratch voice says the invitation, then the closing line", () => {
+  const words = (t) => t.replace(/['’]/gu, "’").replace(/\s+/gu, " ").trim();
+  const closing =
+    "Vous pouvez continuer la recherche sur EthniAfrica et vous abonner pour découvrir de nouvelles publications. EthniAfrica : l’importance de connaître nos noms.";
+  assert.equal(words(OUTRO.voice), closing);
+  const said = OUTRO.shots
+    .map((s) => s.say)
+    .filter((s) => !s.startsWith("("))
+    .join(" ");
+  assert.equal(words(said), closing);
+});

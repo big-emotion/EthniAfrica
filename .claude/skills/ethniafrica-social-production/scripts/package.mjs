@@ -324,15 +324,16 @@ function seriesScreenText(seq) {
       return Object.entries(value).flatMap(([k, v]) => strings(v, k));
     return [];
   };
-  // Cartes 1.10.0: the ending prints the closing line and the fixed
-  // invitation, from the accepted design's constants.
+  // Cartes 1.10.0: the ending prints the fixed invitation and the closing
+  // line, from the accepted design's constants, in that order since
+  // 27 October 2026.
   const { signatureLine, invitation } = JSON.parse(
     readFileSync(join(TOOL_ROOT, "social/design-system/version.json"))
   );
   return seq.cards.flatMap((card, i) => [
     ...strings(card),
     ...seq.chunks.filter((c) => c.card === i && !c.hidden).map((c) => c.text),
-    ...(card.type === "closing" ? [signatureLine, invitation] : []),
+    ...(card.type === "closing" ? [invitation, signatureLine] : []),
   ]);
 }
 // The shots a loaded clip card was cut from (Cartes 1.15.0): one for a clip,

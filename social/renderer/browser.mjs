@@ -93,9 +93,9 @@ export function inspectCard() {
   // system's wording (« D'où vient le nom de mon pays ?, n° 1 »).
   const series = spec.series ? window.EthniCards.seriesOf(spec) : null;
   const band = series ? `${series.name}, n° ${series.episode}` : "";
-  // 1.10.0: a closing card's alternative text ends with the closing line and
-  // the invitation, word for word, although the card prints them above the
-  // pill.
+  // 1.10.0: a closing card's alternative text ends with the invitation and
+  // the closing line (in that order since 27 October 2026), word for word,
+  // although the card prints them above the pill.
   const ending = spec.type === "closing" ? window.EthniCards.closingText : "";
   const alt =
     spec.alt ||
